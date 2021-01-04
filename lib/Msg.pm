@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2003,2008,2009,2013,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2003,2008,2009,2013,2018,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,7 +22,7 @@ use Exporter ();
 @EXPORT = qw(M Mfmt);
 @EXPORT_OK = qw(frommain noautosetup);
 
-$VERSION = '1.12';
+$VERSION = '1.13';
 
 BEGIN {
     if ($ENV{PERL_MSG_DEBUG}) {
@@ -135,20 +135,6 @@ sub get_lang {
 			POSIX::setlocale(&{"POSIX::$category"});
 		    };
 		    if (defined $lang && $lang ne '') {
-			if ($^O eq 'MSWin32') {
-			    # normalize
-			    if ($lang =~ m{^English_}) {
-				$lang = 'en';
-			    } elsif ($lang =~ m{^German_}) {
-				$lang = 'de';
-			    } elsif ($lang =~ m{^French_}) {
-				$lang = 'fr';
-			    } elsif ($lang =~ m{^Spanish_}) {
-				$lang = 'es';
-			    } elsif ($lang =~ m{^Croatian_}) {
-				$lang = 'hr';
-			    } # XXX more?
-			}
 			last;
 		    }
 		}
@@ -159,6 +145,20 @@ sub get_lang {
 	$lang = "";
     } else {
 	# normalize language
+	if ($^O eq 'MSWin32') {
+	    # normalize
+	    if ($lang =~ m{^English_}) {
+		$lang = 'en';
+	    } elsif ($lang =~ m{^German_}) {
+		$lang = 'de';
+	    } elsif ($lang =~ m{^French_}) {
+		$lang = 'fr';
+	    } elsif ($lang =~ m{^Spanish_}) {
+		$lang = 'es';
+	    } elsif ($lang =~ m{^Croatian_}) {
+		$lang = 'hr';
+	    } # XXX more?
+	}
 	$lang =~ s/^([^_.-]+).*/$1/; # XXX better use I18N::LangTags
     }
     if ($DEBUG) {
