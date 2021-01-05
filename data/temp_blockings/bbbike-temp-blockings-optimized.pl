@@ -2218,7 +2218,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: XXX laut rbbtext "Gesamtbaumaßnahme ... bis August 2023"
+#: source_id: 2147346762
+# REMOVED --- #: add_fragezeichen: Wann ist die Sperrung beendet? --- #: next_check: 2020-02-29
+	2::inwork 14338,22885 14276,22914
+',
+         'from' => 1609855200,
+         'id' => 3043,
+         'source_id' => '2147343394',
+         'text' => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., auch der Fuß- und Radverkehr ist von der Sperrung betroffen, vom 6. Januar 2021 bis 31. Dezember 2021',
+         'type' => 'gesperrt',
+         'until' => 1640966400
+       },
        undef,
        undef,
        {

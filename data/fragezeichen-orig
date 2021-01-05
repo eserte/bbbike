@@ -3189,6 +3189,7 @@ Naunynstr.: Benennung einer Platzfl‰che in "Maria-von-Maltzan-Platz"	? 11365,107
 #: XXX Nˆldnerstraﬂe (Rummelsburg) in beiden Richtungen zwischen Karlshorster Straﬂe und Stadthausstraﬂe: Leitungsbau, Verkehr wird wechselseitig durch eine Baustellenampel geregelt, vom 16.12.2020 09:00 Uhr bis 28.05.2021 17:00 Uhr
 #: XXX Gegenverkehrsregelung	X::inwork 15433,10765
 #: source_id: 2147346700
+#: also_indoor: traffic
 #: last_checked: 2021-01-01 (noch nicht eingeschaltet)
 #: check_frequency: 7d
 #: next_check: 2021-05-28
@@ -3231,7 +3232,7 @@ Berliner Allee: entstehen hier noch Radstreifen?	?::projected 14754,17673 14673,
 # REMOVED (realisiert) --- #: osm_watch: way id="29052147" version="29"
 # REMOVED (realisiert) --- #: osm_watch: way id="351509721" version="7"
 #: osm_watch: way id="4685718" version="26"
-#: last_checked: 2020-12-30 vvv
+#: last_checked: 2021-01-05 vvv
 #: check_frequency: 14d vvv
 # REMOVED (nicht vollst‰ndig realisiert) --- #: next_check: 2020-10-30 vvv
 # REMOVED (realisiert) --- Palisadenstr.: Ausbau zur Fahrradstraﬂe	? 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
@@ -3396,7 +3397,7 @@ Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -
 #: last_checked: 2020-09-11 vvv
 #: check_frequency: 120d vvv
 Schildower Str.: wird hier ein modaler Filter entstehen?	? 4914,24366 4898,24351
-Elsastr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
+Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -4003,6 +4004,7 @@ Attilastr: entstehen hier Radspuren?	?::projected 8014,4832 7896,4732 7825,4672 
 # 
 #: by: http://www.berliner-woche.de/zehlendorf/bauen/buergerinitiative-stellt-neue-fragen-zur-umgestaltung-von-zehlendorf-mitte-d138292.html
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6847
+#: osm_watch: node id="30134834" version="6"
 #: last_checked: 2020-07-11
 #: check_frequency: 180d
 Martin-Buber-Str./Kirchstr.: vielleicht Bau eines Minikreisels? Oder andere Maﬂnahmen?	?::projected 587,2935 600,2922 606,2904
@@ -4393,7 +4395,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich f¸r den Kfz-Verkehr gesperr
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Best‰tigung voraussichtlich ab Mitte 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
 #: osm_watch: way id="295627704" version="7"
-#: last_checked: 2020-12-30
+#: last_checked: 2021-01-05
 #: next_check: 2021-03-01
 Liebigstr.: Einrichtung einer Spielstraﬂe, wo genau und wann?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
