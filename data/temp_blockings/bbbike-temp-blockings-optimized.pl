@@ -2517,7 +2517,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.901034.php
+# REMOVED --- #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/bahnuebergang-gesperrt_a255484
+#: source_id: 2147346766
+	2::inwork 25191,12343 25149,12266 25109,12196
+',
+         'from' => 1610035200,
+         'id' => 3160,
+         'source_id' => 'LMS-BR_r_LMS-BR_182020_LMS-BR_72',
+         'text' => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, 8.1.2021 bis 2.2.2021',
+         'type' => 'gesperrt',
+         'until' => 1612281600
+       },
        undef,
        undef,
        undef,
@@ -2603,7 +2615,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: MUENSTERBERGERWEG-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert?
 #: last_checked: 2020-10-31
-#: check_frequency: 60d
+#: check_frequency: 120d
+#: next_check: 2021-12-31
 	2::inwork 24029,11363 24172,11320
 ',
          'from' => undef,
@@ -2689,7 +2702,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-12-31
+#: last_checked: 2021-01-06
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2915,6 +2928,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: AKELEIWEG-2021
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.1032696.php (2. Bauabschnitt)
+#: by: https://www.berliner-woche.de/johannisthal/c-bauen/weitere-arbeiten-im-akeleiweg_a297056
 	q4::inwork 17603,3240 17631,3200
 	q3::inwork 17631,3200 17894,2783
 ',
@@ -3190,16 +3204,6 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.01.2021 11:00 Uhr bis 14.10.2021 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1634223600
-       },
-       {
-         'data' => '	q4::inwork 11487,11390 11569,11587
-',
-         'from' => 1609650000,
-         'id' => 3316,
-         'source_id' => '2147346754',
-         'text' => 'Michaelkirchstr.: zwischen Köpenicker Str. und Michaelkirchplatz: Kraneinsatz, Fahrbahn gesperrt, vom 04.01.2021 06:00 Uhr bis 06.01.2021 20:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1609959600
        }
      
 );

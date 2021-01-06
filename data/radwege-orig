@@ -4074,10 +4074,11 @@ Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9175,20613 9162,20613 9027,
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24452.pdf (evtl. auch länger?)
 #: by: https://abendblatt-berlin.de/2020/09/27/berlin-koepenick-teurer-radweg-ohne-radler/
 #: by: https://api.fixmyberlin.de/api/projects/428
+#: by: https://www.berliner-woche.de/adlershof/c-verkehr/pop-up-radweg-bleibt-erhalten_a297530
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="17"
 #: last_checked: 2020-11-28
-#: check_frequency: 90d
+#: check_frequency: 120d
 # REMOVED --- #: next_check: 2020-12-31
 provisorisch geschützter Radstreifen	RW4; 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464
@@ -6518,13 +6519,13 @@ Tempo 10	RW6;RW6 14798,12502 15005,12443
 10er-Zone	RW6;RW6 -7948,12634 -8078,12647 -8205,12644 -8324,12644 -8413,12651
 10er-Zone	RW6;RW6 -8205,12644 -8235,12144
 10er-Zone	RW6;RW6 -8324,12644 -8359,12112
-#: note: durchgezogene Linie
-	RW3; 14513,11657 14461,11738
+	RW4; 14513,11657 14461,11738
 #: note: gestrichelte Linie
 	RW3; 14461,11738 14513,11657
 asphaltiertes Straßenbahnkap	RW1;RW1 14461,11738 14416,11815
 asphaltiertes Straßenbahnkap	RW1; 13991,11992 14045,11965
 asphaltiertes Straßenbahnkap	RW1; 14161,11930 14097,11949
+	RW4; 14097,11949 14045,11965
 #: by: mapillary
 	RW6;RW6 4471,19124 4519,19040 4934,19075
 #: note: Schild steht etwa 30m weiter hinten

@@ -29855,14 +29855,15 @@ EOF
 	2::inwork 13172,11651 13202,11666
 EOF
      },
-     { from  => $isodate2epoch->("2020-03-19 12:00:00"), # 1 Tag Vorlauf --- 1568056573, # 2019-09-09 21:16
-       until => $isodate2epoch->("2020-04-20 18:00:00"), # $isodate2epoch->("2019-09-20 18:00:00"),
-       text  => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, 20.03.2020 bis 20.04.2020',
+     { from  => $isodate2epoch->("2021-01-07 17:00:00"), # 1 Tag Vorlauf --- 1568056573, # 2019-09-09 21:16
+       until => $isodate2epoch->("2021-02-02 17:00:00"), # $isodate2epoch->("2019-09-20 18:00:00"),
+       text  => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, 8.1.2021 bis 2.2.2021',
        type  => 'gesperrt',
        source_id => 'LMS-BR_r_LMS-BR_182020_LMS-BR_72', # alt
        data  => <<EOF,
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.901034.php
-#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/bahnuebergang-gesperrt_a255484
+# REMOVED --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.901034.php
+# REMOVED --- #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/bahnuebergang-gesperrt_a255484
+#: source_id: 2147346766
 	2::inwork 25191,12343 25149,12266 25109,12196
 EOF
      },
@@ -30211,7 +30212,8 @@ EOF
 #: next_check_id: MUENSTERBERGERWEG-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert?
 #: last_checked: 2020-10-31
-#: check_frequency: 60d
+#: check_frequency: 120d
+#: next_check: 2021-12-31
 	2::inwork 24029,11363 24172,11320
 EOF
      },
@@ -30584,7 +30586,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-12-31
+#: last_checked: 2021-01-06
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31240,6 +31242,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: AKELEIWEG-2021
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.1032696.php (2. Bauabschnitt)
+#: by: https://www.berliner-woche.de/johannisthal/c-bauen/weitere-arbeiten-im-akeleiweg_a297056
 	q4::inwork 17603,3240 17631,3200
 	q3::inwork 17631,3200 17894,2783
 EOF
