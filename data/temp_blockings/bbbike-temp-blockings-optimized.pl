@@ -2521,7 +2521,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '# REMOVED --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.901034.php
 # REMOVED --- #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/bahnuebergang-gesperrt_a255484
 #: source_id: 2147346766
-	2::inwork 25191,12343 25149,12266 25109,12196
+# REMOVED (hier nicht) ---	2::inwork 25191,12343 25149,12266
+	2::inwork 25149,12266 25109,12196 25072,12107
 ',
          'from' => 1610035200,
          'id' => 3160,
@@ -3204,6 +3205,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.01.2021 11:00 Uhr bis 14.10.2021 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1634223600
+       },
+       undef,
+       {
+         'data' => '	q4::inwork; 18680,5413 18955,5320 19037,5316
+',
+         'from' => 1610265600,
+         'id' => 3317,
+         'source_id' => '2147346773',
+         'text' => 'Schnellerstr.: Bauarbeiten zwischen Rudower Str. und Köllnische Str., Fahrbahn Richtung Köpenick gesperrt, vom 11.01.2021 09:00 Uhr bis 22.01.2021 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1611331200
        }
      
 );

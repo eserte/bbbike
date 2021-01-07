@@ -29864,7 +29864,8 @@ EOF
 # REMOVED --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.901034.php
 # REMOVED --- #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/bahnuebergang-gesperrt_a255484
 #: source_id: 2147346766
-	2::inwork 25191,12343 25149,12266 25109,12196
+# REMOVED (hier nicht) ---	2::inwork 25191,12343 25149,12266
+	2::inwork 25149,12266 25109,12196 25072,12107
 EOF
      },
      { from  => 1568664922, # ist nicht passiert --- 1568498400, # 2019-09-15 00:00
@@ -31812,6 +31813,15 @@ EOF
        source_id => '2147346754',
        data  => <<EOF,
 	q4::inwork 11487,11390 11569,11587
+EOF
+     },
+     { from  => 1610265600, # 2021-01-10 09:00
+       until => 1611331200, # 2021-01-22 17:00
+       text  => 'Schnellerstr.: Bauarbeiten zwischen Rudower Str. und Köllnische Str., Fahrbahn Richtung Köpenick gesperrt, vom 11.01.2021 09:00 Uhr bis 22.01.2021 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346773',
+       data  => <<EOF,
+	q4::inwork; 18680,5413 18955,5320 19037,5316
 EOF
      },
     );
