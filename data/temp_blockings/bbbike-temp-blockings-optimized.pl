@@ -2967,7 +2967,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
-#: last_checked: 2020-11-14
+#: last_checked: 2021-01-01 (architektur-urbanistik) (vermutlich)
 #: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 ',
@@ -2982,6 +2982,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9049 (ab August (2020 oder 2021?) für sechs Monate, auch beim Brebacher Weg, Bau einer Autoüberfahrt?)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9184 (fehlende Umleitung)
 #: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
+#: by: https://twitter.com/SBahnBerlin/status/1347543580529758210 (S-Bahn fährt nicht bis 25.1.2021)
 #: XXX bis wann ist der Bahnübergang gesperrt?
 #: also_indoor: search Oberfeldstraße Bahnübergang
 #: osm_watch: way id="868347101" version="2"
@@ -3216,6 +3217,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Schnellerstr.: Bauarbeiten zwischen Rudower Str. und Köllnische Str., Fahrbahn Richtung Köpenick gesperrt, vom 11.01.2021 09:00 Uhr bis 22.01.2021 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1611331200
+       },
+       {
+         'data' => '	2::inwork 9640,29628 9996,29712
+',
+         'from' => 1610233200,
+         'id' => 3318,
+         'source_id' => 'LS/721-E/21/005',
+         'text' => 'L30: Sperrung der Unterführung unter der A10, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 11.01.2021 bis 05.02.2021',
+         'type' => 'gesperrt',
+         'until' => 1612566000
        }
      
 );

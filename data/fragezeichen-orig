@@ -3175,6 +3175,10 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_01_0001_0080_online.pdf (geplant ab 15.3.2021 bis M‰rz 2025)
+#: next_check: 2021-03-15
+Straﬂe des 17. Juni: wegen Bauarbeiten wird der Radweg in den Tiergarten verlegt	?; 6642,12010 5900,11913
+# 
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/in-marzahn-hellersdorf-werden-2021-acht-groessere-radwegprojekte-umgesetzt_a297401 vvv
 #: last_checked: 2020-10-03
 #: check_frequency: 150d
@@ -3214,17 +3218,6 @@ Bˆlschestr.: Pr¸fung einer Fahrradstraﬂe	? 13188,9134 13298,9252 13357,9313 1348
 #: XXX ggfs. auch die Platzfl‰che als solche einzeichnen
 #: next_check: 2021-03-25
 Naunynstr.: Benennung einer Platzfl‰che in "Maria-von-Maltzan-Platz"	? 11365,10791 11403,10782
-# 
-#: by: https://www.bahninfo-forum.de/read.php?9,581614,688517#msg-688517
-#: XXX Nˆldnerstraﬂe (Rummelsburg) in beiden Richtungen zwischen Karlshorster Straﬂe und Stadthausstraﬂe: Leitungsbau, Verkehr wird wechselseitig durch eine Baustellenampel geregelt, vom 16.12.2020 09:00 Uhr bis 28.05.2021 17:00 Uhr
-#: XXX Gegenverkehrsregelung	X::inwork 15433,10765
-#: source_id: 2147346700
-#: also_indoor: traffic
-#: last_checked: 2021-01-01 (noch nicht eingeschaltet)
-#: check_frequency: 7d
-#: next_check: 2021-05-28
-#: valid: -20210528
-Nˆldnerstr.: Gegenverkehrsregelung im Vorbereitung	?::inwork 15449,10745 15433,10765 15451,10793
 # 
 #: XXX zumindest im westlichen Abschnitt eine feste wassergebundene Decke, besser als das Eichgestell
 Parallelweg zum Eichgestell: genaue Lage, Qualit‰t?	? 18944,6870 18908,6834 18134,7173
@@ -3284,7 +3277,7 @@ Alexanderufer: Fahrradstraﬂe soll entstehen	?::projected 8315,13042 8315,13181 8
 # REMOVED (weitgehend markiert, nur die letzten Meter am Groﬂ-Berliner Damm fehlen) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf (‹bergabe der Verkehrsfl‰chen im Oktober 2020) --- #: XXX wann sind sie fertig? (bei osm bereits eingetragen) --- #: last_checked: 2020-09-04 --- #: next_check: 2020-10-01 --- Benno-Kˆnig-Str.: Radspuren werden markiert	?::inwork 18596,4517 18434,4363 18374,4307
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf
-#: last_checked: 2020-12-16 (mapillary) vvv
+#: last_checked: 2021-01-08 (mapillary) vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
 Bodestr.: in Zukunft nur f¸r Rad- und Fuﬂverkehr offen	? 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
 Am Lustgarten: in Zukunft nur f¸r Rad- und Fuﬂverkehr offen	? 10054,12699 10094,12635
@@ -3422,11 +3415,14 @@ Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8694 (Frage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8733 (Gutachten f¸r Modalfilter angefordert)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8758 (Frage)
+#: by: https://www.moz.de/lokales/oranienburg/jahresrueckblick-das-war-das-jahr-2020-in-glienicke-53514903.html (6.1.2021: Ergebnis des Gutachtens steht noch aus)
 #: priority: #C vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2020-09-11 vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2021-01-06 (moz) vvv
+#: check_frequency: 90d vvv
+#: also_indoor: search Schildower_Straﬂe
 Schildower Str.: wird hier ein modaler Filter entstehen?	? 4914,24366 4898,24351
+#: also_indoor: search Elsestraﬂe
 Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3498,7 +3494,7 @@ Karl-Marx-Platz: Umgestaltung, Wegef¸hrung f¸r Radfahrer wird sich ‰ndern	?::pro
 #: by: http://www.infravelo.de/projekt/invalidenstrasse/ (bis 4. Quartal 2020)
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
 #: XXX jetzt fehlen noch die "Leitboys"
-#: last_checked: 2020-12-30 (mapillary)
+#: last_checked: 2021-01-08 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-11-30
 Invalidenstr.: Radstreifen (provisorische, dann gesch¸tzte) und Umbau von Ampelanlagen geplant	?::projected 9383,13986 9469,14004 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
@@ -4011,7 +4007,7 @@ Paul-Schneider-Str.: Bauarbeiten geplant, ‰ndert sich was f¸r Radfahrer?	?::proj
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
 #: XXX wird die Vorfahrtsregelung ge‰ndert?
 #: osm_watch: way id="83030876" version="13"
-#: osm_watch: way id="133988476" version="11"
+#: osm_watch: way id="133988476" version="12"
 #: last_checked: 2020-12-30 (mapillary)
 #: check_frequency: 180d
 Handjerystr.: entsteht hier eine neue Fahrradstraﬂe?	?::projected 5631,8011 5630,7875 5636,7734 5636,7709 5636,7685 5635,7660 5636,7540 5640,7435 5641,7332 5642,7255 5624,7244 5614,7223 5621,7204 5641,7189 5624,7113 5565,7024 5478,6959 5357,6932
@@ -4534,7 +4530,7 @@ Hauptstr./Goethestr.: vorhandene ‹berquerungshilfe soll zu einem Zebrastreifen a
 # 
 #: by: http://www.infravelo.de/projekt/karlshorster-strasse/ (baulich getrennte Radwege, 2. Quartal 2021 - 3. Quartal 2021)
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2021-01-01
+#: last_checked: 2021-01-08
 #: check_frequency: 90d
 #: next_check: 2021-09-30
 Karlshorster Str.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
@@ -4542,7 +4538,7 @@ Karlshorster Str.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::pro
 #: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (nicht mehr aktiv)
 #: source_id: 2147345383 (bis 06.03.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun? -> nein, das ist an der Saganer Str.) (nicht mehr aktiv)
 #: source_id: 2147345563 (bis 24.04.2020, aber keine Anzeichen f¸r Bauarbeiten) (nicht mehr aktiv)
-#: last_checked: 2021-01-01
+#: last_checked: 2021-01-08
 Hauptstr.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
 #: last_checked: 2020-12-20
@@ -5351,10 +5347,11 @@ Osdorfer Str.: neue parallele Straﬂe wird gebaut, alte Straﬂe wird zum Radweg	?:
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5254
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5597
+#: XXX bislang gibt es ein LKW-Durchfahrverbot
 #: priority: #D
 #: osm_watch: way id="8150996" version="8"
 #: osm_watch: way id="4687336" version="15"
-#: last_checked: 2020-12-14 (mapillary)
+#: last_checked: 2021-01-08 (mapillary)
 #: check_frequency: 120d
 Stedingerweg: wird es hier Maﬂnahmen gegen den MIV-Durchgangsverkehr geben?	? 13636,14900 13733,14813 13908,14654 13933,14622 13947,14513
 # 
@@ -5730,17 +5727,17 @@ Charles-Boutard-Straﬂe: geplante Straﬂe in Johannisthal, genaue Lage, Qualit‰t?	
 #: by: https://www.berliner-woche.de/biesdorf/c-bauen/wohnquartier-gut-alt-biesdorf-soll-bis-ende-juni-2021-fertig-sein_a279406
 #: by: https://www.berliner-woche.de/biesdorf/c-bauen/bezirk-ehrt-im-wohnquartier-gut-alt-biesdorf-lokale-persoenlichkeiten_a291005 (Straﬂenschilder h‰ngen)
 #: XXX neue Straﬂen, mˆglicherweise Spielstraﬂen vvv
-#: last_checked: 2020-11-15 vvv
+#: last_checked: 2021-01-08 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-06-30 vvv
 # Bebauungsplan XXI-34a: hier entstehen neue Straﬂen, genaue Lage, Qualit‰t?	?::inwork 20649,11628 20641,11496 21099,11478 21091,11601 20650,11627
-#: osm_watch: way id="744233909" version="8"
+#: osm_watch: way id="744233909" version="9"
 Elsa-Ledetsch-Weg: Wird hier eine Einbahnstraﬂe sein?	?::inwork 20650,11488 20659,11548 20726,11539
-#: osm_watch: way id="744233910" version="9"
+#: osm_watch: way id="744233910" version="10"
 Gisela-Reissenberger-Platz: genaue Lage? Qualit‰t?	?::inwork 20659,11548 20665,11620 20735,11613
-#: osm_watch: way id="744233528" version="10"
+#: note: osm_watch-Eintrag beim gesperrt-Eintrag
 Heino-Schmieden-Weg: Qualit‰t nach den Bauarbeiten (asphaltiert?)?	?::inwork 20720,11484 20726,11539 20735,11613 20831,11604 20818,11480
-#: osm_watch: way id="744363729" version="3"
+#: osm_watch: way id="744363729" version="4"
 Heino-Schmieden-Weg - Alt-Biesdorf: wird es hier f¸r Radfahrer eine Verbindung geben? Qualit‰t?	?::inwork 20831,11604 20838,11623
 # REMOVED --- #: osm_watch: way id="744277269" version="5" --- #: XXX mittlerweile schon fertig? Laut osm Verbundsteinpflaster --- (Verbindungsweg): nur f¸r Fuﬂg‰nger? Qualit‰t?	?::inwork 20659,11548 20627,11552 20590,11557
 #: next_check ^^^
@@ -6228,7 +6225,7 @@ Krampnitz: neue Planstraﬂen	?::projected -14183,5214 -13771,5077
 #: XXX * Heiner-Carow-Str.
 #: XXX * Ingrid-Reschke-Str.
 #: XXX * Gustav-Tempel-Str.
-#: last_checked: 2021-01-01
+#: last_checked: 2021-01-08
 #: next_check: 2022-01-01
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straﬂen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 
@@ -6324,8 +6321,8 @@ Bebauungsplan 8-84 (Koppelweg): neue Straﬂe geplant	?::projected 11987,4329 1204
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_45_5341_5412_online.pdf (Straﬂenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_49_5627_5702_online.pdf (Grundst¸cksnummerierungen)
 #: XXX fehlt bei Berlin.coords.data
-#: osm_watch: way id="865780927" version="2"
-#: last_checked: 2020-12-28
+#: osm_watch: way id="865780927" version="3"
+#: last_checked: 2021-01-08 (osm)
 #: check_frequency: 90d
 Kleiner Parkweg: neue "fuﬂl‰ufige Erschlieﬂung" entsteht hier; Qualit‰t? F¸r Radfahrer benutzbar? Ausgeschildert?	?::inwork 20779,11801 20808,11993
 # 
@@ -6530,6 +6527,7 @@ Bebauungsplan 12-68: wird der bestehende Weg "aufgewertet"; entsteht eine offizi
 # 
 #: by: http://tk.gis-broker.de/metadata/bplan/pdf/XVI-58.pdf
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/400-neue-wohnungen-in-hessenwinkel_a297521 (nicht 100%ig klar, ob dieses Gel‰nde gemeint ist; geplante Fertigstellung: 2023)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/f%C3%BCrstenwalder-allee-324-hessenwinkel.1005/#post-14173
 #: XXX auﬂerdem muss die Gr¸nfl‰che (oder eher Brache hier) verkleinert werden
 #: osm_watch: way id="264953674" version="5"
 #: last_checked: 2019-07-20
@@ -6739,7 +6737,7 @@ Bebauungsplan 3-41: Straﬂen werden entstehen; genaue Lage, Qualit‰t?	?::projecte
 #: by: https://www.bahninfo-forum.de/read.php?9,603946,681862#msg-681862
 #: by: https://www.neues-deutschland.de/artikel/1144526.s-bahn-berlin-laenger-bauen-als-am-ber.html (Fertigstellung noch im Quartal IV/2020)
 #: XXX Provisorium (Fuﬂg‰ngerschutztunnel) in Bau, es wird vermutlich vier Dr‰ngelgitter geben (an beiden Enden, sowie zwei dazwischen)
-#: last_checked: 2021-01-01
+#: last_checked: 2021-01-08
 #: check_frequency: 14d
 #: next_check: 2024-06-15
 Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15052,10920 14888,10959

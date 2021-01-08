@@ -31368,7 +31368,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
-#: last_checked: 2020-11-14
+#: last_checked: 2021-01-01 (architektur-urbanistik) (vermutlich)
 #: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 EOF
@@ -31382,6 +31382,7 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9049 (ab August (2020 oder 2021?) für sechs Monate, auch beim Brebacher Weg, Bau einer Autoüberfahrt?)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9184 (fehlende Umleitung)
 #: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
+#: by: https://twitter.com/SBahnBerlin/status/1347543580529758210 (S-Bahn fährt nicht bis 25.1.2021)
 #: XXX bis wann ist der Bahnübergang gesperrt?
 #: also_indoor: search Oberfeldstraße Bahnübergang
 #: osm_watch: way id="868347101" version="2"
@@ -31822,6 +31823,15 @@ EOF
        source_id => '2147346773',
        data  => <<EOF,
 	q4::inwork; 18680,5413 18955,5320 19037,5316
+EOF
+     },
+     { from  => 1610233200, # 2021-01-10 00:00
+       until => 1612566000, # 2021-02-06 00:00
+       text  => 'L30: Sperrung der Unterführung unter der A10, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 11.01.2021 bis 05.02.2021',
+       type  => 'gesperrt',
+       source_id => 'LS/721-E/21/005',
+       data  => <<EOF,
+	2::inwork 9640,29628 9996,29712
 EOF
      },
     );
