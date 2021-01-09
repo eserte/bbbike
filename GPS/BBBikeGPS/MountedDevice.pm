@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2015,2016,2017,2018,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2015,2016,2017,2018,2020,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@
 
     use strict;
     use vars qw($VERSION);
-    $VERSION = '0.21';
+    $VERSION = '0.22';
 
     sub has_gps_settings { 1 }
 
@@ -33,10 +33,6 @@
 
     sub convert_from_route {
 	my($self, $route, %args) = @_;
-
-	# do not delete the following, needed also in simplify_for_gps
-	my $waypointlength = $args{-waypointlength};
-	my $waypointcharset = $args{-waypointcharset};
 
 	require File::Temp;
 	require Route::Simplify;
