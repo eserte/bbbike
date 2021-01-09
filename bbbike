@@ -3799,6 +3799,7 @@ if (!$MM_DRAG_IS_OBSOLETE) {
 		     '-',
 		     'GPS direkt',
 		     [M('Route auf GPS-Gerät kopieren (Massenspeicher)'), 'BBBikeGPS::MountedDevice'],
+		     [M('Route auf GPS-Gerät kopieren (MTP, z.B. Fitnessuhren)'), 'BBBikeGPS::MTP'],
 		     [M('Route zu einem Garmin senden (seriell/USB)'), 'DirectGarmin'],
 		     [M('Senden der Route zu einem Garmin simulieren'), 'DirectGarmin_Test'],
 		     ($devel_host ? [M("Route mit gpsbabel senden"), "GpsbabelSend"] : ()),
