@@ -126,6 +126,80 @@ sub _mtp_get_folder_id_parse {
     die "Cannot find folder '$path'";
 }
 
+sub _mtp_get_filetree {
+    my $fh;
+    if (eval { require IPC::Run; 1 }) {
+	IPC::Run::run(['mtp-filetree'], '2>/dev/null', '>', \my $out)
+	    or die "Error while running 'mtp-filetree'";
+	open $fh, '<', \$out or die $!;
+    } else {
+	open $fh, '-|', 'mtp-filetree'
+	    or die "Can't run mtp-filetree: $!";
+    }
+    my @files = _mtp_get_filetree_parse($fh);
+    close $fh
+	or die "Error while closing mtp-filetree call: $!";
+    @files;
+}
+
+sub _mtp_get_filetree_parse {
+    my($fh) = @_;
+    my @files;
+    my @cwd;
+    while(<$fh>) {
+	chomp;
+	if (my($indentantion_string, $id, $path_segment) = $_ =~ /^(\s*)(\d+)\s(.*)/) {
+	    my $depth = length($indentantion_string)/2;
+	    $cwd[$depth] = $path_segment;
+	    if (@cwd > $depth) {
+		splice @cwd, $depth+1;
+	    }
+	    push @files, { path => join("/", @cwd), id => $id };
+	}
+    }
+    @files;
+}
+
+sub _mtp_sync_commands {
+    my($src, $dest, %opts) = @_;
+
+    my $case_sensitive = delete $opts{casesensitive};
+    my $doit           = delete $opts{doit};
+
+    die "Unhandled options: " . join(" ", %opts) if %opts;
+
+    my @files = grep {
+	if ($case_sensitive) {
+	    index($_->{path}, $src."/") == 0;
+	} else {
+	    index(lc($_->{path}), lc($src)."/") == 0;
+	}
+    } _mtp_get_filetree();
+
+    require File::Basename;
+
+    my @sync_cmds;
+    for my $file_def (@files) {
+	my($path, $id) = @{$file_def}{qw(path id)};
+	my $destpath = "$dest/" . File::Basename::basename($path);
+	if (!-e $destpath) {
+	    push @sync_cmds, ["mtp-getfile", $id, $destpath];
+	}
+    }
+
+    if ($doit) {
+	for my $sync_cmd (@sync_cmds) {
+	    warn "Run '@$sync_cmd'...\n";
+	    system @$sync_cmd;
+	    if ($? != 0) {
+		die "Command failed.\n";
+	    }
+	}
+    }
+
+    @sync_cmds;    
+}
+
 # Logging, should work within Perl/Tk app and outside
 sub _status_message {
     if (defined &main::status_message) {
