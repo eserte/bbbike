@@ -2947,8 +2947,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: SIGISMUND-2020
 #: XXX wann sind die Bauarbeiten fertig? vvv
 #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
-#: last_checked: 2020-11-24 vvv
-	q3::inwork 8031,11249 7934,11275 7897,11287
+#: last_checked: 2021-01-09 vvv
+#: note: hier von Osten aus legaler gemeinsamer Rad- und Gehweg auf dem Bürgersteig, mit kurzer asphaltierter Rampe, von Westen aus verboten für Fahrzeuge aller Art
+	q2::inwork 8031,11249 7934,11275 7897,11287
 	q4::inwork 7934,11275 7965,11380
 #: last_checked ^^^
 #: XXX ^^^
@@ -3065,23 +3066,11 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1611936000
        },
-       {
-         'data' => '#: source_id: 2147346557 (Leitungsarbeiten in der General-Pape-Str.) (mittlerweile inaktiv)
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-12-06
-# REMOVED --- #: next_check: 2020-11-30
-	2::inwork 8066,7843 7955,7840
-',
-         'from' => undef,
-         'id' => 3296,
-         'text' => 'General-Pape-Str. - Wintgensstr.: Bauarbeiten, Fahrbahn und Gehweg komplett gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2020-12-27
+#: last_checked: 2021-01-09
 #: check_frequency: 14d
 	q4::inwork 12162,8053 12147,8117
 ',
@@ -3186,9 +3175,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '#: XXX genaue Lage der Baustelle?
-#: next_check: 2021-01-04
-	q4::inwork; 9298,12765 9303,12718 9313,12662
+         'data' => '# REMOVED (genau so) --- #: XXX genaue Lage der Baustelle? --- #: last_checked: 2021-01-09 --- #: next_check: 2021-01-04
+	q4::inwork; 9298,12765 9303,12718 9313,12662 9314,12652
 ',
          'from' => 1609650000,
          'id' => 3314,

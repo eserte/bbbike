@@ -31309,8 +31309,9 @@ EOF
 #: next_check_id: SIGISMUND-2020
 #: XXX wann sind die Bauarbeiten fertig? vvv
 #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
-#: last_checked: 2020-11-24 vvv
-	q3::inwork 8031,11249 7934,11275 7897,11287
+#: last_checked: 2021-01-09 vvv
+#: note: hier von Osten aus legaler gemeinsamer Rad- und Gehweg auf dem Bürgersteig, mit kurzer asphaltierter Rampe, von Westen aus verboten für Fahrzeuge aller Art
+	q2::inwork 8031,11249 7934,11275 7897,11287
 	q4::inwork 7934,11275 7965,11380
 #: last_checked ^^^
 #: XXX ^^^
@@ -31541,13 +31542,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1610195611, # undef, # XXX
        text  => 'General-Pape-Str. - Wintgensstr.: Bauarbeiten, Fahrbahn und Gehweg komplett gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 2147346557 (Leitungsarbeiten in der General-Pape-Str.) (mittlerweile inaktiv)
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-12-06
+# REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+# REMOVED --- #: last_checked: 2021-01-09
 # REMOVED --- #: next_check: 2020-11-30
 	2::inwork 8066,7843 7955,7840
 EOF
@@ -31559,7 +31560,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2020-12-27
+#: last_checked: 2021-01-09
 #: check_frequency: 14d
 	q4::inwork 12162,8053 12147,8117
 EOF
@@ -31793,9 +31794,8 @@ EOF
        type  => 'handicap',
        source_id => '2147346756',
        data  => <<EOF,
-#: XXX genaue Lage der Baustelle?
-#: next_check: 2021-01-04
-	q4::inwork; 9298,12765 9303,12718 9313,12662
+# REMOVED (genau so) --- #: XXX genaue Lage der Baustelle? --- #: last_checked: 2021-01-09 --- #: next_check: 2021-01-04
+	q4::inwork; 9298,12765 9303,12718 9313,12662 9314,12652
 EOF
      },
      { from  => 1609668000, # 2021-01-03 11:00

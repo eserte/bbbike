@@ -138,8 +138,8 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 #: osm_watch: way id="44807035" version="11"
 #: osm_watch: way id="26285705" version="7"
 #: osm_watch: way id="69166216" version="7"
-#: source_id: 2147346409 (bis Ende 2020, Gesamtbaumaßnahme bis Ende 2023)
-#: last_checked: 2020-12-29 vvv
+#: source_id: 2147346409 (bis Ende 2021, Gesamtbaumaßnahme bis Ende 2023)
+#: last_checked: 2021-01-09 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
@@ -233,10 +233,10 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2020-12-21
+#: last_checked: 2021-01-09
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
-#: last_checked: 2020-11-14
+#: last_checked: 2021-01-09
 #: check_frequency: 60d
 (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10953,12638 10772,12515
 # 
@@ -351,7 +351,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: also_indoor: traffic
-#: last_checked: 2020-12-01 vvv
+#: last_checked: 2021-01-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="8"
@@ -396,14 +396,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # REMOVED (fertig?) --- Ella-Trebe-Str.: Einbahnstraßenregelung wegen Bauarbeiten	q3::inwork; 7939,13026 7948,12918
 # REMOVED (fertig) --- #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014) --- #: osm_watch: way id="4592727" version="13" --- #: last_checked: 2017-08-12 --- #: check_frequency: 14d --- Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
 # REMOVED (so gut wie fertig, man kommt als Radfahrer schon durch) --- #: last_checked: 2014-07-16 --- Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg für einen 70 Meter langer Abschnitt	q2::inwork 8912,16582 9107,16389
-# 
-#: next_check_id: MUSEUMSINSEL-2020
-#: next_check_id: ZEUGHAUS-2014
-#: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2020-12-01
-#: check_frequency: 60d
-Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
-# 
+# REMOVED (wegen Komplettsperrung) --- #: next_check_id: MUSEUMSINSEL-2020 --- #: next_check_id: ZEUGHAUS-2014 --- #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden --- #: last_checked: 2020-12-01 --- #: check_frequency: 60d --- Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # REMOVED (bleibt noch die Komplettsperrung) --- #: next_check_id: STAATSOPER-2014 vvv --- #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html --- #: last_checked: 2018-08-13 vvv --- #: next_check: 2018-09-27 vvv --- # REMOVED --- check_frequency: 30d vvv --- # REMOVED (mittlerweile -> gesperrt-orig) --- Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298 --- Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # REMOVED --- #: last_checked: 2017-12-13 --- #: check_frequency: 14d --- Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9909,12261 9959,12281
 # REMOVED --- #: next_check_id: OBERWALL-2014 --- # REMOVED (ja) --- : XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig --- #: XXX siehe auch Eintrag in handicap_s-orig --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html --- #: osm_watch: way id="66071370" version="4" --- #: last_checked: 2017-11-13 --- #: check_frequency: 14d --- Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9898,12161 9883,12251
@@ -670,7 +663,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: osm_watch: way id="585753318" version="6"
 #: osm_watch: way id="71392596" version="13"
 #: also_indoor: traffic
-#: last_checked: 2020-11-29 (mapillary) vvv
+#: last_checked: 2021-01-09 vvv
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
@@ -727,7 +720,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-12-15 vvv
+#: last_checked: 2021-01-09 vvv
 # REMOVED (hier kaum noch Einschränkungen) --- Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
 Bauarbeiten im Kreuzungsbereich	q3::inwork 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
@@ -907,7 +900,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: by: https://camera.deckchair.com/park-inn-berlin-alexanderplatz (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/2271-u-5/?postID=666937#post666937 (Pflasterungsarbeiten)
 # REMOVED (gelöscht) --- #: osm_watch: relation id="8743849" version="2"
-#: last_checked: 2021-01-01 (webcam)
+#: last_checked: 2021-01-09
 #: check_frequency: 14d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -3472,6 +3465,7 @@ Schloßplatz: Fußgänger	q3 10175,12435 10271,12503
 (Parkweg - Park Biesdorf): Fußgänger	q2 20779,11801 20804,11797 20818,11812 20835,11810
 Am Kraatzgraben: einige Fußgänger	q1 16899,10020 16835,10052
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fußgänger	q1 16894,10003 16899,10020 16912,10054
+(Nördliche Landebahn - Eingang Peter-Strasser-Weg): schmal	q2 9362,7616 9281,7651
 # 
 ######################### User Contributions #################################
 # 

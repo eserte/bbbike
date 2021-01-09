@@ -2841,13 +2841,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: osm_watch: node id="5931765487" version="1"
 #: osm_watch: node id="5931765488" version="1"
-#: last_checked: 2021-01-08 (mapillary)
+#: last_checked: 2021-01-09
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2020-12-21 vvv
+#: last_checked: 2021-01-09 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3057,6 +3057,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 7292,17316
 #: note: Radfahrer- und Fußgängerampel
 #: note: Anforderungsampel
+#: note: Ampel gilt nicht für Radfahrer aus der Annenstr. (separate Furt ohne Signalisierung)
 	X 20262,14255
 #: note: Anforderung für Radfahrer aus/in Richtung Kohlisstr.
 	X 23810,7946
