@@ -31834,4 +31834,27 @@ EOF
 	2::inwork 9640,29628 9996,29712
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Trautenauer Str.: Fahrbahn wegen Bauarbeiten am Projekt "Parkstadt Karlshorst" gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: PARKSTADTKARLSHORST-2021
+#: XXX genauer Abschnitt des gesperrten Bereichs?
+	q4::inwork 17830,8578 17813,8508 17794,8429 17774,8342
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Passauer Str.: Einbahnstraßenregelung, gesperrt Richtung Tauentzienstr., Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       source_id => 'https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680',
+       data  => <<EOF,
+#: XXX wann sind die Bauarbeiten beendet?
+#: also_indoor: traffic (G)
+#: last_checked: 2021-01-10 (daf)
+#: check_frequency: 90d
+	q4::inwork; 6033,10403 6133,10679
+EOF
+     },
     );

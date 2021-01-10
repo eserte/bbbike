@@ -371,9 +371,9 @@ Hüttenweg: Kopfsteinpflaster	Q1 1573,5152 1964,5070
 Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig, Wurzeln	Q2 20872,7268 20892,7236 20867,7165 20869,7116 21409,6731 21576,6644
 Wuhlheide: fester Waldweg	Q2 20869,7116 20682,7262 20653,7289
 Wuhlheide: Waldweg	Q2 21365,5832 21653,6037 21737,6068 21832,6129 21869,6190 21958,6248 22000,6245
-(Hegemeisterweg - Modellpark Wuhlheide): Asphalt	Q0 18406,7760 18437,7752 19069,6928
+(Hegemeisterweg - Modellpark Wuhlheide): Asphalt	Q0 18406,7760 18437,7752 19045,6959 19069,6928
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19463,7117 19223,7189
-(Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19223,7189 19161,7109 19084,7009 19069,6928 19052,6823 18948,6578
+(Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19223,7189 19161,7109 19084,7009 19080,6986 19069,6928 19052,6823 18948,6578
 Mittelweg: Kopfsteinpflaster	Q2 12918,7600 12771,7679 12698,7677 12647,7672 12520,7694
 Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 Karl-Marx-Str.: Asphalt mit Schäden	Q0 12330,8636 12500,8504
@@ -2911,7 +2911,8 @@ Hönower Str. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18490,9387 18377,9366
 Schmiedeberger Weg: Verbundsteinpflaster	Q0 18021,8976 17956,8935
 Grimnitzstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18070,8945 17929,8742
 Müritzstr.: schlechtes Kopfsteinpflaster	Q3 18147,8895 18009,8687 17930,8567
-Hoher Wallgraben: Asphalt mit Schäden	Q2 17988,8350 17999,8336 18078,8112 18099,8048
+Hoher Wallgraben: Asphalt mit Schäden	Q2 17988,8350 17999,8336 18078,8112
+Hoher Wallgraben: Asphalt mit einigen Rissen	Q1 18078,8112 18099,8048
 (Hoher Wallgraben - Hegemeisterweg): Waldweg	Q2 18099,8048 18119,7996 18287,7815
 Am Ernst-Grube-Park: sehr gutes Verbundsteinpflaster	Q0 21025,5437 21057,5421 21070,5343 21090,5417 21143,5402
 Angersteinweg: Asphalt und Verbundsteinpflaster	Q0 21143,5402 21151,5412 21206,5420
@@ -10485,6 +10486,9 @@ Schloßplatz: Kleinpflastersteine	Q1 10175,12435 10271,12503
 Am Kraatzgraben: Verbundsteinpflaster	Q1 16899,10020 16835,10052
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: unbefestigt	Q1 16895,9922 16886,9982 16894,10003
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: Verbundsteinpflaster	Q1 16894,10003 16899,10020 16912,10054
+Parallelweg am Eichgestell: guter Parkweg	Q1 18134,7173 18908,6834 18944,6870
+Parallelweg am Eichgestell - Wasserwerk Wuhlheide: Parkweg, einige Pfützen möglich	Q1 18944,6870 19045,6959
+Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2 19045,6959 19080,6986
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12522,7 +12526,8 @@ Lütticher Str.: Asphalt	Q0 6640,15421 6727,15319
 Börnestr.: guter Asphalt	Q0 13214,15830 13263,15930 13312,16027 13410,16214
 Am Sandwerder: guter Asphalt	Q0 -4644,1514 -4638,1579 -4469,1921 -4326,2141
 Am Oberhafen (Spandau): Beton	Q0 -2974,13188 -3053,13179 -3270,13307
-Sadowastr.: mäßiger Asphalt	Q1 17856,8162 17925,8101 17976,8106 18078,8112
+Sadowastr.: Asphalt	Q0 17856,8162 17925,8101 17976,8106
+Sadowastr.: teilweise brüchiger Asphalt	Q0 17976,8106 18078,8112
 Treskowstr. (Tegel): schlechtes Kopfsteinpflaster	Q3 2064,19874 2029,19963
 Treskowstr. (Tegel): Kopfsteinpflaster	Q2 2029,19963 1989,20053 1953,20149 1907,20265
 Wernitzer Str.: glattes Kopfsteinpflaster	Q1 22253,10412 22365,10386 22469,10362 22519,10339 22574,10300

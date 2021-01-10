@@ -834,7 +834,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-01-09
+#: last_checked: 2021-01-10
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1139,8 +1139,9 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 	RW2; 20880,5736 21002,5755
 	RW2;RW2 14196,9749 14271,9712 14318,9688 14495,9609
 	RW2; 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15407,9151 15442,9095 15452,9079 15591,8848
-#: note: widersprüchliche Angaben zur Benutzungspflicht: am Anfang steht ein Radwegschild, wenige Meter weiter ein Schild zur Aufhebung der Radwegbenutzungspflicht
-	RW1; 15591,8848 15452,9079 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609
+	RW2; 15591,8848 15452,9079
+#: note: explizites Schild zur Aufhebung der Radwegbenutzungspflicht, nur einige Meter nach der Bulgarischen Str.
+	RW1; 15452,9079 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609
 	RW1; 13919,7707 14015,7631
 	RW2; 14015,7631 14095,7568 14174,7505
 	RW1; 14174,7505 14095,7568 14015,7631
@@ -5152,7 +5153,7 @@ Verbundsteinpflasterradweg	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: confirmed_by: srt
 	RW3;RW3 7733,8023 7783,8035 7824,8056 7838,8085 7859,8252 7899,8332 7956,8408 8078,8772
 #: next_check_id: MITTEL-2019
-#: last_checked: 2020-12-21
+#: last_checked: 2021-01-10 (daf)
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben
 	RW0; 9141,12320 9131,12438 9121,12514
 	RW4; 9131,12438 9141,12320
@@ -6402,7 +6403,7 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17952,6246 17991,6431
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 #: osm_watch: way id="4566067" version="23"
-#: last_checked: 2020-12-18 vvv
+#: last_checked: 2021-01-10 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 # REMOVED --- #: osm_watch: way id="329510232" version="9"

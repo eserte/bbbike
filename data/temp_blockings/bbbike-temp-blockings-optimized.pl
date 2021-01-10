@@ -3215,6 +3215,31 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'L30: Sperrung der Unterführung unter der A10, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 11.01.2021 bis 05.02.2021',
          'type' => 'gesperrt',
          'until' => 1612566000
+       },
+       {
+         'data' => '#: next_check_id: PARKSTADTKARLSHORST-2021
+#: XXX genauer Abschnitt des gesperrten Bereichs?
+	q4::inwork 17830,8578 17813,8508 17794,8429 17774,8342
+',
+         'from' => undef,
+         'id' => 3319,
+         'text' => 'Trautenauer Str.: Fahrbahn wegen Bauarbeiten am Projekt "Parkstadt Karlshorst" gesperrt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: XXX wann sind die Bauarbeiten beendet?
+#: also_indoor: traffic (G)
+#: last_checked: 2021-01-10 (daf)
+#: check_frequency: 90d
+	q4::inwork; 6033,10403 6133,10679
+',
+         'from' => undef,
+         'id' => 3320,
+         'source_id' => 'https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680',
+         'text' => 'Passauer Str.: Einbahnstraßenregelung, gesperrt Richtung Tauentzienstr., Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

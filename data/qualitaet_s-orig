@@ -544,9 +544,9 @@ Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig, Wurzeln	Q2 20872,7268 2
 Wuhlheide: fester Waldweg	Q2 20869,7116 20682,7262 20653,7289
 #: note: in Bereich des Stadions ist ein Abschnitt asphaltiert
 Wuhlheide: Waldweg	Q2 21365,5832 21653,6037 21737,6068 21832,6129 21869,6190 21958,6248 22000,6245
-(Hegemeisterweg - Modellpark Wuhlheide): Asphalt	Q0 18406,7760 18437,7752 19069,6928
+(Hegemeisterweg - Modellpark Wuhlheide): Asphalt	Q0 18406,7760 18437,7752 19045,6959 19069,6928
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2+ 19463,7117 19223,7189
-(Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19223,7189 19161,7109 19084,7009 19069,6928 19052,6823 18948,6578
+(Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19223,7189 19161,7109 19084,7009 19080,6986 19069,6928 19052,6823 18948,6578
 Mittelweg: Kopfsteinpflaster	Q2 12918,7600 12771,7679 12698,7677 12647,7672 12520,7694
 Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 # REMOVED (Fahrbahnverbesserung wurde realisiert, sort-of) --- #: XXX hier wird die Fahrbahn ausgebessert (2017), später (2018-2022) Radfahrstreifen oder "Protected Bike-Lane" --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.626855.php (Radstreifen: Frühjahr 2018) --- #: last_checked: 2017-09-13 --- #: next_check: 2017-10-15
@@ -930,7 +930,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-01-06
+#: last_checked: 2021-01-10
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3406,8 +3406,10 @@ Mönchstr.: kleinteiliges Kopfsteinpflaster	Q1 -3110,14408 -3174,14438 -3228,1446
 #: by: https://www.berliner-woche.de/spandau/c-bauen/altstadt-wandelt-sich-merklich_a193921 (Kleinpflaster wird durch Mix aus Granitplatten, Groß- und Mosaikpflaster ersetzt)
 #: by: https://www.berliner-woche.de/spandau/c-bauen/so-geht-es-in-der-altstadt-spandau-weiter_a246535 (Vorplanungsphase)
 #: by: https://www.berliner-woche.de/spandau/c-bauen/das-projekt-altstadt-spandau-beginnt_a279874 (in der Nähe, am Reformationsplatz)
+#: by: http://altstadtmanagement-spandau.de/isek-spandau/projekte-und-massnahmen/
+#: by: https://www.youtube.com/watch?v=B50vFn-hZOg
 #: last_checked: 2020-08-23
-#: check_frequency: 120d
+#: check_frequency: 240d
 Markt: kleinteiliges Kopfsteinpflaster	Q1 -3155,14340 -3204,14368 -3231,14383 -3275,14407
 #: by: mapillary
 Moritzstr.: kleinteiliges Kopfsteinpflaster	Q1 -3350,14446 -3275,14407
@@ -3704,7 +3706,9 @@ Hönower Str. (Karlshorst): schlechtes Kopfsteinpflaster	Q3+ 18490,9387 18377,936
 Schmiedeberger Weg: Verbundsteinpflaster	Q0- 18021,8976 17956,8935
 Grimnitzstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18070,8945 17929,8742
 Müritzstr.: schlechtes Kopfsteinpflaster	Q3 18147,8895 18009,8687 17930,8567
-Hoher Wallgraben: Asphalt mit Schäden	Q2+ 17988,8350 17999,8336 18078,8112 18099,8048
+#: XXX wurde der Asphalt hier verbessert?
+Hoher Wallgraben: Asphalt mit Schäden	Q2+ 17988,8350 17999,8336 18078,8112
+Hoher Wallgraben: Asphalt mit einigen Rissen	Q1+ 18078,8112 18099,8048
 (Hoher Wallgraben - Hegemeisterweg): Waldweg	Q2+ 18099,8048 18119,7996 18287,7815
 Am Ernst-Grube-Park: sehr gutes Verbundsteinpflaster	Q0 21025,5437 21057,5421 21070,5343 21090,5417 21143,5402
 Angersteinweg: Asphalt und Verbundsteinpflaster	Q0 21143,5402 21151,5412 21206,5420
@@ -8864,7 +8868,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.726077.php ("erste Hälfte 2019")
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2020-12-18 vvv
+#: last_checked: 2021-01-10 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -11908,6 +11912,10 @@ Schloßplatz: Kleinpflastersteine	Q1- 10175,12435 10271,12503
 Am Kraatzgraben: Verbundsteinpflaster	Q1 16899,10020 16835,10052
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: unbefestigt	Q1- 16895,9922 16886,9982 16894,10003
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: Verbundsteinpflaster	Q1 16894,10003 16899,10020 16912,10054
+Parallelweg am Eichgestell: guter Parkweg	Q1 18134,7173 18908,6834 18944,6870
+Parallelweg am Eichgestell - Wasserwerk Wuhlheide: Parkweg, einige Pfützen möglich	Q1- 18944,6870 19045,6959
+#: note: hier ein "wilder" Weg, aber der Boden ist gut plattgetrampelt
+Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6959 19080,6986
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -16921,8 +16929,13 @@ Am Sandwerder: guter Asphalt	Q0 -4644,1514 -4638,1579 -4469,1921 -4326,2141
 #: by: Marion Kaminsky:
 Am Oberhafen (Spandau): Beton	Q0 -2974,13188 -3053,13179 -3270,13307
 # 
-#: by: thomasraddatz:
-Sadowastr.: mäßiger Asphalt	Q1 17856,8162 17925,8101 17976,8106 18078,8112
+#: by: thomasraddatz: vvv
+#: corrected_by: srt (mäßiger Asphalt, Q1 -> ..., neu gemacht?)
+#: note: einige Asphaltschäden in den Parkflächen vorhanden
+Sadowastr.: Asphalt	Q0 17856,8162 17925,8101 17976,8106
+#: corrected_by: srt (mäßiger Asphalt, Q1 -> ..., teilweise neu gemacht)
+Sadowastr.: teilweise brüchiger Asphalt	Q0- 17976,8106 18078,8112
+#: by ^^^
 # 
 #: by: Scheu: vvv
 #: corrected_by: Thomas Heuving (gut -> schlecht)
@@ -23059,7 +23072,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 # REMOVED (fertig) --- #: XXX Baubeginn 27.05.2019, Abschluss voraussichtlich im Dezember 2019 --- #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...) --- #: osm_watch: way id="43899012" version="7" --- #: last_checked: 2019-12-14 --- #: check_frequency: 21d
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
-#: osm_watch: way id="593504821" version="2"
+#: osm_watch: way id="593504821" version="3"
 #: last_checked: 2020-06-19 (mapillary)
 #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 16314,15223 16354,15323 16406,15452
@@ -24557,7 +24570,7 @@ Kroppenstedtweg: Asphalt	Q0 1035,14996 996,15091 982,15127
 #: by: https://www.berliner-woche.de/siemensstadt/c-bauen/gasleuchten-in-siemensstadt-werden-umgeruestet_a248611 (Baumaßnahme wird 2023 fertig sein)
 #: XXX wird hier auch die Fahrbahndecke verbessert?
 # REMOVED (anderer Abschnitt) --- #: osm_watch: way id="28259369" version="19"
-#: osm_watch: way id="844089355" version="1"
+#: osm_watch: way id="844089355" version="2"
 #: last_checked: 2020-09-06 (mapillary)
 #: check_frequency: 90d
 Kroppenstedtweg: wassergebundene Decke	Q1 982,15127 957,15189
