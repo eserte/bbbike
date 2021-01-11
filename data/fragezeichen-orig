@@ -3908,10 +3908,12 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9768 (Finanzierung des Umbaus der Bergmannstraße)
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
+#: source_id: 2147346783 (Leitungsarbeiten bis 22.1.2021)
 #: osm_watch: way id="4588059" version="23"
 #: priority: #C
 #: last_checked: 2020-12-19
 #: check_frequency: 90d
+#: next_check: 2021-01-22
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422 vvv
@@ -4529,7 +4531,7 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 # 
 #: by: http://www.infravelo.de/projekt/karlshorster-strasse/ (baulich getrennte Radwege, 2. Quartal 2021 - 3. Quartal 2021)
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2021-01-10
+#: last_checked: 2021-01-11
 #: check_frequency: 90d
 #: next_check: 2021-09-30
 Karlshorster Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
@@ -4537,10 +4539,10 @@ Karlshorster Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::pro
 #: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (nicht mehr aktiv)
 #: source_id: 2147345383 (bis 06.03.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun? -> nein, das ist an der Saganer Str.) (nicht mehr aktiv)
 #: source_id: 2147345563 (bis 24.04.2020, aber keine Anzeichen für Bauarbeiten) (nicht mehr aktiv)
-#: last_checked: 2021-01-10
+#: last_checked: 2021-01-11
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
-#: last_checked: 2020-12-20
+#: last_checked: 2021-01-11
 #: check_frequency: 90d
 #: next_check: 2022-01-02
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
@@ -5376,7 +5378,7 @@ Luisenplatz: Verbreiterung der Radwege	? 3279,12533 3271,12609 3269,12648 3291,1
 Böcklerpark: hier entsteht für Radfahrer ein "Sonderweg"	? 10521,10126 10723,10088 10803,10067 10879,10048 10879,10037 10948,10016 10969,10015 10979,10017
 # 
 #: by: http://www.infravelo.de/projekt/karl-marx-allee/ (bis 4. Quartal 2020)
-#: last_checked: 2021-01-10 (Richtung Osten in Arbeit)
+#: last_checked: 2021-01-11 (mapillary) (Richtung Osten in Arbeit)
 #: check_frequency: 7d
 Karl-Marx-Allee: Verbreiterung der Radwege	? 12878,12430 13163,12382 13448,12340 13543,12326
 # 
@@ -5925,7 +5927,7 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036878404255/878404255/00305340/40-Anlagen/08/3262020-07Bebauungsplan11-47baeBBundeOeB.pdf (Planzeichnung)
 #: XXX alle Straßen fehlen bei Berlin.coords.data
 #: osm_watch: way id="428279379" version="10" vvv
-#: last_checked: 2021-01-10 vvv
+#: last_checked: 2021-01-11 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2021-07-01 vvv
 # REMOVED --- Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue Straßen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
@@ -5947,7 +5949,7 @@ Planstraße G: genaue Lage, Qualität?	?::projected 17668,8454 17651,8370
 Fußgänger- und Radfahrerbereich: genaue Lage, Qualität?	?::projected 17686,8826 17650,8671
 Parkanlage: genaue Lage? Wird es hier Wege geben?	?::projected 17454,8747 17468,8722 17644,8719 17800,8689 17753,8516 17804,8503 17853,8731 17643,8769 17483,8768 17454,8747
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-im-bau/?postID=673580#post673580 (ab dem kommenden Jahr, also 2021)
-#: last_checked: 2021-01-10
+#: last_checked: 2021-01-11
 #: check_frequency: 60d
 Hönower Wiesenweg: wird es hier zu temporären Schließungen während der Bauarbeiten kommen?	? 17380,8858 17416,8767 17483,8644 17554,8458 17620,8366 17704,8327 17753,8290
 #: next_check ^^^
@@ -6738,7 +6740,7 @@ Bebauungsplan 3-41: Straßen werden entstehen; genaue Lage, Qualität?	?::projecte
 #: by: https://www.bahninfo-forum.de/read.php?9,603946,681862#msg-681862
 #: by: https://www.neues-deutschland.de/artikel/1144526.s-bahn-berlin-laenger-bauen-als-am-ber.html (Fertigstellung noch im Quartal IV/2020)
 #: XXX Provisorium (Fußgängerschutztunnel) in Bau, es wird vermutlich vier Drängelgitter geben (an beiden Enden, sowie zwei dazwischen)
-#: last_checked: 2021-01-10
+#: last_checked: 2021-01-11
 #: check_frequency: 14d
 #: next_check: 2024-06-15
 Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15052,10920 14888,10959

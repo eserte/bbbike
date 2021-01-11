@@ -3218,8 +3218,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: PARKSTADTKARLSHORST-2021
-#: XXX genauer Abschnitt des gesperrten Bereichs?
-	q4::inwork 17830,8578 17813,8508 17794,8429 17774,8342
+#: last_checked: 2021-01-11
+	q4::inwork 17794,8429 17774,8342
 ',
          'from' => undef,
          'id' => 3319,

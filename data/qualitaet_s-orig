@@ -3701,15 +3701,15 @@ Ilsestr. (Karlshorst, Rummelsburg): Beton	Q0- 18354,9575 18164,9623 18158,9625 1
 Lisztstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18319,9218 18332,9356
 Lisztstr. (Karlshorst): Asphalt	Q0 18332,9356 18377,9366
 Hönower Str. (Karlshorst): schlechtes Kopfsteinpflaster	Q3+ 18490,9387 18377,9366
-(Wandlitzstr. - Blockdammweg): Asphalt mit einigen schadhaften Stellen	Q1 18021,8976 17981,9000
-(Wandlitzstr. - Blockdammweg): Asphalt	Q0 17981,9000 17915,8945 17754,8863 17729,8850
+(Wandlitzstr. - Blockdammweg): Asphalt mit einigen schadhaften Stellen	Q1 18021,8976 17981,9000 17950,8974
+(Wandlitzstr. - Blockdammweg): Asphalt	Q0 17950,8974 17915,8945 17754,8863 17729,8850
 Schmiedeberger Weg: Verbundsteinpflaster	Q0- 18021,8976 17956,8935
 Grimnitzstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18070,8945 17929,8742
 Müritzstr.: schlechtes Kopfsteinpflaster	Q3 18147,8895 18009,8687 17930,8567
-#: XXX wurde der Asphalt hier verbessert?
-Hoher Wallgraben: Asphalt mit Schäden	Q2+ 17988,8350 17999,8336 18078,8112
-Hoher Wallgraben: Asphalt mit einigen Rissen	Q1+ 18078,8112 18099,8048
-(Hoher Wallgraben - Hegemeisterweg): Waldweg	Q2+ 18099,8048 18119,7996 18287,7815
+Hoher Wallgraben: Asphalt	Q0 17988,8350 17999,8336
+Hoher Wallgraben: Asphalt mit Schäden	Q2+ 17999,8336 18078,8112
+Hoher Wallgraben: Asphalt mit einigen Rissen	Q1+ 18078,8112 18101,8044
+(Hoher Wallgraben - Hegemeisterweg): Waldweg	Q2+ 18101,8044 18119,7996 18287,7815
 Am Ernst-Grube-Park: sehr gutes Verbundsteinpflaster	Q0 21025,5437 21057,5421 21070,5343 21090,5417 21143,5402
 Angersteinweg: Asphalt und Verbundsteinpflaster	Q0 21143,5402 21151,5412 21206,5420
 Angersteinweg: Beton	Q1 21206,5420 21208,5336 21208,5291
@@ -11916,6 +11916,7 @@ Parallelweg am Eichgestell: guter Parkweg	Q1 18134,7173 18908,6834 18944,6870
 Parallelweg am Eichgestell - Wasserwerk Wuhlheide: Parkweg, einige Pfützen möglich	Q1- 18944,6870 19045,6959
 #: note: hier ein "wilder" Weg, aber der Boden ist gut plattgetrampelt
 Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6959 19080,6986
+(Hoher Wallgraben - Lehndorffstr.): unbefestigter Weg	Q2+ 18101,8044 18186,8081 18276,8136
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14633,7 +14634,7 @@ Wandlitzstr.: Asphalt	Q0 18704,8427 18627,8475
 #: corrected_by: srt (Q2 -> Q0-)
 Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 18448,8602
 #: confirmed_by: srt
-Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976
+Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976
 #: by: ^^^
 # 
 #: by: Torsten Fleischmann:
@@ -16432,7 +16433,7 @@ Barbarastr.: Asphalt	Q0 6372,2856 6359,2875 6329,2916 6372,2959 6456,3038
 # 
 #: by: Thede: vvv
 #: corrected_by: srt (schlecht -> gut)
-Heiligenberger Str.: gutes Kopfsteinpflaster	Q1- 18269,8161 18328,8187 18351,8222
+Heiligenberger Str.: gutes Kopfsteinpflaster	Q1- 18266,8160 18328,8187 18351,8222
 #: confirmed_by: srt (südlich der Ehrlichstr.)
 Heiligenberger Str.: schlechtes Kopfsteinpflaster	Q3 18351,8222 18461,8377 18557,8525
 #: by: ^^^
@@ -17652,6 +17653,7 @@ Isenburger Weg: Kopfsteinpflaster	Q2 -7867,15185 -7819,15342
 # 
 #: by: Felix (Hartung):
 #: corrected_by: srt (mäßiger Belag -> schlechtes Kopfsteinpflaster)
+#: note: am westlichen Ende einige Asphaltflicken
 Güntherstr.: schlechtes Kopfsteinpflaster	Q3 17976,8106 17920,8256 17774,8342
 # 
 #: by: Jörg (studi):
@@ -20773,7 +20775,8 @@ Rotdornweg: mäßiger Asphalt	Q1- 2805,2438 3009,2429
 Monschauer Weg: guter Asphalt	Q0 8959,4686 8929,4882
 # 
 #: by: blasz
-Schenkestr.: mäßiges Kopfsteinpflaster	Q2 17961,8312 17794,8429
+#: corrected_by: srt (mäßiges -> schlechtes)
+Schenkestr.: schlechtes Kopfsteinpflaster	Q3 17961,8312 17794,8429
 # 
 #: by: Horst Ginzel:
 Geitelsteig: Asphalt	Q0 1974,14646 1977,14751 1988,14870
@@ -22441,12 +22444,18 @@ Schillerstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4568,2424 4721,2449
 #: by: ^^^
 # 
 #: by: Sabine (3113sf): vvv
+#: confirmed_by: srt
 Lehndorffstr.: schlechtes Kopfsteinpflaster	Q3 18401,8636 18397,8611 18407,8592 18428,8588 18448,8602
-Lehndorffstr.: schlechtes Kopfsteinpflaster	Q3 18407,8592 18322,8470
-#: confirmed_by: srt (südlich der Ehrlichstr.)
-Lehndorffstr.: glatter/ausgebesserter Asphalt	Q0- 18322,8470 18221,8328
+#: confirmed_by: srt (+ Aufteilung + Konkretisierung) vvv
+Lehndorffstr.: schlechtes Kopfsteinpflaster, teilweise mit Asphaltflicken	Q3; 18407,8592 18322,8470
+Lehndorffstr.: schlechtes Kopfsteinpflaster	Q3-; 18322,8470 18407,8592
+#: confirmed_by ^^^
+#: confirmed_by: srt (+ Aufteilung der Richtungen) vvv
+Lehndorffstr.: glatter Asphalt	Q0-; 18322,8470 18221,8328
+Lehndorffstr.: Asphalt mit Unebenheiten	Q1+; 18221,8328 18322,8470
+#: confirmed_by ^^^
 #: corrected_by: srt (glatter/ausgebesserter Asphalt -> ...)
-Lehndorffstr.: Asphalt mit leichten Unebenheiten	Q0- 18221,8328 18215,8316 18269,8161 18333,8059
+Lehndorffstr.: Asphalt mit leichten Unebenheiten	Q0- 18221,8328 18215,8316 18266,8160 18276,8136 18333,8059
 #: corrected_by: srt (Q0- -> ...)
 Lehndorffstr.: Asphalt	Q0 18333,8059 18412,7985
 #: confirmed_by: anonymous, srt
