@@ -2404,7 +2404,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="156066225" version="17"
 #: last_checked: 2020-11-15 vvv
 #: check_frequency: 45d vvv
-#: next_check: 2021-07-01 vvv
+#: next_check: 2021-01-13 vvv
 	q3::inwork 19164,2001 19181,1996 19266,1968 19564,1871
 	q2::inwork 19055,2037 19164,2001
 	q2::inwork 19164,2001 19194,2157
@@ -2757,8 +2757,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2021-01-03
+         'data' => '#: next_check_id: GAERTNER-2021
+#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
+#: last_checked: 2021-01-12
 #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2968,7 +2969,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
-#: last_checked: 2021-01-01 (architektur-urbanistik) (vermutlich)
+#: last_checked: 2021-01-09 (daf)
 #: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 ',
@@ -3240,6 +3241,28 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Passauer Str.: Einbahnstraßenregelung, gesperrt Richtung Tauentzienstr., Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: BOHNSDORFERKREISEL-2017
+	q3::inwork 22162,1067 22092,999 22034,1006
+	q3::inwork 22092,999 22120,886
+',
+         'from' => 1610838000,
+         'id' => 3321,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
+         'text' => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, vom 18.1.2021 bis 12.4.2021',
+         'type' => 'handicap',
+         'until' => 1618264800
+       },
+       {
+         'data' => '	q4::inwork 19564,1871 19743,1804
+',
+         'from' => 1610431200,
+         'id' => 3322,
+         'source_id' => '2147346788',
+         'text' => 'Rudower Str.: zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 12.05.2021 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1620831600
        }
      
 );

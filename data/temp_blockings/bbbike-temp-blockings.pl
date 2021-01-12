@@ -29262,7 +29262,7 @@ EOF
 #: osm_watch: way id="156066225" version="17"
 #: last_checked: 2020-11-15 vvv
 #: check_frequency: 45d vvv
-#: next_check: 2021-07-01 vvv
+#: next_check: 2021-01-13 vvv
 	q3::inwork 19164,2001 19181,1996 19266,1968 19564,1871
 	q2::inwork 19055,2037 19164,2001
 	q2::inwork 19164,2001 19194,2157
@@ -30800,8 +30800,9 @@ EOF
        text  => 'Gärtnerstr.: Bauarbeiten, zwischen Wühlischstr. und Simplonstr. Einbahnstraße Richtung Süden, zwischen Wühlischstr. und Krossener Str. sowie an der Grünberger Str. Fahrbahn gesperrt, evtl. bis Dezember 2021',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2021-01-03
+#: last_checked: 2021-01-12
 #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31369,7 +31370,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
-#: last_checked: 2021-01-01 (architektur-urbanistik) (vermutlich)
+#: last_checked: 2021-01-09 (daf)
 #: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 EOF
@@ -31855,6 +31856,26 @@ EOF
 #: last_checked: 2021-01-10 (daf)
 #: check_frequency: 90d
 	q4::inwork; 6033,10403 6133,10679
+EOF
+     },
+     { from  => 1610838000, # 2021-01-17 00:00
+       until => 1618264800, # 2021-04-13 00:00
+       text  => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, vom 18.1.2021 bis 12.4.2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
+       data  => <<EOF,
+#: next_check_id: BOHNSDORFERKREISEL-2017
+	q3::inwork 22162,1067 22092,999 22034,1006
+	q3::inwork 22092,999 22120,886
+EOF
+     },
+     { from  => 1610431200, # 2021-01-12 07:00
+       until => 1620831600, # 2021-05-12 17:00
+       text  => 'Rudower Str.: zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 12.05.2021 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346788',
+       data  => <<EOF,
+	q4::inwork 19564,1871 19743,1804
 EOF
      },
     );
