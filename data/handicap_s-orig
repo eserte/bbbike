@@ -34,9 +34,9 @@
 # 
 #: next_check_id: PLANSTRASSEC-2019
 #: osm_watch: way id="491906864" version="4"
-#: last_checked: 2020-12-31
+#: last_checked: 2021-01-13
 #: check_frequency: 30d
-(Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q4::inwork 12926,11224 12848,11093
+(Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q3::inwork 12926,11224 12848,11093
 # 
 # REMOVED (Fahrräder kommen durch) --- #: next_check_id: GUBENER-2019 --- #: priority: #A --- #: last_checked: 2019-07-03 --- #: check_frequency: 2d --- Gubener Str.: Fahrbahn wegen Asphaltierungsarbeiten Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13326,12056 13243,12222
 # REMOVED (Durchfahrt möglich) --- #: last_checked: 2019-05-12 --- #: check_frequency: 30d --- Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
@@ -3472,6 +3472,8 @@ Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fußgänger	q1 16894,10003 1
 (Nördliche Landebahn - Eingang Peter-Strasser-Weg): schmal	q2 9362,7616 9281,7651
 #: XXX_prog BS, ansonsten q1
 (Hoher Wallgraben - Lehndorffstr.): einige Fußgänger, an der Lehndorffstr. eine kurze Rampe, Bordstein an der Lehndorffstr.	q2+ 18101,8044 18186,8081 18276,8136
+Mercedes-Platz: Fußgängerzone	q4 13150,11101 13063,11147 12984,11194
+Mercedes-Platz: Fußgängerzone	q4 12990,11006 13063,11147
 # 
 ######################### User Contributions #################################
 # 

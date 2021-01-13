@@ -49,7 +49,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: http://www.infravelo.de/projekt/stralauer-allee/ (teilweise Radweg, teilweise Radfahrstreifen; Bau: 2. Quartal 2021 - 4. Quartal 2021)
 #: by: http://www.infravelo.de/api/v1/project/9020023/
 #: source_id: 2147343740
-#: last_checked: 2021-01-09
+#: last_checked: 2021-01-13
 #: next_check: 2021-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -388,10 +388,10 @@ Kladower Damm: Radpuren geplant	?::projected; -5097,7361 -5046,7442 -4967,7567
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/bezirksamt-listet-alle-2020-kommenden-radverkehrsanlagen-auf_a274738 (bis Ende 2021; hier: "900m" --- ist vielleicht auch ein Teil von Alt-Tempelhof gemeint?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
 #: by: http://www.infravelo.de/projekt/schoeneberger-strasse/ (bis 4. Quartal 2021, 700m Schutzstreifen (was nicht ganz reichen würde...))
-#: source_id: 2147345949 (Leitungsarbeiten bis 2021-01-20)
+#: source_id: 2147345949 (Leitungsarbeiten bis 2021-03-16)
 #: last_checked: 2020-11-12
 #: check_frequency: 90d
-#: next_check: 2021-01-20
+#: next_check: 2021-03-16
 Schöneberger Str.: Radspuren geplant	?::projected 8739,6701 8653,6781 8496,6919 8460,6959 8414,6995 8319,7084
 # 
 #: next_check_id: KOEPENICKERLANDSTR-2018
@@ -3063,6 +3063,8 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8917,5986 -8871,628
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_42_6245_6400_online.pdf (Auslegung von Planunterlagen)
 #: by: https://www.berliner-woche.de/moabit/c-verkehr/planungen-fuer-verlaengerte-m10-werden-erneut-ausgelegt_a237397
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2019/pressemitteilung.876718.php (... Ende 2021 in Betrieb gehen)
+#: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/planfeststellungen/bekanntmachungen/tram-turmstrasse/
+#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FCB8FB93-E940-4E9F-83F8-F21B4DBD0123&plugid=/ingrid-group:ige-iplug-be&docid=FCB8FB93-E940-4E9F-83F8-F21B4DBD0123
 #: last_checked: 2020-09-27
 #: check_frequency: 360d
 Alt-Moabit - Rathenower Str.: Radspuren werden gemalt	?::projected 7415,13060 7346,13022 7172,13051 7187,13126 7161,13190 7131,13261 7069,13381
@@ -5056,7 +5058,10 @@ Hawaiiweg: wird es eine Verbindung zum Uferweg geben?	? -2416,18769 -2401,18776
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/5-87b_reinplan_12-11-2018.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_02_0153_0248_online.pdf (Straßenbenennungen + Wirksamkeit ab 2020-02-20 + Lageplan)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_27_3413_3572_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.helma-wohnungsbau.de/fileadmin/pictures/WB_Projekte/Berlin/Havelmarina/lageplan-havelmarina.jpg
+#: XXX Bebauungsplan 5-87b (Papenberger Weg)
 #: XXX neue Straßen (fehlen alle bei Berlin.coords.data)
+#: XXX alles Privatstraßen
 #: XXX a) Pembabogen
 #: XXX b) Seychellenring|Hakenfelde|13587
 #: XXX c) Tahitiweg
@@ -5065,12 +5070,20 @@ Hawaiiweg: wird es eine Verbindung zum Uferweg geben?	? -2416,18769 -2401,18776
 #: XXX f) Mooreaweg|Hakenfelde|13587
 #: XXX g) Tikehauweg
 #: osm_watch: way id="51830138" version="7"
+#: last_checked: 2020-09-12 vvv
+#: check_frequency: 270d vvv
 #: osm_watch: way id="763475704" version="2"
+Tongaweg: genaue Lage? Qualität?	?::inwork -2781,19012 -2742,19011
 #: osm_watch: way id="763475705" version="2"
+Seychellenring: genaue Lage? Qualität? Entsteht auch eine Verbindung zum Uferweg?	?::inwork -2544,19009 -2543,18930 -2743,18932 -2742,19011 -2643,19010 -2544,19009 -2522,19009
+Mooreaweg: genaue Lage? Qualität?	?::inwork -2781,19012 -2780,18927
+Tikehauweg: genaue Lage? Qualität?	?::inwork -2811,18927 -2780,18927 -2742,18927 -2743,18932
 #: osm_watch: way id="763475708" version="2"
-#: last_checked: 2020-09-12
-#: check_frequency: 270d
-Bebauungsplan 5-87b (Papenberger Weg): hier entstehen neue Straßen und eine Verbindung zum Uferweg (genaue Lage? Qualität?)	?::inwork -2789,19013 -2524,19008
+Pembabogen: genaue Lage? Qualität?	?::inwork -2742,19011 -2741,19081 -2742,19144 -2642,19148 -2540,19152 -2543,19083 -2544,19009
+Tahitiweg: genaue Lage? Qualität?	?::inwork -2642,19148 -2641,19082 -2643,19010
+Tasmanienweg: genaue Lage? Qualität?	?::inwork -2741,19081 -2641,19082 -2543,19083
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_29_3241_3364_online.pdf --- Waldkraiburger Str.: Einziehung von Straßenland (Teilfläche)	? 12626,5057 12468,5000 --- Waldkraiburger Str.: vermutlich privat, sollte aus der Karte entfernt werden	? 12283,4971 12468,5000
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf --- #: by: http://www.berliner-woche.de/hellersdorf/verkehr/beleuchtung-fuer-weg-vorgesehen-d132436.html --- Parchimer Str. - Altentreptower Str.: neuer Rad+Gehweg, Qualität, genaue Lage, nachts beleuchtet?	? 22225,12281 22220,12243 22129,12155
@@ -5356,6 +5369,7 @@ Stedingerweg: wird es hier Maßnahmen gegen den MIV-Durchgangsverkehr geben?	? 13
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.1015710.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/vi-140cab_201110_vi-140cab_planzeichnung.pdf
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1039563.php (erneute Auslegung)
 #: last_checked: 2020-06-07
 #: check_frequency: 1080d
 Bebauungsplan VI-140cab "Urbane Mitte Süd" (zwischen Gleisdreieckpark und Technikmuseum): wird die Trebbiner Str. verlängert und entsteht eine Verbindung für Radfahrer? Genaue Lage?	? 8521,10268 8427,10120 8360,10133
@@ -5383,6 +5397,22 @@ Karl-Marx-Allee: Verbreiterung der Radwege	? 12878,12430 13163,12382 13448,12340
 #: source_id: LS/723-P/20/180
 #: next_check: 2021-06-30
 Phillipsthal: Radwegbau	?::inwork -7526,-9435 -7510,-9196 -7360,-8794 -7334,-8741 -7285,-8673 -7069,-8429 -6857,-8187 -6801,-8176 -6711,-8160 -6319,-7795 -6021,-7385
+# 
+#: next_check_id: CORONA-2020 vvv
+#: XXX weitere Impfzentren in Vorbereitung: ex-Flughafen Tegel, Velodrom, ex-Flughafen Tempelhof, Messe
+#: last_checked: 2021-01-13 vvv
+#: check_frequency: 30d vvv
+#: osm_watch: node id="8207070481" version="3"
+Impfzentrum Messe (Masurenallee)	? 1865,11082
+#: osm_watch: node id="8207066351" version="2"
+Impfzentrum Flughafen Tegel	? 2839,16337
+#: osm_watch: node id="8207089503" version="2"
+Impfzentrum Velodrom	? 13449,13892
+#: osm_watch: node id="8207049205" version="2"
+Impfzentrum Flughafen Tempelhof	? 9451,8548
+#: check_frequency ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
 # 
 #: ignore ^^^
 # 
@@ -6219,6 +6249,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/jetzt-seeblick-statt-platz_a295408 (Rummelsburger Platz -> Rummelsburger Seeblick)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8755 (Rummelsburger Platz -> Rummelsburger Seeblick)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_55_6227_6354_online.pdf (Straßenbenennungen (außer Rummelsburger Seeblick))
+#: by: https://www.berliner-woche.de/rummelsburg/c-bauen/videotuerme-zum-schutz-vor-diebstaehlen-und-vandalismus_a298064
 #: XXX vorgeschlagene Straßennamen (fehlen alle bei Berlin.coords.data):
 #: XXX * bestehende Untere Kynaststr. -> An der Mole
 #: XXX * Paul-und-Paula-Promenade

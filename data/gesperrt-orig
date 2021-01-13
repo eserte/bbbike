@@ -150,12 +150,14 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: by: https://www.berliner-woche.de/altglienicke/c-verkehr/weitere-arbeiten-an-der-b-96a-sued_a297554 (Bau neuer Geh- und Radwege)
 #: source_id: 2147342746 (nicht mehr aktiv)
 #: source_id: 2147343246 (nicht mehr aktiv)
-#: source_id: 2147342800 (bis 31.01.2021)
+#: source_id: 2147342800 (bis 31.05.2021)
+#: source_id: 2147346790 (bis 31.05.2021)
 # REMOVED (existiert nicht mehr) --- #: osm_watch: way id="846548652" version="2"
 #: osm_watch: way id="871408060" version="1"
 #: XXX wird auch zwischen Grünbergallee und Paradiesstr. ein Radweg entstehen?
 #: last_checked: 2020-11-28
 #: check_frequency: 120d
+#: next_check_id: 2021-05-31
 # REMOVED --- #: next_check: 2021-01-31
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271
 # REMOVED (Radweg) --- B96a (Kfz-Straße)	2 21115,271 21286,449 21613,923 21656,989 21829,1351
@@ -3454,7 +3456,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
 #: osm_watch: node id="6778873745" version="1"
-#: last_checked: 2020-12-27
+#: last_checked: 2021-01-13
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3591,7 +3593,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="5096644" version="16"
 #: priority: #C
-#: last_checked: 2020-12-31
+#: last_checked: 2021-01-13
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3812,6 +3814,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.789161.php (Richtfest im Herbst 2019)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/hoelzerner-dachstuhl-denkmalgerecht-nachgebaut_a238627 (Eröffnung 2021)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/im-fruehjahr-geht-es-mit-den-arbeiten-im-spreepark-in-grossem-stil-weiter_a295117 (Erwähnung des Eierhäuschens --- Eröffnung nun 2022)
+#: by: https://www.berliner-woche.de/plaenterwald/c-bauen/abbau-des-riesenrads-im-spreepark-fuer-geplante-sanierung-hat-begonnen_a297932 (Erwähnung des Eierhäuschens)
 #: priority: #C
 #: last_checked: 2021-01-10
 #: check_frequency: 90d
@@ -4207,6 +4210,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10063,12438
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-vier-jahren-wurden-die-keller-trockengelegt_a235237 (Bezug der Büros im dritten Quartal 2021)
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/DBT/MELHErweiterung/melherweiterung.html (Fertigstellung bis III. Quartal 2021)
+#: by: https://www.berliner-woche.de/mitte/c-bauen/neubau-fuer-bundestag-soll-zum-jahresende-fertig-sein_a298094
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="5"
 #: last_checked: 2021-01-09

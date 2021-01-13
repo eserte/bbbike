@@ -1075,6 +1075,8 @@ Helen-Ernst-Str.	N 12862,11377 13056,11329 13240,11279 13422,11236 13537,11186 1
 Valeska-Gert-Str.	N 12807,11287 12866,11256 12926,11224 12984,11194
 (Valeska-Gert-Str. - Am Postbahnhof)	NN 12807,11287 12713,11372
 Edith-Kiss-Str.	N 12793,11132 12866,11256
+Mercedes-Platz	NN 13150,11101 13063,11147 12984,11194
+Mercedes-Platz	NN 12990,11006 13063,11147
 (Planstraße C)	N 12926,11224 12848,11093
 Am Postbahnhof	N 12641,11288 12664,11310 12713,11372 12638,11433 12576,11375
 Am Postbahnhof	N 12638,11433 12594,11467 12539,11416
@@ -9953,7 +9955,7 @@ Salzunger Weg	N -2520,17690 -2531,17663
 (Fährweg - Aalemannkanalbrücke)	NN -1851,17791 -1854,17805 -1871,17842 -1914,17899 -2011,17986
 (Elkartweg - Aalemannkanalbrücke)	NN -2011,17986 -2039,18049 -2066,18097 -2105,18119 -2143,18153 -2166,18199 -2171,18265
 (Aalemannkanalbrücke - Niederneuendorfer Allee (Kleingartenanlage))	NN -2171,18265 -2197,18307 -2229,18312 -2741,18333
-Papenberger Weg	N -2937,19008 -2894,19019 -2789,19013
+Papenberger Weg	N -2937,19008 -2894,19019 -2781,19012
 Hawaiiweg	N -2416,18769 -2459,18769 -2558,18771 -2659,18778 -2731,18776 -2757,18800 -2769,18853
 Trinidadweg	N -2663,18634 -2660,18717 -2659,18778
 Galapagosweg	N -2563,18629 -2559,18713 -2558,18771
@@ -17202,6 +17204,8 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 (Kaniswall - Streitwall/Spree)	N 32823,-149 32814,-50 32798,37 32820,74 32865,263 32891,314 33002,391 33052,384
 (Kaniswall - Streitwall/Spree)	NN 33052,384 33281,498 33373,558
 (Kaniswall - Gosen)	NN 32823,-149 32420,-260 32329,-380
+#: osm.highway: service
+(Zufahrt Erika-Heß-Eisstadion)	NN 8138,14786 8015,14685 8015,14650
 #: #: -*- coding: iso-8859-1 -*-
 #:
 Hackescher Markt	Pl 10264,13097
@@ -17380,7 +17384,6 @@ Albert-Schweitzer-Platz	Pl 11998,8872
 Kurt-Pfennig-Platz	Pl 9706,6802
 Hahn-Meitner-Platz	Pl -8013,255
 Bernhard-Lichtenberg-Platz	Pl 2821,18831
-Mercedes-Platz	Pl 12990,11006
 Dr.-Ilse-Kassel-Platz	Pl 3953,23401
 Hohenzollernplatz (Nikolassee)	Pl -3692,2549
 Alice-Herz-Platz	Pl 24179,12260
@@ -17561,6 +17564,7 @@ Julius-Hirsch-Sportanlage	Pl 556,10122
 Hans-Rosenthal-Sportanlage	Pl 743,9772
 Wally-Wittmann-Sportanlage	Pl 863,10363
 Sportplatz Maikäferpfad	Pl 748,9981
+Impfzentrum Arena	Pl 13899,10214
 Botanischer Garten [Eingang Unter den Eichen]	Pl 4153,5001
 Botanischer Garten [Eingang Königin-Luise-Platz]	Pl 3707,5758
 Gärten der Welt [Eingang Eisenacher Str.]	Pl 22059,15153

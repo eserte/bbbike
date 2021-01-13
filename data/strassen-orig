@@ -1225,6 +1225,16 @@ Valeska-Gert-Str.	N 12807,11287 12866,11256 12926,11224 12984,11194
 #: oldname: -20140213: <namenslos>
 Edith-Kiss-Str.	N 12793,11132 12866,11256
 # 
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6816 ("Mercedes-Platz")
+#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036524891279/524891279/00087389/89-Anlagen/01/VzK_Mercedes_Platz.pdf (Wirksamkeit 2015-11-15)
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file?y=2015
+#: note: es existieren keine Straßenschilder oder sonstige Hinweise auf den Platz vvv
+#: oldname: -20151115: O2-Platz vvv
+Mercedes-Platz	NN 13150,11101 13063,11147 12984,11194
+Mercedes-Platz	NN 12990,11006 13063,11147
+#: oldname ^^^
+#: note ^^^
+# 
 #: next_check_id: PLANSTRASSEC-2019
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
@@ -1235,7 +1245,7 @@ Edith-Kiss-Str.	N 12793,11132 12866,11256
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="4"
 #: priority: #C
-#: last_checked: 2020-12-31
+#: last_checked: 2021-01-13
 #: next_check: 2023-01-01
 (Planstraße C)	N 12926,11224 12848,11093
 # 
@@ -11209,7 +11219,7 @@ Salzunger Weg	N -2520,17690 -2531,17663
 (Fährweg - Aalemannkanalbrücke)	NN -1851,17791 -1854,17805 -1871,17842 -1914,17899 -2011,17986
 (Elkartweg - Aalemannkanalbrücke)	NN -2011,17986 -2039,18049 -2066,18097 -2105,18119 -2143,18153 -2166,18199 -2171,18265
 (Aalemannkanalbrücke - Niederneuendorfer Allee (Kleingartenanlage))	NN -2171,18265 -2197,18307 -2229,18312 -2741,18333
-Papenberger Weg	N -2937,19008 -2894,19019 -2789,19013
+Papenberger Weg	N -2937,19008 -2894,19019 -2781,19012
 #: note: Privatstraßen vvv
 Hawaiiweg	N -2416,18769 -2459,18769 -2558,18771 -2659,18778 -2731,18776 -2757,18800 -2769,18853
 Trinidadweg	N -2663,18634 -2660,18717 -2659,18778
@@ -19281,3 +19291,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 (Kaniswall - Streitwall/Spree)	NN 33052,384 33281,498 33373,558
 (Kaniswall - Gosen)	NN 32823,-149 32420,-260 32329,-380
 #: note ^^^
+# 
+#: osm.highway: service
+(Zufahrt Erika-Heß-Eisstadion)	NN 8138,14786 8015,14685 8015,14650
+# 

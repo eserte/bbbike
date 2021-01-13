@@ -31385,6 +31385,7 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9184 (fehlende Umleitung)
 #: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
 #: by: https://twitter.com/SBahnBerlin/status/1347543580529758210 (S-Bahn fährt nicht bis 25.1.2021)
+#: by: https://abendblatt-berlin.de/2021/01/13/mit-dem-bus-statt-mit-der-bahn-durch-den-berliner-osten/
 #: XXX bis wann ist der Bahnübergang gesperrt?
 #: also_indoor: search Oberfeldstraße Bahnübergang
 #: osm_watch: way id="868347101" version="2"
@@ -31876,6 +31877,15 @@ EOF
        source_id => '2147346788',
        data  => <<EOF,
 	q4::inwork 19564,1871 19743,1804
+EOF
+     },
+     { from  => 1610650800, # 2021-01-14 20:00
+       until => 1610938800, # 2021-01-18 04:00
+       text  => 'Greifswalder Str.: Fahrbahn stadtauswärts zwischen Käthe-Niederkirchner-Str. und Hufelandstr. wegen Kraneinsatz gesperrt, vom 15.01.2021 20:00 Uhr bis 18.01.2021 04:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346791',
+       data  => <<EOF,
+	q4::inwork; 11991,14060 12017,14098 12077,14186
 EOF
      },
     );

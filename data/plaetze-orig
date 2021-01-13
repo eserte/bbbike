@@ -212,12 +212,7 @@ Kurt-Pfennig-Platz	Pl 9706,6802
 Hahn-Meitner-Platz	Pl -8013,255
 Bernhard-Lichtenberg-Platz	Pl 2821,18831
 # REMOVED (-> strassen) --- #: note: mittlerweile existiert ein Straßenschild, trotzdem ist es recht unscheinbar, und deshalb der Platz nicht an die Kreuzung gesetzt --- Caroline-Herschel-Platz	Pl 14759,11339
-#: note: es existieren keine Straßenschilder oder sonstige Hinweise auf den Platz
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6816 ("Mercedes-Platz")
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036524891279/524891279/00087389/89-Anlagen/01/VzK_Mercedes_Platz.pdf (Wirksamkeit 2015-11-15)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file?y=2015
-#: oldname: -20151115: O2-Platz
-Mercedes-Platz	Pl 12990,11006
+# REMOVED (-> strassen) --- #Mercedes-Platz	Pl 12990,11006 --- #Mercedes-Platz	Pl 13063,11147
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120918.1615.375418.html
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2012
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/40re.pdf/file?y=2012
@@ -497,6 +492,23 @@ Julius-Hirsch-Sportanlage	Pl 556,10122
 Hans-Rosenthal-Sportanlage	Pl 743,9772
 Wally-Wittmann-Sportanlage	Pl 863,10363
 Sportplatz Maikäferpfad	Pl 748,9981
+# 
+#: next_check_id: CORONA-2020 vvv
+#: last_checked: 2021-01-13 vvv
+#: check_frequency: 180d vvv
+#: osm_watch: node id="8207134188" version="3"
+Impfzentrum Arena	Pl 13899,10214
+#: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/01/berlin-moderna-impfstoff-kalayci-mertens-stiko.html
+#: osm_watch: node id="8207083844" version="3"
+#: valid: 20210114-
+Impfzentrum Erika-Heß-Eisstadion	Pl 8015,14650
+#: append_comment: Potsdam
+#: XXX siehe auch add_str_potsdam-Eintrag, der nach der Impfkampagne ebenfalls entfernt werden kann
+#: osm_watch: node id="8244360159" version="1"
+Impfzentrum Metropolis-Halle	Pl -8846,-2629
+#: check_frequency ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
 # 
 #: section Eingänge vvv
 # Hier werden nur Eingänge für Flächen aufgenommen, die für Radfahrer gesperrt sind.
