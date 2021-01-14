@@ -104,7 +104,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12202,8895
 # REMOVED (-> gesperrt-orig) --- #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
-#: osm_watch: way id="65707583" version="12"
+#: osm_watch: way id="65707583" version="13"
 #: last_checked: 2021-01-09
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
@@ -931,7 +931,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-01-12
+#: last_checked: 2021-01-14
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2067,10 +2067,12 @@ Rungestr.: Kopfsteinpflaster	Q2 11291,11876 11378,11856 11506,11851
 #: by ^^^
 #: XXX ^^^
 # 
-#: by: https://www.deutsches-architekturforum.de/thread/8011-metropol-park-ehem-zentralverwaltung-der-aok/?postID=676345#post676345 (zur Hälfte asphaltiert)
-#: confirmed_by: srt
-#: note: östliche Hälfte ist weiterhin gepflastert, wird wohl fürs Querparken benutzt
-Am Köllnischen Park: Asphalt	Q0 11197,11882 11155,11750
+#: by: https://www.deutsches-architekturforum.de/thread/8011-metropol-park-ehem-zentralverwaltung-der-aok/?postID=676345#post676345 (zur Hälfte asphaltiert) vvv
+#: confirmed_by: srt vvv
+Am Köllnischen Park: Asphalt	Q0; 11197,11882 11155,11750
+Am Köllnischen Park: Kopfsteinpflaster	Q2; 11155,11750 11197,11882
+#: confirmed_by ^^^
+#: by ^^^
 Wassergasse: Kopfsteinpflaster	Q2 11024,11789 11034,11895
 Netzestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 11718,7103 11700,7197
 (Netzestr. - Kirchhofweg): wassergebundene Decke	Q1+ 11700,7197 11687,7284
@@ -14615,9 +14617,15 @@ Gritznerstr.: asphaltiert	Q0 4414,6134 4380,6049 4312,5889
 #: confirmed_by ^^^
 #: by: ^^^
 # 
-#: by: Detlef Herzog:
-#: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
-Abbestr.: Asphalt	Q0 4674,12076 4755,12236 4807,12348
+#: by: Detlef Herzog: vvv
+#: corrected_by: srt (Kopfsteinpflaster -> Asphalt) vvv
+#: corrected_by: daf (Asphalt -> ..., neu gemacht)
+#: XXX Qualität nach den Bauarbeiten genauer überprüfen, außerdem prüfen, ob es Durchfahrtsbeschränkungen o.ä. geben wird
+#: last_checked: 2021-01-14 (daf)
+Abbestr.: glatte Pflasterung	Q0- 4674,12076 4755,12236
+Abbestr.: Asphalt	Q0 4755,12236 4807,12348
+#: corrected_by ^^^
+#: by: ^^^
 # 
 #: by: Michael Meyer:
 #: corrected_by: srt (Q3 -> Q2)

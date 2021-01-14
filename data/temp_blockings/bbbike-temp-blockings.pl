@@ -27920,7 +27920,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-12-15
+#: last_checked: 2021-01-14
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29259,7 +29259,7 @@ EOF
 #: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020?
 #: XXX hier fehlt noch die letzte Asphaltdeckschicht
 #: also_indoor: traffic
-#: osm_watch: way id="156066225" version="17"
+#: osm_watch: way id="156066225" version="19"
 #: last_checked: 2020-11-15 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2021-01-13 vvv
@@ -30802,7 +30802,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2021-01-12
+#: last_checked: 2021-01-14
 #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31876,6 +31876,7 @@ EOF
        type  => 'handicap',
        source_id => '2147346788',
        data  => <<EOF,
+#: osm_watch: way id="683770241" version="6"
 	q4::inwork 19564,1871 19743,1804
 EOF
      },

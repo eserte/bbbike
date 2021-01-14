@@ -1570,7 +1570,8 @@ Werrastr.: sehr gutes Kopfsteinpflaster	Q1 13648,8321 13566,8386 13469,8462
 Werrastr.: Asphalt mit einigen Schäden	Q1 13697,8279 13648,8321
 Rungestr.: Kopfsteinpflaster	Q2 11197,11882 11291,11876
 Rungestr.: Kopfsteinpflaster	Q2 11291,11876 11378,11856 11506,11851
-Am Köllnischen Park: Asphalt	Q0 11197,11882 11155,11750
+Am Köllnischen Park: Asphalt	Q0; 11197,11882 11155,11750
+Am Köllnischen Park: Kopfsteinpflaster	Q2; 11155,11750 11197,11882
 Wassergasse: Kopfsteinpflaster	Q2 11024,11789 11034,11895
 Netzestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 11718,7103 11700,7197
 (Netzestr. - Kirchhofweg): wassergebundene Decke	Q1 11700,7197 11687,7284
@@ -11740,7 +11741,8 @@ Gritznerstr.: Kopfsteinpflaster	Q2 4555,6403 4511,6318
 Gritznerstr.: asphaltiert	Q0 4511,6318 4472,6242
 Gritznerstr.: Kopfsteinpflaster	Q2 4472,6242 4430,6165 4414,6134
 Gritznerstr.: asphaltiert	Q0 4414,6134 4380,6049 4312,5889
-Abbestr.: Asphalt	Q0 4674,12076 4755,12236 4807,12348
+Abbestr.: glatte Pflasterung	Q0 4674,12076 4755,12236
+Abbestr.: Asphalt	Q0 4755,12236 4807,12348
 Kuglerstr.: Kopfsteinpflaster	Q2 11618,16183 11543,16207 11467,16238 11401,16265 11337,16291 11255,16313 11004,16360
 Justus-von-Liebig-Str.: Asphalt	Q0 19495,2535 19704,2726 19878,2899
 Braillestr.: Asphalt	Q0 4512,5199 4477,5250 4430,5324
