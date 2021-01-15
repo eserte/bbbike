@@ -24668,7 +24668,7 @@ EOF
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1],
                        ['yearly', days => 27, months => 6, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -7, # XXX wird die Fashion Week 2021 überhaupt stattfinden? Bis jetzt steht als Termin 18.-24.01.2021 fest
+       recurrence_prewarn_days => -9, # XXX wird die Fashion Week 2021 überhaupt stattfinden? Bis jetzt steht als Termin 18.-24.01.2021 fest
        text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 13.01.2020-17.01.2020',
        type  => 'handicap',
        source_id => 'https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-termin-fuer-januar-2020.html',
@@ -31866,7 +31866,8 @@ EOF
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
        data  => <<EOF,
 #: next_check_id: BOHNSDORFERKREISEL-2017
-	q3::inwork 22162,1067 22092,999 22034,1006
+#: source_id: 2147346807 (bis 12.4.2021)
+	q3::inwork 22162,1067 22092,999 22034,1006 21977,988
 	q3::inwork 22092,999 22120,886
 EOF
      },

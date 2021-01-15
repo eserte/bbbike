@@ -479,6 +479,7 @@ Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4882 (Baubeginn frühestens ab 2023)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/bauliche-veraenderungen-zur-erhoehung-der-verkehrssicherheit-auf-der-triftstrasse-gefordert_a198628
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5701 (Baubeginn nicht vor 2024, geschätzte Bauzeit drei Jahre)
+#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/mehr-sicherheit-auf-der-triftstrasse_a297902
 #: osm_watch: way id="27370704" version="15"
 #: source_id: LMS-BR_r_LMS-BR_111137_LMS-BR_72
 #: last_checked: 2020-09-23 (mapillary)
@@ -680,7 +681,7 @@ Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 #: osm_watch: way id="31091960" version="18" vvv
 #: osm_watch: way id="31091970" version="17" vvv
 #: osm_watch: way id="330922955" version="6" vvv
-#: last_checked: 2020-11-21 vvv
+#: last_checked: 2020-12-02 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: next_check: 2022-12-31 vvv
 Oberspreestr.: Lückenschluss geplant (Radweg?)	?::projected; 20949,4775 20765,4839 20689,4862
@@ -1824,7 +1825,7 @@ Dihlmannstr. - Jungfernheideweg: Radweg wird gebaut --- vielleicht ein asphaltie
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629695&postcount=135
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
-#: last_checked: 2020-11-19
+#: last_checked: 2020-12-23 (mapillary)
 #: check_frequency: 60d
 Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::inwork 8870,12647 8754,12622
 # 
@@ -2075,7 +2076,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: source_id: 2147341681
 #: source_id: 2147341683
 #: source_id: 2147343391
-#: source_id: 2147343596 (bis 2021-01-29)
+#: source_id: 2147343596 (bis 2021-01-18)
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-12-22 (osm)
 #: check_frequency: 90d
@@ -3179,6 +3180,14 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/senat-baut-ab-dem-fruehjahr-die-blumberger-damm-bruecke-in-biesdorf-neu_a297317 (neue Brücke ab 2025)
+#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/blumberger-damm-bruecke/ (Baubeginn 2. Quartal 2021, Bauzeit 5 Jahre, also Bauende erst 2026?)
+#: XXX außerdem entstehen provisorische Radfahrstreifen auf dem Blumberger Damm zwischen Frankenholzer Weg und Altentreptower Str., sowie provisorische Ampeln am Spatenweg und Frankenholzer Weg (hier anstelle der Fußgängerampel?)
+#: also_indoor: search Blumberger-Damm-Brücke
+#: priority: #A
+#: next_check: 2021-03-15
+Wuhlgartenweg: während der Bauarbeiten an der Blumberger-Damm-Brücke wird der Weg gesperrt	?::projected 21135,12127 21169,12113 21282,12115
+# 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_01_0001_0080_online.pdf (geplant ab 15.3.2021 bis März 2025)
 #: next_check: 2021-03-15
 Straße des 17. Juni: wegen Bauarbeiten wird der Radweg in den Tiergarten verlegt	?; 6642,12010 5900,11913
@@ -3288,7 +3297,7 @@ Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,
 # REMOVED (nein, nur auf den paar Metern vor der Urbanstr.) --- Fichtestr.: ist hier auch eine Fahrradstraße?	? 11055,9539 11108,9187
 # 
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/ampel-als-ersatz-fuer-zebrastreifen_a278689
-#: last_checked: 2020-11-21
+#: last_checked: 2020-12-02 (mapillary)
 #: check_frequency: 60d
 Oberspreestr./Bärenlauchstr.: Zebrastreifen soll durch eine Bedarfsampel ersetzt werden	?::projected 19761,5153 19733,5177 19767,5179
 # 
@@ -4532,6 +4541,7 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: XXX *  13051 - Nordostumfahrung Malchow --- wo ist das genau? Vielleicht der Malchower Teichweg?
 # 
 #: by: http://www.infravelo.de/projekt/karlshorster-strasse/ (baulich getrennte Radwege, 2. Quartal 2021 - 3. Quartal 2021)
+#: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/radweg-auf-der-marktstrasse-noetig_a297893
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
 #: last_checked: 2021-01-11
 #: check_frequency: 90d
@@ -5343,6 +5353,7 @@ Landesstraße 30 (Woltersdorf und Rüdersdorf): Bau eines gemeinsamen Geh- und Rad
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=44587
 #: by: https://www.o-sp.de/download/lbvbrandenburg/237952
+#: source_id: E-LS/723-P/20/268 (Bauvorbereitung, bis 26.2.2021)
 #: next_check: 2022-08-15
 B102, Ortsumgehung Schmerzke: Ortsumgehungsstraße wird gebaut, ehemalige Bundesstraße wird zur Gemeindestraße, neue Rad- und Wirtschaftswege für Anbindung dazwischen	?::projected -44352,-2994 -44340,-2916 -44211,-2244 -44635,-1450
 # 
@@ -5408,7 +5419,7 @@ Phillipsthal: Radwegbau	?::inwork -7526,-9435 -7510,-9196 -7360,-8794 -7334,-874
 #: last_checked: 2021-01-13 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="8207066351" version="2"
-Impfzentrum Flughafen Tegel	? 2839,16337
+Impfzentrum Flughafen Tegel	? 2987,16486
 #: osm_watch: node id="8207089503" version="2"
 Impfzentrum Velodrom	? 13449,13892
 #: osm_watch: node id="8207049205" version="2"
@@ -6778,7 +6789,7 @@ Bebauungsplan 3-41: Straßen werden entstehen; genaue Lage, Qualität?	?::projecte
 #: by: https://www.bahninfo-forum.de/read.php?9,603946,681862#msg-681862
 #: by: https://www.neues-deutschland.de/artikel/1144526.s-bahn-berlin-laenger-bauen-als-am-ber.html (Fertigstellung noch im Quartal IV/2020)
 #: XXX Provisorium (Fußgängerschutztunnel) in Bau, es wird vermutlich vier Drängelgitter geben (an beiden Enden, sowie zwei dazwischen)
-#: last_checked: 2021-01-11
+#: last_checked: 2021-01-15
 #: check_frequency: 14d
 #: next_check: 2024-06-15
 Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15052,10920 14888,10959
