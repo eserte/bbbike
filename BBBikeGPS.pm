@@ -682,7 +682,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	    # is it a time-less track?
 	SEARCH_TIME_POINT: {
 		for my $wpt (@{ $chunk->Points }) {
-		    if (defined $wpt->DateTime && $wpt->DateTime ne '') {
+		    if ((defined $wpt->DateTime && $wpt->DateTime ne '') || defined $wpt->Comment_to_unixtime($chunk)) {
 			last SEARCH_TIME_POINT;
 		    }
 		}
