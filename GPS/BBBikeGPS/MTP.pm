@@ -212,3 +212,45 @@ sub _status_message {
 1;
 
 __END__
+
+=head1 NAME
+
+GPS::BBBikeGPS::MTP - get/put fit/gpx files from/to a MTP device
+
+=head1 SYNOPSIS
+
+    use GPS::BBBikeGPS::MTP;
+    GPS::BBBikeGPS::MTP::_mtp_sync_commands("garmin/activity", "/path/to/destination", doit=>1);
+
+=head1 DESCRIPTION
+
+This module serves two purposes:
+
+=over
+
+=item * an implemention of BBBike's L<GPS> interface for transferring routes on a MTP device
+
+=item * synchronize files from an MTP device 
+
+=back
+
+The transfer of BBBike routes to an MTP device is currently hardcoded
+for Garmin devices (e.g. fenix watches). The destination path on the
+device is F<Garmin/NewFiles>.
+
+The transfer of files from an MTP device to a local directory can be
+done with the C<_mtp_sync_commands> function (see L</SYNOPSIS>).
+Without the C<doit> parameter, only the commands for doing the
+synchronisation (suitable for feeding a series of C<system> calls) are
+returned. With C<< doit=>1 >> an actual synchronization is done. Files
+already present in the destination directory are not overwritten (note
+that no content check is done, only a presence check).
+
+=head2 EXAMPLES
+
+Run synchronization from commandline:
+
+    cd ~/src/bbbike
+    perl -I. -MGPS::BBBikeGPS::MTP -e 'GPS::BBBikeGPS::MTP::_mtp_sync_commands("garmin/activity", "/path/to/destination", doit=>1)'
+
+=cut
