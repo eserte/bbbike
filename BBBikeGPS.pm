@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2008,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2008,2013,2014,2015,2016,2017,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -678,6 +678,18 @@ sub BBBikeGPS::do_draw_gpsman_data {
     my $first_date;
     foreach my $chunk (@{ $gps->Chunks }) {
 	my $is_route = $chunk->Type == GPS::GpsmanData::TYPE_ROUTE();
+	if (!$is_route) {
+	    # is it a time-less track?
+	SEARCH_TIME_POINT: {
+		for my $wpt (@{ $chunk->Points }) {
+		    if (defined $wpt->DateTime && $wpt->DateTime ne '') {
+			last SEARCH_TIME_POINT;
+		    }
+		}
+		$is_route = 1;
+	    }
+	}
+
 	# Code taken from gpsman2bbd.pl:
 	my $trackattrs = $chunk->TrackAttrs ? $chunk->TrackAttrs : {};
 	if ($trackattrs->{"srt:vehicle"}) {
