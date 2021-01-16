@@ -2519,7 +2519,7 @@ EOF
        text  => 'Rudower Str. (Treptow) Richtung stadteinwärts zwischen Köpenicker Str. und Wegedornstr. Baustelle, Fahrtrichtung gesperrt, Einbahnstraße in Richtung Köpenicker Str. (bis 05.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 19766,1796 19743,1804 19564,1871 19266,1968 19181,1996 19164,2001 19055,2037 18985,2047 18881,2062
+	q4; 19766,1796 19743,1804 19564,1871 19266,1968 19181,1996 19164,2001 19055,2037 18985,2047 18938,2054 18881,2062
 EOF
      },
      { from  => 1122415200, # 2005-07-27 00:00
@@ -28657,6 +28657,7 @@ EOF
 #: source_id: 2147343519 (bis 31.12.2021)
 #: note: laut rbbtext bis 4.1.2021 (mittlerweile existiert die Meldung hier nicht mehr)
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5735 (bis Ende 2022?)
 	2::inwork 14539,23306 14573,23295 14597,23280
 EOF
      },
@@ -29252,23 +29253,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1610812781, # undef, # XXX
        text  => 'Rudower Str.: Bauarbeiten zwischen Lehmfeldsteig und Pfarrwöhrde, Fahrbahn kann gesperrt sein',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020?
-#: XXX hier fehlt noch die letzte Asphaltdeckschicht
-#: also_indoor: traffic
-#: osm_watch: way id="156066225" version="19"
-#: last_checked: 2020-11-15 vvv
-#: check_frequency: 45d vvv
-#: next_check: 2021-01-13 vvv
+# REMOVED (beendet, laut mapillary) --- #: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020? --- #: XXX hier fehlt noch die letzte Asphaltdeckschicht --- #: also_indoor: traffic --- #: osm_watch: way id="156066225" version="19" --- #: last_checked: 2020-11-15 vvv --- #: check_frequency: 45d vvv --- #: next_check: 2021-01-13 vvv
 	q3::inwork 19164,2001 19181,1996 19266,1968 19564,1871
 	q2::inwork 19055,2037 19164,2001
 	q2::inwork 19164,2001 19194,2157
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => $isodate2epoch->("2019-06-10 18:00:00"), # 1560204000, # 2019-06-10 00:00 # --- die Sperrungen sind schon am Tag vor der Staffel aktiv, in Zukunft immer berücksichtigen!
@@ -29666,7 +29659,8 @@ EOF
 #: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: also_indoor: traffic (G)
 #: osm_watch: way id="749226300" version="3"
-#: last_checked: 2020-05-08
+#: last_checked: 2021-01-16 (mapillary)
+#: check_frequency: 180d
 #: next_check: 2021-10-31
 	2::inwork 3079,5411 3209,5214
 EOF
@@ -31030,13 +31024,15 @@ EOF
      },
      { from  => 1594635120, # 2020-07-13 12:12
        until => 1615996800, # 2021-03-17 17:00
-       text  => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Richtung Osten gesperrt, vom 14.07.2020 12:12 Uhr bis 17.03.2021 17:00 Uhr ',
+       text  => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vor der Schöneberger Str. in beide Richtungen gesperrt, vom 14.07.2020 12:12 Uhr bis 17.03.2021 17:00 Uhr ',
        type  => 'handicap',
-       source_id => '2147346108',
+       source_id => '2147346108', # bis 17.3.2021
        data  => <<EOF,
 #: note: laut Baustellenschild der Wasserbetriebe bis Mai 2022
 #: also_indoor: traffic (H)
 	q4::inwork; 5244,6261 5390,6299 5560,6344
+#: by: mapillary
+	q4::inwork 5560,6344 5582,6360
 EOF
      },
      { from  => $isodate2epoch->("2020-07-06 00:00:00"),
@@ -31887,6 +31883,7 @@ EOF
        type  => 'handicap',
        source_id => '2147346791',
        data  => <<EOF,
+#: source_id: LMS-BR_r_LMS-BR_228754_LMS-BR_72
 	q4::inwork; 11991,14060 12017,14098 12077,14186
 EOF
      },

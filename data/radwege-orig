@@ -835,7 +835,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-01-10
+#: last_checked: 2021-01-16
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -968,6 +968,7 @@ asphaltiert, die letzten Meter als Radspur geführt	RW2; 7171,5831 7194,5763 7216
 #: note: Suggestivstreifen und Fahrstreifen teilen sich den Platz
 #: XXX hier werden wohl auch Leitboys entstehen
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: last_checked: 2020-12-19
 #: check_frequency: 45d
 	RW3; 7236,5685 7497,5610
@@ -1161,7 +1162,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2020-12-13 (mapillary) vvv
+#: last_checked: 2021-01-16 vvv
 #: check_frequency: 30d vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
@@ -1515,7 +1516,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-12-27
+#: last_checked: 2021-01-16
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -3265,7 +3266,7 @@ Gehweg für Radfahrer frei	RW1; 22145,208 22073,59 21977,-8 21968,-15
 Gehweg für Radfahrer frei	RW1; 22145,208 22166,312 22162,452
 asphaltierter Gehweg für Radfahrer frei	RW1; 22062,773 22110,702 22162,452 22166,312 22145,208
 	RW1;RW1 18491,2128 18580,2121 18630,2117 18881,2062
-# REMOVED (existieren nicht mehr) ---	RW1;RW1 18881,2062 18985,2047 19055,2037
+# REMOVED (existieren nicht mehr) ---	RW1;RW1 18881,2062 18938,2054 18985,2047 19055,2037
 # REMOVED (existieren nicht mehr) ---	RW1;RW0 19055,2037 19164,2001
 	RW1; 18929,2454 18928,2319 18922,2238
 Gehweg für Radfahrer frei	RW1; 18922,2238 18928,2319 18929,2454
@@ -6752,3 +6753,5 @@ Busspur ist immer gültig	RW5; 9391,3651 9462,3642
 asphaltierter gemeinsamer Geh- und Radweg, sehr breit	RW2;RW8 21115,271 21286,449 21613,923 21656,989 21829,1351
 	RW4; 18731,8577 18733,8633 18733,8650 18737,8686
 	RW4; 7098,3067 7105,3040 7115,3003
+#: by: mapillary
+	RW3;RW3 18938,2054 18881,2062

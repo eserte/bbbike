@@ -338,7 +338,7 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahren-gegen-die-einbahnstrasse_a238207
 #: XXX: Wird die Einbahnstraße für Radfahrer geöffnet?
 #: osm_watch: way id="4475205" version="10"
-#: last_checked: 2020-10-11
+#: last_checked: 2021-01-16 (mapillary)
 #: check_frequency: 90d
 Gritznerstr.	1 4511,6318 4555,6403
 # 
@@ -2989,6 +2989,8 @@ Schwingtor	BNP:5::trailer=10 14628,9158
 # 
 #: note: Fahrräder mit Anhänger könnten auf den parallelen Gehweg geführt werden
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5::trailer=no 14659,7505
+#: note: Fahrräder mit Anhänger können alternativ auch auf den parallelen Gehweg geführt werden
+Schranke, sehr enge Durchfahrt, ggfs. auf Gehweg ausweichen	BNP:5::trailer=10 14766,7903
 #: note: Luftbild
 Drängelgitter an der Straßenbahntrasse	BNP:6 14989,13630
 # REMOVED (nicht bestätigt) --- #: by: Eckart Seher: --- Drängelgitter	BNP:3 25909,11844
@@ -3363,13 +3365,13 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2021-01-10
+#: last_checked: 2021-01-16
 #: check_frequency: 360d
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14348,10266 14462,10206 14480,10157
 # 
 #: by: wosch
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2021-01-10
+#: last_checked: 2021-01-16
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152 14373,10046
 # 
@@ -3680,7 +3682,7 @@ Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 2144
 #: osm_watch: node id="791819743" version="4"
 #: by: osm (kartonage)
 #: confirmed_by: srt
-#: last_checked: 2020-11-23
+#: last_checked: 2021-01-16
 #: check_frequency: 60d
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14229,8278
 # 
@@ -4084,7 +4086,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: XXX laut rbbtext bis Ende 2022
 #: source_id: 2147343691 (bis 26.2.2021, Gesamtbaumaßnahme bis Ende 2022)
-#: last_checked: 2020-11-28
+#: last_checked: 2021-01-16
 #: check_frequency: 90d
 #: next_check: 2022-12-31
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022

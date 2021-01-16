@@ -2261,6 +2261,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: source_id: 2147343519 (bis 31.12.2021)
 #: note: laut rbbtext bis 4.1.2021 (mittlerweile existiert die Meldung hier nicht mehr)
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5735 (bis Ende 2022?)
 	2::inwork 14539,23306 14573,23295 14597,23280
 ',
          'from' => 1543258848,
@@ -2397,27 +2398,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1614528000
        },
        undef,
-       {
-         'data' => '#: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020?
-#: XXX hier fehlt noch die letzte Asphaltdeckschicht
-#: also_indoor: traffic
-#: osm_watch: way id="156066225" version="19"
-#: last_checked: 2020-11-15 vvv
-#: check_frequency: 45d vvv
-#: next_check: 2021-01-13 vvv
-	q3::inwork 19164,2001 19181,1996 19266,1968 19564,1871
-	q2::inwork 19055,2037 19164,2001
-	q2::inwork 19164,2001 19194,2157
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 3112,
-         'text' => 'Rudower Str.: Bauarbeiten zwischen Lehmfeldsteig und Pfarrwöhrde, Fahrbahn kann gesperrt sein',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2452,7 +2433,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: also_indoor: traffic (G)
 #: osm_watch: way id="749226300" version="3"
-#: last_checked: 2020-05-08
+#: last_checked: 2021-01-16 (mapillary)
+#: check_frequency: 180d
 #: next_check: 2021-10-31
 	2::inwork 3079,5411 3209,5214
 ',
@@ -2842,11 +2824,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Mai 2022
 #: also_indoor: traffic (H)
 	q4::inwork; 5244,6261 5390,6299 5560,6344
+#: by: mapillary
+	q4::inwork 5560,6344 5582,6360
 ',
          'from' => 1594635120,
          'id' => 3258,
          'source_id' => '2147346108',
-         'text' => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Richtung Osten gesperrt, vom 14.07.2020 12:12 Uhr bis 17.03.2021 17:00 Uhr ',
+         'text' => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vor der Schöneberger Str. in beide Richtungen gesperrt, vom 14.07.2020 12:12 Uhr bis 17.03.2021 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1615996800
        },
@@ -3268,7 +3252,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1620831600
        },
        {
-         'data' => '	q4::inwork; 11991,14060 12017,14098 12077,14186
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_228754_LMS-BR_72
+	q4::inwork; 11991,14060 12017,14098 12077,14186
 ',
          'from' => 1610650800,
          'id' => 3323,

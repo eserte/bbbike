@@ -12,7 +12,7 @@
 #: next_check_id: DIESEL-2019
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 #: osm_watch: way id="524560334" version="4"
-#: last_checked: 2020-12-02 vvv
+#: last_checked: 2021-01-16 vvv
 #: check_frequency: 45d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="2"
@@ -1450,6 +1450,7 @@ Prühßstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 9465,4173 9580,4201 9869
 Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: XXX evtl. wird hier asphaltiert und eine Fahrradstraße ausgewiesen
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4680 (Planung ab 2021)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5720 (Prüfung einer Glättung des Kopfsteinpflasters)
 #: last_checked: 2020-12-18
 #: check_frequency: 180d
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
@@ -15397,7 +15398,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="6"
-#: last_checked: 2020-12-30 (mapillary)
+#: last_checked: 2021-01-16 (mapillary)
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4645,6646 4682,6625 4845,6532 4875,6552
 #: confirmed_by: srt
@@ -28706,7 +28707,7 @@ Widderstr.: Asphalt	Q0 14853,7451 14942,7347 14997,7240
 #: corrected_by: srt (Kopfsteinpflaster -> Verbundsteinpflaster)
 Krebsgang: Verbundsteinpflaster	Q1 15085,7258 14997,7240
 #: corrected_by: srt (Kopfsteinpflaster, Q1 -> schlechtes Kopfsteinpflaster+Asphalt, Q3+)
-#: corrected_by: mapillary
+#: corrected_by: mapillary, srt
 Krebsgang: mäßiger Asphalt	Q1 14997,7240 14946,7228
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, teils mit Asphalt, Q3+ -> ..., neu gemacht?)
 Krebsgang: Asphalt	Q0 14946,7228 14878,7211 14792,7192 14693,7168
