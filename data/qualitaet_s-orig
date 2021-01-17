@@ -931,7 +931,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-01-14
+#: last_checked: 2021-01-17
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -4185,7 +4185,9 @@ Chopinstr.: Asphalt	Q0 14653,15738 14440,15682 14321,15636 14195,15604
 Solonplatz: Kopfsteinpflaster	Q2 14286,15962 14248,16058
 Smetanastr.: Kopfsteinpflaster	Q2 14015,16103 14056,15985 14095,15891
 Smetanastr.: Asphalt	Q0 14095,15891 14125,15796 14133,15773 14195,15604
-Meyerbeerstr.: Asphalt	Q0 14576,16069 14484,16035 14411,16008 14330,15978 14286,15962 14095,15891 13904,15818 13701,15744 13609,15706 13459,15653
+Meyerbeerstr.: Asphalt	Q0 14576,16069 14484,16035 14411,16008 14330,15978
+Meyerbeerstr.: Asphalt, einige Löcher	Q0- 14330,15978 14286,15962 14095,15891 13904,15818 13701,15744 13609,15706
+Meyerbeerstr.: rauer Asphalt, einige Löcher	Q1+ 13609,15706 13459,15653
 Seidenberger Str.: Asphalt mit Schäden	Q2+ 12521,16817 12391,16994
 Frieda-Seidlitz-Str.: Asphalt	Q0 12761,16862 12613,16749 12602,16727
 Herbert-Bayer-Str.: Verbundsteinpflaster	Q0- 12923,16873 12898,16898 12846,16971 12911,17021
@@ -8873,7 +8875,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.726077.php ("erste Hälfte 2019")
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2021-01-10 vvv
+#: last_checked: 2021-01-17 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -9095,8 +9097,9 @@ Am Oder-Spree-Kanal: Asphalt	Q0 30646,-2732 30629,-2817
 #: note: Qualität hat sich verschlechtert (2018-07), früher feiner Schotter
 (Straße zur Krampenburg - Uferweg am Langen See): Schotterweg, teilweise grober Schotter	Q2- 27202,173 26666,-54
 (Straße zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2- 26666,-54 26488,-131
-Kuglerstr.: Asphalt	Q0- 11750,16116 11680,16151 11618,16183
-Kuglerstr.: Asphalt mit leichten Schäden	Q1+ 12030,15968 11961,16002 11899,16037
+Kuglerstr.: Asphalt mit leichten Schäden	Q1+ 11750,16116 11680,16151 11618,16183
+Kuglerstr.: Asphalt	Q0- 12030,15968 11961,16002
+Kuglerstr.: Asphalt mit leichten Schäden	Q1+ 11961,16002 11899,16037
 Kuglerstr.: Asphalt	Q0- 11899,16037 11852,16061
 Kuglerstr.: Asphalt mit leichten Schäden	Q1+ 11852,16061 11750,16116
 (Schönhauser Str. - Rosenthaler Str.): Asphalt	Q0 11858,21541 11889,21543
@@ -10387,7 +10390,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): wassergebundene Decke	Q1 21467,9236 21511,9226
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX ändert sich an den geplanten Bauarbeiten hier etwas?
-#: last_checked: 2020-12-18
+#: last_checked: 2021-01-17
 #: check_frequency: 60d
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
 Duftgeranienweg: Beton	Q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
@@ -14720,7 +14723,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="8"
-#: last_checked: 2020-11-17
+#: last_checked: 2021-01-17
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -15543,7 +15546,7 @@ Burgwallstr.: Asphalt	Q0 13107,21357 13136,21419 13158,21471 13171,21532 13177,2
 Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q3+ 13177,21595 13182,21639 13193,21700
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: XXX provisorische Wegführung; nach den Bauarbeiten den alten Eintrag wiederherstellen!
-#: last_checked: 2020-12-31 (mapillary)
+#: last_checked: 2021-01-17 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-01-01
 Burgwallstr.: Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke ertüchtigt	Q2 13193,21700 13220,21761 13270,21870 13315,21969
@@ -27060,7 +27063,9 @@ Mittelstr. (Steglitz): Kopfsteinpflaster	Q2; 5318,5205 5203,5278
 Mittelstr. (Steglitz): Asphalt	Q1; 5203,5278 5318,5205
 Leydenallee: Kopfsteinpflaster	Q2 4942,5312 5046,5244 5259,5110 5436,4983 5478,4957 5573,4851
 Dijonstr.: Asphalt	Q1 5748,4754 5707,4777 5677,4794 5650,4809
-Goebenstr.: wassergebundene Decke	Q1 5606,4726 5555,4743 5535,4756 5509,4773 5478,4792
+Goebenstr.: wassergebundene Decke	Q1 5606,4726 5555,4743 5535,4756 5509,4773
+#: corrected_by: mapillary (wassergebundene Decke -> ...)
+Goebenstr.: etwas glatteres Kopfsteinpflaster	Q2+ 5509,4773 5478,4792 5439,4811
 Johanna-Stegen-Str.: Gehwegplatten	Q1 5557,4523 5479,4568 5397,4611 5371,4609 5316,4637
 Vionvillestr.: Gehwegplatten	Q1 5557,4523 5589,4617
 Rezonvillestr.: Gehwegplatten	Q1 5589,4617 5607,4610

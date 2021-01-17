@@ -3341,7 +3341,9 @@ Chopinstr.: Asphalt	Q0 14653,15738 14440,15682 14321,15636 14195,15604
 Solonplatz: Kopfsteinpflaster	Q2 14286,15962 14248,16058
 Smetanastr.: Kopfsteinpflaster	Q2 14015,16103 14056,15985 14095,15891
 Smetanastr.: Asphalt	Q0 14095,15891 14125,15796 14133,15773 14195,15604
-Meyerbeerstr.: Asphalt	Q0 14576,16069 14484,16035 14411,16008 14330,15978 14286,15962 14095,15891 13904,15818 13701,15744 13609,15706 13459,15653
+Meyerbeerstr.: Asphalt	Q0 14576,16069 14484,16035 14411,16008 14330,15978
+Meyerbeerstr.: Asphalt, einige Löcher	Q0 14330,15978 14286,15962 14095,15891 13904,15818 13701,15744 13609,15706
+Meyerbeerstr.: rauer Asphalt, einige Löcher	Q1 13609,15706 13459,15653
 Seidenberger Str.: Asphalt mit Schäden	Q2 12521,16817 12391,16994
 Frieda-Seidlitz-Str.: Asphalt	Q0 12761,16862 12613,16749 12602,16727
 Herbert-Bayer-Str.: Verbundsteinpflaster	Q0 12923,16873 12898,16898 12846,16971 12911,17021
@@ -7923,8 +7925,9 @@ Am Oder-Spree-Kanal: Asphalt	Q0 30646,-2732 30629,-2817
 (Waldweg zur Sandgrube): Asphalt	Q0 29208,71 29503,-611 29321,-685 29260,-774 28925,-1143 28886,-1163 28851,-1075
 (Straße zur Krampenburg - Uferweg am Langen See): Schotterweg, teilweise grober Schotter	Q2 27202,173 26666,-54
 (Straße zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2 26666,-54 26488,-131
-Kuglerstr.: Asphalt	Q0 11750,16116 11680,16151 11618,16183
-Kuglerstr.: Asphalt mit leichten Schäden	Q1 12030,15968 11961,16002 11899,16037
+Kuglerstr.: Asphalt mit leichten Schäden	Q1 11750,16116 11680,16151 11618,16183
+Kuglerstr.: Asphalt	Q0 12030,15968 11961,16002
+Kuglerstr.: Asphalt mit leichten Schäden	Q1 11961,16002 11899,16037
 Kuglerstr.: Asphalt	Q0 11899,16037 11852,16061
 Kuglerstr.: Asphalt mit leichten Schäden	Q1 11852,16061 11750,16116
 (Schönhauser Str. - Rosenthaler Str.): Asphalt	Q0 11858,21541 11889,21543
@@ -16022,7 +16025,8 @@ Mittelstr. (Steglitz): Kopfsteinpflaster	Q2; 5318,5205 5203,5278
 Mittelstr. (Steglitz): Asphalt	Q1; 5203,5278 5318,5205
 Leydenallee: Kopfsteinpflaster	Q2 4942,5312 5046,5244 5259,5110 5436,4983 5478,4957 5573,4851
 Dijonstr.: Asphalt	Q1 5748,4754 5707,4777 5677,4794 5650,4809
-Goebenstr.: wassergebundene Decke	Q1 5606,4726 5555,4743 5535,4756 5509,4773 5478,4792
+Goebenstr.: wassergebundene Decke	Q1 5606,4726 5555,4743 5535,4756 5509,4773
+Goebenstr.: etwas glatteres Kopfsteinpflaster	Q2 5509,4773 5478,4792 5439,4811
 Johanna-Stegen-Str.: Gehwegplatten	Q1 5557,4523 5479,4568 5397,4611 5371,4609 5316,4637
 Vionvillestr.: Gehwegplatten	Q1 5557,4523 5589,4617
 Rezonvillestr.: Gehwegplatten	Q1 5589,4617 5607,4610

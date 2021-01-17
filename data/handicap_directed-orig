@@ -342,3 +342,13 @@ Behrenstr. - Ebertstr.: zum Linksabbiegen die linke Fußgängerampel benutzen	DH:t
 # REMOVED ---#: source_id: 2147346524 (bis 16.11.2020, mittlerweile inaktiv) vvv --- #: by: https://twitter.com/VIZ_Berlin/status/1320602935559073793 --- #: by: https://pbs.twimg.com/media/ElO46I5XEAEe4Kk?format=jpg&name=medium --- #: next_check: 2020-11-16 vvv --- #: valid: -20201116 vvv --- Prinzenallee über die Osloer Str.: Umweg über linken Gehweg	DH:len=60:h=q3,90:tl 8921,16578 8952,16666 9008,16799 --- Prinzenallee links in die Osloer Str.: Umweg über linken Gehweg	DH:len=10:h=q3,40:tl 8921,16578 8952,16666 8759,16684 --- Prinzenallee über die Osloer Str.: rechten Gehweg benutzen	DH:len=10:h=q3,40 9008,16799 8952,16666 8921,16578 --- Prinzenallee links in die Osloer Str.: zunächst rechten Gehweg benutzen	DH:len=10:h=q3,40 9008,16799 8952,16666 9210,16638 --- Osloer Str. links in die Prinzenallee: Mittelstreifen auf dem rechten Gehweg überqueren	DH:len=10:h=q3,40 9210,16638 8952,16666 8921,16578 --- Osloer Str. links in die Prinzenallee: Mittelstreifen auf dem rechten Gehweg überqueren	DH:len=40:h=q3,60 8759,16684 8952,16666 9008,16799 --- #: valid ^^^ --- #: next_check ^^^ --- #: source_id ^^^
 # REMOVED  --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1019139.php (für zwei Wochen) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/kreuzung-bleibt-teilgesperrt_a293815 --- #: by: https://twitter.com/VIZ_Berlin/status/1329290817048023040 --- #: by: https://pbs.twimg.com/media/EnKW9CZWMAAOqU1?format=jpg&name=large --- #: source_id: 2147346612 (bis 22.12.2020, nur Einengung) vvv --- #: last_checked: 2020-12-20 vvv --- #: check_frequency: 7d vvv --- #: next_check: 2020-12-22 vvv --- #: valid: -20201222 vvv --- Fahrbahninstandsetzung der Kreuzung Stralauer Allee/Modersohnstr.: Umweg über Ampel Rochowstr.	DH:len=300 13779,10642 13919,10583 14011,10812 --- Fahrbahninstandsetzung der Kreuzung Stralauer Allee/Modersohnstr.: zunächst den linken Gehweg auf der Stralauer Allee benutzen	DH:h=q3,150 13779,10642 13919,10583 14011,10812 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # 
+#: next_check_id: KASTANIENALLEE-2021
+#: last_checked: 2021-01-17 (mapillary) vvv
+#: check_frequency: 120d vvv
+#: next_check: 2021-10-29 vvv
+Kastanienallee: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 9027,20603 9073,20606 9162,20613
+Kastanienallee: Radfahrer müssen auf den gegenüberliegenden Radweg verlassen	DH:t=20 9175,20613 9227,20617 9296,20622
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 

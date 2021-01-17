@@ -769,6 +769,8 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 #: next_check_id: HOSEMANN-2019
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021)
+#: osm_watch: way id="885619857" version="1"
+#: osm_watch: way id="885619858" version="1"
 #: note: laut rbbtext bis 31.12.2020
 #: priority: #B
 #: last_checked: 2020-12-18 vvv
@@ -776,8 +778,7 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 #: next_check: 2021-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
-Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwork; 12556,15518 12605,15491 12621,15482
-Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwork; 12621,15482 12605,15491
+Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwork 12556,15518 12605,15491 12621,15482
 # REMOVED --- #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^

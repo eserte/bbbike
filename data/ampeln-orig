@@ -91,6 +91,16 @@
 #: valid: -20210528
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork 15433,10765
 # 
+#: next_check_id: KASTANIENALLEE-2021
+#: last_checked: 2021-01-17 (mapillary) vvv
+#: check_frequency: 120d vvv
+#: next_check: 2021-10-29 vvv
+Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen auf den linken Bürgersteig wechseln	X::inwork 9073,20606
+Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linken Bürgersteig auf die Fahrbahn wechseln	X::inwork 9227,20617
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: temporary ^^^
 # 
 ################################################################################
@@ -3171,9 +3181,16 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2020-12-21 (daf)
+#: last_checked: 2021-01-17 (mapillary)
 #: check_frequency: 90d
 	X::inwork 8250,14672
+# 
+#: next_check_id: CORONA-2020
+#: XXX vermutlich temporär für das Impfzentrum
+#: by: mapillary
+#: last_checked: 2021-01-17 (mapillary)
+#: check_frequency: 90d
+	F::inwork 8153,14769
 # 
 # REMOVED --- #: next_check_id: CHAUSSEESTR-2016 vvv
 # REMOVED (see https://www.openstreetmap.org/note/765740#map=18/52.53800/13.37363&layers=N ) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8232 (bleibt die Ampel permanent?) ---#: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019) --- #: source_id: 2147340715 vvv --- #: last_checked: 2018-05-17 vvv --- #: check_frequency: 60d vvv ---	X::inwork 8250,14672 --- # REMOVED --- F::inwork 8732,14098 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^

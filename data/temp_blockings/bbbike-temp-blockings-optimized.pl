@@ -2641,15 +2641,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
 #: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nördliche Abschnitt)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/vattenfall-baut-in-der-lauenburger-und-friedrichsruher-strasse_a258712
-#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: also_indoor: traffic
-#: last_checked: 2020-12-19
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
+#: also_indoor: traffic vvv
+#: last_checked: 2021-01-17 (mapillary)
 	q4::inwork 6007,5785 6007,5882
+#: last_checked: 2021-01-17 (mapillary)
+	q4::inwork 6007,5882 6124,5894
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => 1584255600,
          'id' => 3208,
          'source_id' => '2147345598',
-         'text' => 'Lauenburger Str.: Bauarbeiten zwischen Bergstr. und Friedrichsruher Str., Fahrbahn gesperrt, ab 16.03.2020, Ende unbekannt',
+         'text' => 'Lauenburger Str.: Bauarbeiten zwischen Bergstr. und Friedrichsruher Str. sowie in der Friedrichsruher Str., Fahrbahn gesperrt, ab 16.03.2020, Ende unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -2685,7 +2689,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-01-06
+#: last_checked: 2021-01-17
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2741,7 +2745,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2021-01-14
+#: last_checked: 2021-01-17
 #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3230,6 +3234,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: BOHNSDORFERKREISEL-2017
 #: source_id: 2147346807 (bis 12.4.2021)
+#: note: laut rbbtext kann der Radverkehr passieren
 	q3::inwork 22162,1067 22092,999 22034,1006 21977,988
 	q3::inwork 22092,999 22120,886
 ',

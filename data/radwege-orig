@@ -1061,7 +1061,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="14"
 #: osm_watch: way id="4615746" version="26"
-#: last_checked: 2020-12-14 (mapillary)
+#: last_checked: 2021-01-17
 #: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1074,7 +1074,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="26"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2020-12-18 (mapillary)
+#: last_checked: 2021-01-17
 #: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
@@ -3025,10 +3025,11 @@ Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 #: by: https://api.fixmyberlin.de/api/plannings/120
 #: by: https://twitter.com/GBinfraVelo/status/1326165780937977856 (erste Markierung)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/fahrrat-marzahn-hellersdorf-fordert-kreuzungsumbau-mehr-abstellanlagen-und-eine-fahrradstrasse_a292385 (Erwähnung der Grünmarkierung)
-#: by: http://www.infravelo.de/projekt/allee-der-kosmonauten/ (4. Quartal 2020)
+#: by: http://www.infravelo.de/projekt/allee-der-kosmonauten/ (bis 1. Quartal 2021)
 #: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 30.11.2020; mittlerweile inaktiv)
 #: last_checked: 2020-12-28 (nur vereinzelte Grünmarkierungen)
-#: check_frequency: 30d
+#: check_frequency: 45d
+#: next_check: 2021-03-31
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2020-11-30
 	RW3;RW3 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467
 die letzten 50 Meter als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 18382,13492 18226,13506
@@ -3416,7 +3417,7 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019)
 #: source_id: 2147345490 (bis 25.09.2020, Gesamtmaßnahme bis April 2021)
 #: priority: #D vvv
-#: last_checked: 2020-12-18 vvv
+#: last_checked: 2021-01-17 vvv
 #: next_check: 2021-04-30 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -3613,8 +3614,9 @@ Grünmarkierung	RW3; 4574,11587 4558,11366 4546,11217 4532,11042 4521,10850 4513,
 Grünmarkierung	RW3; 4503,10497 4513,10702 4521,10850
 #: XXX Grünmarkierung und Verbreiterung der Radspur, in einem Teilabschnitt noch nicht fertig (wegen einer Hochbaustelle?)
 #: by: https://api.fixmyberlin.de/api/projects/400 ("planning")
-#: by: http://www.infravelo.de/projekt/schlueterstrasse/ (3. Quartal 2020 - 4. Quartal 2020)
+#: by: http://www.infravelo.de/projekt/schlueterstrasse/ (3. Quartal 2020 - 2. Quartal 2021)
 #: last_checked: 2020-12-06
+#: next_check: 2021-03-15
 	RW3; 4521,10850 4532,11042 4546,11217
 Grünmarkierung	RW3; 4546,11217 4558,11366 4574,11587
 #: confirmed_by ^^^
@@ -4068,7 +4070,13 @@ die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt
 	RW3;RW3 8561,20572 8717,20584
 	RW4;RW4 8717,20584 8864,20593
 # REMOVED (nein) --- #: XXX Wie sieht es in der Gegenrichtung aus? Ist der Gehweg hier auch für Radfahrer frei?
-Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9175,20613 9162,20613 9027,20603 8904,20596
+Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9227,20617
+#: next_check_id: KASTANIENALLEE-2021
+#: last_checked: 2021-01-17 (mapillary)
+#: check_frequency: 120d
+#: next_check: 2021-10-29
+	RW2;RW8 9227,20617 9175,20613 9162,20613 9073,20606
+Gehweg für Radfahrer frei	RW1; 9073,20606 9027,20603 8904,20596
 	RW2; 19904,3464 19857,3514 19812,3561 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 18725,4715 18457,5000 18425,5032 18080,5376 17960,5511
 #: next_check_id: POPUPRADWEGE-2020
 #: XXX bleibt dieser Popup-Radweg (Adlergestell) dauerhaft?
@@ -5100,14 +5108,13 @@ einige Meter Radspur an der Salvador-Allende-Str.	RW0;RW0 23388,4864 23451,4877
 	RW6;RW6 6014,6160 6019,6087 6008,6067
 #: by: ^^^
 	RW2;RW1 24968,15307 24794,15270
-	RW;RW1 24794,15270 24651,15239 24451,15181
-	RW1;RW1 24451,15181 24281,15138
-	RW;RW1 24281,15138 24226,15121
-	RW;RW1 24226,15121 24232,15060
+	RW1;RW1 24794,15270 24651,15239
+	RW2;RW1 24651,15239 24451,15181
+	RW1;RW1 24451,15181 24281,15138 24226,15121 24232,15060
 #: by: Alexandra (kaffeeschluerfer): vvv
-	RW;RW1 24232,15060 24215,15057
-#: confirmed_by: srt (+ Benutzungspflicht)
-	RW2;RW2 24215,15057 24139,15046 24063,15035 23960,15021
+	RW1;RW1 24232,15060 24215,15057
+#: confirmed_by: srt (+ Benutzungspflicht) (mittlerweile ist die Benutzungspflicht zumindest Richtung Westen entfallen)
+	RW1;RW2 24215,15057 24139,15046 24063,15035 23960,15021
 #: by: ^^^
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20071108.1600.88578.html (Luftbild ist nicht immer eindeutig)
 #: by: Uwe Vogel: vvv
@@ -5933,7 +5940,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2021-01-04 (mapillary) vvv
+#: last_checked: 2021-01-17 vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -6368,7 +6375,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2020-12-18
+#: last_checked: 2021-01-17
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: next_check_id: POPUPRADWEGE-2020
@@ -6377,11 +6384,13 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
 #: by: http://www.infravelo.de/projekt/danziger-strasse-1/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
-#: last_checked: 2020-12-18 vvv
+#: last_checked: 2021-01-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-09-30 vvv
 #: osm_watch: way id="4615031" version="37"
-provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
+provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
+#: XXX der provisorisch geschützter Radstreifen wird neu gemacht
+getrennter Geh- und Radweg	RW2; 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
 #: osm_watch: way id="41954398" version="17"
 provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 #: next_check ^^^

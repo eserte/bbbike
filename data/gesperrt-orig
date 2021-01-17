@@ -194,7 +194,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
-#: osm_watch: way id="4490214" version="13"
+#: osm_watch: way id="4490214" version="14"
 #: last_checked: 2020-09-27
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
@@ -3336,7 +3336,7 @@ Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch f¸r Fuﬂg‰nger	2::inwork 188
 #: by: https://www.deutsches-architekturforum.de/thread/14507-bauprojekte-am-velodrom-prenzlauer-berg/?postID=677089#post677089
 #: XXX vermutlich dauerhaft, Teile der Fahrbahn sind schon aufgerissen; evtl. wird es einen neuen Weg weiter s¸dˆstlich geben
 #: osm_watch: way id="860287005" version="3"
-#: last_checked: 2020-12-30
+#: last_checked: 2021-01-17
 #: check_frequency: 120d
 #: next_check: 2022-07-01
 Cotheniusstr.: Fahrbahn durch Bauz‰une abgesperrt	2::inwork 13430,13733 13519,13785
@@ -3508,27 +3508,14 @@ Gustav-Bˆﬂ-Str.: Bauarbeiten, Komplettsperrung, Straﬂenf¸hrung wird neu gemacht	
 #: osm_watch: way id="16307526" version="19"
 #: priority: #A
 #: also_indoor: search Kˆnigsteinbr¸cke
-#: last_checked: 2020-12-31 (wosch) (laut Baustellenschild bis Februar 2021)
+#: last_checked: 2021-01-17 (mapillary) (laut Baustellenschild bis Februar 2021)
 #: check_frequency: 90d
 #: next_check: 2021-02-01
 #: valid: -20210228
-Kˆnigsteinbr¸cke: Br¸cke wurde abgerissen und wird neu gebaut	2::inwork 13148,22396 13385,22383
+Kˆnigsteinbr¸cke: Br¸ckenneubau	2::inwork 13148,22396 13385,22383
 # 
-#: next_check_id: HOSEMANN-2019
-#: osm_watch: way id="885619857" version="1"
-#: osm_watch: way id="885619858" version="1"
-#: last_checked: 2020-12-18 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2021-12-31 vvv
-# REMOVED --- #: valid: -20200731 vvv
-Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr.	1::inwork 12605,15491 12556,15518
-# REMOVED --- #: valid ^^^
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED (-> handicap) --- #: next_check_id: HOSEMANN-2019 --- #: last_checked: 2020-12-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2021-12-31 vvv --- #: valid: -20200731 vvv --- Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr.	1::inwork 12605,15491 12556,15518 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (offen) --- #: next_check_id: OLIVAERPLATZ-2019 --- #: last_checked: 2019-12-08 --- #: check_frequency: 60d --- (Olivaer Platz, Wielandstr. - Bayerische Str.): wegen Bauarbeiten gesperrt	2::inwork 4360,10320 4352,10260
-# 
 # REMOVED (teilweise schon offiziell offen) --- #: XXX auch Maﬂnahme Jt.7 --- #: XXX laut Planfestellungsverfahren kommt an der Kreuzung Groﬂ-Berliner Damm eine Ampel hin --- #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019 --- #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/ --- #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie) --- #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-5_gesiegelt.pdf (Ampel) --- #: last_checked: 2020-07-31 vvv --- #: check_frequency: 30d vvv --- #: osm_watch: way id="72852443" version="12" --- Benno-Kˆnig-Str.: noch nicht freigegeben, Straﬂe gesperrt	2::inwork 18374,4307 18434,4363 18596,4517 --- Gustav-Hertz-Platz: noch nicht freigegeben, Straﬂe gesperrt	2::inwork 18596,4517 18674,4585 18685,4595 18722,4628 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (keine Einschr‰nkung mehr) --- #: XXX wird dieser Abschnitt ein reiner Fuﬂ- und Radweg sein? --- #: last_checked: 2020-06-17 --- #: check_frequency: 60d --- Landfliegerstr.: noch nicht freigegeben, Straﬂe gesperrt	2::inwork 18296,4850 18254,4817
 # REMOVED --- #: next_check_id: HERMANNHESSESTR-2019 --- #: source_id: 2147345502 --- #: source_id: 2147343407 (hier nur bis 2020-07-13)--- #: XXX im Verkehrsmeldungstext ist die Sperrung Richtung Westen, aber vermutlich ist es genau anders herum? vvv --- #: also_indoor: traffic (H) vvv --- #: last_checked: 2020-06-21 (mapillary) vvv --- #: next_check: 2020-08-05 vvv --- Tschaikowskistr.: Einbahnstraﬂe wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:q4:inwork 9868,19023 9501,18902
@@ -3550,8 +3537,8 @@ Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 #Rollbergstr.: Einbahnstraﬂe, offen Richtung Karl-Marx-Str.	1s:q3:inwork 12714,8249 12545,8209
 Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:q4:inwork 12714,8249 12545,8209
 # 
-#: osm_watch: way id="702306263" version="4"
-#: last_checked: 2021-01-09
+#: osm_watch: way id="702306263" version="5"
+#: last_checked: 2021-01-17 (osm)
 #: check_frequency: 21d
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 # 

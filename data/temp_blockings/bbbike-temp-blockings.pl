@@ -7283,7 +7283,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004803',
        data  => <<EOF,
-	1::inwork 8904,20596 9027,20603 9162,20613 9175,20613 9296,20622 9461,20635 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749
+	1::inwork 8904,20596 9027,20603 9073,20606 9162,20613 9175,20613 9227,20617 9296,20622 9461,20635 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749
 EOF
      },
      { from  => 1172642400, # 2007-02-28 07:00
@@ -20720,7 +20720,7 @@ EOF
        text  => 'Kastanienallee (Rosenthal): Bauarbeiten, zwischen Friedrich-Engels-Str. und Eschenallee in Richtung Osten gesperrt, bis Mitte Oktober 2012',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 8904,20596 9027,20603 9162,20613 9175,20613 9296,20622 9461,20635
+	q4::inwork; 8904,20596 9027,20603 9073,20606 9162,20613 9175,20613 9227,20617 9296,20622 9461,20635
 EOF
      },
      { from  => 1407706402,
@@ -24666,9 +24666,9 @@ EOF
      { from  => $isodate2epoch->("2020-01-12 08:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2020-01-17 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 8, months => 1],
+       recurrences => [['yearly', days => 8, months => 1, start => "2021-01-31T00:00:00"],
                        ['yearly', days => 27, months => 6, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -9, # XXX wird die Fashion Week 2021 überhaupt stattfinden? Bis jetzt steht als Termin 18.-24.01.2021 fest
+       #recurrence_prewarn_days => -9, # XXX wird die Fashion Week 2021 überhaupt stattfinden? Bis jetzt steht als Termin 18.-24.01.2021 fest
        text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 13.01.2020-17.01.2020',
        type  => 'handicap',
        source_id => 'https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-termin-fuer-januar-2020.html',
@@ -28785,7 +28785,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147343771
-	q4::inwork; 8904,20596 9027,20603 9162,20613 9175,20613
+	q4::inwork; 8904,20596 9027,20603 9073,20606 9162,20613 9175,20613
 EOF
      },
      { from  => 1551379334, # 2019-02-28 19:42
@@ -30398,17 +30398,21 @@ EOF
      },
      { from  => 1584255600, # 2020-03-15 08:00
        until => undef, # $isodate2epoch->("2020-09-01 17:00:00"), # 1596466800, # 2020-08-03 17:00
-       text  => 'Lauenburger Str.: Bauarbeiten zwischen Bergstr. und Friedrichsruher Str., Fahrbahn gesperrt, ab 16.03.2020, Ende unbekannt',
+       text  => 'Lauenburger Str.: Bauarbeiten zwischen Bergstr. und Friedrichsruher Str. sowie in der Friedrichsruher Str., Fahrbahn gesperrt, ab 16.03.2020, Ende unbekannt',
        type  => 'handicap',
        source_id => '2147345598',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
 #: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nördliche Abschnitt)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/vattenfall-baut-in-der-lauenburger-und-friedrichsruher-strasse_a258712
-#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: also_indoor: traffic
-#: last_checked: 2020-12-19
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
+#: also_indoor: traffic vvv
+#: last_checked: 2021-01-17 (mapillary)
 	q4::inwork 6007,5785 6007,5882
+#: last_checked: 2021-01-17 (mapillary)
+	q4::inwork 6007,5882 6124,5894
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
@@ -30581,7 +30585,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-01-06
+#: last_checked: 2021-01-17
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30796,7 +30800,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2021-01-14
+#: last_checked: 2021-01-17
 #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31863,6 +31867,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: BOHNSDORFERKREISEL-2017
 #: source_id: 2147346807 (bis 12.4.2021)
+#: note: laut rbbtext kann der Radverkehr passieren
 	q3::inwork 22162,1067 22092,999 22034,1006 21977,988
 	q3::inwork 22092,999 22120,886
 EOF
