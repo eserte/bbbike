@@ -1892,7 +1892,7 @@ neu asphaltiert	RW1; 5506,20197 5517,20120 5545,19909 5533,19811 5495,19571 5476
 #: next_check_id: ORANIENBURGERNORD-2018
 #: XXX vermutlich nur provisorisch während der Bauarbeiten vvv
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksamt/bauen-bildung-und-kultur/dokumente/uebersicht-der-radwege-in-reinickendorf.pdf (im Bau, Radfahrstreifen oder Radwege)
-#: last_checked: 2020-11-07 vvv
+#: last_checked: 2021-01-18 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-01-31 vvv
 	RW0; 5430,20685 5421,20748 5410,20822 5401,20882 5395,20915
@@ -1909,12 +1909,15 @@ Gehweg für Radfahrer frei	RW1; 5421,20748 5430,20685
 neu asphaltiert	RW2; 5349,21198 5356,21146 5370,21066
 neu asphaltiert	RW1; 5136,21738 5210,21636 5311,21495
 #: by: mapillary
-	RW4?; 5311,21495 5320,21432 5333,21332
+	RW3; 5311,21495 5320,21432
 #: by: mapillary
-#: confirmed_by: srt
+	RW4; 5320,21432 5333,21332
 	RW3; 5343,21250 5341,21266 5333,21332
-#: note: noch provisorisch markiert (gesehen: 2020-11-07)
-	RW3; 5333,21332 5341,21266 5343,21250
+#: next_check_id: ORANIENBURGERNORD-2018
+#: XXX Radspuren existieren, sind aber per Gelbmarkierung ungültig gemacht
+#: last_checked: 2021-01-18 (mapillary)
+#: check_frequency: 90d
+Gehweg für Radfahrer frei	RW1; 5333,21332 5341,21266 5343,21250
 	RW4; 5333,21332 5320,21432 5311,21495 5210,21636 5136,21738
 # REMOVED (nicht mehr?) --- #: next_check_id: ORANIENBURGER-2018 --- #: XXX provisorisch während der Bauarbeiten --- #: last_checked: 2019-03-23 --- #: next_check: 2019-04-30 --- Gehweg für Radfahrer frei	RW1; 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250
 	RW1;RW1 5136,21738 5067,21831 4925,22022

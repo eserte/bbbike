@@ -3235,13 +3235,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: BOHNSDORFERKREISEL-2017
 #: source_id: 2147346807 (bis 12.4.2021)
 #: note: laut rbbtext kann der Radverkehr passieren
+#: by: https://viz.berlin.de/2021/01/bohnsdorfer-kreisel/ (keine Einschränkungen für Fußgänger)
+#: XXX wie sehen die Einschränkungen (wenn überhaupt) für den Radverkehr aus? vvv
 	q3::inwork 22162,1067 22092,999 22034,1006 21977,988
 	q3::inwork 22092,999 22120,886
+#: XXX ^^^
 ',
          'from' => 1610838000,
          'id' => 3321,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
-         'text' => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, vom 18.1.2021 bis 12.4.2021',
+         'text' => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, möglicherweise ist der Radverkehr betroffen, vom 18.1.2021 bis 12.4.2021',
          'type' => 'handicap',
          'until' => 1618264800
        },
@@ -3255,17 +3258,6 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Rudower Str.: zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 12.05.2021 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1620831600
-       },
-       {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_228754_LMS-BR_72
-	q4::inwork; 11991,14060 12017,14098 12077,14186
-',
-         'from' => 1610650800,
-         'id' => 3323,
-         'source_id' => '2147346791',
-         'text' => 'Greifswalder Str.: Fahrbahn stadtauswärts zwischen Käthe-Niederkirchner-Str. und Hufelandstr. wegen Kraneinsatz gesperrt, vom 15.01.2021 20:00 Uhr bis 18.01.2021 04:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1610938800
        }
      
 );

@@ -31861,15 +31861,18 @@ EOF
      },
      { from  => 1610838000, # 2021-01-17 00:00
        until => 1618264800, # 2021-04-13 00:00
-       text  => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, vom 18.1.2021 bis 12.4.2021',
+       text  => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, möglicherweise ist der Radverkehr betroffen, vom 18.1.2021 bis 12.4.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
        data  => <<EOF,
 #: next_check_id: BOHNSDORFERKREISEL-2017
 #: source_id: 2147346807 (bis 12.4.2021)
 #: note: laut rbbtext kann der Radverkehr passieren
+#: by: https://viz.berlin.de/2021/01/bohnsdorfer-kreisel/ (keine Einschränkungen für Fußgänger)
+#: XXX wie sehen die Einschränkungen (wenn überhaupt) für den Radverkehr aus? vvv
 	q3::inwork 22162,1067 22092,999 22034,1006 21977,988
 	q3::inwork 22092,999 22120,886
+#: XXX ^^^
 EOF
      },
      { from  => 1610431200, # 2021-01-12 07:00

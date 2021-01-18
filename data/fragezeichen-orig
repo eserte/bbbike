@@ -1758,7 +1758,8 @@ Kohlhasenbrücker Str.: Radverkehrsanlagen sollen erstellt werden	?::projected -7
 #: last_checked: 2020-09-11
 #: next_check: 2021-12-31
 Waldstr.: "Grundlagenermittlung für Radverkehrsanlagen"	?::projected 4346,18853 4466,18831 4570,18822 4640,18818 4650,18817 4767,18810 5171,18785 5376,18773
-#: next_check: 2021-12-31
+#: last_checked: 2021-01-18 (mapillary)
+#: check_frequency: 360d
 Oraniendamm: "Grundlagenermittlung für Radverkehrsanlagen"	?::projected 4724,22376 4837,22180 4859,22142 4884,22097 4925,22022 5067,21831 5136,21738
 #: next_check: 2023-12-31
 Konradshöher Str.: "Grundlagenermittlung für Radverkehrsanlagen"	?::projected -1202,19877 -842,20200 -353,20639 -329,20685 -234,20896 -214,20991 -140,21098 -130,21396
@@ -1997,7 +1998,7 @@ Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 79
 #: XXX laut fritz bis Januar 2020
 #: source_id: 2147344156 (bis Ende 2020; diese Meldung ist mittlerweile abgelaufen)
 #: source_id: 2147346022 (bis Ende 2020; inaktiv)
-#: last_checked: 2020-11-07
+#: last_checked: 2021-01-18 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-06-01
 Oranienburger Str.: Bauarbeiten zwischen Göschenplatz und Techowpromenade, vermutlich werden hier auch Radstreifen angelegt	?::projected 5430,20685 5421,20748 5410,20822 5401,20882 5395,20915 5379,21016 5370,21066 5356,21146 5349,21198 5343,21250
@@ -2080,7 +2081,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: source_id: 2147341681
 #: source_id: 2147341683
 #: source_id: 2147343391
-#: source_id: 2147343596 (bis 2021-01-18)
+#: source_id: 2147343596 (bis 2021-01-18) (inaktiv)
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-12-22 (osm)
 #: check_frequency: 90d
@@ -2914,7 +2915,8 @@ Heinsestr. 41: Zebrastreifen geplant	?::projected 3486,23443 3490,23472 3499,235
 Buddestr./Königsweg: Zebrastreifen geplant	?::projected 2151,20619 2188,20600 2228,20581
 #: next_check: 2021-03-01
 Dianastr. 44: Zebrastreifen geplant	?::projected 3778,21965 3771,21910 3818,21946
-#: next_check: 2021-03-01
+#: last_checked: 2021-01-18 (mapillary)
+#: check_frequency: 120d
 Berliner Str. 105: Zebrastreifen geplant	?::projected 3947,23753 3985,23814 4033,23775
 #: priority ^^^
 #: by ^^^
@@ -3072,8 +3074,10 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8917,5986 -8871,628
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2019/pressemitteilung.876718.php (... Ende 2021 in Betrieb gehen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/planfeststellungen/bekanntmachungen/tram-turmstrasse/
 #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FCB8FB93-E940-4E9F-83F8-F21B4DBD0123&plugid=/ingrid-group:ige-iplug-be&docid=FCB8FB93-E940-4E9F-83F8-F21B4DBD0123
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1041309.php (Inbetriebnahme im ersten Halbjahr 2023)
 #: last_checked: 2020-09-27
 #: check_frequency: 360d
+#: next_check: 2023-06-01
 Alt-Moabit - Rathenower Str.: Radspuren werden gemalt	?::projected 7415,13060 7346,13022 7172,13051 7187,13126 7161,13190 7131,13261 7069,13381
 # 
 #: by: http://www.stadtentwicklung.berlin.de/planen/strassenbauverfahren/de/verfahren/strassenbau/bekanntmachung1.shtml vvv
@@ -3924,13 +3928,14 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/zukunft-bergmannkiez_a286807
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9768 (Finanzierung des Umbaus der Bergmannstraße)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1040993.php (Leitungsarbeiten bis Mitte Februar 2021)
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
 #: source_id: 2147346783 (Leitungsarbeiten bis 22.1.2021)
 #: osm_watch: way id="4588059" version="23"
 #: priority: #C
 #: last_checked: 2020-12-19
 #: check_frequency: 90d
-#: next_check: 2021-01-22
+#: next_check: 2021-02-15
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422 vvv
@@ -4080,7 +4085,7 @@ Piesporter Str./Feldtmannstr.: Zebrastreifen geplant	?::projected 15215,17630 15
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
 #: priority: #D
-#: last_checked: 2020-11-17 (mapillary)
+#: last_checked: 2021-01-04 (mapillary)
 #: check_frequency: 90d
 Pistoriusstr./Heinersdorfer Str.: Zebrastreifen geplant	?::projected 12228,16862 12257,16876 12296,16880
 # 
