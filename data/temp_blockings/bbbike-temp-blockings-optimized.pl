@@ -2247,7 +2247,27 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1640991599
        },
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
+# REMOVED --- #: XXX regelmäßig prüfen --- #: priority: #A --- #: last_checked: 2018-11-16
+#: by: https://viz.berlin.de/2020/07/schau-11_12-07_2020/ ("für den Kraftfahrzeugverkehr gesperrt")
+#: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
+#: source_id: 2147346071 (inaktiv)
+#: source_id: 2147346815 (neu)
+#: also_indoor: traffic
+#: priority: #A
+#: last_checked: 2020-12-04
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2020-12-05
+	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
+',
+         'from' => 1611036000,
+         'id' => 3048,
+         'source_id' => '2147343461',
+         'text' => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, bis 1.7.2021',
+         'type' => 'gesperrt',
+         'until' => 1625151600
+       },
        undef,
        undef,
        undef,
@@ -2814,7 +2834,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '# REMOVED --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
-#: last_checked: 2021-01-02
+#: last_checked: 2021-01-19
 	q4::inwork; 14490,10610 14541,10735 14675,10693
 ',
          'from' => undef,
@@ -3058,17 +3078,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        {
-         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+         'data' => '#: source_id: 2147346816
+#: XXX: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
 #: last_checked: 2021-01-09
-#: check_frequency: 14d
+#: check_frequency: 45d
 	q4::inwork 12162,8053 12147,8117
 ',
          'from' => undef,
          'id' => 3297,
-         'text' => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, voraussichtlich bis Ende März 2021',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1617202800
        },
        undef,
        {

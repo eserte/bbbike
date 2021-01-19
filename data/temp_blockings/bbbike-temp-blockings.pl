@@ -28544,9 +28544,9 @@ EOF
 	q4::inwork; 10487,18270 10660,18345 10680,18380
 EOF
      },
-     { from  => $isodate2epoch->("2020-07-12 07:00:00"), # 1542150096, # 2018-11-14 00:01
-       until => $isodate2epoch->("2020-12-05 17:00:00"), # 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
-       text  => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, bis 5.12.2020',
+     { from  => $isodate2epoch->("2021-01-19 07:00:00"), # $isodate2epoch->("2020-07-12 07:00:00"), # 1542150096, # 2018-11-14 00:01
+       until => $isodate2epoch->("2021-07-01 17:00:00"), # $isodate2epoch->("2020-12-05 17:00:00"), # 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
+       text  => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, bis 1.7.2021',
        type  => 'gesperrt',
        source_id => '2147343461',
        data  => <<EOF,
@@ -28554,11 +28554,13 @@ EOF
 # REMOVED --- #: XXX regelmäßig prüfen --- #: priority: #A --- #: last_checked: 2018-11-16
 #: by: https://viz.berlin.de/2020/07/schau-11_12-07_2020/ ("für den Kraftfahrzeugverkehr gesperrt")
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
-#: source_id: 2147346071
+#: source_id: 2147346071 (inaktiv)
+#: source_id: 2147346815 (neu)
+#: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2020-12-04
 #: check_frequency: 30d
-#: next_check: 2020-12-05
+# REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
 EOF
      },
@@ -31011,7 +31013,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
-#: last_checked: 2021-01-02
+#: last_checked: 2021-01-19
 	q4::inwork; 14490,10610 14541,10735 14675,10693
 EOF
      },
@@ -31556,14 +31558,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       until => $isodate2epoch->("2021-03-31 17:00:00"), # undef, # XXX
+       text  => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, voraussichtlich bis Ende März 2021',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: source_id: 2147346816
+#: XXX: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
 #: last_checked: 2021-01-09
-#: check_frequency: 14d
+#: check_frequency: 45d
 	q4::inwork 12162,8053 12147,8117
 EOF
      },
