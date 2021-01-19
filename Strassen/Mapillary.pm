@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2020,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Strassen::Mapillary;
 
 use strict;
 use warnings;
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use Strassen::GeoJSON;
 our @ISA = qw(Strassen::GeoJSON);
@@ -162,12 +162,12 @@ sub fetch_sequences {
 				   my $pKey = $f->{properties}{coordinateProperties}{image_keys}[0];
 				   if ($pKey) {
 				       my $date = $f->{properties}{captured_at};
-				       my($dateFrom, $dateUntil);
+				       my($dateFrom, $dateTo);
 				       if ($date) {
 					   ($dateFrom = $date) =~ s{T.*}{};
-					   $dateUntil = $dateFrom;
+					   $dateTo = $dateFrom;
 				       }
-				       { url => ["https://www.mapillary.com/app/?focus=photo&pKey=$pKey" . ($dateFrom ? "&dateFrom=$dateFrom&dateUntil=$dateUntil" : "")] };
+				       { url => ["https://www.mapillary.com/app/?focus=photo&pKey=$pKey" . ($dateFrom ? "&dateFrom=$dateFrom&dateTo=$dateTo" : "")] };
 				   } else {
 				       undef;
 				   }
