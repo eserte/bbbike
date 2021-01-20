@@ -488,7 +488,7 @@ F¸rstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, sp‰ter auch die Metzer Str.
-#: last_checked: 2020-11-24
+#: last_checked: 2021-01-20 (mapillary)
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -595,7 +595,7 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 #: by: http://www.infravelo.de/projekt/windscheidstrasse/ (1. Quartal 2022 - 4. Quartal 2022)
 #: XXX: wird die Windscheidstr. asphaltiert?
 # REMOVED (f¸r Radfahrer offen) --- #: XXX ist w‰hrend der Bauarbeiten hier eine Einbahnstraﬂe? Offen in welche Richtung?
-#: osm_watch: way id="4515622" version="16"
+#: osm_watch: way id="4515622" version="17"
 #: last_checked: 2020-09-27
 #: check_frequency: 360d
 #: next_check: 2022-12-31
@@ -1009,7 +1009,7 @@ Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 92
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/lp_13_ba3.pdf
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/oeffentlichkeitsbeteiligung-fuer-dritten-bauabschnitt-der-friedrich-engels-strasse-ausschliesslich-online_a294112
 #: XXX Wird nach der Straﬂenbaumaﬂnahme die Straﬂe asphaltiert sein? Werden die Radspuren verl‰ngert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus? vvv
-#: last_checked: 2020-10-31 (mapillary) vvv
+#: last_checked: 2021-01-20 (mapillary) vvv
 #: check_frequency: 540d vvv
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
 Friedrich-Engels-Str.: Asphalt	Q2 8967,20539 8904,20596
@@ -5804,12 +5804,23 @@ Frickastr.: unbefestigte Straﬂe	Q2 8642,19808 8560,19942
 Neuer Steg: unbefestigter Weg	Q2 8277,19210 8209,19107
 Neuer Steg: unbefestigter Weg	Q2 8211,19082 8194,19055
 Straﬂe 79: m‰ﬂiger Asphalt und Schotter	Q2 7877,19507 7805,19359 7797,19345
-Mittelsteg: Schotterstraﬂe	Q2+ 8340,18984 8211,19082 8209,19107 8136,19159
+#: corrected_by: mapillary (Schotterstraﬂe, Q2+ -> ...)
+Mittelsteg: Asphalt	Q0 8340,18984 8247,19054
+#: by: https://www.berliner-woche.de/niederschoenhausen/c-bauen/irgendwann-sollen-alle-stege-ausgebaut-sein_a298643
+#: XXX wann wird der Rest asphaltiert? werden auch die umliegenden Straﬂen asphaltiert? vvv
+#: last_checked: 2020-11-12 (mapillary) vvv
+#: check_frequency: 270d vvv
+Mittelsteg: Schotterstraﬂe	Q2+ 8247,19054 8211,19082 8209,19107 8136,19159
 Mittelsteg: Schotterstraﬂe	Q2 8136,19159 8062,19212 7981,19269 7930,19282 7805,19359
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 Friedensteg: unbefestigter Weg	Q2 8029,19353 7981,19269 7959,19231
 Kreuzsteg: unbefestigter Weg	Q2 8099,19276 8062,19212 8025,19157
 Feldsteg: unbefestigter Weg	Q2 8136,19159 8106,19110
-Vereinssteg: unbefestigte Straﬂe	Q2 8406,19081 8340,18984 8321,18954
+#: corrected_by: mapillary (unbefestigte Straﬂe, Q2 -> ...)
+Vereinssteg: Asphalt	Q0  8406,19081 8340,18984
+Vereinssteg: unbefestigte Straﬂe	Q2 8340,18984 8321,18954
 # 
 #: next_check_id: STRASSEVORSCHOENHOLZ-2019
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.826050.php

@@ -28558,7 +28558,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2020-12-04
+#: last_checked: 2021-01-20 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -31794,8 +31794,8 @@ EOF
 EOF
      },
      { from  => 1609650000, # 2021-01-03 06:00
-       until => 1611590400, # 2021-01-25 17:00
-       text  => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn Richtung Süden gesperrt, vom 04.01.2021 06:00 Uhr bis 25.01.2021 17:00 Uhr ',
+       until => $isodate2epoch->("2021-01-22 15:00:00"), # 1611590400, # 2021-01-25 17:00
+       text  => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn Richtung Süden gesperrt, vom 04.01.2021 06:00 Uhr bis 22.01.2021 15:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346756',
        data  => <<EOF,
