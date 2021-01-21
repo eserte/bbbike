@@ -191,6 +191,12 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # 
 ### Mitte ###
 # 
+#: osm_watch: way id="822127127" version="1"
+#: osm_watch: way id="736448990" version="6"
+#: last_checked: 2021-01-21
+#: check_frequency: 120d
+Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
+# 
 #: next_check_id: CHAUSSEE-2020
 #: note: laut rbbtext Ende der Bauarbeiten 16.7.2021
 #: last_checked: 2020-11-07
@@ -884,8 +890,8 @@ Am M¸ggelsee: Fuﬂg‰nger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,264
 Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11231
 # 
 #: next_check_id: NKZ-2020
-#: XXX zurzeit Bauarbeiten, nur der Gehweg ist offen (alten Eintrag danach wieder aktivieren); auﬂerdem gibt's einen groﬂz¸gigen Restaurantbereich
-#: last_checked: 2020-12-23
+#: XXX zurzeit Bauarbeiten, nur der Gehweg ist offen (alten Eintrag danach wieder aktivieren); vor Corona-Zeiten gab's auﬂerdem einen groﬂz¸gigen Restaurantbereich
+#: last_checked: 2021-01-21
 (Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr	q2 11291,10438 11317,10485
 # REMOVED --- (Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr, Restaurantbereich	q4::inwork 11291,10438 11317,10485
 # REMOVED (Bauarbeiten) --- (Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr	q2 11317,10485 11344,10507
@@ -902,7 +908,7 @@ Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 #: by: https://camera.deckchair.com/park-inn-berlin-alexanderplatz (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/2271-u-5/?postID=666937#post666937 (Pflasterungsarbeiten)
 # REMOVED (gelˆscht) --- #: osm_watch: relation id="8743849" version="2"
-#: last_checked: 2021-01-10 (daf)
+#: last_checked: 2021-01-20 (webcam)
 #: check_frequency: 10d
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595

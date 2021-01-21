@@ -27920,7 +27920,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2021-01-14
+#: last_checked: 2021-01-20 (daf)
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28546,8 +28546,8 @@ EOF
      },
      { from  => $isodate2epoch->("2021-01-19 07:00:00"), # $isodate2epoch->("2020-07-12 07:00:00"), # 1542150096, # 2018-11-14 00:01
        until => $isodate2epoch->("2021-07-01 17:00:00"), # $isodate2epoch->("2020-12-05 17:00:00"), # 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
-       text  => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, bis 1.7.2021',
-       type  => 'gesperrt',
+       text  => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden nur für Fußgänger, offiziell sollen Radfahrer absteigen und schieben, bis 1.7.2021',
+       type  => 'handicap',
        source_id => '2147343461',
        data  => <<EOF,
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
@@ -28558,7 +28558,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-01-20 (mapillary)
+#: last_checked: 2021-01-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -31822,7 +31822,7 @@ EOF
 EOF
      },
      { from  => 1610265600, # 2021-01-10 09:00
-       until => 1611331200, # 2021-01-22 17:00
+       until => 1611257549, # 1611331200, # 2021-01-22 17:00
        text  => 'Schnellerstr.: Bauarbeiten zwischen Rudower Str. und Köllnische Str., Fahrbahn Richtung Köpenick gesperrt, vom 11.01.2021 09:00 Uhr bis 22.01.2021 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346773',

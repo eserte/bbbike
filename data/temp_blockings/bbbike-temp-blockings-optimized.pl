@@ -2156,7 +2156,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2021-01-14
+#: last_checked: 2021-01-20 (daf)
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2256,7 +2256,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-01-20 (mapillary)
+#: last_checked: 2021-01-21
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -2264,8 +2264,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1611036000,
          'id' => 3048,
          'source_id' => '2147343461',
-         'text' => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, bis 1.7.2021',
-         'type' => 'gesperrt',
+         'text' => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden nur für Fußgänger, offiziell sollen Radfahrer absteigen und schieben, bis 1.7.2021',
+         'type' => 'handicap',
          'until' => 1625151600
        },
        undef,
@@ -3207,16 +3207,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1634223600
        },
        undef,
-       {
-         'data' => '	q4::inwork; 18680,5413 18955,5320 19037,5316
-',
-         'from' => 1610265600,
-         'id' => 3317,
-         'source_id' => '2147346773',
-         'text' => 'Schnellerstr.: Bauarbeiten zwischen Rudower Str. und Köllnische Str., Fahrbahn Richtung Köpenick gesperrt, vom 11.01.2021 09:00 Uhr bis 22.01.2021 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1611331200
-       },
+       undef,
        {
          'data' => '	2::inwork 9640,29628 9996,29712
 ',

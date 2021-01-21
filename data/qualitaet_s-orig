@@ -169,7 +169,9 @@ Segitzdamm: Kopfsteinpflaster	Q2 10975,10334 10966,10304 10988,10268 10923,10113
 Graefestr.: m‰ﬂiges Kopfsteinpflaster	Q2+ 11274,9492 11311,9576 11346,9655
 Graefestr.: Kopfsteinpflaster, teils OK, teils uneben	Q1- 11346,9655 11411,9810
 Graefestr.: m‰ﬂiges Kopfsteinpflaster	Q2+ 11507,10004 11411,9810
-Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 11946,9913 12116,9825 12286,9739 12439,9660 12591,9584
+#: note: Verfugung der linken (nach Osten fahrend) Fahrbahnfl‰che
+Paul-Lincke-Ufer: Kopfsteinpflaster, teilweise verfugt	Q2 11512,10105 11735,10022
+Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11735,10022 11946,9913 12116,9825 12286,9739 12439,9660 12591,9584
 #: note: der Uferweg ist asphaltiert, aber ziemlich schadhaft (Q2)
 Paul-Lincke-Ufer: Kopfsteinpflaster	Q2- 12591,9584 12712,9523
 Maybachufer: Kopfsteinpflaster	Q2 11543,10015 11669,9987 11880,9874 12053,9793
@@ -2061,7 +2063,7 @@ Werrastr.: Asphalt mit einigen Sch‰den	Q1+ 13697,8279 13648,8321
 # 
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster? vvv
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021) vvv
-#: last_checked: 2020-12-15 vvv
+#: last_checked: 2021-01-21 vvv
 #: check_frequency: 90d vvv
 Rungestr.: Kopfsteinpflaster	Q2- 11197,11882 11291,11876
 Rungestr.: Kopfsteinpflaster	Q2 11291,11876 11378,11856 11506,11851
@@ -3447,8 +3449,10 @@ Hubertusweg: gepflastert	Q2 3333,27766 2939,27694 2770,27677 2568,27697 2345,276
 Schwarzkittelweg: Verbundsteinpflaster	Q1+ 3013,26458 3088,26485 3170,26502 3281,26524 3422,26540
 (Quickborner Str. - Wilhelmsruher Damm): m‰ﬂiger Asphalt	Q1- 7959,21573 7764,21271 7750,21250
 Norwegerstr. - Behmstr.: Verbundsteinpflaster	Q0- 10022,16237 10026,16165 10055,16104 10065,16110 10045,16157
-(Holzmarktstraﬂe, Wohngebiet): Beton	Q0- 11589,12296 11524,12314 11488,12225 11736,12097
-(Lichtenberger Str., Wohngebiet): Beton	Q0- 11736,12097 11845,12292
+#: note: raue Stellen, Lˆcher, einige Hebungen vvv
+(Holzmarktstraﬂe, Wohngebiet): Beton	Q1+ 11589,12296 11524,12314 11488,12225 11736,12097
+(Lichtenberger Str., Wohngebiet): Beton	Q1+ 11736,12097 11845,12292
+#: note ^^^
 Burchardstr.: Beton	Q0 8200,6668 8553,6665 8722,6656
 Podewilsstr.: Asphalt	Q0 8707,6537 8551,6552
 Zastrowstr.: Beton	Q0 9979,6349 9860,6348
@@ -15254,6 +15258,7 @@ Burgsdorfstr.: m‰ﬂiges Kopfsteinpflaster	Q2 7607,15282 7525,15186 7397,15036
 Schraderstr.: m‰ﬂiges Kopfsteinpflaster	Q2 15853,6339 15766,6398 15715,6394
 # 
 #: by: Jochen LIedtke:
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2021/pressemitteilung.1043242.php (Sanierung)
 Grafenwalder Weg: Asphalt	Q0 -3312,16425 -3319,16572
 # 
 #: by: Lars Kurth:
