@@ -432,6 +432,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11134,12793
 	F 11105,12764
 #: related ^^^
+#: note: gilt nicht für rechtsabbiegende Radfahrer aus der Alexanderstr. in die Karl-Marx-Allee
 	X 11226,12945
 	F 10733,12967
 	F 10776,13005
@@ -801,7 +802,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8607,15426
 	X 8024,15401
 	X 8007,15087
-	X 8919,16154
+	X 8913,16159
 	X -3251,14741
 	X -3295,14777
 	X -3255,14685
@@ -1696,7 +1697,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6377,17854
 	F 6572,16212
 	F 7393,16566
-	X 7231,16418
+	X 7232,16429
 	X 6965,16190
 	X 6661,15921
 #: XXX_prog: doppelte Bettelampel im Zuge der Antwerpener Str./Togostr.
@@ -1776,8 +1777,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4542,13244
 	X 5705,13359
 	F 5569,13381
-#: XXX_prog an der Westhafenstr. steht auch eine gleich geschaltete Ampel
+#: XXX_prog möglicherweise synchron geschaltet vvv
 	X 6288,14661
+	X 6281,14630
+#: XXX_prog ^^^
 	X 7138,15437
 	X 6996,15319
 #: by: https://www.deutsches-architekturforum.de/thread/9772-kleinere-projekte-wedding-gesundbrunnen/?postID=675214#post675214
@@ -1848,6 +1851,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 404,12414
 	F 1264,11840
 	F 1775,11135
+	F 1850,11091
 	X 3355,12258
 	X 10453,-2133
 	X 10747,-2129
@@ -2147,6 +2151,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: XXX_prog keine Haltelinie für Radfahrer in Richtung Südosten
 	F 13225,13620
 	X 8503,12895
+#: note: Anforderungsampel (getrennte Anforderungen für jede Fahrbahn sowie die Straßenbahntrasse)
 	F 11723,13139
 	F 5559,7031
 	F 6237,9772
@@ -3254,14 +3259,15 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/mit-13-jahren-verzoegerung_a249310 (spätestens Ende Juli 2020)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/ampelanlage-wird-spaeter-gebaut_a278629 (bis Ende des Jahres 2020 Inbetriebnahme)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/sehnsuchtsampel-wird-gebaut_a293518 (Bauampel existiert bereits)
+#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/baubeginn-fuer-ampelanlage_a298652
 #: note: laut Tsp vom 2020-01-03 im Sommer 2020
 #: source_id: 2147342270 (nicht mehr aktiv)
 #: source_id: 2147346463 (bis 23.12.2020)
 #: osm_watch: node id="31532791" version="9"
 #: osm_watch: node id="8151187982" version="1"
 #: osm_watch: node id="8151187983" version="1"
-#: last_checked: 2020-09-23
-#: next_check: 2020-12-23
+#: last_checked: 2021-01-22 (bw)
+#: check_frequency: 60d
 Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,10580
 # 
 #: next_check_id: BERLINERBAHNHOF-2020

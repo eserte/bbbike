@@ -340,7 +340,7 @@ Jägerallee/Hegelallee: Durchfahrt verboten	3 -13221,-718 -13231,-763 -13236,-797
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718
 Osloer Str.: Straßenbahntrasse	3nocross 9442,16610 9331,16624 9210,16638 8952,16666
 Osloer Str.: Straßenbahntrasse	3nocross 8249,16741 8161,16752 8144,16754 7852,16790 7763,16779
-Seestr.: Straßenbahntrasse	3nocross 7606,16746 7447,16613 7417,16587 7393,16566 7295,16477 7231,16418
+Seestr.: Straßenbahntrasse	3nocross 7606,16746 7447,16613 7417,16587 7393,16566 7292,16480 7232,16429
 Bismarckstr.: Mittelstreifen	3nocross 3689,11637 3843,11659 3897,11666
 Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5883,6519 6071,6559
 Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6545,15116 6537,15156 6562,15177
@@ -745,6 +745,7 @@ Melanchthonstr.	1 6788,3181 6926,3337
 Pößnecker Str.	1 5934,1310 5863,1453
 Aarberger Str.: Poller	3 * 3581,2105 *
 Rochowstr. - Stralauer Allee	3 14170,10675 14103,10489 14222,10430
+Stralauer Allee - Bossestr.	3 14103,10489 14222,10430 14270,10584
 Adlergestell: Mittelstreifen	3nocross 20565,2754 20451,2869 20339,2983 20289,3033 20207,3115 20064,3278
 Zossener Str.: Straßenbahntrasse	3nocross 22698,15788 22811,15753 22883,15740
 Stendaler Str.: Straßenbahntrasse	3nocross 23933,15209 23952,15086 23960,15021
@@ -841,7 +842,7 @@ Leipziger: Mittelstreifen	3 10000,11691 9991,11690 9992,11682
 Leipziger: Mittelstreifen	3 9992,11682 9991,11690 9905,11680
 #: XXX_prog ^^^
 Seestr.: Straßenbahntrasse	3nocross 7393,16566 7417,16587 7447,16613
-Groninger Str.: Sackgasse für Autos	3 7433,16375 7409,16542 7393,16566 *
+Groninger Str.: Sackgasse für Autos	3 7433,16375 7415,16502 7409,16542 7393,16566 *
 Florastr.: Poller	3 * 1938,28171 *
 Gartenstr. (Schwedt)	1 68940,73310 68884,73376 68854,73406
 Krumme Str.	1 4032,12167 3999,12050 3976,11869
@@ -1250,7 +1251,7 @@ Carmerstr.	1 5088,11322 4916,11083
 Schenkendorfer Weg (Teltow)	1 1186,-1973 748,-2298 545,-2493 377,-2672 166,-2946 161,-2953
 Ohmstr. (Schwanebeck-West)	1 18039,24940 18127,25162
 Werder, Adolf-Damaschke-Str.	1 -22042,-2060 -21915,-2045
-Badstr.: Mittelstreifen, für Fußgänger/Radfahrer Übergangsmöglichkeit südöstlich der Einmündung	3nocross 8919,16154 8986,16092 9053,16029
+Badstr.: Mittelstreifen, für Fußgänger/Radfahrer Übergangsmöglichkeit südöstlich der Einmündung	3nocross 8913,16159 8986,16092 9053,16029
 Lintruper Str.	1 10324,925 10380,757
 #: by: osm (für Radfahrer frei)
 Glaserweg	1 10187,872 10237,749
@@ -1389,4 +1390,6 @@ Wiener Str./Lausitzer Str.	3nocross 11949,10414 12169,10310 12243,10274
 # 
 #: by: mapillary
 Braunschweiger Str.	1 13919,7707 13854,7620
+# 
+Fürstenwalder Str.: Poller	2 12243,12604 12242,12594
 # 

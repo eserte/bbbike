@@ -658,7 +658,7 @@ Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17946,10344 17954,10367
 Mayschweg: Fuﬂg‰nger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fuﬂg‰nger	q2 25571,4553 25658,4619
 M¸ggelpark: Fuﬂg‰nger	q2 25695,4714 25658,4619 25656,4578 25772,4543
-(entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuﬂ- und Radweg	q1 3379,8969 3489,8839 3510,8814 3713,8578 3696,8572 3644,8456 3644,8425
+(entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuﬂ- und Radweg	q1 3379,8969 3489,8839 3510,8814 3713,8578 3696,8572 3644,8456 3644,8441 3644,8425
 Gˆrresstr.: enge Straﬂe	q1 5073,7660 5188,7536 5272,7458 5318,7424
 Stendaler Platz: Fuﬂg‰nger, Spielplatz	q2 6394,14085 6489,14071
 Washingtonplatz: querende Fuﬂg‰nger, Taxis	q2; 7937,13126 8011,13128 8106,13130
@@ -1953,7 +1953,7 @@ Eigerstr. [81-91]: Bodenschwellen	q2 13043,18126 12910,18003 12945,17958
 (Straﬂe 16 - Eigerstr.): einige Fuﬂg‰nger	q2 13034,17895 12995,17873 12945,17958
 Reichenhaller Str.: einige Fuﬂg‰nger	q2 3210,7786 3198,7787
 Kissinger Str. (Schmargendorf): einige Fuﬂg‰nger	q2 3219,7987 3206,7988
-(Otawistr. - Dauerkolonie Togo): einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 6003,16521 5965,16555 5802,16703
+(Otawistr. - Dauerkolonie Togo): einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 6003,16521 5965,16555 5801,16700
 (Usambarastr. - Dauerkolonie Togo): einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 5684,16815 5710,16792 5807,16709
 (S¸lzhayner Str. - Heidelberger Str.): einige Fuﬂg‰nger	q2 13392,9225 13421,9260
 (Rhˆnstr. - Harzburger Str.): enger Trampelpfad	q3 13598,21360 13709,21334
@@ -2066,6 +2066,7 @@ Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fuﬂg‰nger	q1 16894,10003 1
 (Hoher Wallgraben - Lehndorffstr.): einige Fuﬂg‰nger, an der Lehndorffstr. eine kurze Rampe, Bordstein an der Lehndorffstr.	q2 18101,8044 18186,8081 18276,8136
 Mercedes-Platz: Fuﬂg‰ngerzone	q4 13150,11101 13063,11147 12984,11194
 Mercedes-Platz: Fuﬂg‰ngerzone	q4 12990,11006 13063,11147
+(Abbestr. - Otto-Suhr-Allee): einige Fuﬂg‰nger	q1 4674,12076 4608,11935 4596,11912
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2276,8 +2277,8 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5334,
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12141,13609 12012,13599 12038,13685
 (Zufahrt Landsberger Allee): Fuﬂg‰nger	q2 13433,13346 13397,13426 13574,13505
 (Verl‰ngerte Wallenbergstr.): Fuﬂg‰nger, schmal	q3 4139,8485 3992,8487
-(Zufahrt zur Kolonie Hohenzollerndamm): Fuﬂg‰nger, Poller	q2 3775,8771 3868,8759
-Apeldorner Weg: Fuﬂg‰nger, Bordsteine	q2 3848,8689 3868,8759 3952,8980
+(Zufahrt zur Kolonie Hohenzollerndamm): Fuﬂg‰nger, Poller	q2 3751,8796 3858,8786
+Apeldorner Weg: Fuﬂg‰nger, Bordstein	q2 3822,8718 3858,8786 3952,8980
 M¸nstersche Str.: Fuﬂg‰nger	q2 3840,9683 3698,9624
 (Hoffmannstr. - Puschkinallee): Fuﬂg‰nger	q1 14077,10016 13999,9842
 (Hoffmannstr. - Uferweg an den Treptowers): Fuﬂg‰nger	q1 14077,10016 14116,10149 14126,10176
@@ -2754,7 +2755,7 @@ Jugenheimer Weg: schmaler Weg, Fuﬂg‰nger, Bordsteine	q3 -517,4463 -472,4476 -424
 Grumbacher Weg: schmaler Weg, Fuﬂg‰nger, Bordsteine	q3 -531,4599 -591,4558
 Straﬂe 206: enge Straﬂe	q1; 13406,17382 13321,17318 13247,17262
 Straﬂe 245 (Weiﬂensee): enge Straﬂe	q1 13590,17368 13271,17589 13243,17615
-(Querweg durch die Dauerkolonie Togo): einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 5894,16810 5807,16709 5802,16703 5700,16584
+(Querweg durch die Dauerkolonie Togo): einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 5894,16810 5807,16709 5801,16700 5700,16584
 Forster Str. (Hellersdorf): enge Straﬂe	q0 25237,14627 25365,14667 25397,14563 25418,14538
 Deisterpfad: Fuﬂg‰nger	q1 -17,5066 -18,5083 -22,5115
 Tessiner Weg: enge Straﬂe	q1 7077,17186 7184,17208
@@ -2997,6 +2998,7 @@ Sewanstr. - Balatonstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::ig
 Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Soorstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 1861,11284 1884,11126
+F¸rstenberger Str.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 10472,14632 10320,14608
 Planckstr.: Einbahnstraﬂenregelung, offen Richtung S¸den: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9429,12728 9402,12792 9386,12833
 Johannisstr.: Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174
 Mauerstr..: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 9108,11961 9076,12054
@@ -3068,3 +3070,4 @@ Adlergestell, linker Gehweg	q2::igndisp; 19345,4077 19472,3922
 Bundesallee/Spichernplatz, linker Gehweg bis Pariser Str.	q2::igndisp; 5435,9859 5423,9932
 Bundesallee/Spichernplatz, Radweg bis Nachodstr.	q0::igndisp; 5491,9935 5487,9864
 Buschkrugallee, linker Gehweg ab Fuﬂg‰ngerampel bis zur B¸rgerstr.	q4::igndisp; 13316,6320 13283,6354
+Otto-Suhr-Allee, linker Gehweg bis zur Fuﬂg‰ngerfurt	q3::igndisp; 4608,11935 4653,11896

@@ -888,6 +888,9 @@ Adlergestell -> Langer See: Straßenbahntrasse	3::igndisp 26286,-1901 26698,-2322
 Langer See -> Adlergestell: Straßenbahntrasse	3::igndisp 26846,-2176 26698,-2322 26871,-2500
 Bahnhofsvorplatz S-Bhf. Priesterweg	1 7227,6080 7252,6080 7252,6058 7227,6058
 Am Heidehof	1s -1410,2726 -1571,2669 -1612,2785
+Mittelstreifen mit parkenden Autos	3nocross::ignrte 4507,11936 4596,11912 4653,11896
+Otto-Suhr-Allee -> Abbestr.: Mittelstreifen mit parkenden Autos	3::igndisp 4507,11936 4596,11912 4608,11935
+Abbestr. -> Otto-Suhr-Allee: Mittelstreifen mit parkenden Autos	3::igndisp 4608,11935 4596,11912 4653,11896
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1217,8 +1220,8 @@ Mittelstreifen	3nocross::ignrte 5713,18777 5791,18778 5869,18779
 Lindauer Allee -> Holzweidepfad: Mittelstreifen	3::igndisp 5869,18779 5791,18778 5792,18727
 Holzweidepfad -> Lindauer Allee: Mittelstreifen	3::igndisp 5792,18727 5791,18778 5713,18777
 Mittelstreifen	3nocross::ignrte 5906,16403 5700,16584 5596,16662
-Togostr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5596,16662 5700,16584 5802,16703
-Querweg durch die Dauerkolonie Togo -> Togostr.: Mittelstreifen	3::igndisp 5802,16703 5700,16584 5906,16403
+Togostr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5596,16662 5700,16584 5801,16700
+Querweg durch die Dauerkolonie Togo -> Togostr.: Mittelstreifen	3::igndisp 5801,16700 5700,16584 5906,16403
 Mittelstreifen	3nocross::ignrte 21251,18508 21163,18347 21009,18055
 Märkische Allee -> Flämingstr.: Mittelstreifen	3::igndisp 21251,18508 21163,18347 21220,18323
 Flämingstr. -> Märkische Allee: Mittelstreifen	3::igndisp 21220,18323 21163,18347 21009,18055
@@ -1804,12 +1807,12 @@ Louise-Schroeder-Pl. -> Osloer Str.: Straßenbahntrasse	3::igndisp 7745,16889 776
 Straßenbahntrasse	3nocross::ignrte 7417,16587 7447,16613 7606,16746
 Seestr. -> Iranische Str.: Straßenbahntrasse	3::igndisp 7606,16746 7447,16613 7713,16557
 Iranische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7713,16557 7447,16613 7417,16587
-Straßenbahntrasse	3nocross::ignrte 7231,16418 7051,16264 6965,16190
-Seestr. -> Malplaquetstr.: Straßenbahntrasse	3::igndisp 7231,16418 7051,16264 7158,16167
+Straßenbahntrasse	3nocross::ignrte 7232,16429 7051,16264 6965,16190
+Seestr. -> Malplaquetstr.: Straßenbahntrasse	3::igndisp 7232,16429 7051,16264 7158,16167
 Malplaquetstr. -> Seestr.: Straßenbahntrasse	3::igndisp 7158,16167 7051,16264 6965,16190
-Straßenbahntrasse	3nocross::ignrte 7231,16418 7295,16477 7393,16566
-Seestr. -> Syrische Str.: Straßenbahntrasse	3::igndisp 7231,16418 7295,16477 7263,16508
-Syrische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7263,16508 7295,16477 7393,16566
+Straßenbahntrasse	3nocross::ignrte 7232,16429 7292,16480 7393,16566
+Seestr. -> Syrische Str.: Straßenbahntrasse	3::igndisp 7232,16429 7292,16480 7263,16508
+Syrische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7263,16508 7292,16480 7393,16566
 Mittelstreifen	3nocross::ignrte 6528,15000 6561,15041 6626,15104
 Föhrer Str. -> Augustenburger Pl.: Mittelstreifen	3::igndisp 6528,15000 6561,15041 6545,15116
 Augustenburger Pl. -> Föhrer Str.: Mittelstreifen	3::igndisp 6545,15116 6561,15041 6626,15104
@@ -3092,7 +3095,7 @@ Drängelgitter	BNP:3:-151 62686,40877
 Drängelgitter	BNP:3:-158 63740,42840
 Drängelgitter	BNP:3:-157 63721,42792
 Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
-Drängelgitter	BNP:3:24:trailer=6 3644,8456
+Drängelgitter	BNP:3:0:trailer=6 3644,8441
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
 Tor	BNP:3:-209 6431,3417
 Tor	BNP:10:-146 16145,4217
@@ -3153,6 +3156,7 @@ offenes Tor	BNP:3:-151 12592,9249
 Drängelgitter	BNP:3:-193:trailer=10 1035,14996
 Schranke, umständlich zu umfahren	BNP:5:-113:trailer=15 19608,-1953
 Schranke	BNP:2:-157:trailer=5 19617,6208
+Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s 10472,14632 10320,14608
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16841,9997 16830,10030 16835,10052
@@ -3806,3 +3810,4 @@ Adlergestell, linker Gehweg	1::igndisp 19472,3922 19345,4077
 Bundesallee/Spichernplatz, linker Gehweg bis Pariser Str.	1::igndisp 5423,9932 5435,9859
 Bundesallee/Spichernplatz, Radweg bis Nachodstr.	1::igndisp 5487,9864 5491,9935
 Buschkrugallee, linker Gehweg ab Fußgängerampel bis zur Bürgerstr.	1::igndisp 13283,6354 13316,6320
+Otto-Suhr-Allee, linker Gehweg bis zur Fußgängerfurt	1::igndisp 4653,11896 4608,11935

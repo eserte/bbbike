@@ -2252,6 +2252,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED --- #: XXX regelmäßig prüfen --- #: priority: #A --- #: last_checked: 2018-11-16
 #: by: https://viz.berlin.de/2020/07/schau-11_12-07_2020/ ("für den Kraftfahrzeugverkehr gesperrt")
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1043669.php ("Notweg für Radfahrer" (?))
 #: source_id: 2147346071 (inaktiv)
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
@@ -2344,7 +2345,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147344802 (inaktiv)
+#: source_id: 2147346832 (Gesamtbaumaßnahme bis Mitte August 2021)
+# REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
+# REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
+# REMOVED (hier nicht mehr?) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
+	q4::inwork 13508,15912 13312,16027 13189,16089 12943,16214
+',
+         'from' => 1611468000,
+         'id' => 3091,
+         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
+         'text' => 'Langhansstr.: zwischen Berliner Allee und Roelckestr. ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, 25.1.2021 bis 15.2.2021',
+         'type' => 'handicap',
+         'until' => 1613404800
+       },
        undef,
        undef,
        undef,
@@ -2373,7 +2388,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2020-12-11 (mapillary) (Sackgassenschild steht noch)
+#: last_checked: 2021-01-22
 #: check_frequency: 60d
 #: next_check: 2021-04-30
 	q3::inwork  8986,16092 9178,16317
@@ -2452,8 +2467,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: also_indoor: traffic (G)
-#: osm_watch: way id="749226300" version="3"
-#: last_checked: 2021-01-16 (mapillary)
+#: osm_watch: way id="749226300" version="4"
+#: last_checked: 2021-01-22 (osm)
 #: check_frequency: 180d
 #: next_check: 2021-10-31
 	2::inwork 3079,5411 3209,5214
@@ -2543,7 +2558,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2020-11-07
+#: last_checked: 2021-01-22
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-03-31
 	2::inwork 5894,12480 5944,12548
@@ -2736,7 +2751,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: VIRCHOW-2020
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2020-11-14 vvv
+#: last_checked: 2021-01-22 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -2765,8 +2780,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2021-01-17
-#: next_check: 2021-01-29
+#: last_checked: 2021-01-22
+# REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
 	q3::inwork 14247,11681 14272,11775
@@ -2977,7 +2992,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
-#: last_checked: 2021-01-09 (daf)
+#: last_checked: 2021-01-22
 #: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 ',
@@ -3185,17 +3200,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '# REMOVED (genau so) --- #: XXX genaue Lage der Baustelle? --- #: last_checked: 2021-01-09 --- #: next_check: 2021-01-04
-	q4::inwork; 9298,12765 9303,12718 9313,12662 9314,12652
-',
-         'from' => 1609650000,
-         'id' => 3314,
-         'source_id' => '2147346756',
-         'text' => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn Richtung Süden gesperrt, vom 04.01.2021 06:00 Uhr bis 22.01.2021 15:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1611324000
-       },
+       undef,
        {
          'data' => '	q4::inwork; 4894,6509 4875,6552 4786,6717
 ',
@@ -3232,14 +3237,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-01-10 (daf)
+#: last_checked: 2021-01-22
 #: check_frequency: 90d
-	q4::inwork; 6033,10403 6133,10679
+	q4::inwork 6033,10403 6133,10679
 ',
          'from' => undef,
          'id' => 3320,
          'source_id' => 'https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680',
-         'text' => 'Passauer Str.: Einbahnstraßenregelung, gesperrt Richtung Tauentzienstr., Ende der Bauarbeiten unbekannt',
+         'text' => 'Passauer Str.: Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -3270,6 +3275,30 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Rudower Str.: zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 12.05.2021 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1620831600
+       },
+       undef,
+       {
+         'data' => '	q2::inwork 8913,16159 9099,16398
+',
+         'from' => 1611329064,
+         'id' => 3324,
+         'source_id' => '2147346268',
+         'text' => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., bis 27.08.2021',
+         'type' => 'handicap',
+         'until' => 1630076400
+       },
+       {
+         'data' => '#: next_check_id: ABBESTR-2021
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2021-01-22
+#: check_frequency: 45d
+	q3::inwork 4674,12076 4755,12236
+',
+         'from' => undef,
+         'id' => 3325,
+         'text' => 'Abbestr.: Bauarbeiten, Fahrbahn zwischen Guerickestr. und Fraunhoferstr. gesperrt, Ausweichen auf Gehweg, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

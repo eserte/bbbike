@@ -480,7 +480,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.683334.php
 #: by: http://www.berliner-woche.de/gesundbrunnen/bauen/kopfsteinpflaster-kommt-weg-d144903.html
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2020-10-29 (mapillary)
+#: last_checked: 2021-01-22
 #: check_frequency: 90d
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
@@ -490,7 +490,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
-#: last_checked: 2021-01-20 (mapillary)
+#: last_checked: 2021-01-22
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -935,7 +935,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-01-17
+#: last_checked: 2021-01-22
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1037,7 +1037,7 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218
 #: by: https://api.fixmyberlin.de/api/projects/334 (war früher fälschlicherweise zur Bismarckstr. in Steglitz zugeordnet)
 #: by: http://www.infravelo.de/projekt/bismarckstrasse/ (Asphaltierung, in Planung, 4. Quartal 2024 - 4. Quartal 2025)
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
-#: osm_watch: way id="4810830" version="29"
+#: osm_watch: way id="4810830" version="30"
 #: last_checked: 2020-07-25
 #: check_frequency: 720d
 #: next_check: 2025-12-31
@@ -1455,8 +1455,10 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: XXX evtl. wird hier asphaltiert und eine Fahrradstraße ausgewiesen
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4680 (Planung ab 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5720 (Prüfung einer Glättung des Kopfsteinpflasters)
+#: by: http://www.infravelo.de/projekt/hufelandstrasse-2/ ("erschütterungsarmer Belag", Bauzeitraum 1. Quartal 2022 - 1. Quartal 2023)
 #: last_checked: 2020-12-18
 #: check_frequency: 180d
+#: next_check: 2023-03-31
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
 Limonenstr.: Kopfsteinpflaster	Q2 3716,4764 3597,4941 3418,5088 3357,5178 3321,5212
 Willdenowstr.: Kopfsteinpflaster	Q2 3826,4800 3684,4998 3426,5292
@@ -1496,7 +1498,7 @@ Miraustr.: guter Asphalt	Q0 3820,19688 4006,19443
 #: confirmed_by: srt
 Miraustr.: Asphalt	Q0 4006,19443 4170,19079 4190,19048
 #: by: ^^^
-Schaperstr.: Asphalt	Q0 5700,10226 5597,10299 5450,10338
+Schaperstr.: Asphalt, einige Schäden	Q0- 5700,10226 5597,10299 5450,10338
 Bleibtreustr.: Kopfsteinpflaster	Q2 4729,11206 4722,11030 4714,10950 4701,10837 4685,10689
 Wilhelmsaue: Kopfsteinpflaster	Q2 5164,8740 5206,8731 5228,8729 5346,8720 5498,8709
 Werderstr.: unebenes Kleinsteinpflaster	Q2- 8968,5554 8981,5692
@@ -3084,7 +3086,7 @@ Sonderburger Str.: Asphalt	Q0 9617,16590 9603,16468 9594,16384 9582,16296
 Wriezener Str.: Kopfsteinpflaster	Q2 9210,16638 9245,16758 9299,16889 9361,17039
 Louise-Schroeder-Platz: Kopfsteinpflaster	Q2 7763,16779 7745,16889
 Louise-Schroeder-Platz: Kopfsteinpflaster	Q2 7583,16872 7594,16805
-Indische Str.: Asphalt	Q0 7231,16418 7056,16587
+Indische Str.: Asphalt	Q0 7232,16429 7056,16587
 Frundsbergstr.: Kopfsteinpflaster	Q2 15280,23097 15176,23168 15021,23280 14865,23388 14761,23453
 Nisbléstr.: überwiegend guter Asphalt	Q0 11870,21574 11838,21580 11764,21593 11653,21613 11425,21650 11408,21653 11304,21671 11223,21684 11200,21689 11145,21698 11091,21703 11060,21694
 La-Rochelle-Str.: asphaltiert	Q0 11181,22265 11347,22122 11364,22081 11304,21671
@@ -3896,7 +3898,7 @@ Goethepark: Asphalt	Q1 3467,11373 3594,11372
 #: corrected_by: http://berlinerbaustellen.blogspot.de/2013/09/neubau-bauhaus-fachzentrum-halensee.html (Kopfsteinpflaster -> Asphalt)
 Am Güterbahnhof Halensee: Asphalt	Q0 2559,9879 2585,9875 2767,9670 3040,9420
 (entlang der Stadtautobahn): Gehwegplatten	Q1+ 3379,8969 3489,8839 3510,8814
-(entlang der Autobahn, zum hohen Bogen): teilweise unebener Asphalt	Q1+ 3510,8814 3713,8578 3696,8572 3644,8456 3644,8425
+(entlang der Autobahn, zum hohen Bogen): teilweise unebener Asphalt	Q1+ 3510,8814 3713,8578 3696,8572 3644,8456 3644,8441 3644,8425
 (am Stadion Wilmersdorf): teilweise unebener Asphalt	Q1 3597,8457 3550,8453 3517,8464 3455,8454 3358,8511 3295,8524
 Werdauer Weg: Beton	Q0- 7073,8081 6947,8025 6774,7755
 Werdauer Weg: Asphalt	Q0 6774,7755 6691,7633
@@ -5854,7 +5856,7 @@ Frauenfelder Weg: Kleinsteinpflaster	Q2+ 7339,17006 7441,17009 7647,17037
 (Weg am Kombibad Wedding): Asphalt	Q0 7417,16587 7298,16725 7267,16784
 Armenische Str.: Asphalt	Q0 7216,16552 7285,16638 7177,16715 7150,16760 7144,16781 7147,16800
 Syrische Str.: Asphalt	Q0 7106,16646 7216,16552 7263,16508
-Syrische Str.: Gehwegplatten	Q1 7263,16508 7295,16477
+Syrische Str.: Gehwegplatten	Q1 7263,16508 7292,16480
 Corker Str.: Asphalt	Q0 6806,17014 6749,17057 6636,17147 6556,17204 6485,17247
 Windsorer Str.: Asphalt	Q0 6476,17108 6556,17204
 Greenwicher Str.: Beton	Q0 5662,17158 5556,17254 5484,17312
@@ -10881,7 +10883,7 @@ Darguner Str.: Beton	Q0 17566,18680 17635,18591
 (Verlängerung des Kapellenwegs): unbefestigte Straße	Q2 10667,23684 10685,23707 10724,23744 10885,23830
 Ideallee: unbefestigte Straße	Q2 11069,23647 10971,23838 10813,24126
 Bambusweg: unbefestigte Straße	Q2 10667,23684 10687,23684 10708,23696 10747,23718 10785,23740 10842,23773 10887,23796 10927,23816 10971,23838
-Reichenberger Str.: Asphalt mit einigen Schäden	Q0- 11100,10530 11121,10521 11145,10510 11291,10438
+Reichenberger Str.: Asphalt mit einigen Schäden	Q1+ 11100,10530 11121,10521 11145,10510 11291,10438
 Reichenberger Str.: Asphalt	Q0 11291,10438 11393,10390
 (Zufahrt zum Stadtbad Tiergarten): Verbundsteinpflaster	Q1 7332,13367 7306,13418
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): wassergebundene Decke	Q1 21992,13045 22141,13036 22171,12965
@@ -11723,7 +11725,7 @@ Helene-Jacobs-Str.: Asphalt	Q0 3230,8230 3224,8106 3219,7987 3210,7786 3309,7782
 #: next_check_id: MAXIMILIANSQUARTIER-2020
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1004182.php (zur Benennung des Platzes)
 #: XXX bleibt es hier beim Asphalt? oder wird die gesamte Platzfläche mit den Steinplatten versehen?
-#: last_checked: 2020-07-17
+#: last_checked: 2021-01-22
 #: check_frequency: 180d
 Werner-Richard-Heymann-Platz: provisorischer Asphalt & Steinplatten	Q0- 3320,7982 3219,7987
 # 
@@ -11733,7 +11735,7 @@ Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0- 3219,7987 3206,7988
 (Orankesee - Hansastr.): Parkweg, Schotter	Q2+ 15479,16060 15374,16142 15276,16201
 (Orankesee - Hansastr.): Beton	Q0- 15276,16201 15251,16217 15236,16241
 (Otawistr. - Dauerkolonie Togo): Kopfsteinpflaster	Q2- 6003,16521 5965,16555
-(Otawistr. - Dauerkolonie Togo): Asphalt	Q0 5965,16555 5802,16703
+(Otawistr. - Dauerkolonie Togo): Asphalt, etwas wellig	Q1+ 5965,16555 5801,16700
 (Usambarastr. - Dauerkolonie Togo): Kopfsteinpflaster	Q2- 5684,16815 5710,16792
 (Usambarastr. - Dauerkolonie Togo): mäßiger Asphalt	Q1- 5710,16792 5807,16709
 (Berliner Str. - Badensche Str.): Kleinsteinpflaster	Q2+ 5195,8880 5278,8866
@@ -11942,6 +11944,7 @@ Parallelweg am Eichgestell - Wasserwerk Wuhlheide: Parkweg, einige Pfützen mögli
 #: note: hier ein "wilder" Weg, aber der Boden ist gut plattgetrampelt
 Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6959 19080,6986
 (Hoher Wallgraben - Lehndorffstr.): unbefestigter Weg	Q2+ 18101,8044 18186,8081 18276,8136
+(Abbestr. - Otto-Suhr-Allee): glatte Pflasterung	Q0- 4674,12076 4608,11935 4596,11912
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12904,7 +12907,7 @@ Drei-Linien-Weg: Verbundsteinpflaster	Q0- 16165,23168 16102,23046
 Drei-Linien-Weg: Asphalt	Q0 16102,23046 15983,22814
 Gudvanger Str.: guter Asphalt	Q0 11567,15842 11614,15914 11641,15955 11673,16003 11694,16034 11750,16116 11889,16328
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
-Oudenarder Str.: Kopfsteinpflaster, teilweise verfugt, mit Bodenwellen	Q2 7231,16418 7282,16369 7433,16375 7746,16375
+Oudenarder Str.: Kopfsteinpflaster, teilweise verfugt, mit Bodenwellen	Q2 7232,16429 7282,16369 7433,16375 7746,16375
 Kaiserswerther Str.: grobes Kopfsteinpflaster	Q3 2762,4713 2673,4651 2545,4565 2461,4556
 #: corrected_by: mapillary (gutes Verbundsteinpflaster -> ...)
 Schönstedtstr. (Gesundbrunnen): Kopfsteinpflaster	Q2 8437,15894 8338,15987 8270,16047
@@ -14641,8 +14644,10 @@ Gritznerstr.: asphaltiert	Q0 4414,6134 4380,6049 4312,5889
 #: by: Detlef Herzog: vvv
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt) vvv
 #: corrected_by: daf (Asphalt -> ..., neu gemacht)
+#: next_check_id: ABBESTR-2021
 #: XXX Qualität nach den Bauarbeiten genauer überprüfen, außerdem prüfen, ob es Durchfahrtsbeschränkungen o.ä. geben wird
-#: last_checked: 2021-01-14 (daf)
+#: last_checked: 2021-01-22
+#: check_frequency: 45d
 Abbestr.: glatte Pflasterung	Q0- 4674,12076 4755,12236
 Abbestr.: Asphalt	Q0 4755,12236 4807,12348
 #: corrected_by ^^^
@@ -17282,7 +17287,7 @@ In den Gärten: Verbundsteinpflaster	Q1 11744,1577 11724,1629
 #: by: ^^^
 # 
 #: by: Carolin Prager
-Stettiner Str.: Asphalt	Q0 8919,16154 9107,16389 9331,16624
+Stettiner Str.: Asphalt	Q0 8913,16159 9099,16398 9331,16624
 # 
 #: by: Silke Schwabe: vvv
 #: corrected_by: srt (Asphalt -> Beton) vvv
@@ -20651,7 +20656,7 @@ Mareyzeile: guter Beton	Q0 -6013,12009 -6013,12041 -5880,12209 -5872,12235
 Zieselweg: mäßiger Beton	Q1- 2514,22595 2513,22737 2500,22867 2418,22878
 # 
 #: by: Joachim Faust: vvv
-(Querweg durch die Dauerkolonie Togo): guter Asphalt	Q0 5894,16810 5807,16709 5802,16703 5700,16584
+(Querweg durch die Dauerkolonie Togo): guter Asphalt	Q0 5894,16810 5807,16709 5801,16700 5700,16584
 #: note: "q1" ohne weitere Angaben ignoriert
 Liverpooler Str.: Asphalt	Q0 5931,16777 5995,16836 6149,16958
 #: confirmed_by: srt
@@ -26974,7 +26979,7 @@ Weydemeyerstr.: Beton	Q1- 11987,12946 11957,12876 11925,12807 11900,12756
 #: corrected_by: srt Q2 -> Q1-
 (Weydemeyerstr.): Beton	Q1- 11933,12701 11971,12785 11925,12807
 #: confirmed_by: srt
-Weydemeyerstr.: mäßiger Beton, Fugen	Q2 11716,12803 11809,12760 11933,12701 11969,12681 12039,12675 12064,12673
+Weydemeyerstr.: mäßiger Beton, Fugen	Q2+ 11716,12803 11809,12760 11933,12701 11969,12681 12039,12675 12064,12673
 (Karl-Marx-Allee): Gehwegplatten	Q0 11585,12865 11601,12858 11622,12850 11716,12803
 (Karl-Marx-Allee - Berolinastr.): Beton	Q1+ 11419,12944 11367,12940
 (Karl-Marx-Allee - Berolinastr.): Gehwegplatten	Q0 11367,12940 11289,12908
@@ -27163,8 +27168,8 @@ Ermslebener Weg: Asphalt	Q0 4139,8485 4135,8320
 Kahlstr.: Kopfsteinpflaster in südlicher Richtung	Q3; 4220,8482 4220,8237
 Kahlstr.: Asphalt in nördlicher Richtung	Q2; 4220,8237 4220,8482
 (Wallenbergstr. - Rudolstätter Str.): wassergebundene Decke	Q1 4139,8485 3992,8487
-(Zufahrt zur Kolonie Hohenzollerndamm): Kleinpflaster	Q1 3775,8771 3868,8759
-Apeldorner Weg: wassergebundene Decke	Q1 3848,8689 3868,8759 3952,8980
+(Zufahrt zur Kolonie Hohenzollerndamm): Kleinpflaster	Q1 3751,8796 3858,8786
+Apeldorner Weg: wassergebundene Decke	Q1 3822,8718 3858,8786 3952,8980
 Bechstedter Weg: Asphalt	Q0 3467,9045 3661,8815
 Zum Bechstedter Weg: Asphalt	Q1 3661,8815 3701,8849
 #: corrected_by: srt (Kleinpflaster -> ...)
@@ -27743,12 +27748,16 @@ Dresselsteig: Asphalt	Q0 2219,11324 2228,11317 2300,11292 2308,11288
 Amsterdamer Str.: Kopfsteinpflaster mit Bodenwellen	Q2 6914,15908 7077,16078 7158,16167
 Turiner Str.: Kopfsteinpflaster mit Bodenwellen	Q2 6965,16190 7077,16078 7177,15984 7354,15817
 Turiner Str.: Asphalt	Q0 7354,15817 7436,15746
+#: corrected_by: srt (Kopfsteinpflaster mit Bodenwellen, Q2 -> ...)
+Groninger Str.: Asphalt	Q0 7393,16566 7409,16542 7415,16502
 #: confirmed_by: srt
-Groninger Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7393,16566 7409,16542 7433,16375 7458,16207 7474,16086
+Groninger Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7415,16502 7433,16375 7458,16207 7474,16086
 Hochstädter Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7543,16016 7727,16223
 Ruheplatzstr.: Asphalt	Q0 7436,15746 7518,15605 7540,15566 7627,15412
 (Müllerstr. - Gerichtstr.): Gehwegplatten	Q0 7607,15282 7723,15417
+#: confirmed_by: srt
 Ostender Str.: Kopfsteinpflaster	Q2 6474,15278 6640,15421
+#: confirmed_by: srt
 Ostender Str.: Asphalt	Q0 6640,15421 6794,15553
 Ostender Str.: Kopfsteinpflaster	Q2 6794,15553 6862,15615 6919,15666 7024,15810
 (Zufahrt Str. d. Pariser Kommune): Asphalt	Q0 12577,11804 12617,11888
@@ -29423,13 +29432,8 @@ Aufpflasterung vor der Kreuzung Veitstr.	Q2 1606,19775
 #: XXX_prog nur die Einfahrtsituation darstellen!
 Aufpflasterung vor der Einfahrt in die Schillerstr., mit schlechtem Kopfsteinpflaster	Q3 10309,20562
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6690,15671
-#: next_check_id: KAMERUNER-2020
-#: by: http://www.infravelo.de/projekt/kameruner-strasse/ (bis 4. Quartal 2020)
-#: source_id: 2147345842 (bis 28.10.2020)
-#: XXX wird gerade neu gemacht, evtl. später asphaltiert
-#: last_checked: 2020-11-07
-# REMOVED --- #: next_check: 2020-10-28
-Kreuzungsbereich mit Kopfsteinpflaster	Q2 6383,15972
+# REMOVED --- #: next_check_id: KAMERUNER-2020 --- #: by: http://www.infravelo.de/projekt/kameruner-strasse/ (bis 4. Quartal 2020) --- #: source_id: 2147345842 (bis 28.10.2020) --- #: XXX wird gerade neu gemacht, evtl. später asphaltiert --- #: last_checked: 2020-11-07 --- #: next_check: 2020-10-28
+Kreuzungsbereich asphaltiert	Q0 6383,15972
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25264,5253
 Einmündungsbereich asphaltiert	Q2 25121,5286
 Kreuzungsbereich asphaltiert	Q0 13467,11778

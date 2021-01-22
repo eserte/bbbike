@@ -615,30 +615,30 @@ Potsdamer Pl. -> Alte Potsdamer Str.: Mittelstreifen	3::igndisp 8542,11502 8479,
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13221,-718 -13231,-763 -13236,-797
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718
 Straßenbahntrasse	3nocross::ignrte 9442,16610 9331,16624 9210,16638 8952,16666
-Osloer Str. -> Stettiner Str.: Straßenbahntrasse	3::igndisp 9442,16610 9331,16624 9107,16389
+Osloer Str. -> Stettiner Str.: Straßenbahntrasse	3::igndisp 9442,16610 9331,16624 9099,16398
 Osloer Str. -> Freienwalder Str.: Straßenbahntrasse	3::igndisp 9210,16638 9331,16624 9435,16832
-Stettiner Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9107,16389 9331,16624 9210,16638
-Stettiner Str. -> Freienwalder Str.: Straßenbahntrasse	3::igndisp 9107,16389 9331,16624 9435,16832
+Stettiner Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9099,16398 9331,16624 9210,16638
+Stettiner Str. -> Freienwalder Str.: Straßenbahntrasse	3::igndisp 9099,16398 9331,16624 9435,16832
 Freienwalder Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9435,16832 9331,16624 9442,16610
-Freienwalder Str. -> Stettiner Str.: Straßenbahntrasse	3::igndisp 9435,16832 9331,16624 9107,16389
+Freienwalder Str. -> Stettiner Str.: Straßenbahntrasse	3::igndisp 9435,16832 9331,16624 9099,16398
 Osloer Str. -> Wriezener Str.: Straßenbahntrasse	3::igndisp 8952,16666 9210,16638 9245,16758
 Wriezener Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 9245,16758 9210,16638 9331,16624
 Straßenbahntrasse	3nocross::ignrte 8249,16741 8161,16752 8144,16754 7852,16790 7763,16779
 Osloer Str. -> Heinz-Galinski-Str.: Straßenbahntrasse	3::igndisp 8249,16741 8161,16752 8082,16483
 Heinz-Galinski-Str. -> Osloer Str.: Straßenbahntrasse	3::igndisp 8082,16483 8161,16752 8144,16754
-Straßenbahntrasse	3nocross::ignrte 7606,16746 7447,16613 7417,16587 7393,16566 7295,16477 7231,16418
+Straßenbahntrasse	3nocross::ignrte 7606,16746 7447,16613 7417,16587 7393,16566 7292,16480 7232,16429
 Seestr. -> Iranische Str.: Straßenbahntrasse	3::igndisp 7606,16746 7447,16613 7713,16557
 Iranische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7713,16557 7447,16613 7417,16587
 Seestr. -> Verbindungsweg am Kombibad Wedding: Straßenbahntrasse	3::igndisp 7393,16566 7417,16587 7298,16725
 Verbindungsweg am Kombibad Wedding -> Seestr.: Straßenbahntrasse	3::igndisp 7298,16725 7417,16587 7447,16613
 Seestr. -> Groninger Str.: Straßenbahntrasse	3::igndisp 7417,16587 7393,16566 7409,16542
-Seestr. -> Armenische Str.: Straßenbahntrasse	3::igndisp 7295,16477 7393,16566 7285,16638
+Seestr. -> Armenische Str.: Straßenbahntrasse	3::igndisp 7292,16480 7393,16566 7285,16638
 Armenische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7285,16638 7393,16566 7417,16587
 Armenische Str. -> Groninger Str.: Straßenbahntrasse	3::igndisp 7285,16638 7393,16566 7409,16542
-Groninger Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7409,16542 7393,16566 7295,16477
+Groninger Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7409,16542 7393,16566 7292,16480
 Groninger Str. -> Armenische Str.: Straßenbahntrasse	3::igndisp 7409,16542 7393,16566 7285,16638
-Seestr. -> Syrische Str.: Straßenbahntrasse	3::igndisp 7231,16418 7295,16477 7263,16508
-Syrische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7263,16508 7295,16477 7393,16566
+Seestr. -> Syrische Str.: Straßenbahntrasse	3::igndisp 7232,16429 7292,16480 7263,16508
+Syrische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7263,16508 7292,16480 7393,16566
 Mittelstreifen	3nocross::ignrte 3689,11637 3843,11659 3897,11666
 Bismarckstr. -> Richard-Wagner-Str.: Mittelstreifen	3::igndisp 3689,11637 3843,11659 3837,11760
 Bismarckstr. -> Sesenheimer Str.: Mittelstreifen	3::igndisp 3897,11666 3843,11659 3864,11484
@@ -1330,6 +1330,7 @@ Pößnecker Str.	1 5934,1310 5863,1453
 Aarberger Str.: Poller	3 3577,2000 3581,2105 3581,2125
 Aarberger Str.: Poller	3 3581,2125 3581,2105 3577,2000
 Rochowstr. - Stralauer Allee	3 14170,10675 14103,10489 14222,10430
+Stralauer Allee - Bossestr.	3 14103,10489 14222,10430 14270,10584
 Mittelstreifen	3nocross::ignrte 20565,2754 20451,2869 20339,2983 20289,3033 20207,3115 20064,3278
 Adlergestell -> Otto-Franke-Str.: Mittelstreifen	3::igndisp 20207,3115 20289,3033 20388,3100
 Otto-Franke-Str. -> Adlergestell: Mittelstreifen	3::igndisp 20388,3100 20289,3033 20339,2983
@@ -1475,9 +1476,9 @@ Leipziger: Mittelstreifen	3 9992,11682 9991,11690 9905,11680
 Straßenbahntrasse	3nocross::ignrte 7393,16566 7417,16587 7447,16613
 Seestr. -> Verbindungsweg am Kombibad Wedding: Straßenbahntrasse	3::igndisp 7393,16566 7417,16587 7298,16725
 Verbindungsweg am Kombibad Wedding -> Seestr.: Straßenbahntrasse	3::igndisp 7298,16725 7417,16587 7447,16613
-Groninger Str.: Sackgasse für Autos	3 7433,16375 7409,16542 7393,16566 7285,16638
-Groninger Str.: Sackgasse für Autos	3 7433,16375 7409,16542 7393,16566 7295,16477
-Groninger Str.: Sackgasse für Autos	3 7433,16375 7409,16542 7393,16566 7417,16587
+Groninger Str.: Sackgasse für Autos	3 7433,16375 7415,16502 7409,16542 7393,16566 7285,16638
+Groninger Str.: Sackgasse für Autos	3 7433,16375 7415,16502 7409,16542 7393,16566 7292,16480
+Groninger Str.: Sackgasse für Autos	3 7433,16375 7415,16502 7409,16542 7393,16566 7417,16587
 Florastr.: Poller	3 1929,28119 1938,28171 1961,28239
 Florastr.: Poller	3 1961,28239 1938,28171 1929,28119
 Gartenstr. (Schwedt)	1 68940,73310 68884,73376 68854,73406
@@ -1981,8 +1982,8 @@ Carmerstr.	1 5088,11322 4916,11083
 Schenkendorfer Weg (Teltow)	1 1186,-1973 748,-2298 545,-2493 377,-2672 166,-2946 161,-2953
 Ohmstr. (Schwanebeck-West)	1 18039,24940 18127,25162
 Werder, Adolf-Damaschke-Str.	1 -22042,-2060 -21915,-2045
-Mittelstreifen, für Fußgänger/Radfahrer Übergangsmöglichkeit südöstlich der Einmündung	3nocross::ignrte 8919,16154 8986,16092 9053,16029
-Badstr. -> Grüntaler Str.: Mittelstreifen, für Fußgänger/Radfahrer Übergangsmöglichkeit südöstlich der Einmündung	3::igndisp 8919,16154 8986,16092 9178,16317
+Mittelstreifen, für Fußgänger/Radfahrer Übergangsmöglichkeit südöstlich der Einmündung	3nocross::ignrte 8913,16159 8986,16092 9053,16029
+Badstr. -> Grüntaler Str.: Mittelstreifen, für Fußgänger/Radfahrer Übergangsmöglichkeit südöstlich der Einmündung	3::igndisp 8913,16159 8986,16092 9178,16317
 Grüntaler Str. -> Badstr.: Mittelstreifen, für Fußgänger/Radfahrer Übergangsmöglichkeit südöstlich der Einmündung	3::igndisp 9178,16317 8986,16092 9053,16029
 Lintruper Str.	1 10324,925 10380,757
 Glaserweg	1 10187,872 10237,749
@@ -2104,3 +2105,4 @@ Lausitzer Str. -> Wiener Str.: Wiener Str./Lausitzer Str.	3::igndisp 12048,10097
 Wiener Str. -> Lausitzer Str.: Wiener Str./Lausitzer Str.	3::igndisp 11949,10414 12169,10310 12220,10398
 Wiener Str. -> Lausitzer Str.: Wiener Str./Lausitzer Str.	3::igndisp 12243,10274 12169,10310 12048,10097
 Braunschweiger Str.	1 13919,7707 13854,7620
+Fürstenwalder Str.: Poller	2 12243,12604 12242,12594

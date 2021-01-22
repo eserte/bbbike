@@ -1106,7 +1106,7 @@ Miraustr.: mäßiger Asphalt	Q1 3323,20547 3344,20453 3380,20270
 Miraustr.: guter Asphalt	Q0 3380,20270 3572,20020 3632,19934 3820,19688
 Miraustr.: guter Asphalt	Q0 3820,19688 4006,19443
 Miraustr.: Asphalt	Q0 4006,19443 4170,19079 4190,19048
-Schaperstr.: Asphalt	Q0 5700,10226 5597,10299 5450,10338
+Schaperstr.: Asphalt, einige Schäden	Q0 5700,10226 5597,10299 5450,10338
 Bleibtreustr.: Kopfsteinpflaster	Q2 4729,11206 4722,11030 4714,10950 4701,10837 4685,10689
 Wilhelmsaue: Kopfsteinpflaster	Q2 5164,8740 5206,8731 5228,8729 5346,8720 5498,8709
 Werderstr.: unebenes Kleinsteinpflaster	Q2 8968,5554 8981,5692
@@ -2384,7 +2384,7 @@ Sonderburger Str.: Asphalt	Q0 9617,16590 9603,16468 9594,16384 9582,16296
 Wriezener Str.: Kopfsteinpflaster	Q2 9210,16638 9245,16758 9299,16889 9361,17039
 Louise-Schroeder-Platz: Kopfsteinpflaster	Q2 7763,16779 7745,16889
 Louise-Schroeder-Platz: Kopfsteinpflaster	Q2 7583,16872 7594,16805
-Indische Str.: Asphalt	Q0 7231,16418 7056,16587
+Indische Str.: Asphalt	Q0 7232,16429 7056,16587
 Frundsbergstr.: Kopfsteinpflaster	Q2 15280,23097 15176,23168 15021,23280 14865,23388 14761,23453
 Nisbléstr.: überwiegend guter Asphalt	Q0 11870,21574 11838,21580 11764,21593 11653,21613 11425,21650 11408,21653 11304,21671 11223,21684 11200,21689 11145,21698 11091,21703 11060,21694
 La-Rochelle-Str.: asphaltiert	Q0 11181,22265 11347,22122 11364,22081 11304,21671
@@ -3067,7 +3067,7 @@ Rückertstr. (Charlottenburg): Asphalt	Q0 3571,11451 3554,11617
 Goethepark: Asphalt	Q1 3467,11373 3594,11372
 Am Güterbahnhof Halensee: Asphalt	Q0 2559,9879 2585,9875 2767,9670 3040,9420
 (entlang der Stadtautobahn): Gehwegplatten	Q1 3379,8969 3489,8839 3510,8814
-(entlang der Autobahn, zum hohen Bogen): teilweise unebener Asphalt	Q1 3510,8814 3713,8578 3696,8572 3644,8456 3644,8425
+(entlang der Autobahn, zum hohen Bogen): teilweise unebener Asphalt	Q1 3510,8814 3713,8578 3696,8572 3644,8456 3644,8441 3644,8425
 (am Stadion Wilmersdorf): teilweise unebener Asphalt	Q1 3597,8457 3550,8453 3517,8464 3455,8454 3358,8511 3295,8524
 Werdauer Weg: Beton	Q0 7073,8081 6947,8025 6774,7755
 Werdauer Weg: Asphalt	Q0 6774,7755 6691,7633
@@ -4887,7 +4887,7 @@ Frauenfelder Weg: Kleinsteinpflaster	Q2 7339,17006 7441,17009 7647,17037
 (Weg am Kombibad Wedding): Asphalt	Q0 7417,16587 7298,16725 7267,16784
 Armenische Str.: Asphalt	Q0 7216,16552 7285,16638 7177,16715 7150,16760 7144,16781 7147,16800
 Syrische Str.: Asphalt	Q0 7106,16646 7216,16552 7263,16508
-Syrische Str.: Gehwegplatten	Q1 7263,16508 7295,16477
+Syrische Str.: Gehwegplatten	Q1 7263,16508 7292,16480
 Corker Str.: Asphalt	Q0 6806,17014 6749,17057 6636,17147 6556,17204 6485,17247
 Windsorer Str.: Asphalt	Q0 6476,17108 6556,17204
 Greenwicher Str.: Beton	Q0 5662,17158 5556,17254 5484,17312
@@ -9575,7 +9575,7 @@ Darguner Str.: Beton	Q0 17566,18680 17635,18591
 (Verlängerung des Kapellenwegs): unbefestigte Straße	Q2 10667,23684 10685,23707 10724,23744 10885,23830
 Ideallee: unbefestigte Straße	Q2 11069,23647 10971,23838 10813,24126
 Bambusweg: unbefestigte Straße	Q2 10667,23684 10687,23684 10708,23696 10747,23718 10785,23740 10842,23773 10887,23796 10927,23816 10971,23838
-Reichenberger Str.: Asphalt mit einigen Schäden	Q0 11100,10530 11121,10521 11145,10510 11291,10438
+Reichenberger Str.: Asphalt mit einigen Schäden	Q1 11100,10530 11121,10521 11145,10510 11291,10438
 Reichenberger Str.: Asphalt	Q0 11291,10438 11393,10390
 (Zufahrt zum Stadtbad Tiergarten): Verbundsteinpflaster	Q1 7332,13367 7306,13418
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): wassergebundene Decke	Q1 21992,13045 22141,13036 22171,12965
@@ -10319,7 +10319,7 @@ Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0 3219,7987 3206,7988
 (Orankesee - Hansastr.): Parkweg, Schotter	Q2 15479,16060 15374,16142 15276,16201
 (Orankesee - Hansastr.): Beton	Q0 15276,16201 15251,16217 15236,16241
 (Otawistr. - Dauerkolonie Togo): Kopfsteinpflaster	Q2 6003,16521 5965,16555
-(Otawistr. - Dauerkolonie Togo): Asphalt	Q0 5965,16555 5802,16703
+(Otawistr. - Dauerkolonie Togo): Asphalt, etwas wellig	Q1 5965,16555 5801,16700
 (Usambarastr. - Dauerkolonie Togo): Kopfsteinpflaster	Q2 5684,16815 5710,16792
 (Usambarastr. - Dauerkolonie Togo): mäßiger Asphalt	Q1 5710,16792 5807,16709
 (Berliner Str. - Badensche Str.): Kleinsteinpflaster	Q2 5195,8880 5278,8866
@@ -10499,6 +10499,7 @@ Parallelweg am Eichgestell: guter Parkweg	Q1 18134,7173 18908,6834 18944,6870
 Parallelweg am Eichgestell - Wasserwerk Wuhlheide: Parkweg, einige Pfützen möglich	Q1 18944,6870 19045,6959
 Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2 19045,6959 19080,6986
 (Hoher Wallgraben - Lehndorffstr.): unbefestigter Weg	Q2 18101,8044 18186,8081 18276,8136
+(Abbestr. - Otto-Suhr-Allee): glatte Pflasterung	Q0 4674,12076 4608,11935 4596,11912
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11022,7 +11023,7 @@ Mollwitzstr.: mäßiger Asphalt	Q1 2332,12793 2539,12835
 Drei-Linien-Weg: Verbundsteinpflaster	Q0 16165,23168 16102,23046
 Drei-Linien-Weg: Asphalt	Q0 16102,23046 15983,22814
 Gudvanger Str.: guter Asphalt	Q0 11567,15842 11614,15914 11641,15955 11673,16003 11694,16034 11750,16116 11889,16328
-Oudenarder Str.: Kopfsteinpflaster, teilweise verfugt, mit Bodenwellen	Q2 7231,16418 7282,16369 7433,16375 7746,16375
+Oudenarder Str.: Kopfsteinpflaster, teilweise verfugt, mit Bodenwellen	Q2 7232,16429 7282,16369 7433,16375 7746,16375
 Kaiserswerther Str.: grobes Kopfsteinpflaster	Q3 2762,4713 2673,4651 2545,4565 2461,4556
 Schönstedtstr. (Gesundbrunnen): Kopfsteinpflaster	Q2 8437,15894 8338,15987 8270,16047
 Schönstedtstr. (Gesundbrunnen): Asphalt	Q0 8270,16047 8236,16071
@@ -12640,7 +12641,7 @@ Winklerstr.: schlechtes Kopfsteinpflaster	Q3 23845,8220 23748,8287 23649,8355 23
 In den Gärten: Kopfsteinpflaster	Q2 11765,1522 11744,1577
 In den Gärten: Verbundsteinpflaster	Q1 11744,1577 11724,1629
 (In den Gärten - Hochspannungsweg): Verbundsteinpflaster	Q1 11724,1629 11704,1692 11718,1771 11652,1959 11630,2024 11626,2037
-Stettiner Str.: Asphalt	Q0 8919,16154 9107,16389 9331,16624
+Stettiner Str.: Asphalt	Q0 8913,16159 9099,16398 9331,16624
 Rendtorffstr.: Beton	Q0 1304,537 1217,527 1212,559
 Rendtorffstr.: Beton	Q0 1212,559 1046,537
 Gernroder Str.: schlechtes Kopfsteinpflaster	Q3 13931,20549 13912,20650 13929,20745 13931,20764 13909,20928
@@ -13827,7 +13828,7 @@ Knollstr.: Asphalt	Q0 17193,-109 17242,-80 17308,-36 17362,-1
 Knollstr.: Kopfsteinpflaster	Q2 17362,-1 17427,46 17490,89 17559,134
 Mareyzeile: guter Beton	Q0 -6013,12009 -6013,12041 -5880,12209 -5872,12235
 Zieselweg: mäßiger Beton	Q1 2514,22595 2513,22737 2500,22867 2418,22878
-(Querweg durch die Dauerkolonie Togo): guter Asphalt	Q0 5894,16810 5807,16709 5802,16703 5700,16584
+(Querweg durch die Dauerkolonie Togo): guter Asphalt	Q0 5894,16810 5807,16709 5801,16700 5700,16584
 Liverpooler Str.: Asphalt	Q0 5931,16777 5995,16836 6149,16958
 Gottschalkstr.: Asphalt	Q0 9399,17496 9265,17585 9160,17656
 Großenhainer Weg: glatt gepflastert	Q2 15758,1179 15831,1227 15880,1291
@@ -16094,8 +16095,8 @@ Ermslebener Weg: Asphalt	Q0 4139,8485 4135,8320
 Kahlstr.: Kopfsteinpflaster in südlicher Richtung	Q3; 4220,8482 4220,8237
 Kahlstr.: Asphalt in nördlicher Richtung	Q2; 4220,8237 4220,8482
 (Wallenbergstr. - Rudolstätter Str.): wassergebundene Decke	Q1 4139,8485 3992,8487
-(Zufahrt zur Kolonie Hohenzollerndamm): Kleinpflaster	Q1 3775,8771 3868,8759
-Apeldorner Weg: wassergebundene Decke	Q1 3848,8689 3868,8759 3952,8980
+(Zufahrt zur Kolonie Hohenzollerndamm): Kleinpflaster	Q1 3751,8796 3858,8786
+Apeldorner Weg: wassergebundene Decke	Q1 3822,8718 3858,8786 3952,8980
 Bechstedter Weg: Asphalt	Q0 3467,9045 3661,8815
 Zum Bechstedter Weg: Asphalt	Q1 3661,8815 3701,8849
 Münstersche Str.: Verbundsteinpflaster	Q1 3840,9683 3698,9624
@@ -16506,7 +16507,8 @@ Dresselsteig: Asphalt	Q0 2219,11324 2228,11317 2300,11292 2308,11288
 Amsterdamer Str.: Kopfsteinpflaster mit Bodenwellen	Q2 6914,15908 7077,16078 7158,16167
 Turiner Str.: Kopfsteinpflaster mit Bodenwellen	Q2 6965,16190 7077,16078 7177,15984 7354,15817
 Turiner Str.: Asphalt	Q0 7354,15817 7436,15746
-Groninger Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7393,16566 7409,16542 7433,16375 7458,16207 7474,16086
+Groninger Str.: Asphalt	Q0 7393,16566 7409,16542 7415,16502
+Groninger Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7415,16502 7433,16375 7458,16207 7474,16086
 Hochstädter Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7543,16016 7727,16223
 Ruheplatzstr.: Asphalt	Q0 7436,15746 7518,15605 7540,15566 7627,15412
 (Müllerstr. - Gerichtstr.): Gehwegplatten	Q0 7607,15282 7723,15417

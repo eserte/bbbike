@@ -195,7 +195,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="14"
-#: last_checked: 2020-09-27
+#: last_checked: 2021-01-22
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
 # 
@@ -1255,7 +1255,7 @@ Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 #: next_check_id: UBAHN1-2020
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt
-#: last_checked: 2021-01-21
+#: last_checked: 2021-01-22
 #: check_frequency: 60d
 #: next_check: 2021-04-01
 #(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
@@ -1354,6 +1354,7 @@ Adlergestell: Straßenbahntrasse	3nocross 26286,-1901 26698,-2322 26871,-2500
 Bahnhofsvorplatz S-Bhf. Priesterweg	1 7227,6080 7252,6080 7252,6058 7227,6058
 #: by: mapillary
 Am Heidehof	1s:q3 -1410,2726 -1571,2669 -1612,2785
+Otto-Suhr-Allee: Mittelstreifen mit parkenden Autos	3nocross 4507,11936 4596,11912 4653,11896
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1704,7 +1705,7 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 #: by: https://www.berliner-woche.de/westend/c-verkehr/auch-wenn-es-nicht-so-aussieht-der-zob-umbau-laeuft-wie-geplant_a223429 (ZOB-Umbau bis 2022)
 #: add_fragezeichen: gibt es die Einbahnstraßenregelung in der Soorstr. noch?
 #: osm_watch: way id="4708164" version="16"
-#: last_checked: 2020-09-27
+#: last_checked: 2021-01-22
 #: check_frequency: 90d
 Soorstr.	1s:q3 1861,11284 1884,11126
 # 
@@ -1921,8 +1922,8 @@ Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10197,16528 10134,16534
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 9514,16603 9617,16590 9781,16569 9816,16565
 Osloer Str.: Straßenbahntrasse	3nocross 7681,16769 7763,16779 7852,16790
 Seestr.: Straßenbahntrasse	3nocross 7417,16587 7447,16613 7606,16746
-Seestr.: Straßenbahntrasse	3nocross 7231,16418 7051,16264 6965,16190
-Seestr.: Straßenbahntrasse	3nocross 7231,16418 7295,16477 7393,16566
+Seestr.: Straßenbahntrasse	3nocross 7232,16429 7051,16264 6965,16190
+Seestr.: Straßenbahntrasse	3nocross 7232,16429 7292,16480 7393,16566
 Föhrer Str.: Mittelstreifen	3nocross 6528,15000 6561,15041 6626,15104
 Luxemburger Str.: Mittelstreifen	3nocross 6626,15104 6715,15152 6833,15215
 #: note: Autobahnanschluss, keine Überquerungsmöglichkeiten vvv
@@ -3146,7 +3147,7 @@ Drängelgitter	BNP:3 62686,40877
 Drängelgitter	BNP:3 63740,42840
 Drängelgitter	BNP:3 63721,42792
 Schranke, kann auch mit Anhänger umfahren werden	BNP:1 49137,24422
-Drängelgitter	BNP:3::trailer=6 3644,8456
+Drängelgitter	BNP:3::trailer=6 3644,8441
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1::trailer=10 7816,5682
 #: by: guylian
 #: note: ohne Schloss, also immer offen
@@ -3228,6 +3229,12 @@ Schranke	BNP:2::trailer=5 19617,6208
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße.
+#: osm_watch: way id="308312347" version="3"
+#: last_checked: 2021-01-22
+#: check_frequency: 60d
+Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 # 
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
@@ -3407,14 +3414,14 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # 
 #: next_check_id: MAXIMILIANSQUARTIER-2020
 #: XXX wird die Einbahnstraßenregelung nach den Bauarbeiten aufgehoben?
-#: last_checked: 2020-07-17
+#: last_checked: 2021-01-22
 #: check_frequency: 180d
 Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3219,7987 3224,8106 3230,8230
 # 
 #: XXX wann wird der Weg wiederhergestellt, wenn überhaupt?
 #: by: https://www.deutsches-architekturforum.de/thread/9401-wasserstadt-stralau-kleine-und-gr%C3%B6%C3%9Fere-projekte/?postID=653296#post653296 (Bauarbeiten bis Ende September 2021)
 #: osm_watch: way id="541556560" version="2"
-#: last_checked: 2020-12-22
+#: last_checked: 2021-01-21
 #: next_check: 2021-09-30
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055
 # 
@@ -3447,7 +3454,7 @@ Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: source_id ^^^
 #: also_indoor ^^^
 # 
-#: last_checked: 2021-01-09
+#: last_checked: 2021-01-22
 #: check_frequency: 60d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -3458,7 +3465,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
 #: osm_watch: node id="6778873745" version="1"
-#: last_checked: 2021-01-13
+#: last_checked: 2021-01-22
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3582,7 +3589,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="5096644" version="16"
 #: priority: #C
-#: last_checked: 2021-01-13
+#: last_checked: 2021-01-22
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3897,7 +3904,7 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 #: by: https://leute.tagesspiegel.de/charlottenburg-wilmersdorf/talk-of-the-kiez/2020/08/07/133769/
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
-#: last_checked: 2020-11-05 (daf) vvv
+#: last_checked: 2021-01-22 vvv
 #: check_frequency: 60d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5643,12253
 # REMOVED (hier aufgehoben) --- Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5643,12253 5604,12244 5574,12237
