@@ -517,7 +517,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-01-04
+#: last_checked: 2021-01-25
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -2349,9 +2349,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LANGHANS-2021
 #: source_id: 2147344802 (inaktiv)
 #: source_id: 2147346832 (Gesamtbaumaßnahme bis Mitte August 2021)
+#: by: https://viz.berlin.de/2021/01/verkehrsvorschau25012021/ ("Mitte Februar (2021) wird die Sperrung um den Abschnitt Heinersdorfer Straße - Roelckestraße erweitert")
+#: by: https://viz.berlin.de/2021/01/langhansstr-sperrung/
+#: also_indoor: traffic
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
 # REMOVED (hier nicht mehr?) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
+#: next_check: 2021-02-15
 	q4::inwork 13508,15912 13312,16027 13189,16089 12943,16214
 ',
          'from' => 1611468000,
@@ -2725,7 +2729,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-01-17
+#: last_checked: 2021-01-24
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2781,7 +2785,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2021-01-22
+#: last_checked: 2021-01-25
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2879,7 +2883,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
-#: source_id: 2147346671 (bis 26.3.2021)
+#: source_id: 2147346671 (bis 3.5.2021)
 #: also_indoor: traffic (H,G) vvv
 #: note: laut rbbtext bis 2021-06-30 vvv
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
@@ -3010,6 +3014,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
 #: by: https://twitter.com/SBahnBerlin/status/1347543580529758210 (S-Bahn fährt nicht bis 25.1.2021)
 #: by: https://abendblatt-berlin.de/2021/01/13/mit-dem-bus-statt-mit-der-bahn-durch-den-berliner-osten/
+#: by: https://viz.berlin.de/2021/01/s5/ (SEV bis 25.1.2021)
 #: XXX bis wann ist der Bahnübergang gesperrt?
 #: also_indoor: search Oberfeldstraße Bahnübergang
 #: osm_watch: way id="868347101" version="2"

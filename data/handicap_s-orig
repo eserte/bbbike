@@ -48,8 +48,8 @@
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2021-01-04
-#: check_frequency: 90d
+#: last_checked: 2021-01-25
+#: check_frequency: 60d
 #: next_check: 2021-03-01
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -61,7 +61,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
 #: also_indoor: traffic (G)
-#: last_checked: 2021-01-04
+#: last_checked: 2021-01-25
 #: check_frequency: 30d
 #: next_check: 2021-03-01
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
@@ -207,7 +207,7 @@ Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2020-12-23 (mapillary) vvv
+#: last_checked: 2021-01-25 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -219,7 +219,7 @@ Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
 #: last_checked: 2020-12-01
-#: next_check: 2021-01-31
+#: next_check: 2021-10-31
 #: valid: 20200821-20210131
 Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # 
@@ -239,7 +239,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-01-14
+#: last_checked: 2021-01-25
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2021-01-09
@@ -358,7 +358,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2021-01-09 vvv
+#: last_checked: 2021-01-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -908,7 +908,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: by: https://camera.deckchair.com/park-inn-berlin-alexanderplatz (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/2271-u-5/?postID=666937#post666937 (Pflasterungsarbeiten)
 # REMOVED (gelöscht) --- #: osm_watch: relation id="8743849" version="2"
-#: last_checked: 2021-01-20 (webcam)
+#: last_checked: 2021-01-25
 #: check_frequency: 10d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595

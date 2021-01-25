@@ -2114,8 +2114,6 @@ Karl-Otto-Reinsch-Str. -> Rudower Chaussee: Straßenbahntrasse	3::igndisp 19524,3
 Mittelstreifen mit Geländer	3nocross::ignrte 6935,8208 7001,8161 7073,8081
 Torgauer Str. -> Sachsendamm: Mittelstreifen mit Geländer	3::igndisp 7158,8208 7001,8161 7073,8081
 Mittelstreifen	3nocross::ignrte 11963,11813 11916,11846 11764,12001
-Holzmarktstr. -> Mehlbeerenweg: Mittelstreifen	3::igndisp 11764,12001 11916,11846 11923,11881
-Mehlbeerenweg -> Holzmarktstr.: Mittelstreifen	3::igndisp 11923,11881 11916,11846 11963,11813
 Mittelstreifen	3nocross::ignrte 9334,9670 9387,9804 9444,9919
 Mehringdamm -> Baruther Str.: Mittelstreifen	3::igndisp 9444,9919 9387,9804 9588,9827
 Baruther Str. -> Mehringdamm: Mittelstreifen	3::igndisp 9588,9827 9387,9804 9334,9670
@@ -3156,6 +3154,7 @@ offenes Tor	BNP:3:-151 12592,9249
 Drängelgitter	BNP:3:-193:trailer=10 1035,14996
 Schranke, umständlich zu umfahren	BNP:5:-113:trailer=15 19608,-1953
 Schranke	BNP:2:-157:trailer=5 19617,6208
+Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881 11940,11982
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s 10472,14632 10320,14608
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487

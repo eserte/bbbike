@@ -612,7 +612,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2021-01-14 vvv
+#: last_checked: 2021-01-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
@@ -1410,7 +1410,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: osm_watch: way id="882672444" version="1"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2021-01-14 vvv
+#: last_checked: 2021-01-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
@@ -1430,7 +1430,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 #: by: https://pbs.twimg.com/media/EWHwSfnXQAAaaO9?format=jpg&name=large
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: XXX temporäre Radwegführung
-#: last_checked: 2021-01-14
+#: last_checked: 2021-01-25 (viz)
 #: check_frequency: 60d
 temporäre Führung als Bürgersteigradweg	RW1; 10878,12560 10954,12635
 # wieder herstellen:	RW4; 10878,12560 10954,12635
@@ -2070,7 +2070,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: http://www.infravelo.de/projekt/lichtenberger-strasse-1/
 #: source_id: 2147346610
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-01-21 vvv
+#: last_checked: 2021-01-25 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
 #: osm_watch: way id="284761029" version="15"
 Radspur hinter den parkenden Autos	RW3; 12006,12464 11920,12266
@@ -3053,20 +3053,20 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: by: https://abendblatt-berlin.de/2020/08/28/berlin-marzahn-ersatzneubau-der-suedlichen-rhinstrassenbruecke/
 #: XXX Baubeginn Ende 2016, mittlerweile ab April 2018 --- allerdings sind schon jetzt hier Bauarbeiten, bis Ende August 2017
 #: XXX vorbereitende Maßnahmen ab 12. März 2018, Sperrung der westlichen Brücke ab 27. März 2018, Fertigstellung der neuen Brücke ist für 2020 geplant
-#: osm_watch: way id="4068148" version="23"
+#: osm_watch: way id="4068148" version="24"
 #: osm_watch: way id="27942935" version="17"
-#: osm_watch: way id="11663312" version="27"
+#: osm_watch: way id="11663312" version="28"
 #: osm_watch: way id="4689343" version="20"
 #: source_id: 2147341322 (inaktiv)
 #: source_id: 2147342307 (inaktiv)
-#: source_id: 2147342363 (bis 19.2.2021)
+#: source_id: 2147342363 (bis 22.3.2021)
 #: source_id: LMS-BR_r_LMS-BR_125793_LMS-BR_72 (inaktiv)
 #: source_id: 2147345793 (inaktiv)
 #: XXX provisorische Radwegführung
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
 #: last_checked: 2021-01-02 (osm)
-#: check_frequency: 90d
-#: next_check: 2021-03-31
+#: check_frequency: 60d
+#: next_check: 2021-03-22
 	RW8; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
 	RW4; 18225,12697 18235,13236 18226,13506
 	RW4; 18226,13506 18235,13236 18225,12697 18220,12450
@@ -4243,7 +4243,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: by: https://www.berliner-woche.de/malchow/c-verkehr/dorfstrasse-in-malchow-wird-drei-wochen-lang-saniert_a279529 (bis 8. August 2020, vermutlich nur Asphaltarbeiten an der Fahrbahn, Radwege werden nicht erwähnt)
 #: by: https://abendblatt-berlin.de/2020/07/10/berlin-malchow-bundesstrasse-mit-umleitungen/
 #: XXX wird der Radweg verbessert?
-#: last_checked: 2020-12-04 (mapillary)
+#: last_checked: 2021-01-25 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -5166,7 +5166,7 @@ Verbundsteinpflasterradweg	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: confirmed_by: srt
 	RW3;RW3 7733,8023 7783,8035 7824,8056 7838,8085 7859,8252 7899,8332 7956,8408 8078,8772
 #: next_check_id: MITTEL-2019
-#: last_checked: 2021-01-10 (daf)
+#: last_checked: 2021-01-25
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben
 	RW0; 9141,12320 9131,12438 9121,12514
 	RW4; 9131,12438 9141,12320
@@ -6388,13 +6388,12 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
 #: by: http://www.infravelo.de/projekt/danziger-strasse-1/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
-#: last_checked: 2021-01-17 vvv
+#: last_checked: 2021-01-25 (viz) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-09-30 vvv
 #: osm_watch: way id="4615031" version="37"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
-#: XXX der provisorisch geschützter Radstreifen wird neu gemacht
-getrennter Geh- und Radweg	RW2; 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
+provisorisch geschützter Radstreifen	RW4; 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
 #: osm_watch: way id="41954398" version="17"
 provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 #: next_check ^^^
