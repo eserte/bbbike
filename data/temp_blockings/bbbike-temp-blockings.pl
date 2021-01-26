@@ -28555,6 +28555,7 @@ EOF
 #: by: https://viz.berlin.de/2020/07/schau-11_12-07_2020/ ("für den Kraftfahrzeugverkehr gesperrt")
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1043669.php ("Notweg für Radfahrer" (?))
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/kynaststrasse-gesperrt_a299447
 #: source_id: 2147346071 (inaktiv)
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
@@ -31873,7 +31874,7 @@ EOF
      },
      { from  => 1610838000, # 2021-01-17 00:00
        until => 1618264800, # 2021-04-13 00:00
-       text  => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, möglicherweise ist der Radverkehr betroffen, vom 18.1.2021 bis 12.4.2021',
+       text  => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 12.4.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
        data  => <<EOF,
@@ -31881,10 +31882,11 @@ EOF
 #: source_id: 2147346807 (bis 12.4.2021)
 #: note: laut rbbtext kann der Radverkehr passieren
 #: by: https://viz.berlin.de/2021/01/bohnsdorfer-kreisel/ (keine Einschränkungen für Fußgänger)
-#: XXX wie sehen die Einschränkungen (wenn überhaupt) für den Radverkehr aus? vvv
+#: by: https://twitter.com/VIZ_Berlin/status/1353990207574581249 (Situation mit Bildern)
+# REMOVED --- #: XXX wie sehen die Einschränkungen (wenn überhaupt) für den Radverkehr aus? vvv
 	q3::inwork 22162,1067 22092,999 22034,1006 21977,988
 	q3::inwork 22092,999 22120,886
-#: XXX ^^^
+# REMOVED --- #: XXX ^^^
 EOF
      },
      { from  => 1610431200, # 2021-01-12 07:00
@@ -31926,6 +31928,15 @@ EOF
 #: last_checked: 2021-01-22
 #: check_frequency: 45d
 	q3::inwork 4674,12076 4755,12236
+EOF
+     },
+     { from  => 1611615600, # 2021-01-26 00:00
+       until => 1613602800, # 2021-02-18 00:00
+       text  => 'Behelfsbrücke Neuköllnische Allee: kurzfristige Sperrungen von maximal 20 Minuten Dauer möglich, vom 27.1.2021 bis ca. 17.2.2021',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://viz.berlin.de/2021/01/verkehrsvorschau27012021/
+	2::inwork 14196,7086 14233,7086 14251,7096 14323,7080 14310,7022
 EOF
      },
     );
