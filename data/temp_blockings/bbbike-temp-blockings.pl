@@ -31541,7 +31541,7 @@ EOF
        text  => 'Fuhrmannstr.: Bauarbeiten, Fahrbahn gesperrt, bis 29.01.2021',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wird die Qualität nach den Bauarbeiten besser sein?
+#: add_fragezeichen: Ist die Qualität der Fahrbahn nach den Bauarbeiten besser geworden?
 #: next_check: 2021-01-29
 	q4::inwork 9511,6797 9512,6652
 EOF

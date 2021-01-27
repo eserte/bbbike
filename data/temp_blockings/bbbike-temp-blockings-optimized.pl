@@ -3078,7 +3078,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '#: XXX wird die Qualität nach den Bauarbeiten besser sein?
+         'data' => '#: add_fragezeichen: Ist die Qualität der Fahrbahn nach den Bauarbeiten besser geworden?
 #: next_check: 2021-01-29
 	q4::inwork 9511,6797 9512,6652
 ',
