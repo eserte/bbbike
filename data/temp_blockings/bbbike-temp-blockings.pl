@@ -29861,8 +29861,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-01-07 17:00:00"), # 1 Tag Vorlauf --- 1568056573, # 2019-09-09 21:16
-       until => $isodate2epoch->("2021-02-02 17:00:00"), # $isodate2epoch->("2019-09-20 18:00:00"),
-       text  => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, 8.1.2021 bis 2.2.2021',
+       until => $isodate2epoch->("2021-02-01 04:00:00"), # $isodate2epoch->("2019-09-20 18:00:00"),
+       text  => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, 8.1.2021 bis 1.2.2021',
        type  => 'gesperrt',
        source_id => 'LMS-BR_r_LMS-BR_182020_LMS-BR_72', # alt
        data  => <<EOF,
@@ -30810,7 +30810,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
-#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
+#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
 #: last_checked: 2021-01-25
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -31547,8 +31547,8 @@ EOF
 EOF
      },
      { from  => 1603170000, # 2020-10-20 07:00
-       until => $isodate2epoch->("2021-01-29 17:00:00"), # 1608739200, # 2020-12-23 17:00
-       text  => 'Weddingstr.: Zufahrt von der Reinickendorfer Str. gesperrt, 21.10.2020 7:00 Uhr bis 29.01.2021 17:00 Uhr',
+       until => $isodate2epoch->("2021-02-26 17:00:00"), # 1608739200, # 2020-12-23 17:00
+       text  => 'Weddingstr.: Zufahrt von der Reinickendorfer Str. gesperrt, 21.10.2020 7:00 Uhr bis 26.02.2021 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147346516',
        data  => <<EOF,
@@ -31719,6 +31719,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: B96A-2020
 #: osm_watch: way id="877995097" version="2"
+#: by: https://twitter.com/VIZ_Berlin/status/1354746716914900992 (anhand der Fotos nicht erkennbar)
 #: add_fragezeichen: Wann ist der Radweg offiziell befahrbar?
 #: last_checked: 2020-12-12 (osm)
 	2::inwork 21874,1511 21829,1351 21656,989 21613,923 21286,449 21115,271
@@ -31895,6 +31896,7 @@ EOF
        type  => 'handicap',
        source_id => '2147346788',
        data  => <<EOF,
+#: note: bei rbbtext sogar bis 18.5.2021
 #: osm_watch: way id="683770241" version="6"
 	q4::inwork 19564,1871 19743,1804
 EOF

@@ -2002,9 +2002,9 @@ Goltzstr.: Asphalt	Q0 10642,-2371 10563,-2432 10454,-2520
 Goltzstr.: Asphalt	Q0 10454,-2520 10394,-2567 10382,-2598
 (Beethovenstr. - Mozartstr., Mauerweg): Asphalt mit Fugen	Q1 10309,-3191 10460,-3199
 Beethovenstr.: kleinteiliges Kopfsteinpflaster, uneben	Q2 10155,-2739 10219,-2895 10272,-3027 10323,-3150
-Marie-Curie-Str.: Asphalt mit leichten Unebenheiten	Q0 16751,10674 16751,10696 16861,10923
-Marie-Curie-Str.: Asphalt mit Sch‰den	Q1 16861,10923 16967,11162
-Marie-Curie-Str.: Asphalt mit leichten Unebenheiten	Q0 16967,11162 17070,11375 17208,11658
+Marie-Curie-Str.: Asphalt	Q0 16751,10674 16751,10696 16861,10923
+Marie-Curie-Str.: Asphalt	Q0 16861,10923 16967,11162
+Marie-Curie-Str.: Asphalt	Q0 16967,11162 17070,11375 17208,11658
 Debenzer Str.: Asphalt	Q0 19885,10619 19910,10630 20143,10731 20196,10754 20418,10851 20579,10944
 Debenzer Str.: Plattenweg	Q2 19885,10619 19912,10543
 Wilhelmsbr¸cker Str.: Asphalt	Q0 20509,11174 20369,11174
@@ -2899,9 +2899,10 @@ Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14705,10149 14621
 Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14621,10062 14702,10020 14788,9976
 Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14747,10108 14702,10020
 Dora-Benjamin-Park: Verbundsteinpflaster	Q1 14788,9976 14817,10031
-Balatonstr.: m‰ﬂiger Beton	Q1 17479,10452 17741,10386 17785,10377 17915,10350 17946,10344
-Balatonstr.: m‰ﬂiger Beton	Q1 17785,10377 17817,10496
-(Balatonstr. - Sewanstr.): Beton	Q1 17741,10386 17705,10232 17624,10249 17605,10199
+Balatonstr.: m‰ﬂiger Beton	Q1 17479,10452 17741,10386 17791,10375 17915,10350 17946,10344
+Balatonstr.: m‰ﬂiger Beton	Q1 17791,10375 17793,10382 17822,10490 17823,10495
+(Balatonstr. - Sewanstr.): Beton	Q1 17741,10386 17729,10331 17705,10232 17624,10249 17605,10199
+Sewanstr. [Wohngebiet]: Beton	Q1 17883,10185 17705,10232
 Rienzistr.: Kopfsteinpflaster	Q2 17898,9564 18121,9488
 Marksburgstr.: Asphalt	Q0 18070,9292 18172,9250 18319,9218
 Ilsestr. (Karlshorst, Rummelsburg): Beton	Q0 18354,9575 18164,9623 18158,9625 18121,9488 18070,9292 18037,9195 18021,9127
@@ -13312,7 +13313,7 @@ Planetenstr.: sehr schlechtes Kopfsteinpflaster	Q3 14951,7163 15056,7198 15175,7
 Rue Hyacinthe Vincent: Beton	Q0 3456,16713 3455,16659 3401,16582 3375,16558
 Rue Hyacinthe Vincent: Kleinsteinpflaster	Q1 3375,16558 3347,16534 3292,16553
 Sachsenwaldstr.: guter Asphalt	Q0 5834,6142 5984,6233 6104,6258 6198,6270 6305,6287 6323,6270
-Moldaustr.: guter Beton	Q0 17511,10577 17702,10525 17817,10496 17821,10516 17856,10508 17950,10481 17915,10350
+Moldaustr.: guter Beton	Q0 17511,10577 17702,10525 17823,10495 17828,10514 17856,10508 17950,10481 17915,10350
 An der Schneise: grobes Verbundsteinpflaster	Q1 -481,21513 -475,21560 -487,21631 -489,21709 -464,21828 -428,21933 -403,21991 -362,22105
 An der Schneise: Verbundsteinpflaster	Q1 -362,22105 -331,22184
 An der Schneise: Kopfsteinpflaster	Q2 -331,22184 -313,22233

@@ -1696,7 +1696,7 @@ Behrenstr./Bebelplatz	1s:q3 9798,12267 9737,12238 9730,12238 9680,12232 9631,122
 Halenseestr.	1s:q2 2163,10024 2110,10101 2030,10253 1988,10328 1939,10446
 Zeltinger Platz	1s:q4 2404,25187 2355,25252 2395,25273 2446,25265 2490,25211 2486,25156 2451,25123 2404,25187
 Ludolfinger Platz	1s:q4 2277,25033 2245,25016 2205,25042 2192,25083 2216,25117 2277,25094 2285,25059 2277,25033
-Sewanstr. - Balatonstr.	1s:q3 17705,10232 17741,10386
+Sewanstr. - Balatonstr.	1s:q3 17729,10331 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s:q2 18377,9366 18490,9387
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3369,14532 -3316,14504
@@ -2546,6 +2546,8 @@ tragen (Treppe, 16 Stufen)	0:25 22104,11925
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Schranke	BNP:3::trailer=10 17793,10382
+Schranke	BNP:3::trailer=10 17822,10490
 Schranke	BNP:0::trailer=5 10713,12014
 Drängelgitter	BNP:3::trailer=10 10969,10015
 Drängelgitter	BNP:3::trailer=10 10879,10037
@@ -3248,7 +3250,7 @@ Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
 #: osm_watch: way id="610818155" version="4"
-#: last_checked: 2020-12-29
+#: last_checked: 2021-01-28
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
@@ -3258,9 +3260,13 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: check_frequency: 60d
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 # 
-#: last_checked: 2020-12-28
-#: check_frequency: 30d
-Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16841,9997 16830,10030 16835,10052
+#: last_checked: 2021-01-28 vvv
+#: check_frequency: 30d vvv
+Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16841,9997
+Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922
+# REMOVED (hier jetzt offen, aber noch nicht fertig) --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16841,9997 16830,10030 16835,10052
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise
@@ -3984,7 +3990,7 @@ Niederlagstr.: Einbahnstraße	1s:q3:inwork 9972,12184 9959,12281
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: source_id: 2147341188
-#: osm_watch: way id="593108603" version="2"
+#: osm_watch: way id="593108603" version="3"
 #: XXX laut osm nicht mehr construction, in der Realität kann man aber hier nicht durch
 #: last_checked: 2020-12-06
 #: check_frequency: 60d

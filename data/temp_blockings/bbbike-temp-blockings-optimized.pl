@@ -2550,9 +2550,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1610035200,
          'id' => 3160,
          'source_id' => 'LMS-BR_r_LMS-BR_182020_LMS-BR_72',
-         'text' => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, 8.1.2021 bis 2.2.2021',
+         'text' => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, 8.1.2021 bis 1.2.2021',
          'type' => 'gesperrt',
-         'until' => 1612281600
+         'until' => 1612148400
        },
        undef,
        undef,
@@ -2785,7 +2785,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: GAERTNER-2021
-#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
+#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
 #: last_checked: 2021-01-25
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -3094,9 +3094,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1603170000,
          'id' => 3295,
          'source_id' => '2147346516',
-         'text' => 'Weddingstr.: Zufahrt von der Reinickendorfer Str. gesperrt, 21.10.2020 7:00 Uhr bis 29.01.2021 17:00 Uhr',
+         'text' => 'Weddingstr.: Zufahrt von der Reinickendorfer Str. gesperrt, 21.10.2020 7:00 Uhr bis 26.02.2021 17:00 Uhr',
          'type' => 'handicap',
-         'until' => 1611936000
+         'until' => 1614355200
        },
        undef,
        {
@@ -3138,6 +3138,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: B96A-2020
 #: osm_watch: way id="877995097" version="2"
+#: by: https://twitter.com/VIZ_Berlin/status/1354746716914900992 (anhand der Fotos nicht erkennbar)
 #: add_fragezeichen: Wann ist der Radweg offiziell befahrbar?
 #: last_checked: 2020-12-12 (osm)
 	2::inwork 21874,1511 21829,1351 21656,989 21613,923 21286,449 21115,271
@@ -3274,7 +3275,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1618264800
        },
        {
-         'data' => '#: osm_watch: way id="683770241" version="6"
+         'data' => '#: note: bei rbbtext sogar bis 18.5.2021
+#: osm_watch: way id="683770241" version="6"
 	q4::inwork 19564,1871 19743,1804
 ',
          'from' => 1610431200,

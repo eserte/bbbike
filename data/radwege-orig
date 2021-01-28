@@ -1290,9 +1290,12 @@ neues Verbundsteinpflaster, allerdings schon erste leichte Wurzelhebungen sichtb
 	RW3; 13651,11731 13696,11920 13745,12118
 Radspur zwischen Fahrspuren	RW3; 13745,12118 13785,12292
 	RW3; 13785,12292 13745,12118 13696,11920 13651,11731
-	RW1; 17427,10259 17605,10199 17905,10122 17958,10012
+	RW1; 17427,10259 17605,10199 17905,10122 17938,10054 17958,10012
 	RW3; 17958,10012 17997,9929
-Asphalt mit Schäden	RW1; 17997,9929 17958,10012 17905,10122 17605,10199 17427,10259
+Asphalt mit Schäden	RW1; 17997,9929 17958,10012
+#: note: hier ist auch eine Bushaltestelle
+	RW3; 17958,10012 17938,10054
+Asphalt mit Schäden	RW1; 17938,10054 17905,10122 17605,10199 17427,10259
 brüchiger Asphalt auf Fahrbahn	RW3; 17997,9929 18045,9917
 	RW1; 18045,9917 17997,9929
 	RW1;RW1 18045,9917 18210,9989 18296,10027 18339,10048 18387,10070
@@ -5944,7 +5947,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2021-01-17 vvv
+#: last_checked: 2021-01-27 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -6608,16 +6611,16 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-4/ (bis Alexandrinenstr., bis 2. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-3/ (Prinzenstr. - Alexandrinenstr., bis 4. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabsschnitt-2/ (Böcklerstr. - Prinzenstr., bis 2. Quartal 2021)
-#: source_id: 2147340884
-#: source_id: 2147340970
-#: source_id: LMS-BR_r_LMS-BR_90638
-#: source_id: 2147341904
-#: source_id: 2147343820 (bis Mitte 2019)
-#: source_id: 2147344403 (bis Ende August 2019)
-#: source_id: 2147345226 (Fahrbahnausbesserungen bis Ende Dezember 2019, laut fritz bis 20.12.2019)
-#: source_id: 2147345290 (bis Ende Januar 2020, laut fritz bis 24.1.2020)
-#: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020)
-#: source_id: 2147345931 (bis 29.1.2021)
+#: source_id: 2147340884 (inaktiv)
+#: source_id: 2147340970 (inaktiv)
+#: source_id: LMS-BR_r_LMS-BR_90638 (inaktiv)
+#: source_id: 2147341904 (inaktiv)
+#: source_id: 2147343820 (bis Mitte 2019) (inaktiv)
+#: source_id: 2147344403 (bis Ende August 2019) (inaktiv)
+#: source_id: 2147345226 (Fahrbahnausbesserungen bis Ende Dezember 2019, laut fritz bis 20.12.2019) (inaktiv)
+#: source_id: 2147345290 (bis Ende Januar 2020, laut fritz bis 24.1.2020) (inaktiv)
+#: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020) (inaktiv)
+#: source_id: 2147345931 (bis 26.2.2021)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="19"
 #: osm_watch: way id="335487059" version="14"
