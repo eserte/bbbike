@@ -885,7 +885,9 @@ Nikolaus-Ehlen-Weg: Privatstraße	CS 17308,-36 17215,94 17176,90
 Gaslaternen-Freilichtmuseum Berlin	CS 5895,11692 5835,11768 5858,11863 5900,11913
 #: ignore ^^^
 #: ignore vvv
-# REMOVED (Ende Januar 2021 eingestellt) --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1037477.php --- #: XXX Wochenmarkt wird endgültig eingestellt --- #: next_check: 2021-01-28 --- Suarezstr.: Wochenmarkt Do 9.00-15.00, aber anscheinend nur auf dem Bürgersteig	CS 2921,10928 2845,10840
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1037477.php (Wochenmarkt wird endgültig eingestellt, zum 2021-01-28)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1046607.php (Weiterbetrieb ab Februar 2021)
+Suarezstr.: Wochenmarkt Do 9.00-15.00, aber anscheinend nur auf dem Bürgersteig	CS 2921,10928 2845,10840
 Mierendorffplatz: Wochenmarkt Mi+Sa, 8.00-13.00, zwar auf der Fahrbahn, aber der Radweg scheint weiterhin befahrbar zu sein	CS 3534,13098 3645,13206
 Fehrbelliner Platz: Wochenmarkt Di+Do, 11.00-16.00, sowie Kunst- und Trödelmarkt Sa+So 10.00-16.00, nur auf der Parkplatzfläche	CS 4339,9224
 Kolberger Platz: Wochenmarkt Mi+Sa, 08.00-14.00, Fahrbahn weiterhin befahrbar, nur Halteverbote	CS; 2786,7721 2751,7811 2862,7803
@@ -1488,6 +1490,8 @@ ausgeschildert als "Scharounstr."	CP2; 7943,11431 8083,11381
 durch die KGA Stallwiese	CS 18101,8044 18186,8081 18276,8136
 # 
 ausgeschildert "Sommerbad Wilmersdorf"	CP2; 3665,8131 3676,8394
+# 
+zunächst als "Hertastr." ausgeschildert	CP; 12510,6508 12470,6586 12743,6645
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)

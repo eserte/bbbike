@@ -758,7 +758,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2021-01-09
+#: last_checked: 2021-01-29
 #: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -935,7 +935,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-01-25
+#: last_checked: 2021-01-29
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2228,7 +2228,7 @@ Gartenufer: Kleinsteinpflaster	Q1 6200,11417 6337,11365 6346,11326
 Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3+ 7930,12912 7858,12830 7789,12764
 Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3+ 7858,12830 7837,12860
 Spreeuferweg: glatte Gehwegplatten und fester Sandweg an den Seiten	Q0 7051,12426 7122,12384 7183,12372 7217,12383 7314,12419 7447,12520 7521,12581 7772,12694 7856,12746 7908,12804 7945,12878
-Delbrückstr. (Neukölln): Kopfsteinpflaster	Q2 12743,6645 12860,6667 12981,6689 13099,6712
+Delbrückstr. (Neukölln): Kopfsteinpflaster	Q2- 12743,6645 12860,6667 12981,6689 13099,6712
 Delbrückstr. (Neukölln): Asphalt	Q0 13099,6712 13117,6716
 Rungiusstr.: sehr guter Asphalt	Q0 13158,5490 13136,5593 13116,5689 13105,5748 13077,5893 13064,5953 13027,6168
 #: by: andreas voigt:
@@ -9918,6 +9918,8 @@ Gilgenburger Pfad: Kleinsteinpflaster	Q1 24387,5672 24351,5696
 (Berliner Balkon - Gründerzeitmuseum): Kleinsteinpflaster	Q1- 24239,10975 24283,10960 24341,10982 24422,10972 24455,10942 24526,10943 24601,10992
 (Park des Gründerzeitmuseums): wassergebundene Decke	Q1 24601,10992 24658,11013
 (Park des Gründerzeitmuseums): Kopfsteinpflaster	Q3 24658,11013 24726,11037
+#: by: srt
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_04_0213_0280_online.pdf (Verkehrsübergabe (etwas verspätet...))
 Lauinger Str.: Asphalt	Q0 21221,11398 21171,11336 21137,11294
 (Gartenstr. - Lauinger Str.): Asphalt	Q0 21168,11303 21171,11336
 (Lauinger Str. - Köpenicker Str.): Asphalt	Q0 21171,11336 21133,11348
@@ -29588,4 +29590,6 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 4248,18066
 Einmündungsbereich mit Kopfsteinpflaster	Q2 15162,11458
 Kreuzungsbereich mit Kleinsteinpflaster	Q1 8027,11000
 Kreuzungsbereich asphaltiert	Q0 16861,10923
+Kreuzungsbereich asphaltiert	Q0 12743,6645
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 12714,9792
 #: ignore ^^^

@@ -105,10 +105,16 @@ Flughafen Tempelhof	F:SW 9468,8550 9385,8625 9401,8692 9531,8675 9523,8618 9504,
 # REMOVED (kein Flughafen mehr) --- Touristeninformation Berlin im Flughafen Tempelhof: Eingang Haupthalle	SW|IMG:touristinfo 9459,8503
 Columbiahaus	F:SW 9247,8857 9247,8812 9312,8802 9377,8757 9562,8733 9574,8863 9552,8865 9546,8757 9464,8765 9466,8859 9440,8861 9440,8774 9385,8776 9318,8824 9271,8828 9269,8869
 Columbiahaus	F:SW 9249,8871 9568,8877 9572,8855 9249,8851
+#: by: https://www.rbb24.de/politik/Flughafen-BER/BER-Aktuelles/akteure_aktuell/2021/01/ber-terminal-5-schliesst-februar-berlin-flughafen-sparen.html
+#: by: https://www.flugrevue.de/zivil/terminal-5-wird-voruebergehend-stillgelegt-ber-konzentriert-den-verkehr-im-termnal-1/
+#: XXX Terminal 5 wird (temporär?) am 2021-02-23 geschlossen vvv
+#: priority: #B
+#: next_check: 2021-02-23
 #: XXX_prog: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 #: oldname: -20201025: Flughafen Schönefeld
 Flughafen BER Terminal 5	F:SW|IMG:airport 18581,-1760 18594,-1810 18359,-1889 18335,-1843
 Touristeninformation Berlin-Brandenburg in BER T5	SW|IMG:touristinfo 18443,-1787
+#: XXX ^^^
 Flughafen BER	F:SW|IMG:airport 17884,-4900 18309,-4733 18262,-4633 18038,-4722 17836,-4229 18053,-4130 18010,-4039 17606,-4214
 # REMOVED --- #: next_check_id: BER-20XX --- #: XXX zum Ex-Flughafen machen vvv --- #: next_check: 2020-11-08 vvv --- #: XXX_prog: Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 #: oldname: -20201108: Flughafen Tegel
