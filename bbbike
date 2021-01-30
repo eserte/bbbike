@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2020 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2021 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -21259,8 +21259,13 @@ sub update_last_loaded_menu {
 				   -font => $font{'bold'});
 	foreach my $_file (@{ $last_loaded_obj->{List} }) {
 	    my($file, @args) = split /\t/, $_file;
-	    $last_loaded_menu->command(-label => $file,
-				       -command => [$last_loaded_obj->{Cb}, $file, @args],
+	    my $label = $file;
+	    if (defined $ENV{HOME} && $ENV{HOME} ne '') {
+		$label =~ s{^\Q$ENV{HOME}\E(/|$)}{~$1};
+	    }
+	    $last_loaded_menu->command(-label     => $label,
+				       -command   => [$last_loaded_obj->{Cb}, $file, @args],
+				       -underline => -1, # this is a hack to avoid interpreting "~" in the label as an underline specification
 				      );
 	}
     }
