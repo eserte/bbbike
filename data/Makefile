@@ -966,7 +966,7 @@ ${PERSISTENTTMPDIR}/.fragezeichen-$(i):	$(i)-orig
 .endfor
 
 ${PERSISTENTTMPDIR}/.fragezeichen-bbbike-temp-blockings-optimized:	${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
-	${GREPSTRASSEN_UTF8} -special fragezeichen $> > /dev/null
+	${GREPSTRASSEN_UTF8} -special filternextcheck -special fragezeichen $> > /dev/null
 	cp -f /tmp/fragezeichen_bbbike-temp-blockings-optimized.bbd.bbd $@
 
 ######################################################################
