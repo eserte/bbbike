@@ -28486,14 +28486,17 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-01-05 15:00:00"), # 1540930270, # 2018-10-30 21:11
-       until => $isodate2epoch->("2021-12-31 17:00:00"), # undef, # 1543014000, # 2018-11-24 00:00
+       until => $isodate2epoch->("2023-08-01 17:00:00"), # undef, # 1543014000, # 2018-11-24 00:00
        text  => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., auch der Fuß- und Radverkehr ist von der Sperrung betroffen, vom 6. Januar 2021 bis 31. Dezember 2021',
        type  => 'gesperrt',
        source_id => '2147343394', # hier bis Ende Dezember 2019; laut fritz bis 2019-12-20; mittlerweile inaktiv
        data  => <<EOF,
-#: XXX laut rbbtext "Gesamtbaumaßnahme ... bis August 2023"
-#: source_id: 2147346762
-# REMOVED --- #: add_fragezeichen: Wann ist die Sperrung beendet? --- #: next_check: 2020-02-29
+#: note: laut rbbtext "Gesamtbaumaßnahme ... bis August 2023"
+#: source_id: 2147346762 (bis Ende 2021)
+#: add_fragezeichen: Wann ist die Sperrung beendet?
+#: last_checked: 2021-01-31 (mapillary)
+#: check_frequency: 180d
+#: next_check: 2021-12-31
 	2::inwork 14338,22885 14276,22914
 EOF
      },
