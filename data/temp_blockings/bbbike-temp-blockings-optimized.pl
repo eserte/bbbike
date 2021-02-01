@@ -816,7 +816,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2543,20 +2543,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.901034.php
-# REMOVED --- #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/bahnuebergang-gesperrt_a255484
-#: source_id: 2147346766
-# REMOVED (hier nicht) ---	2::inwork 25191,12343 25149,12266
-	2::inwork 25149,12266 25109,12196 25072,12107
-',
-         'from' => 1610035200,
-         'id' => 3160,
-         'source_id' => 'LMS-BR_r_LMS-BR_182020_LMS-BR_72',
-         'text' => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, 8.1.2021 bis 1.2.2021',
-         'type' => 'gesperrt',
-         'until' => 1612148400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2789,7 +2776,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-01-29
+#: last_checked: 2021-01-30
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3312,6 +3299,23 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Behelfsbrücke Neuköllnische Allee: kurzfristige Sperrungen von maximal 20 Minuten Dauer möglich, vom 27.1.2021 bis ca. 17.2.2021',
          'type' => 'gesperrt',
          'until' => 1613602800
+       },
+       {
+         'data' => '#: next_check_id: PARKSTADTKARLSHORST-2021
+#: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-im-bau/?postID=673580#post673580 (ab dem kommenden Jahr, also 2021)
+#: confirmed_by: srt (Sackgassenschild am nördlichen Ende)
+#: add_fragezeichen: Wo ist der gesperrte Abschnitt? Gilt die Sperrung auch für Fußgänger und Radfahrer?
+#: osm_watch: way id="26322046" version="24"
+#: osm_watch: way id="165832806" version="21"
+#: last_checked: 2021-02-01
+#: next_check: 2021-02-01
+	2::inwork 17704,8327 17620,8366
+',
+         'from' => undef,
+         'id' => 3327,
+         'text' => 'Hönower Wiesenweg: Durchfahrt wegen Bauarbeiten möglicherweise nicht mehr möglich',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

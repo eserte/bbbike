@@ -935,7 +935,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-01-29
+#: last_checked: 2021-01-30
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3039,7 +3039,9 @@ Lauchhammerstr.: Asphalt	Q0 20165,10077 20146,10093 20149,10120 20261,10307 2026
 Beruner Str.: Beton	Q0- 20215,10554 20272,10448
 Beruner Str.: Asphalt	Q0 20272,10448 20262,10317
 Beruner Str.: Asphalt	Q0 20092,10840 20113,10795 20143,10731
-Saganer Str.: Asphalt	Q0 16187,10033 16206,10047 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
+Saganer Str.: Asphalt	Q0 16187,10033 16206,10047 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159 17282,9135
+Hönower Wiesenweg: Asphalt	Q0 17308,9090 17282,9135
+(Hönower Wiesenweg - Betriebsbahnhof Rummelsburg): Asphalt	Q0 17308,9090 17300,9135 17284,9198
 Perelsplatz: kleinteiliges Kopfsteinpflaster	Q1 5809,7712 5636,7709
 Krottnaurerstr.: schlechtes Kopfsteinpflaster	Q3 -2920,3246 -2890,3135 -2867,3045
 Krottnaurerstr.: asphaltiert	Q0 -2867,3045 -2847,2893
@@ -16161,6 +16163,7 @@ Karlstadter Str.: Kopfsteinpflaster	Q2 11492,18347 11579,18184 11602,18133 11655
 Utrechter Str.: Kopfsteinpflaster	Q2 7024,15810 7177,15984 7279,16057 7294,16068 7474,16086
 # 
 #: by: Martina Schmitz: vvv
+#: confirmed_by: srt
 Odinstr.: Kopfsteinpflaster	Q2 18006,9335 17898,9564 17890,9580
 #: corrected_by: srt (Q2 -> Q2+)
 Odinstr.: Kopfsteinpflaster	Q2+ 17890,9580 17866,9639

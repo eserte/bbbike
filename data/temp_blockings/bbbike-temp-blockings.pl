@@ -30814,7 +30814,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-01-29
+#: last_checked: 2021-01-30
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31942,6 +31942,22 @@ EOF
        data  => <<EOF,
 #: by: https://viz.berlin.de/2021/01/verkehrsvorschau27012021/
 	2::inwork 14196,7086 14233,7086 14251,7096 14323,7080 14310,7022
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hönower Wiesenweg: Durchfahrt wegen Bauarbeiten möglicherweise nicht mehr möglich',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: PARKSTADTKARLSHORST-2021
+#: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-im-bau/?postID=673580#post673580 (ab dem kommenden Jahr, also 2021)
+#: confirmed_by: srt (Sackgassenschild am nördlichen Ende)
+#: add_fragezeichen: Wo ist der gesperrte Abschnitt? Gilt die Sperrung auch für Fußgänger und Radfahrer?
+#: osm_watch: way id="26322046" version="24"
+#: osm_watch: way id="165832806" version="21"
+#: last_checked: 2021-02-01
+#: next_check: 2021-02-01
+	2::inwork 17704,8327 17620,8366
 EOF
      },
     );

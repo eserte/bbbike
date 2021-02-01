@@ -250,8 +250,8 @@ Anzengruberstr.	1 12865,8346 12689,8289
 #: by: https://www.nalepaland.de/
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2020-08-04 (mapillary)
-#: check_frequency: 180d
+#: last_checked: 2021-02-01 (offen, allerdings "Betreten für Unbefugte verboten")
+#: check_frequency: 60d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
 #: note: nur für "Linienverkehr" (Straßenbahnen) offiziell frei
@@ -516,7 +516,8 @@ Johannes-Itten-Str.	1 12797,16983 12850,16911 12813,16884
 #: by: Stefan Klinkusch
 #: confirmed_by: srt
 Riensbergstr.	1 -740,15316 -763,15487
-Saganer Str.: Bahngelände	2 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
+Saganer Str.: Bahngelände	2 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159 17282,9135
+(Hönower Wiesenweg - Betriebsbahnhof Rummelsburg): Bahngelände	2 17300,9135 17284,9198
 Triniusstr.	1 18339,6660 18273,6606
 # REMOVED (hier nicht) --- Franz-Stenzer-Str.	1 20508,15792 20586,15947 20610,15993 20636,16046
 #: XXX_indoor bei osm fehlt oneway
@@ -608,8 +609,7 @@ Paul-Francke-Str.	1 9916,18610 9994,18595 10013,18545 10006,18502 9901,18522
 #: confirmed_by: srt
 Zellerfelder Str.	1 11526,18929 11468,19106
 Storkower - Einsteinstr.	1 13110,14879 13143,14935 13163,14924 13185,14912 13151,14855
-#: by: Ilka (64)
-Hönower Wiesenweg: Bahngelände	2 17271,9159 17308,9090
+# REMOVED (hier noch nicht) --- #: by: Ilka (64) --- Hönower Wiesenweg: Bahngelände	2 17282,9135 17308,9090
 #: by: Norbert Rupsch: vvv
 #: confirmed_by: srt
 Adlershofer Str.	1 21633,4355 21585,4459
@@ -3250,7 +3250,7 @@ Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
 #: osm_watch: way id="610818155" version="4"
-#: last_checked: 2021-01-28
+#: last_checked: 2021-02-01
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
@@ -3630,6 +3630,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/erneuerung-der-wuhletalbruecke_a262480 (Abriss und Neubau ab 2022)
 #: by: https://abendblatt-berlin.de/2020/04/25/berlin-marzahn-bazubeginn-fuer-wuhletalbruecke-erst-ab-2022/
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9099 (Empfehlung für vorzeitigen Abriss)
+#: by: https://www.berliner-woche.de/marzahn/c-bauen/abriss-der-wuhletalbruecke-startet-ende-2021_a299255 (Abschluss der Baumaßnahme 2026/2027)
 #: XXX Wann wird sie wieder eröffnet?
 #: source_id: 2147344261 (bis Ende 2021)
 #: source_id: 2147344262 (bis Ende 2021)

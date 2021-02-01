@@ -1485,7 +1485,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2020-12-26 vvv
+#: last_checked: 2021-02-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
@@ -3032,10 +3032,10 @@ Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 #: by: https://api.fixmyberlin.de/api/plannings/120
 #: by: https://twitter.com/GBinfraVelo/status/1326165780937977856 (erste Markierung)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/fahrrat-marzahn-hellersdorf-fordert-kreuzungsumbau-mehr-abstellanlagen-und-eine-fahrradstrasse_a292385 (Erwähnung der Grünmarkierung)
-#: by: http://www.infravelo.de/projekt/allee-der-kosmonauten/ (bis 1. Quartal 2021)
+#: by: http://www.infravelo.de/projekt/allee-der-kosmonauten/ (bis 1. Quartal 2021) (Arbeiten pausieren bis zum Frühjahr 2021)
 #: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 30.11.2020; mittlerweile inaktiv)
 #: last_checked: 2020-12-28 (nur vereinzelte Grünmarkierungen)
-#: check_frequency: 45d
+#: check_frequency: 75d
 #: next_check: 2021-03-31
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2020-11-30
 	RW3;RW3 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467
@@ -3621,7 +3621,7 @@ Grünmarkierung	RW3; 4574,11587 4558,11366 4546,11217 4532,11042 4521,10850 4513,
 Grünmarkierung	RW3; 4503,10497 4513,10702 4521,10850
 #: XXX Grünmarkierung und Verbreiterung der Radspur, in einem Teilabschnitt noch nicht fertig (wegen einer Hochbaustelle?)
 #: by: https://api.fixmyberlin.de/api/projects/400 ("planning")
-#: by: http://www.infravelo.de/projekt/schlueterstrasse/ (3. Quartal 2020 - 2. Quartal 2021)
+#: by: http://www.infravelo.de/projekt/schlueterstrasse/ (3. Quartal 2020 - 2. Quartal 2021) (Arbeiten pausieren bis zum Frühjahr 2021)
 #: last_checked: 2020-12-06
 #: next_check: 2021-03-15
 	RW3; 4521,10850 4532,11042 4546,11217
@@ -6719,7 +6719,8 @@ Tempo 10	RW6;RW6 11785,7583 11763,7687 11738,7790 11713,7899
 Tempo 10	RW6;RW6 14560,8528 14469,8455 14422,8407 14563,8243
 Tempo 10	RW6;RW6 14688,8355 14563,8243 14425,8116
 # 
-Tempo 10	RW6;RW6 17753,8290 17704,8327 17620,8366 17554,8458 17483,8644 17416,8767 17380,8858 17335,8971 17308,9090
+Tempo 10	RW6;RW6 17753,8290 17704,8327 17620,8366 17554,8458 17483,8644 17416,8767 17380,8858 17335,8971 17308,9090 17282,9135
+Tempo 10	RW6;RW6 17308,9090 17300,9135
 # 
 	RW3;RW3 -1872,24336 -1896,24275 -1940,24176
 10er-Zone	RW6;RW6 14567,6810 14620,6876 14751,7007 14803,7056
