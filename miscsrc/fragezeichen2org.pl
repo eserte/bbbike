@@ -49,6 +49,10 @@ my $plan_dir;
 my $with_searches_weight;
 my $with_nextcheckless_records = 1;
 my $expired_statistics_logfile;
+my $compile_command = do {
+    my $pmake = get_pmake;
+    "(cd ../data && $pmake fragezeichen-nextcheck.org-exact-dist HOME=$ENV{HOME})";
+};
 my $debug;
 GetOptions(
 	   "with-dist!" => \$with_dist,
@@ -60,9 +64,12 @@ GetOptions(
 	   "with-searches-weight!" => \$with_searches_weight,
 	   "with-nextcheckless-records!" => \$with_nextcheckless_records,
 	   'expired-statistics-logfile=s' => \$expired_statistics_logfile,
+	   "compile-command=s" => \$compile_command,
 	   "debug" => \$debug,
 	  )
-    or die "usage: $0 [--nowith-dist] [--max-dist km] [--dist-dbfile dist.db] [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] [--with-searches-weight] [--nowith-nextcheckless-records] bbdfile ...";
+    or die "usage: $0 [--nowith-dist] [--max-dist km] [--dist-dbfile dist.db]
+    [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] [--with-searches-weight]
+    [--nowith-nextcheckless-records] [--debug] [--compile-command ...] bbdfile ...\n";
 
 # --with-dist requires one or two reference positions. Use from
 # cmdline arguments, or look into the user's bbbike config.
@@ -700,7 +707,6 @@ if ($expired_statistics_logfile) {
 }
 
 {
-    my $pmake = get_pmake;
     print <<"EOF";
 * settings :noexport:
 #+SEQ_TODO: TODO | PLAN | DONE
@@ -711,7 +717,7 @@ if ($expired_statistics_logfile) {
 #+OPTIONS: author:nil
 #+HTML_HEAD: <style>div.outline-3 { background: #EEE; margin-top:10px; margin-bottom:10px; padding-top:2px; padding-bottom:2px; } .timestamp { color: #6e6e6e; }</style>
 # Local variables:
-# compile-command: "(cd ../data && $pmake fragezeichen-nextcheck.org-exact-dist HOME=$ENV{HOME})"
+# compile-command: "$compile_command"
 # End:
 EOF
     # Alternative compile command (without using the dist.db):
