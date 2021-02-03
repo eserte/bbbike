@@ -1061,8 +1061,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
 #: by: https://taz.de/Pop-up-Bikelane-weicht-Baustelle/!5699409/ (wird der bauliche Radweg explizit abgesperrt? Ende: 2020-10-10)
 #: note: abschnittsweise mit Baken abgesichert
-#: osm_watch: way id="203884042" version="14"
-#: osm_watch: way id="4615746" version="26"
+#: osm_watch: way id="203884042" version="15"
 #: last_checked: 2021-01-17
 #: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
@@ -1074,7 +1073,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487
 #: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
 #: note: abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="4615746" version="26"
+#: osm_watch: way id="4615746" version="27"
 #: source_id: 2147346157 (bis 19.10.2020)
 #: last_checked: 2021-01-17
 #: check_frequency: 60d
@@ -2075,12 +2074,12 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
 #: last_checked: 2021-01-26 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
-#: osm_watch: way id="284761029" version="15"
+#: osm_watch: way id="284761029" version="16"
 Radspur hinter den parkenden Autos	RW3; 12006,12464 11920,12266
 mit provisorischen Baken	RW3; 11920,12266 11872,12185 11764,12001
 	RW4; 11764,12001 11872,12185
-#: osm_watch: way id="4616518" version="27"
-1Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
+#: osm_watch: way id="4616518" version="28"
+Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 Radspur hinter den parkenden Autos	RW3; 12006,12464 12028,12519
 #: last_checked ^^^
 #: XXX ^^^
@@ -3067,7 +3066,7 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: source_id: 2147345793 (inaktiv)
 #: XXX provisorische Radwegführung
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
-#: last_checked: 2021-01-02 (osm)
+#: last_checked: 2021-02-02 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2021-03-22
 	RW8; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
@@ -3228,7 +3227,7 @@ neues Verbundsteinpflaster	RW1; 12547,4391 12731,4841
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954975.php (nördliche Seite zwischen Riesestr. und Britzer Damm, südliche Seite zwischen Britzer Damm und Buschkrugallee; Markierung ab 6.7.2020; temporär bis zum 31. Dezember 2020)
 #: by: https://www.bahninfo-forum.de/read.php?9,445440,672346#msg-672346
 #: by: https://api.fixmyberlin.de/api/projects/416
-#: osm_watch: way id="451445143" version="4"
+#: osm_watch: way id="451445143" version="5"
 #: last_checked: 2020-11-21 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
@@ -3239,7 +3238,7 @@ provisorisch geschützter Radstreifen	RW4; 12987,5263 13046,5267 13112,5253 13250
 #: source_id: 2147346600 (bis 26.3.2021)
 #: next_check: 2021-03-26
 	RW0; 13508,5238 13594,5240 13607,5241
-#: osm_watch: way id="824542507" version="2"
+#: osm_watch: way id="824542507" version="3"
 provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -3248,7 +3247,7 @@ provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
 	RW1; 13809,5257 13607,5241 13594,5240 13508,5238 13327,5234 13250,5234
 #: next_check_id: POPUPRADWEGE-2020
 #: XXX existierender Bürgersteigradweg wurde zugunsten des Popup-Radwegs aufgehoben
-#: osm_watch: way id="4603499" version="31"
+#: osm_watch: way id="4603499" version="32"
 #: last_checked: 2020-10-25
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2020-12-31
@@ -4098,7 +4097,7 @@ Gehweg für Radfahrer frei	RW1; 9073,20606 9027,20603 8904,20596
 #: by: https://api.fixmyberlin.de/api/projects/428
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/pop-up-radweg-bleibt-erhalten_a297530
 #: confirmed_by: srt
-#: osm_watch: way id="40451057" version="17"
+#: osm_watch: way id="40451057" version="18"
 #: last_checked: 2020-11-28
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2020-12-31
@@ -6394,10 +6393,10 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: last_checked: 2021-01-25 (viz) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-09-30 vvv
-#: osm_watch: way id="4615031" version="37"
+#: osm_watch: way id="4615031" version="38"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 provisorisch geschützter Radstreifen	RW4; 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
-#: osm_watch: way id="41954398" version="17"
+#: osm_watch: way id="41954398" version="18"
 provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 #: next_check ^^^
 #: check_frequency ^^^
@@ -6575,7 +6574,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1022575.php ("Test von Protektionselementen")
 #: by: https://portal1467.webcam-profi.de/ (Webcam)
 #: by: http://www.infravelo.de/projekt/hallesches-ufer/ (Verstetigung, 1. Quartal 2020 - 4. Quartal 2020)
-#: osm_watch: way id="4401920" version="49"
+#: osm_watch: way id="4401920" version="50"
 #: confirmed_by: srt
 #: last_checked: 2021-01-22
 # REMOVED --- #: next_check: 2020-12-31
@@ -6622,8 +6621,8 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020) (inaktiv)
 #: source_id: 2147345931 (bis 26.2.2021)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
-#: osm_watch: way id="169738742" version="19"
-#: osm_watch: way id="335487059" version="14"
+#: osm_watch: way id="169738742" version="20"
+#: osm_watch: way id="335487059" version="15"
 #: last_checked: 2021-01-22 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-03-31 vvv
@@ -6669,7 +6668,7 @@ provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: by: https://abendblatt-berlin.de/2020/04/23/berlin-mitte-erster-temporaerer-radweg-eingerichtet/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: by: http://www.infravelo.de/projekt/radfahren-am-landwehrkanal-suedseite/ (Verstetigung, 4. Quartal 2020 - 1. Quartal 2021)
-#: osm_watch: way id="34057952" version="34"
+#: osm_watch: way id="34057952" version="35"
 #: last_checked: 2021-01-22 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-03-31 vvv
