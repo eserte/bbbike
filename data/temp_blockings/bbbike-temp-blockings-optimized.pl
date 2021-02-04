@@ -2358,7 +2358,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
-# REMOVED (hier nicht mehr?) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
+# REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
+#: last_checked: 2021-02-04
 #: next_check: 2021-02-15
 	q4::inwork 13508,15912 13312,16027 13189,16089 12943,16214
 ',
@@ -2776,7 +2777,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-01-30
+#: last_checked: 2021-02-04
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3316,6 +3317,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Hönower Wiesenweg: Durchfahrt wegen Bauarbeiten möglicherweise nicht mehr möglich',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: LANGHANS-2021
+#: last_checked: 2021-02-04
+#: next_check: 2021-02-15
+	q3::inwork; 13307,15758 13214,15830 13086,15907 12842,16032
+',
+         'from' => 1611529200,
+         'id' => 3328,
+         'text' => 'Lehderstr.: Einbahnstraßenregelung, gesperrt Richtung Westen, voraussichtlich bis 15.2.2021',
+         'type' => 'handicap',
+         'until' => 1613430000
        }
      
 );

@@ -826,8 +826,7 @@ Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr., Gehweg benutzen	q4+::inwor
 # 
 ### Weiﬂensee ###
 # 
-#: last_checked: 2020-12-30
-Charlottenburger Str.: Einbahnstraﬂenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
+# REMOVED (fertig) --- #: last_checked: 2020-12-30 --- Charlottenburger Str.: Einbahnstraﬂenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
 # 
 ### Pankow ###
 # 
@@ -3508,6 +3507,7 @@ Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fuﬂg‰nger	q1 16894,10003 1
 Mercedes-Platz: Fuﬂg‰ngerzone	q4 13150,11101 13063,11147 12984,11194
 Mercedes-Platz: Fuﬂg‰ngerzone	q4 12990,11006 13063,11147
 (Abbestr. - Otto-Suhr-Allee): einige Fuﬂg‰nger	q1 4674,12076 4608,11935 4596,11912
+(Kniprodestr./Michelangelostr. - Puccinistr.): kurze Rampe	q2 13905,15306 13809,15370
 # 
 ######################### User Contributions #################################
 # 
@@ -4844,9 +4844,7 @@ Bernhard-B‰stlein-Str.: enge Straﬂe	q0- 15354,13998 15487,14047 15595,14041 1559
 Kulmseestr.: einige Fuﬂg‰nger	q1 20001,12368 20062,12353 20156,12311
 Kulmseestr.: einige Fuﬂg‰nger	q1 20252,12262 20303,12230
 #: by: ^^^
-#: by: Andreas Wettig:
-#: confirmed_by: srt
-(Kniprodestr./Michelangelostr. - Puccinistr.): Fuﬂweg mit Bordsteinkanten	q2- 13973,15259 13905,15306 13809,15370
+# REMOVED (hmmm, warum habe ich das confirmed? aber siehe auch die kurze Rampe oben) --- #: by: Andreas Wettig: --- #: confirmed_by: srt --- (Kniprodestr./Michelangelostr. - Puccinistr.): Fuﬂweg mit Bordsteinkanten	q2- 13973,15259 13905,15306 13809,15370
 # REMOVED (existiert nicht mehr) --- #: by: Sebastian Koch: --- (Gartenstr. - Tychyer Str.): sehr enger Trampelpfad	q2 21214,11331 21257,11323 21286,11319 21300,11369
 #: by: Elke Ortloff:
 Eisweg: enge Straﬂe	q1+ 23569,10956 23577,10915 23608,10902 23596,10848 23561,10712 23569,10693

@@ -1062,7 +1062,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://taz.de/Pop-up-Bikelane-weicht-Baustelle/!5699409/ (wird der bauliche Radweg explizit abgesperrt? Ende: 2020-10-10)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="15"
-#: last_checked: 2021-01-17
+#: last_checked: 2021-02-04
 #: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1075,7 +1075,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="27"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2021-01-17
+#: last_checked: 2021-02-04
 #: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
@@ -1366,7 +1366,7 @@ Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2021-01-09
+#: last_checked: 2021-02-04 (mapillary)
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1379,7 +1379,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: source_id: INKO_113041
 #: source_id: 2147339528 (bis 8.6.2020) (inaktiv)
 #: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2021-01-09
+#: last_checked: 2021-02-04 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2021-10-31
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
@@ -2161,7 +2161,7 @@ Verbundsteinpflaster, einige Wurzelhebungen	RW1; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2020-12-21 (daf)
+#: last_checked: 2021-02-04
 #: check_frequency: 90d
 #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -2329,9 +2329,9 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20201122 (geschützt oder ungeschützt?)
 #: by: http://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023)
-#: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019)
-#: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019)
-#: last_checked: 2020-12-18
+#: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
+#: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
+#: last_checked: 2021-02-04
 #: check_frequency: 180d
 #: next_check: 2023-12-31
 	RW1;RW1 13438,14675 13731,14200 13879,13967
@@ -5225,8 +5225,11 @@ Tempo 10	RW6;RW6 18023,833 17937,958 17839,905
 Gehweg für Radfahrer frei	RW1; 18166,14277 18058,14269 17979,14247
 	RW1; 13186,15518 13560,15318 13692,15231 13760,15187 13808,15154 13816,15137 13823,15111 13744,15018 13647,14912 13636,14900
 	RW4; 13636,14900 13438,14675
-	RW4; 13438,14675 13636,14900 13647,14912 13744,15018 13823,15111 13816,15137 13808,15154 13760,15187
-	RW3; 13760,15187 13692,15231 13560,15318 13186,15518
+	RW4; 13438,14675 13636,14900
+	RW3; 13636,14900 13647,14912 13744,15018
+	RW4; 13744,15018 13823,15111 13816,15137 13808,15154 13760,15187 13692,15231
+	RW3; 13692,15231 13560,15318
+	RW4; 13560,15318 13186,15518
 zwischen Abbiegespur und Ampel wenige Meter Busspur	RW3; 13186,15518 13078,15586
 	RW3; 13078,15586 13186,15518
 #: by: Grönwoldt:
