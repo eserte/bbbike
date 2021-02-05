@@ -208,7 +208,7 @@ Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehw
 # 
 #: next_check_id: CHAUSSEE-2020
 #: note: laut rbbtext Ende der Bauarbeiten 16.7.2021
-#: last_checked: 2020-11-07
+#: last_checked: 2021-02-05
 #: check_frequency: 90d
 #: next_check: 2021-07-16
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -242,7 +242,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/volt-berlin-baufeld-e3a.312/page-8#post-14027
 #: XXX Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straße, Fahrbahn ist noch abgesperrt
-#: last_checked: 2020-12-18 (architektur-urbanistik)
+#: last_checked: 2021-02-05
 #: check_frequency: 90d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
@@ -591,7 +591,7 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 #: by: http://www.infravelo.de/projekt/bundesallee/ (Erwähnung der Hochbauarbeiten an der Pariser Str.; Verbesserungen für den Radverkehr bis 4. Quartal 2023)
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
-#: last_checked: 2021-01-08 (webcam)
+#: last_checked: 2021-01-31 (architektur-urbanistik)
 #: check_frequency: 60d
 #: next_check: 2022-10-01
 # REMOVED --- #: next_check: 2020-02-03
@@ -3508,6 +3508,8 @@ Mercedes-Platz: Fußgängerzone	q4 13150,11101 13063,11147 12984,11194
 Mercedes-Platz: Fußgängerzone	q4 12990,11006 13063,11147
 (Abbestr. - Otto-Suhr-Allee): einige Fußgänger	q1 4674,12076 4608,11935 4596,11912
 (Kniprodestr./Michelangelostr. - Puccinistr.): kurze Rampe	q2 13905,15306 13809,15370
+#: note: früher (bis ca. 2020) für Radfahrer explizit frei
+An der Kieler Brücke: Fußgängerzone	q3 7877,14504 7804,14445
 # 
 ######################### User Contributions #################################
 # 

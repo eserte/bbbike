@@ -27920,7 +27920,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2021-01-20 (daf)
+#: last_checked: 2021-02-05
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28747,7 +28747,7 @@ EOF
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=627690&postcount=126 (offen)
 # REMOVED --- #: priority: #C --- #: XXX wann werden die Bauzäune entfernt? --- #: last_checked: 2019-03-05 --- #: check_frequency: 60d
 	2::inwork 8169,13705 8131,13770 8086,13862 8057,13923
-# REMOVED (hier nicht mehr) ---	2::inwork 8103,13675 8169,13705
+# REMOVED (hier nicht mehr) ---	2::inwork 8103,13675 8151,13697 8169,13705
 EOF
      },
      { from  => 1548630000, # 2019-01-28 00:00
@@ -31846,8 +31846,8 @@ EOF
 EOF
      },
      { from  => 1610233200, # 2021-01-10 00:00
-       until => 1612566000, # 2021-02-06 00:00
-       text  => 'L30: Sperrung der Unterführung unter der A10, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 11.01.2021 bis 05.02.2021',
+       until => $isodate2epoch->("2021-02-12 18:00:00"), # 1612566000, # 2021-02-06 00:00
+       text  => 'L30: Sperrung der Unterführung unter der A10, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 11.01.2021 bis 12.02.2021',
        type  => 'gesperrt',
        source_id => 'LS/721-E/21/005',
        data  => <<EOF,

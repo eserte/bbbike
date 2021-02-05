@@ -379,12 +379,13 @@ neu asphaltiert, relativ breit	RW1; 10501,11056 10256,11160 10020,11262
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, s¸dliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaﬂnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
-#: last_checked: 2021-01-26 vvv
+#: last_checked: 2021-02-05 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 m‰ﬂige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
 # REMOVED (vorher) --- m‰ﬂige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056
-#: XXX hier Bauarbeiten der Wasserbetriebe am Gehweg, laut Bauschild bis Mai 2021
+#: XXX hier Bauarbeiten der Wasserbetriebe am Gehweg, laut Bauschild bis Mai 2021, laut rbbtext bis 28.5.2021
+#: next_check: 2021-05-28
 provisorische schmale Radspur	RW3; 10256,11160 10501,11056
 m‰ﬂige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10501,11056 10637,10996 10684,10975
 m‰ﬂige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056
@@ -394,8 +395,8 @@ eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht f¸r Radfa
 m‰ﬂiger Verbundsteinpflasterradweg	RW1; 10839,10907 10794,10927
 #: check_frequency ^^^
 #: XXX zurzeit sind hier Bauarbeiten
-#: last_checked: 2021-01-21
-#: check_frequency: 10d
+#: last_checked: 2021-02-05
+#: check_frequency: 14d
 # REMOVED ---	RW1; 10794,10927 10779,10934 10684,10975
 provisorische Radspur	RW3; 10794,10927 10779,10934 10684,10975
 #: last_checked ^^^
@@ -2072,7 +2073,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: http://www.infravelo.de/projekt/lichtenberger-strasse-1/
 #: source_id: 2147346610
 #: XXX wird hier noch was ge‰ndert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-01-26 vvv
+#: last_checked: 2021-02-05 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
 #: osm_watch: way id="284761029" version="16"
 Radspur hinter den parkenden Autos	RW3; 12006,12464 11920,12266
@@ -5705,8 +5706,7 @@ Radweg nur aufgemalt	RW1; 4224,23074 4030,23054
 	RW4;RW3 10285,12306 10357,12356 10416,12394
 #: by: Traudel Coker
 	RW6;RW6 -8756,13356 -8847,13363 -8846,13398 -8702,13400
-Tempo 10	RW6;RW6 7938,14423 7927,14438 7877,14504
-Fuﬂg‰ngerzone, Radfahrer frei	RW6;RW6 7877,14504 7804,14445
+# REMOVED (mittlerweile Tempo-30-Zone) --- Tempo 10	RW6;RW6 7938,14423 7927,14438 7877,14504
 	RW3; 8406,14507 8442,14456
 # REMOVED --- #: next_check_id: CHAUSSEESTR-2016 --- #: XXX noch provisorisch, wird aber vermutlich dauerhaft bleiben --- #: last_checked: 2018-04-10 --- #: next_check: 2018-05-15
 	RW4; 8442,14456 8490,14397 8570,14299

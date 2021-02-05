@@ -1630,6 +1630,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 (Am Hamburger Bahnhof - Lydia-Rabinowitsch-Str.)	NN 7997,13892 7959,13982
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7802,14250 7781,14238 7697,14187
 (Hedwig-Porschütz-Str. - Uferweg)	NN 7802,14250 7830,14268
+Lisa-Fittko-Str.	N 7740,13950 7820,13994
 #: note: Privatstraße
 Jean-Monnet-Str.	N 7995,13537 8048,13578
 Luisenstr. (Mitte)	H 8648,13498 8665,13353 8701,13058 8711,12986 8715,12956 8726,12861 8732,12804 8737,12757 8752,12647 8754,12622 8756,12608 8760,12585
@@ -13903,9 +13904,12 @@ Scharnhorststr. (Mitte)	N 8453,13611 8313,13839 8200,14016 8184,14052 8152,14130
 (Straße zum Kraftwerksgelände)	NN 8478,13941 8453,13966 8388,13993
 (Weg an der Südpanke)	NN 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8294,14194
 (Weg an der Südpanke - Am Pankepark)	NN 8307,14175 8323,14142 8282,14116
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2012
-#: by: http://www.berlin.de/ba-mitte/bvv-online/___tmp/tmp/45081036205037178/205037178/00088872/72-Anlagen/02/Anlage-An_der_Kieler_Bruecke.pdf
-An der Kieler Brücke	N 7938,14423 7927,14438 7877,14504 7804,14445
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2012 vvv
+#: by: http://www.berlin.de/ba-mitte/bvv-online/___tmp/tmp/45081036205037178/205037178/00088872/72-Anlagen/02/Anlage-An_der_Kieler_Bruecke.pdf vvv
+An der Kieler Brücke	N 7938,14423 7927,14438 7877,14504
+An der Kieler Brücke	NN 7877,14504 7804,14445
+#: by: ^^^
+#: by: ^^^
 (an der Panke)	NN 7872,14510 7787,14473
 (an der Panke)	NN 7872,14510 7877,14504
 #: note: u.U. bezieht sich die Mauerwegausschilderung auf diesen Weg vvv
@@ -15707,9 +15711,9 @@ Hilda-Geiringer-Weg	N 8236,13495 8241,13393
 Hilda-Geiringer-Weg	N 8167,13457 8174,13390 8241,13393 8281,13394 8302,13430 8293,13527
 Am Hamburger Bahnhof	N 8187,13472 8183,13482 8141,13580 8103,13675
 #: note: durch Poller abgesperrter Bereich
-Am Hamburger Bahnhof	N 8103,13675 8025,13835
+Am Hamburger Bahnhof	N 8103,13675 8059,13765 8025,13835
 Am Hamburger Bahnhof	N 8025,13835 7997,13892
-(Am Hamburger Bahnhof - Uferweg)	NN 8103,13675 8169,13705
+(Am Hamburger Bahnhof - Uferweg)	NN 8103,13675 8151,13697 8169,13705
 (Am Hamburger Bahnhof - Uferweg)	NN 8025,13835 8086,13862
 (am 50hertz-Gebäude)	N 8059,13551 8141,13580
 (Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 7769,14364 7746,14401 7705,14383

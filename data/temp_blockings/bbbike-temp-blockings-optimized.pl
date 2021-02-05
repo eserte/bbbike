@@ -2156,7 +2156,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2021-01-20 (daf)
+#: last_checked: 2021-02-05
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -3208,9 +3208,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1610233200,
          'id' => 3318,
          'source_id' => 'LS/721-E/21/005',
-         'text' => 'L30: Sperrung der Unterführung unter der A10, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 11.01.2021 bis 05.02.2021',
+         'text' => 'L30: Sperrung der Unterführung unter der A10, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 11.01.2021 bis 12.02.2021',
          'type' => 'gesperrt',
-         'until' => 1612566000
+         'until' => 1613149200
        },
        {
          'data' => '#: next_check_id: PARKSTADTKARLSHORST-2021

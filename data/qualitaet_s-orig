@@ -11133,7 +11133,10 @@ Kieler Brücke: Holzbohlen	Q1 7780,14431 7740,14409
 (Mariendorfer-Hafen-Weg - Im Marienpark): unbefestigter Weg	Q2 8016,3651 8035,3657
 (Mariendorfer-Hafen-Weg - Im Marienpark): Kopfsteinpflaster	Q2 8035,3657 8046,3626 8070,3563
 Fregestr.: asphaltierter Radweg	Q0 5622,6400 5582,6360
-Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8187,13472 8183,13482 8141,13580 8103,13675 8025,13835 7997,13892
+Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8187,13472 8183,13482 8141,13580 8103,13675
+#: note: Asphalt oder asphaltähnlich; bunt bemalt
+Am Hamburger Bahnhof: Asphalt	Q0 8103,13675 8059,13765
+Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8059,13765 8025,13835 7997,13892
 (am 50hertz-Gebäude): gepflastert	Q2+ 8059,13551 8141,13580
 (Vorfahrt Petruskirche): Kopfsteinpflaster	Q2 5393,2053 5452,2077
 An der Neumark: Verbundsteinpflaster	Q1+ 11283,3774 11300,3709 11357,3720 11378,3626
@@ -11456,7 +11459,9 @@ Weinmeisterhornweg: unbefestigte Straße	Q2 -6854,12478 -7196,12754
 Oppelner Str.: stellenweise Kleinpflastersteine	Q1+ 12897,10439 12978,10581
 Boetticherstr.: Beton	Q0 2434,4299 2417,4327
 Bahndamm - Elsenstr.: unbefestigter Weg	Q2 13953,9372 13923,9405
-(Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8103,13675 8169,13705
+#: note: Asphalt oder asphaltähnlich; bunt bemalt
+(Am Hamburger Bahnhof - Uferweg): Asphalt	Q0 8103,13675 8151,13697
+(Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8151,13697 8169,13705
 (Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2 8025,13835 8086,13862
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1- 8295,13531 8290,13538 8224,13634
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 8224,13634 8169,13705 8131,13770 8086,13862 8057,13923
@@ -11699,7 +11704,7 @@ Sophie-Charlotten-Str.: Asphalt mit Schäden	Q1+ 2332,12793 2397,12513 2411,12428
 (Hedwig-Porschütz-Str. - Uferweg/Kieler Brücke): Asphalt	Q0- 7757,14318 7763,14332 7754,14354 7769,14364
 #: next_check_id: EUROPACITY-2015
 #: XXX nach den Bauarbeiten wird hier der parallel führende asphaltierte Weg eröffnet
-#: last_checked: 2020-10-10
+#: last_checked: 2021-02-05
 #: check_frequency: 120d
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1 7769,14364 7746,14401
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1 7746,14401 7705,14383
@@ -11795,8 +11800,8 @@ Fredersdorfer Str.: Asphalt mit Rissen	Q0- 12990,12108 13081,12196
 Ruppiner Chaussee: Asphalt, einige Schäden	Q0- 1461,21203 1427,21237 1347,21428 1254,21718 1146,21901 919,22068 488,22275 455,22285 355,22344 231,22418 21,22545 -48,22595 -130,22647 -188,22682 -264,22729 -440,22841 -656,23011
 (Einfahrt Bauhaus): Asphalt	Q0 4988,17172 5020,17157 5158,17138
 #: next_check_id: BEBAUUNGSPLAN-XVI-81
-#: osm_watch: way id="567597386" version="5"
-#: osm_watch: way id="567597383" version="7"
+#: osm_watch: way id="567597386" version="6"
+#: osm_watch: way id="567597383" version="8"
 #: add_fragezeichen: wann wird die Fahrbahndecke endgültig hergestellt? vvv
 #: last_checked: 2020-06-14 vvv
 #: check_frequency: 120d vvv
@@ -11940,6 +11945,7 @@ Parallelweg am Eichgestell - Wasserwerk Wuhlheide: Parkweg, einige Pfützen mögli
 Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6959 19080,6986
 (Hoher Wallgraben - Lehndorffstr.): unbefestigter Weg	Q2+ 18101,8044 18186,8081 18276,8136
 (Abbestr. - Otto-Suhr-Allee): glatte Pflasterung	Q0- 4674,12076 4608,11935 4596,11912
+Lisa-Fittko-Str.: Asphalt	Q0 7740,13950 7820,13994
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
