@@ -36,9 +36,9 @@ jobs:
       # the already installed libgd3 conflicts with libgd-dev to be installed
       # also, /etc/apt/sources.list should be sufficient; all the other repositories are possibly problematic
       run: |
-        sudo apt-get remove -y libgd3
         sudo rm -f /etc/apt/sources.list.d/*.list
         sudo apt-get update -qq
+        sudo apt-get remove -y libgd3 nginx
       if: "startsWith(matrix.os, 'ubuntu-')"
     - uses: actions/checkout@v2
     - name: Build and test
