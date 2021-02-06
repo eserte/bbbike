@@ -122,12 +122,12 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 ### Mariendorf ###
 # 
 #: by: https://twitter.com/VIZ_Berlin/status/1355154731493191681
-#: XXX mindestens bis zum 5.2.2021 gesperrt
-#: source_id: 2147346843
+#: XXX laut rbbtext bis zum 12.2.2021 gesperrt
+#: source_id: 2147346843 (kein Endedatum)
 #: also_indoor: traffic (H,G)
 #: last_checked: 2021-01-29 (viz twitter)
-#: check_frequency: 30d
-#: next_check: 2021-02-05
+#: check_frequency: 14d
+#: next_check: 2021-02-12
 Rixdorfer Str.: Wasserrohrbruch, einige Meter Fahrbahn hinter der Eisenacher Str. Richtung Süden gesperrt	q2::inwork; 10412,4552 10288,4354
 # 
 # REMOVED --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=45739 --- #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/kosleckweg-mit-kopfsteinpflaster-ist-zur-vielbefahrenen-strasse-mutiert_a202642 (Ende der Bauarbeiten nicht vor August 2019) --- #: source_id: 2147342785 (Gesamtbaumaßnahme bis Mitte September 2019) --- #: XXX laut fritz bis 2.9.2019, mittlerweile "bis auf Weiteres" --- #: also_indoor: traffic (H,ex-G) --- #: priority: #A --- #: last_checked: 2019-08-03 (mapillary) --- #: next_check: 2019-09-17 --- #: valid: -20190917 --- Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
@@ -500,7 +500,7 @@ Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 # 
 #: XXX außerdem nach den Bauarbeiten die Einbahnstraße in gesperrt-orig wieder aktivieren
 #: osm_watch: way id="764599229" version="3"
-#: last_checked: 2020-12-25 (mapillary)
+#: last_checked: 2021-02-06
 #: check_frequency: 45d
 Jahnstr.: Bauarbeiten, etwa 50m der Fahrbahn sind gesperrt	q3::inwork 11500,9116 11509,9392
 # 
@@ -2587,7 +2587,7 @@ Springpfuhlpark: Fußgänger	q2 19524,14474 19534,14459 19535,14448 19545,14290 19
 (Am Rosengarten - Lütztalweg): sehr eng	q4 18834,12228 18867,12265 18917,12271
 #: XXX_prog BS an der Ostseite (oder gab es hier irgendwo eine Absenkung), ansonsten q1
 Dürerplatz: einige Fußgänger, Bordstein	q2 6234,7020 6276,6995
-Straße 17: kurze Rampe	q3 7307,7425 7307,7457
+Straße 17: kurze Rampe	q3 7307,7435 7296,7443
 #: note: es gibt an der Baustraße (?) noch zwei sehr weite Drängelgitter, die kaum eine Beeinträchtigung darstellen
 (Lortzingstr. - Mauerpark): einige Fußgänger	q1 10037,15421 10052,15429 10070,15438 10076,15455 10092,15461 10105,15454 10127,15463 10155,15473 10186,15481
 (Lortzingstr. - Mauerpark): einige Fußgänger	q1 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454

@@ -484,7 +484,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6477,8654 6523,8567
 	RW1; 7938,7406 8069,7288 8150,7200 8224,7148 8319,7084
 	RW1; 8319,7084 8229,7154 8176,7194 8074,7295 7938,7406
 	RW1;RW1 7480,7683 7496,7716 7499,7880 7499,7937 7498,8062 7497,8168
-Gehwegplatten mit Unebenheiten	RW1;RW1 6389,7196 6500,7172 6640,7138 6762,7109 6817,7101 6894,7102 6991,7126 7101,7198 7227,7352 7307,7457 7422,7607 7480,7683
+Gehwegplatten mit Unebenheiten	RW1;RW1 6389,7196 6500,7172 6640,7138 6762,7109 6817,7101 6894,7102 6991,7126 7101,7198 7227,7352 7296,7443 7307,7457 7422,7607 7480,7683
 	RW1; 4061,6753 4021,6729
 	RW1; 4074,6681 4103,6716
 	RW1; 4021,6729 3938,6651 3925,6604
@@ -6579,9 +6579,9 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: by: http://www.infravelo.de/projekt/hallesches-ufer/ (Verstetigung, 1. Quartal 2020 - 4. Quartal 2020)
 #: osm_watch: way id="4401920" version="50"
 #: confirmed_by: srt
-#: last_checked: 2021-01-22
+#: last_checked: 2021-02-06
 # REMOVED --- #: next_check: 2020-12-31
-provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9154,10348 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
+provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9154,10348 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
 # 
 #: note: Spielstraßenschild am südlichen Ende
 	RW6;RW6 13392,9225 13421,9260
@@ -6626,7 +6626,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="20"
 #: osm_watch: way id="335487059" version="15"
-#: last_checked: 2021-01-22 vvv
+#: last_checked: 2021-02-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-03-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -6646,7 +6646,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Verstetigung)
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2021-01-21 vvv
+#: last_checked: 2021-02-06 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -6670,9 +6670,9 @@ provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.924744.php (Potsdamer Brücke bis Flottwellstr.)
 #: by: https://abendblatt-berlin.de/2020/04/23/berlin-mitte-erster-temporaerer-radweg-eingerichtet/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
-#: by: http://www.infravelo.de/projekt/radfahren-am-landwehrkanal-suedseite/ (Verstetigung, 4. Quartal 2020 - 1. Quartal 2021)
+#: by: http://www.infravelo.de/projekt/radfahren-am-landwehrkanal-suedseite/ (Verstetigung, 4. Quartal 2020 - 1. Quartal 2021) (mittlerweile: existiert nicht mehr)
 #: osm_watch: way id="34057952" version="35"
-#: last_checked: 2021-01-22 vvv
+#: last_checked: 2021-02-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-03-31 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8804,10303 9145,10290 9368,10211 9416,10196

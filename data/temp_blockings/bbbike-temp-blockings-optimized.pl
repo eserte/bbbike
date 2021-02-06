@@ -2355,7 +2355,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346832 (Gesamtbaumaßnahme bis Mitte August 2021)
 #: by: https://viz.berlin.de/2021/01/verkehrsvorschau25012021/ ("Mitte Februar (2021) wird die Sperrung um den Abschnitt Heinersdorfer Straße - Roelckestraße erweitert")
 #: by: https://viz.berlin.de/2021/01/langhansstr-sperrung/
-#: also_indoor: traffic
+#: also_indoor: traffic (H,G)
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
@@ -2669,26 +2669,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
-#: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nördliche Abschnitt)
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/vattenfall-baut-in-der-lauenburger-und-friedrichsruher-strasse_a258712
-#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
-#: also_indoor: traffic vvv
-#: last_checked: 2021-01-17 (mapillary)
-	q4::inwork 6007,5785 6007,5882
-#: last_checked: 2021-01-17 (mapillary)
-	q4::inwork 6007,5882 6124,5894
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => 1584255600,
-         'id' => 3208,
-         'source_id' => '2147345598',
-         'text' => 'Lauenburger Str.: Bauarbeiten zwischen Bergstr. und Friedrichsruher Str. sowie in der Friedrichsruher Str., Fahrbahn gesperrt, ab 16.03.2020, Ende unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2777,7 +2758,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-02-04
+#: last_checked: 2021-02-06
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3320,6 +3301,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: LANGHANS-2021
+#: also_indoor: traffic (H)
 #: last_checked: 2021-02-04
 #: next_check: 2021-02-15
 	q3::inwork; 13307,15758 13214,15830 13086,15907 12842,16032

@@ -143,7 +143,7 @@ Priesterweg: m‰ﬂiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/naturschutzbund-kritisiert-routenfuehrung-der-geplanten-radschnellverbindungen-durch-gruenanlagen_a288190 (naher Hans-Baluschek-Park erw‰hnt)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: osm_watch: way id="102486250" version="12"
-#: last_checked: 2020-12-19
+#: last_checked: 2021-02-05 (mapillary)
 #: check_frequency: 120d
 Priesterweg: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
@@ -935,7 +935,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der G‰rtnerstr. ab 2020 erfolgen, wenn die Baumaﬂnahme der Berliner Wasserbetriebe (ab Fr¸hjahr 2019) abgeschlossen ist.")
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-02-04
+#: last_checked: 2021-02-06
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -21520,7 +21520,8 @@ Bernulfstr.: Kopfsteinpflaster	Q3 19876,984 19988,928
 Straﬂe 17: m‰ﬂiger Sandweg	Q2 7302,7190 7305,7221
 #: corrected_by: srt (Q2 -> Q2+, hier teilweise mit Asphalt (?) versetzt)
 Straﬂe 17: m‰ﬂiger Sandweg	Q2+ 7305,7221 7304,7290
-Straﬂe 17: m‰ﬂiger Sandweg	Q2 7304,7290 7307,7425
+#: corrected_by: srt (m‰ﬂiger Sandweg, Q2)
+Straﬂe 17: schlechtes Kopfsteinpflaster	Q3 7304,7290 7307,7435
 #: by: ^^^
 # 
 #: by: Dominik (30bln): vvv
