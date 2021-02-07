@@ -2261,7 +2261,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-01-23
+#: last_checked: 2021-02-07
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -2827,12 +2827,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '# REMOVED --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
-#: last_checked: 2021-01-19
+#: last_checked: 2021-02-07
 	q4::inwork; 14490,10610 14541,10735 14675,10693
 ',
          'from' => undef,
          'id' => 3256,
-         'text' => 'Bödikerstr. und Laskerstr.: Einbahnstraßenregelung, offen Richtung Markgrafendamm',
+         'text' => 'Bödikerstr. und Laskerstr.: Einbahnstraßenregelung, offen Richtung Persiusstr.',
          'type' => 'handicap',
          'until' => undef
        },
