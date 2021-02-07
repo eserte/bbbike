@@ -14,7 +14,7 @@ install:
   - set PATH=C:\strawberry\perl\bin;C:\strawberry\perl\site\bin;C:\strawberry\c\bin;%PATH%
   - cd C:\projects\%APPVEYOR_PROJECT_NAME%\Task\BBBike\windist
 # Preliminary, addressing https://rt.cpan.org/Ticket/Display.html?id=133260
-  - cpanm --notest git://github.com/eserte/perl-tk.git@XXX-rt133260
+  - cpanm --notest Tk@804.035_501
   - cpanm --installdeps .
 # For building ext and additional tests
 # DB_File::Lock fails tests on newer perls, see https://rt.cpan.org/Ticket/Display.html?id=98224
