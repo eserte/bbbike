@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2019,2021 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ use POSIX 'strftime';
 use BBBikeUtil qw(save_pwd2 bbbike_root);
 use GPS::BBBikeGPS::MountedDevice;
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 sub usage () {
     die "usage: @{[ basename $0 ]} [--keep] [--description ...] [--number ...] directory_or_url\n";
@@ -128,10 +128,13 @@ if ($kept_file) {
 sub download_and_convert_osm {
     my $file_or_url = shift;
 
-    # XXX don't hardcode
-    my $mkgmap = "/opt/mkgmap-r2310/mkgmap.jar";
-    if (!-r $mkgmap) {
-	die "mkgmap not available";
+    my @mkgmap;
+    if (-x '/usr/bin/mkgmap') {
+	@mkgmap = ('/usr/bin/mkgmap');
+    } elsif (-f '/opt/mkgmap/mkgmap.jar') {
+	@mkgmap = (qw(java -Xmx1024m -jar), '/opt/mkgmap/mkgmap.jar');
+    } else {
+	die "Cannot find mkgmap, tried /usr/bin/mkgmap and /opt/mkgmap/mkgmap.jar\n";
     }
 
     if (!defined $description) {
@@ -166,10 +169,11 @@ sub download_and_convert_osm {
 
     {
 	my @cmd = (
-		   "java", "-Xmx1024m", "-jar", $mkgmap,
+		   @mkgmap,
 		   "--description=$description", "--mapname=$mapname",
 		   "--country-name=$country_name", "--country-abbr=$country_abbr", "--copyright-message=osm",
 		   "--latin1", "--net", "--route", "--draw-priority=15", "--style-file=" . bbbike_root . "/misc/mkgmap/srt-style",
+		   "--housenumbers",
 		   "--index", $file,
 		  );
 	warn "Run '@cmd'...\n";
@@ -183,7 +187,7 @@ sub download_and_convert_osm {
     }
     {
 	my @cmd = (
-		   "java", "-Xmx1024m", "-jar", $mkgmap,
+		   @mkgmap,
 		   "--family-id=2304", # XXX don't hardcode!
 		   "--family-name=OSM",
 		   "--description=$description",
@@ -236,8 +240,9 @@ automatically determine file name from readme file.
 
 Supports the Garmin and OSM XML gzip'd (C<.osm.gz>) formats. In the
 case of C<.osm.gz> a conversion step on the local machine is needed
-which requires the presence of C<mkgmap> (currently hardcoded to be
-located in F</opt>, see source).
+which requires the presence of C<mkgmap> (either install the
+Debian/Ubuntu package C<mkgmap>, or download manually and make it
+available as F</opt/mkgmap/mkgmap.jar>).
 
 The option C<--keep> can be used to keep the downloaded file in a
 temporary location. Only useful if URLs are used.
@@ -260,6 +265,12 @@ Download a .osm.gz extract and upload it to the Garmin device:
 Download a 2nd file:
 
     garmin-upload-map.pl https://download.bbbike.org/osm/extract/planet_7.537_47.531_205e175b.osm.gz --description Basel --number 2
+
+=head2 BUGS
+
+It seems that (some versions of?) mkgmap leaves a temporary file
+F<misc/mkgmap/typ/xM000002a.TYP> behind. This file may safely be
+removed.
 
 =head1 AUTHOR
 
