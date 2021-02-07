@@ -58,9 +58,8 @@ if ($dir_or_url =~ m{\.osm\.gz$}) {
     $dir = download_and_convert_osm($dir_or_url);
 } elsif ($dir_or_url =~ m{^https?://}) {
     require File::Temp;
-    require LWP::UserAgent;
     my $tmpdir = File::Temp::tempdir(CLEANUP => !$keep, TMPDIR => 1);
-    my $ua = LWP::UserAgent->new;
+    my $ua = _get_ua();
     my $resp = $ua->get($dir_or_url, ':content_file' => "$tmpdir/download.zip");
     $resp->is_success
 	or die "Fetching $dir_or_url failed: " . $ua->status_line;
@@ -147,14 +146,13 @@ sub download_and_convert_osm {
     }
 
     require File::Temp;
-    require LWP::UserAgent;
     my $tmpdir = File::Temp::tempdir(CLEANUP => !$keep, TMPDIR => 1);
     chdir $tmpdir
 	or die "Can't chdir to $tmpdir: $!";
 
     my $file;
     if (!$is_file) {
-	my $ua = LWP::UserAgent->new;
+	my $ua = _get_ua();
 	$file = "download.osm.gz";
 	my $resp = $ua->get($dir_or_url, ':content_file' => $file);
 	$resp->is_success
@@ -208,6 +206,13 @@ sub download_and_convert_osm {
 	or die $!;
 
     return $tmpdir;
+}
+
+sub _get_ua {
+    require LWP::UserAgent;
+    my $ua = LWP::UserAgent->new;
+    $ua->agent("garmin-upload-map/$VERSION LWP/$LWP::VERSION [part of BBBike]");
+    $ua;
 }
 
 __END__
