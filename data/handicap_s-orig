@@ -121,15 +121,7 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 # 
 ### Mariendorf ###
 # 
-#: by: https://twitter.com/VIZ_Berlin/status/1355154731493191681
-#: XXX laut rbbtext bis zum 12.2.2021 gesperrt
-#: source_id: 2147346843 (kein Endedatum)
-#: also_indoor: traffic (H,G)
-#: last_checked: 2021-01-29 (viz twitter)
-#: check_frequency: 14d
-#: next_check: 2021-02-12
-Rixdorfer Str.: Wasserrohrbruch, einige Meter Fahrbahn hinter der Eisenacher Str. Richtung Süden gesperrt	q2::inwork; 10412,4552 10288,4354
-# 
+# REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1355154731493191681 --- #: XXX laut rbbtext bis zum 12.2.2021 gesperrt --- #: source_id: 2147346843 (kein Endedatum) --- #: also_indoor: traffic (H,G) --- #: last_checked: 2021-01-29 (viz twitter) --- #: check_frequency: 14d --- #: next_check: 2021-02-12 --- Rixdorfer Str.: Wasserrohrbruch, einige Meter Fahrbahn hinter der Eisenacher Str. Richtung Süden gesperrt	q2::inwork; 10412,4552 10288,4354
 # REMOVED --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=45739 --- #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/kosleckweg-mit-kopfsteinpflaster-ist-zur-vielbefahrenen-strasse-mutiert_a202642 (Ende der Bauarbeiten nicht vor August 2019) --- #: source_id: 2147342785 (Gesamtbaumaßnahme bis Mitte September 2019) --- #: XXX laut fritz bis 2.9.2019, mittlerweile "bis auf Weiteres" --- #: also_indoor: traffic (H,ex-G) --- #: priority: #A --- #: last_checked: 2019-08-03 (mapillary) --- #: next_check: 2019-09-17 --- #: valid: -20190917 --- Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
 # 
 ### Lichtenrade ###
@@ -752,7 +744,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2021-01-22 vvv
+#: last_checked: 2021-02-06 (daf) vvv
 # REMOVED (hier kaum noch Einschränkungen) --- Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
 Bauarbeiten im Kreuzungsbereich	q3::inwork 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
