@@ -51,7 +51,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: http://www.infravelo.de/api/v1/project/9020023/
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021, Neubau Radweg)
 #: source_id: 2147343740
-#: last_checked: 2021-02-07
+#: last_checked: 2021-02-09
 #: next_check: 2021-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -76,7 +76,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9044,9753 90
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9283 (auch Bebauungsplan 2-49)
 #: by: https://api.fixmyberlin.de/api/plannings/66 (asphaltiert und verbreitert)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
-#: last_checked: 2021-02-07
+#: last_checked: 2021-02-09
 #: check_frequency: 120d
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
 #: by: ^^^
@@ -1580,7 +1580,7 @@ Seegefelder Weg: Radweg geplant	?::projected -8198,15648 -8309,15691 -8339,15657
 # 
 #: XXX ggfs. ist ein grˆﬂerer Abschnitt der Straﬂe gemeint
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
-#: osm_watch: way id="30718922" version="18"
+#: osm_watch: way id="30718922" version="19"
 #: last_checked: 2020-10-12
 #: check_frequency: 90d
 Seegefelder Str.: aus dem Radweg werden Radstreifen	?::projected -3851,14174 -3624,14113 -3552,14082
@@ -5266,6 +5266,7 @@ Bamihlstr.: Einbahnstraﬂenregelung geplant	?::projected -2563,17004 -2585,16900 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.987111.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.990003.php (Info-CafÈ)
 #: by: https://abendblatt-berlin.de/2020/09/13/gueterbahnhof-koepenick-wird-stadtquartier/
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1050632.php
 #: last_checked: 2020-09-15
 #: next_check: 2022-03-01
 G¸terbahnhof Kˆpenick: hier entsteht die Ostumfahrung Bahnhofstraﬂe	?::projected 23327,5817 23244,6154 22857,6155
@@ -5456,11 +5457,8 @@ Phillipsthal: Radwegbau	?::inwork -7526,-9435 -7510,-9196 -7360,-8794 -7334,-874
 # 
 #: next_check_id: CORONA-2020 vvv
 #: XXX weitere Impfzentren in Vorbereitung
-#: last_checked: 2021-02-06 vvv
+#: last_checked: 2021-02-08 vvv
 #: check_frequency: 30d vvv
-#: osm_watch: node id="8207066351" version="3"
-#: next_check: 2021-02-10
-Impfzentrum Flughafen Tegel	? 2987,16486
 #: osm_watch: node id="8207089503" version="4"
 Impfzentrum Velodrom	? 13449,13892
 #: osm_watch: node id="8207049205" version="3"
@@ -6351,7 +6349,7 @@ Krampnitz: neue Planstraﬂen	?::projected -14183,5214 -13771,5077
 #: XXX * Heiner-Carow-Str.
 #: XXX * Ingrid-Reschke-Str.
 #: XXX * Gustav-Tempel-Str.
-#: last_checked: 2021-02-07
+#: last_checked: 2021-02-09
 #: next_check: 2022-01-01
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straﬂen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 
@@ -6699,10 +6697,12 @@ Bitterfelder Str. - Alte R¸sternallee: Radwegrampen in Planung	?::projected 2031
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8870 (Festsetzung des B-Plans)
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/die-gesobau-hat-den-grundstein-fuer-1500-neue-wohnungen-gelegt_a275188
 #: by: https://abendblatt-berlin.de/2020/06/10/marzahn-hellersdorf-1-500-wohnungen-fuers-gut-hellersdorf/
+#: by: https://www.berliner-woche.de/hellersdorf/c-bauen/an-der-gothaer-ecke-alte-hellersdorfer-strasse-entstehen-vier-wohngebaeude_a298214 (Fertigstellung der Baufelder 3+4 im Mai 2021)
 #: XXX bleiben die bestehenden Straﬂen w‰hrend der Bauzeit passierbar?
 #: last_checked: 2021-01-17 (mapillary) vvv
 #: check_frequency: 210d vvv
-#: next_check: 2022-03-01 vvv
+#: next_check: 2021-05-31 vvv
+# REMOVED --- #: next_check: 2022-03-01 vvv
 Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23305,14914 23110,14945 23117,15081
 Bebauungsplan 10-45: Stadtplatz und Planstraﬂe C geplant	?::projected 23269,15062 23339,15079 23348,15042 23416,15060 23690,15096 23698,15049
 Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23416,15060 23396,15223 23387,15297
@@ -6878,7 +6878,7 @@ Bebauungsplan 3-41: Straﬂen werden entstehen; genaue Lage, Qualit‰t?	?::projecte
 #: by: https://abendblatt-berlin.de/2021/02/02/friedrichshain-strassenbahn-zum-ostkreuz-verzoegert-sich-weiter/
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/planunterlagen-muessen-erneut-ausgelegt-werden_a300143
 #: XXX Provisorium (Fuﬂg‰ngerschutztunnel) in Bau, es wird vermutlich vier Dr‰ngelgitter geben (an beiden Enden, sowie zwei dazwischen)
-#: last_checked: 2021-02-07
+#: last_checked: 2021-02-09
 #: check_frequency: 10d
 #: next_check: 2024-06-15
 Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15052,10920 14888,10959
