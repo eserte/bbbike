@@ -31019,12 +31019,13 @@ EOF
      { from  => undef, # 1594232559, # 2020-07-08 20:22
        until => undef, # $isodate2epoch->("2020-07-13 01:30:00"),
        # früher öfters Einbahnstraßenregelung wegen SEV
-       text  => 'Bödikerstr. und Laskerstr.: Einbahnstraßenregelung, offen Richtung Persiusstr.',
+       text  => 'Bödikerstr.: Einbahnstraßenregelung, offen Richtung Persiusstr.',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
 #: last_checked: 2021-02-07
-	q4::inwork; 14490,10610 14541,10735 14675,10693
+	q4::inwork; 14490,10610 14541,10735
+# REMOVED (hier keine Anzeichen für eine Einbahnstraßenregelung) ---	q4::inwork; 14541,10735 14675,10693
 EOF
      },
      { from  => 1594474932, # 2020-07-11 15:42
@@ -31165,7 +31166,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-11-27 17:00:00"), # 1598197723, # 2020-08-23 17:48
+       until => $isodate2epoch->("2021-04-15 17:00:00"), # 1598197723, # 2020-08-23 17:48
        text  => 'B2/B198: Richtung Süden Radfahren verboten',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -31176,7 +31177,7 @@ EOF
 #: source_id: LS/721-E/20/050
 #: XXX wie lange gilt das Verbot?
 #: last_checked: 2020-08-22
-#: next_check: 2020-11-27
+#: next_check: 2021-04-15
 	2 48469,65641 47875,64281 47564,63557
 EOF
      },
@@ -31857,8 +31858,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2021-01-11
-	q4::inwork 17794,8429 17774,8342
+#: last_checked: 2021-02-11
+#: check_frequency: 45d
+# REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17774,8342
+	q4::inwork 17774,8342 17753,8290
 EOF
      },
      { from  => undef, # 
@@ -31944,17 +31947,17 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt wegen Bauarbeiten möglicherweise nicht mehr möglich',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 2/2021: Durchfahrt ist noch möglich)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-im-bau/?postID=673580#post673580 (ab dem kommenden Jahr, also 2021)
-#: confirmed_by: srt (Sackgassenschild am nördlichen Ende)
-#: add_fragezeichen: Wo ist der gesperrte Abschnitt? Gilt die Sperrung auch für Fußgänger und Radfahrer?
+#: confirmed_by: srt (Sackgassenschild am nördlichen und südlichen Ende, aber noch keine Sperrung)
+#: add_fragezeichen: Gibt es mittlerweile eine Sperrung? Falls ja, wo ist der gesperrte Abschnitt und gilt die Sperrung auch für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="24"
 #: osm_watch: way id="165832806" version="21"
-#: last_checked: 2021-02-01
-#: next_check: 2021-02-01
+#: last_checked: 2021-02-11
+#: check_frequency: 45d
 	2::inwork 17704,8327 17620,8366
 EOF
      },
