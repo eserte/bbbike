@@ -887,7 +887,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9155,11283
 	F 8965,11825
 	X 8172,11679
-	F 8065,11349
+#: next_check_id: MUSEUMDERMODERNE-2021
+#: XXX: Ampel temporär verlegt
+# XXX	F 8065,11349
+#: last_checked: 2021-02-12
+#: check_frequency: 180d
+	F::inwork 8096,11393
 #: XXX_prog gilt nicht für Radfahrer in Richtung West->Ost
 	X 5758,11895
 #: note: Fußgängerampel ist nur für die Hauptfahrbahn gültig, die explizit für Radfahrer gesperrt ist

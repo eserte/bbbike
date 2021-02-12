@@ -186,11 +186,19 @@ asphaltiert	RW2; 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 Bus-, LKW- und Radfahrspur gilt Mo-Fr von 7-9 Uhr und 14-19 Uhr	RW5;RW5 7633,10394 7579,10183 7526,9969 7518,9791 7512,9572 7507,9458 7471,9360
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1;RW1 7633,10394 7689,10514 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt 7-22 Uhr	RW1; 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8226,11458
-für Radfahrer freigegebene Busspur gilt 7-20 Uhr	RW1; 8226,11458 8145,11438 8083,11381
-für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
+für Radfahrer freigegebene Busspur gilt 7-20 Uhr	RW1; 8226,11458 8145,11438 8096,11393 8083,11381
+#: next_check_id: MUSEUMDERMODERNE-2021
+#: by: https://www.preussischer-kulturbesitz.de/news-detail/article/2020/11/18/kulturforum-bauarbeiten-fuer-museum-des-20-jahrhunderts-der-nationalgalerie-beginnen.html
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/museum-der-moderne-kulturforum.123/page-3#post-14361
+#: by: srt
+#: XXX: temporäre Radspur
+# XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
+#: last_checked: 2021-02-12
+#: check_frequency: 180d
+	RW4; 8083,11381 8065,11349 8031,11249
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8031,11249 8000,11137
 	RW1; 8000,11137 7980,11070
-für Radfahrer freigegebene Busspur gilt 7-22 Uhr	RW1; 7980,11070 8000,11137 8031,11249 8065,11349 8083,11381 8145,11438
+für Radfahrer freigegebene Busspur gilt 7-22 Uhr	RW1; 7980,11070 8000,11137 8031,11249 8065,11349 8083,11381 8096,11393 8145,11438
 	RW2; 8145,11438 8226,11458
 für Radfahrer freigegebene Busspur gilt 7-22 Uhr	RW1; 8226,11458 8301,11469 8358,11477 8374,11479 8479,11493 8542,11502
 	RW2; 8443,10780 8390,10835 8378,10858
@@ -1063,7 +1071,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://taz.de/Pop-up-Bikelane-weicht-Baustelle/!5699409/ (wird der bauliche Radweg explizit abgesperrt? Ende: 2020-10-10)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="15"
-#: last_checked: 2021-02-04
+#: last_checked: 2021-02-12 (mapillary)
 #: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1413,7 +1421,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: osm_watch: way id="882672444" version="1"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2021-01-25 vvv
+#: last_checked: 2021-02-12 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
@@ -2073,7 +2081,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: http://www.infravelo.de/projekt/lichtenberger-strasse-1/
 #: source_id: 2147346610
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-02-05 vvv
+#: last_checked: 2021-02-12 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
 #: osm_watch: way id="284761029" version="16"
 Radspur hinter den parkenden Autos	RW3; 12006,12464 11920,12266
@@ -6579,7 +6587,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: by: http://www.infravelo.de/projekt/hallesches-ufer/ (Verstetigung, 1. Quartal 2020 - 4. Quartal 2020)
 #: osm_watch: way id="4401920" version="50"
 #: confirmed_by: srt
-#: last_checked: 2021-02-06
+#: last_checked: 2021-02-12
 # REMOVED --- #: next_check: 2020-12-31
 provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9154,10348 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
 # 
@@ -6626,7 +6634,7 @@ provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9154
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="20"
 #: osm_watch: way id="335487059" version="15"
-#: last_checked: 2021-02-06 vvv
+#: last_checked: 2021-02-12 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-03-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312

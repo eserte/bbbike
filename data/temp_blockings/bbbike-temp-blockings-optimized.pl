@@ -2966,7 +2966,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: SIGISMUND-2020
 #: XXX wann sind die Bauarbeiten fertig? vvv
 #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
-#: last_checked: 2021-01-09 vvv
+#: last_checked: 2021-02-12 vvv
 #: note: hier von Osten aus legaler gemeinsamer Rad- und Gehweg auf dem Bürgersteig, mit kurzer asphaltierter Rampe, von Westen aus verboten für Fahrzeuge aller Art
 	q2::inwork 8031,11249 7934,11275 7897,11287
 	q4::inwork 7934,11275 7965,11380
@@ -3200,16 +3200,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '	2::inwork 9640,29628 9996,29712
-',
-         'from' => 1610233200,
-         'id' => 3318,
-         'source_id' => 'LS/721-E/21/005',
-         'text' => 'L30: Sperrung der Unterführung unter der A10, evtl. sind auch Radfahrer und Fußgänger betroffen, vom 11.01.2021 bis 12.02.2021',
-         'type' => 'gesperrt',
-         'until' => 1613149200
-       },
+       undef,
        {
          'data' => '#: next_check_id: PARKSTADTKARLSHORST-2021
 #: last_checked: 2021-02-11
@@ -3321,7 +3312,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: LANGHANS-2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-02-04
+#: last_checked: 2021-02-12 (mapillary)
 #: next_check: 2021-02-15
 	q3::inwork; 13307,15758 13214,15830 13086,15907 12842,16032
 ',
@@ -3330,6 +3321,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Lehderstr.: Einbahnstraßenregelung, gesperrt Richtung Westen, voraussichtlich bis 15.2.2021',
          'type' => 'handicap',
          'until' => 1613430000
+       },
+       {
+         'data' => '#: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
+#: last_checked: 2021-02-12
+	2::inwork 9873,10285 9668,10306
+',
+         'from' => undef,
+         'id' => 3329,
+         'text' => 'Zossener Brücke - Mehringplatz: Weg wegen Bauarbeiten gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
