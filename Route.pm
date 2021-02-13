@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2001,2012,2013,2015,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2001,2012,2013,2015,2017,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ use strict;
 
 use vars qw(@EXPORT @ISA $VERSION);
 
-$VERSION = '2.01';
+$VERSION = '2.02';
 
 require Exporter;
 @ISA    = qw(Exporter);
@@ -393,6 +393,13 @@ sub save_object {
 sub load {
     my($file, undef, %args) = @_; # 2nd argument used to be the "context", but is not used anymore
 
+    if (!defined $file) {
+	die "Route::load() wurde ohne Datei aufgerufen";
+    }
+    if (!-r $file) {
+	die "Die Datei '$file' ist nicht lesbar oder existiert nicht";
+    }
+
     my @realcoords;
     my @search_route_points;
 
@@ -479,8 +486,10 @@ sub load_bbr {
     require Safe;
     my $compartment = new Safe;
 
-    # Safe don't play well together (error message:
-    # "Undefined subroutine &Devel::Cover::use_file called").
+    # Safe and Devel::Cover don't play well together (error message:
+    # "Undefined subroutine &Devel::Cover::use_file called"
+    # resp. t/route.t fails early without capable of loading an .bbr file;
+    # checked with Devel::Cover 1.36).
     # So Safe.pm is simply turned off if Devel::Cover usage
     # is detected...
     my($coords_ref, $realcoords_ref, $search_route_points_ref);
