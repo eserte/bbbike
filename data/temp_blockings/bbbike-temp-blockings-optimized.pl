@@ -2758,7 +2758,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-02-08
+#: last_checked: 2021-02-13
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2968,7 +2968,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
 #: last_checked: 2021-02-12 vvv
 #: note: hier von Osten aus legaler gemeinsamer Rad- und Gehweg auf dem Bürgersteig, mit kurzer asphaltierter Rampe, von Westen aus verboten für Fahrzeuge aller Art
+#: osm_watch: way id="16096289" version="18"
 	q2::inwork 8031,11249 7934,11275 7897,11287
+#: osm_watch: way id="4597351" version="21"
 	q4::inwork 7934,11275 7965,11380
 #: last_checked ^^^
 #: XXX ^^^
@@ -3217,7 +3219,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-01-22
+#: last_checked: 2021-02-13
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 ',
@@ -3323,8 +3325,11 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1613430000
        },
        {
-         'data' => '#: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2021-02-12
+         'data' => '#: by: http://www.sanierung-suedliche-friedrichstadt.de/aktuelle-projekte/aktuelle-projekte/
+#: by: http://www.sanierung-suedliche-friedrichstadt.de/wp-content/uploads/2020/06/2020-06-08-SFS-Gitschiner-Ufer-Bauschild.pdf (bis 2021)
+#: XXX laut Baustellennotiz gesperrt bis Dezember 2020 (offensichtlich länger)
+#: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
+#: last_checked: 2021-02-13
 	2::inwork 9873,10285 9668,10306
 ',
          'from' => undef,

@@ -50,7 +50,7 @@
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2020-11-19
+#: last_checked: 2021-02-13
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -892,6 +892,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: last_checked: 2021-02-12
 #: check_frequency: 180d
+#: next_check: 2026-01-01
 	F::inwork 8096,11393
 #: XXX_prog gilt nicht für Radfahrer in Richtung West->Ost
 	X 5758,11895
@@ -2870,7 +2871,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2021-01-25 vvv
+#: last_checked: 2021-02-13 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
