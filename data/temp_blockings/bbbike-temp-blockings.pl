@@ -28563,7 +28563,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-02-09
+#: last_checked: 2021-02-15
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -29035,8 +29035,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-01-24 07:00:00"), # 1568571027, # 1557083524, # 2019-05-05 21:12
-       until => $isodate2epoch->("2021-02-15 17:00:00"), # 1569607982, # $isodate2epoch->("2019-10-07 18:00:00"),
-       text  => 'Langhansstr.: zwischen Berliner Allee und Roelckestr. ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, 25.1.2021 bis 15.2.2021',
+       until => $isodate2epoch->("2021-08-13 17:00:00"), # 1569607982, # $isodate2epoch->("2019-10-07 18:00:00"),
+       text  => 'Langhansstr.: zwischen Berliner Allee und Heinersdorfer Str. ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, 25.1.2021 bis 13.8.2021',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
        data  => <<EOF,
@@ -29045,13 +29045,15 @@ EOF
 #: source_id: 2147346832 (Gesamtbaumaßnahme bis Mitte August 2021)
 #: by: https://viz.berlin.de/2021/01/verkehrsvorschau25012021/ ("Mitte Februar (2021) wird die Sperrung um den Abschnitt Heinersdorfer Straße - Roelckestraße erweitert")
 #: by: https://viz.berlin.de/2021/01/langhansstr-sperrung/
+#: by: https://www.bahninfo-forum.de/read.php?9,691318,693319#msg-693319
 #: also_indoor: traffic (H,G)
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 #: last_checked: 2021-02-04
-#: next_check: 2021-02-15
-	q4::inwork 13508,15912 13312,16027 13189,16089 12943,16214
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2021-02-15
+	q4::inwork 13508,15912 13312,16027 13189,16089 12943,16214 12859,16255 12797,16285 12725,16321 12564,16399 12399,16479 12189,16578
 EOF
      },
      { from  => 1557166526, # 2019-05-06 20:15
@@ -31964,8 +31966,8 @@ EOF
 EOF
      },
      { from  => 1611529200, # 2021-01-25 00:00
-       until => 1613430000, # 2021-02-16 00:00
-       text  => 'Lehderstr.: Einbahnstraßenregelung, gesperrt Richtung Westen, voraussichtlich bis 15.2.2021',
+       until => $isodate2epoch->("2021-08-13 18:00:00"), # 1613430000, # 2021-02-16 00:00
+       text  => 'Lehderstr.: Einbahnstraßenregelung, gesperrt Richtung Westen, möglicherweise bis 13.8.2021',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: LANGHANS-2021
@@ -31986,6 +31988,15 @@ EOF
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
 #: last_checked: 2021-02-13
 	2::inwork 9873,10285 9668,10306
+EOF
+     },
+     { from  => 1613862000, # 2021-02-21 00:00
+       until => 1614034800, # 2021-02-23 00:00
+       text  => 'Woltersdorf, Brücke über den Stolpkanal: Sperrung am 22.02.2021, evtl. sind auch Radfahrer und Fußgänger betroffen ',
+       type  => 'gesperrt',
+       source_id => 'LS/721-F/21/021',
+       data  => <<EOF,
+	2::inwork 35479,7051 35482,7099
 EOF
      },
     );

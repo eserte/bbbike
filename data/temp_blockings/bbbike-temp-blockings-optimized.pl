@@ -2261,7 +2261,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-02-09
+#: last_checked: 2021-02-15
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -2355,20 +2355,22 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346832 (Gesamtbaumaßnahme bis Mitte August 2021)
 #: by: https://viz.berlin.de/2021/01/verkehrsvorschau25012021/ ("Mitte Februar (2021) wird die Sperrung um den Abschnitt Heinersdorfer Straße - Roelckestraße erweitert")
 #: by: https://viz.berlin.de/2021/01/langhansstr-sperrung/
+#: by: https://www.bahninfo-forum.de/read.php?9,691318,693319#msg-693319
 #: also_indoor: traffic (H,G)
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 #: last_checked: 2021-02-04
-#: next_check: 2021-02-15
-	q4::inwork 13508,15912 13312,16027 13189,16089 12943,16214
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2021-02-15
+	q4::inwork 13508,15912 13312,16027 13189,16089 12943,16214 12859,16255 12797,16285 12725,16321 12564,16399 12399,16479 12189,16578
 ',
          'from' => 1611468000,
          'id' => 3091,
          'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
-         'text' => 'Langhansstr.: zwischen Berliner Allee und Roelckestr. ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, 25.1.2021 bis 15.2.2021',
+         'text' => 'Langhansstr.: zwischen Berliner Allee und Heinersdorfer Str. ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, 25.1.2021 bis 13.8.2021',
          'type' => 'handicap',
-         'until' => 1613404800
+         'until' => 1628866800
        },
        undef,
        undef,
@@ -3320,9 +3322,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => 1611529200,
          'id' => 3328,
-         'text' => 'Lehderstr.: Einbahnstraßenregelung, gesperrt Richtung Westen, voraussichtlich bis 15.2.2021',
+         'text' => 'Lehderstr.: Einbahnstraßenregelung, gesperrt Richtung Westen, möglicherweise bis 13.8.2021',
          'type' => 'handicap',
-         'until' => 1613430000
+         'until' => 1628870400
        },
        {
          'data' => '#: by: http://www.sanierung-suedliche-friedrichstadt.de/aktuelle-projekte/aktuelle-projekte/
@@ -3337,6 +3339,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Zossener Brücke - Mehringplatz: Weg wegen Bauarbeiten gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	2::inwork 35479,7051 35482,7099
+',
+         'from' => 1613862000,
+         'id' => 3330,
+         'source_id' => 'LS/721-F/21/021',
+         'text' => 'Woltersdorf, Brücke über den Stolpkanal: Sperrung am 22.02.2021, evtl. sind auch Radfahrer und Fußgänger betroffen ',
+         'type' => 'gesperrt',
+         'until' => 1614034800
        }
      
 );
