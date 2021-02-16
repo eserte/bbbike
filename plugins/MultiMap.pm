@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.59;
+$VERSION = 1.60;
 
 use vars qw(%images);
 
@@ -812,7 +812,7 @@ sub show_mapcompare_menu {
 	 -command => sub {
 	     showmap_mapcompare
 		 (maps => [qw(
-				 berlin-historical-2019
+				 berlin-historical-2020
 			    )],
 		  %args,
 		 )
@@ -823,13 +823,13 @@ sub show_mapcompare_menu {
 	 -command => sub {
 	     showmap_mapcompare
 		 (maps => [qw(
+				 berlin-historical-2020
 				 berlin-historical-2019
 				 berlin-historical-2018
 				 berlin-historical-2017
 				 berlin-historical-2016
 				 berlin-historical-2015
 				 berlin-historical-2007
-				 berlin-historical-2004
 				 google-satellite
 			    )],
 		  %args,
