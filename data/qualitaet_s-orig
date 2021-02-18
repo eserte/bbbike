@@ -2951,7 +2951,9 @@ Seifertweg: Asphalt	Q0 18869,9962 18843,10028
 Am Tierpark [Nebenfahrbahn]: Asphalt	Q1+ 18442,10471 18397,10608
 Heinrich-Dathe-Platz: große Gehwegplatten	Q1 18512,10337 18478,10406 18456,10454
 Heinrich-Dathe-Platz: Asphalt	Q1 18456,10454 18442,10471
-Heinrich-Dathe-Platz: große Gehwegplatten	Q1 18478,10406 18394,10348
+Heinrich-Dathe-Platz: große Gehwegplatten	Q1 18478,10406 18418,10365 18394,10348
+Heinrich-Dathe-Platz: Gehwegplatten, Kleinsteinpflaster	Q1 18418,10365 18387,10406
+(Heinrich-Dathe-Platz - Erich-Kurz-Str.): Betonplatten	Q1 18387,10406 18350,10393
 Dathepromenade: große Gehwegplatten	Q1 18394,10348 18320,10318 18302,10289 18314,10260 18132,10183 18101,10169 18058,10166
 (Sewanstr. - Dathepromenade): Verbundsteinpflaster	Q1 18025,10152 18058,10166
 (Erieseering - Dathepromenade): große Gehwegplatten	Q1 18319,10249 18314,10260
@@ -3591,7 +3593,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124 (Anfrage von Juli 2017)
 #: by: https://politik-bei-uns.de/file/597985b41ae6a07d5fb74916 (Antwort: soll teilweise mit einem Asphaltstreifen befestigt werden, erster von drei Bauabschnitten 2018)
 #: osm_watch: way id="47159365" version="14"
-#: last_checked: 2020-10-24
+#: last_checked: 2021-02-18
 #: check_frequency: 180d
 Wiesengrundstr. (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
 Wiesengrundstr. (Karlshorst): Asphalt	Q0 19898,8410 19964,8447 20046,8448
@@ -3707,7 +3709,8 @@ Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14705,10149 14621
 Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14621,10062 14702,10020 14788,9976
 Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14747,10108 14702,10020
 Dora-Benjamin-Park: Verbundsteinpflaster	Q1 14788,9976 14817,10031
-Balatonstr.: mäßiger Beton	Q1- 17479,10452 17741,10386 17791,10375 17915,10350 17946,10344
+Balatonstr.: mäßiger Beton	Q2+ 17479,10452 17741,10386
+Balatonstr.: mäßiger Beton	Q1- 17741,10386 17791,10375 17915,10350 17946,10344
 Balatonstr.: mäßiger Beton	Q1- 17791,10375 17793,10382 17822,10490 17823,10495
 (Balatonstr. - Sewanstr.): Beton	Q1 17741,10386 17729,10331 17705,10232 17624,10249 17605,10199
 Sewanstr. [Wohngebiet]: Beton	Q1 17883,10185 17705,10232
@@ -3818,7 +3821,7 @@ Park am Karlsbad: wassergebundene Decke	Q1+ 8143,10903 8190,10960
 #: note: neu gemacht (Herbst 2014)
 Singerstr.: Asphalt	Q0 11920,12266 12081,12236
 Puderstr.: Asphalt	Q0 14614,9052 14567,8966 14525,8894 14492,8853 14363,8738
-Upstallweg (Lichtenberg): Beton	Q0 17946,10344 17954,10367 18039,10398 18116,10403 18184,10387 18245,10398 18332,10434
+Upstallweg (Lichtenberg): Beton	Q0 17946,10344 17954,10367 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 # REMOVED (teilweise) --- #: XXX hat sich hier die Qualität durch den Wohnungsneubau verbessert?
 Hönower Str.: Asphalt	Q0 18660,9410 18735,9421
 Hönower Str.: Kopfsteinpflaster	Q3 18735,9421 18765,9426 18875,9570
@@ -5064,9 +5067,9 @@ Friedenstr. (Köpenick): glattes Kopfsteinpflaster	Q1 22033,6144 22141,6143
 Schmale Str.: überwiegend schlechtes Kopfsteinpflaster, kurzes Stück am Anfang asphaltiert	Q3 21984,6317 22018,6350 22049,6364
 Rombiner Weg: Asphalt	Q0 21712,6800 21833,6810
 Verlängerte Mozartstr.: unbefestigter Weg	Q2 21920,6835 21848,6923 21815,6947
-Verlängerte Hämmerlingstr.: Beton	Q0 21729,6989 21683,6946 21541,6800
+Verlängerte Hämmerlingstr.: Beton	Q0 21729,6989 21683,6946 21582,6842 21541,6800
 (Waldweg an der S-Bahn - Verlängerte Hämmerlingstr.): Waldweg	Q2 21409,6731 21459,6744 21541,6800
-Verlängerte Köpenicker Str.: Asphalt	Q0 21012,7328 21284,7043
+Verlängerte Köpenicker Str.: Asphalt	Q0 21012,7328 21219,7111 21291,7048 21345,7000 21359,6983
 (Waldweg entlang des Innovationsparks): Waldweg, Wurzeln und sandige Stellen	Q3+ 21029,7591 21455,7598 21498,7628 21540,7630
 Dankratweg: Asphalt	Q0 20857,9542 20683,9553 20595,9558
 Dankratweg: unbefestigte Straße, Schotter	Q2+ 20595,9558 20514,9579 20460,9593
@@ -11946,6 +11949,15 @@ Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6
 (Hoher Wallgraben - Lehndorffstr.): unbefestigter Weg	Q2+ 18101,8044 18186,8081 18276,8136
 (Abbestr. - Otto-Suhr-Allee): glatte Pflasterung	Q0- 4674,12076 4608,11935 4596,11912
 Lisa-Fittko-Str.: Asphalt	Q0 7740,13950 7820,13994
+(Straße A, Innovationspark Wuhlheide): Asphalt	Q0 21484,7326 21343,7321 21231,7249
+(Straße E, Innovationspark Wuhlheide): Asphalt	Q0 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
+(Straße E, Innovationspark Wuhlheide): Asphalt	Q0 21153,7393 21207,7280 21231,7249
+(Straße E, Innovationspark Wuhlheide): Beton	Q0- 21231,7249 21175,7212 21243,7135
+(Straße F, Innovationspark Wuhlheide): Beton	Q0- 21505,7129 21410,7027 21394,7040 21371,7021
+(Straße F, Innovationspark Wuhlheide): Asphalt	Q0 21371,7021 21345,7000
+(Straße G, Innovationspark Wuhlheide): Asphalt	Q0 21572,7051 21547,7024 21476,6956 21560,6869
+(Straße G, Innovationspark Wuhlheide): Beton	Q0- 21560,6869 21627,6942 21547,7024
+(Verlängerte Hämmerlingstr. - Straße G, Innovationspark Wuhlheide): Beton	Q0- 21582,6842 21560,6869
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -28577,7 +28589,7 @@ Weddigenweg: mäßiges Kopfsteinpflaster	Q2 3646,3034 3953,3022
 # 
 #: by: teizke [AM]
 #: corrected_by: srt (from Q1 to Q0)
-Straße am Wald: Asphalt	Q0 21475,7500 21341,7487 21050,7341 21019,7340
+Straße am Wald: Asphalt	Q0 21475,7500 21341,7487 21153,7393 21050,7341 21019,7340
 #: by: Robert Wagner [AM]
 #: confirmed_by: srt
 Kalvinistenweg: Asphalt	Q0 11807,22395 11785,22290 11765,22198 11743,22096 11718,21978 11653,21613
@@ -28732,7 +28744,7 @@ Schwabenplatz: schlechtes Kopfsteinpflaster	Q3 21307,9591 21253,9547 21291,9507 
 #: by: kathrin dorenburg-bunn [AM] vvv
 #: corrected_by: srt (Q2 -> Q0-)
 Erich-Kunz-Str.: Beton	Q0- 18354,10600 18345,10575 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482
-Erich-Kunz-Str.: Beton	Q0- 18285,10550 18332,10434 18342,10384 18326,10362 18264,10343
+Erich-Kunz-Str.: Beton	Q0- 18285,10550 18336,10436 18350,10393 18326,10362 18264,10343
 Erich-Kunz-Str.: Beton	Q0- 18446,10620 18397,10608 18354,10600 18329,10599
 #: corrected_by: srt (Beton -> Asphalt, neu gemacht)
 Franz-Mett-Str.: Asphalt	Q0 18105,10997 18066,11215 18061,11240 18059,11256

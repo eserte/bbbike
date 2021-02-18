@@ -198,8 +198,15 @@ push @temp_blocking,
 #: note: genauere Uhrzeit von Dieter Heimann
 #: confirmed_by: um 20:30 Uhr steht man vor einem geschlossenen Tor, zumindest an der Nordostseite (2012-08)
 #: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
-Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21683,6946 21574,7049 21508,7126 21491,7182 21475,7500 21497,7597 21540,7630
-Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21475,7500 21341,7487 21050,7341 21019,7340
+Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21683,6946 21572,7051 21505,7129 21491,7182 21490,7197 21484,7326 21475,7500 21497,7597 21540,7630
+Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21475,7500 21341,7487 21153,7393 21050,7341 21019,7340
+Verlängerte Köpenicker Str.: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21291,7048 21345,7000 21359,6983
+(Straße A, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21484,7326 21343,7321 21231,7249
+(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
+(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21153,7393 21207,7280 21231,7249 21175,7212 21243,7135
+(Straße F, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21505,7129 21410,7027 21394,7040 21371,7021 21345,7000
+(Straße G, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21572,7051 21547,7024 21476,6956 21560,6869 21627,6942 21547,7024
+(Verlängerte Hämmerlingstr. - Straße G, Innovationspark Wuhlheide)	2::night:weekend 21582,6842 21560,6869
 (Innovationspark Wuhlheide - Wuhlewanderweg): Tor nachts ab 20 Uhr und am Wochenende gesperrt	2::night::weekend 21491,7182 21547,7208
 #: tempex ^^^
 #: note: ^^^
@@ -3314,16 +3321,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/2021/01/verkehrsvorschau27012021/
-	2::inwork 14196,7086 14233,7086 14251,7096 14323,7080 14310,7022
-',
-         'from' => 1611615600,
-         'id' => 3326,
-         'text' => 'Behelfsbrücke Neuköllnische Allee: kurzfristige Sperrungen von maximal 20 Minuten Dauer möglich, vom 27.1.2021 bis ca. 17.2.2021',
-         'type' => 'gesperrt',
-         'until' => 1613602800
-       },
+       undef,
        {
          'data' => '#: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-im-bau/?postID=673580#post673580 (ab dem kommenden Jahr, also 2021)
@@ -3343,6 +3341,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: LANGHANS-2021
+#: source_id: 2147346889 (bis 13.8.2021)
 #: also_indoor: traffic (H)
 #: last_checked: 2021-02-17
 #: next_check: 2021-08-13
@@ -3352,7 +3351,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'id' => 3328,
          'text' => 'Lehderstr.: Einbahnstraßenregelung, gesperrt Richtung Westen, möglicherweise bis 13.8.2021',
          'type' => 'handicap',
-         'until' => 1628870400
+         'until' => 1628866800
        },
        {
          'data' => '#: by: http://www.sanierung-suedliche-friedrichstadt.de/aktuelle-projekte/aktuelle-projekte/
@@ -3387,6 +3386,28 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, auch für Fußgänger und Radfahrer, vom 19.02.2021 08:00 Uhr bis 22.02.2021 08:00 Uhr ',
          'type' => 'gesperrt',
          'until' => 1613977200
+       },
+       {
+         'data' => '#: by: https://tierparkcenter.de/wochenmarkt/ (Öffnungszeiten)
+#: tempex: (mo,th,fr) T08-T17
+	q4::temp:clock 18478,10406 18418,10365
+',
+         'from' => undef,
+         'id' => 3332,
+         'recurring' => 1,
+         'text' => 'Heinrich-Dathe-Platz.: Wochenmarkt Mo, Do und Fr 08.00-17.00',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '	2::inwork 10324,13459 10318,13528 10313,13568 10309,13601 10301,13701
+',
+         'from' => 1613588400,
+         'id' => 3333,
+         'source_id' => 'LMS-BR_r_LMS-BR_231416_LMS-BR_72',
+         'text' => 'Kleine Rosenthaler Str.: zwischen Linienstr. und Rosenthaler Str. wegen Dreharbeiten gesperrt, vom 18.02.2021 20:00 Uhr bis 20.02.2021 06:00 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1613797200
        }
      
 );

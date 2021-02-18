@@ -15518,8 +15518,15 @@ EOF
 #: note: genauere Uhrzeit von Dieter Heimann
 #: confirmed_by: um 20:30 Uhr steht man vor einem geschlossenen Tor, zumindest an der Nordostseite (2012-08)
 #: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
-Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21683,6946 21574,7049 21508,7126 21491,7182 21475,7500 21497,7597 21540,7630
-Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21475,7500 21341,7487 21050,7341 21019,7340
+Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21683,6946 21572,7051 21505,7129 21491,7182 21490,7197 21484,7326 21475,7500 21497,7597 21540,7630
+Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21475,7500 21341,7487 21153,7393 21050,7341 21019,7340
+Verlängerte Köpenicker Str.: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21291,7048 21345,7000 21359,6983
+(Straße A, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21484,7326 21343,7321 21231,7249
+(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
+(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21153,7393 21207,7280 21231,7249 21175,7212 21243,7135
+(Straße F, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21505,7129 21410,7027 21394,7040 21371,7021 21345,7000
+(Straße G, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21572,7051 21547,7024 21476,6956 21560,6869 21627,6942 21547,7024
+(Verlängerte Hämmerlingstr. - Straße G, Innovationspark Wuhlheide)	2::night:weekend 21582,6842 21560,6869
 (Innovationspark Wuhlheide - Wuhlewanderweg): Tor nachts ab 20 Uhr und am Wochenende gesperrt	2::night::weekend 21491,7182 21547,7208
 #: tempex ^^^
 #: note: ^^^
@@ -31971,11 +31978,12 @@ EOF
 EOF
      },
      { from  => 1611529200, # 2021-01-25 00:00
-       until => $isodate2epoch->("2021-08-13 18:00:00"), # 1613430000, # 2021-02-16 00:00
+       until => $isodate2epoch->("2021-08-13 17:00:00"), # 1613430000, # 2021-02-16 00:00
        text  => 'Lehderstr.: Einbahnstraßenregelung, gesperrt Richtung Westen, möglicherweise bis 13.8.2021',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: LANGHANS-2021
+#: source_id: 2147346889 (bis 13.8.2021)
 #: also_indoor: traffic (H)
 #: last_checked: 2021-02-17
 #: next_check: 2021-08-13
@@ -32011,6 +32019,26 @@ EOF
        source_id => '2147346882',
        data  => <<EOF,
 	2::inwork 12672,20720 12723,20691
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Heinrich-Dathe-Platz.: Wochenmarkt Mo, Do und Fr 08.00-17.00',
+       type  => 'handicap',
+       recurring => 1,
+       data  => <<EOF,
+#: by: https://tierparkcenter.de/wochenmarkt/ (Öffnungszeiten)
+#: tempex: (mo,th,fr) T08-T17
+	q4::temp:clock 18478,10406 18418,10365
+EOF
+     },
+     { from  => 1613588400, # 2021-02-17 20:00
+       until => 1613797200, # 2021-02-20 06:00
+       text  => 'Kleine Rosenthaler Str.: zwischen Linienstr. und Rosenthaler Str. wegen Dreharbeiten gesperrt, vom 18.02.2021 20:00 Uhr bis 20.02.2021 06:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => 'LMS-BR_r_LMS-BR_231416_LMS-BR_72',
+       data  => <<EOF,
+	2::inwork 10324,13459 10318,13528 10313,13568 10309,13601 10301,13701
 EOF
      },
     );
