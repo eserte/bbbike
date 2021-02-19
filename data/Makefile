@@ -663,7 +663,8 @@ grenzuebergaenge:	grenzuebergaenge-orig
 
 sehenswuerdigkeit:	sehenswuerdigkeit-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -keep-directive alias -keep-directive section sehenswuerdigkeit-orig > sehenswuerdigkeit~
+	${GREPSTRASSEN_VALID} sehenswuerdigkeit-orig |\
+	    $(CONVERT_ORIG) -keep-directive alias -keep-directive section > sehenswuerdigkeit~
 	mv sehenswuerdigkeit~ sehenswuerdigkeit
 	-@$(READONLY) $@
 
