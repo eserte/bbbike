@@ -16273,7 +16273,7 @@ EOF
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-01-25
+#: last_checked: 2021-02-19
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 EOF
@@ -27931,7 +27931,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2021-02-05
+#: last_checked: 2021-02-19
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30826,7 +30826,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-02-17
+#: last_checked: 2021-02-19
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31784,7 +31784,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2020-11-14 vvv
+#: last_checked: 2021-02-19 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -32039,6 +32039,15 @@ EOF
        source_id => 'LMS-BR_r_LMS-BR_231416_LMS-BR_72',
        data  => <<EOF,
 	2::inwork 10324,13459 10318,13528 10313,13568 10309,13601 10301,13701
+EOF
+     },
+     { from  => 1613763246, # 2021-02-19 20:34
+       until => 1618610400, # 2021-04-17 00:00
+       text  => 'Kaiserin-Augusta-Str.: zwischen Theodorstr. und Kreisverkehr Metzplatz Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, bis 16.04.2021',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: rbbtext
+	q4::inwork 9363,5903 9291,5908
 EOF
      },
     );

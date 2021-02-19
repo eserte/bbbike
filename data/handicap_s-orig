@@ -48,24 +48,13 @@
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2021-01-25
-#: check_frequency: 60d
+#: last_checked: 2021-02-19
+#: check_frequency: 30d
 #: next_check: 2021-03-01
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
 # REMOVED (beendet) --- #: XXX_prog BS (östliche Seite) --- #: last_checked: 2018-06-12 vvv --- #: check_frequency: 7d vvv --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q2::inwork 11845,12292 11635,12398 --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q4::inwork 11635,12398 11607,12412 --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: KAUFHOF-2018
-#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/umbau-zu-buerostandort_a173030
-#: by: https://www.berliner-woche.de/friedrichshain/c-bauen/fassade-am-buerohochhaus-am-ostbahnhof-ist-fast-fertig_a279073 (bis Frühjahr 2021)
-#: note: laut fritz bis Ende 2020
-#: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
-#: also_indoor: traffic (G)
-#: last_checked: 2021-01-25
-#: check_frequency: 30d
-#: next_check: 2021-03-01
-Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
-# 
+# REMOVED (beendet) --- #: next_check_id: KAUFHOF-2018 --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/umbau-zu-buerostandort_a173030 --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/fassade-am-buerohochhaus-am-ostbahnhof-ist-fast-fertig_a279073 (bis Frühjahr 2021) --- #: note: laut fritz bis Ende 2020 --- #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+) --- #: also_indoor: traffic (G) --- #: last_checked: 2021-01-25 --- #: check_frequency: 30d --- #: next_check: 2021-03-01 --- Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # REMOVED --- #: XXX vermutlich wird der Zebrastreifen nördlich der Kreuzung "verstetigt" --- #: source_id: 2147346517 (bis 6.11.2020) --- #: source_id: LMS-BR_r_LMS-BR_221528_LMS-BR_72 (bis 18.12.2020) (inaktiv) --- #: priority: #B --- #: last_checked: 2020-12-15 vvv --- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2020-12-15 vvv
 # REMOVED (Termin kann nicht gehalten werden) --- #: next_check: 2020-11-06 --- #: valid: -20201106
@@ -208,7 +197,7 @@ Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2021-01-25 vvv
+#: last_checked: 2021-02-19 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -313,7 +302,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # 
 #: also_indoor: traffic (H,G)
 #: osm_watch: way id="4597320" version="18"
-#: last_checked: 2021-01-07 (daf)
+#: last_checked: 2021-02-19 (architektur-urbanistik)
 #: next_check: 2021-05-31
 #: valid: 20191218-20210531
 Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit für Radfahrer verboten	q4::inwork 8737,12098 8783,11959
@@ -657,9 +646,9 @@ Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12500,85
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020)
 #: XXX laut rbbtext bis 31.3.2021
-#: osm_watch: way id="822805265" version="5"
+#: osm_watch: way id="822805265" version="6"
 #: also_indoor: traffic (G)
-#: last_checked: 2021-01-29
+#: last_checked: 2021-02-18 (osm)
 #: next_check: 2021-03-31
 Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 # 
@@ -685,7 +674,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: source_id: 2147338550
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527 (Gesamtmaßnahme bis 2024)
-#: osm_watch: way id="585753318" version="6"
+#: osm_watch: way id="585753318" version="8"
 #: osm_watch: way id="71392596" version="13"
 #: also_indoor: traffic
 #: last_checked: 2021-01-29 vvv
@@ -908,12 +897,12 @@ Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
 # 
 #: next_check_id: NKZ-2020
 #: XXX zurzeit Bauarbeiten, nur der Gehweg ist offen (alten Eintrag danach wieder aktivieren); vor Corona-Zeiten gab's außerdem einen großzügigen Restaurantbereich
-#: last_checked: 2021-01-21
+#: last_checked: 2021-02-19
 (Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11291,10438 11317,10485
-# REMOVED --- (Zufahrt am NKZ): Fußgänger/Lieferverkehr, Restaurantbereich	q4::inwork 11291,10438 11317,10485
-# REMOVED (Bauarbeiten) --- (Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11317,10485 11344,10507
+# REMOVED (Originaleintrag) --- (Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11317,10485 11344,10507
 (Zufahrt am NKZ): Fußgänger/Lieferverkehr, Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11317,10485 11344,10507
-(Zufahrt am NKZ): Fußgänger, unübersichtlich	q3 11344,10507 11392,10520 11411,10515
+# REMOVED (Originaleintrag) --- (Zufahrt am NKZ): Fußgänger, unübersichtlich	q3 11344,10507 11392,10520 11411,10515
+(Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst	q4::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: XXX_prog BS (1x oder 2x?)
 Dresdener Str. - NKZ: Bordsteine	q3 11344,10507 11334,10527

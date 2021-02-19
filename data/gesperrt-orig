@@ -3286,7 +3286,7 @@ Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708
 #: source_id: IM_020714
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-02-05
+#: last_checked: 2021-02-19
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
@@ -3420,12 +3420,17 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152 14373,1004
 #: check_frequency: 60d
 Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 #  
+# REMOVED (Schranke wird nicht genutzt?) --- #: next_check_id: EUROPACITY-2015 --- #: XXX laut osm mittlerweile offen --- #: last_checked: 2021-02-05 --- #: check_frequency: 60d --- #: next_check: 2021-02-14 --- Lisa-Fittko-Str.: wegen Hochbauarbeiten gesperrt	2::inwork 7734,13944 7820,13994
+# 
 #: next_check_id: EUROPACITY-2015
-#: XXX laut osm mittlerweile offen
-#: last_checked: 2021-02-05
-#: check_frequency: 60d
-#: next_check: 2021-02-14
-Lisa-Fittko-Str.: wegen Hochbauarbeiten gesperrt	2::inwork 7740,13950 7820,13994
+#: by: https://quartier-heidestrasse.contempo-webcam.de/ (Webcam)
+#: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-2.php (Webcam)
+#: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-3.php (Webcam)
+#: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php (Webcam)
+#: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
+#: last_checked: 2021-02-19
+#: check_frequency: 90d
+George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7687,14017
 # 
 #: next_check_id: EUROPACITY-2015
 #: last_checked: 2021-02-05
@@ -3564,8 +3569,8 @@ Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020 wieder offen, bis voraussichtlich 13. September 2020)
 #: by: https://www.kms-sonne.de/baustellennews?date=20201221 (weiterhin gesperrt)
-#: osm_watch: way id="822674838" version="3"
-#: last_checked: 2021-01-29
+#: osm_watch: way id="822674838" version="4"
+#: last_checked: 2021-02-18 (osm)
 #Rollbergstr.: Einbahnstraße, offen Richtung Karl-Marx-Str.	1s:q3:inwork 12714,8249 12545,8209
 Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:q4:inwork 12714,8249 12545,8209
 # 
@@ -3611,10 +3616,11 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
 # 
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/edge-eastside-tower-140m.18/page-13#post-14549
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="5096644" version="16"
 #: priority: #C
-#: last_checked: 2021-01-22
+#: last_checked: 2021-02-14 (architektur-urbanistik)
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3789,7 +3795,7 @@ Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14229,827
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2021-02-13 vvv
+#: last_checked: 2021-02-19 vvv
 #: check_frequency: 60d vvv
 #: valid: -20210630 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
@@ -4135,7 +4141,7 @@ Niederlagstr.: Durchfahrt gesperrt	2::inwork 9934,12420 9943,12364
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="17"
 #: also_indoor: traffic
-#: last_checked: 2020-12-26 (osm)
+#: last_checked: 2021-02-19
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
@@ -4205,7 +4211,7 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: XXX Johannisplatz
 #: XXX Aaron-Bernstein-Platz
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2021-02-05
+#: last_checked: 2021-02-19
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
@@ -4238,7 +4244,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10063,12438
 #: by: https://www.berliner-woche.de/mitte/c-bauen/neubau-fuer-bundestag-soll-zum-jahresende-fertig-sein_a298094
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="5"
-#: last_checked: 2021-01-09
+#: last_checked: 2021-02-19
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760

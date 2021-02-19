@@ -935,7 +935,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-02-17
+#: last_checked: 2021-02-19
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2876,7 +2876,7 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
-#: osm_watch: way id="30893534" version="15"
+#: osm_watch: way id="30893534" version="16"
 #: last_checked: 2020-08-29
 #: check_frequency: 180d
 Am Teltowkanal: Asphalt	Q0 7911,4465 7769,4315
@@ -11948,7 +11948,8 @@ Parallelweg am Eichgestell - Wasserwerk Wuhlheide: Parkweg, einige Pfützen mögli
 Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6959 19080,6986
 (Hoher Wallgraben - Lehndorffstr.): unbefestigter Weg	Q2+ 18101,8044 18186,8081 18276,8136
 (Abbestr. - Otto-Suhr-Allee): glatte Pflasterung	Q0- 4674,12076 4608,11935 4596,11912
-Lisa-Fittko-Str.: Asphalt	Q0 7740,13950 7820,13994
+Lisa-Fittko-Str.: Asphalt	Q0 7734,13944 7820,13994
+George-Stephenson-Str.: Asphalt	Q0 7487,14472 7452,14415 7500,14333 7569,14217 7687,14017 7734,13944
 (Straße A, Innovationspark Wuhlheide): Asphalt	Q0 21484,7326 21343,7321 21231,7249
 (Straße E, Innovationspark Wuhlheide): Asphalt	Q0 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
 (Straße E, Innovationspark Wuhlheide): Asphalt	Q0 21153,7393 21207,7280 21231,7249
@@ -21139,8 +21140,8 @@ Arnouxstr.: Asphalt	Q0 11785,22290 11583,22442 11386,22591 11188,22742
 # 
 #: by: claudia friedrich: vvv
 #: confirmed_by: brath: vvv
-#: corrected_by: srt (Q0 -> Q1)
-Behaimstr.: Asphalt mit Schäden	Q1 13086,15907 13140,16000
+#: corrected_by: srt (Q0 -> Q1) (später: Q1 -> Q0, neu gemacht?)
+Behaimstr.: Asphalt	Q0 13086,15907 13140,16000
 #: confirmed_by: srt
 Behaimstr.: guter Asphalt	Q0 13140,16000 13189,16089 13286,16267 13348,16387
 #: confirmed_by ^^^

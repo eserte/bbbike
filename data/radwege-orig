@@ -390,7 +390,7 @@ neu asphaltiert, relativ breit	RW1; 10501,11056 10256,11160 10020,11262
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
-#: last_checked: 2021-02-05 vvv
+#: last_checked: 2021-02-19 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -406,7 +406,7 @@ eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfa
 mäßiger Verbundsteinpflasterradweg	RW1; 10839,10907 10794,10927
 #: check_frequency ^^^
 #: XXX zurzeit sind hier Bauarbeiten
-#: last_checked: 2021-02-05
+#: last_checked: 2021-02-19
 #: check_frequency: 14d
 # REMOVED ---	RW1; 10794,10927 10779,10934 10684,10975
 provisorische Radspur	RW3; 10794,10927 10779,10934 10684,10975
@@ -1982,7 +1982,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2021-01-09
+#: last_checked: 2021-02-19
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -5182,7 +5182,7 @@ Verbundsteinpflasterradweg	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: confirmed_by: srt
 	RW3;RW3 7733,8023 7783,8035 7824,8056 7838,8085 7859,8252 7899,8332 7956,8408 8078,8772
 #: next_check_id: MITTEL-2019
-#: last_checked: 2021-01-25
+#: last_checked: 2021-02-19
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben
 	RW0; 9141,12320 9131,12438 9121,12514
 	RW4; 9131,12438 9141,12320
@@ -6787,3 +6787,4 @@ asphaltierter gemeinsamer Geh- und Radweg, sehr breit	RW2;RW8 21115,271 21286,44
 	RW4; 7098,3067 7105,3040 7115,3003
 #: by: mapillary
 	RW3;RW3 18938,2054 18881,2062
+	RW3; 18878,9517 18901,9499 18916,9468
