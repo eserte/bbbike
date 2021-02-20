@@ -2564,6 +2564,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
+#: last_checked: 2021-02-20
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 ',
          'from' => undef,
@@ -2795,7 +2796,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-02-19
+#: last_checked: 2021-02-20
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2864,7 +2865,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '# REMOVED --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
-#: last_checked: 2021-02-07
+#: last_checked: 2021-02-20
 	q4::inwork; 14490,10610 14541,10735
 # REMOVED (hier keine Anzeichen für eine Einbahnstraßenregelung) ---	q4::inwork; 14541,10735 14675,10693
 ',
@@ -2878,6 +2879,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Mai 2022
 #: also_indoor: traffic (H)
+#: last_checked: 2021-02-20 (mapillary)
+#: next_check: 2021-03-17
 	q4::inwork; 5244,6261 5390,6299 5560,6344
 #: by: mapillary
 	q4::inwork 5560,6344 5582,6360
@@ -3118,11 +3121,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        {
-         'data' => '#: source_id: 2147346816
-#: XXX: Wann sind die Bauarbeiten beendet?
+         'data' => '#: next_check_id: MAINZER-2021
+#: source_id: 2147346816
+#: XXX: Wann sind die Bauarbeiten beendet? Laut rbb 31.03.2021, laut vmz 31.03.2022
 #: also_indoor: traffic (G)
-#: last_checked: 2021-01-09
+#: last_checked: 2021-02-20
 #: check_frequency: 45d
+#: next_check: 2021-03-31
 	q4::inwork 12162,8053 12147,8117
 ',
          'from' => undef,
@@ -3170,11 +3175,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        {
-         'data' => '	q4::inwork 8569,4459 8868,4498
+         'data' => '#: last_checked: 2021-02-20
+	q3::inwork 8858,4579 8561,4535
 ',
          'from' => 1606936220,
          'id' => 3310,
-         'text' => 'Reulestr.: Bauarbeiten, Sperrung der Fahrbahn, bis 06.03.2021',
+         'text' => 'Reulestr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, bis 06.03.2021',
          'type' => 'handicap',
          'until' => 1615050000
        },
@@ -3399,16 +3405,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '	2::inwork 10324,13459 10318,13528 10313,13568 10309,13601 10301,13701
-',
-         'from' => 1613588400,
-         'id' => 3333,
-         'source_id' => 'LMS-BR_r_LMS-BR_231416_LMS-BR_72',
-         'text' => 'Kleine Rosenthaler Str.: zwischen Linienstr. und Rosenthaler Str. wegen Dreharbeiten gesperrt, vom 18.02.2021 20:00 Uhr bis 20.02.2021 06:00 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1613797200
-       },
+       undef,
        {
          'data' => '#: by: rbbtext
 	q4::inwork 9363,5903 9291,5908

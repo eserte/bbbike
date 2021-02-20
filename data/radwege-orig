@@ -107,7 +107,7 @@ Gehwegpflasterung, aber mäßiger Zustand	RW1; 9233,8597 9229,8718
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: XXX Grünmarkierung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2020-11-12 vvv
+#: last_checked: 2021-02-20 vvv
 #: check_frequency: 90d vvv
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
@@ -131,11 +131,9 @@ Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8627,5866
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
 #: by: http://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021)
-#: last_checked: 2020-05-08 vvv
-#: next_check: 2021-01-15 vvv
+#: last_checked: 2021-02-20 vvv
 	RW1; 8593,5491 8480,5350 8406,5258 8356,5195
 Bord gegen Gehweg, Autos parken auf dem Unterstreifen	RW1; 8356,5195 8406,5258 8480,5350 8593,5491
-#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 	RW1;RW1 8356,5195 8348,5184 8219,5010 8130,4932 8014,4832
@@ -849,7 +847,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-02-15
+#: last_checked: 2021-02-20
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -984,10 +982,11 @@ asphaltiert, die letzten Meter als Radspur geführt	RW2; 7171,5831 7194,5763 7216
 #: XXX hier werden wohl auch Leitboys entstehen
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
-#: last_checked: 2020-12-19
+#: last_checked: 2021-02-20
 #: check_frequency: 45d
 	RW3; 7236,5685 7497,5610
-	RW1;RW1 8593,5491 8365,5502 8200,5510
+	RW1; 8593,5491 8365,5502 8200,5510
+Busspur gilt Mo-Fr 13-19h	RW1; 8200,5510 8365,5502 8593,5491
 	RW1;RW3 8200,5510 8100,5512
 	RW3;RW3 8100,5512 8038,5514 7857,5519 7816,5519 7669,5536 7599,5553 7497,5610
 	RW1;RW1 3346,7369 3389,7383
@@ -1117,8 +1116,8 @@ Verbundsteinpflasterradweg, holprig	RW1; 13671,4490 13571,4493 13485,4496 13394,
 	RW1;RW1 13671,4490 13771,4485 13866,4481 14023,4475 14295,4462
 	RW1;RW1 9512,6652 9673,6646 9735,6636 9863,6617 10101,6596 10186,6527
 	RW1;RW1 10613,6437 10943,6498 11142,6535
-Verbundsteinpflasterradweg	RW2; 7899,895 7867,831 7757,834
-Verbundsteinpflasterradweg	RW1; 7757,834 7867,831
+Verbundsteinpflasterradweg	RW2; 7902,893 7884,851 7867,831 7757,834
+Verbundsteinpflasterradweg	RW1; 7757,834 7867,831 7884,851 7902,893
 	RW2;RW2 7668,471 7688,544 7729,691 7757,834
 	RW1;RW1 7162,4058 7161,4110 7171,4200
 	RW1; 7171,4200 7221,4255
@@ -1177,15 +1176,15 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2021-01-16 vvv
+#: last_checked: 2021-02-20 vvv
 #: check_frequency: 30d vvv
 #	RW1;RW2 14051,6731 14153,6795
-#	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
+#	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
 #: note: von der Bergiusstr. aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
 #: osm_watch: way id="693065560" version="9"
-	RW2;RW2 14344,7003 14257,6895 14213,6840
+	RW2;RW2 14344,7003 14257,6895 14239,6875
 #: osm_watch: way id="679376891" version="8"
-	RW2;RW8 14213,6840 14153,6795 14051,6731
+	RW2;RW8 14239,6875 14153,6795 14051,6731
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1265,7 +1264,7 @@ Verbundsteinpflaster, erhebliche Schäden durch Wurzelhebungen	RW1; 5166,13087 49
 #: source_id: 2147344664 (bis Ende Oktober 2019)
 #: osm_watch: way id="85468589" version="17"
 #: osm_watch: way id="458915639" version="3"
-#: last_checked: 2020-10-25
+#: last_checked: 2021-02-20
 #: check_frequency: 90d
 alter holpriger Verbundsteinpflasterradweg	RW2;RW8 6679,2701 6677,2718 6665,2836 6658,2907 6643,3070 6638,3138 6640,3192 6712,3237
 # REMOVED (gibt's nicht) ---	RW;RW 7130,1253 7081,1346 6984,1540 6881,1743
@@ -1280,7 +1279,7 @@ asphaltierte Nebenfahrbahn	RW10;RW10 6739,2285 6718,2443
 # REMOVED --- #: XXX zurzeit (August 2020) Bauarbeiten, vermutlich wird der Zweirichtungsradweg verlängert
 #: source_id: 2147346513 (bis 11.11.2020)
 #: XXX wird hier noch ausgeschildert?
-#: last_checked: 2020-12-19
+#: last_checked: 2021-02-20
 #: check_frequency: 60d
 #: note: auf der westlichen Straßenseite existiert noch ein alter Verbundsteinpflasterradweg
 neu asphaltiert	RW1;RW9 6759,2137 6746,2232 6739,2285
@@ -2024,7 +2023,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 13244,11112 13290,11144 13317,11144
 #: by: https://www.rbb24.de/panorama/beitrag/2020/04/berlin-bvg-u1-u3-sanierungsarbeiten-ersatzverkehr-sperrung.html (bis voraussichtlich April 2021)
 #: by: https://abendblatt-berlin.de/2020/04/14/friedrichshain-kreuzberg-sanierungsarbeiten-starten/ (etwa 12 Monate (ab 14. April 2020))
 #: XXX wegen der U1/U3-SEV-Haltestelle wurden die Radspuren aufgehoben (danach die drei auskommentierten Einträge wieder aktivieren) vvv
-#: last_checked: 2021-02-10 vvv
+#: last_checked: 2021-02-20 vvv
 #: next_check: 2021-04-01 vvv
 # geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13377,11145 13479,11147
 #	RW3; 13479,11147 13540,11148
@@ -3397,7 +3396,8 @@ Verbundsteinpflaster; sehr schmaler Unterstreifen	RW1;RW1 2997,4378 3037,4500 30
 	RW2;RW2 11456,6103 11522,6160
 	RW2;RW1 11522,6160 11628,6240
 	RW1;RW1 11628,6240 11697,6300
-	RW1;RW1 9732,3883 9751,3769
+Verbundsteinpflaster	RW1; 9732,3883 9751,3769
+Radweg nur aufgemalt	RW1; 9751,3769 9732,3883
 	RW6;RW6 3981,11232 4101,11233 4176,11235 4302,11232
 	RW6;RW6 4786,18168 4690,18185 4609,18199
 	RW1;RW4 6288,14661 6281,14630
@@ -6788,3 +6788,5 @@ asphaltierter gemeinsamer Geh- und Radweg, sehr breit	RW2;RW8 21115,271 21286,44
 #: by: mapillary
 	RW3;RW3 18938,2054 18881,2062
 	RW3; 18878,9517 18901,9499 18916,9468
+#: by: https://westnordost.de/p/30170.jpg
+	RW6;RW6 8367,10745 8350,10662 8335,10518

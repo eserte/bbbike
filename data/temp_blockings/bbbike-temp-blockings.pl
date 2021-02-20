@@ -22882,7 +22882,7 @@ EOF
        text  => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2018',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 14257,6895 14213,6840 14153,6795
+	2::inwork 14257,6895 14239,6875 14153,6795
 EOF
      },
      { from  => 1393138800, # 2014-02-23 08:00
@@ -29793,6 +29793,7 @@ EOF
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
+#: last_checked: 2021-02-20
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 EOF
      },
@@ -30826,7 +30827,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-02-19
+#: last_checked: 2021-02-20
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31037,7 +31038,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
-#: last_checked: 2021-02-07
+#: last_checked: 2021-02-20
 	q4::inwork; 14490,10610 14541,10735
 # REMOVED (hier keine Anzeichen für eine Einbahnstraßenregelung) ---	q4::inwork; 14541,10735 14675,10693
 EOF
@@ -31061,6 +31062,8 @@ EOF
        data  => <<EOF,
 #: note: laut Baustellenschild der Wasserbetriebe bis Mai 2022
 #: also_indoor: traffic (H)
+#: last_checked: 2021-02-20 (mapillary)
+#: next_check: 2021-03-17
 	q4::inwork; 5244,6261 5390,6299 5560,6344
 #: by: mapillary
 	q4::inwork 5560,6344 5582,6360
@@ -31590,11 +31593,13 @@ EOF
        text  => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, voraussichtlich bis Ende März 2021',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: MAINZER-2021
 #: source_id: 2147346816
-#: XXX: Wann sind die Bauarbeiten beendet?
+#: XXX: Wann sind die Bauarbeiten beendet? Laut rbb 31.03.2021, laut vmz 31.03.2022
 #: also_indoor: traffic (G)
-#: last_checked: 2021-01-09
+#: last_checked: 2021-02-20
 #: check_frequency: 45d
+#: next_check: 2021-03-31
 	q4::inwork 12162,8053 12147,8117
 EOF
      },
@@ -31771,10 +31776,11 @@ EOF
      },
      { from  => 1606936220, # 2020-12-02 20:10
        until => 1615050000, # 2021-03-06 18:00
-       text  => 'Reulestr.: Bauarbeiten, Sperrung der Fahrbahn, bis 06.03.2021',
+       text  => 'Reulestr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, bis 06.03.2021',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 8569,4459 8868,4498
+#: last_checked: 2021-02-20
+	q3::inwork 8858,4579 8561,4535
 EOF
      },
      { from  => undef, # 

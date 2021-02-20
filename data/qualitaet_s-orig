@@ -935,7 +935,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-02-19
+#: last_checked: 2021-02-20
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2877,7 +2877,7 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
 #: osm_watch: way id="30893534" version="16"
-#: last_checked: 2020-08-29
+#: last_checked: 2021-02-20
 #: check_frequency: 180d
 Am Teltowkanal: Asphalt	Q0 7911,4465 7769,4315
 # 
@@ -5928,7 +5928,8 @@ Kochstr. (Mariendorf): betoniert	Q0 8962,4590 8972,4505
 Tejastr.: Asphalt mit Schäden	Q1 7825,4672 7897,4585
 #: note: Richtung Norden geht es mit Kopfsteinpflaster weiter
 (Zufahrt zu Hellweg): Asphalt	Q0 7825,4672 7762,4750
-Reutlinger Str.: Asphalt mit Schäden	Q1+ 7597,4499 7673,4223
+Reutlinger Str.: Asphalt mit Schäden	Q1 7597,4499 7673,4223
+Maulbronner Ufer: Asphalt mit einigen Schäden	Q1+ 7673,4223 7585,4154 7539,4127 7484,4109 7389,4088 7307,4087 7161,4110
 Neckarsulmer Str.: Asphalt mit Schäden	Q1+ 7482,4416 7533,4293 7537,4257 7585,4154
 Rottweiler Str.: Asphalt mit Schäden	Q1+ 7368,4342 7484,4109
 Mergentheimer Str.: Asphalt mit Schäden	Q1+ 7263,4281 7300,4207 7307,4087
@@ -6433,7 +6434,7 @@ Waldsassener Str.: Asphalt	Q0 7014,203 6982,88 6705,-61
 (Lichterfelder Ring - Mauerweg): Asphalt	Q0 6600,150 6582,122 6543,98
 (Lichterfelder Ring - Mauerweg): unbefestigter Pfad	Q2 6543,98 6498,71
 (Fortsetzung der Waldsassener Str.): Asphalt	Q0 6705,-61 6543,98
-Lechtaler Weg: Verbundsteinpflaster	Q1 6445,592 6437,794 6358,795
+Lechtaler Weg: Verbundsteinpflaster	Q1 6446,584 6437,794 6358,795
 Weygerweg: Kopfsteinpflaster	Q2+ 7423,1905 7514,1930 7561,1959 7595,2016 7578,2087
 (Malteserstr. - Kamenzer Damm): Parkweg, etwas gröberer Schotter	Q2+ 7437,1859 7592,1892 7612,1918 7646,2019 7645,2110
 (Malteserstr. - Kamenzer Damm): Parkweg	Q1 7645,2110 7636,2161 7634,2267 7665,2357 7704,2482 7779,2722 7783,2730 7798,2765 7807,2961 7837,2957
@@ -9757,7 +9758,7 @@ Gäßnerweg: Asphalt	Q0- 8551,6552 8553,6665
 (Lankwitzer Str. - Am Bahndamm): Verbundsteinpflaster	Q1 8199,3338 8145,3380
 (Lankwitzer Str. - Am Bahndamm): Asphalt	Q0 8145,3380 8106,3410
 #: XXX Baumaßnahme GL6.22 (Realisierung nach 2011)
-#: last_checked: 2020-10-25
+#: last_checked: 2021-02-20
 #: check_frequency: 300d
 Waltershauser Str.: Kleinsteinpflaster, teilweise Wurzelhebungen	Q2+ 6534,1702 6673,1748 6844,1813
 # REMOVED --- #: XXX Baumaßnahmen GL6.19 bis .21 (Realisierung bis 2011) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Erwähnung) --- #: last_checked: 2019-10-11 --- #: check_frequency: 300d
@@ -10262,7 +10263,7 @@ Ellen-Widmann-Pfad [Nebenweg]: Verbundsteinpflaster	Q1 3813,2368 3894,2368
 (Rewe-Parkplatz): Verbundsteinpflaster	Q1 3746,2108 3723,2118 3726,2209
 Koloniestr.: Verbundsteinpflaster	Q1 5097,988 5051,959
 Scheelestr.: Asphalt	Q0 5139,696 5242,776 5342,845
-Lichterfelder Ring: Asphalt mit einigen Schäden	Q0- 5061,409 5448,455 5486,461 5584,475
+Lichterfelder Ring: Asphalt	Q0 5061,409 5448,455 5486,461 5584,475
 # REMOVED (ja!) --- #: XXX ist der Asphalt jetzt besser geworden (Q0)? --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/pressemitteilung.420100.php
 Schwäbische Str.: Asphalt	Q0 6724,9457 6771,9458 6851,9365
 Schwäbische Str.: neuer Asphalt	Q0 6727,9497 6771,9458
@@ -16539,7 +16540,7 @@ Bruno-Wille-Str.: Kopfsteinpflaster	Q2+ 26083,4939 26079,5057 26068,5273 26063,5
 # 
 #: by: Jürgen Müller: vvv
 #: corrected_by: srt (Asphalt -> Beton)
-Sondershauser Str.: Beton	Q0 6398,590 6383,667 6358,795 6360,825 6363,935 6386,1051
+Sondershauser Str.: Beton	Q0 6400,579 6383,667 6358,795 6360,825 6363,935 6386,1051
 #: confirmed_by: srt
 Sondershauser Str.: Asphalt	Q0 6386,1051 6397,1135 6411,1223 6441,1444 6470,1598
 # REMOVED --- #: corrected_by: srt (clarified: teilweise Asphalt -> Kopfsteinpflaster) --- #: XXX wird das hier auch noch asphaltiert? (und da gibt es noch ein kleines Stück an der Apoldaer Str.) --- #: XXX Baumaßnahme GL6.23 (Realisierung nach 2011) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Erwähnung) --- #: last_checked: 2019-10-11 (mapillary) --- #: check_frequency: 300d --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.929349.php (Asphaltierung; früher Kopfsteinpflaster)
@@ -23432,7 +23433,7 @@ Hafersteig: Asphalt mit Schäden	Q1 20975,12620 20863,12412 20859,12386 20835,122
 # 
 #: by: Franz Puder:
 #: confirmed_by: srt (östl. Abschnitt)
-Jenbacher Weg: Verbundsteinpflaster	Q1 6398,590 6411,533 6233,412 6180,376 5987,256 5800,138 5703,74 5415,-113
+Jenbacher Weg: Verbundsteinpflaster	Q1 6400,579 6411,533 6233,412 6180,376 5987,256 5800,138 5703,74 5665,51 5418,-98
 # 
 #: by: tipiak:
 #: note: "enge Straße", aber q0
@@ -28957,9 +28958,9 @@ Kindelbergweg: Beton	Q0 6632,1482 6601,1471 6560,1473
 # 
 #: XXX wird hier die Qualität verbessert?
 #: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html
-#: last_checked: 2020-06-21
+#: last_checked: 2021-02-20
 #: check_frequency: 120d
-(Mauerweg Marienfelde - Lichterfelde): Asphalt mit Fugen	Q1+ 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6256,363 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
+(Mauerweg Marienfelde - Lichterfelde): Asphalt mit Fugen	Q1+ 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6256,363 6198,328 6013,211 5832,93 5441,-150 4842,-547 4596,-707 4406,-910
 # 
 #: corrected_by: srt (Q1 -> Q1-)
 (Mauerweg - Schütte-Lanz-Str.): fester Waldweg	Q1- 5832,93 5800,138
@@ -29082,7 +29083,7 @@ Ibsenstr.: Kopfsteinpflaster	Q2+ 10209,16674 10295,16667 10382,16661 10465,16656
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Ibsenstr.: Asphalt	Q0 10465,16656 10549,16650 10632,16644 10793,16636
 #: corrected_by: srt (Asphalt -> Kopfsteinpflaster)
-Schützenstr. (Mariendorf): Kopfsteinpflaster	Q2 8581,4342 8569,4459 8561,4535 8546,4629
+Schützenstr. (Mariendorf): Kopfsteinpflaster	Q2- 8581,4342 8569,4459 8561,4535 8546,4629
 #: corrected_by: srt (Q1 -> Q0-)
 Hanns-Eisler-Str.: Asphalt	Q0- 12987,15262 13043,15353 12989,15390 12984,15417 13035,15501 13065,15514 13151,15462 13227,15415 13365,15325 13504,15235 13476,15178 13614,15095
 #: corrected_by: srt (added "einige Löcher", Q1 -> Q0-)
