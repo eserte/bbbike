@@ -158,7 +158,7 @@ sub action_check_berlin_ortsteile {
 		'|', [$perl, '-nle', 'print if /(.*)\t/ && $1 !~ /,/'],
 		'>', \$output);
 	if ($output ne '') {
-	    error "Unexpected output in check_berlin_ortsteile:\n$output\nPlease check borders!";
+	    error "Unexpected output in check_berlin_ortsteile:\n$output\nPlease check borders! Especially check for unchanged coordinates with :B_ON:/:B_OFF: prefix in plz-orig!";
 	}
 	$d->touch($check_file);
     }
