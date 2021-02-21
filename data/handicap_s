@@ -9,7 +9,7 @@ Hermann-Stˆhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork; 14242,9448 14185,9509 14089,9610
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
-Henriette-Lustig-Str.: nur der sehr enge Gehweg ist freigegeben	q4::inwork 21476,5048 21611,5119
+Henriette-Lustig-Str.: nur der sehr enge Gehweg sowie 50m der Fahrbahn sind freigegeben	q4::inwork 21476,5048 21611,5119
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -1008,7 +1008,7 @@ Schrebergasse: enge Straﬂe	q0 23980,4633 23925,4555 23850,4497
 Unterf¸hrung S-Bhf. Nˆldnerplatz: Fuﬂg‰nger	q3 15886,10947 15879,10954 15865,10965 15859,10970
 zum S-Bhf. Nˆldnerplatz: Fuﬂg‰nger	q2 15805,10949 15859,10970
 Spreepromenade: Pfad	q2 23608,5196 23785,5169 23808,5177
-Liebstadter Gang: Bordsteine	q1 24434,5645 24471,5544
+Liebstadter Gang: einige Fuﬂg‰nger, Bordsteine	q3 24434,5645 24471,5544
 (Unterf¸hrung S-Bhf. Hirschgarten): Fuﬂg‰nger	q3 23948,6054 23947,6014 23930,6013 23931,5992
 (S-Bhf. Hirschgarten - KGA Erpetal): eng	q2 23948,6054 23951,6063 23943,6131
 Spatenweg: Betonbarriere, eng	q3 21191,12516 21200,12512 21205,12489 21221,12484
@@ -1293,7 +1293,8 @@ Arnimplatz: Fuﬂg‰nger	q2 10606,16319 10739,16146
 (Weg im Salvador-Allende-Viertel): mehrere Dr‰ngelgitter im Parkplatzbereich, kann auf geeigneten Parkplatzzufahrten umfahren werden	q3 22888,4184 22957,4264
 (Weg im Salvador-Allende-Viertel): Fuﬂg‰nger	q2 22957,4264 23016,4326 23025,4358 23036,4420 23051,4461 23077,4512 23109,4554 23166,4585 23279,4599
 Salvador-Allende-Viertel [Wohngebiet]: eine Bodenschwelle, kann umfahren werden	q0 23279,4599 23445,4596
-(Weg im Salvador-Allende-Viertel - Am Berg): Fuﬂg‰nger	q2 23051,4461 23010,4506
+(Weg im Salvador-Allende-Viertel - Am Berg): Fuﬂg‰nger, Bordstein	q3 23051,4461 23010,4506
+Am Amtsgraben: einige Fuﬂg‰nger, Bordstein	q2 22927,4400 22866,4352
 (Mˆllendorffstr. - Karl-Lade-Str.): Fuﬂg‰nger	q2 15513,13539 15374,13542
 Lilienweg: Fuﬂg‰nger	q2 15143,5705 15154,5706 15209,5713 15252,5719 15296,5725 15337,5730
 Rosenweg: Fuﬂg‰nger	q2 15343,5687 15337,5730 15330,5821 15325,5934

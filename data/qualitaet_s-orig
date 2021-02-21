@@ -2283,7 +2283,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="11"
-#: last_checked: 2020-12-20
+#: last_checked: 2021-02-21
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -4647,7 +4647,7 @@ Möllenseestr.: Asphalt	Q0 26350,5167 26299,5061 26299,5041
 Wupatzseestr.: Beton	Q0 26204,5482 26213,5403 26224,5285
 Peetzseestr.: Beton	Q0 26162,5283 26167,5240 26174,5058
 Ingrid-Goltzsche-Schwarz-Str.: Beton	Q0 25009,5593 25015,5729 25015,5751
-Werlseestr.: Beton	Q0 26071,5778 26199,5643 26270,5566 26403,5452 26570,5300
+Werlseestr.: Beton	Q0 26071,5778 26185,5669 26199,5643 26206,5621 26270,5566 26403,5452 26570,5300
 Werlseestr.: Beton	Q0- 26610,5088 26570,5300
 Paulinenauer Str.: Asphalt	Q0 20879,10820 21025,10815
 Paulinenauer Str.: Beton	Q0- 21025,10815 21131,10812
@@ -4922,8 +4922,10 @@ Jostweg (Köpenick): unbefestigter Weg	Q2 21275,3607 21256,3640 21220,3642 21164,
 Gewerbegebiet: Asphalt	Q0 21617,3287 21826,3129 21770,2936
 Gewerbegebiet: Beton	Q0 21685,2964 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
 Am Schloßberg: Asphalt	Q0 22791,4457 22801,4443 22866,4352
-Am Amtsgraben: Trampelpfad	Q2 22927,4400 22866,4352
-Am Amtsgraben: Asphalt	Q0 22866,4352 22806,4331
+Am Amtsgraben: Asphalt	Q0 22866,4352 22855,4348 22806,4331
+Am Amtsgraben: guter Asphalt	Q0 22927,4400 22866,4352
+Am Amtsgraben: guter Asphalt	Q0 22963,4435 23010,4506
+Am Amtsgraben: wassergebundene Decke, am Rand Verbundsteinpflaster	Q1 22927,4400 22963,4435
 Am Berg: Asphalt	Q0 23010,4506 22959,4576
 (Neptunweg/Nixenweg): unbefestigte Wege	Q2 22893,4532 22858,4567
 #: note: laut ADFC-Karte mäßig geeignet
@@ -7520,7 +7522,7 @@ Stienitzseestr. (Friedrichshagen): Asphalt	Q0 26228,5041 26227,5060
 #: XXX Baumaßnahme 9.13 (Realisierung nach 2011) vvv
 # REMOVED (closed) --- #: osm_watch: note 1535852 4
 #: osm_watch: way id="723757589" version="3"
-#: last_checked: 2020-06-14 vvv
+#: last_checked: 2021-02-21 vvv
 #: check_frequency: 180d vvv
 Werlseestr.: schlechtes Kopfsteinpflaster	Q3 26612,5051 26610,5088
 Werlseestr.: Kopfsteinpflaster	Q2; 26612,5051 26620,4936
@@ -8902,7 +8904,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.726077.php ("erste Hälfte 2019")
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2021-01-24 vvv
+#: last_checked: 2021-02-21 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -9852,7 +9854,7 @@ Am Werksgarten: Kopfsteinpflaster	Q2 22803,5278 22737,5278
 Am Filmlager: Kopfsteinpflaster	Q2 22802,5327 22803,5278 22803,5241 22804,5199
 #: osm_watch: way id="150937168" version="4"
 #: XXX wird die Straße hier verbessert (asphaltiert)?
-#: last_checked: 2020-06-14
+#: last_checked: 2021-02-21
 #: check_frequency: 180d
 Werlseestr. - Am Goldmannpark: unbefestigte Straße	Q2 26199,5643 26239,5659 26274,5694 26282,5830
 (Am Goldmannpark - Fürstenwalder Damm): Asphalt	Q0 26282,5830 26294,5923 26424,5924
@@ -11471,7 +11473,7 @@ Bahndamm - Elsenstr.: unbefestigter Weg	Q2 13953,9372 13923,9405
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 8224,13634 8169,13705 8131,13770 8086,13862 8057,13923
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 7866,14215 7830,14268 7799,14314
 (Habichtshorst - Schmetterlingswiesen): Betonplatten	Q0 21592,10656 21674,10701
-(Schmetterlingswiesen, östlicher Weg): große Platten, gut befahrbar	Q0 21457,11188 21514,11058 21601,10864 21642,10773 21674,10701 21727,10582
+(Schmetterlingswiesen, östlicher Weg): große Platten, gut befahrbar	Q0 21457,11188 21483,11129 21514,11058 21601,10864 21642,10773 21674,10701 21727,10582
 An den Grachten: Verbundsteinpflaster	Q1+ 22191,11130 22181,11057 22172,10996 22169,10969 22166,10936 22132,10915
 Am Groen: Verbundsteinpflaster	Q1 22110,11107 22115,11082 22131,11084 22146,11086 22142,11116
 Am Groen: Verbundsteinpflaster	Q1 22131,11084 22137,11033 22146,10995
@@ -11906,15 +11908,16 @@ Rosenfelder Ring [Fußweg]: Verbundsteinpflaster	Q1+ 17547,11919 17540,11878
 Dubliner Str.: Asphalt	Q0 6005,16712 6063,16775 6191,16921 6407,17166 6485,17247 6532,17296 6535,17323
 Quartiersweg: Asphalt	Q0 7621,7813 7623,7885 7624,7946 7612,7996 7516,8063 7498,8062
 Quartiersweg: gepflastert	Q2 7548,7884 7623,7885
+Quartiersweg: gepflastert	Q2 7537,7859 7548,7884 7548,7937 7499,7937
 Elsa-Ledetsch-Weg: Asphalt	Q0 20650,11488 20659,11548 20726,11539
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
-#: last_checked: 2020-11-15
+#: last_checked: 2021-02-21
 #: check_frequency: 90d
 #: next_check: 2021-06-30
 Gisela-Reissenberger-Platz: Asphalt, letzte Deckschicht fehlt	Q1 20659,11548 20665,11620 20735,11613
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
 #: XXX bleibt es beim Asphalt, oder wird hier auch Verbundsteinpflaster entstehen?
-#: last_checked: 2020-11-15
+#: last_checked: 2021-02-21
 #: check_frequency: 90d
 #: next_check: 2021-06-30
 (Verbindungsweg): Asphalt, letzte Deckschicht oder Pflasterung fehlt	Q1 20659,11548 20627,11552
@@ -11960,6 +11963,7 @@ George-Stephenson-Str.: Asphalt	Q0 7487,14472 7452,14415 7500,14333 7569,14217 7
 (Straße G, Innovationspark Wuhlheide): Asphalt	Q0 21572,7051 21547,7024 21476,6956 21560,6869
 (Straße G, Innovationspark Wuhlheide): Beton	Q0- 21560,6869 21627,6942 21547,7024
 (Verlängerte Hämmerlingstr. - Straße G, Innovationspark Wuhlheide): Beton	Q0- 21582,6842 21560,6869
+(Lindenstr. - Schmetterlingswiesen, östlicher Weg): wassergebundene Decke	Q1 21420,11150 21483,11129
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12278,7 +12282,6 @@ Röttkenring: Beton	Q0 17872,17226 17860,17212 17830,17146 17815,17149 17680,1721
 #: confirmed_by: srt (Mittelteil)
 Stollberger Str.: guter Asphalt	Q0 24221,14142 24034,14212 23989,14307 23983,14318 23930,14426 23918,14452 23925,14480 24013,14521 23998,14555 23938,14527 23925,14514 23862,14477 23887,14409 23930,14426
 Murtzaner Ring: Asphalt	Q0 19593,14472 19593,14452 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179 20051,14191 20061,14220 20056,14373 20051,14441
-Am Amtsgraben: guter Asphalt	Q0 22927,4400 22963,4435 23010,4506
 #: note: "enge Straße", aber ohne Kategorisierung:
 #: confirmed_by: srt:
 Lindenallee (Friedrichshagen): Asphalt	Q0 25567,5749 25479,5753 25294,5761 25123,5767
@@ -15119,7 +15122,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/die-umstrittene-sanierung-der-lemkestrasse-hat-begonnen_a296981
 #: by: https://www.lemkestrasse-feldsteinpflaster.de/
 #: also_indoor: search Lemkestraße
-#: last_checked: 2020-10-03
+#: last_checked: 2021-02-20 (mapillary)
 #: check_frequency: 150d
 #: next_check: 2021-07-30
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553 25191,12343 25149,12266 25109,12196
@@ -20780,23 +20783,17 @@ Rehagener Str.: guter Beton	Q0 10631,-2130 10629,-1931 10644,-1875 10697,-1847 1
 #: by: uli 12move
 Straße am Flugplatz: asphaltiert	Q0 17522,3653 17762,3243 17799,3183 17910,3004 18014,2830 18017,2751
 # 
-#: next_check_id: GILGENBURGER-2020
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180406
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.973162.php ("Cheops-Pflaster", Bauarbeiten voraussichtlich bis Ende 2020)
-#: XXX Fahrbahninstandsetzung vvv
-#: XXX evtl. erst 2020? (siehe Finanzplan Berlin 2019-2023, S. 251 im pdf)
-#: last_checked: 2020-05-09 vvv
-#: next_check: 2020-12-31 vvv
+# REMOVED (realisiert) --- #: next_check_id: GILGENBURGER-2020 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180406 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.973162.php ("Cheops-Pflaster", Bauarbeiten voraussichtlich bis Ende 2020) --- #: XXX Fahrbahninstandsetzung vvv --- #: XXX evtl. erst 2020? (siehe Finanzplan Berlin 2019-2023, S. 251 im pdf) --- #: last_checked: 2020-05-09 vvv --- #: next_check: 2020-12-31 vvv
 #: by: henning (hirschgarten): vvv
-#: corrected_by: srt (Q1- -> Q0-)
-Gilgenburger Str.: Asphalt	Q0- 24387,5672 24434,5645 24549,5685
-#: osm_watch: way id="25192969" version="10"
-#: corrected_by: srt (mäßiger Asphalt -> Beton)
-Gilgenburger Str.: Beton mit Hebungen	Q1+ 24549,5685 24666,5726
+#: corrected_by: srt (Asphalt, Q1- -> Q0-; später: neu gemacht)
+#: note: "Cheops-Pflaster"
+Gilgenburger Str.: Betonpflaster	Q0 24387,5672 24434,5645 24549,5685
+# REMOVED --- #: osm_watch: way id="25192969" version="10"
+#: corrected_by: srt (mäßiger Asphalt -> Beton; später: neu gemacht)
+#: note: "Cheops-Pflaster"
+Gilgenburger Str.: Betonpflaster	Q0 24549,5685 24666,5726
 #: by: ^^^
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 # 
 #: by: Karin (schopp):
 Terrassenstr.: mäßiges Kopfsteinpflaster	Q2 -1392,3915 -1554,3889 -1734,3905 -1754,3907 -1856,3877 -1909,3854 -1900,3700
@@ -26963,7 +26960,7 @@ Hüninger Str.: Kopfsteinpflaster	Q2 2019,4027 2039,4128 2047,4162 2054,4190 2096
 Mörchinger Str.: Kopfsteinpflaster	Q1- 1453,3085 1393,3183 1499,3251
 #: note: hier teilweise auch verkehrsberuhigter Bereich
 Mörchinger Str.: Verbundsteine	Q0- 1918,3511 2091,3597
-Am Mühlenberg: Gehwegplatten	Q0 6096,8600 6135,8674 6133,8709
+Am Mühlenberg: Gehwegplatten	Q0 6094,8618 6100,8681 6101,8732
 #: confirmed_by: srt
 Kalckreuthstr.: Asphalt mit Löchern	Q1+ 6636,10492 6628,10318 6626,10155
 Landhausstr.: Kopfsteinpflaster	Q2 5314,9588 5342,9559 5343,9377

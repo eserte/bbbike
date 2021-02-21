@@ -3134,7 +3134,7 @@ EOF
        text  => 'Mahlsdorfer Str. (Köpenick) Richtung Köpenick, zwischen Hultischiner Damm und Genovevastr. Baustelle, Fahrtrichtung gesperrt (bis 15.10.)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 23792,7861 23764,7815 23701,7772 23223,7493 23145,7429 23066,7355
+	q4; 23792,7861 23764,7815 23701,7772 23430,7629 23223,7493 23145,7429 23066,7355
 EOF
      },
      { from  => 1129327200, # 2005-10-15 00:00
@@ -30014,20 +30014,20 @@ EOF
 EOF
      },
      { from  => undef, # $isodate2epoch->("2020-02-02 00:00:00"), # 1570223758, # 2019-10-04 23:15
-       until => undef, # $isodate2epoch->("2020-03-09 18:00:00"), # 1574118000, # 2019-11-19 00:00
-       text  => 'Brebacher Weg: Bahnübergang gesperrt, möglicherweise bis März 2021',
+       until => $isodate2epoch->("2021-03-31 18:00:00"), # undef, # $isodate2epoch->("2020-03-09 18:00:00"), # 1574118000, # 2019-11-19 00:00
+       text  => 'Brebacher Weg: Bahnübergang gesperrt, voraussichtlich bis Ende März 2021',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
 # REMOVED (alt) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php --- #: by: fritz --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergang-gesperrt_a251392
 #: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
-#: XXX bis wann ist der Bahnübergang gesperrt?
+#: XXX es wird nochmal im zweiten Halbjahr 2021 eine zweiwöchige Sperrung geben
 #: also_indoor: search Brebacher_Weg Bahnübergang
 #: osm_watch: way id="9829824" version="19"
 #: priority: #A
-#: last_checked: 2020-10-03
+#: last_checked: 2021-02-21
 #: check_frequency: 90d
-#: next_check: 2021-03-01
+#: next_check: 2021-03-31
 	2::inwork 21558,12073 21562,12088 21564,12097
 EOF
      },
@@ -31408,8 +31408,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Oberfeldstr.: Bahnübergang am S-Bhf. Biesdorf gesperrt, möglicherweise bis März 2021',
+       until => $isodate2epoch->("2021-03-31 18:00:00"), # undef, # XXX
+       text  => 'Oberfeldstr.: Bahnübergang am S-Bhf. Biesdorf gesperrt, voraussichtlich bis Ende März 2021',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9022 (Frage)
@@ -31425,7 +31425,7 @@ EOF
 #: priority: #A
 #: last_checked: 2020-12-28
 #: check_frequency: 90d
-#: next_check: 2021-03-01
+#: next_check: 2021-03-31
 	2::inwork 20627,12162 20624,12133 20620,12108
 EOF
      },
@@ -31804,7 +31804,7 @@ EOF
 EOF
      },
      { from  => 1607814000, # 2020-12-13 00:00
-       until => 1627682399, # 2021-07-30 23:59
+       until => 1613921964, # (deaktiviert --- bei Mapillary nichts zu sehen) --- 1627682399, # 2021-07-30 23:59
        text  => 'Lemkestr.: zwischen Linderhofstr. und Sudermannstr., Sperrung der Fahrbahn, vom 14. Dezember 2020 bis voraussichtlich 30. Juli 2021 (außer über die Weihnachtsfeiertage)',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1027826.php',

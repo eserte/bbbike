@@ -784,8 +784,8 @@ Bordsteine beim Überqueren der Wuhletalstr.	CS 20801,17821 20728,17670 20657,175
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7138 (Realisierung einer Querung Anfang 2021, vielleicht)
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/baumassnahme-an-der-grunewaldstrasse-haengt-von-senatsplaenen-ab_a252769
 #: XXX Realisierung einer Querung geplant
-#: last_checked: 2020-12-06
-#: next_check: 2021-03-01
+#: last_checked: 2021-02-21 (mapillary)
+#: check_frequency: 120d
 Bordsteine beim Überqueren der Grunewaldstr.	CP; 6851,9365 6917,9274 7001,9291
 Quastenhornweg: Privatstraße	CS -7595,4374 -7557,4340 -7473,4306 -7413,4304
 Gößweinsteiner Gang: Privatstraße	CS -7636,4346 -7561,4191
@@ -1224,7 +1224,7 @@ ausgeschildert als Rüdigerstr. 65+65 A-E	CP2; 17441,12247 17444,12286
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_50_5649_5788_online.pdf (Straßenbenennung)
 #: XXX dieser Weg wird auch in Minna-Todenhagen-Str. umbenannt --- evtl. auf einen Namen hier komplett verzichten. old_name-Eintrag?
 #: XXX wird hier noch irgendwie ausgeschildert?
-#: last_checked: 2020-12-26
+#: last_checked: 2021-02-21
 #: check_frequency: 120d
 Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17295,7328 17475,7451 17566,7485
 # REMOVED (hier: Heckenweg) --- Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17566,7485 17669,7515
@@ -1458,7 +1458,7 @@ ausgeschildert Sophie-Charlotte-Platz	CP; 3064,11657 3144,11659 3159,11562
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: last_checked: 2020-10-24
-#: check_frequency: 60d
+#: check_frequency: 180d
 Henriette-Lustig-Str.: noch nicht ausgeschildert	CS 21611,5119 21631,5079
 # 
 ausgeschildert "Parkhaus Steglitzer Kreisel"	CP2; 4911,5428 4856,5375
@@ -1472,8 +1472,8 @@ ausgeschildert als "zu den Häusern Seefelder Str. 15-49"	CP2; 17383,16197 17362,
 #: XXX wird hier noch ausgeschildert bzw. die Ausschilderung geändert? vvv
 #: last_checked: 2020-12-19 vvv
 ausgeschildert "Quartiersweg 5-8"	CP2; 7621,7813 7623,7885
-nicht ausgeschildert	CS 7537,7859 7548,7884 7548,7937 7499,7937
-ausgeschildert "Quartiersweg 1-4"	CP2; 7498,8062 7516,8063
+# REMOVED --- nicht ausgeschildert	CS 7537,7859 7548,7884 7548,7937 7499,7937
+# REMOVED --- ausgeschildert "Quartiersweg 1-4"	CP2; 7498,8062 7516,8063
 #: XXX ^^^
 #: last_checked ^^^
 #: next_check_id ^^^

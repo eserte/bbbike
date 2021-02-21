@@ -3771,7 +3771,7 @@ Möllenseestr.: Asphalt	Q0 26350,5167 26299,5061 26299,5041
 Wupatzseestr.: Beton	Q0 26204,5482 26213,5403 26224,5285
 Peetzseestr.: Beton	Q0 26162,5283 26167,5240 26174,5058
 Ingrid-Goltzsche-Schwarz-Str.: Beton	Q0 25009,5593 25015,5729 25015,5751
-Werlseestr.: Beton	Q0 26071,5778 26199,5643 26270,5566 26403,5452 26570,5300
+Werlseestr.: Beton	Q0 26071,5778 26185,5669 26199,5643 26206,5621 26270,5566 26403,5452 26570,5300
 Werlseestr.: Beton	Q0 26610,5088 26570,5300
 Paulinenauer Str.: Asphalt	Q0 20879,10820 21025,10815
 Paulinenauer Str.: Beton	Q0 21025,10815 21131,10812
@@ -4030,8 +4030,10 @@ Jostweg (Köpenick): unbefestigter Weg	Q2 21275,3607 21256,3640 21220,3642 21164,
 Gewerbegebiet: Asphalt	Q0 21617,3287 21826,3129 21770,2936
 Gewerbegebiet: Beton	Q0 21685,2964 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
 Am Schloßberg: Asphalt	Q0 22791,4457 22801,4443 22866,4352
-Am Amtsgraben: Trampelpfad	Q2 22927,4400 22866,4352
-Am Amtsgraben: Asphalt	Q0 22866,4352 22806,4331
+Am Amtsgraben: Asphalt	Q0 22866,4352 22855,4348 22806,4331
+Am Amtsgraben: guter Asphalt	Q0 22927,4400 22866,4352
+Am Amtsgraben: guter Asphalt	Q0 22963,4435 23010,4506
+Am Amtsgraben: wassergebundene Decke, am Rand Verbundsteinpflaster	Q1 22927,4400 22963,4435
 Am Berg: Asphalt	Q0 23010,4506 22959,4576
 (Neptunweg/Nixenweg): unbefestigte Wege	Q2 22893,4532 22858,4567
 Freystadter Weg: Asphalt	Q0 20994,4761 20981,4696 20981,4628 21008,4275
@@ -10109,7 +10111,7 @@ Bahndamm - Elsenstr.: unbefestigter Weg	Q2 13953,9372 13923,9405
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 8224,13634 8169,13705 8131,13770 8086,13862 8057,13923
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 7866,14215 7830,14268 7799,14314
 (Habichtshorst - Schmetterlingswiesen): Betonplatten	Q0 21592,10656 21674,10701
-(Schmetterlingswiesen, östlicher Weg): große Platten, gut befahrbar	Q0 21457,11188 21514,11058 21601,10864 21642,10773 21674,10701 21727,10582
+(Schmetterlingswiesen, östlicher Weg): große Platten, gut befahrbar	Q0 21457,11188 21483,11129 21514,11058 21601,10864 21642,10773 21674,10701 21727,10582
 An den Grachten: Verbundsteinpflaster	Q1 22191,11130 22181,11057 22172,10996 22169,10969 22166,10936 22132,10915
 Am Groen: Verbundsteinpflaster	Q1 22110,11107 22115,11082 22131,11084 22146,11086 22142,11116
 Am Groen: Verbundsteinpflaster	Q1 22131,11084 22137,11033 22146,10995
@@ -10479,6 +10481,7 @@ Rosenfelder Ring [Fußweg]: Verbundsteinpflaster	Q1 17547,11919 17540,11878
 Dubliner Str.: Asphalt	Q0 6005,16712 6063,16775 6191,16921 6407,17166 6485,17247 6532,17296 6535,17323
 Quartiersweg: Asphalt	Q0 7621,7813 7623,7885 7624,7946 7612,7996 7516,8063 7498,8062
 Quartiersweg: gepflastert	Q2 7548,7884 7623,7885
+Quartiersweg: gepflastert	Q2 7537,7859 7548,7884 7548,7937 7499,7937
 Elsa-Ledetsch-Weg: Asphalt	Q0 20650,11488 20659,11548 20726,11539
 Gisela-Reissenberger-Platz: Asphalt, letzte Deckschicht fehlt	Q1 20659,11548 20665,11620 20735,11613
 (Verbindungsweg): Asphalt, letzte Deckschicht oder Pflasterung fehlt	Q1 20659,11548 20627,11552
@@ -10521,6 +10524,7 @@ George-Stephenson-Str.: Asphalt	Q0 7487,14472 7452,14415 7500,14333 7569,14217 7
 (Straße G, Innovationspark Wuhlheide): Asphalt	Q0 21572,7051 21547,7024 21476,6956 21560,6869
 (Straße G, Innovationspark Wuhlheide): Beton	Q0 21560,6869 21627,6942 21547,7024
 (Verlängerte Hämmerlingstr. - Straße G, Innovationspark Wuhlheide): Beton	Q0 21582,6842 21560,6869
+(Lindenstr. - Schmetterlingswiesen, östlicher Weg): wassergebundene Decke	Q1 21420,11150 21483,11129
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -10687,7 +10691,6 @@ Hoppenrader Weg: guter Beton	Q0 -4757,14303 -4612,14267
 Röttkenring: Beton	Q0 17872,17226 17860,17212 17830,17146 17815,17149 17680,17210 17714,17285 17724,17307 17784,17357
 Stollberger Str.: guter Asphalt	Q0 24221,14142 24034,14212 23989,14307 23983,14318 23930,14426 23918,14452 23925,14480 24013,14521 23998,14555 23938,14527 23925,14514 23862,14477 23887,14409 23930,14426
 Murtzaner Ring: Asphalt	Q0 19593,14472 19593,14452 19593,14405 19595,14348 19599,14273 19634,14171 19692,14082 19731,14061 19770,14060 19818,14064 19843,14064 19921,14064 19951,14083 20040,14179 20051,14191 20061,14220 20056,14373 20051,14441
-Am Amtsgraben: guter Asphalt	Q0 22927,4400 22963,4435 23010,4506
 Lindenallee (Friedrichshagen): Asphalt	Q0 25567,5749 25479,5753 25294,5761 25123,5767
 Koschatweg: mäßiger Beton	Q1 17111,4643 17053,4622 17020,4588 16954,4501 16814,4315 16656,4092
 Mewesstr.: Asphalt	Q0 16985,26966 16855,27083
@@ -13882,8 +13885,8 @@ Schünemannweg: Kopfsteinpflaster	Q2 7171,4200 6986,4258 6965,4219
 Rehagener Str.: schlechtes Kopfsteinpflaster	Q3 10657,-2639 10648,-2547 10638,-2452 10642,-2371 10631,-2130
 Rehagener Str.: guter Beton	Q0 10631,-2130 10629,-1931 10644,-1875 10697,-1847 10767,-1850
 Straße am Flugplatz: asphaltiert	Q0 17522,3653 17762,3243 17799,3183 17910,3004 18014,2830 18017,2751
-Gilgenburger Str.: Asphalt	Q0 24387,5672 24434,5645 24549,5685
-Gilgenburger Str.: Beton mit Hebungen	Q1 24549,5685 24666,5726
+Gilgenburger Str.: Betonpflaster	Q0 24387,5672 24434,5645 24549,5685
+Gilgenburger Str.: Betonpflaster	Q0 24549,5685 24666,5726
 Terrassenstr.: mäßiges Kopfsteinpflaster	Q2 -1392,3915 -1554,3889 -1734,3905 -1754,3907 -1856,3877 -1909,3854 -1900,3700
 Spechtstr.: Asphalt	Q0 -1681,19955 -1572,19899 -1419,19815
 Spechtstr.: Asphalt	Q0 -1419,19815 -1284,19742
@@ -15948,7 +15951,7 @@ Altkircher Str.: Kopfsteinpflaster	Q2 2292,4035 2203,4045
 Hüninger Str.: Kopfsteinpflaster	Q2 2019,4027 2039,4128 2047,4162 2054,4190 2096,4335 2133,4413
 Mörchinger Str.: Kopfsteinpflaster	Q1 1453,3085 1393,3183 1499,3251
 Mörchinger Str.: Verbundsteine	Q0 1918,3511 2091,3597
-Am Mühlenberg: Gehwegplatten	Q0 6096,8600 6135,8674 6133,8709
+Am Mühlenberg: Gehwegplatten	Q0 6094,8618 6100,8681 6101,8732
 Kalckreuthstr.: Asphalt mit Löchern	Q1 6636,10492 6628,10318 6626,10155
 Landhausstr.: Kopfsteinpflaster	Q2 5314,9588 5342,9559 5343,9377
 Landhausstr.: Kopfsteinpflaster	Q1 5341,8931 5343,8858

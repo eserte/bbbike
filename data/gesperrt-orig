@@ -51,7 +51,7 @@ Rasthof Avus	1 1870,10406 1882,10356 1847,10323 1723,10289 1692,10348 1793,10424
 Breitenbachplatz (Westseite)	1 4423,6477 4335,6523 4218,6583 4111,6651 4074,6681 4021,6729 3947,6814
 Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4103,6716 4141,6688 4248,6620 4347,6551 4423,6477
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
-Bayerischer Platz	1 6059,9118 6044,9223 6084,9242 6131,9241 6152,9136 6147,9100 6115,9088 6076,9091 6059,9118
+Bayerischer Platz	1 6059,9118 6044,9223 6084,9242 6131,9241 6152,9136 6147,9100 6115,9088 6066,9094 6059,9118
 #: confirmed_by: osm
 orthodoxe Kirche	1 3952,8980 3831,9052
 U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2313,4901 2190,4823 2079,4769 2027,4792
@@ -71,8 +71,9 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.994201.php
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-xi-231aba/xi-231aba-planzeichnung.pdf
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
-#: last_checked: 2020-11-12
-#: next_check: 2021-05-01
+#: last_checked: 2021-02-21 (mapillary)
+#: check_frequency: 90d
+#: next_check: 2021-12-31
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf	1 9732,3883 9831,3876 9953,3806
 Friedenstr./Reißeckstr.	1 9953,3806 9751,3769 9584,3713 9455,3671 9391,3651 9222,3602 9128,3580 8964,3539
@@ -3227,6 +3228,7 @@ Drängelgitter	BNP:3::trailer=10 1035,14996
 #: check_frequency: 180d
 Schranke, umständlich zu umfahren	BNP:5::trailer=15 19608,-1953
 Schranke	BNP:2::trailer=5 19617,6208
+Schranke	BNP:5::trailer=15 22855,4348
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3252,7 +3254,7 @@ Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
 #: osm_watch: way id="610818155" version="4"
-#: last_checked: 2021-02-18
+#: last_checked: 2021-02-21
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
@@ -3545,7 +3547,7 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 #: osm_watch: way id="16307526" version="19"
 #: priority: #A
 #: also_indoor: search Königsteinbrücke
-#: last_checked: 2021-02-14 (mapillary) (laut Baustellenschild bis Februar 2021)
+#: last_checked: 2021-02-21 (mapillary) (laut Baustellenschild bis Februar 2021)
 #: check_frequency: 14d
 #: next_check: 2021-02-28
 # REMOVED --- #: valid: -20210228
@@ -3589,7 +3591,7 @@ Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2020-12-20 vvv
+#: last_checked: 2021-02-21 vvv
 #: check_frequency: 60d vvv
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
 # REMOVED (hier kann man schon fahren) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21474,5388 21485,5377 21514,5314 21547,5245 21413,5180
@@ -3956,14 +3958,15 @@ Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12
 # REMOVED --- #: next_check_id: MOEWENWEG-2017 --- #: osm_watch: way id="618339166" version="7" --- #: XXX nach den Bauarbeiten vermutlich nur ein Rad/Gehweg --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.632264.php ("Fertigstellung ist für den Sommer 2018 geplant") --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_48_5417_5552_online.pdf (Benennung von Privatstraßen) --- #: XXX hier ("Baugebiet Grüne Aue) werden drei Privatstraßen benannt (fehlen alle in Berlin.coords.data, Lage? Qualität?) (siehe auch fragezeichen-orig für die anderen zwei) --- #: XXX An den Grachten: 11123 --- #: XXX Klompenweg: 11124; für Berlin.coords.data: Klompenweg|Biesdorf|12683 --- #: XXX Am Groen: 11125; für Berlin.coords.data siehe fragezeichen-orig --- #: last_checked: 2019-07-28 --- #: check_frequency: 30d --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22172,10996 22195,10993
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
-#: last_checked: 2021-01-08 (osm) vvv
+#: last_checked: 2021-02-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-06-30 vvv
 # REMOVED (hier mittlerweile offen) --- Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20627,11552
 #: osm_watch: way id="10432861" version="22"
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20627,11552 20631,11621 20633,11651
 #: osm_watch: way id="744233528" version="11"
-Heino-Schmieden-Weg: größtenteils noch wegen Bauarbeiten gesperrt	2::inwork 20720,11484 20726,11539 20735,11613 20831,11604 20818,11480
+# REMOVED (hier mittlerweile offen) --- Heino-Schmieden-Weg: größtenteils noch wegen Bauarbeiten gesperrt	2::inwork 20720,11484 20726,11539
+Heino-Schmieden-Weg: größtenteils noch wegen Bauarbeiten gesperrt	2::inwork 20726,11539 20735,11613 20831,11604 20818,11480
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4139,7 +4142,7 @@ Niederlagstr.: Durchfahrt gesperrt	2::inwork 9934,12420 9943,12364
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: osm_watch: way id="186329816" version="17"
+#: osm_watch: way id="186329816" version="18"
 #: also_indoor: traffic
 #: last_checked: 2021-02-19
 #: next_check: 2022-12-30
@@ -4361,8 +4364,8 @@ Lietzenburger Str.: Mittelstreifen schlecht zu überqueren	3nocross 6494,10440 64
 (Kolonieweg a. d. Forkenbeckstr.): schieben (Rampe 10 Stufen)	0:15 3756,8101
 tragen (2 x 10 Stufen)	0:40 1666,4637
 tragen (2 x 10 Stufen)	0:40 1689,4630
-Sterzinger Str.	1 6096,8600 6123,8546
-Bozener Str.	1 5900,8930 5971,8926 6042,8917
+Sterzinger Str.	1 6094,8618 6123,8546
+Bozener Str.	1 5900,8930 5971,8926 6033,8919
 Bozener Str.	1 5971,8926 5974,9100
 Kleiststr.: schwierig zu querender Mittelstreifen	3nocross 6532,10529 6636,10492 6753,10446
 # REMOVED (Richtungsfahrbahnen eingezeichnet) --- Bundesallee: Queren nicht möglich	3nocross 5354,8236 5363,8170 5376,8104 5357,8013

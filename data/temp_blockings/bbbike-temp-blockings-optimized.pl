@@ -2622,20 +2622,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '# REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
 # REMOVED (alt) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php --- #: by: fritz --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergang-gesperrt_a251392
 #: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
-#: XXX bis wann ist der Bahnübergang gesperrt?
+#: XXX es wird nochmal im zweiten Halbjahr 2021 eine zweiwöchige Sperrung geben
 #: also_indoor: search Brebacher_Weg Bahnübergang
 #: osm_watch: way id="9829824" version="19"
 #: priority: #A
-#: last_checked: 2020-10-03
+#: last_checked: 2021-02-21
 #: check_frequency: 90d
-#: next_check: 2021-03-01
+#: next_check: 2021-03-31
 	2::inwork 21558,12073 21562,12088 21564,12097
 ',
          'from' => undef,
          'id' => 3171,
-         'text' => 'Brebacher Weg: Bahnübergang gesperrt, möglicherweise bis März 2021',
+         'text' => 'Brebacher Weg: Bahnübergang gesperrt, voraussichtlich bis Ende März 2021',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1617206400
        },
        undef,
        {
@@ -3053,14 +3053,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: priority: #A
 #: last_checked: 2020-12-28
 #: check_frequency: 90d
-#: next_check: 2021-03-01
+#: next_check: 2021-03-31
 	2::inwork 20627,12162 20624,12133 20620,12108
 ',
          'from' => undef,
          'id' => 3282,
-         'text' => 'Oberfeldstr.: Bahnübergang am S-Bhf. Biesdorf gesperrt, möglicherweise bis März 2021',
+         'text' => 'Oberfeldstr.: Bahnübergang am S-Bhf. Biesdorf gesperrt, voraussichtlich bis Ende März 2021',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1617206400
        },
        undef,
        {
@@ -3205,17 +3205,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: LEMKE-2020
-	q4::inwork 25191,12343 25363,12553
-',
-         'from' => 1607814000,
-         'id' => 3312,
-         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1027826.php',
-         'text' => 'Lemkestr.: zwischen Linderhofstr. und Sudermannstr., Sperrung der Fahrbahn, vom 14. Dezember 2020 bis voraussichtlich 30. Juli 2021 (außer über die Weihnachtsfeiertage)',
-         'type' => 'handicap',
-         'until' => 1627682399
-       },
+       undef,
        {
          'data' => '#: next_check_id: STERNDAMM-2020
 #: by: osm
