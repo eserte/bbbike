@@ -2796,7 +2796,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-02-20
+#: last_checked: 2021-02-22
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3373,16 +3373,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1614034800
        },
-       {
-         'data' => '	2::inwork 12672,20720 12723,20691
-',
-         'from' => 1613631600,
-         'id' => 3331,
-         'source_id' => '2147346882',
-         'text' => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, auch für Fußgänger und Radfahrer, vom 19.02.2021 08:00 Uhr bis 22.02.2021 08:00 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1613977200
-       },
+       undef,
        {
          'data' => '#: by: https://tierparkcenter.de/wochenmarkt/ (Öffnungszeiten)
 #: tempex: (mo,th,fr) T08-T17

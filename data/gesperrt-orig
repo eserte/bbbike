@@ -1906,7 +1906,7 @@ Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,101
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
 Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 Schönhauser Allee: U-Bahnviadukt	3nocross 10969,15944 10964,15896 10953,15787
-Schönhauser Allee: U-Bahnviadukt	3 10941,15697 10917,15525 11055,15504
+# REMOVED --- Schönhauser Allee: U-Bahnviadukt	3 10941,15697 10917,15525 11055,15504
 Berliner Str.: U-Bahnrampe	3nocross 10975,16896 10992,16829 11008,16729 11021,16605 11027,16553 11019,16465
 Wisbyer Str.: Straßenbahn	3nocross 11673,16367 11727,16358 11750,16354
 Wisbyer Str.: Straßenbahn	3nocross 11750,16354 11808,16343 11829,16339 11889,16328
@@ -3247,7 +3247,7 @@ Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,1
 # 
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße.
 #: osm_watch: way id="308312347" version="3"
-#: last_checked: 2021-01-22
+#: last_checked: 2021-02-22
 #: check_frequency: 60d
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 # 
