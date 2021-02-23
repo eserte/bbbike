@@ -3363,16 +3363,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '	2::inwork 35479,7051 35482,7099
-',
-         'from' => 1613862000,
-         'id' => 3330,
-         'source_id' => 'LS/721-F/21/021',
-         'text' => 'Woltersdorf, Brücke über den Stolpkanal: Sperrung am 22.02.2021, evtl. sind auch Radfahrer und Fußgänger betroffen ',
-         'type' => 'gesperrt',
-         'until' => 1614034800
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://tierparkcenter.de/wochenmarkt/ (Öffnungszeiten)
