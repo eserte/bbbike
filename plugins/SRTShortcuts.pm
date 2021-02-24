@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -57,6 +57,7 @@ my $streets_track                    = "$bbbike_rootdir/tmp/streets.bbd";
 my $acc_streets_track                = "$bbbike_rootdir/tmp/streets-accurate.bbd";
 my $acc_cat_streets_track            = "$bbbike_rootdir/tmp/streets-accurate-categorized.bbd";
 my $acc_cat_split_streets_track      = "$bbbike_rootdir/tmp/streets-accurate-categorized-split.bbd";
+my $fit_track                        = "$bbbike_rootdir/tmp/fit.bbd";
 my %acc_cat_split_streets_byyear_track;
 my $curr_year = 1900 + (localtime)[5];
 my @acc_cat_split_streets_years = ($curr_year-3..$curr_year); # also used for unique-matches
@@ -332,9 +333,6 @@ EOF
 	      [Button => $do_compound->("Tracks in region"),
 	       -command => sub { tracks_in_region() },
 	      ],
-	      [Button => $do_compound->("Update tracks and matches.bbd"),
-	       -command => sub { make_gps_target("tracks tracks-accurate tracks-accurate-categorized tracks-accurate-categorized-split unique-matches") },
-	      ],
 	      layer_checkbutton([$do_compound->("Add streets-accurate-categorized-split.bbd")],
 				'str', $acc_cat_split_streets_track,
 				set_layer_highlightning => 1,
@@ -351,6 +349,12 @@ EOF
 				   );
 	      } @acc_cat_split_streets_years
 	      ),
+	      layer_checkbutton([$do_compound->("Add fit tracks")],
+				'str', $fit_track,
+				set_layer_highlightning => 1,
+				special_raise => 1,
+				Width => 1,
+			       ),
 	      [Cascade => $do_compound->("Add other streets...bbd"), -menuitems =>
 	       [
 		layer_checkbutton("Add streets.bbd (all GPS tracks)",
@@ -782,6 +786,10 @@ EOF
 		],
 		[Button => "Update Mapnik map data (with experimental switch)",
 		 -command => sub { update_mapnik_map_data(experimental => 1) },
+		],
+		'-',
+		[Button => "Update tracks and matches.bbd",
+		 -command => sub { make_gps_target("tracks tracks-accurate tracks-accurate-categorized tracks-accurate-categorized-split unique-matches") },
 		],
 		'-',
 		[Button => "Show Karte canvas items",
