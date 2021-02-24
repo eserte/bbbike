@@ -27,6 +27,7 @@ PERL?=			perl
 # assume we have a modern perl (> 5.8.0, which has utf8 bugs) installed...
 PERL_UTF8?=		${PERL}
 PERL_NO_HASH_RND?=	env PERL_HASH_SEED=0 PERL_PERTURB_KEYS=NO ${PERL}
+PERL_MODERN!=           perl -I$(BBBIKEDIR) -MBBBikeBuildUtil=get_modern_perl -e 'print get_modern_perl(required_modules => { LWP => 0 })'
 NO_LOCALE=		env LANG=C LC_ALL=C LC_CTYPE=C
 SED?=			${NO_LOCALE} sed
 CUT?=			${NO_LOCALE} cut
@@ -1924,8 +1925,10 @@ ${PERSISTENTTMPDIR}/crossings_gewaesser_ignore.bbd:	\
 
 check-urls: ${PERSISTENTTMPDIR}/url_checks.log
 
-${PERSISTENTTMPDIR}/url_checks.log:	comments_route-orig comments_ferry-orig
-	${PERL} ${MISCSRCDIR}/url_checker.pl -v -log $@ $>
+# Note: use a modern perl here to avoid possible ssl problems with older LWP
+# Note: the sources should be files which actually have url: directives
+${PERSISTENTTMPDIR}/url_checks.log:	comments_route-orig comments_ferry-orig comments_misc-orig
+	${PERL_MODERN} ${MISCSRCDIR}/url_checker.pl -v -log $@ $>
 
 check-bvg: ${PERSISTENTTMPDIR}/bvg_checks.log
 
