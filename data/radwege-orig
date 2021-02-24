@@ -852,9 +852,9 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-02-20
+#: last_checked: 2021-02-24
 #: check_frequency: 60d
-#: next_check: 2021-03-31
+# REMOVED (vermutlich ohne baldige Änderung) --- #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
 	RW4; 14323,9913 14289,9870 14244,9812 14196,9749
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
@@ -1507,7 +1507,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2021-02-21 vvv
+#: last_checked: 2021-02-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
@@ -1540,7 +1540,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2021-01-16
+#: last_checked: 2021-02-24
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -3077,6 +3077,7 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/strassenbahnen-fahren-nicht_a285244
 #: by: https://abendblatt-berlin.de/2020/08/28/berlin-marzahn-ersatzneubau-der-suedlichen-rhinstrassenbruecke/
 #: by: https://viz.berlin.de/2021/02/tram-m17-27-37-unterbrochen/ (Straßenbahn bis Ende Mai 2021 unterbrochen)
+#: by: https://www.berliner-woche.de/friedrichsfelde/c-verkehr/tram-bald-wieder-auf-zwei-gleisen_a301845
 #: XXX Baubeginn Ende 2016, mittlerweile ab April 2018 --- allerdings sind schon jetzt hier Bauarbeiten, bis Ende August 2017
 #: XXX vorbereitende Maßnahmen ab 12. März 2018, Sperrung der westlichen Brücke ab 27. März 2018, Fertigstellung der neuen Brücke ist für 2020 geplant
 #: osm_watch: way id="4068148" version="24"
@@ -3308,10 +3309,9 @@ Gehweg für Radfahrer frei	RW1; 18922,2238 18928,2319 18929,2454
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX laut fixmyberlin werden hier Radstreifen entstehen, Umsetzung ab 2021
 #: source_id: 2147346437 (Leitungsarbeiten bis 26.02.2020)
-#: last_checked: 2020-11-28
+#: last_checked: 2021-02-24
 # REMOVED --- #: check_frequency: 90d
-# REMOVED --- #: next_check: 2021-03-01
-#: next_check: 2021-02-26
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2021-02-26
 # REMOVED (kein Radweg mehr) --- Kein abgeflachter Bordstein bei der Auffahrt!	RW1; 18922,2238 18881,2062
 	RW0; 18922,2238 18881,2062
 	RW1; 18881,2062 18922,2238
@@ -3589,7 +3589,7 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 #	RW4; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
 #	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905
 #: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv
-#: last_checked: 2020-12-20 vvv
+#: last_checked: 2021-02-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 außerdem Gehweg für Radfahrer frei	RW5; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374
@@ -3602,7 +3602,7 @@ Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337
 #: confirmed_by: srt
 #: also_indoor: traffic (G) vvv
 #: source_id: 2147346053 vvv
-#: last_checked: 2020-11-15 vvv
+#: last_checked: 2021-02-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 	RW3; 17736,5441 17886,5587
@@ -3752,8 +3752,7 @@ Verbundsteinpflaster	RW1; 22724,6608 22675,6498 22645,6431
 #: note: Busspur ist nicht für Radfahrer freigegeben, aber der Radweg ist auch nicht benutzungspflichtig 
 schmaler Unterstreifen gegen parkende Autos, Beton	RW1; 22645,6431 22539,6258
 Gehweg für Radfahrer frei	RW1;RW9 23066,7355 23145,7429 23223,7493
-gemeinsamer Geh- und Radweg	RW2; 22467,6135 22603,6141 22777,6151
-	RW;RW0 22777,6151 22857,6155
+Gehweg für Radfahrer frei	RW1; 22467,6135 22603,6141 22777,6151 22857,6155
 	RW1;RW1 21974,5208 22017,5159 22101,5064 22128,5003
 Gehweg für Radfahrer frei	RW1; 26620,4936 26971,5025 27097,5108 27189,5169 27340,5178 27375,5177 28176,5167
 	RW1; 27189,5169 27097,5108 26971,5025 26620,4936
@@ -4205,7 +4204,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 18061,11240 18202,11253 18229,11256 18280,11266
 	RW4; 18280,11266 18229,11256 18200,11269 18179,11278 18059,11256 18027,11244
 	RW;RW1 4473,8351 4505,8321 4687,8306
 	RW1;RW1 4687,8306 4788,8318
-Verbundsteinpflaster	RW2;RW8 21108,4725 21065,4957 21062,5026 21050,5165 21025,5437 21024,5601 21002,5755
+Verbundsteinpflaster	RW2;RW8 21108,4725 21065,4957 21060,5043 21056,5108 21025,5437 21024,5601 21002,5755
 	RW1;RW1 5900,9737 5831,9730 5648,9642
 	RW1; 5578,9629 5598,9612 5618,9607 5642,9613 5648,9642
 	RW1; 5648,9642 5630,9656 5598,9654 5578,9629
@@ -6327,8 +6326,10 @@ asphaltiert	RW9;RW1 12325,13148 12382,13097
 	RW6;RW6 17544,16463 17502,16385 17510,16357
 	RW6;RW6 22246,2272 22418,2390 22454,2342 22271,2214
 	RW6;RW6 22153,2482 22221,2520 22270,2549
-	RW6;RW6 22287,2431 22221,2520
+	RW6;RW6 22287,2431 22221,2520 22159,2585
 	RW6;RW6 22270,2549 22358,2460 22418,2390
+	RW6;RW6 22118,2559 22159,2585 22197,2612
+	RW6;RW6 22197,2612 22270,2549
 	RW2; 19644,15320 19664,15366 19681,15405 19733,15511 19809,15676
 Verbundsteinpflaster	RW1; 22987,12146 23000,12160 23017,12177
 Verbundsteinpflaster	RW2; 23017,12177 23100,12269

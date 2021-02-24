@@ -18402,7 +18402,8 @@ EOF
 #: note: nördliches Tor verschlossen, gesehen am 2019-09-07 (Sa)
 #: note: südliches Tor verschlossen, gesehen am 2020-10-24 (Sa)
 #: tempex: volatile vvv
-(Gewerbegebiet)	2 21617,3287 21826,3129 21770,2936
+(Gewerbegebiet)	2 21617,3287 21826,3129 21865,3095
+(Gewerbegebiet)	2 21826,3129 21770,2936
 (Gewerbegebiet)	2 21685,2964 21770,2936 21816,2919 21939,2894 21984,2897 22004,2904
 #: tempex ^^^
 EOF
@@ -31744,7 +31745,7 @@ EOF
 #: osm_watch: way id="877995097" version="2"
 #: by: https://twitter.com/VIZ_Berlin/status/1354746716914900992 (anhand der Fotos nicht erkennbar)
 #: add_fragezeichen: Wann ist der Radweg offiziell befahrbar?
-#: last_checked: 2020-12-12 (osm)
+#: last_checked: 2021-02-24
 	2::inwork 21874,1511 21829,1351 21656,989 21613,923 21286,449 21115,271
 EOF
      },
@@ -31815,7 +31816,7 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Katharina-Boll-Dornberger-Str.: Weg kann wegen Straßenbahnbauarbeiten gesperrt sein',
+       text  => q{Katharina-Boll-Dornberger-Str.: Weg kann wegen Straßenbahnbauarbeiten gesperrt sein, ansonsten gibt's einen provisorischen Überweg über die Trasse},
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: STERNDAMM-2020
@@ -31823,7 +31824,7 @@ EOF
 #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert)
 #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt
 #: osm_watch: way id="855549020" version="1"
-#: last_checked: 2020-12-19
+#: last_checked: 2021-02-24
 #: check_frequency: 90d
 	2::inwork 18836,3611 18943,3508
 EOF
@@ -32054,6 +32055,17 @@ EOF
        data  => <<EOF,
 #: by: rbbtext
 	q4::inwork 9363,5903 9291,5908
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rumeyplan: zwischen Manfred-von-Richthofen-Str. und Boelckestr. Sperrung wegen einer defekten Gasleitung, eventuell sind auch Radfahrer betroffen',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX Sind Radfahrer tatsächlich betroffen? Gilt die Sperrung in beide Richtungen? Bis wann geht die Sperrung? vvv
+	2::inwork 8690,7704 8812,7730
+	2::inwork 8796,7751 8686,7726
+#: XXX ^^^
 EOF
      },
     );
