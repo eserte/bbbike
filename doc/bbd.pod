@@ -611,7 +611,9 @@ for ferry timetable and fare information.
 
 =item C<url: I<string>>
 
-An (official) URL referring to more information.
+An (official) URL referring to more information useful for end users,
+like opening or operating hours or fees. For other kind information
+use the C<by:> directive.
 
 =item C<add_fragezeichen: I<string>>
 
