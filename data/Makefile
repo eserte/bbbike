@@ -114,6 +114,9 @@ INTERMEDIATE_TARGETS=	.strassen.tmp \
 			${PERSISTENTTMPDIR}/gesperrt-without-nocross \
 			${PERSISTENTTMPDIR}/radwege-orig-valid
 
+# These have to be checked using the check-urls target
+FILES_WITH_URLS=	comments_route-orig comments_ferry-orig comments_misc-orig
+
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COOKED_TARGETS} ${COMPUTED_TARGETS}
 BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//:S/^oldnames$//}
@@ -1927,8 +1930,8 @@ check-urls: ${PERSISTENTTMPDIR}/url_checks.log
 
 # Note: use a modern perl here to avoid possible ssl problems with older LWP
 # Note: the sources should be files which actually have url: directives
-${PERSISTENTTMPDIR}/url_checks.log:	comments_route-orig comments_ferry-orig comments_misc-orig
-	${PERL_MODERN} ${MISCSRCDIR}/url_checker.pl -v -log $@ $>
+${PERSISTENTTMPDIR}/url_checks.log:	.check_daily ${FILES_WITH_URLS}
+	${PERL_MODERN} ${MISCSRCDIR}/url_checker.pl -v -log $@ ${FILES_WITH_URLS}
 
 check-bvg: ${PERSISTENTTMPDIR}/bvg_checks.log
 
