@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2017,2018,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,10 +15,13 @@ package BBBikeBuildUtil;
 
 use strict;
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use Exporter 'import';
-@EXPORT_OK = qw(get_pmake module_path);
+@EXPORT_OK = qw(get_pmake module_path get_modern_perl);
+
+use File::Glob qw(bsd_glob);
+use version ();
 
 use BBBikeUtil qw(is_in_path);
 
@@ -30,7 +33,7 @@ sub get_pmake (;@) {
 
     (
      $^O =~ m{bsd}i                             ? "make"         # standard BSD make
-     : $^O eq 'darwin' && is_in_path('bsdmake') ? 'bsdmake'      # homebrew bsdmake pacage
+     : $^O eq 'darwin' && is_in_path('bsdmake') ? 'bsdmake'      # homebrew bsdmake package
      : is_in_path("fmake")                      ? "fmake"        # debian jessie and later
      : is_in_path("freebsd-make")               ? "freebsd-make" # debian wheezy and earlier
      : !$fallback                               ? die "No BSD make found on this system --- try to install bsdmake, fmake, pmake, or something similar"
@@ -55,6 +58,48 @@ sub module_path {
 }
 # REPO END
 
+sub get_modern_perl (;@) {
+    my %opt = @_;
+    my %required_modules;
+    if (exists $opt{required_modules}) {
+	%required_modules = %{ delete $opt{required_modules} };
+    }
+    die "Unhandled args: " . join(" ", %opt) if %opt;
+
+    # Convention: perls are available as /opt/perl-5.X.Y/bin/perl
+    # Do not use bleadperl or RCs.
+    # The required modules check is quite rudimentary and
+    # tries to avoid actually running code or loading modules.
+    my @perldir_candidates =
+	map { $_->[1] } 
+	sort { $b->[0] cmp $a->[0] }
+	map { [ do {
+	    if (m{/perl-(5\.\d+\.\d+)$}) {
+		version->new($1);
+	    } else {
+		0;
+	    }
+	}, $_] }
+	grep { m{/perl-5\.(\d+)\.\d+$} && $1 % 2 == 0 }
+	bsd_glob("/opt/perl-5.*.*");
+ PERL_CANDIDATE:
+    for my $perldir_candidate (@perldir_candidates) {
+	my $perlpath = "$perldir_candidate/bin/perl";
+	if (-x $perlpath) {
+	    for my $required_module (keys %required_modules) {
+		local @INC = grep { -d } (
+					  bsd_glob("$perldir_candidate/lib/site_perl/*/*$^O*"),
+					  bsd_glob("$perldir_candidate/lib/site_perl/*"),
+					 ); # only check for site_perl here
+		if (!module_path($required_module)) {
+		    next PERL_CANDIDATE;
+		}
+	    }
+	    return $perlpath;
+	}
+    }
+    return $^X;
+}
 
 1;
 

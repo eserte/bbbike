@@ -22,9 +22,9 @@ BEGIN {
 
 use IO::Pipe ();
 
-use BBBikeBuildUtil qw(get_pmake);
+use BBBikeBuildUtil qw(get_pmake get_modern_perl);
 
-plan tests => 4;
+plan tests => 6;
 
 my $pmake = get_pmake;
 ok $pmake, "pmake call worked, result is $pmake";
@@ -49,6 +49,16 @@ ok $pmake, "pmake call worked, result is $pmake";
     } else {
 	ok $pmake, "pmake call worked, no fallback requested";
     }
+}
+
+{
+    my $perl = get_modern_perl(required_modules => { 'LWP' => 0 });
+    ok $perl, "Got a possibly modern perl: $perl";
+}
+
+{
+    my $perl = get_modern_perl(required_modules => { 'This::Module::Does::Not::Exist' => 0 });
+    is $perl, $^X, "Got fallback (current perl)";
 }
 
 __END__
