@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2009,2015,2016,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2009,2015,2016,2020,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -3864,10 +3864,10 @@ sub temp_blockings_editor {
 	(-command => sub {
 	     $real_txt->delete("1.0","end");
 	     my($selection) = $real_txt->SelectionGet;
-	     if ($selection =~ /\t/) {
-		 # very probably from choose_ort window
+	     if ($selection =~ /[\t¦]/) {
+		 # very probably from choose_ort window (separator is TAB) or from diffnewvmz.bbd (separator is broken pipe)
 		 chomp $selection;
-		 my($action, $content, $id) = split /\t/, $selection;
+		 my($action, $content, $id) = split /[\t¦]/, $selection;
 		 $real_txt->insert("end", $content);
 		 $id =~ s{[^A-Za-z0-9/_.-]}{}g;
 		 $source_id = $id;
