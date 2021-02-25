@@ -2797,7 +2797,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-02-22
+#: last_checked: 2021-02-25
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3400,6 +3400,30 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Rumeyplan: zwischen Manfred-von-Richthofen-Str. und Boelckestr. Sperrung wegen einer defekten Gasleitung, eventuell sind auch Radfahrer betroffen',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: KARLSHORSTER-2021
+#: last_checked: 2021-02-24
+#: check_frequency: 90d
+#: next_check: 2021-03-01
+	q4::inwork; 15279,10862 15272,10790 15261,10738
+',
+         'from' => 1614578400,
+         'id' => 3336,
+         'source_id' => '2147346922',
+         'text' => 'Karlshorster Str.: Richtung Hauptstr. wegen Bauarbeiten gesperrt, Radfahrer müssen schieben für Kfz-Verkehr ausgewiesen, mit Stauerscheinungen ist zu rechnen, bis Ende Mai 2021',
+         'type' => 'handicap',
+         'until' => 1622473200
+       },
+       {
+         'data' => '	q4::inwork 9547,11819 9536,11922
+',
+         'from' => 1614272400,
+         'id' => 3337,
+         'source_id' => '2147346912',
+         'text' => 'Charlottenstr.: zwischen Taubenstr. und Mohrenstr. Sperrung der Fahrbahn, Radfahrer müssen schieben, vom 26.02.2021 18:00 Uhr bis 06.03.2021 22:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1615064400
        }
      
 );

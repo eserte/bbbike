@@ -3472,7 +3472,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-planckstra%C3%9Fe.866/#post-10417
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-01-25
+#: last_checked: 2021-02-25
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833
 # 
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-05-15 --- Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10954,12635
@@ -3485,7 +3485,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: bis Mai 2021)
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 06.06.2021) vvv
-#: last_checked: 2021-02-12 vvv
+#: last_checked: 2021-02-25 vvv
 #: next_check: 2021-05-01 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901
@@ -3511,7 +3511,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
-#: last_checked: 2021-01-25
+#: last_checked: 2021-02-25
 #: check_frequency: 60d
 Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
 # 
@@ -3520,7 +3520,7 @@ Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwor
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
 #: osm_watch: way id="882672445" version="1"
-#: last_checked: 2021-02-12
+#: last_checked: 2021-02-25
 #: check_frequency: 60d
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
 # 
@@ -3557,9 +3557,9 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 #: osm_watch: way id="16307526" version="19"
 #: priority: #A
 #: also_indoor: search Königsteinbrücke
-#: last_checked: 2021-02-21 (mapillary) (laut Baustellenschild bis Februar 2021)
-#: check_frequency: 14d
-#: next_check: 2021-02-28
+#: last_checked: 2021-02-24 (mapillary) (laut Baustellenschild bis April 2021)
+#: check_frequency: 45d
+#: next_check: 2021-04-01
 # REMOVED --- #: valid: -20210228
 Königsteinbrücke: Brückenneubau	2::inwork 13148,22396 13385,22383
 # 

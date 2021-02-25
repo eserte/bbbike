@@ -30828,7 +30828,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-02-22
+#: last_checked: 2021-02-25
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32066,6 +32066,28 @@ EOF
 	2::inwork 8690,7704 8812,7730
 	2::inwork 8796,7751 8686,7726
 #: XXX ^^^
+EOF
+     },
+     { from  => 1614578400, # 2021-03-01 07:00
+       until => 1622473200, # 2021-05-31 17:00
+       text  => 'Karlshorster Str.: Richtung Hauptstr. wegen Bauarbeiten gesperrt, Radfahrer müssen schieben für Kfz-Verkehr ausgewiesen, mit Stauerscheinungen ist zu rechnen, bis Ende Mai 2021',
+       type  => 'handicap',
+       source_id => '2147346922', # bis Ende Mai 2021, Gesamtbaumaßnahme bis Ende September 2021
+       data  => <<EOF,
+#: next_check_id: KARLSHORSTER-2021
+#: last_checked: 2021-02-24
+#: check_frequency: 90d
+#: next_check: 2021-03-01
+	q4::inwork; 15279,10862 15272,10790 15261,10738
+EOF
+     },
+     { from  => 1614272400, # 2021-02-25 18:00
+       until => 1615064400, # 2021-03-06 22:00
+       text  => 'Charlottenstr.: zwischen Taubenstr. und Mohrenstr. Sperrung der Fahrbahn, Radfahrer müssen schieben, vom 26.02.2021 18:00 Uhr bis 06.03.2021 22:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346912',
+       data  => <<EOF,
+	q4::inwork 9547,11819 9536,11922
 EOF
      },
     );
