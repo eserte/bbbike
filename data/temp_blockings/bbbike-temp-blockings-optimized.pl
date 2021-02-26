@@ -2716,20 +2716,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: wosch
-#: XXX evtl. nur saisonal, vielleicht wandern die Weideflächen an andere Stellen (dann auch ggfs. die Tore aus gesperrt-orig austragen)
-#: last_checked: 2020-04-23 (mapillary)
-#: check_frequency: 180d
-	2 14494,24824 14848,24411
-',
-         'from' => undef,
-         'id' => 3216,
-         'permanent' => 1,
-         'text' => 'Barnimer Dörferweg: freilaufende Büffel (Durchfahrt erlaubt)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3030,7 +3017,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
-#: last_checked: 2021-01-22
+#: last_checked: 2021-02-26 (architektur-urbanistik: weiterhin Hochbaustelle)
 #: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 ',
@@ -3110,16 +3097,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        undef,
-       {
-         'data' => '	q4::inwork 8053,15598 7962,15633
-',
-         'from' => 1603170000,
-         'id' => 3295,
-         'source_id' => '2147346516',
-         'text' => 'Weddingstr.: Zufahrt von der Reinickendorfer Str. gesperrt, 21.10.2020 7:00 Uhr bis 26.02.2021 17:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1614355200
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: MAINZER-2021
@@ -3424,6 +3402,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Charlottenstr.: zwischen Taubenstr. und Mohrenstr. Sperrung der Fahrbahn, Radfahrer müssen schieben, vom 26.02.2021 18:00 Uhr bis 06.03.2021 22:00 Uhr ',
          'type' => 'handicap',
          'until' => 1615064400
+       },
+       {
+         'data' => '	q4::inwork 10141,18030 10089,18180
+',
+         'from' => 1614492000,
+         'id' => 3338,
+         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1057628.php',
+         'text' => 'Neue Schönholzer Str.: Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, vom 1.3.2021 7 Uhr bis 5.3.2021 17 Uhr',
+         'type' => 'handicap',
+         'until' => 1614960000
        }
      
 );

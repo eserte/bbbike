@@ -1139,7 +1139,7 @@ Schmöckwitzwerder Nord - Brücke: Verbesserung der Befahrbarkeit	?::projected 303
 # REMOVED (hier vermutlich nicht) --- Schmöckwitzwerder Nord - Brücke: Verbesserung der Befahrbarkeit	?::projected 30546,-3072 30588,-3000 30599,-2827 30629,-2817 30646,-2732 30728,-2326
 # 
 #: XXX Sw.8
-#: osm_watch: way id="260757211" version="9"
+#: osm_watch: way id="260757211" version="10"
 # REMOVED (wird korrigiert) --- #: XXX laut osm mittlerweile surface=concrete, allerdings ist das Tagging widersprüchlich, siehe https://www.openstreetmap.org/changeset/97202846
 #: last_checked: 2021-02-24
 #: check_frequency: 150d
@@ -1165,7 +1165,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 # REMOVED (weitgehend fertig) --- #: last_checked: 2017-07-11 --- Möckernstr.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 8783,10166 8802,10290 8804,10303
 # REMOVED (vermutlich die nun fertige Anbindung des Weidenwegs gemeint?) --- #: last_checked: 2019-06-24 --- Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535 13761,12578 13771,12607 13767,12626 13747,12642 13695,12643
 # 
-#: osm_watch: way id="142721308" version="17"
+#: osm_watch: way id="142721308" version="18"
 #: last_checked: 2020-11-08
 #: check_frequency: 60d
 Rothenbachstr.: Verbesserung -> wird der frühere Radweg wieder aktiviert?	?::projected; 12144,18436 11950,18529
@@ -2800,8 +2800,9 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14270,83
 #: by: https://www.deutsches-architekturforum.de/thread/11524-am-stadthafen-europacity/?postID=658734#post658734 (ca. 150m realisiert)
 #: osm_watch: way id="237716440" version="10"
 #: XXX wird vermutlich zusammen mit dem Golda-Meir-Steg gebaut
-#: last_checked: 2021-02-05
-#: next_check: 2021-04-01
+#: last_checked: 2021-02-22 (architektur-urbanistik: nichts passiert)
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2021-04-01
 Uferweg in Bau	?::inwork 8057,13923 7989,14035 7923,14142 7912,14160 7866,14215
 # REMOVED (hier offen) --- Uferweg in Bau	?::inwork 7866,14215 7830,14268 7799,14314
 #: XXX am Speicherhaus --- wie wird die Wegführung hier aussehen?
@@ -3317,7 +3318,7 @@ Alexanderufer: Fahrradstraße soll entstehen	?::projected 8315,13042 8315,13181 8
 # REMOVED (weitgehend markiert, nur die letzten Meter am Groß-Berliner Damm fehlen) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf (Übergabe der Verkehrsflächen im Oktober 2020) --- #: XXX wann sind sie fertig? (bei osm bereits eingetragen) --- #: last_checked: 2020-09-04 --- #: next_check: 2020-10-01 --- Benno-König-Str.: Radspuren werden markiert	?::inwork 18596,4517 18434,4363 18374,4307
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf
-#: last_checked: 2021-02-25 vvv
+#: last_checked: 2021-02-26 vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
 Bodestr.: in Zukunft nur für Rad- und Fußverkehr offen	? 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
 Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,12635
@@ -3425,9 +3426,10 @@ Gothaer/Eisenacher Str.: Ampel wird gebaut	?::projected 22883,15091 22899,15073 
 # 
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/verkehrsbetriebe-haben-neue-sonderstreifen-auf-der-sonnenallee-und-dem-britzer-damm-beantragt_a257617 (zeitlich nicht befristet, Randlage)
 #: XXX hier auch für Radfahrer frei?
-#: source_id: 2147344451 (bis 23.2.2021)
+#: note: laut rbbtext bis 31.3.2021
+#: source_id: 2147344451 (bis 28.2.2021)
 #: last_checked: 2020-10-17
-#: next_check: 2021-02-28
+#: next_check: 2021-03-31
 Britzer Damm: Busspur geplant	?::projected; 12564,4308 12547,4391 12731,4841
 # 
 # REMOVED --- #: by: https://www.berliner-woche.de/hakenfelde/c-bauen/viele-wissen-gar-nicht-was-hier-passiert_a258061 (Bauvorbereitungen) --- #: by: https://www.hs02.de/projekte/berlin-spandau-carossa-quartier/ (Weg ist nicht betroffen; Park sowieso schon zu groß eingezeichnet -> korrigiert) --- #: by: https://www.deutsches-architekturforum.de/thread/11058-kleinere-projekte-spandau-reinickendorf/?postID=681039#post681039 --- #: osm_watch: way id="22981817" version="15" --- #: osm_watch: way id="653917549" version="1" --- #: last_checked: 2020-09-12 --- #: check_frequency: 180d --- Maselakepark: bleibt der Weg erhalten? Was wird aus dem Park?	? -2632,16347 -2587,16600
@@ -3458,6 +3460,7 @@ Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8953 (Frage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8978 (Forderung nach einem runden Tisch)
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/bezirksamt-stellt-ideen-fuer-eine-verkehrsberuhigung-im-waldseeviertel-vor_a301452
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1057890.php
 #: priority: #C vvv
 #: also_indoor: traffic vvv
 #: last_checked: 2021-01-17 (abendblatt-berlin) vvv
@@ -4515,7 +4518,7 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Berlin.coords.data-Eintrag fehlt
 #: osm_watch: way id="104991251" version="2"
-#: last_checked: 2020-12-21
+#: last_checked: 2021-02-26
 #: check_frequency: 60d
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
 # 
@@ -4793,9 +4796,7 @@ Versailler Platz (Potsdam): wird hier irgendwo ein Platz ausgeschildert?	? -1249
 Kaninchenberg (Potsdam): befindet sich die Straße hier? Qualität?	? -8960,-5817 -9054,-5905
 # 
 # REMOVED (aufgenommen) --- #: XXX fehlt in Potsdam.coords.data, PLZ=14467 --- #: by: http://www.potsdam.de/cms/dokumente/15582776_1771576/847336e8/Amtsblatt_10_13.pdf --- #: by: http://www.dafmap.de/d/berlin.html?id=3790&mt=0&zoom=16 --- #: last_checked: 2013-12-22 --- #: next_check: 2014-10-01 --- Neue Plantage (Potsdam): befindet sich hier die Straße? Qualität?	? -13091,-1333 -13100,-1411 -13017,-1426
-# 
-#: XXX_indoor: Indoor prüfen
-Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
+# REMOVED (aufgenommen) --- #: XXX_indoor: Indoor prüfen --- Ortsteil Eichwerder? (laut S-Bahn-Wanderheft)	? 20625,28887
 # 
 #: XXX_indoor: Verbindung aufnehmen?
 #: XXX_prog: wäre gut, wenn die Verlustzeit der versetzt arbeitenden Fußgängerampel hier einfließen könnte
@@ -4945,6 +4946,7 @@ Rohrwallallee - Windwallstr.: Asphaltstreifen soll eingerichtet werden	?::projec
 #: by: https://meinberlin-media.liqd.net/uploads/STATTBAU%20GmbH/2020/12/15/erlaeuterungsbericht-variante-e.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1040065.php
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/zwei-tram-gleise-und-mehr-platz-fuer-radfahrer-nach-dem-umbau-der-doerpfeldstrasse_a297659
+#: by: https://www.berliner-woche.de/adlershof/c-verkehr/ladezonen-fuer-die-doerpfeldstrasse_a301887 (2025?)
 #: osm_watch: way id="11389403" version="40"
 #: last_checked: 2021-02-24
 #: check_frequency: 360d
@@ -5476,7 +5478,7 @@ Luisenplatz: Verbreiterung der Radwege	? 3279,12533 3271,12609 3269,12648 3291,1
 Böcklerpark: hier entsteht für Radfahrer ein "Sonderweg"	? 10521,10126 10723,10088 10803,10067 10879,10048 10879,10037 10948,10016 10969,10015 10979,10017
 # 
 #: by: http://www.infravelo.de/projekt/karl-marx-allee/ (bis 4. Quartal 2020)
-#: last_checked: 2021-02-25 (Richtung Osten in Arbeit)
+#: last_checked: 2021-02-26 (Richtung Osten in Arbeit)
 #: check_frequency: 10d
 Karl-Marx-Allee: Verbreiterung der Radwege	? 12878,12430 13163,12382 13448,12340 13543,12326
 # 
@@ -5512,7 +5514,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 # 
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: XXX beide Fahrtrichtungen?
-#: last_checked: 2021-02-25
+#: last_checked: 2021-02-26
 #: check_frequency: 90d
 Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 # 
@@ -6146,6 +6148,7 @@ Daumstr.: abzweigende Wohngebietsstraße wird entstehen	?::projected -1706,15794 
 #: by: https://www.berliner-woche.de/haselhorst/c-bauen/b-planverfahren-zur-rhenaniastrasse-gestartet_a301716
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/5-98/index.shtml (Bebauungsplan 5-98)
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/5-98/download/Bebauungsplan-5-98-frueh-SenSw.pdf (es wird ein 3m breiter Weg zwischen Daumstr. und Rhenaniastr. geplant; außerdem eine Grünanlage in der Mitte des Gebiets)
+#: by: https://abendblatt-berlin.de/2021/02/26/berlin-spandau-planung-fuer-wohnungen-an-rhenaniastrasse-wird-beschleunigt/
 #: last_checked: 2020-09-12
 #: next_check: 2023-06-01
 "Waterkant": entstehen hier für Radfahrer nutzbare Wege?	?::projected -1762,15925 -1552,16043 -1493,16135
@@ -8394,7 +8397,6 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 # REMOVED (ja) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/protokoll-8-ag-rad-14-03-2016.pdf vvv --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Markierung 2018") vvv --- #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/oepnv/bekanntmachung1.shtml (erster Abschnitt?) --- Radstreifen, außer an den Tram-Haltestellen: Radwege --- #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/boelschestr/Lageplan_Unterlage3_v15032017_gesiegelt.pdf --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/protokoll-10-ag-rad.pdf --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (Markierungsarbeiten erfolgt) --- #: XXX Maßnahmen Fh.4 + Fh.5 --- #: XXX laut osm existieren die Radspuren bis auf die südlichen ca. 100m --- #: source_id: LMS-BR_r_LMS-BR_115354_LMS-BR_72 --- #: osm_watch: way id="283006412" version="11" --- #: osm_watch: way id="520100576" version="4" --- #: last_checked: 2018-08-29 vvv --- Bölschestr.: existieren hier Schutzstreifen bzw. asphaltierte Straßenbahnkaps?	? 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 --- Bölschestr.: existieren hier Schutzstreifen bzw. asphaltierte Straßenbahnkaps?	? 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958 --- #: last_checked ^^^ --- #: by: ^^^ --- #: by: ^^^
 # 
 Uristr. (Zepernick): Qualität des östlichen Abschnitts?	? 18522,26620 18850,26830 18914,26835
-Schweizer Str. (Zepernick): Qualität des nördlichen Abschnitts?	? 18620,26495 18522,26620 18391,26790
 Steenerbuschstr. (Zepernick): Qualität des verkehrsberuhigten Abschnitts?	? 18697,27189 18719,27191 18814,27266
 #: XXX mapillary-Aufnahmen waren nicht eindeutig genug
 #: XXX für Autos offen?
@@ -8421,8 +8423,6 @@ Elsternstr.: ist der nördliche Teil der Straße schon fertiggestellt? Qualität?	?
 Brandenburgische Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtung Süden?	? 30512,7909 30454,7670 30495,7350
 #: XXX laut mapillary Kopfsteinpflaster (schlechtes oder mäßiges?), allerdings ist zumindest der Gehweg Richtung Süden für Radfahrer freigegeben
 Rüdersdorfer Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtung Süden: genauso schlecht wie im nördlichen Abschnitt?	? 31446,7915 30891,7130
-#: XXX ist hier auch asphaltiert?
-Pestalozzistr. (Schönow): wie ist die Qualität im westlichen Abschnitt?	? 18040,30176 18008,30247 18037,30316 18132,30351 18236,30497 18330,30529
 Mozartstr.: Qualität des südlichen Abschnitts?	? 8334,26287 8348,26449
 # 
 # REMOVED --- #: next_check_id: KOENIGSTEINBRUECKE-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.856694.php --- #: XXX anscheinend ist hier nicht viel passiert, nur der Gehweg wurde etwas aufgebessert; Schilder scheinen zumindest teilweise umgehängt worden zu sein --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/richtung-blankenburg-das-fahrrad-schieben_a255205 (Gehweg für Radfahrer frei, zumindest im südlichen Abschnitt) --- Ertüchtigungsstrecke Königssteinbrücke: in welcher Form wurde oder wird die Umleitungsstrecke temporär ertüchtigt?	? 13404,22384 13354,22327 13316,22273 13267,22090 13249,22003 13315,21969 13270,21870 13220,21761 13193,21700

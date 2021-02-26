@@ -30520,14 +30520,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1614362297, # undef, # XXX
        permanent => 1,
        text  => 'Barnimer Dörferweg: freilaufende Büffel (Durchfahrt erlaubt)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: BARNIMERBUEFFEL-2020
 #: by: wosch
-#: XXX evtl. nur saisonal, vielleicht wandern die Weideflächen an andere Stellen (dann auch ggfs. die Tore aus gesperrt-orig austragen)
-#: last_checked: 2020-04-23 (mapillary)
+#: XXX evtl. nur saisonal, vielleicht wandern die Weideflächen an andere Stellen (dann auch ggfs. die Tore aus gesperrt-orig austragen) (2021-02: keine Sperrung mehr)
+#: last_checked: 2021-02-25 (mapillary)
 #: check_frequency: 180d
 	2 14494,24824 14848,24411
 EOF
@@ -31403,7 +31404,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
-#: last_checked: 2021-01-22
+#: last_checked: 2021-02-26 (architektur-urbanistik: weiterhin Hochbaustelle)
 #: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 EOF
@@ -32088,6 +32089,15 @@ EOF
        source_id => '2147346912',
        data  => <<EOF,
 	q4::inwork 9547,11819 9536,11922
+EOF
+     },
+     { from  => 1614492000, # 2021-02-28 07:00
+       until => 1614960000, # 2021-03-05 17:00
+       text  => 'Neue Schönholzer Str.: Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, vom 1.3.2021 7 Uhr bis 5.3.2021 17 Uhr',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1057628.php',
+       data  => <<EOF,
+	q4::inwork 10141,18030 10089,18180
 EOF
      },
     );

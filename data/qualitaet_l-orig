@@ -1090,6 +1090,9 @@ Liebenwalde: Fahrbahn asphaltiert	Q0 9046,51776 8930,51770
 Schönwalde - Mönchmühler See: Waldweg, teilweise sandig und Wurzeln	Q2 10232,31427 9517,31485
 Autobahnbrücke: mäßiges, teilweise schlechtes Kopfsteinpflaster	Q2 -3503,-11828 -3562,-11896 -3701,-11962 -3701,-12112 -3796,-12206
 Ahrensdorf: Kopfsteinpflaster, Seitenstreifen OK	Q1 -2709,-10456 -2790,-10531 -2875,-10680
+#: XXX wird hier während der Bauarbeiten asphaltiert?
+#: source_id: 217202871 (bis 1.4.2021)
+#: next_check: 2021-04-01
 Löwendorf: Kopfsteinpflaster	Q2 -2411,-21221 -2643,-21212
 #: add_fragezeichen: Hier sind Bauarbeiten in Gange, danach kein Kopfsteinpflaster mehr?
 Trebbin: Kopfsteinpflaster, OK	Q1 -1614,-21103 -1902,-21499 -1969,-21492
@@ -4201,8 +4204,8 @@ Rosa-Luxemburg-Str. (Schwanebeck): Asphalt	Q0 17671,24528 17871,24303
 #: add_fragezeichen: Wurde die Eichendorffstr. mittlerweile befestigt?
 Eichendorffstr. (Schwanebeck-West): unbefestigte Straße	Q2 17638,24756 17584,24703
 #: add_fragezeichen: Wurde die Ernst-Toller-Str. mittlerweile befestigt?
-Ernst-Toller-Str.: unbefestigte Straße	Q2 17581,24815 17638,24756 17766,24624
-Ernst-Toller-Str.: Asphalt	Q0 17766,24624 17900,24483 18006,24372
+Ernst-Toller-Str.: unbefestigte Straße	Q2 17581,24815 17638,24756
+Ernst-Toller-Str.: Asphalt	Q0 17638,24756 17766,24624 17900,24483 18006,24372
 Fritz-Reuter-Str.: Verbundsteinpflaster	Q1+ 17900,24483 17990,24572 18057,24641 18124,24709 18198,24789 18275,24866 18312,24956
 Humboldtstr.: Verbundsteinpflaster	Q1+ 17699,24874 17728,24824 17831,24725
 Humboldtstr.: Asphalt	Q0 17831,24725 17990,24572 18122,24440
@@ -7907,7 +7910,6 @@ Siedlerrain (Teltow): Asphalt	Q0 2578,-871 2581,-852 2584,-787 2577,-637 2536,-5
 Großbeeren - Neubeeren: Asphalt	Q0 3637,-6060 3609,-6047 3144,-6122
 Großbeeren - Neubeeren: Asphalt	Q0 3144,-6122 3111,-6166 3012,-6169 3000,-6193 3001,-6214 2984,-6223
 Gerlachstr. (Potsdam): Beton	Q0- -7976,-4476 -8068,-4552
-#: by: mapillary
 Gerlachstr. (Potsdam): Asphalt	Q0 -7976,-4476 -7749,-4297 -7597,-4439
 Ulmenstr. (Potsdam): Asphalt	Q0 -9356,-3546 -9268,-3283 -9257,-3245
 Mahlow - Teltow (Radweg): Asphalt	Q0 11938,-4265 11330,-4277
@@ -7923,7 +7925,10 @@ Schönow - Waldfrieden: Asphalt	Q0 18765,30972 18809,31137 18942,31390 19144,3172
 Lanker Str. (Waldfrieden): Asphalt	Q0 19342,32445 19387,32540 19415,32638 19477,32853 19491,33101
 Woltersdorfer Str.: schlechtes Kopfsteinpflaster	Q3 8679,28160 8700,28265 8813,28438 8831,28573 8790,28646 8689,28715 8624,28792
 Zepernicker Str. (Schönow): Asphalt	Q0 18712,29522 18609,29986 18416,30289 18376,30367 18330,30529 18299,30636
-Pestalozzistr. (Schönow): Asphalt	Q0 18330,30529 18635,30610
+Pestalozzistr. (Schönow): Asphalt	Q0 18040,30176 18008,30247 18037,30316 18132,30351 18236,30497 18330,30529 18635,30610
+Fischerstr. (Schönow): Asphalt	Q0 18175,29624 18138,29989 18040,30176
+Wandlitzstr. (Schönow): Asphalt	Q0 18451,29241 18426,29248 18393,29262
+Wandlitzstr. (Schönow): schlechtes Kopfsteinpflaster	Q3 18393,29262 18305,29500 18175,29624 17916,29849 17864,29839
 Reuterstr. (Zepernick): schlechtes Kopfsteinpflaster	Q3 18619,28283 18508,28292
 Glasow - Waßmannsdorf: Asphalt	Q0 15738,-4879 15477,-4768
 Fangschleuse - Bhf.: Asphalt	Q0 38543,1750 38754,1664 38829,1628 39070,1598 39117,1579 39253,1608
@@ -7942,7 +7947,7 @@ Mühlenbergring: Verbundsteinpflaster	Q1 19801,26868 19744,26867
 Meraner Str. (Zepernick): überwiegend Asphalt, einige Betonabschnitte	Q0- 18927,26602 19627,26852
 Oberländer Str. (Zepernick): Asphalt	Q0 18620,26495 18719,26529
 Oberländer Str. (Zepernick): Asphalt mit einigen Schäden	Q1 18719,26529 18927,26602
-Schweizer Str. (Zepernick): Asphalt	Q0 18638,26445 18620,26495
+Schweizer Str. (Zepernick): Asphalt	Q0 18638,26445 18620,26495 18522,26620 18391,26790
 Mozartstr.: Asphalt	Q0 8348,26449 8372,26637 8361,26873
 Bachstr.: Asphalt	Q0 8361,26873 8343,27019 8388,27128
 Biesenthal - Danewitz: Verbundsteinpflaster	Q1+ 26255,39017 26491,38554 26679,38121 26700,38062 26863,37743 26873,37728
