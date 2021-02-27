@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 #
-# Copyright (C) 2005-2008,2010,2012,2016,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005-2008,2010,2012,2016,2020,2021 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = 1.35;
+our $VERSION = 1.36;
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -50,6 +50,8 @@ my $out_file;
 my $max_delta = 180;
 my $for_person;
 my $gps_track_sync_grace_time = 14; # in days; means that GPS track syncs may happen that number of days after making the photos
+my $mode = 'external-geocoding';
+my @valid_modes = qw(external-geocoding manipulate-copy);
 
 my $lax_iso_date_qr = qr{^(\d{4})\D*(\d{2})\D*(\d{2})T(\d{2})\D(\d{2})\D(\d{2})};
 my $clock_qr        = qr{^\d{1,2}:\d{2}(:\d{2})?};
@@ -95,6 +97,14 @@ GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "o=s" => \$out_file,
 	   "v!" => \$v,
 	   "debug" => \$debug,
+	   "mode=s" => sub {
+	       $mode = $_[1];
+	       my $rx = "(" . join("|", map { quotemeta } @valid_modes) . ")";
+	       $rx = qr{$rx};
+	       if ($mode !~ $rx) {
+		   usage "Invalid mode '$mode'. Valid modes are: @valid_modes\n";
+	       }
+	   },
 	  ) or usage;
 
 undef $gps_data_dir if $no_gps_data_dir;
@@ -102,11 +112,6 @@ undef $gps_data_dir if $no_gps_data_dir;
 my @images = @ARGV;
 if (!@images) {
     usage "Please specify at least one image";
-}
-
-mkdir $thumbnail_dir if !-d $thumbnail_dir;
-if (!-d $thumbnail_dir) {
-    die "Cannot create thumbnail directory <$thumbnail_dir>: $!";
 }
 
 my @cam_delta_mapping;
@@ -167,6 +172,12 @@ if (!$converter) {
 }
 if ($v) {
     print STDERR "The converter '$converter' will be used.\n";
+}
+
+if ($date_index_file) {
+    $date_db = tie my %db, 'DB_File', $date_index_file, O_RDONLY, 0644, $DB_BTREE
+	or die "Can't tie $date_index_file: $!";
+    
 }
 
 sub get_image_location {
@@ -426,10 +437,14 @@ sub get_image_location {
     undef;
 }
 
-if ($date_index_file) {
-    $date_db = tie my %db, 'DB_File', $date_index_file, O_RDONLY, 0644, $DB_BTREE
-	or die "Can't tie $date_index_file: $!";
-    
+if ($mode eq 'manipulate-copy') {
+    manipulate_copy();
+    exit;
+}
+
+mkdir $thumbnail_dir if !-d $thumbnail_dir;
+if (!-d $thumbnail_dir) {
+    die "Cannot create thumbnail directory <$thumbnail_dir>: $!";
 }
 
 my %seen_image;
@@ -841,6 +856,62 @@ sub _isodate_to_epoch ($) {
     my($Y,$M,$D,$h,$m,$s) = $isodate =~ $lax_iso_date_qr
 	or die "Cannot parse date '$isodate' as ISO date";
     timelocal($s,$m,$h,$D,$M-1,$Y-1900);
+}
+
+sub manipulate_copy {
+    # Note: in this mode, $out_file is really a directory
+    if (!defined $out_file) {
+	die "Please define output directory (option -o)\n";
+    }
+    if (!-e $out_file) {
+	mkdir $out_file
+	    or die "Cannot create output directory <$out_file>: $!\n";
+    } elsif (!-d $out_file) {
+	die "<$out_file> exists, but is not a directory\n";
+    }
+
+    require File::Copy;
+
+    for my $file (@images) {
+	my $ret = get_image_location($file);
+	if (defined $ret) {
+	    my($lat, $lon) = @{$ret}{qw(Latitude Longitude)};
+	    my(@lat_dms) = Karte::Polar::ddd2dms($lat);
+	    my(@lon_dms) = Karte::Polar::ddd2dms($lon);
+
+	    my $gps_latitude_ref;
+	    if ($lat_dms[0] < 0) {
+		$gps_latitude_ref = 'S';
+		$lat_dms[0] *= -1;
+	    } else {
+		$gps_latitude_ref = 'N';
+	    }
+	    my $gps_longitude_ref;
+	    if ($lon_dms[0] < 0) {
+		$gps_longitude_ref = 'W';
+		$lon_dms[0] *= -1;
+	    } else {
+		$gps_longitude_ref = 'E';
+	    }
+
+	    my $gps_latitude  = qq{$lat_dms[0] deg $lat_dms[1]' $lat_dms[2]"};
+	    my $gps_longitude = qq{$lon_dms[0] deg $lon_dms[1]' $lon_dms[2]"};
+	    if ($debug) {
+		warn "Found position '$gps_latitude $gps_latitude_ref, $gps_longitude $gps_longitude_ref' for $file.\n";
+	    }
+
+	    my $o_file = "$out_file/" . basename($file);
+	    File::Copy::copy($file, $o_file)
+		    or die "Can't $file to $o_file: $!";
+	    my $exiftool = Image::ExifTool->new;
+	    $exiftool->ExtractInfo($o_file);
+	    $exiftool->SetNewValue('GPSLatitude',     $gps_latitude);
+	    $exiftool->SetNewValue('GPSLatitudeRef',  $gps_latitude_ref);
+	    $exiftool->SetNewValue('GPSLongitude',    $gps_longitude);
+	    $exiftool->SetNewValue('GPSLongitudeRef', $gps_longitude_ref);
+	    $exiftool->WriteInfo($o_file);
+	}
+    }
 }
 
 __END__
