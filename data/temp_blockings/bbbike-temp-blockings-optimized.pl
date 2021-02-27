@@ -524,7 +524,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-02-19
+#: last_checked: 2021-02-27
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -3120,8 +3120,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.verkehrslage.de/Berlin/Baustellen/3
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-01-29
-#: check_frequency: 21d
+#: last_checked: 2021-02-27
+#: check_frequency: 14d
 	q4::inwork 12997,6290 13027,6168
 ',
          'from' => undef,
@@ -3367,18 +3367,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1618610400
        },
-       {
-         'data' => '#: XXX Sind Radfahrer tatsächlich betroffen? Gilt die Sperrung in beide Richtungen? Bis wann geht die Sperrung? vvv
-	2::inwork 8690,7704 8812,7730
-	2::inwork 8796,7751 8686,7726
-#: XXX ^^^
-',
-         'from' => undef,
-         'id' => 3335,
-         'text' => 'Rumeyplan: zwischen Manfred-von-Richthofen-Str. und Boelckestr. Sperrung wegen einer defekten Gasleitung, eventuell sind auch Radfahrer betroffen',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: last_checked: 2021-02-24

@@ -48,9 +48,9 @@
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2021-02-19
+#: last_checked: 2021-02-27
 #: check_frequency: 30d
-#: next_check: 2021-03-01
+# REMOVED --- #: next_check: 2021-03-01
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
 # REMOVED (beendet) --- #: XXX_prog BS (östliche Seite) --- #: last_checked: 2018-06-12 vvv --- #: check_frequency: 7d vvv --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q2::inwork 11845,12292 11635,12398 --- Singerstr.: Bauarbeiten an der Kreuzung Ifflandstr., Fahrbahn gesperrt, Bordstein	q4::inwork 11635,12398 11607,12412 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -129,7 +129,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: osm_watch: way id="26285705" version="7"
 #: osm_watch: way id="69166216" version="7"
 #: source_id: 2147346409 (bis Ende 2021, Gesamtbaumaßnahme bis Ende 2023)
-#: last_checked: 2021-02-24 vvv
+#: last_checked: 2021-02-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
@@ -648,7 +648,7 @@ Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12500,85
 #: XXX laut rbbtext bis 31.3.2021
 #: osm_watch: way id="822805265" version="6"
 #: also_indoor: traffic (G)
-#: last_checked: 2021-02-18 (osm)
+#: last_checked: 2021-02-27
 #: next_check: 2021-03-31
 Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 # 
@@ -677,7 +677,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: osm_watch: way id="585753318" version="8"
 #: osm_watch: way id="71392596" version="13"
 #: also_indoor: traffic
-#: last_checked: 2021-01-29 vvv
+#: last_checked: 2021-02-27 vvv
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249

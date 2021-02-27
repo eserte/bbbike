@@ -16273,7 +16273,7 @@ EOF
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-02-19
+#: last_checked: 2021-02-27
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 EOF
@@ -31622,8 +31622,8 @@ EOF
 #: by: https://www.verkehrslage.de/Berlin/Baustellen/3
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-01-29
-#: check_frequency: 21d
+#: last_checked: 2021-02-27
+#: check_frequency: 14d
 	q4::inwork 12997,6290 13027,6168
 EOF
      },
@@ -32059,14 +32059,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1614438847, # undef, # XXX
        text  => 'Rumeyplan: zwischen Manfred-von-Richthofen-Str. und Boelckestr. Sperrung wegen einer defekten Gasleitung, eventuell sind auch Radfahrer betroffen',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX Sind Radfahrer tatsächlich betroffen? Gilt die Sperrung in beide Richtungen? Bis wann geht die Sperrung? vvv
+# REMOVED (nur Richtung Westen, und nur 10m betroffen) --- #: XXX Sind Radfahrer tatsächlich betroffen? Gilt die Sperrung in beide Richtungen? Bis wann geht die Sperrung? vvv
 	2::inwork 8690,7704 8812,7730
 	2::inwork 8796,7751 8686,7726
-#: XXX ^^^
 EOF
      },
      { from  => 1614578400, # 2021-03-01 07:00

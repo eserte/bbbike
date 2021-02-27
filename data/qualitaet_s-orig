@@ -105,7 +105,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12202,8895
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="13"
-#: last_checked: 2021-01-09
+#: last_checked: 2021-02-27
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -796,7 +796,7 @@ Lüneburger Str.: Kopfsteinpflaster	Q2 7595,12980 7365,12775 7343,12758 7322,1273
 Lüneburger Str.: Asphalt	Q0 7175,12630 7131,12615 7085,12610
 Flensburger Str.: Kopfsteinpflaster	Q2 6309,12678 6400,12662 6516,12650
 Braunschweiger Str.: Asphalt	Q0 13043,7234 13150,7254 13326,7291 13368,7300
-Braunschweiger Str.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 13368,7300 13487,7337 13519,7345
+Braunschweiger Str.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 13368,7300 13476,7330 13519,7345
 #: note: Parkstreifen sind gepflastert
 Braunschweiger Str.: Asphalt	Q0 13702,7418 13781,7524 13854,7620 13919,7707
 Siegfried-Aufhäuser-Platz: gutes Kopfsteinpflaster	Q1 13952,7497 13941,7522 13953,7548 13980,7548
@@ -806,8 +806,8 @@ Wipperstr.: Kopfsteinpflaster	Q2 13117,7471 13134,7360 13150,7254
 Wipperstr.: Asphalt	Q0 13150,7254 13161,7173
 Schöneweider Str.: Kopfsteinpflaster	Q2 13134,7360 13341,7423
 Kanner Str.: gutes Kopfsteinpflaster	Q1 13341,7423 13373,7426
-Kanner Str.: Asphalt mit Schäden	Q1+ 13373,7426 13487,7337
-Unstrutstr.: Asphalt	Q0 13487,7337 13495,7249
+Kanner Str.: Asphalt mit Schäden	Q1 13373,7426 13476,7330
+Unstrutstr.: Asphalt	Q0 13476,7330 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
 #: note: nach Regenfällen Pfützen
 Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15778,8990
@@ -3270,7 +3270,7 @@ Preußstr.: Asphalt	Q0 12327,15333 12367,15396
 Wisbyer Str. 9-11: Asphalt	Q0 11289,16423 11255,16313
 Niederlagstr.: Asphalt	Q0 9943,12364 9955,12300 9959,12281 9972,12184
 Werdersche Rosenstr.: Asphalt	Q0 9883,12251 9909,12261 9959,12281
-Müncheberger Str.: mäßiger Asphalt, Bodenschwellen	Q1 12450,11980 12617,11888
+Müncheberger Str.: mäßiger Asphalt	Q1+ 12450,11980 12617,11888
 Theodorstr. (Tempelhof): Asphalt	Q0 9321,6079 9291,5908
 Kolonie Albrechtshöhe: wassergebundene Decke	Q1 10260,5953 10215,5959 9955,5993
 Wussowstr.: Asphalt	Q0- 12798,5580 12702,5553
@@ -14277,7 +14277,8 @@ Iranische Str.: Gehwegplatten, etwas uneben	Q2+ 7713,16557 7447,16613
 #: by: ^^^
 # 
 #: by: Gabi Sieber: vvv
-Reinholdstr.: mäßiges Kopfsteinpflaster	Q2 12833,6796 12953,6820 13014,6833
+#: confirmed_by: srt
+Reinholdstr.: mäßiges Kopfsteinpflaster	Q2- 12833,6796 12953,6820 13014,6833
 #: confirmed_by: srt
 Bruno-Bauer-Str.: Kopfsteinpflaster	Q2 12816,6870 12833,6796 12843,6750 12860,6667 12876,6589 12893,6527
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt (neu gemacht))
@@ -29437,8 +29438,10 @@ Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 #: by: wosch
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
 # 
-#: by: mapillary:
+#: by: mapillary: vvv
 Blankenburger Chaussee [zur Straße 47]: Asphalt	Q0 14650,21649 14670,21720 14697,21760 14746,21828 14742,21843
+Parkanlage: Holzbohlen	Q1 13261,20919 13075,20817
+#: by ^^^
 # 
 #: by: mapillary, osm: vvv
 (Rosenthaler Weg - Aubertstr.): Asphalt	Q0 11747,22496 11278,22848 11220,22886
@@ -29547,7 +29550,7 @@ Kreuzungsbereich asphaltiert	Q0 12692,7996
 Kreuzungsbereich asphaltiert	Q0 12613,7236
 Kreuzungsbereich asphaltiert	Q0 12632,7137
 Kreuzungsbereich asphaltiert	Q0 12645,7087
-Kreuzungsbereich mit Kleinsteinpflaster	Q1- 13487,7337
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- 13476,7330
 Kreuzungsbereich asphaltiert	Q0 20540,4285
 Kreuzungsbereich mit Kopfsteinpflaster	Q2- 20410,4192
 Kreuzungsbereich asphaltiert	Q0 20467,4122
@@ -29625,6 +29628,7 @@ Kreuzungsbereich asphaltiert	Q0 11274,16743
 Kreuzungsbereich asphaltiert	Q0 11270,16890
 Einmündungsbereich mit Kopfsteinpflaster	Q2 22985,-1319
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 21828,-1015
+Einmündungsbereich mit Kleinsteinpflaster	Q1- 13245,7742
 #: by: mapillary
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 4248,18066
 Einmündungsbereich mit Kopfsteinpflaster	Q2 15162,11458
