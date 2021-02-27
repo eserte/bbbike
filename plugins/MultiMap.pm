@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.60;
+$VERSION = 1.61;
 
 use vars qw(%images);
 
@@ -167,6 +167,16 @@ sub register {
 	      ($images{FIS_Broker} ? (icon => $images{FIS_Broker}) : ()),
 	    };
     }
+    $main::info_plugins{__PACKAGE__ . "_BKG"} =
+	{ name => "BKG (TopPlusOpen)",
+	  (module_exists('Geo::Proj4')
+	   ? (callback => sub { showmap_bkg(@_) },
+	      callback_3_std => sub { showmap_url_bkg(@_) },
+	     )
+	   : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
+	  ),
+	  ($images{BKG} ? (icon => $images{BKG}) : ()),
+	};
 ## "NOT FOUND"
 #    $main::info_plugins{__PACKAGE__ . 'Fahrrad_Stadtplan_Eu'} =
 #	{ name => 'fahrrad-stadtplan.eu',
@@ -560,6 +570,27 @@ MjAxNy0xMi0wNlQxMzo0MDoyNyswMTowMPLAlXAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMTIt
 MDZUMTM6NDA6MjcrMDE6MDCDnS3MAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IM
 CHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoX
 EXTyQjWVAAAAAElFTkSuQmCC
+EOF
+    }
+
+    if (!defined $images{BKG}) {
+	# Created with:
+	#   lwp-request https://gdz.bkg.bund.de/skin/frontend/bkg/bkg_blau/favicon.ico | convert ico:- png:- | base64
+	$images{BKG} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAwFBMVEX8/vz09vTc2tzMyszs
+7uy0trTU0tT08vS8vrzEwsTc3ty8urz09vy01uys0uTc7vSkpqT8+vyUxuRsstScyuT0+vzM4vSE
+vtzs8vzs6uyUxtzE4uzM5vRcqtTE3uy82ux8fnzs9vxMosyEutyUkpSkusTc6vSMwtysrqyEkpy0
+vsTU6vREmsyEorRsbmx0ttRkZmSkzuSkoqSUwtx8utyk0uTU1tR0cnRccny02uxUUlSkrrScnpx0
+dnR8enz///9niEdWAAAAAWJLR0Q/PmMwdQAAAAd0SU1FB+UCGwkWJrbBqMoAAAC/SURBVBjTTY/b
+FoIgEEXHbloJBkpYGmpYWnYvu9f/f1agPchas1j7zH44A9B4RqvdaWC3ZwJYjaA/ADCHf7ARxo76
+R3aFhLrYY2PuT0b1nk6DkMy4iGJSMUq8ZC4DDumiFvBynlEHUL6igWbfRRRYFq5jJeugKIATvNnu
+qJJ1kERsPyusAxGSeoonII+Mn3bn7FIGvup2BbE0bnd5eRhIC7maxfM1fQBFnCl4k+vnK8pxJF2v
+qtVJT/pkR4R1qR9PmhAJKXOvYQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMS0wMi0yN1QxMDoyMjoz
+OCswMTowMIKPyhoAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjEtMDItMjdUMTA6MjI6MzgrMDE6MDDz
+0nKmAAAAAElFTkSuQmCC
 EOF
     }
 }
@@ -1232,6 +1263,26 @@ sub showmap_url_qwantmaps {
 sub showmap_qwantmaps {
     my(%args) = @_;
     my $url = showmap_url_qwantmaps(%args);
+    start_browser($url);
+}
+
+######################################################################
+# BKG (Bundesamt für Kartographie und Geodäsie)
+
+sub showmap_url_bkg {
+    my(%args) = @_;
+    require Geo::Proj4;
+    my $proj4 = Geo::Proj4->new("+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs") # see https://epsg.io/25832
+	or die Geo::Proj4->error;
+    my($x,$y) = $proj4->forward($args{py}, $args{px});
+    my $scale = 14 - log(($args{mapscale_scale})/1111)/log(2); # XXX very rough, works for smaller mapscale_scale numbers
+    $scale = 15 if $scale > 15;
+    sprintf 'http://sg.geodatenzentrum.de/web_bkg_webmap/applications/bkgmaps/minimal.html?zoom=%.f&lat=%f&lon=%f', $scale, $y, $x;
+}
+
+sub showmap_bkg {
+    my(%args) = @_;
+    my $url = showmap_url_bkg(%args);
     start_browser($url);
 }
 
