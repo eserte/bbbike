@@ -6862,7 +6862,7 @@ EOF
 		      );
 
 		} else { # points or lines
-		    if (@coordlist == 2) { # point
+		    if (@coordlist == 2 || (@coordlist == 4 && "@coordlist[0,1]" eq "@coordlist[2,3]")) { # point or effective point (Tk does not display two-point lines with same start/end point)
 			# Points do not have $cat_rueck
 			if ($abk eq 'v') {
 			TRY_IMAGE: {
