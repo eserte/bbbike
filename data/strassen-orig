@@ -2406,6 +2406,7 @@ Wagner-RÈgeny-Str.	N 19728,3351 19661,3421 19585,3499 19491,3597 19363,3730 1916
 #: note: Privatstraﬂe
 Wagner-RÈgeny-Allee	N 19162,3935 19130,3969 18596,4517 18296,4850
 (Gleislinse)	NN 19130,3969 19141,3980 19242,4077 19015,4338 18807,4556 18722,4628
+(Gleislinse - Hans-Schmidt-Str.)	NN 19242,4077 19219,4023
 # REMOVED --- #: XXX fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch --- #: last_checked: 2020-07-31 --- #: check_frequency: 120d --- #: next_check: 2019-11-19
 Gustav-Hertz-Platz	N 18674,4585 18685,4595 18722,4628
 Gustav-Hertz-Platz	NN 18722,4628 18656,4687 18649,4678 18685,4595
@@ -11447,7 +11448,7 @@ Schloﬂplatz	HH 10024,12431 10063,12438 10155,12494 10176,12506 10243,12546
 Feldstr. (Bohnsdorf)	N 20829,-773 21055,-723 21209,-734
 Hufenweg	N 20790,-537 20799,-667 20829,-773 20814,-935
 #: XXX wird diese Straﬂe einen anderen Namen bekommen? Evtl. Diepenseer Str., siehe osm? Wird sie noch weiter verl‰ngert?
-#: osm_watch: way id="27564863" version="18"
+#: osm_watch: way id="27564863" version="19"
 #: last_checked: 2020-11-28
 #: check_frequency: 360d
 (Hufenweg Verl‰ngerung)	N 20814,-935 20782,-1199 20799,-1272 20807,-1305
@@ -12164,7 +12165,7 @@ Am Buschfeld	N 14171,1634 14124,1857
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016
 #: XXX ‰ndert sich durch die (teilweise?) Straﬂenlandwidmung etwas?
 #: osm_watch: way id="156346093" version="6"
-#: osm_watch: way id="23106203" version="12"
+#: osm_watch: way id="23106203" version="13"
 #: last_checked: 2020-09-01 (mapillary)
 #: check_frequency: 150d
 Stuthirtenweg	NN 12984,1011 13040,1021 13113,1046 13181,1082 13241,1113

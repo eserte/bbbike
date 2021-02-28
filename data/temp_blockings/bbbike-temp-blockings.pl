@@ -29255,8 +29255,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2021-02-28 17:00:00"), # undef, # XXX
-       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 28. Februar 2021',
+       until => undef, # $isodate2epoch->("2021-02-28 17:00:00"), # undef, # XXX
+       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 28. Februar 2021, unter Umständen auch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SOLDINER-2019
