@@ -39,6 +39,7 @@ GetOptions(
 	   "user|username=s" => \my $username,
 	   "city|region=s"   => \my $city_country,
 	   "start-time=s"    => \my $start_time,
+	   "end-time=s"      => \my $end_time,
 	   "skip-current-week" => \my $skip_current_week,
 	  )
     or usage;
@@ -75,7 +76,17 @@ if ($start_time) {
     }
 }
 
-my $dt = DateTime->today;
+my $dt;
+if ($end_time) {
+    if (my($y,$m,$d) = $end_time =~ m{^(\d+)-(\d+)-(\d+)}) {
+	$dt = DateTime->new(year => $y, month => $m, day => $d);
+    } else {
+	die "Cannot parse '$end_time' as ISO day\n";
+    }
+} else {
+    $dt= DateTime->today;
+}
+
 my $is_partial = 1; # also a flag for: current week
 while() {
     my($y,$w) = $dt->week;
