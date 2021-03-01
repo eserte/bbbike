@@ -32070,14 +32070,14 @@ EOF
      },
      { from  => 1614578400, # 2021-03-01 07:00
        until => 1622473200, # 2021-05-31 17:00
-       text  => 'Karlshorster Str.: Richtung Hauptstr. wegen Bauarbeiten gesperrt, Radfahrer müssen schieben für Kfz-Verkehr ausgewiesen, mit Stauerscheinungen ist zu rechnen, bis Ende Mai 2021',
+       text  => 'Karlshorster Str.: Richtung Hauptstr. wegen Bauarbeiten gesperrt, Radfahrer müssen schieben, voraussichtlich ab 2. März 2021 bis Ende Mai 2021',
        type  => 'handicap',
        source_id => '2147346922', # bis Ende Mai 2021, Gesamtbaumaßnahme bis Ende September 2021
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: last_checked: 2021-02-24
 #: check_frequency: 90d
-#: next_check: 2021-03-01
+#: next_check: 2021-03-02
 	q4::inwork; 15279,10862 15272,10790 15261,10738
 EOF
      },
