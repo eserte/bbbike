@@ -2141,11 +2141,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.909888.php (nächster Bauabschnitt ab 27. April 2020)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/der-gehweg-ist-jetzt-fertig_a258259
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-auf-der-schoenstrasse-gehen-weiter_a261160
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1058179.php (Sperrung der Kreuzung Schönstraße/Paul-Oestreich-Straße, bis 26. März 2021)
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht\'s nur auf dem Gehweg weiter
 #: also_indoor: traffic (G)
 #: priority: #B
 #: last_checked: 2021-02-17
 #: check_frequency: 60d
+#: next_check: 2021-03-26
 	q3::inwork 13391,16436 13630,16629
 ',
          'from' => undef,
@@ -2841,7 +2843,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
 #: last_checked: 2021-02-17
 #: check_frequency: 45d
-# REMOVED --- #: next_check: 2020-11-07
 	q4::inwork 14136,17170 13996,16959
 ',
          'from' => undef,
@@ -3217,7 +3218,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2021-02-11
+#: last_checked: 2021-03-01
 #: check_frequency: 45d
 # REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17774,8342
 	q4::inwork 17774,8342 17753,8290
@@ -3370,7 +3371,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
-#: last_checked: 2021-02-24
+#: last_checked: 2021-03-01
 #: check_frequency: 90d
 #: next_check: 2021-03-02
 	q4::inwork; 15279,10862 15272,10790 15261,10738
