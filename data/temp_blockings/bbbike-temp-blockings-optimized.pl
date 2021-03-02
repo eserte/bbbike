@@ -2298,7 +2298,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-02-15
+#: last_checked: 2021-03-02
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -2786,7 +2786,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-02-25
+#: last_checked: 2021-03-02
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3038,9 +3038,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://viz.berlin.de/2021/01/s5/ (SEV bis 25.1.2021)
 #: XXX bis wann ist der Bahnübergang gesperrt?
 #: also_indoor: search Oberfeldstraße Bahnübergang
-#: osm_watch: way id="868347101" version="2"
+#: osm_watch: way id="868347101" version="3"
 #: priority: #A
-#: last_checked: 2020-12-28
+#: last_checked: 2021-03-01 (osm)
 #: check_frequency: 90d
 #: next_check: 2021-03-31
 	2::inwork 20627,12162 20624,12133 20620,12108
@@ -3105,7 +3105,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: 2147346816
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb 31.03.2021, laut vmz 31.03.2022
 #: also_indoor: traffic (G)
-#: last_checked: 2021-02-20
+#: last_checked: 2021-03-02
 #: check_frequency: 45d
 #: next_check: 2021-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -3209,9 +3209,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1609668000,
          'id' => 3315,
          'source_id' => '2147346755',
-         'text' => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.01.2021 11:00 Uhr bis 14.10.2021 17:00 Uhr ',
+         'text' => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.01.2021 11:00 Uhr bis 04.03.2021 08:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1634223600
+         'until' => 1614841200
        },
        undef,
        undef,
@@ -3371,9 +3371,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
-#: last_checked: 2021-03-01
+#: also_indoor: traffic (G)
+#: last_checked: 2021-03-02
 #: check_frequency: 90d
-#: next_check: 2021-03-02
+#: next_check: 2021-03-03
 	q4::inwork; 15279,10862 15272,10790 15261,10738
 ',
          'from' => 1614578400,
@@ -3402,6 +3403,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Neue Schönholzer Str.: Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, vom 1.3.2021 7 Uhr bis 5.3.2021 17 Uhr',
          'type' => 'handicap',
          'until' => 1614960000
+       },
+       {
+         'data' => '	q4::inwork 4894,6509 4875,6552 4786,6717
+',
+         'from' => 1614754800,
+         'id' => 3339,
+         'source_id' => '2147346935',
+         'text' => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, in beiden Richtungen gesperrt, vom 04.03.2021 08:00 Uhr bis 14.10.2021',
+         'type' => 'handicap',
+         'until' => 1634223600
        }
      
 );

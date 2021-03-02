@@ -28577,7 +28577,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-02-15
+#: last_checked: 2021-03-02
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -30831,7 +30831,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-02-25
+#: last_checked: 2021-03-02
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31424,9 +31424,9 @@ EOF
 #: by: https://viz.berlin.de/2021/01/s5/ (SEV bis 25.1.2021)
 #: XXX bis wann ist der Bahnübergang gesperrt?
 #: also_indoor: search Oberfeldstraße Bahnübergang
-#: osm_watch: way id="868347101" version="2"
+#: osm_watch: way id="868347101" version="3"
 #: priority: #A
-#: last_checked: 2020-12-28
+#: last_checked: 2021-03-01 (osm)
 #: check_frequency: 90d
 #: next_check: 2021-03-31
 	2::inwork 20627,12162 20624,12133 20620,12108
@@ -31600,7 +31600,7 @@ EOF
 #: source_id: 2147346816
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb 31.03.2021, laut vmz 31.03.2022
 #: also_indoor: traffic (G)
-#: last_checked: 2021-02-20
+#: last_checked: 2021-03-02
 #: check_frequency: 45d
 #: next_check: 2021-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -31842,10 +31842,10 @@ EOF
 EOF
      },
      { from  => 1609668000, # 2021-01-03 11:00
-       until => 1634223600, # 2021-10-14 17:00
-       text  => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.01.2021 11:00 Uhr bis 14.10.2021 17:00 Uhr ',
+       until => $isodate2epoch->("2021-03-04 08:00:00"), # 1634223600, # 2021-10-14 17:00
+       text  => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.01.2021 11:00 Uhr bis 04.03.2021 08:00 Uhr ',
        type  => 'handicap',
-       source_id => '2147346755',
+       source_id => '2147346755', # bis 4.3.2021
        data  => <<EOF,
 	q4::inwork; 4894,6509 4875,6552 4786,6717
 EOF
@@ -32076,9 +32076,10 @@ EOF
        source_id => '2147346922', # bis Ende Mai 2021, Gesamtbaumaßnahme bis 30.09.2021
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
-#: last_checked: 2021-03-01
+#: also_indoor: traffic (G)
+#: last_checked: 2021-03-02
 #: check_frequency: 90d
-#: next_check: 2021-03-02
+#: next_check: 2021-03-03
 	q4::inwork; 15279,10862 15272,10790 15261,10738
 EOF
      },
@@ -32098,6 +32099,15 @@ EOF
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1057628.php',
        data  => <<EOF,
 	q4::inwork 10141,18030 10089,18180
+EOF
+     },
+     { from  => $isodate2epoch->("2021-03-03 08:00:00"),
+       until => 1634223600, # 2021-10-14 17:00
+       text  => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, in beiden Richtungen gesperrt, vom 04.03.2021 08:00 Uhr bis 14.10.2021',
+       type  => 'handicap',
+       source_id => '2147346935', # bis 14.10.2021
+       data  => <<EOF,
+	q4::inwork 4894,6509 4875,6552 4786,6717
 EOF
      },
     );
