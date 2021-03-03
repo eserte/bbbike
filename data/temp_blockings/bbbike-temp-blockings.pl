@@ -29258,7 +29258,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # $isodate2epoch->("2021-02-28 17:00:00"), # undef, # XXX
-       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 28. Februar 2021, unter Umständen auch länger',
+       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 31. März 2021, unter Umständen auch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SOLDINER-2019
@@ -29268,8 +29268,8 @@ EOF
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (H)
 #: last_checked: 2020-12-28 (mapillary)
-#: check_frequency: 60d
-#: next_check: 2021-02-28
+# REMOVED --- #: check_frequency: 60d
+#: next_check: 2021-03-31
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8904,17059 8866,17075 8677,17154
 # REMOVED (hier nicht mehr?) ---	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
@@ -29787,16 +29787,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2021-03-08 17:00:00"), # 1596211200, # 2020-07-31 18:00
-       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, vermutlich bis März 2021',
+       until => $isodate2epoch->("2021-07-06 17:00:00"), # 1596211200, # 2020-07-31 18:00
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, vermutlich bis 06.07.2021',
        type  => 'gesperrt',
        source_id => '2147344558', # bis 2020-09-10
        data  => <<EOF,
-#: source_id: 2147346164 (bis März 2021, Gesamtbaumaßnahme bis 2024)
+#: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: last_checked: 2021-02-20
+#: next_check: 2021-07-06
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 EOF
      },
@@ -30616,7 +30617,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-02-17
+#: last_checked: 2021-03-03
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30831,7 +30832,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-02
+#: last_checked: 2021-03-03
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32076,7 +32077,7 @@ EOF
        source_id => '2147346922', # bis Ende Mai 2021, Gesamtbaumaßnahme bis 30.09.2021
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (G(wrong),H)
 #: last_checked: 2021-03-02
 #: check_frequency: 90d
 #: next_check: 2021-03-03
