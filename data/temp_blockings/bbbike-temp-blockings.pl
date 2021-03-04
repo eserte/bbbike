@@ -28577,7 +28577,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-03-02
+#: last_checked: 2021-03-04
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -31042,6 +31042,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
+#: also_indoor: traffic (G)
 #: last_checked: 2021-02-20
 	q4::inwork; 14490,10610 14541,10735
 # REMOVED (hier keine Anzeichen für eine Einbahnstraßenregelung) ---	q4::inwork; 14541,10735 14675,10693
@@ -32078,9 +32079,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G(wrong),H)
-#: last_checked: 2021-03-02
-#: check_frequency: 90d
-#: next_check: 2021-03-03
+#: last_checked: 2021-03-04
+#: check_frequency: 30d
+#: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
 EOF
      },
@@ -32109,6 +32110,15 @@ EOF
        source_id => '2147346935', # bis 14.10.2021
        data  => <<EOF,
 	q4::inwork 4894,6509 4875,6552 4786,6717
+EOF
+     },
+     { from  => 1615071600, # 2021-03-07 00:00
+       until => 1618005600, # 2021-04-10 00:00
+       text  => 'Mehrower Str. (Ahrensfelde): Bauarbeiten, gesperrt, vom 08.03.2021 bis 09.04.2021',
+       type  => 'gesperrt',
+       source_id => '216000117',
+       data  => <<EOF,
+	2::inwork 22418,19268 22685,19122
 EOF
      },
     );
