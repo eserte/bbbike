@@ -1870,13 +1870,11 @@ Mittelstreifen mit Straﬂenbahn	3nocross::ignrte 12075,16144 12061,16091 12030,15
 Kuglerstr. -> Prenzlauer Allee [Wohngebiet]: Mittelstreifen mit Straﬂenbahn	3::igndisp 11961,16002 12030,15968 12154,15902
 Kuglerstr. -> Prenzlauer Allee: Mittelstreifen mit Straﬂenbahn	3::igndisp 11961,16002 12030,15968 12061,16091
 Prenzlauer Allee -> Kuglerstr.: Mittelstreifen mit Straﬂenbahn	3::igndisp 11995,15827 12030,15968 11961,16002
-Straﬂenbahntrasse	3nocross::ignrte 11941,15586 11967,15700 11995,15827
-Zelterstr. -> K¸selstr.: Straﬂenbahntrasse	3::igndisp 11852,15765 11967,15700 12058,15621
+Straﬂenbahntrasse	3nocross::ignrte 11941,15586 11963,15681 11967,15700 11995,15827
+K¸selstr. -> Prenzlauer Allee: Straﬂenbahntrasse	3::igndisp 12058,15621 11963,15681 11941,15586
+Prenzlauer Allee -> K¸selstr.: Straﬂenbahntrasse	3::igndisp 11967,15700 11963,15681 12058,15621
 Zelterstr. -> Prenzlauer Allee: Straﬂenbahntrasse	3::igndisp 11852,15765 11967,15700 11995,15827
-K¸selstr. -> Zelterstr.: Straﬂenbahntrasse	3::igndisp 12058,15621 11967,15700 11852,15765
-K¸selstr. -> Prenzlauer Allee: Straﬂenbahntrasse	3::igndisp 12058,15621 11967,15700 11941,15586
-Prenzlauer Allee -> Zelterstr.: Straﬂenbahntrasse	3::igndisp 11941,15586 11967,15700 11852,15765
-Prenzlauer Allee -> K¸selstr.: Straﬂenbahntrasse	3::igndisp 11995,15827 11967,15700 12058,15621
+Prenzlauer Allee -> Zelterstr.: Straﬂenbahntrasse	3::igndisp 11963,15681 11967,15700 11852,15765
 Straﬂenbahntrasse	3nocross::ignrte 11435,14023 11465,14122 11471,14143
 Prenzlauer Allee -> Raabestr.: Straﬂenbahntrasse	3::igndisp 11471,14143 11465,14122 11657,14018
 Raabestr. -> Prenzlauer Allee: Straﬂenbahntrasse	3::igndisp 11657,14018 11465,14122 11435,14023

@@ -29239,7 +29239,7 @@ EOF
        data  => <<EOF,
 #: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-01-22
+#: last_checked: 2021-03-05
 #: check_frequency: 60d
 #: next_check: 2021-04-30
 	q3::inwork  8986,16092 9178,16317
@@ -30832,7 +30832,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-03
+#: last_checked: 2021-03-05
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31780,11 +31780,12 @@ EOF
 EOF
      },
      { from  => 1606936220, # 2020-12-02 20:10
-       until => 1615050000, # 2021-03-06 18:00
-       text  => 'Reulestr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, bis 06.03.2021',
+       until => $isodate2epoch->("2021-04-01 18:00:00"), # laut rbb; 1615050000, # 2021-03-06 18:00
+       text  => 'Reulestr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, bis 01.04.2021',
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2021-02-20
+#: next_check: 2021-04-01
 	q3::inwork 8858,4579 8561,4535
 EOF
      },
@@ -31948,6 +31949,8 @@ EOF
        type  => 'handicap',
        source_id => '2147346268',
        data  => <<EOF,
+#: last_checked: 2021-03-05
+#: next_check: 2021-08-27
 	q2::inwork 8913,16159 9099,16398
 EOF
      },
@@ -32085,6 +32088,7 @@ EOF
 	q4::inwork; 15279,10862 15272,10790 15261,10738
 EOF
      },
+
      { from  => 1614272400, # 2021-02-25 18:00
        until => 1615064400, # 2021-03-06 22:00
        text  => 'Charlottenstr.: zwischen Taubenstr. und Mohrenstr. Sperrung der Fahrbahn, Radfahrer müssen schieben, vom 26.02.2021 18:00 Uhr bis 06.03.2021 22:00 Uhr ',

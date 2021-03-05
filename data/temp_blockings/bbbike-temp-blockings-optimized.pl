@@ -2438,7 +2438,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-01-22
+#: last_checked: 2021-03-05
 #: check_frequency: 60d
 #: next_check: 2021-04-30
 	q3::inwork  8986,16092 9178,16317
@@ -2787,7 +2787,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-03
+#: last_checked: 2021-03-05
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3158,13 +3158,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: last_checked: 2021-02-20
+#: next_check: 2021-04-01
 	q3::inwork 8858,4579 8561,4535
 ',
          'from' => 1606936220,
          'id' => 3310,
-         'text' => 'Reulestr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, bis 06.03.2021',
+         'text' => 'Reulestr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, bis 01.04.2021',
          'type' => 'handicap',
-         'until' => 1615050000
+         'until' => 1617292800
        },
        {
          'data' => '#: next_check_id: CORONA-2020
@@ -3268,7 +3269,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        {
-         'data' => '	q2::inwork 8913,16159 9099,16398
+         'data' => '#: last_checked: 2021-03-05
+#: next_check: 2021-08-27
+	q2::inwork 8913,16159 9099,16398
 ',
          'from' => 1611329064,
          'id' => 3324,
@@ -3387,16 +3390,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1615064400
        },
-       {
-         'data' => '	q4::inwork 10141,18030 10089,18180
-',
-         'from' => 1614492000,
-         'id' => 3338,
-         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1057628.php',
-         'text' => 'Neue Schönholzer Str.: Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, vom 1.3.2021 7 Uhr bis 5.3.2021 17 Uhr',
-         'type' => 'handicap',
-         'until' => 1614960000
-       },
+       undef,
        {
          'data' => '	q4::inwork 4894,6509 4875,6552 4786,6717
 ',

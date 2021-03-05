@@ -791,7 +791,7 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 #: osm_watch: way id="885619858" version="1"
 #: note: laut rbbtext bis 31.12.2020
 #: priority: #B
-#: last_checked: 2020-12-18 vvv
+#: last_checked: 2021-03-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -1567,7 +1567,8 @@ Am Flutgraben: Fußgänger	q1 13371,9974 13333,9929
 (Ernst-Heilmann-Steg): Fußgänger, zwei Bodenschwellen	q3 13270,10030 13306,10006 13371,9974
 Buschrosenplatz: enge Straße	q1 13002,5548 13054,5556 13075,5470
 # REMOVED --- #: next_check_id: FRIEDRICHSBRUECKE-2014 vvv --- #: XXX später mit Fahrbahn, dann wahrscheinlich gar kein handicap mehr --- #: XXX Bauarbeiten wahrscheinlich bis Oktober 2013 --- #: by: http://www.abload.de/img/friedrichsbruecke05byk16.jpg --- #: osm_watch: way id="4610599" version="14"--- #: last_checked: 2014-06-06 vvv --- Friedrichsbrücke: Engstellen wegen Bauarbeiten, Stufen	q4::inwork 10054,12699 10086,12725 --- Friedrichsbrücke: Engstellen wegen Bauarbeiten	q3::inwork 10086,12725 10166,12777 --- #: last_checked ^^^ --- #: next_check_id ^^^
-(Hornbach-Parkplatz): Parkplatzbetrieb	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
+(Hornbach-Parkplatz): Parkplatzverkehr	q1 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
+(Lidl-Parkplatz): Parkplatzverkehr	q1 11963,15681 12058,15621
 Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328 6971,10346
 #: XXX_prog BS: Bordstein am Blücherplatz, aber eine abgeflachte Stelle existiert, am Waterloo-Ufer existiert eigentlich auch eine abgeflachte Stelle
 (Blücherplatz - Waterloo-Ufer): Fußgänger, Bordsteine	q2 9631,10142 9687,10180
