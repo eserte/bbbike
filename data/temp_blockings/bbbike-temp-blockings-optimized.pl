@@ -3195,7 +3195,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert)
 #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt
 #: osm_watch: way id="855549020" version="1"
-#: last_checked: 2021-02-24
+#: last_checked: 2021-03-05 (krickstadt)
 #: check_frequency: 90d
 	2::inwork 18836,3611 18943,3508
 ',
@@ -3368,7 +3368,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G(wrong),H)
-#: last_checked: 2021-03-04
+#: last_checked: 2021-03-06
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3380,16 +3380,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1622473200
        },
-       {
-         'data' => '	q4::inwork 9547,11819 9536,11922
-',
-         'from' => 1614272400,
-         'id' => 3337,
-         'source_id' => '2147346912',
-         'text' => 'Charlottenstr.: zwischen Taubenstr. und Mohrenstr. Sperrung der Fahrbahn, Radfahrer müssen schieben, vom 26.02.2021 18:00 Uhr bis 06.03.2021 22:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1615064400
-       },
+       undef,
        undef,
        {
          'data' => '	q4::inwork 4894,6509 4875,6552 4786,6717

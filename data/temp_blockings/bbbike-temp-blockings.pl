@@ -31829,7 +31829,7 @@ EOF
 #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert)
 #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt
 #: osm_watch: way id="855549020" version="1"
-#: last_checked: 2021-02-24
+#: last_checked: 2021-03-05 (krickstadt)
 #: check_frequency: 90d
 	2::inwork 18836,3611 18943,3508
 EOF
@@ -32082,7 +32082,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G(wrong),H)
-#: last_checked: 2021-03-04
+#: last_checked: 2021-03-06
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32090,7 +32090,7 @@ EOF
      },
 
      { from  => 1614272400, # 2021-02-25 18:00
-       until => 1615064400, # 2021-03-06 22:00
+       until => 1615061389, # 1615064400, # 2021-03-06 22:00
        text  => 'Charlottenstr.: zwischen Taubenstr. und Mohrenstr. Sperrung der Fahrbahn, Radfahrer müssen schieben, vom 26.02.2021 18:00 Uhr bis 06.03.2021 22:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346912',

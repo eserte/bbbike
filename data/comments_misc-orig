@@ -329,9 +329,9 @@ Kreisverkehr	Roundabout 22843,11999 22845,11989 22858,11937 22877,11940 22883,11
 ######################################################################
 # busroute
 #
-# Hier sind alle Busrouten enthalten, die sich nicht auf einer
-# übergeordneten Straßen befinden. Das könnte z.B. für die
-# Winteroptimierung verwendet werden.
+# Hier sind alle Busrouten enthalten, die sich nicht auf
+# übergeordneten Straßen (ab H oder NH?) befinden.
+# Das könnte z.B. für die Winteroptimierung verwendet werden.
 #
 #: ignore vvv
 Bus 234	busroute_N -8116,6167 -8206,6072 -8262,5901 -8370,5670 -8442,5530 -8487,5445 -8553,5329 -8614,5185 -8634,5065 -8634,4921 -8642,4789 -8637,4741 -8654,4625 -8859,4624 -8865,4609 -8900,4563 -8986,4489 -9076,4382
@@ -1498,6 +1498,8 @@ nicht ausgeschildert, am Haus 109 abbiegen	CP2; 21243,7135 21175,7212
 nicht ausgeschildert	CP2; 21243,7135 21294,7189
 nicht ausgeschildert	CP2; 21243,7135 21219,7111
 #: note ^^^
+Raoul-Wallenberg-Str. [Wohngebiet]: Zufahrt zur Paul-Dessau-Str.	CS; 20636,16046 20651,16079 20707,16054
+Walter-Felsenstein-Str.: Zufahrt zur Bitterfelder Str.	CS; 20459,16697 20390,16663
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)

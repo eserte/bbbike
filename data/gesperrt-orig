@@ -3241,7 +3241,7 @@ Schranke	BNP:5::trailer=15 22855,4348
 #: next_check_id: NORD52-2019
 #: last_checked: 2021-02-24 vvv
 #: check_frequency: 90d vvv
-#: osm_watch: way id="630987121" version="6"
+#: osm_watch: way id="630987121" version="7"
 Ankerweg: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22118,2559 22159,2585 22197,2612
 An der Dahme: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22197,2612 22270,2549
 #: check_frequency ^^^
@@ -3276,7 +3276,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: check_frequency: 60d
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 # 
-#: last_checked: 2021-03-01 vvv
+#: last_checked: 2021-03-06 vvv
 #: check_frequency: 30d vvv
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16841,9997
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922
@@ -3324,7 +3324,7 @@ Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun 
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422 ("Fußgängerzone beschlossen" --- bleibt es permanent?)
 #: XXX bis wann bleibt diese Straße eine "Klimastraße"?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-02-20
+#: last_checked: 2021-03-06
 # REMOVED (bleibt vermutlich länger?) --- #: next_check: 2020-12-31
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939 13856,10864
 # 
@@ -3779,7 +3779,7 @@ Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14121,8147 14210,822
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/seit-13-september-ist-der-aufzug-am-bahnhof-schoeneweide-in-betrieb_a232699
 #: by: https://www.abendblatt-berlin.de/2019/09/25/treptow-schoeneweider-fahrstuehle-endlich-in-betrieb/
 #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
-#: osm_watch: way id="226163591" version="3"
+#: osm_watch: way id="226163591" version="4"
 #: priority: #C
 #: last_checked: 2020-03-12 (krickstadt)
 #: check_frequency: 360d
@@ -4168,7 +4168,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraus
 # 
 #: next_check_id: BER-20XX
 #: XXX möglicherweise bleibt das noch erhalten, solange es Terminal 5 gibt? Es gibt aber Kartenwerke (Pharus, Falk), bei denen die Jürgen-Schumann-Allee durchgängig ist
-#: last_checked: 2020-11-03 (mapillary)
+#: last_checked: 2021-03-06 (mapillary)
 # REMOVED --- #: next_check: 2020-10-31
 #: check_frequency: 180d
 # REMOVED (entfernt) --- #: osm_watch: way id="127091100" version="14" brb
