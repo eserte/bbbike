@@ -2190,7 +2190,7 @@ Verbundsteinpflaster, einige Wurzelhebungen	RW1; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2021-02-04
+#: last_checked: 2021-03-07
 #: check_frequency: 90d
 #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -2361,10 +2361,10 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: http://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
-#: last_checked: 2021-02-22
+#: last_checked: 2021-03-07
 #: check_frequency: 180d
 #: next_check: 2023-12-31
-	RW1;RW1 13438,14675 13731,14200 13879,13967
+	RW1;RW1 13438,14675 13731,14200 13736,14192 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW2; 13971,13818 14006,13761
 	RW1; 14006,13761 13971,13818 13879,13967
@@ -5004,7 +5004,7 @@ asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünmarkierung?) vvv
-#: last_checked: 2021-02-13 vvv
+#: last_checked: 2021-03-07 (osm) vvv
 #: check_frequency: 60d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
@@ -5013,10 +5013,11 @@ asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
 # 
 #: note: Stülerstr./Budapester Str. Richtung Tiergarten
-#: XXX wird nach den Bauarbeiten ein Radweg/eine Radspur entstehen?
+# REMOVED --- #: XXX wird nach den Bauarbeiten ein Radweg/eine Radspur entstehen?
 # REMOVED (existiert nicht mehr) --- #: by: http://the-westlight.de/de/gebaeude.html (Webcam)
 # REMOVED (nicht mehr "extra" prüfen) --- #: last_checked: 2020-10-12 --- #: check_frequency: 30d
-provisorischer getrennter Rad- und Gehweg	RW2; 6145,10975 6168,11042
+#: by: https://westnordost.de/p/32402.jpg
+	RW3; 6145,10975 6168,11042
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
 #: check_frequency ^^^
 # REMOVED --- #: next_check ^^^
