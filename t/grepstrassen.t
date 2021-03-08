@@ -378,7 +378,13 @@ sub run_grepstrassen ($$) {
     # "binary" is for Windows
     my $res = run [$^X, $grepstrassen, @$args], "<", binary, \$in_data, ">", binary, \$out_data, "2>", \$err;
     ok $res, "No error running grepstrassen @$args";
-    is $err, '', 'Nothing in stderr';
+    {
+	local $TODO;
+	if ($Devel::Cover::VERSION && $Devel::Cover::VERSION <= 1.36) {
+	    $TODO = "stderr unclean because of https://github.com/pjcj/Devel--Cover/issues/141";
+	}
+	is $err, '', 'Nothing in stderr';
+    }
     $out_data;
 }
 __END__
