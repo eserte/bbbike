@@ -191,7 +191,7 @@ Aachener Str.: Kopfsteinpflaster	Q2 4672,8031 4687,8306 4623,8457
 Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12977,9301 12913,9353 12897,9365
 Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
-Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
+Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 Hirschberger Str.: Asphalt	Q0 14988,11130 15021,11152 15056,11138
 Hirschberger Str.: Kopfsteinpflaster	Q2 15056,11138 15102,11120
 Krummhübler Str.: Kopfsteinpflaster	Q2 15060,11006 15102,11120
@@ -1245,7 +1245,7 @@ Storkwinkel: Kopfsteinpflaster	Q2 2489,9784 2482,9870
 Witzlebenplatz: Kopfsteinpflaster, OK	Q1 2764,11519 2764,11500 2850,11386
 Witzlebenplatz: Asphalt	Q0 2850,11386 2924,11309
 Friedbergstr.: Kopfsteinpflaster, OK	Q1 2766,10750 2793,10752 3012,10812 3204,10895
-Am Berlin Museum: Asphalt mit einigen Katzenkopfreihen	Q2 10032,10752 9829,10830
+Am Berlin Museum: Asphalt	Q0 10032,10752 9829,10830
 (Charlottenburger Ufer - UFerweg): Kleinsteinpflaster	Q1 3370,12725 3396,12741
 (Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671
 (Rad- und Wanderweg an Spree und Landwehrkanal): Kleinsteinpflaster, Regenablaufrinnen	Q2 3643,12671 3748,12627
@@ -1538,7 +1538,7 @@ Wildenbruchplatz: mäßiges Kopfsteinpflaster	Q2 13138,8762 13227,8692 13314,8624
 Finowstr. (Neukölln): Kopfsteinpflaster	Q2 13227,8692 13171,8621 13124,8562
 Finowstr. (Neukölln): Asphalt	Q0 13124,8562 13011,8416
 Kleine Innstr.: Asphalt	Q0 13171,8621 13262,8554
-Erlanger Str.: Kopfsteinpflaster	Q2 12293,8494 12170,8548
+Erlanger Str.: Kopfsteinpflaster	Q2 12293,8494 12166,8557
 Tellstr.: Kopfsteinpflaster	Q2 12316,8921 12402,9080
 Jansastr.: Kopfsteinpflaster	Q2 12435,8853 12531,9009
 Ossastr.: Kopfsteinpflaster	Q2 12623,9134 12682,9089
@@ -10539,6 +10539,8 @@ George-Stephenson-Str.: Asphalt	Q0 7487,14472 7452,14415 7500,14333 7569,14217 7
 (Straße G, Innovationspark Wuhlheide): Beton	Q0 21560,6869 21627,6942 21547,7024
 (Verlängerte Hämmerlingstr. - Straße G, Innovationspark Wuhlheide): Beton	Q0 21582,6842 21560,6869
 (Lindenstr. - Schmetterlingswiesen, östlicher Weg): wassergebundene Decke	Q1 21420,11150 21483,11129
+Potsdamer Str.: Asphaltschäden	Q1; 7507,9458 7512,9572 7518,9791
+Potsdamer Str.: Asphaltschäden	Q1; 7526,9969 7579,10183
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

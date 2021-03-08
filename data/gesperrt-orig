@@ -1257,7 +1257,7 @@ Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 #: next_check_id: UBAHN1-2020
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt
-#: last_checked: 2021-02-05
+#: last_checked: 2021-03-08
 #: check_frequency: 60d
 #: next_check: 2021-04-01
 #(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
@@ -1638,7 +1638,7 @@ Am Krusenick	1s:q3 22751,4970 22652,4966 22667,4912 22705,4874
 #: note: Umweg über Scharnweberstr. ist vertretbar
 Josef-Nawrocki-Str.	1s:q4 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.	1s:q4 25724,4706 25695,4714 25554,4758 25552,4829
-Askanischer Platz	1s:q2 8889,10906 8938,10872 8983,10846 9022,10857
+Askanischer Platz	1s:q3 8889,10906 8938,10872 8983,10846 9022,10857
 # 
 #: by: Karin Kühl:
 #: confirmed_by: srt
@@ -3335,7 +3335,7 @@ Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939
 #: check_frequency: 360d
 #: next_check: 2023-01-01
 #: valid: -20231231
-Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12170,8548 12287,8602
+Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12165,8566 12287,8602
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-EISNER-2020
 #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/p+r-parkplatz-wird-geschlossen_a277741
@@ -3498,7 +3498,7 @@ Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: source_id ^^^
 #: also_indoor ^^^
 # 
-#: last_checked: 2021-01-22
+#: last_checked: 2021-03-08
 #: check_frequency: 60d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -3585,6 +3585,8 @@ Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 #: by: https://www.kms-sonne.de/baustellennews?date=20201221 (weiterhin gesperrt)
 #: osm_watch: way id="822674838" version="4"
 #: last_checked: 2021-02-18 (osm)
+#: check_frequency: 60d
+#: next_check: 2021-06-30
 #Rollbergstr.: Einbahnstraße, offen Richtung Karl-Marx-Str.	1s:q3:inwork 12714,8249 12545,8209
 Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:q4:inwork 12714,8249 12545,8209
 # 

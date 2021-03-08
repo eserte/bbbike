@@ -490,7 +490,7 @@ Jahnstr.: Bauarbeiten, etwa 50m der Fahrbahn sind gesperrt	q3::inwork 11500,9116
 #: XXX laut vmz bis Anfang 2019, laut fritz/rbb bis 30.06.2021
 #: by: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
 #: also_indoor: traffic (H)
-#: last_checked: 2021-01-09
+#: last_checked: 2021-03-08
 #: check_frequency: 90d
 #: next_check: 2021-06-30
 #: valid: -20210630
@@ -615,7 +615,7 @@ Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 #: by: https://www.kms-sonne.de/baustellennews/?date=20191023
 #: XXX außerdem gibt es Bauarbeiten auf der Karl-Marx-Str. zwischen Fuldastr. und Weichselstr., evtl. mit Verschwenkungen?
 #: XXX laut fritz bis 31. März 2021
-#: source_id: 2147345357
+#: source_id: 2147345357 (inaktiv)
 #: source_id: 2147345472 (bis März 2021)
 #: also_indoor: traffic (G,H)
 #: last_checked: 2021-01-29
@@ -628,11 +628,12 @@ Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/sperrrung-an-der-fuldastrasse_a275098
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630
 #: by: https://www.kms-sonne.de/baustellennews?date=20201221 (weiterhin gesperrt)
+#: by: https://www.kms-sonne.de/baustellennews?date=202102 (voraussichtlich bis Sommer 2021)
 #: source_id: 2147345472 (Verschwenkung der KMS)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-01-29
+#: last_checked: 2021-03-08
 #: check_frequency: 90d
-#: next_check: 2021-03-31
+#: next_check: 2021-06-30
 Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12500,8504
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -641,7 +642,8 @@ Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12500,85
 #: osm_watch: way id="822805265" version="6"
 #: also_indoor: traffic (G)
 #: last_checked: 2021-02-27
-#: next_check: 2021-03-31
+#: check_frequency: 60d
+#: next_check: 2021-06-30
 Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -661,6 +663,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/jetzt-wird-von-zwei-seiten-aus-gebuddelt_a249214 (hier: ab Mitte Februar 2020)
 #: by: https://www.kms-sonne.de/baustellennews/?date=20200526 (Abschluss bis Rollberstr. voraussichtlich Mitte Juli 2020)
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (Abschluss bis Rollberstr. voraussichtlich September 2020)
+#: by: https://www.kms-sonne.de/baustellennews?date=202102 (voraussichtlich im Juni/Juli 2021 fertig)
 #: XXX laut rbbtext bis 31.03.2021
 #: source_id: IM_022515
 #: source_id: 2147338550
@@ -671,7 +674,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: also_indoor: traffic
 #: last_checked: 2021-03-02 vvv
 #: check_frequency: 60d
-#: next_check: 2021-03-31
+#: next_check: 2021-06-30
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
 # REMOVED (hier mittlerweile weitgehend befahrbar) --- Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187
 # REMOVED (laut osm hier nicht mehr) --- #: check_frequency: 30d --- #: next_check: 2020-10-20 --- Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12753,8187 12794,8103
@@ -738,7 +741,7 @@ Simon-Bolivar-Str./Küstriner Str.: Kreuzungsbereich gesperrt	q3::inwork 15878,14
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2021-02-06 (daf) vvv
+#: last_checked: 2021-03-08 vvv
 # REMOVED (hier kaum noch Einschränkungen) --- Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
 Bauarbeiten im Kreuzungsbereich	q3::inwork 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
@@ -1445,7 +1448,7 @@ Im Gestell: Fußgänger	q1 371,4453 267,4375
 Heinitzweg: Fußgänger	q2 10325,1083 10379,1097
 #: XXX_prog Bordstein ist am südlichen Wendehammer, ansonsten trotzdem q1
 Haewererweg: enge Durchfahrt, niedriger Bordstein	q1 12125,1282 12097,1243
-(Weichselstr. - Sasarsteig): Spielplatz, Radfahren verboten	q4+ 12287,8602 12170,8548
+(Weichselstr. - Sasarsteig): Spielplatz, Radfahren verboten	q4+ 12287,8602 12165,8566
 #: note: mittlerweile werden Radfahrer offiziell über den Platz geführt
 Kaiser-Wilhelm-Platz: einige Fußgänger	q2 7201,8870 7307,8945
 Kernhofer Str.: Fußgänger, Supermarkt	q2 15380,10946 15355,10875
@@ -3514,6 +3517,7 @@ An der Kieler Brücke: Fußgängerzone	q3 7877,14504 7804,14445
 (Straße E, Innovationspark Wuhlheide): Gewerbebetriebe	q2 21231,7249 21175,7212 21243,7135
 (Straße G, Innovationspark Wuhlheide): Gewerbebetriebe	q1 21627,6942 21547,7024
 (Relingstr. - Uferweg): einige Fußgänger	q2 22358,2460 22399,2481
+Am Berlin Museum: einige Katzenkopfreihen	q2 10032,10752 9829,10830
 # 
 ######################### User Contributions #################################
 # 

@@ -308,9 +308,9 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="23"
-#: last_checked: 2020-12-12 (mapillary)
+#: last_checked: 2021-03-08
 #: check_frequency: 90d
-Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
+Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
 Hirschberger Str.: Asphalt	Q0 14988,11130 15021,11152 15056,11138
 Hirschberger Str.: Kopfsteinpflaster	Q2+ 15056,11138 15102,11120
@@ -1682,7 +1682,7 @@ Storkwinkel: Kopfsteinpflaster	Q2 2489,9784 2482,9870
 Witzlebenplatz: Kopfsteinpflaster, OK	Q1- 2764,11519 2764,11500 2850,11386
 Witzlebenplatz: Asphalt	Q0 2850,11386 2924,11309
 Friedbergstr.: Kopfsteinpflaster, OK	Q1- 2766,10750 2793,10752 3012,10812 3204,10895
-Am Berlin Museum: Asphalt mit einigen Katzenkopfreihen	Q2 10032,10752 9829,10830
+Am Berlin Museum: Asphalt	Q0 10032,10752 9829,10830
 # REMOVED --- #: next_check_id: SPREERADWEGEINSTEINUFER-2014 --- #: XXX Bauarbeiten, wie sieht es danach aus? -> asphaltiert! --- #: XXX wird der Spreeradweg ab Charlottenburger Brücke hier entlanggeführt? --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140911.1355.399203.html --- #: last_checked: 2017-07-11 --- #: check_frequency: 14d
 (Charlottenburger Ufer - UFerweg): Kleinsteinpflaster	Q1- 3370,12725 3396,12741
 (Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671
@@ -1876,7 +1876,7 @@ Hobrechtstr.: mäßiges Kopfsteinpflaster, kurze Verbundsteinpflasterabschnitte	Q2
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2- 11917,9663 11897,9754
 Sanderstr.: Asphalt	Q0 11710,9628 11917,9663
 Sanderstr.: Asphalt mit einigen Schäden	Q0- 11917,9663 12074,9689
-Biebricher Str.: mäßiges Kopfsteinpflaster	Q2 11884,8492 12057,8529
+Biebricher Str.: mäßiges Kopfsteinpflaster	Q2- 11884,8492 12057,8529
 Mainzer Str.: schlechtes bis mäßiges Kopfsteinpflaster (auch bergab nur 15 km/h)	Q3+ 12063,8826 12057,8529 12083,8411 12104,8299
 #: note: vor der Kreuzung ein paar Meter asphaltiert
 Mainzer Str.: mäßiges Kopfsteinpflaster	Q2 12104,8299 12116,8247
@@ -2029,7 +2029,7 @@ Wildenbruchplatz: mäßiges Kopfsteinpflaster	Q2- 13138,8762 13227,8692 13314,8624
 Finowstr. (Neukölln): Kopfsteinpflaster	Q2 13227,8692 13171,8621 13124,8562
 Finowstr. (Neukölln): Asphalt	Q0 13124,8562 13011,8416
 Kleine Innstr.: Asphalt	Q0 13171,8621 13262,8554
-Erlanger Str.: Kopfsteinpflaster	Q2 12293,8494 12170,8548
+Erlanger Str.: Kopfsteinpflaster	Q2- 12293,8494 12166,8557
 Tellstr.: Kopfsteinpflaster	Q2 12316,8921 12402,9080
 Jansastr.: Kopfsteinpflaster	Q2 12435,8853 12531,9009
 Ossastr.: Kopfsteinpflaster	Q2 12623,9134 12682,9089
@@ -7579,7 +7579,7 @@ Apfelwicklerstr.: Verbundsteinpflaster	Q0- 21456,10631 21553,10671
 Dramburger Str.: Asphalt	Q0 21594,9895 21606,10010 21571,10128 21556,10232 21573,10296 21584,10329
 Birnbaumer Str.: Beton	Q0- 22093,6630 22186,6672
 Birnbaumer Str.: gepflastert	Q2 22056,6613 22093,6630
-Am Flutgraben: Parkweg	Q1 13333,9929 13418,9944 13579,10146
+Am Flutgraben: Parkweg	Q1- 13333,9929 13418,9944 13579,10146
 Feldtmannstr.: Kopfsteinpflaster	Q2 14766,17702 14671,17735
 (B2 - Straße 52): Beton	Q0- 15872,20496 15851,20517
 (B2 - Straße 52): wassergebundene Decke	Q1- 15851,20517 15821,20539 15730,20549 15605,21098 15499,21569
@@ -11979,6 +11979,8 @@ George-Stephenson-Str.: Asphalt	Q0 7487,14472 7452,14415 7500,14333 7569,14217 7
 (Straße G, Innovationspark Wuhlheide): Beton	Q0- 21560,6869 21627,6942 21547,7024
 (Verlängerte Hämmerlingstr. - Straße G, Innovationspark Wuhlheide): Beton	Q0- 21582,6842 21560,6869
 (Lindenstr. - Schmetterlingswiesen, östlicher Weg): wassergebundene Decke	Q1 21420,11150 21483,11129
+Potsdamer Str.: Asphaltschäden	Q1; 7507,9458 7512,9572 7518,9791
+Potsdamer Str.: Asphaltschäden	Q1; 7526,9969 7579,10183
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -29635,6 +29637,9 @@ Kreuzungsbereich asphaltiert	Q0 11270,16890
 Einmündungsbereich mit Kopfsteinpflaster	Q2 22985,-1319
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 21828,-1015
 Einmündungsbereich mit Kleinsteinpflaster	Q1- 13245,7742
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 12682,9089
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 12740,8862
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 11769,8515
 #: by: mapillary
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 4248,18066
 Einmündungsbereich mit Kopfsteinpflaster	Q2 15162,11458
