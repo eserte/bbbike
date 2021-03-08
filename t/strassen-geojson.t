@@ -13,7 +13,7 @@ use lib ("$FindBin::RealBin/../lib",
 	 $FindBin::RealBin,
 	);
 
-use File::Temp qw(tempfile);
+use File::Temp qw(tempfile tempdir);
 use Test::More;
 
 use Strassen;
@@ -221,6 +221,92 @@ EOF
          "properties" : {
             "cat" : "X",
             "name" : "Waypoint 1<br/>\nWaypoint 1 again"
+         },
+         "type" : "Feature"
+      },
+      {
+         "geometry" : {
+            "coordinates" : [
+               "13.5",
+               "52.6"
+            ],
+            "type" : "Point"
+         },
+         "properties" : {
+            "cat" : "X",
+            "name" : "Waypoint 2"
+         },
+         "type" : "Feature"
+      }
+   ],
+   "type" : "FeatureCollection"
+}
+EOF
+
+}
+
+{
+    my $tempmoddir = tempdir("strassen-geojson-XXXXXXXX", CLEANUP => 1);
+    open my $ofh, ">$tempmoddir/StrassenGeoJSONMyCombine.pm" or die $!;
+    print $ofh <<'EOF';
+package StrassenGeoJSONMyCombine;
+sub new { bless { c2x => {} }, shift }
+sub add_first {
+    my($self, %args) = @_;
+    my $r = delete $args{rec};
+    my $feature = delete $args{feature};
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+    my $coordstring = join(" ", @{ $r->[Strassen::COORDS] });
+    $self->{c2x}->{$coordstring} = { feature => $feature, name => [ $r->[Strassen::NAME] ] };
+}
+sub maybe_append {
+    my($self, %args) = @_;
+    my $r = delete $args{rec};
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+    my $coordstring = join(" ", @{ $r->[Strassen::COORDS] });
+    if (my $old_val = $self->{c2x}->{$coordstring}) {
+        push @{ $old_val->{name} }, $r->[Strassen::NAME];
+        return 1;
+    }
+    return 0;
+}
+sub flush {
+    my($self) = @_;
+    while(my($coordstring, $record) = each %{ $self->{c2x} }) {
+        $record->{feature}->{properties}->{name} = join("; ", @{ $record->{name} });
+    }
+}
+1;
+EOF
+    close $ofh or die $!;
+
+    my $test_combine_data = <<"EOF";
+#: map: polar
+#:
+Waypoint 1\tX 13.4,52.5
+Waypoint 2\tX 13.5,52.6
+Waypoint 1 again\tX 13.4,52.5
+EOF
+    my $s = Strassen->new_from_data_string($test_combine_data);
+    my $s_geojson = Strassen::GeoJSON->new($s);
+    my $geojson = do {
+        local @INC = ($tempmoddir, @INC);
+        $s->bbd2geojson(combine => 1, combinemodule => 'StrassenGeoJSONMyCombine');
+    };
+    is $geojson, <<'EOF', 'combine=>1 and custom combinemodule';
+{
+   "features" : [
+      {
+         "geometry" : {
+            "coordinates" : [
+               "13.4",
+               "52.5"
+            ],
+            "type" : "Point"
+         },
+         "properties" : {
+            "cat" : "X",
+            "name" : "Waypoint 1; Waypoint 1 again"
          },
          "type" : "Feature"
       },

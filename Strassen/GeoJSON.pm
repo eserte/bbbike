@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015,2018,2019,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Strassen::GeoJSON;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 use Strassen::Core;
 @ISA = qw(Strassen);
@@ -159,6 +159,7 @@ sub bbd2geojson {
     my $multiline = delete $args{multiline};
     my $bbbgeojsonp = delete $args{bbbgeojsonp};
     my $combine = delete $args{combine};
+    my $combine_module = delete $args{combinemodule};
     die "Unhandled options: " . join(" ", %args) if %args;
 
     if ($multiline) {
@@ -172,7 +173,17 @@ sub bbd2geojson {
     }
 
     my @features;
-    my %coordstring_to_feature;
+
+    my $combine_object;
+    if ($combine) {
+	if ($combine_module) {
+	    eval "require $combine_module";
+	    die $@ if $@;
+	} else {
+	    $combine_module = 'Strassen::GeoJSON::CombineFeatureNames';
+	}
+	$combine_object= $combine_module->new;
+    }
 
     $self->init;
  BBD_RECORD: while(1) {
@@ -192,12 +203,9 @@ sub bbd2geojson {
 		       );
 
 	my $coordstring;
-	if ($combine) {
-	    $coordstring = join(" ", @c);
-	    if (my $old_feature = $coordstring_to_feature{$coordstring}) {
-		$old_feature->{properties}->{name} .= "<br/>\n$name";
-		next BBD_RECORD;
-	    }
+	if ($combine_object) {
+	    my $appended = $combine_object->maybe_append(rec => $r);
+	    next BBD_RECORD if $appended;
 	}
 
 	my $feature = {
@@ -210,9 +218,13 @@ sub bbd2geojson {
 		      };
 	push @features, $feature;
 
-	if ($combine) {
-	    $coordstring_to_feature{$coordstring} = $feature;
+	if ($combine_object) {
+	    $combine_object->add_first(rec => $r, feature => $feature);
 	}
+    }
+
+    if ($combine_object) {
+	$combine_object->flush;
     }
 
     my $to_serialize;
@@ -272,6 +284,32 @@ sub xy2longlat {
     my($c) = @_;
     my($lon, $lat) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map(split /,/, $c));
     ($lon, $lat);
+}
+
+{
+    package
+	Strassen::GeoJSON::CombineFeatureNames;
+    sub new { bless { coordstring_to_feature => {} }, shift }
+    sub add_first {
+	my($self, %args) = @_;
+	my $r = delete $args{rec};
+	my $feature = delete $args{feature};
+	die "Unhandled arguments: " . join(" ", %args) if %args;
+	my $coordstring = join(" ", @{ $r->[Strassen::COORDS] });
+	$self->{coordstring_to_feature}->{$coordstring} = $feature;
+    }
+    sub maybe_append {
+	my($self, %args) = @_;
+	my $r = delete $args{rec};
+	die "Unhandled arguments: " . join(" ", %args) if %args;
+	my $coordstring = join(" ", @{ $r->[Strassen::COORDS] });
+	if (my $old_feature = $self->{coordstring_to_feature}->{$coordstring}) {
+	    $old_feature->{properties}->{name} .= "<br/>\n" . $r->[Strassen::NAME];
+	    return 1;
+	}
+	return 0;
+    }
+    sub flush {}
 }
 
 1;

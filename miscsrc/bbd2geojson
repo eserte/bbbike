@@ -20,6 +20,7 @@ my $pretty = 1;
 my $multiline = 0;
 my $utf8 = 0;
 my $combine;
+my $combinemodule;
 my $bbbgeojsonp;
 GetOptions(
 	   "compact"     => sub {
@@ -33,6 +34,7 @@ GetOptions(
 	       $utf8 = 1;
 	   },
 	   "combine!"     => \$combine,
+	   "combinemodule=s" => \$combinemodule,
 	   "bbbgeojsonp!" => \$bbbgeojsonp,
 	  ) or usage();
 
@@ -43,7 +45,7 @@ if ($bbbgeojsonp) {
     print "// generated with bbd2geojson from BBBike distribution, see\n";
     print "// https://github.com/eserte/bbbike/blob/master/miscsrc/bbd2geojson\n";
 }
-print $s_geojson->bbd2geojson(bbbgeojsonp => $bbbgeojsonp, pretty => $pretty, utf8 => $utf8, multiline => $multiline, combine => $combine);
+print $s_geojson->bbd2geojson(bbbgeojsonp => $bbbgeojsonp, pretty => $pretty, utf8 => $utf8, multiline => $multiline, combine => $combine, combinemodule => $combinemodule);
 print "\n";
 
 __END__
@@ -54,7 +56,7 @@ bbd2geojson - convert BBD files to GeoJSON files
 
 =head1 SYNOPSIS
 
-    bbd2geojson [-compact|-nocompact|-multiline] [-combine] [-bbbgeojsonp] bbdfile > output.geo.json
+    bbd2geojson [-compact|-nocompact|-multiline] [-combine [-combinemodule A::B::C]] [-bbbgeojsonp] bbdfile > output.geo.json
 
 =head1 DESCRIPTION
 
@@ -82,12 +84,48 @@ Create
 Combine features with same coordinates into a single feature, joining
 the names (separated with a HTML C<< <br/> >>).
 
+=item C<-combinemodule I<module>>
+
+Use a custom module for combining features. See L</CUSTOM COMBINING>
+for more details.
+
 =item C<-bbbgeojsonp>
 
 Create a JSONP-like file. For details, see L<Strassen::GeoJSON/JSONP
 support>.
 
 =back
+
+=head2 CUSTOM COMBINING
+
+Combining features e.g. with the same coordinate may be done in a
+custom way using a module specified with the C<-combinemodule> option.
+This module should be implemented as a normal perl OO module with a
+constructor C<new> and the following methods:
+
+=over
+
+=item C<< add_first(rec => I<$strassenrecord>, feature => I<$feature>) >>
+
+Called if the coordinate was encountered the first time. May be used
+to remember the given "Strassen" record and the GeoJSON feature.
+
+=item C<< maybe_append(rec => I<$strassenrecord>) >>
+
+Called to check if the given "Strassen" record may be combined with an
+existing feature (e.g. because it has the same coordinate). Should
+return true if this is the case, otherwise false.
+
+=item C<< flush() >>
+
+May be used to actually do the combines. May be an empty method if the
+combines were already done in C<maybe_append>.
+
+=back
+
+Please see the source code of L<Strassen::GeoJSON> for a package named
+C<< Strassen::GeoJSON::CombineFeatureNames >> and the test file
+F<t/strassen-geojson.t> for sample implementations.
 
 =head1 AUTHOR
 
