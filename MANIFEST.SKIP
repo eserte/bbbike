@@ -34,6 +34,7 @@ patch\.gz$
 \.travis\.yml$
 ^appveyor\.yml$
 ^\.github/
+^\.coveralls.yml$
 # private common files
 \.ok2cgi$
 \.copynewer.SKIP$
