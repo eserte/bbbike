@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.61;
+$VERSION = 1.62;
 
 use vars qw(%images);
 
@@ -1149,7 +1149,10 @@ sub showmap_url_mapillary {
     my $py = $args{py};
     my $dateFrom = $args{dateFrom};
     if ($dateFrom) {
-	if ($dateFrom =~ m{^-(\d+)month$}) {
+	if ($dateFrom =~ m{^-(\d+)year$}) {
+	    require POSIX;
+	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*365));
+	} elsif ($dateFrom =~ m{^-(\d+)month$}) {
 	    require POSIX;
 	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*30));
 	} elsif ($dateFrom =~ m{^-(\d+)week$}) {
@@ -1181,14 +1184,6 @@ sub show_mapillary_menu {
     }
     my $link_menu = $w->Menu(-title => 'Mapillary',
 			     -tearoff => 0);
-    $link_menu->command
-	(-label => 'Fresh Mapillary (< 1 month)',
-	 -command => sub { showmap_mapillary(dateFrom => '-1month', %args) },
-	);
-    $link_menu->command
-	(-label => 'Fresh Mapillary (< 1 week)',
-	 -command => sub { showmap_mapillary(dateFrom => '-1week', %args) },
-	);
     if ($args{last_checked} && $args{last_checked} =~ m{^(\d{4})-(\d{2})-(\d{2})}) {
 	my($y,$m,$d) = ($1,$2,$3);
 	require Time::Local;
@@ -1200,6 +1195,19 @@ sub show_mapillary_menu {
 	     -command => sub { showmap_mapillary(dateFrom => $date_from, %args) },
 	    );
     }
+    $link_menu->command
+	(-label => 'Fresh Mapillary (< 1 week)',
+	 -command => sub { showmap_mapillary(dateFrom => '-1week', %args) },
+	);
+    $link_menu->command
+	(-label => 'Fresh Mapillary (< 1 month)',
+	 -command => sub { showmap_mapillary(dateFrom => '-1month', %args) },
+	);
+    $link_menu->command
+	(-label => 'Fresh Mapillary (< 1 year)',
+	 -command => sub { showmap_mapillary(dateFrom => '-1year', %args) },
+	);
+    $link_menu->separator;
     $link_menu->command
 	(-label => "Link kopieren",
 	 -command => sub { _copy_link(showmap_url_mapillary(%args)) },
