@@ -189,9 +189,9 @@ Busspur ist immer gültig	RW5; 7507,9458 7512,9572 7518,9791 7526,9969 7579,10183
 Busspur ist immer gültig	RW5; 7633,10394 7579,10183 7526,9969 7518,9791 7512,9572 7507,9458 7471,9360
 # REMOVED --- #: XXX ^^^
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
-#: XXX zeitliche Ausweitung für 2021 geplant
+#: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
 #: last_checked: 2021-03-08
-#: next_check: 2021-07-01
+#: next_check: 2021-03-08
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1;RW1 7633,10394 7689,10514 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt 7-22 Uhr	RW1; 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8226,11458
 für Radfahrer freigegebene Busspur gilt 7-20 Uhr	RW1; 8226,11458 8145,11438 8096,11393 8083,11381
@@ -1006,7 +1006,9 @@ Busspur gilt Mo-Fr 13-19h	RW1; 8200,5510 8365,5502 8593,5491
 	RW1;RW1 4918,8785 4918,8740 4892,8624 4783,8557
 	RW1;RW1 3346,7369 3279,7386 3228,7401 3042,7465 2757,7604
 	RW1;RW1 5346,7860 5348,7726 5348,7681 5349,7619 5350,7554 5352,7428
-Gehweg für Radfahrer frei	RW1;RW1 5352,7428 5364,7330 5397,7205
+gemeinsamer Geh- und Radweg	RW2; 5352,7428 5364,7330 5397,7205
+	RW1; 5397,7205 5364,7330
+Gehweg für Radfahrer frei	RW1; 5364,7330 5352,7428
 	RW1; 5397,7205 5352,7184 5357,6943 5357,6932 5358,6725 5360,6642
 Busspur ist immer gültig	RW5; 5360,6642 5370,6486
 	RW1; 5370,6486 5360,6642 5358,6725 5357,6932 5357,6943 5352,7184 5397,7205
@@ -1358,14 +1360,15 @@ Busspur ist immer gültig	RW5; 7563,8871 7548,8879 7497,8916 7360,8918
 geschützter Radstreifen, mit "Leitboys"	RW4; 7360,8918 7315,8941 7307,8945 7268,8960
 # 
 #: note: Kolonnenstr. Richtung Osten
+	RW3; 7268,8960 7307,8945
 # REMOVED (hier keine Busspur --- wegen Bauarbeiten?) --- Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5; 7307,8945 7315,8941 7360,8918
 # REMOVED (ja, früher: gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr) --- #: XXX hat sich die Gültigkeitsdauer geändert?
 Busspur ist immer gültig	RW5; 7360,8918 7497,8916 7548,8879 7563,8871
 # REMOVED (hier ist gar keine Busspur, war auch nie?) --- Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5; 7563,8871 7642,8815 7709,8777
-geschützter Radstreifen	RW4; 7709,8777 7795,8765
+geschützter Radstreifen, mit "Leitboys"	RW4; 7709,8777 7795,8765
 # REMOVED (ja, früher: gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr) --- #: XXX hat sich die Gültigkeitsdauer geändert?
 Busspur ist immer gültig	RW5; 7795,8765 8008,8771
-geschützter Radstreifen, mit "Leitboys"	RW4; 8014,8771 8078,8772 8145,8773 8209,8773 8298,8774
+geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,8773 8209,8773 8298,8774
 # 
 	RW1;RW1 5357,8013 5331,8012 5058,8012 5048,8012
 #: note: ein vergessenes Radwegschild?
@@ -1408,7 +1411,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: source_id: INKO_113041
 #: source_id: 2147339528 (bis 8.6.2020) (inaktiv)
 #: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2021-03-03 (mapillary)
+#: last_checked: 2021-03-08 (daf)
 #: check_frequency: 60d
 #: next_check: 2021-10-31
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
@@ -1656,7 +1659,7 @@ Busspur ist immer gültig	RW5; 6460,8688 6449,8807 6449,8845 6445,8934 6445,8949 
 	RW1; 5808,10396 5764,10322
 #: XXX Bauarbeiten (Aufzugeinbau am U-Bhf. Augsburger Str.?), Radspur ist aufgehoben
 #: source_id: 2147345461 (bis 30.09.2021)
-#: last_checked: 2021-01-22
+#: last_checked: 2021-03-08 (mapillary)
 #: next_check: 2021-09-30
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
@@ -2066,7 +2069,9 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 13377,11145 13317,11144 13290,11144
 	RW3; 13449,10262 13369,10337
 Zeichen 237 steht zwischen den Einmündungen Taborstr. und Heckmannufer	RW4; 13369,10337 13449,10262
 	RW3;RW3 13369,10337 13249,10445 13142,10530 13136,10535
-	RW4;RW4 13136,10535 13028,10629 12985,10665
+	RW4; 13136,10535 13028,10629 12985,10665
+	RW4; 12985,10665 13028,10629
+	RW3; 13028,10629 13136,10535
 	RW6;RW6 12608,10294 12729,10515
 	RW6;RW6 12822,10487 12682,10258
 	RW6;RW6 12905,10143 13032,10355 13136,10535
@@ -5219,7 +5224,7 @@ Verbundsteinpflasterradweg	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: confirmed_by: srt
 	RW3;RW3 7733,8023 7783,8035 7824,8056 7838,8085 7859,8252 7899,8332 7956,8408 8078,8772
 #: next_check_id: MITTEL-2019
-#: last_checked: 2021-02-19
+#: last_checked: 2021-03-08 (daf)
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben
 	RW0; 9141,12320 9131,12438 9121,12514
 	RW4; 9131,12438 9141,12320

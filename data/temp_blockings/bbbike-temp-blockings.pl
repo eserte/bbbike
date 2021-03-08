@@ -31900,7 +31900,7 @@ EOF
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-02-13
+#: last_checked: 2021-03-08 (mapillary)
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 EOF

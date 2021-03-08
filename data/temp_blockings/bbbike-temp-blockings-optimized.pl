@@ -3226,7 +3226,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-02-13
+#: last_checked: 2021-03-08 (mapillary)
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 ',
