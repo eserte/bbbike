@@ -31467,13 +31467,19 @@ EOF
 	1::inwork; 19728,3351 19840,3423 19904,3464
 EOF
      },
-     { from  => $isodate2epoch->("2020-10-07 00:00:00"),
-       until => $isodate2epoch->("2020-10-09 23:59:59"),
-       text  => 'Rigaer Str./Liebigstr.: mögliche Sperrungen wegen eines Polizeieinsatzes, 8.10.2020 bis 9.10.2020',
+     { from  => $isodate2epoch->("2021-03-09 13:00:00"),
+       until => $isodate2epoch->("2021-03-13 23:59:59"),
+       text  => 'Rigaer Str./Liebigstr./Bänschstr./Weidenweg: Sperrungen wegen eines Polizeieinsatzes, eventuell ist auch der Radverkehr betroffen, vom 10.03.2021 13:00 Uhr bis 13.03.2021',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: 2147346954
+#: source_id: 2147346955
+#: source_id: 2147346956
+#: source_id: 2147346957
 	2::temp 14266,12446 14133,12482 14091,12494 13991,12522 13905,12374
-	2::temp 13761,12578 13991,12522 14058,12709
+	2::temp 13761,12578 13991,12522 14058,12709 14073,12755 14089,12805 14096,12827
+	2::temp 14058,12709 14188,12664 14319,12629
+	2::temp 13911,12692 14058,12709
 EOF
      },
      { from  => 1602972000, # 2020-10-18 00:00
@@ -32082,7 +32088,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G(wrong),H)
-#: last_checked: 2021-03-06
+#: last_checked: 2021-03-09
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738

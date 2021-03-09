@@ -53,7 +53,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: http://www.infravelo.de/api/v1/project/9020023/
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021, Neubau Radweg)
 #: source_id: 2147343740
-#: last_checked: 2021-03-08
+#: last_checked: 2021-03-09
 #: next_check: 2021-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -310,7 +310,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (Planung 2019)
 #: osm_watch: way id="138431358" version="16" vvv
 #: osm_watch: way id="330786038" version="15" vvv
-#: last_checked: 2021-01-16 vvv
+#: last_checked: 2021-03-09 vvv
 #: check_frequency: 270d vvv
 #: XXX Maßnahme Bsw.6 + Pw.7
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755
@@ -716,7 +716,7 @@ Oberspreestr.: Lückenschluss geplant (Radweg?)	?::projected; 19965,5101 19733,51
 #: XXX Maßnahme Osw.4
 #: source_id: 2147343507
 #: osm_watch: way id="310306841" version="8"
-#: last_checked: 2021-01-10
+#: last_checked: 2021-03-09
 #: check_frequency: 90d
 Siemensstr.: Radfahr- oder Schutzstreifen geplant	?::projected 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 # 
@@ -731,7 +731,7 @@ Wilhelminenhofstr.: Radfahrstreifen auf nördlicher Seite geplant	?::projected; 1
 #: osm_watch: way id="199768813" version="10"
 #: XXX haben die Bauarbeiten was mit der Maßnahme zu tun? (bis Anfang Mai 2018) (laut Bezirkswebsite Ende der Bauarbeiten bis August 2018)
 #: source_id: 2147342044
-#: last_checked: 2021-01-10
+#: last_checked: 2021-03-09
 #: check_frequency: 90d
 Wilhelminenhofstr.: Radfahrstreifen auf nördlicher Seite geplant	?::projected; 17991,6431 17826,6495 17800,6504 17614,6571
 #### END AG Radverkehr Treptow-Köpenick
@@ -887,7 +887,7 @@ Neue Krugallee: Einrichtung einer Radverkehrsanlage geplant	?::projected; 16615,
 Verlängerte Kiehnwerderallee: Weg bis zum Britzer Zweigkanal soll hergestellt werden	?::projected 16633,7434 16633,7434 16813,7117
 # 
 #: XXX Bsw.10 (zusammen mit SOV Abschnitt 2)
-#: last_checked: 2021-01-10
+#: last_checked: 2021-03-09
 #: check_frequency: 360d
 Köpenicker Landstraße - Chris-Gueffroy-Allee	?::projected 16747,6813 16485,6377 16122,6084 15720,5951 15584,5946 15143,5936
 # 
@@ -925,7 +925,7 @@ Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 1
 #: by: http://www.johthal.de/instar-video2.html (Webcam)
 #: osm_watch: way id="216169539" version="7"
 #: osm_watch: way id="319539204" version="14"
-#: last_checked: 2021-02-24
+#: last_checked: 2021-03-09
 #: check_frequency: 60d
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17601,5090 17542,4772 17516,4657
 # 
@@ -1054,7 +1054,7 @@ Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projecte
 # Osw.9 ist vermutlich schon erledigt
 # 
 #: XXX Osw.11
-#: last_checked: 2020-12-12
+#: last_checked: 2021-03-09
 #: check_frequency: 90d
 Nalepastr.: Einrichten einer Radverkehrsanlage auf der östlichen Seite	?::projected; 17614,6571 17555,6680 17514,6754 17459,6854 17352,7051 17286,7173
 # 
@@ -2920,7 +2920,7 @@ Boelckestr./Fritz-Bräuning-Promenade: Zebrastreifen geplant	?::projected 8596,80
 #: last_checked: 2021-02-27
 #: check_frequency: 120d
 Boelckestr./Badener Ring: Zebrastreifen geplant	?::projected 8625,8476 8660,8454 8695,8426
-#: last_checked: 2021-02-24
+#: last_checked: 2021-03-09
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-03-01
 Südostallee/Im Brombeerwinkel: Zebrastreifen geplant	?::projected 17490,5422 17473,5471 17528,5471
@@ -3221,8 +3221,8 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # 
 #: XXX Modersohnstraße (Friedrichshain) Anbindung Am Rudolfplatz in beiden Richtungen: Leitungsbau, Vollsperrung, Fußverkehr frei, Radfahrende müssen absteigen und schieben, vom 09.03.2021 07:00 Uhr bis 31.05.2021 17:00 Uhr
 #: source_id: 2147346950
-#: last_checked: 2021-03-08
-#: next_check: 2021-03-09
+#: last_checked: 2021-03-09
+#: next_check: 2021-03-10
 Modersohnstr./Am Rudolfplatz: Bauarbeiten geplant, Auswirkungen auf den Radverkehr?	?::projected 14011,10812 13896,10851
 # 
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/senat-baut-ab-dem-fruehjahr-die-blumberger-damm-bruecke-in-biesdorf-neu_a297317 (neue Brücke ab 2025)
@@ -4601,7 +4601,7 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
 #: osm_watch: node id="6419849081" version="2"
-#: last_checked: 2020-12-11 (mapillary)
+#: last_checked: 2020-12-19 (mapillary)
 #: check_frequency: 90d
 #: priority: #D
 Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen ausgebaut werden	?::projected 7763,20124 7790,20132 7802,20110
@@ -4623,7 +4623,7 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/gehweg-und-radweg-im-bau_a302442
 #: XXX während der Bauarbeiten Einbahnstraßenregelung --- was wird das für den Radverkehr bedeuten? -> siehe temp blockings
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2021-03-06
+#: last_checked: 2021-03-09
 #: check_frequency: 90d
 #: next_check: 2021-09-30
 Karlshorster Str.: Bau von Radwegen	?::projected 15279,10862 15272,10790 15261,10738
@@ -4632,7 +4632,7 @@ Karlshorster Str.: Bau von Radwegen	?::projected 15279,10862 15272,10790 15261,1
 #: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (nicht mehr aktiv)
 #: source_id: 2147345383 (bis 06.03.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun? -> nein, das ist an der Saganer Str.) (nicht mehr aktiv)
 #: source_id: 2147345563 (bis 24.04.2020, aber keine Anzeichen für Bauarbeiten) (nicht mehr aktiv)
-#: last_checked: 2021-03-01
+#: last_checked: 2021-03-09
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
 #: last_checked: 2021-03-01
@@ -5316,6 +5316,7 @@ Bamihlstr.: Einbahnstraßenregelung geplant	?::projected -2563,17004 -2585,16900 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.990003.php (Info-Café)
 #: by: https://abendblatt-berlin.de/2020/09/13/gueterbahnhof-koepenick-wird-stadtquartier/
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1050632.php
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1061893.php
 #: last_checked: 2020-09-15
 #: next_check: 2022-03-01
 Güterbahnhof Köpenick: hier entsteht die Ostumfahrung Bahnhofstraße	?::projected 23327,5817 23244,6154 22857,6155
@@ -6438,6 +6439,9 @@ Gewerbegebiet Glienicker Weg: hier enstehen Straßen, evtl. eine Bahnunterführung
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-auslegung/artikel.632231.php
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-auslegung/unterlagen/bebauungsplan_8-19b-1_fruehzeitige_beteiligung-s1.pdf
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/ehemaliger-g%C3%BCterbahnhof-neuk%C3%B6lln.432/page-4#post-10252
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1061753.php
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-fuer-meinberlin/bebauungsplan.1059521.php
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-fuer-meinberlin/unterlagen/karten-und-plaene/8-19b-1_pl.pdf (kein Weg erkennbar)
 #: last_checked: 2021-01-29
 #: check_frequency: 720d
 ehemaliger Güterbahnhof Neukölln: Radweg geplant	?::projected 12704,6920 12696,6963 13058,7052
@@ -6953,7 +6957,7 @@ Bebauungsplan 3-41: Straßen werden entstehen; genaue Lage, Qualität?	?::projecte
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-strassenbahnstrecke-im-suedosten-von-berlin-soll-am-31-oktober-oeffnen-li.140686 (2023?)
 #: by: https://www.radbezirk-lichtenberg.de/freie-fahrt-fuer-die-verkehrswende-am-ostkreuz/ (Demo (!))
 #: XXX Provisorium (Fußgängerschutztunnel) in Bau, es wird vermutlich vier Drängelgitter geben (an beiden Enden, sowie zwei dazwischen)
-#: last_checked: 2021-03-06
+#: last_checked: 2021-03-09
 #: check_frequency: 10d
 #: next_check: 2024-06-15
 Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15052,10920 14888,10959
