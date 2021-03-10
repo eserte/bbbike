@@ -2298,8 +2298,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-03-04
-#: check_frequency: 30d
+#: last_checked: 2021-03-10
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
 ',
@@ -2787,7 +2787,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-05
+#: last_checked: 2021-03-10
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3382,8 +3382,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
-#: also_indoor: traffic (G(wrong),H)
-#: last_checked: 2021-03-09
+#: also_indoor: traffic (G,H)
+#: last_checked: 2021-03-10
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3416,6 +3416,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Mehrower Str. (Ahrensfelde): Bauarbeiten, gesperrt, vom 08.03.2021 bis 09.04.2021',
          'type' => 'gesperrt',
          'until' => 1618005600
+       },
+       {
+         'data' => '#: by: rbb
+#: XXX Bis wann geht die Sperrung? Hat die Sperrung etwas mit den Bauarbeiten in der Bahnhofstr. zu tun? Sind Radfahrer betroffen?
+	q4::inwork 10513,-1954 10511,-1985 10508,-2006 10453,-2133
+',
+         'from' => undef,
+         'id' => 3341,
+         'text' => 'Riedingerstr.: Sperrung der Fahrbahn',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

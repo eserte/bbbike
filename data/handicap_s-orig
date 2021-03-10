@@ -34,9 +34,15 @@
 # 
 #: next_check_id: PLANSTRASSEC-2019
 #: osm_watch: way id="491906864" version="4"
-#: last_checked: 2021-02-10
+#: last_checked: 2021-02-12 (mapillary)
 #: check_frequency: 30d
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q3::inwork 12926,11224 12848,11093
+# 
+#: source_id: 2147346950 (bis 31.5.2021)
+#: last_checked: 2021-03-10
+#: next_check: 2021-05-31
+#: valid: -20210531
+Am Rudolfplatz: etwa 35m Fahrbahn vor der Modersohnstr. gesperrt, Ausweichen auf Gehweg	q3::inwork 14011,10812 13896,10851
 # 
 # REMOVED (Fahrräder kommen durch) --- #: next_check_id: GUBENER-2019 --- #: priority: #A --- #: last_checked: 2019-07-03 --- #: check_frequency: 2d --- Gubener Str.: Fahrbahn wegen Asphaltierungsarbeiten Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13326,12056 13243,12222
 # REMOVED (Durchfahrt möglich) --- #: last_checked: 2019-05-12 --- #: check_frequency: 30d --- Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
@@ -147,8 +153,8 @@ Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork;
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
-#: XXX laut osm nicht mehr highway=construction --- Fahrbahn ist aber nur im westlichen Abschnitt freigegeben (Stand Februar 2021)
-#: osm_watch: way id="719023968" version="5"
+#: XXX Fahrbahn ist nur im westlichen Abschnitt freigegeben (Stand Februar 2021)
+#: osm_watch: way id="719023968" version="6"
 #: last_checked: 2021-02-21
 #: check_frequency: 60d
 Henriette-Lustig-Str.: nur der sehr enge Gehweg sowie 50m der Fahrbahn sind freigegeben	q4::inwork 21476,5048 21611,5119
