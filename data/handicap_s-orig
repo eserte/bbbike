@@ -39,7 +39,7 @@
 (Planstraﬂe C): Fahrbahn durch Bauz‰une abgesperrt, Ausweichen auf Gehweg mˆglich	q3::inwork 12926,11224 12848,11093
 # 
 #: source_id: 2147346950 (bis 31.5.2021)
-#: last_checked: 2021-03-10
+#: last_checked: 2021-03-11
 #: next_check: 2021-05-31
 #: valid: -20210531
 Am Rudolfplatz: etwa 35m Fahrbahn vor der Modersohnstr. gesperrt, Ausweichen auf Gehweg	q3::inwork 14011,10812 13896,10851
@@ -128,6 +128,11 @@ Hermann-Stˆhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 (Notweg Bahn¸bergang Bahnhofstr.): Fuﬂg‰nger, f¸r Radfahrer frei	q3 10231,-2159 10215,-2170 10209,-2171 10198,-2143 10096,-2137
 # 
 ### Treptow ###
+# 
+#: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
+#: last_checked: 2021-03-11
+#: check_frequency: 60d
+(Hoffmannstr. - Uferweg an den Treptowers): Baustraﬂe, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/baumassnahmen-fuer-die-a100-gestartet_a289900 (hier: erste Bauphase bis Ende 2021, Bauende bis Juni 2023)
@@ -917,10 +922,12 @@ Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11231
 # 
 #: next_check_id: NKZ-2020
 #: XXX zurzeit Bauarbeiten, nur der Gehweg ist offen (alten Eintrag danach wieder aktivieren); vor Corona-Zeiten gab's auﬂerdem einen groﬂz¸gigen Restaurantbereich
-#: last_checked: 2021-02-19
+#: last_checked: 2021-02-19 vvv
 (Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr	q2 11291,10438 11317,10485
 # REMOVED (Originaleintrag) --- (Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr	q2 11317,10485 11344,10507
 (Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr, Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11317,10485 11344,10507
+#: last_checked ^^^
+#: last_checked: 2021-02-19
 # REMOVED (Originaleintrag) --- (Zufahrt am NKZ): Fuﬂg‰nger, un¸bersichtlich	q3 11344,10507 11392,10520 11411,10515
 (Zufahrt am NKZ): Fuﬂg‰nger, un¸bersichtlich, Bauarbeiten, Ger¸st	q4::inwork 11344,10507 11392,10520 11411,10515
 # 
@@ -3940,7 +3947,7 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5334,
 Apeldorner Weg: Fuﬂg‰nger, Bordstein	q2+ 3822,8718 3858,8786 3952,8980
 M¸nstersche Str.: Fuﬂg‰nger	q2 3840,9683 3698,9624
 (Hoffmannstr. - Puschkinallee): Fuﬂg‰nger	q1 14077,10016 13999,9842
-(Hoffmannstr. - Uferweg an den Treptowers): Fuﬂg‰nger	q1 14077,10016 14116,10149 14126,10176
+# tempor‰r entfernt: (Hoffmannstr. - Uferweg an den Treptowers): Fuﬂg‰nger	q1 14077,10016 14116,10149 14126,10176
 August-Lindemann-Str.: Fuﬂg‰nger	q3 14355,12752 14360,12792
 (Jagdschloﬂ Grunewald - Umgehungschaussee): Fuﬂg‰nger, Hundeauslaufgebiet	q2 878,6651 884,6701 1024,6898 1066,7093 1125,7184
 (Uferweg am Grunewaldsee): Fuﬂg‰nger, Hundeauslaufgebiet	q2 1251,7429 1197,7457 1168,7473 1089,7496 1007,7334 928,7252 794,6958 762,6906 682,6865 574,6842 524,6795 478,6738 340,6598

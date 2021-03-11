@@ -31043,7 +31043,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
 #: also_indoor: traffic (G)
-#: last_checked: 2021-02-20
+#: last_checked: 2021-03-11
 	q4::inwork; 14490,10610 14541,10735
 # REMOVED (hier keine Anzeichen für eine Einbahnstraßenregelung) ---	q4::inwork; 14541,10735 14675,10693
 EOF
