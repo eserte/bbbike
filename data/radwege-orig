@@ -397,7 +397,7 @@ neu asphaltiert, relativ breit	RW1; 10501,11056 10256,11160 10020,11262
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
-#: last_checked: 2021-03-08 vvv
+#: last_checked: 2021-03-12 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -631,7 +631,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2021-02-26 vvv
+#: last_checked: 2021-03-12 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
@@ -1445,10 +1445,10 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: osm_watch: way id="882672444" version="1"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2021-03-02 vvv
+#: last_checked: 2021-03-12 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2021-03-11 vvv
-# REMOVED --- #: next_check: 2023-06-30 vvv
+# REMOVED --- #: next_check: 2021-03-11 vvv
+#: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
 provisorischer getrennter Rad- und Gehweg	RW2; 10625,12206 10659,12259 10675,12280
@@ -1472,7 +1472,9 @@ temporäre Führung als Bürgersteigradweg	RW1; 10878,12560 10954,12635
 # wieder herstellen:	RW4; 10878,12560 10954,12635
 	RW4; 10954,12635 11057,12715
 temporär	RW4; 10953,12638 10876,12563 10803,12470 10738,12364
-Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
+# REMOVED (hier mittlerweile getrennte Rad- und Busspuren) --- Busspur gilt Mo-Fr 6-20 Uhr
+	RW4; 10625,12206 10574,12131
+# REMOVED (hier weder Rad- noch Busspur) --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10574,12131 10512,12039
 	RW3; 11057,12715 11105,12764 11134,12793
 	RW3; 11134,12793 11105,12764
 	RW4; 11055,12717 10953,12638
@@ -2004,7 +2006,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2021-02-19
+#: last_checked: 2021-03-12
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -2109,7 +2111,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: http://www.infravelo.de/projekt/lichtenberger-strasse-1/
 #: source_id: 2147346610
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-02-26 vvv
+#: last_checked: 2021-03-12 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
 #: osm_watch: way id="284761029" version="16"
 Radspur hinter den parkenden Autos	RW3; 12006,12464 11920,12266
@@ -2794,6 +2796,7 @@ neu asphaltiert	RW2; 22483,11261 22326,11266 22242,11269
 #: next_check_id: PILGRAMER-2019
 # REMOVED --- #: XXX provisorische Wegführung während der Bauarbeiten vvv --- #: next_check: 2021-01-05 vvv --- #: valid: -20210105 vvv --- gemeinsamer Geh- und Radweg	RW2; 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 --- gemeinsamer Geh- und Radweg	RW2;RW8 25143,10961 25139,11104 25138,11215 --- #: valid ^^^
 #: XXX wobei es nach den Arbeiten möglicherweise ganz anders aussehen wird
+#: next_check: 2021-05-15
 # REMOVED --- #: valid: 20210105-
 Verbundsteinpflaster	RW2;RW1 25139,11104 25138,11215
 # REMOVED --- #: next_check ^^^ --- #: XXX ^^^

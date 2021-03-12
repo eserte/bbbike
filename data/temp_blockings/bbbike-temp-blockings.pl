@@ -27704,6 +27704,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/der-gehweg-ist-jetzt-fertig_a258259
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-auf-der-schoenstrasse-gehen-weiter_a261160
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1058179.php (Sperrung der Kreuzung Schönstraße/Paul-Oestreich-Straße, bis 26. März 2021)
+#: by: https://www.berliner-woche.de/weissensee/c-verkehr/einmuendung-komplett-gesperrt_a303306
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
 #: also_indoor: traffic (G)
 #: priority: #B
@@ -27934,7 +27935,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2021-02-19
+#: last_checked: 2021-03-12
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -31468,7 +31469,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-03-09 13:00:00"),
-       until => $isodate2epoch->("2021-03-13 23:59:59"),
+       until => 1615579406, # $isodate2epoch->("2021-03-13 23:59:59"),
        text  => 'Rigaer Str./Liebigstr./Bänschstr./Weidenweg: Sperrungen wegen eines Polizeieinsatzes, eventuell ist auch der Radverkehr betroffen, vom 10.03.2021 13:00 Uhr bis 13.03.2021',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -31840,14 +31841,18 @@ EOF
 	2::inwork 18836,3611 18943,3508
 EOF
      },
-     { from  => 1609650000, # 2021-01-03 06:00
-       until => $isodate2epoch->("2021-01-22 15:00:00"), # 1611590400, # 2021-01-25 17:00
-       text  => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn Richtung Süden gesperrt, vom 04.01.2021 06:00 Uhr bis 22.01.2021 15:00 Uhr ',
+     { from  => $isodate2epoch->("2021-03-08 05:00:00"), # 1609650000, # 2021-01-03 06:00
+       until => $isodate2epoch->("2021-03-31 17:00:00"), # 1611590400, # 2021-01-25 17:00
+       text  => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn in beiden Richtungen gesperrt, vom 09.03.2021 05:00 Uhr bis 31.03.2021 17:00 Uhr',
        type  => 'handicap',
-       source_id => '2147346756',
+       source_id => '2147346756', # inaktiv
        data  => <<EOF,
+#: source_id: 2147346949
+#: by: wosch
 # REMOVED (genau so) --- #: XXX genaue Lage der Baustelle? --- #: last_checked: 2021-01-09 --- #: next_check: 2021-01-04
-	q4::inwork; 9298,12765 9303,12718 9313,12662 9314,12652
+# REMOVED ---	q4::inwork 9298,12765 9303,12718
+	q4::inwork 9303,12718 9313,12662 9314,12652
+	q3::inwork; 9330,12538 9314,12652
 EOF
      },
      { from  => 1609668000, # 2021-01-03 11:00
@@ -32139,6 +32144,19 @@ EOF
 #: by: rbb
 #: XXX Bis wann geht die Sperrung? Hat die Sperrung etwas mit den Bauarbeiten in der Bahnhofstr. zu tun? Sind Radfahrer betroffen?
 	q4::inwork 10513,-1954 10511,-1985 10508,-2006 10453,-2133
+EOF
+     },
+     { from  => 1615676400, # 2021-03-14 00:00
+       until => 1621115999, # 2021-05-15 23:59
+       text  => 'Pilgramer Str.: Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, ab 15. März 2021 bis ca. 15. Mai 2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1063839.php',
+       data  => <<EOF,
+#: next_check_id: PILGRAMER-2019
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381
+#: XXX wie sehr sind Radfahrer betroffen?
+#: next_check: 2021-03-15
+	q4::inwork 25150,10562 25149,10695 25149,10731 25148,10769 25145,10841
 EOF
      },
     );

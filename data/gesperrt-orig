@@ -3286,7 +3286,7 @@ Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork
 # 
 #: next_check_id: CORONA-2020
 #: XXX w‰hrend der Corona-Krise
-#: last_checked: 2020-11-14
+#: last_checked: 2021-02-19
 #: check_frequency: 120d
 Alexanderufer - CharitÈ: Tor ist wegen Corona-Beschr‰nkungen geschlossen	2 8371,13399 8363,13402 8356,13404
 # 
@@ -3509,7 +3509,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
-#: last_checked: 2021-03-02
+#: last_checked: 2021-03-12
 #: check_frequency: 60d
 J¸denstr.: ‹berqueren der Grunerstr. wegen Bauz‰unen nicht mehr mˆglich	2::inwork 10805,12468 10803,12470
 # 
@@ -3623,7 +3623,7 @@ W‰scherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tats‰chlichen Seite 366 sowie 373)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/virtuelle-stadtwerkstatt-informiert-ueber-bauprojekte-in-berlins-historischer-mitte_a292967
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne ‹berquerungsmˆglichkeit an der k¸nftigen Straﬂe "Molkenmarkt"
-#: last_checked: 2021-03-02
+#: last_checked: 2021-03-12
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingez‰unt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
@@ -3639,7 +3639,7 @@ Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 #: next_check_id: TACHELES-2020
 #: XXX Wann wird die Einbahnstraﬂenregelung wieder aufgehoben? (vermutlich zusammenh‰ngend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2021-03-02 (mapillary)
+#: last_checked: 2021-03-12
 #: check_frequency: 60d
 Johannisstr.: Einbahnstraﬂe	1s:q3:inwork 9588,13174 9385,13174
 # 
@@ -3837,7 +3837,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9207,11880 9138,11872
 # 
-#: last_checked: 2021-02-13
+#: last_checked: 2021-03-12
 Mauerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: osm_watch: way id="496270260" version="6" brb
@@ -3984,19 +3984,13 @@ Heino-Schmieden-Weg: grˆﬂtenteils noch wegen Bauarbeiten gesperrt	2::inwork 2072
 # 
 # REMOVED --- #: last_checked: 2017-09-20 --- #: check_frequency: 14d --- Gitschiner Str./Lobeckstr.: Bauarbeiten, ‹berqueren des Mittelstreifens nicht mˆglich	3nocross::inwork 10122,10294 10363,10303 10605,10312
 # REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straﬂe komplett gesperrt	2::inwork 19169,1249 19140,1137
-# 
-#: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2021-02-13 vvv
-# REMOVED --- #: check_frequency: 90d vvv
-#: check_frequency: 30d vvv
+# REMOVED --- #: next_check_id: SCHINKELPLATZ-2014 --- #: last_checked: 2021-02-13 vvv
+# REMOVED --- #: check_frequency: 90d vvv --- #: check_frequency: 30d vvv
 # REMOVED (offen) --- #: osm_watch: way id="54781811" version="9" --- Schinkelplatz: Fahrbahn komplett gesperrt	2::inwork 9990,12404 9996,12372
 # REMOVED --- Schinkelplatz: Einbahnstraﬂe	1s:q3:inwork 9990,12404 9996,12372
-#: osm_watch: way id="4611693" version="18"
-Niederlagstr.: Einbahnstraﬂe	1s:q3:inwork 9972,12184 9959,12281
+# REMOVED (hier auch nicht mehr) --- #: osm_watch: way id="4611693" version="18" --- Niederlagstr.: Einbahnstraﬂe	1s:q3:inwork 9972,12184 9959,12281
 # REMOVED (hier nicht mehr) --- Schinkelplatz: wegen Bauarbeiten gesperrt	2::inwork 10010,12275 10058,12290
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- : check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: RATHAUSWEDDING-2017 --- #: last_checked: 2018-04-10 --- #: check_frequency: 30d --- Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
 # REMOVED --- #: next_check_id: WILTBERGSTR-2017 --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.741808.php (weiterhin Einbahnstraﬂe) --- #: by: https://www.berliner-woche.de/buch/c-verkehr/grosse-umleitung-ist-aufgehoben_a183659 --- #: source_id: 2147339182 --- #: osm_watch: way id="10948718" version="21" --- #: priority: #A --- #: last_checked: 2018-04-28 --- #: next_check: 2019-02-25 --- #: valid: -20190225 --- Karower Str.: tempor‰re Einbahnstraﬂenregelung	1s:q3:inwork 16593,25640 16632,25512 16669,25373
 # REMOVED (frisch asphaltiert) --- #: last_checked: 2017-10-08 vvv --- #: check_frequency: 60d vvv --- # REMOVED --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7940,14447 --- #: XXX laut http://www.openstreetmap.org/note/1117960 wird der Weg "nach den Leitungsarbeiten wieder hergerichtet werden" --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7940,14447 7889,14519 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -4156,7 +4150,7 @@ Niederlagstr.: Durchfahrt gesperrt	2::inwork 9934,12420 9943,12364
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="18"
 #: also_indoor: traffic
-#: last_checked: 2021-02-19
+#: last_checked: 2021-03-12
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
@@ -4226,7 +4220,7 @@ M¸hlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: XXX Johannisplatz
 #: XXX Aaron-Bernstein-Platz
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2021-02-19
+#: last_checked: 2021-03-12
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
@@ -4259,7 +4253,7 @@ Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10063,12438
 #: by: https://www.berliner-woche.de/mitte/c-bauen/neubau-fuer-bundestag-soll-zum-jahresende-fertig-sein_a298094
 #: XXX wird nach den Bauarbeiten die Einbahnstraﬂenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="5"
-#: last_checked: 2021-02-19
+#: last_checked: 2021-03-12
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
@@ -4490,7 +4484,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.deutsches-architekturforum.de/thread/3898-erweiterungsbau-bundesinnenministerium-im-bau/?postID=659637#post659637
 #: osm_watch: way id="257432926" version="6"
 #: XXX wegen Bauarbeiten gesperrt (nur f¸r Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird f¸r ˆffentlichen Autoverkehr gesperrt)
-#: last_checked: 2020-11-07
+#: last_checked: 2021-03-12
 #: check_frequency: 150d
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754
 # REMOVED (w‰hrend der Bauarbeiten vermutlich aufgehoben; auﬂerdem Gehweg f¸r Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731

@@ -2142,6 +2142,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/der-gehweg-ist-jetzt-fertig_a258259
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-auf-der-schoenstrasse-gehen-weiter_a261160
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1058179.php (Sperrung der Kreuzung Schönstraße/Paul-Oestreich-Straße, bis 26. März 2021)
+#: by: https://www.berliner-woche.de/weissensee/c-verkehr/einmuendung-komplett-gesperrt_a303306
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht\'s nur auf dem Gehweg weiter
 #: also_indoor: traffic (G)
 #: priority: #B
@@ -2193,7 +2194,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2021-02-19
+#: last_checked: 2021-03-12
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -3067,22 +3068,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1619794800
        },
        undef,
-       {
-         'data' => '#: source_id: 2147346954
-#: source_id: 2147346955
-#: source_id: 2147346956
-#: source_id: 2147346957
-	2::temp 14266,12446 14133,12482 14091,12494 13991,12522 13905,12374
-	2::temp 13761,12578 13991,12522 14058,12709 14073,12755 14089,12805 14096,12827
-	2::temp 14058,12709 14188,12664 14319,12629
-	2::temp 13911,12692 14058,12709
-',
-         'from' => 1615291200,
-         'id' => 3286,
-         'text' => 'Rigaer Str./Liebigstr./Bänschstr./Weidenweg: Sperrungen wegen eines Polizeieinsatzes, eventuell ist auch der Radverkehr betroffen, vom 10.03.2021 13:00 Uhr bis 13.03.2021',
-         'type' => 'gesperrt',
-         'until' => 1615676399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3220,7 +3206,21 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: 2147346949
+#: by: wosch
+# REMOVED (genau so) --- #: XXX genaue Lage der Baustelle? --- #: last_checked: 2021-01-09 --- #: next_check: 2021-01-04
+# REMOVED ---	q4::inwork 9298,12765 9303,12718
+	q4::inwork 9303,12718 9313,12662 9314,12652
+	q3::inwork; 9330,12538 9314,12652
+',
+         'from' => 1615176000,
+         'id' => 3314,
+         'source_id' => '2147346756',
+         'text' => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn in beiden Richtungen gesperrt, vom 09.03.2021 05:00 Uhr bis 31.03.2021 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1617202800
+       },
        undef,
        undef,
        undef,
@@ -3427,6 +3427,20 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Riedingerstr.: Sperrung der Fahrbahn',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: PILGRAMER-2019
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381
+#: XXX wie sehr sind Radfahrer betroffen?
+#: next_check: 2021-03-15
+	q4::inwork 25150,10562 25149,10695 25149,10731 25148,10769 25145,10841
+',
+         'from' => 1615676400,
+         'id' => 3342,
+         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1063839.php',
+         'text' => 'Pilgramer Str.: Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, ab 15. März 2021 bis ca. 15. Mai 2021',
+         'type' => 'handicap',
+         'until' => 1621115999
        }
      
 );
