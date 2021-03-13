@@ -335,7 +335,7 @@ EOF
     # repository for agrep
     if ($opt{dist} eq 'debian') {
 	$dockerfile .= <<EOF;
-RUN echo "deb http://ftp.de.debian.org/debian/ $opt{distver} non-free" > /etc/apt/sources.list.d/$opt{distver}-non-free.list
+RUN echo "deb http://ftp.debian.org/debian/ $opt{distver} non-free" > /etc/apt/sources.list.d/$opt{distver}-non-free.list
 EOF
     } elsif ($opt{dist} eq 'ubuntu') {
 	if ($opt{distver} =~ m{^(precise|trusty)$}) {

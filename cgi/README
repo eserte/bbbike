@@ -95,13 +95,11 @@ official debian repository and in a private bbbike.de repository.
 
 To enable these repositories:
 - add "non-free" to every debian repository in /etc/apt/sources.list
-  (i.e. change a line
-    deb http://ftp.de.debian.org/debian/ squeeze main
-   to
-    deb http://ftp.de.debian.org/debian/ squeeze main non-free
+  (i.e. add a line
+    deb http://ftp.debian.org/debian/ buster non-free
   )
 - add the following line to /etc/apt/sources.list:
-    deb http://mydebs.bbbike.de squeeze main
+    deb http://mydebs.bbbike.de buster main
 
 Then execute as root:
 
