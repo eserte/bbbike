@@ -3120,20 +3120,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1617202800
        },
        undef,
-       {
-         'data' => '#: by: https://www.verkehrslage.de/Berlin/Baustellen/3
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (G)
-#: last_checked: 2021-02-27
-#: check_frequency: 14d
-	q4::inwork 12997,6290 13027,6168
-',
-         'from' => undef,
-         'id' => 3299,
-         'text' => 'Rungiusstr.: Bauarbeiten zwischen Bürgerstr. und Jahnstr., Fahrbahn gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3211,13 +3198,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: wosch
 # REMOVED (genau so) --- #: XXX genaue Lage der Baustelle? --- #: last_checked: 2021-01-09 --- #: next_check: 2021-01-04
 # REMOVED ---	q4::inwork 9298,12765 9303,12718
-	q4::inwork 9303,12718 9313,12662 9314,12652
 	q3::inwork; 9330,12538 9314,12652
+	q4::inwork; 9314,12652 9313,12662 9303,12718
 ',
          'from' => 1615176000,
          'id' => 3314,
          'source_id' => '2147346756',
-         'text' => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn in beiden Richtungen gesperrt, vom 09.03.2021 05:00 Uhr bis 31.03.2021 17:00 Uhr',
+         'text' => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 09.03.2021 05:00 Uhr bis 31.03.2021 17:00 Uhr',
          'type' => 'handicap',
          'until' => 1617202800
        },

@@ -39,7 +39,7 @@
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q3::inwork 12926,11224 12848,11093
 # 
 #: source_id: 2147346950 (bis 31.5.2021)
-#: last_checked: 2021-03-11
+#: last_checked: 2021-03-13
 #: next_check: 2021-05-31
 #: valid: -20210531
 Am Rudolfplatz: etwa 35m Fahrbahn vor der Modersohnstr. gesperrt, Ausweichen auf Gehweg	q3::inwork 14011,10812 13896,10851
@@ -605,7 +605,7 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2021-02-20 vvv
+#: last_checked: 2021-03-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
@@ -683,7 +683,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: osm_watch: way id="585753318" version="8"
 #: osm_watch: way id="71392596" version="13"
 #: also_indoor: traffic
-#: last_checked: 2021-03-02 vvv
+#: last_checked: 2021-03-13 vvv
 #: check_frequency: 60d
 #: next_check: 2021-06-30
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
@@ -1678,7 +1678,7 @@ Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14798,12502 15005,12443
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Bouchéstr.: Bodenschwellen	q0 13642,9624 13865,9866
 #: XXX_prog: für Anhänger relevant (q1 oder so)
-Bouchéstr.: eine Bodenschwelle	q0 13489,9456 13357,9313
+Bouchéstr.: zwei Bodenschwellen	q0- 13489,9456 13357,9313
 #: XXX_prog: für Anhänger relevant (q2 oder so)
 Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
 #: XXX_prog: für Anhänger relevant (q2 oder so)
