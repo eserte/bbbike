@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.62;
+$VERSION = 1.63;
 
 use vars qw(%images);
 
@@ -196,11 +196,11 @@ sub register {
 	  allmaps_cb => sub { showmap_url_mapillary(@_) },
 	  ($images{Mapillary} ? (icon => $images{Mapillary}) : ()),
 	};
-    $main::info_plugins{__PACKAGE__ . 'OpenStreetCam'} =
-	{ name => 'OpenStreetCam',
-	  callback => sub { showmap_openstreetcam(@_) },
-	  callback_3_std => sub { showmap_url_openstreetcam(@_) },
-	  ($images{OpenStreetCam} ? (icon => $images{OpenStreetCam}) : ()),
+    $main::info_plugins{__PACKAGE__ . 'KartaView'} =
+	{ name => 'KartaView',
+	  callback => sub { showmap_kartaview(@_) },
+	  callback_3_std => sub { showmap_url_kartaview(@_) },
+	  ($images{KartaView} ? (icon => $images{KartaView}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . 'BerlinerLinien'} =
 	{ name => 'berliner-linien.de (VBB)',
@@ -544,32 +544,31 @@ gg==
 EOF
     }
 
-    if (!defined $images{OpenStreetCam}) {
+    if (!defined $images{KartaView}) {
 	# Created with:
-	#    lwp-request https://openstreetcam.org/favicon-16x16.png | base64
-	$images{OpenStreetCam} = $main::top->Photo
+	#    curl -k https://kartaview.org/favicon-16x16.png | base64
+	# (certificate problems with lwp-request and curl without -k)
+	$images{KartaView} = $main::top->Photo
 	    (-format => 'png',
 	     -data => <<EOF);
-iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABsFBMVEUAAAAOAAAIAAAVAAAP
-AAEVAAAbHB8bHB8bHB8UFBoVExgZHSIbJi0cJi0YHSMUEhgZFhcbHB8bHB8ZGh4jJSQ4VFNMW0kd
-IygbGx0bHB8bHB8bHB8bGx0cJiwhVGsfU2wbHB8aFhcaFhcbISYnLi0oLiwaICYWAAAFAAYCAAcP
-AAA4e40vjK4nibNXhnwbHB8aGx4sLymAlGat0pOt2Z2Pz61XvMyo15+Vy6EqeJccKjIbGx4bHB4a
-IShRhoO125e93JG825C825G22ZSy2JZavMgqreUleJwcIicbGhwgTWEtqtx1xbm725G/3I+o1Zw5
-sNoqrOMrqd4gTGEbHiElep4prudKttGv15iq1Zt3xbdlv8Exrt4rrOIrr+UbHSEcJCoojrorruUs
-rOJhvsSa0KNVusopq+Mojrkoj7orruRZu8iNzKtrwb4vreAbHiImfKGKy6y625KHyq4hUGUrqt8q
-rOJ+x7O+3JCWz6Yxrt8qqt8hUGYcJCkmfaNLttCt1pmSzqkwsOIbGx0dLTYrquAqruZpwsG63JSk
-1qFLtc0lfaNyqJKVtH9GiJH///97pjWBAAAAK3RSTlMAAAAAAAIJDw4SQ4SlpYRDErLLy9Dy8tDL
-v9fW1tv39xYaT5Ozs5MBBgYBL/ZuuAAAAAFiS0dEj/UCg/kAAAAHdElNRQfhDAYNKBsutyRPAAAB
-AElEQVQY02NgAAFGJlZWJkYwk4GNnZ2Dk4ubh5ePX4CDnZ2NQVBISFhEVFtHV09MXEJISJBBX9/A
-0MjYxNTM3MLSylpfn0HfxtbO3sHRydnF1c3dwwYo4Onl7ePk6+TnHxAYFOwJFAgJDQuPcIyMio6J
-jQuN12ewTkhMSk5JTUtPj41NykiwBgpkZsXGZufk5qXHZmUCBfTzC5JiY5MLi4rDY5MK8kGGlpTG
-xpaVV/hVVlXXgAy1rq1Lig2sb/BrbKqrtQYK6De31LW2tXd0dnW3NAMdJiklLSMrV9fT2ycvKyMt
-JcnAoaCgoKikrKKqpqQIZHJAvMysrqGpxQJmAgCiFz5y6dOefAAAACV0RVh0ZGF0ZTpjcmVhdGUA
-MjAxNy0xMi0wNlQxMzo0MDoyNyswMTowMPLAlXAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMTIt
-MDZUMTM6NDA6MjcrMDE6MDCDnS3MAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IM
-CHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoX
-EXTyQjWVAAAAAElFTkSuQmCC
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAAFzUkdC
+AK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAALpQTFRF
+DB0uCxwtCxwuFic3GCg4ChssFSY2CRssFCQ1o6mwrLK4Fyg4Lj1MjZWdw8fLLj1LESIymaGooqmv
+NUNRz9LV////ztLVECEyEyQ0ECExpKux/f7+3uDi/v7+pKqxDyAxKDdG3uDjy8/SLz5My8/TJzdG
+Lz1M5ujqsLW7DR4vsba8Gio6x8vP8fLzkpqhkpqiaHN99vf3gouU9/f49vb3gYmSg4yU+Pj59PX1
+e4SNEiIzfYaPcXuFDx8w3kLWyQAAAAFiS0dEFeXY+aMAAAAJcEhZcwAACxMAAAsTAQCanBgAAACY
+SURBVBjTjY7ZFoIwDEQbsLiCVYyK1hUFK6Dgvv7/b1ktaB+dh5zMnEzOJUQTwG83DDnMUmEpWBaU
+K9VaXd3Qhu04dpO12uYnoG4Hpbpur68K3gCHnI9wPMkL0xnOfX+BfElVEIS4EmKNYaACiGJMNtsE
+4yjnoGn2fpqltABkuz3i4ci+oMBO58vV08Dhdn88NS8TQQzyp17ulwtj5z0inQAAACV0RVh0ZGF0
+ZTpjcmVhdGUAMjAyMC0xMC0yMVQxMTowMDo0MCswMDowMNd8ausAAAAldEVYdGRhdGU6bW9kaWZ5
+ADIwMjAtMTAtMjFUMTE6MDA6NDArMDA6MDCmIdJXAAAARnRFWHRzb2Z0d2FyZQBJbWFnZU1hZ2lj
+ayA2LjcuOC05IDIwMTQtMDUtMTIgUTE2IGh0dHA6Ly93d3cuaW1hZ2VtYWdpY2sub3Jn3IbtAAAA
+ABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABh0RVh0VGh1bWI6OkltYWdlOjpo
+ZWlnaHQAMTkyDwByhQAAABd0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAxOTLTrCEIAAAAGXRFWHRU
+aHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE2MDMyNzgw
+NDBt1/UOAAAAD3RFWHRUaHVtYjo6U2l6ZQAwQkKUoj7sAAAAVnRFWHRUaHVtYjo6VVJJAGZpbGU6
+Ly8vbW50bG9nL2Zhdmljb25zLzIwMjAtMTAtMjEvYWM0YzUxNTIxZmI3OWVmOTljMjQ2NjliMTg3
+NjE5NzUuaWNvLnBuZ/8pIS0AAAAASUVORK5CYII=
 EOF
     }
 
@@ -1220,19 +1219,19 @@ sub show_mapillary_menu {
 }
 
 ######################################################################
-# OpenStreetCam
+# KartaView (former OpenStreetCam)
 
-sub showmap_url_openstreetcam {
+sub showmap_url_kartaview {
     my(%args) = @_;
     my $px = $args{px};
     my $py = $args{py};
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "https://www.openstreetcam.org/map/@%s,%s,%dz", $py, $px, $scale;
+    sprintf "https://kartaview.org/map/@%s,%s,%dz", $py, $px, $scale;
 }
 
-sub showmap_openstreetcam {
+sub showmap_kartaview {
     my(%args) = @_;
-    my $url = showmap_url_openstreetcam(%args);
+    my $url = showmap_url_kartaview(%args);
     start_browser($url);
 }
 
