@@ -46,10 +46,11 @@ use BBBikeXS;
 use Getopt::Long;
 use Benchmark;
 
+use BBBikeUtil qw(bbbike_root);
 use BBBikeCanvasUtil qw(draw_bridge draw_tunnel_entrance);
 
-my $datadir = "../../data";
-my $imgdir = "../../images";
+my $datadir = bbbike_root . "/data";
+my $imgdir = bbbike_root . "/images";
 push(@Strassen::datadirs, $datadir);
 my $leaktest = 1;
 
