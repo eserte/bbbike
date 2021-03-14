@@ -558,7 +558,7 @@ sub make_general_bundle {
 WriteMakefile
   (
    'NAME'	  => 'BBBike',
-   'VERSION_FROM' => 'BBBikeVar.pm',
+   'VERSION'      => $BBBike::VERSION,
    'dist'         => {'COMPRESS'=>'gzip -9f', 'SUFFIX' => '.gz',
 		      'POSTOP'=>'-$(CHMOD) 644 $(DISTVNAME).tar$(SUFFIX)'},
    'PM'           => \%pm,
