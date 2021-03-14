@@ -6,12 +6,11 @@
 #
 
 use strict;
+use FindBin;
+use lib "$FindBin::RealBin/../../..", "$FindBin::RealBin/../../../lib";
+use lib @lib::ORIG_INC; # so original @INC is on front
 
-my $root;
-BEGIN { $root = "../.." }
-use lib ($root, "$root/lib");
-use lib @lib::ORIG_INC;
-
+use BBBikeUtil qw(bbbike_root);
 use Strassen::Core;
 use StrassenNetz::CNetFileDist;
 
@@ -38,7 +37,7 @@ GetOptions("v" => sub {
 
 $Strassen::Util::cacheprefix = "test_b_de";
 
-my $strfile = "$root/t/data-test/strassen";
+my $strfile = bbbike_root . "/t/data-test/strassen";
 my $s = Strassen->new($strfile);
 my $net = StrassenNetz->new($s);
 isa_ok $net, 'StrassenNetz';
