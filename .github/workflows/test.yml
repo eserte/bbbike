@@ -6,6 +6,7 @@ on:
       - '*travis*'
       - '*appveyor*'
       - '*doozer*'
+  pull_request:
 
 jobs:
   test:
