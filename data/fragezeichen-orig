@@ -54,7 +54,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: http://www.infravelo.de/api/v1/project/9020023/
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021, Neubau Radweg)
 #: source_id: 2147343740
-#: last_checked: 2021-03-13
+#: last_checked: 2021-03-15
 #: next_check: 2021-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -311,7 +311,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (Planung 2019)
 #: osm_watch: way id="138431358" version="16" vvv
 #: osm_watch: way id="330786038" version="15" vvv
-#: last_checked: 2021-03-09 vvv
+#: last_checked: 2021-03-15 vvv
 #: check_frequency: 270d vvv
 #: XXX Maﬂnahme Bsw.6 + Pw.7
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755
@@ -816,7 +816,7 @@ Gr¸nauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::proj
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX AT.1
-#: last_checked: 2021-02-27
+#: last_checked: 2021-03-15
 #: check_frequency: 90d
 Am Treptower Park: Einrichtung einer Radverkehrsanlage geplant	?::projected; 14185,9509 14089,9610
 # 
@@ -1361,7 +1361,7 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 #: by: http://www.infravelo.de/projekt/wallensteinstrasse/ (hier nur zwischen Neuer Feldweg und Tannh‰userstr., 4. Quartal 2020)
 #: osm_watch: way id="51872061" version="36"
 #: osm_watch: way id="31525575" version="23"
-#: last_checked: 2021-03-01
+#: last_checked: 2021-03-15
 #: check_frequency: 120d
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
 # REMOVED (zusammengelegt) --- #: next_check_id: WALLENSTEIN-2020 --- #: osm_watch: way id="31525575" version="20" --- #: XXX zurzeit laufen Bauarbeiten; Parkverbot bis 31.10.2020 --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/unterfuehrung-voll-gesperrt_a285283 (bis 16.11.2020; nur Arbeiten an der Gasleitung?) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8603 (Frage) --- #: last_checked: 2020-11-28 --- #: check_frequency: 120d --- #: next_check: 2020-11-16 --- Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
@@ -2863,8 +2863,8 @@ Clara-Mleinek-Platz (Ziffer 3; platz‰hnlich): Geplante Straﬂe; Qualit‰t? Wird de
 #: by: https://twitter.com/weddingweiser/status/1343568926601580545 (Umleitung beendet)
 #: XXX laut osm: opening_date=2021-04
 #: osm_watch: way id="237716417" version="8"
-#: last_checked: 2021-02-17 (daf)
-#: next_check: 2021-04-01
+#: last_checked: 2021-03-14 (daf)
+# REMOVED --- #: next_check: 2021-04-01
 Golda-Meir-Steg: Fuﬂg‰ngerbr¸cke in Bau	?::inwork 7912,14160 7958,14186
 # 
 # REMOVED (-> strassen&gesperrt) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/1-64a_ve_bebauungsplanentwurf_3-2-bl_1.pdf --- #: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2015/pressemitteilung.364910.php --- #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/abwaegung/1-64a_ve/index.shtml --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2016 (Straﬂenbenennung) --- #: XXX Gr¸nfl‰chen teilweise entfernen, culdesac hinzuf¸gen --- #: XXX vorgeschlagene Straﬂennamen: B‰rbel-Bohley-Ring (groﬂer Straﬂenring, C, D, E) und Lichtburgring (A, B); teilweise Privatstraﬂen, PLZ=13355 (fehlt in Berlin.coords.data) --- #: XXX Baustraﬂe ist asphaltiert, vermutlich wird der Bereich verkehrsberuhigt sein (auch laut osm) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7285 --- #: by: http://www.dafmap.de/d/berlin.html?id=3694&mt=0&zoom=16 (Geplanter Projektabschluss: 2019-03-01) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_26_2933_3020_online.pdf (Grundst¸cksnummerierungen) --- # laut LOR 7/2017 PLZ=13357, siehe auch http://www.openstreetmap.org/note/1195020 --- #: osm_watch: way id="437684188" version="2" --- #: last_checked: 2017-09-21 --- #: next_check: 2017-10-08 --- Lichtburgring	?::inwork 10004,15636 9969,15724 9933,15815 --- B‰rbel-Bohley-Ring	?::inwork 9933,15815 9917,15813 9744,15793
@@ -4628,7 +4628,7 @@ Hauptstr./Goethestr.: vorhandene ‹berquerungshilfe soll zu einem Zebrastreifen a
 #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/gehweg-und-radweg-im-bau_a302442
 #: XXX w‰hrend der Bauarbeiten Einbahnstraﬂenregelung --- was wird das f¸r den Radverkehr bedeuten? -> siehe temp blockings
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2021-03-14
+#: last_checked: 2021-03-15
 #: check_frequency: 90d
 #: next_check: 2021-09-30
 Karlshorster Str.: Bau von Radwegen	?::projected 15279,10862 15272,10790 15261,10738
@@ -4640,7 +4640,7 @@ Karlshorster Str.: Bau von Radwegen	?::projected 15279,10862 15272,10790 15261,1
 #: last_checked: 2021-03-10
 Hauptstr.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
-#: last_checked: 2021-03-01
+#: last_checked: 2021-03-15
 #: check_frequency: 90d
 #: next_check: 2022-01-02
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
@@ -6121,7 +6121,7 @@ Lichterfelde S¸d: neue Straﬂen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036878404255/878404255/00305340/40-Anlagen/08/3262020-07Bebauungsplan11-47baeBBundeOeB.pdf (Planzeichnung)
 #: XXX alle Straﬂen fehlen bei Berlin.coords.data
 #: osm_watch: way id="428279379" version="10" vvv
-#: last_checked: 2021-03-01 vvv
+#: last_checked: 2021-03-15 vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-07-01 vvv
 # REMOVED --- Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue Straﬂen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
@@ -6969,7 +6969,7 @@ Bebauungsplan 3-41: Straﬂen werden entstehen; genaue Lage, Qualit‰t?	?::projecte
 #: by: https://www.radbezirk-lichtenberg.de/freie-fahrt-fuer-die-verkehrswende-am-ostkreuz/ (Demo (!))
 #: XXX Provisorium (Fuﬂg‰ngerschutztunnel) in Bau, es wird vermutlich vier Dr‰ngelgitter geben (an beiden Enden, sowie zwei dazwischen)
 #: osm_watch: way id="906851132" version="2"
-#: last_checked: 2021-03-14
+#: last_checked: 2021-03-15
 #: check_frequency: 10d
 #: next_check: 2024-06-15
 Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15052,10920 14888,10959

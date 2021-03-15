@@ -31891,13 +31891,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1615835277, # undef, # XXX
        text  => 'Trautenauer Str.: Fahrbahn wegen Bauarbeiten am Projekt "Parkstadt Karlshorst" gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2021-03-01
-#: check_frequency: 45d
+# REMOVED (nicht mehr) --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2021-03-01 --- #: check_frequency: 45d
 # REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17774,8342
 	q4::inwork 17774,8342 17753,8290
 EOF
@@ -32092,7 +32090,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-03-14
+#: last_checked: 2021-03-15
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32153,6 +32151,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: PILGRAMER-2019
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381
+#: source_id: 2147346982
 #: XXX wie sehr sind Radfahrer betroffen?
 #: next_check: 2021-03-15
 	q4::inwork 25150,10562 25149,10695 25149,10731 25148,10769 25145,10841

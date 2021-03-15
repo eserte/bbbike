@@ -3214,19 +3214,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2021-03-01
-#: check_frequency: 45d
-# REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17774,8342
-	q4::inwork 17774,8342 17753,8290
-',
-         'from' => undef,
-         'id' => 3319,
-         'text' => 'Trautenauer Str.: Fahrbahn wegen Bauarbeiten am Projekt "Parkstadt Karlshorst" gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
@@ -3372,7 +3360,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-03-14
+#: last_checked: 2021-03-15
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3420,6 +3408,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: PILGRAMER-2019
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381
+#: source_id: 2147346982
 #: XXX wie sehr sind Radfahrer betroffen?
 #: next_check: 2021-03-15
 	q4::inwork 25150,10562 25149,10695 25149,10731 25148,10769 25145,10841
