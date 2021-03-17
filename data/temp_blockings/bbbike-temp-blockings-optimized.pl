@@ -1356,7 +1356,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -2879,12 +2879,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: mapillary
 	q4::inwork 5560,6344 5582,6360
 ',
+         'dont_check_date' => 1,
          'from' => 1594635120,
          'id' => 3258,
          'source_id' => '2147346108',
-         'text' => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vor der Schöneberger Str. in beide Richtungen gesperrt, vom 14.07.2020 12:12 Uhr bis 17.03.2021 17:00 Uhr ',
+         'text' => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vor der Schöneberger Str. in beide Richtungen gesperrt, vom 14.07.2020 12:12 Uhr bis 17.03.2021 17:00 Uhr, vielleicht sogar bis Mai 2022',
          'type' => 'handicap',
-         'until' => 1615996800
+         'until' => 1654012800
        },
        undef,
        undef,
@@ -3408,6 +3409,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: PILGRAMER-2019
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381
+#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-zwei-monate-beidseitig-gesperrt_a304101 (Fertigstellung im Mai 2021)
 #: source_id: 2147346982
 #: XXX wie sehr sind Radfahrer betroffen?
 #: next_check: 2021-03-15

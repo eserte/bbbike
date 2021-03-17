@@ -5469,7 +5469,7 @@ Radweg beginnt nach 20 Metern	RW1; 7909,775 7857,802
 	RW3;RW3 14050,20955 13909,20928
 #: XXX wird hier eine Busspur eingerichtet?
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
-#: last_checked: 2021-02-21 (mapillary)
+#: last_checked: 2021-03-17 (mapillary)
 	RW3; 13909,20928 13662,20917
 	RW5; 13662,20917 13562,20913
 #: note: größtenteils eigentlich Bushaltestelle
@@ -6007,7 +6007,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2021-03-05 vvv
+#: last_checked: 2021-03-17 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -6638,10 +6638,11 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1022575.php ("Test von Protektionselementen")
 #: by: https://portal1467.webcam-profi.de/ (Webcam)
 #: by: http://www.infravelo.de/projekt/hallesches-ufer/ (Verstetigung, 1. Quartal 2020 - 4. Quartal 2020)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1065698.php (Bauarbeiten ab 22. März 2021 bis Ende Mai 2021)
 #: osm_watch: way id="4401920" version="50"
 #: confirmed_by: srt
 #: last_checked: 2021-03-08
-# REMOVED --- #: next_check: 2020-12-31
+#: next_check: 2021-05-31
 provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9154,10348 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
 # 
 #: note: Spielstraßenschild am südlichen Ende
@@ -6732,14 +6733,15 @@ provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: by: https://abendblatt-berlin.de/2020/04/23/berlin-mitte-erster-temporaerer-radweg-eingerichtet/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: by: http://www.infravelo.de/projekt/radfahren-am-landwehrkanal-suedseite/ (Verstetigung, 4. Quartal 2020 - 1. Quartal 2021) (Eintrag hat zwischendurch nicht existiert)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1065698.php (Bauarbeiten ab 22. März 2021 bis Ende Mai 2021)
 #: osm_watch: way id="34057952" version="35"
 #: last_checked: 2021-03-08 vvv
 #: check_frequency: 60d vvv
-# REMOVED --- #: next_check: 2021-03-31 vvv
+#: next_check: 2021-05-31 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8804,10303 9145,10290 9368,10211 9416,10196
 #: osm_watch: way id="26472938" version="28"
 provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 9687,10180 9825,10206 9865,10227
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 

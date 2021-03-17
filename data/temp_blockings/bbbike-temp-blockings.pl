@@ -31063,10 +31063,11 @@ EOF
 EOF
      },
      { from  => 1594635120, # 2020-07-13 12:12
-       until => 1615996800, # 2021-03-17 17:00
-       text  => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vor der Schöneberger Str. in beide Richtungen gesperrt, vom 14.07.2020 12:12 Uhr bis 17.03.2021 17:00 Uhr ',
+       until => $isodate2epoch->("2022-05-31 18:00:00"), # 1615996800, # 2021-03-17 17:00
+       dont_check_date => 1,
+       text  => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vor der Schöneberger Str. in beide Richtungen gesperrt, vom 14.07.2020 12:12 Uhr bis 17.03.2021 17:00 Uhr, vielleicht sogar bis Mai 2022',
        type  => 'handicap',
-       source_id => '2147346108', # bis 17.3.2021
+       source_id => '2147346108', # bis 17.3.2021, mittlerweile inaktiv
        data  => <<EOF,
 #: note: laut Baustellenschild der Wasserbetriebe bis Mai 2022
 #: also_indoor: traffic (H)
@@ -32151,6 +32152,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: PILGRAMER-2019
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381
+#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-zwei-monate-beidseitig-gesperrt_a304101 (Fertigstellung im Mai 2021)
 #: source_id: 2147346982
 #: XXX wie sehr sind Radfahrer betroffen?
 #: next_check: 2021-03-15
