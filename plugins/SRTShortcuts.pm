@@ -351,6 +351,7 @@ EOF
 	      ),
 	      layer_checkbutton([$do_compound->("Add fit tracks")],
 				'str', $fit_track,
+				-interactivelyselected => 0,
 				set_layer_highlightning => 1,
 				special_raise => 1,
 				Width => 1,
@@ -430,7 +431,7 @@ EOF
 				  maybe_orig_file => 0, # does not exist in non-orig version, already resoved to strassen+handicap
 				  above => $str_layer_level,
 				 ),
-		[Button => $do_compound->("gesperrt_car", $images{car_cross}), -command => sub { add_new_nonlazy_maybe_orig_layer("sperre", "gesperrt_car") }],
+		[Button => $do_compound->("gesperrt_car", $images{car_cross}), -command => sub { add_new_nonlazy_maybe_orig_layer("sperre", "gesperrt_car", -interactivelyselected => 0) }],
 ## XXX no support for "sperre" type yet:
 #		layer_checkbutton([$do_compound->('gesperrt_car', $images{car_cross})]
 #				  'sperre', 'gesperrt_car,
@@ -1437,7 +1438,7 @@ sub show_any_diff {
     # open a filehandle and pass this to both the md5 calculation and
     # the plotting.
     my $digest = md5_file($file);
-    my $abk = main::plot_additional_layer("str", $file);
+    my $abk = main::plot_additional_layer("str", $file, -interactivelyselected => 0);
     my $token = "chooseort-" . File::Basename::basename($file) . "-str";
     my $t = main::redisplay_top($main::top, $token, -title => $file);
     my $max_window_width = $main::top->screenwidth-20;

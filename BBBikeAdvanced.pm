@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -508,10 +508,18 @@ sub plot_additional_layer_cmdline {
 
 sub plot_additional_layer {
     my($linetype, $file, %args) = @_;
+
     my $temporary_file;
     if (exists $args{'-temporaryfile'}) {
 	$temporary_file = delete $args{'-temporaryfile'};
     }
+    my $interactively_selected_filename;
+    if (exists $args{-interactivelyselected}) {
+	$interactively_selected_filename = delete $args{-interactivelyselected};
+    } else {
+	$interactively_selected_filename = 1;
+    }
+
     my $abk = next_free_layer();
     if (!defined $abk) {
 	status_message(M"Keine Layer frei!", 'error');
@@ -552,7 +560,7 @@ sub plot_additional_layer {
 	    my $s = $p_obj{$abk} || Strassen->new($file);
 	    $net->make_sperre($s, Type => "all");
 	}
-	if (!$temporary_file) {
+	if ($interactively_selected_filename && !$temporary_file) {
 	    my $add_def;
 	    if (@args) {
 		$add_def = "\t" . join "\t", @args;

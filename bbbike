@@ -4784,7 +4784,7 @@ if (defined $initial_plugins && $initial_plugins ne "") {
 if (defined $initial_layers && $initial_layers ne "") {
     require BBBikeAdvanced;
     foreach my $layer_def (split /,/, $initial_layers) {
-	plot_additional_layer_cmdline($layer_def);
+	plot_additional_layer_cmdline($layer_def, -interactivelyselected => 0);
     }
 }
 
@@ -9880,7 +9880,7 @@ sub load_save_route {
     status_message("");
     my $path;
     my $ext = $bbbike_route_ext;
-    my $interactively_selected_filename = 0;
+    my $interactively_selected_filename = delete $args{-interactivelyselected};
     if (!defined $file) {
 	my $method = $save ? "getSaveFile" : "getOpenFile";
 	$file = $top->$method
