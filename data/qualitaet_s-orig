@@ -936,7 +936,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-03-19
+#: last_checked: 2021-03-20
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1619,10 +1619,15 @@ Pankeweg: gut befestigter Weg	Q1 15998,24887 15820,25003 15810,24981 15643,25090
 Nesselweg: Betonplatten, OK	Q1- 8717,21429 8654,21327 8631,21290 8605,21248 8587,21218 8513,21099
 #: by: http://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
-#: XXX wird hier asphaltiert?
-#: last_checked: 2020-12-19 (mapillary)
-#: next_check: 2023-04-30
-Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 7979,20528 8035,20451 8052,20426 8069,20408 8090,20371 8131,20287 8196,20096
+#: XXX wird hier asphaltiert? vvv
+#: last_checked: 2020-12-19 (mapillary) vvv
+#: next_check: 2023-04-30 vvv
+#: by: mapillary
+Schönholzer Weg: sehr schlechtes Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 8001,20530 8003,20507 8040,20454 8057,20430
+Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 8057,20430 8071,20410 8093,20379 8131,20287 8196,20096
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
 Uferstr.: Kopfsteinpflaster	Q2 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
 Oderstr.: Kopfsteinpflaster	Q2- 15106,11598 15043,11637 14946,11697
 Oderstr.: asphaltiert	Q0 14946,11697 14856,11740 14794,11770
@@ -8646,8 +8651,8 @@ Rhapsodieweg: Asphalt	Q0 8554,20270 8489,20423
 Maurice-Ravel-Str.: Asphalt	Q0 8671,20355 8619,20436 8596,20487 8561,20572
 Sonatenweg: Asphalt	Q0 8596,20487 8654,20492
 César-Franck-Str.: Beton	Q0- 8351,20492 8472,20495
-Kabelitzweg: Verbundsteinpflaster	Q1 8351,20492 8035,20451
-Strawinskystr.: Asphalt	Q0 8069,20408 8242,20434 8359,20449
+Kabelitzweg: Verbundsteinpflaster	Q1 8351,20492 8040,20454
+Strawinskystr.: Asphalt	Q0 8071,20410 8242,20434 8359,20449
 Lessingstr.: schlechtes Kopfsteinpflaster	Q3 7900,20378 8008,20332 8105,20285 8131,20287
 Lessingstr.: Asphalt	Q0 7900,20378 7809,20420
 Lessingstr.: Asphalt mit leichten Schäden	Q0- 7809,20420 7711,20463
@@ -11986,6 +11991,7 @@ George-Stephenson-Str.: Asphalt	Q0 7487,14472 7452,14415 7500,14333 7569,14217 7
 (Lindenstr. - Schmetterlingswiesen, östlicher Weg): wassergebundene Decke	Q1 21420,11150 21483,11129
 Potsdamer Str.: Asphaltschäden	Q1; 7507,9458 7512,9572 7518,9791
 Potsdamer Str.: Asphaltschäden	Q1; 7526,9969 7579,10183
+(Supermarktparkplatz): Verbundsteinpflaster	Q1 2554,10258 2551,10266 2706,10362 2718,10359
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14687,7 +14693,7 @@ Gritznerstr.: asphaltiert	Q0 4414,6134 4380,6049 4312,5889
 #: corrected_by: daf (Asphalt -> ..., neu gemacht)
 #: next_check_id: ABBESTR-2021
 #: XXX Qualität nach den Bauarbeiten genauer überprüfen, außerdem prüfen, ob es Durchfahrtsbeschränkungen o.ä. geben wird
-#: last_checked: 2021-01-22
+#: last_checked: 2021-03-20
 #: check_frequency: 45d
 Abbestr.: glatte Pflasterung	Q0- 4674,12076 4755,12236
 Abbestr.: Asphalt	Q0 4755,12236 4807,12348
@@ -14826,7 +14832,8 @@ Kulmbacher Str.: Asphalt, leicht schadhafte Stellen	Q0- 5814,9948 5833,10170
 Nordhauser Str.: Asphalt	Q0 3534,13098 3711,13098 3842,13097 3970,13097 4096,13095 4215,13098 4331,13103
 # 
 #: by: Kerstin Pantos: vvv
-Ringbahnstr. (Halensee): mäßiges Kopfsteinpflaster	Q2 2687,10053 2539,10235
+#: confirmed_by: srt
+Ringbahnstr. (Halensee): mäßiges Kopfsteinpflaster	Q2 2687,10053 2549,10203 2554,10258
 #: confirmed_by: srt vvv
 Gustav-Müller-Str.: asphaltiert	Q0 7639,8091 7640,8359 7644,8560
 Gustav-Müller-Str.: asphaltiert	Q0 7643,8634 7642,8815
@@ -15889,7 +15896,7 @@ Kilianistr.: mäßiges Kopfsteinpflaster	Q2 18114,6549 18244,6518 18457,6490
 Beymestr.: mäßiges Kopfsteinpflaster	Q2+ 5499,4999 5797,4846
 # 
 #: by: Klemens Wawrzinek:
-Lützenstr.: Kopfsteinpflaster	Q2 2539,10235 2710,10245
+Lützenstr.: Kopfsteinpflaster	Q2 2554,10258 2710,10245
 # 
 #: by: Michael Feske (wobei er sich bei der Kategorisierung unsicher war)
 (Waidmannsluster Damm - Karolinenstr.): Waldweg	Q2 1942,21564 1928,21595 1859,21541 1843,21440 1810,21363 1613,21173
@@ -16255,7 +16262,7 @@ Hahns Mühle: schlechtes Kopfsteinpflaster	Q3+ 24778,4821 25007,4758
 # 
 #: by: Christian Uhrich:
 #: corrected_by: srt (Q2 -> Q3)
-Beethovenstr.: schlechtes Kopfsteinpflaster	Q3 7933,20171 8008,20332 8052,20426
+Beethovenstr.: schlechtes Kopfsteinpflaster	Q3 7933,20171 8008,20332 8057,20430
 # 
 #: by: Ralf Schindofski:
 #: corrected_by: srt (Beton -> Beton mit Schäden)
@@ -26355,7 +26362,12 @@ Litta-von-Stauffenberg-Weg: wassergebundene Decke	Q1 -7009,5211 -7174,5307
 Länderallee: Asphalt	Q0 1033,11754 929,11648 853,11573 743,11462 716,11418 702,11298 704,11273
 #: confirmed_by: srt
 Eschenallee: Asphalt	Q0 1033,11754 1078,11895
-Eschenallee: guter Asphalt	Q1 1078,11895 1105,11973 1131,12074 1154,12167 1186,12275 1206,12364 1228,12450 1242,12535
+#: confirmed_by: srt
+Eschenallee: Asphalt mit einigen Schäden	Q1 1078,11895 1100,11974 1128,12075
+#: corrected_by: srt (Q1 -> ..., neu gemacht?)
+Eschenallee: Asphalt	Q0 1128,12075 1154,12167
+#: confirmed_by: srt
+Eschenallee: Asphalt mit einigen Schäden	Q1 1154,12167 1183,12276 1206,12364 1228,12450 1242,12535
 Bayernallee: guter Asphalt	Q0- 323,11801 448,11831 577,11837
 #: confirmed_by: srt
 Adamstr., Melanchthonplatz: Asphalt	Q0 -4239,12626 -4210,12575 -4189,12560 -4180,12553 -4084,12557 -3942,12559 -3892,12560 -3752,12566 -3635,12572
@@ -27575,17 +27587,19 @@ Kucharskistr.: Asphalt	Q0 4865,12984 4829,13089
 #: confirmed_by: srt
 Clara-von-Simson-Str.: Asphalt	Q0 4824,12952 4732,13030
 Margarete-Kühn-Str.: Asphalt	Q0 5133,12240 5194,12398 5225,12450
+#: confirmed_by: srt
 Otto-Dibelius-Str.: Asphalt	Q0 5181,12195 5243,12303 5299,12420
-Hannah-Karminski-Str.: Asphalt	Q0 5231,12122 5270,12138 5317,12242 5360,12331
+#: confirmed_by: srt
+Hannah-Karminski-Str.: Asphalt	Q0 5233,12109 5258,12128 5317,12242 5360,12331
 #: confirmed_by: srt
 Schleswiger Ufer: Kopfsteinpflaster	Q2 5714,12266 5803,12356 5858,12425
-Schleswiger Ufer: Kopfsteinpflaster	Q1 5858,12425 5894,12480 5944,12548
-Cuxhavener Str.: Asphalt	Q1 5894,12480 5919,12423
+Schleswiger Ufer: Kopfsteinpflaster	Q1 5858,12425 5886,12467 5944,12548
+Cuxhavener Str.: Asphalt	Q1 5886,12467 5904,12417 5931,12399
 # REMOVED (lohnt nicht) --- Holsteiner Ufer: Verbundsteine	Q1 6575,12778 6469,12867 6449,12865
 (Zufahrt Parkplätze Bartningallee): Kopfsteinpflaster	Q2 6500,12605 6361,12617 6304,12603 6188,12553 6179,12513
 (Zufahrt Parkplätze Bartningallee): Gehwegplatten	Q1 6179,12513 6149,12454
 (Altonaer Str. - Flensburger Str.): Gehwegplatten	Q1 6173,12396 6149,12454 6137,12532 6160,12681
-Cuxhavener Str.: Kopfsteinpflaster	Q2 5919,12423 5951,12353 5982,12291
+Cuxhavener Str.: Kopfsteinpflaster	Q2 5931,12399 5951,12353 5982,12291
 #: corrected_by: srt (Q2 -> Q2-)
 (Zufahrt Parkplätze Kloppstockstr.): Kopfsteinpflaster	Q2- 5909,12073 5870,12106 5982,12291
 (Cuxhavener Str. - Altonaer Str.): unbefestigter Weg, stellenweise fester Schotter	Q2+ 5982,12291 6030,12363 6067,12381 6098,12446
@@ -27839,7 +27853,7 @@ Machandelweg: Kleinpflaster	Q1 -248,12718 -217,12778 -187,12830
 (Rossitter Platz - Machandelweg): Gitterbrücke	Q2 -107,12220 -76,12236 -45,12243
 Rüsternallee (Westend): rauher Asphalt	Q1 738,12025 779,12054 863,12039
 #: corrected_by: srt (Q2 -> Q1)
-Rüsternallee (Westend): rauher Asphalt mit Löchern	Q1 941,12020 1105,11973 1302,11917 1516,11854 1673,11814
+Rüsternallee (Westend): rauher Asphalt mit Löchern	Q1 941,12020 1100,11974 1302,11917 1516,11854 1673,11814
 Ratzeburger Allee: rauher Asphalt	Q1 772,12163 779,12054
 #: confirmed_by: srt
 Halmstr.: Asphalt	Q0 1253,11732 1361,11698 1464,11669

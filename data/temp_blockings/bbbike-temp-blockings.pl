@@ -1509,7 +1509,7 @@ EOF
 	q4 6828,12031 6787,12099
 	q4 8775,12457 8540,12420
 	q4 8737,12098 8595,12066
-	q4 6642,12010 5900,11913
+	q4 6642,12010 6164,11947 5900,11913
 	q4 6642,12010 6685,11954
 	q4 8595,12066 8600,12165
 	q4 8540,12420 8573,12325
@@ -5078,7 +5078,7 @@ EOF
 	2::temp 6540,11754 6685,11954
 	2::temp 6825,11486 6809,11570 6778,11742 6744,11936
 	2::temp 6656,12075 6354,12278 6173,12396
-	2::temp 5900,11913 6642,12010
+	2::temp 5900,11913 6164,11947 6642,12010
 	2::temp 7031,12320 7001,12274 6831,12150 6787,12099
 EOF
      },
@@ -12265,7 +12265,7 @@ EOF
        source_id => 'IM_009465',
        data  => <<EOF,
 	2::temp 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075
-	2::temp 6173,12396 6354,12278 6656,12075 6642,12010 5900,11913
+	2::temp 6173,12396 6354,12278 6656,12075 6642,12010 6164,11947 5900,11913
 	2::temp 6642,12010 6685,11954 6744,11936 6809,11979 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	2::temp 6744,11936 6778,11742
 	2::temp 6828,12031 6787,12099 6831,12150 7001,12274 7031,12320
@@ -14701,7 +14701,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013223',
        data  => <<EOF,
-	q4::inwork; 7979,20528 8343,20556 8410,20561 8481,20566 8543,20571 8561,20572 8717,20584 8864,20593 8904,20596
+	q4::inwork; 7979,20528 8001,20530 8343,20556 8410,20561 8481,20566 8543,20571 8561,20572 8717,20584 8864,20593 8904,20596
 EOF
      },
      { from  => 1246208018, # 2009-06-28 18:53
@@ -15267,7 +15267,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_013844',
        data  => <<EOF,
-	2::temp 5231,12122 5181,12195 5243,12303 5317,12242
+	2::temp 5233,12109 5181,12195 5243,12303 5317,12242
 	2::temp 5181,12195 5133,12240 5194,12398 5243,12303
 EOF
      },
@@ -18193,11 +18193,11 @@ EOF
 	3 6685,10690 6532,10529 6494,10440
 	3 6122,10925 6025,10746 5866,10492
 	3 7026,12054 6828,12031 6884,12006
-	3 5900,11913 6642,12010 6550,11954
+	3 5900,11913 6164,11947 6642,12010 6550,11954
 	3 5471,10719 5475,10808 5488,10978
 	3 7110,10613 6972,10665 6818,10725
 	3 5230,10919 5215,10711 5196,10398
-	3 6550,11954 6642,12010 5900,11913
+	3 6550,11954 6642,12010 6164,11947 5900,11913
 	3 6494,10440 6532,10529 6685,10690
 	3 7103,11247 6851,11346 6692,11365
 	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8592,12252 8637,12258 8722,12268
@@ -21583,7 +21583,7 @@ EOF
 #: source_id: LMS-BR_r_LMS-BR_172061_LMS-BR_72
 #: also_indoor: traffic (H)
 # REMOVED --- #: next_check: 2019-06-13
-	q2::inwork 5258,11285 5236,10994
+	q2::inwork 5258,11285 5241,11060 5236,10994
 EOF
      },
      { from  => 1367100000, # 2013-04-28 00:00
@@ -28246,12 +28246,12 @@ EOF
        data  => <<EOF,
 	2::temp 6787,12099 6828,12031 6809,11979 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113 6754,12108 6787,12099 6831,12150 7001,12274 7031,12320 6694,12627
 	2::temp 7215,12295 7031,12320 7051,12426 7077,12575
-	3 5900,11913 6642,12010 6550,11954
+	3 5900,11913 6164,11947 6642,12010 6550,11954
 	3 7122,12384 7051,12426 6859,12567
 	3 6884,12006 6828,12031 7026,12054
 	3 6859,12567 7051,12426 7122,12384
 	3 7026,12054 6828,12031 6884,12006
-	3 6550,11954 6642,12010 5900,11913
+	3 6550,11954 6642,12010 6164,11947 5900,11913
 EOF
      },
      { from  => 1537999200, # 2018-09-27 00:00
@@ -28578,7 +28578,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-03-10
+#: last_checked: 2021-03-20
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -29991,10 +29991,10 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2021-01-22
+#: last_checked: 2021-03-20
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-03-31
-	2::inwork 5894,12480 5944,12548
+	2::inwork 5886,12467 5944,12548
 EOF
      },
      { from  => 1570312800, # 2019-10-06 00:00
@@ -30030,9 +30030,9 @@ EOF
 #: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
 #: XXX es wird nochmal im zweiten Halbjahr 2021 eine zweiwöchige Sperrung geben
 #: also_indoor: search Brebacher_Weg Bahnübergang
-#: osm_watch: way id="9829824" version="19"
+#: osm_watch: way id="9829824" version="20"
 #: priority: #A
-#: last_checked: 2021-02-21
+#: last_checked: 2021-03-19 (osm)
 #: check_frequency: 90d
 #: next_check: 2021-03-31
 	2::inwork 21558,12073 21562,12088 21564,12097
@@ -30835,7 +30835,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-19
+#: last_checked: 2021-03-20
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31344,18 +31344,19 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Sigismundstr. und Matthäikirchplatz: Bauarbeiten, Fahrbahn gesperrt',
-       type  => 'handicap',
+       text  => 'Sigismundstr. und Matthäikirchplatz: Bauarbeiten, Fahrbahn und Bürgersteig unter Umständen komplett gesperrt',
+       type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SIGISMUND-2020
+#: next_check_id: MUSEUMDERMODERNE-2021
 #: XXX wann sind die Bauarbeiten fertig? vvv
 #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
-#: last_checked: 2021-02-12 vvv
-#: note: hier von Osten aus legaler gemeinsamer Rad- und Gehweg auf dem Bürgersteig, mit kurzer asphaltierter Rampe, von Westen aus verboten für Fahrzeuge aller Art
-#: osm_watch: way id="16096289" version="18"
-	q2::inwork 8031,11249 7934,11275 7897,11287
+#: last_checked: 2021-03-20 vvv
+#: note: hier von Osten aus legaler gemeinsamer Rad- und Gehweg auf dem Bürgersteig, mit kurzer asphaltierter Rampe, von Westen aus verboten für Fahrzeuge aller Art; mittlerweile existiert kein Gehweg mehr
+#: osm_watch: way id="16096289" version="19"
+	2::inwork 8031,11249 7934,11275 7897,11287
 #: osm_watch: way id="4597351" version="21"
-	q4::inwork 7934,11275 7965,11380
+	2::inwork 7934,11275 7965,11380
 #: last_checked ^^^
 #: XXX ^^^
 #: XXX ^^^
@@ -31389,7 +31390,7 @@ EOF
        source_id => 'https://viz.berlin.de/2020/09/challenge-26_27-09-20/',
        data  => <<EOF,
 	2::temp 6787,12099 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
-	2::temp 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 5900,11913
+	2::temp 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 6164,11947 5900,11913
 	2::temp 6754,12108 6787,12099 6831,12150 7001,12274 7031,12320
 	2::temp 6354,12278 6656,12075 6690,12104 6725,12113
 	2::temp 6642,12010 6656,12075
@@ -31971,7 +31972,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ABBESTR-2021
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-01-22
+#: last_checked: 2021-03-20
 #: check_frequency: 45d
 	q3::inwork 4674,12076 4755,12236
 EOF

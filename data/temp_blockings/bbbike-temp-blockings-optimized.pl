@@ -2299,7 +2299,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-03-10
+#: last_checked: 2021-03-20
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -2600,10 +2600,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2021-01-22
+#: last_checked: 2021-03-20
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-03-31
-	2::inwork 5894,12480 5944,12548
+	2::inwork 5886,12467 5944,12548
 ',
          'from' => 1570312800,
          'id' => 3168,
@@ -2631,9 +2631,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
 #: XXX es wird nochmal im zweiten Halbjahr 2021 eine zweiwöchige Sperrung geben
 #: also_indoor: search Brebacher_Weg Bahnübergang
-#: osm_watch: way id="9829824" version="19"
+#: osm_watch: way id="9829824" version="20"
 #: priority: #A
-#: last_checked: 2021-02-21
+#: last_checked: 2021-03-19 (osm)
 #: check_frequency: 90d
 #: next_check: 2021-03-31
 	2::inwork 21558,12073 21562,12088 21564,12097
@@ -2790,7 +2790,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-19
+#: last_checked: 2021-03-20
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3000,22 +3000,23 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: next_check_id: SIGISMUND-2020
+#: next_check_id: MUSEUMDERMODERNE-2021
 #: XXX wann sind die Bauarbeiten fertig? vvv
 #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
-#: last_checked: 2021-02-12 vvv
-#: note: hier von Osten aus legaler gemeinsamer Rad- und Gehweg auf dem Bürgersteig, mit kurzer asphaltierter Rampe, von Westen aus verboten für Fahrzeuge aller Art
-#: osm_watch: way id="16096289" version="18"
-	q2::inwork 8031,11249 7934,11275 7897,11287
+#: last_checked: 2021-03-20 vvv
+#: note: hier von Osten aus legaler gemeinsamer Rad- und Gehweg auf dem Bürgersteig, mit kurzer asphaltierter Rampe, von Westen aus verboten für Fahrzeuge aller Art; mittlerweile existiert kein Gehweg mehr
+#: osm_watch: way id="16096289" version="19"
+	2::inwork 8031,11249 7934,11275 7897,11287
 #: osm_watch: way id="4597351" version="21"
-	q4::inwork 7934,11275 7965,11380
+	2::inwork 7934,11275 7965,11380
 #: last_checked ^^^
 #: XXX ^^^
 #: XXX ^^^
 ',
          'from' => undef,
          'id' => 3277,
-         'text' => 'Sigismundstr. und Matthäikirchplatz: Bauarbeiten, Fahrbahn gesperrt',
-         'type' => 'handicap',
+         'text' => 'Sigismundstr. und Matthäikirchplatz: Bauarbeiten, Fahrbahn und Bürgersteig unter Umständen komplett gesperrt',
+         'type' => 'gesperrt',
          'until' => undef
        },
        undef,
@@ -3277,7 +3278,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: ABBESTR-2021
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-01-22
+#: last_checked: 2021-03-20
 #: check_frequency: 45d
 	q3::inwork 4674,12076 4755,12236
 ',
