@@ -858,6 +858,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: note: nicht gesperrt: 2011-07-16 (Sa) gegen 16 Uhr
 #: note: nicht gesperrt: 2012-07-19 (Do) gegen 14 Uhr
 #: note: nicht gesperrt: 2013-09-07 (Sa) gegen 13 Uhr
+#: note: nicht gesperrt: 2021-03-21 (So) gegen 15 Uhr
 #: tempex: volatile
 	2::temp 18870,5833 18932,5926
 ',
@@ -2790,7 +2791,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-20
+#: last_checked: 2021-03-21
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3363,7 +3364,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-03-15
+#: last_checked: 2021-03-21
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3423,6 +3424,48 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Pilgramer Str.: Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, ab 15. März 2021 bis ca. 15. Mai 2021',
          'type' => 'handicap',
          'until' => 1621115999
+       },
+       {
+         'data' => '#: also_indoor: traffic vvv
+#: last_checked: 2021-03-21 vvv
+#: next_check: 2021-06-15 vvv
+	q3::inwork; 18676,6333 18767,6268
+	q3::inwork 18767,6268 18859,6198
+#: next_check ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+',
+         'from' => 1616340931,
+         'id' => 3343,
+         'text' => 'Plönzeile: wegen Bauarbeiten Einbahnstraßenregelung und Sperrung der Fahrbahn, ggfs. auf Gehweg ausweichen, voraussichtlich bis Juni 2021',
+         'type' => 'handicap',
+         'until' => 1625090400
+       },
+       {
+         'data' => '#: XXX bis wann ist die Fahrbahn gesperrt?
+#: also_indoor: traffic (G)
+#: last_checked: 2021-03-21
+#: check_frequency: 60d
+	q4::inwork 18260,5746 18164,5701
+',
+         'from' => undef,
+         'id' => 3344,
+         'text' => 'Hasselwerderstr.: zwischen Fennstr. und Fließstr. Fahrbahn wegen Bauarbeiten gesperrt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: S-SCHICHAUWEG-2021
+#: by: rbb
+#: by: https://viz.berlin.de/2021/03/verkehrsvorschau_220321/
+#: XXX sind tatsächlich Fußgänger und Radfahrer betroffen?
+	2::inwork 9693,-815 9692,-772 9693,-746 9699,-600
+',
+         'from' => 1616281200,
+         'id' => 3345,
+         'text' => 'Kettinger Str.: Verbindung zur Barnetstr. unterbrochen, evtl. sind auch Radfahrer betroffen, bis Juli 2021',
+         'type' => 'gesperrt',
+         'until' => 1627768799
        }
      
 );

@@ -9996,7 +9996,7 @@ EOF
        source_id => 'IM_006666',
        data  => <<EOF,
 	2::temp 8374,11479 8479,11493 8542,11502
-	2::temp 8226,11458 8301,11469 8358,11477
+	2::temp 8226,11458 8261,11463 8301,11469 8358,11477
 EOF
      },
      { from  => 1189842239, # 2007-09-15 09:43
@@ -11900,7 +11900,7 @@ EOF
        text  => 'CSD am 28.6.2008',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 8358,11477 8301,11469 8226,11458 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7413,10244 7238,10299 7131,10331 7033,10328 6971,10346 6937,10363 6851,10416 6753,10446 6636,10492 6532,10529 6685,10690 6740,10755 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936
+	2::temp 8358,11477 8301,11469 8261,11463 8226,11458 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7413,10244 7238,10299 7131,10331 7033,10328 6971,10346 6937,10363 6851,10416 6753,10446 6636,10492 6532,10529 6685,10690 6740,10755 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936
 	2::temp 8553,11630 8548,11571 8542,11502 8479,11493 8374,11479
 	2::temp 9984,12426 9934,12420 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381 9475,12365 9358,12351 9141,12320 9164,12172 9064,12156
 	2::temp 8553,11638 8567,11799 8571,11846 8577,11896 8595,12066 8737,12098 8743,12099 8861,12125 9054,12154
@@ -18353,6 +18353,7 @@ EOF
 #: note: nicht gesperrt: 2011-07-16 (Sa) gegen 16 Uhr
 #: note: nicht gesperrt: 2012-07-19 (Do) gegen 14 Uhr
 #: note: nicht gesperrt: 2013-09-07 (Sa) gegen 13 Uhr
+#: note: nicht gesperrt: 2021-03-21 (So) gegen 15 Uhr
 #: tempex: volatile
 	2::temp 18870,5833 18932,5926
 EOF
@@ -30835,7 +30836,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-20
+#: last_checked: 2021-03-21
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32093,7 +32094,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-03-15
+#: last_checked: 2021-03-21
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32159,6 +32160,45 @@ EOF
 #: XXX wie sehr sind Radfahrer betroffen?
 #: next_check: 2021-03-15
 	q4::inwork 25150,10562 25149,10695 25149,10731 25148,10769 25145,10841
+EOF
+     },
+     { from  => 1616340931, # 2021-03-21 16:35
+       until => 1625090400, # 2021-07-01 00:00
+       text  => 'Plönzeile: wegen Bauarbeiten Einbahnstraßenregelung und Sperrung der Fahrbahn, ggfs. auf Gehweg ausweichen, voraussichtlich bis Juni 2021',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic vvv
+#: last_checked: 2021-03-21 vvv
+#: next_check: 2021-06-15 vvv
+	q3::inwork; 18676,6333 18767,6268
+	q3::inwork 18767,6268 18859,6198
+#: next_check ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hasselwerderstr.: zwischen Fennstr. und Fließstr. Fahrbahn wegen Bauarbeiten gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX bis wann ist die Fahrbahn gesperrt?
+#: also_indoor: traffic (G)
+#: last_checked: 2021-03-21
+#: check_frequency: 60d
+	q4::inwork 18260,5746 18164,5701
+EOF
+     },
+     { from  => 1616281200, # 2021-03-21 00:00
+       until => 1627768799, # 2021-07-31 23:59
+       text  => 'Kettinger Str.: Verbindung zur Barnetstr. unterbrochen, evtl. sind auch Radfahrer betroffen, bis Juli 2021',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: S-SCHICHAUWEG-2021
+#: by: rbb
+#: by: https://viz.berlin.de/2021/03/verkehrsvorschau_220321/
+#: XXX sind tatsächlich Fußgänger und Radfahrer betroffen?
+	2::inwork 9693,-815 9692,-772 9693,-746 9699,-600
 EOF
      },
     );

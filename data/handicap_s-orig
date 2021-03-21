@@ -1615,6 +1615,8 @@ Wildensteiner Str.: enge Straße	q1 18528,8331 18416,8163 18365,8094 18333,8059
 Linienstr./Oranienburger Str.: Fußgänger	q2 9225,13389 9312,13388
 #: note: falls die Umfahrungsstellen nicht zugeparkt sind, was wohl häufiger der Fall ist (gesehen: 2013-03-09, 2016-10-30)
 Fontanestr.: zwei Schwellen, können evtl. umfahren werden	q1 18240,6845 18254,6679
+#: note: normalerweise wohl keine Umfahrungsmöglichkeit
+Plönzeile: zwei Schwellen	q2 18574,6401 18676,6333
 #: note: wenn keine Autos illegalerweise an diesen Stellen parken
 Triniusstr.: zwei Schwellen, können umfahren werden	q1+ 18417,6775 18339,6660
 Kiautschoustr.: Fußgänger, Bordsteine	q3 6837,14848 6853,14854
@@ -2794,7 +2796,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="7"
-#: last_checked: 2020-11-21
+#: last_checked: 2021-03-21
 #: check_frequency: 120d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
@@ -5335,6 +5337,8 @@ Verlängerte Schulzendorfer Str.: Fußgänger	q1 2150,22464 2015,22435 1834,22421 1
 #: by: ^^^
 # 
 #: by: mapillary: vvv
+(Amselhainer Weg - Hirschfelder Weg): Fußgänger	q2 21886,15594 21892,15637
+(Bollersdorfer Weg - Amselhainer Weg): Fußgänger	q2 21849,15404 21860,15458
 (Rosenthaler Weg - Aubertstr.): einige Fußgänger	q1 11747,22496 11278,22848 11220,22886
 (Blankenfelder Str. - Goetheweg): einige Fußgänger	q1 10968,22546 11220,22886 11228,22914 11219,22932 11162,22939
 #: by: ^^^
