@@ -23367,16 +23367,15 @@ EOF
 	q2; 14710,11626 14764,11591 14830,11551 14849,11539 14949,11474 15016,11431
 EOF
      },
-     { from  => undef, # 
-       until => 1404364637, # undef, # XXX
-       text  => 'Reichenberger Str., Ohlauer Str., Lausitzer Str.: Polizeiabsperrung, Durchfahrt nicht möglich',
+     { from  => $isodate2epoch->("2021-03-23 15:00:00"), # undef, # 
+       until => $isodate2epoch->("2021-03-25 23:59:59"), # 1404364637, # undef, # XXX
+       text  => 'Reichenberger Str., Lausitzer Str.: Polizeiabsperrung, Durchfahrt unter Umständen nicht möglich, vom 24. März 2021, 15.00 Uhr und 25. März 2021, 23.59 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.morgenpost.de/bin/BMBE_SChule_sv.eps%29-129571564.jpg
-#: last_checked: 2014-07-02
-#: next_check: 2014-07-07
-	2::temp 12169,10310 12048,10097 12229,10014 12341,10218
-	q4::temp 12229,10014 12398,9938
+# REMOVED --- #: by: http://www.morgenpost.de/bin/BMBE_SChule_sv.eps%29-129571564.jpg --- #: last_checked: 2014-07-02 --- #: next_check: 2014-07-07 ---	2::temp 12169,10310 12048,10097 12229,10014 12341,10218 ---	q4::temp 12229,10014 12398,9938
+#: by: https://viz.berlin.de/2021/03/verkehrsvorschau_240321/
+	2::temp 11829,10192 12048,10097 12229,10014
+	2::temp 12169,10310 12048,10097 11946,9913
 EOF
      },
      { from  => 1404079200, # 2014-06-30 00:00
@@ -31078,6 +31077,7 @@ EOF
 #: last_checked: 2021-02-20 (mapillary)
 #: next_check: 2021-05-18
 	q4::inwork; 5244,6261 5390,6299 5560,6344
+#: XXX ist der Radverkehr hier noch betroffen?
 #: by: mapillary
 	q4::inwork 5560,6344 5582,6360
 EOF
@@ -31848,8 +31848,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-03-08 05:00:00"), # 1609650000, # 2021-01-03 06:00
-       until => $isodate2epoch->("2021-03-31 17:00:00"), # 1611590400, # 2021-01-25 17:00
-       text  => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 09.03.2021 05:00 Uhr bis 31.03.2021 17:00 Uhr',
+       until => $isodate2epoch->("2021-03-24 17:00:00"), # 1611590400, # 2021-01-25 17:00
+       text  => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 09.03.2021 05:00 Uhr bis 24.03.2021 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147346756', # inaktiv
        data  => <<EOF,
@@ -32212,6 +32212,15 @@ EOF
        source_id => '217300060',
        data  => <<EOF,
 	2::inwork 53811,97943 53912,97812
+EOF
+     },
+     { from  => 1616698800, # 2021-03-25 20:00
+       until => 1618239600, # 2021-04-12 17:00
+       text  => 'Ahrensfelder Chaussee: Bahnübergang wegen Bauarbeiten gesperrt, auch für Fußgänger und Radfahrer, vom 26.03.2021 20:00 Uhr bis 12.04.2021 17:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => '2147347017',
+       data  => <<EOF,
+	2::inwork 21359,18834 21332,18819 21278,18786
 EOF
      },
     );

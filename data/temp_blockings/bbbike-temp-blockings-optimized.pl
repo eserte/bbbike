@@ -1572,7 +1572,18 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: http://www.morgenpost.de/bin/BMBE_SChule_sv.eps%29-129571564.jpg --- #: last_checked: 2014-07-02 --- #: next_check: 2014-07-07 ---	2::temp 12169,10310 12048,10097 12229,10014 12341,10218 ---	q4::temp 12229,10014 12398,9938
+#: by: https://viz.berlin.de/2021/03/verkehrsvorschau_240321/
+	2::temp 11829,10192 12048,10097 12229,10014
+	2::temp 12169,10310 12048,10097 11946,9913
+',
+         'from' => 1616508000,
+         'id' => 2589,
+         'text' => 'Reichenberger Str., Lausitzer Str.: Polizeiabsperrung, Durchfahrt unter Umständen nicht möglich, vom 24. März 2021, 15.00 Uhr und 25. März 2021, 23.59 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1616713199
+       },
        undef,
        undef,
        undef,
@@ -2879,6 +2890,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: last_checked: 2021-02-20 (mapillary)
 #: next_check: 2021-05-18
 	q4::inwork; 5244,6261 5390,6299 5560,6344
+#: XXX ist der Radverkehr hier noch betroffen?
 #: by: mapillary
 	q4::inwork 5560,6344 5582,6360
 ',
@@ -3212,9 +3224,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1615176000,
          'id' => 3314,
          'source_id' => '2147346756',
-         'text' => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 09.03.2021 05:00 Uhr bis 31.03.2021 17:00 Uhr',
+         'text' => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 09.03.2021 05:00 Uhr bis 24.03.2021 17:00 Uhr',
          'type' => 'handicap',
-         'until' => 1617202800
+         'until' => 1616601600
        },
        undef,
        undef,
@@ -3479,6 +3491,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Wollin: Bauarbeiten an der Autobahnbrücke, u.U. komplett gesperrt, vom 29.3.2021 bis 11.4.2021',
          'type' => 'gesperrt',
          'until' => 1618178400
+       },
+       {
+         'data' => '	2::inwork 21359,18834 21332,18819 21278,18786
+',
+         'from' => 1616698800,
+         'id' => 3347,
+         'source_id' => '2147347017',
+         'text' => 'Ahrensfelder Chaussee: Bahnübergang wegen Bauarbeiten gesperrt, auch für Fußgänger und Radfahrer, vom 26.03.2021 20:00 Uhr bis 12.04.2021 17:00 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1618239600
        }
      
 );
