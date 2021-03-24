@@ -1331,8 +1331,8 @@ brüchiger Asphalt auf Fahrbahn	RW3; 17997,9929 18045,9917
 	RW1; 18387,10070 18339,10048 18296,10027
 #: XXX Bauarbeiten, wie wird der Zustand des Radwegs danach aussehen?
 #: source_id: 2147346080 (bis 31.3.2021)
-#: last_checked: 2021-03-06
-#: next_check: 2021-03-31
+#: last_checked: 2021-03-24
+# REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-03-31
 # REMOVED (Original-Eintrag) ---	RW1; 18296,10027 18210,9989 18045,9917
 provisorische Radspur	RW3; 18296,10027 18210,9989 18045,9917
 	RW3;RW1 18387,10070 18552,10135
@@ -3080,7 +3080,7 @@ Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/fahrrat-marzahn-hellersdorf-fordert-kreuzungsumbau-mehr-abstellanlagen-und-eine-fahrradstrasse_a292385 (Erwähnung der Grünmarkierung)
 #: by: http://www.infravelo.de/projekt/allee-der-kosmonauten/ (bis 1. Quartal 2021) (Arbeiten pausieren bis zum Frühjahr 2021)
 #: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 30.11.2020; mittlerweile inaktiv)
-#: last_checked: 2021-03-17 (mapillary) (nur vereinzelte Grünmarkierungen)
+#: last_checked: 2021-03-24 (nur vereinzelte Grünmarkierungen)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-03-31
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2020-11-30
@@ -3107,7 +3107,7 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: osm_watch: way id="4068148" version="24"
 #: osm_watch: way id="27942935" version="17"
 #: osm_watch: way id="11663312" version="28"
-#: osm_watch: way id="4689343" version="21"
+#: osm_watch: way id="4689343" version="22"
 #: source_id: 2147341322 (inaktiv)
 #: source_id: 2147342307 (inaktiv)
 #: source_id: 2147342363 (bis 31.5.2021)
@@ -3115,7 +3115,7 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: source_id: 2147345793 (inaktiv)
 #: XXX provisorische Radwegführung
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
-#: last_checked: 2021-02-23
+#: last_checked: 2021-03-23 (osm)
 #: check_frequency: 60d
 #: next_check: 2021-05-30
 	RW8; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
@@ -6531,11 +6531,11 @@ Tempo 10	RW6;RW6 15800,4464 15835,4437 15851,4424 15887,4400 15947,4361 16001,43
 #: note Benutzungspflicht wegen Einbahnstraßenregelung auf der Fahrbahn
 #: XXX_prog wird suboptimal gerendert (Kombination RW8+RW0 ist problematisch -> kein echter Zweirichtungsradweg)
 Gehweg für Radfahrer frei	RW8;RW0 -3746,2849 -3756,2790
-	RW6;RW6 17370,12649 17397,12732 17413,12783
+	RW6;RW6 17370,12649 17397,12732 17418,12797
 	RW6;RW6 17397,12732 17496,12691
 	RW6;RW6 17370,12649 17475,12603
 	RW6;RW6 17467,12659 17455,12687 17426,12699 17412,12660 17436,12652 17467,12659 17492,12650 17519,12638 17530,12620 17571,12557
-	RW6;RW6 17462,12525 17472,12552 17475,12603 17492,12650
+	RW6;RW6 17461,12521 17472,12552 17475,12603 17492,12650
 	RW3; 17843,18078 17768,18160 17702,18168
 die letzten Meter werden als Radweg auf dem Gehweg geführt	RW3; 17702,18168 17768,18160 17843,18078
 	RW3;RW3 11754,10516 11721,10530 11690,10543

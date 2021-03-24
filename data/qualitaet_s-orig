@@ -7247,7 +7247,7 @@ am Oder-Spree-Kanal: Waldweg, einige Wurzeln	Q2 29559,-2866 30540,-3125
 (Uferweg - Ernst-Ziesel-Str.): Verbundsteinpflaster	Q1+ 18744,5612 18787,5676
 Plönzeile: Asphalt	Q0 18574,6401 18676,6333 18767,6268 18859,6198 18970,6110
 (Zufahrt Zentrum Schöneweide): Asphalt, in der Lieferzone Beton	Q0 17728,5756 17656,5701 17412,5951 17483,6024
-(Gotlindestr. - Herzbergstr.): Asphalt	Q0 17301,12585 17313,12609 17289,12964 17267,13067 17257,13117
+(Gotlindestr. - Herzbergstr.): Asphalt	Q0 17301,12585 17313,12609 17299,12851 17289,12964 17267,13067 17257,13117
 Rudolf-Filter-Weg: Kleinsteinpflaster	Q1- 20988,15505 21009,15539
 Rudolf-Filter-Weg: Beton	Q0- 21009,15539 21040,15589
 (Rudolf-Filter-Weg - Landsberger Allee): Beton	Q0 21040,15589 21068,15646
@@ -9691,7 +9691,7 @@ Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Krankenhaus Herzberge - Landschaftspark Herzberge): Asphalt	Q0 17479,13434 17482,13316 17484,13257 17487,13198 17490,13133 17491,13125
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, einige Wurzelhebungen	Q0- 17698,13124 17739,13146 17871,13145 17906,13141
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt	Q0 17906,13141 17978,13328 18054,13477 18104,13510
-Allee der Kosmonauten: Beton mit einigen Hebungen	Q0- 17698,13134 17690,13365 17689,13405 17688,13430
+Allee der Kosmonauten: Beton mit einigen Hebungen und Asphaltflicken	Q1+ 17698,13134 17690,13365 17689,13405 17688,13430
 (zum Friedhof): Asphalt	Q0 17906,13141 17923,13134
 (Königsheideweg - Weststr.): wassergebundene Decke	Q1+ 17115,4757 17129,4837 17173,4902
 Fennstr.: Asphalt	Q0 18080,5376 18245,5551
@@ -11525,10 +11525,10 @@ Buschwindröschenweg: Verbundsteinpflaster	Q1+ 21379,33 21393,-29 21382,-31 21409
 # 
 # REMOVED --- #: next_check_id: IMLINDENHOF-2018 vvv --- #: by: https://de.wikipedia.org/wiki/Klinik_f%C3%BCr_Kinder-_und_Jugendmedizin_Lindenhof --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7145 (Empfehlung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136437163617/437163617/00222872/72-Anlagen/02/StrassenLindenhof001.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_45_5121_5232_online.pdf (Benennung von Straßen) --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/richtfest-fuer-groesstes-neubauvorhaben-der-howoge_a166322 --- #: XXX vermutlich asphaltiert, aber unter der Schlammschicht nicht erkennbar vvv --- #: osm_watch: way id="628078318" version="1" --- #: last_checked: 2018-12-13 vvv --- #: check_frequency: 60d vvv
 # REMOVED (wurde bei osm entfernt) --- #: XXX außerdem prüfen: gibt es eine Geh/Radverbindung zum Radweg Richtung Herzberge? --- #: osm_watch: way id="51438114" version="12"
-Klara-Weyl-Str.: Asphalt	Q0 17357,12566 17370,12649 17397,12732 17413,12783
+Klara-Weyl-Str.: Asphalt	Q0 17357,12566 17370,12649 17397,12732 17418,12797
 Klara-Weyl-Str.: Asphalt	Q0 17397,12732 17496,12691
 Im Lindenhof: Asphalt	Q0 17370,12649 17475,12603
-Im Lindenhof: Asphalt	Q0 17462,12525 17472,12552 17475,12603 17492,12650
+Im Lindenhof: Asphalt	Q0 17461,12521 17472,12552 17475,12603 17492,12650
 Im Lindenhof: Asphalt	Q0 17467,12659 17455,12687 17426,12699 17412,12660 17436,12652 17467,12659 17492,12650 17519,12638 17530,12620
 Im Lindenhof: Kleinsteinpflaster	Q2+ 17530,12620 17571,12557
 (Im Lindenhof - Am Städtischen Zentralfriedhof): unbefestigter Weg	Q2 17571,12557 17585,12539
@@ -11995,6 +11995,12 @@ Potsdamer Str.: Asphaltschäden	Q1; 7507,9458 7512,9572 7518,9791
 Potsdamer Str.: Asphaltschäden	Q1; 7526,9969 7579,10183
 (Supermarktparkplatz): Verbundsteinpflaster	Q1 2554,10258 2551,10266 2706,10362 2718,10359
 Marktplatz Griechische Allee: glatte Pflasterung	Q0- 18025,6700 18029,6674
+(Gotlindestr. - entlang des Wohngebiets Lindenhof): unbefestigter Weg	Q2 17357,12566 17461,12521
+(Klara-Weyl-Str. - Landschaftspark Herzberge): wassergebundene Decke	Q1 17418,12797 17422,12811 17400,12842
+(Klara-Weyl-Str. - Landschaftspark Herzberge): Verbundsteinpflaster	Q1+ 17400,12842 17363,12856 17347,12845 17299,12851
+#: note: extrapoliert
+Märkische Allee [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19649,13481 19653,13253 19706,13102 19821,12986 19933,12984
+(Allee der Kosmonauten - Wohngebiet): Asphalt	Q0 19628,13517 19649,13481
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -24149,7 +24155,9 @@ Kolibriweg: guter Beton	Q1 14056,3374 13822,3494
 Lappiner Str.: Kopfsteinpflaster	Q2 20037,12707 20103,12698
 #: confirmed_by: srt
 Lappiner Str.: asphaltiert	Q0 20103,12698 20197,12688 20299,12677 20414,12663
+#: confirmed_by: srt
 Lappiner Str.: asphaltiert	Q0 20541,12649 20680,12632
+#: confirmed_by: srt
 Lappiner Str.: asphaltiert	Q0 20410,12628 20537,12615
 Lappiner Str.: asphaltiert	Q0 20545,12683 20418,12699
 #: by: ^^^

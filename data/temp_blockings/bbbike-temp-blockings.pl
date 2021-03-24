@@ -31125,7 +31125,7 @@ EOF
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2020-12-27 (mapillary) vvv
-#: next_check: 2021-03-26 vvv
+#: next_check: 2021-05-03 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes Stück
 	q2::inwork; 4214,4595 4039,4500
@@ -31438,7 +31438,7 @@ EOF
 #: also_indoor: search Oberfeldstraße Bahnübergang
 #: osm_watch: way id="868347101" version="3"
 #: priority: #A
-#: last_checked: 2021-03-01 (osm)
+#: last_checked: 2021-03-24
 #: check_frequency: 90d
 #: next_check: 2021-03-31
 	2::inwork 20627,12162 20624,12133 20620,12108
@@ -32097,7 +32097,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-03-21
+#: last_checked: 2021-03-24
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738

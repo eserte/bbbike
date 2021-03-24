@@ -2913,7 +2913,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2020-12-27 (mapillary) vvv
-#: next_check: 2021-03-26 vvv
+#: next_check: 2021-05-03 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes Stück
 	q2::inwork; 4214,4595 4039,4500
@@ -3063,7 +3063,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: also_indoor: search Oberfeldstraße Bahnübergang
 #: osm_watch: way id="868347101" version="3"
 #: priority: #A
-#: last_checked: 2021-03-01 (osm)
+#: last_checked: 2021-03-24
 #: check_frequency: 90d
 #: next_check: 2021-03-31
 	2::inwork 20627,12162 20624,12133 20620,12108
@@ -3213,21 +3213,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: 2147346949
-#: by: wosch
-# REMOVED (genau so) --- #: XXX genaue Lage der Baustelle? --- #: last_checked: 2021-01-09 --- #: next_check: 2021-01-04
-# REMOVED ---	q4::inwork 9298,12765 9303,12718
-	q3::inwork; 9330,12538 9314,12652
-	q4::inwork; 9314,12652 9313,12662 9303,12718
-',
-         'from' => 1615176000,
-         'id' => 3314,
-         'source_id' => '2147346756',
-         'text' => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 09.03.2021 05:00 Uhr bis 24.03.2021 17:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1616601600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3378,7 +3364,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-03-21
+#: last_checked: 2021-03-24
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
