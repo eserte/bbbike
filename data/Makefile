@@ -1080,12 +1080,8 @@ fragezeichen-nextcheck.org-exact-dist:
 	-@$(READONLY) ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org
 
 # Like fragezeichen-nextcheck.org-exact-dist, but using the home coordinate for both start/goal
-${PERSISTENTTMPDIR}/fragezeichen-nextcheck-home-home.org:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
-	-@$(WRITEABLE) $@
-	centerc=`${PERL} -nle 'm{centerc.*\x27(\d+,\d+)\x27} and print $$1' ~/.bbbike/config`; \
-	    ${PERL} ${MISCSRCDIR}/fragezeichen2org.pl --expired-statistics-logfile=${PERSISTENTTMPDIR}/expired-fragezeichen-home-home.log --plan-dir=${HOME}/.bbbike/gps_uploads --with-searches-weight --max-dist=50 --dist-dbfile=${PERSISTENTTMPDIR}/dist.db -centerc $$centerc -center2c $$centerc --compile-command 'cd ${.CURDIR} && ${MAKE} ${PERSISTENTTMPDIR}/fragezeichen-nextcheck-home-home.org' *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
-	mv $@~ $@
-	-@$(READONLY) $@
+${PERSISTENTTMPDIR}/fragezeichen-nextcheck-home-home.org!
+	${PERL} doit.pl fragezeichen-nextcheck-home-home.org
 
 ${PERSISTENTTMPDIR}/projektierte_radstreifen.bbd:	fragezeichen-orig
 	cat fragezeichen-orig | ${GREPSTRASSEN} -sectionrx "projektierte Radstreifen" | ${CONVERT2HAFAS} -basefile fragezeichen-orig > $@
