@@ -6262,6 +6262,7 @@ EOF
        until => $isodate2epoch->("2019-05-05 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4, start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => 14, # später nochmal prüfen
        text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (4.5.2019 und 5.5.2019)',
        type  => 'gesperrt',
        source_id => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
@@ -16273,7 +16274,7 @@ EOF
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-02-27
+#: last_checked: 2021-03-25
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 EOF
@@ -23368,14 +23369,15 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-03-23 15:00:00"), # undef, # 
-       until => $isodate2epoch->("2021-03-25 23:59:59"), # 1404364637, # undef, # XXX
-       text  => 'Reichenberger Str., Lausitzer Str.: Polizeiabsperrung, Durchfahrt unter Umständen nicht möglich, vom 24. März 2021, 15.00 Uhr und 25. März 2021, 23.59 Uhr ',
+       until => 1616704094, # $isodate2epoch->("2021-03-25 23:59:59"), # 1404364637, # undef, # XXX
+       text  => 'Reichenberger Str., Lausitzer Str., evtl. auch Ohlauer Str. und Hobrechtbrücke: Polizeiabsperrung, Durchfahrt unter Umständen nicht möglich, vom 24. März 2021, 15.00 Uhr und 25. März 2021, 23.59 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: by: http://www.morgenpost.de/bin/BMBE_SChule_sv.eps%29-129571564.jpg --- #: last_checked: 2014-07-02 --- #: next_check: 2014-07-07 ---	2::temp 12169,10310 12048,10097 12229,10014 12341,10218 ---	q4::temp 12229,10014 12398,9938
 #: by: https://viz.berlin.de/2021/03/verkehrsvorschau_240321/
 	2::temp 11829,10192 12048,10097 12229,10014
 	2::temp 12169,10310 12048,10097 11946,9913
+	2::temp 12085,9778 12116,9825 12229,10014
 EOF
      },
      { from  => 1404079200, # 2014-06-30 00:00
@@ -29272,7 +29274,7 @@ EOF
 #: source_id: 2147343335 (Zeitraum siehe oben)
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (H)
-#: last_checked: 2020-12-28 (mapillary)
+#: last_checked: 2021-03-24 (mapillary)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2021-03-31
 #: XXX_prog: eigentlich q4+::inwork;

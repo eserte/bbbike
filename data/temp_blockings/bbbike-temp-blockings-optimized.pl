@@ -524,7 +524,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-02-27
+#: last_checked: 2021-03-25
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -1572,18 +1572,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: by: http://www.morgenpost.de/bin/BMBE_SChule_sv.eps%29-129571564.jpg --- #: last_checked: 2014-07-02 --- #: next_check: 2014-07-07 ---	2::temp 12169,10310 12048,10097 12229,10014 12341,10218 ---	q4::temp 12229,10014 12398,9938
-#: by: https://viz.berlin.de/2021/03/verkehrsvorschau_240321/
-	2::temp 11829,10192 12048,10097 12229,10014
-	2::temp 12169,10310 12048,10097 11946,9913
-',
-         'from' => 1616508000,
-         'id' => 2589,
-         'text' => 'Reichenberger Str., Lausitzer Str.: Polizeiabsperrung, Durchfahrt unter Umständen nicht möglich, vom 24. März 2021, 15.00 Uhr und 25. März 2021, 23.59 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1616713199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2485,7 +2474,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147343335 (Zeitraum siehe oben)
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (H)
-#: last_checked: 2020-12-28 (mapillary)
+#: last_checked: 2021-03-24 (mapillary)
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2021-03-31
 #: XXX_prog: eigentlich q4+::inwork;

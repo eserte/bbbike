@@ -393,6 +393,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW2;RW1 4741,5309 4677,5274 4593,5235 4512,5199
 	RW2;RW2 4512,5199 4432,5160 4343,5112
 neu asphaltiert, relativ breit	RW1; 10501,11056 10256,11160 10020,11262
+neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975
 # 
 #: XXX Radwege sollen saniert werden oder es entstehen sogar Radstreifen (Umsetzung 2018) vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
@@ -403,7 +404,7 @@ neu asphaltiert, relativ breit	RW1; 10501,11056 10256,11160 10020,11262
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
-#: last_checked: 2021-03-12 vvv
+#: last_checked: 2021-03-25 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -418,11 +419,6 @@ für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,1097
 eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10779,10934 10794,10927 10839,10907
 mäßiger Verbundsteinpflasterradweg	RW1; 10839,10907 10794,10927
 #: check_frequency ^^^
-#: XXX zurzeit sind hier Bauarbeiten
-#: last_checked: 2021-03-08
-#: check_frequency: 14d
-# REMOVED ---	RW1; 10794,10927 10779,10934 10684,10975
-provisorische Radspur	RW3; 10794,10927 10779,10934 10684,10975
 #: last_checked ^^^
 #: by ^^^
 #: XXX ^^^
@@ -2054,8 +2050,8 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 13244,11112 13290,11144 13317,11144
 #: by: https://www.rbb24.de/panorama/beitrag/2020/04/berlin-bvg-u1-u3-sanierungsarbeiten-ersatzverkehr-sperrung.html (bis voraussichtlich April 2021)
 #: by: https://abendblatt-berlin.de/2020/04/14/friedrichshain-kreuzberg-sanierungsarbeiten-starten/ (etwa 12 Monate (ab 14. April 2020))
 #: XXX wegen der U1/U3-SEV-Haltestelle wurden die Radspuren aufgehoben (danach die drei auskommentierten Einträge wieder aktivieren) vvv
-#: last_checked: 2021-03-19 vvv
-#: next_check: 2021-04-01 vvv
+#: last_checked: 2021-03-25 vvv
+#: next_check: 2021-04-12 vvv
 # geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13377,11145 13479,11147
 #	RW3; 13479,11147 13540,11148
 #geschützter Radstreifen, mit "Leitboys"	RW4; 13479,11147 13377,11145
@@ -3084,7 +3080,7 @@ Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-03-31
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2020-11-30
-	RW3;RW3 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467
+	RW4;RW3 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467
 die letzten 50 Meter als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 18382,13492 18226,13506
 asphaltiert	RW1; 18166,14277 18181,14110
 asphaltiert	RW2; 18181,14110 18166,14277
@@ -6683,6 +6679,8 @@ provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9154
 #: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-4/ (bis Alexandrinenstr., bis 2. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-3/ (Prinzenstr. - Alexandrinenstr., bis 4. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabsschnitt-2/ (Böcklerstr. - Prinzenstr., bis 2. Quartal 2021)
+#: by: https://www.tagesspiegel.de/berlin/sanierung-der-bvg-hochbahn-sperrung-auf-u1-und-u3-in-berlin-kreuzberg-wird-ab-freitag-ausgeweitet/27039930.html (Verstetigung ab 12.4.2021)
+#: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/
 #: source_id: 2147340884 (inaktiv)
 #: source_id: 2147340970 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_90638 (inaktiv)
@@ -6694,16 +6692,17 @@ provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9154
 #: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020) (inaktiv)
 #: source_id: 2147345931 (bis 31.3.2021)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
+#: XXX gemeinsame Bus- und Radspur, zumindest an der Zossener Brücke, genauer prüfen
 #: osm_watch: way id="169738742" version="20"
 #: osm_watch: way id="335487059" version="15"
 #: last_checked: 2021-03-20 vvv
 #: check_frequency: 60d vvv
-# REMOVED --- #: next_check: 2021-03-31 vvv
+#: next_check: 2021-04-12 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4;RW4 10605,10312 10363,10303 10122,10294
 provisorisch geschützter Radstreifen	RW4; 10122,10294 9948,10280 9873,10285
 provisorisch geschützter Radstreifen	RW4; 9865,10227 9948,10280 10122,10294
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -6740,7 +6739,8 @@ provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.924744.php (Potsdamer Brücke bis Flottwellstr.)
 #: by: https://abendblatt-berlin.de/2020/04/23/berlin-mitte-erster-temporaerer-radweg-eingerichtet/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
-#: by: http://www.infravelo.de/projekt/radfahren-am-landwehrkanal-suedseite/ (Verstetigung, 4. Quartal 2020 - 1. Quartal 2021) (Eintrag hat zwischendurch nicht existiert)
+#: by: http://www.infravelo.de/projekt/radfahren-am-landwehrkanal-suedseite/ (früherer Eintrag)
+#: by: http://www.infravelo.de/projekt/radfahren-am-landwehrkanal-suedseite-3/ (Verstetigung, 4. Quartal 2020 - 1. Quartal 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1065698.php (Bauarbeiten ab 22. März 2021 bis Ende Mai 2021)
 #: source_id: 2147346996 (bis 21.5.2021)
 #: osm_watch: way id="34057952" version="35"
