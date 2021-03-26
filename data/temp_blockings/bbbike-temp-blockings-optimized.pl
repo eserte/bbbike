@@ -2195,7 +2195,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2021-03-12
+#: last_checked: 2021-03-26
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2898,7 +2898,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
 #: source_id: 2147346671 (bis 3.5.2021)
 #: also_indoor: traffic (H,G) vvv
-#: note: laut rbbtext bis 2021-06-30 vvv
+#: note: laut rbb bis 2021-05-03 vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2020-12-27 (mapillary) vvv
@@ -3310,20 +3310,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1628866800
        },
-       {
-         'data' => '#: by: http://www.sanierung-suedliche-friedrichstadt.de/aktuelle-projekte/aktuelle-projekte/
-#: by: http://www.sanierung-suedliche-friedrichstadt.de/wp-content/uploads/2020/06/2020-06-08-SFS-Gitschiner-Ufer-Bauschild.pdf (bis 2021)
-#: XXX laut Baustellennotiz gesperrt bis Dezember 2020 (offensichtlich länger)
-#: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2021-02-13
-	2::inwork 9873,10285 9668,10306
-',
-         'from' => undef,
-         'id' => 3329,
-         'text' => 'Zossener Brücke - Mehringplatz: Weg wegen Bauarbeiten gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {

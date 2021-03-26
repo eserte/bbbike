@@ -7768,7 +7768,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8256,10264
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8264,10192 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2020-12-15 vvv
+#: last_checked: 2021-03-26 vvv
 #: check_frequency: 100d vvv
 #: osm_watch: way id="531908445" version="8"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
@@ -11161,8 +11161,8 @@ Kieler Brücke: Holzbohlen	Q1 7780,14431 7740,14409
 (Mariendorfer-Hafen-Weg - Im Marienpark): Kopfsteinpflaster	Q2 8035,3657 8046,3626 8070,3563
 Fregestr.: asphaltierter Radweg	Q0 5622,6400 5582,6360
 Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8187,13472 8183,13482 8141,13580 8103,13675
-#: note: Asphalt oder asphaltähnlich; bunt bemalt
-Am Hamburger Bahnhof: Asphalt	Q0 8103,13675 8059,13765
+# REMOVED (wurde wieder entfernt, by osm note 2526727) --- #: note: Asphalt oder asphaltähnlich; bunt bemalt
+Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8103,13675 8059,13765
 Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8059,13765 8025,13835 7997,13892
 (am 50hertz-Gebäude): gepflastert	Q2+ 8059,13551 8141,13580
 (Vorfahrt Petruskirche): Kopfsteinpflaster	Q2 5393,2053 5452,2077
@@ -11491,8 +11491,8 @@ Weinmeisterhornweg: unbefestigte Straße	Q2 -6854,12478 -7196,12754
 Oppelner Str.: stellenweise Kleinpflastersteine	Q1+ 12897,10439 12978,10581
 Boetticherstr.: Beton	Q0 2434,4299 2417,4327
 Bahndamm - Elsenstr.: unbefestigter Weg	Q2 13953,9372 13923,9405
-#: note: Asphalt oder asphaltähnlich; bunt bemalt
-(Am Hamburger Bahnhof - Uferweg): Asphalt	Q0 8103,13675 8151,13697
+# REMOVED (nicht mehr) --- #: note: Asphalt oder asphaltähnlich; bunt bemalt
+(Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8103,13675 8151,13697
 (Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8151,13697 8169,13705
 (Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2 8025,13835 8086,13862
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1- 8295,13531 8290,13538 8224,13634

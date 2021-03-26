@@ -40,7 +40,7 @@
 # 
 #: source_id: 2147346950 (bis 31.5.2021)
 #: also_indoor: traffic (G)
-#: last_checked: 2021-03-20
+#: last_checked: 2021-03-26
 #: next_check: 2021-05-31
 #: valid: -20210531
 Am Rudolfplatz: etwa 35m Fahrbahn vor der Modersohnstr. gesperrt, Ausweichen auf Gehweg	q3::inwork 14011,10812 13896,10851
@@ -194,7 +194,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 ### Mitte ###
 # 
 #: also_indoor: traffic
-#: last_checked: 2021-03-20
+#: last_checked: 2021-03-26
 Singerstr.: Baustelle, etwa 50m Fahrbahn gesperrt	q2::inwork 11613,12408 11497,12463
 # 
 #: osm_watch: way id="822127127" version="1"
@@ -274,7 +274,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED (mittlerweile komplett gesperrt) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021 --- #: osm_watch: way id="339201210" version="3" --- #: also_indoor: search Neue Roßstraßenbrücke --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 21d --- Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: last_checked: 2021-02-25 vvv
+#: last_checked: 2021-03-26 vvv
 #: next_check: 2021-05-01 vvv
 (Umfahrung Baustelle Neue Roßstraßenbrücke): einige Fußgänger	q3::inwork 10680,11875 10650,11909 10642,11901 10590,11840 10599,11819
 Neue Roßstr.: Fahrbahn gesperrt	q4::inwork 10687,11853 10722,11816
@@ -506,7 +506,7 @@ Jahnstr.: Bauarbeiten, etwa 50m der Fahrbahn sind gesperrt	q3::inwork 11500,9116
 #: XXX laut vmz bis Anfang 2019, laut fritz/rbb bis 30.06.2021
 #: by: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
 #: also_indoor: traffic (H)
-#: last_checked: 2021-03-08
+#: last_checked: 2021-03-26
 #: check_frequency: 90d
 #: next_check: 2021-06-30
 #: valid: -20210630
@@ -751,7 +751,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1053645.php (25. Februar 2021 - 16. April 2021)
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/bauarbeiten-kreuzung-gesperrt_a301644
 #: source_id: 2147346907 (bis 16.4.2021)
-#: last_checked: 2021-03-06 vvv
+#: last_checked: 2021-03-25 (mapillary) vvv
 #: next_check: 2021-04-16 vvv
 #: valid: -20210416 vvv
 Simon-Bolivar-Str./Küstriner Str.: Kreuzungsbereich gesperrt	q3::inwork 15856,14915 15944,14836 16033,14756

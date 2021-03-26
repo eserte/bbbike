@@ -1256,10 +1256,11 @@ Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4304,12562
 Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 #: next_check_id: UBAHN1-2020
+#: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren)
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt
-#: last_checked: 2021-03-08
-#: check_frequency: 60d
-#: next_check: 2021-04-01
+#: last_checked: 2021-03-26
+#: check_frequency: 30d
+# REMOVED (Arbeiten am Bahnhof dauern länger) --- #: next_check: 2021-04-01
 #(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
 Wadzeckstr.	1s:q4 11315,13210 11354,13184 11369,13174
@@ -3518,7 +3519,7 @@ Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: source_id ^^^
 #: also_indoor ^^^
 # 
-#: last_checked: 2021-03-08
+#: last_checked: 2021-03-26
 #: check_frequency: 60d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -3857,7 +3858,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2021-02-13
+#: last_checked: 2021-03-24 (architektur-urbanistik)
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
