@@ -3295,7 +3295,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: XXX ändert sich mit der Straßenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: osm_watch: way id="641657694" version="3"
 #: priority: #C
-#: last_checked: 2020-11-28
+#: last_checked: 2021-03-27
 #: check_frequency: 120d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
@@ -3352,7 +3352,7 @@ Fritz-Kortner-Str.: Asphalt	Q0 19258,7943 19282,7976 19303,8005 19320,8027 19334
 (Fritz-Kortner-Str. - Maria-Matray-Str.): Verbundsteinpflaster	Q1+ 19320,8027 19443,7937
 Am Birkenrevier: Verbundsteinpflaster	Q1+ 19303,8005 19176,8098
 Rohrlake: Verbundsteinpflaster	Q1+ 19168,7942 19109,7983 19061,7904
-Oskarstr.: Asphalt mit Schäden	Q1 17771,7880 17762,7931 17793,8012 17808,8042 17803,8079
+Oskarstr.: Asphalt mit Schäden	Q1- 17771,7880 17762,7931 17793,8012 17808,8042 17803,8079
 Gleyeweg: Asphalt	Q0 17762,7931 17683,7958 17651,7973 17613,7989 17529,8073 17532,8125 17566,8199 17597,8258
 Fuchsbau (Karlshorst): Asphalt	Q0 17651,7973 17590,7828
 Blaurackenweg: Asphalt	Q0 17613,7989 17647,8071 17532,8125
@@ -22016,9 +22016,14 @@ Klemkepark - Kopenhagener Str./Freiheitsweg: Mosaikpflaster	Q1 7313,18781 7248,1
 #: note: erlaubte Höchstgeschwindigkeit 10 km/h
 #: confirmed_by: Christian Marwitz meint "Unebener Weg mit teilweise Schienen und Betonflächen... Bodenmängel":
 #: corrected_by: srt: (Q3 -> Q2+, kein Kopfsteinpflaster)
-Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17308,9090 17335,8971 17380,8858 17416,8767 17483,8644 17554,8458
-#: corrected_by: srt: (Q3 -> Q2-)
-Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2- 17554,8458 17620,8366 17704,8327 17753,8290 17793,8225 17856,8162
+Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17308,9090 17335,8971 17380,8858 17416,8767 17449,8720
+# REMOVED (früher) --- Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17449,8720 17483,8644 17515,8567
+Hönower Wiesenweg: provisorische Baustraße	Q2 17449,8720 17483,8644 17515,8567
+Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17515,8567 17533,8505
+# REMOVED (früher) --- Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17533,8505 17554,8458
+Hönower Wiesenweg: provisorische Baustraße	Q2 17533,8505 17554,8458
+# REMOVED (früher) --- #: corrected_by: srt: (Q3 -> Q2-) --- Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2- 17554,8458 17620,8366 17704,8327 17753,8290 17793,8225 17856,8162
+Hönower Wiesenweg: provisorische Baustraße	Q2 17554,8458 17620,8366 17704,8327 17753,8290 17793,8225 17856,8162
 #: by: ^^^
 # 
 #: by: martin (noisee)

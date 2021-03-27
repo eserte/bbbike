@@ -85,7 +85,7 @@
 #: XXX Nöldnerstraße (Rummelsburg) in beiden Richtungen zwischen Karlshorster Straße und Stadthausstraße: Leitungsbau, Verkehr wird wechselseitig durch eine Baustellenampel geregelt, vom 16.12.2020 09:00 Uhr bis 28.05.2021 17:00 Uhr
 #: source_id: 2147346700
 #: also_indoor: traffic
-#: last_checked: 2021-03-24
+#: last_checked: 2021-03-27
 #: check_frequency: 30d
 #: next_check: 2021-05-28
 #: valid: -20210528
@@ -102,7 +102,7 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linke
 #: last_checked ^^^
 # 
 #: next_check_id: LANGHANS-2021
-#: last_checked: 2021-02-17
+#: last_checked: 2021-03-26 (mapillary)
 #: next_check: 2021-08-13
 Roelckestr./Lehderstr.: temporäre Ampel	X::inwork 12842,16032
 # 
@@ -110,7 +110,7 @@ Roelckestr./Lehderstr.: temporäre Ampel	X::inwork 12842,16032
 #: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/
 #: XXX bis wann wird es die Gegenverkehrsregelung geben?
 #: source_id: 2147346767 (bis 29.3.2021)
-#: last_checked: 2021-03-17 (mapillary) vvv
+#: last_checked: 2021-03-24 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-03-29 vvv
 #: valid: 20210222- vvv
@@ -3061,12 +3061,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2021-02-27
+#: last_checked: 2021-03-27
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
 	X::inwork 13278,6967
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: last_checked: 2020-12-27
+#: last_checked: 2021-03-27
 #: check_frequency: 90d
 	X::inwork 13627,7047
 # REMOVED --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103
@@ -3473,7 +3473,7 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2021-02-24 vvv
+#: last_checked: 2021-03-27 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

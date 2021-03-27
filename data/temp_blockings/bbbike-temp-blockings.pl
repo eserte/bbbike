@@ -29072,7 +29072,7 @@ EOF
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
-#: last_checked: 2021-02-17
+#: last_checked: 2021-03-26 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2021-08-13
 	q4::inwork 13508,15912 13312,16027 13189,16089 12943,16214 12859,16255 12797,16285 12725,16321 12564,16399 12399,16479 12189,16578
@@ -31995,7 +31995,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 2/2021: Durchfahrt ist noch möglich)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 3/2021: Durchfahrt ist noch möglich)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32004,21 +32004,21 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung? Falls ja, wo ist der gesperrte Abschnitt und gilt die Sperrung auch für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="24"
 #: osm_watch: way id="165832806" version="21"
-#: last_checked: 2021-02-11
+#: last_checked: 2021-03-27
 #: check_frequency: 45d
-	2::inwork 17704,8327 17620,8366
+	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17483,8644 17449,8720 17416,8767 17380,8858
 EOF
      },
      { from  => 1611529200, # 2021-01-25 00:00
-       until => $isodate2epoch->("2021-08-13 17:00:00"), # 1613430000, # 2021-02-16 00:00
+       until => 1616794888, # $isodate2epoch->("2021-08-13 17:00:00"), # 1613430000, # 2021-02-16 00:00
        text  => 'Lehderstr.: Einbahnstraßenregelung, gesperrt Richtung Westen, möglicherweise bis 13.8.2021',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: LANGHANS-2021
 #: source_id: 2147346889 (bis 13.8.2021)
 #: also_indoor: traffic (H)
-#: last_checked: 2021-02-17
-#: next_check: 2021-08-13
+# REMOVED (mittlerweile für Radfahrer freigegeben, siehe mapillary9 --- #: last_checked: 2021-02-17
+# REMOVED --- #: next_check: 2021-08-13
 	q3::inwork; 13307,15758 13214,15830 13086,15907 12842,16032
 EOF
      },
@@ -32098,7 +32098,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-03-24
+#: last_checked: 2021-03-27
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
