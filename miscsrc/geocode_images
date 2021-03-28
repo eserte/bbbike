@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = 1.36;
+our $VERSION = 1.37;
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -238,7 +238,29 @@ sub get_image_location {
 		}
 		my $lat = Karte::Polar::dms2ddd($lat_deg, $lat_min, $lat_sec);
 		my $lon = Karte::Polar::dms2ddd($lon_deg, $lon_min, $lon_sec);
-		my $iso_date = $exif->{DateTimeOriginal} || $exif->{CreateDate}; # XXX GPSDateTime is nonsense in the N95
+		my $iso_date = $exif->{DateTimeOriginal} || $exif->{CreateDate};
+		if (!$iso_date && $exif->{GPSDateTime} && $camera_make_model ne 'Nokia N95') { # GPSDateTime is nonsense in the N95
+		    eval {
+			if (my($y,$m,$d) = $exif->{GPSDateStamp} =~ m{^(\d{4}):(\d{2}):(\d{2})$}) {
+			    if (my($H,$M,$S) = $exif->{GPSDateTime} =~ m{^(\d{2}):(\d{2}):(\d{2})}) {
+				require DateTime;
+				my $dt = DateTime->new(year => $y, month => $m, day => $d,
+						       hour => $H, minute => $M, second => $S,
+						       time_zone => 'UTC');
+				$dt->set_time_zone($exif->{OffsetTime});
+				$iso_date = $dt->strftime("%Y:%m:%d %H:%M:%S");
+			    } else {
+				die "Cannot parse GPSDateTime '$exif->{GPSDateTime}'";
+			    }
+			} else {
+			    die "Cannot parse GPSDateStamp '$exif->{GPSDateStamp}'";
+			}
+		    };
+		    if (!$iso_date) {
+			warn "Cannot get date from image ($@)\n";
+			last FIND_GPS_POS;
+		    }
+		}
 		$iso_date =~ s{^(\d+):(\d+):(\d+)}{$1-$2-$3};
 		$iso_date =~ s{ }{T}; # -> iso date sep
 		my $ret = { Longitude => $lon,
