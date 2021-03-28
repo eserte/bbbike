@@ -25,7 +25,9 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.06;
+$VERSION = 2.07;
+
+use File::Glob qw(bsd_glob);
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -453,7 +455,22 @@ EOF
 				  'str', "$ENV{HOME}/.bbbike/geocoded_images.bbd",
 				  above => $str_layer_level,
 				 ),
-		[Button => $do_compound->("today's geocoded images", $images{camera}), -command => sub { add_todays_geocoded_images() }],
+		[Cascade => $do_compound->("geocoded images - more options", $images{camera}), -menuitems =>
+		 [
+		  [Button => $do_compound->("today", $images{camera}), -command => sub { add_todays_geocoded_images() }],
+		  (map {
+		      my $filename = $_;
+		      if (my($name) = $filename =~ m{/geocoded_images_(.*)\.bbd}) {
+			  layer_checkbutton([$do_compound->($name, $images{camera})],
+					    'str', $filename,
+					    above => $str_layer_level,
+					   );
+		      } else {
+			  warn "Unexpected: cannot parse '$filename'";
+		      }
+		  } bsd_glob "$ENV{HOME}/.bbbike/geocoded_images_*.bbd")
+		 ]
+		],
 		layer_checkbutton([$do_compound->('fragezeichen-outdoor')],
 				  'str', "$bbbike_rootdir/tmp/fragezeichen-outdoor.bbd",
 				  below_above_cb => sub {
@@ -503,8 +520,7 @@ EOF
 		],
 		do {
 		    my $glob = "$bbbike_rootdir/tmp/weighted/????-??_weighted_dir_*.bbd";
-		    require File::Glob;
-		    my @candidates = File::Glob::bsd_glob($glob);
+		    my @candidates = bsd_glob $glob;
 		    if (!@candidates) {
 			warn <<EOF;
 No candidates for a weighted bbd found
@@ -534,8 +550,7 @@ EOF
 		},
 		do {
 		    my $glob = "$bbbike_rootdir/tmp/weighted/????-??_last12months_weighted_dir_*.bbd";
-		    require File::Glob;
-		    my @candidates = File::Glob::bsd_glob($glob);
+		    my @candidates = bsd_glob $glob;
 		    if (!@candidates) {
 			warn <<EOF;
 No candidates for a weighted bbd for last 12 months found
@@ -1199,14 +1214,13 @@ sub set_layer_highlightning {
 sub add_todays_geocoded_images {
     require File::Copy;
     require File::Find;
-    require File::Glob;
     require File::Temp;
     my(@l) = localtime;
     my $y = $l[5]+1900;
     my $m = $l[4]+1;
     my $d = $l[3];
     my $glob = sprintf "$ENV{HOME}/images/from_handy/Fotos/%04d-%02d/%02d%02d%04d*.jpg", $y,$m,$d,$m,$y;
-    my @images = File::Glob::bsd_glob($glob);
+    my @images = bsd_glob $glob;
     File::Find::find(sub {
 			 if (-f $_ && $_ =~ m{.jpg$}i) {
 			     my(@s) = stat($_);
@@ -1728,10 +1742,9 @@ sub choose_Berlin_by_data {
     }
     require Encode;
     require File::Basename;
-    require File::Glob;
     my $t = $main::top->Toplevel;
     my $lb = $t->Scrolled('Listbox', -scrollbars => "osoe")->pack(qw(-fill both -expand 1));
-    $lb->insert("end", map { File::Basename::basename($_) } File::Glob::bsd_glob("$directory/*"));
+    $lb->insert("end", map { File::Basename::basename($_) } bsd_glob "$directory/*");
     $lb->bind("<Double-1>" => sub {
 		  my(@cursel) = $lb->curselection;
 		  my $basename = $lb->get($cursel[0]);
