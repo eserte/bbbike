@@ -30840,7 +30840,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-22
+#: last_checked: 2021-03-28
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32222,6 +32222,17 @@ EOF
        source_id => '2147347017',
        data  => <<EOF,
 	2::inwork 21359,18834 21332,18819 21278,18786
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Auerstr.: Fahrbahn wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic
+#: last_checked: 2021-03-28
+#: check_frequency: 14d
+	q4::inwork 13025,12523 13067,12583 13202,12790
 EOF
      },
     );
