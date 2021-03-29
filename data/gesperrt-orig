@@ -3282,10 +3282,13 @@ An der Dahme: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22197,2
 #: check_frequency: 60d
 Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881 11940,11982
 # 
+#: by: https://www.deutsches-architekturforum.de/thread/14299-wohnquartier-f%C3%BCrstenberger-stra%C3%9Fe-8-mitte-in-bau/?postID=686545#post686545
+#: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022)
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße.
 #: osm_watch: way id="308312347" version="3"
-#: last_checked: 2021-02-22
-#: check_frequency: 60d
+#: last_checked: 2021-03-29 (daf)
+#: check_frequency: 90d
+#: next_check: 2022-08-15
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 # 
 #: XXX bleibt die Absperrung dauerhaft?

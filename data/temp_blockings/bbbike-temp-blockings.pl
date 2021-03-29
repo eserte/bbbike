@@ -27712,9 +27712,9 @@ EOF
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
 #: also_indoor: traffic (G)
 #: priority: #B
-#: last_checked: 2021-02-17
+#: last_checked: 2021-03-29
 #: check_frequency: 60d
-#: next_check: 2021-03-26
+# REMOVED --- #: next_check: 2021-03-26
 	q3::inwork 13391,16436 13630,16629
 EOF
      },
@@ -29264,8 +29264,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # $isodate2epoch->("2021-02-28 17:00:00"), # undef, # XXX
-       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 31. März 2021, unter Umständen auch länger',
+       until => $isodate2epoch->("2021-03-30 17:00:00"), # undef, # XXX
+       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 30. März 2021, unter Umständen auch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SOLDINER-2019
@@ -29277,7 +29277,7 @@ EOF
 #: also_indoor: traffic (H)
 #: last_checked: 2021-03-24 (mapillary)
 # REMOVED --- #: check_frequency: 60d
-#: next_check: 2021-03-31
+#: next_check: 2021-03-30
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8904,17059 8866,17075 8677,17154
 # REMOVED (hier nicht mehr?) ---	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
@@ -30840,7 +30840,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-28
+#: last_checked: 2021-03-29
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31613,8 +31613,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2021-03-31 17:00:00"), # undef, # XXX
-       text  => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, voraussichtlich bis Ende März 2021',
+       until => $isodate2epoch->("2022-03-31 17:00:00"), # undef, # XXX
+       text  => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, bis Ende März 2021, möglicherweise noch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: MAINZER-2021

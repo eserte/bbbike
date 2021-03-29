@@ -283,7 +283,7 @@ Heerstr.: Erneuerung des Radwegs geplant	?::projected -3069,11487 -2851,11417 -2
 #: osm_watch: way id="182782708" version="11"
 #: osm_watch: way id="168307255" version="9"
 #: osm_watch: way id="4687243" version="27"
-#: last_checked: 2021-03-03
+#: last_checked: 2021-03-29
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14243,13890 14218,13834
 # 
@@ -1205,7 +1205,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285
 #: source_id: 2147344033 (bis Mitte Juli 2019; haben die Bauarbeiten was mit der Radwegführung zu tun?) (inaktiv)
 #: source_id: 2147346379 (bis 16.10.2020; beziehen sich die Bauarbeiten auf diese Verbindung oder den Radweg auf der Prenzlauer Promenade?) (keine Bauarbeiten zu erkennen)
 #: XXX war mal bei infravelo gelistet (id 9030023, URL http://www.infravelo.de/projekt/caligariplatz-2/, Bauende 3. Quartal 2023), ist aber mittlerweile (2021-02) verschwunden
-#: last_checked: 2021-03-17 (mapillary)
+#: last_checked: 2021-03-29
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2020-10-16
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str., vielleicht als Zweirichtungsradweg?	?::projected 12121,16317 12097,16263 12090,16199
@@ -2435,6 +2435,8 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Realisierung 2020 geplant)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.993321.php (Bau bis 30. Oktober 2020)
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/zwei-mal-bauarbeiten_a287920
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (bereits realisiert?)
+#: osm_watch: node id="4523973564" version="3"
 #: priority: #D vvv
 #: last_checked: 2020-11-07
 #: check_frequency: 30d
@@ -2893,7 +2895,8 @@ Golda-Meir-Steg: Fußgängerbrücke in Bau	?::inwork 7912,14160 7958,14186
 #: priority: #D vvv
 # REMOVED (realisiert) --- #: last_checked: 2018-10-18 --- Tiergartenstr. (vor dem Canisius-Kolleg): gibt es hier einen Zebrastreifen?	?::projected 7064,11519 7171,11510 7067,11475
 # REMOVED (ja) --- Johann-Georg-Str.: gibt es hier einen Zebrastreifen?	?::projected 3243,9917 3170,10041 3266,9936
-#: last_checked: 2021-01-22
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 Auguste-Viktoria-Str./Berkaer Str.: wird hier ein Zebrastreifen entstehen?	?::projected 2646,7793 2608,7798 2627,7828
 # REMOVED (ja) --- Lipschitzallee: gibt es hier einen Zebrastreifen?	?::projected 15052,2667 15078,2647 15105,2625
 # REMOVED (ja) --- Mädewalder Weg/Georgstr.: gibt es hier einen Zebrastreifen?	?::projected 22901,11792 22886,11776 22853,11774
@@ -2904,31 +2907,66 @@ Auguste-Viktoria-Str./Berkaer Str.: wird hier ein Zebrastreifen entstehen?	?::pr
 #: check_frequency ^^^
 #: by: ^^^
 # 
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf vvv
+#: priority: #D vvv
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 120d
+Wiesbadener Str./Sodener Str.: Zebrastreifen geplant	?::projected 3677,7363 3703,7324 3744,7274
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 90d
+Lausitzer/Reichenberger Str.: zwei Zebrastreifen geplant	?::projected 12032,10144 12048,10097 12073,10050
+#: last_checked: 2021-03-26
+#: check_frequency: 90d
+Möckernstr./Obentrautstr.: Zebrastreifen geplant	?::projected 8809,10190 8783,10166 8769,10139
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 120d
+Schönfließer Str./Gollanzcstr.: Zebrastreifen geplant	?::projected 2082,26098 2112,26066 2147,26039
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 120d
+Finckensteinallee/Baseler Str.: Zebrastreifen geplant	?::projected 3147,2888 3171,2848 3203,2802
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 120d
+Poelchaustr./Langhoffstr.: Zebrastreifen geplant	?::projected 19789,14494 19817,14459 19846,14421
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 120d
+Havemannstr./Flämingstr.: Zebrastreifen geplant (entsteht hier noch ein weiterer auf der Havemannstr., oder einer auf der Flämingstr.?)	?::projected 21427,18452 21446,18405 21399,18406
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 120d
+Burgfrauenstr./Fischgrundbrücke: Zebrastreifen geplant (entsteht hier noch ein weiterer auf der anderen Seite?)	?::projected 2645,24776 2690,24751 2684,24799
+#: priority ^^^
+#: by: ^^^
+# 
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf vvv
 #: priority: #D vvv
 #: last_checked: 2021-03-20
 #: check_frequency: 120d
 Reichsstr./Eschenallee: Zebrastreifen geplant (2020)	?::projected 1034,11720 1033,11754 1027,11797
-#: last_checked: 2020-09-27
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 90d
 Holtzendorffstr./Friedbergstr.: Zebrastreifen geplant (2020)	?::projected 2983,10827 3012,10812 3046,10800
-#: last_checked: 2021-01-02 (mapillary)
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 120d
 Wiesbadener Str./Johannisberger Str.: Zebrastreifen geplant (2020)	?::projected 4141,7303 4160,7278 4181,7249
 #: last_checked: 2021-03-20
 #: check_frequency: 90d
 Sömmeringstr. 10: Zebrastreifen geplant	?::projected 3703,12802 3734,12715 3751,12802
+#: note: auch als "FGÜ Wintersteinstraße 24" bekannt
 #: last_checked: 2021-03-20
 #: check_frequency: 90d
 Wintersteinstr./Charlottenburger Ufer: Zebrastreifen geplant	?::projected 3720,12587 3741,12607 3765,12578
-#: last_checked: 2020-10-12
-#: next_check: 2021-03-01
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 120d
 Wilhelmstr. 28 (Spandau): Zebrastreifen geplant	?::projected -4648,12219 -4658,12260 -4667,12308
 # REMOVED (so gut wie realisiert: Streifen existieren, Schilder hängen, nur zwei davon sind durchgestrichen) --- #: next_check: 2020-07-01 --- Lloyd-G.-Wells-Str.: Zebrastreifen geplant (2020)	?::projected -1441,1836 -1578,1740 -1427,1797
-#: last_checked: 2021-02-21 (mapillary)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 120d
 Grunewaldstr. 44: Zebrastreifen geplant	?::projected 6235,9166 6264,9156 6240,9139
-#: next_check: 2021-03-01
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 120d
 Daimlerstr./Benzstr.: Zebrastreifen geplant	?::projected 9282,1821 9281,1790 9288,1751
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1004381.php (bereits realisiert) --- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/zebrastreifen-an-der-leberstrasse_a290401 --- #: next_check: 2020-10-05 --- Leberstr./Gustav-Müller-Platz: neuer Zebrastreifen, wo genau?	? 7550,8622 7574,8596 7594,8563
 #: last_checked: 2021-02-27
@@ -2937,9 +2975,9 @@ Boelckestr./Fritz-Bräuning-Promenade: Zebrastreifen geplant	?::projected 8596,80
 #: last_checked: 2021-02-27
 #: check_frequency: 120d
 Boelckestr./Badener Ring: Zebrastreifen geplant	?::projected 8625,8476 8660,8454 8695,8426
-#: last_checked: 2021-03-09
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2021-03-01
 Südostallee/Im Brombeerwinkel: Zebrastreifen geplant	?::projected 17490,5422 17473,5471 17528,5471
 #: last_checked: 2020-10-04
 #: next_check: 2021-03-01
@@ -2949,12 +2987,15 @@ Am Falkenberg/Gartenstadtweg: Zebrastreifen geplant	?::projected 21680,948 21685
 #: last_checked: 2020-09-11
 #: check_frequency: 360d
 Heinsestr. 41: Zebrastreifen geplant	?::projected 3486,23443 3490,23472 3499,23507
-#: last_checked: 2020-11-07
-#: next_check: 2021-03-01
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 120d
 Buddestr./Königsweg: Zebrastreifen geplant	?::projected 2151,20619 2188,20600 2228,20581
-#: next_check: 2021-03-01
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 120d
 Dianastr. 44: Zebrastreifen geplant	?::projected 3778,21965 3771,21910 3818,21946
-#: last_checked: 2021-01-18 (mapillary)
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 120d
 Berliner Str. 105: Zebrastreifen geplant	?::projected 3947,23753 3985,23814 4033,23775
 #: priority ^^^
@@ -3324,7 +3365,7 @@ Berliner Allee: entstehen hier noch Radstreifen?	?::projected 14754,17673 14673,
 # REMOVED (realisiert) --- #: osm_watch: way id="29052147" version="29"
 # REMOVED (realisiert) --- #: osm_watch: way id="351509721" version="7"
 #: osm_watch: way id="4685718" version="27"
-#: last_checked: 2021-03-26 (mapillary) vvv
+#: last_checked: 2021-03-29 vvv
 #: check_frequency: 14d vvv
 # REMOVED (nicht vollständig realisiert) --- #: next_check: 2020-10-30 vvv
 # REMOVED (realisiert) --- Palisadenstr.: Ausbau zur Fahrradstraße	? 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
@@ -3457,7 +3498,7 @@ Gothaer/Eisenacher Str.: Ampel wird gebaut	?::projected 22883,15091 22899,15073 
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/verkehrsbetriebe-haben-neue-sonderstreifen-auf-der-sonnenallee-und-dem-britzer-damm-beantragt_a257617 (zeitlich nicht befristet, Randlage)
 #: XXX hier auch für Radfahrer frei?
 #: note: laut rbbtext bis 31.3.2021
-#: source_id: 2147344451 (bis 28.2.2021)
+#: source_id: 2147344451 (bis 28.2.2021) (inaktiv)
 #: last_checked: 2020-10-17
 #: next_check: 2021-03-31
 Britzer Damm: Busspur geplant	?::projected; 12564,4308 12547,4391 12731,4841
@@ -3842,15 +3883,19 @@ Hönower Str.: Radverkehrsanlagen geplant	?::projected 24556,12181 24554,12100 24
 Hönower/Karlshafener Str.: entsteht hier eine Fußgängerampel?	?::projected 24895,13039 24905,13004 24918,12962
 # 
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/ueberwege-sollen-kreisverkehr-an-der-hoenower-strasse-sicherer-machen_a194374
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: source_id: 2147347010 (Bau einer Fahrbahnquerung, bis 1.4.2021)
 #: priority: #D
-#: last_checked: 2021-02-20 (mapillary, weit entfernt)
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 60d
 #: next_check: 2021-04-01
 Jacques-Offenbach-Platz: hier sollen Zebrastreifen an den Einmündungen entstehen	?::projected 24491,12310 24530,12296 24568,12283
 # 
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/senat-will-noch-2021-geplanten-fussgaengerueberweg-bauen_a304653 (kein Fertigstellungstermin, aber noch 2021)
-#: next_check: 2021-12-31
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
+#: priority: #D
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 120d
 Marzahner Promenade: entsteht hier ein Zebrastreifen oder nur eine Überquerungshilfe?	?::projected  20155,15492 20226,15512 20173,15457
 # 
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksamt/protokolle/2018/vorlagen-zur-sitzung-vom-16-oktober-2018.pdf (abseits des Hauptwegs nicht mehr instandgesetzt) vvv
@@ -3868,7 +3913,7 @@ Stadtpark Steglitz: bleibt die Beleuchtung?	? 6026,4744 5947,4791 5885,4813 5852
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/umbauarbeiten-des-strassenknotens-duncker-krueger-und-kuglerstrasse-starten_a209626 (ab April 2019, drei Monate Bauzeit)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5789 (Benennungsabsicht)
 # REMOVED (done) --- : XXX außerdem: kann man hier eine Grünfläche einzeichnen? --- ein bisschen Gras gibt es...
-#: last_checked: 2021-03-17 (mapillary)
+#: last_checked: 2021-03-29
 #: check_frequency: 90d
 Benennung des Dreiecksplatzes nach Gertrud Pincus	? 11852,16061 11899,16037 11926,16088 11852,16061
 # 
@@ -4027,8 +4072,8 @@ Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 975
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/ideen-fuer-waldeyerstrasse_a302355
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/anwohner-koennen-sich-an-der-gestaltung-beteiligen_a303648
 #: osm_watch: way id="4685729" version="17"
-#: last_checked: 2021-02-02
-#: next_check: 2021-04-18
+#: last_checked: 2021-03-29
+# REMOVED --- #: next_check: 2021-04-18
 Waldeyerstr.: entsteht hier eine Fußgängerzone?	? 15058,12329 15003,12241
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9824 (Einwohnerfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9894 (Einwohnerfrage; vollständiger Umbau ab 2022)
@@ -4162,13 +4207,15 @@ Martin-Buber-Str./Kirchstr.: vielleicht Bau eines Minikreisels? Oder andere Maßn
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5095
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
-#: last_checked: 2021-02-22
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 90d
 Neumann/Elsa-Brändström-Str.: Zebrastreifen geplant	?::projected 11510,17172 11536,17153 11570,17129
 # 
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
 #: last_checked: 2021-03-19 (mapillary)
 #: check_frequency: 120d
@@ -4176,26 +4223,30 @@ Piesporter Str./Feldtmannstr.: Zebrastreifen geplant	?::projected 15215,17630 15
 # 
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
-#: last_checked: 2021-03-17 (mapillary)
+#: last_checked: 2021-03-29
 #: check_frequency: 90d
 Pistoriusstr./Heinersdorfer Str.: Zebrastreifen geplant	?::projected 12228,16862 12257,16876 12296,16880
 # 
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
-#: last_checked: 2021-01-17
+#: last_checked: 2021-03-29
 #: check_frequency: 60d
 Dunckerstr./Stargarder Str.: Zebrastreifen geplant, evtl. jetzt in der Dunckerstr.?	?::projected 11629,15467 11595,15460 11556,15446
 # 
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: priority: #D
-#: last_checked: 2020-09-27 (mapillary)
-#: check_frequency: 90d
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 120d
 Buchholzer Str./Charlottenstr.: Zebrastreifen geplant	?::projected 10765,20246 10802,20240 10845,20230
 # 
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Finanzierung 2020)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
 #: last_checked: 2021-03-20
 #: check_frequency: 90d
@@ -4209,51 +4260,59 @@ Paulsborner Str./Nestorstr.: Zebrastreifen geplant	?::projected 3315,9720 3340,9
 # REMOVED (realisiert) --- #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Finanzierung 2020, Realisierung 2020 geplant) --- #: priority: #D --- #: last_checked: 2020-06-01 --- #: check_frequency: 90d --- Groß-Berliner Damm/Abram-Joffe-Str.: Zebrastreifen geplant	?::projected 19202,3359 19242,3366 19285,3372
 # 
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Finanzierung 2020, Realisierung 2020 geplant)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
-#: last_checked: 2020-09-23
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 120d
 Glauchauer Str./Klingenthaler Str.: Zebrastreifen geplant	?::projected 24026,14014 24041,13979 24059,13947
 # 
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Finanzierung 2020)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
-#: last_checked: 2021-03-06
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 120d
 Oberfeldstr./Cecilienstr.: Zebrastreifen geplant	?::projected 20806,13990 20830,13960 20859,13922
 # 
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Finanzierung 2020)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: priority: #D
-#: last_checked: 2021-02-21
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 60d
 Sewanstr. östlich der B.-Grzimek-Schule: Zebrastreifen geplant (oder ist der schon realisierte Zebrastreifen weiter südöstlich gemeint?)	?::projected 17778,10123 17905,10122 17795,10177
 # 
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Finanzierung 2020)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
-#: last_checked: 2020-09-11
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 120d
 Wittenauer Str. zwischen Michelbacher Zeile und Lißberger Zeile: Zebrastreifen geplant	?::projected 5818,22257 5800,22204 5853,22226
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Finanzierung 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: priority: #D
-#: last_checked: 2021-01-20 (mapillary)
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 90d
 Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 11349,11227 11309,11221
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
 #: last_checked: 2021-03-26
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
-#: last_checked: 2021-01-22
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 90d
 Graunstr. 8: Zebrastreifen geplant	?::projected 9976,15366 9996,15400 10026,15380
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
-#: last_checked: 2021-01-22
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 120d
 Huttenstr. 12: Zebrastreifen geplant	?::projected 4916,13508 4985,13470 4913,13454
 # 
@@ -4266,13 +4325,15 @@ Dennewitzstr./Kurfürstenstr.: Zebrastreifen in Bau	?::inwork 8058,10330 8058,103
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
 #: source_id: 2147347007 (Fernwärmebau bis 25.6.2022, hat das auch Auswirkungen auf den Zebrastreifen?)
 #: priority: #D
-#: last_checked: 2021-02-19 (architektur-urbanistik)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 90d
 Hannah-Arendt-Str./Gertrud-Kolmar-Str.: Zebrastreifen geplant	?::projected 8747,11976 8783,11959 8824,11934
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: priority: #D
-#: last_checked: 2021-03-02
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: next_check: 2021-09-01
 Fischerinsel nördl. der Roßstraßenbrücke: Zebrastreifen geplant	?::projected 10645,11867 10604,11941 10679,11898
 # 
@@ -4283,20 +4344,23 @@ Fischerinsel nördl. der Roßstraßenbrücke: Zebrastreifen geplant	?::projected 106
 Swinemünder Str./Ramlerstr.: Zebrastreifen geplant	?::projected 9606,15753 9646,15737 9694,15718
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
-#: last_checked: 2021-01-22
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 120d
 Berolinastr. 8: Zebrastreifen geplant	?::projected 11732,12953 11673,12955 11715,12912
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: priority: #D
-#: last_checked: 2021-01-22
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 120d
 Sickingenstr./Rostocker Str.: Zebrastreifen geplant	?::projected 5131,14046 5100,14014 5073,13976
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: priority: #D
-#: last_checked: 2021-03-05
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 120d
 Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,14923 8442,14888
 # 
@@ -4330,9 +4394,9 @@ Dolgenseestr.: Zebrastreifen soll verstetigt werden	?::projected 17485,9833 1752
 #: by: https://viz.berlin.de/2021/01/verkehrsvorschau26012021/ (Ampelanlage erneuert (???), bis Ende März 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1353940740083216385 ("neu gebaut")
 #: osm_watch: node id="29420112" version="9"
-#: last_checked: 2020-12-20 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2021-03-31
+#: last_checked: 2021-03-29 (Bauarbeiten)
+#: check_frequency: 30d
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2021-03-31
 Prenzlauer Promenade/Elsa-Brändström-Str.	?::projected 11884,17273 11920,17245 11962,17220
 #: XXX ^^^
 # 
@@ -4457,9 +4521,9 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.1033458.php (Markierungsarbeiten ab April 2021, Freigabe im II. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/stargarder-strasse-2/ (Zeitraum Bau: 2. Quartal 2021 - 3. Quartal 2021)
 #: osm_watch: way id="11114397" version="29"
-#: last_checked: 2021-01-17
-#: check_frequency: 150d
-#: next_check: 2021-04-15
+#: last_checked: 2021-03-29
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2021-04-15
 Stargarder Str.: hier wird eine Fahrradstraße eingerichtet	?::projected 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
 #: XXX Hier sollen Fahrradstraßen entstehen vvv
@@ -4467,7 +4531,7 @@ Stargarder Str.: hier wird eine Fahrradstraße eingerichtet	?::projected 10953,15
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/noch-ignorieren-etliche-autofahrer-die-neuen-regelungen-auf-der-ossietzkystrasse_a280141 (noch 2020)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 ("neuer Radweg" -> vermutlich ist die Fahrradstraße gemeint, noch 2020)
 #: by: http://www.infravelo.de/projekt/bizetstrasse/ (Fahrradstraße geplant, 2. Quartal 2021 - 4. Quartal 2021)
-#: last_checked: 2021-03-07
+#: last_checked: 2021-03-29
 #: check_frequency: 120d
 #: next_check: 2021-12-31
 Bizetstr.: entsteht hier eine Fahrradstraße?	? 13409,15687 13456,15760 13524,15786 13540,15792 13572,15804 13665,15840 13867,15915 14056,15985 14248,16058 14295,16076 14552,16171
@@ -4475,10 +4539,10 @@ Bizetstr.: entsteht hier eine Fahrradstraße?	? 13409,15687 13456,15760 13524,157
 #: next_check: 2021-11-01 vvv
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (abschnittsweise Umsetzung 2021 und 2022/2023)
 #: XXX laut Tsp "später auch südlich bis zur Danziger und nördlich bis zur Wisbyer/Ostseestraße"
-#: last_checked: 2021-03-05
+#: last_checked: 2021-03-29
 Dunckerstr.: entsteht hier eine Fahrradstraße?	? 11595,15460 11632,15530 11654,15572 11689,15639 11736,15727
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021)
-#: last_checked: 2021-01-17
+#: last_checked: 2021-03-29
 Senefelderstr: entsteht hier eine Fahrradstraße?	? 11535,14900 11582,15021 11595,15058 11609,15114 11631,15192 11651,15273 11682,15397
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-12-06-19.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (... aus dem übergeordneten Straßennetz entlassen werden)
@@ -4606,8 +4670,9 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 # REMOVED (nein) --- #: XXX wird hier ein Zebrastreifen entstehen? --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5452 --- #: last_checked: 2017-05-21 --- #: check_frequency: 120d --- #: priority: #C --- Porzer Str./Coloniaallee	? 19948,-14 19972,-19 19998,-21
 # 
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/der-zebrastreifen-kommt-doch-noch_a215983
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
-#: last_checked: 2021-03-07
+#: last_checked: 2021-03-29
 #: check_frequency: 60d
 Meyerbeerstr./Smetanastr.: wird hier ein Zebrastreifen gebaut?	?::projected 14103,15916 14095,15891 14115,15875
 # 
@@ -4632,10 +4697,11 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4129
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: osm_watch: node id="6419849081" version="2"
-#: last_checked: 2020-12-19 (mapillary)
-#: check_frequency: 90d
 #: priority: #D
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: check_frequency: 90d
 Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen ausgebaut werden	?::projected 7763,20124 7790,20132 7802,20110
 # 
 # REMOVED (zurzeit in Bau, allerdings schon aufgenommen) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6153 --- #: next_check: 2017-06-01 --- #: priority: #C --- Seehausener Str.: vielleicht Bau eines Zebrastreifens	?::projected 18520,17525 18428,17497 18491,17560
@@ -4693,7 +4759,7 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 # REMOVED --- #: next_check: 2020-12-18
 # REMOVED (kann nicht gehalten werden?) --- #: next_check: 2020-11-13
 Rhinstr.: Verbreiterung der Radwege beidseitig	?::projected; 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17789,15098 17829,15015
-#: last_checked: 2021-03-07
+#: last_checked: 2021-03-29
 #: check_frequency: 60d
 Indira-Gandhi-Str.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 14828,15050 14686,15608 14653,15738 14609,15921 14597,15970 14595,15980 14576,16069 14552,16171 14522,16260 14499,16341
 #: last_checked: 2021-03-06
@@ -4717,7 +4783,7 @@ Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Rad
 #: by: https://api.fixmyberlin.de/api/projects/328 (Grünmarkierung + Verbreiterung, teilweise Leitboys)
 #: by: http://www.infravelo.de/projekt/scheffelstrasse/ (geschützter Radfahrstreifen in Planung, 2. Quartal 2021 - 4. Quartal 2022)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (geschützte Radstreifen 2021)
-#: last_checked: 2021-03-06
+#: last_checked: 2021-03-29
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch eine Änderung von RW3 -> RW4	?::projected 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855
@@ -4920,8 +4986,9 @@ Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str./Chausseestr.: wann ist der Weg f
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,7623 14614,7614
 # 
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/ueberweg-an-der-conrad-blenkle-strasse-vor-allem-fuer-schulkinder-wichtig_a291686 (erst 2021)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: priority: #D
-#: last_checked: 2021-02-04
+#: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 90d
 #: next_check: 2021-12-31
 Conrad-Blenkle-Str.: südliche der Rudi-Arndt-Str. soll ein Zebrastreifen entstehen	?::projected 13365,13777 13359,13832 13416,13798
@@ -8545,13 +8612,7 @@ Beiersdorf - Beerbaum: Qualität?	? 35980,34322 35977,34619 36085,34994 36096,353
 #: XXX laut osm asphaltiert
 Dollgow - Zernikow: Qualität?	? -17141,74157 -16859,74184 -16629,74151 -15730,74428 -14966,74667 -13662,75159
 # 
-#: XXX etwas (ein Radweg?) wird auf der Südseite gebaut
-#: source_id: LS/723-P/20/260 (bis 31.03.2021; "Errichtung von Fahrzeugrückhaltesystemen")
-#: source_id: LS/723-P/20/114
-#: last_checked: 2020-10-06 (mapillary)
-#: check_frequency: 180d
-#: next_check: 2021-03-31
-Saarmund - Michendorf: vermutlich Bau eines neuen Radwegs	?::inwork -8988,-10047 -9230,-10151 -9326,-10231 -9403,-10254 -9575,-10262 -9741,-10301 -10188,-10579
+# REMOVED (weitgehend fertigstellt, im Februar 2021 noch nicht offiziell freigegeben) --- #: XXX etwas (ein Radweg?) wird auf der Südseite gebaut --- #: source_id: LS/723-P/20/260 (bis 31.03.2021; "Errichtung von Fahrzeugrückhaltesystemen") --- #: source_id: LS/723-P/20/114 --- #: last_checked: 2020-10-06 (mapillary) --- #: check_frequency: 180d --- #: next_check: 2021-03-31 --- Saarmund - Michendorf: vermutlich Bau eines neuen Radwegs	?::inwork -8988,-10047 -9230,-10151 -9326,-10231 -9403,-10254 -9575,-10262 -9741,-10301 -10188,-10579 -10832,-10820 -11756,-10738
 # 
 (Lichtenrader Damm - Mellener Str.): Weg für Radfahrer befahrbar? Qualität? Fußgängerfrequenz? Überqueren des Mittelstreifens Lichtenrader Damm möglich? Nachts beleuchtet?	? 10909,-1790 10771,-1782
 # 
