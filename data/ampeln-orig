@@ -10,7 +10,7 @@
 # 
 #: next_check_id: HERMANNHESSESTR-2019
 #: XXX wird die temporäre Ampel durch eine permanente ersetzt?
-#: last_checked: 2020-09-20
+#: last_checked: 2021-03-30 (mapillary)
 #: check_frequency: 120d
 	X::inwork 9868,19023
 # 
@@ -1345,9 +1345,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 #: osm_watch: node id="7241153386" version="1"
-#: last_checked: 2021-01-29
+#: last_checked: 2021-03-30
 #: check_frequency: 90d
-#: next_check: 2021-03-31
+# REMOVED --- #: next_check: 2021-03-31
 	F::inwork 12330,8636
 # REMOVED (entfernt) --- #: next_check_id: KARLMARXSTR-2018 --- #: XXX provisorische Ampel an der Rollbergstr. während der Bauarbeiten --- laut osm mittlerweile entfernt --- #: osm_watch: node id="27554998" version="9" --- #: last_checked: 2020-09-29 --- #: next_check: 2020-10-20 ---	X::inwork 12714,8249
 	X 11154,14985
@@ -3042,7 +3042,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20221231 vvv
-#: last_checked: 2021-03-13 vvv
+#: last_checked: 2021-03-30 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
@@ -3055,7 +3055,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked ^^^
 #: note: Anforderungsampel
 #: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen
-#: last_checked: 2021-02-20
+#: last_checked: 2021-03-30
 	F::inwork 14239,6875
 #: next_check ^^^
 #: valid ^^^
@@ -3063,7 +3063,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2021-03-27
+#: last_checked: 2021-03-30
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
 	X::inwork 13278,6967

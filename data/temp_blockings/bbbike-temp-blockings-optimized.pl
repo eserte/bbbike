@@ -2466,27 +2466,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: SOLDINER-2019
-#: by: https://www.soldiner-quartier.de/aktuell.html?tx_news_pi1%5Bnews%5D=445&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=1b5efc55c1b5b262514c4bb696a56d73 (bis Ende 2020 oder Fr¸hjahr 2021)
-# REMOVED (existiert nicht mehr) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=77297
-#: source_id: 2147343335 (Zeitraum siehe oben)
-#: XXX bis wann gehen die Bauarbeiten?
-#: also_indoor: traffic (H)
-#: last_checked: 2021-03-24 (mapillary)
-# REMOVED --- #: check_frequency: 60d
-#: next_check: 2021-03-30
-#: XXX_prog: eigentlich q4+::inwork;
-	q4::inwork; 8904,17059 8866,17075 8677,17154
-# REMOVED (hier nicht mehr?) ---	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
-',
-         'from' => undef,
-         'id' => 3110,
-         'text' => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 30. M‰rz 2021, unter Umst‰nden auch l‰nger',
-         'type' => 'handicap',
-         'until' => 1617116400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2792,7 +2772,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-29
+#: last_checked: 2021-03-30
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3117,7 +3097,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: 2147346816
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb 31.03.2021, laut vmz 31.03.2022
 #: also_indoor: traffic (G)
-#: last_checked: 2021-03-02
+#: last_checked: 2021-03-30
 #: check_frequency: 45d
 #: next_check: 2021-03-31
 	q4::inwork 12162,8053 12147,8117

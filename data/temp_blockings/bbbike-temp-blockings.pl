@@ -21717,6 +21717,7 @@ EOF
        text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2019 bis 05.05.2019)',
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 4, start => "2020-05-06T00:00:00"]],
+       recurrence_prewarn_days => 14, # wegen Corona
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (ja) --- #: XXX wird die Veranstaltung noch abgesagt? --- #: next_check: 2020-04-23
@@ -30840,7 +30841,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-29
+#: last_checked: 2021-03-30
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31621,7 +31622,7 @@ EOF
 #: source_id: 2147346816
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb 31.03.2021, laut vmz 31.03.2022
 #: also_indoor: traffic (G)
-#: last_checked: 2021-03-02
+#: last_checked: 2021-03-30
 #: check_frequency: 45d
 #: next_check: 2021-03-31
 	q4::inwork 12162,8053 12147,8117
