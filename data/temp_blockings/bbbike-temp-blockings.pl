@@ -21543,7 +21543,7 @@ EOF
        until => $isodate2epoch->("2019-04-28 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 4, start => "2020-05-01T00:00:00"]],
-       recurrence_prewarn_days => 21, # wegen Corona
+       recurrence_prewarn_days => 7, # wegen Corona
        text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 26.4.2019 bis 28.4.2019',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
@@ -23125,6 +23125,7 @@ EOF
        until => $isodate2epoch->("2019-05-02 02:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4, start => "2020-05-03T00:00:00"]],
+       recurrence_prewarn_days => 14, # wegen Corona
        text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung des DGB), am 1. Mai 2019',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
@@ -28876,8 +28877,8 @@ EOF
 EOF
      },
      { from  => 1552239604, # 2019-03-10 18:40
-       until => $isodate2epoch->("2021-03-31 18:00:00"), # 1601503199, # 2020-09-30 23:59
-       text  => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis Ende März 2021',
+       until => $isodate2epoch->("2021-04-30 18:00:00"), # 1601503199, # 2020-09-30 23:59
+       text  => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis Ende April 2021',
        type  => 'handicap',
        accept_multi_feature_distance => 1500,
        data  => <<EOF,
@@ -30028,7 +30029,7 @@ EOF
      },
      { from  => undef, # $isodate2epoch->("2020-02-02 00:00:00"), # 1570223758, # 2019-10-04 23:15
        until => $isodate2epoch->("2021-03-31 18:00:00"), # undef, # $isodate2epoch->("2020-03-09 18:00:00"), # 1574118000, # 2019-11-19 00:00
-       text  => 'Brebacher Weg: Bahnübergang gesperrt, voraussichtlich bis Ende März 2021',
+       text  => 'Brebacher Weg: Bahnübergang gesperrt, bis Ende März 2021',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
@@ -30038,9 +30039,9 @@ EOF
 #: also_indoor: search Brebacher_Weg Bahnübergang
 #: osm_watch: way id="9829824" version="20"
 #: priority: #A
-#: last_checked: 2021-03-19 (osm)
-#: check_frequency: 90d
-#: next_check: 2021-03-31
+#: last_checked: 2021-03-31
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2021-07-01
 	2::inwork 21558,12073 21562,12088 21564,12097
 EOF
      },
@@ -31428,7 +31429,7 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2021-03-31 18:00:00"), # undef, # XXX
-       text  => 'Oberfeldstr.: Bahnübergang am S-Bhf. Biesdorf gesperrt, voraussichtlich bis Ende März 2021',
+       text  => 'Oberfeldstr.: Bahnübergang am S-Bhf. Biesdorf gesperrt, bis Ende März 2021',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9022 (Frage)
@@ -31438,13 +31439,14 @@ EOF
 #: by: https://twitter.com/SBahnBerlin/status/1347543580529758210 (S-Bahn fährt nicht bis 25.1.2021)
 #: by: https://abendblatt-berlin.de/2021/01/13/mit-dem-bus-statt-mit-der-bahn-durch-den-berliner-osten/
 #: by: https://viz.berlin.de/2021/01/s5/ (SEV bis 25.1.2021)
+#: by: https://pascalgrothe.de/neuigkeiten-zur-sperrung-der-bahnuebergaenge-in-biesdorf/ (zweiwöchige Sperrung im 2. Halbjahr 2021)
 #: XXX bis wann ist der Bahnübergang gesperrt?
 #: also_indoor: search Oberfeldstraße Bahnübergang
 #: osm_watch: way id="868347101" version="3"
 #: priority: #A
-#: last_checked: 2021-03-24
-#: check_frequency: 90d
-#: next_check: 2021-03-31
+#: last_checked: 2021-03-31
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2021-07-01
 	2::inwork 20627,12162 20624,12133 20620,12108
 EOF
      },
@@ -31615,16 +31617,16 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2022-03-31 17:00:00"), # undef, # XXX
-       text  => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, bis Ende März 2021, möglicherweise noch länger',
+       text  => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, bis Ende März 2022',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: MAINZER-2021
-#: source_id: 2147346816
-#: XXX: Wann sind die Bauarbeiten beendet? Laut rbb 31.03.2021, laut vmz 31.03.2022
+#: source_id: 2147346816 (bis 31.03.2022)
+#: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2022
 #: also_indoor: traffic (G)
 #: last_checked: 2021-03-30
-#: check_frequency: 45d
-#: next_check: 2021-03-31
+#: check_frequency: 90d
+#: next_check: 2022-03-31
 	q4::inwork 12162,8053 12147,8117
 EOF
      },
@@ -32099,7 +32101,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-03-27
+#: last_checked: 2021-03-31
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738

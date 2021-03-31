@@ -2364,9 +2364,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1552239604,
          'id' => 3077,
-         'text' => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis Ende März 2021',
+         'text' => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis Ende April 2021',
          'type' => 'handicap',
-         'until' => 1617206400
+         'until' => 1619798400
        },
        undef,
        undef,
@@ -2607,25 +2607,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1640991599
        },
-       {
-         'data' => '# REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
-# REMOVED (alt) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php --- #: by: fritz --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergang-gesperrt_a251392
-#: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
-#: XXX es wird nochmal im zweiten Halbjahr 2021 eine zweiwöchige Sperrung geben
-#: also_indoor: search Brebacher_Weg Bahnübergang
-#: osm_watch: way id="9829824" version="20"
-#: priority: #A
-#: last_checked: 2021-03-19 (osm)
-#: check_frequency: 90d
-#: next_check: 2021-03-31
-	2::inwork 21558,12073 21562,12088 21564,12097
-',
-         'from' => undef,
-         'id' => 3171,
-         'text' => 'Brebacher Weg: Bahnübergang gesperrt, voraussichtlich bis Ende März 2021',
-         'type' => 'gesperrt',
-         'until' => 1617206400
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: KOENIGSTEINBRUECKE-2019
@@ -3020,29 +3002,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9022 (Frage)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9049 (ab August (2020 oder 2021?) für sechs Monate, auch beim Brebacher Weg, Bau einer Autoüberfahrt?)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9184 (fehlende Umleitung)
-#: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
-#: by: https://twitter.com/SBahnBerlin/status/1347543580529758210 (S-Bahn fährt nicht bis 25.1.2021)
-#: by: https://abendblatt-berlin.de/2021/01/13/mit-dem-bus-statt-mit-der-bahn-durch-den-berliner-osten/
-#: by: https://viz.berlin.de/2021/01/s5/ (SEV bis 25.1.2021)
-#: XXX bis wann ist der Bahnübergang gesperrt?
-#: also_indoor: search Oberfeldstraße Bahnübergang
-#: osm_watch: way id="868347101" version="3"
-#: priority: #A
-#: last_checked: 2021-03-24
-#: check_frequency: 90d
-#: next_check: 2021-03-31
-	2::inwork 20627,12162 20624,12133 20620,12108
-',
-         'from' => undef,
-         'id' => 3282,
-         'text' => 'Oberfeldstr.: Bahnübergang am S-Bhf. Biesdorf gesperrt, voraussichtlich bis Ende März 2021',
-         'type' => 'gesperrt',
-         'until' => 1617206400
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://pbs.twimg.com/media/EjnrSB_XgAEKrYS?format=jpg&name=medium
@@ -3094,17 +3054,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: next_check_id: MAINZER-2021
-#: source_id: 2147346816
-#: XXX: Wann sind die Bauarbeiten beendet? Laut rbb 31.03.2021, laut vmz 31.03.2022
+#: source_id: 2147346816 (bis 31.03.2022)
+#: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2022
 #: also_indoor: traffic (G)
 #: last_checked: 2021-03-30
-#: check_frequency: 45d
-#: next_check: 2021-03-31
+#: check_frequency: 90d
+#: next_check: 2022-03-31
 	q4::inwork 12162,8053 12147,8117
 ',
          'from' => undef,
          'id' => 3297,
-         'text' => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, bis Ende März 2021, möglicherweise noch länger',
+         'text' => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, bis Ende März 2022',
          'type' => 'handicap',
          'until' => 1648738800
        },
@@ -3307,7 +3267,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-03-27
+#: last_checked: 2021-03-31
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738

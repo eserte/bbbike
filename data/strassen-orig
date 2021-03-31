@@ -5390,7 +5390,8 @@ Neuendorfer Str.	H -3251,14741 -3228,14794 -3153,14868 -3126,14948 -3110,15000 -
 (Neuendorfer Str. - Neue Brücke)	N -3153,14868 -3113,14832 -3123,14755
 (Neuendorfer Str. - Feldstr.)	NN -3110,15000 -3177,15053
 Feldstr. (Spandau)	N -3177,15053 -3258,15100 -3368,15170 -3534,15219
-Feldstr. (Spandau)	N -3582,15244 -3585,15221 -3635,15213 -3630,15268
+Feldstr. (Spandau)	NN -3582,15244 -3585,15221
+Feldstr. (Spandau)	N -3585,15221 -3635,15213 -3630,15268
 Schäferstr. (Hakenfelde)	N -2915,15994 -2673,16021 -2656,16010
 Schützenstr. (Hakenfelde)	N -2869,15782 -2859,15785 -2813,15871 -2656,16010 -2624,16049
 Brauereihof	N -2783,15538 -2809,15459 -2858,15475 -2886,15393 -2856,15383 -2801,15365 -2775,15446 -2809,15459
@@ -13380,14 +13381,16 @@ Klutstr.	N 26057,5553 25757,5536
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/grenzallee-wird-angebunden_a294931
 #: by: https://twitter.com/VIZ_Berlin/status/1364948097718190084 (bis Ende März 2021 für den Kfz-Verkehr gesperrt)
 #: XXX im Zuge des A100-Ausbaus wird die Bergiusstr. verschwenkt
-#: source_id: 2147346461 (bis 31.3.2021)
-#: source_id: 2147346643 (bis 31.3.2021)
+#: note laut rbb bis 3.1.2022
+#: source_id: 2147346461 (bis 31.12.2021)
+#: source_id: 2147346643 (bis 31.12.2021)
 #: osm_watch: way id="194653032" version="20"
 #: osm_watch: way id="846595294" version="2"
 #: osm_watch: way id="38725490" version="15"
+#: also_indoor: traffic (G)
 #: last_checked: 2021-03-30
 #: check_frequency: 90d
-# REMOVED --- #: next_check: 2021-03-31
+#: next_check: 2021-12-31
 (Zufahrt zur Bergiusstr.)	NN 14051,6731 14106,6663
 #: last_checked: 2021-02-20 vvv
 #: check_frequency: 90d vvv
@@ -14619,7 +14622,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="13"
-#: last_checked: 2021-03-24
+#: last_checked: 2021-03-31
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -14996,7 +14999,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="15"
-#: last_checked: 2021-03-24
+#: last_checked: 2021-03-31
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)

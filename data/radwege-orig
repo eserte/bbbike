@@ -856,7 +856,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://abendblatt-berlin.de/2020/07/10/treptow-koepenick-elsenbruecke-ist-am-wochenende-gesperrt/
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
-#: source_id: 2147346063
+#: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
 #: last_checked: 2021-03-30
 #: check_frequency: 60d
@@ -864,7 +864,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
 	RW4; 14323,9913 14289,9870 14244,9812 14196,9749
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
-	RW1; 17621,10994 17560,10973 17466,10941 17257,10875 17226,10865 17141,10838 17083,10814 16892,10731 16751,10674 16725,10662 16699,10611
+Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 17621,10994 17560,10973 17466,10941 17257,10875 17226,10865 17141,10838 17083,10814 16892,10731 16751,10674 16725,10662 16699,10611
 	RW1;RW1 16647,10632 16699,10611 16808,10554 16941,10487 17081,10415 17163,10374 17202,10355 17210,10350 17427,10259
 	RW1;RW1 11251,13667 11329,13785 11378,13891 11435,14023 11465,14122 11471,14143 11498,14234 11572,14452 11633,14631 11655,14697 11682,14777
 	RW2;RW1 11682,14777 11709,14856
@@ -1326,9 +1326,9 @@ brüchiger Asphalt auf Fahrbahn	RW3; 17997,9929 18045,9917
 	RW1; 18045,9917 18210,9989 18296,10027 18339,10048 18387,10070
 	RW1; 18387,10070 18339,10048 18296,10027
 #: XXX Bauarbeiten, wie wird der Zustand des Radwegs danach aussehen?
-#: source_id: 2147346080 (bis 31.3.2021)
-#: last_checked: 2021-03-24
-# REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-03-31
+#: source_id: 2147346080 (bis 31.3.2021) (inaktiv)
+#: last_checked: 2021-03-31
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2021-03-31
 # REMOVED (Original-Eintrag) ---	RW1; 18296,10027 18210,9989 18045,9917
 provisorische Radspur	RW3; 18296,10027 18210,9989 18045,9917
 	RW3;RW1 18387,10070 18552,10135
@@ -3831,7 +3831,8 @@ Radweg antik und unbenutzbar	RW1; 19005,9816 18934,9826 18881,9865
 Radweg antik und unbenutzbar	RW1;RW1 19005,9816 19100,9811 19144,9810 19242,9815 19398,9833
 Verbundsteinpflasterradweg	RW1;RW1 19398,9833 19459,9842 19536,9853 19669,9876
 angedeuteter Radweg	RW1; 22603,12359 22388,12190 22304,12157 22129,12155 21995,12153 21970,12153 21935,12153 21819,12154
-	RW1; 22304,12157 22388,12190 22603,12359
+	RW1; 22304,12157 22388,12190
+betoniert, außerdem existiert eine asphaltierte Nebenfahrbahn	RW1; 22388,12190 22603,12359
 # REMOVED (gibt es nicht mehr) --- Busspur gilt täglich 6-18 Uhr	RW5; 18555,12101 18411,12100
 	RW4;RW4 18296,12115 18411,12100 18555,12101
 	RW1;RW2 10849,17848 10918,17892 10929,17902
@@ -6693,7 +6694,7 @@ provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9154
 #: source_id: 2147345226 (Fahrbahnausbesserungen bis Ende Dezember 2019, laut fritz bis 20.12.2019) (inaktiv)
 #: source_id: 2147345290 (bis Ende Januar 2020, laut fritz bis 24.1.2020) (inaktiv)
 #: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020) (inaktiv)
-#: source_id: 2147345931 (bis 31.3.2021)
+#: source_id: 2147345931 (bis 31.3.2021) (inaktiv)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021)
 #: osm_watch: way id="169738742" version="20"
