@@ -1897,7 +1897,6 @@ Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3902,10043 3927,9935
 Treskowallee: Straßenbahntrasse	3nocross 18809,9133 18790,9018 18770,8898
 Treskowallee: Straßenbahntrasse	3nocross 18010,7133 18086,7243 18165,7371
-Treskowallee: Straßenbahntrasse	3nocross 18406,7760 18577,8033 18633,8126
 Treskowallee: Straßenbahntrasse	3nocross 18878,9517 18867,9464 18834,9256 18809,9133
 #: note: Spichernplatz, nicht überquerbar vvv
 Bundesallee	3nocross::ignrte 5463,9961 5461,9923 5467,9866
@@ -3259,7 +3258,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: check_frequency: 45d
 (Weg parallel zur und unter der Minna-Todenhagen-Brücke): mit Bauzäunen abgesperrt	2::inwork 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
 # 
-#: last_checked: 2021-03-27
+#: last_checked: 2021-04-01
 #: check_frequency: 30d
 (Breiter Weg - Südostallee/Sterndamm): Durchgang ist wegen Bauarbeiten gesperrt	2::inwork 17538,5301 17601,5374
 # 
@@ -3352,7 +3351,7 @@ Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun 
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422 ("Fußgängerzone beschlossen" --- bleibt es permanent?)
 #: XXX bis wann bleibt diese Straße eine "Klimastraße"?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-03-28
+#: last_checked: 2021-04-01
 # REMOVED (bleibt vermutlich länger?) --- #: next_check: 2020-12-31
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939 13856,10864
 # 
@@ -3432,13 +3431,13 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2021-03-30
+#: last_checked: 2021-04-01
 #: check_frequency: 360d
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14348,10266 14462,10206 14480,10157
 # 
 #: by: wosch
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2021-03-30
+#: last_checked: 2021-04-01
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152 14373,10046
 # 
@@ -4148,13 +4147,12 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # REMOVED --- #: next_check_id: GRENZALLEE-2014 --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/04_Umleitungsstrecken_Grenzallee.pdf --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/02_Ueplan_West_Bph1.pdf --- #: XXX zeitgleich wird die Neuköllnische Allee zwischen Lahnstr. und Grenzallee gesperrt, aber wohl nicht für Radfahrer --- #: source_id: IM_021335 --- #: source_id: 2147338144 --- #: source_id: LMS-BR_r_LMS-BR_6571 --- #: last_checked: 2018-10-27 --- # REMOVED --- #: next_check: 2019-12-31 --- #: next_check: 2019-01-24 --- #: priority: #A --- #: valid: 20140224-20191231 --- Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
-#: XXX laut rbbtext bis 31.3.2021 (kann aber nicht sein)
-#: source_id: 2147343691 (bis 26.2.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile inaktiv?!)
+#: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaßnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da)
+#: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G)
 #: last_checked: 2021-03-30
 #: check_frequency: 90d
-# REMOVED --- #: next_check: 2021-03-31
-#: next_check: 2022-12-31
+#: next_check: 2022-09-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 # 
 # REMOVED --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- 

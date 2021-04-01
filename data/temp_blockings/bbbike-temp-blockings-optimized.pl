@@ -823,7 +823,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -859,6 +859,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: note: nicht gesperrt: 2012-07-19 (Do) gegen 14 Uhr
 #: note: nicht gesperrt: 2013-09-07 (Sa) gegen 13 Uhr
 #: note: nicht gesperrt: 2021-03-21 (So) gegen 15 Uhr
+#: note: nicht gesperrt: 2021-04-01 (Do) gegen 11:30 Uhr
 #: tempex: volatile
 	2::temp 18870,5833 18932,5926
 ',
@@ -2300,7 +2301,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-03-20
+#: last_checked: 2021-03-29 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -2754,7 +2755,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-30
+#: last_checked: 2021-04-01
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3054,19 +3055,19 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: next_check_id: MAINZER-2021
-#: source_id: 2147346816 (bis 31.03.2022)
-#: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2022
+#: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022)
+#: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G)
 #: last_checked: 2021-03-30
 #: check_frequency: 90d
-#: next_check: 2022-03-31
+#: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
 ',
          'from' => undef,
          'id' => 3297,
-         'text' => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, bis Ende März 2022',
+         'text' => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, bis Ende März 2025',
          'type' => 'handicap',
-         'until' => 1648738800
+         'until' => 1743433200
        },
        undef,
        undef,
@@ -3095,14 +3096,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: last_checked: 2021-02-20
-#: next_check: 2021-04-01
+#: next_check: 2021-04-23
 	q3::inwork 8858,4579 8561,4535
 ',
          'from' => 1606936220,
          'id' => 3310,
-         'text' => 'Reulestr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, bis 01.04.2021',
+         'text' => 'Reulestr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, bis 23.04.2021',
          'type' => 'handicap',
-         'until' => 1617292800
+         'until' => 1619193600
        },
        {
          'data' => '#: next_check_id: CORONA-2020
@@ -3267,7 +3268,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-03-31
+#: last_checked: 2021-04-01
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3345,10 +3346,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1625090400
        },
        {
-         'data' => '#: XXX bis wann ist die Fahrbahn gesperrt?
+         'data' => '#: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-03-21
-#: check_frequency: 60d
+#: last_checked: 2021-04-01
+#: check_frequency: 30d
 	q4::inwork 18260,5746 18164,5701
 ',
          'from' => undef,

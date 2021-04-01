@@ -379,6 +379,7 @@ EOF
        until => $isodate2epoch->("2019-05-01 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 5, start => "2020-05-02T00:00:00"]],
+       recurrence_prewarn_days => 7, # wegen Corona
        text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2019',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -18355,6 +18356,7 @@ EOF
 #: note: nicht gesperrt: 2012-07-19 (Do) gegen 14 Uhr
 #: note: nicht gesperrt: 2013-09-07 (Sa) gegen 13 Uhr
 #: note: nicht gesperrt: 2021-03-21 (So) gegen 15 Uhr
+#: note: nicht gesperrt: 2021-04-01 (Do) gegen 11:30 Uhr
 #: tempex: volatile
 	2::temp 18870,5833 18932,5926
 EOF
@@ -28584,7 +28586,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-03-20
+#: last_checked: 2021-03-29 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -30842,7 +30844,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-03-30
+#: last_checked: 2021-04-01
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31616,17 +31618,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2022-03-31 17:00:00"), # undef, # XXX
-       text  => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, bis Ende März 2022',
+       until => $isodate2epoch->("2025-03-31 17:00:00"), # undef, # XXX
+       text  => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, bis Ende März 2025',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: MAINZER-2021
-#: source_id: 2147346816 (bis 31.03.2022)
-#: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2022
+#: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022)
+#: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G)
 #: last_checked: 2021-03-30
 #: check_frequency: 90d
-#: next_check: 2022-03-31
+#: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
 EOF
      },
@@ -31799,12 +31801,12 @@ EOF
 EOF
      },
      { from  => 1606936220, # 2020-12-02 20:10
-       until => $isodate2epoch->("2021-04-01 18:00:00"), # laut rbb; 1615050000, # 2021-03-06 18:00
-       text  => 'Reulestr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, bis 01.04.2021',
+       until => $isodate2epoch->("2021-04-23 18:00:00"), # laut rbb; 1615050000, # 2021-03-06 18:00
+       text  => 'Reulestr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, bis 23.04.2021',
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2021-02-20
-#: next_check: 2021-04-01
+#: next_check: 2021-04-23
 	q3::inwork 8858,4579 8561,4535
 EOF
      },
@@ -32101,7 +32103,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-03-31
+#: last_checked: 2021-04-01
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32189,10 +32191,10 @@ EOF
        text  => 'Hasselwerderstr.: zwischen Fennstr. und Fließstr. Fahrbahn wegen Bauarbeiten gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX bis wann ist die Fahrbahn gesperrt?
+#: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-03-21
-#: check_frequency: 60d
+#: last_checked: 2021-04-01
+#: check_frequency: 30d
 	q4::inwork 18260,5746 18164,5701
 EOF
      },

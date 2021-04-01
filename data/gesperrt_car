@@ -2112,3 +2112,6 @@ Margarete-Steffin-Str.	1 8525,12958 8406,13127 8315,13181
 Jenbacher Weg: für Radfahrer umfahrbare Schranke	3 5418,-98 5665,51 5703,74
 Jenbacher Weg: für Radfahrer umfahrbare Schranke	3 5703,74 5665,51 5418,-98
 Hasenholzer Allee	2:Anlieger 21903,15174 21927,15303
+Straßenbahntrasse	3nocross::ignrte 18406,7760 18577,8033 18633,8126
+Treskowallee -> Traberweg: Straßenbahntrasse	3::igndisp 18406,7760 18577,8033 18567,8041
+Traberweg -> Treskowallee: Straßenbahntrasse	3::igndisp 18567,8041 18577,8033 18633,8126

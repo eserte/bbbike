@@ -937,7 +937,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-03-30
+#: last_checked: 2021-04-01
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3362,7 +3362,7 @@ Kalkscheunenstr.: Beton	Q0- 9385,13174 9401,13072
 Unter der Kranbahn: Beton	Q0 18423,6285 18381,6134 18367,6086
 Platz am Kaisersteg: Gehwegpflasterung	Q0- 18381,6134 18428,6123
 Platz am Kaisersteg: Kleinsteinpflaster	Q1 18428,6123 18417,6068
-Platz am Kaisersteg: Gehwegpflasterung	Q0- 18417,6068 18420,6009
+Platz am Kaisersteg: Gehwegpflasterung	Q0- 18417,6068 18422,6013 18420,6009
 Kaisersteg: Asphalt, leicht uneben	Q0- 18420,6009 18393,5964 18353,5897 18326,5850
 Britzer Str.: Asphalt	Q0 18470,5600 18370,5511 18307,5440 18214,5354 18080,5376
 Farnstr.: Asphalt	Q0 19402,4900 19384,5010 19328,5188
@@ -4144,7 +4144,7 @@ Rollettweg: Kopfsteinpflaster/Sandbankette	Q2- 16814,4315 16878,4268
 Rollettweg: unbefestigte Straße	Q2- 16878,4268 16966,4191
 Megedestr.: schlechtes Kopfsteinpflaster	Q3 17244,4242 17113,4295 17092,4297
 Megedestr.: Kopfsteinpflaster/Sandbankette	Q2- 17092,4297 17001,4307 16909,4309
-Ellernweg: Kleinkopfsteinpflaster	Q1 17173,4902 17303,4824
+Ellernweg: Kleinsteinpflaster	Q2+ 17173,4902 17303,4824
 Drosselbartstr.: Asphalt	Q0 15188,6908 15024,7083 14951,7163
 Rübezahlstr.: Asphalt	Q1 15024,7083 15058,7115 15115,7128 15136,7106 15222,7162
 Wegastr.: schlechtes Kopfsteinpflaster	Q3 15222,7162 15175,7221
@@ -14732,7 +14732,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8866
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036721830908/721830908/00310262/62-Anlagen/04/0262021-0311-57aAwEOeB_EBBRechtspruefung.pdf
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str.), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
-#: last_checked: 2021-03-15
+#: last_checked: 2021-04-01
 #: check_frequency: 360d
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976
 #: by: ^^^
@@ -25148,8 +25148,8 @@ Straße 52b: mäßiger Beton	Q1- 10600,20839 11239,21065
 # 
 #: by: meny witte:
 #: note: q3 ohne weitere Angaben ignoriert
-#: confirmed_by: srt (zumindest die Pflasterung gesehen)
-Ellernweg: mäßiges Kopfsteinpflaster	Q2 17303,4824 17428,4792 17542,4772
+#: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 -> ...)
+Ellernweg: Kleinsteinpflaster	Q2+ 17303,4824 17428,4792 17542,4772
 # 
 #: by: Christian (i8pp): vvv
 #: corrected_by: srt (Asphalt -> ...) (zumindest im östlichen Abschnitt)
@@ -28760,8 +28760,10 @@ Gielower Str.: Asphalt	Q0 13825,4240 14012,4184
 #: confirmed_by: srt (südlich der Ehrlichstr.)
 Üderseestr.: Kopfsteinpflaster	Q3 18135,8404 18228,8537 18331,8685
 #: corrected_by: Sabine (3113sf) (Q2 -> Q1)
-#: confirmed_by: srt (westlich der Liepnitzstr.)
-Traberweg.: fester Sandweg	Q1- 18577,8033 18567,8041 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18072,8470 18005,8517 17930,8567 17851,8662
+#: confirmed_by: srt
+Traberweg.: fester Sandweg	Q1- 18577,8033 18567,8041 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18072,8470
+#: corrected_by: srt (fester Sandweg, Q1- -> ...)
+Traberweg.: fester Sandweg, etwas Schotter und Unebenheiten	Q2+ 18072,8470 18005,8517 17930,8567 17851,8662
 #: by: ^^^
 # 
 #: by: Mona [AM] vvv
@@ -29704,4 +29706,9 @@ Kreuzungsbereich mit Kleinsteinpflaster	Q1 8027,11000
 Kreuzungsbereich asphaltiert	Q0 16861,10923
 Kreuzungsbereich asphaltiert	Q0 12743,6645
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12714,9792
+Kreuzungsbereich asphaltiert	Q0 18490,8104
+Kreuzungsbereich asphaltiert	Q0 18416,8163
+Kreuzungsbereich mit glattem Pflaster	Q1 18351,8222
+Kreuzungsbereich asphaltiert	Q0 18221,8328
+Kreuzungsbereich asphaltiert	Q0 18072,8470
 #: ignore ^^^

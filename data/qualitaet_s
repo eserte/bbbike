@@ -2620,7 +2620,7 @@ Kalkscheunenstr.: Beton	Q0 9385,13174 9401,13072
 Unter der Kranbahn: Beton	Q0 18423,6285 18381,6134 18367,6086
 Platz am Kaisersteg: Gehwegpflasterung	Q0 18381,6134 18428,6123
 Platz am Kaisersteg: Kleinsteinpflaster	Q1 18428,6123 18417,6068
-Platz am Kaisersteg: Gehwegpflasterung	Q0 18417,6068 18420,6009
+Platz am Kaisersteg: Gehwegpflasterung	Q0 18417,6068 18422,6013 18420,6009
 Kaisersteg: Asphalt, leicht uneben	Q0 18420,6009 18393,5964 18353,5897 18326,5850
 Britzer Str.: Asphalt	Q0 18470,5600 18370,5511 18307,5440 18214,5354 18080,5376
 Farnstr.: Asphalt	Q0 19402,4900 19384,5010 19328,5188
@@ -3295,7 +3295,7 @@ Rollettweg: Kopfsteinpflaster/Sandbankette	Q2 16814,4315 16878,4268
 Rollettweg: unbefestigte Straﬂe	Q2 16878,4268 16966,4191
 Megedestr.: schlechtes Kopfsteinpflaster	Q3 17244,4242 17113,4295 17092,4297
 Megedestr.: Kopfsteinpflaster/Sandbankette	Q2 17092,4297 17001,4307 16909,4309
-Ellernweg: Kleinkopfsteinpflaster	Q1 17173,4902 17303,4824
+Ellernweg: Kleinsteinpflaster	Q2 17173,4902 17303,4824
 Drosselbartstr.: Asphalt	Q0 15188,6908 15024,7083 14951,7163
 R¸bezahlstr.: Asphalt	Q1 15024,7083 15058,7115 15115,7128 15136,7106 15222,7162
 Wegastr.: schlechtes Kopfsteinpflaster	Q3 15222,7162 15175,7221
@@ -15248,7 +15248,7 @@ Welterpfad: Asphalt	Q0 7830,1345 7814,1376 7787,1361
 Schrobsdorffstr.: Beton	Q0 24102,8772 24156,8904
 Schrobsdorffstr.: Asphalt	Q0 24156,8904 24207,9035 24261,9168 24315,9302 24360,9411 24404,9527
 Straﬂe 52b: m‰ﬂiger Beton	Q1 10600,20839 11239,21065
-Ellernweg: m‰ﬂiges Kopfsteinpflaster	Q2 17303,4824 17428,4792 17542,4772
+Ellernweg: Kleinsteinpflaster	Q2 17303,4824 17428,4792 17542,4772
 Kemmannweg: Beton	Q0 -3819,14302 -3911,14331 -3937,14340 -4053,14428 -4117,14458 -4207,14473
 Glacisweg: Beton	Q0 -3911,14331 -3887,14405
 Neuhausweg: Beton	Q0 -4053,14428 -3964,14507
@@ -17078,7 +17078,8 @@ Gielower Str.: Asphalt	Q0 13825,4240 14012,4184
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Verbundsteinpflaster	Q1 13740,3252 13738,3302 13728,3332
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Asphalt	Q0 13728,3332 13682,3411 13651,3449 13623,3523
 ‹derseestr.: Kopfsteinpflaster	Q3 18135,8404 18228,8537 18331,8685
-Traberweg.: fester Sandweg	Q1 18577,8033 18567,8041 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18072,8470 18005,8517 17930,8567 17851,8662
+Traberweg.: fester Sandweg	Q1 18577,8033 18567,8041 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18072,8470
+Traberweg.: fester Sandweg, etwas Schotter und Unebenheiten	Q2 18072,8470 18005,8517 17930,8567 17851,8662
 Brahmsstr.: Kopfsteinpflaster	Q2 4785,4557 4932,4152
 Brahmsstr.: Asphalt	Q0 4932,4152 4972,4055
 Gertraudstr.: Kopfsteinpflaster	Q2 198,1689 181,1703 80,1998
