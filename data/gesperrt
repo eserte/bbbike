@@ -243,6 +243,7 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
 Karl-Marx-Platz	1 13100,7626 12987,7560
+Karl-Marx-Platz	1s 12969,7610 13100,7626
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
 Takustr.	1 2953,5606 2909,5674
@@ -3027,6 +3028,7 @@ Drängelgitter	BNP:3:70:trailer=10 12373,2375
 Drängelgitter	BNP:3:64:trailer=10 12280,2330
 Drängelgitter	BNP:3:65:trailer=10 12391,2382
 Drängelgitter	BNP:3:65:trailer=10 12593,2472
+Drängelgitter	BNP:3:66:trailer=10 11373,1925
 Drängelgitter	BNP:5:23 15516,6357
 Drängelgitter	BNP:5:17 15496,6314
 Drängelgitter	BNP:5:22 15403,6145
@@ -3175,7 +3177,9 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 18892,3256 18689,3465
 Cotheniusstr.: Fahrbahn durch Bauzäune abgesperrt	2::inwork 13430,13733 13519,13785
 Abendseglersteig: noch in Bau	2::inwork 33176,2938 33147,2832 33267,2810 33383,2792 33406,2852
-Bahnhofstr. (Lichtenrade): Sperrung am Bahnübergang	2::inwork 10096,-2137 10203,-2137 10228,-2136
+Prinzessinnenstr./Bahnhofstr. (Lichtenrade): Sperrung am Bahnübergang	2::inwork 10096,-2137 10203,-2137 10228,-2136 10300,-2135
+Pfarrer-Lütkehaus-Platz: Sperrung am Bahnübergang	2::inwork 10228,-2136 10231,-2159
+Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-2156 10318,-2156
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14348,10266 14462,10206 14480,10157
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152 14373,10046
@@ -3191,7 +3195,6 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
-Königsteinbrücke: Brückenneubau	2::inwork 13148,22396 13385,22383
 David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
 Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:inwork 12714,8249 12545,8209

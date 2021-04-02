@@ -40,7 +40,7 @@
 # 
 #: source_id: 2147346950 (bis 31.5.2021)
 #: also_indoor: traffic (G)
-#: last_checked: 2021-03-30
+#: last_checked: 2021-04-02
 #: check_frequency: 14d
 #: next_check: 2021-05-31
 #: valid: -20210531
@@ -127,7 +127,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: source_id: 2147345858
 #: last_checked: 2020-06-21
 #: next_check: 2023-07-31
-(Notweg Bahnübergang Bahnhofstr.): Fußgänger, für Radfahrer frei	q3 10231,-2159 10215,-2170 10209,-2171 10198,-2143 10096,-2137
+(Notweg Bahnübergang Bahnhofstr.): Fußgänger, für Radfahrer frei	q3 10231,-2159 10215,-2170 10181,-2174 10161,-2146 10096,-2137
 # 
 ### Treptow ###
 # 
@@ -142,7 +142,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: osm_watch: way id="26285705" version="7"
 #: osm_watch: way id="69166216" version="7"
 #: source_id: 2147346409 (bis Ende 2021, Gesamtbaumaßnahme bis Ende 2023)
-#: last_checked: 2021-04-01 vvv
+#: last_checked: 2021-04-02 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
@@ -698,7 +698,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: osm_watch: way id="585753318" version="8"
 #: osm_watch: way id="71392596" version="13"
 #: also_indoor: traffic
-#: last_checked: 2021-03-30 vvv
+#: last_checked: 2021-04-02 vvv
 #: check_frequency: 60d
 #: next_check: 2021-05-07
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
@@ -3552,6 +3552,8 @@ Cuxhavener Str.: stellenweise eng, einige Fußgänger	q3 5931,12399 5904,12417 588
 (Supermarktparkplatz): Parkplatzverkehr	q2 2554,10258 2551,10266 2706,10362 2718,10359
 (Klara-Weyl-Str. - Landschaftspark Herzberge): Spielplatz, Fußgänger, kurvig	q3 17418,12797 17422,12811 17400,12842 17363,12856 17347,12845 17299,12851
 (Allee der Kosmonauten - Wohngebiet): einige Fußgänger	q2 19628,13517 19649,13481
+#: XXX_prog BS nur beim Überqueren, ansonsten q1
+(Lichtenrader Damm - Mellener Str.): einige Fußgänger, Bordsteine beim Überqueren des Lichtenrader Damms	q2 10903,-1768 10771,-1782
 # 
 ######################### User Contributions #################################
 # 

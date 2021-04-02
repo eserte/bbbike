@@ -858,7 +858,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-04-01
+#: last_checked: 2021-04-02
 #: check_frequency: 60d
 # REMOVED (vermutlich ohne baldige Änderung) --- #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1107,9 +1107,16 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
 	RW1; 13393,13326 13375,13367 13330,13468
 unebenes Verbundsteinpflaster	RW1;RW1 9448,10014 9355,10038 9277,10057 9108,10101 8783,10166
-	RW1;RW2 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
-	RW2;RW1 11882,8527 11882,8519 11884,8492
-	RW1;RW2 11884,8492 11898,8362
+# 
+#: note: Hermannstr. Richtung Süden
+Verbundsteinpflaster	RW1; 11831,8989 11830,8917 11845,8824 11879,8672
+Radweg nur aufgemalt, mäßige Gehwegplatten	RW1; 11879,8672 11882,8527
+Verbundsteinpflaster	RW1; 11882,8527 11882,8519 11884,8492 11898,8362
+#: note: Hermannstr. Richtung Norden
+	RW2; 11898,8362 11884,8492
+	RW1; 11884,8492 11882,8519 11882,8527
+	RW2; 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989
+# 
 	RW1;RW2 11338,5992 11456,6103
 	RW1;RW1 11456,6103 11590,6026
 	RW3;RW3 11590,6026 11943,5825 12017,5747 12052,5710
@@ -2050,7 +2057,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 13244,11112 13290,11144 13317,11144
 #: by: https://www.rbb24.de/panorama/beitrag/2020/04/berlin-bvg-u1-u3-sanierungsarbeiten-ersatzverkehr-sperrung.html (bis voraussichtlich April 2021)
 #: by: https://abendblatt-berlin.de/2020/04/14/friedrichshain-kreuzberg-sanierungsarbeiten-starten/ (etwa 12 Monate (ab 14. April 2020))
 #: XXX wegen der U1/U3-SEV-Haltestelle wurden die Radspuren aufgehoben (danach die drei auskommentierten Einträge wieder aktivieren) vvv
-#: last_checked: 2021-03-28 vvv
+#: last_checked: 2021-04-02 vvv
 #: next_check: 2021-04-12 vvv
 # geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13377,11145 13479,11147
 #	RW3; 13479,11147 13540,11148
@@ -2406,7 +2413,7 @@ Gehweg für Radfahrer frei, recht eng	RW1;RW1 5223,1318 5059,1337 4897,1352 4795,
 	RW2;RW1 7790,672 7729,691 7599,725 7318,759
 #: XXX_osm meint cycleway=track
 	RW0;RW1 10793,-161 10831,-808
-	RW1;RW1 10831,-808 10844,-1335 10853,-1475 10870,-1645 10909,-1790 10980,-1919 11073,-2037
+	RW1;RW1 10831,-808 10844,-1335 10853,-1475 10870,-1645 10903,-1768 10909,-1790 10980,-1919 11073,-2037
 	RW6;RW6 10453,4518 10558,4394 10550,4320
 	RW6;RW6 11244,4325 11153,4325 11073,4342
 	RW3;RW3 5116,13457 4985,13470 4605,13525 4455,13567 4283,13660
@@ -3279,7 +3286,7 @@ neues Verbundsteinpflaster	RW1; 12547,4391 12731,4841
 #: by: https://www.bahninfo-forum.de/read.php?9,445440,672346#msg-672346
 #: by: https://api.fixmyberlin.de/api/projects/416
 #: osm_watch: way id="451445143" version="5"
-#: last_checked: 2021-03-27 vvv
+#: last_checked: 2021-04-02 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 provisorisch geschützter Radstreifen	RW4; 12987,5263 13046,5267 13112,5253 13250,5234 13327,5234 13508,5238
@@ -3682,7 +3689,10 @@ Grünmarkierung	RW3; 4546,11217 4558,11366 4574,11587
 	RW6;RW6 17845,19186 17761,19221 17750,19181 17697,18989
 Tempo 10	RW6;RW6 12316,9477 12150,9545
 	RW2; 4280,8188 4323,8119 4353,8035 4572,7936 4711,8013
-	RW1;RW1 10661,2464 10673,2457 10688,2448 10748,2412 10817,2370 10938,2296 11072,2214 11212,2120 11288,2049 11323,1986 11343,1937 11355,1801 11362,1723 11367,1710 11374,1689
+	RW1; 10661,2464 10673,2457 10688,2448 10748,2412 10817,2370 10938,2296 11072,2214 11212,2120 11288,2049 11323,1986 11343,1937 11355,1801 11362,1723 11367,1710 11374,1689
+	RW1; 11374,1689 11367,1710 11362,1723 11355,1801
+schmal, Autos parken halb auf dem Radweg	RW1; 11355,1801 11343,1937
+	RW1; 11343,1937 11323,1986 11288,2049 11212,2120 11072,2214 10938,2296 10817,2370 10748,2412 10688,2448 10673,2457 10661,2464
 	RW1;RW1 11374,1689 11407,1592 11436,1513 11476,1398
 	RW1;RW9 10748,2412 10933,2606 10939,2642 11005,2726 11199,2932
 	RW1;RW9 10661,2464 10693,2513 10705,2570 10716,2597
@@ -5234,7 +5244,7 @@ Verbundsteinpflasterradweg	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: confirmed_by: srt
 	RW3;RW3 7733,8023 7783,8035 7824,8056 7838,8085 7859,8252 7899,8332 7956,8408 8078,8772
 #: next_check_id: MITTEL-2019
-#: last_checked: 2021-03-20
+#: last_checked: 2021-03-31 (architektur-urbanistik)
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben
 	RW0; 9141,12320 9131,12438 9121,12514
 	RW4; 9131,12438 9141,12320
@@ -5848,7 +5858,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-03-30
+#: last_checked: 2021-04-02
 #: check_frequency: 30d
 	RW4; 12714,8249 12753,8187 12794,8103 12830,8031
 Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
@@ -5883,7 +5893,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-03-30
+#: last_checked: 2021-04-02
 #: check_frequency: 30d
 	RW4; 12830,8031 12794,8103 12753,8187 12714,8249
 # note: Ende Karl-Marx-Str.
@@ -6719,7 +6729,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Verstetigung)
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2021-02-27 vvv
+#: last_checked: 2021-04-02 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
