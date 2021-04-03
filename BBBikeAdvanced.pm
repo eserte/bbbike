@@ -171,6 +171,7 @@ sub custom_draw {
     my $coord_input;
     my $center_beginning = 0;
     my $auto_enlarge_scrollregion = 1;
+    my $show_streets_list = 0;
 
     $custom_draw_directory = $datadir if !defined $custom_draw_directory;
 
@@ -272,6 +273,10 @@ sub custom_draw {
 
 	    Tk::grid($f->Label(-text => M"Scrollregion bei Bedarf vergrößern"),
 		     $f->Checkbutton(-variable => \$auto_enlarge_scrollregion),
+		     -sticky => "w");
+
+	    Tk::grid($f->Label(-text => M"Straßenliste zeigen"),
+		     $f->Checkbutton(-variable => \$show_streets_list),
 		     -sticky => "w");
 
 	    $f = $t->Frame->pack(-fill => "x");
@@ -389,6 +394,10 @@ sub custom_draw {
 
     $toplevel{"chooseort-$abk-$linetype"}->destroy
 	if Tk::Exists($toplevel{"chooseort-$abk-$linetype"}) && $do_close;
+
+    if ($show_streets_list) {
+	choose_ort($linetype, $abk, -rebuild => 1);
+    }
 
     $file; # return filename
 }
