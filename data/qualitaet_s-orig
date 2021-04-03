@@ -191,7 +191,7 @@ Elsenstr.: Asphalt	Q0 13405,8737 13458,8805 13510,8872 13664,9073 13766,9200
 #: note: gepflasterter Parkstreifen
 Herrfurthstr.: Asphalt	Q0 11979,8014 11833,7980 11754,7964
 #: note: gepflasterter Parkstreifen
-Herrfurthstr.: Asphalt	Q0 11647,7940 11573,7924 11472,7899
+Herrfurthstr.: Asphalt	Q0 11647,7940 11579,7926 11472,7899
 Herrfurthplatz: mäßiges Kopfsteinpflaster	Q2 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7497,8916 7467,8863 7389,8837
 Feurigstr.: mäßiges Kopfsteinpflaster	Q2 7086,8579 7012,8511 6807,8309
@@ -747,7 +747,7 @@ Schäferstr.: Kopfsteinpflaster	Q2+ -7232,445 -7365,371 -7449,348 -7474,341 -7587
 Karlsgartenstr.: schlechtes Kopfsteinpflaster	Q3+ 11882,8527 11769,8515
 Fontanestr.: Asphalt	Q0 11632,8302 11647,8227 11661,8131
 Weisestr.: unebenes Kopfsteinpflaster	Q2- 11767,8330 11770,8292 11776,8253 11795,8160 11833,7980 11867,7813 11888,7710 11911,7609 11929,7512
-Selchower Str.: unebenes Kopfsteinpflaster	Q2- 11532,8104 11661,8131
+Selchower Str.: unebenes Kopfsteinpflaster	Q2- 11541,8105 11661,8131
 Selchower Str.: Asphalt	Q0 11661,8131 11795,8160 11933,8198
 Mahlower Str.: Kopfsteinpflaster	Q2 11529,8201 11647,8227
 Mahlower Str.: Asphalt	Q0 11647,8227 11776,8253 11915,8279
@@ -812,7 +812,7 @@ Kanner Str.: Asphalt mit Schäden	Q1 13373,7426 13476,7330
 Unstrutstr.: Asphalt	Q0 13476,7330 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
 #: note: nach Regenfällen Pfützen
-Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15778,8990
+Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
 # REMOVED --- #: next_check_id: PLAENTERWALDUFERWEG-2019 --- #: XXX nach den Bauarbeiten wassergebundene Decke --- #: last_checked: 2019-12-30 --- #: check_frequency: 14d
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.885152.php
 #: note: nach Regenfällen (noch) keine Pfützenbildung
@@ -937,7 +937,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-04-02
+#: last_checked: 2021-04-03
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1163,7 +1163,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22030,6600 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2020-12-20 vvv
+#: last_checked: 2021-04-03 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="5"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -1198,12 +1198,12 @@ Uferweg am Schlachtensee: Waldweg OK, manchmal etwas sandig	Q1 -3348,3055 -3384,
 Uferweg am Schlachtensee: rauer Asphalt	Q1+ -1353,4205 -1282,4244
 südlicher Uferweg am Schlachtensee: Feinschotter	Q1 -3384,3212 -3341,3122 -3273,3096 -3200,3145 -3190,3167 -3136,3294 -3081,3377 -2947,3486 -2802,3570 -2761,3576 -2729,3593 -2599,3637 -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009 -1390,4116 -1382,4132
 Weg am Teufelssee: Waldweg	Q1 -886,9447 -942,9251 -1047,9123
-Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2- 17299,8140 17299,8108 17301,7754
+Schwarzer Weg (Oberschöneweide): unbefestigter Weg, holprig	Q2- 17311,8123 17305,8105 17301,7754
 Schwarzer Weg (Oberschöneweide): asphaltiert, mit leichten Schäden	Q0- 17301,7754 17301,7645 17296,7401
 Schwarzer Weg (Oberschöneweide): asphaltiert	Q0 17296,7401 17294,7367
 # REMOVED --- Schwarzer Weg (Oberschöneweide): asphaltiert, mit leichten Schäden	Q0- 17294,7367 17295,7344 17295,7328
 Schwarzer Weg (Oberschöneweide): unbefestigter Weg	Q2 17295,7328 17297,7196 17286,7173
-(Wilhelmstrand, Weg 1): unbefestigter Weg	Q2 17059,8097 17299,8108
+(Wilhelmstrand, Weg 1): unbefestigter Weg	Q2 17059,8097 17305,8105
 Möllhausenufer: Kopfsteinpflaster	Q2 23295,1145 23408,1170 23520,1194 23608,1210
 Möllhausenufer: asphaltiert	Q0 23608,1210 23747,1243
 Am Langen See: Waldweg, meist OK, teilweise Wurzeln und einige sandige Stellen	Q1- 23747,1243 23869,1282 23889,1338 24068,1279 24307,1135 24400,1005 24649,943 24803,835 24949,806 25333,834 25543,879 25744,839 25853,778 25922,645 25969,593 26041,443 26016,259 26073,194 26124,111 26246,73 26274,-33 26407,-160 26454,-123 26488,-131 26576,-278 26628,-313 26672,-319 26700,-344 26751,-460 26921,-611 26944,-724 27103,-773 27136,-804 27169,-884 27205,-1012 27225,-1115 27329,-1241 27365,-1357 27357,-1545
@@ -2023,7 +2023,7 @@ Schinkestr.: Kopfsteinpflaster	Q2 11623,9841 11734,9856 11880,9874
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): asphaltierter Radweg	Q0 17159,18375 17102,18490 17040,18571 17002,18578 16939,18652
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): asphaltierter Radweg	Q0 17159,18375 17206,18332
 Tuchollaplatz: Kopfsteinpflaster	Q2+ 15616,10920 15560,10946
-Lichtenrader Str.: Kopfsteinpflaster	Q2 11529,8201 11532,8104 11573,7924 11612,7762 11633,7662 11654,7559 11675,7462
+Lichtenrader Str.: Kopfsteinpflaster	Q2 11529,8201 11541,8105 11579,7926 11612,7762 11633,7662 11654,7559 11675,7462
 Kienitzer Str.: Kopfsteinpflaster	Q2 11504,7738 11612,7762 11738,7790 11867,7813 12025,7852 12090,7865
 Allerstr.: Kopfsteinpflaster	Q2 11521,7638 11633,7662 11763,7687 11888,7710 12057,7744
 Okerstr.: Kopfsteinpflaster	Q2 11540,7534 11654,7559 11785,7583 11911,7609 12090,7651
@@ -2868,7 +2868,7 @@ Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11917,11186 11944,11152
 (Weg am Humboldthain): Verbundsteinpflaster	Q1 9092,15789 8934,15740
 Wasserweg: Kopfsteinpflaster	Q2 15680,8914 15873,8884
 Wasserweg: fester Sandweg	Q2 15873,8884 15981,8872 16028,8867 16161,8852 16201,8860
-Wasserweg: Asphalt	Q0 16201,8860 16358,8841 16388,8821
+Wasserweg: Beton/Asphalt	Q0- 16201,8860 16358,8841 16388,8821
 Umfahrung Spreepark: fester Sandweg, Baumstümpfe	Q2 16028,8867 16084,8833 16161,8852
 Kiehnwerderallee: asphaltiert	Q0 16388,8821 16436,8687 16490,8432 16534,8182 16602,7810 16620,7574 16633,7434
 (Uferweg - Kiehnwerderallee): Waldweg	Q2+ 16627,8581 16577,8581 16436,8687
@@ -3396,6 +3396,7 @@ Kienappelweg: Beton	Q0 24102,3055 24101,3447
 Kaumanns Gasse: Kopfsteinpflaster	Q2 22339,4396 22268,4424
 Kleine Hege: Kopfsteinpflaster	Q2 22334,4383 22382,4361
 Breite Gasse: Kopfsteinpflaster	Q2 22312,4329 22252,4362
+Judisgasse: Kopfsteinpflaster	Q2 22279,4220 22224,4226
 Laurenzstr.: Kopfsteinpflaster	Q2 22246,4711 22175,4730
 Mierstr.: Kopfsteinpflaster	Q2 13627,7047 13575,7200
 Heinsestr.: Kleinsteinpflaster	Q1- 3593,23297 3521,23409 3490,23472 3421,23614 3410,23637 3367,23654
@@ -4912,8 +4913,8 @@ Weg G: unbefestigte Straße	Q2 28003,747 28126,641
 Weg H: unbefestigte Straße	Q2 27961,699 28083,592
 Zur Hirtenwiese: Asphalt mit einigen Unebenheiten	Q0- 27273,-106 26700,-344
 Am Maria-Jankowski-Park: Kopfsteinpflaster	Q2 22087,5404 22018,5452
-(Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22017,5159 22046,5305 22043,5346
-Am Generalshof: Kopfsteinpflaster	Q2 22165,5434 22167,5416 22046,5305
+(Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22056,5314 22054,5360
+Am Generalshof: Kopfsteinpflaster	Q2 22165,5434 22167,5416 22056,5314
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19255,5164 19294,5033 19306,4969 19312,4940
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19245,4931 19241,4958 19236,5025 19233,5076 19210,5150
 Moosstr. [Wohngebiet]: Kopfsteinpflaster	Q2 19294,5033 19236,5025
@@ -8602,7 +8603,7 @@ Straße 74: Asphalt	Q0- 12583,22428 12696,22455 12821,22437 12855,22431 13136,223
 #: by: wosch
 #: XXX eventuell wird der Asphalt noch glatter gemacht
 #: last_checked: 2021-04-02 (wosch)
-Königsteinbrücke: welliger Asphalt	Q1 13136,22397 13148,22396 13385,22383 13404,22384
+Königsteinbrücke: welliger Asphalt	Q1 13136,22397 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378 13394,22373
 Straße 86: Asphalt	Q0 13805,22935 13726,22860
 Straße 86: unbefestigt	Q2 13726,22860 13699,22834
 Straße 101 (Karow): Asphalt	Q0 13610,22949 13726,22860
@@ -11658,7 +11659,8 @@ Am Kutscherhaus: Verbundsteinpflaster	Q1 21514,5310 21386,5251 21355,5254
 (Vabali Spa - Seydlitzstr.): Asphalt	Q0 7422,13487 7450,13432
 Parkweg Thielpark: Asphalt	Q0 2288,4932 2214,4992
 Parkweg Thielpark: Parkweg	Q1 2214,4992 2208,5060 2232,5118 2279,5112 2313,5111
-(Wasserweg - Uferweg): unbefestigter Waldweg	Q2+ 15981,8872 15973,8894 15845,9031
+(Wasserweg - Uferweg): unbefestigter Waldweg	Q2+ 15981,8872 15973,8894 15879,8994 15845,9031
+(Wasserweg - Uferweg): unbefestigter Waldweg	Q2+ 15879,8994 15839,9006 15797,9002
 (Wohnquartier Bautzener Str. - Großgörschenstr.): Betonsteinpflaster	Q1+ 8255,9357 8186,9380
 (Wohnquartier Bautzener Straße): Asphalt	Q0 8206,9262 8254,9278 8255,9357 8260,9560 8227,9579
 #: by: mapillary
@@ -11696,7 +11698,7 @@ Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19649,13481 
 (Schwabenplatz, Trampelpfad): unbefestigter Weg	Q2 21307,9591 21291,9507
 (Sulzfelder Str. - Hansastr.): Beton	Q0- 15120,16349 15120,16305
 (Sulzfelder Str. - Hansastr.): Asphalt	Q0 15120,16305 15112,16262 15104,16218
-(Königsteinbrücke - Weg an der A114): unbefestigter Pfad, etwas sandig	Q2- 13148,22396 13198,22413 13217,22413
+(Königsteinbrücke - Weg an der A114): unbefestigter Pfad, etwas sandig	Q2- 13193,22408 13198,22413 13217,22413
 (Weg am Westhafenkanal): Schotterweg	Q2 3656,14150 3666,14162 3651,14172 3203,14054 2899,13934
 (Weg am Westhafenkanal - Tegeler Weg): feiner Schotter	Q1- 2899,13934 2895,13869 2957,13796 2984,13789
 (Weg am Westhafenkanal - Tegeler Weg): feiner Schotter, Beton	Q1- 2895,13869 2913,13919 2935,13927
@@ -12006,6 +12008,7 @@ Marktplatz Griechische Allee: glatte Pflasterung	Q0- 18025,6700 18029,6674
 Märkische Allee [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19649,13481 19653,13253 19706,13102 19821,12986 19933,12984
 (Allee der Kosmonauten - Wohngebiet): Asphalt	Q0 19628,13517 19649,13481
 (Lichtenrader Damm - Mellener Str.): Verbundsteinpflaster	Q1 10903,-1768 10771,-1782
+Wünsdorfer Str.: Asphaltschäden	Q1+ 9982,-1818 10021,-1918 10096,-2137
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -15665,7 +15668,7 @@ Liebenstr.: schlechtes Kopfsteinpflaster	Q3 14597,23280 14526,23155
 #: confirmed_by: srt (südlicher Abschnitt; Bitumen -> Asphalt)
 Liebenstr.: Asphalt	Q0 14526,23155 14338,22885 14251,22755 14195,22657
 #: corrected_by: srt
-Liebenstr.: sandig	Q2 14195,22657 14168,22563
+Liebenstr.: sandig	Q2 14195,22657 14153,22570
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Florastr. (Karow): Asphalt	Q0 14950,22853 14795,22964
 #: confirmed_by: srt
@@ -15680,13 +15683,9 @@ Flaischlenstr.: asphaltiert	Q0 13498,22636 13456,22533
 Flaischlenstr.: asphaltiert	Q0 13456,22533 13404,22384
 #: confirmed_by: srt
 # 
-#: next_check_id: KOENIGSTEINBRUECKE-2019
-#: XXX provisorische Wegführung; nach den Bauarbeiten den alten Eintrag wiederherstellen!
-#: last_checked: 2021-02-25 (mapillary)
-#: check_frequency: 90d
-#REMOVED --- #: next_check: 2021-01-01
-Flaischlenstr.: schlechtes Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke ertüchtigt	Q2 13404,22384 13354,22327 13316,22273 13267,22090 13249,22003
-#Flaischlenstr.: schlechtes Kopfsteinpflaster, Ausweichen auf den Fußweg (Rasenflächen mit Trampelpfad) möglich	Q3 13404,22384 13354,22327 13316,22273 13267,22090 13249,22003
+# REMOVED --- #: next_check_id: KOENIGSTEINBRUECKE-2019 --- #: XXX provisorische Wegführung; nach den Bauarbeiten den alten Eintrag wiederherstellen! --- #: last_checked: 2021-02-25 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2021-01-01 --- Flaischlenstr.: schlechtes Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke ertüchtigt	Q2 13404,22384 13394,22373 13354,22327 13316,22273 13267,22090 13249,22003
+Flaischlenstr.: Asphalt	Q0 13404,22384 13394,22373
+Flaischlenstr.: schlechtes Kopfsteinpflaster, Ausweichen auf den Fußweg möglich	Q3 13394,22373 13354,22327 13316,22273 13267,22090 13249,22003
 # 
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> unbefestigt, zumindest an der Königsteinstr.)
 Frankenstr.: unbefestigt	Q2 13267,22090 13503,22239 13541,22300 13622,22409 13681,22501 13706,22536

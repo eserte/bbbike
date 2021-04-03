@@ -2602,8 +2602,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: KOENIGSTEINBRUECKE-2019
 #: osm_watch: way id="25753762" version="14"
-#: last_checked: 2020-12-31 (mapillary)
-#: next_check: 2021-04-01
+#: last_checked: 2021-04-02 (mapillary)
+# REMOVED --- #: next_check: 2021-04-01
 	2::inwork 13221,22667 13223,22558 13207,22498 13217,22413 13220,22387
 ',
          'from' => undef,
@@ -2745,7 +2745,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-02
+#: last_checked: 2021-04-03
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2811,19 +2811,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '# REMOVED --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
-#: also_indoor: traffic (G)
-#: last_checked: 2021-03-11
-	q4::inwork; 14490,10610 14541,10735
-# REMOVED (hier keine Anzeichen für eine Einbahnstraßenregelung) ---	q4::inwork; 14541,10735 14675,10693
-',
-         'from' => undef,
-         'id' => 3256,
-         'text' => 'Bödikerstr.: Einbahnstraßenregelung, offen Richtung Persiusstr.',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Mai 2022
@@ -3265,7 +3253,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-04-01
+#: last_checked: 2021-04-03
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3335,7 +3323,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-04-01
+#: last_checked: 2021-04-03
 #: check_frequency: 30d
 	q4::inwork 18260,5746 18164,5701
 ',
@@ -3401,6 +3389,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => undef,
          'id' => 3349,
          'text' => 'Bahnübergang Ziethener Str. möglicherweise gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: tempex: sunset-sunrise
+	2::night 22279,4220 22224,4226
+',
+         'from' => undef,
+         'id' => 3350,
+         'recurring' => 1,
+         'text' => 'Judisgasse: nur tagsüber geöffnet',
          'type' => 'gesperrt',
          'until' => undef
        }

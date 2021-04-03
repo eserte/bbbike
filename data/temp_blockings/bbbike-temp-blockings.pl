@@ -378,8 +378,7 @@ EOF
      { from  => $isodate2epoch->("2019-04-30 12:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-01 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 5, start => "2020-05-02T00:00:00"]],
-       recurrence_prewarn_days => 7, # wegen Corona
+       recurrences => [['yearly', days => 1, months => 5, start => "2021-05-02T00:00:00"]],
        text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2019',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -9495,13 +9494,13 @@ EOF
      { from  => $isodate2epoch->("2019-05-04 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-05 22:00:00"),
        periodic => 1, # erster Termin im Sommer
-# XXX recurrences für zweiten Termin ab 2020 wiederherstellen?
-       recurrences => [['yearly', days => 3, months => 5, start => "2020-06-01T00:00:00"]], # meistens im Juni, kann aber auch erst im Juli stattfinden
+       recurrences => [['yearly', days => 3, months => 5, start => "2021-06-01T00:00:00"]], # meistens im Juni, kann aber auch erst im Juli stattfinden
        text  => 'Open Air Gallery am 5. Mai 2019 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.openairgallery.de/?y=2019
-#: by: https://www.berlin.de/events/2511842-2229501-open-air-gallery.html (findet 2020 nicht statt)
+#: by: https://www.berlin.de/events/2511842-2229501-open-air-gallery.html (findet 2020 nicht statt) (2021 auch nicht)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1043586.php (keine Veranstaltungen in FH-KB im Frühjahr/Sommer 2021
 	q3::temp 13178,10623 13206,10651
 	q4::temp 13206,10651 13305,10789 13332,10832
 EOF
@@ -30026,7 +30025,7 @@ EOF
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 # REMOVED (-> gesperrt-orig) --- #: last_checked: 2019-10-23 (wosch) (gesperrt) --- #: next_check: 2019-10-25
 # REMOVED --- #: add_fragezeichen: Ist die Königsteinbrücke bereits gesperrt?
-	2::inwork 13148,22396 13385,22383
+	2::inwork 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378
 EOF
      },
      { from  => undef, # $isodate2epoch->("2020-02-02 00:00:00"), # 1570223758, # 2019-10-04 23:15
@@ -30076,8 +30075,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: osm_watch: way id="25753762" version="14"
-#: last_checked: 2020-12-31 (mapillary)
-#: next_check: 2021-04-01
+#: last_checked: 2021-04-02 (mapillary)
+# REMOVED --- #: next_check: 2021-04-01
 	2::inwork 13221,22667 13223,22558 13207,22498 13217,22413 13220,22387
 EOF
      },
@@ -30845,7 +30844,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-02
+#: last_checked: 2021-04-03
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31049,14 +31048,13 @@ EOF
 EOF
      },
      { from  => undef, # 1594232559, # 2020-07-08 20:22
-       until => undef, # $isodate2epoch->("2020-07-13 01:30:00"),
+       until => 1617453013, # undef, # $isodate2epoch->("2020-07-13 01:30:00"),
        # früher öfters Einbahnstraßenregelung wegen SEV
        text  => 'Bödikerstr.: Einbahnstraßenregelung, offen Richtung Persiusstr.',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
-#: also_indoor: traffic (G)
-#: last_checked: 2021-03-11
+# REMOVED (Verbotsschilder sind verschwunden) --- #: also_indoor: traffic (G) --- #: last_checked: 2021-03-11
 	q4::inwork; 14490,10610 14541,10735
 # REMOVED (hier keine Anzeichen für eine Einbahnstraßenregelung) ---	q4::inwork; 14541,10735 14675,10693
 EOF
@@ -31310,7 +31308,7 @@ EOF
 	q4::temp 16507,7254 16428,7144
 	q4::temp; 16428,7144 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
 	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16136,7886 16406,7430 16507,7254 16633,7434 16673,7511
-	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15778,8990
+	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
 	q4::temp 15778,8990 15680,8914 15591,8848
 EOF
      },
@@ -32111,7 +32109,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-04-01
+#: last_checked: 2021-04-03
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32201,7 +32199,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-04-01
+#: last_checked: 2021-04-03
 #: check_frequency: 30d
 	q4::inwork 18260,5746 18164,5701
 EOF
@@ -32258,6 +32256,16 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,697260#msg-697260
 #: XXX Ist der Bahnübergang tatsächlich gesperrt? Wann sind die Bauarbeiten hier beendet?
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Judisgasse: nur tagsüber geöffnet',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+#: tempex: sunset-sunrise
+	2::night 22279,4220 22224,4226
 EOF
      },
     );

@@ -40,7 +40,7 @@
 # 
 #: source_id: 2147346950 (bis 31.5.2021)
 #: also_indoor: traffic (G)
-#: last_checked: 2021-04-02
+#: last_checked: 2021-04-03
 #: check_frequency: 14d
 #: next_check: 2021-05-31
 #: valid: -20210531
@@ -125,9 +125,9 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: source_id: 2147345858
-#: last_checked: 2020-06-21
+#: last_checked: 2021-04-02
 #: next_check: 2023-07-31
-(Notweg Bahnübergang Bahnhofstr.): Fußgänger, für Radfahrer frei	q3 10231,-2159 10215,-2170 10181,-2174 10161,-2146 10096,-2137
+(Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10215,-2170 10181,-2174 10161,-2146 10096,-2137
 # 
 ### Treptow ###
 # 
@@ -1868,7 +1868,7 @@ Chiemseestr.: enge Straße	q1 22204,1496 22334,1553
 (Königsheideweg - Am Alten Fenn): eng	q3 17037,4794 17060,4848
 (Am Alten Fenn - Südostallee): teilweise recht eng, Anhänger sollten parallelen Weg benutzen	q2 17295,5387 17300,5423 17326,5463 17366,5552
 (Dämeritzstr. - Dämeritzsee): Radfahren verboten	q4 32512,2621 32558,2562
-(Lindenstr. - Bahnhofstr.): gemeinsamer Rad- und Gehweg	q1 22017,5159 22046,5305 22043,5346
+(Lindenstr. - Bahnhofstr.): gemeinsamer Rad- und Gehweg	q1 22023,5160 22056,5314 22054,5360
 Waldpromenade: eng	q2 23792,7861 23710,7940 23668,7967
 Waldpromenade: eng	q2 23579,8037 23473,8114
 Ernst-Grube-Park: Radfahren verboten, ggfs. schieben	q3 21345,5157 21329,5192 21208,5291
@@ -2797,7 +2797,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="7"
-#: last_checked: 2021-04-01
+#: last_checked: 2021-04-03
 #: check_frequency: 120d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850

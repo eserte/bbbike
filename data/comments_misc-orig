@@ -558,7 +558,7 @@ Bus 161	busroute_N 32162,2542 32445,2716 32512,2621
 Bus 164	busroute_N 20839,3163 20772,3244 20717,3310 20644,3395 20499,3572 20451,3538 20366,3480 20299,3435 20262,3409 20237,3392 20166,3344 20064,3278
 Bus 164	busroute_N 20166,3344 20113,3408 20089,3438 20066,3466 20012,3532
 Bus 164	busroute_N 22383,4470 22372,4496 22358,4521 22324,4586 22314,4604 22284,4653 22246,4711 22240,4768 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
-Bus 164	busroute_N 22196,4847 22154,4923 22133,4986 22128,5003 22101,5064 22017,5159 21974,5208 21954,5229
+Bus 164	busroute_N 22196,4847 22154,4923 22133,4986 22128,5003 22101,5064 22023,5160 21974,5208 21954,5229
 Bus X69	busroute_N 22467,6135 22365,6149 22325,6385 22305,6404 22192,6659 22186,6672 22075,6967
 Bus X69	busroute_N 22325,6385 22539,6258
 Bus 167, ...	busroute_N 23435,4179 23453,4181 23658,4208 23753,4218 23879,4233 24135,4264 24181,4270
@@ -739,7 +739,7 @@ Pflanzenkübel am besten auf dem linken Gehweg umfahren	CS; -1604,2324 -1401,2391
 Pflanzenkübel am besten auf dem rechten Gehweg umfahren	CS; -1248,2451 -1401,2391 -1604,2324
 #: by ^^^
 nicht ausgeschildert	CP2; 27568,1188 27775,1016
-(Lindenstr. - Bahnhofstr.): Abkürzung durch den Park	CS 22017,5159 22046,5305 22043,5346
+(Lindenstr. - Bahnhofstr.): Abkürzung durch den Park	CS 22023,5160 22056,5314 22054,5360
 Weg am Friedhof	CS 11608,7267 11687,7284 12185,7381
 Kaulsdorfer Gärten: Privatstraße	CS 21859,9822 21893,9902
 Verlängerte Köpenicker Str.: nicht ausgeschildert	CP2; 21012,7328 21219,7111
@@ -1179,7 +1179,7 @@ Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788&d=20191216 (Benennung nach Hans Otto Obrikat vorgeschlagen)
 #: XXX oder wird statt Wasserstr. und Uferstr. die Straße nach Hans Otto Obrikat benannt? (erster Vorschlag: "Else-Schierhorn-Str.")
-#: last_checked: 2021-03-21
+#: last_checked: 2021-04-03
 #: check_frequency: 60d
 Wasserstr. und Uferstr.: noch nicht ausgeschildert	CS 17483,6024 17681,6212 17847,6089
 # 
@@ -1224,7 +1224,7 @@ ausgeschildert als Rüdigerstr. 65+65 A-E	CP2; 17441,12247 17444,12286
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_50_5649_5788_online.pdf (Straßenbenennung)
 #: XXX dieser Weg wird auch in Minna-Todenhagen-Str. umbenannt --- evtl. auf einen Namen hier komplett verzichten. old_name-Eintrag?
 #: XXX wird hier noch irgendwie ausgeschildert?
-#: last_checked: 2021-03-21
+#: last_checked: 2021-04-03
 #: check_frequency: 120d
 Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17295,7328 17475,7451 17566,7485
 # REMOVED (hier: Heckenweg) --- Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17566,7485 17669,7515
@@ -1352,7 +1352,7 @@ entlang des Lichtenrader Grabens	CS 10067,-2952 10107,-3063
 # REMOVE (an der Hauswand steht mittlerweile ein Hinweis) --- #: next_check_id: IMLICHTENHAIN-2018 --- #: last_checked: 2019-10-18 --- noch nicht ausgeschildert
 Im Lichtenhain: Hausdurchfahrt	CP2; 16497,10685 16491,10655
 # 
-entlang des ehemaligen Spreeparks	CS 15981,8872 15973,8894 15845,9031
+entlang des ehemaligen Spreeparks	CS 15981,8872 15973,8894 15879,8994 15845,9031
 # 
 # REMOVED --- #: last_checked: 2019-09-14 --- #: check_frequency: 180d --- Hawaiiweg: nicht ausgeschildert	CS -2416,18769 -2459,18769 -2558,18771 -2659,18778 -2731,18776 -2757,18800 -2769,18853
 # 

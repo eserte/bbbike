@@ -2061,7 +2061,7 @@ Potsdamer Chaussee: Mittelstreifen	3nocross -870,2737 -739,2793 -726,2799 -563,2
 Potsdamer Chaussee: Mittelstreifen	3nocross -391,2914 -267,2945 -151,2975
 Potsdamer Chaussee: Mittelstreifen	3nocross -2280,2177 -2074,2258 -2023,2279
 Potsdamer Chaussee: Mittelstreifen	3nocross -2023,2279 -1959,2305 -1646,2434
-Bahnhofstr.: Straßenbahntrasse	3nocross 22116,5442 22087,5404 22043,5346 21954,5229
+Bahnhofstr.: Straßenbahntrasse	3nocross 22116,5442 22087,5404 22054,5360 21954,5229
 # REMOVED (separate Straße nun) --- Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21146,4229
 #: note: theoretisch wäre das Linksabbiegen von der Fahrbahn aus möglich, aber der Radweg ist benutzungspflichtig
 Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
@@ -2596,7 +2596,7 @@ Schranke	BNP:3::trailer=10 14138,21233
 Schranke	BNP:2::trailer=5 8757,9748
 #: note: Anordnung wie bei Drängelgittern vvv
 Barriere	BNP:2::trailer=8 13148,22396
-Barriere	BNP:2::trailer=8 13385,22383
+Barriere	BNP:2::trailer=8 13386,22378
 #: note ^^^
 Schranke, gut umfahrbar	BNP:0::trailer=3 8243,9766
 #: note: etwas weiter als üblich
@@ -3257,7 +3257,8 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2021-03-15
+#: priority: #C
+#: last_checked: 2021-04-03
 #: check_frequency: 45d
 (Weg parallel zur und unter der Minna-Todenhagen-Brücke): mit Bauzäunen abgesperrt	2::inwork 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
 # 
@@ -3343,10 +3344,14 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 #: by: https://twitter.com/Technologiepark/status/1337402031569580032 (Sanierung der Brücke bis 10.12.2021)
 #: by: https://www.deutsches-architekturforum.de/thread/14514-square-1-johannisthal/ (Erwähnung)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/betriebsbahnhof-schoeneweide-ist-geschichte_a296360 (bis Ende 2021)
-#: last_checked: 2021-02-21 (krickstadt)
-#: check_frequency: 90d
-#: next_check: 2021-12-10
+#: last_checked: 2021-04-03 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2021-12-10 vvv
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
+Gustav-Hertz-Platz: gesperrt, evtl. wegen der Brückenarbeiten?	2::inwork 18722,4628 18656,4687
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2021) --- #: last_checked: 2021-01-02 --- #: check_frequency: 30d --- #: next_check: 2021-06-01 --- (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
 # 
@@ -3448,7 +3453,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14348,10266 14462,10206 14480,1015
 # 
 #: by: wosch
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2021-04-02
+#: last_checked: 2021-04-03
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152 14373,10046
 # 
@@ -3564,7 +3569,13 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 # REMOVED (fertig) --- #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/gruenanlage-am-betriebsbahnhof-rummelsburg-wird-neu-gestaltet_a233623 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php --- #: XXX evtl. wird sich auch die Fahrbahnoberfläche ändern --- #: XXX laut osm fertiggestellt --- auch prüfen, ob das hier tatsächlich der übriggebliebene Weg ist --- #: last_checked: 2019-11-17 --- #: next_check: 2019-12-13 --- (Salzmannstr. - Zobtener Str.): Bauarbeiten, gesperrt	2::inwork 16841,9997 16811,9937
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: XXX ggfs. entfernen, wenn die Bauarbeiten in der DB-Werkstraße beendet sind --- #: last_checked: 2020-05-02 --- Tor, von außen verschlossen	1::igndisp 14717,10855 14692,10867
 # 
-# REMOVED (offen) --- #: next_check_id: KOENIGSTEINBRUECKE-2019 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621 (Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180130 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/16-05-2017_beleuchtungssituation-an-der-und-um-die-koenigsteinbruecke-verbessern.pdf --- #: by: http://www.berliner-woche.de/blankenburg/verkehr/senat-laesst-neue-laternen-auf-der-koenigsteinbruecke-errichten-d127411.html (Beleuchtung wird errichtet) --- #: by: https://adfc-berlin.de/radverkehr/aus-den-bezirken/pankow/524-koenigsteinbruecke-wird-fuer-radverkehr-im-nordosten-dringend-gebraucht.html (ab Sommer 2018) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180219 (2018 bis 2019) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4781 --- #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/behelfsbruecke-bitte-bauen_a164843 --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat_05-12-2017.pdf (Baubeginn Mitte 2018, Dauer 1,5 Jahre) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-29-05-2018.pdf (Baumaßnahme beginnt 2019, Dauer 18 Monate) --- #: by: https://ausschreibungen-deutschland.de/511848_Ersatzneubau_der_Fussgaengerbruecke_KoenigsteinbrueckeReferenznummer_der_Bekanntmachung_2019_Berlin (Ausschreibung bis 2. April 2019, Bindefrist 16.7.2019) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (Dauer 19 Monate) --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml (Beginn der Bauarbeiten voraussichtlich im August 2019) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5312 (in der BVV abgeleht) --- #: by: http://www.kbh-cdupankow.de/index.php?200;2index.php?200;2&e=2319 (Ablehnung der Sanierung der Umleitungsstrecke) --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml?date=20190927 (zuerst Ertüchtigungsmaßnahmen ab 1.10.2019 für die Umleitungsstrecke) --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/a114-pankow-zubringer-weitere-einschrankungen (Abriss ab 25.10.2019) --- #: by: https://www.berliner-woche.de/buch/c-verkehr/informationen-zur-a114-erneuerung_a234835 (Informationsveranstaltung am 23.10.2019) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.856694.php ("... bis Ende 2020 fertiggestellt werden") --- #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/auf-und-am-zubringer-a114-wird-auch-2020-gebaut_a244747 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.955339.php ("... bis Ende 2020 fertiggestellt werden") --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1001081.php --- #: by: https://www.berliner-woche.de/bezirk-pankow/c-bauen/bauarbeiten-auf-dem-zubringer-sollen-bis-ende-2022-abgeschlossen-sein_a292013 --- #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/koenigsteinbruecke/ --- #: by: https://www.berlin-usedom-radweginfo.de/1-Berlin-Bernau.php (voraussichtlich bis zum Frühjahr 2021) --- #: osm_watch: way id="16307526" version="19" --- #: priority: #A --- #: also_indoor: search Königsteinbrücke --- #: last_checked: 2021-02-24 (mapillary) (laut Baustellenschild bis April 2021) --- #: check_frequency: 45d --- #: next_check: 2021-04-01 --- # REMOVED --- #: valid: -20210228 --- Königsteinbrücke: Brückenneubau	2::inwork 13148,22396 13385,22383
+#: next_check_id: KOENIGSTEINBRUECKE-2019
+#: XXX wird es zukünftig eine Unterführung unter der neuen Königsteinbrücke geben? Oder wird der Weg verlegt und verläuft nördlich der Brücke?
+#: osm_watch: way id="763414285" version="2"
+#: last_checked: 2021-04-02 (mapillary)
+Pankeweg: Bauarbeiten, gesperrt	2::inwork 13354,22327 13290,22377 13295,22545
+# 
+# REMOVED (offen) --- #: next_check_id: KOENIGSTEINBRUECKE-2019 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621 (Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180130 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/16-05-2017_beleuchtungssituation-an-der-und-um-die-koenigsteinbruecke-verbessern.pdf --- #: by: http://www.berliner-woche.de/blankenburg/verkehr/senat-laesst-neue-laternen-auf-der-koenigsteinbruecke-errichten-d127411.html (Beleuchtung wird errichtet) --- #: by: https://adfc-berlin.de/radverkehr/aus-den-bezirken/pankow/524-koenigsteinbruecke-wird-fuer-radverkehr-im-nordosten-dringend-gebraucht.html (ab Sommer 2018) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180219 (2018 bis 2019) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4781 --- #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/behelfsbruecke-bitte-bauen_a164843 --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat_05-12-2017.pdf (Baubeginn Mitte 2018, Dauer 1,5 Jahre) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-29-05-2018.pdf (Baumaßnahme beginnt 2019, Dauer 18 Monate) --- #: by: https://ausschreibungen-deutschland.de/511848_Ersatzneubau_der_Fussgaengerbruecke_KoenigsteinbrueckeReferenznummer_der_Bekanntmachung_2019_Berlin (Ausschreibung bis 2. April 2019, Bindefrist 16.7.2019) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (Dauer 19 Monate) --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml (Beginn der Bauarbeiten voraussichtlich im August 2019) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5312 (in der BVV abgeleht) --- #: by: http://www.kbh-cdupankow.de/index.php?200;2index.php?200;2&e=2319 (Ablehnung der Sanierung der Umleitungsstrecke) --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml?date=20190927 (zuerst Ertüchtigungsmaßnahmen ab 1.10.2019 für die Umleitungsstrecke) --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/a114-pankow-zubringer-weitere-einschrankungen (Abriss ab 25.10.2019) --- #: by: https://www.berliner-woche.de/buch/c-verkehr/informationen-zur-a114-erneuerung_a234835 (Informationsveranstaltung am 23.10.2019) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.856694.php ("... bis Ende 2020 fertiggestellt werden") --- #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/auf-und-am-zubringer-a114-wird-auch-2020-gebaut_a244747 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.955339.php ("... bis Ende 2020 fertiggestellt werden") --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1001081.php --- #: by: https://www.berliner-woche.de/bezirk-pankow/c-bauen/bauarbeiten-auf-dem-zubringer-sollen-bis-ende-2022-abgeschlossen-sein_a292013 --- #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/koenigsteinbruecke/ --- #: by: https://www.berlin-usedom-radweginfo.de/1-Berlin-Bernau.php (voraussichtlich bis zum Frühjahr 2021) --- #: osm_watch: way id="16307526" version="19" --- #: priority: #A --- #: also_indoor: search Königsteinbrücke --- #: last_checked: 2021-02-24 (mapillary) (laut Baustellenschild bis April 2021) --- #: check_frequency: 45d --- #: next_check: 2021-04-01 --- # REMOVED --- #: valid: -20210228 --- Königsteinbrücke: Brückenneubau	2::inwork 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378
 # REMOVED (-> handicap) --- #: next_check_id: HOSEMANN-2019 --- #: last_checked: 2020-12-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2021-12-31 vvv --- #: valid: -20200731 vvv --- Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556,15518 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (offen) --- #: next_check_id: OLIVAERPLATZ-2019 --- #: last_checked: 2019-12-08 --- #: check_frequency: 60d --- (Olivaer Platz, Wielandstr. - Bayerische Str.): wegen Bauarbeiten gesperrt	2::inwork 4360,10320 4352,10260
 # REMOVED (teilweise schon offiziell offen) --- #: XXX auch Maßnahme Jt.7 --- #: XXX laut Planfestellungsverfahren kommt an der Kreuzung Groß-Berliner Damm eine Ampel hin --- #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019 --- #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/ --- #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie) --- #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-5_gesiegelt.pdf (Ampel) --- #: last_checked: 2020-07-31 vvv --- #: check_frequency: 30d vvv --- #: osm_watch: way id="72852443" version="12" --- Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 18434,4363 18596,4517 --- Gustav-Hertz-Platz: noch nicht freigegeben, Straße gesperrt	2::inwork 18596,4517 18674,4585 18685,4595 18722,4628 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -3761,7 +3772,7 @@ Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14121,8147 14210,822
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738
-#: last_checked: 2021-03-09
+#: last_checked: 2021-04-03
 #: check_frequency: 360d
 #: next_check: 2022-12-20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -3862,7 +3873,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/im-fruehjahr-geht-es-mit-den-arbeiten-im-spreepark-in-grossem-stil-weiter_a295117 (Erwähnung des Eierhäuschens --- Eröffnung nun 2022)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/abbau-des-riesenrads-im-spreepark-fuer-geplante-sanierung-hat-begonnen_a297932 (Erwähnung des Eierhäuschens)
 #: priority: #C
-#: last_checked: 2021-01-10
+#: last_checked: 2021-04-03
 #: check_frequency: 90d
 #: next_check: 2022-01-01
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687

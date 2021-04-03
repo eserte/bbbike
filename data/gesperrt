@@ -2191,9 +2191,9 @@ Mittelstreifen	3nocross::ignrte -2280,2177 -2074,2258 -2023,2279
 Wiesenschlag -> Potsdamer Chaussee: Mittelstreifen	3::igndisp -2036,2150 -2074,2258 -2280,2177
 Mittelstreifen	3nocross::ignrte -2023,2279 -1959,2305 -1646,2434
 Potsdamer Chaussee -> Mutter-Mochow-Weg: Mittelstreifen	3::igndisp -1646,2434 -1959,2305 -1849,2043
-Straßenbahntrasse	3nocross::ignrte 22116,5442 22087,5404 22043,5346 21954,5229
+Straßenbahntrasse	3nocross::ignrte 22116,5442 22087,5404 22054,5360 21954,5229
 Am Maria-Jankowski-Park -> Bhf.str.: Straßenbahntrasse	3::igndisp 22018,5452 22087,5404 22116,5442
-Lindenstr. -> Bhf.str.: Straßenbahntrasse	3::igndisp 22046,5305 22043,5346 21954,5229
+Lindenstr. -> Bhf.str.: Straßenbahntrasse	3::igndisp 22056,5314 22054,5360 21954,5229
 Lärmschutzwand	3nocross::ignrte 18496,2471 18656,2465 18929,2454
 North-Willys-Str. -> Ernst-Ruska-Ufer: Lärmschutzwand	3::igndisp 18644,2582 18656,2465 18929,2454
 Ernst-Ruska-Ufer -> North-Willys-Str.: Lärmschutzwand	3::igndisp 18496,2471 18656,2465 18644,2582
@@ -2703,7 +2703,7 @@ Tor, kann geschlossen sein	BNP:2:-217:trailer=5 16196,18364
 Schranke	BNP:3:-76:trailer=10 14138,21233
 Schranke	BNP:2:62:trailer=5 8757,9748
 Barriere	BNP:2:-85:trailer=8 13148,22396
-Barriere	BNP:2:-86:trailer=8 13385,22383
+Barriere	BNP:2:-113:trailer=8 13386,22378
 Schranke, gut umfahrbar	BNP:0:-160:trailer=3 8243,9766
 Drängelgitter	BNP:2:-51:trailer=8 4140,2706
 Drängelgitter	BNP:2:-76:trailer=6 7886,8335
@@ -3170,6 +3170,7 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708,11918 20738,11915
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
+Gustav-Hertz-Platz: gesperrt, evtl. wegen der Brückenarbeiten?	2::inwork 18722,4628 18656,4687
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s 13886,10939 13856,10864
 Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12165,8566 12287,8602
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9468,-85 9271,323 9253,370 9218,458 9178,556
@@ -3195,6 +3196,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
+Pankeweg: Bauarbeiten, gesperrt	2::inwork 13354,22327 13290,22377 13295,22545
 David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
 Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:inwork 12714,8249 12545,8209
