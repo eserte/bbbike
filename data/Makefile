@@ -210,7 +210,6 @@ persistent-tmp:	fragezeichen-outdoor \
 		${PERSISTENTTMPDIR}/non-faked-plaetze \
 		${PERSISTENTTMPDIR}/non-faked-strassen \
 		${PERSISTENTTMPDIR}/XXX.bbd \
-		${PERSISTENTTMPDIR}/plz-b.bbd \
 		${PERSISTENTTMPDIR}/berlin-fragezeichen-poi.gpx \
 		${PERSISTENTTMPDIR}/.check_data_test_mount \
 		osm-watch-lists \
@@ -1120,16 +1119,6 @@ ${PERSISTENTTMPDIR}/XXX.bbd: ${PERSISTENTTMPDIR}/XXX-outdoor.bbd
 	    $(PERL) -nle '/(.*\t)(\S+)(.*)/ && !/\b(\d{4}-\d{2}-\d{2}|[0123]?\d\.[01]?\d\.\d{4})\b/ && print "Noch immer? $$1?::inwork$$3"' | \
 	    ${CONVERT2HAFAS} -basefile ${DATADIR}/handicap_s-orig -- - >> $@~
 	mv $@~ $@
-
-${PERSISTENTTMPDIR}/plz-b.bbd:	$(PERSISTENTTMPDIR)/plz.sql
-	grep -i berlin $> | ${PERL} $(MISCSRCDIR)/parse_mapbender_plz.pl > $@
-
-$(PERSISTENTTMPDIR)/plz.sql:	$(PERSISTENTTMPDIR)/plz.zip
-	cd `dirname $>` && unzip -q -o `basename $>` plz.sql
-	touch -r $(PERSISTENTTMPDIR)/plz.zip $(PERSISTENTTMPDIR)/plz.sql
-
-$(PERSISTENTTMPDIR)/plz.zip:
-	wget -O ${PERSISTENTTMPDIR}/plz.zip http://prdownloads.sourceforge.net/mapbender/plz.zip?download
 
 ${PERSISTENTTMPDIR}/Berlin.coords.bbd: Berlin.coords.data
 	$(PERL) -F'\|' -nale 'print "@F[0,1,2]\tX $$F[3]" if $$F[3]' Berlin.coords.data > $@
