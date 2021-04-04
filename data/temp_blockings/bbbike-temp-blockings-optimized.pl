@@ -2301,7 +2301,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-03-29 (mapillary)
+#: last_checked: 2021-04-04
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -3402,6 +3402,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Judisgasse: nur tagsüber geöffnet',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 17507,4216 17476,4337 17428,4503
+',
+         'from' => 1616306400,
+         'id' => 3351,
+         'source_id' => '2147346994',
+         'text' => 'Winckelmannstr.: Gleisbauarbeiten zwischen Sterndamm und Köpenicker Str., Fahrbahn gesperrt, vom 22.03.2021 07:00 Uhr bis 26.04.2021 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1619449200
        }
      
 );

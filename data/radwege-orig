@@ -1195,15 +1195,15 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2021-03-30 vvv
+#: last_checked: 2021-04-04 vvv
 #: check_frequency: 30d vvv
-#	RW1;RW2 14051,6731 14153,6795
+#	RW1;RW2 14051,6731 14139,6786 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
 #: note: von der Bergiusstr. aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
 #: osm_watch: way id="693065560" version="10"
 	RW2;RW2 14344,7003 14257,6895 14239,6875
 #: osm_watch: way id="679376891" version="8"
-	RW2;RW8 14239,6875 14153,6795 14051,6731
+	RW2;RW8 14239,6875 14153,6795 14139,6786 14051,6731
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1561,7 +1561,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2021-04-01
+#: last_checked: 2021-04-04
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -1917,6 +1917,7 @@ Verbundsteinpflaster, relativ eng	RW1; 5550,18775 5376,18773
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/9566-oranienburger-blick-tessenowstr.jpg
 #: by: https://www.berliner-woche.de/wittenau/c-verkehr/fuenf-von-sechs-abgeschlossen_a294436
 #: by: https://abendblatt-berlin.de/2020/11/27/berlin-reinickendorf-bauarbeiten-in-der-oranienburger-strasse-naehern-sich-dem-ende/ (Bild zeigt Oranienburger/Wittenauer)
+#: by: http://www.infravelo.de/projekt/oranienburger-strasse-2/ (bis 2. Quartal 2021)
 #: source_id: 2147341383 (bis 10.11.2020) (inaktiv)
 #: source_id: 2147346684 (bis 21.12.2020) (inaktiv)
 #: XXX ist Richtung Norden durchgängig eine Radspur?
@@ -3520,7 +3521,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 11070,13357 11081,13372 11107,13410
 	RW3; 10741,13685 10709,13629
 Verbundsteinpflaster	RW1; 15693,7512 15560,7400
 nur in Ansätzen existierender alter enger, asphaltierter Radweg	RW0; 15920,7697 15968,7739 16136,7886
-vorhandener alter enger, asphaltierter Radweg ist abgesperrt	RW0; 16136,7886 15968,7739 15920,7697
+teilweise vorhandener alter enger, asphaltierter Radweg ist abgesperrt	RW0; 16136,7886 15968,7739 15920,7697
 	RW4; 8663,14960 8656,14947 8660,14929 8671,14919 8692,14923 8701,14932 8700,14956 8685,14966 8663,14960
 # REMOVED --- #: by: Julius Uhlmann: --- #: XXX: tatsächlich? nachgefragt! --- wahrscheinlich der Brückenabschnitt gemeint? ---	RW4?;RW4? 10534,20144 10478,20345
 #: by: Eva (philostrata):
@@ -3665,7 +3666,7 @@ sehr eng	RW1;RW1 13116,5689 13394,5754 13566,5792
 	RW6;RW6 5922,12765 5914,12845
 	RW6;RW6 5914,12845 5938,12848
 # REMOVED (ja) --- #: XXX wie wird die Radwegführung hier sein? Offizieller Zweirichtungsradweg? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02
-gemeinsamer Geh- und Radweg	RW2;RW8 14193,6556 14106,6663 14051,6731
+gemeinsamer Geh- und Radweg	RW2;RW8 14193,6556 14150,6609 14106,6663 14051,6731
 #: by: osm:
 	RW6;RW6 5782,14067 5943,14049
 # 
@@ -4567,6 +4568,10 @@ Verbundsteinpflaster	RW1;RW1 19574,3186 19695,3072 19743,3026 19878,2899 19983,2
 	RW4;RW3 12532,15924 12378,16020 12347,16039
 	RW4;RW4 12347,16039 12254,16097 12216,16120
 # REMOVED --- #: by: http://www.infravelo.de/projekt/ostseestrasse/ (baulich getrennter Radweg, bis 4. Quartal 2020) --- #: XXX wird hier der Radweg vervollständigt? --- #: osm_watch: way id="30134530" version="23" --- #: source_id: 2147346613 --- #: next_check: 2020-12-11
+#: XXX evtl. wird hier noch eine bauliche Realisierung kommen
+#: by: http://www.infravelo.de/projekt/ostseestrasse-2/ (bis 1. Quartal 2021)
+#: last_checked: 2021-03-05 (mapillary)
+#: check_frequency: 60d
 Radweg nur aufgemalt	RW1; 12216,16120 12123,16178
 	RW4; 12123,16178 12090,16199
 	RW4; 12090,16199 12123,16178 12216,16120
@@ -5532,9 +5537,14 @@ früherer Radweg ist nicht benutzbar	RW0; 23244,12417 23299,12600 23321,12673
 	RW1; 5584,475 5486,461 5448,455 5061,409
 Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2795
 	RW3;RW3 17194,3343 17142,3393
-	RW1; 16718,18204 16905,17949
-	RW1;RW3 16905,17949 16981,17855
+#: by: http://www.infravelo.de/projekt/zingster-strasse-2/ (3. Quartal 2021 - 3. Quartal 2022)
+#: XXX Asphaltierung des Radwegs vvv
+#: next_check: 2022-09-30 vvv
+	RW1; 16718,18204 16905,17949 16981,17855
 	RW2; 16981,17855 17159,17631
+#: next_check ^^^
+#: XXX ^^^
+	RW3; 16981,17855 16905,17949
 die ersten Meter werden auf dem Gehweg geführt	RW3; 17159,17631 16981,17855
 	RW1; 15357,22641 15271,22527
 	RW1;RW1 15271,22527 15154,22370
@@ -6813,6 +6823,8 @@ Tempo 10	RW6;RW6 17308,9090 17300,9135
 # 
 	RW3;RW3 -1872,24336 -1896,24275 -1940,24176
 10er-Zone	RW6;RW6 14567,6810 14620,6876 14751,7007 14803,7056
+10er-Zone	RW6;RW6 14751,7007 14686,7070 14555,6936
+10er-Zone	RW6;RW6 14531,6959 14555,6936 14620,6876
 # 
 #: by: https://api.fixmyberlin.de/api/projects/418 vvv
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.960249.php (ab 14. Juli 2020, zunächst provisorisch, voraussichtliches Bauende 17. Juli 2020) vvv

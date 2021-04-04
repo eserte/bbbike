@@ -19372,12 +19372,13 @@ EOF
        until => $isodate2epoch->("2019-05-19 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 4, start => "2020-06-02T00:00:00"]],
-       recurrence_prewarn_days => 21, # wegen Corona
+       recurrence_prewarn_days => 7, # wegen Corona
        text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 26.04.2019 bis 19.05.2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.915775.php (Absage 2020)
+#: by: https://www.wollenschlaeger-berlin.de/54-neukoellner-maientage/ (geplant: 28.4.2021 - 24.5.2021)
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
 	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
@@ -21656,10 +21657,12 @@ EOF
        until => $isodate2epoch->("2019-05-18 23:59:59"), # 1367704799, # 2013-05-04 23:59
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5, start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => 2, # wegen Corona
        text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 18. Mai 2019',
        type  => 'gesperrt',
        source_id => 'https://www.berliner-frauenlauf.de/der-tag/strecke.html',
        data  => <<EOF,
+#: by: https://www.berliner-frauenlauf.de/?date=20210404 (geplanter Termin: vom 13. bis 16. Mai 2021)
 # REMOVED --- #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -21962,7 +21965,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_119210',
        data  => <<EOF,
-	2::inwork 14193,6556 14106,6663 14051,6731
+	2::inwork 14193,6556 14150,6609 14106,6663 14051,6731
 EOF
      },
      { from  => undef, # 
@@ -28585,7 +28588,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-03-29 (mapillary)
+#: last_checked: 2021-04-04
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -32266,6 +32269,15 @@ EOF
        data  => <<EOF,
 #: tempex: sunset-sunrise
 	2::night 22279,4220 22224,4226
+EOF
+     },
+     { from  => 1616306400, # 2021-03-21 07:00
+       until => 1619449200, # 2021-04-26 17:00
+       text  => 'Winckelmannstr.: Gleisbauarbeiten zwischen Sterndamm und Köpenicker Str., Fahrbahn gesperrt, vom 22.03.2021 07:00 Uhr bis 26.04.2021 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346994',
+       data  => <<EOF,
+	q4::inwork 17507,4216 17476,4337 17428,4503
 EOF
      },
     );

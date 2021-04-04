@@ -334,7 +334,7 @@ Riensbergstr.	1 -740,15316 -763,15487
 Saganer Str.: Bahngelände	2 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159 17282,9135
 (Hönower Wiesenweg - Betriebsbahnhof Rummelsburg): Bahngelände	2 17300,9135 17284,9198
 Triniusstr.	1 18339,6660 18273,6606
-Planetenstr.	1 15175,7221 15056,7198 14951,7163
+Planetenstr.	1 15172,7231 15056,7198 14951,7163
 Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4755,14393
 Gartenstr. (Köpenick)	1 22419,4457 22382,4361 22362,4331 22302,4255 22279,4220
 Spitzerstr.	1 22319,4197 22358,4282 22385,4317 22425,4370 22451,4441
@@ -468,7 +468,7 @@ Lüttichauweg	1 18596,10675 18537,10663 18519,10707 18512,10744 18509,10757 18506
 Enckevortweg	1 18530,10887 18570,10768 18587,10716 18596,10675
 Schulze-Boysen-Str./Frankfurter Allee	1 15597,11957 15592,11881 15710,11857 15738,11851
 Rübezahlstr.	1 15136,7106 15222,7162
-Wegastr	1 15222,7162 15175,7221
+Wegastr	1 15222,7162 15172,7231
 Möllendorffstr.	1 15515,13134 15526,13056 15531,13022 15561,12950 15563,12870 15546,12690
 Möllendorffstr.	1 15546,12690 15516,12838 15515,13134
 Joachimsthaler Str. (Hohenschönhausen)	1 17117,14885 17129,14804 17063,14797 16943,14785
@@ -506,7 +506,7 @@ Römerweg	1s 19236,9710 19450,9728 19459,9842
 Michaelkirchplatz	1 11415,11392 11487,11390 11542,11342
 Berenhorststr.	1 4816,17712 4862,17934
 Berenhorststr.	1 4905,18142 4862,17934
-Von-der-Gablentz-Str.	1 5144,17659 4946,17701 4872,17703 4816,17712
+Von-der-Gablentz-Str.	1 4946,17701 4872,17703 4816,17712
 Kemmannweg	1 -4207,14473 -4117,14458 -4053,14428 -3937,14340 -3911,14331 -3819,14302
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
@@ -3029,7 +3029,7 @@ Drängelgitter	BNP:3:64:trailer=10 12280,2330
 Drängelgitter	BNP:3:65:trailer=10 12391,2382
 Drängelgitter	BNP:3:65:trailer=10 12593,2472
 Drängelgitter	BNP:3:66:trailer=10 11373,1925
-Drängelgitter	BNP:5:23 15516,6357
+Drängelgitter	BNP:5:22 15516,6357
 Drängelgitter	BNP:5:17 15496,6314
 Drängelgitter	BNP:5:22 15403,6145
 Drängelgitter	BNP:5:12 15393,6112
@@ -3217,7 +3217,7 @@ Ringeltaubenweg: durch Bauzäune abgesperrt	2::inwork 26519,12808 26460,12858 263
 Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421,12959
 Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
 Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
-Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14121,8147 14210,8227 14229,8278
+Mergenthalerring: durch Tor versperrt	2::inwork 14121,8147 14210,8227 14229,8278
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
@@ -3238,6 +3238,7 @@ Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork
 Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
+Bergiusstr.: wegen Bauarbeiten an der BAB100 gesperrt, vielleicht sogar dauerhaft	2::inwork 14051,6731 14106,6663 14150,6609
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 Niederlagstr.: Durchfahrt gesperrt	2::inwork 9934,12420 9943,12364
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419

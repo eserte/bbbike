@@ -3042,7 +3042,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20221231 vvv
-#: last_checked: 2021-03-30 vvv
+#: last_checked: 2021-04-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
@@ -3055,8 +3055,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked ^^^
 #: note: Anforderungsampel
 #: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen
-#: last_checked: 2021-03-30
+#: last_checked: 2021-04-04
 	F::inwork 14239,6875
+#: note: Anforderungsampel
+#: last_checked: 2021-04-04
+	F::inwork 14139,6786
 #: next_check ^^^
 #: valid ^^^
 #: next_check_id ^^^
@@ -3475,7 +3478,7 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2021-04-02 vvv
+#: last_checked: 2021-04-04 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

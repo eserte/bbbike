@@ -524,8 +524,8 @@ Saganer Str.: Bahngelände	2 16562,9809 16710,9702 16747,9695 17020,9463 17231,91
 (Hönower Wiesenweg - Betriebsbahnhof Rummelsburg): Bahngelände	2 17300,9135 17284,9198
 Triniusstr.	1 18339,6660 18273,6606
 # REMOVED (hier nicht) --- Franz-Stenzer-Str.	1 20508,15792 20586,15947 20610,15993 20636,16046
-#: XXX_indoor bei osm fehlt oneway
-Planetenstr.	1 15175,7221 15056,7198 14951,7163
+#: note: Einbahnstraßenschild an der Drosselbartstr., aber kein "Einfahrt verboten"-Schild an der Wegastr., so dass man von Osten aus kommend nichts über die Einbahnstraße erfährt
+Planetenstr.	1 15172,7231 15056,7198 14951,7163
 Wustermarker Str.	1 -5097,14599 -5111,14486 -5004,14454 -4981,14442 -4755,14393
 Gartenstr. (Köpenick)	1 22419,4457 22382,4361 22362,4331 22302,4255 22279,4220
 Spitzerstr.	1 22319,4197 22358,4282 22385,4317 22425,4370 22451,4441
@@ -738,7 +738,7 @@ Lüttichauweg	1 18596,10675 18537,10663 18519,10707 18512,10744 18509,10757 18506
 Enckevortweg	1 18530,10887 18570,10768 18587,10716 18596,10675
 Schulze-Boysen-Str./Frankfurter Allee	1 15597,11957 15592,11881 15710,11857 15738,11851
 Rübezahlstr.	1 15136,7106 15222,7162
-Wegastr	1 15222,7162 15175,7221
+Wegastr	1 15222,7162 15172,7231
 Möllendorffstr.	1 15515,13134 15526,13056 15531,13022 15561,12950 15563,12870 15546,12690
 Möllendorffstr.	1 15546,12690 15516,12838 15515,13134
 Joachimsthaler Str. (Hohenschönhausen)	1 17117,14885 17129,14804 17063,14797 16943,14785
@@ -791,23 +791,20 @@ Blaurackenweg	1 17532,8125 17647,8071 17613,7989
 Harzburger Str. (Pankow), Klaustaler Str...	1s:q4 11442,18736 11419,18801 11463,18817 11469,18799 11483,18753 11462,18743 11442,18736
 #: by: Andy (compstars)
 #: confirmed_by: Luftbild
-#: XXX_indoor bei osm falsch herum
 Faucherweg	1 -1299,14797 -1251,14772 -1207,14781 -1141,14814 -896,14888
 Römerweg	1s:q2 19236,9710 19450,9728 19459,9842
 Michaelkirchplatz	1 11415,11392 11487,11390 11542,11342
 #: by: Ulrike Orlowski vvv
-#: XXX_osm Einbahnstraßen fehlen bei osm vvv
 Berenhorststr.	1 4816,17712 4862,17934
 Berenhorststr.	1 4905,18142 4862,17934
-Von-der-Gablentz-Str.	1 5144,17659 4946,17701 4872,17703 4816,17712
-#: XXX_osm ^^^
+# REMOVED (hier nicht) --- Von-der-Gablentz-Str.	1 5144,17659 4946,17701
+Von-der-Gablentz-Str.	1 4946,17701 4872,17703 4816,17712
 #: by: ^^^
 #: by: Christian (i8pp):
 Kemmannweg	1 -4207,14473 -4117,14458 -4053,14428 -3937,14340 -3911,14331 -3819,14302
 #: by: jan (...matrix): vvv
 #: confirmed_by: srt
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
-#: XXX_osm: Einbahnstraße fehlt bei osm
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 #: by: ^^^
 # 
@@ -900,12 +897,10 @@ Lötschbergstr.	1s:q3 20161,11715 20150,11512
 #: confirmed_by: srt
 Brodenbacher Weg	1s:q3 15178,17134 14897,17093
 #: by: arnulf knorr:
-#: XXX_osm: Einbahnstraße fehlt bei osm
 Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
 #: by: MichaelM vvv
 Markgrafenstr. (Zehlendorf)	1 466,2811 431,2984
 Bürstadter Weg	1 -847,4553 -760,4542
-#: XXX_osm: Einbahnstraße fehlt bei osm
 #: note: "Fährt man verbotenerweise doch verkehrt herum ein, ist ein Ausweichen auf den Gehweg nötig, wenn jemand entgegenkommt, weil zu eng"
 Hartmannsweilerweg	1s:q4 16,3744 41,3510 17,3471
 #: by: ^^^
@@ -3481,8 +3476,8 @@ Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 #: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-3.php (Webcam)
 #: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php (Webcam)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
-#: last_checked: 2021-02-19
-#: check_frequency: 90d
+#: last_checked: 2021-04-04 (webcam)
+#: check_frequency: 60d
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7687,14017
 # 
 #: next_check_id: EUROPACITY-2015
@@ -3725,7 +3720,7 @@ Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421
 Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
 # 
 #: next_check_id: WEIDENKAETZCHENWEG-2020
-#: XXX_osm laut osm eröffnet (aber nicht richtig!) und _keine_ Spielstraße
+#: osm_watch: way id="889476798" version="2"
 #: last_checked: 2021-02-24
 #: check_frequency: 30d
 Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
@@ -3737,9 +3732,9 @@ Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 2144
 #: osm_watch: node id="791819743" version="4"
 #: by: osm (kartonage)
 #: confirmed_by: srt
-#: last_checked: 2021-03-02
+#: last_checked: 2021-04-04
 #: check_frequency: 60d
-Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14121,8147 14210,8227 14229,8278
+Mergenthalerring: durch Tor versperrt	2::inwork 14121,8147 14210,8227 14229,8278
 # 
 # REMOVED (nicht mehr) --- #: next_check_id: NORD52-2019 --- #: last_checked: 2019-04-20 --- #: check_frequency: 90d --- Relingstr.: Bauarbeiten, gesperrt	2::inwork 22195,2390 22287,2431 22358,2460
 # REMOVED --- #: next_check_id: NORD52-2019 --- #: osm_watch: way id="663013125" version="8" --- #: last_checked: 2019-12-15 (osm) --- #: check_frequency: 90d --- Gaffelsteig: Bauarbeiten, kann gesperrt sein	2::inwork 22287,2431 22221,2520
@@ -3834,7 +3829,7 @@ Jägerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9195,11972 9108,11961
 #: XXX laut googlemaps bis 30. Oktober 2018
 #: XXX laut VIZ hier Komplettsperrung, auch für Fußgänger --- aber am 2018-10-10, 2018-10-17, 2018-10-25 ist man noch durchgekommen
 #: source_id: 2147343290
-#: XXX_osm laut osm ist hier wieder offen -> ist aber falsch!
+#: XXX_osm laut osm ist hier wieder offen -> ist aber falsch! Siehe https://www.openstreetmap.org/note/2194239
 Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
 #: valid ^^^
 #: check_frequency ^^^
@@ -4134,11 +4129,25 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # REMOVED (laut VMZ beendet) --- #: next_check_id: STERNDAMM-2016 --- #: XXX laut Fritz bis April 2018 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829 (ebenso: bis April 2018) --- #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180201 (Bauarbeiten sind am 27.08.2018 beendet) --- #: by: http://www.berliner-woche.de/johannisthal/verkehr/lichtschimmer-am-horizont-beim-umbau-bahnhof-berlin-schoeneweide-d143446.html (beide Richtungen ab Juni 2018) --- #: by: http://www.berliner-woche.de/johannisthal/bauen/letzter-brueckenschlag-ueber-dem-sterndamm-beim-bauvorhaben-bahnhof-schoeneweide-d157707.html --- #: by: https://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180601 (Buslinie wird erst am 27.08.2018 verlängert) --- #: source_id: 2147341515	 --- #: source_id: LMS-BR_r_LMS-BR_103259_LMS-BR_72 --- #: last_checked: 2018-03-10 --- #: next_check: 2018-06-16 --- #: valid: -20180616 --- #: priority: #A --- Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt	1::inwork 17886,5587 17736,5441
 # REMOVED --- #: next_check_id: GRENZALLEE-2014 --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/04_Umleitungsstrecken_Grenzallee.pdf --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/02_Ueplan_West_Bph1.pdf --- #: XXX zeitgleich wird die Neuköllnische Allee zwischen Lahnstr. und Grenzallee gesperrt, aber wohl nicht für Radfahrer --- #: source_id: IM_021335 --- #: source_id: 2147338144 --- #: source_id: LMS-BR_r_LMS-BR_6571 --- #: last_checked: 2018-10-27 --- # REMOVED --- #: next_check: 2019-12-31 --- #: next_check: 2019-01-24 --- #: priority: #A --- #: valid: 20140224-20191231 --- Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 # 
+#: next_check_id: GRENZALLEE-2014
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/grenzallee-wird-angebunden_a294931
+#: by: https://twitter.com/VIZ_Berlin/status/1364948097718190084 (bis Ende März 2021 für den Kfz-Verkehr gesperrt)
+#: note laut rbb bis 3.1.2022
+#: source_id: 2147346461 (bis 31.12.2021)
+#: source_id: 2147346643 (bis 31.12.2021)
+#: osm_watch: way id="194653032" version="20"
+#: osm_watch: way id="846595294" version="2"
+#: osm_watch: way id="38725490" version="15"
+#: also_indoor: traffic (G)
+#: last_checked: 2021-04-04
+#: check_frequency: 90d
+Bergiusstr.: wegen Bauarbeiten an der BAB100 gesperrt, vielleicht sogar dauerhaft	2::inwork 14051,6731 14106,6663 14150,6609
+# 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaßnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G)
-#: last_checked: 2021-03-30
+#: last_checked: 2021-04-04
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
