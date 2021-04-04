@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.63;
+$VERSION = 1.64;
 
 use vars qw(%images);
 
@@ -1101,6 +1101,10 @@ sub show_fis_broker_menu {
     $link_menu->command
 	(-label => 'FNP',
 	 -command => sub { showmap_fis_broker(mapId => 'fnp_ak@senstadt', %args) },
+	);
+    $link_menu->command
+	(-label => 'Bebauungspläne',
+	 -command => sub { showmap_fis_broker(mapId => 'bplan@senstadt', %args) },
 	);
     $link_menu->command
 	(-label => 'Flurstücke (INSPIRE)',
