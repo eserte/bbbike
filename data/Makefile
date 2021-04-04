@@ -1151,11 +1151,7 @@ ${PERSISTENTTMPDIR}/Potsdam.coords.bbd: Potsdam.coords.data
 
 OPENGEODB_D_ORTE_FILE=		DE.tab
 OPENGEODB_D_ORTE_DISTURL=	http://fa-technik.adfc.de/Codierung/opengeodb/DE.tab
-.if exists(/usr/ports/distfiles/opengeodb)
-OPENGEODB_DIR=		/usr/ports/distfiles/opengeodb
-.else
-OPENGEODB_DIR=		${PERSISTENTTMPDIR}
-.endif
+OPENGEODB_DIR=			${PERSISTENTTMPDIR}
 OPENGEODB_D_ORTE_PATH=		${OPENGEODB_DIR}/${OPENGEODB_D_ORTE_FILE}
 
 OPENGEODB_D_PLZ_FILE=		PLZ.tab
