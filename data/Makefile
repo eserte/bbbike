@@ -239,7 +239,7 @@ fragezeichen-outdoor:		${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
 osm-watch-lists:	${PERSISTENTTMPDIR}/osm_watch_list \
 			${PERSISTENTTMPDIR}/osm_watch_list_brandenburg
 
-doit:	berlin_ortsteile berlin
+doit:	berlin_ortsteile berlin inaccessible_landstrassen inaccessible_strassen
 	${PERL} doit.pl
 
 old-bbbike-data:
@@ -1597,7 +1597,7 @@ check-disabled:
 		-against strassen -against landstrassen -against landstrassen2 -against fragezeichen
 	@touch $@
 
-.check_gesperrt_double:	gespert
+.check_gesperrt_double:	gesperrt
 	${PERL} doit.pl check_gesperrt_double
 
 .for i in u s r
