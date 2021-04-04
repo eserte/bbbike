@@ -1182,8 +1182,9 @@ ${PERSISTENTTMPDIR}/opengeodb-orte-DE.bbd:	${OPENGEODB_D_ORTE_PATH} ${MISCSRCDIR
 	${PERL_UTF8} ${MISCSRCDIR}/opengeodborte2bbd ${OPENGEODB_D_ORTE_PATH} > $@
 
 # About 70 failures for now. If I correct them all, enlarge the bbox.
-.check_orte_opengeodb:	orte orte2 ${PERSISTENTTMPDIR}/opengeodb-orte-DE.bbd
-	cat orte orte2 | grep -v '^#' | \
+# Use "-orig" versions of orte*, because these are already encoded as utf8 like the opengeodb data.
+.check_orte_opengeodb:	orte-orig orte2-orig ${PERSISTENTTMPDIR}/opengeodb-orte-DE.bbd
+	cat orte-orig orte2-orig | grep -v '^#' | \
 	    $(PERL) -pe 'if (m{^(.*)\|(.*)\t}) { print "$$1 $$2\n" } s{^([^\|\t]+).*}{$$1}' | \
 	    sort -u > /tmp/orte_bbbike
 	cat ${PERSISTENTTMPDIR}/opengeodb-orte-DE.bbd | \
