@@ -275,7 +275,7 @@ for my $kr ($kr1, $kr2) {
 
     {
 	# Flughafenstr. -> Fuldastr.
-	my %situation = situation_at_point_inorder($kr, qw(12349,8464 12500,8504 12551,8612));
+	my %situation = situation_at_point_inorder($kr, qw(12349,8464 12494,8501 12551,8612));
 	is($situation{action}, 'XXX', q{Komplizierte Wegfuehrung (zuerst links, dann rechts), benoetigt eine gesonderte Beschreibung});
     }
 
