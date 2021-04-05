@@ -157,7 +157,7 @@ Baerwaldstr.	1 10424,9958 10467,10051 10500,10081
 Baerwaldstr.	1 10500,10081 10513,10038 10480,9949
 Baerwaldstr.	1 10480,9949 10405,9795 10361,9755
 Dittersbacher Weg	1 7855,3355 7852,3183
-Anzengruberstr.	1 12865,8346 12689,8289
+Anzengruberstr.	1 12856,8344 12689,8289
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
 Kirchstr.	1s 22314,4604 22284,4653
@@ -243,7 +243,7 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
 Karl-Marx-Platz	1 13100,7626 12987,7560
-Karl-Marx-Platz	1s 12969,7610 13100,7626
+Karl-Marx-Platz	1s 12972,7602 13100,7626
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
 Takustr.	1 2953,5606 2909,5674
@@ -425,7 +425,7 @@ Südwestkorso	1 4061,6753 4204,6826
 Südwestkorso	1 4204,6826 4125,6763 4103,6716
 Kleine Markusstr. - Krautstr.	1 12021,12066 11958,12112
 Kleine Markusstr. - Krautstr.	1 11958,12112 11962,12034 12002,12008
-Schönstedtstr.	1 12540,8458 12649,8535
+Schönstedtstr.	1 12545,8449 12643,8533
 Erkelenzdamm	1s 11117,10326 11094,10261
 Alt-Tempelhof	1 8787,6660 8722,6656
 Langkofelweg	1 6845,3403 7023,3570
@@ -1912,7 +1912,7 @@ Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12118,12462 12006,
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 7696,7562 7858,7462 7938,7406
 Sachsendamm -> Suadicanistr.: unbequem passierbarer Mittelstreifen	3::igndisp 7696,7562 7858,7462 7858,7506
 Suadicanistr. -> Sachsendamm: unbequem passierbarer Mittelstreifen	3::igndisp 7858,7506 7858,7462 7938,7406
-Mittelstreifen	3nocross::ignrte 12598,8390 12582,8408 12562,8432 12540,8458
+Mittelstreifen	3nocross::ignrte 12598,8390 12582,8408 12562,8432 12545,8449
 Boddinstr. -> Karl-Marx-Str.: Mittelstreifen	3::igndisp 12368,8356 12582,8408 12562,8432
 unbequemes Überqueren wegen parkender Autos	3nocross::ignrte 12846,7981 12865,7923 12892,7850
 Karl-Marx-Str. -> Saltykowstr.: unbequemes Überqueren wegen parkender Autos	3::igndisp 12892,7850 12865,7923 12726,7887
@@ -1965,8 +1965,8 @@ Mittelstreifen	3nocross::ignrte 11221,12250 11300,12241 11347,12223
 Stralauer Str. -> Dircksenstr.: Mittelstreifen	3::igndisp 11221,12250 11300,12241 11273,12301
 Dircksenstr. -> Stralauer Str.: Mittelstreifen	3::igndisp 11273,12301 11300,12241 11347,12223
 unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross::ignrte 12628,8711 12736,8629 12765,8605
-Sonnenallee -> Schönstedtstr.: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12765,8605 12736,8629 12649,8535
-Schönstedtstr. -> Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12649,8535 12736,8629 12628,8711
+Sonnenallee -> Schönstedtstr.: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12765,8605 12736,8629 12643,8533
+Schönstedtstr. -> Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12643,8533 12736,8629 12628,8711
 Mittelstreifen	3nocross::ignrte 13277,8211 13459,8072 13474,8060
 Sonnenallee -> Treptower Str.: Mittelstreifen	3::igndisp 13277,8211 13459,8072 13478,8095
 Sonnenallee -> Treptower Str.: Mittelstreifen	3::igndisp 13474,8060 13459,8072 13457,8069

@@ -74,9 +74,9 @@ Rudolf-Breitscheid-Str.	1 -10429,-1944 -10360,-1934 -10235,-1916 -9986,-1882 -97
 Bendastr.	1 12689,6905 12702,6846
 Bendastr.	1 12715,6775 12702,6846
 Puschkin/Bulgarische	1 14196,9749 14271,9712 14318,9688 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15407,9151 15442,9095 15452,9079 15591,8848 15558,8820 15378,8668 15166,8489
-Karl-Marx-Str./Schönstedt	3nocross::ignrte 12500,8504 12540,8458 12562,8432 12582,8408
-Karl-Marx-Str. -> Schönstedtstr.: Karl-Marx-Str./Schönstedt	3::igndisp 12500,8504 12540,8458 12649,8535
-Schönstedtstr. -> Karl-Marx-Str.: Karl-Marx-Str./Schönstedt	3::igndisp 12649,8535 12540,8458 12562,8432
+Karl-Marx-Str./Schönstedt	3nocross::ignrte 12494,8501 12545,8449 12562,8432 12582,8408
+Karl-Marx-Str. -> Schönstedtstr.: Karl-Marx-Str./Schönstedt	3::igndisp 12494,8501 12545,8449 12643,8533
+Schönstedtstr. -> Karl-Marx-Str.: Karl-Marx-Str./Schönstedt	3::igndisp 12643,8533 12545,8449 12562,8432
 Hoffmannstr./Elsenstr.	3 14077,10016 14289,9870 14323,9913 14405,10027
 Behren/Ebert	3 8861,12125 8743,12099 8737,12098 8595,12066 8577,11896 8571,11846
 UdL/Universitätsstr.	3nocross::ignrte 9475,12365 9613,12381 9664,12387
@@ -106,7 +106,7 @@ Hiddenseer Str.	1 11651,15273 11828,15210
 Koserstr.	1 2950,6141 3112,6090 3118,6140 3209,6206 3309,6270
 Offenbacher Str.	1 4506,7734 4559,7672 4785,7609 5045,7623
 Wassergasse	1 11034,11895 11024,11789
-Kienitzer Str.	1 12830,8031 12692,7996 12583,7974 12466,7946
+Kienitzer Str.	1 12823,8028 12692,7996 12583,7974 12466,7946
 Alt-Mariendorf (Nord)	1 9051,3692 9106,3703 9275,3753 9426,3797 9732,3883
 Almstadtstr.	1 10797,13575 10767,13443 10757,13401 10699,13173
 Schendelgasse	1 10644,13497 10703,13467 10767,13443
@@ -405,7 +405,7 @@ Ballonfahrerweg - Werner-Voß-Damm	3 7979,7525 7949,7607 8188,7610 8263,7611
 General-Pape-Str. - Werner-Voß-Damm	3 7943,7708 7949,7607 8188,7610 8263,7611
 Rubensstr. - Baumeisterstr.	3 6389,7196 6367,7356 6282,7240
 Mittelstreifen	3nocross::ignrte 13011,8416 13038,8394 13102,8343
-Anzengruberstr. -> Sonnenallee: Mittelstreifen	3::igndisp 12865,8346 13038,8394 13011,8416
+Anzengruberstr. -> Sonnenallee: Mittelstreifen	3::igndisp 12856,8344 13038,8394 13011,8416
 Mittelstreifen	3nocross::ignrte 13102,8343 13194,8276 13277,8211
 Sonnenallee -> Geygerstr.: Mittelstreifen	3::igndisp 13277,8211 13194,8276 13070,8138
 Geygerstr. -> Sonnenallee: Mittelstreifen	3::igndisp 13070,8138 13194,8276 13102,8343
@@ -493,7 +493,7 @@ Onkel-Bräsig-Str. -> Riesestr.: Mittelstreifen, Barriere nur für Autos	3::igndis
 Onkel-Bräsig-Str. -> Blaschkoallee: Mittelstreifen, Barriere nur für Autos	3::igndisp 13359,5086 13327,5234 13250,5234
 Krokusstr.	1 16738,2717 16739,2736 16677,2856
 Gregor-Mendel-Str. (Potsdam)	1 -13596,-508 -13415,-506 -13257,-512 -13182,-515
-Donaustr.	1 12150,8891 12202,8895
+Donaustr.	1 12150,8884 12198,8887
 Altstadt Köpenick: nur für Busse frei	2 22388,4737 22390,4702
 Mittelstreifen	3nocross::ignrte 16428,7144 16353,7226 16259,7328 16195,7398 15920,7697
 Köpenicker Landstr. -> Trojanstr.: Mittelstreifen	3::igndisp 16428,7144 16353,7226 16290,7160
@@ -1170,7 +1170,7 @@ Dömitzer Str.	1 13771,4485 13775,4631 13757,4729
 Kirchstr.: nur Linienverkehr erlaubt	2 22314,4604 22284,4653
 Theodorstr.: Poller	3 24916,10539 24920,10697 24925,10710
 Theodorstr.: Poller	3 24925,10710 24920,10697 24916,10539
-Anzengruberstr.	1 13038,8394 12865,8346
+Anzengruberstr.	1 13038,8394 12856,8344
 Holtzendorffstr.	1 3049,11015 3082,11090
 Hansa -> Buschallee	3 15297,16321 15437,16491 15142,16499
 Poller	3 8586,13678 8590,13653 8594,13625
@@ -1808,8 +1808,8 @@ Askanischer Platz -> Stresemannstr.	3 8865,10974 8901,11011 8747,11194
 Mittelinsel	3nocross::ignrte 13034,7319 13043,7234 13051,7157
 Karl-Marx-Str. -> Braunschweiger Str.: Mittelinsel	3::igndisp 13034,7319 13043,7234 13150,7254
 Braunschweiger Str. -> Karl-Marx-Str.: Mittelinsel	3::igndisp 13150,7254 13043,7234 13051,7157
-Mittelinsel	3nocross::ignrte 12969,7610 12987,7560 13015,7471
-Karl-Marx-Str. -> Karl-Marx-Pl.: Mittelinsel	3::igndisp 12969,7610 12987,7560 13100,7626
+Mittelinsel	3nocross::ignrte 12972,7602 12987,7560 13015,7471
+Karl-Marx-Str. -> Karl-Marx-Pl.: Mittelinsel	3::igndisp 12972,7602 12987,7560 13100,7626
 Karl-Marx-Pl. -> Karl-Marx-Str.: Mittelinsel	3::igndisp 13100,7626 12987,7560 13015,7471
 Berliner Str - Bernstorffstr.: nur für BVG-Busse erlaubt	3 1955,20435 2015,20336 2133,20413
 Waidmannsluster Damm	3nocross::ignrte 3216,21431 3238,21448 3280,21477
@@ -1866,7 +1866,7 @@ Hedwig-Porschütz-Str. -> Heidestr.: Mittelstreifen	3::igndisp 7781,14238 7697,14
 Mittelstreifen	3nocross::ignrte -3789,13519 -3764,13613 -3716,13724
 Klosterstr. -> Diedenhofener Str.: Mittelstreifen	3::igndisp -3716,13724 -3764,13613 -3672,13597
 Diedenhofener Str. -> Klosterstr.: Mittelstreifen	3::igndisp -3672,13597 -3764,13613 -3789,13519
-Karl-Marx-Platz	1 12969,7610 13100,7626
+Karl-Marx-Platz	1 12972,7602 13100,7626
 Leonhardyweg	1 9033,8029 9035,7810 9040,7648
 Leonhardyweg	1 9033,8029 9032,8254
 Kleineweg	1 9130,7810 9132,7661
@@ -2040,7 +2040,7 @@ Scharounplatz: gesperrt für private Pkw	2 7943,11431 8083,11381
 Vorfahrt am Rathaus Lichtenberg	1 15531,12300 15480,12306
 Hausstockweg	1 10246,3017 10121,3040 9995,3065 9867,3092 9747,3118 9712,3113
 Eigerstr. [81-91]	1 12945,17958 12910,18003 13043,18126
-Pannierstr.	1 12202,8895 12240,8964
+Pannierstr.	1 12198,8887 12240,8964
 Elly-Beinhorn-Ring	1 19105,-3940 19153,-4033 19158,-4083
 Jürgen-Schumann-Allee	1 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
 Jürgen-Schumann-Allee	1 19479,-3690 19528,-3767 19524,-3843 19454,-3956 19189,-4062 19158,-4083

@@ -2910,7 +2910,7 @@ neu asphaltiert, relativ breit	RW2; 23404,5325 23420,5159 23433,5037 23444,4942 
 	RW1;RW1 218,6571 297,6541 441,6435
 	RW;RW 441,6435 486,6404 605,6345 736,6217 869,6085
 	RW;RW1 869,6085 884,5974 894,5829 910,5654
-	RW1;RW0 12969,7610 12918,7600 12787,7546 12685,7497
+	RW1;RW0 12972,7602 12918,7600 12787,7546 12685,7497
 	RW2;RW2 16975,1262 16908,1217
 	RW1;RW9 16786,2989 17284,2636 17541,2454
 	RW1;RW0 17541,2454 17772,2331 17928,2248 18101,2164 18111,2135
@@ -5861,8 +5861,8 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 	RW6;RW6 15347,22275 15411,22369 15445,22352
 	RW6;RW6 7109,22919 7000,23095 6956,23166 6908,23244
 # REMOVED (offiziell) --- #: next_check_id: KARLMARXSTR-2016 --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: osm_watch: way id="297058655" version="5" --- #: last_checked: 2018-04-29 vvv --- #: next_check: 2018-05-02 vvv
-# REMOVED (siehe unten) --- #: next_check_id: KARLMARXSTR-2018 --- #: XXX Gelbmarkierung; wann werden hier richtige Radspuren entstehen, vermutlich grün markiert? --- #: last_checked: 2020-09-29 --- #: check_frequency: 30d --- #: next_check: 2020-10-20 ---	RW0;RW0 12794,8103 12753,8187
-# REMOVED (gerade ist hier gar nichts) --- provisorische Radspuren	RW3;RW3 12794,8103 12753,8187
+# REMOVED (siehe unten) --- #: next_check_id: KARLMARXSTR-2018 --- #: XXX Gelbmarkierung; wann werden hier richtige Radspuren entstehen, vermutlich grün markiert? --- #: last_checked: 2020-09-29 --- #: check_frequency: 30d --- #: next_check: 2020-10-20 ---	RW0;RW0 12788,8101 12753,8187
+# REMOVED (gerade ist hier gar nichts) --- provisorische Radspuren	RW3;RW3 12788,8101 12753,8187
 # 
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
@@ -5870,9 +5870,9 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: priority: #D
 #: last_checked: 2021-04-02
 #: check_frequency: 30d
-	RW4; 12714,8249 12753,8187 12794,8103 12830,8031
-Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
-Grünmarkierung	RW3; 12914,7785 12969,7610 12987,7560 13015,7471 13018,7441 13029,7353
+	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
+Grünmarkierung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
+Grünmarkierung	RW3; 12914,7785 12972,7602 12987,7560 13015,7471 13018,7441 13029,7353
 Grünmarkierung	RW4; 13029,7353 13030,7346 13034,7319 13043,7234 13051,7157
 Grünmarkierung	RW3; 13051,7157 13058,7112 13068,7043
 Grünmarkierung	RW4; 13068,7043 13072,7013 13085,6925
@@ -5891,8 +5891,8 @@ Radspur zwischen Fahrspuren, Grünmarkierung	RW4; 13058,7112 13051,7157
 Grünmarkierung	RW4; 13051,7157 13043,7234
 Grünmarkierung	RW3; 13043,7234 13034,7319
 Grünmarkierung	RW4; 13034,7319 13030,7346 13029,7353 13018,7441 13015,7471
-Grünmarkierung	RW3; 13015,7471 12987,7560 12969,7610 12914,7785
-Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830,8031
+Grünmarkierung	RW3; 13015,7471 12987,7560 12972,7602 12914,7785
+Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823,8028
 # REMOVED --- #: XXX Radspur wird grün markiert (vermutlich mehr als nur dieses Teilstück; laut infravelo 2000m --- vielleicht Lahnstr. bis Briesestr.?) vvv
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (für 2018/2019 vorgesehen)
@@ -5905,7 +5905,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 #: priority: #D
 #: last_checked: 2021-04-02
 #: check_frequency: 30d
-	RW4; 12830,8031 12794,8103 12753,8187 12714,8249
+	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 # note: Ende Karl-Marx-Str.
 # 
 	RW7;RW7 -2135,17633 -2048,17654

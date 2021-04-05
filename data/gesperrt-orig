@@ -243,7 +243,7 @@ Baerwaldstr.	1 10424,9958 10467,10051 10500,10081
 Baerwaldstr.	1 10500,10081 10513,10038 10480,9949
 Baerwaldstr.	1 10480,9949 10405,9795 10361,9755
 Dittersbacher Weg	1 7855,3355 7852,3183
-Anzengruberstr.	1 12865,8346 12689,8289
+Anzengruberstr.	1 12856,8344 12689,8289
 # 
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
@@ -370,7 +370,7 @@ Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
 Karl-Marx-Platz	1 13100,7626 12987,7560
 #: note: früher für Radfahrer offen, mittlerweile ist das Zusatzschild "Radfahrer frei" durchgestrichen
-Karl-Marx-Platz	1s:q4 12969,7610 13100,7626
+Karl-Marx-Platz	1s:q4 12972,7602 13100,7626
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 # REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
 #: by: Lea:
@@ -663,7 +663,7 @@ Südwestkorso	1 4061,6753 4204,6826
 Südwestkorso	1 4204,6826 4125,6763 4103,6716
 Kleine Markusstr. - Krautstr.	1 12021,12066 11958,12112
 Kleine Markusstr. - Krautstr.	1 11958,12112 11962,12034 12002,12008
-Schönstedtstr.	1 12540,8458 12649,8535
+Schönstedtstr.	1 12545,8449 12643,8533
 # REMOVED (verkürzt) --- Eckertstr.	1 13608,12547 13522,12748
 Erkelenzdamm	1s:q3 11117,10326 11094,10261
 Alt-Tempelhof	1 8787,6660 8722,6656
@@ -1962,7 +1962,7 @@ Hauptstr./Kleistpark: unbequemes Überqueren, stark befahrene Straße	3nocross 750
 An den Treptowers: unbequemes Überqueren, stark befahrene Straße	3nocross 14501,10169 14405,10027 14323,9913 14289,9870
 Lichtenberger Str.: Mittelstreifen	3nocross 12028,12519 12006,12464 11920,12266
 Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7696,7562 7858,7462 7938,7406
-Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12562,8432 12540,8458
+Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12562,8432 12545,8449
 Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12846,7981 12865,7923 12892,7850
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11767,8330 11898,8362
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6164,12980 6157,12933 6150,12875 6124,12694
@@ -4011,7 +4011,7 @@ Heino-Schmieden-Weg: größtenteils noch wegen Bauarbeiten gesperrt	2::inwork 2072
 # REMOVED (offen) --- #: next_check_id: VERLAENGERTEHERTZ-2017 --- #: XXX zumindest an der Fasanenstr. --- #: XXX laut Schild gehen die Bauarbeiten bis Dezember 2017 --- #: last_checked: 2018-04-10 --- #: check_frequency: 14d --- (Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 5171,11589 4950,11696 4905,11785
 # REMOVED (man kommt hinter dem Georg-Denkmal vorbei) --- Spreeufer Nikolaiviertel: Gehweg gesperrt	2::inwork 10417,12378 10492,12289 10583,12206
 # 
-# REMOVED (mittlerweile ist eine Ausweichmöglichkeit markiert) --- #: last_checked: 2017-03-01 --- Karl-Marx-Platz: Bauarbeiten, Einbahnstraße gilt nun auch für Radfahrer	1s:q3 12969,7610 13100,7626
+# REMOVED (mittlerweile ist eine Ausweichmöglichkeit markiert) --- #: last_checked: 2017-03-01 --- Karl-Marx-Platz: Bauarbeiten, Einbahnstraße gilt nun auch für Radfahrer	1s:q3 12972,7602 13100,7626
 # REMOVED --- #: source_id: 2147340790 --- #: source_id: 2147340922 --- #: last_checked: 2017-03-20 --- #: next_check: 2017-03-24 --- # REMOVED --- : valid: -20170228 --- Puschkinallee: Fahrtrichtung gesperrt	1::inwork 13795,9941 13890,9894
 # REMOVED (offen) --- #: next_check_id: STRESEMANNPARKWEG-2016 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2016/pressemitteilung.530316.php --- #: XXX "3-4 Wochen" --- #: XXX danach eine "bituminöse Befestigung" --- #: XXX evtl. wird die Beleuchtung auch erneuert? --- #: last_checked: 2016-12-16 --- #: check_frequency: 14d --- #: priority: #A --- Parkweg zwischen Stresemannstr. und Wilhemstr.: wird instandgesetzt, in dieser Zeit nicht befahrbar	2::inwork 9249,10562 9375,10616
 # 

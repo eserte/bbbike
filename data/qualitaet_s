@@ -46,9 +46,9 @@ Drübecker Weg: Kopfsteinpflaster	Q2 13909,8471 13808,8533
 Brockenstr.: Kopfsteinpflaster	Q2 13575,8593 13687,8734
 Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz möglich	Q2 13687,8734 13774,8849
 Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
-Donaustr.: Asphalt	Q0 12202,8895 12394,8729 12551,8612 12649,8535
-Donaustr.: Asphalt	Q0 12150,8891 12202,8895
-Pannierstr.: Asphalt	Q0 12240,8964 12202,8895
+Donaustr.: Asphalt	Q0 12198,8887 12392,8724 12551,8612 12643,8533
+Donaustr.: Asphalt	Q0 12150,8884 12198,8887
+Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 Friesenstr.: Asphalt	Q0 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
 Heimstr.: mäßiges Kopfsteinpflaster	Q2 9951,8965 9958,9050 9966,9151 9973,9232
@@ -170,7 +170,7 @@ Suadicanistr.: Asphalt	Q0 7858,7462 7858,7506
 Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
 Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10633,8705
 Lilienthalstr.: Asphalt, etwas rau	Q0 10633,8705 10615,8558
-Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 12330,8636 12394,8729 12434,8776 12478,8829 12590,8977 12682,9089
+Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 12330,8636 12392,8724 12434,8776 12478,8829 12590,8977 12682,9089
 Weichselstr.: Asphalt	Q0 12682,9089 12755,9188
 Weichselstr./Maybachufer: Asphalt	Q0 12755,9188 12845,9304 12837,9353
 Treptower Str.: Asphalt	Q0 13860,8599 14011,8787 14151,8967
@@ -378,8 +378,8 @@ Wuhlheide: Waldweg	Q2 21365,5832 21653,6037 21737,6068 21832,6129 21869,6190 219
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19223,7189 19161,7109 19084,7009 19080,6986 19069,6928 19052,6823 18948,6578
 Mittelweg: Kopfsteinpflaster	Q2 12918,7600 12771,7679 12698,7677 12647,7672 12520,7694
 Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
-Karl-Marx-Str.: Asphalt mit Schäden	Q0 12330,8636 12500,8504
-Karl-Marx-Platz: Kopfsteinpflaster	Q2 12969,7610 13100,7626
+Karl-Marx-Str.: Asphalt mit Schäden	Q0 12330,8636 12494,8501
+Karl-Marx-Platz: Kopfsteinpflaster	Q2 12972,7602 13100,7626
 Karl-Marx-Platz: Kopfsteinpflaster	Q2 13100,7626 13177,7644
 Richardplatz: Kopfsteinpflaster	Q2 13177,7644 13288,7653
 Richardplatz: Kopfsteinpflaster, Fugen mit Asphalt vergossen	Q2 13288,7653 13378,7695
@@ -1560,7 +1560,7 @@ Heidelberger Str.: asphaltiert	Q0 13664,9073 13491,9201
 Lexisstr.: Beton	Q1 12987,9481 13063,9422
 Lexisstr.: Asphalt	Q0 13063,9422 13124,9375
 Briesestr.: Kopfsteinpflaster	Q2 12001,7937 12179,7979
-Briesestr.: Kopfsteinpflaster	Q2 12446,8032 12671,8077 12794,8103
+Briesestr.: Kopfsteinpflaster	Q2 12446,8032 12671,8077 12788,8101
 Geygerstr.: Asphalt	Q0 13070,8138 13194,8276
 Bellevue-Ufer: Kleinsteinpflaster	Q1 6694,12627 7031,12320
 Bettina-von-Arnim-Ufer: Asphalt	Q0 7437,12368 7561,12527 7670,12576
@@ -2435,7 +2435,7 @@ Kadiner Str.: Asphalt	Q0 13515,11969 13590,12260
 Südtorweg: wassergebundene Decke	Q1 -503,11782 -750,11740
 Carl-Schuhmann-Weg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
 Erkstr.: Asphalt	Q0 12598,8390 12765,8435 12902,8470 12920,8487
-Donaustr: Beton	Q0 12649,8535 12765,8435
+Donaustr: Beton	Q0 12643,8533 12765,8435
 Straße 645: Asphalt	Q0 11424,8284 11434,8194 11419,8077 11450,7921 11472,7899
 Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237 11607,7145
 Jollenseglerstr.: Verbundsteinpflaster	Q0 14921,10047 14879,9961
@@ -2691,8 +2691,8 @@ Charlottenstr.: Gehwegplatten	Q0 -3227,14260 -3293,14304 -3338,14333 -3397,14370
 Carl-Schurz-Str.: kleinteiliges Kopfsteinpflaster	Q1 -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407 -3338,14333 -3409,14241 -3457,14189 -3552,14082
 Mauerstr.: kleinteiliges Kopfsteinpflaster	Q1 -3409,14241 -3316,14169
 (Maybachufer - Weigandufer): wassergebundene Decke	Q1 12845,9304 12862,9273 12909,9085 12902,9066
-Schönstedtstr. (Neukölln): Kopfsteinpflaster	Q2 12736,8629 12649,8535
-Schönstedtstr. (Neukölln): Asphalt	Q0 12649,8535 12540,8458
+Schönstedtstr. (Neukölln): Kopfsteinpflaster	Q2 12736,8629 12643,8533
+Schönstedtstr. (Neukölln): Asphalt	Q0 12643,8533 12545,8449
 Höhndorfstr.: Asphalt	Q0 8454,8574 8438,8676 8434,8775
 Zionskirchstr.: Asphalt	Q0 10561,14181 10426,14262
 Arkonaplatz: Kopfsteinpflaster	Q2 10105,14608 10189,14649 10277,14691
