@@ -131,9 +131,11 @@ Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8627,5866
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
 #: by: http://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ausbau wird 2021 abgeschlossen)
 #: last_checked: 2021-02-20 vvv
 	RW1; 8593,5491 8480,5350
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8480,5350 8406,5258 8356,5195
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_21.01.2021_final.pdf (Gehwegparken wurde abgeordnet)
 Bord gegen Gehweg, Autos parken auf dem Unterstreifen	RW1; 8356,5195 8406,5258 8480,5350 8593,5491
 #: last_checked ^^^
 #: XXX ^^^
@@ -858,7 +860,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-04-03
+#: last_checked: 2021-04-05
 #: check_frequency: 60d
 # REMOVED (vermutlich ohne baldige Änderung) --- #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2118,6 +2120,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/aus-temporaer-wird-dauerhaft_a293917
 #: by: https://twitter.com/VIZ_Berlin/status/1329434716882268162
 #: by: http://www.infravelo.de/projekt/lichtenberger-strasse-1/
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Frühjahr 2021)
 #: source_id: 2147346610
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
 #: last_checked: 2021-03-12 vvv
@@ -3287,6 +3290,7 @@ neues Verbundsteinpflaster	RW1; 12547,4391 12731,4841
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954975.php (nördliche Seite zwischen Riesestr. und Britzer Damm, südliche Seite zwischen Britzer Damm und Buschkrugallee; Markierung ab 6.7.2020; temporär bis zum 31. Dezember 2020)
 #: by: https://www.bahninfo-forum.de/read.php?9,445440,672346#msg-672346
 #: by: https://api.fixmyberlin.de/api/projects/416
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7549 (Forderung nach Verstetigung)
 #: osm_watch: way id="451445143" version="5"
 #: last_checked: 2021-04-02 vvv
 #: check_frequency: 90d vvv
@@ -5082,7 +5086,14 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW9 30309,6841 30244,6615 30090,5446
 	RW6;RW6 3581,2211 3581,2125 3581,2105
 Busspur gilt Mo-Fr 11-18 Uhr	RW5; 15715,13157 15515,13134
 	RW6;RW6 -3923,13060 -3817,13002 -3715,13003
-	RW1;RW1 -3824,13350 -3786,13267
+#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.1018548.php
+#: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/dokumente/uebersichtsplan_m1000_10_18.pdf (Nordteil; unten erwähnte Radspur)
+#: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/dokumente/uebersichtsplan2_m1000_10_18.pdf (Südteil; keine Änderungen für den Radverkehr)
+#: XXX bei den Bauarbeiten in der Pichelsdorfer Str. wird hier anscheinend eine Radspur entstehen
+#: last_checked: 2019-07-29 (mapillary)
+#: check_frequency: 720d
+	RW1; -3824,13350 -3786,13267
+	RW1; -3786,13267 -3824,13350
 Tempo 10	RW6;RW6 7250,8223 7225,8219 7158,8208 7001,8161
 	RW6;RW6 7770,9395 7770,9336
 #: by: jenny (...meding)

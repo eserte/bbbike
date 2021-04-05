@@ -28588,7 +28588,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-04-04
+#: last_checked: 2021-04-05
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -32278,6 +32278,42 @@ EOF
        source_id => '2147346994',
        data  => <<EOF,
 	q4::inwork 17507,4216 17476,4337 17428,4503
+EOF
+     },
+     { from  => 1624140000, # 2021-06-20 00:00
+       until => 1629064800, # 2021-08-16 00:00
+       text  => 'Weverpromenade: Sperrung für Radfahrer und Fußgänger, voraussichtlich vom 21.06.2021 bis 15.08.2021',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.87783.php',
+       data  => <<EOF,
+	2::inwork 5787,4400 5738,4361 5541,4305
+EOF
+     },
+     { from  => 1614466800, # 2021-02-28 00:00
+       until => 1627682400, # 2021-07-31 00:00
+       text  => 'Ferdinandstr.: Sperrung der Fahrbahn zwischen Kranoldplatz und Parallelstr., vom 01.03.2021 bis 30.07.2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.87783.php',
+       data  => <<EOF,
+	q4::inwork 5417,2383 5525,2161 5592,2021
+EOF
+     },
+     { from  => 1627682400, # 2021-07-31 00:00
+       until => 1634335200, # 2021-10-16 00:00
+       text  => 'Ferdinandstr.: Sperrung der Fahrbahn zwischen Parallelstr. und Lange Str., vom 01.08.2021 bis 15.10.2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.87783.php',
+       data  => <<EOF,
+	q4::inwork 5656,1882 5642,1912 5631,1937 5592,2021
+EOF
+     },
+     { from  => 1614466800, # 2021-02-28 00:00
+       until => 1625868000, # 2021-07-10 00:00
+       text  => 'Kurfürstenstr.: Sperrung der Fahrbahn zwischen Frobenstr. und Goldaper Str., vom 01.03.2021 bis 09.07.2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.87783.php',
+       data  => <<EOF,
+	q4::inwork 5934,2198 6021,2071 6097,1975
 EOF
      },
     );
