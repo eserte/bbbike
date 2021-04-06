@@ -565,7 +565,17 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 216000649
+	2::inwork 45328,48225 45321,48142 45322,48104
+# REMOVED (wrong?) ---	2::inwork 45406,45979 45119,45958
+',
+         'from' => 1617775200,
+         'id' => 1905,
+         'text' => 'L 029 Oderberg - Hohenfinow Klappbrücke über den Finowkanal in Niederfinow Wartungsarbeiten Vollsperrung 8.4.2021 von 8 bis 16 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1617890400
+       },
        undef,
        undef,
        undef,
@@ -3253,7 +3263,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-04-03
+#: last_checked: 2021-04-06
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3452,6 +3462,25 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Kurfürstenstr.: Sperrung der Fahrbahn zwischen Frobenstr. und Goldaper Str., vom 01.03.2021 bis 09.07.2021',
          'type' => 'handicap',
          'until' => 1625868000
+       },
+       {
+         'data' => '#: note: keine genauen Zeiten verfügbar
+#: by: https://abendblatt-berlin.de/2021/04/03/neue-feuerwehrwache-und-verwaltungsbueros-fuer-friedrichsfelde/
+#: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
+(Campus AF 60)	2::night:weekend 18619,11463 18638,11479 18702,11480 18740,11480 18762,11496 18794,11504 18961,11546 19035,11550 19159,11546
+(Campus AF 60)	2::night:weekend 19035,11550 19032,11640 18967,11639 18917,11641 18700,11645 18702,11480
+(Campus AF 60)	2::night:weekend 19000,11719 18984,11719 18964,11719 18919,11720 18798,11707
+(Campus AF 60)	2::night:weekend 18919,11720 18917,11641
+(Campus AF 60)	2::night:weekend 18967,11639 18966,11676 18965,11692 18965,11706 18964,11719
+(Campus AF 60)	2::night:weekend 18965,11692 18984,11719
+#: tempex ^^^
+',
+         'from' => undef,
+         'id' => 3356,
+         'recurring' => 1,
+         'text' => 'Campus AF 60: am Wochenende und nachts geschlossen',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

@@ -5550,10 +5550,14 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2
 	RW3;RW3 17194,3343 17142,3393
 #: by: http://www.infravelo.de/projekt/zingster-strasse-2/ (3. Quartal 2021 - 3. Quartal 2022)
 #: XXX Asphaltierung des Radwegs vvv
+#: last_checked: 2021-04-06 (mapillary) vvv
+#: check_frequency: 150d vvv
 #: next_check: 2022-09-30 vvv
 	RW1; 16718,18204 16905,17949 16981,17855
 	RW2; 16981,17855 17159,17631
+#: check_frequency ^^^
 #: next_check ^^^
+#: last_checked ^^^
 #: XXX ^^^
 	RW3; 16981,17855 16905,17949
 die ersten Meter werden auf dem Gehweg geführt	RW3; 17159,17631 16981,17855

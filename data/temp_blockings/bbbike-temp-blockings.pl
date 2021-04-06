@@ -16435,11 +16435,12 @@ EOF
 	2::inwork 45414,105210 45099,104840 44963,104618 44698,104375 44487,104325 42804,104235 42306,103942 41979,103529 41955,103509 41700,103365
 EOF
      },
-     { from  => 1253397600, # 2009-09-20 00:00
-       until => 1253743200, # 2009-09-24 00:00
-       text  => 'L 029 Oderberg - Hohenfinow Klappbrücke über den Finowkanal in Niederfinow Wartungsarbeiten Vollsperrung 21.09.2009-23.09.2009 ',
+     { from  => $isodate2epoch->("2021-04-07 08:00:00"), # 1253397600, # 2009-09-20 00:00
+       until => $isodate2epoch->("2021-04-08 16:00:00"), # 1253743200, # 2009-09-24 00:00
+       text  => 'L 029 Oderberg - Hohenfinow Klappbrücke über den Finowkanal in Niederfinow Wartungsarbeiten Vollsperrung 8.4.2021 von 8 bis 16 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: 216000649
 	2::inwork 45328,48225 45321,48142 45322,48104
 # REMOVED (wrong?) ---	2::inwork 45406,45979 45119,45958
 EOF
@@ -32112,7 +32113,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-04-03
+#: last_checked: 2021-04-06
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32314,6 +32315,24 @@ EOF
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.87783.php',
        data  => <<EOF,
 	q4::inwork 5934,2198 6021,2071 6097,1975
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Campus AF 60: am Wochenende und nachts geschlossen',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+#: note: keine genauen Zeiten verfügbar
+#: by: https://abendblatt-berlin.de/2021/04/03/neue-feuerwehrwache-und-verwaltungsbueros-fuer-friedrichsfelde/
+#: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
+(Campus AF 60)	2::night:weekend 18619,11463 18638,11479 18702,11480 18740,11480 18762,11496 18794,11504 18961,11546 19035,11550 19159,11546
+(Campus AF 60)	2::night:weekend 19035,11550 19032,11640 18967,11639 18917,11641 18700,11645 18702,11480
+(Campus AF 60)	2::night:weekend 19000,11719 18984,11719 18964,11719 18919,11720 18798,11707
+(Campus AF 60)	2::night:weekend 18919,11720 18917,11641
+(Campus AF 60)	2::night:weekend 18967,11639 18966,11676 18965,11692 18965,11706 18964,11719
+(Campus AF 60)	2::night:weekend 18965,11692 18984,11719
+#: tempex ^^^
 EOF
      },
     );

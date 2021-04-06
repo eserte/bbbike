@@ -1042,7 +1042,7 @@ Am Volkspark: Parkweg	Q1 5730,8207 5925,8219
 Dircksenstr.: Asphalt	Q0 11300,12241 11273,12301 11240,12368 11209,12430 11156,12581 11057,12715
 Ruhwaldweg: Kopfsteinpflaster	Q2 758,13334 773,13375
 Bahnhofvorplatz S-Bhf. Priesterweg: Kopfsteinpflaster	Q2 7227,6080 7252,6080 7252,6058 7227,6058
-Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 18007,8377 18072,8470 18151,8589 18272,8764
+Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 18007,8377 18037,8420 18072,8470 18151,8589 18272,8764
 Hegemeisterweg: Asphalt	Q0 17202,8391 17522,8220
 Hegemeisterweg: Asphalt	Q0 17522,8220 17566,8199
 Hegemeisterweg: Asphalt	Q0 17566,8199 17628,8169 17695,8137 17748,8109 17803,8079
@@ -10558,6 +10558,18 @@ Märkische Allee [Wohngebiet]: Asphalt mit einigen Schäden	Q1 19649,13481 19653,1
 Wünsdorfer Str.: Asphaltschäden	Q1 9982,-1818 10021,-1918 10096,-2137
 (Wohngebiet Heidekampweg - Kiefholzstr.): Beton, einige Hebungen und Schäden	Q2 15373,7212 15422,7265
 Bergiusstr. - Grenzallee: asphaltiert	Q0 14150,6609 14137,6658 14179,6714 14179,6743 14139,6786
+(Trautenauer Str. - Liepnitzstr.): Parkweg	Q1 17838,8611 17873,8578 17912,8515 18037,8420
+(Campus AF 60): Asphalt	Q0 18619,11463 18638,11479 18702,11480
+(Campus AF 60): Kopfsteinpflaster	Q2 18702,11480 18740,11480 18762,11496 18794,11504
+(Campus AF 60): Beton	Q1 18794,11504 18961,11546 19035,11550 19159,11546
+(Campus AF 60): Beton	Q1 19035,11550 19032,11640 18967,11639 18917,11641 18700,11645 18702,11480
+(Campus AF 60): Beton	Q1 19000,11719 18984,11719 18964,11719
+(Campus AF 60): Beton/Verbundsteinpflaster	Q1 18964,11719 18919,11720
+(Campus AF 60): Beton	Q1 18919,11720 18798,11707
+(Campus AF 60): Beton	Q1 18919,11720 18917,11641
+(Campus AF 60): Beton	Q1 18967,11639 18966,11676
+(Campus AF 60): Verbundsteinpflaster	Q1 18966,11676 18965,11692 18965,11706 18964,11719
+(Campus AF 60): Verbundsteinpflaster	Q1 18965,11692 18984,11719
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13152,7 +13164,9 @@ Freischützstr.: schlechtes Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke
 Freischützstr.: schlechtes Kopfsteinpflaster	Q3 13315,21969 13601,21826
 Pfingstrosenweg: Verbundsteinpflaster	Q0 22085,10855 22060,10914 22035,10971 22012,11024 21981,11092 21956,11146 21924,11216 21872,11196
 Malersteig: Asphalt	Q0 13606,3085 13596,3039 13561,2898 13510,2690 13487,2621 13452,2548 13420,2509
-Weseler Str.: mäßiger Asphalt	Q1 18865,8740 18857,8790 18854,8831 18860,8886 18877,8973 18881,9002 18886,9031 18900,9119
+Weseler Str.: mäßiger Asphalt	Q1 18865,8740 18857,8790 18854,8831 18860,8886 18877,8973 18881,9002
+Weseler Str.: Asphalt	Q0 18881,9002 18886,9031
+Weseler Str.: mäßiger Asphalt	Q1 18886,9031 18900,9119
 Arthur-Weisbrodt-Str.: guter Asphalt	Q0 14170,13496 14218,13661
 Erdmann-Graeser-Weg: kleinteiliges Pflaster	Q1 -833,3619 -935,3706
 Erdmann-Graeser-Weg: Beton	Q0 -935,3706 -961,3737
@@ -14027,7 +14041,7 @@ Schlehdornsteig: Wechsel zwischen Kopfsteinpflaster und Verbundsteinpflaster	Q1 
 Mittelstr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 104,2802 50,3031
 Trautenauer Str.: Kopfsteinpflaster	Q2 17753,8290 17774,8342 17794,8429 17813,8508
 Trautenauer Str.: Kopfsteinpflaster, mäßiger Asphaltstreifen in der Mitte	Q2 17813,8508 17830,8578
-Trautenauer Str.: Asphalt	Q0 17830,8578 17851,8662 17879,8773 17910,8881 17915,8900
+Trautenauer Str.: Asphalt	Q0 17830,8578 17838,8611 17851,8662 17879,8773 17910,8881 17915,8900
 Am Forstacker: Beton	Q0 -3676,17131 -3671,17202 -3648,17250 -3612,17280 -3532,17333 -3491,17381 -3418,17525
 Talsandweg: guter Asphalt	Q0 3138,21372 3206,21179 3222,21134
 Tourcoingstr.: guter Asphalt	Q0 3781,16175 3796,16202 3836,16273 3895,16381
