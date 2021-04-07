@@ -628,8 +628,8 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: http://www.infravelo.de/projekt/roennestrasse/ (1. Quartal 2022 - 1. Quartal 2024)
 #: osm_watch: way id="4480580" version="12"
 #: osm_watch: way id="4436949" version="11"
-#: last_checked: 2020-09-27
-#: check_frequency: 360d
+#: last_checked: 2021-04-02 (mapillary)
+#: check_frequency: 300d
 #: next_check: 2024-03-31
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
 # 
@@ -953,7 +953,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-04-03
+#: last_checked: 2021-04-07
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -6826,16 +6826,14 @@ Veitstr.: Asphalt	Q0 2268,19919 2064,19874 1886,19835
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.940819.php (ab 8.6.2020 für ca. drei Monate)
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/veitstrasse-wird-erneuert-und-ist-drei-monate-gesperrt_a276028
 #: note: während den Bauarbeiten ist der Radverkehr laut viz nicht betroffen
-#: XXX Beton wird durch Asphalt ersetzt, in zwei Bauabschnitten: zunächst der östliche Teil bis Medebacher Weg (2019), dann der westliche Teil (2020) vvv
-#: priority: #C vvv
+#: XXX Beton wird durch Asphalt ersetzt, in zwei Bauabschnitten: zunächst der östliche Teil bis Medebacher Weg (2019), dann der westliche Teil (2020)
+#: priority: #C
 #: source_id: 2147344935
-#: last_checked: 2020-11-07 vvv
-#: check_frequency: 90d vvv
+#: source_id: 2147347061 (Leitungsbau, bis 3.5.2021)
+#: last_checked: 2020-11-07
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2021-05-03
 Veitstr.: Fahrbahn Beton	Q0 1886,19835 1606,19775 1557,19765
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: XXX ^^^
 Borsigdamm: Fahrbahn Beton, Radweg asphaltiert	Q0 1557,19765 1509,19693 1463,19417
 Borsigdamm: Asphalt	Q0 1463,19417 1450,19336 1472,19165 1528,18971
 Bernauer Str. (Tegel): Asphalt	Q0 2643,18738 2731,18729
