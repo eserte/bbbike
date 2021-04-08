@@ -1243,10 +1243,10 @@ Blankenfelder Chaussee: Verbesserung -> Radspuren oder Verbesserung des Radwegs?
 #: osm_watch: way id="4446501" version="20"
 #: osm_watch: way id="29277856" version="16"
 #: source_id: 2147341315 (inaktiv)
-#: source_id: 2147346776 (Leitungsbau, bis 28.5.2021)
+#: source_id: 2147346776 (Leitungsbau, bis 28.5.2021) (frühzeitig entfernt, inaktiv)
 #: last_checked: 2021-01-22
-#: check_frequency: 120d
-#: next_check: 2021-05-28
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2021-05-28
 Messedamm: Verbesserung -> vermutlich Radspuren? in beiden Richtungen oder nur auf der ZOB-Seite?	?::projected 2102,11307 2037,11122 2011,11046
 # 
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html (hier: von Rohrdamm (was noch Nonnendammallee ist) bis Nikolaus-Groß-Weg; gekürzt)
@@ -1291,6 +1291,7 @@ Nauener Str.: Sanierung des Radwegs prüfen	?; -4759,13992 -4754,14075 -4748,1423
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10517 (Frage nach Instandsetzung)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1071535.php (Umbau des Ferdinand-Friedensburg-Platzes)
 #: by: https://abendblatt-berlin.de/2021/04/07/berlin-haselhorst-vollsperrung-wegen-bauarbeiten-am-ferdinand-friedensburg-platz/
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1073173.php (Vollsperrungen werden verschoben, die zweite bis 26.4.2021)
 #: source_id: 2147346226 (Bauarbeiten am Ferdinand-Friedensburg-Platz)
 #: last_checked: 2020-11-07
 #: check_frequency: 60d
@@ -2049,6 +2050,7 @@ Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 79
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1022183.php (bis Sommer 2021)
 #: by: http://www.infravelo.de/projekt/oranienburger-strasse/ (bis 2. Quartal 2021) (alter Eintrag)
 #: by: http://www.infravelo.de/projekt/oranienburger-strasse-2/ (bis 2. Quartal 2021)
+#: by: https://viz.berlin.de/2021/04/wilhelmsruher-damm-sperrung/ (Busumleitungen ab 12.4.2021 für vier Wochen)
 #: XXX laut fritz bis Januar 2020
 #: source_id: 2147346022 (bis Ende 2020; inaktiv)
 #: source_id: 2147344156 (bis 31.3.2021)
@@ -3333,6 +3335,7 @@ Glinkastr.: gilt die temporäre Einbahnstraßenregelung mittlerweile auch für Radf
 #: by: https://leute.tagesspiegel.de/tempelhof-schoeneberg/macher/2021/03/30/163275/bauarbeiten-am-tempelhofer-damm-die-busspur-kommt/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7974
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/ab-14-april-bus-ersatzverkehr-auf-dem-te-damm_a305718
+#: by: https://www.bahninfo-forum.de/read.php?9,697176,697901#msg-697901 (Radspuren, Linienverkehr frei)
 #: next_check: 2021-04-14
 Tempelhofer Damm und Mariendorfer Damm: Busspuren mit Radverkehrs-Mitnutzung werden wegen des SEVs eingerichtet	?::projected 9242,6962 9245,6791 9247,6687 9249,6642 9254,6542 9253,6484 9250,6414 9246,6364 9245,6352 9221,6179 9212,6096 9192,5921 9176,5803 9158,5673 9161,5535 9176,5413 9188,5333 9196,5272 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672 9294,4536 9310,4407 9333,4229 9346,4144 9375,4022 9426,3797 9438,3745 9455,3671
 # 
@@ -3698,10 +3701,11 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://twitter.com/SenUVKBerlin/status/1354835212161720321 (Leitboys werden errichtet)
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
 #: XXX jetzt fehlen noch die "Leitboys"
-#: last_checked: 2021-04-07 (mapillary)
-#: check_frequency: 14d
+#: last_checked: 2021-04-08 (mapillary)
+#: check_frequency: 7d
 # REMOVED --- #: next_check: 2020-11-30
-Invalidenstr.: Radstreifen (provisorische, dann geschützte) und Umbau von Ampelanlagen geplant	?::projected 9383,13986 9469,14004 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
+# REMOVED (hier wurden die Poller schon realisiert) --- Invalidenstr.: Radstreifen (provisorische, dann geschützte) und Umbau von Ampelanlagen geplant	?::projected 9383,13986 9469,14004 9659,14043
+Invalidenstr.: Radstreifen (provisorische, dann geschützte) und Umbau von Ampelanlagen geplant	?::projected 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
 # 
 # REMOVED (eingetragen) --- #: next_check_id: HANSAGARTEN-2019 --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php --- #: XXX während der Bauarbeiten nur ein schmaler Weg --- (Sulzfelder Str. - Hansastr.): Weg für Radfahrer befahrbar? Qualität? Nachts beleuchtet?	? 15120,16349 15120,16305 15104,16218
 # REMOVED (keine Einschränkungen gesehen) --- #: XXX laut fritz bis 28.10.2019 --- Schlüterstr.: zwischen Kantstr. und Pestalozzistr. Sperrung der Fahrbahn wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen	?::inwork 4546,11217 4532,11042

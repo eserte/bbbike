@@ -1255,6 +1255,7 @@ Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 #: next_check_id: UBAHN1-2020
 #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren)
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt
 #: last_checked: 2021-04-02
 #: check_frequency: 30d
@@ -1707,9 +1708,12 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 #: XXX evtl. ist die Einbahnstraßenregelung temporär
 #: by: https://www.berliner-woche.de/westend/c-verkehr/auch-wenn-es-nicht-so-aussieht-der-zob-umbau-laeuft-wie-geplant_a223429 (ZOB-Umbau bis 2022)
 #: add_fragezeichen: gibt es die Einbahnstraßenregelung in der Soorstr. noch?
+#: source_id: 2147347063
 #: osm_watch: way id="4708164" version="16"
 #: last_checked: 2021-03-20
 #: check_frequency: 90d
+#: next_check: 2021-05-28
+#: valid: 20210528-
 Soorstr.	1s:q3 1861,11284 1884,11126
 # 
 Einkaufszentrum am Gesundbrunnen	1 9291,15740 9363,15738
@@ -3357,6 +3361,7 @@ Gustav-Hertz-Platz: gesperrt, evtl. wegen der Brückenarbeiten?	2::inwork 18722,4
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964891.php (kein Endedatum)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422 ("Fußgängerzone beschlossen" --- bleibt es permanent?)
+#: by: https://www.hcu-hamburg.de/fileadmin/documents/REAP/BGS/Baumrigolen-Workshop/20-10-01_RUD_BA3_LP2_Broschuere_Strassenraeume_BGS_klein_sko_geaendert.pdf (geplante Umgestaltung Danneckerstr./Rudolfstr.)
 #: XXX bis wann bleibt diese Straße eine "Klimastraße"?
 #: also_indoor: traffic (G)
 #: last_checked: 2021-04-05
@@ -3504,7 +3509,7 @@ Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3
 #: XXX wann wird der Weg wiederhergestellt, wenn überhaupt?
 #: by: https://www.deutsches-architekturforum.de/thread/9401-wasserstadt-stralau-kleine-und-gr%C3%B6%C3%9Fere-projekte/?postID=653296#post653296 (Bauarbeiten bis Ende September 2021)
 #: osm_watch: way id="541556560" version="2"
-#: last_checked: 2021-04-07
+#: last_checked: 2021-04-08
 #: next_check: 2021-09-30
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055
 # 

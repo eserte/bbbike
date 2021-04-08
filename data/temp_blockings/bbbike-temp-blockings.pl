@@ -28591,7 +28591,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-04-07
+#: last_checked: 2021-04-08
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -30302,12 +30302,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2021-07-01 17:00:00"), # 1581782552, # undef, # XXX
+       until => 1617902762, # $isodate2epoch->("2021-07-01 17:00:00"), # 1581782552, # undef, # XXX
        text  => 'Perelsplatz: Parkweg kann wegen Bauarbeiten gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: PERELSPLATZ-2019 --- #: add_fragezeichen: Wann wird die Sperrung aufgehoben? --- #: last_checked: 2019-12-22 --- #: next_check: 2020-01-31
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.992535.php
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1072925.php (Teilöffnung)
 	2::inwork 5809,7712 5636,7709
 EOF
      },
@@ -30850,7 +30851,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-07
+#: last_checked: 2021-04-08
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32335,6 +32336,35 @@ EOF
 (Campus AF 60)	2::night:weekend 18967,11639 18966,11676 18965,11692 18965,11706 18964,11719
 (Campus AF 60)	2::night:weekend 18965,11692 18984,11719
 #: tempex ^^^
+EOF
+     },
+     { from  => 1618610400, # 2021-04-17 00:00
+       until => 1640991599, # 2021-12-31 23:59
+       text  => 'Burgfrauenstr.: Bauarbeiten zwischen Hohefeldstr. und Berliner Str., Fahrbahn gesperrt, voraussichtlich vom 18.4.2021 bis Ende 2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1073307.php',
+       data  => <<EOF,
+#: note: zwei Bauabschnitte: zunächst der westliche Abschnitt bis Olafstr. (inkl. Kreuzung), danach der östliche Abschnitt
+	q4::inwork 3022,24393 3225,24431 3425,24469 3575,24498 3712,24528 3842,24556
+EOF
+     },
+     { from  => 1616918460, # 2021-03-28 10:01
+       until => 1619190000, # 2021-04-23 17:00
+       text  => 'Wichernstr.: Bauarbeiten zwischen Niederneuendorfer Allee und Holunderweg, Fahrbahn stadtauswärts gesperrt, vom 29.03.2021 10:01 Uhr bis 23.04.2021 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147347035',
+       data  => <<EOF,
+#: note: laut rbb nur stadtauswärts
+	q4::inwork; -2934,17594 -3060,17617 -3093,17647
+EOF
+     },
+     { from  => 1617861600, # 2021-04-08 08:00
+       until => 1622214000, # 2021-05-28 17:00
+       text  => 'Soorstr.: Kreuzung Bredtschneiderstr., Kreuzungsbereich gesperrt, vom 09.04.2021 08:00 Uhr bis 28.05.2021 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147347063',
+       data  => <<EOF,
+	q3::inwork 1884,11126 1861,11284
 EOF
      },
     );
