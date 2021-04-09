@@ -3284,8 +3284,9 @@ An der Dahme: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22197,2
 #: by: https://www.berndalbers.com/krautstrasse-30-berlin (vielleicht verschwindet die Straße im Zuge dieses Neubaus?)
 #: by: https://www.deutsches-architekturforum.de/thread/14527-neubau-holzmarktstra%C3%9Fe-51-friedrichshain-in-planung/?postID=681293#post681293
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen, sollte ein Teilabschnitt der Straße endgültig verschwinden
+#: XXX mittlerweile (April 2021) wurde der südliche Teil schon weggebaggert
 #: osm_watch: way id="25008069" version="10"
-#: last_checked: 2021-02-13
+#: last_checked: 2021-04-09
 #: check_frequency: 60d
 Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881 11940,11982
 # 
@@ -3321,7 +3322,7 @@ Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork
 # 
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise
-#: last_checked: 2021-02-19
+#: last_checked: 2021-04-09
 #: check_frequency: 120d
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
 # 
@@ -3474,7 +3475,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152 14373,1004
 #: XXX Gehweg der nördlichen Seite ist schon weitgehend offen, südliche Seite nur als Baustraße erkennbar
 #: XXX ggfs. auch andere Seite des Platzes einzeichnen, ggfs. auch einen plaetze-orig-Eintrag machen
 #: osm_watch: way id="642581102" version="3"
-#: last_checked: 2021-02-05
+#: last_checked: 2021-04-09
 #: check_frequency: 60d
 Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 #  
@@ -3491,7 +3492,7 @@ Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7687,14017
 # 
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2021-02-05
+#: last_checked: 2021-04-09
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # 
@@ -3518,7 +3519,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-planckstra%C3%9Fe.866/#post-10417
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-03-12 (architektur-urbanistik)
+#: last_checked: 2021-04-09
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833
 # 
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-05-15 --- Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10954,12635
@@ -3566,7 +3567,7 @@ Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwor
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
 #: osm_watch: way id="882672445" version="1"
-#: last_checked: 2021-03-20
+#: last_checked: 2021-04-09
 #: check_frequency: 60d
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
 # 
@@ -3643,7 +3644,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tatsächlichen Seite 366 sowie 373)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/virtuelle-stadtwerkstatt-informiert-ueber-bauprojekte-in-berlins-historischer-mitte_a292967
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2021-03-20
+#: last_checked: 2021-04-09
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
@@ -4009,11 +4010,11 @@ Heino-Schmieden-Weg: größtenteils noch wegen Bauarbeiten gesperrt	2::inwork 2072
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
 #: XXX laut osm nicht mehr construction, in der Realität kann man aber hier nicht durch
-#: last_checked: 2021-02-05
+#: last_checked: 2021-04-09
 #: check_frequency: 60d
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7661,14398 7636,14414 7612,14449 7551,14464
 # 
-#: last_checked: 2021-02-05
+#: last_checked: 2021-04-09
 #: check_frequency: 60d
 Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409
 # 
@@ -4263,7 +4264,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10063,12438
 #: by: https://www.berliner-woche.de/mitte/c-bauen/neubau-fuer-bundestag-soll-zum-jahresende-fertig-sein_a298094
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="5"
-#: last_checked: 2021-03-12
+#: last_checked: 2021-04-09
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760

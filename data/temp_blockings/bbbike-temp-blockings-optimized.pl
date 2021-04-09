@@ -524,7 +524,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-03-25
+#: last_checked: 2021-04-09
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -2676,10 +2676,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
+         'data' => '#: next_check_id: CORONA-2020
+#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-03-22
+#: last_checked: 2021-04-09
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2735,7 +2736,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-08
+#: last_checked: 2021-04-09
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3083,7 +3084,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-02-19 vvv
+#: last_checked: 2021-04-09 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -3361,7 +3362,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: also_indoor: traffic
-#: last_checked: 2021-03-28
+#: last_checked: 2021-04-09
 #: check_frequency: 14d
 	q4::inwork 13025,12523 13067,12583 13202,12790
 ',

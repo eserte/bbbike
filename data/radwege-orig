@@ -635,7 +635,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2021-03-20 vvv
+#: last_checked: 2021-04-09 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
@@ -1455,7 +1455,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: osm_watch: way id="882672444" version="1"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2021-03-20 vvv
+#: last_checked: 2021-04-09 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-03-11 vvv
 #: next_check: 2023-06-30 vvv
@@ -1470,7 +1470,7 @@ provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659
 #: last_checked ^^^
 #: priority ^^^
 # 
-Busspur ist immer gültig	RW5; 10512,12039 10460,11979 10423,11936
+Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847 10314,11804 10299,11786
 	RW4; 10675,12280 10700,12315 10723,12346 10738,12364 10805,12468 10878,12560
 #: by: https://pbs.twimg.com/media/EWHwSfnXQAAaaO9?format=jpg&name=large
@@ -2017,7 +2017,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2021-03-12
+#: last_checked: 2021-04-09
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -2123,7 +2123,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Frühjahr 2021)
 #: source_id: 2147346610
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-03-12 vvv
+#: last_checked: 2021-04-09 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
 #: osm_watch: way id="284761029" version="16"
 Radspur hinter den parkenden Autos	RW3; 12006,12464 11920,12266
@@ -4116,14 +4116,15 @@ Verbundsteinpflaster	RW1; -2728,17038 -2908,17072
 	RW1;RW1 -481,21513 -459,21508 -410,21496
 Verbundsteinpflaster	RW1;RW1 -1281,23746 -1328,23580 -1349,23497 -1392,23342 -1410,23283 -1425,23222 -1440,23163 -1500,22940 -1506,22923 -1538,22800 -1561,22649 -1581,22553 -1602,22422 -1633,22239 -1641,22189 -1647,22153 -1654,22119
 	RW1;RW1 -2504,22626 -2343,22350 -2308,22304 -2259,22274 -2068,22213 -1943,22187 -1808,22158 -1701,22134 -1679,22127 -1654,22119
-	RW1;RW0 3216,23385 3174,23273 3146,23217 3132,23189 3048,23109 2942,22914
-	RW;RW0 2942,22914 2857,22756
-	RW1;RW0 2857,22756 2793,22640 2739,22531 2662,22429
-	RW1;RW0 2662,22429 2587,22332 2533,22253
-	RW1;RW1 2533,22253 2537,22139
-	RW1;RW 2537,22139 2537,22076 2515,21999 2305,21680 2250,21639 2071,21636 1942,21564
+	RW1; 3216,23385 3174,23273 3146,23217 3132,23189 3048,23109 2942,22914
+Radweg nur aufgemalt	RW1; 2942,22914 2857,22756 2793,22640
+	RW1; 2793,22640 2739,22531 2662,22429 2587,22332
+	RW0; 2587,22332 2662,22429 2739,22531 2793,22640 2857,22756 2942,22914 3048,23109 3132,23189 3146,23217 3174,23273 3216,23385
+	RW1;RW1 2587,22332 2533,22253 2537,22139
+	RW1; 2537,22139 2537,22076 2515,21999 2305,21680 2250,21639 2071,21636 1942,21564
+# REMOVED (hier nur ein Gehweg) ---	RW; 1942,21564 2071,21636 2250,21639 2305,21680 2515,21999 2537,22076 2537,22139
 gemeinsamer Geh- und Radweg	RW2; 1942,21564 1870,21491 1843,21440 2146,20887
-	RW; 2188,20910 1870,21491 1942,21564
+	RW2; 2188,20910 1870,21491 1942,21564
 #: by: Rudolf Kionke vvv
 sehr schmal, holprig wegen Baumwurzeln	RW1;RW1 3216,20531 3323,20547 3563,20589 3604,20603 3915,20711
 sehr schmal, holprig wegen Baumwurzeln	RW;RW1 3915,20711 4047,20748 4126,20771 4203,20792
@@ -5501,7 +5502,7 @@ Radweg beginnt nach 20 Metern	RW1; 7909,775 7857,802
 	RW3;RW3 14050,20955 13909,20928
 #: XXX wird hier eine Busspur eingerichtet?
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
-#: last_checked: 2021-03-17 (mapillary)
+#: last_checked: 2021-03-30 (mapillary)
 	RW3; 13909,20928 13662,20917
 	RW5; 13662,20917 13562,20913
 #: note: größtenteils eigentlich Bushaltestelle

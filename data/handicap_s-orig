@@ -56,8 +56,8 @@ Am Rudolfplatz: etwa 35m Fahrbahn vor der Modersohnstr. gesperrt, Ausweichen auf
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2021-03-25
-#: check_frequency: 30d
+#: last_checked: 2021-04-09
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-03-01
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -207,7 +207,7 @@ Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehw
 # 
 #: next_check_id: CHAUSSEE-2020
 #: note: laut rbbtext Ende der Bauarbeiten 16.7.2021
-#: last_checked: 2021-02-05
+#: last_checked: 2021-04-09
 #: check_frequency: 90d
 #: next_check: 2021-07-16
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -247,7 +247,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-03-20
+#: last_checked: 2021-04-09
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2021-02-25
@@ -259,7 +259,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-02-12
+#: last_checked: 2021-04-09
 #: check_frequency: 60d
 Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10332,11929 10385,11985
 # 
@@ -373,7 +373,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2021-03-20 vvv
+#: last_checked: 2021-04-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -590,6 +590,7 @@ Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5886,12467 5944,12
 #: by: https://portal1443.webcam-profi.de/ (webcam)
 #: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/baustart-fuer-neues-geschaeftshaus_a290278 (bis Herbst 2022)
 #: by: http://www.infravelo.de/projekt/bundesallee/ (Erwähnung der Hochbauarbeiten an der Pariser Str.; Verbesserungen für den Radverkehr bis 4. Quartal 2023)
+#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_14_0981_1088_online.pdf (Erwähnung des B-Plans 4-19)
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
 #: last_checked: 2021-03-11 (architektur-urbanistik)
@@ -3560,6 +3561,7 @@ Traberweg: einige Fußgänger	q1 18577,8033 18567,8041 18490,8104 18416,8163 18351
 (Trautenauer Str. - Liepnitzstr.): einige Fußgänger	q1 17838,8611 17873,8578 17912,8515 18037,8420
 #: note: und zwar legal, per Schild
 Campus AF 60: Schranke kann auf Gehweg umfahren werden	q2 18964,11719 18919,11720
+Otto-Weidt-Platz: einige Fußgänger	q2 7732,14131 7866,14215
 # 
 ######################### User Contributions #################################
 # 

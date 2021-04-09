@@ -14085,11 +14085,13 @@ EOF
      { from  => $isodate2epoch->("2019-05-10 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-12 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 9, months => 5, start => "2020-10-25T00:00:00"]],
+       recurrences => [['yearly', days => 8, months => 5, start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => 7, # wegen Corona
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (11. und 12. Mai 2019)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
+#: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html?date=20210409 (geplant 8. und 9. Mai 2021)
 	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
@@ -16276,7 +16278,7 @@ EOF
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-03-25
+#: last_checked: 2021-04-09
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 EOF
@@ -30633,10 +30635,11 @@ EOF
        text  => 'Boxhagener Platz: samstags 6 bis 20 Uhr Sperrung der umliegenden Straßen wegen des Wochenmarkts',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: CORONA-2020
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-03-22
+#: last_checked: 2021-04-09
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30851,7 +30854,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-08
+#: last_checked: 2021-04-09
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31830,7 +31833,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-02-19 vvv
+#: last_checked: 2021-04-09 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -32250,7 +32253,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic
-#: last_checked: 2021-03-28
+#: last_checked: 2021-04-09
 #: check_frequency: 14d
 	q4::inwork 13025,12523 13067,12583 13202,12790
 EOF
