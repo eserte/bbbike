@@ -6262,13 +6262,12 @@ EOF
        until => $isodate2epoch->("2019-05-05 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 14, # später nochmal prüfen
+       recurrence_prewarn_days => 2, # wegen Corona
        text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (4.5.2019 und 5.5.2019)',
        type  => 'gesperrt',
        source_id => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
        data  => <<EOF,
-#: XXX wird die Veranstaltung noch abgesagt?
-#: next_check: 2020-05-01
+#: by: https://www.berlin.de/events/4390033-2229501-primavera-fruehlingsfest.html (geplanter Termin: 08. bis 09. Mai 2021)
 	2::temp 7101,9027 7035,9161 7012,9222 7001,9291
 	2::temp 6945,9142 7035,9161
 EOF
@@ -8154,11 +8153,12 @@ EOF
        until => $isodate2epoch->("2019-05-12 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 5, start => "2020-10-25T00:00:00"]],
-       #recurrence_prewarn_days => 14, # Termin für 2020 steht noch nicht fest
+       recurrence_prewarn_days => 7, # wegen Corona
        source_id => 'https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html',
        text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (11. und 12. Mai 2019)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html?date=20210410 (Termin noch nicht bekannt)
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 	2::temp 16610,1715 16767,1831
 EOF
@@ -30854,7 +30854,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-09
+#: last_checked: 2021-04-10
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552

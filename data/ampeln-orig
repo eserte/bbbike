@@ -155,6 +155,7 @@ Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12723,20691
 	X 9233,8597
 	X 9229,8718
 	X 8916,8511
+#: note: auf dem Bayernring Kontaktschleifen und Anforderung für Radfahrer
 	X 8616,8605
 	X 9238,8410
 	X 8192,9619
@@ -478,7 +479,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10884,14952
 	X 10953,15787
 	X 11019,16465
-#: Note: Anforderungsampel für Radfahrer Richtung Norden aus der Berliner Str. links in die Mühlenstr.
+#: note: Anforderungsampel für Radfahrer Richtung Norden aus der Berliner Str. links in die Mühlenstr.
 	X 10927,17022
 	X 10758,17288
 	X 7480,7683
@@ -495,6 +496,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8319,7084
 	X 8632,8174
 	X 8642,7876
+#: note: Kontaktschleifen und Anforderungsampel für Radfahrer aus der Paradestr.
 	X 9240,8028
 	X 8715,7384
 	X 9242,6962
@@ -949,6 +951,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 10288,4354
 	X 10800,5203
 	X 11266,5097
+#: note: Anforderungsampel für Radfahrer in Richtung Westen
 	X 11386,5107
 	X 6780,3497
 	X 6993,3765
@@ -3066,7 +3069,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2021-03-30
+#: last_checked: 2021-04-10
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
 	X::inwork 13278,6967
@@ -3478,7 +3481,7 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2021-04-04 vvv
+#: last_checked: 2021-04-10 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

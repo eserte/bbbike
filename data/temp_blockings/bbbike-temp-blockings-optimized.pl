@@ -2736,7 +2736,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-09
+#: last_checked: 2021-04-10
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3268,16 +3268,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1634223600
        },
-       {
-         'data' => '	2::inwork 22418,19268 22685,19122
-',
-         'from' => 1615071600,
-         'id' => 3340,
-         'source_id' => '216000117',
-         'text' => 'Mehrower Str. (Ahrensfelde): Bauarbeiten, gesperrt, vom 08.03.2021 bis 09.04.2021',
-         'type' => 'gesperrt',
-         'until' => 1618005600
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: PILGRAMER-2019

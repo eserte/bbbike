@@ -892,6 +892,9 @@ Am Heidehof	1s -1410,2726 -1571,2669 -1612,2785
 Mittelstreifen mit parkenden Autos	3nocross::ignrte 4507,11936 4596,11912 4653,11896
 Otto-Suhr-Allee -> Abbestr.: Mittelstreifen mit parkenden Autos	3::igndisp 4507,11936 4596,11912 4608,11935
 Abbestr. -> Otto-Suhr-Allee: Mittelstreifen mit parkenden Autos	3::igndisp 4608,11935 4596,11912 4653,11896
+Absperrgitter am nördlichen Gehweg	3nocross::ignrte 11473,5131 11676,5185 11799,5191
+Cafeastr. -> Gradestr.: Absperrgitter am nördlichen Gehweg	3::igndisp 11603,5241 11676,5185 11799,5191
+Gradestr. -> Cafeastr.: Absperrgitter am nördlichen Gehweg	3::igndisp 11473,5131 11676,5185 11603,5241
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3574,7 +3577,7 @@ Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 725
 Arnstädter Str.	1 6553,1409 6530,1210 6512,1086 6526,1083 6515,1010
 tragen (5 Stufen)	0:20:-265 6505,1212
 Müncheberger Weg: Privatgelände	2 29978,8975 29868,9084
-Drängelgitter	BNP:10:70 9171,5263
+Schranke, gut passierbar	BNP:1:70:trailer=5 9171,5263
 Niederneuendorfer Allee (Wendeschleife)	1 -2906,17661 -2897,17861
 Zeiler Weg	1 11495,18129 11579,18184
 Dettelbacher Weg	1 11696,18454 11750,18273

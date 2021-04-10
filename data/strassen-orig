@@ -1916,7 +1916,8 @@ Rixdorfer Str. (Mariendorf)	H 9953,3806 10009,3898 10181,4181 10185,4187 10221,4
 Eisenacher Str. (Mariendorf)	H 9275,4672 9405,4667 9494,4658 9695,4638 10010,4606 10183,4583 10270,4571 10412,4552
 Saalburgstr.	N 11128,5782 11392,5505 11596,5450 11611,5479
 Cafeastr.	N 11596,5450 11548,5344 11579,5311 11596,5293
-(Cafeastr. - Gradestr.)	NN 11596,5293 11612,5253 11603,5241 11676,5185
+#: note: am südlichen Ende steht ein "ordentliches" Straßenschild
+Cafeastr.	NN 11596,5293 11612,5253 11603,5241 11676,5185
 (Hornbach-Parkplatz)	N 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
 Gradestr.	H 10800,5203 10868,5187 11266,5097 11386,5107 11473,5131 11676,5185 11799,5191 11871,5195 12060,5204 12336,5219 12507,5228 12582,5232 12727,5244 12773,5248 12883,5257
 Aschaffenburger Str. (Schöneberg, Wilmersdorf)	N 6044,9223 5991,9284 5929,9351
@@ -13923,8 +13924,9 @@ Wulfila-Ufer	NN 8750,5173 9118,5328 9145,5323 9188,5333
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_12_0821_0896_online.pdf (Benennung)
 #: XXX Weg bekommt einen Namen: Gerda-und-Wolfgang-Szepansky-Promenade
 #: osm_watch: way id="28048692" version="16"
-#: next_check: 2021-03-26
-(Am Teltowkanal, südl. Ufer)	NN 9196,5272 9171,5263 8881,5143 8784,5095
+#: last_checked: 2021-04-10
+# REMOVED --- #: next_check: 2021-03-26
+(Am Teltowkanal, südl. Ufer)	NN 9196,5272 9171,5263 9080,5225 8881,5143 8784,5095
 (Am Teltowkanal, südl. Ufer)	NN 8784,5095 8618,5019 8598,4985 8575,4980 8234,4660 7994,4430
 (Am Teltowkanal, nördl. Ufer)	NN 7911,4465 7769,4315 7673,4223
 #: oldname: -20160914: <namenslos> vvv
