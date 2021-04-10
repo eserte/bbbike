@@ -28,7 +28,7 @@ BEGIN {
 my $have_nowarnings;
 BEGIN {
     $have_nowarnings = 1;
-    eval 'use Test::NoWarnings';
+    eval 'use Test::NoWarnings ":early"';
     if ($@) {
 	$have_nowarnings = 0;
 	#warn $@;

@@ -25,7 +25,7 @@ GetOptions("debug" => \my $debug)
 if ($debug) {
     Strassen::set_verbose(1);
 } else {
-    eval 'use Test::NoWarnings';
+    eval 'use Test::NoWarnings ":early"';
 }
 
 my $s = Strassen->new_from_data_string(<<"EOF");
