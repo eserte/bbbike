@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2012,2014,2015,2016,2019 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012,2014,2015,2016,2019,2021 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -1569,6 +1569,14 @@ sub get_conversion {
 	};
     }
     $convsub;
+}
+
+sub get_karte {
+    my($self) = @_;
+    my $frommap = $self->get_global_directive('map') || 'standard';
+    require Karte;
+    Karte::preload(":all"); # Can't preload specific maps, because $map is a token, not a map module name
+    $Karte::map{$frommap};
 }
 
 # set all $VERBOSE vars in this file
