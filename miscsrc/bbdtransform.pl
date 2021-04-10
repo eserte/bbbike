@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2015,2021 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -41,9 +41,16 @@ if (!GetOptions
 	 $oper = 'set';
 	 push @oper_args, 'cat' => $_[1];
      },
+     'polygon-center|area-center' => sub {
+	 $oper = 'polygon_center';
+     },
     ),
    ) {
     die "usage?";
+}
+
+if (!$oper) {
+    die "Please specify an operation (--translate, --oneline ... etc.)\n";
 }
 
 my $file = shift || "-";
@@ -112,6 +119,25 @@ sub translate {
     $new_s->write("-");
 }
 
+sub polygon_center {
+    require VectorUtil;
+    my $new_s = Strassen->new;
+    my $karte = $s->get_karte;
+    $s->read_stream
+	(sub {
+	     my($r) = @_;
+	     my @c = VectorUtil::get_polygon_center(map { split /,/ } @{ $r->[Strassen::COORDS] });
+	     if (!@c) {
+		 warn "Cannot get polygon center for $r->[Strassen::NAME] @{ $r->[Strassen::COORDS] }, skip this record...\n";
+	     } else {
+		 @c = $karte->trim_accuracy(@c);
+		 $r->[Strassen::COORDS] = [join(",", @c)];
+		 $new_s->push($r);
+	     }
+	 });
+    $new_s->write('-');
+}
+
 __END__
 
 =head1 NAME
@@ -125,6 +151,8 @@ bbdtransform.pl - various transformations on bbd files
     ./bbdtransform.pl --oneline [file]
 
     ./bbdtransform.pl --set-name=name --set-cat=cat [file]
+
+    ./bbdtransform.pl --polygon-center [file]
 
 =head1 DESCRIPTION
 
@@ -148,6 +176,10 @@ Set the name of lines to the given argument.
 =item set-cat
 
 Set the category of lines to the given argument.
+
+=item polygon-center
+
+Treat source coordinates as areas and replace with the center coordinate.
 
 =back
 
