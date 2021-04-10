@@ -31,6 +31,15 @@ BEGIN {
     }
 }
 
+my $have_nowarnings;
+BEGIN {
+    $have_nowarnings = 1;
+    eval 'use Test::NoWarnings ":early"';
+    if ($@) {
+	$have_nowarnings = 0;
+    }
+}
+
 sub non_streaming_loop ($);
 
 my $datadir = "$FindBin::RealBin/../data";
@@ -54,7 +63,7 @@ my $global_directive_tests = 7;
 my $strict_and_syntax_tests = 12;
 my $get_conversion_tests = 9;
 
-plan tests => $basic_tests + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $zebrastreifen2_tests + $zebrastreifen3_tests + $encoding_tests + $multistrassen_tests + $initless_tests + $global_directive_tests + $strict_and_syntax_tests + $get_conversion_tests;
+plan tests => $basic_tests + $have_nowarnings + $doit_tests + $strassen_orig_tests + $zebrastreifen_tests + $zebrastreifen2_tests + $zebrastreifen3_tests + $encoding_tests + $multistrassen_tests + $initless_tests + $global_directive_tests + $strict_and_syntax_tests + $get_conversion_tests;
 
 goto XXX if $do_xxx;
 
@@ -431,7 +440,7 @@ EOF
     my $rec = $s->next;
     is($rec->[Strassen::NAME], "\x{20ac}", "Got unicode character");
 
-    my($tmpfh,$tmpfile) = create_temporary_content($data, SUFFIX => ".bbd");
+    my($tmpfh,$tmpfile) = create_temporary_content($octet_data, SUFFIX => ".bbd");
 
     my $s2 = Strassen->new($tmpfile);
     my $global_dirs2 = $s2->get_global_directives;
