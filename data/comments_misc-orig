@@ -163,6 +163,7 @@ Kreisverkehr	Roundabout 19282,6152 19283,6123 19290,6114 19325,6105 19344,6119 1
 Kreisverkehr	Roundabout 44596,21287
 Kreisverkehr	Roundabout 41204,17507
 Kreisverkehr	Roundabout -17045,14005
+Kreisverkehr	Roundabout 11920,16508
 # 
 #: by: Marita:
 (Waldweg über den Beyschlagtunnel): bei Regen Rutschgefahr	CS 355,22344 393,22408 421,22528 636,22658
@@ -1421,7 +1422,7 @@ ausgeschildert Marienfelder Anger	CP2; 3647,299 3607,283
 ausgeschildert nach Grenz	CP2; 51391,106540 51178,106442
 # 
 nicht ausgeschildert, hinter dem Netto links abbiegen	CP; 5429,19165 5476,19450 5398,19463
-nicht ausgeschildert, vor dem Netto links abbiegen	CP; 5495,19571 5476,19450 5398,19463
+nicht ausgeschildert, vor dem Netto links abbiegen	CP; 5495,19571 5486,19515 5476,19450 5398,19463
 # 
 nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz rechts abbiegen	CP; 5198,17433 5109,17507 5138,17630
 nicht ausgeschildert, an der Kreuzung Kurt-Schumacher-Platz links abbiegen	CP; 5198,17433 5109,17507 5068,17384
@@ -1504,6 +1505,12 @@ Walter-Felsenstein-Str.: Zufahrt zur Bitterfelder Str.	CS; 20459,16697 20390,166
 Mariane-von-Rantzau-Str.: ausgeschildert als Mühlenstr. 30	CP2; 12736,11186 12766,11223
 # 
 südlicher Weg im Seepark	CS 17838,8611 17873,8578 17912,8515 18037,8420
+# 
+Straße 89 (Niederschönhausen): nicht ausgeschildert	CS 8606,20063 8703,19917
+# 
+ausgeschildert "zur General-Woyna-Str."	CP2; 4340,18636 4332,18581
+# 
+Schillerhof: Hausdurchfahrt	CP2; 6928,17154 7069,17204
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)

@@ -226,7 +226,7 @@ Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5600,11114 5542,11
 Greinerstr.	1 8340,3242 8327,2987
 Dederingstr.	1 8455,2977 8476,3367
 Weserstr. (Friedrichshain)	1 14416,11815 14475,11778
-Quickborner Str.	1s:q4 8016,21499 8162,21302
+Quickborner Str.	1s:q4 8016,21499 8078,21415 8162,21302
 #: by: Jessaï Arakelian
 #: confirmed_by: srt
 Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
@@ -1833,7 +1833,7 @@ Streitstr.: Mittelstreifen mit Schienstrang (nicht mehr in Betrieb) und Zaun	3no
 Streitstr.: Mittelstreifen	3nocross -3029,16823 -3023,16925 -3018,16974
 #: note: Luftbild
 Marienfelder Chaussee: Mittelstreifen	3nocross 10769,1111 10829,1135 11012,1210
-Oranienburger Str.: Mittelstreifen	3nocross 5517,20120 5545,19909 5533,19811
+Oranienburger Str.: Mittelstreifen	3nocross 5517,20120 5527,20044 5545,19909 5533,19811
 #: by: rjoop/srt
 Bahntrasse	3nocross 15875,1796 15835,1747 15799,1690 15729,1573
 Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
@@ -3274,7 +3274,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: next_check_id: NORD52-2019
 #: last_checked: 2021-02-24 vvv
 #: check_frequency: 90d vvv
-#: osm_watch: way id="630987121" version="8"
+#: osm_watch: way id="630987121" version="9"
 Ankerweg: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22118,2559 22159,2585 22197,2612
 An der Dahme: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22197,2612 22270,2549
 #: check_frequency ^^^
@@ -4213,8 +4213,8 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: osm_watch: way id="23099023" version="11"
 #: osm_watch: way id="23099024" version="8"
 #: osm_watch: way id="103531998" version="7"
-#: last_checked: 2020-06-26 (mapillary)
-#: next_check: 2021-03-15
+#: last_checked: 2021-04-11
+# REMOVED --- #: next_check: 2021-03-15
 # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645
 Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 # 

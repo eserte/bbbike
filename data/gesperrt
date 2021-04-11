@@ -141,7 +141,7 @@ Hardenbergplatz	1 5542,11075 5565,11147 5666,11362 5698,11333 5600,11114 5542,11
 Greinerstr.	1 8340,3242 8327,2987
 Dederingstr.	1 8455,2977 8476,3367
 Weserstr. (Friedrichshain)	1 14416,11815 14475,11778
-Quickborner Str.	1s 8016,21499 8162,21302
+Quickborner Str.	1s 8016,21499 8078,21415 8162,21302
 Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
 Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
 Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
@@ -1456,8 +1456,8 @@ Mittelstreifen	3nocross::ignrte -3029,16823 -3023,16925 -3018,16974
 Mittelstreifen	3nocross::ignrte 10769,1111 10829,1135 11012,1210
 Marienfelder Chaussee -> Wingerter Str.: Mittelstreifen	3::igndisp 11012,1210 10829,1135 10845,1026
 Wingerter Str. -> Marienfelder Chaussee: Mittelstreifen	3::igndisp 10845,1026 10829,1135 10769,1111
-Mittelstreifen	3nocross::ignrte 5517,20120 5545,19909 5533,19811
-Oranienburger Str. -> Kirschblütenpl.: Mittelstreifen	3::igndisp 5517,20120 5545,19909 5598,19912
+Mittelstreifen	3nocross::ignrte 5517,20120 5527,20044 5545,19909 5533,19811
+Oranienburger Str. -> Kirschblütenpl.: Mittelstreifen	3::igndisp 5527,20044 5545,19909 5598,19912
 Bahntrasse	3nocross::ignrte 15875,1796 15835,1747 15799,1690 15729,1573
 Zwickauer Damm -> Feuchtwangerweg: Bahntrasse	3::igndisp 15799,1690 15835,1747 15788,1747
 Feuchtwangerweg -> Zwickauer Damm: Bahntrasse	3::igndisp 15788,1747 15835,1747 15875,1796

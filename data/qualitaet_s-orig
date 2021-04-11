@@ -953,7 +953,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-04-10
+#: last_checked: 2021-04-11
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1031,14 +1031,14 @@ Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 92
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5779 (Vorschlag)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/verordnete-fordern-moderne-planung-fuer-friedrich-engels-strasse_a303957
 #: XXX Wird nach der Straßenbaumaßnahme die Straße asphaltiert sein? Werden die Radspuren verlängert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus? vvv
-#: last_checked: 2021-01-20 (mapillary) vvv
+#: last_checked: 2021-04-11 vvv
 #: check_frequency: 540d vvv
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
 Friedrich-Engels-Str.: Asphalt	Q2 8967,20539 8904,20596
 Friedrich-Engels-Str.: Fahrbahn Kopfsteinpflaster, betonierter Gehweg für Radfahrer frei	Q1+ 8904,20596 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099
 Friedrich-Engels-Str.: Fahrbahn Kopfsteinpflaster, Gehweg mit Verbundsteinpflaster für Radfahrer frei	Q1 8513,21099 8409,21183 8316,21240 8277,21257
-#: note: im südlichen Abschnitt kann man u.U. auf den betonierten Teil zwischen den Straßenbahnschienen ausweichen
-Quickborner Str.: Kopfsteinpflaster	Q2 8162,21302 8016,21499
+Quickborner Str.: Kopfsteinpflaster, zwischen den Straßenbahnschienen betoniert	Q1 8162,21302 8078,21415
+Quickborner Str.: Kopfsteinpflaster	Q2 8078,21415 8016,21499
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1545,8 +1545,12 @@ Platanenstr.: gut befahrbare Betonplatten	Q1 8710,19550 8467,19408
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765
 #: by: http://www.berliner-woche.de/pankow/verkehr/zu-viele-verkehrszeichen-sonderfall-regt-zum-schmunzeln-an-d156819.html
 Platanenstr.: Asphalt	Q0 9498,19817 9349,19782 9177,19745 8977,19694 8956,19688 8779,19589 8710,19550
+#: corrected_by: srt (passabler Asphalt -> ...)
+Platanenstr.: Asphalt mit einigen Schäden	Q0-; 9498,19817 9824,19910
+#: corrected_by: srt (passabler Asphalt -> ...)
+Platanenstr.: Asphalt	Q0; 9824,19910 9498,19817
 #: confirmed_by: srt
-Platanenstr.: passabler Asphalt	Q0- 9498,19817 9824,19910 10134,19981
+Platanenstr.: passabler Asphalt	Q0- 9824,19910 10134,19981
 #: by: ^^^
 Feldstr. (Gesundbrunnen): Kopfsteinpflaster	Q2 9048,14681 9108,14777
 Nibelungenstr. (Wannsee, Nikolassee): kleinteiliges Kopfsteinpflaster	Q1- -4583,1185 -4575,1335 -4554,1391
@@ -2682,7 +2686,9 @@ Straße 270: Kopfsteinpflaster	Q2- -5091,10994 -4855,11031
 #: by: anonymous
 #: corrected_by: rjoop (was "schlechtes Kopfsteinpflaster")
 #: confirmed_by: srt
-Eschengraben: Asphalt	Q0 11778,17066 11781,17046 11817,16870 11831,16802 11776,16753 11720,16752 11613,16747
+Eschengraben: Asphalt	Q0 11778,17066 11781,17046 11817,16870 11831,16802 11776,16753
+#: corrected_by: srt (Asphalt -> ...)
+Eschengraben: Beton	Q0- 11776,16753 11720,16752 11613,16747
 #: corrected_by: srt (Kopfsteinpflaster, dann Asphalt->)
 Eschengraben: Beton	Q1 11755,17216 11778,17066
 #: by: rjoop: vvv
@@ -8951,7 +8957,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2021-04-09 vvv
+#: last_checked: 2021-04-11 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -9148,8 +9154,10 @@ Lierbacher Weg: Asphalt	Q0 5152,22809 5260,22634
 (Welzower Steig - Zabel-Krüger-Damm): wassergebundene Decke	Q1 5929,22339 5821,22435 5825,22456
 Welzower Steig: Asphalt	Q0 6555,21429 6529,21620 6525,21630 6511,21649 6478,21652 6428,21648 6392,21668 6361,21707 6320,21777 6223,21952 6257,22005 6111,22155 6082,22183 6046,22186 6018,22233 5993,22260 5984,22280 5929,22339
 Königshorster Str.: Beton	Q0 6555,21429 6569,21396 6594,21134
-Wilhelmsruher Damm - Tornower Weg: Verbundsteinpflaster/Gehwegplatten	Q0- 6596,21062 6560,21055 6548,21041 6526,21015 6519,21002
-(Tornower Weg - Wilhelmsruher Damm): Verbundsteinpflaster/Gehwegplatten	Q0- 6519,21002 6565,21004 6560,21055
+Wilhelmsruher Damm - Tornower Weg: neu asphaltiert	Q0 6596,21062 6560,21055
+Wilhelmsruher Damm - Tornower Weg: Verbundsteinpflaster/Gehwegplatten	Q0- 6560,21055 6548,21041 6526,21015 6519,21002
+(Tornower Weg - Wilhelmsruher Damm): Verbundsteinpflaster/Gehwegplatten	Q0- 6519,21002 6565,21004
+(Tornower Weg - Wilhelmsruher Damm): neu asphaltiert	Q0 6565,21004 6560,21055
 Lampesteig: Asphalt	Q0 7534,18588 7520,18701
 (John-Sieg-Str. - Wilhelm-Guddorf-Str.): wassergebundene Decke	Q1 15411,11823 15373,11783
 # REMOVED (entfernt) --- (Weserstr. - Boxhagener Str.): Verbundsteinpflaster/Beton, einige Stellen schon aufgebrochen	Q2 14949,11474 14838,11410 --- (Weserstr. - Boxhagener Str.): Verbundsteinpflaster	Q1+ 14838,11410 14792,11391 14752,11369
@@ -12772,7 +12780,7 @@ Beuckestr.: Kopfsteinpflaster	Q2 84,2618 45,2644
 #: corrected_by: srt (gutes Kopfsteinpflaster -> gutes Kleinsteinpflaster)
 Langensteiner Weg: gutes Kleinsteinpflaster	Q1 7285,4724 7335,4879 7437,4855
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> Beton)
-General-Woyna-Str.: Beton	Q0 4465,18475 4344,18487 4291,18264
+General-Woyna-Str.: Beton	Q0 4465,18475 4340,18497 4291,18264
 #: confirmed_by: srt & mapillary
 General-Woyna-Str.: mäßiges Kopfsteinpflaster	Q2 4291,18264 4248,18066 4200,17848 4187,17765
 #: corrected_by: srt ("mäßiger" gestrichen)
@@ -13951,7 +13959,11 @@ Waldstr. (Niederschönhausen): Asphalt	Q0 9961,19513 9916,19625 9878,19741
 #: confirmed_by: srt
 Waldstr. (Niederschönhausen): Kleinsteinpflaster	Q1- 9878,19741 9864,19793 9832,19885
 #: confirmed_by: Uta Voigt:
-Waldstr. (Niederschönhausen): asphaltiert	Q0 9832,19885 9824,19910 9788,20035 9754,20134 9727,20251 9723,20269 9724,20291 9717,20501
+Waldstr. (Niederschönhausen): asphaltiert	Q0 9832,19885 9824,19910
+#: corrected_by: srt (asphaltiert -> ...)
+Waldstr. (Niederschönhausen): asphaltiert, einige umfahrbare Schlaglöcher	Q0- 9824,19910 9788,20035
+#: confirmed_by: Uta Voigt:
+Waldstr. (Niederschönhausen): asphaltiert	Q0 9788,20035 9754,20134 9727,20251 9723,20269 9724,20291 9717,20501
 #: by: ^^^
 # 
 #: by: Raik:
@@ -15450,7 +15462,8 @@ Philippistr.: Kopfsteinpflaster	Q2 2583,11613 2483,11606
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Ernststr.: Asphalt	Q0 2477,19520 2553,19528
 #: confirmed_by: srt ("schlechtes" hinzugefügt)
-Ernststr.: schlechtes Kopfsteinpflaster	Q3 2553,19528 2689,19544
+#: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> neu gemacht, ca. 2020)
+Ernststr.: Asphalt	Q0 2553,19528 2689,19544
 #: confirmed_by: srt
 Ernststr.: Asphalt	Q0 3632,19934 3504,19849 3429,19786 3343,19727 3252,19658 3167,19597 3037,19578 3010,19575 2865,19562 2821,19559
 #: confirmed_by: srt
@@ -17199,7 +17212,11 @@ Amalienpark: schlechtes Kopfsteinpflaster	Q3 10860,18650 10934,18500
 Amalienpark: schlechtes Kopfsteinpflaster	Q3 10958,18512 10905,18671
 #: corrected_by ^^^
 #: confirmed_by: albrecht_martina, srt:
-Eichenstr. (Niederschönhausen): guter Asphalt	Q0 9289,19947 9408,19968 9788,20035 10106,20093
+Eichenstr. (Niederschönhausen): guter Asphalt	Q0 9289,19947 9408,19968 9788,20035
+#: corrected_by: srt (guter Asphalt -> ...)
+Eichenstr. (Niederschönhausen): Asphalt mit leichten Schäden	Q1+; 9788,20035 10106,20093
+#: confirmed_by: srt
+Eichenstr. (Niederschönhausen): guter Asphalt	Q0; 10106,20093 9788,20035
 #: note: laut ADFC-Karte gut geeignet
 #: confirmed_by: mianos@...
 #: corrected_by: srt (asphaltiert, Q0- -> ...)
@@ -20386,7 +20403,9 @@ Gollanczstr.: Asphalt	Q0 2007,26782 2044,27286 2061,27612
 #: corrected_by: srt (mäßiger Asphalt -> ...)
 Straße 151: unbefestigte Straße	Q2 8973,21271 8932,21192
 Straße 151: mäßiger Asphalt	Q1- 8932,21192 8860,21051
-Straße 152: guter Beton	Q0- 8793,21110 8867,21222
+#: confirmed_by: srt
+Straße 152: guter Beton	Q0- 8796,21107 8867,21222
+#: confirmed_by: srt
 Straße 152: guter Beton	Q0- 8932,21192 8867,21222 8825,21246
 Auffacher Weg: gutes Verbundsteinpflaster	Q1+ 9130,21187 9093,21090
 Niederauer Weg: gutes Verbundsteinpflaster	Q1+ 9008,21124 9093,21090 9138,21070
@@ -20500,13 +20519,21 @@ Rispenweg: schlechtes Kopfsteinpflaster	Q3 8886,21014 8859,21004 8796,20964 8754
 Olwenstr.: mäßig befahrbare Kleinpflastersteine	Q2 997,24595 931,24654 910,24689 864,24747 808,24790
 Olwenstr.: guter Beton	Q0- 1385,24437 1282,24466 1209,24475 1156,24494 1058,24564 997,24595
 Olwenstr.: mäßig befahrbare Kleinpflastersteine	Q2 1758,24389 1732,24402 1693,24419 1633,24423 1555,24413 1458,24418 1385,24437
-An der Priesterkoppel: guter Beton	Q0- 8726,21171 8793,21110 8860,21051 8886,21014
-An der Priesterkoppel: mäßiger Asphalt	Q2+ 8886,21014 8971,20775
-An der Priesterkoppel: Asphalt	Q0 8971,20775 9027,20603
+#: confirmed_by: srt
+An der Priesterkoppel: guter Beton	Q0- 8726,21171 8796,21107 8830,21077
+#: corrected_by: srt (guter Beton -> ...)
+An der Priesterkoppel: Asphalt	Q0 8830,21077 8860,21051 8886,21014
+#: corrected_by: srt (mäßiger Asphalt -> ...)
+An der Priesterkoppel: fester Sandweg mit vielen Löchern	Q2 8886,21014 8961,20804
+#: confirmed_by: srt
+An der Priesterkoppel: Asphalt	Q0 8961,20804 8971,20775 9027,20603
 Bergrutenpfad: fester Sandweg mit Schlaglöchern	Q2 8886,21014 8942,21039 8967,21031
 Bergrutenpfad: gutes Verbundsteinpflaster	Q1 8967,21031 9008,21124 9050,21223
+#: confirmed_by: srt
 Eigene Scholle: guter Beton	Q0- 8912,21308 8825,21246 8729,21185 8726,21171 8670,21102
+#: confirmed_by: srt (südlicher Abschnitt)
 Eigene Scholle: schlechtes Kopfsteinpflaster	Q3 8670,21102 8752,21034 8796,20964 8906,20755 8971,20775
+#: confirmed_by: srt (südlicher Abschnitt)
 Eigene Scholle: mäßig befahrbarer fester Sandweg	Q2 8971,20775 8996,20792 9178,21072
 Eigene Scholle - Schönhauer Str.: Verbundsteinpflaster	Q1+ 9178,21072 9221,21145
 Wiesenwinkel: Asphalt	Q0 8553,20710 8582,20713 8593,20725 8565,20797 8554,20800 8498,20812 8610,21000
@@ -20526,7 +20553,7 @@ Wilckeweg: mit kleinen Pflastersteinen gepflastert	Q1 8533,20709 8539,20744 8554
 (Nordgraben, südliches Ufer): Schotterstraße	Q2 8092,20817 8219,20870 8507,21023
 (Nordgraben - Wurstmacherweg): mäßiger fester Sandweg	Q2 8219,20870 8311,20840
 #: corrected_by: srt (Q0- -> Q0)
-Humannstr.: guter Beton	Q0 4311,18454 4324,18523 4340,18636
+Humannstr.: guter Beton	Q0 4311,18454 4324,18523 4332,18581 4340,18636
 #: corrected_by: srt (Verbundsteinpflaster -> ) vvv
 Humannstr.: guter Beton	Q0 4340,18636 4346,18853 4352,18969
 Humannstr.: Gehwegplatten	Q0- 4352,18969 4353,18986
@@ -28839,10 +28866,12 @@ Lerchenweg (Mariendorf): Kopfsteinpflaster	Q2+ 9405,4667 9382,4826 9360,4996 935
 Treskowstr. (Heinersdorf): Asphalt	Q0 11893,17397 12324,17213
 #: corrected_by: srt (Asphalt -> Beton, public imagery)
 Elsflether Weg: Beton	Q0 -4011,13407 -4023,13493 -4011,13656 -3989,13785 -3965,13870 -3935,13980
-#: corrected_by: Wolfhard Schleese (Sandweg Q2 -> Asphalt Q0, dieser Abschnitt)
+#: corrected_by: Wolfhard Schleese (Sandweg Q2 -> Asphalt Q0, dieser Abschnitt), srt
 Nordendstr.: Asphalt	Q0 9149,20336 8964,20259
-#: confirmed_by: srt (westliches Ende)
-Nordendstr.: moderat fester Sandweg mit vielen Löchern	Q2 8964,20259 8606,20063 8402,19959
+#: confirmed_by: srt
+Nordendstr.: moderat fester Sandweg mit vielen Löchern	Q2 8964,20259 8606,20063 8442,19980
+#: corrected_by: srt (Sandweg -> ...)
+Nordendstr.: Asphalt	Q0 8442,19980 8402,19959
 #: by: ^^^
 # 
 #: by: Jacqueline Naber-Siemon, Peter Scherbarth [AM]

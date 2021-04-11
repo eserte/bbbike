@@ -6869,7 +6869,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004175',
        data  => <<EOF,
-	1::inwork 5533,19811 5495,19571 5476,19450
+	1::inwork 5533,19811 5523,19746 5495,19571 5486,19515 5476,19450
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -29257,7 +29257,7 @@ EOF
        data  => <<EOF,
 #: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-03-05
+#: last_checked: 2021-04-11
 #: check_frequency: 60d
 #: next_check: 2021-04-30
 	q3::inwork  8986,16092 9178,16317
@@ -30854,7 +30854,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-10
+#: last_checked: 2021-04-11
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31988,7 +31988,7 @@ EOF
        type  => 'handicap',
        source_id => '2147346268',
        data  => <<EOF,
-#: last_checked: 2021-03-05
+#: last_checked: 2021-04-11
 #: next_check: 2021-08-27
 	q2::inwork 8913,16159 9099,16398
 EOF
@@ -32253,7 +32253,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic
-#: last_checked: 2021-04-09
+#: last_checked: 2021-04-11
 #: check_frequency: 14d
 	q4::inwork 13025,12523 13067,12583 13202,12790
 EOF
