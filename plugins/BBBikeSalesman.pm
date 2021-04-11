@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2008,2013,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2008,2013,2017,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,7 +28,7 @@ use Msg qw(frommain);
 }
 
 use strict;
-use vars qw($button_image $salesman_cursor $cant_salesman $salesman $use_algorithm);
+use vars qw($button_image $salesman_cursor $cant_salesman $salesman $use_algorithm $use_home_coordinate);
 use your qw(%main::map_mode_callback $main::Radiobutton $main::ch $main::c $main::progress @main::popup_style
 	    %main::global_search_args $main::escape $main::search_route_flag $main::advanced
 	    %BBBikePlugin::plugins);
@@ -148,6 +148,18 @@ sub map_mode_activate {
 	     $b = $t->Button
 	     (-text => M"Berechnen",
 	      -command => sub {
+		  if ($use_home_coordinate) {
+		      if (!$main::center_on_coord) {
+			  main::status_message("Unexpected: home coordinate should be used, but it's not available (anymore?)", "err");
+			  return;
+		      }
+		      if ($salesman->get_number_of_points < 1) {
+			  main::status_message(M("Mindestens ein Punkt ist für die Berechnung notwendig"), "err");
+			  return;
+		      }
+		      $salesman->add_point($main::center_on_coord, atbeginning => 1);
+		      $salesman->add_point($main::center_on_coord);
+		  }
 		  if ($salesman->get_number_of_points < 3) {
 		      main::status_message(M("Mindestens drei Punkte sind für die Berechnung notwendig"), "err");
 		      return;
@@ -201,6 +213,11 @@ sub map_mode_activate {
 					 }
 				     }
 				 },
+				));
+    }
+    if (defined $main::center_on_coord) {
+	Tk::grid($t->Checkbutton(-text => 'Use home coordinate as start/goal',
+				 -variable => \$use_home_coordinate,
 				));
     }
 

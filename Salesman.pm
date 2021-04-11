@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2003,2006,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2003,2006,2013,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -60,14 +60,21 @@ sub new {
 sub get_number_of_points { shift->{NumberOfPoints} }
 
 sub add_point {
-    my($self, $point) = @_;
+    my($self, $point, %opt) = @_;
+    my $at_beginning = delete $opt{atbeginning};
+    die "Unhandled options: " . join(" ", %opt) if %opt;
+
     my $r = 0;
     eval {
 	my $new_point = $point;
 	if (!$self->{Net}->reachable($point)) {
 	    $new_point = $self->{AddNewPoint}->($self->{Net}, $point);
 	}
-	push @{ $self->{ProcessPoints} }, $new_point;
+	if ($at_beginning) {
+	    unshift @{ $self->{ProcessPoints} }, $new_point;
+	} else {
+	    push @{ $self->{ProcessPoints} }, $new_point;
+	}
 	$r = 1;
     };
     $self->{NumberOfPoints} = scalar @{ $self->{ProcessPoints} };
