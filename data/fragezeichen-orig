@@ -301,7 +301,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: source_id: 2147342170 vvv
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72
 #: osm_watch: way id="336565341" version="10" vvv
-#: last_checked: 2021-03-24 vvv
+#: last_checked: 2021-04-12 vvv
 #: check_frequency: 120d vvv
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 #: check_frequency ^^^
@@ -2036,10 +2036,11 @@ Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 79
 #: by: http://www.infravelo.de/projekt/oranienburger-strasse/ (bis 2. Quartal 2021) (alter Eintrag)
 #: by: http://www.infravelo.de/projekt/oranienburger-strasse-2/ (bis 2. Quartal 2021)
 #: by: https://viz.berlin.de/2021/04/wilhelmsruher-damm-sperrung/ (Busumleitungen ab 12.4.2021 für vier Wochen)
+#: by: https://www.berliner-woche.de/wittenau/c-verkehr/geaenderte-linienfuehrung_a306561
 #: XXX laut fritz bis Januar 2020
 #: source_id: 2147346022 (bis Ende 2020; inaktiv)
-#: source_id: 2147344156 (bis 31.3.2021)
-#: source_id: 2147345583 (bis 12.4.2021)
+#: source_id: 2147344156 (bis 31.3.2021; inaktiv)
+#: source_id: 2147345583 (bis 12.4.2021; inaktiv)
 #: source_id: 2147347060 (bis 10.5.2021)
 #: last_checked: 2021-04-11
 #: check_frequency: 90d
@@ -2133,8 +2134,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-12-22 (osm)
 # REMOVED --- #: check_frequency: 90d
-#: check_frequency: 100d
-#: next_check: 2021-04-12
+#: next_check: 2021-05-18
 Bohnsdorfer Kreisel: Bau von Radspuren in beiden Richtungen	?::projected 22062,773 22120,886 22092,999 22034,1006 21977,988
 # REMOVED --- #: check_frequency: 90d
 # REMOVED (realisiert) --- #: XXX erster Bauabschnitt (vom 15. Mai 2017 bis Oktober 2017) --- Bohnsdorfer Kreisel: Bau von Radspuren in beiden Richtungen; Aufhebung der Einbahnstraßenregelung	?::projected 22007,711 22062,773
@@ -2929,9 +2929,7 @@ Lausitzer/Reichenberger Str.: zwei Zebrastreifen geplant	?::projected 12032,1014
 #: last_checked: 2021-03-26
 #: check_frequency: 90d
 Möckernstr./Obentrautstr.: Zebrastreifen geplant	?::projected 8809,10190 8783,10166 8769,10139
-#: last_checked: 2021-03-18 (parlamentarische Anfrage)
-#: check_frequency: 120d
-Schönfließer Str./Gollanzcstr.: Zebrastreifen geplant	?::projected 2082,26098 2112,26066 2147,26039
+# REMOVED (weitgehend realisiert) --- #: last_checked: 2021-03-18 (parlamentarische Anfrage) --- #: check_frequency: 120d --- Schönfließer Str./Gollanzcstr.: Zebrastreifen geplant	?::projected 2082,26098 2112,26066 2147,26039
 #: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 120d
 Finckensteinallee/Baseler Str.: Zebrastreifen geplant	?::projected 3147,2888 3171,2848 3203,2802
@@ -3311,6 +3309,7 @@ Glinkastr.: gilt die temporäre Einbahnstraßenregelung mittlerweile auch für Radf
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/ab-14-april-bus-ersatzverkehr-auf-dem-te-damm_a305718
 #: by: https://www.bahninfo-forum.de/read.php?9,697176,697901#msg-697901 (Radspuren, Linienverkehr frei)
 #: by: https://www.bahninfo-forum.de/read.php?9,697176,698062#msg-698062 (Busspuren dort, wo Radwege existieren)
+#: by: https://viz.berlin.de/2021/04/u6-sev/ (hier: bis 07.10.2021)
 #: XXX auf der Ullsteinbrücke Richtung Norden wird ein provisorischer Radweg über den Bürgersteig geführt
 #: source_id: 2147347065 (bis 17.10.2021)
 #: last_checked: 2021-04-10 (im Bereich Ullsteinhaus schon markiert, allerdings noch komplett zugeparkt)
@@ -3325,7 +3324,7 @@ Tempelhofer Damm und Mariendorfer Damm: Busspuren bzw. Radspuren (mit Linienverk
 #: XXX außerdem entstehen provisorische Radfahrstreifen auf dem Blumberger Damm zwischen Frankenholzer Weg und Altentreptower Str., sowie provisorische Ampeln am Spatenweg und Frankenholzer Weg (hier anstelle der Fußgängerampel?)
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
-#: last_checked: 2021-03-31
+#: last_checked: 2021-04-11 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-03-15
 Wuhlgartenweg: während der Bauarbeiten an der Blumberger-Damm-Brücke wird der Weg gesperrt	?::projected 21135,12127 21169,12113 21282,12115
@@ -3334,7 +3333,7 @@ Wuhlgartenweg: während der Bauarbeiten an der Blumberger-Damm-Brücke wird der We
 # 
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/in-marzahn-hellersdorf-werden-2021-acht-groessere-radwegprojekte-umgesetzt_a297401 vvv
 #: XXX stadteinwärts wird zurzeit die innere Betonplattenreihe auf dem Bürgersteig saniert
-#: last_checked: 2021-03-31
+#: last_checked: 2021-04-11 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-12-31
 Altentreptower Str.: werden hier Radwege gebaut?	? 21199,12258 21271,12235 21288,12166 21307,12132 21400,12135 21573,12140 21819,12154 21935,12153
@@ -3448,7 +3447,7 @@ Oberspreestr./Bärenlauchstr.: Zebrastreifen soll durch eine Bedarfsampel ersetzt
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Belziger Str.: Markierungsarbeiten im Frühjahr 2021 beauftragt)
-#: last_checked: 2021-03-02 vvv
+#: last_checked: 2021-04-08 (mapillary) vvv
 #: check_frequency: 60d vvv
 # REMOVED (nicht mehr schaffbar) --- #: next_check: 2020-12-31 vvv
 Freiherr-vom-Stein-Str.: Fahrradstraße geplant	?::projected 5913,8415 5995,8477 6123,8546 6230,8602 6313,8638 6454,8653
@@ -3893,7 +3892,7 @@ Bahnhofstr.: ändert sich bei den Maßnahmen etwas für Radfahrer? Wird eine Radspu
 #: by: https://abendblatt-berlin.de/2020/12/03/tempelhof-kreuzberg-der-platz-der-luftbruecke-wird-gruener/
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1025759.php (Beteiligungsveranstaltung)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1027810.php
-#: last_checked: 2020-10-22
+#: last_checked: 2021-04-08 (mapillary)
 #: check_frequency: 180d
 Manfred-von-Richthofen-Str.: ändert sich bei den geplanten Umbaumaßnahmen etwas für Radfahrer?	?::projected 9229,8718 9158,8706 9099,8670
 # 
@@ -4693,7 +4692,7 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 1416
 #: XXX prüfen!
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
 #: osm_watch: way id="130002114" version="4"
-#: last_checked: 2021-02-21 (mapillary)
+#: last_checked: 2021-04-08 (mapillary)
 #: check_frequency: 120d
 Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014,9126 8009,9063
 # 
@@ -4847,7 +4846,7 @@ Alfredstr., Schottstr., Rüdigerstr.: Planung von Radverkehrsanlagen	?::projected
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2021-03-24
+#: last_checked: 2021-04-12
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: by: https://api.fixmyberlin.de/api/projects/328 (Grünmarkierung + Verbreiterung, teilweise Leitboys)
@@ -5092,6 +5091,7 @@ Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 125
 Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563 6224,9544 6242,9525
 # 
 #: source_id: 2147346943 (bis 30.4.2021)
+#: last_checked: 2021-04-11 (mapillary)
 #: next_check: 2021-04-30
 #: priority: #D
 Bucher Chaussee: Fußgängerübergang wird gebaut, vielleicht als Zebrastreifen?	? 15985,24062 15981,23996 16032,24033
@@ -5746,7 +5746,7 @@ Langhansstr.: Straßenbahnkaps entstehen	?::inwork 13508,15912 13312,16027 13189,
 Wandlitz - Wensickendorf: Radwegbau	?::inwork 11192,38568 10878,38650 10471,38685 10407,38693 10356,38700 10251,38712 10181,38717 10139,38721 9981,38735 9893,38742 9343,38794 9329,38795 9056,38825 8954,38837 8873,38845 8740,38857 8665,38862 8643,38865 8518,38881 8240,38876 7990,38846 7950,38843 7836,38835 7698,38825 7632,38828 7465,38830
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1054982.php (kein konkretes Datum (außer für Baumfällungen: Ende Februar 2021))
-#: last_checked: 2021-04-10 (mapillary)
+#: last_checked: 2021-04-11 (mapillary)
 #: check_frequency: 360d
 Schönfließer Str., Senheimer Str., Gollanczstr.: Bauarbeiten geplant, kommt es dabei zu Änderungen (z.B. Asphaltierungen?)	?::projected 2206,25649 2139,25830 2112,26066 2293,26111 2402,26121 2490,26126 2499,26128 2490,26126 2484,25984 2496,25915 2519,25772 2515,25666
 # 

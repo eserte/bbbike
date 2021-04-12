@@ -3141,7 +3141,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: BOHNSDORFERKREISEL-2017
-#: source_id: 2147346807 (bis 12.4.2021)
+#: source_id: 2147346807 (bis 18.5.2021)
 #: note: laut rbbtext kann der Radverkehr passieren
 #: by: https://viz.berlin.de/2021/01/bohnsdorfer-kreisel/ (keine Einschränkungen für Fußgänger)
 #: by: https://twitter.com/VIZ_Berlin/status/1353990207574581249 (Situation mit Bildern)
@@ -3153,9 +3153,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1610838000,
          'id' => 3321,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
-         'text' => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 12.4.2021',
+         'text' => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 18.5.2021',
          'type' => 'handicap',
-         'until' => 1618264800
+         'until' => 1621350000
        },
        {
          'data' => '#: note: bei rbbtext sogar bis 18.5.2021
@@ -3331,26 +3331,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1627768799
        },
-       {
-         'data' => '	2::inwork 53811,97943 53912,97812
-',
-         'from' => 1616882400,
-         'id' => 3346,
-         'source_id' => '217300060',
-         'text' => 'Wollin: Bauarbeiten an der Autobahnbrücke, u.U. komplett gesperrt, vom 29.3.2021 bis 11.4.2021',
-         'type' => 'gesperrt',
-         'until' => 1618178400
-       },
-       {
-         'data' => '	2::inwork 21359,18834 21332,18819 21278,18786
-',
-         'from' => 1616698800,
-         'id' => 3347,
-         'source_id' => '2147347017',
-         'text' => 'Ahrensfelder Chaussee: Bahnübergang wegen Bauarbeiten gesperrt, auch für Fußgänger und Radfahrer, vom 26.03.2021 20:00 Uhr bis 12.04.2021 17:00 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1618239600
-       },
+       undef,
+       undef,
        {
          'data' => '#: also_indoor: traffic
 #: last_checked: 2021-04-11
