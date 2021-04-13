@@ -27950,7 +27950,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2021-03-26
+#: last_checked: 2021-04-13
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30854,7 +30854,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-11
+#: last_checked: 2021-04-13
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32368,6 +32368,16 @@ EOF
        source_id => '2147347063',
        data  => <<EOF,
 	q3::inwork 1884,11126 1861,11284
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Glinkastr.: zwischen Jägerstr. und Mohrenstr. Einbahnstraßenregelung, gesperrt Richtung Süden auch für Radfahrer',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?
+#: last_checked: 2021-04-13
+	q4::inwork; 9195,11972 9207,11880 9218,11793
 EOF
      },
     );
