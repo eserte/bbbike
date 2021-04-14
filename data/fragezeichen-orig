@@ -3298,6 +3298,10 @@ Isenburger Weg: Neubau der Straße geplant	?::projected -7819,15342 -7867,15185 -
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX Torstraße (Mitte) in beiden Richtungen zwischen  Gormannstr. und Alte Schönhauser Straße: Rohrleitungsbau, Fahrbahn auf jeweils zwei Fahrstreifen verengt, Anbindung Gormannstraße gesperrt, eine Umleitung für Radverkehr ist ausgeschildert, vom 26.02.2020 07:00 Uhr bis 31.05.2021 17:00 Uhr
+#: source_id: 2147345515	
+Torstr.: gibt es hier auch eine Engstelle für Radfahrer?	?; 10459,13760 10572,13731 10645,13711 10741,13685
+# 
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: last_checked: 2021-04-02 (mapillary)
 Königsteinbrücke - Weg an der BAB114: ist dieser Weg dauerhaft unterbrochen?	? 13193,22408 13198,22413 13217,22413
@@ -3311,6 +3315,7 @@ Königsteinbrücke - Weg an der BAB114: ist dieser Weg dauerhaft unterbrochen?	? 1
 #: by: https://www.bahninfo-forum.de/read.php?9,697176,697901#msg-697901 (Radspuren, Linienverkehr frei)
 #: by: https://www.bahninfo-forum.de/read.php?9,697176,698062#msg-698062 (Busspuren dort, wo Radwege existieren)
 #: by: https://viz.berlin.de/2021/04/u6-sev/ (hier: bis 07.10.2021)
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=79259
 #: XXX auf der Ullsteinbrücke Richtung Norden wird ein provisorischer Radweg über den Bürgersteig geführt
 #: source_id: 2147347065 (bis 17.10.2021)
 #: last_checked: 2021-04-10 (im Bereich Ullsteinhaus schon markiert, allerdings noch komplett zugeparkt)
@@ -4875,7 +4880,7 @@ Lindenberger Str.: Was passiert hier bezüglich einer Radweginfrastruktur? Vielle
 #: check_frequency: 90d
 Eggersdorfer Str.: Asphaltierung	?::projected 17259,11093 17322,11296
 #: XXX wird hier eine offizielle Führung von der Kreuzung Malchower Str./Wartenberger Str. realsiert? (dann könnte man den handicap-Eintrag (Bordsteinkante) entschärfen)
-#: last_checked: 2021-03-06
+#: last_checked: 2021-04-13 (mapillary)
 #: check_frequency: 90d
 Seefelder Str.: Radweganbindung	?::projected 17362,16189 17383,16197
 #: by: ^^^
@@ -5702,9 +5707,10 @@ Böcklerpark: hier entsteht für Radfahrer ein "Sonderweg"	? 10723,10088 10803,100
 # 
 #: by: http://www.infravelo.de/projekt/karl-marx-allee/ (bis 4. Quartal 2020)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Anfang 2021)
-#: last_checked: 2021-04-11 (Richtung Osten in Arbeit)
+#: last_checked: 2021-04-14 (mapillary) (Richtung Osten in Arbeit)
 #: check_frequency: 7d
-Karl-Marx-Allee: Verbreiterung der Radwege	? 12878,12430 13163,12382 13448,12340 13543,12326
+# REMOVED (hier fertig) --- Karl-Marx-Allee: Verbreiterung der Radwege	? 12878,12430 13163,12382
+Karl-Marx-Allee: Verbreiterung der Radwege	? 13163,12382 13448,12340 13543,12326
 # 
 #: source_id: LS/723-P/20/180
 #: next_check: 2021-06-30

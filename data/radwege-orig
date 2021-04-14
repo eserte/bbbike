@@ -648,6 +648,7 @@ provisorische Radspuren	RW4; 10601,12521 10644,12469 10673,12434 10738,12364
 #: check_frequency ^^^
 #: last_checked ^^^
 	RW4;RW4 10601,12521 10431,12709
+# 
 #: note: Frankfurter Allee ab Möllendorffstr. Richtung Westen
 	RW3; 15361,12071 15117,12106
 asphaltiert	RW2; 15117,12106 14994,12121 14926,12129 14854,12137 14709,12156
@@ -657,16 +658,23 @@ asphaltiert	RW2; 15117,12106 14994,12121 14926,12129 14854,12137 14709,12156
 asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 #: note: Frankfurter Allee Richtung Osten bis Möllendorffstr.
 	RW2; 13785,12292 13885,12279 14020,12261 14208,12235
-#: note: alter Bürgersteigradweg existiert noch
+#: note: alter Bürgersteigradweg existiert noch, ist aber abgesperrt
 teilweise mit Leitboys geschützt	RW4; 14208,12235 14291,12220 14381,12205 14427,12197 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129
 	RW2; 14926,12129 14994,12121 15117,12106 15361,12071
 # 
-asphaltiert	RW2;RW2 13785,12292 13543,12326
+#: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
+asphaltiert	RW2; 13785,12292 13543,12326
 	RW10; 13543,12326 13448,12340
-asphaltiert	RW2; 13448,12340 13543,12326
-asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
-	RW2; 11976,12595 11988,12546 12028,12519 12083,12518 12114,12546
-	RW2; 12114,12546 12099,12580 12050,12616 12005,12619 11976,12595
+asphaltiert	RW2; 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
+#: note: Karl-Marx-Allee Richtung Osten ab Strausberger Platz
+asphaltiert	RW2; 12114,12546 12134,12540 12352,12509 12592,12472 12603,12470 12878,12430
+neu asphaltiert, relativ breit	RW2; 12878,12430 13163,12382
+asphaltiert	RW2; 13163,12382 13448,12340 13543,12326
+neu asphaltiert, relativ breit	RW2; 13543,12326 13785,12292
+# 
+#: note: Strausberger Platz
+	RW2; 11976,12595 11988,12546 12028,12519 12083,12518 12114,12546 12099,12580 12050,12616 12005,12619 11976,12595
+# 
 # REMOVED (weitgehend fertig) --- #: next_check_id: KARLMARXALLEE-2018 --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.712659.php --- #: by: http://www.berlin.de/senuvk/bauen/strassenbau/karl-marx-allee/ (Fertigstellung Sommer 2020, mittlerweile Spätsommer 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (Erstellung einer geschützten Radspur, vermutlich auch im westlichen Abschnitt) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/erster-geschuetzter-radfahrstreifen-auf-der-holzmarktstrasse-eingeweiht_a188374 --- #: by: http://www.abendblatt-berlin.de/2018/06/21/karl-marx-allee-wird-fuer-zwei-jahre-zur-grossbaustelle/ --- #: by: http://www.abendblatt-berlin.de/2018/07/15/hier-kann-bald-geradelt-werden/ --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.803251.php --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/zweiter-bauabschnitt-fuer-umbau-der-karl-marx-allee-beginnt_a210106 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.872731.php --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.872653.php --- #: by: https://www.abendblatt-berlin.de/2019/12/11/berlin-mitte-gruenstreifen-statt-parkplaetze/ --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/mittelstreifen-wird-gruenflaeche-und-bekommt-drei-platzbereiche_a256747 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.986236.php (abschließende Bauarbeiten bis 27.9.2020) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/karl-marx-allee-gesperrt_a286249 --- #: source_id: 2147342756 --- #: source_id: 2147346300 --- #: source_id: 2147346384 --- #: XXX zurzeit provisorische Radspuren --- #: priority: #A --- #: last_checked: 2020-09-23 --- #: next_check: 2020-09-27
 teilweise mit Grünmarkierung, sehr breit	RW4;RW4 11976,12595 11678,12727 11635,12745 11589,12768 11289,12908 11226,12945
 Gehwegplatten	RW1; 10933,14122 10938,14159
@@ -6765,10 +6773,11 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Verstetigung)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1074831.php (Verstetigung; 14.4.2021 bis Ende Mai 2021)
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
 #: last_checked: 2021-04-13 vvv
-#: check_frequency: 60d vvv
-# REMOVED --- #: next_check: 2020-12-31 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2021-05-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="33"
 #: osm_watch: way id="30184955" version="22"
@@ -6777,7 +6786,7 @@ provisorisch geschützter Radstreifen	RW4;RW4 11393,10390 11512,10105
 #: osm_watch: way id="141233527" version="21"
 provisorisch geschützter Radstreifen	RW4;RW4 11543,10015 11623,9841 11673,9720 11710,9628 11745,9541 11757,9509 11785,9437 11803,9390 11888,9189
 provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: note ^^^

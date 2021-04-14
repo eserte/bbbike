@@ -21550,7 +21550,7 @@ EOF
        until => $isodate2epoch->("2019-04-28 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 4, start => "2020-05-01T00:00:00"]],
-       recurrence_prewarn_days => 7, # wegen Corona
+       recurrence_prewarn_days => 0, # wegen Corona
        text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 26.4.2019 bis 28.4.2019',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
@@ -31473,8 +31473,8 @@ EOF
 EOF
      },
      { from  => 1601923909, # 2020-10-05 20:51
-       until => $isodate2epoch->("2021-04-30 17:00:00"),
-       text  => 'Torstr.: Engstelle von Rosenthaler Platz Richtung Mollstr., bis 30.4.2021',
+       until => $isodate2epoch->("2021-05-31 17:00:00"),
+       text  => 'Torstr.: Engstelle von Rosenthaler Platz Richtung Mollstr., bis 31.5.2021',
        type  => 'handicap',
        source_id => '2147346452',
        data  => <<EOF,
@@ -32352,8 +32352,8 @@ EOF
 EOF
      },
      { from  => 1616918460, # 2021-03-28 10:01
-       until => 1619190000, # 2021-04-23 17:00
-       text  => 'Wichernstr.: Bauarbeiten zwischen Niederneuendorfer Allee und Holunderweg, Fahrbahn stadtauswärts gesperrt, vom 29.03.2021 10:01 Uhr bis 23.04.2021 17:00 Uhr ',
+       until => $isodate2epoch->("2021-05-03 17:00:00"), # 1619190000, # 2021-04-23 17:00
+       text  => 'Wichernstr.: Bauarbeiten zwischen Niederneuendorfer Allee und Holunderweg, Fahrbahn stadtauswärts gesperrt, vom 29.03.2021 10:01 Uhr bis 03.05.2021 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147347035',
        data  => <<EOF,

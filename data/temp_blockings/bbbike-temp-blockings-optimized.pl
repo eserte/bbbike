@@ -2982,9 +2982,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1601923909,
          'id' => 3284,
          'source_id' => '2147346452',
-         'text' => 'Torstr.: Engstelle von Rosenthaler Platz Richtung Mollstr., bis 30.4.2021',
+         'text' => 'Torstr.: Engstelle von Rosenthaler Platz Richtung Mollstr., bis 31.5.2021',
          'type' => 'handicap',
-         'until' => 1619794800
+         'until' => 1622473200
        },
        undef,
        undef,
@@ -3454,9 +3454,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1616918460,
          'id' => 3358,
          'source_id' => '2147347035',
-         'text' => 'Wichernstr.: Bauarbeiten zwischen Niederneuendorfer Allee und Holunderweg, Fahrbahn stadtauswärts gesperrt, vom 29.03.2021 10:01 Uhr bis 23.04.2021 17:00 Uhr ',
+         'text' => 'Wichernstr.: Bauarbeiten zwischen Niederneuendorfer Allee und Holunderweg, Fahrbahn stadtauswärts gesperrt, vom 29.03.2021 10:01 Uhr bis 03.05.2021 17:00 Uhr',
          'type' => 'handicap',
-         'until' => 1619190000
+         'until' => 1620054000
        },
        {
          'data' => '	q3::inwork 1884,11126 1861,11284
