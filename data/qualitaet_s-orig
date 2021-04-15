@@ -955,7 +955,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-04-13
+#: last_checked: 2021-04-15
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3638,9 +3638,10 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124 (Anfrage von Juli 2017)
 #: by: https://politik-bei-uns.de/file/597985b41ae6a07d5fb74916 (Antwort: soll teilweise mit einem Asphaltstreifen befestigt werden, erster von drei Bauabschnitten 2018)
 #: osm_watch: way id="47159365" version="14"
-#: last_checked: 2021-02-18
+#: last_checked: 2021-04-15
 #: check_frequency: 180d
-Wiesengrundstr. (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
+#: note: früher: "holpriger unbefestigter Fahrweg"
+Wiesengrundstr. (Karlshorst): Schotterstraße	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
 Wiesengrundstr. (Karlshorst): Asphalt	Q0 19898,8410 19964,8447 20046,8448
 Agavensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19550,8230 19723,8068 19746,8042 19892,7917 20031,7794
 Agavensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19723,8068 19725,8122 19734,8182 19759,8212
@@ -4634,7 +4635,8 @@ Römerweg: Beton	Q0 19236,9710 19450,9728 19459,9842
 Römerweg: Asphalt	Q1 19599,9747 19663,9757
 Zwieseler Str.: sehr guter Asphalt	Q0+ 19669,9876 19663,9757 19657,9666 19646,9490 19641,9411 19634,9292 19628,9194 19626,9171 19621,9097
 Zwieseler Str.: Beton	Q0 19669,9876 19683,10031 19688,10094 19697,10210 19711,10426
-(Verlängerung der Zwieseler Str.): Asphalt mit Schäden	Q1 19621,9097 19638,9070 19705,9039
+(Verlängerung der Zwieseler Str.): Kleinsteinpflaster	Q1- 19621,9097 19638,9070
+(Verlängerung der Zwieseler Str.): Asphalt mit Schäden	Q1 19638,9070 19705,9039
 Bodenmaiser Weg: Asphalt	Q1+ 19406,9236 19488,9223 19628,9194
 Robert-Siewert-Str.: Asphalt mit Schäden	Q1 19669,9876 19842,9895
 Beerfelder Str.: unbefestigte, holprige Straße	Q2 19842,9895 19819,10090 19810,10155
@@ -10151,7 +10153,7 @@ Fischerstr.: Asphaltschäden	Q1+ 16423,10259 16492,10163 16539,10097
 (Weg westlich der Freilichtbühne): neuer Asphalt	Q0 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
 # REMOVED (Bauarbeiten beendet) --- #: XXX nach den Bauarbeiten wieder entfernen --- #: last_checked: 2013-08-03 --- #: next_check: 2013-10-03 --- (Umleitungsstrecke für das Paul-und-Paula-Ufer): Schotterweg	Q2+ 15056,10625 14930,10646
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1- 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
-(Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2+ 19407,6660 19515,6934 19599,7075
+(Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen möglich	Q2+ 19407,6660 19515,6934 19599,7075
 (Steffelbauerstr. - Wuhlheide): Asphalt	Q0 19594,6155 19606,6182 19617,6208 19751,6514 19810,6634 19914,6865 19931,6903 19997,6935
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10037,15421 10052,15429 10070,15438 10076,15455 10092,15461 10105,15454 10127,15463 10155,15473 10186,15481
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
@@ -11677,7 +11679,7 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 (Waldpark Steinberg und am Steinbergsee): Waldweg	Q2+ 3656,21196 3562,21089
 (Maienwerderweg/Bernauer Str. - um den Flughafen Tegel): Waldweg	Q2+ 281,17236 397,16906
 (Weg in der Wuhlheide): guter Waldweg	Q1- 19161,7109 19515,6934
-(Weg in der Wuhlheide): Waldweg	Q2+ 19515,6934 19691,6904 19895,6872 19914,6865
+(Weg in der Wuhlheide): Waldweg, ein paar Wurzeln	Q2+ 19515,6934 19691,6904 19895,6872 19914,6865
 (Weg in der Wuhlheide): Asphalt	Q0 19914,6865 20156,6799 20244,6748 20269,6735
 (Goeckestr. - Neustrelitzer Str.): Betonpflaster und Rassengitter	Q1- 16354,14928 16448,14831
 (Zum Kiesgrund - Tongrubenweg): Waldweg, einige sandige Stellen	Q3+ 28392,1943 28352,1922 28322,1944 28253,1960
@@ -12057,6 +12059,7 @@ Bergiusstr. - Grenzallee: asphaltiert	Q0 14150,6609 14137,6658 14179,6714 14179,
 (Campus AF 60): Verbundsteinpflaster	Q1+ 18966,11676 18965,11692 18965,11706 18964,11719
 (Campus AF 60): Verbundsteinpflaster	Q1+ 18965,11692 18984,11719
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7732,14131 7866,14215
+Am Bahnhof Wuhlheide: Betonpflaster	Q0- 20430,7122 20524,7176 20533,7199 20575,7226
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -15696,7 +15699,7 @@ Burgwallstr.: Asphalt	Q0 13107,21357 13136,21419 13158,21471 13171,21532 13177,2
 Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q3+ 13177,21595 13182,21639 13193,21700
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: XXX provisorische Wegführung; nach den Bauarbeiten den alten Eintrag wiederherstellen!
-#: last_checked: 2021-01-17 (mapillary)
+#: last_checked: 2021-02-25 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-01-01
 Burgwallstr.: Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke ertüchtigt	Q2 13193,21700 13220,21761 13270,21870 13315,21969
@@ -23704,7 +23707,7 @@ Kreideweg: guter Asphalt	Q0 10748,2233 10840,2196 10886,2167
 #: XXX wird der Weg hier verbessert, im Zuge von Berlin-Leipzig?
 #: XXX Baumaßnahme GL6.24 (Realisierung nach 2011)
 #: osm_watch: way id="26714602" version="4"
-#: last_checked: 2020-06-21
+#: last_checked: 2021-02-20
 #: check_frequency: 300d
 (Jenbacher Weg - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	Q2 6233,412 6256,363
 #: by: ^^^
@@ -28170,6 +28173,7 @@ Sprengelstr. (Wilhelmstadt): Gehwegplatten	Q1+ -4026,12720 -4119,12763
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9973 (Baubeginn war für 2020 geplant)
 #: by: https://wilhelmstadt-bewegt.de/category/baustellen-ticker-betckestrasse/ (2021-02-10: noch keine Infos)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022; Asphaltierung)
+#: by: https://www.berliner-woche.de/spandau/c-bauen/spandau-erneuert-bis-2025-das-rathaus-schulen-strassen-und-friedhoefe_a307134
 #: XXX geplanter Umbau der Straße --- Asphaltiertung ist geplant
 #: last_checked: 2020-10-12
 #: check_frequency: 360d

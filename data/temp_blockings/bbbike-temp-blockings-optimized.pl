@@ -835,7 +835,30 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.laubinger.de/event/28-heimatfest-erkner/ (Absage 2020)
+#: by: https://www.laubinger.de/event/28-heimatfest-erkner/?date=20210415 (2021)
+	2::temp 34421,1950 34359,2165 34250,2546
+',
+         'from' => 1630533600,
+         'id' => 2078,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              5,
+                              'start',
+                              '2020-06-08T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.erkner.de/271.html?date=20190415',
+         'text' => 'Erkner: Heimatfest, 3.9.2021 bis 5.9.2021',
+         'type' => 'gesperrt',
+         'until' => 1630893600
+       },
        undef,
        undef,
        undef,
@@ -2301,7 +2324,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-04-08
+#: last_checked: 2021-04-14 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -2736,7 +2759,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-13
+#: last_checked: 2021-04-15
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2869,23 +2892,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: mapillary
-#: by: https://www.gruene-fraktion-brandenburg.de/im-parlament/kleine-anfragen/2019/fehlender-lueckenschluss-bei-radweg-an-der-b-198/
-#: by: https://www.moz.de/landkreise/barnim/eberswalde/artikel4/dg/0/1/1735352/ (Realisierung eines Radwegs frühestens 2022)
-#: by: https://www.moz.de/landkreise/uckermark/schwedt-und-angermuende/artikel90/dg/0/1/1817154/ (Bauarbeiten am Ziethener Kreuz bis Ende des Jahres (2020))
-#: source_id: LS/721-E/20/050
-#: XXX wie lange gilt das Verbot?
-#: last_checked: 2020-08-22
-#: next_check: 2021-04-15
-	2 48469,65641 47875,64281 47564,63557
-',
-         'from' => undef,
-         'id' => 3268,
-         'text' => 'B2/B198: Richtung Süden Radfahren verboten',
-         'type' => 'gesperrt',
-         'until' => 1618498800
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/spandau/c-verkehr/radler-muessen-runter-vom-sattel_a177230
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20090917.1110.139163.html
@@ -3244,7 +3251,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-04-06
+#: last_checked: 2021-04-15
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738

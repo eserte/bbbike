@@ -765,8 +765,9 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr	RW1; 10427,968 10379,1097 
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 15-18 Uhr	RW1; 9720,2887 9621,3155 9489,3525 9462,3642 9455,3671
 für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 10067,1939 10127,1778 10172,1657 10226,1515 10239,1481 10276,1383 10329,1231
 	RW2; 10329,1231 10379,1097 10427,968
-holpriges Verbundsteinpflaster	RW1; 10427,968 10485,807 10539,662 10590,525 10617,452 10620,445 10638,403 10676,299 10713,197 10737,132 10753,83 10782,-24 10793,-161
-	RW1; 10620,445 10617,452 10590,525 10539,662 10485,807 10427,968
+holpriges Verbundsteinpflaster	RW1; 10427,968 10485,807 10522,708 10539,662 10590,525 10617,452 10620,445 10638,403 10676,299 10713,197 10737,132 10753,83 10782,-24 10793,-161
+	RW1; 10620,445 10617,452 10590,525 10539,662 10522,708
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 10522,708 10485,807 10427,968
 	RW1; 10782,-24 10753,83 10737,132 10713,197 10676,299 10638,403 10620,445
 	RW1; 9003,3947 9021,3878
 	RW1;RW1 9021,3878 9051,3692
@@ -1542,7 +1543,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2021-04-03 vvv
+#: last_checked: 2021-04-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -1968,7 +1969,7 @@ neu asphaltiert	RW1; 5136,21738 5210,21636 5311,21495
 	RW3; 5343,21250 5341,21266 5333,21332
 #: next_check_id: ORANIENBURGERNORD-2018
 #: XXX Radspuren existieren, sind aber per Gelbmarkierung ungültig gemacht
-#: last_checked: 2021-01-18 (mapillary)
+#: last_checked: 2021-04-14 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 5333,21332 5341,21266 5343,21250
 	RW4; 5333,21332 5320,21432 5311,21495 5210,21636 5136,21738

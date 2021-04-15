@@ -3271,14 +3271,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: check_frequency: 30d
 (Breiter Weg - Südostallee/Sterndamm): Durchgang ist wegen Bauarbeiten gesperrt	2::inwork 17538,5301 17601,5374
 # 
-#: next_check_id: NORD52-2019
-#: last_checked: 2021-02-24 vvv
-#: check_frequency: 90d vvv
-#: osm_watch: way id="630987121" version="9"
-Ankerweg: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22118,2559 22159,2585 22197,2612
-An der Dahme: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22197,2612 22270,2549
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (laut osm mittlerweile offen) --- #: next_check_id: NORD52-2019 --- #: last_checked: 2021-02-24 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2021-04-14 vvv --- #: osm_watch: way id="630987121" version="10" --- Ankerweg: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22118,2559 22159,2585 22197,2612 --- #: osm_watch: way id="353948101" version="11" --- An der Dahme: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22197,2612 22270,2549 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016
@@ -3313,7 +3306,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: check_frequency: 60d
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 # 
-#: last_checked: 2021-03-31 vvv
+#: last_checked: 2021-04-15 vvv
 #: check_frequency: 30d vvv
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16841,9997
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922
@@ -3329,7 +3322,7 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 # 
 #: XXX evtl. wird nach den Bauarbeiten die Qualität besser sein
 #: osm_watch: way id="141309175" version="9"
-#: last_checked: 2021-03-01 (osm)
+#: last_checked: 2021-04-15 (mapillary)
 #: check_frequency: 60d
 Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708,11918 20738,11915
 # 

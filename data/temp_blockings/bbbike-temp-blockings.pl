@@ -18060,15 +18060,16 @@ EOF
 	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
 EOF
      },
-     { from  => $isodate2epoch->("2019-05-16 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-05-20 04:00:00"), # bis in die Nacht hinein
+     { from  => $isodate2epoch->("2021-09-02 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-09-06 04:00:00"), # bis in die Nacht hinein
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 5, start => "2020-06-08T00:00:00"]], # kann auch erst im September stattfinden
        source_id => 'http://www.erkner.de/271.html?date=20190415',
-       text  => 'Erkner: Heimatfest, 17.5.2019 bis 19.5.2019',
+       text  => 'Erkner: Heimatfest, 3.9.2021 bis 5.9.2021',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.laubinger.de/event/28-heimatfest-erkner/ (Absage 2020)
+#: by: https://www.laubinger.de/event/28-heimatfest-erkner/?date=20210415 (2021)
 	2::temp 34421,1950 34359,2165 34250,2546
 EOF
      },
@@ -21726,7 +21727,7 @@ EOF
        text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2019 bis 05.05.2019)',
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 4, start => "2020-05-06T00:00:00"]],
-       recurrence_prewarn_days => 14, # wegen Corona
+       recurrence_prewarn_days => 1, # wegen Corona
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (ja) --- #: XXX wird die Veranstaltung noch abgesagt? --- #: next_check: 2020-04-23
@@ -28593,7 +28594,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-04-08
+#: last_checked: 2021-04-14 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -30854,7 +30855,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-13
+#: last_checked: 2021-04-15
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32119,7 +32120,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-04-06
+#: last_checked: 2021-04-15
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738

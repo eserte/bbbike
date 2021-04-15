@@ -38,14 +38,7 @@
 #: check_frequency: 60d
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q3::inwork 12926,11224 12848,11093
 # 
-#: source_id: 2147346950 (bis 31.5.2021)
-#: also_indoor: traffic (G)
-#: last_checked: 2021-04-08
-#: check_frequency: 14d
-#: next_check: 2021-05-31
-#: valid: -20210531
-Am Rudolfplatz: etwa 35m Fahrbahn vor der Modersohnstr. gesperrt, Ausweichen auf Gehweg	q3::inwork 14011,10812 13896,10851
-# 
+# REMOVED (feritg) --- #: source_id: 2147346950 (bis 31.5.2021) --- #: also_indoor: traffic (G) --- #: last_checked: 2021-04-08 --- #: check_frequency: 14d --- #: next_check: 2021-05-31 --- #: valid: -20210531 --- Am Rudolfplatz: etwa 35m Fahrbahn vor der Modersohnstr. gesperrt, Ausweichen auf Gehweg	q3::inwork 14011,10812 13896,10851
 # REMOVED (Fahrräder kommen durch) --- #: next_check_id: GUBENER-2019 --- #: priority: #A --- #: last_checked: 2019-07-03 --- #: check_frequency: 2d --- Gubener Str.: Fahrbahn wegen Asphaltierungsarbeiten Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13326,12056 13243,12222
 # REMOVED (Durchfahrt möglich) --- #: last_checked: 2019-05-12 --- #: check_frequency: 30d --- Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # REMOVED (wieder offen) --- #: last_checked: 2018-08-23 --- #: check_frequency: 3d --- Simplonstr.: Fahrbahn zwischen Matkowskystr. und Helmerdingstr. gesperrt, Ausweichen auf Gehweg, Bordstein	q3::inwork 14531,11142 14468,11203
@@ -724,6 +717,14 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 # REMOVED (fertig, noch immer KS) --- #: next_check_id: FRIEDEL-2014 --- #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht? --- #: last_checked: 2014-12-12 --- #: check_frequency: 60d --- Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
 ### Lichtenberg ###
+# 
+#: XXX laut rbb und Halteverbotsschildern bis 31.08.2021
+#: also_indoor: traffic (H)
+#: last_checked: 2021-04-08 (mapillary)
+#: check_frequency: 30d
+#: next_check: 2021-08-31
+#: valid: -20210831
+Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweichen	q3::inwork 15055,11505 15126,11474 15162,11458
 # 
 # REMOVED (fertig) --- #: next_check_id: KYNASTSTRASSE-2018 --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50705 --- #: XXX mittlerweile steht sogar schon an der Straße Alt-Stralau ein "Radfahren verboten"-Schild --- #: source_id: 2147343461 (bis Mitte Juni 2019) --- #: note: laut fritz bis Ende August 2019 --- #: priority: #A --- #: also_indoor: traffic (H) --- #: last_checked: 2019-07-06 --- #: next_check: 2019-08-31 --- #: valid: -20190831 --- Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis Mitte Juni 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
 # REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: XXX laut vmz bis Ende Dezember 2018, Gesamtmaßnahme bis März 2019 laut fritz bis 25.01.2019 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: -20190125 --- Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 15335,11943
@@ -1426,7 +1427,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="6"
-#: last_checked: 2021-02-23
+#: last_checked: 2021-04-14 (mapillary)
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268

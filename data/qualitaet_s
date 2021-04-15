@@ -2818,7 +2818,7 @@ Am Kupfergraben: Kopfsteinpflaster	Q2 9870,12657 9900,12643 9919,12613
 Bopparder Str.: mäßiger Beton	Q1 18790,9018 18881,9002
 Sinziger Str.: Beton	Q1 18886,9031 18978,9014
 Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
-Wiesengrundstr. (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
+Wiesengrundstr. (Karlshorst): Schotterstraße	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
 Wiesengrundstr. (Karlshorst): Asphalt	Q0 19898,8410 19964,8447 20046,8448
 Agavensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19550,8230 19723,8068 19746,8042 19892,7917 20031,7794
 Agavensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19723,8068 19725,8122 19734,8182 19759,8212
@@ -3728,7 +3728,8 @@ Römerweg: Beton	Q0 19236,9710 19450,9728 19459,9842
 Römerweg: Asphalt	Q1 19599,9747 19663,9757
 Zwieseler Str.: sehr guter Asphalt	Q0 19669,9876 19663,9757 19657,9666 19646,9490 19641,9411 19634,9292 19628,9194 19626,9171 19621,9097
 Zwieseler Str.: Beton	Q0 19669,9876 19683,10031 19688,10094 19697,10210 19711,10426
-(Verlängerung der Zwieseler Str.): Asphalt mit Schäden	Q1 19621,9097 19638,9070 19705,9039
+(Verlängerung der Zwieseler Str.): Kleinsteinpflaster	Q1 19621,9097 19638,9070
+(Verlängerung der Zwieseler Str.): Asphalt mit Schäden	Q1 19638,9070 19705,9039
 Bodenmaiser Weg: Asphalt	Q1 19406,9236 19488,9223 19628,9194
 Robert-Siewert-Str.: Asphalt mit Schäden	Q1 19669,9876 19842,9895
 Beerfelder Str.: unbefestigte, holprige Straße	Q2 19842,9895 19819,10090 19810,10155
@@ -8857,7 +8858,7 @@ Fischerstr.: Asphaltschäden	Q1 16423,10259 16492,10163 16539,10097
 (Grüne Trift am Walde - Müggelheimer Damm/Salvador-Allende-Str.): Waldweg	Q1 23412,3766 23368,3894
 (Weg westlich der Freilichtbühne): neuer Asphalt	Q0 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
-(Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2 19407,6660 19515,6934 19599,7075
+(Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen möglich	Q2 19407,6660 19515,6934 19599,7075
 (Steffelbauerstr. - Wuhlheide): Asphalt	Q0 19594,6155 19606,6182 19617,6208 19751,6514 19810,6634 19914,6865 19931,6903 19997,6935
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10037,15421 10052,15429 10070,15438 10076,15455 10092,15461 10105,15454 10127,15463 10155,15473 10186,15481
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
@@ -10256,7 +10257,7 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 (Waldpark Steinberg und am Steinbergsee): Waldweg	Q2 3656,21196 3562,21089
 (Maienwerderweg/Bernauer Str. - um den Flughafen Tegel): Waldweg	Q2 281,17236 397,16906
 (Weg in der Wuhlheide): guter Waldweg	Q1 19161,7109 19515,6934
-(Weg in der Wuhlheide): Waldweg	Q2 19515,6934 19691,6904 19895,6872 19914,6865
+(Weg in der Wuhlheide): Waldweg, ein paar Wurzeln	Q2 19515,6934 19691,6904 19895,6872 19914,6865
 (Weg in der Wuhlheide): Asphalt	Q0 19914,6865 20156,6799 20244,6748 20269,6735
 (Goeckestr. - Neustrelitzer Str.): Betonpflaster und Rassengitter	Q1 16354,14928 16448,14831
 (Zum Kiesgrund - Tongrubenweg): Waldweg, einige sandige Stellen	Q3 28392,1943 28352,1922 28322,1944 28253,1960
@@ -10578,6 +10579,7 @@ Bergiusstr. - Grenzallee: asphaltiert	Q0 14150,6609 14137,6658 14179,6714 14179,
 (Campus AF 60): Verbundsteinpflaster	Q1 18966,11676 18965,11692 18965,11706 18964,11719
 (Campus AF 60): Verbundsteinpflaster	Q1 18965,11692 18984,11719
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1 7732,14131 7866,14215
+Am Bahnhof Wuhlheide: Betonpflaster	Q0 20430,7122 20524,7176 20533,7199 20575,7226
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
