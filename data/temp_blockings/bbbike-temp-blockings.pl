@@ -23134,13 +23134,13 @@ EOF
      { from  => $isodate2epoch->("2019-04-28 00:00:00"),
        until => $isodate2epoch->("2019-05-02 02:00:00"),
        periodic => 1,
-       recurrences => [['yearly', days => 30, months => 4, start => "2020-05-03T00:00:00"]],
-       recurrence_prewarn_days => 14, # wegen Corona
+       recurrences => [['yearly', days => 30, months => 4, start => "2021-05-03T00:00:00"]],
        text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung des DGB), am 1. Mai 2019',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
        data  => <<EOF,
 #: by: https://www.dgb.de/termine/++co++8f919aec-3095-11ea-93f3-52540088cada (2020 abgesagt)
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20210416 (Mai-Kundgebung auf dem Platz des 18. März vor dem Brandenburger Tor findet [2021] ... nicht statt)
 #: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
 	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 	2::inwork 8573,12325 8540,12420
@@ -27724,7 +27724,7 @@ EOF
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
 #: also_indoor: traffic (G)
 #: priority: #B
-#: last_checked: 2021-03-29
+#: last_checked: 2021-04-15 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-03-26
 	q3::inwork 13391,16436 13630,16629
@@ -31044,7 +31044,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2021-02-17
+#: last_checked: 2021-04-15 (mapillary)
 #: check_frequency: 45d
 	q4::inwork 14136,17170 13996,16959
 EOF
@@ -31084,19 +31084,17 @@ EOF
      { from  => 1594635120, # 2020-07-13 12:12
        until => $isodate2epoch->("2022-05-31 18:00:00"), # 1615996800, # 2021-03-17 17:00
        dont_check_date => 1,
-       text  => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vor der Schöneberger Str. in beide Richtungen gesperrt, vom 14.07.2020 12:12 Uhr bis 18.05.2021 17:00 Uhr',
+       text  => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vom 14.07.2020 12:12 Uhr bis 18.05.2021 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147346108', # bis 17.3.2021, mittlerweile inaktiv, dann wieder bis 18.5.2021
        data  => <<EOF,
 #: note: laut Baustellenschild der Wasserbetriebe bis Mai 2022
-#: source_id: 2147346999 (Abschnitt zwischen Alsenstr. und Schöneberger Str., bis 16.4.2021)
+#: source_id: 2147346999 (Abschnitt zwischen Alsenstr. und Schöneberger Str., bis 16.4.2021) (inaktiv)
 #: also_indoor: traffic (H)
 #: last_checked: 2021-02-20 (mapillary)
 #: next_check: 2021-05-18
 	q4::inwork; 5244,6261 5390,6299 5560,6344
-#: XXX ist der Radverkehr hier noch betroffen?
-#: by: mapillary
-	q4::inwork 5560,6344 5582,6360
+# REMOVED --- #: XXX ist der Radverkehr hier noch betroffen? --- #: by: mapillary ---	q4::inwork 5560,6344 5582,6360
 EOF
      },
      { from  => $isodate2epoch->("2020-07-06 00:00:00"),
@@ -31940,7 +31938,7 @@ EOF
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-03-08 (mapillary)
+#: last_checked: 2021-04-11 (architektur-urbanistik)
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 EOF
@@ -32094,11 +32092,12 @@ EOF
 EOF
      },
      { from  => 1613763246, # 2021-02-19 20:34
-       until => 1618610400, # 2021-04-17 00:00
+       until => 1618593299, # 1618610400, # 2021-04-17 00:00
        text  => 'Kaiserin-Augusta-Str.: zwischen Theodorstr. und Kreisverkehr Metzplatz Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, bis 16.04.2021',
        type  => 'handicap',
        data  => <<EOF,
 #: by: rbbtext
+#: note: Einbahnstraße, vermutlich Radfahrer frei
 	q4::inwork 9363,5903 9291,5908
 EOF
      },
@@ -32342,14 +32341,20 @@ EOF
 #: tempex ^^^
 EOF
      },
-     { from  => 1618610400, # 2021-04-17 00:00
-       until => 1640991599, # 2021-12-31 23:59
-       text  => 'Burgfrauenstr.: Bauarbeiten zwischen Hohefeldstr. und Berliner Str., Fahrbahn gesperrt, voraussichtlich vom 18.4.2021 bis Ende 2021',
+     { from  => $isodate2epoch->("2021-04-18 00:00:00"), # 1618610400, # 2021-04-17 00:00
+       until => $isodate2epoch->("2021-06-30 00:00:00"), # 1640991599, # 2021-12-31 23:59
+       text  => 'Burgfrauenstr.: Bauarbeiten zwischen Hohefeldstr. und Olafstr., Fahrbahn gesperrt, vom 19.4.2021 bis 30.6.2021',
        type  => 'handicap',
-       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1073307.php',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1073307.php', # Gesamtmaßnahme bis Ende 2021
        data  => <<EOF,
-#: note: zwei Bauabschnitte: zunächst der westliche Abschnitt bis Olafstr. (inkl. Kreuzung), danach der östliche Abschnitt
-	q4::inwork 3022,24393 3225,24431 3425,24469 3575,24498 3712,24528 3842,24556
+#: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/burgfrauenstrasse-ab-19-april-gesperrt_a306720
+#: source_id: 2147347107 (hier: bis 30.6.2021)
+#: note: zwei Bauabschnitte: zunächst der westliche Abschnitt bis Olafstr. (inkl. Kreuzung), danach der östliche Abschnitt bis Berliner Str.
+#: priority: #A
+#: next_check: 2021-06-30
+	q4::inwork 3022,24393 3225,24431 3425,24469
+	q3::inwork 3425,24469 3575,24498
+# REMOVED (dieser Bereich folgt später) ---	q4::inwork 3575,24498 3712,24528 3842,24556
 EOF
      },
      { from  => 1616918460, # 2021-03-28 10:01
@@ -32379,6 +32384,15 @@ EOF
 #: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?
 #: last_checked: 2021-04-13
 	q4::inwork; 9195,11972 9207,11880 9218,11793
+EOF
+     },
+     { from  => 1618696800, # 2021-04-18 00:00
+       until => 1662069600, # 2022-09-02 00:00
+       text  => 'Ortsdurchfahrt Kerkow: Bauarbeiten und Ersatzneubau Brücke, möglicherweise auch für Radfahrer gesperrt, vom 19.04.2021 bis 01.09.2022',
+       type  => 'gesperrt',
+       source_id => 'LS/721-E/21/032',
+       data  => <<EOF,
+	2::inwork 49011,71344 48996,71176 48982,71121 48929,70947 49089,70562 49253,70168
 EOF
      },
     );

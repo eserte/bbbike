@@ -2171,7 +2171,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht\'s nur auf dem Gehweg weiter
 #: also_indoor: traffic (G)
 #: priority: #B
-#: last_checked: 2021-03-29
+#: last_checked: 2021-04-15 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-03-26
 	q3::inwork 13391,16436 13630,16629
@@ -2814,7 +2814,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2021-02-17
+#: last_checked: 2021-04-15 (mapillary)
 #: check_frequency: 45d
 	q4::inwork 14136,17170 13996,16959
 ',
@@ -2829,20 +2829,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Mai 2022
-#: source_id: 2147346999 (Abschnitt zwischen Alsenstr. und Schöneberger Str., bis 16.4.2021)
+#: source_id: 2147346999 (Abschnitt zwischen Alsenstr. und Schöneberger Str., bis 16.4.2021) (inaktiv)
 #: also_indoor: traffic (H)
 #: last_checked: 2021-02-20 (mapillary)
 #: next_check: 2021-05-18
 	q4::inwork; 5244,6261 5390,6299 5560,6344
-#: XXX ist der Radverkehr hier noch betroffen?
-#: by: mapillary
-	q4::inwork 5560,6344 5582,6360
+# REMOVED --- #: XXX ist der Radverkehr hier noch betroffen? --- #: by: mapillary ---	q4::inwork 5560,6344 5582,6360
 ',
          'dont_check_date' => 1,
          'from' => 1594635120,
          'id' => 3258,
          'source_id' => '2147346108',
-         'text' => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vor der Schöneberger Str. in beide Richtungen gesperrt, vom 14.07.2020 12:12 Uhr bis 18.05.2021 17:00 Uhr',
+         'text' => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vom 14.07.2020 12:12 Uhr bis 18.05.2021 17:00 Uhr',
          'type' => 'handicap',
          'until' => 1654012800
        },
@@ -3135,7 +3133,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-03-08 (mapillary)
+#: last_checked: 2021-04-11 (architektur-urbanistik)
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 ',
@@ -3237,16 +3235,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: rbbtext
-	q4::inwork 9363,5903 9291,5908
-',
-         'from' => 1613763246,
-         'id' => 3334,
-         'text' => 'Kaiserin-Augusta-Str.: zwischen Theodorstr. und Kreisverkehr Metzplatz Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, bis 16.04.2021',
-         'type' => 'handicap',
-         'until' => 1618610400
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
@@ -3444,15 +3433,21 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '#: note: zwei Bauabschnitte: zunächst der westliche Abschnitt bis Olafstr. (inkl. Kreuzung), danach der östliche Abschnitt
-	q4::inwork 3022,24393 3225,24431 3425,24469 3575,24498 3712,24528 3842,24556
+         'data' => '#: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/burgfrauenstrasse-ab-19-april-gesperrt_a306720
+#: source_id: 2147347107 (hier: bis 30.6.2021)
+#: note: zwei Bauabschnitte: zunächst der westliche Abschnitt bis Olafstr. (inkl. Kreuzung), danach der östliche Abschnitt bis Berliner Str.
+#: priority: #A
+#: next_check: 2021-06-30
+	q4::inwork 3022,24393 3225,24431 3425,24469
+	q3::inwork 3425,24469 3575,24498
+# REMOVED (dieser Bereich folgt später) ---	q4::inwork 3575,24498 3712,24528 3842,24556
 ',
-         'from' => 1618610400,
+         'from' => 1618696800,
          'id' => 3357,
          'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1073307.php',
-         'text' => 'Burgfrauenstr.: Bauarbeiten zwischen Hohefeldstr. und Berliner Str., Fahrbahn gesperrt, voraussichtlich vom 18.4.2021 bis Ende 2021',
+         'text' => 'Burgfrauenstr.: Bauarbeiten zwischen Hohefeldstr. und Olafstr., Fahrbahn gesperrt, vom 19.4.2021 bis 30.6.2021',
          'type' => 'handicap',
-         'until' => 1640991599
+         'until' => 1625004000
        },
        {
          'data' => '#: note: laut rbb nur stadtauswärts
@@ -3485,6 +3480,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Glinkastr.: zwischen Jägerstr. und Mohrenstr. Einbahnstraßenregelung, gesperrt Richtung Süden auch für Radfahrer',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	2::inwork 49011,71344 48996,71176 48982,71121 48929,70947 49089,70562 49253,70168
+',
+         'from' => 1618696800,
+         'id' => 3361,
+         'source_id' => 'LS/721-E/21/032',
+         'text' => 'Ortsdurchfahrt Kerkow: Bauarbeiten und Ersatzneubau Brücke, möglicherweise auch für Radfahrer gesperrt, vom 19.04.2021 bis 01.09.2022',
+         'type' => 'gesperrt',
+         'until' => 1662069600
        }
      
 );

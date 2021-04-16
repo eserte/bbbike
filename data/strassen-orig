@@ -13927,7 +13927,7 @@ Wulfila-Ufer	NN 8750,5173 9118,5328 9145,5323 9188,5333
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_12_0821_0896_online.pdf (Benennung)
 #: XXX Weg bekommt einen Namen: Gerda-und-Wolfgang-Szepansky-Promenade
 #: osm_watch: way id="28048692" version="16"
-#: last_checked: 2021-04-10
+#: last_checked: 2021-04-16
 # REMOVED --- #: next_check: 2021-03-26
 (Am Teltowkanal, südl. Ufer)	NN 9196,5272 9171,5263 9080,5225 8881,5143 8784,5095
 (Am Teltowkanal, südl. Ufer)	NN 8784,5095 8618,5019 8598,4985 8575,4980 8234,4660 7994,4430
@@ -19378,10 +19378,13 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: osm.highway: service
 (Zufahrt Erika-Heß-Eisstadion)	NN 8138,14786 8015,14685 8015,14650
 # 
-#: osm.highway: service
 #: by: https://www.bahninfo-forum.de/file.php?9,file=15098
-#: valid: 20210307-
-(Zufahrt Impfzentrum Flughafen Tempelhof)	N 9268,8029 9273,7920 9380,7919 9653,8480
+#: osm.highway: service vvv
+#: valid: 20210307- vvv
+(Zufahrt Impfzentrum Flughafen Tempelhof)	N 9268,8029 9276,7823 9426,7827 9653,8480
+(Zufahrt Impfzentrum Flughafen Tempelhof)	N 9240,7811 9276,7823
+#: valid ^^^
+#: osm.highway ^^^
 # 
 #: next_check_id: STRD17JUNI-2021
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_01_0001_0080_online.pdf (geplant ab 15.3.2021 bis März 2025)
