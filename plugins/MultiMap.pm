@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.64;
+$VERSION = 1.65;
 
 use vars qw(%images);
 
@@ -206,6 +206,12 @@ sub register {
 	{ name => 'berliner-linien.de (VBB)',
 	  callback => sub { showmap_berlinerlinien(@_) },
 	  callback_3_std => sub { showmap_url_berlinerlinien(@_) },
+	};
+    $main::info_plugins{__PACKAGE__ . 'SentinelHub'} =
+	{ name => 'Sentinel Hub',
+	  callback => sub { showmap_sentinelhub(@_) },
+	  callback_3_std => sub { showmap_url_sentinelhub(@_) },
+	  ($images{SentinelHub} ? (icon => $images{SentinelHub}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
 	{ name => 'All Maps',
@@ -590,6 +596,42 @@ qJJ1kERsPyusAxGSeoonII+Mn3bn7FIGvup2BbE0bnd5eRhIC7maxfM1fQBFnCl4k+vnK8pxJF2v
 qtVJT/pkR4R1qR9PmhAJKXOvYQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMS0wMi0yN1QxMDoyMjoz
 OCswMTowMIKPyhoAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjEtMDItMjdUMTA6MjI6MzgrMDE6MDDz
 0nKmAAAAAElFTkSuQmCC
+EOF
+    }
+
+    if (!defined $images{SentinelHub}) {
+	# Fetched https://apps.sentinel-hub.com/sentinel-playground/favicon.ico
+	# Converted with:
+	#   convert -resize 16x16 /tmp/favicon.ico png:- | base64
+	$images{SentinelHub} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+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
 EOF
     }
 }
@@ -1294,6 +1336,23 @@ sub showmap_url_bkg {
 sub showmap_bkg {
     my(%args) = @_;
     my $url = showmap_url_bkg(%args);
+    start_browser($url);
+}
+
+######################################################################
+# Sentinel Hub
+sub showmap_url_sentinelhub {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    $scale = 16 if $scale > 16;
+    sprintf 'https://apps.sentinel-hub.com/sentinel-playground/?source=S2&lat=%f&lng=%f&zoom=%d&preset=1-NATURAL-COLOR&layers=B01,B02,B03&maxcc=31&gain=1.0&gamma=1.0', $py, $px, $scale;
+}
+
+sub showmap_sentinelhub {
+    my(%args) = @_;
+    my $url = showmap_url_sentinelhub(%args);
     start_browser($url);
 }
 
