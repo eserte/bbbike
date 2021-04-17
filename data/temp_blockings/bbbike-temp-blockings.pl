@@ -21823,11 +21823,13 @@ EOF
        until => $isodate2epoch->("2019-05-20 04:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 17, months => 5, start => "2020-06-01T00:00:00"]], # auf 2021 verlegt
+       recurrence_prewarn_days => -20, # wegen Corona
        text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 18.05.2019 bis 20.05.2019 früh',
        type  => 'handicap',
        source_id => 'IM_025248',
        data  => <<EOF,
 #: by: http://www.die-classic-days-berlin.de/programm-2/
+#: by: https://www.berlin.de/events/2902692-2229501-classic-days-berlin.html (voraussichtlich 12.+13.6.2021)
 #: note: kann im Juni oder Juli stattfinden
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
@@ -30255,15 +30257,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1618661092, # undef, # XXX
        text  => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, Ende der Bauarbeiten ist unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: MUENSTERBERGERWEG-2019
-#: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert?
-#: last_checked: 2020-10-31
-#: check_frequency: 120d
-#: next_check: 2021-12-31
+# REMOVED --- #: next_check_id: MUENSTERBERGERWEG-2019 --- #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert? --- #: last_checked: 2020-10-31 --- #: check_frequency: 120d --- #: next_check: 2021-12-31
 	2::inwork 24029,11363 24172,11320
 EOF
      },
@@ -32119,7 +32117,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-04-15
+#: last_checked: 2021-04-17
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32174,7 +32172,7 @@ EOF
      },
      { from  => 1615676400, # 2021-03-14 00:00
        until => 1621115999, # 2021-05-15 23:59
-       text  => 'Pilgramer Str.: Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, ab 15. März 2021 bis ca. 15. Mai 2021',
+       text  => 'Pilgramer Str.: Sperrung der Fahrbahn, Sperrung des westlichen Gehwegs ab Theodorpark bis Straße 48, östlicher Gehweg ist noch offen, ab 15. März 2021 bis ca. 15. Mai 2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1063839.php',
        data  => <<EOF,
@@ -32183,7 +32181,8 @@ EOF
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-zwei-monate-beidseitig-gesperrt_a304101 (Fertigstellung im Mai 2021)
 #: source_id: 2147346982
 #: XXX wie sehr sind Radfahrer betroffen?
-#: next_check: 2021-03-15
+#: last_checked: 2021-04-17
+#: next_check: 2021-05-15
 	q4::inwork 25150,10562 25149,10695 25149,10731 25148,10769 25145,10841
 EOF
      },
@@ -32332,7 +32331,7 @@ EOF
 #: note: keine genauen Zeiten verfügbar
 #: by: https://abendblatt-berlin.de/2021/04/03/neue-feuerwehrwache-und-verwaltungsbueros-fuer-friedrichsfelde/
 #: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
-(Campus AF 60)	2::night:weekend 18619,11463 18638,11479 18702,11480 18740,11480 18762,11496 18794,11504 18961,11546 19035,11550 19159,11546
+(Campus AF 60)	2::night:weekend 18619,11463 18638,11479 18702,11480 18740,11480 18762,11496 18794,11504 18961,11546 19035,11550 19098,11551 19101,11581 19147,11584
 (Campus AF 60)	2::night:weekend 19035,11550 19032,11640 18967,11639 18917,11641 18700,11645 18702,11480
 (Campus AF 60)	2::night:weekend 19000,11719 18984,11719 18964,11719 18919,11720 18798,11707
 (Campus AF 60)	2::night:weekend 18919,11720 18917,11641

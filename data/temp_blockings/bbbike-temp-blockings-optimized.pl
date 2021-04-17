@@ -2649,20 +2649,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: MUENSTERBERGERWEG-2019
-#: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert?
-#: last_checked: 2020-10-31
-#: check_frequency: 120d
-#: next_check: 2021-12-31
-	2::inwork 24029,11363 24172,11320
-',
-         'from' => undef,
-         'id' => 3188,
-         'text' => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, Ende der Bauarbeiten ist unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3240,7 +3227,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-04-15
+#: last_checked: 2021-04-17
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3272,13 +3259,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-zwei-monate-beidseitig-gesperrt_a304101 (Fertigstellung im Mai 2021)
 #: source_id: 2147346982
 #: XXX wie sehr sind Radfahrer betroffen?
-#: next_check: 2021-03-15
+#: last_checked: 2021-04-17
+#: next_check: 2021-05-15
 	q4::inwork 25150,10562 25149,10695 25149,10731 25148,10769 25145,10841
 ',
          'from' => 1615676400,
          'id' => 3342,
          'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1063839.php',
-         'text' => 'Pilgramer Str.: Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, ab 15. März 2021 bis ca. 15. Mai 2021',
+         'text' => 'Pilgramer Str.: Sperrung der Fahrbahn, Sperrung des westlichen Gehwegs ab Theodorpark bis Straße 48, östlicher Gehweg ist noch offen, ab 15. März 2021 bis ca. 15. Mai 2021',
          'type' => 'handicap',
          'until' => 1621115999
        },
@@ -3417,7 +3405,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: note: keine genauen Zeiten verfügbar
 #: by: https://abendblatt-berlin.de/2021/04/03/neue-feuerwehrwache-und-verwaltungsbueros-fuer-friedrichsfelde/
 #: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
-(Campus AF 60)	2::night:weekend 18619,11463 18638,11479 18702,11480 18740,11480 18762,11496 18794,11504 18961,11546 19035,11550 19159,11546
+(Campus AF 60)	2::night:weekend 18619,11463 18638,11479 18702,11480 18740,11480 18762,11496 18794,11504 18961,11546 19035,11550 19098,11551 19101,11581 19147,11584
 (Campus AF 60)	2::night:weekend 19035,11550 19032,11640 18967,11639 18917,11641 18700,11645 18702,11480
 (Campus AF 60)	2::night:weekend 19000,11719 18984,11719 18964,11719 18919,11720 18798,11707
 (Campus AF 60)	2::night:weekend 18919,11720 18917,11641

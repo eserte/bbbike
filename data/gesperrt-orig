@@ -2712,7 +2712,7 @@ Drängelgitter	BNP:3::trailer=10 10173,1049
 Drängelgitter	BNP:3::trailer=10 10223,1029
 Schranke	BNP:0::trailer=5 7222,6436
 Drängelgitter	BNP:3::trailer=10 6129,12976
-#: by: public imagery
+#: note: daneben existiert bereits ein Trampelpfad 
 Drängelgitter	BNP:3::trailer=10 24207,10858
 #: note: enge Führung, mit Anhänger wahrscheinlich nicht oder nur mit Aufwand passierbar vvv
 Drängelgitter	BNP:5::trailer=no 22482,9550
@@ -3067,10 +3067,10 @@ Schranke	BNP:5 -8211,5490
 Kurzschranke	BNP:5 6739,15307
 Schranke	BNP:3 6749,15339
 Schranke	BNP:3 6869,15441
-#: by: popanne: vvv
-Drängelgitter	BNP:5 24759,11666
+# REMOVED --- #: by: popanne: vvv
+# REMOVED (existiert nicht mehr) --- Drängelgitter	BNP:5 24759,11666
 # REMOVED (existiert nicht mehr) --- Drängelgitter	BNP:5 24788,11333
-#: by: ^^^
+# REMOVED --- #: by: ^^^
 #: by: Christian (chrispan):
 Drängelgitter	BNP:5 7925,4477
 Drängelgitter (lichte Breite ca. 80cm)	BNP:8::trailer=no 6526,21015
@@ -3271,7 +3271,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: check_frequency: 45d
 (Weg parallel zur und unter der Minna-Todenhagen-Brücke): mit Bauzäunen abgesperrt	2::inwork 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
 # 
-#: last_checked: 2021-04-01
+#: last_checked: 2021-04-16 (krickstadt)
 #: check_frequency: 30d
 (Breiter Weg - Südostallee/Sterndamm): Durchgang ist wegen Bauarbeiten gesperrt	2::inwork 17538,5301 17601,5374
 # 
@@ -3300,7 +3300,7 @@ Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
 #: osm_watch: way id="610818155" version="4"
-#: last_checked: 2021-04-06
+#: last_checked: 2021-04-17
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
@@ -3326,7 +3326,7 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 # 
 #: XXX evtl. wird nach den Bauarbeiten die Qualität besser sein
 #: osm_watch: way id="141309175" version="9"
-#: last_checked: 2021-04-15 (mapillary)
+#: last_checked: 2021-04-17
 #: check_frequency: 60d
 Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708,11918 20738,11915
 # 
@@ -3347,11 +3347,12 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 #: by: https://twitter.com/Technologiepark/status/1337402031569580032 (Sanierung der Brücke bis 10.12.2021)
 #: by: https://www.deutsches-architekturforum.de/thread/14514-square-1-johannisthal/ (Erwähnung)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/betriebsbahnhof-schoeneweide-ist-geschichte_a296360 (bis Ende 2021)
-#: last_checked: 2021-04-03 vvv
+#: last_checked: 2021-04-16 (krickstadt) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-10 vvv
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
-Gustav-Hertz-Platz: gesperrt, evtl. wegen der Brückenarbeiten?	2::inwork 18722,4628 18656,4687
+Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18722,4628 18656,4687
+Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,4678
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
