@@ -544,7 +544,9 @@ EOF
 	    if ($opt{'perl-ver'}) {
 		push @test_note_cmd, '--feature', 'perl=' . $opt{'perl-ver'};
 	    }
-	    info "Use the following as test note command:\n\tgit-test-note @test_note_cmd\n";
+	    if (!$doit->is_dry_run) {
+		info "Use the following as test note command:\n\tgit-test-note @test_note_cmd\n";
+	    }
 	}
 
 	if (@errors) {
