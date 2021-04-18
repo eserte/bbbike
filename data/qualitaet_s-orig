@@ -955,7 +955,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-04-15
+#: last_checked: 2021-04-18
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3352,8 +3352,8 @@ Wendlandzeile: mäßiger Beton	Q1 6500,7172 6517,7260 6608,7306
 (General-Pape-Str. - Wintgensstr.): Asphalt	Q0 8161,7907 8203,7909 8260,7911
 Wüsthoffstr.: etwas Kopfsteinpflaster, Verbundsteinpflaster, Bodenschwellen	Q1 8265,8092 8461,8097
 Achenbachpromenade: wassergebundene Decke und Verbundsteinpflaster	Q1 8763,8780 8748,8587 8722,8527 8715,8459
-(Salzmannstr. - Betriebsbhf. Rummelsburg): mäßiger Beton	Q1 16847,10092 16835,10052 16830,10030 16841,9997
-(Salzmannstr. - Betriebsbhf. Rummelsburg): Asphalt	Q0 16841,9997 16895,9922 16900,9861
+(Salzmannstr. - Betriebsbhf. Rummelsburg): mäßiger Beton	Q1 16847,10092 16835,10052 16830,10030
+(Salzmannstr. - Betriebsbhf. Rummelsburg): Asphalt	Q0 16830,10030 16841,9997 16895,9922 16900,9861
 (Am Kraatzgraben): unebener Asphalt	Q1- 16835,10052 16666,10219 16544,10337
 (Am Kraatzgraben): wassergebundene Decke	Q1- 16544,10337 16488,10381
 (Kolonie Sanssouci): wassergebundene Decke, Feinschotter	Q1- 16488,10381 16375,10545 16288,10637 16265,10628 16246,10641
@@ -8958,7 +8958,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2021-04-11 vvv
+#: last_checked: 2021-04-18 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -12007,7 +12007,8 @@ Schloßplatz: Kleinpflastersteine	Q1- 10175,12435 10271,12503
 (Lustgarten - Schloss): Kleinpflastersteine	Q1- 10155,12494 10175,12435
 (Parkweg - Park Biesdorf): wassergebundene Decke	Q1 20779,11801 20804,11797 20818,11812 20835,11810
 Am Kraatzgraben: Verbundsteinpflaster	Q1 16899,10020 16835,10052
-Betriebsbahnhof Rummelsburg - Am Kraatzgraben: unbefestigt	Q1- 16895,9922 16886,9982 16894,10003
+Betriebsbahnhof Rummelsburg - Am Kraatzgraben: Asphalt	Q0 16895,9922 16886,9982
+Betriebsbahnhof Rummelsburg - Am Kraatzgraben: unbefestigt	Q1- 16886,9982 16894,10003
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: Verbundsteinpflaster	Q1 16894,10003 16899,10020 16912,10054
 Parallelweg am Eichgestell: guter Parkweg	Q1 18134,7173 18908,6834 18944,6870
 Parallelweg am Eichgestell - Wasserwerk Wuhlheide: Parkweg, einige Pfützen möglich	Q1- 18944,6870 19045,6959
