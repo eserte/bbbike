@@ -305,8 +305,7 @@ sub travis_ci {
     my($doit, %opt) = @_;
     lock_keys %opt;
 
-    require Tie::IxHash;
-    tie my %default_env, 'Tie::IxHash',
+    my %default_env =
 	(
 	 # build config
 	 USE_MODPERL                => 1,
@@ -404,7 +403,7 @@ EOF
 
     # apply default environment, possibly changed by --env options
     my %changed_env; # used later for git-test-note feature list
-    for my $key (keys %default_env) {
+    for my $key (sort keys %default_env) {
 	my $val;
 	if (exists $opt{env}->{$key}) {
 	    $val = delete $opt{env}->{$key};
