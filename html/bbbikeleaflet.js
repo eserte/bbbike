@@ -189,7 +189,7 @@ function doLeaflet() {
     var nowYear = new Date().getFullYear();
 
     var bbbikeOrgMapnikGermanUrl = base_map_url + '/{z}/{x}/{y}.png';
-    var bbbikeAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="http://bbbike.de">Slaven ReziÄ</a>';
+    var bbbikeAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="http://bbbike.de">Slaven Rezi\u0107</a>';
     var bbbikeTileLayer = new L.TileLayer(bbbikeOrgMapnikGermanUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
     var bbbikeOrgSmoothnessUrl = smoothness_map_url + '/{z}/{x}/{y}.png';
