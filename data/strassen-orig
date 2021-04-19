@@ -61,9 +61,14 @@ Tempelhofer Damm	HH 9229,8785 9229,8718 9233,8597 9238,8410 9238,8253 9239,8099 
 Möckernstr.	N 8769,9295 8774,9534 8777,9601
 Möckernstr.	NH 8777,9601 8778,9759 8779,9812 8779,9829 8779,9851 8780,9968 8783,10166 8802,10290 8804,10303 8824,10366
 Möckernstr.	N 8824,10366 8878,10514 8926,10626 8941,10663 9022,10857
-#: note: Privatstraße
-#: note: Benennung wurde am 2017-07-01 wirksam
-Möckernkiez	N 8778,9759 8757,9748 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
+#: note: Privatstraße vvv
+#: note: Benennung wurde am 2017-07-01 wirksam vvv
+#: osm.highway: service
+Möckernkiez	N 8778,9759 8757,9748 8735,9737
+#: note: hier Spielstraßenschilder, deshalb kein osm.highway=service
+Möckernkiez	N 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
+#: note ^^^
+#: note ^^^
 (Gleisdreieckpark - Möckernkiez)	NN 8729,9747 8735,9737
 Großbeerenstr. (Kreuzberg)	N 8970,9323 9000,9509 9044,9753 9073,9915 9108,10101 9145,10290 9154,10348 9176,10451 9192,10528 9245,10565
 Kleinbeerenstr.	N 8878,10514 8979,10485
@@ -300,7 +305,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://abendblatt-berlin.de/2021/02/25/berlin-mitte-friedrichstrasse-wird-erneut-umgestaltet/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/naturfreunde-berlin-wollen-nur-fussgaenger-auf-der-friedrichstrasse_a306402
 #: source_id: 2147346249
-#: last_checked: 2021-04-13 vvv
+#: last_checked: 2021-04-19 vvv
 #: next_check: 2021-10-31 vvv
 #: valid: !20200821-20211031
 Friedrichstr. (Mitte, Kreuzberg)	H 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
@@ -1245,7 +1250,7 @@ Mercedes-Platz	NN 12990,11006 13063,11147
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036247069542/247069542/00279027/27-Anlagen/02/DS0254_VzK_BenennungeinerStrassenachFreiaEisne.pdf (erst 2023, nach Umwidmung in eine öffentliche Straße)
 #: XXX Vorschlag: Freia-Eisner-Straße
 #: note: "Privatgelände"
-#: osm_watch: way id="491906864" version="4"
+#: osm_watch: way id="491906864" version="5"
 #: priority: #C
 #: last_checked: 2021-03-19
 #: next_check: 2023-01-01
@@ -14635,7 +14640,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036637679537/637679537/00220602/02-Anlagen/01/1_Version_vom_03_07_2017.pdf (zweite Karte!)
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
-#: osm_watch: way id="38776757" version="13"
+#: osm_watch: way id="38776757" version="14"
 #: last_checked: 2021-04-18 (mapillary)
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
@@ -15011,7 +15016,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: XXX Benennung zu "Am Kraatz-Tränke-Graben" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
-#: osm_watch: way id="51230057" version="15"
+#: osm_watch: way id="51230057" version="16"
 #: last_checked: 2021-04-18 (mapillary)
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html

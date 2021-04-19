@@ -30854,7 +30854,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-18
+#: last_checked: 2021-04-19
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31369,7 +31369,7 @@ EOF
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: XXX wann sind die Bauarbeiten fertig? vvv
 #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
-#: last_checked: 2021-03-20 vvv
+#: last_checked: 2021-04-19 vvv
 #: note: hier von Osten aus legaler gemeinsamer Rad- und Gehweg auf dem Bürgersteig, mit kurzer asphaltierter Rampe, von Westen aus verboten für Fahrzeuge aller Art; mittlerweile existiert kein Gehweg mehr
 #: osm_watch: way id="16096289" version="19"
 	2::inwork 8031,11249 7934,11275 7897,11287

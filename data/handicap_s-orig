@@ -33,7 +33,7 @@
 # REMOVED (Engstelle nun kürzer und nicht mehr so eng) --- #: next_check_id: STRALAUER-2019 --- #: last_checked: 2020-01-24 --- #: check_frequency: 7d --- #: valid: -20200331 --- Stralauer Allee: enger gemeinsamer Geh- und Radweg während der Bauarbeiten	q3::inwork; 14558,10264 14405,10340
 # 
 #: next_check_id: PLANSTRASSEC-2019
-#: osm_watch: way id="491906864" version="4"
+#: osm_watch: way id="491906864" version="5"
 #: last_checked: 2021-03-19
 #: check_frequency: 60d
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q3::inwork 12926,11224 12848,11093
@@ -188,14 +188,12 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # 
 ### Mitte ###
 # 
-#: also_indoor: traffic
-#: last_checked: 2021-04-13
-Singerstr.: Baustelle, etwa 50m Fahrbahn gesperrt	q2::inwork 11613,12408 11497,12463
+# REMOVED --- #: also_indoor: traffic --- #: last_checked: 2021-04-13 --- Singerstr.: Baustelle, etwa 50m Fahrbahn gesperrt	q2::inwork 11613,12408 11497,12463
 # 
 #: osm_watch: way id="822127127" version="1"
 #: osm_watch: way id="736448990" version="7"
-#: last_checked: 2021-01-21
-#: check_frequency: 120d
+#: last_checked: 2021-04-19 (daf)
+#: check_frequency: 90d
 Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
 # 
 #: next_check_id: CHAUSSEE-2020
@@ -298,9 +296,9 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwor
 #: XXX Ende der Bauarbeiten?
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: osm_watch: way id="507023458" version="9"
+#: osm_watch: way id="507023458" version="10"
 #: also_indoor: traffic
-#: last_checked: 2021-04-07 (mapillary)
+#: last_checked: 2021-04-19 (osm)
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -757,10 +755,11 @@ Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweich
 ### Schöneberg ###
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
+#: XXX unklar, ob die Einbahnstraßenregelung für Radfahrer gelten soll
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2021-03-08 vvv
+#: last_checked: 2021-04-19 vvv
 # REMOVED (hier kaum noch Einschränkungen) --- Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
-Bauarbeiten im Kreuzungsbereich	q3::inwork 8159,10430 8058,10306
+Dennewitzstr.: Einbahnstraßenregelung	q3::inwork; 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
 # REMOVED (nicht mehr) --- Pohlstr.: Bauarbeiten, Umfahrung über Gehweg	q3::inwork 8159,10430 7932,10475
 #: last_checked ^^^
@@ -928,7 +927,7 @@ Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
 # 
 #: next_check_id: NKZ-2020
 #: XXX zurzeit Bauarbeiten, nur der Gehweg ist offen (alten Eintrag danach wieder aktivieren); vor Corona-Zeiten gab's außerdem einen großzügigen Restaurantbereich
-#: last_checked: 2021-03-20 vvv
+#: last_checked: 2021-04-19 vvv
 (Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11291,10438 11317,10485
 # REMOVED (Originaleintrag) --- (Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11317,10485 11344,10507
 (Zufahrt am NKZ): Fußgänger/Lieferverkehr, Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11317,10485 11344,10507
