@@ -4506,12 +4506,13 @@ Gravensteinstr.	N 12185,22465 12229,22457 12257,22452 12366,22434 12397,22429 12
 #: note: Privatstraße
 Gravensteinstr. [Wohngebiet]	N 12694,22570 12738,22546 12781,22593 12738,22630
 # 
-#: XXX Teilfläche soll eingezogen werden ---laut Amtsblatt 50/2019 ist das so gut wie die gesamte Straße
+#: next_check_id: ANDERSTREUOBSTWIESE-2021
+#: XXX Teilfläche soll eingezogen werden ---laut Amtsblatt 50/2019 ist das so gut wie die gesamte Straße; könnte was mit den Bauvorhaben "An der Streuobstwiese" zu tun haben
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_50_7633_7832_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_05_0549_0672_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_47_5497_5582_online.pdf (als "ehemalig" bezeichnet, keine Grundstücksnummern mehr)
-#: last_checked: 2020-09-20
-#: check_frequency: 120d
+#: last_checked: 2021-04-19 (mapillary)
+#: check_frequency: 360d
 Straße 171	N 12694,22570 12657,22596 12628,22604
 # 
 Straße 76a	N 12777,22679 12883,22615 12920,22597
@@ -9042,7 +9043,7 @@ Clémentweg	N 11790,22698 11285,23079
 Mühlenstr. (Französisch Buchholz)	N 11790,22698 11936,22570 12004,22526 12040,22519 12187,22486
 Gartenstr. (Französisch Buchholz)	N 12040,22519 11950,22162 11934,22108 11886,21924
 Stephanusring	N 11934,22108 11890,22123 11863,22146 11876,22212 11950,22162
-Bucher Str.	H 12185,23021 12280,23116 12374,23152 12409,23165 12535,23200 12666,23223 12805,23268 12848,23269 12892,23298 12925,23322 12937,23357 13012,23424 13045,23465 13080,23508 13199,23657 13589,24146 13684,24286 14023,24756 14112,24843 14182,24940 14217,24999
+Bucher Str.	H 12185,23021 12280,23116 12374,23152 12409,23165 12535,23200 12666,23223 12805,23268 12882,23312 12915,23337 12937,23357 13012,23424 13045,23465 13080,23508 13199,23657 13589,24146 13684,24286 14023,24756 14112,24843 14182,24940 14217,24999
 Schillerstr. (Niederschönhausen, Rosenthal)	N 10066,20494 10178,20525 10309,20562 10409,20592 10537,20633 10635,20693 10705,20739 10743,20764
 Kreuzgraben	N 10309,20032 10282,20137 10267,20193 10264,20209
 Kreuzgraben	NN 10264,20209 10260,20222 10251,20252
@@ -16807,7 +16808,7 @@ Rhönstr.	N 13598,21360 13415,21442 13371,21462
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-bauen/die-naechsten-schritte-zur-festsetzung-von-bebauungsplaenen-stehen-an_a293341 (Erwähnung)
 #: osm_watch: way id="59573616" version="1"
 #: XXX im Zuge des Bebauungsplans 3-67 VE wird eine neue Planstraße entstehen (vermutlich müssen alle abhängigen Einträge - qualitaet, handicap, nolighting, green - neu evaluiert werden)
-#: last_checked: 2021-02-24 (mapillary)
+#: last_checked: 2021-04-19 (mapillary)
 #: check_frequency: 180d
 (Rhönstr. - Harzburger Str.)	NN 13598,21360 13709,21334
 Eifelstr.	N 13580,21286 13351,21239 13280,21225

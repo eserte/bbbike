@@ -668,8 +668,10 @@ asphaltiert	RW2; 13785,12292 13543,12326
 asphaltiert	RW2; 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 #: note: Karl-Marx-Allee Richtung Osten ab Strausberger Platz
 asphaltiert	RW2; 12114,12546 12134,12540 12352,12509 12592,12472 12603,12470 12878,12430
-neu asphaltiert, 2,5m breit	RW2; 12878,12430 13163,12382 13448,12340 13543,12326
-neu asphaltiert, relativ breit	RW2; 13543,12326 13785,12292
+#: note: leicht wellig nach den frischen Asphaltierungsarbeiten
+neu asphaltiert, ca. 2,3m breit	RW2; 12878,12430 13163,12382 13448,12340 13543,12326
+#: note: erste leichtere Schäden (Hebungen) fangen schon an
+neu asphaltiert, ca. 2,3m breit	RW2; 13543,12326 13785,12292
 # 
 #: note: Strausberger Platz
 	RW2; 11976,12595 11988,12546 12028,12519 12083,12518 12114,12546 12099,12580 12050,12616 12005,12619 11976,12595
@@ -1417,7 +1419,7 @@ Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2021-03-20
+#: last_checked: 2021-04-20
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1430,7 +1432,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: source_id: INKO_113041
 #: source_id: 2147339528 (bis 8.6.2020) (inaktiv)
 #: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2021-03-20
+#: last_checked: 2021-04-20
 #: check_frequency: 60d
 #: next_check: 2021-10-31
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
@@ -1485,7 +1487,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 #: by: https://pbs.twimg.com/media/EWHwSfnXQAAaaO9?format=jpg&name=large
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: XXX temporäre Radwegführung
-#: last_checked: 2021-03-02
+#: last_checked: 2021-04-20
 #: check_frequency: 60d
 temporäre Führung als Bürgersteigradweg	RW1; 10878,12560 10954,12635
 # wieder herstellen:	RW4; 10878,12560 10954,12635
@@ -2124,7 +2126,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Frühjahr 2021)
 #: source_id: 2147346610
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-04-09 vvv
+#: last_checked: 2021-04-20 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
 #: osm_watch: way id="284761029" version="16"
 Radspur hinter den parkenden Autos	RW3; 12006,12464 11920,12266
@@ -5278,7 +5280,7 @@ Verbundsteinpflasterradweg	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by ^^^
 # 
 #: next_check_id: MITTEL-2019
-#: last_checked: 2021-03-31 (architektur-urbanistik)
+#: last_checked: 2021-04-20
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben
 	RW0; 9141,12320 9131,12438 9121,12514
 	RW4; 9131,12438 9141,12320
@@ -6774,6 +6776,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Verstetigung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1074831.php (Verstetigung; 14.4.2021 bis Ende Mai 2021)
+#: by: https://twitter.com/SenUVKBerlin/status/1384420835855900672
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
 #: last_checked: 2021-04-16 vvv
 #: check_frequency: 30d vvv
