@@ -122,6 +122,9 @@ sub map_mode_activate {
 	}
     }
 
+    main::make_net() if (!$main::net);
+    $main::net->reset;
+
     $salesman = new Salesman
 	-net         => $main::net,
 	-addnewpoint => sub { my($net, $point) = @_;
@@ -132,8 +135,6 @@ sub map_mode_activate {
 	-tk          => $main::top,
 	-progress    => $main::progress,
 	-searchargs  => \%main::global_search_args;
-    main::make_net() if (!$main::net);
-    $main::net->reset;
     main::set_cursor('salesman');
 
     my $t = main::redisplay_top($main::top, "salesman-end",
