@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.65;
+$VERSION = 1.66;
 
 use vars qw(%images);
 
@@ -212,6 +212,12 @@ sub register {
 	  callback => sub { showmap_sentinelhub(@_) },
 	  callback_3_std => sub { showmap_url_sentinelhub(@_) },
 	  ($images{SentinelHub} ? (icon => $images{SentinelHub}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . 'StreckenInfo'} =
+	{ name => 'strecken.info',
+	  callback => sub { showmap_streckeninfo(@_) },
+	  callback_3_std => sub { showmap_url_streckeninfo(@_) },
+	  ($images{StreckenInfo} ? (icon => $images{StreckenInfo}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
 	{ name => 'All Maps',
@@ -1353,6 +1359,23 @@ sub showmap_url_sentinelhub {
 sub showmap_sentinelhub {
     my(%args) = @_;
     my $url = showmap_url_sentinelhub(%args);
+    start_browser($url);
+}
+
+######################################################################
+# strecken.info
+sub showmap_url_streckeninfo {
+    my(%args) = @_;
+    my $px = $args{px} * 1e6;
+    my $py = $args{py} * 1e6;
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    $scale = 13 if $scale > 13;
+    sprintf 'http://db-livemaps.hafas.de/bin/query.exe/dn?L=vs_baustellen&tpl=fullscreenmap&mapCenterX=%f&mapCenterY=%f&mapZoom=%d&', $px, $py, $scale;
+}
+
+sub showmap_streckeninfo {
+    my(%args) = @_;
+    my $url = showmap_url_streckeninfo(%args);
     start_browser($url);
 }
 
