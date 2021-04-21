@@ -208,6 +208,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8542,11502 8479,11493 8
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://www.preussischer-kulturbesitz.de/news-detail/article/2020/11/18/kulturforum-bauarbeiten-fuer-museum-des-20-jahrhunderts-der-nationalgalerie-beginnen.html
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/museum-der-moderne-kulturforum.123/page-3#post-14361 (bis 2026?)
+#: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
 #: by: srt
 #: XXX: temporäre Radspur
 #: osm_watch: way id="305483806" version="8"
@@ -2128,11 +2129,11 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
 #: last_checked: 2021-04-20 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
-#: osm_watch: way id="284761029" version="16"
+#: osm_watch: way id="284761029" version="17"
 Radspur hinter den parkenden Autos	RW3; 12006,12464 11920,12266
 mit provisorischen Baken	RW3; 11920,12266 11872,12185 11764,12001
 	RW4; 11764,12001 11872,12185
-#: osm_watch: way id="4616518" version="28"
+#: osm_watch: way id="4616518" version="29"
 Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 Radspur hinter den parkenden Autos	RW3; 12006,12464 12028,12519
 #: last_checked ^^^
@@ -6777,9 +6778,10 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Verstetigung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1074831.php (Verstetigung; 14.4.2021 bis Ende Mai 2021)
 #: by: https://twitter.com/SenUVKBerlin/status/1384420835855900672
+#: by: https://twitter.com/VIZ_Berlin/status/1384862739504500739 (Markierungsarbeiten ab 26.4.2021)
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
 #: last_checked: 2021-04-16 vvv
-#: check_frequency: 30d vvv
+#: check_frequency: 14d vvv
 #: next_check: 2021-05-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="33"

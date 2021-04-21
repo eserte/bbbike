@@ -2929,6 +2929,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: SIGISMUND-2020
 #: next_check_id: MUSEUMDERMODERNE-2021
+#: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
 #: XXX wann sind die Bauarbeiten fertig? vvv
 #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
 #: last_checked: 2021-04-19 vvv
@@ -3227,7 +3228,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-04-17
+#: last_checked: 2021-04-21
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3439,17 +3440,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1625004000
        },
-       {
-         'data' => '#: note: laut rbb nur stadtauswärts
-	q4::inwork; -2934,17594 -3060,17617 -3093,17647
-',
-         'from' => 1616918460,
-         'id' => 3358,
-         'source_id' => '2147347035',
-         'text' => 'Wichernstr.: Bauarbeiten zwischen Niederneuendorfer Allee und Holunderweg, Fahrbahn stadtauswärts gesperrt, vom 29.03.2021 10:01 Uhr bis 03.05.2021 17:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1620054000
-       },
+       undef,
        {
          'data' => '	q3::inwork 1884,11126 1861,11284
 ',

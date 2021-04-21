@@ -36,10 +36,13 @@ my $isodate2epoch = sub {
        until => $isodate2epoch->("2019-06-10 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 47, start => "2020-10-25T00:00:00"]], # zwei Tage vor Pfingsten
+       recurrence_prewarn_days => -60,
        text  => 'Straßenfest rund um den Blücherplatz, 07.06.2019 bis 10.06.2019, Sperrungen fangen schon einen Tag vorher an',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
+#: by: https://www.gratis-in-berlin.de/festivals/item/2009881-strassenfest-am-bluecherplatz-kreuzberg-karneval-der-kulturen (geplant 03.06.2022 bis 06.06.2022)
+#: by: https://www.karneval.berlin/ (findet möglicherweise am 15. August 2021 statt --- gibt es überhaupt ein Straßenfest vorher?)
 	2::temp 9521,10010 9827,10051
 	2::temp 9521,10010 9448,10014
 	2::temp 9599,10175 9687,10180 9825,10206
@@ -65,10 +68,12 @@ EOF
        until => $isodate2epoch->("2019-06-09 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 49, start => "2020-10-25T00:00:00"]], # Pfingstsonntag
-       source_id => 'http://www.karneval-berlin.de/de/',
+       recurrence_prewarn_days => -60,
+       source_id => 'https://www.karneval.berlin/', # früher http://www.karneval-berlin.de/de/, heute ist das eine Werbeseite
        text  => 'Karneval der Kulturen, 09.06.2019',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.karneval.berlin/ (findet möglicherweise am 15. August 2021 statt)
 	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753
 # REMOVED ---	2::temp 9044,9753 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
 	2::temp 10713,9260 10670,9286 10639,9304 10615,9300 10564,9292
@@ -31367,6 +31372,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: SIGISMUND-2020
 #: next_check_id: MUSEUMDERMODERNE-2021
+#: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
 #: XXX wann sind die Bauarbeiten fertig? vvv
 #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
 #: last_checked: 2021-04-19 vvv
@@ -32118,7 +32124,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-04-17
+#: last_checked: 2021-04-21
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32360,10 +32366,10 @@ EOF
 EOF
      },
      { from  => 1616918460, # 2021-03-28 10:01
-       until => $isodate2epoch->("2021-05-03 17:00:00"), # 1619190000, # 2021-04-23 17:00
+       until => 1619029665, # $isodate2epoch->("2021-05-03 17:00:00"), # 1619190000, # 2021-04-23 17:00
        text  => 'Wichernstr.: Bauarbeiten zwischen Niederneuendorfer Allee und Holunderweg, Fahrbahn stadtauswärts gesperrt, vom 29.03.2021 10:01 Uhr bis 03.05.2021 17:00 Uhr',
        type  => 'handicap',
-       source_id => '2147347035',
+       source_id => '2147347035', # inaktiv
        data  => <<EOF,
 #: note: laut rbb nur stadtauswärts
 	q4::inwork; -2934,17594 -3060,17617 -3093,17647
