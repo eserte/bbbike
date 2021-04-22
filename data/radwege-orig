@@ -410,7 +410,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
-#: last_checked: 2021-04-13 vvv
+#: last_checked: 2021-04-22 vvv
 #: check_frequency: 60d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -875,7 +875,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-04-10
+#: last_checked: 2021-04-22
 #: check_frequency: 60d
 # REMOVED (vermutlich ohne baldige Änderung) --- #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2255,7 +2255,6 @@ Radspur zwischen Fahrspuren, Grünmarkierung	RW4; 12162,8053 11979,8014
 	RW1;RW1 7979,7525 7938,7406
 	RW1;RW2 7600,7605 7696,7771
 	RW2;RW1 8215,6938 8232,6972 8319,7084
-Busspur ist immer gültig	RW5; 8414,6995 8319,7084
 	RW1;RW1 9161,5535 8968,5554 8887,5564 8767,5571 8724,5570 8687,5554
 	RW2;RW1 8687,5554 8593,5491
 	RW1;RW1 8200,5510 8177,5583 8176,5610
@@ -3129,8 +3128,8 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: source_id: 2147345793 (inaktiv)
 #: XXX provisorische Radwegführung
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
-#: last_checked: 2021-03-23 (osm)
-#: check_frequency: 60d
+#: last_checked: 2021-04-22 (bahninfo-forum)
+#: check_frequency: 30d
 #: next_check: 2021-05-30
 	RW8; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
 	RW4; 18225,12697 18235,13236 18226,13506
@@ -5904,7 +5903,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-04-02
+#: last_checked: 2021-04-22
 #: check_frequency: 30d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünmarkierung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
@@ -5939,7 +5938,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-04-02
+#: last_checked: 2021-04-22
 #: check_frequency: 30d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 # note: Ende Karl-Marx-Str.
@@ -6705,7 +6704,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: source_id: 2147346996 (bis 21.5.2021)
 #: osm_watch: way id="4401920" version="50"
 #: confirmed_by: srt
-#: last_checked: 2021-03-26
+#: last_checked: 2021-04-22
 #: next_check: 2021-05-21
 provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9154,10348 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
 # 
@@ -6779,6 +6778,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1074831.php (Verstetigung; 14.4.2021 bis Ende Mai 2021)
 #: by: https://twitter.com/SenUVKBerlin/status/1384420835855900672
 #: by: https://twitter.com/VIZ_Berlin/status/1384862739504500739 (Markierungsarbeiten ab 26.4.2021)
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/geschuetzter-radweg-entsteht_a307845
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
 #: last_checked: 2021-04-16 vvv
 #: check_frequency: 14d vvv
@@ -6810,7 +6810,7 @@ provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-wird-verstetigt_a304893
 #: source_id: 2147346996 (bis 21.5.2021)
 #: osm_watch: way id="34057952" version="35"
-#: last_checked: 2021-03-26 vvv
+#: last_checked: 2021-04-22 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-05-21 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8804,10303 9145,10290 9368,10211 9416,10196
@@ -6949,3 +6949,31 @@ provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4
 #: last_checked ^^^
 # 
 	RW6;RW6 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
+# 
+#: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf
+#: osm_watch: way id="4357826" version="15"
+#: XXX laut fahrrat/2016-07-28 "Ausführung im Jahr 2017 geplant."
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-11-24_prot-fahrratsitzung4.pdf ("Entwurfsplanung liegt vor" + "Schwierigkeiten")
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-06-13-prot-fahrratsitzung.pdf (Verzögerungen)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-03-15_prot-fahrratsitzung2.pdf (Ausführung 2020)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf
+#: by: https://api.fixmyberlin.de/api/plannings/68 (die Umsetzung erfolgt schon 2019)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf (Markierung nach Leitungsbauarbeiten)
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/bezirksamt-listet-alle-2020-kommenden-radverkehrsanlagen-auf_a274738 (bis Ende 2021; hier: "900m" --- ist vielleicht auch ein Teil von Alt-Tempelhof gemeint?)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
+#: by: http://www.infravelo.de/projekt/schoeneberger-strasse/ (früherer Eintrag) (bis 4. Quartal 2021, 700m Schutzstreifen (was nicht ganz reichen würde...))
+#: by: http://www.infravelo.de/projekt/schoeneberger-strasse-2/
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
+#: XXX laut rbbtext Bauarbeiten bis 2021-03-20
+#: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16)
+#: last_checked: 2021-04-22
+#: note: mit Gelbmarkierung
+provisorische Radspuren	RW3;RW3 8739,6701 8653,6781 8496,6919 8460,6959
+#: XXX Gehen die provisorischen Radspuren bis Alboinstr.? Was ist mit der Busspur?
+#: next_check: 2021-04-22
+Busspur ist immer gültig	RW5; 8414,6995 8319,7084
+# 

@@ -240,7 +240,8 @@ Münsterlandstr.: Kopfsteinpflaster	Q2 16160,11154 16273,11113 16381,11080
 Münsterlandstr.: Asphalt	Q0 16381,11080 16492,11042
 Münsterlandstr.: Kopfsteinpflaster	Q2 16492,11042 16575,11013
 Münsterlandstr./Delbrückstr.: Kopfsteinpflaster	Q2 16575,11013 16702,10972 16792,10945 16861,10923
-Delbrückstr.: teilweise schlechtes Kopfsteinpflaster	Q3 16861,10923 16961,10893 17085,10855 17123,10844
+Delbrückstr.: schlechtes Kopfsteinpflaster	Q3 16861,10923 16961,10893
+Delbrückstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 16961,10893 17085,10855 17123,10844
 Sophienstr.: Asphalt	Q0 16918,11176 16874,11188
 Sophienstr.: Kopfsteinpflaster	Q2 16874,11188 16785,11212 16653,11251 16570,11278 16465,11313 16367,11341
 Müggelstr.: Asphalt	Q0 14764,11591 14837,11706
@@ -8681,7 +8682,8 @@ westlicher Wuhlewanderweg: überwiegend wassergebundene Decke, einige Kleinsteinp
 (Erieseering - am Tränkegraben): Verbundsteinpflaster	Q1 18042,10392 18039,10398
 (Erieseering - am Tränkegraben): Parkweg	Q1 18039,10398 18026,10490 18034,10567
 (Zachertstr. - am Tränkegraben): Beton	Q0 17848,11204 17893,11146
-(Zachertstr. - am Tränkegraben): überwiegend Asphalt, kurzer unbefestigter Abschnitt	Q0 17893,11146 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
+(Zachertstr. - am Tränkegraben): unbefestigt mit Pflasterreihen	Q2 17893,11146 17905,11122
+(Zachertstr. - am Tränkegraben): Asphalt	Q0 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
 Schwarzmeerstr. [zur Rummelsburger Str.]: Asphalt	Q0 17751,10904 17763,10950 17676,10976
 Rummelsburger Str. (Friedrichsfelde, Rummelsburg) [zur Schwarzmeerstr.]: Asphalt	Q0 17676,10976 17689,11025 17676,11055
 (am Tränkegraben - Moldaustr.): Gehwegplatten	Q1 17870,10619 17856,10560 17864,10537 17856,10508
@@ -10589,6 +10591,7 @@ Otto-Weidt-Platz: Kleinsteinpflaster	Q1 7732,14131 7866,14215
 Am Bahnhof Wuhlheide: Betonpflaster	Q0 20430,7122 20524,7176 20533,7199 20575,7226
 An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q0 24530,12296 24556,12181 24554,12100 24556,12056 24563,11980 24575,11932
+Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1 9099,8670 9158,8706 9229,8718
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13585,8 +13588,8 @@ Schwanter Weg: Kopfsteinpflaster	Q2 -4748,17049 -4758,16910 -4763,16809 -4770,16
 Würzburger Str.: guter Asphalt	Q0 11681,-1951 11886,-1930 11919,-1927 12082,-1908 12167,-1898 12216,-1891
 Erieseering: guter Asphalt	Q0 18387,10070 18369,10115 18328,10225 18319,10249
 Erieseering: schadhafter Asphalt	Q1 18319,10249 18141,10173
-Erieseering: guter Asphalt, leichte Schäden	Q0 18141,10173 18184,10065
-Erieseering: guter Asphalt, leichte Schäden	Q0 18184,10065 18220,10051 18287,10045 18296,10027
+Erieseering: Asphalt, leichte Schäden	Q0 18141,10173 18184,10065
+Erieseering: Asphalt, leichte Schäden	Q0 18184,10065 18220,10051 18287,10045 18296,10027
 Mittelbruchzeile: Radweg asphaltiert, Fahrbahn Kopfsteinpflaster	Q0 7491,17793 7557,17809
 Mittelbruchzeile: Radweg asphaltiert, Fahrbahn Verbundsteinpflaster	Q0 7557,17809 7659,17826 7789,17853
 Mittelbruchzeile: Asphalt	Q0 7789,17853 7948,17895 8152,17936
@@ -17149,10 +17152,13 @@ Schwabenallee: Asphalt	Q0 21321,9672 21350,9820 21371,9923
 Schwabenplatz: schlechtes Kopfsteinpflaster	Q3 21307,9591 21253,9547 21291,9507 21343,9546 21307,9591
 Erich-Kunz-Str.: Beton	Q0 18354,10600 18345,10575 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482
 Erich-Kunz-Str.: Beton	Q0 18285,10550 18336,10436 18350,10393 18326,10362 18264,10343
-Erich-Kunz-Str.: Beton	Q0 18446,10620 18397,10608 18354,10600 18329,10599
+Erich-Kunz-Str.: Beton	Q0 18446,10620 18397,10608
+Erich-Kunz-Str.: Asphalt	Q0; 18397,10608 18354,10600 18329,10599
+Erich-Kunz-Str.: Beton	Q0; 18329,10599 18354,10600 18397,10608
 Franz-Mett-Str.: Asphalt	Q0 18105,10997 18066,11215 18061,11240 18059,11256
 Franz-Mett-Str.: Asphalt, mit Schäden	Q1 18105,10997 18124,10930 18220,10844 18296,10754 18368,10763
-Franz-Mett-Str.: Asphalt/Beton mit Schäden	Q1 18368,10763 18374,10729 18397,10608
+Franz-Mett-Str.: Asphalt/Beton mit Schäden	Q1 18368,10763 18374,10729
+Franz-Mett-Str.: Asphalt/Beton	Q0 18374,10729 18397,10608
 Widderstr.: Asphalt	Q0 14853,7451 14942,7347 14997,7240
 Krebsgang: Verbundsteinpflaster	Q1 15085,7258 14997,7240
 Krebsgang: mäßiger Asphalt	Q1 14997,7240 14946,7228
