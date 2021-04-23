@@ -32286,11 +32286,12 @@ EOF
 EOF
      },
      { from  => 1616306400, # 2021-03-21 07:00
-       until => 1619449200, # 2021-04-26 17:00
-       text  => 'Winckelmannstr.: Gleisbauarbeiten zwischen Sterndamm und Köpenicker Str., Fahrbahn gesperrt, vom 22.03.2021 07:00 Uhr bis 26.04.2021 17:00 Uhr ',
+       until => $isodate2epoch->("2021-06-13 17:00:00"), # 1619449200, # 2021-04-26 17:00
+       text  => 'Winckelmannstr.: Gleisbauarbeiten zwischen Sterndamm und Köpenicker Str., Fahrbahn gesperrt, vom 22.03.2021 07:00 Uhr bis 13.06.2021 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346994',
        data  => <<EOF,
+#: next_check_id: WINCKELMANN-2021
 	q4::inwork 17507,4216 17476,4337 17428,4503
 EOF
      },

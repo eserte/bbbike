@@ -933,7 +933,7 @@ Hederichweg - Am Buckersberg: Einrichtung einer Radverkehrsanlage über das Wasse
 Königsheide: Verbesserung der Befahrbarkeit geplant	?::projected 16868,5938 16845,5875 16816,5831 16673,5488 16564,5381 16497,5323 16305,5152
 # 
 #: XXX Kö.1
-#: osm_watch: way id="54722077" version="14"
+#: osm_watch: way id="54722077" version="15"
 #: last_checked: 2021-02-18
 #: check_frequency: 90d
 Köpenicker Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected  21020,7433 21024,7484 21029,7591 21037,7751
@@ -1038,7 +1038,7 @@ Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projecte
 Nalepastr.: Einrichten einer Radverkehrsanlage auf der östlichen Seite	?::projected; 17614,6571 17555,6680 17514,6754 17459,6854 17352,7051 17286,7173
 # 
 #: XXX Osw.13
-#: osm_watch: way id="22749854" version="45"
+#: osm_watch: way id="22749854" version="46"
 #: last_checked: 2021-04-15
 #: check_frequency: 90d
 Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren auf Gehweg frei (Westseite)	?::projected 20280,7749 20307,7689 20316,7637 20323,7529 20340,7468 20393,7404 20510,7325 20616,7292 20653,7289
@@ -2677,6 +2677,7 @@ Markelstr.: Verbindung durch die Grünfläche geplant	?::projected 4845,6532 4845,
 #: XXX Christian-Dohm-Weg (Querstraße im Norden), PLZ=13057
 #: XXX David-Friedländer-Weg (Querstraße in der Mitte), PLZ=13057
 #: XXX Karl-Philipp-Moritz-Weg (Querstraße im Süden), PLZ=13057
+#: XXX vermutlich Bebauungspläne XXII-39, XXII-39-1 VE und XXII-39-2
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036437163615/437163615/00222875/75-Anlagen/02/LageplanAmGehrensee.pdf (schlecht erkennbarer Lageplan)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_45_5121_5232_online.pdf (Benennung von Straßen)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Grundstücksnummerierungen)
@@ -3594,6 +3595,7 @@ Alt-Treptow, vor der Sternwarte: Planung einer Überquerungshilfe, evtl. eine Amp
 #: by: https://viz.berlin.de/2021/04/verkehrsvorschau_060421/ (bis Ende Mai 2021)
 #: by: https://viz.berlin.de/2021/03/neue-krugallee/
 #: note: laut rbb bis 11.6.2021
+#: source_id: 2147347048 (bis 11.6.2021)
 #: last_checked: 2021-04-07
 #: check_frequency: 30d
 #: next_check: 2021-06-11
@@ -4697,7 +4699,7 @@ Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2016
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
-#: osm_watch: way id="269707365" version="12"
+#: osm_watch: way id="269707365" version="13"
 #: also_indoor: traffic
 #: last_checked: 2021-02-26 (traffic)
 #: check_frequency: 60d
@@ -6078,6 +6080,7 @@ Hüfnerweg (Groß Glienicke): genaue Lage, Qualität?	? -9801,6988 -9795,7066
 # 
 #: XXX fehlen in Berlin.coords.data (PLZ vermutlich 12487) vvv
 #: by: http://www.stadtentwicklung.berlin.de/umwelt/umweltatlas/karten/pdf/e07_01_2009_mit_strname.pdf (teilweise)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_16_1221_1304_online.pdf (Abramowitschallee liegt im Bereich des Bebauungsplans 9-15a)
 #: check_frequency: 360d vvv
 #: last_checked: 2020-11-15
 Abramowitschallee: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18169,4159 17898,4434
@@ -7099,9 +7102,6 @@ Bebauungsplan XXI-22-2 (Georg-Knorr-Park Teilgebiet Ost): Planung eines Geh- und
 # 
 # REMOVED --- #: next_check_id: MAUERPARKERWEITERUNG-2019 --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/artikel.601949.php --- #: by: https://www.bbs-landscape.com/projekte/mauerpark-berlin-mitte/ --- #: by: https://gruen-berlin.de/projekt/mauerpark (Steinkreis) --- #: by: https://gruen-berlin.de/sites/default/files/gruenberlinmagazin_herbst-winter_2018.pdf (mit Plan, Umsetzung bis 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812066.php --- #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/3-64/index.shtml --- #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/3-64/download/3_64-Planzeichnung-Bebauungsplanentwurf.pdf (aber keine konkreten Wegbeziehungen hier) --- #: by: https://www.abendblatt-berlin.de/2019/10/03/berlin-mauerpark-bald-schoen-wie-nie/ --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=641461&postcount=306 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_46_6905_7144_online.pdf (Widmung einer öffentlichen Grün- und Erholungsanlage) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.951044.php (Eröffnung) --- #: XXX Wie werden die Wege nach den Bauarbeiten aussehen? Wird es auch einen neuen (asphaltierten?) Radweg zwischen Bernauer und Gleimtunnel geben? --- #: XXX laut osm-Notiz ist der gesamte Kreis gesperrt; dafür sind die neuen Wege Richtung Gleimstr. offen (prüfen!) --- heute (2020-06-13) war das nicht der Fall --- # REMOVED --- #: osm_watch: way id="233994265" version="7" --- # REMOVED --- #: osm_watch: way id="30539724" version="11" --- #: last_checked: 2020-06-13 --- #: check_frequency: 30d --- #: next_check: 2020-06-26 --- (Lortzingstr. - Mauerpark): wann wird der südliche Teil des Kreise eröffnet?	?::inwork 10070,15438 10083,15425 10103,15437 10107,15457
 # 
-#: XXX Bergholz-Rehbrücke, aber mit Bergholz oder Rehbrücke im Untertitel?
-Ortsschild?	? -9086,-8084 -9060,-8095 -9032,-8103
-# 
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/gewinnerentwurf-fuer-neues-stadtquartier-am-spreebord-gekuert_a284965
 #: last_checked: 2020-11-07
 #: next_check: 2023-05-01
@@ -7201,9 +7201,10 @@ Fahlenbergbrücke: Behelfsbrücke wird hier gebaut	?::projected 30942,-62 31103,-1
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8806
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103661961405/61961405/00307872/72-Anlagen/02/AnlageBEKulturimg20210122_09481666.jpg
 #: by: https://www.berliner-woche.de/wartenberg/c-verkehr/strassenname-erinnert-an-anger_a303876
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_16_1221_1304_online.pdf (Benennung)
 #: XXX fehlt bei Berlin.coords.data
 #: XXX geplante neue Privatstraße
-#: next_check: 2021-09-01
+#: next_check: 2021-06-01
 Zum Wartenberger Anger: genaue Lage, Qualität?	?::projected 17697,18956 17670,18850 17753,18835 17813,18933
 # 
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/bebauungsplan.1070410.php

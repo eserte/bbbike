@@ -3063,17 +3063,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '#: last_checked: 2021-02-20
-#: next_check: 2021-04-23
-	q3::inwork 8858,4579 8561,4535
-',
-         'from' => 1606936220,
-         'id' => 3310,
-         'text' => 'Reulestr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, bis 23.04.2021',
-         'type' => 'handicap',
-         'until' => 1619193600
-       },
+       undef,
        {
          'data' => '#: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
@@ -3354,14 +3344,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '	q4::inwork 17507,4216 17476,4337 17428,4503
+         'data' => '#: next_check_id: WINCKELMANN-2021
+	q4::inwork 17507,4216 17476,4337 17428,4503
 ',
          'from' => 1616306400,
          'id' => 3351,
          'source_id' => '2147346994',
-         'text' => 'Winckelmannstr.: Gleisbauarbeiten zwischen Sterndamm und Köpenicker Str., Fahrbahn gesperrt, vom 22.03.2021 07:00 Uhr bis 26.04.2021 17:00 Uhr ',
+         'text' => 'Winckelmannstr.: Gleisbauarbeiten zwischen Sterndamm und Köpenicker Str., Fahrbahn gesperrt, vom 22.03.2021 07:00 Uhr bis 13.06.2021 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1619449200
+         'until' => 1623596400
        },
        {
          'data' => '	2::inwork 5787,4400 5738,4361 5541,4305
