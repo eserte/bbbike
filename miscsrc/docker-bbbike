@@ -499,7 +499,8 @@ EOF
 	my $scope_cleanups = Doit::ScopeCleanups->new;
 	my $tag = 'bbbike-travis-ci-' . $opt{dist} . '-' . $opt{distver};
 
-	eval { $doit->system(qw(docker rmi), $tag) };
+	eval { $doit->system(qw(docker rmi), "$tag-old") };
+	eval { $doit->system(qw(docker tag), $tag, "$tag-old") };
 	_docker_build_with_retry($doit, "$opt{dist}:$opt{distver}", ['--tag', $tag, ($opt{'no-cache'} ? '--no-cache' : ()), '.']);
 
 	eval { $doit->system(qw(docker rm), $tag) };
