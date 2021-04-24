@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -800,7 +800,19 @@ sub is_float ($$;$) {
 
 sub _update_bbbike_test_data () {
     my $make = get_pmake;
+
     local $ENV{MAKEFLAGS}; # protect from gnu make brain damage (MAKEFLAGS is set to "w" in recursive calls)
+
+    my $lock_fh;
+    eval {
+	require Fcntl;
+	open $lock_fh, "$testdir/data-test/BSDmakefile"
+	    or die "Opening BSDmakefile failed: $!";
+	flock $lock_fh, Fcntl::LOCK_EX
+	    or die "Locking failed: $!";
+    };
+    warn "Problems while acquire a lock: $@\n" if $@;
+
     # -f BSDmakefile needed for old pmake (which may be found in Debian)
     my $cmd = "cd $testdir/data-test && $make -f BSDmakefile PERL=$^X MISCSRCDIR=" . bbbike_root . "/miscsrc";
     system $cmd;
