@@ -157,6 +157,7 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 # REMOVED (existiert nicht mehr) --- #: osm_watch: way id="846548652" version="2"
 #: osm_watch: way id="871408060" version="1"
 #: XXX wird auch zwischen Grünbergallee und Paradiesstr. ein Radweg entstehen?
+#: XXX wird auch auf der Paradiesstr. zwischen B96a und Johannes-Tobei-Str. auf der westlichen Seite ein Radweg entstehen, möglicherweise ein Zweirichtungsradweg?
 #: last_checked: 2021-03-20 (mapillary)
 #: check_frequency: 120d
 #: next_check_id: 2021-05-31
@@ -1980,7 +1981,7 @@ Märkische Allee: Mittelstreifen	3nocross 19900,11697 19924,11890 19934,11977 199
 Falkenberger Chaussee: Straßenbahntrasse	3nocross 18196,18254 18530,18327 18601,18342
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13394,10805 13496,10763 13596,10722
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
-Stralauer Allee: unbequem passierbare Straße	3nocross 14222,10430 14405,10340 14558,10264
+Stralauer Allee: unbequem passierbare Straße	3nocross 14218,10430 14405,10340 14558,10264
 Stralauer Str.: Mittelstreifen	3nocross 11221,12250 11300,12241 11347,12223
 Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 12628,8711 12736,8629 12765,8605
 Sonnenallee: Mittelstreifen	3nocross 13277,8211 13459,8072 13474,8060
@@ -3311,7 +3312,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: check_frequency: 60d
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 # 
-#: last_checked: 2021-04-18 (mapillary) vvv
+#: last_checked: 2021-04-24 vvv
 #: check_frequency: 21d vvv
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922 16841,9997
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16886,9982
@@ -3446,7 +3447,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2021-04-22
+#: last_checked: 2021-04-24
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -3628,7 +3629,7 @@ Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2021-02-21 vvv
+#: last_checked: 2021-04-24 vvv
 #: check_frequency: 60d vvv
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
 # REMOVED (hier kann man schon fahren) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21474,5388 21485,5377 21514,5314 21547,5245 21413,5180
@@ -3703,13 +3704,13 @@ Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 #: next_check_id: BUSCHWINDROESCHENWEG-2019
 #: XXX Wann wird die Straße eröffnet? Wie wird die Qualität sein? Wird diese Straße verkehrsberuhigt sein?
 #: osm_watch: way id="734004873" version="3"
-#: last_checked: 2021-02-24
+#: last_checked: 2021-04-24
 #: check_frequency: 90d
 Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
 # 
 #: next_check_id: WEIDENKAETZCHENWEG-2020
 #: osm_watch: way id="889476798" version="2"
-#: last_checked: 2021-02-24
+#: last_checked: 2021-04-24
 #: check_frequency: 30d
 Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
 # 
@@ -3720,7 +3721,7 @@ Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 2144
 #: osm_watch: node id="791819743" version="4"
 #: by: osm (kartonage)
 #: confirmed_by: srt
-#: last_checked: 2021-04-04
+#: last_checked: 2021-04-24
 #: check_frequency: 60d
 Mergenthalerring: durch Tor versperrt	2::inwork 14121,8147 14210,8227 14229,8278
 # 
@@ -3806,7 +3807,7 @@ Mergenthalerring: durch Tor versperrt	2::inwork 14121,8147 14210,8227 14229,8278
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2021-04-13 vvv
+#: last_checked: 2021-04-24 (daf) vvv
 #: check_frequency: 60d vvv
 #: valid: -20210630 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
@@ -4030,7 +4031,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 # REMOVED --- #: last_checked: 2017-05-08 (nur noch ein paar Meter Richtung Weigandufer gesperrt) --- #: check_frequency: 7d --- Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,9073
 # REMOVED (Baugrube) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/18re.pdf/file?y=2016 --- #: osm_watch: note 848012 1 --- #: last_checked: 2016-12-15 --- #: check_frequency: 180d --- Sülzhayner Str.: komplett gesperrt wegen Bauarbeiten, vielleicht dauerhaft	2::inwork 13420,9259 13392,9225
 # REMOVED (fertig) --- #: next_check_id: ACHTERKASTELL-2016 --- #: XXX man kann aber an den Absperrungen vorbei --- #: last_checked: 2018-02-10 --- #: check_frequency: 60d --- Marzahner Str. - Gensinger Str.: wegen Bauarbeiten gesperrt	2::inwork 18702,11921 18888,11910 18913,11909
-# REMOVED (volle Fahrbahnbreite steht wieder zur Verfügung) --- #: last_checked: 2017-11-20 --- Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2:inwork 14447,10491 14270,10584
+# REMOVED (volle Fahrbahnbreite steht wieder zur Verfügung) --- #: last_checked: 2017-11-20 --- Corinthstr.: Baustelle, Einbahnstraßenregelung	1s:q2:inwork 14447,10491 14265,10579
 # REMOVED (mittlerweile schon passierbar) --- #: next_check_id: MARIANNEN-2016 vvv --- #: source_id: INKO_2147340291_COPY_1 vvv --- #: source_id: 2147340291 vvv --- #: source_id: 2147340768 vvv --- # REMOVED (aufgehoben) --- #: priority: #A vvv --- #: XXX laut fritz bis 16.12.2016 --- #: last_checked: 2016-12-15 vvv --- #: next_check: 2017-01-10 vvv --- Mariannenstr.: Baustelle, Einbahnstraßenregelung	1s:q2 11512,10105 11616,10288 --- #: source_id: 2147340777 --- #: XXX laut fritz bis 10.01.2017 --- #: priority: #A --- #: last_checked: 2016-12-15 --- #: check_frequency: 7d --- Mariannenstr.: Baustelle, Fahrbahn gesperrt	2s:q3 11671,10402 11616,10288
 # REMOVED --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: note: siehe auch http://www.detlefzabel.de/spreebruecke-neubau/ --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829 --- #: last_checked: 2017-11-05 --- #: next_check: 2017-12-21 --- Minna-Todenhagen-Str.: wird noch gebaut	2::inwork 17585,7525 17453,7451 17282,7337 17211,7280 17127,7209 17005,7085 16834,6910 16747,6813
 # REMOVED (laut osm nicht mehr highway=construction) --- #: osm_watch: way id="291810047" version="7" --- #: last_checked: 2016-07-23 --- Alfonsstr.: Bauzäune	2::inwork 19027,1427 19034,1441 19061,1457

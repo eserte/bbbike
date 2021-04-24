@@ -1417,7 +1417,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 10617,452
 	X 10226,1515
 #: XXX_prog: für linksabbiegende Radfahrer Anforderungsampel, auch Richtung Osthafengelände
-	X 14222,10430
+	X 14218,10430
 	X 13596,10722
 	X 9796,5790
 	X 12689,8289
@@ -2926,7 +2926,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2021-04-09
+#: last_checked: 2021-04-24 (daf)
 #: check_frequency: 90d
 #: next_check: 2021-07-15
 	X::inwork 8732,14098
@@ -3087,7 +3087,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="5"
-#: last_checked: 2021-02-20
+#: last_checked: 2021-04-24
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3481,7 +3481,7 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2021-04-10 vvv
+#: last_checked: 2021-04-24 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

@@ -127,7 +127,7 @@ Nordufer: bereits an der Ampel Fˆhrer Str. auf den linken Zweirichtungsradweg we
 An der Wuhlheide - Wuhlewanderweg: ggfs. bereits an der Ampel Kˆpenicker Allee die Straﬂenseite wechseln (insbesondere mit Anh‰nger oder mit Lastenrad wenig Platz auf dem Mittelstreifen)	PI; 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21596,5693 21602,5685 21618,5699 21744,5804
 # 
 #: XXX_prog: RL:ja, GPS:nein
-An der Wuhlheide - Alte Fˆrsterei: bereits an der Ampel Kˆpenicker Allee die Straﬂenseite wechseln (Straﬂenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 21653,6037
+An der Wuhlheide - Alte Fˆrsterei: bereits an der Ampel Kˆpenicker Allee die Straﬂenseite wechseln (Straﬂenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 21406,5864 21561,5955 21653,6037
 Wuhlewanderweg - Lindenstr.: zun‰chst linken Gehweg benutzen, an der Cardinalstr. oder Ampel Joachimstr. die Straﬂenseite wechseln	CP; 21744,5804 21618,5699 21602,5685 21706,5541
 Mariendorfer Damm - Am Teltowkanal: bereits an der Ullsteinstr. auf den linken Gehweg wechseln	PI; 9206,5193 9196,5272 9171,5263
 # REMOVED (-> routing_helper-orig) --- #: note: schlecht passierbarer Mittelstreifen --- Jerusalemer - Leipziger Str.: zun‰chst linken Gehweg benutzen, an der Ampel Jerusalemer Str. die Straﬂenseite wechseln	CP; 9892,11752 9896,11703 9898,11679 9981,11689
@@ -156,8 +156,8 @@ zur M¸ggelstr. Hausdurchfahrt benutzen	CS; 14994,12121 14994,12064
 # 
 # REMOVED (stattdessen gibt's die n‰chsten vier Eintr‰ge) --- #: note: l‰ngerer Abschnitt, deshalb CS; und nicht CP2;: --- #: XXX_prog: RL:ja, GPS:nein --- Zugang zum Bahndamm ¸ber die Terasse der Mambo-Bar	CS; 13923,9405 13953,9372
 Elsenstr. - Bahndamm: bereits an der Beermannstr. auf den linken Gehweg wechseln	PI; 13973,9465 13923,9405 13953,9372
-Bahndamm - Elsenstr.: linken Gehweg bis zur Kiefholzstr. benutzen	CP; 13953,9372 13923,9405 13849,9310
-Elsenstr. - Bahndamm: Absperrgitter, bereits an der Kiefholzstr. auf den Gehweg wechseln	PI; 13849,9310 13923,9405 13953,9372
+Bahndamm - Elsenstr.: linken Gehweg bis zur Kiefholzstr. benutzen	CP; 13953,9372 13923,9405 13892,9365 13849,9310
+Elsenstr. - Bahndamm: Absperrgitter, bereits an der Kiefholzstr. auf den Gehweg wechseln	PI; 13849,9310 13892,9365 13923,9405 13953,9372
 Bahndamm - Elsenstr.: Absperrgitter, zun‰chst auf dem Gehweg fahren	CP; 13953,9372 13923,9405 13973,9465
 # 
 #: XXX_prog: RL:ja, GPS:nein
@@ -629,7 +629,7 @@ Rathausstr. - Frankfurter Allee: Fuﬂg‰ngerampel auf der linken Seite benutzen	CP
 # 
 #: next_check_id: ZUMBETRIEBSBHF-2017 vvv
 #: XXX ‰ndert sich die Ausschilderung? vvv
-#: last_checked: 2021-04-18 (mapillary) vvv
+#: last_checked: 2021-04-24 vvv
 ausgeschildert "zur Salzmannstraﬂe Huronseestraﬂe"	CP2; 16900,9861 16895,9922
 ausgeschildert "zur Sewanstraﬂe"	CP2; 16900,9861 17005,9953
 #: last_checked ^^^
