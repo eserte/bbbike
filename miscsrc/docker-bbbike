@@ -305,6 +305,8 @@ sub ci {
     my($doit, %opt) = @_;
     lock_keys %opt;
 
+    my $t0 = Time::HiRes::time();
+
     my %default_env =
 	(
 	 # build config
@@ -531,6 +533,11 @@ EOF
 	    if ($@) {
 		push @errors, "code test errored: $@";
 	    }
+	}
+
+	if (!$doit->is_dry_run) {
+	    my $t1 = Time::HiRes::time();
+	    info sprintf "Run time: %.1fs", $t1-$t0;
 	}
 
 	{
