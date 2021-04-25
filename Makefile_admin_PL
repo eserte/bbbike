@@ -571,7 +571,7 @@ data:
 	cd data && ${MAKE}
 
 BBBikeVar.tpl: BBBikeVar.pm
-	${PERL} miscsrc/ttdump --package BBBike --prefix BBBike BBBikeVar.pm > BBBikeVar.tpl
+	${PERL} miscsrc/ttdump --rerun-notice "${MAKE} BBBikeVar.tpl" --package BBBike --prefix BBBike BBBikeVar.pm > BBBikeVar.tpl
 
 clean-cache:
 	-rm -f tmp/b_de_*
