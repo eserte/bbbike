@@ -32,11 +32,6 @@ $EMAIL_NEWSTREET   = 'slaven@rezic.de';
 $HOMEPAGE	   = 'http://www.rezic.de/eserte/';
 # pointer to WWW version
 $BBBIKE_WWW	   = 'http://www.bbbike.de';
-# list of additional WWW mirrors
-@BBBIKE_WWW_MIRRORS = (($use_bbbike_sourceforge_net_fallback ? () : ('http://bbbike.sourceforge.net/cgi-bin/bbbike.cgi')),
-		       'http://bbbike.de/cgi-bin/bbbike.cgi',
-		       'http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi',
-		      );
 # WWW version, URL for direct access (sometimes www.bbbike.de does not work)
 #$BBBIKE_DIRECT_WWW = 'http://user.cs.tu-berlin.de/~eserte/bbbike/cgi/bbbike.cgi';
 $BBBIKE_DIRECT_WWW = 'http://bbbike.de/cgi-bin/bbbike.cgi';
