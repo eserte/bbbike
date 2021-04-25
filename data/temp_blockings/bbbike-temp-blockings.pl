@@ -21796,9 +21796,11 @@ EOF
        text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. bis 3. Juni 2019',
        periodic => 1,
        recurrences => [["yearly", "days" => 30, "months" => 5, start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => 3,
        type  => 'gesperrt',
        source_id => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
        data  => <<EOF,
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/kinder/internationaler-kindertag/3072858-3068888-kindertag-im-haus-natur-und-umwelt.html (mögliche Termine: 1.6.2021 + 6.6.2021)
 #: tempex: YYYY0531-YYYY0603 vvv
 	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
 	2::temp 19961,5989 20015,6069 20293,6278 20199,6318 20106,6357
@@ -30016,7 +30018,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2021-03-20
+#: last_checked: 2021-04-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-03-31
 	2::inwork 5886,12467 5944,12548
@@ -30644,7 +30646,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-04-09
+#: last_checked: 2021-04-24 (pvw)
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30744,7 +30746,7 @@ EOF
 #: next_check_id: VIRCHOW-2020
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-01-22 vvv
+#: last_checked: 2021-04-25 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -30859,7 +30861,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-22
+#: last_checked: 2021-04-25
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32260,7 +32262,7 @@ EOF
        data  => <<EOF,
 #: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken)
 #: also_indoor: traffic
-#: last_checked: 2021-04-18
+#: last_checked: 2021-04-25
 #: check_frequency: 14d
 	q4::inwork 13025,12523 13067,12583 13202,12790
 EOF

@@ -1975,7 +1975,8 @@ Sanderstr.	N 11710,9628 11917,9663 12074,9689
 #: XXX wann wird die Umbenennung in "Lucy-Lameck-Str." erfolgen?
 #: last_checked: 2021-03-08
 #: next_check: 2021-04-23
-Wissmannstr. (Neukölln)	N 11767,9026 11768,8871 11768,8739 11768,8696 11769,8515
+#: oldname: -202104: Wissmannstr. (Neukölln)
+Lucy-Lameck-Str.	N 11767,9026 11768,8871 11768,8739 11768,8696 11769,8515
 Mainzer Str. (Neukölln)	N 12063,8826 12057,8529 12083,8411 12104,8299 12116,8247 12134,8172 12147,8117 12162,8053
 #: note: blaues Straßenschild --- mittlerweile (2020-05-01) verschwunden
 Am Sudhaus	N 12134,8172 12282,8204
@@ -3858,7 +3859,8 @@ Trabener Str.	NN 2163,10024 2157,10020 2128,9999 1981,9865
 Trabener Str.	N 1981,9865 1927,9820 1904,9745 1756,9610 1709,9567 1562,9436 1457,9344 1341,9244 1312,9220 1141,9078 936,8933
 Hilde-Ephraim-Str.	N 1312,9220 1261,9285 1662,9642 1709,9663 1718,9653 1756,9610
 Rosensteinweg	N 1718,9653 1917,9821 1927,9820
-Wissmannstr. (Grunewald)	N 1341,9244 1421,9173 1434,9154 1483,9132 1569,9137 1708,9298
+#: note: früher mit Zusatz "(Grunewald)"
+Wissmannstr.	N 1341,9244 1421,9173 1434,9154 1483,9132 1569,9137 1708,9298
 Winkler Str.	N 936,8933 1037,8884 1090,8892 1316,9067 1434,9154
 Erdener Str.	N 1457,9344 1587,9320 1708,9298 1757,9282 1782,9270
 Erbacher Str.	N 1708,9298 1677,9404 1709,9567
@@ -4071,7 +4073,7 @@ Buchholzweg	N 4535,15530 4466,15350 4389,15336
 #: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: also_indoor: search Cornelius-Fredericks-Straße
 #: osm_watch: way id="247340732" version="17"
-#: last_checked: 2021-01-22
+#: last_checked: 2021-04-25
 #: check_frequency: 90d
 Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
 Sansibarstr.	N 6201,16538 6106,16433 6005,16313 5827,16118
@@ -11002,6 +11004,8 @@ Albert-Hößler-Str.	N 16097,11669 16083,11733 16099,11786 16128,11881
 Krautstr.	N 11963,11813 11966,11832 11993,11978 12002,12008 12021,12066 12059,12172 12081,12236 12118,12462
 Lange Str. (Friedrichshain)	N 11993,11978 12238,11931 12413,11901
 Lange Str. (Friedrichshain)	N 12522,11837 12577,11804 12676,11739
+#: osm.highway: service
+Lange Str. (Friedrichshain)	N 12002,12008 12212,11963
 Wriezener Karree	N 12728,11850 12959,11631
 Hermann-Stöhr-Platz	NN 12453,11790 12413,11901
 Hermann-Stöhr-Platz	NN 12413,11901 12522,11837
@@ -11816,7 +11820,7 @@ Malmöer Str.	N 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186 10343
 #: note: Beleuchtung existiert hier
 (Hasenheide, zwischen Jahnstr. und Columbiadamm)	NN 11449,9125 11439,9049 11406,8941 11357,8738 11333,8582 11279,8489
 (Hasenheide, zwischen Jahnstr. und Columbiadamm)	NN 11550,9104 11515,9066 11495,8985 11484,8928 11431,8678 11333,8582
-(Hasenheide, Eingang Wissmannstr.)	NN 11768,8739 11708,8747 11647,8723 11607,8751 11578,8784
+(Hasenheide, Eingang Lucy-Lameck-Str.)	NN 11768,8739 11708,8747 11647,8723 11607,8751 11578,8784
 (Hasenheide, südlicher Rundweg)	NN 11559,8357 11523,8327 11467,8329 11275,8387 11230,8402 10983,8470 10929,8503
 (Hasenheide, östlicher Rundweg)	NN 11559,8357 11570,8409 11560,8480 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11182,8983
 (Flughafenstr. - Rundweg in der Hasenheide)	NN 11632,8302 11577,8315 11559,8357
@@ -12827,8 +12831,8 @@ Lüneburger Str.	N 7595,12980 7365,12775 7343,12758 7322,12735 7175,12630 7131,12
 Krefelder Str.	N 5975,13256 5993,13064 6016,12939
 (Krefelder Str. - Uferweg)	NN 6016,12939 6017,12931 6019,12923
 Essener Str.	N 6183,13083 6114,13095 5993,13064 5889,13032 5755,12998
-Bundesratufer	NN 6164,12980 6129,12976 6106,12981
-Bundesratufer	N 6106,12981 6016,12939 5938,12848
+Bundesratufer	NN 6164,12980 6122,12971 6118,12980
+Bundesratufer	N 6118,12980 6016,12939 5938,12848
 # REMOVED (keine Fahrbahn mehr, nur der obere Uferweg) --- Bundesratufer	NN 5938,12848 5922,12765
 Bundesratufer	N 5922,12765 5922,12734 5871,12595
 #: note: auf den Straßenschildern steht "Hansa-Ufer"
@@ -15303,7 +15307,7 @@ Togostr.	N 5531,16734 5315,16936
 #: by: https://www.deutschlandfunkkultur.de/widerstand-gegen-manga-bell-platz-wie-in-berlin-um-einen.976.de.html?dram:article_id=455728
 #: osm_watch: way id="333607502" version="7"
 #: also_indoor: search Manga-Bell-Platz
-#: last_checked: 2021-01-22
+#: last_checked: 2021-04-25
 #: check_frequency: 90d
 Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,16803 5561,16767 5531,16734 5496,16696 5533,16662
 #: next_check_id: AFRIKANISCHESVIERTEL-2020
@@ -15314,7 +15318,7 @@ Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,168
 #: add_fragezeichen: Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="5199719" version="15"
 #: also_indoor: search Maji-Maji-Allee
-#: last_checked: 2021-01-22
+#: last_checked: 2021-04-25
 #: check_frequency: 90d
 Petersallee	N 5426,16539 5533,16662
 #: next_check_id: AFRIKANISCHESVIERTEL-2020
@@ -18306,7 +18310,7 @@ Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 (Krautstr. - Kleine Markusstr.)	N 12002,12008 11962,12034 11958,12112
 (Zufahrt Str. d. Pariser Kommune)	N 12577,11804 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz)	N 12648,11953 12691,12042 12735,12131
-(nördliches Spreeufer)	NN 6106,12981 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
+(nördliches Spreeufer)	NN 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nördliches Spreeufer)	NN 5871,12595 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307 5550,12305 5484,12320 5411,12380 5362,12469 5356,12494 5372,12538
 (nördliches Spreeufer)	NN 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 (nördliches Spreeufer - Stromstr.)	NN 6218,12975 6190,12978 6164,12980

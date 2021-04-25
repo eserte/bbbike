@@ -174,7 +174,7 @@ Henriette-Lustig-Str.: nur der sehr enge Gehweg sowie 50m der Fahrbahn sind frei
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,H)
 #: valid: 20171026-
-#: last_checked: 2021-04-22 (osm)
+#: last_checked: 2021-04-25
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
@@ -190,7 +190,7 @@ Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehw
 # 
 #: next_check_id: CHAUSSEE-2020
 #: note: laut rbbtext Ende der Bauarbeiten 16.7.2021
-#: last_checked: 2021-04-24 (daf)
+#: last_checked: 2021-04-25
 #: check_frequency: 90d
 #: next_check: 2021-07-16
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -308,9 +308,10 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # 
 #: also_indoor: traffic (H,G)
 #: osm_watch: way id="4597320" version="18"
-#: last_checked: 2021-03-20
-#: next_check: 2021-05-31
-#: valid: 20191218-20210531
+#: last_checked: 2021-04-24 (daf)
+#: check_frequency: 45d
+# REMOVED --- #: next_check: 2021-05-31
+# REMOVED --- #: valid: 20191218-20210531
 Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit f¸r Radfahrer verboten	q4::inwork 8737,12098 8783,11959
 # 
 # REMOVED (by eric.t) --- #: by: http://www.dafmap.de/d/berlin.html?center=52.508653+13.397214&zoom=17# (Geplanter Projektabschluss: 2019-03-31) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundst¸cksnummerierungen) --- #: also_indoor: traffic (HG) vvv --- #: osm_watch: way id="327756248" version="7" --- #: last_checked: 2020-12-01 --- #: check_frequency: 10d --- Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469 --- #: osm_watch: way id="542983664" version="3" --- #: last_checked: 2020-12-01 --- #: check_frequency: 10d --- Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485 --- # REMOVED (fertig) --- #: osm_watch: way id="66071387" version="11" --- #: last_checked: 2020-09-03 --- #: check_frequency: 14d --- Zimmerstr.: Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384 --- #: also_indoor ^^^
@@ -528,7 +529,17 @@ Mˆckernstr.: Bauarbeiten, Einbahnstraﬂe, ehemaliger Radweg kann benutzt werden	q
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160319 --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463650.php --- #: note: vor Ort sahen die Beeintr‰chtigungen nicht so groﬂ aus --- #: source_id: 2147339863 --- #: valid: 20160627-20161130 --- S-Bhf. Friedrichshagen: Bauarbeiten	q2::inwork 25579,5958 25584,6029
 # 
 ### Moabit ###
-#
+# 
+#: by: https://www.bahninfo-forum.de/read.php?9,689330,689356#msg-689356 (2021)
+#: XXX vermutlich wegen des neuen Aufzugs am U-Bhf. Birkenstr.
+#: also_indoor: traffic (G)
+#: osm_watch: way id="746589388" version="14"
+#: osm_watch: way id="746589386" version="1"
+#: last_checked: 2021-04-25
+#: check_frequency: 90d
+#: next_check: 2021-12-31
+Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
+# 
 # REMOVED (nicht mehr) --- #: next_check_id: HILDAGEIRINGERWEG-2019 --- #: source_id: 2147345153 (Gehwegarbeiten in der Invalidenstr., bis Anfang Dezember 2019) --- #: priority: #C vvv --- #: last_checked: 2020-10-10 vvv --- #: check_frequency: 30d vvv --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt	q3::inwork 8281,13394 8302,13430 8293,13527 --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur ¸ber Restaurantbereich	q4::inwork 8174,13390 8241,13393 8281,13394 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^
 # REMOVED --- #: XXX was ‰ndert sich nach den Bauarbeiten? Radstreifen? -> zumindest gibt es einige Aufpflasterungen --- #: last_checked: 2015-06-08 --- #: check_frequency: 30d --- Siemensstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Geh+Radweg	q2 5708,14077 5746,14090 5786,14106 5808,14114 5956,14168
 # 
@@ -564,7 +575,7 @@ Fasanenstr.: Engstelle in Hˆhe Kantstr., Radfahrer werden ¸ber den B¸rgersteig g
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
 #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html
 #: osm_watch: way id="151857175" version="8"
-#: last_checked: 2021-03-20
+#: last_checked: 2021-04-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-03-31
 Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5886,12467 5944,12548
@@ -1028,7 +1039,7 @@ Hasenheide: Fuﬂg‰nger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 
 Hasenheide: Fuﬂg‰nger	q1 11182,8983 11137,8979 11100,8974
 (Hasenheide, Weg am westlichen Rand): Fuﬂg‰nger	q1 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
 Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11111,9104 11141,9107
-(Hasenheide, Eingang Wissmannstr.): Fuﬂg‰nger	q1 11768,8739 11708,8747 11647,8723 11607,8751 11578,8784
+(Hasenheide, Eingang Lucy-Lameck-Str.): Fuﬂg‰nger	q1 11768,8739 11708,8747 11647,8723 11607,8751 11578,8784
 (Hasenheide, ˆstlicher Rundweg): Fuﬂg‰nger	q1 11560,8480 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11182,8983
 (Hasenheide, s¸dˆstlicher Rundweg): Fuﬂg‰nger	q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8480
 (Flughafenstr. - Rundweg in der Hasenheide): Fuﬂg‰nger	q1 11632,8302 11577,8315 11559,8357
@@ -1282,7 +1293,7 @@ Weisestr.: Bordsteine	q3 11767,8330 11770,8292
 Helgol‰nder Ufer - Stromstr.: Fuﬂg‰nger, CafÈ	q3 6551,12901 6535,12934 6443,12952 6271,12985
 Helgol‰nder Ufer - Stromstr.: einige Fuﬂg‰nger	q1 6271,12985 6289,13081
 Helgol‰nder Ufer - Stromstr.: einige Fuﬂg‰nger	q1 6417,13052 6289,13081 6207,13093 6183,13083
-Bundesratufer: Rampe, Fuﬂg‰nger	q2 6164,12980 6129,12976 6106,12981
+Bundesratufer: Rampe, Fuﬂg‰nger	q2 6164,12980 6122,12971 6118,12980
 #: XXX_prog BS am Wendehammer und falls man die Fahrbahn der Stralauer Allee benutzen mˆchte, ansonsten q2 oder schlechter
 Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
 #: note: dieser Abschnitt ist legal befahrbar
@@ -3559,6 +3570,7 @@ Humannstr.: Fuﬂg‰nger	q2 4332,18581 4324,18523 4311,18454
 #: XXX_prog mit Anh‰nger aber ggfs. q1
 Rudower Str.: drei Bodenschwellen, mit Normalrad gut umfahrbar	q0- 21329,4383 21452,4061 21402,4036 21454,3883 21489,3841
 Alemannenstr.: eng und kurvig	q1 20694,1175 20729,1239 20796,1289
+Windhuker Str.: einige Fuﬂg‰nger	q1 5426,16539 5712,16245 5748,16235
 # 
 ######################### User Contributions #################################
 # 
@@ -4045,7 +4057,7 @@ Eosanderstr.: Fuﬂg‰nger	q1 3344,12611 3271,12609
 Siemenssteg: Fuﬂg‰nger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 4124,12721
 (M¸llerstr. - Gerichtstr.): Fuﬂg‰nger	q2 7607,15282 7723,15417
 (s¸dliches Spreeufer): Fuﬂg‰nger	q2 5574,12237 5604,12244 5643,12253 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
-(nˆrdliches Spreeufer): Fuﬂg‰nger	q1 6106,12981 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
+(nˆrdliches Spreeufer): Fuﬂg‰nger	q1 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nˆrdliches Spreeufer): Fuﬂg‰nger	q2 6271,12985 6218,12975 6190,12978 6164,12980
 (nˆrdliches Spreeufer): Fuﬂg‰nger	q1 5871,12595 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307
 (nˆrdliches Spreeufer): Fuﬂg‰nger	q2 5607,12307 5550,12305 5484,12320 5411,12380 5362,12469 5356,12494 5372,12538
@@ -4877,8 +4889,8 @@ Privatstr. 7: enge Straﬂe	q1 16978,16915 17051,16923 17129,16922 17199,16907 172
 #: by: A.Schulz:
 Roseggerstr. (Mahlsdorf): enge Straﬂe	q1 23661,8597 23860,8480
 #: by: Katja (ondima):
-#: corrected_by: srt/policy (q3 -> q2)
-Unionstr.: breiter Fuﬂweg, einige Fuﬂg‰nger	q2 5708,14077 5782,14067
+#: confirmed_by: srt
+Unionstr.: breiter Fuﬂweg, einige Fuﬂg‰nger, Gitter an der Siemensstr.	q3 5708,14077 5782,14067
 #: by: Bernhard Albers:
 Rhenser Weg: Fuﬂweg	q1 19083,9062 19133,9087
 #: by: Heike Steinhardt:

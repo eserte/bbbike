@@ -2606,7 +2606,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2021-03-20
+#: last_checked: 2021-04-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-03-31
 	2::inwork 5886,12467 5944,12548
@@ -2690,7 +2690,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-04-09
+#: last_checked: 2021-04-24 (pvw)
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2717,7 +2717,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: VIRCHOW-2020
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-01-22 vvv
+#: last_checked: 2021-04-25 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -2746,7 +2746,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-22
+#: last_checked: 2021-04-25
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3311,7 +3311,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken)
 #: also_indoor: traffic
-#: last_checked: 2021-04-18
+#: last_checked: 2021-04-25
 #: check_frequency: 14d
 	q4::inwork 13025,12523 13067,12583 13202,12790
 ',

@@ -1430,7 +1430,7 @@ Mainzer Str.: schlechtes bis mäßiges Kopfsteinpflaster (auch bergab nur 15 km/h)
 Mainzer Str.: mäßiges Kopfsteinpflaster	Q2 12104,8299 12116,8247
 Mainzer Str.: mäßiges Kopfsteinpflaster	Q2 12116,8247 12134,8172 12147,8117
 Mainzer Str.: Asphalt	Q0 12147,8117 12162,8053
-Wissmannstr.: schlechtes Kopfsteinpflaster	Q3 11767,9026 11768,8871 11768,8739 11768,8696 11769,8515
+Lucy-Lameck-Str.: schlechtes Kopfsteinpflaster	Q3 11767,9026 11768,8871 11768,8739 11768,8696 11769,8515
 Liebigstr.: Kopfsteinpflaster	Q2 13905,12374 13991,12522 14058,12709
 Liselotte-Herrmann-Str.: Kopfsteinpflaster	Q2 12701,13873 12542,13984 12423,14066 12281,14164
 Esmarchstr.: Kopfsteinpflaster	Q2 12335,14246 12281,14164 12228,14083 12148,13961
@@ -6955,9 +6955,9 @@ Hasenheide: Parkweg	Q1 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11
 (Hasenheide, zwischen Jahnstr. und Columbiadamm): Verbundsteinpflaster	Q0 11550,9104 11515,9066 11495,8985
 (Hasenheide, zwischen Jahnstr. und Columbiadamm): Kopfsteinpflaster	Q2 11495,8985 11484,8928
 (Hasenheide, zwischen Jahnstr. und Columbiadamm): wassergebundene Decke	Q1 11484,8928 11431,8678 11333,8582
-(Hasenheide, Eingang Wissmannstr.): Asphalt	Q0 11768,8739 11708,8747
-(Hasenheide, Eingang Wissmannstr.): Asphalt mit Querrinnen	Q2 11708,8747 11647,8723 11607,8751
-(Hasenheide, Eingang Wissmannstr.): Kopfsteinpflaster	Q2 11607,8751 11578,8784
+(Hasenheide, Eingang Lucy-Lameck-Str.): Asphalt	Q0 11768,8739 11708,8747
+(Hasenheide, Eingang Lucy-Lameck-Str.): Asphalt mit Querrinnen	Q2 11708,8747 11647,8723 11607,8751
+(Hasenheide, Eingang Lucy-Lameck-Str.): Kopfsteinpflaster	Q2 11607,8751 11578,8784
 (Hasenheide, östlicher Rundweg): Asphalt	Q0 11560,8480 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11182,8983
 (Hasenheide, südöstlicher Rundweg): Parkweg	Q1 10929,8503 10983,8470 11230,8402 11275,8387 11467,8329 11523,8327 11559,8357 11570,8409 11560,8480
 (Flughafenstr. - Rundweg in der Hasenheide): Parkweg	Q1 11632,8302 11577,8315 11559,8357
@@ -10596,6 +10596,7 @@ Am Bahnhof Wuhlheide: Betonpflaster	Q0 20430,7122 20524,7176 20533,7199 20575,72
 An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q0 24530,12296 24556,12181 24554,12100 24556,12056 24563,11980 24575,11932
 Manfred-von-Richthofen-Str.: Asphalt mit einigen Schäden	Q1 9099,8670 9158,8706 9229,8718
+Schillingstr.: Asphalt mit Querrissen	Q0 11635,12745 11596,12668 11562,12597 11497,12463
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -16559,8 +16560,8 @@ Gotha-Allee: Beton	Q0 765,12564 618,12563 522,12577 339,12643 83,12780 99,12849
 Wiebestr.: Asphalt	Q0 4542,13244 4553,13294 4605,13525
 Wiebestr.: Kopfsteinpflaster	Q2 4605,13525 4619,13708 4583,13845
 Klarenbachstr.: Asphalt	Q0 4553,13294 4363,13336
-Rostocker Str. (Tiergarten): Kopfsteinpflaster mit Bodewellen	Q2 5100,14014 5109,13823 5116,13457
-Wittstocker Str.: Kopfsteinpflaster mit Bodewellen	Q2 4972,13804 5109,13823 5231,13843
+Rostocker Str. (Tiergarten): Kopfsteinpflaster mit Bodenwellen	Q2 5100,14014 5109,13823 5116,13457
+Wittstocker Str.: Kopfsteinpflaster mit Bodenwellen	Q2 4972,13804 5109,13823 5231,13843
 Mierendorffplatz: unebener Parkweg	Q2 3707,13274 3583,13313
 Brahestr.: Asphalt	Q0 3583,13313 3459,13350 3349,13406 3239,13461 3159,13492 3066,13514
 Tauroggener Str.: Asphalt	Q0 3459,13350 3429,13227 3400,13107 3337,12855
@@ -16636,7 +16637,7 @@ Ostender Str.: Kopfsteinpflaster	Q2 6794,15553 6862,15615 6919,15666 7024,15810
 Mehlbeerenweg: Asphalt	Q0 11993,11978 11940,11982 11909,11985
 Mehlbeerenweg: schlechter Asphalt und Sand	Q3 11940,11982 11923,11881 11916,11846
 Kleine Markusstr.: Beton	Q1 12059,12172 11958,12195 11937,12127
-(nördliches Spreeufer): Parkweg	Q1 6106,12981 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
+(nördliches Spreeufer): Parkweg	Q1 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nördliches Spreeufer): Parkweg	Q1 5871,12595 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307 5550,12305 5484,12320 5411,12380 5362,12469
 (nördliches Spreeufer): asphaltiert mit Rillen	Q1 5362,12469 5356,12494 5372,12538
 (nördliches Spreeufer): Parkweg	Q1 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910

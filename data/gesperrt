@@ -1922,12 +1922,12 @@ Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross::ignrte 11632,8302 1
 Flughafenstr. -> Weisestr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3::igndisp 11898,8362 11767,8330 11770,8292
 Weisestr. -> Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3::igndisp 11770,8292 11767,8330 11632,8302
 unpassierbarer Mittelstreifen	3nocross::ignrte 6183,13083 6164,12980 6157,12933 6150,12875 6124,12694
-Stromstr. -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6157,12933 6164,12980 6129,12976
+Stromstr. -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6157,12933 6164,12980 6122,12971
 Stromstr. -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6183,13083 6164,12980 6190,12978
-Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6129,12976 6164,12980 6183,13083
-Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6129,12976 6164,12980 6190,12978
+Bundesratufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6122,12971 6164,12980 6183,13083
+Bundesratufer -> nördliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6122,12971 6164,12980 6190,12978
 nördliches Spreeufer -> Stromstr.: unpassierbarer Mittelstreifen	3::igndisp 6190,12978 6164,12980 6157,12933
-nördliches Spreeufer -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6190,12978 6164,12980 6129,12976
+nördliches Spreeufer -> Bundesratufer: unpassierbarer Mittelstreifen	3::igndisp 6190,12978 6164,12980 6122,12971
 Lessingstr. -> südliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6124,12694 6150,12875 6138,12877
 Lessingstr. -> Lessingstr.: unpassierbarer Mittelstreifen	3::igndisp 6157,12933 6150,12875 6172,12878
 Lessingstr. -> Lessingstr.: unpassierbarer Mittelstreifen	3::igndisp 6172,12878 6150,12875 6124,12694
@@ -2795,7 +2795,7 @@ Schranke	BNP:0:-59:trailer=3 5388,19186
 Drängelgitter	BNP:3:-65:trailer=10 10173,1049
 Drängelgitter	BNP:3:-68:trailer=10 10223,1029
 Schranke	BNP:0:-180:trailer=5 7222,6436
-Drängelgitter	BNP:3:83:trailer=10 6129,12976
+halbes Drängelgitter	BNP:1:77:trailer=5 6122,12971
 Drängelgitter	BNP:3:20:trailer=10 24207,10858
 Drängelgitter	BNP:5:-155:trailer=no 22482,9550
 Drängelgitter	BNP:5:-139:trailer=no 22280,9629

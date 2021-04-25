@@ -1077,7 +1077,7 @@ der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW
 	RW4;RW4 7595,12980 7776,12945 7822,12937 7873,12927 7930,12912
 Verbundsteinpflaster	RW1; 6239,15553 6127,15688
 alter Asphalt	RW1; 6127,15688 6121,15697 6071,15768 6019,15841 5968,15914 5907,16000
-	RW2; 6127,15688 6239,15553
+Gehwegplatten/Verbundsteinpflaster	RW1; 6127,15688 6239,15553
 	RW2; 6562,15177 6626,15104
 alter Asphalt mit Unebenheiten, relativ eng, kein Unterstreifen gegen parkende Autos	RW1; 5907,16000 5827,16118 5748,16235
 alter Asphalt mit Unebenheiten	RW1; 5748,16235 5651,16507 5596,16662
@@ -2130,7 +2130,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Frühjahr 2021)
 #: source_id: 2147346610
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-04-20 vvv
+#: last_checked: 2021-04-25 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
 #: osm_watch: way id="284761029" version="17"
 Radspur hinter den parkenden Autos	RW3; 12006,12464 11920,12266

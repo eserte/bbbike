@@ -188,7 +188,7 @@ Sauerbruchweg: Gelände der Charité	CS 8487,13351 8630,13172
 (Reichsstr. - Westendallee): Privatstraße	CS 269,12576 151,12541
 (Guerickestr. - Einsteinufer): Privatstraße	CS 4593,12322 4618,12340 4658,12450
 #: XXX_prog: trailer=no implementation missing vvv
-Stromstr: kann über schmale Furt (keine Anhänger!) gequert werden	CP 6190,12978 6164,12980 6129,12976 6106,12981
+Stromstr: kann über schmale Furt (keine Anhänger!) gequert werden	CP 6190,12978 6164,12980 6122,12971 6118,12980
 #: XXX_prog ^^^
 # REMOVED ("normale" Straße, die Märkte sind besser über "An der Ostbahn" erschlossen, jedenfalls für KfZ) --- #: XXX stimmt das noch mit den Märkten? --- Am Wriezener Bahnhof: Privatstraße zu diversen Märkten	CS 12794,11893 12944,11760 12993,11717
 #: XXX_prog should be superseded by a superiour BNP-like implementation/wird irgendwann mal zu "BS" vvv
@@ -1312,6 +1312,11 @@ Mergenthalerring: nicht ausgeschildert	CP2; 14261,8851 14252,8829
 # 
 Hödurstr.: Privatstraße	CS 12647,18289 12751,18401
 # 
+Bundesratufer: nicht ausgeschildert, kurz vor der Brücke die Rampe benutzen	CP; 6183,13083 6164,12980 6122,12971
+# 
+Bochumer Platz: nicht ausgeschildert	CP2; 5938,12848 5914,12845
+Bochumer Platz: als Bundesratufer ausgeschildert	CP2; 5914,12845 5938,12848
+# 
 #: next_check_id: NORD52-2019
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_53_8205_8368_online.pdf (Widmung)
@@ -1376,7 +1381,7 @@ ausgeschildert zur Georg-Knorr-Str. (Industriegebiet)	CP2;  19214,14966 19244,14
 #: next_check_id: HILDAGEIRINGERWEG-2019
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (hier: Stichstraße Invalidenstraße)
 #: XXX wann wird die Straße ausgeschildert?
-#: last_checked: 2021-02-19
+#: last_checked: 2021-04-25
 #: check_frequency: 60d
 Hilda-Geiringer-Weg: westliche Einfahrt nicht ausgeschildert	CP2; 8167,13457 8174,13390
 # 
