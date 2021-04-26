@@ -19384,7 +19384,7 @@ EOF
        until => $isodate2epoch->("2019-05-19 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 4, start => "2020-06-02T00:00:00"]],
-       recurrence_prewarn_days => -1, # wegen Corona
+       recurrence_prewarn_days => -2, # wegen Corona
        text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 26.04.2019 bis 19.05.2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
@@ -30646,7 +30646,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-04-24 (pvw)
+#: last_checked: 2021-04-26
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30861,7 +30861,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-25
+#: last_checked: 2021-04-26
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32294,6 +32294,8 @@ EOF
        source_id => '2147346994',
        data  => <<EOF,
 #: next_check_id: WINCKELMANN-2021
+#: XXX: laut rbb nur bis 17.5.2021
+#: next_check: 2021-05-17
 	q4::inwork 17507,4216 17476,4337 17428,4503
 EOF
      },
