@@ -150,17 +150,18 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: by: https://pbs.twimg.com/media/Edhji9MXkAEUNXI?format=jpg
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1035534.php ("Bauarbeiten an der B 96a Süd kommen weiter voran")
 #: by: https://www.berliner-woche.de/altglienicke/c-verkehr/weitere-arbeiten-an-der-b-96a-sued_a297554 (Bau neuer Geh- und Radwege)
+#: by: https://twitter.com/VIZ_Berlin/status/1386983867136057344
 #: source_id: 2147342746 (nicht mehr aktiv)
 #: source_id: 2147343246 (nicht mehr aktiv)
 #: source_id: 2147342800 (bis 31.05.2021)
-#: source_id: 2147346790 (bis 31.05.2021)
+#: source_id: 2147346790 (bis 30.06.2021)
 # REMOVED (existiert nicht mehr) --- #: osm_watch: way id="846548652" version="2"
 #: osm_watch: way id="871408060" version="1"
 #: XXX wird auch zwischen Grünbergallee und Paradiesstr. ein Radweg entstehen?
 #: XXX wird auch auf der Paradiesstr. zwischen B96a und Johannes-Tobei-Str. auf der westlichen Seite ein Radweg entstehen, möglicherweise ein Zweirichtungsradweg?
-#: last_checked: 2021-03-20 (mapillary)
+#: last_checked: 2021-04-24
 #: check_frequency: 120d
-#: next_check_id: 2021-05-31
+#: next_check: 2021-06-30
 # REMOVED --- #: next_check: 2021-01-31
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271
 # REMOVED (Radweg) --- B96a (Kfz-Straße)	2 21115,271 21286,449 21613,923 21656,989 21829,1351
@@ -1258,7 +1259,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021
-#: last_checked: 2021-04-19
+#: last_checked: 2021-04-27
 #: check_frequency: 30d
 #: next_check: 2021-06-30
 # REMOVED (Arbeiten am Bahnhof dauern länger) --- #: next_check: 2021-04-01
@@ -1675,7 +1676,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
 #: by: http://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee)
 #: osm_watch: way id="850742955" version="1"
-#: last_checked: 2021-03-20
+#: last_checked: 2021-04-26 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2021-12-31
 Ahornallee	1s:q3 1589,11483 1574,11379
@@ -3254,7 +3255,7 @@ Rudi-Arndt-Str.: Einbahnstraßenregelung	1s:q4:inwork 13449,13892 13359,13832
 Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 15320,12375 15408,12394
 # 
 #: next_check_id: NKZ-2020
-#: last_checked: 2021-04-19
+#: last_checked: 2021-04-27
 (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
@@ -3533,8 +3534,8 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: bis Mai 2021)
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 06.06.2021) vvv
-#: last_checked: 2021-04-22 vvv
-#: next_check: 2021-05-01 vvv
+#: last_checked: 2021-04-27 vvv
+#: next_check: 2021-06-06 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875 10672,11870 10662,11863
@@ -3555,7 +3556,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
 #: osm_watch: node id="6778873745" version="1"
-#: last_checked: 2021-04-19
+#: last_checked: 2021-04-27
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3660,7 +3661,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="5096644" version="16"
 #: priority: #C
-#: last_checked: 2021-04-19
+#: last_checked: 2021-04-27
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -4219,7 +4220,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: osm_watch: way id="23099023" version="11"
 #: osm_watch: way id="23099024" version="8"
 #: osm_watch: way id="103531998" version="7"
-#: last_checked: 2021-04-11
+#: last_checked: 2021-04-26 (mapillary)
 # REMOVED --- #: next_check: 2021-03-15
 # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645
 Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603

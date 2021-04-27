@@ -16339,7 +16339,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014203',
        data  => <<EOF,
-	q4::inwork; 18226,13506 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467 18946,13472 19181,13485
+	q4::inwork; 18226,13506 18291,13500 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467 18946,13472 19181,13485
 EOF
      },
      { from  => undef, # 
@@ -19383,14 +19383,14 @@ EOF
      { from  => $isodate2epoch->("2019-04-25 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-19 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
-       recurrences => [['yearly', days => 25, months => 4, start => "2020-06-02T00:00:00"]],
-       recurrence_prewarn_days => -2, # wegen Corona
+       recurrences => [['yearly', days => 25, months => 4, start => "2021-06-02T00:00:00"]],
        text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 26.04.2019 bis 19.05.2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.915775.php (Absage 2020)
 #: by: https://www.wollenschlaeger-berlin.de/54-neukoellner-maientage/ (geplant: 28.4.2021 - 24.5.2021)
+#: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
 	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
@@ -26040,9 +26040,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2020-12-01 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-12-02 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 02. Dezember 2020 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2021-04-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-04-27 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. April 2021 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -30861,7 +30861,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-26
+#: last_checked: 2021-04-27
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31127,7 +31127,7 @@ EOF
 #: source_id: 2147346155 (nur noch bis 18.8.2020 statt 6.9.2020)
 #: source_id: 2147346227 (aber hier doch wieder bis 6.9.2020)
 #: note: nach dem Umstellung nur einige Umwege übrig (z.B. Groß-Ziethener Chaussee -- geradeaus); Richtund SO wird der Radverkehr wohl auf der Fahrbahn geführt
-	q4::inwork; 17001,1157 16908,1217 16815,1278
+	q4::inwork; 17001,1157 16908,1217 16839,1262 16815,1278
 	q4::inwork; 16908,1217 16975,1262
 	q3::inwork; 16975,1262 16908,1217
 EOF
@@ -31213,7 +31213,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann ist die Fahrbahn wieder offen?
 #: also_indoor: traffic
-#: last_checked: 2020-10-12
+#: last_checked: 2021-04-26 (mapillary)
 	q4::inwork -3252,12580 -3444,12580
 EOF
      },

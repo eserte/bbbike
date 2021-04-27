@@ -264,8 +264,8 @@ Hirtenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 11012,13278 10925,13
 # REMOVED (mittlerweile komplett gesperrt) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021 --- #: osm_watch: way id="339201210" version="3" --- #: also_indoor: search Neue Roﬂstraﬂenbr¸cke --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 21d --- Neue Roﬂstraﬂenbr¸cke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: last_checked: 2021-04-22 vvv
-#: next_check: 2021-05-01 vvv
+#: last_checked: 2021-04-27 vvv
+#: next_check: 2021-06-06 vvv
 (Umfahrung Baustelle Neue Roﬂstraﬂenbr¸cke): einige Fuﬂg‰nger	q3::inwork 10680,11875 10650,11909 10642,11901 10590,11840 10599,11819
 Neue Roﬂstr.: Fahrbahn gesperrt	q4::inwork 10687,11853 10722,11816
 #: next_check ^^^
@@ -276,8 +276,8 @@ Neue Roﬂstr.: Fahrbahn gesperrt	q4::inwork 10687,11853 10722,11816
 # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roﬂstraﬂenbr¸cke die Zufahrt komplett gesperrt (bis 29. M‰rz 2019?)
 #: source_id: 2147343739
 #: source_id: 2147343772
-#: last_checked: 2020-05-21
-#: next_check: 2021-05-01
+#: last_checked: 2021-04-27
+#: next_check: 2021-06-06
 M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke, Restaurantbetrieb	q2::inwork 10687,11853 10869,11949
 # 
 # REMOVED --- #: source_id: 2147341587 --- #: last_checked: 2017-11-01 vvv --- #: check_frequency: 21d vvv --- J‰gerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q2::inwork 9195,11972 9393,12000 --- J‰gerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q3::inwork 9393,12000 9523,12019
@@ -1340,8 +1340,8 @@ Fritz-Schiff-Weg: Fuﬂg‰nger	q1 13457,12505 13476,12461 13448,12340
 (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10662,11863 10672,11870
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX nach den Bauarbeiten den alten Eintrag wieder herstellen
-#: last_checked: 2020-02-03
-#: next_check: 2021-05-01
+#: last_checked: 2021-04-27
+#: next_check: 2021-06-06
 (Fischerinsel, Spreekanalufer): Bauarbeiten, Restaurantbetrieb, Engstelle	q2::inwork 10672,11870 10680,11875 10776,11942
 # --- #: note: an schˆnen Tagen (oder immer?) zus‰tzliche Engstelle durch Restaurantbetrieb ˆstlich der Roﬂstraﬂenbr¸cke
 # --- (Fischerinsel, Spreekanalufer): Fuﬂg‰nger	q1 10672,11870 10680,11875 10776,11942
@@ -5363,4 +5363,5 @@ Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q1 2150,22464 2015,22435 1834,22421 1
 (Bollersdorfer Weg - Amselhainer Weg): Fuﬂg‰nger	q2 21849,15404 21860,15458
 (Rosenthaler Weg - Aubertstr.): einige Fuﬂg‰nger	q1 11747,22496 11278,22848 11220,22886
 (Blankenfelder Str. - Goetheweg): einige Fuﬂg‰nger	q1 10968,22546 11220,22886 11228,22914 11219,22932 11162,22939
+(KGA Freies Land, G-Weg): gemeinsamer Geh- und Radweg, schmal	q2 12908,17807 12764,17725 12630,17636
 #: by: ^^^

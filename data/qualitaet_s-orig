@@ -304,7 +304,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-16-12-2020_mit-anhang.pdf (Asphaltierung vorgesehen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ampel am Sachsendamm: "man hofft auf eine Umsetzung im Herbst (2021)")
-#: last_checked: 2021-03-02 vvv
+#: last_checked: 2021-04-26 (daf) vvv
 #: check_frequency: 120d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7250,8223 7225,8219 7158,8208 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7225,8219 7250,8223
@@ -568,7 +568,7 @@ Wuhlheide: Waldweg	Q2 21365,5832 21406,5864
 Wuhlheide: unebener Asphalt	Q1- 21406,5864 21561,5955
 Wuhlheide: Waldweg	Q2+ 21561,5955 21653,6037 21737,6068
 Wuhlheide: Waldweg, Feinschotter	Q1- 21737,6068 21832,6129 21869,6190 21958,6248 22000,6245
-(An der Alten Försterei - Rudolf-Rühl-Allee): Asphalt	Q1 21406,5864 21374,5886 21243,6046
+(An der Alten Försterei - Rudolf-Rühl-Allee): Asphalt	Q0 21406,5864 21374,5886 21243,6046
 (Hegemeisterweg - Modellpark Wuhlheide): Asphalt	Q0 18406,7760 18437,7752 19045,6959 19069,6928
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2+ 19463,7117 19223,7189
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19223,7189 19161,7109 19084,7009 19080,6986 19069,6928 19052,6823 18948,6578
@@ -959,7 +959,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-04-26
+#: last_checked: 2021-04-27
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -28197,7 +28197,7 @@ Sprengelstr. (Wilhelmstadt): Gehwegplatten	Q1+ -4026,12720 -4119,12763
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022; Asphaltierung)
 #: by: https://www.berliner-woche.de/spandau/c-bauen/spandau-erneuert-bis-2025-das-rathaus-schulen-strassen-und-friedhoefe_a307134
 #: XXX geplanter Umbau der Straße --- Asphaltiertung ist geplant
-#: last_checked: 2020-10-12
+#: last_checked: 2021-04-26 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2022-12-31
 Betckestr.: Kopfsteinpflaster	Q2 -3635,12572 -3444,12580 -3252,12580 -3170,12603 -3142,12615 -3113,12549
@@ -29626,6 +29626,7 @@ Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 Blankenburger Chaussee [zur Straße 47]: Asphalt	Q0 14650,21649 14670,21720 14697,21760 14746,21828 14742,21843
 Parkanlage: Holzbohlen	Q1 13261,20919 13075,20817
 Am Weingarten: Beton	Q1+ 13867,14507 13837,14563
+(KGA Freies Land, G-Weg): Gehwegplatten	Q1 12908,17807 12764,17725 12630,17636
 #: by ^^^
 # 
 #: by: mapillary, osm: vvv
@@ -29827,6 +29828,7 @@ Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 21047,927
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 20971,1046
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 20912,1127
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 7012,15571
+Kreuzungsbereich asphaltiert	Q0 5943,14049
 #: by: mapillary
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 4248,18066
 Einmündungsbereich mit Kopfsteinpflaster	Q2 15162,11458

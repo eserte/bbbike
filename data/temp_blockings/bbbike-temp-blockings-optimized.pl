@@ -2746,7 +2746,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-26
+#: last_checked: 2021-04-27
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2868,7 +2868,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: add_fragezeichen: Wann ist die Fahrbahn wieder offen?
 #: also_indoor: traffic
-#: last_checked: 2020-10-12
+#: last_checked: 2021-04-26 (mapillary)
 	q4::inwork -3252,12580 -3444,12580
 ',
          'from' => undef,
