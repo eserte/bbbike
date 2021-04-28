@@ -206,7 +206,7 @@ als Puschkinallee 6c, 6d ausgeschildert	CP2; 13999,9842 14077,10016
 als Sackgasse ausgeschildert	CP2; 14671,10751 14562,10782
 Radfahren durch den Park erlaubt	CS 6534,1702 6673,1748 6844,1813
 #: by: Ingrid Beese:
-Teltower Weg: nicht ausgeschildert	CP2; -107,5880 -174,5941
+Teltower Weg: nicht ausgeschildert	CP2; -119,5885 -182,5927
 Kreisverkehr	Roundabout 19907,12501
 Röntgentaler Weg: durch den Schloßpark	CS 16166,25767 16222,25829 16532,26174
 (Autobahnzubringer): Fahrbahn ist Kraftfahrzeugstraße	CS 18034,2526 18247,2490 18496,2471
@@ -785,7 +785,7 @@ Bordsteine beim Überqueren der Wuhletalstr.	CS 20801,17821 20728,17670 20657,175
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7138 (Realisierung einer Querung Anfang 2021, vielleicht)
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/baumassnahme-an-der-grunewaldstrasse-haengt-von-senatsplaenen-ab_a252769
 #: XXX Realisierung einer Querung geplant
-#: last_checked: 2021-02-21 (mapillary)
+#: last_checked: 2021-04-28
 #: check_frequency: 120d
 Bordsteine beim Überqueren der Grunewaldstr.	CP; 6851,9365 6917,9274 7001,9291
 Quastenhornweg: Privatstraße	CS -7595,4374 -7557,4340 -7473,4306 -7413,4304
@@ -1523,6 +1523,7 @@ Schillerhof: Hausdurchfahrt	CP2; 6928,17154 7069,17204
 #: check_frequency: 90d
 Münsterberger Weg: nicht ausgeschildert	CS 24172,11320 24029,11363
 # 
+(Waltraudstr. - Clayallee): entlang des U-Bahneinschnitts	CS 919,4815 935,4814 1253,4788 1447,4757
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)
 ##: by: https://www.rbb24.de/panorama/thema/2020/coronavirus/av7/video-bergmannstr-polizei-kontrolle-maskenpflicht-radfahrer.html

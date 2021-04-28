@@ -24939,7 +24939,7 @@ EOF
        data  => <<EOF,
 # REMOVED (laut osm fertig) --- #: XXX Bis wann sind die Bauarbeiten fertig? --- #: last_checked: 2015-12-05 --- #: check_frequency: 30d
 	2::inwork -1296,2025 -1278,2034 -1082,2140
-# REMOVED (weitgehend fertig) ---	2::inwork -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2602,1291
+# REMOVED (weitgehend fertig) ---	2::inwork -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2605,1302
 EOF
      },
      { from  => 1442181600, # 2015-09-14 00:00
@@ -27961,7 +27961,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2021-04-13
+#: last_checked: 2021-04-27
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28897,8 +28897,8 @@ EOF
 EOF
      },
      { from  => 1552239604, # 2019-03-10 18:40
-       until => $isodate2epoch->("2021-04-30 18:00:00"), # 1601503199, # 2020-09-30 23:59
-       text  => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis Ende April 2021',
+       until => $isodate2epoch->("2021-06-30 18:00:00"), # 1601503199, # 2020-09-30 23:59
+       text  => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis Ende Juni 2021',
        type  => 'handicap',
        accept_multi_feature_distance => 1500,
        data  => <<EOF,
@@ -29270,7 +29270,7 @@ EOF
 #: also_indoor: traffic (H)
 #: last_checked: 2021-04-11
 #: check_frequency: 60d
-#: next_check: 2021-04-30
+#: next_check: 2021-06-30
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
 EOF
@@ -30861,7 +30861,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-27
+#: last_checked: 2021-04-28
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32406,6 +32406,39 @@ EOF
        source_id => 'LS/721-E/21/032',
        data  => <<EOF,
 	2::inwork 49011,71344 48996,71176 48982,71121 48929,70947 49089,70562 49253,70168
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       permanent => 1,
+       text  => 'Dahlemer Feld: kann wegen Beweidung gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::temp -1846,8129 -1787,7932 -1643,7828 -1328,7597
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Brümmerstr.: zwischen Thielallee und Fabeckstr. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Wie lange gehen die Bauarbeiten?
+#: also_indoor: traffic
+#: priority: #A
+#: last_checked: 2021-04-28
+	q4::inwork 2523,5114 2746,5537
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Kulmer Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Wie lange gehen die Bauarbeiten?
+#: also_indoor: traffic
+#: priority: #A
+#: last_checked: 2021-04-28
+	q4::inwork; 7771,9479 7829,9723
 EOF
      },
     );

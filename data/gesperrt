@@ -39,8 +39,8 @@ Breitenbachplatz (Ostseite)	1 3981,6850 4061,6753 4103,6716 4141,6688 4248,6620 
 Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,4526 -5386,4539 -5341,4511 -5358,4404 -5356,4296 -5310,4216
 Bayerischer Platz	1 6059,9118 6044,9223 6084,9242 6131,9241 6152,9136 6147,9100 6115,9088 6066,9094 6059,9118
 orthodoxe Kirche	1 3952,8980 3831,9052
-U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2313,4901 2190,4823 2079,4769 2027,4792
-U-Bahn Dahlem	1 2027,4792 2095,4805 2169,4854 2217,4884 2288,4932 2454,5067 2499,5144 2717,5578
+U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2302,4914 2185,4831 2079,4769 2027,4792
+U-Bahn Dahlem	1 2027,4792 2095,4805 2166,4858 2212,4891 2280,4941 2454,5067 2499,5144 2717,5578
 Am Großen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1999 -6021,2068 -5945,2381 -5847,2588 -5737,2746 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5893,1969 -5903,1872 -5885,1791 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
 Wilhelplatz	1 -7232,445 -7219,454 -7064,584
 Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
@@ -2577,8 +2577,8 @@ tragen (Treppe S-Bhf. Marzahn, ca. 35 Stufen)	0:35:-230 19567,15406
 tragen (Treppe S-Bhf. Marzahn, ca. 35 Stufen)	0:35:-154 19636,15417
 tragen (13 Stufen)	0:30:-195 7924,12872
 tragen (2 x 5 Stufen)	0:30:-150 4985,6370
-tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20:-40 2301,4917
-tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20:-32 2181,4835
+tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20:-40 2292,4927
+tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20:-34 2175,4845
 tragen (Eisenbahnbrücke Templiner See)	0:60:-168 -15537,-4535
 tragen (Eisenbahnbrücke Templiner See)	0:60:-230 -15652,-4441
 tragen (Eisenbahnbrücke Caputh)	0:60:-167 -18002,-7496
@@ -2833,6 +2833,7 @@ Drängelgitter, kann umfahren werden	BNP:3:-152:trailer=10 14969,10138
 Schwingtor	BNP:3:-252:trailer=10 14146,12921
 Schwingtor	BNP:5:-2:trailer=10 17490,13133
 Schwingtor	BNP:5:-94:trailer=10 17684,13133
+Schwingtor	BNP:5:-86:trailer=10 935,4814
 Schranke	BNP:3:-36:trailer=10 8623,13049
 Drängelgitter	BNP:3:-216:trailer=10 18788,27989
 Schranke	BNP:3:-236:trailer=10 -2160,17921
@@ -3247,7 +3248,6 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10063,12438
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
-Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
 Neue Plantage: hier noch Baustelle	2:inwork -13100,-1411 -13017,-1426

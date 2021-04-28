@@ -54,8 +54,8 @@ Inselstr. Schwanenwerder	1 -5310,4216 -5393,4211 -5453,4274 -5471,4412 -5442,452
 Bayerischer Platz	1 6059,9118 6044,9223 6084,9242 6131,9241 6152,9136 6147,9100 6115,9088 6066,9094 6059,9118
 #: confirmed_by: osm
 orthodoxe Kirche	1 3952,8980 3831,9052
-U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2313,4901 2190,4823 2079,4769 2027,4792
-U-Bahn Dahlem	1 2027,4792 2095,4805 2169,4854 2217,4884 2288,4932 2454,5067 2499,5144 2717,5578
+U-Bahn Dahlem	1 3216,6393 3123,6318 3023,6246 2950,6141 2898,5947 2823,5672 2797,5624 2746,5537 2523,5114 2469,5043 2302,4914 2185,4831 2079,4769 2027,4792
+U-Bahn Dahlem	1 2027,4792 2095,4805 2166,4858 2212,4891 2280,4941 2454,5067 2499,5144 2717,5578
 Am Großen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1999 -6021,2068 -5945,2381 -5847,2588 -5737,2746 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5893,1969 -5903,1872 -5885,1791 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
 Wilhelplatz	1 -7232,445 -7219,454 -7064,584
 Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
@@ -342,7 +342,7 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahren-gegen-die-einbahnstrasse_a238207
 #: XXX: Wird die Einbahnstraße für Radfahrer geöffnet?
 #: osm_watch: way id="4475205" version="10"
-#: last_checked: 2021-01-25 (mapillary)
+#: last_checked: 2021-04-28
 #: check_frequency: 90d
 Gritznerstr.	1 4511,6318 4555,6403
 # 
@@ -1259,7 +1259,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021
-#: last_checked: 2021-04-27
+#: last_checked: 2021-04-28
 #: check_frequency: 30d
 #: next_check: 2021-06-30
 # REMOVED (Arbeiten am Bahnhof dauern länger) --- #: next_check: 2021-04-01
@@ -2250,6 +2250,7 @@ tragen (4 Stufen)	0:10 -440,4554
 tragen (5 x 10 Stufen)	0:60 -3646,1539
 tragen (41 Stufen)	0:45 -3813,2459
 tragen (18 Stufen)	0:30 -1802,1919
+#: note: oder die wilde sehr steile Rampe daneben benutzen
 tragen (15 Stufen)	0:25 115,2340
 tragen (viele weite Stufen)	0:60 -735,4407
 tragen (20 Stufen)	0:30 13644,21808
@@ -2397,8 +2398,8 @@ tragen (Treppe S-Bhf. Marzahn, ca. 35 Stufen)	0:35 19567,15406
 tragen (Treppe S-Bhf. Marzahn, ca. 35 Stufen)	0:35 19636,15417
 tragen (13 Stufen)	0:30 7924,12872
 tragen (2 x 5 Stufen)	0:30 4985,6370
-tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2301,4917
-tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2181,4835
+tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2292,4927
+tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2175,4845
 tragen (Eisenbahnbrücke Templiner See)	0:60 -15537,-4535
 tragen (Eisenbahnbrücke Templiner See)	0:60 -15652,-4441
 tragen (Eisenbahnbrücke Caputh)	0:60 -18002,-7496
@@ -2765,6 +2766,7 @@ Schwingtor	BNP:3::trailer=10 14146,12921
 Schwingtor	BNP:5::trailer=10 17490,13133
 #: note: kann offen sein, z.B. am 2016-02-12 (siehe mapillary), am 2020-05-30 gegen 12:30 Uhr
 Schwingtor	BNP:5::trailer=10 17684,13133
+Schwingtor	BNP:5::trailer=10 935,4814
 # REMOVED (mittlerweile meistens (immer?) offen) --- #: note: am 2016-03-03 morgens war das Tor zu, ansonsten habe ich es nie vorher geschlossen gesehen (allerdings bin ich meistens nur abends vorbei) --- #: note: am 2016-03-09 abends war das Tor zu --- #: note: am 2016-04-15 abends war das Tor offen --- Schwingtor	BNP:5::trailer=10 8369,13465
 # REMOVED (ist nun eine komplette Sperre) ---  #: note: am 2016-03-09 abends war das Tor zu --- #: note: am 2016-04-15 abends war das Tor vermutlich zu (nicht sicher) --- Schwingtor	BNP:5::trailer=10 8363,13402
 Schranke	BNP:3::trailer=10 8623,13049
@@ -3556,7 +3558,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
 #: osm_watch: node id="6778873745" version="1"
-#: last_checked: 2021-04-27
+#: last_checked: 2021-04-28
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3661,7 +3663,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="5096644" version="16"
 #: priority: #C
-#: last_checked: 2021-04-27
+#: last_checked: 2021-04-28
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -4290,9 +4292,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #: check_frequency: 360d
 Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 # 
-#: last_checked: 2013-10-22
-#: check_frequency: 540d
-Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129
+# REMOVED (-> temp blockings) --- #: last_checked: 2013-10-22 --- #: check_frequency: 540d --- Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129
 # 
 #: XXX temporär oder dauerhaft gesperrt? vvv
 #: osm_watch: way id="4615233" version="7"
