@@ -156,7 +156,8 @@ Hans-Baluschek-Park: Asphalt	Q0 7305,6183 7393,6452 7605,7109 7707,7415 7733,748
 Hans-Baluschek-Park - Südkreuz: Betonpflaster	Q0- 7757,7563 7777,7644 7789,7692 7792,7704 7789,7718 7774,7724
 (Lotte-Laserstein-Str. - Hans-Baluschek-Park): Betonpflaster	Q0- 7750,7658 7777,7644
 Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8035,9437 7960,9466
-Großgörschenstr.: Kopfsteinpflaster, OK	Q1 7771,9479 7882,9490
+Großgörschenstr.: verfugtes Kopfsteinpflaster	Q1- 7771,9479 7829,9485
+Großgörschenstr.: Asphalt	Q0 7829,9485 7882,9490
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11552,10863 11328,10957
 Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
@@ -1413,7 +1414,7 @@ Fehrbelliner Str.: Kopfsteinpflaster	Q2 10037,14379 10282,14212
 #: confirmed_by: Stephan Hammerstein vvv
 Borussenstr.: wassergebundene Decke	Q1 -4134,1984 -3965,2240
 #: note: Asphaltstreifen in der Fahrbahnmitte, außen noch Kopfsteinpflaster
-Borussenstr.: Asphalt	Q0 -3965,2240 -3938,2287 -3881,2374 -3882,2441
+Borussenstr.: Asphalt	Q0 -3965,2240 -3938,2287 -3881,2374 -3882,2447
 #: confirmed_by ^^^
 #: note ^^^
 # REMOVED (nicht mehr der Fall?) --- Bäkestr.: mäßiger Asphalt	Q1 -7088,-1074 -7051,-1221
@@ -1799,8 +1800,8 @@ verlängerte Verbindungschaussee: Waldweg, Schotter	Q2+ -2825,5588 -3021,5328
 verlängerte Verbindungschaussee: schlechtes Kopfsteinpflaster, sandige Banketten	Q3 -3021,5328 -3093,5223
 verlängerte Verbindungschaussee: Waldweg, Schotter	Q2+ -3093,5223 -3605,4536
 Parforceweg: sehr sandiger und holpriger Waldweg	Q3- -643,7252 -728,7310 -1020,7446
-Parforceweg: Waldweg	Q2 -1020,7446 -1328,7597 -1643,7828
-Parforceweg: Waldweg	Q2 -1643,7828 -1787,7932 -1846,8129
+Parforceweg: Waldweg	Q2 -1020,7446 -1328,7597 -1640,7832
+Parforceweg: Waldweg	Q2 -1640,7832 -1798,7949 -1846,8129
 Parforceweg: Waldweg, sandig	Q3 -1846,8129 -1852,8155
 Parforceweg: Waldweg	Q2+ -1852,8155 -2038,8304 -2161,8354 -2388,8437
 (Schwarzer Weg - Saubucht/Pechsee): Waldweg	Q2+ -2677,7696 -2617,8025 -2561,8110
@@ -10590,7 +10591,7 @@ Bäkepark: Asphalt	Q0 5184,4161 5131,4207 5097,4221 5063,4266
 (am ehem. Osthafen): Kopfsteinpflaster	Q2 13679,10589 13756,10554
 (am ehem. Osthafen): Beton	Q0- 13756,10554 13805,10528
 (am ehem. Osthafen): Kopfsteinpflaster	Q2 13805,10528 13824,10521
-(am ehem. Osthafen): Beton	Q0- 13824,10521 13944,10464 14207,10338 14348,10266 14462,10206 14480,10157
+(am ehem. Osthafen): Beton	Q0- 13824,10521 13944,10464 14207,10338 14361,10259 14462,10206 14480,10157
 (Bossestr. - ehem. Osthafen): Kopfsteinpflaster	Q2 14218,10430 14204,10397 14226,10387
 (Bossestr. - ehem. Osthafen): Beton mit Schienen	Q2+ 14226,10387 14207,10338
 (KGA Neu Berlin): Gehwegplatten	Q1 13636,14900 13699,14801 13704,14780 13759,14723 13759,14706 13776,14675 13765,14665
@@ -12082,7 +12083,7 @@ Schillingstr.: Asphalt mit Querrissen	Q0- 11635,12745 11596,12668 11562,12597 11
 (Verbindungschaussee - Dahlemer Feld, nördlicher Weg): Waldweg, Wurzeln	Q2- -1040,7550 -1248,7704
 (Verbindungschaussee - Dahlemer Feld, nördlicher Weg): Waldweg, teilweise mit unebenen Asphalt befestigt	Q2 -1248,7704 -1852,8155
 Hegauer Weg, Rampe: unbefestigt	Q2 -35,2470 -22,2484
-Sophie-Charlotte-Str.: Kopfsteinpflaster	Q2 1241,4309 1297,4311
+Sophie-Charlotte-Str.: Kopfsteinpflaster	Q2 1246,4310 1297,4311
 #: note: hoher Rollwiderstand
 (Waltraudstr. - Clayallee): Rindenmulch	Q3+ 919,4815 935,4814 1253,4788 1447,4757
 # 
@@ -15170,9 +15171,9 @@ Kaiserstuhlstr.: schlechtes Kopfsteinpflaster	Q3 -2381,3297 -2279,3089 -2221,288
 # 
 #: by: Christian Wegmann: vvv
 #: confirmed_by: srt (aber ein kurzes Stück Beton im mittleren Abschnitt)
-Hohentwielsteig: guter Asphalt	Q0 -563,2862 -491,2717 -298,2577 -266,2507
+Hohentwielsteig: guter Asphalt	Q0 -563,2862 -491,2717 -298,2577 -273,2521
 #: corrected_by: srt (guter Asphalt -> ...)
-Hohentwielsteig: Beton	Q0 -266,2507 -247,2411 -172,2274
+Hohentwielsteig: Beton	Q0 -273,2521 -247,2411 -172,2274
 Taunusstr. (Friedenau): Asphalt	Q0 4785,7438 4909,7436 5059,7436 5239,7437 5272,7458
 #: by: ^^^
 # 
@@ -15204,7 +15205,7 @@ Robert-von-Ostertag-Str.: Verbundsteinpflaster	Q1+ -613,1949 -745,2320
 #: confirmed_by: srt
 #: note: die letzten Meter im Norden (Am Postfenn) sind Kopfsteinpflaster
 Alte Spandauer Poststr.: Waldweg (fester Sandweg)	Q1 -1435,9168 -1487,9271 -1529,9465 -1464,9626 -1467,9768 -1491,9801 -1602,9915 -1860,10317
-Teltower Weg: fester Waldweg, gut befahrbar	Q1 -903,6923 -1020,7446 -1040,7550 -1112,7891 -1317,8836 -1336,9001 -1435,9168
+Teltower Weg: fester Waldweg, gut befahrbar	Q1 -913,6905 -1020,7446 -1040,7550 -1112,7891 -1317,8836 -1336,9001 -1435,9168
 #: by: ^^^
 # 
 #: by: Thorsten Schulz:
@@ -15823,7 +15824,7 @@ Crusemarkstr.: guter Beton	Q0 10712,18975 10825,18634
 #: by: ^^^
 # 
 #: by: anna (flugahab):
-Sophie-Charlotte-Str. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 415,3914 501,3938 575,3965 639,4007 732,4087 806,4130 908,4175 1026,4207 1241,4309
+Sophie-Charlotte-Str. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 415,3914 501,3938 575,3965 639,4007 732,4087 806,4130 908,4175 1026,4207 1246,4310
 # 
 #: by: Sini Bodemer:
 #: corrected_by: srt ("kleinteilig", Q2 -> Q1)
@@ -17375,7 +17376,7 @@ Belfaster Str.: guter Asphalt	Q0 5589,17081 5662,17158 5847,17365 5866,17419 589
 #: by: lucinem (googlemail): vvv
 #: confirmed_by: srt
 Camphausenstr.: sehr guter Asphalt	Q0 169,2264 244,2165 271,2129 324,2034 345,1977 379,1846
-#: confirmed_by: srt (zumindest der mittlere Abschnitt)
+#: confirmed_by: srt
 Gimpelsteig: guter Asphalt	Q0 243,1820 266,1815 379,1846 484,1879 530,1893 565,1903 609,1915 662,1930
 #: by: ^^^
 # 
@@ -20471,12 +20472,15 @@ Stolzingstr.: Asphalt	Q0 1338,25262 1360,25269 1429,25335 1468,25384
 #: confirmed_by: srt (konkretisiert: Kleinpflastersteine -> Mosaikpflaster)
 #: XXX möglicherweise wird hier auch asphaltiert
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1051692.php (Erwähnung einer zukünftigen Fahrbahninstandsetzung 2021)
-#: next_check: 2021-06-30
+#: last_checked: 2021-04-28 (mapillary)
+#: check_frequency: 120d
 Stolzingstr.: Mosaikpflaster, uneben	Q2 1468,25384 1542,25483
 #: corrected_by: srt (Kleinpflastersteine, Q2 -> ...)
 Stolzingstr.: Asphalt	Q0 1542,25483 1558,25505
-#: add_fragezeichen: Ist der Abschnitt zwischen Alemannenstr. und Nibelungenstr. vielleicht auch asphaltiert?
-#: osm_watch: way id="846771701" version="1"
+#: XXX Wird der Abschnitt zwischen Alemannenstr. und Nibelungenstr. auch asphaltiert?
+#: last_checked: 2021-04-28 (mapillary)
+#: check_frequency: 180d
+#: osm_watch: way id="846771701" version="2"
 Stolzingstr.: Mosaikpflaster, uneben	Q2 1558,25505 1644,25620
 #: confirmed_by: srt (nördliches Ende)
 Stolzingstr.: Beton, gut befahrbar	Q0- 1644,25620 1725,25727 1784,25809 1827,25876 1880,26015
@@ -27412,6 +27416,7 @@ Stendaler Str. (Tiergarten): Asphalt mit gepflasterten Bodenschwellen	Q1 6719,14
 Otto-Dix-Str.: Asphalt und Kopfsteinpflasterabschnitte	Q1+ 7187,13126 7356,13213 7500,13283
 Lesser-Ury-Weg: Asphalt und Kopfsteinpflasterabschnitte	Q1+ 7573,13149 7500,13283 7426,13420
 Claire-Waldoff-Promenade: Asphalt und Kopfsteinpflasterabschnitte	Q1+ 7433,13070 7356,13213 7287,13342
+#: confirmed_by: srt
 Bahrfeldtstr.: Kopfsteinpflaster	Q2 14844,10088 14921,10047 14956,10028 14974,10018 15023,9992 15071,9967 15142,9931
 #: confirmed_by: srt vvv
 Fanny-Zobel-Str.: Asphalt	Q0 13936,10062 13975,10187
@@ -29772,6 +29777,7 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 2642,8040
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2756,8025
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2873,8016
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2988,8007
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 4248,18066
 #: by ^^^
 Kreuzungsbereich mit unebenem Kleinsteinpflaster	Q2 15799,14674
 Kreuzungsbereich mit Kleinsteinpflaster	Q2 1761,4255
@@ -29848,8 +29854,6 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 7012,15571
 Kreuzungsbereich asphaltiert	Q0 5943,14049
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 1108,2321
 Kreuzungsbereich glatt gepflastert	Q1 1220,2357
-#: by: mapillary
-Kreuzungsbereich mit Kopfsteinpflaster	Q2 4248,18066
 Einmündungsbereich mit Kopfsteinpflaster	Q2 15162,11458
 Kreuzungsbereich mit Kleinsteinpflaster	Q1 8027,11000
 Kreuzungsbereich asphaltiert	Q0 16861,10923
@@ -29860,4 +29864,7 @@ Kreuzungsbereich asphaltiert	Q0 18416,8163
 Kreuzungsbereich mit glattem Pflaster	Q1 18351,8222
 Kreuzungsbereich asphaltiert	Q0 18221,8328
 Kreuzungsbereich asphaltiert	Q0 18072,8470
+Kreuzungsbereich asphaltiert	Q0 7771,9479
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 7770,9395
+Einmündungsbereich mit Kopfsteinpflaster	Q2 1246,4310
 #: ignore ^^^

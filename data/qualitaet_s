@@ -72,7 +72,8 @@ Hans-Baluschek-Park: Asphalt	Q0 7305,6183 7393,6452 7605,7109 7707,7415 7733,748
 Hans-Baluschek-Park - Südkreuz: Betonpflaster	Q0 7757,7563 7777,7644 7789,7692 7792,7704 7789,7718 7774,7724
 (Lotte-Laserstein-Str. - Hans-Baluschek-Park): Betonpflaster	Q0 7750,7658 7777,7644
 Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8035,9437 7960,9466
-Großgörschenstr.: Kopfsteinpflaster, OK	Q1 7771,9479 7882,9490
+Großgörschenstr.: verfugtes Kopfsteinpflaster	Q1 7771,9479 7829,9485
+Großgörschenstr.: Asphalt	Q0 7829,9485 7882,9490
 Waldemarstr.: Kopfsteinpflaster	Q2 11552,10863 11328,10957
 Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
@@ -1031,7 +1032,7 @@ Trautenaustr.: Kopfsteinpflaster, OK	Q1 5374,9619 5314,9588 5297,9579
 Krumme Str.: Kopfsteinpflaster	Q2 3981,11232 3986,11347 3988,11502
 Fehrbelliner Str.: Kopfsteinpflaster	Q2 10037,14379 10282,14212
 Borussenstr.: wassergebundene Decke	Q1 -4134,1984 -3965,2240
-Borussenstr.: Asphalt	Q0 -3965,2240 -3938,2287 -3881,2374 -3882,2441
+Borussenstr.: Asphalt	Q0 -3965,2240 -3938,2287 -3881,2374 -3882,2447
 Dircksenstr: Kopfsteinpflaster	Q2 10706,13043 10595,13100
 Dircksenstr: Asphalt	Q0 10595,13100 10445,13091 10339,13052
 Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q1 13198,12311 13524,12271
@@ -1328,8 +1329,8 @@ verlängerte Verbindungschaussee: Waldweg, Schotter	Q2 -2825,5588 -3021,5328
 verlängerte Verbindungschaussee: schlechtes Kopfsteinpflaster, sandige Banketten	Q3 -3021,5328 -3093,5223
 verlängerte Verbindungschaussee: Waldweg, Schotter	Q2 -3093,5223 -3605,4536
 Parforceweg: sehr sandiger und holpriger Waldweg	Q3 -643,7252 -728,7310 -1020,7446
-Parforceweg: Waldweg	Q2 -1020,7446 -1328,7597 -1643,7828
-Parforceweg: Waldweg	Q2 -1643,7828 -1787,7932 -1846,8129
+Parforceweg: Waldweg	Q2 -1020,7446 -1328,7597 -1640,7832
+Parforceweg: Waldweg	Q2 -1640,7832 -1798,7949 -1846,8129
 Parforceweg: Waldweg, sandig	Q3 -1846,8129 -1852,8155
 Parforceweg: Waldweg	Q2 -1852,8155 -2038,8304 -2161,8354 -2388,8437
 (Schwarzer Weg - Saubucht/Pechsee): Waldweg	Q2 -2677,7696 -2617,8025 -2561,8110
@@ -9268,7 +9269,7 @@ Bäkepark: Asphalt	Q0 5184,4161 5131,4207 5097,4221 5063,4266
 (am ehem. Osthafen): Kopfsteinpflaster	Q2 13679,10589 13756,10554
 (am ehem. Osthafen): Beton	Q0 13756,10554 13805,10528
 (am ehem. Osthafen): Kopfsteinpflaster	Q2 13805,10528 13824,10521
-(am ehem. Osthafen): Beton	Q0 13824,10521 13944,10464 14207,10338 14348,10266 14462,10206 14480,10157
+(am ehem. Osthafen): Beton	Q0 13824,10521 13944,10464 14207,10338 14361,10259 14462,10206 14480,10157
 (Bossestr. - ehem. Osthafen): Kopfsteinpflaster	Q2 14218,10430 14204,10397 14226,10387
 (Bossestr. - ehem. Osthafen): Beton mit Schienen	Q2 14226,10387 14207,10338
 (KGA Neu Berlin): Gehwegplatten	Q1 13636,14900 13699,14801 13704,14780 13759,14723 13759,14706 13776,14675 13765,14665
@@ -10604,7 +10605,7 @@ Schillingstr.: Asphalt mit Querrissen	Q0 11635,12745 11596,12668 11562,12597 114
 (Verbindungschaussee - Dahlemer Feld, nördlicher Weg): Waldweg, Wurzeln	Q2 -1040,7550 -1248,7704
 (Verbindungschaussee - Dahlemer Feld, nördlicher Weg): Waldweg, teilweise mit unebenen Asphalt befestigt	Q2 -1248,7704 -1852,8155
 Hegauer Weg, Rampe: unbefestigt	Q2 -35,2470 -22,2484
-Sophie-Charlotte-Str.: Kopfsteinpflaster	Q2 1241,4309 1297,4311
+Sophie-Charlotte-Str.: Kopfsteinpflaster	Q2 1246,4310 1297,4311
 (Waltraudstr. - Clayallee): Rindenmulch	Q3 919,4815 935,4814 1253,4788 1447,4757
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
@@ -11991,8 +11992,8 @@ Birkheidering: Asphalt	Q1 23209,728 23256,668 23292,601 23293,576 23237,508 2317
 Bastianstr.: mäßiges Kopfsteinpflaster	Q2 8655,15979 8862,16208
 Kaiserstuhlstr.: schlechtes Kopfsteinpflaster	Q3 -2446,3462 -2350,3312
 Kaiserstuhlstr.: schlechtes Kopfsteinpflaster	Q3 -2381,3297 -2279,3089 -2221,2886
-Hohentwielsteig: guter Asphalt	Q0 -563,2862 -491,2717 -298,2577 -266,2507
-Hohentwielsteig: Beton	Q0 -266,2507 -247,2411 -172,2274
+Hohentwielsteig: guter Asphalt	Q0 -563,2862 -491,2717 -298,2577 -273,2521
+Hohentwielsteig: Beton	Q0 -273,2521 -247,2411 -172,2274
 Taunusstr. (Friedenau): Asphalt	Q0 4785,7438 4909,7436 5059,7436 5239,7437 5272,7458
 Kastanienstr.: schlechtes grobes Kopfsteinpflaster	Q3 5159,2176 5220,2030
 Brauerstr.: Asphalt	Q0 5317,2345 5159,2176 4979,1964
@@ -12004,7 +12005,7 @@ Jägerstr.: schlechtes Kopfsteinpflaster	Q3 5660,2219 5761,2262 5788,2274 5836,22
 Parforceheide: Asphalt	Q0 -1737,1904 -1796,2054 -1717,2084 -1654,1954
 Robert-von-Ostertag-Str.: Verbundsteinpflaster	Q1 -613,1949 -745,2320
 Alte Spandauer Poststr.: Waldweg (fester Sandweg)	Q1 -1435,9168 -1487,9271 -1529,9465 -1464,9626 -1467,9768 -1491,9801 -1602,9915 -1860,10317
-Teltower Weg: fester Waldweg, gut befahrbar	Q1 -903,6923 -1020,7446 -1040,7550 -1112,7891 -1317,8836 -1336,9001 -1435,9168
+Teltower Weg: fester Waldweg, gut befahrbar	Q1 -913,6905 -1020,7446 -1040,7550 -1112,7891 -1317,8836 -1336,9001 -1435,9168
 Alemannenallee: Asphalt	Q0 943,11302 1070,11226 1184,11143
 Kuckhoffstr.: guter Asphalt	Q0 10167,19797 10004,19765
 Kuckhoffstr.: Kopfsteinpflaster	Q2 10004,19765 9962,19757 9878,19741 9717,19692
@@ -12212,7 +12213,7 @@ Schönerlinder Str.: Asphalt	Q0 21799,4319 21633,4355
 Wolfshagener Str.: mäßiger Beton	Q1 11220,18992 10905,18671 10860,18650 10825,18634
 Wolfshagener Str.: Kopfsteinpflaster	Q2 10825,18634 10721,18575 10650,18544 10562,18506 10447,18452
 Crusemarkstr.: guter Beton	Q0 10712,18975 10825,18634
-Sophie-Charlotte-Str. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 415,3914 501,3938 575,3965 639,4007 732,4087 806,4130 908,4175 1026,4207 1241,4309
+Sophie-Charlotte-Str. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 415,3914 501,3938 575,3965 639,4007 732,4087 806,4130 908,4175 1026,4207 1246,4310
 Retzdorffpromenade: kleinteiliges Kopfsteinpflaster	Q1 4886,6819 4985,6818
 Dohlengrund: Beton	Q0 20272,10448 20357,10445 20387,10445
 Dohlengrund: relativ glattes Kopfsteinpflaster	Q1 20387,10445 20542,10439

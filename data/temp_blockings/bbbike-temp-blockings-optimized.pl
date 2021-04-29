@@ -2324,9 +2324,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-04-22
+#: last_checked: 2021-04-29
 #: check_frequency: 14d
-# REMOVED --- #: next_check: 2020-12-05
+#: next_check: 2021-07-01
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
 ',
          'from' => 1611036000,
@@ -3466,7 +3466,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1662069600
        },
        {
-         'data' => '	2::temp -1846,8129 -1787,7932 -1643,7828 -1328,7597
+         'data' => '	2::temp -1846,8129 -1798,7949 -1640,7832 -1328,7597
 ',
          'from' => undef,
          'id' => 3362,

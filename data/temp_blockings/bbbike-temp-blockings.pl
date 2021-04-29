@@ -16807,7 +16807,7 @@ EOF
        text  => 'Vom 6.10.2009 bis 20.10.2009 ist der Königsweg zwischen Eichkampstraße und Hüttenweg wegen Straßenbauarbeiten komplett gesperrt ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -903,6923 -643,7252 -363,7630 100,8339 425,8766
+	2::inwork -913,6905 -643,7252 -363,7630 100,8339 425,8766
 EOF
      },
      { from  => 1255468338, # 2009-10-13 23:12
@@ -18319,7 +18319,7 @@ EOF
        text  => 'Instandsetzung des Radweges Königsweg zwischen Eichkampstraße und Hüttenweg, ab 28.06.2010 für drei Wochen komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -903,6923 -643,7252 -363,7630 100,8339 425,8766
+	2::inwork -913,6905 -643,7252 -363,7630 100,8339 425,8766
 EOF
      },
      { from  => 1278267896, # 2010-07-04 20:24
@@ -28604,9 +28604,9 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-04-22
+#: last_checked: 2021-04-29
 #: check_frequency: 14d
-# REMOVED --- #: next_check: 2020-12-05
+#: next_check: 2021-07-01
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
 EOF
      },
@@ -32414,7 +32414,7 @@ EOF
        text  => 'Dahlemer Feld: kann wegen Beweidung gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp -1846,8129 -1787,7932 -1643,7828 -1328,7597
+	2::temp -1846,8129 -1798,7949 -1640,7832 -1328,7597
 EOF
      },
      { from  => undef, # 
