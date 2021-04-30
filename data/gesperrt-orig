@@ -3720,7 +3720,8 @@ Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 2144
 # REMOVED (offen) --- #: last_checked: 2020-08-06 --- #: check_frequency: 90d --- Rosenrotweg: Bauarbeiten, Straße gesperrt	2::inwork 21487,173 21515,67
 # REMOVED (wieder offen) --- #: next_check_id: KARLMARXSTR-2018 --- #: last_checked: 2019-02-13 --- Alfred-Scholz-Platz: wegen Bauarbeiten kein Zugang zur Karl-Marx-Str.	2::inwork 12753,8187 12779,8188
 # 
-#: XXX wann wird die Straße wieder geöffnet?
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_17_1305_1380_online.pdf (Einziehung)
+#: XXX wann wird die Straße wieder geöffnet? --- vermutlich nie, sollte man also entfernen?
 #: osm_watch: node id="791819743" version="4"
 #: by: osm (kartonage)
 #: confirmed_by: srt

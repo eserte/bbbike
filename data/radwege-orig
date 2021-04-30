@@ -245,10 +245,15 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 	RW1;RW1 11949,10414 12212,10440 12274,10436 12328,10442 12401,10461 12545,10496 12621,10516 12731,10547
 	RW1; 12731,10547 12899,10595
 	RW2; 12985,10665 12930,10621 12899,10595 12731,10547
-	RW4; 13082,10634 13015,10659 12985,10665
-	RW4; 13082,10634 13178,10623
-3m breit	RW4; 13178,10623 13082,10634
-	RW4; 13028,10629 13082,10634
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1080786.php (bis Mai 2021)
+#: XXX Verbreiterung der Radstreifen vvv
+#: last_checked: 2021-04-28 vvv
+#: next_check: 2021-05-31 vvv
+	RW4; 13178,10623 13082,10634 13015,10659 12985,10665
+	RW4; 13028,10629 13082,10634 13178,10623
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
 	RW4;RW4 13178,10623 13206,10651
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.964148.php ("provisorische Schutzelemente")
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964138.php
@@ -6395,6 +6400,7 @@ neu asphaltiert	RW2; 18737,8686 18733,8650 18733,8633 18731,8577 18704,8427 1873
 #: confirmed_by: srt
 	RW6;RW6 7785,5722 7817,5719
 	RW6;RW6 14357,11148 14400,11261
+	RW6;RW6 14328,11320 14286,11186
 #: note: nicht offizielle Spielstraﬂenschilder h‰ngen hier
 	RW6;RW6 2504,1186 2408,1144 2370,1127 2336,1111
 	RW6;RW6 2408,1144 2352,1267
