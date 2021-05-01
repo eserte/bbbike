@@ -823,7 +823,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2746,7 +2746,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-28
+#: last_checked: 2021-05-01
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2840,25 +2840,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (H,G) vvv
 #: note: laut rbb bis 2021-05-03 vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
-#: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
-#: last_checked: 2020-12-27 (mapillary) vvv
-#: next_check: 2021-05-03 vvv
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv --- #: last_checked: 2020-12-27 (mapillary) vvv --- #: next_check: 2021-05-03 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes Stück
 	q2::inwork; 4214,4595 4039,4500
 # REMOVED (nicht mehr, laut rbb) ---	q4::inwork 4179,4662 4214,4595
-#: next_check ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 #: note ^^^
 #: also_indoor ^^^
 ',
          'from' => 1589275980,
          'id' => 3261,
          'source_id' => '2147345834',
-         'text' => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Lipaer Str. wegen Bauarbeiten gesperrt, bis 30.06.2021',
+         'text' => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Lipaer Str. wegen Bauarbeiten gesperrt, bis 03.05.2021',
          'type' => 'handicap',
-         'until' => 1625065200
+         'until' => 1620054000
        },
        undef,
        undef,
@@ -2955,7 +2951,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
-#: last_checked: 2021-02-26 (architektur-urbanistik: weiterhin Hochbaustelle)
+#: last_checked: 2021-05-01
 #: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 ',
@@ -3027,7 +3023,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2021-04-22
+#: last_checked: 2021-05-01
 #: check_frequency: 90d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -3168,9 +3164,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: ABBESTR-2021
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-03-20
+#: last_checked: 2021-05-01
 #: check_frequency: 45d
-	q3::inwork 4674,12076 4755,12236
+# REMOVED (hier nicht) ---	q3::inwork 4674,12076 4698,12124
+	q3::inwork 4698,12124 4755,12236
 ',
          'from' => undef,
          'id' => 3325,

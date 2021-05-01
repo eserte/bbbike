@@ -4510,7 +4510,7 @@ EOF
 	2 12435,8853 12478,8829
 	2 12920,8487 12765,8605
 	2 12478,8829 12628,8711
-	2 12736,8629 12628,8711
+	2 12736,8629 12670,8679 12628,8711
 	2 12240,8964 12316,8921
 EOF
      },
@@ -7621,7 +7621,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005045',
        data  => <<EOF,
-	2::temp 12920,8487 12765,8605 12736,8629 12628,8711 12478,8829 12435,8853 12316,8921 12240,8964
+	2::temp 12920,8487 12765,8605 12736,8629 12670,8679 12628,8711 12478,8829 12435,8853 12316,8921 12240,8964
 EOF
      },
      { from  => 1174640400, # 2007-03-23 10:00
@@ -10014,7 +10014,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006665',
        data  => <<EOF,
-	2::temp 12920,8487 12765,8605 12736,8629 12628,8711 12478,8829 12435,8853 12316,8921 12240,8964
+	2::temp 12920,8487 12765,8605 12736,8629 12670,8679 12628,8711 12478,8829 12435,8853 12316,8921 12240,8964
 EOF
      },
      { from  => 1190067574, # 2007-09-18 00:19
@@ -30861,7 +30861,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-04-28
+#: last_checked: 2021-05-01
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31133,8 +31133,8 @@ EOF
 EOF
      },
      { from  => 1589275980, # 2020-05-12 11:33
-       until => $isodate2epoch->("2021-06-30 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Lipaer Str. wegen Bauarbeiten gesperrt, bis 30.06.2021',
+       until => $isodate2epoch->("2021-05-03 17:00:00"), # 1599231600, # 2020-09-04 17:00
+       text  => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Lipaer Str. wegen Bauarbeiten gesperrt, bis 03.05.2021',
        type  => 'handicap',
        source_id => '2147345834', # (inaktiv)
        data  => <<EOF,
@@ -31144,16 +31144,12 @@ EOF
 #: also_indoor: traffic (H,G) vvv
 #: note: laut rbb bis 2021-05-03 vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
-#: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
-#: last_checked: 2020-12-27 (mapillary) vvv
-#: next_check: 2021-05-03 vvv
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv --- #: last_checked: 2020-12-27 (mapillary) vvv --- #: next_check: 2021-05-03 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes Stück
 	q2::inwork; 4214,4595 4039,4500
 # REMOVED (nicht mehr, laut rbb) ---	q4::inwork 4179,4662 4214,4595
-#: next_check ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 #: note ^^^
 #: also_indoor ^^^
 EOF
@@ -31439,7 +31435,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
-#: last_checked: 2021-02-26 (architektur-urbanistik: weiterhin Hochbaustelle)
+#: last_checked: 2021-05-01
 #: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 EOF
@@ -31648,7 +31644,7 @@ EOF
 #: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2021-04-22
+#: last_checked: 2021-05-01
 #: check_frequency: 90d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -32006,9 +32002,10 @@ EOF
        data  => <<EOF,
 #: next_check_id: ABBESTR-2021
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-03-20
+#: last_checked: 2021-05-01
 #: check_frequency: 45d
-	q3::inwork 4674,12076 4755,12236
+# REMOVED (hier nicht) ---	q3::inwork 4674,12076 4698,12124
+	q3::inwork 4698,12124 4755,12236
 EOF
      },
      { from  => 1611615600, # 2021-01-26 00:00

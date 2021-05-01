@@ -182,7 +182,7 @@ Onkel-Herse-Str.	1 13680,4715 13757,4729 13836,4759 13853,4759 13939,4778
 Paulstr.	3nocross 7051,12426 7077,12575 7085,12610
 Holsteiner Ufer	1 6575,12778 6449,12865 6347,12901
 Händelallee	1 6082,12273 6130,12232 6280,12222 6265,12134 5998,12105 5961,12134
-Wundstr.	1 2254,11051 2272,11074 2346,11147
+Wundstr.	1 2233,11049 2249,11082 2346,11147
 Kühler Weg	1 841,9914 743,9772 616,9602
 Wilhelmstr.: vor der britischen Botschaft dauerhaft für Kfz gesperrt	2 8861,12125 8804,12280
 Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 11019,16465 11004,16360 10997,16280 10989,16197 10982,16121
@@ -706,7 +706,7 @@ Teikeweg: Poller	3 9519,4537 9412,4537 *
 Teikeweg: Poller	3 * 9412,4537 9519,4537
 Medebacher Weg: Schranke	3 * 1896,19801 *
 Dievenowstr.	1 3228,7401 3208,7328 3189,7249 3202,7121
-Abbestr.: nur für Anlieger, herausfahrbare Poller	2:Anlieger 4755,12236 4674,12076
+Abbestr.: nur für Anlieger, herausfahrbare Poller	2:Anlieger 4755,12236 4698,12124 4674,12076
 Knesebeckstr. - Hardenbergstr.	3 4897,11354 4903,11580 4922,11600 4900,11626
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.458560.php (umgedrehte Einbahnstraßenregelung)
 #: by: http://www.berlin.de/ba-spandau/_assets/aktuelles/pressemitteilungen/dokumente/sakrower-kirchweg-konzeptskizze.pdf
@@ -1431,3 +1431,12 @@ Krautstr.: für Autos gesperrt, Radfahrer frei	2 12002,12008 12021,12066
 Waldeyerstr.: für Autos gesperrt, Radfahrer frei	2 15058,12329 15003,12241
 # 
 Clayallee -> Sophie-Charlotte-Str.: Linksabbiegen verboten	3 1283,4260 1297,4311 1246,4310
+# 
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1080100.php (ab 1. Mai 2021, für mehrere Monate)
+#: by: https://mein.berlin.de/projekte/verkehrskonzept-karl-august-kiez/
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/krumme-strasse-fuer-autos-gesperrt_a308592
+#: XXX bleiben die Poller permanent?
+#: last_checked: 2021-05-01
+#: check_frequency: 90d
+Krumme Str.: Poller	3 * 3983,11289 *
+# 

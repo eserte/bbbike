@@ -369,7 +369,7 @@ Zepernicker Str.: asphaltiert	Q0 17039,25861 17011,25830
 Alt-Buch: Asphalt	Q0 17011,25830 16847,25778 16602,25646 16593,25640 16414,25575
 Müggelseedamm: Kopfsteinpflaster, OK	Q1 26620,4936 26971,5025 27097,5108
 Dahlwitzer Landstr.: Asphalt	Q0 25584,6029 25579,5958
-Auguste-Viktoria-Str.: Fahrbahn Kopfsteinpflaster, Radwege Verbundsteinpflaster	Q1 2690,8814 2680,8608 2678,8571 2668,8372
+Auguste-Viktoria-Str.: Fahrbahn Kopfsteinpflaster, Radwege Verbundsteinpflaster	Q1 2685,8819 2680,8608 2678,8571 2668,8372
 Auguste-Viktoria-Str.: Beton	Q0 3733,18376 3909,18342 4009,18322
 Hüttenweg: Kopfsteinpflaster	Q1 1573,5152 1964,5070
 Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig, Wurzeln	Q2 20872,7268 20892,7236 20867,7165 20869,7116 21409,6731 21576,6644
@@ -1029,7 +1029,7 @@ Oberwallstr.: Asphalt	Q0 9898,12161 9883,12251
 Oberwallstr.: Kleinsteinpflaster	Q1 9883,12251 9877,12293 9873,12315
 Oberwallstr.: mäßiger Asphalt	Q1 9873,12315 9858,12410
 Trautenaustr.: Kopfsteinpflaster, OK	Q1 5374,9619 5314,9588 5297,9579
-Krumme Str.: Kopfsteinpflaster	Q2 3981,11232 3986,11347 3988,11502
+Krumme Str.: Kopfsteinpflaster	Q2 3981,11232 3983,11289 3986,11347 3988,11502
 Fehrbelliner Str.: Kopfsteinpflaster	Q2 10037,14379 10282,14212
 Borussenstr.: wassergebundene Decke	Q1 -4134,1984 -3965,2240
 Borussenstr.: Asphalt	Q0 -3965,2240 -3938,2287 -3881,2374 -3882,2447
@@ -1227,6 +1227,7 @@ Jagowstr.: Kopfsteinpflaster	Q2 5427,12495 5486,12581 5543,12664 5601,12756
 Jagowstr.: Asphalt	Q0 5601,12756 5620,13120
 Pohlstr.: Kopfsteinpflaster	Q2 7932,10475 7883,10483 7849,10488
 Schwerinstr.: Kleinsteinpflaster, in der Mitte Asphalt	Q1 7384,10127 7201,10180 7060,10221
+Zietenstr.: Kleinsteinpflaster	Q1 7209,10205 7201,10180 7190,10150
 Damaschkestr.: Kopfsteinpflaster	Q2 3123,10504 3013,10553
 Mierendorffstr.: Asphalt	Q0 3337,12855 3361,12865 3435,12954 3517,13067 3523,13076 3534,13098 3556,13200
 Albrecht-Achilles-Str.: wechselnd Asphalt und gutes Kopfsteinpflaster	Q1 3618,10283 3604,9961 3605,9929
@@ -11686,10 +11687,10 @@ Ruhlaer Str.: Kopfsteinpflaster	Q2 2346,7684 2352,7972 2335,7994
 Marienbader Str.: Kopfsteinpflaster	Q2 2277,7705 2292,7911 2277,7932
 Miquelstr.: Kopfsteinpflaster	Q2 3077,6375 3020,6450 2875,6648 2854,6675 2714,6857 2576,7026 2441,7176 2283,7354 2121,7556 2034,7654
 Bernadottestr.: Kopfsteinpflaster	Q2 3020,6450 2935,6448 2875,6485 2793,6593 2711,6698 2465,6984 2360,7107 2197,7279 2038,7484 1967,7561
-Bernadottestr.: Kopfsteinpflaster	Q1 1967,7561 1946,7580 1930,7594 1749,7800 1709,7848
+Bernadottestr.: Kleinsteinpflaster	Q1 1967,7561 1946,7580 1930,7594 1749,7800 1709,7848
 Heydenstr.: Asphalt	Q0 2565,7637 2553,7606
 Heydenstr.: unebenes Kleinsteinpflaster	Q2 2553,7606 2468,7529 2375,7440 2283,7354 2197,7279
-Sulzaer Str.: Asphalt	Q0 2460,7658 2499,7930
+Sulzaer Str.: Asphalt	Q0 2460,7658 2499,7883 2517,7908
 Schellendorffstr.: Kopfsteinpflaster	Q2 2346,7684 2468,7529 2637,7344 2731,7247
 Selchowstr. (Schmargendorf): Kopfsteinpflaster	Q2 2553,7606 2719,7415 2744,7397
 Luciusstr.: Kopfsteinpflaster	Q2 2038,7484 2121,7556 2213,7637
@@ -11856,7 +11857,8 @@ Gritznerstr.: Kopfsteinpflaster	Q2 4555,6403 4511,6318
 Gritznerstr.: asphaltiert	Q0 4511,6318 4472,6242
 Gritznerstr.: Kopfsteinpflaster	Q2 4472,6242 4430,6165 4414,6134
 Gritznerstr.: asphaltiert	Q0 4414,6134 4380,6049 4312,5889
-Abbestr.: glatte Pflasterung	Q0 4674,12076 4755,12236
+Abbestr.: Asphalt	Q0 4674,12076 4698,12124
+Abbestr.: glatte Pflasterung	Q0 4698,12124 4755,12236
 Abbestr.: Asphalt	Q0 4755,12236 4807,12348
 Kuglerstr.: Kopfsteinpflaster	Q2 11618,16183 11543,16207 11467,16238 11401,16265 11337,16291 11255,16313 11004,16360
 Justus-von-Liebig-Str.: Asphalt	Q0 19495,2535 19704,2726 19878,2899
@@ -16269,9 +16271,9 @@ Am Vogelherd: Asphalt	Q1 981,9806 1093,9952 1212,10109
 Rottannenweg: Gehwegplatten	Q1 678,9558 612,9471
 Rottannenweg: Gehwegplatten	Q1 590,9456 560,9439 495,9409
 Gustav-Freytag-Str. (Grunewald): Verbundsteine	Q1 765,8481 831,8558
-Oberhaardter Weg: Kopfsteinpflaster	Q2 1023,8292 1111,8225
-Griegstr.: Kopfsteinpflaster	Q2 1111,8225 1113,8189 1277,8064 1348,8010 1363,7997 1664,7773
-Nikischstr.: Kopfsteinpflaster	Q2 1113,8189 1011,8060
+Oberhaardter Weg: Kleinsteinpflaster	Q2 1023,8292 1111,8225
+Griegstr.: Kleinsteinpflaster	Q2 1111,8225 1113,8189 1277,8064 1348,8010 1363,7997 1664,7773
+Nikischstr.: Kleinsteinpflaster	Q2 1113,8189 1011,8060
 Regerstr.: Kopfsteinpflaster	Q2 937,8113 1011,8060 1092,8009 1176,8000 1277,8064
 (Zur Hagenstr.): Gehwegplatten	Q0 1111,8225 1181,8301
 Spohrstr.: Kopfsteinpflaster	Q2 1363,7997 1274,7866
@@ -16627,8 +16629,8 @@ Lüdtgeweg: Asphalt	Q0 4137,12411 4136,12494
 Lüdtgeweg: Gehwegplatten, Fahrbahn Kopfsteinpflaster	Q1 4136,12494 4129,12619
 Kohlrauschstr.: Asphalt	Q0 4555,12130 4636,12300
 (Guerickestr. - Einsteinufer): Kopfsteinpflaster	Q3 4593,12322 4618,12340 4658,12450
-Wundtstr.: Asphalt	Q0 2272,11074 2243,11107
-Spiegelweg: Asphalt	Q0 2243,11107 2308,11288
+Wundtstr.: Asphalt	Q0 2249,11082 2222,11104
+Spiegelweg: Asphalt	Q0 2222,11104 2308,11288
 Riehlstr.: Asphalt	Q0 2365,11179 2340,11223 2350,11269 2393,11381 2391,11478
 Dresselstr.: Kopfsteinpflaster	Q2 2308,11288 2350,11269
 Dresselsteig: Asphalt	Q0 2219,11324 2228,11317 2300,11292 2308,11288
@@ -16712,16 +16714,16 @@ Hasensprung (Grunewald): Kleinpflaster	Q1 1485,8845 1474,8859 1440,8903 1415,893
 Herbertstr. (Grunewald): Asphalt	Q0 2132,9267 2056,9446
 Herbertstr. (Grunewald): Asphalt	Q0 2165,9155 2183,9101 2282,8869
 Schleinitzstr.: Asphalt	Q0 2183,9101 2059,8954
-Wangenheimstr.: Asphalt	Q0 2585,9653 2603,9639 2592,9419 2576,9132 2568,9010 2558,8828
+Wangenheimstr.: Asphalt	Q0 2585,9653 2603,9639 2592,9419 2576,9132 2568,9010 2559,8833
 Humboldtstr. (Grunewald): Asphalt	Q0 2449,8902 2453,9156 2467,9428 2477,9551 2484,9671
 Gillweg: Gehwegplatten	Q0 2585,9653 2484,9671 2394,9714
 Wangenheimsteg: Asphalt	Q0 2585,9653 2628,9702
 Melli-Besse-Anlage: Asphalt	Q0 2628,9702 2664,9744
-Kudowastr.: Asphalt mit Fugen	Q1 2831,8590 2831,8797 2829,9076 2829,9259
+Kudowastr.: Asphalt mit Fugen	Q1 2831,8590 2832,8805 2829,9076 2829,9259
 Reinerzstr.: Kopfsteinpflaster	Q2 2678,8571 2361,8608
 Flinsberger Platz: Kopfsteinpflaster	Q2 2919,8582 2831,8590 2680,8608
 Rintelner Str.: Kopfsteinpflaster	Q2 2977,9220 3087,9219
-Orber Str.: Kopfsteinpflaster	Q2 3093,9306 3087,9219 3075,9033 3055,8769
+Orber Str.: Kopfsteinpflaster	Q2 3093,9306 3087,9219 3075,9033 3056,8784
 Kronprinzendamm: Asphalt	Q0 2245,10092 2243,10058 2248,10045 2296,10028 2353,10021 2445,10009 2551,9995
 Bornimer Str.: Kopfsteinpflaster	Q2 2353,10021 2335,9897 2424,9884
 Bornimer Str.: Asphalt	Q0 2424,9884 2482,9870

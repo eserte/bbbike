@@ -199,9 +199,9 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="14"
-#: last_checked: 2021-01-22
+#: last_checked: 2021-05-01
 #: check_frequency: 90d
-Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
+Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
 # 
 # REMOVED (aufgehoben für alle) --- #: XXX wird die Einbahnstraßenregelung für Radfahrer zumindest im östlichen Abschnitt wegen der Radroute aufgehoben? --- #: osm_watch: way id="42826410" version="5" --- Schuckertdamm	1 1344,14978 1465,14963
 Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1344,14978
@@ -1259,7 +1259,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021
-#: last_checked: 2021-04-28
+#: last_checked: 2021-05-01
 #: check_frequency: 30d
 #: next_check: 2021-06-30
 # REMOVED (Arbeiten am Bahnhof dauern länger) --- #: next_check: 2021-04-01
@@ -1984,7 +1984,7 @@ Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13394,10805 13496,1076
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
 Stralauer Allee: unbequem passierbare Straße	3nocross 14218,10430 14405,10340 14558,10264
 Stralauer Str.: Mittelstreifen	3nocross 11221,12250 11300,12241 11347,12223
-Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 12628,8711 12736,8629 12765,8605
+Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 12670,8679 12736,8629 12765,8605
 Sonnenallee: Mittelstreifen	3nocross 13277,8211 13459,8072 13474,8060
 Sonnenallee: Mittelstreifen	3nocross 13011,8416 13038,8394 13102,8343
 Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10659,12259 10625,12206 10574,12131
@@ -3450,7 +3450,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2021-04-24
+#: last_checked: 2021-05-01
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -3463,7 +3463,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 # 
 #: by: wosch
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2021-04-03
+#: last_checked: 2021-05-01
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152 14373,10046
 # 
@@ -3611,14 +3611,14 @@ Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020 wieder offen, bis voraussichtlich 13. September 2020)
 #: by: https://www.kms-sonne.de/baustellennews?date=20201221 (weiterhin gesperrt)
 #: osm_watch: way id="822674838" version="4"
-#: last_checked: 2021-04-22
+#: last_checked: 2021-05-01
 #: check_frequency: 60d
 #: next_check: 2021-06-30
 #Rollbergstr.: Einbahnstraße, offen Richtung Karl-Marx-Str.	1s:q3:inwork 12714,8249 12545,8209
 Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:q4:inwork 12714,8249 12545,8209
 # 
 #: osm_watch: way id="702306263" version="5"
-#: last_checked: 2021-04-22
+#: last_checked: 2021-05-01
 #: check_frequency: 21d
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 # 
@@ -4131,7 +4131,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: note laut rbb bis 3.1.2022
 #: source_id: 2147346461 (bis 31.12.2021)
 #: source_id: 2147346643 (bis 31.12.2021)
-#: osm_watch: way id="194653032" version="21"
+#: osm_watch: way id="194653032" version="22"
 #: osm_watch: way id="846595294" version="2"
 #: osm_watch: way id="38725490" version="15"
 #: also_indoor: traffic (G)
@@ -4465,6 +4465,7 @@ schieben - einzelne Stufen	0:20 1372,8011
 tragen (4 x 12 Stufen)	0:180 876,8131
 schieben (steile Treppe mit seitlicher Rampe)	0:180 1256,7841
 schieben (steile Treppe mit seitlicher Rampe)	0:180 1319,7444
+#: XXX_indoor: etwa 30m südlich der Kreuzung Bernadottestr. gibt es aber eine Überquerungsmöglichkeit
 Clayallee: Mittlestreifen wg. Leitplanke nicht zu queren	3nocross 1955,7531 1967,7561 1987,7593 2034,7654
 Clayallee: Mittelstreifen schlecht zu queren	3nocross 2112,7754 2088,7723 2034,7654
 #: by: MichaelM
@@ -4545,8 +4546,8 @@ tragen (8 Stufen)	0:40 2300,11292
 Thüringerallee: Privatstr.	2 1453,11169 1342,11020
 Bismarckallee: queren nicht möglich	3nocross 1554,8638 1577,8655 1632,8716
 #: corrected_by: srt (BNP:10 -> ...) vvv
-Drängelgitter	BNP:3::trailer=10 1474,8859
-Drängelgitter	BNP:3::trailer=10 1440,8903
+# REMOVED (halber Flügel offen) --- Drängelgitter	BNP:3::trailer=10 1474,8859
+# REMOVED (halber Flügel offen) --- Drängelgitter	BNP:3::trailer=10 1440,8903
 Drängelgitter	BNP:3::trailer=10 1360,9012
 Drängelgitter	BNP:3::trailer=10 1324,9057
 #: corrected_by ^^^

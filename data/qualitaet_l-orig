@@ -5395,7 +5395,11 @@ Sophienstädt - Biesenthal: schadhafter Asphalt	Q1 24120,41684 24102,41213
 Biesenthal: Asphalt	Q0 24102,41213 24106,41050 24185,40670 24374,40395
 Am Hämphorn: rauer Asphalt	Q1 -9842,2798 -9705,2679
 Weinmeisterweg: Asphalt	Q1 -10118,2280 -10373,2541
-entlang der Deponie: Asphalt, mit leichten Unebenheiten	Q0- 14626,1768 14632,1759 14654,1759 14710,1715 14750,1659 14768,1592 14768,1534 14750,1480 14593,1112 14574,1041 14150,839 13957,748 13901,723
+entlang der Deponie: Asphalt, mit leichten Unebenheiten	Q0- 14626,1768 14632,1759 14654,1759 14710,1715 14750,1659 14768,1592 14768,1534 14750,1480 14593,1112 14574,1041 14150,839 13957,748
+#: by: mapillary
+entlang der Deponie: Asphalt mit Wurzelhebungen	Q1- 13957,748 13776,659
+#: by: mapillary
+entlang der Deponie: unbefestigt	Q2 13776,659 13761,642
 (Deponie - Ernst-Thälmann-Str.): unbefestigt	Q2 13957,748 13897,751 13826,796 13798,873
 (Deponie - Ernst-Thälmann-Str.): unbefestigt	Q2- 14150,839 14115,911 14107,918
 Ernst-Thälmann-Str. (Großziethen): Verbundsteinpflaster	Q1+ 14107,918 14020,905 13918,891
@@ -7891,6 +7895,7 @@ Heidestr. (Schönow): Asphalt	Q0 19032,30053 18941,30212 18773,30398 18635,30610 
 #: by: ^^^
 # 
 #: by: mapillary vvv
+Stieleichenstr. (Schönfließ): Asphalt	Q0 4424,26240 4387,26270 4340,26311 4302,26352 4287,26368 4262,26415 4239,26458 4213,26461 4182,26463 4136,26489 4105,26533 4095,26547
 Dorfstr. (Ruhlsdorf): Kleinsteinpflaster	Q2+ 1605,-3599 1460,-3586 1191,-3598 1132,-3612
 Teltow (Bahnstr.) - Ruhlsdorf: Asphalt mit einigen Schäden	Q1 3381,-2844 3344,-2999 3123,-3103 1943,-3583 1605,-3599
 Bahnstr. (Teltow): Asphalt	Q0 3509,-1958 3480,-2051 3472,-2110

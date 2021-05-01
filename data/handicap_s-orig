@@ -127,7 +127,7 @@
 #: osm_watch: way id="26285705" version="7"
 #: osm_watch: way id="69166216" version="7"
 #: source_id: 2147346409 (bis Ende 2021, Gesamtbaumaßnahme bis Ende 2023)
-#: last_checked: 2021-04-24 vvv
+#: last_checked: 2021-05-01 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
@@ -295,7 +295,7 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwor
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="10"
 #: also_indoor: traffic
-#: last_checked: 2021-04-20
+#: last_checked: 2021-04-30 (daf)
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -497,7 +497,7 @@ Jahnstr.: Bauarbeiten, etwa 50m der Fahrbahn sind gesperrt	q3::inwork 11500,9116
 #: XXX laut vmz bis Anfang 2019, laut fritz/rbb bis 30.06.2021
 #: by: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
 #: also_indoor: traffic (H)
-#: last_checked: 2021-03-26
+#: last_checked: 2021-05-01
 #: check_frequency: 90d
 #: next_check: 2021-06-30
 #: valid: -20210630
@@ -560,7 +560,7 @@ Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwo
 #: next_check_id: FASANEN-2021
 #: source_id: 2147346973 (Fernwärmebaustelle in Höhe Kantstr., bis März 2022)
 #: source_id: 2147346972 (- " -)
-#: last_checked: 2021-03-20
+#: last_checked: 2021-05-01
 #: check_frequency: 90d
 #: next_check: 2021-09-30
 #: valid: -20220331
@@ -698,7 +698,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: osm_watch: way id="585753318" version="8"
 #: osm_watch: way id="71392596" version="13"
 #: also_indoor: traffic
-#: last_checked: 2021-04-22 vvv
+#: last_checked: 2021-05-01 vvv
 #: check_frequency: 60d
 #: next_check: 2021-05-07
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
@@ -952,8 +952,8 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: by: https://camera.deckchair.com/park-inn-berlin-alexanderplatz (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/2271-u-5/?postID=666937#post666937 (Pflasterungsarbeiten)
 # REMOVED (gelöscht) --- #: osm_watch: relation id="8743849" version="2"
-#: last_checked: 2021-04-20
-#: check_frequency: 10d
+#: last_checked: 2021-05-01 (webcam)
+#: check_frequency: 7d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944

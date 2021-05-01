@@ -8,6 +8,10 @@
 #: temporary vvv
 # 
 # 
+#: next_check_id: GAERTNER-2021
+#: last_checked: 2021-05-01
+Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775
+# 
 #: next_check_id: HERMANNHESSESTR-2019
 #: XXX wird die temporäre Ampel durch eine permanente ersetzt?
 #: last_checked: 2021-03-30 (mapillary)
@@ -848,7 +852,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 620,12144
 	X 818,11954
 	F 1200,11600
-	X 2254,11051
+	X 2233,11049
 	X 2340,11056
 	X 2621,11065
 	X 3283,11097
@@ -3281,7 +3285,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX bleibt die Ampel Hermannstr./Thomasstr. permanent?
-#: last_checked: 2021-03-24 (mapillary)
+#: last_checked: 2021-05-01
 #: check_frequency: 90d
 	X::inwork 12185,7381
 # 

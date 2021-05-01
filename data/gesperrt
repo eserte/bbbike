@@ -119,7 +119,7 @@ Bethaniendamm	1 12060,11323 12010,11224 11944,11152 11845,11095 11750,11065 1164
 Engeldamm	1 11473,11180 11656,11106 11798,11121 11917,11186 11981,11263 12021,11349
 Bersarinplatz	1 13730,12535 13698,12544 13675,12581 13681,12624 13695,12643 13747,12642 13767,12626 13771,12607 13761,12578 13730,12535
 Petersburger Platz	1 13470,12990 13559,12779
-Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
+Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
 Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1344,14978
 Am Kleinen Wannsee	1 -5499,1349 -5488,1289 -5541,1214 -5749,1146
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5393,2053 5376,2097 5406,2110 5434,2122 5452,2077 5489,1981 5491,1955
@@ -1966,9 +1966,9 @@ Bödikerstr. -> Stralauer Allee: unbequem passierbare Straße	3::igndisp 14447,104
 Mittelstreifen	3nocross::ignrte 11221,12250 11300,12241 11347,12223
 Stralauer Str. -> Dircksenstr.: Mittelstreifen	3::igndisp 11221,12250 11300,12241 11273,12301
 Dircksenstr. -> Stralauer Str.: Mittelstreifen	3::igndisp 11273,12301 11300,12241 11347,12223
-unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross::ignrte 12628,8711 12736,8629 12765,8605
+unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross::ignrte 12670,8679 12736,8629 12765,8605
 Sonnenallee -> Schönstedtstr.: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12765,8605 12736,8629 12643,8533
-Schönstedtstr. -> Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12643,8533 12736,8629 12628,8711
+Schönstedtstr. -> Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12643,8533 12736,8629 12670,8679
 Mittelstreifen	3nocross::ignrte 13277,8211 13459,8072 13474,8060
 Sonnenallee -> Treptower Str.: Mittelstreifen	3::igndisp 13277,8211 13459,8072 13478,8095
 Sonnenallee -> Treptower Str.: Mittelstreifen	3::igndisp 13474,8060 13459,8072 13457,8069
@@ -3522,8 +3522,6 @@ Thüringerallee: Privatstr.	2 1453,11169 1342,11020
 queren nicht möglich	3nocross::ignrte 1554,8638 1577,8655 1632,8716
 Bismarckallee -> Furtwänglerstr.: queren nicht möglich	3::igndisp 1632,8716 1577,8655 1631,8610
 Furtwänglerstr. -> Bismarckallee: queren nicht möglich	3::igndisp 1631,8610 1577,8655 1554,8638
-Drängelgitter	BNP:3:-218:trailer=10 1474,8859
-Drängelgitter	BNP:3:-217:trailer=10 1440,8903
 Drängelgitter	BNP:3:-214:trailer=10 1360,9012
 Drängelgitter	BNP:3:-218:trailer=10 1324,9057
 Tor	BNP:15:-220 1834,8893

@@ -107,7 +107,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="13"
-#: last_checked: 2021-04-22
+#: last_checked: 2021-05-01
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -559,7 +559,7 @@ Zepernicker Str.: asphaltiert	Q0 17039,25861 17011,25830
 Alt-Buch: Asphalt	Q0 17011,25830 16847,25778 16602,25646 16593,25640 16414,25575
 Müggelseedamm: Kopfsteinpflaster, OK	Q1 26620,4936 26971,5025 27097,5108
 Dahlwitzer Landstr.: Asphalt	Q0 25584,6029 25579,5958
-Auguste-Viktoria-Str.: Fahrbahn Kopfsteinpflaster, Radwege Verbundsteinpflaster	Q1- 2690,8814 2680,8608 2678,8571 2668,8372
+Auguste-Viktoria-Str.: Fahrbahn Kopfsteinpflaster, Radwege Verbundsteinpflaster	Q1- 2685,8819 2680,8608 2678,8571 2668,8372
 Auguste-Viktoria-Str.: Beton	Q0 3733,18376 3909,18342 4009,18322
 Hüttenweg: Kopfsteinpflaster	Q1 1573,5152 1964,5070
 #: note: und in der kälteren Jahreszeit kann es an einigen Stellen leicht matschig sein
@@ -635,7 +635,7 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: http://www.infravelo.de/projekt/roennestrasse/ (1. Quartal 2022 - 1. Quartal 2024)
 #: osm_watch: way id="4480580" version="12"
 #: osm_watch: way id="4436949" version="11"
-#: last_checked: 2021-04-02 (mapillary)
+#: last_checked: 2021-05-01
 #: check_frequency: 300d
 #: next_check: 2024-03-31
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
@@ -784,7 +784,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2021-04-22
+#: last_checked: 2021-05-01
 #: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -964,7 +964,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-04-28
+#: last_checked: 2021-05-01
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1408,7 +1408,7 @@ Oberwallstr.: Asphalt	Q0 9898,12161 9883,12251
 Oberwallstr.: Kleinsteinpflaster	Q1- 9883,12251 9877,12293 9873,12315
 Oberwallstr.: mäßiger Asphalt	Q1+ 9873,12315 9858,12410
 Trautenaustr.: Kopfsteinpflaster, OK	Q1 5374,9619 5314,9588 5297,9579
-Krumme Str.: Kopfsteinpflaster	Q2 3981,11232 3986,11347 3988,11502
+Krumme Str.: Kopfsteinpflaster	Q2 3981,11232 3983,11289 3986,11347 3988,11502
 Fehrbelliner Str.: Kopfsteinpflaster	Q2 10037,14379 10282,14212
 #: note: von der Bahn aus gesehen vvv
 #: confirmed_by: Stephan Hammerstein vvv
@@ -1687,6 +1687,7 @@ Jagowstr.: Kopfsteinpflaster	Q2 5427,12495 5486,12581 5543,12664 5601,12756
 Jagowstr.: Asphalt	Q0 5601,12756 5620,13120
 Pohlstr.: Kopfsteinpflaster	Q2 7932,10475 7883,10483 7849,10488
 Schwerinstr.: Kleinsteinpflaster, in der Mitte Asphalt	Q1 7384,10127 7201,10180 7060,10221
+Zietenstr.: Kleinsteinpflaster	Q1 7209,10205 7201,10180 7190,10150
 Damaschkestr.: Kopfsteinpflaster	Q2 3123,10504 3013,10553
 Mierendorffstr.: Asphalt	Q0 3337,12855 3361,12865 3435,12954 3517,13067 3523,13076 3534,13098 3556,13200
 Albrecht-Achilles-Str.: wechselnd Asphalt und gutes Kopfsteinpflaster	Q1 3618,10283 3604,9961 3605,9929
@@ -14279,6 +14280,7 @@ Försterweg: Waldweg, etwas holprig	Q2 -2043,20968 -2101,20891 -1811,20818 -1292,
 #: by: hoffmannbeck:
 Rüdnitzer Zeile: mäßiger Beton	Q1 3572,20020 3504,19972 3402,20109 3331,20056
 #: by: Rita:
+#: confirmed_by: srt
 Johann-Sigismund-Str.: mäßiges Kopfsteinpflaster	Q2 2898,9794 2938,9935 2975,10053 2974,10081
 #: by: S Breddermann:
 Ueckermünder Str.: Asphalt	Q0 9996,16328
@@ -14544,13 +14546,14 @@ Ruhlaer Str.: Kopfsteinpflaster	Q2- 2346,7684 2352,7972 2335,7994
 Marienbader Str.: Kopfsteinpflaster	Q2 2277,7705 2292,7911 2277,7932
 Miquelstr.: Kopfsteinpflaster	Q2 3077,6375 3020,6450 2875,6648 2854,6675 2714,6857 2576,7026 2441,7176 2283,7354 2121,7556 2034,7654
 Bernadottestr.: Kopfsteinpflaster	Q2 3020,6450 2935,6448 2875,6485 2793,6593 2711,6698 2465,6984 2360,7107 2197,7279 2038,7484 1967,7561
-Bernadottestr.: Kopfsteinpflaster	Q1 1967,7561 1946,7580 1930,7594 1749,7800 1709,7848
+#: corrected_by: srt (Kopfsteinpflaster, Q1 -> ...)
+Bernadottestr.: Kleinsteinpflaster	Q1- 1967,7561 1946,7580 1930,7594 1749,7800 1709,7848
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Heydenstr.: Asphalt	Q0 2565,7637 2553,7606
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Heydenstr.: unebenes Kleinsteinpflaster	Q2 2553,7606 2468,7529 2375,7440 2283,7354 2197,7279
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
-Sulzaer Str.: Asphalt	Q0 2460,7658 2499,7930
+Sulzaer Str.: Asphalt	Q0 2460,7658 2499,7883 2517,7908
 Schellendorffstr.: Kopfsteinpflaster	Q2 2346,7684 2468,7529 2637,7344 2731,7247
 Selchowstr. (Schmargendorf): Kopfsteinpflaster	Q2 2553,7606 2719,7415 2744,7397
 Luciusstr.: Kopfsteinpflaster	Q2 2038,7484 2121,7556 2213,7637
@@ -14792,9 +14795,10 @@ Gritznerstr.: asphaltiert	Q0 4414,6134 4380,6049 4312,5889
 #: corrected_by: daf (Asphalt -> ..., neu gemacht)
 #: next_check_id: ABBESTR-2021
 #: XXX Qualität nach den Bauarbeiten genauer überprüfen, außerdem prüfen, ob es Durchfahrtsbeschränkungen o.ä. geben wird
-#: last_checked: 2021-03-20
+#: last_checked: 2021-05-01
 #: check_frequency: 45d
-Abbestr.: glatte Pflasterung	Q0- 4674,12076 4755,12236
+Abbestr.: Asphalt	Q0 4674,12076 4698,12124
+Abbestr.: glatte Pflasterung	Q0- 4698,12124 4755,12236
 Abbestr.: Asphalt	Q0 4755,12236 4807,12348
 #: corrected_by ^^^
 #: by: ^^^
@@ -27452,12 +27456,16 @@ Rottannenweg: Gehwegplatten	Q1- 590,9456 560,9439 495,9409
 #: note ^^^
 #: corrected_by ^^^
 Gustav-Freytag-Str. (Grunewald): Verbundsteine	Q1 765,8481 831,8558
-Oberhaardter Weg: Kopfsteinpflaster	Q2 1023,8292 1111,8225
-Griegstr.: Kopfsteinpflaster	Q2 1111,8225 1113,8189 1277,8064 1348,8010 1363,7997 1664,7773
-Nikischstr.: Kopfsteinpflaster	Q2 1113,8189 1011,8060
+#: corrected_by: srt (Kopfsteinpflaster -> ...)
+Oberhaardter Weg: Kleinsteinpflaster	Q2 1023,8292 1111,8225
+#: corrected_by: srt (Kopfsteinpflaster -> ...)
+Griegstr.: Kleinsteinpflaster	Q2 1111,8225 1113,8189 1277,8064 1348,8010 1363,7997 1664,7773
+#: corrected_by: srt (Kopfsteinpflaster -> ...)
+Nikischstr.: Kleinsteinpflaster	Q2 1113,8189 1011,8060
 Regerstr.: Kopfsteinpflaster	Q2 937,8113 1011,8060 1092,8009 1176,8000 1277,8064
 (Zur Hagenstr.): Gehwegplatten	Q0 1111,8225 1181,8301
 Spohrstr.: Kopfsteinpflaster	Q2 1363,7997 1274,7866
+#: confirmed_by: srt
 Wildpfad: kleinteiliges, aber unebenes Kopfsteinpflaster	Q2 1740,7917 1709,7848 1664,7773 1621,7741 1509,7700 1274,7866
 Königsmarckstr.: Kopfsteinpflaster	Q2 2088,7723 1971,7738 1749,7800
 #: note: slight coords corrections
@@ -27962,8 +27970,8 @@ Lüdtgeweg: Asphalt	Q0 4137,12411 4136,12494
 Lüdtgeweg: Gehwegplatten, Fahrbahn Kopfsteinpflaster	Q1- 4136,12494 4129,12619
 Kohlrauschstr.: Asphalt	Q0 4555,12130 4636,12300
 (Guerickestr. - Einsteinufer): Kopfsteinpflaster	Q3 4593,12322 4618,12340 4658,12450
-Wundtstr.: Asphalt	Q0 2272,11074 2243,11107
-Spiegelweg: Asphalt	Q0 2243,11107 2308,11288
+Wundtstr.: Asphalt	Q0 2249,11082 2222,11104
+Spiegelweg: Asphalt	Q0 2222,11104 2308,11288
 #: confirmed_by: srt
 Riehlstr.: Asphalt	Q0 2365,11179 2340,11223 2350,11269 2393,11381 2391,11478
 #: confirmed_by: srt
@@ -28070,23 +28078,24 @@ Karlsbader Str.: Asphalt	Q0 2216,8079 2219,8263 2223,8500
 Plöner Str.: Asphalt	Q0 2308,8071 2310,8184 2315,8431
 Gneiststr. (Grunewald): Asphalt	Q0 1421,9173 1587,9320
 Niersteiner Str.: Asphalt	Q0 1677,9404 1562,9436
+#: confirmed_by: srt
 Hasensprung (Grunewald): Kleinpflaster	Q1 1485,8845 1474,8859 1440,8903 1415,8937 1394,8965 1374,8992 1360,9012 1324,9057 1316,9067
 Herbertstr. (Grunewald): Asphalt	Q0 2132,9267 2056,9446
 #: confirmed_by: srt
 Herbertstr. (Grunewald): Asphalt	Q0 2165,9155 2183,9101 2282,8869
 #: confirmed_by: srt
 Schleinitzstr.: Asphalt	Q0 2183,9101 2059,8954
-Wangenheimstr.: Asphalt	Q0 2585,9653 2603,9639 2592,9419 2576,9132 2568,9010 2558,8828
+Wangenheimstr.: Asphalt	Q0 2585,9653 2603,9639 2592,9419 2576,9132 2568,9010 2559,8833
 #: confirmed_by: srt
 Humboldtstr. (Grunewald): Asphalt	Q0 2449,8902 2453,9156 2467,9428 2477,9551 2484,9671
 Gillweg: Gehwegplatten	Q0 2585,9653 2484,9671 2394,9714
 Wangenheimsteg: Asphalt	Q0 2585,9653 2628,9702
 Melli-Besse-Anlage: Asphalt	Q0 2628,9702 2664,9744
-Kudowastr.: Asphalt mit Fugen	Q1 2831,8590 2831,8797 2829,9076 2829,9259
+Kudowastr.: Asphalt mit Fugen	Q1 2831,8590 2832,8805 2829,9076 2829,9259
 Reinerzstr.: Kopfsteinpflaster	Q2 2678,8571 2361,8608
 Flinsberger Platz: Kopfsteinpflaster	Q2 2919,8582 2831,8590 2680,8608
 Rintelner Str.: Kopfsteinpflaster	Q2 2977,9220 3087,9219
-Orber Str.: Kopfsteinpflaster	Q2 3093,9306 3087,9219 3075,9033 3055,8769
+Orber Str.: Kopfsteinpflaster	Q2 3093,9306 3087,9219 3075,9033 3056,8784
 #: confirmed_by: srt
 Kronprinzendamm: Asphalt	Q0 2245,10092 2243,10058 2248,10045 2296,10028 2353,10021 2445,10009 2551,9995
 #: confirmed_by: srt (nördlicher Abschnitt)
