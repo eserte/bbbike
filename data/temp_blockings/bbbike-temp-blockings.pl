@@ -21761,7 +21761,7 @@ EOF
        until => $isodate2epoch->("2019-06-16 02:00:00"), 
        text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 14.06.2019 und 15.06.2019',
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 6, start => "2020-10-25T00:00:00"]], # kann Anfang Juni oder Anfang Juli oder Ende August passieren
+       recurrences => [['yearly', days => 1, months => 6, start => "2021-10-01T00:00:00"]], # kann Anfang Juni oder Anfang Juli oder Ende August passieren
        type  => 'gesperrt',
        source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
        data  => <<EOF,
@@ -30861,7 +30861,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-05-01
+#: last_checked: 2021-05-02
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32259,7 +32259,7 @@ EOF
        data  => <<EOF,
 #: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken)
 #: also_indoor: traffic
-#: last_checked: 2021-04-25
+#: last_checked: 2021-05-02
 #: check_frequency: 14d
 	q4::inwork 13025,12523 13067,12583 13202,12790
 EOF

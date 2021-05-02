@@ -964,7 +964,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-05-01
+#: last_checked: 2021-05-02
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -12087,6 +12087,7 @@ Hegauer Weg, Rampe: unbefestigt	Q2 -35,2470 -22,2484
 Sophie-Charlotte-Str.: Kopfsteinpflaster	Q2 1246,4310 1297,4311
 #: note: hoher Rollwiderstand
 (Waltraudstr. - Clayallee): Rindenmulch	Q3+ 919,4815 935,4814 1253,4788 1447,4757
+Oberhaardter Weg: Asphalt	Q0 911,8374 1023,8292 1056,8267
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14553,7 +14554,7 @@ Heydenstr.: Asphalt	Q0 2565,7637 2553,7606
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Heydenstr.: unebenes Kleinsteinpflaster	Q2 2553,7606 2468,7529 2375,7440 2283,7354 2197,7279
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
-Sulzaer Str.: Asphalt	Q0 2460,7658 2499,7883 2517,7908
+Sulzaer Str.: Asphalt	Q0 2460,7658 2499,7883 2511,7915
 Schellendorffstr.: Kopfsteinpflaster	Q2 2346,7684 2468,7529 2637,7344 2731,7247
 Selchowstr. (Schmargendorf): Kopfsteinpflaster	Q2 2553,7606 2719,7415 2744,7397
 Luciusstr.: Kopfsteinpflaster	Q2 2038,7484 2121,7556 2213,7637
@@ -16992,7 +16993,7 @@ Raabestr.: schlechtes Kopfsteinpflaster, enge Asphaltrandstreifen teilweise zuge
 # 
 #: by: Ingrid Beese:
 #: corrected_by: Georg R.-H. (Waldweg -> "Tiefsandwüste")
-Teltower Weg: sandiger Waldweg	Q3 -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -182,5927 -119,5885
+Teltower Weg: sandiger Waldweg	Q3- -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -182,5927 -119,5885
 # 
 #: by: Helm Dirk: vvv
 #: confirmed_by: srt
@@ -27457,7 +27458,7 @@ Rottannenweg: Gehwegplatten	Q1- 590,9456 560,9439 495,9409
 #: corrected_by ^^^
 Gustav-Freytag-Str. (Grunewald): Verbundsteine	Q1 765,8481 831,8558
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
-Oberhaardter Weg: Kleinsteinpflaster	Q2 1023,8292 1111,8225
+Oberhaardter Weg: Kleinsteinpflaster	Q2 1056,8267 1111,8225
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Griegstr.: Kleinsteinpflaster	Q2 1111,8225 1113,8189 1277,8064 1348,8010 1363,7997 1664,7773
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
@@ -28078,8 +28079,8 @@ Karlsbader Str.: Asphalt	Q0 2216,8079 2219,8263 2223,8500
 Plöner Str.: Asphalt	Q0 2308,8071 2310,8184 2315,8431
 Gneiststr. (Grunewald): Asphalt	Q0 1421,9173 1587,9320
 Niersteiner Str.: Asphalt	Q0 1677,9404 1562,9436
-#: confirmed_by: srt
-Hasensprung (Grunewald): Kleinpflaster	Q1 1485,8845 1474,8859 1440,8903 1415,8937 1394,8965 1374,8992 1360,9012 1324,9057 1316,9067
+#: corrected_by: srt (Kleinpflaster -> ...)
+Hasensprung (Grunewald): Mosaikpflaster	Q1 1485,8845 1474,8859 1440,8903 1415,8937 1394,8965 1374,8992 1360,9012 1324,9057 1316,9067
 Herbertstr. (Grunewald): Asphalt	Q0 2132,9267 2056,9446
 #: confirmed_by: srt
 Herbertstr. (Grunewald): Asphalt	Q0 2165,9155 2183,9101 2282,8869
@@ -28495,6 +28496,7 @@ Gehrenseestr.: guter Asphalt	Q0 18494,16750 18324,16625
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/planzeichnung-11-157.pdf
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/anwohner-sehen-noch-einige-ungeklaerte-probleme_a290515
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/die-erschliessung-sicherstellen_a297347
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8743 (Erschließung über die Marzahner Str.?)
 #: last_checked: 2020-08-27 (mapillary)
 #: check_frequency: 360d
 Detlevstr.: teilweise holpriger Asphalt	Q2 18482,16774 18494,16750 18439,16483 18412,16334 18406,16295
