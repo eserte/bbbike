@@ -6848,11 +6848,11 @@ Veitstr.: Asphalt	Q0 2268,19919 2064,19874 1886,19835
 #: note: während den Bauarbeiten ist der Radverkehr laut viz nicht betroffen
 #: XXX Beton wird durch Asphalt ersetzt, in zwei Bauabschnitten: zunächst der östliche Teil bis Medebacher Weg (2019), dann der westliche Teil (2020)
 #: priority: #C
-#: source_id: 2147344935
-#: source_id: 2147347061 (Leitungsbau, bis 3.5.2021)
+#: source_id: 2147344935 (inaktiv)
+#: source_id: 2147347061 (Leitungsbau, bis 7.5.2021)
 #: last_checked: 2020-11-07
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2021-05-03
+#: next_check: 2021-05-07
 Veitstr.: Fahrbahn Beton	Q0 1886,19835 1606,19775 1557,19765
 Borsigdamm: Fahrbahn Beton, Radweg asphaltiert	Q0 1557,19765 1509,19693 1463,19417
 Borsigdamm: Asphalt	Q0 1463,19417 1450,19336 1472,19165 1528,18971
@@ -20477,13 +20477,13 @@ Stolzingstr.: Asphalt	Q0 1338,25262 1360,25269 1429,25335 1468,25384
 #: confirmed_by: srt (konkretisiert: Kleinpflastersteine -> Mosaikpflaster)
 #: XXX möglicherweise wird hier auch asphaltiert
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1051692.php (Erwähnung einer zukünftigen Fahrbahninstandsetzung 2021)
-#: last_checked: 2021-04-28 (mapillary)
+#: last_checked: 2021-05-01 (mapillary)
 #: check_frequency: 120d
 Stolzingstr.: Mosaikpflaster, uneben	Q2 1468,25384 1542,25483
 #: corrected_by: srt (Kleinpflastersteine, Q2 -> ...)
 Stolzingstr.: Asphalt	Q0 1542,25483 1558,25505
 #: XXX Wird der Abschnitt zwischen Alemannenstr. und Nibelungenstr. auch asphaltiert?
-#: last_checked: 2021-04-28 (mapillary)
+#: last_checked: 2021-05-01 (mapillary)
 #: check_frequency: 180d
 #: osm_watch: way id="846771701" version="2"
 Stolzingstr.: Mosaikpflaster, uneben	Q2 1558,25505 1644,25620

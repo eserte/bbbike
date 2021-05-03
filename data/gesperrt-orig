@@ -3247,6 +3247,21 @@ Schranke	BNP:5::trailer=15 22855,4348
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
+#: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
+#: last_checked: 2021-05-03 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2021-11-30 vvv
+Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, teilweise lange Umwege über die Gehwege möglich	2::inwork 16227,12280 16159,12301 16056,12317
+Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, teilweise lange Umwege über die Gehwege möglich	2::inwork 16144,12388 16159,12301 16158,12191
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
+#: XXX bis wann geht die Einbahnstraßenregelung?
+#: last_checked: 2021-05-03
+Gotlindestr.: Einbahnstraßenregelung	1s:q4:inwork 16720,12614 16859,12613
+# 
 #: XXX bis wann geht die Einbahnstraßenregelung?
 #: last_checked: 2021-04-15 (mapillary)
 Rudi-Arndt-Str.: Einbahnstraßenregelung	1s:q4:inwork 13449,13892 13359,13832
@@ -3305,7 +3320,7 @@ Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
 #: osm_watch: way id="610818155" version="4"
-#: last_checked: 2021-04-17
+#: last_checked: 2021-05-03
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
@@ -3522,8 +3537,11 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 # REMOVED --- #: XXX hier ist ein Zirkus (?), bleibt das dauerhaft --- #: last_checked: 2020-02-22 --- Weg an der Trabrennbahn: gesperrt	2 18671,8092 18744,8121
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-planckstra%C3%9Fe.866/#post-10417
+#: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
+#: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-04-20
+#: last_checked: 2021-05-02 (daf)
+#: check_frequency: 60d
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833
 # 
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-05-15 --- Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10954,12635

@@ -3105,7 +3105,7 @@ Verbundsteinpflaster	RW2; 18149,13505 18226,13506 18291,13500 18382,13492
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/fahrrat-marzahn-hellersdorf-fordert-kreuzungsumbau-mehr-abstellanlagen-und-eine-fahrradstrasse_a292385 (Erwähnung der Grünmarkierung)
 #: by: http://www.infravelo.de/projekt/allee-der-kosmonauten/ (bis 1. Quartal 2021) (Arbeiten pausieren bis zum Frühjahr 2021)
 #: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 30.11.2020; mittlerweile inaktiv)
-#: last_checked: 2021-04-25 (mapillary) (nur vereinzelte Grünmarkierungen in Richtung Osten) vvv
+#: last_checked: 2021-05-03 (nur vereinzelte Grünmarkierungen in Richtung Osten) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-03-31
 # REMOVED (wird vermutlich verlängert) --- #: next_check: 2020-11-30
@@ -3143,14 +3143,17 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: source_id: 2147345793 (inaktiv)
 #: XXX provisorische Radwegführung
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
-#: last_checked: 2021-04-22 (bahninfo-forum)
-#: check_frequency: 30d
+# REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18225,12697 18220,12450
+# REMOVED (wird später vermutlich richtig gemacht) --- provisorische Radspur	RW4; 18220,12450 18216,12262 18216,12239 18215,12123
+#: last_checked: 2021-05-03 vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-05-30
-#: next_check: 2021-04-27
 	RW8; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
+	RW2; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123
+#: check_frequency ^^^
+#: last_checked ^^^
 	RW4; 18225,12697 18235,13236 18226,13506
-	RW4; 18226,13506 18235,13236 18225,12697 18220,12450
-provisorische Radspur	RW4; 18220,12450 18216,12262 18216,12239 18215,12123
+	RW4; 18226,13506 18235,13236 18225,12697
 	RW4; 20150,13562 20186,13533
 	RW3; 20186,13533 20236,13526
 Verbundsteinpflaster und bröckelnder Beton	RW1; 22599,15105 22726,15082 22899,15073
@@ -3502,13 +3505,13 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: by: https://www.tagesspiegel.de/berlin/gruene-radwege-in-berlin-warum-die-farbe-auf-den-strassen-ploetzlich-verschwimmt/25246650.html (nach den Bauarbeiten der BWB in der zweiten Hälfte 2020)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senat-liess-in-prenzlauer-berg-vier-radwege-fuer-die-erprobung-neu-beschichten_a262210 (erst 2021?)
-#: source_id: 2147344450 (Fahrbahnmarkierungen, bis Anfang Oktober 2019)
-#: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019)
-#: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019)
-#: source_id: 2147345490 (bis 1.7.2021)
+#: source_id: 2147344450 (Fahrbahnmarkierungen, bis Anfang Oktober 2019) (inaktiv)
+#: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019) (inaktiv)
+#: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019) (inaktiv)
+#: source_id: 2147345490 (bis 30.7.2021)
 #: priority: #D vvv
 #: last_checked: 2021-04-11 vvv
-#: next_check: 2021-07-01 vvv
+#: next_check: 2021-07-30 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
 #: next_check ^^^
@@ -4333,7 +4336,7 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 #: next_check_id: BAHNHOF-2021
 #: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/
 #: XXX während der Bauarbeiten ist der Radweg auf der Nordseite gesperrt, es gibt auch keinen Gehweg
-#: last_checked: 2021-03-24 (mapillary)
+#: last_checked: 2021-04-30 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2021-06-30
 # REMOVED (Original-Eintrag) ---	RW1; 12723,20691 12672,20720

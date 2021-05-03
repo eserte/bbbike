@@ -1469,7 +1469,7 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 #: source_id: 2147343976 (bis Mitte Januar 2020; Leitungsarbeiten)
 #: XXX laut fritz bis 17.01.2020
 #: osm_watch: way id="93221335" version="19"
-#: last_checked: 2021-03-24
+#: last_checked: 2021-05-03
 #: check_frequency: 180d
 #: next_check: 2022-12-31
 Siegfriedstr.: Radstreifen geplant, vielleicht sogar gesch¸tzte Radstreifen	?::projected 16860,12861 16859,12613 16857,12600 16826,12408 16820,12339
@@ -1478,7 +1478,7 @@ Siegfriedstr.: Radstreifen geplant, vielleicht sogar gesch¸tzte Radstreifen	?::p
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/radweg-an-der-marzahner-chaussee-erst-nach-brueckenbau_a227482 (nach Fertigstellung der Rhinstraﬂenbr¸cke, mit der Planung wird 2020 begonnen)
 #: osm_watch: way id="27959240" version="41"
 #: osm_watch: way id="878343305" version="7"
-#: last_checked: 2021-03-24
+#: last_checked: 2021-05-03 (mapillary)
 #: check_frequency: 120d
 Marzahner Chaussee: Radstreifen geplant	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
 # 
@@ -3325,10 +3325,6 @@ Matkowskystr.: Reduzierung auf 10km/h, Bodenschwellen	? 14531,11142 14513,11075
 # 
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1080100.php (ab 1. Mai 2021, f¸r mehrere Monate) --- #: by: https://mein.berlin.de/projekte/verkehrskonzept-karl-august-kiez/ --- #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/krumme-strasse-fuer-autos-gesperrt_a308592 --- #: next_check: 2021-05-01 --- Krumme Str.: tempor‰re Sperrung f¸r den motorisierten Verkehr	? 3986,11347 3983,11289 3981,11232
 # 
-#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
-#: XXX ‰ndert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
-Roedeliusplatz: sind Radfahrer von den Sperrungen auch betroffen?	? 16246,12177 16158,12191 16159,12301 16227,12280 16276,12273
-# 
 #: XXX Torstraﬂe (Mitte) in beiden Richtungen zwischen  Gormannstr. und Alte Schˆnhauser Straﬂe: Rohrleitungsbau, Fahrbahn auf jeweils zwei Fahrstreifen verengt, Anbindung Gormannstraﬂe gesperrt, eine Umleitung f¸r Radverkehr ist ausgeschildert, vom 26.02.2020 07:00 Uhr bis 31.05.2021 17:00 Uhr
 #: source_id: 2147345515
 #: last_checked: 2021-04-20 (keine Einschr‰nkungen gesehen)
@@ -3679,8 +3675,10 @@ Ohmstr.: verkehrsberuhigter Bereich geplant	?::projected 11378,11856 11324,11689
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6913
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7257
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/neukoellner-verordnete-wollen-keinen-durchgangsverkehr-auf-dem-karl-marx-platz_a300344
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1081650.php ("Schnalle zu")
+#: by: https://twitter.com/BerlinNkl/status/1389199643800752136 (ab 7.5.2021 13h)
 #: last_checked: 2021-04-02
-#: check_frequency: 60d
+#: next_check: 2021-05-07
 Karl-Marx-Platz: Umgestaltung, Wegef¸hrung f¸r Radfahrer wird sich ‰ndern	?::projected 12972,7602 13100,7626 12987,7560
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/nach-tragischem-unfall-bekommt-die-strasse-einen-geschuetzten-radstreifen_a234484 (Radspuren noch dieses Jahr (2019))
@@ -4814,7 +4812,7 @@ Hauptstr./Goethestr.: vorhandene ‹berquerungshilfe soll zu einem Zebrastreifen a
 #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/gehweg-und-radweg-im-bau_a302442
 #: XXX w‰hrend der Bauarbeiten Einbahnstraﬂenregelung --- was wird das f¸r den Radverkehr bedeuten? -> siehe temp blockings
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2021-04-24
+#: last_checked: 2021-05-03
 #: check_frequency: 90d
 #: next_check: 2021-09-30
 Karlshorster Str.: Bau von Radwegen	?::projected 15279,10862 15272,10790 15261,10738
@@ -4834,7 +4832,7 @@ Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,885
 #: last_checked: 2021-04-21
 #: check_frequency: 120d
 Upstallweg - Erieseering: Was passiert hier bez¸glich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18042,10392 18081,10312 18085,10244 18113,10208 18130,10201 18132,10183
-#: last_checked: 2021-03-24
+#: last_checked: 2021-05-03
 #: check_frequency: 90d
 Bornitzstr.: was passiert hier bez¸glich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 15950,12886 16073,12883 16146,12881 16197,12880 16242,12878 16312,12876 16376,12874 16384,12874 16484,12871 16860,12861
 #: last_checked: 2021-04-14 (mapillary)
@@ -4864,7 +4862,7 @@ Vincent-van-Gogh-Str.: was passiert hier bez¸glich einer Radweginfrastruktur?	?:
 #: by: https://api.fixmyberlin.de/api/projects/330 (Fr¸hjahr 2021 - Ende 2021)
 #: by: http://www.infravelo.de/projekt/alfredstrasse-und-schottstrasse/ (Planung von Hochbordradwegen (R¸digerstr., Schottstr.) und Radfahrstreifen (Alfredstr.), 3. Quartal 2021 - 4. Quartal 2023)
 #: XXX unklar, ob es nur um die Richtung S¸den geht oder auch Richtung Norden (mit Aufhebung der Einbahnstraﬂe f¸r Radfahrer in der Alfredstr.?) --- Mischung aus Radspur, Gehwegradweg und f¸r Radfahrer freigegebene Busspur
-#: last_checked: 2021-02-23
+#: last_checked: 2021-05-03
 #: check_frequency: 180d
 #: next_check: 2023-12-31
 Alfredstr., Schottstr., R¸digerstr.: Planung von Radverkehrsanlagen	?::projected 16485,12384 16397,12397 16276,12273 16255,12224 16246,12177 16207,11937
@@ -4895,7 +4893,7 @@ Hˆnower Str.: was passiert hier bez¸glich einer Radweginfrastruktur? Vielleicht 
 #: check_frequency: 90d
 Lindenberger Str.: Was passiert hier bez¸glich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18106,19353 18119,19400 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
 #: osm_watch: way id="25760211" version="10"
-#: last_checked: 2021-01-30
+#: last_checked: 2021-05-03
 #: check_frequency: 90d
 Eggersdorfer Str.: Asphaltierung	?::projected 17259,11093 17322,11296
 #: XXX wird hier eine offizielle F¸hrung von der Kreuzung Malchower Str./Wartenberger Str. realsiert? (dann kˆnnte man den handicap-Eintrag (Bordsteinkante) entsch‰rfen)
@@ -6034,7 +6032,7 @@ Planstraﬂe am ehemaligen Funkwerk: Straﬂennamen? Qualit‰t? Genaue Lage?	? 22540,
 #: XXX Stand Mai 2014: Fertigstellung bis Anfang 2017 (ist mittlerweile nicht realistisch)
 #: XXX mit Bahn¸bergang
 #: XXX evtl. wird es am Pyramidenring einen neuen Kreisverkehr geben
-#: last_checked: 2020-04-11
+#: last_checked: 2021-05-03 (mapillary)
 #: check_frequency: 720d
 Verbindung zwischen Beilsteiner Str. und Pyramidenring: genaue Lage, Qualit‰t, Straﬂenname?	?::projected 18859,14048 18804,14239 18710,14212
 # 
@@ -6206,6 +6204,7 @@ Heino-Schmieden-Weg - Alt-Biesdorf: wird es hier f¸r Radfahrer eine Verbindung g
 #: by: https://www.bahninfo-forum.de/embed_images/4a3/087/a0b/7fd/842/19c/940/b69/090/1b8/40_1200x920.jpg
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/bruecke-ueber-das-adlergestell/ (Bauzeit Fr¸hjahr 2022 - 2023, auﬂerdem Ert¸chtigung der Sonnenallee sowie Anbindung an die Neltestr.)
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/bruecke-ueber-das-adlergestell/maxsize_3c8171100b38c2379aee26e9ea6e5d40_kreuzungsbauwerk-mit-rampen-bild_igs.png
+#: by: https://www.aktives-adlershof.de/fileadmin/Bilder_Redakteure/2021_NEWSletter/2021-01_Newsletter_digital.pdf?fbclid=IwAR06vnMT56ZWNbaBwuChQZNaNj3Mlxr4rvI6I7X9olxdM97_a_Dc-PfEwAA
 #: last_checked: 2021-04-03
 #: check_frequency: 360d
 #: next_check: 2023-01-01
@@ -6407,7 +6406,7 @@ Parkanlage: genaue Lage? Wird es hier Wege geben?	?::projected 17454,8747 17468,
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan1194ve.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8385 (Festsetzung)
 #: XXX auﬂerdem: bleibt der nach S¸den verlaufende Abzweig der Plauener Str. erhalten?
-#: osm_watch: way id="914159830" version="2"
+#: osm_watch: way id="914159830" version="3"
 #: last_checked: 2020-12-30
 #: check_frequency: 360d
 Plauener Str.: Verbindungsst¸ck wird gebaut	?::projected 17531,14923 17638,14951
@@ -6529,7 +6528,7 @@ Bebauungsplan 3-59: geplante Straﬂen und Wege	?::projected 12512,21482 12783,214
 #: XXX Benennung zu "Metropolitan Park" --- welche der neuen Straﬂen bekommt diesen Namen?
 #: last_checked: 2020-08-23 vvv
 #: check_frequency: 60d vvv
-#: osm_watch: way id="328465413" version="6"
+#: osm_watch: way id="328465413" version="7"
 # REMOVED (-> strassen-orig) --- Privatstraﬂe A und Planstraﬂe A: Namen, Qualit‰t? Was passiert mit dem Fuﬂ/Radweg am Brunsb¸tteler Damm?	? -8064,13534 -8088,13594 -7984,13649 -7926,13709 -7890,13787 -7896,13899 -7928,13967 -8019,14036 -8150,14064
 Planstraﬂe A: Namen, Qualit‰t? Was passiert mit dem Fuﬂ/Radweg am Brunsb¸tteler Damm?	? -8150,14064 -8220,14038 -8243,14183
 #: osm_watch: way id="725376312" version="4"
@@ -7224,7 +7223,7 @@ Bebauungsplan 3-41: Straﬂen werden entstehen; genaue Lage, Qualit‰t?	?::projecte
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_11_0697_0820_online.pdf
 #: XXX Provisorium (Fuﬂg‰ngerschutztunnel) in Bau, es wird vermutlich vier Dr‰ngelgitter geben (an beiden Enden, sowie zwei dazwischen)
 #: osm_watch: way id="906851132" version="3"
-#: last_checked: 2021-04-29
+#: last_checked: 2021-05-03
 #: check_frequency: 10d
 #: next_check: 2024-06-15
 Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15052,10920 14888,10959

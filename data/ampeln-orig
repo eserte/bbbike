@@ -91,11 +91,17 @@ Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775
 #: XXX Nöldnerstraße (Rummelsburg) in beiden Richtungen zwischen Karlshorster Straße und Stadthausstraße: Leitungsbau, Verkehr wird wechselseitig durch eine Baustellenampel geregelt, vom 16.12.2020 09:00 Uhr bis 28.05.2021 17:00 Uhr
 #: source_id: 2147346700
 #: also_indoor: traffic
-#: last_checked: 2021-04-21
+#: last_checked: 2021-05-03
 #: check_frequency: 30d
 #: next_check: 2021-05-28
 #: valid: -20210528
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork 15433,10765
+# 
+#: next_check_id: RHINSTRASSENBRUECKE-2018
+#: last_checked: 2021-05-03
+#: check_frequency: 30d
+#: note: Anforderung, gilt auch für nach Süden fahrenden Radfahrer
+Rhinstr.: Seitenwechsel für nach Norden fahrende Radfahrer	F::inwork 18225,12697
 # 
 #: next_check_id: KASTANIENALLEE-2021
 #: last_checked: 2021-04-11 vvv
@@ -116,7 +122,7 @@ Roelckestr./Lehderstr.: temporäre Ampel	X::inwork 12842,16032
 #: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/
 #: XXX bis wann wird es die Gegenverkehrsregelung geben?
 #: source_id: 2147346767 (bis 30.6.2021)
-#: last_checked: 2021-03-24 (mapillary) vvv
+#: last_checked: 2021-04-30 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-06-30 vvv
 #: valid: 20210222- vvv
@@ -3321,13 +3327,15 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/sehnsuchtsampel-wird-gebaut_a293518 (Bauampel existiert bereits)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/baubeginn-fuer-ampelanlage_a298652
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/ampelbau-dauert-laenger-als-erwartet_a300323 (Inbetriebnahme im Frühjahr (2021))
-#: source_id: 2147342270 (nicht mehr aktiv)
-#: source_id: 2147346463 (bis 23.12.2020)
+#: source_id: 2147342270 (inaktiv)
+#: source_id: 2147346463 (bis 23.12.2020) (inaktiv)
+#: source_id: 2147347158 (bis 26.6.2021)
 #: osm_watch: node id="31532791" version="9"
 #: osm_watch: node id="8151187982" version="1"
 #: osm_watch: node id="8151187983" version="1"
 #: last_checked: 2021-04-17
-#: check_frequency: 60d
+#: check_frequency: 90d
+#: next_check: 2021-06-26
 Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,10580
 # 
 #: next_check_id: BERLINERBAHNHOF-2020

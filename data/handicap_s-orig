@@ -725,6 +725,14 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 # 
 ### Lichtenberg ###
 # 
+#: next_check_id: RHINSTRASSENBRUECKE-2018
+#: last_checked: 2021-05-03 vvv
+#: check_frequency: 30d vvv
+Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig	q2::inwork; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123
+Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig, langer Umweg an der Seddiner Str.	q3::inwork; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: XXX laut rbb und Halteverbotsschildern bis 31.08.2021
 #: also_indoor: traffic (H)
 #: last_checked: 2021-04-26

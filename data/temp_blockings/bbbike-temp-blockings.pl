@@ -31133,16 +31133,15 @@ EOF
 EOF
      },
      { from  => 1589275980, # 2020-05-12 11:33
-       until => $isodate2epoch->("2021-05-03 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Lipaer Str. wegen Bauarbeiten gesperrt, bis 03.05.2021',
+       until => $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
+       text  => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Lipaer Str. wegen Bauarbeiten gesperrt, bis 31.05.2021',
        type  => 'handicap',
        source_id => '2147345834', # (inaktiv)
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
-#: source_id: 2147346671 (bis 3.5.2021)
+#: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: also_indoor: traffic (H,G) vvv
-#: note: laut rbb bis 2021-05-03 vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv --- #: last_checked: 2020-12-27 (mapillary) vvv --- #: next_check: 2021-05-03 vvv
 	q4::inwork; 4515,4760 4214,4595
@@ -31150,7 +31149,6 @@ EOF
 	q2::inwork; 4214,4595 4039,4500
 # REMOVED (nicht mehr, laut rbb) ---	q4::inwork 4179,4662 4214,4595
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
-#: note ^^^
 #: also_indoor ^^^
 EOF
      },
@@ -32123,7 +32121,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-04-24
+#: last_checked: 2021-05-03
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738

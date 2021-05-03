@@ -200,17 +200,11 @@ An der Urania - Courbièrestr.: linker Gehweg	DH:h=q3,85 6740,10755 6685,10690 67
 # 
 Schlichtallee - Fischerstr.: Pollerreihe	DH:t=3 15880,10680 15970,10755 16080,10743
 # 
-#: next_check_id: RHINSTRASSENBRUECKE-2018
-#: last_checked: 2021-04-22 (bahninfo-forum) vvv
-#: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2021-05-30 vvv
-#: next_check: 2021-04-27 vvv
+# REMOVED (nun in handicap_s-orig) --- #: next_check_id: RHINSTRASSENBRUECKE-2018 --- #: last_checked: 2021-04-22 (bahninfo-forum) vvv --- #: check_frequency: 30d vvv --- #: next_check: 2021-05-30 vvv --- #: next_check: 2021-04-27 vvv
 Rhinstr.: östliche Brücke gesperrt, Radweg auf der linken Seite benutzen	DH:len=50:h=q2,570:tl 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697 18235,13236
 # REMOVED --- Rhinstr.: östliche Brücke gesperrt, bis zur Ampel zurückfahren und Straßenseite wechseln	DH:len=420:h=q2,370 18180,12262 18216,12262 18216,12239 18215,12123
 # REMOVED --- Rhinstr.: östliche Brücke gesperrt, Radweg auf der linken Seite benutzen	DH:len=50:h=q2,330 18191,12451 18220,12450 18216,12262 18216,12239 18215,12123
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 # REMOVED (vermutlich obsolet) --- #: next_check_id: GRENZALLEE-2014 --- #: valid: 20140224-20180630 --- #: last_checked: 2018-07-05 --- # REMOVED --- #: next_check: 2019-12-31 --- #: next_check: 2019-01-24 --- Neuköllnische Allee/Grenzallee: Überquerung der Kreuzung nur über linken Gehweg möglich, Zeitverlust!	DH:t=60:len=30 14567,6810 14344,7003 14310,7022 14196,7086
 # 
