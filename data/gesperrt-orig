@@ -3249,6 +3249,7 @@ Schranke	BNP:5::trailer=15 22855,4348
 # 
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
 #: XXX ‰ndert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
+#: also_indoor: traffic (G,H)
 #: last_checked: 2021-05-03 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-11-30 vvv
@@ -3259,6 +3260,7 @@ Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, te
 #: last_checked ^^^
 # 
 #: XXX bis wann geht die Einbahnstraﬂenregelung?
+#: also_indoor: traffic
 #: last_checked: 2021-05-03
 Gotlindestr.: Einbahnstraﬂenregelung	1s:q4:inwork 16720,12614 16859,12613
 # 

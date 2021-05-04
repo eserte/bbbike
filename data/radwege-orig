@@ -245,17 +245,11 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 	RW1;RW1 11949,10414 12212,10440 12274,10436 12328,10442 12401,10461 12545,10496 12621,10516 12731,10547
 	RW1; 12731,10547 12899,10595
 	RW2; 12985,10665 12930,10621 12899,10595 12731,10547
-3m breit	RW4; 13178,10623 13082,10634
+3m breit	RW4; 13206,10651 13178,10623 13082,10634
 	RW4; 13082,10634 13015,10659 12985,10665
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1080786.php (bis Mai 2021)
-#: XXX Verbreiterung der Radstreifen vvv
-#: last_checked: 2021-04-28 vvv
-#: next_check: 2021-05-31 vvv
-	RW4; 13028,10629 13082,10634 13178,10623
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
-	RW4;RW4 13178,10623 13206,10651
+# REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1080786.php (bis Mai 2021) --- #: XXX Verbreiterung der Radstreifen vvv --- #: last_checked: 2021-04-28 vvv --- #: next_check: 2021-05-31 vvv
+3m breit	RW4; 13028,10629 13082,10634 13178,10623
+Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.964148.php ("provisorische Schutzelemente")
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964138.php
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/mehr-platz-fuer-radfahrer_a281410
@@ -413,7 +407,8 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (zwischen Moritzplatz und Alte Jakobstraße Verbreiterung auf 2,50m und Asphaltierung)
-#: by: http://www.infravelo.de/projekt/oranienstrasse-nordseite-bauabschnitt-1/ (zwischen Stallschreiberstr. und Alte Jakobstr., bis 4. Quartal 2020)
+#: by: http://www.infravelo.de/projekt/oranienstrasse-nordseite-bauabschnitt-1/ (zwischen Stallschreiberstr. und Alte Jakobstr., bis 4. Quartal 2020) (alter Eintrag)
+#: by: http://www.infravelo.de/projekt/oranienstrasse-nordseite-bauabschnitt-1-2/ (2. Quartal 2020 - 4. Quartal 2021)
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
@@ -6931,8 +6926,8 @@ Busspur ist immer gültig	RW5; 9391,3651 9462,3642
 # REMOVED (hier (noch?) nicht) ---	RW4; 10002,14092 9936,14085
 	RW4; 9936,14085 9821,14073 9804,14071 9676,14046 9659,14043
 Poller	RW4; 9659,14043 9469,14004
-Poller	RW4; 9383,13986 9469,14004 9659,14043
-	RW4; 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085
+Poller	RW4; 9383,13986 9469,14004 9659,14043 9676,14046 9804,14071 9821,14073
+	RW4; 9821,14073 9936,14085
 # REMOVED (hier nicht) ---	RW4; 9469,14004 9383,13986
 asphaltierter gemeinsamer Geh- und Radweg, sehr breit	RW2;RW8 21115,271 21286,449 21613,923 21656,989 21829,1351
 	RW4; 18731,8577 18733,8633 18733,8650 18737,8686

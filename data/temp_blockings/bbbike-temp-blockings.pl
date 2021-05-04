@@ -30860,8 +30860,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
-#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021)
-#: last_checked: 2021-05-02
+#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
+#: osm_watch: way id="934995899" version="1"
+#: osm_watch: way id="934995901" version="1"
+#: last_checked: 2021-05-04
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
