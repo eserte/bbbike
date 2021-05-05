@@ -1115,7 +1115,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9848 (Einwohnerfrage, Wegfall von Parkplätzen)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="15"
-#: last_checked: 2021-04-11
+#: last_checked: 2021-05-05
 #: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1128,7 +1128,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="27"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2021-04-15 (mapillary)
+#: last_checked: 2021-05-05
 #: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
@@ -3130,7 +3130,7 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: osm_watch: way id="4068148" version="24"
 #: osm_watch: way id="27942935" version="17"
 #: osm_watch: way id="11663312" version="28"
-#: osm_watch: way id="4689343" version="22"
+#: osm_watch: way id="4689343" version="23"
 #: source_id: 2147341322 (inaktiv)
 #: source_id: 2147342307 (inaktiv)
 #: source_id: 2147342363 (bis 31.5.2021)
@@ -3500,12 +3500,13 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: by: https://www.tagesspiegel.de/berlin/gruene-radwege-in-berlin-warum-die-farbe-auf-den-strassen-ploetzlich-verschwimmt/25246650.html (nach den Bauarbeiten der BWB in der zweiten Hälfte 2020)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senat-liess-in-prenzlauer-berg-vier-radwege-fuer-die-erprobung-neu-beschichten_a262210 (erst 2021?)
+#: by: https://twitter.com/VIZ_Berlin/status/1389909415139201025 (Leitungsarbeiten)
 #: source_id: 2147344450 (Fahrbahnmarkierungen, bis Anfang Oktober 2019) (inaktiv)
 #: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019) (inaktiv)
 #: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019) (inaktiv)
 #: source_id: 2147345490 (bis 30.7.2021)
 #: priority: #D vvv
-#: last_checked: 2021-04-11 vvv
+#: last_checked: 2021-05-05 vvv
 #: next_check: 2021-07-30 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -4333,7 +4334,7 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 #: XXX während der Bauarbeiten ist der Radweg auf der Nordseite gesperrt, es gibt auch keinen Gehweg
 #: last_checked: 2021-04-30 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2021-06-30
+#: next_check: 2021-07-19
 # REMOVED (Original-Eintrag) ---	RW1; 12723,20691 12672,20720
 	RW0; 12723,20691 12672,20720
 	RW1; 12672,20720 12600,20742 12578,20749
@@ -6084,7 +6085,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2021-04-16 (mapillary) vvv
+#: last_checked: 2021-05-05 vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -6523,7 +6524,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2021-04-11
+#: last_checked: 2021-05-05
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: next_check_id: POPUPRADWEGE-2020
@@ -6532,13 +6533,15 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
 #: by: http://www.infravelo.de/projekt/danziger-strasse-1/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
-#: last_checked: 2021-04-11 vvv
-#: check_frequency: 60d vvv
+#: by: https://twitter.com/VIZ_Berlin/status/1389893047379496960 (Markierungsarbeiten)
+#: XXX Richtung Nordwesten ab Greifswalder Str. entsteht auch eine Grünmarkierung
+#: last_checked: 2021-05-05 vvv
+#: check_frequency: 45d vvv
 #: next_check: 2021-09-30 vvv
 #: osm_watch: way id="4615031" version="38"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 provisorisch geschützter Radstreifen	RW4; 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
-#: osm_watch: way id="41954398" version="18"
+#: osm_watch: way id="41954398" version="19"
 provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 #: next_check ^^^
 #: check_frequency ^^^
@@ -6768,7 +6771,7 @@ provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9154
 #: source_id: 2147345290 (bis Ende Januar 2020, laut fritz bis 24.1.2020) (inaktiv)
 #: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020) (inaktiv)
 #: source_id: 2147345931 (bis 31.3.2021) (inaktiv)
-#: source_id: 2147345931 (bis 5.5.2021)
+#: source_id: 2147345931 (bis 5.5.2021) (laut rbb bis 11.6.2021)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="20"

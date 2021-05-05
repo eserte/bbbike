@@ -2122,3 +2122,10 @@ Waldeyerstr.: für Autos gesperrt, Radfahrer frei	2 15058,12329 15003,12241
 Clayallee -> Sophie-Charlotte-Str.: Linksabbiegen verboten	3 1283,4260 1297,4311 1246,4310
 Krumme Str.: Poller	3 3981,11232 3983,11289 3986,11347
 Krumme Str.: Poller	3 3986,11347 3983,11289 3981,11232
+Straßenbahntrasse	3nocross::ignrte 10533,16505 10458,16509 10370,16516
+Driesener Str. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10449,16415 10458,16509 10370,16516
+Driesener Str. -> Nordkapstr.: Straßenbahntrasse	3::igndisp 10449,16415 10458,16509 10465,16656
+Bornholmer Str. -> Driesener Str.: Straßenbahntrasse	3::igndisp 10533,16505 10458,16509 10449,16415
+Bornholmer Str. -> Nordkapstr.: Straßenbahntrasse	3::igndisp 10370,16516 10458,16509 10465,16656
+Nordkapstr. -> Driesener Str.: Straßenbahntrasse	3::igndisp 10465,16656 10458,16509 10449,16415
+Nordkapstr. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10465,16656 10458,16509 10533,16505
