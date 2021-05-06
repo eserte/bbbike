@@ -6267,13 +6267,12 @@ EOF
      { from  => $isodate2epoch->("2019-05-03 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-05 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 24, months => 4, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -12, # wegen Corona
+       recurrences => [['yearly', days => 24, months => 4, start => "2021-10-25T00:00:00"]],
        text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (4.5.2019 und 5.5.2019)',
        type  => 'gesperrt',
        source_id => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
        data  => <<EOF,
-#: by: https://www.berlin.de/events/4390033-2229501-primavera-fruehlingsfest.html (geplanter Termin: 08. bis 09. Mai 2021)
+#: by: https://www.berlin.de/events/4390033-2229501-primavera-fruehlingsfest.html (geplanter Termin: 08. bis 09. Mai 2021) (2021 abgesagt)
 	2::temp 7101,9027 7035,9161 7012,9222 7001,9291
 	2::temp 6945,9142 7035,9161
 EOF
@@ -30863,7 +30862,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-05
+#: last_checked: 2021-05-06
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31644,7 +31643,7 @@ EOF
 #: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2021-05-01
+#: last_checked: 2021-05-06
 #: check_frequency: 90d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
