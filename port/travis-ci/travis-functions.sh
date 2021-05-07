@@ -51,8 +51,9 @@ init_perl() {
 init_apt() {
     # broken on (since?) 2019-08-21 on preice:
     # E: Failed to fetch http://downloads-distro.mongodb.org/repo/debian-sysvinit/dists/dist/InRelease  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)
-    # Since 2020-02-16 more repositories (chrome, cassandra, git-lfs, couchdb) are broken on trusty:
-    (cd /etc/apt/sources.list.d && sudo rm -f mongodb.list google-chrome.list cassandra.list github_git-lfs.list couchdb.list)
+    # Since 2020-02-16 more repositories (chrome, cassandra, git-lfs, couchdb) are broken on trusty.
+    # Since 2021-05-07 the postgresql repo (pgdg) is broken on trustry.
+    (cd /etc/apt/sources.list.d && sudo rm -f mongodb.list google-chrome.list cassandra.list github_git-lfs.list couchdb.list pgdg.list)
 
     if [ "$USE_SYSTEM_PERL" = "1" ]
     then
