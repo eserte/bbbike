@@ -964,7 +964,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-05-06
+#: last_checked: 2021-05-08
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -6655,6 +6655,11 @@ Soltauer Str.: Beton	Q0 3749,19031 3483,19190 3377,19325
 Sommerfelder Str.: Beton	Q1 3203,19340 3222,19383
 Sommerfelder Str.: schlechtes Kopfsteinpflaster	Q3 3222,19383 3243,19407 3291,19438
 Sommerfelder Str.: Beton	Q1 3232,19325 3253,19379 3305,19419
+#: next_check_id: JACOBSENWEG-2021
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1083540.php (Fahrbahnerneuerung, bis ca. Ende Juli 2021)
+#: also_indoor: traffic
+#: XXX wird die Qualität nach den Bauarbeiten besser sein?
+#: next_check: 2021-07-31
 Jacobsenweg: Asphalt mit leichten Schäden	Q0-; 3232,19325 3203,19340 2988,19445
 Jacobsenweg: Asphalt	Q0 2988,19445 2909,19485 2821,19559
 Reppener Zeile: Verbundsteinpflaster	Q1 2848,19686 2758,19815 2737,19845
@@ -7377,7 +7382,8 @@ Peter-Edel-Str.: Beton	Q0 23237,13683 23248,13764
 Peter-Edel-Str.: Verbundsteinpflaster	Q1+ 23248,13764 23252,13778 23215,13787 23222,13830
 Peter-Edel-Str.: Beton	Q0 23222,13830 23240,13938
 Neue Grottkauer Str.: Asphalt	Q0 23397,13905 23240,13938 23125,13961
-Etkar-André-Str.: Asphalt	Q0 23125,13961 23150,14098 23200,14093 23319,14069
+Etkar-André-Str.: Asphalt, mit einigen Schäden	Q0- 23125,13961 23150,14098
+Etkar-André-Str.: Asphalt	Q0 23150,14098 23200,14093 23319,14069
 Carola-Neher-Str.: Asphalt	Q0 23200,14093 23228,14265 23382,14367 23438,14355
 (Carola-Neher-Str. - U-Bhf. Cottbusser Platz): Verbundsteinpflaster	Q1 23438,14355 23476,14409 23458,14439
 (Unterführung U-Bhf. Cottbusser Platz): Beton	Q0 23458,14439 23423,14543 23454,14556 23421,14549 23458,14563 23463,14552
@@ -7390,13 +7396,13 @@ Mylauer Weg: Verbundsteinpflaster	Q1+ 23873,14527 23808,14503
 (Kastanienallee - Weg entlang der U-Bahn): Asphalt	Q0 23784,14569 23792,14561 23793,14573
 (Kastanienallee - Weg entlang der U-Bahn): Kopfsteinpflaster	Q2+ 23793,14573 23795,14604 23786,14631
 (Weg entlang der U-Bahn): Asphalt	Q0 23786,14631 23980,14707 23995,14722 24136,14785 24228,14825
-(Weg entlang der U-Bahn): Beton	Q1+ 24228,14825 24263,14838 24313,14839 24356,14850 24398,14870
-(Weg entlang der U-Bahn): Asphalt	Q0 24398,14870 24497,14899 24542,14937 24570,14942 24579,14934
+(Weg entlang der U-Bahn): Beton	Q1+ 24228,14825 24263,14838 24313,14839 24356,14850 24380,14861
+(Weg entlang der U-Bahn): Asphalt	Q0 24380,14861 24517,14907 24542,14937 24570,14942 24579,14934
 (Weg entlang der U-Bahn): neu asphaltiert	Q0 24579,14934 24715,14992 24728,14989
 (Weg entlang der U-Bahn): unbefestigter Weg, nach Regen matschig und Pfützen	Q2 24728,14989 24764,14989 25034,15082 25247,15086 25330,15066 25334,15051
 (Weg entlang der U-Bahn - U-Bhf. Hellersdorf): Kleinsteinpflaster	Q1 24136,14785 24139,14780 24161,14781 24182,14793 24202,14783 24218,14785 24228,14798 24213,14803
 (Weg entlang der U-Bahn - Hoyerswerdaer Str.): neu asphaltiert	Q0 24728,14989 24745,14966 24763,14958
-Hoyerswerdaer Str.: Asphalt	Q0 25186,14987 25221,15028 25242,15050 25319,15052 25334,15051
+Hoyerswerdaer Str.: Asphalt	Q0 25186,14987 25228,15035 25242,15050 25319,15052 25334,15051
 Hoyerswerdaer Str.: Asphalt	Q0 25319,15052 25330,14962 25284,14940
 Schwarzheider Str.: Asphalt	Q0 24951,14649 25045,14678
 Schwarzheider Str.: Kleinsteinpflaster	Q1 25045,14678 25084,14690
@@ -8112,7 +8118,7 @@ Erich-Kästner-Str.: löchriger Beton	Q1- 23460,13451 23487,13596 23502,13684
 Iselbergplatz: Asphalt, teilweise mit Schotter und Flicken	Q1 23525,13367 23656,13344
 Am Baltenring: schadhafter Beton	Q1 23668,13408 23705,13636 23745,13830
 Glauchauer Str.: Asphalt	Q0 24041,13795 24050,13855 24031,13903 24041,13979 24056,13988 24187,14052
-(Sebnitzer Str. - Hoyerswerdaer Str.): neu asphaltiert	Q0 24637,14888 24650,14900 24666,14921 24763,14958 24798,14964 24834,14983 24894,15000 24915,15008 25031,15027 25089,15037 25206,15044 25221,15028
+(Sebnitzer Str. - Hoyerswerdaer Str.): neu asphaltiert	Q0 24637,14888 24650,14900 24666,14921 24763,14958 24798,14964 24834,14983 24894,15000 24915,15008 24928,15019 25031,15027 25089,15037 25206,15044 25228,15035
 (Albert-Kuntz-Str. - Weißenfelser Str.): Verbundsteinpflaster	Q1 24837,14835 24798,14964
 (Albert-Kuntz-Str. - Weißenfelser Str.): Verbundsteinpflaster	Q1 24834,14983 24832,14998
 (Albert-Kuntz-Str. - Weißenfelser Str.): Beton	Q0 24832,14998 24814,15073 24850,15092
@@ -10198,7 +10204,8 @@ Wischbergweg: unbefestigt, teilweise holprig	Q2 13898,18597 13900,18642
 (Blankenburger Pflasterweg - Ortnitstr.): Betonplattenweg	Q2 15424,19861 15393,19671
 (Blankenburger Pflasterweg - Ortnitstr.): Verbundsteinpflaster	Q1+ 15393,19671 15383,19610 15386,19485 15426,19216 15412,19082 15407,19024 15376,18908 15400,18840 15399,18782 15434,18731 15413,18626
 (Cecilienstr. - Joachim-Ringelnatz-Str.): Beton	Q0 22101,13616 22110,13639 22136,13735 22141,13784
-(Weg entlang der U-Bahn): wassergebundene Decke	Q1 23405,14410 23350,14387 23217,14295 23228,14265
+(Weg entlang der U-Bahn): wassergebundene Decke	Q1 23405,14410 23350,14387 23217,14295
+(Weg entlang der U-Bahn): wassergebundene Decke	Q1- 23217,14295 23228,14265
 (Diagonalverbindung im Landschaftspark Herzberge): Asphalt	Q0 17689,13405 17670,13378 17638,13363 17590,13317 17562,13255 17487,13198
 (Eichhorster Str. - Schorfheidestr.): Gehwegplatten	Q0- 21825,18689 21828,18701 21860,18718 21875,18717
 Mehrower Allee [Wohngebiet]: Asphalt	Q0 20588,16992 20657,16959 20770,16901
@@ -14827,9 +14834,13 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8866
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036721830908/721830908/00310262/62-Anlagen/04/0262021-0311-57aAwEOeB_EBBRechtspruefung.pdf
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_14_0981_1088_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.tenbrinke.com/de/aktuelle-projekte/aktuelle-projekte-details/wandlitzstra%C3%9Fe-kaiserg%C3%A4rten-ib1604.html (bis 2023)
+#: by: https://www.tenbrinke.com/de/aktuelle-projekte/aktueller-bautenstand/wandlitzstra%C3%9Fe-kaiserg%C3%A4rten-ib1604.html (Fotos vom Baufortschritt)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/kaiserg%C3%A4rten-wandlitzstra%C3%9Fe-18-22.343/#post-15379
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
 #: last_checked: 2021-04-01
 #: check_frequency: 360d
+#: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976
 #: by: ^^^
 # 
@@ -15696,7 +15707,8 @@ Peter-Huchel-Str.: Asphalt	Q0 22980,13286 23007,13509 23157,13467 23285,13441 23
 #: corrected_by: srt (Asphalt -> ...) vvv
 (Carola-Neher-Str - Kastanienallee): Verbundsteinpflaster	Q1+ 23382,14367 23405,14410 23458,14439 23506,14450
 (Carola-Neher-Str - Kastanienallee): Asphalt	Q0 23506,14450 23563,14473
-(Carola-Neher-Str - Kastanienallee): wassergebundene Decke	Q1 23563,14473 23567,14523 23723,14595 23786,14631
+#: corrected_by: srt (wassergebundene Decke -> ...)
+(Carola-Neher-Str - Kastanienallee): unbefestigter Weg	Q2+ 23563,14473 23567,14523 23723,14595 23786,14631
 #: corrected_by: ^^^
 #: corrected_by: srt (Q0 -> Q1, teilweise Verbundsteinpflaster) vvv
 (Heinrich-Grüber-Str. - Grottkauer Str.): wassergebundene Decke	Q1 23355,12732 23349,12760 23408,13100 23474,13449 23499,13593 23550,13863 23552,13878

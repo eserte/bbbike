@@ -593,11 +593,13 @@ EOF
        until => $isodate2epoch->("2019-07-21 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6, start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => -60,
        text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (20.7.2019 bis 21.7.2019)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.stadtfest.berlin/de/index.html
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/strassen-wegen-fest-gesperrt_a170723
+#: by: https://www.stadtfest.berlin/de/index.html (2.+3. Oktober 2021)
 	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
 	2::temp 6729,10212 6971,10346
 	2::temp 6628,10318 6626,10155
@@ -8158,7 +8160,7 @@ EOF
        until => $isodate2epoch->("2019-05-12 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 5, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 2, # wegen Corona
+       recurrence_prewarn_days => -3, # wegen Corona
        source_id => 'https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html',
        text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (11. und 12. Mai 2019)',
        type  => 'gesperrt',
@@ -10231,7 +10233,7 @@ EOF
        text  => 'L 030 Altlandsberg-B158 Seefeld zw. Krummensee und Seefeld Neubau Radweg Vollsperrung 08.10.2007-02.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 29826,21526 29573,21750 29536,21843 28936,23307 28921,23343 28886,23429 28777,23697 28753,23756 28581,24020
+	2::inwork 29826,21526 29562,21771 29530,21841 29522,21866 28936,23307 28921,23343 28886,23429 28777,23697 28753,23756 28581,24020
 EOF
      },
      { from  => 1191880800, # 2007-10-09 00:00
@@ -14611,6 +14613,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.819220.php
+#: by: https://www.berlin.de/events/3415964-2229501-koepenicker-sommer.html (2021: Termin noch nicht bekannt)
 	2::temp 22111,4562 22093,4499 22076,4422
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
 	2::temp 22138,4642 22074,4664
@@ -18294,11 +18297,13 @@ EOF
        until => $isodate2epoch->("2019-06-30 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6, start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => -60,
        # früher Bergmannstraßenfest
        text  => 'Kreuzbergstr.: Veranstaltung (Kreuzbergstraßenfest), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (28. Juni 2019 bis 30. Juni 2019)',
        type  => 'gesperrt',
        source_id => 'https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest',
        data  => <<EOF,
+#: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html (8.-10.10.2021, als "Kreuzberg-Festival", vermutlich auf Kreuzbergstraße)
 	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
 	3 9000,9509 8970,9323 9007,9264
 	3 9007,9264 8970,9323 9000,9509
@@ -28593,6 +28598,7 @@ EOF
        type  => 'handicap',
        source_id => '2147343461', # inaktiv
        data  => <<EOF,
+#: next_check_id: KYNAST-2021
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
 # REMOVED --- #: XXX regelmäßig prüfen --- #: priority: #A --- #: last_checked: 2018-11-16
 #: by: https://viz.berlin.de/2020/07/schau-11_12-07_2020/ ("für den Kraftfahrzeugverkehr gesperrt")
@@ -28603,7 +28609,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-04-29
+#: last_checked: 2021-05-07
 #: check_frequency: 14d
 #: next_check: 2021-07-01
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -30862,7 +30868,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-06
+#: last_checked: 2021-05-08
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32122,7 +32128,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-05-03
+#: last_checked: 2021-05-08
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32435,6 +32441,16 @@ EOF
 #: priority: #A
 #: last_checked: 2021-04-28
 	q4::inwork; 7771,9479 7829,9723
+EOF
+     },
+     { from  => 1622325600, # 2021-05-30 00:00
+       until => 1627768799, # 2021-07-31 23:59
+       text  => 'Jacobsensweg: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich vom 31.5.2021 bis Ende Juli 2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1083540.php',
+       data  => <<EOF,
+#: next_check_id: JACOBSENWEG-2021
+	q4::inwork; 2821,19559 2909,19485 2988,19445 3203,19340 3232,19325 3324,19277
 EOF
      },
     );
