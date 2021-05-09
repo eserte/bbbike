@@ -7709,7 +7709,7 @@ EOF
        text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf Straßenbau, Entwässerung Vollsperrung 10.04.2007-29.06.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 34521,5351 34532,5208 34510,4849 34545,4585 34549,4551
+	q4::inwork 34521,5351 34532,5208 34524,5091 34531,4965 34517,4929 34506,4884 34545,4585 34549,4551
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -9773,7 +9773,7 @@ EOF
        text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, Kno. A.-Bebel-Str. Straßenbau, Entwässerung Vollsperrung 15.08.2007-24.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 34510,4849 34532,5208 34521,5351
+	q4::inwork 34506,4884 34517,4929 34531,4965 34524,5091 34532,5208 34521,5351
 EOF
      },
      { from  => 1187647200, # 2007-08-21 00:00
@@ -10907,7 +10907,7 @@ EOF
        text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, zw. A.-Bebel-Str. und R.-Breitscheid Straßenbau, Entwässerung Vollsperrung 21.05.2008-30.06.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 34510,4849 34532,5208 34521,5351
+	q4::inwork 34506,4884 34517,4929 34531,4965 34524,5091 34532,5208 34521,5351
 EOF
      },
      { from  => 1197932400, # 2007-12-18 00:00
@@ -11713,7 +11713,7 @@ EOF
        text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, ab A.-Bebel-Str. in Ri. Erkner Straßenbau, Entwässerung Vollsperrung 21.05.2008-30.06.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 34510,4849 34545,4585 34549,4551
+	q4::inwork 34506,4884 34545,4585 34549,4551
 EOF
      },
      { from  => 1213736980, # 2008-06-17 23:09
@@ -20612,7 +20612,7 @@ EOF
        text  => 'Vollsperrung der Bahnbrücke Karlshorst: 10. bis 15. Mai 2012 (Sperrung der Fahrbahn)',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 18731,8577 18704,8427
+	q4::inwork 18718,8583 18704,8427
 EOF
      },
      { from  => 1381096800, # 2013-10-07 00:00
@@ -20621,7 +20621,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.karlshorst-buergerverein.de/index.php?option=com_content&task=view&id=516
-	2::inwork 18731,8577 18704,8427
+	2::inwork 18718,8583 18704,8427
 EOF
      },
      { from  => undef, # 
@@ -28044,7 +28044,7 @@ EOF
 # REMOVED --- #: by: https://viz.berlin.de/2020/12/vorschau-14122020/ (Restarbeiten) --- #: XXX bis wann gilt das Verbot? --- #: last_checked: 2020-12-18 (Schild existiert noch an der Marksburgstr., aber eigentlich nicht mehr an der Dorotheastr.)
 # REMOVED (bis Dorotheastr. frei) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
 	q4::inwork; 18770,8898 18737,8686
-# REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18733,8650 18733,8633
+# REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
 EOF
      },
      { from  => 1537740000, # 2018-09-24 00:00
@@ -29650,8 +29650,8 @@ EOF
 #: source_id: 2147346734 (bis 18.12.2020)
 #: last_checked: 2020-12-12
 #: next_check: 2020-12-18
-# REMOVED (hier normaler Radweg) --- q3::inwork; 18704,8427 18731,8577
-# REMOVED (hier keine Radwegschilder mehr) --- #: note: hier eng und viel Fußgängerverkehr ---	q3::inwork; 18731,8577 18733,8633 18733,8650 18737,8686
+# REMOVED (hier normaler Radweg) --- q3::inwork; 18704,8427 18718,8583
+# REMOVED (hier keine Radwegschilder mehr) --- #: note: hier eng und viel Fußgängerverkehr ---	q3::inwork; 18718,8583 18727,8634 18737,8686
 #: note: hier etwas weniger Fußgängerverkehr
 # REMOVED (hier keine Benutzungspflicht mehr) ---	q2::inwork; 18737,8686 18770,8898
 	q2::inwork; 18770,8898 18790,9018
@@ -30868,7 +30868,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-08
+#: last_checked: 2021-05-09
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32128,7 +32128,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-05-08
+#: last_checked: 2021-05-09
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32264,8 +32264,8 @@ EOF
        data  => <<EOF,
 #: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken)
 #: also_indoor: traffic
-#: last_checked: 2021-05-02
-#: check_frequency: 14d
+#: last_checked: 2021-05-09
+#: check_frequency: 3d
 	q4::inwork 13025,12523 13067,12583 13202,12790
 EOF
      },
@@ -32451,6 +32451,17 @@ EOF
        data  => <<EOF,
 #: next_check_id: JACOBSENWEG-2021
 	q4::inwork; 2821,19559 2909,19485 2988,19445 3203,19340 3232,19325 3324,19277
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Archibaldweg: Fahrbahn gesperrt, Ende der Sperrung unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: priority: #B
+#: last_checked: 2021-05-09
+#: check_frequency: 14d
+	q4::inwork 15870,10938 15674,10851
 EOF
      },
     );

@@ -2749,7 +2749,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-08
+#: last_checked: 2021-05-09
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3216,7 +3216,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-05-08
+#: last_checked: 2021-05-09
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3309,8 +3309,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken)
 #: also_indoor: traffic
-#: last_checked: 2021-05-02
-#: check_frequency: 14d
+#: last_checked: 2021-05-09
+#: check_frequency: 3d
 	q4::inwork 13025,12523 13067,12583 13202,12790
 ',
          'from' => undef,
@@ -3509,6 +3509,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Jacobsensweg: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich vom 31.5.2021 bis Ende Juli 2021',
          'type' => 'handicap',
          'until' => 1627768799
+       },
+       {
+         'data' => '#: priority: #B
+#: last_checked: 2021-05-09
+#: check_frequency: 14d
+	q4::inwork 15870,10938 15674,10851
+',
+         'from' => undef,
+         'id' => 3366,
+         'text' => 'Archibaldweg: Fahrbahn gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

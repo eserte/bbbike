@@ -1610,6 +1610,7 @@ Waltersdorf	2::igndisp 21462,-3900 21516,-3839
 Würzburger Str.	1 26031,-4072 26082,-4137 26119,-4215 26125,-4280
 Würzburger Str.	1 26109,-4284 26096,-4218 26060,-4148 26014,-4087
 Spartakusstr.	1s:q3 23907,-3542 23865,-3442 23820,-3337
+Heckenrosenweg (Schöneiche)	1 32387,6349 32317,6312 32301,6346 32370,6380 32387,6349
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -2502,6 +2503,7 @@ tragen (Treppe, 56 Stufen)	0:50 -6933,14317
 #: confirmed_by: srt (genaue Stufenzahl)
 tragen (Treppe, 56 Stufen)	0:50 -6934,14291
 #: note ^^^
+#: note: mit Führungsrampe für Fahrräder
 tragen (Treppe, 32 Stufen)	0:30 20682,7262
 #: note: Kinderwagenrampe existiert; außerdem noch ein Bordstein zur Straße "Am Plänterwald"
 tragen (Treppe, ca. 6 Stufen)	0:15 15488,8508
@@ -3241,6 +3243,8 @@ Drängelgitter	BNP:3::trailer=10 1035,14996
 Schranke, umständlich zu umfahren	BNP:5::trailer=15 19608,-1953
 Schranke	BNP:2::trailer=5 19617,6208
 Schranke	BNP:5::trailer=15 22855,4348
+Drängelgitter	BNP:3::trailer=10 32295,6272
+Drängelgitter	BNP:3::trailer=10 32418,6303
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3332,7 +3336,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: check_frequency: 60d
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 # 
-#: last_checked: 2021-05-08 vvv
+#: last_checked: 2021-05-09 vvv
 #: check_frequency: 21d vvv
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922 16841,9997
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16886,9982
@@ -3444,9 +3448,10 @@ Cotheniusstr.: Fahrbahn durch Bauzäune abgesperrt	2::inwork 13430,13733 13519,13
 #: next_check_id: BEBAUUNGSPLAN-XVI-81
 #: XXX Wie wird die Qualität der Straße sein?
 #: osm_watch: way id="567597390" version="4"
-#: last_checked: 2020-12-21 (osm)
+#: last_checked: 2021-05-09
 #: check_frequency: 120d
-Abendseglersteig: noch in Bau	2::inwork 33176,2938 33147,2832 33267,2810 33383,2792 33406,2852
+Abendseglersteig: noch in Bau	2::inwork 33176,2938 33147,2832 33267,2810 33383,2792
+# REMOVED (hier offen) --- Abendseglersteig: noch in Bau	2::inwork 33383,2792 33406,2852
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: XXX hier wird eine neue Unterführung gebaut vvv
@@ -3653,12 +3658,12 @@ Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2021-04-24 vvv
+#: last_checked: 2021-05-09 vvv
 #: check_frequency: 60d vvv
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
 # REMOVED (hier kann man schon fahren) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21474,5388 21485,5377 21514,5314 21547,5245 21413,5180
 Henriette-Lustig-Str.: teilweise gesperrt	2::inwork 21375,4974 21380,5003
-Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21611,5119 21645,5135
+# REMOVED (fast fertig) --- Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21611,5119 21645,5135
 Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 # REMOVED (offen) --- Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 21355,5254 21386,5251
 #: check_frequency ^^^
@@ -4264,7 +4269,9 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: XXX außerdem: im Quartier Am Tacheles werden zwei Privatplätze entstehen und bekommen die Namen (fehlen in Berlin.coords.data; wo genau befinden sie sich?):
 #: XXX Johannisplatz
 #: XXX Aaron-Bernstein-Platz
-#: osm_watch: way id="33036326" version="6"
+# REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7"
+#: osm_watch: way id="940764588" version="1"
+#: osm_watch: way id="940764584" version="1"
 #: last_checked: 2021-04-25
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315

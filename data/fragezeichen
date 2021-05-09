@@ -737,8 +737,6 @@ Route Lychen - Templin: Qualität?	? 3764,88062 3855,88004 3976,87729 4456,87107 
 Route Lychen - Templin: Qualität?	? 8746,84188 9057,84387 9552,84861 9796,84919 9902,85079 10400,85239 10871,85426 11049,85281 11360,85254
 Route Lychen - Templin: Qualität?	? 11457,84997 10910,82175 10950,82078 11321,82045 11565,81930 11976,81523 12233,80877 12435,80783 13005,80698 14950,79874 15176,79845
 Anselm-Feuerbach-Str. (Mahlow): Qualität des südöstlichen Abschnitts?	? 12040,-4778 12212,-4968
-Poetensteig (Woltersdorf): nur für Radfahrer/Fußgänger oder auch für Autos? Geht die Straße auch Richtung Norden weiter?	? 32294,6277 32306,6216 32333,6114
-Ahornallee (Woltersdorf): Qualität im mittleren und südlichen Abschnitt?	? 32630,6179 32623,6134 32601,5936 32588,5816 32583,5779 32573,5705 32560,5574
 Am Heineberg (Potsdam): Qualität?	? -17646,1636 -17599,1890
 Am Heineberg (Potsdam): Qualität? Dürfen hier keine Autos fahren?	? -17599,1890 -17597,2000 -17624,2037 -17651,2197 -17555,2301
 Am Heineberg (Potsdam): Qualität?	? -17555,2301 -17292,2539
@@ -761,7 +759,6 @@ Opolestr. (Potsdam): Qualität?	? -13683,1356 -13654,1402 -13633,1438 -13614,1467
 Luzernstr. (Potsdam): Qualität?	? -13738,1387 -13707,1434 -13686,1470 -13653,1522
 Gustav-Meyer-Str.: wurde die Straße schon teilweise Richtung Osten verlängert? Qualität?	? -13610,1521 -13653,1522 -13731,1525 -13779,1544
 Hermann-Mattern-Promenade: wurde die Straße schon teilweise Richtung Norden verlängert? Qualität?	? -13795,1420 -13766,1469 -13745,1504 -13731,1525 -13698,1621 -13664,1729 -13645,1807
-Jahnpromenade (Erkner): Qualität?	? 34325,3183 34352,3189 34493,3339
 Am Uferpark (Potsdam): genaue Lage der Straße, Qualität?	? -13381,-2943 -13452,-2841
 Luisenhof (Potsdam): genaue Lage der Straße, Qualität?	? -13481,-2956 -13629,-2860
 Straßen in Döberitz: genaue Straßennamen, Qualität?	? -12956,13814 -13017,13815 -13375,13807 -13371,13691 -13448,13520
@@ -912,6 +909,7 @@ Trampe - Kruge: Qualität?	? 39683,40892 40258,40191 41298,39991 41731,39846
 Beiersdorf - Beerbaum: Qualität?	? 35980,34322 35977,34619 36085,34994 36096,35327 36200,35854 36214,36208 36215,36497
 Dollgow - Zernikow: Qualität?	? -17141,74157 -16859,74184 -16629,74151 -15730,74428 -14966,74667 -13662,75159
 Schwanebecker Chaussee: Radwegbau	?::inwork 22048,29221 21772,28566
+Leipziger Str. (Schöneiche): wie ist die Qualität im nördlichen Abschnitt? ebenfalls unbefestigt?	? 32156,6405 32056,6607 31993,6776 31952,6917 31951,7060
 # added from strassen
 Süderholmer Steig (Ist dieser Abschnitt ausgeschildert?)	? -2245,21544 -2239,21904
 # added from landstrassen
@@ -930,7 +928,6 @@ Zur Königlichen Hofbrauerei (Fahrbahnbeschaffenheit?)	? -12814,-2270 -12783,-226
 Peter-Kühne-Siedlung (Ist der Weg ausgeschildert? Nachts beleuchtet?)	? -15962,-2003 -15961,-2168
 Am Urnenfeld (Ist die Straße eine Fahrradstraße? Ist Autoverkehr zugelassen?)	? -18163,-1320 -18377,-1254 -18417,-1231 -18433,-1242 -18565,-1169 -18698,-1030 -18725,-827 -18682,-719
 Karl-Marx-Str. (Qualität?)	? 950,29767 1078,29668 1141,29607 1272,29447 1366,29416
-Kantstr. (Qualität/Fahrbahnbeschaffenheit der Straße?)	? 32451,6132 32630,6179
 (zwischen Sandweg und Havelhausener Str.) (Welcher Teil ist NN und welche sind N?)	? -4100,34709 -4039,34618 -4007,34553 -3996,34499
 Bruno-Schönlank-Str. (wie ist die Qualität der Bruno-Schönlank-Str.?)	? 1386,30391 708,30406 517,30342 476,30325 456,30295 446,30260
 Bahnhofstr. (die Bahnhofstr. ist in Wirklichkeit nicht so lang)	? 1678,34084 1639,34107 1502,34129 1425,34141 1331,34156 1251,34170 1208,34176 986,34207 852,34225 686,34248 646,34253 406,34290
@@ -954,8 +951,6 @@ Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 # added from qualitaet_s
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
 (Adlergestell - Sportpromenade/Bammelecke): Waldweg, teilweise loser Schotter (wird sich die Qualität hier bessern (insbesondere: was passiert mit dem losen Schotter)?)	? 24485,-667 24758,-268 25172,345
-Mausohrweg: Asphalt, letzte Deckschicht fehlt (wann wird die Fahrbahndecke endgültig hergestellt?)	? 33327,2979 33296,2894
-Mausohrweg: Asphalt, letzte Deckschicht fehlt (wann wird die Fahrbahndecke endgültig hergestellt?)	? 33176,2938 33296,2894 33406,2852 33503,2818
 # added from qualitaet_l
 Neuruppin - Wuthenow - Gnewikow - Wustrau-Altfriesack: teilweise gut, teilweise mäßiges Kopfsteinpflaster (wird sich die Qualität nach den Bauarbeiten verbessern?)	? -29918,57158 -29816,57117 -29490,56714 -29243,56187 -29198,55801 -29109,55374 -28677,55014 -28367,54202 -28911,54055 -29276,53427 -29210,52915 -28736,52387 -28368,51517 -28001,50966 -27421,50349 -27196,50015 -27035,49829 -25968,49631 -25719,49500 -25060,48842
 Magazinstr.: Asphalt (ist hier tatsächlich asphaltiert?)	? 26953,10903 27047,11144
@@ -995,13 +990,12 @@ Weg am Flughafen - Rotberg: Feldweg (Ist der südöstliche Abschnitt des Weges ein
 Eichendorffstr. (Schwanebeck-West): unbefestigte Straße (Wurde die Eichendorffstr. mittlerweile befestigt?)	? 17638,24756 17584,24703
 Ernst-Toller-Str.: unbefestigte Straße (Wurde die Ernst-Toller-Str. mittlerweile befestigt?)	? 17581,24815 17638,24756
 Stefan-Heym-Str.: unbefestigte Straße (wurde hier mittlerweile gepflastert (Verbundsteinpflaster)?)	? 17776,24912 17870,24821 18057,24641
-Fontanestr.: Asphalt (ist der südöstliche Abschnitt auch asphaltiert?)	? 32365,5789 32560,5574 32725,5392
-Schillerstr.: Asphalt (ist der südliche Abschnitt auch asphaltiert?)	? 32451,6132 32479,5931
-Eichendamm: Asphalt (ist der südliche Abschnitt auch asphaltiert?)	? 32711,5797 32702,5596
-Höhenweg (Schöneiche): Kleinsteinpflaster (ist der nördliche Abschnitt tatsächlich gepflastert?)	? 32075,6275 31945,6555 31873,6746
+Maienhöhe: Asphalt (ist der südöstliche Abschnitt der Maienhöhe ebenfalls asphaltiert?)	? 32780,5513 32819,5506 32940,5485 33047,5433
+Robert-Koch-Str.: unbefestigte Straße (ist der nördliche Abschnitt der Robert-Koch-Str. ebenfalls unbefestigt?)	? 32863,5933 32886,6123 32904,6235 32943,6268
+Lerchenstr.: Beton (ist der nördliche Abschnitt der Lerchenstr. ebenfalls betoniert?)	? 32978,5895 33006,6162 33015,6171
+Lenzstr.: Asphalt (ist der nördliche Abschnitt der Lenzstr. ebenfalls asphaltiert?)	? 33098,5856 33119,6053 33135,6164
 Petersdorf: Asphalt (ist auch im westlichen Abschnitt asphaltiert?)	? 23256,76732 22470,76523
-Waldpromenade (Erkner): Beton (ist der nordöstliche Abschnitt auch betoniert?)	? 34536,3716 34568,3746 34585,3820
-Fuchssteig (Erkner): Asphalt (ist der nördliche Abschnitt auch asphaltiert?)	? 34459,3734 34483,3839
+Fuchssteig (Erkner): Asphalt (ist der nördliche Abschnitt auch asphaltiert?)	? 34459,3734 34480,3844
 Erich-Mühsam-Str.: Kopfsteinpflaster (liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?)	? 1787,31375 1851,31451 1878,31471 1916,31483 2027,31518 2082,31535
 Gartenallee: Kopfsteinpflaster (liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?)	? 1887,31658 2027,31518
 Am Wasser (Gartz): Kopfsteinpflaster (Stimmt das? Liegt hier tatsächlich Kopfsteinpflaster?)	? 76116,90239 76020,90231 75977,90236
@@ -1042,8 +1036,6 @@ asphaltiert (geht der Radweg in Richtung Südwesten weiter?)	? 10744,-25036 9478,
 # added from comments_misc
 Tor (Sperrung möglich?) (Ist das Tor permanent geöffnet?)	? 58041,164268 58324,164202 59544,164184
 Ausschilderung nach Luisenthal (?) folgen (Heißt es tatsächlich "Luisenthal"?)	? 41134,76881 41143,76365
-Mausohrweg: nicht ausgeschildert (wann werden die Straßen ausgeschildert?)	? 33327,2979 33296,2894
-Mausohrweg: nicht ausgeschildert (wann werden die Straßen ausgeschildert?)	? 33176,2938 33296,2894 33406,2852 33503,2818
 # added from comments_route
 F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -26785,5851 -26783,5891 -26689,6111 -26525,6519 -26170,6459 -25898,6447 -25719,6581 -25537,6616 -25318,6593 -25213,6477
 F3 (Potsdam) (Wie ist der genaue Verlauf der F3?)	? -18701,4578 -19392,4605 -19316,4365

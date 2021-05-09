@@ -1554,7 +1554,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2021-04-15 vvv
+#: last_checked: 2021-05-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -6385,8 +6385,8 @@ asphaltiert	RW1;RW1 17681,6212 17847,6089
 Busspur gilt Mo-Sa 7-20 Uhr	RW5; 5238,13714 5231,13843 5220,14043
 Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 	RW4; 7714,13223 7759,13246
-# REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX Bauarbeiten der Wasserbetriebe; die Radspur ist nicht mehr befahrbar; laut fritz Bauarbeiten bis 2020-12-31 --- #: XXX asphaltierte Radwege existieren zumindest teilweise, vielleicht auch schon komplett? --- #: last_checked: 2019-06-10 --- #: next_check: 2019-06-10 --- # was: die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18704,8427 ---	RW0; 18731,8577 18704,8427
-neu asphaltiert	RW2; 18737,8686 18733,8650 18733,8633 18731,8577 18704,8427 18731,8577
+# REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX Bauarbeiten der Wasserbetriebe; die Radspur ist nicht mehr befahrbar; laut fritz Bauarbeiten bis 2020-12-31 --- #: XXX asphaltierte Radwege existieren zumindest teilweise, vielleicht auch schon komplett? --- #: last_checked: 2019-06-10 --- #: next_check: 2019-06-10 --- # was: die letzten Meter nur Schutzstreifen	RW4; 18718,8583 18704,8427 ---	RW0; 18718,8583 18704,8427
+neu asphaltiert	RW2; 18737,8686 18727,8634 18718,8583 18704,8427 18718,8583
 	RW6;RW6 7781,14238 7802,14250 7757,14318 7735,14305
 	RW6;RW6 7930,14060 7973,13991
 10km/h	RW6;RW6 13510,8138 13663,8011
@@ -6541,7 +6541,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: osm_watch: way id="4615031" version="38"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 provisorisch geschützter Radstreifen	RW4; 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
-#: osm_watch: way id="41954398" version="19"
+#: osm_watch: way id="41954398" version="20"
 provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 #: next_check ^^^
 #: check_frequency ^^^
@@ -6933,7 +6933,7 @@ Poller	RW4; 9383,13986 9469,14004 9659,14043 9676,14046 9804,14071 9821,14073
 	RW4; 9821,14073 9936,14085
 # REMOVED (hier nicht) ---	RW4; 9469,14004 9383,13986
 asphaltierter gemeinsamer Geh- und Radweg, sehr breit	RW2;RW8 21115,271 21286,449 21613,923 21656,989 21829,1351
-	RW4; 18731,8577 18733,8633 18733,8650 18737,8686
+	RW4; 18718,8583 18727,8634 18737,8686
 	RW4; 7098,3067 7105,3040 7115,3003
 #: by: mapillary
 	RW3;RW3 18938,2054 18881,2062

@@ -1103,6 +1103,7 @@ Waltersdorf	2::igndisp 21462,-3900 21516,-3839
 Würzburger Str.	1 26031,-4072 26082,-4137 26119,-4215 26125,-4280
 Würzburger Str.	1 26109,-4284 26096,-4218 26060,-4148 26014,-4087
 Spartakusstr.	1s 23907,-3542 23865,-3442 23820,-3337
+Heckenrosenweg (Schöneiche)	1 32387,6349 32317,6312 32301,6346 32370,6380 32387,6349
 Mittelstreifen nicht überquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht überquerbar	3::igndisp -974,128015 -724,127995 -719,128043
 Feldstr. -> Pasewalk: Mittelstreifen nicht überquerbar	3::igndisp -719,128043 -724,127995 6,127935
@@ -3156,6 +3157,8 @@ Drängelgitter	BNP:3:-193:trailer=10 1035,14996
 Schranke, umständlich zu umfahren	BNP:5:-113:trailer=15 19608,-1953
 Schranke	BNP:2:-157:trailer=5 19617,6208
 Schranke	BNP:5:-109:trailer=15 22855,4348
+Drängelgitter	BNP:3:-193:trailer=10 32295,6272
+Drängelgitter	BNP:3:-187:trailer=10 32418,6303
 Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, teilweise lange Umwege über die Gehwege möglich	2::inwork 16227,12280 16159,12301 16056,12317
 Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, teilweise lange Umwege über die Gehwege möglich	2::inwork 16144,12388 16159,12301 16158,12191
 Gotlindestr.: Einbahnstraßenregelung	1s:inwork 16720,12614 16859,12613
@@ -3184,7 +3187,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9271,323 9296,335 9249,434 9218,458
 Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 18892,3256 18689,3465
 Cotheniusstr.: Fahrbahn durch Bauzäune abgesperrt	2::inwork 13430,13733 13519,13785
-Abendseglersteig: noch in Bau	2::inwork 33176,2938 33147,2832 33267,2810 33383,2792 33406,2852
+Abendseglersteig: noch in Bau	2::inwork 33176,2938 33147,2832 33267,2810 33383,2792
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): Sperrung am Bahnübergang	2::inwork 10096,-2137 10203,-2137 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am Bahnübergang	2::inwork 10228,-2136 10231,-2159
 Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-2156 10318,-2156
@@ -3211,7 +3214,6 @@ Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,815
 Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
 Henriette-Lustig-Str.: teilweise gesperrt	2::inwork 21375,4974 21380,5003
-Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21611,5119 21645,5135
 Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148

@@ -230,7 +230,7 @@ Hobrechtsfelde - Buch bis zur Kurve Hobrechtsfelder Chaussee	Q0 16008,28424 1577
 Bötzow: asphaltiert	Q0 -7640,26928 -8182,26706 -8488,26599
 Hennigsdorf: Fahrbahn asphaltiert	Q0 -3475,26523 -3306,25887 -3049,25593
 Hennigsdorf, zum Bahnhof: Kopfsteinpflaster	Q2 -3516,25557 -3438,25572
-Berliner Str. (Erkner): Fahrbahn und Radweg Richtung Berlin Asphalt, Radweg Richtung Osten Verbundsteinpflaster	Q0 33525,2901 33543,2896 33913,2821 34014,2791 34152,2749
+Berliner Str. (Erkner): Fahrbahn und Radweg Richtung Berlin Asphalt, Radweg Richtung Osten Verbundsteinpflaster	Q0 33525,2901 33543,2896 33913,2821 34012,2799 34152,2749
 # REMOVED --- Erkner Richtung Tasdorf: Kopfsteinpflaster	Q2; 34152,2749 34326,2915 34293,3076 34261,3092
 # REMOVED --- Erkner Richtung Tasdorf: Kopfsteinpflaster/schlechter Radweg	Q2; 34261,3092 34258,3138 34268,3204 34291,3314 34315,3429 34359,3631 34379,3732 34392,3801 34403,3857 34486,4276 34515,4401 34549,4551
 Heinersdorf: Kopfsteinpflaster	Q2 5941,-2072 5767,-2048
@@ -271,7 +271,7 @@ Kuhfortdamm: kleinteiliges Kopfsteinpflaster, etwas uneben	Q1- -18364,-2035 -183
 Borgsdorf - Summt: schlechtes Kopfsteinpflaster	Q3 7397,31494 7275,31552 7015,31675 6703,31709
 Borgsdorf - Summt: Asphalt	Q0 6703,31709 6351,31738
 Schöneiche - Rüdersdorf: Asphalt	Q0 34780,7980 34918,7990 35050,8150 35171,8203 35482,8027 35625,8093
-# REMOVED (zumindest im südlichen Abschnitt nicht mehr der Fall, wahrscheinlich ist die gesamte Straße neu gemacht) --- Woltersdorf - Schöneiche: sandiger Weg	Q2 32380,6938 32611,6667 32797,6434 33213,5929
+# REMOVED (zumindest im südlichen Abschnitt nicht mehr der Fall, wahrscheinlich ist die gesamte Straße neu gemacht) --- Woltersdorf - Schöneiche: sandiger Weg	Q2 32380,6938 32611,6667 32671,6592 32797,6434 32943,6268 33015,6171 33119,6053 33213,5929
 Woltersdorf - Schöneiche: Asphalt	Q0 33213,5929 33207,5820
 # REMOVED (ja) --- #: add_fragezeichen: nach den Bauarbeiten (2006-10-20) wahrscheinlich asphaltiert:
 Neu-Zittau: Fahrbahn asphaltiert	Q0 33743,-1143 33742,-1197 33638,-1495
@@ -291,7 +291,8 @@ Schöneicher Str.: Kopfsteinpflaster	Q2 30587,8490 30700,8462 31176,8354
 Schöneiche: Kopfsteinpflaster	Q2 30587,8490 30409,8500 30290,8562
 #: corrected_by: mapillary/osm (was "Kopfsteinpflaster")
 Neuenhagen: Asphalt	Q0 30815,13170 30910,13101 30961,12993 30982,12947 31036,12900 31148,12804 31043,12392 31021,12174
-Woltersdorf: Kopfsteinpflaster	Q2 34521,5351 34426,5329 34283,5380
+#: note: früher: Kopfsteinpflaster, Q2
+Woltersdorf: Verbundsteinpflaster/Asphalt	Q0- 34521,5351 34426,5329 34283,5380
 #XXX removed by Andreas Titz, check! Oranienburg-Tiergarten: Feldweg, teils sandig und schottrig	Q2 -3999,40431 -4129,40792 -4303,41811 -4758,42618
 Kramnitz - Lindow: Verbundsteinpflaster	Q1 -19418,63191 -19408,63184 -19349,63151 -19181,63108
 Lindow - Kramnitz: Verbundsteinpflaster	Q1 -19418,63191 -19428,63200 -19505,63369 -19680,63577 -20046,63925
@@ -1304,7 +1305,7 @@ Asphalt	Q0 17895,21854 18088,21912 18199,21941 18368,22018
 Fahrbahn Kopfsteinpflaster, Radweg Verbundsteinpflaster	Q1 35625,8093 35662,8028 35771,7946
 	Q0 35771,7946 35465,7465 35434,7150 35483,7122
 schlechtes Kopfsteinpflaster	Q3 35483,7122 35482,7099 35479,7051 35478,7036
-	Q0 35478,7036 35178,6750 34859,6609 34752,6581 34712,6571 34641,6570 34571,6550 34518,6469 34420,5969 34424,5933 34532,5658 34508,5441 34521,5351 34532,5208 34510,4849 34545,4585 34549,4551
+	Q0 35478,7036 35178,6750 34859,6609 34752,6581 34712,6571 34641,6570 34571,6550 34518,6469 34420,5969 34424,5933 34532,5658 34508,5441 34521,5351 34532,5208 34524,5091 34531,4965 34517,4929 34506,4884 34545,4585 34549,4551
 	Q0 34283,5380 33943,5568 33814,5618 33686,5660 33564,5702 33444,5744 33207,5820
 	Q0 32380,6938 31587,7909 31512,7971 31176,8354
 	Q0 25632,11132 25912,11081 26449,10953 26596,10921 26900,10665 27209,10666 27499,10859 27817,10875 29194,10899 29749,10911 30678,10923 31871,10926 32900,10962 33475,10842 34256,10645 35980,10236 36572,10083
@@ -1620,7 +1621,7 @@ Wodanstr. (Teltow): Asphalt	Q0 3921,-1170 3974,-1175
 Friggastr. (Teltow): Asphalt	Q0 3912,-1265 3958,-1276 4115,-1250 4356,-1211
 (Hagenstr. - Friggastr.): unbefestigter Trampelpfad	Q2 4372,-1201 4356,-1211
 #: note: Fahrbahn und Radwege
-Berliner Str. (Woltersdorf): Verbundsteine	Q0 33207,5820 32823,5946 32728,5942 32601,5936 32479,5931 32376,5926 32252,5917 32192,5915
+Berliner Str. (Woltersdorf): Verbundsteine	Q0 33207,5820 33098,5856 32978,5895 32863,5933 32823,5946 32728,5942 32601,5936 32479,5931 32376,5926 32252,5917 32192,5915
 Rüdersdorf: Fahrbahn Asphalt	Q0 35771,7946 35917,7846 36225,7766 36347,7773 36377,7760
 Waldstr.: Kopfsteinpflaster	Q2 36850,7443 36540,7271
 An der Schleuse/Fangschleusenstr.: Kopfsteinpflaster	Q2 35023,4571 35066,4548 35132,4537 35155,4511 35230,4424 35238,4285
@@ -2441,8 +2442,18 @@ Briesen - Fürstenwalde: Asphalt	Q0 69963,-5374 69771,-4980
 Petersdorf - Treplin: sehr guter Asphalt	Q0+ 74238,-3970 74606,-3837 75224,-3791 75828,-2982 76522,-2274 76525,-2065 76615,-1975 76665,-1850 77075,-1861 77833,-697 78103,-165 78034,231
 Müncheberg: Kopfsteinpflaster	Q2 60803,11559 60643,11590 60484,11681 60475,11734 60306,11906
 Petershagen: Asphalt	Q0+ 74683,385 74197,607 73775,831
-Rüdersdorfer Str. (Schöneiche): schlechtes bis mäßiges Kopfsteinpflaster	Q3 31512,7971 31446,7915
+Rüdersdorfer Str. (Schöneiche): schlechtes bis mäßiges Kopfsteinpflaster	Q3+ 31512,7971 31446,7915
 Brandenburgische Str. (Schöneiche): Betonstraße	Q0 30512,7909 30587,8490
+Kurze Straße (Schöneiche): schlechtes Kopfsteinpflaster	Q3 30774,5881 30912,5855
+Bismarckstr. (Schöneiche): schlechtes Kopfsteinpflaster	Q3 30972,6172 30847,6181 30623,6193 30498,6200
+Bergstr. (Schöneiche): unbefestigte Straße	Q2 32269,6334 32189,6320
+Bergstr. (Schöneiche): Asphalt	Q0 32189,6320 32075,6275
+Bergstr. (Schöneiche): Kopfsteinpflaster	Q2- 32075,6275 32000,6216 31980,6201
+Leipziger Str. (Schöneiche): unbefestigte Straße	Q2 32189,6320 32156,6405
+Ehrenpreisweg (Schöneiche): unbefestigte Straße	Q2 32295,6272 32269,6334 32218,6419
+#: note: in diesem Abschnitt auch Einbahnstraßenregelung in wechselnder Richtung, da das laut osm auch eine "living_street" ist, vermutlich irrelevant für Radfahrer?
+#: by: osm
+Ehrenpreisweg (Schöneiche): Asphalt	Q0 32218,6419 32123,6631
 Gothenstr. (Bansin): Asphalt mit kurzen Kopfsteinpflasterschwellen	Q0- 56493,173943 56793,173800
 Gothenstr. (Bansin): Feldweg	Q2 56793,173800 56846,173731 57159,173640 57315,173465 57343,173415
 Am Kanal (Bansin): Feldweg	Q2 57315,173465 57375,173475 57534,173650
@@ -3143,10 +3154,15 @@ Rahnsdorfer Str.: Kleinsteinpflaster	Q1- 30309,6841 30324,6911 30356,7039
 Karl-Marx-Str. (Schöneiche): unbefestigter Weg	Q2- 30381,6711 30431,6717
 Karl-Marx-Str. (Schöneiche): Asphalt	Q0 30431,6717 30557,6731
 Karl-Marx-Str. (Schöneiche): Kopfsteinpflaster	Q2 30557,6731 30802,6760
+Forststr. (Schöneiche): Asphalt	Q0 31416,6774 30995,7040 30891,7130
+#: by: osm
+Forststr. (Schöneiche): unbefestigte Straße	Q2 30891,7130 30750,7249
+Heideweg (Schöneiche): unbefestigte Straße, holprig	Q2 31721,6750 31751,6653 31817,6517 31915,6328 31980,6201 32019,6115
 Brandenburgische Str.: Verbundsteinpflasterradwege, Kleinpflaster auf Fahrbahn	Q1+ 30495,7350 30557,6731
 Brandenburgische Str.: Verbundsteinpflasterradwege, betonierte Fahrbahn	Q1+ 30557,6731 30602,6366
-Brandenburgische Str.: Verbundsteinpflasterradwege, gepflasterte Fahrbahn	Q1+ 30602,6366 30648,5979
-Hamburger Str.: Asphalt	Q0 30871,6356 31007,6343 31080,6454 31416,6774
+Brandenburgische Str.: Verbundsteinpflasterradwege, gepflasterte Fahrbahn	Q1+ 30602,6366 30623,6193 30648,5979
+Hamburger Str.: Asphalt, leicht uneben	Q0- 30871,6356 31007,6343
+Hamburger Str.: Asphalt	Q0 31007,6343 31080,6454 31416,6774
 (Schöneiche - Woltersdorf): Waldweg	Q2+ 31007,6343 31016,6269 31030,6168 31027,6076
 #: note: Poller am Südende
 Birkenweg (Groß Glienicke): Asphalt	Q0 -10055,6715 -10091,6716 -10133,6717 -10177,6711 -10178,6691 -10183,6650
@@ -4242,29 +4258,44 @@ Ohmstr.: Verbundsteinpflaster	Q1+ 18039,24940 18127,25162
 Bodenseestr.: Asphalt	Q0 18003,25349 18133,25321
 An der Alten Fahrt - Joliot-Curie-Str.: Parkweg	Q1 -12485,-1482 -12489,-1465
 An der Alten Fahrt - Joliot-Curie-Str.: Asphalt	Q1 -12489,-1465 -12500,-1437
-Fontanestr.: Asphalt	Q0 32080,6100 32178,5997 32252,5917 32365,5789
-#: add_fragezeichen: ist der südöstliche Abschnitt auch asphaltiert?
-Fontanestr.: Asphalt	Q0 32365,5789 32560,5574 32725,5392
+Fontanestr.: Asphalt	Q0 32080,6100 32178,5997 32252,5917 32365,5789 32560,5574 32725,5392
+Körnerstr.: Verbundsteinpflaster	Q1+ 32365,5789 32475,5797 32583,5779
+Maienhöhe: unbefestigte Straße	Q2 32574,5696 32617,5683
+Maienhöhe: Asphalt	Q0 32617,5683 32658,5639 32694,5601 32780,5513
+#: add_fragezeichen: ist der südöstliche Abschnitt der Maienhöhe ebenfalls asphaltiert?
+Maienhöhe: Asphalt	Q0 32780,5513 32819,5506 32940,5485 33047,5433
 Goethestr.: Asphalt	Q0 32376,5926 32351,5990 32262,6092 32177,6179 32111,6229
 Chamissostr.: Asphalt	Q0 32262,6092 32178,5997
 Lessingstr.: Verbundsteinpflaster	Q1+ 32177,6179 32306,6216 32425,6246 32644,6307
 Lessingstr.: Asphalt mit Schäden	Q2+ 32644,6307 32773,6334
-Schillerstr.: unbefestigter Weg	Q2 32420,6317 32425,6246
-Schillerstr.: Asphalt	Q0 32425,6246 32451,6132
-#: add_fragezeichen: ist der südliche Abschnitt auch asphaltiert?
-Schillerstr.: Asphalt	Q0 32451,6132 32479,5931
-Ahornallee: Asphalt mit Schäden	Q1 32644,6307 32630,6179
+#: note: früher unbefestigter Weg, Q2
+Schillerstr.: Asphalt	Q0 32418,6303 32425,6246
+Schillerstr.: Asphalt	Q0 32425,6246 32451,6132 32479,5931
+Kantstr.: Asphalt	Q0 32451,6132 32630,6179
+Ahornallee (Woltersdorf): Asphalt mit Schäden	Q1 32644,6307 32630,6179 32623,6134 32601,5936 32588,5816 32583,5779 32574,5696 32560,5574
+Heinrich-Heine-Str.: Verbundsteinpflaster, einige Aufpflasterungen	Q1 32588,5816 32711,5797 32844,5748 32961,5707 33073,5667 33183,5630
+Robert-Koch-Str.: unbefestigte Straße	Q2 32819,5506 32844,5748 32863,5933
+#: add_fragezeichen: ist der nördliche Abschnitt der Robert-Koch-Str. ebenfalls unbefestigt?
+Robert-Koch-Str.: unbefestigte Straße	Q2 32863,5933 32886,6123 32904,6235 32943,6268
+Lerchenstr.: Beton	Q0- 32940,5485 32961,5707 32978,5895
+#: add_fragezeichen: ist der nördliche Abschnitt der Lerchenstr. ebenfalls betoniert?
+Lerchenstr.: Beton	Q0- 32978,5895 33006,6162 33015,6171
+Lenzstr.: unbefestigte Straße	Q2 33047,5433 33073,5667
+Lenzstr.: Asphalt	Q0 33073,5667 33098,5856
+#: add_fragezeichen: ist der nördliche Abschnitt der Lenzstr. ebenfalls asphaltiert?
+Lenzstr.: Asphalt	Q0 33098,5856 33119,6053 33135,6164
+Etkar-André-Str.: unbefestigte Straße	Q2 33158,5420 33183,5630
+Etkar-André-Str.: unbefestigter Weg	Q2+ 33183,5630 33207,5820
 Eichendamm: Verbundsteinpflaster	Q1+ 32797,6434 32773,6334 32749,6129 32728,5942
-Eichendamm: Asphalt	Q0 32728,5942 32711,5797
-#: add_fragezeichen: ist der südliche Abschnitt auch asphaltiert?
-Eichendamm: Asphalt	Q0 32711,5797 32702,5596
+Eichendamm: Asphalt	Q0 32728,5942 32711,5797 32694,5601
 Ebereschenallee: Asphalt	Q0 32623,6134 32749,6129 32886,6123
+Vogelsdorfer Str.: Kopfsteinpflaster/Asphalt	Q1- 34283,5380 34279,5454
 #: XXX evtl. Qualität besser als Q2+ (Q1-?)
-Vogelsdorfer Str.: gepflastert	Q2+ 34283,5380 34265,5690 34189,5923
+Vogelsdorfer Str.: gepflastert	Q2+ 34279,5454 34265,5690 34189,5923
 Grünstr.: unbefestigte holprige Straße	Q2 33943,5568 34060,5599 34160,5624 34265,5690
-Höhenweg (Schöneiche): Kleinsteinpflaster	Q2+ 32111,6229 32094,6243 32075,6275
-#: add_fragezeichen: ist der nördliche Abschnitt tatsächlich gepflastert?
-Höhenweg (Schöneiche): Kleinsteinpflaster	Q2+ 32075,6275 31945,6555 31873,6746
+Höhenweg (Schöneiche): Kleinsteinpflaster, uneben	Q2+ 32111,6229 32094,6243 32075,6275 32022,6380 31936,6557 31861,6747
+Pilzsteg (Schöneiche): unbefestigte Straße	Q2 32022,6380 31915,6328
+Heckenrosenweg (Schöneiche): Asphalt	Q0 32418,6361 32387,6349 32317,6312 32301,6346 32370,6380 32387,6349
 Rehhahn: Asphalt	Q0 23565,21396 23579,21383 23983,21040
 Mc-Donald's-Str.: Asphalt	Q0 23565,21396 23450,21493
 Chausseedreieck: Asphalt	Q0 24203,22171 24258,22136 24458,22009 24149,22011
@@ -4377,21 +4408,25 @@ Holzmarktstr - Humboldtbrücke: sehr gute Pflasterung	Q0 -11851,-962 -11926,-909 
 Hönow - Krummensee (Radweg): Asphalt	Q0 26624,16752 27935,17072 28114,17108
 Hönow - Krummensee (Radweg): Schotter	Q2 28114,17108 28141,17137
 Hönow - Krummensee (Radweg): Asphalt	Q0 28141,17137 28181,17181 28200,17226 28235,17277 28241,17433 28227,17520 28285,17623 28335,17656 28362,17701 28360,17733 28378,17772 28430,17815 28460,17885 28495,17910 28532,17916 28525,17997 28531,18035 28581,18094 28629,18125 28691,18139 28730,18166 28756,18282 28747,18368 28750,18501
-Waldpromenade (Erkner): Beton	Q0 34359,3631 34432,3618 34465,3586 34487,3583 34499,3592 34536,3716
-#: add_fragezeichen: ist der nordöstliche Abschnitt auch betoniert?
-Waldpromenade (Erkner): Beton	Q0 34536,3716 34568,3746 34585,3820
+Am Reiherhorst (Erkner): Asphalt	Q0 34403,3857 34480,3844 34580,3824
+Waldpromenade (Erkner): Beton	Q0- 34359,3631 34432,3618 34465,3586 34487,3583 34499,3592 34532,3703
+Waldpromenade (Erkner): Asphalt	Q0 34532,3703 34536,3716 34541,3732 34570,3768 34580,3824
 Fuchssteig (Erkner): Asphalt	Q0 34432,3618 34459,3734
 #: add_fragezeichen: ist der nördliche Abschnitt auch asphaltiert?
-Fuchssteig (Erkner): Asphalt	Q0 34459,3734 34483,3839
+Fuchssteig (Erkner): Asphalt	Q0 34459,3734 34480,3844
 Amselweg (Erkner): Asphalt	Q0 34487,3583 34426,3400
 (Waldpromenade - Flakenseeweg): wassergebundene Decke	Q1 34499,3592 34546,3550
 Julius-Rütgers-Str. (Erkner): Asphalt	Q0 34268,3060 34382,3109 34411,3132 34614,3362 34671,3433
 Julius-Rütgers-Str. (Erkner): Asphalt	Q0 34268,3204 34325,3183 34411,3132 34458,3095
+Flakenseeweg (Erkner): Asphalt	Q0 34437,3392 34453,3377
+Flakenseeweg (Erkner): Verbundsteinpflaster	Q1+ 34453,3377 34488,3341
+Flakenseeweg (Erkner): Asphalt	Q0 34471,3396 34437,3392 34426,3400
 Flakenseeweg (Erkner): Asphalt	Q0 34546,3550 34671,3433
 Flakenseeweg (Erkner): Asphalt	Q0 34471,3396 34508,3509 34546,3550 34624,3633
 Flakenseeweg (Erkner): Asphalt	Q0 34471,3396 34614,3362 34631,3349 34670,3354
 Flakenseeweg (Erkner): Verbundsteinpflaster	Q1 34315,3429 34426,3400
-Robinienweg (Erkner): Kleinsteinpflaster	Q2+ 34014,2791 34039,2942 34015,3014
+Jahnpromenade (Erkner): Asphalt	Q0- 34325,3183 34354,3198 34488,3341
+Robinienweg (Erkner): Kleinsteinpflaster	Q2+ 34012,2799 34039,2942 34015,3014
 Hafenstr. (Erkner): Beton	Q1 33913,2821 33888,2711
 Hessenwinkler Str. (Erkner): Kleinsteinpflaster	Q2+ 33888,2711 33822,2722
 Hessenwinkler Str. (Erkner): Asphalt	Q0 33822,2722 33648,2752 33526,2771
@@ -7590,13 +7625,22 @@ Biberweg (Potsdam): Verbundsteinpflaster	Q0- -9565,-3025 -9419,-3068
 #: by: ^^^
 # 
 #: by: sven.wehner: vvv
+#: confirmed_by: srt (im südlichen Abschnitt)
 Wollgrasweg (Schöneiche): Asphalt	Q0 32418,6361 32606,6376 32603,6417 32431,6399 32416,6397
-Kieferndamm (Schöneiche): Asphalt	Q0 32729,7422 32697,7337 32498,7037 32380,6938 32294,6866 32180,6831 32001,6777 31873,6746 31834,6748 31721,6750 31693,6754 31558,6757 31416,6774
+Kieferndamm (Schöneiche): Asphalt	Q0 32729,7422 32697,7337 32498,7037 32380,6938 32294,6866 32180,6831 31993,6776 31861,6747 31834,6748 31721,6750 31693,6754 31558,6757 31416,6774
 Steinstr. (Schöneiche): Asphalt	Q0 32294,6866 32294,6644
 #: note: Spielstr. oder 30er-Zone
-Blumenring (Schöneiche): Asphalt	Q0 32294,6644 32335,6562 32416,6397 32418,6361 32420,6317
+#: confirmed_by: srt (im südlichen Abschnitt)
+Blumenring (Schöneiche): Asphalt	Q0 32294,6644 32335,6562 32416,6397 32418,6361
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Blumenring (Schöneiche): Betonpflaster mit großen Fugen	Q2 32418,6361 32418,6323
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Blumenring (Schöneiche): unbefestigt	Q2 32418,6323 32418,6303
 Blumenring (Schöneiche): Asphalt	Q0 32431,6399 32414,6646
-Am Rosengarten (Schöneiche): Asphalt	Q0 32611,6667 32565,6643 32523,6655 32414,6646 32294,6644 32180,6632 32130,6625 32061,6600 31945,6555 31829,6510
+#: confirmed_by: srt (im westlichen Abschnitt)
+Am Rosengarten (Schöneiche): Asphalt	Q0 32611,6667 32565,6643 32523,6655 32414,6646 32294,6644 32180,6632 32123,6631 32056,6607 31936,6557
+#: corrected_by: srt
+Am Rosengarten (Schöneiche): Verbundsteinpflaster	Q1+ 31936,6557 31817,6517
 #: by: ^^^
 # 
 #: by: ag_grote:
@@ -8054,6 +8098,7 @@ Weststr. (Altlandsberg): Asphalt	Q0 31444,18448 31459,18420 31290,17285 31273,17
 Gärtnerweg (Altlandsberg): Asphalt	Q0 31112,17357 31273,17242 31325,17205 31370,17198 31381,17182
 Weg am Flakensee: Waldweg, einige sandige Abschnitte	Q2- 35022,2250 35026,2314 35045,2422 35045,2783 35024,2900 35076,2991 35199,3106 35287,3271 35347,3500 35328,3570 35252,3653 35144,3669 35102,3750 35154,3835 35136,3895 35094,3964 35105,4018 35156,4059
 Strandpromenade (Woltersdorf): Kleinsteinpflaster mit wassergebundenen Abschnitten	Q2+ 35156,4059 35207,4305 35147,4452 35155,4511
+Poetensteig (Woltersdorf): unbefestigt	Q2+ 32295,6272 32306,6216 32333,6114
 Zeesener Str. (Bestensee): Asphalt	Q0 26766,-17782 26811,-17743 26920,-17598 27031,-17378 27023,-17309 27038,-17271 27054,-17248 27081,-17125 27084,-17076
 Bestensee - Hintersiedlung: Kopfsteinpflaster	Q2 26367,-18703 26637,-18860
 Bestensee - Hintersiedlung: Asphalt	Q0 26637,-18860 26644,-18866 26825,-19031 26967,-19187 26954,-19301 26929,-19477 26864,-19685 26703,-19943
@@ -8161,4 +8206,5 @@ Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25290,-3350
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25295,-3103
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25320,-3153
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 -16961,13120
+Kreuzungsbereich mit Kleinsteinpflaster	Q2+ 31936,6557
 #: ignore ^^^
