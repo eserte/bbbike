@@ -1093,7 +1093,7 @@ Andernacher Str.	1 19054,8571 19000,8509
 #: next_check_id: GROSSBERLINERDAMM-2020
 #: by: https://www.baustellen-doku.info/berlin_strassenbahn_adlershof_II_wista_schoeneweide/20201019/
 #: XXX hier wird eine Überfahrt auch für Autos entstehen
-#: last_checked: 2021-04-16 (krickstadt)
+#: last_checked: 2021-05-10
 #: next_check: 2021-10-01
 Groß-Berliner Damm: Mittelstreifen	3nocross 18541,4125 18374,4307 18239,4453
 Groß-Berliner Damm: Straßenbahntrasse	3nocross 18374,4307 18239,4453 18042,4667
@@ -1211,7 +1211,7 @@ Zimmerstr.	1 -13637,-1164 -13876,-1226
 Alte Köpenicker Allee: Schranke bei der Einfahrt	2 20316,7637 20348,7634 20459,7445 20501,7472 20540,7532
 Bauhüttenweg: Anlieger frei	2:Anlieger 12703,2454 12774,2463 12835,2470 12948,2484 13064,2499 13180,2514 13238,2521 13302,2554 13348,2588
 Südwestkorso: Mittelstreifen	3nocross 5211,7783 5310,7839 5346,7860
-August-Bebel-Str. (Schulzendorf)	1 24342,-3378 24256,-3568
+August-Bebel-Str. (Schulzendorf)	1 24342,-3378 24314,-3438 24256,-3568
 Karl-Marx-Str. (Schulzendorf)	1 24185,-3434 24296,-3400 24342,-3378
 Bornitzstr. [Wohngebiet]	1 16484,12871 16484,12825 16431,12825 16385,12825 16384,12874
 Fridolinweg: Poller	3 21456,14491 21450,14576 21408,14591
@@ -1416,8 +1416,10 @@ Wateweg	1 21122,8370 21121,8424 21127,8532 21115,8618 21123,8678 21131,8739
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9824 (Einwohnerfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9894 (Einwohnerfrage; vollständiger Umbau ab 2022)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/laut-studie-fehlen-hundert-hektar_a307737 (noch 2021)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1083749.php (Beginn KW 19/2021, Radfahrer Schrittgeschwindigkeit)
 #: osm_watch: way id="4616246" version="23"
 #: last_checked: 2021-04-25
+#: next_check: 2021-05-14
 Krautstr.: für Autos gesperrt, Radfahrer frei	2 12002,12008 12021,12066
 # 
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422
@@ -1425,8 +1427,10 @@ Krautstr.: für Autos gesperrt, Radfahrer frei	2 12002,12008 12021,12066
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1058243.php (Online-Beteiligung bis zum 11. April 2021)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/ideen-fuer-waldeyerstrasse_a302355
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/anwohner-koennen-sich-an-der-gestaltung-beteiligen_a303648
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1083749.php (Beginn KW 19/2021, Radfahrer Schrittgeschwindigkeit)
 #: osm_watch: way id="4685729" version="17"
 #: last_checked: 2021-05-06 (mapillary) (Absperrung wieder entfernt)
+#: next_check: 2021-05-14
 # früherer Eintrag: Waldeyerstr.	1 15058,12329 15003,12241
 Waldeyerstr.: für Autos gesperrt, Radfahrer frei	2 15058,12329 15003,12241
 # 
