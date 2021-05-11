@@ -2983,8 +2983,8 @@ Boelckestr./Badener Ring: Zebrastreifen geplant	?::projected 8625,8476 8660,8454
 #: last_checked: 2021-05-10
 #: check_frequency: 120d
 Südostallee/Im Brombeerwinkel: Zebrastreifen geplant	?::projected 17490,5422 17473,5471 17528,5471
-#: last_checked: 2020-10-04
-#: next_check: 2021-03-01
+#: last_checked: 2021-05-06 (mapillary)
+#: check_frequency: 120d
 Am Falkenberg/Gartenstadtweg: Zebrastreifen geplant	?::projected 21680,948 21685,916 21689,876
 # REMOVED (realisiert) --- #: last_checked: 2020-07-23 (mapillary) --- #: check_frequency: 120d --- Burgfrauenstr./Fischgrundbrücke: Zebrastreifen geplant	?::projected 2645,24768 2690,24751 2737,24732
 #: by: https://abendblatt-berlin.de/2020/07/31/berlin-hermsdorf-verkehrsberuhigung-fuer-die-heinsestrasse/ (keine Erwähnung des Zebrastreifens, aber unterschiedliche Verkehrsberuhigungskonzepte)
@@ -3710,7 +3710,7 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://twitter.com/SenUVKBerlin/status/1354835212161720321 (Leitboys werden errichtet)
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
 #: XXX jetzt fehlen noch die "Leitboys"
-#: last_checked: 2021-05-04 (mapillary)
+#: last_checked: 2021-05-06 (mapillary)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2020-11-30
 # REMOVED (hier wurden die Poller schon realisiert) --- Invalidenstr.: Radstreifen (provisorische, dann geschützte) und Umbau von Ampelanlagen geplant	?::projected 9383,13986 9469,14004 9659,14043
@@ -4494,7 +4494,7 @@ Dolgenseestr.: Zebrastreifen soll verstetigt werden	?::projected 17485,9833 1752
 #: by: https://viz.berlin.de/2021/01/verkehrsvorschau26012021/ (Ampelanlage erneuert (???), bis Ende März 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1353940740083216385 ("neu gebaut")
 #: osm_watch: node id="29420112" version="9"
-#: last_checked: 2021-04-25 (mapillary) (Bauarbeiten)
+#: last_checked: 2021-05-06 (mapillary) (Bauarbeiten)
 #: check_frequency: 21d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2021-03-31
 Prenzlauer Promenade/Elsa-Brändström-Str.	?::inwork 11889,17273 11924,17224 11945,17281
@@ -4857,10 +4857,10 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 #: by: http://www.infravelo.de/projekt/rhinstrasse-westseite/ (1. Quartal 2021 - 4. Quartal 2021)
 #: source_id: 2147346260 (bis 18.12.2020) (inaktiv)
 #: source_id: 2147347002 (bis 9.4.2021; hat die Baustelle was mit den geplanten Arbeiten zu tun?)
+#: source_id: 2147347183 (bis 2.8.2021; Radwegsanierung)
 #: last_checked: 2021-04-25 (mapillary)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2020-12-18
-# REMOVED (kann nicht gehalten werden?) --- #: next_check: 2020-11-13
+#: next_check: 2021-08-02
 Rhinstr.: Verbreiterung der Radwege beidseitig	?::projected; 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17789,15098 17829,15015
 #: last_checked: 2021-03-29
 #: check_frequency: 60d
@@ -5077,14 +5077,12 @@ Am Brunnen (Potsdam): Bauarbeiten, danach vielleicht etwas bessere Qualität (Asp
 #: osm_watch: way id="327596411" version="8"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
 #: XXX außerdem wird die Panke oberirdisch fließen
-#: XXX laut daf-Bildern möglicherweise schon fertig?
-#: last_checked: 2021-04-28 (osm) vvv
-# REMOVED --- #: next_check: 2021-04-24 vvv
-#: check_frequency: 21d
+#: XXX laut daf-Bildern schon fertig, aber noch "gesperrt"
+#: last_checked: 2021-05-11 (daf) vvv
+#: check_frequency: 14d
 Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str./Chausseestr.: wann ist der Weg fertig? Qualität (vermutlich betoniert)? Beleuchtet (vermutlich nicht)?	?::inwork 8294,14194 8266,14253 8251,14337
-#: check_frequency: 45d
+#: check_frequency: 14d
 Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str./Chausseestr.: wann ist der Weg fertig? Qualität? Beleuchtet?	?::inwork 8251,14337 8286,14635
-# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 # 
 # REMOVED (-> ampeln) --- #: last_checked: 2020-01-08 (mapillary) --- #: check_frequency: 90d --- Thomasstr./Hermannstr.: wird hier eine Ampel entstehen?	?::projected 12193,7412 12185,7381 12168,7368
@@ -5142,7 +5140,7 @@ Bucher Chaussee: Fußgängerübergang wird gebaut, vielleicht als Zebrastreifen?	? 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf (Bd.3) vvv
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6828 (Forderung nach einer Erneuerung)
 #: osm_watch: way id="152863346" version="7"
-#: last_checked: 2021-02-24
+#: last_checked: 2021-05-07 (mapillary)
 #: check_frequency: 360d
 Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-979 21487,-912 21403,-859
 #: XXX Maßnahme Fh.6
@@ -6154,6 +6152,7 @@ Hüfnerweg (Groß Glienicke): genaue Lage, Qualität?	? -9801,6988 -9795,7066
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_16_1221_1304_online.pdf (Abramowitschallee liegt im Bereich des Bebauungsplans 9-15a)
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-15a/index.shtml
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-15a/download/9-15a_Bebauungsplanentwurf.pdf
+#: by: https://www.berliner-woche.de/koepenick/c-bauen/entwurf-fuer-neues-stadtquartier_a309657
 #: XXX Planstraßen A, B, C und D, ein Geh/Radweg in Verlängerung der Louis-Blériot-Str. sowie weitere Verbindungswege
 #: XXX nach früheren Plänen sollten hier Abramowitschallee und Gorissenstr. entstehen
 # REMOVED --- #: last_checked: 2020-11-15 --- Abramowitschallee: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18169,4159 17898,4434
@@ -6190,6 +6189,7 @@ Charles-Boutard-Straße: geplante Straße in Johannisthal, genaue Lage, Qualität?	
 #: by: https://abendblatt-berlin.de/2020/05/30/marzahn-hellersdorf-biesdorfer-wohnquartier-bald-fertig/ (geplante Fertigstellung: November 2020 + Juli 2021)
 #: by: https://www.berliner-woche.de/biesdorf/c-bauen/wohnquartier-gut-alt-biesdorf-soll-bis-ende-juni-2021-fertig-sein_a279406
 #: by: https://www.berliner-woche.de/biesdorf/c-bauen/bezirk-ehrt-im-wohnquartier-gut-alt-biesdorf-lokale-persoenlichkeiten_a291005 (Straßenschilder hängen)
+#: by: https://www.berliner-woche.de/biesdorf/c-bauen/bauprojekt-gut-alt-biesdorf-die-ersten-gewerbemieter-stehen-fest_a308532 (Mitte 2021 werden Wohnungen fertiggestellt werden, 2. Bauabschnitt bis Frühling 2023)
 #: XXX neue Straßen, möglicherweise Spielstraßen vvv
 #: last_checked: 2021-02-21 vvv
 #: check_frequency: 90d vvv
@@ -6775,7 +6775,7 @@ St. Jacobi-Kirchhof II - Ost: Teilfläche wird zurückgebaut	?::projected 12259,71
 #: next_check: 2022-01-01
 A117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21834,-2143 21522,-2233 21113,-2676
 #: osm_watch: way id="153260813" version="3"
-#: last_checked: 2021-02-24
+#: last_checked: 2021-05-06 (mapillary)
 #: check_frequency: 120d
 Waldstr.: während der Bauarbeiten zur neuen Anschlussstelle vermutlich gesperrt	?::projected 21512,-1722 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21655,-1723
 # 

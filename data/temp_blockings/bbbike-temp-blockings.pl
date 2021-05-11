@@ -32290,15 +32290,20 @@ EOF
 EOF
      },
      { from  => 1616306400, # 2021-03-21 07:00
-       until => $isodate2epoch->("2021-06-13 17:00:00"), # 1619449200, # 2021-04-26 17:00
-       text  => 'Winckelmannstr.: Gleisbauarbeiten zwischen Sterndamm und Köpenicker Str., Fahrbahn gesperrt, vom 22.03.2021 07:00 Uhr bis 13.06.2021 17:00 Uhr ',
+       until => $isodate2epoch->("2021-07-05 17:00:00"), # 1619449200, # 2021-04-26 17:00
+       text  => 'Winckelmannstr.: Gleisbauarbeiten zwischen Sterndamm und Köpenicker Str., Fahrbahn Richtung Süden gesperrt, Richtung Norden muss auf der Kopfsteinpflasterseite gefahren werden, vom 22.03.2021 07:00 Uhr bis 05.07.2021 17:00 Uhr ',
        type  => 'handicap',
-       source_id => '2147346994',
+       source_id => '2147346994', # bis 13.6.2021
        data  => <<EOF,
 #: next_check_id: WINCKELMANN-2021
-#: XXX: laut rbb nur bis 17.5.2021
-#: next_check: 2021-05-17
-	q4::inwork 17507,4216 17476,4337 17428,4503
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=64640
+#: XXX: laut rbb nur bis 17.5.2021, laut krickstadt und BVG bis 5.7.2021
+#: last_checked: 2021-05-09 (krickstadt) vvv
+#: next_check: 2021-07-05 vvv
+	q4::inwork; 17428,4503 17476,4337 17507,4216
+	q2::inwork; 17507,4216 17476,4337
+#: next_check ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1624140000, # 2021-06-20 00:00
@@ -32462,6 +32467,83 @@ EOF
 #: last_checked: 2021-05-09
 #: check_frequency: 14d
 	q4::inwork 15870,10938 15674,10851
+EOF
+     },
+     { from  => 1622412000, # 2021-05-31 00:00
+       until => 1630447199, # 2021-08-31 23:59
+       text  => 'Bänschstr.: Spielstraße sonntags von 15 bis 18 Uhr, 1. Juni 2021 bis 31. August 2021, außer in den Sommerferien',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+       data  => <<EOF,
+#: XXX wird diese Spielstraße verstetigt?
+#: next_check: 2022-05-24
+	q4::temp::play 14798,12502 15005,12443
+EOF
+     },
+     { from  => 1621634400, # 2021-05-22 00:00
+       until => 1633039199, # 2021-09-30 23:59
+       text  => 'Richard-Sorge-Str.: zwischen Mühsamstr. und Straßmannstr. Spielstraße sonntags 14 bis 18 Uhr, 23. Mai 2021 bis 30. September 2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+       data  => <<EOF,
+#: XXX wird diese Spielstraße verstetigt?
+#: next_check: 2022-05-17
+	q4::temp::play 13273,12902 13371,12694
+EOF
+     },
+     { from  => 1621288800, # 2021-05-18 00:00
+       until => 1633039199, # 2021-09-30 23:59
+       text  => 'Simplonstr. zwischen Helmerdingstr. und Matkowskystr. Spielstraße mittwochs 15.30 bis 18.30 Uhr, 19. Mai 2021 bis 30. September 2021, außer in den Sommerferien ',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+       data  => <<EOF,
+#: XXX wird diese Spielstraße verstetigt?
+#: next_check: 2022-05-12
+	q4::temp::play 14468,11203 14531,11142
+EOF
+     },
+     { from  => 1621461600, # 2021-05-20 00:00
+       until => 1633039199, # 2021-09-30 23:59
+       text  => 'Dresdener Str.: zwischen Erkelenzdamm und NKZ Spielstraße freitags von 15 bis 18 Uhr, 21. Mai 2021 bis 30. September 2021, außer in den Sommerferien',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+       data  => <<EOF,
+#: XXX wird diese Spielstraße verstetigt?
+#: next_check: 2022-05-14
+	q4::temp::play 11258,10682 11334,10527
+EOF
+     },
+     { from  => 1622844000, # 2021-06-05 00:00
+       until => 1633039199, # 2021-09-30 23:59
+       text  => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer Spielstraße sonntags 14 bis 18 Uhr, 6. Juni 2021 bis 30. September 2021, außer in den Sommerferien',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+       data  => <<EOF,
+#: XXX wird diese Spielstraße verstetigt?
+#: next_check: 2022-05-31
+	q4::temp::play 12286,9739 12398,9938
+EOF
+     },
+     { from  => 1621634400, # 2021-05-22 00:00
+       until => 1633039199, # 2021-09-30 23:59
+       text  => 'Waldemarstr.: zwischen Leuschnerdamm und Adalbertstr. Spielstraße sonntags 15 bis 19 Uhr, 23. Mai 2021 bis 30. September 2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+       data  => <<EOF,
+#: XXX wird diese Spielstraße verstetigt?
+#: next_check: 2022-05-16
+	q4::temp::play 11552,10863 11328,10957
+EOF
+     },
+     { from  => 1621029600, # 2021-05-15 00:00
+       until => 1633039199, # 2021-09-30 23:59
+       text  => 'Wrangelstr.: zwischen Falckensteinstr. und Oppelner Str. Spielstraße sonntags, 14.30 bis 19 Uhr, 16. Mai 2021 bis 30. September 2021, außer in den Sommerferien ',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+       data  => <<EOF,
+#: XXX wird diese Spielstraße verstetigt? (hier vermutlich erst nach der Beteiligung für die verkehrliche Umgestaltung)
+#: next_check: 2022-05-09
+	q4::temp::play 13032,10355 12897,10439
 EOF
      },
     );
