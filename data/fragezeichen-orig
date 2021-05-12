@@ -744,7 +744,7 @@ S Adlershof - Köpenicker Str.: eine neue Verbindung wird entstehen, wo genau?	?:
 # 
 #: XXX Ag.1
 #: osm_watch: way id="144909690" version="12"
-#: last_checked: 2021-04-24
+#: last_checked: 2021-05-08 (mapillary)
 #: check_frequency: 120d
 Köpenicker Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 20196,2392 20212,2354 20154,2283 20128,2271 20100,2247 19933,2078 19839,2015 19819,1980 19803,1911 19766,1796 19704,1621 19676,1577 19599,1557 19579,1543
 # 
@@ -755,13 +755,13 @@ Semmelweisstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 18922,2
 # 
 #: XXX Ag.4
 #: osm_watch: way id="71960720" version="14"
-#: last_checked: 2021-02-24
+#: last_checked: 2021-05-08 (mapillary)
 #: check_frequency: 90d
 Schönefelder Chaussee: Einrichtung einer Radverkehrsanlage geplant	?::projected; 19379,1357 19412,1387 19460,1430 19498,1465 19579,1543
 # 
 #: XXX Ag.6
 #: osm_watch: way id="605637372" version="5"
-#: last_checked: 2021-02-24
+#: last_checked: 2021-05-11 (mapillary)
 #: check_frequency: 120d
 Ortolfstr.: Komplettierung der Radverkehrsanlage geplant	?::projected; 19477,472 19470,453 19429,337 19398,254
 # 
@@ -876,7 +876,7 @@ Köpenicker Landstraße - Chris-Gueffroy-Allee	?::projected 16747,6813 16485,6377 
 # 
 #: XXX Bd.2
 #: osm_watch: way id="148117201" version="12"
-#: last_checked: 2021-03-20 (mapillary)
+#: last_checked: 2021-05-09 (mapillary)
 #: check_frequency: 360d
 Grünbergallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 20790,-537 20675,-526 20362,-511 20288,-511 20205,-548
 # REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6054 (Schlussbericht: negativ) --- #: XXX Fh.2 --- #: last_checked: 2019-04-06 --- #: check_frequency: 90d --- Fürstenwalder Damm: Einrichtung einer Radverkehrsanlage auf der Südseite durch den Forst geplant	?::projected 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633 24871,5699 25015,5751
@@ -2374,7 +2374,7 @@ XXIII-4a (oder XXIII-4b?): hier wird eine Straße entstehen, Straßenname, Qualitä
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_13_1661_1888_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_18_2333_2484_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_12_0821_0896_online.pdf (Grundstücksnummerierungen)
-#: XXX PLZ laut DPAG-Mitteilungsblatt: 12524
+#: XXX PLZ laut DPAG-Mitteilungsblatt und LOR 1/2021: 12524
 # REMOVED (laut osm bereits umbenannt) --- #: XXX Planstraße 1 -> Chaukenstr. --- #: XXX der Mittelweg in diesem Bereich wird in Chaukenstr. umbenannt --- #: osm_watch: way id="152354590" version="7"
 #: XXX Planstraße 2 -> Lugierring
 #: osm_watch: way id="712036105" version="3"
@@ -3337,7 +3337,7 @@ Matkowskystr.: Reduzierung auf 10km/h, Bodenschwellen	? 14531,11142 14513,11075
 Torstr.: gibt es hier auch eine Engstelle für Radfahrer?	?; 10459,13760 10572,13731 10645,13711 10741,13685
 # 
 #: next_check_id: KOENIGSTEINBRUECKE-2019
-#: last_checked: 2021-04-02 (mapillary)
+#: last_checked: 2021-05-09 (mapillary)
 Königsteinbrücke - Weg an der BAB114: ist dieser Weg dauerhaft unterbrochen?	? 13193,22408 13198,22413 13217,22413
 # 
 # REMOVED (ja) --- Glinkastr.: gilt die temporäre Einbahnstraßenregelung mittlerweile auch für Radfahrer?	?; 9195,11972 9207,11880
@@ -3408,7 +3408,7 @@ Naunynstr.: Benennung einer Platzfläche in "Maria-von-Maltzan-Platz"	? 11365,107
 # 
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn noch 2020)
 #: XXX Asphaltierung + Radstreifen
-#: last_checked: 2021-04-28 (mapillary)
+#: last_checked: 2021-05-11 (mapillary)
 #: check_frequency: 30d
 Berliner Allee: entstehen hier noch Radstreifen?	?::projected 14754,17673 14673,17454
 # 
@@ -4156,14 +4156,19 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1053358.php (Tempo 20 im Kiez, Durchfahrtsperren, Einbahnstraßen, Anlieger-frei-Schilder)
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/im-bergmannkiez-werden-erste-massnahmen-realisiert_a302916 (bauliche Maßnahmen in der Bergmannstraße ab 2022)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Fußgängerzone, Geschwindigkeitsbegrenzung für Radfahrer)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084639.php (erste Realisierung KW 19/2021)
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
 #: source_id: 2147346783 (Leitungsarbeiten bis 12.2.2021) (inaktiv)
 #: osm_watch: way id="4588059" version="24"
 #: priority: #C
 #: last_checked: 2021-04-28
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2021-02-12
+#: next_check: 2021-05-15
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
+# 
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084639.php
+#: next_check: 2021-05-15
+Bergmannstr.: Verlängerung der Fahrradstraße	? 10564,9292 10547,9233 10705,9234
 # 
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422 vvv
 # REMOVED (-> gesperrt-orig) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php ("Umgang mit dem Radverkehr ist noch zu klären") --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1058243.php (Online-Beteiligung bis zum 11. April 2021) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/ideen-fuer-waldeyerstrasse_a302355 --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/anwohner-koennen-sich-an-der-gestaltung-beteiligen_a303648 --- #: osm_watch: way id="4685729" version="17" --- #: last_checked: 2021-03-29 --- #: next_check: 2021-04-18 --- Waldeyerstr.: entsteht hier eine Fußgängerzone?	? 15058,12329 15003,12241
@@ -5125,12 +5130,7 @@ Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 125
 #: priority: #D
 Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563 6224,9544 6242,9525
 # 
-#: source_id: 2147346943 (bis 30.4.2021, mittlerweile inaktiv)
-#: last_checked: 2021-04-11 (mapillary)
-#: next_check: 2021-04-29
-#: priority: #D
-Bucher Chaussee: Fußgängerübergang wird gebaut, vielleicht als Zebrastreifen?	? 15985,24062 15981,23996 16032,24033
-# 
+# REMOVED (hier ist nur eine Mittelinsel entstanden) --- #: source_id: 2147346943 (bis 30.4.2021, mittlerweile inaktiv) --- #: last_checked: 2021-04-11 (mapillary) --- #: next_check: 2021-04-29 --- #: priority: #D --- Bucher Chaussee: Fußgängerübergang wird gebaut, vielleicht als Zebrastreifen?	? 15985,24062 15981,23996 16032,24033
 # REMOVED (fertig) --- #: osm_watch: way id="172219124" version="5" --- #: last_checked: 2019-07-24 (mapillary) (Masten stehen schon) --- #: check_frequency: 7d --- #: priority: #D --- Reichenberger Str.: hier wird ein Zebrastreifen markiert	?::inwork 12385,9966 12398,9938 12366,9929
 # REMOVED (fertig) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8520 vvv --- #: last_checked: 2019-11-18 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch) --- #: check_frequency: 7d --- #: priority: #D --- Am Ostbahnhof/Koppenstr.: hier wird ein Zebrastreifen markiert	?::inwork 12299,11717 12310,11682 12349,11687
 # REMOVED (fertig) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/98_2017_zu_ds_0240-v-fussgaengerueberweg-auf-der-habersaathstrasse_sb.pdf --- #: last_checked: 2020-05-17 (Masten stehen schon) --- #: check_frequency: 30d --- #: priority: #D --- Habersaathstr.: hier wird ein Zebrastreifen realisiert	?::inwork 8464,13902 8426,13909 8433,13937
@@ -5140,7 +5140,7 @@ Bucher Chaussee: Fußgängerübergang wird gebaut, vielleicht als Zebrastreifen?	? 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf (Bd.3) vvv
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6828 (Forderung nach einer Erneuerung)
 #: osm_watch: way id="152863346" version="7"
-#: last_checked: 2021-05-07 (mapillary)
+#: last_checked: 2021-05-09 (mapillary)
 #: check_frequency: 360d
 Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-979 21487,-912 21403,-859
 #: XXX Maßnahme Fh.6
@@ -5841,6 +5841,24 @@ Am Alten Lokschuppen: bauzeitliche Sperrung geplant	? 15708,11193 15752,11115 15
 #: XXX ^^^
 # 
 Reinickendorfer Route 2: vermutlich unbefestigter Wald/Parkweg, unbeleuchtet, schmal, Fußgänger, am nördlichen Ende Treppe+Rampe	? 2312,25673 2243,25818 2207,26090 2210,26457
+# 
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1084987.php
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/9700-lageplan_bauabschnitte.jpg
+#: XXX Fertigstellung 2021 vvv
+#: next_check: 2021-12-31 vvv
+Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7253,17467 7222,17471 7173,17591 7189,17666 7185,17681 7173,17712
+Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7189,17666 7215,17689 7320,17718
+#: next_check ^^^
+#: XXX ^^^
+#: XXX Fertigstellung 2022
+#: next_check: 2022-12-31
+Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7320,17718 7415,17696 7466,17627
+#: XXX Fertigstellung 2023 vvv
+#: next_check: 2023-12-31 vvv
+Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7466,17627 7477,17544 7455,17495 7350,17464 7253,17467
+Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7477,17544 7572,17558
+#: next_check ^^^
+#: XXX ^^^
 # 
 #: ignore ^^^
 # 
@@ -7003,7 +7021,7 @@ S-Bhf. Eichborndamm: neue Unterführung geplant, wird diese für Radfahrer benutzb
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="287142081" version="9"
 #: XXX laut osm opening_date=2020
-#: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data) (PLZ=12109 laut DPAG-Mitteilungsblatt)
+#: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data) (PLZ=12109 laut DPAG-Mitteilungsblatt und LOR 1/2021)
 #: last_checked: 2020-10-25
 #: check_frequency: 360d
 Bebauungsplan 7-77VE: geplante verkehrsberuhigte Straßen, ggfs. noch weitere Wege	?::projected 10866,3756 10892,3890 10938,3936 11005,3928 11045,3885 11035,3834 10980,3791 10955,3795 10941,3745
@@ -7844,8 +7862,6 @@ Krugsdorfer Damm - Rothenburg: Qualität vor der Ortschaft?	? 53255,124438 53217,
 Pasewalk - Krugsdorf: Qualität?	? 51456,122864 52188,123497 53255,124438 53938,125022 54153,125114 54341,125283
 Krugsdorf - Koblentz: Qualität?	? 57864,125082 57736,125319 57711,125655 57622,126012 57525,126374
 Grieben - Vielitz: Qualität?	? -14966,56468 -15237,56681 -15453,56959 -15676,57044 -15819,57248 -15984,57315 -16206,57373 -16608,57867 -16778,57946 -16860,58002
-#: XXX wahrscheinlich fester Sandweg?
-Hobrechtsfelde - Gorinsee: Qualität des Abzweigs von der Hobrechtsfelder Dorfstraße?	? 16279,29196 15621,29290
 Demnitz - L28: nördlicher Teil asphaltiert, Rest auch?	? 34171,142029 34186,141681 34232,141608
 B109 - Gneventhin: Asphalt oder Kopfsteinpflaster?	? 38188,163465 38133,163017 38283,162634
 Blankensee - Bismarck: Qualität?	? 70132,119360 70251,118039
@@ -8564,7 +8580,7 @@ Gransee - Altlüdersdorf: Qualität? Nur für Radfahrer? Führt hier die Königin-Lui
 Altlüdersdorf - Zabelsdorf: Qualität?	? -5207,70025 -4637,69807 -4542,69772 -4260,69808 -3970,69973 -2897,69894 -2560,69986 -2391,69914 -1170,71073
 Altlüdersdorf - Wentow: Qualität?	? -4637,69807 -4414,70563 -2966,71541 -2768,71868
 Altlüdersdorf - Ribbeck: Qualität?	? -2391,69914 -1840,69754 -1273,69446 -943,69540 -913,69464 -790,69473 -642,69476
-Heinrich-Heine-Str. (Bernau): Qualität zwischen Bergstr. und Torfstr.?	? 19499,29258 19422,29462 19367,29694 19274,30131 19242,30236 19003,30633 18884,30784
+Heinrich-Heine-Str. (Bernau): Qualität zwischen Vierrutenstr. und Torfstr.?	? 19422,29462 19367,29694 19274,30131 19242,30236 19003,30633 18884,30784
 Sieversdorf: Qualität? Ist hier auch asphaltiert?	? -58947,45483 -58977,45352 -58961,45254 -58863,44893 -58804,44826
 Kümmernitz - Vehlgast: Qualität?	? -70888,48135 -70878,48009 -70842,47863 -70849,47706 -70765,47295 -70648,47092 -70583,46902 -70364,46767 -70283,46513 -70155,46272 -70149,46133 -70566,45706 -70547,45421 -70926,44836
 Kümmernitz - Vehlgast: Qualität?	? -71278,44309 -71319,43569 -71325,43158 -71550,42961 -71639,42831 -71698,42657 -71991,42370

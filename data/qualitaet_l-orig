@@ -2098,7 +2098,8 @@ Asphalt	Q0 29408,21348 29587,21414
 Asphalt	Q0 29587,21414 29716,21460
 schlechtes Kopfsteinpflaster	Q3 29716,21460 29826,21526
 schlechtes Kopfsteinpflaster	Q3 29195,21058 29061,20865
-Asphalt mit einigen Schäden	Q1 29061,20865 29045,20836 28679,19787 28471,19469 28466,19461
+Asphalt mit einigen Schäden	Q1 29061,20865 29045,20836 28696,19830 28628,19707
+Asphalt mit teils erheblichen Schäden	Q2+ 28628,19707 28471,19469 28466,19461
 Asphalt	Q0 28466,19461 28300,19267 28267,19152 28246,19136 28185,19142 28140,19127 28159,19037
 sehr guter Asphalt	Q0 28159,19037 27803,18459 26717,16823
 Asphalt	Q0 41681,15915 41693,16075 41672,16084 41356,16225 41168,16281 40882,16328 40793,16343 40540,16584 40487,16703
@@ -3364,7 +3365,7 @@ Brandenburgische Straße: Fahrbahn Asphalt, Radwege Verbundsteinpflaster	Q1 26844
 Teichgraben (Hönow): Verbundsteinpflaster	Q1- 26586,15443 26561,15369
 Bamberger Str.: Asphalt	Q0 27451,14108 27447,14144 27440,14257 27455,14345 27456,14561 27540,14702 27594,14854 27606,14913 27629,14972 27663,15023 27687,15059 27692,15066
 (Grüner Weg - Dorfstr.): schlechtes Kopfsteinpflaster	Q3 26143,16154 26125,16147
-Grüner Weg (Hönow): Asphalt	Q0 26143,16154 26171,16168 26257,16204 26218,16301 26154,16397
+Grüner Weg (Hönow): Asphalt	Q0- 26143,16154 26171,16168 26257,16204 26218,16301 26154,16397
 Wöhrdetalstr. (Hönow): Asphalt mit einigen Schäden	Q1+ 25764,17255 25659,17133 25601,16925
 Seestr. (Hönow): Asphalt	Q0 25923,17002 25736,16894
 Eicher Weg (Hönow): unbefestigte Straße	Q2 25832,16291 25764,16286 25563,16475 25411,16975
@@ -4952,7 +4953,7 @@ Altstadt/Breite Str. (Werneuchen): Kleinsteinpflaster	Q1- 32572,25599 32519,2556
 Alte Bahnhofstr.: schlechtes Kopfsteinpflaster	Q3 32838,26131 32874,25981 32825,25876
 Alte Bahnhofstr.: Asphalt mit Schäden	Q1+ 32825,25876 32801,25765
 Beiersdorfer Str. (Werneuchen): Asphalt	Q0 32874,25981 32942,26116 32967,26167 33070,26202 33121,26227 33106,26278 33038,26323
-Krummensee - Werneuchen: Asphalt	Q0 31869,23830 31888,23947 31957,24048 32037,24294 32305,25116 32402,25234 32460,25364
+Krummensee - Werneuchen: Asphalt	Q0 31888,23947 31957,24048 32037,24294 32305,25116 32402,25234 32460,25364
 Krummenseer Weg - Klärwerk: Asphalt	Q0 32037,24294 32441,24221
 Werneuchen - Altlandsberg: Asphalt	Q0 32435,24545 32441,24221
 Werneuchen - Altlandsberg: unbefestigter Weg, Pfützen	Q2- 32441,24221 32358,23514 32326,23430
@@ -4969,7 +4970,7 @@ Krummensee - Wegendorf: unbefestigter Weg	Q2 30185,21993 30444,22044 31272,22232
 Krummensee - Wegendorf: unbefestigter Weg, Schlamm	Q3 31272,22232 32228,22165
 Krummensee - Wegendorf: Asphalt	Q0 32228,22165 33290,22067 33361,22061
 Krummensee - Seefeld: unbefestigter Weg	Q2 30444,22044 30237,23202
-Werneuchen - Seefeld: rauer Asphalt mit Schäden, abschnittsweise unbefestigt	Q1- 31869,23830 31816,23512 30237,23202 29904,23151 29635,23562 29524,24057
+Werneuchen - Seefeld: rauer Asphalt mit Schäden, abschnittsweise unbefestigt	Q1- 31888,23947 31869,23830 31816,23512 30237,23202 29904,23151 29635,23562 29524,24057
 #: by: osm
 Krummensee - Seefeld: Beton	Q0- 29524,24057 29481,24246 29505,24363
 Altlandsberger Chaussee - Dorfstr.: wassergebundene Decke	Q1 26532,15526 26509,15642 26546,15740
@@ -5031,22 +5032,22 @@ Forstallee (Miersdorf): Asphalt mit einigen Unebenheiten	Q1; 24726,-6632 24672,-
 Forstallee (Miersdorf): Asphalt mit einigen Schäden	Q1+ 24726,-6632 24797,-6578 24946,-6533 25619,-6350
 Am Mühlenberg: Asphalt	Q0 24703,-7243 24416,-7241 24283,-7242
 Straße am Hochwald: Asphalt	Q0 24700,-7331 24616,-7384
-#: add_fragezeichen: ist der südwestliche Abschnitt der Straße asphaltiert (wie im nordöstlichen) oder unbefestigt?
+#: add_fragezeichen: ist der südwestliche Abschnitt der Straße asphaltiert (wie im nordöstlichen) oder unbefestigt? Ist die Straße eine Spielstraße?
 #: XXX_osm: laut osm komplett unpaved
 Straße am Hochwald: Asphalt	Q0 24616,-7384 24593,-7405 24447,-7554 24315,-7711 24241,-7799 24064,-8013
 Am Tonberg: Asphalt	Q0 24722,-7523 24695,-7516 24593,-7405
-#: add_fragezeichen: ist der nordwestliche Abschnitt der Straße asphaltiert (wie im südöstlichen) oder unbefestigt?
+#: add_fragezeichen: ist der nordwestliche Abschnitt der Straße asphaltiert (wie im südöstlichen) oder unbefestigt? Ist die Straße eine Spielstraße?
 #: XXX_osm: laut osm komplett unpaved
 Am Tonberg: Asphalt	Q0 24593,-7405 24416,-7241
 Am Falkenhorst: Asphalt	Q0 24733,-7599 24631,-7610
 Ostpromenade: Asphalt	Q0 24773,-7883 24656,-7897
-#: add_fragezeichen: ist der nordwestliche Abschnitt der Straße ebenfalls asphaltiert?
+#: add_fragezeichen: ist der nordwestliche Abschnitt der Straße ebenfalls asphaltiert? Ist die Straße eine Spielstraße?
 Ostpromenade: Asphalt	Q0 24656,-7897 24315,-7711
 Kirschenallee: Asphalt	Q0 24773,-7883 24949,-7866
 #: add_fragezeichen: ist der östliche Abschnitt der Straße ebenfalls asphaltiert?
 Kirschenallee: Asphalt	Q0 24949,-7866 25023,-7877
 Westpromenade: Asphalt	Q0 24802,-8072 24695,-8064
-#: add_fragezeichen: ist der westliche Abschnitt der Straße ebenfalls asphaltiert?
+#: add_fragezeichen: ist der westliche Abschnitt der Straße ebenfalls asphaltiert? Ist die Straße eine Spielstraße?
 Westpromenade: Asphalt	Q0 24695,-8064 24241,-7799
 Birkenstr.: unbefestigte Straße	Q2 24623,-6966 24405,-6854
 Waldpromenade: Asphalt	Q0 25252,-6904 25237,-6852 25124,-6719 24946,-6533 24842,-6412 24612,-6099 24529,-5986 24453,-5884 24373,-5777
@@ -7870,7 +7871,7 @@ Fontanestr.: Asphalt	Q0 18247,27861 18376,28043 18608,28256 18619,28283
 Fontanestr.: Asphalt	Q0 18663,28284 18774,28388
 (Brücke über die Panke): Verbundsteinpflaster	Q1 18619,28283 18663,28284
 Schönower Str. - An der Panke: festgefahrener Erdboden, teilweise uneben	Q2 18801,28360 18827,28385 18852,28381 19027,28536 19154,28637 19217,28681 19287,28718 19502,28812 19532,28867 19573,28968 19535,29067
-Heinrich-Heine-Str.: Asphalt	Q0 19565,29082 19499,29258
+Heinrich-Heine-Str.: Asphalt	Q0 19565,29082 19499,29258 19422,29462
 Bergstr.: wassergebundene Decke	Q2 19332,29194 19499,29258 19847,29385
 Bergstr. (Bernau): Asphalt	Q0 19847,29385 19961,29430
 Dossestr.: Asphalt	Q0 20067,29379 19982,29378 19961,29430 19916,29554 19864,29682 19897,29697 19865,29780 19860,29818
@@ -7994,6 +7995,7 @@ Heidestr. (Schönow): Asphalt	Q0 19032,30053 18941,30212 18773,30398 18635,30610 
 #: by: ^^^
 # 
 #: by: mapillary vvv
+Hobrechtsfelde - Gorinsee: Feinschotterweg	Q1- 16279,29196 15621,29290
 Stieleichenstr. (Schönfließ): Asphalt	Q0 4424,26240 4387,26270 4340,26311 4302,26352 4287,26368 4262,26415 4239,26458 4213,26461 4182,26463 4136,26489 4105,26533 4095,26547
 Dorfstr. (Ruhlsdorf): Kleinsteinpflaster	Q2+ 1605,-3599 1460,-3586 1191,-3598 1132,-3612
 Teltow (Bahnstr.) - Ruhlsdorf: Asphalt mit einigen Schäden	Q1 3381,-2844 3344,-2999 3123,-3103 1943,-3583 1605,-3599

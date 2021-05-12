@@ -966,7 +966,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? auﬂerdem: wird die Colbestr. zur Fahrradstraﬂe?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erw‰hnung)
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-05-09
+#: last_checked: 2021-05-11
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1282,7 +1282,8 @@ Pankeweg: feiner Schotter	Q1 13953,23497 13940,23486 13833,23400 13559,23116
 Pankeweg: Asphalt mit einigen Unebenheiten	Q1+ 13206,22290 13141,22018
 Pankeweg: m‰ﬂiger Asphalt, Wurzelsch‰den	Q1- 13141,22018 13078,21754
 Pankeweg: wassergebundene Decke	Q1- 13078,21754 13031,21538 12807,20944 12753,20884 12553,20757
-Pankeweg: unbefestigter Weg	Q2+ 13365,22743 13321,22586 13295,22545 13290,22377 13354,22327
+Pankeweg: unbefestigter Weg	Q2+ 13365,22743 13321,22586 13295,22545 13291,22422
+Pankeweg: Feinschotter	Q1 13291,22422 13290,22399 13404,22384
 Weinapfelweg: unbefestigte Straﬂe, relativ gut befahrbar	Q2+ 13136,22397 13117,22337 13110,22313
 Weinapfelweg: unbefestigter Weg	Q2- 12940,21738 12963,21835 12968,21848 12996,21953 13025,21984 13050,21994 13060,22043 13075,22130 13091,22220 13110,22313
 Weinapfelweg: unbefestigter Weg	Q2- 13136,22397 13162,22480 13180,22539 13202,22605 13221,22667
@@ -7394,7 +7395,8 @@ Mylauer Weg: Asphalt	Q0 24017,14613 23873,14527
 Mylauer Weg: Verbundsteinpflaster	Q1+ 23873,14527 23808,14503
 (Kastanienallee - Weg entlang der U-Bahn): Asphalt	Q0 23784,14569 23792,14561 23793,14573
 (Kastanienallee - Weg entlang der U-Bahn): Kopfsteinpflaster	Q2+ 23793,14573 23795,14604 23786,14631
-(Weg entlang der U-Bahn): Asphalt	Q0 23786,14631 23980,14707 23995,14722 24136,14785 24228,14825
+(Weg entlang der U-Bahn): Asphalt mit Wurzelhebungen	Q1 23786,14631 23980,14707
+(Weg entlang der U-Bahn): Asphalt	Q0 23980,14707 23995,14722 24136,14785 24228,14825
 (Weg entlang der U-Bahn): Beton	Q1+ 24228,14825 24263,14838 24313,14839 24356,14850 24380,14861
 (Weg entlang der U-Bahn): Asphalt	Q0 24380,14861 24517,14907 24542,14937 24570,14942 24579,14934
 (Weg entlang der U-Bahn): neu asphaltiert	Q0 24579,14934 24715,14992 24728,14989
@@ -8654,7 +8656,7 @@ Straﬂe 74: Asphalt	Q0- 12583,22428 12696,22455 12821,22437 12855,22431 13136,223
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: wosch
 #: XXX eventuell wird der Asphalt noch glatter gemacht
-#: last_checked: 2021-04-19 (mapillary)
+#: last_checked: 2021-05-09 (mapillary)
 Kˆnigsteinbr¸cke: welliger Asphalt	Q1 13136,22397 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378 13394,22373
 Straﬂe 86: Asphalt	Q0 13805,22935 13726,22860
 Straﬂe 86: unbefestigt	Q2 13726,22860 13699,22834
@@ -15749,7 +15751,7 @@ Burgwallstr.: Asphalt	Q0 13107,21357 13136,21419 13158,21471 13171,21532 13177,2
 Burgwallstr.: Kopfsteinpflaster, Straﬂensch‰den	Q3+ 13177,21595 13182,21639 13193,21700
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: XXX provisorische Wegf¸hrung; nach den Bauarbeiten den alten Eintrag wiederherstellen!
-#: last_checked: 2021-02-25 (mapillary)
+#: last_checked: 2021-05-09 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-01-01
 Burgwallstr.: Kopfsteinpflaster, Fuﬂweg wurde als Umleitungsstrecke ert¸chtigt	Q2 13193,21700 13220,21761 13270,21870 13315,21969

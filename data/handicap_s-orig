@@ -158,6 +158,13 @@ Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork;
 # 
 # REMOVED (keine großen Einschränkungen mehr) --- #: XXX_prog: BS --- #: last_checked: 2018-08-11 vvv --- Wagner-Régeny-Str - Igo-Etrich-Str.: Bauarbeiten, mehrere Bordsteine, auf Gehweg ausweichen	q2::inwork; 19363,3730 19162,3935 18930,3703 --- Igo-Etrich-Str. - Wagner-Régeny-Str: Bauarbeiten, auf Gehweg ausweichen	q1::inwork; 18930,3703 19162,3935 19363,3730 --- #: last_checked ^^^
 # 
+### Altglienicke ###
+# 
+#: XXX wie lange bleibt die Fahrbahn gesperrt?
+#: source_id: 2147347162 (bis 11.6.2021)
+#: valid: -20210611
+Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, bis zum 11.6.2021	q2::inwork 19803,1911 19766,1796
+# 
 ### Wedding ###
 # 
 # REMOVED (bestätigt) --- #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20180406/ --- #: by: http://www.berliner-woche.de/moabit/verkehr/strasse-bleibt-gesperrt-d162416.html --- #: source_id: LMS-BR_r_LMS-BR_127868_LMS-BR_72 --- #: source_id: 2147342637 --- #: also_indoor: traffic (G) --- #: last_checked: 2018-12-28 --- #: next_check: 2019-02-28 --- #: valid: -20190228 --- Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Ende Februar 2019	q2::inwork 7368,14573 7314,14599 7167,14666
@@ -230,7 +237,7 @@ Dircksenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 11209,12430 11156,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-04-20
+#: last_checked: 2021-04-27 (mapillary)
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2021-04-20
@@ -637,7 +644,7 @@ Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 #: by: https://www.kms-sonne.de/baustellennews/?date=20191023
 #: XXX außerdem gibt es Bauarbeiten auf der Karl-Marx-Str. zwischen Fuldastr. und Weichselstr., evtl. mit Verschwenkungen?
 #: source_id: 2147345357 (inaktiv)
-#: source_id: 2147345472 (bis 10.5.2021, Gesamtbaumaßnahme bis 2024)
+#: source_id: 2147345472 (bis 21.5.2021, Gesamtbaumaßnahme bis 2024)
 #: also_indoor: traffic (G,H)
 #: last_checked: 2021-03-30
 #: check_frequency: 90d
@@ -764,6 +771,13 @@ Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweich
 # REMOVED --- #: source_id: INKO_111447 --- #: source_id: LMS_1290313357 --- #: last_checked: 2013-04-20 --- #: next_check: 2013-06-30 (Ende: 1.7.2013) --- Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17171,16372 17220,16320 17271,16280 17383,16197
 # 
 ### Schöneberg ###
+#: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021)
+#: by: https://twitter.com/rbbabendschau/status/1392489796426162177
+#: source_id: 2147347186
+#: XXX wann werden die Fahrbahn und die Radwege wieder freigegeben?
+#: next_check: 2021-06-12
+#: valid: -20210612
+Langenscheidtbrücke: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: XXX unklar, ob die Einbahnstraßenregelung für Radfahrer gelten soll
@@ -1568,7 +1582,7 @@ nördliches Spreeufer: drei niedrige Stufen, Fußgänger	q2 6180,12972 6102,12960 6
 Wustermarker Str.: Fußgänger, Bordsteine	q2 -4755,14393 -4744,14392 -4678,14382
 Firlstr.: zwei Bodenschwellen	q1 18574,6401 18645,6511
 (Florastr. - Schloßstr.): Fußgänger	q2 5234,6086 5165,6119
-Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13290,22377 13354,22327
+Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13291,22422 13290,22399 13404,22384
 (Bremer Weg): Fußgänger	q1 5858,11863 5907,11874 6264,11901 6337,11887 6384,11926 6550,11954 6642,12010
 (Bremer Weg): Fußgänger	q1 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8522,12239 8538,12245
 Oberlandgarten: Fußgänger, Bordsteine	q2 11250,6555 11256,6502 11253,6473

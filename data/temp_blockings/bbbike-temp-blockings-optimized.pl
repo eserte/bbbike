@@ -2749,7 +2749,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-09
+#: last_checked: 2021-05-11
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3137,18 +3137,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1621350000
        },
-       {
-         'data' => '#: note: bei rbbtext sogar bis 18.5.2021
-#: osm_watch: way id="683770241" version="6"
-	q4::inwork 19564,1871 19743,1804
-',
-         'from' => 1610431200,
-         'id' => 3322,
-         'source_id' => '2147346788',
-         'text' => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 12.05.2021 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1620831600
-       },
+       undef,
        undef,
        {
          'data' => '#: last_checked: 2021-04-11
