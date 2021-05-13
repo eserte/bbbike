@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2012,2013,2014,2015,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.28;
+$VERSION = 1.29;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -539,7 +539,12 @@ sub plot_osm_files {
 	    } else {
 		my $is_area = (exists $tag{'area'} ? $tag{'area'} eq 'yes' :
 			       exists $tag{'landuse'} ? 1 :
-			       $nodes[0] eq $nodes[-1] && ($tag{'junction'}||'') ne 'roundabout' && ($tag{'highway'}||'') eq '' && !exists $tag{'boundary'}
+			       ($nodes[0] eq $nodes[-1]
+				&& ($tag{'junction'}||'') ne 'roundabout'
+				&& ($tag{'highway'}||'') eq ''
+				&& !exists $tag{'boundary'}
+				&& !exists $tag{'barrier'} # e.g. barrier=kerb, see https://www.openstreetmap.org/way/838041036
+			       )
 			      );
 
 		my $tags = join(" ", map { "$_=$tag{$_}" } _sort_way_tags(grep { $_ !~ $UNINTERESTING_TAGS } keys %tag));
@@ -585,12 +590,15 @@ sub plot_osm_files {
 		    } elsif (exists $tag{'landuse'} && $tag{'landuse'} =~ m{^(?:industrial|commercial)$}) {
 			$light_color = '#b0a0b0';
 			$dark_color = '#a060a0';
-		    } elsif (exists $tag{'building'}) {
+		    } elsif (exists $tag{'building'} || exists $tag{'building:part'}) {
+			my $building = $tag{'building'} || $tag{'building:part'};
 			if ($tag{'construction'} ||
-			    $tag{'building'} =~ CONSTRUCTION_RX) {
+			    $building =~ CONSTRUCTION_RX) {
 			    $light_color = '#dddddd';
-			} elsif ($tag{'building'} =~ m{^(yes|residential|apartments)$}) {
+			} elsif ($building =~ m{^(yes|residential|apartments)$}) {
 			    $light_color = '#b98a68';
+			} elsif ($building =~ m{^(public|school|kindergarten|theater|theatre|opera_house|embassy|government|government_office)$}) { # public buildings
+			    $light_color = '#d98a68';
 			} else {
 			    $light_color = '#c99a78';
 			}
