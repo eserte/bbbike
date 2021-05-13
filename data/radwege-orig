@@ -882,7 +882,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-05-10
+#: last_checked: 2021-05-12
 #: check_frequency: 60d
 # REMOVED (vermutlich ohne baldige Änderung) --- #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1432,7 +1432,7 @@ Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2021-04-20
+#: last_checked: 2021-05-13
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1445,7 +1445,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: source_id: INKO_113041
 #: source_id: 2147339528 (bis 8.6.2020) (inaktiv)
 #: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2021-04-20
+#: last_checked: 2021-05-13
 #: check_frequency: 60d
 #: next_check: 2021-10-31
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
@@ -2131,7 +2131,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Frühjahr 2021)
 #: source_id: 2147346610
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-04-27 vvv
+#: last_checked: 2021-05-13 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
 #: osm_watch: way id="284761029" version="17"
 Radspur hinter den parkenden Autos	RW3; 12006,12464 11920,12266
@@ -2823,6 +2823,7 @@ neu asphaltiert	RW2; 22483,11261 22326,11266 22242,11269
 #: next_check_id: PILGRAMER-2019
 # REMOVED --- #: XXX provisorische Wegführung während der Bauarbeiten vvv --- #: next_check: 2021-01-05 vvv --- #: valid: -20210105 vvv --- gemeinsamer Geh- und Radweg	RW2; 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 --- gemeinsamer Geh- und Radweg	RW2;RW8 25143,10961 25139,11104 25138,11215 --- #: valid ^^^
 #: XXX wobei es nach den Arbeiten möglicherweise ganz anders aussehen wird
+#: last_checked: 2021-04-17
 #: next_check: 2021-05-15
 # REMOVED --- #: valid: 20210105-
 Verbundsteinpflaster	RW2;RW1 25139,11104 25138,11215

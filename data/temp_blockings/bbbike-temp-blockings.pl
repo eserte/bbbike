@@ -8159,8 +8159,7 @@ EOF
      { from  => $isodate2epoch->("2019-05-10 00:00:00"), # ein Tag Vorlauf
        until => $isodate2epoch->("2019-05-12 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 10, months => 5, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -3, # wegen Corona
+       recurrences => [['yearly', days => 10, months => 5, start => "2021-10-25T00:00:00"]], # note: findet 2021 vermutlich nicht statt
        source_id => 'https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html',
        text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (11. und 12. Mai 2019)',
        type  => 'gesperrt',
@@ -14608,6 +14607,7 @@ EOF
        until => $isodate2epoch->("2019-06-16 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6, start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => 7,
        text  => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt sind gesperrt (vermutlich: Alt-Köpenick, Schlossplatz, Schlossinsel, Luisenhain, Rosenstr., Schüßlerplatz, Laurenzstr., Jägerstr., Böttcherstr.); außerdem Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Lindenstr. (14.06.2019 - 16.06.2019)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16286,7 +16286,7 @@ EOF
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-04-20
+#: last_checked: 2021-05-13
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 EOF
@@ -27964,8 +27964,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
-#: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2021-04-27
+#: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
+#: last_checked: 2021-05-13
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28594,7 +28594,7 @@ EOF
      },
      { from  => $isodate2epoch->("2021-01-19 07:00:00"), # $isodate2epoch->("2020-07-12 07:00:00"), # 1542150096, # 2018-11-14 00:01
        until => $isodate2epoch->("2021-07-01 17:00:00"), # $isodate2epoch->("2020-12-05 17:00:00"), # 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
-       text  => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden nur für Fußgänger, offiziell sollen Radfahrer absteigen und schieben, bis 1.7.2021',
+       text  => 'Kynaststr.: Bauarbeiten an der Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden, mögliche Engstelle, bis 1.7.2021',
        type  => 'handicap',
        source_id => '2147343461', # inaktiv
        data  => <<EOF,
@@ -28609,7 +28609,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-05-07
+#: last_checked: 2021-05-12
 #: check_frequency: 14d
 #: next_check: 2021-07-01
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -30868,7 +30868,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-11
+#: last_checked: 2021-05-13
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31865,15 +31865,16 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => q{Katharina-Boll-Dornberger-Str.: Weg kann wegen Straßenbahnbauarbeiten gesperrt sein, ansonsten gibt's einen provisorischen Überweg über die Trasse},
+       text  => 'Katharina-Boll-Dornberger-Str.: Weg kann wegen Straßenbahnbauarbeiten gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: STERNDAMM-2020
 #: by: osm
 #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert)
+#: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2021-05-09-adlershof-2/40-2021-05-09-214-xxl.jpg (kein provisorischer Übergang mehr)
 #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt
 #: osm_watch: way id="855549020" version="1"
-#: last_checked: 2021-03-05 (krickstadt)
+#: last_checked: 2021-05-09 (krickstadt)
 #: check_frequency: 90d
 	2::inwork 18836,3611 18943,3508
 EOF
@@ -32264,9 +32265,11 @@ EOF
        data  => <<EOF,
 #: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken)
 #: also_indoor: traffic
-#: last_checked: 2021-05-09
-#: check_frequency: 3d
-	q4::inwork 13025,12523 13067,12583 13202,12790
+#: last_checked: 2021-05-13
+#: check_frequency: 14d
+# REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
+	q4::inwork 13067,12583 13202,12790
+	q4::inwork; 13273,12902 13202,12790
 EOF
      },
      { from  => undef, # 
@@ -32402,7 +32405,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?
-#: last_checked: 2021-04-13
+#: last_checked: 2021-05-13
 	q4::inwork; 9195,11972 9207,11880 9218,11793
 EOF
      },
@@ -32487,17 +32490,19 @@ EOF
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
 #: XXX wird diese Spielstraße verstetigt?
+#: last_checked: 2021-05-13
 #: next_check: 2022-05-17
 	q4::temp::play 13273,12902 13371,12694
 EOF
      },
      { from  => 1621288800, # 2021-05-18 00:00
        until => 1633039199, # 2021-09-30 23:59
-       text  => 'Simplonstr. zwischen Helmerdingstr. und Matkowskystr. Spielstraße mittwochs 15.30 bis 18.30 Uhr, 19. Mai 2021 bis 30. September 2021, außer in den Sommerferien ',
+       text  => 'Simplonstr.: zwischen Helmerdingstr. und Matkowskystr. Spielstraße mittwochs 15.30 bis 18.30 Uhr, 19. Mai 2021 bis 30. September 2021, außer in den Sommerferien',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
 #: XXX wird diese Spielstraße verstetigt?
+#: last_checked: 2021-05-12
 #: next_check: 2022-05-12
 	q4::temp::play 14468,11203 14531,11142
 EOF
@@ -32544,6 +32549,20 @@ EOF
 #: XXX wird diese Spielstraße verstetigt? (hier vermutlich erst nach der Beteiligung für die verkehrliche Umgestaltung)
 #: next_check: 2022-05-09
 	q4::temp::play 13032,10355 12897,10439
+EOF
+     },
+     { from  => 1626386400, # 2021-07-16 00:00
+       until => 1630360799, # 2021-08-30 23:59
+       text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts möglicherweise auch für Radfahrer gesperrt, außerdem Einbahnstraßenregelung in der Bizetstr., vom 17. Juli 2021 bis 30. August 2021',
+       type  => 'handicap',
+       source_id => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
+       data  => <<EOF,
+#: XXX Wird es tatsächlich Einschränkungen für Radfahrer geben? Werden temporäre Ampeln aufgestellt? vvv
+#: next_check: 2021-07-16 vvv
+	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994 13826,16026 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
+	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
+#: next_check ^^^
+#: XXX ^^^
 EOF
      },
     );
