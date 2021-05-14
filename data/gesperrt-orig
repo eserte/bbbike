@@ -1664,7 +1664,7 @@ Hünensteig	1s:q3 6387,5057 6395,5154
 #: note: Radfahren auf dem Uferweg ist wohl Sitte
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s:q2 12116,9825 11946,9913 11735,10022 11512,10105
 Stallschreiberstr.	1 10482,11398 10615,11240 10674,11170
-# REMOVED (vorübergehend aufgehoben) --- Jahnstr.	1s:q3 11500,9116 11509,9392
+Jahnstr.	1s:q3 11500,9116 11509,9392
 Waldweg	1s 25496,2429 24981,2580
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
@@ -3279,7 +3279,8 @@ Rudi-Arndt-Str.: Einbahnstraßenregelung	1s:q4:inwork 13449,13892 13359,13832
 Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 15320,12375 15408,12394
 # 
 #: next_check_id: NKZ-2020
-#: last_checked: 2021-04-27
+#: last_checked: 2021-05-14
+#: check_frequency: 60d
 (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
@@ -3391,14 +3392,14 @@ Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,46
 #: by: https://www.hcu-hamburg.de/fileadmin/documents/REAP/BGS/Baumrigolen-Workshop/20-10-01_RUD_BA3_LP2_Broschuere_Strassenraeume_BGS_klein_sko_geaendert.pdf (geplante Umgestaltung Danneckerstr./Rudolfstr.)
 #: XXX bis wann bleibt diese Straße eine "Klimastraße"?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-05-12
+#: last_checked: 2021-05-14
 # REMOVED (bleibt vermutlich länger?) --- #: next_check: 2020-12-31
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939 13856,10864
 # 
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php
 #: by: https://www.kms-sonne.de/projekte/blueberry-inn/
 #: XXX ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen
-#: last_checked: 2021-04-16
+#: last_checked: 2021-05-14
 #: check_frequency: 360d
 #: next_check: 2023-01-01
 #: valid: -20231231
@@ -3585,7 +3586,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
 #: osm_watch: node id="6778873745" version="1"
-#: last_checked: 2021-04-28
+#: last_checked: 2021-05-14
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3684,7 +3685,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="5096644" version="16"
 #: priority: #C
-#: last_checked: 2021-04-28
+#: last_checked: 2021-05-14
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 

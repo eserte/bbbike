@@ -1420,8 +1420,9 @@ Wateweg	1 21122,8370 21121,8424 21127,8532 21115,8618 21123,8678 21131,8739
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1083749.php (Beginn KW 19/2021, Radfahrer Schrittgeschwindigkeit)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/neue-fussgaengerzonen_a309780
 #: osm_watch: way id="4685729" version="17"
-#: last_checked: 2021-05-06 (mapillary) (Absperrung wieder entfernt)
-#: next_check: 2021-05-14
+#: last_checked: 2021-05-13
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2021-05-14
 # früherer Eintrag: Waldeyerstr.	1 15058,12329 15003,12241
 Waldeyerstr.: für Autos gesperrt, Radfahrer frei	2 15058,12329 15003,12241
 # 
@@ -1440,4 +1441,6 @@ Krumme Str.: Poller	3 * 3983,11289 *
 # 
 #: note: für Fußgänger und Radfahrer existiert ein Z-Übergang etwa 20m westlich der Kreuzung
 Bornholmer Str./Nordkapstr.: Straßenbahntrasse	3nocross 10533,16505 10458,16509 10370,16516
+# 
+Bergmannstr.	2:Anlieger 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 

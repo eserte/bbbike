@@ -33,7 +33,6 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
-Jahnstr.: Bauarbeiten, etwa 50m der Fahrbahn sind gesperrt	q3::inwork 11500,9116 11509,9392
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q3::inwork; 9022,10857 8941,10663 8926,10626
 Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
 Fasanenstr.: Engstelle in Höhe Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5241,11060 5236,10994 5230,10919
@@ -48,7 +47,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig	q2::inwork; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123
 Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig, langer Umweg an der Seddiner Str.	q3::inwork; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
 Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweichen	q3::inwork 15055,11505 15126,11474 15162,11458
-Langenscheidtbrücke: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121
+Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126
 Dennewitzstr.: Einbahnstraßenregelung	q3::inwork; 8159,10430 8058,10306
 Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3898,4490
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
@@ -3022,6 +3021,7 @@ Walsroder Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 63
 Hünensteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 6419,5048 6387,5057
 Hünensteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 6387,5057 6395,5154
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 12116,9825 11946,9913 11735,10022 11512,10105
+Jahnstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 11500,9116 11509,9392
 Neue Schönhauser Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10527,13257 10423,13215 10310,13227
 Kirchhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13188,7590 13117,7471 13029,7353
 Niemannstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14254,11377 14211,11229

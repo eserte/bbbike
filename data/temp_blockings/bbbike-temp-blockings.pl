@@ -30868,7 +30868,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-13
+#: last_checked: 2021-05-14
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32183,8 +32183,8 @@ EOF
 EOF
      },
      { from  => 1615676400, # 2021-03-14 00:00
-       until => 1621115999, # 2021-05-15 23:59
-       text  => 'Pilgramer Str.: Sperrung der Fahrbahn, Sperrung des westlichen Gehwegs ab Theodorpark bis Straße 48, östlicher Gehweg ist noch offen, ab 15. März 2021 bis ca. 15. Mai 2021',
+       until => $isodate2epoch->("2021-05-28 18:00:00"), # 1621115999, # 2021-05-15 23:59
+       text  => 'Pilgramer Str.: Sperrung der Fahrbahn, Sperrung des westlichen Gehwegs ab Theodorpark bis Straße 48, östlicher Gehweg ist noch offen, ab 15. März 2021 bis ca. 15. Mai 2021, möglicherweise sogar bis 28.5.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1063839.php',
        data  => <<EOF,
@@ -32192,6 +32192,7 @@ EOF
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-zwei-monate-beidseitig-gesperrt_a304101 (Fertigstellung im Mai 2021)
 #: source_id: 2147346982
+#: also_indoor: traffic (H)
 #: XXX wie sehr sind Radfahrer betroffen?
 #: last_checked: 2021-04-17
 #: next_check: 2021-05-15
@@ -32391,8 +32392,8 @@ EOF
 EOF
      },
      { from  => 1617861600, # 2021-04-08 08:00
-       until => 1622214000, # 2021-05-28 17:00
-       text  => 'Soorstr.: Kreuzung Bredtschneiderstr., Kreuzungsbereich gesperrt, vom 09.04.2021 08:00 Uhr bis 28.05.2021 17:00 Uhr ',
+       until => $isodate2epoch->("2021-05-17 07:00:00"), # 1622214000, # 2021-05-28 17:00
+       text  => 'Soorstr.: Kreuzung Bredtschneiderstr., Kreuzungsbereich gesperrt, vom 09.04.2021 08:00 Uhr bis 17.05.2021 7:00 Uhr ',
        type  => 'handicap',
        source_id => '2147347063',
        data  => <<EOF,

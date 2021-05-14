@@ -494,13 +494,7 @@ Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 # REMOVED --- #: source_id: 2147342161 --- #: source_id: LMS-BR_r_LMS-BR_119821_LMS-BR_72 --- #: XXX Ende-Datum laut fritz --- #: last_checked: 2018-01-09 --- #: next_check: 2018-01-31 --- Mariannenplatz: Bauarbeiten, Fahrbahn an der Waldemarstr. gesperrt	q2::inwork 11839,10736 11897,10887
 # REMOVED (bis auf ein kleines Stück am Kottbusser Damm fertig) --- #: XXX laut fritz bis 30.11.2017 --- #: XXX ändert sich an der Fahrbahnbeschaffenheit etwas? --- #: source_id: LMS-BR_r_LMS-BR_110600_LMS-BR_72 --- #: last_checked: 2017-11-30 vvv --- #: check_frequency: 7d vvv --- # REMOVED --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11673,9720 11640,9710 --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
-# 
-#: XXX außerdem nach den Bauarbeiten die Einbahnstraße in gesperrt-orig wieder aktivieren
-#: osm_watch: way id="764599229" version="3"
-#: last_checked: 2021-03-25
-#: check_frequency: 45d
-Jahnstr.: Bauarbeiten, etwa 50m der Fahrbahn sind gesperrt	q3::inwork 11500,9116 11509,9392
-# 
+# REMOVED (fertig) --- #: XXX außerdem nach den Bauarbeiten die Einbahnstraße in gesperrt-orig wieder aktivieren --- #: osm_watch: way id="764599229" version="3" --- #: last_checked: 2021-03-25 --- #: check_frequency: 45d --- Jahnstr.: Bauarbeiten, etwa 50m der Fahrbahn sind gesperrt	q3::inwork 11500,9116 11509,9392
 # REMOVED (fertig) --- #: last_checked: 2020-11-19 --- #: also_indoor: traffic (H) --- Prinzessinnenstr.: Sperrung der Fahrbahn an der Einmündung Oranienstr.	q3::inwork 10965,10851 11145,10638
 # REMOVED (fertig) --- #: next_check_id: FRAENKELUFER-2019 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.965657.php (fertig?) --- #: osm_watch: way id="751353892" version="3" --- #: last_checked: 2020-06-30 --- #: check_frequency: 30d --- #: next_check: 2020-07-27 --- Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11082,9992 10979,10017
 # REMOVED (hier fertig) --- #: osm_watch: way id="751353891" version="1" --- #: osm_watch: way id="751353890" version="1" --- Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992
@@ -788,10 +782,12 @@ Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweich
 #: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021)
 #: by: https://twitter.com/rbbabendschau/status/1392489796426162177
 #: source_id: 2147347186
+#: also_indoor: traffic
 #: XXX wann werden die Fahrbahn und die Radwege wieder freigegeben?
+#: last_checked: 2021-05-14
 #: next_check: 2021-06-12
 #: valid: -20210612
-Langenscheidtbrücke: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121
+Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: XXX unklar, ob die Einbahnstraßenregelung für Radfahrer gelten soll
@@ -1513,7 +1509,7 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
 #: by: https://www.infravelo.de/projekt/teltowkanalroute/
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Königsberger Str. geplant)
-#: osm_watch: way id="77098244" version="12"
+#: osm_watch: way id="77098244" version="13"
 #: last_checked: 2020-12-19
 #: check_frequency: 360d
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641

@@ -2749,7 +2749,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-13
+#: last_checked: 2021-05-14
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3237,6 +3237,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-zwei-monate-beidseitig-gesperrt_a304101 (Fertigstellung im Mai 2021)
 #: source_id: 2147346982
+#: also_indoor: traffic (H)
 #: XXX wie sehr sind Radfahrer betroffen?
 #: last_checked: 2021-04-17
 #: next_check: 2021-05-15
@@ -3245,9 +3246,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1615676400,
          'id' => 3342,
          'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1063839.php',
-         'text' => 'Pilgramer Str.: Sperrung der Fahrbahn, Sperrung des westlichen Gehwegs ab Theodorpark bis Straße 48, östlicher Gehweg ist noch offen, ab 15. März 2021 bis ca. 15. Mai 2021',
+         'text' => 'Pilgramer Str.: Sperrung der Fahrbahn, Sperrung des westlichen Gehwegs ab Theodorpark bis Straße 48, östlicher Gehweg ist noch offen, ab 15. März 2021 bis ca. 15. Mai 2021, möglicherweise sogar bis 28.5.2021',
          'type' => 'handicap',
-         'until' => 1621115999
+         'until' => 1622217600
        },
        {
          'data' => '#: also_indoor: traffic vvv
@@ -3435,9 +3436,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1617861600,
          'id' => 3359,
          'source_id' => '2147347063',
-         'text' => 'Soorstr.: Kreuzung Bredtschneiderstr., Kreuzungsbereich gesperrt, vom 09.04.2021 08:00 Uhr bis 28.05.2021 17:00 Uhr ',
+         'text' => 'Soorstr.: Kreuzung Bredtschneiderstr., Kreuzungsbereich gesperrt, vom 09.04.2021 08:00 Uhr bis 17.05.2021 7:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1622214000
+         'until' => 1621227600
        },
        {
          'data' => '#: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?

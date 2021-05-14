@@ -1140,9 +1140,7 @@ Verbundsteinpflaster	RW1; 11831,8989 11830,8917 11845,8824 11879,8672
 Radweg nur aufgemalt, mäßige Gehwegplatten	RW1; 11879,8672 11882,8527
 Verbundsteinpflaster	RW1; 11882,8527 11882,8519 11884,8492 11898,8362
 #: note: Hermannstr. Richtung Norden
-	RW2; 11898,8362 11884,8492
-	RW1; 11884,8492 11882,8519 11882,8527
-	RW2; 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989
+Verbundsteinpflaster	RW1; 11898,8362 11884,8492 11882,8519 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989
 # 
 	RW1;RW1 11456,6103 11590,6026
 	RW3;RW3 11590,6026 11943,5825 12017,5747 12052,5710
@@ -1291,8 +1289,7 @@ Gehweg für Radfahrer frei	RW1; 2330,11762 2446,11776
 	RW1;RW2 2058,11756 1747,11719
 	RW1;RW1 2609,11503 2583,11613 2566,11708
 	RW2;RW1 2566,11708 2547,11788
-	RW1;RW1 2547,11788 2489,12014 2460,12163 2440,12264 2437,12283 2417,12401
-	RW;RW1 2417,12401 2411,12428
+	RW1;RW1 2547,11788 2489,12014 2460,12163 2440,12264 2437,12283 2417,12401 2411,12428
 	RW1;RW1 2058,11756 2047,11873 1999,12207 1969,12375
 	RW1;RW2 889,14392 931,14268
 asphaltiert	RW1;RW1 931,14268 984,14086
@@ -2024,7 +2021,8 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5;RW5 9492,11209 9341,11186
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 9492,11209
 	RW3;RW3 9196,11165 9155,11283 9058,11564 9000,11727 8969,11814 8965,11825 8901,12008 8861,12125
 #: by: https://twitter.com/SenUVKBerlin/status/1392538200837660678 (geschützte Radstreifen)
-#: next_check: 2021-05-15
+#: last_checked: 2021-05-14
+#: check_frequency: 7d
 	RW3;RW3 11159,10769 11220,10744 11275,10723
 	RW4;RW4 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
@@ -2072,14 +2070,11 @@ die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 geschützter Radstreifen, mit "Leitboys"	RW4; 13244,11112 13290,11144 13317,11144
 	RW3; 13317,11144 13377,11145
 # REMOVED --- #: next_check_id: UBAHN1-2020 --- #: by: https://www.rbb24.de/panorama/beitrag/2020/04/berlin-bvg-u1-u3-sanierungsarbeiten-ersatzverkehr-sperrung.html (bis voraussichtlich April 2021) --- #: by: https://abendblatt-berlin.de/2020/04/14/friedrichshain-kreuzberg-sanierungsarbeiten-starten/ (etwa 12 Monate (ab 14. April 2020)) --- #: XXX wegen der U1/U3-SEV-Haltestelle wurden die Radspuren aufgehoben (danach die drei auskommentierten Einträge wieder aktivieren) vvv --- #: last_checked: 2021-04-19 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2021-04-12 vvv ---	RW0; 13377,11145 13479,11147 13540,11148 ---	RW0; 13479,11147 13377,11145
-# note: früher: geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig
-	RW3; 13377,11145 13479,11147
+geschützter Radstreifen, mit "Leitboys"	RW4; 13377,11145 13479,11147
 	RW3; 13479,11147 13540,11148
-# note: früher: geschützter Radstreifen, mit "Leitboys"
-	RW3; 13479,11147 13377,11145
 # # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 # REMOVED --- #: XXX hier gibt es "Leitboys" (noch nicht komplett) --- #: by: https://twitter.com/VIZ_Berlin/status/1158680067209400320 --- #: next_check: 2019-08-09
-geschützter Radstreifen, mit "Leitboys"	RW4; 13377,11145 13317,11144 13290,11144
+geschützter Radstreifen, mit "Leitboys"	RW4; 13479,11147 13377,11145 13317,11144 13290,11144
 	RW3; 13290,11144 13244,11112 13214,11064 13144,10921
 # 
 	RW6;RW6 12638,11433 12594,11467
@@ -2127,11 +2122,14 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1019446.php (Verstetigung)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/aus-temporaer-wird-dauerhaft_a293917
 #: by: https://twitter.com/VIZ_Berlin/status/1329434716882268162
-#: by: http://www.infravelo.de/projekt/lichtenberger-strasse-1/
+#: by: http://www.infravelo.de/projekt/lichtenberger-strasse-1/ (früherer Eintrag)
+#: by: https://www.infravelo.de/projekt/lichtenberger-strasse-4/ (bis 3. Quartal 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Frühjahr 2021)
 #: source_id: 2147346610
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
 #: last_checked: 2021-05-13 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2021-09-30 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
 #: osm_watch: way id="284761029" version="17"
 Radspur hinter den parkenden Autos	RW3; 12006,12464 11920,12266
@@ -2140,6 +2138,8 @@ mit provisorischen Baken	RW3; 11920,12266 11872,12185 11764,12001
 #: osm_watch: way id="4616518" version="29"
 Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 Radspur hinter den parkenden Autos	RW3; 12006,12464 12028,12519
+#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -6779,7 +6779,7 @@ provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9154
 #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="20"
 #: osm_watch: way id="335487059" version="15"
-#: last_checked: 2021-05-01 vvv
+#: last_checked: 2021-05-14 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-12 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -6805,7 +6805,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/geschuetzter-radweg-entsteht_a307845
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021)
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2021-04-28 vvv
+#: last_checked: 2021-05-14 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2021-06-30 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -6813,13 +6813,15 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: osm_watch: way id="30184955" version="22"
 provisorisch geschützter Radstreifen	RW4;RW4 11393,10390 11512,10105
 #: osm_watch: way id="30184937" version="27"
+provisorisch geschützter Radstreifen	RW4; 11543,10015 11623,9841 11673,9720 11710,9628 11745,9541 11757,9509 11785,9437 11803,9390 11888,9189
 #: osm_watch: way id="141233527" version="21"
-provisorisch geschützter Radstreifen	RW4;RW4 11543,10015 11623,9841 11673,9720 11710,9628 11745,9541 11757,9509 11785,9437 11803,9390 11888,9189
+provisorisch geschützter Radstreifen	RW4; 11745,9541 11710,9628 11673,9720 11623,9841 11543,10015
 provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: note ^^^
+Radspur hinter parkenden Autos	RW4; 11888,9189 11803,9390 11785,9437 11757,9509 11745,9541
 # 
 #: next_check_id: POPUPRADWEGE-2020
 #: by: https://api.fixmyberlin.de/api/projects/380 (Schöneberger Ufer)
@@ -6836,7 +6838,7 @@ provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: by: https://twitter.com/SenUVKBerlin/status/1387045914317971459
 #: source_id: 2147346996 (bis 21.5.2021)
 #: osm_watch: way id="34057952" version="35"
-#: last_checked: 2021-05-06 vvv
+#: last_checked: 2021-05-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-05-21 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8804,10303 9145,10290 9368,10211 9416,10196
