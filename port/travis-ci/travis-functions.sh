@@ -177,7 +177,9 @@ install_old_perl_dependencies() {
         # Pegex 0.62 and newer runs only on perl 5.10.0 and newer.
 	#
 	# Inline::C 0.77 (and probably newer) runs only on perl 5.10.0 and newer.
-	cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76"
+	#
+        # Geo::Proj4 1.11 increased perl minimum version to 5.10.0 (and is now deprecated anyway).
+	cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76" Geo::Proj4~"==1.09"
     fi
     if [ ! "$USE_SYSTEM_PERL" = "1" ]
     then
