@@ -397,6 +397,20 @@ EOF
 	isnt $stdout[2], $stdout[0], 'fingerprint different on different cmdline';
     }
 
+    {
+	my @cmd = ($^X, $osm2bbd_postprocess, "--debug=0", "--only-largest-city-is-center", $destdir);
+	system @cmd;
+	is $?, 0, "<@cmd> works";
+
+	my $meta_new = BBBikeYAML::LoadFile("$destdir/meta.yml");
+	is_deeply $meta_new->{center}, [13.3888599,52.5170365], 'center set';
+	is_deeply $meta_new->{center_wgs84}, [13.3888599,52.5170365], 'center_wgs84 set';
+	is $meta_new->{center_name}, 'Berlin', 'center_name set';
+
+	my $meta_new_dd = Geography::FromMeta->load_meta("$destdir/meta.dd");
+	is_deeply $meta_new_dd->center, "13.3888599,52.5170365", 'center from Geography::FromMeta';
+	is_deeply $meta_new_dd->center_wgs84, "13.3888599,52.5170365", 'center_wgs84 from Geography::FromMeta';
+    }
 }
 
 # Following is actually checking two things:
