@@ -379,7 +379,7 @@ sub target_largest_city_is_center {
     my $max = _get_largest_city();
     if (defined $max) {
 	print STDERR "setting $max->[Strassen::NAME()] ($max->[Strassen::COORDS()][0]) as center ";
-	$meta->{center} = [ split /,/, $max->[Strassen::COORDS()][0] ];
+	$meta->{center} = [ map { $_+0 } split /,/, $max->[Strassen::COORDS()][0] ];
 	if ($meta->{coordsys} eq 'wgs84') {
 	    $meta->{center_wgs84} = [ @{ $meta->{center} } ]; # create a copy, yes; helps for the simple-minded Geography::FromMeta loader
 	} elsif ($meta->{coordsys} eq 'bbbike') {

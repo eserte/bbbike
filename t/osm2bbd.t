@@ -10,6 +10,7 @@ use FindBin;
 use lib (
 	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
+	 $FindBin::RealBin,
 	);
 
 use File::Temp qw(tempdir tempfile);
@@ -19,6 +20,8 @@ use Test::More 'no_plan';
 use BBBikeYAML;
 use Geography::FromMeta;
 use Strassen::Core;
+
+use BBBikeTest qw(is_number);
 
 sub my_system (@) {
     my(@args) = @_;
@@ -410,7 +413,11 @@ EOF
 
 	my $meta_new = BBBikeYAML::LoadFile("$destdir/meta.yml");
 	is_deeply $meta_new->{center}, [13.3888599,52.5170365], 'center set';
+	is_number $meta_new->{center}->[0], 'lon from center is a number';
+	is_number $meta_new->{center}->[1], 'lat from center is a number';
 	is_deeply $meta_new->{center_wgs84}, [13.3888599,52.5170365], 'center_wgs84 set';
+	is_number $meta_new->{center_wgs84}->[0], 'lon from center is a number';
+	is_number $meta_new->{center_wgs84}->[1], 'lat from center is a number';
 	is $meta_new->{center_name}, 'Berlin', 'center_name set';
 
 	my $meta_new_dd = Geography::FromMeta->load_meta("$destdir/meta.dd");

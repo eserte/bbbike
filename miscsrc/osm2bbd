@@ -2435,16 +2435,17 @@ sub output_meta {
     $meta{commandline} = \@commandline;
     $meta{creation_cwd} = $cwd;
     if (@bbox_wgs84) {
+	@bbox_wgs84 = map { $_+0 } @bbox_wgs84;
 	my @bbox;
-	@bbox[0,1] = split /,/, $conv->(@bbox_wgs84[0,1]);
-	@bbox[2,3] = split /,/, $conv->(@bbox_wgs84[2,3]);
+	@bbox[0,1] = map { $_+0 } split /,/, $conv->(@bbox_wgs84[0,1]);
+	@bbox[2,3] = map { $_+0 } split /,/, $conv->(@bbox_wgs84[2,3]);
 	$meta{bbox} = \@bbox;
 	$meta{bbox_wgs84} = \@bbox_wgs84;
     }
     if ($center_wgs84) {
 	my $center = $conv->(split /,/, $center_wgs84);
-	$meta{center} = [split /,/, $center];
-	$meta{center_wgs84} = [split /,/, $center_wgs84];
+	$meta{center} = [map { $_+0 } split /,/, $center];
+	$meta{center_wgs84} = [map { $_+0 } split /,/, $center_wgs84];
     }
     # Simple country heuristic: use the country of largest city (if defined)
     for my $ort_def (@{ $out{"orte"} }) {
