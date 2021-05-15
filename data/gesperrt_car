@@ -83,9 +83,9 @@ UdL/Universitätsstr.	3nocross::ignrte 9475,12365 9613,12381 9664,12387
 Unter den Linden -> Universitätsstr.: UdL/Universitätsstr.	3::igndisp 9475,12365 9613,12381 9581,12588
 Universitätsstr. -> Unter den Linden: UdL/Universitätsstr.	3::igndisp 9581,12588 9613,12381 9664,12387
 Kolonnenstr. -> Hohenfriedbergstr.	3 7709,8777 7795,8765 7791,8882
-Horn - Yorck	3nocross::ignrte 8777,9601 9002,9731 9044,9753
+Horn - Yorck	3nocross::ignrte 8777,9601 9002,9731 9047,9750
 Yorckstr. -> Hornstr.: Horn - Yorck	3::igndisp 8777,9601 9002,9731 8980,9751
-Hornstr. -> Yorckstr.: Horn - Yorck	3::igndisp 8980,9751 9002,9731 9044,9753
+Hornstr. -> Yorckstr.: Horn - Yorck	3::igndisp 8980,9751 9002,9731 9047,9750
 Mehringdamm - Baruther	3nocross::ignrte 9444,9919 9387,9804 9334,9670
 Mehringdamm -> Baruther Str.: Mehringdamm - Baruther	3::igndisp 9444,9919 9387,9804 9588,9827
 Baruther Str. -> Mehringdamm: Mehringdamm - Baruther	3::igndisp 9588,9827 9387,9804 9334,9670
@@ -331,7 +331,7 @@ Langhoffstr.	1 19817,14371 19818,14064
 Lintruper Str.	1 10324,925 10380,757
 Edison-/Siemensstr.	3 17991,6431 17962,6674 17860,6644
 Edisonstr.	1 17962,6674 17991,6431
-Brückenstr./Edisonstr.	1 17991,6431 17952,6246 17930,6175 17900,6072
+Brückenstr./Edisonstr.	1 17991,6431 17948,6248 17930,6175 17900,6072
 Müggelheimer Str.	3nocross::ignrte 22674,4309 22556,4386 22451,4441 22419,4457 22383,4470
 Karlstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22458,4134 22556,4386 22451,4441
 Müggelheimer Str. -> Spitzerstr.: Müggelheimer Str.	3::igndisp 22556,4386 22451,4441 22425,4370
@@ -1359,7 +1359,7 @@ Oderberger Str.: Durchfahrt verboten	3 10723,14772 10864,14692 10629,14299
 Oderberger Str.: Durchfahrt verboten	3 10723,14772 10864,14692 10893,14705
 Oderberger Str.: Durchfahrt verboten	3 10629,14299 10864,14692 10723,14772
 Oderberger Str.: Durchfahrt verboten	3 10893,14705 10864,14692 10723,14772
-Straße 12 (Neukölln): gesperrt für Fahrzeuge aller Art (außer BAB-Versorgung)	2 13883,6682 13881,6634 13915,6592
+Straße 12 (Neukölln): gesperrt für Fahrzeuge aller Art (außer BAB-Versorgung)	2 13882,6674 13881,6634 13915,6592
 Schranke	3 10549,2257 10559,2252 10617,2226
 Schranke	3 10617,2226 10559,2252 10549,2257
 Einfahrt verboten	3 9520,-641 9561,-748 9340,-829

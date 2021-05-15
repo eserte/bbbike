@@ -3,10 +3,10 @@
 #: note: XXX_* categorization done 2008-01-26
 #:
 Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9865,10227 9825,10206 9687,10180 9599,10175 9416,10196
-Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9368,10211 9145,10290 8804,10303 8724,10327 8661,10377 8644,10408 8527,10621 8430,10710
+Kanalstraﬂen S¸dufer, von Osten bis Kˆthener Br¸cke	1 9368,10211 9146,10284 8810,10305 8724,10327 8661,10377 8644,10408 8527,10621 8430,10710
 Kanalstraﬂen S¸dufer, von Westen bis Flottwellstr.	1 8328,10831 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7089,11073 7002,11034
 Kanalstraﬂen Nordufer	1 6880,11110 7115,11220 7160,11225 7253,11208 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108 7828,11133 8000,11137 8102,11099 8241,11024
-Kanalstraﬂen Nordufer	1 8241,11024 8261,11015 8342,10916 8378,10858 8390,10835 8443,10780 8541,10714 8581,10663 8701,10428 8771,10381 8824,10366 8953,10366 9028,10371 9154,10348 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
+Kanalstraﬂen Nordufer	1 8241,11024 8261,11015 8342,10916 8378,10858 8390,10835 8443,10780 8541,10714 8581,10663 8701,10428 8771,10381 8824,10366 8953,10366 9028,10371 9158,10342 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
 Gitschiner Str.	1 9873,10285 9948,10280
 Gitschiner Str.	1 9948,10280 9865,10227
 Skalitzer Str.	1 12978,10581 12899,10595
@@ -1612,8 +1612,8 @@ Allendorfer Weg -> Rhinstr.: Straﬂenbahntrasse	3::igndisp 17879,14659 17991,1468
 Straﬂenbahntrasse	3nocross::ignrte 19628,13517 19736,13523 19807,13529 19837,13531 19899,13534
 Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straﬂenbahntrasse	3::igndisp 19807,13529 19736,13523 19737,13485
 Allee der Kosmonauten [Wohngebiet] -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 19737,13485 19736,13523 19628,13517
-Allee der Kosmonauten -> Unterf¸hrung: Straﬂenbahntrasse	3::igndisp 19736,13523 19807,13529 19819,13606
-Unterf¸hrung -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 19819,13606 19807,13529 19837,13531
+Allee der Kosmonauten -> Unterf¸hrung: Straﬂenbahntrasse	3::igndisp 19736,13523 19807,13529 19809,13605
+Unterf¸hrung -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 19809,13605 19807,13529 19837,13531
 Allee der Kosmonauten -> Unterf¸hrung/Biesdorfer Promenade: Straﬂenbahntrasse	3::igndisp 19899,13534 19837,13531 19826,13444
 Unterf¸hrung/Biesdorfer Promenade -> Allee der Kosmonauten: Straﬂenbahntrasse	3::igndisp 19826,13444 19837,13531 19807,13529
 Straﬂenbahntrasse	3nocross::ignrte 10778,16485 10699,16492 10620,16497
@@ -3040,7 +3040,7 @@ Dr‰ngelgitter	BNP:3:66:trailer=10 11373,1925
 Dr‰ngelgitter	BNP:5:22 15516,6357
 Dr‰ngelgitter	BNP:5:17 15496,6314
 Dr‰ngelgitter	BNP:5:22 15403,6145
-Dr‰ngelgitter	BNP:5:12 15393,6112
+Dr‰ngelgitter	BNP:5:13 15393,6112
 Enges Dr‰ngelgitter	BNP:5:52:trailer=15 7887,24043
 Enges Dr‰ngelgitter	BNP:5:-32 2380,21510
 Dr‰ngelgitter	BNP:5:-153 8776,16718
@@ -3782,7 +3782,7 @@ Bundesallee, linker Gehweg zur Durlacher Str.	1::igndisp 5399,8344 5438,8402
 Bundesallee, linker Gehweg zur Straﬂe Am Volkspark	1::igndisp 5419,8415 5399,8344
 Urbanstr.	1::igndisp 11861,9183 11888,9189
 Badstr., linker Gehweg	1::igndisp 8486,16425 8486,16412 8534,16355
-Tempelhofer Ufer, linker Gehweg	1::igndisp 8661,10377 8717,10322 8804,10303
+Tempelhofer Ufer, linker Gehweg	1::igndisp 8661,10377 8717,10322 8810,10305
 Leipziger Str., linker Gehweg	1::igndisp 9997,11713 9902,11704
 zur Ampel Jerusalemer Str.	1::igndisp 9992,11682 10000,11691 9997,11713
 Columbiadamm, linker Gehweg	1::igndisp 10913,8463 10799,8504 10796,8498

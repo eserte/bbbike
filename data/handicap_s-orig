@@ -1534,7 +1534,7 @@ Hoenerweg: Fußgänger, eng	q1 15668,12304 15790,12289 15896,12273
 S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20120,16297
 # REMOVED (beide Bordsteine sind abgesenkt) --- #: XXX wo genau sind die Bordsteine, auf beiden Seiten?
 (S-Bhf. Raoul-Wallenberg-Str. - Alfred-Döblin-Str.): Fußgänger	q2 20120,16297 20198,16322
-(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fußgänger	q1 20328,16473 20342,16499 20429,16482 20520,16479 20547,16485 20851,16454 20898,16420 20923,16435 21065,16412 21124,16421
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fußgänger	q1 20328,16473 20342,16499 20429,16482 20520,16479 20547,16485 20815,16469 20851,16454 20898,16420 20923,16435 21051,16417 21124,16421
 (Kinderbad Platsch - Max-Herrmann-Str.): Fußgänger	q1 21124,16421 21177,16499 21238,16627
 (Bürgerpark Marzahn): einige Fußgänger	q1 20898,16420 21020,16298
 (oberer Wuhlewanderweg - Alte Hellersdorfer Str.): einige Fußgänger	q1 22851,14603 22876,14594 23057,14582
@@ -3590,6 +3590,8 @@ Alemannenstr.: eng und kurvig	q1 20694,1175 20729,1239 20796,1289
 Windhuker Str.: einige Fußgänger	q1 5426,16539 5712,16245 5748,16235
 (Waltraudstr. - Clayallee): 1,5m breit, einige Fußgänger	q2 919,4815 935,4814 1253,4788 1447,4757
 (Stresemannstr. - Wilhelmstr.): einige Fußgänger	q1 9215,10607 9368,10641
+#: XXX_prog BS an der Ludwig-Renn-Str., ansonsten trotzdem q2
+(Weg im Hochzeitspark): Fußgänger, geschützte Grünanlage, Bordstein	q2 20547,16485 20553,16403 20583,16317
 # 
 ######################### User Contributions #################################
 # 
@@ -5233,7 +5235,7 @@ Rudolf-Pechel-Str.: enge Straße	q1 9991,-413 9913,-432 9920,-513 10018,-494
 #: by: Tina (...164):
 Buolstr.: enge Straße	q1 559,15342 429,15284 283,15237
 #: by: paul müller:
-Dompfaffenweg: enge Straße	q1 20068,14516 19729,14564
+Dompfaffenweg: enge Straße	q1 20068,14516 19719,14566
 # 
 #: by: Andreas (...behm...):
 #: corrected_by: srt/policy (q2 -> q0-)

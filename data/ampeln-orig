@@ -151,7 +151,7 @@ Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12723,20691
 	X 8595,9495
 	X 8777,9601
 	X 8970,9323
-	X 9044,9753
+	X 9047,9750
 	X 9334,9670
 	X 9248,9350
 	X 9395,8726
@@ -177,16 +177,16 @@ Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12723,20691
 	X 9790,9528
 	X 9552,9602
 	F 9489,9309
-	X 9108,10101
+	X 9111,10090
 	X 9448,10014
 	X 9827,10051
 	X 9599,10175
 	X 9593,10238
 	X 9416,10196
 	X 9404,10250
-	X 9145,10290
-	X 9154,10348
-	X 8804,10303
+	X 9146,10284
+	X 9158,10342
+	X 8810,10305
 	X 8824,10366
 	X 8527,10621
 	X 8581,10663
@@ -636,7 +636,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 14617,7243
 	X 13474,8060
 	X 13102,8343
-	X 15765,6212
+	X 15768,6214
 	X 16146,6755
 	X 16428,7144
 	X 17293,6230
@@ -896,7 +896,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 15221,7778
 #: off: Sunday (seen 2015-11-01 16:00, 2018-07-29 12:30, 2020-10-04 13:00, 2020-12-20 13:00)
 	F 15553,7408
-	X 15724,6229
+	X 15725,6235
 	X 15058,6784
 #: XXX_prog für Radfahrer auf dem Radweg in Richtung Südwesten eigentlich nicht relevant (keine Haltelinie, keine Extra-Ampel)
 	F 16274,6929
@@ -2406,6 +2406,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 #: note: Anforderungsampel
 	F 9034,1953
 #: off: Sunday (seen 2020-09-06 13:30)
+#: note: Kontaktschleife und Anforderung für Radfahrer aus der Degnerstr.
 	X 17014,16724
 #: note: Kontaktschleife (und Anforderung für Fußgänger) aus der Voltairestr.
 	X 11329,12497
@@ -3083,7 +3084,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked: 2021-04-10
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
-	X::inwork 13278,6967
+	X::inwork 13265,6972
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
 #: last_checked: 2021-03-27
 #: check_frequency: 90d

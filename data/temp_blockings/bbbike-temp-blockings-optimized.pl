@@ -3236,11 +3236,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: PILGRAMER-2019
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-zwei-monate-beidseitig-gesperrt_a304101 (Fertigstellung im Mai 2021)
-#: source_id: 2147346982
+#: source_id: 2147346982 (inaktiv)
 #: also_indoor: traffic (H)
 #: XXX wie sehr sind Radfahrer betroffen?
 #: last_checked: 2021-04-17
-#: next_check: 2021-05-15
+#: check_frequency: 30d
+#: next_check: 2021-05-28
 	q4::inwork 25150,10562 25149,10695 25149,10731 25148,10769 25145,10841
 ',
          'from' => 1615676400,
