@@ -58,7 +58,7 @@ use BBBikeUtil qw(bbbike_root is_in_path);
 	      xmllint_string xmllint_file gpxlint_string gpxlint_file kmllint_string
 	      validate_bbbikecgires_xml_string validate_bbbikecgires_yaml_string validate_bbbikecgires_json_string validate_bbbikecgires_data
 	      eq_or_diff is_long_data like_long_data unlike_long_data
-	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data
+	      like_html unlike_html is_float is_number isnt_number using_bbbike_test_cgi using_bbbike_test_data
 	      check_cgi_testing check_gui_testing check_network_testing check_devel_cover_testing
 	      on_author_system maybe_skip_mail_sending_tests
 	      get_pmake image_ok zip_ok create_temporary_content static_url
@@ -796,6 +796,33 @@ sub is_float ($$;$) {
     } else {
 	Test::More::is($value, $expected, $testname); # will fail
     }
+}
+
+sub _number_check {
+    my($val, $is, $testname) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 2;
+ SKIP: {
+	Test::More::skip("YAML::XS required for is_number", 1)
+		if !eval { require YAML::XS; 1 };
+	my $serialized = YAML::XS::Dump([$val]);
+	$serialized =~ s{\A---\n- }{};
+	$serialized =~ s{\n\z}{};
+	if ($is) {
+	    Test::More::is($serialized, $val, $testname);
+	} else {
+	    Test::More::isnt($serialized, $val, $testname);
+	}
+    }
+}
+
+sub is_number ($;$) {
+    my($val, $testname) = @_;
+    _number_check($val, 1, $testname);
+}
+
+sub isnt_number ($;$) {
+    my($val, $testname) = @_;
+    _number_check($val, 0, $testname);
 }
 
 sub _update_bbbike_test_data () {
