@@ -399,8 +399,14 @@ EOF
 
     {
 	my @cmd = ($^X, $osm2bbd_postprocess, "--debug=0", "--only-largest-city-is-center", $destdir);
-	system @cmd;
-	is $?, 0, "<@cmd> works";
+	if (eval { require IPC::Run; 1 }) {
+	    ok IPC::Run::run(\@cmd, '>', \my $stdout, '2>', \my $stderr), "<@cmd> works";
+	    is $stdout, '', 'STDOUT is empty';
+	    is $stderr, 'setting Berlin (13.3888599,52.5170365) as center ', 'expected diagnostics for center-setting';
+	} else {
+	    system @cmd;
+	    is $?, 0, "<@cmd> works";
+	}
 
 	my $meta_new = BBBikeYAML::LoadFile("$destdir/meta.yml");
 	is_deeply $meta_new->{center}, [13.3888599,52.5170365], 'center set';
