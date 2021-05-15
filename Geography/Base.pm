@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Base.pm,v 1.4 2009/06/27 15:34:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,12 +15,18 @@ package Geography::Base;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.05';
 
 sub new                  { bless {}, shift }
 sub cityname             { undef }
 sub center               { undef } # "x,y"
 sub center_name          { undef }
+sub center_wgs84 {
+    my $class = shift;
+    require Karte::Polar;
+    $Karte::Polar::obj = $Karte::Polar::obj if 0; # cease -w
+    $Karte::Polar::obj->standard2map_s($class->center);
+}
 sub bbox                 { undef } # array ref
 sub search_args          { () }
 sub scrollregion         { () }

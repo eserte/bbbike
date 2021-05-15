@@ -23,7 +23,7 @@ BEGIN {
     }
 }
 
-plan tests => 22;
+plan tests => 24;
 
 use Geography::Berlin_DE;
 use Geography::FromMeta;
@@ -34,6 +34,7 @@ use Geography::FromMeta;
 
     is($geo->cityname, "Berlin");
     like($geo->center, qr{^-?\d+,-?\d+$});
+    like($geo->center_wgs84, qr{^-?[\d\.]+,-?[\d\.]+$});
 
     ok(grep { $_ eq 'Spandau' } $geo->supercityparts);
     ok(grep { $_ eq 'Kreuzberg' } $geo->cityparts);
@@ -69,6 +70,7 @@ use Geography::FromMeta;
 
     is($geo->cityname, "Kleinkleckersdorf");
     like($geo->center, qr{^-?\d+(?:\.\d+)?,-?\d+(?:\.\d+)?$});
+    like($geo->center_wgs84, qr{^-?[\d\.]+,-?[\d\.]+$});
 
     my $bbox = $geo->bbox;
     is scalar(@$bbox), 4, 'for elements in bbox';

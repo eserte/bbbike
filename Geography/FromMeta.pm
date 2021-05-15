@@ -24,7 +24,7 @@ sub load_meta {
 	$metastring =~ s{^\$meta\s*=\s*}{};
 	my $meta = eval $metastring;
 	if ($@) {
-	    warn "Cannot read meta data from $metafile";
+	    warn "Cannot read meta data from $metafile: $@\nContents:\n$metastring";
 	} else {
 	    my $self = bless { %$meta }, $class; # XXX or fake class into something using the city/country name?
 	    return $self;
@@ -53,6 +53,18 @@ sub center {
 	join ",", $cx, $cy;
     } else {
 	undef;
+    }
+}
+sub center_wgs84 {
+    my $self = shift;
+    if ($self->{center_wgs84}) {
+	join ",", @{ $self->{center_wgs84} };
+    } elsif ($self->{coordsys} eq 'wgs84') {
+	join ",", @{ $self->{center} };
+    } else {
+	require Karte::Polar;
+	$Karte::Polar::obj = $Karte::Polar::obj if 0; # cease -w
+	$Karte::Polar::obj->standard2map_s($self->center);
     }
 }
 
