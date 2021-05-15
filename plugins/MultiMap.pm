@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.66;
+$VERSION = 1.67;
 
 use vars qw(%images);
 
@@ -696,24 +696,32 @@ sub showmap_url_openstreetmap {
     my $with_marker = $args{osmmarker};
     my $layers_spec = '';
     my $variant = $args{variant} || '';
-    if ($variant eq 'de') {
-	$with_marker = 0; # not implemented on openstreetmap.de
-    } elsif ($variant eq 'sautter') {
-	$with_marker = 0; # not implemented on sautter.com
-	$layers_spec = '&layers=B000000FTFFFFTFF';
-    } elsif (defined $args{layers}) {
-	$layers_spec = "&layers=$args{layers}";
-    }
-    my $mpfx = $with_marker ? 'm' : ''; # "marker prefix"
-    my $base_url = (  $variant eq 'de'      ? 'http://www.openstreetmap.de/karte.html'
-		    : $variant eq 'sautter' ? 'http://sautter.com/map/'
-		    :                         'http://www.openstreetmap.org/index.html'
-		   );
-
+    my $editor = $args{editor} || '';
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    $scale = 17 if $scale > 17;
-    sprintf "$base_url?%slat=%s&%slon=%s&zoom=%d%s",
-	$mpfx, $py, $mpfx, $px, $scale, $layers_spec;
+    $scale = 19 if $scale > 19;
+
+    if ($editor eq 'id') {
+	sprintf "https://www.openstreetmap.org/edit?editor=id#map=%d/%f/%f", $scale, $py, $px;
+    } elsif ($editor) {
+	main::status_message("Unsupported OSM editor '$editor'", "die");
+    } else {
+	if ($variant eq 'de') {
+	    $with_marker = 0; # not implemented on openstreetmap.de
+	} elsif ($variant eq 'sautter') {
+	    $with_marker = 0; # not implemented on sautter.com
+	    $layers_spec = '&layers=B000000FTFFFFTFF';
+	} elsif (defined $args{layers}) {
+	    $layers_spec = "&layers=$args{layers}";
+	}
+	my $mpfx = $with_marker ? 'm' : ''; # "marker prefix"
+	my $base_url = (  $variant eq 'de'      ? 'http://www.openstreetmap.de/karte.html'
+			  : $variant eq 'sautter' ? 'http://sautter.com/map/'
+			  :                         'http://www.openstreetmap.org/index.html'
+		       );
+
+	sprintf "$base_url?%slat=%s&%slon=%s&zoom=%d%s",
+	    $mpfx, $py, $mpfx, $px, $scale, $layers_spec;
+    }
 }
 
 sub showmap_openstreetmap {
@@ -792,6 +800,11 @@ sub show_openstreetmap_menu {
 	     -command => sub { showmap_openstreetmap(variant => 'sautter', %args) },
 	    );
     }
+    $link_menu->separator;
+    $link_menu->command
+	(-label => 'iD Editor',
+	 -command => sub { showmap_openstreetmap(editor => 'id', %args) },
+	);
     $link_menu->separator;
     $link_menu->command
 	(-label => ".de-Link kopieren", # XXX lang!
