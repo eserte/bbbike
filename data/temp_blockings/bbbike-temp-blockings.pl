@@ -30870,7 +30870,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-14
+#: last_checked: 2021-05-16
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31099,7 +31099,7 @@ EOF
      { from  => 1594635120, # 2020-07-13 12:12
        until => $isodate2epoch->("2022-05-31 18:00:00"), # 1615996800, # 2021-03-17 17:00
        dont_check_date => 1,
-       text  => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vom 14.07.2020 12:12 Uhr bis 18.05.2021 17:00 Uhr',
+       text  => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vom 14.07.2020 12:12 Uhr bis 18.05.2021 17:00 Uhr, möglicherweise sogar bis Mai 2022',
        type  => 'handicap',
        source_id => '2147346108', # bis 17.3.2021, mittlerweile inaktiv, dann wieder bis 18.5.2021
        data  => <<EOF,
@@ -32027,7 +32027,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 3/2021: Durchfahrt ist noch möglich)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 5/2021: Durchfahrt ist noch möglich)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32036,7 +32036,7 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung? Falls ja, wo ist der gesperrte Abschnitt und gilt die Sperrung auch für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="24"
 #: osm_watch: way id="165832806" version="21"
-#: last_checked: 2021-03-27
+#: last_checked: 2021-05-16
 #: check_frequency: 45d
 	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17483,8644 17449,8720 17416,8767 17380,8858
 EOF
@@ -32208,7 +32208,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic vvv
-#: last_checked: 2021-03-21 vvv
+#: last_checked: 2021-05-16 vvv
 #: next_check: 2021-06-15 vvv
 	q3::inwork; 18676,6333 18767,6268
 	q3::inwork 18767,6268 18859,6198
@@ -32218,14 +32218,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1621179836, # undef, # XXX
        text  => 'Hasselwerderstr.: zwischen Fennstr. und Fließstr. Fahrbahn wegen Bauarbeiten gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt?
-#: also_indoor: traffic (G)
-#: last_checked: 2021-04-03
-#: check_frequency: 30d
+# REMOVED (offen) --- #: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt? --- #: also_indoor: traffic (G) --- #: last_checked: 2021-04-03 --- #: check_frequency: 30d
 	q4::inwork 18260,5746 18164,5701
 EOF
      },
@@ -32267,9 +32264,10 @@ EOF
        text  => 'Auerstr.: Fahrbahn wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: AUER-2021
 #: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken)
 #: also_indoor: traffic
-#: last_checked: 2021-05-13
+#: last_checked: 2021-05-16
 #: check_frequency: 14d
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
 	q4::inwork 13067,12583 13202,12790
@@ -32297,20 +32295,16 @@ EOF
 EOF
      },
      { from  => 1616306400, # 2021-03-21 07:00
-       until => $isodate2epoch->("2021-07-05 17:00:00"), # 1619449200, # 2021-04-26 17:00
+       until => 1621187772, # $isodate2epoch->("2021-07-05 17:00:00"), # 1619449200, # 2021-04-26 17:00
        text  => 'Winckelmannstr.: Gleisbauarbeiten zwischen Sterndamm und Köpenicker Str., Fahrbahn Richtung Süden gesperrt, Richtung Norden muss auf der Kopfsteinpflasterseite gefahren werden, vom 22.03.2021 07:00 Uhr bis 05.07.2021 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346994', # bis 13.6.2021
        data  => <<EOF,
 #: next_check_id: WINCKELMANN-2021
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=64640
-#: XXX: laut rbb nur bis 17.5.2021, laut krickstadt und BVG bis 5.7.2021
-#: last_checked: 2021-05-09 (krickstadt) vvv
-#: next_check: 2021-07-05 vvv
+# REMOVED (weitgehend fertig, siehe krickstadt) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=64640 --- #: XXX: laut rbb nur bis 17.5.2021, laut krickstadt und BVG bis 5.7.2021 --- #: last_checked: 2021-05-09 (krickstadt) vvv --- #: next_check: 2021-07-05 vvv
 	q4::inwork; 17428,4503 17476,4337 17507,4216
 	q2::inwork; 17507,4216 17476,4337
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1624140000, # 2021-06-20 00:00

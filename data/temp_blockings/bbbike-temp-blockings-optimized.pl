@@ -2749,7 +2749,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-14
+#: last_checked: 2021-05-16
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2830,7 +2830,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1594635120,
          'id' => 3258,
          'source_id' => '2147346108',
-         'text' => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vom 14.07.2020 12:12 Uhr bis 18.05.2021 17:00 Uhr',
+         'text' => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vom 14.07.2020 12:12 Uhr bis 18.05.2021 17:00 Uhr, möglicherweise sogar bis Mai 2022',
          'type' => 'handicap',
          'until' => 1654012800
        },
@@ -3174,13 +3174,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung? Falls ja, wo ist der gesperrte Abschnitt und gilt die Sperrung auch für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="24"
 #: osm_watch: way id="165832806" version="21"
-#: last_checked: 2021-03-27
+#: last_checked: 2021-05-16
 #: check_frequency: 45d
 	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17483,8644 17449,8720 17416,8767 17380,8858
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 3/2021: Durchfahrt ist noch möglich)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 5/2021: Durchfahrt ist noch möglich)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3253,7 +3253,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: also_indoor: traffic vvv
-#: last_checked: 2021-03-21 vvv
+#: last_checked: 2021-05-16 vvv
 #: next_check: 2021-06-15 vvv
 	q3::inwork; 18676,6333 18767,6268
 	q3::inwork 18767,6268 18859,6198
@@ -3267,19 +3267,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1625090400
        },
-       {
-         'data' => '#: add_fragezeichen: Ist die Fahrbahn noch immer gesperrt?
-#: also_indoor: traffic (G)
-#: last_checked: 2021-04-03
-#: check_frequency: 30d
-	q4::inwork 18260,5746 18164,5701
-',
-         'from' => undef,
-         'id' => 3344,
-         'text' => 'Hasselwerderstr.: zwischen Fennstr. und Fließstr. Fahrbahn wegen Bauarbeiten gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: S-SCHICHAUWEG-2021
 #: by: rbb
@@ -3299,9 +3287,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        {
-         'data' => '#: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken)
+         'data' => '#: next_check_id: AUER-2021
+#: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken)
 #: also_indoor: traffic
-#: last_checked: 2021-05-13
+#: last_checked: 2021-05-16
 #: check_frequency: 14d
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
 	q4::inwork 13067,12583 13202,12790
@@ -3335,24 +3324,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: WINCKELMANN-2021
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=64640
-#: XXX: laut rbb nur bis 17.5.2021, laut krickstadt und BVG bis 5.7.2021
-#: last_checked: 2021-05-09 (krickstadt) vvv
-#: next_check: 2021-07-05 vvv
-	q4::inwork; 17428,4503 17476,4337 17507,4216
-	q2::inwork; 17507,4216 17476,4337
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'from' => 1616306400,
-         'id' => 3351,
-         'source_id' => '2147346994',
-         'text' => 'Winckelmannstr.: Gleisbauarbeiten zwischen Sterndamm und Köpenicker Str., Fahrbahn Richtung Süden gesperrt, Richtung Norden muss auf der Kopfsteinpflasterseite gefahren werden, vom 22.03.2021 07:00 Uhr bis 05.07.2021 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1625497200
-       },
+       undef,
        {
          'data' => '	2::inwork 5787,4400 5738,4361 5541,4305
 ',

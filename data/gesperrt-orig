@@ -254,7 +254,7 @@ Anzengruberstr.	1 12856,8344 12689,8289
 #: by: https://www.nalepaland.de/
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2021-03-09
+#: last_checked: 2021-05-16
 #: check_frequency: 60d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -3252,6 +3252,14 @@ Drängelgitter	BNP:3::trailer=10 32418,6303
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=75609
+#: XXX bis wann ist gilt hier die Einbahnstraßenregelung?
+#: XXX_prog: eigentlich 1s:q4:inwork, kollidiert aber mit dem normalen handicap_s-orig-Eintrag
+#: last_checked: 2021-05-16
+#: next_check: 2021-05-31
+#: valid: -20210531
+Wildensteiner Str.: Einbahnstraßenregelung (wegen SEV)	1::inwork 18627,8475 18528,8331
+# 
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: also_indoor: traffic (G,H)
@@ -3295,7 +3303,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/uebersicht-ueber-aktuelle-bauvorhaben-118918.php (voraussichtliche Dauer bis 2023 (!))
 #: priority: #C
-#: last_checked: 2021-04-03
+#: last_checked: 2021-05-16
 #: check_frequency: 45d
 (Weg parallel zur und unter der Minna-Todenhagen-Brücke): mit Bauzäunen abgesperrt	2::inwork 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
 # 
@@ -3338,8 +3346,8 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: check_frequency: 60d
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 # 
-#: last_checked: 2021-05-09 vvv
-#: check_frequency: 21d vvv
+#: last_checked: 2021-05-16 vvv
+#: check_frequency: 14d vvv
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922 16841,9997
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16886,9982
 # REMOVED (hier jetzt offen, aber noch nicht fertig) --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16841,9997 16830,10030 16835,10052
@@ -3482,13 +3490,13 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2021-05-10
+#: last_checked: 2021-05-16
 #: check_frequency: 360d
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
 # 
 #: by: wosch
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2021-05-10
+#: last_checked: 2021-05-16
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152 14373,10046
 # 
@@ -3744,11 +3752,9 @@ Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 2144
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_17_1305_1380_online.pdf (Einziehung)
 #: XXX wann wird die Straße wieder geöffnet? --- vermutlich nie, sollte man also entfernen?
 #: osm_watch: node id="791819743" version="4"
-#: by: osm (kartonage)
-#: confirmed_by: srt
-#: last_checked: 2021-04-24
-#: check_frequency: 60d
-Mergenthalerring: durch Tor versperrt	2::inwork 14121,8147 14210,8227 14229,8278
+#: last_checked: 2021-05-16
+#: check_frequency: 120d
+Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,8278
 # 
 # REMOVED (nicht mehr) --- #: next_check_id: NORD52-2019 --- #: last_checked: 2019-04-20 --- #: check_frequency: 90d --- Relingstr.: Bauarbeiten, gesperrt	2::inwork 22195,2390 22287,2431 22358,2460
 # REMOVED --- #: next_check_id: NORD52-2019 --- #: osm_watch: way id="663013125" version="8" --- #: last_checked: 2019-12-15 (osm) --- #: check_frequency: 90d --- Gaffelsteig: Bauarbeiten, kann gesperrt sein	2::inwork 22287,2431 22221,2520
@@ -3781,7 +3787,7 @@ Mergenthalerring: durch Tor versperrt	2::inwork 14121,8147 14210,8227 14229,8278
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738
-#: last_checked: 2021-04-03
+#: last_checked: 2021-05-16
 #: check_frequency: 360d
 #: next_check: 2022-12-20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -4166,7 +4172,7 @@ Bergiusstr.: wegen Bauarbeiten an der BAB100 gesperrt, vielleicht sogar dauerhaf
 #: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaßnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G)
-#: last_checked: 2021-04-04
+#: last_checked: 2021-05-16
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022

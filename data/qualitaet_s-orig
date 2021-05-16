@@ -12,8 +12,8 @@
 #: next_check_id: DIESEL-2019
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 #: osm_watch: way id="524560334" version="4"
-#: last_checked: 2021-04-04 vvv
-#: check_frequency: 45d vvv
+#: last_checked: 2021-05-16 vvv
+#: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="2"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
@@ -966,7 +966,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-05-14
+#: last_checked: 2021-05-16
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2041,11 +2041,8 @@ Am Teltowkanal: feiner Schotter	Q1 3375,1026 3366,1007 3370,955 3355,893 3304,83
 #: next_check: 2021-07-31
 Akeleiweg: Kopfsteinpflaster	Q2 17631,3200 17603,3240
 # REMOVED (vollständig asphaltiert) --- Winckelmannstr.: Kopfsteinpflaster Richtung Norden	Q2; 17465,3768 17468,3979
-#: next_check_id: WINCKELMANN-2021
-#: XXX werden die Betonplatten durch Asphalt ersetzt?
-#: priority: #C
-#: next_check: 2021-07-05
-Winckelmannstr.: Kopfsteinpflaster an den Rändern, in der Mitte betoniert	Q1+ 17428,4503 17476,4337
+# REMOVED (ja) --- #: next_check_id: WINCKELMANN-2021 --- #: XXX werden die Betonplatten durch Asphalt ersetzt? --- #: priority: #C --- #: next_check: 2021-07-05
+Winckelmannstr.: Kopfsteinpflaster an den Rändern, in der Mitte asphaltiert	Q1+ 17428,4503 17476,4337
 Winckelmannstr.: Kopfsteinpflaster Richtung Süden	Q2; 17476,4337 17507,4216 17503,4148 17468,3979
 Zwiestädter Str.: Asphalt	Q0 13513,7532 13392,7648
 Am Orankesee: Parkweg	Q1 15856,15924 15703,15953 15587,15852 15534,15911 15486,16000 15479,16060
@@ -10512,9 +10509,10 @@ Am Tierpark [Wohngebiet]: Beton	Q1+ 18160,11635 18188,11592 18178,11515 18179,11
 Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): wassergebundene Decke	Q1 21467,9236 21511,9226
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
-#: XXX ändert sich an den geplanten Bauarbeiten hier etwas?
+#: XXX Wird sich nach den geplanten Bauarbeiten hier etwas ändern?
 #: last_checked: 2021-03-23
 #: check_frequency: 60d
+#: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
 Duftgeranienweg: Beton	Q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
 Engelwurzweg: unbefestigter Weg	Q2 25176,6544 25153,6596 25116,6640
@@ -15538,8 +15536,8 @@ Thurgauer Str.: kleinteiliges Kopfsteinpflaster, wellig	Q2 7147,18149 7108,18199
 #: by: Claudia Skowronnek: vvv
 #: corrected_by: srt (laut Claudia "vermutlich Beton", but Asphalt)
 Römerweg: Asphalt	Q0 18807,9746 18781,9744 18687,9736 18685,9719
-#: corrected_by: srt (Q0 -> Q1+)
-Römerweg: Asphalt mit Schäden	Q1+ 18685,9719 18452,9755
+#: corrected_by: srt (Q0 -> ...)
+Römerweg: Asphalt mit Schäden	Q1 18685,9719 18452,9755
 #: corrected_by: srt (Q0 -> Q0-)
 Römerweg: Asphalt	Q0- 18452,9755 18421,9764
 #: corrected_by: srt (guter Beton -> ...)
@@ -21045,8 +21043,8 @@ Rotdornweg: mäßiger Asphalt	Q1- 2805,2438 3009,2429
 Monschauer Weg: guter Asphalt	Q0 8959,4686 8929,4882
 # 
 #: by: blasz
-#: corrected_by: srt (mäßiges -> schlechtes)
-Schenkestr.: schlechtes Kopfsteinpflaster	Q3 17961,8312 17794,8429
+#: corrected_by: srt (mäßiges -> ...)
+Schenkestr.: sehr schlechtes Kopfsteinpflaster	Q3- 17961,8312 17794,8429
 # 
 #: by: Horst Ginzel:
 Geitelsteig: Asphalt	Q0 1974,14646 1977,14751 1988,14870
@@ -29920,4 +29918,6 @@ Kreuzungsbereich asphaltiert	Q0 11964,14962
 Einmündungsbereich asphaltiert	Q0 10793,16636
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 23170,-1249
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 23042,-1297
+Kreuzungsbereich asphaltiert	Q0 16494,6948
+Kreuzungsbereich asphaltiert	Q0 18574,6401
 #: ignore ^^^
