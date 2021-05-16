@@ -25,9 +25,8 @@ $DEBIAN_I386_VERSION  = '3.18-1'; # including revision
 $DEBIAN_AMD64_VERSION = '3.18-1'; # including revision
 *DEBIAN_VERSION       = \$DEBIAN_I386_VERSION; # for backward compat
 
-$EMAIL_OLD	   = 'eserte@cs.tu-berlin.de';
-$EMAIL		   = 'slaven@rezic.de';
-$EMAIL_NEWSTREET   = 'slaven@rezic.de';
+$EMAIL		   = "slaven\x40rezic.de";
+$EMAIL_NEWSTREET   = "slaven\x40rezic.de";
 # personal homepage
 $HOMEPAGE	   = 'http://www.rezic.de/eserte/';
 # pointer to WWW version
