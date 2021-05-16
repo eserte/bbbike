@@ -58,7 +58,8 @@ $out .= "# and re-run the following command:\n";
 $out .= "#\n";
 $out .= "#    $rerun_notice\n";
 $out .= "#\n";
-while(my($k,$v) = each %$vars) {
+for my $k (sort keys %$vars) {
+    my $v = $vars->{$k};
     my $v_s = Data::Dumper->new([$v],[''])->Useqq(1)->Indent(1)->Dump;
     $v_s =~ s/^.*?=\s*//;
     $v_s =~ s/;\n?\z//;
