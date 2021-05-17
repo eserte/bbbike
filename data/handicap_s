@@ -3,6 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+Pettenkoferstr.: Bauarbeiten an der Kreuzung Eldenaer Str., Sperrung der Fahrbahn	q3::inwork 14858,12775 14836,12826
 Krautstr.: Umbau zur Fußgängerzone, Radfahrer frei	q4::inwork 12002,12008 12021,12066
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q3::inwork 12926,11224 12848,11093
 (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10215,-2170 10181,-2174 10161,-2146 10096,-2137
@@ -2109,6 +2110,7 @@ Windhuker Str.: einige Fußgänger	q1 5426,16539 5712,16245 5748,16235
 (Waltraudstr. - Clayallee): 1,5m breit, einige Fußgänger	q2 919,4815 935,4814 1253,4788 1447,4757
 (Stresemannstr. - Wilhelmstr.): einige Fußgänger	q1 9215,10607 9368,10641
 (Weg im Hochzeitspark): Fußgänger, geschützte Grünanlage, Bordstein	q2 20547,16485 20553,16403 20583,16317
+Voigtstr.: einige Fußgänger	q3 14836,12826 14835,12801
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3042,6 +3044,7 @@ Ludolfinger Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp;
 Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17729,10331 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
+Soorstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1861,11284 1884,11126
 Gotlindestr.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 16720,12614 16859,12613
 Rudi-Arndt-Str.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 13449,13892 13359,13832
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10472,14632 10320,14608

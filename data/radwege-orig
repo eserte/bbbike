@@ -3510,7 +3510,7 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019) (inaktiv)
 #: source_id: 2147345490 (bis 30.7.2021)
 #: priority: #D vvv
-#: last_checked: 2021-05-05 vvv
+#: last_checked: 2021-05-17 vvv
 #: next_check: 2021-07-30 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -5801,9 +5801,14 @@ Gehweg für Radfahrer frei	RW1; 19328,5304 19405,5284
 Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 #: XXX wird hier eine Grünmarkierung entstehen?
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
-#: priority: #D
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1085777.php (Fahrbahndeckenerneuerung und anschließend Markierungsarbeiten; 24.05. - 16.06.2021)
+#: by: https://viz.berlin.de/2021/05/schnellerstrasse/
+#: XXX während der Bauarbeiten gibt es eine Einbahnstraßenregelung stadteinwärts sowie für Radfahrer in beiden Richtungen einen benutzungspflichtigen Geh- und Radweg
+#: also_indoor: traffic
+# REMOVED --- #: priority: #D
 #: last_checked: 2021-04-03
 #: check_frequency: 90d
+#: next_check: 2021-05-24
 	RW3;RW3 18245,5551 18370,5511 18680,5413 18955,5320 19037,5316 19328,5304
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
 	RW6;RW6 11874,20656 11826,20722
@@ -6467,7 +6472,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2021-04-19
+#: last_checked: 2021-05-06 (mapillary)
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6528,7 +6533,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2021-05-05
+#: last_checked: 2021-05-17
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: next_check_id: POPUPRADWEGE-2020
@@ -6539,7 +6544,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1389893047379496960 (Markierungsarbeiten)
 #: XXX Richtung Nordwesten ab Greifswalder Str. entsteht auch eine Grünmarkierung
-#: last_checked: 2021-05-05 vvv
+#: last_checked: 2021-05-17 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2021-09-30 vvv
 #: osm_watch: way id="4615031" version="38"
@@ -6805,6 +6810,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://twitter.com/VIZ_Berlin/status/1384862739504500739 (Markierungsarbeiten ab 26.4.2021)
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/geschuetzter-radweg-entsteht_a307845
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021)
+#: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
 #: last_checked: 2021-05-14 vvv
 #: check_frequency: 14d vvv

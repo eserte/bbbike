@@ -1270,17 +1270,17 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        {
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
-#: tempex: (20170325-20170409 & (sa,su,holiday) | 20170414-20171016 & (th-su,holiday) | 20171021-20171029 & (sa,su,holiday)) & T10-T17 vvv
+# REMOVED --- #: tempex: (20170325-20170409 & (sa,su,holiday) | 20170414-20171016 & (th-su,holiday) | 20171021-20171029 & (sa,su,holiday)) & T10-T17 vvv
 	2::temp -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
 	2::temp -10086,1886 -10053,1640
-#: tempex ^^^
+# REMOVED --- #: tempex ^^^
 #: XXX_prog ^^^
 ',
          'from' => undef,
          'id' => 2407,
          'recurring' => 1,
-         'source_id' => 'http://www.potsdamer-wassertaxi.de/fahrplan.php?y=2012',
-         'text' => 'Potsdamer Wassertaxi: fährt nur im Sommer, 3x bis 6x täglich',
+         'source_id' => 'https://schifffahrt-in-potsdam.de/potsdamer-wassertaxi/',
+         'text' => 'Potsdamer Wassertaxi: fährt nur im Sommer am Wochenende und feiertags',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -2691,7 +2691,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-04-26
+#: last_checked: 2021-05-17
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2749,7 +2749,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-16
+#: last_checked: 2021-05-17
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3234,13 +3234,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: next_check_id: PILGRAMER-2019
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381 (mittlerweile "bis auf Weiteres")
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-zwei-monate-beidseitig-gesperrt_a304101 (Fertigstellung im Mai 2021)
 #: source_id: 2147346982 (inaktiv)
 #: also_indoor: traffic (H)
 #: XXX wie sehr sind Radfahrer betroffen?
 #: last_checked: 2021-04-17
-#: check_frequency: 30d
+#: check_frequency: 32d
 #: next_check: 2021-05-28
 	q4::inwork 25150,10562 25149,10695 25149,10731 25148,10769 25145,10841
 ',
@@ -3288,13 +3288,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: next_check_id: AUER-2021
-#: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken)
+#: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken); außerdem gibt\'s eine Einbahnstraßenregelung für Autos
 #: also_indoor: traffic
-#: last_checked: 2021-05-16
-#: check_frequency: 14d
+#: last_checked: 2021-05-17 vvv
+#: check_frequency: 14d vvv
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
 	q4::inwork 13067,12583 13202,12790
 	q4::inwork; 13273,12902 13202,12790
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3348,
@@ -3336,7 +3338,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1629064800
        },
        {
-         'data' => '	q4::inwork 5417,2383 5525,2161 5592,2021
+         'data' => '#: also_indoor: traffic (G)
+	q4::inwork 5417,2383 5525,2161 5592,2021
 ',
          'from' => 1614466800,
          'id' => 3353,
@@ -3346,7 +3349,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1627682400
        },
        {
-         'data' => '	q4::inwork 5656,1882 5642,1912 5631,1937 5592,2021
+         'data' => '#: also_indoor: traffic
+	q4::inwork 5656,1882 5642,1912 5631,1937 5592,2021
 ',
          'from' => 1627682400,
          'id' => 3354,
@@ -3356,7 +3360,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1634335200
        },
        {
-         'data' => '	q4::inwork 5934,2198 6021,2071 6097,1975
+         'data' => '#: also_indoor: traffic (G)
+	q4::inwork 5934,2198 6021,2071 6097,1975
 ',
          'from' => 1614466800,
          'id' => 3355,
@@ -3403,16 +3408,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1625004000
        },
        undef,
-       {
-         'data' => '	q3::inwork 1884,11126 1861,11284
-',
-         'from' => 1617861600,
-         'id' => 3359,
-         'source_id' => '2147347063',
-         'text' => 'Soorstr.: Kreuzung Bredtschneiderstr., Kreuzungsbereich gesperrt, vom 09.04.2021 08:00 Uhr bis 17.05.2021 7:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1621227600
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?
 #: last_checked: 2021-05-13
@@ -3425,7 +3421,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '	2::inwork 49011,71344 48996,71176 48982,71121 48929,70947 49089,70562 49253,70168
+         'data' => '# REMOVED (hier wohl nicht?) ---	2::inwork 49011,71344 48996,71176 48982,71121 48929,70947
+#: also_indoor: traffic (G,H)
+	2::inwork 48929,70947 49089,70562 49253,70168
 ',
          'from' => 1618696800,
          'id' => 3361,
@@ -3472,6 +3470,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: JACOBSENWEG-2021
+#: also_indoor: traffic
 	q4::inwork; 2821,19559 2909,19485 2988,19445 3203,19340 3232,19325 3324,19277
 ',
          'from' => 1622325600,
@@ -3483,6 +3482,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: priority: #B
+#: also_indoor: traffic (G)
 #: last_checked: 2021-05-09
 #: check_frequency: 14d
 	q4::inwork 15870,10938 15674,10851
@@ -3581,6 +3581,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: XXX Wird es tatsächlich Einschränkungen für Radfahrer geben? Werden temporäre Ampeln aufgestellt? vvv
+#: also_indoor: traffic
 #: next_check: 2021-07-16 vvv
 	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994 13826,16026 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
 	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
@@ -3593,6 +3594,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts möglicherweise auch für Radfahrer gesperrt, außerdem Einbahnstraßenregelung in der Bizetstr., vom 17. Juli 2021 bis 30. August 2021',
          'type' => 'handicap',
          'until' => 1630360799
+       },
+       {
+         'data' => '#: XXX check!
+	q4::inwork; 15256,11884 15300,11965
+',
+         'from' => 1621144800,
+         'id' => 3375,
+         'source_id' => '2147347189',
+         'text' => 'Gürtelstr.: Brückenbauarbeiten, Radfahrer Richtung Frankfurter Allee müssen absteigen und schieben, vom 17.05.2021 08:00 Uhr bis 08.06.2021 18:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1623168000
        }
      
 );

@@ -1737,7 +1737,7 @@ Straße vor Schönholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf vvv
-#: last_checked: 2021-05-05
+#: last_checked: 2021-05-17
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -3332,6 +3332,8 @@ Hultschiner Damm: Aufhebung der Benutzungspflicht?	? 24639,10766 24644,10740 246
 #: by ^^^
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1080946.php (bis Juni 2021)
+#: by: https://twitter.com/VIZ_Berlin/status/1394217278615560194
+#: by: https://twitter.com/BA_Xhain/status/1394209701588570124 (Haasestr.)
 #: last_checked: 2021-05-16 vvv
 #: next_check: 2021-06-30 vvv
 Niemannstr.: Reduzierung auf 10km/h, Bodenschwellen	? 14254,11377 14211,11229
@@ -3439,7 +3441,7 @@ Berliner Allee: entstehen hier noch Radstreifen?	?::projected 14754,17673 14673,
 # REMOVED (realisiert) --- #: osm_watch: way id="29052147" version="29"
 # REMOVED (realisiert) --- #: osm_watch: way id="351509721" version="7"
 #: osm_watch: way id="4685718" version="27"
-#: last_checked: 2021-05-13 vvv
+#: last_checked: 2021-05-17 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2021-09-30 vvv
 # REMOVED (realisiert) --- Palisadenstr.: Ausbau zur Fahrradstraße	? 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
@@ -3628,6 +3630,7 @@ Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9151 (Frage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9158 (Frage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9252 (Frage)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1085566.php (Absichtserklärung)
 #: priority: #C vvv
 #: also_indoor: traffic vvv
 #: last_checked: 2021-04-26 (abendblatt-berlin) vvv
@@ -3657,10 +3660,10 @@ Alt-Treptow, vor der Sternwarte: Planung einer Überquerungshilfe, evtl. eine Amp
 #: by: https://viz.berlin.de/2021/04/verkehrsvorschau_060421/ (bis Ende Mai 2021)
 #: by: https://viz.berlin.de/2021/03/neue-krugallee/
 #: note: laut rbb bis 11.6.2021
-#: source_id: 2147347048 (bis 11.6.2021)
+#: source_id: 2147347048 (bis 16.7.2021)
 #: last_checked: 2021-05-10
 #: check_frequency: 30d
-#: next_check: 2021-06-11
+#: next_check: 2021-07-16
 Alt-Treptow: Umgestaltung der Kreuzung Bulgarische Allee/Neue Krugallee, evtl. entsteht eine Radspur	?::inwork; 15591,8848 15452,9079
 # 
 # REMOVED --- #: XXX falls ja -> Sperrung in der Jürgen-Schumann-Allee permanent machen --- Schönefeld - BER: hier existiert wohl ein Radweg	? 18936,-1581 19273,-2026 19259,-2043 19182,-2075 19157,-2100 19158,-2135 19168,-2147 19262,-2151 19339,-2152 19417,-2122 19493,-2183 19514,-2241 19555,-2277 19596,-2280 19759,-2440 19866,-2607 19927,-2671 19940,-2711 20039,-2863
@@ -3742,7 +3745,7 @@ Invalidenstr.: Radstreifen (provisorische, dann geschützte) und Umbau von Ampela
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/s-bahnhof-greifswalder-strasse-bauarbeiten-fuer-umsteigemoeglichkeit-starten-ende-2020_a230359 (Fertigstellung voraussichtlich 2021)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/planungen-fuer-die-neugestaltung-der-strassenbahnhaltestelle-s-greifswalder-strasse-sind-schon-sehr-konkret_a253105 (Baubeginn Ende 2020)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/umbau-an-der-greifswalder-strasse-verzoegert-sich-weiter_a285928 (Fertigstellung 2024)
-#: last_checked: 2021-03-05
+#: last_checked: 2021-05-17
 #: next_check: 2024-03-01
 S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12709,15112 12681,15028
 # 
@@ -5846,7 +5849,7 @@ Goerdelerdamm: teilweise Verbreiterung des Radwegs	?::projected 5043,14671 4897,
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/schul-und-sportamt/downloads/0994-viii_schulcampus_thalmann-park.pdf
 #: by: https://abendblatt-berlin.de/2021/03/28/thaelmann-park-bezirksamt-will-ueber-schulanbau-aufklaeren/
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/anwohner-sammeln-unterschriften-gegen-halbierung-des-thaelmannparks_a308565
-#: last_checked: 2021-04-30 (bw)
+#: last_checked: 2021-05-17
 #: check_frequency: 30d
 Schule am Planetarium: Weg wird entfallen, neue Wege nördlich und südlich des Schulgeländes werden entstehen	?::projected 12208,15108 12103,15218
 # 
@@ -6837,6 +6840,16 @@ Waldstr.: während der Bauarbeiten zur neuen Anschlussstelle vermutlich gesperrt	
 #: by: https://www.berliner-woche.de/buckow/c-bauen/zwei-bieter-haben-zuschlag-fuer-ihre-projekte-auf-den-buckower-feldern-bekommen_a264814
 #: by: https://abendblatt-berlin.de/2020/05/15/neukoelln-baugrund-auf-buckower-feldern-vergeben/ (Baubeginn 2021)
 #: by: https://www.berliner-woche.de/buckow/c-bauen/informations-veranstaltung-zu-neubauprojekt_a287419
+#: by: https://www.berliner-woche.de/buckow/c-bauen/strassennamen-fuer-neues-viertel_a309435 (Straßennamen)
+#: XXX mögliche Straßennamen (laut bw):
+#: XXX * An den Buckower Feldern
+#: XXX * Gensweg
+#: XXX * An den Weiden
+#: XXX * Dyrekeweg
+#: XXX * In den Bauerngärten
+#: XXX sowie die Privatstraßen:
+#: XXX * Am Mühlanger
+#: XXX * Knyphausenweg
 #: last_checked: 2020-09-01 (mapillary)
 #: next_check: 2024-06-01
 Buckower Felder: neues Wohnviertel entsteht	?::projected 12539,1049 12637,1104 12797,1277 12918,1312 12960,1025 12605,846 12539,1049
