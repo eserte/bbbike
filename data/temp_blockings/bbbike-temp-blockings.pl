@@ -30281,11 +30281,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1574449032, # Gehweg mittlerweile wieder offen ---- undef, # XXX
-       text  => 'Voltairestr.: Fahrbahn und Gehwege können wegen Bauarbeiten komplett gesperrt sein',
+       until => undef, #
+       text  => 'Voltairestr.: Fahrbahn kann wegen Bauarbeiten gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED --- #: next_check_id: VOLTAIRE-2019 --- #: XXX ist das nur temporär wegen der Kranaufstellung oder dauerhaft? --- #: last_checked: 2019-11-20 --- #: check_frequency: 7d
+#: next_check_id: VOLTAIRE-2019
+#: osm_watch: way id="194962398" version="11"
+#: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2021-05-18
 	2::inwork 11329,12497 11209,12430
 EOF
      },
@@ -30870,7 +30874,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-17
+#: last_checked: 2021-05-18
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31101,10 +31105,11 @@ EOF
        dont_check_date => 1,
        text  => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vom 14.07.2020 12:12 Uhr bis 18.05.2021 17:00 Uhr, möglicherweise sogar bis Mai 2022',
        type  => 'handicap',
-       source_id => '2147346108', # bis 17.3.2021, mittlerweile inaktiv, dann wieder bis 18.5.2021
+       source_id => '2147346108', # bis 18.5.2021, mittlerweile inaktiv
        data  => <<EOF,
 #: note: laut Baustellenschild der Wasserbetriebe bis Mai 2022
 #: source_id: 2147346999 (Abschnitt zwischen Alsenstr. und Schöneberger Str., bis 16.4.2021) (inaktiv)
+#: add_fragezeichen: Wurden die Bauarbeiten mittlerweile beendet?
 #: also_indoor: traffic (H)
 #: last_checked: 2021-02-20 (mapillary)
 #: next_check: 2021-05-18
@@ -31371,24 +31376,24 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1621359724, # undef, # XXX
        text  => 'Sigismundstr. und Matthäikirchplatz: Bauarbeiten, Fahrbahn und Bürgersteig unter Umständen komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SIGISMUND-2020
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
-#: XXX wann sind die Bauarbeiten fertig? vvv
-#: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
-#: last_checked: 2021-04-19 vvv
+# REMOVED (für Radfahrer mittlerweile sogar explizit frei) --- #: XXX wann sind die Bauarbeiten fertig? vvv
+# REMOVED --- #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
+# REMOVED --- #: last_checked: 2021-04-19 vvv
 #: note: hier von Osten aus legaler gemeinsamer Rad- und Gehweg auf dem Bürgersteig, mit kurzer asphaltierter Rampe, von Westen aus verboten für Fahrzeuge aller Art; mittlerweile existiert kein Gehweg mehr
 #: osm_watch: way id="16096289" version="19"
 	2::inwork 8031,11249 7934,11275 7897,11287
 #: osm_watch: way id="4597351" version="21"
 	2::inwork 7934,11275 7965,11380
-#: last_checked ^^^
-#: XXX ^^^
-#: XXX ^^^
+# REMOVED --- #: last_checked ^^^
+# REMOVED --- #: XXX ^^^
+# REMOVED --- #: XXX ^^^
 EOF
      },
      { from  => undef, # 
@@ -31955,13 +31960,13 @@ EOF
 EOF
      },
      { from  => 1610838000, # 2021-01-17 00:00
-       until => $isodate2epoch->("2021-05-18 17:00:00"), # 1618264800, # 2021-04-13 00:00
-       text  => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 18.5.2021',
+       until => $isodate2epoch->("2021-05-31 17:00:00"), # 1618264800, # 2021-04-13 00:00
+       text  => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 31.5.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
        data  => <<EOF,
 #: next_check_id: BOHNSDORFERKREISEL-2017
-#: source_id: 2147346807 (bis 18.5.2021)
+#: source_id: 2147346807 (bis 31.5.2021)
 #: note: laut rbbtext kann der Radverkehr passieren
 #: by: https://viz.berlin.de/2021/01/bohnsdorfer-kreisel/ (keine Einschränkungen für Fußgänger)
 #: by: https://twitter.com/VIZ_Berlin/status/1353990207574581249 (Situation mit Bildern)
@@ -31972,12 +31977,12 @@ EOF
 EOF
      },
      { from  => 1610431200, # 2021-01-12 07:00
-       until => 1620831600, # 2021-05-12 17:00
-       text  => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 12.05.2021 17:00 Uhr ',
+       until => $isodate2epoch->("2021-06-30 17:00:00"), # 1620831600, # 2021-05-12 17:00
+       text  => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 30.06.2021 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346788',
        data  => <<EOF,
-#: note: bei rbbtext sogar bis 18.5.2021
+#: note: bei rbb nur bis 18.5.2021
 #: osm_watch: way id="683770241" version="6"
 	q4::inwork 19564,1871 19743,1804
 EOF
@@ -32581,6 +32586,24 @@ EOF
        data  => <<EOF,
 #: XXX check!
 	q4::inwork; 15256,11884 15300,11965
+EOF
+     },
+     { from  => 1621362031, # 2021-05-18 20:20
+       until => 1631743199, # 2021-09-15 23:59
+       text  => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. temporäre Spielstraße sonn- und feiertags zwischen 13 und 18 Uhr, bis Mitte September 2021',
+       type  => 'handicap',
+       source_id => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
+       data  => <<EOF,
+	q4::temp::play 11917,9663 12074,9689
+EOF
+     },
+     { from  => 1621362123, # 2021-05-18 20:22
+       until => 1631743199, # 2021-09-15 23:59
+       text  => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee temporäre Spielstraße sonn- und feiertags zwischen 13 und 18 Uhr, bis Mitte September 2021',
+       type  => 'handicap',
+       source_id => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
+       data  => <<EOF,
+	q4::temp::play 13038,8394 12856,8344
 EOF
      },
     );

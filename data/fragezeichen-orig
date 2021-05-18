@@ -41,7 +41,7 @@ Berliner Str. (Wilmersdorf): wird es hier Radspuren geben?	? 3952,8980 4006,8967
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Entwurfsplanung)
 #: XXX Bauarbeiten zwischen Bergmannstr. und Gneisenaustr. (Richtung Norden) haben begonnen
-#: last_checked: 2021-05-14
+#: last_checked: 2021-05-18
 #: check_frequency: 90d
 #: next_check: 2021-12-31
 # REMOVED (hier fertig) --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350
@@ -1418,8 +1418,8 @@ Dovestr.: Radstreifen geplant	?::projected 4749,12689 4648,12559
 #: by: http://www.abendblatt-berlin.de/2018/10/15/brandenburgische-strasse-soll-fahrradfreundlicher-werden/
 #: osm_watch: way id="26071050" version="13"
 #: osm_watch: way id="26071046" version="13"
-#: osm_watch: way id="26071048" version="11"
-#: osm_watch: way id="26474540" version="10"
+#: osm_watch: way id="26071048" version="13"
+#: osm_watch: way id="26474540" version="12"
 #: source_id: 2147341856 (bis Ende Februar 2020)
 #: last_checked: 2021-03-20
 #: check_frequency: 90d
@@ -2028,14 +2028,14 @@ Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fuﬂg‰ngerbereiche	?::inwork 79
 #: by: http://www.infravelo.de/projekt/oranienburger-strasse-2/ (bis 2. Quartal 2021)
 #: by: https://viz.berlin.de/2021/04/wilhelmsruher-damm-sperrung/ (Busumleitungen ab 12.4.2021 f¸r vier Wochen)
 #: by: https://www.berliner-woche.de/wittenau/c-verkehr/geaenderte-linienfuehrung_a306561
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1086296.php (fertig)
 #: XXX laut fritz bis Januar 2020
 #: source_id: 2147346022 (bis Ende 2020; inaktiv)
 #: source_id: 2147344156 (bis 31.3.2021; inaktiv)
 #: source_id: 2147345583 (bis 12.4.2021; inaktiv)
-#: source_id: 2147347060 (bis 18.5.2021)
+#: source_id: 2147347060 (bis 18.5.2021; inaktiv)
 #: last_checked: 2021-04-11
 #: check_frequency: 90d
-# REMOVED --- #: next_check: 2021-06-01
 #: next_check: 2021-05-18
 Oranienburger Str.: Bauarbeiten zwischen Gˆschenplatz und Techowpromenade, vermutlich werden hier auch Radstreifen angelegt	?::projected 5430,20685 5421,20748 5410,20822 5401,20882 5395,20915 5379,21016 5370,21066 5356,21146 5349,21198 5343,21250
 # 
@@ -2217,7 +2217,7 @@ Hennigsdorfer Str.: erste Markierungsarbeiten laufen	?::inwork -2071,23850 -2051
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_27_3957_4116_online.pdf (Benennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf (Grundst¸cksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_05_0549_0672_online.pdf (Grundst¸cksnummerierungen)
-#: osm_watch: way id="162120177" version="13"
+#: osm_watch: way id="162120177" version="14"
 #: osm_watch: node id="6751063701" version="2"
 #: XXX "Rewatex"-Gel‰nde
 #: XXX eine Straﬂe kˆnnte nach Henriette Lustig ("Mutter Lustig") benannt werden
@@ -2929,7 +2929,7 @@ Auguste-Viktoria-Str./Berkaer Str.: wird hier ein Zebrastreifen entstehen?	?::pr
 #: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: check_frequency: 120d
 Wiesbadener Str./Sodener Str.: Zebrastreifen geplant	?::projected 3677,7363 3703,7324 3744,7274
-#: last_checked: 2021-04-27
+#: last_checked: 2021-05-18
 #: check_frequency: 90d
 Lausitzer/Reichenberger Str.: zwei Zebrastreifen geplant	?::projected 12032,10144 12048,10097 12073,10050
 #: last_checked: 2021-05-14
@@ -3305,6 +3305,13 @@ Isenburger Weg: Neubau der Straﬂe geplant	?::projected -7819,15342 -7867,15185 -
 # - Fragen nach genauen Routenverl‰ufen
 # - XXX_prog- und XXX_indoor-Eintr‰ge
 # 
+#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/bauarbeiten-auf-der-hauptstrasse_a310431 (L‰nge der Baustelle 300m, Dauer ein halbes Jahr, kein Startdatum)
+#: source_id: 2147347198 (Markierungsarbeiten bis 20.5.2021)
+#: source_id: 2147347199 (bis 31.1.2022)
+#: last_checked: 2021-05-18 (Meldung in der bw)
+#: next_check: 2021-05-21
+Hauptstr.: geplante Bauarbeiten der Wasserbetriebe, die ˆstliche Fahrbahn wird gesperrt, wird es f¸r Radfahrer Beeintr‰chtigungen geben?	?::projected 7268,8960 7308,9041 7354,9135 7363,9152 7382,9187 7388,9199 7471,9360
+# 
 #: XXX Kantstraﬂe (Charlottenburg) Richtung Budapester Straﬂe zwischen Joahimsthaler Straﬂe und Budapesester Straﬂe: Fernw‰rmebauarbeiten, Fahrtrichtung gesperrt, vom 06.05.2021 09:00 Uhr bis 29.10.2021 17:00 Uhr
 #: source_id: 2147347169
 Kantstr.: sind Radfahrer von der Sperrung betroffen?	?; 5488,10978 5613,10963 5652,11004
@@ -3464,7 +3471,7 @@ Alexanderufer: Fahrradstraﬂe soll entstehen	?::projected 8315,13042 8315,13181 8
 # REMOVED (weitgehend markiert, nur die letzten Meter am Groﬂ-Berliner Damm fehlen) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf (‹bergabe der Verkehrsfl‰chen im Oktober 2020) --- #: XXX wann sind sie fertig? (bei osm bereits eingetragen) --- #: last_checked: 2020-09-04 --- #: next_check: 2020-10-01 --- Benno-Kˆnig-Str.: Radspuren werden markiert	?::inwork 18596,4517 18434,4363 18374,4307
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf
-#: last_checked: 2021-05-13 vvv
+#: last_checked: 2021-05-18 vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
 Bodestr.: in Zukunft nur f¸r Rad- und Fuﬂverkehr offen	? 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
 Am Lustgarten: in Zukunft nur f¸r Rad- und Fuﬂverkehr offen	? 10054,12699 10094,12635
@@ -3511,7 +3518,7 @@ Gartenstadt Tempelhof: Radwegverbindung geplant	?::projected 7949,7607 8188,7610
 #: by: http://www.infravelo.de/projekt/fahrradstrassenverbindung-von-suedstern-bis-mariannenplatz-2/ (Fraenkelufer wird erw‰hnt; 2. Quartal 2021 - 4. Quartal 2021)
 # REMOVED --- #: XXX die vorhandenen Radverkehrsanlagen (Radspuren) sollen Vorrang auf der Karte haben
 #: XXX hier ist noch nichts passiert, und es ist auch zweifelhaft, ob man die verkehrsberuhigte Zone einfach so ersetzen kann
-#: last_checked: 2021-04-28
+#: last_checked: 2021-05-18
 #: check_frequency: 60d
 Fraenkelufer: Fahrradstraﬂe entsteht	? 11177,9935 11199,9993 11310,10021 11464,10102 11512,10105
 # REMOVED (eingetragen) --- Kˆrtestr., Grimmstr.: Fahrradstraﬂe entsteht	? 10713,9260 10749,9342 10905,9472 11004,9554 11055,9539 11075,9576 11110,9661 11141,9732 11186,9861 11175,9882 11164,9885 11136,9851 11089,9751 11072,9711 11042,9642 11023,9597 11004,9554
@@ -4178,12 +4185,12 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: source_id: 2147346783 (Leitungsarbeiten bis 12.2.2021) (inaktiv)
 #: osm_watch: way id="4588059" version="24"
 #: priority: #C
-#: last_checked: 2021-05-14 vvv
+#: last_checked: 2021-05-18 vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2021-05-15
 # REMOVED (-> gesperrt_car-orig) --- Bergmannstr.: ‰ndert sich durch den Testlauf f¸r die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
-Nostitzstr.: hier auch nur Anlieger frei?	? 9552,9602 9524,9426
-Solmsstr.: hier auch nur Anlieger frei?	? 9676,9564 9650,9404
+# REMOVED (ja) --- Nostitzstr.: hier auch nur Anlieger frei?	? 9552,9602 9524,9426
+# REMOVED (ja) --- Solmsstr.: hier auch nur Anlieger frei?	? 9676,9564 9650,9404
 Riemannstr.: hier auch nur Anlieger frei?	? 9767,9386 9650,9404
 Am Tempelhofer Berg: hier auch nur Anlieger frei?	? 9295,9047 9298,9112
 Kopischstr.: hier auch nur Anlieger frei?	? 9459,9019 9477,9113
@@ -4194,7 +4201,7 @@ Arndtstr.: hier auch nur Anlieger frei?	? 9795,9162 9674,9179
 #: last_checked ^^^
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084639.php
-#: last_checked: 2021-05-14
+#: last_checked: 2021-05-18
 #: check_frequency: 7d
 Bergmannstr.: Verl‰ngerung der Fahrradstraﬂe	? 10564,9292 10547,9233 10705,9234
 # 
@@ -4213,7 +4220,7 @@ Bergmannstr.: Verl‰ngerung der Fahrradstraﬂe	? 10564,9292 10547,9233 10705,9234
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/bezirksamt-weitet-fussgaengerzone-auf-dem-lausitzer-platz-aus_a308706 (Umgestaltung im Mai/Juni 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9981 (Einwohnerfrage)
 #: osm_watch: way id="128266207" version="13"
-#: last_checked: 2021-05-14 vvv
+#: last_checked: 2021-05-18 vvv
 Lausitzer Platz: entsteht hier eine Fuﬂg‰ngerzone?	? 12212,10440 12197,10494 12172,10585
 #: osm_watch: way id="188865510" version="8"
 Lausitzer Platz: entsteht hier eine Fuﬂg‰ngerzone?	? 12274,10612 12328,10442
@@ -5147,7 +5154,7 @@ Conrad-Blenkle-Str.: s¸dliche der Rudi-Arndt-Str. soll ein Zebrastreifen entsteh
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2021-05-14
+#: last_checked: 2021-05-18
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -5795,7 +5802,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::projected 4342,9301 4417,93
 # 
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: XXX wo genau?
-#: last_checked: 2021-05-14
+#: last_checked: 2021-05-18
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -6071,7 +6078,8 @@ Planstraﬂen im Marienhain: Straﬂennamen? Qualit‰t?	? 22771,3151 22476,3118 22485
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-50a/index.shtml
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-50a/download/01_PLANZEICHNUNG.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6763 (Forderung nach einem Verkehrsgutachten)
-#: XXX Bebauungsplan 9-50a; auﬂerdem wird eine Gru¸nanlage am Ufer und weitere Durchwegungen entstehen
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1086032.php
+#: XXX Bebauungsplan 9-50a; auﬂerdem wird eine Gr¸nanlage mit Weg am Ufer und weitere Durchwegungen entstehen
 #: last_checked: 2020-09-23
 #: check_frequency: 720d
 Planstraﬂe am ehemaligen Funkwerk: Straﬂennamen? Qualit‰t? Genaue Lage?	? 22540,3865 22560,3587 22673,3602

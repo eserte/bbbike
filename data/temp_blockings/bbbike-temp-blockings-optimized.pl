@@ -2651,7 +2651,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: VOLTAIRE-2019
+#: osm_watch: way id="194962398" version="11"
+#: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2021-05-18
+	2::inwork 11329,12497 11209,12430
+',
+         'from' => undef,
+         'id' => 3189,
+         'text' => 'Voltairestr.: Fahrbahn kann wegen Bauarbeiten gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -2749,7 +2762,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-17
+#: last_checked: 2021-05-18
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2820,6 +2833,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Mai 2022
 #: source_id: 2147346999 (Abschnitt zwischen Alsenstr. und Schöneberger Str., bis 16.4.2021) (inaktiv)
+#: add_fragezeichen: Wurden die Bauarbeiten mittlerweile beendet?
 #: also_indoor: traffic (H)
 #: last_checked: 2021-02-20 (mapillary)
 #: next_check: 2021-05-18
@@ -2923,28 +2937,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: SIGISMUND-2020
-#: next_check_id: MUSEUMDERMODERNE-2021
-#: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
-#: XXX wann sind die Bauarbeiten fertig? vvv
-#: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
-#: last_checked: 2021-04-19 vvv
-#: note: hier von Osten aus legaler gemeinsamer Rad- und Gehweg auf dem Bürgersteig, mit kurzer asphaltierter Rampe, von Westen aus verboten für Fahrzeuge aller Art; mittlerweile existiert kein Gehweg mehr
-#: osm_watch: way id="16096289" version="19"
-	2::inwork 8031,11249 7934,11275 7897,11287
-#: osm_watch: way id="4597351" version="21"
-	2::inwork 7934,11275 7965,11380
-#: last_checked ^^^
-#: XXX ^^^
-#: XXX ^^^
-',
-         'from' => undef,
-         'id' => 3277,
-         'text' => 'Sigismundstr. und Matthäikirchplatz: Bauarbeiten, Fahrbahn und Bürgersteig unter Umständen komplett gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3122,7 +3115,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: BOHNSDORFERKREISEL-2017
-#: source_id: 2147346807 (bis 18.5.2021)
+#: source_id: 2147346807 (bis 31.5.2021)
 #: note: laut rbbtext kann der Radverkehr passieren
 #: by: https://viz.berlin.de/2021/01/bohnsdorfer-kreisel/ (keine Einschränkungen für Fußgänger)
 #: by: https://twitter.com/VIZ_Berlin/status/1353990207574581249 (Situation mit Bildern)
@@ -3134,11 +3127,22 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1610838000,
          'id' => 3321,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
-         'text' => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 18.5.2021',
+         'text' => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 31.5.2021',
          'type' => 'handicap',
-         'until' => 1621350000
+         'until' => 1622473200
        },
-       undef,
+       {
+         'data' => '#: note: bei rbb nur bis 18.5.2021
+#: osm_watch: way id="683770241" version="6"
+	q4::inwork 19564,1871 19743,1804
+',
+         'from' => 1610431200,
+         'id' => 3322,
+         'source_id' => '2147346788',
+         'text' => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 30.06.2021 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1625065200
+       },
        undef,
        {
          'data' => '#: last_checked: 2021-04-11
@@ -3605,6 +3609,26 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Gürtelstr.: Brückenbauarbeiten, Radfahrer Richtung Frankfurter Allee müssen absteigen und schieben, vom 17.05.2021 08:00 Uhr bis 08.06.2021 18:00 Uhr ',
          'type' => 'handicap',
          'until' => 1623168000
+       },
+       {
+         'data' => '	q4::temp::play 11917,9663 12074,9689
+',
+         'from' => 1621362031,
+         'id' => 3376,
+         'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
+         'text' => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. temporäre Spielstraße sonn- und feiertags zwischen 13 und 18 Uhr, bis Mitte September 2021',
+         'type' => 'handicap',
+         'until' => 1631743199
+       },
+       {
+         'data' => '	q4::temp::play 13038,8394 12856,8344
+',
+         'from' => 1621362123,
+         'id' => 3377,
+         'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
+         'text' => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee temporäre Spielstraße sonn- und feiertags zwischen 13 und 18 Uhr, bis Mitte September 2021',
+         'type' => 'handicap',
+         'until' => 1631743199
        }
      
 );

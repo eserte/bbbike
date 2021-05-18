@@ -219,7 +219,7 @@ Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2021-04-20 vvv
+#: last_checked: 2021-05-18 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -241,7 +241,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic
-#: last_checked: 2021-04-24 (daf)
+#: last_checked: 2021-05-18
 Dircksenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 11209,12430 11156,12581
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
@@ -256,7 +256,7 @@ Dircksenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 11209,12430 11156,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-04-27 (mapillary)
+#: last_checked: 2021-05-18
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2021-04-20
@@ -383,7 +383,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2021-05-13 vvv
+#: last_checked: 2021-05-18 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -559,6 +559,12 @@ Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwo
 # REMOVED --- #: XXX was ändert sich nach den Bauarbeiten? Radstreifen? -> zumindest gibt es einige Aufpflasterungen --- #: last_checked: 2015-06-08 --- #: check_frequency: 30d --- Siemensstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Geh+Radweg	q2 5708,14077 5746,14090 5786,14106 5808,14114 5956,14168
 # 
 ### Tiergarten ###
+# 
+#: next_check_id: MUSEUMDERMODERNE-2021
+#: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
+#: last_checked: 2021-05-18
+#: check_frequency: 90d
+Matthäikirchplatz: wegen Bauarbeiten am Museum der Moderne mögliche Behinderungen	q3::inwork 7934,11275 7965,11380
 # 
 # REMOVED --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629697&postcount=1218 --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Verschwinden die Radspuren nach den Bauarbeiten? --- #: last_checked: 2019-08-04
 # REMOVED (hier nicht mehr) --- Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q4+::inwork 8206,12757 8120,12756

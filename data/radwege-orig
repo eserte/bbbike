@@ -213,7 +213,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8542,11502 8479,11493 8
 #: XXX: temporäre Radspur
 #: osm_watch: way id="305483806" version="8"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2021-04-19
+#: last_checked: 2021-05-18
 #: check_frequency: 180d
 #: next_check: 2026-01-01
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -643,7 +643,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2021-05-06 vvv
+#: last_checked: 2021-05-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
@@ -1477,7 +1477,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: osm_watch: way id="882672444" version="2"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2021-04-13 vvv
+#: last_checked: 2021-05-18 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-03-11 vvv
 #: next_check: 2023-06-30 vvv
@@ -1498,7 +1498,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 #: by: https://pbs.twimg.com/media/EWHwSfnXQAAaaO9?format=jpg&name=large
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: XXX temporäre Radwegführung
-#: last_checked: 2021-04-20
+#: last_checked: 2021-05-18
 #: check_frequency: 60d
 temporäre Führung als Bürgersteigradweg	RW1; 10878,12560 10954,12635
 # wieder herstellen:	RW4; 10878,12560 10954,12635
@@ -1955,16 +1955,17 @@ neu asphaltiert	RW1; 5523,19746 5495,19571 5486,19515
 #: next_check_id: ORANIENBURGERNORD-2018
 #: XXX vermutlich nur provisorisch während der Bauarbeiten vvv
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksamt/bauen-bildung-und-kultur/dokumente/uebersicht-der-radwege-in-reinickendorf.pdf (im Bau, Radfahrstreifen oder Radwege)
+#: add_fragezeichen: Existieren nun durchgängig Radspuren in der Oranienburger Straße?
 #: last_checked: 2021-04-26 (mapillary) vvv
 #: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2020-01-31 vvv
+#: next_check: 2021-05-18 vvv
 	RW0; 5430,20685 5421,20748 5410,20822 5401,20882 5395,20915
 	RW0; 5379,21016 5370,21066 5356,21146 5349,21198 5343,21250
 Gehweg für Radfahrer frei	RW1; 5421,20748 5430,20685
 	RW0; 5395,20915 5379,21016
 	RW0; 5379,21016 5395,20915 5401,20882
+#: next_check ^^^
 #: check_frequency ^^^
-# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -1980,6 +1981,7 @@ neu asphaltiert	RW1; 5136,21738 5210,21636 5311,21495
 #: XXX Radspuren existieren, sind aber per Gelbmarkierung ungültig gemacht
 #: last_checked: 2021-04-26 (mapillary)
 #: check_frequency: 90d
+#: next_check: 2021-05-18
 Gehweg für Radfahrer frei	RW1; 5333,21332 5341,21266 5343,21250
 	RW4; 5333,21332 5320,21432 5311,21495 5210,21636 5136,21738
 # REMOVED (nicht mehr?) --- #: next_check_id: ORANIENBURGER-2018 --- #: XXX provisorisch während der Bauarbeiten --- #: last_checked: 2019-03-23 --- #: next_check: 2019-04-30 --- Gehweg für Radfahrer frei	RW1; 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250
@@ -2022,7 +2024,8 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5;RW5 9492,11209 9341,11186
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 9492,11209
 	RW3;RW3 9196,11165 9155,11283 9058,11564 9000,11727 8969,11814 8965,11825 8901,12008 8861,12125
 #: by: https://twitter.com/SenUVKBerlin/status/1392538200837660678 (geschützte Radstreifen)
-#: last_checked: 2021-05-14
+#: by: https://twitter.com/VIZ_Berlin/status/1394639658357870600
+#: last_checked: 2021-05-18 (viz)
 #: check_frequency: 7d
 	RW3;RW3 11159,10769 11220,10744 11275,10723
 	RW4;RW4 8804,12280 8775,12457
@@ -2128,7 +2131,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Frühjahr 2021)
 #: source_id: 2147346610
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-05-13 vvv
+#: last_checked: 2021-05-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-09-30 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
@@ -3134,7 +3137,7 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: osm_watch: way id="4068148" version="24"
 #: osm_watch: way id="27942935" version="18"
 #: osm_watch: way id="11663312" version="28"
-#: osm_watch: way id="4689343" version="23"
+#: osm_watch: way id="4689343" version="25"
 #: source_id: 2147341322 (inaktiv)
 #: source_id: 2147342307 (inaktiv)
 #: source_id: 2147342363 (bis 31.5.2021)
@@ -5301,7 +5304,7 @@ Verbundsteinpflasterradweg	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by ^^^
 # 
 #: next_check_id: MITTEL-2019
-#: last_checked: 2021-04-20
+#: last_checked: 2021-05-18
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben
 	RW0; 9141,12320 9131,12438 9121,12514
 	RW4; 9131,12438 9141,12320
@@ -6811,8 +6814,8 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/geschuetzter-radweg-entsteht_a307845
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
-#: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2021-05-14 vvv
+#: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
+#: last_checked: 2021-05-18 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2021-06-30 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -6820,15 +6823,18 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: osm_watch: way id="30184955" version="22"
 provisorisch geschützter Radstreifen	RW4;RW4 11393,10390 11512,10105
 #: osm_watch: way id="30184937" version="27"
-provisorisch geschützter Radstreifen	RW4; 11543,10015 11623,9841 11673,9720 11710,9628 11745,9541 11757,9509 11785,9437 11803,9390 11888,9189
+provisorisch geschützter Radstreifen	RW4; 11673,9720 11710,9628 11745,9541 11757,9509 11785,9437 11803,9390 11888,9189
 #: osm_watch: way id="141233527" version="21"
 provisorisch geschützter Radstreifen	RW4; 11745,9541 11710,9628 11673,9720 11623,9841 11543,10015
 provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
-#: note ^^^
+# 
+#: note: Kottbusser Damm/Str. Richtung Süden
 Radspur hinter parkenden Autos	RW4; 11888,9189 11803,9390 11785,9437 11757,9509 11745,9541
+#: note: Kottbusser Damm/Str. Richtung Norden
+Radspur hinter parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720
 # 
 #: next_check_id: POPUPRADWEGE-2020
 #: by: https://api.fixmyberlin.de/api/projects/380 (Schöneberger Ufer)
