@@ -32190,20 +32190,20 @@ EOF
 EOF
      },
      { from  => 1615676400, # 2021-03-14 00:00
-       until => $isodate2epoch->("2021-05-28 18:00:00"), # 1621115999, # 2021-05-15 23:59
-       text  => 'Pilgramer Str.: Sperrung der Fahrbahn, Sperrung des westlichen Gehwegs ab Theodorpark bis Straße 48, östlicher Gehweg ist noch offen, ab 15. März 2021 bis ca. 15. Mai 2021, möglicherweise sogar bis 28.5.2021',
+       until => $isodate2epoch->("2021-06-30 18:00:00"), # 1621115999, # 2021-05-15 23:59
+       text  => 'Pilgramer Str.: Sperrung der Fahrbahn, Sperrung des westlichen Gehwegs ab Theodorpark bis Straße 48, östlicher Gehweg ist noch offen, ab 15. März 2021 bis 30.6.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1063839.php',
        data  => <<EOF,
 #: next_check_id: PILGRAMER-2019
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381 (mittlerweile "bis auf Weiteres")
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-zwei-monate-beidseitig-gesperrt_a304101 (Fertigstellung im Mai 2021)
-#: source_id: 2147346982 (inaktiv)
+#: source_id: 2147346982
 #: also_indoor: traffic (H)
 #: XXX wie sehr sind Radfahrer betroffen?
 #: last_checked: 2021-04-17
-#: check_frequency: 32d
-#: next_check: 2021-05-28
+# REMOVED --- #: check_frequency: 32d
+#: next_check: 2021-06-30
 	q4::inwork 25150,10562 25149,10695 25149,10731 25148,10769 25145,10841
 EOF
      },
@@ -32468,6 +32468,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1083540.php',
        data  => <<EOF,
 #: next_check_id: JACOBSENWEG-2021
+#: by: https://www.berliner-woche.de/borsigwalde/c-verkehr/neue-fahrbahn-auf-jacobsenweg_a309825
 #: also_indoor: traffic
 	q4::inwork; 2821,19559 2909,19485 2988,19445 3203,19340 3232,19325 3324,19277
 EOF
@@ -32477,9 +32478,10 @@ EOF
        text  => 'Archibaldweg: Fahrbahn gesperrt, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: ARCHIBALDWEG-2021
 #: priority: #B
 #: also_indoor: traffic (G)
-#: last_checked: 2021-05-09
+#: last_checked: 2021-05-19
 #: check_frequency: 14d
 	q4::inwork 15870,10938 15674,10851
 EOF

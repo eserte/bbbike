@@ -3267,6 +3267,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/an-der-wendenschlossstrasse-wird-bis-april-gebaut_a246232
 #: by: https://unternehmen.bvg.de/pressemitteilung/neues-gleis-im-koepenicker-kreis/ (Gleisarbeiten bis 11. Oktober 2021, außerdem werden Haltestellen ausgebaut (Kaps?), vielleicht bis dahin keine Grünmarkierung)
+#: source_id: 2147347204 (Gleisbauarbeiten bis 15.10.2021)
 #: priority: #D vvv
 #: last_checked: 2021-04-03 vvv
 #: check_frequency: 90d vvv
@@ -3712,9 +3713,9 @@ Grünmarkierung	RW3; 4574,11587 4558,11366 4546,11217 4532,11042 4521,10850 4513,
 Grünmarkierung	RW3; 4503,10497 4513,10702 4521,10850
 #: XXX Grünmarkierung und Verbreiterung der Radspur, in einem Teilabschnitt noch nicht fertig (wegen einer Hochbaustelle?)
 #: by: https://api.fixmyberlin.de/api/projects/400 ("planning")
-#: by: http://www.infravelo.de/projekt/schlueterstrasse/ (3. Quartal 2020 - 2. Quartal 2021) (Einschränkungen bis Anfang Mai 2021)
+#: by: http://www.infravelo.de/projekt/schlueterstrasse/ (3. Quartal 2020 - 2. Quartal 2021) (verbleibender Abschnitt voraussichtlich bis Juli 2021)
 #: last_checked: 2021-05-01
-# REMOVED (nicht realisiert) --- #: next_check: 2021-05-01
+#: next_check: 2021-07-15
 	RW3; 4521,10850 4532,11042 4546,11217
 Grünmarkierung	RW3; 4546,11217 4558,11366 4574,11587
 #: confirmed_by ^^^
@@ -6734,11 +6735,12 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: by: http://www.infravelo.de/projekt/hallesches-ufer/ (Verstetigung, 1. Quartal 2020 - 4. Quartal 2020)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1065698.php (Bauarbeiten ab 22. März 2021 bis Ende Mai 2021)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-wird-verstetigt_a304893
-#: source_id: 2147346996 (bis 21.5.2021)
+#: source_id: 2147346996 (bis 23.6.2021)
 #: osm_watch: way id="4401920" version="50"
 #: confirmed_by: srt
 #: last_checked: 2021-05-06
-#: next_check: 2021-05-21
+#: check_frequency: 30d
+#: next_check: 2021-06-23
 provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9158,10342 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
 # 
 #: note: Spielstraßenschild am südlichen Ende
@@ -6852,8 +6854,8 @@ Radspur hinter parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720
 #: source_id: 2147346996 (bis 21.5.2021)
 #: osm_watch: way id="34057952" version="35"
 #: last_checked: 2021-05-14 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2021-05-21 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2021-06-23 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8810,10305 9146,10284 9368,10211 9416,10196
 #: osm_watch: way id="26472938" version="28"
 provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 9687,10180 9825,10206 9865,10227
@@ -7015,9 +7017,13 @@ provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16)
 #: note: mit Gelbmarkierung
 #: last_checked: 2021-05-06 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2021-12-31 vvv
 provisorische Radspur	RW3; 8739,6701 8653,6781 8496,6919
 provisorische Radspur	RW4; 8496,6919 8653,6781
 provisorische Radspur	RW3; 8653,6781 8739,6701
+#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 Busspur ist immer gültig	RW5; 8414,6995 8319,7084
 # 

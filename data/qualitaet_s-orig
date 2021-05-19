@@ -424,8 +424,13 @@ Ackerstr.: Kopfsteinpflaster	Q2 9375,14419 9279,14495 9197,14562 9048,14681 8953
 Ackerstr.: Kopfsteinpflaster	Q2- 9804,14071 9750,14132 9627,14229
 Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 9224,14169 9383,13986 9514,13826 9535,13801 9670,13637
 Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
+#: by: http://www.infravelo.de/projekt/gartenstrasse-und-gerichtstrasse-2/ (2. Quartal 2022 - 4. Quartal 2022)
+#: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
+#: next_check: 2022-12-31 vvv
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
+#: next_check ^^^
+#: XXX ^^^
 # REMOVED (nicht mehr) --- Liesenstr.: Kopfsteinpflaster, OK	Q1 8671,14919 8653,14899
 Am Kupfergraben: teilweise schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 9533,12925 9618,12907 9654,12882
 Am Kupfergraben: Asphalt	Q0 9654,12882 9754,12775 9815,12705 9870,12657
@@ -1071,7 +1076,8 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Waldweg	Q1- 878,6651 818,6616 775,
 Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster, daneben wassergebundene Decke	Q1 698,6592 663,6575 546,6583 369,6594 340,6598
 Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218,6571
 #: by: https://api.fixmyberlin.de/api/projects/334 (war früher fälschlicherweise zur Bismarckstr. in Steglitz zugeordnet)
-#: by: http://www.infravelo.de/projekt/bismarckstrasse/ (Asphaltierung, in Planung, 4. Quartal 2024 - 4. Quartal 2025)
+#: by: http://www.infravelo.de/projekt/bismarckstrasse/ (ursprünglicher Link) (Asphaltierung, in Planung, 4. Quartal 2024 - 4. Quartal 2025)
+#: by: http://www.infravelo.de/projekt/bismarckstrasse-2/
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
 #: osm_watch: way id="4810830" version="31"
 #: last_checked: 2021-04-28
@@ -6659,6 +6665,7 @@ Sommerfelder Str.: schlechtes Kopfsteinpflaster	Q3 3222,19383 3243,19407 3291,19
 Sommerfelder Str.: Beton	Q1 3232,19325 3253,19379 3305,19419
 #: next_check_id: JACOBSENWEG-2021
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1083540.php (Fahrbahnerneuerung, bis ca. Ende Juli 2021)
+#: by: https://www.berliner-woche.de/borsigwalde/c-verkehr/neue-fahrbahn-auf-jacobsenweg_a309825
 #: also_indoor: traffic
 #: XXX wird die Qualität nach den Bauarbeiten besser sein?
 #: next_check: 2021-07-31

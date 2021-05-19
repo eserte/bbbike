@@ -3240,20 +3240,20 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: PILGRAMER-2019
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381 (mittlerweile "bis auf Weiteres")
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-zwei-monate-beidseitig-gesperrt_a304101 (Fertigstellung im Mai 2021)
-#: source_id: 2147346982 (inaktiv)
+#: source_id: 2147346982
 #: also_indoor: traffic (H)
 #: XXX wie sehr sind Radfahrer betroffen?
 #: last_checked: 2021-04-17
-#: check_frequency: 32d
-#: next_check: 2021-05-28
+# REMOVED --- #: check_frequency: 32d
+#: next_check: 2021-06-30
 	q4::inwork 25150,10562 25149,10695 25149,10731 25148,10769 25145,10841
 ',
          'from' => 1615676400,
          'id' => 3342,
          'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1063839.php',
-         'text' => 'Pilgramer Str.: Sperrung der Fahrbahn, Sperrung des westlichen Gehwegs ab Theodorpark bis Straße 48, östlicher Gehweg ist noch offen, ab 15. März 2021 bis ca. 15. Mai 2021, möglicherweise sogar bis 28.5.2021',
+         'text' => 'Pilgramer Str.: Sperrung der Fahrbahn, Sperrung des westlichen Gehwegs ab Theodorpark bis Straße 48, östlicher Gehweg ist noch offen, ab 15. März 2021 bis 30.6.2021',
          'type' => 'handicap',
-         'until' => 1622217600
+         'until' => 1625068800
        },
        {
          'data' => '#: also_indoor: traffic vvv
@@ -3474,6 +3474,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: JACOBSENWEG-2021
+#: by: https://www.berliner-woche.de/borsigwalde/c-verkehr/neue-fahrbahn-auf-jacobsenweg_a309825
 #: also_indoor: traffic
 	q4::inwork; 2821,19559 2909,19485 2988,19445 3203,19340 3232,19325 3324,19277
 ',
@@ -3485,9 +3486,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1627768799
        },
        {
-         'data' => '#: priority: #B
+         'data' => '#: next_check_id: ARCHIBALDWEG-2021
+#: priority: #B
 #: also_indoor: traffic (G)
-#: last_checked: 2021-05-09
+#: last_checked: 2021-05-19
 #: check_frequency: 14d
 	q4::inwork 15870,10938 15674,10851
 ',
