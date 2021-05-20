@@ -748,8 +748,10 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 #: next_check_id: RHINSTRASSENBRUECKE-2018
 #: last_checked: 2021-05-03 vvv
 #: check_frequency: 30d vvv
+#: next_check: 2021-05-31 vvv
 Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig	q2::inwork; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123
 Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig, langer Umweg an der Seddiner Str.	q3::inwork; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -3179,7 +3181,8 @@ Steinrückweg: möglicher Bordstein	q1 4257,6856 4293,6719
 Gedonstr.: Bordsteine, parkende Autos, Fußgänger	q4 7915,17557 7916,17576 7917,17588
 Alexanderufer - Charité: durch das Tor schieben	q4 8371,13399 8363,13402 8356,13404
 Nöldnerplatz [Lückstr. - Nöldnerstr.]: einige Fußgänger	q1 15903,10906 15932,10830
-Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger	q1 15932,10830 15970,10755
+#: note: Radfahren explizit verboten
+Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger	q3 15932,10830 15970,10755
 (Weg im Grünzug): einige Fußgänger	q1- 17391,9746 17316,9797 17257,9869 17161,9921 17005,9953
 (Dolgenseestr. - Weg im Grünzug): einige Fußgänger	q1- 17275,9892 17257,9869
 Wadzeckstr. - Mollstr.: einige Fußgänger	q1 11315,13210 11399,13333

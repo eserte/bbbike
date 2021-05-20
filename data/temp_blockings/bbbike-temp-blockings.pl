@@ -28611,7 +28611,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-05-12
+#: last_checked: 2021-05-20
 #: check_frequency: 14d
 #: next_check: 2021-07-01
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -30874,7 +30874,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-20
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32054,7 +32054,7 @@ EOF
 #: next_check_id: LANGHANS-2021
 #: source_id: 2147346889 (bis 13.8.2021)
 #: also_indoor: traffic (H)
-# REMOVED (mittlerweile für Radfahrer freigegeben, siehe mapillary9 --- #: last_checked: 2021-02-17
+# REMOVED (mittlerweile für Radfahrer freigegeben, siehe mapillary) --- #: last_checked: 2021-02-17
 # REMOVED --- #: next_check: 2021-08-13
 	q3::inwork; 13307,15758 13214,15830 13086,15907 12842,16032
 EOF
@@ -32136,7 +32136,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-05-09
+#: last_checked: 2021-05-19 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32481,7 +32481,7 @@ EOF
 #: next_check_id: ARCHIBALDWEG-2021
 #: priority: #B
 #: also_indoor: traffic (G)
-#: last_checked: 2021-05-19
+#: last_checked: 2021-05-20
 #: check_frequency: 14d
 	q4::inwork 15870,10938 15674,10851
 EOF
