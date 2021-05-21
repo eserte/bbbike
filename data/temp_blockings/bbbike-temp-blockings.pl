@@ -17275,7 +17275,7 @@ EOF
 	2::xmas 13416,7712 13424,7680
 	2::xmas 13416,7712 13378,7695 13288,7653
 	2::xmas 13424,7680 13417,7654 13392,7648 13295,7627
-	2::xmas 12972,7602 13100,7626 13177,7644
+	2::xmas 12972,7602 13100,7626 13130,7633 13177,7644
 	2::xmas 13188,7590 13177,7644
 	2::xmas 13188,7590 13295,7627
 	2::xmas 13288,7653 13295,7627
@@ -21801,12 +21801,13 @@ EOF
        until => $isodate2epoch->("2019-06-03 23:59:59"),
        text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. bis 3. Juni 2019',
        periodic => 1,
-       recurrences => [["yearly", "days" => 30, "months" => 5, start => "2020-10-25T00:00:00"]],
+       recurrences => [["yearly", "days" => 30, "months" => 5, start => "2021-10-25T00:00:00"]],
        recurrence_prewarn_days => 3,
        type  => 'gesperrt',
        source_id => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
        data  => <<EOF,
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/kinder/internationaler-kindertag/3072858-3068888-kindertag-im-haus-natur-und-umwelt.html (mögliche Termine: 1.6.2021 + 6.6.2021)
+#: by: https://fez-berlin.de/veranstaltungen2021/kindertagsparty/ (vermutlich nur online?)
 #: tempex: YYYY0531-YYYY0603 vvv
 	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
 	2::temp 19961,5989 20015,6069 20293,6278 20199,6318 20106,6357
@@ -24708,11 +24709,12 @@ EOF
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1, start => "2021-01-31T00:00:00"],
                        ['yearly', days => 27, months => 6, start => "2020-10-25T00:00:00"]],
-       #recurrence_prewarn_days => -9, # XXX wird die Fashion Week 2021 überhaupt stattfinden? Bis jetzt steht als Termin 18.-24.01.2021 fest
+       recurrence_prewarn_days => -60,
        text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 13.01.2020-17.01.2020',
        type  => 'handicap',
        source_id => 'https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-termin-fuer-januar-2020.html',
        data  => <<EOF,
+#: by: https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-der-sommertermin-in-2021-steht-fest.html (6. bis 12. September 2021)
 #: source_id: 2147343639
 #: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
 	q4::temp 8644,10408 8397,10488 8384,10507 8527,10621
@@ -26860,7 +26862,7 @@ EOF
 #: XXX ist die Qualität nach den Bauarbeiten etwas besser?
 #: last_checked: 2017-11-15 vvv
 #: check_frequency: 21d vvv
-	q4::inwork 13288,7653 13177,7644 13100,7626
+	q4::inwork 13288,7653 13177,7644 13130,7633 13100,7626
 	q4::inwork 13177,7644 13188,7590
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -30874,7 +30876,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-20
+#: last_checked: 2021-05-21
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -30911,7 +30913,7 @@ EOF
 # REMOVED --- #: priority: #A --- #: last_checked: 2020-07-30 --- #: next_check: 2020-08-10
 # REMOVED (wird nicht verlängert) --- Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12748,7177 12741,7224 12722,7261
 # REMOVED (nur wenige Termine bis zum 27.9.2020 können übernommen werden -> lohnt wohl nicht) --- Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
-# REMOVED (wird nicht verlängert) --- die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13100,7626 13177,7644
+# REMOVED (wird nicht verlängert) --- die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13100,7626 13130,7633 13177,7644
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954979.php
 Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12856,8344 13038,8394
 EOF
@@ -31656,7 +31658,7 @@ EOF
 #: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2021-05-06
+#: last_checked: 2021-05-21
 #: check_frequency: 90d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -32266,19 +32268,24 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Auerstr.: Fahrbahn wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Auerstr.: Fahrbahn wegen Bauarbeiten gesperrt, vermutlich bis zum 28.6.2021',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: AUER-2021
 #: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken); außerdem gibt's eine Einbahnstraßenregelung für Autos
+#: XXX laut rbb bis 28.6.2021
 #: also_indoor: traffic
+#: priority: #A vvv
 #: last_checked: 2021-05-17 vvv
-#: check_frequency: 14d vvv
+#: check_frequency: 21d vvv
+#: next_check: 2021-06-28 vvv
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
 	q4::inwork 13067,12583 13202,12790
 	q4::inwork; 13273,12902 13202,12790
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: priority ^^^
 EOF
      },
      { from  => undef, # 

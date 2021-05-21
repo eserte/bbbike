@@ -586,7 +586,7 @@ Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 # REMOVED (mittlerweile wurden schadhafte Stellen ausgebessert) --- Karl-Marx-Str.: schadhafter Asphalt im Bereich des geschützten Radstreifens	Q1+; 11880,8955 11998,8872 12063,8826 12156,8760
 Karl-Marx-Str.: Asphalt mit Schäden	Q0- 12330,8636 12494,8501
 Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12972,7602 13100,7626
-Karl-Marx-Platz: Kopfsteinpflaster	Q2 13100,7626 13177,7644
+Karl-Marx-Platz: Kopfsteinpflaster	Q2 13100,7626 13130,7633 13177,7644
 Richardplatz: Kopfsteinpflaster	Q2 13177,7644 13288,7653
 Richardplatz: Kopfsteinpflaster, Fugen mit Asphalt vergossen	Q2+ 13288,7653 13378,7695
 Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12987,7560 13100,7626
@@ -791,7 +791,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2021-05-06
+#: last_checked: 2021-05-21
 #: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -971,7 +971,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-05-20
+#: last_checked: 2021-05-21
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -23374,8 +23374,9 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="4"
-#: last_checked: 2021-03-02 (mapillary)
-#: next_check: 2021-06-01
+#: last_checked: 2021-05-19 (mapillary)
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 16314,15223 16354,15323 16406,15452
 #: XXX ^^^
 #: by: ^^^
