@@ -30876,7 +30876,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-21
+#: last_checked: 2021-05-22
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32464,7 +32464,7 @@ EOF
 #: add_fragezeichen: Wie lange gehen die Bauarbeiten?
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-04-28
+#: last_checked: 2021-05-22
 	q4::inwork; 7771,9479 7829,9723
 EOF
      },
@@ -32613,6 +32613,15 @@ EOF
        source_id => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
        data  => <<EOF,
 	q4::temp::play 13038,8394 12856,8344
+EOF
+     },
+     { from  => $isodate2epoch->("2021-05-17 00:00:00"),
+       until => $isodate2epoch->("2021-07-02 17:00:00"),
+       text  => 'Johannes-Werner-Str.: Gleisbauarbeiten, Fahrbahn gesperrt, bis 2.7.2021',
+       type  => 'handicap',
+       source_id => 'https://www.bahninfo-forum.de/read.php?9,665091,701727#msg-701727',
+       data  => <<EOF,
+	q4::inwork 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
 EOF
      },
     );

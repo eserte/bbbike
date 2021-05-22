@@ -7226,7 +7226,7 @@ Harry-Liedtke-Pfad: Gehwegplatten	Q0 15806,1903 15834,2024
 Harry-Liedtke-Pfad: Gehwegplatten	Q0 15834,2024 15843,2065 15836,2113
 Senefelderstr.: Kleinsteinpflaster	Q1 11595,15058 11582,15021
 Knackstr.: Kopfsteinpflaster	Q2 11094,14769 11038,14972 11056,15009
-Ida-von-Arnim-Str.: Asphalt	Q0 8077,14227 8251,14337 8442,14456
+Ida-von-Arnim-Str.: Asphalt	Q0 8077,14227 8266,14346 8442,14456
 Riedemannweg: Beton	Q0 4248,15647 4389,15336
 Thaters Privatweg: schlechtes Kopfsteinpflaster	Q3 3956,14750 3899,14868 3893,14911 3892,14944 4103,15137 4148,15205
 Goerdelerdamm: Verbundsteinpflaster	Q1 4653,14528 4897,14609 5043,14671
@@ -8558,7 +8558,7 @@ Am Tierpark [Wohngebiet]: Asphalt	Q0 18484,10326 18538,10189 18552,10135
 Eyke-von-Repkow-Platz: Gehwegplatten	Q0 5556,12536 5531,12501
 Rathausstr.: Asphalt	Q0 10601,12521 10584,12507 10476,12432
 (Straße zum Kraftwerksgelände): Asphalt	Q0 8478,13941 8453,13966 8388,13993
-(Weg an der Südpanke): Beton	Q0 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8294,14194
+(Weg an der Südpanke): Beton	Q0 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8271,14222 8273,14269 8266,14346 8267,14395 8293,14453 8302,14517 8301,14576 8323,14599
 (Weg an der Südpanke - Am Pankepark): Pflasterung	Q1 8307,14175 8323,14142
 (Weg an der Südpanke - Am Pankepark): Asphalt	Q0 8323,14142 8282,14116
 Sigridstr.: Asphalt mit einigen Schäden	Q1 14284,14469 14159,14495 14025,14519
@@ -10628,6 +10628,7 @@ Dorfstr. - Am Gutshof: Verbundsteinpflaster, Aufpflasterung	Q1 17843,18823 17839
 Märkische Allee [Wohngebiet]: Beton	Q0 21377,18663 21299,18508
 Bruno-Baum-Str.: Beton	Q0 20260,15434 20286,15382 20123,15293 19993,15116
 Bruno-Baum-Str.: Asphalt	Q0 19993,15116 19893,14947 19867,14886 19793,14728 19768,14674 19719,14566 19687,14469
+(Verlängerung der Siegfriedstr.): Asphalt mit Schäden	Q1 11664,6796 11488,6781
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11389,7 +11390,10 @@ Görschstr.: Asphalt	Q0 10060,17641 10053,17777
 Görschstr.: Kopfsteinpflaster	Q3 10053,17777 9863,17962
 Neue Schönholzer Str.: guter Asphalt	Q0 10089,18180 10141,18030 10179,17772
 Guntherstr.: Kopfsteinpflaster	Q2 17020,12309 16994,12122 16975,12000
-Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7412,8273 7412,8351 7410,8593 7408,8648 7439,8716
+Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7412,8273 7412,8351
+Cheruskerstr.: Asphalt, einige Schäden	Q0; 7412,8351 7410,8593
+Cheruskerstr.: Asphalt	Q0; 7410,8593 7412,8351
+Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
 Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7441,15909 7279,16057 7158,16167 7051,16264
 Stahnsdorfer Damm: asphaltiert	Q0 -4999,1083 -4978,918 -4875,833

@@ -146,7 +146,7 @@ Krautstr.: Umbau zur Fußgängerzone, Radfahrer frei	q4::inwork 12002,12008 12021,
 #: osm_watch: way id="26285705" version="7"
 #: osm_watch: way id="69166216" version="7"
 #: source_id: 2147346409 (bis Ende 2021, Gesamtbaumaßnahme bis Ende 2023)
-#: last_checked: 2021-05-21 vvv
+#: last_checked: 2021-05-22 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
@@ -211,7 +211,8 @@ Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehw
 # 
 #: next_check_id: CHAUSSEE-2020
 #: note: laut rbbtext Ende der Bauarbeiten 16.7.2021
-#: last_checked: 2021-04-25
+#: source_id: 2147346552 (bis 16.7.2021)
+#: last_checked: 2021-05-22
 #: check_frequency: 90d
 #: next_check: 2021-07-16
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -276,7 +277,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: osm_watch: way id="268002748" version="10"
 #: XXX laut osm opening_date=2021
 #: also_indoor: traffic (G,ex-H)
-#: last_checked: 2021-05-13
+#: last_checked: 2021-05-22
 #: check_frequency: 30d
 Hirtenstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11012,13278 10925,13322
 # 
@@ -327,9 +328,15 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_24_2713_2792_online.pdf (Verbreiterung)
 # REMOVED --- Jerusalemer Str.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9925,11565 9936,11469
 # 
+#: source_id: 2147347007 (bis 25.6.2022)
+#: last_checked: 2021-05-22
+#: check_frequency: 90d
+#: next_check: 2022-06-25
+Hannah-Arendt-Str.: Fahrbahn Richtung Westen gesperrt	q3::inwork; 8901,12008 8844,11984
+# 
 #: also_indoor: traffic (H,G)
 #: osm_watch: way id="4597320" version="19"
-#: last_checked: 2021-04-24 (daf)
+#: last_checked: 2021-05-22
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-05-31
 # REMOVED --- #: valid: 20191218-20210531
@@ -719,7 +726,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: osm_watch: way id="585753318" version="8"
 #: osm_watch: way id="71392596" version="13"
 #: also_indoor: traffic
-#: last_checked: 2021-05-21 vvv
+#: last_checked: 2021-05-22 vvv
 #: check_frequency: 30d
 #: next_check: 2021-06-04
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
@@ -805,7 +812,7 @@ Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: XXX unklar, ob die Einbahnstraßenregelung für Radfahrer gelten soll
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2021-04-19 vvv
+#: last_checked: 2021-05-22 vvv
 # REMOVED (hier kaum noch Einschränkungen) --- Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
 Dennewitzstr.: Einbahnstraßenregelung	q3::inwork; 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
@@ -2502,7 +2509,8 @@ Selkestr.: Fußgänger, Bordsteine	q3 12722,7261 12741,7224
 #: XXX_prog BS auf beiden Seiten
 Eyke-von-Repkow-Platz: einige Fußgänger, Bordsteine	q3 5556,12536 5531,12501
 (Alexandrinenstr. - Wassertorstr.): Fußgänger, Kurven	q1- 10293,10645 10401,10601 10431,10606 10492,10582
-(Weg an der Südpanke): einige Fußgänger	q1 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8294,14194
+(Weg an der Südpanke): einige Fußgänger	q1 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8271,14222 8273,14269 8266,14346 8267,14395 8293,14453 8302,14517
+(Weg an der Südpanke): einige Fußgänger, schmal	q2 8302,14517 8301,14576 8323,14599
 (Weg an der Südpanke - Am Pankepark): einige Fußgänger, Rampe	q2 8307,14175 8323,14142
 (Weg an der Südpanke - Am Pankepark): einige Fußgänger	q1 8323,14142 8282,14116
 (Rhinstr. - Am Mühlenberg): einige Fußgänger, Rampe	q1- 18215,11690 18242,11793 18258,11827

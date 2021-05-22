@@ -107,7 +107,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="13"
-#: last_checked: 2021-05-06
+#: last_checked: 2021-05-22
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -464,7 +464,7 @@ Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/zu-eng-zu-gefaehrlich-gasse-fuer-radler-an-der-oderstrasse-geplant-d130109.html (Realisierung 2020)
 #: by: https://api.fixmyberlin.de/api/plannings/212 (Asphaltierung + Fahrradstraße, bis zum Eingang Tempelhofer Feld)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf
-#: last_checked: 2021-04-02
+#: last_checked: 2021-05-22
 #: check_frequency: 180d
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
 #: note: Parkstreifen gepflastert
@@ -971,7 +971,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-05-21
+#: last_checked: 2021-05-22
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -8374,7 +8374,7 @@ Harry-Liedtke-Pfad: Gehwegplatten	Q0- 15806,1903 15834,2024
 Harry-Liedtke-Pfad: Gehwegplatten	Q0- 15834,2024 15843,2065 15836,2113
 Senefelderstr.: Kleinsteinpflaster	Q1 11595,15058 11582,15021
 Knackstr.: Kopfsteinpflaster	Q2 11094,14769 11038,14972 11056,15009
-Ida-von-Arnim-Str.: Asphalt	Q0 8077,14227 8251,14337 8442,14456
+Ida-von-Arnim-Str.: Asphalt	Q0 8077,14227 8266,14346 8442,14456
 Riedemannweg: Beton	Q0 4248,15647 4389,15336
 #: note: Ausweichen auf sehr schmalen unbefestigten Gehweg möglich
 Thaters Privatweg: schlechtes Kopfsteinpflaster	Q3 3956,14750 3899,14868 3893,14911 3892,14944 4103,15137 4148,15205
@@ -9812,7 +9812,7 @@ Eyke-von-Repkow-Platz: Gehwegplatten	Q0- 5556,12536 5531,12501
 #: note: 2018 neu gemacht
 Rathausstr.: Asphalt	Q0 10601,12521 10584,12507 10476,12432
 (Straße zum Kraftwerksgelände): Asphalt	Q0 8478,13941 8453,13966 8388,13993
-(Weg an der Südpanke): Beton	Q0 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8294,14194
+(Weg an der Südpanke): Beton	Q0 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8271,14222 8273,14269 8266,14346 8267,14395 8293,14453 8302,14517 8301,14576 8323,14599
 (Weg an der Südpanke - Am Pankepark): Pflasterung	Q1- 8307,14175 8323,14142
 (Weg an der Südpanke - Am Pankepark): Asphalt	Q0 8323,14142 8282,14116
 Sigridstr.: Asphalt mit einigen Schäden	Q1+ 14284,14469 14159,14495 14025,14519
@@ -12112,6 +12112,7 @@ Dorfstr. - Am Gutshof: Verbundsteinpflaster, Aufpflasterung	Q1- 17843,18823 1783
 Märkische Allee [Wohngebiet]: Beton	Q0- 21377,18663 21299,18508
 Bruno-Baum-Str.: Beton	Q0- 20260,15434 20286,15382 20123,15293 19993,15116
 Bruno-Baum-Str.: Asphalt	Q0 19993,15116 19893,14947 19867,14886 19793,14728 19768,14674 19719,14566 19687,14469
+(Verlängerung der Siegfriedstr.): Asphalt mit Schäden	Q1 11664,6796 11488,6781
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13681,7 +13682,14 @@ Neue Schönholzer Str.: guter Asphalt	Q0 10089,18180 10141,18030 10179,17772
 Guntherstr.: Kopfsteinpflaster	Q2- 17020,12309 16994,12122 16975,12000
 # 
 #: by: D.Mahlow: vvv
-Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7412,8273 7412,8351 7410,8593 7408,8648 7439,8716
+#: confirmed_by: srt
+Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7412,8273 7412,8351
+#: corrected_by: srt ("einige Schäden" hinzugefügt)
+Cheruskerstr.: Asphalt, einige Schäden	Q0-; 7412,8351 7410,8593
+#: confirmed_by: srt
+Cheruskerstr.: Asphalt	Q0; 7410,8593 7412,8351
+#: confirmed_by: srt
+Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 #: corrected_by: srt
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf (Asphaltierung geplant)
 #: XXX wann wird hier asphaltiert?
@@ -22768,7 +22776,7 @@ Frobenstr. (Lankwitz): mäßiges Kopfsteinpflaster	Q2 6108,2326 6349,2510 6529,264
 #: by: https://www.bahninfo-forum.de/read.php?9,665091,700762#msg-700762 (Ersetzung der GVP-Platten zwischen 17.5.2021 und 2.7.2021?)
 #: XXX vielleicht werden die GVP durch Asphalt ersetzt?
 #: priority: #B
-#: next_check: 2021-05-17
+#: next_check: 2021-07-02
 Johannes-Werner-Str.: Kopfsteinpflaster/Betonplatten	Q1- 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
 #: corrected_by: srt (Kopfsteinpflaster -> unebenes Kleinkopfsteinpflaster)
 Mühlbergstr.: unebenes Kleinkopfsteinpflaster	Q2 17187,3988 17288,4026 17341,4046

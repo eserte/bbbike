@@ -891,13 +891,7 @@ Fähranleger	culdesac_pseudo -1989,18378
 #: note: als Radfahrer kann man Richtung Panke oder Reinhardtstr. weiterfahren
 	culdesac_pseudo 9132,13187
 # REMOVED --- #: next_check_id: BND-2014 --- #: XXX wird bei der Verlängerung der Ida-von-Arnim-Str. aufgehoben --- #: last_checked: 2016-11-22 --- #: check_frequency: 90d ---	culdesac 8251,14337
-# 
-#: next_check_id: SUEDPANKE-2014
-#: XXX wird bei der Verlängerung des Südpankewegs aufgehoben
-#: last_checked: 2021-05-11 (daf)
-#: check_frequency: 14d
-	culdesac 8294,14194
-# 
+# REMOVED --- #: next_check_id: SUEDPANKE-2014 --- #: XXX wird bei der Verlängerung des Südpankewegs aufgehoben --- #: last_checked: 2021-05-11 (daf) --- #: check_frequency: 14d ---	culdesac 8271,14222
 Tor	culdesac 8388,13993
 #: note: es gibt hier noch weiterführende Straßen
 Flughafengelände	culdesac_pseudo 9300,8027
@@ -1587,6 +1581,7 @@ Sackgassenende, Wohngebietsparkplatz	culdesac 17612,11541
 	culdesac 3476,25399
 	culdesac 18068,6495
 	culdesac_pseudo 10772,-1748
+	culdesac 11488,6781
 # 
 ######################################################################
 # culdesac entries which should remain invisible

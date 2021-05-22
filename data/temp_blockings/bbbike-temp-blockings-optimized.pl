@@ -2762,7 +2762,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-21
+#: last_checked: 2021-05-22
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3468,7 +3468,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: add_fragezeichen: Wie lange gehen die Bauarbeiten?
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-04-28
+#: last_checked: 2021-05-22
 	q4::inwork; 7771,9479 7829,9723
 ',
          'from' => undef,
@@ -3636,6 +3636,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee temporäre Spielstraße sonn- und feiertags zwischen 13 und 18 Uhr, bis Mitte September 2021',
          'type' => 'handicap',
          'until' => 1631743199
+       },
+       {
+         'data' => '	q4::inwork 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
+',
+         'from' => 1621202400,
+         'id' => 3378,
+         'source_id' => 'https://www.bahninfo-forum.de/read.php?9,665091,701727#msg-701727',
+         'text' => 'Johannes-Werner-Str.: Gleisbauarbeiten, Fahrbahn gesperrt, bis 2.7.2021',
+         'type' => 'handicap',
+         'until' => 1625238000
        }
      
 );

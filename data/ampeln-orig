@@ -51,6 +51,7 @@ Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775
 #: osm_watch: node id="6380038401" version="1"
 #: last_checked: 2021-05-13
 #: check_frequency: 90d
+#: next_check: 2021-06-30
 #: valid: -20210630
 	X::inwork 9195,11972
 # 
@@ -2939,7 +2940,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2021-04-24 (daf)
+#: last_checked: 2021-05-22
 #: check_frequency: 90d
 #: next_check: 2021-07-15
 	X::inwork 8732,14098
@@ -3243,7 +3244,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5364,7330
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2021-04-25
+#: last_checked: 2021-05-22
 #: check_frequency: 90d
 #: next_check: 2021-07-16
 	X::inwork 8336,14586
