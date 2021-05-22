@@ -26,7 +26,7 @@ use BBBikeTest qw(check_cgi_testing using_bbbike_test_data $cgidir);
 check_cgi_testing;
 using_bbbike_test_data;
 
-plan tests => 12;
+plan tests => 18;
 
 my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent('BBBike-Test/1.0');
@@ -80,6 +80,7 @@ sub do_revgeocode_api_call {
     my $resp = $ua->get($url);
     ok($resp->is_success, "revgeocode API call" . (defined $testname ? ", $testname" : ''))
 	or diag $resp->as_string;
+    is $resp->content_type, 'application/json', 'expected Content-Type';
     my $data = decode_json $resp->decoded_content(charset => 'none');
     if ($cleanorig) {
 	delete $data->{$_} for (qw(origlon origlat));

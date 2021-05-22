@@ -1119,12 +1119,14 @@ sub get_cgi_config (;@) {
 	$ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
 	set_user_agent($ua);
     }
+    my $respref = delete $opts{resp};
     die "Unhandled options: " . join(" ", %opts) if %opts;
 
     require JSON::XS;
 
     my $url = $_cgiurl . "?api=config";
     my $resp = $ua->get($url);
+    if ($respref) { $$respref = $resp }
     my $data = JSON::XS::decode_json($resp->decoded_content(charset => 'none'));
     $data;
 }

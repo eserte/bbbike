@@ -36,6 +36,10 @@ my $cgitesturl = "$cgidir/bbbike-test.cgi";
 }
 
 {
+    do_config_api_call($cgiurl, 1); # just do http response check
+}
+
+{
     my $data = do_config_api_call($cgitesturl);
 
     # following two are set dynamically in bbbike-test.cgi.config
@@ -121,9 +125,13 @@ my $cgitesturl = "$cgidir/bbbike-test.cgi";
 }
 
 sub do_config_api_call {
-    my $cgiurl = shift;
-    my $data = get_cgi_config cgiurl => $cgiurl;
+    my($cgiurl, $with_resp_check) = @_;
+    my $resp;
+    my $data = get_cgi_config cgiurl => $cgiurl, ($with_resp_check ? (resp => \$resp) : ());
     ok $data, 'config API call returned data';
+    if ($with_resp_check) {
+	is $resp->content_type, 'application/json', 'expected Content-Type';
+    }
     $data;
 }
 

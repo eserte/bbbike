@@ -54,7 +54,7 @@ sub action_revgeocode {
 	@cr = @cr[0,1] if @cr > 2; # bbbike.cgi can deal only with A/B
 	$cr = join("/", @cr);
     }
-    print $q->header(-type => 'text/plain', -access_control_allow_origin => '*');
+    print $q->header(-type => 'application/json', -access_control_allow_origin => '*');
     print JSON::XS->new->canonical->ascii->encode({ crossing => $cr,
 						    bbbikepos => $xy,
 						    origlon => $lon,
@@ -64,7 +64,7 @@ sub action_revgeocode {
 
 sub action_config {
     my $q = shift;
-    print $q->header(-type => 'text/plain');
+    print $q->header(-type => 'application/json');
 
     require BBBikeCGI::Config;
     my $r = BBBikeCGI::Config->the_config('json');
