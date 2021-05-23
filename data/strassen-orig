@@ -3860,6 +3860,7 @@ Trabener Str.	N 1981,9865 1927,9820 1904,9745 1756,9610 1709,9567 1562,9436 1457
 Hilde-Ephraim-Str.	N 1312,9220 1261,9285 1662,9642 1709,9663 1718,9653 1756,9610
 Rosensteinweg	N 1718,9653 1917,9821 1927,9820
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1086857.php (BVV entscheidet am 27.5.2021 über Umbenennung)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7965 (Bericht bis 31.7.2021 erwartet)
 #: note: früher mit Zusatz "(Grunewald)"
 #: XXX Umbenennung zu Baraschstr. soll erfolgen
 #: next_check: 2021-06-27
@@ -6020,11 +6021,19 @@ Arno-Philippsthal-Str.	N 20641,11488 20630,11342
 Stawesdamm	N 20623,11489 20627,11552 20631,11621
 Stawesdamm	NN 20631,11621 20633,11651
 #: note: Privatstraßen vvv
-Heino-Schmieden-Weg	N 20720,11484 20726,11539 20735,11613 20831,11604 20818,11480
+Heino-Schmieden-Weg	N 20720,11484 20726,11539 20730,11574 20735,11613 20831,11604 20827,11562 20823,11527 20818,11480
 Elsa-Ledetsch-Weg	N 20650,11488 20659,11548 20726,11539
 Gisela-Reissenberger-Platz	N 20659,11548 20665,11620 20735,11613
 #: note ^^^
 (Verbindungsweg)	NN 20659,11548 20627,11552 20590,11557
+(Verbindungsweg)	NN 20726,11539 20823,11527 20866,11521
+# 
+#: next_check_id: BEBAUUNGSPLAN-XXI-34A
+#: add_fragezeichen: Wird diese Straße einen Straßennamen bekommen?
+#: last_checked: 2021-05-23
+#: check_frequency: 60d
+(Straße im Gut Biesdorf)	N 20730,11574 20827,11562 20874,11555
+# 
 Minsker Str.	N 20828,11480 20820,11333 20818,11293 20817,11257 20834,11150
 #: note: beleuchtet
 #: note: vorletzer Punkt ist ein "Pseudo-Punkt" für die 3nocross-Problematik
@@ -14669,7 +14678,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="14"
-#: last_checked: 2021-05-16
+#: last_checked: 2021-05-23
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15045,7 +15054,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="17"
-#: last_checked: 2021-05-16
+#: last_checked: 2021-05-23
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)

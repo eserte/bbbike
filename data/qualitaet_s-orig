@@ -971,7 +971,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-05-22
+#: last_checked: 2021-05-23
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3596,9 +3596,9 @@ Brodauer Str.: Asphalt	Q0 22554,11681 22469,11627
 Ringstr. (Kaulsdorf): Beton	Q1 22402,11751 22461,11790 22473,11804
 Ringstr. (Kaulsdorf): Asphalt	Q0 22473,11804 22503,11841 22531,11899 22544,12001
 Dillinger Weg: Kopfsteinpflaster	Q2 21648,12000 21626,12032 21550,12038
-Dillinger Weg: Asphalt	Q0 21550,12038 21281,12042
+Dillinger Weg: Asphalt mit einigen Schäden	Q1+ 21550,12038 21281,12042
 Brebacher Weg: Asphalt	Q0 21573,12140 21564,12097 21562,12088 21558,12073 21550,12038 21550,11939
-Püttlinger Str.: Asphalt	Q0 21283,12066 21281,12042 21275,11942
+Püttlinger Str.: Asphalt, etwas rau	Q0- 21283,12066 21281,12042 21275,11942
 Püttlinger Str.: Beton	Q1 21275,11942 21273,11882
 Frankenholzer Weg: Beton	Q0 21152,11945 21275,11942
 Frankenholzer Weg: Asphalt	Q0 21275,11942 21346,11941 21409,11941 21550,11939
@@ -8994,7 +8994,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2021-04-25 vvv
+#: last_checked: 2021-05-23 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -12013,18 +12013,14 @@ Quartiersweg: Asphalt	Q0 7621,7813 7623,7885 7624,7946 7612,7996 7516,8063 7498,
 Quartiersweg: gepflastert	Q2 7548,7884 7623,7885
 Quartiersweg: gepflastert	Q2 7537,7859 7548,7884 7548,7937 7499,7937
 Elsa-Ledetsch-Weg: Asphalt	Q0 20650,11488 20659,11548 20726,11539
-#: next_check_id: BEBAUUNGSPLAN-XXI-34A
-#: last_checked: 2021-02-21
-#: check_frequency: 90d
-#: next_check: 2021-06-30
-Gisela-Reissenberger-Platz: Asphalt, letzte Deckschicht fehlt	Q1 20659,11548 20665,11620 20735,11613
-#: next_check_id: BEBAUUNGSPLAN-XXI-34A
-#: XXX bleibt es beim Asphalt, oder wird hier auch Verbundsteinpflaster entstehen?
-#: last_checked: 2021-02-21
-#: check_frequency: 90d
-#: next_check: 2021-06-30
-(Verbindungsweg): Asphalt, letzte Deckschicht oder Pflasterung fehlt	Q1 20659,11548 20627,11552
+# REMOVED --- #: next_check_id: BEBAUUNGSPLAN-XXI-34A --- #: last_checked: 2021-02-21 --- #: check_frequency: 90d --- #: next_check: 2021-06-30
+Gisela-Reissenberger-Platz: Asphalt	Q0 20659,11548 20665,11620 20735,11613
+# REMOVED --- #: next_check_id: BEBAUUNGSPLAN-XXI-34A --- #: XXX bleibt es beim Asphalt, oder wird hier auch Verbundsteinpflaster entstehen? --- #: last_checked: 2021-02-21 --- #: check_frequency: 90d --- #: next_check: 2021-06-30
+(Verbindungsweg): Asphalt	Q0 20659,11548 20627,11552
 (Verbindungsweg): Verbundsteinpflaster	Q1+ 20627,11552 20590,11557
+(Verbindungsweg): Asphalt	Q0 20726,11539 20823,11527 20866,11521
+Heino-Schmieden-Weg: Asphalt	Q0 20720,11484 20726,11539 20730,11574 20735,11613 20831,11604 20827,11562 20823,11527 20818,11480
+(Straße im Gut Biesdorf): Asphalt	Q0 20730,11574 20827,11562 20874,11555
 Franz-Jacob-Str.: Beton	Q0- 14754,13819 14810,13930 14803,13966
 Dörpfeldstr. [Nebenstraße]: unbefestigte Straße	Q2 20829,4044 20925,4101 21046,4173 21071,4189
 (Marchwitzastr. - Allee der Kosmonauten): Asphalt	Q0- 19934,13318 19835,13317
@@ -14859,6 +14855,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.tenbrinke.com/de/aktuelle-projekte/aktuelle-projekte-details/wandlitzstra%C3%9Fe-kaiserg%C3%A4rten-ib1604.html (bis 2023)
 #: by: https://www.tenbrinke.com/de/aktuelle-projekte/aktueller-bautenstand/wandlitzstra%C3%9Fe-kaiserg%C3%A4rten-ib1604.html (Fotos vom Baufortschritt)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/kaiserg%C3%A4rten-wandlitzstra%C3%9Fe-18-22.343/#post-15379
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8942 (Forderung nach einer Fahrradstraße)
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
 #: last_checked: 2021-04-01
 #: check_frequency: 360d

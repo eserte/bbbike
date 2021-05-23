@@ -3336,7 +3336,7 @@ Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
 #: osm_watch: way id="610818155" version="4"
-#: last_checked: 2021-05-03
+#: last_checked: 2021-05-23
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
@@ -3346,7 +3346,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: check_frequency: 60d
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 # 
-#: last_checked: 2021-05-16 vvv
+#: last_checked: 2021-05-23 vvv
 #: check_frequency: 14d vvv
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922 16841,9997
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16886,9982
@@ -3831,6 +3831,8 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: XXX rund um das Ministeriums für Ernährung, Landwirtschaft und Verbraucherschutz
 #: XXX "Verkehrsregelung bleibt voraussichtlich bis 2021 bestehen", trotzdem in der Anfangszeit häufiger nachprüfen
 #: XXX in der Glinkastr. Einbahnstraße offen für Radfahrer
+#: XXX laut rbb nur bis 1.6.2021
+#: also_indoor: traffic (G,H)
 #: source_id: 2147343289 (bis Mitte 2021)
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.)
 #: osm_watch: way id="43233756" version="17"
@@ -3840,7 +3842,7 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: priority: #A vvv
 #: last_checked: 2021-05-22 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2021-06-30 vvv
+#: next_check: 2021-06-01 vvv
 #: valid: -20210630 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
 #: source_id: 2147343292
@@ -4004,16 +4006,17 @@ Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12
 # REMOVED --- #: next_check_id: MOEWENWEG-2017 --- #: osm_watch: way id="618339166" version="7" --- #: XXX nach den Bauarbeiten vermutlich nur ein Rad/Gehweg --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.632264.php ("Fertigstellung ist für den Sommer 2018 geplant") --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_48_5417_5552_online.pdf (Benennung von Privatstraßen) --- #: XXX hier ("Baugebiet Grüne Aue) werden drei Privatstraßen benannt (fehlen alle in Berlin.coords.data, Lage? Qualität?) (siehe auch fragezeichen-orig für die anderen zwei) --- #: XXX An den Grachten: 11123 --- #: XXX Klompenweg: 11124; für Berlin.coords.data: Klompenweg|Biesdorf|12683 --- #: XXX Am Groen: 11125; für Berlin.coords.data siehe fragezeichen-orig --- #: last_checked: 2019-07-28 --- #: check_frequency: 30d --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22172,10996 22195,10993
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
-#: last_checked: 2021-02-21 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2021-06-30 vvv
+#: last_checked: 2021-05-23 vvv
+#: check_frequency: 60d vvv
+# REMOVED --- #: next_check: 2021-06-30 vvv
 # REMOVED (hier mittlerweile offen) --- Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20627,11552
 #: osm_watch: way id="10432861" version="22"
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20627,11552 20631,11621 20633,11651
-#: osm_watch: way id="744233528" version="11"
+# REMOVED --- #: osm_watch: way id="744233528" version="11"
 # REMOVED (hier mittlerweile offen) --- Heino-Schmieden-Weg: größtenteils noch wegen Bauarbeiten gesperrt	2::inwork 20720,11484 20726,11539
-Heino-Schmieden-Weg: größtenteils noch wegen Bauarbeiten gesperrt	2::inwork 20726,11539 20735,11613 20831,11604 20818,11480
-#: next_check ^^^
+# REMOVED (mittlerweile offen) --- Heino-Schmieden-Weg: größtenteils noch wegen Bauarbeiten gesperrt	2::inwork 20726,11539 20730,11574 20735,11613 20831,11604 20827,11562 20823,11527 20818,11480
+Gisela-Reissenberger-Platz: wegen Bauarbeiten gesperrt	2::inwork 20665,11620 20735,11613
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 

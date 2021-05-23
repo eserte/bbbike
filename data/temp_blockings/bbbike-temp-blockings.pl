@@ -29103,7 +29103,7 @@ EOF
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
-#: last_checked: 2021-03-26 (mapillary)
+#: last_checked: 2021-04-14 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2021-08-13
 	q4::inwork 13508,15912 13312,16027 13189,16089 12943,16214 12859,16255 12797,16285 12725,16321 12564,16399 12399,16479 12189,16578
@@ -30876,7 +30876,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-22
+#: last_checked: 2021-05-23
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32131,16 +32131,16 @@ EOF
 EOF
      },
      { from  => 1614578400, # 2021-03-01 07:00
-       until => 1622473200, # 2021-05-31 17:00
-       text  => 'Karlshorster Str.: Richtung Hauptstr. wegen Bauarbeiten gesperrt, Radfahrer müssen schieben, voraussichtlich ab 2. März 2021 bis Ende Mai 2021',
+       until => $isodate2epoch->("2021-09-30 18:00:00"), # 1622473200, # 2021-05-31 17:00
+       text  => 'Karlshorster Str.: Richtung Hauptstr. wegen Bauarbeiten gesperrt, Radfahrer müssen schieben, voraussichtlich ab 2. März 2021 bis mindestens Ende Mai 2021, vermutlich noch länger',
        type  => 'handicap',
        source_id => '2147346922', # bis Ende Mai 2021, Gesamtbaumaßnahme bis 30.09.2021
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-05-19 (mapillary)
+#: last_checked: 2021-05-23
 #: check_frequency: 30d
-#: next_check: 2021-05-31
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
 EOF
      },
@@ -32276,7 +32276,7 @@ EOF
 #: XXX laut rbb bis 28.6.2021
 #: also_indoor: traffic
 #: priority: #A vvv
-#: last_checked: 2021-05-17 vvv
+#: last_checked: 2021-05-23 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2021-06-28 vvv
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
@@ -32488,7 +32488,7 @@ EOF
 #: next_check_id: ARCHIBALDWEG-2021
 #: priority: #B
 #: also_indoor: traffic (G)
-#: last_checked: 2021-05-20
+#: last_checked: 2021-05-23
 #: check_frequency: 14d
 	q4::inwork 15870,10938 15674,10851
 EOF
@@ -32588,12 +32588,12 @@ EOF
 EOF
      },
      { from  => 1621144800, # 2021-05-16 08:00
-       until => 1623168000, # 2021-06-08 18:00
+       until => 1621775851, # keine Beeinträchtigungen, separater Radweg existiert --- 1623168000, # 2021-06-08 18:00
        text  => 'Gürtelstr.: Brückenbauarbeiten, Radfahrer Richtung Frankfurter Allee müssen absteigen und schieben, vom 17.05.2021 08:00 Uhr bis 08.06.2021 18:00 Uhr ',
        type  => 'handicap',
        source_id => '2147347189',
        data  => <<EOF,
-#: XXX check!
+# REMOVED --- #: XXX check!
 	q4::inwork; 15256,11884 15300,11965
 EOF
      },
@@ -32621,6 +32621,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.bahninfo-forum.de/read.php?9,665091,701727#msg-701727',
        data  => <<EOF,
+#: next_check_id: STERNDAMM-2020
 	q4::inwork 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
 EOF
      },
