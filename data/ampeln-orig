@@ -1277,8 +1277,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6757,13112
 	X 5975,13256
 	X 5956,13330
-	X -1369,14644
-	X -1357,14533
+	X -1350,14646
+#: note: Anforderung für linksabbiegende Radfahrer (Am Juliusturm -> Daumstr.)
+	X -1337,14538
 	X 5043,14671
 #: XXX_prog: gilt nicht für rechtsabbiegende Radfahrer (Beusselstr. -> Seestr.)
 	X 5051,14606
@@ -1891,6 +1892,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 24730,14288
 	X -6025,12419
 	X -5518,12259
+#: note: Kontaktschleife zumindest am Graetschelsteig
 	X -4412,12179
 	X -4351,12460
 #: note: nachts zwischen 22 Uhr und 5 Uhr ausgeschaltet; Anforderungsampel, Wartezeit für Fußgänger zwischen 5 Sekunden und 1 Minute
@@ -3170,8 +3172,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5824,2621
 #: note: Anforderungsampel
 	F 5187,22601
+#: next_check_id: TEGELERBRUECKE-2021
+#: XXX wird diese Ampel jemals wieder in Betrieb genommen?
+#: last_checked: 2021-05-24
+#: check_frequency: 180d
+#: next_check: 2023-12-01
 #: note: Anforderungsampel
-	F -224,16095
+	F0 -224,16095
 #: note: Anforderungsampel
 #: off: Sunday (gesehen 2016-10-03 gegen 15:45)
 #: on: Samstag (gesehen 2016-10-08 gegen 15:00)

@@ -984,16 +984,14 @@ Penkun: Kopfsteinpflaster	Q2 64957,100289 64951,100374 64731,100496 64664,100548
 #: XXX: stimmt der alte Eintrag "Kopfsteinpflaster" noch?
 Sommersdorf: Asphalt	Q0 62114,98973 61657,98779 61457,98750
 Sommersdorf: Asphalt	Q0 61457,98750 61351,98696 61125,98715 60988,98694 60921,98689 60623,98706
-#: add_fragezeichen: ist hier mittlerweile auch asphaltiert? vvv
-#: XXX laut osm: ja (zumindest teilweise)
-#: last_checked: 2020-07-14 (bei Wollin noch Bauarbeiten) vvv
-#: check_frequency: 60d vvv
-Wollin - Schmölln: schlechtes Kopfsteinpflaster	Q3 53767,97971 54343,98281 54506,98712 54856,98939
-Wollin - Schmölln: Betonplatten	Q1 54856,98939 55359,99276
-Wollin - Schmölln: schlechtes Kopfsteinpflaster	Q3 55359,99276 55894,99914
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: add_fragezeichen: ist hier mittlerweile auch asphaltiert? vvv --- #: XXX laut osm: ja (zumindest teilweise) --- #: last_checked: 2020-07-14 (bei Wollin noch Bauarbeiten) vvv --- #: check_frequency: 60d vvv
+#: corrected_by: bwboz/osm note (schlechtes Kopfsteinpflaster, Q3 -> ...)
+Wollin - Schmölln: Asphalt	Q0 53767,97971 54343,98281 54506,98712 54856,98939
+#: corrected_by: bwboz/osm note (Betonplatten, Q1 -> ...)
+Wollin - Schmölln: Asphalt	Q0 54856,98939 55359,99276
+#: corrected_by: bwboz/osm note (schlechtes Kopfsteinpflaster, Q3 -> ...)
+Wollin - Schmölln: Asphalt	Q0 55359,99276 55894,99914
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 Wollin - Schmölln: Asphalt	Q0 55894,99914 55977,100103
 Damme - Eickstedt: schlechtes Kopfsteinpflaster, Sandbankette	Q3+ 49981,99584 50118,99500
 Damme - Eickstedt: Feldweg	Q2 50118,99500 50741,99460 51587,99406 51835,99446

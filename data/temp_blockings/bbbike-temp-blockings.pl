@@ -27257,7 +27257,7 @@ EOF
        source_id => '2147341699',
        data  => <<EOF,
 #: next_check_id: ORANIENBURGER-2018
-# REMOVED (Richtung Süden ist zur Hälfte ein Radweg fertig; das restliche Stück darf man auf dem Gehweg fahren) ---	q4::inwork; 5136,21738 5210,21636 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250 5349,21198
+# REMOVED (Richtung Süden ist zur Hälfte ein Radweg fertig; das restliche Stück darf man auf dem Gehweg fahren) ---	q4::inwork; 5136,21738 5210,21636 5311,21495 5320,21432 5333,21332 5343,21250 5349,21198
 # REMOVED (bis hier in beide Richtungen befahrbar) ---	q4::inwork; 5297,21243 5099,21410 5053,21452 5000,21488
 	q4::inwork; 5000,21488 4810,21730
 EOF
@@ -29277,7 +29277,7 @@ EOF
        data  => <<EOF,
 #: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-04-11
+#: last_checked: 2021-05-24
 #: check_frequency: 60d
 #: next_check: 2021-06-30
 	q3::inwork  8986,16092 9178,16317
@@ -29310,7 +29310,7 @@ EOF
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2021-03-30
 #: XXX_prog: eigentlich q4+::inwork;
-	q4::inwork; 8904,17059 8866,17075 8677,17154
+	q4::inwork; 8904,17059 8870,17073 8860,17077 8677,17154
 # REMOVED (hier nicht mehr?) ---	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
 EOF
      },
@@ -30876,7 +30876,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-23
+#: last_checked: 2021-05-24
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31223,8 +31223,8 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann ist die Fahrbahn wieder offen?
 #: also_indoor: traffic
-#: last_checked: 2021-04-26 (mapillary)
-	q4::inwork -3252,12580 -3444,12580
+#: last_checked: 2021-05-24
+	q4::inwork -3259,12580 -3444,12580
 EOF
      },
      { from  => undef, # 
@@ -32005,7 +32005,7 @@ EOF
        type  => 'handicap',
        source_id => '2147346268',
        data  => <<EOF,
-#: last_checked: 2021-04-11
+#: last_checked: 2021-05-24
 #: next_check: 2021-08-27
 	q2::inwork 8913,16159 9099,16398
 EOF
@@ -32623,6 +32623,31 @@ EOF
        data  => <<EOF,
 #: next_check_id: STERNDAMM-2020
 	q4::inwork 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
+EOF
+     },
+     { from  => 1621880668, # 2021-05-24 20:24
+       until => 1630447200, # 2021-09-01 00:00
+       text  => 'Soorstr.: zwischen Masurenallee und Bredtschneiderstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis August 2021',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: Schild der Wasserbetriebe
+#: also_indoor: traffic (H)
+#: last_checked: 2021-05-24
+#: check_frequency: 60d
+#: next_check: 2021-09-01
+	q4::inwork 1861,11284 1884,11126 1865,11082
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'An der Nordbahn: neue Führung des Mauerwegs im Bereich Bhf. Wilhelmsruh/zukünftiger Bahnhof der Heidekrautbahn, bereits weitgehend fertig, aber noch nicht offiziell eröffnet',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: HEIDEKRAUTBAHN-2021
+#: add_fragezeichen: Ist der neue Weg bereits offiziell eröffnet?
+#: last_checked: 2021-05-24
+#: check_frequency: 30d
+	2::inwork 7236,19689 7273,19682 7435,19547 7446,19522 7504,19459
 EOF
      },
     );

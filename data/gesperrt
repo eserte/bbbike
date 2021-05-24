@@ -77,7 +77,7 @@ Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2788,14364 2905,14754
 Kurt-Schumacher-Damm (Süd)	1 2956,14752 2846,14373 2857,14222
 Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3585,16252
-Ferdinand-Friedensburg-Platz	1 -914,14602 -1005,14604 -1357,14533 -1392,14527 -1484,14513 -1369,14644 -1119,14659 -925,14631
+Ferdinand-Friedensburg-Platz	1 -914,14602 -1005,14604 -1337,14538 -1392,14527 -1484,14513 -1350,14646 -1119,14659 -941,14637
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
 Alt-Müggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
 Prenzlauer Promenade	2 12008,19613 12042,19682 11990,19741 11907,19749
@@ -363,7 +363,7 @@ Bänschstr.	1 14325,12648 14596,12573
 Bänschstr.	1 15005,12443 14798,12502 14681,12534 14661,12523 14588,12542
 Bänschstr.	1 14599,12584 14672,12565 14686,12549 14801,12517 14996,12462
 Rossitter Platz - Machandelweg: verschlossene Türen	2 -107,12220 -76,12236 -45,12243
-Stockholmer Str.	1 8950,17219 8866,17075
+Stockholmer Str.	1 8950,17219 8860,17077
 Schulenburgstr. (Reinickendorf)	1 5345,18675 5547,18665
 Becherweg	1 6227,18299 6232,18435 6226,18590 6217,18619
 Hirschhorner Weg	1 -760,4542 -753,4578 -741,4660 -793,4754 -820,4772
@@ -548,7 +548,7 @@ Bundesallee: Absperrung auf dem Mittelstreifen	3nocross::ignrte 5503,8709 5498,8
 Bundesallee (Richtungsfahrbahn)	1::igndisp 5399,8344 5427,8412 5465,8511 5493,8599 5498,8709 5494,8843
 Bundesallee (Richtungsfahrbahn)	1::igndisp 5494,8843 5503,8709 5498,8598 5472,8507 5433,8407 5399,8344
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -278,14532 -457,14536 -914,14602
-Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -278,14532
+Nonnendammallee (Richtungsfahrbahn)	1::igndisp -941,14637 -278,14532
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2627 4313,2630 4224,2671 4170,2727
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4170,2727 4233,2675 4317,2638 4348,2627
 Königsberger Str. (Mittelstreifen)	3nocross::ignrte 4348,2627 4317,2638 4233,2675 4170,2727
@@ -889,12 +889,7 @@ Adlergestell -> Langer See: Straßenbahntrasse	3::igndisp 26286,-1901 26698,-2322
 Langer See -> Adlergestell: Straßenbahntrasse	3::igndisp 26846,-2176 26698,-2322 26871,-2500
 Bahnhofsvorplatz S-Bhf. Priesterweg	1 7227,6080 7252,6080 7252,6058 7227,6058
 Am Heidehof	1s -1410,2726 -1571,2669 -1612,2785
-Mittelstreifen mit parkenden Autos	3nocross::ignrte 4507,11936 4596,11912 4653,11896
-Otto-Suhr-Allee -> Abbestr.: Mittelstreifen mit parkenden Autos	3::igndisp 4507,11936 4596,11912 4608,11935
-Abbestr. -> Otto-Suhr-Allee: Mittelstreifen mit parkenden Autos	3::igndisp 4608,11935 4596,11912 4653,11896
-Absperrgitter am nördlichen Gehweg	3nocross::ignrte 11473,5131 11676,5185 11799,5191
-Cafeastr. -> Gradestr.: Absperrgitter am nördlichen Gehweg	3::igndisp 11603,5241 11676,5185 11799,5191
-Gradestr. -> Cafeastr.: Absperrgitter am nördlichen Gehweg	3::igndisp 11473,5131 11676,5185 11603,5241
+Nußbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1171,8 +1166,16 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s 14908,11231 14918,11249
-Soorstr.	1s 1861,11284 1884,11126
 Einkaufszentrum am Gesundbrunnen	1 9291,15740 9363,15738
+Mittelstreifen mit parkenden Autos	3nocross::ignrte 4507,11936 4596,11912 4653,11896
+Otto-Suhr-Allee -> Abbestr.: Mittelstreifen mit parkenden Autos	3::igndisp 4507,11936 4596,11912 4608,11935
+Abbestr. -> Otto-Suhr-Allee: Mittelstreifen mit parkenden Autos	3::igndisp 4608,11935 4596,11912 4653,11896
+Absperrgitter am nördlichen Gehweg	3nocross::ignrte 11473,5131 11676,5185 11799,5191
+Cafeastr. -> Gradestr.: Absperrgitter am nördlichen Gehweg	3::igndisp 11603,5241 11676,5185 11799,5191
+Gradestr. -> Cafeastr.: Absperrgitter am nördlichen Gehweg	3::igndisp 11473,5131 11676,5185 11603,5241
+Mittelstreifen	3nocross::ignrte -4412,12179 -4365,12358 -4351,12460
+Gatower Str. -> Alfred-Balen-Weg: Mittelstreifen	3::igndisp -4351,12460 -4365,12358 -4169,12368
+Alfred-Balen-Weg -> Gatower Str.: Mittelstreifen	3::igndisp -4169,12368 -4365,12358 -4412,12179
 Mittelstreifen	3nocross::ignrte 9267,15790 9291,15740 9309,15700
 Zufahrtsstr. am Einkaufszentrum -> Brunnenstr.: Mittelstreifen	3::igndisp 9363,15738 9291,15740 9309,15700
 Mittelstreifen	3nocross::ignrte 4596,3738 4603,3704 4603,3658
@@ -1295,7 +1298,7 @@ An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276
 Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276 19276,6359
 nicht überquerbar	3nocross::ignrte 504,11243 571,11255 704,11273
 Mittelstreifen	3nocross::ignrte -4078,11800 -4033,11786 -3820,11721 -3708,11686
-Südpark -> Heerstr.: Mittelstreifen	3::igndisp -4027,11818 -4033,11786 -3820,11721
+Südpark -> Heerstr.: Mittelstreifen	3::igndisp -4030,11794 -4033,11786 -3820,11721
 Mittelstreifen	3nocross::ignrte -3481,14523 -3498,14413 -3501,14365 -3506,14306
 Augusta-Ufer -> Altstädter Ring: Mittelstreifen	3::igndisp -3440,14498 -3501,14365 -3506,14306
 Altstädter Ring -> Augusta-Ufer: Mittelstreifen	3::igndisp -3498,14413 -3501,14365 -3440,14498
@@ -2029,7 +2032,7 @@ Pauline-Staegemann-Str. -> Mollstr.: Straßenbahntrasse	3::igndisp 11578,13310 11
 Mollstr. -> Berolinastr.: Straßenbahntrasse	3::igndisp 11681,13161 11560,13232 11476,13052
 Berolinastr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11476,13052 11560,13232 11526,13252
 schlecht passierbar	3nocross::ignrte -4078,11800 -4033,11786 -3820,11721 -3708,11686
-Südpark -> Heerstr.: schlecht passierbar	3::igndisp -4027,11818 -4033,11786 -3820,11721
+Südpark -> Heerstr.: schlecht passierbar	3::igndisp -4030,11794 -4033,11786 -3820,11721
 nicht passierbarer Mittelstreifens	3nocross::ignrte 2523,5114 2560,5044 2577,4959 2596,4907
 Thielallee -> Otto-von-Simson-Str.: nicht passierbarer Mittelstreifens	3::igndisp 2523,5114 2560,5044 2627,5095
 Thielallee -> Hittorfstr.: nicht passierbarer Mittelstreifens	3::igndisp 2596,4907 2577,4959 2516,4936
@@ -3162,6 +3165,7 @@ Schranke	BNP:2:-157:trailer=5 19617,6208
 Schranke	BNP:5:-109:trailer=15 22855,4348
 Drängelgitter	BNP:3:-193:trailer=10 32295,6272
 Drängelgitter	BNP:3:-187:trailer=10 32418,6303
+Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -196,16060 -203,16064 -205,16086 -224,16095 -265,16111
 Wildensteiner Str.: Einbahnstraßenregelung (wegen SEV)	1::inwork 18627,8475 18528,8331
 Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, teilweise lange Umwege über die Gehwege möglich	2::inwork 16227,12280 16159,12301 16056,12317
 Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, teilweise lange Umwege über die Gehwege möglich	2::inwork 16144,12388 16159,12301 16158,12191
@@ -3214,7 +3218,7 @@ David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18
 Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:inwork 12714,8249 12545,8209
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
-Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
+Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8095,14056 -8183,14041
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
 Henriette-Lustig-Str.: teilweise gesperrt	2::inwork 21375,4974 21380,5003
 Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
@@ -3822,3 +3826,4 @@ Bundesallee/Spichernplatz, linker Gehweg bis Pariser Str.	1::igndisp 5423,9932 5
 Bundesallee/Spichernplatz, Radweg bis Nachodstr.	1::igndisp 5487,9864 5491,9935
 Buschkrugallee, linker Gehweg ab Fußgängerampel bis zur Bürgerstr.	1::igndisp 13283,6354 13316,6320
 Otto-Suhr-Allee, linker Gehweg bis zur Fußgängerfurt	1::igndisp 4653,11896 4608,11935
+Jaczostr./Heerstr. - Südpark: linker Gehweg	1::igndisp -4029,11803 -4078,11800

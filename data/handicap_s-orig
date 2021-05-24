@@ -520,7 +520,7 @@ Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 #: XXX laut vmz bis Anfang 2019, laut fritz/rbb bis 30.06.2021
 #: by: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
 #: also_indoor: traffic (H)
-#: last_checked: 2021-05-01
+#: last_checked: 2021-05-24
 #: check_frequency: 90d
 #: next_check: 2021-06-30
 #: valid: -20210630
@@ -589,7 +589,7 @@ Matthäikirchplatz: wegen Bauarbeiten am Museum der Moderne mögliche Behinderunge
 #: next_check_id: FASANEN-2021
 #: source_id: 2147346973 (Fernwärmebaustelle in Höhe Kantstr., bis März 2022)
 #: source_id: 2147346972 (- " -)
-#: last_checked: 2021-05-01
+#: last_checked: 2021-05-24
 #: check_frequency: 90d
 #: next_check: 2021-09-30
 #: valid: -20220331
@@ -765,7 +765,7 @@ Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig, langer Umweg an der Seddine
 # 
 #: XXX laut rbb und Halteverbotsschildern bis 31.08.2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-04-26
+#: last_checked: 2021-05-23
 #: check_frequency: 30d
 #: next_check: 2021-08-31
 #: valid: -20210831
@@ -811,11 +811,10 @@ Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweich
 Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
-#: XXX unklar, ob die Einbahnstraßenregelung für Radfahrer gelten soll
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2021-05-22 vvv
+#: last_checked: 2021-05-24 vvv
 # REMOVED (hier kaum noch Einschränkungen) --- Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
-Dennewitzstr.: Einbahnstraßenregelung	q3::inwork; 8159,10430 8058,10306
+Dennewitzstr.: Einbahnstraßenregelung, gemeinsamer Geh- und Radweg	q3::inwork; 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
 # REMOVED (nicht mehr) --- Pohlstr.: Bauarbeiten, Umfahrung über Gehweg	q3::inwork 8159,10430 7932,10475
 #: last_checked ^^^
@@ -1484,9 +1483,9 @@ Pankeweg: Fußgänger	q1 8232,15220 8268,15312
 Pankeweg: Fußgänger	q1 8312,15470 8156,15614 8176,15635 8150,15700 8164,15840 8250,16008 8270,16047 8330,16160 8389,16214
 Pankeweg: Fußgänger, eng	q2 8486,16425 8522,16458 8573,16443 8592,16436
 Pankeweg: Fußgänger	q1 8592,16436 8688,16533
-Pankeweg: Fußgänger	q1 8759,16684 8776,16718 8839,16873 8904,17059 8927,17119 9009,17255 9017,17290 9034,17357 9073,17361 9128,17455 9136,17509 9120,17553 9110,17581 9131,17664 9089,17693 9110,17784 9147,17941
+Pankeweg: Fußgänger	q2 8759,16684 8776,16718 8839,16873 8904,17059 8927,17119 9009,17255 9017,17290 9034,17357 9073,17361 9128,17455 9136,17509 9120,17553 9110,17581 9131,17664 9089,17693 9110,17784 9147,17941
 Pankeweg: Fußgänger	q1 8839,16873 8823,16877 8804,16881
-Pankeweg: Fußgänger	q1 8721,16689 8804,16881 8866,17075
+Pankeweg: Fußgänger	q1 8721,16689 8804,16881 8870,17073
 Pankeweg: Fußgänger	q1 8303,15298 8260,15226 8266,15134
 Uferweg am Tegeler Hafen: Fußgänger	q1 1259,20303 1349,20345 1534,20421 1569,20408 1610,20385 1655,20388 1756,20405 1858,20431 1863,20478
 (Uferweg am Tegeler Hafen - Berliner Str.): Fußgänger	q1 1863,20478 1929,20501
@@ -1773,7 +1772,7 @@ Washingtonplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 8
 	q4::igndisp 11754,10516 11734,10563 11690,10543 11708,10497 11754,10516
 südliches Spreeufer: besonders an Wochenenden tagsüber sehr viele Fußgänger	q2 7437,12368 7561,12527 7670,12576
 (Ruwersteig - Klüsserather Weg): gemeinsamer Rad- und Gehweg, eng und kurvig	q2 19364,13033 19376,13092 19425,13089
-(Fontanestr. - Kopenhagener Str.): Fußgänger	q2 7522,19804 7518,19762 7617,19748
+(Fontanestr. - Kopenhagener Str.): Fußgänger	q2 7522,19804 7518,19762 7578,19753 7617,19748
 #: XXX_prog: Bordsteine (2x)
 Oleanderstr.: Fußgänger, Bordsteine	q2 14271,14024 14298,14015
 #: by: Sylke Sallmon:
@@ -1868,7 +1867,7 @@ KGA Plötzensee: einige Fußgänger	q1 4963,15259 4883,15289 4777,15398 4675,15529 
 Hauptweg - Uferweg: einige Fußgänger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fußgänger	q0- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): einige Fußgänger	q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
-(Am Hohenzollernkanal): einige Fußgänger	q0- 1349,15797 1232,15804 364,15810 44,15897 -203,16064 -205,16086 -224,16095 -265,16111 -822,16535 -910,16608
+(Am Hohenzollernkanal): einige Fußgänger	q0- 1349,15797 1232,15804 364,15810 44,15897 -196,16060 -203,16064 -205,16086 -224,16095 -265,16111 -822,16535 -910,16608
 Saatwinkler Steg, Rohrbruchwiesen: einige Fußgänger	q1+ -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
 Maselakepark: Fußgänger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510,16357
 Maselakepark: Fußgänger	q1 -2587,16600 -2632,16347
@@ -3049,7 +3048,7 @@ Schlosspark Schönhausen: einige Fußgänger	q1+ 10589,19275 10636,19289 10857,1937
 Bitburger Str. teilweise relativ eng	q2 15548,17684 15515,17717 15488,17721 15461,17702
 (Dohnagestell - Plötzensee): eng	q2 5086,15664 5113,15596 5134,15565
 (Uferweg - Bocksfeldstr.): einige Fußgänger	q1 -3928,11526 -3909,11596 -3872,11619
-(Uferweg): Fußgänger	q1 -4245,11400 -4209,11424 -4181,11458 -4106,11519 -4028,11533 -3928,11526 -3828,11491 -3785,11445 -3752,11373
+(Uferweg): Fußgänger	q1 -4245,11400 -4204,11432 -4181,11458 -4106,11519 -4028,11533 -3928,11526 -3828,11491 -3785,11445 -3752,11373
 #: note: auch auf dem Straßenabschnitt
 Imchenallee: Fußgänger, besonders an schönen Tagen	q1 -7714,4279 -7687,4233 -7561,4191 -7326,4195 -7195,4194 -7102,4246 -7025,4410 -6990,4531 -6920,4702 -6879,4775 -6811,4893
 Uferweg: Fußgänger	q1 -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
@@ -3279,7 +3278,7 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://viz.berlin.de/2020/03/verkehrsvorschau-fuer-freitag-06-03-2020/ (wird bei der Sanierung der Bushaltestelle auch was am Radweg gemacht?)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10410
 #: by: http://altstadtmanagement-spandau.de/isek-spandau/projekte-und-massnahmen/ (Neugestaltung Rathausvorplatz: Erwähnung der Radwegführung)
-#: last_checked: 2020-10-12 vvv
+#: last_checked: 2021-05-24 vvv
 #: check_frequency: 150d vvv
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3511,14260 -3517,14218 -3552,14082
@@ -3621,6 +3620,10 @@ Windhuker Str.: einige Fußgänger	q1 5426,16539 5712,16245 5748,16235
 #: XXX_prog BS an der Ludwig-Renn-Str., ansonsten trotzdem q2
 (Weg im Hochzeitspark): Fußgänger, geschützte Grünanlage, Bordstein	q2 20547,16485 20553,16403 20583,16317
 Voigtstr.: einige Fußgänger	q3 14836,12826 14835,12801
+(Uferweg an der Scharfen Lanke): Fußgänger	q1 -4204,11432 -4246,11438
+(Gorgasring - Nonnendammallee): gemeinsamer Geh- und Radweg, nicht besonders breit	q2 -695,14819 -676,14773 -679,14743 -941,14637
+(Uferweg an der Stockholmer Str.): Fußgänger	q2 8982,17299 8957,17217 8870,17073
+Heubudenbrücke: Fußgänger	q2 9017,17290 8982,17299 8973,17301
 # 
 ######################### User Contributions #################################
 # 
@@ -3909,7 +3912,7 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 # REMOVED --- (Mauerweg Forst Spandau): kurvenreich, schmal, manchmal Fußgänger u. Skater	q1 -7032,19431 -7069,19436 -7397,19289 -7703,19147 -7759,19104 -7862,19113 -8011,19059
 (Weverstr. - Gatower Str.): Fußgänger	q1 -4169,12368 -4365,12358
 (Südpark): Fußgänger	q1 -3708,11686 -3712,11714 -3732,11772 -3818,11919 -3895,11967 -3931,12056 -4012,12111 -4033,12108 -4048,12107 -4063,12104 -4092,12062
-(Südpark): Fußgänger	q1 -4033,11786 -4027,11818 -4090,11954 -4095,12006 -4092,12062 -4110,12109 -4144,12187 -4169,12368
+(Südpark): Fußgänger	q1 -4033,11786 -4030,11794 -4029,11803 -4027,11818 -4090,11954 -4095,12006 -4093,12040 -4092,12062 -4106,12100 -4144,12187 -4169,12368
 (Glühwürmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
 Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508
 Spreeweg: eng und unübersichtlich	q2 2955,13508 2920,13595 2920,13612 2908,13656 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602 2321,13572

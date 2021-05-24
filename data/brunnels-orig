@@ -214,13 +214,15 @@ Olympische Brücke	Br 137,12056 193,12070
 Saatwinkler Steg	Br -1073,16610 -995,16701
 Gartenfelder Brücke	Br -302,15602 -302,15546
 # 
+#: next_check_id: TEGELERBRUECKE-2021
 #: by: https://binnenschifffahrt-online.de/2020/02/featured/12772/vorbereitungen-fuer-ersatzneubau-der-tegeler-bruecke-in-berlin-starten/ (ab August 2020 bis Dezember 2023)
 #: by: https://www.berliner-woche.de/tegel/c-bauen/wasserstrassen-neubauamt-vergibt-bauauftrag-fuer-den-neubau-der-tegeler-bruecke_a294343 (Fertigstellung Dezember 2023)
 #: XXX erstmal wird eine Behelfsbrücke erstellt (westlich); die neue Brücke wird Platz für eine Radwegunterführung haben
 #: source_id: 2147345790 (nicht mehr aktiv)
 #: source_id: 2147346453 (Leitungsbauarbeiten, bis 16.10.2020)
-#: last_checked: 2020-11-07
-#: check_frequency: 90d
+#: last_checked: 2021-05-24
+#: check_frequency: 180d
+#: next_check: 2023-12-01
 Tegeler Brücke	Br -242,15982 -236,16043 -226,16086
 # 
 Spandauer-See-Brücke	Br -2209,16501 -1928,16423
@@ -475,7 +477,7 @@ Fußgängerunterführung Allee der Kosmonauten	Tu 19826,13444 19819,13606
 Fußgängerunterführung S-Bahnhof Raoul-Wallenberg-Str.	Tu 20050,16292 20109,16264
 Fußgängerbrücke über den Stichkanal	Br 2126,53 2078,41
 Schönwalder-Straßen-Brücke	Br 8229,15128 8266,15134
-Soldiner Brücke	Br 8866,17075 8904,17059
+Soldiner Brücke	Br 8870,17073 8904,17059
 Hugo-Heimann-Brücke	Br 9147,17941 9171,17937 9190,17932
 Gotenburgsteg	Br 8839,16873 8823,16877 8804,16881
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4742 (Name)
@@ -501,7 +503,7 @@ Walter-Röber-Brücke	Br 8164,15840 8140,15859
 Osloer-Straßen-Brücke	Br 8721,16689 8759,16684
 Chausseestraßenbrücke	Br 8153,14769 8138,14786
 Gerichtstraßenbrücke	Br 8290,15304 8268,15312
-(Heubudenbrücke)	Br 9017,17290 8973,17301
+(Heubudenbrücke)	Br 9017,17290 8982,17299
 Karolinenbrücke	Br 1883,20639 1876,20667
 Karolinensteg	Br 1761,20539 1741,20566
 Mühlensteg	Br 1721,20603 1697,20623

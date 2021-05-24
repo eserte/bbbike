@@ -2467,7 +2467,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-04-11
+#: last_checked: 2021-05-24
 #: check_frequency: 60d
 #: next_check: 2021-06-30
 	q3::inwork  8986,16092 9178,16317
@@ -2762,7 +2762,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-23
+#: last_checked: 2021-05-24
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2879,8 +2879,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: add_fragezeichen: Wann ist die Fahrbahn wieder offen?
 #: also_indoor: traffic
-#: last_checked: 2021-04-26 (mapillary)
-	q4::inwork -3252,12580 -3444,12580
+#: last_checked: 2021-05-24
+	q4::inwork -3259,12580 -3444,12580
 ',
          'from' => undef,
          'id' => 3267,
@@ -3145,7 +3145,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        {
-         'data' => '#: last_checked: 2021-04-11
+         'data' => '#: last_checked: 2021-05-24
 #: next_check: 2021-08-27
 	q2::inwork 8913,16159 9099,16398
 ',
@@ -3637,6 +3637,33 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Johannes-Werner-Str.: Gleisbauarbeiten, Fahrbahn gesperrt, bis 2.7.2021',
          'type' => 'handicap',
          'until' => 1625238000
+       },
+       {
+         'data' => '#: note: Schild der Wasserbetriebe
+#: also_indoor: traffic (H)
+#: last_checked: 2021-05-24
+#: check_frequency: 60d
+#: next_check: 2021-09-01
+	q4::inwork 1861,11284 1884,11126 1865,11082
+',
+         'from' => 1621880668,
+         'id' => 3379,
+         'text' => 'Soorstr.: zwischen Masurenallee und Bredtschneiderstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis August 2021',
+         'type' => 'handicap',
+         'until' => 1630447200
+       },
+       {
+         'data' => '#: next_check_id: HEIDEKRAUTBAHN-2021
+#: add_fragezeichen: Ist der neue Weg bereits offiziell eröffnet?
+#: last_checked: 2021-05-24
+#: check_frequency: 30d
+	2::inwork 7236,19689 7273,19682 7435,19547 7446,19522 7504,19459
+',
+         'from' => undef,
+         'id' => 3380,
+         'text' => 'An der Nordbahn: neue Führung des Mauerwegs im Bereich Bhf. Wilhelmsruh/zukünftiger Bahnhof der Heidekrautbahn, bereits weitgehend fertig, aber noch nicht offiziell eröffnet',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

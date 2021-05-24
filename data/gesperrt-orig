@@ -108,7 +108,7 @@ Kurt-Schumacher-Damm (Süd)	1 2831,14219 2803,14288 2788,14364 2905,14754
 Kurt-Schumacher-Damm (Süd)	1 2956,14752 2846,14373 2857,14222
 Kurt-Schumacher-Damm (Nord)	1 3564,16294 3643,16437 3676,16497 3753,16638 3853,16825 3940,16861
 Kurt-Schumacher-Damm (Nord)	1 3940,16861 3788,16621 3711,16481 3585,16252
-Ferdinand-Friedensburg-Platz	1 -914,14602 -1005,14604 -1357,14533 -1392,14527 -1484,14513 -1369,14644 -1119,14659 -925,14631
+Ferdinand-Friedensburg-Platz	1 -914,14602 -1005,14604 -1337,14538 -1392,14527 -1484,14513 -1350,14646 -1119,14659 -941,14637
 Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -3247,14713 -3255,14685 -3301,14669 -3352,14676
 Alt-Müggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
 Prenzlauer Promenade	2 12008,19613 12042,19682 11990,19741 11907,19749
@@ -568,7 +568,7 @@ Bänschstr.	1 15005,12443 14798,12502 14681,12534 14661,12523 14588,12542
 Bänschstr.	1 14599,12584 14672,12565 14686,12549 14801,12517 14996,12462
 Rossitter Platz - Machandelweg: verschlossene Türen	2 -107,12220 -76,12236 -45,12243
 #: by: Robert (no mail):
-Stockholmer Str.	1 8950,17219 8866,17075
+Stockholmer Str.	1 8950,17219 8860,17077
 #: by: Arlt:
 Schulenburgstr. (Reinickendorf)	1 5345,18675 5547,18665
 #: by: müller-list:
@@ -879,7 +879,7 @@ Bundesallee (Richtungsfahrbahn)	1::igndisp 5494,8843 5503,8709 5498,8598 5472,85
 #: note: ^^^
 # 
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -278,14532 -457,14536 -914,14602
-Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -278,14532
+Nonnendammallee (Richtungsfahrbahn)	1::igndisp -941,14637 -278,14532
 #: note: Mittelstreifen vvv
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2627 4313,2630 4224,2671 4170,2727
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4170,2727 4233,2675 4317,2638 4348,2627
@@ -1259,7 +1259,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-24
 #: check_frequency: 30d
 #: next_check: 2021-06-30
 # REMOVED (Arbeiten am Bahnhof dauern länger) --- #: next_check: 2021-04-01
@@ -1360,8 +1360,8 @@ Adlergestell: Straßenbahntrasse	3nocross 26286,-1901 26698,-2322 26871,-2500
 Bahnhofsvorplatz S-Bhf. Priesterweg	1 7227,6080 7252,6080 7252,6058 7227,6058
 #: by: mapillary
 Am Heidehof	1s:q3 -1410,2726 -1571,2669 -1612,2785
-Otto-Suhr-Allee: Mittelstreifen mit parkenden Autos	3nocross 4507,11936 4596,11912 4653,11896
-Gradestr.: Absperrgitter am nördlichen Gehweg	3nocross 11473,5131 11676,5185 11799,5191
+#: note: gesehen an Pfingstmontag 2021
+Nußbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1717,9 +1717,10 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 #: add_fragezeichen: gibt es die Einbahnstraßenregelung in der Soorstr. noch?
 #: source_id: 2147347063
 #: osm_watch: way id="4708164" version="16"
-#: last_checked: 2021-03-20
-#: check_frequency: 90d
-#: next_check: 2021-05-17
+#: last_checked: 2021-05-24
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2021-09-01
+#: valid: 20210901-
 Soorstr.	1s:q3 1861,11284 1884,11126
 # 
 Einkaufszentrum am Gesundbrunnen	1 9291,15740 9363,15738
@@ -1729,6 +1730,9 @@ Einkaufszentrum am Gesundbrunnen	1 9291,15740 9363,15738
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Otto-Suhr-Allee: Mittelstreifen mit parkenden Autos	3nocross 4507,11936 4596,11912 4653,11896
+Gradestr.: Absperrgitter am nördlichen Gehweg	3nocross 11473,5131 11676,5185 11799,5191
+Gatower Str.: Mittelstreifen	3nocross -4412,12179 -4365,12358 -4351,12460
 Brunnenstr.: Mittelstreifen	3nocross 9267,15790 9291,15740 9309,15700
 Hindenburgdamm: Mittelstreifen	3nocross 4596,3738 4603,3704 4603,3658
 An der Urania: breiter Mittelstreifen	3nocross 6740,10755 6685,10690 6532,10529
@@ -3252,6 +3256,12 @@ Drängelgitter	BNP:3::trailer=10 32418,6303
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: TEGELERBRUECKE-2021
+#: last_checked: 2021-05-24
+#: check_frequency: 180d
+#: next_check: 2023-12-01
+Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -196,16060 -203,16064 -205,16086 -224,16095 -265,16111
+# 
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=75609
 #: XXX bis wann ist gilt hier die Einbahnstraßenregelung?
 #: XXX_prog: eigentlich 1s:q4:inwork, kollidiert aber mit dem normalen handicap_s-orig-Eintrag
@@ -3328,7 +3338,7 @@ Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,1
 #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022)
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße.
 #: osm_watch: way id="308312347" version="3"
-#: last_checked: 2021-03-29 (daf)
+#: last_checked: 2021-05-24
 #: check_frequency: 90d
 #: next_check: 2022-08-15
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
@@ -3584,7 +3594,7 @@ Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: source_id ^^^
 #: also_indoor ^^^
 # 
-#: last_checked: 2021-04-19
+#: last_checked: 2021-05-24
 #: check_frequency: 60d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -3595,7 +3605,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
 #: osm_watch: node id="6778873745" version="1"
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-24
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3655,7 +3665,7 @@ Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,815
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2020-08-23
 #: check_frequency: 60d
-Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
+Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8095,14056 -8183,14041
 # 
 # REMOVED (bei osm nicht gesperrt) --- #: osm_watch: way id="686305629" version="2" --- #: last_checked: 2019-09-14 --- #: check_frequency: 90d --- Hohenloher Weg: Bauarbeiten, gesperrt	2::inwork -8295,15778 -8178,15741
 # 
@@ -3692,7 +3702,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="5096644" version="16"
 #: priority: #C
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-24
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
