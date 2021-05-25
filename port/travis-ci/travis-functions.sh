@@ -59,7 +59,7 @@ init_apt() {
     then
 	if [ ! -e /etc/apt/sources.list.d/mydebs.bbbike.list ]
 	then
-	    wget -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | sudo apt-key add -
+	    wget --connect-timeout=10 --tries=5 -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | sudo apt-key add -
 	    sudo sh -c "echo deb http://mydebs.bbbike.de ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~"
 	    sudo mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
 	fi
