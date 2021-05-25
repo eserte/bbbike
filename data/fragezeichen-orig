@@ -1493,7 +1493,7 @@ Siegfriedstr.: Radstreifen geplant, vielleicht sogar geschützte Radstreifen	?::p
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7739
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/radweg-an-der-marzahner-chaussee-erst-nach-brueckenbau_a227482 (nach Fertigstellung der Rhinstraßenbrücke, mit der Planung wird 2020 begonnen)
-#: osm_watch: way id="27959240" version="41"
+#: osm_watch: way id="27959240" version="42"
 #: osm_watch: way id="878343305" version="7"
 #: last_checked: 2021-05-15
 #: check_frequency: 120d
@@ -2892,7 +2892,7 @@ Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Geplante Straße; Qualität? Wird de
 #: by: https://twitter.com/weddingweiser/status/1343568926601580545 (Umleitung beendet)
 #: XXX laut osm: opening_date=2021-04
 #: osm_watch: way id="237716417" version="8"
-#: last_checked: 2021-04-24 (daf)
+#: last_checked: 2021-05-23 (martin)
 # REMOVED --- #: next_check: 2021-04-01
 Golda-Meir-Steg: Fußgängerbrücke in Bau	?::inwork 7912,14160 7958,14186
 # 
@@ -3740,6 +3740,7 @@ S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12
 #: by: https://www.berliner-zeitung.de/mensch-metropole/strassenbahnen-und-busse-der-bvg-sind-langsamer-geworden-li.88468
 #: XXX Planung von Busspuren vvv
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
+#: source_id: 2147347219 (Leitungsarbeiten bis Ende 2021; haben diese etwas mit der geplanten Busspur zu tun, oder verzögern sie die Einrichtung derselben?)
 #: osm_watch: way id="161883479" version="14"
 #: last_checked: 2021-02-20 (mapillary)
 #: check_frequency: 60d
@@ -3778,6 +3779,7 @@ Daumstr.: neue Busspur wurde angeordnet	?::projected; -1485,15463 -1389,15285 -1
 # REMOVED (nein) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf (ausgeführt) --- #: XXX hier auch schon bei osm eingetragen; vielleicht auch nur Änderung der Gültigkeitsdauer? --- #: osm_watch: way id="428550555" version="8" --- #: last_checked: 2020-10-12 --- Charlottenburger Chaussee: ist die Busspur für Radfahrer frei?	?; -1972,13455 -2047,13434 -2088,13413 -2241,13320 -2419,13237
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf (Ausführung steht aus, Einwände des Bezirks)
+#: source_id: 2147347217 (bis 19.8.2021, haben die Bauarbeiten etwas mit der geplanten Busspur zu tun?)
 #: osm_watch: way id="4978664" version="27"
 #: last_checked: 2021-02-26 (siehe Kleine Anfrage)
 #: check_frequency: 90d
@@ -4145,14 +4147,13 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
 #: source_id: 2147346783 (Leitungsarbeiten bis 12.2.2021) (inaktiv)
 #: osm_watch: way id="4588059" version="25"
-#: priority: #C
+#: priority: #C vvv
 #: last_checked: 2021-05-18 vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2021-05-15
 # REMOVED (-> gesperrt_car-orig) --- Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # REMOVED (ja) --- Nostitzstr.: hier auch nur Anlieger frei?	? 9552,9602 9524,9426
 # REMOVED (ja) --- Solmsstr.: hier auch nur Anlieger frei?	? 9676,9564 9650,9404
-Riemannstr.: hier auch nur Anlieger frei?	? 9767,9386 9650,9404
 Am Tempelhofer Berg: hier auch nur Anlieger frei?	? 9295,9047 9298,9112
 Kopischstr.: hier auch nur Anlieger frei?	? 9459,9019 9477,9113
 Kloedenstr.: hier auch nur Anlieger frei?	? 9654,8991 9669,9080
@@ -4160,6 +4161,7 @@ Willibald-Alexis-Str.: hier auch nur Anlieger frei?	? 9797,9063 9669,9080
 Arndtstr.: hier auch nur Anlieger frei?	? 9795,9162 9674,9179
 #: check_frequency ^^^
 #: last_checked ^^^
+#: priority ^^^
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084639.php
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/durchfahrt-verboten_a310398
@@ -5852,6 +5854,13 @@ Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7477,17
 #: next_check ^^^
 #: XXX ^^^
 # 
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.1066326.php (im Zuge des Bebauungsplans XXI-29)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/10210029_blatt1_vorl_abz_barrierefrei.pdf
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/10210029_blatt2_vorl_abz_barrierefrei.pdf
+#: last_checked: 2021-05-25 (öffentliche Auslegung des Bebauungsplanentwurfs)
+#: check_frequency: 360d
+Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 21089,9223
+# 
 #: ignore ^^^
 # 
 ######################################################################
@@ -7050,7 +7059,8 @@ Bebauungsplan XVI-58: Planstraße	?::projected 31943,3114 31840,3126 31857,3004 3
 #: by: https://www.berliner-woche.de/spandau/c-bauen/so-geht-es-in-der-altstadt-spandau-weiter_a246535
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2020/pressemitteilung.889161.php
 #: by: https://www.berliner-woche.de/spandau/c-bauen/autofreie-promenade-und-ein-wassergarten_a252877 (2021 beginnt der Ausbau der Wasserstraße, parallel dazu wird der Uferweg gebaut)
-#: next_check: 2021-06-01
+#: by: http://altstadtmanagement-spandau.de/projekt/wegeverbindung-am-stresowufer/ (2021 Bauplanung, Mitte 2021 Abbaggerung des Spandauer Horns)
+#: next_check: 2022-03-01
 Stresowufer: ein Uferweg wird entstehen	?::projected -3393,13777 -3300,13923 -3104,14079 -2961,14200 -2919,14215
 # 
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993
@@ -7144,6 +7154,7 @@ Rote Kaserne West: neue Straßen	?::projected -13257,1337 -13239,1179 -13375,1330
 #: by: https://baucam159.it-wms.com/ (webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/11058-kleinere-projekte-spandau-reinickendorf/?postID=679789#post679789
 #: by: https://www.buwog.de/de/projekt/seed
+#: osm_watch: way id="125758273" version="10"
 # REMOVED (realisiert) --- wird hier die Kleingartenanlage aufgehoben?
 #: XXX Bebauungsplan 5-107 in Spandau
 #: last_checked: 2021-05-24

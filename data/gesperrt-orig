@@ -3243,7 +3243,7 @@ offenes Tor	BNP:3 12592,9249
 Drängelgitter	BNP:3::trailer=10 1035,14996
 #: next_check_id: BUSINESSPARKBERLIN-2020
 #: add_fragezeichen: existiert die Schranke noch?
-#: last_checked: 2020-11-28
+#: last_checked: 2021-05-20 (mapillary)
 #: check_frequency: 180d
 Schranke, umständlich zu umfahren	BNP:5::trailer=15 19608,-1953
 Schranke	BNP:2::trailer=5 19617,6208
@@ -3257,6 +3257,7 @@ Drängelgitter	BNP:3::trailer=10 32418,6303
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: next_check_id: TEGELERBRUECKE-2021
+#: osm_watch: way id="930770437" version="2"
 #: last_checked: 2021-05-24
 #: check_frequency: 180d
 #: next_check: 2023-12-01
@@ -3661,12 +3662,7 @@ Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:q4:inwork 
 #: check_frequency: 21d
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 # 
-#: next_check_id: METROPOLITANPARK-2019
-#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-08-23
-#: check_frequency: 60d
-Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8095,14056 -8183,14041
-# 
+# REMOVED (offen) --- #: next_check_id: METROPOLITANPARK-2019 --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-08-23 --- #: check_frequency: 60d --- Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8095,14056 -8183,14041
 # REMOVED (bei osm nicht gesperrt) --- #: osm_watch: way id="686305629" version="2" --- #: last_checked: 2019-09-14 --- #: check_frequency: 90d --- Hohenloher Weg: Bauarbeiten, gesperrt	2::inwork -8295,15778 -8178,15741
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019

@@ -4345,6 +4345,8 @@ Straﬂe V: Asphalt	Q0 -422,16294 -386,16347
 Straﬂe W: Asphalt	Q0 -495,16355 -460,16408
 Straﬂe X: Asphalt	Q0 -577,16421 -542,16475
 Im Saatwinkel: Asphalt	Q0 -744,16895 -814,16830 -792,16659 -779,16591
+#: add_fragezeichen: ist hier asphaltiert?
+#: XXX laut osm surface=asphalt
 Halligweg: Rasengittersteine, in der Mitte unbefestigte Spur	Q2+ -779,16591 -910,16608
 Halligweg: Asphalt	Q0 -910,16608 -916,16641 -993,16682
 Halligweg: Rasengittersteine	Q2 -993,16682 -1437,17052 -1458,17089
@@ -11912,7 +11914,7 @@ Ruppiner Chaussee: Asphalt, einige Sch‰den	Q0- 1461,21203 1427,21237 1347,21428 
 (Einfahrt Bauhaus): Asphalt	Q0 4988,17172 5020,17157 5158,17138
 #: next_check_id: BEBAUUNGSPLAN-XVI-81
 #: osm_watch: way id="567597386" version="7"
-#: osm_watch: way id="567597383" version="8"
+#: osm_watch: way id="567597383" version="9"
 #: add_fragezeichen: wann wird die Fahrbahndecke endg¸ltig hergestellt? vvv
 #: last_checked: 2021-05-09 vvv
 #: check_frequency: 120d vvv
