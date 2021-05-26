@@ -2762,7 +2762,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-24
+#: last_checked: 2021-05-26
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2965,9 +2965,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1601923909,
          'id' => 3284,
          'source_id' => '2147346452',
-         'text' => 'Torstr.: Engstelle von Rosenthaler Platz Richtung Mollstr., bis 31.5.2021',
+         'text' => 'Torstr.: Engstelle von Rosenthaler Platz Richtung Mollstr., bis 30.6.2021',
          'type' => 'handicap',
-         'until' => 1622473200
+         'until' => 1625065200
        },
        undef,
        undef,
@@ -3453,7 +3453,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: add_fragezeichen: Wie lange gehen die Bauarbeiten?
-#: also_indoor: traffic
+#: also_indoor: traffic (G)
 #: priority: #A
 #: last_checked: 2021-04-28
 	q4::inwork 2523,5114 2746,5537
@@ -3664,6 +3664,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'An der Nordbahn: neue Führung des Mauerwegs im Bereich Bhf. Wilhelmsruh/zukünftiger Bahnhof der Heidekrautbahn, bereits weitgehend fertig, aber noch nicht offiziell eröffnet',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	2::inwork 14962,-15017 15046,-14607
+',
+         'from' => 1622325600,
+         'id' => 3381,
+         'source_id' => 'LS/722-W/21/077',
+         'text' => 'Ortsdurchfahrt Groß Machnow: Bauarbeiten, Fahrbahn gesperrrt, evtl. sind auch Radfahrer betroffen, 31.05.2021 bis 20.08.2021',
+         'type' => 'gesperrt',
+         'until' => 1629496800
        }
      
 );

@@ -697,8 +697,8 @@ Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12494,85
 #: osm_watch: way id="822805265" version="6"
 #: also_indoor: traffic (G)
 #: last_checked: 2021-03-30
-#: check_frequency: 60d
-#: next_check: 2021-06-04
+#: check_frequency: 90d
+#: next_check: 2021-06-30
 Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -723,13 +723,13 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: source_id: IM_022515
 #: source_id: 2147338550
 #: source_id: LMS-BR_r_LMS-BR_19252
-#: source_id: 2147342527 (bis Anfang Juni 2021, Gesamtmaßnahme bis 2024)
+#: source_id: 2147342527 (bis Ende Juni 2021, Gesamtmaßnahme bis 2024)
 #: osm_watch: way id="585753318" version="8"
 #: osm_watch: way id="71392596" version="13"
 #: also_indoor: traffic
 #: last_checked: 2021-05-22 vvv
-#: check_frequency: 30d
-#: next_check: 2021-06-04
+#: check_frequency: 45d
+#: next_check: 2021-06-30
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
 # REMOVED (hier mittlerweile weitgehend befahrbar) --- Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187
 # REMOVED (laut osm hier nicht mehr) --- #: check_frequency: 30d --- #: next_check: 2020-10-20 --- Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12753,8187 12794,8103
@@ -754,7 +754,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 ### Lichtenberg ###
 # 
 #: next_check_id: RHINSTRASSENBRUECKE-2018
-#: last_checked: 2021-05-03 vvv
+#: last_checked: 2021-05-26 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-05-31 vvv
 Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig	q2::inwork; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123

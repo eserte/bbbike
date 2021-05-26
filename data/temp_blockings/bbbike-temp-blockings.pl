@@ -30876,7 +30876,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-24
+#: last_checked: 2021-05-26
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31489,8 +31489,8 @@ EOF
 EOF
      },
      { from  => 1601923909, # 2020-10-05 20:51
-       until => $isodate2epoch->("2021-05-31 17:00:00"),
-       text  => 'Torstr.: Engstelle von Rosenthaler Platz Richtung Mollstr., bis 31.5.2021',
+       until => $isodate2epoch->("2021-06-30 17:00:00"),
+       text  => 'Torstr.: Engstelle von Rosenthaler Platz Richtung Mollstr., bis 30.6.2021',
        type  => 'handicap',
        source_id => '2147346452',
        data  => <<EOF,
@@ -32450,7 +32450,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Wie lange gehen die Bauarbeiten?
-#: also_indoor: traffic
+#: also_indoor: traffic (G)
 #: priority: #A
 #: last_checked: 2021-04-28
 	q4::inwork 2523,5114 2746,5537
@@ -32648,6 +32648,15 @@ EOF
 #: last_checked: 2021-05-24
 #: check_frequency: 30d
 	2::inwork 7236,19689 7273,19682 7435,19547 7446,19522 7504,19459
+EOF
+     },
+     { from  => $isodate2epoch->("2021-05-30 00:00:00"),
+       until => 1629496800, # 2021-08-21 00:00
+       text  => 'Ortsdurchfahrt Groß Machnow: Bauarbeiten, Fahrbahn gesperrrt, evtl. sind auch Radfahrer betroffen, 31.05.2021 bis 20.08.2021',
+       type  => 'gesperrt',
+       source_id => 'LS/722-W/21/077',
+       data  => <<EOF,
+	2::inwork 14962,-15017 15046,-14607
 EOF
      },
     );
