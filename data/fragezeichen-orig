@@ -41,7 +41,7 @@ Berliner Str. (Wilmersdorf): wird es hier Radspuren geben?	? 3952,8980 4006,8967
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Entwurfsplanung)
 #: XXX Bauarbeiten zwischen Bergmannstr. und Gneisenaustr. (Richtung Norden) haben begonnen
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-28
 #: check_frequency: 90d
 #: next_check: 2021-12-31
 # REMOVED (hier fertig) --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350
@@ -59,7 +59,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021, Neubau Radweg)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausführungsplanung)
 #: source_id: 2147343740
-#: last_checked: 2021-05-22
+#: last_checked: 2021-05-28
 #: next_check: 2021-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
 # 
@@ -3333,7 +3333,7 @@ Hultschiner Damm: Aufhebung der Benutzungspflicht?	? 24639,10766 24644,10740 246
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1080946.php (bis Juni 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1394217278615560194
 #: by: https://twitter.com/BA_Xhain/status/1394209701588570124 (Haasestr.)
-#: last_checked: 2021-05-26 vvv
+#: last_checked: 2021-05-28 vvv
 #: next_check: 2021-06-30 vvv
 Niemannstr.: Reduzierung auf 10km/h, Bodenschwellen	?::projected 14254,11377 14211,11229
 Helmerdingstr.: Reduzierung auf 10km/h, Bodenschwellen	?::projected 14468,11203 14442,11101
@@ -3496,6 +3496,7 @@ Monumentenstr.: Fahrradstraße geplant	?::projected 7647,9196 7735,9121 7790,9126
 # 
 #: by: https://api.fixmyberlin.de/api/projects/394 (construction_completed: 2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_21.01.2021_final.pdf (Erwähnung eines Verkehrskonzepts Gartenstadt)
+#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/bezirk-stellt-ergebnisse-zur-verkehrsberuhigung-vor_a311304
 #: XXX in welcher Form soll die Radwegverbindung entstehen? Wie sieht die Anbindung zum Tempelhofer Feld aus?
 #: last_checked: 2021-04-22
 #: check_frequency: 120d
@@ -3509,7 +3510,7 @@ Gartenstadt Tempelhof: Radwegverbindung geplant	?::projected 7949,7607 8188,7610
 #: by: http://www.infravelo.de/projekt/fahrradstrassenverbindung-von-suedstern-bis-mariannenplatz-2/ (Fraenkelufer wird erwähnt; 2. Quartal 2021 - 4. Quartal 2021)
 # REMOVED --- #: XXX die vorhandenen Radverkehrsanlagen (Radspuren) sollen Vorrang auf der Karte haben
 #: XXX hier ist noch nichts passiert, und es ist auch zweifelhaft, ob man die verkehrsberuhigte Zone einfach so ersetzen kann
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-28
 #: check_frequency: 60d
 Fraenkelufer: Fahrradstraße entsteht	? 11177,9935 11199,9993 11310,10021 11464,10102 11512,10105
 # REMOVED (eingetragen) --- Körtestr., Grimmstr.: Fahrradstraße entsteht	? 10713,9260 10749,9342 10905,9472 11004,9554 11055,9539 11075,9576 11110,9661 11141,9732 11186,9861 11175,9882 11164,9885 11136,9851 11089,9751 11072,9711 11042,9642 11023,9597 11004,9554
@@ -4148,7 +4149,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: source_id: 2147346783 (Leitungsarbeiten bis 12.2.2021) (inaktiv)
 #: osm_watch: way id="4588059" version="25"
 #: priority: #C vvv
-#: last_checked: 2021-05-18 vvv
+#: last_checked: 2021-05-28 vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2021-05-15
 # REMOVED (-> gesperrt_car-orig) --- Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
@@ -4163,11 +4164,7 @@ Arndtstr.: hier auch nur Anlieger frei?	? 9795,9162 9674,9179
 #: last_checked ^^^
 #: priority ^^^
 # 
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084639.php
-#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/durchfahrt-verboten_a310398
-#: last_checked: 2021-05-21
-#: check_frequency: 7d
-Bergmannstr.: Verlängerung der Fahrradstraße	? 10564,9292 10547,9233 10705,9234
+# REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084639.php --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/durchfahrt-verboten_a310398 --- #: last_checked: 2021-05-21 --- #: check_frequency: 7d --- Bergmannstr.: Verlängerung der Fahrradstraße	? 10564,9292 10547,9233 10705,9234
 # 
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422 vvv
 # REMOVED (-> gesperrt-orig) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php ("Umgang mit dem Radverkehr ist noch zu klären") --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1058243.php (Online-Beteiligung bis zum 11. April 2021) --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/ideen-fuer-waldeyerstrasse_a302355 --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/anwohner-koennen-sich-an-der-gestaltung-beteiligen_a303648 --- #: osm_watch: way id="4685729" version="17" --- #: last_checked: 2021-03-29 --- #: next_check: 2021-04-18 --- Waldeyerstr.: entsteht hier eine Fußgängerzone?	? 15058,12329 15003,12241
@@ -4185,7 +4182,7 @@ Bergmannstr.: Verlängerung der Fahrradstraße	? 10564,9292 10547,9233 10705,9234
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9981 (Einwohnerfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10019
 #: osm_watch: way id="128266207" version="13"
-#: last_checked: 2021-05-24 vvv
+#: last_checked: 2021-05-28 vvv
 Lausitzer Platz: entsteht hier eine Fußgängerzone?	? 12212,10440 12197,10494 12172,10585
 #: osm_watch: way id="188865510" version="8"
 Lausitzer Platz: entsteht hier eine Fußgängerzone?	? 12274,10612 12328,10442
@@ -4436,8 +4433,9 @@ Hannah-Arendt-Str./Gertrud-Kolmar-Str.: Zebrastreifen geplant	?::projected 8747,
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
+#: XXX mittlerweile existiert hier ein provisorischer Zebrastreifen, aber möglicherweise nur wegen der Bauarbeiten an der Roßstraßenbrücke
 #: priority: #D
-#: last_checked: 2021-04-27
+#: last_checked: 2021-05-28
 #: next_check: 2021-09-01
 Fischerinsel nördl. der Roßstraßenbrücke: Zebrastreifen geplant	?::projected 10645,11867 10604,11941 10679,11898
 # 
@@ -5109,7 +5107,7 @@ Conrad-Blenkle-Str.: südliche der Rudi-Arndt-Str. soll ein Zebrastreifen entsteh
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-28
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -5365,6 +5363,7 @@ Hawaiiweg: wird es eine Verbindung zum Uferweg geben?	? -2416,18769 -2401,18776
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_27_3413_3572_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.helma-wohnungsbau.de/fileadmin/pictures/WB_Projekte/Berlin/Havelmarina/lageplan-havelmarina.jpg
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_04_0213_0280_online.pdf (Grundstücksnummerierungen)
+#: by: https://abendblatt-berlin.de/2021/05/28/wohnungen/ (Spatenstich, Abschluss des Projekts unklar)
 #: XXX Bebauungsplan 5-87b (Papenberger Weg)
 #: XXX neue Straßen (fehlen alle bei Berlin.coords.data)
 #: XXX alles Privatstraßen
@@ -5377,7 +5376,7 @@ Hawaiiweg: wird es eine Verbindung zum Uferweg geben?	? -2416,18769 -2401,18776
 #: XXX g) Tikehauweg|Hakenfelde|13587
 #: osm_watch: way id="51830138" version="7"
 #: last_checked: 2020-09-12 vvv
-#: check_frequency: 270d vvv
+#: check_frequency: 360d vvv
 #: osm_watch: way id="763475704" version="2"
 Tongaweg: genaue Lage? Qualität?	?::inwork -2781,19012 -2742,19011
 #: osm_watch: way id="763475705" version="2"
@@ -5597,12 +5596,13 @@ Vorarlberger Damm: Erneuerung des Radwegs	?::projected 7227,7352 7101,7198 6991,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1069651.php (vermutlich passiert hier nichts vor Oktober 2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7951
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7954
-#: by: #: by: https://leute.tagesspiegel.de/tempelhof-schoeneberg/macher/2021/03/30/163275/bauarbeiten-am-tempelhofer-damm-die-busspur-kommt/ (verschoben auf Herbst 2021)
+#: by: https://leute.tagesspiegel.de/tempelhof-schoeneberg/macher/2021/03/30/163275/bauarbeiten-am-tempelhofer-damm-die-busspur-kommt/ (verschoben auf Herbst 2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ausführungsplanung)
 #: by: https://abendblatt-berlin.de/2021/04/22/aufregung-um-verkehr-am-mariendorfer-und-tempelhofer-damm/
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/te-damm-baustart-fuer-radspuren-im-herbst_a309321 (zwischen Alt-Tempelhof und Ullsteinstr.)
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/radwege-auch-fuer-kinder_a309906
 #: by: https://twitter.com/GBinfraVelo/status/1394682404472860676
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1089166.php (zur Parkraumbewirtschaftung)
 #: note: außerdem existieren zwischen Ringbahnstr. und Alt-Tempelhof temporäre Busspuren, für Radfahrer freigegeben
 #: last_checked: 2021-04-16
 # REMOVED --- #: check_frequency: 90d
@@ -5761,7 +5761,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::projected 4342,9301 4417,93
 # 
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: XXX wo genau?
-#: last_checked: 2021-05-24
+#: last_checked: 2021-05-28
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -6955,6 +6955,7 @@ Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,179
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1088581.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1088652.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1089037.php
+#: by: https://abendblatt-berlin.de/2021/05/28/108608/
 #: by: osm
 #: osm_watch: way id="154505652" version="14"
 #: XXX wird es bereits durch den Bau Beeinträchtigungen geben?
@@ -7216,7 +7217,8 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10251
 #: by: https://www.berliner-woche.de/mitte/c-bauen/an-der-spree-wird-ein-abschnitt-saniert_a293881
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10689
-#: last_checked: 2020-12-23
+#: by: https://portal1768.webcam-profi.de/ (Webcam)
+#: last_checked: 2021-05-28 (webcam)
 #: check_frequency: 540d
 Uferweg geplant	?::projected 11981,11578 11821,11733 11676,11839 11375,11994
 # 

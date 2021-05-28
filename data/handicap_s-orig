@@ -25,7 +25,7 @@ Pettenkoferstr.: Bauarbeiten an der Kreuzung Eldenaer Str., Sperrung der Fahrbah
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10014
 #: osm_watch: way id="4616246" version="23"
 #: XXX zurzeit stehen die Barrieren so, dass man auf den Gehweg ausweichen muss
-#: last_checked: 2021-05-13
+#: last_checked: 2021-05-28
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-05-14
 Krautstr.: Umbau zur Fuﬂg‰ngerzone, Radfahrer frei	q4::inwork 12002,12008 12021,12066
@@ -54,7 +54,7 @@ Krautstr.: Umbau zur Fuﬂg‰ngerzone, Radfahrer frei	q4::inwork 12002,12008 12021,
 # 
 #: next_check_id: PLANSTRASSEC-2019
 #: osm_watch: way id="491906864" version="5"
-#: last_checked: 2021-04-01 (mapillary)
+#: last_checked: 2021-05-28
 #: check_frequency: 60d
 (Planstraﬂe C): Fahrbahn durch Bauz‰une abgesperrt, Ausweichen auf Gehweg mˆglich	q3::inwork 12926,11224 12848,11093
 # 
@@ -243,7 +243,8 @@ Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-28
+#: check_frequency: 7d
 Dircksenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 11209,12430 11156,12581
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
@@ -252,13 +253,13 @@ Dircksenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 11209,12430 11156,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/volt-berlin-baufeld-e3a.312/page-8#post-14027
 #: XXX Bebauungsplanentwurf I-43a "S¸dliche Alexanderstraﬂe": entsteht hier eine Planstraﬂe?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straﬂe, Fahrbahn ist noch abgesperrt
-#: last_checked: 2021-02-26
+#: last_checked: 2021-05-28
 #: check_frequency: 90d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-28
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2021-04-20

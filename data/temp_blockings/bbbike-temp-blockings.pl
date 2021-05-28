@@ -14689,11 +14689,12 @@ EOF
        postwarn_days => 2,
        text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (4.7.2019 - 8.7.2019; Sperrungen fangen schon früher an und dauern länger)',
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 7, start => "2020-10-25T00:00:00"]],
+       recurrences => [['yearly', days => 1, months => 7, start => "2021-10-25T00:00:00"]],
        # zZt status=500: source_id => 'http://www.classicopenair.de/de',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (Sanierung des Gendarmenmarkts ab 2022 bis 2024, dann gibt's hier keine Veranstaltungen)
+#: by: https://classicopenair.de/de/component/content/frontpage (2021 verschoben auf 7. bis 12. Juli 2022)
 	q4::temp 9679,11834 9666,11935 9656,12031 9645,12133
 	2::temp 9523,12019 9656,12031
 	2::temp 9536,11922 9666,11935
@@ -16286,7 +16287,7 @@ EOF
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-05-13
+#: last_checked: 2021-05-28
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 EOF
@@ -19376,9 +19377,10 @@ EOF
      { from  => $isodate2epoch->("2018-06-30 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2018-07-01 22:00:00"),
        periodic => 1, # zweiter Termin im Sommer
-       recurrences => [['yearly', days => 1, months => 7, start => "2020-08-01T00:00:00"]], # kann aber auch erst im August oder September stattfinden
+       recurrences => [['yearly', days => 1, months => 7, start => "2021-08-01T00:00:00"]], # kann aber auch erst im August oder September stattfinden
 # zweiter Termin wird 2019 ausfallen
-# wird 2020 wieder nicht stattfinden: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahn-wird-unterbrochen_a253327
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahn-wird-unterbrochen_a253327 (wird 2020 wieder nicht stattfinden)
+#: by: https://stadtteilausschuss-kreuzberg.de/opair.htm ("Keine OpenAirGallery 2021")
        text  => 'Open Air Gallery am 1. Juli 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -21737,13 +21739,13 @@ EOF
        until => $isodate2epoch->("2019-05-05 23:59:59"),
        text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2019 bis 05.05.2019)',
        periodic => 1,
-       recurrences => [['yearly', days => 29, months => 4, start => "2020-05-06T00:00:00"]],
-       recurrence_prewarn_days => -30, # wegen Corona
+       recurrences => [['yearly', days => 29, months => 4, start => "2021-05-06T00:00:00"]],
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (ja) --- #: XXX wird die Veranstaltung noch abgesagt? --- #: next_check: 2020-04-23
 #: by: https://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
 #: by: https://www.family-and-friends-ev.de/?date=20210418 (4.-6. Juni 2021, dann aber vermutlich kein Maientanz")
+#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-vom-4-6-juni-2021 (2021 verschoben auf 29. April - 1. Mai 2022)
 # REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
 	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 EOF
@@ -27969,7 +27971,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-05-13
+#: last_checked: 2021-05-28
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30026,6 +30028,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.851896.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/oasis-hansahof-bachstra%C3%9Fe-1-2.131/page-4#post-15591 (mittlerweile fertig & bewohnt --- ist der Weg auch schon offen?)
 #: next_check_id: ALTONAERSCHLESWIGER-2019
 #: last_checked: 2021-04-25
 #: check_frequency: 30d
@@ -30291,7 +30294,7 @@ EOF
 #: osm_watch: way id="194962398" version="11"
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-28
 	2::inwork 11329,12497 11209,12430
 EOF
      },
@@ -30659,7 +30662,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-05-17
+#: last_checked: 2021-05-27
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30876,7 +30879,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-26
+#: last_checked: 2021-05-28
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31157,8 +31160,13 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
+#: source_id: 2147347233 (bis 23.12.2021)
+#: XXX Aktivierung der Vollsperrung!
+#: priority: #A
+#: next_check: 2021-05-30
 #: also_indoor: traffic (H,G) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
+#: XXX NEW	Gardeschützenweg (Lichterfelde) in beiden Richtungen zwischen Hindenburgdamm und Lipaer Straße: Leitungsbau,Vollsperrung, Fußverkehr frei, vom 31.05.2021 08:30 Uhr bis 23.12.2021 17:00 Uhr
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv --- #: last_checked: 2020-12-27 (mapillary) vvv --- #: next_check: 2021-05-03 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes Stück
@@ -32081,12 +32089,13 @@ EOF
 	2::inwork 35479,7051 35482,7099
 EOF
      },
-     { from  => 1613631600, # 2021-02-18 08:00
-       until => 1613977200, # 2021-02-22 08:00
-       text  => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, auch für Fußgänger und Radfahrer, vom 19.02.2021 08:00 Uhr bis 22.02.2021 08:00 Uhr ',
+     { from  => $isodate2epoch->("2021-05-28 00:00:00"), # 1613631600, # 2021-02-18 08:00
+       until => $isodate2epoch->("2021-05-29 20:00:00"), # 1613977200, # 2021-02-22 08:00
+       text  => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, möglicherweise sind auch Fußgänger und Radfahrer betroffen, am 29.5.2021 von 6:00 bis 20:00 Uhr',
        type  => 'gesperrt',
        source_id => '2147346882',
        data  => <<EOF,
+#: source_id: 2147347231
 	2::inwork 12672,20720 12723,20691
 EOF
      },
@@ -32499,6 +32508,9 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/saison-startet_a311283 (und die anderen neuen Spielstraßen in FH-KB)
+#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen
+#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen/kieze
 #: XXX wird diese Spielstraße verstetigt?
 #: next_check: 2022-05-24
 	q4::temp::play 14798,12502 15005,12443

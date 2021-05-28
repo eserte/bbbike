@@ -524,7 +524,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geˆffnet	
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfl‰che
-#: last_checked: 2021-05-13
+#: last_checked: 2021-05-28
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -2219,7 +2219,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: fr¸her Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der ˆstlichen Einfahrt
-#: last_checked: 2021-05-13
+#: last_checked: 2021-05-28
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2606,6 +2606,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/oasis-hansahof-bachstra%C3%9Fe-1-2.131/page-4#post-15591 (mittlerweile fertig & bewohnt --- ist der Weg auch schon offen?)
 #: next_check_id: ALTONAERSCHLESWIGER-2019
 #: last_checked: 2021-04-25
 #: check_frequency: 30d
@@ -2656,7 +2657,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="194962398" version="11"
 #: XXX Unstetige Ausschilderung: mal ist f¸r Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-28
 	2::inwork 11329,12497 11209,12430
 ',
          'from' => undef,
@@ -2704,7 +2705,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-05-17
+#: last_checked: 2021-05-27
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2762,7 +2763,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-26
+#: last_checked: 2021-05-28
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2854,8 +2855,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaﬂnahme bis Ende 2021)
+#: source_id: 2147347233 (bis 23.12.2021)
+#: XXX Aktivierung der Vollsperrung!
+#: priority: #A
+#: next_check: 2021-05-30
 #: also_indoor: traffic (H,G) vvv
 #: note: fr¸her auch "auﬂerdem Lipaer Str. zwischen Neuchateller Str. und Gardesch¸tzenweg gesperrt"
+#: XXX NEW	Gardesch¸tzenweg (Lichterfelde) in beiden Richtungen zwischen Hindenburgdamm und Lipaer Straﬂe: Leitungsbau,Vollsperrung, Fuﬂverkehr frei, vom 31.05.2021 08:30 Uhr bis 23.12.2021 17:00 Uhr
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardesch¸tzenweg bereits beendet? vvv --- #: last_checked: 2020-12-27 (mapillary) vvv --- #: next_check: 2021-05-03 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes St¸ck
@@ -3191,7 +3197,17 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147347231
+	2::inwork 12672,20720 12723,20691
+',
+         'from' => 1622152800,
+         'id' => 3331,
+         'source_id' => '2147346882',
+         'text' => 'Bahnhofstr.: Unterf¸hrung unter der A114 gesperrt, mˆglicherweise sind auch Fuﬂg‰nger und Radfahrer betroffen, am 29.5.2021 von 6:00 bis 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1622311200
+       },
        {
          'data' => '#: by: https://tierparkcenter.de/wochenmarkt/ (÷ffnungszeiten)
 #: tempex: (mo,th,fr) T08-T17
@@ -3505,7 +3521,10 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '#: XXX wird diese Spielstraﬂe verstetigt?
+         'data' => '#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/saison-startet_a311283 (und die anderen neuen Spielstraﬂen in FH-KB)
+#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen
+#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen/kieze
+#: XXX wird diese Spielstraﬂe verstetigt?
 #: next_check: 2022-05-24
 	q4::temp::play 14798,12502 15005,12443
 ',

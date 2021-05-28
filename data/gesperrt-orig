@@ -1259,7 +1259,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021
-#: last_checked: 2021-05-24
+#: last_checked: 2021-05-28
 #: check_frequency: 30d
 #: next_check: 2021-06-30
 # REMOVED (Arbeiten am Bahnhof dauern länger) --- #: next_check: 2021-04-01
@@ -1676,10 +1676,11 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer offen? vvv
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
 #: by: http://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee)
+#: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage)
 #: osm_watch: way id="850742955" version="1"
 #: last_checked: 2021-04-26 (mapillary)
 #: check_frequency: 180d
-#: next_check: 2021-12-31
+#: next_check: 2021-08-13
 Ahornallee	1s:q3 1589,11483 1574,11379
 #: osm_watch: way id="24852084" version="10"
 #: last_checked: 2021-03-20
@@ -3331,7 +3332,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen, sollte ein Teilabschnitt der Straße endgültig verschwinden
 #: XXX mittlerweile (April 2021) wurde der südliche Teil schon weggebaggert
 #: osm_watch: way id="25008069" version="10"
-#: last_checked: 2021-04-09
+#: last_checked: 2021-05-28
 #: check_frequency: 60d
 Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881 11940,11982
 # 
@@ -3584,7 +3585,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: bis Mai 2021)
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 06.06.2021) vvv
-#: last_checked: 2021-05-13 vvv
+#: last_checked: 2021-05-28 vvv
 #: next_check: 2021-06-06 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901
@@ -3610,7 +3611,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-28
 #: check_frequency: 60d
 Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
 # 
@@ -3619,7 +3620,7 @@ Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwor
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
 #: osm_watch: way id="882672445" version="1"
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-28
 #: check_frequency: 60d
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
 # 
@@ -3689,7 +3690,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tatsächlichen Seite 366 sowie 373)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/virtuelle-stadtwerkstatt-informiert-ueber-bauprojekte-in-berlins-historischer-mitte_a292967
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-28
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396

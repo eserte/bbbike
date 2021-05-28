@@ -412,13 +412,13 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
-#: last_checked: 2021-05-21 vvv
+#: last_checked: 2021-05-28 vvv
 #: check_frequency: 60d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
 # REMOVED (vorher) --- mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056
-#: XXX hier Bauarbeiten der Wasserbetriebe am Gehweg, laut Bauschild bis Mai 2021, laut rbbtext bis 28.5.2021
-# REMOVED (Termin kann nicht gehalten werden) --- #: next_check: 2021-05-28
+#: XXX hier Bauarbeiten der Wasserbetriebe am Gehweg, laut Bauschild bis Mai 2021, laut rbbtext bis 9.7.2021
+#: next_check: 2021-07-09
 provisorische schmale Radspur	RW3; 10256,11160 10501,11056
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10501,11056 10637,10996 10684,10975
 # REMOVED (vorher) --- mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056
@@ -648,7 +648,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2021-05-18 vvv
+#: last_checked: 2021-05-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
@@ -1491,13 +1491,15 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: osm_watch: way id="882672444" version="2"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2021-05-18 vvv
+#: last_checked: 2021-05-28 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-03-11 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
 provisorischer getrennter Rad- und Gehweg	RW2; 10625,12206 10659,12259 10675,12280
+# REMOVED ---	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
+provisorischer Radweg	RW2; 10675,12280 10700,12315 10723,12346 10738,12364
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
 provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
@@ -1508,11 +1510,11 @@ provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659
 # 
 Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847 10314,11804 10299,11786
-	RW4; 10675,12280 10700,12315 10723,12346 10738,12364 10805,12468 10878,12560
+	RW4; 10738,12364 10805,12468 10878,12560
 #: by: https://pbs.twimg.com/media/EWHwSfnXQAAaaO9?format=jpg&name=large
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: XXX temporäre Radwegführung
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-28
 #: check_frequency: 60d
 temporäre Führung als Bürgersteigradweg	RW1; 10878,12560 10954,12635
 # wieder herstellen:	RW4; 10878,12560 10954,12635
@@ -3089,7 +3091,8 @@ die letzten 70 Meter sind benutzungspflichtig	RW1; 21789,5427 21954,5229
 die letzten Meter sind benutzungspflichtig	RW3; 10755,13152 10923,13156
 	RW4; 10923,13156 10755,13152
 	RW4;RW4 13865,9866 13890,9894
-	RW7;RW7 10001,9234 10123,9233 10547,9233
+	RW7;RW7 10001,9234 10123,9233 10547,9233 10564,9292
+	RW7;RW7 10547,9233 10705,9234
 #: by: G. Chill:
 #: confirmed_by: srt
 	RW6;RW6 11934,22108 11890,22123 11863,22146 11876,22212 11950,22162
@@ -6816,7 +6819,7 @@ provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9158
 #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="20"
 #: osm_watch: way id="335487059" version="15"
-#: last_checked: 2021-05-24 vvv
+#: last_checked: 2021-05-28 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-04-12 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -6843,7 +6846,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
 #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
-#: last_checked: 2021-05-21 vvv
+#: last_checked: 2021-05-28 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2021-06-30 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -6879,7 +6882,7 @@ Radspur hinter parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720
 #: by: https://twitter.com/SenUVKBerlin/status/1387045914317971459
 #: source_id: 2147346996 (bis 21.5.2021)
 #: osm_watch: way id="34057952" version="35"
-#: last_checked: 2021-05-24 vvv
+#: last_checked: 2021-05-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-06-23 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8810,10305 9146,10284 9368,10211 9416,10196
