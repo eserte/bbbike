@@ -971,7 +971,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-05-28
+#: last_checked: 2021-05-29
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2040,7 +2040,8 @@ Am Kanal: guter Asphalt	Q0- 21750,2593 21490,2535 21223,2475 21111,2451
 Am Kanal: Asphalt	Q0 21111,2451 20939,2413
 Am Teltowkanal: Feldweg	Q2+ 20810,2398 20496,2321
 Am Teltowkanal: Feldweg, holprig	Q2 20496,2321 20499,2285 20303,2254 20282,2259
-Am Teltowkanal: Kopfsteinpflaster	Q2- 20282,2259 20148,2254 20128,2271
+(Weg in Kolonie Bodenreform): Kopfsteinpflaster	Q2- 20282,2259 20148,2254 20128,2271
+(Weg in Kolonie Bodenreform): Kopfsteinpflaster	Q2- 20148,2254 20135,2251 20100,2247
 Am Teltowkanal: feiner Schotter	Q1 3375,1026 3366,1007 3370,955 3355,893 3304,832 3261,835 3232,803
 #: next_check_id: AKELEIWEG-2021
 #: XXX bleibt der Kopfsteinpflasterabschnitt nach den Bauarbeiten?
@@ -2343,7 +2344,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="11"
-#: last_checked: 2021-05-09
+#: last_checked: 2021-05-29
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -3126,7 +3127,7 @@ Marienstr. (Oberschöneweide): Kopfsteinpflaster, OK	Q1 18670,6132 18767,6268
 Marienstr. (Oberschöneweide): Asphalt	Q0 18767,6268 18812,6330
 Klarastr. (Oberschöneweide): Kopfsteinpflaster, OK	Q1 18676,6333 18574,6197
 Firlstr.: Asphalt	Q0 18640,6542 18645,6511 18574,6401 18473,6265
-Firlstr.: Asphalt	Q0 18645,6511 18674,6515 18710,6567 18700,6604
+Firlstr.: Asphalt	Q0 18645,6511 18674,6515 18714,6574 18700,6604
 Lauffener Str.: glattes Pflaster	Q1; 18473,6265 18428,6123
 #: note: bei wenig Verkehr kann man u.U. auf dem glatteren Pflaster auf der linken Seite fahren
 Lauffener Str.: Kopfsteinpflaster	Q2+; 18428,6123 18473,6265
@@ -5191,7 +5192,8 @@ Am Kiesberg: Beton	Q1 18919,1888 18839,1715 18750,1522
 (Künnekeweg - Dankmarsteig): Asphalt	Q0 18688,1260 18628,1078 18727,1040 18737,1033
 (Schönbergweg - Dankmarsteig): wassergebundene Decke	Q1 18566,866 18557,891 18574,954 18592,1018 18628,1078
 (Künnekeweg - Mauerweg): Asphalt, Wurzeln	Q1 18688,1260 18716,1249
-(Schönefelder Chaussee - Mauerweg): Gehwegplatten	Q1+ 18978,552 18708,600
+(Schönefelder Chaussee - Mauerweg): Gehwegplatten	Q1+ 18978,552 18750,592
+(Schönefelder Chaussee - Mauerweg): Asphalt	Q0 18750,592 18708,600
 (Kasperstr. - Mauerweg): Feinschotter	Q1 18796,1227 18770,1236 18716,1249
 (Rudower Höhe - Hornkleepfad): Feinschotter	Q1- 18716,1249 18739,1329 18786,1510
 (Dankmarsteig - Mauerweg): Feinschotter	Q1 18838,996 18790,1013 18737,1033
@@ -5723,7 +5725,8 @@ Straße 574 (Rudow): unebenes Verbundsteinpflaster	Q1- 18023,833 18131,674 18228,
 Will-Meisel-Weg: Kopfsteinpflaster	Q2 18023,833 17937,958 17839,905
 Schirpitzer Weg [42-54]: Asphalt	Q0 17937,958 17930,972 17931,987 17948,1011 17967,1036 17946,1054 17972,1089 17984,1100
 Lettberger Str.: Kopfsteinpflaster	Q2+ 18272,1009 18446,780
-Schönbergweg: Kopfsteinpflaster	Q2 18577,872 18566,866 18529,840 18446,780
+Schönbergweg: Verbundsteinpflaster	Q1 18577,872 18566,866 18529,840
+Schönbergweg: Kopfsteinpflaster	Q2 18529,840 18446,780
 Mozartring: Verbundsteinpflaster	Q1 18577,872 18592,867 18659,850 18707,1039 18661,1057 18631,1011 18592,867
 (Mozartweg - Mauerweg): wassergebundene Decke	Q1 18659,850 18739,835
 Am Klarpfuhl - Mauerweg: wassergebundene Decke	Q1- 18205,-297 18218,-325
@@ -8464,7 +8467,7 @@ Gehwegplatten	Q0 21844,238 21963,261 21979,274 21991,273 22008,262
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6453 (Empfehlung zu Verbesserungen in der BVV 2020-06-18 beschlossen)
 #: XXX siehe auch Maßnahme Gr.9; außerdem soll die Straße "Am Kanal" asphaltiert werden -> letzteres ist realisiert
 #: note: jemand hat hier Teppiche ausgelegt, um die Lage etwas zu lindern (gesehen: 2018-05-06, 2019-01-02, 2019-10-19, 2020-11-28, 2021-04-24)
-#: last_checked: 2021-04-24
+#: last_checked: 2021-05-29
 #: check_frequency: 120d
 Unterführung unter Adlergestell und Bahn: sandig, aber notdürftig mit Teppichen ausgelegt	Q3+ 20939,2413 20904,2426 20810,2398
 (Hartriegelstr. - Michael-Brückner-Str.): Verbundsteinpflaster	Q1+ 18695,5076 18622,5049 18514,5028 18425,5032
@@ -11368,6 +11371,8 @@ Teichmummelring: Betonpflaster	Q1+ 22246,2272 22418,2390 22454,2342 22271,2214
 Am Ruderverein: Betonpflaster	Q1+ 22153,2482 22221,2520 22270,2549
 Relingstr.: Betonpflaster	Q1+ 22195,2390 22287,2431 22358,2460
 (Relingstr. - Uferweg): Betonpflaster	Q1+ 22358,2460 22399,2481
+(Uferweg): Betonpflaster	Q1+ 22399,2481 22304,2570 22239,2644
+(Am Ruderverein - Uferweg): Betonpflaster	Q1+ 22270,2549 22304,2570
 An der Dahme: Betonpflaster	Q1+ 22197,2612 22270,2549 22358,2460 22418,2390
 Gaffelsteig: Betonpflaster	Q1+ 22287,2431 22221,2520 22159,2585
 Ankerweg: Betonpflaster	Q1+ 22118,2559 22159,2585 22197,2612
@@ -12055,6 +12060,7 @@ Parallelweg am Eichgestell: guter Parkweg	Q1 18134,7173 18908,6834 18944,6870
 Parallelweg am Eichgestell - Wasserwerk Wuhlheide: Parkweg, einige Pfützen möglich	Q1- 18944,6870 19045,6959
 #: note: hier ein "wilder" Weg, aber der Boden ist gut plattgetrampelt
 Parallelweg am Eichgestell - Wasserwerk Wuhlheide: unbefestigter Weg	Q2+ 19045,6959 19080,6986
+(Firlstr. - Eichgestell): Parkweg, etwas Schotter	Q2+ 18771,6699 18784,6720 18827,6723 18874,6748 18895,6819 18908,6834
 (Hoher Wallgraben - Lehndorffstr.): unbefestigter Weg	Q2+ 18101,8044 18186,8081 18276,8136
 (Abbestr. - Otto-Suhr-Allee): glatte Pflasterung	Q0- 4674,12076 4608,11935 4596,11912
 Lisa-Fittko-Str.: Asphalt	Q0 7734,13944 7820,13994
@@ -12124,6 +12130,7 @@ Nußbaumallee: Verbundsteinpflaster	Q1 1113,12392 1206,12364
 Heubudenbrücke: Holzbohlen	Q1- 9017,17290 8982,17299
 zur Heubudenbrücke: wassergebundene Decke	Q1 8982,17299 8973,17301
 (Uferweg an der Stockholmer Str.): wassergebundene Decke	Q1 8982,17299 8957,17217 8870,17073
+(Rudower Höhe): Verbundsteinpflaster	Q1 18245,1699 18300,1612
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14874,7 +14881,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/kaiserg%C3%A4rten-wandlitzstra%C3%9Fe-18-22.343/#post-15379
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8942 (Forderung nach einer Fahrradstraße)
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
-#: last_checked: 2021-04-01
+#: last_checked: 2021-05-29
 #: check_frequency: 360d
 #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976
@@ -19383,7 +19390,7 @@ Riensbergstr.: guter Beton	Q0- -707,15108 -736,15294 -740,15316 -763,15487
 # 
 #: by: Jörg Weixelbraun: vvv
 #: corrected_by: srt (Sandweg -> Mix)
-Goldsternweg: Mix aus Kopfsteinpflaster und Sandweg	Q2+ 20128,2271 20138,2242
+Goldsternweg: Mix aus Kopfsteinpflaster und Sandweg	Q2+ 20128,2271 20135,2251 20138,2242
 #: corrected_by: srt (Sandweg -> Beton)
 Goldsternweg: Beton	Q1+ 20138,2242 20207,2209 20245,2152
 #: corrected_by: srt (Sandweg -> Asphalt)
@@ -19478,7 +19485,7 @@ Benatzkyweg: Asphalt	Q0 17605,1429 17730,1464 17902,1517
 #: corrected_by: srt (wassergebundene Decke, Q1 -> ...)
 (Benatzkyweg - Glashütter Weg): wassergebundene Decke, teilweise mit Schotter	Q2+ 17902,1517 17970,1526 18067,1568 18121,1614
 #: corrected_by: srt (added "grobes")
-Glashütter Weg: grobes Verbundsteinpflaster	Q1+ 18121,1614 18223,1683 18266,1715 18425,1831
+Glashütter Weg: grobes Verbundsteinpflaster	Q1+ 18121,1614 18223,1683 18245,1699 18266,1715 18425,1831
 #: confirmed_by: srt
 An der Rudower Höhe: Verbundsteinpflaster, einige "Moabiter Kissen"	Q1 18425,1831 18361,1926
 #: by: ^^^
@@ -21851,7 +21858,7 @@ Müngersdorfer Str.: guter Asphalt	Q0 20386,145 20351,287 20326,374
 #: confirmed_by: srt
 #: XXX laut Finanzplan Berlin 2019-2023 Neubau der Straße, wird die Qualität danach besser sein?
 #: note: es existiert ein paralleler Verbundsteinpflasterweg, vermutlich nur für Fußgänger
-#: last_checked: 2020-11-28
+#: last_checked: 2021-05-29
 #: check_frequency: 180d
 Müngersdorfer Str.: mäßiges Kopfsteinpflaster	Q2 20386,145 20430,-17
 #: confirmed_by: srt
@@ -22089,7 +22096,7 @@ Forststr. (Zehlendorf): Kopfsteinpflaster	Q2 -151,2975 -205,3063 -300,3219 -386,
 #: by: Roland Jakob:
 #: note: "einige Fußgänger, q2" ignoriert
 #: confirmed_by: srt
-Altglienicker Grund: guter Beton	Q0 18941,452 19076,420 19225,384 19429,337
+Altglienicker Grund: guter Beton	Q0- 18941,452 19076,420 19225,384 19429,337
 # 
 #: by: Wegner (ilonka):
 #: confirmed_by: srt
@@ -22797,6 +22804,7 @@ Frobenstr. (Lankwitz): mäßiges Kopfsteinpflaster	Q2 6108,2326 6349,2510 6529,264
 #: by: https://www.bahninfo-forum.de/read.php?9,665091,700762#msg-700762 (Ersetzung der GVP-Platten zwischen 17.5.2021 und 2.7.2021?)
 #: XXX vielleicht werden die GVP durch Asphalt ersetzt?
 #: priority: #B
+#: last_checked: 2021-05-29
 #: next_check: 2021-07-02
 Johannes-Werner-Str.: Kopfsteinpflaster/Betonplatten	Q1- 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
 #: corrected_by: srt (Kopfsteinpflaster -> unebenes Kleinkopfsteinpflaster)
@@ -29961,4 +29969,5 @@ Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 23042,-1297
 Kreuzungsbereich asphaltiert	Q0 16494,6948
 Kreuzungsbereich asphaltiert	Q0 18574,6401
 Kreuzungsbereich mit Kleinsteinpflaster	Q2+ 1781,11510
+Einmündungsbereich mit Kopfsteinpflaster	Q2 18529,840
 #: ignore ^^^

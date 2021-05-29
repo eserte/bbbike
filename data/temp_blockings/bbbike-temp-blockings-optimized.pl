@@ -2763,7 +2763,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-28
+#: last_checked: 2021-05-29
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3138,8 +3138,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1622473200
        },
        {
-         'data' => '#: note: bei rbb nur bis 18.5.2021
-#: osm_watch: way id="683770241" version="6"
+         'data' => '#: osm_watch: way id="683770241" version="6"
 	q4::inwork 19564,1871 19743,1804
 ',
          'from' => 1610431200,
@@ -3226,7 +3225,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-05-23
+#: last_checked: 2021-05-29
 #: check_frequency: 30d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3271,22 +3270,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1625068800
        },
-       {
-         'data' => '#: also_indoor: traffic vvv
-#: last_checked: 2021-05-16 vvv
-#: next_check: 2021-06-15 vvv
-	q3::inwork; 18676,6333 18767,6268
-	q3::inwork 18767,6268 18859,6198
-#: next_check ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-',
-         'from' => 1616340931,
-         'id' => 3343,
-         'text' => 'Plönzeile: wegen Bauarbeiten Einbahnstraßenregelung und Sperrung der Fahrbahn, ggfs. auf Gehweg ausweichen, voraussichtlich bis Juni 2021',
-         'type' => 'handicap',
-         'until' => 1625090400
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: S-SCHICHAUWEG-2021
@@ -3332,6 +3316,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,578649,697260#msg-697260
 #: XXX Ist der Bahnübergang tatsächlich gesperrt? Wann sind die Bauarbeiten hier beendet?
+#: osm_watch: node id="8599852570" version="1"
+#: osm_watch: node id="8599852571" version="1"
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 ',
          'from' => undef,
@@ -3693,6 +3679,27 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Ortsdurchfahrt Groß Machnow: Bauarbeiten, Fahrbahn gesperrrt, evtl. sind auch Radfahrer betroffen, 31.05.2021 bis 20.08.2021',
          'type' => 'gesperrt',
          'until' => 1629496800
+       },
+       {
+         'data' => '#: last_checked: 2021-05-29
+#: add_fragezeichen: Wie lange gehen die Bauarbeiten? Wie ist die Wegoberfläche nach den Bauarbeiten?
+	2::inwork 18432,1352 18290,1574
+',
+         'from' => undef,
+         'id' => 3382,
+         'text' => 'Glashütter Weg - Künnekeweg: Bauarbeiten, Weg ist gesperrt, Umfahrung über Trampelpfade möglich, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '	q3::inwork 18080,5376 18245,5551 18370,5511 18680,5413 18955,5320
+',
+         'from' => 1621843200,
+         'id' => 3383,
+         'source_id' => '2147347210',
+         'text' => 'Schnellerstr. und Fennstr.: Bauarbeiten, Fahrbahn teilweise gesperrt, Radfahrer müssen den Bürgersteig benutzen, vom 25.05.2021 10:00 Uhr bis 16.07.2021 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1626447600
        }
      
 );

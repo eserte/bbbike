@@ -11,7 +11,7 @@ Krautstr.: Umbau zur Fußgängerzone, Radfahrer frei	q4::inwork 12002,12008 12021,
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork; 14242,9448 14185,9509 14089,9610
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
-Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, bis zum 11.6.2021	q2::inwork 19803,1911 19766,1796
+Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, bis zum 11.6.2021	q3::inwork 19803,1911 19766,1796
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -248,6 +248,7 @@ Eichgestell: bei schönem Wetter viele Fußgänger	q1 18186,7200 18944,6870 19052,6
 (Parallelweg am Eichgestell): bei schönem Wetter viele Fußgänger	q1 18134,7173 18908,6834
 (Parallelweg am Eichgestell - Eichgestell): bei schönem Wetter viele Fußgänger	q1 18908,6834 18944,6870
 (Parallelweg am Eichgestell - Wasserwerk Wuhlheide): bei schönem Wetter viele Fußgänger	q1 18944,6870 19045,6959 19080,6986
+(Firlstr. - Eichgestell): Fußgänger	q2 18771,6699 18784,6720 18827,6723 18874,6748 18895,6819 18908,6834
 Wuhlheide: bei schönem Wetter viele Fußgänger und Kinder	q2 20199,6318 20262,6493 20225,6631 20269,6735 20313,6841
 Wuhlheide/R1: Fußgänger	q1 20453,6211 20293,6278
 Wuhlheide/FEZ: einige Fußgänger	q1 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
@@ -2093,6 +2094,8 @@ An der Kieler Brücke: Fußgängerzone	q3 7877,14504 7804,14445
 (Straße E, Innovationspark Wuhlheide): Gewerbebetriebe	q2 21231,7249 21175,7212 21243,7135
 (Straße G, Innovationspark Wuhlheide): Gewerbebetriebe	q1 21627,6942 21547,7024
 (Relingstr. - Uferweg): einige Fußgänger	q2 22358,2460 22399,2481
+(Uferweg): einige Fußgänger	q2 22399,2481 22304,2570 22239,2644
+(Am Ruderverein - Uferweg): einige Fußgänger	q2 22270,2549 22304,2570
 Am Berlin Museum: einige Katzenkopfreihen	q2 10032,10752 9829,10830
 Cuxhavener Str.: stellenweise eng, einige Fußgänger	q3 5931,12399 5904,12417 5886,12467
 (Supermarktparkplatz): Parkplatzverkehr	q2 2554,10258 2551,10266 2706,10362 2718,10359
@@ -2119,6 +2122,7 @@ Voigtstr.: einige Fußgänger	q3 14836,12826 14835,12801
 (Gorgasring - Nonnendammallee): gemeinsamer Geh- und Radweg, nicht besonders breit	q2 -695,14819 -676,14773 -679,14743 -941,14637
 (Uferweg an der Stockholmer Str.): Fußgänger	q2 8982,17299 8957,17217 8870,17073
 Heubudenbrücke: Fußgänger	q2 9017,17290 8982,17299 8973,17301
+(Rudower Höhe): Fußgänger, geschützte Grünanlage	q4 18245,1699 18300,1612
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

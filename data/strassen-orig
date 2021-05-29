@@ -3195,6 +3195,8 @@ An der Dahme	N 22197,2612 22270,2549 22358,2460
 Gaffelsteig	N 22287,2431 22221,2520 22159,2585
 Relingstr.	N 22195,2390 22287,2431 22358,2460
 (Relingstr. - Uferweg)	NN 22358,2460 22399,2481
+(Uferweg)	NN 22399,2481 22304,2570 22239,2644
+(Am Ruderverein - Uferweg)	NN 22270,2549 22304,2570
 Regattastr.	H 22058,2700 22074,2656 22118,2559 22153,2482 22195,2390 22205,2367 22246,2272 22271,2214 22328,2084 22378,1970 22388,1947 22421,1872 22448,1824 22455,1812 22549,1644 22570,1607 22655,1450
 Regattastr.	N 22655,1450 22766,1226 22821,1086 22854,1023 23085,898 23252,792 23501,797 23681,800 23953,731
 Regattastr. [Wohngebiet]	N 22388,1947 22291,1892
@@ -6553,6 +6555,7 @@ Eichgestell	NN 20453,6211 20293,6278 20199,6318 20106,6357 20081,6368 19995,6406
 (Parallelweg am Eichgestell - Eichgestell)	NN 18908,6834 18944,6870
 (Parallelweg am Eichgestell - Wasserwerk Wuhlheide)	NN 18944,6870 19045,6959 19080,6986
 (Eichgestell - Edisonstr./Rummelsburger Str.)	NN 18186,7200 18134,7173 18079,7144 18010,7133
+(Firlstr. - Eichgestell)	NN 18771,6699 18784,6720 18827,6723 18874,6748 18895,6819 18908,6834
 (Hegemeisterweg - Modellpark Wuhlheide)	NN 18406,7760 18437,7752 19045,6959 19069,6928
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide)	NN 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
 (Wasserwerk Wuhlheide - An der Wuhlheide)	NN 19463,7117 19223,7189 19161,7109 19084,7009 19080,6986 19069,6928 19052,6823 18948,6578
@@ -10276,7 +10279,8 @@ Am Kanal	N 21750,2593 21490,2535 21223,2475 21111,2451 20939,2413
 (Am Kanal - Adlergestell)	NN 20939,2413 20946,2397 20939,2389 20928,2378
 (Weg in Kolonie Bodenreform)	NN 20939,2413 20904,2426 20810,2398
 (Weg in Kolonie Bodenreform)	N 20810,2398 20496,2321 20499,2285 20303,2254 20282,2259 20148,2254 20128,2271
-Goldsternweg	N 20128,2271 20138,2242 20207,2209 20245,2152 20464,2175 20550,2194 20793,2247 20895,2274
+(Weg in Kolonie Bodenreform)	N 20148,2254 20135,2251 20100,2247
+Goldsternweg	N 20128,2271 20135,2251 20138,2242 20207,2209 20245,2152 20464,2175 20550,2194 20793,2247 20895,2274
 Taubnesselweg	N 20793,2247 20836,2150 20872,2112
 Schachtelhalmweg	N 20918,2218 20836,2150 20797,2123 20734,2103 20591,2060 20351,1981
 Schachtelhalmweg	NN 20351,1981 20314,2048 20261,2114
@@ -12080,7 +12084,7 @@ Maßholderweg	N 19316,951 19143,979
 Markulfweg	N 19184,542 19282,787 19295,831
 Mundolfstr.	N 19281,518 19389,804
 Harrosteig	N 19087,566 19200,858
-(Schönefelder Chaussee - Mauerweg)	NN 18978,552 18708,600
+(Schönefelder Chaussee - Mauerweg)	NN 18978,552 18750,592 18708,600
 (Schönefelder Chaussee - Mauerweg)	NN 18760,-8 18574,68 18568,28 18560,75 18544,86
 Uranusstr.	N 18952,-603 18904,-573 18827,-537 18721,-493 18639,-461 18595,-440
 #: note: auf einigen Plänen (Google, Pharus) als "Saturnring" bezeichnet, in der Realität existieren aber keine Straßenschilder (Eintrag in Berlin.coords.data war: Saturnring|Altglienicke|12524|18661,-266)
@@ -14643,7 +14647,7 @@ Klüberstr.	N 7923,2688 7943,2834
 Dregerhoffstr.	N 22904,2675 23028,2706 23177,2742 23291,2774 23416,2808 23541,2841 23643,2860 23777,2887 23908,2912 23991,2941 24032,2964 24071,2990
 Firlstr.	N 18473,6265 18574,6401 18645,6511 18640,6542
 Firlstr.	N 18624,6520 18640,6542 18674,6589 18700,6604 18771,6699
-Firlstr.	N 18645,6511 18674,6515 18710,6567 18700,6604
+Firlstr.	N 18645,6511 18674,6515 18714,6574 18700,6604
 Plönzeile	N 18574,6401 18676,6333 18767,6268 18859,6198 18970,6110
 Sprengelstr. (Wedding)	N 6739,14969 6945,15045 7131,15109 7303,15173
 Sparrstr.	N 7432,14969 7397,15036 7303,15173
@@ -14701,8 +14705,8 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036637679537/637679537/00220602/02-Anlagen/01/1_Version_vom_03_07_2017.pdf (zweite Karte!)
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
-#: osm_watch: way id="38776757" version="14"
-#: last_checked: 2021-05-23
+#: osm_watch: way id="38776757" version="15"
+#: last_checked: 2021-05-29
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -14870,7 +14874,8 @@ Schirpitzer Weg [42-54]	NN 17937,958 17930,972 17931,987 17948,1011 17967,1036 1
 Benatzkyweg	N 17605,1429 17730,1464 17902,1517
 (Benatzkyweg - Glashütter Weg)	NN 17902,1517 17970,1526 18067,1568 18121,1614
 (Benatzkyweg - Rudower Höhe)	NN 18067,1568 18099,1568 18147,1559 18212,1572 18290,1574
-Glashütter Weg	N 18121,1614 18223,1683 18266,1715 18425,1831
+(Rudower Höhe)	NN 18245,1699 18300,1612
+Glashütter Weg	N 18121,1614 18223,1683 18245,1699 18266,1715 18425,1831
 (Glashütter Weg - Künnekeweg)	NN 18223,1683 18290,1574 18432,1352
 An der Rudower Höhe	N 18425,1831 18361,1926
 Niederschlemaer Weg	N 18447,1727 18444,1782 18425,1831
@@ -15078,7 +15083,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="17"
-#: last_checked: 2021-05-23
+#: last_checked: 2021-05-29
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)

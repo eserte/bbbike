@@ -31,6 +31,7 @@
 # * möglichst auf "ist" oder andere Verben verzichten (ist aber nicht immer möglich, siehe oben)
 # * "Radspur zwischen Fahrspuren"
 # * "Radweg nur aufgemalt"
+# * "Verbundsteinpflaster" statt "Verbundsteinpflasterradweg"
 # 
 	RW1; 9229,8785 9227,8890
 neu asphaltiert	RW1; 9227,8890 9226,8967
@@ -887,7 +888,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-05-22
+#: last_checked: 2021-05-29
 #: check_frequency: 60d
 # REMOVED (vermutlich ohne baldige Änderung) --- #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -3112,9 +3113,13 @@ die letzten Meter werden auf dem Gehweg geführt	RW3; 7621,17246 7602,17399
 #: corrected_by: ^^^
 #: by: ^^^
 # 
-#: by: Bärbel Buch:
-#: confirmed_by: ADFC-Karte, srt
-	RW1;RW1 19777,-196 19854,-126 19909,-75 19972,-19 19985,-6 20164,152 20274,253 20351,287 20470,319 20604,354
+#: by: Bärbel Buch: vvv
+#: confirmed_by: ADFC-Karte, srt (+ Konkretisierung) vvv
+Verbundsteinpflaster	RW1; 19777,-196 19854,-126 19909,-75 19972,-19 19985,-6 20164,152 20274,253 20351,287 20470,319
+Verbundsteinpflaster, einige Wurzelhebungen	RW1; 20470,319 20604,354
+Verbundsteinpflaster	RW1; 20604,354 20470,319 20351,287 20274,253 20164,152 19985,-6 19972,-19 19909,-75 19854,-126 19777,-196
+#: confirmed_by ^^^
+#: by: ^^^
 #: by: Sara Köhler:
 	RW6;RW6 -3173,14216 -3092,14331 -3060,14380
 # REMOVED (stimmt nicht, nur 30er-Zone) --- #: XXX Eintrag war nicht eindeutig: Spielstraße und gleichzeitig 30er-Zone: ---	RW6;RW6 -5115,15348 -5226,15367
@@ -3397,9 +3402,9 @@ Gehweg für Radfahrer frei	RW1; 18922,2238 18928,2319 18929,2454
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX laut fixmyberlin werden hier Radstreifen entstehen, Umsetzung ab 2021
 #: source_id: 2147346437 (Leitungsarbeiten bis 31.05.2020)
-#: last_checked: 2021-04-24
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2021-05-31
+#: last_checked: 2021-05-29
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2021-05-31
 # REMOVED (kein Radweg mehr) --- Kein abgeflachter Bordstein bei der Auffahrt!	RW1; 18922,2238 18881,2062
 	RW0; 18922,2238 18881,2062
 	RW1; 18881,2062 18922,2238
@@ -3678,7 +3683,7 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 #	RW4; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
 #	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905
 #: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv
-#: last_checked: 2021-05-10 vvv
+#: last_checked: 2021-05-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 Busspur ist immer gültig	RW5; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374
@@ -5035,8 +5040,8 @@ Verbundsteinpflaster	RW2; 12403,14663 12371,14615 12317,14535
 Radspur zwischen Fahrspuren	RW3; 11139,13008 11226,12945
 	RW6;RW6 17470,4998 17463,4964 17428,4792
 asphaltiert	RW1;RW1 17648,5338 17705,5223 17726,5166 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667
-wenige Meter asphaltierter Radweg	RW0; 17648,5338 17736,5441
-die letzten Meter mit benutzungspflichtigen asphaltierten Radweg	RW0; 17736,5441 17648,5338
+	RW0; 17648,5338 17736,5441
+asphaltiert	RW; 17736,5441 17648,5338
 asphaltiert	RW1;RW1 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642
 asphaltiert	RW1;RW2 18445,2642 18338,2669
 # 
@@ -5300,9 +5305,9 @@ Busspur ist immer gültig	RW5; 5236,10994 5373,10981
 Gehwegplatten	RW1;RW1 15181,18137 15239,18063 15238,18015
 	RW1; 15221,17900 15238,18015
 	RW2; 17186,17593 17159,17631
-Verbundsteinpflasterradweg	RW1;RW1 19930,815 20171,698 20337,616
-Verbundsteinpflasterradweg	RW1; 20550,474 20589,403 20604,354 20625,275
-Verbundsteinpflasterradweg	RW1;RW1 20625,275 20656,164 20668,121 20684,105
+Verbundsteinpflaster	RW1;RW1 19930,815 20171,698 20337,616
+Verbundsteinpflaster	RW1; 20550,474 20589,403 20604,354 20625,275
+Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 	RW6;RW6 20894,236 20843,221 20738,189
 	RW6;RW6 20866,334 20816,323 20659,283 20625,275
 	RW6;RW6 20738,189 20687,173 20656,164
@@ -5339,7 +5344,7 @@ Verbundsteinpflasterradweg	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 	RW6;RW6 21608,85 21582,185
 	RW6;RW6 21515,67 21487,173
 #: XXX jetzt Hochbauarbeiten, Gehweg und Radweg teilweise nicht mehr vorhanden
-#: last_checked: 2020-11-28
+#: last_checked: 2021-05-29
 #: check_frequency: 180d
 früher asphaltierter Radweg	RW0; 19894,-835 20078,-1029
 asphaltiert, teilweise mit Wurzelschäden	RW1; 20078,-1029 20388,-1373 20394,-1397 20416,-1721
@@ -5837,9 +5842,9 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 #: source_id: 2147347210 (25.5.2021 bis 16.7.2021)
 #: also_indoor: traffic
 # REMOVED --- #: priority: #D
-#: last_checked: 2021-04-03
+#: last_checked: 2021-05-29
 #: check_frequency: 90d
-#: next_check: 2021-05-24
+#: next_check: 2021-07-16
 	RW3;RW3 18245,5551 18370,5511 18680,5413 18955,5320 19037,5316 19186,5310 19328,5304
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
 	RW6;RW6 11874,20656 11826,20722

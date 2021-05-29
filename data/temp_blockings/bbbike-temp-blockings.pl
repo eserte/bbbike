@@ -30879,7 +30879,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-28
+#: last_checked: 2021-05-29
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31992,7 +31992,6 @@ EOF
        type  => 'handicap',
        source_id => '2147346788',
        data  => <<EOF,
-#: note: bei rbb nur bis 18.5.2021
 #: osm_watch: way id="683770241" version="6"
 	q4::inwork 19564,1871 19743,1804
 EOF
@@ -32147,7 +32146,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-05-23
+#: last_checked: 2021-05-29
 #: check_frequency: 30d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32219,7 +32218,7 @@ EOF
 EOF
      },
      { from  => 1616340931, # 2021-03-21 16:35
-       until => 1625090400, # 2021-07-01 00:00
+       until => 1622302565, # (von weiten nicht mehr gesehen) --- 1625090400, # 2021-07-01 00:00
        text  => 'Plönzeile: wegen Bauarbeiten Einbahnstraßenregelung und Sperrung der Fahrbahn, ggfs. auf Gehweg ausweichen, voraussichtlich bis Juni 2021',
        type  => 'handicap',
        data  => <<EOF,
@@ -32304,6 +32303,8 @@ EOF
        data  => <<EOF,
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,697260#msg-697260
 #: XXX Ist der Bahnübergang tatsächlich gesperrt? Wann sind die Bauarbeiten hier beendet?
+#: osm_watch: node id="8599852570" version="1"
+#: osm_watch: node id="8599852571" version="1"
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 EOF
      },
@@ -32669,6 +32670,25 @@ EOF
        source_id => 'LS/722-W/21/077',
        data  => <<EOF,
 	2::inwork 14962,-15017 15046,-14607
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Glashütter Weg - Künnekeweg: Bauarbeiten, Weg ist gesperrt, Umfahrung über Trampelpfade möglich, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2021-05-29
+#: add_fragezeichen: Wie lange gehen die Bauarbeiten? Wie ist die Wegoberfläche nach den Bauarbeiten?
+	2::inwork 18432,1352 18290,1574
+EOF
+     },
+     { from  => 1621843200, # 2021-05-24 10:00
+       until => 1626447600, # 2021-07-16 17:00
+       text  => 'Schnellerstr. und Fennstr.: Bauarbeiten, Fahrbahn teilweise gesperrt, Radfahrer müssen den Bürgersteig benutzen, vom 25.05.2021 10:00 Uhr bis 16.07.2021 17:00 Uhr',
+       type  => 'handicap',
+       source_id => '2147347210',
+       data  => <<EOF,
+	q3::inwork 18080,5376 18245,5551 18370,5511 18680,5413 18955,5320
 EOF
      },
     );

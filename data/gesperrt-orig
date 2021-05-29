@@ -159,7 +159,7 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: osm_watch: way id="871408060" version="1"
 #: XXX wird auch zwischen Grünbergallee und Paradiesstr. ein Radweg entstehen?
 #: XXX wird auch auf der Paradiesstr. zwischen B96a und Johannes-Tobei-Str. auf der westlichen Seite ein Radweg entstehen, möglicherweise ein Zweirichtungsradweg?
-#: last_checked: 2021-04-24
+#: last_checked: 2021-05-29
 #: check_frequency: 120d
 #: next_check: 2021-07-31
 # REMOVED --- #: next_check: 2021-01-31
@@ -1175,7 +1175,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="8"
-#: last_checked: 2021-02-24
+#: last_checked: 2021-05-29
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -3267,7 +3267,7 @@ Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, k
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=75609
 #: XXX bis wann ist gilt hier die Einbahnstraßenregelung?
 #: XXX_prog: eigentlich 1s:q4:inwork, kollidiert aber mit dem normalen handicap_s-orig-Eintrag
-#: last_checked: 2021-05-16
+#: last_checked: 2021-05-29
 #: next_check: 2021-05-31
 #: valid: -20210531
 Wildensteiner Str.: Einbahnstraßenregelung (wegen SEV)	1::inwork 18627,8475 18528,8331
@@ -3319,7 +3319,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: check_frequency: 45d
 (Weg parallel zur und unter der Minna-Todenhagen-Brücke): mit Bauzäunen abgesperrt	2::inwork 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
 # 
-#: last_checked: 2021-05-10
+#: last_checked: 2021-05-29
 #: check_frequency: 30d
 (Breiter Weg - Südostallee/Sterndamm): Durchgang ist wegen Bauarbeiten gesperrt	2::inwork 17538,5301 17601,5374
 # 
@@ -3358,13 +3358,9 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: check_frequency: 60d
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 # 
-#: last_checked: 2021-05-23 vvv
-#: check_frequency: 14d vvv
-Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922 16841,9997
-Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16886,9982
+# REMOVED (offen, dafür ist nun temporär die Anbindung an die Zobtener Str. verschwenkt) --- #: last_checked: 2021-05-23 vvv --- #: check_frequency: 14d vvv --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16900,9861 16895,9922 16841,9997 --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16886,9982
 # REMOVED (hier jetzt offen, aber noch nicht fertig) --- Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16841,9997 16830,10030 16835,10052
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise
@@ -3502,7 +3498,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2021-05-22
+#: last_checked: 2021-05-29
 #: check_frequency: 360d
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
 # 
@@ -3636,17 +3632,7 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 # REMOVED --- #: next_check_id: HERMANNHESSESTR-2019 --- #: source_id: 2147345502 --- #: source_id: 2147343407 (hier nur bis 2020-07-13)--- #: XXX im Verkehrsmeldungstext ist die Sperrung Richtung Westen, aber vermutlich ist es genau anders herum? vvv --- #: also_indoor: traffic (H) vvv --- #: last_checked: 2020-06-21 (mapillary) vvv --- #: next_check: 2020-08-05 vvv --- Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:q4:inwork 9868,19023 9501,18902
 # REMOVED (hier kommt man mittlerweile gut durch) --- Hermann-Hesse-Str.: Einbahnstraßenregelung	1s:q3:inwork 9501,18902 9681,19179 9811,19302
 # REMOVED --- Homeyerstr.: Einbahnstraßenregelung	1s:q3:inwork 9529,18815 9465,18855
-# 
-#: next_check_id: FALKENBERG-2021
-#: last_checked: 2021-05-15 vvv
-#: check_frequency: 30d vvv
-#: osm_watch: way id="663861522" version="8"
-David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
-#: XXX Wann wird die Straße fertig gestellt? Qualität (vermutlich Verbundsteinpflaster)? Wird hier eine Spielstraße sein?
-#: osm_watch: way id="506201935" version="14"
-Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (laut osm mittlerweile offen) --- #: next_check_id: FALKENBERG-2021 --- #: last_checked: 2021-05-15 vvv --- #: check_frequency: 30d vvv --- #: osm_watch: way id="663861522" version="9" --- David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851 --- #: XXX Wann wird die Straße fertig gestellt? Qualität (vermutlich Verbundsteinpflaster)? Wird hier eine Spielstraße sein? --- #: osm_watch: way id="506201935" version="14" --- Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020 wieder offen, bis voraussichtlich 13. September 2020)
@@ -3668,7 +3654,7 @@ Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,815
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2021-05-09 vvv
+#: last_checked: 2021-05-29 vvv
 #: check_frequency: 60d vvv
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
 # REMOVED (hier kann man schon fahren) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21474,5388 21485,5377 21514,5314 21547,5245 21413,5180
