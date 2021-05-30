@@ -106,11 +106,12 @@ Jühnsdorf - Mahlow: asphaltierter Radweg; Fahrbahn Kopfsteinpflaster mit Asphalt
 Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser	Q2; 9964,-8961 9990,-8867
 Jühnsdorf - Mahlow: Kopfsteinpflaster mit Asphaltstreifen	Q1; 9990,-8867 9964,-8961
 #: corrected_by: osm (früher mäßiges Kopfsteinpflaster)
-Jühnsdorf - Mahlow: Asphalt	Q0 10115,-8276 10448,-7582 10500,-7202 10636,-6703 10755,-6414 10869,-6174 10890,-6119 11106,-5538 11065,-5338
+Jühnsdorf - Mahlow: Asphalt	Q0 10115,-8276 10171,-8159 10448,-7582 10456,-7522 10500,-7202 10636,-6703 10755,-6414 10869,-6174 10890,-6119 11106,-5538 11081,-5416 11065,-5338
 #: corrected_by: mapillary (früher Kopfsteinpflaster)
 Löwenbruch: Asphalt	Q0 5037,-12382 4969,-12515 4555,-12852
-Diedersdorf: Pflastersteine, OK	Q1 7558,-7082 7501,-7149 7380,-7165 7378,-7406 7309,-7482 7421,-7476
-Diedersdorf: Kopfsteinpflaster, OK	Q1 7421,-7476 7929,-7221 7967,-7152
+Diedersdorf: Pflastersteine, OK	Q1 7558,-7082 7501,-7149 7380,-7165 7378,-7406 7296,-7482 7408,-7483 7452,-7463 7511,-7434
+Diedersdorf: Pflastersteine, OK	Q1 7378,-7406 7446,-7436 7452,-7463
+Diedersdorf: Kleinsteinpflaster, etwas uneben	Q1- 7511,-7434 7929,-7221 7967,-7152
 Arcostr.: Asphalt	Q0 10323,-3150 10309,-3191
 Arcostr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 10309,-3191 10277,-3262 10185,-3478 10125,-3626 10083,-3721
 Arcostr.: Asphalt	Q0 10083,-3721 10062,-3766 9973,-3973
@@ -286,7 +287,8 @@ Trebbiner Str.: Asphalt	Q0 11165,-5318 11189,-5157 11302,-4489
 #: by: Stefan Schmidt:
 #: corrected_by: bergmann/osm (mäßiges Kopfsteinpflaster, Q2 -> ...)
 #: confirmed_by: srt
-Trebbiner Str.: Fahrbahn mäßiges Kopfsteinpflaster, Gehweg asphaltiert	Q0 11338,-3945 11671,-3400
+Trebbiner Str.: Fahrbahn unebenes Kleinsteinpflaster	Q2 11338,-3945 11646,-3439
+Trebbiner Str.: Asphalt	Q0 11646,-3439 11658,-3419 11671,-3400 11701,-3360
 Schöneicher Str.: Kopfsteinpflaster	Q2 30587,8490 30700,8462 31176,8354
 Schöneiche: Kopfsteinpflaster	Q2 30587,8490 30409,8500 30290,8562
 #: corrected_by: mapillary/osm (was "Kopfsteinpflaster")
@@ -2509,7 +2511,8 @@ Anna-Karbe-Str. (Gramzow): Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q2 5
 Anna-Karbe-Str. (Gramzow): Asphalt	Q0 50262,90540 50335,90610 50563,90705 50581,90731
 Dorfstr. (Lützlow): Verbundsteinpflaster	Q1 52154,93571 52130,93595 52196,93731 52264,93836 52324,93814
 Am Kietz (Lützlow): Verbundsteinpflaster	Q1+ 52355,93894 52422,94028 52431,94119
-Wirtschaftsweg (verl. Ziethener Str. ): Schotterweg, einige sandige Stellen	Q2- 10346,-4027 10778,-3988 11338,-3945
+Wirtschaftsweg (verl. Ziethener Str. ): Schotterweg, einige sandige Stellen	Q2- 10346,-4027 10778,-3988
+Wirtschaftsweg (verl. Ziethener Str. ): Asphalt	Q0 10778,-3988 11338,-3945
 #: note: laut Bild http://www.bsisb.de/sb/b101/b101_47.jpg
 Hauptstr. (Großbeeren): Asphalt	Q0 4418,-3332 5036,-3707
 #: note: laut Bild http://www.bsisb.de/sb/b101/b101_50.jpg und http://www.bsisb.de/sb/b101/b101_46.jpg
@@ -4808,8 +4811,9 @@ Birkholz - Großbeeren: Asphalt	Q0 6162,-2329 6062,-2292 5883,-2508 5627,-2676 55
 Friederickenhof: rauer Asphalt mit Schäden	Q1 6162,-2329 6723,-2607 6824,-2706
 Friederickenhof - Birkholz: Beton	Q0- 6824,-2706 6876,-2731 7332,-2909 8041,-3322 8051,-3326 8114,-3357
 Lichtenrade - Birkholz/Diedersdorf: wassergebundene Decke	Q1 8310,-2037 8100,-2471
-Lichtenrade - Birkholz/Diedersdorf: Feldsteinpflaster mit Banketten	Q2- 8100,-2471 8113,-3293
-Lichtenrade - Birkholz/Diedersdorf: Asphalt	Q0- 8113,-3293 8114,-3357
+Lichtenrade - Birkholz/Diedersdorf: Schotterweg mit Banketten	Q2- 8100,-2471 8113,-3293
+Lichtenrade - Birkholz/Diedersdorf: unebener Asphalt	Q1- 8113,-3293 8114,-3357 8112,-3472 8085,-3611 8016,-3838
+Birkholz - Diedersdorf: Asphalt	Q0 8016,-3838 7978,-4011 7924,-4240
 Innerer Mauerweg - Birkholz/Diedersdorf: unbefestigter Weg, eventuell sandig	Q2- 8412,-1979 8310,-2037
 Aüßerer Mauerweg - Innerer Mauerweg: unbefestigter Weg, holprig	Q2- 8376,-1523 8415,-1525 8467,-1393 8492,-1376
 Egestorffstr. - Mauerweg: Asphalt	Q0 9093,-1670 9083,-1962 9065,-1983
@@ -5836,6 +5840,7 @@ Bremer Str. (Schulzendorf): schlechtes Kopfsteinpflaster	Q3 24216,-6348 23993,-6
 Hamburger Str. (schlechtes): schlechtes Kopfsteinpflaster	Q3 24297,-6439 24062,-6607 23875,-6743
 #: add_fragezeichen: ist im südwestlichen Abschnitt die Straße auch gepflastert?
 Hamburger Str. (schlechtes): schlechtes Kopfsteinpflaster	Q3 23875,-6743 23726,-6857
+Mahlow, Bahnübergang: Kopfsteinpflaster	Q2 11077,-5335 11119,-5326
 ######################### User Contributions #################################
 #: by: osm vvv
 Birkenweg: Asphalt	Q0 27432,12680 27427,12773 27483,12922

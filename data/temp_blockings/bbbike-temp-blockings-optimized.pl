@@ -2763,7 +2763,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-29
+#: last_checked: 2021-05-30
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2854,28 +2854,27 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
+#: by: https://viz.berlin.de/2021/05/verkehrsvorschau-310521/ (Fuß- und Radverkehr ist frei)
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: source_id: 2147347233 (bis 23.12.2021)
-#: XXX Aktivierung der Vollsperrung!
 #: priority: #A
-#: next_check: 2021-05-30
+#: next_check: 2021-12-23
 #: also_indoor: traffic (H,G) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
 #: XXX NEW	Gardeschützenweg (Lichterfelde) in beiden Richtungen zwischen Hindenburgdamm und Lipaer Straße: Leitungsbau,Vollsperrung, Fußverkehr frei, vom 31.05.2021 08:30 Uhr bis 23.12.2021 17:00 Uhr
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv --- #: last_checked: 2020-12-27 (mapillary) vvv --- #: next_check: 2021-05-03 vvv
-	q4::inwork; 4515,4760 4214,4595
-#: note: hier nur ein kurzes Stück
-	q2::inwork; 4214,4595 4039,4500
+	q4::inwork 4515,4760 4214,4595
+# REMOVED --- #: note: hier nur ein kurzes Stück ---	q2::inwork; 4214,4595 4039,4500
 # REMOVED (nicht mehr, laut rbb) ---	q4::inwork 4179,4662 4214,4595
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 #: also_indoor ^^^
 ',
-         'from' => 1589275980,
+         'from' => 1622356200,
          'id' => 3261,
          'source_id' => '2147345834',
-         'text' => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Lipaer Str. wegen Bauarbeiten gesperrt, bis 31.05.2021',
+         'text' => 'Gardeschützenweg: Fahrbahn zwischen Hindenburgdamm und Lipaer Str. wegen Bauarbeiten gesperrt, möglicherweise Einschränkungen für den Radverkehr, vom 31.05.2021 bis 23.12.2021',
          'type' => 'handicap',
-         'until' => 1622473200
+         'until' => 1640275200
        },
        undef,
        undef,
@@ -2987,7 +2986,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/lichtenrade/c-kultur/spielen-auf-dem-rehagener-platz_a278641
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.949210.php (Fertigstellung IV. Quartal 2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? Wird das Kopfsteinpflaster nach den Bauarbeiten etwas besser sein? vvv
-#: last_checked: 2021-04-02 vvv
+#: last_checked: 2021-05-30 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-12-15
 	q4::inwork 10642,-2371 10638,-2452
@@ -3196,17 +3195,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147347231
-	2::inwork 12672,20720 12723,20691
-',
-         'from' => 1622152800,
-         'id' => 3331,
-         'source_id' => '2147346882',
-         'text' => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, möglicherweise sind auch Fußgänger und Radfahrer betroffen, am 29.5.2021 von 6:00 bis 20:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1622311200
-       },
+       undef,
        {
          'data' => '#: by: https://tierparkcenter.de/wochenmarkt/ (Öffnungszeiten)
 #: tempex: (mo,th,fr) T08-T17
@@ -3296,7 +3285,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX laut rbb bis 28.6.2021
 #: also_indoor: traffic
 #: priority: #A vvv
-#: last_checked: 2021-05-23 vvv
+#: last_checked: 2021-05-30 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2021-06-28 vvv
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
@@ -3315,14 +3304,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,578649,697260#msg-697260
-#: XXX Ist der Bahnübergang tatsächlich gesperrt? Wann sind die Bauarbeiten hier beendet?
+#: confirmed_by: srt
+#: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
 #: osm_watch: node id="8599852570" version="1"
 #: osm_watch: node id="8599852571" version="1"
+#: last_checked: 2021-05-30
+#: check_frequency: 180d
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 ',
          'from' => undef,
          'id' => 3349,
-         'text' => 'Bahnübergang Ziethener Str. möglicherweise gesperrt',
+         'text' => 'Bahnübergang Ziethener Str. wegen Bauarbeiten gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3700,6 +3692,51 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Schnellerstr. und Fennstr.: Bauarbeiten, Fahrbahn teilweise gesperrt, Radfahrer müssen den Bürgersteig benutzen, vom 25.05.2021 10:00 Uhr bis 16.07.2021 17:00 Uhr',
          'type' => 'handicap',
          'until' => 1626447600
+       },
+       {
+         'data' => '#: osm_watch: way id="48490204" version="4"
+#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
+#: last_checked: 2021-05-30
+#: check_frequency: 90d
+	2::inwork 6511,2284 6459,2364
+',
+         'from' => undef,
+         'id' => 3384,
+         'text' => 'Seydlitzstr.: südlich der Dessauerstr. Bauarbeiten, komplett gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Wann wird die Sperrung der Fahrbahn aufgehoben? Wird sich die Qualität des Asphalts nach den Bauarbeiten besser sein?
+#: last_checked: 2021-05-30
+#: check_frequency: 90d
+	q4::inwork 6331,2281 6399,2184
+',
+         'from' => undef,
+         'id' => 3385,
+         'text' => 'Retzowstr.: südlich der Dessauerstr. Bauarbeiten, Fahrbahn gesperrt, Gehweg ist noch offen, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Wann wird die Sperrung aufgehoben? vvv
+#: also_indoor: traffic (G) vvv
+#: last_checked: 2021-05-30 vvv
+#: check_frequency: 60d vvv
+	q4::inwork 6130,449 6112,547
+	q3::inwork 6112,547 6400,579
+	q4::inwork 5907,519 6112,547 6089,643
+	q3::inwork 6089,643 6066,821
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => undef,
+         'id' => 3386,
+         'text' => 'Lichterfelder Ring/Stanzer Zeile: Bauarbeiten, Kreuzungsbereich gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

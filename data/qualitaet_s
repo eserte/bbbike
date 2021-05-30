@@ -1348,9 +1348,7 @@ Parforceweg: Waldweg	Q2 -1852,8155 -2038,8304 -2161,8354 -2388,8437
 Wanderweg Erkner - Hessenwinkel: guter Parkweg	Q1 33526,2771 33419,2765 33406,2738 33258,2762 33086,2790 33002,2826
 Schönhorster Str.: asphaltiert	Q0 29902,2379 29549,2267 29414,2373
 Südendstr.: Kopfsteinpflaster	Q2 5676,5488 5840,5456 5993,5422
-Am Teltowkanal: Parkweg mit Verbundsteinradweg	Q1 7994,4430 8234,4660
-Am Teltowkanal: Parkweg, teilweise mit schmalem Verbundsteinradweg	Q1 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095
-Am Teltowkanal: Parkweg mit Verbundsteinradweg	Q1 8784,5095 8881,5143 9080,5225
+Am Teltowkanal: Parkweg mit schmalem Verbundsteinradweg	Q1 7994,4430 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095 8881,5143 9080,5225
 Am Teltowkanal: Verbundsteinpflaster	Q1 9080,5225 9171,5263 9196,5272
 Unterführung Emil-Schulz-Brücke: unbefestigt, Schotter	Q2 4274,2717 4272,2704 4247,2652 4209,2641
 Teltowkanal: Parkweg, OK	Q1 4209,2641 4053,2300 3971,2106 3814,1729
@@ -2878,7 +2876,8 @@ Feuchtwangerweg: Kleinpflaster	Q1 15835,1747 15788,1747
 Försterweg: Asphalt	Q0 13462,2186 13485,2007
 Wildmeisterdamm: Verbundsteinpflaster	Q1 13640,2229 13568,2208 13559,2205 13552,2204 13534,2204
 Wildmeisterdamm: Asphalt	Q0 13534,2204 13462,2186 13336,2151 13176,2106 13157,2116 13104,2143
-Steinträgerweg: Beton	Q0 13023,2093 12987,2220 12963,2365
+Steinträgerweg: Beton	Q0 13023,2093 12987,2220
+Steinträgerweg: Beton	Q0 12987,2220 12963,2365
 Rohrlegerweg: Beton	Q0 12738,2162 12864,2191 12987,2220 13103,2271 13309,2410
 Mondsteinpfad: Gehwegplatten	Q1 11181,1884 11182,1976
 Grünsteinweg: Asphalt	Q0 10859,2033 10868,2120 10886,2167
@@ -10651,6 +10650,9 @@ Heubudenbrücke: Holzbohlen	Q1 9017,17290 8982,17299
 zur Heubudenbrücke: wassergebundene Decke	Q1 8982,17299 8973,17301
 (Uferweg an der Stockholmer Str.): wassergebundene Decke	Q1 8982,17299 8957,17217 8870,17073
 (Rudower Höhe): Verbundsteinpflaster	Q1 18245,1699 18300,1612
+(Stanzer Zeile - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	Q2 6175,372 6204,331
+zum Mauerweg: Asphalt	Q0 11671,-3400 11600,-3382
+zum Mauerweg: Waldweg	Q1 11600,-3382 11570,-3356
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12275,7 +12277,7 @@ Am Gemeindepark: Beton	Q0 7172,2343 7215,2442 7208,2534 7199,2559 7165,2571
 Am Gemeindepark: guter Asphalt	Q0 7165,2571 7034,2586 6751,2708 6679,2701
 Brodowiner Ring: Asphalt	Q0 22223,16350 22192,16165 22290,16146 22400,16226 22410,16313
 Parsteiner Ring: Asphalt	Q0 22410,16313 22432,16467 22311,16562 22250,16468 22223,16350
-Bauhüttenweg: Asphalt	Q0 12703,2454 12774,2463 12835,2470 12948,2484 13064,2499 13180,2514 13238,2521 13302,2554 13348,2588
+Bauhüttenweg: Asphalt	Q0 12703,2454 12774,2463 12835,2470 12948,2484 13064,2499 13180,2514 13238,2521 13302,2554 13348,2588 13376,2631 13402,2719 13430,2837
 Elberfelder Str.: schlechtes Kopfsteinpflaster	Q3 5766,13175 5755,12998 5749,12834 5734,12673
 Benfeyweg: teils rauer, teils welliger und löchriger Asphalt	Q1 -8553,5329 -8638,5362 -8731,5401 -8797,5428 -8814,5428
 Schambachweg: mäßiger Asphalt	Q1 -8638,5362 -8735,5116 -8762,5033
@@ -13348,7 +13350,7 @@ Paster-Behrens-Str.: Verbundsteinpflaster	Q1 13171,4091 13128,4008
 Onkel-Bräsig-Str.: gut asphaltiert mit Ausbesserungen	Q0 13305,4504 13324,4784 13359,5086 13327,5234
 Hüsung: älterer Asphalt mit Querrillen/Aufbrüchen und Ausbesserungen	Q0 13324,4784 13400,4788 13468,4766 13397,4762 13324,4784
 Am Poloplatz: mäßig befahrbare Kleinpflastersteine	Q2 2111,26459 2181,26456 2210,26457
-Stanzer Zeile: Asphalt	Q0 6180,376 6130,449 6112,547 6089,643
+Stanzer Zeile: Asphalt	Q0 6175,372 6130,449 6112,547 6089,643
 Stanzer Zeile: mäßig befahrbare Kleinpflastersteine	Q2 6089,643 6066,821 6067,865 6080,1011 6106,1133
 Saalmannstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 5171,18785 5181,19037
 Ifenpfad: guter Asphalt	Q0 10187,1345 10276,1383
@@ -14878,7 +14880,7 @@ Hafersteig: Beton, einige wellige und löchrige Stellen	Q1 21150,13493 21113,1313
 Hafersteig: Beton mit leichten Schäden	Q0 21113,13138 21078,12824
 Hafersteig: Asphalt	Q0 21078,12824 21064,12769 20975,12620
 Hafersteig: Asphalt mit Schäden	Q1 20975,12620 20863,12412 20859,12386 20835,12200
-Jenbacher Weg: Verbundsteinpflaster	Q1 6400,579 6411,533 6233,412 6180,376 5987,256 5800,138 5703,74 5665,51 5418,-98
+Jenbacher Weg: Verbundsteinpflaster	Q1 6400,579 6411,533 6233,412 6175,372 5987,256 5800,138 5703,74 5665,51 5418,-98
 Krischanweg: Asphalt	Q0 13855,4363 13968,4340 14012,4184
 Pirmasenser Str.: Beton	Q0 -4442,15675 -4568,15708 -4639,15726
 Lössauer Str.: guter Asphalt	Q0 16816,15092 17226,15083
@@ -17328,7 +17330,7 @@ Kindelbergweg: Beton	Q0 6632,1482 6601,1471 6560,1473
 (Mauerweg Lichtenrade - Marienfelde): Asphalt	Q0 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037
 (Mauerweg Lichtenrade - Marienfelde): Asphalt mit Fugen	Q1 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565
 (Mauerweg Lichtenrade - Marienfelde): Asphalt	Q0 7144,-565 7169,-520 7164,-473 7146,-466 7098,-523
-(Mauerweg Marienfelde - Lichterfelde): Asphalt mit Fugen	Q1 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6256,363 6198,328 6013,211 5832,93 5441,-150 4842,-547 4596,-707 4406,-910
+(Mauerweg Marienfelde - Lichterfelde): Asphalt mit Fugen	Q1 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6256,363 6204,331 6013,211 5832,93 5441,-150 4842,-547 4596,-707 4406,-910
 (Mauerweg - Schütte-Lanz-Str.): fester Waldweg	Q1 5832,93 5800,138
 (Mauerweg - Waldsassener Str.): fester, holpriger Waldweg	Q2 6668,-100 6705,-61
 (Mauerweg - Achenseeweg): fester Waldweg	Q1 6013,211 5987,256
@@ -17494,7 +17496,8 @@ Wohlgemuthstr.: Kopfsteinpflaster	Q2 15696,6507 15765,6512 15904,6410
 Gernsheimer Str.: Asphalt	Q0 6819,4051 6859,4085 6917,4070 7017,4035 7053,4012
 Rotenfelser Weg: Asphalt	Q0 6917,4070 6904,4018 6996,3945
 Fuchsienweg: Beton	Q1 16096,3075 16376,2862 16573,2715
-Heideläuferweg: Asphalt	Q0 13010,2085 13043,1984 13070,1642 13073,1559 13089,1351 13092,1265 13093,1171 13109,1071
+Heideläuferweg: Asphalt	Q0 13010,2085 13043,1984 13070,1642 13073,1559 13089,1351
+Heideläuferweg: Verbundsteinpflaster	Q1 13089,1351 13092,1265 13093,1171 13109,1071
 Dröpkeweg: Asphalt	Q0 13070,1642 13181,1645 13288,1647 13397,1657 13507,1659 13531,1588 13657,1587
 Siegfriedstr. (Niederschönhausen): Asphalt	Q0 10624,19912 10742,19632
 Siegfriedstr. (Niederschönhausen): Asphalt, Schlaglöcher	Q2 10742,19632 10806,19490 10857,19379

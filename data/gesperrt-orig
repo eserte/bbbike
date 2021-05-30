@@ -770,7 +770,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
 #: by: https://www.berliner-woche.de/buckow/c-verkehr/keine-freie-fahrt-fuer-radler_a228928 (passiert wohl nicht...) (selten prüfen!)
 #: osm_watch: way id="5111625" version="11"
-#: last_checked: 2020-09-15
+#: last_checked: 2021-05-30
 #: check_frequency: 270d
 Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
@@ -1259,7 +1259,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021
-#: last_checked: 2021-05-28
+#: last_checked: 2021-05-30
 #: check_frequency: 30d
 #: next_check: 2021-06-30
 # REMOVED (Arbeiten am Bahnhof dauern länger) --- #: next_check: 2021-04-01
@@ -1465,6 +1465,7 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
 ###################################################################### 
 # elsewhere in Brandenburg
+Diedersdorf	1 7452,-7463 7408,-7483 7296,-7482 7378,-7406
 Birkenweg	1 27483,12922 27427,12773 27432,12680
 #: by: mapillary
 Bhf. Finkenkrug: Radfahren verboten	2 -13586,17691 -13534,17713 -13534,17758 -13568,17796 -13604,17836
@@ -1611,6 +1612,10 @@ Würzburger Str.	1 26031,-4072 26082,-4137 26119,-4215 26125,-4280
 Würzburger Str.	1 26109,-4284 26096,-4218 26060,-4148 26014,-4087
 Spartakusstr.	1s:q3 23907,-3542 23865,-3442 23820,-3337
 Heckenrosenweg (Schöneiche)	1 32387,6349 32317,6312 32301,6346 32370,6380 32387,6349
+#: by: osm vvv
+Weidenhof	1 10963,-4389 10956,-4470
+Weidenhof	1 10994,-4472 10998,-4391
+#: by ^^^
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -3378,7 +3383,7 @@ Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708
 #: source_id: IM_020714
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-05-18
+#: last_checked: 2021-05-30 (daf)
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
@@ -3408,7 +3413,7 @@ Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,46
 #: by: https://www.hcu-hamburg.de/fileadmin/documents/REAP/BGS/Baumrigolen-Workshop/20-10-01_RUD_BA3_LP2_Broschuere_Strassenraeume_BGS_klein_sko_geaendert.pdf (geplante Umgestaltung Danneckerstr./Rudolfstr.)
 #: XXX bis wann bleibt diese Straße eine "Klimastraße"?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-05-20
+#: last_checked: 2021-05-30
 # REMOVED (bleibt vermutlich länger?) --- #: next_check: 2020-12-31
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939 13856,10864
 # 
@@ -3603,7 +3608,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
 #: osm_watch: node id="6778873745" version="1"
-#: last_checked: 2021-05-24
+#: last_checked: 2021-05-30
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3633,16 +3638,7 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 # REMOVED (hier kommt man mittlerweile gut durch) --- Hermann-Hesse-Str.: Einbahnstraßenregelung	1s:q3:inwork 9501,18902 9681,19179 9811,19302
 # REMOVED --- Homeyerstr.: Einbahnstraßenregelung	1s:q3:inwork 9529,18815 9465,18855
 # REMOVED (laut osm mittlerweile offen) --- #: next_check_id: FALKENBERG-2021 --- #: last_checked: 2021-05-15 vvv --- #: check_frequency: 30d vvv --- #: osm_watch: way id="663861522" version="9" --- David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851 --- #: XXX Wann wird die Straße fertig gestellt? Qualität (vermutlich Verbundsteinpflaster)? Wird hier eine Spielstraße sein? --- #: osm_watch: way id="506201935" version="14" --- Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915 --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: KARLMARXSTR-2018
-#: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020 wieder offen, bis voraussichtlich 13. September 2020)
-#: by: https://www.kms-sonne.de/baustellennews?date=20201221 (weiterhin gesperrt)
-#: osm_watch: way id="822674838" version="4"
-#: last_checked: 2021-05-21
-#: check_frequency: 60d
-#: next_check: 2021-06-30
-#Rollbergstr.: Einbahnstraße, offen Richtung Karl-Marx-Str.	1s:q3:inwork 12714,8249 12545,8209
-Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:q4:inwork 12714,8249 12545,8209
+# REMOVED (offen) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020 wieder offen, bis voraussichtlich 13. September 2020) --- #: by: https://www.kms-sonne.de/baustellennews?date=20201221 (weiterhin gesperrt) --- #: osm_watch: way id="822674838" version="4" --- #: last_checked: 2021-05-21 --- #: check_frequency: 60d --- #: next_check: 2021-06-30 --- Rollbergstr.: Einbahnstraße, offen Richtung Karl-Marx-Str.	1s:q3:inwork 12714,8249 12545,8209 --- Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:q4:inwork 12714,8249 12545,8209
 # 
 #: osm_watch: way id="702306263" version="5"
 #: last_checked: 2021-05-21
@@ -3685,7 +3681,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="5096644" version="16"
 #: priority: #C
-#: last_checked: 2021-05-24
+#: last_checked: 2021-05-30
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3826,7 +3822,7 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: XXX in der Glinkastr. Einbahnstraße offen für Radfahrer
 #: XXX laut rbb nur bis 1.6.2021
 #: also_indoor: traffic (G,H)
-#: source_id: 2147343289 (bis Mitte 2021)
+#: source_id: 2147343289 (bis 30.6.2021)
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.)
 #: osm_watch: way id="43233756" version="17"
 #: osm_watch: way id="681299268" version="2"
@@ -4335,13 +4331,26 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: last_checked ^^^
 #: XXX ^^^
 # 
+#: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: next_check_id: BERLINERMAHLOW-2021
+#: by: osm
+#: by: https://www.bahninfo-forum.de/read.php?9,654720,702391#msg-702391
+#: osm_watch: way id="663005792" version="3"
+#: also_indoor: traffic
+#: last_checked: 2021-05-30 (bahninfo-forum) vvv
+#: check_frequency: 360d vvv
+Berliner Str. (Mahlow): Straße gesperrt, neue Bahnunterführung wird gebaut	2:inwork 10776,-4460 10896,-4469 10956,-4470
+tragen (Treppe) oder Aufzug benutzen	0:35 10860,-4393
+tragen (Treppe) oder Aufzug benutzen	0:35 10888,-4384
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: XXX wann wird die Straße fertig werden? wie wird die genaue Wegführung sein? wird hier auch gepflastert sein?
 #: last_checked: 2019-05-25
 #: check_frequency: 180d
 Neue Plantage: hier noch Baustelle	2:inwork -13100,-1411 -13017,-1426
-# 
-#: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: by: osm
 #: by: https://www.potsdam.de/sites/default/files/documents/17554_amtsblatt_de2017_nr13_dsjs_korr2.pdf (Einziehung von Straßenland)

@@ -9,7 +9,7 @@
 # 
 # 
 #: next_check_id: GAERTNER-2021
-#: last_checked: 2021-05-27
+#: last_checked: 2021-05-30
 Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775
 # 
 #: next_check_id: HERMANNHESSESTR-2019
@@ -1363,7 +1363,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 #: osm_watch: node id="7241153386" version="1"
-#: last_checked: 2021-03-30
+#: last_checked: 2021-05-30
 #: check_frequency: 120d
 #: next_check: 2021-10-08
 	F::inwork 12330,8636
@@ -3086,7 +3086,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2021-04-10
+#: last_checked: 2021-05-30
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
 	X::inwork 13265,6972
@@ -3340,6 +3340,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/sehnsuchtsampel-wird-gebaut_a293518 (Bauampel existiert bereits)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/baubeginn-fuer-ampelanlage_a298652
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/ampelbau-dauert-laenger-als-erwartet_a300323 (Inbetriebnahme im Frühjahr (2021))
+#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/ampelbetrieb-ab-ende-juli-geplant_a311052 (Inbetriebnahme Ende Juli 2021)
 #: source_id: 2147342270 (inaktiv)
 #: source_id: 2147346463 (bis 23.12.2020) (inaktiv)
 #: source_id: 2147347158 (bis 26.6.2021)
@@ -3569,7 +3570,7 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 	X 27715,23859
 	X 26764,23083
 	F 25435,22733
-#: by: mapillary
+#: note: Anforderungsampel, zumindest in N-S-Richtung
 	X 11330,-4277
 #: by: mapillary:
 	X -11312,13478
@@ -4160,6 +4161,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 5238,-2903
 #: note: eigentlich gehören alle Koordinaten hier (5416,-3014 5407,-3031 5399,-3049) zum Kreuzungsbereich
 	X 5407,-3031
+#: note: Anforderungsampel
 	X 7978,-4011
 	B 26968,23160
 	B 29414,24387
