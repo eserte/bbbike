@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2016,2021 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@
 use strict;
 
 my @age_defs =
-    (
+    ( # note: date regexps should work with %Y-%m-%d (fit file names) and %Y%m%d (standard gpsman file names)
      { rx => qr{^200[0-7]},          name => 'Old1', color => '#a0a030' },
      { rx => qr{^20(0[8-9]|1[0-3])}, name => 'Old2', color => '#b05078' },
      {                               name => '',     color => '#c000c0' },
@@ -28,8 +28,9 @@ my @line_defs =
      { rx => qr{\((?:ship|ferry|boat)},                        type => 'Ship',  dash => '2,8' },
      { rx => qr{\((?:train|s-bahn|u-bahn|draisine|funicular)}, type => 'Train', dash => '3,8' },
      { rx => qr{\((?:pedes)},                                  type => 'Pedes', dash => '8,3,8,6' },
+     { rx => qr{\((?:bike)},                                   type => '' }, # usually explicitly only marked in fit files
      { rx => qr{\.trk\t},                                      type => 'Uncat', dash => '4,1' },
-     {                                                         type => '' },
+     {                                                         type => '' }, # usually "bike"
     );
 
 my $def_color = (grep { $_->{name} eq '' } @age_defs)[0]->{color};
