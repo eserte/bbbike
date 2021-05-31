@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2016,2018,2019,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2016,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -41,29 +41,28 @@ BEGIN {
 use Karte::Polar;
 use Karte::Standard;
 
-# the following two are out-of-order
-use constant MELDUNGSLISTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungsliste.jsp?back=true';
-use constant MELDUNGSKARTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true';
-
 use constant EPOCH_NOW => time;
 use constant ISO8601_NOW => do {
     my $s = strftime "%FT%T%z", localtime EPOCH_NOW;
     $s =~ s{(\d\d)(\d\d)$}{$1:$2};
     $s;
 };
-use constant GERMAN_CLDR => 'dd LLLL YYYY, HH:MM';
-
 use constant BIBER_URL => "https://biberweb.vmz.services/v3/incidents/biber?bbox=10.66,51.2,15.68,53.74&detail=HIGH&lang=de&timeFrom=" . uri_escape(ISO8601_NOW) . "&_=" . (EPOCH_NOW*1000);
-
-# @TIMER@ is replaced here:
-#use constant MELDUNGSLISTE_BERLIN_URL_FMT => 'http://www.vmz-info.de/web/guest/home?p_p_id=vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=ajaxPoiListUrl&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5_locale=de_DE&_vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5_url=http%3A%2F%2Fwms.viz.mobilitaetsdienste.de%2Fpoint_list%2F%3Flang%3Dde&timer=@TIMER@&category=trafficmessage&state=BB';
-use constant MELDUNGSLISTE_BERLIN_URL_FMT => 'http://vmz-info.de/web/guest/2?p_p_id=vizmap_WAR_vizmapportlet_INSTANCE_Ds4N&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=ajaxPoiMapListUrl&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_count=1&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_locale=de_DE&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_url=https%3A%2F%2Fservices.mobilitaetsdienste.de%2Fviz%2Fproduction%2Fwms%2F2%2Fwms_list%2F%3Flang%3Dde&timer=@TIMER@&category=publictransportstationairport,trafficmessage&bbox=12.470944447998022,52.00192353741223,14.171078725341772,52.84438224389493';
-# possible alternative: https://viz.berlin.de/berlin-de-meldungen-iv?p_p_id=vizmessages_WAR_vizmessagesportlet_INSTANCE_tFN6ILA0izJo&p_p_lifecycle=2&p_p_state=maximized&p_p_mode=view&p_p_resource_id=ajaxPoiListUrl&p_p_cacheability=cacheLevelPage&_vizmessages_WAR_vizmessagesportlet_INSTANCE_tFN6ILA0izJo_locale=de_DE&_vizmessages_WAR_vizmessagesportlet_INSTANCE_tFN6ILA0izJo_url=https%3A%2F%2Fservices.mobilitaetsdienste.de%2Fviz%2Fproduction%2Fwms%2F2%2Fpoint_list%2F%3Flang%3Dde&timer=1518278557974&category=trafficmessage&state=BB
-
-use constant VMZ_RSS_URL => 'http://vmz-info.de/rss/iv';
 
 use constant VMZ_2020_AUTH_URL => 'https://viz.berlin.de/wp-admin/admin-ajax.php';
 use constant VMZ_2020_DATA_URL => 'https://api.viz.berlin/incidents/streets?detail=high&lat=52.518463&lng=13.4014173&radius=60000';
+
+# historical URLs
+# the following two are out-of-order
+use constant MELDUNGSLISTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungsliste.jsp?back=true';
+use constant MELDUNGSKARTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungskarte.jsp?back=true&map=true';
+# does not work anymore (certificate error, 502 Bad Gateway)
+use constant VMZ_RSS_URL => 'http://vmz-info.de/rss/iv';
+# former URL: use constant MELDUNGSLISTE_BERLIN_URL_FMT => 'http://www.vmz-info.de/web/guest/home?p_p_id=vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=ajaxPoiListUrl&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=1&p_p_col_count=2&_vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5_locale=de_DE&_vizmessages_WAR_vizmessagesportlet_INSTANCE_Him5_url=http%3A%2F%2Fwms.viz.mobilitaetsdienste.de%2Fpoint_list%2F%3Flang%3Dde&timer=@TIMER@&category=trafficmessage&state=BB';
+# does not work anymore (certificate error, 502 Bad Gateway)
+# @TIMER@ is replaced here:
+use constant MELDUNGSLISTE_BERLIN_URL_FMT => 'http://vmz-info.de/web/guest/2?p_p_id=vizmap_WAR_vizmapportlet_INSTANCE_Ds4N&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=ajaxPoiMapListUrl&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_count=1&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_locale=de_DE&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_url=https%3A%2F%2Fservices.mobilitaetsdienste.de%2Fviz%2Fproduction%2Fwms%2F2%2Fwms_list%2F%3Flang%3Dde&timer=@TIMER@&category=publictransportstationairport,trafficmessage&bbox=12.470944447998022,52.00192353741223,14.171078725341772,52.84438224389493';
+# former possible alternative, now a 404: https://viz.berlin.de/berlin-de-meldungen-iv?p_p_id=vizmessages_WAR_vizmessagesportlet_INSTANCE_tFN6ILA0izJo&p_p_lifecycle=2&p_p_state=maximized&p_p_mode=view&p_p_resource_id=ajaxPoiListUrl&p_p_cacheability=cacheLevelPage&_vizmessages_WAR_vizmessagesportlet_INSTANCE_tFN6ILA0izJo_locale=de_DE&_vizmessages_WAR_vizmessagesportlet_INSTANCE_tFN6ILA0izJo_url=https%3A%2F%2Fservices.mobilitaetsdienste.de%2Fviz%2Fproduction%2Fwms%2F2%2Fpoint_list%2F%3Flang%3Dde&timer=1518278557974&category=trafficmessage&state=BB
 
 sub _trim ($);
 
