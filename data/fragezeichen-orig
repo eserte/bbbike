@@ -1203,7 +1203,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285
 #: source_id: 2147344033 (bis Mitte Juli 2019; haben die Bauarbeiten was mit der Radwegf¸hrung zu tun?) (inaktiv)
 #: source_id: 2147346379 (bis 16.10.2020; beziehen sich die Bauarbeiten auf diese Verbindung oder den Radweg auf der Prenzlauer Promenade?) (keine Bauarbeiten zu erkennen)
 #: XXX war mal bei infravelo gelistet (id 9030023, URL http://www.infravelo.de/projekt/caligariplatz-2/, Bauende 3. Quartal 2023), ist aber mittlerweile (2021-02) verschwunden
-#: last_checked: 2021-03-29
+#: last_checked: 2021-05-31
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2020-10-16
 Caligariplatz: Verbesserung -> offizielle Radwegf¸hrung zur Wisbyer Str., vielleicht als Zweirichtungsradweg?	?::projected 12121,16317 12097,16263 12090,16199
@@ -2077,7 +2077,7 @@ Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (vollst‰ndige Fertigstellung f¸r 2023 geplant)
 #: XXX qualitaet: -> Q0 vermutlich
 # REMOVED (-> temp blockings) --- #: last_checked: 2018-06-19 (noch keine Sperrung) --- #: check_frequency: 2d --- Schˆnstr.: Neubau geplant, Vollsperrung w‰hrend der Bauarbeiten	?::projected 13391,16436 13630,16629
-#: last_checked: 2021-04-15 (mapillary)
+#: last_checked: 2021-05-31
 #: check_frequency: 240d
 Schˆnstr.: Neubau geplant	?::projected 13630,16629 13794,16773 13870,16837 13974,16924 13996,16959
 # REMOVED (-> temp blockings) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020) --- #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101 --- #: last_checked: 2020-04-15 --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2020-02-01 --- Schˆnstr.: Neubau geplant	?::projected 13996,16959 14136,17170
@@ -2183,7 +2183,7 @@ Antwerpener Str.: Fahrradstraﬂe soll entstehen	?::projected 6555,15827 6690,1567
 #: XXX zurzeit nur Einsch‰nkungen an der Kreuzung Schulzendorfer/Heiligenseestr., wegen Existenz eines Radwegs vermutlich nur f¸r den Autoverkehr (hier bis voraussichtlich 30.04.2019)
 #: source_id: 2147343419 (Gesamtmaﬂnahme bis Ende 2021)
 #: source_id: LMS-BR_r_LMS-BR_151882_LMS-BR_72
-#: osm_watch: way id="24720225" version="14"
+#: osm_watch: way id="24720225" version="15"
 #: also_indoor: traffic (H)
 #: priority: #A
 #: last_checked: 2021-03-25 (bw)
@@ -3441,7 +3441,7 @@ Berliner Allee: entstehen hier noch Radstreifen?	?::projected 14754,17673 14673,
 # REMOVED (realisiert) --- #: osm_watch: way id="29052147" version="29"
 # REMOVED (realisiert) --- #: osm_watch: way id="351509721" version="7"
 #: osm_watch: way id="4685718" version="27"
-#: last_checked: 2021-05-26 vvv
+#: last_checked: 2021-05-31 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2021-09-30 vvv
 # REMOVED (realisiert) --- Palisadenstr.: Ausbau zur Fahrradstraﬂe	? 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
@@ -4328,7 +4328,7 @@ Piesporter Str./Feldtmannstr.: Zebrastreifen geplant	?::projected 15215,17630 15
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
-#: last_checked: 2021-03-29
+#: last_checked: 2021-05-31
 #: check_frequency: 90d
 Pistoriusstr./Heinersdorfer Str.: Zebrastreifen geplant	?::projected 12228,16862 12257,16876 12296,16880
 # 
@@ -4501,8 +4501,8 @@ Dolgenseestr.: Zebrastreifen soll verstetigt werden	?::projected 17485,9833 1752
 #: by: https://viz.berlin.de/2021/01/verkehrsvorschau26012021/ (Ampelanlage erneuert (???), bis Ende M‰rz 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1353940740083216385 ("neu gebaut")
 #: osm_watch: node id="29420112" version="9"
-#: last_checked: 2021-05-06 (mapillary) (Bauarbeiten)
-#: check_frequency: 21d
+#: last_checked: 2021-05-31 (Bauarbeiten)
+#: check_frequency: 14d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2021-03-31
 Prenzlauer Promenade/Elsa-Br‰ndstrˆm-Str.	?::inwork 11889,17273 11924,17224 11945,17281
 #: XXX ^^^
@@ -4628,7 +4628,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.1033458.php (Markierungsarbeiten ab April 2021, Freigabe im II. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/stargarder-strasse-2/ (Zeitraum Bau: 2. Quartal 2021 - 3. Quartal 2021)
 #: osm_watch: way id="11114397" version="29"
-#: last_checked: 2021-05-05
+#: last_checked: 2021-05-31
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-04-15
 Stargarder Str.: hier wird eine Fahrradstraﬂe eingerichtet	?::projected 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
@@ -4639,7 +4639,7 @@ Stargarder Str.: hier wird eine Fahrradstraﬂe eingerichtet	?::projected 10953,15
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 ("neuer Radweg" -> vermutlich ist die Fahrradstraﬂe gemeint, noch 2020)
 #: by: http://www.infravelo.de/projekt/bizetstrasse/ (urspr¸nglicher Eintrag) (Fahrradstraﬂe geplant, 2. Quartal 2021 - 4. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/bizetstrasse-2/
-#: last_checked: 2021-03-29
+#: last_checked: 2021-05-31
 #: check_frequency: 120d
 #: next_check: 2021-12-31
 Bizetstr.: entsteht hier eine Fahrradstraﬂe?	? 13409,15687 13456,15760 13524,15786 13540,15792 13572,15804 13665,15840 13867,15915 14056,15985 14248,16058 14295,16076 14552,16171
@@ -4723,7 +4723,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich f¸r den Kfz-Verkehr gesperr
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Best‰tigung voraussichtlich ab Mitte 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
 #: osm_watch: way id="295627704" version="9"
-#: last_checked: 2021-05-16
+#: last_checked: 2021-05-31
 #: check_frequency: 90d
 # REMOVED (hier ist nichts) --- #: next_check: 2021-03-01
 Liebigstr.: Einrichtung einer Spielstraﬂe, wo genau und wann?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
@@ -4781,7 +4781,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5825 (Vorschlag eines Pop-Up-FG‹)
 #: priority: #D
-#: last_checked: 2021-03-29
+#: last_checked: 2021-05-31
 #: check_frequency: 60d
 Meyerbeerstr./Smetanastr.: wird hier ein Zebrastreifen gebaut?	?::projected 14103,15916 14095,15891 14115,15875
 # 
@@ -5712,7 +5712,7 @@ Osdorfer Str.: neue parallele Straﬂe wird gebaut, alte Straﬂe wird zum Radweg	?:
 #: priority: #D
 #: osm_watch: way id="8150996" version="8"
 #: osm_watch: way id="4687336" version="15"
-#: last_checked: 2021-03-07
+#: last_checked: 2021-05-31
 #: check_frequency: 120d
 Stedingerweg: wird es hier Maﬂnahmen gegen den MIV-Durchgangsverkehr geben?	? 13636,14900 13733,14813 13908,14654 13933,14622 13947,14513
 # 
@@ -6499,14 +6499,14 @@ Daumstr.: abzweigende Wohngebietsstraﬂe wird entstehen	?::projected -1706,15794 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_33_4281_4444_online.pdf (Aufstellungsbeschluss)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/schulneubau-muss-kommen_a299795
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5726 (Forderung nach Schulstandort)
-#: last_checked: 2020-07-15 (mapillary)
+#: last_checked: 2021-05-31
 #: check_frequency: 540d
 Friedhof Georgen-Parochial III: Wohngebiet entsteht, evtl. mit einem Weg zwischen Roelckestr. und Gustav-Adolf-Str.	?::projected 13025,16947 13129,17024 13272,16672 13184,16595 13128,16654 13171,16704 13129,16749 13167,16790 13025,16947
 # 
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/stephanus-stiftung-und-stadtentwickler-planen-wohnungen-schule-kita-und-pflegeeinrichtungen_a195730
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bezirk-beantragt-beim-senat-aenderung-des-flaechennutzungsplans_a209641
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bezirksamt-beantragt-aenderung-des-flaechennutzungsplans_a228187
-#: last_checked: 2020-11-08
+#: last_checked: 2021-05-31
 #: check_frequency: 360d
 Friedhof Segen: Wohngebiet entsteht	?::projected 13581,16968 13522,17021 13687,17181 13754,17133 13581,16968
 # 
@@ -6962,6 +6962,7 @@ Pankower Tor: Stadtviertel mit Straﬂen und Wegen entsteht	?::projected 10850,179
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1088652.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1089037.php
 #: by: https://abendblatt-berlin.de/2021/05/28/108608/
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1090076.php
 #: by: osm
 #: osm_watch: way id="154505652" version="14"
 #: XXX wird es bereits durch den Bau Beeintr‰chtigungen geben?

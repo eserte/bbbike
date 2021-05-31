@@ -2763,7 +2763,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-30
+#: last_checked: 2021-05-31
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2817,9 +2817,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
+#: XXX Stand 2021-05-31: Asphaltierungsarbeiten
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2021-04-15 (mapillary)
-#: check_frequency: 45d
+#: last_checked: 2021-05-31
+#: check_frequency: 7d
 	q4::inwork 14136,17170 13996,16959
 ',
          'from' => undef,
@@ -3118,24 +3119,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: BOHNSDORFERKREISEL-2017
-#: source_id: 2147346807 (bis 31.5.2021)
-#: note: laut rbbtext kann der Radverkehr passieren
-#: by: https://viz.berlin.de/2021/01/bohnsdorfer-kreisel/ (keine Einschränkungen für Fußgänger)
-#: by: https://twitter.com/VIZ_Berlin/status/1353990207574581249 (Situation mit Bildern)
-# REMOVED --- #: XXX wie sehen die Einschränkungen (wenn überhaupt) für den Radverkehr aus? vvv
-	q3::inwork 22162,1067 22092,999 22034,1006 21977,988
-	q3::inwork 22092,999 22120,886
-# REMOVED --- #: XXX ^^^
-',
-         'from' => 1610838000,
-         'id' => 3321,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
-         'text' => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 31.5.2021',
-         'type' => 'handicap',
-         'until' => 1622473200
-       },
+       undef,
        {
          'data' => '#: osm_watch: way id="683770241" version="6"
 	q4::inwork 19564,1871 19743,1804
@@ -3737,6 +3721,26 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Lichterfelder Ring/Stanzer Zeile: Bauarbeiten, Kreuzungsbereich gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 12984,1011 12941,1256 12938,1348
+',
+         'from' => 1622527200,
+         'id' => 3387,
+         'source_id' => '2147347243',
+         'text' => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Stuthirtenweg/Stadtgrenze gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 31.08.2021 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1630422000
+       },
+       {
+         'data' => '	q4::inwork 9861,6693 9863,6617
+',
+         'from' => 1622527200,
+         'id' => 3388,
+         'source_id' => '2147347242',
+         'text' => 'Ringbahnstr.: Anbindung Germaniastr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 02.06.2021 08:00 Uhr bis 10.09.2021 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1631286000
        }
      
 );

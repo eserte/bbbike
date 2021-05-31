@@ -1122,7 +1122,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9848 (Einwohnerfrage, Wegfall von Parkplätzen)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="15"
-#: last_checked: 2021-05-05
+#: last_checked: 2021-05-31
 #: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1135,7 +1135,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="27"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2021-05-05
+#: last_checked: 2021-05-31
 #: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
@@ -2245,7 +2245,7 @@ Verbundsteinpflaster, einige Wurzelhebungen	RW1; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2021-03-26 (mapillary)
+#: last_checked: 2021-05-31
 #: check_frequency: 90d
 #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -2415,7 +2415,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: http://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
-#: last_checked: 2021-03-07
+#: last_checked: 2021-05-31
 #: check_frequency: 180d
 #: next_check: 2023-12-31
 	RW1;RW1 13438,14675 13731,14200 13736,14192 13879,13967
@@ -3166,9 +3166,9 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27421.pdf (Straßenbahn fährt wieder ab 31.5.2021)
 #: XXX Baubeginn Ende 2016, mittlerweile ab April 2018 --- allerdings sind schon jetzt hier Bauarbeiten, bis Ende August 2017
 #: XXX vorbereitende Maßnahmen ab 12. März 2018, Sperrung der westlichen Brücke ab 27. März 2018, Fertigstellung der neuen Brücke ist für 2020 geplant
-#: osm_watch: way id="4068148" version="24"
+#: osm_watch: way id="4068148" version="25"
 #: osm_watch: way id="27942935" version="18"
-#: osm_watch: way id="11663312" version="29"
+#: osm_watch: way id="11663312" version="30"
 #: osm_watch: way id="4689343" version="26"
 #: source_id: 2147341322 (inaktiv)
 #: source_id: 2147342307 (inaktiv)
@@ -4641,10 +4641,7 @@ Verbundsteinpflaster	RW1;RW1 19574,3186 19695,3072 19743,3026 19878,2899 19983,2
 	RW4;RW3 12532,15924 12378,16020 12347,16039
 	RW4;RW4 12347,16039 12254,16097 12216,16120
 # REMOVED --- #: by: http://www.infravelo.de/projekt/ostseestrasse/ (baulich getrennter Radweg, bis 4. Quartal 2020) --- #: XXX wird hier der Radweg vervollständigt? --- #: osm_watch: way id="30134530" version="23" --- #: source_id: 2147346613 --- #: next_check: 2020-12-11
-#: XXX evtl. wird hier noch eine bauliche Realisierung kommen
-#: by: http://www.infravelo.de/projekt/ostseestrasse-2/ (bis 1. Quartal 2021)
-#: last_checked: 2021-04-25 (mapillary)
-#: check_frequency: 30d
+# REMOVED (vermutlich bleibt das so) --- #: XXX evtl. wird hier noch eine bauliche Realisierung kommen --- #: by: http://www.infravelo.de/projekt/ostseestrasse-2/ (bis 1. Quartal 2021) --- #: last_checked: 2021-05-31 --- #: check_frequency: 30d
 Radweg nur aufgemalt	RW2; 12216,16120 12123,16178
 	RW4; 12123,16178 12090,16199
 	RW4; 12090,16199 12123,16178 12216,16120
@@ -5071,8 +5068,7 @@ Verbundsteinpflaster	RW1; 16961,16042 17130,16032 17178,16029
 	RW4;RW4 14809,16525 14619,16551
 	RW6;RW6 13385,13992 13485,14054 13585,14117
 Verbundsteinpflaster, OK, relativ breit	RW1; 13037,16957 12989,16921 12923,16873 12858,16825 12813,16791
-asphaltiert	RW1; 12813,16791 12858,16825 12923,16873 12989,16921 13037,16957 13129,17024 13342,17180 13511,17311 13590,17368
-asphaltierter Radweg fängt etwas hinter dem Kreisverkehr an	RW1; 12705,16708 12813,16791
+asphaltiert	RW1; 12757,16748 12813,16791 12858,16825 12923,16873 12989,16921 13037,16957 13129,17024 13342,17180 13511,17311 13590,17368
 	RW1; 13590,17368 13633,17399 13708,17453
 #: by: Ulrich Dalkmann
 	RW6;RW6 -8207,7012 -8140,6898 -8087,6806
@@ -6575,7 +6571,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2021-05-17
+#: last_checked: 2021-05-31
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: next_check_id: POPUPRADWEGE-2020
@@ -6585,18 +6581,17 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: http://www.infravelo.de/projekt/danziger-strasse-1/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1389893047379496960 (Markierungsarbeiten)
-#: XXX Richtung Nordwesten ab Greifswalder Str. entsteht auch eine Grünmarkierung
-#: last_checked: 2021-05-17 vvv
+#: last_checked: 2021-05-31 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2021-09-30 vvv
 #: osm_watch: way id="4615031" version="38"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
-provisorisch geschützter Radstreifen	RW4; 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
 #: osm_watch: way id="41954398" version="20"
 provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+Radspur hinter den parkenden Autos, Grünmarkierung	RW4; 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
 	RW3; 12522,14385 12616,14315
 	RW4; 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620
 	RW2; 13225,13620 13228,13615 13330,13468

@@ -30045,7 +30045,7 @@ EOF
 #: source_id: 2147344888 (bis Mitte Oktober 2019)
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/veraenderte-verkehrsfuehrung_a234880
 	q4::inwork; 13590,17368 13511,17311 13342,17180 13129,17024 13037,16957
-	q4::inwork; 12813,16791 12705,16708
+	q4::inwork; 12813,16791 12757,16748 12705,16708
 EOF
      },
      { from  => 1569794400, # 2019-09-30 00:00
@@ -30879,7 +30879,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-30
+#: last_checked: 2021-05-31
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31067,9 +31067,10 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
+#: XXX Stand 2021-05-31: Asphaltierungsarbeiten
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2021-04-15 (mapillary)
-#: check_frequency: 45d
+#: last_checked: 2021-05-31
+#: check_frequency: 7d
 	q4::inwork 14136,17170 13996,16959
 EOF
      },
@@ -32733,6 +32734,24 @@ EOF
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
+EOF
+     },
+     { from  => 1622527200, # 2021-06-01 08:00
+       until => 1630422000, # 2021-08-31 17:00
+       text  => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Stuthirtenweg/Stadtgrenze gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 31.08.2021 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147347243',
+       data  => <<EOF,
+	q4::inwork 12984,1011 12941,1256 12938,1348
+EOF
+     },
+     { from  => 1622527200, # 2021-06-01 08:00
+       until => 1631286000, # 2021-09-10 17:00
+       text  => 'Ringbahnstr.: Anbindung Germaniastr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 02.06.2021 08:00 Uhr bis 10.09.2021 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147347242',
+       data  => <<EOF,
+	q4::inwork 9861,6693 9863,6617
 EOF
      },
     );
