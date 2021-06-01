@@ -15608,6 +15608,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: so,holiday,(mo-sa T23-T06)
+#: note: laut https://www.openstreetmap.org/note/2630115 bleibt der Durchgang an Sonn- und Feiertagen offen (trotz Schild)
 	2::night:weekend 10624,11548 10526,11612
 EOF
      },
@@ -30879,7 +30880,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-31
+#: last_checked: 2021-06-01
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32140,7 +32141,7 @@ EOF
      },
      { from  => 1614578400, # 2021-03-01 07:00
        until => $isodate2epoch->("2021-09-30 18:00:00"), # 1622473200, # 2021-05-31 17:00
-       text  => 'Karlshorster Str.: Richtung Hauptstr. wegen Bauarbeiten gesperrt, Radfahrer müssen schieben, voraussichtlich ab 2. März 2021 bis mindestens Ende Mai 2021, vermutlich noch länger',
+       text  => 'Karlshorster Str.: Richtung Hauptstr. wegen Bauarbeiten gesperrt, Radfahrer müssen schieben, ab 2. März 2021 bis voraussichtlich Ende September 2021',
        type  => 'handicap',
        source_id => '2147346922', # bis Ende Mai 2021, Gesamtbaumaßnahme bis 30.09.2021
        data  => <<EOF,
@@ -32499,6 +32500,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ARCHIBALDWEG-2021
+#; also_indoor: traffic (G)
 #: priority: #B
 #: also_indoor: traffic (G)
 #: last_checked: 2021-05-23
@@ -32646,8 +32648,9 @@ EOF
        text  => 'Soorstr.: zwischen Masurenallee und Bredtschneiderstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis August 2021',
        type  => 'handicap',
        data  => <<EOF,
-#: note: Schild der Wasserbetriebe
-#: also_indoor: traffic (H)
+#: note: laut Schild der Wasserbetriebe bis August 2021
+#: source_id: 2147347187 (Anbindung Soorstraße gesperrt, bis 25.6.2021)
+#: also_indoor: traffic
 #: last_checked: 2021-05-24
 #: check_frequency: 60d
 #: next_check: 2021-09-01
@@ -32699,10 +32702,15 @@ EOF
        text  => 'Seydlitzstr.: südlich der Dessauerstr. Bauarbeiten, komplett gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: SEYDLITZ-2021
+#: by: https://www.degewo.de/wachstum/neubau/steglitz-zehlendorf/dessauer-strasse-37-39/ (Fertigstellung 2022)
+#: by: https://www.deutsches-architekturforum.de/thread/11060-steglitz-zehlendorf-kleinere-projekte/?postID=631390#post631390
+#: by: https://www.berliner-woche.de/lankwitz/c-bauen/degewo-wohnungsbauprojekt-in-der-dessauerstrasse-soll-noch-in-diesem-jahr-starten_a211105 (Fertigstellung Dezember 2021 (Stand Mai 2019))
 #: osm_watch: way id="48490204" version="4"
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: last_checked: 2021-05-30
-#: check_frequency: 90d
+#: check_frequency: 120d
+#: next_check: 2022-01-01
 	2::inwork 6511,2284 6459,2364
 EOF
      },
@@ -32711,9 +32719,11 @@ EOF
        text  => 'Retzowstr.: südlich der Dessauerstr. Bauarbeiten, Fahrbahn gesperrt, Gehweg ist noch offen, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: SEYDLITZ-2021
 #: add_fragezeichen: Wann wird die Sperrung der Fahrbahn aufgehoben? Wird sich die Qualität des Asphalts nach den Bauarbeiten besser sein?
 #: last_checked: 2021-05-30
-#: check_frequency: 90d
+#: check_frequency: 120d
+#: next_check: 2022-01-01
 	q4::inwork 6331,2281 6399,2184
 EOF
      },

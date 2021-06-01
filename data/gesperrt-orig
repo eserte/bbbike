@@ -3269,13 +3269,7 @@ Drängelgitter	BNP:3::trailer=10 32418,6303
 #: next_check: 2023-12-01
 Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -196,16060 -203,16064 -205,16086 -224,16095 -265,16111
 # 
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=75609
-#: XXX bis wann ist gilt hier die Einbahnstraßenregelung?
-#: XXX_prog: eigentlich 1s:q4:inwork, kollidiert aber mit dem normalen handicap_s-orig-Eintrag
-#: last_checked: 2021-05-29
-#: next_check: 2021-05-31
-#: valid: -20210531
-Wildensteiner Str.: Einbahnstraßenregelung (wegen SEV)	1::inwork 18627,8475 18528,8331
+# REMOVED (BVG-Meldung entfernt) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=75609 --- #: XXX bis wann ist gilt hier die Einbahnstraßenregelung? --- #: XXX_prog: eigentlich 1s:q4:inwork, kollidiert aber mit dem normalen handicap_s-orig-Eintrag --- #: last_checked: 2021-05-29 --- #: next_check: 2021-05-31 --- #: valid: -20210531 --- Wildensteiner Str.: Einbahnstraßenregelung (wegen SEV)	1::inwork 18627,8475 18528,8331
 # 
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
@@ -3538,7 +3532,7 @@ Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 #: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-3.php (Webcam)
 #: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php (Webcam)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
-#: last_checked: 2021-04-04 (webcam)
+#: last_checked: 2021-06-01 (webcam)
 #: check_frequency: 60d
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7687,14017
 # 
@@ -3671,6 +3665,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tatsächlichen Seite 366 sowie 373)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/virtuelle-stadtwerkstatt-informiert-ueber-bauprojekte-in-berlins-historischer-mitte_a292967
+#: by: https://abendblatt-berlin.de/2021/06/01/berlin-mitte-molkenmarkt-planung-geht-in-die-naechste-phase/
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
 #: last_checked: 2021-05-28
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371

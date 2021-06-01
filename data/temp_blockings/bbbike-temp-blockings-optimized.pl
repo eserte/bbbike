@@ -278,6 +278,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        },
        {
          'data' => '#: tempex: so,holiday,(mo-sa T23-T06)
+#: note: laut https://www.openstreetmap.org/note/2630115 bleibt der Durchgang an Sonn- und Feiertagen offen (trotz Schild)
 	2::night:weekend 10624,11548 10526,11612
 ',
          'from' => undef,
@@ -823,7 +824,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2763,7 +2764,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-05-31
+#: last_checked: 2021-06-01
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3206,7 +3207,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1614578400,
          'id' => 3336,
          'source_id' => '2147346922',
-         'text' => 'Karlshorster Str.: Richtung Hauptstr. wegen Bauarbeiten gesperrt, Radfahrer müssen schieben, voraussichtlich ab 2. März 2021 bis mindestens Ende Mai 2021, vermutlich noch länger',
+         'text' => 'Karlshorster Str.: Richtung Hauptstr. wegen Bauarbeiten gesperrt, Radfahrer müssen schieben, ab 2. März 2021 bis voraussichtlich Ende September 2021',
          'type' => 'handicap',
          'until' => 1633017600
        },
@@ -3470,6 +3471,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: ARCHIBALDWEG-2021
+#; also_indoor: traffic (G)
 #: priority: #B
 #: also_indoor: traffic (G)
 #: last_checked: 2021-05-23
@@ -3620,8 +3622,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1625238000
        },
        {
-         'data' => '#: note: Schild der Wasserbetriebe
-#: also_indoor: traffic (H)
+         'data' => '#: note: laut Schild der Wasserbetriebe bis August 2021
+#: source_id: 2147347187 (Anbindung Soorstraße gesperrt, bis 25.6.2021)
+#: also_indoor: traffic
 #: last_checked: 2021-05-24
 #: check_frequency: 60d
 #: next_check: 2021-09-01
@@ -3678,10 +3681,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1626447600
        },
        {
-         'data' => '#: osm_watch: way id="48490204" version="4"
+         'data' => '#: next_check_id: SEYDLITZ-2021
+#: by: https://www.degewo.de/wachstum/neubau/steglitz-zehlendorf/dessauer-strasse-37-39/ (Fertigstellung 2022)
+#: by: https://www.deutsches-architekturforum.de/thread/11060-steglitz-zehlendorf-kleinere-projekte/?postID=631390#post631390
+#: by: https://www.berliner-woche.de/lankwitz/c-bauen/degewo-wohnungsbauprojekt-in-der-dessauerstrasse-soll-noch-in-diesem-jahr-starten_a211105 (Fertigstellung Dezember 2021 (Stand Mai 2019))
+#: osm_watch: way id="48490204" version="4"
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: last_checked: 2021-05-30
-#: check_frequency: 90d
+#: check_frequency: 120d
+#: next_check: 2022-01-01
 	2::inwork 6511,2284 6459,2364
 ',
          'from' => undef,
@@ -3691,9 +3699,11 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '#: add_fragezeichen: Wann wird die Sperrung der Fahrbahn aufgehoben? Wird sich die Qualität des Asphalts nach den Bauarbeiten besser sein?
+         'data' => '#: next_check_id: SEYDLITZ-2021
+#: add_fragezeichen: Wann wird die Sperrung der Fahrbahn aufgehoben? Wird sich die Qualität des Asphalts nach den Bauarbeiten besser sein?
 #: last_checked: 2021-05-30
-#: check_frequency: 90d
+#: check_frequency: 120d
+#: next_check: 2022-01-01
 	q4::inwork 6331,2281 6399,2184
 ',
          'from' => undef,
