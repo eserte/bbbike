@@ -2326,7 +2326,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-05-20
+#: last_checked: 2021-06-02
 #: check_frequency: 14d
 #: next_check: 2021-07-01
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -2764,7 +2764,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-06-01
+#: last_checked: 2021-06-02
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3120,7 +3120,24 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: next_check_id: BOHNSDORFERKREISEL-2017
+#: source_id: 2147346807 (bis 30.6.2021)
+#: note: laut rbbtext kann der Radverkehr passieren
+#: by: https://viz.berlin.de/2021/01/bohnsdorfer-kreisel/ (keine Einschränkungen für Fußgänger)
+#: by: https://twitter.com/VIZ_Berlin/status/1353990207574581249 (Situation mit Bildern)
+# REMOVED --- #: XXX wie sehen die Einschränkungen (wenn überhaupt) für den Radverkehr aus? vvv
+	q3::inwork 22162,1067 22092,999 22034,1006 21977,988
+	q3::inwork 22092,999 22120,886
+# REMOVED --- #: XXX ^^^
+',
+         'from' => 1610838000,
+         'id' => 3321,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
+         'text' => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 30.6.2021',
+         'type' => 'handicap',
+         'until' => 1625065200
+       },
        {
          'data' => '#: osm_watch: way id="683770241" version="6"
 	q4::inwork 19564,1871 19743,1804
@@ -3199,7 +3216,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-05-29
+#: last_checked: 2021-06-02
 #: check_frequency: 30d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3474,7 +3491,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #; also_indoor: traffic (G)
 #: priority: #B
 #: also_indoor: traffic (G)
-#: last_checked: 2021-05-23
+#: last_checked: 2021-06-02
 #: check_frequency: 14d
 	q4::inwork 15870,10938 15674,10851
 ',
@@ -3743,12 +3760,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1630422000
        },
        {
-         'data' => '	q4::inwork 9861,6693 9863,6617
+         'data' => '	q4::inwork; 9863,6617 9861,6693
 ',
          'from' => 1622527200,
          'id' => 3388,
          'source_id' => '2147347242',
-         'text' => 'Ringbahnstr.: Anbindung Germaniastr. wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 02.06.2021 08:00 Uhr bis 10.09.2021 17:00 Uhr ',
+         'text' => 'Ringbahnstr.: an der Germaniastr. Richtung Tempelhofer Damm wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 02.06.2021 08:00 Uhr bis 10.09.2021 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1631286000
        }
