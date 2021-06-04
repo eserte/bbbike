@@ -2572,7 +2572,7 @@ Schulweg: Verbundsteinpflaster	Q1 28370,-19964 28393,-19936 28425,-19803 28422,-
 Pätz (Groß Köriser Str.): Verbundsteinpflaster	Q1 28530,-19736 28500,-20078 28574,-20170
 Pätz (Groß Köriser Str.): Asphalt	Q0 28530,-19736 28615,-19431
 Zeesen - Königs Wusterhausen: holpriger Waldweg, teilweise sehr sandig	Q3 26889,-12953 26825,-12765 26797,-12589 26814,-12261
-# REMOVED (by rjoop: "Grundstück wurde abgetrennt") --- Postenweg Schönefeld: guter Beton	Q0 17234,-685 17013,-745
+# REMOVED (by rjoop: "Grundstück wurde abgetrennt") --- Postenweg Schönefeld: guter Beton	Q0 17245,-683 17013,-745
 Postenweg Schönefeld: guter Beton	Q0 17013,-745 16205,-969 15795,-1108 15776,-1116
 Postenweg Schönefeld: Asphalt	Q0 15776,-1116 15738,-1159
 Rudower Str.: Asphalt	Q0 16205,-969 16074,-1240
@@ -2795,7 +2795,7 @@ Am Kanal, Nebenstraße: Asphalt	Q0 -12542,-1305 -12339,-1246
 August-Bebel-Str.: Kopfsteinpflaster	Q2 -8469,-1541 -8485,-1445
 Paul-Gerhard-Str.: Asphalt	Q0- 3232,803 3271,745 3417,524
 Alte B101-Trasse: feiner Schotter	Q1 7097,-527 6959,-743
-(Postenweg): guter Beton	Q0 17234,-685 17806,-561 18170,-449
+(Postenweg): Beton, einige Fugen	Q0- 17245,-683 17806,-561 18170,-449
 Peter-Huchel-Str.: Asphalt	Q0 -13257,1337 -13277,1490 -13294,1681
 Erich-Arendt-Str.: Asphalt	Q0 -13277,1490 -13125,1508
 Graf-von-Schwerin-Str.: Asphalt	Q0 -13133,1698 -13084,1700
@@ -4220,14 +4220,19 @@ An der alten Post: Verbundsteinpflaster	Q1 21724,19139 21760,19077 21814,19105 2
 zum Gehrensee: wassergebundene Decke	Q1 21101,19448 21077,19452
 Leonardo-da-Vinci-Str. (Potsdam): Asphalt	Q0 -11390,72 -11609,400
 Am Alten Markt: Gehwegplatten	Q1 -12747,-1336 -12727,-1416 -12694,-1408 -12685,-1449 -12677,-1536
+Angerstr. (Schönefeld): Asphalt	Q0 17388,-1633 17362,-1636 17301,-1626 17288,-1692 17297,-1772 17337,-1848 17407,-1933
+Antaresstr. (Schönefeld): Asphalt	Q0 17288,-1692 17187,-1688 17068,-1688
+Aldebaranstr. (Schönefeld): Asphalt	Q0 17337,-1848 17167,-1981
 #: by: osm + rj vvv
-Dorfstr. (Schönefeld): Kopfsteinpflaster	Q2 17388,-1633 17402,-1649
-Dorfstr. (Schönefeld): Kopfsteinpflaster	Q1- 17402,-1649 17549,-1722 17574,-1753 17602,-1803
+#: confirmed_by: srt (nördliches Ende)
+Alt Schönefeld: Kopfsteinpflaster	Q2 17388,-1633 17402,-1649
+Alt Schönefeld: Kopfsteinpflaster	Q1- 17402,-1649 17549,-1722 17574,-1753 17602,-1803
+Alt Schönefeld: Kopfsteinpflaster	Q2 17402,-1649 17446,-1730 17537,-1863
 #: by: ^^^
 #: by: osm + rj
 Umgehungsstraße: Asphalt, etwas löchrig	Q1+ 17549,-1722 17890,-1445 17911,-1427 18281,-1132 18444,-996
 #: by: osm + rj
-Hans-Grade-Allee: Asphalt	Q0 17255,-2197 17228,-2167 17062,-2291 17023,-2233 17222,-2099 17234,-2052 17167,-1981 17096,-1850 17094,-1840 17079,-1691 17102,-1553 17215,-1403 17344,-1351 17746,-1288 17872,-1270 18189,-1023 18423,-843
+Hans-Grade-Allee: Asphalt	Q0 17255,-2197 17228,-2167 17062,-2291 17023,-2233 17222,-2099 17234,-2052 17167,-1981 17096,-1850 17094,-1840 17068,-1688 17102,-1553 17147,-1463 17215,-1403 17344,-1351 17746,-1288 17872,-1270 18189,-1023 18423,-843
 #: by: osm + rj
 #: confirmed_by: srt
 (Hans-Grade-Allee - Umgehungsstraße): teilweise unbefestigter Weg, teilweise betoniert	Q2+ 17746,-1288 17766,-1316 17825,-1318 17911,-1427

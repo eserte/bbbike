@@ -1871,7 +1871,8 @@ Fenchelweg: glattes Kopfsteinpflaster	Q1 15585,4139 15695,4051 15859,3924 15872,
 Fenchelweg: Beton	Q0 15872,3888 15860,3838 15838,3754 15791,3686 15732,3602 15674,3528 15611,3448 15500,3299 15410,3179
 (Mauerweg Rudow): Asphalt	Q0 17236,-602 17933,-428 18121,-374
 (Weg an der Teltowkanalautobahn - Johannisthaler Chaussee, Rampe): gutes Pflaster	Q0 15768,4102 15640,4222
-(Weg an der Teltowkanalautobahn): Asphalt	Q0 14164,5936 14308,5627 14388,5429 14544,5123 14703,4930 14802,4842 15768,4102 16518,3529 16797,3321 17524,2765 17773,2621 18034,2526
+(Weg an der Teltowkanalautobahn): Asphalt	Q0 14164,5936 14308,5627 14388,5429 14544,5123 14703,4930 14802,4842 15768,4102 16518,3529 16797,3321
+(Weg an der Teltowkanalautobahn): Asphalt	Q0 16797,3321 17524,2765 17773,2621 18034,2526
 (Weg an der Teltowkanalautobahn - Stubenrauchstr., Rampe): Verbundsteinpflaster	Q0 16797,3321 16964,3210
 (Autobahnzubringer): sehr guter Asphalt	Q0 18034,2526 18247,2490 18496,2471
 Neltestr.: schlechtes Kopfsteinpflaster	Q3 19472,3922 19596,4035 19723,4175
@@ -11414,9 +11415,9 @@ Görschstr.: Asphalt	Q0 10060,17641 10053,17777
 Görschstr.: Kopfsteinpflaster	Q3 10053,17777 9863,17962
 Neue Schönholzer Str.: guter Asphalt	Q0 10089,18180 10141,18030 10179,17772
 Guntherstr.: Kopfsteinpflaster	Q2 17020,12309 16994,12122 16975,12000
-Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7412,8273 7412,8351
-Cheruskerstr.: Asphalt, einige Schäden	Q0; 7412,8351 7410,8593
-Cheruskerstr.: Asphalt	Q0; 7410,8593 7412,8351
+Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7412,8273
+Cheruskerstr.: Asphalt, einige Schäden	Q0; 7412,8273 7412,8351 7410,8593
+Cheruskerstr.: Asphalt	Q0; 7410,8593 7412,8351 7412,8273
 Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
 Malplaquetstr.: mäßiges Kopfsteinpflaster	Q2 7441,15909 7279,16057 7158,16167 7051,16264

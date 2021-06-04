@@ -39,12 +39,10 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
 Matthäikirchplatz: wegen Bauarbeiten am Museum der Moderne mögliche Behinderungen	q3::inwork 7934,11275 7965,11380
 Fasanenstr.: Engstelle in Höhe Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5241,11060 5236,10994 5230,10919
-Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5886,12467 5944,12548
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12392,8724 12330,8636
-Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12494,8501
 Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
 Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig	q2::inwork; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123
@@ -2096,7 +2094,6 @@ An der Kieler Brücke: Fußgängerzone	q3 7877,14504 7804,14445
 (Uferweg): einige Fußgänger	q2 22399,2481 22304,2570 22239,2644
 (Am Ruderverein - Uferweg): einige Fußgänger	q2 22270,2549 22304,2570
 Am Berlin Museum: einige Katzenkopfreihen	q2 10032,10752 9829,10830
-Cuxhavener Str.: stellenweise eng, einige Fußgänger	q3 5931,12399 5904,12417 5886,12467
 (Supermarktparkplatz): Parkplatzverkehr	q2 2554,10258 2551,10266 2706,10362 2718,10359
 (Klara-Weyl-Str. - Landschaftspark Herzberge): Spielplatz, Fußgänger, kurvig	q3 17418,12797 17422,12811 17400,12842 17363,12856 17347,12845 17299,12851
 (Allee der Kosmonauten - Wohngebiet): einige Fußgänger	q2 19628,13517 19649,13481
@@ -2124,6 +2121,7 @@ Heubudenbrücke: Fußgänger	q2 9017,17290 8982,17299 8973,17301
 (Rudower Höhe): Fußgänger, geschützte Grünanlage	q4 18245,1699 18300,1612
 (Stanzer Zeile - Mauerweg): schmal	q3 6175,372 6204,331
 Lange Str. (Friedrichshain): mehrere Bodenschwellen	q3 12002,12008 12212,11963
+Caligariplatz: Fußgänger, ggfs. schieben	q3 12121,16317 12097,16263
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2377,6 +2375,8 @@ Sesenheimer Str.: Fußgänger, Bordsteine	q2 3864,11484 3874,11380
 (Clara-von-Simson-Str. - südliches Spreeufer): Fußgänger	q2 4732,13030 4710,13069
 (Carnotstr. - südliches Spreeufer): Fußgänger	q2 4655,12953 4619,12975
 Schleswiger Ufer: schmal, Fußgänger	q2 5858,12425 5886,12467
+Schleswiger Ufer: schmal, Fußgänger	q3 5886,12467 5944,12548
+Cuxhavener Str.: stellenweise eng, einige Fußgänger	q3 5931,12399 5904,12417 5886,12467
 (Zufahrt Parkplätze Bartningallee): schmal, unübersichtlich, Fußgänger	q3 6179,12513 6149,12454
 (Altonaer Str. - Flensburger Str.): Einkaufszentrum, Fußgänger	q2 6173,12396 6149,12454 6137,12532 6160,12681
 (Cuxhavener Str. - Altonaer Str.): schmal, Fußgänger	q2 5982,12291 6030,12363 6067,12381 6098,12446

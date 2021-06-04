@@ -525,7 +525,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-05-28
+#: last_checked: 2021-06-04
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -2328,15 +2328,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: priority: #A
 #: last_checked: 2021-06-02
 #: check_frequency: 14d
-#: next_check: 2021-07-01
+#: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
 ',
          'from' => 1611036000,
          'id' => 3048,
          'source_id' => '2147343461',
-         'text' => 'Kynaststr.: Bauarbeiten an der Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden, mögliche Engstelle, bis 1.7.2021',
+         'text' => 'Kynaststr.: Bauarbeiten an der Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden, mögliche Engstelle, bis 31.10.2021',
          'type' => 'handicap',
-         'until' => 1625151600
+         'until' => 1635696000
        },
        undef,
        undef,
@@ -2605,22 +2605,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/oasis-hansahof-bachstra%C3%9Fe-1-2.131/page-4#post-15591 (mittlerweile fertig & bewohnt --- ist der Weg auch schon offen?)
-#: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2021-04-25
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2020-03-31
-	2::inwork 5886,12467 5944,12548
-',
-         'from' => 1570312800,
-         'id' => 3168,
-         'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.851896.php',
-         'text' => 'Altonaer Str. - Schleswiger Ufer: Sperrung des Durchgangs ab dem 7.10.2019, Ende unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2764,7 +2749,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-06-02
+#: last_checked: 2021-06-04
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2840,14 +2825,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (H)
 #: last_checked: 2021-02-20 (mapillary)
 #: next_check: 2021-05-18
-	q4::inwork; 5244,6261 5390,6299 5560,6344
+# REMOVED --- hier nicht mehr, siehe mapillary ---	q4::inwork; 5244,6261 5390,6299
+	q4::inwork; 5390,6299 5560,6344
 # REMOVED --- #: XXX ist der Radverkehr hier noch betroffen? --- #: by: mapillary ---	q4::inwork 5560,6344 5582,6360
 ',
          'dont_check_date' => 1,
          'from' => 1594635120,
          'id' => 3258,
          'source_id' => '2147346108',
-         'text' => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Fahrbahn Richtung Osten gesperrt, vom 14.07.2020 12:12 Uhr bis 18.05.2021 17:00 Uhr, möglicherweise sogar bis Mai 2022',
+         'text' => 'Feuerbachstr.: möglicherweise noch immer Bauarbeiten, Fahrbahn Richtung Osten gesperrt, bis Mai 2022',
          'type' => 'handicap',
          'until' => 1654012800
        },
@@ -3750,12 +3736,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '	q4::inwork 12984,1011 12941,1256 12938,1348
+         'data' => '#: next_check_id: BUCKOWERDAMM-2021
+# REMOVED ---	q4::inwork 12984,1011 12941,1256 12938,1348
+	q4::inwork 12938,1348 12939,1469 12940,1547
 ',
          'from' => 1622527200,
          'id' => 3387,
          'source_id' => '2147347243',
-         'text' => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Stuthirtenweg/Stadtgrenze gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 31.08.2021 17:00 Uhr ',
+         'text' => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 31.08.2021 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1630422000
        },

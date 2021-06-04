@@ -122,6 +122,7 @@ Nordufer: bereits an der Ampel Föhrer Str. auf den linken Zweirichtungsradweg we
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (mit Ampel, Brückenneubau 2021)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (nach 2021)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27501.pdf (Erwähnung)
 #: last_checked: 2021-04-03
 #: check_frequency: 180d
 An der Wuhlheide - Wuhlewanderweg: ggfs. bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (insbesondere mit Anhänger oder mit Lastenrad wenig Platz auf dem Mittelstreifen)	PI; 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21596,5693 21602,5685 21618,5699 21744,5804
@@ -433,8 +434,8 @@ Bürgerheimstr. - Frankfurter Allee: auf dem linken Gehweg bis zur Atzpodienstr. 
 Gradestr. - Moosrosenstr.: entweder schon an der Holzmindener Str. die Straßenseite wechseln oder am Busbahnhof umdrehen	PI; 12773,5248 12727,5244 12726,5147
 Moosrosenstr. - Gradestr.: auf dem linken Gehweg bis Höhe Busbahnhof fahren und dort die Straßenseite wechseln	CP; 12726,5147 12727,5244 12582,5232
 Rudower Chaussee - Karl-Otto-Reinsch-Str.: bereits an der Ampel Am Studio die Straßenseite wechseln	PI; 19574,3186 19598,3212 19524,3286
-Gustav-Adolf-Str. - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren	CP; 12182,16322 12097,16263 12090,16199
-Caligariplatz - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren	CP; 12121,16317 12097,16263 12090,16199
+Gustav-Adolf-Str. - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren oder schieben	CP; 12182,16322 12097,16263 12090,16199
+Caligariplatz - Prenzlauer Promenade: auf dem linken Gehweg bis zur Ampel fahren oder schieben	CP; 12121,16317 12097,16263 12090,16199
 Am Alten Markt: Richtung TFH/Friedrich-Ebert-Str. abbiegen	CP; -12624,-1598 -12619,-1549 -12677,-1536 -12719,-1542 -12790,-1560
 Richtung Bergmannstr.	CP2; 10564,9292 10547,9233
 Ausgeschildert als "Zur Straße 545"	CP2; 30357,3555 30378,3501
@@ -457,7 +458,7 @@ Pudagla: Empfohlene Verkehrsführung für Radfahrer	CS 52129,174507 52064,174635 5
 Berliner Allee - Streustr.: bereits an der Rossinistr. die Straßenseite wechseln	PI; 13398,15826 13425,15846 13263,15930
 Weg entlang der Bahnstrecke: Pfad ist schwierig zu finden	CP2; 17425,9605 17438,9619
 Am Sandberg: Straße nicht ausgeschildert	CP2; 20144,8355 20149,8318
-Am Wriezener Karree: nicht ausgeschildert	CP2; 12959,11631 12728,11850
+# REMOVED (mittlerweile schon) --- Am Wriezener Karree: nicht ausgeschildert	CP2; 12959,11631 12728,11850
 Bahnhofstr. - Park: bereits an der Ampel Friedrichshagener Str. auf die linke Straßenseite wechseln	PI; 22116,5442 22087,5404 22054,5360 22056,5314
 Clayallee - Biesalskistr.: bereits an der Ampel Schützallee auf die linke Straßenseite wechseln	PI; 1139,3876 1159,3915 1130,3930
 # REMOVED (Kommentar nicht wirklich notwendig) --- #: by: christian (...chrisb...): --- Schäferstege - Parkanlage: schräg links über Spielplatz	CP2; 13366,20897 13332,20898
