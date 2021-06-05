@@ -28,6 +28,7 @@ my @line_defs =
      { rx => qr{\((?:ship|ferry|boat)},                        type => 'Ship',  dash => '2,8' },
      { rx => qr{\((?:train|s-bahn|u-bahn|draisine|funicular)}, type => 'Train', dash => '3,8' },
      { rx => qr{\((?:pedes)},                                  type => 'Pedes', dash => '8,3,8,6' },
+     { rx => qr{\((?:swim)},                                   type => 'Swim',  dash => '8,3,8,6' },
      { rx => qr{\((?:bike)},                                   type => '' }, # usually explicitly only marked in fit files
      { rx => qr{\.trk\t},                                      type => 'Uncat', dash => '4,1' },
      {                                                         type => '' }, # usually "bike"

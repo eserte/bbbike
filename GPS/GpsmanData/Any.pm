@@ -100,10 +100,11 @@ sub load_gpx {
     };
 
     my %activity_type_to_vehicle =
-	('cycling' => 'bike',
-	 'walking' => 'pedes',
-	 'running' => 'pedes',
-	 'hiking'  => 'pedes',
+	('cycling'  => 'bike',
+	 'walking'  => 'pedes',
+	 'running'  => 'pedes',
+	 'hiking'   => 'pedes',
+	 'swimming' => 'swim',
 	);
 
     my $latlong2xy_twig = sub {
