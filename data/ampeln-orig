@@ -92,18 +92,13 @@ Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775
 #: confirmed_by: srt
 #: source_id: 2147346700 (bis 30.11.2021)
 #: also_indoor: traffic
-#: last_checked: 2021-06-02
+#: last_checked: 2021-06-05
 #: check_frequency: 45d
 #: next_check: 2021-11-30
 #: valid: -20211130
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork 15433,10765
 # 
-#: next_check_id: RHINSTRASSENBRUECKE-2018
-#: last_checked: 2021-05-03
-#: check_frequency: 30d
-#: next_check: 2021-07-30
-#: note: Anforderung, gilt auch für nach Süden fahrenden Radfahrer
-Rhinstr.: Seitenwechsel für nach Norden fahrende Radfahrer	F::inwork 18225,12697
+# REMOVED (vermutlich nun funktionslos) --- #: next_check_id: RHINSTRASSENBRUECKE-2018 --- #: last_checked: 2021-05-03 --- #: check_frequency: 30d --- #: next_check: 2021-07-30 --- #: note: Anforderung, gilt auch für nach Süden fahrenden Radfahrer --- Rhinstr.: Seitenwechsel für nach Norden fahrende Radfahrer	F::inwork 18225,12697
 # 
 #: next_check_id: KASTANIENALLEE-2021
 #: last_checked: 2021-04-11 vvv
@@ -124,7 +119,7 @@ Roelckestr./Lehderstr.: temporäre Ampel	X::inwork 12842,16032
 #: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/
 #: XXX bis wann wird es die Gegenverkehrsregelung geben?
 #: source_id: 2147347174 (bis 19.7.2021)
-#: last_checked: 2021-04-30 (mapillary) vvv
+#: last_checked: 2021-05-30 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-07-19 vvv
 #: valid: 20210222- vvv
@@ -3262,14 +3257,14 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2021-04-25
+#: last_checked: 2021-05-30 (mapillary)
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 
 #: next_check_id: CORONA-2020
 #: XXX vermutlich temporär für das Impfzentrum
 #: by: mapillary
-#: last_checked: 2021-04-25
+#: last_checked: 2021-05-30 (mapillary)
 #: check_frequency: 90d
 	F::inwork 8153,14769
 # 

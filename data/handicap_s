@@ -45,8 +45,6 @@ Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12392,8724 12330,8636
 Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
-Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig	q2::inwork; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123
-Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig, langer Umweg an der Seddiner Str.	q3::inwork; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
 Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweichen	q3::inwork 15055,11505 15126,11474 15162,11458
 Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126
 Dennewitzstr.: Einbahnstraßenregelung, gemeinsamer Geh- und Radweg	q3::inwork; 8159,10430 8058,10306
@@ -1014,9 +1012,9 @@ Lion-Feuchtwanger-Weg: Fußgänger	q1 22516,12946 22493,12999
 (Unterführung U-Bhf. Cottbusser Platz): Fußgänger	q1 23458,14439 23423,14543
 (Unterführung U-Bhf. Cottbusser Platz): Rampe	q3 23423,14543 23454,14556 23421,14549 23458,14563 23463,14552
 (Cottbusser Platz - Hellersdorfer Str.): Fußgänger	q2 23366,14537 23399,14520
-Kastanienallee (Hellersdorf): Fußgänger	q1 23756,14696 23769,14609 23784,14569 23808,14503 23877,14315 23897,14274 23962,14140 24056,13988
+Kastanienallee (Hellersdorf): Fußgänger	q1 23756,14696 23758,14683 23740,14667 23760,14669 23769,14609 23778,14568 23781,14545 23772,14523 23794,14511 23801,14500 23877,14315 23897,14274 23962,14140 24055,13984
 (Kastanienallee - Stollberger Str.): Fußgänger	q1 23897,14274 23983,14318
-enge Rampe	q3 23784,14569 23792,14561 23793,14573
+enge Rampe	q3 23778,14568 23792,14561 23793,14573
 (Erich-Kuttner-Str. - Storkower Str.): Bordsteine	q4 14088,13627 14060,13622
 Schrebergasse: enge Straße	q0 23980,4633 23925,4555 23850,4497
 Unterführung S-Bhf. Nöldnerplatz: Fußgänger	q3 15886,10947 15879,10954 15865,10965 15859,10970

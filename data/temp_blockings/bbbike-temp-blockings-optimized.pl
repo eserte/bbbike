@@ -87,7 +87,40 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.819220.php
+#: by: https://www.berlin.de/events/3415964-2229501-koepenicker-sommer.html (2021: Termin noch nicht bekannt) (mittlerweile gibt\'s den Termin)
+	2::temp 22111,4562 22093,4499 22076,4422
+	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
+	2::temp 22138,4642 22074,4664
+	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
+	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
+	2::temp 22144,4660 22212,4655 22284,4653
+	2::temp 22175,4730 22246,4711
+	2::temp 22284,4653 22355,4660
+	2::temp 22212,4655 22214,4548
+# REMOVED ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
+',
+         'from' => 1623880800,
+         'id' => 1702,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 7,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              6,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Alt-Köpenick, Schlossplatz, Schlossinsel, Luisenhain, Rosenstr., Schüßlerplatz, Laurenzstr., Jägerstr., Böttcherstr.); außerdem Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Bahnhofstr. (18.06.2021 - 20.06.2021)',
+         'type' => 'gesperrt',
+         'until' => 1624212000
+       },
        undef,
        undef,
        undef,
@@ -2749,7 +2782,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-06-04
+#: last_checked: 2021-06-05
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3202,7 +3235,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-06-02
+#: last_checked: 2021-06-05
 #: check_frequency: 30d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3228,25 +3261,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: PILGRAMER-2019
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381 (mittlerweile "bis auf Weiteres")
-#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-zwei-monate-beidseitig-gesperrt_a304101 (Fertigstellung im Mai 2021)
-#: source_id: 2147346982
-#: also_indoor: traffic (H)
-#: XXX wie sehr sind Radfahrer betroffen?
-#: last_checked: 2021-04-17
-# REMOVED --- #: check_frequency: 32d
-#: next_check: 2021-06-30
-	q4::inwork 25150,10562 25149,10695 25149,10731 25148,10769 25145,10841
-',
-         'from' => 1615676400,
-         'id' => 3342,
-         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1063839.php',
-         'text' => 'Pilgramer Str.: Sperrung der Fahrbahn, Sperrung des westlichen Gehwegs ab Theodorpark bis Straße 48, östlicher Gehweg ist noch offen, ab 15. März 2021 bis 30.6.2021',
-         'type' => 'handicap',
-         'until' => 1625068800
-       },
+       undef,
        undef,
        undef,
        {
@@ -3642,7 +3657,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: HEIDEKRAUTBAHN-2021
 #: add_fragezeichen: Ist der neue Weg bereits offiziell eröffnet?
-#: last_checked: 2021-05-24
+#: last_checked: 2021-05-30 (mapillary)
 #: check_frequency: 30d
 	2::inwork 7236,19689 7273,19682 7435,19547 7446,19522 7504,19459
 ',

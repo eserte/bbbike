@@ -3286,7 +3286,7 @@ Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, te
 # 
 #: XXX bis wann geht die Einbahnstraßenregelung?
 #: also_indoor: traffic
-#: last_checked: 2021-05-03
+#: last_checked: 2021-06-05
 Gotlindestr.: Einbahnstraßenregelung	1s:q4:inwork 16720,12614 16859,12613
 # 
 #: XXX bis wann geht die Einbahnstraßenregelung?
@@ -3378,7 +3378,7 @@ Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708
 #: source_id: IM_020714
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-05-30 (daf)
+#: last_checked: 2021-06-03 (architektur-urbanistik)
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
@@ -3408,7 +3408,7 @@ Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,46
 #: by: https://www.hcu-hamburg.de/fileadmin/documents/REAP/BGS/Baumrigolen-Workshop/20-10-01_RUD_BA3_LP2_Broschuere_Strassenraeume_BGS_klein_sko_geaendert.pdf (geplante Umgestaltung Danneckerstr./Rudolfstr.)
 #: XXX bis wann bleibt diese Straße eine "Klimastraße"?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-06-04
+#: last_checked: 2021-06-05
 # REMOVED (bleibt vermutlich länger?) --- #: next_check: 2020-12-31
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939 13856,10864
 # 
@@ -3539,7 +3539,7 @@ Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7687,14017
 # 
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2021-04-09
+#: last_checked: 2021-05-30 (mapillary)
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # 
@@ -3648,7 +3648,7 @@ Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,815
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2021-05-29 vvv
+#: last_checked: 2021-06-05 vvv
 #: check_frequency: 60d vvv
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
 # REMOVED (hier kann man schon fahren) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21474,5388 21485,5377 21514,5314 21547,5245 21413,5180
@@ -4300,7 +4300,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10063,12438
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="5"
-#: last_checked: 2021-05-22
+#: last_checked: 2021-06-03 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760

@@ -14603,17 +14603,17 @@ EOF
 	2::inwork 25997,-6245 26040,-6233 26135,-6206
 EOF
      },
-     { from  => $isodate2epoch->("2019-06-13 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-06-16 23:59:59"),
+     { from  => $isodate2epoch->("2021-06-17 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-06-20 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6, start => "2020-10-25T00:00:00"]],
        recurrence_prewarn_days => 7,
-       text  => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt sind gesperrt (vermutlich: Alt-Köpenick, Schlossplatz, Schlossinsel, Luisenhain, Rosenstr., Schüßlerplatz, Laurenzstr., Jägerstr., Böttcherstr.); außerdem Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Lindenstr. (14.06.2019 - 16.06.2019)',
+       text  => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Alt-Köpenick, Schlossplatz, Schlossinsel, Luisenhain, Rosenstr., Schüßlerplatz, Laurenzstr., Jägerstr., Böttcherstr.); außerdem Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Bahnhofstr. (18.06.2021 - 20.06.2021)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.819220.php
-#: by: https://www.berlin.de/events/3415964-2229501-koepenicker-sommer.html (2021: Termin noch nicht bekannt)
+#: by: https://www.berlin.de/events/3415964-2229501-koepenicker-sommer.html (2021: Termin noch nicht bekannt) (mittlerweile gibt's den Termin)
 	2::temp 22111,4562 22093,4499 22076,4422
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
 	2::temp 22138,4642 22074,4664
@@ -21840,14 +21840,14 @@ EOF
      { from  => $isodate2epoch->("2019-05-17 04:00:00"), # ein Tag Vorlauf
        until => $isodate2epoch->("2019-05-20 04:00:00"), #
        periodic => 1,
-       recurrences => [['yearly', days => 17, months => 5, start => "2020-06-01T00:00:00"]], # auf 2021 verlegt
-       recurrence_prewarn_days => -20, # wegen Corona
+       recurrences => [['yearly', days => 17, months => 5, start => "2021-06-01T00:00:00"]], # auf 2021 verlegt --- auf 2020 verlegt
        text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 18.05.2019 bis 20.05.2019 früh',
        type  => 'handicap',
        source_id => 'IM_025248',
        data  => <<EOF,
 #: by: http://www.die-classic-days-berlin.de/programm-2/
 #: by: https://www.berlin.de/events/2902692-2229501-classic-days-berlin.html (voraussichtlich 12.+13.6.2021)
+#: by: https://www.die-classic-days-berlin.de/programm-2/ (wird auf 2022 verschoben)
 #: note: kann im Juni oder Juli stattfinden
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
@@ -30876,7 +30876,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-06-04
+#: last_checked: 2021-06-05
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32144,7 +32144,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-06-02
+#: last_checked: 2021-06-05
 #: check_frequency: 30d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32198,20 +32198,12 @@ EOF
 EOF
      },
      { from  => 1615676400, # 2021-03-14 00:00
-       until => $isodate2epoch->("2021-06-30 18:00:00"), # 1621115999, # 2021-05-15 23:59
+       until => 1622907143, # offen --- $isodate2epoch->("2021-06-30 18:00:00"), # 1621115999, # 2021-05-15 23:59
        text  => 'Pilgramer Str.: Sperrung der Fahrbahn, Sperrung des westlichen Gehwegs ab Theodorpark bis Straße 48, östlicher Gehweg ist noch offen, ab 15. März 2021 bis 30.6.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1063839.php',
        data  => <<EOF,
-#: next_check_id: PILGRAMER-2019
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381 (mittlerweile "bis auf Weiteres")
-#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-zwei-monate-beidseitig-gesperrt_a304101 (Fertigstellung im Mai 2021)
-#: source_id: 2147346982
-#: also_indoor: traffic (H)
-#: XXX wie sehr sind Radfahrer betroffen?
-#: last_checked: 2021-04-17
-# REMOVED --- #: check_frequency: 32d
-#: next_check: 2021-06-30
+# REMOVED --- #: next_check_id: PILGRAMER-2019 --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=52381 (mittlerweile "bis auf Weiteres") --- #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-zwei-monate-beidseitig-gesperrt_a304101 (Fertigstellung im Mai 2021) --- #: source_id: 2147346982 --- #: also_indoor: traffic (H) --- #: XXX wie sehr sind Radfahrer betroffen? --- #: last_checked: 2021-04-17 --- #: check_frequency: 32d --- #: next_check: 2021-06-30
 	q4::inwork 25150,10562 25149,10695 25149,10731 25148,10769 25145,10841
 EOF
      },
@@ -32661,7 +32653,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: HEIDEKRAUTBAHN-2021
 #: add_fragezeichen: Ist der neue Weg bereits offiziell eröffnet?
-#: last_checked: 2021-05-24
+#: last_checked: 2021-05-30 (mapillary)
 #: check_frequency: 30d
 	2::inwork 7236,19689 7273,19682 7435,19547 7446,19522 7504,19459
 EOF

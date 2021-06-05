@@ -738,15 +738,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 # 
 ### Lichtenberg ###
 # 
-#: next_check_id: RHINSTRASSENBRUECKE-2018
-#: last_checked: 2021-05-03 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2021-07-30 vvv
-Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig	q2::inwork; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123
-Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig, langer Umweg an der Seddiner Str.	q3::inwork; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (kein Zweirichtungsradweg mehr) --- #: next_check_id: RHINSTRASSENBRUECKE-2018 --- #: last_checked: 2021-05-03 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2021-07-30 vvv --- Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig	q2::inwork; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123 --- Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig, langer Umweg an der Seddiner Str.	q3::inwork; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: XXX laut rbb und Halteverbotsschildern bis 31.08.2021
 #: also_indoor: traffic (H)
@@ -2163,9 +2155,9 @@ Lion-Feuchtwanger-Weg: Fußgänger	q1 22516,12946 22493,12999
 (Unterführung U-Bhf. Cottbusser Platz): Fußgänger	q1 23458,14439 23423,14543
 (Unterführung U-Bhf. Cottbusser Platz): Rampe	q3 23423,14543 23454,14556 23421,14549 23458,14563 23463,14552
 (Cottbusser Platz - Hellersdorfer Str.): Fußgänger	q2 23366,14537 23399,14520
-Kastanienallee (Hellersdorf): Fußgänger	q1 23756,14696 23769,14609 23784,14569 23808,14503 23877,14315 23897,14274 23962,14140 24056,13988
+Kastanienallee (Hellersdorf): Fußgänger	q1 23756,14696 23758,14683 23740,14667 23760,14669 23769,14609 23778,14568 23781,14545 23772,14523 23794,14511 23801,14500 23877,14315 23897,14274 23962,14140 24055,13984
 (Kastanienallee - Stollberger Str.): Fußgänger	q1 23897,14274 23983,14318
-enge Rampe	q3 23784,14569 23792,14561 23793,14573
+enge Rampe	q3 23778,14568 23792,14561 23793,14573
 #: XXX_prog BS (2x), ansonsten q3 wegen der Fußgänger
 (Erich-Kuttner-Str. - Storkower Str.): Bordsteine	q4 14088,13627 14060,13622
 #Wuhletalstr. [Mittelstreifen]: für Fußgänger überquerbar	q4 20891,17572 20895,17594
