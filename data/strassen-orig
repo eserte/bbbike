@@ -130,7 +130,7 @@ Lilienthalstr.	N 10615,8558 10633,8705 10640,8832 10675,8940 10748,9054 10709,91
 (Eingang Columbiadamm/Lilienthalstr. - Rundkurs auf dem Flughafen Tempelhof)	NN 10644,8363 10598,8270 10575,8218
 (Eingang Columbiadamm/Lilienthalstr. - Rundkurs auf dem Flughafen Tempelhof)	NN 10598,8270 10729,8152
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof)	NN 10384,8628 10360,8521 10354,8493 10298,8245
-(Rundkurs auf dem Flughafen Tempelhof)	NN 11460,7802 11470,7744 11472,7732 11543,7369 11593,7314 11596,7280 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195 9545,7426 9525,7558
+(Rundkurs auf dem Flughafen Tempelhof)	NN 11460,7802 11470,7744 11472,7732 11543,7369 11593,7314 11596,7280 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9474,7182 9545,7426 9525,7558
 (Rundkurs auf dem Flughafen Tempelhof)	NN 9525,7558 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10037,8269 10298,8245 10575,8218
 (Rundkurs auf dem Flughafen Tempelhof)	NN 10575,8218 10729,8152 10909,8003 11090,7916 11264,7882 11355,7871 11388,7777 11460,7447 11518,7314
 (nördlicher Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm)	NN 9525,7558 9431,7425 9386,7326 9300,7312 9302,7294 9242,7286
@@ -142,7 +142,7 @@ Lilienthalstr.	N 10615,8558 10633,8705 10640,8832 10675,8940 10748,9054 10709,91
 (Eingang Peter-Strasser-Weg)	NN 9281,7795 9240,7811
 (Nördliche Landebahn - Eingang Peter-Strasser-Weg)	NN 9362,7616 9281,7651
 #: street_width: 43m
-(Südliche Landebahn)	NN 9461,7190 9509,7195 9712,7215 10537,7257 11332,7305 11518,7314 11555,7314 11593,7314
+(Südliche Landebahn)	NN 9474,7182 9528,7205 9712,7215 10537,7257 11332,7305 11518,7314 11555,7314 11593,7314
 #: street_width: 43m
 (Nördliche Landebahn)	NN 9362,7616 9522,7624 9653,7635 10204,7680 11279,7768 11388,7777 11430,7781
 (Südliche Landebahn - Rundkurs)	NN 11332,7305 11438,7371 11460,7447
@@ -160,7 +160,7 @@ Lilienthalstr.	N 10615,8558 10633,8705 10640,8832 10675,8940 10748,9054 10709,91
 (Flughafen Tempelhof - Eingang Okerstr.)	NN 11528,7528 11540,7534
 (Flughafen Tempelhof - Eingang Leinestr.)	NN 11547,7432 11558,7438
 (Flughafen Tempelhof - Eingang Oderstr.)	NN 11598,7264 11608,7267
-(Eingang Tempelhofer Damm - südliche Landebahn)	NN 9302,7294 9351,7241 9461,7190
+(Eingang Tempelhofer Damm - südliche Landebahn)	NN 9302,7294 9351,7241 9474,7182
 (Alter Hafen)	NN 10204,7680 10134,7797 10076,8040 10328,8102 10444,8086 10486,7972 10405,7898 10134,7797
 (südliche Landebahn - Alter Hafen)	NN 10537,7257 10399,7415 10204,7680
 # REMOVED (für den Bau eines Wasserbeckens --- Weg ist seit dem Volksentscheid wieder befahrbar) --- #: XXX wahrscheinlich wird dieser Weg für den Bau des Wasserbeckens entfernt --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1310/nachricht5081.html --- #: by: http://www.tempelhoferfreiheit.de/fileadmin/user_upload/Ueber_die_Tempelhofer_Freiheit/Aktuelles_neu/Downloads/2013-08_Flyer_Parklandschaft.pdf --- #: last_checked: 2013-11-19 --- #: next_check: 2014-01-01 --- 
@@ -1112,7 +1112,7 @@ General-Pape-Str.	NH 7949,7607 7943,7708 7951,7801 7952,7808 7955,7840 8088,8254
 Loewenhardtdamm	N 8730,8079 8632,8174 8561,8252 8527,8293 8482,8364 8380,8545 8334,8655 8306,8722
 Loewenhardtdamm	NH 8306,8722 8298,8774
 Boelckestr.	H 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323 8718,7095
-Hoeppnerstr.	N 9242,7286 9107,7297 9051,7340 8971,7359 8886,7377 8806,7382 8715,7384 8604,7381 8479,7389 8429,7403 8386,7430 8376,7440 8302,7508 8267,7572 8263,7611
+Hoeppnerstr.	N 9242,7286 9107,7297 9051,7340 8971,7359 8886,7377 8806,7382 8715,7384 8600,7381 8548,7384 8479,7389 8429,7403 8386,7430 8376,7440 8302,7508 8267,7572 8263,7611
 (Hoeppnerstr. - Hessenring)	NN 8376,7440 8446,7524 8549,7622
 (Kolonie Zähringer Korso)	NN 8553,7795 8554,7746 8573,7710 8549,7622
 Gontermannstr.	N 8263,7611 8260,7803 8260,7911 8265,8092 8259,8265 8276,8295 8327,8302 8394,8313 8482,8364
@@ -5692,7 +5692,7 @@ Sterndamm	H 17648,5338 17705,5223
 #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2
 #: confirmed_by: srt
 #: XXX provisorische Verbindung, asphaltiert
-#: last_checked: 2021-05-22 (krickstadt)
+#: last_checked: 2021-06-06 (krickstadt)
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 Sterndamm [Nebenfahrbahn]	NN 17648,5338 17697,5347
@@ -17626,7 +17626,8 @@ Wiesenerstr.	N 8923,7673 8948,7689 8952,7719 8926,7705 8923,7673 8900,7643 8846,
 Siegertweg	N 8971,7359 8982,7438 9042,7462 9070,7493
 Hessenring	N 8384,7915 8397,7813 8465,7699 8549,7622 8625,7594 8706,7585
 Wölfertstr.	N 8397,7813 8260,7803
-Mohnickesteig	N 8625,7594 8604,7381
+Mohnickesteig	N 8625,7594 8603,7452 8600,7381
+Gertrud-Hanna-Promenade	NN 8548,7384 8603,7452
 (Hoeppnerstr.)	N 8386,7430 8354,7387 8373,7360 8406,7359 8429,7403
 (Hoeppnerstr.)	N 8302,7508 8263,7465
 #: osm.highway: service
@@ -19469,7 +19470,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: 2147346962 (hier: Einschränkungen an der Gegenfahrbahn, bis 31.1.2025)
-#: last_checked: 2021-03-20
+#: last_checked: 2021-06-06
 #: check_frequency: 180d
 #: next_check: 2025-01-31
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

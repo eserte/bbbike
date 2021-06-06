@@ -523,8 +523,10 @@ Impfzentrum Velodrom	Pl 13449,13892
 #: valid: 20210307-
 Impfzentrum Flughafen Tempelhof	Pl 9653,8480
 #: append_comment: Potsdam
+#: by: https://www.maz-online.de/Lokales/Potsdam/Impfzentrum-in-der-Metropolishalle-in-Potsdam-schliesst-zum-31.-Juli
 #: XXX siehe auch add_str_potsdam-Eintrag, der nach der Impfkampagne ebenfalls entfernt werden kann
-#: osm_watch: node id="8244360159" version="2" brb
+#: osm_watch: node id="8244360159" version="3" brb
+#: next_check: 2021-07-31
 Impfzentrum Metropolis-Halle	Pl -8846,-2629
 #: check_frequency ^^^
 #: last_checked ^^^

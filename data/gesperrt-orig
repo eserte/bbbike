@@ -311,7 +311,8 @@ Knorrpromenade	1 14424,11639 14369,11489
 Herbststr.	1 7997,18524 8096,18456 8222,18375 8286,18331 8456,18371 8622,18402
 Ruhwaldweg: Schranke gesperrt	2 773,13375 758,13334
 Alt-Reinickendorf	1 7003,18715 6869,18721 6775,18726 6734,18728 6572,18793 6716,18788 6793,18763 6879,18737 7003,18715
-Lauterstr.	1s:q3 5817,7223 5810,7337
+#: note: auﬂerdem Fuﬂg‰ngerzone
+Breslauer Platz/Lauterstr.	1s:q4 5817,7223 5810,7337
 Friedrich-Wilhelm-Platz	1 5318,7424 5310,7325 5314,7217
 Stolbergstr.	1 8864,6440 8852,6642
 Richnowstr.	1 8953,6492 8912,6448 8864,6440
@@ -1466,6 +1467,11 @@ Park Sanssouci: auch das Mitf¸hren eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
 ###################################################################### 
 # elsewhere in Brandenburg
+# 
+#: note: fr¸her nur f¸r den motorisierten Verkehr gesperrt
+#: osm_watch: way id="104156160" version="7" brb
+Liepe - Bralitz: Br¸cke gesperrt	2 48210,51009 48230,50933
+# 
 Diedersdorf	1 7452,-7463 7408,-7483 7296,-7482 7378,-7406
 Birkenweg	1 27483,12922 27427,12773 27432,12680
 #: by: mapillary
@@ -3304,7 +3310,7 @@ Straﬂe 77: wegen Bauarbeiten komplett gesperrt, auch f¸r Fuﬂg‰nger	2::inwork 153
 (Zufahrt am NKZ): Fuﬂg‰nger, un¸bersichtlich, Bauarbeiten, Ger¸st, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2021-03-20 vvv
+#: last_checked: 2021-06-06 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-01-31 vvv
 Straﬂe des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -3378,7 +3384,7 @@ Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708
 #: source_id: IM_020714
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-06-03 (architektur-urbanistik)
+#: last_checked: 2021-06-06
 Mittelstr.: zwischen Neust‰dtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch f¸r Fuﬂg‰nger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Br¸cke 2021)
@@ -3604,7 +3610,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
 #: osm_watch: node id="6778873745" version="1"
-#: last_checked: 2021-05-30
+#: last_checked: 2021-06-06
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3617,7 +3623,7 @@ J¸denstr.: ‹berqueren der Grunerstr. wegen Bauz‰unen nicht mehr mˆglich	2::inwor
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
 #: osm_watch: way id="882672445" version="1"
-#: last_checked: 2021-05-28
+#: last_checked: 2021-06-06
 #: check_frequency: 60d
 Gustav-Bˆﬂ-Str.: Bauarbeiten, Komplettsperrung, Straﬂenf¸hrung wird neu gemacht	2::inwork 10673,12434 10772,12515
 # 
@@ -3635,14 +3641,7 @@ Gustav-Bˆﬂ-Str.: Bauarbeiten, Komplettsperrung, Straﬂenf¸hrung wird neu gemacht	
 # REMOVED --- Homeyerstr.: Einbahnstraﬂenregelung	1s:q3:inwork 9529,18815 9465,18855
 # REMOVED (laut osm mittlerweile offen) --- #: next_check_id: FALKENBERG-2021 --- #: last_checked: 2021-05-15 vvv --- #: check_frequency: 30d vvv --- #: osm_watch: way id="663861522" version="9" --- David-Friedl‰nder-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851 --- #: XXX Wann wird die Straﬂe fertig gestellt? Qualit‰t (vermutlich Verbundsteinpflaster)? Wird hier eine Spielstraﬂe sein? --- #: osm_watch: way id="506201935" version="14" --- Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (offen) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020 wieder offen, bis voraussichtlich 13. September 2020) --- #: by: https://www.kms-sonne.de/baustellennews?date=20201221 (weiterhin gesperrt) --- #: osm_watch: way id="822674838" version="4" --- #: last_checked: 2021-05-21 --- #: check_frequency: 60d --- #: next_check: 2021-06-30 --- Rollbergstr.: Einbahnstraﬂe, offen Richtung Karl-Marx-Str.	1s:q3:inwork 12714,8249 12545,8209 --- Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:q4:inwork 12714,8249 12545,8209
-# 
-#: osm_watch: way id="702306263" version="6"
-#: XXX laut osm mittlerweile offen
-#: last_checked: 2021-05-21
-#: check_frequency: 21d
-#: next_check: 2021-06-04
-Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
-# 
+# REMOVED (wieder offen) --- #: osm_watch: way id="702306263" version="6" --- #: XXX laut osm mittlerweile offen --- #: last_checked: 2021-05-21 --- #: check_frequency: 21d --- #: next_check: 2021-06-04 --- Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 # REMOVED (offen) --- #: next_check_id: METROPOLITANPARK-2019 --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-08-23 --- #: check_frequency: 60d --- Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8095,14056 -8183,14041
 # REMOVED (bei osm nicht gesperrt) --- #: osm_watch: way id="686305629" version="2" --- #: last_checked: 2019-09-14 --- #: check_frequency: 90d --- Hohenloher Weg: Bauarbeiten, gesperrt	2::inwork -8295,15778 -8178,15741
 # 
@@ -3672,7 +3671,7 @@ W‰scherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://abendblatt-berlin.de/2021/06/01/berlin-mitte-molkenmarkt-planung-geht-in-die-naechste-phase/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/senat-lobt-verfahren-aus_a311991
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne ‹berquerungsmˆglichkeit an der k¸nftigen Straﬂe "Molkenmarkt"
-#: last_checked: 2021-05-28
+#: last_checked: 2021-06-06
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingez‰unt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
@@ -3681,7 +3680,7 @@ W‰scherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="5096644" version="16"
 #: priority: #C
-#: last_checked: 2021-05-30
+#: last_checked: 2021-06-06
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -4175,7 +4174,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: next_check_id: ZEUGHAUS-2014
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2021-05-13 vvv
+#: last_checked: 2021-06-06 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- Unter den Linden: wegen Bauarbeiten ist das ‹berqueren nicht mˆglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 # REMOVED --- #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden!
@@ -4300,7 +4299,7 @@ Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10063,12438
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraﬂenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="5"
-#: last_checked: 2021-06-03 (architektur-urbanistik)
+#: last_checked: 2021-06-06
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
