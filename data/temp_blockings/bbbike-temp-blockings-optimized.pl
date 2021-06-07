@@ -3771,6 +3771,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Ringbahnstr.: an der Germaniastr. Richtung Tempelhofer Damm wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, vom 02.06.2021 08:00 Uhr bis 10.09.2021 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1631286000
+       },
+       {
+         'data' => '#: note: laut rbb
+#: also_indoor: traffic (H)
+	q4::inwork 7432,14969 7624,15083 7694,15125 7745,15160
+',
+         'from' => 1623092008,
+         'id' => 3389,
+         'text' => 'Lynarstr.: Sperrung der Fahrbahn zwischen Sparrstr. und Müllerstr., evtl. sind auch Radfahrer betroffen, bis 27.08.2021',
+         'type' => 'handicap',
+         'until' => 1630101600
        }
      
 );

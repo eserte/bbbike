@@ -32755,4 +32755,14 @@ EOF
 	q4::inwork; 9863,6617 9861,6693
 EOF
      },
+     { from  => 1623092008, # 2021-06-07 20:53
+       until => 1630101600, # 2021-08-28 00:00
+       text  => 'Lynarstr.: Sperrung der Fahrbahn zwischen Sparrstr. und Müllerstr., evtl. sind auch Radfahrer betroffen, bis 27.08.2021',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: laut rbb
+#: also_indoor: traffic (H)
+	q4::inwork 7432,14969 7624,15083 7694,15125 7745,15160
+EOF
+     },
     );
