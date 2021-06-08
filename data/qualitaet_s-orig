@@ -971,7 +971,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? auﬂerdem: wird die Colbestr. zur Fahrradstraﬂe?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erw‰hnung)
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-06-06
+#: last_checked: 2021-06-08
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -7021,7 +7021,10 @@ Uferweg: Waldweg	Q1- -997,18069 -984,18136 -934,18284 -930,18337
 Menzelstr.: Beton	Q0 25149,12266 25318,12294
 Menzelstr.: Asphalt	Q0 25318,12294 25578,12336
 Ridbacher Str.: leicht welliger Asphalt	Q0- 24530,12296 24434,12402 24354,12510
-Ridbacher Str.: leicht welliger Asphalt	Q1+ 24354,12510 24316,12566 24230,12733
+Ridbacher Str.: leicht welliger Asphalt	Q1+ 24354,12510 24316,12566
+Ridbacher Str.: leicht welliger Asphalt	Q1+; 24316,12566 24230,12733
+#: note: hier nur abschnittsweise
+Ridbacher Str.: leicht welliger Asphalt	Q0-; 24230,12733 24316,12566
 Ridbacher Str.: leicht welliger Asphalt	Q1+; 24230,12733 24187,12836 24142,12943
 Ridbacher Str.: Asphalt	Q0; 24142,12943 24187,12836 24230,12733
 Ridbacher Str.: leicht welliger Asphalt	Q1+ 24142,12943 24131,12969 24117,13043 24118,13148 24115,13320 24117,13423 24116,13470
@@ -10023,7 +10026,8 @@ Karlsruher Str. (Mahlsdorf): Asphalt	Q0 23582,9591 23584,9629 23585,9672 23528,9
 (Mittelheide, Nord-S¸d-Weg): Waldweg	Q1- 24111,6348 24089,6144
 (Mirower Str. - Mittelheide): Waldweg	Q1- 24387,7708 24365,7657 24275,7550
 (Mittelheide - S-Bhf. Hirschgarten): Waldweg	Q1- 24089,6144 24060,6059
-(KGA Erpetal - S-Bhf. Hirschgarten): unbefestigter Weg	Q2+ 24329,6089 24297,6086 24222,6092 24120,6090 24060,6059 23951,6063
+(KGA Erpetal - S-Bhf. Hirschgarten): unbefestigter Weg	Q2+ 24329,6089 24297,6086 24222,6092 24120,6090 24060,6059
+(KGA Erpetal - S-Bhf. Hirschgarten): unbefestigter Weg	Q1- 24060,6059 23951,6063
 Gilgenburger Pfad: Kleinsteinpflaster	Q1 24387,5672 24351,5696
 (entlang der Erpe): Verbundsteinpflasterrampe	Q1 24650,6034 24647,5995
 (entlang der Erpe): Schotterweg	Q2+ 24647,5995 24647,5981 24637,5960 24584,5914
@@ -11248,8 +11252,7 @@ Kieler Br¸cke: Holzbohlen	Q1 7780,14431 7740,14409
 Fregestr.: asphaltierter Radweg	Q0 5622,6400 5582,6360
 Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8187,13472 8183,13482 8141,13580 8103,13675
 # REMOVED (wurde wieder entfernt, by osm note 2526727) --- #: note: Asphalt oder asphalt‰hnlich; bunt bemalt
-Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8103,13675 8059,13765
-Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8059,13765 8025,13835 7997,13892
+Am Hamburger Bahnhof: Kopfsteinpflaster	Q2- 8103,13675 8059,13765 8025,13835 7997,13892
 (am 50hertz-Geb‰ude): gepflastert	Q2+ 8059,13551 8141,13580
 (Vorfahrt Petruskirche): Kopfsteinpflaster	Q2 5393,2053 5452,2077
 An der Neumark: Verbundsteinpflaster	Q1+ 11283,3774 11300,3709 11357,3720 11378,3626
@@ -11829,7 +11832,7 @@ Sophie-Charlotten-Str.: Asphalt mit Sch‰den	Q1+ 2332,12793 2397,12513 2411,12428
 (Hedwig-Porsch¸tz-Str. - Uferweg/Kieler Br¸cke): Asphalt	Q0- 7757,14318 7763,14332 7754,14354 7769,14364
 #: next_check_id: EUROPACITY-2015
 #: XXX nach den Bauarbeiten wird hier der parallel f¸hrende asphaltierte Weg erˆffnet
-#: last_checked: 2021-02-05
+#: last_checked: 2021-06-08
 #: check_frequency: 120d
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1 7769,14364 7746,14401
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1 7746,14401 7705,14383
@@ -12142,8 +12145,12 @@ zur Heubudenbr¸cke: wassergebundene Decke	Q1 8982,17299 8973,17301
 zum Mauerweg: Asphalt	Q0 11671,-3400 11600,-3382
 zum Mauerweg: Waldweg	Q1- 11600,-3382 11570,-3356
 Marzahner Chaussee: Asphalt	Q0+ 19180,13219 19198,13272 19181,13485
-Kornmandelweg: Asphalt mit Sch‰den	Q1+ 20773,13468 20906,13454 21039,13464 21150,13493 21262,13517 21296,13520
-Kastanienallee: wassergebundene Decke	Q1- 23801,14500 23877,14315 23897,14274 23962,14140
+Kornmandelweg: Asphalt mit Sch‰den	Q1+ 20773,13468 20906,13454 21039,13464 21150,13493 21262,13517
+Kornmandelweg: Asphalt	Q0 21262,13517 21296,13520
+Kastanienallee: Beton	Q0- 23756,14696 23758,14683 23740,14667 23760,14669
+Kastanienallee: Asphalt	Q0 23760,14669 23769,14609
+Kastanienallee: Verbundsteinpflaster	Q1 23769,14609 23778,14568 23781,14545 23772,14523 23794,14511 23801,14500 23817,14461
+Kastanienallee: wassergebundene Decke	Q1- 23817,14461 23877,14315 23897,14274 23962,14140
 Kastanienallee: Verbundsteinpflaster	Q1 23962,14140 24055,13984
 Gertrud-Hanna-Promenade: Kleinsteinpflaster	Q1- 8548,7384 8603,7452
 # 
@@ -15076,9 +15083,15 @@ Straﬂburger Str.: Kopfsteinpflaster	Q2 11239,14123 11236,14153
 #: confirmed_by ^^^
 #: by: ^^^
 # 
-#: by: betti (grafik@...):
-#: note: teilweise sind die Streifen leider zugeparkt, und an einigen Stellen br¸chig.
-Potsdamer Str. (Lichterfelde): schlechtes Kopfsteinpflaster, schmale asphaltierte Streifen	Q3+ 3193,3793 3372,3557 3499,3377 3599,3242 3646,3154 3646,3034 3644,2937 3641,2827
+#: by: betti (grafik@...): vvv
+#: note: teilweise sind die Streifen leider zugeparkt, und an einigen Stellen br¸chig. vvv
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1092787.php (Asphaltierung der Fahrbahnmitte bis 24.09.2021)
+#: priority: #B
+#: next_check: 2021-09-24
+Potsdamer Str. (Lichterfelde): schlechtes Kopfsteinpflaster, schmale asphaltierte Streifen	Q3+ 3193,3793 3372,3557
+Potsdamer Str. (Lichterfelde): schlechtes Kopfsteinpflaster, schmale asphaltierte Streifen	Q3+ 3372,3557 3499,3377 3599,3242 3646,3154 3646,3034 3644,2937 3641,2827
+#: note ^^^
+#: by ^^^
 # 
 #: by: harald kuendgen: vvv
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
@@ -27322,7 +27335,7 @@ Weydemeyerstr.: m‰ﬂiger Beton, Fugen	Q2+ 11716,12803 11809,12760 11933,12701 119
 (Berolinastr. - Mollstr.): Beton/Verbundsteine/gepflastert	Q1- 11609,12986 11656,13100 11681,13161
 (Lichtenberger Str.): Verbundsteine	Q1 12054,12903 12039,12675
 Barnimstr.: Beton	Q0 11561,13451 11608,13417 11652,13372 11785,13241
-Mollstr. [Wohngebiet]: Beton	Q0 11881,13147 11762,13207 11749,13215 11644,13266 11637,13282 11589,13305 11578,13310
+Mollstr. [Wohngebiet]: Beton	Q0 11881,13147 11762,13207 11749,13215 11639,13268 11643,13279 11589,13305 11578,13310
 # REMOVED (existiert nicht mehr) --- (Erschlieﬂungstr./Parkplatz): Beton	Q0 11608,13417 11546,13327 11589,13305
 #: corrected_by: srt (Q0 -> Q0-)
 (Erschlieﬂungsstr.): Beton	Q0- 11608,13417 11652,13478 11667,13465

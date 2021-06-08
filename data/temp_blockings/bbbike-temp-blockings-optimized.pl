@@ -2782,7 +2782,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-06-06
+#: last_checked: 2021-06-08
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3083,7 +3083,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-04-09 vvv
+#: last_checked: 2021-06-08 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -3782,6 +3782,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Lynarstr.: Sperrung der Fahrbahn zwischen Sparrstr. und Müllerstr., evtl. sind auch Radfahrer betroffen, bis 27.08.2021',
          'type' => 'handicap',
          'until' => 1630101600
+       },
+       {
+         'data' => '#: last_checked: 2021-06-08
+#: check_frequency: 7d
+	q4::inwork 12592,12472 12632,12630
+',
+         'from' => undef,
+         'id' => 3390,
+         'text' => 'Koppenstr.: zwischen Palisadenstr. und Karl-Marx-Allee Fahrbahn wegen Kranarbeiten gesperrt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

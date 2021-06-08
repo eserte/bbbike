@@ -30199,9 +30199,9 @@ EOF
        data  => <<EOF,
 	2::temp 10660,12176 10591,12203 10583,12206 10492,12289 10417,12378
 	2::temp 10583,12206 10625,12206 10574,12131 10512,12039 10460,11979 10418,12016
-	2::temp 10285,12306 10383,12191 10284,12113
+	2::temp 10285,12306 10383,12191 10289,12106
 	2::temp 10383,12191 10480,12077 10512,12039
-	2::temp 10480,12077 10418,12016 10385,11985
+	2::temp 10480,12077 10418,12016 10392,11991
 EOF
      },
      { from  => 1572735600, # 2019-11-03 00:00
@@ -30876,7 +30876,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-06-06
+#: last_checked: 2021-06-08
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31855,7 +31855,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-04-09 vvv
+#: last_checked: 2021-06-08 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -32763,6 +32763,16 @@ EOF
 #: note: laut rbb
 #: also_indoor: traffic (H)
 	q4::inwork 7432,14969 7624,15083 7694,15125 7745,15160
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Koppenstr.: zwischen Palisadenstr. und Karl-Marx-Allee Fahrbahn wegen Kranarbeiten gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2021-06-08
+#: check_frequency: 7d
+	q4::inwork 12592,12472 12632,12630
 EOF
      },
     );

@@ -2696,7 +2696,7 @@ Schranke, leicht umfahrbar	BNP:2::trailer=4 -12303,-867
 Schranke (enge Umfahrung)	BNP:5:trailer=no -11267,-1832
 #: XXX Schranke nicht vor Ort geprüft
 Schranke	BNP:3::trailer=10 -11162,-1913
-#: note: oder man denkt daran und nimmt den parallel zum Netto-Parkplatz führenden Gehweg
+#: note: oder man nimmt den parallel zum Netto-Parkplatz führenden Gehweg ohne Schranke
 Schranke	BNP:3::trailer=10 11884,13145
 Drängelgitter	BNP:3::trailer=10 5715,4672
 Schranke	BNP:2::trailer=4 16541,12071
@@ -3337,7 +3337,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.deutsches-architekturforum.de/thread/14527-neubau-holzmarktstra%C3%9Fe-51-friedrichshain-in-planung/?postID=681293#post681293
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen, sollte ein Teilabschnitt der Straße endgültig verschwinden
 #: XXX mittlerweile (April 2021) wurde der südliche Teil schon weggebaggert
-#: osm_watch: way id="25008069" version="12"
+#: osm_watch: way id="25008069" version="13"
 #: last_checked: 2021-05-28
 #: check_frequency: 60d
 Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881 11940,11982
@@ -3370,7 +3370,7 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615
 # 
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise
-#: last_checked: 2021-04-09
+#: last_checked: 2021-06-08
 #: check_frequency: 120d
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
 # 
@@ -3527,9 +3527,13 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152 14373,1004
 #: XXX Gehweg der nördlichen Seite ist schon weitgehend offen, südliche Seite nur als Baustraße erkennbar
 #: XXX ggfs. auch andere Seite des Platzes einzeichnen, ggfs. auch einen plaetze-orig-Eintrag machen
 #: osm_watch: way id="642581102" version="3"
-#: last_checked: 2021-04-09
+#: last_checked: 2021-06-08
 #: check_frequency: 60d
 Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
+# 
+#: next_check_id: EUROPACITY-2015
+#: last_checked: 2021-06-08
+Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeiten gesperrt	2::inwork 7959,13982 7997,13892
 #  
 # REMOVED (Schranke wird nicht genutzt?) --- #: next_check_id: EUROPACITY-2015 --- #: XXX laut osm mittlerweile offen --- #: last_checked: 2021-02-05 --- #: check_frequency: 60d --- #: next_check: 2021-02-14 --- Lisa-Fittko-Str.: wegen Hochbauarbeiten gesperrt	2::inwork 7734,13944 7820,13994
 # 
@@ -3574,7 +3578,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-05-02 (daf)
+#: last_checked: 2021-06-08
 #: check_frequency: 60d
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833
 # 
@@ -3588,7 +3592,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: bis Mai 2021)
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 18.06.2021) vvv
-#: last_checked: 2021-06-03 vvv
+#: last_checked: 2021-06-08 vvv
 #: next_check: 2021-06-18 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901
@@ -3608,7 +3612,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
-#: osm_watch: way id="722664473" version="1"
+#: osm_watch: way id="722664473" version="2"
 #: osm_watch: node id="6778873745" version="1"
 #: last_checked: 2021-06-06
 #: check_frequency: 30d
@@ -4042,11 +4046,11 @@ Gisela-Reissenberger-Platz: wegen Bauarbeiten gesperrt	2::inwork 20665,11620 207
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
 #: XXX laut osm nicht mehr construction, in der Realität kann man aber hier nicht durch
-#: last_checked: 2021-04-09
+#: last_checked: 2021-06-08
 #: check_frequency: 60d
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7661,14398 7636,14414 7612,14449 7551,14464
 # 
-#: last_checked: 2021-04-09
+#: last_checked: 2021-06-08
 #: check_frequency: 60d
 Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409
 # 
@@ -4192,7 +4196,7 @@ Niederlagstr.: Durchfahrt gesperrt	2::inwork 9934,12420 9943,12364
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="19"
 #: also_indoor: traffic
-#: last_checked: 2021-03-12
+#: last_checked: 2021-06-08
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419

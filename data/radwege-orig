@@ -2044,9 +2044,10 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: by: https://twitter.com/SenUVKBerlin/status/1392538200837660678 (geschützte Radstreifen)
 #: by: https://twitter.com/VIZ_Berlin/status/1394639658357870600
 #: by: https://twitter.com/BVG_Bus/status/1397555666588418049 (weiterhin Bauarbeiten?)
-#: last_checked: 2021-05-26 (twitter)
-#: check_frequency: 7d
-	RW3;RW3 11159,10769 11220,10744 11275,10723
+#: by: https://twitter.com/VIZ_Berlin/status/1401901831966572545
+# REMOVED --- #: last_checked: 2021-05-26 (twitter) --- #: check_frequency: 7d
+#: note: außerdem teilweise mit Rotmarkierung
+Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 	RW4;RW4 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
 #: note: üblicherweise ragen parkende Autos in die Radspur rein (zu schmale Parkspur, zu breite Autos)
@@ -4997,20 +4998,20 @@ Tempo 10	RW6;RW6 10049,13528 9993,13682
 Tempo 10	RW6;RW6 10199,13446 10350,13376
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10263,13594 10142,13556 10049,13528 10026,13521 9961,13502 9898,13484 9651,13406 9415,13315
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 9898,13484 9853,13511
-10er-Zone	RW6;RW6 10699,13173 10757,13401 10767,13443 10797,13575
+# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10699,13173 10757,13401 10767,13443 10797,13575
 10er-Zone	RW6;RW6 10872,13570 10898,13632
-10er-Zone	RW6;RW6 10757,13401 10846,13362 10925,13322 11012,13278
-10er-Zone	RW6;RW6 10898,13260 10925,13322 10966,13436
+# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10757,13401 10846,13362 10925,13322 11012,13278
+# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10898,13260 10925,13322 10966,13436
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10016,13306 9837,13250 9786,13178
-10er-Zone	RW6;RW6 10852,13377 10931,13419 10966,13436 11031,13467 11059,13480
+# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10852,13377 10931,13419 10966,13436 11031,13467 11059,13480
 10er-Zone	RW6;RW6 11031,13467 10998,13382
-10er-Zone	RW6;RW6 10767,13443 10703,13467 10644,13497
+# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10767,13443 10703,13467 10644,13497
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10596,13398 10390,13493 10311,13537 10286,13548
 # REMOVED (nun 30er-Zone, vermutlich) --- 10er-Zone	RW6;RW6 10308,13575 10406,13543 10535,13509 10633,13474
 Tempo 10er	RW6;RW6 10535,13509 10597,13647
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10350,13376 10353,13384 10390,13493 10406,13543 10445,13675 10459,13760
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10313,13493 10311,13537 10308,13575 10307,13600 10301,13701
-10er-Zone	RW6;RW6 10931,13419 10828,13464
+# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10931,13419 10828,13464
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10307,13600 10263,13594
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 9670,13637 9744,13584 9793,13549
 # REMOVED (nun nur noch 30er-Zone, by wosch, confirmed_by srt) --- 10er-Zone	RW6;RW6 9383,13986 9514,13826 9535,13801 9670,13637
@@ -6581,6 +6582,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: http://www.infravelo.de/projekt/danziger-strasse-1/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1389893047379496960 (Markierungsarbeiten)
+#: by: https://twitter.com/VIZ_Berlin/status/1402152820439138307
 #: last_checked: 2021-05-31 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2021-09-30 vvv

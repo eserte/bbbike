@@ -5940,7 +5940,9 @@ Uferweg: Waldweg	Q1 -997,18069 -984,18136 -934,18284 -930,18337
 Menzelstr.: Beton	Q0 25149,12266 25318,12294
 Menzelstr.: Asphalt	Q0 25318,12294 25578,12336
 Ridbacher Str.: leicht welliger Asphalt	Q0 24530,12296 24434,12402 24354,12510
-Ridbacher Str.: leicht welliger Asphalt	Q1 24354,12510 24316,12566 24230,12733
+Ridbacher Str.: leicht welliger Asphalt	Q1 24354,12510 24316,12566
+Ridbacher Str.: leicht welliger Asphalt	Q1; 24316,12566 24230,12733
+Ridbacher Str.: leicht welliger Asphalt	Q0; 24230,12733 24316,12566
 Ridbacher Str.: leicht welliger Asphalt	Q1; 24230,12733 24187,12836 24142,12943
 Ridbacher Str.: Asphalt	Q0; 24142,12943 24187,12836 24230,12733
 Ridbacher Str.: leicht welliger Asphalt	Q1 24142,12943 24131,12969 24117,13043 24118,13148 24115,13320 24117,13423 24116,13470
@@ -8736,7 +8738,8 @@ Karlsruher Str. (Mahlsdorf): Asphalt	Q0 23582,9591 23584,9629 23585,9672 23528,9
 (Mittelheide, Nord-Süd-Weg): Waldweg	Q1 24111,6348 24089,6144
 (Mirower Str. - Mittelheide): Waldweg	Q1 24387,7708 24365,7657 24275,7550
 (Mittelheide - S-Bhf. Hirschgarten): Waldweg	Q1 24089,6144 24060,6059
-(KGA Erpetal - S-Bhf. Hirschgarten): unbefestigter Weg	Q2 24329,6089 24297,6086 24222,6092 24120,6090 24060,6059 23951,6063
+(KGA Erpetal - S-Bhf. Hirschgarten): unbefestigter Weg	Q2 24329,6089 24297,6086 24222,6092 24120,6090 24060,6059
+(KGA Erpetal - S-Bhf. Hirschgarten): unbefestigter Weg	Q1 24060,6059 23951,6063
 Gilgenburger Pfad: Kleinsteinpflaster	Q1 24387,5672 24351,5696
 (entlang der Erpe): Verbundsteinpflasterrampe	Q1 24650,6034 24647,5995
 (entlang der Erpe): Schotterweg	Q2 24647,5995 24647,5981 24637,5960 24584,5914
@@ -9866,8 +9869,7 @@ Kieler Brücke: Holzbohlen	Q1 7780,14431 7740,14409
 (Mariendorfer-Hafen-Weg - Im Marienpark): Kopfsteinpflaster	Q2 8035,3657 8046,3626 8070,3563
 Fregestr.: asphaltierter Radweg	Q0 5622,6400 5582,6360
 Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8187,13472 8183,13482 8141,13580 8103,13675
-Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8103,13675 8059,13765
-Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8059,13765 8025,13835 7997,13892
+Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8103,13675 8059,13765 8025,13835 7997,13892
 (am 50hertz-Gebäude): gepflastert	Q2 8059,13551 8141,13580
 (Vorfahrt Petruskirche): Kopfsteinpflaster	Q2 5393,2053 5452,2077
 An der Neumark: Verbundsteinpflaster	Q1 11283,3774 11300,3709 11357,3720 11378,3626
@@ -10659,8 +10661,12 @@ zur Heubudenbrücke: wassergebundene Decke	Q1 8982,17299 8973,17301
 zum Mauerweg: Asphalt	Q0 11671,-3400 11600,-3382
 zum Mauerweg: Waldweg	Q1 11600,-3382 11570,-3356
 Marzahner Chaussee: Asphalt	Q0 19180,13219 19198,13272 19181,13485
-Kornmandelweg: Asphalt mit Schäden	Q1 20773,13468 20906,13454 21039,13464 21150,13493 21262,13517 21296,13520
-Kastanienallee: wassergebundene Decke	Q1 23801,14500 23877,14315 23897,14274 23962,14140
+Kornmandelweg: Asphalt mit Schäden	Q1 20773,13468 20906,13454 21039,13464 21150,13493 21262,13517
+Kornmandelweg: Asphalt	Q0 21262,13517 21296,13520
+Kastanienallee: Beton	Q0 23756,14696 23758,14683 23740,14667 23760,14669
+Kastanienallee: Asphalt	Q0 23760,14669 23769,14609
+Kastanienallee: Verbundsteinpflaster	Q1 23769,14609 23778,14568 23781,14545 23772,14523 23794,14511 23801,14500 23817,14461
+Kastanienallee: wassergebundene Decke	Q1 23817,14461 23877,14315 23897,14274 23962,14140
 Kastanienallee: Verbundsteinpflaster	Q1 23962,14140 24055,13984
 Gertrud-Hanna-Promenade: Kleinsteinpflaster	Q1 8548,7384 8603,7452
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
@@ -11986,7 +11992,8 @@ Kiesstr.: schlechtes Kopfsteinpflaster	Q3 5642,1912 5612,1904 5491,1955
 Diedenhofer Str.: Kopfsteinpflaster	Q2 11188,14184 11249,14267 11316,14360
 Straßburger Str.: Kopfsteinpflaster	Q2 10898,13632 11052,13870 11156,14012 11239,14123 11270,14131
 Straßburger Str.: Kopfsteinpflaster	Q2 11239,14123 11236,14153
-Potsdamer Str. (Lichterfelde): schlechtes Kopfsteinpflaster, schmale asphaltierte Streifen	Q3 3193,3793 3372,3557 3499,3377 3599,3242 3646,3154 3646,3034 3644,2937 3641,2827
+Potsdamer Str. (Lichterfelde): schlechtes Kopfsteinpflaster, schmale asphaltierte Streifen	Q3 3193,3793 3372,3557
+Potsdamer Str. (Lichterfelde): schlechtes Kopfsteinpflaster, schmale asphaltierte Streifen	Q3 3372,3557 3499,3377 3599,3242 3646,3154 3646,3034 3644,2937 3641,2827
 Dessauerstr.: Asphalt	Q0 6711,2496 6651,2479 6459,2364 6331,2281 6225,2209 6196,2204
 Dessauerstr.: schlechtes Kopfsteinpflaster	Q3 6196,2204 6159,2176 6021,2071 5904,1992
 Geibelstr. (Lichtenrade): Kopfsteinpflaster	Q2 10143,-1026 10143,-987
@@ -16165,7 +16172,7 @@ Weydemeyerstr.: mäßiger Beton, Fugen	Q2 11716,12803 11809,12760 11933,12701 1196
 (Berolinastr. - Mollstr.): Beton/Verbundsteine/gepflastert	Q1 11609,12986 11656,13100 11681,13161
 (Lichtenberger Str.): Verbundsteine	Q1 12054,12903 12039,12675
 Barnimstr.: Beton	Q0 11561,13451 11608,13417 11652,13372 11785,13241
-Mollstr. [Wohngebiet]: Beton	Q0 11881,13147 11762,13207 11749,13215 11644,13266 11637,13282 11589,13305 11578,13310
+Mollstr. [Wohngebiet]: Beton	Q0 11881,13147 11762,13207 11749,13215 11639,13268 11643,13279 11589,13305 11578,13310
 (Erschließungsstr.): Beton	Q0 11608,13417 11652,13478 11667,13465
 (Verbindungsweg): Kleinsteinpflaster	Q1 11667,13465 11703,13426
 Weinstr.: Verbundsteinpflaster	Q1 11785,13241 11909,13387
