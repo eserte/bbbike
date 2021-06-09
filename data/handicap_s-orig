@@ -168,10 +168,11 @@ Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork;
 #: XXX wie lange bleibt die Fahrbahn gesperrt?
 #: by: https://twitter.com/VIZ_Berlin/status/1400822146331447298 (bis Mitte Juni 2021)
 #: source_id: 2147347162 (bis 11.6.2021)
+#: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2021-05-29
 #: next_check: 2021-06-11
-#: valid: -20210611
+# REMOVED --- #: valid: -20210611
 Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, bis zum 11.6.2021	q3::inwork 19803,1911 19766,1796
 # 
 ### Wedding ###
@@ -756,14 +757,16 @@ Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweich
 # REMOVED --- #: source_id: INKO_111447 --- #: source_id: LMS_1290313357 --- #: last_checked: 2013-04-20 --- #: next_check: 2013-06-30 (Ende: 1.7.2013) --- Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17171,16372 17220,16320 17271,16280 17383,16197
 # 
 ### Schöneberg ###
+# 
 #: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021)
 #: by: https://twitter.com/rbbabendschau/status/1392489796426162177
 #: source_id: 2147347186
 #: also_indoor: traffic
 #: XXX wann werden die Fahrbahn und die Radwege wieder freigegeben? bei rbb "bis auf Weiteres"
+#: priority: #A
 #: last_checked: 2021-05-14
 #: next_check: 2021-06-11
-#: valid: -20210612
+# REMOVED --- #: valid: -20210612
 Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
@@ -3580,6 +3583,7 @@ Heubudenbrücke: Fußgänger	q2 9017,17290 8982,17299 8973,17301
 (Stanzer Zeile - Mauerweg): schmal	q3 6175,372 6204,331
 Lange Str. (Friedrichshain): mehrere Bodenschwellen	q3 12002,12008 12212,11963
 Caligariplatz: Fußgänger, ggfs. schieben	q3 12121,16317 12097,16263
+#: XXX_prog BS zu beiden Seiten, ansonsten q3
 Gertrud-Hanna-Promenade: Fußgänger, Bordsteine	q4 8548,7384 8603,7452
 #: note: siehe auch gesperrt-orig-Eintrag
 Breslauer Platz/Lauterstr.: Fußgängerzone, Radfahrer frei	q3; 5810,7337 5817,7223
