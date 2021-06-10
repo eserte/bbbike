@@ -32775,4 +32775,31 @@ EOF
 	q4::inwork 12592,12472 12632,12630
 EOF
      },
+     { from  => 1623535200, # 2021-06-13 00:00
+       until => 1625263200, # 2021-07-03 00:00
+       text  => 'Kalckreuthstr.: Bauarbeiten. Fahrbahn gesperrt, voraussichtlich vom 14.6.2021 bis 2.7.2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1094397.php',
+       data  => <<EOF,
+	q4::inwork 6636,10492 6628,10318 6626,10155
+EOF
+     },
+     { from  => 1623535200, # 2021-06-13 00:00
+       until => 1624399199, # 2021-06-22 23:59
+       text  => 'Havemannstr.: Bauarbeiten zwischen Schorfheidestr. und Golliner Str., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 14. Juni 2021 bis 22. Juni 2021,',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1094141.php',
+       data  => <<EOF,
+	q4::inwork 21854,18192 22065,18087 22143,18047
+EOF
+     },
+     { from  => 1625004000, # 2021-06-30 00:00
+       until => 1633125599, # 2021-10-01 23:59
+       text  => 'Jörsstr.: Bauarbeiten zwischen Beatestr. und Theresenweg, voraussichtlich von Anfang Juli 2021 bis Anfang Oktober 2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1094021.php',
+       data  => <<EOF,
+	q4::inwork -1478,18407 -1358,18400
+EOF
+     },
     );

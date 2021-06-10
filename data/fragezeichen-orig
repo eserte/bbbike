@@ -892,7 +892,7 @@ zwischen Fürstenwalder Damm und Müggelseedamm (Charlotte-E-Pauly-Str.): Verbesse
 # 
 #: XXX Fh.10
 #: last_checked: 2020-09-15 (keine Brücke gesehen)
-#: check_frequency: 270d
+#: check_frequency: 360d
 Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant (800m), "Bau einer für Radfahrer nutzbaren Brücke im Zuge des Neuen Weges"	?::projected 23427,5349 23469,5340 23492,5334 23660,5307 23691,5368 23746,5276
 # REMOVED (ja) --- #: XXX Gr.3 --- Regattastr.: wird die Benutzungspflicht aufgehoben (auch Richtung Norden)?	?::projected 22328,2084 22378,1970 22388,1947 22421,1872 22448,1824 22455,1812 22549,1644 22570,1607 22655,1450
 # 
@@ -1583,8 +1583,10 @@ Neukirchstr.: Asphaltierung geplant	?::projected 12751,18401 12885,18329
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6512 ("Fertigstellung: 2019, Ausschreibung in Vorbereitung")
 #: by: https://api.fixmyberlin.de/api/projects/293
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1094021.php (Asphaltierung der Fahrbahn, ab Anfang Juli 2021 für ca. drei Monate)
 #: last_checked: 2020-06-13
-#: check_frequency: 180d
+# REMOVED --- #: check_frequency: 180d
+#: next_check: 2021-10-01
 Jörsstr.: Asphaltierung geplant	?::projected -1478,18407 -1358,18400
 # 
 #: by: https://api.fixmyberlin.de/api/projects/133
@@ -1705,7 +1707,7 @@ Königsweg: Asphaltierung geplant	?::projected -298,2577 -197,2634 -155,2658
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-80/7-80-blatt-2.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf (erst nach Baumaßnahmen Dresdner Bahn 2025)
 #: XXX außerdem: gibt es mittlerweile eine (provisorische) Beleuchtung?
-#: osm_watch: way id="150301193" version="10"
+#: osm_watch: way id="150301193" version="11"
 #: last_checked: 2021-05-30
 #: check_frequency: 360d
 #: next_check: 2025-04-01
@@ -6945,9 +6947,11 @@ Eisenhutweg: Wohngebiet mit neuen Privatstraßen (verkehrsberuhigter Bereich) ent
 #: osm_watch: way id="412161707" version="4" brb
 # REMOVED --- #: osm_watch: way id="812663298" version="2" brb
 #: osm_watch: way id="412161703" version="5" brb
-#: osm_watch: way id="812663297" version="3" brb
+#: osm_watch: way id="812663297" version="4" brb
+#: XXX laut osm ist mittlerweile zumindest die Clara-Immerwahr-Str. fertig
 #: last_checked: 2021-01-16 (osm)
 #: check_frequency: 180d
+#: next_check: 2021-06-10
 nördlich der Feldmark (Golm): weitere Straßen geplant	?::projected -18587,697 -18262,679 -18254,344 -18629,247 -18587,697
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bebauungsplan.715578.php
@@ -7116,7 +7120,7 @@ Rote Kaserne West: neue Straßen	?::projected -13257,1337 -13239,1179 -13375,1330
 #: by: https://baucam159.it-wms.com/ (webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/11058-kleinere-projekte-spandau-reinickendorf/?postID=679789#post679789
 #: by: https://www.buwog.de/de/projekt/seed
-#: osm_watch: way id="125758273" version="10"
+#: osm_watch: way id="125758273" version="11"
 # REMOVED (realisiert) --- wird hier die Kleingartenanlage aufgehoben?
 #: XXX Bebauungsplan 5-107 in Spandau
 #: last_checked: 2021-05-24
@@ -7316,6 +7320,12 @@ Arnimstr.: hier soll eine Grünfläche entstehen	?::projected 18472,16844 18267,17
 #: osm_watch: way id="44606576" version="17"
 #: next_check: 2024-06-01
 Bebauungsplan XV-11 (Hasselwerderstr....): Planstraßen sowie ein Uferweg werden entstehen	?::projected 17968,5904 18213,5783
+# 
+#: by: https://www.berliner-woche.de/heinersdorf/c-bauen/im-sommer-startet-der-staedtebauliche-wettbewerb_a312567
+#: XXX und was wird mit dem südlichen Abschnitt der Hödurstr.?
+#: last_checked: 2021-06-10 (bw)
+#: check_frequency: 360d
+Heinersdorf: neue Straßenverbindung, Verlegung des Durchgangverkehrs	?::projected 12566,18275 12717,18322 12847,18284 12885,18329
 # 
 #: ignore ^^^
 #: section ^^^

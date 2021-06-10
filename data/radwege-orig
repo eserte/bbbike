@@ -6820,20 +6820,21 @@ provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9158
 #: source_id: 2147345290 (bis Ende Januar 2020, laut fritz bis 24.1.2020) (inaktiv)
 #: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020) (inaktiv)
 #: source_id: 2147345931 (bis 31.3.2021) (inaktiv)
-#: source_id: 2147345931 (bis 5.5.2021) (laut rbb bis 11.6.2021)
+#: source_id: 2147345931 (bis 5.5.2021) (inaktiv)
+#: note: laut rbb Einspurigkeit zwischen Prinzenstr. und Böcklerstr. bis 30.7.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="20"
 #: osm_watch: way id="335487059" version="15"
 #: last_checked: 2021-05-28 vvv
-#: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2021-04-12 vvv
+#: check_frequency: 21d vvv
+#: next_check: 2021-07-30 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4; 10605,10312 10363,10303 10122,10294
 provisorisch geschützter Radstreifen	RW4; 10122,10294 10363,10303 10605,10312
 provisorisch geschützter Radstreifen	RW4; 10122,10294 9948,10280 9873,10285
 provisorisch geschützter Radstreifen	RW4; 9865,10227 9948,10280 10122,10294
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -6887,7 +6888,7 @@ Radspur hinter parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-wird-verstetigt_a304893
 #: by: https://twitter.com/SenUVKBerlin/status/1387045914317971459
 #: source_id: 2147346996 (bis 21.5.2021)
-#: osm_watch: way id="34057952" version="35"
+#: osm_watch: way id="34057952" version="36"
 #: last_checked: 2021-05-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-06-23 vvv

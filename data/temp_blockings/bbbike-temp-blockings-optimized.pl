@@ -3793,6 +3793,36 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Koppenstr.: zwischen Palisadenstr. und Karl-Marx-Allee Fahrbahn wegen Kranarbeiten gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 6636,10492 6628,10318 6626,10155
+',
+         'from' => 1623535200,
+         'id' => 3391,
+         'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1094397.php',
+         'text' => 'Kalckreuthstr.: Bauarbeiten. Fahrbahn gesperrt, voraussichtlich vom 14.6.2021 bis 2.7.2021',
+         'type' => 'handicap',
+         'until' => 1625263200
+       },
+       {
+         'data' => '	q4::inwork 21854,18192 22065,18087 22143,18047
+',
+         'from' => 1623535200,
+         'id' => 3392,
+         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1094141.php',
+         'text' => 'Havemannstr.: Bauarbeiten zwischen Schorfheidestr. und Golliner Str., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 14. Juni 2021 bis 22. Juni 2021,',
+         'type' => 'handicap',
+         'until' => 1624399199
+       },
+       {
+         'data' => '	q4::inwork -1478,18407 -1358,18400
+',
+         'from' => 1625004000,
+         'id' => 3393,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1094021.php',
+         'text' => 'Jörsstr.: Bauarbeiten zwischen Beatestr. und Theresenweg, voraussichtlich von Anfang Juli 2021 bis Anfang Oktober 2021',
+         'type' => 'handicap',
+         'until' => 1633125599
        }
      
 );
