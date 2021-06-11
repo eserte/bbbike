@@ -37,6 +37,9 @@
 neu asphaltiert	RW1; 9227,8890 9226,8967
 geschützter Radstreifen, Grünmarkierung	RW3; 9226,8967 9225,9038 9224,9053
 neu asphaltiert	RW1; 9224,9053 9225,9111 9232,9187 9248,9350
+#: by: https://www.infravelo.de/projekt/mehringdamm/ (26.06.2021 bis 27.07.2021)
+#: XXX Grünmarkierung geplant
+#: next_check: 2021-07-27
 	RW3; 9248,9350 9232,9187 9225,9111 9224,9053 9225,9038 9226,8967 9227,8890
 asphaltiert	RW1; 9227,8890 9229,8785
 	RW1;RW1 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014 9416,10196
@@ -1571,7 +1574,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2021-06-05 vvv
+#: last_checked: 2021-06-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -2072,10 +2075,16 @@ bei der Einfahrt aus der östlichen Oranienstr. kurzer Abschnitt mit Zeichen 237 
 	RW3; 12092,11475 12143,11574
 Radspur zwischen Fahrspuren	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
+#: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) vvv
+#: XXX Verbreiterung und Protektion vvv
+#: next_check: 2022-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
 	RW4;RW3 12295,12197 12339,12436
 	RW3;RW4 12339,12436 12352,12509
+#: next_check ^^^
+#: XXX ^^^
+#: by: ^^^
 	RW4;RW4 12352,12509 12355,12541 12359,12592
 	RW3;RW3 12359,12592 12384,12718
 	RW3; 11764,12001 11916,11846
@@ -2151,7 +2160,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Frühjahr 2021)
 #: source_id: 2147346610
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-06-06 vvv
+#: last_checked: 2021-06-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-09-30 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
@@ -3699,7 +3708,7 @@ Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337
 #: confirmed_by: srt
 #: also_indoor: traffic (G) vvv
 #: source_id: 2147346053 vvv
-#: last_checked: 2021-04-03 vvv
+#: last_checked: 2021-06-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 	RW3; 17736,5441 17886,5587
@@ -4231,7 +4240,7 @@ Gehweg für Radfahrer frei	RW1; 9073,20606 9027,20603 8904,20596
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/pop-up-radweg-bleibt-erhalten_a297530
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="18"
-#: last_checked: 2021-04-03
+#: last_checked: 2021-06-11
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2020-12-31
 provisorisch geschützter Radstreifen	RW4; 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705
@@ -5042,7 +5051,7 @@ Radspur zwischen Fahrspuren	RW3; 11139,13008 11226,12945
 	RW6;RW6 17470,4998 17463,4964 17428,4792
 asphaltiert	RW1;RW1 17648,5338 17705,5223 17726,5166 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667
 	RW0; 17648,5338 17736,5441
-asphaltiert	RW; 17736,5441 17648,5338
+asphaltiert	RW1; 17736,5441 17648,5338
 asphaltiert	RW1;RW1 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642
 asphaltiert	RW1;RW2 18445,2642 18338,2669
 # 
@@ -5843,7 +5852,7 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 #: source_id: 2147347210 (25.5.2021 bis 16.7.2021)
 #: also_indoor: traffic
 # REMOVED --- #: priority: #D
-#: last_checked: 2021-05-29
+#: last_checked: 2021-06-11
 #: check_frequency: 90d
 #: next_check: 2021-07-16
 	RW3;RW3 18245,5551 18370,5511 18680,5413 18955,5320 19037,5316 19186,5310 19328,5304
@@ -6499,7 +6508,6 @@ Verbundsteinpflaster	RW2; 23017,12177 23100,12269
 	RW7;RW7 23675,5823 23755,5850 23874,5876
 	RW6;RW6 -4108,17776 -3953,17941
 	RW6;RW6 -3655,18177 -3847,17978 -3914,17913 -3953,17941 -4002,17993 -4038,18030 -3898,18187
-	RW6;RW6 18738,9467 18754,9584 18772,9694
 Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 20756,14486
 	RW6;RW6 19650,9413 19669,9418 19692,9416 19743,9412 19780,9409 19824,9405
 	RW6;RW6 19692,9416 19688,9365 19680,9291 19679,9214 19728,9214
@@ -6613,7 +6621,7 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26300.pdf (Markierung wird im Zuge der Gleisbauarbeiten dauerhaft gemacht)
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 #: osm_watch: way id="4566067" version="23"
-#: last_checked: 2021-05-16 vvv
+#: last_checked: 2021-06-11 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 # REMOVED --- #: osm_watch: way id="329510232" version="9"

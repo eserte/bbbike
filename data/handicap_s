@@ -10,7 +10,7 @@ Pettenkoferstr.: Bauarbeiten an der Kreuzung Eldenaer Str., Sperrung der Fahrbah
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork; 14242,9448 14185,9509 14089,9610
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
-Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, bis zum 11.6.2021	q3::inwork 19803,1911 19766,1796
+Köpenicker Str.: Fahrbahn zwischen Semmelweisstr. und Rudower Str. gesperrt, voraussichtlich bis 30.6.2021	q3::inwork 19803,1911 19766,1796
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -43,6 +43,8 @@ Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12392,8724 12330,8636
 Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
+S-Bhf. Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
+S-Bhf. Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16878,9875 16900,9861 16925,9852
 Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweichen	q3::inwork 15055,11505 15126,11474 15162,11458
 Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126
 Dennewitzstr.: Einbahnstraßenregelung, gemeinsamer Geh- und Radweg	q3::inwork; 8159,10430 8058,10306
@@ -1754,7 +1756,9 @@ Johannesstift: Krankenhausgelände, Aufpflasterungen	q1 -3953,17941 -4108,17776 -
 (Hohenzollernring - Flankenschanze): abgeschlossenes Tor, Ausweichen auf Gehweg	q2 -3824,14794 -3799,14806 -3776,14815
 (Parkweg Eiswerder): einige Fußgänger	q1 -2427,15493 -2423,15540 -2427,15575 -2448,15612 -2439,15660 -2179,15800 -2150,15740
 (Gundelfinger Str. - Römerweg): Wohnanlage, Fußgänger	q2 18735,9421 18738,9467 18754,9584 18772,9694 18781,9744
-(Aristotelessteig - Treskowallee): Wohnanlage, Fußgänger	q2 18715,9589 18754,9584 18835,9572 18865,9608
+(Aristotelessteig - Treskowallee): Wohnanlage, Fußgänger	q2 18715,9589 18754,9584 18811,9576 18835,9572
+(Aristotelessteig - Treskowallee): Wohnanlage, Parkplatz	q2 18835,9572 18865,9608
+(Aristotelessteig - Hönower Str.): Wohnanlage, Parkplatz	q2 18835,9572 18837,9538 18846,9532
 (Christianstr. - Christophstr.): enger Pfad	q3 17964,16677 17952,16675 17925,16695
 (Birkbuschstr. - Berlinickestr.): Fußgänger	q2 4796,5129 4827,5140 4829,5173
 Mariannenplatz: einige Fußgänger, insbesondere vor dem Bethanienhaus	q2 11804,10846 11805,10858 11805,10899 11819,10942 11854,10972
@@ -3057,6 +3061,7 @@ Ludolfinger Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp;
 Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17729,10331 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
+Hönower Str.: temporäre Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 18735,9421 18765,9426 18846,9532
 Gotlindestr.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 16720,12614 16859,12613
 Rudi-Arndt-Str.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 13449,13892 13359,13832
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10472,14632 10320,14608

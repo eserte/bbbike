@@ -971,7 +971,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-06-08
+#: last_checked: 2021-06-11
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1077,7 +1077,7 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster, daneben wasserg
 Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218,6571
 #: by: https://api.fixmyberlin.de/api/projects/334 (war früher fälschlicherweise zur Bismarckstr. in Steglitz zugeordnet)
 #: by: http://www.infravelo.de/projekt/bismarckstrasse/ (ursprünglicher Link) (Asphaltierung, in Planung, 4. Quartal 2024 - 4. Quartal 2025)
-#: by: http://www.infravelo.de/projekt/bismarckstrasse-2/
+#: by: http://www.infravelo.de/projekt/bismarckstrasse-2/ (mittlerweile gelöscht)
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
 #: osm_watch: way id="4810830" version="31"
 #: last_checked: 2021-04-28
@@ -3888,7 +3888,7 @@ Puderstr.: Asphalt	Q0 14614,9052 14567,8966 14525,8894 14492,8853 14363,8738
 Upstallweg (Lichtenberg): Beton	Q0 17946,10344 17954,10367 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 # REMOVED (teilweise) --- #: XXX hat sich hier die Qualität durch den Wohnungsneubau verbessert?
 Hönower Str.: Asphalt	Q0 18660,9410 18735,9421
-Hönower Str.: Kopfsteinpflaster	Q3 18735,9421 18765,9426 18875,9570
+Hönower Str.: Kopfsteinpflaster	Q3 18735,9421 18765,9426 18846,9532 18875,9570
 Hönower Str.: Asphalt	Q0 18660,9410 18626,9406
 Hönower Str.: Asphalt mit einigen Schäden	Q1+ 18626,9406 18545,9395 18490,9387
 (Adlergestell - Langer See): Schotterstraße	Q2+ 26698,-2322 26846,-2176 26905,-2116
@@ -11433,7 +11433,8 @@ Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
 # REMOVED (durch die Umlegung der Fahrspur) --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX nach den Bauarbeiten vermutlich bessere Qualität --- #: last_checked: 2019-07-20 --- #: next_check: 2020-05-01 --- Treskowallee: Asphalt mit Schäden	Q1+; 18704,8427 18718,8583
 (Gundelfinger Str. - Römerweg): Verbundsteinpflaster	Q1+ 18735,9421 18738,9467 18754,9584 18772,9694
 (Gundelfinger Str. - Römerweg): Asphalt	Q0 18772,9694 18781,9744
-(Aristotelessteig - Treskowallee): Verbundsteinpflaster	Q1+ 18715,9589 18754,9584 18835,9572 18865,9608
+(Aristotelessteig - Treskowallee): Verbundsteinpflaster	Q1+ 18715,9589 18754,9584 18811,9576 18835,9572 18865,9608
+(Aristotelessteig - Hönower Str.): Verbundsteinpflaster	Q1+ 18835,9572 18837,9538 18846,9532
 Am Herzbergteich: Verbundsteinpflaster	Q1 17945,13493 17941,13564 17877,13562
 Dorfstr. (Wartenberg) [Nebenstraße]: Beton mit kurzem Kopfsteinpflasterabschnitt	Q1- 17799,19000 17824,18963
 Dorfstr. (Wartenberg) [Nebenstraße]: Beton	Q0- 17824,18963 17874,18936 17958,18905 17980,18947
@@ -21722,6 +21723,7 @@ Schloßstr. (Hermsdorf): Asphalt	Q0 3596,23581 3552,23620 3475,23757
 #: by: ^^^
 # 
 #: by: Jörg Weixelbraun: vvv
+#: confirmed_by: srt
 Pilotenstr.: Asphalt	Q0 17951,4785 17868,4742 17820,4729
 #: confirmed_by: srt (add added "uneben")
 Pilotenstr.: kleinteiliges Kopfsteinpflaster, uneben	Q2 18117,4895 18031,4831 17951,4785

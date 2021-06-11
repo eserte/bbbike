@@ -2461,7 +2461,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
-#: last_checked: 2021-04-14 (mapillary)
+#: last_checked: 2021-04-15 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2021-08-13
 	q4::inwork 13508,15912 13312,16027 13189,16089 12943,16214 12859,16255 12797,16285 12725,16321 12564,16399 12399,16479 12189,16578
@@ -2782,7 +2782,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="1"
 #: osm_watch: way id="934995901" version="1"
-#: last_checked: 2021-06-08
+#: last_checked: 2021-06-11
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2996,7 +2996,26 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1625065200
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_24_2053_2104_online.pdf
+#: source_id: 2147346954 (inaktiv)
+#: source_id: 2147346955 (inaktiv)
+#: source_id: 2147346956 (inaktiv)
+#: source_id: 2147346957 (inaktiv)
+	2::temp 14058,12709 13991,12522 14091,12494 14133,12482 14266,12446
+	3::temp 13761,12578 13991,12522 13905,12374
+	3::temp 13905,12374 13991,12522 13761,12578
+# REMOVED ---	2::temp 14266,12446 14133,12482 14091,12494 13991,12522 13905,12374
+# REMOVED ---	2::temp 13761,12578 13991,12522 14058,12709 14073,12755 14089,12805 14096,12827
+# REMOVED ---	2::temp 14058,12709 14188,12664 14319,12629
+# REMOVED ---	2::temp 13911,12692 14058,12709
+',
+         'from' => 1623762000,
+         'id' => 3286,
+         'text' => 'Rigaer Str./Liebigstr.: Sperrungen wegen eines Polizeieinsatzes, eventuell ist auch der Radverkehr betroffen, vom 16.06.2021 15:00 Uhr bis 18.06.2021',
+         'type' => 'gesperrt',
+         'until' => 1624053599
+       },
        undef,
        undef,
        undef,
@@ -3235,7 +3254,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-06-05
+#: last_checked: 2021-06-11
 #: check_frequency: 30d
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2021-05-31
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3492,7 +3511,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #; also_indoor: traffic (G)
 #: priority: #B
 #: also_indoor: traffic (G)
-#: last_checked: 2021-06-02
+#: last_checked: 2021-06-11
 #: check_frequency: 14d
 	q4::inwork 15870,10938 15674,10851
 ',
@@ -3689,12 +3708,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '	q3::inwork 18080,5376 18245,5551 18370,5511 18680,5413 18955,5320
+         'data' => '# REMOVED (hier mittlerweile offen) ---	q3::inwork 18080,5376 18245,5551
+	q3::inwork 18245,5551 18370,5511 18680,5413 18955,5320
 ',
          'from' => 1621843200,
          'id' => 3383,
          'source_id' => '2147347210',
-         'text' => 'Schnellerstr. und Fennstr.: Bauarbeiten, Fahrbahn teilweise gesperrt, Radfahrer müssen den Bürgersteig benutzen, vom 25.05.2021 10:00 Uhr bis 16.07.2021 17:00 Uhr',
+         'text' => 'Schnellerstr.: Bauarbeiten, Fahrbahn teilweise gesperrt, Radfahrer müssen den Bürgersteig benutzen, vom 25.05.2021 10:00 Uhr bis 16.07.2021 17:00 Uhr',
          'type' => 'handicap',
          'until' => 1626447600
        },
@@ -3804,16 +3824,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1625263200
        },
-       {
-         'data' => '	q4::inwork 21854,18192 22065,18087 22143,18047
-',
-         'from' => 1623535200,
-         'id' => 3392,
-         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1094141.php',
-         'text' => 'Havemannstr.: Bauarbeiten zwischen Schorfheidestr. und Golliner Str., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 14. Juni 2021 bis 22. Juni 2021,',
-         'type' => 'handicap',
-         'until' => 1624399199
-       },
+       undef,
        {
          'data' => '	q4::inwork -1478,18407 -1358,18400
 ',

@@ -3169,6 +3169,7 @@ Schranke	BNP:2:-157:trailer=5 19617,6208
 Schranke	BNP:5:-109:trailer=15 22855,4348
 Dr‰ngelgitter	BNP:3:-193:trailer=10 32295,6272
 Dr‰ngelgitter	BNP:3:-187:trailer=10 32418,6303
+Hˆnower Str.: tempor‰re Einbahnstraﬂe	1s:inwork 18735,9421 18765,9426 18846,9532
 Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Br¸cke, komplett gesperrt	2::inwork -196,16060 -203,16064 -205,16086 -224,16095 -265,16111
 Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, teilweise lange Umwege ¸ber die Gehwege mˆglich	2::inwork 16227,12280 16159,12301 16056,12317
 Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, teilweise lange Umwege ¸ber die Gehwege mˆglich	2::inwork 16144,12388 16159,12301 16158,12191
@@ -3570,8 +3571,8 @@ Weg entlang der Bahnstrecke -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18445,
 Weg entlang der Bahnstrecke -> Richard-Kolkwitz-Weg: Straﬂenbahntrasse	3::igndisp 18445,9887 18703,9997 18708,10000
 Richard-Kolkwitz-Weg -> Weg entlang der Bahnstrecke: Straﬂenbahntrasse	3::igndisp 18708,10000 18703,9997 18445,9887
 Straﬂenbahn	3nocross::ignrte 18878,9517 18875,9570 18865,9608 18823,9708
-Hˆnower Str. -> Treskowallee: Straﬂenbahn	3::igndisp 18765,9426 18875,9570 18865,9608
-Treskowallee -> Hˆnower Str.: Straﬂenbahn	3::igndisp 18878,9517 18875,9570 18765,9426
+Hˆnower Str. -> Treskowallee: Straﬂenbahn	3::igndisp 18846,9532 18875,9570 18865,9608
+Treskowallee -> Hˆnower Str.: Straﬂenbahn	3::igndisp 18878,9517 18875,9570 18846,9532
 Treskowallee -> Aristotelesst.: Straﬂenbahn	3::igndisp 18875,9570 18865,9608 18835,9572
 Treskowallee -> Rheinpfalzallee: Straﬂenbahn	3::igndisp 18823,9708 18865,9608 18931,9629
 Aristotelesst. -> Treskowallee: Straﬂenbahn	3::igndisp 18835,9572 18865,9608 18823,9708

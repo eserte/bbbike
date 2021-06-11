@@ -5692,7 +5692,7 @@ Sterndamm	H 17648,5338 17705,5223
 #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2
 #: confirmed_by: srt
 #: XXX provisorische Verbindung, asphaltiert
-#: last_checked: 2021-06-06 (krickstadt)
+#: last_checked: 2021-06-11
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 Sterndamm [Nebenfahrbahn]	NN 17648,5338 17697,5347
@@ -5725,7 +5725,7 @@ Segelfliegerdamm	H 17490,3630 17522,3653 17552,3675 17585,3745 17592,3901 17607,
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036590665323/590665323/00106020/20-Anlagen/04/B0932SB.pdf (Ablehnung)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_42_4657_4844_online.pdf (Widmung von Straßenland)
 #: osm_watch: way id="40571026" version="10"
-#: last_checked: 2020-06-14 (mapillary)
+#: last_checked: 2021-06-11
 #: check_frequency: 360d
 Segelfliegerdamm [Stichstraße]	N 17592,3901 17782,3880
 Alter Segelfliegerdamm	N 17585,3745 17471,3735
@@ -6456,7 +6456,7 @@ Hönower Wiesenweg	N 17856,8162 17793,8225 17753,8290 17704,8327 17620,8366 17554
 Sangeallee	NN 18070,9022 18088,9049 18134,9080
 Sangeallee	N 18134,9080 18247,9158 18319,9218 18459,9354 18490,9387
 Riastr.	N 18221,8978 18247,9158
-Hönower Str. (Karlshorst)	N 18875,9570 18765,9426 18735,9421 18660,9410 18626,9406 18545,9395 18490,9387 18377,9366
+Hönower Str. (Karlshorst)	N 18875,9570 18846,9532 18765,9426 18735,9421 18660,9410 18626,9406 18545,9395 18490,9387 18377,9366
 # REMOVED (wahrscheinlich bleibt es so) --- #: XXX bleibt der Straßenname hier noch "Hönower Str." oder wird das auch der Sokratesweg werden? --- #: last_checked: 2012-12-30 --- #: next_check: 2013-03-01
 (Hönower Str.)	N 18490,9387 18497,9459
 #: note: Privatstraße vvv
@@ -14708,7 +14708,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="15"
-#: last_checked: 2021-05-29
+#: last_checked: 2021-06-11
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15085,7 +15085,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="17"
-#: last_checked: 2021-05-29
+#: last_checked: 2021-06-11
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -16566,8 +16566,16 @@ Rietzestr.	N 12693,15225 12466,15359
 (Horterweg - Römerweg)	N 19003,9800 18994,9707
 Römerweg	N 18421,9764 18452,9755 18685,9719 18687,9736 18781,9744 18807,9746
 Römerweg	N 18823,9708 18994,9707 19042,9708 19141,9709 19236,9710 19450,9728 19459,9842
-(Gundelfinger Str. - Römerweg)	NN 18735,9421 18738,9467 18754,9584 18772,9694 18781,9744
-(Aristotelessteig - Treskowallee)	NN 18715,9589 18754,9584 18835,9572 18865,9608
+#: osm.highway: service
+(Gundelfinger Str. - Römerweg)	N 18735,9421 18738,9467
+(Gundelfinger Str. - Römerweg)	NN 18738,9467 18754,9584 18772,9694
+#: osm.highway: service
+(Gundelfinger Str. - Römerweg)	NN 18772,9694 18781,9744
+(Aristotelessteig - Treskowallee)	NN 18715,9589 18754,9584 18811,9576
+#: osm.highway: service
+(Aristotelessteig - Treskowallee)	N 18811,9576 18835,9572 18865,9608
+#: osm.highway: service
+(Aristotelessteig - Hönower Str.)	N 18835,9572 18837,9538 18846,9532
 Beerfelder Str.	N 19842,9895 19819,10090 19810,10155
 Pirolstr. (Karlshorst)	N 19688,10094 19789,10091
 Pirolstr. (Karlshorst)	NN 19789,10091 19819,10090
