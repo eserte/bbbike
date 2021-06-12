@@ -280,16 +280,7 @@ sub read_from_fh {
     my $use_local_directives = $args{UseLocalDirectives};
     my $callback = $args{Callback};
     my $return_seek_position = $args{ReturnSeekPosition};
-    my $has_tie_ixhash = eval {
-	require Tie::IxHash;
-	# See http://rt.cpan.org/Ticket/Display.html?id=39619
-	if (!defined &Tie::IxHash::SCALAR) {
-	    *Tie::IxHash::SCALAR = sub {
-		scalar @{ $_[0]->[1] };
-	    };
-	}
-	1;
-    };
+    my $has_tie_ixhash = _has_tie_ixhash();
 
     use constant DIR_STAGE_LOCAL => 0;
     use constant DIR_STAGE_GLOBAL => 1;
@@ -1615,6 +1606,9 @@ sub get_global_directive {
 
 sub set_global_directive {
     my($self, $key, @val) = @_;
+    if (!$self->{GlobalDirectives} && _has_tie_ixhash()) {
+	tie %{ $self->{GlobalDirectives} }, 'Tie::IxHash';
+    }
     $self->{GlobalDirectives}->{$key} = [@val];
 }
 
@@ -1622,6 +1616,9 @@ sub set_global_directive {
 # use Storable::dclone before!
 sub set_global_directives {
     my($self, $global_directives) = @_;
+    if (!$self->{GlobalDirectives} && _has_tie_ixhash()) {
+	tie %{ $self->{GlobalDirectives} }, 'Tie::IxHash';
+    }
     $self->{GlobalDirectives} = $global_directives;
 }
 
@@ -1647,6 +1644,25 @@ sub warn_or_die {
 	Carp::croak($msg);
     } else {
 	Carp::carp($msg);
+    }
+}
+
+{
+    my $has_tie_ixhash;
+    sub _has_tie_ixhash {
+	if (!defined $has_tie_ixhash) {
+	    $has_tie_ixhash = eval {
+		require Tie::IxHash;
+		# See http://rt.cpan.org/Ticket/Display.html?id=39619
+		if (!defined &Tie::IxHash::SCALAR) {
+		    *Tie::IxHash::SCALAR = sub {
+			scalar @{ $_[0]->[1] };
+		    };
+		}
+		1;
+	    };
+	}
+	$has_tie_ixhash;
     }
 }
 
