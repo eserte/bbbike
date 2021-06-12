@@ -60,9 +60,11 @@ sub geojsonstring2bbd {
     } else {
 	$self->set_global_directive(map => 'polar');
     }
+    $self->set_global_directive(encoding => 'utf-8');
     my $namecb = $args{'namecb'} || sub {
 	my $feature = shift;
 	my $name = $feature->{properties}->{name};
+	$name = $feature->{name} if !defined $name;
 	$name = '' if !defined $name;
 	$name;
     };
@@ -74,7 +76,7 @@ sub geojsonstring2bbd {
     };
     my $dircb = $args{'dircb'};
 
-    my $data = JSON::XS->new->decode($string);
+    my $data = JSON::XS->new->utf8->decode($string);
 
     if (!$self->{Data}) {
 	$self->{Data} = [];

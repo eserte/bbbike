@@ -148,6 +148,7 @@ EOF
 	    
 	my $expected_bbd = <<EOF;
 #: map: polar
+#: encoding: utf-8
 #:
 #: url: http://www.example.com/Point
 #: note: A note about Point
@@ -386,3 +387,33 @@ EOF
     is_deeply $s_geojson->data, $expected_data, 'empty geojson';
 }
 
+{
+    # "name" in toplevel object used as fallback
+    # utf8 handled correctly
+    my $example_geojson = <<"EOF";
+{ "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "name" : "Point \342\202\254", "geometry": { "type": "Point", "coordinates": [100.0, 0.0] } }
+  ]
+}
+EOF
+    {
+	my $expected_data = 
+	    [
+	     "Point \x{20ac}\tX 100,0\n",
+	    ];
+	my $s_geojson = Strassen::GeoJSON->new();
+	$s_geojson->geojsonstring2bbd($example_geojson);
+	is_deeply $s_geojson->data, $expected_data, 'geojson with fallback name and utf-8';
+
+	my($tmpfh,$tmpfile) = tempfile(SUFFIX => '.geojson', UNLINK => 1);
+	print $tmpfh $example_geojson;
+	close $tmpfh or die "Error while writing to $tmpfile: $!";
+
+	my $s_file = Strassen->new($tmpfile);
+	is_deeply $s_file->data, $expected_data, 'geojson via Strassen->new';
+
+	my $s_file2 = Strassen::GeoJSON->new($tmpfile);
+	is_deeply $s_file2->data, $expected_data, 'geojson via Strassen::GeoJSON->new';
+    }
+}
