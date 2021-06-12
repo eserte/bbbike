@@ -10,9 +10,11 @@
 # 
 ### Friedrichshain ###
 # 
-#: also_indoor: traffic (G)
-#: XXX Wann sind die Bauarbeiten beendet?
+#: also_indoor: traffic (G,H)
+#: XXX Wann sind die Bauarbeiten beendet? --- Parkverbotsschilder bis zum 20.6.2021
 #: last_checked: 2021-05-17
+#: next_check: 2021-06-20
+#: valid: -20210620
 Pettenkoferstr.: Bauarbeiten an der Kreuzung Eldenaer Str., Sperrung der Fahrbahn	q3::inwork 14858,12775 14836,12826
 # 
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: RUEDERSDORFER-2016 --- #: osm_watch: way id="472360197" version="1" --- #: last_checked: 2017-04-12 --- #: check_frequency: 7d --- Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13161,11795 13066,11854# 
@@ -387,7 +389,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
 #: priority: #A
-#: last_checked: 2021-06-08
+#: last_checked: 2021-06-10 (daf)
 #: check_frequency: 14d
 Schinkelplatz: Fahrbahn wird neu gemacht	q4::inwork 9984,12426 9990,12404 9996,12372
 # 
@@ -3610,6 +3612,7 @@ Breslauer Platz/Lauterstr.: Fußgängerzone, Radfahrer frei	q3; 5810,7337 5817,722
 #: note: Stadtmobiliar auf den Fahrbahn (Bänke, Fahrradständer)
 Krautstr.: Fußgängerzone, Radfahrer frei	q3 12002,12008 12021,12066
 Mittelheide - S-Bhf. Hirschgarten: schmal, einige Fußgänger	q2 24089,6144 24060,6059 23951,6063
+Waldeyerstr.: Fußgänger, Radfahrer frei	q2 15003,12241 15058,12329
 # 
 ######################### User Contributions #################################
 # 
