@@ -240,16 +240,16 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/volt-berlin-baufeld-e3a.312/page-8#post-14027
 #: XXX Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straße, Fahrbahn ist noch abgesperrt
-#: last_checked: 2021-06-03
+#: last_checked: 2021-06-13
 #: check_frequency: 90d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-06-06
+#: last_checked: 2021-06-13
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
-#: last_checked: 2021-04-20
+#: last_checked: 2021-06-13
 #: check_frequency: 60d
 (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10953,12638 10772,12515
 # 
@@ -780,7 +780,7 @@ Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, 
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2021-05-24 vvv
+#: last_checked: 2021-06-13 vvv
 # REMOVED (hier kaum noch Einschränkungen) --- Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
 Dennewitzstr.: Einbahnstraßenregelung, gemeinsamer Geh- und Radweg	q3::inwork; 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306

@@ -59,7 +59,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021, Neubau Radweg)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausführungsplanung)
 #: source_id: 2147343740
-#: last_checked: 2021-06-04
+#: last_checked: 2021-06-13
 #: next_check: 2021-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
 # 
@@ -196,7 +196,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: source_id: 2147342276 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_120802_LMS-BR_72 (inaktiv)
 #: source_id: 2147343746 (bis Mitte April 2019) (inaktiv)
-#: last_checked: 2021-05-18
+#: last_checked: 2021-06-13
 #: check_frequency: 21d
 #: next_check: 2021-06-30
 Hasenheide: hier werden geschützte Radspuren erstellt, vermutlich erst nach den Hochbauarbeiten	?::projected; 10951,9216 11108,9187 11136,9183
@@ -2470,7 +2470,7 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="21"
-#: last_checked: 2021-05-14
+#: last_checked: 2021-06-13
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12049,9781 12053,9793
 # 
@@ -3414,7 +3414,7 @@ Bölschestr.: Prüfung einer Fahrradstraße	? 13188,9134 13298,9252 13357,9313 1348
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136878785470/878785470/00337566/66-Anlagen/01/DS1893_VzK_Maria-von-Maltzan-Platz.pdf (wirksam am 25. März 2021)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_12_0821_0896_online.pdf (Benennung)
 #: XXX ggfs. auch die Platzfläche als solche einzeichnen
-#: last_checked: 2021-05-14 (keine Schilder zu sehen)
+#: last_checked: 2021-06-13 (keine Schilder zu sehen)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-03-25
 Naunynstr.: Benennung einer Platzfläche in "Maria-von-Maltzan-Platz"	? 11365,10791 11403,10782
@@ -3495,7 +3495,7 @@ Oberspreestr./Bärenlauchstr.: Zebrastreifen soll durch eine Bedarfsampel ersetzt
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Belziger Str.: Markierungsarbeiten im Frühjahr 2021 beauftragt)
 #: by: https://www.rad-ts.de/wichtige-radverbindung-als-fahrradstrasse-ausweisen/ (detaillierte Pläne)
-#: last_checked: 2021-05-14 vvv
+#: last_checked: 2021-06-13 vvv
 #: check_frequency: 60d vvv
 # REMOVED (nicht mehr schaffbar) --- #: next_check: 2020-12-31 vvv
 Freiherr-vom-Stein-Str.: Fahrradstraße geplant	?::projected 5913,8415 5995,8477 6123,8546 6230,8602 6313,8638 6454,8653
@@ -4131,9 +4131,10 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9981 (Einwohnerfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10019
 #: osm_watch: way id="128266207" version="13"
-#: last_checked: 2021-05-30 vvv
+#: last_checked: 2021-06-13 vvv
 Lausitzer Platz: entsteht hier eine Fußgängerzone?	? 12212,10440 12197,10494 12172,10585
 #: osm_watch: way id="188865510" version="8"
+#: note: hier mittlerweile mit einem provisorischen "Verbot für Fahrzeuge aller Art"-Schild
 Lausitzer Platz: entsteht hier eine Fußgängerzone?	? 12274,10612 12328,10442
 # REMOVED (mittlerweile schon teilweise ausgeschildert) --- #: osm_watch: way id="188865512" version="9" --- #: XXX laut osm stehen nun die Schilder ("Fahrrad frei") (stimmt aber nicht!) --- #: check_frequency: 7d --- Lausitzer Platz: kommen hier noch die Fußgängerzonen-Schilder?	? 12172,10585 12274,10612
 #: last_checked ^^^
@@ -4362,7 +4363,7 @@ Huttenstr. 12: Zebrastreifen geplant	?::projected 4916,13508 4985,13470 4913,134
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
 #: XXX mittlerweile existiert schon ein provisorischer Zebrastreifen
 #: priority: #D
-#: last_checked: 2021-05-24
+#: last_checked: 2021-06-13
 Dennewitzstr./Kurfürstenstr.: Zebrastreifen in Bau	?::inwork 8058,10330 8058,10306 8089,10317
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
@@ -5056,7 +5057,7 @@ Conrad-Blenkle-Str.: südliche der Rudi-Arndt-Str. soll ein Zebrastreifen entsteh
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2021-05-30
+#: last_checked: 2021-06-13
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -5685,9 +5686,9 @@ Luisenplatz: Verbreiterung der Radwege	? 3279,12533 3271,12609 3269,12648 3291,1
 # 
 #: by: http://www.infravelo.de/projekt/per-rad-durch-den-boecklerpark/ (bis 2. Quartal 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Sanierung des östlichen Teils)
-#: last_checked: 2021-03-20
+#: last_checked: 2021-06-13
 #: check_frequency: 90d
-#: next_check: 2021-06-30
+# REMOVED --- #: next_check: 2021-06-30
 # REMOVED (hier eventuell später?) --- Böcklerpark: hier entsteht für Radfahrer ein "Sonderweg"	? 10521,10126 10723,10088
 Böcklerpark: hier entsteht für Radfahrer ein "Sonderweg"	? 10723,10088 10803,10067 10879,10048 10879,10037 10948,10016 10969,10015 10979,10017
 # 
@@ -5718,7 +5719,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Baubeginn Mitte 2021)
 #: XXX beide Fahrtrichtungen?
-#: last_checked: 2021-05-30
+#: last_checked: 2021-06-13
 #: check_frequency: 90d
 Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 # 

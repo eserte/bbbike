@@ -1261,7 +1261,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird fr¸hestens etwa am 22. April 2021 angefahren)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb R¸ckbau bis Ende Juni 2021
-#: last_checked: 2021-05-30
+#: last_checked: 2021-06-13
 #: check_frequency: 30d
 #: next_check: 2021-06-30
 # REMOVED (Arbeiten am Bahnhof dauern l‰nger) --- #: next_check: 2021-04-01
@@ -3405,7 +3405,7 @@ Mittelstr.: zwischen Neust‰dtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 #: by: https://twitter.com/Technologiepark/status/1337402031569580032 (Sanierung der Br¸cke bis 10.12.2021)
 #: by: https://www.deutsches-architekturforum.de/thread/14514-square-1-johannisthal/ (Erw‰hnung)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/betriebsbahnhof-schoeneweide-ist-geschichte_a296360 (bis Ende 2021)
-#: last_checked: 2021-05-10 vvv
+#: last_checked: 2021-06-13 (krickstadt) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-10 vvv
 Fuﬂg‰ngerbr¸cke Betriebsbahnhof Schˆneweide: s¸dwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
@@ -3611,7 +3611,7 @@ Neue Roﬂstraﬂenbr¸cke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: source_id ^^^
 #: also_indoor ^^^
 # 
-#: last_checked: 2021-05-24
+#: last_checked: 2021-06-13
 #: check_frequency: 60d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -3626,7 +3626,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
-#: last_checked: 2021-05-28
+#: last_checked: 2021-06-13
 #: check_frequency: 60d
 J¸denstr.: ‹berqueren der Grunerstr. wegen Bauz‰unen nicht mehr mˆglich	2::inwork 10805,12468 10803,12470
 # 
@@ -3635,7 +3635,7 @@ J¸denstr.: ‹berqueren der Grunerstr. wegen Bauz‰unen nicht mehr mˆglich	2::inwor
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
 #: osm_watch: way id="882672445" version="1"
-#: last_checked: 2021-06-06
+#: last_checked: 2021-06-13
 #: check_frequency: 60d
 Gustav-Bˆﬂ-Str.: Bauarbeiten, Komplettsperrung, Straﬂenf¸hrung wird neu gemacht	2::inwork 10673,12434 10772,12515
 # 
@@ -3683,7 +3683,7 @@ W‰scherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://abendblatt-berlin.de/2021/06/01/berlin-mitte-molkenmarkt-planung-geht-in-die-naechste-phase/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/senat-lobt-verfahren-aus_a311991
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne ‹berquerungsmˆglichkeit an der k¸nftigen Straﬂe "Molkenmarkt"
-#: last_checked: 2021-06-06
+#: last_checked: 2021-06-13
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingez‰unt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
@@ -3839,7 +3839,7 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2021-05-22 vvv
+#: last_checked: 2021-06-13 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-06-30 vvv
 #: valid: -20210630 vvv
@@ -3866,11 +3866,11 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2021-05-13
+#: last_checked: 2021-06-13
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9207,11880 9138,11872
 # 
-#: last_checked: 2021-05-13
+#: last_checked: 2021-06-13
 Mauerstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: osm_watch: way id="496270260" version="6" brb

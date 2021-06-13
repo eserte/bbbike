@@ -27973,7 +27973,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-05-28
+#: last_checked: 2021-06-13
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30294,7 +30294,7 @@ EOF
 #: osm_watch: way id="194962398" version="11"
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-06-06
+#: last_checked: 2021-06-13
 	2::inwork 11329,12497 11209,12430
 EOF
      },
@@ -30879,7 +30879,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="2"
-#: last_checked: 2021-06-11
+#: last_checked: 2021-06-13
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31107,7 +31107,7 @@ EOF
 EOF
      },
      { from  => 1594635120, # 2020-07-13 12:12
-       until => $isodate2epoch->("2022-05-31 18:00:00"), # 1615996800, # 2021-03-17 17:00
+       until => 1623580885, # laut Klaus Bauarbeiten beendet # $isodate2epoch->("2022-05-31 18:00:00"), # 1615996800, # 2021-03-17 17:00
        dont_check_date => 1,
        text  => 'Feuerbachstr.: möglicherweise noch immer Bauarbeiten, Fahrbahn Richtung Osten gesperrt, bis Mai 2022',
        type  => 'handicap',
@@ -31115,10 +31115,7 @@ EOF
        data  => <<EOF,
 #: note: laut Baustellenschild der Wasserbetriebe bis Mai 2022
 #: source_id: 2147346999 (Abschnitt zwischen Alsenstr. und Schöneberger Str., bis 16.4.2021) (inaktiv)
-#: add_fragezeichen: Wurden die Bauarbeiten mittlerweile beendet?
-#: also_indoor: traffic (H)
-#: last_checked: 2021-02-20 (mapillary)
-#: next_check: 2021-05-18
+# REMOVED --- #: add_fragezeichen: Wurden die Bauarbeiten mittlerweile beendet? --- #: also_indoor: traffic (H)--- #: last_checked: 2021-02-20 (mapillary) --- #: next_check: 2021-05-18
 # REMOVED --- hier nicht mehr, siehe mapillary ---	q4::inwork; 5244,6261 5390,6299
 	q4::inwork; 5390,6299 5560,6344
 # REMOVED --- #: XXX ist der Radverkehr hier noch betroffen? --- #: by: mapillary ---	q4::inwork 5560,6344 5582,6360
@@ -32281,7 +32278,7 @@ EOF
 #: XXX laut rbb bis 28.6.2021
 #: also_indoor: traffic
 #: priority: #A vvv
-#: last_checked: 2021-05-30 vvv
+#: last_checked: 2021-06-13 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2021-06-28 vvv
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
@@ -32426,11 +32423,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Glinkastr.: zwischen Jägerstr. und Mohrenstr. Einbahnstraßenregelung, gesperrt Richtung Süden auch für Radfahrer',
+       text  => 'Glinkastr.: zwischen Jägerstr. und Mohrenstr. Einbahnstraßenregelung, Richtung Süden gesperrt, auch für Radfahrer',
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?
-#: last_checked: 2021-05-13
+#: note: 2021-06-13 ("Radfahrer frei"-Schilder fehlen weiterhin, aber zumindest sonntags scheint man auf dem noch existierenden Radstreifen gut durchzukommen)
+#: last_checked: 2021-06-13
 	q4::inwork; 9195,11972 9207,11880 9218,11793
 EOF
      },
@@ -32774,7 +32772,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1623580764, # undef, # XXX
        text  => 'Koppenstr.: zwischen Palisadenstr. und Karl-Marx-Allee Fahrbahn wegen Kranarbeiten gesperrt',
        type  => 'handicap',
        data  => <<EOF,
