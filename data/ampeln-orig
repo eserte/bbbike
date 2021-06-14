@@ -3235,7 +3235,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 # REMOVED (abgebaut) --- #: next_check_id: HERBERTVONKARAJAN-2018 --- #: note: Anforderungsampel --- #: XXX provisorisch, bleibt eventuell nur während der Bauarbeiten an der Herbert-von-Karajan-Str. --- #: osm_watch: node id="1319349510" version="6" --- #: last_checked: 2019-11-19 --- #: check_frequency: 30d ---	F::inwork 8005,11627
 # 
-#: note: Anforderungsampel
+#: note: Anforderungsampel, 2x, nicht synchron geschaltet
 	F 12172,14328
 # 
 	F 3951,9836
@@ -3359,6 +3359,8 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 	X 21874,1511
 #: by: mapillary
 	X 11952,24153
+#: note: Anforderungsampel
+	F 11924,17224
 # 
 ################################################################################
 #: note: Potsdam vvv

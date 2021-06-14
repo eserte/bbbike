@@ -3269,6 +3269,19 @@ Drängelgitter	BNP:3::trailer=10 32418,6303
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: KOENIGSTEINBRUECKE-2019
+#: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/11.12.2012_benennung_eine_oeffentlichen_weges_im_ortsteil_franzoesich_buchholz__lageplan.pdf?start&ts=1355910105&file=11.12.2012_benennung_eine_oeffentlichen_weges_im_ortsteil_franzoesich_buchholz__lageplan.pdf
+#: by: http://www.stadtentwicklung.berlin.de/download/bruecken/Brueckeninstandstandsetzungen2016.pdf
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180130 ("voraussichtlich ab 2019 neu gebaut")
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/bezirksamt-listet-alle-2020-kommenden-radverkehrsanlagen-auf_a274738 (Neubau, bis Ende 2021)
+#: by: https://viz.berlin.de/2021/06/a114-vollsperrung/ (gesperrt seit 14.6.2021) (kein Fertigstellungdatum)
+#: osm_watch: way id="298416172" version="7"
+#: XXX wird abgerissen und neu gebaut
+#: last_checked: 2021-06-14 (vmz)
+#: check_frequency: 180d
+# REMOVED --- #: next_check: 2021-01-01
+Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
+# 
 #: XXX Bis wann bleibt die Einbahnstraße bestehen? Siehe auch anderen Eintrag zur möglichen Asphaltierung.
 #: osm_watch: way id="4045220" version="39"
 #: osm_watch: way id="938037386" version="1"

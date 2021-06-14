@@ -27746,7 +27746,7 @@ EOF
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
 #: also_indoor: traffic (G)
 #: priority: #B
-#: last_checked: 2021-04-15 (mapillary)
+#: last_checked: 2021-06-14
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-03-26
 	q3::inwork 13391,16436 13630,16629
@@ -29108,7 +29108,7 @@ EOF
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
-#: last_checked: 2021-04-15 (mapillary)
+#: last_checked: 2021-06-14
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2021-06-24
 # REMOVED --- #: next_check: 2021-08-13
@@ -30879,7 +30879,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="2"
-#: last_checked: 2021-06-13
+#: last_checked: 2021-06-14
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31069,8 +31069,8 @@ EOF
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX Stand 2021-05-31: Asphaltierungsarbeiten
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2021-05-31
-#: check_frequency: 7d
+#: last_checked: 2021-06-14
+#: check_frequency: 14d
 	q4::inwork 14136,17170 13996,16959
 EOF
      },
@@ -32026,8 +32026,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: ABBESTR-2021
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-05-01
-#: check_frequency: 45d
+#: last_checked: 2021-06-14 (osm note)
+#: check_frequency: 30d
 # REMOVED (hier nicht) ---	q3::inwork 4674,12076 4698,12124
 	q3::inwork 4698,12124 4755,12236
 EOF
@@ -32278,7 +32278,7 @@ EOF
 #: XXX laut rbb bis 28.6.2021
 #: also_indoor: traffic
 #: priority: #A vvv
-#: last_checked: 2021-06-13 vvv
+#: last_checked: 2021-06-14 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2021-06-28 vvv
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
