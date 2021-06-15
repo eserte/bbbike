@@ -2436,20 +2436,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'accept_multi_feature_distance' => 1500,
-         'data' => '#: note: laut VIZ ist der Radverkehr auch betroffen, aber nicht der Fußverkehr (also schieben möglich?); Dauer 1 1/2 Jahre ab 2019-03-11
-#: source_id: 2147343858
-#: source_id: 2147343859
-	q4::inwork 8904,23365 8900,23274
-	q4::inwork 8400,22010 8430,22110 8439,22143 8464,22215
-',
-         'from' => 1552239604,
-         'id' => 3077,
-         'text' => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis Ende Juni 2021',
-         'type' => 'handicap',
-         'until' => 1625068800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2807,7 +2794,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="2"
-#: last_checked: 2021-06-14
+#: last_checked: 2021-06-15
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3005,6 +2992,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_24_2053_2104_online.pdf
+#: by: https://viz.berlin.de/2021/06/verkehrsvorschau-160621/
 #: source_id: 2147346954 (inaktiv)
 #: source_id: 2147346955 (inaktiv)
 #: source_id: 2147346956 (inaktiv)
@@ -3832,6 +3820,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Jörsstr.: Bauarbeiten zwischen Beatestr. und Theresenweg, voraussichtlich von Anfang Juli 2021 bis Anfang Oktober 2021',
          'type' => 'handicap',
          'until' => 1633125599
+       },
+       {
+         'data' => '	q4::inwork; 21858,811 21902,877 21977,988 22034,1006 22092,999
+',
+         'from' => 1625349600,
+         'id' => 3394,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1095642.php',
+         'text' => 'Bruno-Taut-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Am Falkenberg, vom 5. Juli 2021 bis Juli 2022',
+         'type' => 'handicap',
+         'until' => 1659304799
        }
      
 );

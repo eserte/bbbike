@@ -28910,7 +28910,7 @@ EOF
 EOF
      },
      { from  => 1552239604, # 2019-03-10 18:40
-       until => $isodate2epoch->("2021-06-30 18:00:00"), # 1601503199, # 2020-09-30 23:59
+       until => 1623781586, # $isodate2epoch->("2021-06-30 18:00:00"), # 1601503199, # 2020-09-30 23:59
        text  => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis Ende Juni 2021',
        type  => 'handicap',
        accept_multi_feature_distance => 1500,
@@ -30879,7 +30879,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="2"
-#: last_checked: 2021-06-14
+#: last_checked: 2021-06-15
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31522,6 +31522,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_24_2053_2104_online.pdf
+#: by: https://viz.berlin.de/2021/06/verkehrsvorschau-160621/
 #: source_id: 2147346954 (inaktiv)
 #: source_id: 2147346955 (inaktiv)
 #: source_id: 2147346956 (inaktiv)
@@ -32807,6 +32808,15 @@ EOF
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1094021.php',
        data  => <<EOF,
 	q4::inwork -1478,18407 -1358,18400
+EOF
+     },
+     { from  => 1625349600, # 2021-07-04 00:00
+       until => 1659304799, # 2022-07-31 23:59
+       text  => 'Bruno-Taut-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Am Falkenberg, vom 5. Juli 2021 bis Juli 2022',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1095642.php',
+       data  => <<EOF,
+	q4::inwork; 21858,811 21902,877 21977,988 22034,1006 22092,999
 EOF
      },
     );

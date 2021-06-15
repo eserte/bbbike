@@ -232,7 +232,7 @@ Möckernstr.: Richtung Süden entstehen geschützte Radspuren	?::projected 8810,103
 # REMOVED (-> radwege-orig) --- #: last_checked: 2020-04-14 vvv --- #: check_frequency: 60d vvv --- # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 --- #: osm_watch: way id="30705170" version="23" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280 --- #: osm_watch: way id="335487060" version="4" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork; 9865,10227 9948,10280 9873,10285 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2021-06-03
+#: last_checked: 2021-06-15
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -2132,7 +2132,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: also_indoor: traffic (G,H)
 #: last_checked: 2021-05-23 (bahninfo-forum)
 #: check_frequency: 60d
-#: next_check: 2021-06-30
+#: next_check: 2022-07-31
 Bohnsdorfer Kreisel: Bau von Radspuren in beiden Richtungen	?::projected 22062,773 22120,886 22092,999 22034,1006 21977,988
 # REMOVED --- #: check_frequency: 90d
 # REMOVED (realisiert) --- #: XXX erster Bauabschnitt (vom 15. Mai 2017 bis Oktober 2017) --- Bohnsdorfer Kreisel: Bau von Radspuren in beiden Richtungen; Aufhebung der Einbahnstraßenregelung	?::projected 22007,711 22062,773
@@ -3428,7 +3428,7 @@ Naunynstr.: Benennung einer Platzfläche in "Maria-von-Maltzan-Platz"	? 11365,107
 # REMOVED (Fußgängerzone, Radfahrer frei) --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.998022.php --- #: XXX Der Stadtplatz bleibt bis zum 1. November 2020 bestehen --- Wundtstr./Horstweg: temporärer Stadtplatz, wo genau? Können Radfahrer durchfahren?	? 2934,11747 2888,11670
 # 
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn noch 2020)
-#: by: http://www.infravelo.de/projekt/berliner-allee-2/ (2. Quartal 2021) (mittlerweile gelöscht)
+#: by: http://www.infravelo.de/projekt/berliner-allee/ (2. Quartal 2021)
 #: XXX Asphaltierung + Radstreifen
 #: last_checked: 2021-06-01 (mapillary)
 #: check_frequency: 30d
@@ -4342,7 +4342,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
-#: last_checked: 2021-06-08
+#: last_checked: 2021-06-15
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -5807,6 +5807,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 18301,9946 18266,9853 18066,9770 17849,9679 17668,9632 17471,9688 17383,9719
 # 
 #: by: https://abendblatt-berlin.de/2021/06/11/steglitz-zehlendorf-erhaelt-ersten-pop-up-radweg/ (Anhörungsverfahren bis 14.6.2021)
+#: by: https://www.berliner-woche.de/lankwitz/c-verkehr/erster-pop-up-radweg-im-bezirk_a312882
 #: XXX evtl. Verlängerung zur Attilastr.
 #: last_checked: 2021-06-14 (Ende Anhörungsverfahren)
 #: check_frequency: 30d
@@ -6935,6 +6936,8 @@ Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,179
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1089037.php
 #: by: https://abendblatt-berlin.de/2021/05/28/108608/
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1090076.php
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1095800.php
+#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/buergermeister-wollen-raschen-start-des-planfeststellungsverfahrens_a313269
 #: by: osm
 #: osm_watch: way id="154505652" version="14"
 #: XXX wird es bereits durch den Bau Beeinträchtigungen geben?

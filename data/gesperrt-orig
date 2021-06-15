@@ -3277,10 +3277,13 @@ Drängelgitter	BNP:3::trailer=10 32418,6303
 #: by: https://viz.berlin.de/2021/06/a114-vollsperrung/ (gesperrt seit 14.6.2021) (kein Fertigstellungdatum)
 #: osm_watch: way id="298416172" version="7"
 #: XXX wird abgerissen und neu gebaut
-#: last_checked: 2021-06-14 (vmz)
-#: check_frequency: 180d
+#: last_checked: 2021-06-15 (wosch) vvv
+#: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-01-01
 Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
+Radweg an der Panke	2::inwork 13031,21538 13078,21754
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: XXX Bis wann bleibt die Einbahnstraße bestehen? Siehe auch anderen Eintrag zur möglichen Asphaltierung.
 #: osm_watch: way id="4045220" version="39"
@@ -3613,7 +3616,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: bis Mai 2021)
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 18.06.2021) vvv
-#: last_checked: 2021-06-08 vvv
+#: last_checked: 2021-06-15 vvv
 #: next_check: 2021-06-18 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901
