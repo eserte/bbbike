@@ -1257,11 +1257,14 @@ Falkenseer Chaussee: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Sü
 # 
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
+#: source_id: 2147347296 (Leitungsarbeiten bis 20.8.2021)
 #: last_checked: 2021-05-24 vvv
 #: check_frequency: 90d vvv
+#: next_check: 2021-08-20 vvv
 Nauener Str.: Sanierung des Radwegs prüfen	?; -4754,14075 -4748,14237
 #: XXX hier wird gerade gebaut; Radweg ist gesperrt
 Nauener Str.: Sanierung des Radwegs prüfen	?; -4748,14237 -4754,14075 -4759,13992
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -1731,10 +1734,11 @@ Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten viell
 #: next_check_id: RUMMELSBURGERLANDSTR-2018
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (2018/2019)
-#: source_id: 2147342583
+#: source_id: 2147342583 (inaktiv)
+#: source_id: 2147347297 (Leitungsarbeiten bis 6.8.2021)
 #: XXX Radweg Richtung Norden wird vielleicht neu asphaltiert (zurzeit teilweise welliger Asphalt, hoffentlich nur provisorisch)
 #: last_checked: 2021-06-11
-#: check_frequency: 90d
+#: check_frequency: 60d
 #: next_check: 2021-12-31
 Rummelsburger Landstr.: Verbesserung des Radwegs oder werden Radstreifen angelegt?	?::projected 18010,7133 17847,7356 17769,7465
 # 
@@ -3344,7 +3348,7 @@ Hultschiner Damm: Aufhebung der Benutzungspflicht?	? 24639,10766 24644,10740 246
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1080946.php (bis Juni 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1394217278615560194
 #: by: https://twitter.com/BA_Xhain/status/1394209701588570124 (Haasestr.)
-#: last_checked: 2021-06-14 vvv
+#: last_checked: 2021-06-16 vvv
 # REMOVED --- #: next_check: 2021-06-30 vvv
 Niemannstr.: Reduzierung auf 10km/h, Bodenschwellen	?::projected 14254,11377 14211,11229
 Helmerdingstr.: Reduzierung auf 10km/h, Bodenschwellen	?::projected 14468,11203 14442,11101
@@ -3451,7 +3455,7 @@ Berliner Allee: entstehen hier noch Radstreifen?	?::projected 14754,17673 14673,
 # REMOVED (realisiert) --- #: osm_watch: way id="29052147" version="29"
 # REMOVED (realisiert) --- #: osm_watch: way id="351509721" version="7"
 #: osm_watch: way id="4685718" version="27"
-#: last_checked: 2021-06-14 vvv
+#: last_checked: 2021-06-16 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2021-09-30 vvv
 # REMOVED (realisiert) --- Palisadenstr.: Ausbau zur Fahrradstraße	? 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
@@ -4651,7 +4655,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
 #: osm_watch: way id="295627704" version="11"
-#: last_checked: 2021-06-01
+#: last_checked: 2021-06-16
 #: check_frequency: 90d
 # REMOVED (hier ist nichts) --- #: next_check: 2021-03-01
 Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
@@ -5835,6 +5839,11 @@ Revaler Str.: Fahrradstraße geplant (wird hier dabei auch asphaltiert?)	?::proje
 #: next_check ^^^
 #: by: ^^^
 # 
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1096055.php (ab 21.6.2021, voraussichtlich vier Wochen Bauzeit)
+#: XXX weitere Einbahnstraßenregelungen im Kiez geplant, sowie Fußgängerbereiche nördlich/südlich des Chamissoplatzes
+#: next_check: 2021-07-21
+Bergmannstr.: Einrichtung eines geschützten Zweiwegeradwegs (Südseite), Einbahnstraßenregelung für Kfz-Verkehr (offen Richtung Westen)	?::projected 9505,9306 9632,9280 9689,9266 9753,9252
+# 
 #: ignore ^^^
 # 
 ######################################################################
@@ -6424,7 +6433,7 @@ Parkanlage: genaue Lage? Wird es hier Wege geben?	?::projected 17454,8747 17468,
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan1194ve.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8385 (Festsetzung)
 #: XXX außerdem: bleibt der nach Süden verlaufende Abzweig der Plauener Str. erhalten?
-#: osm_watch: way id="914159830" version="3"
+#: osm_watch: way id="914159830" version="4"
 #: last_checked: 2020-12-30
 #: check_frequency: 360d
 Plauener Str.: Verbindungsstück wird gebaut	?::projected 17531,14923 17638,14951
@@ -7000,8 +7009,8 @@ Brauhausberg - Potsdam Hauptbahnhof: existiert hier ein Weg für Radfahrer? Quali
 #: XXX Berlin.coords.data-Eintrag fehlt (Schönegarten|Tiergarten|10785)
 #: XXX Privatstraße
 #: osm_watch: way id="478067706" version="6"
-#: last_checked: 2021-05-24
-#: check_frequency: 90d
+#: last_checked: 2021-06-16 (daf)
+#: check_frequency: 60d
 Schönegarten: eine neue Privatstraße entsteht, genaue Lage, Qualität?	?::projected 7428,10491 7436,10525 7420,10529 7430,10563 7341,10593
 # 
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/eisenbahn/bekanntmachung_eichborndamm.shtml
