@@ -1301,7 +1301,7 @@ EOF
        text  => 'L 401; (Lindenallee, Fontaneallee); OL Zeuthen, zw. Forstweg und Fährstr. grundhafter Straßenbau Vollsperrung 01.11.2004-12.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 26609,-7136 26506,-6931 26135,-6206
+	q4 26609,-7136 26506,-6931 26376,-6676 26135,-6206
 EOF
      },
      { from  => 1089496800, # 2004-07-11 00:00
@@ -13389,7 +13389,7 @@ EOF
        text  => 'L 401 Karl-Marx-Str., Friedrich-Engels-Str. OD Wildau, zw. Freiheitsstr. und Westkorso grundhafter Straßenneubau Wintersicherung 19.12.2008-31.01.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26775,-8117 26749,-8481
+	q4::inwork 26609,-7136 26700,-7334 26790,-7918 26786,-7968 26782,-8032 26749,-8481
 EOF
      },
      { from  => 1231196400, # 2009-01-06 00:00
@@ -30881,7 +30881,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="2"
-#: last_checked: 2021-06-16
+#: last_checked: 2021-06-17
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -31519,7 +31519,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-06-15 15:00:00"), # $isodate2epoch->("2021-03-09 13:00:00"),
-       until => $isodate2epoch->("2021-06-18 23:59:59"), # 1615579406, # $isodate2epoch->("2021-03-13 23:59:59"),
+       until => 1623963765, # vorzeitig aufgehoben --- $isodate2epoch->("2021-06-18 23:59:59"), # 1615579406, # $isodate2epoch->("2021-03-13 23:59:59"),
        text  => 'Rigaer Str./Liebigstr.: Sperrungen wegen eines Polizeieinsatzes, eventuell ist auch der Radverkehr betroffen, vom 16.06.2021 15:00 Uhr bis 18.06.2021',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -31815,7 +31815,7 @@ EOF
 #: osm_watch: way id="877995097" version="2"
 #: by: https://twitter.com/VIZ_Berlin/status/1354746716914900992 (anhand der Fotos nicht erkennbar)
 #: add_fragezeichen: Wann ist der Radweg offiziell befahrbar?
-#: last_checked: 2021-05-10
+#: last_checked: 2021-06-17
 	2::inwork 21874,1511 21829,1351 21656,989 21613,923 21286,449 21115,271
 EOF
      },
@@ -32151,9 +32151,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-06-11
+#: last_checked: 2021-06-17
 #: check_frequency: 30d
-# REMOVED (kann nicht gehalten werden) --- #: next_check: 2021-05-31
+#: next_check: 2021-09-30
 	q4::inwork; 15279,10862 15272,10790 15261,10738
 EOF
      },

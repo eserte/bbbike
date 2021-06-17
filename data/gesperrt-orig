@@ -159,7 +159,7 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: osm_watch: way id="871408060" version="1"
 #: XXX wird auch zwischen Grünbergallee und Paradiesstr. ein Radweg entstehen?
 #: XXX wird auch auf der Paradiesstr. zwischen B96a und Johannes-Tobei-Str. auf der westlichen Seite ein Radweg entstehen, möglicherweise ein Zweirichtungsradweg?
-#: last_checked: 2021-05-29
+#: last_checked: 2021-06-17
 #: check_frequency: 120d
 #: next_check: 2021-07-31
 # REMOVED --- #: next_check: 2021-01-31
@@ -1357,7 +1357,7 @@ Bürgerstr.: Mittelstreifen	2 13289,6355 13307,6359
 Boltonstr.	1 -390,14476 -457,14536
 Marktplatz Adlershof	1 20290,3756 20336,3783
 #: by: https://www.tagesspiegel.de/berlin/bvg-beseitigt-tram-uebergaenge-an-der-uferbahn-in-schmoeckwitz-kommt-man-nicht-mehr-rueber/26666774.html
-#: confirmed_by: mapillary
+#: confirmed_by: mapillary, srt
 Adlergestell: Straßenbahntrasse	3nocross 26286,-1901 26698,-2322 26871,-2500
 Bahnhofsvorplatz S-Bhf. Priesterweg	1 7227,6080 7252,6080 7252,6058 7227,6058
 #: by: mapillary
@@ -2096,8 +2096,8 @@ Groß-Berliner Damm: Mittelstreifen	3nocross 18930,3703 19029,3595 19125,3491
 #: next_check_id: GROSSBERLINERDAMM-2020
 #: by: https://www.baustellen-doku.info/berlin_strassenbahn_adlershof_II_wista_schoeneweide/20200831/
 #: confirmed_by: srt
-#: XXX wird hier noch ein Fußgängerübergang erstellt?
-#: last_checked: 2020-11-15
+#: XXX hier wird ein Fußgängerübergang erstellt
+#: last_checked: 2021-06-17
 #: next_check: 2021-10-01
 Groß-Berliner Damm: Straßenbahntrasse	3nocross 17879,4910 17951,4785 18042,4667
 Stromstr.: Mittelstreifen	3nocross 6228,13324 6229,13517 6230,13596
@@ -3349,7 +3349,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: check_frequency: 45d
 (Weg parallel zur und unter der Minna-Todenhagen-Brücke): mit Bauzäunen abgesperrt	2::inwork 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
 # 
-#: last_checked: 2021-06-11
+#: last_checked: 2021-06-17
 #: check_frequency: 21d
 (Breiter Weg - Südostallee/Sterndamm): Durchgang ist wegen Bauarbeiten gesperrt	2::inwork 17538,5301 17601,5374
 # 
@@ -3675,7 +3675,7 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2021-06-05 vvv
+#: last_checked: 2021-06-17 vvv
 #: check_frequency: 60d vvv
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
 # REMOVED (hier kann man schon fahren) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21474,5388 21485,5377 21514,5314 21547,5245 21413,5180
@@ -3756,12 +3756,7 @@ Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 #: check_frequency: 90d
 Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
 # 
-#: next_check_id: WEIDENKAETZCHENWEG-2020
-#: osm_watch: way id="889476798" version="2"
-#: last_checked: 2021-04-24
-#: check_frequency: 30d
-Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
-# 
+# REMOVED (offen, aber als provisorische Einbahnstraße ausgeschildert) --- #: next_check_id: WEIDENKAETZCHENWEG-2020 --- #: osm_watch: way id="889476798" version="2" ---#: last_checked: 2021-04-24 ---#: check_frequency: 30d ---Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21450,38
 # REMOVED (offen) --- #: last_checked: 2020-08-06 --- #: check_frequency: 90d --- Rosenrotweg: Bauarbeiten, Straße gesperrt	2::inwork 21487,173 21515,67
 # REMOVED (wieder offen) --- #: next_check_id: KARLMARXSTR-2018 --- #: last_checked: 2019-02-13 --- Alfred-Scholz-Platz: wegen Bauarbeiten kein Zugang zur Karl-Marx-Str.	2::inwork 12753,8187 12779,8188
 # 

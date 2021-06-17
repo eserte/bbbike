@@ -971,7 +971,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-06-16
+#: last_checked: 2021-06-17
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2341,7 +2341,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="11"
-#: last_checked: 2021-05-29
+#: last_checked: 2021-06-17
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -3895,7 +3895,7 @@ Hönower Str.: Asphalt mit einigen Schäden	Q1+ 18626,9406 18545,9395 18490,9387
 Krimnitzer Weg: unbefestigte Straße	Q2 26346,-1821 26429,-1876
 Krimnitzer Weg: Waldweg	Q2 26429,-1876 26489,-1884
 Krimnitzer Weg: unbefestigte Straße	Q2 26489,-1884 26547,-1894 26662,-1914 26750,-1932
-Sielower Weg: Beton	Q0 26398,-1645 26500,-1672 26600,-1698 26707,-1726
+Sielower Weg: Beton	Q0- 26398,-1645 26500,-1672 26600,-1698 26707,-1726
 Zaucher Weg: asphaltiert, Sand auf der Fahrbahn	Q1+ 26547,-1894 26600,-1698 26663,-1443
 Peitzer Weg: asphaltiert, mit Schäden	Q1 26719,-1354 26614,-1316 26520,-1255
 Peitzer Weg: asphaltiert	Q0 26520,-1255 26399,-1118 26369,-1074 26303,-972 26230,-858
@@ -9990,6 +9990,8 @@ Zwergasternweg: Verbundsteinpflaster	Q1 16254,3489 16338,3578 16344,3586
 Ortolfstr. [Wohngebiet]: Beton	Q1+ 19210,-85 19205,-219 19214,-313
 (Ortolfstr., Verbindungsweg): unbefestigter Weg	Q2 19214,-313 19026,-283
 (Preußensiedlung): wassergebundene Decke	Q1 20971,1046 20957,1043 20850,963
+#: last_checked: 2021-06-17
+#: XXX Bauarbeiten, ein neuer paralleler Weg wird gebaut (vielleicht asphaltiert?)
 (Am Gartenstadtweg - Paradiesstr./Johannes-Tobei-Str.): Verbundsteinpflaster	Q0- 21199,309 21205,286 21247,143 21250,118
 Oberspreestr. [Wohngebiet]: Asphalt	Q0 19632,5211 19614,5132 19629,5019 19679,5025 19667,5126 19614,5132
 Helene-Weigel-Platz: Asphalt	Q0 19628,13517 19625,13576
@@ -10948,7 +10950,7 @@ Uferstr. (Niederschöneweide): Asphalt	Q0 17681,6212 17847,6089
 (Verlängerter Sandbacher Weg): Waldweg	Q2 23903,-1187 23955,-1223 24056,-1295
 (Brücke über die Görlitzer Bahn): Asphalt/Beton	Q0 23955,-1223 24001,-1228 24053,-1241 24121,-1219 24154,-1219 24188,-1248 24216,-1273 24224,-1271
 (Alter Radelander Weg/Brücke - Adlergestell): Waldweg	Q2 24158,-1153 24485,-667
-#: last_checked: 2020-06-03
+#: last_checked: 2021-06-17
 #: check_frequency: 150d
 #: add_fragezeichen: wird sich die Qualität hier bessern (insbesondere: was passiert mit dem losen Schotter)?
 (Adlergestell - Sportpromenade/Bammelecke): Waldweg, teilweise loser Schotter	Q2+ 24485,-667 24758,-268 25172,345
@@ -11611,10 +11613,7 @@ Albert-Einstein-Str.: Asphalt	Q0 19091,2443 19094,2495 19204,2603 19329,2715 193
 Siegfried-Hirschmann-Park: Betonpflaster	Q1+ 14676,11572 14714,11549 14745,11487
 Siegfried-Hirschmann-Park: Betonpflaster	Q1+ 14830,11551 14808,11520 14745,11487 14684,11456
 Lobeckstr.: Asphalt mit einigen Schäden und Schlaglöchern	Q0- 10585,10766 10492,10582 10484,10567 10433,10456 10363,10303
-# 
-#: by: mapillary
-Weidenkätzchenweg: Verbundsteinpflaster	Q1+ 21465,-15 21447,47
-# 
+Weidenkätzchenweg: Verbundsteinpflaster	Q1+ 21465,-15 21450,38 21421,158
 # REMOVED (fertiggestellt) --- #: next_check_id: BUSCHWINDROESCHENWEG-2019 --- #: by: mapillary --- #: XXX wie wird die Qualität nach der Fertigstellung sein? --- #: last_checked: 2019-02-10 (mapillary) --- #: check_frequency: 90d
 Buschwindröschenweg: Verbundsteinpflaster	Q1+ 21379,33 21393,-29 21382,-31 21409,-109
 # 
@@ -14905,7 +14904,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/kaiserg%C3%A4rten-wandlitzstra%C3%9Fe-18-22.343/#post-15379
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8942 (Forderung nach einer Fahrradstraße)
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
-#: last_checked: 2021-05-29
+#: last_checked: 2021-06-17
 #: check_frequency: 360d
 #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976

@@ -893,7 +893,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-06-04
+#: last_checked: 2021-06-17
 #: check_frequency: 60d
 # REMOVED (vermutlich ohne baldige Änderung) --- #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1269,7 +1269,9 @@ Verbundsteinpflaster	RW8;RW2 22162,1067 22351,862
 asphaltiert mit einigen Schäden	RW8;RW2 22351,862 22547,651 22916,402
 asphaltiert, breit	RW8;RW2 22916,402 23225,192 23457,35
 asphaltiert	RW8;RW2 23457,35 24485,-667 25731,-1524
-mäßige bis schlechte Verbundsteinpflasterradwege	RW2;RW2 25731,-1524 26286,-1901 26698,-2322 26871,-2500 27017,-2660 27112,-2764 27139,-2793
+mäßige bis schlechte Verbundsteinpflasterradwege	RW2; 25731,-1524 26286,-1901 26698,-2322 26871,-2500 26939,-2574 27017,-2660 27112,-2764 27139,-2793
+mäßiges Verbundsteinpflaster	RW2; 27139,-2793 27112,-2764 27017,-2660 26939,-2574
+gemeinsamer Geh- und Radweg, mäßiges bis schlechtes Verbundsteinpflaster	RW2; 26939,-2574 26871,-2500 26698,-2322 26286,-1901 25731,-1524
 	RW2; 27139,-2793 27226,-2892 27270,-2941 27304,-2979 27351,-3032
 Grünmarkierung	RW3; 27351,-3032 27418,-3019 27518,-3054 27552,-3075
 Grünmarkierung	RW3; 27596,-3097 27552,-3075 27518,-3054 27418,-3019 27351,-3032
@@ -3289,11 +3291,9 @@ mäßiges Verbundsteinpflaster	RW1; 2574,5688 2477,5694 2320,5743 2314,5745 2165,5
 	RW1; 1746,5922 1909,5872 2030,5833 2106,5808 2137,5798 2165,5790 2314,5745 2320,5743 2477,5694 2574,5688
 alte Gehwegplatten, deutliche Schäden	RW1; 14853,7451 14775,7385 14758,7373 14708,7325 14617,7243
 Verbundsteinpflaster	RW1;RW1 14853,7451 14989,7574 15221,7778 15355,7893 15425,7953 15444,7969 15557,8077
-#: note: asphaltiert, aber einige deutliche Wurzelhebungen
 #: note: nicht explizit freigegeben, nur durch Fahrbahnmarkierung
-asphaltierter Gehweg für Radfahrer frei	RW1; 15221,7778 15553,7408 15560,7400
-#: note: asphaltiert, hier auch einige Wurzelhebungen
-asphaltierter Gehweg für Radfahrer frei	RW1; 15560,7400 15609,7347 15695,7254 15928,6996
+asphaltierter Gehweg für Radfahrer frei, einige deutliche Wurzelhebungen	RW1; 15221,7778 15553,7408 15560,7400
+asphaltierter Gehweg für Radfahrer frei, einige Wurzelhebungen	RW1; 15560,7400 15609,7347 15695,7254 15928,6996
 asphaltiert	RW1; 23402,5483 23492,5488 23519,5490 23590,5487 23657,5467 23724,5437 23818,5394 23849,5380 23942,5338
 asphaltiert	RW1; 23942,5338 23849,5380 23818,5394 23724,5437 23657,5467 23590,5487
 asphaltiert	RW2; 23590,5487 23519,5490 23492,5488 23402,5483
@@ -3696,7 +3696,7 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 #	RW4; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
 #	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905
 #: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv
-#: last_checked: 2021-05-29 vvv
+#: last_checked: 2021-06-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 Busspur ist immer gültig	RW5; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374
