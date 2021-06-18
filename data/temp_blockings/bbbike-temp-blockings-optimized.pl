@@ -3812,6 +3812,23 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Bruno-Taut-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Am Falkenberg, vom 5. Juli 2021 bis Juli 2022',
          'type' => 'handicap',
          'until' => 1659304799
+       },
+       {
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021)
+#: by: https://twitter.com/rbbabendschau/status/1392489796426162177
+#: add_fragezeichen: Wurden Fahrbahn und Radwege wieder freigegeben?
+#: also_indoor: traffic (G)
+#: note: bei rbbtext seit 2021-06-18 nicht mehr gelistet
+#: priority: #A
+#: last_checked: 2021-05-14
+#: next_check: 2021-06-18
+	q3::inwork 7647,9196 7735,9121 7790,9126
+',
+         'from' => undef,
+         'id' => 3395,
+         'source_id' => '2147347186',
+         'text' => 'Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung',
+         'until' => undef
        }
      
 );

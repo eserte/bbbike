@@ -32821,4 +32821,20 @@ EOF
 	q4::inwork; 21858,811 21902,877 21977,988 22034,1006 22092,999
 EOF
      },
+     { from  => undef,
+       until => undef,
+       text  => 'Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung',
+       source_id => '2147347186',
+       data  => <<EOF,
+#: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021)
+#: by: https://twitter.com/rbbabendschau/status/1392489796426162177
+#: add_fragezeichen: Wurden Fahrbahn und Radwege wieder freigegeben?
+#: also_indoor: traffic (G)
+#: note: bei rbbtext seit 2021-06-18 nicht mehr gelistet
+#: priority: #A
+#: last_checked: 2021-05-14
+#: next_check: 2021-06-18
+	q3::inwork 7647,9196 7735,9121 7790,9126
+EOF
+     },
     );

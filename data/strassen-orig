@@ -312,6 +312,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1078504.php
 #: by: https://www.berliner-woche.de/mitte/c-bauen/flaniermeile-geht-in-den-sommer_a308172
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1088034.php (Befragung)
+#: by: https://twitter.com/VIZ_Berlin/status/1405873886873411584
 #: source_id: 2147346249
 #: last_checked: 2021-06-13 vvv
 #: next_check: 2021-10-31 vvv
@@ -1258,7 +1259,7 @@ Mercedes-Platz	NN 12990,11006 13063,11147
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036247069542/247069542/00279027/27-Anlagen/02/DS0254_VzK_BenennungeinerStrassenachFreiaEisne.pdf (erst 2023, nach Umwidmung in eine öffentliche Straße)
 #: XXX Vorschlag: Freia-Eisner-Straße
 #: note: "Privatgelände"
-#: osm_watch: way id="491906864" version="6"
+#: osm_watch: way id="491906864" version="7"
 #: priority: #C
 #: last_checked: 2021-06-04
 #: next_check: 2023-01-01
@@ -1388,10 +1389,7 @@ Rosmarinstr.	NN 9369,12253 9489,12263
 Besselstr.	N 9527,10927 9653,10950 9786,10971
 Hedemannstr.	N 9131,10716 9323,10791 9539,10820
 # 
-#: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: last_checked: 2021-04-27
-#: next_check: 2021-06-18
-(Umfahrung Baustelle Neue Roßstraßenbrücke)	NN 10680,11875 10650,11909 10642,11901 10590,11840 10599,11819
+# REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: last_checked: 2021-04-27 --- #: next_check: 2021-06-18 --- (Umfahrung Baustelle Neue Roßstraßenbrücke)	NN 10680,11875 10650,11909 10642,11901 10590,11840 10599,11819
 # 
 Fischerinsel	NH 10512,12039 10578,11969 10604,11941 10642,11901 10672,11870
 #: osm.highway: service 
@@ -5693,7 +5691,7 @@ Sterndamm	H 17648,5338 17705,5223
 #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2
 #: confirmed_by: srt
 #: XXX provisorische Verbindung, asphaltiert
-#: last_checked: 2021-06-11
+#: last_checked: 2021-06-17 (bahninfo-forum)
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 Sterndamm [Nebenfahrbahn]	NN 17648,5338 17697,5347
