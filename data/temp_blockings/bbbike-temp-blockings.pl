@@ -5949,7 +5949,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003518',
        data  => <<EOF,
-	2::inwork 22965,4124 23435,4179
+	2::inwork 22965,4124 22985,4139 23435,4179
 EOF
      },
      { from  => 1157839200, # 2006-09-10 00:00
@@ -21445,7 +21445,7 @@ EOF
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
 #: tempex: ((min(good_friday,YYYY04 sa1)-YYYY1030) & (tu-su, holiday)) & T10-T19 vvv
 	2::temp 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
-	2::temp 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
+	2::temp 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29059,3377 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
 #: tempex ^^^
 #: XXX_prog ^^^
 EOF
@@ -32151,7 +32151,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-06-17
+#: last_checked: 2021-06-19
 #: check_frequency: 30d
 #: next_check: 2021-09-30
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32500,7 +32500,7 @@ EOF
 #; also_indoor: traffic (G)
 #: priority: #B
 #: also_indoor: traffic (G)
-#: last_checked: 2021-06-12
+#: last_checked: 2021-06-19
 #: check_frequency: 14d
 	q4::inwork 15870,10938 15674,10851
 EOF

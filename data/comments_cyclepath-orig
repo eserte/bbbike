@@ -36,8 +36,8 @@ asphaltiert	RW2;RW8 24361,-11236 24380,-11123 24353,-10504
 guter Zweirichtungsradweg	RW;RW8? 24353,-10504 24343,-10276 24378,-10040 24278,-9878
 Gehweg für Radfahrer frei	RW1;RW1 12913,27641 12871,28012
 asphaltiert	RW2;RW8 12871,28012 12352,29576
-gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 33943,5568 33814,5618 33686,5660 33564,5702 33444,5744
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 33444,5744 33207,5820 33098,5856 32978,5895 32863,5933 32823,5946 32728,5942 32601,5936
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 34159,5449 33943,5568 33814,5618 33686,5660 33564,5702 33444,5744
+Gehweg für Radfahrer frei, Verbundsteinpflaster, Einmündungen gepflastert	RW1; 33444,5744 33207,5820 33098,5856 32978,5895 32863,5933 32823,5946 32728,5942 32601,5936
 hier keine Radweg-Schilder mehr, Verbundsteinpflaster	RW0; 32601,5936 32479,5931 32376,5926 32252,5917
 hier keine Radweg-Schilder mehr, Verbundsteinpflaster	RW0; 32252,5917 32376,5926 32479,5931 32601,5936
 #: note: allerdings ist die Ausschilderung nicht konsistent
@@ -1113,6 +1113,7 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 24356,-7159 24602,-7131 
 	RW2;RW2 17234,-2052 17167,-1981 17096,-1850 17094,-1840 17068,-1688 17102,-1553 17147,-1463 17215,-1403 17344,-1351
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 24453,-14859 24552,-15120 24621,-15234 24553,-15412
 Gehweg für Radfahrer frei	RW1; 26135,-6206 26099,-6131 26003,-5934 25996,-5921 26085,-5839
+Gehweg für Radfahrer frei, Gehwegplatten	RW1; 35048,4565 34983,4692 34915,4823 34789,5215
 ######################### User Contributions #################################
 #: by: Johannes (...schmeisser...)
 #: confirmed_by: mapillary
