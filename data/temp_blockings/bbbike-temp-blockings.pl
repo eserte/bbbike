@@ -30881,7 +30881,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="2"
-#: last_checked: 2021-06-17
+#: last_checked: 2021-06-20
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32151,7 +32151,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-06-19
+#: last_checked: 2021-06-20
 #: check_frequency: 30d
 #: next_check: 2021-09-30
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32279,9 +32279,9 @@ EOF
 #: next_check_id: AUER-2021
 #: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken); außerdem gibt's eine Einbahnstraßenregelung für Autos
 #: XXX laut rbb bis 28.6.2021
-#: also_indoor: traffic
+#: also_indoor: traffic (G,H)
 #: priority: #A vvv
-#: last_checked: 2021-06-14 vvv
+#: last_checked: 2021-06-20 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2021-06-28 vvv
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
