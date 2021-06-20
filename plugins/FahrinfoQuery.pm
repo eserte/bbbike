@@ -57,10 +57,14 @@ $use_search = 1 if !defined $use_search;
 
 my $bbbike_root = bbbike_root;
 
+######################################################################
+# configurable
 my $openvbb_download_size = '68MB';
 my $openvbb_year = 2021;
 my $openvbb_index = 1;
 my $openvbb_data_url = 'https://www.vbb.de/fileadmin/user_upload/VBB/Dokumente/API-Datensaetze/GTFS.zip';
+######################################################################
+
 my $openvbb_archive_file = "$bbbike_root/tmp/vbb_${openvbb_year}_${openvbb_index}.zip";
 my $openvbb_local_file = "$bbbike_root/tmp/vbb_${openvbb_year}_${openvbb_index}_stops.txt";
 my $openvbb_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_year}_${openvbb_index}.bbd";
