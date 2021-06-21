@@ -2349,7 +2349,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-06-09 (mapillary)
+#: last_checked: 2021-06-14 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -3771,7 +3771,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1633125599
        },
        {
-         'data' => '	q4::inwork; 21858,811 21902,877 21977,988 22034,1006 22092,999
+         'data' => '#: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/bruno-taut-strasse-bekommt-unter-anderem-eine-neue-asphaltdecke_a313839 (bis Juli 2022)
+	q4::inwork; 21858,811 21902,877 21977,988 22034,1006 22092,999
 ',
          'from' => 1625349600,
          'id' => 3394,

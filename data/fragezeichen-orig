@@ -2120,6 +2120,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: by: https://abendblatt-berlin.de/2021/01/14/berlin-gruenau-weiter-gehts-mit-dem-bohnsdorfer-kreisel/
 #: by: https://twitter.com/VIZ_Berlin/status/1353995525301919745 (Situation Richterstr./Buntzelstr.)
 #: by: https://twitter.com/VIZ_Berlin/status/1400813335705227264
+#: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/bruno-taut-strasse-bekommt-unter-anderem-eine-neue-asphaltdecke_a313839 (bis Juli 2022)
 #: XXX außerdem: zwei Zebrastreifen werden eingerichtet, an der Kreuzung Richterstr. wird eine Ampel eingerichtet (statt des jetzigen Zebrastreifens)
 #: XXX außerdem: Vorfahrtsregelung werden geändert (zum Am Falkenberg) oder spezifiziert (zur Buntzelstr.)
 #: XXX komplettes Bauende 2018
@@ -4290,9 +4291,11 @@ Pistoriusstr./Heinersdorfer Str.: Zebrastreifen geplant	?::projected 12228,16862
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1097928.php (im Zuge der Bauarbeiten für die Fahrradstraße Stargarder Str.)
 #: priority: #D
 #: last_checked: 2021-05-05
-#: check_frequency: 60d
+#: check_frequency: 90d
+#: next_check: 2021-11-30
 Dunckerstr./Stargarder Str.: Zebrastreifen geplant, evtl. jetzt in der Dunckerstr.?	?::projected 11629,15467 11595,15460 11556,15446
 # 
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
@@ -4562,10 +4565,11 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/noch-ignorieren-etliche-autofahrer-die-neuen-regelungen-auf-der-ossietzkystrasse_a280141 (noch 2020)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.1033458.php (Markierungsarbeiten ab April 2021, Freigabe im II. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/stargarder-strasse-2/ (Zeitraum Bau: 2. Quartal 2021 - 3. Quartal 2021)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1097928.php (Bauarbeiten ab Juli 2021, Abschluss voraussichtlich im November 2021)
 #: osm_watch: way id="11114397" version="29"
 #: last_checked: 2021-05-31
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2021-04-15
+#: check_frequency: 60d
+#: next_check: 2021-11-30
 Stargarder Str.: hier wird eine Fahrradstraße eingerichtet	?::projected 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
 #: XXX Hier sollen Fahrradstraßen entstehen vvv
@@ -8078,7 +8082,6 @@ Strandpromenade Helenesee: Qualität? Für Radfahrer befahrbar?	? 86415,-13453 861
 #: XXX laut osm: service/unclassified
 Helensee - Frankfurt: Qualität?	? 85840,-13209 86390,-12552
 Egarsee - Warthe: Qualität?	? 17978,89265 17842,89823 16743,90110 16377,90072
-Jakobshagen - Stabeshöhe: liegt im restlichen Abschnitt auch schlechtes Kopfsteinpflaster	? 19279,89763 18887,90814
 #: XXX zumindest das westliche Ende: Waldweg
 ausgeschilderte Radroute nach Cöthen: Qualität?	? 43189,42418 43891,42361 44539,42934 45390,43772 45812,43789
 #: XXX Stimmt "Langerönner Mühle" als Ausgangspunkt? Oder besser Rüdnitz?
@@ -8867,3 +8870,9 @@ Bergstr. (Schulzendorf): Qualität?	? 24045,-7112 24173,-7015
 Am Papenberg (Schulzendorf): Qualität? Ist die Straße verkehrsberuhigt?	? 24105,-7174 24122,-7213 24248,-7168 24243,-7135
 #: XXX laut osm asphalt+intermediate
 Walther-Rathenau-Str. (Schulzendorf): Qualität?	? 23296,-5280 22983,-5346
+# 
+#: source_id: LS/721-F/20/189
+#: osm_watch: way id="888613960" version="5"
+#: next_check: 2021-06-30
+Hönow - Neuenhagen: Bau eines Radwegs	?::inwork 27692,15066 28042,14883 28360,14626
+# 
