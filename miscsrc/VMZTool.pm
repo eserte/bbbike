@@ -15,7 +15,7 @@ package VMZTool;
 
 use v5.10.0; # named captures, defined-or
 use strict;
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -47,10 +47,10 @@ use constant ISO8601_NOW => do {
     $s =~ s{(\d\d)(\d\d)$}{$1:$2};
     $s;
 };
+# Brandenburg
 use constant BIBER_URL => "https://biberweb.vmz.services/v3/incidents/biber?bbox=10.66,51.2,15.68,53.74&detail=HIGH&lang=de&timeFrom=" . uri_escape(ISO8601_NOW) . "&_=" . (EPOCH_NOW*1000);
-
-use constant VMZ_2020_AUTH_URL => 'https://viz.berlin.de/wp-admin/admin-ajax.php';
-use constant VMZ_2020_DATA_URL => 'https://api.viz.berlin/incidents/streets?detail=high&lat=52.518463&lng=13.4014173&radius=60000';
+# Berlin
+use constant VMZ_2021_DATA_URL => 'https://api.viz.berlin.de/daten/baustellen_sperrungen.json';
 
 # historical URLs
 # the following two are out-of-order
@@ -63,6 +63,9 @@ use constant VMZ_RSS_URL => 'http://vmz-info.de/rss/iv';
 # @TIMER@ is replaced here:
 use constant MELDUNGSLISTE_BERLIN_URL_FMT => 'http://vmz-info.de/web/guest/2?p_p_id=vizmap_WAR_vizmapportlet_INSTANCE_Ds4N&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=ajaxPoiMapListUrl&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_count=1&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_locale=de_DE&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_url=https%3A%2F%2Fservices.mobilitaetsdienste.de%2Fviz%2Fproduction%2Fwms%2F2%2Fwms_list%2F%3Flang%3Dde&timer=@TIMER@&category=publictransportstationairport,trafficmessage&bbox=12.470944447998022,52.00192353741223,14.171078725341772,52.84438224389493';
 # former possible alternative, now a 404: https://viz.berlin.de/berlin-de-meldungen-iv?p_p_id=vizmessages_WAR_vizmessagesportlet_INSTANCE_tFN6ILA0izJo&p_p_lifecycle=2&p_p_state=maximized&p_p_mode=view&p_p_resource_id=ajaxPoiListUrl&p_p_cacheability=cacheLevelPage&_vizmessages_WAR_vizmessagesportlet_INSTANCE_tFN6ILA0izJo_locale=de_DE&_vizmessages_WAR_vizmessagesportlet_INSTANCE_tFN6ILA0izJo_url=https%3A%2F%2Fservices.mobilitaetsdienste.de%2Fviz%2Fproduction%2Fwms%2F2%2Fpoint_list%2F%3Flang%3Dde&timer=1518278557974&category=trafficmessage&state=BB
+# out-of-order since mid-June 2022
+use constant VMZ_2020_AUTH_URL => 'https://viz.berlin.de/wp-admin/admin-ajax.php';
+use constant VMZ_2020_DATA_URL => 'https://api.viz.berlin/incidents/streets?detail=high&lat=52.518463&lng=13.4014173&radius=60000';
 
 sub _trim ($);
 
@@ -96,6 +99,9 @@ sub set_existsid_old {
     my($self, $existsid_old_ref) = @_;
     $self->{existsid_old} = $existsid_old_ref;
 }
+
+######################################################################
+# Fetch methods
 
 sub fetch {
     my($self, $file) = @_;
@@ -169,6 +175,22 @@ sub fetch_vmz_2020 {
 	die "Failed while fetching " . VMZ_2020_DATA_URL . ": " . $resp->headers_as_string
     }
 }
+
+sub fetch_vmz_2021 {
+    my($self, $file) = @_;
+    my $ua = $self->{ua};
+
+    my $resp = $ua->get(
+			VMZ_2021_DATA_URL,
+			':content_file' => $file,
+		       );
+    if (!$resp->is_success) {
+	die "Failed while fetching " . VMZ_2021_DATA_URL . ":\n" . $resp->dump;
+    }
+}
+
+######################################################################
+# Parse methods
 
 sub parse {
     my($self, $file) = @_;
@@ -559,6 +581,117 @@ sub parse_vmz_2020 {
     );
 }
 
+sub parse_vmz_2021 {
+    my($self, $vmz_2021_file) = @_;
+
+    my $json = do { open my $fh, '<:raw', $vmz_2021_file or die $!; local $/; <$fh> };
+    my $data = decode_json $json;
+
+    my $place = 'Berlin';
+
+    my %id2rec;
+    my %place2rec;
+
+    if ($data->{type} ne 'FeatureCollection') {
+	die "Unexpected GeoJSON type '$data->{type}' (expected FeatureCollection)";
+    }
+
+    my $get_first_coordinate;
+    $get_first_coordinate = sub {
+	my($geometry) = @_;
+	if ($geometry->{type} eq 'GeometryCollection') {
+	    for my $sub_geometry (@{ $geometry->{geometries} }) {
+		my $coordinate = $get_first_coordinate->($sub_geometry);
+		return $coordinate if $coordinate;
+	    }
+	} elsif ($geometry->{type} eq 'Point') {
+	    return $geometry->{coordinates};
+	} elsif ($geometry->{type} eq 'LineString') {
+	    return $geometry->{coordinates}->[0];
+	} else {
+	    die "Don't know how to handle geometry type '$geometry->{type}'";
+	}
+    };
+
+    my @records = @{ $data->{features} };
+    my %seen_id;
+    for my $record (@records) {
+	my $properties = $record->{properties};
+	my $geometry   = $record->{geometry};
+
+	my $type = $properties->{subtype};
+
+	my $first_coordinate = $get_first_coordinate->($geometry);
+	if (!$first_coordinate) {
+	    warn "Cannot get coordinate for:\n";
+	    require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$record],[qw()])->Indent(1)->Useqq(1)->Sortkeys(1)->Terse(1)->Dump; # XXX
+	    next;
+	}
+	my($lon, $lat) = @$first_coordinate;
+
+	# no id, we need to make something up (based on coordinates of point
+	my $coord_for_id = join ",", $Karte::Polar::obj->trim_accuracy($lon, $lat);
+	my $validity_from_for_id = join ",", split /\s+/, $properties->{validity}->{from};
+	my $id = "viz2021:$coord_for_id,$validity_from_for_id";
+	while ($seen_id{$id}) {
+	    if (!($id =~ s{-(\d+)$}{"-".($1+1)}e)) {
+		$id .= "-1";
+	    }
+	}
+	$seen_id{$id} = 1;
+
+	my $validity = do {
+	    my $timeFrom = $properties->{validity}->{from};
+	    my $timeTo   = $properties->{validity}->{to};
+	    join(" ",
+		 (defined $timeFrom ? "vom " . $timeFrom : ()),
+		 (defined $timeTo   ? "bis " . $timeTo   : ()),
+		);
+	};
+	if (!$validity) {
+	    warn "Cannot parse validity for id $id: $@";
+	}
+
+	my $description = $properties->{content};
+	if ($validity) {
+	    # remove less accurate time from description
+	    $description =~ s{
+				 \s+
+				 \(
+				 (?:vsl\.\s+)?bis\s+(?:vsl\.\s+)?
+				 ((?:Anfang|Mitte|Ende)\s+)?
+				 (?:\d{1,2}/\d+|\d{4})
+				 \)$
+			     }{}x;
+	}
+
+	my $text =
+	    ($properties->{street} || "(!no street!)") . (defined $properties->{section} ? " $properties->{section}" : "") .
+	    (defined $description ? ":\n$description" : "\n") .
+	    (defined $validity ? ",\n$validity" : "") .
+	    "\n";
+
+	my $out_record =
+	    { place    => $place,
+	      id       => $id,
+	      points   => [ {lon => $lon, lat => $lat} ],
+	      type     => $type,
+	      text     => $text,
+	      strassen => [ $properties->{street} ],
+	    };
+
+	push @{ $place2rec{$place} }, $out_record;
+	$id2rec{$id} = $out_record;
+    }
+
+    (place2rec => \%place2rec,
+     id2rec    => \%id2rec,
+     parsed_at => scalar(localtime),
+    );
+}
+
+######################################################################
+# Other
 sub as_bbd {
     my($self, $place2rec, $old_store) = @_;
     my $old_id2rec = $old_store ? $old_store->{id2rec} : undef;
@@ -719,7 +852,8 @@ my $do_fetch = 1;
 my $do_test;
 my $do_aspurls = 0;
 my $do_vmz_2015_urls = 0;
-my $do_vmz_2020_urls = 1;
+my $do_vmz_2020_urls = 0;
+my $do_vmz_2021_urls = 1;
 my $do_biberurl = 1;
 my $existsid_current_file; # typically bbbike/tmp/bbbike-temp-blockings-optimized-existsid.yml
 my $existsid_all_file; # typically bbbike/tmp/bbbike-temp-blockings-existsid.yml
@@ -733,6 +867,7 @@ GetOptions("oldstore=s" => \$old_store_file,
 	   "aspurls!" => \$do_aspurls,
 	   "vmz-2015-urls!" => \$do_vmz_2015_urls,
 	   "vmz-2020-urls!" => \$do_vmz_2020_urls,
+	   "vmz-2021-urls!" => \$do_vmz_2021_urls,
 	   "biberurl!" => \$do_biberurl,
 	  )
     or die "usage?";
@@ -767,6 +902,7 @@ my($berlinsummaryfile);
 my($vmzrssfile);
 my($biberfile);
 my($vmz_2020_file);
+my($vmz_2021_file);
 if ($do_test) {
     my $samples_dir = "$ENV{HOME}/src/bbbike-aux/samples";
     if ($do_aspurls) {
@@ -779,6 +915,9 @@ if ($do_test) {
     }
     if ($do_vmz_2020_urls) {
 	$vmz_2020_file = "$samples_dir/viz-2020.json";
+    }
+    if ($do_vmz_2021_urls) {
+	$vmz_2021_file = "$samples_dir/viz-2021.json";
     }
     if ($do_biberurl) {
 	$biberfile  = "$samples_dir/biber.json";
@@ -800,6 +939,10 @@ if ($do_test) {
 	if ($do_vmz_2020_urls) {
 	    (undef,$vmz_2020_file) = tempfile(UNLINK => 1) or die $!;
 	    $vmz->fetch_vmz_2020($vmz_2020_file);
+	}
+	if ($do_vmz_2021_urls) {
+	    (undef,$vmz_2021_file) = tempfile(UNLINK => 1) or die $!;
+	    $vmz->fetch_vmz_2021($vmz_2021_file);
 	}
 	if ($do_biberurl) {
 	    (undef,$biberfile) = tempfile(UNLINK => 1) or die $!;
@@ -829,9 +972,11 @@ if ($biberfile) {
 	}
     }
 }
-if ($vmz_2020_file || ($berlinsummaryfile && $vmzrssfile)) {
+if ($vmz_2020_file || $vmz_2021_file || ($berlinsummaryfile && $vmzrssfile)) {
     my %berlin_res;
-    if ($vmz_2020_file) {
+    if ($vmz_2021_file) {
+	%berlin_res = $vmz->parse_vmz_2021($vmz_2021_file);
+    } elsif ($vmz_2020_file) {
 	%berlin_res = $vmz->parse_vmz_2020($vmz_2020_file);
     } elsif ($berlinsummaryfile && $vmzrssfile) {
 	my %berlin_rss_res = $vmz->parse_vmz_rss($vmzrssfile);
