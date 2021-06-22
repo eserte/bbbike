@@ -1,6 +1,6 @@
 ;;; bbbike.el --- editing BBBike .bbd files in GNU Emacs
 
-;; Copyright (C) 1997-2014,2016,2017,2018,2019,2020 Slaven Rezic
+;; Copyright (C) 1997-2014,2016-2021 Slaven Rezic
 
 ;; To use this major mode, put something like:
 ;;
@@ -40,6 +40,8 @@
 (defvar bbbike-addition-for-last-checked "")
 
 (setq bbbike-sourceid-viz-format "https://viz.berlin.de/2?p_p_id=vizmap_WAR_vizmapportlet_INSTANCE_Ds4N&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_cmd=traffic&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_submenu=traffic_default&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_poiId=News_id_%s&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_poiCoordX=%f&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_poiCoordY=%f")
+
+(setq bbbike-viz2021-regexp "viz2021:[0-9.,:]+")
 
 (defconst bbbike-font-lock-defaults
   '(bbbike-font-lock-keywords t nil nil nil (font-lock-multiline . nil)))
@@ -578,12 +580,14 @@
 
 (defun bbbike-insert-source-id ()
   (interactive)
-  (let ((sel (bbbike--get-x-selection)))
-    (if (string-match "\t\\([A-Za-z0-9_/-]+\\)\t\\(INUSE\\)?$" sel)
-	(let ((source-id (substring sel (match-beginning 1) (match-end 1))))
-	  (beginning-of-line)
-	  (insert (concat "#: source_id: " source-id "\n")))
-      (error "No X selection or X selection does not contain a source-id"))))
+  (let ((sel (bbbike--get-x-selection))
+	source-id)
+    (cond
+     ((string-match "\t\\([A-Za-z0-9_/-]+\\)\t\\(INUSE\\)?$" sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
+     ((string-match (concat "\\(" bbbike-viz2021-regexp "\\)") sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
+     (t (error "No X selection or X selection does not contain a source-id")))
+    (beginning-of-line)
+    (insert (concat "#: source_id: " source-id "\n"))))
 
 (setq bbbike-next-check-id-regexp "^#:[ ]*\\(next_check_id\\):?[ ]*\\([^ \n]+\\)")
 
@@ -623,8 +627,8 @@
   'face 'bbbike-button
   'help-echo "Click button to browse (cached) URL")
 
-(setq bbbike-sourceid-in-pl-regexp  "^[ ]*source_id[ ]*=>[ ]*'\\([0-9][0-9B]+\\|LMS[-_][^'\"]*\\|LS/[A-Z0-9/-]*\\)")
-(setq bbbike-sourceid-in-bbd-regexp "^#:[ ]*source_id:?[ ]*\\([0-9][0-9B]+\\|LMS[-_][^ \n]*\\|LS/[A-Z0-9/-]*\\)")
+(setq bbbike-sourceid-in-pl-regexp  (concat "^[ ]*source_id[ ]*=>[ ]*'\\(" bbbike-viz2021-regexp "\\|[0-9][0-9B]+\\|LMS[-_][^'\"]*\\|LS/[A-Z0-9/-]*\\)"))
+(setq bbbike-sourceid-in-bbd-regexp (concat "^#:[ ]*source_id:?[ ]*\\(" bbbike-viz2021-regexp "\\|[0-9][0-9B]+\\|LMS[-_][^ \n]*\\|LS/[A-Z0-9/-]*\\)"))
 (setq bbbike-vmz-diff-file "~/cache/misc/diffnewvmz.bbd")
 
 ;; old definition when it was possible to create deeplinks for VMZ ids
