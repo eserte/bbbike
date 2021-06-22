@@ -198,7 +198,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # REMOVED --- #: also_indoor: traffic --- #: last_checked: 2021-04-13 --- Singerstr.: Baustelle, etwa 50m Fahrbahn gesperrt	q2::inwork 11613,12408 11497,12463
 # 
 #: by: https://www.wbm.de/neubau-berlin/mitte/ifflandstrasse/ (Fertigstellung vsl. 01/2022)
-#: osm_watch: way id="822127127" version="1"
+#: osm_watch: way id="822127127" version="2"
 #: osm_watch: way id="736448990" version="8"
 #: last_checked: 2021-04-19 (daf)
 #: check_frequency: 90d
@@ -243,7 +243,7 @@ Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1- 9444,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/volt-berlin-baufeld-e3a.312/page-8#post-14027
 #: XXX Bebauungsplanentwurf I-43a "S¸dliche Alexanderstraﬂe": entsteht hier eine Planstraﬂe?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straﬂe, Fahrbahn ist noch abgesperrt
-#: last_checked: 2021-06-13
+#: last_checked: 2021-06-22
 #: check_frequency: 90d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
@@ -270,7 +270,10 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2018 --- 
 # REMOVED (mittlerweile komplett gesperrt) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021 --- #: osm_watch: way id="339201210" version="3" --- #: also_indoor: search Neue Roﬂstraﬂenbr¸cke --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 21d --- Neue Roﬂstraﬂenbr¸cke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: last_checked: 2021-06-15 vvv --- #: next_check: 2021-06-18 vvv --- (Umfahrung Baustelle Neue Roﬂstraﬂenbr¸cke): einige Fuﬂg‰nger	q3::inwork 10680,11875 10650,11909 10642,11901 10590,11840 10599,11819 --- Neue Roﬂstr.: Fahrbahn gesperrt	q4::inwork 10687,11853 10722,11816 --- #: next_check ^^^ --- #: last_checked ^^^
-# REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: osm_watch: way id="626237089" version="3" --- # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roﬂstraﬂenbr¸cke die Zufahrt komplett gesperrt (bis 29. M‰rz 2019?) --- #: source_id: 2147343739 --- #: source_id: 2147343772 --- #: last_checked: 2021-04-27 --- #: next_check: 2021-06-18 --- M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke, Restaurantbetrieb	q2::inwork 10687,11853 10869,11949
+# REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: osm_watch: way id="626237089" version="3" --- # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roﬂstraﬂenbr¸cke die Zufahrt komplett gesperrt (bis 29. M‰rz 2019?) --- #: source_id: 2147343739 --- #: source_id: 2147343772 --- 
+#: last_checked: 2021-06-22
+# REMOVED --- #: next_check: 2021-06-18
+M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke, Bordstein	q2::inwork 10687,11853 10869,11949
 # REMOVED --- #: source_id: 2147341587 --- #: last_checked: 2017-11-01 vvv --- #: check_frequency: 21d vvv --- J‰gerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q2::inwork 9195,11972 9393,12000 --- J‰gerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q3::inwork 9393,12000 9523,12019
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # REMOVED --- #: last_checked: 2016-06-01 --- Kommandantenstr.: Bauarbeiten, Einbahnstraﬂe	q2::inwork; 10437,11352 10389,11390
@@ -298,6 +301,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # REMOVED --- Jerusalemer Str.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9925,11565 9936,11469
 # 
 #: source_id: 2147347007 (bis 25.6.2022)
+#: source_id: viz2021:13.381216,52.513773,22.03.2021,14:44
 #: last_checked: 2021-05-22
 #: check_frequency: 90d
 #: next_check: 2022-06-25

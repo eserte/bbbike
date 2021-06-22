@@ -30881,7 +30881,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="2"
-#: last_checked: 2021-06-20
+#: last_checked: 2021-06-22
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32182,6 +32182,7 @@ EOF
        type  => 'handicap',
        source_id => '2147346935', # bis 14.10.2021
        data  => <<EOF,
+#: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00
 	q4::inwork 4894,6509 4875,6552 4786,6717
 EOF
      },

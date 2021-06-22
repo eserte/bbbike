@@ -971,7 +971,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? auﬂerdem: wird die Colbestr. zur Fahrradstraﬂe?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erw‰hnung)
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-06-20
+#: last_checked: 2021-06-22
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -8677,7 +8677,7 @@ Straﬂe 74: Asphalt	Q0- 12583,22428 12696,22455 12821,22437 12855,22431 13136,223
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: wosch
 #: XXX eventuell wird der Asphalt noch glatter gemacht
-#: last_checked: 2021-05-09 (mapillary)
+#: last_checked: 2021-06-19 (mapillary)
 Kˆnigsteinbr¸cke: welliger Asphalt	Q1 13136,22397 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378 13394,22373
 Straﬂe 86: Asphalt	Q0 13805,22935 13726,22860
 Straﬂe 86: unbefestigt	Q2 13726,22860 13699,22834
@@ -11408,9 +11408,17 @@ Max-Herrmann-Str.: Asphalt	Q0 21131,16680 21238,16627 21278,16685 21295,16710 21
 Radweg zur Detmolder Str.: Verbundsteinpflaster/Gehwegplatten	Q1; 4461,8105 4349,8118 4280,8188
 (Havelchaussee - zum Havelufer): Kopfsteinpflaster	Q2- -3807,4794 -3854,4819 -3940,4800
 Cimbernstr. [Stichstraﬂe] (Nikolassee): schlechtes Kopfsteinpflaster	Q3 -3544,2003 -3616,1877
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/strabag-ag-erneuert-fahrbahn-der-heinersdorfer-strasse_a313632 (28.6.2021 - 30.7.2021) vvv
+#: add_fragezeichen: Ist die Qualit‰t der Fahrbahn nach den Bauarbeiten besser geworden? vvv
+#: priority: #B vvv
+#: next_check: 2021-07-30 vvv
 Heinersdorfer Str.: Asphalt mit einigen Sch‰den	Q0- 5223,1318 5201,1227 5178,1123
 Heinersdorfer Str.: Asphalt mit Sch‰den	Q1 5223,1318 5273,1456 5299,1524 5335,1616
 Heinersdorfer Str.: Asphalt mit einigen Sch‰den	Q0- 5335,1616 5396,1774 5452,1940
+#: next_check ^^^
+#: priority ^^^
+#: add_fragezeichen ^^^
+#: by ^^^
 (Christoph-Ruden-Str. - Buckower Damm): Asphalt	Q0 12725,1429 12939,1469
 (Olivaer Platz, Wielandstr. - Bayerische Str.): Asphalt	Q0 4360,10320 4352,10260
 (Tegeler Forst): Waldweg	Q2+ 2088,22798 2047,22829
