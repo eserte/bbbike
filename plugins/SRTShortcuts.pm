@@ -760,6 +760,9 @@ EOF
 		[Button => $do_compound->("live bbbikeleaflet.cgi"),
 		 -command => sub { current_route_in_bbbikeleaflet_cgi(live => 1) },
 		],
+		[Button => $do_compound->("as selection for live bbbikeleaflet.cgi"),
+		 -command => sub { current_route_in_bbbikeleaflet_cgi(live => 1, selection => 1) },
+		],
 		[Button => $do_compound->("as QRCode for live bbbikeleaflet.cgi"),
 		 -command => sub { current_route_as_qrcode(in => "bbbikeleaflet-live") },
 		],
@@ -1926,6 +1929,7 @@ sub current_route_in_bbbike_cgi {
 sub current_route_in_bbbikeleaflet_cgi {
     my(%opts) = @_;
     my $live = delete $opts{live};
+    my $selection = delete $opts{selection};
 
     if (!@main::realcoords) {
 	main::status_message("No current route", "warn");
@@ -1946,14 +1950,23 @@ sub current_route_in_bbbikeleaflet_cgi {
     }
 
     require BBBikeUtil;
-    my $url = BBBikeUtil::uri_with_query
-	($cgiurl,
-	 [ %opts,
-	   ($gple ? (gple => $gple) : (coords => $coords_string)),
-	 ]);
-    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
-    require WWWBrowser;
-    WWWBrowser::start_browser($url);
+    my %coord_params = ($gple ? (gple => $gple) : (coords => $coords_string));
+    my $url;
+    if ($selection) {
+	# use raw_query here to make URL shorter
+	$url = BBBikeUtil::uri_with_query($cgiurl, [%opts], raw_query => [%coord_params]);
+	$main::c->SelectionHandle
+	    (sub {
+		 my($offset, $maxbytes) = @_;
+		 substr($url, $offset, $maxbytes);
+	     });
+    } else {
+	# safer, especially avoiding possible shell metacharacters
+	$url = BBBikeUtil::uri_with_query($cgiurl, [%opts, %coord_params]);
+	main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+	require WWWBrowser;
+	WWWBrowser::start_browser($url);
+    }
 }
 
 sub current_route_as_qrcode {
