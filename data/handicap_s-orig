@@ -299,13 +299,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # REMOVED --- #: last_checked: 2017-04-19 --- #: next_check: 2017-04-28 --- Sebastianstr.: Bauarbeiten, auf Gehweg ausweichen	q3::inwork 10640,11564 10818,11269
 # REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_24_2713_2792_online.pdf (Verbreiterung)
 # REMOVED --- Jerusalemer Str.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9925,11565 9936,11469
-# 
-#: source_id: 2147347007 (bis 25.6.2022)
-#: source_id: viz2021:13.381216,52.513773,22.03.2021,14:44
-#: last_checked: 2021-05-22
-#: check_frequency: 90d
-#: next_check: 2022-06-25
-Hannah-Arendt-Str.: Fahrbahn Richtung Westen gesperrt	q3::inwork; 8901,12008 8844,11984
+# REMOVED (mittlerweile entfernt) --- #: source_id: 2147347007 (bis 25.6.2022) --- #: source_id: viz2021:13.381216,52.513773,22.03.2021,14:44 --- #: last_checked: 2021-05-22 --- #: check_frequency: 90d --- #: next_check: 2022-06-25 --- Hannah-Arendt-Str.: Fahrbahn Richtung Westen gesperrt	q3::inwork; 8901,12008 8844,11984
 # 
 #: also_indoor: traffic (H,G)
 #: osm_watch: way id="4597320" version="19"
@@ -380,7 +374,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
 #: priority: #A
-#: last_checked: 2021-06-10 (daf)
+#: last_checked: 2021-06-23 (daf)
 #: check_frequency: 14d
 Schinkelplatz: Fahrbahn wird neu gemacht	q4::inwork 9984,12426 9990,12404 9996,12372
 # 
@@ -722,7 +716,7 @@ S-Bhf. Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16878,9875 1690
 # 
 #: XXX laut rbb und Halteverbotsschildern bis 31.08.2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-05-26
+#: last_checked: 2021-05-31 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2021-08-31
 #: valid: -20210831

@@ -29103,6 +29103,7 @@ EOF
 #: by: https://viz.berlin.de/2021/01/langhansstr-sperrung/
 #: by: https://www.bahninfo-forum.de/read.php?9,691318,693319#msg-693319
 #: by: https://www.bahninfo-forum.de/read.php?9,691318,703556#msg-703556 (angeblich fährt die Straßenbahn wieder ab 24.06.2021)
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=74297 (Straßebahn fährt erst ab 1.7.2021)
 #: XXX teilweise existieren auch Einschränkungen beim Überqueren der Langhansstr., auch für Fußgänger (gesehen: 2021-02-17 an der Behaimstr.)
 #: also_indoor: traffic (H,G)
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
@@ -29110,7 +29111,7 @@ EOF
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 #: last_checked: 2021-06-14
 # REMOVED --- #: check_frequency: 60d
-#: next_check: 2021-06-24
+#: next_check: 2021-07-01
 # REMOVED --- #: next_check: 2021-08-13
 	q4::inwork 13508,15912 13312,16027 13189,16089 12943,16214 12859,16255 12797,16285 12725,16321 12564,16399 12399,16479 12189,16578
 EOF
@@ -30881,7 +30882,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="2"
-#: last_checked: 2021-06-22
+#: last_checked: 2021-06-23
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32692,6 +32693,7 @@ EOF
        type  => 'handicap',
        source_id => '2147347210',
        data  => <<EOF,
+#: source_id: viz2021:13.517342,52.454467,25.05.2021,10:00
 # REMOVED (hier mittlerweile offen) ---	q3::inwork 18080,5376 18245,5551
 	q3::inwork 18245,5551 18370,5511 18680,5413 18955,5320
 EOF
@@ -32820,6 +32822,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1095642.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/bruno-taut-strasse-bekommt-unter-anderem-eine-neue-asphaltdecke_a313839 (bis Juli 2022)
+#: by: https://abendblatt-berlin.de/2021/06/23/mit-den-ferien-kommen-die-baustellen/
 	q4::inwork; 21858,811 21902,877 21977,988 22034,1006 22092,999
 EOF
      },
@@ -32837,6 +32840,15 @@ EOF
 #: last_checked: 2021-05-14
 #: next_check: 2021-06-18
 	q3::inwork 7647,9196 7735,9121 7790,9126
+EOF
+     },
+     { from  => 1624744800, # 2021-06-27 00:00
+       until => 1627682399, # 2021-07-30 23:59
+       text  => 'Heinersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, vom 28. Juni 2021 bis 30. Juli 2021',
+       type  => 'handicap',
+       source_id => 'https://abendblatt-berlin.de/2021/06/23/mit-den-ferien-kommen-die-baustellen/',
+       data  => <<EOF,
+	q4::inwork 5452,1940 5396,1774 5335,1616 5299,1524 5273,1456 5223,1318 5201,1227 5178,1123
 EOF
      },
     );

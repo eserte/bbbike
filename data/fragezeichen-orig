@@ -3318,9 +3318,11 @@ Isenburger Weg: Neubau der Straﬂe geplant	?::projected -7819,15342 -7867,15185 -
 # 
 #: by: https://twitter.com/VIZ_Berlin/status/1400108218588729347
 #: by: https://viz.berlin.de/2021/05/schnellerstrasse/ (3.+4. Bauabschnitt)
+#: source_id: viz2021:13.523904,52.453131,28.06.2021,07:00 (28.6.2021 - 16.7.2021)
 #: also_indoor: traffic (H,G)
 #: last_checked: 2021-05-29
-#: check_frequency: 23d
+# REMOVED --- #: check_frequency: 23d
+#: next_check: 2021-06-28
 Schnellerstr.: Bauarbeiten werden sp‰ter zwischen Kˆllnische Str. bis Bruno-B¸rgel-Weg erweitert	?; 18955,5320 19037,5316 19186,5310 19328,5304
 # 
 # REMOVED (Sperrung kurz vor der Budapester Str.; F¸hrung f¸r Radfahrer existiert) --- #: XXX Kantstraﬂe (Charlottenburg) Richtung Budapester Straﬂe zwischen Joahimsthaler Straﬂe und Budapesester Straﬂe: Fernw‰rmebauarbeiten, Fahrtrichtung gesperrt, vom 06.05.2021 09:00 Uhr bis 29.10.2021 17:00 Uhr --- #: source_id: 2147347169 --- Kantstr.: sind Radfahrer von der Sperrung betroffen?	?; 5488,10978 5613,10963 5652,11004
@@ -3688,6 +3690,7 @@ Alt-Treptow, vor der Sternwarte: Planung einer ‹berquerungshilfe, evtl. eine Amp
 #: by: https://viz.berlin.de/2021/03/neue-krugallee/
 #: note: laut rbb bis 11.6.2021
 #: source_id: 2147347048 (bis 16.7.2021)
+#: source_id: viz2021:13.479484,52.484479,30.04.2021,08:00 (bis 16.7.2021)
 #: last_checked: 2021-05-24 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2021-07-16
@@ -4139,10 +4142,10 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9981 (Einwohnerfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10019
 #: osm_watch: way id="128266207" version="13"
-#: last_checked: 2021-06-13 vvv
+#: last_checked: 2021-06-23 vvv
 Lausitzer Platz: entsteht hier eine Fuﬂg‰ngerzone?	? 12212,10440 12197,10494 12172,10585
 #: osm_watch: way id="188865510" version="8"
-#: note: hier mittlerweile mit einem provisorischen "Verbot f¸r Fahrzeuge aller Art"-Schild
+#: note: an den Einfahrten gibt es Poller, aber nur seitlich
 Lausitzer Platz: entsteht hier eine Fuﬂg‰ngerzone?	? 12274,10612 12328,10442
 # REMOVED (mittlerweile schon teilweise ausgeschildert) --- #: osm_watch: way id="188865512" version="9" --- #: XXX laut osm stehen nun die Schilder ("Fahrrad frei") (stimmt aber nicht!) --- #: check_frequency: 7d --- Lausitzer Platz: kommen hier noch die Fuﬂg‰ngerzonen-Schilder?	? 12172,10585 12274,10612
 #: last_checked ^^^
@@ -4700,7 +4703,7 @@ Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="13"
 #: also_indoor: traffic
-#: last_checked: 2021-04-25
+#: last_checked: 2021-06-23 (traffic)
 #: check_frequency: 60d
 Kollwitzstr.: hat die Einziehung von Straﬂenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
 # 
@@ -5248,7 +5251,7 @@ Sophie-Farber-Str.: neue Straﬂe geplant	?::projected -8870,-2876 -9138,-2814
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9915
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036312309982/312309982/00343273/73-Anlagen/01/BVV_VzK_B-PlanVI46-1_RVO_Beschluss.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10024
-#: last_checked: 2021-05-24
+#: last_checked: 2021-06-23
 #: check_frequency: 360d
 Kleinbeerenstr. - Groﬂbeerenstr.: geplanter Weg im Zuge des Bebauungsplans VI-46-1	?::projected 8979,10485 9192,10528
 # 
@@ -5709,7 +5712,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::projected 4342,9301 4417,93
 # 
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: XXX wo genau?
-#: last_checked: 2021-06-22
+#: last_checked: 2021-06-23
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
