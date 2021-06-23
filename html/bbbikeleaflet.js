@@ -214,6 +214,10 @@ function doLeaflet() {
     var osmAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="https://www.openstreetmap.org/">OpenStreetMap</a> Contributors';
     var osmTileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 19, attribution: osmAttribution});
 
+    var cyclosmUrl = 'https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png';
+    var cyclosmAttribution = '\u00a9 <a href="https://www.openstreetmap.org/">OpenStreetMap</a> Contributors. Tiles style by <a href="https://www.cyclosm.org">CyclOSM</a> hosted by <a href="https://openstreetmap.fr">OpenStreetMap France</a>';
+    var cyclosmTileLayer = new L.TileLayer(cyclosmUrl, {maxZoom: 19, attribution: cyclosmAttribution});
+
     var berlinAerialYear = '2019';
     var berlinAerialNewestUrl = 'https://tiles.codefor.de/berlin-' + berlinAerialYear + '/{z}/{x}/{y}.png';
     var berlinAerialAttribution = M("Kartendaten") + ': <a href="https://fbinter.stadt-berlin.de/fb/berlin/service_intern.jsp?id=a_luftbild' + berlinAerialYear + '_rgb@senstadt&type=FEED">Geoportal Berlin / Digitale farbige Orthophotos ' + berlinAerialYear + '</a>';
@@ -292,7 +296,7 @@ function doLeaflet() {
 	{label:M("Fragezeichen"),    layer:bbbikeUnknownTileLayer,    abbrev:'FZ'}
     ];
 
-    var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer }; //, "Berlin Aerial":berlinAerialTileLayer };
+    var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer, "CyclOSM":cyclosmTileLayer }; //, "Berlin Aerial":berlinAerialTileLayer };
     var overlayMaps = {};
     for(var i=0; i<overlayDefs.length; i++) {
         overlayMaps[overlayDefs[i].label] = overlayDefs[i].layer;
