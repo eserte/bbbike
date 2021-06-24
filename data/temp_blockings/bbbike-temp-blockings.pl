@@ -28617,7 +28617,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-06-14 (mapillary)
+#: last_checked: 2021-06-22 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -32649,6 +32649,7 @@ EOF
        data  => <<EOF,
 #: note: laut Schild der Wasserbetriebe bis August 2021
 #: source_id: 2147347187 (Anbindung Soorstraße gesperrt, bis 25.6.2021)
+#: source_id: viz2021:13.278934,52.506793,17.05.2021,07:00 (bis 9.7.2021)
 #: also_indoor: traffic
 #: last_checked: 2021-05-24
 #: check_frequency: 60d
