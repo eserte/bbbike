@@ -2764,7 +2764,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="2"
-#: last_checked: 2021-06-23
+#: last_checked: 2021-06-25
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -3431,7 +3431,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: add_fragezeichen: Wie lange gehen die Bauarbeiten?
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-05-22
+#: last_checked: 2021-06-25
 	q4::inwork; 7771,9479 7829,9723
 ',
          'from' => undef,
@@ -3812,6 +3812,26 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Heinersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, vom 28. Juni 2021 bis 30. Juli 2021',
          'type' => 'handicap',
          'until' => 1627682399
+       },
+       {
+         'data' => '	q4::inwork; 3716,2063 3746,2108 3805,2196
+',
+         'from' => 1626559200,
+         'id' => 3397,
+         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1099864.php',
+         'text' => 'Goerzallee: Bauarbeiten, Fahrbahn zwischen Ortlerweg und Lausanner Str. Richtung Norden gesperrt, vom 19.07. bis 06.08.2021',
+         'type' => 'handicap',
+         'until' => 1628287199
+       },
+       {
+         'data' => '	q4::inwork; 6055,4950 6182,4931 6187,4930 6215,4926 6276,4915 6354,4901 6385,4896 6531,4865
+',
+         'from' => 1627768800,
+         'id' => 3398,
+         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1099818.php',
+         'text' => 'Steglitzer Damm: Bauarbeiten, Fahrbahn zwischen Bismarckstr. und Heinrich-Seidel-Str. Richtung Osten gesperrt, vom 02.08. bis zum 24.09.2021',
+         'type' => 'handicap',
+         'until' => 1632520799
        }
      
 );

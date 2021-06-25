@@ -30882,7 +30882,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="2"
-#: last_checked: 2021-06-23
+#: last_checked: 2021-06-25
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -32477,7 +32477,7 @@ EOF
 #: add_fragezeichen: Wie lange gehen die Bauarbeiten?
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-05-22
+#: last_checked: 2021-06-25
 	q4::inwork; 7771,9479 7829,9723
 EOF
      },
@@ -32850,6 +32850,24 @@ EOF
        source_id => 'https://abendblatt-berlin.de/2021/06/23/mit-den-ferien-kommen-die-baustellen/',
        data  => <<EOF,
 	q4::inwork 5452,1940 5396,1774 5335,1616 5299,1524 5273,1456 5223,1318 5201,1227 5178,1123
+EOF
+     },
+     { from  => 1626559200, # 2021-07-18 00:00
+       until => 1628287199, # 2021-08-06 23:59
+       text  => 'Goerzallee: Bauarbeiten, Fahrbahn zwischen Ortlerweg und Lausanner Str. Richtung Norden gesperrt, vom 19.07. bis 06.08.2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1099864.php',
+       data  => <<EOF,
+	q4::inwork; 3716,2063 3746,2108 3805,2196
+EOF
+     },
+     { from  => 1627768800, # 2021-08-01 00:00
+       until => 1632520799, # 2021-09-24 23:59
+       text  => 'Steglitzer Damm: Bauarbeiten, Fahrbahn zwischen Bismarckstr. und Heinrich-Seidel-Str. Richtung Osten gesperrt, vom 02.08. bis zum 24.09.2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1099818.php',
+       data  => <<EOF,
+	q4::inwork; 6055,4950 6182,4931 6187,4930 6215,4926 6276,4915 6354,4901 6385,4896 6531,4865
 EOF
      },
     );
