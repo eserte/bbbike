@@ -92,22 +92,30 @@ Bergholz	OS 60560,115838
 #: linked ^^^
 # 
 Löcknitz|(Vorpommern)	OS 62398,117458
+# 
 Woddow	OS 61301,108826
 Woddow	OS 61261,109631
 Woddow	OS 60927,108774
+# 
 Bagemühl	OS 62028,106866
 Bagemühl	OS 61950,106669
+# 
 Schwaneberg	OS 57161,102074
 Schwaneberg	OS 56809,102741
 Schwaneberg	OS 57280,103371
+# 
 Schmölln	OS 56505,100978
 Schmölln	OS 55368,100124
 Schmölln	OS 56188,99924
+Schmölln	OS 55708,99673
+# 
 Grünz	OS 58458,98537
 Grünz	OS 58109,98687
+# 
 Grünberg	OS 59525,107015
 Grünberg	OS 59120,106895
 Grünberg	OS 58430,106415
+# 
 Storkow|(bei Penkun)	OS 68196,101164
 Storkow|(bei Penkun)	OS 67711,101930
 #: linked: Frauenhagen|(bei Brüssow) vvv
@@ -116,48 +124,67 @@ Frauenhagen	OS 59055,109122
 #: linked ^^^
 Sommersdorf	OS 60988,98694
 Sommersdorf	OS 61380,98335
+# 
 Wartin	OS 60084,95438
 Wartin	OS 60118,94772
 Wartin	OS 59364,92905
+# 
 Casekow	OS 63500,89978
 Casekow	OS 63551,91426
 Casekow	OS 63000,90800
 Casekow	OS 63880,90358
+# 
 Hohenselchow	OS 67576,89928
 Hohenselchow	OS 69263,89804
+# 
 Heinrichshof	OS 70031,89844
 Heinrichshof	OS 70368,90270
+# 
 Gartz|(Oder)	OS 73713,90988
 #: XXX geschätzte Position
 Gartz|(Oder)	OS 74369,90701
+# 
 Luckow|(Luckow-Petershagen)	OS 63454,93330
+# 
 Woltersdorf|bei Casekow	OS 64716,86611
 Woltersdorf|bei Casekow	OS 64113,87461
+# 
 Kunow	OS 67346,82442
 Kunow	OS 66779,83230
+# 
 Hohenfelde	OS 68798,82097
 Hohenfelde	OS 68085,82295
+# 
 Tantow	OS 73449,98133
+# 
 Neurochlitz	OS 76909,98115
 Neurochlitz	OS 76540,98841
+# 
 Staffelde|(bei Mescherin)	OS 78427,97592
 Staffelde|(bei Mescherin)	OS 78481,96992
+# 
 Vierraden	OS 71582,78858
 Vierraden	OS 69531,77125
 Vierraden	OS 70401,77887
 #: XXX geschätzte Position
 Vierraden	OS 70014,78585
+# 
 Blumenhagen	OS 69565,79460
 Blumenhagen	OS 69356,80336
+# 
 Schwedt|/Oder	OS 70570,76523
 Schwedt|/Oder	OS 69364,76624
 Schwedt|/Oder	OS 66229,75625
 Schwedt|/Oder	OS 69463,72954
+# 
 #: linked Heinersdorf|bei Schwedt
 Heinersdorf	OS 64034,77011
+# 
 Hohenwutzen	OS 58642,50396
 Hohenwutzen	OS 58657,50391
+# 
 Vevais	OS 59908,33095
+# 
 Möglin	OS 57517,28972
 # 
 Reichenow	OS 56092,27341
@@ -206,14 +233,17 @@ Schenkenberg	OS 45241,107625
 # 
 #: linked: Tornow|(bei Schönfeld, Uckermark) vvv
 Tornow	OS 45999,110316
-Tornow	OS 45767,110624
+# REMOVED (hier nicht mehr) --- Tornow	OS 45767,110624
 Tornow	OS 46634,111116
+Tornow	OS 45421,110742
 #: linked ^^^
 # 
 #: linked: Karlshof|(bei Tornow) vvv
 Karlshof	OS 47311,110882
 Karlshof	OS 47461,110852
 #: linked ^^^
+# 
+Göritz	OS 43232,111943
 # 
 Ziemkendorf	OS 49759,102325
 # 
@@ -554,6 +584,7 @@ Briest	OS 53199,83830
 # 
 Golm|(Uckermark)	OS 52284,83685
 Golm|(Uckermark)	OS 51584,84367
+Golm|(Uckermark)	OS 52451,82722
 # 
 Grünow|(bei Passow)	OS 54692,80787
 Grünow|(bei Passow)	OS 54391,80211
@@ -592,8 +623,10 @@ Greiffenberg	OS 46820,76962
 Greiffenberg	OS 46704,75833
 #: by: mapillary
 Greiffenberg	OS 45441,76686
-#: by: mapillary
-Greiffenberg	OS 44829,75342
+Greiffenberg	OS 44842,75350
+# 
+Günterberg	OS 47711,78650
+Günterberg	OS  47114,77557
 # 
 Wolletz	OS 43680,69754
 Wolletz	OS 42369,69534
@@ -605,9 +638,10 @@ Glambeck	OS 37224,68451
 Parlow	OS 34170,69176
 Parlow	OS 33430,68870
 # 
-Joachimsthal	OS 32390,65225
+Joachimsthal	OS 32373,65267
 Joachimsthal	OS 32876,62792
 Joachimsthal	OS 31877,65202
+Joachimsthal	OS 32890,65494
 # 
 Friedrichswalde	OS 30282,68716
 Friedrichswalde	OS 29834,70069
@@ -1186,43 +1220,63 @@ Prettin	OS -20868,-83414
 Seydewitz	OS -2157,-110048
 Schirmenitz	OS -1856,-113312
 Neuseußlitz	OS 13575,-127837
+# 
 Melchow	OS 29468,41438
 Melchow	OS 30754,42070
+# 
 Spechthausen	OS 34802,45368
 Spechthausen	OS 35532,45548
+# 
 Eberswalde	OS 36952,47145
 Eberswalde	OS 38503,50622
 Eberswalde	OS 38683,47327
+# 
 Sandkrug	OS 41706,54055
 Sandkrug	OS 40945,53204
+# 
 Chorin	OS 41777,54435
 Chorin	OS 42468,55687
 Chorin	OS 40667,55633
+# 
 Serwest	OS 44404,58717
 Serwest	OS 45601,60016
+# 
 Rosinthal	OHT 46964,62237
 Rosinthal	OHT 47099,62506
+# 
 Frauenhagen	OS 52018,74907
 Frauenhagen	OS 52644,75295
 Frauenhagen	OS 51865,76083
+# 
 Biesenbrow	OS 50632,79683
 Biesenbrow	OS 50620,80949
+Biesenbrow	OS 50255,80089
+# 
 Leopoldsthal	OS 50228,82634
 Leopoldsthal	OS 48928,83932
+# 
 Hirschfelde	OS 37353,25904
 Hirschfelde	OS 36525,26865
+# 
 Wesendahl	OS 38520,22567
 Wesendahl	OS 38547,22511
+# 
 Gielsdorf	OS 42404,22684
 Gielsdorf	OS 41705,22792
 Gielsdorf	OS 41315,23410
+# 
 Züssow	OS 16713,175884
+# 
 Krebsow	OS 16785,177195
+# 
 Kessin	OS 15260,177762
 Kessin	OS 14773,177640
+# 
 Schlagtow	OS 13703,178222
 Schlagtow	OS 12820,178617
+# 
 Groß Kiesow	OS 12481,178890
+# 
 Albertshof	OS 26443,33278
 # 
 Tempelfelde	OS 31134,33924
@@ -1255,6 +1309,8 @@ Gersdorf	OS 42225,41215
 #: by: mapillary
 Gersdorf	OS 43270,40949
 # 
+Finowfurt	OS 27796,47909
+# 
 Hohenfinow	OS 44571,45434
 Hohenfinow	OS 45435,46313
 #: by: mapillary
@@ -1277,9 +1333,13 @@ Niederfinow	OS 45322,48104
 Niederfinow	OS 42849,49552
 Niederfinow	OS 43609,49473
 # 
+#: linked: Trampe|bei Grünberg vvv
+Trampe	OS 57345,107207
+Trampe	OS 57498,107334
+#: linked ^^^
+# 
 Trampe	OS 39350,42740
 Trampe	OS 38848,41198
-Trampe	OS 57345,107207
 #: by: mapillary
 Trampe	OS 39324,41095
 #: by: mapillary
@@ -1986,6 +2046,7 @@ Hennigsdorf	OS -4688,27608
 # 
 Nieden	OS 43214,115717
 Nieden	OS 43814,115623
+Nieden	OS 43486,115986
 # 
 Kleptow	OS 49363,107985
 Kleptow	OS 48690,107468

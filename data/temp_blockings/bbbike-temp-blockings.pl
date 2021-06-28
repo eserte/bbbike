@@ -6952,7 +6952,7 @@ EOF
        text  => 'L 285 Günterberg-Schönermark OD Günterberg Kanal- und Straßenbau Vollsperrung 21.07.2006-18.12.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 48305,79400 48006,79147 47713,78664 47269,77634 47091,77570
+	q4::inwork 48305,79400 48006,79147 47711,78650 47269,77634 47197,77577 47114,77557 47087,77557
 EOF
      },
      { from  => 1165952495, # 2006-12-12 20:41
@@ -15032,7 +15032,7 @@ EOF
        text  => 'B 109 Prenzlau - Pasewalk OD Göritz bis LG MVP Deckensanierung Vollsperrung 20.07.2009-30.08.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 44133,114908 43702,113455 43389,112844 43076,112210
+	2::inwork 44142,114926 43702,113455 43362,112836 43271,112666 43031,112230
 EOF
      },
      { from  => 1247608800, # 2009-07-15 00:00
@@ -32695,8 +32695,11 @@ EOF
        source_id => '2147347210',
        data  => <<EOF,
 #: source_id: viz2021:13.517342,52.454467,25.05.2021,10:00
+#: by: https://www.bahninfo-forum.de/read.php?9,702729,704984#msg-704984 (nun bis zum Bahnübergang)
+#: by: https://twitter.com/VIZ_Berlin/status/1409387334097727491
 # REMOVED (hier mittlerweile offen) ---	q3::inwork 18080,5376 18245,5551
-	q3::inwork 18245,5551 18370,5511 18680,5413 18955,5320
+# REMOVED (hier nicht mehr?) ---	q3::inwork 18245,5551 18370,5511 18680,5413
+	q3::inwork 18680,5413 18955,5320 19037,5316 19186,5310 19328,5304
 EOF
      },
      { from  => undef, # 
@@ -32868,6 +32871,24 @@ EOF
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1099818.php',
        data  => <<EOF,
 	q4::inwork; 6055,4950 6182,4931 6187,4930 6215,4926 6276,4915 6354,4901 6385,4896 6531,4865
+EOF
+     },
+     { from  => 1624917407, # 2021-06-28 23:56
+       until => 1636153200, # 2021-11-06 00:00
+       text  => 'Alt-Lietzow: zwischen Wintersteinstr. und Arcostr. gesperrt, bis 05.11.2021) ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: rbb
+	q4::inwork 3868,12401 3757,12372
+EOF
+     },
+     { from  => 1624917511, # 2021-06-28 23:58
+       until => 1627682400, # 2021-07-31 00:00
+       text  => 'Dahlmannstr.: zwischen Sybelstr. und Kurfürstendamm gesperrt, bis 30.07.2021) ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: rbb
+	q4::inwork 3618,10283 3614,10564
 EOF
      },
     );

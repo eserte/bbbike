@@ -12163,6 +12163,7 @@ Kastanienallee: Verbundsteinpflaster	Q1 23769,14609 23778,14568 23781,14545 2377
 Kastanienallee: wassergebundene Decke	Q1- 23817,14461 23877,14315 23897,14274 23962,14140
 Kastanienallee: Verbundsteinpflaster	Q1 23962,14140 24055,13984
 Gertrud-Hanna-Promenade: Mosaikpflaster	Q1- 8548,7384 8603,7452
+Falkenberger Chaussee [Wohngebiet]: Beton	Q1+ 17358,17400 17211,17600
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -22843,13 +22844,9 @@ Frobenstr. (Lankwitz): m‰ﬂiges Kopfsteinpflaster	Q2 6108,2326 6349,2510 6529,264
 # 
 #: by: tyohre vvv
 #: corrected_by: srt (Q2 -> Q1-)
-#: next_check_id: STERNDAMM-2020
-#: by: https://www.bahninfo-forum.de/read.php?9,665091,700762#msg-700762 (Ersetzung der GVP-Platten zwischen 17.5.2021 und 2.7.2021?)
-#: XXX vielleicht werden die GVP durch Asphalt ersetzt?
-#: priority: #B
-#: last_checked: 2021-06-13 (krickstadt)
-#: next_check: 2021-07-02
-Johannes-Werner-Str.: Kopfsteinpflaster/Betonplatten	Q1- 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
+# REMOVED (ja) --- #: next_check_id: STERNDAMM-2020 --- #: by: https://www.bahninfo-forum.de/read.php?9,665091,700762#msg-700762 (Ersetzung der GVP-Platten zwischen 17.5.2021 und 2.7.2021?) --- #: XXX vielleicht werden die GVP durch Asphalt ersetzt? --- #: priority: #B --- #: last_checked: 2021-06-13 (krickstadt) --- #: next_check: 2021-07-02
+#: note: Asphalt zwischen den Schienen
+Johannes-Werner-Str.: Kopfsteinpflaster/Asphalt	Q1- 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
 #: corrected_by: srt (Kopfsteinpflaster -> unebenes Kleinkopfsteinpflaster)
 M¸hlbergstr.: unebenes Kleinkopfsteinpflaster	Q2 17187,3988 17288,4026 17341,4046
 #: corrected_by: srt (Kopfsteinpflaster -> unebenes Kleinkopfsteinpflaster)
@@ -28573,8 +28570,10 @@ Seefelder Str.: Asphalt	Q0 16966,16127 16975,16164 17071,16174 17156,16180 17183
 Seefelder Str.: Asphalt	Q0 17183,16181 17238,16185 17325,16189
 #: corrected_by: srt (Gehwegplatten -> ..., neu gemacht)
 Seefelder Str. (Fuﬂweg): Verbundsteinpflaster	Q1+ 17325,16189 17362,16189 17383,16197
+#: corrected_by: srt (Q1 -> Q1+)
+Seefelder Str.: Beton	Q1+ 16961,16042 16966,16127
 #: confirmed_by: srt
-Seefelder Str.: Beton	Q1 16961,16042 16966,16127 17000,16141 17184,16149 17290,16154 17293,16134 17341,16136 17344,16081 17419,16080
+Seefelder Str.: Beton	Q1 16966,16127 17000,16141 17184,16149 17290,16154 17293,16134 17341,16136 17344,16081 17419,16080
 Straﬂe 142: Asphalt	Q0 17102,16464 17152,16605 17212,16760 17237,16825 17264,16892 17290,16957 17317,17027 17346,17100 17377,17171 17404,17238 17418,17277 17422,17288
 #: confirmed_by: srt
 Paul-Koenig-Str.: Asphalt	Q0 17152,16605 17268,16526 17312,16498 17304,16485

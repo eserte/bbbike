@@ -3657,8 +3657,11 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: source_id: viz2021:13.517342,52.454467,25.05.2021,10:00
+#: by: https://www.bahninfo-forum.de/read.php?9,702729,704984#msg-704984 (nun bis zum Bahnübergang)
+#: by: https://twitter.com/VIZ_Berlin/status/1409387334097727491
 # REMOVED (hier mittlerweile offen) ---	q3::inwork 18080,5376 18245,5551
-	q3::inwork 18245,5551 18370,5511 18680,5413 18955,5320
+# REMOVED (hier nicht mehr?) ---	q3::inwork 18245,5551 18370,5511 18680,5413
+	q3::inwork 18680,5413 18955,5320 19037,5316 19186,5310 19328,5304
 ',
          'from' => 1621843200,
          'id' => 3383,
@@ -3832,6 +3835,26 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Steglitzer Damm: Bauarbeiten, Fahrbahn zwischen Bismarckstr. und Heinrich-Seidel-Str. Richtung Osten gesperrt, vom 02.08. bis zum 24.09.2021',
          'type' => 'handicap',
          'until' => 1632520799
+       },
+       {
+         'data' => '#: by: rbb
+	q4::inwork 3868,12401 3757,12372
+',
+         'from' => 1624917407,
+         'id' => 3399,
+         'text' => 'Alt-Lietzow: zwischen Wintersteinstr. und Arcostr. gesperrt, bis 05.11.2021) ',
+         'type' => 'handicap',
+         'until' => 1636153200
+       },
+       {
+         'data' => '#: by: rbb
+	q4::inwork 3618,10283 3614,10564
+',
+         'from' => 1624917511,
+         'id' => 3400,
+         'text' => 'Dahlmannstr.: zwischen Sybelstr. und Kurfürstendamm gesperrt, bis 30.07.2021) ',
+         'type' => 'handicap',
+         'until' => 1627682400
        }
      
 );
