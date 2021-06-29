@@ -4348,6 +4348,7 @@ durch Bushaltestelle unterbrochen	RW3; 19904,3464 19840,3423
 	RW4;RW3 16786,11668 16815,11729
 	RW4; 16815,11729 16958,11778
 Busspur ist immer gültig	RW5; 16958,11778 16815,11729
+#: next_check_id: SKANDINAVISCHE-2021
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
 #: by: http://www.infravelo.de/projekt/weitlingstrasse-und-skandinavische-strasse/ (früherer Eintrag) (Grünbeschichtung+Verbreiterung, 2. Quartal 2021 - 3. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/weitlingstrasse-und-skandinavische-strasse-2/
@@ -4355,8 +4356,9 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: XXX dieser Abschnitt bekommt eine Grünmarkierung
 #: priority: #D
 #: last_checked: 2021-03-03 (mapillary)
-#: check_frequency: 120d
-#: next_check: 2021-12-31
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- #: next_check: 2021-12-31
+#: next_check: 2021-07-07
 	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 Grünmarkierung	RW4;RW4 17166,11944 17210,11950 17338,11969
 	RW3;RW3 2717,7093 2731,7247 2744,7397 2750,7444 2757,7604
@@ -4403,7 +4405,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: by: https://www.berliner-woche.de/malchow/c-verkehr/dorfstrasse-in-malchow-wird-drei-wochen-lang-saniert_a279529 (bis 8. August 2020, vermutlich nur Asphaltarbeiten an der Fahrbahn, Radwege werden nicht erwähnt)
 #: by: https://abendblatt-berlin.de/2020/07/10/berlin-malchow-bundesstrasse-mit-umleitungen/
 #: XXX wird der Radweg verbessert?
-#: last_checked: 2021-04-01 (mapillary)
+#: last_checked: 2021-06-14 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -5165,6 +5167,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW9 30309,6841 30244,6615 30090,5446
 	RW6;RW6 3581,2211 3581,2125 3581,2105
 Busspur gilt Mo-Fr 11-18 Uhr	RW5; 15715,13157 15515,13134
 	RW6;RW6 -3923,13060 -3817,13002 -3715,13003
+#: next_check_id: PICHELSDORFER-2021
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.1018548.php
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/dokumente/uebersichtsplan_m1000_10_18.pdf (Nordteil; unten erwähnte Radspur)
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/dokumente/uebersichtsplan2_m1000_10_18.pdf (Südteil; keine Änderungen für den Radverkehr)
@@ -5979,7 +5982,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-05-30
+#: last_checked: 2021-06-25 (mapillary)
 #: check_frequency: 30d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünmarkierung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
@@ -6014,7 +6017,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-05-30
+#: last_checked: 2021-06-25 (mapillary)
 #: check_frequency: 30d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 # note: Ende Karl-Marx-Str.
@@ -6584,7 +6587,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2021-05-31
+#: last_checked: 2021-06-24 (mapillary)
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: next_check_id: POPUPRADWEGE-2020

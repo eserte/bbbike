@@ -327,12 +327,8 @@ Verbundsteinpflaster	RW;RW1 -645,-524 -601,-589 -549,-678
 #: by: https://www.berliner-woche.de/teltow/c-bauen/rammrathbruecke-wird-erneuert_a230938
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/wasserstrassen-neubauamt-liess-haupttraeger-der-neuen-rammrathbruecke-einbauen_a285844
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/neubau-der-rammrathbruecke-wohl-schon-im-sommer-fertig_a306339
-#: XXX nach Ende der Brückenarbeiten (Rammrathbrücke) soll hier ein kombinierter Geh- und Radweg entstehen
-#: source_id: 2019B00234 (bis 31.12.2021) (inaktiv)
-#: osm_watch: way id="5364051" version="18" brb
-#: osm_watch: way id="757445000" version="2" brb
-#: next_check: 2021-07-01
-	RW3;RW3 -549,-678 -543,-691 -513,-736
+# REMOVED (laut osm track) --- #: XXX nach Ende der Brückenarbeiten (Rammrathbrücke) soll hier ein kombinierter Geh- und Radweg entstehen --- #: source_id: 2019B00234 (bis 31.12.2021) (inaktiv) --- #: osm_watch: way id="5364051" version="19" brb --- #: osm_watch: way id="757445000" version="2" brb --- #: next_check: 2021-07-01
+	RW;RW -549,-678 -543,-691 -513,-736
 # 
 	RW3;RW4 -12317,-1212 -12348,-1220 -12364,-1224 -12549,-1277 -12666,-1311
 	RW3; -12666,-1311 -12674,-1313 -12718,-1327
@@ -1775,6 +1771,9 @@ asphaltiert	RW2;RW8 16953,35907 16653,35993 16424,36152 16132,36512 15491,37176 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=18239 vvv
 	RW2;RW8 -43664,-8821 -43696,-8673 -43663,-8320 -43962,-7005 -43967,-6937
 	RW8;RW2 -44344,-3731 -44352,-2994
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=29462
+#: by: https://www.o-sp.de/download/lbvbrandenburg/132032
+asphaltiert	RW8?;RW 85964,3850 84345,4414 83198,5048 83110,5106
 #: by ^^^
 asphaltiert	RW2;RW8 47564,63557 47225,63363 46921,63128 46490,62975 45901,62746
 	RW;RW9? -81189,-74269 -81872,-74332 -82141,-74350 -82396,-74325
