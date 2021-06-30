@@ -2479,19 +2479,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02
+         'data' => '#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 14.9.2021)
 #: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
 #: also_indoor: traffic (H)
 #: last_checked: 2021-05-24
 #: check_frequency: 60d
-#: next_check: 2021-06-30
+#: next_check: 2021-09-14
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
 ',
          'from' => 1558648800,
          'id' => 3108,
          'source_id' => '2147344253',
-         'text' => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis Ende Juni 2021',
+         'text' => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 14.9.2021',
          'type' => 'handicap',
          'until' => undef
        },
@@ -2707,7 +2707,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-06-12
+#: last_checked: 2021-06-29
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2948,18 +2948,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://pbs.twimg.com/media/EjnrSB_XgAEKrYS?format=jpg&name=medium
-	q4::inwork; 10177,13766 10319,13788
-# REMOVED (hier nicht mehr) ---	q4::inwork; 10319,13788 10459,13760
-',
-         'from' => 1601923909,
-         'id' => 3284,
-         'source_id' => '2147346452',
-         'text' => 'Torstr.: Engstelle von Rosenthaler Platz Richtung Mollstr., bis 30.6.2021',
-         'type' => 'handicap',
-         'until' => 1625065200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3124,15 +3113,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1625497200
        },
        {
-         'data' => '#: osm_watch: way id="683770241" version="6"
+         'data' => '#: source_id: viz2021:13.536634,52.420965,13.01.2021,07:00
+#: osm_watch: way id="683770241" version="6"
 	q4::inwork 19564,1871 19743,1804
 ',
          'from' => 1610431200,
          'id' => 3322,
          'source_id' => '2147346788',
-         'text' => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 30.06.2021 17:00 Uhr ',
+         'text' => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 05.01.2022 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1625065200
+         'until' => 1641398400
        },
        undef,
        {
@@ -3366,10 +3356,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/burgfrauenstrasse-ab-19-april-gesperrt_a306720
 #: source_id: 2147347107 (hier: bis 30.6.2021)
-#: source_id: viz2021:13.299346,52.626261,19.04.2021,07:00
+#: source_id: viz2021:13.299346,52.626261,19.04.2021,07:00 (bis 5.9.2021)
 #: note: zwei Bauabschnitte: zunächst der westliche Abschnitt bis Olafstr. (inkl. Kreuzung), danach der östliche Abschnitt bis Berliner Str.
 #: priority: #A
-#: next_check: 2021-06-30
+#: next_check: 2021-09-05
 	q4::inwork 3022,24393 3225,24431 3425,24469
 	q3::inwork 3425,24469 3575,24498
 # REMOVED (dieser Bereich folgt später) ---	q4::inwork 3575,24498 3712,24528 3842,24556
@@ -3377,9 +3367,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1618696800,
          'id' => 3357,
          'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1073307.php',
-         'text' => 'Burgfrauenstr.: Bauarbeiten zwischen Hohefeldstr. und Olafstr., Fahrbahn gesperrt, vom 19.4.2021 bis 30.6.2021',
+         'text' => 'Burgfrauenstr.: Bauarbeiten zwischen Hohefeldstr. und Olafstr., Fahrbahn gesperrt, vom 19.4.2021 bis 5.9.2021',
          'type' => 'handicap',
-         'until' => 1625004000
+         'until' => 1630857600
        },
        undef,
        undef,

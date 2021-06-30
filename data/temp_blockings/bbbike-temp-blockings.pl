@@ -29277,17 +29277,17 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2019-05-24 00:00:00"),
-       until => undef, # $isodate2epoch->("2021-06-30 18:00:00"),
-       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis Ende Juni 2021',
+       until => undef, # $isodate2epoch->("2021-09-14 18:00:00"),
+       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 14.9.2021',
        type  => 'handicap',
        source_id => '2147344253', # bis Juni 2021 (!)
        data  => <<EOF,
-#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02
+#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 14.9.2021)
 #: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
 #: also_indoor: traffic (H)
 #: last_checked: 2021-05-24
 #: check_frequency: 60d
-#: next_check: 2021-06-30
+#: next_check: 2021-09-14
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
 EOF
@@ -30666,7 +30666,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-06-12
+#: last_checked: 2021-06-29
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31995,11 +31995,12 @@ EOF
 EOF
      },
      { from  => 1610431200, # 2021-01-12 07:00
-       until => $isodate2epoch->("2021-06-30 17:00:00"), # 1620831600, # 2021-05-12 17:00
-       text  => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 30.06.2021 17:00 Uhr ',
+       until => $isodate2epoch->("2022-01-05 17:00:00"), # 1620831600, # 2021-05-12 17:00
+       text  => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 05.01.2022 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346788',
        data  => <<EOF,
+#: source_id: viz2021:13.536634,52.420965,13.01.2021,07:00
 #: osm_watch: way id="683770241" version="6"
 	q4::inwork 19564,1871 19743,1804
 EOF
@@ -32394,17 +32395,17 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-04-18 00:00:00"), # 1618610400, # 2021-04-17 00:00
-       until => $isodate2epoch->("2021-06-30 00:00:00"), # 1640991599, # 2021-12-31 23:59
-       text  => 'Burgfrauenstr.: Bauarbeiten zwischen Hohefeldstr. und Olafstr., Fahrbahn gesperrt, vom 19.4.2021 bis 30.6.2021',
+       until => $isodate2epoch->("2021-09-05 18:00:00"), # 1640991599, # 2021-12-31 23:59
+       text  => 'Burgfrauenstr.: Bauarbeiten zwischen Hohefeldstr. und Olafstr., Fahrbahn gesperrt, vom 19.4.2021 bis 5.9.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1073307.php', # Gesamtmaßnahme bis Ende 2021
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/burgfrauenstrasse-ab-19-april-gesperrt_a306720
 #: source_id: 2147347107 (hier: bis 30.6.2021)
-#: source_id: viz2021:13.299346,52.626261,19.04.2021,07:00
+#: source_id: viz2021:13.299346,52.626261,19.04.2021,07:00 (bis 5.9.2021)
 #: note: zwei Bauabschnitte: zunächst der westliche Abschnitt bis Olafstr. (inkl. Kreuzung), danach der östliche Abschnitt bis Berliner Str.
 #: priority: #A
-#: next_check: 2021-06-30
+#: next_check: 2021-09-05
 	q4::inwork 3022,24393 3225,24431 3425,24469
 	q3::inwork 3425,24469 3575,24498
 # REMOVED (dieser Bereich folgt später) ---	q4::inwork 3575,24498 3712,24528 3842,24556

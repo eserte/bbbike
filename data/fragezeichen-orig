@@ -196,6 +196,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: source_id: 2147342276 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_120802_LMS-BR_72 (inaktiv)
 #: source_id: 2147343746 (bis Mitte April 2019) (inaktiv)
+#: osm_watch: way id="698150954" version="7"
 #: last_checked: 2021-06-13
 #: check_frequency: 21d
 #: next_check: 2021-06-30
@@ -1809,6 +1810,7 @@ Borsigdamm: Richtung Norden soll ein baulicher Radweg entstehen, Richtung Süden 
 # REMOVED (provisorisch) --- #: by: https://api.fixmyberlin.de/api/plannings/221 --- #: last_checked: 2020-05-08 (mapillary) --- #: check_frequency: 120d --- Kantstr.: Lückenschluss (Busspur? Radfahrstreifen? In welche Richtung?)	?::projected 5373,10981 5488,10978
 # 
 #: by: https://api.fixmyberlin.de/api/projects/335
+#: osm_watch: way id="4441941" version="18"
 #: last_checked: 2020-07-05
 #: check_frequency: 360d
 Kohlhasenbrücker Str.: Radverkehrsanlagen sollen erstellt werden	?::projected -7145,-961 -7066,-840 -7042,-724 -7069,-392 -7067,-36 -7050,152 -7050,199 -7067,240 -7078,262 -7123,310 -7167,362 -7180,378 -7178,377
@@ -1909,8 +1911,10 @@ Planstraße A: Straße geplant	?::projected 7268,8008 7250,8223
 #: by: https://www.potsdam.de/oeffentliche-auslegung-zum-bau-einer-bruecke-und-wegeverbindung-werder-havel-potsdam-schielowsee
 #: by: https://www.potsdam.de/sites/default/files/documents/4_lageplan_1.pdf
 #: by: https://www.potsdam.de/sites/default/files/documents/5_lageplan_2.pdf
+#: by: https://www.pnn.de/potsdam/mehr-als-300-baeume-werden-gefaellt-bruecke-ueber-den-zernsee-2022-fertig-/26885952.html (Bauzeit: Ende Juni 2021 bis Mitte 2022)
+#: osm_watch: way id="909273494" version="1"
 #: XXX vermutlich gibt es danach Rampen ("behindertengerecht"), außerdem wird sich die Brücke dann auf der Südseite befinden
-#: next_check: 2021-07-01
+#: next_check: 2022-07-01
 Rad- und Fußwegbrücke über den Großen Zernsee: Neubau geplant	?::projected -21227,-2017 -21125,-2012
 # 
 # REMOVED (realisiert, als Grünanlage nicht wirklich zu erkennen) --- #: XXX wann wird der Weg eröffnet? Geht es unter der Brücke weiter? --- #: XXX ggfs. auch die Grünanlage einzeichnen --- #: XXX laut osm mittlerweile offen --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20181227 (Bau von Uferbegleitwegen, bis 2020) --- #: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/neue-gruenanlagen-muessen-noch-geschuetzt-werden_a216382 (nicht vor Herbst 2019) --- #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/schmucke-bruecke_a244807 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bezirk-investiert-750-000-euro-in-neue-gruenanlage_a273574 (Bauzäune bleiben noch bis Herbst 2020) --- #: osm_watch: way id="690566228" version="5" --- #: priority: #C --- #: last_checked: 2020-07-04 --- #: check_frequency: 120d --- #: next_check: 2020-07-22 --- Weg parallel zur Minna-Todenhagen-Brücke/Str.: asphaltiert, vermutlich unbeleuchtet?	?::inwork 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
@@ -1974,10 +1978,10 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=34623&art=LINK2
 #: XXX Verbundsteingehwege existieren, evtl. werden sie später für Radfahrer freigegeben (oder benutzungspflichtig gemacht)
 #: osm_watch: way id="59994277" version="24" brb
-#: source_id: LS/721-F/18/135 (bis 11.5.2021)
+#: source_id: LS/721-F/18/135 (bis 18.11.2021)
 #: last_checked: 2020-10-03
-#: check_frequency: 120d
-#: next_check: 2021-05-11
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2021-11-18
 Eggersdorf: Ausbau der Straße, Neubau von Radwegen	?::inwork 38817,17412 39133,17299 39235,17255 39287,17231 39984,16734 40166,16723 40386,16711
 # 
 # REMOVED --- #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=29462 --- #: by: https://www.o-sp.de/download/lbvbrandenburg/132032 --- #: osm_watch: way id="172545899" version="6" brb --- #: source_id: LS/721-F/20/137 --- #: next_check: 2020-11-30 --- B167: Radweg geplant	?::projected 85964,3850 84345,4414 83198,5048 83110,5106
@@ -2543,6 +2547,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12150,8764 123
 #: next_check_id: KARLMARXSTR-2018
 #: by: http://www.abendblatt-berlin.de/2018/05/15/drei-jahre-endspurt-fuer-baustelle-karl-marx-strasse/ (bis Ende 2021)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.836029.php (spätestens 2024 abgeschlossen)
+#: by: https://www.kms-sonne.de/baustellennews/?date=20210630 (Bauarbeiten bis November 2021)
 #: last_checked: 2021-06-06
 #: check_frequency: 360d
 #: next_check: 2021-10-08
@@ -3345,7 +3350,7 @@ Hultschiner Damm: Aufhebung der Benutzungspflicht?	? 24639,10766 24644,10740 246
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1080946.php (bis Juni 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1394217278615560194
 #: by: https://twitter.com/BA_Xhain/status/1394209701588570124 (Haasestr.)
-#: last_checked: 2021-06-20 vvv
+#: last_checked: 2021-06-29 vvv
 # REMOVED --- #: next_check: 2021-06-30 vvv
 Niemannstr.: Reduzierung auf 10km/h, Bodenschwellen	?::projected 14254,11377 14211,11229
 Helmerdingstr.: Reduzierung auf 10km/h, Bodenschwellen	?::projected 14468,11203 14442,11101
@@ -4949,9 +4954,10 @@ Buschower Weg: hier wird asphaltiert, wann sind die Bauarbeiten fertig?	?::proje
 #: add_fragezeichen: Gibt es neue Radwege oder Radspuren in der Pilgramer Straße?
 #: source_id: 2147346018 (Fahrbahneubau bis 5.1.2021) (inaktiv)
 #: source_id: 2147347207 (bis 28.5.2021, Sanierung der Kreuzung)
+#: source_id: viz2021:13.620596,52.500834,15.03.2021,15:58 (hier: Vollsperrung bis 29.7.2021)
 #: osm_watch: way id="166973943" version="21"
 #: last_checked: 2021-06-05
-# REMOVED (noch nicht realisiert) --- #: next_check: 2021-05-28
+#: next_check: 2021-07-29
 Pilgramer Str.: Radfahrstreifen (vermutlich) oder Radwege (unwahrscheinlich) in Bau	?::inwork 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 25139,11108
 # 
 #: XXX_prog: könnte man mit einer Art Punkt-Handicap ausdrücken
@@ -7348,6 +7354,8 @@ Döberitzer Grünzug: hier soll ein Park mit Wegen entstehen	?::projected 7802,135
 S-Bhf. Zehlendorf: neuer Zugang geplant	?::projected 644,2622 660,2576
 # 
 #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/ersatzneubau-der-neuen-fahlenbergbruecke-soll-nun-ende-2022-fertig-sein_a299399 (Ertüchtigung der Umfahrungsstrecke im 2. Quartal 2021; Ende 2022 wird der Neubau fertig)
+#: osm_watch: way id="10275794" version="16"
+#: osm_watch: way id="897616703" version="2"
 #: next_check: 2021-06-30
 Fahlenbergbrücke: Behelfsbrücke wird hier gebaut	?::projected 30942,-62 31103,-142
 # 

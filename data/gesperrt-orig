@@ -3829,6 +3829,7 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: source_id: 2147343289 (bis 30.6.2021)
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.) (mittlerweile inaktiv)
 #: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30
+#: note: laut rbb bis 30.9.2021, laut viz noch nicht verlängert
 #: osm_watch: way id="43233756" version="17"
 #: osm_watch: way id="681299268" version="2"
 #: osm_watch: way id="47935842" version="15"
@@ -3836,7 +3837,7 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: priority: #A vvv
 #: last_checked: 2021-06-13 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2021-06-30 vvv
+#: next_check: 2021-09-30 vvv
 # REMOVED --- #: valid: -20210630 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
 #: source_id: 2147343292
@@ -4297,9 +4298,9 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Eröffnung am 17.12.2020)
 #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Eröffnung wird verschoben)
 #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauzäune werden im Dezember 2020 teilweise abgebaut)
-#: last_checked: 2021-06-10 (daf)
-#: check_frequency: 90d
-#: next_check: 2021-07-01
+#: last_checked: 2021-06-23 (mapillary)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10063,12438
 # 
