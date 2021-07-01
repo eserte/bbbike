@@ -316,7 +316,12 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125
 	RW1;RW1 11767,9026 11831,8989
 #: note: die ehemaligen Gehwegradwege existieren weiterhin
 	RW7;RW7 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12328,9117
-	RW1;RW1 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
+#: next_check_id: WESER-2021
+#: XXX während der Bauarbeiten Radweg aufgehoben (und möglicherweise entstehen hier auch keine neuen Radwege mehr), Einbahnstraße Richtung Westen, für Radfahrer offen
+#: last_checked: 2021-07-01
+#: check_frequency: 90d
+	RW0;RW1 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
+	RW1;RW1 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
 Radweg nur aufgemalt, schadhafter Gehweg	RW1; 13891,7961 13724,8090
 # REMOVED (hier gibt es keinen Radweg mehr) --- #: XXX ist der Radweg komplett aufgehoben? vvv--- #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20131219.1210.392853.html vvv --- altes Verbundsteinpflaster	RW1;RW1 13946,7918 13919,7707
@@ -674,7 +679,12 @@ asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 	RW2; 13785,12292 13885,12279 14020,12261 14208,12235
 #: note: alter Bürgersteigradweg existiert noch, ist aber abgesperrt
 teilweise mit Leitboys geschützt	RW4; 14208,12235 14291,12220 14381,12205 14427,12197 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129
-	RW2; 14926,12129 14994,12121 15117,12106 15361,12071
+#: XXX Bauarbeiten, provisorische Radspur, evtl. bleibt diese permanent
+#: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 13.09.2021)
+#: last_checked: 2021-07-01
+#: next_check: 2021-09-13
+	RW4; 14926,12129 14994,12121 15117,12106
+	RW2; 15117,12106 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
 asphaltiert	RW2; 13785,12292 13543,12326
@@ -893,7 +903,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-06-17
+#: last_checked: 2021-07-01
 #: check_frequency: 60d
 # REMOVED (vermutlich ohne baldige Änderung) --- #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1760,7 +1770,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 	RW2;RW0 4324,8899 4325,8998 4325,9082 4325,9159 4339,9224 4377,9258
 	RW6;RW6 12767,10216 12897,10439 12978,10581
 	RW6;RW6 12731,10547 12822,10487 12897,10439 13032,10355 13151,10276 13271,10193
-asphaltiert	RW1; 13795,9941 13865,9866 14089,9610
+asphaltiert	RW1; 13795,9941 13860,9861 14089,9610
 	RW1;RW1 15144,10905 15205,11080 15245,11162 15251,11175 15322,11335
 	RW6;RW6 3117,11852 2953,11830 2728,11805 2547,11788
 	RW6;RW6 4312,11354 4101,11347 3986,11347 3877,11347 3749,11344
@@ -3108,7 +3118,7 @@ die letzten 70 Meter sind benutzungspflichtig	RW1; 21789,5427 21954,5229
 	RW1; 21954,5229 21789,5427
 die letzten Meter sind benutzungspflichtig	RW3; 10755,13152 10923,13156
 	RW4; 10923,13156 10755,13152
-	RW4;RW4 13865,9866 13890,9894
+	RW4;RW4 13860,9861 13870,9872 13890,9894
 	RW7;RW7 10001,9234 10123,9233 10547,9233 10564,9292
 	RW7;RW7 10547,9233 10705,9234
 #: by: G. Chill:
@@ -5980,6 +5990,9 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 # 
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
+#: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
+#: last_checked: 2021-07-01
+	RW3; 12639,8344 12689,8289 12714,8249
 #: XXX Grünmarkierung?
 #: priority: #D
 #: last_checked: 2021-06-25 (mapillary)
@@ -6020,6 +6033,9 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823
 #: last_checked: 2021-06-25 (mapillary)
 #: check_frequency: 30d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
+#: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
+#: last_checked: 2021-07-01
+	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
 	RW7;RW7 -2135,17633 -2048,17654
@@ -6786,11 +6802,12 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1065698.php (Bauarbeiten ab 22. März 2021 bis Ende Mai 2021)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-wird-verstetigt_a304893
 #: source_id: 2147346996 (bis 23.6.2021)
+#: source_id: viz2021:13.377751,52.500368,22.03.2021,07:00 (bis 23.7.2021)
 #: osm_watch: way id="4401920" version="50"
 #: confirmed_by: srt
 #: last_checked: 2021-06-23
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2021-06-23
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2021-07-23
 provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9158,10342 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
 # 
 #: note: Spielstraßenschild am südlichen Ende
@@ -7084,3 +7101,4 @@ enger Radweg, schmaler Unterstreifen gegen parkende Autos, Verbundsteinpflaster	
 	RW6;RW6 7578,19648 7546,19665 7578,19753
 	RW7;RW7 11472,7899 11579,7926 11647,7940
 	RW7;RW7 11754,7964 11833,7980 11979,8014
+asphaltiert, nicht sehr breit	RW1; 15279,10862 15272,10790 15261,10738

@@ -184,7 +184,7 @@ Detmolder Str. (Nord)	2 4349,8118 4469,8037 4600,8002 4711,8013
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
 # REMOVED (moved to temp blockings) --- currently XXX_outdoor --- : XXX_indoor: consider to move into temp blockings (but check first for exact times; maybe wait until temp blocking implementations are getting better) --- #: XXX aber zuerst handicap+qualitaet analysieren --- Gartenufer (in der Dunkelheit gesperrt)	2 6226,11405 6067,11479 5845,11615 5790,11643
 Steinplatz	1 5159,11353 5122,11300 5088,11322 5043,11354 5085,11413
-Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13865,9866 13795,9941
+Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13860,9861 13795,9941
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928
 Bethaniendamm	1 12060,11323 12010,11224 11944,11152 11845,11095 11750,11065 11640,11067 11458,11136
 Engeldamm	1 11473,11180 11656,11106 11798,11121 11917,11186 11981,11263 12021,11349
@@ -825,7 +825,7 @@ Mollstr. (Richtungsfahrbahn)	1::igndisp 11723,13139 11841,13087 11913,13077 1195
 Mollstr. (Richtungsfahrbahn)	1::igndisp 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
 Mollstr. (Straßenbahntrasse)	3nocross::ignrte 11984,13081 11964,13076 11913,13077 11896,13075 11840,13085 11739,13131 11723,13139
 #: note ^^^
-#
+# 
 #: note: Absperrgitter vvv
 Yorckstr.	1::igndisp 8192,9619 8358,9568 8595,9495
 Yorckstr.	1::igndisp 8595,9495 8358,9567 8192,9619
@@ -1258,16 +1258,8 @@ Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4304,12562
 (Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
 Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
-#: next_check_id: UBAHN1-2020
-#: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren)
-#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510
-#: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021
-#: last_checked: 2021-06-25
-#: check_frequency: 7d
-#: next_check: 2021-06-30
-# REMOVED (Arbeiten am Bahnhof dauern länger) --- #: next_check: 2021-04-01
-#(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
-(Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
+# REMOVED --- #: next_check_id: UBAHN1-2020 --- #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510 --- #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021 --- #: last_checked: 2021-06-25 --- #: check_frequency: 7d --- #: next_check: 2021-06-30 --- # REMOVED (Arbeiten am Bahnhof dauern länger) --- #: next_check: 2021-04-01 --- (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
+(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
 Wadzeckstr.	1s:q4 11315,13210 11354,13184 11369,13174
 Cantianstr.	1s:q4 10871,15288 10887,15287
 # 
@@ -1365,6 +1357,7 @@ Bahnhofsvorplatz S-Bhf. Priesterweg	1 7227,6080 7252,6080 7252,6058 7227,6058
 Am Heidehof	1s:q3 -1410,2726 -1571,2669 -1612,2785
 #: note: gesehen an Pfingstmontag 2021
 Nußbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
+Skalitzer Str.: Mittelstreifen, Bordsteine	3nocross 12930,10621 12899,10595 12731,10547
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3521,20 +3514,20 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2021-05-01
+#: last_checked: 2021-07-01
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2021-06-02
+#: last_checked: 2021-07-01
 #: check_frequency: 360d
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
 # 
 #: by: wosch
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2021-05-22
+#: last_checked: 2021-07-01
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152 14373,10046
 # 
@@ -3621,7 +3614,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="2"
 #: osm_watch: node id="6778873745" version="1"
-#: last_checked: 2021-06-25
+#: last_checked: 2021-07-01
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3691,7 +3684,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: XXX wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="5096644" version="16"
 #: priority: #C
-#: last_checked: 2021-06-25
+#: last_checked: 2021-07-01
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3828,31 +3821,31 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: also_indoor: traffic (G,H)
 #: source_id: 2147343289 (bis 30.6.2021)
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.) (mittlerweile inaktiv)
-#: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30
-#: note: laut rbb bis 30.9.2021, laut viz noch nicht verlängert
+#: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022)
+#: note: laut rbb ebenfalls bis 30.9.2022
 #: osm_watch: way id="43233756" version="17"
 #: osm_watch: way id="681299268" version="2"
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
 #: last_checked: 2021-06-13 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2021-09-30 vvv
-# REMOVED --- #: valid: -20210630 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2022-09-30 vvv
+#: valid: -20220930 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
 #: source_id: 2147343292
-#: source_id: viz2021:13.384963,52.513983,10.10.2018,13:30
+#: source_id: viz2021:13.384963,52.513983,10.10.2018,13:30 (bis 30.9.2022)
 Mauerstr..: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9076,12054
 #: source_id: 2147343293
-#: source_id: viz2021:13.385749,52.513657,10.10.2018,13:30
+#: source_id: viz2021:13.385749,52.513657,10.10.2018,13:30 (bis 30.9.2022)
 Jägerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9195,11972 9108,11961
 #: XXX laut googlemaps bis 30. Oktober 2018
 #: XXX laut VIZ hier Komplettsperrung, auch für Fußgänger --- aber am 2018-10-10, 2018-10-17, 2018-10-25 ist man noch durchgekommen
 #: source_id: 2147343290
-#: source_id: viz2021:13.38464,52.514937,10.10.2018,13:30
+#: source_id: viz2021:13.38464,52.514937,10.10.2018,13:30 (bis 30.9.2022)
 #: XXX_osm laut osm ist hier wieder offen -> ist aber falsch! Siehe https://www.openstreetmap.org/note/2194239
 Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
-# REMOVED --- #: valid ^^^
+#: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^

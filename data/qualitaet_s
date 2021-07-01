@@ -38,7 +38,9 @@ Hobrechtsfelder Chaussee (bis Kurve): asphaltiert	Q0 15589,27116 15230,26548 144
 Hobrechtsfelder Chaussee (ab Kurve): Kopfsteinpflaster	Q2 15589,27116 15711,27928 15777,28037
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12012,16250 12090,16199
 Weserstr.: asphaltiert	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12328,9117
-Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
+Weserstr.: mäßiges, teilweise schlechtes Kopfsteinpflaster	Q2; 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
+Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2; 12590,8977 12531,9009 12480,9037 12402,9080 12328,9117
+Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Jessnerstr.: Asphalt mit Aufpflasterungen	Q0 15077,11910 14986,11760 14946,11697 14849,11539
 Stuttgarter Str.: mäßiger Asphalt	Q1 13663,8011 13510,8138 13331,8283
 Stuttgarter Str.: Kopfsteinpflaster	Q2 13331,8283 13166,8423
@@ -10672,6 +10674,7 @@ Kastanienallee: wassergebundene Decke	Q1 23817,14461 23877,14315 23897,14274 239
 Kastanienallee: Verbundsteinpflaster	Q1 23962,14140 24055,13984
 Gertrud-Hanna-Promenade: Mosaikpflaster	Q1 8548,7384 8603,7452
 Falkenberger Chaussee [Wohngebiet]: Beton	Q1 17358,17400 17211,17600
+Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q1 13870,9872 14152,9746
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11584,7 +11587,7 @@ Herschelstr.: Asphalt	Q0 3200,13277 3239,13461 3262,13547 3280,13625
 Emdener Str.: Kopfsteinpflaster	Q2 5560,13382 5580,13587 5609,13790 5647,14067
 (Königsweg - Benschallee): mäßiger Asphalt	Q1 -1591,1861 -1578,1740
 Fercher Str. (Zehlendorf): guter Beton	Q0 -908,1749 -894,1489
-Bouchestr.: Asphalt	Q0 13602,9581 13642,9624 13865,9866
+Bouchestr.: Asphalt	Q0 13602,9581 13642,9624 13860,9861
 Hosemannstr.: schlechtes Kopfsteinpflaster	Q3 23653,12122 23707,12258 23725,12302 23774,12423 23816,12542
 Togostr.: Asphalt	Q0 6555,15827 6530,15849 6383,15972 6244,16096
 Togostr.: Verbundsteinpflaster	Q1 6244,16096 6104,16223
@@ -16329,7 +16332,7 @@ Bahrfeldtstr.: Kopfsteinpflaster	Q2 14844,10088 14921,10047 14956,10028 14974,10
 Fanny-Zobel-Str.: Asphalt	Q0 13936,10062 13975,10187
 Fanny-Zobel-Str.: Asphalt	Q0 14049,10164 14008,10040
 Fanny-Zobel-Str.: Asphalt	Q0 13975,10187 13899,10214
-(Hoffmannstr. - Puschkinallee): Verbundsteine	Q1 14077,10016 13999,9842
+(Hoffmannstr. - Puschkinallee): Verbundsteine	Q1 14077,10016 14011,9868 13999,9842
 (Hoffmannstr. - Uferweg an den Treptowers): Verbundsteine	Q1 14077,10016 14116,10149 14126,10176
 Dossestr. (Friedrichshain): Kopfsteinpflaster	Q2 15043,11637 15140,11811 15202,11789
 Neue Welt: Asphalt	Q0 14704,12950 14433,13027

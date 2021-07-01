@@ -2144,7 +2144,7 @@ EOF
        text  => 'Bouchéstraße (Treptow) in beiden Richtungen zwischen Kiefholzstraße und Am Treptower Park Fahrbahnerneuerung, Straße vollständig gesperrt (bis Ende 2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 13865,9866 13642,9624 13602,9581
+	2 13860,9861 13642,9624 13602,9581
 EOF
      },
      { from  => 1119391200, # 2005-06-22 00:00
@@ -23462,7 +23462,7 @@ EOF
 #: note: Gehweg ist hier relativ breit
 	q3::inwork; 14089,9610 13973,9465 13923,9405
 	q4::inwork; 13923,9405 13892,9365 13849,9310 13766,9200
-	q4::inwork; 13489,9456 13602,9581 13642,9624 13865,9866
+	q4::inwork; 13489,9456 13602,9581 13642,9624 13860,9861
 EOF
      },
      { from  => undef,
@@ -29103,7 +29103,7 @@ EOF
 #: by: https://viz.berlin.de/2021/01/langhansstr-sperrung/
 #: by: https://www.bahninfo-forum.de/read.php?9,691318,693319#msg-693319
 #: by: https://www.bahninfo-forum.de/read.php?9,691318,703556#msg-703556 (angeblich fährt die Straßenbahn wieder ab 24.06.2021)
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=74297 (Straßebahn fährt erst ab 1.7.2021)
+# REMOVED --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=74297 (Straßebahn fährt erst ab 1.7.2021)
 #: XXX teilweise existieren auch Einschränkungen beim Überqueren der Langhansstr., auch für Fußgänger (gesehen: 2021-02-17 an der Behaimstr.)
 #: also_indoor: traffic (H,G)
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
@@ -30876,14 +30876,14 @@ EOF
      },
      { from  => $isodate2epoch->("2020-05-27 09:00:00"),
        until => $isodate2epoch->("2021-12-31 17:00:00"), # der ursprüngliche Termin (14.08.2020) kann wohl nicht gehalten werden; laut Schild bis Ende 2021
-       text  => 'Gärtnerstr.: Bauarbeiten, zwischen Wühlischstr. und Simplonstr. Einbahnstraße Richtung Süden, zwischen Wühlischstr. und Krossener Str. sowie an der Grünberger Str. Fahrbahn gesperrt, evtl. bis Dezember 2021',
+       text  => 'Gärtnerstr.: Bauarbeiten am Boxhagener Platz. Fahrbahn gesperrt, möglicherweise bis Dezember 2021',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-06-28
+#: last_checked: 2021-07-01
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
@@ -32155,7 +32155,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-06-20
+#: last_checked: 2021-07-01
 #: check_frequency: 30d
 #: next_check: 2021-09-30
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32910,14 +32910,16 @@ EOF
      },
      { from  => 1624744800, # 2021-06-27 00:00
        until => 1625695200, # 2021-07-08 00:00
-       text  => 'Skandinavische Str.: Bauarbeiten zwischen Rosenfelder Str. und Einbecker Str., evtl. sind auch Radfahrer betroffen, vom 28.06.2021 08:00 bis 07.07.2021 17:00 ',
+       text  => 'Weitlingstr.: Fahrbahnsanierung Richtung Lückstr. zwischen Einbecker Str. und Irenenstr., vom 28.06.2021 08:00 bis 07.07.2021 17:00', # 'Skandinavische Str.: Bauarbeiten zwischen Rosenfelder Str. und Einbecker Str., evtl. sind auch Radfahrer betroffen, vom 28.06.2021 08:00 bis 07.07.2021 17:00 ',
        type  => 'handicap',
        source_id => 'viz202113.50605952.51227328.06.20210800',
        data  => <<EOF,
 #: next_check_id: SKANDINAVISCHE-2021
-#: note: nicht ganz klar, ob nur die Richtung Bhf. Lichtenberg oder beide Richtungen betroffen sind
+#: note: nicht ganz klar, ob nur die Richtung Bhf. Lichtenberg oder beide Richtungen betroffen sind --- mittlerweile ist es sowieso ein anderer Abschnitt
+#: source_id: viz2021:13.500432,52.510704,28.06.2021,08:00
 #: also_indoor: traffic (G)
-	q4::inwork 17338,11969 17210,11950 17166,11944 17082,11909 17013,11849 16958,11778
+# REMOVED ---	q4::inwork 17338,11969 17210,11950 17166,11944 17082,11909 17013,11849 16958,11778
+	q4::inwork; 16958,11778 16815,11729 16786,11668
 EOF
      },
      { from  => 1624744800, # 2021-06-27 00:00

@@ -10,14 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: also_indoor: traffic (G,H)
-#: XXX Parkverbotsschilder bis zum 20.6.2021
-#: add_fragezeichen: Sind die Bauarbeiten in der Pettenkoferstr. bereits beendet?
-#: last_checked: 2021-05-17
-#: next_check: 2021-06-20
-# REMOVED --- #: valid: -20210620
-Pettenkoferstr.: Bauarbeiten an der Kreuzung Eldenaer Str., Sperrung der Fahrbahn	q3::inwork 14858,12775 14836,12826
-# 
+# REMOVED (entfernt) --- #: also_indoor: traffic (G,H) --- #: XXX Parkverbotsschilder bis zum 20.6.2021 --- #: add_fragezeichen: Sind die Bauarbeiten in der Pettenkoferstr. bereits beendet? --- #: last_checked: 2021-05-17 --- #: next_check: 2021-06-20 --- # REMOVED --- #: valid: -20210620 --- Pettenkoferstr.: Bauarbeiten an der Kreuzung Eldenaer Str., Sperrung der Fahrbahn	q3::inwork 14858,12775 14836,12826
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: RUEDERSDORFER-2016 --- #: osm_watch: way id="472360197" version="1" --- #: last_checked: 2017-04-12 --- #: check_frequency: 7d --- Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13161,11795 13066,11854# 
 # REMOVED --- #: last_checked: 2017-03-30 vvv --- #: check_frequency: 14d vvv --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003 --- # REMOVED --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q3-::inwork 13339,12029 13352,12003
 # REMOVED --- #: last_checked: 2016-07-27 --- #: check_frequency: 14d --- Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12413,11901 12366,11808
@@ -125,7 +118,7 @@ Pettenkoferstr.: Bauarbeiten an der Kreuzung Eldenaer Str., Sperrung der Fahrbah
 ### Treptow ###
 # 
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
-#: last_checked: 2021-05-03 (mapillary)
+#: last_checked: 2021-07-01
 #: check_frequency: 60d
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 # 
@@ -159,7 +152,7 @@ Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork;
 # REMOVED (nein) --- #: next_check_id: VERLWERDERSTR-2018 --- #: XXX gibt es hier tatsächlich Einschränkungen? --- #: valid: 20180702-20190530 -- Verlängerte Werderstr.: Bauarbeiten	q4::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
 # REMOVED (mittlerweile wieder offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=4505&mt=0&zoom=17 --- #: last_checked: 2017-03-20 --- #: check_frequency: 14d --- Kiefholzstr.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13821,9340 13715,9455
 # REMOVED (aber vielleicht nur am Wochenende offen?) --- #: last_checked: 2016-12-20 vvv --- #: check_frequency: 21d vvv --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13203,9450 13124,9375 --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13124,9375 13111,9361 13126,9347 --- #: check_frequency ^^^ --- #: last_checked ^^^
-# REMOVED --- #: XXX siehe auch valid-Eintrag weiter unten --- #: source_id: 2147340178 --- #: last_checked: 2016-10-05 --- #: valid: -20161115 --- Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13865,9866 13890,9894 -- # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
+# REMOVED --- #: XXX siehe auch valid-Eintrag weiter unten --- #: source_id: 2147340178 --- #: last_checked: 2016-10-05 --- #: valid: -20161115 --- Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13860,9861 13870,9872 13890,9894 -- # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
 # REMOVED (Bauarbeiten beendet) --- #: XXX laut Schild gehen die Bauarbeiten bis 10.2017 --- #: XXX nach Beendigung der Bauarbeiten wieder den alten handicap-Eintrag ("Bodenschwellen") aktivieren --- #: last_checked: 2017-11-30 --- #: check_frequency: 14d --- Bouchéstr.: Bauarbeiten an der Heidelberger Str.	q3::inwork; 13489,9456 13357,9313
 # 
 ### Adlershof ###
@@ -626,7 +619,7 @@ Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 #: source_id: 2147345357 (inaktiv)
 #: source_id: 2147345472 (bis 10.8.2021, Gesamtbaumaßnahme bis 2024)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-06-06
+#: last_checked: 2021-07-01
 #: check_frequency: 120d
 #: next_check: 2021-10-08
 Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12392,8724 12330,8636
@@ -639,7 +632,7 @@ Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: XXX laut rbbtext bis 4.7.2021
 #: osm_watch: way id="822805265" version="8"
 #: also_indoor: traffic (G)
-#: last_checked: 2021-06-04 (osm note)
+#: last_checked: 2021-07-01
 #: check_frequency: 90d
 #: next_check: 2021-07-04
 Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
@@ -670,12 +663,12 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: source_id: 2147342527 (bis Ende Juni 2021, Gesamtmaßnahme bis 2024)
 #: source_id: viz2021:13.435272,52.480882,22.11.2018,07:00
 #: osm_watch: way id="585753318" version="8"
-#: osm_watch: way id="71392596" version="13"
+#: osm_watch: way id="71392596" version="14"
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-06-25 (mapillary)
-#: check_frequency: 45d
-#: next_check: 2021-06-30
+#: last_checked: 2021-07-01
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2021-06-30
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
 # 
 # REMOVED (hier mittlerweile weitgehend befahrbar) --- Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187
@@ -701,8 +694,8 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 # 
 #: last_checked: 2021-06-19 vvv
 #: check_frequency: 14d vvv
-S-Bhf. Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
-S-Bhf. Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16878,9875 16900,9861 16925,9852
+S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
+S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16878,9875 16900,9861 16925,9852
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -710,7 +703,7 @@ S-Bhf. Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16878,9875 1690
 # 
 #: XXX laut rbb und Halteverbotsschildern bis 31.08.2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-05-31 (mapillary)
+#: last_checked: 2021-07-01
 #: check_frequency: 30d
 #: next_check: 2021-08-31
 #: valid: -20210831
@@ -1294,7 +1287,7 @@ Dieffenbachstr.: Bodenschwellen	q0- 11346,9655 11541,9576
 #: note: drei Schwellen
 Oppelner Str.: Bodenschwellen	q0- 12897,10439 12978,10581
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
-Hoffmannstr.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
+Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
 Lausitzer Platz: einige Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: Fußgängerzone, Radfahrer frei, Bodenschwelle	q2 12274,10612 12172,10585
 Lausitzer Platz: einige Bodenschwellen	q2 12328,10442 12274,10612
@@ -1666,7 +1659,7 @@ Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14996,12462 14801,12517
 #: XXX_prog: für Anhänger relevant (q2 oder so)
 Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14798,12502 15005,12443
 #: XXX_prog: für Anhänger relevant (q1 oder so)
-Bouchéstr.: Bodenschwellen	q0 13642,9624 13865,9866
+Bouchéstr.: Bodenschwellen	q0 13642,9624 13860,9861
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Bouchéstr.: zwei Bodenschwellen	q0- 13489,9456 13357,9313
 #: XXX_prog: für Anhänger relevant (q2 oder so)
@@ -3582,6 +3575,8 @@ Breslauer Platz/Lauterstr.: Fußgängerzone, Radfahrer frei	q3; 5810,7337 5817,722
 Krautstr.: Fußgängerzone, Radfahrer frei	q3 12002,12008 12021,12066
 Mittelheide - S-Bhf. Hirschgarten: schmal, einige Fußgänger	q2 24089,6144 24060,6059 23951,6063
 Waldeyerstr.: Fußgänger, Radfahrer frei	q2 15003,12241 15058,12329
+Puschkinallee [Nebenstraße]: Fußgänger	q3 14152,9746 14196,9749
+(Bouchéstr. - Puschkinallee, Nebenstraße): Fußgänger	q3 13890,9894 13914,9910
 # 
 ######################### User Contributions #################################
 # 
@@ -3997,7 +3992,7 @@ Vereinsweg (Steglitz): Fußgänger, Privatstraße, Radfahren nicht erlaubt	q4 5334,
 #: XXX_prog: Bordstein am nördlichen Ende, ansonsten wäre es q1
 Apeldorner Weg: Fußgänger, Bordstein	q2+ 3822,8718 3858,8786 3952,8980
 Münstersche Str.: Fußgänger	q2 3840,9683 3698,9624
-(Hoffmannstr. - Puschkinallee): Fußgänger	q1 14077,10016 13999,9842
+(Hoffmannstr. - Puschkinallee): Fußgänger	q1 14077,10016 14011,9868 13999,9842
 # temporär entfernt: (Hoffmannstr. - Uferweg an den Treptowers): Fußgänger	q1 14077,10016 14116,10149 14126,10176
 August-Lindemann-Str.: Fußgänger	q3 14355,12752 14360,12792
 (Jagdschloß Grunewald - Umgehungschaussee): Fußgänger, Hundeauslaufgebiet	q2 878,6651 884,6701 1024,6898 1066,7093 1125,7184

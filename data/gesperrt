@@ -113,7 +113,7 @@ Detmolder Str. (Süd)	1 4711,8013 4572,7936 4353,8035 4323,8119 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4600,8002 4711,8013
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
 Steinplatz	1 5159,11353 5122,11300 5088,11322 5043,11354 5085,11413
-Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13865,9866 13795,9941
+Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13860,9861 13795,9941
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928
 Bethaniendamm	1 12060,11323 12010,11224 11944,11152 11845,11095 11750,11065 11640,11067 11458,11136
 Engeldamm	1 11473,11180 11656,11106 11798,11121 11917,11186 11981,11263 12021,11349
@@ -829,7 +829,7 @@ Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4304,12562
 (Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
 Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
-(Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
+(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
 Wadzeckstr.	1s 11315,13210 11354,13184 11369,13174
 Cantianstr.	1s 10871,15288 10887,15287
 Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
@@ -890,6 +890,8 @@ Langer See -> Adlergestell: Straßenbahntrasse	3::igndisp 26846,-2176 26698,-2322
 Bahnhofsvorplatz S-Bhf. Priesterweg	1 7227,6080 7252,6080 7252,6058 7227,6058
 Am Heidehof	1s -1410,2726 -1571,2669 -1612,2785
 Nußbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
+Mittelstreifen, Bordsteine	3nocross::ignrte 12930,10621 12899,10595 12731,10547
+Skalitzer Str. -> Skalitzer Str.: Mittelstreifen, Bordsteine	3::igndisp 12930,10621 12899,10595 12978,10581
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172

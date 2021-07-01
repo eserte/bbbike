@@ -824,7 +824,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2434,7 +2434,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://viz.berlin.de/2021/01/langhansstr-sperrung/
 #: by: https://www.bahninfo-forum.de/read.php?9,691318,693319#msg-693319
 #: by: https://www.bahninfo-forum.de/read.php?9,691318,703556#msg-703556 (angeblich fährt die Straßenbahn wieder ab 24.06.2021)
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=74297 (Straßebahn fährt erst ab 1.7.2021)
+# REMOVED --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=74297 (Straßebahn fährt erst ab 1.7.2021)
 #: XXX teilweise existieren auch Einschränkungen beim Überqueren der Langhansstr., auch für Fußgänger (gesehen: 2021-02-17 an der Behaimstr.)
 #: also_indoor: traffic (H,G)
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
@@ -2765,7 +2765,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-06-28
+#: last_checked: 2021-07-01
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
@@ -2773,7 +2773,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1590562800,
          'id' => 3240,
-         'text' => 'Gärtnerstr.: Bauarbeiten, zwischen Wühlischstr. und Simplonstr. Einbahnstraße Richtung Süden, zwischen Wühlischstr. und Krossener Str. sowie an der Grünberger Str. Fahrbahn gesperrt, evtl. bis Dezember 2021',
+         'text' => 'Gärtnerstr.: Bauarbeiten am Boxhagener Platz. Fahrbahn gesperrt, möglicherweise bis Dezember 2021',
          'type' => 'handicap',
          'until' => 1640966400
        },
@@ -3191,7 +3191,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-06-20
+#: last_checked: 2021-07-01
 #: check_frequency: 30d
 #: next_check: 2021-09-30
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3865,14 +3865,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: SKANDINAVISCHE-2021
-#: note: nicht ganz klar, ob nur die Richtung Bhf. Lichtenberg oder beide Richtungen betroffen sind
+#: note: nicht ganz klar, ob nur die Richtung Bhf. Lichtenberg oder beide Richtungen betroffen sind --- mittlerweile ist es sowieso ein anderer Abschnitt
+#: source_id: viz2021:13.500432,52.510704,28.06.2021,08:00
 #: also_indoor: traffic (G)
-	q4::inwork 17338,11969 17210,11950 17166,11944 17082,11909 17013,11849 16958,11778
+# REMOVED ---	q4::inwork 17338,11969 17210,11950 17166,11944 17082,11909 17013,11849 16958,11778
+	q4::inwork; 16958,11778 16815,11729 16786,11668
 ',
          'from' => 1624744800,
          'id' => 3402,
          'source_id' => 'viz202113.50605952.51227328.06.20210800',
-         'text' => 'Skandinavische Str.: Bauarbeiten zwischen Rosenfelder Str. und Einbecker Str., evtl. sind auch Radfahrer betroffen, vom 28.06.2021 08:00 bis 07.07.2021 17:00 ',
+         'text' => 'Weitlingstr.: Fahrbahnsanierung Richtung Lückstr. zwischen Einbecker Str. und Irenenstr., vom 28.06.2021 08:00 bis 07.07.2021 17:00',
          'type' => 'handicap',
          'until' => 1625695200
        },
