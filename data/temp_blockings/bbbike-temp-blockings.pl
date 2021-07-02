@@ -16288,7 +16288,7 @@ EOF
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-06-06
+#: last_checked: 2021-07-02
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 EOF
@@ -27973,7 +27973,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-06-13
+#: last_checked: 2021-07-02
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30297,7 +30297,7 @@ EOF
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-06-13
+#: last_checked: 2021-07-02
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 EOF
@@ -30883,7 +30883,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-01
+#: last_checked: 2021-07-02
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
@@ -31977,14 +31977,14 @@ EOF
 EOF
      },
      { from  => 1610838000, # 2021-01-17 00:00
-       until => $isodate2epoch->("2021-07-05 17:00:00"), # 1618264800, # 2021-04-13 00:00
-       text  => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 5.7.2021',
+       until => $isodate2epoch->("2021-07-12 17:00:00"), # 1618264800, # 2021-04-13 00:00
+       text  => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 12.7.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
        data  => <<EOF,
 #: next_check_id: BOHNSDORFERKREISEL-2017
 #: source_id: 2147346807 (bis 30.6.2021)
-#: source_id: viz2021:13.571014,52.412892,05.08.2020,19:43 (bis 5.7.2021)
+#: source_id: viz2021:13.571014,52.412892,05.08.2020,19:43 (bis 12.7.2021)
 #: note: laut rbbtext kann der Radverkehr passieren
 #: by: https://viz.berlin.de/2021/01/bohnsdorfer-kreisel/ (keine Einschränkungen für Fußgänger)
 #: by: https://twitter.com/VIZ_Berlin/status/1353990207574581249 (Situation mit Bildern)
@@ -32097,13 +32097,14 @@ EOF
 	2::inwork 35479,7051 35482,7099
 EOF
      },
-     { from  => $isodate2epoch->("2021-05-28 00:00:00"), # 1613631600, # 2021-02-18 08:00
-       until => $isodate2epoch->("2021-05-29 20:00:00"), # 1613977200, # 2021-02-22 08:00
-       text  => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, möglicherweise sind auch Fußgänger und Radfahrer betroffen, am 29.5.2021 von 6:00 bis 20:00 Uhr',
+     { from  => $isodate2epoch->("2021-07-02 00:00:00"), # $isodate2epoch->("2021-05-28 00:00:00"), # 1613631600, # 2021-02-18 08:00
+       until => $isodate2epoch->("2021-07-05 03:00:00"), # 1613977200, # 2021-02-22 08:00
+       text  => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, Fußgänger und Radfahrer sind auch betroffen, vom 3.7.2021 bis 5.7.2021 3 Uhr',
        type  => 'gesperrt',
        source_id => '2147346882',
        data  => <<EOF,
 #: source_id: 2147347231
+#: source_id: viz2021:13.440907,52.591391,03.07.2021,00:30
 	2::inwork 12672,20720 12723,20691
 EOF
      },
@@ -32278,17 +32279,17 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Auerstr.: Fahrbahn wegen Bauarbeiten gesperrt, vermutlich bis zum 28.6.2021',
+       text  => 'Auerstr.: Fahrbahn wegen Bauarbeiten gesperrt, vermutlich bis zum 30.7.2021',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: AUER-2021
 #: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken); außerdem gibt's eine Einbahnstraßenregelung für Autos
-#: XXX laut rbb bis 28.6.2021
+#: XXX laut rbb bis 30.7.2021
 #: also_indoor: traffic (G,H)
 #: priority: #A vvv
-#: last_checked: 2021-06-20 vvv
+#: last_checked: 2021-07-02 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2021-06-28 vvv
+#: next_check: 2021-07-30 vvv
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
 	q4::inwork 13067,12583 13202,12790
 	q4::inwork; 13273,12902 13202,12790
@@ -32438,7 +32439,8 @@ EOF
 #: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?
 #: note: 2021-06-13 ("Radfahrer frei"-Schilder fehlen weiterhin, aber zumindest sonntags scheint man auf dem noch existierenden Radstreifen gut durchzukommen)
 #: last_checked: 2021-06-13
-	q4::inwork; 9195,11972 9207,11880 9218,11793
+	q4::inwork; 9195,11972 9207,11880
+# REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
 EOF
      },
      { from  => 1618696800, # 2021-04-18 00:00
@@ -32931,6 +32933,49 @@ EOF
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/hasselwerder-park-mit-neuen-wegen_a314970
 #: next_check_id: HASSELWERDERPARK-2021
 	2::inwork 18506,5596 18560,5539 18608,5501 18695,5453
+EOF
+     },
+     { from  => 1625250931, # 2021-07-02 20:35
+       until => 1631570400, # 2021-09-14 00:00
+       text  => 'Frankfurter Allee: Überqueren in Höhe Weichselstr./Waldeyerstr. und Müggelstr. nicht möglich, bis 13.09.2021',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.471852,52.513916,22.06.2021,07:00',
+       data  => <<EOF,
+#: last_checked: 2021-07-02 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2021-09-13 vvv
+	3 14888,11934 14926,12129 15003,12241
+	3 15003,12241 14926,12129 14888,11934
+	3 14888,11934 14926,12129 14854,12137
+	3 15003,12241 14926,12129 14994,12121
+	3 14994,12064 14994,12121 14926,12129
+	3 15117,12106 14994,12121 14994,12064
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+EOF
+     },
+     { from  => 1625004000, # 2021-06-30 00:00
+       until => 1625868000, # 2021-07-10 00:00
+       text  => 'Cremzow - Wendtshof: Vollsperrung nach Unwetter-Schaden, eventuell sind auch Radfahrer betroffen, vorraussichtlich bis 09.07.2021',
+       type  => 'gesperrt',
+       source_id => '217300207',
+       data  => <<EOF,
+	2::inwork 52006,106839 52191,106842
+EOF
+     },
+     { from  => 1625349600, # 2021-07-04 00:00
+       until => 1627077600, # 2021-07-24 00:00
+       text  => 'Invalidenstr.: Gleisarbeiten Richtung Brunnenstr. zwischen Hessische Str. und Am Nordbahnhof, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, vom 05.07.2021 10:00 bis 23.07.2021 17:00',
+       type  => 'handicap',
+       source_id => 'viz202113.37937952.52948405.07.20211000',
+       data  => <<EOF,
+#: add_fragezeichen: Sind Radfahrer tatsächlich von den Bauarbeiten betroffen? vvv
+#: next_check: 2021-07-05 vvv
+	q4::inwork; 8685,13728 8841,13800
+	q4::inwork; 8935,13844 9085,13919
+#: next_check ^^^
+#: add_fragezeichen ^^^
 EOF
      },
     );

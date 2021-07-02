@@ -201,7 +201,7 @@ Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2021-06-06 vvv
+#: last_checked: 2021-07-02 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -212,7 +212,7 @@ Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,
 # 
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
-#: last_checked: 2021-02-12
+#: last_checked: 2021-07-02
 #: next_check: 2021-10-31
 #: valid: 20200821-20211031
 Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
@@ -234,7 +234,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-06-25
+#: last_checked: 2021-07-02
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2021-06-13
@@ -256,9 +256,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 # REMOVED (mittlerweile komplett gesperrt) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021 --- #: osm_watch: way id="339201210" version="3" --- #: also_indoor: search Neue Roßstraßenbrücke --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 21d --- Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: last_checked: 2021-06-15 vvv --- #: next_check: 2021-06-18 vvv --- (Umfahrung Baustelle Neue Roßstraßenbrücke): einige Fußgänger	q3::inwork 10680,11875 10650,11909 10642,11901 10590,11840 10599,11819 --- Neue Roßstr.: Fahrbahn gesperrt	q4::inwork 10687,11853 10722,11816 --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: osm_watch: way id="626237089" version="3" --- # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roßstraßenbrücke die Zufahrt komplett gesperrt (bis 29. März 2019?) --- #: source_id: 2147343739 --- #: source_id: 2147343772 --- 
-#: last_checked: 2021-06-22
-# REMOVED --- #: next_check: 2021-06-18
-Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Bordstein	q2::inwork 10687,11853 10869,11949
+# REMOVED --- #: last_checked: 2021-06-22 --- # REMOVED --- #: next_check: 2021-06-18 --- Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Bordstein	q2::inwork 10687,11853 10869,11949
 # REMOVED --- #: source_id: 2147341587 --- #: last_checked: 2017-11-01 vvv --- #: check_frequency: 21d vvv --- Jägerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q2::inwork 9195,11972 9393,12000 --- Jägerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q3::inwork 9393,12000 9523,12019
 # REMOVED --- #: last_checked: 2015-06-10 --- Am Zirkus: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9167,13046 9137,13032 9090,13009
 # REMOVED --- #: last_checked: 2016-06-01 --- Kommandantenstr.: Bauarbeiten, Einbahnstraße	q2::inwork; 10437,11352 10389,11390
@@ -292,9 +290,9 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: source_id: 2147343824 (bis 30.6.2021)
 #: source_id: viz2021:13.379936,52.514077,04.03.2019,08:00 (bis 30.6.2021)
 #: add_fragezeichen: Sind die Bauarbeiten hier beendet?
-#: last_checked: 2021-05-22
+#: last_checked: 2021-07-02
 #: check_frequency: 45d
-#: next_check: 2021-06-30
+# REMOVED --- #: next_check: 2021-06-30
 # REMOVED --- #: valid: 20191218-20210531
 Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit für Radfahrer verboten	q4::inwork 8737,12098 8783,11959
 # 
@@ -346,7 +344,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2021-06-08 vvv
+#: last_checked: 2021-07-02 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -634,7 +632,7 @@ Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: also_indoor: traffic (G)
 #: last_checked: 2021-07-01
 #: check_frequency: 90d
-#: next_check: 2021-07-04
+#: next_check: 2021-07-05
 Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -661,14 +659,14 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: source_id: 2147338550
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527 (bis Ende Juni 2021, Gesamtmaßnahme bis 2024)
-#: source_id: viz2021:13.435272,52.480882,22.11.2018,07:00
+#: source_id: viz2021:13.435272,52.480882,22.11.2018,07:00 (bis 5.7.2021, Gesamtmaßnahme bis 2024)
 #: osm_watch: way id="585753318" version="8"
 #: osm_watch: way id="71392596" version="14"
 #: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2021-07-01
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2021-06-30
+#: next_check: 2021-07-05
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
 # 
 # REMOVED (hier mittlerweile weitgehend befahrbar) --- Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187
@@ -703,7 +701,7 @@ S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork
 # 
 #: XXX laut rbb und Halteverbotsschildern bis 31.08.2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-07-01
+#: last_checked: 2021-07-02
 #: check_frequency: 30d
 #: next_check: 2021-08-31
 #: valid: -20210831

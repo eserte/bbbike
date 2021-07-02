@@ -525,7 +525,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-06-06
+#: last_checked: 2021-07-02
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -2243,7 +2243,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-06-13
+#: last_checked: 2021-07-02
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2658,7 +2658,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-06-13
+#: last_checked: 2021-07-02
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 ',
@@ -2765,7 +2765,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-01
+#: last_checked: 2021-07-02
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
@@ -3096,7 +3096,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: BOHNSDORFERKREISEL-2017
 #: source_id: 2147346807 (bis 30.6.2021)
-#: source_id: viz2021:13.571014,52.412892,05.08.2020,19:43 (bis 5.7.2021)
+#: source_id: viz2021:13.571014,52.412892,05.08.2020,19:43 (bis 12.7.2021)
 #: note: laut rbbtext kann der Radverkehr passieren
 #: by: https://viz.berlin.de/2021/01/bohnsdorfer-kreisel/ (keine Einschränkungen für Fußgänger)
 #: by: https://twitter.com/VIZ_Berlin/status/1353990207574581249 (Situation mit Bildern)
@@ -3108,9 +3108,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1610838000,
          'id' => 3321,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
-         'text' => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 5.7.2021',
+         'text' => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 12.7.2021',
          'type' => 'handicap',
-         'until' => 1625497200
+         'until' => 1626102000
        },
        {
          'data' => '#: source_id: viz2021:13.536634,52.420965,13.01.2021,07:00
@@ -3172,7 +3172,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147347231
+#: source_id: viz2021:13.440907,52.591391,03.07.2021,00:30
+	2::inwork 12672,20720 12723,20691
+',
+         'from' => 1625176800,
+         'id' => 3331,
+         'source_id' => '2147346882',
+         'text' => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, Fußgänger und Radfahrer sind auch betroffen, vom 3.7.2021 bis 5.7.2021 3 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1625446800
+       },
        {
          'data' => '#: by: https://tierparkcenter.de/wochenmarkt/ (Öffnungszeiten)
 #: tempex: (mo,th,fr) T08-T17
@@ -3242,12 +3253,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: AUER-2021
 #: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken); außerdem gibt\'s eine Einbahnstraßenregelung für Autos
-#: XXX laut rbb bis 28.6.2021
+#: XXX laut rbb bis 30.7.2021
 #: also_indoor: traffic (G,H)
 #: priority: #A vvv
-#: last_checked: 2021-06-20 vvv
+#: last_checked: 2021-07-02 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2021-06-28 vvv
+#: next_check: 2021-07-30 vvv
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
 	q4::inwork 13067,12583 13202,12790
 	q4::inwork; 13273,12902 13202,12790
@@ -3258,7 +3269,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => undef,
          'id' => 3348,
-         'text' => 'Auerstr.: Fahrbahn wegen Bauarbeiten gesperrt, vermutlich bis zum 28.6.2021',
+         'text' => 'Auerstr.: Fahrbahn wegen Bauarbeiten gesperrt, vermutlich bis zum 30.7.2021',
          'type' => 'handicap',
          'until' => undef
        },
@@ -3377,7 +3388,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?
 #: note: 2021-06-13 ("Radfahrer frei"-Schilder fehlen weiterhin, aber zumindest sonntags scheint man auf dem noch existierenden Radstreifen gut durchzukommen)
 #: last_checked: 2021-06-13
-	q4::inwork; 9195,11972 9207,11880 9218,11793
+	q4::inwork; 9195,11972 9207,11880
+# REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
 ',
          'from' => undef,
          'id' => 3360,
@@ -3587,17 +3599,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1631743199
        },
-       {
-         'data' => '#: next_check_id: STERNDAMM-2020
-	q4::inwork 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
-',
-         'from' => 1621202400,
-         'id' => 3378,
-         'source_id' => 'https://www.bahninfo-forum.de/read.php?9,665091,701727#msg-701727',
-         'text' => 'Johannes-Werner-Str.: Gleisbauarbeiten, Fahrbahn gesperrt, bis 2.7.2021',
-         'type' => 'handicap',
-         'until' => 1625238000
-       },
+       undef,
        {
          'data' => '#: note: laut Schild der Wasserbetriebe bis August 2021
 #: source_id: 2147347187 (Anbindung Soorstraße gesperrt, bis 25.6.2021)
@@ -3889,6 +3891,52 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Hasselwerderpark: Uferweg zwischen Rudower Str. und Britzer Str. gesperrt, vom 28.06.2021 bis voraussichtlich 01.09.2021',
          'type' => 'gesperrt',
          'until' => 1630533600
+       },
+       {
+         'data' => '#: last_checked: 2021-07-02 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2021-09-13 vvv
+	3 14888,11934 14926,12129 15003,12241
+	3 15003,12241 14926,12129 14888,11934
+	3 14888,11934 14926,12129 14854,12137
+	3 15003,12241 14926,12129 14994,12121
+	3 14994,12064 14994,12121 14926,12129
+	3 15117,12106 14994,12121 14994,12064
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => 1625250931,
+         'id' => 3404,
+         'source_id' => 'viz2021:13.471852,52.513916,22.06.2021,07:00',
+         'text' => 'Frankfurter Allee: Überqueren in Höhe Weichselstr./Waldeyerstr. und Müggelstr. nicht möglich, bis 13.09.2021',
+         'type' => 'gesperrt',
+         'until' => 1631570400
+       },
+       {
+         'data' => '	2::inwork 52006,106839 52191,106842
+',
+         'from' => 1625004000,
+         'id' => 3405,
+         'source_id' => '217300207',
+         'text' => 'Cremzow - Wendtshof: Vollsperrung nach Unwetter-Schaden, eventuell sind auch Radfahrer betroffen, vorraussichtlich bis 09.07.2021',
+         'type' => 'gesperrt',
+         'until' => 1625868000
+       },
+       {
+         'data' => '#: add_fragezeichen: Sind Radfahrer tatsächlich von den Bauarbeiten betroffen? vvv
+#: next_check: 2021-07-05 vvv
+	q4::inwork; 8685,13728 8841,13800
+	q4::inwork; 8935,13844 9085,13919
+#: next_check ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => 1625349600,
+         'id' => 3406,
+         'source_id' => 'viz202113.37937952.52948405.07.20211000',
+         'text' => 'Invalidenstr.: Gleisarbeiten Richtung Brunnenstr. zwischen Hessische Str. und Am Nordbahnhof, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, vom 05.07.2021 10:00 bis 23.07.2021 17:00',
+         'type' => 'handicap',
+         'until' => 1627077600
        }
      
 );

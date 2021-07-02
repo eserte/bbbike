@@ -1319,7 +1319,9 @@ Efeuweg	3 15599,2752 15613,2739 15590,2724
 Efeuweg	3 15736,2593 15613,2739 15590,2724
 Rollbergstr.: Poller	3 12295,8154 12327,8161 12407,8177
 Rollbergstr.: Poller	3 12407,8177 12327,8161 12295,8154
-Rollbergstr. - Karl-Marx-Str.: Linksabbiegen verboten	3 12545,8209 12714,8249 12689,8289
+modaler Filter, nur für Radfahrer offen	3nocross::ignrte 12753,8187 12714,8249 12689,8289
+Karl-Marx-Str. -> Rollbergstr.: modaler Filter, nur für Radfahrer offen	3::igndisp 12753,8187 12714,8249 12545,8209
+Rollbergstr. -> Karl-Marx-Str.: modaler Filter, nur für Radfahrer offen	3::igndisp 12545,8209 12714,8249 12689,8289
 Belowstr.	1 4992,17908 4946,17701
 Süderholmer Steig	1 -2239,21904 -2245,21544
 Billerbecker Weg	1 1230,18698 1229,18750

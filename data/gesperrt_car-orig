@@ -735,7 +735,8 @@ Karower Str.	3 * 16669,25373 16659,25409
 Efeuweg	3 15590,2724 15613,2739 *
 Efeuweg	3 * 15613,2739 15590,2724
 Rollbergstr.: Poller	3 * 12327,8161 *
-Rollbergstr. - Karl-Marx-Str.: Linksabbiegen verboten	3 12545,8209 12714,8249 12689,8289
+# REMOVED --- Rollbergstr. - Karl-Marx-Str.: Linksabbiegen verboten	3 12545,8209 12714,8249 12689,8289
+Rollbergstr./Karl-Marx-Str.: modaler Filter, nur für Radfahrer offen	3nocross 12753,8187 12714,8249 12689,8289
 Belowstr.	1 4992,17908 4946,17701
 Süderholmer Steig	1 -2239,21904 -2245,21544
 Billerbecker Weg	1 1230,18698 1229,18750
