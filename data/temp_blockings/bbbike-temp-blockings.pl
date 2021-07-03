@@ -30883,7 +30883,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-02
+#: last_checked: 2021-07-03
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
@@ -31227,13 +31227,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => $isodate2epoch->("2021-06-13 00:00:00"), # undef, # XXX
        text  => 'Betckestraße: zwischen Wörther Str. und Götelstr. Fahrbahn gesperrt, Ausweichen auf nördlichen Gehweg, Bordsteine, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Wann ist die Fahrbahn wieder offen?
-#: also_indoor: traffic
-#: last_checked: 2021-05-24
+# REMOVED (bei mapillary keine Sperrung mehr sichtbar) --- #: add_fragezeichen: Wann ist die Fahrbahn wieder offen? --- #: also_indoor: traffic --- #: last_checked: 2021-05-24
 	q4::inwork -3259,12580 -3444,12580
 EOF
      },
@@ -32156,7 +32154,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-07-01
+#: last_checked: 2021-07-03
 #: check_frequency: 30d
 #: next_check: 2021-09-30
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -32508,7 +32506,7 @@ EOF
 #; also_indoor: traffic (G)
 #: priority: #B
 #: also_indoor: traffic (G)
-#: last_checked: 2021-06-19
+#: last_checked: 2021-07-03
 #: check_frequency: 14d
 	q4::inwork 15870,10938 15674,10851
 EOF

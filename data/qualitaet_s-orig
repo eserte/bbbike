@@ -978,7 +978,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-07-02
+#: last_checked: 2021-07-03
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1985,12 +1985,12 @@ Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,1
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20120913.1335.375172.html vvv
 #: source_id: 2147342864 (inaktiv)
 #: source_id: 2147345560 (inaktiv) (Radwegarbeiten)
-#: last_checked: 2021-05-15 vvv
+#: last_checked: 2021-04-27 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: XXX Asphalt oder Beton?
 Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
-#: last_checked: 2021-03-06
+#: last_checked: 2021-05-23 (mapillary)
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3500,7 +3500,7 @@ Mönchstr.: kleinteiliges Kopfsteinpflaster	Q1 -3110,14408 -3174,14438 -3228,1446
 #: by: https://www.berliner-woche.de/spandau/c-bauen/das-projekt-altstadt-spandau-beginnt_a279874 (in der Nähe, am Reformationsplatz)
 #: by: http://altstadtmanagement-spandau.de/isek-spandau/projekte-und-massnahmen/
 #: by: https://www.youtube.com/watch?v=B50vFn-hZOg
-#: last_checked: 2021-05-24
+#: last_checked: 2021-06-23 (mapillary)
 #: check_frequency: 240d
 Markt: kleinteiliges Kopfsteinpflaster	Q1 -3155,14340 -3204,14368 -3231,14383 -3275,14407
 #: by: mapillary
@@ -8296,7 +8296,7 @@ Rüdigerstr.: mäßiges Kopfsteinpflaster	Q2- 16147,12434 16080,12441
 Idealpassage: Asphalt	Q0- 12434,8776 12582,8651
 Hüttigpfad: Verbundsteinpflaster	Q1 4810,15000 4724,15055 4668,15066 4598,15057 4459,15066
 (entlang der Hedwigskathedrale): Pflasterung	Q2+ 9808,12182 9775,12178 9771,12190 9747,12205
-(Am Wriezener Bahnhof - Rüdersdorfer Str.): sehr glatte wassergebundene Decke	Q0- 12944,11760 13052,11867
+(Am Wriezener Bahnhof - Rüdersdorfer Str.): wassergebundene Decke	Q1+ 12944,11760 13052,11867
 #: note: bei Regen viele Pfützen
 Hermann-Stöhr-Platz: wassergebundene Decke, holprig	Q2+ 12453,11790 12413,11901
 (Zur Alten Flussbadeanstalt - Bolleufer): Asphalt	Q0 16347,9594 16268,9670
@@ -8412,8 +8412,9 @@ Letterhausweg: Asphalt	Q0- 2111,14235 2087,14078
 #: XXX ändert sich bei den Bauarbeiten etwas am Pflaster oder der Wegführung?
 #: by: https://www.berliner-woche.de/charlottenburg-nord/c-bauen/umgestaltung-des-gruenzugs-zwischen-halemweg-und-popitzweg-startet_a254857
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=687886#post687886
-#: last_checked: 2020-06-14 (mapillary)
-#: next_check: 2021-04-01
+#: last_checked: 2021-06-18 (mapillary)
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2021-04-01
 (Popitzweg - Halemweg): Kleinsteinpflaster	Q1- 1884,14412 2126,14392 2254,14387 2376,14392
 (Haeftenzeile - Weg über der U-Bahn): Gehwegplatten	Q0- 2135,14475 2126,14392
 Heinickeweg: Asphalt	Q0 2207,14576 2210,14696 2224,14825
@@ -8660,7 +8661,7 @@ Ferdinand-Buisson-Str.: Asphalt	Q0 12337,20954 12459,21010 12562,21055 12619,210
 #: XXX wird beim Ausbau hier auch asphaltiert?
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/strassen-sollen-sicherer-werden_a178577 (Planung nicht vor Mitte 2019 fertig)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036258275901/258275901/00180981/81-Anlagen/01/PraesentationEinwohnerversammlung07_01_2019.pdf
-#: last_checked: 2020-10-02 (mapillary)
+#: last_checked: 2021-06-19 (mapillary)
 #: check_frequency: 180d
 Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229
 # 
@@ -26694,6 +26695,7 @@ Döberitzer Weg: sehr gut asphaltiert	Q0 -8377,13126 -8313,13167 -8264,13197 -825
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/dokumente/internet-auftritt-doeberitzer-weg-1-1-0.pdf
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2023)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1101587.php (Ausbau vom 08.07.2021 bis voraussichtlich 30.11.2021)
+#: by: https://www.berliner-woche.de/staaken/c-bauen/doeberitzer-weg-wird-asphaltiert_a315291
 #: last_checked: 2020-08-23
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2021-11-30
@@ -28367,7 +28369,7 @@ Sprengelstr. (Wilhelmstadt): Gehwegplatten	Q1+ -4026,12720 -4119,12763
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022; Asphaltierung)
 #: by: https://www.berliner-woche.de/spandau/c-bauen/spandau-erneuert-bis-2025-das-rathaus-schulen-strassen-und-friedhoefe_a307134
 #: XXX geplanter Umbau der Straße --- Asphaltiertung ist geplant
-#: last_checked: 2021-05-24
+#: last_checked: 2021-06-23 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2022-12-31
 Betckestr.: Kopfsteinpflaster	Q2 -3635,12572 -3444,12580 -3259,12580 -3170,12603 -3142,12615 -3113,12549

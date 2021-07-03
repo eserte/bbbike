@@ -2765,7 +2765,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-02
+#: last_checked: 2021-07-03
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
@@ -2867,18 +2867,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: add_fragezeichen: Wann ist die Fahrbahn wieder offen?
-#: also_indoor: traffic
-#: last_checked: 2021-05-24
-	q4::inwork -3259,12580 -3444,12580
-',
-         'from' => undef,
-         'id' => 3267,
-         'text' => 'Betckestraße: zwischen Wörther Str. und Götelstr. Fahrbahn gesperrt, Ausweichen auf nördlichen Gehweg, Bordsteine, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/spandau/c-verkehr/radler-muessen-runter-vom-sattel_a177230
@@ -3202,7 +3191,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-07-01
+#: last_checked: 2021-07-03
 #: check_frequency: 30d
 #: next_check: 2021-09-30
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3463,7 +3452,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #; also_indoor: traffic (G)
 #: priority: #B
 #: also_indoor: traffic (G)
-#: last_checked: 2021-06-19
+#: last_checked: 2021-07-03
 #: check_frequency: 14d
 	q4::inwork 15870,10938 15674,10851
 ',
@@ -3751,16 +3740,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1630101600
        },
        undef,
-       {
-         'data' => '	q4::inwork 6636,10492 6628,10318 6626,10155
-',
-         'from' => 1623535200,
-         'id' => 3391,
-         'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1094397.php',
-         'text' => 'Kalckreuthstr.: Bauarbeiten. Fahrbahn gesperrt, voraussichtlich vom 14.6.2021 bis 2.7.2021',
-         'type' => 'handicap',
-         'until' => 1625263200
-       },
+       undef,
        undef,
        {
          'data' => '	q4::inwork -1478,18407 -1358,18400
