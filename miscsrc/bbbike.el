@@ -707,16 +707,10 @@
 	    (let* ((begin-pos (match-beginning 1))
 		   (end-pos (match-end 1))
 		   (source-id (buffer-substring begin-pos end-pos)))
-	      (save-excursion
-		(if (not (search-forward-regexp "^[ \t]*data[ \t]*=>" nil t)) ; search next "data" key
-		    (error (format "Cannot find data entry for source_id %s" source-id)))
-		(if (not (search-forward-regexp "^\\([^#].*\t\\|\t\\)[^ ]*[ ]*\\([^,]*,[^ ]*\\)" nil t)) ; search first coordinate (and make available as $1)
-		    (error (format "Cannot find bbd record with coordinate for source_id %s" source-id)))
-		(make-button begin-pos end-pos
-			     :type 'bbbike-sourceid-viz-button
-			     :sourceid source-id
-			     :bbbikepos (buffer-substring (match-beginning 2) (match-end 2))
-			     )))))
+	      (make-button begin-pos end-pos
+			   :type 'bbbike-sourceid-viz-button
+			   :sourceid source-id
+			   ))))
 	))
 
   ;; recognize "#: source_id" directives in bbd files which look like VIZ/VMZ ids (see above)
@@ -726,14 +720,10 @@
       (let* ((begin-pos (match-beginning 1))
 	     (end-pos (match-end 1))
 	     (source-id (buffer-substring begin-pos end-pos)))
-	(save-excursion
-	  (if (not (search-forward-regexp "^\\([^#].*\t\\|\t\\)[^ ]*[ ]*\\([^,]*,[^ ]*\\)" nil t)) ; search first coordinate (and make available as $1)
-	      (error (format "Cannot find bbd record with coordinate for source_id %s" source-id)))
-	  (make-button begin-pos end-pos
-		       :type 'bbbike-sourceid-viz-button
-		       :sourceid source-id
-		       :bbbikepos (buffer-substring (match-beginning 2) (match-end 2))
-		       )))))
+	(make-button begin-pos end-pos
+		     :type 'bbbike-sourceid-viz-button
+		     :sourceid source-id
+		     ))))
 
   ;; recognize "#: osm_watch" directives (ways etc.)
   (save-excursion
@@ -766,5 +756,13 @@
       (setq res (replace-regexp-in-string "%lon" lon fmt))
       (setq res (replace-regexp-in-string "%lat" lat res))
       res)))
+
+(defun bbbike--bbd-find-next-coordinate (label)
+  (save-excursion
+    (if (not (search-forward-regexp "^\\([^#].*\t\\|\t\\)[^ ]*[ ]*\\([^,]*,[^ ]*\\)" nil t)) ; search first coordinate (and make available as $1)
+	(error (concat "Cannot find bbd record with coordinate for " label)))
+    )
+  (buffer-substring (match-beginning 2) (match-end 2))
+  )
 
 (provide 'bbbike-mode)
