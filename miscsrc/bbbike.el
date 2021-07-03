@@ -760,7 +760,8 @@
     (while (search-forward-regexp "^#:[ ]*\\(also_indoor:?[ ]*traffic.*\\)" nil t)
       (make-button (match-beginning 1) (match-end 1)
 		   :type 'bbbike-traffic-button
-		   :bbbikepos (bbbike--bbd-find-next-coordinate (format "traffic at line %s" (line-number-at-pos (match-beginning 1))))
+		   ;: very expensive, use only for debugging --- bbbikepos (bbbike--bbd-find-next-coordinate (format "traffic at line %s" (line-number-at-pos (match-beginning 1))))
+		   :bbbikepos (bbbike--bbd-find-next-coordinate "traffic")
 		   )))
   )
 
