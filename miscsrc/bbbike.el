@@ -43,6 +43,8 @@
 
 (setq bbbike-viz2021-regexp "viz2021:[0-9.,:]+")
 
+(defvar bbbike-mc-traffic-base-url "https://mc.bbbike.org/mc/?profile=traffic&zoom=15&") ; add "lat=52.518117&lon=13.498035" for a complete URL
+
 (defconst bbbike-font-lock-defaults
   '(bbbike-font-lock-keywords t nil nil nil (font-lock-multiline . nil)))
 
@@ -667,6 +669,15 @@
   'face 'bbbike-button
   'help-echo "Click button to show OSM note")
 
+(defun bbbike-traffic-button (button)
+  (browse-url (concat bbbike-mc-traffic-base-url "&" (bbbike--convert-coord-to-wgs84 (button-get button :bbbikepos) "lat=%lat&lon=%lon"))))
+
+(define-button-type 'bbbike-traffic-button
+  'action 'bbbike-traffic-button
+  'follow-link t
+  'face 'bbbike-button
+  'help-echo "Click button to show current traffic situation using mc.bbbike.org")
+
 (defun bbbike-create-buttons ()
   ;; For some reason, overlays accumulate if a buffer
   ;; is visited another time, making emacs slower and slower.
@@ -743,6 +754,14 @@
 		   :osmnoteid (buffer-substring-no-properties (match-beginning 2) (match-end 2))
 		   )))
 
+  ;; recognize "#: also_indoor: traffic" directives
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward-regexp "^#:[ ]*\\(also_indoor:?[ ]*traffic.*\\)" nil t)
+      (make-button (match-beginning 1) (match-end 1)
+		   :type 'bbbike-traffic-button
+		   :bbbikepos (bbbike--bbd-find-next-coordinate (format "traffic at line %s" (line-number-at-pos (match-beginning 1))))
+		   )))
   )
 
 ;; convert bbbike "standard" coordinates to WGS84 coordinates using external commands
