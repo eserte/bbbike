@@ -2349,7 +2349,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-06-22 (mapillary)
+#: last_checked: 2021-06-29 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -3052,13 +3052,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2021-05-09-adlershof-2/40-2021-05-09-214-xxl.jpg (kein provisorischer Übergang mehr)
 #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt
 #: osm_watch: way id="855549020" version="1"
-#: last_checked: 2021-05-09 (krickstadt)
+#: last_checked: 2021-07-04
 #: check_frequency: 90d
 	2::inwork 18836,3611 18943,3508
 ',
          'from' => undef,
          'id' => 3313,
-         'text' => 'Katharina-Boll-Dornberger-Str.: Weg kann wegen Straßenbahnbauarbeiten gesperrt sein',
+         'text' => 'Katharina-Boll-Dornberger-Str.: Weg kann wegen Straßenbahnbauarbeiten gesperrt sein (Stand 4.7.2021: provisorischer Übergang existiert)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3148,13 +3148,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung? Falls ja, wo ist der gesperrte Abschnitt und gilt die Sperrung auch für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="24"
 #: osm_watch: way id="165832806" version="21"
-#: last_checked: 2021-05-16
+#: last_checked: 2021-07-04
 #: check_frequency: 45d
 	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17483,8644 17449,8720 17416,8767 17380,8858
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 5/2021: Durchfahrt ist noch möglich)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 7/2021: Fahrbahn im nördlichen Abschnitt gesperrt, enger Fußweg existiert)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3191,7 +3191,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-07-03
+#: last_checked: 2021-07-04
 #: check_frequency: 30d
 #: next_check: 2021-09-30
 	q4::inwork; 15279,10862 15272,10790 15261,10738
@@ -3644,8 +3644,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.bahninfo-forum.de/read.php?9,702729,704984#msg-704984 (nun bis zum Bahnübergang)
 #: by: https://twitter.com/VIZ_Berlin/status/1409387334097727491
 # REMOVED (hier mittlerweile offen) ---	q3::inwork 18080,5376 18245,5551
-# REMOVED (hier nicht mehr?) ---	q3::inwork 18245,5551 18370,5511 18680,5413
-	q3::inwork 18680,5413 18955,5320 19037,5316 19186,5310 19328,5304
+# REMOVED (hier nicht mehr) ---	q3::inwork 18245,5551 18370,5511 18680,5413 18955,5320
+	q3::inwork 18955,5320 19037,5316 19186,5310 19328,5304 19405,5284
 ',
          'from' => 1621843200,
          'id' => 3383,
@@ -3904,7 +3904,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1625868000
        },
        {
-         'data' => '#: add_fragezeichen: Sind Radfahrer tatsächlich von den Bauarbeiten betroffen? vvv
+         'data' => '#: note: laut rbb: "Radfahrende steigen bitte ab"
+#: add_fragezeichen: Sind Radfahrer tatsächlich von den Bauarbeiten betroffen? vvv
 #: next_check: 2021-07-05 vvv
 	q4::inwork; 8685,13728 8841,13800
 	q4::inwork; 8935,13844 9085,13919
