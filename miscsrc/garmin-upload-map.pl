@@ -25,7 +25,7 @@ use POSIX 'strftime';
 use BBBikeUtil qw(save_pwd2 bbbike_root);
 use GPS::BBBikeGPS::MountedDevice;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 sub usage () {
     die "usage: @{[ basename $0 ]} [--keep] [--description ...] [--number ...] directory_or_url\n";
@@ -62,7 +62,7 @@ if ($dir_or_url =~ m{\.osm\.gz$}) {
     my $ua = _get_ua();
     my $resp = $ua->get($dir_or_url, ':content_file' => "$tmpdir/download.zip");
     $resp->is_success
-	or die "Fetching $dir_or_url failed: " . $ua->status_line;
+	or die "Fetching $dir_or_url failed: " . $resp->dump;
     system("cd $tmpdir && unzip download.zip");
     $dir = realpath first { -d $_ } glob("$tmpdir/*");
     $kept_file = "$tmpdir/download.zip" if $keep;
@@ -156,7 +156,7 @@ sub download_and_convert_osm {
 	$file = "download.osm.gz";
 	my $resp = $ua->get($dir_or_url, ':content_file' => $file);
 	$resp->is_success
-	    or die "Fetching $dir_or_url failed: " . $ua->status_line;
+	    or die "Fetching $dir_or_url failed: " . $resp->dump;
 	$file = realpath($file);
 	$kept_file = $file if $keep;
     } else {
