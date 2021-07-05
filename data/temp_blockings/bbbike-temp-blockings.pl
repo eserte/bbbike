@@ -29841,8 +29841,10 @@ EOF
        data  => <<EOF,
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 6.7.2021, Gesamtbaumaßnahme bis 2024)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
+#: also_indoor: traffic (G)
 #: last_checked: 2021-02-20
 #: next_check: 2021-07-06
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
@@ -30883,7 +30885,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-03
+#: last_checked: 2021-07-05
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
@@ -32867,6 +32869,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1099864.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/in-der-goerzallee-wird-die-fahrbahn-vom-19-juli-bis-6-august-erneuert_a315012
 	q4::inwork; 3716,2063 3746,2108 3805,2196
 EOF
      },
@@ -32968,6 +32971,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz202113.37937952.52948405.07.20211000',
        data  => <<EOF,
+#: also_indoor: traffic (G,H) (beide falsch/unvollständig?)
 #: note: laut rbb: "Radfahrende steigen bitte ab"
 #: add_fragezeichen: Sind Radfahrer tatsächlich von den Bauarbeiten betroffen? vvv
 #: next_check: 2021-07-05 vvv
@@ -32975,6 +32979,36 @@ EOF
 	q4::inwork; 8935,13844 9085,13919
 #: next_check ^^^
 #: add_fragezeichen ^^^
+EOF
+     },
+     { from  => $isodate2epoch->("2021-07-11 00:00:00"),
+       until => $isodate2epoch->("2021-08-21 00:00:00"),
+       text  => 'Paradiesstr.: Bauarbeiten, Fahrbahn zwischen Buntzelstr. und "Thomas Philipps" gesperrt, vom 12.7.2021 bis 20.8.2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1103089.php',
+       data  => <<EOF,
+	q4::inwork 21355,-309 21322,-176 21250,118
+EOF
+     },
+     { from  => 1628978400, # 2021-08-15 00:00
+       until => 1631311200, # 2021-09-11 00:00
+       text  => 'Paradiesstr.: Bauarbeiten, Fahrbahn zwischen "Thomas Philipps" und B96a gesperrt, vom 16.8.2021 bis 10.09.2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1103089.php',
+       data  => <<EOF,
+	q4::inwork 21115,271 21171,222 21225,172 21250,118 21322,-176
+EOF
+     },
+     { from  => $isodate2epoch->("2021-07-11 00:00:00"),
+       until => 1634248800, # 2021-10-15 00:00
+       text  => 'B179: Sperrung Brücke Körbiskrug, evtl. sind auch Radfahrer betroffen, 12.07.2021 bis 14.10.2021',
+       type  => 'gesperrt',
+       source_id => '216101007',
+       data  => <<EOF,
+#: also_indoor: traffic
+#: XXX gibt es nach den Bauarbeiten bereits den neuen Radweg?
+#: next_check: 2021-10-15
+	2::inwork 27833,-16133 27599,-16162
 EOF
      },
     );

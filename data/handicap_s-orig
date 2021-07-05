@@ -128,8 +128,8 @@
 #: osm_watch: way id="26285705" version="8"
 #: osm_watch: way id="69166216" version="8"
 #: source_id: 2147346409 (bis Ende 2021, Gesamtbaumaßnahme bis Ende 2023)
-#: last_checked: 2021-06-04 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2021-07-05 vvv
+#: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork; 14242,9448 14185,9509 14089,9610
@@ -617,7 +617,7 @@ Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 #: source_id: 2147345357 (inaktiv)
 #: source_id: 2147345472 (bis 10.8.2021, Gesamtbaumaßnahme bis 2024)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-07-01
+#: last_checked: 2021-07-05
 #: check_frequency: 120d
 #: next_check: 2021-10-08
 Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12392,8724 12330,8636
@@ -630,9 +630,10 @@ Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: XXX laut rbbtext bis 4.7.2021
 #: osm_watch: way id="822805265" version="8"
 #: also_indoor: traffic (G)
-#: last_checked: 2021-07-01
-#: check_frequency: 90d
-#: next_check: 2021-07-05
+#: last_checked: 2021-07-05
+#: check_frequency: 1d
+# REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: next_check: 2021-07-05
 Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -664,9 +665,10 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: osm_watch: way id="71392596" version="14"
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-07-01
-#: check_frequency: 30d
-#: next_check: 2021-07-05
+#: last_checked: 2021-07-05
+#: check_frequency: 1d
+# REMOVED --- #: check_frequency: 30d
+# REMOVED --- #: next_check: 2021-07-05
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
 # 
 # REMOVED (hier mittlerweile weitgehend befahrbar) --- Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187
@@ -778,9 +780,12 @@ Dennewitzstr.: Einbahnstraßenregelung, gemeinsamer Geh- und Radweg	q3::inwork; 8
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neubau-der-moltke-bruecke-beginnt-anfang-2020_a212011
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/abriss-der-moltkebruecke-ist-alternativlos_a237607
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1099457.php (Bauarbeiten voraussichtlich ab Oktober 2021)
+#: by: https://abendblatt-berlin.de/2021/07/05/steglitz-zehlendorf-die-marode-moltkebruecke-verschwindet/ (Bauarbeiten beginnen ab Oktober 2021, Behelfsbrücken ab Februar 2022, Abbruch der alten Brücke April 2022, Verkehrsfreigabe September 2023)
+#: by: https://mein.berlin.de/projekte/ersatzneubau-der-moltkebrucke-in-steglitz-zehlendo/
 #: XXX wann wird die Einschränkung beendet?
 #: osm_watch: way id="13860352" version="15"
 #: also_indoor: traffic (H)
+#: priority: #A
 #: last_checked: 2020-10-25
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2021-10-01
@@ -4756,7 +4761,7 @@ Brusebergstr.: enge Straße	q1 6060,18534 6045,18305 6086,18162 6115,18042 6145,1
 #: by: Juli (cellicatissimo...)
 Plüschowstr.: einige Fußgänger	q1 242,3459 199,3774
 #: by: tyohre vvv
-Johannes-Werner-Str.: enge Straße	q1 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
+# REMOVED (eigentlich nicht) --- Johannes-Werner-Str.: enge Straße	q1 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
 Mühlbergstr.: enge Straße	q1 17187,3988 17288,4026 17341,4046
 Mühlbergstr.: enge Straße	q1 17346,4031 17402,4050 17405,4151
 #: by: ^^^

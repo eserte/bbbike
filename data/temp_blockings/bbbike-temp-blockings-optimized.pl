@@ -2590,8 +2590,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 6.7.2021, Gesamtbaumaßnahme bis 2024)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
+#: also_indoor: traffic (G)
 #: last_checked: 2021-02-20
 #: next_check: 2021-07-06
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
@@ -2765,7 +2767,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-03
+#: last_checked: 2021-07-05
 # REMOVED --- #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
@@ -3161,18 +3163,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147347231
-#: source_id: viz2021:13.440907,52.591391,03.07.2021,00:30
-	2::inwork 12672,20720 12723,20691
-',
-         'from' => 1625176800,
-         'id' => 3331,
-         'source_id' => '2147346882',
-         'text' => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, Fußgänger und Radfahrer sind auch betroffen, vom 3.7.2021 bis 5.7.2021 3 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1625446800
-       },
+       undef,
        {
          'data' => '#: by: https://tierparkcenter.de/wochenmarkt/ (Öffnungszeiten)
 #: tempex: (mo,th,fr) T08-T17
@@ -3794,7 +3785,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1627682399
        },
        {
-         'data' => '	q4::inwork; 3716,2063 3746,2108 3805,2196
+         'data' => '#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/in-der-goerzallee-wird-die-fahrbahn-vom-19-juli-bis-6-august-erneuert_a315012
+	q4::inwork; 3716,2063 3746,2108 3805,2196
 ',
          'from' => 1626559200,
          'id' => 3397,
@@ -3904,7 +3896,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1625868000
        },
        {
-         'data' => '#: note: laut rbb: "Radfahrende steigen bitte ab"
+         'data' => '#: also_indoor: traffic (G,H) (beide falsch/unvollständig?)
+#: note: laut rbb: "Radfahrende steigen bitte ab"
 #: add_fragezeichen: Sind Radfahrer tatsächlich von den Bauarbeiten betroffen? vvv
 #: next_check: 2021-07-05 vvv
 	q4::inwork; 8685,13728 8841,13800
@@ -3918,6 +3911,39 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Invalidenstr.: Gleisarbeiten Richtung Brunnenstr. zwischen Hessische Str. und Am Nordbahnhof, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, vom 05.07.2021 10:00 bis 23.07.2021 17:00',
          'type' => 'handicap',
          'until' => 1627077600
+       },
+       {
+         'data' => '	q4::inwork 21355,-309 21322,-176 21250,118
+',
+         'from' => 1625954400,
+         'id' => 3407,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1103089.php',
+         'text' => 'Paradiesstr.: Bauarbeiten, Fahrbahn zwischen Buntzelstr. und "Thomas Philipps" gesperrt, vom 12.7.2021 bis 20.8.2021',
+         'type' => 'handicap',
+         'until' => 1629496800
+       },
+       {
+         'data' => '	q4::inwork 21115,271 21171,222 21225,172 21250,118 21322,-176
+',
+         'from' => 1628978400,
+         'id' => 3408,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1103089.php',
+         'text' => 'Paradiesstr.: Bauarbeiten, Fahrbahn zwischen "Thomas Philipps" und B96a gesperrt, vom 16.8.2021 bis 10.09.2021',
+         'type' => 'handicap',
+         'until' => 1631311200
+       },
+       {
+         'data' => '#: also_indoor: traffic
+#: XXX gibt es nach den Bauarbeiten bereits den neuen Radweg?
+#: next_check: 2021-10-15
+	2::inwork 27833,-16133 27599,-16162
+',
+         'from' => 1625954400,
+         'id' => 3409,
+         'source_id' => '216101007',
+         'text' => 'B179: Sperrung Brücke Körbiskrug, evtl. sind auch Radfahrer betroffen, 12.07.2021 bis 14.10.2021',
+         'type' => 'gesperrt',
+         'until' => 1634248800
        }
      
 );
