@@ -3198,18 +3198,18 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: source_id: 2147342363 (bis 30.7.2021)
 #: source_id: LMS-BR_r_LMS-BR_125793_LMS-BR_72 (inaktiv)
 #: source_id: 2147345793 (inaktiv)
-#: source_id: viz2021:13.518934,52.514367,25.01.2021,08:00 (bis 26.7.2021)
+#: source_id: viz2021:13.518934,52.514367,25.01.2021,08:00 (bis 6.8.2021)
 #: XXX provisorische Radwegführung über den Bürgersteig
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18225,12697 18220,12450
 # REMOVED (wird später vermutlich richtig gemacht) --- provisorische Radspur	RW4; 18220,12450 18216,12262 18216,12239 18215,12123
 #: last_checked: 2021-06-05 vvv
-# REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2021-07-26 vvv
+#: check_frequency: 45d vvv
+#: next_check: 2021-08-06 vvv
 	RW2; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
 	RW2; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123
 #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 	RW4; 18225,12697 18235,13236 18226,13506
 	RW4; 18226,13506 18235,13236 18225,12697
@@ -4049,6 +4049,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: Andreas Mühlhausen vvv
 #: XXX Radweg wird 2012 saniert vvv
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: source_id: 2147342739
 #: last_checked: 2021-05-15 vvv
 #: check_frequency: 120d vvv
@@ -4237,7 +4238,7 @@ die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt
 # REMOVED (nein) --- #: XXX Wie sieht es in der Gegenrichtung aus? Ist der Gehweg hier auch für Radfahrer frei?
 Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9227,20617
 #: next_check_id: KASTANIENALLEE-2021
-#: last_checked: 2021-04-11
+#: last_checked: 2021-07-02 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2021-10-29
 	RW2;RW8 9227,20617 9175,20613 9162,20613 9073,20606
@@ -4367,12 +4368,13 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: by: http://www.infravelo.de/projekt/weitlingstrasse-und-skandinavische-strasse/ (früherer Eintrag) (Grünbeschichtung+Verbreiterung, 2. Quartal 2021 - 3. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/weitlingstrasse-und-skandinavische-strasse-2/
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erstellung eines grünbeschichteten Radfahrstreifens seit Mai 2021, Bauende Dezember 2021)
+#: source_id: viz2021:13.500319,52.510647,28.06.2021,08:00
 #: XXX dieser Abschnitt bekommt eine Grünmarkierung
 #: priority: #D
 #: last_checked: 2021-03-03 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-12-31
-#: next_check: 2021-07-07
+#: next_check: 2021-07-20
 	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 Grünmarkierung	RW4;RW4 17166,11944 17210,11950 17338,11969
 	RW3;RW3 2717,7093 2731,7247 2744,7397 2750,7444 2757,7604
@@ -7106,3 +7108,7 @@ enger Radweg, schmaler Unterstreifen gegen parkende Autos, Verbundsteinpflaster	
 	RW7;RW7 11472,7899 11579,7926 11647,7940
 	RW7;RW7 11754,7964 11833,7980 11979,8014
 asphaltiert, nicht sehr breit	RW1; 15279,10862 15272,10790 15261,10738
+asphaltiertes Straßenbahnkap	RW1;RW1 13250,16058 13189,16089
+asphaltiertes Straßenbahnkap	RW1; 12764,16302 12797,16285 12826,16271
+asphaltiertes Straßenbahnkap	RW1; 12797,16285 12764,16302 12725,16321
+asphaltiertes Straßenbahnkap	RW1; 12474,16443 12399,16479
