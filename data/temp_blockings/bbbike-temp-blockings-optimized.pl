@@ -2949,7 +2949,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="2"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-06
+#: last_checked: 2021-07-07
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4015,7 +4015,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => 1624917600,
          'id' => 3401,
-         'source_id' => 'viz202113.19521252.52793830.06.20210600',
+         'source_id' => 'viz2021:13.195212,52.527938,30.06.2021,06:00',
          'text' => 'Pichelsdorfer Str.: Bauarbeiten zwischen Wilhelmstr. und Zimmerstr., evtl. sind auch Radfahrer betroffen, vom 30.06.2021 06:00 bis 31.12.2021 17:00 ',
          'type' => 'handicap',
          'until' => 1640991600

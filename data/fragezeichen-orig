@@ -58,7 +58,8 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: http://www.infravelo.de/api/v1/project/9020023/
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021, Neubau Radweg)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausführungsplanung)
-#: source_id: 2147343740
+#: source_id: 2147343740 (inaktiv)
+#: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021)
 #: last_checked: 2021-06-13
 #: next_check: 2021-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -196,7 +197,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: source_id: 2147342276 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_120802_LMS-BR_72 (inaktiv)
 #: source_id: 2147343746 (bis Mitte April 2019) (inaktiv)
-#: osm_watch: way id="698150954" version="7"
+#: osm_watch: way id="698150954" version="8"
 #: last_checked: 2021-06-13
 #: check_frequency: 21d
 #: next_check: 2021-06-30
@@ -450,7 +451,7 @@ Nürnberger Str.: Radspuren entstehen	?::projected 5866,10492 6025,10746
 #: by: https://api.fixmyberlin.de/api/plannings/109
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/baubeginn-an-kastanienallee-und-friedrich-engels-strasse-noch-nicht-in-sicht_a282961 (westlicher Abschnitt bereits geplant, kein Termin für den Beginn der Bauarbeiten)
 #: source_id: 2147346774 (Leitungsarbeiten, bis 29.10.2021)
-#: osm_watch: way id="36954368" version="11"
+#: osm_watch: way id="36954368" version="12"
 #: last_checked: 2021-07-02 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2021-10-29
@@ -1430,7 +1431,7 @@ Tornower Weg - Wilhelmsruher Damm: Verbesserung der Radroute	?::projected 6519,2
 #: by: http://www.dafmap.de/d/berlin.html?center=52.519810+13.319903&zoom=17# (Engstelle wg. Baustelle)
 #: by: http://www.berliner-woche.de/charlottenburg/verkehr/der-verbesserung-des-radwegenetzes-fallen-500-parkplaetze-zum-opfer-d143224.html (sogar bis zur Gotzkowskybrücke)
 #: by: http://www.abendblatt-berlin.de/2018/08/27/mehr-platz-fuer-radfahrer-2/
-#: osm_watch: way id="136814134" version="16"
+#: osm_watch: way id="136814134" version="17"
 #: last_checked: 2021-04-02 (mapillary)
 #: check_frequency: 60d
 Dovestr.: Radstreifen geplant	?::projected 4749,12689 4648,12559
@@ -2120,10 +2121,11 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: XXX außerdem: Vorfahrtsregelung werden geändert (zum Am Falkenberg) oder spezifiziert (zur Buntzelstr.)
 #: XXX komplettes Bauende 2018
 #: XXX im Maßnahmenkatalog: Bd.5 + Bd.6
+#: XXX laut osm mittlerweile Radspuren in der Richterstr.
 # REMOVED (inaktiv) --- #: XXX NEW¦Richterstraße (Bohnsdorf) Richtung Adlergestell ab Buntzelstraße (Berlin)  Gültig ab: 30.10.2018 10:31  Fahrtrichtung gesperrt, Sraßenbauarbeiten (bis 08/19)¦2147343391 -> für Radfahrer relevant?
 # REMOVED (gelöscht) --- #: osm_watch: way id="151627031" version="21"
-#: osm_watch: way id="639935469" version="9"
-#: osm_watch: way id="913879539" version="1"
+#: osm_watch: way id="639935469" version="11"
+#: osm_watch: way id="913879539" version="2"
 #: osm_watch: way id="377862703" version="5"
 #: source_id: 2147341295 (inaktiv)
 #: source_id: 2147341681 (inaktiv)
@@ -2523,8 +2525,8 @@ Fasanenstr.: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.803251.php (allgemeine Erwähnung der Karl-Marx-Str.)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.803054.php (bis Ende Juni 2019)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/pilotprojekt-geschuetzter-radweg-poller-zwischen-hermannplatz-und-reuterstrasse-geplant_a210229
-#: osm_watch: way id="764003876" version="4"
-#: osm_watch: way id="764003865" version="3"
+#: osm_watch: way id="764003876" version="5"
+#: osm_watch: way id="764003865" version="4"
 #: osm_watch: way id="764003862" version="10"
 #: priority: #D
 #: last_checked: 2021-07-05 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
@@ -2756,7 +2758,7 @@ Schwanenblumenweg: Wann wird die Straße gebaut? Qualität? Wird es eine Verbindun
 Schilfanger: Wann wird die Straße gebaut? Qualität?	?::projected 21106,19026 21098,19043 21089,19062 21109,19071 21118,19055 21098,19043
 #: osm_watch: way id="654986834" version="6"
 Weidenanger: Wann wird die Straße gebaut? Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19081 21147,19064 21175,19076
-#: osm_watch: way id="506201939" version="18"
+# REMOVED (gelöscht) --- #: osm_watch: way id="506201939" version="19"
 #: XXX laut osm bis David-Friedländer-Weg fertiggestellt
 #: next_check: 2021-06-29
 Am Dörferweg: wird die Straße verlängert?	?::projected 20889,18935 20998,18980 21039,18997
@@ -3467,7 +3469,7 @@ Berliner Allee: entstehen hier noch Radstreifen?	?::projected 14754,17673 14673,
 # REMOVED (realisiert) --- #: osm_watch: way id="29052147" version="29"
 # REMOVED (realisiert) --- #: osm_watch: way id="351509721" version="7"
 #: osm_watch: way id="4685718" version="27"
-#: last_checked: 2021-07-06 vvv
+#: last_checked: 2021-07-07 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2021-09-30 vvv
 # REMOVED (realisiert) --- Palisadenstr.: Ausbau zur Fahrradstraße	? 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
@@ -4605,7 +4607,7 @@ Bizetstr.: entsteht hier eine Fahrradstraße?	? 13409,15687 13456,15760 13524,157
 #: last_checked: 2021-05-05
 Dunckerstr.: entsteht hier eine Fahrradstraße?	? 11595,15460 11632,15530 11654,15572 11689,15639 11736,15727
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021)
-#: last_checked: 2021-05-05
+#: last_checked: 2021-07-07
 Senefelderstr: entsteht hier eine Fahrradstraße?	? 11535,14900 11582,15021 11595,15058 11609,15114 11631,15192 11651,15273 11682,15397
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-12-06-19.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (... aus dem übergeordneten Straßennetz entlassen werden)
@@ -4716,7 +4718,7 @@ Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="13"
 #: also_indoor: traffic
-#: last_checked: 2021-06-23 (traffic)
+#: last_checked: 2021-07-07
 #: check_frequency: 60d
 Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
 # 

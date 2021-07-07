@@ -1137,7 +1137,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9848 (Einwohnerfrage, Wegfall von Parkplätzen)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="15"
-#: last_checked: 2021-06-01
+#: last_checked: 2021-07-07
 #: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1150,7 +1150,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="27"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2021-06-01
+#: last_checked: 2021-07-07
 #: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
@@ -1988,27 +1988,42 @@ neu asphaltiert	RW1; 5523,19746 5495,19571 5486,19515
 	RW3; 5517,20120 5506,20197
 	RW4; 5506,20197 5476,20372
 	RW3; 5476,20372 5463,20461 5441,20613 5430,20685
+#: by: osm
+	RW3; 5430,20685 5421,20748
+#: by: osm
+#: note: mit Bushaltestelle
+	RW3; 5421,20748 5410,20822
+#: by: osm
+#: note: mit Bushaltestelle
+	RW3; 5379,21016 5370,21066
+#: by: osm
+#: note: kann zugeparkt sein
+	RW4; 5370,21066 5356,21146 5349,21198
+#: by: osm
+#: note: "Radfahren frei"-Schild fehlt (noch?)
+Busspur ist immer gültig	RW5; 5349,21198 5343,21250
 # 
-#: next_check_id: ORANIENBURGERNORD-2018
-#: XXX Markierungen fehlen noch vvv
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksamt/bauen-bildung-und-kultur/dokumente/uebersicht-der-radwege-in-reinickendorf.pdf (im Bau, Radfahrstreifen oder Radwege)
-#: add_fragezeichen: Existieren nun durchgängig Radspuren in der Oranienburger Straße?
-#: last_checked: 2021-05-24 vvv
-#: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2021-05-18 vvv
-	RW0; 5430,20685 5421,20748 5410,20822
-	RW0; 5379,21016 5370,21066 5356,21146 5349,21198 5343,21250
-	RW0; 5421,20748 5430,20685
-	RW0; 5379,21016 5395,20915 5401,20882
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+#: by: osm
+#: note: mit Bushaltestelle
+	RW3; 5379,21016 5395,20915
+#: by: osm
+#: note: kann zugeparkt sein
+	RW4; 5395,20915 5401,20882 5410,20822 5421,20748
+#: by: osm
+#: note: mit Bushaltestelle
+	RW3; 5421,20748 5430,20685
+# REMOVED --- #: next_check_id: ORANIENBURGERNORD-2018 --- #: XXX Markierungen fehlen noch vvv --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksamt/bauen-bildung-und-kultur/dokumente/uebersicht-der-radwege-in-reinickendorf.pdf (im Bau, Radfahrstreifen oder Radwege) --- #: add_fragezeichen: Existieren nun durchgängig Radspuren in der Oranienburger Straße? --- #: last_checked: 2021-05-24 vvv --- #: check_frequency: 30d vvv --- # REMOVED --- #: next_check: 2021-05-18 vvv --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 # 
 	RW4; 5410,20822 5401,20882 5395,20915
 neu asphaltiert	RW2; 5395,20915 5379,21016
+#: by: osm
+#: note: mit Bushaltestelle
+	RW3; 5343,21250 5349,21198
 # 
 neu asphaltiert	RW1; 5349,21198 5356,21146 5370,21066
+#: by: osm
+#: note: kann zugeparkt sein
+	RW3; 5370,21066 5379,21016
 neu asphaltiert	RW1; 5136,21738 5210,21636 5311,21495
 #: by: mapillary
 	RW3; 5311,21495 5320,21432
@@ -3569,7 +3584,7 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019) (inaktiv)
 #: source_id: 2147345490 (bis 30.7.2021)
 #: priority: #D vvv
-#: last_checked: 2021-06-14 vvv
+#: last_checked: 2021-07-07 vvv
 #: next_check: 2021-07-30 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -6609,7 +6624,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2021-06-24 (mapillary)
+#: last_checked: 2021-07-07
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: next_check_id: POPUPRADWEGE-2020
@@ -6620,7 +6635,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1389893047379496960 (Markierungsarbeiten)
 #: by: https://twitter.com/VIZ_Berlin/status/1402152820439138307
-#: last_checked: 2021-06-14 vvv
+#: last_checked: 2021-07-07 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2021-09-30 vvv
 #: osm_watch: way id="4615031" version="38"
