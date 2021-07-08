@@ -427,8 +427,8 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 m‰ﬂige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
 # REMOVED (vorher) --- m‰ﬂige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056
-#: XXX hier Bauarbeiten der Wasserbetriebe am Gehweg, laut Bauschild bis Mai 2021, laut rbbtext bis 9.7.2021
-#: next_check: 2021-07-09
+#: XXX hier Bauarbeiten der Wasserbetriebe am Gehweg, laut Bauschild bis Mai 2021, laut rbbtext bis 12.7.2021
+#: next_check: 2021-07-12
 provisorische schmale Radspur	RW3; 10256,11160 10501,11056
 m‰ﬂige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10501,11056 10637,10996 10684,10975
 # REMOVED (vorher) --- m‰ﬂige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056
@@ -6612,7 +6612,7 @@ Tempo 10	RW6;RW6 20348,7634 20459,7445 20501,7472 20540,7532
 	RW6;RW6 7366,14067 7443,14107 7547,13946 7630,13810 7535,13754
 	RW3;RW3 10228,-2136 10203,-2137 10096,-2137
 	RW6;RW6 12422,21492 12472,21510
-	RW3;RW3 22062,773 22007,711
+	RW4;RW4 22062,773 22007,711
 Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW6;RW6 -7831,-2230 -7859,-2304
 #: note: nicht-offizielles Spielstraﬂenschild

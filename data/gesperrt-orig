@@ -1724,7 +1724,7 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 #: osm_watch: way id="4708164" version="16"
 #: last_checked: 2021-05-24
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2021-09-01
+#: next_check: 2021-09-17
 #: valid: 20210901-
 Soorstr.	1s:q3 1861,11284 1884,11126
 # 
@@ -3356,7 +3356,7 @@ Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,1
 #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022)
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße.
 #: osm_watch: way id="308312347" version="3"
-#: last_checked: 2021-05-24
+#: last_checked: 2021-07-04 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2022-08-15
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
@@ -4336,6 +4336,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: next_check_id: BERLINERMAHLOW-2021
 #: by: osm
 #: by: https://www.bahninfo-forum.de/read.php?9,654720,702391#msg-702391
+#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210530/
 #: osm_watch: way id="663005792" version="3"
 #: also_indoor: traffic
 #: last_checked: 2021-05-30 (bahninfo-forum) vvv

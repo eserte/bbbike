@@ -2786,7 +2786,24 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024)
+#: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 16.7.2021, Gesamtbaumaßnahme bis 2024)
+#: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
+#: also_indoor: traffic (G)
+#: last_checked: 2021-02-20
+#: next_check: 2021-07-06
+	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
+',
+         'from' => undef,
+         'id' => 3151,
+         'source_id' => '2147344558',
+         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis 16.07.2021',
+         'type' => 'gesperrt',
+         'until' => 1626447600
+       },
        undef,
        undef,
        undef,
@@ -3367,15 +3384,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: also_indoor: traffic (G,H)
 #: last_checked: 2021-07-04
 #: check_frequency: 30d
-#: next_check: 2021-09-30
+#: next_check: 2021-07-09
 	q4::inwork; 15279,10862 15272,10790 15261,10738
 ',
          'from' => 1614578400,
          'id' => 3336,
          'source_id' => '2147346922',
-         'text' => 'Karlshorster Str.: Richtung Hauptstr. wegen Bauarbeiten gesperrt, Radfahrer müssen schieben, ab 2. März 2021 bis voraussichtlich Ende September 2021',
+         'text' => 'Karlshorster Str.: Richtung Hauptstr. wegen Bauarbeiten gesperrt, Radfahrer müssen schieben, ab 2. März 2021 bis 9. Juli 2021',
          'type' => 'handicap',
-         'until' => 1633017600
+         'until' => 1625846400
        },
        undef,
        undef,
@@ -3438,6 +3455,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,578649,697260#msg-697260
+#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210530/
 #: confirmed_by: srt
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
 #: osm_watch: node id="8599852570" version="1"
@@ -3767,17 +3785,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: note: laut Schild der Wasserbetriebe bis August 2021
 #: source_id: 2147347187 (Anbindung Soorstraße gesperrt, bis 25.6.2021)
 #: source_id: viz2021:13.278934,52.506793,17.05.2021,07:00 (bis 9.7.2021)
+#: source_id: viz2021:13.278934,52.506793,09.07.2021,10:00 (Leitungsarbeiten bis 17.9.2021)
 #: also_indoor: traffic
 #: last_checked: 2021-05-24
 #: check_frequency: 60d
-#: next_check: 2021-09-01
+#: next_check: 2021-09-17
 	q4::inwork 1861,11284 1884,11126 1865,11082
 ',
          'from' => 1621880668,
          'id' => 3379,
-         'text' => 'Soorstr.: zwischen Masurenallee und Bredtschneiderstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis August 2021',
+         'text' => 'Soorstr.: zwischen Masurenallee und Bredtschneiderstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte September 2021',
          'type' => 'handicap',
-         'until' => 1630447200
+         'until' => 1631894400
        },
        {
          'data' => '#: next_check_id: HEIDEKRAUTBAHN-2021
@@ -4098,12 +4117,38 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: next_check: 2021-10-15
 	2::inwork 27833,-16133 27599,-16162
 ',
-         'from' => 1625954400,
+         'from' => 1626559200,
          'id' => 3409,
          'source_id' => '216101007',
-         'text' => 'B179: Sperrung Brücke Körbiskrug, evtl. sind auch Radfahrer betroffen, 12.07.2021 bis 14.10.2021',
+         'text' => 'B179: Sperrung Brücke Körbiskrug, evtl. sind auch Radfahrer betroffen, 19.07.2021 bis 14.10.2021',
          'type' => 'gesperrt',
          'until' => 1634248800
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/2021/07/oranienburger-chaussee-b96/
+#: note: nächster Termin: 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr
+#: next_check: 2021-07-12
+	2::inwork 2150,28127 2178,28067 2345,27670
+',
+         'from' => 1625749200,
+         'id' => 3410,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1104559.php',
+         'text' => 'B96: zwischen Staehleweg und Hohen Neuendorf wegen Bauarbeiten gesperrt, vom 09.07.2021 15:00 Uhr bis 12.07.2021 05:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1626058800
+       },
+       {
+         'data' => '#: next_check_id: KARLSHORSTER-2021
+#: also_indoor: traffic
+#: next_check: 2021-07-09
+	q4::inwork; 15261,10738 15272,10790 15279,10862
+',
+         'from' => 1625734800,
+         'id' => 3411,
+         'source_id' => 'viz202113.47524252.5015409.07.20211100',
+         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, vom 09.07.2021 11:00 bis 15.12.2021 17:00 ',
+         'type' => 'handicap',
+         'until' => 1639609200
        }
      
 );
