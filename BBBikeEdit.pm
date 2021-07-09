@@ -3869,7 +3869,7 @@ sub temp_blockings_editor {
 		 chomp $selection;
 		 my($action, $content, $id) = split /[\t¦]/, $selection;
 		 $real_txt->insert("end", $content);
-		 $id =~ s{[^A-Za-z0-9/_.-]}{}g;
+		 $id =~ s{[^A-Za-z0-9/_.:,-]}{}g;
 		 $source_id = $id;
 	     } else {
 		 $real_txt->insert("end", $selection);
