@@ -1507,7 +1507,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/umbau-des-molkenmarktes-beginnt-mit-stauchaos-und-baumfaellungen_a197140
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: by: https://twitter.com/VIZ_Berlin/status/1369264298120388614 (Umstellung der Baustelle ab 2021-03-09)
-#: osm_watch: way id="882672444" version="2"
+#: osm_watch: way id="882672444" version="3"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
 #: last_checked: 2021-07-02 vvv
@@ -2189,7 +2189,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: source_id: 2147346610
 #: source_id: viz2021:13.425912,52.514912,29.06.2021,07:00 (Sanierungsarbeiten bis 2.8.2021)
 #: XXX wird hier noch was ge‰ndert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-07-02 vvv
+#: last_checked: 2021-07-08 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-08-02 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
@@ -7127,3 +7127,5 @@ asphaltiertes Straﬂenbahnkap	RW1;RW1 13250,16058 13189,16089
 asphaltiertes Straﬂenbahnkap	RW1; 12764,16302 12797,16285 12826,16271
 asphaltiertes Straﬂenbahnkap	RW1; 12797,16285 12764,16302 12725,16321
 asphaltiertes Straﬂenbahnkap	RW1; 12474,16443 12399,16479
+#: by: https://www.bahninfo-forum.de/read.php?9,574461,705935#msg-705935
+Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-20 Uhr	RW5; 12574,1866 12817,2031

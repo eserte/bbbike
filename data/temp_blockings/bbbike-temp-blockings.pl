@@ -26528,15 +26528,16 @@ EOF
 	3 6122,10925 6145,10975 6266,10927
 EOF
      },
-     { from  => $isodate2epoch->("2020-07-19 06:00:00"),
-       until => $isodate2epoch->("2020-07-20 13:00:00"),
-       text  => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2020 von 10:00 bis 13:00 Uhr',
+     { from  => $isodate2epoch->("2021-07-19 06:00:00"),
+       until => $isodate2epoch->("2021-07-20 18:30:00"),
+       text  => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2021 von 12:00 bis 18:30 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
        data  => <<EOF,
 #: source_id: 2147341611
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
 	2::temp 7435,11514 7322,11177
-	2::temp 7579,11032 7595,11086 7665,11353
+	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
 	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
 	2::temp 7595,11086 7575,11076 7252,11188
 # REMOVED ---	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
@@ -28689,7 +28690,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-06-29 (mapillary)
+#: last_checked: 2021-07-09
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -29923,7 +29924,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: also_indoor: traffic (G)
 #: last_checked: 2021-02-20
-#: next_check: 2021-07-06
+#: next_check: 2021-07-16
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 EOF
      },
@@ -30960,9 +30961,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
-#: osm_watch: way id="934995899" version="2"
+#: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-07
+#: last_checked: 2021-07-08
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32232,11 +32233,7 @@ EOF
        type  => 'handicap',
        source_id => '2147346922', # bis 9.7.2021, Gesamtbaumaßnahme bis 30.09.2021
        data  => <<EOF,
-#: next_check_id: KARLSHORSTER-2021
-#: also_indoor: traffic (G,H)
-#: last_checked: 2021-07-04
-#: check_frequency: 30d
-#: next_check: 2021-07-09
+# REMOVED (beendet) --- #: next_check_id: KARLSHORSTER-2021 --- #: also_indoor: traffic (G,H) --- #: last_checked: 2021-07-04 --- #: check_frequency: 30d --- #: next_check: 2021-07-09
 	q4::inwork; 15279,10862 15272,10790 15261,10738
 EOF
      },
@@ -32913,6 +32910,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/bruno-taut-strasse-bekommt-unter-anderem-eine-neue-asphaltdecke_a313839 (bis Juli 2022)
 #: by: https://abendblatt-berlin.de/2021/06/23/mit-den-ferien-kommen-die-baustellen/
+#: source_id: viz2021:13.569262,52.411283,12.07.2021,09:00 (hier: bis 31.1.2022)
 	q4::inwork; 21858,811 21902,877 21977,988 22034,1006 22092,999
 EOF
      },
@@ -32995,7 +32993,7 @@ EOF
        until => 1625606054, # 1625695200, # 2021-07-08 00:00
        text  => 'Weitlingstr.: Fahrbahnsanierung Richtung Lückstr. zwischen Einbecker Str. und Irenenstr., vom 28.06.2021 08:00 bis 07.07.2021 17:00', # 'Skandinavische Str.: Bauarbeiten zwischen Rosenfelder Str. und Einbecker Str., evtl. sind auch Radfahrer betroffen, vom 28.06.2021 08:00 bis 07.07.2021 17:00 ',
        type  => 'handicap',
-       source_id => 'viz202113.50605952.51227328.06.20210800',
+       source_id => 'viz2021:13.506059,52.512273,28.06.2021,08:00',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: SKANDINAVISCHE-2021 --- #: note: nicht ganz klar, ob nur die Richtung Bhf. Lichtenberg oder beide Richtungen betroffen sind --- mittlerweile ist es sowieso ein anderer Abschnitt --- #: source_id: viz2021:13.500432,52.510704,28.06.2021,08:00 --- #: also_indoor: traffic (G)
 # REMOVED ---	q4::inwork 17338,11969 17210,11950 17166,11944 17082,11909 17013,11849 16958,11778
@@ -33046,7 +33044,7 @@ EOF
        until => 1627077600, # 2021-07-24 00:00
        text  => 'Invalidenstr.: Gleisarbeiten Richtung Brunnenstr. zwischen Hessische Str. und Am Nordbahnhof, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, vom 05.07.2021 10:00 bis 23.07.2021 17:00',
        type  => 'handicap',
-       source_id => 'viz202113.37937952.52948405.07.20211000',
+       source_id => 'viz2021:13.379379,52.529484,05.07.2021,10:00',
        data  => <<EOF,
 #: also_indoor: traffic (G,H) (beide falsch/unvollständig?)
 #: note: laut rbb: "Radfahrende steigen bitte ab"
@@ -33064,6 +33062,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1103089.php',
        data  => <<EOF,
+#: source_id: viz2021:13.560042,52.405163,12.07.2021,07:00 (hier: bis 10.9.2021, siehe unten)
 	q4::inwork 21355,-309 21322,-176 21250,118
 EOF
      },
@@ -33095,6 +33094,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1104559.php',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2021/07/oranienburger-chaussee-b96/
+#: source_id: viz2021:13.287552,52.659932,09.07.2021,15:00
 #: note: nächster Termin: 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr
 #: next_check: 2021-07-12
 	2::inwork 2150,28127 2178,28067 2345,27670
@@ -33102,14 +33102,32 @@ EOF
      },
      { from  => $isodate2epoch->("2021-07-08 11:00:00"),
        until => 1639609200, # 2021-12-16 00:00
-       text  => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, vom 09.07.2021 11:00 bis 15.12.2021 17:00 ',
-       type  => 'handicap',
-       source_id => 'viz202113.47524252.5015409.07.20211100',
+       text  => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), sowie die Anbindung Nöldnerstr. (komplett, auch für Fußgänger), vom 09.07.2021 11:00 bis 15.12.2021 17:00 ',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.475242,52.50154,09.07.2021,11:00',
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
-#: also_indoor: traffic
-#: next_check: 2021-07-09
+#: note: bei rbb nur bis 30.9.2021
+#: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
+#: last_checked: 2021-07-09
+#: check_frequency: 30d
+#: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
+	q3::inwork 15279,10862 15355,10875
+	2::inwork 15272,10790 15388,10758
+EOF
+     },
+     { from  => 1625859946, # 2021-07-09 21:45
+       until => 1626040800, # 2021-07-12 00:00
+       text  => 'Straße des 17. Juni/Brandenburger Tor: Demonstration, Straßen sind evtl. auch für Radfahrer gesperrt, bis 11.07.2021 11:45 Uhr',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.369855,52.515768,09.07.2021,10:30',
+       data  => <<EOF,
+#: by: https://viz.berlin.de/2021/07/grossdemo/
+	2::temp 8522,12187 8538,12245 8546,12279
+	2::temp 8522,12239 8466,12197
+	2::temp 8637,12258 8592,12252 8538,12245
+	2::temp 8344,12221 8538,12245 8600,12165
 EOF
      },
     );
