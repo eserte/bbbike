@@ -456,6 +456,7 @@ Pestalozzistr.: Asphalt	Q0 4434,11227 4546,11217
 Pestalozzistr.: Kopfsteinpflaster	Q2 4546,11217 4729,11206 4775,11203
 Pestalozzistr.: Kopfsteinpflaster	Q2 4176,11235 4101,11233 3981,11232
 Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2 4312,11354 4101,11347 3986,11347
+Goethestr.: Kopfsteinpflaster	Q2 3986,11347 3877,11347 3749,11344
 Knesebeckstr.: Kopfsteinpflaster	Q2 4869,10943 4862,10881 4847,10677 4847,10589 4828,10356
 Mommsenstr.: Kopfsteinpflaster	Q2 4685,10689 4847,10677
 Linienstr.: Asphalt	Q0 10709,13629 10597,13647 10445,13675 10301,13701 10220,13694 10082,13686 9993,13682 9947,13674 9927,13666 9900,13653 9744,13584 9609,13522 9312,13388 9293,13366
@@ -666,10 +667,10 @@ Am Roten Stein: Kopfsteinpflaster	Q2 -7257,4581 -7172,4565 -7037,4540 -6990,4531
 Tegeler Weg: Asphalt	Q0 7458,14643 7429,14667
 Tegeler Weg: Kopfsteinpflaster	Q2 7429,14667 7353,14767
 Tegeler Weg: Kopfsteinpflaster	Q2 7308,14814 7259,14870
-Tegeler Weg: Asphalt	Q0 7259,14870 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
+Tegeler Weg: Asphalt	Q0 7259,14870 7209,14927 7182,14986 7178,14996 7131,15109 7085,15226 6996,15319
 Lynarstr.: Kopfsteinpflaster	Q2 7129,14787 7143,14794 7259,14870 7432,14969 7624,15083 7694,15125
 Lynarstr.: Asphalt	Q0 7694,15125 7745,15160
-Kiautschoustr.: Kopfsteinpflaster	Q2 7192,14976 7007,14911 6853,14854 6837,14848
+Kiautschoustr.: Kopfsteinpflaster	Q2 7182,14986 7007,14911 6853,14854 6837,14848
 Samoastr.: Kopfsteinpflaster	Q2 7000,14832 7007,14911 6945,15045 6886,15156
 Henriette-Herz-Platz: Kopfsteinpflaster, OK	Q1 10132,12941 10255,12959 10312,12982 10371,13006
 Emser Str.: Kopfsteinpflaster	Q2 12648,7080 12767,7110 12806,7120
@@ -980,7 +981,9 @@ Hansa-Ufer: Asphalt	Q0 5871,12595 5797,12494 5740,12419
 Bochumer Platz: Kleinpflaster	Q1 5914,12845 5938,12848
 Unionstr: Kopfsteinpflaster	Q2 5782,14067 5943,14049
 Bremer Str.: Fahrbahn Kopfsteinpflaster, Verbundsteinpflasterradweg	Q1 5956,14168 5943,14049
-Bremer Str.: einige Stellen mit Kopfsteinpflaster	Q1 5943,14049 5907,13746 5882,13548
+Bremer Str.: mehrere gepflasterte Moabiter Kissen	Q1 5943,14049 5928,13922
+Bremer Str.: Kopfsteinpflaster	Q2 5928,13922 5921,13866
+Bremer Str.: mehrere gepflasterte Moabiter Kissen	Q1 5921,13866 5907,13746 5882,13548
 Bremer Str.: Asphalt	Q0 5882,13548 5868,13441 5857,13342
 Zum Langen See: Kopfsteinpflaster	Q2 23325,2070 23390,1785 23409,1699 23464,1449 23520,1194
 Müggelbergallee: Asphaltstreifen in der Mitte	Q0 23102,1637 23185,1649
@@ -10676,6 +10679,7 @@ Gertrud-Hanna-Promenade: Mosaikpflaster	Q1 8548,7384 8603,7452
 Falkenberger Chaussee [Wohngebiet]: Beton	Q1 17358,17400 17211,17600
 Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q1 13870,9872 14152,9746
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
+Charlottenburger Ufer: teilweise gepflastert	Q1 3370,12725 3291,12721
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11969,7 +11973,7 @@ Friedhofstr.: sehr guter Asphalt	Q0 15552,15660 15598,15793
 Adolf-Martens-Str.: Asphalt	Q0 2713,4087 2787,3975 3033,4113
 Zwinglistr.: Asphalt mit Aufpflasterungen	Q1 5199,13247 5351,13238
 Zwinglistr.: Asphalt	Q0 5351,13238 5547,13227
-Zwinglistr.: Asphalt mit Aufpflasterungen	Q1 5547,13227 5694,13219
+Zwinglistr.: Asphalt mit Aufpflasterungen	Q1 5547,13227 5685,13222
 Schlieperstr.: schlechtes Kopfsteinpflaster	Q3 1585,19862 1863,19925
 Schlieperstr.: mäßiges Kopfsteinpflaster	Q2 1863,19925 2029,19963 2224,20007
 Schlieperstr.: Kopfsteinpflaster	Q2 2224,20007 2435,20032
@@ -16140,7 +16144,7 @@ Hüninger Str.: Kopfsteinpflaster	Q2 2019,4027 2039,4128 2047,4162 2054,4190 2096
 Mörchinger Str.: Kopfsteinpflaster	Q1 1453,3085 1393,3183 1499,3251
 Mörchinger Str.: Verbundsteine	Q0 1918,3511 2091,3597
 Am Mühlenberg: Gehwegplatten	Q0 6094,8618 6100,8681 6101,8732
-Kalckreuthstr.: Asphalt mit Löchern	Q1 6636,10492 6628,10318 6626,10155
+Kalckreuthstr.: Asphalt	Q0 6636,10492 6628,10318 6626,10155
 Landhausstr.: Kopfsteinpflaster	Q2 5314,9588 5342,9559 5343,9377
 Landhausstr.: Kopfsteinpflaster	Q1 5341,8931 5343,8858
 Gasteiner Str.: grobes Kopfsteinpflaster	Q3 4920,9000 4715,8977
@@ -16154,12 +16158,12 @@ Zehdenicker Str.: Kopfsteinpflaster	Q2 10599,13775 10480,13871
 Bissingzeile: Kopfsteinpflaster	Q2 8119,10797 8070,10680
 Reichpietschufer: Kleinpflaster	Q2 7595,11086 7575,11076
 Herkulesufer: Kleinpflaster	Q2 7575,11076 7252,11188 7218,11181 7140,11156 7142,11145 6920,11064 6882,11061
-Berolinastr.: Beton	Q1 11560,13232 11476,13052 11440,12976 11419,12944 11541,12886 11585,12865
+Berolinastr.: Beton	Q1 11560,13232 11476,13052 11440,12976 11419,12944 11541,12886 11601,12858
 Berolinastr.: Asphalt	Q0 11476,13052 11590,12995 11609,12986 11659,12962 11673,12955 11771,12909
 Berolinastr.: Beton	Q2 11771,12909 11826,12883 11847,12927
 Berolinastr.: Beton	Q0 11541,12886 11590,12995
 Mollstr.: Beton	Q0 11739,13131 11736,13126 11719,13088 11659,12962
-Mollstr.: Beton	Q0 11673,12955 11622,12850
+Mollstr.: Beton	Q0 11673,12955 11630,12867 11622,12850
 Weydemeyerstr.: Asphalt	Q0 12112,12861 12054,12903
 Weydemeyerstr.: Beton	Q0 12054,12903 11987,12946
 Weydemeyerstr.: Beton	Q1 11987,12946 11957,12876 11925,12807 11900,12756
@@ -16167,7 +16171,7 @@ Weydemeyerstr.: Beton	Q1 11987,12946 11957,12876 11925,12807 11900,12756
 (Weydemeyerstr.): Beton	Q0 11843,12828 11825,12792 11809,12760
 (Weydemeyerstr.): Beton	Q1 11933,12701 11971,12785 11925,12807
 Weydemeyerstr.: mäßiger Beton, Fugen	Q2 11716,12803 11809,12760 11933,12701 11969,12681 12039,12675 12064,12673
-(Karl-Marx-Allee): Gehwegplatten	Q0 11585,12865 11601,12858 11622,12850 11716,12803
+(Karl-Marx-Allee): Gehwegplatten	Q0 11601,12858 11622,12850 11716,12803
 (Karl-Marx-Allee - Berolinastr.): Beton	Q1 11419,12944 11367,12940
 (Karl-Marx-Allee - Berolinastr.): Gehwegplatten	Q0 11367,12940 11289,12908
 (Karl-Marx-Allee - Berolinastr.): unebene Gehwegplatten	Q1 11601,12858 11589,12768

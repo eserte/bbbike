@@ -193,9 +193,10 @@ Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehw
 #: next_check_id: CHAUSSEE-2020
 #: note: laut rbbtext Ende der Bauarbeiten 16.7.2021
 #: source_id: 2147346552 (bis 16.7.2021)
+#: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021)
 #: last_checked: 2021-05-22
 #: check_frequency: 90d
-#: next_check: 2021-07-16
+#: next_check: 2021-07-17
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
 # 
 #: next_check_id: DOROTHEEN-2018
@@ -512,7 +513,7 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 #: also_indoor: traffic (G)
 #: osm_watch: way id="746589388" version="15"
 #: osm_watch: way id="746589386" version="1"
-#: last_checked: 2021-06-19 (osm)
+#: last_checked: 2021-07-10
 #: check_frequency: 90d
 #: next_check: 2021-12-31
 Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
@@ -564,7 +565,7 @@ Fasanenstr.: Engstelle in Höhe Kantstr., Radfahrer werden über den Bürgersteig g
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_14_0981_1088_online.pdf (Erwähnung des B-Plans 4-19)
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
-#: last_checked: 2021-03-11 (architektur-urbanistik)
+#: last_checked: 2021-07-10
 #: check_frequency: 60d
 #: next_check: 2022-10-01
 # REMOVED --- #: next_check: 2020-02-03
@@ -617,7 +618,7 @@ Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 #: source_id: 2147345357 (inaktiv)
 #: source_id: 2147345472 (bis 10.8.2021, Gesamtbaumaßnahme bis 2024)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-07-05
+#: last_checked: 2021-07-10
 #: check_frequency: 120d
 #: next_check: 2021-10-08
 Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12392,8724 12330,8636
@@ -1250,9 +1251,11 @@ Dieffenbachstr.: Bodenschwellen	q0- 11346,9655 11541,9576
 Oppelner Str.: Bodenschwellen	q0- 12897,10439 12978,10581
 # REMOVED (alle Bodenschwellen wurden entfernt) --- Schönleinstr.: Bodenschwellen	q1 11560,9524 11541,9576 11594,9604
 Martin-Hoffmann-Str.: Bodenschwellen (2x)	q1 14077,10016 14289,9870
-Lausitzer Platz: einige Bodenschwellen	q2 12197,10494 12172,10585
+Lausitzer Platz: Fußgängerzone, einige Bodenschwellen	q2 12197,10494 12172,10585
 Lausitzer Platz: Fußgängerzone, Radfahrer frei, Bodenschwelle	q2 12274,10612 12172,10585
-Lausitzer Platz: einige Bodenschwellen	q2 12328,10442 12274,10612
+Lausitzer Platz: Fußgängerzone, einige Bodenschwellen	q2 12328,10442 12274,10612
+Eisenbahnstr.: Fußgängerzone	q2 12294,10663 12274,10612
+Waldemarstr.: Fußgängerzone	q2 12172,10585 12142,10600
 #: XXX_prog BS Bordstein an der Falkenberger Chausse, ansonsten q2
 (Grünanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fußgänger, Bordstein	q3 17686,18172 17721,18001
 Erich-Steinfurth-Str.: Fußgänger	q2 12645,11673 12596,11696
@@ -3871,7 +3874,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Weydemeyerstr.): Fußgänger	q1 11900,12756 11892,12760 11831,12789 11825,12792
 (Weydemeyerstr.): Fußgänger	q1 11843,12828 11825,12792 11809,12760
 (Weydemeyerstr.): einige Fußgänger	q0- 11933,12701 11971,12785 11925,12807
-(Karl-Marx-Allee): Fußgänger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11716,12803
+(Karl-Marx-Allee): Fußgänger, Bordsteine	q1 11622,12850 11716,12803
 # REMOVED (by mapillary) --- #: next_check_id: KARLMARXALLEE-2018 --- #: last_checked: 2020-06-13 --- #: check_frequency: 60d
 (Karl-Marx-Allee - Berolinastr.): Fußgänger, kurvig	q1 11601,12858 11589,12768
 (Berolinastr.): Fußgänger	q1 11847,12927 11888,12910 11957,12876
@@ -4047,7 +4050,7 @@ Willenberger Pfad: Fußgänger, schmal	q2 569,10738 673,10727
 (Parkweg Reichsstr.): Fußgänger	q2 -264,13009 -208,12938 -103,12841 -45,12778 23,12739
 #: XXX_prog BS (auf beiden Seiten) (ansonsten wäre es q3)
 (Machandelweg - Reichsstr.): Fußgänger, eng, Bordsteine	q4 -187,12830 -166,12849 -103,12841 -85,12852
-#: XXX_prog BS (auf beiden Seiten) (ansonsten wäre es q1)
+#: XXX_prog BS (auf beiden Seiten) (ansonsten wäre es q1) (mittlerweile gibt es eine kurze "Asphaltrampe" am nordöstlichen Ende)
 (zur Karl-Marx-Allee): Bordsteine, Fußgänger	q2 11367,12940 11289,12908
 Börnicker Str. - Südpark): Fußgänger	q2 -4117,11997 -4095,12006
 Graetschelsteig - Südpark): Fußgänger	q2 -4195,12139 -4144,12187

@@ -695,6 +695,7 @@ Pestalozzistr.: Asphalt	Q0 4434,11227 4546,11217
 Pestalozzistr.: Kopfsteinpflaster	Q2 4546,11217 4729,11206 4775,11203
 Pestalozzistr.: Kopfsteinpflaster	Q2 4176,11235 4101,11233 3981,11232
 Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2+ 4312,11354 4101,11347 3986,11347
+Goethestr.: Kopfsteinpflaster	Q2 3986,11347 3877,11347 3749,11344
 Knesebeckstr.: Kopfsteinpflaster	Q2 4869,10943 4862,10881 4847,10677 4847,10589 4828,10356
 Mommsenstr.: Kopfsteinpflaster	Q2 4685,10689 4847,10677
 Linienstr.: Asphalt	Q0 10709,13629 10597,13647 10445,13675 10301,13701 10220,13694 10082,13686 9993,13682 9947,13674 9927,13666 9900,13653 9744,13584 9609,13522 9312,13388 9293,13366
@@ -802,7 +803,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2021-05-30
+#: last_checked: 2021-07-10
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -957,10 +958,10 @@ Am Roten Stein: Kopfsteinpflaster	Q2 -7257,4581 -7172,4565 -7037,4540 -6990,4531
 Tegeler Weg: Asphalt	Q0 7458,14643 7429,14667
 Tegeler Weg: Kopfsteinpflaster	Q2 7429,14667 7353,14767
 Tegeler Weg: Kopfsteinpflaster	Q2 7308,14814 7259,14870
-Tegeler Weg: Asphalt	Q0 7259,14870 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
+Tegeler Weg: Asphalt	Q0 7259,14870 7209,14927 7182,14986 7178,14996 7131,15109 7085,15226 6996,15319
 Lynarstr.: Kopfsteinpflaster	Q2 7129,14787 7143,14794 7259,14870 7432,14969 7624,15083 7694,15125
 Lynarstr.: Asphalt	Q0 7694,15125 7745,15160
-Kiautschoustr.: Kopfsteinpflaster	Q2 7192,14976 7007,14911 6853,14854 6837,14848
+Kiautschoustr.: Kopfsteinpflaster	Q2 7182,14986 7007,14911 6853,14854 6837,14848
 Samoastr.: Kopfsteinpflaster	Q2 7000,14832 7007,14911 6945,15045 6886,15156
 Henriette-Herz-Platz: Kopfsteinpflaster, OK	Q1 10132,12941 10255,12959 10312,12982 10371,13006
 Emser Str.: Kopfsteinpflaster	Q2 12648,7080 12767,7110 12806,7120
@@ -982,7 +983,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-07-08
+#: last_checked: 2021-07-10
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1370,7 +1371,9 @@ Hansa-Ufer: Asphalt	Q0 5871,12595 5797,12494 5740,12419
 Bochumer Platz: Kleinpflaster	Q1 5914,12845 5938,12848
 Unionstr: Kopfsteinpflaster	Q2 5782,14067 5943,14049
 Bremer Str.: Fahrbahn Kopfsteinpflaster, Verbundsteinpflasterradweg	Q1 5956,14168 5943,14049
-Bremer Str.: einige Stellen mit Kopfsteinpflaster	Q1 5943,14049 5907,13746 5882,13548
+Bremer Str.: mehrere gepflasterte Moabiter Kissen	Q1 5943,14049 5928,13922
+Bremer Str.: Kopfsteinpflaster	Q2 5928,13922 5921,13866
+Bremer Str.: mehrere gepflasterte Moabiter Kissen	Q1 5921,13866 5907,13746 5882,13548
 Bremer Str.: Asphalt	Q0 5882,13548 5868,13441 5857,13342
 Zum Langen See: Kopfsteinpflaster	Q2 23325,2070 23390,1785 23409,1699 23464,1449 23520,1194
 Müggelbergallee: Asphaltstreifen in der Mitte	Q0 23102,1637 23185,1649
@@ -9235,6 +9238,7 @@ Zeuthener Weg: Asphalt	Q0 27466,-6764 27308,-6742
 (Uferweg): Waldweg	Q2+ 27938,-5802 27944,-5752 27999,-5665 28057,-5633 28116,-5532 28226,-5451 28303,-5330 28332,-5153 28492,-4966 28546,-4962 28540,-4811 28584,-4514 28684,-4319 28799,-4231 28902,-4016 29221,-3849 29418,-3704 29597,-3674 29783,-3739 30015,-3906 30133,-3840
 Zu den Gosener Bergen: Asphalt	Q0 30728,-2326 30646,-2732
 Am Oder-Spree-Kanal: Asphalt	Q0 30646,-2732 30629,-2817
+#: XXX möglicherweise mittlerweile Asphalt ohne Qualitätseinbußen?
 (Gosener Landstr. - Parkplatz): Asphalt	Q1+ 30621,235 30808,52 30869,-5 30942,-62
 (Gosener Damm - Seddinsee): Asphalt mit einigen Wurzelschäden	Q1 28809,462 29120,271
 (Gosener Damm - Seddinsee): Waldweg, teilweise mit Gras überwachsen, Wurzeln	Q3 29120,271 29481,44 29979,-120 30421,-424
@@ -11615,7 +11619,7 @@ Bahndamm - Elsenstr.: unbefestigter Weg	Q2 13953,9372 13923,9405
 # REMOVED (nicht mehr) --- #: note: Asphalt oder asphaltähnlich; bunt bemalt
 (Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8103,13675 8151,13697
 (Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8151,13697 8169,13705
-(Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2 8025,13835 8086,13862
+(Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8025,13835 8086,13862
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1- 8295,13531 8290,13538 8224,13634
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 8224,13634 8169,13705 8131,13770 8086,13862 8057,13923
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 7866,14215 7830,14268 7799,14314
@@ -12183,6 +12187,7 @@ Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q1 13870,9872 1
 #: last_checked: 2021-05-10
 #: check_frequency: 180d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
+Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14903,10 +14908,7 @@ Gritznerstr.: asphaltiert	Q0 4414,6134 4380,6049 4312,5889
 #: by: Detlef Herzog: vvv
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt) vvv
 #: corrected_by: daf (Asphalt -> ..., neu gemacht)
-#: next_check_id: ABBESTR-2021
-#: XXX Qualität nach den Bauarbeiten genauer überprüfen, außerdem prüfen, ob es Durchfahrtsbeschränkungen o.ä. geben wird
-#: last_checked: 2021-06-14 (osm note: noch Bauarbeiten)
-#: check_frequency: 30d
+# REMOVED --- #: next_check_id: ABBESTR-2021 --- #: XXX Qualität nach den Bauarbeiten genauer überprüfen, außerdem prüfen, ob es Durchfahrtsbeschränkungen o.ä. geben wird --- #: last_checked: 2021-06-14 (osm note: noch Bauarbeiten) --- #: check_frequency: 30d
 Abbestr.: Asphalt	Q0 4674,12076 4698,12124
 Abbestr.: glatte Pflasterung	Q0- 4698,12124 4755,12236
 Abbestr.: Asphalt	Q0 4755,12236 4807,12348
@@ -15031,7 +15033,7 @@ Adolf-Martens-Str.: Asphalt	Q0 2713,4087 2787,3975 3033,4113
 #: corrected_by: srt (added Aufpflasterungen) vvv
 Zwinglistr.: Asphalt mit Aufpflasterungen	Q1 5199,13247 5351,13238
 Zwinglistr.: Asphalt	Q0 5351,13238 5547,13227
-Zwinglistr.: Asphalt mit Aufpflasterungen	Q1 5547,13227 5694,13219
+Zwinglistr.: Asphalt mit Aufpflasterungen	Q1 5547,13227 5685,13222
 #: corrected_by ^^^
 #: by: ^^^
 # 
@@ -27322,9 +27324,9 @@ Am Mühlenberg: Gehwegplatten	Q0 6094,8618 6100,8681 6101,8732
 #: confirmed_by: srt
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1094397.php (Sanierung KW 24-26/2001)
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/kalckreuthstrasse-voll-gesperrt_a313914
-#: XXX Wird die Qualität nach der Sanierung besser sein?
-#: next_check: 2021-07-02
-Kalckreuthstr.: Asphalt mit Löchern	Q1+ 6636,10492 6628,10318 6626,10155
+# REMOVED (ja) --- #: XXX Wird die Qualität nach der Sanierung besser sein? --- #: next_check: 2021-07-02
+#: corrected_by: srt (Asphalt mit Löchern, Q1+ -> ..., neu gemacht)
+Kalckreuthstr.: Asphalt	Q0+ 6636,10492 6628,10318 6626,10155
 Landhausstr.: Kopfsteinpflaster	Q2 5314,9588 5342,9559 5343,9377
 Landhausstr.: Kopfsteinpflaster	Q1 5341,8931 5343,8858
 Gasteiner Str.: grobes Kopfsteinpflaster	Q3 4920,9000 4715,8977
@@ -27344,14 +27346,14 @@ Bissingzeile: Kopfsteinpflaster	Q2- 8119,10797 8070,10680
 Reichpietschufer: Kleinpflaster	Q2 7595,11086 7575,11076
 Herkulesufer: Kleinpflaster	Q2 7575,11076 7252,11188 7218,11181 7140,11156 7142,11145 6920,11064 6882,11061
 #: corrected_by: srt (Q0 -> Q1+)
-Berolinastr.: Beton	Q1+ 11560,13232 11476,13052 11440,12976 11419,12944 11541,12886 11585,12865
+Berolinastr.: Beton	Q1+ 11560,13232 11476,13052 11440,12976 11419,12944 11541,12886 11601,12858
 #: corrected_by: srt (Beton, Q2 -> )
 Berolinastr.: Asphalt	Q0 11476,13052 11590,12995 11609,12986 11659,12962 11673,12955 11771,12909
 #: confirmed_by: srt
 Berolinastr.: Beton	Q2 11771,12909 11826,12883 11847,12927
 Berolinastr.: Beton	Q0 11541,12886 11590,12995
 Mollstr.: Beton	Q0 11739,13131 11736,13126 11719,13088 11659,12962
-Mollstr.: Beton	Q0 11673,12955 11622,12850
+Mollstr.: Beton	Q0 11673,12955 11630,12867 11622,12850
 Weydemeyerstr.: Asphalt	Q0 12112,12861 12054,12903
 Weydemeyerstr.: Beton	Q0 12054,12903 11987,12946
 Weydemeyerstr.: Beton	Q1- 11987,12946 11957,12876 11925,12807 11900,12756
@@ -27361,7 +27363,7 @@ Weydemeyerstr.: Beton	Q1- 11987,12946 11957,12876 11925,12807 11900,12756
 (Weydemeyerstr.): Beton	Q1- 11933,12701 11971,12785 11925,12807
 #: confirmed_by: srt
 Weydemeyerstr.: mäßiger Beton, Fugen	Q2+ 11716,12803 11809,12760 11933,12701 11969,12681 12039,12675 12064,12673
-(Karl-Marx-Allee): Gehwegplatten	Q0 11585,12865 11601,12858 11622,12850 11716,12803
+(Karl-Marx-Allee): Gehwegplatten	Q0 11601,12858 11622,12850 11716,12803
 (Karl-Marx-Allee - Berolinastr.): Beton	Q1+ 11419,12944 11367,12940
 (Karl-Marx-Allee - Berolinastr.): Gehwegplatten	Q0 11367,12940 11289,12908
 (Karl-Marx-Allee - Berolinastr.): unebene Gehwegplatten	Q1 11601,12858 11589,12768
@@ -30052,4 +30054,6 @@ Kreuzungsbereich mit Kleinpflastersteinen	Q2+ 6089,643
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 14814,12626
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 14801,12517
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 14798,12502
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 5907,13746
+Einmündungsbereich glatt gepflastert	Q1- 5868,13441
 #: ignore ^^^

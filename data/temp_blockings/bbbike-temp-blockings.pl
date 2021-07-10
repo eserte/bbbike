@@ -21907,7 +21907,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20130604.1135.385636.html',
        data  => <<EOF,
-	2::temp 3976,11869 3807,11859
+	2::temp 3976,11869 3801,11858
 EOF
      },
      { from  => $isodate2epoch->("2019-05-17 04:00:00"), # ein Tag Vorlauf
@@ -24537,7 +24537,7 @@ EOF
        text  => 'Zillestr.: zwischen Richard-Wagner-Str. und Wilmersdorfer Str. Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 3807,11859 3666,11855
+	q4::inwork; 3801,11858 3666,11855
 EOF
      },
      { from  => undef, # 
@@ -30963,7 +30963,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-08
+#: last_checked: 2021-07-10
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -31752,7 +31752,7 @@ EOF
 #: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2021-06-06
+#: last_checked: 2021-07-10
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -32050,7 +32050,7 @@ EOF
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-04-11 (architektur-urbanistik)
+#: last_checked: 2021-07-10
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 EOF
@@ -32107,15 +32107,15 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Abbestr.: Bauarbeiten, Fahrbahn zwischen Guerickestr. und Fraunhoferstr. gesperrt, Ausweichen auf Gehweg, Ende der Bauarbeiten unbekannt',
+       text  => 'Abbestr.: Bauarbeiten, Fahrbahn zwischen Guerickestr. und Fraunhoferstr. kann gesperrt sein, Ausweichen auf Gehweg, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ABBESTR-2021
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-06-14 (osm note)
+#: last_checked: 2021-07-10
 #: check_frequency: 30d
-# REMOVED (hier nicht) ---	q3::inwork 4674,12076 4698,12124
-	q3::inwork 4698,12124 4755,12236
+	q3::inwork 4674,12076 4698,12124
+# REMOVED (hier nicht mehr) ---	q3::inwork 4698,12124 4755,12236
 EOF
      },
      { from  => 1611615600, # 2021-01-26 00:00
@@ -32915,18 +32915,13 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => 1625925722, # undef,
        text  => 'Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung',
        source_id => '2147347186',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021)
 #: by: https://twitter.com/rbbabendschau/status/1392489796426162177
-#: add_fragezeichen: Wurden Fahrbahn und Radwege wieder freigegeben?
-#: also_indoor: traffic (G)
-#: note: bei rbbtext seit 2021-06-18 nicht mehr gelistet
-#: priority: #A
-#: last_checked: 2021-05-14
-#: next_check: 2021-06-18
+# REMOVED --- #: add_fragezeichen: Wurden Fahrbahn und Radwege wieder freigegeben? --- #: also_indoor: traffic (G) --- #: note: bei rbbtext seit 2021-06-18 nicht mehr gelistet --- #: priority: #A --- #: last_checked: 2021-05-14 --- #: next_check: 2021-06-18
 	q3::inwork 7647,9196 7735,9121 7790,9126
 EOF
      },
@@ -33048,12 +33043,10 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G,H) (beide falsch/unvollständig?)
 #: note: laut rbb: "Radfahrende steigen bitte ab"
-#: add_fragezeichen: Sind Radfahrer tatsächlich von den Bauarbeiten betroffen? vvv
-#: next_check: 2021-07-05 vvv
+# REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich von den Bauarbeiten betroffen? vvv --- #: next_check: 2021-07-05 vvv
 	q4::inwork; 8685,13728 8841,13800
 	q4::inwork; 8935,13844 9085,13919
-#: next_check ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => $isodate2epoch->("2021-07-11 00:00:00"),

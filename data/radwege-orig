@@ -37,10 +37,11 @@
 neu asphaltiert	RW1; 9227,8890 9226,8967
 geschützter Radstreifen, Grünmarkierung	RW3; 9226,8967 9225,9038 9224,9053
 neu asphaltiert	RW1; 9224,9053 9225,9111 9232,9187 9248,9350
-#: by: https://www.infravelo.de/projekt/mehringdamm/ (26.06.2021 bis 27.07.2021)
+#: by: https://www.infravelo.de/projekt/mehringdamm/ (26.06.2021 bis 27.07.2021) (mittlerweile: Verzögerung um einige Wochen wegen Baumpflegearbeiten)
 #: XXX Grünmarkierung geplant
 #: last_checked: 2021-06-13
-#: next_check: 2021-07-27
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2021-07-27
 	RW3; 9248,9350 9232,9187 9225,9111 9224,9053 9225,9038 9226,8967 9227,8890
 asphaltiert	RW1; 9227,8890 9229,8785
 	RW1;RW1 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014 9416,10196
@@ -382,7 +383,7 @@ die letzten 50 Metern sind benutzungspflichtig	RW3; 5081,12458 5013,12323
 	RW2;RW2 5316,12928 5328,13019
 	RW1; 5328,13019 5468,13067
 die letzten Meter sind benutzungspflichtig	RW1; 5468,13067 5328,13019
-	RW1;RW1 5468,13067 5620,13120 5691,13144 5754,13170 5766,13175
+	RW1;RW1 5468,13067 5620,13120 5669,13136 5754,13170 5766,13175
 neu asphaltiert, relativ breit	RW1; 5766,13175 5863,13214 5975,13256
 	RW1; 5975,13256 5863,13214 5766,13175
 #: note: die Hauptfahrbahnen sind explizit für Radfahrer verboten
@@ -428,6 +429,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
 # REMOVED (vorher) --- mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056
 #: XXX hier Bauarbeiten der Wasserbetriebe am Gehweg, laut Bauschild bis Mai 2021, laut rbbtext bis 12.7.2021
+#: last_checked: 2021-06-29 (mapillary)
 #: next_check: 2021-07-12
 provisorische schmale Radspur	RW3; 10256,11160 10501,11056
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10501,11056 10637,10996 10684,10975
@@ -614,7 +616,8 @@ für Radfahrer freigegebene Busspur gilt immer	RW1; 3038,13612 3033,13633 3005,13
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 2881,14061 2935,13927 2984,13789 3005,13728 3033,13633 3038,13612
 	RW2; 3005,13728 2984,13789 2935,13927 2881,14061
 	RW2;RW2 2881,14061 2860,14118
-	RW1;RW2 3279,12533 3271,12609 3269,12648 3291,12721
+neu asphaltiert, relativ breit	RW1; 3279,12533 3271,12609 3269,12648 3291,12721
+	RW2; 3291,12721 3269,12648 3271,12609 3279,12533
 	RW2;RW1 3291,12721 3300,12751 3327,12818 3337,12855
 	RW1;RW1 7172,13051 7346,13022
 	RW1;RW1 5490,17173 5411,17242 5295,17344
@@ -1732,7 +1735,7 @@ Busspur ist immer gültig	RW5; 6460,8688 6449,8807 6449,8845 6445,8934 6445,8949 
 	RW1; 5808,10396 5764,10322
 #: XXX Bauarbeiten (Aufzugeinbau am U-Bhf. Augsburger Str.?), Radspur ist aufgehoben
 #: source_id: 2147345461 (bis 30.09.2021)
-#: last_checked: 2021-05-01
+#: last_checked: 2021-07-10
 #: next_check: 2021-09-30
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
@@ -1779,9 +1782,10 @@ asphaltiert	RW1; 13795,9941 13860,9861 14089,9610
 	RW6;RW6 4155,11527 4101,11347
 	RW6;RW6 13283,10069 13262,10147 13271,10193 13369,10337
 	RW6;RW6 13216,9983 13275,10055 13283,10069 13310,10081 13449,10262
-	RW6;RW6 12212,10440 12197,10494 12172,10585 12274,10612 12328,10442
-	RW6;RW6 12294,10663 12274,10612
-	RW6;RW6 12172,10585 12142,10600 12056,10642
+# REMOVED (-> Fußgängerzone) ---	RW6;RW6 12212,10440 12197,10494 12172,10585 12274,10612 12328,10442
+# REMOVED (-> Fußgängerzone) ---	RW6;RW6 12294,10663 12274,10612
+# REMOVED (-> Fußgängerzone) ---	RW6;RW6 12172,10585 12142,10600
+	RW6;RW6 12142,10600 12056,10642
 	RW6;RW6 12243,10274 12292,10374 12274,10436
 	RW6;RW6 12116,9825 12286,9739 12439,9660 12591,9584
 	RW6;RW6 11543,10015 11507,10004 11485,10029 11400,10022 11295,9958 11177,9935 11160,9932 10929,9897 10914,9887
@@ -2189,7 +2193,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: source_id: 2147346610
 #: source_id: viz2021:13.425912,52.514912,29.06.2021,07:00 (Sanierungsarbeiten bis 2.8.2021)
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-07-08 vvv
+#: last_checked: 2021-07-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-08-02 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
@@ -4307,7 +4311,7 @@ Gehweg für Radfahrer frei	RW1;RW1 27741,1394 27804,1337 27977,1187 28036,1136
 Gehweg für Radfahrer frei	RW1; 28036,1136 28094,1090 28188,962 28317,891 28331,877 28414,811 28512,704 28543,675 28570,649
 asphaltierter Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 28570,649 28617,591 28644,560 28660,542 28677,524 28718,487 28789,468 28809,462 29116,502 29406,540 29562,603 29632,594 30028,417 30551,276 30621,235 30820,117
 Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 30820,117 31009,19 31080,-19 31127,-45 31219,-87 31320,-129 31608,-476 31624,-496 31651,-530
-	RW6;RW6 5943,14049 5907,13746 5882,13548
+	RW6;RW6 5943,14049 5928,13922 5921,13866 5907,13746 5882,13548
 Verbundsteinpflaster	RW1;RW1 22145,208 22172,194 22169,14 22168,-71 22177,-137 22190,-228 22211,-324 22261,-464 22278,-570 22280,-663 22271,-717 22229,-897 22186,-1060 22146,-1183 22107,-1304 22068,-1422 22027,-1548
 Verbundsteinpflaster	RW1; 22027,-1548 22003,-1625
 	RW3; 22003,-1625 22027,-1548
@@ -4634,7 +4638,7 @@ asphaltiert	RW1;RW1 17020,11748 17169,11677
 	RW6;RW6 2795,12480 2817,12334 2658,12312
 	RW6;RW6 7441,15909 7279,16057 7158,16167 7051,16264
 	RW6;RW6 7279,16057 7294,16068 7474,16086
-	RW3;RW3 3761,12298 3767,12217 3778,12104 3786,12014 3807,11859 3837,11760 3843,11659
+	RW3;RW3 3761,12298 3767,12217 3778,12104 3786,12014 3801,11858 3837,11760 3843,11659
 # 
 #: by: Heike Siewert:
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20041222.1025.23051.html
@@ -6011,12 +6015,13 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 # 
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
-#: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
-#: last_checked: 2021-07-01
-	RW3; 12639,8344 12689,8289 12714,8249
+#: XXX evtl. wird es hier noch eine Grünmarkierung und weitere Radwegschilder geben
+#: last_checked: 2021-07-10
+	RW4; 12639,8344 12689,8289
+	RW3; 12689,8289 12714,8249
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-06-25 (mapillary)
+#: last_checked: 2021-07-10
 #: check_frequency: 30d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünmarkierung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
@@ -6051,7 +6056,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-06-25 (mapillary)
+#: last_checked: 2021-07-10
 #: check_frequency: 30d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
@@ -6446,7 +6451,7 @@ die letzten Meter ohne Radspur	RW3; 17201,13519 16866,13532
 Gehweg für Radfahrer frei	RW1;RW1 17360,9629 17425,9605 17456,9594 17549,9529 18037,9195
 	RW6;RW6 7557,17809 7659,17826 7789,17853
 	RW6;RW6 5199,13247 5351,13238
-	RW6;RW6 5547,13227 5694,13219
+	RW6;RW6 5547,13227 5685,13222
 asphaltiert	RW1;RW1 17681,6212 17847,6089
 	RW3;RW3 17681,6212 17483,6024
 	RW6;RW6 2028,3008 2067,3031 2048,3062 1987,3166 1946,3142
@@ -6906,7 +6911,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
 #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
-#: last_checked: 2021-06-25 vvv
+#: last_checked: 2021-07-10 vvv
 # REMOVED --- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-06-30 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -7129,3 +7134,4 @@ asphaltiertes Straßenbahnkap	RW1; 12797,16285 12764,16302 12725,16321
 asphaltiertes Straßenbahnkap	RW1; 12474,16443 12399,16479
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,705935#msg-705935
 Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-20 Uhr	RW5; 12574,1866 12817,2031
+	RW2;RW9 9505,9306 9632,9280 9689,9266 9753,9252

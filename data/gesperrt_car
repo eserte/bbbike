@@ -960,7 +960,7 @@ Finkeldeweg	1 22928,3057 22834,3571
 Mittelstreifen	3nocross::ignrte 19405,6276 19276,6359 19245,6379
 An der Wuhlheide -> Verl. Rathenaustr.: Mittelstreifen	3::igndisp 19245,6379 19276,6359 19372,6579
 Verl. Rathenaustr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19372,6579 19276,6359 19405,6276
-Kiautschoustr.	1 7007,14911 7192,14976
+Kiautschoustr.	1 7007,14911 7182,14986
 Rochstr.: Barriere	3 10418,12922 10535,13006 10571,13034
 Rochstr.: Barriere	3 10571,13034 10535,13006 10418,12922
 Mittelstreifen	3nocross::ignrte 7930,12912 7946,12932 8039,13009
@@ -2129,7 +2129,8 @@ Bornholmer Str. -> Driesener Str.: Straßenbahntrasse	3::igndisp 10533,16505 1045
 Bornholmer Str. -> Nordkapstr.: Straßenbahntrasse	3::igndisp 10370,16516 10458,16509 10465,16656
 Nordkapstr. -> Driesener Str.: Straßenbahntrasse	3::igndisp 10465,16656 10458,16509 10449,16415
 Nordkapstr. -> Bornholmer Str.: Straßenbahntrasse	3::igndisp 10465,16656 10458,16509 10533,16505
-Bergmannstr.	2:Anlieger 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
+Bergmannstr.	2:Anlieger 9753,9252 9689,9266 9632,9280 9505,9306
+Bergmannstr.	2:Anlieger 9505,9306 9489,9309 9309,9347 9248,9350
 Nostitzstr.	2:Anlieger 9552,9602 9524,9426 9505,9306 9487,9209
 Solmsstr.	2:Anlieger 9676,9564 9650,9404 9632,9280
 Riemannstr.	2:Anlieger 9767,9386 9650,9404

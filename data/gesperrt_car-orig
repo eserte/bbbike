@@ -511,7 +511,7 @@ K‰tchenweg	2 -7020,-1275 -6975,-1250
 Mayschweg	1 22954,3584 22834,3571 22714,3558
 Finkeldeweg	1 22928,3057 22834,3571
 An der Wuhlheide: Mittelstreifen	3nocross 19405,6276 19276,6359 19245,6379
-Kiautschoustr.	1 7007,14911 7192,14976
+Kiautschoustr.	1 7007,14911 7182,14986
 Rochstr.: Barriere	3 * 10535,13006 *
 Rahel-Hirsch-Str.: Mittelstreifen	3nocross 7930,12912 7946,12932 8039,13009
 Am Kanal -> Franzˆsische Str.: verboten	3nocross -12666,-1311 -12549,-1277 -12552,-1233
@@ -852,7 +852,7 @@ Kirchplatz: gesperrt f¸r Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: XXX wird hier in eine "echte Einbahnstraﬂe" umgewandelt?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
 #: osm_watch: way id="155071540" version="8"
-#: last_checked: 2021-06-13
+#: last_checked: 2021-07-10
 #: priority: #D
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8478,8776
 Scharnhorststr.: Poller	3 7877,14504 7804,14445 *
@@ -1427,15 +1427,18 @@ Clayallee -> Sophie-Charlotte-Str.: Linksabbiegen verboten	3 1283,4260 1297,4311
 #: by: https://mein.berlin.de/projekte/verkehrskonzept-karl-august-kiez/?date=20210503 (bis 4.7.2021)
 #: XXX bleiben die Poller permanent?
 #: also_indoor: traffic (H)
-#: last_checked: 2021-05-01
+#: last_checked: 2021-07-10
 #: check_frequency: 90d
-#: next_check: 2021-07-05
+# REMOVED --- #: next_check: 2021-07-05
 Krumme Str.: Poller	3 * 3983,11289 *
 # 
 #: note: f¸r Fuﬂg‰nger und Radfahrer existiert ein Z-‹bergang etwa 20m westlich der Kreuzung
 Bornholmer Str./Nordkapstr.: Straﬂenbahntrasse	3nocross 10533,16505 10458,16509 10370,16516
 # 
-Bergmannstr.	2:Anlieger 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
+#: note: in diesem Abschnitt auﬂerdem Einbahnstraﬂenregelung, offen Richtung Westen
+#: XXX_prog: 2:Anlieger & 1 kann vermutlich nicht gleichzeitig spezifiziert werden!
+Bergmannstr.	2:Anlieger 9753,9252 9689,9266 9632,9280 9505,9306
+Bergmannstr.	2:Anlieger 9505,9306 9489,9309 9309,9347 9248,9350
 Nostitzstr.	2:Anlieger 9552,9602 9524,9426 9505,9306 9487,9209
 Solmsstr.	2:Anlieger 9676,9564 9650,9404 9632,9280
 Riemannstr.	2:Anlieger 9767,9386 9650,9404

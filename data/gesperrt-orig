@@ -3371,7 +3371,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677220#post677220
 #: priority: #C
-#: last_checked: 2021-05-17
+#: last_checked: 2021-06-07 (mapillary)
 #: check_frequency: 60d
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -3433,7 +3433,7 @@ Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php
 #: by: https://www.kms-sonne.de/projekte/blueberry-inn/
 #: XXX ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen
-#: last_checked: 2021-07-05
+#: last_checked: 2021-07-10
 #: check_frequency: 360d
 #: next_check: 2023-01-01
 #: valid: -20231231
@@ -3540,12 +3540,12 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152 14373,1004
 #: XXX Gehweg der nördlichen Seite ist schon weitgehend offen, südliche Seite nur als Baustraße erkennbar
 #: XXX ggfs. auch andere Seite des Platzes einzeichnen, ggfs. auch einen plaetze-orig-Eintrag machen
 #: osm_watch: way id="642581102" version="3"
-#: last_checked: 2021-06-25
+#: last_checked: 2021-07-10
 #: check_frequency: 60d
 Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 # 
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2021-06-08
+#: last_checked: 2021-07-10
 Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeiten gesperrt	2::inwork 7959,13982 7997,13892
 #  
 # REMOVED (Schranke wird nicht genutzt?) --- #: next_check_id: EUROPACITY-2015 --- #: XXX laut osm mittlerweile offen --- #: last_checked: 2021-02-05 --- #: check_frequency: 60d --- #: next_check: 2021-02-14 --- Lisa-Fittko-Str.: wegen Hochbauarbeiten gesperrt	2::inwork 7734,13944 7820,13994
@@ -3557,12 +3557,12 @@ Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeite
 #: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php (Webcam)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Grundstücksnummerierungen)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
-#: last_checked: 2021-06-01 (webcam)
+#: last_checked: 2021-07-10
 #: check_frequency: 60d
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7687,14017
 # 
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2021-05-30 (mapillary)
+#: last_checked: 2021-07-10
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # 
@@ -4021,7 +4021,7 @@ Gisela-Reissenberger-Platz: wegen Bauarbeiten gesperrt	2::inwork 20665,11620 207
 # REMOVED (frisch asphaltiert) --- #: last_checked: 2017-10-08 vvv --- #: check_frequency: 60d vvv --- # REMOVED --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7940,14447 --- #: XXX laut http://www.openstreetmap.org/note/1117960 wird der Weg "nach den Leitungsarbeiten wieder hergerichtet werden" --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7940,14447 7889,14519 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3192&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-03-31) --- #: priority: #A --- #: also_indoor: traffic --- #: last_checked: 2018-12-26 --- #: check_frequency: 30d --- Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung auch für Radfahrer gesperrt	1s:q3:inwork 5192,10241 5196,10398
 # REMOVED (siehe temp_blockings-Eintrag) --- #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.) --- #: last_checked: 2017-06-17 --- #: check_frequency: 7d --- DB-Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
-# REMOVED (bei fritz nicht mehr gelistet) --- #: XXX laut fritz bis 30. September 2017 --- #: by: http://www.dafmap.de/d/berlin.html?id=5031&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31) --- #: source_id: LMS-BR_r_LMS-BR_86189 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-09-30 --- #: priority: #A --- Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s:q3 3807,11859 3976,11869
+# REMOVED (bei fritz nicht mehr gelistet) --- #: XXX laut fritz bis 30. September 2017 --- #: by: http://www.dafmap.de/d/berlin.html?id=5031&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31) --- #: source_id: LMS-BR_r_LMS-BR_86189 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-09-30 --- #: priority: #A --- Zillestr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen	1s:q3 3801,11858 3976,11869
 # REMOVED (offen) --- #: next_check_id: VERLAENGERTEHERTZ-2017 --- #: XXX zumindest an der Fasanenstr. --- #: XXX laut Schild gehen die Bauarbeiten bis Dezember 2017 --- #: last_checked: 2018-04-10 --- #: check_frequency: 14d --- (Verlängerte Hertzallee): Bauarbeiten, komplett gesperrt	2::inwork 5352,11502 5296,11529 5171,11589 4950,11696 4905,11785
 # REMOVED (man kommt hinter dem Georg-Denkmal vorbei) --- Spreeufer Nikolaiviertel: Gehweg gesperrt	2::inwork 10417,12378 10492,12289 10583,12206
 # 
@@ -4039,16 +4039,14 @@ Gisela-Reissenberger-Platz: wegen Bauarbeiten gesperrt	2::inwork 20665,11620 207
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
+#: last_checked: 2021-07-10 vvv
+#: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
-#: XXX laut osm nicht mehr construction, in der Realität kann man aber hier nicht durch
-#: last_checked: 2021-06-08
-#: check_frequency: 60d
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7661,14398 7636,14414 7612,14449 7551,14464
-# 
-#: last_checked: 2021-06-25
-#: check_frequency: 60d
 Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (hier wieder offen) --- #: osm_watch: way id="594591925" version="1" --- #: osm_watch: way id="594591926" version="1" --- Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 # REMOVED (fertig) --- Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7426,14539 7396,14569 7368,14573
@@ -4226,7 +4224,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1051294.php (Baumfällungen)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/uferwand-und-promenade-sollen-bis-spaetsommer-fertig-sein_a301440 (bis Spätsommer 2021)
 #: osm_watch: way id="501191631" version="3"
-#: last_checked: 2021-04-06 (daf)
+#: last_checked: 2021-07-10
 #: next_check: 2021-09-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 

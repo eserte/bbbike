@@ -2986,7 +2986,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-08
+#: last_checked: 2021-07-10
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -3208,7 +3208,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2021-06-06
+#: last_checked: 2021-07-10
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -3293,7 +3293,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-04-11 (architektur-urbanistik)
+#: last_checked: 2021-07-10
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 ',
@@ -3351,14 +3351,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: ABBESTR-2021
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-06-14 (osm note)
+#: last_checked: 2021-07-10
 #: check_frequency: 30d
-# REMOVED (hier nicht) ---	q3::inwork 4674,12076 4698,12124
-	q3::inwork 4698,12124 4755,12236
+	q3::inwork 4674,12076 4698,12124
+# REMOVED (hier nicht mehr) ---	q3::inwork 4698,12124 4755,12236
 ',
          'from' => undef,
          'id' => 3325,
-         'text' => 'Abbestr.: Bauarbeiten, Fahrbahn zwischen Guerickestr. und Fraunhoferstr. gesperrt, Ausweichen auf Gehweg, Ende der Bauarbeiten unbekannt',
+         'text' => 'Abbestr.: Bauarbeiten, Fahrbahn zwischen Guerickestr. und Fraunhoferstr. kann gesperrt sein, Ausweichen auf Gehweg, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -3520,17 +3520,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1634335200
        },
-       {
-         'data' => '#: also_indoor: traffic (G)
-	q4::inwork 5934,2198 6021,2071 6097,1975
-',
-         'from' => 1614466800,
-         'id' => 3355,
-         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.87783.php',
-         'text' => 'Kurfürstenstr.: Sperrung der Fahrbahn zwischen Frobenstr. und Goldaper Str., vom 01.03.2021 bis 09.07.2021',
-         'type' => 'handicap',
-         'until' => 1625868000
-       },
+       undef,
        {
          'data' => '#: note: keine genauen Zeiten verfügbar
 #: by: https://abendblatt-berlin.de/2021/04/03/neue-feuerwehrwache-und-verwaltungsbueros-fuer-friedrichsfelde/
@@ -3964,23 +3954,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1659304799
        },
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021)
-#: by: https://twitter.com/rbbabendschau/status/1392489796426162177
-#: add_fragezeichen: Wurden Fahrbahn und Radwege wieder freigegeben?
-#: also_indoor: traffic (G)
-#: note: bei rbbtext seit 2021-06-18 nicht mehr gelistet
-#: priority: #A
-#: last_checked: 2021-05-14
-#: next_check: 2021-06-18
-	q3::inwork 7647,9196 7735,9121 7790,9126
-',
-         'from' => undef,
-         'id' => 3395,
-         'source_id' => '2147347186',
-         'text' => 'Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.32537,52.419526,28.06.2021,08:00 (hier: nur zwischen Saaleckplatz und Oskar-Lange-Platz)
 #: note: laut rbb zwei Meldungen: bis Oskar-Lange-Platz bis 31.7.2021, bis Oberhofer Platz bis 6.8.2021
@@ -4084,12 +4058,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: also_indoor: traffic (G,H) (beide falsch/unvollständig?)
 #: note: laut rbb: "Radfahrende steigen bitte ab"
-#: add_fragezeichen: Sind Radfahrer tatsächlich von den Bauarbeiten betroffen? vvv
-#: next_check: 2021-07-05 vvv
+# REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich von den Bauarbeiten betroffen? vvv --- #: next_check: 2021-07-05 vvv
 	q4::inwork; 8685,13728 8841,13800
 	q4::inwork; 8935,13844 9085,13919
-#: next_check ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^ --- #: add_fragezeichen ^^^
 ',
          'from' => 1625349600,
          'id' => 3406,

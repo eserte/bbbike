@@ -1040,7 +1040,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 19994,12484
 # REMOVED (wieder "normal") --- #: XXX_prog: zurzeit eine Fußgängerampel mit Anforderung, östlich versetzt, lange Wartezeiten --- #: source_id: INKO_117292 --- #: source_id: INKO_104519 --- #: last_checked: 2015-10-31 --- #: check_frequency: 90d
 	X 4502,11740
-	X 3807,11859
+	X 3801,11858
 	X 3406,11849
 	X 1747,11719
 	X 2446,11776
@@ -1363,7 +1363,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 #: osm_watch: node id="7241153386" version="1"
-#: last_checked: 2021-07-05
+#: last_checked: 2021-07-10
 #: check_frequency: 120d
 #: next_check: 2021-10-08
 	F::inwork 12330,8636
@@ -1835,8 +1835,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10432 (sichere Querungsmöglichkeit gefordert)
 #: XXX Ampel ausgeschaltet, vielleicht dauerhaft (Lynar/Tegeler)
 #: osm_watch: node id="3777205512" version="4"
-#: last_checked: 2021-04-25 (krickstadt)
-#: check_frequency: 60d
+#: last_checked: 2021-07-10
+#: check_frequency: 90d
 	X0 7259,14870
 #: note: Anforderungsampel für Radfahrer aus Richtung Osten Richtung Luisenstr. und für Radfahrer aus der Luisenstr.
 	X 8622,13696
@@ -2643,7 +2643,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5356,11512
 	F 13800,7801
 #: note: Anforderungsampel
-	F 7182,14998
+	F 7178,14996
 #: XXX_prog: nicht relevant für Radwege
 	F 18626,11742
 #: XXX_prog: auch relevant für Radfahrer auf der Straße Alt-Friedrichsfelde Richtung Westen
@@ -2945,7 +2945,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: CHAUSSEE-2020
 #: last_checked: 2021-05-22
 #: check_frequency: 90d
-#: next_check: 2021-07-15
+#: next_check: 2021-07-17
 	X::inwork 8732,14098
 # 
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) --- X::inwork 8870,13926
@@ -3255,7 +3255,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: CHAUSSEE-2020
 #: last_checked: 2021-05-22
 #: check_frequency: 90d
-#: next_check: 2021-07-16
+#: next_check: 2021-07-17
 	X::inwork 8336,14586
 # 
 #: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019)
