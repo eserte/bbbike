@@ -170,7 +170,6 @@ $SIG{INT} = sub { exit };
 my %files_add_street_name = map{($_,1)} ('radwege', 'ampeln', 'vorfahrt');
 
 my $today = strftime "%Y-%m-%d", localtime;
-my $one_month_before = strftime "%Y-%m-%d", localtime(time-30*86400); # roughly, should be enough for Mapillary links
 
 for my $file (@files) {
     debug("$file...\n");
@@ -315,10 +314,8 @@ for my $file (@files) {
 			 $epoch += 3600;
 			 $date_from = strftime '%Y-%m-%d', localtime($epoch);
 		     }
-		 } else {
-		     $date_from = $one_month_before;
 		 }
-		 push @extra_url_defs, ['Mapillary', 'https://www.mapillary.com/app/?lat='.$py.'&lng='.$px.'&z=15&dateFrom='.$date_from];
+		 push @extra_url_defs, ['Mapillary', 'https://www.mapillary.com/app/?lat='.$py.'&lng='.$px.'&z=15' . ($date_from ? '&dateFrom='.$date_from : '')];
 	     }
 
 	     # BBBike Leaflet URL
