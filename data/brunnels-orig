@@ -145,7 +145,7 @@ Borussenbrücke	Br -3882,2447 -3820,2479
 Spanische Allee, Autobahnbrücke	Br -3861,2837 -3746,2849
 Schönerlinder Str., Autobahnbrücke	Br 11980,24276 11959,24220
 Lindenhofbrücke	Br 12108,24547 12136,24607
-#: XXX wird neu gebaut --- während der Bauzeit wird es eine Ersatzbrücke (vermutlich mit Verschwenkung) geben --- mittlerweile (April 2021) ist die neue Brücke schon fertig und freigegeben
+#: XXX wird neu gebaut --- während der Bauzeit wird es eine Ersatzbrücke (vermutlich mit Verschwenkung) geben --- mittlerweile (April 2021) ist die neue Brücke schon fertig und freigegeben, aber noch nicht komplett fertig
 #: XXX wird es Radwege über die neue Brücke geben?
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.854393.php (ab 15. Oktober 2019)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/waehrend-der-bauzeit-fliesst-der-verkehr-auf-der-bucher-strasse-ueber-eine-behelfsbruecke_a236797
@@ -159,8 +159,9 @@ Lindenhofbrücke	Br 12108,24547 12136,24607
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1001081.php
 #: osm_watch: way id="9712546" version="15"
 #: also_indoor: search Bucher_Straße
-#: last_checked: 2021-04-19 (mapillary)
-#: next_check: 2021-05-01
+#: last_checked: 2021-06-21 (mapillary)
+#: check_frequency: 45d
+# REMOVED --- #: next_check: 2021-05-01
 Bucher Str., Autobahnbrücke	Br 12882,23312 12915,23337
 Bucher Str., S-Bahnbrücke	Br 13045,23465 13080,23508
 Bucher Str., Autobahnbrücke	Br 14217,24999 14182,24940
@@ -541,7 +542,7 @@ Knoten am Flughafen Tegel	Br 2954,16006 2846,15986
 Brücke über die Spektelake	Br -7228,15504 -7182,15524
 Brücke über die Wuhle	Br 22171,12965 22196,12961
 Brücke über die Wuhle	Br 22263,6185 22238,6195
-Brücke über die Wuhle	Br 22056,6613 22030,6600
+Brücke über die Wuhle	Br 22050,6619 22027,6608
 Brücke über die Wuhle	Br 22295,13530 22246,13551
 Mosbacher Brücke	Br 22195,10993 22221,10985 22240,10980
 Brücke über die Wuhle	Br 22326,11266 22242,11269

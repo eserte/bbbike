@@ -19284,13 +19284,16 @@ EOF
 	q4::inwork; 15066,14579 15174,14638 15272,14691
 EOF
      },
-     { from  => 1380175440, # 2013-09-26 08:04
-       until => 1381834786, # so gut wie aufgehoben - 1381932000, # 2013-10-16 16:00
-       text  => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Warschauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte September 2013',
+     { from  => 1626024702, # 1380175440, # 2013-09-26 08:04
+       until => $isodate2epoch->("2021-08-15 18:00:00"), # 1381834786, # so gut wie aufgehoben - 1381932000, # 2013-10-16 16:00
+       text  => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Warschauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte August 2021',
        type  => 'handicap',
        source_id => 'IM_020398',
        data  => <<EOF,
-	q3::inwork; 13651,11731 13895,11663
+#: by: https://viz.berlin.de/2021/07/verkehrsvorschau-120721/
+#: XXX anschauen!
+#: next_check: 2021-07-12
+	q4::inwork; 13651,11731 13895,11663 13954,11647
 EOF
      },
      { from  => 1299992400, # 2011-03-13 06:00
@@ -30963,7 +30966,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-10
+#: last_checked: 2021-07-11
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32362,8 +32365,8 @@ EOF
 #: XXX laut rbb bis 30.7.2021
 #: also_indoor: traffic (G,H)
 #: priority: #A vvv
-#: last_checked: 2021-07-02 vvv
-#: check_frequency: 21d vvv
+#: last_checked: 2021-07-11 vvv
+#: check_frequency: 14d vvv
 #: next_check: 2021-07-30 vvv
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
 	q4::inwork 13067,12583 13202,12790
@@ -32576,16 +32579,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1626013756, # undef, # XXX
        text  => 'Archibaldweg: Fahrbahn gesperrt, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: ARCHIBALDWEG-2021
-#; also_indoor: traffic (G)
-#: priority: #B
-#: also_indoor: traffic (G)
-#: last_checked: 2021-07-03
-#: check_frequency: 14d
+# REMOVED --- #: next_check_id: ARCHIBALDWEG-2021 --- #: also_indoor: traffic (G) --- #: priority: #B --- #: last_checked: 2021-07-03 --- #: check_frequency: 14d
 	q4::inwork 15870,10938 15674,10851
 EOF
      },
@@ -33102,7 +33100,7 @@ EOF
 #: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-07-09
+#: last_checked: 2021-07-11
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33111,7 +33109,7 @@ EOF
 EOF
      },
      { from  => 1625859946, # 2021-07-09 21:45
-       until => 1626040800, # 2021-07-12 00:00
+       until => $isodate2epoch->("2021-07-11 11:45:00"), # 1626040800, # 2021-07-12 00:00
        text  => 'Straße des 17. Juni/Brandenburger Tor: Demonstration, Straßen sind evtl. auch für Radfahrer gesperrt, bis 11.07.2021 11:45 Uhr',
        type  => 'gesperrt',
        source_id => 'viz2021:13.369855,52.515768,09.07.2021,10:30',

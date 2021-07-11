@@ -1195,7 +1195,19 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2021/07/verkehrsvorschau-120721/
+#: XXX anschauen!
+#: next_check: 2021-07-12
+	q4::inwork; 13651,11731 13895,11663 13954,11647
+',
+         'from' => 1626024702,
+         'id' => 2188,
+         'source_id' => 'IM_020398',
+         'text' => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Warschauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte August 2021',
+         'type' => 'handicap',
+         'until' => 1629043200
+       },
        undef,
        undef,
        undef,
@@ -2986,7 +2998,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-10
+#: last_checked: 2021-07-11
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -3442,8 +3454,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX laut rbb bis 30.7.2021
 #: also_indoor: traffic (G,H)
 #: priority: #A vvv
-#: last_checked: 2021-07-02 vvv
-#: check_frequency: 21d vvv
+#: last_checked: 2021-07-11 vvv
+#: check_frequency: 14d vvv
 #: next_check: 2021-07-30 vvv
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
 	q4::inwork 13067,12583 13202,12790
@@ -3635,21 +3647,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1627768799
        },
-       {
-         'data' => '#: next_check_id: ARCHIBALDWEG-2021
-#; also_indoor: traffic (G)
-#: priority: #B
-#: also_indoor: traffic (G)
-#: last_checked: 2021-07-03
-#: check_frequency: 14d
-	q4::inwork 15870,10938 15674,10851
-',
-         'from' => undef,
-         'id' => 3366,
-         'text' => 'Archibaldweg: Fahrbahn gesperrt, Ende der Sperrung unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/saison-startet_a311283 (und die anderen neuen Spielstraßen in FH-KB)
 #: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen
@@ -4122,7 +4120,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-07-09
+#: last_checked: 2021-07-11
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -4135,20 +4133,6 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), sowie die Anbindung Nöldnerstr. (komplett, auch für Fußgänger), vom 09.07.2021 11:00 bis 15.12.2021 17:00 ',
          'type' => 'gesperrt',
          'until' => 1639609200
-       },
-       {
-         'data' => '#: by: https://viz.berlin.de/2021/07/grossdemo/
-	2::temp 8522,12187 8538,12245 8546,12279
-	2::temp 8522,12239 8466,12197
-	2::temp 8637,12258 8592,12252 8538,12245
-	2::temp 8344,12221 8538,12245 8600,12165
-',
-         'from' => 1625859946,
-         'id' => 3412,
-         'source_id' => 'viz2021:13.369855,52.515768,09.07.2021,10:30',
-         'text' => 'Straße des 17. Juni/Brandenburger Tor: Demonstration, Straßen sind evtl. auch für Radfahrer gesperrt, bis 11.07.2021 11:45 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1626040800
        }
      
 );

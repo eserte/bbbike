@@ -1460,6 +1460,8 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14173,-1013 -14186,-868
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14191,-818 -14199,-707 -14205,-644
 Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
+#: by: osm, mapillary (Rückseite eines länglichen Schildes)
+Bienenwinkel	1 -13335,1927 -13333,1957 -13227,1962 -13228,1927
 ###################################################################### 
 # elsewhere in Brandenburg
 # 
@@ -3282,7 +3284,7 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 #: osm_watch: way id="4045220" version="39"
 #: osm_watch: way id="938037386" version="1"
 #: osm_watch: way id="868103791" version="2"
-#: last_checked: 2021-06-11
+#: last_checked: 2021-07-11
 #: check_frequency: 90d
 Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9532
 # 
@@ -3387,7 +3389,7 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 # 
 #: XXX evtl. wird nach den Bauarbeiten die Qualität besser sein
 #: osm_watch: way id="141309175" version="9"
-#: last_checked: 2021-04-17
+#: last_checked: 2021-04-18 (mapillary)
 #: check_frequency: 60d
 Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708,11918 20738,11915
 # 
@@ -3647,7 +3649,7 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2021-06-20 vvv
+#: last_checked: 2021-07-11 vvv
 #: check_frequency: 60d vvv
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
 # REMOVED (hier kann man schon fahren) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21474,5388 21485,5377 21514,5314 21547,5245 21413,5180
@@ -4374,6 +4376,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 #: XXX die derzeitige Straße ist asphaltiert, bleibt das so?
+#: osm_watch: way id="765539341" version="3" brb
 #: last_checked: 2020-10-13 (daf)
 # REMOVED --- #: next_check: 2020-09-01
 #: check_frequency: 180d
