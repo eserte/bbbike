@@ -19286,14 +19286,18 @@ EOF
      },
      { from  => 1626024702, # 1380175440, # 2013-09-26 08:04
        until => $isodate2epoch->("2021-08-15 18:00:00"), # 1381834786, # so gut wie aufgehoben - 1381932000, # 2013-10-16 16:00
-       text  => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Warschauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte August 2021',
+       text  => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Libauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte August 2021',
        type  => 'handicap',
        source_id => 'IM_020398',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2021/07/verkehrsvorschau-120721/
 #: XXX anschauen!
-#: next_check: 2021-07-12
-	q4::inwork; 13651,11731 13895,11663 13954,11647
+#: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
+#: note: laut rbb nur bis 1.8.2021
+#: last_checked: 2021-07-12
+#: check_frequency: 7d
+# REMOVED (hier nicht)	q4::inwork; 13651,11731 13895,11663
+	q4::inwork; 13895,11663 13954,11647
 EOF
      },
      { from  => 1299992400, # 2011-03-13 06:00
@@ -30966,7 +30970,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-11
+#: last_checked: 2021-07-12
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32260,13 +32264,14 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-03-03 08:00:00"),
-       until => 1634223600, # 2021-10-14 17:00
-       text  => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, in beiden Richtungen gesperrt, vom 04.03.2021 08:00 Uhr bis 14.10.2021',
+       until => $isodate2epoch->("2021-11-02 17:00:00"), # 1634223600, # 2021-10-14 17:00
+       text  => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Richtung Norden gesperrt, bis 2.11.2021',
        type  => 'handicap',
        source_id => '2147346935', # bis 14.10.2021
        data  => <<EOF,
 #: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00
-	q4::inwork 4894,6509 4875,6552 4786,6717
+#: source_id: viz2021:13.320517,52.466345,13.07.2021,08:00
+	q4::inwork; 4894,6509 4875,6552 4786,6717
 EOF
      },
      { from  => 1615071600, # 2021-03-07 00:00
@@ -33078,16 +33083,15 @@ EOF
 	2::inwork 27833,-16133 27599,-16162
 EOF
      },
-     { from  => 1625749200, # 2021-07-08 15:00
-       until => 1626058800, # 2021-07-12 05:00
-       text  => 'B96: zwischen Staehleweg und Hohen Neuendorf wegen Bauarbeiten gesperrt, vom 09.07.2021 15:00 Uhr bis 12.07.2021 05:00 Uhr',
+     { from  => $isodate2epoch->("2021-07-15 00:00:00"), # 1625749200, # 2021-07-08 15:00
+       until => $isodate2epoch->("2021-07-19 05:00:00"), # 1626058800, # 2021-07-12 05:00
+       text  => 'B96: zwischen Staehleweg und Hohen Neuendorf wegen Bauarbeiten gesperrt, vom 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1104559.php',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2021/07/oranienburger-chaussee-b96/
 #: source_id: viz2021:13.287552,52.659932,09.07.2021,15:00
-#: note: nächster Termin: 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr
-#: next_check: 2021-07-12
+# REMOVED --- #: note: nächster Termin: 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr --- #: next_check: 2021-07-12
 	2::inwork 2150,28127 2178,28067 2345,27670
 EOF
      },

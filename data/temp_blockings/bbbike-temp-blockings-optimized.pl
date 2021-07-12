@@ -1198,13 +1198,17 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        {
          'data' => '#: by: https://viz.berlin.de/2021/07/verkehrsvorschau-120721/
 #: XXX anschauen!
-#: next_check: 2021-07-12
-	q4::inwork; 13651,11731 13895,11663 13954,11647
+#: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
+#: note: laut rbb nur bis 1.8.2021
+#: last_checked: 2021-07-12
+#: check_frequency: 7d
+# REMOVED (hier nicht)	q4::inwork; 13651,11731 13895,11663
+	q4::inwork; 13895,11663 13954,11647
 ',
          'from' => 1626024702,
          'id' => 2188,
          'source_id' => 'IM_020398',
-         'text' => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Warschauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte August 2021',
+         'text' => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Libauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte August 2021',
          'type' => 'handicap',
          'until' => 1629043200
        },
@@ -2998,7 +3002,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-11
+#: last_checked: 2021-07-12
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -3316,25 +3320,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: BOHNSDORFERKREISEL-2017
-#: source_id: 2147346807 (bis 30.6.2021)
-#: source_id: viz2021:13.571014,52.412892,05.08.2020,19:43 (bis 12.7.2021)
-#: note: laut rbbtext kann der Radverkehr passieren
-#: by: https://viz.berlin.de/2021/01/bohnsdorfer-kreisel/ (keine Einschränkungen für Fußgänger)
-#: by: https://twitter.com/VIZ_Berlin/status/1353990207574581249 (Situation mit Bildern)
-# REMOVED --- #: XXX wie sehen die Einschränkungen (wenn überhaupt) für den Radverkehr aus? vvv
-	q3::inwork 22162,1067 22092,999 22034,1006 21977,988
-	q3::inwork 22092,999 22120,886
-# REMOVED --- #: XXX ^^^
-',
-         'from' => 1610838000,
-         'id' => 3321,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1039050.php',
-         'text' => 'Richterstr./Bruno-Taut-Str.: Kreuzung wegen Bauarbeiten gesperrt, Radfahrer können auf den engen Gehwegen vorbeifahren, vom 18.1.2021 bis 12.7.2021',
-         'type' => 'handicap',
-         'until' => 1626102000
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.536634,52.420965,13.01.2021,07:00
 #: osm_watch: way id="683770241" version="6"
@@ -3416,14 +3402,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00
-	q4::inwork 4894,6509 4875,6552 4786,6717
+#: source_id: viz2021:13.320517,52.466345,13.07.2021,08:00
+	q4::inwork; 4894,6509 4875,6552 4786,6717
 ',
          'from' => 1614754800,
          'id' => 3339,
          'source_id' => '2147346935',
-         'text' => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, in beiden Richtungen gesperrt, vom 04.03.2021 08:00 Uhr bis 14.10.2021',
+         'text' => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Richtung Norden gesperrt, bis 2.11.2021',
          'type' => 'handicap',
-         'until' => 1634223600
+         'until' => 1635868800
        },
        undef,
        undef,
@@ -4105,16 +4092,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://viz.berlin.de/2021/07/oranienburger-chaussee-b96/
 #: source_id: viz2021:13.287552,52.659932,09.07.2021,15:00
-#: note: nächster Termin: 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr
-#: next_check: 2021-07-12
+# REMOVED --- #: note: nächster Termin: 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr --- #: next_check: 2021-07-12
 	2::inwork 2150,28127 2178,28067 2345,27670
 ',
-         'from' => 1625749200,
+         'from' => 1626300000,
          'id' => 3410,
          'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1104559.php',
-         'text' => 'B96: zwischen Staehleweg und Hohen Neuendorf wegen Bauarbeiten gesperrt, vom 09.07.2021 15:00 Uhr bis 12.07.2021 05:00 Uhr',
+         'text' => 'B96: zwischen Staehleweg und Hohen Neuendorf wegen Bauarbeiten gesperrt, vom 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1626058800
+         'until' => 1626663600
        },
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
