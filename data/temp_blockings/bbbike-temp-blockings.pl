@@ -35,8 +35,7 @@ my $isodate2epoch = sub {
      { from  => $isodate2epoch->("2019-06-06 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-06-10 23:59:59"),
        periodic => 1,
-       recurrences => [['easter', 47, start => "2020-10-25T00:00:00"]], # zwei Tage vor Pfingsten
-       recurrence_prewarn_days => -60,
+       recurrences => [['easter', 47, start => "2021-10-25T00:00:00"]], # zwei Tage vor Pfingsten
        text  => 'Straßenfest rund um den Blücherplatz, 07.06.2019 bis 10.06.2019, Sperrungen fangen schon einen Tag vorher an',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -23704,11 +23703,11 @@ EOF
 	q4::inwork; 16514,15092 16430,15168
 EOF
      },
-     { from  => $isodate2epoch->("2019-08-14 14:00:00"), # 1 Tag Vorlauf (2019 ein paar Tage früher?)
-       until => $isodate2epoch->("2019-08-18 23:59:59"),
+     { from  => $isodate2epoch->("2021-08-19 14:00:00"), # 1 Tag Vorlauf (2019 ein paar Tage früher?)
+       until => $isodate2epoch->("2021-08-22 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 8, start => "2020-10-25T00:00:00"]],
-       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 14.8.2919 bis 18.8.2019 möglich',
+       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 20.8.2921 bis 22.8.2021 möglich',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
@@ -29919,19 +29918,21 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2021-07-16 17:00:00"), # 1596211200, # 2020-07-31 18:00
-       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis 16.07.2021',
+       until => $isodate2epoch->("2022-06-04 17:00:00"), # 1596211200, # 2020-07-31 18:00
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Juni 2022',
        type  => 'gesperrt',
        source_id => '2147344558', # bis 2020-09-10
        data  => <<EOF,
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 16.7.2021, Gesamtbaumaßnahme bis 2024)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: also_indoor: traffic (G)
 #: last_checked: 2021-02-20
-#: next_check: 2021-07-16
+#: check_frequency: 180d
+#: next_check: 2022-06-04
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 EOF
      },

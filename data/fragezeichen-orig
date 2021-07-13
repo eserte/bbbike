@@ -408,7 +408,7 @@ Kladower Damm: Radpuren geplant	?::projected; -5097,7361 -5046,7442 -4967,7567
 #: by: http://www.infravelo.de/projekt/koepenicker-landstrasse/ (früherer Eintrag) (Schutzstreifen, 1. Quartal 2021 - 4. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/koepenicker-landstrasse-2/
 #: XXX Maßnahme Pw.1
-#: osm_watch: way id="28961260" version="18"
+#: osm_watch: way id="28961260" version="19"
 #: source_id: 2147339938
 #: source_id: LMS-BR_r_LMS-BR_91391
 #: last_checked: 2021-05-24 (mapillary)
@@ -512,7 +512,7 @@ Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623
 #: by: http://www.infravelo.de/projekt/munsterdamm/ (4. Quartal 2021 - 4. Quartal 2023)
 #: source_id: 2147344224 (bis Mitte Juni 2019) (es ist aber nichts passiert) (nicht mehr aktiv)
 #: source_id: 2147345316 (bis Anfang Februar 2020) (nicht mehr aktiv)
-#: osm_watch: way id="30190074" version="23"
+#: osm_watch: way id="30190074" version="24"
 #: last_checked: 2021-06-05 (mapillary)
 #: check_frequency: 270d
 #: next_check: 2023-12-31
@@ -850,7 +850,7 @@ Späthstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 1
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6308&date=20191018 (Ablehnung im Ausschuss)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6768 (Freigabe der Gehwege gefordert)
 # REMOVED --- #: XXX wird die Einbahnstraßenregelung in der Chris-Gueffroy-Allee auch für Radfahrer gelten? --- #: XXX wird es nach den Bauarbeiten Radspuren geben? --- nein, sieht nicht so aus --- #: priority: #A
-#: osm_watch: way id="4579887" version="32"
+#: osm_watch: way id="4579887" version="33"
 #: osm_watch: way id="25538902" version="16"
 #: source_id: 2147344268 (Gesamtbaumaßnahme bis Anfang August 2019)
 #: source_id: 2147344381 (Gesamtbaumaßnahme bis Anfang August 2019)
@@ -2120,8 +2120,8 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 # REMOVED (inaktiv) --- #: XXX NEW¦Richterstraße (Bohnsdorf) Richtung Adlergestell ab Buntzelstraße (Berlin)  Gültig ab: 30.10.2018 10:31  Fahrtrichtung gesperrt, Sraßenbauarbeiten (bis 08/19)¦2147343391 -> für Radfahrer relevant?
 # REMOVED (gelöscht) --- #: osm_watch: way id="151627031" version="21"
 #: osm_watch: way id="639935469" version="11"
-#: osm_watch: way id="913879539" version="2"
-#: osm_watch: way id="377862703" version="5"
+#: osm_watch: way id="913879539" version="3"
+#: osm_watch: way id="377862703" version="6"
 #: source_id: 2147341295 (inaktiv)
 #: source_id: 2147341681 (inaktiv)
 #: source_id: 2147341683 (inaktiv)
@@ -2130,7 +2130,8 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: also_indoor: traffic (G,H)
 #: last_checked: 2021-05-23 (bahninfo-forum)
 #: check_frequency: 60d
-#: next_check: 2022-07-31
+# REMOVED --- #: next_check: 2022-07-31
+#: next_check: 2021-07-04
 Bohnsdorfer Kreisel: Bau von Radspuren (mit Grünmarkierung) in beiden Richtungen	?::projected 22062,773 22120,886 22092,999 22034,1006 21977,988
 # REMOVED --- #: check_frequency: 90d
 # REMOVED (realisiert) --- #: XXX erster Bauabschnitt (vom 15. Mai 2017 bis Oktober 2017) --- Bohnsdorfer Kreisel: Bau von Radspuren in beiden Richtungen; Aufhebung der Einbahnstraßenregelung	?::projected 22007,711 22062,773
@@ -2537,17 +2538,19 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12150,8764 123
 #: by: http://www.abendblatt-berlin.de/2018/05/15/drei-jahre-endspurt-fuer-baustelle-karl-marx-strasse/ (bis Ende 2021)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.836029.php (spätestens 2024 abgeschlossen)
 #: by: https://www.kms-sonne.de/baustellennews/?date=20210630 (Bauarbeiten bis November 2021)
-#: source_id: viz2021:13.435258,52.480947,05.07.2021,10:00 (Bauarbeiten in Höhe Erkstr. bis Anfang 10/2021)
+#: source_id: viz2021:13.435258,52.480947,05.07.2021,10:00 (Bauarbeiten in Höhe Erkstr. bis Anfang 10/2021) (mittlerweile nur noch bis 14.7.2021)
+#: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024)
 #: last_checked: 2021-07-05
 #: check_frequency: 360d
-#: next_check: 2021-10-08
+#: next_check: 2021-12-31
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501 12330,8636
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/boddinstrasse-wird-gesperrt_a314931
+#: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00
 #: last_checked: 2021-07-10
 #: check_frequency: 14d
-# REMOVED --- #: next_check: 2021-07-05
+#: next_check: 2021-07-14
 Boddinstr.: wird wegen Bauarbeiten an der Karl-Marx-Str. gesperrt	?::projected 12368,8356 12582,8408
 # 
 # REMOVED (weitgehend realisiert) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022) --- #: by: http://www.berliner-woche.de/neukoelln/bauen/neues-von-der-baustelle-arbeiten-auf-der-karl-marx-strasse-ruhen-d143549.html (Bauarbeiten ab April 2018, Briesestr. bis Erkstr.) --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.697573.php (Briese- bis Weichselstr., bis Ende 2021) --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/durch-die-aktion-karl-marx-strasse-treffen-sich-alle-beteiligten-regelmaessig_a196585 (bis Jahresende 2019) --- #: by: https://fahrradfreundliches-neukoelln.de/blog/bericht-vom-7-fahrrat-21-februar-2019 (Baubeginn April/Mai 2019) --- #: by: http://cm.kms-sonne.de/mailing/99/2206225/0/8dc0731155/index.html (8. Baustellennewsletter der Aktion KMS) (Asphaltierung zwischen Briese- und Werbellinstr. am 28. und 29. August 2019) --- #: by: https://www.abendblatt-berlin.de/2019/10/05/berlin-neukoelln-bauarbeiten-am-rathaus-gehen-voran/ (Gehwegarbeiten) --- #: by: https://www.kms-sonne.de/baustellennews/?date=20191023 --- #: osm_watch: way id="629657606" version="7" --- #: last_checked: 2020-09-25 --- #: check_frequency: 60d --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12753,8187 12714,8249
@@ -4899,6 +4902,7 @@ Märkische Allee: Radverkehrsanlagen werden entstehen, evtl. als PBL	?::projected
 Charlottenburger Chaussee: Radwegsanierung in Planung, wo genau?	?::projected -2419,13237 -2241,13320 -2088,13413 -2047,13434 -1972,13455 -1780,13468 -1560,13418 -1337,13354 -1284,13340 -772,13199 -442,13058
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/fahrrat/endversion-protokoll-18-06-20.pdf
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1102866.php (Bauarbeiten ab Juli 2021 für rund vier Monate)
+#: by: https://www.berliner-woche.de/spandau/c-verkehr/in-der-urlaubszeit-muss-mit-staus-gerechnet-werden_a315900 (Erwähnung)
 #: source_id: viz2021:13.184866,52.547529,01.07.2021,07:00 (bis 25.7.2021)
 #: last_checked: 2021-05-24
 # REMOVED --- #: check_frequency: 90d
@@ -5661,7 +5665,7 @@ Osdorfer Str.: neue parallele Straße wird gebaut, alte Straße wird zum Radweg	?:
 #: XXX bislang gibt es ein LKW-Durchfahrverbot
 #: priority: #D
 #: osm_watch: way id="8150996" version="8"
-#: osm_watch: way id="4687336" version="16"
+#: osm_watch: way id="4687336" version="18"
 #: last_checked: 2021-06-14
 #: check_frequency: 120d
 Stedingerweg: wird es hier Maßnahmen gegen den MIV-Durchgangsverkehr geben?	? 13636,14900 13733,14813 13908,14654 13933,14622 13947,14513
@@ -5826,7 +5830,7 @@ Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 183
 #: by: https://abendblatt-berlin.de/2021/06/25/radweg-lankwitz/
 #: XXX evtl. Verlängerung zur Attilastr.
 #: last_checked: 2021-06-14 (Ende Anhörungsverfahren)
-#: check_frequency: 30d
+#: check_frequency: 60d
 Kaiser-Wilhelm-Str.: Popup-Radweg in Planung	?::projected 6613,3320 6780,3497 6930,3666 6954,3703 6993,3765 7107,3912
 # 
 #: by: https://www.infravelo.de/projekt/gruenberger-strasse/ (4. Quartal 2022 - 1. Quartal 2023)
@@ -5870,6 +5874,7 @@ Bergmannstr.: Einrichtung eines geschützten Zweiwegeradwegs (Südseite), Einbahns
 Steglitzer Damm: Markierung eines 2,00 m breiten Radfahrstreifens	?::projected 6651,4843 6579,4856 6531,4865 6385,4896 6354,4901 6276,4915 6215,4926 6187,4930 6182,4931 6055,4950
 # 
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1102247.php (Baubeginn am 19.07.2021, Bauzeit ca. vier Wochen)
+#: by: https://www.berliner-woche.de/spandau/c-verkehr/in-der-urlaubszeit-muss-mit-staus-gerechnet-werden_a315900 (Erwähnung)
 #: next_check: 2021-12-01
 Hohenzollernring: Radwege werden neu gemacht	?::projected -3721,14495 -3835,14668 -3880,14770 -3900,14818 -3926,14879 -4017,15077 -4061,15164 -4084,15264 -4110,15367
 # 
@@ -6840,7 +6845,7 @@ Waldstr.: während der Bauarbeiten zur neuen Anschlussstelle vermutlich gesperrt	
 #: XXX sowie die Privatstraßen:
 #: XXX * Am Mühlanger
 #: XXX * Knyphausenweg
-#: osm_watch: way id="28319563" version="14"
+#: osm_watch: way id="28319563" version="15"
 #: last_checked: 2021-05-30
 #: check_frequency: 720d
 #: next_check: 2024-06-01
