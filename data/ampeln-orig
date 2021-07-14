@@ -14,10 +14,14 @@ Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775
 # 
 #: XXX Hauffstraße (Rummelsburg) in beiden Richtungen zwischen Wiesenweg und Schreiberhauer Straße: Arbeiten an Gasleitung, für beide Richtungen nur ein gemeinsamer Fahrstreifen abwechselnd frei, eine Baustellenampel regelt den Verkehr, vom 06.07.2021 08:00 bis 23.07.2021 17:00
 #: note: Ampeln in der Hauffstr. sowie in der Schulze-Boysen-Str. an der Buchberger Str.; außerdem ist die Anbindung Pfarrstr. offiziell gesperrt
-#: source_id: viz2021:13.478302,52.506695,06.07.2021,08:00
-#: last_checked: 2021-07-09
-#: valid: -20210723
+#: source_id: viz2021:13.478302,52.506695,06.07.2021,08:00 vvv
+#: last_checked: 2021-07-14 vvv
+#: valid: -20210723 vvv
 Hauffstr.: Gegenverkehrsregelung	?::inwork 15458,11306
+Schulze-Boysen-Str.: Gegenverkehrsregelung	?::inwork 15477,11338
+#: valid ^^^
+#: last_checked ^^^
+#: source_id ^^^
 # 
 #: next_check_id: HERMANNHESSESTR-2019
 #: XXX wird die temporäre Ampel durch eine permanente ersetzt?
@@ -1363,7 +1367,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 #: osm_watch: node id="7241153386" version="1"
-#: last_checked: 2021-07-10
+#: last_checked: 2021-07-14
 #: check_frequency: 120d
 #: next_check: 2021-10-08
 	F::inwork 12330,8636
@@ -3078,7 +3082,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked: 2021-04-04
 	F::inwork 14239,6875
 #: note: Anforderungsampel
-#: last_checked: 2021-04-04
+#: last_checked: 2021-07-14
 	F::inwork 14139,6786
 #: next_check ^^^
 #: valid ^^^
@@ -3086,12 +3090,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2021-05-30
+#: last_checked: 2021-07-14
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
 	X::inwork 13265,6972
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: last_checked: 2021-03-27
+#: last_checked: 2021-07-14
 #: check_frequency: 90d
 	X::inwork 13627,7047
 # REMOVED --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103
@@ -3104,7 +3108,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="5"
-#: last_checked: 2021-05-24
+#: last_checked: 2021-07-14
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3304,7 +3308,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX bleibt die Ampel Hermannstr./Thomasstr. permanent?
-#: last_checked: 2021-05-01
+#: last_checked: 2021-07-14
 #: check_frequency: 90d
 	X::inwork 12185,7381
 # 
@@ -3515,7 +3519,7 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2021-06-04 vvv
+#: last_checked: 2021-07-14 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

@@ -28052,7 +28052,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-07-02
+#: last_checked: 2021-07-12 (mapillary)
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28626,7 +28626,8 @@ EOF
 #: note: laut rbbtext "Gesamtbaumaßnahme ... bis August 2023"
 #: source_id: 2147346762 (bis Ende 2021)
 #: add_fragezeichen: Wann ist die Sperrung beendet?
-#: last_checked: 2021-01-31 (mapillary)
+#: note: manchmal (Wochenende?) kann man an den Absperrungen vorbeifahren (gesehen 2021-07-11)
+#: last_checked: 2021-07-11 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2021-12-31
 	2::inwork 14338,22885 14276,22914
@@ -30971,7 +30972,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-12
+#: last_checked: 2021-07-14
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33016,7 +33017,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'viz2021:13.471852,52.513916,22.06.2021,07:00',
        data  => <<EOF,
-#: last_checked: 2021-07-06 vvv
+#: next_check_id: FRANKFURTER-2021
+#: last_checked: 2021-07-14 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-09-13 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -33092,6 +33094,7 @@ EOF
        data  => <<EOF,
 #: by: https://viz.berlin.de/2021/07/oranienburger-chaussee-b96/
 #: source_id: viz2021:13.287552,52.659932,09.07.2021,15:00
+#: source_id: viz2021:13.287552,52.659932,16.07.2021,18:00
 # REMOVED --- #: note: nächster Termin: 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr --- #: next_check: 2021-07-12
 	2::inwork 2150,28127 2178,28067 2345,27670
 EOF
@@ -33124,6 +33127,44 @@ EOF
 	2::temp 8522,12239 8466,12197
 	2::temp 8637,12258 8592,12252 8538,12245
 	2::temp 8344,12221 8538,12245 8600,12165
+EOF
+     },
+     { from  => 1625349600, # 2021-07-04 00:00
+       until => 1627941600, # 2021-08-03 00:00
+       text  => 'Frankfurter Allee: Bauarbeiten zwischen Gürtelstr. und Schulze-Boysen-Str., unter Umständen ist das Überqueren in Höhe Rathausstr. nicht möglich, vom 05.07.2021 06:00 bis 02.08.2021 17:00',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.480176,52.513101,05.07.2021,06:00',
+       data  => <<EOF,
+	3 15714,11941 15717,12010 15670,12022
+	3 15685,12154 15670,12022 15717,12015
+	3 15361,12071 15670,12022 15685,12154
+EOF
+     },
+     { from  => 1627682400, # 2021-07-31 00:00
+       until => 1633039199, # 2021-09-30 23:59
+       text  => 'Am Vierrutenberg: Bauarbeiten zwischen Zehntwerderweg und Benekendorffstr., evtl. wird die Fahrbahn nicht benutzbar sein, von August bis Ende September 2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1106283.php',
+       data  => <<EOF,
+	q4::inwork 5793,23422 5893,23287
+EOF
+     },
+     { from  => 1626300000, # 2021-07-15 00:00
+       until => 1628287200, # 2021-08-07 00:00
+       text  => 'Gehrenseestr. im Bereich S-Bhf.: Bauarbeiten, evtl. für Radfahrer nicht passierbar, vom 16.07.2021 08:00 bis 06.08.2021 17:00 ',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.526597,52.556118,16.07.2021,08:00',
+       data  => <<EOF,
+	2::inwork 18527,16789 18587,16834 18738,16957
+EOF
+     },
+     { from  => 1626116439, # 2021-07-12 21:00
+       until => 1667257200, # 2022-11-01 00:00
+       text  => 'Schönow (Passow): Bauarbeiten, bis 31.10.2022',
+       type  => 'handicap',
+       source_id => '217300297',
+       data  => <<EOF,
+	q4::inwork 60206,86603 59776,86911 59791,87005 59779,87064 59776,87207 59766,87273
 EOF
      },
     );

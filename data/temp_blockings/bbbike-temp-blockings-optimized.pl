@@ -2502,7 +2502,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-07-02
+#: last_checked: 2021-07-12 (mapillary)
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2568,7 +2568,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: note: laut rbbtext "Gesamtbaumaßnahme ... bis August 2023"
 #: source_id: 2147346762 (bis Ende 2021)
 #: add_fragezeichen: Wann ist die Sperrung beendet?
-#: last_checked: 2021-01-31 (mapillary)
+#: note: manchmal (Wochenende?) kann man an den Absperrungen vorbeifahren (gesehen 2021-07-11)
+#: last_checked: 2021-07-11 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2021-12-31
 	2::inwork 14338,22885 14276,22914
@@ -3033,7 +3034,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-12
+#: last_checked: 2021-07-14
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4050,7 +4051,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1630533600
        },
        {
-         'data' => '#: last_checked: 2021-07-06 vvv
+         'data' => '#: next_check_id: FRANKFURTER-2021
+#: last_checked: 2021-07-14 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-09-13 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -4123,6 +4125,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://viz.berlin.de/2021/07/oranienburger-chaussee-b96/
 #: source_id: viz2021:13.287552,52.659932,09.07.2021,15:00
+#: source_id: viz2021:13.287552,52.659932,16.07.2021,18:00
 # REMOVED --- #: note: nächster Termin: 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr --- #: next_check: 2021-07-12
 	2::inwork 2150,28127 2178,28067 2345,27670
 ',
@@ -4150,6 +4153,49 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), sowie die Anbindung Nöldnerstr. (komplett, auch für Fußgänger), vom 09.07.2021 11:00 bis 15.12.2021 17:00 ',
          'type' => 'gesperrt',
          'until' => 1639609200
+       },
+       undef,
+       {
+         'data' => '	3 15714,11941 15717,12010 15670,12022
+	3 15685,12154 15670,12022 15717,12015
+	3 15361,12071 15670,12022 15685,12154
+',
+         'from' => 1625349600,
+         'id' => 3413,
+         'source_id' => 'viz2021:13.480176,52.513101,05.07.2021,06:00',
+         'text' => 'Frankfurter Allee: Bauarbeiten zwischen Gürtelstr. und Schulze-Boysen-Str., unter Umständen ist das Überqueren in Höhe Rathausstr. nicht möglich, vom 05.07.2021 06:00 bis 02.08.2021 17:00',
+         'type' => 'gesperrt',
+         'until' => 1627941600
+       },
+       {
+         'data' => '	q4::inwork 5793,23422 5893,23287
+',
+         'from' => 1627682400,
+         'id' => 3414,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1106283.php',
+         'text' => 'Am Vierrutenberg: Bauarbeiten zwischen Zehntwerderweg und Benekendorffstr., evtl. wird die Fahrbahn nicht benutzbar sein, von August bis Ende September 2021',
+         'type' => 'handicap',
+         'until' => 1633039199
+       },
+       {
+         'data' => '	2::inwork 18527,16789 18587,16834 18738,16957
+',
+         'from' => 1626300000,
+         'id' => 3415,
+         'source_id' => 'viz2021:13.526597,52.556118,16.07.2021,08:00',
+         'text' => 'Gehrenseestr. im Bereich S-Bhf.: Bauarbeiten, evtl. für Radfahrer nicht passierbar, vom 16.07.2021 08:00 bis 06.08.2021 17:00 ',
+         'type' => 'gesperrt',
+         'until' => 1628287200
+       },
+       {
+         'data' => '	q4::inwork 60206,86603 59776,86911 59791,87005 59779,87064 59776,87207 59766,87273
+',
+         'from' => 1626116439,
+         'id' => 3416,
+         'source_id' => '217300297',
+         'text' => 'Schönow (Passow): Bauarbeiten, bis 31.10.2022',
+         'type' => 'handicap',
+         'until' => 1667257200
        }
      
 );
