@@ -32676,15 +32676,16 @@ EOF
 	q4::temp::play 13032,10355 12897,10439
 EOF
      },
-     { from  => 1626386400, # 2021-07-16 00:00
-       until => 1630360799, # 2021-08-30 23:59
+     { from  => 1626374087, # 1626386400, # 2021-07-16 00:00
+       until => 1626374091, # 1630360799, # 2021-08-30 23:59
        text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts möglicherweise auch für Radfahrer gesperrt, außerdem Einbahnstraßenregelung in der Bizetstr., vom 17. Juli 2021 bis 30. August 2021',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
        data  => <<EOF,
 #: XXX Wird es tatsächlich Einschränkungen für Radfahrer geben? Werden temporäre Ampeln aufgestellt? vvv
+#: XXX Sperrung wird mittlerweile nirgendwo erwähnt --- erstmal deaktiviert
 #: also_indoor: traffic
-#: next_check: 2021-07-16 vvv
+#: next_check: 2021-07-17 vvv
 	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994 13826,16026 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
 	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
 #: next_check ^^^
@@ -32942,11 +32943,12 @@ EOF
 EOF
      },
      { from  => 1626559200, # 2021-07-18 00:00
-       until => 1628287199, # 2021-08-06 23:59
+       until => $isodate2epoch->("2021-08-06 17:00:00"), # 1628287199, # 2021-08-06 23:59
        text  => 'Goerzallee: Bauarbeiten, Fahrbahn zwischen Ortlerweg und Lausanner Str. Richtung Norden gesperrt, vom 19.07. bis 06.08.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1099864.php',
        data  => <<EOF,
+#: source_id: viz2021:13.302821,52.425442,19.07.2021,07:00
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/in-der-goerzallee-wird-die-fahrbahn-vom-19-juli-bis-6-august-erneuert_a315012
 	q4::inwork; 3716,2063 3746,2108 3805,2196
 EOF
@@ -33151,10 +33153,11 @@ EOF
      },
      { from  => 1626300000, # 2021-07-15 00:00
        until => 1628287200, # 2021-08-07 00:00
-       text  => 'Gehrenseestr. im Bereich S-Bhf.: Bauarbeiten, evtl. für Radfahrer nicht passierbar, vom 16.07.2021 08:00 bis 06.08.2021 17:00 ',
+       text  => 'Gehrenseestr. im Bereich S-Bhf.: Bauarbeiten, evtl. für Radfahrer nicht passierbar, vom 16.07.2021 04:00 bis 06.08.2021 17:00',
        type  => 'gesperrt',
-       source_id => 'viz2021:13.526597,52.556118,16.07.2021,08:00',
+       source_id => 'viz2021:13.526597,52.556118,16.07.2021,08:00', # mittlerweile inaktiv wegen Startzeitänderung (und dadurch Id-Änderung)
        data  => <<EOF,
+#: source_id: viz2021:13.526597,52.556118,16.07.2021,04:00
 	2::inwork 18527,16789 18587,16834 18738,16957
 EOF
      },
@@ -33165,6 +33168,25 @@ EOF
        source_id => '217300297',
        data  => <<EOF,
 	q4::inwork 60206,86603 59776,86911 59791,87005 59779,87064 59776,87207 59766,87273
+EOF
+     },
+     { from  => 1626559200, # 2021-07-18 00:00
+       until => 1627336800, # 2021-07-27 00:00
+       text  => 'Landsberger Allee: Bauarbeiten an der Rampe zur Märkischen Allee Richtung Ahrensfelde, Fahrbahn gesperrt, vom 19.07.2021 07:00 bis 26.07.2021 17:00',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.539196,52.539312,19.07.2021,07:00',
+       data  => <<EOF,
+	2::inwork 19614,15061 19643,15025 19615,14960 19551,14961 19516,14993
+EOF
+     },
+     { from  => 1626559200, # 2021-07-18 00:00
+       until => 1629324000, # 2021-08-19 00:00
+       text  => 'Möckernstr.: Bauarbeiten Richtung Süden zwischen Tempelhofer Ufer und Yorckstr., Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 19.07.2021 07:00 bis 18.08.2021 17:00 ',
+       type  => 'handicap',
+       source_id => 'viz2021:13.380223,52.498741,19.07.2021,07:00',
+       data  => <<EOF,
+#: next_check_id: MOECKERN-2021
+	q4::inwork; 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
 EOF
      },
     );

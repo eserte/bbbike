@@ -423,18 +423,16 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
-#: last_checked: 2021-06-22 vvv
+#: last_checked: 2021-07-15 vvv
 #: check_frequency: 60d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
-# REMOVED (vorher) --- mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056
-#: XXX hier Bauarbeiten der Wasserbetriebe am Gehweg, laut Bauschild bis Mai 2021, laut rbbtext bis 12.7.2021
-#: last_checked: 2021-06-29 (mapillary)
-#: next_check: 2021-07-12
-provisorische schmale Radspur	RW3; 10256,11160 10501,11056
-mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10501,11056 10637,10996 10684,10975
-# REMOVED (vorher) --- mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056
-provisorische schmale Radspur	RW3; 10684,10975 10637,10996 10501,11056
+mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056
+# REMOVED (nicht mehr) --- #: XXX hier Bauarbeiten der Wasserbetriebe am Gehweg, laut Bauschild bis Mai 2021, laut rbbtext bis 12.7.2021 --- #: last_checked: 2021-06-29 (mapillary) --- #: next_check: 2021-07-12 --- provisorische schmale Radspur	RW3; 10256,11160 10501,11056
+mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10501,11056 10562,11029 10637,10996 10684,10975
+neu asphaltiert, relativ breit	RW1; 10684,10975 10637,10996 10562,11029
+mäßiger Verbundsteinpflasterradweg	RW1; 10562,11029 10501,11056
+# REMOVED --- provisorische schmale Radspur	RW3; 10684,10975 10637,10996 10562,11029 10501,11056
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
 # REMOVED --- #: XXX wegen Bauarbeiten (Erweiterung AUFBAU) ist der Radweg hier aufgehoben (danach den alten Eintrag wieder herstellen + join machen) --- #: last_checked: 2014-11-21 --- #: check_frequency: 60d
 eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10779,10934 10794,10927 10839,10907
@@ -2197,7 +2195,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: source_id: 2147346610
 #: source_id: viz2021:13.425912,52.514912,29.06.2021,07:00 (Sanierungsarbeiten bis 2.8.2021)
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-07-10 vvv
+#: last_checked: 2021-07-15 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-08-02 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
@@ -5385,7 +5383,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by ^^^
 # 
 #: next_check_id: MITTEL-2019
-#: last_checked: 2021-07-02
+#: last_checked: 2021-07-15 (daf)
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben
 	RW0; 9141,12320 9131,12438 9121,12514
 	RW4; 9131,12438 9141,12320
@@ -6570,7 +6568,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2021-06-13
+#: last_checked: 2021-07-15
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6886,15 +6884,15 @@ provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9158
 #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="20"
 #: osm_watch: way id="335487059" version="15"
-#: last_checked: 2021-06-23 vvv
+#: last_checked: 2021-07-15 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2021-07-30 vvv
+# REMOVED --- #: next_check: 2021-07-30 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4; 10605,10312 10363,10303 10122,10294
 provisorisch geschützter Radstreifen	RW4; 10122,10294 10363,10303 10605,10312
 provisorisch geschützter Radstreifen	RW4; 10122,10294 9948,10280 9873,10285
 provisorisch geschützter Radstreifen	RW4; 9865,10227 9948,10280 10122,10294
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -6944,7 +6942,7 @@ Radspur hinter parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720 11710,9628
 #: by: https://twitter.com/VIZ_Berlin/status/1406948078658232321 (Bauarbeiten ab Anfang Juli 2021)
 #: source_id: 2147346996 (bis 21.5.2021)
 #: osm_watch: way id="34057952" version="36"
-#: last_checked: 2021-06-23 vvv
+#: last_checked: 2021-07-15 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-06-23 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8810,10305 9146,10284 9368,10211 9416,10196

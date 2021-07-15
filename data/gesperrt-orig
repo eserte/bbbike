@@ -3322,7 +3322,7 @@ Gotlindestr.: Einbahnstraßenregelung	1s:q4:inwork 16720,12614 16859,12613
 Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 15320,12375 15408,12394
 # 
 #: next_check_id: NKZ-2020
-#: last_checked: 2021-05-21
+#: last_checked: 2021-07-15
 #: check_frequency: 60d
 (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
@@ -3397,7 +3397,7 @@ Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708
 #: source_id: IM_020714
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-07-02
+#: last_checked: 2021-07-15 (daf)
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
@@ -3899,7 +3899,7 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/zweite-bauphase-abgeschlossen_a181544 (Wiedereröffnung für 2020 geplant)
 #: by: https://www.tagesspiegel.de/berlin/spaeter-als-geplant-neue-nationalgalerie-in-berlin-wird-erst-mitte-august-2021-eroeffnet/26645770.html (Eröffnung Mitte August 2021)
 #: last_checked: 2021-06-16 (daf)
-#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 30d
 #: next_check: 2021-08-15
 Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,11133
 # 
