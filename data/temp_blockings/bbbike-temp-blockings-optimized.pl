@@ -1200,7 +1200,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: XXX anschauen!
 #: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
 #: note: laut rbb nur bis 1.8.2021
-#: last_checked: 2021-07-12
+#: last_checked: 2021-07-16
 #: check_frequency: 7d
 # REMOVED (hier nicht)	q4::inwork; 13651,11731 13895,11663
 	q4::inwork; 13895,11663 13954,11647
@@ -3034,7 +3034,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-14
+#: last_checked: 2021-07-16
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -3830,21 +3830,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.517342,52.454467,25.05.2021,10:00
-#: by: https://www.bahninfo-forum.de/read.php?9,702729,704984#msg-704984 (nun bis zum Bahnübergang)
-#: by: https://twitter.com/VIZ_Berlin/status/1409387334097727491
-# REMOVED (hier mittlerweile offen) ---	q3::inwork 18080,5376 18245,5551
-# REMOVED (hier nicht mehr) ---	q3::inwork 18245,5551 18370,5511 18680,5413 18955,5320
-	q3::inwork 18955,5320 19037,5316 19186,5310 19328,5304 19405,5284
-',
-         'from' => 1621843200,
-         'id' => 3383,
-         'source_id' => '2147347210',
-         'text' => 'Schnellerstr.: Bauarbeiten, Fahrbahn teilweise gesperrt, Radfahrer müssen den Bürgersteig benutzen, vom 25.05.2021 10:00 Uhr bis 16.07.2021 17:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1626447600
-       },
+       undef,
        {
          'data' => '#: next_check_id: SEYDLITZ-2021
 #: by: https://www.degewo.de/wachstum/neubau/steglitz-zehlendorf/dessauer-strasse-37-39/ (Fertigstellung 2022)
@@ -4038,7 +4024,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: FRANKFURTER-2021
-#: last_checked: 2021-07-14 vvv
+#: last_checked: 2021-07-16 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-09-13 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -4108,20 +4094,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1634248800
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/2021/07/oranienburger-chaussee-b96/
-#: source_id: viz2021:13.287552,52.659932,09.07.2021,15:00
-#: source_id: viz2021:13.287552,52.659932,16.07.2021,18:00
-# REMOVED --- #: note: nächster Termin: 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr --- #: next_check: 2021-07-12
-	2::inwork 2150,28127 2178,28067 2345,27670
-',
-         'from' => 1626300000,
-         'id' => 3410,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1104559.php',
-         'text' => 'B96: zwischen Staehleweg und Hohen Neuendorf wegen Bauarbeiten gesperrt, vom 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1626663600
-       },
+       undef,
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
@@ -4185,7 +4158,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1667257200
        },
        {
-         'data' => '	2::inwork 19614,15061 19643,15025 19615,14960 19551,14961 19516,14993
+         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1106813.php
+	2::inwork 19614,15061 19643,15025 19615,14960 19551,14961 19516,14993
 ',
          'from' => 1626559200,
          'id' => 3417,

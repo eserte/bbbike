@@ -19293,7 +19293,7 @@ EOF
 #: XXX anschauen!
 #: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
 #: note: laut rbb nur bis 1.8.2021
-#: last_checked: 2021-07-12
+#: last_checked: 2021-07-16
 #: check_frequency: 7d
 # REMOVED (hier nicht)	q4::inwork; 13651,11731 13895,11663
 	q4::inwork; 13895,11663 13954,11647
@@ -30972,7 +30972,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-14
+#: last_checked: 2021-07-16
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33020,7 +33020,7 @@ EOF
        source_id => 'viz2021:13.471852,52.513916,22.06.2021,07:00',
        data  => <<EOF,
 #: next_check_id: FRANKFURTER-2021
-#: last_checked: 2021-07-14 vvv
+#: last_checked: 2021-07-16 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-09-13 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -33088,13 +33088,14 @@ EOF
 	2::inwork 27833,-16133 27599,-16162
 EOF
      },
-     { from  => $isodate2epoch->("2021-07-15 00:00:00"), # 1625749200, # 2021-07-08 15:00
-       until => $isodate2epoch->("2021-07-19 05:00:00"), # 1626058800, # 2021-07-12 05:00
+     { from  => 1626462247, # $isodate2epoch->("2021-07-15 00:00:00"), # 1625749200, # 2021-07-08 15:00
+       until => 1626462247, # $isodate2epoch->("2021-07-19 05:00:00"), # 1626058800, # 2021-07-12 05:00
        text  => 'B96: zwischen Staehleweg und Hohen Neuendorf wegen Bauarbeiten gesperrt, vom 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1104559.php',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2021/07/oranienburger-chaussee-b96/
+#: by: https://twitter.com/VIZ_Berlin/status/1416050417591537667 (zweite Sperrung wurde verschoben)
 #: source_id: viz2021:13.287552,52.659932,09.07.2021,15:00
 #: source_id: viz2021:13.287552,52.659932,16.07.2021,18:00
 # REMOVED --- #: note: nächster Termin: 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr --- #: next_check: 2021-07-12
@@ -33176,6 +33177,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'viz2021:13.539196,52.539312,19.07.2021,07:00',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1106813.php
 	2::inwork 19614,15061 19643,15025 19615,14960 19551,14961 19516,14993
 EOF
      },

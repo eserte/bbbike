@@ -128,11 +128,12 @@ Roelckestr./Lehderstr.: tempor‰re Ampel	X::inwork 12842,16032
 # 
 #: next_check_id: BAHNHOF-2021
 #: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/
-#: XXX bis wann wird es die Gegenverkehrsregelung geben?
+#: add_fragezeichen: Gibt es noch immer eine Gegenverkehrsregelung?
 #: source_id: 2147347174 (bis 19.7.2021)
-#: last_checked: 2021-05-30 (mapillary) vvv
+#: source_id: viz2021:13.440334,52.59161,06.05.2021,09:00 (bis 30.9.2021, Gesamtmaﬂnahme bis Anfang 2022)
+#: last_checked: 2021-07-02 (mapillary) vvv
 #: check_frequency: 60d vvv
-#: next_check: 2021-07-19 vvv
+#: next_check: 2021-07-16 vvv
 #: valid: 20210222- vvv
 Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12672,20720
 Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12723,20691
@@ -2947,9 +2948,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2021-05-22
+#: last_checked: 2021-05-30 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2021-07-17
+#: next_check: 2021-11-15
 	X::inwork 8732,14098
 # 
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) --- X::inwork 8870,13926
@@ -3259,7 +3260,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: CHAUSSEE-2020
 #: last_checked: 2021-05-22
 #: check_frequency: 90d
-#: next_check: 2021-07-17
+#: next_check: 2021-11-15
 	X::inwork 8336,14586
 # 
 #: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019)
