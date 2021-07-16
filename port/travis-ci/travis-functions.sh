@@ -157,7 +157,15 @@ install_perl_testonly_dependencies() {
     then
 	sudo apt-get install -y $apt_quiet --no-install-recommends libemail-mime-perl libhtml-treebuilder-xpath-perl libbarcode-zbar-perl libwww-mechanize-formfiller-perl
     else
-	cpanm --quiet --notest Email::MIME HTML::TreeBuilder::XPath Barcode::ZBar
+	if [ "$CODENAME" = "buster" -o "$CODENAME" = "focal" -o "$CODENAME" = "bullseye" ]
+	then
+	    # Does not compile on newer Linux distributions,
+	    # see https://rt.cpan.org/Ticket/Display.html?id=128085
+	    barcode_zbar_module=
+	else
+	    barcode_zbar_module=Barcode::ZBar
+	fi
+	cpanm --quiet --notest Email::MIME HTML::TreeBuilder::XPath $barcode_zbar_module
     fi
 }
 
