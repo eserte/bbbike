@@ -36,7 +36,7 @@ arch:
   - arm64
 matrix:
   include:
-## XXX system perl does not work yet --- missing packages in mydebs
+## XXX system perl does not work yet --- missing arm64 packages in mydebs
 #    - dist: xenial
 #      perl: 5.22
 #      env: USE_MODPERL=1 USE_SYSTEM_PERL=1
