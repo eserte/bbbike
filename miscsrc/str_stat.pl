@@ -1,25 +1,25 @@
-#!/usr/local/bin/perl -w
+#!/usr/bin/env perl
 # -*- perl -*-
 
 #
-# $Id: str_stat.pl,v 1.12 2007/09/05 20:23:44 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2004,2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2004,2006,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
-# Mail: slaven@rezic.de
-# WWW:  http://bbbike.de
+# WWW:  https://github.com/eserte/bbbike
 #
 
+use strict;
+use warnings;
 use FindBin;
 use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+
 use Strassen::Core;
 use Strassen::MultiStrassen;
 use Strassen::Stat;
 use Getopt::Long;
-use strict;
 
 my %seen;
 my %str;
@@ -29,14 +29,17 @@ my $do_wasserstrassen = 0;
 my $do_area;
 my $splitlines;
 my $as_bbd;
+my $encoding;
 if (!GetOptions("area!" => \$do_area,
 		"splitlines" => \$splitlines,
 		"asbbd!" => \$as_bbd,
+		"encoding=s" => \$encoding,
 	       )) {
-    die "usage: $0 [-area] [-splitlines] [-asbbd] file ...
+    die "usage: $0 [-area] [-splitlines] [-asbbd] [-encoding ...] file ...
 -area: calculate areas instead of lines
 -splitlines: split lines like in railways and undergrounds
 -asbbd: create bbd file
+-encoding encoding: if not specified, then use terminal's encoding, or fallback to utf-8
 ";
 }
 
@@ -57,7 +60,7 @@ my $str_total_total_len = 0;
 	$s = MultiStrassen->new(@strfile);
     } else {
 	$s = Strassen->new(@strfile);
-	if ($s->get_global_directives->{map}->[0] eq 'polar') {
+	if (($s->get_global_directives->{map}->[0]||'') eq 'polar') {
 	    warn qq{NOTE: Turning on "polar" hack...\n};
 	    *Strassen::Util::strecke_s = \&Strassen::Util::strecke_s_polar;
 	    *Strassen::Util::strecke   = \&Strassen::Util::strecke_polar;
@@ -89,6 +92,19 @@ my $str_total_total_len = 0;
     }
 }
 
+if (!$encoding) {
+    eval {
+	require I18N::Langinfo;
+	I18N::Langinfo->import(qw(langinfo CODESET));
+	$encoding = langinfo(CODESET());
+    };
+    if ($@) {
+	warn "langinfo and/or CODESET probably not available, assuming utf-8.\n";
+	$encoding = 'utf-8';
+    }
+    $encoding = lc $encoding; # 'UTF-8' is not recognized by emacs, but 'utf-8' is
+}
+binmode STDOUT, ":encoding($encoding)";
 
 if (%seen) {
     print "Seen:\n";
