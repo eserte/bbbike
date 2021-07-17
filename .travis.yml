@@ -46,10 +46,9 @@ matrix:
     - dist: bionic
       perl: 5.26
       env: BBBIKE_TEST_SKIP_MODPERL=1
-## XXX does not work yet --- Geo::Proj4 does not build
-#    - dist: focal
-#      perl: 5.32
-#      env: BBBIKE_TEST_SKIP_MODPERL=1
+    - dist: focal
+      perl: 5.32
+      env: BBBIKE_TEST_SKIP_MODPERL=1
 
 ### Fastest results (8 min)
 #    - perl: "5.18"
