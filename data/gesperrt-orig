@@ -563,8 +563,8 @@ Neumarkplan	1 12485,3933 12572,3764 12578,3728 12560,3697 12530,3669 12485,3658 
 Mudrastr.	1 7370,2400 7324,2559 7289,2699 7308,2734 7384,2763 7489,2787
 #: by: Ansgar Petters:
 Heiligental	1 5803,19874 5858,19761 5897,19668 5929,19574
-Autobahnausfahrt	1 4741,5309 4821,5345
-Kuhligkshofstr.	1 4821,5345 4856,5375
+Autobahnausfahrt	1 4741,5309 4813,5350
+Kuhligkshofstr.	1 4813,5350 4851,5377
 Bänschstr.	1 14591,12555 14319,12629
 Bänschstr.	1 14325,12648 14596,12573
 Bänschstr.	1 15005,12443 14798,12502 14681,12534 14661,12523 14588,12542
@@ -1344,7 +1344,7 @@ Bernhard-Bästlein-Str. [Wohngebiet]	1 15700,13597 15698,13765
 Herzbergstr. [Wohngebiet]	1 15896,13594 15833,13596 15700,13597
 Am Gartenstadtweg	1 21592,547 21613,667
 Hermann-Dorner-Allee: Bordstein, Grünstreifen	3nocross 18374,2971 18347,3129 18395,3176
-(Kuhligkshofstr. - Schloßstr.)	1 4767,5389 4779,5358 4821,5345
+(Kuhligkshofstr. - Schloßstr.)	1 4767,5389 4779,5358 4813,5350
 Berlepschstr., Wendeschleife	1 -1486,1481 -1436,1499
 Berlepschstr., Wendeschleife	1 -1436,1499 -1467,1466 -1486,1481
 Bürgerstr.: Mittelstreifen	2 13289,6355 13307,6359
@@ -3617,7 +3617,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="2"
 #: osm_watch: node id="6778873745" version="1"
-#: last_checked: 2021-07-05
+#: last_checked: 2021-07-18
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3685,12 +3685,11 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/edge-eastside-tower-140m.18/page-13#post-14549
 #: XXX wann sind die Bauarbeiten beendet?
-#: XXX laut rbb mittlerweile komplett gesperrt, bis 30.6.2023
+#: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realität weiterhin Einbahnstraße
 #: osm_watch: way id="5096644" version="16"
 #: priority: #C
-#: last_checked: 2021-07-05
+#: last_checked: 2021-07-18
 #: check_frequency: 90d
-#: next_check: 2021-07-17
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
 #: next_check_id: TACHELES-2020

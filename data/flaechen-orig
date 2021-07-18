@@ -358,7 +358,7 @@ Friedhof St. Marien und St. Nikolai/St. Georgen	F:Cemetery 11783,13748 11676,138
 Friedhöfe vor dem Halleschen Tor	F:Cemetery 9444,9919 9387,9804 9588,9827 9723,9842 9837,9856 9827,10051 9521,10010
 #: alias: Friedhöfe an der Bergmannstraße
 Dreifaltigkeits-Kirchhof/Friedr.-Werder-Kirchhof/Kirchhof Jerusalem und Neue Kirche/Kirchhof der Luisenstädtischen Gemeinde	F:Cemetery 10036,9233 10036,8960 10266,8946 10268,8810 10463,8814 10481,8814 10631,8911 10620,9233 10547,9233 10123,9233
-Standortfriedhof Lilienthalstr.	F:Cemetery 10713,9178 10748,9054 10675,8940 10640,8832 10638,8796 10763,8797 10928,8838 10995,8878 11065,8956 11049,9118
+Standortfriedhof Lilienthalstr.	F:Cemetery 10713,9178 10748,9054 10675,8940 10661,8914 10640,8832 10638,8796 10763,8797 10928,8838 10995,8878 11065,8956 11049,9118
 Islamischer Friedhof	F:Cemetery|religion:muslim 11030,8416 10911,8457 10859,8476 10796,8498 10691,8532 10644,8363 10803,8251 10962,8104
 Garnisonfriedhof	F:Cemetery 10962,8104 10995,8071 11133,8156 11114,8388 11030,8416
 Jerusalem und Neue Kirche	F:Cemetery 11719,7290 12185,7381 12221,7271 11741,7187 11719,7290
@@ -1018,7 +1018,7 @@ Friedrich-Ebert-Sportanlage	F:Sport 8267,6341 8266,6603 8504,6605 8504,6341
 # 
 #: by: https://www.berliner-woche.de/tempelhof/c-bauen/den-paechtern-der-kolonie-eschenallee-wird-zum-jahresende-2020-gekuendigt_a220060
 #: osm_watch: way id="48990542" version="5"
-#: last_checked: 2021-02-20
+#: last_checked: 2021-07-18
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2020-12-31
 KGA Eschenallee	F:Orchard 8264,5383 8172,5332 8209,5216 8321,5237 8264,5383
@@ -1255,8 +1255,10 @@ Berkaer Platz	F:P 2587,7823 2627,7821 2608,7798 2587,7823
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7698 (früher "Paulinenplatz", in Zukunft wieder?)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Benennung von Straßenland)
 #: add_fragezeichen Hängen hier Straßenschilder für den neuen "Paulinenplatz"?
-#: next_check: 2021-07-04
+#: last_checked: 2021-07-18
+#: check_frequency: 60d
 	F:P 3328,3313 3327,3261 3348,3278 3328,3313
+Karlplatz	F:P 3186,3515 3185,3476 3184,3427 3228,3455 3186,3515
 	F:P 25166,13228 25138,13183 25181,13157 25208,13206 25166,13228
 	F:P 1338,25262 1339,25251 1364,25256 1360,25269 1338,25262
 Waldowpark	F:P 19282,6152 19283,6123 19290,6114 19325,6105 19344,6119 19345,6150 19333,6165 19303,6170 19282,6152

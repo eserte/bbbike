@@ -356,8 +356,8 @@ Max-Eyth-Str.	1 2513,6581 2544,6546 2611,6495
 Neumarkplan	1 12485,3933 12572,3764 12578,3728 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12485,3933
 Mudrastr.	1 7370,2400 7324,2559 7289,2699 7308,2734 7384,2763 7489,2787
 Heiligental	1 5803,19874 5858,19761 5897,19668 5929,19574
-Autobahnausfahrt	1 4741,5309 4821,5345
-Kuhligkshofstr.	1 4821,5345 4856,5375
+Autobahnausfahrt	1 4741,5309 4813,5350
+Kuhligkshofstr.	1 4813,5350 4851,5377
 Bänschstr.	1 14591,12555 14319,12629
 Bänschstr.	1 14325,12648 14596,12573
 Bänschstr.	1 15005,12443 14798,12502 14681,12534 14661,12523 14588,12542
@@ -878,7 +878,7 @@ Am Gartenstadtweg	1 21592,547 21613,667
 Bordstein, Grünstreifen	3nocross::ignrte 18374,2971 18347,3129 18395,3176
 Hermann-Dorner-Allee -> Weg im Landschaftspark Johannisthal: Bordstein, Grünstreifen	3::igndisp 18374,2971 18347,3129 18326,3141
 Weg im Landschaftspark Johannisthal -> Hermann-Dorner-Allee: Bordstein, Grünstreifen	3::igndisp 18326,3141 18347,3129 18395,3176
-(Kuhligkshofstr. - Schloßstr.)	1 4767,5389 4779,5358 4821,5345
+(Kuhligkshofstr. - Schloßstr.)	1 4767,5389 4779,5358 4813,5350
 Berlepschstr., Wendeschleife	1 -1486,1481 -1436,1499
 Berlepschstr., Wendeschleife	1 -1436,1499 -1467,1466 -1486,1481
 Bürgerstr.: Mittelstreifen	2 13289,6355 13307,6359
@@ -1717,7 +1717,7 @@ Knesebeckstr. -> Goßlerstr.: Straßentunnelrampe	3::igndisp 3033,4113 2944,4241 2
 Goßlerstr. -> Unter den Eichen: Straßentunnelrampe	3::igndisp 2858,4372 2944,4241 3048,4305
 Goßlerstr. -> Knesebeckstr.: Straßentunnelrampe	3::igndisp 2858,4372 2944,4241 3033,4113
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
-Am Teltowkanal, südl. Ufer -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9171,5263 9196,5272 9188,5333
+Gerda-und-Wolfgang-Szepansky-Promenade -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9171,5263 9196,5272 9188,5333
 Mariendorfer Damm -> Wulfila-Ufer: unbequem passierbarer Mittelstreifen	3::igndisp 9196,5272 9188,5333 9145,5323
 Wulfila-Ufer -> Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9145,5323 9188,5333 9176,5413
 Tempelhofer Damm -> Viktoriastr.: unbequem passierbarer Mittelstreifen	3::igndisp 9188,5333 9176,5413 8947,5434

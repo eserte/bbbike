@@ -39,7 +39,7 @@ geschützter Radstreifen, Grünmarkierung	RW3; 9226,8967 9225,9038 9224,9053
 neu asphaltiert	RW1; 9224,9053 9225,9111 9232,9187 9248,9350
 #: by: https://www.infravelo.de/projekt/mehringdamm/ (26.06.2021 bis 27.07.2021) (mittlerweile: Verzögerung um einige Wochen wegen Baumpflegearbeiten)
 #: XXX Grünmarkierung geplant
-#: last_checked: 2021-06-13
+#: last_checked: 2021-07-18
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-07-27
 	RW3; 9248,9350 9232,9187 9225,9111 9224,9053 9225,9038 9226,8967 9227,8890
@@ -140,7 +140,7 @@ neu asphaltiert, relativ breit	RW1; 8593,5491 8480,5350
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
 #: by: http://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ausbau wird 2021 abgeschlossen)
-#: last_checked: 2021-04-10 vvv
+#: last_checked: 2021-07-18 vvv
 #: check_frequency: 90d vvv
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8480,5350 8406,5258 8356,5195
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_21.01.2021_final.pdf (Gehwegparken wurde abgeordnet) (bestätigt)
@@ -155,6 +155,7 @@ alte Gehwegplatten, Bord gegen Gehweg, Autos parken auf dem Unterstreifen	RW1; 8
 	RW2;RW2 9242,7145 9242,7044 9242,6962
 	RW1;RW1 9242,6962 9245,6791 9247,6687
 	RW4;RW4 9247,6687 9249,6642
+	RW3; 7735,9121 7790,9126
 	RW1;RW1 7735,9121 7647,9196 7604,9242 7509,9337
 	RW1;RW1 7938,9694 7829,9723 7725,9748 7631,9770 7625,9771
 	RW2;RW1 7625,9771 7518,9791
@@ -1041,7 +1042,7 @@ asphaltiert, die letzten Meter als Radspur geführt	RW2; 7171,5831 7194,5763 7216
 #: XXX hier werden wohl auch Leitboys entstehen
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
-#: last_checked: 2021-04-10
+#: last_checked: 2021-07-18
 #: check_frequency: 45d
 	RW3; 7236,5685 7497,5610
 	RW1; 8593,5491 8365,5502 8200,5510
@@ -2783,8 +2784,7 @@ Radweg nur aufgemalt	RW1; 3953,3022 4011,2942
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 4011,2942 4170,2727
 # REMOVED --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7087 --- #: XXX wurde hier der Radweg (teilweise?) asphaltiert? Wenn ja, wo genau? --- #: last_checked: 2020-04-16 --- #: check_frequency: 90d
 	RW1; 4011,2942 3863,2835 3824,2819 3738,2821
-abschnittsweise asphaltiert	RW1; 3738,2821 3641,2827 3456,2835
-	RW1; 3456,2835 3313,2842 3171,2848
+abschnittsweise asphaltiert	RW1; 3738,2821 3641,2827 3456,2835 3313,2842 3171,2848
 	RW1; 3171,2848 3313,2842 3456,2835 3641,2827 3738,2821 3824,2819 3863,2835 4011,2942
 # REMOVED (auf http://www.panoramio.com/photo/19638055 nicht zu erkennen) ---	RW;RW 3507,3654 3626,3465 3733,3317 3743,3303 3861,3134 3953,3022
 Verbundsteinpflaster	RW1;RW1 1022,3095 1112,2880
@@ -5770,7 +5770,7 @@ enge Verbundsteinpflasterradwege, kaum Abstand zu parkenden Autos	RW1;RW1 10150,
 	RW6;RW6 9934,2307 10043,2351 10087,2365 10145,2622
 	RW6;RW6 1390,18256 1301,18297 1278,18307
 	RW1; 790,2434 809,2309 824,2210
-für Radfahrer freigegebene Busspur gilt Mo-Fr 7-12 Uhr	RW1; 824,2210 809,2309 790,2434
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 824,2210 809,2309 790,2434
 	RW1;RW1 824,2210 846,2130 980,1893 1025,1813 1080,1637
 	RW1;RW1 1080,1637 1142,1350 1181,1169 1207,1051 1248,871 1267,789 1286,704 1304,537 1322,352 1345,184
 	RW6;RW6 882,396 910,278
@@ -6904,7 +6904,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
 #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
-#: last_checked: 2021-07-10 vvv
+#: last_checked: 2021-07-18 vvv
 # REMOVED --- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-06-30 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -7024,8 +7024,8 @@ Tempo 10	RW6;RW6 11039,21632 10761,21535 10126,21314
 	RW6;RW6 10489,11405 10623,11246 10683,11175
 	RW6;RW6 10690,11180 10736,11212 10818,11269
 #: note ^^^
-	RW4; 4821,5345 4779,5358 4767,5389
-Verbundsteinpflaster	RW1; 4821,5345 4741,5309
+	RW4; 4813,5350 4779,5358 4767,5389
+Verbundsteinpflaster	RW1; 4813,5350 4741,5309
 	RW6;RW6 2394,1429 2453,1455 2501,1348 2440,1325 2394,1429
 Busspur ist immer gültig	RW5; 9391,3651 9462,3642
 # 
@@ -7062,7 +7062,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1083057.php (Lieferzonen während der Sanierungsarbeiten)
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/im-herbst-beginnt-der-verkehrsversuch-rund-um-den-tempelhofer-damm_a312336
 #: source_id: 2147347065 (bis 17.10.2021)
-#: last_checked: 2021-05-30 vvv
+#: last_checked: 2021-07-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-07 vvv
 #: valid: -20211007 vvv

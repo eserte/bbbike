@@ -123,7 +123,7 @@ Fidicinstr.	N 9224,9053 9295,9047 9459,9019 9654,8991 9799,8962
 Chamissoplatz	N 9526,9104 9546,9198
 Chamissoplatz	N 9596,9092 9617,9185
 Züllichauer Str.	N 10268,8810 10291,8810 10481,8814 10675,8940
-Lilienthalstr.	N 10615,8558 10633,8705 10640,8832 10675,8940 10748,9054 10709,9192 10705,9234 10713,9260
+Lilienthalstr.	N 10615,8558 10633,8705 10640,8832 10661,8914 10675,8940 10748,9054 10709,9192 10705,9234 10713,9260
 #: note: ehemaliger Flughafen Tempelhof vvv
 # REMOVED (wird wahrscheinlich nicht realisiert) --- #: XXX der westliche Eingang wird gesperrt ("Herbst dieses Jahres"), alternativ wird es einen Eingang ggü der Lilienthalstr. geben --- wie wird die genaue Wegführung aussehen? --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4187 --- #: by: http://mobil.morgenpost.de/bezirke/neukoelln/article121808816/Mehr-Platz-fuer-muslimische-Graeber-am-Tempelhofer-Feld.html (Bauarbeiten Anfang 2014) --- #: last_checked: 2014-07-23 --- #: check_frequency: 180d
 (Eingang Columbiadamm/Lilienthalstr. - Rundkurs auf dem Flughafen Tempelhof)	NN 10691,8532 10644,8363
@@ -1800,7 +1800,7 @@ Marienhöher Weg	N 8356,5195 8203,5203 8115,5086 8052,5009 7986,4984 7913,4996 78
 (zum Marienhöher Weg)	N 7807,4975 7873,5024
 (Attilastr. - Marienhöher Weg)	NN 8014,4832 8002,4903 7986,4984
 (Marienhöhe)	NN 8070,5325 8075,5307 8116,5276 8115,5245 8052,5154 8115,5086
-Gerdsmeyerweg	N 8165,5444 8161,5399 8130,5353 8070,5325 8036,5309
+Gerdsmeyerweg	N 8165,5447 8161,5399 8130,5353 8070,5325 8036,5309
 (Gerdsmeyerweg - Marienhöher Weg)	NN 8036,5309 7944,5237
 Attilastr.	H 8724,5570 8687,5554 8593,5491 8480,5350 8406,5258 8356,5195 8348,5184 8219,5010 8130,4932 8014,4832 7896,4732 7825,4672 7690,4563 7667,4549 7628,4521 7597,4499 7482,4416 7450,4397 7410,4373 7368,4342 7310,4308 7263,4281 7221,4255 7171,4200 7161,4110 7162,4058
 Attilagarten	N 8491,5150 8435,5239
@@ -13841,9 +13841,9 @@ Düppelstr. (Steglitz)	N 4991,5531 5054,5620 5114,5705 5141,5744 5197,5822 5254,5
 Dünther Str.	N 5268,5920 5234,6086
 Deitmerstr.	N 5197,5822 5078,5889
 Deitmerstr.	NN 5078,5889 5048,5904
-Kuhligkshofstr.	N 4991,5531 4911,5428 4856,5375 4821,5345
-(Kuhligkshofstr. - Schloßstr.)	N 4821,5345 4779,5358 4767,5389
-(Autobahnausfahrt)	HH 4821,5345 4741,5309
+Kuhligkshofstr.	N 4991,5531 4905,5438 4851,5377 4813,5350
+(Kuhligkshofstr. - Schloßstr.)	N 4813,5350 4779,5358 4767,5389
+(Autobahnausfahrt)	HH 4813,5350 4741,5309
 Alsenstr. (Steglitz)	N 5560,6344 5558,6319 5416,6119
 Florastr. (Steglitz)	N 5416,6119 5351,6109 5315,6103 5275,6096 5234,6086
 (Florastr. - Schloßstr.)	NN 5234,6086 5165,6119
@@ -14025,11 +14025,8 @@ Wulfila-Ufer	NN 8750,5173 9118,5328 9145,5323 9188,5333
 (Ullsteinstr. - Am Teltowkanal)	NN 8637,4980 8598,4985
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7345 (Benennung wird bald veröffentlicht)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_12_0821_0896_online.pdf (Benennung)
-#: add_fragezeichen: Hat der Weg bereits den Namen "Gerda-und-Wolfgang-Szepansky-Promenade" bekommen? Stehen schon entsprechende Schilder?
-#: osm_watch: way id="28048692" version="16"
-#: last_checked: 2021-05-30
-# REMOVED --- #: next_check: 2021-03-26
-(Am Teltowkanal, südl. Ufer)	NN 9196,5272 9171,5263 9080,5225 8881,5143 8784,5095
+# REMOVED (ja) --- #: add_fragezeichen: Hat der Weg bereits den Namen "Gerda-und-Wolfgang-Szepansky-Promenade" bekommen? Stehen schon entsprechende Schilder? --- #: osm_watch: way id="28048692" version="16" --- #: last_checked: 2021-05-30 --- #: next_check: 2021-03-26
+Gerda-und-Wolfgang-Szepansky-Promenade	NN 9196,5272 9171,5263 9080,5225 8881,5143 8784,5095
 (Am Teltowkanal, südl. Ufer)	NN 8784,5095 8618,5019 8598,4985 8575,4980 8234,4660 7994,4430
 (Am Teltowkanal, nördl. Ufer)	NN 7911,4465 7769,4315 7673,4223
 #: oldname: -20160914: <namenslos> vvv
@@ -14041,7 +14038,7 @@ Mariendorfer-Hafen-Steg	NN 7795,4242 7769,4315
 Geiserichstr.	N 8130,4932 8198,4861 8255,4791
 Wolframstr.	N 8198,4861 8288,4955 8433,5108 8491,5150 8575,5202 8707,5289 8947,5434
 Werderstr. (Tempelhof)	N 8947,5434 8968,5554 8981,5692 8996,5823 8990,5950
-Paul-Schmidt-Str.	N 8038,5514 8065,5448 8165,5444 8242,5427 8264,5383 8327,5222 8356,5195
+Paul-Schmidt-Str.	N 8038,5514 8059,5457 8165,5447 8212,5445 8242,5427 8264,5383 8327,5222 8356,5195
 (Alboinstr. - Paul-Schmidt-Str.)	NN 8200,5510 8242,5427
 Chlodwigstr.	N 8356,5195 8433,5108 8499,5016
 Reutlinger Str.	N 7597,4499 7673,4223
@@ -17200,7 +17197,7 @@ Am Anger (Dahlem)	N 2313,5111 2458,5212
 Bachstelzenweg (Dahlem)	N 2314,5745 2284,5634 2223,5549 2137,5488 2061,5473 1933,5477
 Kuckucksweg	N 2284,5634 2415,5593 2483,5575 2556,5575
 Musäusstr.	N 2415,5593 2369,5506 2321,5461 2298,5426
-Kehler Weg	N 2025,4935 2027,4792
+Kehler Weg	N 2025,4935 2012,4861 2027,4792
 Bitscher Str.	N 1969,4978 1939,4949 1884,4811
 (Parkweg Thielpark)	NN 2232,5118 2208,5060 2214,4992 2280,4941
 (Parkweg Thielpark)	NN 2174,5081 2165,4954 2212,4891

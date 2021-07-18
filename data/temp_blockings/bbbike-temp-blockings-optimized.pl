@@ -2808,7 +2808,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: also_indoor: traffic (G)
 #: osm_watch: way id="749226300" version="4"
-#: last_checked: 2021-01-22 (osm)
+#: last_checked: 2021-07-18
 #: check_frequency: 180d
 #: next_check: 2021-10-31
 	2::inwork 3079,5411 3209,5214
@@ -3034,7 +3034,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-16
+#: last_checked: 2021-07-18
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -3631,7 +3631,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: add_fragezeichen: Wie lange gehen die Bauarbeiten?
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2021-04-28
+#: last_checked: 2021-07-18
 	q4::inwork 2523,5114 2746,5537
 ',
          'from' => undef,
@@ -4179,6 +4179,37 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Möckernstr.: Bauarbeiten Richtung Süden zwischen Tempelhofer Ufer und Yorckstr., Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 19.07.2021 07:00 bis 18.08.2021 17:00 ',
          'type' => 'handicap',
          'until' => 1629324000
+       },
+       {
+         'data' => '	q4::inwork; 3026,3058 3023,2958 3019,2858
+	q4::inwork; 3171,2848 3174,3052
+	q4::inwork 3186,3515 3228,3455
+',
+         'from' => 1626614232,
+         'id' => 3419,
+         'text' => 'Baseler Str., Kommandantenstr.: Einbahnstraßenregelungen, außerdem Fahrbahn des Kadettenwegs am Karlplatz gesperrt, möglicherweise bis September 2021',
+         'type' => 'handicap',
+         'until' => 1633039200
+       },
+       {
+         'data' => '	q4::inwork; 749,2616 709,2592 629,2545
+',
+         'from' => 1626614528,
+         'id' => 3420,
+         'source_id' => 'viz2021:13.259269,52.43091,28.06.2021,07:00',
+         'text' => 'Machnower Str.: für Radfahrer Richtung Westen gesperrt, voraussichtlich bis 06.08.2021 17:00',
+         'type' => 'handicap',
+         'until' => 1628287200
+       },
+       {
+         'data' => '	q4::temp:clock 9880,9233 9892,9286
+',
+         'from' => undef,
+         'id' => 3421,
+         'source_id' => 'https://www.berlin.de/special/shopping/flohmaerkte/2222392-1724959-flohmarkt-am-marheinekeplatz-in-der-berg.html',
+         'text' => 'Marheinekeplatz (Richtung Mittenwalder Str.): Trödelmarkt samstags 10 bis 16 Uhr, sonntag 11 bis 17 Uhr (Sommerhalbjahr) bzw. 16 Uhr (Winterhalbjahr)',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

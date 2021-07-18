@@ -153,7 +153,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
 #: osm_watch: way id="102486250" version="14"
-#: last_checked: 2021-04-10
+#: last_checked: 2021-07-18
 #: check_frequency: 120d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
@@ -290,8 +290,8 @@ Helmstr.: gutes Kopfsteinpflaster	Q1 7524,9093 7490,9116 7444,9148 7382,9187
 Belziger Str.: Asphalt	Q0 7308,9163 7101,9027
 Suadicanistr.: Asphalt	Q0 7858,7462 7858,7506
 Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
-#: note: an der Lilienthalstr. etwa 20m gepflastert
-Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10633,8705
+Lilienthalstr.: Kopfsteinpflaster	Q2 10675,8940 10661,8914
+Lilienthalstr.: Asphalt	Q0 10661,8914 10640,8832 10633,8705
 Lilienthalstr.: Asphalt, etwas rau	Q0- 10633,8705 10615,8558
 Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12330,8636 12392,8724 12434,8776 12478,8829 12590,8977 12682,9089
 #: note: Parkstreifen gepflastert
@@ -316,7 +316,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-16-12-2020_mit-anhang.pdf (Asphaltierung vorgesehen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ampel am Sachsendamm: "man hofft auf eine Umsetzung im Herbst (2021)")
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Sanierung wird erwähnt)
-#: last_checked: 2021-06-06 vvv
+#: last_checked: 2021-07-18 vvv
 #: check_frequency: 120d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7250,8223 7225,8219 7158,8208 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7225,8219 7250,8223
@@ -579,7 +579,7 @@ Müggelseedamm: Kopfsteinpflaster, OK	Q1 26620,4936 26971,5025 27097,5108
 Dahlwitzer Landstr.: Asphalt	Q0 25584,6029 25579,5958
 Auguste-Viktoria-Str.: Fahrbahn Kopfsteinpflaster, Radwege Verbundsteinpflaster	Q1- 2685,8819 2680,8608 2678,8571 2668,8372
 Auguste-Viktoria-Str.: Beton	Q0 3733,18376 3909,18342 4009,18322
-Hüttenweg: Kopfsteinpflaster	Q1 1573,5152 1964,5070
+Hüttenweg: Kleinsteinpflaster	Q1 1573,5152 1964,5070
 #: note: und in der kälteren Jahreszeit kann es an einigen Stellen leicht matschig sein
 Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig, Wurzeln	Q2 20872,7268 20892,7236 20867,7165 20869,7116 21409,6731 21576,6644
 Wuhlheide: fester Waldweg	Q2 20869,7116 20682,7262 20653,7289
@@ -983,7 +983,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-07-16
+#: last_checked: 2021-07-18
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1476,6 +1476,7 @@ Hegemeisterweg: Asphalt	Q0 18325,7778 18406,7760
 (Hegemeisterweg - Hoher Wallgraben/KGA Stallwiese): Waldweg	Q2 17987,7973 18025,7986 18101,8044
 Am Fichtenberg: Kopfsteinpflaster, OK	Q1 4343,5112 4285,5180 4217,5217 4134,5284
 Tietzenweg: mäßiges Kopfsteinpflaster	Q2 3643,4232 3766,4058 3777,4042 3870,3914 4004,3729 4135,3564 4275,3428 4342,3366 4467,3332
+#: note: zu beiden Seiten glattere Kopfsteinpflasterstreifen, zurzeit (Juli 2021) Richtung Südosten zugeparkt
 Viktoriastr.: schlechtes Kopfsteinpflaster	Q3 3766,4058 3787,4053 3936,4014
 Augustastr.: Kopfsteinpflaster, OK	Q1- 4234,4020 4385,4032 4551,4042
 #: by: Adrian Fiedler vvv
@@ -1485,6 +1486,7 @@ Augustastr.: Asphalt	Q0 3719,3806 3870,3914 3946,3967
 Augustastr.: Asphalt	Q0 4045,4005 4234,4020
 Manteuffelstr.: Asphalt mit einigen Schäden	Q1+ 4015,4053 4092,4217
 Augustaplatz: Asphalt	Q0 3946,3967 3971,3950 4000,3950 4025,3958 4042,3982 4045,4005
+#: confirmed_by: srt
 Augustaplatz: Asphalt mit einigen Schäden	Q1+ 4045,4005 4034,4033 4015,4053 3986,4051 3955,4039 3936,4014 3937,3993 3946,3967
 #: corrected_by: srt (Asphalt -> Kopfsteinpflaster)
 Kyllmannstr. (Lichterfelde): Kopfsteinpflaster	Q2 3500,4146 3467,4247
@@ -7971,7 +7973,7 @@ Georg-Steger-Weg: Kopfsteinpflaster	Q2 1480,2199 1493,2247
 Am Schweizerhof: Beton	Q0 1524,1924 1432,1964 1368,1991 1258,1961 1191,1944
 Am Schweizerhof - Park: wassergebundene Decke	Q1 1191,1944 1177,1940
 Jänickestr.: Asphalt	Q0 1711,2620 1603,2220
-Jänickestr: glatt gepflastert	Q1 1603,2220 1524,1924
+Jänickestr: glatt gepflastert	Q1+ 1603,2220 1524,1924
 Jänickestr.: unebener Asphalt	Q1+ 1524,1924 1558,1805 1570,1753
 Jänickestr.: Asphalt	Q0 1570,1753 1588,1697 1616,1594 1645,1486 1702,1278
 Melker Str.: Asphalt	Q0 1616,1594 1778,1659
@@ -10637,11 +10639,12 @@ Edith-Stein-Str.: Verbundsteinpflaster	Q1+ 14089,13247 14035,13104
 (Park am Gleisdreieck - Flaschenhalspark): Asphalt	Q0 8338,9593 8339,9560
 Gärtnerstr.: Fahrbahn mit Kopfsteinpflaster, asphaltierter Nebenweg existiert	Q0 5332,3696 5364,3605 5370,3587 5468,3302
 # REMOVED --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.823629.php (Grundsanierung der Wege, ab KW 28/2019, kein Endedatum) --- #: by: https://www.berliner-woche.de/steglitz/c-bauen/wege-im-baekepark-werden-saniert_a222178 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.825068.php --- #: XXX werden die Wege (nicht nur dieser) nach den Bauarbeiten bessere Qualität haben? vvv --- #: last_checked: 2019-10-21 vvv --- #: check_frequency: 21d vvv
-Bäkepark: wassergebundene Decke	Q1 5131,4207 5161,4206 5239,4175 5282,4145
+Bäkepark: provisorischer Asphalt, uneben	Q1+ 5131,4207 5161,4206 5239,4175 5282,4145
 Bäkepark: wassergebundene Decke, etwas Schotter	Q1- 5225,4095 5184,4161
 #: corrected_by: mapillary (wassergebundene Decke, etwas Schotter -> ...)
 #: confirmed_by: srt
-Bäkepark: Asphalt	Q0 5184,4161 5131,4207 5097,4221 5063,4266
+Bäkepark: Asphalt	Q0 5184,4161 5131,4207
+Bäkepark: provisorischer Asphalt, uneben	Q1+ 5131,4207 5097,4221 5063,4266
 (Ehrenbergstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13596,10722 13582,10702
 (Ehrenbergstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13582,10702 13542,10695
 (Ehrenbergstr. - ehem. Osthafen): Beton mit Schienen	Q2+ 13542,10695 13531,10673
@@ -12193,6 +12196,8 @@ Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q1 13870,9872 1
 #: check_frequency: 180d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
+Chlodwigstr.: Asphalt	Q0 8499,5016 8433,5108 8356,5195
+Paul-Schmidt-Str.: Beton	Q0- 8264,5383 8242,5427 8212,5445 8165,5447 8059,5457 8038,5514
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13213,7 +13218,9 @@ Ingwäonenweg: Asphalt	Q0 16442,22505 16499,22789 16517,22868 16543,22942 16566,2
 Ingwäonenweg: Verbundsteinpflaster	Q0- 16627,23187 16683,23354
 #: confirmed_by: srt (südlicher Abschnitt)
 Ingwäonenweg: Asphalt	Q0 16683,23354 16699,23402 16730,23492 16745,23548 16770,23593 16783,23615
-Wulfila-Ufer: Asphalt	Q0 8255,4791 8499,5016 8623,5104 8750,5173
+Wulfila-Ufer: Asphalt	Q0 8255,4791 8499,5016
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Wulfila-Ufer: Asphalt, einige Wurzelhebungen	Q1+ 8499,5016 8623,5104 8750,5173
 #: confirmed_by: srt
 Schluchseestr.: Asphalt	Q0 5006,22507 5056,22389 5098,22326 5209,22229 5335,22196 5443,22210 5515,22250 5744,22586 5790,22618
 Niedstr.: Asphalt	Q0 5364,7330 5641,7332 5810,7337 5897,7337
@@ -14244,6 +14251,7 @@ Friedrichstr. (Lichterfelde): Verbundsteinpflaster	Q1 2890,3561 2717,3600
 Pfleidererstr. (Lichterfelde): Asphalt	Q0 3011,3303 2998,3324 2832,3372
 # REMOVED (vermutlich auch asphaltiert, nicht ganz sicher) --- Pfleidererstr. (Lichterfelde): sehr glatt	Q0 2832,3372 2748,3393
 Kadettenweg: schlechtes Kopfsteinpflaster	Q3 2965,3823 3045,3718 3061,3695 3186,3515 3228,3455
+#: confirmed_by: srt
 Kadettenweg: sehr glatte Asphaltstraße	Q0 3228,3455 3328,3313 3348,3278 3450,3142 3462,3113 3462,3042 3459,2944 3456,2835
 #: by: ^^^
 # 
@@ -14255,11 +14263,10 @@ Baseler Str.: Asphalt	Q0- 3148,1888 3150,2113 3151,2224
 #: note: teilweise mit etwas Beton
 Baseler Str.: Asphalt	Q0 3151,2224 3161,2482 3163,2598 3171,2848
 #: corrected_by ^^^
-#: XXX Kopfsteinpflaster mäßig oder schlecht? Außerdem scheint es hier eine Einbahnstraßenregelung zu geben, aber vielleicht nur temporär? vvv
-Baseler Str.: Kopfsteinpflaster	Q2 3171,2848 3174,3052 3184,3427 3185,3476 3186,3515
+#: note: an der Finckensteinallee einige Meter Asphalt
+Baseler Str.: mäßiges Kopfsteinpflaster	Q2 3171,2848 3174,3052 3184,3427
 #: confirmed_by: srt
-Baseler Str.: mäßiges Kopfsteinpflaster	Q2 3186,3515 3193,3793 3197,3934 3185,3958
-#: XXX ^^^
+Baseler Str.: mäßiges Kopfsteinpflaster	Q2 3184,3427 3185,3476 3186,3515 3193,3793 3197,3934 3185,3958
 #: by: ^^^
 # 
 #: by: sandor
@@ -14844,9 +14851,11 @@ Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6700 4528,6715
 (Spreeufer): Asphalt	Q0 -309,13268 -285,13276 -287,13308 -280,13318
 (Spreeufer): wassergebundene Decke	Q1- -280,13318 -76,13296 102,13292 512,13335 778,13455 971,13498 1091,13512 1111,13514
 #: note ^^^
+#: confirmed_by: srt
 Moltkestr.: Asphalt	Q0 4596,3738 4539,3777
 #: note: laut ADFC-Karte "mäßig geeignet" fuer die gesamte Moltkestr.:
 #: note: hier Großsteinpflaster
+#: confirmed_by: srt
 Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4539,3777 4476,3820
 #: confirmed_by: srt (made it a Q2+)
 Moltkestr.: mäßiges Kopfsteinpflaster	Q2+ 4476,3820 4307,3959
@@ -15717,7 +15726,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="6"
-#: last_checked: 2021-01-25 (mapillary)
+#: last_checked: 2021-07-18
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4645,6646 4682,6625 4845,6532 4875,6552
 #: confirmed_by: srt
@@ -20885,7 +20894,7 @@ Hammerstr.: guter Asphalt	Q0 1790,1783 1747,1887 1812,2160 1927,2570
 Heiligental: mäßiger Asphalt, Schlaglöcher	Q1- 5929,19574 5897,19668 5858,19761 5803,19874
 # 
 #: by: Christian (wonnekneter)
-Kuhligkshofstr.: Asphalt	Q0 4991,5531 4911,5428 4856,5375 4821,5345
+Kuhligkshofstr.: Asphalt	Q0 4991,5531 4905,5438 4851,5377 4813,5350
 # 
 #: by: Naira (hgoerzig): vvv
 #: confirmed_by: srt
@@ -25194,7 +25203,7 @@ Elstergasse: guter Beton	Q0- -1596,20184 -1827,20216 -1971,20231
 #: by: ^^^
 # 
 #: by: Robert Büttner:
-Gerdsmeyerweg: Beton, gute Qualität	Q0- 8165,5444 8161,5399 8130,5353 8070,5325 8036,5309
+Gerdsmeyerweg: Beton, gute Qualität	Q0- 8165,5447 8161,5399 8130,5353 8070,5325 8036,5309
 # 
 #: by: Rikert-Mueller:
 #: note: 30er-Zone
@@ -28486,8 +28495,8 @@ Am Anger: asphaltiert	Q0 2313,5111 2458,5212
 Auf dem Grat: Asphalt	Q0 1640,5383 1807,5355 1860,5326 1954,5328 2062,5314 2075,5075 2081,4940
 #: confirmed_by: srt
 Auf dem Grat: Asphalt	Q0 1807,5355 1803,5390 1803,5397 1652,5426
-#: confirmed_by: MichaelM
-Kehler Weg: asphaltiert	Q0 2027,4792 2025,4935
+#: confirmed_by: MichaelM, srt
+Kehler Weg: asphaltiert	Q0 2027,4792 2012,4861 2025,4935
 #: confirmed_by: srt
 Bitscher Str.: asphaltiert	Q0 1884,4811 1939,4949 1969,4978
 #: corrected_by: srt (Q1 -> Q0-)
@@ -30073,4 +30082,5 @@ Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 21307,9591
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 21253,9547
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 21291,9507
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 21343,9546
+Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 4476,3820
 #: ignore ^^^
