@@ -5222,6 +5222,9 @@ Stormstr. (Baumschulenweg)	N 16328,7005 16234,7100
 Glanzstr.	N 16328,7005 16433,6892 16588,6724
 Neue Bahnhofstr.	H 15016,11431 14918,11249
 Neue Bahnhofstr.	N 14918,11249 14908,11231 14879,11182 14817,11068 14798,11058 14760,11044
+#: osm.highway: service
+(Ostkreuz, Zugang Marktstr.)	N 15085,10956 15063,10932
+(Ostkreuz, Zugang Marktstr.)	NN 15063,10932 15052,10920 14945,10945 14902,10967 14808,10978
 (Neue Bahnhofstr. - Bahnhof Ostkreuz)	NN 14798,11058 14809,11037 14808,10978 14851,10966
 (Sonntagstr. - Bahnhof Ostkreuz)	NN 14808,10978 14760,11044
 Sonntagstr.	N 14760,11044 14669,11157 14598,11245 14535,11327 14453,11439 14460,11455
@@ -17329,11 +17332,8 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 (Kaniswall - Streitwall/Spree)	N 32823,-149 32814,-50 32798,37 32820,74 32865,263 32891,314 33002,391 33052,384
 (Kaniswall - Streitwall/Spree)	NN 33052,384 33281,498 33373,558
 (Kaniswall - Gosen)	NN 32823,-149 32420,-260 32329,-380
-#: osm.highway: service vvv
+#: osm.highway: service
 (Zufahrt Erika-Heß-Eisstadion)	NN 8138,14786 8015,14685 8015,14650
-(Zufahrt Impfzentrum Flughafen Tempelhof)	N 9268,8029 9276,7823 9426,7827 9653,8480
-(Zufahrt Impfzentrum Flughafen Tempelhof)	N 9240,7811 9276,7823
-#: osm.highway: ^^^
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913
 #: #: -*- coding: iso-8859-1 -*-
 #:
@@ -17698,7 +17698,6 @@ Impfzentrum Erika-Heß-Eisstadion	Pl 8015,14650
 Impfzentrum Messe (Masurenallee)	Pl 1865,11082
 Impfzentrum Flughafen Tegel	Pl 2987,16486
 Impfzentrum Velodrom	Pl 13449,13892
-Impfzentrum Flughafen Tempelhof	Pl 9653,8480
 Botanischer Garten [Eingang Unter den Eichen]	Pl 4153,5001
 Botanischer Garten [Eingang Königin-Luise-Platz]	Pl 3707,5758
 Gärten der Welt [Eingang Eisenacher Str.]	Pl 22059,15153

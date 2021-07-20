@@ -983,7 +983,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-07-19
+#: last_checked: 2021-07-20
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -12198,6 +12198,9 @@ Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
 Chlodwigstr.: Asphalt	Q0 8499,5016 8433,5108 8356,5195
 Paul-Schmidt-Str.: Beton	Q0- 8264,5383 8242,5427 8212,5445 8165,5447 8059,5457 8038,5514
+(Ostkreuz, Zugang Marktstr.): Kopfsteinpflaster	Q2 15085,10956 15063,10932
+(Ostkreuz, Zugang Marktstr.): provisorischer Asphalt	Q1+ 15063,10932 15052,10920 14945,10945
+(Ostkreuz, Zugang Marktstr.): Asphalt	Q0 14945,10945 14902,10967 14808,10978
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14252,7 +14255,7 @@ Pfleidererstr. (Lichterfelde): Asphalt	Q0 3011,3303 2998,3324 2832,3372
 # REMOVED (vermutlich auch asphaltiert, nicht ganz sicher) --- Pfleidererstr. (Lichterfelde): sehr glatt	Q0 2832,3372 2748,3393
 Kadettenweg: schlechtes Kopfsteinpflaster	Q3 2965,3823 3045,3718 3061,3695 3186,3515 3228,3455
 #: confirmed_by: srt
-Kadettenweg: sehr glatte Asphaltstraße	Q0 3228,3455 3328,3313 3348,3278 3450,3142 3462,3113 3462,3042 3459,2944 3456,2835
+Kadettenweg: Asphalt	Q0 3228,3455 3328,3313 3348,3278 3450,3142 3462,3113 3462,3042 3459,2944 3456,2835
 #: by: ^^^
 # 
 #: note: Die ADFC-Karte meint für den Abschnitt Finckensteinallee - Curtiusstr. "mäßig geeignet"
@@ -20643,8 +20646,10 @@ Stolzingstr.: Asphalt	Q0 1338,25262 1360,25269 1429,25335 1468,25384
 #: confirmed_by: srt (konkretisiert: Kleinpflastersteine -> Mosaikpflaster)
 #: XXX möglicherweise wird hier auch asphaltiert
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1051692.php (Erwähnung einer zukünftigen Fahrbahninstandsetzung 2021)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1107545.php (Fahrbahn (oder nur Gehweg?)-Instandsetzung ab 1.8.2021, für ca. sechs Wochen)
 #: last_checked: 2021-05-01 (mapillary)
-#: check_frequency: 120d
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2021-09-15
 Stolzingstr.: Mosaikpflaster, uneben	Q2 1468,25384 1542,25483
 #: corrected_by: srt (Kleinpflastersteine, Q2 -> ...)
 Stolzingstr.: Asphalt	Q0 1542,25483 1558,25505
@@ -30084,4 +30089,5 @@ Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 21253,9547
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 21291,9507
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 21343,9546
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 4476,3820
+Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 3228,3455
 #: ignore ^^^

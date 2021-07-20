@@ -1840,7 +1840,7 @@ neu asphaltiert	RW1; 1511,4955 1573,5152
 Gehwegplatten	RW1; 1573,5152 1607,5259 1640,5383 1652,5426
 	RW1;RW2 1479,4853 1462,4802 1450,4766 1447,4757 1441,4741
 	RW1; 1441,4741 1411,4654
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 1411,4654 1441,4741
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 1411,4654 1441,4741
 	RW1; 1411,4654 1370,4547 1304,4334 1297,4311 1283,4260 1240,4126 1221,4071 1159,3915 1139,3876 1159,3915
 alter Asphalt, kein Abstand zu parkenden Autos	RW1; 1159,3915 1221,4071 1240,4126 1283,4260 1297,4311 1304,4334
 	RW1; 1304,4334 1370,4547 1411,4654
@@ -2196,7 +2196,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: source_id: 2147346610
 #: source_id: viz2021:13.425912,52.514912,29.06.2021,07:00 (Sanierungsarbeiten bis 2.8.2021)
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-07-15 vvv
+#: last_checked: 2021-07-20 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-08-02 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
@@ -4379,7 +4379,7 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: last_checked: 2021-07-14
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-12-31
-#: next_check: 2021-07-20
+#: next_check: 2021-07-22
 	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 Grünmarkierung	RW4;RW4 17166,11944 17210,11950 17338,11969
 	RW3;RW3 2717,7093 2731,7247 2744,7397 2750,7444 2757,7604

@@ -2251,27 +2251,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147341611
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
-	2::temp 7435,11514 7322,11177
-	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
-	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
-	2::temp 7595,11086 7575,11076 7252,11188
-# REMOVED ---	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
-# REMOVED ---	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
-# REMOVED ---	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
-# REMOVED ---	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7218,11181 7140,11156
-# REMOVED ---	2::temp 7665,11353 7745,11332
-# REMOVED ---	2::temp 7745,11332 7690,11108
-',
-         'from' => 1626667200,
-         'id' => 2875,
-         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
-         'text' => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2021 von 12:00 bis 18:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1626798600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3036,7 +3016,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-19
+#: last_checked: 2021-07-20
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552

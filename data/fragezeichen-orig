@@ -238,7 +238,7 @@ Möckernstr.: Richtung Süden entstehen geschützte Radspuren	?::projected 8810,103
 # REMOVED (-> radwege-orig) --- #: last_checked: 2020-04-14 vvv --- #: check_frequency: 60d vvv --- # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 --- #: osm_watch: way id="30705170" version="23" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280 --- #: osm_watch: way id="335487060" version="4" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork; 9865,10227 9948,10280 9873,10285 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2021-07-15
+#: last_checked: 2021-07-20
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -1090,7 +1090,7 @@ Behrens-Ufer: öffentlicher Uferweg geplant	?::projected 19177,5560 19265,5611 19
 #: XXX Vielleicht wurde bei der Fahrbahnsanierung auch die Radverkehrsanlage gebaut? (nein, wurde nicht)
 #: osm_watch: way id="43167459" version="13"
 #: osm_watch: way id="43167430" version="13"
-#: last_checked: 2021-06-19
+#: last_checked: 2021-07-18 (mapillary)
 #: check_frequency: 120d
 Ingeborg-Hunzinger-Str./Straße nach Fichtenau: Einrichten einer Radverkehrsanlage (Zweirichtungsradweg, West- oder Ostseite)	?::projected 29714,4461 29712,4548 29705,4987 29832,5065 29898,5149 30038,5338 30074,5402 30090,5446 30331,5410 30410,5450 30737,5800 30760,5824
 # 
@@ -1100,7 +1100,7 @@ Ingeborg-Hunzinger-Str./Straße nach Fichtenau: Einrichten einer Radverkehrsanlag
 #: by: http://www.infravelo.de/projekt/fuerstenwalder-allee/ (beide Straßenseiten werden erwähnt, 2. Quartal 2022 - 4. Quartal 2022)
 #: source_id: 2147345751
 #: XXX Maßnahme Rd.3 (Nordseite)
-#: last_checked: 2020-11-28 (mapillary)
+#: last_checked: 2021-07-18 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2022-12-31
 Fürstenwalder Allee: Baumaßnahmen geplant (Radspuren?)	?::projected; 31632,3297 31447,3372 31366,3404 31139,3497
@@ -1113,7 +1113,7 @@ Fürstenwalder Allee: Baumaßnahmen geplant (Radspuren?)	?::projected; 31632,3297 
 #: source_id: 2147344829
 #: source_id: 2147345751
 #: osm_watch: way id="398767400" version="6"
-#: last_checked: 2021-05-09
+#: last_checked: 2021-07-18 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2022-12-31
 # REMOVED (realisiert) --- Fürstenwalder Allee: Einrichten einer Radverkehrsanlage	?::projected; 30748,3658 30993,3557 31139,3497
@@ -3358,7 +3358,7 @@ Hultschiner Damm: Aufhebung der Benutzungspflicht?	? 24639,10766 24644,10740 246
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1080946.php (bis Juni 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1394217278615560194
 #: by: https://twitter.com/BA_Xhain/status/1394209701588570124 (Haasestr.)
-#: last_checked: 2021-07-19 vvv
+#: last_checked: 2021-07-20 vvv
 #: next_check: 2021-09-17 vvv
 Niemannstr.: Reduzierung auf 10km/h, Bodenschwellen	?::projected 14254,11377 14211,11229
 Helmerdingstr.: Reduzierung auf 10km/h, Bodenschwellen	?::projected 14468,11203 14442,11101
@@ -3898,7 +3898,7 @@ Leonore-Goldschmidt-Str.: Privatstraße, wo wird sie sein, Qualität?	?::projected
 Spreeradweg: wird hier auch die Wegoberfläche verbessert?	? 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578 4529,12570 4642,12491
 # 
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/aufpflasterung-im-bereich-grossgoerschenstrasse-geplant_a202243
-#: last_checked: 2021-05-14
+#: last_checked: 2021-07-18
 #: check_frequency: 60d
 Bautzener/Großgörschenstr.: Aufpflasterung geplant	?::projected 8206,9400 8186,9380 8165,9366
 # 
@@ -4354,7 +4354,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: priority: #D
-#: last_checked: 2021-07-15
+#: last_checked: 2021-07-20
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -4391,7 +4391,7 @@ Hannah-Arendt-Str./Gertrud-Kolmar-Str.: Zebrastreifen geplant	?::projected 8747,
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: XXX mittlerweile existiert hier ein provisorischer Zebrastreifen, aber möglicherweise nur wegen der Bauarbeiten an der Roßstraßenbrücke
 #: priority: #D
-#: last_checked: 2021-07-15
+#: last_checked: 2021-07-20
 #: next_check: 2021-09-01
 Fischerinsel nördl. der Roßstraßenbrücke: Zebrastreifen geplant	?::projected 10645,11867 10604,11941 10679,11898
 # 
@@ -5887,8 +5887,15 @@ Hohenzollernring: Radwege werden neu gemacht	?::projected -3721,14495 -3835,1466
 Buckower Chaussee: Straße wird gesperrt, Neubau einer Brücke	?::projected 9069,506 9158,551 9178,556 9250,576
 # 
 #: by: https://viz.berlin.de/2021/07/spittelmarkt/
+#: last_checked: 2021-07-20
 #: next_check: 2021-07-29
 Niederwallstr.: Anbindung an den Spittelmarkt soll dauerhaft gesperrt werden --- auch für Radfahrer?	?::projected 10238,11741 10205,11758
+# 
+#: by: https://www.berliner-woche.de/marzahn/c-verkehr/ausbau-der-kreuzung-blumberger-dammmehrower-allee-verzoegert-sich_a315639 (Umbau der Kreuzung ab 2021, Bauende 2021 ungewiss)
+#: osm_watch: way id="441659160" version="9"
+#: osm_watch: way id="441659161" version="11"
+#: next_check: 2021-12-31
+Blumberger Damm: entsteht hier ein Radweg oder eine Radspur?	?; 21869,16719 21889,16817 21925,16981
 # 
 #: ignore ^^^
 # 
@@ -7321,26 +7328,7 @@ Neue Mitte Tempelhof: ändert sich etwas an den bestehenden Wegen oder an den Grü
 Bebauungsplan 3-41: Straßen werden entstehen; genaue Lage, Qualität?	?::projected 12251,18651 12373,18900 12509,18821 12400,18574
 # 
 # REMOVED (arbeitet) --- #: next_check_id: B96A-2020 --- #: osm_watch: node id="1644614436" version="4" --- #: last_checked: 2020-10-04 --- #: check_frequency: 60d --- #: next_check: 2021-01-31 --- B96a/Adlergestell: Ampel für Fußgänger und Radfahrer entsteht, vermutlich Anforderungsampel	?::inwork 21892,1499 21874,1511 21878,1481
-# 
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24947.pdf (Provisorium Mitte Oktober 2010; Baubeginn 2023, Bauzeit mindestens 12 Monate?)
-#: by: https://www.bahninfo-forum.de/read.php?9,603946,681862#msg-681862
-#: by: https://www.neues-deutschland.de/artikel/1144526.s-bahn-berlin-laenger-bauen-als-am-ber.html (Fertigstellung noch im Quartal IV/2020)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1046351.php (Planfeststellungsverfahren)
-#: by: https://www.tagesspiegel.de/berlin/mehr-anwohner-von-laerm-betroffen-tram-projekt-am-ostkreuz-verzoegert-sich-weiter-neue-buergerbeteiligung-ab-maerz/26871070.html (mögliche Fertigstellung 2025?)
-#: by: https://abendblatt-berlin.de/2021/02/02/friedrichshain-strassenbahn-zum-ostkreuz-verzoegert-sich-weiter/
-#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/planunterlagen-muessen-erneut-ausgelegt-werden_a300143
-#: by: https://www.berliner-zeitung.de/mensch-metropole/neue-strassenbahnstrecke-im-suedosten-von-berlin-soll-am-31-oktober-oeffnen-li.140686 (2023?)
-#: by: https://www.radbezirk-lichtenberg.de/freie-fahrt-fuer-die-verkehrswende-am-ostkreuz/ (Demo (!))
-#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=1E8D12DE-20AD-403B-BD7D-FF73383E8F56&plugid=/ingrid-group:ige-iplug-be&docid=1E8D12DE-20AD-403B-BD7D-FF73383E8F56
-#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/075DA438-FE98-4A00-885F-F2FB3CE1CC6C/UL3_Lageplan3_Ostkreuz.pdf (Radwege zu beiden Seiten der Straßenbahn)
-#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/075DA438-FE98-4A00-885F-F2FB3CE1CC6C/UL3_Lageplan4_Marktstrasse.pdf (außerdem: neue Radspuren auf der Marktstraße, beide Richtungen)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_11_0697_0820_online.pdf
-#: XXX Provisorium (Fußgängerschutztunnel) in Bau, es wird vermutlich vier Drängelgitter geben (an beiden Enden, sowie zwei dazwischen)
-#: osm_watch: way id="906851132" version="4"
-#: last_checked: 2021-07-19
-#: check_frequency: 10d
-#: next_check: 2024-06-15
-Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15052,10920 14888,10959
+# REMOVED (realisiert, ohne Drängelgitter) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24947.pdf (Provisorium Mitte Oktober 2010; Baubeginn 2023, Bauzeit mindestens 12 Monate?) --- #: by: https://www.bahninfo-forum.de/read.php?9,603946,681862#msg-681862 --- #: by: https://www.neues-deutschland.de/artikel/1144526.s-bahn-berlin-laenger-bauen-als-am-ber.html (Fertigstellung noch im Quartal IV/2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1046351.php (Planfeststellungsverfahren) --- #: by: https://www.tagesspiegel.de/berlin/mehr-anwohner-von-laerm-betroffen-tram-projekt-am-ostkreuz-verzoegert-sich-weiter-neue-buergerbeteiligung-ab-maerz/26871070.html (mögliche Fertigstellung 2025?) --- #: by: https://abendblatt-berlin.de/2021/02/02/friedrichshain-strassenbahn-zum-ostkreuz-verzoegert-sich-weiter/ --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/planunterlagen-muessen-erneut-ausgelegt-werden_a300143 --- #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-strassenbahnstrecke-im-suedosten-von-berlin-soll-am-31-oktober-oeffnen-li.140686 (2023?) --- #: by: https://www.radbezirk-lichtenberg.de/freie-fahrt-fuer-die-verkehrswende-am-ostkreuz/ (Demo (!)) --- #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=1E8D12DE-20AD-403B-BD7D-FF73383E8F56&plugid=/ingrid-group:ige-iplug-be&docid=1E8D12DE-20AD-403B-BD7D-FF73383E8F56 --- #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/075DA438-FE98-4A00-885F-F2FB3CE1CC6C/UL3_Lageplan3_Ostkreuz.pdf (Radwege zu beiden Seiten der Straßenbahn) --- #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/075DA438-FE98-4A00-885F-F2FB3CE1CC6C/UL3_Lageplan4_Marktstrasse.pdf (außerdem: neue Radspuren auf der Marktstraße, beide Richtungen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_11_0697_0820_online.pdf --- #: XXX Provisorium (Fußgängerschutztunnel) in Bau, es wird vermutlich vier Drängelgitter geben (an beiden Enden, sowie zwei dazwischen) --- #: osm_watch: way id="906851132" version="4" --- #: last_checked: 2021-07-19 --- #: check_frequency: 10d --- #: next_check: 2024-06-15 --- Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15063,10932 15052,10920 14945,10945 14902,10967 14808,10978
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.1017102.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/2-b-plan_9-53_lageplan_1zu500.pdf
@@ -7379,7 +7367,7 @@ S-Bhf. Zehlendorf: neuer Zugang geplant	?::projected 644,2622 660,2576
 #: by: https://ausschreibungen-deutschland.de/798592_Ersatzneubau_der_Neuen_Fahlenbergbruecke_mit_BehelfsbrueckeReferenznummer_der_Bekanntmachung_2021_Berlin (Zuschlag am 2021-06-14)
 #: osm_watch: way id="10275794" version="16"
 #: osm_watch: way id="897616703" version="2"
-#: last_checked: 2020-09-15
+#: last_checked: 2021-02-22 (Luftbild)
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2021-06-30
 #: next_check: 2022-12-31

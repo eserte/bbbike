@@ -5899,6 +5899,9 @@ Glanzstr.	N 16328,7005 16433,6892 16588,6724
 Neue Bahnhofstr.	H 15016,11431 14918,11249
 Neue Bahnhofstr.	N 14918,11249 14908,11231 14879,11182 14817,11068 14798,11058 14760,11044
 # REMOVED (wurde zurückgebaut) --- (provisorischer Zugang zum Bahnhof Ostkreuz)	NN 14712,11039 14727,11005 14808,10978
+#: osm.highway: service
+(Ostkreuz, Zugang Marktstr.)	N 15085,10956 15063,10932
+(Ostkreuz, Zugang Marktstr.)	NN 15063,10932 15052,10920 14945,10945 14902,10967 14808,10978
 (Neue Bahnhofstr. - Bahnhof Ostkreuz)	NN 14798,11058 14809,11037 14808,10978 14851,10966
 (Sonntagstr. - Bahnhof Ostkreuz)	NN 14808,10978 14760,11044
 Sonntagstr.	N 14760,11044 14669,11157 14598,11245 14535,11327 14453,11439 14460,11455
@@ -19498,13 +19501,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: osm.highway: service
 (Zufahrt Erika-Heß-Eisstadion)	NN 8138,14786 8015,14685 8015,14650
 # 
-#: by: https://www.bahninfo-forum.de/file.php?9,file=15098
-#: osm.highway: service vvv
-#: valid: 20210307-20210720 vvv
-(Zufahrt Impfzentrum Flughafen Tempelhof)	N 9268,8029 9276,7823 9426,7827 9653,8480
-(Zufahrt Impfzentrum Flughafen Tempelhof)	N 9240,7811 9276,7823
-#: valid ^^^
-#: osm.highway ^^^
+# REMOVED (wurde geschlossen) --- #: by: https://www.bahninfo-forum.de/file.php?9,file=15098 --- #: osm.highway: service vvv --- #: valid: 20210307-20210720 vvv --- (Zufahrt Impfzentrum Flughafen Tempelhof)	N 9268,8029 9276,7823 9426,7827 9653,8480 --- (Zufahrt Impfzentrum Flughafen Tempelhof)	N 9240,7811 9276,7823 --- #: valid ^^^ --- #: osm.highway ^^^
 # 
 #: next_check_id: STRD17JUNI-2021
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_01_0001_0080_online.pdf (geplant ab 15.3.2021 bis März 2025)

@@ -67,7 +67,7 @@ EOF
        until => $isodate2epoch->("2019-06-09 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 49, start => "2020-10-25T00:00:00"]], # Pfingstsonntag
-       recurrence_prewarn_days => -60,
+       recurrence_prewarn_days => -67,
        source_id => 'https://www.karneval.berlin/', # früher http://www.karneval-berlin.de/de/, heute ist das eine Werbeseite
        text  => 'Karneval der Kulturen, 09.06.2019',
        type  => 'gesperrt',
@@ -30974,7 +30974,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-19
+#: last_checked: 2021-07-20
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
