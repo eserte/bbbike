@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.67;
+$VERSION = 1.68;
 
 use vars qw(%images);
 
@@ -1174,6 +1174,11 @@ sub show_fis_broker_menu {
     $link_menu->command
 	(-label => 'Flurstücke (ALKIS)',
 	 -command => sub { showmap_fis_broker(mapId => 'wmsk_alkis@senstadt', %args) },
+	);
+    $link_menu->separator;
+    $link_menu->command
+	(-label => 'Orthophotos 2021',
+	 -command => sub { showmap_fis_broker(mapId => 'k_luftbild2021_rgb@senstadt', %args) },
 	);
     $link_menu->separator;
     $link_menu->command
