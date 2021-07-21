@@ -18,6 +18,24 @@ use CGI::Carp;
 use strict;
 use vars qw($mapserver_prog_url);
 
+use vars qw($realbin);
+use Cwd qw(realpath);
+use File::Basename;
+BEGIN { # taint fixes
+    ## FindBin does not work with modperl
+    #($realbin) = $FindBin::RealBin =~ /^(.*)$/;
+    ($realbin) = dirname(realpath($0)) =~ /^(.*)$/;
+}
+# from bbbike.cgi
+use lib (grep { -d }
+	 (#"/home/e/eserte/src/bbbike",
+	  "$realbin/..", # falls normal installiert
+	  "$realbin/../BBBike", # falls in .../cgi-bin/... installiert
+	  "$realbin/BBBike", # weitere Alternative
+	 )
+	);
+use BBBikeCGI::Util qw();
+
 my $imgwidth = 550;
 my $imgheight = 550;
 if (defined param("imgsize")) {
@@ -50,16 +68,16 @@ if ($set eq 'ziel') {
     # und sich die Routenliste anzugucken. Wenn true wird die Route
     # sofort im Mapserver gezeichnet.
     $q2->param("pref_seen", "true");
-    $q2->param("startc", param("startc"));
-    $q2->param("zielc", param("zielc"));
-    $q2->param("layer", param("layer")) if defined param("layer");
-    if (!grep { $_ eq 'route' } $q2->param("layer")) {
+    $q2->param("startc", scalar param("startc"));
+    $q2->param("zielc", scalar param("zielc"));
+    $q2->param("layer", BBBikeCGI::Util::my_multi_param("layer")) if defined param("layer");
+    if (!grep { $_ eq 'route' } BBBikeCGI::Util::my_multi_param($q2, "layer")) {
 	$q2->append(-name => "layer", -values => ["route"]);
     }
-    $q2->param("mapext", param("imgext")) if defined param("imgext");
+    $q2->param("mapext", scalar param("imgext")) if defined param("imgext");
     push_INC();
     require BBBikeMapserver;
-    my $scope; $scope = BBBikeMapserver::scope_by_map(param("map"))
+    my $scope; $scope = BBBikeMapserver::scope_by_map(scalar param("map"))
 	if defined param("map");
     $q2->param("scope", $scope)
 	if defined $scope;
@@ -77,20 +95,20 @@ if ($set eq 'ziel') {
 
     my @layers;
     my $q2 = CGI->new(query_string());
-    if (!grep { $_ eq 'route' } $q2->param("layer")) {
+    if (!grep { $_ eq 'route' } BBBikeCGI::Util::my_multi_param($q2, "layer")) {
 	@layers = ($q2->param("layer"), "route");
     }
 
     require File::Basename;
     my $mapname;
     if (param("map")) {
-	$mapname = File::Basename::basename(param("map"));
+	$mapname = File::Basename::basename(scalar param("map"));
 	$mapname =~ s{-(?:brb|b|inner-b|wide|p)(\.map)}{$1};
 	$mapname =~ s{\..*}{};
     }
     $ms->start_mapserver(-passparams => 1,
 			 -mapname => $mapname,
-			 -start => param("startc"),
+			 -start => scalar param("startc"),
 			 (@layers ? (-layers => \@layers) : ()),
 			);
 } else { # pass
