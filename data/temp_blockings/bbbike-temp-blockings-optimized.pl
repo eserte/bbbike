@@ -2544,25 +2544,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: laut rbbtext "Gesamtbaumaßnahme ... bis August 2023"
-#: source_id: 2147346762 (bis Ende 2021)
-#: source_id: viz2021:13.464867,52.610983,06.01.2021,15:00 (bis 21.12.2021)
-#: add_fragezeichen: Wann ist die Sperrung beendet?
-#: note: manchmal (Wochenende?) kann man an den Absperrungen vorbeifahren (gesehen 2021-07-11)
-#: priority: #B
-#: last_checked: 2021-07-11 (mapillary)
-#: check_frequency: 180d
-#: next_check: 2021-12-21
-	2::inwork 14338,22885 14276,22914
-',
-         'from' => 1609855200,
-         'id' => 3043,
-         'source_id' => '2147343394',
-         'text' => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., auch der Fuß- und Radverkehr ist von der Sperrung betroffen, vom 6. Januar 2021 bis 21. Dezember 2021',
-         'type' => 'gesperrt',
-         'until' => 1690902000
-       },
+       undef,
        undef,
        undef,
        {
@@ -4076,13 +4058,28 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1634248800
        },
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2021/07/oranienburger-chaussee-b96/
+#: by: https://twitter.com/VIZ_Berlin/status/1416050417591537667 (zweite Sperrung wurde verschoben)
+#: source_id: viz2021:13.287552,52.659932,09.07.2021,15:00
+#: source_id: viz2021:13.287552,52.659932,16.07.2021,18:00
+#: source_id: viz2021:13.287552,52.659932,22.07.2021,18:00
+# REMOVED --- #: note: nächster Termin: 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr --- #: next_check: 2021-07-12
+	2::inwork 2150,28127 2178,28067 2345,27670
+',
+         'from' => 1626818400,
+         'id' => 3410,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1104559.php',
+         'text' => 'B96: zwischen Staehleweg und Hohen Neuendorf wegen Bauarbeiten gesperrt, vom 22.07.2021 18:00 Uhr bis 24.07.2021 05:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1627095600
+       },
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
-#: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende?) passierbar, gesehen Sa 2021-07-17
+#: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-07-17
+#: last_checked: 2021-07-21
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862

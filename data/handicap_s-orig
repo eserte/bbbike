@@ -10,6 +10,17 @@
 # 
 ### Friedrichshain ###
 # 
+#: note: laut rbb bis 29.10.2021 vvv
+#: last_checked: 2021-07-21 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2021-10-29 vvv
+Jessnerstr.: Sperrung der Fahrbahn nˆrdlich der Oderstr.	q3::inwork 14946,11697 14986,11760
+Oderstr.: Einbahnstraﬂenregelung, offen Richtung Osten	q3::inwork; 15043,11637 14946,11697
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: note ^^
+# 
 # REMOVED (entfernt) --- #: also_indoor: traffic (G,H) --- #: XXX Parkverbotsschilder bis zum 20.6.2021 --- #: add_fragezeichen: Sind die Bauarbeiten in der Pettenkoferstr. bereits beendet? --- #: last_checked: 2021-05-17 --- #: next_check: 2021-06-20 --- # REMOVED --- #: valid: -20210620 --- Pettenkoferstr.: Bauarbeiten an der Kreuzung Eldenaer Str., Sperrung der Fahrbahn	q3::inwork 14858,12775 14836,12826
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: RUEDERSDORFER-2016 --- #: osm_watch: way id="472360197" version="1" --- #: last_checked: 2017-04-12 --- #: check_frequency: 7d --- R¸dersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13161,11795 13066,11854# 
 # REMOVED --- #: last_checked: 2017-03-30 vvv --- #: check_frequency: 14d vvv --- Gubener Str.: Bauarbeiten an der Kreuzung Gr¸nberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003 --- # REMOVED --- Gubener Str.: Bauarbeiten an der Kreuzung Gr¸nberger/Wedekindstr., Ausweichen auf Gehweg	q3-::inwork 13339,12029 13352,12003
@@ -126,9 +137,9 @@
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/baumassnahmen-fuer-die-a100-gestartet_a289900 (hier: erste Bauphase bis Ende 2021, Bauende bis Juni 2023)
 #: osm_watch: way id="44807035" version="12"
 #: osm_watch: way id="26285705" version="8"
-#: osm_watch: way id="69166216" version="8"
+#: osm_watch: way id="69166216" version="9"
 #: source_id: 2147346409 (bis Ende 2021, Gesamtbaumaﬂnahme bis Ende 2023)
-#: last_checked: 2021-07-17 vvv
+#: last_checked: 2021-07-21 (osm) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
@@ -665,7 +676,7 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12
 # 
 ### Lichtenberg ###
 # 
-#: last_checked: 2021-07-11 vvv
+#: last_checked: 2021-07-21 vvv
 #: check_frequency: 14d vvv
 S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
 S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16878,9875 16900,9861 16925,9852
@@ -1646,7 +1657,7 @@ Uferweg: Fuﬂg‰nger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q2 4456,12918 4514,12936 4581,13066 4582,13086 4576,13121 4592,13127 4613,13210 4617,13243
 # REMOVED (keine Fahrbahn mehr, nur der obere Uferweg) --- Bundesratufer: Fuﬂg‰nger	q4 5938,12848 5922,12765
 # REMOVED --- (provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14712,11039 14727,11005 14808,10978
-(Ostkreuz, Zugang Marktstr.): Fuﬂg‰ngerschutztunnel, Radfahrer sollen absteigen	q3 15063,10932 15052,10920 14945,10945
+(Ostkreuz, Zugang Marktstr.): Fuﬂg‰ngerschutztunnel, Radfahrer sollen absteigen	q3 15069,10927 15054,10910 14945,10945
 (Ostkreuz, Zugang Marktstr.): Fuﬂg‰nger	q3 14945,10945 14902,10967
 (Ostkreuz, Zugang Marktstr.): Fuﬂg‰nger	q3- 14902,10967 14808,10978
 (Neue Bahnhofstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3- 14798,11058 14809,11037 14808,10978
@@ -3573,6 +3584,7 @@ Mittelheide - S-Bhf. Hirschgarten: schmal, einige Fuﬂg‰nger	q2 24089,6144 24060,
 Waldeyerstr.: Fuﬂg‰nger, Radfahrer frei	q2 15003,12241 15058,12329
 Puschkinallee [Nebenstraﬂe]: Fuﬂg‰nger	q3 14152,9746 14196,9749
 (BouchÈstr. - Puschkinallee, Nebenstraﬂe): Fuﬂg‰nger	q3 13890,9894 13914,9910
+(Heino-Schmieden-Weg - Alt-Biesdorf): enge Rampe	q3 20831,11604 20840,11604 20830,11610
 # 
 ######################### User Contributions #################################
 # 

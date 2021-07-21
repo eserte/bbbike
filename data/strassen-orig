@@ -641,7 +641,7 @@ Erich-Müller-Str.	N 16038,9837 15948,9902 15936,9911 15892,9941 15840,9980
 Gisèle-Freund-Hain	N 15892,9941 15847,9881
 Hildegard-Marcusson-Str.	N 16004,10204 15990,10185 15952,10134 15874,10025 15840,9980
 (Hildegard-Marcusson-Str. - Uferweg)	NN 15840,9980 15811,9957 15786,9957
-Marktstr. (Rummelsburg)	H 15279,10862 15144,10905 15113,10916 15085,10956 15060,11006 14988,11130
+Marktstr. (Rummelsburg)	H 15279,10862 15144,10905 15113,10916 15088,10950 15060,11006 14988,11130
 #: note: bei luise-berlin wird fälschlicherweise suggeriert, dass die Boxhagener an der Neuen Bahnhofstraße endet
 Boxhagener Str.	H 14988,11130 14918,11249 14799,11330 14771,11345 14752,11369 14684,11456 14639,11512 14570,11589 14561,11600 14513,11657 14461,11738 14416,11815 14306,11889 14161,11930 14097,11949 14045,11965 13991,11992 13745,12118
 # 
@@ -5900,8 +5900,8 @@ Neue Bahnhofstr.	H 15016,11431 14918,11249
 Neue Bahnhofstr.	N 14918,11249 14908,11231 14879,11182 14817,11068 14798,11058 14760,11044
 # REMOVED (wurde zurückgebaut) --- (provisorischer Zugang zum Bahnhof Ostkreuz)	NN 14712,11039 14727,11005 14808,10978
 #: osm.highway: service
-(Ostkreuz, Zugang Marktstr.)	N 15085,10956 15063,10932
-(Ostkreuz, Zugang Marktstr.)	NN 15063,10932 15052,10920 14945,10945 14902,10967 14808,10978
+(Ostkreuz, Zugang Marktstr.)	N 15088,10950 15069,10927
+(Ostkreuz, Zugang Marktstr.)	NN 15069,10927 15054,10910 14945,10945 14902,10967 14808,10978
 (Neue Bahnhofstr. - Bahnhof Ostkreuz)	NN 14798,11058 14809,11037 14808,10978 14851,10966
 (Sonntagstr. - Bahnhof Ostkreuz)	NN 14808,10978 14760,11044
 Sonntagstr.	N 14760,11044 14669,11157 14598,11245 14535,11327 14453,11439 14460,11455
@@ -6060,14 +6060,16 @@ Stawesdamm	NN 20631,11621 20633,11651
 #: note: Privatstraßen vvv
 Heino-Schmieden-Weg	N 20720,11484 20726,11539 20730,11574 20735,11613 20831,11604 20827,11562 20823,11527 20818,11480
 Elsa-Ledetsch-Weg	N 20650,11488 20659,11548 20726,11539
-Gisela-Reissenberger-Platz	N 20659,11548 20665,11620 20735,11613
+#: note: Poller an beiden Enden
+Gisela-Reissenberger-Platz	NN 20659,11548 20665,11620 20735,11613
 #: note ^^^
+(Heino-Schmieden-Weg - Alt-Biesdorf)	NN 20831,11604 20840,11604 20830,11610 20838,11631
 (Verbindungsweg)	NN 20659,11548 20627,11552 20590,11557
 (Verbindungsweg)	NN 20726,11539 20823,11527 20866,11521
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
 #: add_fragezeichen: Wird diese Straße einen Straßennamen bekommen?
-#: last_checked: 2021-05-23
+#: last_checked: 2021-07-21
 #: check_frequency: 60d
 (Straße im Gut Biesdorf)	N 20730,11574 20827,11562 20874,11555
 # 
@@ -6269,7 +6271,7 @@ Albert-Brodersen-Allee	NN 20857,12027 20835,11810 20831,11771
 (Parkweg - Park Biesdorf)	NN 20779,11801 20804,11797 20818,11812 20835,11810
 Alt-Biesdorf	HH 19907,11734 19985,11727 20114,11719 20161,11715 20375,11694
 Alt-Biesdorf	HH 21108,11628 20764,11675 20571,11698 20435,11698 20375,11694
-Alt-Biesdorf	HH 20375,11694 20540,11660 20633,11651 20963,11618 21108,11628
+Alt-Biesdorf	HH 20375,11694 20540,11660 20633,11651 20838,11631 20963,11618 21108,11628
 Alt-Biesdorf	HH 21108,11628 21251,11560 21311,11528 21392,11486 21628,11384 21745,11333 21863,11289 21954,11269 22242,11269 22326,11266
 Biesdorfer Friedhofsweg	N 21311,11528 21514,11796
 (Biesdorfer Friedhofsweg - Wuhlewanderweg)	NN 21514,11796 21645,11912 21751,11973 21778,11955 21815,11953 21829,11975 21829,11994 21873,12016 21907,12018
@@ -14734,7 +14736,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="15"
-#: last_checked: 2021-07-11
+#: last_checked: 2021-07-21
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15111,7 +15113,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="17"
-#: last_checked: 2021-07-11
+#: last_checked: 2021-07-21
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)

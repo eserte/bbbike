@@ -684,7 +684,7 @@ teilweise mit Leitboys geschützt	RW4; 14208,12235 14291,12220 14381,12205 14427,
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur, evtl. bleibt diese permanent
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 13.09.2021)
-#: last_checked: 2021-07-16
+#: last_checked: 2021-07-21
 #: next_check: 2021-09-13
 	RW4; 14926,12129 14994,12121 15117,12106
 	RW2; 15117,12106 15361,12071
@@ -2885,7 +2885,7 @@ Busspur gilt immer	RW5; 16368,11912 16413,11906 16512,11894 16737,11866 16803,11
 Busspur gilt immer	RW5; 17251,11789 17151,11801
 Busspur gilt immer	RW5; 17151,11801 17121,11806 17028,11821 16962,11833 16803,11859 16737,11866 16512,11894
 die ersten und letzten Meter werden auf dem Gehweg geführt	RW3; 21108,11628 20764,11675 20571,11698
-teilweise gemeinsamer, teilweise getrennter Rad- und Gehweg	RW2; 20540,11660 20633,11651 20963,11618 21108,11628
+teilweise gemeinsamer, teilweise getrennter Rad- und Gehweg	RW2; 20540,11660 20633,11651 20838,11631 20963,11618 21108,11628
 asphaltiert	RW2; 21108,11628 21251,11560 21311,11528 21392,11486 21628,11384 21745,11333 21863,11289 21954,11269 22242,11269
 betoniert	RW2; 22242,11269 21954,11269 21863,11289 21745,11333 21628,11384 21392,11486 21311,11528 21251,11560 21108,11628
 gemeinsamer Geh- und Radweg	RW2; 22242,11269 22326,11266 22483,11261
@@ -3212,14 +3212,14 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: source_id: 2147342363 (bis 30.7.2021)
 #: source_id: LMS-BR_r_LMS-BR_125793_LMS-BR_72 (inaktiv)
 #: source_id: 2147345793 (inaktiv)
-#: source_id: viz2021:13.518934,52.514367,25.01.2021,08:00 (bis 6.8.2021)
+#: source_id: viz2021:13.518934,52.514367,25.01.2021,08:00 (bis 6.9.2021)
 #: XXX provisorische Radwegführung über den Bürgersteig
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18225,12697 18220,12450
 # REMOVED (wird später vermutlich richtig gemacht) --- provisorische Radspur	RW4; 18220,12450 18216,12262 18216,12239 18215,12123
-#: last_checked: 2021-07-14 vvv
+#: last_checked: 2021-07-21 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2021-08-06 vvv
+#: next_check: 2021-09-06 vvv
 	RW2; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
 	RW2; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123
 #: next_check ^^^
@@ -4373,7 +4373,7 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: by: http://www.infravelo.de/projekt/weitlingstrasse-und-skandinavische-strasse/ (früherer Eintrag) (Grünbeschichtung+Verbreiterung, 2. Quartal 2021 - 3. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/weitlingstrasse-und-skandinavische-strasse-2/
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erstellung eines grünbeschichteten Radfahrstreifens seit Mai 2021, Bauende Dezember 2021)
-#: source_id: viz2021:13.500319,52.510647,28.06.2021,08:00
+#: source_id: viz2021:13.500319,52.510647,28.06.2021,08:00 (inaktiv)
 #: XXX dieser Abschnitt bekommt eine Grünmarkierung
 #: priority: #D
 #: last_checked: 2021-07-14

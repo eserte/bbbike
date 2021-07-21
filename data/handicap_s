@@ -3,6 +3,8 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+Jessnerstr.: Sperrung der Fahrbahn nˆrdlich der Oderstr.	q3::inwork 14946,11697 14986,11760
+Oderstr.: Einbahnstraﬂenregelung, offen Richtung Osten	q3::inwork; 15043,11637 14946,11697
 (Planstraﬂe C): Fahrbahn durch Bauz‰une abgesperrt, Ausweichen auf Gehweg mˆglich	q3::inwork 12926,11224 12848,11093
 (Notweg Bahn¸bergang Bahnhofstr.): Fuﬂg‰nger, Fahrrad ggfs. schieben	q3 10231,-2159 10215,-2170 10181,-2174 10161,-2146 10096,-2137
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraﬂe, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
@@ -649,7 +651,7 @@ Uferweg: Fuﬂg‰nger	q1 3559,12793 3641,12753 3747,12679
 Uferweg: Fuﬂg‰nger, Biergarten	q3 3747,12679 3819,12676 3862,12675
 Uferweg: Fuﬂg‰nger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q2 4456,12918 4514,12936 4581,13066 4582,13086 4576,13121 4592,13127 4613,13210 4617,13243
-(Ostkreuz, Zugang Marktstr.): Fuﬂg‰ngerschutztunnel, Radfahrer sollen absteigen	q3 15063,10932 15052,10920 14945,10945
+(Ostkreuz, Zugang Marktstr.): Fuﬂg‰ngerschutztunnel, Radfahrer sollen absteigen	q3 15069,10927 15054,10910 14945,10945
 (Ostkreuz, Zugang Marktstr.): Fuﬂg‰nger	q3 14945,10945 14902,10967
 (Ostkreuz, Zugang Marktstr.): Fuﬂg‰nger	q3 14902,10967 14808,10978
 (Neue Bahnhofstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14798,11058 14809,11037 14808,10978
@@ -2128,6 +2130,7 @@ Mittelheide - S-Bhf. Hirschgarten: schmal, einige Fuﬂg‰nger	q2 24089,6144 24060,
 Waldeyerstr.: Fuﬂg‰nger, Radfahrer frei	q2 15003,12241 15058,12329
 Puschkinallee [Nebenstraﬂe]: Fuﬂg‰nger	q3 14152,9746 14196,9749
 (BouchÈstr. - Puschkinallee, Nebenstraﬂe): Fuﬂg‰nger	q3 13890,9894 13914,9910
+(Heino-Schmieden-Weg - Alt-Biesdorf): enge Rampe	q3 20831,11604 20840,11604 20830,11610
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

@@ -9333,7 +9333,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006151',
        data  => <<EOF,
-	1::inwork 14988,11130 15060,11006 15085,10956 15113,10916 15144,10905
+	1::inwork 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905
 EOF
      },
      { from  => 1185055200, # 2007-07-22 00:00
@@ -28618,7 +28618,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-01-05 15:00:00"), # 1540930270, # 2018-10-30 21:11
-       until => $isodate2epoch->("2023-08-01 17:00:00"), # undef, # 1543014000, # 2018-11-24 00:00
+       until => 1626892284, # $isodate2epoch->("2023-08-01 17:00:00"), # undef, # 1543014000, # 2018-11-24 00:00
        text  => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., auch der Fuß- und Radverkehr ist von der Sperrung betroffen, vom 6. Januar 2021 bis 21. Dezember 2021',
        type  => 'gesperrt',
        source_id => '2147343394', # hier bis Ende Dezember 2019; laut fritz bis 2019-12-20; mittlerweile inaktiv
@@ -28626,12 +28626,7 @@ EOF
 #: note: laut rbbtext "Gesamtbaumaßnahme ... bis August 2023"
 #: source_id: 2147346762 (bis Ende 2021)
 #: source_id: viz2021:13.464867,52.610983,06.01.2021,15:00 (bis 21.12.2021)
-#: add_fragezeichen: Wann ist die Sperrung beendet?
-#: note: manchmal (Wochenende?) kann man an den Absperrungen vorbeifahren (gesehen 2021-07-11)
-#: priority: #B
-#: last_checked: 2021-07-11 (mapillary)
-#: check_frequency: 180d
-#: next_check: 2021-12-21
+# REMOVED (offen) --- #: add_fragezeichen: Wann ist die Sperrung beendet? --- #: note: manchmal (Wochenende?) kann man an den Absperrungen vorbeifahren (gesehen 2021-07-11) --- #: by: https://twitter.com/VIZ_Berlin/status/1417826573483483142 (Ende der Sperrung) --- #: priority: #B --- #: last_checked: 2021-07-11 (mapillary) --- #: check_frequency: 180d --- #: next_check: 2021-12-21
 	2::inwork 14338,22885 14276,22914
 EOF
      },
@@ -29139,7 +29134,7 @@ EOF
        source_id => '2147344050',
        data  => <<EOF,
 #: source_id: 2147344103 (bis Mitte Mai 2019)
-	2::inwork 20540,11660 20633,11651 20963,11618 21108,11628
+	2::inwork 20540,11660 20633,11651 20838,11631 20963,11618 21108,11628
 EOF
      },
      { from  => undef, # 
@@ -33090,9 +33085,9 @@ EOF
 	2::inwork 27833,-16133 27599,-16162
 EOF
      },
-     { from  => 1626462247, # $isodate2epoch->("2021-07-15 00:00:00"), # 1625749200, # 2021-07-08 15:00
-       until => 1626462247, # $isodate2epoch->("2021-07-19 05:00:00"), # 1626058800, # 2021-07-12 05:00
-       text  => 'B96: zwischen Staehleweg und Hohen Neuendorf wegen Bauarbeiten gesperrt, vom 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr',
+     { from  => $isodate2epoch->("2021-07-21 00:00:00"), # 1625749200, # 2021-07-08 15:00
+       until => $isodate2epoch->("2021-07-24 05:00:00"), # 1626058800, # 2021-07-12 05:00
+       text  => 'B96: zwischen Staehleweg und Hohen Neuendorf wegen Bauarbeiten gesperrt, vom 22.07.2021 18:00 Uhr bis 24.07.2021 05:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1104559.php',
        data  => <<EOF,
@@ -33100,6 +33095,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1416050417591537667 (zweite Sperrung wurde verschoben)
 #: source_id: viz2021:13.287552,52.659932,09.07.2021,15:00
 #: source_id: viz2021:13.287552,52.659932,16.07.2021,18:00
+#: source_id: viz2021:13.287552,52.659932,22.07.2021,18:00
 # REMOVED --- #: note: nächster Termin: 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr --- #: next_check: 2021-07-12
 	2::inwork 2150,28127 2178,28067 2345,27670
 EOF
@@ -33112,9 +33108,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
-#: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende?) passierbar, gesehen Sa 2021-07-17
+#: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-07-17
+#: last_checked: 2021-07-21
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862

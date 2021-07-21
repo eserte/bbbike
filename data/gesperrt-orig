@@ -705,7 +705,7 @@ Georgenstr. (Mitte)	1 9313,12662 9242,12652 9108,12635
 Georgenstr. (Mitte)	1 9117,12705 9242,12652
 Natalissteig	1 1200,14943 1223,14824 1226,14714
 Alt-Biesdorf	1 20375,11694 20435,11698 20571,11698 20764,11675 21108,11628
-Alt-Biesdorf	1 21108,11628 20963,11618 20633,11651 20540,11660 20375,11694
+Alt-Biesdorf	1 21108,11628 20963,11618 20838,11631 20633,11651 20540,11660 20375,11694
 #: by: Frank Winterlich:
 #: confirmed_by: srt
 Privatstr. 14	1s:q3 13159,17196 13103,17280
@@ -3316,7 +3316,7 @@ Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, te
 # 
 #: XXX bis wann geht die Einbahnstraßenregelung?
 #: also_indoor: traffic
-#: last_checked: 2021-07-14
+#: last_checked: 2021-07-21
 Gotlindestr.: Einbahnstraßenregelung	1s:q4:inwork 16720,12614 16859,12613
 # 
 # REMOVED --- #: XXX bis wann geht die Einbahnstraßenregelung? --- #: last_checked: 2021-05-17 --- Rudi-Arndt-Str.: Einbahnstraßenregelung	1s:q4:inwork 13449,13892 13359,13832
@@ -3393,8 +3393,8 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
 # 
 #: XXX evtl. wird nach den Bauarbeiten die Qualität besser sein
-#: osm_watch: way id="141309175" version="9"
-#: last_checked: 2021-04-18 (mapillary)
+#: osm_watch: way id="141309175" version="10"
+#: last_checked: 2021-07-21
 #: check_frequency: 60d
 Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708,11918 20738,11915
 # 
@@ -3833,7 +3833,7 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.) (mittlerweile inaktiv)
 #: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022)
 #: note: laut rbb ebenfalls bis 30.9.2022
-#: osm_watch: way id="43233756" version="17"
+#: osm_watch: way id="43233756" version="18"
 #: osm_watch: way id="681299268" version="2"
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
@@ -4007,7 +4007,7 @@ Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12
 # REMOVED --- #: next_check_id: MOEWENWEG-2017 --- #: osm_watch: way id="618339166" version="7" --- #: XXX nach den Bauarbeiten vermutlich nur ein Rad/Gehweg --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.632264.php ("Fertigstellung ist für den Sommer 2018 geplant") --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_48_5417_5552_online.pdf (Benennung von Privatstraßen) --- #: XXX hier ("Baugebiet Grüne Aue) werden drei Privatstraßen benannt (fehlen alle in Berlin.coords.data, Lage? Qualität?) (siehe auch fragezeichen-orig für die anderen zwei) --- #: XXX An den Grachten: 11123 --- #: XXX Klompenweg: 11124; für Berlin.coords.data: Klompenweg|Biesdorf|12683 --- #: XXX Am Groen: 11125; für Berlin.coords.data siehe fragezeichen-orig --- #: last_checked: 2019-07-28 --- #: check_frequency: 30d --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22172,10996 22195,10993
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
-#: last_checked: 2021-05-23 vvv
+#: last_checked: 2021-07-21 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-06-30 vvv
 # REMOVED (hier mittlerweile offen) --- Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20627,11552
@@ -4016,8 +4016,10 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20627,11552 20631,1162
 # REMOVED --- #: osm_watch: way id="744233528" version="11"
 # REMOVED (hier mittlerweile offen) --- Heino-Schmieden-Weg: größtenteils noch wegen Bauarbeiten gesperrt	2::inwork 20720,11484 20726,11539
 # REMOVED (mittlerweile offen) --- Heino-Schmieden-Weg: größtenteils noch wegen Bauarbeiten gesperrt	2::inwork 20726,11539 20730,11574 20735,11613 20831,11604 20827,11562 20823,11527 20818,11480
-Gisela-Reissenberger-Platz: wegen Bauarbeiten gesperrt	2::inwork 20665,11620 20735,11613
+# REMOVED (mittlerweile offen) --- Gisela-Reissenberger-Platz: wegen Bauarbeiten gesperrt	2::inwork 20665,11620 20735,11613
 # REMOVED --- #: next_check ^^^
+#: osm_watch: way id="744363729" version="5"
+Heino-Schmieden-Weg - Alt-Biesdorf: Durchgang mit Bauzaun versperrt	2::inwork 20830,11610 20838,11631
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -4352,9 +4354,9 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: by: osm
 #: by: https://www.bahninfo-forum.de/read.php?9,654720,702391#msg-702391
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210530/
-#: osm_watch: way id="663005792" version="3"
+#: osm_watch: way id="663005792" version="4" brb
 #: also_indoor: traffic
-#: last_checked: 2021-05-30 (bahninfo-forum) vvv
+#: last_checked: 2021-07-20 (osm) vvv
 #: check_frequency: 360d vvv
 Berliner Str. (Mahlow): Straße gesperrt, neue Bahnunterführung wird gebaut	2:inwork 10776,-4460 10896,-4469 10956,-4470
 tragen (Treppe) oder Aufzug benutzen	0:35 10860,-4393
