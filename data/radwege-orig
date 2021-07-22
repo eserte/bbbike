@@ -3260,7 +3260,17 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 	RW4; 21139,11830 21135,11799 21108,11628
 # 
 # REMOVED --- #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019 --- #: XXX nach den Bauarbeiten alten Zustand wiederherstellen --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/staus-zu-befuerchten_a208024 --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/suedliche_blumberger_damm_bruecke/index.shtml
-Gehweg für Radfahrer frei, alter Beton	RW1; 21199,12258 21190,12193 21166,12023 21152,11945 21150,11925 21139,11830
+Gehweg für Radfahrer frei, alter Beton	RW1; 21199,12258 21190,12193
+# REMOVED --- Gehweg für Radfahrer frei, alter Beton	RW1; 21190,12193 21166,12023
+#: next_check_id: BLUMBERGERDAMMBRUECKE-2021
+#: XXX wie sieht die Situation nach den Bauarbeiten aus?
+#: note: Radfahrer-überholen-verboten-Schild
+#: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025)
+#: last_checked: 2021-07-21
+#: check_frequency: 120d
+#: next_check: 2025-06-01
+	RW0; 21190,12193 21166,12023
+Gehweg für Radfahrer frei, alter Beton	RW1; 21166,12023 21152,11945 21150,11925 21139,11830
 Gehweg für Radfahrer frei, alter Beton	RW1; 21152,11945 21166,12023 21190,12193
 alter Beton	RW1; 21190,12193 21199,12258
 # REMOVED --- #: last_checked: 2019-08-03 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2019-09-30 ---	RW2;RW8 21150,11925 21152,11945 21166,12023 21190,12193 21199,12258
@@ -6816,7 +6826,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: by: https://abendblatt-berlin.de/2020/10/07/berliner-pop-up-radwege-duerfen-vorerst-bleiben/
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-kuendigt-weitere-an_a289660
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1022575.php ("Test von Protektionselementen")
-#: by: https://portal1467.webcam-profi.de/ (Webcam)
+# REMOVED --- #: by: https://portal1467.webcam-profi.de/ (Webcam)
 #: by: http://www.infravelo.de/projekt/hallesches-ufer/ (Verstetigung, 1. Quartal 2020 - 4. Quartal 2020)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1065698.php (Bauarbeiten ab 22. März 2021 bis Ende Mai 2021)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-wird-verstetigt_a304893

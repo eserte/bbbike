@@ -46,7 +46,7 @@ Oderstr.: Einbahnstraﬂenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 # 
 #: next_check_id: PLANSTRASSEC-2019
 # REMOVED (ein osm_watch reicht aus) --- #: osm_watch: way id="491906864" version="6"
-#: last_checked: 2021-06-18 (osm)
+#: last_checked: 2021-07-22
 #: check_frequency: 60d
 (Planstraﬂe C): Fahrbahn durch Bauz‰une abgesperrt, Ausweichen auf Gehweg mˆglich	q3::inwork 12926,11224 12848,11093
 # 
@@ -1625,7 +1625,7 @@ M¸nsterberger Weg: Pfad, Bordstein	q3 24029,11363 24172,11320
 #: XXX_prog BS an der Dorfstr., ansonsten entfernen
 Dorfstr. - Wuhletal: Bordstein	q2 22112,11936 22104,11925
 Unterf¸hrung Wuhletal: Fuﬂg‰nger	q2 21970,12153 21972,12038 21936,12022
-Park Biesdorf: Fuﬂg‰nger	q2 21150,11925 21134,11926 21132,11943 21100,11960 20857,12027 20810,12031
+Park Biesdorf: Fuﬂg‰nger	q2 21150,11925 21134,11913 21132,11943 21100,11960 20857,12027 20810,12031
 Albert-Brodersen-Allee: Fuﬂg‰nger	q2 20857,12027 20835,11810 20831,11771 20825,11732
 # REMOVED (existiert nicht mehr) --- (Wuhlgartenweg - ƒhrenweg): einige Fuﬂg‰nger, schmal	q2 21101,12132 21107,12186
 (Schulstr. - Braunsdorfstr.): sehr eng	q3 20413,11953 20396,11983
@@ -3584,7 +3584,7 @@ Mittelheide - S-Bhf. Hirschgarten: schmal, einige Fuﬂg‰nger	q2 24089,6144 24060,
 Waldeyerstr.: Fuﬂg‰nger, Radfahrer frei	q2 15003,12241 15058,12329
 Puschkinallee [Nebenstraﬂe]: Fuﬂg‰nger	q3 14152,9746 14196,9749
 (BouchÈstr. - Puschkinallee, Nebenstraﬂe): Fuﬂg‰nger	q3 13890,9894 13914,9910
-(Heino-Schmieden-Weg - Alt-Biesdorf): enge Rampe	q3 20831,11604 20840,11604 20830,11610
+(Heino-Schmieden-Weg - Alt-Biesdorf): enge Rampe	q3- 20831,11604 20840,11604 20830,11610
 # 
 ######################### User Contributions #################################
 # 

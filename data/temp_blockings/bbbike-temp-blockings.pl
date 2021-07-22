@@ -15740,7 +15740,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: T23:00-T06:00 vvv
-	2::night 21150,11925 21134,11926 21132,11943 21100,11960 20857,12027 20810,12031
+	2::night 21150,11925 21134,11913 21132,11943 21100,11960 20857,12027 20810,12031
 	2::night 20857,12027 20835,11810 20831,11771 20825,11732 20764,11675
 	2::night 20779,11801 20804,11797 20818,11812 20835,11810
 #: tempex ^^^
@@ -19293,7 +19293,7 @@ EOF
 #: XXX anschauen!
 #: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
 #: note: laut rbb nur bis 1.8.2021
-#: last_checked: 2021-07-19
+#: last_checked: 2021-07-22
 #: check_frequency: 7d
 # REMOVED (hier nicht)	q4::inwork; 13651,11731 13895,11663
 	q4::inwork; 13895,11663 13954,11647
@@ -28694,7 +28694,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-07-09
+#: last_checked: 2021-07-21 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -29169,7 +29169,7 @@ EOF
      },
      { from  => $isodate2epoch->("2021-01-24 07:00:00"), # 1568571027, # 1557083524, # 2019-05-05 21:12
        until => $isodate2epoch->("2021-08-13 17:00:00"), # 1569607982, # $isodate2epoch->("2019-10-07 18:00:00"),
-       text  => 'Langhansstr.: zwischen Berliner Allee und Heinersdorfer Str. ist die Fahrbahn abschnittsweise wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, 25.1.2021 bis 13.8.2021',
+       text  => 'Langhansstr.: zwischen Roelckestr. und Gustav-Adolf-Str. ist die Fahrbahn abschnittsweise wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, 25.1.2021 bis 13.8.2021',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
        data  => <<EOF,
@@ -29188,12 +29188,10 @@ EOF
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 #: last_checked: 2021-07-06 vvv
 #: next_check: 2021-08-13 vvv
-#: note: hier nur an der Kreuzung Berliner Allee
-	q3::inwork 13508,15912 13312,16027
+# REMOVED (wird bei viz nicht mehr erwähnt) --- #: note: hier nur an der Kreuzung Berliner Allee --- q3::inwork 13508,15912 13312,16027
 # REMOVED (hier nicht mehr) ---	q4::inwork 13312,16027 13250,16058 13189,16089 12943,16214
 	q4::inwork 12943,16214 12859,16255 12826,16271 12797,16285 12764,16302 12725,16321 12564,16399 12474,16443 12399,16479
-#: note: hier keine Absperrungen mehr, aber offiziell nur für Tram und Bus frei
-	q3::inwork 12399,16479 12189,16578
+# REMOVED (wird bei viz nicht mehr erwähnt) --- #: note: hier keine Absperrungen mehr, aber offiziell nur für Tram und Bus frei --- q3::inwork 12399,16479 12189,16578
 #: next_check ^^^
 #: last_checked ^^^
 EOF
@@ -30969,7 +30967,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-20
+#: last_checked: 2021-07-22
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33086,8 +33084,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-07-21 00:00:00"), # 1625749200, # 2021-07-08 15:00
-       until => $isodate2epoch->("2021-07-24 05:00:00"), # 1626058800, # 2021-07-12 05:00
-       text  => 'B96: zwischen Staehleweg und Hohen Neuendorf wegen Bauarbeiten gesperrt, vom 22.07.2021 18:00 Uhr bis 24.07.2021 05:00 Uhr',
+       until => $isodate2epoch->("2021-07-24 18:00:00"), # 1626058800, # 2021-07-12 05:00
+       text  => 'B96: zwischen Staehleweg und Hohen Neuendorf wegen Bauarbeiten gesperrt, vom 22.07.2021 18:00 Uhr bis 24.07.2021 18:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1104559.php',
        data  => <<EOF,
@@ -33218,6 +33216,15 @@ EOF
        source_id => 'https://www.berlin.de/special/shopping/flohmaerkte/2222392-1724959-flohmarkt-am-marheinekeplatz-in-der-berg.html',
        data  => <<EOF,
 	q4::temp:clock 9880,9233 9892,9286
+EOF
+     },
+     { from  => 1627164000, # 2021-07-25 00:00
+       until => 1636239600, # 2021-11-07 00:00
+       text  => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 06.11.2021 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.326349,52.447526,26.07.2021,07:00',
+       data  => <<EOF,
+	q4::inwork; 5271,4547 5316,4637 5336,4676
 EOF
      },
     );

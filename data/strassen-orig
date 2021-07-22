@@ -1278,7 +1278,7 @@ Mercedes-Platz	NN 12990,11006 13063,11147
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="8"
 #: priority: #C
-#: last_checked: 2021-06-04
+#: last_checked: 2021-07-22
 #: next_check: 2023-01-01
 (Planstraße C)	N 12926,11224 12848,11093
 # 
@@ -2085,7 +2085,10 @@ Frankfurter Allee [Nebenfahrbahn]	NN 16535,11920 16512,11894
 #: alias ^^^
 (zur Pablo-Neruda-Bibliothek)	N 14020,12261 14008,12181
 Gudrunstr.	N 17471,12243 17300,12173 17195,12125 17139,12100 17088,12069 16975,12000 16865,11931
-(Kolonie Friedrichsfelde Nord)	NN 17785,12257 17832,12244 18135,12246 18142,12260 18180,12262 18216,12262
+#: osm.highway: service
+#: note: Parkplatz
+(Kolonie Friedrichsfelde Nord)	N 17785,12257 17832,12244
+(Kolonie Friedrichsfelde Nord)	NN 17832,12244 18135,12246 18142,12260 18180,12262 18216,12262
 (Am Städtischen Zentralfriedhof)	N 17785,12257 17749,12239 17540,12222 17485,12240 17471,12243
 (Gudrunstr. - Lichtenberger Brücke)	NN 16837,11920 16833,11897 16818,11878 16803,11859
 (Lichtenberger Brücke - Einbecker Str./Weitlingstr.)	NN 17028,11821 17026,11799 17034,11797
@@ -6265,7 +6268,7 @@ Waldbacher-Weg-Brücke	NN 20315,12061 20363,12057
 Haydnstr. (Biesdorf)	NN 19979,11774 19995,11795
 Haydnstr. (Biesdorf)	N 19995,11795 20005,11872 20016,11980 20026,12088
 (Haydnstr. - Märkische Allee)	NN 20026,12088 20006,12128 19954,12140
-(Park Biesdorf)	NN 20810,12031 20857,12027 21100,11960 21132,11943 21134,11926 21150,11925
+(Park Biesdorf)	NN 20810,12031 20857,12027 21100,11960 21132,11943 21134,11913 21150,11925
 Albert-Brodersen-Allee	NN 20857,12027 20835,11810 20831,11771
 (Alt-Biesdorf - Schloss Biesdorf)	NN 20764,11675 20825,11732 20831,11771
 (Parkweg - Park Biesdorf)	NN 20779,11801 20804,11797 20818,11812 20835,11810
