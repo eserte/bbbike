@@ -982,6 +982,8 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14191,-818 -14199,-707 -14205,-644
 Bahnhofstr.	1s -8417,-2862 -8410,-2884
 Bienenwinkel	1 -13335,1927 -13333,1957 -13227,1962 -13228,1927
+Emserstr. (KW)	1s 26036,-6780 26080,-6894
+Siedlerweg (KW)	1s 26765,-12240 26783,-12136 26786,-12025 26811,-11927
 Rudolf-Breitscheid-Str. (Woltersdorf)	1 34521,5351 34426,5329 34283,5380
 Seestr. (Woltersdorf)	1 34159,5449 34279,5454
 Diedersdorf	1 7452,-7463 7408,-7483 7296,-7482 7378,-7406
@@ -3176,6 +3178,9 @@ Drängelgitter	BNP:3:-187:trailer=10 32418,6303
 Drängelgitter	BNP:2:-135:trailer=8 19107,3472
 Drängelgitter	BNP:2:-135:trailer=8 19061,3426
 Barriere	BNP:1:39:trailer=5 21879,557
+Schranke	BNP:2:-83:trailer=5 20820,11563
+Schranke	BNP:2:-80:trailer=5 20833,11561
+Drängelgitter	BNP:3:-210:trailer=10 25690,-8511
 Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 Hönower Str.: temporäre Einbahnstraße	1s:inwork 18735,9421 18765,9426 18846,9532
 Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -196,16060 -203,16064 -205,16086 -224,16095 -265,16111
@@ -3186,7 +3191,6 @@ Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 153
 (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
 Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 6024,11978 6132,11984 6164,11947
-(Breiter Weg - Südostallee/Sterndamm): Durchgang ist wegen Bauarbeiten gesperrt	2::inwork 17538,5301 17601,5374
 Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881 11940,11982
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s 10472,14632 10320,14608
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613

@@ -906,7 +906,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-07-17
+#: last_checked: 2021-07-23
 #: check_frequency: 60d
 # REMOVED (vermutlich ohne baldige Änderung) --- #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -3253,7 +3253,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 	RW1;RW1 23038,12706 22967,12647 22817,12525 22603,12359
 	RW2;RW2 21108,11628 21124,11462 21133,11348 21134,11331 21137,11294 21138,11271
 	RW1; 21138,11271 21138,11254 21136,11134
-	RW1;RW1 20521,11494 20623,11489 20641,11488 20650,11488 20720,11484 20729,11483 20818,11480 20828,11480 20959,11472 21124,11462
+	RW1;RW1 20521,11494 20569,11492 20616,11490 20641,11488 20650,11488 20720,11484 20729,11483 20818,11480 20828,11480 20959,11472 21124,11462
 	RW1;RW1 21135,10995 21249,11042 21308,11075 21354,11101 21385,11119 21420,11150 21457,11188 21535,11267 21628,11384
 	RW1;RW1 20521,11494 20540,11660 20571,11698
 	RW1; 21108,11628 21135,11799 21139,11830 21150,11925 21152,11945
@@ -3726,7 +3726,7 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 #	RW4; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
 #	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905
 #: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv
-#: last_checked: 2021-07-17 vvv
+#: last_checked: 2021-07-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 Busspur ist immer gültig	RW5; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374
@@ -3739,7 +3739,7 @@ Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337
 #: confirmed_by: srt
 #: also_indoor: traffic (G) vvv
 #: source_id: 2147346053 vvv
-#: last_checked: 2021-07-04 vvv
+#: last_checked: 2021-07-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 	RW3; 17736,5441 17886,5587

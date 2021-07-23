@@ -3555,7 +3555,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2 15682,-26971 15229,-27157
-	2 15682,-26971 15960,-26906
+	2 15682,-26971 15962,-26911
 EOF
      },
      { from  => 1134169200, # 2005-12-10 00:00
@@ -3615,7 +3615,7 @@ EOF
        text  => 'L 074 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung; Umleitung 04.01.2006-06.01.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 15682,-26971 15960,-26906
+	2 15682,-26971 15962,-26911
 EOF
      },
      { from  => 1138143600, # 2006-01-25 00:00
@@ -3623,7 +3623,7 @@ EOF
        text  => 'L 074 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung 26.01.2006-27.01.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 15682,-26971 15960,-26906
+	2 15682,-26971 15962,-26911
 EOF
      },
      { from  => 1130799600, # 2005-11-01 00:00
@@ -3824,7 +3824,7 @@ EOF
        text  => 'L 401 Richard-Sorge-Str./ Bergstr. OL Wildau, Bahnübergang Bergstr. Gleisbauarbeiten Einmünd. gesp. 05.03.2006-10.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26434,-10054 26285,-10054 26262,-10015 26262,-9880 26208,-9801 26093,-9701 25991,-9671 25805,-9553
+	2 26434,-10054 26285,-10054 26262,-10015 26262,-9940 26262,-9880 26208,-9801 26093,-9701 25991,-9671 25805,-9553
 EOF
      },
      { from  => 1141254000, # 2006-03-02 00:00
@@ -3951,7 +3951,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2 15682,-26971 15229,-27157
-	2 15682,-26971 15960,-26906
+	2 15682,-26971 15962,-26911
 EOF
      },
      { from  => 1143583200, # 2006-03-29 00:00
@@ -3960,7 +3960,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2 15682,-26971 15229,-27157
-	2 15682,-26971 15960,-26906
+	2 15682,-26971 15962,-26911
 EOF
      },
      { from  => 1143154477, # 2006-03-23 23:54
@@ -4405,7 +4405,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2 15682,-26971 15229,-27157
-	2 15682,-26971 15960,-26906
+	2 15682,-26971 15962,-26911
 EOF
      },
      { from  => 1145916000, # 2006-04-25 00:00
@@ -4491,7 +4491,7 @@ EOF
        text  => 'L 401 R.-Sorge-/ Bergstr. Bahnübergang Bergstraße Gleisbauarbeiten Zufahrt gesperrt 07.05.2006-12.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26434,-10054 26285,-10054 26262,-10015 26262,-9880 26208,-9801 26093,-9701 25991,-9671 25805,-9553
+	2 26434,-10054 26285,-10054 26262,-10015 26262,-9940 26262,-9880 26208,-9801 26093,-9701 25991,-9671 25805,-9553
 EOF
      },
      { from  => 1146897090, # 2006-05-06 08:31
@@ -4741,7 +4741,7 @@ EOF
        text  => 'L 074 Chausseestraße OL Wünsdorf, zw. Cottbusser/Berliner Str. u. Seestr. Kanalverlegung Vollsperrung 19.06.2006-11.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 15960,-26906 15682,-26971 15229,-27157
+	2::inwork 15962,-26911 15682,-26971 15229,-27157
 EOF
      },
      { from  => 1149623437, # 2006-06-06 21:50
@@ -5890,7 +5890,7 @@ EOF
        text  => 'L 401 R.-Sorge-Str./ Bergstr. Bahnübergang Bergstr. in OL Wildau Arbeiten am BÜ Vollsperrung; Umleitung 04.09.2006-06.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 26434,-10054 26285,-10054 26262,-10015 26262,-9880 26208,-9801 26093,-9701 25991,-9671 25805,-9553
+	2::inwork 26434,-10054 26285,-10054 26262,-10015 26262,-9940 26262,-9880 26208,-9801 26093,-9701 25991,-9671 25805,-9553
 EOF
      },
      { from  => 1157576473, # 2006-09-06 23:01
@@ -7386,7 +7386,7 @@ EOF
        text  => 'L 742 Klein Köris-Teupitz Bahnübergang in der OD Groß Köris Gleisumbauarbeiten Vollsperrung 09.03.2007-12.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 28494,-27010 28207,-27094 27995,-27157 27974,-27162 27709,-27243
+	2::inwork 28494,-27010 28207,-27094 27995,-27157 27974,-27162 27798,-27215 27709,-27243
 EOF
      },
      { from  => 1173913200, # 2007-03-15 00:00
@@ -9048,7 +9048,7 @@ EOF
        text  => 'L 030 Puschkinstr. OL Königs Wusterhausen Open-Air Konzert Vollsperrung 07.07.2007-08.07.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 25859,-11559 25939,-11559 26178,-11660
+	2::temp 25859,-11559 25924,-11558 25939,-11559 26063,-11590 26178,-11660
 EOF
      },
      { from  => 1184450400, # 2007-07-15 00:00
@@ -14015,7 +14015,7 @@ EOF
        text  => 'L 030 Gerichtsstr. (Puschkinstr.) OL Königs Wusterhausen, zw. Brückenstr. und Kirchplatz Kanal- und Straßenbau halbseitig gesperrt; Einbahnstraße 28.04.2009-28.04.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 25859,-11559 25939,-11559 26178,-11660
+	q4::inwork 25859,-11559 25924,-11558 25939,-11559 26063,-11590 26178,-11660
 EOF
      },
      { from  => 1240783200, # 2009-04-27 00:00
@@ -16116,7 +16116,7 @@ EOF
        text  => 'L 030 Gerichtsstr. OL Königs Wusterhausen, zw. Schloßplatz u. Brückenstr. Schlossfest Vollsperrung 05.09.2009-05.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::temp 25859,-11559 25939,-11559 26178,-11660
+	q4::temp 25859,-11559 25924,-11558 25939,-11559 26063,-11590 26178,-11660
 EOF
      },
      { from  => 1252188000, # 2009-09-06 00:00
@@ -27992,8 +27992,9 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,672773,672947#msg-672947
 #: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
 #: osm_watch: way id="36936021" version="5" brb
-#: last_checked: 2018-09-18
-#: next_check: 2020-11-01
+#: last_checked: 2021-07-23
+#: check_frequency: 180d
+# REMOVED --- #: next_check: 2020-11-01
 	2::inwork 25929,-5994 25902,-6006
 EOF
      },
@@ -33039,7 +33040,7 @@ EOF
 EOF
      },
      { from  => 1625349600, # 2021-07-04 00:00
-       until => 1627077600, # 2021-07-24 00:00
+       until => $isodate2epoch->("2021-07-23 17:00:00"), # 1627077600, # 2021-07-24 00:00
        text  => 'Invalidenstr.: Gleisarbeiten Richtung Brunnenstr. zwischen Hessische Str. und Am Nordbahnhof, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, vom 05.07.2021 10:00 bis 23.07.2021 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.379379,52.529484,05.07.2021,10:00',
@@ -33073,14 +33074,15 @@ EOF
      },
      { from  => $isodate2epoch->("2021-07-18 00:00:00"),
        until => 1634248800, # 2021-10-15 00:00
-       text  => 'B179: Sperrung Brücke Körbiskrug, evtl. sind auch Radfahrer betroffen, 19.07.2021 bis 14.10.2021',
+       text  => 'B179: Sperrung Brücke Körbiskrug, Radfahrer und Fußgänger sind ebenfalls von der Sperrung betroffen, 19.07.2021 bis 14.10.2021',
        type  => 'gesperrt',
        source_id => '216101007',
        data  => <<EOF,
 #: also_indoor: traffic
 #: XXX gibt es nach den Bauarbeiten bereits den neuen Radweg?
+#: osm_watch: way id="827384487" version="3"
 #: next_check: 2021-10-15
-	2::inwork 27833,-16133 27599,-16162
+	2::inwork 27833,-16133 27643,-16156
 EOF
      },
      { from  => $isodate2epoch->("2021-07-21 00:00:00"), # 1625749200, # 2021-07-08 15:00

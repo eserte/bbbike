@@ -2463,8 +2463,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,672773,672947#msg-672947
 #: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
 #: osm_watch: way id="36936021" version="5" brb
-#: last_checked: 2018-09-18
-#: next_check: 2020-11-01
+#: last_checked: 2021-07-23
+#: check_frequency: 180d
+# REMOVED --- #: next_check: 2020-11-01
 	2::inwork 25929,-5994 25902,-6006
 ',
          'from' => 1533756141,
@@ -4007,21 +4008,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1631570400
        },
        undef,
-       {
-         'data' => '#: also_indoor: traffic (G,H) (beide falsch/unvollständig?)
-#: note: laut rbb: "Radfahrende steigen bitte ab"
-# REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich von den Bauarbeiten betroffen? vvv --- #: next_check: 2021-07-05 vvv
-	q4::inwork; 8685,13728 8841,13800
-	q4::inwork; 8935,13844 9085,13919
-# REMOVED --- #: next_check ^^^ --- #: add_fragezeichen ^^^
-',
-         'from' => 1625349600,
-         'id' => 3406,
-         'source_id' => 'viz2021:13.379379,52.529484,05.07.2021,10:00',
-         'text' => 'Invalidenstr.: Gleisarbeiten Richtung Brunnenstr. zwischen Hessische Str. und Am Nordbahnhof, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, vom 05.07.2021 10:00 bis 23.07.2021 17:00',
-         'type' => 'handicap',
-         'until' => 1627077600
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.560042,52.405163,12.07.2021,07:00 (hier: bis 10.9.2021, siehe unten)
 	q4::inwork 21355,-309 21322,-176 21250,118
@@ -4046,13 +4033,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: also_indoor: traffic
 #: XXX gibt es nach den Bauarbeiten bereits den neuen Radweg?
+#: osm_watch: way id="827384487" version="3"
 #: next_check: 2021-10-15
-	2::inwork 27833,-16133 27599,-16162
+	2::inwork 27833,-16133 27643,-16156
 ',
          'from' => 1626559200,
          'id' => 3409,
          'source_id' => '216101007',
-         'text' => 'B179: Sperrung Brücke Körbiskrug, evtl. sind auch Radfahrer betroffen, 19.07.2021 bis 14.10.2021',
+         'text' => 'B179: Sperrung Brücke Körbiskrug, Radfahrer und Fußgänger sind ebenfalls von der Sperrung betroffen, 19.07.2021 bis 14.10.2021',
          'type' => 'gesperrt',
          'until' => 1634248800
        },

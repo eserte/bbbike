@@ -1,6 +1,15 @@
 #:# -*- coding: iso-8859-1 -*-
 #: title: Einbahnstraßen und gesperrte Straßen (nur für Autofahrer)
 #:
+#: temporary vvv
+# 
+#: XXX neue Unterführung wird gebaut
+#: last_checked: 2021-07-23
+#: check_frequency: 360d
+Wünsdorf: Bahnübergang gesperrt	2 15367,-26848 15580,-26698 15642,-26640
+# 
+#: temporary ^^^
+# 
 Mittelweg	1 12335,7770 12224,7799 12176,7811
 # Die Verlängerung der Kronenstr. ist ein Privatweg, der anscheinend per
 # Schranke gesperrt werden kann.
@@ -1094,7 +1103,7 @@ Andernacher Str.	1 19054,8571 19000,8509
 #: next_check_id: GROSSBERLINERDAMM-2020
 #: by: https://www.baustellen-doku.info/berlin_strassenbahn_adlershof_II_wista_schoeneweide/20201019/
 #: XXX hier wird eine Überfahrt auch für Autos entstehen
-#: last_checked: 2021-07-17
+#: last_checked: 2021-07-23
 #: next_check: 2021-10-01
 Groß-Berliner Damm: Mittelstreifen	3nocross 18541,4125 18374,4307 18239,4453
 Groß-Berliner Damm: Straßenbahntrasse	3nocross 18374,4307 18239,4453 18042,4667
@@ -1465,4 +1474,6 @@ Weidenkätzchenweg: Poller	3 * 21450,38 *
 #: note: offiziell für allen Verkehr gesperrt, praktisch aber für Fußgänger + Radfahrer offen
 #: osm_watch: way id="104156160" version="8" brb
 Liepe - Bralitz: Brücke gesperrt	2 48210,51009 48230,50933
+# 
+Köpenicker Str. (KW)	1 26044,-11318 26149,-11189
 # 
