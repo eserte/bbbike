@@ -5966,6 +5966,30 @@ Köpenicker Str. (KW): Asphalt	Q0 26306,-10928 26296,-10782 26302,-10730
 (Köpenicker Str. - Bergstr.) (Wildau): Asphalt	Q0 26257,-9959 26258,-9939 26262,-9940
 Forsythienweg: Asphalt	Q0 25391,-8336 25404,-8263
 Fuchsbau: Asphalt	Q0 25404,-8263 25427,-8141 25360,-8128
+Oberjünne: Asphalt	Q0 -41149,-14598 -41144,-14605 -41016,-14915
+Oberjünne: Asphalt	Q0 -40943,-14913 -40898,-14577 -40898,-14569
+#: by: srt (westliches Ende), osm (Rest)
+B102 - Krahne: Asphalt	Q0 -43609,-9087 -44720,-9558 -45108,-9615 -45687,-9878 -45758,-9961 -45986,-10216 -46345,-10504
+Brandenburger Str. (Golzow): Verbundsteinpflaster	Q1 -43637,-14114 -43621,-14048 -43622,-13965 -43644,-13964
+Reckahner Dorfstr.: Asphalt	Q0- -47601,-8765 -47673,-8741 -47768,-8731 -47919,-8676
+Golzow - Grüneiche: Asphalt	Q0 -43645,-13973 -43677,-13970
+Golzow - Grüneiche: schlechtes Kopfsteinpflaster mit Asphalt aufgefüllt	Q3+ -43677,-13970 -43951,-13957
+Golzow - Grüneiche: Asphalt	Q0+ -43951,-13957 -44108,-13946 -44553,-13606 -44591,-13526
+Grüneiche: schadhafter Asphalt	Q1- -44591,-13526 -44682,-13351 -44767,-13238
+Grüneiche - Krahne: Beton mit einigen Schäden	Q1 -44767,-13238 -44816,-13170 -44984,-12872 -45316,-12460 -45612,-12153
+Grüneiche - Krahne: Fahrbahn betoniert, Radweg asphaltiert	Q0 -45612,-12153 -46022,-11758 -46267,-11025
+Krahne: Asphalt	Q0+ -46267,-11025 -46345,-10504
+Krahne: Asphalt	Q0 -46345,-10504 -46514,-10282
+Krahne - Reckahn: Fahrbahn und Radweg asphaltiert	Q0 -46514,-10282 -46552,-10228 -47074,-9399 -47131,-9210
+Reckahn: Asphalt	Q0 -47131,-9210 -47137,-9186 -47218,-8950 -47300,-8797 -47471,-8792 -47601,-8765 -47426,-8424 -47419,-8392
+Reckahn - Göttin: Fahrbahn und Radweg Asphalt	Q0 -47419,-8392 -47412,-8280 -47403,-8168 -47521,-7191 -47611,-6906
+Reckahn - Göttin: Asphalt	Q0 -47611,-6906 -47772,-6510 -47768,-6493 -47768,-6470 -47818,-6310 -47730,-5937 -47637,-5847 -47606,-5802 -47625,-5638 -47441,-5325 -47444,-5265
+Göttin - Brandenburg: Asphalt	Q0 -47444,-5265 -47506,-5156 -47557,-4870 -47567,-4785 -47642,-4220 -47705,-3703 -47683,-2417 -47685,-2385 -47680,-2064 -47701,-2011
+Wiesenweg (Brandenburg): Asphalt	Q0 -48109,-1346 -48037,-1268 -47977,-1185 -47912,-1154 -47788,-1143 -47490,-1160
+Wredowstr. (Brandenburg): Asphalt	Q0 -47490,-1160 -47260,-967
+Bauhofstr. (Brandenburg): Radweg Verbundsteinpflaster, Fahrbahn mit Kopfsteinpflaster	Q1; -47260,-967 -47029,-1188
+Bauhofstr. (Brandenburg): Fahrbahn mit Kopfsteinpflaster	Q2+; -47029,-1188 -46984,-1234
+Jakobstr., Steinstr. (Brandenburg): glatt gepflastert	Q1 -46984,-1234 -46857,-1035 -46517,-691
 ######################### User Contributions #################################
 #: by: osm vvv
 Birkenweg: Asphalt	Q0 27432,12680 27427,12773 27483,12922
@@ -6266,7 +6290,7 @@ Langendamm - Braunsdorf: unebener Asphalt	Q1 47337,-6694 47357,-6663 47354,-6584
 Braunsdorf - Fürstenwalde: sehr guter Asphalt	Q0 48131,-4175 53143,-4392
 Wildenbruch: übles Kopfsteinpflaster	Q3 -12283,-13901 -12323,-14026 -12713,-13973
 Tremsdorf - Fresdorf: Plattenweg	Q2 -10851,-15534 -10432,-15412 -10070,-15144 -9816,-15072 -9586,-15079
-Emstal - Lehnin: Asphalt, sowohl Fahrbahn als auch Radweg	Q0 -31776,-12438 -32010,-12375 -32394,-12207 -32629,-12038 -32737,-11697 -33398,-11574 -33613,-11062 -33784,-11021 -33786,-10636 -33923,-10395
+Emstal - Lehnin: Asphalt, sowohl Fahrbahn als auch Radweg	Q0 -31740,-12390 -32041,-12326 -32153,-12254 -32187,-12251 -32309,-12245 -32587,-12020 -32653,-11792 -32738,-11733 -33203,-11618 -33613,-11062 -33672,-10987 -33695,-10961 -33745,-10853 -33733,-10631 -33786,-10547 -33889,-10485 -33906,-10461 -33913,-10400 -33925,-10386
 Götz - Deetz: Beton mit Löchern und Fugen	Q2 -35606,300 -35150,381 -34843,875
 Götz - Deetz: Asphalt	Q0 -34843,875 -34062,1237 -33762,1481 -33412,2600 -33225,2700 -33062,3106 -32555,3570
 Trechwitz - B1: Asphalt	Q0 -36004,-5366 -35887,-4068 -35806,-3868 -36437,-3031 -36469,-2791 -36487,-2506 -36006,-418

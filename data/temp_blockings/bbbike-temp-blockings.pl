@@ -2627,7 +2627,7 @@ EOF
        text  => 'K 6917; (B246 Borkheide-Kanin); OD Borkwalde Straßenbauarbeiten Vollsperrung 08.08.2005-16.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -26809,-18383 -27757,-17707
+	q4 -26641,-18501 -27100,-17998 -27669,-17684
 EOF
      },
      { from  => 1124748000, # 2005-08-23 00:00
@@ -3501,8 +3501,8 @@ EOF
        text  => 'K 6950 Gohlitzstr. OL Lehnin, zw. Belziger Str. u. Lindenstr. Straßenbau; Herst.Umleit.stre. Vollsperrung 11.10.2005-31.03.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -34752,-11288 -34324,-11007
-	q4 -34232,-10832 -34324,-11007
+	q4 -34752,-11288 -34556,-11168 -34327,-11004
+	q4 -34250,-10832 -34327,-11004
 EOF
      },
      { from  => 1131836400, # 2005-11-13 00:00
@@ -3680,7 +3680,7 @@ EOF
        text  => 'L 088 Bahnhofstr. OD Lehnin, Höhe Marktplatz Umgestaltung Marktplatz Vollsperrung 16.01.2006-17.03.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -33986,-10466 -34009,-10453 -34112,-10516 -34429,-10543 -34492,-10500
+	q4 -33993,-10461 -34009,-10453 -34112,-10516 -34429,-10543 -34492,-10500
 EOF
      },
      { from  => undef, # 
@@ -10557,7 +10557,7 @@ EOF
        text  => 'L 088 Klaistow-Lehnin OD Emstal Straßenbauarbeiten Vollsperrung 08.11.2007-30.11.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -32394,-12207 -32010,-12375 -31776,-12438 -31585,-12330
+	q4::inwork -32309,-12245 -32187,-12251 -32153,-12254 -32041,-12326 -31740,-12390 -31582,-12301
 EOF
      },
      { from  => 1193957489, # 2007-11-01 23:51
@@ -11435,7 +11435,7 @@ EOF
        text  => 'L 086 Golzow - Damsdorf OD Lehnin Fläming-Frühlingsfest Vollsperrung 27.04.2008-27.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::temp -33986,-10466 -33923,-10395 -33897,-10328 -33761,-10213
+	q4::temp -33993,-10461 -33925,-10386 -33897,-10328 -33761,-10213
 EOF
      },
      { from  => 1209160800, # 2008-04-26 00:00
@@ -11443,7 +11443,7 @@ EOF
        text  => 'L 088 Emstal - Netzen OD Lehnin Fläming-Frühlingsfest Vollsperrung 27.04.2008-27.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::temp -33986,-10466 -34009,-10453 -34112,-10516 -34429,-10543 -34492,-10500
+	q4::temp -33993,-10461 -34009,-10453 -34112,-10516 -34429,-10543 -34492,-10500
 EOF
      },
      { from  => 1208546772, # 2008-04-18 21:26
@@ -12570,7 +12570,7 @@ EOF
        text  => 'K 6917 K.-Marx-/F.-Engelsstraße OL Borkheide Bahnübergang zw. Birkenhain u. Str.d. Frieden Bauarbeiten am Gleiskörper Vollsperrung 08.09.2008-22.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -26249,-20121 -26258,-20094 -26809,-18383
+	2::inwork -26249,-20121 -26258,-20094 -26641,-18501
 EOF
      },
      { from  => 1222552800, # 2008-09-28 00:00
@@ -13190,7 +13190,7 @@ EOF
        text  => 'L 088 Bahnhofstr. OD Lehnin, zw. Friedensstr. und Kreisverkehr Gehwegbau halbseitig gesperrt; Einbahnstraße 20.10.2008-19.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -34492,-10500 -34429,-10543 -34112,-10516 -34009,-10453 -33986,-10466
+	q4::inwork -34492,-10500 -34429,-10543 -34112,-10516 -34009,-10453 -33993,-10461
 EOF
      },
      { from  => 1224367200, # 2008-10-19 00:00
@@ -13673,7 +13673,7 @@ EOF
        text  => 'L 086 Belziger Straße OD Lehnin Kreuzungsbereich Gohlitzstraße Straßenbau Vollsperrung 23.03.2009-31.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -34752,-11288 -34324,-11007
+	q4::inwork -34752,-11288 -34556,-11168 -34327,-11004
 EOF
      },
      { from  => 1224540000, # 2008-10-21 00:00
@@ -18544,7 +18544,7 @@ EOF
        type  => 'handicap',
        source_id => '105100738',
        data  => <<EOF,
-	q4::inwork -48338,-2586 -48114,-2344 -47938,-2184
+	q4::inwork -48338,-2586 -48119,-2343 -47938,-2184
 EOF
      },
      { from  => 1280678128, # 2010-08-01 17:55
@@ -30382,7 +30382,7 @@ EOF
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-07-02
+#: last_checked: 2021-07-24
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 EOF

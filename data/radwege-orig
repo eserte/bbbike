@@ -37,7 +37,7 @@
 neu asphaltiert	RW1; 9227,8890 9226,8967
 geschützter Radstreifen, Grünmarkierung	RW3; 9226,8967 9225,9038 9224,9053
 neu asphaltiert	RW1; 9224,9053 9225,9111 9232,9187 9248,9350
-#: by: https://www.infravelo.de/projekt/mehringdamm/ (26.06.2021 bis 27.07.2021) (mittlerweile: Verzögerung um einige Wochen wegen Baumpflegearbeiten)
+#: by: https://www.infravelo.de/projekt/mehringdamm/ (26.06.2021 bis 27.07.2021) (mittlerweile: Verzögerung um einige Wochen wegen Baumpflegearbeiten) (mittlerweile: Start+Ende 3. Quartal 2021)
 #: XXX Grünmarkierung geplant
 #: last_checked: 2021-07-18
 #: check_frequency: 60d
@@ -2093,7 +2093,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2021-06-06
+#: last_checked: 2021-07-24
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -6963,7 +6963,7 @@ provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 96
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/behoerden-kommunizieren-nicht-radspur-wird-nicht-fertig_a271255
 #: by: https://abendblatt-berlin.de/2020/06/11/pop-up-radwege-legen-berliner-hauptstrassen-lahm/
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/fdp-stellt-ihr-verkehrskonzept-fuer-kantstrasse-vor_a288349
-#: last_checked: 2021-05-24 vvv
+#: last_checked: 2021-07-24 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
@@ -7108,10 +7108,11 @@ provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4
 #: by: http://www.infravelo.de/projekt/schoeneberger-strasse/ (früherer Eintrag) (bis 4. Quartal 2021, 700m Schutzstreifen (was nicht ganz reichen würde...))
 #: by: http://www.infravelo.de/projekt/schoeneberger-strasse-2/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
+#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-dauerhaften-radweg-an-der-schoeneberger-strasse_a317109
 #: XXX laut rbbtext Bauarbeiten bis 2021-03-20
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16)
 #: note: mit Gelbmarkierung
-#: last_checked: 2021-05-22 vvv
+#: last_checked: 2021-07-23 (bw) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-31 vvv
 #: note: wieder aufgehoben: provisorische Radspur	RW3;

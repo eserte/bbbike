@@ -2890,7 +2890,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-07-02
+#: last_checked: 2021-07-24
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 ',
@@ -4044,22 +4044,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1634248800
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/2021/07/oranienburger-chaussee-b96/
-#: by: https://twitter.com/VIZ_Berlin/status/1416050417591537667 (zweite Sperrung wurde verschoben)
-#: source_id: viz2021:13.287552,52.659932,09.07.2021,15:00
-#: source_id: viz2021:13.287552,52.659932,16.07.2021,18:00
-#: source_id: viz2021:13.287552,52.659932,22.07.2021,18:00
-# REMOVED --- #: note: nächster Termin: 16.07.2021 18:00 Uhr bis 19.07.2021 05:00 Uhr --- #: next_check: 2021-07-12
-	2::inwork 2150,28127 2178,28067 2345,27670
-',
-         'from' => 1626818400,
-         'id' => 3410,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1104559.php',
-         'text' => 'B96: zwischen Staehleweg und Hohen Neuendorf wegen Bauarbeiten gesperrt, vom 22.07.2021 18:00 Uhr bis 24.07.2021 18:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1627142400
-       },
+       undef,
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021

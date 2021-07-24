@@ -2929,7 +2929,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2021-07-02 vvv
+#: last_checked: 2021-07-24 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3550,6 +3550,19 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X -45864,-1044
+	X -46984,-1234
+	X -48109,-1346
+	X -47451,-1704
+	X -47701,-2011
+	B -47683,-2417
+	B0 -47557,-4870
+	B0 -47768,-6493
+#: note: Anforderungsampel
+	F -33906,-10461
+#: note: vermutlich nur während der Schulzeit eingeschaltet
+#: note: Anforderungsampel
+	F -24033,-14548
 	X 24278,-9878
 #: note: für den Radweg nicht relevant
 	X 24343,-10276
@@ -3635,12 +3648,12 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 	F -46340,-168
 	F -46334,-1506
 	X -46132,-1377
-	X -45761,-1064
+	X -45778,-1079
 #: note: Anforderung für Radfahrer
 	X -44635,-1450
 #: note: 2x Ampeln für Radfahrer, einmal mit Anforderung
 	X -42961,-412
-	X -46166,-963
+	X -46178,-956
 	X -46517,-691
 	X -80617,45668
 	X -56015,49020
@@ -3728,7 +3741,7 @@ Umgehung mit Treppen existiert	Zbr 4611,63946
 	B 58135,-5057
 	B 45836,-8
 	B 69963,-5374
-	B -48114,-2344
+	B -48119,-2343
 	B 9342,-90771
 	X 18293,-1472
 	X 18419,-1418
