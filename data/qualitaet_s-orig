@@ -983,7 +983,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-07-22
+#: last_checked: 2021-07-25
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -5534,7 +5534,8 @@ Mettkauer Weg: Asphalt	Q0 22064,-481 22034,-631
 Schlichtingsheimer Weg: Asphalt	Q0 22144,-483 22167,-553 22162,-648
 Wohlauer Str.: Beton	Q0 22047,-1042 22114,-867 22143,-645
 Florastr. (Bohnsdorf): Asphalt	Q0 22307,-1329 22322,-1207 22339,-1080
-Sandbacher Weg: Beton	Q0- 23504,-938 23414,-980 23408,-982 23072,-1116
+Sandbacher Weg: Asphalt	Q0 23504,-938 23414,-980
+Sandbacher Weg: Beton	Q0- 23414,-980 23408,-982 23072,-1116
 Sandbacher Weg: guter Asphalt	Q0 23072,-1116 22845,-1210 22720,-1255 22482,-1226 22322,-1207 22146,-1183 21930,-1159
 Falkenstr.: Asphalt	Q0 22362,-1509 22369,-1453 22382,-1338
 Jägerstr. (Bohnsdorf): Asphalt	Q0 22470,-1349 22482,-1226 22495,-1098
@@ -9030,7 +9031,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2021-06-20 vvv
+#: last_checked: 2021-07-25 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628

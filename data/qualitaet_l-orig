@@ -939,12 +939,12 @@ Mozartstr. (Bestensee): Asphalt	Q0 28042,-18007 28037,-17946 27971,-17847
 Mozartstr. (Bestensee): Asphalt	Q0 28279,-17744 27971,-17847 27913,-17868 27640,-17955 27605,-17958
 (Mozartstr. - Friedenstr.) (Bestensee): Verbundsteinpflaster	Q1 27913,-17868 27897,-17819 27882,-17766
 Freiligrathstr. (Bestensee): Verbundsteinpflaster	Q1 28365,-17654 28363,-17664 28297,-17703 28254,-17703 27897,-17819 27617,-17909
-Friedenstr. (Bestensee): Verbundsteinpflaster	Q1 28462,-17618 28365,-17654 28314,-17626 28288,-17634
+Friedenstr. (Bestensee): Verbundsteinpflaster	Q1 28462,-17618 28419,-17633 28365,-17654 28314,-17626 28288,-17634
 Friedenstr. (Bestensee): Beton	Q1 28288,-17634 27882,-17766 27871,-17737 27854,-17680
-Menzelstr. (Bestensee): Verbundsteinpflaster	Q1 28391,-17431 28060,-17536 27832,-17615 27680,-17663
-Böcklinstr. (Bestensee): Verbundsteinpflaster	Q1 28331,-17271 28010,-17375 27745,-17452
-Schubertstr. (Bestensee): Verbundsteinpflaster	Q1 28296,-17179 27988,-17273 27791,-17329
-Beethovenstr. (Bestensee): Verbundsteinpflaster	Q1 28259,-17081 27969,-17172 27829,-17220
+Menzelstr. (Bestensee): Verbundsteinpflaster	Q1 28391,-17431 28359,-17440 28060,-17536 27832,-17615 27680,-17663
+Böcklinstr. (Bestensee): Verbundsteinpflaster	Q1 28331,-17271 28304,-17279 28010,-17375 27745,-17452
+Schubertstr. (Bestensee): Verbundsteinpflaster	Q1 28296,-17179 28264,-17188 27988,-17273 27791,-17329
+Beethovenstr. (Bestensee): Verbundsteinpflaster	Q1 28259,-17081 28224,-17091 27969,-17172 27829,-17220
 Hermann-Löns-Str. (Bestensee): Verbundsteinpflaster	Q1 28091,-17604 28060,-17536 28010,-17375 27988,-17273 27969,-17172
 Breite Str. (Bestensee): Asphalt	Q0 26989,-17904 26998,-17845 27005,-17792 27025,-17688
 Waldstr. (Bestensee): Beton	Q0- 27320,-17717 27307,-17832 27005,-17792
@@ -5087,8 +5087,8 @@ Funkerberg/Goethebahn: Asphalt	Q0 25632,-11361 25487,-11195 25470,-11166 25398,-
 Freiheitstr. (Wildau): Asphalt	Q0 25192,-8936 25251,-8868 25455,-8814 25578,-8781 25725,-8743 25910,-8697 26133,-8639 26277,-8527 26514,-8526 26589,-8499 26652,-8493 26749,-8481 26914,-8452
 Am Friedhof (Wildau): Asphalt	Q0 25118,-8791 25106,-8797 24916,-8686
 Schillerallee (Wildau): Asphalt	Q0 25478,-9638 25498,-9334 25518,-9218 25535,-9055 25578,-8781
-Röntgenstr. (Wildau): Asphalt	Q0 25700,-9097 25535,-9055 25423,-9022
-Röntgenstr. (Wildau): glatteres Kopfsteinpflaster	Q2+ 25700,-9097 25879,-9145
+Röntgenstr. (Wildau): Asphalt	Q0 25423,-9022 25535,-9055 25620,-9076
+Röntgenstr. (Wildau): glatteres Kopfsteinpflaster	Q2+ 25620,-9076 25700,-9097 25879,-9145
 #: by: osm
 #: XXX smoothness=intermediate --- genauer prüfen!
 Röntgenstr. (Wildau): Asphalt	Q0 25423,-9022 25313,-8967
@@ -5108,13 +5108,15 @@ Fichtestr. (Wildau): Kopfsteinpflaster	Q2 25714,-9005 25720,-8965 25738,-8852 25
 Fichtestr. (Wildau): Asphalt	Q0 25705,-8663 25693,-8617 25709,-8541 25697,-8523 25509,-8485 25345,-8421
 Fichtestr. (Wildau): Beton	Q1+ 25725,-8743 25705,-8663
 Fichtestr. (Wildau): Asphalt	Q0 25345,-8421 25364,-8331
-(Fichtestr. - Sanddornweg): wassergebundene Decke	Q1 25697,-8523 25690,-8511 25673,-8472 25652,-8457 25669,-8408 25667,-8395 25636,-8386
+(Fichtestr. - Sanddornweg): wassergebundene Decke	Q1 25697,-8523 25690,-8511 25673,-8472 25652,-8457 25670,-8402
+(Fichtestr. - Im Röthegrund): wassergebundene Decke	Q1 25670,-8402 25680,-8346
+(Fichtestr. - Sanddornweg): wassergebundene Decke	Q1 25670,-8402 25636,-8386
 Lessingallee (Wildau): Asphalt	Q0- 25197,-9566 25478,-9638 25615,-9652 25677,-9654
 Goethebahn - Lessingallee: Verbundsteinpflaster	Q1+ 25107,-9554 25197,-9566
 (Goethebahn - A10-Center): Verbundsteinpflaster	Q1 25209,-10021 25109,-10060 25022,-10098
 Forstallee (Miersdorf): Asphalt	Q0-; 24602,-7131 24623,-6966 24672,-6698 24726,-6632
 Forstallee (Miersdorf): Asphalt mit einigen Unebenheiten	Q1; 24726,-6632 24672,-6698 24623,-6966 24602,-7131
-Forstallee (Miersdorf): Asphalt mit einigen Schäden	Q1+ 24726,-6632 24797,-6578 24946,-6533 25619,-6350
+Forstallee (Miersdorf): Asphalt mit einigen Schäden	Q1+ 24726,-6632 24797,-6578 24946,-6533 25400,-6408 25581,-6359 25619,-6350
 Am Mühlenberg: Asphalt	Q0 24703,-7243 24416,-7241 24283,-7242
 Straße am Hochwald: Asphalt	Q0 24700,-7331 24616,-7384
 #: by: osm
@@ -5989,6 +5991,7 @@ Wiesenweg (Brandenburg): Asphalt	Q0 -48109,-1346 -48037,-1268 -47977,-1185 -4791
 Wredowstr. (Brandenburg): Asphalt	Q0 -47490,-1160 -47260,-967
 Bauhofstr. (Brandenburg): Radweg Verbundsteinpflaster, Fahrbahn mit Kopfsteinpflaster	Q1; -47260,-967 -47029,-1188
 Bauhofstr. (Brandenburg): Fahrbahn mit Kopfsteinpflaster	Q2+; -47029,-1188 -46984,-1234
+Bauhofstr. (Brandenburg): Radweg Verbundsteinpflaster, Fahrbahn mit einem Streifen Kopfsteinpflaster	Q1; -46984,-1234 -47029,-1188 -47260,-967
 Jakobstr., Steinstr. (Brandenburg): glatt gepflastert	Q1 -46984,-1234 -46857,-1035 -46517,-691
 ######################### User Contributions #################################
 #: by: osm vvv
@@ -8406,6 +8409,7 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 -16961,13120
 Kreuzungsbereich mit Kleinsteinpflaster	Q2+ 31936,6557
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 24157,-5931
 Bereich vor dem Schloss Diedersdorf mit Kopfsteinpflaster	Q2 7296,-7482
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25955,-6662
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25902,-6536
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25852,-6410
 #: ignore ^^^

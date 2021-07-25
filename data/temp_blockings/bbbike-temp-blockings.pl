@@ -19293,7 +19293,7 @@ EOF
 #: XXX anschauen!
 #: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
 #: note: laut rbb nur bis 1.8.2021
-#: last_checked: 2021-07-22
+#: last_checked: 2021-07-25
 #: check_frequency: 7d
 # REMOVED (hier nicht)	q4::inwork; 13651,11731 13895,11663
 	q4::inwork; 13895,11663 13954,11647
@@ -30968,7 +30968,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-22
+#: last_checked: 2021-07-25
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32359,25 +32359,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1627211027, # undef, # XXX
        text  => 'Auerstr.: Fahrbahn wegen Bauarbeiten gesperrt, vermutlich bis zum 30.7.2021',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: AUER-2021
-#: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken); außerdem gibt's eine Einbahnstraßenregelung für Autos
-#: XXX laut rbb bis 30.7.2021
-#: also_indoor: traffic (G,H)
-#: priority: #A vvv
-#: last_checked: 2021-07-11 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2021-07-30 vvv
+# REMOVED (weitgehend offen) --- #: next_check_id: AUER-2021 --- #: XXX nach den Bauarbeiten werden die Parkstreifen gepflastert sein und auf der östlichen Seite breiter sein (für Querparken); außerdem gibt's eine Einbahnstraßenregelung für Autos --- #: XXX laut rbb bis 30.7.2021 --- #: also_indoor: traffic (G,H) --- #: priority: #A vvv --- #: last_checked: 2021-07-11 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2021-07-30 vvv
 # REMOVED (hier fertig) ---	q4::inwork 13025,12523 13067,12583
 	q4::inwork 13067,12583 13202,12790
 	q4::inwork; 13273,12902 13202,12790
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ -- #: last_checked ^^^ --- #: priority ^^^
 EOF
      },
      { from  => undef, # 
