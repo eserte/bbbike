@@ -525,7 +525,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-07-02
+#: last_checked: 2021-07-26
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -1003,18 +1003,18 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        {
          'data' => '#: by: https://viz.berlin.de/2021/07/verkehrsvorschau-120721/
-#: XXX anschauen!
+#: XXX anschauen! zurzeit (2021-07-26 ist die Baustelle etwa 120m lang)
 #: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
 #: note: laut rbb nur bis 1.8.2021
-#: last_checked: 2021-07-25
+#: last_checked: 2021-07-26
 #: check_frequency: 7d
-# REMOVED (hier nicht)	q4::inwork; 13651,11731 13895,11663
-	q4::inwork; 13895,11663 13954,11647
+	q4::inwork; 13651,11731 13895,11663
+# REMOVED (hier nicht mehr)	q4::inwork; 13895,11663 13954,11647
 ',
          'from' => 1626024702,
          'id' => 2188,
          'source_id' => 'IM_020398',
-         'text' => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn ab Libauer Str. bis Simon-Dach-Str. gesperrt, bis Mitte August 2021',
+         'text' => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn zwischen Warschauer Str. bis Libauer Str. in Richtung Osten gesperrt, bis Mitte August 2021',
          'type' => 'handicap',
          'until' => 1629043200
        },
@@ -2289,7 +2289,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-07-12 (mapillary)
+#: last_checked: 2021-07-26
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2692,11 +2692,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: VOLTAIRE-2019
-#: osm_watch: way id="194962398" version="11"
+#: osm_watch: way id="194962398" version="12"
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-07-24
+#: last_checked: 2021-07-26
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 ',
@@ -2803,7 +2803,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-25
+#: last_checked: 2021-07-26
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -3341,8 +3341,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?
-#: note: 2021-06-13 ("Radfahrer frei"-Schilder fehlen weiterhin, aber zumindest sonntags scheint man auf dem noch existierenden Radstreifen gut durchzukommen)
-#: last_checked: 2021-06-13
+#: note: 2021-07-26 ("Radfahrer frei"-Schilder fehlen weiterhin, aber manchmal scheint man auf dem noch existierenden Radstreifen gut durchzukommen)
+#: last_checked: 2021-07-26
 	q4::inwork; 9195,11972 9207,11880
 # REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
 ',

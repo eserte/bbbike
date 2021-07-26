@@ -25,8 +25,8 @@ Schulze-Boysen-Str.: Gegenverkehrsregelung	?::inwork 15477,11338
 # 
 #: next_check_id: HERMANNHESSESTR-2019
 #: XXX wird die temporäre Ampel durch eine permanente ersetzt?
-#: last_checked: 2021-03-30 (mapillary)
-#: check_frequency: 120d
+#: last_checked: 2021-07-26 (traffic)
+#: check_frequency: 60d
 	X::inwork 9868,19023
 # 
 # REMOVED --- #: note: Baustellenampel in der Neuen Roßstr. --- #: source_id: 2147345021 (bis 06.07.2020) --- #: source_id: 2147345825 --- #: XXX ist die Ampel mittlerweile abgebaut (wegen der Einbahnstraßenregelung)? --- #: XXX laut fritz Sperrung bis 2020-06-30 --- #: last_checked: 2020-05-12 --- #: next_check: 2020-05-13 --- #: valid: -20200706 ---	X::inwork 10780,11721
@@ -60,7 +60,7 @@ Schulze-Boysen-Str.: Gegenverkehrsregelung	?::inwork 15477,11338
 # 
 #: next_check_id: FRANZOESISCHE-2018
 #: osm_watch: node id="6380038401" version="1"
-#: last_checked: 2021-05-13
+#: last_checked: 2021-07-26
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 #: valid: -20220930
@@ -68,7 +68,7 @@ Schulze-Boysen-Str.: Gegenverkehrsregelung	?::inwork 15477,11338
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2021-07-02
+#: last_checked: 2021-07-26
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -2923,13 +2923,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: osm_watch: node id="5931765487" version="1"
 #: osm_watch: node id="5931765488" version="1"
-#: last_checked: 2021-07-02
+#: last_checked: 2021-07-26
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2021-07-24 vvv
+#: last_checked: 2021-07-26 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
