@@ -66,13 +66,13 @@ EOF
      { from  => $isodate2epoch->("2019-06-08 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-06-09 23:59:59"),
        periodic => 1,
-       recurrences => [['easter', 49, start => "2020-10-25T00:00:00"]], # Pfingstsonntag
-       recurrence_prewarn_days => -67,
+       recurrences => [['easter', 49, start => "2021-10-25T00:00:00"]], # Pfingstsonntag
        source_id => 'https://www.karneval.berlin/', # früher http://www.karneval-berlin.de/de/, heute ist das eine Werbeseite
        text  => 'Karneval der Kulturen, 09.06.2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.karneval.berlin/ (findet möglicherweise am 15. August 2021 statt)
+#: by: https://www.karneval.berlin/de/aktuell.html (fällt 2021 wieder aus)
 	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9047,9750
 # REMOVED ---	2::temp 9047,9750 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
 	2::temp 10713,9260 10670,9286 10639,9304 10615,9300 10564,9292
@@ -914,6 +914,7 @@ EOF
        until => $isodate2epoch->("2019-09-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 8, start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => 21,
        text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (07.09.2019 bis 08.09.2019)',
        type  => 'gesperrt',
        source_id => 'http://www.hier-in-rudow.de/meilenfeste.html',
@@ -23856,6 +23857,7 @@ EOF
        until => $isodate2epoch->("2019-09-14 23:59:59"),
        periodic => 1,
        recurrences => [["yearly", days => 31, months => 8, start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => 21,
        text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 14. September 2019, 12 bis 21 Uhr ',
        type  => 'gesperrt',
        source_id => 'https://www.turmstrasse.de/aktuelles',
@@ -30968,7 +30970,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-26
+#: last_checked: 2021-07-27
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32808,22 +32810,16 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1627409340, # undef, # XXX
        text  => 'Lichterfelder Ring/Stanzer Zeile: Bauarbeiten, Kreuzungsbereich gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Wann wird die Sperrung aufgehoben? vvv
-#: also_indoor: traffic (G) vvv
-#: last_checked: 2021-05-30 vvv
-#: check_frequency: 60d vvv
+# REMOVED (in den traffic-Karten nicht mehr zu sehen) --- #: add_fragezeichen: Wann wird die Sperrung aufgehoben? vvv --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2021-05-30 vvv --- #: check_frequency: 60d vvv
 	q4::inwork 6130,449 6112,547
 	q3::inwork 6112,547 6400,579
 	q4::inwork 5907,519 6112,547 6089,643
 	q3::inwork 6089,643 6066,821
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => 1622527200, # 2021-06-01 08:00
@@ -33091,7 +33087,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-07-08 11:00:00"),
-       until => 1639609200, # 2021-12-16 00:00
+       until => $isodate2epoch->("2021-12-15 17:00:00"),
        text  => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), sowie die Anbindung Nöldnerstr. (komplett, auch für Fußgänger), vom 09.07.2021 11:00 bis 15.12.2021 17:00 ',
        type  => 'gesperrt',
        source_id => 'viz2021:13.475242,52.50154,09.07.2021,11:00',
@@ -33122,7 +33118,7 @@ EOF
 EOF
      },
      { from  => 1625349600, # 2021-07-04 00:00
-       until => 1627941600, # 2021-08-03 00:00
+       until => $isodate2epoch->("2021-08-02 17:00:00"),
        text  => 'Frankfurter Allee: Bauarbeiten zwischen Gürtelstr. und Schulze-Boysen-Str., unter Umständen ist das Überqueren in Höhe Rathausstr. nicht möglich, vom 05.07.2021 06:00 bis 02.08.2021 17:00',
        type  => 'gesperrt',
        source_id => 'viz2021:13.480176,52.513101,05.07.2021,06:00',
@@ -33142,7 +33138,7 @@ EOF
 EOF
      },
      { from  => 1626300000, # 2021-07-15 00:00
-       until => 1628287200, # 2021-08-07 00:00
+       until => $isodate2epoch->("2021-08-06 17:00:00"),
        text  => 'Gehrenseestr. im Bereich S-Bhf.: Bauarbeiten, evtl. für Radfahrer nicht passierbar, vom 16.07.2021 04:00 bis 06.08.2021 17:00',
        type  => 'gesperrt',
        source_id => 'viz2021:13.526597,52.556118,16.07.2021,08:00', # mittlerweile inaktiv wegen Startzeitänderung (und dadurch Id-Änderung)
@@ -33171,14 +33167,14 @@ EOF
 EOF
      },
      { from  => 1626559200, # 2021-07-18 00:00
-       until => 1629324000, # 2021-08-19 00:00
+       until => 1627402278, # 1629324000, # 2021-08-19 00:00
        text  => 'Möckernstr.: Bauarbeiten Richtung Süden zwischen Tempelhofer Ufer und Yorckstr., Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 19.07.2021 07:00 bis 18.08.2021 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.380223,52.498741,19.07.2021,07:00',
        data  => <<EOF,
 #: next_check_id: MOECKERN-2021
 #: note: bei rbb nur bis 9.8.2021
-#: next_check: 2021-08-09
+# REMOVED (Einbahnstraße explizit für Radfahrer offen) --- #: next_check: 2021-08-09
 	q4::inwork; 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
 EOF
      },
@@ -33193,7 +33189,7 @@ EOF
 EOF
      },
      { from  => 1626614528, # 2021-07-18 15:22
-       until => 1628287200, # 2021-08-07 00:00
+       until => $isodate2epoch->("2021-08-06 17:00:00"),
        text  => 'Machnower Str.: für Radfahrer Richtung Westen gesperrt, voraussichtlich bis 06.08.2021 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.259269,52.43091,28.06.2021,07:00',
@@ -33211,12 +33207,24 @@ EOF
 EOF
      },
      { from  => 1627164000, # 2021-07-25 00:00
-       until => 1636239600, # 2021-11-07 00:00
+       until => $isodate2epoch->("2021-11-06 17:00:00"),
        text  => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 06.11.2021 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.326349,52.447526,26.07.2021,07:00',
        data  => <<EOF,
 	q4::inwork; 5271,4547 5316,4637 5336,4676
+EOF
+     },
+     { from  => 1627077600, # 2021-07-24 00:00
+       until => undef, # XXX
+       text  => 'Müggelseedamm: Fahrbahn zwischen Josef-Nawrocki-Str. und Scharnweberstr. gesperrt, evtl. sind auch Radfahrer betroffen, Ende der Sperrung unbekannt',
+       type  => 'handicap',
+       source_id => 'viz2021:13.62476,52.44684,25.07.2021,21:02',
+       data  => <<EOF,
+#: XXX Bis wann dauert die Sperrung? Sind Radfahrer tatsächlich betroffen?
+#: last_checked: 2021-07-27 (viz, rbb)
+#: check_frequency: 7d
+	q4::inwork 25552,4829 25720,4828
 EOF
      },
     );

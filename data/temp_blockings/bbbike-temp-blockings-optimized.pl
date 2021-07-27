@@ -2803,7 +2803,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-26
+#: last_checked: 2021-07-27
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -3610,26 +3610,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: add_fragezeichen: Wann wird die Sperrung aufgehoben? vvv
-#: also_indoor: traffic (G) vvv
-#: last_checked: 2021-05-30 vvv
-#: check_frequency: 60d vvv
-	q4::inwork 6130,449 6112,547
-	q3::inwork 6112,547 6400,579
-	q4::inwork 5907,519 6112,547 6089,643
-	q3::inwork 6089,643 6066,821
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 3386,
-         'text' => 'Lichterfelder Ring/Stanzer Zeile: Bauarbeiten, Kreuzungsbereich gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: BUCKOWERDAMM-2021
 # REMOVED ---	q4::inwork 12984,1011 12941,1256 12938,1348
@@ -3846,7 +3827,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'source_id' => 'viz2021:13.475242,52.50154,09.07.2021,11:00',
          'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), sowie die Anbindung Nöldnerstr. (komplett, auch für Fußgänger), vom 09.07.2021 11:00 bis 15.12.2021 17:00 ',
          'type' => 'gesperrt',
-         'until' => 1639609200
+         'until' => 1639584000
        },
        undef,
        {
@@ -3859,7 +3840,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'source_id' => 'viz2021:13.480176,52.513101,05.07.2021,06:00',
          'text' => 'Frankfurter Allee: Bauarbeiten zwischen Gürtelstr. und Schulze-Boysen-Str., unter Umständen ist das Überqueren in Höhe Rathausstr. nicht möglich, vom 05.07.2021 06:00 bis 02.08.2021 17:00',
          'type' => 'gesperrt',
-         'until' => 1627941600
+         'until' => 1627916400
        },
        {
          'data' => '	q4::inwork 5793,23422 5893,23287
@@ -3880,7 +3861,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'source_id' => 'viz2021:13.526597,52.556118,16.07.2021,08:00',
          'text' => 'Gehrenseestr. im Bereich S-Bhf.: Bauarbeiten, evtl. für Radfahrer nicht passierbar, vom 16.07.2021 04:00 bis 06.08.2021 17:00',
          'type' => 'gesperrt',
-         'until' => 1628287200
+         'until' => 1628262000
        },
        {
          'data' => '	q4::inwork 60206,86603 59776,86911 59791,87005 59779,87064 59776,87207 59766,87273
@@ -3892,30 +3873,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1667257200
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1106813.php
-	2::inwork 19614,15061 19643,15025 19615,14960 19551,14961 19516,14993
-',
-         'from' => 1626559200,
-         'id' => 3417,
-         'source_id' => 'viz2021:13.539196,52.539312,19.07.2021,07:00',
-         'text' => 'Landsberger Allee: Bauarbeiten an der Rampe zur Märkischen Allee Richtung Ahrensfelde, Fahrbahn gesperrt, vom 19.07.2021 07:00 bis 26.07.2021 17:00',
-         'type' => 'gesperrt',
-         'until' => 1627336800
-       },
-       {
-         'data' => '#: next_check_id: MOECKERN-2021
-#: note: bei rbb nur bis 9.8.2021
-#: next_check: 2021-08-09
-	q4::inwork; 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
-',
-         'from' => 1626559200,
-         'id' => 3418,
-         'source_id' => 'viz2021:13.380223,52.498741,19.07.2021,07:00',
-         'text' => 'Möckernstr.: Bauarbeiten Richtung Süden zwischen Tempelhofer Ufer und Yorckstr., Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, vom 19.07.2021 07:00 bis 18.08.2021 17:00 ',
-         'type' => 'handicap',
-         'until' => 1629324000
-       },
+       undef,
+       undef,
        {
          'data' => '	q4::inwork; 3026,3058 3023,2958 3019,2858
 	q4::inwork; 3171,2848 3174,3052
@@ -3935,7 +3894,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'source_id' => 'viz2021:13.259269,52.43091,28.06.2021,07:00',
          'text' => 'Machnower Str.: für Radfahrer Richtung Westen gesperrt, voraussichtlich bis 06.08.2021 17:00',
          'type' => 'handicap',
-         'until' => 1628287200
+         'until' => 1628262000
        },
        {
          'data' => '	q4::temp:clock 9880,9233 9892,9286
@@ -3955,7 +3914,20 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'source_id' => 'viz2021:13.326349,52.447526,26.07.2021,07:00',
          'text' => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 06.11.2021 17:00',
          'type' => 'handicap',
-         'until' => 1636239600
+         'until' => 1636214400
+       },
+       {
+         'data' => '#: XXX Bis wann dauert die Sperrung? Sind Radfahrer tatsächlich betroffen?
+#: last_checked: 2021-07-27 (viz, rbb)
+#: check_frequency: 7d
+	q4::inwork 25552,4829 25720,4828
+',
+         'from' => 1627077600,
+         'id' => 3423,
+         'source_id' => 'viz2021:13.62476,52.44684,25.07.2021,21:02',
+         'text' => 'Müggelseedamm: Fahrbahn zwischen Josef-Nawrocki-Str. und Scharnweberstr. gesperrt, evtl. sind auch Radfahrer betroffen, Ende der Sperrung unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

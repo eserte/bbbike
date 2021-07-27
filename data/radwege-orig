@@ -39,9 +39,10 @@ geschützter Radstreifen, Grünmarkierung	RW3; 9226,8967 9225,9038 9224,9053
 neu asphaltiert	RW1; 9224,9053 9225,9111 9232,9187 9248,9350
 #: by: https://www.infravelo.de/projekt/mehringdamm/ (26.06.2021 bis 27.07.2021) (mittlerweile: Verzögerung um einige Wochen wegen Baumpflegearbeiten) (mittlerweile: Start+Ende 3. Quartal 2021)
 #: XXX Grünmarkierung geplant
+#: source_id: viz2021:13.385913,52.488354,27.07.2021,16:35 (Markierungsarbeiten bis 20.8.2021)
 #: last_checked: 2021-07-18
 #: check_frequency: 60d
-# REMOVED --- #: next_check: 2021-07-27
+#: next_check: 2021-08-20
 	RW3; 9248,9350 9232,9187 9225,9111 9224,9053 9225,9038 9226,8967 9227,8890
 asphaltiert	RW1; 9227,8890 9229,8785
 	RW1;RW1 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014 9416,10196
@@ -2196,7 +2197,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: source_id: 2147346610
 #: source_id: viz2021:13.425912,52.514912,29.06.2021,07:00 (Sanierungsarbeiten bis 2.8.2021)
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-07-26 vvv
+#: last_checked: 2021-07-27 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-08-02 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
@@ -6837,9 +6838,9 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: source_id: viz2021:13.377751,52.500368,22.03.2021,07:00 (bis 23.7.2021)
 #: osm_watch: way id="4401920" version="50"
 #: confirmed_by: srt
-#: last_checked: 2021-06-23
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2021-07-23
+#: last_checked: 2021-07-27
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2021-07-23
 provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9158,10342 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
 # 
 #: note: Spielstraßenschild am südlichen Ende
