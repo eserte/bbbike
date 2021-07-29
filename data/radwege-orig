@@ -38,6 +38,7 @@ neu asphaltiert	RW1; 9227,8890 9226,8967
 geschützter Radstreifen, Grünmarkierung	RW3; 9226,8967 9225,9038 9224,9053
 neu asphaltiert	RW1; 9224,9053 9225,9111 9232,9187 9248,9350
 #: by: https://www.infravelo.de/projekt/mehringdamm/ (26.06.2021 bis 27.07.2021) (mittlerweile: Verzögerung um einige Wochen wegen Baumpflegearbeiten) (mittlerweile: Start+Ende 3. Quartal 2021)
+#: by: https://twitter.com/VIZ_Berlin/status/1420418558903922690
 #: XXX Grünmarkierung geplant
 #: source_id: viz2021:13.385913,52.488354,27.07.2021,16:35 (Markierungsarbeiten bis 20.8.2021)
 #: last_checked: 2021-07-18
@@ -2197,7 +2198,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: source_id: 2147346610
 #: source_id: viz2021:13.425912,52.514912,29.06.2021,07:00 (Sanierungsarbeiten bis 2.8.2021)
 #: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
-#: last_checked: 2021-07-27 vvv
+#: last_checked: 2021-07-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-08-02 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
@@ -3349,6 +3350,8 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: by: https://unternehmen.bvg.de/pressemitteilung/neues-gleis-im-koepenicker-kreis/ (Gleisarbeiten bis 11. Oktober 2021, außerdem werden Haltestellen ausgebaut (Kaps?), vielleicht bis dahin keine Grünmarkierung)
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=77385
 #: source_id: 2147347204 (Gleisbauarbeiten bis 15.10.2021)
+#: source_id: viz2021:13.583291,52.43284,07.05.2021,07:18 (Gesamtbaumaßnahme bis Mitte 10/2021)
+#: source_id: viz2021:13.583291,52.43284,07.08.2021,07:00 (bis 15.10.2021)
 #: priority: #D vvv
 #: last_checked: 2021-07-17 vvv
 #: check_frequency: 90d vvv
@@ -3584,9 +3587,10 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019) (inaktiv)
 #: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019) (inaktiv)
 #: source_id: 2147345490 (bis 30.7.2021)
+#: source_id: viz2021:13.42941,52.533057,25.02.2020,08:00 (bis 16.8.2021)
 #: priority: #D vvv
 #: last_checked: 2021-07-07 vvv
-#: next_check: 2021-07-30 vvv
+#: next_check: 2021-08-16 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
 #: next_check ^^^
@@ -4418,9 +4422,9 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 #: next_check_id: BAHNHOF-2021
 #: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/
 #: XXX während der Bauarbeiten ist der Radweg auf der Nordseite gesperrt, es gibt auch keinen Gehweg
-#: last_checked: 2021-07-02 (mapillary)
+#: last_checked: 2021-07-25 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2021-07-16
+# REMOVED --- #: next_check: 2021-07-16
 # REMOVED (Original-Eintrag) ---	RW1; 12723,20691 12672,20720
 	RW0; 12723,20691 12672,20720
 	RW1; 12672,20720 12600,20742 12578,20749

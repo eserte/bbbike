@@ -168,7 +168,7 @@ Groß-Ziethener Str.: werden hier die bestehenden Radwege verbessert oder durch R
 #: source_id: LMS-BR_r_LMS-BR_124892_LMS-BR_72
 #: source_id: 2147342295
 #: osm_watch: way id="152952074" version="15"
-#: osm_watch: way id="30084960" version="27"
+#: osm_watch: way id="30084960" version="28"
 #: last_checked: 2021-04-02
 #: check_frequency: 180d
 Barnetstr.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 10844,-1335 10720,-1340 10583,-1311 10492,-1266 10379,-1194 10231,-1086 10143,-1026 10082,-986 9888,-853 9815,-805 9780,-788 9693,-815
@@ -1595,7 +1595,7 @@ Hielscherstr.: Asphaltierung geplant	?::projected 7558,19886 7604,19988 7695,201
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Aufstellung des Bebauungsplans)
 #: osm_watch: way id="4684852" version="10"
 #: priority: #B
-#: last_checked: 2020-08-04 (mapillary)
+#: last_checked: 2020-11-23 (mapillary)
 #: check_frequency: 360d
 Neukirchstr.: Asphaltierung geplant	?::projected 12751,18401 12885,18329
 # 
@@ -2533,7 +2533,7 @@ Fasanenstr.: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/pilotprojekt-geschuetzter-radweg-poller-zwischen-hermannplatz-und-reuterstrasse-geplant_a210229
 #: osm_watch: way id="764003876" version="5"
 #: osm_watch: way id="764003865" version="4"
-#: osm_watch: way id="764003862" version="10"
+#: osm_watch: way id="764003862" version="11"
 #: priority: #D
 #: last_checked: 2021-07-10 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
 #: check_frequency: 60d vvv
@@ -2809,6 +2809,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): Qualität? Gibt's hier Radwege?	? 291
 #: XXX in Niederlehme entsteht außerdem ein Kreisverkehr
 #: source_id: LS/722-W/20/231
 #: osm_watch: way id="341596787" version="11" brb
+#: last_checked: 2020-04-12 (mapillary)
 #: next_check: 2021-07-30
 L30n: in Planung/Bau	?::inwork 28312,-9695 27950,-8900 27754,-8708
 # 
@@ -3380,11 +3381,7 @@ Dörongstr.: passiert hier auch was?	?::projected 14400,11261 14357,11148
 # 
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1080100.php (ab 1. Mai 2021, für mehrere Monate) --- #: by: https://mein.berlin.de/projekte/verkehrskonzept-karl-august-kiez/ --- #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/krumme-strasse-fuer-autos-gesperrt_a308592 --- #: next_check: 2021-05-01 --- Krumme Str.: temporäre Sperrung für den motorisierten Verkehr	? 3986,11347 3983,11289 3981,11232
 # REMOVED (hier ist nichts) --- #: XXX Torstraße (Mitte) in beiden Richtungen zwischen  Gormannstr. und Alte Schönhauser Straße: Rohrleitungsbau, Fahrbahn auf jeweils zwei Fahrstreifen verengt, Anbindung Gormannstraße gesperrt, eine Umleitung für Radverkehr ist ausgeschildert, vom 26.02.2020 07:00 Uhr bis 31.05.2021 17:00 Uhr --- #: source_id: 2147345515 --- #: last_checked: 2021-04-20 (keine Einschränkungen gesehen) --- Torstr.: gibt es hier auch eine Engstelle für Radfahrer?	?; 10459,13760 10572,13731 10645,13711 10741,13685
-# 
-#: next_check_id: KOENIGSTEINBRUECKE-2019
-#: last_checked: 2021-05-09 (mapillary)
-Königsteinbrücke - Weg an der BAB114: ist dieser Weg dauerhaft unterbrochen?	? 13193,22408 13198,22413 13217,22413
-# 
+# REMOVED (Trampelpfad existiert) --- #: next_check_id: KOENIGSTEINBRUECKE-2019 --- #: XXX existiert bei osm nicht mehr --- #: last_checked: 2021-05-09 (mapillary) --- Königsteinbrücke - Weg an der BAB114: ist dieser Weg dauerhaft unterbrochen?	? 13136,22397 13167,22417 13217,22413
 # REMOVED (ja) --- Glinkastr.: gilt die temporäre Einbahnstraßenregelung mittlerweile auch für Radfahrer?	?; 9195,11972 9207,11880
 # 
 #: next_check_id: BLUMBERGERDAMMBRUECKE-2021
@@ -3731,7 +3728,7 @@ Einsteinpark: Rad/Gehweg wird entstehen	?::projected 13163,14924 13207,14998 132
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.867619.php
 #: by: https://mein.berlin.de/vorhaben/2020-00048/
 #: by: https://www.luisenstadt-mitte.de/projekte/ohmstr.html (Baubeginn voraussichtlich 2023)
-#: last_checked: 2021-07-15 (mapillary)
+#: last_checked: 2021-07-29
 #: check_frequency: 360d
 #: next_check: 2023-01-01
 Ohmstr.: verkehrsberuhigter Bereich geplant	?::projected 11378,11856 11324,11689
@@ -4575,7 +4572,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://abendblatt-berlin.de/2021/06/29/stargarder-strasse-wird-fahrradstrasse/
 #: by: https://api.fixmyberlin.de/api/projects/184
 #: osm_watch: way id="11114397" version="29"
-#: last_checked: 2021-05-31
+#: last_checked: 2021-07-15 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2021-11-30
 Stargarder Str.: hier wird eine Fahrradstraße eingerichtet	?::projected 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
@@ -4606,7 +4603,7 @@ Senefelderstr: entsteht hier eine Fahrradstraße?	? 11535,14900 11582,15021 11595
 #: last_checked: 2021-05-05
 Gleimstr.: entsteht hier eine Fahrradstraße?	? 10953,15787 10713,15753 10564,15728 10426,15705 10418,15704 10170,15659 10130,15653
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021/2022)
-#: last_checked: 2021-04-25
+#: last_checked: 2021-07-12 (mapillary)
 Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,14235 11229,14422 11285,14515 11317,14564 11436,14741 11535,14900
 #: next_check ^^^
 #: XXX ^^^
@@ -4708,7 +4705,7 @@ Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="13"
 #: also_indoor: traffic
-#: last_checked: 2021-07-07
+#: last_checked: 2021-07-12 (mapillary)
 #: check_frequency: 60d
 Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
 # 
@@ -4962,7 +4959,7 @@ Buschower Weg: hier wird asphaltiert, wann sind die Bauarbeiten fertig?	?::proje
 #: add_fragezeichen: Gibt es neue Radwege oder Radspuren in der Pilgramer Straße?
 #: source_id: 2147346018 (Fahrbahneubau bis 5.1.2021) (inaktiv)
 #: source_id: 2147347207 (bis 28.5.2021, Sanierung der Kreuzung)
-#: source_id: viz2021:13.620596,52.500834,15.03.2021,15:58 (hier: Vollsperrung bis 29.7.2021)
+#: source_id: viz2021:13.620596,52.500834,15.03.2021,15:58 (hier: Vollsperrung bis 6.8.2021)
 #: osm_watch: way id="166973943" version="24"
 #: last_checked: 2021-06-05
 #: next_check: 2021-07-26
@@ -5695,7 +5692,7 @@ Friedrichshaller Str.: wird es hier Verbesserungen für den Radverkehr geben?	? 2
 #: source_id: 2147347111 (Radwegsanierung Richtung Norden, bis 22.6.2021)
 #: source_id: viz2021:13.299578,52.520804,20.04.2021,07:00 (Richtung Norden, inaktiv)
 #: source_id: viz2021:13.299578,52.520804,22.06.2021,07:00 (Richtung Süden, bis 3.8.2021)
-#: last_checked: 2021-07-10
+#: last_checked: 2021-07-24 (mapillary)
 #: next_check: 2021-08-03
 Luisenplatz: Verbreiterung der Radwege	?; 3291,12721 3269,12648 3271,12609 3279,12533
 # 
@@ -7159,10 +7156,11 @@ Bitterfelder Str. - Alte Rüsternallee: Radwegrampen in Planung	?::projected 2031
 #: by: https://abendblatt-berlin.de/2020/06/10/marzahn-hellersdorf-1-500-wohnungen-fuers-gut-hellersdorf/
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/an-der-gothaer-ecke-alte-hellersdorfer-strasse-entstehen-vier-wohngebaeude_a298214 (Fertigstellung der Baufelder 3+4 im Mai 2021)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-bauen/neubauboom-in-marzahn-hellersdorf-setzt-sich-fort_a302274
+#: by: https://www.berliner-woche.de/hellersdorf/c-bauen/134-wohnungen-im-quartier-stadtgut-hellersdorf-bezugsfertig_a317319 (gesamtes Bauvorhaben bis Ende 2023)
 #: XXX bleiben die bestehenden Straßen während der Bauzeit passierbar?
 #: last_checked: 2021-06-05 vvv
-#: check_frequency: 210d vvv
-#: next_check: 2023-01-01 vvv
+#: check_frequency: 360d vvv
+#: next_check: 2023-12-31 vvv
 Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23305,14914 23110,14945 23117,15081
 Bebauungsplan 10-45: Stadtplatz und Planstraße C geplant	?::projected 23269,15062 23339,15079 23348,15042 23416,15060 23690,15096 23698,15049
 Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23416,15060 23396,15223 23399,15252

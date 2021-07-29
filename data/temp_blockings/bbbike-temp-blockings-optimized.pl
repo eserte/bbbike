@@ -1006,7 +1006,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: XXX anschauen! zurzeit (2021-07-26 ist die Baustelle etwa 120m lang)
 #: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
 #: note: laut rbb nur bis 1.8.2021
-#: last_checked: 2021-07-26
+#: last_checked: 2021-07-29
 #: check_frequency: 7d
 	q4::inwork; 13651,11731 13895,11663
 # REMOVED (hier nicht mehr)	q4::inwork; 13895,11663 13954,11647
@@ -2662,19 +2662,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: KOENIGSTEINBRUECKE-2019
-#: osm_watch: way id="25753762" version="14"
-#: last_checked: 2021-04-02 (mapillary)
-# REMOVED --- #: next_check: 2021-04-01
-	2::inwork 13221,22667 13223,22558 13207,22498 13217,22413 13220,22387
-',
-         'from' => undef,
-         'id' => 3173,
-         'text' => 'Weinapfelweg - Pankeweg: Straße wird als Baustraße für den Neubau der Königsteinbrücke benutzt und ist gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2745,7 +2733,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-07-06
+#: last_checked: 2021-07-29
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2803,12 +2791,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-27
+#: last_checked: 2021-07-29
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
-	q3::inwork 14247,11681 14272,11775
+	q3::inwork 14247,11681 14272,11775 14306,11889
 ',
          'from' => 1590562800,
          'id' => 3240,
@@ -3136,16 +3124,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        {
-         'data' => '#: last_checked: 2021-05-24
-#: next_check: 2021-08-27
+         'data' => '#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021)
+#: last_checked: 2021-05-24
+#: check_frequency: 90d
+#: next_check: 2021-11-19
 	q2::inwork 8913,16159 9099,16398
 ',
          'from' => 1611329064,
          'id' => 3324,
          'source_id' => '2147346268',
-         'text' => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., bis 27.08.2021',
+         'text' => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., bis 19.11.2021',
          'type' => 'handicap',
-         'until' => 1630076400
+         'until' => 1637337600
        },
        {
          'data' => '#: next_check_id: ABBESTR-2021
@@ -3696,14 +3686,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1628262000
        },
        {
-         'data' => '	q4::inwork; 6055,4950 6182,4931 6187,4930 6215,4926 6276,4915 6354,4901 6385,4896 6531,4865
+         'data' => '#: source_id: viz2021:13.337982,52.451062,02.08.2021,06:00
+	q4::inwork; 6055,4950 6182,4931 6187,4930 6215,4926 6276,4915 6354,4901 6385,4896 6531,4865
 ',
          'from' => 1627768800,
          'id' => 3398,
          'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1099818.php',
          'text' => 'Steglitzer Damm: Bauarbeiten, Fahrbahn zwischen Bismarckstr. und Heinrich-Seidel-Str. Richtung Osten gesperrt, vom 02.08. bis zum 24.09.2021',
          'type' => 'handicap',
-         'until' => 1632520799
+         'until' => 1632495600
        },
        {
          'data' => '#: by: rbb
