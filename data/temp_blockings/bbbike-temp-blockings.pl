@@ -19285,7 +19285,7 @@ EOF
 EOF
      },
      { from  => 1626024702, # 1380175440, # 2013-09-26 08:04
-       until => $isodate2epoch->("2021-08-15 18:00:00"), # 1381834786, # so gut wie aufgehoben - 1381932000, # 2013-10-16 16:00
+       until => $isodate2epoch->("2021-08-16 18:00:00"), # 1381834786, # so gut wie aufgehoben - 1381932000, # 2013-10-16 16:00
        text  => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn zwischen Warschauer Str. bis Libauer Str. in Richtung Osten gesperrt, bis Mitte August 2021',
        type  => 'handicap',
        source_id => 'IM_020398',
@@ -19293,7 +19293,7 @@ EOF
 #: by: https://viz.berlin.de/2021/07/verkehrsvorschau-120721/
 #: XXX anschauen! zurzeit (2021-07-26 ist die Baustelle etwa 120m lang)
 #: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
-#: note: laut rbb nur bis 1.8.2021
+#: note: laut rbb bis 16.8.2021
 #: last_checked: 2021-07-29
 #: check_frequency: 7d
 	q4::inwork; 13651,11731 13895,11663
@@ -31418,12 +31418,13 @@ EOF
 	q3::inwork 17631,3200 17894,2783
 EOF
      },
-     { from  => 1599213600, # 2020-09-04 12:00
-       until => 1599408000, # 2020-09-06 18:00
-       text  => 'Köpenicker Landstraße, Neue Krugallee, Bulgarische Straße, Uferweg Plänterwald: wegen des Berlin-Triathlons Sperrungen, evtl. auch für Radfahrer gültig, am 5.9.2020 von 12:00 bis 21:00 Uhr und am 6.9.2020 von 6:30 bis 18:00 Uhr',
+     { from  => $isodate2epoch->("2021-07-30 12:00:00"), # 1599213600, # 2020-09-04 12:00
+       until => $isodate2epoch->("2021-08-01 18:00:00"), # 1599408000, # 2020-09-06 18:00
+       text  => 'Köpenicker Landstraße, Neue Krugallee, Bulgarische Straße, Uferweg Plänterwald: wegen des Berlin-Triathlons Sperrungen, evtl. auch für Radfahrer gültig, am 31.7.2021 von 12:00 bis 21:00 Uhr und am 1.8.2021 von 6:30 bis 18:00 Uhr',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2020/09/vorschau-05_06-09-2020/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1111500.php
 	q4::temp 16507,7254 16428,7144
 	q4::temp; 16428,7144 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
 	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16136,7886 16406,7430 16507,7254 16633,7434 16673,7511
@@ -32328,8 +32329,8 @@ EOF
 EOF
      },
      { from  => 1616281200, # 2021-03-21 00:00
-       until => 1627768799, # 2021-07-31 23:59
-       text  => 'Kettinger Str.: Verbindung zur Barnetstr. wegen Bauarbeiten unterbrochen, bis Juli 2021',
+       until => undef, # 1627768799, # 2021-07-31 23:59
+       text  => 'Kettinger Str.: Verbindung zur Barnetstr. wegen Bauarbeiten unterbrochen, voraussichtlich bis Juli 2021, vielleicht auch länger',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: S-SCHICHAUWEG-2021
@@ -32337,6 +32338,8 @@ EOF
 #: by: https://viz.berlin.de/2021/03/verkehrsvorschau_220321/
 #: by: https://twitter.com/VIZ_Berlin/status/1373879362806816774 (mit Radfahrer-Icon)
 #: XXX sind tatsächlich Fußgänger und Radfahrer betroffen? -> ja, allerdings ist es außerhalb der Bauzeiten unter Umständen möglich, hier durchzufahren
+#: add_fragezeichen: Sind die Bauarbeiten beendet? Können Radfahrer wieder durchfahren?
+#: osm_watch: way id="948039533" version="1"
 #: last_checked: 2021-04-02
 #: next_check: 2021-07-31
 	2::inwork 9693,-815 9692,-772 9693,-746 9699,-600
@@ -33095,9 +33098,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
-#: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21
+#: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-07-21
+#: last_checked: 2021-07-30
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33217,14 +33220,12 @@ EOF
 EOF
      },
      { from  => 1627077600, # 2021-07-24 00:00
-       until => undef, # XXX
+       until => 1627676338, # undef, # XXX
        text  => 'Müggelseedamm: Fahrbahn zwischen Josef-Nawrocki-Str. und Scharnweberstr. gesperrt, evtl. sind auch Radfahrer betroffen, Ende der Sperrung unbekannt',
        type  => 'handicap',
        source_id => 'viz2021:13.62476,52.44684,25.07.2021,21:02',
        data  => <<EOF,
-#: XXX Bis wann dauert die Sperrung? Sind Radfahrer tatsächlich betroffen?
-#: last_checked: 2021-07-27 (viz, rbb)
-#: check_frequency: 7d
+# REMOVED --- #: XXX Bis wann dauert die Sperrung? Sind Radfahrer tatsächlich betroffen? --- #: last_checked: 2021-07-27 (viz, rbb) --- #: check_frequency: 7d
 	q4::inwork 25552,4829 25720,4828
 EOF
      },

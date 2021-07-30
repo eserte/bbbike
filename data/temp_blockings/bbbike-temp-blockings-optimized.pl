@@ -1005,7 +1005,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'data' => '#: by: https://viz.berlin.de/2021/07/verkehrsvorschau-120721/
 #: XXX anschauen! zurzeit (2021-07-26 ist die Baustelle etwa 120m lang)
 #: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
-#: note: laut rbb nur bis 1.8.2021
+#: note: laut rbb bis 16.8.2021
 #: last_checked: 2021-07-29
 #: check_frequency: 7d
 	q4::inwork; 13651,11731 13895,11663
@@ -1016,7 +1016,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'source_id' => 'IM_020398',
          'text' => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn zwischen Warschauer Str. bis Libauer Str. in Richtung Osten gesperrt, bis Mitte August 2021',
          'type' => 'handicap',
-         'until' => 1629043200
+         'until' => 1629129600
        },
        undef,
        undef,
@@ -2941,7 +2941,21 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1627747200
        },
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2020/09/vorschau-05_06-09-2020/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1111500.php
+	q4::temp 16507,7254 16428,7144
+	q4::temp; 16428,7144 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
+	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16136,7886 16406,7430 16507,7254 16633,7434 16673,7511
+	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
+	q4::temp 15778,8990 15680,8914 15591,8848
+',
+         'from' => 1627639200,
+         'id' => 3274,
+         'text' => 'Köpenicker Landstraße, Neue Krugallee, Bulgarische Straße, Uferweg Plänterwald: wegen des Berlin-Triathlons Sperrungen, evtl. auch für Radfahrer gültig, am 31.7.2021 von 12:00 bis 21:00 Uhr und am 1.8.2021 von 6:30 bis 18:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1627833600
+       },
        undef,
        undef,
        undef,
@@ -3214,15 +3228,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://viz.berlin.de/2021/03/verkehrsvorschau_220321/
 #: by: https://twitter.com/VIZ_Berlin/status/1373879362806816774 (mit Radfahrer-Icon)
 #: XXX sind tatsächlich Fußgänger und Radfahrer betroffen? -> ja, allerdings ist es außerhalb der Bauzeiten unter Umständen möglich, hier durchzufahren
+#: add_fragezeichen: Sind die Bauarbeiten beendet? Können Radfahrer wieder durchfahren?
+#: osm_watch: way id="948039533" version="1"
 #: last_checked: 2021-04-02
 #: next_check: 2021-07-31
 	2::inwork 9693,-815 9692,-772 9693,-746 9699,-600
 ',
          'from' => 1616281200,
          'id' => 3345,
-         'text' => 'Kettinger Str.: Verbindung zur Barnetstr. wegen Bauarbeiten unterbrochen, bis Juli 2021',
+         'text' => 'Kettinger Str.: Verbindung zur Barnetstr. wegen Bauarbeiten unterbrochen, voraussichtlich bis Juli 2021, vielleicht auch länger',
          'type' => 'gesperrt',
-         'until' => 1627768799
+         'until' => undef
        },
        undef,
        undef,
@@ -3804,9 +3820,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
-#: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21
+#: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-07-21
+#: last_checked: 2021-07-30
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -3906,19 +3922,6 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 06.11.2021 17:00',
          'type' => 'handicap',
          'until' => 1636214400
-       },
-       {
-         'data' => '#: XXX Bis wann dauert die Sperrung? Sind Radfahrer tatsächlich betroffen?
-#: last_checked: 2021-07-27 (viz, rbb)
-#: check_frequency: 7d
-	q4::inwork 25552,4829 25720,4828
-',
-         'from' => 1627077600,
-         'id' => 3423,
-         'source_id' => 'viz2021:13.62476,52.44684,25.07.2021,21:02',
-         'text' => 'Müggelseedamm: Fahrbahn zwischen Josef-Nawrocki-Str. und Scharnweberstr. gesperrt, evtl. sind auch Radfahrer betroffen, Ende der Sperrung unbekannt',
-         'type' => 'handicap',
-         'until' => undef
        }
      
 );
