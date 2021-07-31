@@ -2229,7 +2229,9 @@ Louise-Schroeder-Platz	N 7763,16779 7745,16889
 Louise-Schroeder-Platz	N 7583,16872 7594,16805
 Residenzstr.	H 7209,18682 7197,18639 7198,18575
 Residenzstr.	HH 7198,18575 7233,18562 7269,18460 7291,18392 7335,18257 7405,18047 7426,17981 7432,17964 7453,17899 7477,17832 7491,17793 7533,17673 7572,17558 7579,17532 7602,17399
-Residenzstr.	H 7675,17430 7902,17166 7970,17087 8079,16953 8127,16894
+Residenzstr.	H 7675,17430 7902,17166
+Residenzstr.	H 7675,17427 7902,17166
+Residenzstr.	H 7902,17166 7970,17087 8079,16953 8127,16894
 (Parkplatz Residenzstr. - Kopenhagener Str.)	N 7233,18562 7197,18639
 Am Schäfersee	N 7572,17558 7477,17544
 Am Schäfersee	NN 7477,17544 7455,17495 7350,17464 7253,17467 7222,17471
@@ -2635,7 +2637,7 @@ Naugarder Str.	N 12737,15154 12712,15176 12693,15225 12610,15455 12621,15482
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5238 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5356
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_01_0001_0152_online.pdf (Benennung: Gertrud-Classen-Platz, Wirksamkeit am 6. März 2020)
-#: last_checked: 2021-05-31 (keine Schilder zu sehen)
+#: last_checked: 2021-07-31 (keine Schilder zu sehen)
 #: check_frequency: 60d
 (Hosemannstr. - Naugarder Str.)	N 12583,15566 12605,15491
 Malchower Chaussee	HH 14832,17867 15152,18115 15181,18137 15569,18492 15600,18551 15610,18596
@@ -2673,7 +2675,7 @@ Straße 56 (Heinersdorf)	N 12429,17685 12587,17603
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3835 (Vorlange zur Kenntnisnahme)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2014 (Widerspruch)
 #: osm_watch: way id="45904921" version="11"
-#: last_checked: 2021-03-26 (mapillary)
+#: last_checked: 2021-07-31
 #: check_frequency: 120d
 Straße 16 (Heinersdorf)	N 13031,17775 13034,17895
 (Straße 16 - Eigerstr.)	NN 13034,17895 12995,17873 12945,17958
@@ -4104,7 +4106,7 @@ Buchholzweg	N 4535,15530 4466,15350 4389,15336
 #: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: also_indoor: search Cornelius-Fredericks-Straße
 #: osm_watch: way id="247340732" version="17"
-#: last_checked: 2021-04-25
+#: last_checked: 2021-07-31
 #: check_frequency: 90d
 Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
 Sansibarstr.	N 6201,16538 6106,16433 6005,16313 5827,16118
@@ -4128,7 +4130,9 @@ Corker Str.	N 6636,17147 6556,17204 6485,17247
 Windsorer Str.	N 6476,17108 6556,17204
 Bristolstr.	N 6702,16900 6547,17037 6476,17108 6407,17166
 Gotthardstr.	H 5295,17344 5382,17419 5628,17631 5778,17740 6056,17798 6273,17831 6377,17854 6578,17898 6685,17922
-Holländerstr.	H 5628,17631 5715,17572 5828,17538 5894,17518 6126,17448 6258,17408 6347,17381 6535,17323 6581,17309 6609,17310 6878,17315 6995,17322 7031,17323 7104,17326 7282,17318 7292,17316 7381,17317 7602,17399 7675,17430
+Holländerstr.	H 5628,17631 5715,17572 5828,17538 5894,17518 6126,17448 6258,17408 6347,17381 6535,17323 6581,17309 6609,17310 6878,17315 6987,17321 6998,17322 7031,17323 7104,17326 7282,17318 7292,17316 7381,17317 7602,17399
+Holländerstr.	H 7602,17399 7675,17430
+Holländerstr.	H 7602,17399 7675,17427
 Londoner Str.	N 5772,16919 5847,17018 5953,17131 6051,17269 6091,17346 6126,17448
 Belfaster Str.	N 5589,17081 5662,17158 5847,17365 5866,17419 5894,17518
 Cambridger Str.	N 5866,17419 5778,17436 5691,17404 5556,17254
@@ -4360,7 +4364,7 @@ Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,199
 #: by: https://www.baustellen-doku.info/berlin_heidekrautbahn_reaktivierung_stammstrecke/20210321/ (provisorische Verlegung des Mauerwegs, neu asphaltiert)
 #: XXX: bleibt dieser Weg erhalten oder muss er der Heidekrautbahn weichen?
 #: osm_watch: way id="31428032" version="11"
-#: osm_watch: way id="386544517" version="3"
+#: osm_watch: way id="386544517" version="4"
 #: last_checked: 2021-06-25 (daf)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-05-01
@@ -13070,8 +13074,8 @@ Zachertstr.	N 17037,11383 17070,11375 17155,11348 17248,11317 17322,11296 17500,
 Ribbecker Str.	N 17612,11541 17609,11467 17594,11413 17587,11345 17596,11314 17587,11238 17574,11141 17560,10973
 Zornstr.	N 17574,11141 17626,11131
 Kraetkestr. (Friedrichsfelde)	N 17466,10941 17458,10986 17500,11252
-Eggersdorfer Str.	N 17322,11296 17259,11093
-Eggersdorfer Str.	NN 17259,11093 17222,10936 17226,10865
+Eggersdorfer Str.	N 17322,11296 17255,11077
+Eggersdorfer Str.	NN 17255,11077 17222,10936 17226,10865
 Hohenkircher Allee	N 21736,7489 21741,7450 21751,7400 21785,7284
 Klingenburger Str.	N 21671,7375 21751,7400
 Piepertswinkel	N 21594,7233 21600,7293 21628,7371 21671,7375 21710,7266
@@ -13081,7 +13085,7 @@ Ambacher Str.	N 21944,7122 21967,7048
 Görsdorfer Str.	N 21846,7096 21879,7044 21918,6939
 Zum Wuhleblick	N 22075,6967 21958,6944 21918,6939
 Zum Wuhleblick	NN 21918,6939 21911,6938 21896,6937
-Bietzkestr.	N 17259,11093 17172,11101 17062,11130 16967,11162 16918,11176
+Bietzkestr.	N 17255,11077 17172,11101 17062,11130 16967,11162 16918,11176
 Lincolnstr.	N 17341,11595 17248,11317 17172,11101 17085,10855 17077,10832 17083,10814
 Margaretenstr. (Rummelsburg)	N 16649,11497 16730,11480 16856,11438 16948,11409 17006,11391 17037,11383
 Metastr.	N 17006,11391 17056,11497 17096,11585
@@ -13293,8 +13297,8 @@ Brausensteinweg	N 9394,21140 9310,21213
 # 
 #: note: Poller, keine Durchfahrt für Autos möglich
 (Feldkräuterweg - Lorenzsteinweg)	NN 9279,21292 9290,21284
-Thulestr.	N 12010,16774 11825,16666 11766,16633 11725,16630 11630,16623 11534,16614 11441,16612 11357,16610 11278,16609 11021,16605
-Lunder Str.	N 11357,16610 11351,16744
+Thulestr.	N 12010,16774 11825,16666 11766,16633 11725,16630 11630,16623 11534,16622 11440,16622 11356,16619 11279,16617 11021,16605
+Lunder Str.	N 11356,16619 11351,16744
 Upsalaer Str.	N 11369,16744 11364,16887
 Hardangerstr.	N 11720,16752 11725,16630
 Eschengraben	N 11755,17216 11778,17066 11781,17046 11817,16870 11831,16802 11776,16753 11720,16752 11613,16747 11559,16747 11504,16746 11473,16746 11441,16745 11428,16745 11369,16744 11351,16744 11274,16743 11008,16729
@@ -15395,7 +15399,7 @@ Togostr.	N 5531,16734 5315,16936
 #: by: https://www.deutschlandfunkkultur.de/widerstand-gegen-manga-bell-platz-wie-in-berlin-um-einen.976.de.html?dram:article_id=455728
 #: osm_watch: way id="333607502" version="8"
 #: also_indoor: search Manga-Bell-Platz
-#: last_checked: 2021-04-25
+#: last_checked: 2021-07-31
 #: check_frequency: 90d
 Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,16803 5561,16767 5531,16734 5496,16696 5533,16662
 #: next_check_id: AFRIKANISCHESVIERTEL-2020
@@ -15406,7 +15410,7 @@ Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,168
 #: add_fragezeichen: Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="5199719" version="15"
 #: also_indoor: search Maji-Maji-Allee
-#: last_checked: 2021-04-25
+#: last_checked: 2021-07-31
 #: check_frequency: 90d
 Petersallee	N 5426,16539 5533,16662
 #: next_check_id: AFRIKANISCHESVIERTEL-2020
@@ -15419,7 +15423,7 @@ Petersallee	N 5426,16539 5533,16662
 #: add_fragezeichen: Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="47347069" version="13"
 #: also_indoor: search Anna-Mungunda-Allee
-#: last_checked: 2021-04-25
+#: last_checked: 2021-07-31
 #: check_frequency: 90d
 Petersallee	N 5581,16708 5639,16768 5684,16815 5772,16919
 Usambarastr.	N 5526,16916 5565,16923 5684,16815
@@ -15893,7 +15897,7 @@ Am Hamburger Bahnhof	N 8025,13835 7997,13892
 (Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 7866,14215 7830,14268 7799,14314
 Promenade am Berlin-Spandauer Schiffahrtskanal	NN 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096 8001,14096 7966,14148 7972,14185 7973,14195 7965,14207 7804,14445 7787,14473 7753,14528 7733,14570
 (Am Invalidenfriedhof - Scharnhorststr.)	NN 8096,13951 8200,14016
-Baseler Str. (Reinickendorf)	N 6784,17960 6815,17871 6841,17781 6886,17649 6897,17616 6904,17596 6995,17322
+Baseler Str. (Reinickendorf)	N 6784,17960 6815,17871 6841,17781 6886,17649 6897,17616 6904,17596 6987,17321
 Grindelwaldweg	N 6904,17596 6797,17568 6679,17568 6642,17571
 Bieler Str.	N 6815,17871 6711,17839
 Mariabrunner Weg	N 6841,17781 6909,17796 6985,17812
@@ -16340,7 +16344,7 @@ Schulstr. (Pankow)	N 10755,18231 10582,18159 10545,18143 10473,18113
 # REMOVED (das ist noch die Dusekestr., siehe Baupläne) --- #: XXX ist das noch die Dusekestr. oder schon die Schulstr.? (Straßenschilder)
 Dusekestr.	N 10473,18113 10498,18014 10479,18007 10525,17862 10548,17817
 Benjamin-Vogelsdorff-Str.	N 10479,18007 10355,17963
-Trelleborger Str.	N 11243,17421 11256,17291 11262,17139 11267,17027 11270,16890 11274,16743 11278,16609 11284,16527 11289,16423
+Trelleborger Str.	N 11243,17421 11256,17291 11262,17139 11267,17027 11270,16890 11274,16743 11279,16617 11284,16527 11289,16423
 #: by: Frank Hüller (für Autos gesperrt):
 (Wisbyer Str. 9-11)	NN 11289,16423 11255,16313
 Saalower Str.	N 10735,-3142 10949,-3161 11144,-3179 11274,-3126
@@ -16401,8 +16405,8 @@ Manksweg	N 20480,14874 20689,15175
 (Scheibenbergstr. - Blenheimstr.)	NN 20693,15144 20689,15175
 Scheibenbergstr.	N 20606,14842 20605,14957 20633,14985 20675,14986 20677,15038 20696,15039 20693,15144
 Schonensche Str.	N 11027,16553 11284,16527 11447,16507 11535,16498 11655,16486
-Baumbachstr.	N 11448,16398 11447,16507 11441,16612 11441,16745
-Kurze Str. (Pankow)	N 11534,16614 11535,16498 11542,16384
+Baumbachstr.	N 11448,16398 11447,16507 11440,16622 11441,16745
+Kurze Str. (Pankow)	N 11534,16622 11535,16498 11542,16384
 Olympischer Platz	N -110,12019 -193,12051 -272,12039 -514,11991 -505,11882 -157,11943
 Olympischer Platz	N -157,11943 -193,12051
 Sportforumstr.	N -193,12051 -212,12095 -247,12117 -263,12125 -369,12175

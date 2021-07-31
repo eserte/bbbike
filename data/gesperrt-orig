@@ -1757,8 +1757,13 @@ Messedamm: Mittelstreifen, Autobahnausfahrt	3nocross 2037,11122 2102,11307 2095,
 Berliner Str.: Straßenbahnhaltestelle	3nocross 10908,17142 10917,17088 10927,17022
 Warnemünder Str.: Mittelstreifen	3nocross 2757,7604 2750,7444 2744,7397
 Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3nocross 8057,14876 8091,14895 8219,14897
-#: note: auf dem Radweg gibt es noch zusätzlich Absperrgitter
-Residenzstr.: Abbiegen nicht möglich	3nocross 7602,17399 7675,17430 7902,17166
+# 
+#: note: auf dem Radweg gibt es noch zusätzlich Absperrgitter vvv
+Holländerstr., Residenzstr.: Abbiegen nicht möglich	3nocross::ignrte 7602,17399 7675,17430 7902,17166
+Holländerstr., Residenzstr. (Richtungsfahrbahn)	1::igndisp 7602,17399 7675,17430 7902,17166
+Holländerstr., Residenzstr. (Richtungsfahrbahn)	1::igndisp 7902,17166 7675,17427 7602,17399
+#: note ^^^
+# 
 Residenzstr.: Mittelstreifen	3nocross 7579,17532 7572,17558 7533,17673
 Lindauer Allee: Mittelstreifen	3nocross 5550,18775 5635,18776 5713,18777
 Lindauer Allee: Mittelstreifen	3nocross 5713,18777 5791,18778 5869,18779
@@ -3378,7 +3383,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677220#post677220
 #: priority: #C
-#: last_checked: 2021-06-07 (mapillary)
+#: last_checked: 2021-07-31
 #: check_frequency: 60d
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -3464,10 +3469,12 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 # 
 #: next_check_id: STERNDAMM-2020
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_40_4933_5036_online.pdf (Grundstücksnummerierungen (neues Wohngebiet?))
-#: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt? Oder den Baufeldern (wie man bei osm sieht)? Bis wann gehen die Bauarbeiten?
+#: by: https://www.bahninfo-forum.de/read.php?9,665091,708278#msg-708278
+#: XXX Gesperrt wegen Bauarbeiten an der neuen Straßenbahntrasse sowie den neuen Baufeldern nördlich davon? Laut bahninfo-forum wird der Weg nach den Bauarbeiten wieder geöffnet.
+#: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: osm_watch: way id="229647788" version="7"
 #: osm_watch: way id="850453338" version="4"
-#: last_checked: 2021-07-15 (osm)
+#: last_checked: 2021-07-31 (bahninfo-forum)
 #: check_frequency: 120d
 Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 18892,3256 18689,3465
 # 
@@ -3482,10 +3489,10 @@ Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 188
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/neue-grundschule-entsteht_a279808
 #: by: https://www.deutsches-architekturforum.de/thread/14507-bauprojekte-am-velodrom-prenzlauer-berg/?postID=677089#post677089
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (Einziehung einer Grünanlage, Einziehung von Straßenland)
-#: XXX vermutlich dauerhaft, Teile der Fahrbahn sind schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben
+#: XXX vermutlich dauerhaft, die Fahrbahn ist schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben
 #: osm_watch: way id="860287005" version="4"
 #: also_indoor: traffic (G)
-#: last_checked: 2021-07-06
+#: last_checked: 2021-07-31
 #: check_frequency: 120d
 #: next_check: 2022-07-01
 Cotheniusstr.: Fahrbahn durch Bauzäune abgesperrt	2::inwork 13430,13733 13519,13785
@@ -4339,7 +4346,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 # 
 #: XXX temporär oder dauerhaft gesperrt? vvv
 #: osm_watch: way id="4615233" version="7"
-#: last_checked: 2021-05-17 vvv
+#: last_checked: 2021-07-31 vvv
 #: check_frequency: 180d vvv
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006

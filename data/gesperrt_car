@@ -1153,6 +1153,9 @@ Müllerstr. -> Liverpooler Str.: Mittelstreifen	3::igndisp 5894,16810 5931,16777 
 Liverpooler Str. -> Müllerstr.: Mittelstreifen	3::igndisp 5995,16836 5931,16777 6005,16712
 Müllerstr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5931,16777 5894,16810 5807,16709
 Querweg durch die Dauerkolonie Togo -> Müllerstr.: Mittelstreifen	3::igndisp 5807,16709 5894,16810 5772,16919
+Mittelstreifen	3nocross::ignrte 5490,17173 5589,17081 5772,16919
+Müllerstr. -> Belfaster Str.: Mittelstreifen	3::igndisp 5490,17173 5589,17081 5662,17158
+Belfaster Str. -> Müllerstr.: Mittelstreifen	3::igndisp 5662,17158 5589,17081 5772,16919
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16734,9990 16539,10097 16353,10207
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16353,10207 16539,10097 16734,9990
 Waldowallee - Am Carlsgarten: Durchfahrt gesperrt (Betonblöcke)	3 19478,7967 19509,7999 19558,8064

@@ -10576,7 +10576,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_007023',
        data  => <<EOF,
-	1::inwork 6878,17315 6995,17322 7031,17323 7104,17326 7282,17318 7292,17316 7381,17317 7602,17399
+	1::inwork 6878,17315 6987,17321 6998,17322 7031,17323 7104,17326 7282,17318 7292,17316 7381,17317 7602,17399
 EOF
      },
      { from  => 1194130800, # 2007-11-04 00:00
@@ -19291,10 +19291,10 @@ EOF
        source_id => 'IM_020398',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2021/07/verkehrsvorschau-120721/
-#: XXX anschauen! zurzeit (2021-07-26 ist die Baustelle etwa 120m lang)
+#: XXX zurzeit (2021-07-26 ist die Baustelle etwa 120m lang)
 #: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
 #: note: laut rbb bis 16.8.2021
-#: last_checked: 2021-07-29
+#: last_checked: 2021-07-31
 #: check_frequency: 7d
 	q4::inwork; 13651,11731 13895,11663
 # REMOVED (hier nicht mehr)	q4::inwork; 13895,11663 13954,11647
@@ -27827,7 +27827,7 @@ EOF
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
 #: also_indoor: traffic (G)
 #: priority: #B
-#: last_checked: 2021-06-14
+#: last_checked: 2021-07-31
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-03-26
 	q3::inwork 13391,16436 13630,16629
@@ -29366,9 +29366,9 @@ EOF
        source_id => '2147344253', # bis Juni 2021 (!)
        data  => <<EOF,
 #: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 14.9.2021)
-#: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
+#: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-05-24
+#: last_checked: 2021-07-31
 #: check_frequency: 60d
 #: next_check: 2021-09-14
 	q3::inwork  8986,16092 9178,16317
@@ -29928,8 +29928,9 @@ EOF
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
+#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G)
-#: last_checked: 2021-02-20
+#: last_checked: 2021-07-16 (baustellen-doku)
 #: check_frequency: 180d
 #: next_check: 2022-06-04
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
@@ -31157,10 +31158,10 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
-#: XXX Stand 2021-07-06: letzte Deckschicht fehlt
+#: XXX Stand 2021-07-31: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2021-07-06
-#: check_frequency: 14d
+#: last_checked: 2021-07-31
+#: check_frequency: 30d
 	q3::inwork 14136,17170 13996,16959
 EOF
      },
@@ -32107,7 +32108,7 @@ EOF
        source_id => '2147346268',
        data  => <<EOF,
 #: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021)
-#: last_checked: 2021-05-24
+#: last_checked: 2021-07-31
 #: check_frequency: 90d
 #: next_check: 2021-11-19
 	q2::inwork 8913,16159 9099,16398
@@ -32382,11 +32383,12 @@ EOF
        data  => <<EOF,
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,697260#msg-697260
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210530/
+#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210716/
 #: confirmed_by: srt
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
 #: osm_watch: node id="8599852570" version="1"
 #: osm_watch: node id="8599852571" version="1"
-#: last_checked: 2021-05-30
+#: last_checked: 2021-07-16 (baustellen-doku)
 #: check_frequency: 180d
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 EOF
@@ -32852,7 +32854,8 @@ EOF
        data  => <<EOF,
 #: note: laut rbb
 #: also_indoor: traffic (H)
-	q4::inwork 7432,14969 7624,15083 7694,15125 7745,15160
+	q4::inwork 7432,14969 7624,15083 7694,15125
+# REMOVED (hier keine Baustelle) ---	q4::inwork 7694,15125 7745,15160
 EOF
      },
      { from  => undef, # 
@@ -33227,6 +33230,18 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: XXX Bis wann dauert die Sperrung? Sind Radfahrer tatsächlich betroffen? --- #: last_checked: 2021-07-27 (viz, rbb) --- #: check_frequency: 7d
 	q4::inwork 25552,4829 25720,4828
+EOF
+     },
+     { from  => 1627164000, # 2021-07-25 00:00
+       until => undef, # XXX
+       text  => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, vom 26.07.2021, Ende unbekannt ',
+       type  => 'handicap',
+       source_id => 'viz2021:13.444,52.53356,26.07.2021,08:18',
+       data  => <<EOF,
+#: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt
+#: last_checked: 2021-07-31
+#: check_frequency: 14d
+	q3::inwork 13057,14267 13158,14117
 EOF
      },
     );

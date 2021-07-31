@@ -9,8 +9,9 @@
 # 
 # 
 #: next_check_id: GAERTNER-2021
-#: last_checked: 2021-07-29
-Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775
+#: last_checked: 2021-07-31
+# REMOVED (nicht mehr) --- Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775
+Grünberger Str.	F::inwork 14272,11775
 # 
 #: XXX Hauffstraße (Rummelsburg) in beiden Richtungen zwischen Wiesenweg und Schreiberhauer Straße: Arbeiten an Gasleitung, für beide Richtungen nur ein gemeinsamer Fahrstreifen abwechselnd frei, eine Baustellenampel regelt den Verkehr, vom 06.07.2021 08:00 bis 23.07.2021 17:00
 #: note: Ampeln in der Hauffstr. sowie in der Schulze-Boysen-Str. an der Buchberger Str.; außerdem ist die Anbindung Pfarrstr. offiziell gesperrt
@@ -127,7 +128,7 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linke
 #: last_checked ^^^
 # 
 #: next_check_id: LANGHANS-2021
-#: last_checked: 2021-04-14 (mapillary)
+#: last_checked: 2021-07-31 (steht noch, aber war am 31.7.2021 ausgeschaltet (mittlerweile immer? oder nur am Wochenende?))
 #: next_check: 2021-08-13
 Roelckestr./Lehderstr.: temporäre Ampel	X::inwork 12842,16032
 # 
@@ -677,6 +678,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX_prog: nur für N->S relevant
 	X 11976,12595
 #: related ^^^
+#: XXX_prog: Anforderungsampel für Radfahrer aus der Schillingstr.; für Linksabbieger sogar eine zweite (die aber vermutlich synchron geschaltet ist)
 	X 11635,12745
 #: XXX_prog nur für linksabbiegende Radfahrer (Karl-Marx-Allee -> Berolinastraße), mit Anforderung
 	X 11678,12727
@@ -1484,6 +1486,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6720,18616
 	X 6685,17922
 	X 6878,17315
+#: note: Anforderungsampel
+	F 6998,17322
 	X 8503,16716
 	X 9494,15998
 	F 14318,9688

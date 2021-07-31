@@ -1228,10 +1228,9 @@ Warnemünder Str. -> Hammersteinstr.: Mittelstreifen	3::igndisp 2744,7397 2750,74
 Hammersteinstr. -> Warnemünder Str.: Mittelstreifen	3::igndisp 2719,7415 2750,7444 2757,7604
 Gitter auf dem Mittelstreifen	3nocross::ignrte 8057,14876 8091,14895 8219,14897
 Reinickendorfer Str. -> Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3::igndisp 8037,14958 8091,14895 8219,14897
-Abbiegen nicht möglich	3nocross::ignrte 7602,17399 7675,17430 7902,17166
-Holländerstr. -> Fahlandgasse: Abbiegen nicht möglich	3::igndisp 7602,17399 7675,17430 7675,17475
-Fahlandgasse -> Residenzstr.: Abbiegen nicht möglich	3::igndisp 7675,17475 7675,17430 7902,17166
-Fahlandgasse -> Letteallee: Abbiegen nicht möglich	3::igndisp 7675,17475 7675,17430 7707,17445
+Holländerstr., Residenzstr.: Abbiegen nicht möglich	3nocross::ignrte 7602,17399 7675,17430 7902,17166
+Holländerstr., Residenzstr. (Richtungsfahrbahn)	1::igndisp 7602,17399 7675,17430 7902,17166
+Holländerstr., Residenzstr. (Richtungsfahrbahn)	1::igndisp 7902,17166 7675,17427 7602,17399
 Mittelstreifen	3nocross::ignrte 7579,17532 7572,17558 7533,17673
 Am Schäfersee -> Residenzstr.: Mittelstreifen	3::igndisp 7477,17544 7572,17558 7533,17673
 Mittelstreifen	3nocross::ignrte 5550,18775 5635,18776 5713,18777
@@ -1732,8 +1731,8 @@ Berliner Str. -> Hallandstr.: U-Bahnrampe	3::igndisp 10975,16896 10992,16829 112
 Hallandstr. -> Berliner Str.: U-Bahnrampe	3::igndisp 11270,16890 10992,16829 11008,16729
 Berliner Str. -> Eschengraben: U-Bahnrampe	3::igndisp 10992,16829 11008,16729 11274,16743
 Eschengraben -> Berliner Str.: U-Bahnrampe	3::igndisp 11274,16743 11008,16729 11021,16605
-Berliner Str. -> Thulestr.: U-Bahnrampe	3::igndisp 11008,16729 11021,16605 11278,16609
-Thulestr. -> Berliner Str.: U-Bahnrampe	3::igndisp 11278,16609 11021,16605 11027,16553
+Berliner Str. -> Thulestr.: U-Bahnrampe	3::igndisp 11008,16729 11021,16605 11279,16617
+Thulestr. -> Berliner Str.: U-Bahnrampe	3::igndisp 11279,16617 11021,16605 11027,16553
 Berliner Str. -> Schonensche Str.: U-Bahnrampe	3::igndisp 11021,16605 11027,16553 11284,16527
 Schonensche Str. -> Schönhauser Allee: U-Bahnrampe	3::igndisp 11284,16527 11027,16553 11019,16465
 Straßenbahn	3nocross::ignrte 11673,16367 11727,16358 11750,16354
