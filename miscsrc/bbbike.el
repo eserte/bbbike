@@ -240,6 +240,9 @@
   (substring bbbike-el-file-name (match-beginning 1) (match-end 1))
   )
 
+(defun bbbike-datadir ()
+  (concat (bbbike-rootdir) "/data"))
+
 (defvar bbbike-mode-map nil "Keymap for BBBike bbd mode.")
 (if bbbike-mode-map
     nil
@@ -525,7 +528,7 @@
 	(let* ((elemtype (substring sel (match-beginning 1) (match-end 1)))
 	       (elemid (substring sel (match-beginning 2) (match-end 2)))
 	       (elemversion (substring sel (match-beginning 3) (match-end 3)))
-	       (bbbike-datadir (concat (bbbike-rootdir) "/data"))
+	       (bbbike-datadir (bbbike-datadir))
 	       (grepcmd (concat "cd " bbbike-datadir " && grep -ns '^#: osm_watch: " elemtype " id=\"" elemid "\"' *-orig temp_blockings/bbbike-temp-blockings.pl"))
 	       (tempbuf "*bbbike update osm watch*"))
 	  (condition-case nil
@@ -605,8 +608,8 @@
     (if (not search-val)
 	(error "Can't find anything to grep for"))
     (if search-key
-	(let* ((bbbike-rootdir (file-relative-name (bbbike-rootdir)))
-	       (bbbike-datadir (file-relative-name (concat bbbike-rootdir "/data"))))
+	(let ((bbbike-rootdir (bbbike-rootdir))
+	      (bbbike-datadir (bbbike-datadir)))
 	  (grep (concat "2>/dev/null grep -ins " bbbike-datadir "/*-orig " bbbike-datadir "/*.coords.data " bbbike-datadir "/temp_blockings/bbbike-temp-blockings.pl " bbbike-rootdir "/t/cgi-mechanize.t " bbbike-rootdir "/t/old_comments.t " "-e '^#:[ ]*" search-key ".*" search-val "'"))))))
 
 (defun bbbike-grep-button (button)
@@ -642,8 +645,9 @@
 ;      (browse-url (format bbbike-sourceid-viz-format (button-get button :sourceid) (string-to-number lon) (string-to-number lat))))))
 
 (defun bbbike-sourceid-viz-button (button)
-  (let ((sourceid (button-get button :sourceid)))
-    (grep (concat "2>/dev/null egrep --with-filename -ns " bbbike-vmz-diff-file " -e " "'" "(¦|\246)" sourceid "(¦|\246)" "'"))))
+  (let ((sourceid (button-get button :sourceid))
+	(bbbike-datadir (bbbike-datadir)))
+    (grep (concat "2>/dev/null egrep --with-filename -ns " bbbike-vmz-diff-file " " (concat bbbike-datadir "/*-orig") " " (concat bbbike-datadir "/temp_blockings/bbbike-temp-blockings.pl") " -e " "'" "(¦|\246| )" sourceid "(¦|\246| |$)" "'"))))
 
 (define-button-type 'bbbike-sourceid-viz-button
   'action 'bbbike-sourceid-viz-button
