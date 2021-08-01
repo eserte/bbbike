@@ -89,10 +89,10 @@ jobs:
             bbbike_test_skip_mapserver: 0
           - dist:                       debian
             distver:                    stretch
-            bbbike_test_skip_mapserver: 1
+            bbbike_test_skip_mapserver: 0
           - dist:                       debian
             distver:                    buster
-            bbbike_test_skip_mapserver: 1
+            bbbike_test_skip_mapserver: 0
     steps:
     - uses: actions/checkout@v2
     - name: Build and test
