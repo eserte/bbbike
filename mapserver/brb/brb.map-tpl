@@ -23,6 +23,14 @@ SHAPEPATH "[% MAPSERVER_DIR %]/data"
 IMAGECOLOR [% IMAGECOLOR %]
 FONTSET "[% MAPSERVER_DIR %]/[% FONTS_LIST %]"
 
+[%
+  IF MAPSERVER_VERSION < 7 ;
+    SET ENABLE_ANNOTATION_LAYERS = 1;
+  ELSE;
+    SET ENABLE_ANNOTATION_LAYERS = 0;
+  END;
+-%]
+
 [%# NOTE: IMAGE_SUFFIX => type of *input* images -%]
 [%#       IMAGE_TYPE   => type of *output* image -%]
 [% IF NEED_PNG_NOALPHA_HACK %]
@@ -54,7 +62,13 @@ OUTPUTFORMAT
 END
 IMAGETYPE png
 
-[% SET TRANSPARENCY_ALPHA = "TRANSPARENCY ALPHA" -%]
+[%
+  IF MAPSERVER_VERSION >= 7;
+    SET TRANSPARENCY_ALPHA = "COMPOSITE\n  OPACITY 100\nEND";
+  ELSE;
+    SET TRANSPARENCY_ALPHA = "TRANSPARENCY ALPHA";
+  END
+-%]
 
 [% END %]
 
@@ -748,6 +762,7 @@ END
 ### BEGIN AFTER FAEHREN
 ### END AFTER FAEHREN
 
+[% IF ENABLE_ANNOTATION_LAYERS -%]
 LAYER
   NAME "F‰hren (Annotations)"
   GROUP faehren
@@ -781,6 +796,7 @@ LAYER
 [% PROCESS CLASS_FERRY imgsuffix="_klein" minscale=75000 maxscale=150000 legend=0 -%]
 [% PROCESS CLASS_FERRY imgsuffix="" minscale=undef maxscale=75000 legend=1 -%]
 END
+[% END -%]
 
 ### BEGIN AFTER FAEHREN_ANNOTATIONS
 ### END AFTER FAEHREN_ANNOTATIONS
@@ -1369,6 +1385,7 @@ END
   END
 [% END -%]
 
+[% IF ENABLE_ANNOTATION_LAYERS -%]
 LAYER
   NAME "Straﬂen (Annotations)"
   GROUP strassen
@@ -1386,7 +1403,9 @@ LAYER
     WMS_SRS "EPSG:4326"
   END
 END
+[% END -%]
 
+[% IF ENABLE_ANNOTATION_LAYERS -%]
 LAYER
   NAME "Autobahnen (Annotations)"
   GROUP strassen_bab
@@ -1406,7 +1425,9 @@ LAYER
     WMS_SRS "EPSG:4326"
   END
 END
+[% END -%]
 
+[% IF ENABLE_ANNOTATION_LAYERS -%]
 LAYER
   NAME "Radrouten (Annotations)"
   GROUP comments_route
@@ -1424,6 +1445,7 @@ LAYER
     WMS_SRS "EPSG:4326"
   END
 END
+[% END -%]
 
 ### BEGIN AFTER STRASSEN_ANNOTATIONS
 ### END AFTER STRASSEN_ANNOTATIONS
@@ -1946,6 +1968,7 @@ LAYER
   END
 END
 
+[% IF ENABLE_ANNOTATION_LAYERS -%]
 LAYER
   NAME "Steigungen (Annotations)"
   GROUP mount
@@ -1969,6 +1992,7 @@ LAYER
     END
   END
 END
+[% END -%]
 
 LAYER
   NAME "Fragezeichen"
@@ -2611,6 +2635,7 @@ END
 ### END AFTER STAATSGRENZEN
 
 ### BEGIN TITLE
+[% IF ENABLE_ANNOTATION_LAYERS -%]
 #LAYER
 #  NAME titlelayer
 #  TYPE ANNOTATION
@@ -2629,6 +2654,7 @@ END
 #    END
 #  END
 #END
+[% END -%]
 ### END TITLE
 
 ### BEGIN AFTER TITLE
