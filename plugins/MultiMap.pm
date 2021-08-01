@@ -1147,6 +1147,10 @@ sub show_fis_broker_menu {
 	);
     $link_menu->separator;
     $link_menu->command
+	(-label => 'Verkehrsmengen 2019',
+	 -command => sub { showmap_fis_broker(mapId => 'k_vmengen2019@senstadt', %args) },
+	);
+    $link_menu->command
 	(-label => 'Verkehrsmengen 2014',
 	 -command => sub { showmap_fis_broker(mapId => 'wmsk_07_01verkmeng2014@senstadt', %args) },
 	);
