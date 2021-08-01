@@ -824,7 +824,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2929,21 +2929,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2020/09/vorschau-05_06-09-2020/
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1111500.php
-	q4::temp 16507,7254 16428,7144
-	q4::temp; 16428,7144 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
-	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16136,7886 16406,7430 16507,7254 16633,7434 16673,7511
-	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
-	q4::temp 15778,8990 15680,8914 15591,8848
-',
-         'from' => 1627639200,
-         'id' => 3274,
-         'text' => 'Köpenicker Landstraße, Neue Krugallee, Bulgarische Straße, Uferweg Plänterwald: wegen des Berlin-Triathlons Sperrungen, evtl. auch für Radfahrer gültig, am 31.7.2021 von 12:00 bis 21:00 Uhr und am 1.8.2021 von 6:30 bis 18:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1627833600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3385,19 +3371,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: JACOBSENWEG-2021
-#: by: https://www.berliner-woche.de/borsigwalde/c-verkehr/neue-fahrbahn-auf-jacobsenweg_a309825
-#: also_indoor: traffic
-	q4::inwork; 2821,19559 2909,19485 2988,19445 3203,19340 3232,19325 3324,19277
-',
-         'from' => 1622325600,
-         'id' => 3365,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1083540.php',
-         'text' => 'Jacobsensweg: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich vom 31.5.2021 bis Ende Juli 2021',
-         'type' => 'handicap',
-         'until' => 1627768799
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/saison-startet_a311283 (und die anderen neuen Spielstraßen in FH-KB)
