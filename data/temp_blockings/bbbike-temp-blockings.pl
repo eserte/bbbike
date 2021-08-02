@@ -19294,7 +19294,7 @@ EOF
 #: XXX zurzeit (2021-07-26 ist die Baustelle etwa 120m lang)
 #: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
 #: note: laut rbb bis 16.8.2021
-#: last_checked: 2021-07-31
+#: last_checked: 2021-08-02
 #: check_frequency: 7d
 	q4::inwork; 13651,11731 13895,11663
 # REMOVED (hier nicht mehr)	q4::inwork; 13895,11663 13954,11647
@@ -28697,7 +28697,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-07-21 (mapillary)
+#: last_checked: 2021-07-28 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -30969,7 +30969,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-07-29
+#: last_checked: 2021-08-02
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32556,13 +32556,15 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Kulmer Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, Ende der Bauarbeiten unbekannt',
+       text  => 'Kulmer Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, vermutlich bis Dezember 2021',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Wie lange gehen die Bauarbeiten?
+#: XXX laut Baustellenschild der Wasserbetriebe bis Dezember 2021
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-06-25
+#: last_checked: 2021-08-02
+#: check_frequency: 90d
+#: next_check: 2021-12-01
 	q4::inwork; 7771,9479 7829,9723
 EOF
      },
@@ -33242,6 +33244,23 @@ EOF
 #: last_checked: 2021-07-31
 #: check_frequency: 14d
 	q3::inwork 13057,14267 13158,14117
+EOF
+     },
+     { from  => 1627924220, # 2021-08-02 19:10
+       until => 1630101600, # 2021-08-28 00:00
+       text  => 'Rampe zum Anhalter Steg gesperrt, bis zum 27.8.2021',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::inwork 8668,10219 8668,10236 8715,10314
+EOF
+     },
+     { from  => 1630360800, # 2021-08-31 00:00
+       until => 1638399600, # 2021-12-02 00:00
+       text  => 'Schulzendorfer Str.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich vom 1.9.2021 bis 1.12.2021 ',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1111853.php',
+       data  => <<EOF,
+	q4::inwork 2793,22640 2652,22615 2556,22598
 EOF
      },
     );
