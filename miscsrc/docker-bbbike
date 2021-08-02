@@ -689,14 +689,36 @@ RUN apt-get install -qqy --no-install-recommends \\
       make gcc libc6-dev libinline-perl libinline-c-perl
 RUN apt-get install -qqy --no-install-recommends \\
       libmime-lite-perl
+EOF
+    if ($opt{mapserver}) {
+	# freebsd-buildutils for pmake/fmake needed
+	$dockerfile .= <<EOF;
+RUN apt-get install -qqy --no-install-recommends \\
+      freebsd-buildutils mapserver-bin cgi-mapserver
+EOF
+    }
+    $dockerfile .= <<EOF;
 # XXX check the above list, and maybe minimize!
 # XXX mapserver not included, because of complicated build process
 RUN mkdir /bbbike
 COPY . /bbbike
 WORKDIR /bbbike
 RUN perl Makefile.PL && make ext
+EOF
+    # next lines taken from init_cgi_config from travis-functions.sh
+    if (!$opt{mapserver}) {
+	$dockerfile .= <<'EOF';
+RUN (cd cgi && ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config)
+EOF
+    } else {
+	$dockerfile .= <<'EOF';
+RUN (cd cgi && ln -snf bbbike-debian.cgi.config bbbike.cgi.config)
+RUN (cd data && $(perl -I.. -MBBBikeBuildUtil=get_pmake -e 'print get_pmake') mapfiles)
+RUN (cd mapserver/brb && touch -t 197001010000 Makefile.local.inc && $(perl -I../.. -MBBBikeBuildUtil=get_pmake -e 'print get_pmake'))
+EOF
+    }
+    $dockerfile .= <<EOF;
 WORKDIR /bbbike/cgi
-RUN ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config
 RUN make symlinks fix-permissions
 EXPOSE $docker_port
 CMD starman --listen :$docker_port bbbike.psgi
@@ -856,12 +878,14 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       distver => 'jessie',
 	       test => 0,
 	       'invalidate-apt' => 0,
+	       mapserver => 0,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
 	       "distver|distversion=s",
 	       "test!",
 	       'invalidate-apt!',
+	       'mapserver!',
 	      )
 	or usage_cgi;
     cgi($doit, %opt);
