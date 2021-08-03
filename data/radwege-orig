@@ -2098,7 +2098,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2021-07-24
+#: last_checked: 2021-07-31 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -3951,7 +3951,9 @@ breiter asphaltierter Gehweg für Radfahrer frei	RW1; 17966,17768 18011,17712 181
 	RW3; 10908,17142 10904,17288
 teilweise mit Benutzungspflicht	RW3; 10904,17288 10908,17142
 	RW2; 11019,16465 10778,16485 10699,16492 10620,16497 10533,16505 10458,16509 10370,16516 10282,16522 10197,16528 10134,16534 9998,16547 9883,16557
-	RW1; 9883,16557 9998,16547 10134,16534 10197,16528 10282,16522 10370,16516 10458,16509 10533,16505 10620,16497 10699,16492 10778,16485
+	RW1; 9883,16557 9998,16547 10134,16534 10197,16528 10282,16522 10370,16516 10458,16509
+	RW2; 10458,16509 10533,16505 10620,16497
+	RW1; 10620,16497 10699,16492 10778,16485
 	RW2; 10778,16485 11019,16465
 Radweg antik und unbenutzbar	RW1;RW1 18843,9952 18881,9865
 Verbundsteinpflasterradweg	RW1; 18881,9865 18934,9826 19005,9816
@@ -4398,10 +4400,10 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: source_id: viz2021:13.500319,52.510647,28.06.2021,08:00 (inaktiv)
 #: XXX dieser Abschnitt bekommt eine Grünmarkierung
 #: priority: #D
-#: last_checked: 2021-07-14
-# REMOVED --- #: check_frequency: 120d
-# REMOVED --- #: next_check: 2021-12-31
-#: next_check: 2021-07-22
+#: last_checked: 2021-08-03
+#: check_frequency: 60d
+#: next_check: 2021-12-31
+# REMOVED --- #: next_check: 2021-07-22
 	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 Grünmarkierung	RW4;RW4 17166,11944 17210,11950 17338,11969
 	RW3;RW3 2717,7093 2731,7247 2744,7397 2750,7444 2757,7604
@@ -6646,7 +6648,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2021-07-07
+#: last_checked: 2021-07-09 (mapillary)
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: next_check_id: POPUPRADWEGE-2020
@@ -7085,6 +7087,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 #: by: https://www.berliner-woche.de/tempelhof/c-bauen/spd-kritisiert-verzoegerung-gruene-wollen-mehr-radstellplaetze-an-u-bahnhoefen_a308523
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1083057.php (Lieferzonen während der Sanierungsarbeiten)
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/im-herbst-beginnt-der-verkehrsversuch-rund-um-den-tempelhofer-damm_a312336
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/s-bahn-faehrt-u-bahn-gesperrt_a317418
 #: source_id: 2147347065 (bis 17.10.2021)
 #: last_checked: 2021-07-18 vvv
 #: check_frequency: 90d vvv

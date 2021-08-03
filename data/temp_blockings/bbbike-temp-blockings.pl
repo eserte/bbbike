@@ -261,15 +261,17 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Fürstenwalder Damm zwischen Bölschestraße und Hartlebenstraße Baustell stadtauswärts, Straße gesperrt, eine Umleitung ist eingerichtet, Dauer: 07.09.2003,04.00 Uhr bis 21.09.2003',
        type  => 'gesperrt',
      },
-     { from  => $isodate2epoch->("2019-09-05 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-09-08 21:00:00"),
+     { from  => $isodate2epoch->("2021-09-09 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-09-12 21:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 9, start => "2020-10-25T00:00:00"]],
-       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 06.09.2019 16:00 Uhr bis 08.09.2019 20:00 Uhr',
+       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 10.09.2021 16:00 Uhr bis 12.09.2021 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
 #: by: https://www.family-and-friends-ev.de/?date=20210418 (10.-12. September 2021)
+#: by: https://www.vinoflix.com/blog/wein-und-winzerfest-lichtenrade
+#: by: https://www.visitberlin.de/en/event/wine-festival-lichtenrade
 	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -914,7 +916,7 @@ EOF
        until => $isodate2epoch->("2019-09-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 8, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 21,
+       recurrence_prewarn_days => 14,
        text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (07.09.2019 bis 08.09.2019)',
        type  => 'gesperrt',
        source_id => 'http://www.hier-in-rudow.de/meilenfeste.html',
@@ -18373,13 +18375,14 @@ EOF
        until => $isodate2epoch->("2019-06-30 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -60,
+       recurrence_prewarn_days => -80,
        # früher Bergmannstraßenfest
        text  => 'Kreuzbergstr.: Veranstaltung (Kreuzbergstraßenfest), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (28. Juni 2019 bis 30. Juni 2019)',
        type  => 'gesperrt',
        source_id => 'https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html (8.-10.10.2021, als "Kreuzberg-Festival", vermutlich auf Kreuzbergstraße)
+#: by: https://kreuzberg-festival.de/
 	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
 	3 9000,9509 8970,9323 9007,9264
 	3 9007,9264 8970,9323 9000,9509
@@ -20202,14 +20205,15 @@ EOF
 	2::inwork -13658,-4896 -13712,-6415
 EOF
      },
-     { from  => $isodate2epoch->("2019-09-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-09-08 23:59:59"),
+     { from  => $isodate2epoch->("2021-09-10 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-09-12 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 9, start => "2020-10-25T00:00:00"]],
-       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (07.09.2019-08.09.2019)',
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (11.09.2021-12.09.2021)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.laubinger.de/termine/50-fest-an-der-panke/
+#: by: https://www.wollenschlaeger-berlin.de/51-fest-an-der-panke/
 	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
 	2::temp 10602,18382 10562,18506 10532,18601
 EOF
@@ -23857,7 +23861,7 @@ EOF
        until => $isodate2epoch->("2019-09-14 23:59:59"),
        periodic => 1,
        recurrences => [["yearly", days => 31, months => 8, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 21,
+       recurrence_prewarn_days => 14,
        text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 14. September 2019, 12 bis 21 Uhr ',
        type  => 'gesperrt',
        source_id => 'https://www.turmstrasse.de/aktuelles',
@@ -30969,7 +30973,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-08-02
+#: last_checked: 2021-08-03
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33011,7 +33015,7 @@ EOF
        source_id => 'viz2021:13.471852,52.513916,22.06.2021,07:00',
        data  => <<EOF,
 #: next_check_id: FRANKFURTER-2021
-#: last_checked: 2021-07-16 vvv
+#: last_checked: 2021-08-03 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-09-13 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -33105,7 +33109,7 @@ EOF
 #: note: bei rbb nur bis 30.9.2021
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-07-30
+#: last_checked: 2021-08-03
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33235,14 +33239,15 @@ EOF
 EOF
      },
      { from  => 1627164000, # 2021-07-25 00:00
-       until => undef, # XXX
-       text  => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, vom 26.07.2021, Ende unbekannt ',
+       until => $isodate2epoch->("2021-10-31 18:00:00"), # undef, # XXX
+       text  => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, vom 26.07.2021 bis voraussichtlich 31.10.2021',
        type  => 'handicap',
        source_id => 'viz2021:13.444,52.53356,26.07.2021,08:18',
        data  => <<EOF,
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt
 #: last_checked: 2021-07-31
-#: check_frequency: 14d
+#: check_frequency: 30d
+#: next_check: 2021-10-31
 	q3::inwork 13057,14267 13158,14117
 EOF
      },

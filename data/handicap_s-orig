@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: note: laut rbb bis 29.10.2021 vvv
-#: last_checked: 2021-07-21 vvv
+#: last_checked: 2021-08-03 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-10-29 vvv
 Jessnerstr.: Sperrung der Fahrbahn nördlich der Oderstr.	q3::inwork 14946,11697 14986,11760
@@ -676,7 +676,7 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12
 # 
 ### Lichtenberg ###
 # 
-#: last_checked: 2021-07-30 vvv
+#: last_checked: 2021-08-03 vvv
 #: check_frequency: 7d vvv
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
 S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16878,9875 16900,9861 16925,9852
@@ -1394,7 +1394,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="6"
-#: last_checked: 2021-07-14
+#: last_checked: 2021-08-03
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
@@ -3130,7 +3130,9 @@ Alexanderufer - Charité: durch das Tor schieben	q4 8371,13399 8363,13402 8356,13
 Nöldnerplatz [Lückstr. - Nöldnerstr.]: einige Fußgänger	q1 15903,10906 15932,10830
 #: note: Radfahren explizit verboten
 Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger	q3 15932,10830 15970,10755
-(Weg im Grünzug): einige Fußgänger	q1- 17391,9746 17316,9797 17257,9869 17161,9921 17005,9953
+(Weg im Grünzug): einige Fußgänger	q1- 17391,9746 17316,9797 17257,9869 17161,9921 17005,9953 16963,9960
+#: note: hier etwas breiterer Weg
+(Weg im Grünzug): einige Fußgänger	q1 16963,9960 16886,9982 16841,9997
 (Dolgenseestr. - Weg im Grünzug): einige Fußgänger	q1- 17275,9892 17257,9869
 Wadzeckstr. - Mollstr.: einige Fußgänger	q1 11315,13210 11399,13333
 (zum Poststadion): Parkplatzverkehr	q1 7452,13904 7417,13880 7445,13792 7431,13740 7343,13679 7338,13649
