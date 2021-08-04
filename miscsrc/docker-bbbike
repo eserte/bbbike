@@ -132,9 +132,6 @@ sub gui {
 FROM $opt{dist}:$opt{distver}
 EOF
     _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
-    $dockerfile .= <<EOF;
-RUN apt-get update
-EOF
     if ($opt{src} =~ m{^(github|local)$}) {
 	my @packages = qw(perl-tk);
 	if ($opt{'feature-pdf'}) {
@@ -147,7 +144,7 @@ EOF
 	    push @packages, 'git';
 	}
 	$dockerfile .= <<"EOF";
-RUN apt-get install -qqy @packages
+RUN apt-get update && apt-get install -qqy @packages
 EOF
 	if ($opt{src} eq 'github') {
 	    $docker_cmd = "git clone --depth=1 git://github.com/eserte/bbbike.git && bbbike/bbbike $opt{'bbbike-args'}";
@@ -362,8 +359,7 @@ EOF
     # basic packages
     _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
     $dockerfile .= <<EOF;
-RUN apt-get update -qq
-RUN apt-get install -qqy git cpanminus libssl-dev wget
+RUN apt-get update -qq && apt-get install -qqy git cpanminus libssl-dev wget
 EOF
     if (
 	$opt{distver} eq 'precise' || $opt{distver} eq 'xenial' || $opt{distver} eq 'bionic' || $opt{distver} eq 'focal' ||
@@ -615,8 +611,7 @@ FROM $opt{dist}:$opt{distver}
 EOF
     _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
     $dockerfile .= <<EOF;
-RUN apt-get update
-RUN apt-get install -qqy dpkg-dev lintian rsync debhelper
+RUN apt-get update && apt-get install -qqy dpkg-dev lintian rsync debhelper
 RUN mkdir /bbbike
 COPY $distbasefile /bbbike
 COPY $origfile /bbbike
@@ -658,8 +653,7 @@ EOF
     _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
     my $docker_port = 5000;
     $dockerfile .= <<EOF;
-RUN apt-get update
-RUN apt-get install -qqy --no-install-recommends \\
+RUN apt-get update && apt-get install -qqy --no-install-recommends \\
       libgd3 libgd-gd2-perl ttf-bitstream-vera ttf-dejavu \\
       libpdf-create-perl libcairo-perl libpango-perl libfont-afm-perl \\
       libimager-perl libsvg-perl librsvg2-bin \\
