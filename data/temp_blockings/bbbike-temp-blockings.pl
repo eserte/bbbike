@@ -18262,14 +18262,14 @@ EOF
 # REMOVED ---	3 7115,11220 6880,11110 6841,11114
 # REMOVED ---	3 6716,11439 6825,11486 6915,11492
 # REMOVED ---	3 7131,10331 7033,10396 7227,10489
-# REMOVED ---	3 7131,10331 7033,10328 7060,10221
+# REMOVED ---	3 7131,10331 7033,10328 7055,10220
 # REMOVED ---	3 6869,11567 6809,11570 6679,11602 6512,11608
 # REMOVED ---	3 6725,10641 6743,10615 6753,10446 6719,10347
 # REMOVED ---	3 5196,10398 5215,10711 5230,10919
 # REMOVED ---	3 6681,10959 6824,10904 6740,10755
 # REMOVED ---	3 6740,10755 6824,10904 6681,10959
 # REMOVED ---	3 6818,10725 6972,10665 7110,10613
-# REMOVED ---	3 7060,10221 7033,10328 7131,10331
+# REMOVED ---	3 7055,10220 7033,10328 7131,10331
 # REMOVED ---	3 6915,11492 6825,11486 6716,11439
 # REMOVED ---	3 6742,11099 6873,11011 7002,11034
 # REMOVED ---	3 7227,10489 7033,10396 7131,10331
@@ -24652,7 +24652,7 @@ EOF
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1503/nachricht5511.html
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20150430.1120.401849.html
 #: last_checked: 2015-09-09
-	q4::inwork; 7033,10328 7060,10221 7080,10098
+	q4::inwork; 7033,10328 7055,10220 7080,10098
 # REMOVED ---	q4::inwork 7080,10098 7038,10088
 	q3::inwork 7080,10098 7167,10074
 EOF
@@ -30973,7 +30973,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-08-04
+#: last_checked: 2021-08-05
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33244,6 +33244,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.444,52.53356,26.07.2021,08:18',
        data  => <<EOF,
+#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021)
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt
 #: last_checked: 2021-07-31
 #: check_frequency: 30d
@@ -33266,6 +33267,19 @@ EOF
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1111853.php',
        data  => <<EOF,
 	q4::inwork 2793,22640 2652,22615 2556,22598
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'James-Simon-Park: nachts zwischen 20 und 6 Uhr geschlossen',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-mitte/aktuelles/amtliche-bekanntmachungen/allgemeinverfuegung_james-simon-park.pdf',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1113411.php
+#: tempex: T20-T06 vvv
+	2::night 10132,12941 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992
+	2::night 10166,12777 10105,12855 9977,12912
+#: tempex ^^^
 EOF
      },
     );

@@ -4433,7 +4433,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-08-04
+#: last_checked: 2021-08-05
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -5491,7 +5491,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        {
-         'data' => '#: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021)
+#: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt
 #: last_checked: 2021-07-31
 #: check_frequency: 30d
 #: next_check: 2021-10-31
@@ -5522,6 +5523,20 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Schulzendorfer Str.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich vom 1.9.2021 bis 1.12.2021 ',
          'type' => 'handicap',
          'until' => 1638399600
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1113411.php
+#: tempex: T20-T06 vvv
+	2::night 10132,12941 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992
+	2::night 10166,12777 10105,12855 9977,12912
+#: tempex ^^^
+',
+         'from' => undef,
+         'id' => 3427,
+         'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/amtliche-bekanntmachungen/allgemeinverfuegung_james-simon-park.pdf',
+         'text' => 'James-Simon-Park: nachts zwischen 20 und 6 Uhr geschlossen',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

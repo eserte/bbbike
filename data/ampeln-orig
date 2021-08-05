@@ -2958,7 +2958,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2021-05-30 (mapillary)
+#: last_checked: 2021-07-27 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-11-15
 	X::inwork 8732,14098
@@ -3268,7 +3268,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5364,7330
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2021-05-22
+#: last_checked: 2021-07-27 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-11-15
 	X::inwork 8336,14586
@@ -3279,15 +3279,16 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2021-06-29 (daf)
+#: last_checked: 2021-07-27 (mapillary)
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 
 #: next_check_id: CORONA-2020
 #: XXX vermutlich temporär für das Impfzentrum
 #: by: mapillary
-#: last_checked: 2021-05-30 (mapillary)
+#: last_checked: 2021-07-27 (mapillary)
 #: check_frequency: 90d
+#: next_check: 2021-08-31
 	F::inwork 8153,14769
 # 
 # REMOVED --- #: next_check_id: CHAUSSEESTR-2016 vvv
