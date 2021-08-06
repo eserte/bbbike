@@ -4766,20 +4766,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1637337600
        },
-       {
-         'data' => '#: next_check_id: ABBESTR-2021
-#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-07-10
-#: check_frequency: 30d
-	q3::inwork 4674,12076 4698,12124
-# REMOVED (hier nicht mehr) ---	q3::inwork 4698,12124 4755,12236
-',
-         'from' => undef,
-         'id' => 3325,
-         'text' => 'Abbestr.: Bauarbeiten, Fahrbahn zwischen Guerickestr. und Fraunhoferstr. kann gesperrt sein, Ausweichen auf Gehweg, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: PARKSTADTKARLSHORST-2021
@@ -5275,18 +5262,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.302821,52.425442,19.07.2021,07:00
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/in-der-goerzallee-wird-die-fahrbahn-vom-19-juli-bis-6-august-erneuert_a315012
-	q4::inwork; 3716,2063 3746,2108 3805,2196
-',
-         'from' => 1626559200,
-         'id' => 3397,
-         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1099864.php',
-         'text' => 'Goerzallee: Bauarbeiten, Fahrbahn zwischen Ortlerweg und Lausanner Str. Richtung Norden gesperrt, vom 19.07. bis 06.08.2021',
-         'type' => 'handicap',
-         'until' => 1628262000
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.337982,52.451062,02.08.2021,06:00
 	q4::inwork; 6055,4950 6182,4931 6187,4930 6215,4926 6276,4915 6354,4901 6385,4896 6531,4865
@@ -5425,17 +5401,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1633039199
        },
-       {
-         'data' => '#: source_id: viz2021:13.526597,52.556118,16.07.2021,04:00
-	2::inwork 18527,16789 18587,16834 18738,16957
-',
-         'from' => 1626300000,
-         'id' => 3415,
-         'source_id' => 'viz2021:13.526597,52.556118,16.07.2021,08:00',
-         'text' => 'Gehrenseestr. im Bereich S-Bhf.: Bauarbeiten, evtl. für Radfahrer nicht passierbar, vom 16.07.2021 04:00 bis 06.08.2021 17:00',
-         'type' => 'gesperrt',
-         'until' => 1628262000
-       },
+       undef,
        {
          'data' => '	q4::inwork 60206,86603 59776,86911 59791,87005 59779,87064 59776,87207 59766,87273
 ',
@@ -5459,16 +5425,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1633039200
        },
-       {
-         'data' => '	q4::inwork; 749,2616 709,2592 629,2545
-',
-         'from' => 1626614528,
-         'id' => 3420,
-         'source_id' => 'viz2021:13.259269,52.43091,28.06.2021,07:00',
-         'text' => 'Machnower Str.: für Radfahrer Richtung Westen gesperrt, voraussichtlich bis 06.08.2021 17:00',
-         'type' => 'handicap',
-         'until' => 1628262000
-       },
+       undef,
        {
          'data' => '	q4::temp:clock 9880,9233 9892,9286
 ',

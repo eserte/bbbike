@@ -32119,14 +32119,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1628276337, # undef, # XXX
        text  => 'Abbestr.: Bauarbeiten, Fahrbahn zwischen Guerickestr. und Fraunhoferstr. kann gesperrt sein, Ausweichen auf Gehweg, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: ABBESTR-2021
-#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-07-10
-#: check_frequency: 30d
+#: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
+# REMOVED --- #: next_check_id: ABBESTR-2021 --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2021-07-10 --- #: check_frequency: 30d
 	q3::inwork 4674,12076 4698,12124
 # REMOVED (hier nicht mehr) ---	q3::inwork 4698,12124 4755,12236
 EOF

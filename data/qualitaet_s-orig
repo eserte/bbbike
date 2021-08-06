@@ -57,6 +57,7 @@ Kopenhagener Str.: Fahrbahn asphaltiert, Radweg mit Verbundsteinpflaster	Q0 7481
 Hauptstr. (Rosenthal, Wilhelmsruh): Asphalt	Q0 7634,19793 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219 7900,20378 7979,20528 8055,20708 8081,20785 8092,20817 8107,20859 8158,21022
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/schwerlaster-sorgen-fuer-laerm-und-erschuetterungen_a306048 (Asphaltierung noch 2021)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1102115.php (Bauende voraussichtlich Mitte September 2021)
+#: source_id: viz2021:13.37551,52.597215,16.07.2021,06:00 (Fahrbahnsanierung bis 23.8.2021)
 #: next_check: 2021-09-15
 Hauptstr. (Rosenthal, Wilhelmsruh): Kopfsteinpflaster auf der Straße, Radweg mit Verbundsteinpflaster	Q1 8277,21257 8158,21022
 Hauptstr. (Rosenthal, Wilhelmsruh)/Mönchmühler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8389,21468 8460,21602 8473,21633 8568,21863 8556,21918 8400,22010 8430,22110 8439,22143 8464,22215 8543,22413 8554,22440 8900,23274 8904,23365 8909,23506
@@ -1064,6 +1065,7 @@ Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 92
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/oeffentlichkeitsbeteiligung-fuer-dritten-bauabschnitt-der-friedrich-engels-strasse-ausschliesslich-online_a294112
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5779 (Vorschlag)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/verordnete-fordern-moderne-planung-fuer-friedrich-engels-strasse_a303957
+#: by: https://www.berliner-woche.de/rosenthal/c-verkehr/zweigleisiger-ausbau-der-m1-ist-von-der-bvg-geplant_a318012 (Straßenbahn ab 2026 zweigleisig)
 #: XXX Wird nach der Straßenbaumaßnahme die Straße asphaltiert sein? Werden die Radspuren verlängert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus? vvv
 #: last_checked: 2021-04-11 vvv
 #: check_frequency: 540d vvv
@@ -6649,7 +6651,7 @@ Bohrauer Pfad: Beton	Q0- 20981,4628 20827,4655 20716,4691
 (Gartenweg [Kolonie Wendenheide]): unbefestigte Straße, zweispurig	Q2 20850,4225 20716,4549 20684,4596
 Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
-#: osm_watch: way id="156650954" version="14"
+#: osm_watch: way id="156650954" version="15"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
 #: last_checked: 2021-03-01
 #: check_frequency: 180d
@@ -15887,13 +15889,9 @@ Burgwallstr.: Kopfsteinpflaster	Q3 13065,21267 13107,21357
 Burgwallstr.: Asphalt	Q0 13107,21357 13136,21419 13158,21471 13171,21532 13177,21595
 #: confirmed_by: srt (teilweise, im Norden und ab Gutenfelsstr.)
 Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q3+ 13177,21595 13182,21639 13193,21700
-#: next_check_id: KOENIGSTEINBRUECKE-2019
-#: XXX provisorische Wegführung; nach den Bauarbeiten den alten Eintrag wiederherstellen!
-#: last_checked: 2021-05-09 (mapillary)
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2021-01-01
-Burgwallstr.: Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke ertüchtigt	Q2 13193,21700 13220,21761 13270,21870 13315,21969
-#Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q3+ 13193,21700 13220,21761 13270,21870 13315,21969
+# REMOVED --- #: next_check_id: KOENIGSTEINBRUECKE-2019 --- #: XXX provisorische Wegführung; nach den Bauarbeiten den alten Eintrag wiederherstellen! --- #: last_checked: 2021-05-09 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2021-01-01
+# REMOVED (nicht mehr offiziell für Radfahrer befahrbar) --- Burgwallstr.: Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke ertüchtigt	Q2 13193,21700 13220,21761 13270,21870 13315,21969
+Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q3+ 13193,21700 13220,21761 13270,21870 13315,21969
 Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q3+ 13315,21969 13392,22014 13505,22081 13609,22143 13682,22139 13748,22093
 # 
 #: by: Andreas Aurenz: vvv
@@ -18972,13 +18970,9 @@ Regensburger Str. (Lichtenrade): Verbundsteinpflaster	Q1 11232,-2377 11433,-2320
 # 
 #: by: Michaela Voß: vvv
 #: confirmed_by: srt vvv
-#: next_check_id: KOENIGSTEINBRUECKE-2019
-#: XXX provisorische Wegführung; nach den Bauarbeiten den alten Eintrag wiederherstellen!
-#: last_checked: 2021-02-25 (mapillary)
-#: check_frequency: 270d
-# REMOVED --- #: next_check: 2021-01-01
-Freischützstr.: schlechtes Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke ertüchtigt	Q2 13249,22003 13315,21969
-#Freischützstr.: schlechtes Kopfsteinpflaster	Q3 13249,22003 13315,21969
+# REMOVED --- #: next_check_id: KOENIGSTEINBRUECKE-2019 --- #: XXX provisorische Wegführung; nach den Bauarbeiten den alten Eintrag wiederherstellen! --- #: last_checked: 2021-02-25 (mapillary) --- #: check_frequency: 270d --- #: next_check: 2021-01-01
+# REMOVED --- Freischützstr.: schlechtes Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke ertüchtigt	Q2 13249,22003 13315,21969
+Freischützstr.: schlechtes Kopfsteinpflaster	Q3 13249,22003 13315,21969
 Freischützstr.: schlechtes Kopfsteinpflaster	Q3 13315,21969 13601,21826
 #: confirmed_by ^^^
 #: by ^^^
