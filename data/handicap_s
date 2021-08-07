@@ -970,8 +970,9 @@ Straﬂe 455: Bordstein	q2 4916,17201 4931,17174
 Kleingartenstr.: enge Straﬂe	q1 24118,4404 24075,4417 24022,4442 23978,4484
 Gladiolenstr.: enge Straﬂe	q1 23536,4543 23541,4439
 (Steffenshagener Str. - Lidl-Parkplatz): Fuﬂg‰nger	q1 22991,11133 22982,11157
-Hamsterstr.: eng, Fuﬂg‰nger	q2 23928,11620 23917,11600 23799,11646 23694,11678 23588,11720 23495,11753 23390,11792
-Wieselstr.: eng, Fuﬂg‰nger	q2 24068,11577 23954,11615 23940,11592
+Hamsterstr.: eng, Fuﬂg‰nger, Bordstein	q4 23928,11620 23917,11600
+Hamsterstr.: eng, Fuﬂg‰nger	q3 23917,11600 23799,11646 23694,11678 23588,11720 23495,11753 23390,11792
+Wieselstr.: eng, Fuﬂg‰nger	q3 24068,11577 23954,11615 23940,11592
 (Lindenufer - Behnitz): Fuﬂg‰nger	q1 -2964,14478 -2918,14496 -2910,14534 -2913,14628 -2928,14666 -2942,14666
 Tegelorter Promenade: Fuﬂg‰nger	q1 -1478,17889 -1604,17851 -1694,17839 -1686,17918 -1660,18035 -1659,18076
 Tegelorter Promenade: Fuﬂg‰nger	q1 -1659,18104 -1660,18114 -1661,18132 -1717,18237 -1836,18418 -1877,18495 -2050,18643
@@ -1007,7 +1008,7 @@ Kurt-Weill-Gasse: Fuﬂg‰nger	q1 23820,14896 23787,14919
 Clara-Zetkin-Weg: Fuﬂg‰nger	q1 22572,13025 22591,12959 22612,12966 22681,12985 22693,12970 22775,12984
 (Clara-Zetkin-Platz - Bansiner Str.): Fuﬂg‰nger	q1 22612,12966 22623,12944
 Lion-Feuchtwanger-Str.: Fuﬂg‰nger, Rampe	q2 22538,12955 22562,12944 22591,12959
-Lion-Feuchtwanger-Weg: Fuﬂg‰nger	q1 22516,12946 22493,12999
+Lion-Feuchtwanger-Weg: Fuﬂg‰nger, Bordstein	q3 22516,12946 22493,12999
 (Erich-K‰stner-Str. - Peter-Huchel-Str.): eng, Fuﬂg‰nger	q2 23070,13711 23042,13657 23060,13624 23052,13586 23019,13551 23007,13509
 (Carola-Neher-Str. - U-Bhf. Cottbusser Platz): Fuﬂg‰nger	q1 23438,14355 23476,14409 23458,14439
 (Unterf¸hrung U-Bhf. Cottbusser Platz): Fuﬂg‰nger	q1 23458,14439 23423,14543
@@ -2133,6 +2134,8 @@ Puschkinallee [Nebenstraﬂe]: Fuﬂg‰nger	q3 14152,9746 14196,9749
 (Heino-Schmieden-Weg - Alt-Biesdorf): enge Rampe	q3 20831,11604 20840,11604 20830,11610
 Weiﬂenhˆher Str. [69-71]: einige Fuﬂg‰nger	q1 20569,11492 20582,11558
 (Kˆnigsteinbr¸cke - Weg an der A114): sehr enger Trampelpfad	q4 13136,22397 13167,22417 13217,22413
+Wuhlewanderweg: enge Br¸cke	q2 22349,17302 22364,17323
+(Verbindung Golliner Str. - Wuhlewanderweg): schmaler Pfad	q2 22272,18296 22287,18297 22356,18264 22356,18239 22363,18219
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

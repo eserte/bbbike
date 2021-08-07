@@ -1399,7 +1399,7 @@ zwischen Studentenwohnheim und Krankenhausgelände	CP2; 2539,12835 2561,12686
 # 
 (Lydia-Rabinowitsch-Str. - Am Hamburger Bahnhof): Hausdurchfahrt	CS; 7959,13982 7997,13892
 # 
-# REMOVED ((einige) Schilder hängen) --- #: last_checked: 2020-09-06 vvv --- #: check_frequency: 90d vvv --- Christian-Dohm-Weg: nicht ausgeschildert	CS 20760,18812 20894,18861 21024,18915 --- Henriette-Herz-Allee: nur provisorisch ausgeschildert	CS 20907,18740 20901,18793 20894,18861 20889,18935 --- #: check_frequency ^^^ --- #: last_checked ^^^
+# REMOVED ((einige) Schilder hängen) --- #: last_checked: 2020-09-06 vvv --- #: check_frequency: 90d vvv --- Christian-Dohm-Weg: nicht ausgeschildert	CS 20760,18812 20894,18861 21028,18915 --- Henriette-Herz-Allee: nur provisorisch ausgeschildert	CS 20907,18740 20901,18793 20894,18861 20889,18935 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 Friedrich-Meinecke-Weg: nicht ausgeschildert	CS 1803,5397 1873,5385 1946,5385 2052,5379 2181,5385 2208,5385 2280,5431
 # 
@@ -1524,8 +1524,8 @@ Schillerhof: Hausdurchfahrt	CP2; 6928,17154 7069,17204
 # 
 #: next_check_id: MUENSTERBERGERWEG-2019
 #: XXX werden hier noch Straßenschilder aufgestellt?
-#: last_checked: 2021-04-17
-#: check_frequency: 90d
+#: last_checked: 2021-08-07
+#: check_frequency: 120d
 Münsterberger Weg: nicht ausgeschildert	CS 24172,11320 24029,11363
 # 
 (Waltraudstr. - Clayallee): entlang des U-Bahneinschnitts	CS 919,4815 935,4814 1253,4788 1447,4757
@@ -1543,6 +1543,14 @@ ausgeschildert Hauptstr. 2D-2B	CP2; 7617,19748 7578,19753
 Mirower Str. - Mittelheide: vor den Recycling-Containern in den Waldweg abbiegen	CP; 24387,7751 24387,7708 24365,7657
 # 
 ausgeschildert "Egsdorfer Berg"	CP2; 23596,-29215 23640,-29209
+# 
+#: next_check_id: FALKENBERG-2021
+#: last_checked: 2021-08-07 vvv
+#: check_frequency: 60d vvv
+Am Dörferweg: nicht ausgeschildert	CS 20889,18935 20998,18980
+David-Friedländer-Weg: nicht ausgeschildert	CS 21038,18851 21028,18915 20998,18980
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)

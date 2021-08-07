@@ -2901,12 +2901,16 @@ neu asphaltiert	RW2; 22483,11261 22326,11266 22242,11269
 	RW2;RW2 24175,11265 24426,11265 24654,11265
 	RW2;RW2 24654,11265 24801,11261 24893,11252 25138,11215
 # 
-# REMOVED --- #: next_check_id: PILGRAMER-2019 --- #: XXX provisorische Wegführung während der Bauarbeiten vvv --- #: next_check: 2021-01-05 vvv --- #: valid: -20210105 vvv --- gemeinsamer Geh- und Radweg	RW2; 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 --- gemeinsamer Geh- und Radweg	RW2;RW8 25143,10961 25139,11108 25139,11156 25138,11215 --- #: valid ^^^ --- #: XXX wobei es nach den Arbeiten möglicherweise ganz anders aussehen wird --- #: last_checked: 2021-04-17 --- #: next_check: 2021-05-28
+# REMOVED --- #: next_check_id: PILGRAMER-2019 --- #: XXX provisorische Wegführung während der Bauarbeiten vvv --- #: next_check: 2021-01-05 vvv --- #: valid: -20210105 vvv --- gemeinsamer Geh- und Radweg	RW2; 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 --- gemeinsamer Geh- und Radweg	RW2;RW8 25143,10961 25143,11108 25142,11142 25138,11215 --- #: valid ^^^ --- #: XXX wobei es nach den Arbeiten möglicherweise ganz anders aussehen wird --- #: last_checked: 2021-04-17 --- #: next_check: 2021-05-28
 # REMOVED --- #: valid: 20210105-
-neu asphaltiert	RW1; 25139,11156 25138,11215
-neu asphaltiert	RW1; 25138,11215 25139,11156 25139,11108
+neu asphaltiert	RW1; 25142,11142 25138,11215
+neu asphaltiert	RW1; 25138,11215 25142,11142 25143,11108
 # REMOVED --- #: next_check ^^^ --- #: XXX ^^^
 # 
+	RW3; 25143,11108 25145,10961 25146,10904 25147,10841 25148,10769
+	RW3; 25149,10744 25148,10769
+	RW4; 25148,10769 25147,10841 25146,10904 25145,10961
+	RW3; 25145,10961 25143,11108 25142,11142
 Verbundsteinpflaster	RW1;RW2 25138,11215 25137,11297
 Verbundsteinpflaster	RW1;RW1 25137,11297 25199,11531
 Verbundsteinpflaster	RW2; 25138,11215 25312,11186
@@ -3749,6 +3753,7 @@ Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337
 #: confirmed_by: srt
 #: also_indoor: traffic (G) vvv
 #: source_id: 2147346053 vvv
+#: source_id: viz2021:13.51214,52.454886,09.07.2020,07:00 vvv
 #: last_checked: 2021-07-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
@@ -3757,6 +3762,7 @@ Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: source_id ^^^
 #: source_id ^^^
 #: also_indoor ^^^
 #: XXX ^^^
@@ -4856,8 +4862,8 @@ Gehweg für Radfahrer frei	RW1; 21962,17152 21925,16981 21889,16817
 	RW1; 21020,7433 21019,7340 21012,7328 20958,7289
 Gehweg für Radfahrer frei	RW1; 20958,7289 21012,7328 21019,7340 21020,7433 21024,7484
 	RW1;RW1 20958,7289 20872,7268 20841,7271 20653,7289
-Betonplatten	RW2; 22631,16215 22696,16208 22739,16203 22771,16194
-	RW3; 22771,16194 22739,16203
+Betonplatten	RW2; 22631,16215 22696,16208 22739,16203 22760,16197 22771,16194
+	RW3; 22771,16194 22760,16197 22739,16203
 neues Verbundsteinpflaster	RW2; 22739,16203 22696,16208 22631,16215
 #: by: Hollie (freak...)
 #: confirmed_by: srt
@@ -5552,8 +5558,8 @@ Busspur gilt Mo-Fr 6-9 Uhr und 15-18 Uhr	RW5; 7482,4416 7597,4499
 	RW6;RW6 20586,18822 20694,18857
 	RW6;RW6 20635,18707 20553,18734 20494,18755
 	RW6;RW6 20701,18634 20702,18662 20727,18726 20760,18812 20790,18892
-	RW6;RW6 20727,18726 20901,18793 21038,18851
-	RW6;RW6 20760,18812 20894,18861 21024,18915
+	RW6;RW6 20727,18726 20901,18793 21038,18851 21028,18915 20998,18980
+	RW6;RW6 20760,18812 20894,18861 21028,18915
 asphaltiert	RW8;RW2 21165,18715 21137,18782
 	RW4;RW2 20160,18301 20173,18306 20458,18424 20582,18475 20612,18487 20622,18491 20743,18540 20922,18613
 	RW3;RW2 20922,18613 21165,18715
@@ -6651,7 +6657,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2021-07-09 (mapillary)
+#: last_checked: 2021-08-03 (mapillary)
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: next_check_id: POPUPRADWEGE-2020
