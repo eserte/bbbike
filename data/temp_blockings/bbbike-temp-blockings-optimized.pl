@@ -2624,8 +2624,8 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: XXX zurzeit (2021-07-26 ist die Baustelle etwa 120m lang)
 #: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
 #: note: laut rbb bis 16.8.2021
-#: last_checked: 2021-08-06
-#: check_frequency: 3d
+#: last_checked: 2021-08-08
+#: check_frequency: 2d
 	q4::inwork; 13651,11731 13895,11663
 # REMOVED (hier nicht mehr)	q4::inwork; 13895,11663 13954,11647
 ',
@@ -4326,7 +4326,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-07-26
+#: last_checked: 2021-08-05 (mapillary)
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 ',
@@ -4433,7 +4433,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-08-07
+#: last_checked: 2021-08-08
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4710,6 +4710,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="855549020" version="1"
 #: last_checked: 2021-08-01 (krickstadt)
 #: check_frequency: 90d
+#: next_check: 2021-10-31
 	2::inwork 18836,3611 18943,3508
 ',
          'from' => undef,
@@ -4832,13 +4833,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX sind tatsächlich Fußgänger und Radfahrer betroffen? -> ja, allerdings ist es außerhalb der Bauzeiten unter Umständen möglich, hier durchzufahren
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Können Radfahrer wieder durchfahren?
 #: osm_watch: way id="948039533" version="1"
-#: last_checked: 2021-04-02
-#: next_check: 2021-07-31
+#: last_checked: 2021-08-05 (oesten b.)
+# REMOVED --- #: next_check: 2021-07-31
 	2::inwork 9693,-815 9692,-772 9693,-746 9699,-600
 ',
          'from' => 1616281200,
          'id' => 3345,
-         'text' => 'Kettinger Str.: Verbindung zur Barnetstr. wegen Bauarbeiten unterbrochen, voraussichtlich bis Juli 2021, vielleicht auch länger',
+         'text' => 'Kettinger Str.: Verbindung zur Barnetstr. wegen Bauarbeiten unterbrochen, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5156,13 +5157,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1629496800
        },
        {
-         'data' => '#: last_checked: 2021-05-29
+         'data' => '#: last_checked: 2021-08-08
 #: add_fragezeichen: Wie lange gehen die Bauarbeiten? Wie ist die Wegoberfläche nach den Bauarbeiten?
 	2::inwork 18432,1352 18290,1574
 ',
          'from' => undef,
          'id' => 3382,
-         'text' => 'Glashütter Weg - Künnekeweg: Bauarbeiten, Weg ist gesperrt, Umfahrung über Trampelpfade möglich, Ende der Bauarbeiten unbekannt',
+         'text' => 'Glashütter Weg - Künnekeweg: Bauarbeiten, Weg ist gesperrt, Umfahrung über Trampelpfade möglich, Ende der Bauarbeiten unbekannt (Stand August 2021)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5373,9 +5374,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
-#: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30
+#: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-08-03
+#: last_checked: 2021-08-08
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -5494,6 +5495,19 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'James-Simon-Park: nachts zwischen 20 und 6 Uhr geschlossen',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: STERNDAMM-2020
+#: last_checked: 2021-08-08 (krickstadt)
+#: check_frequency: 60d
+#: next_check: 2021-10-31
+	q4::inwork 18766,3260 18828,3196 18946,3077
+',
+         'from' => undef,
+         'id' => 3428,
+         'text' => 'Karl-Ziegler-Str.: mögliche Sperrung der Fahrbahn wegen Gleisarbeiten',
+         'type' => 'handicap',
+         'until' => 1635663600
        }
      
 );

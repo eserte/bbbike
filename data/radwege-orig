@@ -908,7 +908,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-07-23
+#: last_checked: 2021-08-08
 #: check_frequency: 60d
 # REMOVED (vermutlich ohne baldige Änderung) --- #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1249,7 +1249,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2021-07-14 vvv
+#: last_checked: 2021-08-08 vvv
 #: check_frequency: 30d vvv
 #	RW1;RW2 14051,6731 14139,6786 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
@@ -1594,7 +1594,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2021-07-30 vvv
+#: last_checked: 2021-08-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-11-15 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -1627,7 +1627,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2021-07-17
+#: last_checked: 2021-08-08
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -3012,8 +3012,9 @@ neu asphaltiert, relativ breit	RW2; 23404,5325 23420,5159 23433,5037 23444,4942 
 	RW;RW1 869,6085 884,5974 894,5829 910,5654
 	RW1;RW0 12972,7602 12918,7600 12787,7546 12685,7497
 	RW2;RW2 16975,1262 16908,1217
-	RW1;RW9 16786,2989 17284,2636 17541,2454
-	RW1;RW0 17541,2454 17772,2331 17928,2248 18101,2164 18111,2135
+#: note: nur an der Stubenrauchstr. ein paar Meter neues Verbundsteinpflaster
+meist altes Verbundsteinpflaster	RW1;RW9 16786,2989 17284,2636 17541,2454
+altes Verbundsteinpflaster	RW1;RW0 17541,2454 17772,2331 17928,2248 18101,2164 18111,2135
 	RW2;RW2 15585,4139 15594,4152 15618,4189 15640,4222 15669,4266 15720,4341
 Grünmarkierung	RW4; 8594,8777 8598,9074
 die letzten Meter werden auf dem Gehweg geführt; Grünmarkierung	RW3; 8598,9074 8594,8777
@@ -3362,7 +3363,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,07.08.2021,07:00 (bis 15.10.2021) (inaktiv)
 #: source_id: viz2021:13.583291,52.43284,06.08.2021,07:00 (bis 15.10.2021)
 #: priority: #D vvv
-#: last_checked: 2021-07-30 vvv
+#: last_checked: 2021-08-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-11 vvv
 	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22878,2758
@@ -6085,7 +6086,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
-#: last_checked: 2021-07-10
+#: last_checked: 2021-07-14
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -6857,7 +6858,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-wird-verstetigt_a304893
 #: source_id: 2147346996 (bis 23.6.2021)
 #: source_id: viz2021:13.377751,52.500368,22.03.2021,07:00 (bis 23.7.2021)
-#: osm_watch: way id="4401920" version="50"
+#: osm_watch: way id="4401920" version="51"
 #: confirmed_by: srt
 #: last_checked: 2021-08-04
 #: check_frequency: 7d
@@ -6969,7 +6970,7 @@ Radspur hinter parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720 11710,9628
 #: by: https://twitter.com/SenUVKBerlin/status/1387045914317971459
 #: by: https://twitter.com/VIZ_Berlin/status/1406948078658232321 (Bauarbeiten ab Anfang Juli 2021)
 #: source_id: 2147346996 (bis 21.5.2021)
-#: osm_watch: way id="34057952" version="36"
+#: osm_watch: way id="34057952" version="37"
 #: last_checked: 2021-08-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-06-23 vvv

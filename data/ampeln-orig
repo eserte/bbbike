@@ -2861,6 +2861,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 18843,6013
 	F 19852,15201
 	F 22131,16000
+#: note: Anforderungsampel für Radfahrer aus der Kastanienallee
 	X 23617,15594
 #: XXX_prog für Radfahrer auf dem freigegebenen Gehweg nicht relevant
 	F 24556,12056
@@ -3077,7 +3078,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20221231 vvv
-#: last_checked: 2021-05-16 vvv
+#: last_checked: 2021-08-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
@@ -3093,7 +3094,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked: 2021-04-04
 	F::inwork 14239,6875
 #: note: Anforderungsampel
-#: last_checked: 2021-07-14
+#: last_checked: 2021-08-08
 	F::inwork 14139,6786
 #: next_check ^^^
 #: valid ^^^
@@ -3119,7 +3120,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="5"
-#: last_checked: 2021-07-14
+#: last_checked: 2021-08-08
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3513,7 +3514,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2021-07-17 vvv
+#: last_checked: 2021-08-08 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738
