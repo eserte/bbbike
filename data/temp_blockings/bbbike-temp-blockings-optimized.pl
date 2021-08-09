@@ -2619,23 +2619,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2021/07/verkehrsvorschau-120721/
-#: XXX zurzeit (2021-07-26 ist die Baustelle etwa 120m lang)
-#: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
-#: note: laut rbb bis 16.8.2021
-#: last_checked: 2021-08-08
-#: check_frequency: 2d
-	q4::inwork; 13651,11731 13895,11663
-# REMOVED (hier nicht mehr)	q4::inwork; 13895,11663 13954,11647
-',
-         'from' => 1626024702,
-         'id' => 2188,
-         'source_id' => 'IM_020398',
-         'text' => 'Kopernikusstr. (Friedrichshain): Baustelle, Fahrbahn zwischen Warschauer Str. bis Libauer Str. in Richtung Osten gesperrt, bis Mitte August 2021',
-         'type' => 'handicap',
-         'until' => 1629129600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4021,7 +4005,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-07-28 (mapillary)
+#: last_checked: 2021-08-05 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -4375,7 +4359,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-07-29
+#: last_checked: 2021-08-09
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4433,7 +4417,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-08-08
+#: last_checked: 2021-08-09
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -5376,7 +5360,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: bei rbb nur bis 30.9.2021
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-08-08
+#: last_checked: 2021-08-09
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862

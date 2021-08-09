@@ -12,12 +12,7 @@
 # next_check/last_checked-Einträgen gemacht.
 # 
 # REMOVED (hat sich mittlerweile etwas entschärft) --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12502-tempelhof-treptower-park-baumschulenweg/#con-14537 (Dauer des SEVs) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kein-zugverkehr-richtung-tempelhof-und-treptow_a278500 --- #: XXX Stau möglicherweise verschärft durch den SEV für die Ringbahn --- #: last_checked: 2020-06-25 vvv --- #: next_check: 2020-07-27 vvv --- Saalestr.	Jam; 13762,7321 13794,7333 13887,7416 13952,7497 13980,7548 14015,7631 --- Saalestr.	Jam; 14015,7631 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321 --- #: next_check ^^^ --- #: last_checked ^^^
-# 
-#: note: gesehen: 2014-10-15 19:00 (Werktag, S/DB-Bahnstreik)
-#: note: gesehen: 2016-03-27 16:30 (Werktag, keine sonstigen Besonderheiten)
-#: XXX_indoor: oder gibt es auch in den Morgenstunden hier Staus?
-#: tempex: rush_hour_evening
-Möckernstr.	Jam; 8810,10305 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
+# REMOVED (Radweg in Bau) --- #: note: gesehen: 2014-10-15 19:00 (Werktag, S/DB-Bahnstreik) --- #: note: gesehen: 2016-03-27 16:30 (Werktag, keine sonstigen Besonderheiten) --- #: XXX_indoor: oder gibt es auch in den Morgenstunden hier Staus? --- #: tempex: rush_hour_evening --- Möckernstr.	Jam; 8810,10305 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
 # 
 #: tempex: T06-T22 vvv
 Leipziger Str. Richtung Westen	Jam; 9569,11631 9444,11616 9268,11590 9058,11564
@@ -54,8 +49,7 @@ Modersohnstr. Richtung Süden	Jam; 14011,10812 13919,10583
 Torstr. vor Schönhauser Tor	Jam; 10898,13632 10741,13685
 # 
 # REMOVED (nicht mehr relevant seitdem es die Radspur gibt) --- Skalitzer Str. vor Kottbusser Tor	Jam; 11117,10326 11130,10326 11316,10372 11335,10375
-# 
-Gitschiner Str. vor Lindenstr.	Jam; 10122,10294 9948,10280 9873,10285
+# REMOVED (nicht mehr relevant seitdem es die Radspur gibt) --- Gitschiner Str. vor Lindenstr.	Jam; 10122,10294 9948,10280 9873,10285
 # 
 Dorotheenstr.	Jam; 8540,12420 8775,12457
 Dorotheenstr.	Jam; 8775,12457 8540,12420
@@ -63,8 +57,8 @@ Dorotheenstr.	Jam; 8775,12457 8540,12420
 # REMOVED (nicht mehr) --- #: next_check_id: STABIUDL-2014 --- Unter den Linden	Jam; 9613,12381 9475,12365
 # 
 #: note: kann manchmal schon an der Kreuzung Kynaststr. anfangen
-Marktstr./Karlshorster Str.	Jam; 15144,10905 15279,10862 15272,10790 15261,10738
-# 
+Marktstr./Karlshorster Str.	Jam; 15144,10905 15279,10862
+# REMOVED (Radweg existiert) --- Marktstr./Karlshorster Str.	Jam; 15279,10862 15272,10790 15261,10738
 # REMOVED (fertig) --- #: next_check_id: HAUPTSTR-2015 vvv --- #: last_checked: 2017-12-03 vvv --- #: check_frequency: 21d vvv --- #: note: Stau eher abends --- #: tempex: rush_hour_evening --- Hauptstr.	Jam; 14674,10811 14717,10855 14810,10832 14904,10812 15000,10792 15261,10738 --- #: note: Stau eher morgens --- #: tempex: rush_hour_morning --- Hauptstr.	Jam; 15261,10738 14904,10812 14810,10832 14717,10855 14674,10811 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 # REMOVED --- #: next_check_id: KARLMARXSTR-2018 --- #: last_checked: 2021-05-18 (mapillary) --- #: check_frequency: 90d
