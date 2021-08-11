@@ -33298,4 +33298,15 @@ EOF
 	q4::inwork 18766,3260 18828,3196 18946,3077
 EOF
      },
+     { from  => 1628719200, # 2021-08-12 00:00
+       until => 1637362800, # 2021-11-20 00:00
+       text  => 'Waldowallee: Bauarbeiten zwischen Köpenicker Allee und Marksburgstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 13.08.2021 07:00 bis 19.11.2021 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.5302,52.487045,13.08.2021,07:00',
+       data  => <<EOF,
+#: XXX wie sehr ist der Radverkehr betroffen?
+#: next_check: 2021-08-13
+	q4::inwork 18939,9417 18977,9322 19048,9146
+EOF
+     },
     );

@@ -5566,6 +5566,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Karl-Ziegler-Str.: mögliche Sperrung der Fahrbahn wegen Gleisarbeiten',
          'type' => 'handicap',
          'until' => 1635663600
+       },
+       {
+         'data' => '#: XXX wie sehr ist der Radverkehr betroffen?
+#: next_check: 2021-08-13
+	q4::inwork 18939,9417 18977,9322 19048,9146
+',
+         'from' => 1628719200,
+         'id' => 3429,
+         'source_id' => 'viz2021:13.5302,52.487045,13.08.2021,07:00',
+         'text' => 'Waldowallee: Bauarbeiten zwischen Köpenicker Allee und Marksburgstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 13.08.2021 07:00 bis 19.11.2021 17:00',
+         'type' => 'handicap',
+         'until' => 1637362800
        }
      
 );

@@ -863,7 +863,7 @@ Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: XXX wird hier in eine "echte Einbahnstraße" umgewandelt?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
 #: osm_watch: way id="155071540" version="8"
-#: last_checked: 2021-07-10
+#: last_checked: 2021-08-11
 #: priority: #D
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8478,8776
 Scharnhorststr.: Poller	3 7877,14504 7804,14445 *
@@ -1446,11 +1446,17 @@ Krumme Str.: Poller	3 * 3983,11289 *
 #: note: für Fußgänger und Radfahrer existiert ein Z-Übergang etwa 20m westlich der Kreuzung
 Bornholmer Str./Nordkapstr.: Straßenbahntrasse	3nocross 10533,16505 10458,16509 10370,16516
 # 
-#: note: in diesem Abschnitt außerdem Einbahnstraßenregelung, offen Richtung Westen
+#: note: außerdem Einbahnstraße für Autos, offen Richtung Westen
 #: XXX_prog: 2:Anlieger & 1 kann vermutlich nicht gleichzeitig spezifiziert werden!
 Bergmannstr.	2:Anlieger 9753,9252 9689,9266 9632,9280 9505,9306
 Bergmannstr.	2:Anlieger 9505,9306 9489,9309 9309,9347 9248,9350
-Nostitzstr.	2:Anlieger 9552,9602 9524,9426 9505,9306 9487,9209
+Nostitzstr.	2:Anlieger 9552,9602 9524,9426
+#: note: außerdem Einbahnstraße für Autos, offen Richtung Norden
+#: XXX_prog: 2:Anlieger & 1 kann vermutlich nicht gleichzeitig spezifiziert werden!
+Nostitzstr.	2:Anlieger 9524,9426 9505,9306
+#: note: außerdem Einbahnstraße für Autos, offen Richtung Süden
+#: XXX_prog: 2:Anlieger & 1 kann vermutlich nicht gleichzeitig spezifiziert werden!
+Nostitzstr.	2:Anlieger 9505,9306 9487,9209
 Solmsstr.	2:Anlieger 9676,9564 9650,9404 9632,9280
 Riemannstr.	2:Anlieger 9767,9386 9650,9404
 Riemannstr.	2:Anlieger 9524,9426 9578,9417

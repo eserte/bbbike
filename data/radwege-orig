@@ -37,14 +37,8 @@
 neu asphaltiert	RW1; 9227,8890 9226,8967
 geschützter Radstreifen, Grünmarkierung	RW3; 9226,8967 9225,9038 9224,9053
 neu asphaltiert	RW1; 9224,9053 9225,9111 9232,9187 9248,9350
-#: by: https://www.infravelo.de/projekt/mehringdamm/ (26.06.2021 bis 27.07.2021) (mittlerweile: Verzögerung um einige Wochen wegen Baumpflegearbeiten) (mittlerweile: Start+Ende 3. Quartal 2021)
-#: by: https://twitter.com/VIZ_Berlin/status/1420418558903922690
-#: XXX Grünmarkierung geplant
-#: source_id: viz2021:13.385913,52.488354,27.07.2021,16:35 (Markierungsarbeiten bis 20.8.2021)
-#: last_checked: 2021-07-18
-#: check_frequency: 60d
-#: next_check: 2021-08-20
-	RW3; 9248,9350 9232,9187 9225,9111 9224,9053 9225,9038 9226,8967 9227,8890
+# REMOVED (realisiert) --- #: by: https://www.infravelo.de/projekt/mehringdamm/ (26.06.2021 bis 27.07.2021) (mittlerweile: Verzögerung um einige Wochen wegen Baumpflegearbeiten) (mittlerweile: Start+Ende 3. Quartal 2021) --- #: by: https://twitter.com/VIZ_Berlin/status/1420418558903922690 --- #: XXX Grünmarkierung geplant --- #: source_id: viz2021:13.385913,52.488354,27.07.2021,16:35 (Markierungsarbeiten bis 20.8.2021) --- #: last_checked: 2021-07-18 --- #: check_frequency: 60d --- #: next_check: 2021-08-20
+Grünmarkierung	RW3; 9248,9350 9232,9187 9225,9111 9224,9053 9225,9038 9226,8967 9227,8890
 asphaltiert	RW1; 9227,8890 9229,8785
 	RW1;RW1 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014 9416,10196
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW1; 9229,8785 9272,8781 9395,8726
@@ -6940,7 +6934,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
 #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
-#: last_checked: 2021-07-18 vvv
+#: last_checked: 2021-08-11 vvv
 # REMOVED --- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-06-30 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -7166,4 +7160,4 @@ asphaltiertes Straßenbahnkap	RW1; 12797,16285 12764,16302 12725,16321
 asphaltiertes Straßenbahnkap	RW1; 12474,16443 12399,16479
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,705935#msg-705935
 Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-20 Uhr	RW5; 12574,1866 12817,2031
-	RW2;RW9 9505,9306 9632,9280 9689,9266 9753,9252
+	RW2;RW8 9505,9306 9632,9280 9689,9266 9753,9252

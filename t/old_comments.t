@@ -99,6 +99,7 @@ EOF
 	     ["9248,9350", "10533,9240", <<EOF, "CS (was Route, now no route here)"],
 - Kopfsteinpflaster (Teilstrecke): 1
   TR4: 1
+  Tempo 10 (Teilstrecke): 1
 - {}
 EOF
 
