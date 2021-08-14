@@ -129,7 +129,7 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linke
 # 
 #: next_check_id: LANGHANS-2021
 #: last_checked: 2021-07-31 (steht noch, aber war am 31.7.2021 ausgeschaltet (mittlerweile immer? oder nur am Wochenende?))
-#: next_check: 2021-08-13
+#: next_check: 2021-08-20
 Roelckestr./Lehderstr.: temporäre Ampel	X::inwork 12842,16032
 # 
 #: next_check_id: BAHNHOF-2021
@@ -3540,6 +3540,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X 36295,48210
+	X 31943,48571
 	X -45864,-1044
 	X -46984,-1234
 	X -48109,-1346
@@ -4059,6 +4061,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	B 41198,55961
 	X 18671,22604
 	X 19658,24589
+#: note: Anforderungsampel für Radfahrer
 	X 21019,26756
 #: note: Anforderungsampel für querende Radfahrer
 	X 21326,27505

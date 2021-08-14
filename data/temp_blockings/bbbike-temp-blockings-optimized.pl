@@ -1416,7 +1416,37 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf
+	2::temp 8424,12853 8503,12895
+	2::temp 7930,12912 8021,12832
+# REMOVED (Adele-Schreiber-Krieger-Str.) ---	2::temp 8737,12757 8596,12760 8545,12760
+# REMOVED (westl. John-Foster-Dulles-Allee) ---	2::temp 7514,12387 7627,12380 7821,12367 7875,12363
+östl. John-Foster-Dulles-Allee	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
+# REMOVED (Schiffbauerdamm) ---	2::temp 8514,12877 8545,12760
+östl. Straße des 17. Juni	2::temp 8775,12457 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150
+# REMOVED (westl. Straße des 17. Juni) ---	2::temp 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8595,12066 8600,12165 8538,12245
+Große Querallee	2::temp 7816,12150 7822,12201 7875,12363 7945,12592
+südl. Spreeuferweg	2::temp 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
+Paul-Löbe-Allee und Verlängerungen	2::temp 7710,12585 7741,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8596,12576
+Yitzhak-Rabin-Str. bis Gustav-Heinemann-Brücke	2::temp 8120,12756 8122,12603 8119,12414 8055,12186 8119,12414 8122,12603 8120,12756 8114,12839 8115,12912 8116,12938 8110,13042
+nördl. Wilhelmstr.	2::temp 8775,12457 8766,12541
+Willy-Brandt-Str. - Konrad-Adenauer-Str.	2::temp 8021,12832 8030,12824 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853
+Platz des 18. März	2::temp 8538,12245 8592,12252
+	2::temp 8252,12757 8115,12912
+	2::temp 8344,12221 8391,12389 8400,12417
+	2::temp 8546,12279 8391,12389 8354,12416
+	2::temp 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414
+	2::temp 8309,12758 8415,12749 8593,12742
+',
+         'from' => 1630360800,
+         'id' => 1422,
+         'text' => 'Straße des 17. Juni und Straßen im Regierungsviertel am 31. August 2021 von 14 bis 23 Uhr gesperrt (Großer Zapfenstreich)',
+         'type' => 'gesperrt',
+         'until' => 1630443600
+       },
        undef,
        undef,
        undef,
@@ -3756,7 +3786,31 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147341611
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf (Großer Zapfenstreich 2021)
+	2::temp 7435,11514 7322,11177
+	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
+	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
+	2::temp 7595,11086 7575,11076 7252,11188
+Lützowufer	2::temp 7089,11073 7248,11143 7461,11051 7579,11032
+Hiroshimastr.	2::temp 7253,11208 7356,11517
+Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7248,11143
+# REMOVED ---	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
+# REMOVED ---	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
+# REMOVED ---	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
+# REMOVED ---	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7218,11181 7140,11156
+# REMOVED ---	2::temp 7665,11353 7745,11332
+# REMOVED ---	2::temp 7745,11332 7690,11108
+',
+         'from' => 1630274400,
+         'id' => 2875,
+         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
+         'text' => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 31. August 2021 von 10:00 bis 16:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1630420200
+       },
        undef,
        undef,
        undef,
@@ -4160,7 +4214,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LANGHANS-2021
 #: source_id: 2147344802 (inaktiv)
 #: source_id: 2147346832 (Gesamtbaumaßnahme bis Mitte August 2021)
-#: source_id: viz2021:13.434734,52.553612,25.01.2021,07:00 (bis 13.8.2021, Gesamtmaßnahme bis Mitte 10/2021)
+#: source_id: viz2021:13.434734,52.553612,25.01.2021,07:00 (bis 20.8.2021, Gesamtmaßnahme bis Mitte 10/2021)
 #: by: https://viz.berlin.de/2021/01/verkehrsvorschau25012021/ ("Mitte Februar (2021) wird die Sperrung um den Abschnitt Heinersdorfer Straße - Roelckestraße erweitert")
 #: by: https://viz.berlin.de/2021/01/langhansstr-sperrung/
 #: by: https://www.bahninfo-forum.de/read.php?9,691318,693319#msg-693319
@@ -4172,7 +4226,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12474,16443 12564,16399 12725,16321 12764,16302 12797,16285 12826,16271 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 #: last_checked: 2021-07-06 vvv
-#: next_check: 2021-08-13 vvv
+#: next_check: 2021-08-20 vvv
 # REMOVED (wird bei viz nicht mehr erwähnt) --- #: note: hier nur an der Kreuzung Berliner Allee --- q3::inwork 13508,15912 13312,16027
 # REMOVED (hier nicht mehr) ---	q4::inwork 13312,16027 13250,16058 13189,16089 12943,16214
 	q4::inwork 12943,16214 12859,16255 12826,16271 12797,16285 12764,16302 12725,16321 12564,16399 12474,16443 12399,16479
@@ -4180,12 +4234,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: next_check ^^^
 #: last_checked ^^^
 ',
+         'dont_check_date' => 1,
          'from' => 1611468000,
          'id' => 3091,
          'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
-         'text' => 'Langhansstr.: zwischen Roelckestr. und Gustav-Adolf-Str. ist die Fahrbahn abschnittsweise wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, 25.1.2021 bis 13.8.2021',
+         'text' => 'Langhansstr.: zwischen Roelckestr. und Gustav-Adolf-Str. ist die Fahrbahn abschnittsweise wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, 25.1.2021 bis 20.8.2021, evtl. auch bis Mitte Oktober 2021',
          'type' => 'handicap',
-         'until' => 1628866800
+         'until' => 1634310000
        },
        undef,
        undef,
@@ -4492,7 +4547,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-08-09
+#: last_checked: 2021-08-14
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -5580,6 +5635,26 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Waldowallee: Bauarbeiten zwischen Köpenicker Allee und Marksburgstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 13.08.2021 07:00 bis 19.11.2021 17:00',
          'type' => 'handicap',
          'until' => 1637362800
+       },
+       {
+         'data' => '	2::inwork 43567,87443 43400,87088 43129,86934 42751,86432 42245,86063
+',
+         'from' => 1628978400,
+         'id' => 3430,
+         'source_id' => '217300307',
+         'text' => 'Gramzow - Melzow: Bauarbeiten, Sperrung der Fahrbahn, 16.08.2021 bis 27.08.2021',
+         'type' => 'gesperrt',
+         'until' => 1630101600
+       },
+       {
+         'data' => '	q4::inwork 3862,23222 3743,23373
+',
+         'from' => 1629583200,
+         'id' => 3431,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1115935.php',
+         'text' => 'Ulmenstr.: Bauarbeiten zwischen Forlenweg und Wachsmuthstr., Fahrbahn gesperrt, vom 23.08.2021 für ca. sechs Wochen',
+         'type' => 'handicap',
+         'until' => 1633363200
        }
      
 );

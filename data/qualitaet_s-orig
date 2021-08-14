@@ -115,7 +115,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED (-> gesperrt-orig) --- #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
-#: osm_watch: way id="65707583" version="15"
+#: osm_watch: way id="65707583" version="16"
 #: last_checked: 2021-07-28 (architektur-urbanistik)
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
@@ -986,7 +986,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-08-09
+#: last_checked: 2021-08-14
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -8443,6 +8443,7 @@ Letterhausweg: Asphalt	Q0- 2111,14235 2087,14078
 #: XXX ändert sich bei den Bauarbeiten etwas am Pflaster oder der Wegführung?
 #: by: https://www.berliner-woche.de/charlottenburg-nord/c-bauen/umgestaltung-des-gruenzugs-zwischen-halemweg-und-popitzweg-startet_a254857
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=687886#post687886
+#: by: https://www.berliner-woche.de/charlottenburg-nord/c-bauen/infoabend-zum-staedtebau_a318865
 #: last_checked: 2021-07-31 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-04-01
@@ -20583,6 +20584,8 @@ Uhlandstr.: Kopfsteinpflaster	Q2 9120,20015 9054,20001
 Uhlandstr.: fester Sandweg mit Schlaglöchern	Q2 9054,20001 9023,19936 8962,19798 8943,19755 8931,19746
 # REMOVED (ja, etwas) --- #: XXX hat sich die Qualität verschlechtert?
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5623
+#: XXX wird die Qualität nach den Bauarbeiten wieder besser sein, zumindest nördlich des Forienwegs?
+#: next_check: 2021-10-05
 Ulmenstr.: Beton mit einigen Schäden	Q1+ 4000,23034 3862,23222 3743,23373
 #: confirmed_by: srt
 Heidenheimer Str.: schlechtes Kopfsteinpflaster	Q3 3695,23160 3544,23179 3463,23194 3283,23217 3146,23217
