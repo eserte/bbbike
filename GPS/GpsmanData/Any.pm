@@ -297,6 +297,9 @@ sub load_gpx {
 
 			    push @data, $wpt;
 			} elsif ($trkpt_name =~ m{^srt:}) { # XXX this assumes xmlns:srt, which does not have to be correct!
+			    if (!$trkseg->TrackAttrs) {
+				$trkseg->TrackAttrs({});
+			    }
 			    $trkseg->TrackAttrs->{$trkpt_name} = $trkpt->children_text;
 			}
 		    }
