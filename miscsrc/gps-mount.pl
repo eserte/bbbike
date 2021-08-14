@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018,2019,2021 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -33,6 +33,7 @@ my $perl_code;
 my $shell_code;
 my $garmin_disk_type;
 my $cd;
+my $do_gpx_copy;
 my $debug;
 my $without_tty;
 
@@ -48,37 +49,76 @@ GetOptions
      'shell=s'            => \$shell_code,
      'garmin-disk-type=s' => \$garmin_disk_type,
      'cd:s'               => \$cd,
+     'gpxcp|gpx-cp|gpx-copy' => \$do_gpx_copy,
      'debug'              => \$debug,
      'without-tty'        => \$without_tty,
      'help|?'             => sub { usage(1) },
     )
     or usage(2);
-@ARGV and usage(2);
 
-if (defined $perl_code && defined $shell_code) {
-    die "Cannot specify --perl and --shell together.\n";
-}
-
-if (!defined $perl_code && !defined $shell_code) {
-    if (!$ENV{SHELL}) {
-	die "SHELL environment variable not defined --- don't known which shell to start.\n";
+my @files;
+if ($do_gpx_copy) {
+    @files = @ARGV;
+    if (!@files) {
+	die "Please specify gpx files to copy!\n";
     }
-    $shell_code = q<echo '*** GPS device is mounted (see variable $GPS) --- to unmount just exit this shell'; > . $ENV{SHELL};
-}
-
-if (defined $shell_code) {
-    $perl_code = 'sub { my $gps = shift; local $ENV{GPS} = $gps; local $ENV{MOUNTKEEPER_DIR} = $gps; if (defined $cd) { chdir "$gps/$cd" or die "Can\'t chdir to $gps/$cd: $!\n" } system $shell_code; chdir "/"; 1 }';
+    if (my @unreadable_files = grep { !-r $_ } @files) {
+	die "The following files are unreadable: @unreadable_files\n";
+    }
 } else {
-    $perl_code = 'sub { my $gps = shift; if (defined $cd) { chdir "$gps/$cd" or die "Can\'t chdir to $gps/$cd: $!\n" } eval { ' . $perl_code . '}; my $err = $@; chdir "/"; die $err if $err; 1 }';
+    @ARGV and usage(2);
 }
 
-my $sub = eval $perl_code;
-if (!$sub) {
-    die "Cannot evaluate '$perl_code': $@";
-}
+my $sub;
+if ($do_gpx_copy) {
+    if (defined $perl_code || defined $shell_code) {
+	die "Cannot specify --gpx-cp together with --perl or -shell.\n";
+    }
+    $sub = sub {
+	my $gps = shift;
+	my $dest = "$gps/Garmin/GPX";
+	if (!-d $dest) {
+	    die "Target directory $dest does not exist, cannot proceed.\n";
+	}
+	if ($^O eq 'MSWin32') {
+	    for my $file (@files) {
+		cp($file, $dest)
+		    or die "Failed top copy '$file' to '$dest': $!";
+	    }
+	} else {
+	    my @cmd = ('cp', '-i', @files, $dest);
+	    system @cmd;
+	    if ($? != 0) {
+		die "Running '@cmd' failed";
+	    }
+	}
+    };
+} else {
+    if (defined $perl_code && defined $shell_code) {
+	die "Cannot specify --perl and --shell together.\n";
+    }
 
-if ($debug) {
-    warn "DEBUG: perl code to execute: '$perl_code'\n";
+    if (!defined $perl_code && !defined $shell_code) {
+	if (!$ENV{SHELL}) {
+	    die "SHELL environment variable not defined --- don't known which shell to start.\n";
+	}
+	$shell_code = q<echo '*** GPS device is mounted (see variable $GPS) --- to unmount just exit this shell'; > . $ENV{SHELL};
+    }
+
+    if (defined $shell_code) {
+	$perl_code = 'sub { my $gps = shift; local $ENV{GPS} = $gps; local $ENV{MOUNTKEEPER_DIR} = $gps; if (defined $cd) { chdir "$gps/$cd" or die "Can\'t chdir to $gps/$cd: $!\n" } system $shell_code; chdir "/"; 1 }';
+    } else {
+	$perl_code = 'sub { my $gps = shift; if (defined $cd) { chdir "$gps/$cd" or die "Can\'t chdir to $gps/$cd: $!\n" } eval { ' . $perl_code . '}; my $err = $@; chdir "/"; die $err if $err; 1 }';
+    }
+
+    $sub = eval $perl_code;
+    if (!$sub) {
+	die "Cannot evaluate '$perl_code': $@";
+    }
+
+    if ($debug) {
+	warn "DEBUG: perl code to execute: '$perl_code'\n";
+    }
 }
 
 GPS::BBBikeGPS::MountedDevice->maybe_mount($sub,
@@ -94,7 +134,7 @@ gps-mount.pl - mount GPS device
 
 =head1 SYNOPSIS
 
-    gps-mount.pl [--perl 'perl code' | --shell 'shell code'] [--garmin-disk-type flash|card] [--cd | --cd reldir] [--debug]
+    gps-mount.pl [--perl 'perl code' | --shell 'shell code'] [--garmin-disk-type flash|card] [--cd | --cd reldir] [--gpx-cp | --gpx-copy file1 ...] [--debug]
 
 =head1 DESCRIPTION
 
@@ -134,7 +174,8 @@ Example:
 
    gps-mount.pl --cd --shell 'echo $GPS'
 
-Copy a C<.gpx> file to the GPX directory on a Garmin device:
+Copy a C<.gpx> file to the GPX directory on a Garmin device (but see
+also L</--gpx-cp> for an easier option for this task):
 
    gps-mount.pl --shell 'cp -v file.gpx $GPS/Garmin/GPX/'
 
@@ -148,6 +189,15 @@ perl or shell code.
 Change current directory to the GPS device directory and then
 additionally to the specified I<reldir> before executing perl or shell
 code.
+
+=item C<--gpx-cp I<file1> ...>
+
+Copy one or more GPX files to the standard location (currently only
+Garmin supported). Example:
+
+   gps-mount.pl --gpx-cp file.gpx
+
+Aliases: C<--gpx-copy> and C<--gpxcp>.
 
 =item C<--garmin-disk-type flash|card>
 
