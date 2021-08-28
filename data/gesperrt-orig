@@ -1684,7 +1684,6 @@ Waldweg	1s 25496,2429 24981,2580
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
 # REMOVED --- #: next_check: 2013-10-30 --- #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
-Niemannstr.	1s:q3 14254,11377 14211,11229
 Björnsonstr	1s:q1 10209,16674 10197,16528
 Ibsenstr.	1s:q1 10295,16667 10209,16674
 Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
@@ -3390,6 +3389,7 @@ Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677220#post677220
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1119011.php (Erwähnung)
 #: priority: #C
 #: last_checked: 2021-07-31
 #: check_frequency: 60d
@@ -3446,7 +3446,7 @@ Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,46
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_26_2221_2280_online.pdf (Straßenlandeinziehung, dauerhaft)
 #: XXX Wird der Radverkehr hier zugelassen?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-08-14
+#: last_checked: 2021-08-28
 # REMOVED (bleibt vermutlich länger?) --- #: next_check: 2020-12-31
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939 13856,10864
 # 
@@ -3693,6 +3693,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.berliner-woche.de/mitte/c-bauen/virtuelle-stadtwerkstatt-informiert-ueber-bauprojekte-in-berlins-historischer-mitte_a292967
 #: by: https://abendblatt-berlin.de/2021/06/01/berlin-mitte-molkenmarkt-planung-geht-in-die-naechste-phase/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/senat-lobt-verfahren-aus_a311991
+#: by: https://www.berliner-woche.de/mitte/c-bauen/infoveranstaltung-zum-molkenmarkt_a319166
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
 #: last_checked: 2021-07-26
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371

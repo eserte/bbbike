@@ -108,10 +108,11 @@ Gehwegpflasterung, aber mäßiger Zustand	RW1; 9233,8597 9229,8718
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.506616.php --- #: source_id: 2147340425 --- #: next_check: 2016-10-07
 # 
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
+#: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021)
 #: XXX Grünmarkierung vorgesehen vvv
 #: priority: #D vvv
 #: last_checked: 2021-05-22 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 130d vvv
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
 Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8627,5866
@@ -1147,7 +1148,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487
 #: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
 #: note: abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="4615746" version="27"
+#: osm_watch: way id="4615746" version="28"
 #: source_id: 2147346157 (bis 19.10.2020)
 #: last_checked: 2021-07-07
 #: check_frequency: 60d
@@ -2201,11 +2202,11 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: check_frequency: 14d vvv
 #: next_check: 2021-08-17 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
-#: osm_watch: way id="284761029" version="17"
+#: osm_watch: way id="284761029" version="18"
 Radspur hinter den parkenden Autos	RW3; 12006,12464 11920,12266
 mit provisorischen Baken	RW3; 11920,12266 11872,12185 11764,12001
 	RW4; 11764,12001 11872,12185
-#: osm_watch: way id="4616518" version="29"
+#: osm_watch: way id="4616518" version="30"
 Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 Radspur hinter den parkenden Autos	RW3; 12006,12464 12028,12519
 #: next_check ^^^
@@ -3355,7 +3356,8 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: 2147347204 (Gleisbauarbeiten bis 15.10.2021)
 #: source_id: viz2021:13.583291,52.43284,07.05.2021,07:18 (Gesamtbaumaßnahme bis Mitte 10/2021)
 #: source_id: viz2021:13.583291,52.43284,07.08.2021,07:00 (bis 15.10.2021) (inaktiv)
-#: source_id: viz2021:13.583291,52.43284,06.08.2021,07:00 (bis 15.10.2021)
+#: source_id: viz2021:13.583291,52.43284,06.08.2021,07:00 (bis 15.10.2021) (inaktiv)
+#: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 15.10.2021)
 #: priority: #D vvv
 #: last_checked: 2021-08-08 vvv
 #: check_frequency: 90d vvv
@@ -3591,10 +3593,10 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019) (inaktiv)
 #: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019) (inaktiv)
 #: source_id: 2147345490 (bis 30.7.2021)
-#: source_id: viz2021:13.42941,52.533057,25.02.2020,08:00 (bis 16.8.2021)
+#: source_id: viz2021:13.42941,52.533057,25.02.2020,08:00 (bis 1.9.2021)
 #: priority: #D vvv
 #: last_checked: 2021-07-07 vvv
-#: next_check: 2021-08-16 vvv
+#: next_check: 2021-09-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
 #: next_check ^^^
@@ -3749,8 +3751,8 @@ Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337
 #: also_indoor: traffic (G) vvv
 #: source_id: 2147346053 vvv
 #: source_id: viz2021:13.51214,52.454886,09.07.2020,07:00 vvv
-#: last_checked: 2021-07-23 vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2021-08-22 (krickstadt) vvv
+#: check_frequency: 30d vvv
 #: next_check: 2021-10-01 vvv
 	RW3; 17736,5441 17886,5587
 	RW4; 17886,5587 17736,5441
@@ -4435,7 +4437,7 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 #: next_check_id: BAHNHOF-2021
 #: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/
 #: XXX während der Bauarbeiten ist der Radweg auf der Nordseite gesperrt, es gibt auch keinen Gehweg
-#: last_checked: 2021-07-25 (mapillary)
+#: last_checked: 2021-08-23 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-07-16
 # REMOVED (Original-Eintrag) ---	RW1; 12723,20691 12672,20720
@@ -5645,7 +5647,7 @@ Radweg beginnt nach 20 Metern	RW1; 7909,775 7857,802
 	RW3;RW3 14050,20955 13909,20928
 #: XXX wird hier eine Busspur eingerichtet?
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
-#: last_checked: 2021-07-20 (mapillary)
+#: last_checked: 2021-08-23 (mapillary)
 	RW3; 13909,20928 13662,20917
 	RW5; 13662,20917 13562,20913
 #: note: größtenteils eigentlich Bushaltestelle
@@ -6670,9 +6672,10 @@ Grünmarkierung	RW4; 12317,14535 12407,14470 12522,14385
 #: last_checked: 2021-07-07 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2022-12-31 vvv
-#: osm_watch: way id="4615031" version="38"
+#: osm_watch: way id="335479077" version="13"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 # REMOVED --- #: osm_watch: way id="41954398" version="20"
+# REMOVED --- #: osm_watch: way id="4615031" version="39"
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -6967,7 +6970,7 @@ Radspur hinter parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720 11710,9628
 #: by: https://twitter.com/SenUVKBerlin/status/1387045914317971459
 #: by: https://twitter.com/VIZ_Berlin/status/1406948078658232321 (Bauarbeiten ab Anfang Juli 2021)
 #: source_id: 2147346996 (bis 21.5.2021)
-#: osm_watch: way id="34057952" version="37"
+#: osm_watch: way id="34057952" version="38"
 #: last_checked: 2021-08-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-06-23 vvv
@@ -7096,6 +7099,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/im-herbst-beginnt-der-verkehrsversuch-rund-um-den-tempelhofer-damm_a312336
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/s-bahn-faehrt-u-bahn-gesperrt_a317418
 #: by: https://viz.berlin.de/2021/08/u6/
+#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-durchgehenden-und-geschuetzten-weg-an-der-b96_a318755
 #: source_id: 2147347065 (bis 17.10.2021)
 #: last_checked: 2021-07-18 vvv
 #: check_frequency: 90d vvv
@@ -7164,3 +7168,5 @@ asphaltiertes Straßenbahnkap	RW1; 12474,16443 12399,16479
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,705935#msg-705935
 Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-20 Uhr	RW5; 12574,1866 12817,2031
 	RW2;RW8 9505,9306 9632,9280 9689,9266 9753,9252
+Tempo 10	RW6;RW6 14254,11377 14211,11229
+Tempo 10	RW6;RW6 14468,11203 14442,11101

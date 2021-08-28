@@ -137,9 +137,9 @@ Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/baumassnahmen-fuer-die-a100-gestartet_a289900 (hier: erste Bauphase bis Ende 2021, Bauende bis Juni 2023)
 #: osm_watch: way id="44807035" version="12"
 #: osm_watch: way id="26285705" version="8"
-#: osm_watch: way id="69166216" version="9"
+#: osm_watch: way id="69166216" version="10"
 #: source_id: 2147346409 (bis Ende 2021, Gesamtbaumaßnahme bis Ende 2023)
-#: last_checked: 2021-07-21 (osm) vvv
+#: last_checked: 2021-08-19 (osm) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
@@ -676,6 +676,7 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12
 # 
 ### Lichtenberg ###
 # 
+#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/neue-vorstreckungen-ueberwege-mittelinseln-und-abgesenkte-bordsteine_a319370 (Erwähnung der Wege in der Grünanlage)
 #: last_checked: 2021-08-10 vvv
 #: check_frequency: 7d vvv
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
@@ -779,7 +780,7 @@ Dennewitzstr.: Einbahnstraßenregelung, gemeinsamer Geh- und Radweg	q3::inwork; 8
 #: by: https://mein.berlin.de/projekte/ersatzneubau-der-moltkebrucke-in-steglitz-zehlendo/
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neubau-der-moltkebruecke-beginnt_a316440
 #: XXX wann wird die Einschränkung beendet?
-#: osm_watch: way id="13860352" version="15"
+#: osm_watch: way id="13860352" version="16"
 #: also_indoor: traffic (H)
 #: priority: #A
 #: last_checked: 2020-10-25
@@ -3605,6 +3606,10 @@ Wuhlewanderweg: enge Brücke	q2 22349,17302 22364,17323
 (Verbindung Golliner Str. - Wuhlewanderweg): schmaler Pfad	q2 22272,18296 22287,18297 22356,18264 22356,18239 22363,18219
 #: note: außerdem zahlreiche Bodenschwellen auf dem Rest der Fahrbahn
 Bergmannstr.: Tempo 10	q3+ 9505,9306 9632,9280 9689,9266 9753,9252
+#: XXX_prog mit Anhänger aber ggfs. q2
+Niemannstr.: Bodenschwellen, allerdings vermutlich nur für Anhänger relevant	q0- 14254,11377 14211,11229
+#: XXX_prog mit Anhänger aber ggfs. q2
+Helmerdingstr.: Bodenschwellen, allerdings vermutlich nur für Anhänger relevant	q0- 14468,11203 14442,11101
 # 
 ######################### User Contributions #################################
 # 

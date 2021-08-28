@@ -1033,12 +1033,18 @@ Götschendorf - Böckenberg: schlechte Qualität, teilweise Sand (wie ist die Quali
 Groß Friedenwalde - Flieth: Kopfsteinpflaster (wie schlecht ist das Kopfsteinpflaster hier?)	? 35740,80983 35815,81168 35815,81518 35894,81782
 Groß Friedenwalde - Flieth: Asphalt (ist hier tatsächlich asphaltiert?)	? 35894,81782 35998,82265 36009,82890 36430,83497 36578,83835 36590,84086 36693,84235 36676,84495 36696,84495 36715,84579
 Leistenhaus - Neugrimnitz: Schotterweg (Ist hier durchgängig ein Schotterweg?)	? 37515,64395 37608,64317 38095,64055 38327,63933
+# added from handicap_s
+Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung (Wann sind die Bauarbeiten hier beendet?)	? 8775,12457 8904,12489
+Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung (Wann sind die Bauarbeiten hier beendet?)	? 8904,12489 8999,12498
+Schadowstr.: Bauarbeiten, Einbahnstraßenregelung (Wann sind die Bauarbeiten hier beendet?)	? 8999,12498 9011,12423
+Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt (Wann sind die Bauarbeiten hier beendet?)	? 9011,12423 9131,12438
 # added from nolighting
 Stresemannstr. - Wilhelmstr.: vorhandene Beleuchtung ist kaputt (funktioniert die Beleuchtung wieder?)	? 9245,10565 9375,10616
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt
 Dernburgstr. (Ist die Einbahnstraße mittlerweile für Radfahrer geöffnet oder wird das in Zukunft passieren?)	? 2493,10675 2378,10677 2310,10732 2233,11049
+Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt (Wann wird die Sperrung aufgehoben?)	? 9131,12438 9179,12444
 Poller (wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?)	? -1889,37093
 # added from comments_cyclepath
 Verbundsteinpflaster, teilweise schadhaft (Wurzelschäden) (Wird die Qualität des Radwegs nach den Bauarbeiten besser sein?)	? 43162,14428 42996,14793
@@ -1059,8 +1065,15 @@ F3.4 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.5 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 # added from bbbike-temp-blockings-optimized
+Voltairestr.: Fahrbahn kann wegen Bauarbeiten gesperrt sein (Wann sind die Bauarbeiten beendet?)	? 11329,12497 11209,12430
 Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung auch für Radfahrer gesperrt (Bis wann gilt die Sperrung für Radfahrer?)	? 5192,10241 5196,10398
 Rehagener Platz: Bauarbeiten, Fahrbahn gesperrt, außerdem ist der Kreuzungsbereich Rehagener Str./Kirchbachstr. gesperrt (Bis wann gehen die Bauarbeiten? Wird das Kopfsteinpflaster nach den Bauarbeiten etwas besser sein?)	? 10642,-2371 10638,-2452
 Rehagener Platz: Bauarbeiten, Fahrbahn gesperrt, außerdem ist der Kreuzungsbereich Rehagener Str./Kirchbachstr. gesperrt (Bis wann gehen die Bauarbeiten? Wird das Kopfsteinpflaster nach den Bauarbeiten etwas besser sein?)	? 10563,-2432 10638,-2452 10789,-2451
 Rehagener Platz: Bauarbeiten, Fahrbahn gesperrt, außerdem ist der Kreuzungsbereich Rehagener Str./Kirchbachstr. gesperrt (Bis wann gehen die Bauarbeiten? Wird das Kopfsteinpflaster nach den Bauarbeiten etwas besser sein?)	? 10638,-2452 10648,-2547
+B96a: Radweg fertig, aber noch nicht offiziell eröffnet (Wann ist der Radweg offiziell befahrbar?)	? 21874,1511 21829,1351 21656,989 21613,923 21286,449 21115,271
+Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 7/2021: Fahrbahn im nördlichen Abschnitt gesperrt, enger Fußweg existiert) (Gibt es mittlerweile eine Sperrung? Falls ja, wo ist der gesperrte Abschnitt und gilt die Sperrung auch für Fußgänger und Radfahrer?)	? 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17483,8644 17449,8720 17416,8767 17380,8858
+Glinkastr.: zwischen Jägerstr. und Mohrenstr. Einbahnstraßenregelung, Richtung Süden gesperrt, auch für Radfahrer (Bis wann gilt die Einbahnstraßenregelung für Radfahrer?)	? 9195,11972 9207,11880
+Brümmerstr.: zwischen Thielallee und Fabeckstr. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt (Wie lange gehen die Bauarbeiten?)	? 2523,5114 2746,5537
+Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts gesperrt, mögliche Beeinträchtigungen für Radfahrer, außerdem Einbahnstraßenregelung in der Bizetstr., vom 23. August 2021 bis 11. Oktober 2021 (Gibt es tatsächlich Einschränkungen für Radfahrer? Wurden temporäre Ampeln aufgestellt?)	? 13737,15994 13826,16026 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
+Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts gesperrt, mögliche Beeinträchtigungen für Radfahrer, außerdem Einbahnstraßenregelung in der Bizetstr., vom 23. August 2021 bis 11. Oktober 2021 (Gibt es tatsächlich Einschränkungen für Radfahrer? Wurden temporäre Ampeln aufgestellt?)	? 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
 An der Nordbahn: neue Führung des Mauerwegs im Bereich Bhf. Wilhelmsruh/zukünftiger Bahnhof der Heidekrautbahn, bereits weitgehend fertig, aber noch nicht offiziell eröffnet (Ist der neue Weg bereits offiziell eröffnet?)	? 7236,19689 7273,19682 7435,19547 7446,19522 7504,19459

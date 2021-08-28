@@ -5240,7 +5240,7 @@ Götelstr.	N -3301,12864 -3275,12769 -3259,12580 -3260,12557 -3263,12511 -3269,12
 (Götelstr. - Tharsanderweg)	NN -3416,12165 -3524,11980
 # REMOVED --- #: by: Stefan Klinkusch: "gesperrt"
 #: source_id: INKO_118000
-#: osm_watch: way id="25115001" version="9"
+#: osm_watch: way id="25115001" version="10"
 (Heerstr. - Tiefwerder)	N -3069,11487 -3075,11510 -3186,11557
 (Treppe an der Freybrücke)	NN -3181,11496 -3177,11507 -3173,11520
 (Heerstr. - Tiefwerder)	NN -3075,11510 -3042,11550 -3054,11621 -3037,11680 -3070,11712 -3087,11728 -3179,11763
@@ -11325,6 +11325,9 @@ Pepitapromenade	NN -2856,17489 -2873,17369 -2878,17324
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file vvv
 #: note: Wohnsiedlung Hakenfelde e.V. vvv
 #: note: Straßenschilder sind überwiegend in Fraktur (oder so), Straßen sind überwiegend beleuchtet vvv
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Straßenumbenennung)
+#: XXX neuer Name wird "Erna-Koschwitz-Weg" lauten, Umbenennung soll zum 15. November 2021 wirksam werden
+#: next_check: 2021-11-15
 Elkartweg	N -2158,17613 -2135,17633 -2119,17647 -2103,17670 -2087,17715 -2120,17786 -2131,17827 -2114,17878 -2066,17896 -2074,17921 -2100,17953 -2196,18069
 Mittenwalder Weg	N -2091,17603 -2089,17573 -2255,17563
 (Mittenwalder Weg - Garmischer Weg)	NN -2255,17563 -2252,17515
@@ -15124,7 +15127,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: XXX Benennung zu "Am Kraatz-Tränke-Graben" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
-#: osm_watch: way id="51230057" version="17"
+#: osm_watch: way id="51230057" version="18"
 #: last_checked: 2021-08-10
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html

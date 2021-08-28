@@ -41,10 +41,8 @@ Prenzlau: enger Radweg für beide Richtungen (ca. 2m)	q1 38700,100937 38939,10111
 (Lustgarten): Fußgänger	q2 -12931,-1761 -12678,-1812
 Akazienweg: enger Weg	q1 2082,31535 2070,31607 1988,31882 1972,31940
 Rote Brücke: Radfahren verboten, schieben	q3 2082,31535 2090,31540 2181,31595 2189,31600
-#: XXX Dresden vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-Prager Str.: Fußgängerzone	q2 36215,-151406 36375,-150750
-Canalettostr - Stübelallee: Zufahrt über Gehweg	q2 37850,-150756 37780,-150830
-#: XXX ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Prager Str. (Dresden): Fußgängerzone	q2 36215,-151406 36375,-150750
+Canalettostr - Stübelallee (Dresden): Zufahrt über Gehweg	q2 37850,-150756 37780,-150830
 # REMOVED (alter Eintrag, keine Pflege) --- Mützlitz - Garlitz: Bauarbeiten	q3::inwork -50268,15901 -49478,16227
 # REMOVED (Sah so aus, von der S-Bahn...) --- last_checked: 2005-11-28 Potsdam, Friedrich-Engels-Str.: Bauarbeiten an der Nuthe-Brücke und weiter	q3::inwork -11513,-2122 -10995,-2108
 # REMOVED (wahrscheinlich) --- B 169; OU Senftenberg; Bau Ortsumfahrung; Vollsperrung; 06.11.2003-30.05.2006	q4::inwork 55158,-95910 54884,-96292 54357,-96691

@@ -59,7 +59,8 @@ Hauptstr. (Rosenthal, Wilhelmsruh): Asphalt	Q0 7634,19793 7672,19869 7711,19956 
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1102115.php (Bauende voraussichtlich Mitte September 2021)
 #: by: https://www.berliner-woche.de/rosenthal/c-bauen/die-fahrbahn-wird-erneuert_a318102
 #: source_id: viz2021:13.37551,52.597215,16.07.2021,06:00 (Fahrbahnsanierung bis 23.8.2021)
-#: next_check: 2021-09-15
+#: XXX ist die Fahrbahn mittlerweile asphaltiert?
+#: next_check: 2021-08-23
 Hauptstr. (Rosenthal, Wilhelmsruh): Kopfsteinpflaster auf der Straﬂe, Radweg mit Verbundsteinpflaster	Q1 8277,21257 8158,21022
 Hauptstr. (Rosenthal, Wilhelmsruh)/Mˆnchm¸hler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8389,21468 8460,21602 8473,21633 8568,21863 8556,21918 8400,22010 8430,22110 8439,22143 8464,22215 8543,22413 8554,22440 8900,23274 8904,23365 8909,23506
 # REMOVED --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4247 (Asphaltierung??) --- #: XXX: wurden Bahnhofstr. und Hauptstr. in Blankenfelde mittlerweile asphaltiert? Oder ist nur der ˆstliche Abschnitt gemeint? vvv --- #: osm_watch: way id="444587490" version="1"
@@ -258,6 +259,7 @@ Wallensteinstr.: Asphaltstreifen	Q0; 17360,9629 17425,9605 17456,9594 17549,9529
 #: note: aber teilweise keine abgesenkten Bordsteine, deshalb nur Q2; bei wenig Verkehr kann man den linken asphaltierten Streifen benutzen
 Wallensteinstr.: Fahrbahn m‰ﬂiges bis schlechtes Kopfsteinpflaster, Geh/Radweg Verbundsteinpflaster/Mosaikpflaster	Q2; 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Fahrbahninstandsetzung ab Herbst 2021, bis 2022)
+#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: XXX wann fangen die Bauarbeiten an?
 #: last_checked: 2021-08-10
 #: next_check: 2021-10-01
@@ -986,7 +988,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? auﬂerdem: wird die Colbestr. zur Fahrradstraﬂe?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erw‰hnung)
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-08-14
+#: last_checked: 2021-08-28
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -7197,6 +7199,9 @@ Goldaper Str.: Beton	Q0 6179,1958 6195,1969
 Goldaper Str.: Verbundsteinpflaster	Q1 6195,1969 6211,2010 6278,2057
 Rudolf-Beyendorff-Ring: Kopfsteinpflaster	Q2 6159,2176 6201,2125
 Dessauerstr.: schlechtes Kopfsteinpflaster	Q3+ 6331,2281 6290,2336
+#: next_check_id: SEYDLITZ-2021
+#: add_fragezeichen: Wird die Qualit‰t des Asphalts nach den Bauarbeiten besser sein?
+#: next_check: 2021-11-30
 Retzowstr.: lˆchriger Asphalt	Q2 6331,2281 6399,2184
 Retzowstr.: Kleinsteinpflaster	Q1- 6399,2184 6436,2130 6477,2058
 Bellingstr.: Kleinsteinpflaster	Q1- 6436,2130 6567,2194 6746,2232
@@ -7670,6 +7675,10 @@ Brˆsener Str.: Asphalt mit Sch‰den	Q1 26282,6033 26284,6130 26247,6228
 Stillerzeile: Asphalt	Q0 23877,5503 24003,5501 24126,5521 24125,5547 24236,5594 24320,5621 24362,5635 24387,5672 24443,5765 24629,5831 24798,5891 24977,5880 25015,5751
 Lˆbauer Weg: Asphalt	Q0- 24871,5699 24798,5891
 Liebstadter Gang: Kleinsteinpflaster	Q1 24434,5645 24471,5544
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1118330.php (Fahrbahn ... versickerungsf‰higen Bauweise, bis 22. Oktober 2021)
+#: XXX ‰ndert sich etwas an der Qualit‰t?
+#: priority: #C
+#: next_check: 2021-10-22
 Marienwerderweg: Asphalt	Q0- 24366,5504 24320,5621
 Stillerzeile [89-95]: Verbundsteinpflaster	Q1 24285,5472 24236,5594
 Grillenweg: Beton	Q0 24236,5594 24225,5619
@@ -12568,6 +12577,7 @@ Roﬂweiner Ring: Beton	Q0 25014,13937 25159,13889 25131,13801 25157,13790
 Roﬂweiner Ring: Beton	Q0 25131,13801 24983,13843
 #: corrected_by: srt (added leichte Sch‰den) (mittlerweile: Q0- -> Q1+)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Bauarbeiten im III. Quartal 2021)
+#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: XXX Wann fangen die Bauarbeiten an? ƒndert sich bei den Bauarbeiten etwas?
 #: last_checked: 2021-08-10 (Bauarbeiten auf dem Mittelstreifen)
 Drosselstieg: Asphalt mit einigen Sch‰den	Q1+ 17748,8109 17683,7958
@@ -14986,9 +14996,10 @@ Wandlitzstr.: Asphalt mit leichten Sch‰den	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8942 (Forderung nach einer Fahrradstraﬂe)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Sanierung zwischen Grimnitzstr. und Liepnitzstr. nach August 2021)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/wandlitzstrasse-bald-fahrradstrasse_a318563 (BVV-Antrag)
+#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228 (Fahrbahnerneuerung zwischen Grimnitz- und Liepnitzstr. ab September 2021)
 #: XXX neue H‰user geplant (zwischen Liepnitzstr. und St¸hlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
 #: last_checked: 2021-08-10
-#: check_frequency: 90d
+#: check_frequency: 60d
 #: next_check: 2023-12-31
 Wandlitzstr.: m‰ﬂiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976
 #: by: ^^^
@@ -19003,6 +19014,7 @@ Malersteig: Asphalt	Q0 13606,3085 13596,3039 13561,2898 13510,2690 13487,2621 13
 #: corrected_by: srt (guter Beton, Q0 -> ...) vvv
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Instandsetzung der Fahrbahn, von August bis voraussichtlich Oktober 2021)
 #: by: https://abendblatt-berlin.de/2021/07/06/lichtenberg-sommerbaustellen-im-bezirk/
+#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: next_check: 2021-10-31
 Weseler Str.: m‰ﬂiger Asphalt	Q1- 18865,8740 18857,8790 18854,8831 18860,8886
 Weseler Str.: m‰ﬂiger Asphalt	Q1- 18860,8886 18877,8973 18881,9002

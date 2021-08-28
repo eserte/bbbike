@@ -18382,7 +18382,7 @@ EOF
      { from  => $isodate2epoch->("2019-06-27 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-06-30 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 8, months => 6, start => "2020-10-25T00:00:00"]],
+       recurrences => [['yearly', days => 8, months => 6, start => "2021-10-25T00:00:00"]],
        recurrence_prewarn_days => -80,
        # früher Bergmannstraßenfest
        text  => 'Kreuzbergstr.: Veranstaltung (Kreuzbergstraßenfest), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (28. Juni 2019 bis 30. Juni 2019)',
@@ -22930,7 +22930,7 @@ EOF
        until => $isodate2epoch->("2019-09-15 22:00:00"),
        periodic => 1, # erster Termin im Jahr
        #recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 1,
        recurrences => [["yearly", days => 1, months => 9, start => "2020-10-25T00:00:00"]],
        # früher: Fest der Nationen
        text  => 'Prager Platz: Veranstaltung "Fest der Vielfalt", Durchfahrt nicht möglich, vom 13.9.2019 15 Uhr bis 15.9.2019 22 Uhr',
@@ -24808,7 +24808,7 @@ EOF
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1, start => "2021-01-31T00:00:00"],
                        ['yearly', days => 27, months => 6, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -60,
+       recurrence_prewarn_days => -70,
        text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 13.01.2020-17.01.2020',
        type  => 'handicap',
        source_id => 'https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-termin-fuer-januar-2020.html',
@@ -26551,8 +26551,8 @@ EOF
 	3 6122,10925 6145,10975 6266,10927
 EOF
      },
-     { from  => $isodate2epoch->("2021-08-30 00:00:00"), # $isodate2epoch->("2021-07-19 06:00:00"),
-       until => $isodate2epoch->("2021-08-31 16:30:00"), # $isodate2epoch->("2021-07-20 18:30:00"),
+     { from  => $isodate2epoch->("2021-07-19 06:00:00"), # $isodate2epoch->("2021-08-30 00:00:00"), # 
+       until => $isodate2epoch->("2021-07-20 18:30:00"), # $isodate2epoch->("2021-08-31 16:30:00"), # 
        text  => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 31. August 2021 von 10:00 bis 16:30 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
@@ -26560,6 +26560,8 @@ EOF
 #: source_id: 2147341611
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf (Großer Zapfenstreich 2021)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Aufhebung der letzten Einschränkung)
+#: by: https://www.bmvg.de/de/presse/grosser-zapfenstreich-zur-wuerdigung-einsatz-afghanistan-5181746 (Verschiebung, noch kein neuer Termin)
 	2::temp 7435,11514 7322,11177
 	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
 	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
@@ -29190,9 +29192,9 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-01-24 07:00:00"), # 1568571027, # 1557083524, # 2019-05-05 21:12
-       until => $isodate2epoch->("2021-10-15 17:00:00"), # 1569607982, # $isodate2epoch->("2019-10-07 18:00:00"),
+       until => $isodate2epoch->("2021-09-08 17:00:00"), # 1569607982, # $isodate2epoch->("2019-10-07 18:00:00"),
        dont_check_date=>1,
-       text  => 'Langhansstr.: zwischen Roelckestr. und Gustav-Adolf-Str. ist die Fahrbahn abschnittsweise wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, 25.1.2021 bis 20.8.2021, evtl. auch bis Mitte Oktober 2021',
+       text  => 'Langhansstr.: in Höhe Antonplatz ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, voraussichtlich bis 8.9.2021',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
        data  => <<EOF,
@@ -29212,9 +29214,11 @@ EOF
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 #: last_checked: 2021-07-06 vvv
 #: next_check: 2021-08-20 vvv
-# REMOVED (wird bei viz nicht mehr erwähnt) --- #: note: hier nur an der Kreuzung Berliner Allee --- q3::inwork 13508,15912 13312,16027
+#: note: hier nur an der Kreuzung Berliner Allee
+#: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 8.9.2021)
+	q3::inwork 13508,15912 13312,16027
 # REMOVED (hier nicht mehr) ---	q4::inwork 13312,16027 13250,16058 13189,16089 12943,16214
-	q4::inwork 12943,16214 12859,16255 12826,16271 12797,16285 12764,16302 12725,16321 12564,16399 12474,16443 12399,16479
+# REMOVED (hier nicht mehr? "zwischen Roelckestr. und Gustav-Adolf-Str. sowie ...") ---	q4::inwork 12943,16214 12859,16255 12826,16271 12797,16285 12764,16302 12725,16321 12564,16399 12474,16443 12399,16479
 # REMOVED (wird bei viz nicht mehr erwähnt) --- #: note: hier keine Absperrungen mehr, aber offiziell nur für Tram und Bus frei --- q3::inwork 12399,16479 12189,16578
 #: next_check ^^^
 #: last_checked ^^^
@@ -30990,7 +30994,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-08-14
+#: last_checked: 2021-08-28
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -31996,7 +32000,7 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Katharina-Boll-Dornberger-Str.: Weg kann wegen Straßenbahnbauarbeiten gesperrt sein (Stand 1.8.2021: provisorischer Übergang existiert)',
+       text  => 'Katharina-Boll-Dornberger-Str.: Weg kann wegen Straßenbahnbauarbeiten gesperrt sein (Stand 22.8.2021: provisorischer Übergang existiert)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: STERNDAMM-2020
@@ -32005,7 +32009,7 @@ EOF
 #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2021-05-09-adlershof-2/40-2021-05-09-214-xxl.jpg (kein provisorischer Übergang mehr)
 #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt
 #: osm_watch: way id="855549020" version="1"
-#: last_checked: 2021-08-01 (krickstadt)
+#: last_checked: 2021-08-22 (krickstadt)
 #: check_frequency: 90d
 #: next_check: 2021-10-31
 	2::inwork 18836,3611 18943,3508
@@ -32691,20 +32695,22 @@ EOF
 	q4::temp::play 13032,10355 12897,10439
 EOF
      },
-     { from  => 1626374087, # 1626386400, # 2021-07-16 00:00
-       until => 1626374091, # 1630360799, # 2021-08-30 23:59
-       text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts möglicherweise auch für Radfahrer gesperrt, außerdem Einbahnstraßenregelung in der Bizetstr., vom 17. Juli 2021 bis 30. August 2021',
+     { from  => $isodate2epoch->("2021-08-22 17:00:00"), # 1626374087, # 1626386400, # 2021-07-16 00:00
+       until => $isodate2epoch->("2021-10-11 17:00:00"), # 1626374091, # 1630360799, # 2021-08-30 23:59
+       text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts gesperrt, mögliche Beeinträchtigungen für Radfahrer, außerdem Einbahnstraßenregelung in der Bizetstr., vom 23. August 2021 bis 11. Oktober 2021',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
        data  => <<EOF,
-#: XXX Wird es tatsächlich Einschränkungen für Radfahrer geben? Werden temporäre Ampeln aufgestellt? vvv
-#: XXX Sperrung wird mittlerweile nirgendwo erwähnt --- erstmal deaktiviert
+#: source_id: viz2021:13.454427,52.549049,23.08.2021,07:00
+#: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer? Wurden temporäre Ampeln aufgestellt? vvv
+#: note: laut rbb kann der Radverkehr den Sperrbereich passieren
 #: also_indoor: traffic
-#: next_check: 2021-07-17 vvv
-	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994 13826,16026 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
+#: next_check: 2021-08-23 vvv
+# REMOVED (hier nicht?) ---	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994
+	q3::inwork; 13737,15994 13826,16026 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
 	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
 #: next_check ^^^
-#: XXX ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => 1621144800, # 2021-05-16 08:00
@@ -32825,14 +32831,16 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Retzowstr.: südlich der Dessauerstr. Bauarbeiten, Fahrbahn gesperrt, Gehweg ist noch offen, Ende der Bauarbeiten unbekannt',
+       text  => 'Retzowstr.: südlich der Dessauerstr. Bauarbeiten, Fahrbahn gesperrt, Gehweg ist noch offen, Ende der Bauarbeiten vermutlich Ende November 2021',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SEYDLITZ-2021
-#: add_fragezeichen: Wann wird die Sperrung der Fahrbahn aufgehoben? Wird sich die Qualität des Asphalts nach den Bauarbeiten besser sein?
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1116986.php (Neubau der Fahrbahn, bis Ende November 2021)
+#: by: https://www.berliner-woche.de/lankwitz/c-bauen/retzowstrasse-gesperrt_a320297
+#: add_fragezeichen: Wann wird die Sperrung der Fahrbahn aufgehoben?
 #: last_checked: 2021-05-30
-#: check_frequency: 120d
-#: next_check: 2022-01-01
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2021-11-30
 	q4::inwork 6331,2281 6399,2184
 EOF
      },
@@ -32871,8 +32879,8 @@ EOF
 EOF
      },
      { from  => 1623092008, # 2021-06-07 20:53
-       until => 1630101600, # 2021-08-28 00:00
-       text  => 'Lynarstr.: Sperrung der Fahrbahn zwischen Sparrstr. und Müllerstr., evtl. sind auch Radfahrer betroffen, bis 27.08.2021',
+       until => $isodate2epoch->("2021-09-13 18:00:00"), # 1630101600, # 2021-08-28 00:00
+       text  => 'Lynarstr.: Sperrung der Fahrbahn zwischen Sparrstr. und Müllerstr., evtl. sind auch Radfahrer betroffen, bis 13.09.2021',
        type  => 'handicap',
        data  => <<EOF,
 #: note: laut rbb
@@ -33070,12 +33078,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-07-11 00:00:00"),
-       until => $isodate2epoch->("2021-08-21 00:00:00"),
-       text  => 'Paradiesstr.: Bauarbeiten, Fahrbahn zwischen Buntzelstr. und "Thomas Philipps" gesperrt, vom 12.7.2021 bis 20.8.2021',
+       until => $isodate2epoch->("2021-09-24 17:00:00"), # $isodate2epoch->("2021-08-21 00:00:00"),
+       text  => 'Paradiesstr.: Bauarbeiten, Fahrbahn zwischen Buntzelstr. und "Thomas Philipps" gesperrt, vom 12.7.2021 bis 24.9.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1103089.php',
        data  => <<EOF,
-#: source_id: viz2021:13.560042,52.405163,12.07.2021,07:00 (hier: bis 10.9.2021, siehe unten)
+#: source_id: viz2021:13.560042,52.405163,12.07.2021,07:00 (hier: bis 24.9.2021, siehe unten)
 	q4::inwork 21355,-309 21322,-176 21250,118
 EOF
      },
@@ -33301,11 +33309,11 @@ EOF
      },
      { from  => undef, # 
        until => 1635663600, # 2021-10-31 08:00
-       text  => 'Karl-Ziegler-Str.: mögliche Sperrung der Fahrbahn wegen Gleisarbeiten',
+       text  => 'Karl-Ziegler-Str.: Sperrung der Fahrbahn wegen Gleisarbeiten, Umfahrung auf Gehweg möglich',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: STERNDAMM-2020
-#: last_checked: 2021-08-08 (krickstadt)
+#: last_checked: 2021-08-22 (krickstadt)
 #: check_frequency: 60d
 #: next_check: 2021-10-31
 	q4::inwork 18766,3260 18828,3196 18946,3077
@@ -33337,7 +33345,44 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1115935.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/arbeiten-an-der-fahrbahn_a319346
 	q4::inwork 3862,23222 3743,23373
+EOF
+     },
+     { from  => $isodate2epoch->("2021-08-22 00:00:00"),
+       until => 1631916000, # 2021-09-18 00:00
+       text  => 'Bernau - Oranienburg: Bauarbeiten am Brückenbauwerk über die A11, Straße gesperrt, evtl. sind auch Radfahrer betroffen, 23.08.2021 bis 17.09.2021 ',
+       type  => 'gesperrt',
+       source_id => '216001757',
+       data  => <<EOF,
+	2::inwork 20534,31937 20364,32054
+EOF
+     },
+     { from  => 1629957600, # 2021-08-26 08:00
+       until => 1630382400, # 2021-08-31 06:00
+       text  => 'Biesenthal: Sperrung des Bahnüberganges, evtl. sind auch Radfahrer betroffen, 27.08.2021 08:00 Uhr bis 31.08.2021 06:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => '316001662',
+       data  => <<EOF,
+	2::inwork 26237,40190 28199,39134 28967,38692
+EOF
+     },
+     { from  => 1629928800, # 2021-08-26 00:00
+       until => 1630706400, # 2021-09-04 00:00
+       text  => 'Koburger Str.: Fahrbahn zwischen Hauptstr. und Heylstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.08.2021 11:13 bis 03.09.2021 23:59 ',
+       type  => 'handicap',
+       source_id => 'viz2021:13.34641,52.48039,27.08.2021,11:13',
+       data  => <<EOF,
+	q4::inwork 6552,8281 6560,8219
+EOF
+     },
+     { from  => 1629669600, # 2021-08-23 00:00
+       until => 1640991600, # 2022-01-01 00:00
+       text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 31.12.2021 17:00 ',
+       type  => 'handicap',
+       source_id => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
+       data  => <<EOF,
+	q4::inwork 8555,17928 8415,17902
 EOF
      },
     );
