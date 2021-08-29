@@ -916,7 +916,7 @@ EOF
        until => $isodate2epoch->("2019-09-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 8, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 1,
+       recurrence_prewarn_days => -6,
        text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (07.09.2019 bis 08.09.2019)',
        type  => 'gesperrt',
        source_id => 'http://www.hier-in-rudow.de/meilenfeste.html',
@@ -1052,6 +1052,7 @@ EOF
        until => $isodate2epoch->("2019-10-06 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9, start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => 14,
        text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -6302,12 +6303,14 @@ EOF
        until => $isodate2epoch->("2020-10-04 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 9]], # trotz Corona! --- , start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => 4,
        text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 03.10.2020 bis 04.10.2020',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.ms-event-agentur.com/seite22.html?date=20201002
 #: by: https://twitter.com/VIZ_Berlin/status/1312229648558850048
 #: by: https://pbs.twimg.com/media/EjX56WOWoAIPRUg?format=png&name=900x900
+#: by: https://www.berlin.de/events/4531106-2229501-schoeneberger-kuerbisfest.html (geplant für 2.+3.10.2021)
 	2::temp 7001,9291 7012,9222 7035,9161 7101,9027 7201,8870
 	2::temp 6945,9142 7035,9161
 	2::temp 6975,8944 7101,9027 7308,9163
@@ -22930,7 +22933,7 @@ EOF
        until => $isodate2epoch->("2019-09-15 22:00:00"),
        periodic => 1, # erster Termin im Jahr
        #recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
-       recurrence_prewarn_days => 1,
+       recurrence_prewarn_days => -6,
        recurrences => [["yearly", days => 1, months => 9, start => "2020-10-25T00:00:00"]],
        # früher: Fest der Nationen
        text  => 'Prager Platz: Veranstaltung "Fest der Vielfalt", Durchfahrt nicht möglich, vom 13.9.2019 15 Uhr bis 15.9.2019 22 Uhr',
@@ -23872,7 +23875,7 @@ EOF
        until => $isodate2epoch->("2019-09-14 23:59:59"),
        periodic => 1,
        recurrences => [["yearly", days => 31, months => 8, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 1,
+       recurrence_prewarn_days => -7,
        text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 14. September 2019, 12 bis 21 Uhr ',
        type  => 'gesperrt',
        source_id => 'https://www.turmstrasse.de/aktuelles',
@@ -24808,7 +24811,7 @@ EOF
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1, start => "2021-01-31T00:00:00"],
                        ['yearly', days => 27, months => 6, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -70,
+       recurrence_prewarn_days => -77,
        text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 13.01.2020-17.01.2020',
        type  => 'handicap',
        source_id => 'https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-termin-fuer-januar-2020.html',
@@ -25772,7 +25775,7 @@ EOF
        text  => 'Lollapalooza 2016 im Treptower Park: Puschkinallee und Alt-Treptow gesperrt, ab 09.09.2016 abends bis 12.09.2016 morgens',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 15591,8848 15452,9079 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581
+	2::temp 15591,8848 15534,8943 15452,9079 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581
 EOF
      },
      { from  => 1467496800, # 2016-07-03 00:00
@@ -28718,7 +28721,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-08-05 (mapillary)
+#: last_checked: 2021-08-27 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -29212,8 +29215,8 @@ EOF
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12474,16443 12564,16399 12725,16321 12764,16302 12797,16285 12826,16271 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
-#: last_checked: 2021-07-06 vvv
-#: next_check: 2021-08-20 vvv
+#: last_checked: 2021-08-27 (mapillary) vvv
+#: next_check: 2021-09-08 vvv
 #: note: hier nur an der Kreuzung Berliner Allee
 #: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 8.9.2021)
 	q3::inwork 13508,15912 13312,16027
@@ -30168,7 +30171,7 @@ EOF
        text  => 'Königsteinbrücke: Sperrung der Brücke ab dem 23. Oktober 2019, Brücke wird danach abgerissen und neu gebaut',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: KOENIGSTEINBRUECKE-2019
+# REMOVED (fertig) --- #: next_check_id: KOENIGSTEINBRUECKE-2019
 # REMOVED (-> gesperrt-orig) --- #: last_checked: 2019-10-23 (wosch) (gesperrt) --- #: next_check: 2019-10-25
 # REMOVED --- #: add_fragezeichen: Ist die Königsteinbrücke bereits gesperrt?
 	2::inwork 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378
@@ -30408,7 +30411,7 @@ EOF
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-08-05 (mapillary)
+#: last_checked: 2021-08-21 (daf)
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 EOF
@@ -32697,7 +32700,7 @@ EOF
      },
      { from  => $isodate2epoch->("2021-08-22 17:00:00"), # 1626374087, # 1626386400, # 2021-07-16 00:00
        until => $isodate2epoch->("2021-10-11 17:00:00"), # 1626374091, # 1630360799, # 2021-08-30 23:59
-       text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts gesperrt, mögliche Beeinträchtigungen für Radfahrer, außerdem Einbahnstraßenregelung in der Bizetstr., vom 23. August 2021 bis 11. Oktober 2021',
+       text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts gesperrt, mögliche Beeinträchtigungen für Radfahrer, vom 23. August 2021 bis 11. Oktober 2021',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
        data  => <<EOF,
@@ -32707,8 +32710,9 @@ EOF
 #: also_indoor: traffic
 #: next_check: 2021-08-23 vvv
 # REMOVED (hier nicht?) ---	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994
-	q3::inwork; 13737,15994 13826,16026 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
-	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
+# REMOVED (hier nicht, laut mapillary) ---	q3::inwork; 13737,15994 13826,16026 14015,16103
+	q4::inwork; 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
+# REMOVED (Umleitung anscheinend via Lehderstr.) ---	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
 #: next_check ^^^
 #: add_fragezeichen ^^^
 EOF
@@ -33301,10 +33305,14 @@ EOF
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/amtliche-bekanntmachungen/allgemeinverfuegung_james-simon-park.pdf',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1113411.php
+#: XXX bis wann bleibt die Sperrung bestehen? vvv
 #: tempex: T20-T06 vvv
+#: next_check: 2021-12-31 vvv
 	2::night 10132,12941 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992
 	2::night 10166,12777 10105,12855 9977,12912
+#: next_check ^^^
 #: tempex ^^^
+#: XXX ^^^
 EOF
      },
      { from  => undef, # 
@@ -33383,6 +33391,28 @@ EOF
        source_id => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
        data  => <<EOF,
 	q4::inwork 8555,17928 8415,17902
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Treptower Park: Teile des Parks sind nachts gesperrt (von 22:00 bis 04:00 Uhr)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1120239.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_37_3401_3492_online.pdf
+#: XXX bis wann bleibt die Sperrung bestehen? vvv
+#: last_checked: 2021-08-29 vvv
+#: check_frequency: 30d vvv
+	2::night 15668,9140 15631,9114 15580,9181 15604,9215 15693,9194 15683,9136
+	2::night 14478,9545 14384,9565 14316,9542 14318,9688
+	2::night 14475,9199 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441 14719,9419 14774,9437 14809,9466
+	2::night 14556,9581 14588,9473 14507,9529
+	2::night 14382,9299 14398,9373 14485,9271 14531,9244 14612,9190
+	2::night 14398,9373 14347,9452 14316,9542 14242,9448
+	2::night 14635,9441 14588,9473
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 EOF
      },
     );

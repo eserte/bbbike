@@ -73,7 +73,10 @@ F23 (Spree): Mo keine Fahrten; stündlich von ca. 10 bis 19 Uhr; Sa/So bis 20 Uhr
 #: as_of: 2021-04
 F24 (Spree): nur samstags, sonntags und an Feiertagen, jeweils 11 bis 19 Uhr, ca. stündlich, bei Bedarf auch außerhalb des Fahrplans; Saisonbetrieb (ab Ende April bis Anfang Oktober); BVG-Kurzstreckentarif; ca. 5 Minuten Fahrzeit; Ruderfähre mit Fahrradmitnahme	CS 29959,3031 29968,2986
 # 
-# REMOVED (außer Betrieb ---- ttps://www.outdooractive.com/de/condition/vorpommern/personen-und-fahrradfaehre-kamp-karnin-ausser-betrieb/39483195/) --- #: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive --- #: url: http://www.fähre-kamp-karnin.de/fahrplan/ --- #: as_of: 2017-03 --- Karniner Fähre: Die Fähre verkehrt vom 29. April bis 10. September (11-17 Uhr) und bis 3. Oktober (11-14 Uhr) regelmäßig zwischen Kamp und Karnin (Zollhafen sowie Naturhafen). Telefon: 0177-2834504. Die Überfahrt kostet 9,00 Euro pro Erwachsenen mit Fahrrad.	CS 38674,160390 37644,160344 38049,160420 38325,160573
+#: url: https://reederei-peters.de/fahradfaehre-kamp-karnin/
+#: as_of: 2021-08
+Karniner Fähre: die Fähre verkehrt stündlich zwischen 10 und 17 Uhr. Die Überfahrt kostet 11,50 Euro pro Erwachsenen mit Fahrrad.	CS 37644,160344 38049,160420 38325,160573
+# 
 # REMOVED --- #: by: Tagesspiegel-Beitrag; korrigierte Preise, Fährzeiten und Telefonnummer laut http://www.suedwestbezirk.de/insel.html: vvv
 # REMOVED --- #: as_of: 2007-06 vvv
 # REMOVED --- #: by: http://www.valentinswerder.de/index.php?include=8&date=20130125 (Übernahme der Fähre, neue Fährzeiten)

@@ -681,7 +681,7 @@ teilweise mit Leitboys geschützt	RW4; 14208,12235 14291,12220 14381,12205 14427,
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur, evtl. bleibt diese permanent
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 13.09.2021)
-#: last_checked: 2021-07-21
+#: last_checked: 2021-08-29
 #: next_check: 2021-09-13
 	RW4; 14926,12129 14994,12121 15117,12106
 	RW2; 15117,12106 15361,12071
@@ -903,7 +903,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-08-10
+#: last_checked: 2021-08-29
 #: check_frequency: 60d
 # REMOVED (vermutlich ohne baldige Änderung) --- #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1222,10 +1222,9 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 # REMOVED --- #: XXX Wurde die Benutzungspflicht aufgehoben? -> nein! --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_10_reduziert.pdf?start&ts=1342111378&file=mdv_vii_10_reduziert.pdf (Aufhebung? Seite 41-42)
 	RW2; 20880,5736 21002,5755
 	RW2;RW2 14196,9749 14271,9712 14318,9688 14389,9656 14495,9609
-	RW2; 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15407,9151 15442,9095 15452,9079 15591,8848
-	RW2; 15591,8848 15452,9079
-#: note: explizites Schild zur Aufhebung der Radwegbenutzungspflicht, nur einige Meter nach der Bulgarischen Str.
-	RW1; 15452,9079 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609
+	RW2; 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15407,9151 15442,9095 15452,9079 15534,8943 15591,8848
+	RW2; 15591,8848 15534,8943
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609
 	RW1; 13919,7707 14015,7631
 	RW2; 14015,7631 14095,7568 14174,7505
 	RW1; 14174,7505 14095,7568 14015,7631
@@ -1295,7 +1294,15 @@ asphaltiert	RW1; 27761,-3165 27721,-3164
 	RW8;RW2 20565,2754 20868,2443 20928,2378 21041,2259 21055,2244 21242,2048 21388,1895
 Verbundsteinpflaster	RW1; 15166,8489 15378,8668 15558,8820 15591,8848
 die ersten 50 Meter mit abgesperrtem Radweg	RW0; 15591,8848 15558,8820 15378,8668
-Verbundsteinpflaster	RW1; 14089,9610 14185,9509
+# 
+#: next_check_id: AMTREPTOWERPARK-2020
+#: XXX südlicher Geh- und Radweg wegen Bauarbeiten gesperrt
+#: last_checked: 2021-08-29
+#: check_frequency: 120d
+# früher: Verbundsteinpflaster	RW1; 14089,9610 14185,9509
+Asphalt, provisorische Wegführung	RW8; 14089,9610 14185,9509
+Asphalt, relativ breit	RW2; 14185,9509 14089,9610
+# 
 alter, schadhafter Asphalt	RW1; 14185,9509 14242,9448 14382,9299 14443,9233 14475,9199 14558,9111 14614,9052 14745,8912 14842,8809 14852,8799 14934,8717 15002,8651
 Verbundsteinpflaster	RW1; 15002,8651 15070,8584 15079,8575 15166,8489
 	RW2; 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14842,8809 14745,8912 14614,9052 14558,9111 14475,9199 14443,9233 14382,9299 14242,9448 14185,9509
@@ -1463,7 +1470,7 @@ Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2021-07-26
+#: last_checked: 2021-08-25 (mapillary)
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1476,7 +1483,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: source_id: INKO_113041
 #: source_id: 2147339528 (bis 8.6.2020) (inaktiv)
 #: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2021-08-12
+#: last_checked: 2021-08-18 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
@@ -3428,7 +3435,7 @@ provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
 #: next_check_id: POPUPRADWEGE-2020
 #: XXX existierender Bürgersteigradweg wurde zugunsten des Popup-Radwegs aufgehoben
 #: osm_watch: way id="4603499" version="32"
-#: last_checked: 2021-05-30
+#: last_checked: 2021-06-06 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2020-12-31
 provisorisch geschützter Radstreifen	RW4; 13250,5234 13112,5253 13046,5267 12987,5263
@@ -4364,7 +4371,8 @@ Gehweg für Radfahrer frei, Gehwegplatten	RW1; 12121,20969 12095,20832 12076,2073
 	RW3;RW4? 4787,7213 4743,7212
 	RW1;RW1 17169,11677 17251,11789
 neues Verbundsteinpflaster	RW1;RW1 17169,11677 17208,11658 17275,11626 17341,11595 17609,11467 17734,11408
-einige Meter nicht benutzungspflichtiger Radweg an der Einbecker Str.	RW0;RW0 17734,11408 17725,11228
+Verbundsteinpflaster	RW1; 17734,11408 17732,11374 17730,11330
+Verbundsteinpflaster	RW1; 17732,11374 17734,11408
 30 Meter nicht benutzungspflichtiger Radweg an der Rummelsburger Str.	RW0;RW0 17621,10994 17569,10801
 	RW1;RW1 17621,10994 17645,11028 17676,11055 17719,11092 17848,11204
 	RW1;RW3 17848,11204 17861,11210 17876,11217
@@ -4406,7 +4414,7 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: source_id: viz2021:13.500319,52.510647,28.06.2021,08:00 (inaktiv)
 #: XXX dieser Abschnitt bekommt eine Grünmarkierung
 #: priority: #D
-#: last_checked: 2021-08-03
+#: last_checked: 2021-08-29
 #: check_frequency: 60d
 #: next_check: 2021-12-31
 # REMOVED --- #: next_check: 2021-07-22
@@ -5403,7 +5411,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by ^^^
 # 
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2021-07-26 vvv
+#: last_checked: 2021-08-21 (daf) vvv
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9141,12320 9131,12438 9121,12514
 #: XXX früher RW3, zurzeit durch Gelbmarkierung (Kreuze) ungültig gemacht
@@ -7170,3 +7178,4 @@ Busspur gilt Mo-Fr 6-20 Uhr, Sa 9-20 Uhr	RW5; 12574,1866 12817,2031
 	RW2;RW8 9505,9306 9632,9280 9689,9266 9753,9252
 Tempo 10	RW6;RW6 14254,11377 14211,11229
 Tempo 10	RW6;RW6 14468,11203 14442,11101
+Tempo 10	RW6;RW6 14531,11142 14513,11075

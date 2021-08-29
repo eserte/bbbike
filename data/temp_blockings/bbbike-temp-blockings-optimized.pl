@@ -4080,7 +4080,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-08-05 (mapillary)
+#: last_checked: 2021-08-27 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -4172,8 +4172,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12474,16443 12564,16399 12725,16321 12764,16302 12797,16285 12826,16271 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
-#: last_checked: 2021-07-06 vvv
-#: next_check: 2021-08-20 vvv
+#: last_checked: 2021-08-27 (mapillary) vvv
+#: next_check: 2021-09-08 vvv
 #: note: hier nur an der Kreuzung Berliner Allee
 #: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 8.9.2021)
 	q3::inwork 13508,15912 13312,16027
@@ -4389,7 +4389,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-08-05 (mapillary)
+#: last_checked: 2021-08-21 (daf)
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 ',
@@ -5154,15 +5154,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: also_indoor: traffic
 #: next_check: 2021-08-23 vvv
 # REMOVED (hier nicht?) ---	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994
-	q3::inwork; 13737,15994 13826,16026 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
-	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
+# REMOVED (hier nicht, laut mapillary) ---	q3::inwork; 13737,15994 13826,16026 14015,16103
+	q4::inwork; 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
+# REMOVED (Umleitung anscheinend via Lehderstr.) ---	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
 #: next_check ^^^
 #: add_fragezeichen ^^^
 ',
          'from' => 1629644400,
          'id' => 3374,
          'source_id' => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
-         'text' => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts gesperrt, mögliche Beeinträchtigungen für Radfahrer, außerdem Einbahnstraßenregelung in der Bizetstr., vom 23. August 2021 bis 11. Oktober 2021',
+         'text' => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts gesperrt, mögliche Beeinträchtigungen für Radfahrer, vom 23. August 2021 bis 11. Oktober 2021',
          'type' => 'handicap',
          'until' => 1633964400
        },
@@ -5542,10 +5543,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1113411.php
+#: XXX bis wann bleibt die Sperrung bestehen? vvv
 #: tempex: T20-T06 vvv
+#: next_check: 2021-12-31 vvv
 	2::night 10132,12941 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992
 	2::night 10166,12777 10105,12855 9977,12912
+#: next_check ^^^
 #: tempex ^^^
+#: XXX ^^^
 ',
          'from' => undef,
          'id' => 3427,
@@ -5630,6 +5635,29 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 31.12.2021 17:00 ',
          'type' => 'handicap',
          'until' => 1640991600
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1120239.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_37_3401_3492_online.pdf
+#: XXX bis wann bleibt die Sperrung bestehen? vvv
+#: last_checked: 2021-08-29 vvv
+#: check_frequency: 30d vvv
+	2::night 15668,9140 15631,9114 15580,9181 15604,9215 15693,9194 15683,9136
+	2::night 14478,9545 14384,9565 14316,9542 14318,9688
+	2::night 14475,9199 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441 14719,9419 14774,9437 14809,9466
+	2::night 14556,9581 14588,9473 14507,9529
+	2::night 14382,9299 14398,9373 14485,9271 14531,9244 14612,9190
+	2::night 14398,9373 14347,9452 14316,9542 14242,9448
+	2::night 14635,9441 14588,9473
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+',
+         'from' => undef,
+         'id' => 3436,
+         'text' => 'Treptower Park: Teile des Parks sind nachts gesperrt (von 22:00 bis 04:00 Uhr)',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

@@ -351,3 +351,13 @@ Kastanienallee: Radfahrer müssen auf den gegenüberliegenden Radweg verlassen	DH:
 # 
 # REMOVED --- #: note: abgeschätzt zwischen 90s und 135s zusätzlicher Passierdauer --- #: source_id: 2147347173 --- #: valid: -20210527 --- Danziger Str./Landsberger Allee: Radfahrer müssen die Kreuzung auf der linken Seite überqueren	DH:t=120 13228,13615 13330,13468 13375,13367
 # 
+#: next_check_id: AMTREPTOWERPARK-2020
+#: source_id: viz2021:13.454254,52.49393,29.07.2021,08:00 (bis Ende 2021, Gesamtbaumaßnahme bis 30.6.2023)
+#: last_checked: 2021-08-29 vvv
+#: next_check: 2021-12-31 vvv
+#: note: allerdings spart man hier eine Ampel
+Elsenstr.: Umweg für Radfahrer	DH:len=90 14196,9749 14089,9610 13973,9465
+Elsenstr. -> Am Treptower Park: Umweg für Radfahrer	DH:len=90 14196,9749 14089,9610 14185,9509
+#: next_check ^^^
+#: last_checked ^^^
+# 
