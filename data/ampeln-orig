@@ -9,7 +9,7 @@
 # 
 # 
 #: next_check_id: GAERTNER-2021
-#: last_checked: 2021-08-29
+#: last_checked: 2021-08-30
 # REMOVED (nicht mehr) --- Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775
 Grünberger Str.	F::inwork 14272,11775
 # 
@@ -2286,7 +2286,16 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F -4663,11574
 	X 10815,11662
 	F 8867,4506
-	X 14185,9509
+#: next_check_id: AMTREPTOWERPARK-2020
+#: XXX zurzeit keine Ampel, wird aber vermutlich für die Anschlussstelle wieder neu errichtet
+#: last_checked: 2021-08-29
+#: check_frequency: 120d
+	X0 14185,9509
+#: next_check_id: AMTREPTOWERPARK-2020
+#: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
+#: last_checked: 2021-08-29
+#: check_frequency: 120d
+	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746
 #: by: http://www.th-billik.de/NME/20051030/
 	X 16786,2989
@@ -3107,7 +3116,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check: 2022-12-31 vvv
 	X::inwork 13265,6972
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: last_checked: 2021-07-14
+#: last_checked: 2021-08-28 (mapillary)
 #: check_frequency: 90d
 	X::inwork 13627,7047
 # REMOVED --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103
@@ -3289,7 +3298,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: mapillary
 #: last_checked: 2021-07-27 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2021-08-31
+# REMOVED --- #: next_check: 2021-08-31
+#: next_check: 2021-09-30
 	F::inwork 8153,14769
 # 
 # REMOVED --- #: next_check_id: CHAUSSEESTR-2016 vvv

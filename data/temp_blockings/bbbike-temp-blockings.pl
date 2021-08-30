@@ -30780,7 +30780,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-08-09
+#: last_checked: 2021-08-30
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30997,12 +30997,13 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-08-28
+#: last_checked: 2021-08-30
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
-	q3::inwork 14247,11681 14272,11775 14306,11889
+# REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
+	q3::inwork 14272,11775 14306,11889
 EOF
      },
      { do {
@@ -32772,14 +32773,11 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => 1630344219, # mittlerweile sieht's offen aus (von weiten)
        text  => 'An der Nordbahn: neue Führung des Mauerwegs im Bereich Bhf. Wilhelmsruh/zukünftiger Bahnhof der Heidekrautbahn, bereits weitgehend fertig, aber noch nicht offiziell eröffnet',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: HEIDEKRAUTBAHN-2021
-#: add_fragezeichen: Ist der neue Weg bereits offiziell eröffnet?
-#: last_checked: 2021-06-25 (daf)
-#: check_frequency: 30d
+# REMOVED --- #: next_check_id: HEIDEKRAUTBAHN-2021 --- #: add_fragezeichen: Ist der neue Weg bereits offiziell eröffnet? --- #: last_checked: 2021-06-25 (daf) --- #: check_frequency: 30d
 	2::inwork 7236,19689 7273,19682 7435,19547 7446,19522 7504,19459
 EOF
      },
@@ -32862,8 +32860,8 @@ EOF
 EOF
      },
      { from  => 1622527200, # 2021-06-01 08:00
-       until => 1630422000, # 2021-08-31 17:00
-       text  => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 31.08.2021 17:00 Uhr ', # ursprünglich: Gerlinger Str./Ringslebenstr. und Stuthirtenweg/Stadtgrenze
+       until => $isodate2epoch->("2021-11-30 17:00:00"), # 1630422000, # 2021-08-31 17:00
+       text  => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 30.11.2021 17:00 Uhr ', # ursprünglich: Gerlinger Str./Ringslebenstr. und Stuthirtenweg/Stadtgrenze
        type  => 'handicap',
        source_id => '2147347243',
        data  => <<EOF,
@@ -33413,6 +33411,17 @@ EOF
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+EOF
+     },
+     { from  => 1630382400, # 2021-08-31 06:00
+       until => 1661983200, # 2022-09-01 00:00
+       text  => 'Stralauer Str. (Molkenmarkt): Straße zwischen Jüdenstr. und Grunerstr. gesperrt, vom 01.09.2021 06:00 bis 31.08.2022 17:00 ',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.409118,52.51693,01.09.2021,06:00',
+       data  => <<EOF,
+#: next_check_id: MOLKENMARKT-2021
+	2::inwork 10804,12291 10738,12364
+	2::inwork 10675,12280 10736,12285 10772,12288
 EOF
      },
     );

@@ -1135,10 +1135,12 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
 #: by: https://taz.de/Pop-up-Bikelane-weicht-Baustelle/!5699409/ (wird der bauliche Radweg explizit abgesperrt? Ende: 2020-10-10)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9848 (Einwohnerfrage, Wegfall von Parkplätzen)
+#: by. https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/petersburger-strasse/
+#: by: https://twitter.com/VIZ_Berlin/status/1432299752406888449 (Grundsanierung ab 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="15"
-#: last_checked: 2021-07-07
-#: check_frequency: 60d
+#: last_checked: 2021-08-12 (mapillary)
+#: check_frequency: 120d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
 	RW1; 13676,12683 13695,12643
@@ -1150,8 +1152,8 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="28"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2021-07-07
-#: check_frequency: 60d
+#: last_checked: 2021-08-24 (mapillary)
+#: check_frequency: 120d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
 	RW1; 13393,13326 13375,13367 13330,13468
@@ -1301,9 +1303,11 @@ die ersten 50 Meter mit abgesperrtem Radweg	RW0; 15591,8848 15558,8820 15378,866
 #: check_frequency: 120d
 # früher: Verbundsteinpflaster	RW1; 14089,9610 14185,9509
 Asphalt, provisorische Wegführung	RW8; 14089,9610 14185,9509
+# früher: alter, schadhafter Asphalt	RW1; 14185,9509 14242,9448
+Asphalt, provisorische Wegführung	RW8; 14185,9509 14242,9448
 Asphalt, relativ breit	RW2; 14185,9509 14089,9610
 # 
-alter, schadhafter Asphalt	RW1; 14185,9509 14242,9448 14382,9299 14443,9233 14475,9199 14558,9111 14614,9052 14745,8912 14842,8809 14852,8799 14934,8717 15002,8651
+alter, schadhafter Asphalt	RW1; 14242,9448 14382,9299 14443,9233 14475,9199 14558,9111 14614,9052 14745,8912 14842,8809 14852,8799 14934,8717 15002,8651
 Verbundsteinpflaster	RW1; 15002,8651 15070,8584 15079,8575 15166,8489
 	RW2; 15166,8489 15079,8575 15070,8584 15002,8651 14934,8717 14852,8799 14842,8809 14745,8912 14614,9052 14558,9111 14475,9199 14443,9233 14382,9299 14242,9448 14185,9509
 	RW1;RW1 13535,10184 13579,10146 13711,10022 13782,9954 13795,9941
@@ -3600,10 +3604,11 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019) (inaktiv)
 #: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019) (inaktiv)
 #: source_id: 2147345490 (bis 30.7.2021)
-#: source_id: viz2021:13.42941,52.533057,25.02.2020,08:00 (bis 1.9.2021)
+#: source_id: viz2021:13.42941,52.533057,25.02.2020,08:00 (bis 1.9.2021, Gesamtbaumaßnahme bis 2022)
+#: source_id: viz2021:13.42941,52.533057,01.09.2021,08:00 (bis 31.12.2021, Gesamtbaumaßnahme bis 2022)
 #: priority: #D vvv
 #: last_checked: 2021-07-07 vvv
-#: next_check: 2021-09-01 vvv
+#: next_check: 2021-12-31 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
 #: next_check ^^^
@@ -4502,6 +4507,10 @@ Verbundsteinpflaster	RW1; 17829,15015 17789,15098
 neu asphaltiert, etwas breiter	RW1; 17789,15098 17706,15269 17626,15433 17569,15561 17532,15645 17488,15766
 	RW1; 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17789,15098 17829,15015 17886,14899
 	RW1; 14584,17224 14673,17454
+#: by: mapillary
+	RW4;RW4 14673,17454 14731,17611
+#: by: mapillary
+	RW4;RW4 14782,17743 14832,17867
 In der Mitte ist der Radweg für ca. 50 Meter unterbrochen	RW1; 14673,17454 14584,17224
 	RW6;RW6 6719,14047 6677,14219 6656,14311
 	RW1;RW1 88,5136 144,5102
@@ -6662,7 +6671,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2021-08-03 (mapillary)
+#: last_checked: 2021-08-27 (mapillary)
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: note: am Ende fehlen ein paar Meter Grünmarkierung
@@ -6677,8 +6686,8 @@ Grünmarkierung	RW4; 12317,14535 12407,14470 12522,14385
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1389893047379496960 (Markierungsarbeiten)
 #: by: https://twitter.com/VIZ_Berlin/status/1402152820439138307
-#: last_checked: 2021-07-07 vvv
-#: check_frequency: 45d vvv
+#: last_checked: 2021-08-27 (mapillary) vvv
+#: check_frequency: 30d vvv
 #: next_check: 2022-12-31 vvv
 #: osm_watch: way id="335479077" version="13"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
@@ -6916,12 +6925,13 @@ provisorischer Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9158
 #: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020) (inaktiv)
 #: source_id: 2147345931 (bis 31.3.2021) (inaktiv)
 #: source_id: 2147345931 (bis 5.5.2021) (inaktiv)
+#: source_id: viz2021:13.402789,52.498471,01.09.2021,07:00 (bis 24.9.2021)
 #: note: laut rbb Einspurigkeit zwischen Prinzenstr. und Böcklerstr. bis 13.08.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="20"
 #: osm_watch: way id="335487059" version="15"
-#: last_checked: 2021-08-04 vvv
+#: last_checked: 2021-08-26 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-07-30 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -6979,7 +6989,7 @@ Radspur hinter parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720 11710,9628
 #: by: https://twitter.com/VIZ_Berlin/status/1406948078658232321 (Bauarbeiten ab Anfang Juli 2021)
 #: source_id: 2147346996 (bis 21.5.2021)
 #: osm_watch: way id="34057952" version="38"
-#: last_checked: 2021-08-04 vvv
+#: last_checked: 2021-08-26 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-06-23 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8810,10305 9146,10284 9368,10211 9416,10196

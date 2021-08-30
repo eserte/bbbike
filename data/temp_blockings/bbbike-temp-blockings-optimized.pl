@@ -4438,7 +4438,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-08-09
+#: last_checked: 2021-08-30
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4496,12 +4496,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-08-28
+#: last_checked: 2021-08-30
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
-	q3::inwork 14247,11681 14272,11775 14306,11889
+# REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
+	q3::inwork 14272,11775 14306,11889
 ',
          'from' => 1590562800,
          'id' => 3240,
@@ -5206,19 +5207,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1631894400
        },
-       {
-         'data' => '#: next_check_id: HEIDEKRAUTBAHN-2021
-#: add_fragezeichen: Ist der neue Weg bereits offiziell eröffnet?
-#: last_checked: 2021-06-25 (daf)
-#: check_frequency: 30d
-	2::inwork 7236,19689 7273,19682 7435,19547 7446,19522 7504,19459
-',
-         'from' => undef,
-         'id' => 3380,
-         'text' => 'An der Nordbahn: neue Führung des Mauerwegs im Bereich Bhf. Wilhelmsruh/zukünftiger Bahnhof der Heidekrautbahn, bereits weitgehend fertig, aber noch nicht offiziell eröffnet',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: last_checked: 2021-08-08
@@ -5276,9 +5265,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1622527200,
          'id' => 3387,
          'source_id' => '2147347243',
-         'text' => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 31.08.2021 17:00 Uhr ',
+         'text' => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 30.11.2021 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1630422000
+         'until' => 1638288000
        },
        {
          'data' => '	q4::inwork; 9863,6617 9861,6693
@@ -5658,6 +5647,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Treptower Park: Teile des Parks sind nachts gesperrt (von 22:00 bis 04:00 Uhr)',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: MOLKENMARKT-2021
+	2::inwork 10804,12291 10738,12364
+	2::inwork 10675,12280 10736,12285 10772,12288
+',
+         'from' => 1630382400,
+         'id' => 3437,
+         'source_id' => 'viz2021:13.409118,52.51693,01.09.2021,06:00',
+         'text' => 'Stralauer Str. (Molkenmarkt): Straße zwischen Jüdenstr. und Grunerstr. gesperrt, vom 01.09.2021 06:00 bis 31.08.2022 17:00 ',
+         'type' => 'gesperrt',
+         'until' => 1661983200
        }
      
 );

@@ -828,11 +828,11 @@ Kirchhofstr.: schlechtes Kopfsteinpflaster	Q3 13177,7644 13188,7590 13117,7471 1
 Kirchhofstr.: Kopfsteinpflaster	Q2 13003,7316 13001,7296
 Kirchhofstr.: Asphalt	Q0 13001,7296 12909,7181 12872,7134 12843,7093
 #: note: fr¸her Kopfsteinpflaster
-Berliner Allee: Asphalt	Q0 14832,17867 14766,17702
+Berliner Allee: Asphalt	Q0 14832,17867 14782,17743 14766,17702
 Berliner Allee: Asphalt	Q0 14766,17702 14754,17673
 #: corrected_by: mapillary (Kopfsteinpflaster -> ..., neu gemacht)
 #: confirmed_by: srt
-Berliner Allee: Asphalt	Q0 14754,17673 14673,17454
+Berliner Allee: Asphalt	Q0 14754,17673 14731,17611 14673,17454
 Berliner Allee: Asphalt	Q0 14673,17454 14584,17224 14552,17137 14533,17084 14535,17003 14558,16907
 Lessingstr.: Kopfsteinpflaster	Q2- 10425,67 10300,42 10156,13 10066,-3 9966,-22 9861,-44 9812,-41 9730,-33
 Lessingstr.: Asphalt	Q0 10425,67 10512,83 10614,105 10737,132
@@ -875,7 +875,7 @@ Bˆcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht mˆglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="13"
-#: last_checked: 2021-07-12 (mapillary)
+#: last_checked: 2021-08-12 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: auﬂen Kopfsteinpflaster, Straﬂenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -988,7 +988,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? auﬂerdem: wird die Colbestr. zur Fahrradstraﬂe?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erw‰hnung)
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-08-29
+#: last_checked: 2021-08-30
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -11568,7 +11568,7 @@ Parchimer Str. [Stichstraﬂe]: Beton	Q1 22225,12281 22200,12267 22096,12267 22094
 (Fleischerstr. - Gr¸nanlage): Verbundsteinpflaster	Q1 16433,1180 16450,1135 16457,1129
 #: next_check_id: BUCKOWERDAMM-2021
 #: add_fragezeichen: Wurden w‰hrend der Bauarbeiten die Asphaltsch‰den ausgebessert?
-#: next_check: 2021-08-31
+#: next_check: 2021-11-30
 Buckower Damm: Asphalt mit Sch‰den	Q1 12938,1348 12939,1469 12940,1547
 Am Waldrand: Asphalt	Q0 -9393,445 -9407,514 -9412,546
 via Tilia: Kopfsteinpflaster	Q2- -7518,-1175 -7520,-1164 -7534,-1111 -7494,-1071 -7326,-1121 -7310,-1131
