@@ -26,7 +26,7 @@ jobs:
            bbbike_test_gui:          0
            use_modperl:              0
            bbbike_test_skip_modperl: 1
-         - os:                       'ubuntu-16.04'
+         - os:                       'ubuntu-18.04'
            add_name:                 '+ mod_perl'
            bbbike_test_gui:          0
            use_modperl:              1
@@ -92,6 +92,9 @@ jobs:
             bbbike_test_skip_mapserver: 0
           - dist:                       debian
             distver:                    buster
+            bbbike_test_skip_mapserver: 0
+          - dist:                       ubuntu
+            distver:                    xenial
             bbbike_test_skip_mapserver: 0
     steps:
     - uses: actions/checkout@v2
