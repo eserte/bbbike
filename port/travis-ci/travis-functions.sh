@@ -280,6 +280,10 @@ install_perl_dependencies() {
 	# https://github.com/bluefeet/Geo-Distance/issues/15
 	cpanm --quiet --notest 'Geo::Distance~!=0.21,!=0.22'
 
+	# Geo::Distance::XS is not available anymore on CPAN
+	# and must now be installed by specifying an exact version
+	cpanm --quiet --notest 'Geo::Distance::XS@0.13'
+
 	# Geo::Proj4 does not compile anymore with newer proj4 versions
 	# https://rt.cpan.org/Ticket/Display.html?id=129389
 	if [ "$CODENAME" = "focal" ]
