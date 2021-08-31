@@ -28079,7 +28079,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-08-12
+#: last_checked: 2021-08-31
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -32540,12 +32540,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Glinkastr.: zwischen Jägerstr. und Mohrenstr. Einbahnstraßenregelung, Richtung Süden gesperrt, auch für Radfahrer',
+       text  => 'Glinkastr.: zwischen Jägerstr. und Mohrenstr. Richtung Süden offiziell Einbahnstraßenregelung für alle, es existiert aber eine Radspur',
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?
-#: note: 2021-07-26 ("Radfahrer frei"-Schilder fehlen weiterhin, aber manchmal scheint man auf dem noch existierenden Radstreifen gut durchzukommen)
-#: last_checked: 2021-07-26
+#: note: 2021-07-26 ("Radfahrer frei"-Schilder fehlen weiterhin, aber manchmal scheint man auf dem noch existierenden Radstreifen gut durchzukommen), ebenso: 2021-08-31
+#: last_checked: 2021-08-31
 	q4::inwork; 9195,11972 9207,11880
 # REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
 EOF

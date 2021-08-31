@@ -1487,7 +1487,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: source_id: INKO_113041
 #: source_id: 2147339528 (bis 8.6.2020) (inaktiv)
 #: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2021-08-18 (mapillary)
+#: last_checked: 2021-08-31
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
@@ -2208,14 +2208,14 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Frühjahr 2021)
 #: source_id: 2147346610
 #: source_id: viz2021:13.425912,52.514912,29.06.2021,07:00 (Sanierungsarbeiten bis 2.8.2021)
-#: XXX wird hier noch was geändert (Benutzungspflicht, permanente Poller ...)? vvv
+#: XXX Benutzungspflicht prüfen vvv
 #: last_checked: 2021-08-12 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2021-08-17 vvv
 # REMOVED (Popup-Radweg hier wurde mittlerweile entfernt) ---	RW3; 12028,12519 12006,12464
 #: osm_watch: way id="284761029" version="18"
 Radspur hinter den parkenden Autos	RW3; 12006,12464 11920,12266
-mit provisorischen Baken	RW3; 11920,12266 11872,12185 11764,12001
+	RW3; 11920,12266 11872,12185 11764,12001
 	RW4; 11764,12001 11872,12185
 #: osm_watch: way id="4616518" version="30"
 Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
@@ -5420,7 +5420,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by ^^^
 # 
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2021-08-21 (daf) vvv
+#: last_checked: 2021-08-31 vvv
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9141,12320 9131,12438 9121,12514
 #: XXX früher RW3, zurzeit durch Gelbmarkierung (Kreuze) ungültig gemacht

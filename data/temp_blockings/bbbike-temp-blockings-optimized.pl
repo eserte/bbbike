@@ -3989,7 +3989,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-08-12
+#: last_checked: 2021-08-31
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4996,14 +4996,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?
-#: note: 2021-07-26 ("Radfahrer frei"-Schilder fehlen weiterhin, aber manchmal scheint man auf dem noch existierenden Radstreifen gut durchzukommen)
-#: last_checked: 2021-07-26
+#: note: 2021-07-26 ("Radfahrer frei"-Schilder fehlen weiterhin, aber manchmal scheint man auf dem noch existierenden Radstreifen gut durchzukommen), ebenso: 2021-08-31
+#: last_checked: 2021-08-31
 	q4::inwork; 9195,11972 9207,11880
 # REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
 ',
          'from' => undef,
          'id' => 3360,
-         'text' => 'Glinkastr.: zwischen Jägerstr. und Mohrenstr. Einbahnstraßenregelung, Richtung Süden gesperrt, auch für Radfahrer',
+         'text' => 'Glinkastr.: zwischen Jägerstr. und Mohrenstr. Richtung Süden offiziell Einbahnstraßenregelung für alle, es existiert aber eine Radspur',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5595,16 +5595,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1631916000
        },
-       {
-         'data' => '	2::inwork 26237,40190 28199,39134 28967,38692
-',
-         'from' => 1629957600,
-         'id' => 3433,
-         'source_id' => '316001662',
-         'text' => 'Biesenthal: Sperrung des Bahnüberganges, evtl. sind auch Radfahrer betroffen, 27.08.2021 08:00 Uhr bis 31.08.2021 06:00 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1630382400
-       },
+       undef,
        {
          'data' => '	q4::inwork 6552,8281 6560,8219
 ',

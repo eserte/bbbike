@@ -3411,7 +3411,7 @@ Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708
 #: source_id: IM_020714
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-08-21 (daf)
+#: last_checked: 2021-08-31
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
@@ -3610,7 +3610,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-07-24
+#: last_checked: 2021-08-31
 #: check_frequency: 60d
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833
 # 
@@ -3851,7 +3851,7 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2021-07-26 vvv
+#: last_checked: 2021-08-31 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -3881,11 +3881,11 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2021-07-26
+#: last_checked: 2021-08-31
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
-#: last_checked: 2021-08-02
+#: last_checked: 2021-08-31
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: osm_watch: way id="496270260" version="6" brb
@@ -4200,19 +4200,14 @@ Bergiusstr.: wegen Bauarbeiten an der BAB100 gesperrt, vielleicht sogar dauerhaf
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 # 
 # REMOVED --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- 
-#: next_check_id: MUSEUMSINSEL-2020
-#: next_check_id: ZEUGHAUS-2014
-#: source_id: LMS-BR_r_LMS-BR_44
-#: last_checked: 2021-08-12 vvv
-#: check_frequency: 14d vvv
+# REMOVED --- #: next_check_id: MUSEUMSINSEL-2020 --- #: next_check_id: ZEUGHAUS-2014 --- #: source_id: LMS-BR_r_LMS-BR_44 --- #: last_checked: 2021-08-12 vvv --- #: check_frequency: 14d vvv
 # REMOVED --- Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 # REMOVED --- #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden!
 # REMOVED --- Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
 # REMOVED --- Niederlagstr.: Durchfahrt gesperrt	2::inwork 9934,12420 9943,12364
 # REMOVED --- Niederlagstr. - Unter den Linden: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9943,12364 9934,12420 9984,12426
-Hinter dem Gießhaus: Durchfahrt zu Unter den Linden gesperrt	2::inwork 9846,12516 9858,12410
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (mittlerweile kann man durchkommen) --- Hinter dem Gießhaus: Durchfahrt zu Unter den Linden gesperrt	2::inwork 9846,12516 9858,12410
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 # REMOVED (offen) --- #: next_check_id: CHARITE-2014 --- #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein --- #: last_checked: 2016-11-22 --- #: check_frequency: 30d --- An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8665,13353 8736,13369 8806,13384
 # REMOVED (existiert hier wohl nicht mehr) --- #: last_checked: 2014-03-01 --- #: check_frequency: 100d --- Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094

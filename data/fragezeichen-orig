@@ -241,7 +241,7 @@ Möckernstr.: Richtung Süden entstehen geschützte Radspuren	?::projected 8810,103
 # REMOVED (-> radwege-orig) --- #: last_checked: 2020-04-14 vvv --- #: check_frequency: 60d vvv --- # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 --- #: osm_watch: way id="30705170" version="23" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280 --- #: osm_watch: way id="335487060" version="4" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork; 9865,10227 9948,10280 9873,10285 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2021-08-12
+#: last_checked: 2021-08-31
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -3360,6 +3360,8 @@ Lehderstr.: gibt es wegen der Umleitungsstrecke hier eine Einbahnstraßenregelung
 #: by: https://viz.berlin.de/2021/08/umbau-molkenmarkt/ (Umstellung ab 1.9.2021)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1120689.php (Fertigstellung: Mitte 2024)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/ein-jahr-lang-bauarbeiten_a320747
+#: by: https://abendblatt-berlin.de/2021/08/31/berlin-mitte-an-der-stralauer-strasse-droht-dauerstau/
+#: by: https://molkenmarkt.berlin.de/webcam/ (Webcam)
 #: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00
 #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
 #: priority: #A
@@ -4417,7 +4419,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2021-08-12
+#: last_checked: 2021-08-31
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -4463,7 +4465,7 @@ Hannah-Arendt-Str./Gertrud-Kolmar-Str.: Zebrastreifen geplant	?::projected 8747,
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2023)
 #: XXX mittlerweile existiert hier eine Baustellenampel wegen der Hochbauarbeiten
 #: priority: #D
-#: last_checked: 2021-08-17 (mapillary)
+#: last_checked: 2021-08-31
 #: check_frequency: 180d
 #: next_check: 2023-12-31
 Fischerinsel nördl. der Roßstraßenbrücke: Zebrastreifen geplant	?::projected 10645,11867 10604,11941 10679,11898
@@ -5645,7 +5647,7 @@ Friedrich-Wilhelm-Platz: Radstreifen	?::projected 5352,7428 5364,7330 5397,7205
 Mauerweg: Untertunnelung der Dresdener Bahn	?::projected 10460,-3199 10687,-3270
 # 
 #: by: https://api.fixmyberlin.de/api/projects/52
-#: last_checked: 2021-08-12
+#: last_checked: 2021-08-31
 #: check_frequency: 90d
 Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
@@ -5970,7 +5972,7 @@ Hohenzollernring: Radwege werden neu gemacht	?::projected -3721,14495 -3835,1466
 Buckower Chaussee: Straße wird gesperrt, Neubau einer Brücke	?::projected 9069,506 9158,551 9178,556 9250,576
 # 
 #: by: https://viz.berlin.de/2021/07/spittelmarkt/
-#: last_checked: 2021-08-12
+#: last_checked: 2021-08-31
 # REMOVED --- #: next_check: 2021-07-29
 Niederwallstr.: Anbindung an den Spittelmarkt soll dauerhaft gesperrt werden --- auch für Radfahrer?	?::projected 10238,11741 10205,11758
 # 
@@ -5991,6 +5993,7 @@ Berliner Str. (Pankow): Grünbeschichtung geplant	?::projected 10680,18380 10718,
 #: by: https://mein.berlin.de/projekte/krausenstrasse-zwischen-friedrichstrasse-und-axel-/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/in-der-krausenstrasse-fallen-ersatzlos-alle-parkplaetze-weg_a318782
 #: XXX wird es Änderungen für den Radverkehr geben?
+#: last_checked: 2021-08-31
 #: next_check: 2022-12-31
 Krausenstr.: Erneuerung geplant	?::projected 10176,11593 10001,11577 9925,11568 9737,11546 9711,11543 9581,11523 9456,11513
 # 
@@ -5998,6 +6001,10 @@ Krausenstr.: Erneuerung geplant	?::projected 10176,11593 10001,11577 9925,11568 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/2021_08_30-bauschild-neugestaltung-roedeliusplatz.pdf
 #: next_check: 2021-09-01
 Roedeliusplatz: Asphaltierung geplant	?::projected 16159,12301 16227,12280 16276,12273
+# 
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1121453.php (Bebauungsplan 4-62)
+#: next_check: 2023-08-01
+Uferweg an der Spree: soll hier entstehen	?::projected 5523,12231 5405,12292
 # 
 #: ignore ^^^
 # 
@@ -7537,6 +7544,24 @@ Bernau: Straße (geplante Ortsumfahrung) wird neu gebaut	?::inwork 22287,29890 22
 #: by: https://mein.berlin.de/projekte/marzahner-knoten/ (Beginn der Bauarbeiten Ende 2022)
 #: next_check: 2022-12-31
 Knoten Marzahn: Neubau geplant	?::projected 19467,15045 19633,15098
+# 
+#: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-106-erneut/index.shtml
+#: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-106-erneut/download/1-106_planzeichnung.pdf
+#: XXX im Zuge des Bebauungsplans 1-106 (Moabiter Werder)
+#: next_check: 2023-01-01
+Bundeskanzleramt: hier wird eine Brücke "für die Allgemeinheit" entstehen --- auch für Radfahrer nutzbar?	?::projected 7662,12624 7745,12625
+# 
+#: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/bebauungsplan.1110112.php
+#: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/planzeichnung-bebauungsplanentwurf-11-173.pdf
+#: XXX im Zuge des Bebauungsplans 11-173
+#: next_check: 2023-01-01
+Köpenicker Allee 146-162: Wohngebiet geplant, Wege werden entstehen	?::projected 19464,8627 19552,8437 19793,8566 19700,8731 19464,8627
+# 
+#: by: https://mein.berlin.de/projekte/trabrennbahn-karlshorst/
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1121384.php
+#: XXX Bebauungsplan existiert wohl noch nicht
+#: next_check: 2023-08-01
+Trabrennbahn Karlshorst: Wohngebiet geplant, werden hier auch neue Straßen entstehen?	?::projected 18598,7984 18460,7777 18892,7197 19013,7427 18598,7984
 # 
 #: ignore ^^^
 #: section ^^^

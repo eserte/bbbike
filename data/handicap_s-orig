@@ -198,7 +198,7 @@ Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2021-07-31 (mapillary) vvv
+#: last_checked: 2021-08-31 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -231,7 +231,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-07-26
+#: last_checked: 2021-08-31 (webcam)
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2021-08-24 (mapillary)
@@ -342,7 +342,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2021-08-12 vvv
+#: last_checked: 2021-08-31 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -469,14 +469,15 @@ Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 #: by: https://www.kondorwessels.com/referenzen/pulse-berlin/
 #: source_id: 2147341145 (ausgelaufen)
 #: source_id: LMS-BR_r_LMS-BR_93387 (ausgelaufen)
+#: source_id: viz2021:13.38359,52.50342,31.08.2021,10:25 (bis 30.9.2022 (!))
 #: osm_watch: way id="563341816" version="7"
-#: XXX laut vmz bis Anfang 2019, laut rbb bis 31.08.2021
+#: XXX laut rbb bis 31.09.2022 (sic!)
 #: by: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
 #: also_indoor: traffic (H)
 #: last_checked: 2021-05-30 (daf)
-#: check_frequency: 90d
-#: next_check: 2021-08-31
-# REMOVED --- #: valid: -20210831
+#: check_frequency: 120d
+#: next_check: 2022-09-30
+#: valid: -20220930
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q3+::inwork; 9022,10857 8941,10663 8926,10626
 # 
 # REMOVED --- #: source_id: 2147341141 --- #: source_id: LMS-BR_r_LMS-BR_93355 --- #: XXX laut vmz bis Mitte Mai 2017, laut fritz bis 19. Mai 2017 --- #: last_checked: 2017-05-19 --- Neuenburger Str.: Bauarbeiten, Sperrung der Fahrbahn	q2::inwork 10178,10411 9955,10501
@@ -675,7 +676,7 @@ S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork
 # 
 # REMOVED (kein Zweirichtungsradweg mehr) --- #: next_check_id: RHINSTRASSENBRUECKE-2018 --- #: last_checked: 2021-05-03 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2021-07-30 vvv --- Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig	q2::inwork; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123 --- Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig, langer Umweg an der Seddiner Str.	q3::inwork; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: XXX laut rbb und Halteverbotsschildern bis 31.08.2021
+#: XXX laut rbb (am 31.8.2021 entfernt) und Halteverbotsschildern bis 31.08.2021
 #: also_indoor: traffic (H)
 #: priority: #B
 #: last_checked: 2021-08-29
