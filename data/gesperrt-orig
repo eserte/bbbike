@@ -233,7 +233,7 @@ Quickborner Str.	1s:q4 8016,21499 8078,21415 8162,21302
 #: by: Jessaï Arakelian
 #: confirmed_by: srt
 Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
-Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
+# REMOVED --- Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
 Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
 Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751
 Grimmstr.	1 11089,9751 11136,9851 11164,9885
@@ -842,9 +842,12 @@ Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5331,8012 5304,8088 5304,8144 5354,8
 Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7915 5346,7860
 #: note ^^^
 #: note: Mittelstreifen mit teilweise dichter Beparkung, sehr breite Straße, Straßentunnel vvv
-Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10878,12560 10805,12468 10738,12364
-Grunerstr. (Richtungsfahrbahn)	1::igndisp 10738,12364 10803,12470 10876,12563 10953,12638 11055,12717 11105,12764
-Grunerstr. (Mittelstreifen)	3nocross::ignrte 11105,12764 11055,12717 10953,12638 10876,12563 10803,12470 10738,12364
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10878,12560 10804,12461
+# REMOVED --- Grunerstr. (Richtungsfahrbahn)	1::igndisp 10804,12461 10738,12364
+# REMOVED --- Grunerstr. (Richtungsfahrbahn)	1::igndisp 10738,12364 10804,12461
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 10804,12461 10876,12563 10953,12638 11055,12717 11105,12764
+Grunerstr. (Mittelstreifen)	3nocross::ignrte 11105,12764 11055,12717 10953,12638 10876,12563 10804,12461
+# REMOVED --- Grunerstr. (Mittelstreifen)	3nocross::ignrte 10804,12461 10738,12364
 Dircksenstr. (Mittelstreifen/Straßentunnel)	2::igndisp 11057,12715 11055,12717
 #: note ^^^
 #: note: Gitter auf Mittelstreifen vvv
@@ -2575,6 +2578,8 @@ tragen (Treppe, 22 Stufen)	0:30 26337,-11817
 tragen (Treppe, 47 Stufen, mit Führungsrampe für Fahrräder)	0:60 8376,8813
 #: note: oder "wilde" Rampe benutzen (steil!)
 tragen (Treppe, 16 Stufen)	0:25 22104,11925
+#: by: osm, mapillary
+tragen (Treppe, 2x6 Stufen)	0:25 15023,13800
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
@@ -3633,9 +3638,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
-#: last_checked: 2021-07-26
-#: check_frequency: 60d
-Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
+# REMOVED --- #: last_checked: 2021-07-26 --- #: check_frequency: 60d --- Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10804,12461 10804,12461
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9747
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erwähnt)
@@ -3691,8 +3694,24 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.berliner-woche.de/mitte/c-bauen/senat-lobt-verfahren-aus_a311991
 #: by: https://www.berliner-woche.de/mitte/c-bauen/infoveranstaltung-zum-molkenmarkt_a319166
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2021-08-20 (mapillary)
+#: last_checked: 2021-09-01
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
+# 
+#: next_check_id: MOLKENMARKT-2021
+#: by: https://viz.berlin.de/2021/08/umbau-molkenmarkt/ (Umstellung ab 1.9.2021)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1120689.php (Fertigstellung: Mitte 2024)
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/ein-jahr-lang-bauarbeiten_a320747
+#: by: https://abendblatt-berlin.de/2021/08/31/berlin-mitte-an-der-stralauer-strasse-droht-dauerstau/
+#: by: https://molkenmarkt.berlin.de/webcam/ (Webcam)
+#: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00
+#: note: laut rbb nur bis 31.08.2022
+# REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
+#: last_checked: 2021-09-01 vvv
+#: next_check: 2024-06-01 vvv
+Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
+(Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	2::inwork 10736,12285 10772,12288
+#: next_check ^^^
+#: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
 # 
@@ -4227,7 +4246,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraus
 # 
 #: next_check_id: BER-20XX
 #: XXX möglicherweise bleibt das noch erhalten, solange es Terminal 5 gibt? Es gibt aber Kartenwerke (Pharus, Falk), bei denen die Jürgen-Schumann-Allee durchgängig ist
-#: last_checked: 2021-03-06 (mapillary)
+#: last_checked: 2021-08-13 (mapillary)
 # REMOVED --- #: next_check: 2020-10-31
 #: check_frequency: 180d
 # REMOVED (entfernt) --- #: osm_watch: way id="127091100" version="14" brb

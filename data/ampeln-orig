@@ -8,6 +8,17 @@
 #: temporary vvv
 # 
 # 
+#: next_check_id: MOLKENMARKT-2021
+#: last_checked: 2021-09-01
+#: next_check: 2024-06-01
+Grunerstr./Jüdenstr.	X::inwork 10804,12461
+# 
+#: next_check_id: BERLINERALLEE-2021
+#: last_checked: 2021-09-01
+#: next_check: 2021-10-11
+#: valid: -20211011
+Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
+# 
 #: next_check_id: GAERTNER-2021
 #: last_checked: 2021-08-30
 # REMOVED (nicht mehr) --- Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775
@@ -18,8 +29,8 @@ Grünberger Str.	F::inwork 14272,11775
 #: source_id: viz2021:13.478302,52.506695,06.07.2021,08:00 (mittlerweile bis 3.9.2021) vvv
 #: last_checked: 2021-08-09 vvv
 #: valid: -20210903 vvv
-Hauffstr.: Gegenverkehrsregelung	?::inwork 15458,11306
-Schulze-Boysen-Str.: Gegenverkehrsregelung	?::inwork 15477,11338
+Hauffstr.: Gegenverkehrsregelung	X::inwork 15458,11306
+Schulze-Boysen-Str.: Gegenverkehrsregelung	X::inwork 15477,11338
 #: valid ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -2692,7 +2703,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 4943,2557
 #: by: http://www.panoramio.com/photo/19637886
 	F 5471,2470
-	F 10736,12285
+# REMOVED (wird vermutlich dauerhaft entfernt) ---	F 10736,12285
 #: XXX_prog: die genaue Position ist südlich der Einmündung, aber querende Radfahrer müssen die Ampel immer nehmen
 	F 13603,11538
 #: note: Anforderungsampel
@@ -4125,7 +4136,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 18423,-843
 #: next_check_id: BER-20XX vvv
 #: XXX: Ampel noch ausgeschaltet, wird wahrscheinlich mit BER in Betrieb gehen vvv
-#: last_checked: 2021-03-06 (mapillary) (in der Jürgen-Schumann-Allee gesehen) vvv
+#: last_checked: 2021-08-13 (mapillary) (in der Jürgen-Schumann-Allee gesehen) vvv
 #: check_frequency: 180d vvv
 	X0 19909,-2863
 	F0 18517,-4502

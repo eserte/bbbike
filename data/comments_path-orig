@@ -81,7 +81,7 @@ Neue Bahnhofstr./Boxhagener Str.: Fußgängerampel auf der linken Seite benutzen	C
 #: XXX eventuell wird es hier in Zukunft Verbesserungen geben, siehe BVV-Beschluss
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3277&options=4
 #: source_id: IM_022413
-#: last_checked: 2021-08-25 (mapillary)
+#: last_checked: 2021-09-01
 #: check_frequency: 90d
 Rennbahnstr./Bernkasteler Str.: Fußgängerampel auf der linken Seite zum Überqueren der Berliner Allee benutzen	CP; 14528,16910 14558,16907 14673,16895
 # 
@@ -713,3 +713,10 @@ Martin-Hoffmann-Str. - An den Treptowers: zum Linksabbiegen die linke Fußgängera
 # 
 Ernst-Ruska-Ufer - Albert-Einstein-Str.: unbequemes Überqueren des Ernst-Ruska-Ufers, ggfs. bereits an der Ampel Wegedornstr. auf die linke Seite wechseln	PI; 18929,2454 19091,2443 19094,2495
 # 
+#: next_check_id: MOLKENMARKT-2021
+#: last_checked: 2021-09-01 vvv
+#: next_check: 2024-06-01 vvv
+Jüdenstr.: zum Überqueren der Grunerstr. Fußgängerampel rechts benutzen	CP; 10831,12371 10804,12461 10772,12515
+Grunerstr. - Jüdenstr.: zum Überqueren der Grunerstr. Fußgängerampel benutzen	CP; 10738,12364 10804,12461 10772,12515
+#: next_check ^^^
+#: last_checked ^^^

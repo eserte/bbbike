@@ -1416,37 +1416,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf
-	2::temp 8424,12853 8503,12895
-	2::temp 7930,12912 8021,12832
-# REMOVED (Adele-Schreiber-Krieger-Str.) ---	2::temp 8737,12757 8596,12760 8545,12760
-# REMOVED (westl. John-Foster-Dulles-Allee) ---	2::temp 7514,12387 7627,12380 7821,12367 7875,12363
-östl. John-Foster-Dulles-Allee	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-# REMOVED (Schiffbauerdamm) ---	2::temp 8514,12877 8545,12760
-östl. Straße des 17. Juni	2::temp 8775,12457 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150
-# REMOVED (westl. Straße des 17. Juni) ---	2::temp 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8595,12066 8600,12165 8538,12245
-Große Querallee	2::temp 7816,12150 7822,12201 7875,12363 7945,12592
-südl. Spreeuferweg	2::temp 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
-Paul-Löbe-Allee und Verlängerungen	2::temp 7710,12585 7741,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8596,12576
-Yitzhak-Rabin-Str. bis Gustav-Heinemann-Brücke	2::temp 8120,12756 8122,12603 8119,12414 8055,12186 8119,12414 8122,12603 8120,12756 8114,12839 8115,12912 8116,12938 8110,13042
-nördl. Wilhelmstr.	2::temp 8775,12457 8766,12541
-Willy-Brandt-Str. - Konrad-Adenauer-Str.	2::temp 8021,12832 8030,12824 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853
-Platz des 18. März	2::temp 8538,12245 8592,12252
-	2::temp 8252,12757 8115,12912
-	2::temp 8344,12221 8391,12389 8400,12417
-	2::temp 8546,12279 8391,12389 8354,12416
-	2::temp 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414
-	2::temp 8309,12758 8415,12749 8593,12742
-',
-         'from' => 1630360800,
-         'id' => 1422,
-         'text' => 'Straße des 17. Juni und Straßen im Regierungsviertel am 31. August 2021 von 14 bis 23 Uhr gesperrt (Großer Zapfenstreich)',
-         'type' => 'gesperrt',
-         'until' => 1630443600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2173,7 +2143,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-07-26
+#: last_checked: 2021-09-01
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -2472,7 +2442,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2977,18 +2947,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.berlin.de/ba-mitte/buergerdienste/parkraumbewirtschaftung.html (Zone 3)
-#: XXX_prog: tempex-Ausdruck?
-	2::temp::igndisp 10805,12468 10803,12470
-',
-         'from' => undef,
-         'id' => 2396,
-         'recurring' => 1,
-         'text' => 'Jüdenstr.: das Überqueren der Grunerstr. ist insbesondere außerhalb der Parkbewirtschaftungszeiten (abends, am Wochenende) sehr unbequem (eng parkende Autos)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3940,7 +3899,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht\'s nur auf dem Gehweg weiter
 #: also_indoor: traffic (G)
 #: priority: #B
-#: last_checked: 2021-07-31
+#: last_checked: 2021-09-01
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-03-26
 	q3::inwork 13391,16436 13630,16629
@@ -4554,7 +4513,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX Stand 2021-07-31: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2021-07-31
+#: last_checked: 2021-09-01
 #: check_frequency: 30d
 	q3::inwork 14136,17170 13996,16959
 ',
@@ -5059,21 +5018,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/saison-startet_a311283 (und die anderen neuen Spielstraßen in FH-KB)
-#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen
-#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen/kieze
-#: XXX wird diese Spielstraße verstetigt?
-#: next_check: 2022-05-24
-	q4::temp::play 14798,12502 15005,12443
-',
-         'from' => 1622412000,
-         'id' => 3367,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
-         'text' => 'Bänschstr.: Spielstraße sonntags von 15 bis 18 Uhr, 1. Juni 2021 bis 31. August 2021, außer in den Sommerferien',
-         'type' => 'handicap',
-         'until' => 1630447199
-       },
+       undef,
        {
          'data' => '#: XXX wird diese Spielstraße verstetigt?
 #: last_checked: 2021-05-13
@@ -5149,8 +5094,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1633039199
        },
        {
-         'data' => '#: source_id: viz2021:13.454427,52.549049,23.08.2021,07:00
-#: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer? Wurden temporäre Ampeln aufgestellt? vvv
+         'data' => '#: next_check_id: BERLINERALLEE-2021
+#: source_id: viz2021:13.454427,52.549049,23.08.2021,07:00
+#: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer? vvv
 #: note: laut rbb kann der Radverkehr den Sperrbereich passieren
 #: also_indoor: traffic
 #: next_check: 2021-08-23 vvv
@@ -5160,6 +5106,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED (Umleitung anscheinend via Lehderstr.) ---	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
 #: next_check ^^^
 #: add_fragezeichen ^^^
+Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
 ',
          'from' => 1629644400,
          'id' => 3374,
@@ -5369,7 +5316,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: FRANKFURTER-2021
-#: last_checked: 2021-08-07 vvv
+#: last_checked: 2021-09-01 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-09-13 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -5506,8 +5453,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021)
-#: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt
-#: last_checked: 2021-07-31
+#: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
+#: last_checked: 2021-09-01
 #: check_frequency: 30d
 #: next_check: 2021-10-31
 	q3::inwork 13057,14267 13158,14117
@@ -5521,7 +5468,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        {
-         'data' => '	q4::inwork 2793,22640 2652,22615 2556,22598
+         'data' => '#: note: laut rbb nur bis 5.10.2021 (erste Phase?)
+	q4::inwork 2793,22640 2652,22615 2556,22598
 ',
          'from' => 1630360800,
          'id' => 3426,
@@ -5639,17 +5587,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
+       undef,
        {
-         'data' => '#: next_check_id: MOLKENMARKT-2021
-	2::inwork 10804,12291 10738,12364
-	2::inwork 10675,12280 10736,12285 10772,12288
+         'data' => '#: by: https://www.mobil-potsdam.de/fileadmin/user_upload/Informationen_Umleitungsplaene_Baumassnahme_Behlertstrasse.pdf
+	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
 ',
-         'from' => 1630382400,
-         'id' => 3437,
-         'source_id' => 'viz2021:13.409118,52.51693,01.09.2021,06:00',
-         'text' => 'Stralauer Str. (Molkenmarkt): Straße zwischen Jüdenstr. und Grunerstr. gesperrt, vom 01.09.2021 06:00 bis 31.08.2022 17:00 ',
-         'type' => 'gesperrt',
-         'until' => 1661983200
+         'from' => 1630476021,
+         'id' => 3438,
+         'source_id' => 'https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/',
+         'text' => 'Behlertstr.: Bauarbeiten, Sperrung der Fahrbahn, bis Ende 2022',
+         'type' => 'handicap',
+         'until' => 1672527599
        }
      
 );

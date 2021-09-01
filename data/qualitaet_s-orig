@@ -1522,7 +1522,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4680 (Planung ab 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5720 (Prüfung einer Glättung des Kopfsteinpflasters)
 #: by: http://www.infravelo.de/projekt/hufelandstrasse/ ("erschütterungsarmer Belag", Bauzeitraum 1. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 3. Quartal 2022 - 2. Quartal 2023)
-#: last_checked: 2021-06-14
+#: last_checked: 2021-09-01
 #: check_frequency: 210d
 #: next_check: 2023-06-30
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
@@ -1778,6 +1778,9 @@ Spreeufer: wassergebundene Decke	Q1 9707,12974 9557,12992
 (Park am Fennpfuhl): Beton	Q0- 15179,13872 15153,13931
 (Park am Fennpfuhl): Verbundsteinpflaster	Q1 15153,13931 15118,13961 15089,13990 15054,14056
 (Park am Fennpfuhl - Paul-Junius-Str./Weißenseer Weg): Beton	Q0- 15323,13777 15337,13761 15425,13739 15455,13733
+(Bernhard-Bästlein-Str. - Park am Fennpfuhl): Verbundsteinpflaster	Q1 15354,13998 15267,13967 15254,13899
+(Park am Fennpfuhlpark - Anton-Saefkow-Platz): Beton	Q0- 15179,13872 15062,13827
+Anton-Saefkow-Platz: glatte Pflasterung	Q0- 15062,13827 15034,13814 15010,13807 14989,13815 14846,13760 14821,13674
 #: note: kann aber nach Regenfällen relativ matschig sein vvv
 (NSG Fauler See): Waldweg	Q2+ 15918,16383 15965,16482 15990,16479 16091,16523 16107,16586 16138,16605 16172,16686 16239,16737 16303,16816 16369,16821 16353,16900 16381,16969
 (NSG Fauler See): Waldweg	Q2+ 15990,16479 16359,16387 16424,16539 16477,16612 16488,16668 16483,16722 16434,16784 16369,16821
@@ -4261,7 +4264,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 (Oberseestr. - Gertrudstr.): glattes Kopfsteinpflaster	Q2+ 15894,16096 15869,16078
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/sanierung-mit-bundesmitteln_a250258
 #: XXX wird hier saniert?
-#: last_checked: 2021-05-15
+#: last_checked: 2021-09-01
 #: check_frequency: 90d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15665,15765
@@ -8106,13 +8109,13 @@ Uhuweg: Beton	Q0 14204,3029 14072,3108
 (Parchimer Allee - Am Teltowkanal): Gehwegplatten	Q1 14422,4787 14555,4976 14562,4985
 (Delfter Ufer - Späthstr.): Asphalt	Q0 14340,5406 14323,5395 14347,5273 14300,5236
 Fritz-Lesch-Str.: Asphalt	Q0 14843,15007 14922,15082
-Fritz-Lesch-Str.: Beton	Q0- 14922,15082 15085,15271
-Fritz-Lesch-Str.: Beton	Q1 15085,15271 15081,15353
-Fritz-Lesch-Str.: Beton	Q0- 15081,15353 15143,15431
+Fritz-Lesch-Str.: Beton	Q0- 14922,15082 15092,15276
+Fritz-Lesch-Str.: Beton	Q1 15092,15276 15073,15332
+Fritz-Lesch-Str.: Beton	Q0- 15073,15332 15143,15431
 Fritz-Lesch-Str.: Verbundsteinpflaster	Q0- 15143,15431 15176,15473
 Fritz-Lesch-Str.: Beton	Q0- 15176,15473 15178,15502 15311,15679 15313,15848 15313,15858
 Hansastr. [Wohngebiet]: Beton	Q0- 15341,15912 15413,16007 15435,16063 15292,16167
-Zum Orankestrand: Schotterweg	Q1- 15435,16063 15479,16060
+Zum Orankestrand: Feinschotter	Q1 15435,16063 15479,16060
 Zum Hechtgraben: etwas unebener Asphalt	Q1 16210,18706 16198,18753 16163,18780 16158,19049 16104,19165
 (Darßer Str. - Malchower See): wassergebundene Decke	Q1- 15505,17967 15825,18385 15949,18555
 Am Malchower See: grobes Verbundsteinpflaster	Q1- 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16161,18687 16210,18706
@@ -9982,7 +9985,7 @@ In den Floragärten: Verbundsteinpflaster	Q1+ 9831,17652 9895,17649 9995,17642
 (Landsberger Allee - Zechliner Str.): überwiegend Verbundsteinpflaster	Q1 16590,14386 16544,14593
 Blockdammweg: Asphalt	Q0 17904,8924 17972,8968
 Blockdammweg: Asphalt mit Rissen	Q0- 17904,8924 17760,8853 17754,8863
-(Park am Fennpfuhl): Verbundsteinpflaster	Q1 15060,13735 15055,13768 15027,13801
+(Park am Fennpfuhl): Verbundsteinpflaster	Q1 15060,13735 15055,13768 15023,13800 15010,13807
 # 
 # REMOVED --- #: next_check_id: HANSAGARTEN-2019 --- #: XXX nach den Bauarbeiten zumindest teilweise asphaltiert vvv --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php --- #: last_checked: 2020-04-23 vvv # REMOVED --- #: next_check: 2020-02-01 vvv
 #: note: Asphaltstreifen, daneben wassergebundene Decke vvv
@@ -12654,6 +12657,7 @@ Erlenstr.: schlechtes Kopfsteinpflaster	Q3 4802,4921 4878,4839 4951,4920
 #: corrected_by: srt (guter Beton -> Verbundsteinpflaster)
 Hellersdorfer Promenade: Verbundsteinpflaster	Q1+ 24131,15109 24112,15236 24094,15360 24076,15481
 Neudammer Str.: Asphalt	Q0 24385,9948 24672,9889
+#: confirmed_by: srt
 Pistoriusplatz: guter Asphalt	Q0 13420,16235 13436,16239 13485,16362
 #: corrected_by: srt (Q0 -> Q1+)
 Pistoriusplatz: Asphalt mit einigen Rissen	Q1+ 13479,16182 13542,16337
@@ -15078,7 +15082,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="8"
-#: last_checked: 2021-07-06
+#: last_checked: 2021-09-01
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -16539,6 +16543,9 @@ Ottokarstr.: schlechtes Kopfsteinpflaster	Q3 8642,5422 8744,5483 8767,5571
 #: corrected_by: srt (genauer: unbefestigt; neuerdings asphaltiert)
 Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: corrected_by: srt (added "etwas sandig")
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1121547.php (Asphaltierung geplant)
+#: XXX wird hier asphaltiert?
+#: next_check: 2022-08-01
 Ernst-Liesegang-Ufer: wassergebundene Decke, etwas sandig	Q1- -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602
 #: confirmed_by: srt
 Ernst-Liesegang-Ufer: wassergebundene Decke	Q1 -5924,5602 -5911,5619 -5853,5674

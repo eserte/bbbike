@@ -12222,8 +12222,8 @@ EOF
 	2::inwork 23402,5483 23384,5541 23370,5589 23333,5710
 EOF
      },
-     { from  => $isodate2epoch->("2021-08-31 00:00:00"), # $isodate2epoch->("2019-11-11 08:00:00"), # 1216461600, # 2008-07-19 12:00
-       until => $isodate2epoch->("2021-08-31 23:00:00"), # $isodate2epoch->("2019-11-12 14:00:00"), # 1216584000, # 2008-07-20 22:00
+     { from  => $isodate2epoch->("2019-11-11 08:00:00"), # 1216461600, # 2008-07-19 12:00 # $isodate2epoch->("2021-08-31 00:00:00"), # 
+       until => $isodate2epoch->("2019-11-12 14:00:00"), # 1216584000, # 2008-07-20 22:00 # $isodate2epoch->("2021-08-31 23:00:00"), # 
        text  => 'Straße des 17. Juni und Straßen im Regierungsviertel am 31. August 2021 von 14 bis 23 Uhr gesperrt (Großer Zapfenstreich)', # früher: Feierliches Gelöbnis der Bundeswehr
        type  => 'gesperrt',
        data  => <<EOF,
@@ -16299,7 +16299,7 @@ EOF
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-07-26
+#: last_checked: 2021-09-01
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 EOF
@@ -21409,14 +21409,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1630521892, # undef, # XXX
        text  => 'Jüdenstr.: das Überqueren der Grunerstr. ist insbesondere außerhalb der Parkbewirtschaftungszeiten (abends, am Wochenende) sehr unbequem (eng parkende Autos)',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-mitte/buergerdienste/parkraumbewirtschaftung.html (Zone 3)
 #: XXX_prog: tempex-Ausdruck?
-	2::temp::igndisp 10805,12468 10803,12470
+	2::temp::igndisp 10804,12461
+# REMOVED --- 10804,12461
 EOF
      },
      { from  => 1351638000, # 2012-10-31 00:00
@@ -25542,10 +25543,10 @@ EOF
 	3 11712,12614 12006,12464 12118,12462
 	3 11845,12292 11920,12266 12081,12236
 	3 12081,12236 11920,12266 11845,12292
-	3 12081,12236 11920,12266 11872,12185 11764,12001
-	3 11764,12001 11872,12185 11920,12266 12081,12236
-	3 11845,12292 11920,12266 11872,12185 11764,12001
-	3 11764,12001 11872,12185 11920,12266 11845,12292
+	3 12081,12236 11920,12266 11872,12185 11809,12078 11764,12001
+	3 11764,12001 11809,12078 11872,12185 11920,12266 12081,12236
+	3 11845,12292 11920,12266 11872,12185 11809,12078 11764,12001
+	3 11764,12001 11809,12078 11872,12185 11920,12266 11845,12292
 	3 12039,12675 12064,12673 12146,12628
 	3 12146,12628 12064,12673 12039,12675
 	3 12146,12628 12064,12673 12112,12861
@@ -27851,7 +27852,7 @@ EOF
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
 #: also_indoor: traffic (G)
 #: priority: #B
-#: last_checked: 2021-07-31
+#: last_checked: 2021-09-01
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-03-26
 	q3::inwork 13391,16436 13630,16629
@@ -31189,7 +31190,7 @@ EOF
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX Stand 2021-07-31: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2021-07-31
+#: last_checked: 2021-09-01
 #: check_frequency: 30d
 	q3::inwork 14136,17170 13996,16959
 EOF
@@ -32705,8 +32706,9 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
        data  => <<EOF,
+#: next_check_id: BERLINERALLEE-2021
 #: source_id: viz2021:13.454427,52.549049,23.08.2021,07:00
-#: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer? Wurden temporäre Ampeln aufgestellt? vvv
+#: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer? vvv
 #: note: laut rbb kann der Radverkehr den Sperrbereich passieren
 #: also_indoor: traffic
 #: next_check: 2021-08-23 vvv
@@ -32716,6 +32718,7 @@ EOF
 # REMOVED (Umleitung anscheinend via Lehderstr.) ---	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
 #: next_check ^^^
 #: add_fragezeichen ^^^
+Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
 EOF
      },
      { from  => 1621144800, # 2021-05-16 08:00
@@ -33042,7 +33045,7 @@ EOF
        source_id => 'viz2021:13.471852,52.513916,22.06.2021,07:00',
        data  => <<EOF,
 #: next_check_id: FRANKFURTER-2021
-#: last_checked: 2021-08-07 vvv
+#: last_checked: 2021-09-01 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-09-13 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -33272,8 +33275,8 @@ EOF
        source_id => 'viz2021:13.444,52.53356,26.07.2021,08:18',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021)
-#: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt
-#: last_checked: 2021-07-31
+#: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
+#: last_checked: 2021-09-01
 #: check_frequency: 30d
 #: next_check: 2021-10-31
 	q3::inwork 13057,14267 13158,14117
@@ -33293,6 +33296,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1111853.php',
        data  => <<EOF,
+#: note: laut rbb nur bis 5.10.2021 (erste Phase?)
 	q4::inwork 2793,22640 2652,22615 2556,22598
 EOF
      },
@@ -33414,7 +33418,7 @@ EOF
 EOF
      },
      { from  => 1630382400, # 2021-08-31 06:00
-       until => 1661983200, # 2022-09-01 00:00
+       until => 1630522586, # -> gesperrt/handicap/... --- 1661983200, # 2022-09-01 00:00
        text  => 'Stralauer Str. (Molkenmarkt): Straße zwischen Jüdenstr. und Grunerstr. gesperrt, vom 01.09.2021 06:00 bis 31.08.2022 17:00 ',
        type  => 'gesperrt',
        source_id => 'viz2021:13.409118,52.51693,01.09.2021,06:00',
@@ -33422,6 +33426,16 @@ EOF
 #: next_check_id: MOLKENMARKT-2021
 	2::inwork 10804,12291 10738,12364
 	2::inwork 10675,12280 10736,12285 10772,12288
+EOF
+     },
+     { from  => 1630476021, # 2021-09-01 08:00
+       until => 1672527599, # 2022-12-31 23:59
+       text  => 'Behlertstr.: Bauarbeiten, Sperrung der Fahrbahn, bis Ende 2022',
+       type  => 'handicap',
+       source_id => 'https://www.mobil-potsdam.de/de/baustellen/baumassnahme-behlertstrasse/',
+       data  => <<EOF,
+#: by: https://www.mobil-potsdam.de/fileadmin/user_upload/Informationen_Umleitungsplaene_Baumassnahme_Behlertstrasse.pdf
+	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
 EOF
      },
     );

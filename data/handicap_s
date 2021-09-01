@@ -10,6 +10,8 @@ Oderstr.: Einbahnstraﬂenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraﬂe, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
+(Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285
+(Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10772,12288 10804,12291 10830,12279
 Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 8775,12457 8904,12489
@@ -1061,8 +1063,11 @@ Anna-Nemitz-Weg: Fuﬂg‰nger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15097,13621 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15118,13961 15089,13990 15054,14056
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15204,14087 15189,14027 15118,13961
 (Park am Fuﬂg‰nger): Fuﬂg‰nger, einige einzelne Stufen, per Rampe umfahrbar	q2 15256,14237 15204,14087
-(Park am Fennpfuhl): Fuﬂg‰nger	q1 15060,13735 15055,13768 15027,13801
+(Park am Fennpfuhl): Fuﬂg‰nger	q1 15060,13735 15055,13768 15023,13800 15010,13807
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Fuﬂg‰nger	q1 15179,13872 15192,13834 15181,13791 15144,13772 15094,13750 15060,13735 15035,13701 14995,13645
+(Bernhard-B‰stlein-Str. - Park am Fennpfuhl): Fuﬂg‰nger	q1 15354,13998 15267,13967 15254,13899
+(Park am Fennpfuhlpark - Anton-Saefkow-Platz): Fuﬂg‰nger	q1 15179,13872 15062,13827
+Anton-Saefkow-Platz: Fuﬂg‰ngerzone, Radfahrer frei	q2 15062,13827 15034,13814 15010,13807 14989,13815 14846,13760 14821,13674
 (Darﬂer Str. - Malchower See): Fuﬂg‰nger	q1 15505,17967 15825,18385 15949,18555
 Am Malchower See: Fuﬂg‰nger	q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16161,18687
 (Wartenberger Str. - Margaretenhˆhe): Gehweg, f¸r Radfahrer freigegeben	q0 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
@@ -2126,8 +2131,8 @@ Caligariplatz: Fuﬂg‰nger, ggfs. schieben	q3 12121,16317 12097,16263
 Gertrud-Hanna-Promenade: Fuﬂg‰nger, Bordsteine	q4 8548,7384 8603,7452
 Breslauer Platz/Lauterstr.: Fuﬂg‰ngerzone, Radfahrer frei	q3; 5810,7337 5817,7223
 Krautstr.: Fuﬂg‰ngerzone, Radfahrer frei	q3 12002,12008 12021,12066
+Waldeyerstr.: Fuﬂg‰ngerzone, Radfahrer frei	q2 15003,12241 15058,12329
 Mittelheide - S-Bhf. Hirschgarten: schmal, einige Fuﬂg‰nger	q2 24089,6144 24060,6059 23951,6063
-Waldeyerstr.: Fuﬂg‰nger, Radfahrer frei	q2 15003,12241 15058,12329
 Puschkinallee [Nebenstraﬂe]: Fuﬂg‰nger	q3 14152,9746 14196,9749
 (BouchÈstr. - Puschkinallee, Nebenstraﬂe): Fuﬂg‰nger	q3 13890,9894 13914,9910
 (Heino-Schmieden-Weg - Alt-Biesdorf): enge Rampe	q3 20831,11604 20840,11604 20830,11610
@@ -2139,6 +2144,8 @@ Bergmannstr.: Tempo 10	q3 9505,9306 9632,9280 9689,9266 9753,9252
 Niemannstr.: Bodenschwellen, allerdings nur f¸r Anh‰nger relevant	q0 14254,11377 14211,11229
 Helmerdingstr.: Bodenschwellen, allerdings nur f¸r Anh‰nger relevant	q0 14468,11203 14442,11101
 Matkowskystr.: Bodenschwellen, allerdings nur f¸r Anh‰nger relevant	q0 14531,11142 14513,11075
+Orankestrand: Fuﬂg‰nger, Radfahren offiziell verboten	q3 15479,16060 15592,16069 15664,16115 15731,16208
+Zum Orankestrand: schmal	q2 15435,16063 15479,16060
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3072,6 +3079,7 @@ Ludolfinger Platz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp;
 Sewanstr. - Balatonstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 17729,10331 17741,10386
 Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
+Soorstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 1861,11284 1884,11126
 Hˆnower Str.: tempor‰re Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 18735,9421 18765,9426 18846,9532
 F¸rstenberger Str.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 10472,14632 10320,14608
 Planckstr.: Einbahnstraﬂenregelung, offen Richtung S¸den: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9429,12728 9402,12792 9386,12833

@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: note: laut rbb bis 29.10.2021 vvv
-#: last_checked: 2021-08-29 vvv
+#: last_checked: 2021-09-01 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-10-29 vvv
 Jessnerstr.: Sperrung der Fahrbahn nˆrdlich der Oderstr.	q3::inwork 14946,11697 14986,11760
@@ -177,6 +177,14 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # 
 ### Mitte ###
 # 
+#: next_check_id: MOLKENMARKT-2021
+#: last_checked: 2021-09-01 vvv
+#: next_check: 2024-06-01 vvv
+(Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285
+(Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10772,12288 10804,12291 10830,12279
+#: next_check ^^^
+#: last_checked ^^^
+# 
 # REMOVED --- #: also_indoor: traffic --- #: last_checked: 2021-04-13 --- Singerstr.: Baustelle, etwa 50m Fahrbahn gesperrt	q2::inwork 11613,12408 11497,12463
 # 
 #: by: https://www.wbm.de/neubau-berlin/mitte/ifflandstrasse/ (Fertigstellung vsl. 01/2022)
@@ -231,7 +239,7 @@ Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-08-31 (webcam)
+#: last_checked: 2021-09-01
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2021-08-24 (mapillary)
@@ -679,9 +687,9 @@ S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork
 #: XXX laut rbb (am 31.8.2021 entfernt) und Halteverbotsschildern bis 31.08.2021
 #: also_indoor: traffic (H)
 #: priority: #B
-#: last_checked: 2021-08-29
+#: last_checked: 2021-09-01
 #: check_frequency: 30d
-#: next_check: 2021-08-31
+# REMOVED --- #: next_check: 2021-08-31
 # REMOVED --- #: valid: -20210831
 Wiesenweg: Sperrung unter der Br¸cke, Fahrbahn ist gesperrt, auf Gehweg ausweichen	q3::inwork 15055,11505 15126,11474 15162,11458
 # 
@@ -2184,8 +2192,11 @@ Anna-Nemitz-Weg: Fuﬂg‰nger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15097,13621 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15118,13961 15089,13990 15054,14056
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15204,14087 15189,14027 15118,13961
 (Park am Fuﬂg‰nger): Fuﬂg‰nger, einige einzelne Stufen, per Rampe umfahrbar	q2 15256,14237 15204,14087
-(Park am Fennpfuhl): Fuﬂg‰nger	q1 15060,13735 15055,13768 15027,13801
+(Park am Fennpfuhl): Fuﬂg‰nger	q1 15060,13735 15055,13768 15023,13800 15010,13807
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Fuﬂg‰nger	q1 15179,13872 15192,13834 15181,13791 15144,13772 15094,13750 15060,13735 15035,13701 14995,13645
+(Bernhard-B‰stlein-Str. - Park am Fennpfuhl): Fuﬂg‰nger	q1- 15354,13998 15267,13967 15254,13899
+(Park am Fennpfuhlpark - Anton-Saefkow-Platz): Fuﬂg‰nger	q1 15179,13872 15062,13827
+Anton-Saefkow-Platz: Fuﬂg‰ngerzone, Radfahrer frei	q2+ 15062,13827 15034,13814 15010,13807 14989,13815 14846,13760 14821,13674
 (Darﬂer Str. - Malchower See): Fuﬂg‰nger	q1 15505,17967 15825,18385 15949,18555
 Am Malchower See: Fuﬂg‰nger	q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16161,18687
 (Wartenberger Str. - Margaretenhˆhe): Gehweg, f¸r Radfahrer freigegeben	q0- 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
@@ -3586,8 +3597,8 @@ Breslauer Platz/Lauterstr.: Fuﬂg‰ngerzone, Radfahrer frei	q3; 5810,7337 5817,722
 # REMOVED (wurde gesplittet) --- #: osm_watch: way id="4616246" version="24" --- #: osm_watch: way id="950186030" version="1" --- #: XXX zurzeit stehen die Barrieren so, dass man auf den Gehweg ausweichen muss --- #: last_checked: 2021-05-28 --- #: check_frequency: 14d --- #: next_check: 2021-05-14
 #: note: Stadtmobiliar auf den Fahrbahn (B‰nke, Fahrradst‰nder)
 Krautstr.: Fuﬂg‰ngerzone, Radfahrer frei	q3 12002,12008 12021,12066
+Waldeyerstr.: Fuﬂg‰ngerzone, Radfahrer frei	q2 15003,12241 15058,12329
 Mittelheide - S-Bhf. Hirschgarten: schmal, einige Fuﬂg‰nger	q2 24089,6144 24060,6059 23951,6063
-Waldeyerstr.: Fuﬂg‰nger, Radfahrer frei	q2 15003,12241 15058,12329
 Puschkinallee [Nebenstraﬂe]: Fuﬂg‰nger	q3 14152,9746 14196,9749
 (BouchÈstr. - Puschkinallee, Nebenstraﬂe): Fuﬂg‰nger	q3 13890,9894 13914,9910
 (Heino-Schmieden-Weg - Alt-Biesdorf): enge Rampe	q3- 20831,11604 20840,11604 20830,11610
@@ -3603,6 +3614,8 @@ Niemannstr.: Bodenschwellen, allerdings nur f¸r Anh‰nger relevant	q0- 14254,1137
 Helmerdingstr.: Bodenschwellen, allerdings nur f¸r Anh‰nger relevant	q0- 14468,11203 14442,11101
 #: XXX_prog mit Anh‰nger aber ggfs. q2
 Matkowskystr.: Bodenschwellen, allerdings nur f¸r Anh‰nger relevant	q0- 14531,11142 14513,11075
+Orankestrand: Fuﬂg‰nger, Radfahren offiziell verboten	q3 15479,16060 15592,16069 15664,16115 15731,16208
+Zum Orankestrand: schmal	q2 15435,16063 15479,16060
 # 
 ######################### User Contributions #################################
 # 

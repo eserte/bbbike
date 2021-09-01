@@ -143,7 +143,6 @@ Dederingstr.	1 8455,2977 8476,3367
 Weserstr. (Friedrichshain)	1 14416,11815 14475,11778
 Quickborner Str.	1s 8016,21499 8078,21415 8162,21302
 Berliner Str. (Blankenfelde)	1 9490,23531 9437,23680 9415,23699
-Molkenmarkt - zur Stralauer Str.	1 10804,12291 10772,12288 10736,12285 10675,12280
 Herrfurthplatz	1 11647,7940 11653,7982 11689,8006 11731,7998 11754,7964 11748,7922 11713,7899 11671,7904 11647,7940
 Grimmstr.	1 11023,9597 11042,9642 11072,9711 11089,9751
 Grimmstr.	1 11089,9751 11136,9851 11164,9885
@@ -524,9 +523,9 @@ Torstr. (Richtungsfahrbahn)	1::igndisp 10898,13632 11117,13521 11160,13492
 Torstr. (Straßenbahntrasse)	3nocross::ignrte 11160,13492 11117,13521 10898,13632
 Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5331,8012 5304,8088 5304,8144 5354,8236
 Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7915 5346,7860
-Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10878,12560 10805,12468 10738,12364
-Grunerstr. (Richtungsfahrbahn)	1::igndisp 10738,12364 10803,12470 10876,12563 10953,12638 11055,12717 11105,12764
-Grunerstr. (Mittelstreifen)	3nocross::ignrte 11105,12764 11055,12717 10953,12638 10876,12563 10803,12470 10738,12364
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10878,12560 10804,12461
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 10804,12461 10876,12563 10953,12638 11055,12717 11105,12764
+Grunerstr. (Mittelstreifen)	3nocross::ignrte 11105,12764 11055,12717 10953,12638 10876,12563 10804,12461
 Dircksenstr. (Mittelstreifen/Straßentunnel)	2::igndisp 11057,12715 11055,12717
 Badstr. (Richtungsfahrbahn)	1::igndisp 8659,16327 8543,16364 8516,16393 8486,16425
 Badstr. (Richtungsfahrbahn)	1::igndisp 8486,16425 8518,16394 8544,16365 8659,16327
@@ -1176,6 +1175,7 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s 18377,9366 18
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s 14908,11231 14918,11249
+Soorstr.	1s 1861,11284 1884,11126
 Einkaufszentrum am Gesundbrunnen	1 9291,15740 9363,15738
 Mittelstreifen mit parkenden Autos	3nocross::ignrte 4507,11936 4596,11912 4653,11896
 Otto-Suhr-Allee -> Abbestr.: Mittelstreifen mit parkenden Autos	3::igndisp 4507,11936 4596,11912 4608,11935
@@ -2682,6 +2682,7 @@ tragen (Treppe)	0:120:-184 -14199,-707
 tragen (Treppe, 22 Stufen)	0:30:87 26337,-11817
 tragen (Treppe, 47 Stufen, mit Führungsrampe für Fahrräder)	0:60:8 8376,8813
 tragen (Treppe, 16 Stufen)	0:25:36 22104,11925
+tragen (Treppe, 2x6 Stufen)	0:25:-225 15023,13800
 Schranke	BNP:3:-130:trailer=10 18638,11479
 Schranke	BNP:10:-180:trailer=30 18965,11706
 Schranke	BNP:3:-164:trailer=10 17793,10382
@@ -3221,12 +3222,13 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9429,12728 9402,12792 9386,12833
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
-Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
 Henriette-Lustig-Str.: teilweise gesperrt	2::inwork 21375,4974 21380,5003
 Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
+Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
+(Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	2::inwork 10736,12285 10772,12288
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 Johannisstr.: Einbahnstraße	1s:inwork 9588,13174 9385,13174
 Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
