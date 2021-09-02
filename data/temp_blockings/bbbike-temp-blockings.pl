@@ -30781,7 +30781,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-08-30
+#: last_checked: 2021-09-02
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30998,7 +30998,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-08-30
+#: last_checked: 2021-09-02
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32504,19 +32504,21 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-04-18 00:00:00"), # 1618610400, # 2021-04-17 00:00
-       until => $isodate2epoch->("2021-09-05 18:00:00"), # 1640991599, # 2021-12-31 23:59
-       text  => 'Burgfrauenstr.: Bauarbeiten zwischen Hohefeldstr. und Olafstr., Fahrbahn gesperrt, vom 19.4.2021 bis 5.9.2021',
+       until => $isodate2epoch->("2021-09-10 18:00:00"), # 1640991599, # 2021-12-31 23:59
+       text  => 'Burgfrauenstr.: Bauarbeiten zwischen Hohefeldstr. und Olafstr., Fahrbahn gesperrt, vom 19.4.2021 bis 10.9.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1073307.php', # Gesamtmaßnahme bis Ende 2021
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/burgfrauenstrasse-ab-19-april-gesperrt_a306720
 #: source_id: 2147347107 (hier: bis 30.6.2021)
-#: source_id: viz2021:13.299346,52.626261,19.04.2021,07:00 (bis 5.9.2021)
+#: source_id: viz2021:13.299346,52.626261,19.04.2021,07:00 (bis 10.9.2021)
+#: source_id: viz2021:13.3053,52.62692,19.04.2021,07:00
 #: note: zwei Bauabschnitte: zunächst der westliche Abschnitt bis Olafstr. (inkl. Kreuzung), danach der östliche Abschnitt bis Berliner Str.
 #: priority: #A
-#: next_check: 2021-09-05
+#: next_check: 2021-09-10 vvv
 	q4::inwork 3022,24393 3225,24431 3425,24469
 	q3::inwork 3425,24469 3575,24498
+#: next_check ^^^
 # REMOVED (dieser Bereich folgt später) ---	q4::inwork 3575,24498 3712,24528 3842,24556
 EOF
      },
@@ -33283,10 +33285,13 @@ EOF
 EOF
      },
      { from  => 1627924220, # 2021-08-02 19:10
-       until => 1630101600, # 2021-08-28 00:00
-       text  => 'Rampe zum Anhalter Steg gesperrt, bis zum 27.8.2021',
+       until => undef, # 1630101600, # 2021-08-28 00:00
+       text  => 'Rampe zum Anhalter Steg gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: add_fragezeichen: Ist die Sperrung aufgehoben?
+#: last_checked: 2021-09-02
+#: check_frequency: 21d
 	2::inwork 8668,10219 8668,10236 8715,10314
 EOF
      },

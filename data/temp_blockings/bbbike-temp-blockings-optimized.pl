@@ -4397,7 +4397,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-08-30
+#: last_checked: 2021-09-02
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4455,7 +4455,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-08-30
+#: last_checked: 2021-09-02
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4936,20 +4936,22 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/burgfrauenstrasse-ab-19-april-gesperrt_a306720
 #: source_id: 2147347107 (hier: bis 30.6.2021)
-#: source_id: viz2021:13.299346,52.626261,19.04.2021,07:00 (bis 5.9.2021)
+#: source_id: viz2021:13.299346,52.626261,19.04.2021,07:00 (bis 10.9.2021)
+#: source_id: viz2021:13.3053,52.62692,19.04.2021,07:00
 #: note: zwei Bauabschnitte: zunächst der westliche Abschnitt bis Olafstr. (inkl. Kreuzung), danach der östliche Abschnitt bis Berliner Str.
 #: priority: #A
-#: next_check: 2021-09-05
+#: next_check: 2021-09-10 vvv
 	q4::inwork 3022,24393 3225,24431 3425,24469
 	q3::inwork 3425,24469 3575,24498
+#: next_check ^^^
 # REMOVED (dieser Bereich folgt später) ---	q4::inwork 3575,24498 3712,24528 3842,24556
 ',
          'from' => 1618696800,
          'id' => 3357,
          'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1073307.php',
-         'text' => 'Burgfrauenstr.: Bauarbeiten zwischen Hohefeldstr. und Olafstr., Fahrbahn gesperrt, vom 19.4.2021 bis 5.9.2021',
+         'text' => 'Burgfrauenstr.: Bauarbeiten zwischen Hohefeldstr. und Olafstr., Fahrbahn gesperrt, vom 19.4.2021 bis 10.9.2021',
          'type' => 'handicap',
-         'until' => 1630857600
+         'until' => 1631289600
        },
        undef,
        undef,
@@ -5302,18 +5304,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'until' => 1640991600
        },
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/hasselwerder-park-mit-neuen-wegen_a314970
-#: next_check_id: HASSELWERDERPARK-2021
-	2::inwork 18506,5596 18560,5539 18608,5501 18695,5453
-',
-         'from' => 1624744800,
-         'id' => 3403,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1100562.php',
-         'text' => 'Hasselwerderpark: Uferweg zwischen Rudower Str. und Britzer Str. gesperrt, vom 28.06.2021 bis voraussichtlich 01.09.2021',
-         'type' => 'gesperrt',
-         'until' => 1630533600
-       },
+       undef,
        {
          'data' => '#: next_check_id: FRANKFURTER-2021
 #: last_checked: 2021-09-01 vvv
@@ -5466,7 +5457,18 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'type' => 'handicap',
          'until' => 1635699600
        },
-       undef,
+       {
+         'data' => '#: add_fragezeichen: Ist die Sperrung aufgehoben?
+#: last_checked: 2021-09-02
+#: check_frequency: 21d
+	2::inwork 8668,10219 8668,10236 8715,10314
+',
+         'from' => 1627924220,
+         'id' => 3425,
+         'text' => 'Rampe zum Anhalter Steg gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        {
          'data' => '#: note: laut rbb nur bis 5.10.2021 (erste Phase?)
 	q4::inwork 2793,22640 2652,22615 2556,22598
