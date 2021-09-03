@@ -673,8 +673,14 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12
 # 
 ### Lichtenberg ###
 # 
+#: XXX bis wann dauern die Bauarbeiten an?
+#: also_indoor: traffic
+#: last_checked: 2021-09-03
+#: check_frequency: 14d
+Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q2::inwork; 15932,10830 15681,10801
+# 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/neue-vorstreckungen-ueberwege-mittelinseln-und-abgesenkte-bordsteine_a319370 (Erwähnung der Wege in der Grünanlage)
-#: last_checked: 2021-08-29 vvv
+#: last_checked: 2021-09-03 vvv
 #: check_frequency: 7d vvv
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16878,9875 16900,9861
@@ -2787,10 +2793,10 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="7"
-#: last_checked: 2021-07-30
-# REMOVED --- #: check_frequency: 120d
-#: next_check: 2021-09-02
-(Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
+#: last_checked: 2021-09-03
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2021-09-02
+(Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18634,5484 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
 Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
 (Weg im Wustrower Park): einige Fußgänger, eng	q2+ 17206,18332 17162,18304 17087,18434 17102,18490 17021,18663

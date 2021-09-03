@@ -4102,7 +4102,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
+#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
+#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
+#: osm_watch: way id="8655276" version="21"
+# REMOVED (ja) --- #: add_fragezeichen: Ist der Weg mittlerweile wieder offen? --- #: XXX laut osm wieder offen --- #: last_checked: 2019-08-24 --- #: next_check: 2019-09-28
+	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
+',
+         'from' => 1630670400,
+         'id' => 3086,
+         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke gesperrt, von Sonnabend, den 04.09.2021, 14:00 Uhr, bis Montag, den 06.09.2021, 4:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1630893600
+       },
        undef,
        {
          'data' => '	2::night:weekend 18320,2195 18448,2182 18491,2128
@@ -4799,13 +4815,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung? Falls ja, wo ist der gesperrte Abschnitt und gilt die Sperrung auch für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="24"
 #: osm_watch: way id="165832806" version="21"
-#: last_checked: 2021-07-04
+#: last_checked: 2021-09-03
 #: check_frequency: 45d
 	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17483,8644 17449,8720 17416,8767 17380,8858
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 7/2021: Fahrbahn im nördlichen Abschnitt gesperrt, enger Fußweg existiert)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 9/2021: Fahrbahn im nördlichen Abschnitt gesperrt, enger Fußweg existiert)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5369,8 +5385,9 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
+#: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-08-10
+#: last_checked: 2021-09-03
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -5512,14 +5529,14 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'until' => 1635663600
        },
        {
-         'data' => '#: XXX wie sehr ist der Radverkehr betroffen?
-#: next_check: 2021-08-13
-	q4::inwork 18939,9417 18977,9322 19048,9146
+         'data' => '#: note: Gehweg für Radfahrer frei (beide Richtungen)
+# REMOVED --- #: next_check: 2021-08-13
+	q3::inwork 18939,9417 18977,9322 19048,9146
 ',
          'from' => 1628719200,
          'id' => 3429,
          'source_id' => 'viz2021:13.5302,52.487045,13.08.2021,07:00',
-         'text' => 'Waldowallee: Bauarbeiten zwischen Köpenicker Allee und Marksburgstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 13.08.2021 07:00 bis 19.11.2021 17:00',
+         'text' => 'Waldowallee: Bauarbeiten zwischen Köpenicker Allee und Marksburgstr., Fahrbahn gesperrt, Radfahrer dürfen den Gehweg benutzen, vom 13.08.2021 07:00 bis 19.11.2021 17:00',
          'type' => 'handicap',
          'until' => 1637362800
        },

@@ -1604,7 +1604,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2021-08-10 vvv
+#: last_checked: 2021-09-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-11-15 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -3265,13 +3265,14 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 # REMOVED --- #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019 --- #: XXX nach den Bauarbeiten alten Zustand wiederherstellen --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/staus-zu-befuerchten_a208024 --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/suedliche_blumberger_damm_bruecke/index.shtml
 Gehweg für Radfahrer frei, alter Beton	RW1; 21199,12258 21190,12193
 # REMOVED --- Gehweg für Radfahrer frei, alter Beton	RW1; 21190,12193 21166,12023
-#: next_check_id: BLUMBERGERDAMMBRUECKE-2021
+#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
 #: XXX wie sieht die Situation nach den Bauarbeiten aus?
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (mittlerweile Zweirichtungsradweg auf der westlichen Seite?)
 #: note: Radfahrer-überholen-verboten-Schild
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025)
 #: last_checked: 2021-07-21
-#: check_frequency: 120d
-#: next_check: 2025-06-01
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- #: next_check: 2025-06-01
 	RW0; 21190,12193 21166,12023
 Gehweg für Radfahrer frei, alter Beton	RW1; 21166,12023 21152,11945 21150,11925 21139,11830
 Gehweg für Radfahrer frei, alter Beton	RW1; 21152,11945 21166,12023 21190,12193
@@ -3424,7 +3425,7 @@ provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
 	RW1; 13809,5257 13607,5241 13594,5240 13508,5238 13327,5234 13250,5234
 #: next_check_id: POPUPRADWEGE-2020
 #: XXX existierender Bürgersteigradweg wurde zugunsten des Popup-Radwegs aufgehoben
-#: osm_watch: way id="4603499" version="32"
+#: osm_watch: way id="4603499" version="33"
 #: last_checked: 2021-06-06 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2020-12-31
@@ -5919,7 +5920,7 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-auf-der-schnellerstrasse_a310437
 # REMOVED --- #: XXX während der Bauarbeiten gibt es eine Einbahnstraßenregelung stadteinwärts sowie für Radfahrer in beiden Richtungen einen benutzungspflichtigen Geh- und Radweg --- #: source_id: 2147347210 (25.5.2021 bis 16.7.2021) --- #: also_indoor: traffic
 #: priority: #D
-#: last_checked: 2021-07-30
+#: last_checked: 2021-09-03
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-07-16
 	RW3;RW3 18245,5551 18370,5511 18680,5413 18955,5320 19037,5316 19186,5310 19328,5304
@@ -6219,7 +6220,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2021-07-07 (mapillary) vvv
+#: last_checked: 2021-08-31 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
