@@ -1446,7 +1446,7 @@ EOF
        text  => 'Düsseldorfer Str. in beiden Richtungen zwischen Brandenburgische Str. und Konstanzer Str. Baustelle, Straße vollständig gesperrt (bis 24.12.2004)',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 4152,10033 3902,10043
+	2 4152,10033 3907,10043
 EOF
      },
      { from  => undef, # 

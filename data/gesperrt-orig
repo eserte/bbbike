@@ -355,7 +355,7 @@ Gritznerstr.	1 4511,6318 4555,6403
 #: osm_watch: way id="4437134" version="10"
 #: last_checked: 2021-03-20
 #: check_frequency: 120d
-Duisburger Str.	1 4183,10144 3874,10153
+Duisburger Str.	1 4183,10144 3880,10154
 # 
 Straße 462	1 4914,17399 5068,17384
 Havensteinstr.	1 6293,2583 6463,2724 6593,2831
@@ -1928,9 +1928,17 @@ Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 10997,16280 10989,1619
 Oberspreestr.: Straßenbahntrasse	3nocross 21579,4579 21726,4537 21789,4520
 Oberspreestr.: Straßenbahntrasse	3nocross 21332,4655 21390,4637 21494,4605
 Hermannstr.: Gitter auf Mittelstreifen	3nocross 11898,8362 11915,8279 11920,8252 11931,8206
-Bundesplatztunnel	3nocross 5350,7554 5349,7619 5348,7681 5348,7726 5346,7860
+#: note: Tunnel, nicht überquerbar vvv
+Bundesplatztunnel	3nocross 5350,7554 5353,7617 5353,7680 5353,7730 5346,7860
+Bundesplatztunnel	1::igndisp 5350,7554 5344,7620 5343,7681 5344,7729 5346,7860
+Bundesplatztunnel	1::igndisp 5346,7860 5353,7730 5353,7680 5353,7617 5350,7554
+#: note ^^^
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
-Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3902,10043 3927,9935
+#: note: Tunnel, nicht überquerbar vvv
+Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3869,10153 3896,10042 3927,9935
+Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	1::igndisp 3927,9935 3896,10042 3869,10153 3852,10236
+Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	1::igndisp 3852,10236 3880,10154 3907,10043 3927,9935
+#: note ^^^
 Treskowallee: Straßenbahntrasse	3nocross 18809,9133 18790,9018 18770,8898
 Treskowallee: Straßenbahntrasse	3nocross 18010,7133 18086,7243 18165,7371
 Treskowallee: Straßenbahntrasse	3nocross 18878,9517 18867,9464 18834,9256 18809,9133
@@ -1941,7 +1949,16 @@ Bundesallee	1::igndisp 5463,9961 5464,9934 5467,9866
 #: note ^^^
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19664,15366 19644,15320 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
-Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
+#: note: Tunnel, nicht überquerbar (am Rudeloffweg theoretisch über Mittelstreifen passierbar, aber die Tunnelrampe ist hier noch nah) vvv
+Unter den Eichen: Straßentunnelrampe	3nocross 2713,4087 2815,4162 2941,4245 3048,4305
+Unter den Eichen: Straßentunnelrampe	1::igndisp 2713,4087 2815,4162 2941,4245 3048,4305
+Unter den Eichen: Straßentunnelrampe	1::igndisp 3048,4305 2950,4232 2823,4152 2713,4087
+#: note ^^^
+#: note: Tunnel, nicht überquerbar vvv
+Unter den Eichen: Mittelstreifen, Tunnelrampe	3nocross 3344,4488 3260,4444 3048,4305
+Unter den Eichen: Mittelstreifen, Tunnelrampe	1::igndisp 3048,4305 3260,4444 3344,4488
+Unter den Eichen: Mittelstreifen, Tunnelrampe	1::igndisp 3344,4488 3266,4438 3048,4305
+#: note ^^^
 Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 Schönhauser Allee: U-Bahnviadukt	3nocross 10969,15944 10964,15896 10953,15787
 # REMOVED --- Schönhauser Allee: U-Bahnviadukt	3 10941,15697 10917,15525 11055,15504
@@ -1954,9 +1971,17 @@ Wisbyer Str.: Straßenbahn	3nocross 11542,16384 11632,16373 11673,16367
 Wisbyer Str.: Straßenbahn	3nocross 11397,16405 11448,16398 11470,16394 11542,16384
 Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 17251,11789 17440,11774 17497,11769 17746,11748 17963,11723 18098,11706 18215,11690
 Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 18626,11742 18696,11754 18853,11780 19004,11780 19092,11776 19389,11761 19661,11746 19726,11743 19907,11734 19985,11727 20114,11719 20161,11715 20375,11694
+#: note: Tunnel, nicht überquerbar vvv
 Alt-Friedrichsfelde: Straßentunnelrampe	3nocross 18215,11690 18364,11698 18520,11707 18626,11742
+Alt-Friedrichsfelde: Straßentunnelrampe	1::igndisp 18215,11690 18517,11718 18626,11742
+Alt-Friedrichsfelde: Straßentunnelrampe	1::igndisp 18626,11742 18520,11707 18364,11698 18215,11690
+#: note ^^^
 Lewishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3623,10800 3644,10759
-Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3744,10577 3777,10513 3813,10435
+#: note: Tunnel, nicht überquerbar vvv
+Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3753,10578 3783,10517 3813,10435
+Lewishamstr: Straßentunnelrampe	1::igndisp 3813,10435 3770,10508 3738,10574 3644,10759
+Lewishamstr: Straßentunnelrampe	1::igndisp 3644,10759 3753,10578 3783,10517 3813,10435
+#: note ^^^
 Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6851,11346 6880,11110
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 10197,16528 10134,16534 9998,16547 9883,16557 9816,16565
 Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 9514,16603 9617,16590 9781,16569 9816,16565
@@ -2071,7 +2096,6 @@ Holzmarktstr.: Mittelstreifen	3nocross 11963,11813 11916,11846 11764,12001
 Mehringdamm/Baruther: Mittelstreifen	3nocross 9334,9670 9387,9804 9444,9919
 Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8380,8545
 Mehringdamm/Wilhelmshöhe: Mittelstreifen	3nocross 9224,9053 9225,9111 9232,9187 9248,9350
-Unter den Eichen: Mittelstreifen, Tunnelrampe	3nocross 3344,4488 3264,4439 3048,4305
 Kottbusser Damm: Mittelstreifen	3nocross 11785,9437 11757,9509 11745,9541
 Gertraudenstr.: Mittelstreifen	3nocross 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979
 Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3nocross 6181,8181 6246,8222 6313,8254

@@ -226,7 +226,7 @@ Spilstr.	1 3865,6758 3826,6656 3836,6550
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
 Große Präsidentenstr.	1 10105,13004 10220,13098
 Gritznerstr.	1 4511,6318 4555,6403
-Duisburger Str.	1 4183,10144 3874,10153
+Duisburger Str.	1 4183,10144 3880,10154
 Straße 462	1 4914,17399 5068,17384
 Havensteinstr.	1 6293,2583 6463,2724 6593,2831
 Worpsweder Str.	1 6182,4931 6202,5163
@@ -1662,30 +1662,18 @@ Gitter auf Mittelstreifen	3nocross::ignrte 11898,8362 11915,8279 11920,8252 1193
 Hermannstr. -> Mahlower Str.: Gitter auf Mittelstreifen	3::igndisp 11920,8252 11915,8279 11776,8253
 Mahlower Str. -> Hermannstr.: Gitter auf Mittelstreifen	3::igndisp 11776,8253 11915,8279 11898,8362
 Hermannstr. -> Boddinstr.: Gitter auf Mittelstreifen	3::igndisp 11915,8279 11920,8252 12104,8299
-Bundesplatztunnel	3nocross::ignrte 5350,7554 5349,7619 5348,7681 5348,7726 5346,7860
-Bundesallee -> Ortrudstr.: Bundesplatztunnel	3::igndisp 5348,7681 5349,7619 5493,7590
-Ortrudstr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5493,7590 5349,7619 5350,7554
-Bundesallee -> Sentastr.: Bundesplatztunnel	3::igndisp 5348,7726 5348,7681 5458,7683
-Bundesallee -> Mainauer Str.: Bundesplatztunnel	3::igndisp 5349,7619 5348,7681 5227,7677
-Sentastr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5458,7683 5348,7681 5349,7619
-Sentastr. -> Mainauer Str.: Bundesplatztunnel	3::igndisp 5458,7683 5348,7681 5227,7677
-Mainauer Str. -> Bundesallee: Bundesplatztunnel	3::igndisp 5227,7677 5348,7681 5348,7726
-Mainauer Str. -> Sentastr.: Bundesplatztunnel	3::igndisp 5227,7677 5348,7681 5458,7683
-Bundesallee -> Sieglindestr.: Bundesplatztunnel	3::igndisp 5346,7860 5348,7726 5461,7840
-Sieglindestr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5461,7840 5348,7726 5348,7681
+Bundesplatztunnel	3nocross::ignrte 5350,7554 5353,7617 5353,7680 5353,7730 5346,7860
+Bundesplatztunnel	1::igndisp 5350,7554 5344,7620 5343,7681 5344,7729 5346,7860
+Bundesplatztunnel	1::igndisp 5346,7860 5353,7730 5353,7680 5353,7617 5350,7554
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 6880,11110 6882,11061 6873,11011 6824,10904
 Klingelhöferstr. -> Herkulesufer: unbequem passierbarer Mittelstreifen	3::igndisp 6880,11110 6882,11061 6920,11064
 Herkulesufer -> Schillstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6920,11064 6882,11061 6873,11011
 Lützowufer -> Lützowufer: unbequem passierbarer Mittelstreifen	3::igndisp 6742,11099 6873,11011 7002,11034
 Lützowufer -> Schillstr.: unbequem passierbarer Mittelstreifen	3::igndisp 7002,11034 6873,11011 6824,10904
 Lützowufer -> Lützowufer: unbequem passierbarer Mittelstreifen	3::igndisp 7002,11034 6873,11011 6742,11099
-Tunneleinfahrt Adenauerplatz	3nocross::ignrte 3852,10236 3874,10153 3902,10043 3927,9935
-Brandenburgische Str. -> Duisburger Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3852,10236 3874,10153 4183,10144
-Brandenburgische Str. -> Düsseldorfer Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3874,10153 3902,10043 4152,10033
-Düsseldorfer Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 4152,10033 3902,10043 3927,9935
-Düsseldorfer Str. -> Paderborner Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 4152,10033 3902,10043 3719,10004
-Paderborner Str. -> Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3719,10004 3902,10043 3874,10153
-Paderborner Str. -> Düsseldorfer Str.: Tunneleinfahrt Adenauerplatz	3::igndisp 3719,10004 3902,10043 4152,10033
+Tunneleinfahrt Adenauerplatz	3nocross::ignrte 3852,10236 3869,10153 3896,10042 3927,9935
+Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	1::igndisp 3927,9935 3896,10042 3869,10153 3852,10236
+Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	1::igndisp 3852,10236 3880,10154 3907,10043 3927,9935
 Straßenbahntrasse	3nocross::ignrte 18809,9133 18790,9018 18770,8898
 Treskowallee -> Bopparder Str.: Straßenbahntrasse	3::igndisp 18809,9133 18790,9018 18881,9002
 Bopparder Str. -> Treskowallee: Straßenbahntrasse	3::igndisp 18881,9002 18790,9018 18770,8898
@@ -1710,13 +1698,12 @@ unbequem passierbarer Mittelstreifen	3nocross::ignrte 9865,10227 9858,10199 9837
 Brachvogelstr. -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9884,10192 9858,10199 9837,10117
 Waterloo-Ufer -> Brachvogelstr.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9884,10192
 Waterloo-Ufer -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9865,10227
-Straßentunnelrampe	3nocross::ignrte 2817,4158 2944,4241 3048,4305
-Unter den Eichen -> Knesebeckstr.: Straßentunnelrampe	3::igndisp 3048,4305 2944,4241 3033,4113
-Unter den Eichen -> Goßlerstr.: Straßentunnelrampe	3::igndisp 2817,4158 2944,4241 2858,4372
-Knesebeckstr. -> Unter den Eichen: Straßentunnelrampe	3::igndisp 3033,4113 2944,4241 2817,4158
-Knesebeckstr. -> Goßlerstr.: Straßentunnelrampe	3::igndisp 3033,4113 2944,4241 2858,4372
-Goßlerstr. -> Unter den Eichen: Straßentunnelrampe	3::igndisp 2858,4372 2944,4241 3048,4305
-Goßlerstr. -> Knesebeckstr.: Straßentunnelrampe	3::igndisp 2858,4372 2944,4241 3033,4113
+Straßentunnelrampe	3nocross::ignrte 2713,4087 2815,4162 2941,4245 3048,4305
+Unter den Eichen: Straßentunnelrampe	1::igndisp 2713,4087 2815,4162 2941,4245 3048,4305
+Unter den Eichen: Straßentunnelrampe	1::igndisp 3048,4305 2950,4232 2823,4152 2713,4087
+Mittelstreifen, Tunnelrampe	3nocross::ignrte 3344,4488 3260,4444 3048,4305
+Unter den Eichen: Mittelstreifen, Tunnelrampe	1::igndisp 3048,4305 3260,4444 3344,4488
+Unter den Eichen: Mittelstreifen, Tunnelrampe	1::igndisp 3344,4488 3266,4438 3048,4305
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 Gerda-und-Wolfgang-Szepansky-Promenade -> Mariendorfer Damm: unbequem passierbarer Mittelstreifen	3::igndisp 9171,5263 9196,5272 9188,5333
 Mariendorfer Damm -> Wulfila-Ufer: unbequem passierbarer Mittelstreifen	3::igndisp 9196,5272 9188,5333 9145,5323
@@ -1787,19 +1774,13 @@ Alt-Biesdorf -> Lötschbergstr.: nicht passierbarer Mittelstreifen	3::igndisp 203
 Lötschbergstr. -> Mozartstr.: nicht passierbarer Mittelstreifen	3::igndisp 20150,11512 20161,11715 20169,11852
 Lötschbergstr. -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20150,11512 20161,11715 20114,11719
 Straßentunnelrampe	3nocross::ignrte 18215,11690 18364,11698 18520,11707 18626,11742
-Charlottenstr. -> Alt-Friedrichsfelde: Straßentunnelrampe	3::igndisp 18520,11685 18520,11707 18364,11698
-Alt-Friedrichsfelde -> Charlottenstr.: Straßentunnelrampe	3::igndisp 18626,11742 18520,11707 18520,11685
+Alt-Friedrichsfelde: Straßentunnelrampe	1::igndisp 18215,11690 18517,11718 18626,11742
+Alt-Friedrichsfelde: Straßentunnelrampe	1::igndisp 18626,11742 18520,11707 18364,11698 18215,11690
 abgesperrter Mittelstreifen	3nocross::ignrte 3592,10869 3623,10800 3644,10759
 Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3::igndisp 3592,10869 3623,10800 3835,10915
-Straßentunnelrampe	3nocross::ignrte 3644,10759 3744,10577 3777,10513 3813,10435
-Waitzstr. -> Sybelstr.: Straßentunnelrampe	3::igndisp 3764,10580 3744,10577 3712,10566
-Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3::igndisp 3764,10580 3744,10577 3777,10513
-Sybelstr. -> Waitzstr.: Straßentunnelrampe	3::igndisp 3712,10566 3744,10577 3764,10580
-Sybelstr. -> Lewishamstr.: Straßentunnelrampe	3::igndisp 3712,10566 3744,10577 3644,10759
-Lewishamstr. -> Sybelstr.: Straßentunnelrampe	3::igndisp 3777,10513 3744,10577 3712,10566
-Lewishamstr. -> Waitzstr.: Straßentunnelrampe	3::igndisp 3644,10759 3744,10577 3764,10580
-Waitzstr. -> Lewishamstr.: Straßentunnelrampe	3::igndisp 3739,10495 3777,10513 3744,10577
-Lewishamstr. -> Waitzstr.: Straßentunnelrampe	3::igndisp 3813,10435 3777,10513 3739,10495
+Straßentunnelrampe	3nocross::ignrte 3644,10759 3753,10578 3783,10517 3813,10435
+Lewishamstr: Straßentunnelrampe	1::igndisp 3813,10435 3770,10508 3738,10574 3644,10759
+Lewishamstr: Straßentunnelrampe	1::igndisp 3644,10759 3753,10578 3783,10517 3813,10435
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 6825,11486 6851,11346 6880,11110
 Klingelhöferstr. -> Rauchstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6880,11110 6851,11346 6692,11365
 Rauchstr. -> Klingelhöferstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6692,11365 6851,11346 6825,11486
@@ -2135,9 +2116,6 @@ Baruther Str. -> Mehringdamm: Mittelstreifen	3::igndisp 9588,9827 9387,9804 9334
 Höhndorfstr. - Loewenhardtdamm: Mittelstreifen	3 8438,8676 8334,8655 8380,8545
 Mittelstreifen	3nocross::ignrte 9224,9053 9225,9111 9232,9187 9248,9350
 Wilhelmshöhe -> Mehringdamm: Mittelstreifen	3::igndisp 9186,9107 9225,9111 9232,9187
-Mittelstreifen, Tunnelrampe	3nocross::ignrte 3344,4488 3264,4439 3048,4305
-Unter den Eichen -> Reichensteiner Weg: Mittelstreifen, Tunnelrampe	3::igndisp 3048,4305 3264,4439 3243,4469
-Reichensteiner Weg -> Unter den Eichen: Mittelstreifen, Tunnelrampe	3::igndisp 3243,4469 3264,4439 3344,4488
 Mittelstreifen	3nocross::ignrte 11785,9437 11757,9509 11745,9541
 Kottbusser Damm -> Pflügerstr.: Mittelstreifen	3::igndisp 11745,9541 11757,9509 11934,9538
 Pflügerstr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11934,9538 11757,9509 11785,9437
