@@ -28690,8 +28690,9 @@ EOF
        source_id => '2147343419', # Gesamtmaßnahme bis Ende 2021
        data  => <<EOF,
 #: next_check_id: HENNIGSDORFER-2019
-	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259 -2248,23409 -2185,23567
-	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850
+	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259
+# REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2306,23259 -2248,23409 -2185,23567
+# REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850
 # REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
 EOF
      },
@@ -29399,7 +29400,7 @@ EOF
 #: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 14.9.2021)
 #: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-07-31
+#: last_checked: 2021-09-04
 #: check_frequency: 60d
 #: next_check: 2021-09-14
 	q3::inwork  8986,16092 9178,16317
@@ -32141,7 +32142,7 @@ EOF
        source_id => '2147346268',
        data  => <<EOF,
 #: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021)
-#: last_checked: 2021-07-31
+#: last_checked: 2021-09-04
 #: check_frequency: 90d
 #: next_check: 2021-11-19
 	q2::inwork 8913,16159 9099,16398
@@ -33444,6 +33445,15 @@ EOF
        data  => <<EOF,
 #: by: https://www.mobil-potsdam.de/fileadmin/user_upload/Informationen_Umleitungsplaene_Baumassnahme_Behlertstrasse.pdf
 	q4::inwork -12045,-757 -12106,-699 -12194,-463 -12265,-418
+EOF
+     },
+     { from  => 1630274400, # 2021-08-30 00:00
+       until => 1634310000, # 2021-10-15 17:00
+       text  => 'Triftstr.: zwischen Holzhauser Str. und Am Nordgraben ist die Fahrbahn gesperrt (Richtung Norden), vom 31.08.2021 09:00 bis 15.10.2021 17:00 Uhr',
+       type  => 'handicap',
+       source_id => 'viz2021:13.316247,52.586804,31.08.2021,09:00',
+       data  => <<EOF,
+	q4::inwork; 4262,20025 4319,20182
 EOF
      },
     );

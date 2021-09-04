@@ -3308,11 +3308,23 @@ Barriere	BNP:1::trailer=5 21879,557
 Schranke	BNP:2::trailer=5 20820,11563
 Schranke	BNP:2::trailer=5 20833,11561
 Drängelgitter	BNP:3::trailer=10 25690,-8511
+Drängelgitter	BNP:3::trailer=10 -739,23004
+#: note: kann allerdings recht gut umfahren werden
+Schranke	BNP:1::trailer=3 1201,15804
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: next_check_id: BEBAUUNGSPLAN-5-87B
+#: last_checked: 2021-09-04 vvv
+#: check_frequency: 180d vvv
+Pembabogen: durch Bauzäune abgesperrt	2::inwork -2750,19013 -2747,19074
+#: XXX wobei auf der westlichen Seite keine Absperrung ist und die östliche Absperrung umfahrbar ist
+Tasmanienweg: durch Bauzäune abgesperrt	2::inwork -2747,19074 -2647,19070
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: HEBAMMENSTEIGBRUECKE-2021
 #: by: http://www.berlin.de/imperia/md/content/bapankow/pressestelle/ba-beschluesse/11.12.2012_benennung_eine_oeffentlichen_weges_im_ortsteil_franzoesich_buchholz__lageplan.pdf?start&ts=1355910105&file=11.12.2012_benennung_eine_oeffentlichen_weges_im_ortsteil_franzoesich_buchholz__lageplan.pdf
@@ -3340,7 +3352,7 @@ Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9
 # 
 #: next_check_id: TEGELERBRUECKE-2021
 #: osm_watch: way id="930770437" version="2"
-#: last_checked: 2021-07-13 (architektur-urbanistik)
+#: last_checked: 2021-09-04
 #: check_frequency: 180d
 #: next_check: 2023-12-01
 Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -196,16060 -203,16064 -205,16086 -224,16095 -265,16111
@@ -3401,7 +3413,7 @@ Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,1
 #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022)
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße.
 #: osm_watch: way id="308312347" version="3"
-#: last_checked: 2021-07-27 (mapillary)
+#: last_checked: 2021-09-04
 #: check_frequency: 90d
 #: next_check: 2022-08-15
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
@@ -4293,8 +4305,9 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1051294.php (Baumfällungen)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/uferwand-und-promenade-sollen-bis-spaetsommer-fertig-sein_a301440 (bis Spätsommer 2021)
 #: osm_watch: way id="501191631" version="3"
-#: last_checked: 2021-07-10
-#: next_check: 2021-09-01
+#: last_checked: 2021-09-04
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2021-09-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5909 ("noch über das Jahr 2018 hinziehen werden")
@@ -4313,7 +4326,8 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: osm_watch: way id="23099023" version="12"
 #: osm_watch: way id="23099024" version="8"
 #: osm_watch: way id="103531998" version="7"
-#: last_checked: 2021-04-26 (mapillary)
+#: last_checked: 2021-09-04
+#: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-03-15
 # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645
 Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603

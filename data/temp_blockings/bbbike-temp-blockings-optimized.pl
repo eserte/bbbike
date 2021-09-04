@@ -4015,8 +4015,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: HENNIGSDORFER-2019
-	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259 -2248,23409 -2185,23567
-	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850
+	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259
+# REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2306,23259 -2248,23409 -2185,23567
+# REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850
 # REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
 ',
          'from' => 1542148916,
@@ -4195,7 +4196,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 14.9.2021)
 #: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-07-31
+#: last_checked: 2021-09-04
 #: check_frequency: 60d
 #: next_check: 2021-09-14
 	q3::inwork  8986,16092 9178,16317
@@ -4794,7 +4795,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021)
-#: last_checked: 2021-07-31
+#: last_checked: 2021-09-04
 #: check_frequency: 90d
 #: next_check: 2021-11-19
 	q2::inwork 8913,16159 9099,16398
@@ -5563,16 +5564,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'until' => 1631916000
        },
        undef,
-       {
-         'data' => '	q4::inwork 6552,8281 6560,8219
-',
-         'from' => 1629928800,
-         'id' => 3434,
-         'source_id' => 'viz2021:13.34641,52.48039,27.08.2021,11:13',
-         'text' => 'Koburger Str.: Fahrbahn zwischen Hauptstr. und Heylstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.08.2021 11:13 bis 03.09.2021 23:59 ',
-         'type' => 'handicap',
-         'until' => 1630706400
-       },
+       undef,
        {
          'data' => '	q4::inwork 8555,17928 8415,17902
 ',
@@ -5617,6 +5609,16 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Behlertstr.: Bauarbeiten, Sperrung der Fahrbahn, bis Ende 2022',
          'type' => 'handicap',
          'until' => 1672527599
+       },
+       {
+         'data' => '	q4::inwork; 4262,20025 4319,20182
+',
+         'from' => 1630274400,
+         'id' => 3439,
+         'source_id' => 'viz2021:13.316247,52.586804,31.08.2021,09:00',
+         'text' => 'Triftstr.: zwischen Holzhauser Str. und Am Nordgraben ist die Fahrbahn gesperrt (Richtung Norden), vom 31.08.2021 09:00 bis 15.10.2021 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1634310000
        }
      
 );

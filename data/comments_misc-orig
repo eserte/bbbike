@@ -266,8 +266,8 @@ Straße 77: die Straße ist nicht ausgeschildert	CS 15408,12394 15320,12375
 (Seeburger Str./Seecktstr. - Bullengraben): Zufahrt über Supermarktparkplatz (Lidl)	CS; -4299,13304 -4372,13384
 #: by: Ralf Henze vvv
 #: note: das gilt für alle Straßen von R bis Z vvv
-Straße R: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -203,16168 -267,16246 -315,16286 -386,16347 -460,16408 -542,16475 -629,16546 -719,16608 -784,16658 -792,16659
-Straße Y: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -629,16546 -671,16488
+Straße R: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -203,16168 -269,16241 -312,16288 -386,16347 -460,16408 -542,16475 -632,16541 -719,16608 -784,16658 -792,16659
+Straße Y: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -632,16541 -671,16488
 #: note: ^^^
 #: by: ^^^
 # REMOVED (Haus existiert nicht mehr) --- Zur Pariser Str.: Hausdurchfahrt benutzen	CS; 5461,9923 5423,9932 5382,9942
@@ -1556,6 +1556,17 @@ David-Friedländer-Weg: nicht ausgeschildert	CS 21038,18851 21028,18915 20998,189
 #: last_checked ^^^
 # 
 Anton-Saefkow-Platz: nicht ausgeschildert	CS 15062,13827 15034,13814 15010,13807 14989,13815 14846,13760 14821,13674
+# 
+ausgeschildert "Elchdamm 174"	CP2; -2245,21544 -2242,21927
+# 
+#: next_check_id: BEBAUUNGSPLAN-5-87B
+#: last_checked: 2021-09-04 vvv
+#: check_frequency: 180d vvv
+Tasmanienweg: noch nicht ausgeschildert	CS -2747,19074 -2647,19070 -2547,19067
+Pembabogen: noch nicht ausgeschildert	CS -2547,19067 -2546,19155 -2647,19149 -2745,19146 -2747,19074 -2750,19013
+Tahitiweg: noch nicht ausgeschildert	CS -2647,19149 -2647,19070 -2647,19009
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)
