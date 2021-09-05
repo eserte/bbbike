@@ -585,7 +585,11 @@ sub parse_vmz_2021 {
     my($self, $vmz_2021_file) = @_;
 
     my $json = do { open my $fh, '<:raw', $vmz_2021_file or die $!; local $/; <$fh> };
-    my $data = decode_json $json;
+    my $data = eval { decode_json $json };
+    if (!$data || $@) {
+	system "cp", $vmz_2021_file, "/tmp/vmz_2021.json";
+	die "Failed to parse JSON from '$vmz_2021_file' (a copy was saved to /tmp/vmz_2021.json): $@";
+    }
 
     my $place = 'Berlin';
 
