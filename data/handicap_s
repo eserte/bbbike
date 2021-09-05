@@ -33,6 +33,7 @@ Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwo
 Matthäikirchplatz: wegen Bauarbeiten am Museum der Moderne mögliche Behinderungen	q3::inwork 7934,11275 7965,11380
 Fasanenstr.: Engstelle in Höhe Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5241,11060 5236,10994 5230,10919
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
+Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwork 5461,9923 5423,9932 5382,9942
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q1 14150,6609 14137,6658 14179,6714 14179,6743
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
@@ -54,7 +55,7 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9750,14132 9676,14046
 (Frankfurter Allee - Liebigstr.): Fußgänger	q2 13885,12279 13927,12370
-Otto-Ludwig-Str.: Fußgängerzone	q2 4862,10881 4948,10872
+Otto-Ludwig-Str.: Fußgängerzone	q2 4857,10909 4930,10903
 Mauerstr. (Mitte): Touristen, Bordsteine	q4 9405,11413 9474,11360
 Georgenstr.: Fußgängerzone, Bordstein	q3 9441,12670 9313,12662
 Neue Promenade: Fußgängerzone, Radfahren erlaubt, aber nur langsam möglich	q4 10286,13084 10263,13047 10185,12982
@@ -2208,7 +2209,7 @@ Prettauer Pfad: enge Straße	q1 3384,1297 3580,1545
 Prettauer Pfad: enge Straße	q1 3358,1331 3384,1297 3437,1218
 Hempstücken: kurvenreich	q2 -7506,126 -7542,201 -7632,204
 Joachimstr. (Köpenick): Bodenschwellen	q1; 21907,5517 22009,5593
-Jeanne-Mammen-Bogen: Fußgängerzone	q3 4948,10872 5090,10868
+Jeanne-Mammen-Bogen: Fußgängerzone	q3 4930,10903 5084,10890
 Holwedestr.: schmale Straße	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 (Fußgängertunnel Bahnhof Lichterfelde Ost): Fußgänger, Radfahrer sollen schieben	q4 5367,2528 5471,2470
 Am Schloßpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,18704
@@ -3080,7 +3081,6 @@ Ludolfinger Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp;
 Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17729,10331 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
-Soorstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1861,11284 1884,11126
 Hönower Str.: temporäre Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 18735,9421 18765,9426 18846,9532
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10472,14632 10320,14608
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9429,12728 9402,12792 9386,12833

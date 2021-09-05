@@ -24,7 +24,7 @@ Oberbaumstr.	1 13082,10634 13028,10629
 am Hackeschen Markt (Süd)	1 10132,12941 10117,12973 10105,13004 9932,13109
 am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
 Dennewitzplatz	1 7866,9902 7862,9918 7813,10112
-Dennewitzplatz	1 7813,10112 7906,10098
+# REMOVED --- Dennewitzplatz	1 7814,10117 7906,10098
 # REMOVED (weitgehend realisiert, nur die Verknüpfung an der Dennewitzstr. fehlt noch) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131011.1230.390248.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4679 --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf (Ende der Bauarbeiten) --- #: XXX Einrichtung eines offiziellen Zweirichtungradwegs, dann wird "q3" wegfallen -> gesperrt_car ---#: last_checked: 2014-08-30 (asphaltierte Radwege existieren bis auf die Verknüpfung zur Dennewitzstr.) --- #: check_frequency: 7d --- Dennewitzplatz	1s:q3 7906,10098 7869,9917
 Winterfeldtplatz	1 7049,9833 7038,10088
 Winterfeldtplatz	1 7080,10098 7126,9825
@@ -183,7 +183,7 @@ Detmolder Str. (Süd)	1 4711,8013 4572,7936 4353,8035 4323,8119 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4600,8002 4711,8013
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
 # REMOVED (moved to temp blockings) --- currently XXX_outdoor --- : XXX_indoor: consider to move into temp blockings (but check first for exact times; maybe wait until temp blocking implementations are getting better) --- #: XXX aber zuerst handicap+qualitaet analysieren --- Gartenufer (in der Dunkelheit gesperrt)	2 6226,11405 6067,11479 5845,11615 5790,11643
-Steinplatz	1 5159,11353 5122,11300 5088,11322 5043,11354 5085,11413
+Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
 Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13860,9861 13795,9941
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928
 Bethaniendamm	1 12060,11323 12010,11224 11944,11152 11845,11095 11750,11065 11640,11067 11458,11136
@@ -200,7 +200,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="14"
-#: last_checked: 2021-05-01
+#: last_checked: 2021-09-05
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
 # 
@@ -267,7 +267,7 @@ Ontarioseestr.	1 18585,10024 18408,10041
 # REMOVED (hier jetzt eine Sackgasse für Autos) --- Ontarioseestr.	1 18408,10041 18339,10048
 Degnerstr. (außer Tram)	1 16448,15593 16469,15659
 Henriette-Herz-Platz	1 10371,13006 10312,12982 10255,12959
-Savignyplatz	1 4911,11018 4910,10940 4869,10943 4812,10948 4821,11026 4828,11094 4880,11088 4916,11083 4911,11018
+Savignyplatz	1 4911,11018 4910,10940 4858,10943 4812,10948 4821,11026 4828,11094 4880,11088 4916,11083 4911,11018
 Dresdener Str./Oranienplatz	1 11258,10682 11220,10744
 Gutsmuthsstr.	1 5312,6382 5065,6515
 Bornstr.	1 5210,6522 5346,6443
@@ -353,7 +353,7 @@ Gritznerstr.	1 4511,6318 4555,6403
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
 #: osm_watch: way id="4437134" version="10"
-#: last_checked: 2021-03-20
+#: last_checked: 2021-09-05
 #: check_frequency: 120d
 Duisburger Str.	1 4183,10144 3880,10154
 # 
@@ -563,6 +563,7 @@ Neumarkplan	1 12485,3933 12572,3764 12578,3728 12560,3697 12530,3669 12485,3658 
 Mudrastr.	1 7370,2400 7324,2559 7289,2699 7308,2734 7384,2763 7489,2787
 #: by: Ansgar Petters:
 Heiligental	1 5803,19874 5858,19761 5897,19668 5929,19574
+Brodersenstr.	1 6033,19611 5885,19920
 Autobahnausfahrt	1 4741,5309 4813,5350
 Kuhligkshofstr.	1 4813,5350 4851,5377
 Bänschstr.	1 14591,12555 14319,12629
@@ -1265,7 +1266,7 @@ Waldstr.	1 9961,19513 10002,19418
 # REMOVED --- #: next_check_id: UBAHN1-2020 --- #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510 --- #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021 --- 
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022)
-#: last_checked: 2021-09-02
+#: last_checked: 2021-09-05
 #: check_frequency: 90d
 #: next_check: 2022-01-12
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1368,6 +1369,7 @@ Am Heidehof	1s:q3 -1410,2726 -1571,2669 -1612,2785
 #: note: gesehen an Pfingstmontag 2021
 Nußbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
 Skalitzer Str.: Mittelstreifen, Bordsteine	3nocross 12930,10621 12899,10595 12731,10547
+Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1696,7 +1698,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage)
 #: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage)
 #: osm_watch: way id="850742955" version="1"
-#: last_checked: 2021-04-26 (mapillary)
+#: last_checked: 2021-09-05
 #: check_frequency: 180d
 #: next_check: 2021-09-10
 Ahornallee	1s:q3 1589,11483 1574,11379
@@ -1730,17 +1732,7 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich)	1s:q2 18377,9366
 Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
-#: XXX evtl. ist die Einbahnstraßenregelung temporär
-#: by: https://www.berliner-woche.de/westend/c-verkehr/auch-wenn-es-nicht-so-aussieht-der-zob-umbau-laeuft-wie-geplant_a223429 (ZOB-Umbau bis 2022)
-#: by: https://www.berliner-woche.de/westend/c-verkehr/rechnungshof-ruegt-senat-fuer-mangelhafte-umsetzung-des-bauprojektes_a310611
-#: add_fragezeichen: gibt es die Einbahnstraßenregelung in der Soorstr. noch?
-#: source_id: 2147347063
-#: osm_watch: way id="4708164" version="16"
-#: last_checked: 2021-05-24
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2021-09-17
-#: valid: 20210901-
-Soorstr.	1s:q3 1861,11284 1884,11126
+# REMOVED (keine Einschränkungen mehr) --- #: XXX evtl. ist die Einbahnstraßenregelung temporär --- #: by: https://www.berliner-woche.de/westend/c-verkehr/auch-wenn-es-nicht-so-aussieht-der-zob-umbau-laeuft-wie-geplant_a223429 (ZOB-Umbau bis 2022) --- #: by: https://www.berliner-woche.de/westend/c-verkehr/rechnungshof-ruegt-senat-fuer-mangelhafte-umsetzung-des-bauprojektes_a310611 --- #: add_fragezeichen: gibt es die Einbahnstraßenregelung in der Soorstr. noch? --- #: source_id: 2147347063 --- #: osm_watch: way id="4708164" version="16" --- #: last_checked: 2021-05-24 --- #: check_frequency: 90d --- #: next_check: 2021-09-17 --- #: valid: 20210901- --- Soorstr.	1s:q3 1861,11284 1884,11126
 # 
 Einkaufszentrum am Gesundbrunnen	1 9291,15740 9363,15738
 # 
@@ -3343,7 +3335,7 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 #: last_checked ^^^
 # 
 #: XXX Bis wann bleibt die Einbahnstraße bestehen? Siehe auch anderen Eintrag zur möglichen Asphaltierung.
-#: osm_watch: way id="4045220" version="40"
+#: osm_watch: way id="4045220" version="41"
 #: osm_watch: way id="938037386" version="1"
 #: osm_watch: way id="868103791" version="2"
 #: last_checked: 2021-08-03
@@ -3385,7 +3377,7 @@ Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 153
 (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2021-06-06 vvv
+#: last_checked: 2021-09-05 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-01-31 vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -3452,7 +3444,7 @@ Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708
 #: source_id: IM_020714
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-08-31
+#: last_checked: 2021-09-05
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
@@ -3465,7 +3457,7 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 #: by: https://twitter.com/Technologiepark/status/1337402031569580032 (Sanierung der Brücke bis 10.12.2021)
 #: by: https://www.deutsches-architekturforum.de/thread/14514-square-1-johannisthal/ (Erwähnung)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/betriebsbahnhof-schoeneweide-ist-geschichte_a296360 (bis Ende 2021)
-#: last_checked: 2021-08-01 (krickstadt) vvv
+#: last_checked: 2021-09-05 (krickstadt) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-10 vvv
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
@@ -3659,7 +3651,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- Tor	BNP:5 14692,10867
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/rossstrassenbruecke-wird-abgerissen_a244615 (Beginn der Bauarbeiten ab 16. Dezember 2019, ab Januar 2020 für alle gesperrt) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.876928.php (bis Herbst 2021) --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung --- #: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: bis Mai 2021) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1097688.php --- #: also_indoor: traffic (G,H) vvv --- #: source_id: 2147345254 (bis 18.06.2021) vvv --- #: last_checked: 2021-06-15 vvv --- #: next_check: 2021-06-18 vvv --- #: priority: #A vvv --- Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901 --- Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875 10672,11870 10662,11863 --- #: priority ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: also_indoor ^^^
 # 
-#: last_checked: 2021-09-02
+#: last_checked: 2021-09-05
 #: check_frequency: 60d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -3742,7 +3734,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00
 #: note: laut rbb nur bis 31.08.2022
 # REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
-#: last_checked: 2021-09-01 vvv
+#: last_checked: 2021-09-05 vvv
 #: next_check: 2024-06-01 vvv
 Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	2::inwork 10736,12285 10772,12288
@@ -4058,7 +4050,7 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10648 (Anfrage)
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="3" vvv
-#: last_checked: 2021-08-05 (daf) vvv
+#: last_checked: 2021-09-05 vvv
 #: check_frequency: 45d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5643,12253
 # REMOVED (hier aufgehoben) --- Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5643,12253 5604,12244 5574,12237
@@ -4325,7 +4317,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 # REMOVED (Alexandersteg, nicht gesperrt) --- #: osm_watch: way id="27178371" version="11"
 #: osm_watch: way id="23099023" version="12"
 #: osm_watch: way id="23099024" version="8"
-#: osm_watch: way id="103531998" version="7"
+#: osm_watch: way id="103531998" version="8"
 #: last_checked: 2021-09-04
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-03-15

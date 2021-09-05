@@ -916,7 +916,7 @@ EOF
        until => $isodate2epoch->("2019-09-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 8, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -6,
+       recurrence_prewarn_days => -13,
        text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (07.09.2019 bis 08.09.2019)',
        type  => 'gesperrt',
        source_id => 'http://www.hier-in-rudow.de/meilenfeste.html',
@@ -2689,7 +2689,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2 5215,10711 5341,10756
-	2 5215,10711 5076,10658
+	2 5215,10711 5069,10662
 	2 5656,10876 5475,10808
 	2 5656,10876 5725,10892
 	2 5725,10892 5782,10884
@@ -5613,7 +5613,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003267',
        data  => <<EOF,
-	2::temp 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5076,10658
+	2::temp 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662
 EOF
      },
      { from  => 1156888800, # 2006-08-30 00:00
@@ -5903,7 +5903,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003491',
        data  => <<EOF,
-	1::inwork 5122,11300 5102,11006
+	1::inwork 5113,11305 5090,11007
 EOF
      },
      { from  => 1157666400, # 2006-09-08 00:00
@@ -7662,7 +7662,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005040',
        data  => <<EOF,
-	2::temp 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5076,10658
+	2::temp 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662
 EOF
      },
      { from  => undef, # 
@@ -9886,7 +9886,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006499',
        data  => <<EOF,
-	2::temp 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589
+	2::temp 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597
 EOF
      },
      { from  => 1189288800, # 2007-09-09 00:00
@@ -18249,20 +18249,20 @@ EOF
 # REMOVED ---	3 5808,10284 5764,10322 5700,10226
 # REMOVED ---	3 5808,10284 5764,10322 5520,10453
 # REMOVED ---#: note ^^^
-# REMOVED ---	2::temp 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5076,10658
-# REMOVED ---# REMOVED (Aufstellbereich erst ab Uhlandstr.) --- 2::temp 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435 4157,10418
+# REMOVED ---	2::temp 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662
+# REMOVED ---# REMOVED (Aufstellbereich erst ab Uhlandstr.) --- 2::temp 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435 4157,10418
 # REMOVED ---# REMOVED ---	3 4239,10358 4245,10435 4256,10583
-# REMOVED ---# REMOVED ---	3 4685,10689 4676,10541 4659,10335
-# REMOVED ---# REMOVED ---	3 4485,10307 4503,10497 4513,10702
-# REMOVED ---# REMOVED ---	3 4847,10677 4847,10589 4828,10356
+# REMOVED ---# REMOVED ---	3 4685,10689 4672,10552 4659,10335
+# REMOVED ---# REMOVED ---	3 4485,10307 4496,10504 4513,10702
+# REMOVED ---# REMOVED ---	3 4841,10686 4838,10597 4819,10355
 # REMOVED ---# REMOVED ---	3 4381,10583 4371,10465 4360,10320
 # REMOVED ---# REMOVED ---	3 4360,10320 4371,10465 4381,10583
-# REMOVED ---# REMOVED ---	3 4828,10356 4847,10589 4847,10677
-# REMOVED ---# REMOVED ---	3 4513,10702 4503,10497 4485,10307
-# REMOVED ---# REMOVED ---	3 5047,10381 5076,10658 5079,10701
+# REMOVED ---# REMOVED ---	3 4819,10355 4838,10597 4841,10686
+# REMOVED ---# REMOVED ---	3 4513,10702 4496,10504 4485,10307
+# REMOVED ---# REMOVED ---	3 5047,10381 5069,10662 5072,10701
 # REMOVED ---# REMOVED ---	3 4256,10583 4245,10435 4239,10358
-# REMOVED ---# REMOVED ---	3 5079,10701 5076,10658 5047,10381
-# REMOVED ---# REMOVED ---	3 4659,10335 4676,10541 4685,10689
+# REMOVED ---# REMOVED ---	3 5072,10701 5069,10662 5047,10381
+# REMOVED ---# REMOVED ---	3 4659,10335 4672,10552 4685,10689
 # REMOVED ---	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8592,12252
 # REMOVED ---	3 7429,12070 7383,12095 7031,12320
 # REMOVED ---	3 7031,12320 7383,12095 7429,12070
@@ -20260,12 +20260,14 @@ EOF
        until => $isodate2epoch->("2019-09-15 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 9, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 2,
+       recurrence_prewarn_days => -5,
        text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 13.09.2019 bis 15.09.2019',
        type  => 'handicap',
        source_id => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2019',
        data  => <<EOF,
 #: by: https://www.laubinger.de/event/47-rosenthaler-herbst/ (geplant: 18.09.2021 - 19.09.2021)
+#: XXX findet das Fest 2021 statt?
+#: next_check: 2021-09-16
 	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
 EOF
      },
@@ -21170,7 +21172,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_019071',
        data  => <<EOF,
-	q4::inwork 5102,11006 5122,11300
+	q4::inwork 5090,11007 5113,11305
 EOF
      },
      { from  => 1352918929, # undef, # 
@@ -21949,7 +21951,7 @@ EOF
 #: by: https://www.die-classic-days-berlin.de/programm-2/ (wird auf 2022 verschoben)
 #: note: kann im Juni oder Juli stattfinden
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
-	q4::temp 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
+	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
 EOF
      },
      { from  => 1497556466, # 1370491200, # 2013-06-06 06:00
@@ -22286,7 +22288,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140820.1250.398770.html',
        data  => <<EOF,
-	2::temp 5047,10381 5076,10658
+	2::temp 5047,10381 5069,10662
 EOF
      },
      { from  => undef, # $isodate2epoch->("2014-12-06 00:00:00"), # 1 Tag Vorlauf
@@ -22934,7 +22936,7 @@ EOF
        until => $isodate2epoch->("2019-09-15 22:00:00"),
        periodic => 1, # erster Termin im Jahr
        #recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
-       recurrence_prewarn_days => -6,
+       recurrence_prewarn_days => -13,
        recurrences => [["yearly", days => 1, months => 9, start => "2020-10-25T00:00:00"]],
        # früher: Fest der Nationen
        text  => 'Prager Platz: Veranstaltung "Fest der Vielfalt", Durchfahrt nicht möglich, vom 13.9.2019 15 Uhr bis 15.9.2019 22 Uhr',
@@ -22942,6 +22944,9 @@ EOF
        source_id => 'http://www.partnerschaftsverein-charlottenburg.de/05-Termine/05.html',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.932471.php (Absage 2020)
+#: by: https://www.charlottenburg-wilmersdorf-zeitung.de/fest-der-vielfalt-am-prager-platz/ (11. September 2021, 14-20 Uhr, Nikolsburger Platz/Trautenaustraße)
+#: XXX findet das Fest 2021 tatsächlich statt? (falls ja -> Ort & Datum ändern!)
+#: next_check: 2021-09-10
 #: note: kein tempex-Ausdruck möglich
 	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
 EOF
@@ -23876,7 +23881,7 @@ EOF
        until => $isodate2epoch->("2019-09-14 23:59:59"),
        periodic => 1,
        recurrences => [["yearly", days => 31, months => 8, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -7,
+       recurrence_prewarn_days => -14,
        text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 14. September 2019, 12 bis 21 Uhr ',
        type  => 'gesperrt',
        source_id => 'https://www.turmstrasse.de/aktuelles',
@@ -23931,7 +23936,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (Einschränkungen weitgehend aufgehoben) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2016-03-26 --- #: check_frequency: 90d
-	q3::inwork 4503,10497 4485,10307
+	q3::inwork 4496,10504 4485,10307
 EOF
      },
      { from  => 1411312807, # 2014-09-21 17:20
@@ -24755,7 +24760,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5610.html',
        data  => <<EOF,
-	2::temp 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5076,10658
+	2::temp 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662
 	3 5669,10704 5782,10884 5829,10964
 	3 5488,10978 5475,10808 5471,10719
 	3 5196,10398 5215,10711 5230,10919
@@ -24811,13 +24816,12 @@ EOF
        until => $isodate2epoch->("2020-01-17 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1, start => "2021-01-31T00:00:00"],
-                       ['yearly', days => 27, months => 6, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -77,
+                       ['yearly', days => 27, months => 6, start => "2021-10-25T00:00:00"]],
        text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 13.01.2020-17.01.2020',
        type  => 'handicap',
        source_id => 'https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-termin-fuer-januar-2020.html',
        data  => <<EOF,
-#: by: https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-der-sommertermin-in-2021-steht-fest.html (6. bis 12. September 2021)
+#: by: https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-der-sommertermin-in-2021-steht-fest.html (6. bis 12. September 2021) (allerdings möglicherweise nicht in der Schöneberger/Luckenwalder)
 #: source_id: 2147343639
 #: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
 	q4::temp 8644,10408 8397,10488 8384,10507 8527,10621
@@ -25355,23 +25359,23 @@ EOF
        text  => 'Kurfürstendamm: Faschingsumzug zwischen Adenauerplatz und Breitscheidplatz, 31. Januar 2016',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 3835,10352 3971,10381 4157,10418 4245,10435 4371,10465 4503,10497 4676,10541 4847,10589 5076,10658 5215,10711 5341,10756 5475,10808 5656,10876 5725,10892 5782,10884 5907,10821
+	2::temp 3835,10352 3971,10381 4157,10418 4245,10435 4371,10465 4496,10504 4672,10552 4838,10597 5069,10662 5215,10711 5341,10756 5475,10808 5656,10876 5725,10892 5782,10884 5907,10821
 	3 4172,10406 4157,10418 4153,10453
-	3 4685,10689 4676,10541 4659,10335
-	3 4485,10307 4503,10497 4513,10702
+	3 4685,10689 4672,10552 4659,10335
+	3 4485,10307 4496,10504 4513,10702
 	3 4239,10358 4245,10435 4256,10583
 	3 4381,10583 4371,10465 4360,10320
 	3 5230,10919 5215,10711 5196,10398
-	3 4828,10356 4847,10589 4847,10677
+	3 4819,10355 4838,10597 4841,10686
 	3 5196,10398 5215,10711 5230,10919
-	3 5079,10701 5076,10658 5047,10381
+	3 5072,10701 5069,10662 5047,10381
 	3 4256,10583 4245,10435 4239,10358
 	3 5829,10964 5782,10884 5669,10704
-	3 4513,10702 4503,10497 4485,10307
-	3 4847,10677 4847,10589 4828,10356
+	3 4513,10702 4496,10504 4485,10307
+	3 4841,10686 4838,10597 4819,10355
 	3 4360,10320 4371,10465 4381,10583
-	3 4659,10335 4676,10541 4685,10689
-	3 5047,10381 5076,10658 5079,10701
+	3 4659,10335 4672,10552 4685,10689
+	3 5047,10381 5069,10662 5072,10701
 	3 5471,10719 5475,10808 5488,10978
 	3 4153,10453 4157,10418 4172,10406
 	3 5669,10704 5782,10884 5829,10964
@@ -28070,7 +28074,7 @@ EOF
        data  => <<EOF,
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
 # REMOVED (keine Einbahnstraße mehr) --- #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080 --- #: also_indoor: traffic (G,H) --- #: last_checked: 2020-06-21 --- #: next_check: 2020-12-31
-	q4::inwork; 5076,10658 5047,10381
+	q4::inwork; 5069,10662 5047,10381
 EOF
      },
      { from  => undef, # 
@@ -30415,7 +30419,7 @@ EOF
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-08-21 (daf)
+#: last_checked: 2021-09-05
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 EOF
@@ -30802,7 +30806,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1630856365, # -> gesperrt-orig --- undef, # XXX
        text  => 'Zufahrt "Gleis Park": Tore, kann möglicherweise abgesperrt sein',
        type  => 'gesperrt',
        recurring => 1,
@@ -31001,7 +31005,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-09-02
+#: last_checked: 2021-09-05
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -31141,7 +31145,7 @@ EOF
        data  => <<EOF,
 #: source_id: 2147345969 (inaktiv)
 #: also_indoor: traffic (G,H)
-	q4::inwork 4847,10677 4847,10589
+	q4::inwork 4841,10686 4838,10597
 EOF
      },
      { from  => 1587963600, # 2020-04-27 07:00
@@ -31578,7 +31582,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
-#: last_checked: 2021-05-20 (architektur-urbanistik)
+#: last_checked: 2021-09-05
 #: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 EOF
@@ -31846,7 +31850,7 @@ Bergmannstr. (Kreuzberg): Maskenpflicht gilt möglicherweise auch für Radfahrer	q
 Bölschestr.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 25579,5958 25571,5829 25567,5749 25563,5666 25561,5622 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25522,4935 25519,4830
 Friedrichstr. (Mitte): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 9212,13471 9225,13389 9246,13235 9254,13171 9262,13111 9269,13060 9279,12953 9286,12886 9298,12765 9303,12718 9313,12662 9314,12652 9330,12538 9343,12464 9358,12351 9369,12253 9373,12197 9384,12103 9393,12000 9405,11903 9418,11804 9432,11702 9444,11616 9456,11513 9468,11412 9474,11360 9478,11317
 Karl-Marx-Str.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 13236,6489 13200,6550 13141,6651 13121,6689 13117,6716 13085,6925 13072,7013 13068,7043 13058,7112 13051,7157 13043,7234 13034,7319 13030,7346 13029,7353 13018,7441 13015,7471 12987,7560 12972,7602 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823,8028 12788,8101 12753,8187 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501 12330,8636 12150,8764 12063,8826 11998,8872 11880,8955 11831,8989
-Kurfürstendamm: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 2415,9765 2445,9838 2482,9870 2532,9911 2590,9949 2694,10002 2702,10006 2770,10024 2828,10040 2974,10081 3111,10116 3189,10141 3289,10174 3374,10201 3489,10240 3562,10264 3618,10283 3737,10322 3835,10352 3971,10381 4157,10418 4245,10435 4371,10465 4503,10497 4676,10541 4847,10589 5076,10658 5215,10711 5341,10756 5475,10808 5656,10876 5725,10892 5782,10884
+Kurfürstendamm: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 2415,9765 2445,9838 2482,9870 2532,9911 2590,9949 2694,10002 2702,10006 2770,10024 2828,10040 2974,10081 3111,10116 3189,10141 3289,10174 3374,10201 3489,10240 3562,10264 3618,10283 3737,10322 3835,10352 3971,10381 4157,10418 4245,10435 4371,10465 4496,10504 4672,10552 4838,10597 5069,10662 5215,10711 5341,10756 5475,10808 5656,10876 5725,10892 5782,10884
 Kurfürstendamm: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 2445,9838 2369,9779
 Schloßstr. (Steglitz): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 5370,6486 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215 5165,6119 5137,6066 5099,5994 5091,5979 5083,5964 5048,5904 5018,5854 4998,5817 4982,5789 4963,5754 4946,5725 4900,5648 4861,5581 4832,5522 4767,5389 4745,5344 4741,5309 4677,5274 4593,5235 4512,5199 4432,5160 4343,5112
 Tauentzienstr.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 5782,10884 5907,10821 5942,10803 6025,10746 6133,10679 6171,10657
@@ -32765,7 +32769,7 @@ EOF
 EOF
      },
      { from  => 1621880668, # 2021-05-24 20:24
-       until => $isodate2epoch->("2021-09-17 18:00:00"), # 1630447200, # 2021-09-01 00:00
+       until => 1630858251, # bereits fertig --- $isodate2epoch->("2021-09-17 18:00:00"), # 1630447200, # 2021-09-01 00:00
        text  => 'Soorstr.: zwischen Masurenallee und Bredtschneiderstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte September 2021',
        type  => 'handicap',
        data  => <<EOF,
@@ -32773,10 +32777,7 @@ EOF
 #: source_id: 2147347187 (Anbindung Soorstraße gesperrt, bis 25.6.2021)
 #: source_id: viz2021:13.278934,52.506793,17.05.2021,07:00 (bis 9.7.2021)
 #: source_id: viz2021:13.278934,52.506793,09.07.2021,10:00 (Leitungsarbeiten bis 17.9.2021)
-#: also_indoor: traffic
-#: last_checked: 2021-05-24
-#: check_frequency: 60d
-#: next_check: 2021-09-17
+# REMOVED --- #: also_indoor: traffic --- #: last_checked: 2021-05-24 --- #: check_frequency: 60d --- #: next_check: 2021-09-17
 	q4::inwork 1861,11284 1884,11126 1865,11082
 EOF
      },

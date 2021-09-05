@@ -4365,7 +4365,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-08-21 (daf)
+#: last_checked: 2021-09-05
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 ',
@@ -4425,16 +4425,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '	2::temp 8367,10745 8350,10662 8335,10518
-',
-         'from' => undef,
-         'id' => 3226,
-         'recurring' => 1,
-         'text' => 'Zufahrt "Gleis Park": Tore, kann möglicherweise abgesperrt sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -4472,7 +4463,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-09-02
+#: last_checked: 2021-09-05
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4621,7 +4612,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
-#: last_checked: 2021-05-20 (architektur-urbanistik)
+#: last_checked: 2021-09-05
 #: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 ',
@@ -5156,23 +5147,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'until' => 1631743199
        },
        undef,
-       {
-         'data' => '#: note: laut Schild der Wasserbetriebe bis August 2021
-#: source_id: 2147347187 (Anbindung Soorstraße gesperrt, bis 25.6.2021)
-#: source_id: viz2021:13.278934,52.506793,17.05.2021,07:00 (bis 9.7.2021)
-#: source_id: viz2021:13.278934,52.506793,09.07.2021,10:00 (Leitungsarbeiten bis 17.9.2021)
-#: also_indoor: traffic
-#: last_checked: 2021-05-24
-#: check_frequency: 60d
-#: next_check: 2021-09-17
-	q4::inwork 1861,11284 1884,11126 1865,11082
-',
-         'from' => 1621880668,
-         'id' => 3379,
-         'text' => 'Soorstr.: zwischen Masurenallee und Bredtschneiderstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Mitte September 2021',
-         'type' => 'handicap',
-         'until' => 1631894400
-       },
+       undef,
        undef,
        undef,
        {

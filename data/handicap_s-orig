@@ -239,7 +239,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-09-01
+#: last_checked: 2021-09-05
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2021-08-24 (mapillary)
@@ -350,7 +350,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2021-08-31 vvv
+#: last_checked: 2021-09-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -573,14 +573,18 @@ Fasanenstr.: Engstelle in Höhe Kantstr., Radfahrer werden über den Bürgersteig g
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_14_0981_1088_online.pdf (Erwähnung des B-Plans 4-19)
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
-#: last_checked: 2021-07-10
+#: last_checked: 2021-09-05
 #: check_frequency: 60d
 #: next_check: 2022-10-01
 # REMOVED --- #: next_check: 2020-02-03
 # REMOVED --- #: valid: -20200227
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
 # 
-# REMOVED (mittlerweile keine Gehweg-Schilder (mehr?), Durchgang ist breit genug) --- #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html --- #: next_check: 2020-04-27 --- Pariser Str./Bundesallee: Bauarbeiten, ggfs. schieben	q4::inwork 5416,9928 5464,9914
+#: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
+#: last_checked: 2021-09-05
+#: check_frequency: 90d
+#: next_check: 2022-10-01
+Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwork 5461,9923 5423,9932 5382,9942
 # 
 ### Neukölln ###
 # 
@@ -744,7 +748,7 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/wohnpanorama-gleisdreieck.434/
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2021-09-02 vvv
+#: last_checked: 2021-09-05 vvv
 # REMOVED (hier kaum noch Einschränkungen) --- Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
 Dennewitzstr.: Einbahnstraßenregelung, gemeinsamer Geh- und Radweg	q3::inwork; 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
@@ -881,7 +885,7 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9750,14132 9676,14046
 (Frankfurter Allee - Liebigstr.): Fußgänger	q2 13885,12279 13927,12370
-Otto-Ludwig-Str.: Fußgängerzone	q2 4862,10881 4948,10872
+Otto-Ludwig-Str.: Fußgängerzone	q2 4857,10909 4930,10903
 #: XXX_prog BS Bordstein zur Friedrichstr., ansonsten q3 oder trotzdem q4 (wegen der vielen Touristen)
 Mauerstr. (Mitte): Touristen, Bordsteine	q4 9405,11413 9474,11360
 #: XXX_prog BS Bordstein zur Friedrichstr., ansonsten bleibt es bei q3
@@ -2792,7 +2796,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: osm_watch: way id="26995453" version="7"
+#: osm_watch: way id="26995453" version="8"
 #: last_checked: 2021-09-03
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-09-02
@@ -3772,7 +3776,7 @@ Hempstücken: kurvenreich	q2 -7506,126 -7542,201 -7632,204
 #: XXX_prog: Gegenrichtung ist durch 1s:q3 abgedeckt, sollte besser gelöst sein...
 Joachimstr. (Köpenick): Bodenschwellen	q1; 21907,5517 22009,5593
 #: by: Christian Grosch
-Jeanne-Mammen-Bogen: Fußgängerzone	q3 4948,10872 5090,10868
+Jeanne-Mammen-Bogen: Fußgängerzone	q3 4930,10903 5084,10890
 #: by: Hans-Joachim Lagermann:
 Holwedestr.: schmale Straße	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 # 
