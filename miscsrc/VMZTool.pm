@@ -52,6 +52,8 @@ use constant BIBER_URL => "https://biberweb.vmz.services/v3/incidents/biber?bbox
 # Berlin
 use constant VMZ_2021_DATA_URL => 'https://api.viz.berlin.de/daten/baustellen_sperrungen.json';
 
+use constant USE_VMZ_2021_WGET_HACK => 1;
+
 # historical URLs
 # the following two are out-of-order
 use constant MELDUNGSLISTE_URL => 'http://asp.vmzberlin.com/VMZ_LSBB_MELDUNGEN_WEB/Meldungsliste.jsp?back=true';
@@ -180,12 +182,18 @@ sub fetch_vmz_2021 {
     my($self, $file) = @_;
     my $ua = $self->{ua};
 
-    my $resp = $ua->get(
-			VMZ_2021_DATA_URL,
-			':content_file' => $file,
-		       );
-    if (!$resp->is_success) {
-	die "Failed while fetching " . VMZ_2021_DATA_URL . ":\n" . $resp->dump;
+    if (USE_VMZ_2021_WGET_HACK) {
+	my @cmd = ('wget', '-O'.$file, VMZ_2021_DATA_URL);
+	system @cmd;
+	die "Running '@cmd' failed" if $? != 0 || !-s $file;
+    } else {
+	my $resp = $ua->get(
+			    VMZ_2021_DATA_URL,
+			    ':content_file' => $file,
+			   );
+	if (!$resp->is_success) {
+	    die "Failed while fetching " . VMZ_2021_DATA_URL . ":\n" . $resp->dump;
+	}
     }
 }
 
