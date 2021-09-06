@@ -1596,6 +1596,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: source_id: 2147342856 (bis 31.07.2020)
 #: source_id: viz2021:13.511893,52.471182,25.06.2021,08:00 (Leitungsarbeiten bis 15.11.2021)
 #: source_id: viz2021:13.503014,52.480172,19.07.2021,07:00 (Leitungsarbeiten bis 6.8.2021)
+#: source_id: viz2021:13.506418,52.475944,06.09.2021,08:00 (Leitungsarbeiten bis 1.1.2022, allerdings in die andere Richtung)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
@@ -4212,8 +4213,7 @@ Verbundsteinpflaster	RW1;RW1 -2959,17507 -3085,17504
 asphaltiert	RW1; -2959,17507 -2934,17594 -2906,17661 -2871,17749 -2866,17760 -2835,17843 -2813,17904 -2806,17922 -2764,18035 -2744,18090 -2724,18149
 asphaltierter Gehweg für Radfahrer frei, relativ breit	RW1; -2724,18149 -2721,18247 -2741,18333 -2759,18400 -2821,18620 -2827,18639 -2900,18887
 asphaltierter Gehweg für Radfahrer frei	RW1; -2900,18887 -2827,18639 -2821,18620 -2759,18400 -2741,18333 -2721,18247 -2724,18149 -2744,18090 -2764,18035 -2806,17922 -2813,17904 -2835,17843
-asphaltiert	RW1; -2835,17843 -2866,17760 -2871,17749
-	RW1; -2871,17749 -2906,17661 -2934,17594
+asphaltiert	RW1; -2835,17843 -2866,17760 -2871,17749 -2906,17661 -2934,17594
 Verbundsteinpflaster	RW1; -2934,17594 -2959,17507
 #: note: kurze Verbundsteinpflasterabschnitte
 #: note: wahrscheinlich kein "offizieller" Zweirichtungsradweg

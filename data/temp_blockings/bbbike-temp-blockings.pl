@@ -22932,23 +22932,22 @@ EOF
 	2::inwork 2219,11324 2180,11318 2102,11307
 EOF
      },
-     { from  => $isodate2epoch->("2019-09-12 15:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-09-15 22:00:00"),
+     { from  => $isodate2epoch->("2021-09-10 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-09-11 22:00:00"),
        periodic => 1, # erster Termin im Jahr
-       #recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
-       recurrence_prewarn_days => -13,
-       recurrences => [["yearly", days => 1, months => 9, start => "2020-10-25T00:00:00"]],
+       recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
        # früher: Fest der Nationen
-       text  => 'Prager Platz: Veranstaltung "Fest der Vielfalt", Durchfahrt nicht möglich, vom 13.9.2019 15 Uhr bis 15.9.2019 22 Uhr',
+       # früher: Prager Platz
+       text  => 'Nikolsburger Platz: Veranstaltung "Fest der Vielfalt", Durchfahrt vermutlich nicht möglich, am 11.9.2021 von 14 bis 20 Uhr',
        type  => 'gesperrt',
        source_id => 'http://www.partnerschaftsverein-charlottenburg.de/05-Termine/05.html',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.932471.php (Absage 2020)
 #: by: https://www.charlottenburg-wilmersdorf-zeitung.de/fest-der-vielfalt-am-prager-platz/ (11. September 2021, 14-20 Uhr, Nikolsburger Platz/Trautenaustraße)
-#: XXX findet das Fest 2021 tatsächlich statt? (falls ja -> Ort & Datum ändern!)
-#: next_check: 2021-09-10
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1123056.php
 #: note: kein tempex-Ausdruck möglich
-	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
+# REMOVED ---	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
+	2::temp 5291,9675 5374,9619 5314,9588 5297,9579 5291,9675
 EOF
      },
      { from  => 1390086000, # 2014-01-19 00:00
@@ -32711,22 +32710,26 @@ EOF
      },
      { from  => $isodate2epoch->("2021-08-22 17:00:00"), # 1626374087, # 1626386400, # 2021-07-16 00:00
        until => $isodate2epoch->("2021-10-11 17:00:00"), # 1626374091, # 1630360799, # 2021-08-30 23:59
-       text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts gesperrt, mögliche Beeinträchtigungen für Radfahrer, vom 23. August 2021 bis 11. Oktober 2021',
+       text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts zwischen Smetanastr. und Indira-Gandhi-Str. gesperrt, vom 23. August 2021 bis 11. Oktober 2021',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
        data  => <<EOF,
 #: next_check_id: BERLINERALLEE-2021
 #: source_id: viz2021:13.454427,52.549049,23.08.2021,07:00
-#: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer? vvv
-#: note: laut rbb kann der Radverkehr den Sperrbereich passieren
+# REMOVED --- #: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer? vvv
+#: note: laut rbb kann der Radverkehr den Sperrbereich passieren (stimmt aber nicht)
 #: also_indoor: traffic
-#: next_check: 2021-08-23 vvv
+#: last_checked: 2021-08-31 (mapillary) vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2021-08-23 vvv
 # REMOVED (hier nicht?) ---	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994
 # REMOVED (hier nicht, laut mapillary) ---	q3::inwork; 13737,15994 13826,16026 14015,16103
 	q4::inwork; 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
 # REMOVED (Umleitung anscheinend via Lehderstr.) ---	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
-#: next_check ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# REMOVED --- #: add_fragezeichen ^^^
 Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
 EOF
      },
@@ -33455,6 +33458,15 @@ EOF
        source_id => 'viz2021:13.316247,52.586804,31.08.2021,09:00',
        data  => <<EOF,
 	q4::inwork; 4262,20025 4319,20182
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Kolonie am See: Weg kann sonntags, feiertags und nachts ab 20h gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: tempex: su,holiday,(mo-sa T20:00-sunrise)
+	2::night:weekend -2245,21544 -2242,21927
 EOF
      },
     );

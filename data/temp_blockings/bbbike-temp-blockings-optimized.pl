@@ -2454,30 +2454,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.laubinger.de/event/28-heimatfest-erkner/ (Absage 2020)
-#: by: https://www.laubinger.de/event/28-heimatfest-erkner/?date=20210415 (2021)
-	2::temp 34421,1950 34359,2165 34250,2546
-',
-         'from' => 1630533600,
-         'id' => 2078,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              5,
-                              'start',
-                              '2020-06-08T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.erkner.de/271.html?date=20190415',
-         'text' => 'Erkner: Heimatfest, 3.9.2021 bis 5.9.2021',
-         'type' => 'gesperrt',
-         'until' => 1630893600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3268,7 +3245,31 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.932471.php (Absage 2020)
+#: by: https://www.charlottenburg-wilmersdorf-zeitung.de/fest-der-vielfalt-am-prager-platz/ (11. September 2021, 14-20 Uhr, Nikolsburger Platz/Trautenaustraße)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1123056.php
+#: note: kein tempex-Ausdruck möglich
+# REMOVED ---	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
+	2::temp 5291,9675 5374,9619 5314,9588 5297,9579 5291,9675
+',
+         'from' => 1631224800,
+         'id' => 2533,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'http://www.partnerschaftsverein-charlottenburg.de/05-Termine/05.html',
+         'text' => 'Nikolsburger Platz: Veranstaltung "Fest der Vielfalt", Durchfahrt vermutlich nicht möglich, am 11.9.2021 von 14 bis 20 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1631390400
+       },
        undef,
        undef,
        undef,
@@ -4103,23 +4104,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
-#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
-#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="21"
-# REMOVED (ja) --- #: add_fragezeichen: Ist der Weg mittlerweile wieder offen? --- #: XXX laut osm wieder offen --- #: last_checked: 2019-08-24 --- #: next_check: 2019-09-28
-	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
-',
-         'from' => 1630670400,
-         'id' => 3086,
-         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke gesperrt, von Sonnabend, den 04.09.2021, 14:00 Uhr, bis Montag, den 06.09.2021, 4:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1630893600
-       },
+       undef,
        undef,
        {
          'data' => '	2::night:weekend 18320,2195 18448,2182 18491,2128
@@ -5106,22 +5091,26 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: BERLINERALLEE-2021
 #: source_id: viz2021:13.454427,52.549049,23.08.2021,07:00
-#: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer? vvv
-#: note: laut rbb kann der Radverkehr den Sperrbereich passieren
+# REMOVED --- #: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer? vvv
+#: note: laut rbb kann der Radverkehr den Sperrbereich passieren (stimmt aber nicht)
 #: also_indoor: traffic
-#: next_check: 2021-08-23 vvv
+#: last_checked: 2021-08-31 (mapillary) vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2021-08-23 vvv
 # REMOVED (hier nicht?) ---	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994
 # REMOVED (hier nicht, laut mapillary) ---	q3::inwork; 13737,15994 13826,16026 14015,16103
 	q4::inwork; 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
 # REMOVED (Umleitung anscheinend via Lehderstr.) ---	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
-#: next_check ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# REMOVED --- #: add_fragezeichen ^^^
 Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
 ',
          'from' => 1629644400,
          'id' => 3374,
          'source_id' => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
-         'text' => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts gesperrt, mögliche Beeinträchtigungen für Radfahrer, vom 23. August 2021 bis 11. Oktober 2021',
+         'text' => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts zwischen Smetanastr. und Indira-Gandhi-Str. gesperrt, vom 23. August 2021 bis 11. Oktober 2021',
          'type' => 'handicap',
          'until' => 1633964400
        },
@@ -5594,6 +5583,16 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Triftstr.: zwischen Holzhauser Str. und Am Nordgraben ist die Fahrbahn gesperrt (Richtung Norden), vom 31.08.2021 09:00 bis 15.10.2021 17:00 Uhr',
          'type' => 'handicap',
          'until' => 1634310000
+       },
+       {
+         'data' => '#: tempex: su,holiday,(mo-sa T20:00-sunrise)
+	2::night:weekend -2245,21544 -2242,21927
+',
+         'from' => undef,
+         'id' => 3440,
+         'text' => 'Kolonie am See: Weg kann sonntags, feiertags und nachts ab 20h gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
