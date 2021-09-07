@@ -4134,9 +4134,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12474,16443 12564,16399 12725,16321 12764,16302 12797,16285 12826,16271 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 #: last_checked: 2021-08-27 (mapillary) vvv
-#: next_check: 2021-09-08 vvv
+#: next_check: 2021-09-22 vvv
 #: note: hier nur an der Kreuzung Berliner Allee
-#: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 8.9.2021)
+#: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 22.9.2021)
 	q3::inwork 13508,15912 13312,16027
 # REMOVED (hier nicht mehr) ---	q4::inwork 13312,16027 13250,16058 13189,16089 12943,16214
 # REMOVED (hier nicht mehr? "zwischen Roelckestr. und Gustav-Adolf-Str. sowie ...") ---	q4::inwork 12943,16214 12859,16255 12826,16271 12797,16285 12764,16302 12725,16321 12564,16399 12474,16443 12399,16479
@@ -4150,7 +4150,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
          'text' => 'Langhansstr.: in Höhe Antonplatz ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, voraussichtlich bis 8.9.2021',
          'type' => 'handicap',
-         'until' => 1631113200
+         'until' => 1632322800
        },
        undef,
        undef,
@@ -4744,7 +4744,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-07-10
+#: last_checked: 2021-08-20 (osm note)
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 ',
@@ -4783,7 +4783,22 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1637337600
        },
-       undef,
+       {
+         'data' => '#: next_check_id: ABBESTR-2021
+#: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
+#: note: reopened, es gibt wieder Bauzäune
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2021-09-06 (osm)
+#: check_frequency: 30d
+	2::inwork 4674,12076 4698,12124
+# REMOVED (hier nicht mehr) ---	q3::inwork 4698,12124 4755,12236
+',
+         'from' => undef,
+         'id' => 3325,
+         'text' => 'Abbestr.: Bauarbeiten, Fahrbahn zwischen Guerickestr. und Fraunhoferstr. kann gesperrt sein, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: next_check_id: PARKSTADTKARLSHORST-2021
@@ -5593,6 +5608,16 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Kolonie am See: Weg kann sonntags, feiertags und nachts ab 20h gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork; 11991,14060 12017,14098 12077,14186
+',
+         'from' => 1631210400,
+         'id' => 3441,
+         'source_id' => 'viz2021:13.428217,52.532012,10.09.2021,20:00',
+         'text' => 'Greifswalder Str.: stadtauswärts zwischen Käthe-Niederkirchner-Str. und Hufelandstr. Kranabbau, Fahrbahn gesperrt, vom 10.09.2021 20:00 bis 13.09.2021 05:00 ',
+         'type' => 'handicap',
+         'until' => 1631502000
        }
      
 );
