@@ -7995,7 +7995,7 @@ EOF
        text  => 'B 246 Bahnübergang in der OD Storkow Gleisbauarbeiten Vollsperrung 27.04.2007-30.04.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 46737,-16548 47038,-17056 47112,-17150
+	2::inwork 46737,-16548 47038,-17056 47052,-17078
 EOF
      },
      { from  => 1177192800, # 2007-04-22 00:00
@@ -8503,7 +8503,7 @@ EOF
        text  => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 01.06.2007-03.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 44269,-15317 44343,-15112 44369,-14650
+	2::inwork 44284,-15441 44343,-15112 44385,-14657
 EOF
      },
      { from  => 1181426400, # 2007-06-10 00:00
@@ -8511,7 +8511,7 @@ EOF
        text  => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 11.06.2007-12.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 44269,-15317 44343,-15112 44369,-14650
+	2::inwork 44284,-15441 44343,-15112 44385,-14657
 EOF
      },
      { from  => 1181858400, # 2007-06-15 00:00
@@ -8519,7 +8519,7 @@ EOF
        text  => 'K 6747 Groß Schauen-Alt Stahnsdorf Bahnübergang bei Philadelphia Gleisbauarbeiten Vollsperrung 16.06.2007-20.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 44269,-15317 44343,-15112 44369,-14650
+	2::inwork 44284,-15441 44343,-15112 44385,-14657
 EOF
      },
      { from  => 1180562400, # 2007-05-31 00:00
@@ -8527,7 +8527,7 @@ EOF
        text  => 'K 6748 Kummersdorf-Alt Stahnsdorf Bahnübergang in Kummersdorf Gleisbauarbeiten Vollsperrung 01.06.2007-15.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 43279,-13594 42804,-13910 42430,-14398
+	2::inwork 43241,-13479 42804,-13910 42430,-14398
 EOF
      },
      { from  => 1180821600, # 2007-06-03 00:00
@@ -8543,7 +8543,7 @@ EOF
        text  => 'L 040 L 23 Storkow-L 39 Friedersdorf Bahnübergang bei Kummersdorf Gleisbauarbeiten Vollsperrung 18.06.2007-22.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 44261,-14205 43456,-14384 42430,-14398
+	2::inwork 44229,-14131 43456,-14384 42430,-14398
 EOF
      },
      { from  => undef, # 
@@ -9761,7 +9761,7 @@ EOF
        text  => 'K 6747 Alt Stahnsdorf - L 23, AS Storkow zw. Neu Stahnsdorf und Alt Stahnsdorf Straßenbauarbeiten Vollsperrung 20.08.2007-14.09.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 44592,-9998 44336,-9931 44273,-10358 43912,-10589 43744,-11591 43467,-12187 43278,-12804
+	2::inwork 44586,-9922 44386,-9872 44323,-9918 44311,-10068 44186,-10302 43897,-10507 43840,-10623 43743,-11378 43740,-11511 43348,-12400 43278,-12804
 EOF
      },
      { from  => 1188079200, # 2007-08-26 00:00
@@ -13645,7 +13645,7 @@ EOF
        text  => 'L 040 L23 Storkow - Friedersdorf Durchlass bei Kummersdorf Ersatzneubau Durchlass Vollsperrung 20.03.2009-30.03.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 44261,-14205 43456,-14384 42430,-14398
+	2::inwork 44229,-14131 43456,-14384 42430,-14398
 EOF
      },
      { from  => 1238277600, # 2009-03-28 23:00
@@ -15238,7 +15238,7 @@ EOF
        text  => 'L 040 L 23, Storkow - Friedersdorf zw. Abzw. Rieplos und Abzw. Alt Stahnsdorf Deckenerneuerung Vollsperrung 27.07.2009-10.08.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 45753,-14154 45263,-14192 44580,-14101 44261,-14205
+	2::inwork 45709,-14094 45659,-14125 45210,-14118 44507,-14021 44229,-14131
 EOF
      },
      { from  => 1247781600, # 2009-07-17 00:00
@@ -15466,7 +15466,7 @@ EOF
        text  => 'L 040 L 23, Storkow - Friedersdorf zw. Abzw. Alt Stahnsdorf u. Abzw. Kummersdorf Deckenerneuerung Vollsperrung 12.08.2009-28.08.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 44261,-14205 43456,-14384 42430,-14398
+	2::inwork 44229,-14131 43456,-14384 42430,-14398
 EOF
      },
      { from  => 1249250400, # 2009-08-03 00:00
@@ -33480,6 +33480,18 @@ EOF
        source_id => 'viz2021:13.428217,52.532012,10.09.2021,20:00',
        data  => <<EOF,
 	q4::inwork; 11991,14060 12017,14098 12077,14186
+EOF
+     },
+     { from  => 1630965600, # 2021-09-07 00:00
+       until => 1638313199, # 2021-11-30 23:59
+       text  => 'Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer: Bauarbeiten an der Eisenbahnüberführung, komplette Sperrung des Weges, bis November 2021',
+       type  => 'gesperrt',
+       source_id => 'https://www.dresdnerbahn.de/mediathek/file/371/XuemcxFdBKgO2ODB13RfVD6NGI-aMFPmtCRyf_fgMuk/Downloads/20210604_DrB_virtuelle_Buergerinfo_online.pdf',
+       data  => <<EOF,
+#: XXX Ursprünglich wurde 08/2021 als Beginn geplant, das hat sich aber um einen Monat verschoben --- vielleicht das Ende auch?
+#: add_fragezeichen: Bis wann genau geht die Sperrung?
+#: next_check: 2021-11-01
+	2::inwork 7673,4223 7769,4315
 EOF
      },
     );

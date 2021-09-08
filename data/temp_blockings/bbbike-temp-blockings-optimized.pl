@@ -5618,6 +5618,19 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Greifswalder Str.: stadtauswärts zwischen Käthe-Niederkirchner-Str. und Hufelandstr. Kranabbau, Fahrbahn gesperrt, vom 10.09.2021 20:00 bis 13.09.2021 05:00 ',
          'type' => 'handicap',
          'until' => 1631502000
+       },
+       {
+         'data' => '#: XXX Ursprünglich wurde 08/2021 als Beginn geplant, das hat sich aber um einen Monat verschoben --- vielleicht das Ende auch?
+#: add_fragezeichen: Bis wann genau geht die Sperrung?
+#: next_check: 2021-11-01
+	2::inwork 7673,4223 7769,4315
+',
+         'from' => 1630965600,
+         'id' => 3442,
+         'source_id' => 'https://www.dresdnerbahn.de/mediathek/file/371/XuemcxFdBKgO2ODB13RfVD6NGI-aMFPmtCRyf_fgMuk/Downloads/20210604_DrB_virtuelle_Buergerinfo_online.pdf',
+         'text' => 'Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer: Bauarbeiten an der Eisenbahnüberführung, komplette Sperrung des Weges, bis November 2021',
+         'type' => 'gesperrt',
+         'until' => 1638313199
        }
      
 );
