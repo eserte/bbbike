@@ -2194,6 +2194,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 15144,10905
 	X 15272,10790
 	F 11270,13412
+#: off: night (seen Th 2021-09-09 22:20)
 	X 14170,10675
 # 
 #: next_check_id: FRIEDRICH-2020
@@ -2287,7 +2288,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, wird aber vermutlich für die Anschlussstelle wieder neu errichtet
-#: last_checked: 2021-08-29
+#: last_checked: 2021-09-09
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -3523,7 +3524,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2021-08-08 vvv
+#: last_checked: 2021-09-09 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738
@@ -3549,6 +3550,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X 46926,-16265
+	Zbr 47077,-15816
 	X 36295,48210
 	X 31943,48571
 	X -45864,-1044
@@ -3623,7 +3626,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 25883,-11875
 	B -17834,-6837
 	F 25779,-9534
-	B 25627,-5177
+	B 25623,-5181
 	X 26466,-10409
 #: note: Anforderungsampel
 	F 26099,-6131
@@ -4003,7 +4006,7 @@ unbeschrankter Bahnübergang	B0 -19229,62430
 	B 44287,133631
 	B 26494,-13883
 	B 26600,-14550
-	B 46004,-16440
+	B 46002,-16436
 	B 56301,83419
 	B 59937,36197
 	B 26040,-6233

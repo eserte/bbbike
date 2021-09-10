@@ -3071,7 +3071,7 @@ Karolinenhofweg: Beton	Q0 25983,-1156 26034,-1223 26061,-1313 26066,-1422
 Karolinenhofweg: unbefestigte Straße	Q2 26066,-1422 26044,-1529
 Karolinenhofweg: Asphalt	Q0 26077,-846 25953,-1016 25990,-1146
 Karolinenhofweg: Asphalt	Q0 26129,-807 26107,-833 26077,-846
-Vetschauer Allee: Kopfsteinpflaster	Q2; 26133,-935 26077,-846
+Vetschauer Allee: Kopfsteinpflaster (oder Asphalt zwischen den Straßenbahnschienen)	Q1; 26133,-935 26077,-846
 Rehfeldtstr.: Asphalt	Q0 26190,-853 26129,-807
 Rehfeldtstr.: schlechtes Kopfsteinpflaster	Q3 26129,-807 26073,-745
 Rehfeldtstr.: unbefestigt	Q2 26073,-745 26045,-718 26004,-705 25958,-731
@@ -3714,7 +3714,7 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Eingang Columbiadamm - Rundkurs auf dem Flughafen Tempelhof): etwas welliger Asphalt	Q1 10598,8270 10729,8152
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof): Asphalt/Beton/Verbundsteinpflaster	Q1 10384,8628 10360,8521 10354,8493
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof): alte Platten	Q2 10354,8493 10298,8245
-(Rundkurs auf dem Flughafen Tempelhof): Beton	Q0 9525,7558 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10037,8269 10298,8245 10575,8218 10729,8152 10909,8003 11090,7916 11264,7882 11355,7871 11388,7777 11460,7447 11518,7314
+(Rundkurs auf dem Flughafen Tempelhof): Beton	Q0 9525,7558 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10037,8269 10298,8245 10575,8218 10729,8152 10902,8012 11090,7916 11264,7882 11355,7871 11388,7777 11460,7447 11518,7314
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm): Asphalt	Q0 9525,7558 9431,7425
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm): Verbundsteinpflaster	Q0 9431,7425 9386,7326 9300,7312 9302,7294 9242,7286
 (Rundkurs auf dem Flughafen Tempelhof): teils sehr guter Asphalt	Q0 11460,7802 11470,7744 11472,7732 11543,7369 11593,7314 11596,7280 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9474,7182
@@ -3730,9 +3730,9 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 (zur nördlichen Landebahn): Asphalt	Q0 11470,7744 11430,7781
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.): Asphalt	Q0 11460,7802 11439,7894
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof): Asphalt	Q0 11472,7899 11458,7897 11439,7894
-(Strecke an der nordöstlichen Begrenzung): Asphalt	Q0 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10803,8251 10644,8363
+(Strecke an der nordöstlichen Begrenzung): Asphalt	Q0 11439,7894 11418,8015 11319,8010 11298,8097 11153,8145 11000,8067 10803,8251 10644,8363
 (Strecke an der nordöstlichen Begrenzung): Asphalt	Q0 10644,8363 10360,8521
-(Strecke an der nordöstlichen Begrenzung - Rundkurs): Asphalt	Q0 11005,8064 10909,8003
+(Strecke an der nordöstlichen Begrenzung - Rundkurs): Asphalt	Q0 11000,8067 10902,8012
 (Weg parallel zur Oderstr.): Asphalt	Q0 11458,7897 11490,7737 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
 (Flughafen Tempelhof - Eingang Oderstr.): Asphalt	Q0 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn): Asphalt	Q0 9302,7294 9351,7241 9474,7182
@@ -3949,8 +3949,8 @@ Bruchgrabenweg: Asphalt	Q0 20114,11233 20089,11227 19976,11238 19858,11249 19795
 Vorstadtweg: Asphalt	Q0 19858,11249 19840,11000 19831,10916
 Rundweg: Asphalt	Q0 19976,11238 19967,11140 19926,11048 19868,11002 19840,11000
 Büxensteinallee: Asphalt	Q0 22766,1226 22572,1159 22525,1139
-Büxensteinallee: Kleinsteinpflaster, leicht uneben	Q1 22525,1139 22368,1081 22228,1071
-(Sportallee): Waldweg	Q1 22583,1004 22368,1081
+Büxensteinallee: Kleinsteinpflaster, leicht uneben	Q1 22525,1139 22376,1084 22228,1071
+(Sportallee): Waldweg	Q1 22583,1004 22376,1084
 Dahmestr. (Grünau): schlechtes Kopfsteinpflaster	Q3 22466,2030 22538,1878 22662,1638
 Hirtengarten: Asphalt	Q0 23654,2051 23634,2148 23638,2185
 Stahnweg: Asphalt	Q0 22995,2823 23063,2842
@@ -10719,6 +10719,7 @@ Pembabogen: Betonpflaster	Q0 -2750,19013 -2747,19074 -2745,19146 -2647,19149 -25
 Tahitiweg: Betonpflaster	Q0 -2647,19149 -2647,19070 -2647,19009
 Tasmanienweg: Betonpflaster	Q0 -2747,19074 -2647,19070 -2547,19067
 Dernburgstr.: Verbundsteinpflaster	Q1 2673,10670 2596,10663
+(Libboldallee - Adlergestell): Waldweg	Q2 22583,1004 22312,919
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

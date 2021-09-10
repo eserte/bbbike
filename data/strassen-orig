@@ -132,7 +132,7 @@ Lilienthalstr.	N 10615,8558 10633,8705 10640,8832 10661,8914 10675,8940 10748,90
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof)	NN 10384,8628 10360,8521 10354,8493 10298,8245
 (Rundkurs auf dem Flughafen Tempelhof)	NN 11460,7802 11470,7744 11472,7732 11543,7369 11593,7314 11596,7280 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9474,7182 9545,7426 9525,7558
 (Rundkurs auf dem Flughafen Tempelhof)	NN 9525,7558 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10037,8269 10298,8245 10575,8218
-(Rundkurs auf dem Flughafen Tempelhof)	NN 10575,8218 10729,8152 10909,8003 11090,7916 11264,7882 11355,7871 11388,7777 11460,7447 11518,7314
+(Rundkurs auf dem Flughafen Tempelhof)	NN 10575,8218 10729,8152 10902,8012 11090,7916 11264,7882 11355,7871 11388,7777 11460,7447 11518,7314
 (nördlicher Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm)	NN 9525,7558 9431,7425 9386,7326 9300,7312 9302,7294 9242,7286
 (Weg parallel zum Tempelhofer Damm)	NN 9300,7312 9281,7651 9281,7795
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg)	NN 9562,7796 9372,7798 9281,7795
@@ -152,8 +152,8 @@ Lilienthalstr.	N 10615,8558 10633,8705 10640,8832 10661,8914 10675,8940 10748,90
 (Südliche Landebahn - Eingang Oderstr.)	NN 11555,7314 11596,7280 11608,7267
 (Eingang Oderstr./Herrfurthstr. - nördliche Landebahn)	NN 11439,7894 11460,7802
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof)	NN 11472,7899 11458,7897 11439,7894
-(Strecke an der nordöstlichen Begrenzung)	NN 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10803,8251 10644,8363 10360,8521
-(Strecke an der nordöstlichen Begrenzung - Rundkurs)	NN 11005,8064 10909,8003
+(Strecke an der nordöstlichen Begrenzung)	NN 11439,7894 11418,8015 11319,8010 11298,8097 11153,8145 11000,8067 10803,8251 10644,8363 10360,8521
+(Strecke an der nordöstlichen Begrenzung - Rundkurs)	NN 11000,8067 10902,8012
 (Weg parallel zur Oderstr.)	NN 11458,7897 11490,7737 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
 (Eingang Kienitzer Str. - Flughafen Tempelhof)	NN 11504,7738 11490,7737 11482,7735 11472,7732
 (Flughafen Tempelhof - Eingang Allerstr.)	NN 11507,7647 11521,7638
@@ -3173,7 +3173,7 @@ Michael-Brückner-Str.	HH 17728,5756 17782,5698 17829,5648 17886,5587 17960,5511 
 Adlergestell	HH 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464 19946,3415 20002,3349 20010,3340 20064,3278 20207,3115 20289,3033 20339,2983 20451,2869 20565,2754 20868,2443 20928,2378 21041,2259 21055,2244 21242,2048 21388,1895 21506,1768
 Adlergestell	H 21998,1239 21937,1343 21874,1511 21862,1532
 Adlergestell	H 21506,1768 21812,1366 21837,1340 22096,1136
-Adlergestell	H 21998,1239 22096,1136 22162,1067 22351,862 22547,651 22916,402 23225,192 23457,35 24485,-667 25731,-1524 26286,-1901 26698,-2322 26871,-2500 26939,-2574 27017,-2660 27112,-2764 27139,-2793 27226,-2892 27270,-2941 27304,-2979 27351,-3032
+Adlergestell	H 21998,1239 22096,1136 22162,1067 22312,919 22351,862 22547,651 22916,402 23225,192 23457,35 24485,-667 25731,-1524 26286,-1901 26698,-2322 26871,-2500 26939,-2574 27017,-2660 27112,-2764 27139,-2793 27226,-2892 27270,-2941 27304,-2979 27351,-3032
 Adlergestell	NN 21388,1895 21515,1785 21800,1644 21856,1573 21881,1513 21998,1239
 Wernsdorfer Str.	H 27351,-3032 27418,-3019 27518,-3054 27552,-3075 27596,-3097 27633,-3118 27721,-3164 27761,-3165 27898,-3171 28055,-3276 28438,-3438 29772,-3599 30343,-3454 30390,-3443 30519,-3462
 #: note: früher vielleicht mal der "Forstweg" gewesen
@@ -3257,6 +3257,7 @@ Rainweg	N 25006,-3014 25000,-3001 24970,-2945 25012,-2857 25028,-2846 25113,-279
 Rainweg [Stichstraße]	N 25028,-2846 24977,-2753
 Schlierseestr.	N 22548,2081 22466,2030 22378,1970
 Libboldallee	N 22583,1004 22821,1086
+(Libboldallee - Adlergestell)	NN 22583,1004 22312,919
 Rießerseestr.	N 22570,1607 22662,1638 22732,1668
 Dahmestr. (Grünau)	N 22466,2030 22538,1878 22662,1638
 Königsseestr.	N 22448,1824 22538,1878 22617,1925
@@ -3274,9 +3275,9 @@ Wassersportallee [Nebenstraße]	N 22152,1179 22208,1103
 Parksteig	NN 22583,1004 22525,1139 22453,1294
 Baderseestr.	N 22493,1325 22572,1159
 #: note: Straßenlaternen existieren
-Büxensteinallee	NN 22162,1067 22228,1071 22368,1081 22525,1139
+Büxensteinallee	NN 22162,1067 22228,1071 22376,1084 22525,1139
 Büxensteinallee	N 22525,1139 22572,1159 22766,1226
-(Sportallee)	NN 22583,1004 22368,1081
+(Sportallee)	NN 22583,1004 22376,1084
 Eibseestr.	N 22462,1547 22560,1377
 Grauammerpfad	N 21242,2048 21271,2131 21301,2189 21359,2270 21421,2268 21502,2266
 Schilfsängersteig	N 21454,1976 21406,2005 21385,2031
@@ -3901,12 +3902,14 @@ Trabener Str.	N 1981,9865 1927,9820 1904,9745 1756,9610 1709,9567 1562,9436 1457
 Hilde-Ephraim-Str.	N 1312,9220 1261,9285 1662,9642 1709,9663 1718,9653 1756,9610
 Rosensteinweg	N 1718,9653 1917,9821 1927,9820
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1086857.php (BVV entscheidet am 27.5.2021 über Umbenennung)
+#: by: https://www.berliner-woche.de/grunewald/c-politik/wissmannstrasse-soll-baraschstrasse-heissen_a311232
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7965 (Bericht bis 31.7.2021 erwartet) (nächste BVV am 19.8.2021)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/buergerbeteiligung/aktuelle-projekte/umbenennung-wissmannstrasse/
 #: note: früher mit Zusatz "(Grunewald)"
 #: XXX Umbenennung zu Baraschstr. soll erfolgen (allerdings gibt es noch keinen Amtsblatt-Eintrag)
+#: also_indoor: search Wissmannstraße Baraschstraße
 #: osm_watch: way id="4623428" version="10"
-#: next_check: 2021-09-10
+#: next_check: 2021-09-17
 Wissmannstr.	N 1341,9244 1421,9173 1434,9154 1483,9132 1569,9137 1708,9298
 Winkler Str.	N 936,8933 1037,8884 1090,8892 1316,9067 1434,9154
 Erdener Str.	N 1457,9344 1587,9320 1708,9298 1757,9282 1782,9270
@@ -5732,7 +5735,7 @@ Sterndamm	H 17648,5338 17705,5223
 #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2
 #: confirmed_by: srt
 #: XXX provisorische Verbindung, asphaltiert
-#: last_checked: 2021-06-17 (bahninfo-forum)
+#: last_checked: 2021-09-09
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 Sterndamm [Nebenfahrbahn]	NN 17648,5338 17697,5347
@@ -5774,9 +5777,9 @@ Landfliegerstr.	N 18042,4667 18157,4742 18207,4780 18228,4796 18254,4817
 Landfliegerstr.	NN 18254,4817 18296,4850
 # REMOVED (existiert zwischenzeitlich nicht mehr) --- (Landfliegerstr. - Am Betriebsbahnhof Schöneweide)	N 18228,4796 18254,4817
 # 
-#: XXX bleibt diese Straße erhalten?
+#: XXX bleibt diese Straße erhalten? -> der südöstliche Abschnitt zur Zeit gesperrt, siehe gesperrt-orig
 #: osm_watch: way id="33712134" version="4"
-#: last_checked: 2021-07-04
+#: last_checked: 2021-09-09
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 

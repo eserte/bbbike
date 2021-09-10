@@ -641,7 +641,7 @@ Verbundsteinpflaster	RW2;RW2 30893,-3670 30901,-3737 30880,-3864
 Verbundsteinpflaster	RW2;RW8 30880,-3864 30875,-3899 30745,-4228
 asphaltiert	RW10;RW10 30745,-4228 30627,-4342
 Verbundsteinpflaster, Radweg führt teilweise etwas weiter von der Straße entfernt	RW2;RW8 30627,-4342 30400,-4526 30171,-4643 29726,-4804 29337,-5094 28628,-5900 28470,-6223
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 27454,-12435 27214,-12421 26814,-12261 26765,-12240 26528,-12146 26454,-12119
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 27454,-12435 27214,-12421 26814,-12261 26765,-12240 26659,-12197 26528,-12146 26454,-12119
 Gehweg für Radfahrer frei	RW1; 26454,-12119 26419,-12089 26418,-11850
 Gehweg für Radfahrer frei	RW9;RW1 26454,-12119 26435,-12545
 Verbundsteinpflaster	RW2; 26359,-12549 26138,-12596
@@ -1156,10 +1156,21 @@ alte Betonplatten	RW2; -47451,-1704 -47274,-1884 -47061,-1918
 Verbundsteinpflaster	RW2;RW2 -47451,-1704 -47718,-1540 -48109,-1346 -48300,-987
 Verbundsteinpflaster	RW1; -47260,-967 -47029,-1188
 Verbundsteinpflaster	RW1; -46984,-1234 -47029,-1188 -47260,-967
-Suggestivstreifen	RW3; 26711,-11894 26577,-11847 26512,-11847 26418,-11850
+Suggestivstreifen	RW3; 26711,-11894 26685,-11884 26577,-11847 26512,-11847 26468,-11847
 Gehweg für Radfahrer frei	RW1; 25581,-6359 25400,-6408
 gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2; 32181,48853 32253,49050 32435,49151 33718,49958 34017,50103
 Gehwegplatten	RW2; 37641,48251 37711,48239
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 46843,-16468 46926,-16265 47042,-16103
+gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2;RW8 46926,-16265 47005,-16322
+gemeinsamer Rad- und Gehweg, Asphalt	RW2;RW8 47005,-16322 47216,-16480 47407,-16558
+gemeinsamer Rad- und Gehweg, Asphalt	RW2;RW8 47407,-16558 47600,-16665
+gemeinsamer Rad- und Gehweg, Gehwegplatten, abschnittsweise eng	RW2; 46650,-16275 46553,-16245 46402,-16245 46276,-16314 46231,-16324 46119,-16353 46068,-16367 46019,-16414 46002,-16436 45975,-16477
+#: by: mapillary
+gemeinsamer Rad- und Gehweg, Gehwegplatten, abschnittsweise eng	RW2; 46737,-16548 46653,-16378 46643,-16338 46650,-16275
+#: by: osm, mapillary
+Gehweg für Radfahrer frei	RW1; 46019,-16414 46068,-16367 46119,-16353 46231,-16324 46276,-16314 46402,-16245 46553,-16245 46650,-16275 46643,-16338 46653,-16378 46737,-16548
+#: by: srt (südlicher Abschnitt), osm (Rest)
+gemeinsamer Rad- und Gehweg	RW2;RW8 44536,-17050 44536,-17037 44492,-16921 44350,-16574 44314,-16420 44338,-16247 44294,-16189 44287,-16116
 ######################### User Contributions #################################
 #: by: Johannes (...schmeisser...)
 #: confirmed_by: mapillary
@@ -1306,12 +1317,12 @@ Verbundsteinpflaster	RW2; 26466,-10409 26442,-10452
 #: note: außerdem als Zweirichtungsweg gekennzeichnet --- möglicherweise für Radfahrer aus Richtung Niederlehme
 Gehweg für Radfahrer frei	RW2; 26442,-10452 26466,-10409
 Gehweg für Radfahrer frei	RW1;RW1 26442,-10452 26429,-10647
-Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 26429,-10647 26418,-10992 26281,-11160 26267,-11381
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 26429,-10647 26418,-10992 26281,-11160 26273,-11289 26267,-11381
 # REMOVED --- #: XXX wird die Qualität der Gehwege nach den Bauarbeiten besser sein? Wird sich was an der Benutzungspflicht ändern? --- #: source_id: LS/722-W/19/200 --- #: next_check: 2019-12-13
 Gehweg für Radfahrer frei, neues Verbundsteinpflaster	RW1;RW1 26178,-11660 26265,-11528 26267,-11381
 	RW1; 26466,-10409 26446,-10394 26453,-10235
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 26453,-10235 26446,-10394
-neu asphaltiert	RW2;RW8 26453,-10235 26450,-10134 26434,-10054 26420,-10035 26391,-9997 26376,-9924
+neu asphaltiert	RW2;RW8 26453,-10235 26450,-10134 26434,-10054 26420,-10035 26386,-9964 26376,-9924
 # REMOVED (realisiert) --- #: source_id: LS/722-W/20/105 (inaktiv) --- #: XXX Werden hier die Radverkehrsanlagen neu gemacht? Wird es dann auch einen Radweg auf der anderen Seite geben? --- #: last_checked: 2020-11-15 (mapillary) --- #: next_check: 2020-12-21 --- #: note: früher alter Asphalt, und nur Richtung Norden
 Gehweg für Radfahrer frei, Gehwegplatten	RW1;RW1 26376,-9924 26365,-9875 26381,-9753
 Gehweg für Radfahrer frei, Gehwegplatten	RW1;RW1 26381,-9753 26429,-9618
@@ -1530,8 +1541,8 @@ Gehweg für Radfahrer frei	RW1; 30910,13101 30961,12993 30982,12947 31036,12900 3
 Verbundsteinpflastergehweg für Radfahrer frei	RW1; 31036,12900 30982,12947 30961,12993 30910,13101
 Gehweg für Radfahrer frei	RW1;RW1 31148,12804 31043,12392 31021,12174
 Gehweg für Radfahrer frei	RW1; 35491,-19481 35775,-19610 35843,-19658
-asphaltiert	RW2;RW8 32239,-18183 34198,-18951 35291,-19392 35491,-19481
-asphaltiert	RW2;RW8 28642,-17918 28685,-17889 29190,-17813 30916,-17835 31281,-17723 31474,-17723
+asphaltiert	RW2;RW8 32239,-18183 32294,-18204 34198,-18951 35291,-19392 35491,-19481
+asphaltiert	RW2;RW8 28642,-17918 28685,-17889 29190,-17813 30916,-17835 31281,-17723 31400,-17722 31474,-17723
 	RW2; 28577,-17830 28642,-17918
 asphaltiert	RW2;RW8 20009,-14413 19928,-14290 19754,-14177 19559,-13943 19494,-13746 19143,-13150 18330,-11054
 	RW2;RW8 14132,-9883 13866,-9861 13560,-9733
@@ -1635,8 +1646,8 @@ asphaltiert	RW2;RW8 -639,71253 -512,71225 11,70970 87,70962 332,71050
 	RW7;RW7 1848,69268 2094,69757 2148,69831 2253,69908 2741,69985
 	RW6;RW6 4506,63785 4549,63855 4600,63927
 gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2; 25831,-5163 25760,-5191
-gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2;RW2 25760,-5191 25694,-5172 25627,-5177 25570,-5180
-Gehweg für Radfahrer frei	RW1; 25570,-5180 25600,-5426 25610,-5468 25652,-5602 25671,-5632 25782,-5801
+gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2;RW2 25760,-5191 25694,-5172 25623,-5181 25571,-5188
+Gehweg für Radfahrer frei	RW1; 25571,-5188 25600,-5426 25610,-5468 25652,-5602 25671,-5632 25782,-5801
 Gehweg für Radfahrer frei, asphaltiert	RW1;RW9 27868,-13034 27765,-12940 27734,-12853 27690,-12732 27454,-12435
 Gehweg für Radfahrer frei, teilweise asphaltiert, teilweise Verbundsteinpflaster	RW1; 28470,-6223 28335,-6499 28293,-6586 28059,-7381 27872,-7725 27786,-8235 27746,-8475 27669,-9000 27657,-9179
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 27577,-9515 27535,-10033 27485,-10246 27469,-10314
@@ -1694,6 +1705,7 @@ Gehweg für Radfahrer frei	RW1; -11146,-3489 -11008,-3382
 	RW2; 1370,-1295 1437,-1298 1477,-1282
 Verbundsteinpflaster	RW; 1916,-1090 1865,-1139 1477,-1282 1437,-1298 1370,-1295
 neu asphaltiert	RW2;RW2 1182,-2170 1186,-1973 1335,-1472 1370,-1295
+#: XXX existiert dieser Radweg noch? (laut osm-Notiz nicht mehr)
 teilweise Verbundsteinpflaster, teilweise mäßiger Beton	RW2;RW8 -559,-2471 0,-2845 86,-2903
 	RW6;RW6 19054,-903 19131,-1039 19190,-1158
 	RW6;RW6 18819,-1163 19031,-1042

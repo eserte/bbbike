@@ -2163,7 +2163,7 @@ EOF
        text  => 'K 6152; (Gussower Str.); OD Gräbendorf, ab B246 bis OA Kanal- und Straßenbau Vollsperrung 27.06.2005-30.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 31863,-18000 32922,-16523
+	q4 31837,-17968 32007,-17740 32922,-16523
 EOF
      },
      { from  => 1119477600, # 2005-06-23 00:00
@@ -9483,7 +9483,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006085',
        data  => <<EOF,
-	1::inwork 23225,192 22916,402 22547,651 22351,862 22162,1067
+	1::inwork 23225,192 22916,402 22547,651 22351,862 22312,919 22162,1067
 EOF
      },
      { from  => undef, # 
@@ -11709,7 +11709,7 @@ EOF
        text  => 'B 246 R.-Breitscheid-, E.-Thälmann-, Schauener Str. OD Storkow Deckenerneuerung Vollsperrung 30.03.2009-25.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 46518,-16240 46409,-16251 46004,-16440
+	q4::inwork 46650,-16275 46553,-16245 46402,-16245 46276,-16314 46231,-16324 46119,-16353 46068,-16367 46019,-16414 46002,-16436
 EOF
      },
      { from  => 1211234400, # 2008-05-20 00:00
@@ -17970,7 +17970,7 @@ EOF
 (Eingang Columbiadamm/Golßener Str. - Rundkurs auf dem Flughafen Tempelhof)	2::night 10384,8628 10360,8521 10354,8493 10298,8245
 (Rundkurs auf dem Flughafen Tempelhof)	2::night 11460,7802 11470,7744 11472,7732 11543,7369 11593,7314 11596,7280 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9474,7182 9545,7426 9525,7558
 (Rundkurs auf dem Flughafen Tempelhof)	2::night 9525,7558 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10037,8269 10298,8245 10575,8218
-(Rundkurs auf dem Flughafen Tempelhof)	2::night 10575,8218 10729,8152 10909,8003 11090,7916 11264,7882 11355,7871 11388,7777 11460,7447 11518,7314
+(Rundkurs auf dem Flughafen Tempelhof)	2::night 10575,8218 10729,8152 10902,8012 11090,7916 11264,7882 11355,7871 11388,7777 11460,7447 11518,7314
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm)	2::night 9525,7558 9431,7425 9386,7326 9300,7312 9302,7294 9242,7286
 (Weg parallel zum Tempelhofer Damm)	2::night  9300,7312 9281,7651 9281,7795
 (Eingang Peter-Strasser-Weg)	2::night 9281,7795 9240,7811
@@ -17985,8 +17985,8 @@ EOF
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.)	2::night 11460,7802 11439,7894
 (Herrfurthstr. - Rundkurs)	2::night 11439,7894 11355,7871
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof)	2::night 11472,7899 11458,7897 11439,7894
-(Strecke an der nordöstlichen Begrenzung - Rundkurs)	2::night 11005,8064 10909,8003
-(Strecke an der nordöstlichen Begrenzung)	2::night 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10803,8251 10644,8363 10360,8521
+(Strecke an der nordöstlichen Begrenzung - Rundkurs)	2::night 11000,8067 10902,8012
+(Strecke an der nordöstlichen Begrenzung)	2::night 11439,7894 11418,8015 11319,8010 11298,8097 11153,8145 11000,8067 10803,8251 10644,8363 10360,8521
 (Weg parallel zur Oderstr.)	2::night 11458,7897 11490,7737 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
 (Eingang Kienitzer Str.)	2::night 11504,7738 11490,7737 11482,7735 11472,7732
 (Flughafen Tempelhof - Eingang Allerstr.)	2::night 11507,7647 11521,7638
@@ -19535,11 +19535,11 @@ EOF
        data  => <<EOF,
 #: by: http://www.tempelhoferfreiheit.de/ueber-die-tempelhofer-freiheit/aktuelles/die-challenge-bibendum-startet/
 #: by: http://www.tempelhoferfreiheit.de/fileadmin/user_upload/Ueber_die_Tempelhofer_Freiheit/Aktuelles/Plan_ChallengeBibendum2011-THF.jpg
-	2::temp 11355,7871 11388,7777 11279,7768 10204,7680 9653,7635 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10037,8269 10298,8245 10354,8493 10360,8521 10644,8363 10803,8251 11005,8064 10909,8003
+	2::temp 11355,7871 11388,7777 11279,7768 10204,7680 9653,7635 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10037,8269 10298,8245 10354,8493 10360,8521 10644,8363 10803,8251 11000,8067 10902,8012
 	2::temp 9362,7616 9522,7624 9525,7558
 	2::temp 10360,8521 10384,8628
 	2::temp 10575,8218 10729,8152 10598,8270 10575,8218 10298,8245
-	2::temp 10729,8152 10909,8003 11090,7916 11264,7882
+	2::temp 10729,8152 10902,8012 11090,7916 11264,7882
 	2::temp 10598,8270 10644,8363 10691,8532
 EOF
      },
@@ -28019,13 +28019,14 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html',
        data  => <<EOF,
+#: next_check_id: BHFZEUTHEN-2018
 #: by: https://www.bahninfo-forum.de/read.php?9,672773,672947#msg-672947
 #: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
 #: osm_watch: way id="36936021" version="5" brb
-#: last_checked: 2021-07-23
+#: last_checked: 2021-09-09
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2020-11-01
-	2::inwork 25929,-5994 25902,-6006
+	2::inwork 25929,-5994 25902,-6006 25893,-6002
 EOF
      },
      { from  => 1532988000, # 2018-07-31 00:00
@@ -28726,7 +28727,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-08-27 (mapillary)
+#: last_checked: 2021-09-09
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -31795,7 +31796,7 @@ EOF
 #: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2021-07-10
+#: last_checked: 2021-09-09
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -31931,15 +31932,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1631222771, # am Adlergestell keine Absperrungen oder Verbote mehr # undef, # XXX
        text  => 'B96a: Radweg fertig, aber noch nicht offiziell eröffnet',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: B96A-2020
-#: osm_watch: way id="877995097" version="2"
-#: by: https://twitter.com/VIZ_Berlin/status/1354746716914900992 (anhand der Fotos nicht erkennbar)
-#: add_fragezeichen: Wann ist der Radweg offiziell befahrbar?
-#: last_checked: 2021-07-17
+# REMOVED --- #: next_check_id: B96A-2020 --- #: osm_watch: way id="877995097" version="2" --- #: by: https://twitter.com/VIZ_Berlin/status/1354746716914900992 (anhand der Fotos nicht erkennbar) --- #: add_fragezeichen: Wann ist der Radweg offiziell befahrbar? --- #: last_checked: 2021-07-17
 	2::inwork 21874,1511 21829,1351 21656,989 21613,923 21286,449 21115,271
 EOF
      },
@@ -32991,12 +32988,12 @@ EOF
 EOF
      },
      { from  => 1627768800, # 2021-08-01 00:00
-       until => $isodate2epoch->("2021-09-24 17:00:00"), # 1632520799, # 2021-09-24 23:59
+       until => $isodate2epoch->("2021-09-13 16:00:00"), # 1632520799, # 2021-09-24 23:59
        text  => 'Steglitzer Damm: Bauarbeiten, Fahrbahn zwischen Bismarckstr. und Heinrich-Seidel-Str. Richtung Osten gesperrt, vom 02.08. bis zum 24.09.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1099818.php',
        data  => <<EOF,
-#: source_id: viz2021:13.337982,52.451062,02.08.2021,06:00
+#: source_id: viz2021:13.337982,52.451062,02.08.2021,06:00 (nur noch bis 13.9.2021)
 	q4::inwork; 6055,4950 6182,4931 6187,4930 6215,4926 6276,4915 6354,4901 6385,4896 6531,4865
 EOF
      },
@@ -33052,15 +33049,15 @@ EOF
 EOF
      },
      { from  => 1625250931, # 2021-07-02 20:35
-       until => 1631570400, # 2021-09-14 00:00
-       text  => 'Frankfurter Allee: Überqueren in Höhe Weichselstr./Waldeyerstr. und Müggelstr. nicht möglich, bis 13.09.2021',
+       until => $isodate2epoch->("2022-03-31 18:00:00"), # 1631570400, # 2021-09-14 00:00
+       text  => 'Frankfurter Allee: Überqueren in Höhe Weichselstr./Waldeyerstr. und Müggelstr. nicht möglich, möglicherweise bis März 2022',
        type  => 'gesperrt',
        source_id => 'viz2021:13.471852,52.513916,22.06.2021,07:00',
        data  => <<EOF,
 #: next_check_id: FRANKFURTER-2021
 #: last_checked: 2021-09-01 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2021-09-13 vvv
+#: next_check: 2022-03-31 vvv
 	3 14888,11934 14926,12129 15003,12241
 	3 15003,12241 14926,12129 14888,11934
 	3 14888,11934 14926,12129 14854,12137
@@ -33414,13 +33411,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Treptower Park: Teile des Parks sind nachts gesperrt (von 22:00 bis 04:00 Uhr)',
+       text  => 'Treptower Park: Teile des Parks können nachts gesperrt sein (von 22:00 bis 04:00 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1120239.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_37_3401_3492_online.pdf
 #: XXX bis wann bleibt die Sperrung bestehen? vvv
-#: last_checked: 2021-08-29 vvv
+#: note: der Verbindungsweg Puschkinallee und Am Treptower Park war nicht gesperrt: Do 2021-09-09 gegen 22:20 Uhr
+#: last_checked: 2021-09-09 vvv
 #: check_frequency: 30d vvv
 	2::night 15668,9140 15631,9114 15580,9181 15604,9215 15693,9194 15683,9136
 	2::night 14478,9545 14384,9565 14316,9542 14318,9688
@@ -33479,6 +33477,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.428217,52.532012,10.09.2021,20:00',
        data  => <<EOF,
+#: source_id: viz2021:13.42832,52.53198,10.09.2021,20:00
 	q4::inwork; 11991,14060 12017,14098 12077,14186
 EOF
      },
@@ -33492,6 +33491,15 @@ EOF
 #: add_fragezeichen: Bis wann genau geht die Sperrung?
 #: next_check: 2021-11-01
 	2::inwork 7673,4223 7769,4315
+EOF
+     },
+     { from  => 1626559200, # 2021-07-18 00:00
+       until => $isodate2epoch->("2022-04-30 23:59:59"),
+       text  => 'Glindow - Klaistow: zwischen Autobahnanschlussstelle und Poststraße Bauarbeiten, Fahrbahn gesperrt, für Radfahrer existiert eine Umleitungsstrecke (bei BBBike ist diese nicht bekannt), bis 30.4.2022',
+       type  => 'gesperrt',
+       source_id => 'LS/723-P/20/113',
+       data  => <<EOF,
+	2::inwork -25222,-11698 -24174,-8751 -23816,-7874
 EOF
      },
     );

@@ -682,9 +682,10 @@ asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 teilweise mit Leitboys geschützt	RW4; 14208,12235 14291,12220 14381,12205 14427,12197 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur, evtl. bleibt diese permanent
-#: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 13.09.2021)
+#: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
 #: last_checked: 2021-09-01
-#: next_check: 2021-09-13
+#: check_frequency: 30d
+#: next_check: 2022-03-31
 	RW4; 14926,12129 14994,12121 15117,12106
 	RW2; 15117,12106 15361,12071
 # 
@@ -905,7 +906,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-08-29
+#: last_checked: 2021-09-09
 #: check_frequency: 60d
 # REMOVED (vermutlich ohne baldige Änderung) --- #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1280,7 +1281,7 @@ alte Gehwegplatten, kürzere Abschnitte mit neuem Verbundsteinpflaster	RW1; 14605
 Verbundsteinpflasterradweg, OK	RW1; 14994,3245 14930,3194 14816,3162 14675,3117 14605,3087 14541,3060
 alte Gehwegplatten	RW1; 14541,3060 14392,2979
 Verbundsteinpflaster	RW8;RW2 21998,1239 22096,1136 22162,1067
-Verbundsteinpflaster	RW8;RW2 22162,1067 22351,862
+Verbundsteinpflaster	RW8;RW2 22162,1067 22312,919 22351,862
 asphaltiert mit einigen Schäden	RW8;RW2 22351,862 22547,651 22916,402
 asphaltiert, breit	RW8;RW2 22916,402 23225,192 23457,35
 asphaltiert	RW8;RW2 23457,35 24485,-667 25731,-1524
@@ -1639,7 +1640,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2021-08-08
+#: last_checked: 2021-09-09
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2294,7 +2295,7 @@ Verbundsteinpflaster, einige Wurzelhebungen	RW1; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2021-06-14
+#: last_checked: 2021-08-11 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -3139,7 +3140,8 @@ Radweg nur aufgemalt	RW1;RW1 6304,16447 6360,16511 6489,16658 6572,16718 6630,16
 Gehweg für Radfahrer frei	RW1; 21569,5730 21522,5771
 	RW3; 21522,5771 21470,5809 21365,5832
 Gehweg für Radfahrer frei	RW1; 21365,5832 21303,5826
-Gehweg für Radfahrer frei	RW1;RW1 21569,5730 21596,5693 21602,5685 21706,5541 21789,5427
+# REMOVED (hier nicht, siehe https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1124786.php ) --- Gehweg für Radfahrer frei	RW1; 21569,5730 21596,5693 21602,5685 21706,5541 21789,5427
+Gehweg für Radfahrer frei	RW1; 21789,5427 21706,5541 21602,5685 21596,5693 21569,5730
 die letzten 70 Meter sind benutzungspflichtig	RW1; 21789,5427 21954,5229
 	RW1; 21954,5229 21789,5427
 die letzten Meter sind benutzungspflichtig	RW3; 10755,13152 10923,13156
@@ -3740,7 +3742,7 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 #	RW4; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
 #	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905
 #: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv
-#: last_checked: 2021-07-23 vvv
+#: last_checked: 2021-09-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 Busspur ist immer gültig	RW5; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374
@@ -3754,7 +3756,7 @@ Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337
 #: also_indoor: traffic (G) vvv
 #: source_id: 2147346053 vvv
 #: source_id: viz2021:13.51214,52.454886,09.07.2020,07:00 vvv
-#: last_checked: 2021-08-22 (krickstadt) vvv
+#: last_checked: 2021-09-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-10-01 vvv
 	RW3; 17736,5441 17886,5587
@@ -6045,7 +6047,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünmarkierung und weitere Radwegschilder geben
-#: last_checked: 2021-07-14 vvv
+#: last_checked: 2021-09-09 vvv
 #: check_frequency: 60d
 Gelbmarkierung	RW3;RW3 12639,8344 12598,8390
 	RW4; 12639,8344 12689,8289
@@ -6053,7 +6055,7 @@ Gelbmarkierung	RW3;RW3 12639,8344 12598,8390
 #: last_checked ^^^
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-07-14
+#: last_checked: 2021-09-09
 #: check_frequency: 60d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünmarkierung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
@@ -6088,11 +6090,11 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-07-14
+#: last_checked: 2021-09-09
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
-#: last_checked: 2021-07-14
+#: last_checked: 2021-09-09
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -6875,7 +6877,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: source_id: viz2021:13.377751,52.500368,22.03.2021,07:00 (bis 23.7.2021)
 #: osm_watch: way id="4401920" version="52"
 #: confirmed_by: srt
-#: last_checked: 2021-09-05
+#: last_checked: 2021-09-10
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-07-23
 provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
@@ -6956,11 +6958,11 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
 #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
-#: last_checked: 2021-08-11 vvv
+#: last_checked: 2021-08-26 (mapillary) vvv
 # REMOVED --- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-06-30 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
-#: osm_watch: way id="30184955" version="24"
+#: osm_watch: way id="30184955" version="25"
 provisorisch geschützter Radstreifen	RW4;RW4 11393,10390 11512,10105
 # REMOVED --- #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
