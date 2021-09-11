@@ -12042,7 +12042,7 @@ EOF
        text  => 'L 051 Burg - Straupitz zw. Byhleguhre und Burg Montage von Brückenelementen Vollsperrung 10.07.2008-10.07.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 62695,-60612 63083,-59893
+	2::inwork 62643,-60636 62897,-60190
 EOF
      },
      { from  => 1215900000, # 2008-07-13 00:00
@@ -13653,7 +13653,7 @@ EOF
        text  => 'L 051 Cottbus - Burg Kreisel Briesen Ri. Burg Ausbauarbeiten Vollsperrung 30.03.2009-19.04.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 67790,-65471 69116,-65620 69513,-65962 70038,-66419 70748,-67199 71950,-68237 72284,-68499
+	2::inwork 67780,-65446 68899,-65505 69513,-65962 70038,-66419 70748,-67199 71950,-68237 72284,-68499
 EOF
      },
      { from  => 1238709600, # 2009-04-03 00:00
@@ -15814,7 +15814,7 @@ EOF
        text  => 'L 051 Hauptstr. OL Burg, zw. Krabatweg u. Bahnhofstr. Festumz. Heimat-u.Trachtenfest Vollsperrung 30.08.2009-30.08.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::temp 62498,-63227 62522,-62647
+	q4::temp 62476,-63192 62563,-63064 62568,-62881 62522,-62647
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00
@@ -33055,7 +33055,7 @@ EOF
        source_id => 'viz2021:13.471852,52.513916,22.06.2021,07:00',
        data  => <<EOF,
 #: next_check_id: FRANKFURTER-2021
-#: last_checked: 2021-09-01 vvv
+#: last_checked: 2021-09-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-31 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -33148,9 +33148,9 @@ EOF
 #: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
-#: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends
+#: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-09-03
+#: last_checked: 2021-09-11
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862

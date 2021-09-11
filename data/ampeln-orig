@@ -2287,8 +2287,8 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 10815,11662
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
-#: XXX zurzeit keine Ampel, wird aber vermutlich für die Anschlussstelle wieder neu errichtet
-#: last_checked: 2021-09-09
+#: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
+#: last_checked: 2021-09-11
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -3087,7 +3087,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20221231 vvv
-#: last_checked: 2021-08-08 vvv
+#: last_checked: 2021-09-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
@@ -3098,10 +3098,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X::inwork 14193,6556
 #: check_frequency ^^^
 #: last_checked ^^^
-#: note: Anforderungsampel
-#: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen
-#: last_checked: 2021-04-04
-	F::inwork 14239,6875
+# REMOVED --- #: note: Anforderungsampel --- #: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen --- #: last_checked: 2021-04-04 ---	F::inwork 14239,6875
 #: note: Anforderungsampel
 #: last_checked: 2021-08-08
 	F::inwork 14139,6786
@@ -3524,7 +3521,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2021-09-09 vvv
+#: last_checked: 2021-09-11 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738
@@ -3551,7 +3548,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 ################################################################################
 #: note: Ampeln elsewhere vvv
 	X 46926,-16265
-	Zbr 47077,-15816
+Umgehung mit Treppen existiert	Zbr 47077,-15816
 	X 36295,48210
 	X 31943,48571
 	X -45864,-1044

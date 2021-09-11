@@ -435,12 +435,12 @@ Bus 296	busroute_N 17725,11228 17730,11330 17732,11374 17734,11408 17609,11467 1
 Bus 296, Bus 396	busroute_N 18718,8583 18787,8540 18846,8616 18778,8663 18737,8686
 Bus 240, Bus 296	busroute_N 17169,11677 17020,11748 16977,11769 16958,11778
 Bus 194, ...	busroute_N 17848,11204 17807,11219 17725,11228 17719,11092
-# REMOVED (Linie wurde eingestellt) --- Bus 193	busroute_N 16859,12613 16957,12599 17088,12617 17234,12607 17301,12585 17357,12566 17346,12490 17314,12265 17375,12255 17471,12243 17300,12173 17195,12125 17139,12100 17092,12107 16994,12122 16890,12135
-Bus 256	busroute_N 16820,12339 16794,12144 16764,11919 16837,11920 16865,11931 16975,12000 17088,12069 17092,12107 17139,12100 17195,12125 17300,12173 17471,12243 17485,12240 17540,12222
+# REMOVED (Linie wurde eingestellt) --- Bus 193	busroute_N 16859,12613 16957,12599 17088,12617 17234,12607 17301,12585 17357,12566 17346,12490 17314,12265 17375,12255 17471,12243 17300,12173 17195,12125 17139,12100 17091,12105 16994,12122 16890,12135
+Bus 256	busroute_N 16820,12339 16794,12144 16764,11919 16837,11920 16865,11931 16975,12000 17088,12069 17091,12105 17139,12100 17195,12125 17300,12173 17471,12243 17485,12240 17540,12222
 # REMOVED (veränderte Linienführung) --- Bus 256	busroute_N 16865,11931 16890,12135 16794,12144
 Bus 240	busroute_N 16863,13138 16426,13145 15912,13153 15715,13157 15515,13134
 Bus 256	busroute_N 16430,15168 16522,15258 16618,15356 16686,15448 16767,15549 16811,15611 16884,15833
-Bus 294	busroute_N 17488,15766 17378,15760 17238,15764 17115,15769 17061,15773 16884,15833
+Bus 294	busroute_N 17488,15766 17378,15760 17238,15764 17115,15769 16946,15801 16884,15833
 Bus 256, Bus 294	busroute_N 16884,15833 16819,15912
 Bus 294	busroute_N 17940,15771 18173,15778 18576,15788 18623,15587 18422,15583 18177,15579 18173,15778
 Bus 156	busroute_N 15635,16833 15819,16857
@@ -1052,7 +1052,7 @@ Fliederweg: Privatstraße	CS -14731,644 -14769,582 -14776,560 -14732,528
 (Wollestr. - Mühlenstr.): Privatstraße	CS -10648,-1130 -10691,-1097 -10730,-1103 -10787,-1162 -10790,-1178
 An der Alten Brauerei: Privatstraße	CS -10925,-1705 -10970,-1670 -11014,-1643 -10994,-1617 -10953,-1645 -10970,-1670
 (Zum Exerzierhaus - Fritz-von-der-Lancken-Str.): Hausdurchfahrt	CS -13044,1991 -13044,1931
-(Werneuchener Str. - Neustrelitzer Str.): an der Phillip-Reis-Schule abbiegen	CP2; 16610,15000 16448,14831
+(Werneuchener Str. - Neustrelitzer Str.): an der Phillip-Reis-Schule abbiegen	CP2; 16610,15000 16541,14928
 ausgeschildert Richtung Gärten der Welt	CP2; 22101,13616 22110,13639
 Niemetzstr.: die ersten Meter sind als Böhmische Str. ausgeschildert	CP2; 13553,7594 13571,7588
 #: note: "Durchfahrt nicht erwünscht"
@@ -1235,7 +1235,7 @@ ausgeschildert als Rüdigerstr. 65+65 A-E	CP2; 17441,12247 17444,12286
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_50_5649_5788_online.pdf (Straßenbenennung)
 #: XXX dieser Weg wird auch in Minna-Todenhagen-Str. umbenannt --- evtl. auf einen Namen hier komplett verzichten. old_name-Eintrag?
 #: XXX wird hier noch irgendwie ausgeschildert?
-#: last_checked: 2021-07-04
+#: last_checked: 2021-09-11
 #: check_frequency: 120d
 Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17295,7328 17475,7451 17566,7485
 # REMOVED (hier: Heckenweg) --- Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17566,7485 17669,7515
@@ -1570,6 +1570,9 @@ Tahitiweg: noch nicht ausgeschildert	CS -2647,19149 -2647,19070 -2647,19009
 #: last_checked ^^^
 # 
 ausgeschildert als "Promenade"	CP2; -2245,21544 -2242,21927
+# 
+ausgeschildert als "Wilhelminenhofer Weg"	CP2; 28234,-25098 28692,-24856
+ausgeschildert als "Am Klein Köriser See"	CP2; 31385,-24079 31364,-24080
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)

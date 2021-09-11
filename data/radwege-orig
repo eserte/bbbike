@@ -683,7 +683,7 @@ teilweise mit Leitboys geschützt	RW4; 14208,12235 14291,12220 14381,12205 14427,
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur, evtl. bleibt diese permanent
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
-#: last_checked: 2021-09-01
+#: last_checked: 2021-09-11
 #: check_frequency: 30d
 #: next_check: 2022-03-31
 	RW4; 14926,12129 14994,12121 15117,12106
@@ -906,7 +906,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-09-09
+#: last_checked: 2021-09-11
 #: check_frequency: 60d
 # REMOVED (vermutlich ohne baldige Änderung) --- #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1250,15 +1250,16 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2021-08-08 vvv
+#: last_checked: 2021-09-11 vvv
 #: check_frequency: 30d vvv
 #	RW1;RW2 14051,6731 14139,6786 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
 #: note: von der Bergiusstr. aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
 #: osm_watch: way id="693065560" version="12"
-	RW2;RW2 14344,7003 14257,6895 14239,6875
+	RW2;RW1 14344,7003 14257,6895 14239,6875
 #: osm_watch: way id="679376891" version="9"
-	RW2;RW8 14239,6875 14153,6795 14139,6786 14051,6731
+	RW2;RW1 14239,6875 14153,6795 14139,6786
+	RW2;RW8 14139,6786 14051,6731
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1607,7 +1608,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2021-09-03 vvv
+#: last_checked: 2021-09-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-11-15 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -2988,12 +2989,11 @@ neu asphaltiert, relativ breit	RW2; 23404,5325 23420,5159 23433,5037 23444,4942 
 #: check_frequency ^^^
 #: last_checked ^^^
 	RW1;RW1 16428,7144 16507,7254
-	RW1;RW1 15723,6151 15768,6214
-	RW1; 15802,6266 15853,6339 15802,6266 15768,6214
-	RW1;RW1 15853,6339 15904,6410 15954,6481 16058,6629 16146,6755 16206,6836 16262,6913
+Verbundsteinpflaster	RW1;RW1 15723,6151 15768,6214
+	RW1; 15802,6266 15853,6339 15904,6410 15954,6481 16058,6629 16146,6755 16206,6836 16262,6913
 	RW3; 16262,6913 16274,6929 16286,6946 16328,7005
 	RW3; 16328,7005 16286,6946
-	RW1; 16286,6946 16274,6929 16262,6913
+Verbundsteinpflaster	RW1; 16286,6946 16274,6929 16262,6913 16206,6836 16146,6755 16058,6629 15954,6481 15904,6410 15853,6339 15802,6266 15768,6214
 	RW1;RW1 16328,7005 16375,7070
 	RW2;RW1 16375,7070 16428,7144
 	RW1;RW1 2668,8372 2678,8571 2680,8608 2685,8819 2706,9108
@@ -3189,9 +3189,9 @@ einzelne Poller, Leitboys und stellenweise Grünmarkierungen	RW4; 18382,13492 185
 einzelne Poller, Leitboys und stellenweise Grünmarkierungen	RW4; 18875,13467 18783,13469 18652,13476 18590,13480 18382,13492 18291,13500
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 Verbundsteinpflaster	RW2; 18291,13500 18226,13506
-asphaltiert	RW1; 18166,14277 18181,14110
-asphaltiert	RW2; 18181,14110 18166,14277
-asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
+asphaltiert	RW1; 18166,14277 18176,14108
+asphaltiert	RW2; 18176,14108 18166,14277
+asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 #: next_check_id: RHINSTRASSENBRUECKE-2018
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6391
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6616
@@ -3223,17 +3223,17 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: XXX provisorische Radwegführung über den Bürgersteig
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18225,12697 18220,12450
-# REMOVED (wird später vermutlich richtig gemacht) --- provisorische Radspur	RW4; 18220,12450 18216,12262 18216,12239 18215,12123
-#: last_checked: 2021-08-02 (mapillary) vvv
+# REMOVED (wird später vermutlich richtig gemacht) --- provisorische Radspur	RW4; 18220,12450 18216,12262 18216,12239 18216,12209 18215,12123
+#: last_checked: 2021-09-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-09-30 vvv
-	RW2; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
-	RW2; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123
+	RW0; 18215,12123 18216,12209
+	RW0; 18216,12209 18215,12123
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
-	RW4; 18225,12697 18235,13236 18226,13506
-	RW4; 18226,13506 18235,13236 18225,12697
+	RW4; 18216,12209 18216,12239 18216,12262 18220,12450 18225,12697 18235,13236 18226,13506
+	RW4; 18226,13506 18235,13236 18225,12697 18220,12450 18216,12262 18216,12239 18216,12209
 	RW4; 20150,13562 20186,13533
 	RW3; 20186,13533 20236,13526
 Verbundsteinpflaster und bröckelnder Beton	RW1; 22599,15105 22726,15082 22899,15073
@@ -4085,7 +4085,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: source_id: 2147342739
-#: last_checked: 2021-05-15 vvv
+#: last_checked: 2021-08-19 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str. Richtung Westen
@@ -4493,11 +4493,13 @@ gemeinsamer Geh- und Radweg	RW2;RW2 16838,6708 16909,6628 17216,6308 17293,6230
 Verbundsteinpflaster	RW2; 18166,14277 18141,14363 18057,14549
 	RW4; 18057,14549 18141,14363 18166,14277
 Betonplatten	RW2; 18057,14549 17991,14684 17937,14795 17886,14899
-	RW2; 17886,14899 17937,14795 17991,14684 18057,14549
+Betonplatten	RW2; 17886,14899 17937,14795
+Verbundsteinpflaster	RW2; 17937,14795 17991,14684 18057,14549
 Verbundsteinpflaster	RW2; 17886,14899 17829,15015
 Verbundsteinpflaster	RW1; 17829,15015 17789,15098
-neu asphaltiert, etwas breiter	RW1; 17789,15098 17706,15269 17626,15433 17569,15561 17532,15645 17488,15766
-	RW1; 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17789,15098 17829,15015 17886,14899
+neu asphaltiert, etwas breiter	RW1; 17789,15098 17774,15129 17706,15269 17626,15433 17569,15561 17532,15645 17488,15766
+neu asphaltiert, etwas breiter	RW1; 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17774,15129
+Verbundsteinpflaster	RW1; 17774,15129 17789,15098 17829,15015 17886,14899
 	RW1; 14584,17224 14673,17454
 #: by: mapillary
 	RW4;RW4 14673,17454 14731,17611
@@ -4775,9 +4777,13 @@ Verbundsteinpflaster	RW1; 21392,3732 21363,3699 21324,3691
 #: by: Oliver Kraft:
 #: confirmed_by: srt
 	RW1;RW1 -4033,1416 -4003,1234
-#: by: Kay Ludwig [AM]
-	RW1;RW1 16819,15912 16884,15833 17061,15773 17115,15769 17238,15764 17378,15760
-	RW2;RW1 17378,15760 17488,15766
+#: by: Kay Ludwig [AM] vvv
+Verbundsteinpflaster	RW1; 16819,15912 16884,15833
+Verbundsteinpflaster, relativ breit	RW1; 16884,15833 16946,15801 17115,15769 17238,15764 17378,15760
+Verbundsteinpflaster, etwas breiter	RW1; 17378,15760 17238,15764 17115,15769 16946,15801 16884,15833
+Verbundsteinpflaster	RW1; 16884,15833 16819,15912
+#: by: ^^^
+Verbundsteinpflaster	RW2;RW1 17378,15760 17488,15766
 #: by: Horst Friedrich [AM] vvv
 #: confirmed_by: srt vvv
 asphaltierter Rad- und Gehweg	RW2;RW2 15620,19809 15656,19946 15729,20221
@@ -4787,7 +4793,7 @@ asphaltierter Rad- und Gehweg	RW2;RW2 15778,20350 15872,20496 15900,20531 16025,
 #: confirmed_by ^^^
 #: by: ^^^
 # REMOVED (nicht bestätigt) --- #: by: anonymous ---	RW;RW 1304,537 1447,561 1525,581
-# REMOVED (kein straßenbegleitender Radweg) --- #: by: christel lehmann [AM] --- 	RW;RW 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198
+# REMOVED (kein straßenbegleitender Radweg) --- #: by: christel lehmann [AM] ---	RW;RW 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198
 #: by: christel lehmann [AM]
 #: corrected_by: srt (anscheinend nur ein kleines Stück Radweg):
 	RW;RW 21843,18198 21871,18244
@@ -6516,7 +6522,7 @@ asphaltiert	RW1;RW1 17681,6212 17847,6089
 	RW6;RW6 16152,3562 16227,3660
 	RW6;RW6 16254,3489 16338,3578
 	RW6;RW6 2021,2890 2108,2883
-	RW6;RW6 17540,12222 17749,12239 17785,12257
+	RW6;RW6 17540,12222 17764,12238 17790,12255
 	RW1; 3884,1187 3895,1219
 	RW1; 3920,1293 3895,1219
 	RW6;RW6 6363,4047 6428,4076 6493,4105 6517,4051 6452,4024 6428,4076
