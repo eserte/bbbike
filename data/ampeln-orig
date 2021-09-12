@@ -2288,7 +2288,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
-#: last_checked: 2021-09-11
+#: last_checked: 2021-09-12
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -2551,6 +2551,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 #: note: Anforderungsampel
 	F 8144,16754
 	F 4122,11694
+#: note: Anforderungsampel
 	F 10943,6498
 	X 4991,5531
 	X 21251,12767
@@ -2611,9 +2612,9 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 #: XXX_prog versetzt geschaltet (gesehen: Fr 2015-03-13 nachmittags)
 #: XXX_prog eigentlich sollen Radfahrer aus der Türken- in die Kongostr. diese Ampel benutzen, aber man könnte theoretisch auch die andere Radfahrerfurt nehmen
 	F 6429,16337
-#: off: Sunday (seen 2020-06-21 15:00)
+#: off: Sunday (seen 2020-06-21 15:00, 2021-09-12 13:00)
 	X 11871,5195
-#: off: Sunday (seen 2020-06-21 15:00)
+#: off: Sunday (seen 2020-06-21 15:00, 2021-09-12 13:00)
 	X 12060,5204
 	F 2580,24028
 	X 13398,15826
@@ -3125,7 +3126,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
-#: osm_watch: node id="4006030833" version="5"
+#: osm_watch: node id="4006030833" version="6"
 #: last_checked: 2021-08-08
 #: check_frequency: 60d
 	X::inwork 14174,7505

@@ -132,7 +132,10 @@ alte Betonplatten	RW;RW 39536,101514 39392,101477 39290,101451
 asphaltiert, teilweise leicht wellig	RW8;RW2 22771,16194 22809,16240 22889,16350 23015,16751 23024,16780 22993,17299
 Betonplatten	RW2; 22771,16194 22974,16139 23162,16095
 	RW3; 23162,16095 22974,16139 22771,16194
-Betonplatten	RW2;RW 23162,16095 23565,15993 23895,15904
+Betonplatten	RW2; 23162,16095 23565,15993 23895,15904
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9544 (kein Radweg mehr?)
+#: XXX existiert hier noch ein Radweg? laut osm nicht mehr...
+Betonplatten	RW; 23895,15904 23565,15993 23162,16095
 	RW1; 23895,15904 23965,15894 23992,15894
 Verbundsteinpflaster/Betonplatten	RW8;RW2 25632,11132 25912,11081
 	RW8;RW2 25912,11081 26449,10953 26596,10921

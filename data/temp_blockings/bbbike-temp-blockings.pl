@@ -29958,6 +29958,7 @@ EOF
        type  => 'gesperrt',
        source_id => '2147344558', # bis 2020-09-10
        data  => <<EOF,
+#: next_check_id: MARIENFELDERALLEE-2021
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 16.7.2021, Gesamtbaumaßnahme bis 2024)
@@ -29966,7 +29967,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G)
-#: last_checked: 2021-07-16 (baustellen-doku)
+#: last_checked: 2021-09-12
 #: check_frequency: 180d
 #: next_check: 2022-06-04
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
@@ -31005,7 +31006,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-09-05
+#: last_checked: 2021-09-12
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32008,7 +32009,7 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Katharina-Boll-Dornberger-Str.: Weg kann wegen Straßenbahnbauarbeiten gesperrt sein (Stand 22.8.2021: provisorischer Übergang existiert)',
+       text  => 'Katharina-Boll-Dornberger-Str.: Weg kann wegen Straßenbahnbauarbeiten gesperrt sein (Stand 5.9.2021: provisorischer Übergang existiert)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: STERNDAMM-2020
@@ -32017,7 +32018,7 @@ EOF
 #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2021-05-09-adlershof-2/40-2021-05-09-214-xxl.jpg (kein provisorischer Übergang mehr)
 #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt
 #: osm_watch: way id="855549020" version="1"
-#: last_checked: 2021-08-22 (krickstadt)
+#: last_checked: 2021-09-05 (krickstadt)
 #: check_frequency: 90d
 #: next_check: 2021-10-31
 	2::inwork 18836,3611 18943,3508
@@ -32838,7 +32839,7 @@ EOF
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/degewo-wohnungsbauprojekt-in-der-dessauerstrasse-soll-noch-in-diesem-jahr-starten_a211105 (Fertigstellung Dezember 2021 (Stand Mai 2019))
 #: osm_watch: way id="48490204" version="4"
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
-#: last_checked: 2021-05-30
+#: last_checked: 2021-09-12
 #: check_frequency: 120d
 #: next_check: 2022-01-01
 	2::inwork 6511,2284 6459,2364
@@ -32853,7 +32854,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1116986.php (Neubau der Fahrbahn, bis Ende November 2021)
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/retzowstrasse-gesperrt_a320297
 #: add_fragezeichen: Wann wird die Sperrung der Fahrbahn aufgehoben?
-#: last_checked: 2021-05-30
+#: last_checked: 2021-09-12
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2021-11-30
 	q4::inwork 6331,2281 6399,2184
@@ -33321,6 +33322,9 @@ EOF
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/amtliche-bekanntmachungen/allgemeinverfuegung_james-simon-park.pdf',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1113411.php
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10821 (Frage)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10830 (Antrag)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10860 (Frage)
 #: XXX bis wann bleibt die Sperrung bestehen? vvv
 #: tempex: T20-T06 vvv
 #: next_check: 2021-12-31 vvv
@@ -33333,14 +33337,17 @@ EOF
      },
      { from  => undef, # 
        until => 1635663600, # 2021-10-31 08:00
-       text  => 'Karl-Ziegler-Str.: Sperrung der Fahrbahn wegen Gleisarbeiten, Umfahrung auf Gehweg möglich',
+       text  => 'Karl-Ziegler-Str.: Sperrung der Fahrbahn wegen Gleisarbeiten, Umfahrung auf Gehweg möglich, Überqueren nicht möglich',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: STERNDAMM-2020
-#: last_checked: 2021-08-22 (krickstadt)
+#: last_checked: 2021-09-05 (krickstadt)
 #: check_frequency: 60d
 #: next_check: 2021-10-31
 	q4::inwork 18766,3260 18828,3196 18946,3077
+	3 18892,3256 18828,3196 18822,3188
+	3 18892,3256 18828,3196 18946,3077
+	3 18822,3188 18828,3196 18892,3256
 EOF
      },
      { from  => 1628719200, # 2021-08-12 00:00
@@ -33487,6 +33494,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.dresdnerbahn.de/mediathek/file/371/XuemcxFdBKgO2ODB13RfVD6NGI-aMFPmtCRyf_fgMuk/Downloads/20210604_DrB_virtuelle_Buergerinfo_online.pdf',
        data  => <<EOF,
+#: next_check_id: DRESDNERBAHN-2021
 #: XXX Ursprünglich wurde 08/2021 als Beginn geplant, das hat sich aber um einen Monat verschoben --- vielleicht das Ende auch?
 #: add_fragezeichen: Bis wann genau geht die Sperrung?
 #: next_check: 2021-11-01

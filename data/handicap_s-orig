@@ -688,6 +688,7 @@ Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851
 #: also_indoor ^^^
 # 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/neue-vorstreckungen-ueberwege-mittelinseln-und-abgesenkte-bordsteine_a319370 (Erwähnung der Wege in der Grünanlage)
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8710 (Abschluss der Bauarbeiten im 3. Quartal 2021)
 #: last_checked: 2021-09-11 vvv
 #: check_frequency: 7d vvv
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
@@ -1148,11 +1149,11 @@ Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q3 7531,8848 7563,8871
 Nettelbeckplatz: Fußgänger	q2 8024,15401 7974,15418 7891,15417
 Nettelbeckplatz: Fußgänger	q2 7929,15355 7974,15418
 # REMOVED (hier Radweg) --- Nettelbeckplatz: Fußgänger	q2 7975,15500 7975,15484 7974,15418
-Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5913,8415 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
+Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5913,8415 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5476,8521
 Volkspark Wilmersdorf: einige Fußgänger	q1- 5917,8351 5831,8358
 zum Volksparksteg: kombinierter Rad- und Fußweg, enge Kurven	q3 5533,8478 5531,8458
-Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5417,8519
-Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5465,8511 5417,8519 5347,8562
+Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5401,8528 5405,8549
+Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5469,8524 5405,8549 5331,8581
 Volkspark Wilmersdorf: einige Fußgänger	q1- 5762,8335 5699,8308 5687,8280 5700,8241 5730,8207
 #: XXX_prog BS (Bordstein an der Stülerstr.; ansonsten muss man wohl auch über Gras schieben, deshalb kann man trotzdem die q4 beibehalten)
 (zur Thomas-Dehler-Str.): Fußgänger, Bordstein	q4 6657,11467 6716,11439
@@ -4253,35 +4254,34 @@ Seefelder Str. (Fußweg): Fußgänger, Bordstein	q3 17362,16189 17383,16197
 (Parkweg Trippsteinstr. - Sondershauser Str.): Fußgänger, Bordsteine	q3 6668,1192 6597,1201 6530,1210 6505,1212 6481,1215 6411,1223
 #: corrected_by: srt (added "schieben", q1 -> q3)
 (Parkweg Blankenhainer Str. - Hildburghauser Str.): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben	q3 6572,1601 6554,1564 6539,1476 6515,1418 6479,1312 6481,1215 6487,1169 6455,1101 6446,1033
-(Gräfentaler Str. - Georgenstr.): Fußgänger	q1 6189,1423 6132,1395
+#: corrected_by: srt (q1 -> q2)
+(Gräfentaler Str. - Georgenstr.): Fußgänger, schmal	q2 6189,1423 6132,1395
 #: XXX_prog: Bordstein, auf der Südseite (ansonsten trotzdem q2)
 #: corrected_by: srt (added Bordstein)
 #: note: explizites Gehweg-Schild
 Altenburger Str.: Fußgänger, Bordstein	q2 6651,1063 6631,968
+#: by ^^^
+# 
+(Lilienthalpark): Fußgänger, Radfahren erlaubt	q2 5514,580 5571,614 5677,650 5683,673 5640,746 5587,816 5571,864 5540,919
+(Lilienthalpark): Fußgänger, Radfahren erlaubt	q2 5578,936 5540,919 5358,822
+(Lilienthalpark): Fußgänger, Radfahren erlaubt	q2 5533,663 5485,751 5503,783 5531,779 5590,719 5593,679 5575,660 5533,663
+(Lilienthalpark): Fußgänger, Radfahren erlaubt	q2 5571,614 5533,663
+(Lilienthalpark): Fußgänger, Radfahren erlaubt	q2 5531,779 5587,816
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5783 (Schilder "Radfahren erlaubt. Fußgänger haben Vorrang.") vvv
 #: XXX wird das Radfahren hier explizit erlaubt werden? vvv
-#: osm_watch: way id="27087214" version="9"
-#: last_checked: 2020-08-29 vvv
-#: check_frequency: 360d vvv
-(Lilienthalpark): Fußgänger	q2 5514,580 5571,614 5677,650 5683,673 5640,746 5587,816 5571,864 5540,919
-(Lilienthalpark): Fußgänger	q2 5578,936 5540,919 5358,822
-(Lilienthalpark): Fußgänger	q2 5533,663 5485,751 5503,783 5531,779 5590,719 5593,679 5575,660 5533,663
-(Lilienthalpark): Fußgänger	q2 5571,614 5533,663
-(Lilienthalpark): Fußgänger	q2 5531,779 5587,816
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
 #: osm_watch: way id="114381362" version="6"
 #: last_checked: 2021-05-30
 #: check_frequency: 360d
 (Hildburghauser Str. - Lilienthalpark): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben, einige halbhohe Bordsteine	q2 6446,1033 6435,986 6446,950 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6223,823 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719
 #: XXX ^^^
 #: by ^^^
+# 
 (Mauerweg Lichtenrade - Lichterfelde): Fußgänger	q1 10309,-3191 10051,-3173 9600,-3160 9529,-2628 9506,-2421 9471,-2138 9462,-2050 9081,-2073 8846,-2089 8310,-2037 8379,-1524 7875,-1247 7593,-1034 7142,-568 7176,-515 7175,-479 7164,-473 7146,-466 7097,-527 6961,-389 6668,-100 6498,71 6351,219 6256,363 6204,331 6013,211 5832,93 5441,-150 4842,-547 4596,-707 4406,-910
-#: by: ^^^
+# 
 #: by: Josch [AM]
 Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 7864,2018 7975,2275 8071,2248
+# 
 #: by: Karin Toedtloff vvv
 (Gielower Str - Buschkrugallee): Fußgänger	q1 14012,4184 14053,4173 14119,4153
 #: confirmed_by: srt vvv
@@ -4294,8 +4294,10 @@ Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 786
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fußgänger, Radfahren nicht erlaubt	q3 13489,3857 13531,3768 13562,3688 13623,3523
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fußgänger	q1 13951,2697 13904,2787 13807,2863 13761,2993 13763,3018 13730,3111 13740,3252 13738,3302 13728,3332 13682,3411 13651,3449 13623,3523
 #: by: ^^^
+# 
 #: by: anonymous [AM]
 Lotte-Lenya-Bogen: Fußgängerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5373,10981
+# 
 #: by: Kai Brueggemann [AM] vvv
 (Parkweg Bäkepark): Fußgänger	q1 5337,4192 5314,4216 5246,4240 5162,4256 5129,4262 5090,4291 5015,4339 4957,4448 4870,4609 4848,4668 4810,4765 4795,4801 4760,4843 4742,4885
 (Parkweg Bäkepark): Fußgänger	q1 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
@@ -4306,6 +4308,7 @@ Lotte-Lenya-Bogen: Fußgängerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5
 (Gehweg Gélieustr. - Wolfensteindamm): Fußgänger	q1 4725,4876 4675,4983
 (Krahmerstr. - Stockweg): Queren des Hindenburgdamms unübersichtlich, starker Autoverkehr	q4 4566,3461 4523,3482
 #: by: ^^^
+# 
 (Amalienstr. - Uferweg): Fußgänger	q2 14124,16552 14142,16559 14159,16593
 (Blechenstr. - Uferweg): Fußgänger	q2 14014,16722 14179,16641
 (Große Seestr. - Uferweg): Fußgänger	q2 14184,16889 14189,16793 14232,16716
@@ -4612,7 +4615,8 @@ Hartmannsweilerweg: enge Straße	q1 16,3744 -1,3857 -36,3924 -219,4149
 #: by: ^^^
 # 
 #: by: Susanna (wells): vvv
-Zietenstr. (Lankwitz): enge Straße	q1 6196,2204 6158,2256 6108,2326 6065,2443 5971,2691
+#: corrected_by: srt/policy (q1 -> q0-)
+Zietenstr. (Lankwitz): enge Straße	q0- 6196,2204 6158,2256 6108,2326 6065,2443 5971,2691
 (Höhensteig - Buntzelstr.): Fußgänger	q1 21844,238 21963,261 21979,274 21991,273 22008,262 22166,312
 #: by: ^^^
 # 
@@ -5234,7 +5238,7 @@ Grumsiner Str.: enge Straße	q0- 22081,16600 21908,16634
 #: by: Violet Schäfer:
 Frankentaler Ufer: Fußgänger	q1 7159,4023 7132,4028 7096,4051 6890,4124 6859,4085
 #: by: cd.cj... vvv
-Rühmkorffstr.: recht eng	q1 5697,1098 5620,1153 5573,1211
+Rühmkorffstr.: recht eng	q1 5683,1108 5620,1153 5573,1211
 Steinheilpfad: recht eng	q1 5585,1275 5573,1211 5455,1150
 #: by: ^^^
 # 

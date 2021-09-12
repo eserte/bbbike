@@ -1224,9 +1224,10 @@ Travestr.: Kopfsteinpflaster	Q2 14986,11760 14901,11808
 Travestr.: Gleisbereich asphaltiert, rechts liegt Kopfsteinpflaster	Q0 14901,11808 14836,11842
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1 4320,8596 3970,8582
 Volkspark Wilmersdorf: Parkweg	Q1 5913,8415 5831,8358
-Volkspark Wilmersdorf: Parkweg	Q1 5917,8351 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
-Volkspark Wilmersdorf: Parkweg	Q1 5465,8511 5417,8519 5347,8562
+Volkspark Wilmersdorf: Parkweg	Q1 5917,8351 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5476,8521
+Volkspark Wilmersdorf: Parkweg	Q1 5469,8524 5405,8549 5331,8581
 Volkspark Wilmersdorf: Parkweg	Q1 5762,8335 5699,8308 5687,8280 5700,8241 5730,8207
+(Volksparksteg - Volkspark Wilmersdorf): Parkweg	Q2 5401,8528 5405,8549
 Friedrichsruher Str.: Kopfsteinpflaster, OK	Q1 3333,9026 3196,9193
 Friedrichsruher Str.: Verbundsteine	Q0 3196,9193 3093,9306 2998,9408
 Cunostr.: Kopfsteinpflaster	Q2 3196,9193 3180,9015
@@ -5077,7 +5078,7 @@ Barnimer Dörferweg: Asphalt	Q0 20694,18857 20789,18899 20865,18933 20889,18943 2
 Kundtanger: Verbundsteinpflaster	Q1 20868,18926 20865,18933 20858,18961 20855,19030 20833,19037 20807,18955 20858,18961
 Am Dörferweg: Asphalt	Q0 20790,18892 20868,18926 20889,18935
 Am Dörferweg: provisorischer Asphalt	Q1 20889,18935 20998,18980
-Johann-Jacob-Engel-Str.: Asphalt	Q0 20743,18540 20701,18634
+Johann-Jacob-Engel-Str.: Asphalt	Q0 20743,18540 20727,18576 20701,18634
 Johann-Jacob-Engel-Str.: Verbundsteinpflaster	Q1 20701,18634 20702,18662 20727,18726 20760,18812 20790,18892
 (entlang des Gehrensees): Beton	Q0 20855,19299 20904,19284
 (entlang des Gehrensees): Verbundsteinpflaster	Q1 20904,19284 20906,19284 20966,19282 21003,19272 21089,19215 21154,19159 21169,19146 21328,19049 21344,19008
@@ -10035,9 +10036,9 @@ Max-Herrmann-Str.: Asphalt	Q0 21131,16680 21238,16627 21278,16685 21295,16710 21
 Radweg zur Detmolder Str.: Verbundsteinpflaster/Gehwegplatten	Q1; 4461,8105 4349,8118 4280,8188
 (Havelchaussee - zum Havelufer): Kopfsteinpflaster	Q2 -3807,4794 -3854,4819 -3940,4800
 Cimbernstr. [Stichstraße] (Nikolassee): schlechtes Kopfsteinpflaster	Q3 -3544,2003 -3616,1877
-Heinersdorfer Str.: Asphalt mit einigen Schäden	Q0 5223,1318 5201,1227 5178,1123
-Heinersdorfer Str.: Asphalt mit Schäden	Q1 5223,1318 5273,1456 5299,1524 5335,1616
-Heinersdorfer Str.: Asphalt mit einigen Schäden	Q0 5335,1616 5396,1774 5452,1940
+Heinersdorfer Str.: Asphalt	Q0 5223,1318 5201,1227 5178,1123
+Heinersdorfer Str.: Asphalt	Q0 5223,1318 5273,1456 5299,1524 5335,1616
+Heinersdorfer Str.: Asphalt	Q0 5335,1616 5396,1774 5452,1940
 (Christoph-Ruden-Str. - Buckower Damm): Asphalt	Q0 12725,1429 12939,1469
 (Olivaer Platz, Wielandstr. - Bayerische Str.): Asphalt	Q0 4360,10320 4352,10260
 (Tegeler Forst): Waldweg	Q2 2088,22798 2047,22829
@@ -12437,7 +12438,7 @@ Brunhildstr.: grobes Kopfsteinpflaster	Q3 7790,8913 7707,8915 7604,8927
 Am Bäkequell: gutes Kopfsteinpflaster	Q1 4593,5235 4656,5101
 Caroline-Michaelis-Str.: Asphalt	Q0 8825,14401 8992,14176 9070,14058 9151,13941
 Machonstr.: betoniert	Q0 9020,4890 9032,4791
-Machonstr.: asphaltiert	Q0 9032,4791 9047,4686 9066,4512 9079,4376
+Machonstr.: asphaltiert	Q0 9032,4791 9047,4686 9070,4512 9087,4378
 Jungfernstieg: Asphalt	Q0 5559,3058 5549,3038 5493,2931
 Jungfernstieg: mäßiges Kopfsteinpflaster	Q2 5493,2931 5511,2911 5510,2883
 Jungfernstieg: Asphalt	Q0 5510,2883 5425,2735 5332,2568 5229,2395
@@ -12485,7 +12486,8 @@ Hohenzollernstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 9559,-2417 9658,
 Otto-Schmirgal-Str.: Asphalt	Q0 18554,10354 18512,10337 18484,10326 18404,10294 18340,10269 18319,10249
 Otto-Schmirgal-Str.: Asphalt	Q0 18404,10294 18418,10263 18328,10225
 Richterstr.: Beton	Q0 9375,4022 9276,3997 9118,3983
-Richterstr.: mäßiges Kopfsteinpflaster	Q2 9118,3983 9106,4114 9099,4204
+Richterstr.: mäßiges Kopfsteinpflaster	Q2 9118,3983 9106,4114
+Richterstr.: Asphalt	Q0 9106,4114 9099,4204
 (Richterstr. - Rathausstr.): Asphaltweg	Q0 9276,3997 9294,3921 9217,3906 9117,3898 9073,3892 9021,3878
 Dolziger Str.: mäßiges Kopfsteinpflaster	Q2 14435,12761 14436,12731 14628,12682 14814,12626
 Dolziger Str.: mäßiges Kopfsteinpflaster	Q2 14436,12731 14405,12738
@@ -12850,7 +12852,7 @@ Sigmund-Bergmann-Str.: Asphalt	Q0 -2371,16776 -2312,16770 -2173,16741 -2157,1683
 (Parkplatz Kaufland - Am Steinberg): Verbundsteinpflaster	Q1 12981,17557 12998,17480
 Hasenmark: mäßiges Kopfsteinpflaster	Q2 -3694,14744 -3582,14886
 Cantorsteig: Asphalt	Q0 9192,4389 9172,4521
-Königstr. (Mariendorf): guter Asphalt	Q0 8868,4498 8972,4505 9066,4512 9172,4521 9294,4536
+Königstr. (Mariendorf): guter Asphalt	Q0 8868,4498 8972,4505 9070,4512 9172,4521 9294,4536
 Otawistr.: guter Asphalt	Q0 6098,16630 6003,16521 5906,16403 5748,16235
 Belfaster Str.: guter Asphalt	Q0 5589,17081 5662,17158 5847,17365 5866,17419 5894,17518
 Camphausenstr.: sehr guter Asphalt	Q0 169,2264 244,2165 271,2129 324,2034 345,1977 379,1846
@@ -15657,7 +15659,7 @@ Am Wiesengrund: sehr gutes Verbundsteinpflaster	Q0 8081,20785 8146,20773 8252,20
 Straße 9 (Wartenberg): guter Asphalt	Q0 19397,20407 19384,20439 19430,20561 19501,20537 19526,20511
 Frankentaler Ufer: alter, unebener Plattenweg; starke Vegetation	Q2 7159,4023 7132,4028 7096,4051 6890,4124 6859,4085
 Heribaldstr.: Asphalt	Q0 25029,10462 25022,10715
-Rühmkorffstr.: guter Beton	Q0 5697,1098 5620,1153 5573,1211
+Rühmkorffstr.: guter Beton	Q0 5683,1108 5620,1153 5573,1211
 Steinheilpfad: Betonplatten	Q0 5585,1275 5573,1211 5455,1150
 Schmidtstr.: Asphalt mit einigen Schäden	Q1 23412,12562 23299,12600 23084,12573 22985,12550
 Finsterberger Str.: Asphalt	Q0 23233,12406 23131,12509 23084,12573
@@ -17382,8 +17384,8 @@ Langensalzaer Str.: Asphalt	Q0 6170,1707 6166,1623 6188,1542
 Langensalzaer Str.: Beton mit einigen Schäden	Q1 6231,1442 6270,1365 6254,1357 6295,1275 6346,1167 6397,1135
 Rodacher Weg: Beton	Q0 6270,1365 6323,1390 6362,1309 6295,1275
 Gräfentaler Str.: Asphalt	Q0 6189,1423 6231,1442 6318,1484
-(Gräfentaler Str. - Georgenstr.): Asphalt	Q0 6189,1423 6132,1395
-Georgenstr.: Kopfsteinpflaster	Q2 6132,1395 6032,1348
+(Gräfentaler Str. - Georgenstr.): Verbundsteinpflaster	Q1 6189,1423 6132,1395
+Georgenstr.: glattes Kopfsteinpflaster	Q2 6132,1395 6032,1348
 Arnstädter Str.: Beton	Q0 6553,1409 6530,1210 6512,1086
 Arnstädter Str.: Beton	Q0 6512,1086 6526,1083
 Arnstädter Str.: Beton	Q1 6526,1083 6515,1010
