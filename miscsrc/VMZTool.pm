@@ -719,6 +719,7 @@ EOF
 
 	# Check if record should be ignored
 	my $do_ignore = 0;
+	# XXX Leider können auch Einträge wie "Brücke ... über A10 voll gesperrt" fälschlicherweise ignoriert werden
 	if (grep { m{^A(\s|\d)} } @{ $rec->{strassen} }) {
 	    $do_ignore = 1;
 	} elsif (grep { m{^A\s*\d} } @{ $rec->{streets} || [] }) {
