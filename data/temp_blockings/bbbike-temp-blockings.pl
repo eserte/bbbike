@@ -915,12 +915,13 @@ EOF
      { from  => $isodate2epoch->("2019-09-06 12:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-09-08 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 31, months => 8, start => "2020-10-25T00:00:00"]],
+       recurrences => [['yearly', days => 31, months => 8, start => "2021-10-25T00:00:00"]],
        recurrence_prewarn_days => -13,
        text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (07.09.2019 bis 08.09.2019)',
        type  => 'gesperrt',
        source_id => 'http://www.hier-in-rudow.de/meilenfeste.html',
        data  => <<EOF,
+#: note: keine Anzeichen für eine Veranstaltung 2021 
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 EOF
      },
@@ -16507,16 +16508,15 @@ EOF
 	2::temp 8424,12853 8309,12758 8306,12609
 EOF
      },
-     { from  => $isodate2epoch->("2019-09-14 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-09-15 20:00:00"),
+     { from  => $isodate2epoch->("2021-09-24 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-09-26 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 9, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 1,
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (14.09.2019 bis 15.09.2019)',
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (25.09.2021 bis 26.09.2021)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: by: http://www.family-and-friends-ev.de/ (update.pl bekommt hier aber einen Fehler)
-#: by: https://www.berlin.de/events/3614943-2229501-herbst-in-westend.html (geplant 25.9.2021-26.9.2021)
+#: by: https://www.berlin.de/events/3614943-2229501-herbst-in-westend.html (geplant 25.9.2021-26.9.2021) (mittlerweile bestätigt)
 	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
 EOF
      },
@@ -32518,6 +32518,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1073307.php', # Gesamtmaßnahme bis Ende 2021
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/burgfrauenstrasse-ab-19-april-gesperrt_a306720
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9333
 #: source_id: 2147347107 (hier: bis 30.6.2021)
 #: source_id: viz2021:13.299346,52.626261,19.04.2021,07:00 (bis 10.9.2021)
 #: source_id: viz2021:13.3053,52.62692,19.04.2021,07:00
@@ -33423,6 +33424,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1120239.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_37_3401_3492_online.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6984 (Antrag)
 #: XXX bis wann bleibt die Sperrung bestehen? vvv
 #: note: der Verbindungsweg Puschkinallee und Am Treptower Park war nicht gesperrt: Do 2021-09-09 gegen 22:20 Uhr
 #: last_checked: 2021-09-09 vvv
@@ -33508,6 +33510,15 @@ EOF
        source_id => 'LS/723-P/20/113',
        data  => <<EOF,
 	2::inwork -25222,-11698 -24174,-8751 -23816,-7874
+EOF
+     },
+     { from  => 1632002400, # 2021-09-19 00:00
+       until => 1635544800, # 2021-10-30 00:00
+       text  => 'Siegener Str.: Bauarbeiten, Einrichtung einer Einbahnstraße, offen Richtung Süden, vom 20.09.2021 bis 29.10.2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2021/pressemitteilung.1125406.php',
+       data  => <<EOF,
+	q4::inwork; -5151,15059 -5135,15172 -5132,15249 -5123,15298 -5115,15348 -5095,15432 -5036,15625
 EOF
      },
     );

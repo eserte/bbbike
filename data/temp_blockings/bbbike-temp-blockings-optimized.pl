@@ -571,7 +571,29 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: by: http://www.family-and-friends-ev.de/ (update.pl bekommt hier aber einen Fehler)
+#: by: https://www.berlin.de/events/3614943-2229501-herbst-in-westend.html (geplant 25.9.2021-26.9.2021) (mittlerweile bestätigt)
+	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
+',
+         'from' => 1632474000,
+         'id' => 1910,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              9,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (25.09.2021 bis 26.09.2021)',
+         'type' => 'gesperrt',
+         'until' => 1632679200
+       },
        undef,
        undef,
        undef,
@@ -1081,30 +1103,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.laubinger.de/termine/50-fest-an-der-panke/
-#: by: https://www.wollenschlaeger-berlin.de/51-fest-an-der-panke/
-	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
-	2::temp 10602,18382 10562,18506 10532,18601
-',
-         'from' => 1631224800,
-         'id' => 2281,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (11.09.2021-12.09.2021)',
-         'type' => 'gesperrt',
-         'until' => 1631483999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3543,18 +3542,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'until' => 1638288000
        },
        undef,
-       {
-         'data' => '#: note: laut rbb
-#: also_indoor: traffic (H)
-	q4::inwork 7432,14969 7624,15083 7694,15125
-# REMOVED (hier keine Baustelle) ---	q4::inwork 7694,15125 7745,15160
-',
-         'from' => 1623092008,
-         'id' => 3389,
-         'text' => 'Lynarstr.: Sperrung der Fahrbahn zwischen Sparrstr. und Müllerstr., evtl. sind auch Radfahrer betroffen, bis 13.09.2021',
-         'type' => 'handicap',
-         'until' => 1631548800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3584,17 +3572,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.337982,52.451062,02.08.2021,06:00 (nur noch bis 13.9.2021)
-	q4::inwork; 6055,4950 6182,4931 6187,4930 6215,4926 6276,4915 6354,4901 6385,4896 6531,4865
-',
-         'from' => 1627768800,
-         'id' => 3398,
-         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1099818.php',
-         'text' => 'Steglitzer Damm: Bauarbeiten, Fahrbahn zwischen Bismarckstr. und Heinrich-Seidel-Str. Richtung Osten gesperrt, vom 02.08. bis zum 24.09.2021',
-         'type' => 'handicap',
-         'until' => 1631541600
-       },
+       undef,
        {
          'data' => '#: by: rbb
 	q4::inwork 3868,12401 3757,12372
@@ -3873,6 +3851,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1120239.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_37_3401_3492_online.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6984 (Antrag)
 #: XXX bis wann bleibt die Sperrung bestehen? vvv
 #: note: der Verbindungsweg Puschkinallee und Am Treptower Park war nicht gesperrt: Do 2021-09-09 gegen 22:20 Uhr
 #: last_checked: 2021-09-09 vvv
@@ -3926,17 +3905,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.42832,52.53198,10.09.2021,20:00
-	q4::inwork; 11991,14060 12017,14098 12077,14186
-',
-         'from' => 1631210400,
-         'id' => 3441,
-         'source_id' => 'viz2021:13.428217,52.532012,10.09.2021,20:00',
-         'text' => 'Greifswalder Str.: stadtauswärts zwischen Käthe-Niederkirchner-Str. und Hufelandstr. Kranabbau, Fahrbahn gesperrt, vom 10.09.2021 20:00 bis 13.09.2021 05:00 ',
-         'type' => 'handicap',
-         'until' => 1631502000
-       },
+       undef,
        {
          'data' => '#: next_check_id: DRESDNERBAHN-2021
 #: XXX Ursprünglich wurde 08/2021 als Beginn geplant, das hat sich aber um einen Monat verschoben --- vielleicht das Ende auch?
@@ -3960,6 +3929,16 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Glindow - Klaistow: zwischen Autobahnanschlussstelle und Poststraße Bauarbeiten, Fahrbahn gesperrt, für Radfahrer existiert eine Umleitungsstrecke (bei BBBike ist diese nicht bekannt), bis 30.4.2022',
          'type' => 'gesperrt',
          'until' => 1651355999
+       },
+       {
+         'data' => '	q4::inwork; -5151,15059 -5135,15172 -5132,15249 -5123,15298 -5115,15348 -5095,15432 -5036,15625
+',
+         'from' => 1632002400,
+         'id' => 3444,
+         'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2021/pressemitteilung.1125406.php',
+         'text' => 'Siegener Str.: Bauarbeiten, Einrichtung einer Einbahnstraße, offen Richtung Süden, vom 20.09.2021 bis 29.10.2021',
+         'type' => 'handicap',
+         'until' => 1635544800
        }
      
 );
