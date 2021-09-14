@@ -2015,7 +2015,42 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147339672
+#: by: https://twitter.com/VIZ_Berlin/status/1437755743051128833 (2021)
+#: by: https://berliner-firmenlauf.de/infos-zum-lauf/ (2021)
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+	2::temp 8600,12165 8538,12245 8592,12252
+	2::temp 8119,12414 8055,12186
+	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	3 7429,12070 7383,12095 7031,12320
+	3 7031,12320 7383,12095 7429,12070
+	3 7822,12201 7816,12150 7823,12120
+	3 7823,12120 7816,12150 7822,12201
+	3 8522,12239 8538,12245 8522,12187
+	3 8522,12187 8538,12245 8522,12239
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+	2::temp 8595,12066 8737,12098 8743,12099 8861,12125 8901,12008 8844,11984 8783,11959 8577,11896 8571,11846 8489,11782 8456,11763 8322,11715 8203,11686 8172,11679 8094,11657 8005,11627 7816,11571 7717,11540 7665,11353 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208 7160,11225 7115,11220 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031
+	2::temp 6828,12031 6884,12006
+	3 8014,11753 8005,11627 7943,11431
+	3 7943,11431 8005,11627 8014,11753
+	3 6716,11439 6825,11486 6915,11492
+	3 6915,11492 6825,11486 6716,11439
+	3 6540,11754 6778,11742 6980,11790
+	3 6980,11790 6778,11742 6540,11754
+	3 6679,11602 6809,11570 6869,11567
+	3 6869,11567 6809,11570 6679,11602
+	3 6750,11550 6825,11486 6915,11492
+	3 6915,11492 6825,11486 6750,11550
+',
+         'from' => 1631592000,
+         'id' => 2827,
+         'source_id' => '2147339672',
+         'text' => 'Straße des 17. Juni, Ebertstr. und weitere Straßen am Tiergarten: Sperrungen wegen einer Sportveranstaltung (Berliner Firmenlauf), evtl. sind auch Radfahrer betroffen, ab 15.09.2021 06 Uhr bis 16.09.2021 07 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1631768400
+       },
        undef,
        undef,
        undef,
@@ -2307,7 +2342,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-08-31
+#: last_checked: 2021-09-13
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2462,7 +2497,25 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
+#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
+#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
+#: osm_watch: way id="8655276" version="22"
+#: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
+#: last_checked: 2021-09-13 (osm)
+#: check_frequency: 30d
+	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
+',
+         'from' => 1630670400,
+         'id' => 3086,
+         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        {
          'data' => '	2::night:weekend 18320,2195 18448,2182 18491,2128
@@ -2536,19 +2589,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 14.9.2021)
-#: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
-#: also_indoor: traffic (H)
+         'data' => '#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022)
+#: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
+#: also_indoor: traffic (ex-H)
 #: last_checked: 2021-09-04
 #: check_frequency: 60d
-#: next_check: 2021-09-14
+#: next_check: 2022-03-31
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
 ',
          'from' => 1558648800,
          'id' => 3108,
          'source_id' => '2147344253',
-         'text' => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 14.9.2021',
+         'text' => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 31.3.2022',
          'type' => 'handicap',
          'until' => undef
        },
@@ -2807,7 +2860,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-09-12
+#: last_checked: 2021-09-13
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -3600,6 +3653,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        undef,
        {
          'data' => '#: next_check_id: FRANKFURTER-2021
+#: note: auch last Schild der Wasserbetriebe bis März 2022
 #: last_checked: 2021-09-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-31 vvv
@@ -3939,6 +3993,17 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Siegener Str.: Bauarbeiten, Einrichtung einer Einbahnstraße, offen Richtung Süden, vom 20.09.2021 bis 29.10.2021',
          'type' => 'handicap',
          'until' => 1635544800
+       },
+       {
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1437641256243453954/photo/2
+	1::inwork 6747,14436 6803,14459 6857,14488 6869,14494 6917,14504 6983,14508 7050,14501 7085,14482 7099,14461 7104,14432 7104,14403
+',
+         'from' => 1631646083,
+         'id' => 3445,
+         'source_id' => 'https://twitter.com/VIZ_Berlin/status/1437641256243453954',
+         'text' => 'Ellen-Epstein-Str.: Radweg in Richtung Perleberger Str. gesperrt, bis Ende November 2021',
+         'type' => 'gesperrt',
+         'until' => 1638313199
        }
      
 );

@@ -23879,8 +23879,7 @@ EOF
      { from  => $isodate2epoch->("2019-09-13 00:00:00"),
        until => $isodate2epoch->("2019-09-14 23:59:59"),
        periodic => 1,
-       recurrences => [["yearly", days => 31, months => 8, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -14,
+       recurrences => [["yearly", days => 31, months => 8, start => "2021-10-25T00:00:00"]], # 2021 scheint nichts stattzufinden
        text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 14. September 2019, 12 bis 21 Uhr ',
        type  => 'gesperrt',
        source_id => 'https://www.turmstrasse.de/aktuelles',
@@ -26014,13 +26013,15 @@ EOF
 	q4::inwork; -2511,17430 -2573,17314 -2599,17269 -2659,17165 -2728,17038
 EOF
      },
-     { from  => $isodate2epoch->("2019-05-20 12:00:00"), # 1504201168, # 1473285600, # 2016-09-08 00:00
-       until => $isodate2epoch->("2019-05-23 07:00:00"),
-       text  => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen einer Sportveranstaltung (Berliner Firmenlauf), evtl. sind auch Radfahrer betroffen, ab 21.05.2019 12 Uhr bis 23.05.2019 07 Uhr',
+     { from  => $isodate2epoch->("2021-09-14 06:00:00"), # 1504201168, # 1473285600, # 2016-09-08 00:00
+       until => $isodate2epoch->("2021-09-16 07:00:00"),
+       text  => 'Straße des 17. Juni, Ebertstr. und weitere Straßen am Tiergarten: Sperrungen wegen einer Sportveranstaltung (Berliner Firmenlauf), evtl. sind auch Radfahrer betroffen, ab 15.09.2021 06 Uhr bis 16.09.2021 07 Uhr',
        type  => 'gesperrt',
        source_id => '2147339672',
        data  => <<EOF,
 #: source_id: 2147339672
+#: by: https://twitter.com/VIZ_Berlin/status/1437755743051128833 (2021)
+#: by: https://berliner-firmenlauf.de/infos-zum-lauf/ (2021)
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 	2::temp 8600,12165 8538,12245 8592,12252
 	2::temp 8119,12414 8055,12186
@@ -26033,6 +26034,18 @@ EOF
 	3 8522,12187 8538,12245 8522,12239
 	3 8391,12389 8344,12221 8327,12174
 	3 8327,12174 8344,12221 8391,12389
+	2::temp 8595,12066 8737,12098 8743,12099 8861,12125 8901,12008 8844,11984 8783,11959 8577,11896 8571,11846 8489,11782 8456,11763 8322,11715 8203,11686 8172,11679 8094,11657 8005,11627 7816,11571 7717,11540 7665,11353 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208 7160,11225 7115,11220 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031
+	2::temp 6828,12031 6884,12006
+	3 8014,11753 8005,11627 7943,11431
+	3 7943,11431 8005,11627 8014,11753
+	3 6716,11439 6825,11486 6915,11492
+	3 6915,11492 6825,11486 6716,11439
+	3 6540,11754 6778,11742 6980,11790
+	3 6980,11790 6778,11742 6540,11754
+	3 6679,11602 6809,11570 6869,11567
+	3 6869,11567 6809,11570 6679,11602
+	3 6750,11550 6825,11486 6915,11492
+	3 6915,11492 6825,11486 6750,11550
 EOF
      },
      { from  => 1473704824, # 2016-09-12 20:27
@@ -28084,7 +28097,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-08-31
+#: last_checked: 2021-09-13
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29147,8 +29160,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-09-03 14:00:00"), # undef, # 
-       until => $isodate2epoch->("2021-09-06 04:00:00"), # 1570116625, # 1680364800, # 2023-04-01 18:00
-       text  => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke gesperrt, von Sonnabend, den 04.09.2021, 14:00 Uhr, bis Montag, den 06.09.2021, 4:00 Uhr',
+       until => undef, # $isodate2epoch->("2021-09-06 04:00:00"), # 1570116625, # 1680364800, # 2023-04-01 18:00
+       text  => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt', # , von Sonnabend, den 04.09.2021, 14:00 Uhr, bis Montag, den 06.09.2021, 4:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
@@ -29157,8 +29170,10 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="21"
-# REMOVED (ja) --- #: add_fragezeichen: Ist der Weg mittlerweile wieder offen? --- #: XXX laut osm wieder offen --- #: last_checked: 2019-08-24 --- #: next_check: 2019-09-28
+#: osm_watch: way id="8655276" version="22"
+#: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
+#: last_checked: 2021-09-13 (osm)
+#: check_frequency: 30d
 	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
 EOF
      },
@@ -29397,16 +29412,16 @@ EOF
      },
      { from  => $isodate2epoch->("2019-05-24 00:00:00"),
        until => undef, # $isodate2epoch->("2021-09-14 18:00:00"),
-       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 14.9.2021',
+       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 31.3.2022',
        type  => 'handicap',
        source_id => '2147344253', # bis Juni 2021 (!)
        data  => <<EOF,
-#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 14.9.2021)
-#: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
-#: also_indoor: traffic (H)
+#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022)
+#: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
+#: also_indoor: traffic (ex-H)
 #: last_checked: 2021-09-04
 #: check_frequency: 60d
-#: next_check: 2021-09-14
+#: next_check: 2022-03-31
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
 EOF
@@ -31006,7 +31021,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-09-12
+#: last_checked: 2021-09-13
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33057,6 +33072,7 @@ EOF
        source_id => 'viz2021:13.471852,52.513916,22.06.2021,07:00',
        data  => <<EOF,
 #: next_check_id: FRANKFURTER-2021
+#: note: auch last Schild der Wasserbetriebe bis März 2022
 #: last_checked: 2021-09-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-31 vvv
@@ -33519,6 +33535,16 @@ EOF
        source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2021/pressemitteilung.1125406.php',
        data  => <<EOF,
 	q4::inwork; -5151,15059 -5135,15172 -5132,15249 -5123,15298 -5115,15348 -5095,15432 -5036,15625
+EOF
+     },
+     { from  => 1631646083, # 2021-09-14 21:01
+       until => 1638313199, # 2021-11-30 23:59
+       text  => 'Ellen-Epstein-Str.: Radweg in Richtung Perleberger Str. gesperrt, bis Ende November 2021',
+       type  => 'gesperrt',
+       source_id => 'https://twitter.com/VIZ_Berlin/status/1437641256243453954',
+       data  => <<EOF,
+#: by: https://twitter.com/VIZ_Berlin/status/1437641256243453954/photo/2
+	1::inwork 6747,14436 6803,14459 6857,14488 6869,14494 6917,14504 6983,14508 7050,14501 7085,14482 7099,14461 7104,14432 7104,14403
 EOF
      },
     );
