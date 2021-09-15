@@ -95,7 +95,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9047,9750 90
 #: by: https://api.fixmyberlin.de/api/plannings/66 (asphaltiert und verbreitert)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
-#: last_checked: 2021-05-20
+#: last_checked: 2021-09-15
 #: check_frequency: 120d
 #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -256,11 +256,12 @@ Markgrafenstr.: wird hier eine Radwegf¸hrung erstellt? Bleibt das Dr‰ngelgitter?
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/mehr-temporaere-radwege_a268057 (nochmal der BVV-Antrag)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10390
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103661920118/61920118/00491505/05-Anlagen/02/GA_2837_V.pdf (Planung wurde im Dez. 2020 gestoppt)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1126669.php (Zwischenlˆsung zwischen S Wedding und Luxemburger Str., bauliche Umsetzung beginnt nun (Mitte September 2021))
 #: source_id: 2147345414 (bis Mitte April 2020) (haben die Leitungsarbeiten was mit den geplanten Radspuren zu tun?) (inaktiv)
 #: osm_watch: way id="4543585" version="34"
 #: osm_watch: way id="42732291" version="23"
-#: last_checked: 2021-07-31
-#: check_frequency: 180d
+#: last_checked: 2021-08-14 (mapillary)
+#: check_frequency: 45d
 M¸llerstr.: Radspuren geplant	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7393,15476 7464,15409 7607,15282 7745,15160 7811,15096 7911,15008
 # 
 #: XXX Baumaﬂnahme 1.23 (Realisierung nach 2011)
@@ -380,7 +381,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 16146,6755 16273,6609
 #: osm_watch: way id="33836252" version="17"
 #: source_id: LMS-BR_r_LMS-BR_95211 (Gesamtmaﬂnahmen bis Ende 2020, inaktiv)
 #: source_id: 2147341170 (bis 31.12.2020) (inaktiv)
-#: last_checked: 2020-12-20 (mapillary)
+#: last_checked: 2021-09-07 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 # REMOVED (hier realisiert) --- Pasewalker Str.: Radspuren geplant	?::projected 11907,19749 11909,19706 11911,19667 11915,19580
@@ -801,7 +802,7 @@ Uferweg s¸dlich des Teltowkanals: Herstellen einer Verbindung geplant, auﬂerdem 
 # 
 #: XXX Ag.10
 #: XXX laut Finanzplan Berlin 2019-2023 Finanzierung bis 2022
-#: last_checked: 2021-05-19 (mapillary)
+#: last_checked: 2021-05-30 (mapillary)
 #: check_frequency: 120d
 Wegedornstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 19333,1154 19396,1100 19497,1035 19651,956
 # 
@@ -4716,7 +4717,7 @@ Stargarder Str.: hier wird eine Fahrradstraﬂe eingerichtet	?::projected 10953,15
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 ("neuer Radweg" -> vermutlich ist die Fahrradstraﬂe gemeint, noch 2020)
 #: by: http://www.infravelo.de/projekt/bizetstrasse/ (urspr¸nglicher Eintrag) (Fahrradstraﬂe geplant, 2. Quartal 2021 - 4. Quartal 2021) (mittlerweile ist Start im 3. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/bizetstrasse-2/
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/verkehrsprojekte-im-boetzowviertel_a319036 (Erw‰hnung der Hufelandstraﬂe)
+#: by: https://www.berliner-woche.de/weissensee/c-verkehr/informationen-fuer-anwohner_a322112 (tempor‰rer Kiezblock ab Fr¸hjahr 2022)
 #: last_checked: 2021-09-01
 #: check_frequency: 120d
 #: next_check: 2021-12-31
@@ -4919,7 +4920,7 @@ Bhf. Wilhelmsruh: wurde die Radroutenausschilderung (Mauerweg, Reinickendorfer R
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erw‰hnung, bis 3. Quartal 2021)
 #: XXX w‰hrend der Bauarbeiten Einbahnstraﬂenregelung --- was wird das f¸r den Radverkehr bedeuten? -> siehe temp blockings
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2021-09-11
+#: last_checked: 2021-09-15
 #: check_frequency: 90d
 #: next_check: 2021-12-16
 Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,10738
@@ -4929,7 +4930,7 @@ Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,1073
 #: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (nicht mehr aktiv)
 #: source_id: 2147345383 (bis 06.03.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun? -> nein, das ist an der Saganer Str.) (nicht mehr aktiv)
 #: source_id: 2147345563 (bis 24.04.2020, aber keine Anzeichen f¸r Bauarbeiten) (nicht mehr aktiv)
-#: last_checked: 2021-09-03
+#: last_checked: 2021-09-15
 Hauptstr.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
 #: last_checked: 2021-09-11
@@ -5801,7 +5802,7 @@ Friedrichshaller Str.: wird es hier Verbesserungen f¸r den Radverkehr geben?	? 2
 # 
 #: by: http://www.infravelo.de/projekt/per-rad-durch-den-boecklerpark/ (bis 2. Quartal 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Sanierung des ˆstlichen Teils)
-#: last_checked: 2021-06-13
+#: last_checked: 2021-09-14
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-30
 # REMOVED (hier eventuell sp‰ter?) --- Bˆcklerpark: hier entsteht f¸r Radfahrer ein "Sonderweg"	? 10521,10126 10723,10088
@@ -6954,8 +6955,6 @@ Krampnitz: neue Planstraﬂen	?::projected -14183,5214 -13771,5077
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_09_0573_0632_online.pdf (Benennung: Rummelsburger Seeblick)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erw‰hnung einer Radverbindung mit der Wasserstadt (vielleicht im Zuge der Straﬂe "An der Bucht"?), evtl. auch eine Verbindung zur Karlshorster Str.?)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_26_2221_2280_online.pdf (Grundst¸cksnummerierungen)
-#: by: https://www.berliner-kurier.de/berlin/169-neue-wohnungen-mit-wasserblick-und-zu-bezahlbaren-mieten-li.182642 (Baustart einiger H‰user, Fertigstellung f¸r September 2023 geplant)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/howoge-neubau-rummelsburger-bucht-und-stralauer-halbinsel.1106/#post-16492
 #: XXX vorgeschlagene Straﬂennamen (fehlen alle bei Berlin.coords.data):
 #: XXX * bestehende Untere Kynaststr. -> An der Mole
 #: XXX * Paul-und-Paula-Promenade
@@ -6965,7 +6964,7 @@ Krampnitz: neue Planstraﬂen	?::projected -14183,5214 -13771,5077
 #: XXX * Heiner-Carow-Str.
 #: XXX * Ingrid-Reschke-Str.
 #: XXX * Gustav-Tempel-Str.
-#: last_checked: 2021-09-03
+#: last_checked: 2021-09-15
 #: check_frequency: 360d
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straﬂen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 
