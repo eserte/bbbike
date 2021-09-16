@@ -21300,14 +21300,16 @@ EOF
 # REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2021-09-22 06:00:00"),
+     { from  => $isodate2epoch->("2021-09-23 18:00:00"),
        until => $isodate2epoch->("2021-09-27 06:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 9, start => "2020-10-25T00:00:00"]],
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich bis 27.09.2021',
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich 24.09.2021 bis 27.09.2021',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
+#: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00
+#: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -28096,7 +28098,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-09-13
+#: last_checked: 2021-09-16
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -33398,12 +33400,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-08-22 00:00:00"),
-       until => 1631916000, # 2021-09-18 00:00
-       text  => 'Bernau - Oranienburg: Bauarbeiten am Brückenbauwerk über die A11, Straße gesperrt, evtl. sind auch Radfahrer betroffen, 23.08.2021 bis 17.09.2021 ',
+       until => $isodate2epoch->("2021-09-24 23:59:59"), # 1631916000, # 2021-09-18 00:00
+       text  => 'Bernau - Oranienburg: Bauarbeiten am Brückenbauwerk über die A11, Straße Richtung Bernau gesperrt, evtl. sind auch Radfahrer betroffen, 23.08.2021 bis 24.09.2021 ',
        type  => 'gesperrt',
        source_id => '216001757',
        data  => <<EOF,
-	2::inwork 20534,31937 20364,32054
+	1::inwork 20364,32054 20534,31937
 EOF
      },
      { from  => 1629957600, # 2021-08-26 08:00

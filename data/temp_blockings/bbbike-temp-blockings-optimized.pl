@@ -1275,6 +1275,8 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        },
        {
          'data' => '#: next_check_id: BERLINMARATHON-RECURRING
+#: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00
+#: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -1304,7 +1306,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 	2::temp 7775,12114 7772,12040 7717,11918
 # REMOVED --- #: tempex ^^^
 ',
-         'from' => 1632283200,
+         'from' => 1632412800,
          'id' => 2388,
          'periodic' => 1,
          'recurrences' => [
@@ -1318,7 +1320,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
                               '2020-10-25T00:00:00'
                             ]
                           ],
-         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich bis 27.09.2021',
+         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich 24.09.2021 bis 27.09.2021',
          'type' => 'gesperrt',
          'until' => 1632715200
        },
@@ -2039,42 +2041,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147339672
-#: by: https://twitter.com/VIZ_Berlin/status/1437755743051128833 (2021)
-#: by: https://berliner-firmenlauf.de/infos-zum-lauf/ (2021)
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
-	2::temp 8600,12165 8538,12245 8592,12252
-	2::temp 8119,12414 8055,12186
-	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	3 7429,12070 7383,12095 7031,12320
-	3 7031,12320 7383,12095 7429,12070
-	3 7822,12201 7816,12150 7823,12120
-	3 7823,12120 7816,12150 7822,12201
-	3 8522,12239 8538,12245 8522,12187
-	3 8522,12187 8538,12245 8522,12239
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-	2::temp 8595,12066 8737,12098 8743,12099 8861,12125 8901,12008 8844,11984 8783,11959 8577,11896 8571,11846 8489,11782 8456,11763 8322,11715 8203,11686 8172,11679 8094,11657 8005,11627 7816,11571 7717,11540 7665,11353 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208 7160,11225 7115,11220 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031
-	2::temp 6828,12031 6884,12006
-	3 8014,11753 8005,11627 7943,11431
-	3 7943,11431 8005,11627 8014,11753
-	3 6716,11439 6825,11486 6915,11492
-	3 6915,11492 6825,11486 6716,11439
-	3 6540,11754 6778,11742 6980,11790
-	3 6980,11790 6778,11742 6540,11754
-	3 6679,11602 6809,11570 6869,11567
-	3 6869,11567 6809,11570 6679,11602
-	3 6750,11550 6825,11486 6915,11492
-	3 6915,11492 6825,11486 6750,11550
-',
-         'from' => 1631592000,
-         'id' => 2827,
-         'source_id' => '2147339672',
-         'text' => 'Straße des 17. Juni, Ebertstr. und weitere Straßen am Tiergarten: Sperrungen wegen einer Sportveranstaltung (Berliner Firmenlauf), evtl. sind auch Radfahrer betroffen, ab 15.09.2021 06 Uhr bis 16.09.2021 07 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1631768400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2366,7 +2333,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-09-13
+#: last_checked: 2021-09-16
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -3535,26 +3502,8 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'until' => 1633964400
        },
        undef,
-       {
-         'data' => '	q4::temp::play 11917,9663 12074,9689
-',
-         'from' => 1621362031,
-         'id' => 3376,
-         'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
-         'text' => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. temporäre Spielstraße sonn- und feiertags zwischen 13 und 18 Uhr, bis Mitte September 2021',
-         'type' => 'handicap',
-         'until' => 1631743199
-       },
-       {
-         'data' => '	q4::temp::play 13038,8394 12856,8344
-',
-         'from' => 1621362123,
-         'id' => 3377,
-         'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
-         'text' => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee temporäre Spielstraße sonn- und feiertags zwischen 13 und 18 Uhr, bis Mitte September 2021',
-         'type' => 'handicap',
-         'until' => 1631743199
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -3917,14 +3866,14 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'until' => 1633363200
        },
        {
-         'data' => '	2::inwork 20534,31937 20364,32054
+         'data' => '	1::inwork 20364,32054 20534,31937
 ',
          'from' => 1629583200,
          'id' => 3432,
          'source_id' => '216001757',
-         'text' => 'Bernau - Oranienburg: Bauarbeiten am Brückenbauwerk über die A11, Straße gesperrt, evtl. sind auch Radfahrer betroffen, 23.08.2021 bis 17.09.2021 ',
+         'text' => 'Bernau - Oranienburg: Bauarbeiten am Brückenbauwerk über die A11, Straße Richtung Bernau gesperrt, evtl. sind auch Radfahrer betroffen, 23.08.2021 bis 24.09.2021 ',
          'type' => 'gesperrt',
-         'until' => 1631916000
+         'until' => 1632520799
        },
        undef,
        undef,

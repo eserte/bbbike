@@ -337,6 +337,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2770,10024 2702,1000
 #: note: vorhandener Radweg ist abgesperrt
 #: osm_watch: way id="110680554" version="16"
 #: add_fragezeichen: bleibt die Absperrung des Radwegs permanent?
+#: XXX Hat sich die Geltungszeit der Busspur geändert (gilt immer)?
 #: last_checked: 2021-04-02 (mapillary)
 #: check_frequency: 120d
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW5; 2532,9911 2590,9949 2694,10002 2702,10006
@@ -1478,7 +1479,7 @@ Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2021-09-05
+#: last_checked: 2021-09-16
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1491,7 +1492,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: source_id: INKO_113041
 #: source_id: 2147339528 (bis 8.6.2020) (inaktiv)
 #: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2021-09-05
+#: last_checked: 2021-09-16
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
@@ -6864,7 +6865,6 @@ asphaltiertes Straßenbahnkap	RW1; 14161,11930 14097,11949
 Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 # 
 #: next_check_id: POPUPRADWEGE-2020
-#: XXX bleibt vermutlich nur während der Corona-Krise so
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.911916.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.911780.php
 #: by: https://api.fixmyberlin.de/api/projects/336 (Hallesches Ufer)
@@ -6884,8 +6884,9 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: source_id: 2147346996 (bis 23.6.2021)
 #: source_id: viz2021:13.377751,52.500368,22.03.2021,07:00 (bis 23.7.2021)
 #: osm_watch: way id="4401920" version="52"
+#: XXX wird mittlerweile verstetigt
 #: confirmed_by: srt
-#: last_checked: 2021-09-10
+#: last_checked: 2021-09-16 (webcam)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-07-23
 provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
