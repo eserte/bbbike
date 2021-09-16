@@ -620,6 +620,35 @@ sub _convert_vbb_stops () {
     1;
 }
 
+# May be called from cmdline:
+#
+#    (cd $HOME/src/bbbike && perl -Ilib -Iplugins -MFahrinfoQuery -e 'FahrinfoQuery::_check_download_url()')
+#
+sub _check_download_url () {
+    require BBBikeHeavy;
+    my $ua = BBBikeHeavy::get_uncached_user_agent();
+    my $resp = $ua->head($openvbb_data_url);
+    if (!$resp->is_success) {
+	die "HEAD on $openvbb_data_url failed: " . $resp->dump;
+    } else {
+	my $content_length = $resp->content_length;
+	if (!$content_length) {
+	    warn "WARNING: Did not get Content-Length, cannot check length...\n";
+	} else {
+	    my($openvbb_download_size_in_megabytes) = $openvbb_download_size =~ m{(\d+)MB};
+	    if (!$openvbb_download_size_in_megabytes) {
+		die "Cannot parse download size '$openvbb_download_size'";
+	    }
+	    my $content_length_in_megabytes = $content_length / (1024**2);
+	    my $diff = abs($content_length_in_megabytes - $openvbb_download_size_in_megabytes);
+	    if ($diff > 1) {
+		die "Expected Content-Length does not match real ($content_length_in_megabytes vs. $openvbb_download_size_in_megabytes)";
+	    }
+	    print STDERR "All checks OK.\n";
+	}
+    }
+}
+
 ######################################################################
 
 sub _get_search_net {
