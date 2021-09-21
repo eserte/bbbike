@@ -1053,7 +1053,7 @@ EOF
        until => $isodate2epoch->("2019-10-06 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 7,
+       recurrence_prewarn_days => -1,
        text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -6300,18 +6300,18 @@ EOF
 	2::inwork 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589
 EOF
      },
-     { from  => $isodate2epoch->("2020-10-02 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-10-04 23:59:59"),
+     { from  => $isodate2epoch->("2021-10-01 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-10-03 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 30, months => 9]], # trotz Corona! --- , start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 4,
-       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 03.10.2020 bis 04.10.2020',
+       recurrences => [['yearly', days => 30, months => 9]],
+       text  => 'Schöneberger Kürbisfest, Akazien- und Belziger Str. gesperrt, 02.10.2021 bis 03.10.2021',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.ms-event-agentur.com/seite22.html?date=20201002
 #: by: https://twitter.com/VIZ_Berlin/status/1312229648558850048
 #: by: https://pbs.twimg.com/media/EjX56WOWoAIPRUg?format=png&name=900x900
 #: by: https://www.berlin.de/events/4531106-2229501-schoeneberger-kuerbisfest.html (geplant für 2.+3.10.2021)
+#: by: https://www.eventbrite.com/e/22-schoneberger-kurbisfest-tickets-165249199805
 	2::temp 7001,9291 7012,9222 7035,9161 7101,9027 7201,8870
 	2::temp 6945,9142 7035,9161
 	2::temp 6975,8944 7101,9027 7308,9163
@@ -21288,11 +21288,12 @@ EOF
        until => $isodate2epoch->("2021-09-22 06:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 9, start => "2020-10-25T00:00:00"]],
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, möglicherweise schon ab 20.09.2021',
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, ab 20.09.2021',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
 #: by: https://www.bmw-berlin-marathon.com/
+#: by: https://viz.berlin.de/2021/09/berlin-marathon/
 # REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -21300,11 +21301,11 @@ EOF
 # REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2021-09-23 18:00:00"),
+     { from  => $isodate2epoch->("2021-09-22 06:00:00"),
        until => $isodate2epoch->("2021-09-27 06:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 9, start => "2020-10-25T00:00:00"]],
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich 24.09.2021 bis 27.09.2021',
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, vom 23.09.2021 bis 27.09.2021',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
@@ -29219,9 +29220,9 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-01-24 07:00:00"), # 1568571027, # 1557083524, # 2019-05-05 21:12
-       until => $isodate2epoch->("2021-09-22 17:00:00"), # 1569607982, # $isodate2epoch->("2019-10-07 18:00:00"),
+       until => undef, # $isodate2epoch->("2021-09-22 17:00:00"), # 1569607982, # $isodate2epoch->("2019-10-07 18:00:00"),
        dont_check_date=>1,
-       text  => 'Langhansstr.: in Höhe Antonplatz ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, voraussichtlich bis 8.9.2021',
+       text  => 'Langhansstr.: in Höhe Antonplatz ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, voraussichtlich bis 22.9.2021',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
        data  => <<EOF,
@@ -29239,7 +29240,7 @@ EOF
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12474,16443 12564,16399 12725,16321 12764,16302 12797,16285 12826,16271 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
-#: last_checked: 2021-08-27 (mapillary) vvv
+#: last_checked: 2021-09-17 (mapillary) vvv
 #: next_check: 2021-09-22 vvv
 #: note: hier nur an der Kreuzung Berliner Allee
 #: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 22.9.2021)
@@ -30437,7 +30438,7 @@ EOF
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-09-05
+#: last_checked: 2021-09-21
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 EOF
@@ -33346,9 +33347,11 @@ EOF
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10860 (Frage)
 #: XXX bis wann bleibt die Sperrung bestehen? vvv
 #: tempex: T20-T06 vvv
+#: last_checked: 2021-09-21 (in und um den Park herum stehen Absperrgitter) vvv
 #: next_check: 2021-12-31 vvv
 	2::night 10132,12941 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992
 	2::night 10166,12777 10105,12855 9977,12912
+#: last_checked ^^^
 #: next_check ^^^
 #: tempex ^^^
 #: XXX ^^^

@@ -335,7 +335,8 @@ Verbundsteinpflaster	RW;RW1 -645,-524 -601,-589 -549,-678
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/wasserstrassen-neubauamt-liess-haupttraeger-der-neuen-rammrathbruecke-einbauen_a285844
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/neubau-der-rammrathbruecke-wohl-schon-im-sommer-fertig_a306339
 # REMOVED (laut osm track) --- #: XXX nach Ende der Brückenarbeiten (Rammrathbrücke) soll hier ein kombinierter Geh- und Radweg entstehen --- #: source_id: 2019B00234 (bis 31.12.2021) (inaktiv) --- #: osm_watch: way id="5364051" version="19" brb --- #: osm_watch: way id="757445000" version="2" brb --- #: next_check: 2021-07-01
-	RW;RW -549,-678 -543,-691 -513,-736
+	RW; -549,-678 -543,-691 -513,-736
+Gehweg für Radfahrer frei	RW1; -513,-736 -543,-691 -549,-678
 # 
 	RW3;RW4 -12317,-1212 -12348,-1220 -12364,-1224 -12549,-1277 -12666,-1311
 	RW3; -12666,-1311 -12674,-1313 -12718,-1327
@@ -1564,7 +1565,7 @@ Verbundsteinpflaster	RW2; -2577,-3189 -2617,-3262 -2740,-3476
 	RW8;RW2 781,-3280 572,-3234 161,-2953 86,-2903
 Verbundsteinpflaster	RW2; -248,-1160 -321,-1038
 Verbundsteinpflaster	RW1; -321,-1038 -395,-920 -444,-841
-Verbundsteinpflaster	RW2; -444,-841 -513,-736
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -444,-841 -513,-736
 	RW; -513,-736 -444,-841 -395,-920 -321,-1038 -248,-1160
 	RW8;RW2 4424,26240 4920,26815 5496,27009
 	RW2;RW8 7617,26640 6880,27351 5939,27781

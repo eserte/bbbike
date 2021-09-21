@@ -10,6 +10,11 @@
 # 
 ### Friedrichshain ###
 # 
+#: XXX Genauer anschauen! Gibt es einen Termin für das Ende der Bauarbeiten am Ostbahnhof?
+#: last_checked: 2021-09-18
+#: next_check: 2021-09-18
+Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 12596,11696 12453,11790
+# 
 #: note: laut rbb bis 29.10.2021 vvv
 #: last_checked: 2021-09-15 vvv
 #: check_frequency: 30d vvv
@@ -112,6 +117,13 @@ Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 ### Tempelhof ###
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.513299.php --- #: XXX laut fritz bis 10.03.2017, laut vmz bis Mitte März 2017 --- #: source_id: 2147340484 --- #: last_checked: 2016-09-14 --- #: next_check: 2017-03-10 --- #: priority: #A --- #: valid: -20170310 --- Mariendorfer Damm: Fahrbahn zwischen Prinzenstr. und Richterstr. gesperrt	q4::inwork; 9333,4229 9346,4144 9372,4012
+# 
+#: by: https://twitter.com/VIZ_Berlin/status/1439849150187806720 (voraussichtlich für drei Wochen)
+#: by: https://twitter.com/VIZ_Berlin/status/1439919999142043651
+#: source_id: viz2021:13.385593,52.465718,18.09.2021,14:00 (noch kein Endedatum)
+#: priority: #A
+#: next_check: 2021-10-08
+Tempelhofer Damm: Fahrbahn zwischen Alt-Tempelhof und Götzstr. Richtung Süden gesperrt	q4::inwork; 9249,6642 9254,6542
 # 
 ### Mariendorf ###
 # 
@@ -233,7 +245,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/volt-berlin-baufeld-e3a.312/page-8#post-14027
 #: XXX Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straße, Fahrbahn ist noch abgesperrt
-#: last_checked: 2021-07-26
+#: last_checked: 2021-09-21
 #: check_frequency: 90d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
@@ -356,7 +368,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2021-09-16 vvv
+#: last_checked: 2021-09-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -799,11 +811,11 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 #: next_check_id: HOSEMANN-2019
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021)
-#: osm_watch: way id="885619857" version="3"
-#: osm_watch: way id="885619858" version="2"
+#: osm_watch: way id="885619857" version="4"
+#: osm_watch: way id="885619858" version="3"
 #: note: laut rbbtext bis 31.12.2020
 #: priority: #B
-#: last_checked: 2021-07-31 vvv
+#: last_checked: 2021-09-20 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
