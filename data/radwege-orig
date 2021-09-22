@@ -287,7 +287,14 @@ Radweg nur aufgemalt	RW1; 12169,10310 12243,10274 12341,10218
 	RW1; 12341,10218 12243,10274 12169,10310
 	RW1; 12341,10218 12464,10153 12507,10130 12671,10042 12814,9966 12932,9900
 Asphalt mit Wurzelschäden; unklare Ausschilderung, teilweise ist das Zeichen 241 missverständlich aufgestellt (könnten auch die Parkwege durch den Görlitzer Park gemeint sein); kurz vor dem Spreewaldplatz gibt es das Zeichen 237 ohne Auffahrmöglichkeit	RW1; 12932,9900 12814,9966 12671,10042 12507,10130 12464,10153 12341,10218
-	RW1;RW1 12932,9900 13026,9854 13086,9825
+	RW1; 12932,9900 13026,9854 13086,9825
+#: note: früher Radweg auf dem Bürgersteig
+#: by: mapillary
+#: XXX bleibt das Provisorium?
+#: last_checked: 2021-09-18 (mapillary)
+#: check_frequency: 90d
+provisorische geschützte Radspur	RW3; 13155,9907 13136,9883 13086,9825 13026,9854
+	RW1; 13026,9854 12932,9900
 	RW1;RW1 12341,10218 12229,10014
 besonders schlechter Zustand des Radwegs (durch Wurzeln)	RW1; 9827,10051 9922,10010 9950,9987 10006,9942 10134,9860
 Asphalt	RW1; 10006,9942 9950,9987
@@ -1907,8 +1914,9 @@ Gehwegplatten	RW2; 14006,13761 13906,13722
 	RW2;RW1 15863,11992 16066,11960 16127,11950 16207,11937
 für Radfahrer freigegebene Busspur	RW1; 16207,11937 16317,11920 16368,11912
 	RW1; 16368,11912 16317,11920 16207,11937
-#: note: Benutzungspflicht in Nordost-Richtung unklar. Es existieren widersprüchliche Einbahnstraßenschilder mit und ohne "Radfahrer frei"-Zusatzschildern.
-	RW1;RW1 13086,9825 13136,9883 13216,9983
+#: note: Benutzungspflicht unklar. Es existieren widersprüchliche Einbahnstraßenschilder mit und ohne "Radfahrer frei"-Zusatzschildern.
+	RW1; 13086,9825 13136,9883 13155,9907 13216,9983
+	RW1; 13216,9983 13155,9907
 	RW2; 9753,9252 9793,9241
 Radspur zwischen Fahrspuren	RW3; 9793,9241 9753,9252
 #: note: die ersten Meter asphaltierter Bürgersteigradweg
@@ -6888,7 +6896,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: osm_watch: way id="4401920" version="52"
 #: XXX wird mittlerweile verstetigt
 #: confirmed_by: srt
-#: last_checked: 2021-09-16 (webcam)
+#: last_checked: 2021-09-22 (webcam)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-07-23
 provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
@@ -7169,10 +7177,11 @@ provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-dauerhaften-radweg-an-der-schoeneberger-strasse_a317109
 #: XXX laut rbbtext Bauarbeiten bis 2021-03-20
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16)
+#: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 2021-12-16)
 #: note: mit Gelbmarkierung
 #: last_checked: 2021-07-23 (bw) vvv
-#: check_frequency: 90d vvv
-#: next_check: 2021-12-31 vvv
+# REMOVED --- #: check_frequency: 90d vvv
+#: next_check: 2021-12-16 vvv
 #: note: wieder aufgehoben: provisorische Radspur	RW3;
 	RW0; 8739,6701 8653,6781 8496,6919
 #: note: wieder aufgehoben: provisorische Radspur	RW4;
@@ -7180,7 +7189,7 @@ provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4
 #: note: wieder aufgehoben: provisorische Radspur	RW3;
 	RW0; 8653,6781 8739,6701
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 Busspur ist immer gültig	RW5; 8414,6995 8319,7084
 # 

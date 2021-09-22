@@ -2142,34 +2142,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BERLINMARATHON-RECURRING
-#: by: https://www.bmw-berlin-marathon.com/
-#: by: https://viz.berlin.de/2021/09/berlin-marathon/
-# REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
-	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1632110400,
-         'id' => 2387,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              10,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, ab 20.09.2021',
-         'type' => 'gesperrt',
-         'until' => 1632283200
-       },
+       undef,
        {
          'data' => '#: next_check_id: BERLINMARATHON-RECURRING
 #: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00
@@ -3299,7 +3272,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-09-09
+#: last_checked: 2021-09-17 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -3410,7 +3383,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12474,16443 12564,16399 12725,16321 12764,16302 12797,16285 12826,16271 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 #: last_checked: 2021-09-17 (mapillary) vvv
-#: next_check: 2021-09-22 vvv
+#: next_check: 2021-10-11 vvv
 #: note: hier nur an der Kreuzung Berliner Allee
 #: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 22.9.2021)
 	q3::inwork 13508,15912 13312,16027
@@ -3424,9 +3397,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1611468000,
          'id' => 3091,
          'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
-         'text' => 'Langhansstr.: in Höhe Antonplatz ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, voraussichtlich bis 22.9.2021',
+         'text' => 'Langhansstr.: in Höhe Antonplatz ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, voraussichtlich bis 11.10.2021',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1633964400
        },
        undef,
        undef,
@@ -4546,7 +4519,17 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'type' => 'handicap',
          'until' => 1632495600
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.560042,52.405163,12.07.2021,07:00
+	q4::inwork 21115,271 21171,222 21225,172 21250,118 21322,-176
+',
+         'from' => 1628978400,
+         'id' => 3408,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1103089.php',
+         'text' => 'Paradiesstr.: Bauarbeiten, Fahrbahn zwischen Johannes-Tobei-Str. und B96a gesperrt, vom 16.8.2021 bis 08.10.2021',
+         'type' => 'handicap',
+         'until' => 1633705200
+       },
        {
          'data' => '#: also_indoor: traffic
 #: XXX gibt es nach den Bauarbeiten bereits den neuen Radweg?
@@ -4866,6 +4849,16 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Ellen-Epstein-Str.: Radweg in Richtung Perleberger Str. gesperrt, bis Ende November 2021',
          'type' => 'gesperrt',
          'until' => 1638313199
+       },
+       {
+         'data' => '	q4::inwork; 8514,17634 8536,17786 8555,17928 8571,18037 8580,18106 8583,18127 8597,18214 8610,18309 8622,18402
+',
+         'from' => 1633471200,
+         'id' => 3446,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1129147.php',
+         'text' => 'Provinzstr.: Bauarbeiten zwischen Pankower Allee und Herbststr., Einbahnstraßenregelung, offen Richtung Süden, evtl. sind auch Radfahrer betroffen, vom 7. bis zum 30. Oktober 2021 ',
+         'type' => 'handicap',
+         'until' => 1635631199
        }
      
 );

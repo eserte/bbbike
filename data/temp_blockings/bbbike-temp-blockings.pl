@@ -28742,7 +28742,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-09-09
+#: last_checked: 2021-09-17 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -29220,9 +29220,9 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-01-24 07:00:00"), # 1568571027, # 1557083524, # 2019-05-05 21:12
-       until => undef, # $isodate2epoch->("2021-09-22 17:00:00"), # 1569607982, # $isodate2epoch->("2019-10-07 18:00:00"),
+       until => $isodate2epoch->("2021-10-11 17:00:00"), # 1569607982, # $isodate2epoch->("2019-10-07 18:00:00"),
        dont_check_date=>1,
-       text  => 'Langhansstr.: in Höhe Antonplatz ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, voraussichtlich bis 22.9.2021',
+       text  => 'Langhansstr.: in Höhe Antonplatz ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, voraussichtlich bis 11.10.2021',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
        data  => <<EOF,
@@ -29241,7 +29241,7 @@ EOF
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12474,16443 12564,16399 12725,16321 12764,16302 12797,16285 12826,16271 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 #: last_checked: 2021-09-17 (mapillary) vvv
-#: next_check: 2021-09-22 vvv
+#: next_check: 2021-10-11 vvv
 #: note: hier nur an der Kreuzung Berliner Allee
 #: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 22.9.2021)
 	q3::inwork 13508,15912 13312,16027
@@ -32537,15 +32537,16 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/burgfrauenstrasse-ab-19-april-gesperrt_a306720
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9333
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1129173.php (vorzeitig beendet)
 #: source_id: 2147347107 (hier: bis 30.6.2021)
 #: source_id: viz2021:13.299346,52.626261,19.04.2021,07:00 (bis 10.9.2021)
 #: source_id: viz2021:13.3053,52.62692,19.04.2021,07:00
 #: note: zwei Bauabschnitte: zunächst der westliche Abschnitt bis Olafstr. (inkl. Kreuzung), danach der östliche Abschnitt bis Berliner Str.
 #: priority: #A
-#: next_check: 2021-09-10 vvv
+# REMOVED --- #: next_check: 2021-09-10 vvv
 	q4::inwork 3022,24393 3225,24431 3425,24469
 	q3::inwork 3425,24469 3575,24498
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 # REMOVED (dieser Bereich folgt später) ---	q4::inwork 3575,24498 3712,24528 3842,24556
 EOF
      },
@@ -33124,11 +33125,12 @@ EOF
 EOF
      },
      { from  => 1628978400, # 2021-08-15 00:00
-       until => 1631311200, # 2021-09-11 00:00
-       text  => 'Paradiesstr.: Bauarbeiten, Fahrbahn zwischen "Thomas Philipps" und B96a gesperrt, vom 16.8.2021 bis 10.09.2021',
+       until => $isodate2epoch->("2021-10-08 17:00:00"), # 1631311200, # 2021-09-11 00:00
+       text  => 'Paradiesstr.: Bauarbeiten, Fahrbahn zwischen Johannes-Tobei-Str. und B96a gesperrt, vom 16.8.2021 bis 08.10.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1103089.php',
        data  => <<EOF,
+#: source_id: viz2021:13.560042,52.405163,12.07.2021,07:00
 	q4::inwork 21115,271 21171,222 21225,172 21250,118 21322,-176
 EOF
      },
@@ -33551,6 +33553,15 @@ EOF
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1437641256243453954/photo/2
 	1::inwork 6747,14436 6803,14459 6857,14488 6869,14494 6917,14504 6983,14508 7050,14501 7085,14482 7099,14461 7104,14432 7104,14403
+EOF
+     },
+     { from  => 1633471200, # 2021-10-06 00:00
+       until => 1635631199, # 2021-10-30 23:59
+       text  => 'Provinzstr.: Bauarbeiten zwischen Pankower Allee und Herbststr., Einbahnstraßenregelung, offen Richtung Süden, evtl. sind auch Radfahrer betroffen, vom 7. bis zum 30. Oktober 2021 ',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1129147.php',
+       data  => <<EOF,
+	q4::inwork; 8514,17634 8536,17786 8555,17928 8571,18037 8580,18106 8583,18127 8597,18214 8610,18309 8622,18402
 EOF
      },
     );
