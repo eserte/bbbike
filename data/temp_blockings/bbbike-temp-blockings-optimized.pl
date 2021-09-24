@@ -718,7 +718,38 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf
+	2::temp 8424,12853 8503,12895
+	2::temp 7930,12912 8021,12832
+# REMOVED (Adele-Schreiber-Krieger-Str.) ---	2::temp 8737,12757 8596,12760 8545,12760
+# REMOVED (westl. John-Foster-Dulles-Allee) ---	2::temp 7514,12387 7627,12380 7821,12367 7875,12363
+östl. John-Foster-Dulles-Allee	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
+# REMOVED (Schiffbauerdamm) ---	2::temp 8514,12877 8545,12760
+östl. Straße des 17. Juni	2::temp 8775,12457 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150
+# REMOVED (westl. Straße des 17. Juni) ---	2::temp 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8595,12066 8600,12165 8538,12245
+Große Querallee	2::temp 7816,12150 7822,12201 7875,12363 7945,12592
+südl. Spreeuferweg	2::temp 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
+Paul-Löbe-Allee und Verlängerungen	2::temp 7710,12585 7741,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8596,12576
+Yitzhak-Rabin-Str. bis Gustav-Heinemann-Brücke	2::temp 8120,12756 8122,12603 8119,12414 8055,12186 8119,12414 8122,12603 8120,12756 8114,12839 8115,12912 8116,12938 8110,13042
+nördl. Wilhelmstr.	2::temp 8775,12457 8766,12541
+Willy-Brandt-Str. - Konrad-Adenauer-Str.	2::temp 8021,12832 8030,12824 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853
+Platz des 18. März	2::temp 8538,12245 8592,12252
+	2::temp 8252,12757 8115,12912
+	2::temp 8344,12221 8391,12389 8400,12417
+	2::temp 8546,12279 8391,12389 8354,12416
+	2::temp 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414
+	2::temp 8309,12758 8415,12749 8593,12742
+',
+         'from' => 1633989600,
+         'id' => 1422,
+         'text' => 'Straße des 17. Juni und Straßen im Regierungsviertel am 13. Oktober 2021 von 11 bis 21 Uhr gesperrt (Großer Zapfenstreich)',
+         'type' => 'gesperrt',
+         'until' => 1634151600
+       },
        undef,
        undef,
        undef,
@@ -1445,7 +1476,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-09-01
+#: last_checked: 2021-09-24
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -2947,7 +2978,34 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147341611
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf (Großer Zapfenstreich 2021)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Aufhebung der letzten Einschränkung)
+#: by: https://www.bmvg.de/de/presse/grosser-zapfenstreich-zur-wuerdigung-einsatz-afghanistan-5181746 (Verschiebung, noch kein neuer Termin)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf (Großer Zapfenstreich 2021, neuer Termin)
+	2::temp 7435,11514 7322,11177
+	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
+	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
+	2::temp 7595,11086 7575,11076 7252,11188
+Lützowufer	2::temp 7089,11073 7248,11143 7461,11051 7579,11032
+Hiroshimastr.	2::temp 7253,11208 7356,11517
+Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7248,11143
+# REMOVED ---	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
+# REMOVED ---	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
+# REMOVED ---	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
+# REMOVED ---	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7218,11181 7140,11156
+# REMOVED ---	2::temp 7665,11353 7745,11332
+# REMOVED ---	2::temp 7745,11332 7690,11108
+',
+         'from' => 1634022000,
+         'id' => 2875,
+         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
+         'text' => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 13. Oktober 2021 von 09:00 bis 16:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1634135400
+       },
        undef,
        undef,
        undef,
@@ -3601,7 +3659,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-09-21
+#: last_checked: 2021-09-24
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 ',
@@ -3650,7 +3708,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-09-02
+#: last_checked: 2021-09-22
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3699,7 +3757,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-09-13
+#: last_checked: 2021-09-22
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4508,17 +4566,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.560042,52.405163,12.07.2021,07:00 (hier: bis 24.9.2021, siehe unten)
-	q4::inwork 21355,-309 21322,-176 21250,118
-',
-         'from' => 1625954400,
-         'id' => 3407,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1103089.php',
-         'text' => 'Paradiesstr.: Bauarbeiten, Fahrbahn zwischen Buntzelstr. und "Thomas Philipps" gesperrt, vom 12.7.2021 bis 24.9.2021',
-         'type' => 'handicap',
-         'until' => 1632495600
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.560042,52.405163,12.07.2021,07:00
 	q4::inwork 21115,271 21171,222 21225,172 21250,118 21322,-176
@@ -4640,13 +4688,14 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        },
        {
          'data' => '#: add_fragezeichen: Ist die Sperrung aufgehoben?
-#: last_checked: 2021-09-02
-#: check_frequency: 21d
+#: last_checked: 2021-09-24
+# REMOVED --- #: check_frequency: 21d
+#: next_check: 2021-10-15
 	2::inwork 8668,10219 8668,10236 8715,10314
 ',
          'from' => 1627924220,
          'id' => 3425,
-         'text' => 'Rampe zum Anhalter Steg gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Rampe zum Anhalter Steg gesperrt, mindestens bis 15.10.2021',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4724,16 +4773,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'type' => 'handicap',
          'until' => 1633363200
        },
-       {
-         'data' => '	1::inwork 20364,32054 20534,31937
-',
-         'from' => 1629583200,
-         'id' => 3432,
-         'source_id' => '216001757',
-         'text' => 'Bernau - Oranienburg: Bauarbeiten am Brückenbauwerk über die A11, Straße Richtung Bernau gesperrt, evtl. sind auch Radfahrer betroffen, 23.08.2021 bis 24.09.2021 ',
-         'type' => 'gesperrt',
-         'until' => 1632520799
-       },
+       undef,
        undef,
        undef,
        {
@@ -4859,6 +4899,55 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Provinzstr.: Bauarbeiten zwischen Pankower Allee und Herbststr., Einbahnstraßenregelung, offen Richtung Süden, evtl. sind auch Radfahrer betroffen, vom 7. bis zum 30. Oktober 2021 ',
          'type' => 'handicap',
          'until' => 1635631199
+       },
+       {
+         'data' => '#: by: wosch
+#: by: https://www.gmg-ing.de/referenzen/ernst-heilmann-steg-berlin/ ("Torsionsschwingungen")
+#: by: https://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10997_Berlin_Instandsetzung_Stahlbau_1924073.html (Ausschreibung)
+#: also_indoor: search Ernst-Heilmann-Steg
+#: last_checked: 2021-09-24
+#: check_frequency: 90d
+	2::inwork 13270,10030 13306,10006
+',
+         'from' => undef,
+         'id' => 3447,
+         'text' => 'Ernst-Heilmann-Steg gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: note: hier steht ein großes Zelt der CDU, auch der Gehweg ist nicht passierbar
+	2::temp 6880,11110 6841,11114
+',
+         'from' => 1632496956,
+         'id' => 3448,
+         'text' => 'Corneliusstr.: Durchfahrt nicht möglich, voraussichtlich bis zum 27.09.2021',
+         'type' => 'gesperrt',
+         'until' => 1632780000
+       },
+       {
+         'data' => '#: XXX temporär für das ZDF eingerichtet, vielleicht nur für die Bundestagswahl?
+#: last_checked: 2021-09-24
+#: next_check: 2021-09-28
+	q4::temp; 9898,12161 9913,12068
+',
+         'from' => undef,
+         'id' => 3449,
+         'text' => 'Oberwallstr.: zwischen Französische Str. und Jägerstr. Einbahnstraßenregelung, offen Richtung Norden',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: XXX temporär für die ARD (?) eingerichtet, vielleicht nur für die Bundestagswahl?
+#: last_checked: 2021-09-24
+#: next_check: 2021-09-28
+	q4::temp 8892,12576 8766,12541
+',
+         'from' => undef,
+         'id' => 3450,
+         'text' => 'Reichtstagufer: Fahrbahn an der Wilhelmstr. gesperrt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

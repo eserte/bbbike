@@ -3912,7 +3912,7 @@ Rosensteinweg	N 1718,9653 1917,9821 1927,9820
 #: XXX Umbenennung zu Baraschstr. soll erfolgen (allerdings gibt es noch keinen Amtsblatt-Eintrag)
 #: also_indoor: search Wissmannstraße Baraschstraße
 #: osm_watch: way id="4623428" version="10"
-#: next_check: 2021-09-24
+#: next_check: 2021-10-01
 Wissmannstr.	N 1341,9244 1421,9173 1434,9154 1483,9132 1569,9137 1708,9298
 Winkler Str.	N 936,8933 1037,8884 1090,8892 1316,9067 1434,9154
 Erdener Str.	N 1457,9344 1587,9320 1708,9298 1757,9282 1782,9270
@@ -10012,7 +10012,7 @@ Weichselmünder Weg	N 31528,3456 31674,3409 31865,3375
 Inselstr. (Hessenwinkel)	N 32101,2216 32067,2178
 Im Haselwinkel	N 31975,2365 32101,2216 32167,2160 32248,2125 32332,2118
 Biberpelzstr.	N 31975,2365 31903,2497 31896,2512 31789,2636 31701,2701 31647,2729 31565,2762 31514,2755 31495,2753 31463,2748
-#: XXX_indoor: richtiger Ortsteil: Hessenwinkel oder Wilhelmshagen?
+#: XXX_indoor: richtiger Ortsteil: Hessenwinkel oder Wilhelmshagen? Oder Rahnsdorf?
 Wolfgang-Steinitz-Str.	N 31967,2966 31948,2962 31861,2898 31772,2830 31647,2729
 Rialtoring	N 31463,2748 31434,2729 31396,2713 31236,2702 30962,2787 30989,2949 31002,3045 31012,3124 31057,3279 31082,3366 31139,3497
 Plutoweg	N 31082,3366 30965,3391 30811,3416 30750,3468 30608,3617 30499,3632 30366,3681
@@ -18052,7 +18052,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9160,12932
 #: XXX für den Autoverkehr mittlerweile gesperrt?
 #: XXX oder eventuell wird das eine Einbahnstraße, wenn die Bauarbeiten an der Pankebrücke beendet sind (Schilder hängen schon, obwohl es eine Sackgasse ist?!)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
-#: last_checked: 2021-08-31
+#: last_checked: 2021-09-24
 #: check_frequency: 90d
 (Straße vor dem Berliner Ensemble)	N 9212,12969 9160,12932
 Karlplatz	N 8711,12986 8676,12976
@@ -18479,7 +18479,8 @@ Ruheplatzstr.	N 7436,15746 7518,15605 7540,15566 7627,15412
 (Müllerstr. - Gerichtstr.)	NN 7607,15282 7723,15417
 Ostender Str.	N 6474,15278 6640,15421 6794,15553 6862,15615 6919,15666 7024,15810
 Mehlbeerenweg	N 11993,11978 11940,11982 11909,11985
-Mehlbeerenweg	NN 11940,11982 11923,11881 11916,11846
+Mehlbeerenweg	NN 11940,11982 11923,11881
+# REMOVED (dieses Straßenstück existiert nicht mehr, hier ist ein Sportplatz) --- Mehlbeerenweg	NN 11923,11881 11916,11846
 Kleine Markusstr.	N 12059,12172 11958,12195 11937,12127
 (Kleine Markusstr. - Krautstr.)	N 11937,12127 11958,12112 12021,12066
 (Krautstr. - Kleine Markusstr.)	N 12002,12008 11962,12034 11958,12112
@@ -19575,7 +19576,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: 2147346962 (hier: Einschränkungen an der Gegenfahrbahn, bis 31.1.2025)
-#: last_checked: 2021-09-05
+#: last_checked: 2021-09-24
 #: check_frequency: 180d
 #: next_check: 2025-01-31
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

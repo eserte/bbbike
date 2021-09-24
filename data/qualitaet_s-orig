@@ -323,7 +323,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-16-12-2020_mit-anhang.pdf (Asphaltierung vorgesehen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ampel am Sachsendamm: "man hofft auf eine Umsetzung im Herbst (2021)")
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Sanierung wird erwähnt)
-#: last_checked: 2021-07-18 vvv
+#: last_checked: 2021-09-24 vvv
 #: check_frequency: 120d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7250,8223 7225,8219 7158,8208 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7225,8219 7250,8223
@@ -534,7 +534,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
-#: last_checked: 2021-09-04
+#: last_checked: 2021-09-24
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -2157,7 +2157,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13648,8321
 # 
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster? vvv
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021) vvv
-#: last_checked: 2021-07-15 vvv
+#: last_checked: 2021-09-24 vvv
 #: check_frequency: 90d vvv
 Rungestr.: Kopfsteinpflaster	Q2- 11197,11882 11291,11876 11378,11856 11506,11851
 #: check_frequency ^^^
@@ -2349,8 +2349,8 @@ Futranplatz: Kopfsteinpflaster	Q2 22451,4749 22388,4737
 Steinstr.: Kopfsteinpflaster	Q2 -7909,-2375 -7996,-2293
 (zum Anhalter Steg): Asphalt	Q0 8668,10219 8668,10236
 #: XXX bleibt es nach den Bauarbeiten beim Kleinsteinpflaster?
-#: last_checked: 2021-09-02
-# REMOVED --- #: next_check: 2021-08-27
+#: last_checked: 2021-09-24
+#: next_check: 2021-10-15
 (zum Anhalter Steg): Kleinsteinpflaster	Q2+ 8668,10236 8715,10314 8711,10322
 (Anhalter Steg): Asphalt	Q0 8711,10322 8726,10351
 (Anhalter Steg): Holzbohlen	Q1 8726,10351 8760,10408 8773,10429
@@ -11685,6 +11685,8 @@ Lobeckstr.: Asphalt mit einigen Schäden und Schlaglöchern	Q0- 10585,10766 10492,
 Weidenkätzchenweg: Verbundsteinpflaster	Q1+ 21465,-15 21450,38 21421,158
 # REMOVED (fertiggestellt) --- #: next_check_id: BUSCHWINDROESCHENWEG-2019 --- #: by: mapillary --- #: XXX wie wird die Qualität nach der Fertigstellung sein? --- #: last_checked: 2019-02-10 (mapillary) --- #: check_frequency: 90d
 Buschwindröschenweg: Verbundsteinpflaster	Q1+ 21379,33 21393,-29 21382,-31 21409,-109
+#: by: osm
+Buschwindröschenweg: Verbundsteinpflaster	Q1+ 21354,142 21379,33
 # 
 # REMOVED --- #: next_check_id: IMLINDENHOF-2018 vvv --- #: by: https://de.wikipedia.org/wiki/Klinik_f%C3%BCr_Kinder-_und_Jugendmedizin_Lindenhof --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7145 (Empfehlung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136437163617/437163617/00222872/72-Anlagen/02/StrassenLindenhof001.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_45_5121_5232_online.pdf (Benennung von Straßen) --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/richtfest-fuer-groesstes-neubauvorhaben-der-howoge_a166322 --- #: XXX vermutlich asphaltiert, aber unter der Schlammschicht nicht erkennbar vvv --- #: osm_watch: way id="628078318" version="1" --- #: last_checked: 2018-12-13 vvv --- #: check_frequency: 60d vvv
 # REMOVED (wurde bei osm entfernt) --- #: XXX außerdem prüfen: gibt es eine Geh/Radverbindung zum Radweg Richtung Herzberge? --- #: osm_watch: way id="51438114" version="12"
@@ -15200,6 +15202,7 @@ Straßburger Str.: Kopfsteinpflaster	Q2 11239,14123 11236,14153
 #: note: teilweise sind die Streifen leider zugeparkt, und an einigen Stellen brüchig. vvv
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1092787.php (Asphaltierung der Fahrbahnmitte bis 24.09.2021)
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/fahrbahn-wird-erneuert_a313644
+#: osm_watch: way id="148665021" version="15"
 #: priority: #B
 #: next_check: 2021-09-24
 Potsdamer Str. (Lichterfelde): schlechtes Kopfsteinpflaster, schmale asphaltierte Streifen	Q3+ 3193,3793 3372,3557
@@ -20715,6 +20718,7 @@ Stolzingstr.: Asphalt	Q0 1338,25262 1360,25269 1429,25335 1468,25384
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1107545.php (Fahrbahn (oder nur Gehweg?)-Instandsetzung ab 1.8.2021, für ca. sechs Wochen)
 #: by: https://www.berliner-woche.de/frohnau/c-verkehr/vollsperrung-der-stolzingstrasse_a317400
 #: by: https://www.berliner-woche.de/frohnau/c-verkehr/nicht-gehweg-sondern-fahrbahn_a318330 (Klarstellung: die Fahrbahn wird repariert)
+#: osm_watch: way id="958504172" version="2"
 #: note: laut rbb bis 24.09.2021
 #: last_checked: 2021-05-01 (mapillary)
 # REMOVED --- #: check_frequency: 120d
@@ -28254,7 +28258,8 @@ Ostender Str.: Kopfsteinpflaster	Q2 6794,15553 6862,15615 6919,15666 7024,15810
 (Zufahrt Str. d. Pariser Kommune): Beton	Q1+ 12617,11888 12648,11953
 (Zufahrt Franz-Mehring-Platz): Beton	Q1+ 12648,11953 12691,12042 12735,12131
 Mehlbeerenweg: Asphalt	Q0 11993,11978 11940,11982 11909,11985
-Mehlbeerenweg: schlechter Asphalt und Sand	Q3 11940,11982 11923,11881 11916,11846
+Mehlbeerenweg: schlechter Asphalt und Sand	Q3 11940,11982 11923,11881
+# REMOVED --- Mehlbeerenweg: schlechter Asphalt und Sand	Q3 11923,11881 11916,11846
 #: corrected_by: srt (Q2 -> Q1)
 Kleine Markusstr.: Beton	Q1 12059,12172 11958,12195 11937,12127
 (nördliches Spreeufer): Parkweg	Q1 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595

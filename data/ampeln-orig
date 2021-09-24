@@ -19,16 +19,12 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: valid: -20211011
 Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
 # 
-#: next_check_id: GAERTNER-2021
-#: last_checked: 2021-09-02
-# REMOVED (nicht mehr) --- Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775
-Grünberger Str.	F::inwork 14272,11775
-# 
+# REMOVED --- #: next_check_id: GAERTNER-2021 --- #: last_checked: 2021-09-02 --- # REMOVED (nicht mehr) --- Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775 --- Grünberger Str.	F::inwork 14272,11775
 # REMOVED --- #: XXX Hauffstraße (Rummelsburg) in beiden Richtungen zwischen Wiesenweg und Schreiberhauer Straße: Arbeiten an Gasleitung, für beide Richtungen nur ein gemeinsamer Fahrstreifen abwechselnd frei, eine Baustellenampel regelt den Verkehr, vom 06.07.2021 08:00 bis 23.07.2021 17:00 --- #: note: Ampeln in der Hauffstr. sowie in der Schulze-Boysen-Str. an der Buchberger Str.; außerdem ist die Anbindung Pfarrstr. offiziell gesperrt --- #: source_id: viz2021:13.478302,52.506695,06.07.2021,08:00 (mittlerweile bis 3.9.2021) vvv --- #: last_checked: 2021-08-09 vvv --- #: valid: -20210903 vvv --- Hauffstr.: Gegenverkehrsregelung	X::inwork 15458,11306 --- Schulze-Boysen-Str.: Gegenverkehrsregelung	X::inwork 15477,11338 --- #: valid ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # 
 #: next_check_id: HERMANNHESSESTR-2019
 #: XXX wird die temporäre Ampel durch eine permanente ersetzt?
-#: last_checked: 2021-07-26 (traffic)
+#: last_checked: 2021-08-20 (mapillary)
 #: check_frequency: 60d
 	X::inwork 9868,19023
 # 
@@ -2943,13 +2939,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: osm_watch: node id="5931765487" version="1"
 #: osm_watch: node id="5931765488" version="1"
-#: last_checked: 2021-09-16
+#: last_checked: 2021-09-24
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2021-09-21 vvv
+#: last_checked: 2021-09-24 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -2969,7 +2965,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2021-08-22 (daf)
+#: last_checked: 2021-09-24
 #: check_frequency: 90d
 #: next_check: 2021-11-15
 	X::inwork 8732,14098
@@ -3276,7 +3272,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5364,7330
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2021-07-27 (mapillary)
+#: last_checked: 2021-09-24
 #: check_frequency: 90d
 #: next_check: 2021-11-15
 	X::inwork 8336,14586
@@ -3287,19 +3283,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2021-07-27 (mapillary)
+#: last_checked: 2021-09-24
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 
-#: next_check_id: CORONA-2020
-#: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html
-#: XXX vermutlich temporär für das Impfzentrum
-#: by: mapillary
-#: last_checked: 2021-07-27 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2021-09-01
-	F::inwork 8153,14769
-# 
+# REMOVED (gibt's nicht mehr) --- #: next_check_id: CORONA-2020 --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX vermutlich temporär für das Impfzentrum --- #: by: mapillary --- #: last_checked: 2021-07-27 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2021-09-01 ---	F::inwork 8153,14769
 # REMOVED --- #: next_check_id: CHAUSSEESTR-2016 vvv
 # REMOVED (see https://www.openstreetmap.org/note/765740#map=18/52.53800/13.37363&layers=N ) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8232 (bleibt die Ampel permanent?) ---#: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019) --- #: source_id: 2147340715 vvv --- #: last_checked: 2018-05-17 vvv --- #: check_frequency: 60d vvv ---	X::inwork 8250,14672 --- # REMOVED --- F::inwork 8732,14098 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # REMOVED --- #: next_check_id ^^^

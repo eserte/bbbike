@@ -10,10 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
+#: by: https://bauprojekte.deutschebahn.com/p/berlin-ostbahnhof (bis 2025?)
 #: XXX Genauer anschauen! Gibt es einen Termin für das Ende der Bauarbeiten am Ostbahnhof?
-#: last_checked: 2021-09-18
-#: next_check: 2021-09-18
-Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 12596,11696 12453,11790
+#: last_checked: 2021-09-24
+#: check_frequency: 120d
+#: next_check: 2025-01-01
+Erich-Steinfurth-Str.: Bauarbeiten, etwa 50m der Fahrbahn gesperrt	q3::inwork 12596,11696 12453,11790
 # 
 #: note: laut rbb bis 29.10.2021 vvv
 #: last_checked: 2021-09-15 vvv
@@ -120,9 +122,12 @@ Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 # 
 #: by: https://twitter.com/VIZ_Berlin/status/1439849150187806720 (voraussichtlich für drei Wochen)
 #: by: https://twitter.com/VIZ_Berlin/status/1439919999142043651
-#: source_id: viz2021:13.385593,52.465718,18.09.2021,14:00 (noch kein Endedatum)
+#: by: https://twitter.com/wasserbetriebe/status/1440980462776823808 (bereits am Sonntag offen)
+#: by: https://twitter.com/VIZ_Berlin/status/1440984451782164484
+#: source_id: viz2021:13.385593,52.465718,18.09.2021,14:00 (noch kein Endedatum) (mittlerweile bis 26.9.2021)
 #: priority: #A
-#: next_check: 2021-10-08
+#: next_check: 2021-09-25
+#: valid: -20210925
 Tempelhofer Damm: Fahrbahn zwischen Alt-Tempelhof und Götzstr. Richtung Süden gesperrt	q4::inwork; 9249,6642 9254,6542
 # 
 ### Mariendorf ###
@@ -192,8 +197,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 #: next_check_id: MOLKENMARKT-2021
 #: last_checked: 2021-09-01 vvv
 #: next_check: 2024-06-01 vvv
-(Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285
-(Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10772,12288 10804,12291 10830,12279
+(Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10804,12291 10830,12279
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -210,7 +214,7 @@ Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehw
 #: next_check_id: CHAUSSEE-2020
 #: source_id: 2147346552 (bis 16.7.2021)
 #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022)
-#: last_checked: 2021-08-21 (daf)
+#: last_checked: 2021-09-24
 #: check_frequency: 90d
 #: next_check: 2021-11-15
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -251,7 +255,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-09-05
+#: last_checked: 2021-09-24
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2021-08-24 (mapillary)
@@ -295,7 +299,7 @@ Scharrenstr.: Bauarbeiten an der Breiten Str., einige Meter der Fahrbahn gesperr
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="10"
 #: also_indoor: traffic
-#: last_checked: 2021-08-12
+#: last_checked: 2021-09-24
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -368,7 +372,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2021-09-21 vvv
+#: last_checked: 2021-09-24 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -473,6 +477,10 @@ Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 # REMOVED (BVG-Meldung ist weg) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 (hier: Ende der Bauarbeiten August 2018, aber vielleicht ist Fahrbahn+Radweg früher schon offen?) --- #: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/bauverzug-am-abwasserkanal_a186365 (Ende Dezember 2018) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50363 (allerdings ist hier eine andere Baustelle beim 365er erwähnt, nur die Karte zeigt auch diese Baustelle) --- #: XXX laut googlemaps bis 23. September 2018; laut vmz bis Anfang Dezember 2018 --- #: also_indoor: traffic --- #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72 --- #: source_id: 2147342044 --- #: last_checked: 2018-11-03 --- #: next_check: 2018-12-06 --- # REMOVED --- #: valid: -20181201 --- #: priority: #A --- Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn und teilweise auch Radweg gesperrt	q3::inwork 17826,6495 17991,6431
 # 
 ### Kreuzberg ###
+# 
+#: last_checked: 2021-09-24
+#: check_frequency: 14d
+Böckhstr.: einige Meter der Fahrbahn gesperrt	q3::inwork 11411,9810 11197,9894
 # 
 # REMOVED (offen) --- #: next_check_id: FRIESEN-2018 --- #: source_id: 2147342598 --- #: source_id: 2147344059 --- #: source_id: 2147344058 --- #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, bei VMZ bis Juli 2019, laut fritz bis 31.08.2019 --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44021 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.832802.php (Ende der Bauarbeiten KW 31/2019) --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/ende-der-bauarbeiten_a225376 (ab Anfang August 2019 passierbar) --- #: also_indoor: traffic vvv --- #: last_checked: 2019-07-30 vvv --- #: next_check: 2019-07-31 vvv --- #: valid: -20190731 vvv --- #: priority: #A vvv
 # REMOVED (hier nicht mehr?) --- #: source_id: 2147344148 --- Friesenstr.: Einbahnstraße zwischen Fidicinstr. und Columbiadamm, offen Richtung Columbiadamm	q3::inwork; 9801,8683 9801,8889 9799,8962

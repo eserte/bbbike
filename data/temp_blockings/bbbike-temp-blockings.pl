@@ -12223,13 +12223,14 @@ EOF
 	2::inwork 23402,5483 23384,5541 23370,5589 23333,5710
 EOF
      },
-     { from  => $isodate2epoch->("2019-11-11 08:00:00"), # 1216461600, # 2008-07-19 12:00 # $isodate2epoch->("2021-08-31 00:00:00"), # 
-       until => $isodate2epoch->("2019-11-12 14:00:00"), # 1216584000, # 2008-07-20 22:00 # $isodate2epoch->("2021-08-31 23:00:00"), # 
-       text  => 'Straße des 17. Juni und Straßen im Regierungsviertel am 31. August 2021 von 14 bis 23 Uhr gesperrt (Großer Zapfenstreich)', # früher: Feierliches Gelöbnis der Bundeswehr
+     { from  => $isodate2epoch->("2021-10-12 00:00:00"), # $isodate2epoch->("2019-11-11 08:00:00"), # 1216461600, # 2008-07-19 12:00 # $isodate2epoch->("2021-08-31 00:00:00"), # 
+       until => $isodate2epoch->("2021-10-13 21:00:00"), # $isodate2epoch->("2019-11-12 14:00:00"), # 1216584000, # 2008-07-20 22:00 # $isodate2epoch->("2021-08-31 23:00:00"), # 
+       text  => 'Straße des 17. Juni und Straßen im Regierungsviertel am 13. Oktober 2021 von 11 bis 21 Uhr gesperrt (Großer Zapfenstreich)', # früher: Feierliches Gelöbnis der Bundeswehr
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf
 	2::temp 8424,12853 8503,12895
 	2::temp 7930,12912 8021,12832
 # REMOVED (Adele-Schreiber-Krieger-Str.) ---	2::temp 8737,12757 8596,12760 8545,12760
@@ -16300,7 +16301,7 @@ EOF
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-09-01
+#: last_checked: 2021-09-24
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 EOF
@@ -26573,9 +26574,9 @@ EOF
 	3 6122,10925 6145,10975 6266,10927
 EOF
      },
-     { from  => $isodate2epoch->("2021-07-19 06:00:00"), # $isodate2epoch->("2021-08-30 00:00:00"), # 
-       until => $isodate2epoch->("2021-07-20 18:30:00"), # $isodate2epoch->("2021-08-31 16:30:00"), # 
-       text  => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 31. August 2021 von 10:00 bis 16:30 Uhr',
+     { from  => $isodate2epoch->("2021-10-12 09:00:00"), # $isodate2epoch->("2021-08-30 00:00:00"), # 
+       until => $isodate2epoch->("2021-10-13 16:30:00"), # $isodate2epoch->("2021-08-31 16:30:00"), # 
+       text  => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 13. Oktober 2021 von 09:00 bis 16:30 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
        data  => <<EOF,
@@ -26584,6 +26585,7 @@ EOF
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf (Großer Zapfenstreich 2021)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Aufhebung der letzten Einschränkung)
 #: by: https://www.bmvg.de/de/presse/grosser-zapfenstreich-zur-wuerdigung-einsatz-afghanistan-5181746 (Verschiebung, noch kein neuer Termin)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf (Großer Zapfenstreich 2021, neuer Termin)
 	2::temp 7435,11514 7322,11177
 	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
 	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
@@ -30438,7 +30440,7 @@ EOF
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-09-21
+#: last_checked: 2021-09-24
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 EOF
@@ -30807,7 +30809,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-09-02
+#: last_checked: 2021-09-22
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31024,7 +31026,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-09-13
+#: last_checked: 2021-09-22
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33318,12 +33320,13 @@ EOF
      },
      { from  => 1627924220, # 2021-08-02 19:10
        until => undef, # 1630101600, # 2021-08-28 00:00
-       text  => 'Rampe zum Anhalter Steg gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Rampe zum Anhalter Steg gesperrt, mindestens bis 15.10.2021',
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Ist die Sperrung aufgehoben?
-#: last_checked: 2021-09-02
-#: check_frequency: 21d
+#: last_checked: 2021-09-24
+# REMOVED --- #: check_frequency: 21d
+#: next_check: 2021-10-15
 	2::inwork 8668,10219 8668,10236 8715,10314
 EOF
      },
@@ -33562,6 +33565,51 @@ EOF
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1129147.php',
        data  => <<EOF,
 	q4::inwork; 8514,17634 8536,17786 8555,17928 8571,18037 8580,18106 8583,18127 8597,18214 8610,18309 8622,18402
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Ernst-Heilmann-Steg gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: wosch
+#: by: https://www.gmg-ing.de/referenzen/ernst-heilmann-steg-berlin/ ("Torsionsschwingungen")
+#: by: https://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10997_Berlin_Instandsetzung_Stahlbau_1924073.html (Ausschreibung)
+#: also_indoor: search Ernst-Heilmann-Steg
+#: last_checked: 2021-09-24
+#: check_frequency: 90d
+	2::inwork 13270,10030 13306,10006
+EOF
+     },
+     { from  => 1632496956, # 2021-09-24 17:22
+       until => 1632780000, # 2021-09-28 00:00
+       text  => 'Corneliusstr.: Durchfahrt nicht möglich, voraussichtlich bis zum 27.09.2021',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: note: hier steht ein großes Zelt der CDU, auch der Gehweg ist nicht passierbar
+	2::temp 6880,11110 6841,11114
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Oberwallstr.: zwischen Französische Str. und Jägerstr. Einbahnstraßenregelung, offen Richtung Norden',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX temporär für das ZDF eingerichtet, vielleicht nur für die Bundestagswahl?
+#: last_checked: 2021-09-24
+#: next_check: 2021-09-28
+	q4::temp; 9898,12161 9913,12068
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Reichtstagufer: Fahrbahn an der Wilhelmstr. gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX temporär für die ARD (?) eingerichtet, vielleicht nur für die Bundestagswahl?
+#: last_checked: 2021-09-24
+#: next_check: 2021-09-28
+	q4::temp 8892,12576 8766,12541
 EOF
      },
     );
