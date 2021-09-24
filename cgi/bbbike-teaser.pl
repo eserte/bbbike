@@ -121,12 +121,17 @@ EOF
 }
 
 sub teaser_marathon {
-    my $out_of_date = $today lt "20150924" || $today gt "20150927";
+    my $out_of_date = $today lt "20210923" || $today gt "20210926";
     if (!$out_of_date) {
-	my $marathon_map_url = 'http://www.bmw-berlin-marathon.com/veranstaltungswoche/interaktive-karte.html';
+	my $marathon_map_url = 'https://www.bmw-berlin-marathon.com/dein-rennen/strecke/';
 	<<EOF
-<div class="teaser" style="font-weight:bold">Am 26. und 27. September 2015 findet der Marathon statt.<br/>
-<a href="$marathon_map_url">Karte mit den Sperrungen</a> (Tab "Berliner")</div>
+<div class="teaser" style="font-weight:bold">Am 25. und 26. September 2021 findet der Marathon statt.<br/>
+Karten mit den Strecken &mdash; hier gibt es m&ouml;gliche Sperrungen:
+<ul style="margin-top:1px; margin-bottom:1px; padding-left:20px;">
+ <li><a href="https://skating.bmw-berlin-marathon.com/dein-rennen/strecke/">Samstag</a></li>
+ <li><a href="$marathon_map_url">Sonntag</a></li>
+</ul>
+</div>
 EOF
     } else {
 	();
