@@ -3478,10 +3478,14 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
 # 
 #: XXX evtl. wird nach den Bauarbeiten die Qualität besser sein
-#: osm_watch: way id="141309175" version="10"
-#: last_checked: 2021-07-21
-#: check_frequency: 60d
+#: osm_watch: way id="141309175" version="11"
+#: last_checked: 2021-09-25 vvv
+#: check_frequency: 60d vvv
 Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708,11918 20738,11915
+Wildrosenweg: Überqueren der Schulstr. nicht möglich	3 20694,11811 20708,11918 20715,12040
+Wildrosenweg: Überqueren der Schulstr. nicht möglich	3 20715,12040 20708,11918 20694,11811
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: MITTEL-2019
 #: source_id: IM_020714
@@ -4023,7 +4027,7 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 # REMOVED --- #: XXX laut Plakatwerbung wird am 22.8.2021 eröffnet
 #: XXX Straße fertig asphaltiert, aber noch durch Bauzäune abgesperrt
 #: last_checked: 2021-09-24
-#: check_frequency: 21d
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-08-22
 Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,11133
 # 
@@ -4117,24 +4121,17 @@ Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12
 # REMOVED --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8103 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280921/21-Anlagen/01/DS0329_VzK_Strassenbenennung_Moeckernkiez_fina.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Benennung) --- #: XXX Qualität: Rampe betoniert, sonst eine Art Steinpflaster; ggfs. noch eine weitere Zufahrt zum Park einzeichnen --- #: osm_watch: way id="264361563" version="3" --- #: last_checked: 2018-05-08 --- #: check_frequency: 21d --- Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8757,9748 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # REMOVED (vermutlich beendet) --- #: next_check_id: OBERERWUHLEWANDERWEG-2017 --- #: last_checked: 2017-08-09 --- #: XXX Ende der Bauarbeiten --- #: next_check: 2017-08-11 --- #: priority: #A --- oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
 # REMOVED --- #: next_check_id: MOEWENWEG-2017 --- #: osm_watch: way id="618339166" version="7" --- #: XXX nach den Bauarbeiten vermutlich nur ein Rad/Gehweg --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.632264.php ("Fertigstellung ist für den Sommer 2018 geplant") --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_48_5417_5552_online.pdf (Benennung von Privatstraßen) --- #: XXX hier ("Baugebiet Grüne Aue) werden drei Privatstraßen benannt (fehlen alle in Berlin.coords.data, Lage? Qualität?) (siehe auch fragezeichen-orig für die anderen zwei) --- #: XXX An den Grachten: 11123 --- #: XXX Klompenweg: 11124; für Berlin.coords.data: Klompenweg|Biesdorf|12683 --- #: XXX Am Groen: 11125; für Berlin.coords.data siehe fragezeichen-orig --- #: last_checked: 2019-07-28 --- #: check_frequency: 30d --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22172,10996 22195,10993
-# 
-#: next_check_id: BEBAUUNGSPLAN-XXI-34A
-#: last_checked: 2021-07-21 vvv
-#: check_frequency: 60d vvv
+# REMOVED --- #: next_check_id: BEBAUUNGSPLAN-XXI-34A --- #: last_checked: 2021-07-21 vvv --- #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-06-30 vvv
 # REMOVED (hier mittlerweile offen) --- Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20627,11552
-#: osm_watch: way id="10432861" version="23"
-Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20627,11552 20631,11621 20633,11651
+# REMOVED (offen) --- #: osm_watch: way id="10432861" version="23" --- Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20627,11552 20631,11621 20633,11651
 # REMOVED --- #: osm_watch: way id="744233528" version="11"
 # REMOVED (hier mittlerweile offen) --- Heino-Schmieden-Weg: größtenteils noch wegen Bauarbeiten gesperrt	2::inwork 20720,11484 20726,11539
 # REMOVED (mittlerweile offen) --- Heino-Schmieden-Weg: größtenteils noch wegen Bauarbeiten gesperrt	2::inwork 20726,11539 20730,11574 20735,11613 20831,11604 20827,11562 20823,11527 20818,11480
 # REMOVED (mittlerweile offen) --- Gisela-Reissenberger-Platz: wegen Bauarbeiten gesperrt	2::inwork 20665,11620 20735,11613
 # REMOVED --- #: next_check ^^^
-#: osm_watch: way id="744363729" version="5"
-Heino-Schmieden-Weg - Alt-Biesdorf: Durchgang mit Bauzaun versperrt	2::inwork 20830,11610 20838,11631
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED (offen) --- #: osm_watch: way id="744363729" version="5" --- Heino-Schmieden-Weg - Alt-Biesdorf: Durchgang mit Bauzaun versperrt	2::inwork 20830,11610 20838,11631
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: last_checked: 2017-09-20 --- #: check_frequency: 14d --- Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross::inwork 10122,10294 10363,10303 10605,10312
 # REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # REMOVED --- #: next_check_id: SCHINKELPLATZ-2014 --- #: last_checked: 2021-02-13 vvv

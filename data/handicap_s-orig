@@ -124,10 +124,10 @@ Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 #: by: https://twitter.com/VIZ_Berlin/status/1439919999142043651
 #: by: https://twitter.com/wasserbetriebe/status/1440980462776823808 (bereits am Sonntag offen)
 #: by: https://twitter.com/VIZ_Berlin/status/1440984451782164484
-#: source_id: viz2021:13.385593,52.465718,18.09.2021,14:00 (noch kein Endedatum) (mittlerweile bis 26.9.2021)
+#: source_id: viz2021:13.385593,52.465718,18.09.2021,14:00 (noch kein Endedatum) (mittlerweile bis 26.9.2021) (mittlerweile bis 27.9.2021)
 #: priority: #A
-#: next_check: 2021-09-25
-#: valid: -20210925
+#: next_check: 2021-09-27
+#: valid: -20210927
 Tempelhofer Damm: Fahrbahn zwischen Alt-Tempelhof und Götzstr. Richtung Süden gesperrt	q4::inwork; 9249,6642 9254,6542
 # 
 ### Mariendorf ###
@@ -267,12 +267,12 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-09-13
+#: last_checked: 2021-09-24
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
 #: source_id: viz2021:13.404739,52.514839,10.05.2021,06:00 (bis 1.10.2021)
-#: last_checked: 2021-09-13
+#: last_checked: 2021-09-24
 #: next_check: 2021-10-01
 #: valid: -20211001
 Scharrenstr.: Bauarbeiten an der Breiten Str., einige Meter der Fahrbahn gesperrt	q3::inwork 10480,12077 10418,12016
@@ -696,7 +696,7 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12
 # 
 #: XXX bis wann dauern die Bauarbeiten an?
 #: also_indoor: traffic vvv
-#: last_checked: 2021-09-17 vvv
+#: last_checked: 2021-09-25 vvv
 #: check_frequency: 14d vvv
 Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q2::inwork; 15932,10830 15681,10801
 Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851
@@ -752,7 +752,7 @@ Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweich
 # 
 #: add_fragezeichen Bis wann gibt es diese Einschränkung?
 #: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024)
-#: last_checked: 2021-08-07
+#: last_checked: 2021-09-25
 #: check_frequency: 120d
 #: next_check: 2024-12-31
 #: valid: -20241231
@@ -1528,7 +1528,7 @@ Wuhlewanderweg: enge Unterführung	q3 22268,11285 22279,11272 22270,11210
 Wuhlewanderweg: Fußgänger	q1 22270,11210 22236,11208
 Wuhlewanderweg: Fußgänger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22027,6608 22050,6619 21976,6848 21896,6937 21590,7211 21569,7252 21567,7284 21611,7548 21609,7579 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921
 Bismarcksfelder Str.: enge Brücke	q2 21629,7921 21599,7904
-Wuhlewanderweg: Fußgänger	q1 21599,7904 21593,7934 21568,8052 21534,8107 21351,8259 21337,8273 21276,8374 21190,8467 21173,8576 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21354,9059
+Wuhlewanderweg: Fußgänger	q1 21599,7904 21593,7934 21568,8052 21534,8107 21351,8259 21337,8273 21276,8374 21190,8467 21173,8576 21183,8738 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21354,9059
 Wuhlewanderweg: Fußgänger	q1 21383,9045 21467,9236 21517,9489 21587,9609 21633,9731 21675,9798 21691,9874
 Wuhlewanderweg: Fußgänger	q1 21611,9893 21620,9979 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21727,10582 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
 Wuhlewanderweg: Fußgänger	q1 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22220,11138
@@ -1877,7 +1877,7 @@ Ernst-Grube-Park: Radfahren verboten, ggfs. schieben	q3 21345,5157 21329,5192 21
 Rombiner Weg: enge Straße	q1+ 21712,6800 21833,6810
 Holzbrücke: enge Brücke	q1 21869,6932 21896,6937
 (Waldweg entlang des Innovationsparks): eng	q2 21029,7591 21455,7598 21498,7628 21540,7630
-(Geraldstr. - Wuhlewanderweg): eng	q3 21131,8739 21183,8731
+(Geraldstr. - Wuhlewanderweg): eng	q3 21131,8739 21183,8738
 (Rodenkirchener Str. - Weidenweg): Spielplatz	q2 19975,-320 19974,-341 19974,-348
 Coloniaallee [32 u. 34]: Radfahren verboten, ggfs. schieben	q3 20052,-239 19973,-245
 Nippeser Str. [13 u. 15]: Radfahren verboten, ggfs. schieben	q3 19973,-245 19894,-247
@@ -2620,8 +2620,9 @@ Kerstenweg: Fußgänger, Bordsteine	q2 -3711,13378 -3813,13404
 entlang der Havel: Fußgänger	q1 -3306,14035 -3345,13994 -3390,13940 -3459,13846 -3460,13828 -3493,13781 -3504,13775 -3544,13692 -3556,13582 -3546,13503 -3529,13452 -3452,13319 -3441,13270
 #: XXX_prog BS auf der westlichen Seite (ansonsten Schwingtor zu gesperrt-orig überführen und diesen Eintrag entfernen)
 Landschaftspark Herzberge: Bordstein, Schwingtor	q2 17671,13132 17684,13133 17698,13134
-(Allee der Kosmonauten - Langhoffstr.): einige Fußgänger	q1 19856,13794 19847,14019 19843,14064
-(Langhansstr. - Allee der Kosmonauten): einige Fußgänger	q1 19818,14064 19847,14019
+#: note: explizites Schild "Fußgänger", am südlichen Ende mit Zusatzschild "Lieferverkehr frei"
+(Allee der Kosmonauten - Langhoffstr.): Fußgänger	q3 19856,13794 19847,14019 19843,14064
+(Langhansstr. - Allee der Kosmonauten): Fußgänger	q3 19818,14064 19847,14019
 Ahrensfelder Berge: Fußgänger	q1 22672,16341 22666,16412 22670,16562 22661,16639 22559,16855 22524,16889 22486,16889 22396,16846 22375,16836 22352,16846 22271,16934 22265,16978 22290,17028 22309,17035 22367,17000 22382,16961
 Ahrensfelder Berge: Fußgänger	q1 22666,16412 22590,16432 22582,16455 22512,16542 22378,16657 22299,16730 22238,16799 22162,16861 22050,16781
 Ahrensfelder Berge: Fußgänger	q1 22512,16542 22432,16467
@@ -2813,7 +2814,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: next_check_id: HASSELWERDERPARK-2021
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: osm_watch: way id="26995453" version="8"
+#: osm_watch: way id="26995453" version="9"
 #: last_checked: 2021-09-17
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-09-02

@@ -877,7 +877,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: by: http://www.berliner-woche.de/heinersdorf/verkehr/radstreifen-und-neue-querungen-d155368.html
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
-#: osm_watch: way id="266580485" version="13"
+#: osm_watch: way id="266580485" version="14"
 #: last_checked: 2021-08-12 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
@@ -1211,7 +1211,7 @@ Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261
 Schierker Str.: Kopfsteinpflaster	Q2+ 13003,7316 13034,7319
 Hönower Weg: Asphalt	Q0 16900,9861 16925,9852 16984,9857 17383,9719
 Splanemannstr.: Asphalt	Q0 18408,10041 18389,9925 18301,9946
-Wuhlewanderweg: guter Beton (zweispurig)	Q0 21354,9059 21334,9015 21280,8954 21252,8928 21210,8883 21192,8839 21183,8731 21173,8576 21190,8467 21276,8374 21337,8273 21351,8259 21534,8107 21568,8052 21593,7934 21599,7904
+Wuhlewanderweg: guter Beton (zweispurig)	Q0 21354,9059 21334,9015 21280,8954 21252,8928 21210,8883 21192,8839 21183,8738 21173,8576 21190,8467 21276,8374 21337,8273 21351,8259 21534,8107 21568,8052 21593,7934 21599,7904
 Wuhlewanderweg: Parkweg	Q1 21599,7904 21587,7865 21542,7752 21538,7702 21532,7695
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 21629,7921 21616,7863 21570,7751 21597,7711 21620,7647 21609,7579 21611,7548 21567,7284 21569,7252 21590,7211 21896,6937 21976,6848 22050,6619
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,6338 22214,6271 22236,6233 22237,6211 22238,6195
@@ -2708,9 +2708,9 @@ Brachfelder Str.: Asphalt	Q0- 20369,11174 20365,11025 20364,10970 20409,10870 20
 Gladauer Weg: Asphalt, einige leichte Schäden	Q0- 20354,11500 20346,11337
 Gladauer Weg: Asphalt	Q0 20346,11337 20342,11250 20369,11174
 #: note: teilweise ist nur Gras in der einen Spur
-Langer Weg: unbefestigter Weg, zweispurig	Q2+ 20682,9842 20682,9834 20683,9558 20683,9553
-Langer Weg: Schotter	Q2+ 20683,9553 20682,9448 20681,9297 20676,8965 20677,8695
-Langer Weg: Asphalt	Q0 20677,8695 20677,8446
+Langer Weg: unbefestigter Weg, zweispurig	Q2 20682,9842 20682,9834 20683,9558 20683,9553
+Langer Weg: unbefestigter Weg, holprig	Q2 20683,9553 20682,9448 20681,9297 20676,8965 20677,8700
+Langer Weg: Asphalt	Q0 20677,8700 20677,8446
 Hadubrandweg: Sandweg	Q2 20588,8447 20677,8446
 Hadubrandweg: Asphalt	Q0 20677,8446 20821,8438 20918,8383
 Hadubrandstr.: Beton, mit einigen Schäden	Q1- 20918,8383 21010,8379 21055,8374 21122,8370 21178,8367 21257,8364 21264,8302 21307,8296 21337,8273
@@ -4872,7 +4872,7 @@ Baggerseestr.: unbefestigte Straße	Q2 20281,11341 20346,11337
 Baggerseestr.: Beton/Verbundsteinpflaster	Q1 20346,11337 20413,11334
 Arno-Philippsthal-Str.: Asphalt	Q0 20641,11488 20630,11342
 Stawesdamm: Betonpflaster	Q0- 20616,11490 20627,11552
-Stawesdamm: unbefestigter Weg, Feinschotter	Q2+ 20627,11552 20631,11621 20633,11651
+Stawesdamm: Feinschotter	Q1 20627,11552 20631,11621 20633,11651
 Parkweg (Biesdorf): rauer Asphalt	Q1+ 20587,11824 20694,11811
 Parkweg (Biesdorf): Beton	Q0- 20694,11811 20779,11801
 Lötschbergstr.: Asphalt	Q1 20114,11233 20135,11269
@@ -5202,9 +5202,11 @@ Arnfriedstr.: glattes Kopfsteinpflaster	Q1 21079,8931 20932,8956 20867,8964
 Dubickstr.: Asphalt	Q0+ 21200,8929 21079,8931
 (Wuhlewanderweg - Dubickstr.): Kopfsteinpflaster	Q2+ 21252,8928 21200,8929
 (Wuhlewanderweg - Schwabenallee): Kopfsteinpflaster	Q2+ 21210,8883 21200,8929
-#: corrected_by: mapillary (unbefestigte Straße, Q2 -> ..., neu gemacht?)
+#: corrected_by: mapillary, srt (unbefestigte Straße, Q2 -> ..., neu gemacht)
 Geraldstr.: Asphalt	Q0 21072,8742 21131,8739
-(Geraldstr. - Wuhlewanderweg): Pfad	Q2 21131,8739 21183,8731
+#: XXX_prog: gibt es eine bessere Lösung dafür? Ein-Punkt-Qx-Eintrag mit Richtung?
+Geraldstr.: Asphalt, vor und hinter der Alberichstr. Kopfsteinpflaster	Q1 20909,8700 20967,8716 21072,8742
+(Geraldstr. - Wuhlewanderweg): Pfad	Q2 21131,8739 21183,8738
 #: note: laut osm track grade3
 Wateweg: Beton	Q0 21122,8370 21121,8424
 Wateweg: Feinschotter	Q1 21121,8424 21127,8532
@@ -5611,12 +5613,10 @@ Adlerhorst: fester Sandweg	Q2+ 21111,2451 21123,2409 21185,2341
 (Adlergestell - Am Kanal): Asphalt mit einigen Schäden	Q1+ 21041,2259 21050,2267 20946,2397 20939,2413
 Werner-Loebermann-Weg: Asphalt	Q0 9268,8029 9268,8331 9292,8404
 Alexander-Meißner-Str.: Asphalt	Q0 19894,-835 20078,-1029 20388,-1373 20394,-1397 20416,-1721
-Geraldstr.: Asphalt	Q0 20910,8704 20967,8720
-#: XXX_osm: laut osm fälschlicherweise track grade1
-Geraldweg: Asphalt	Q0 20910,8704 20834,8694 20677,8695 20555,8694
+Geraldweg: Asphalt	Q0 20909,8700 20834,8694 20677,8700 20555,8694
 Geraldweg: unbefestigter Weg	Q2+ 20555,8694 20553,8641
 # REMOVED (nein, keine Besserung) --- #: XXX wurde hier bei der Fahrbahnqualität nachgebessert? --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf
-Alberichstr.: Asphalt mit Schäden	Q1+ 20967,8720 21010,8379
+Alberichstr.: Asphalt mit Schäden	Q1+ 20967,8716 21010,8379
 (Hadubrandstr. - Wuhlewanderweg): Kopfsteinpflaster	Q2+ 21257,8364 21276,8374
 (An der Wuhle, östliches Ufer): wassergebundene Decke	Q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Straße 19 (Kaulsdorf): Asphalt	Q0 21444,8412 21419,8367 21396,8326 21371,8289
@@ -5655,7 +5655,7 @@ Norastr.: Asphalt	Q0 22147,9841 22226,9822 22307,9762
 Jurek-Becker-Str.: Asphalt	Q0 21978,10384 22009,10371 21970,10247 21959,10251 21923,10265
 Jurek-Becker-Str.: Asphalt	Q0 21939,10179 21959,10251
 Am Moosbruch: Asphalt	Q0 21643,9094 21487,9126
-#: corrected_by: osm, mapillary (unbefestigte Straße (+Schotter), Q2 -> ..., neu gemacht?)
+#: corrected_by: osm, mapillary (unbefestigte Straße (+Schotter), Q2 -> ..., neu gemacht)
 Elsenallee: Asphalt	Q0 21379,9380 21265,9402 21094,9408
 Eichenallee: schlechtes Kopfsteinpflaster	Q3 21343,9546 21414,9545
 Eichenallee: schlechtes Kopfsteinpflaster	Q3 21097,9538 21253,9547
@@ -12238,7 +12238,7 @@ Paul-Schmidt-Str.: Beton	Q0- 8264,5383 8242,5427 8212,5445 8165,5447 8059,5457 8
 (Ostkreuz, Zugang Marktstr.): provisorischer Asphalt	Q1+ 15069,10927 15054,10910 14945,10945
 (Ostkreuz, Zugang Marktstr.): Asphalt	Q0 14945,10945 14902,10967 14808,10978
 (Heino-Schmieden-Weg - Alt-Biesdorf): Verbundsteinpflaster	Q1 20831,11604 20840,11604 20830,11610
-(Heino-Schmieden-Weg - Alt-Biesdorf): Kopfsteinpflaster	Q2- 20830,11610 20838,11631
+(Heino-Schmieden-Weg - Alt-Biesdorf): schlechtes Kopfsteinpflaster	Q3+ 20830,11610 20838,11631
 Weißenhöher Str. [69-71]: Verbundsteinpflaster	Q1+ 20569,11492 20582,11558
 (Johann-Jacob-Engel-Str. - Barnimer Dörferweg): unbefestigter Trampelpfad	Q2 20790,18892 20789,18899
 (Grüne Trift am Walde - Neuer Wiesengraben): Schotterstraße	Q2+ 24236,2981 24272,2849 24272,2656
@@ -12255,6 +12255,7 @@ Tasmanienweg: Betonpflaster	Q0- -2747,19074 -2647,19070 -2547,19067
 Dernburgstr.: Verbundsteinpflaster	Q1+ 2673,10670 2596,10663
 (Libboldallee - Adlergestell): Waldweg	Q2 22583,1004 22312,919
 (Zechliner Str. - Neustrelitzer Str.): Verbundsteinpflaster	Q1 16281,14604 16323,14672
+Cecilienstr.: Asphalt, einige Schäden	Q0- 20281,14012 20348,14005 20447,13995 20567,13983 20690,13972 20830,13960
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12819,7 +12820,6 @@ Cevennenstr.: Fahrbahn schlechtes Kopfsteinpflaster, Verbundsteinradweg existier
 Cevennenstr.: schlechtes Kopfsteinpflaster	Q3; 11831,21469 11696,21493 11650,21498
 #: corrected_by ^^^
 Straße 49 (Karow): Asphalt	Q0 14906,21579 14928,21634 14953,21680 15031,21810 15068,21880 15121,22016
-Geraldstr.: mäßiger Asphalt	Q1 20967,8720 21072,8742
 Käthe-Dorsch-Ring: Asphalt	Q0 15525,2299 15518,2184 15527,2150 15578,2124 15700,2127 15731,2148 15738,2190 15745,2294
 Wolmirstedter Weg: guter Asphalt	Q0 -4143,15639 -4216,15635 -4283,15639
 Tietzstr.: guter Asphalt	Q0 3223,20053 3310,19934 3425,19791 3621,19539
@@ -13225,7 +13225,7 @@ Gudvanger Str.: guter Asphalt	Q0 11567,15842 11614,15914 11641,15955 11673,16003
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Oudenarder Str.: Kopfsteinpflaster, teilweise verfugt, mit Bodenwellen	Q2 7232,16429 7282,16369 7433,16375 7746,16375
 Kaiserswerther Str.: grobes Kopfsteinpflaster	Q3 2762,4713 2673,4651 2545,4565 2461,4556
-#: corrected_by: mapillary (gutes Verbundsteinpflaster -> ...)
+#: corrected_by: mapillary, srt (gutes Verbundsteinpflaster -> ...)
 Schönstedtstr. (Gesundbrunnen): Kopfsteinpflaster	Q2 8437,15894 8338,15987 8270,16047
 #: corrected_by: mapillary (gutes Verbundsteinpflaster -> ...)
 Schönstedtstr. (Gesundbrunnen): Asphalt	Q0 8270,16047 8236,16071
@@ -23346,7 +23346,7 @@ Klüsserather Weg: Asphalt	Q0 19421,13046 19367,12600 19346,12438 19279,12375 192
 Fischer-Dieskau-Weg: wassergebundene Decke	Q1- -151,2975 -81,2699
 # 
 #: by: Holger Ladwig:
-#: corrected_by: srt ("schlechtes" hinzugefügt; zumindest an der Heerstr.)
+#: corrected_by: srt (... -> "schlechtes")
 Fortunaallee: schlechtes Kopfsteinpflaster	Q3 21312,9077 21354,9259 21379,9380 21414,9545 21480,9662 21518,9716 21526,9781 21534,9901
 # 
 #: by: Mirko Kreytz:
@@ -30193,4 +30193,5 @@ Kreuzungsbereich asphaltiert	Q0 6441,1444
 Kreuzungsbereich asphaltiert	Q0 6716,1667
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 9106,4114
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 9099,4204
+Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 21379,9380
 #: ignore ^^^

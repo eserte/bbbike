@@ -4544,7 +4544,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        {
          'data' => '#: next_check_id: FRANKFURTER-2021
 #: note: auch last Schild der Wasserbetriebe bis März 2022
-#: last_checked: 2021-09-11 vvv
+#: last_checked: 2021-09-25 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-31 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -4599,11 +4599,13 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-09-17
+#: last_checked: 2021-09-25
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
+#: osm_watch: way id="984964447" version="1"
 	q3::inwork 15279,10862 15355,10875
+#: osm_watch: way id="984056169" version="1"
 	2::inwork 15272,10790 15388,10758
 ',
          'from' => 1625734800,
@@ -4948,6 +4950,16 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Reichtstagufer: Fahrbahn an der Wilhelmstr. gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	2::inwork 30118,-43994 31916,-42708
+',
+         'from' => 1632754800,
+         'id' => 3451,
+         'source_id' => '216101533',
+         'text' => 'Rietzneuendorf-Staakow: L 711/K6168 - Brücke über BAB13 Anschlußstelle Staakow: Brückenbauarbeiten, Vollsperrung, 28.09.2021 17:00 Uhr bis 01.10.2021 14:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1633089600
        }
      
 );
