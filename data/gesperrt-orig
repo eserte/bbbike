@@ -344,7 +344,7 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahren-gegen-die-einbahnstrasse_a238207
 #: XXX: Wird die Einbahnstraße für Radfahrer geöffnet?
 #: osm_watch: way id="4475205" version="10"
-#: last_checked: 2021-04-28
+#: last_checked: 2021-09-26
 #: check_frequency: 90d
 Gritznerstr.	1 4511,6318 4555,6403
 # 
@@ -380,8 +380,8 @@ Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,
 # REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
 #: by: Lea:
 Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
-# REMOVED (hier nicht (mehr?)) --- Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606
-Takustr.	1 2953,5606 2909,5674
+# REMOVED (hier nicht (mehr?)) --- Takustr.	1 3321,5212 3209,5214 3079,5411 2958,5598
+Takustr.	1 2958,5598 2909,5674
 Schönerlinder Str.	1 21799,4319 21633,4355
 Mentzelstr.	1 21579,4579 21546,4457
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
@@ -3338,7 +3338,7 @@ Stolper Weg: Brücke über die A10 wird neu gebaut	2::inwork 514,32607 525,32437
 # 
 #: next_check_id: WESER-2021
 #: XXX: während der Bauarbeiten ist der Radweg nicht befahrbar
-#: last_checked: 2021-09-12
+#: last_checked: 2021-09-26
 #: check_frequency: 90d
 Weserstr.: Einbahnstraßenregelung, für Radfahrer nicht mehr offen	1s:q4:inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # 
@@ -4546,7 +4546,7 @@ Ahornstr. (Steglitz)	1 4926,6053 4903,6048 4872,6068 4863,6088
 # REMOVED (seit der Eröffnung des Boulevards Berlin nicht mehr) --- Treitschkestr.	1 4854,6413 4971,6345 4997,6331 5062,6295
 tragen (3 x 10 Stufen)	0:40 4127,5427
 tragen (5 Stufen)	0:10 4061,5418
-Iltisstr.	1 2797,5624 2858,5535
+Iltisstr.	1 2797,5624 2864,5526
 Bundesallee: Mittelstreifen unbequem zu überqueren	3nocross 5479,9367 5483,9262 5492,8982
 # REMOVED (Richtungsfahrbahnen eingezeichnet) --- Bundesallee: Mittelstreifen, parkende Autos	3nocross 5346,7860 5350,7915 5357,8013
 Lietzenburger Str.: Mittelstreifen schlecht zu überqueren	3nocross 6494,10440 6403,10424 6276,10401
@@ -4633,7 +4633,8 @@ schieben (steile Treppe mit seitlicher Rampe)	0:180 1319,7444
 Clayallee: Mittlestreifen wg. Leitplanke nicht zu queren	3nocross 1955,7531 1967,7561 1987,7593 2034,7654
 Clayallee: Mittelstreifen schlecht zu queren	3nocross 2112,7754 2088,7723 2034,7654
 #: by: MichaelM
-Clayallee: Mittelstreifen	3nocross 1139,3876 1159,3915 1221,4071
+Clayallee: Mittelstreifen	3nocross 1139,3876 1159,3915 1191,3997 1221,4071
+Clayallee: Mittelstreifen	3nocross 1297,4311 1304,4334 1370,4547
 Argentinische Allee: Mittelstreifen	3nocross 623,4902 844,4916 922,4910
 # XXX --- zurzeit (2012-03-16) wegen Bauarbeiten Einbahnstraße in andere Richtung --- Am Zirkus	1 9239,12923 9170,13031 9145,13020 9118,13070
 # REMOVED (deaktiviert wegen der Komplettsperrung) --- Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12760

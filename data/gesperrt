@@ -244,7 +244,7 @@ Karl-Marx-Platz	1 13100,7626 12987,7560
 Karl-Marx-Platz	1s 12972,7602 13100,7626
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
-Takustr.	1 2953,5606 2909,5674
+Takustr.	1 2958,5598 2909,5674
 Schönerlinder Str.	1 21799,4319 21633,4355
 Mentzelstr.	1 21579,4579 21546,4457
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
@@ -2464,7 +2464,7 @@ tragen (4+6+7 Stufen)	0:30:48 4502,21525
 tragen (27 Stufen)	0:30:-145 3195,24825
 tragen (4 Stufen)	0:10:65 -440,4554
 tragen (5 x 10 Stufen)	0:60:10 -3646,1539
-tragen (41 Stufen)	0:45:-193 -3813,2459
+tragen (41 Stufen)	0:45:-195 -3813,2459
 tragen (18 Stufen)	0:30:-20 -1802,1919
 tragen (15 Stufen)	0:25:-42 115,2340
 tragen (viele weite Stufen)	0:60:49 -735,4407
@@ -3295,7 +3295,7 @@ Ahornstr. (Steglitz)	1 4863,6088 4888,6093 4923,6073 4926,6053
 Ahornstr. (Steglitz)	1 4926,6053 4903,6048 4872,6068 4863,6088
 tragen (3 x 10 Stufen)	0:40:-217 4127,5427
 tragen (5 Stufen)	0:10:26 4061,5418
-Iltisstr.	1 2797,5624 2858,5535
+Iltisstr.	1 2797,5624 2864,5526
 Mittelstreifen unbequem zu überqueren	3nocross::ignrte 5479,9367 5483,9262 5492,8982
 Bundesallee -> Tharandter Str.: Mittelstreifen unbequem zu überqueren	3::igndisp 5479,9367 5483,9262 5527,9263
 Tharandter Str. -> Bundesallee: Mittelstreifen unbequem zu überqueren	3::igndisp 5527,9263 5483,9262 5492,8982
@@ -3436,8 +3436,11 @@ Kronberger Str. -> Hohenzollerndamm: Mittlestreifen wg. Leitplanke nicht zu quer
 Mittelstreifen schlecht zu queren	3nocross::ignrte 2112,7754 2088,7723 2034,7654
 Hohenzollerndamm -> Königsmarckstr.: Mittelstreifen schlecht zu queren	3::igndisp 2034,7654 2088,7723 1971,7738
 Königsmarckstr. -> Hohenzollerndamm: Mittelstreifen schlecht zu queren	3::igndisp 1971,7738 2088,7723 2112,7754
-Mittelstreifen	3nocross::ignrte 1139,3876 1159,3915 1221,4071
-Biesalskistr. -> Clayallee: Mittelstreifen	3::igndisp 1130,3930 1159,3915 1221,4071
+Mittelstreifen	3nocross::ignrte 1139,3876 1159,3915 1191,3997 1221,4071
+Biesalskistr. -> Clayallee: Mittelstreifen	3::igndisp 1130,3930 1159,3915 1191,3997
+Mittelstreifen	3nocross::ignrte 1297,4311 1304,4334 1370,4547
+Leichhardtstr. -> Clayallee: Mittelstreifen	3::igndisp 1310,4335 1304,4334 1297,4311
+Clayallee -> Leichhardtstr.: Mittelstreifen	3::igndisp 1370,4547 1304,4334 1310,4335
 Mittelstreifen	3nocross::ignrte 623,4902 844,4916 922,4910
 Argentinische Allee -> Zum Holzungsweg: Mittelstreifen	3::igndisp 623,4902 844,4916 755,5017
 tragen (ca. 20 Stufen)	0:45:-98 8536,12758
@@ -3826,3 +3829,4 @@ Bundesallee/Spichernplatz, Radweg bis Nachodstr.	1::igndisp 5487,9864 5491,9935
 Buschkrugallee, linker Gehweg ab Fußgängerampel bis zur Bürgerstr.	1::igndisp 13283,6354 13316,6320
 Otto-Suhr-Allee, linker Gehweg bis zur Fußgängerfurt	1::igndisp 4653,11896 4608,11935
 Jaczostr./Heerstr. - Südpark: linker Gehweg	1::igndisp -4029,11803 -4078,11800
+Clayallee, linker Gehweg	1::igndisp 1297,4311 1310,4335

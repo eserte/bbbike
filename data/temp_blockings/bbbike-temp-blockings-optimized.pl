@@ -3838,6 +3838,7 @@ Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 724
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: source_id: 2147347233 (bis 23.12.2021)
 #: priority: #A
+#: last_checked: 2021-09-26
 #: next_check: 2021-12-23
 #: also_indoor: traffic (H,G) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -4279,7 +4280,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: add_fragezeichen: Wie lange gehen die Bauarbeiten?
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2021-07-18
+#: last_checked: 2021-09-26
 	q4::inwork 2523,5114 2746,5537
 ',
          'from' => undef,
@@ -4641,15 +4642,15 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        undef,
        undef,
        {
-         'data' => '	q4::inwork; 3026,3058 3023,2958 3019,2858
-	q4::inwork; 3171,2848 3174,3052
+         'data' => '	q4::inwork; 3011,3303 3030,3276 3026,3058 3023,2958 3019,2858
+	q4::inwork; 3171,2848 3174,3052 3184,3427
 	q4::inwork 3186,3515 3228,3455
 ',
          'from' => 1626614232,
          'id' => 3419,
-         'text' => 'Baseler Str., Kommandantenstr.: Einbahnstraßenregelungen, außerdem Fahrbahn des Kadettenwegs am Karlplatz gesperrt, möglicherweise bis September 2021',
+         'text' => 'Baseler Str., Kommandantenstr.: Einbahnstraßenregelungen, außerdem Fahrbahn des Kadettenwegs am Karlplatz gesperrt, möglicherweise bis Juli 2022',
          'type' => 'handicap',
-         'until' => 1633039200
+         'until' => 1659283200
        },
        undef,
        {
@@ -4960,6 +4961,16 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Rietzneuendorf-Staakow: L 711/K6168 - Brücke über BAB13 Anschlußstelle Staakow: Brückenbauarbeiten, Vollsperrung, 28.09.2021 17:00 Uhr bis 01.10.2021 14:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1633089600
+       },
+       {
+         'data' => '	q4::inwork 9754,12775 9815,12705 9870,12657
+',
+         'from' => 1632628800,
+         'id' => 3452,
+         'source_id' => 'https://viz.berlin.de/2021/09/verkehrsvorschau-270921/',
+         'text' => 'Am Kupfergraben: Fahrbahn zwischen Dorotheenstr. und Georgenstr. gesperrt, ab 27. September 2021 bis Anfang Oktober 2021',
+         'type' => 'handicap',
+         'until' => 1633125599
        }
      
 );

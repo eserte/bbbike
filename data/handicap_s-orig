@@ -119,16 +119,7 @@ Oderstr.: Einbahnstraﬂenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 ### Tempelhof ###
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.513299.php --- #: XXX laut fritz bis 10.03.2017, laut vmz bis Mitte M‰rz 2017 --- #: source_id: 2147340484 --- #: last_checked: 2016-09-14 --- #: next_check: 2017-03-10 --- #: priority: #A --- #: valid: -20170310 --- Mariendorfer Damm: Fahrbahn zwischen Prinzenstr. und Richterstr. gesperrt	q4::inwork; 9333,4229 9346,4144 9372,4012
-# 
-#: by: https://twitter.com/VIZ_Berlin/status/1439849150187806720 (voraussichtlich f¸r drei Wochen)
-#: by: https://twitter.com/VIZ_Berlin/status/1439919999142043651
-#: by: https://twitter.com/wasserbetriebe/status/1440980462776823808 (bereits am Sonntag offen)
-#: by: https://twitter.com/VIZ_Berlin/status/1440984451782164484
-#: source_id: viz2021:13.385593,52.465718,18.09.2021,14:00 (noch kein Endedatum) (mittlerweile bis 26.9.2021) (mittlerweile bis 27.9.2021)
-#: priority: #A
-#: next_check: 2021-09-27
-#: valid: -20210927
-Tempelhofer Damm: Fahrbahn zwischen Alt-Tempelhof und Gˆtzstr. Richtung S¸den gesperrt	q4::inwork; 9249,6642 9254,6542
+# REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1439849150187806720 (voraussichtlich f¸r drei Wochen) --- #: by: https://twitter.com/VIZ_Berlin/status/1439919999142043651 --- #: by: https://twitter.com/wasserbetriebe/status/1440980462776823808 (bereits am Sonntag offen) --- #: by: https://twitter.com/VIZ_Berlin/status/1440984451782164484 --- #: source_id: viz2021:13.385593,52.465718,18.09.2021,14:00 (noch kein Endedatum) (mittlerweile bis 26.9.2021) (mittlerweile bis 27.9.2021) --- #: priority: #A --- #: next_check: 2021-09-27 --- #: valid: -20210927 --- Tempelhofer Damm: Fahrbahn zwischen Alt-Tempelhof und Gˆtzstr. Richtung S¸den gesperrt	q4::inwork; 9249,6642 9254,6542
 # 
 ### Mariendorf ###
 # 
@@ -478,7 +469,7 @@ Sterndamm [Nebenfahrbahn]: Gehweg f¸r Radfahrer frei	q3 17648,5338 17697,5347
 # 
 ### Kreuzberg ###
 # 
-#: last_checked: 2021-09-24
+#: last_checked: 2021-09-26
 #: check_frequency: 14d
 Bˆckhstr.: einige Meter der Fahrbahn gesperrt	q3::inwork 11411,9810 11197,9894
 # 
@@ -1105,7 +1096,7 @@ Luisenhain: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2- 22196,4847 22153,4840
 (Uferweg): Fuﬂg‰nger, teilweise eng	q2- 22433,4887 22326,4940 22310,4935 22241,4911 22204,4910 22180,4938 22146,4934 22131,4914 22153,4861 22153,4840
 (Freiheit/Lindenstr. - Uferweg): Fuﬂg‰nger	q2 22196,4847 22204,4910
 (S-Bahnhof - Schlachtensee): Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 -2365,3582 -2398,3633 -2397,3647 -2396,3666
-Uferweg am Schlachtensee: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 -3348,3055 -3384,3212 -3353,3298 -3324,3382 -3087,3646 -2937,3740 -2813,3775 -2494,3758 -2347,3884 -2080,4228 -1935,4303 -1831,4300 -1663,4218
+Uferweg am Schlachtensee: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 -3352,3071 -3384,3212 -3353,3298 -3324,3382 -3087,3646 -2937,3740 -2813,3775 -2494,3758 -2347,3884 -2080,4228 -1935,4303 -1831,4300 -1663,4218
 Uferweg am Schlachtensee: Fuﬂg‰nger, Cafe mit Kellnerverkehr	q3 -1663,4218 -1503,4133
 Uferweg am Schlachtensee: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 -1503,4133 -1382,4132 -1353,4205 -1282,4244
 s¸dlicher Uferweg am Schlachtensee: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2 -3384,3212 -3341,3122 -3273,3096 -3200,3145 -3190,3167 -3136,3294 -3081,3377 -2947,3486 -2802,3570 -2761,3576 -2729,3593 -2599,3637 -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009 -1390,4116 -1382,4132
@@ -1299,11 +1290,13 @@ Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
 #: note: dieser Abschnitt ist legal befahrbar
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5787,4400 5836,4469 5841,4557 5890,4674 5947,4791 6000,4846 6006,4852
 Barsekowstr.: Fuﬂg‰nger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
-(Stadtpark Steglitz): Fuﬂg‰nger	q1 5588,4629 5643,4626 5691,4636
+(Stadtpark Steglitz): Fuﬂg‰nger	q1 5588,4629 5643,4626
+#: XXX_prog Bordstein zur Sedanstr., ansonsten q1
+(Stadtpark Steglitz): Fuﬂg‰nger, Bordstein	q3 5643,4626 5691,4636
 #: XXX_prog Bordstein zur Sedanstr., ansonsten q2
 (Stadtpark Steglitz): Fuﬂg‰nger, Bordstein	q3 5709,4674 5715,4672 5724,4670
 #: note: offiziell wohl nicht legal befahrbar
-(Stadtpark Steglitz): Fuﬂg‰nger	q2 5734,4694 5830,4661 5890,4674 6012,4662 6026,4744 6028,4765 6048,4797
+(Stadtpark Steglitz): Fuﬂg‰nger	q2 5736,4686 5836,4654 5890,4674 6012,4662 6026,4744 6028,4765 6048,4797
 (Stadtpark Steglitz): Fuﬂg‰nger	q2 6026,4744 6030,4743 6092,4717 6107,4718
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5589,4617 5588,4629 5582,4675 5555,4743
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5509,4773 5453,4665 5406,4631
@@ -4040,7 +4033,7 @@ Johanna-Stegen-Str.: Fuﬂg‰nger	q2 5557,4523 5479,4568 5397,4611 5371,4609 5316,4
 Vionvillestr.: Fuﬂg‰nger	q2 5557,4523 5589,4617
 Rezonvillestr.: Fuﬂg‰nger	q2 5589,4617 5607,4610
 Am Stadtpark (Steglitz): Fuﬂg‰nger	q2 5656,4543 5751,4497 5817,4473
-(Stadtpark Steglitz): Fuﬂg‰nger	q2 5806,4840 5772,4766 5734,4694 5724,4670 5676,4552 5656,4543
+(Stadtpark Steglitz): Fuﬂg‰nger	q2 5806,4840 5772,4766 5736,4686 5724,4670 5676,4552 5656,4543
 Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5334,4857 5356,4892 5377,4901 5436,4983
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 13100,13803 12987,13727 12965,13709 12829,13621 12766,13621
 (Volkspark Friedrichshain): Skater, Fuﬂg‰nger	q2 12829,13621 12887,13537 12925,13523 12991,13539 13025,13585 13023,13627 12965,13709 12915,13785 12877,13795 12825,13783 12793,13749 12783,13699 12829,13621

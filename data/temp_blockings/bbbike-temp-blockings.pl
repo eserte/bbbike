@@ -1662,7 +1662,7 @@ EOF
        text  => 'Ringstr. (Steglitz) Richtung Finkensteinallee zwischen Drakestr. und Finckensteinallee Baustelle, Fahrtrichtung gesperrt (bis 12.2005)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 3507,3654 3372,3557 3228,3455 3184,3427 3050,3333 3011,3303 2781,3122 2698,3068 2655,3025 2632,2969 2625,2850
+	q4; 3507,3654 3372,3557 3228,3455 3184,3427 3059,3339 3050,3333 3032,3319 3011,3303 2781,3122 2698,3068 2655,3025 2632,2969 2625,2850
 EOF
      },
      { from  => 1110917391, # 2005-03-15 21:09
@@ -31311,6 +31311,7 @@ EOF
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: source_id: 2147347233 (bis 23.12.2021)
 #: priority: #A
+#: last_checked: 2021-09-26
 #: next_check: 2021-12-23
 #: also_indoor: traffic (H,G) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -32611,7 +32612,7 @@ EOF
 #: add_fragezeichen: Wie lange gehen die Bauarbeiten?
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2021-07-18
+#: last_checked: 2021-09-26
 	q4::inwork 2523,5114 2746,5537
 EOF
      },
@@ -33260,12 +33261,12 @@ EOF
 EOF
      },
      { from  => 1626614232, # 2021-07-18 15:17
-       until => 1633039200, # 2021-10-01 00:00
-       text  => 'Baseler Str., Kommandantenstr.: Einbahnstraßenregelungen, außerdem Fahrbahn des Kadettenwegs am Karlplatz gesperrt, möglicherweise bis September 2021',
+       until => $isodate2epoch->("2022-07-31 18:00:00"), # 1633039200, # 2021-10-01 00:00
+       text  => 'Baseler Str., Kommandantenstr.: Einbahnstraßenregelungen, außerdem Fahrbahn des Kadettenwegs am Karlplatz gesperrt, möglicherweise bis Juli 2022',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 3026,3058 3023,2958 3019,2858
-	q4::inwork; 3171,2848 3174,3052
+	q4::inwork; 3011,3303 3030,3276 3026,3058 3023,2958 3019,2858
+	q4::inwork; 3171,2848 3174,3052 3184,3427
 	q4::inwork 3186,3515 3228,3455
 EOF
      },
@@ -33621,6 +33622,15 @@ EOF
        source_id => '216101533',
        data  => <<EOF,
 	2::inwork 30118,-43994 31916,-42708
+EOF
+     },
+     { from  => 1632628800, # 2021-09-26 06:00
+       until => 1633125599, # 2021-10-01 23:59
+       text  => 'Am Kupfergraben: Fahrbahn zwischen Dorotheenstr. und Georgenstr. gesperrt, ab 27. September 2021 bis Anfang Oktober 2021',
+       type  => 'handicap',
+       source_id => 'https://viz.berlin.de/2021/09/verkehrsvorschau-270921/',
+       data  => <<EOF,
+	q4::inwork 9754,12775 9815,12705 9870,12657
 EOF
      },
     );
