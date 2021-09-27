@@ -32040,7 +32040,7 @@ EOF
 #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt
 #: osm_watch: way id="855549020" version="1"
 #: last_checked: 2021-09-05 (krickstadt)
-#: check_frequency: 90d
+#: check_frequency: 30d
 #: next_check: 2021-10-31
 	2::inwork 18836,3611 18943,3508
 EOF
@@ -33631,6 +33631,15 @@ EOF
        source_id => 'https://viz.berlin.de/2021/09/verkehrsvorschau-270921/',
        data  => <<EOF,
 	q4::inwork 9754,12775 9815,12705 9870,12657
+EOF
+     },
+     { from  => 1632607200, # 2021-09-26 00:00
+       until => 1634335200, # 2021-10-16 00:00
+       text  => 'Charlottenstr.: Fahrbahn zwischen Fischerstr. und Mauerstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.09.2021 bis 15.10.2021',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.20521,52.53583,27.09.2021,09:33',
+       data  => <<EOF,
+	2::inwork -3227,14260 -3173,14216 -3135,14183
 EOF
      },
     );
