@@ -751,19 +751,16 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 # 
 ### Schöneberg ###
 # 
-# REMOVED (-> temp blockings) --- #: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021) --- #: by: https://twitter.com/rbbabendschau/status/1392489796426162177 --- #: source_id: 2147347186 --- #: also_indoor: traffic (G) --- #: XXX wann werden die Fahrbahn und die Radwege wieder freigegeben? bei rbb "bis auf Weiteres" --- #: priority: #A --- #: last_checked: 2021-05-14 --- #: next_check: 2021-06-18 --- #: valid: -20210612 --- Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126
+#: by: https://www.nbb-netzgesellschaft.de/ueber-die-nbb/presse/pressemitteilungen/reparatur-beeintraechtigt-verkehr-in-schoeneberg/
+#: last_checked: 2021-09-28
+#: check_frequency: 60d
+Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
 # 
-#: next_check_id: DENNEWITZFLOTTWELL-2019
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/wohnpanorama-gleisdreieck.434/
-#: also_indoor: traffic (G,H) vvv
-#: last_checked: 2021-09-05 vvv
-# REMOVED (hier kaum noch Einschränkungen) --- Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
-Dennewitzstr.: Einbahnstraßenregelung, gemeinsamer Geh- und Radweg	q3::inwork; 8159,10430 8058,10306
+# REMOVED (-> temp blockings) --- #: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021) --- #: by: https://twitter.com/rbbabendschau/status/1392489796426162177 --- #: source_id: 2147347186 --- #: also_indoor: traffic (G) --- #: XXX wann werden die Fahrbahn und die Radwege wieder freigegeben? bei rbb "bis auf Weiteres" --- #: priority: #A --- #: last_checked: 2021-05-14 --- #: next_check: 2021-06-18 --- #: valid: -20210612 --- Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126
+# REMOVED --- #: next_check_id: DENNEWITZFLOTTWELL-2019 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/wohnpanorama-gleisdreieck.434/ --- #: also_indoor: traffic (G,H) vvv --- #: last_checked: 2021-09-05 vvv --- # REMOVED (hier kaum noch Einschränkungen) --- Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351 --- Dennewitzstr.: Einbahnstraßenregelung, gemeinsamer Geh- und Radweg	q3::inwork; 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
 # REMOVED (nicht mehr) --- Pohlstr.: Bauarbeiten, Umfahrung über Gehweg	q3::inwork 8159,10430 7932,10475
-#: last_checked ^^^
-#: also_indoor ^^^
-# 
+# REMOVED --- #: last_checked ^^^ --- #: also_indoor ^^^
 # REMOVED (offen) --- #: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.) -> ja --- #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/am-frueheren-commerzbank-standort-entsteht-ein-moderner-buerokomplex_a190072 --- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/steinmetzstrasse-voll-gesperrt_a192997 (bis Ende 2019) --- #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/grundsteinlegung-fuer-zentrale_a197083 --- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/sperrung-der-steinmetzstrasse_a234304 (ab 14. November 2019 Sperrung (?)) (vielleicht Komplettsperrung?) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7338 (Vorschlag der dauerhaften Sperrung für den Durchgangsverkehr) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/im-wirtschaftswunder-b%C3%BClowstrasse-82-84.674/page-3#post-13014 (offen) --- #: source_id: LMS-BR_r_LMS-BR_152000_LMS-BR_72 --- #: also_indoor: traffic (H,ex-G) --- #: osm_watch: way id="654756356" version="2" --- #: osm_watch: way id="654756357" version="2" --- #: priority: #B --- #: last_checked: 2020-08-02 (daf) --- #: next_check: 2019-12-31 --- #: valid: -20191231 --- Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter der Fahrbahn sind gesperrt, Ende unbekannt	q3::inwork 7744,10372 7698,10147
 # REMOVED (fertig) --- #: next_check_id: HAUPTSTRAMPEL-2018 --- #: source_id: 2147342260 --- #: source_id: LMS-BR_r_LMS-BR_123516_LMS-BR_72 --- #: source_id: LMS-BR_r_LMS-BR_123515_LMS-BR_72 --- #: source_id: 2147342688 --- #: last_checked: 2018-05-30 vvv --- #: next_check: 2018-06-21 vvv --- # REMOVED --- #: valid: -20180403 vvv --- #: priority: #A vvv --- Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q2::inwork 7444,9148 7382,9187 --- Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 7308,9163 --- #: priority ^^^ --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (weitergewandert) --- #: XXX: laut fritz bis Ende August, laut vmz nur bis Mitte Juni 2018 --- #: source_id: 2147342169 --- #: source_id: 2147342921 --- #: priority: #A --- #: last_checked: 2018-06-29 --- #: next_check: 2018-08-27 --- #: valid: -20180827 --- Großgörschenstr.: Bauarbeiten an der Einmündung Potsdamer Str.	q3::inwork 7609,9463 7507,9458
@@ -3639,6 +3636,8 @@ Orankestrand: Fußgänger, Radfahren offiziell verboten	q3 15479,16060 15592,16069
 Zum Orankestrand: schmal	q2 15435,16063 15479,16060
 (Zechliner Str. - Neustrelitzer Str.): Gehweg	q3- 16281,14604 16323,14672
 (Neustrelitzer Str., Gehweg): Gehweg	q3- 16323,14672 16356,14725
+#: note: gemeinsamer Rad- und Gehweg
+Heidelberger Platz [Bürgersteig]: einige Fußgänger	q2 4173,7993 4121,8016
 # 
 ######################### User Contributions #################################
 # 

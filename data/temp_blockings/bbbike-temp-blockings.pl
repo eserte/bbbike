@@ -1053,7 +1053,7 @@ EOF
        until => $isodate2epoch->("2019-10-06 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -1,
+       recurrence_prewarn_days => -2,
        text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -27010,7 +27010,7 @@ EOF
 	2::temp 5570,7939 5570,8011 5522,8011
 	2::temp 5913,8415 5917,8351 5925,8219 5730,8207 5700,8241 5687,8280 5699,8308
 	2::temp 6333,7708 6352,7523
-	2::temp 5957,7773 5807,7771 5809,7712 5636,7709 5636,7734 5630,7875 5517,7869 5511,7841 5636,7734
+	2::temp 5957,7773 5807,7771 5809,7712 5636,7709 5636,7734 5632,7821 5630,7875 5517,7869 5511,7841 5636,7734
 	2::temp 6163,7237 6166,7658 6144,7677 6118,7688 5956,7686 5810,7684
 	2::temp 5573,8197 5520,8132 5522,8011 5472,8012 5471,7915
 	2::temp 5660,8351 5651,8218 5631,8141 5820,8117 5824,8035 5631,8011 5570,8011
@@ -29894,7 +29894,7 @@ EOF
 #: also_indoor: traffic
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten in der Handjerystraße bereits beendet? vvv --- #: priority: #A vvv --- #: last_checked: 2019-12-08 vvv --- #: check_frequency: 14d vvv
 # REMOVED (nicht mehr) --- #: note: hier gibt's mittlerweile auch Drängelgitter
-	q3::inwork 5636,7734 5630,7875
+	q3::inwork 5636,7734 5632,7821 5630,7875
 # REMOVED ---	q3::inwork 5630,7875 5631,8011
 # REMOVED (keine großen Einschränkungen) --- #: note: hier mittlerweile offizielle Wegführung auf dem Gehweg ---	q2::inwork 5630,7875 5517,7869
 # REMOVED --- #: last_checked ^^^ --- #: check_frequency ^^^ --- #: priority ^^^ --- #: add_fragezeichen ^^^
@@ -30797,7 +30797,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.923431.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/gleditschstrasse-am-2-mai-gesperrt_a262750
-	q4::temp 7126,9825 7080,10098
+	q4::temp 7126,9825 7118,9870 7080,10098
 EOF
      },
      { from  => 1587621600, # 2020-04-23 08:00
@@ -33594,7 +33594,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1632858812, # fertig? --- undef, # XXX
        text  => 'Oberwallstr.: zwischen Französische Str. und Jägerstr. Einbahnstraßenregelung, offen Richtung Norden',
        type  => 'handicap',
        data  => <<EOF,
@@ -33605,7 +33605,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1632858801, # fertig? --- undef, # XXX
        text  => 'Reichtstagufer: Fahrbahn an der Wilhelmstr. gesperrt',
        type  => 'handicap',
        data  => <<EOF,

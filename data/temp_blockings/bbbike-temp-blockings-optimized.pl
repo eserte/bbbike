@@ -4846,40 +4846,9 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: note: hier steht ein großes Zelt der CDU, auch der Gehweg ist nicht passierbar
-	2::temp 6880,11110 6841,11114
-',
-         'from' => 1632496956,
-         'id' => 3448,
-         'text' => 'Corneliusstr.: Durchfahrt nicht möglich, voraussichtlich bis zum 27.09.2021',
-         'type' => 'gesperrt',
-         'until' => 1632780000
-       },
-       {
-         'data' => '#: XXX temporär für das ZDF eingerichtet, vielleicht nur für die Bundestagswahl?
-#: last_checked: 2021-09-24
-#: next_check: 2021-09-28
-	q4::temp; 9898,12161 9913,12068
-',
-         'from' => undef,
-         'id' => 3449,
-         'text' => 'Oberwallstr.: zwischen Französische Str. und Jägerstr. Einbahnstraßenregelung, offen Richtung Norden',
-         'type' => 'handicap',
-         'until' => undef
-       },
-       {
-         'data' => '#: XXX temporär für die ARD (?) eingerichtet, vielleicht nur für die Bundestagswahl?
-#: last_checked: 2021-09-24
-#: next_check: 2021-09-28
-	q4::temp 8892,12576 8766,12541
-',
-         'from' => undef,
-         'id' => 3450,
-         'text' => 'Reichtstagufer: Fahrbahn an der Wilhelmstr. gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
+       undef,
+       undef,
        {
          'data' => '	2::inwork 30118,-43994 31916,-42708
 ',

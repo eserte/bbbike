@@ -3243,14 +3243,14 @@ asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 #: source_id: 2147342363 (bis 30.7.2021)
 #: source_id: LMS-BR_r_LMS-BR_125793_LMS-BR_72 (inaktiv)
 #: source_id: 2147345793 (inaktiv)
-#: source_id: viz2021:13.518934,52.514367,25.01.2021,08:00 (bis 30.9.2021)
+#: source_id: viz2021:13.518934,52.514367,25.01.2021,08:00 (bis 5.11.2021)
 #: XXX provisorische Radwegführung über den Bürgersteig
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18225,12697 18220,12450
 # REMOVED (wird später vermutlich richtig gemacht) --- provisorische Radspur	RW4; 18220,12450 18216,12262 18216,12239 18216,12209 18215,12123
 #: last_checked: 2021-09-11 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2021-09-30 vvv
+#: next_check: 2021-11-05 vvv
 	RW0; 18215,12123 18216,12209
 	RW0; 18216,12209 18215,12123
 #: next_check ^^^
@@ -4527,7 +4527,8 @@ gemeinsamer Geh- und Radweg	RW2;RW2 16838,6708 16909,6628 17216,6308 17293,6230
 	RW2;RW3 8791,18605 8891,18545
 	RW3;RW3 8179,18756 8260,18765
 	RW1;RW1 8260,18765 8369,18769 8476,18773 8634,18787
-	RW1;RW1 3703,7324 3612,7335 3389,7383
+unebenes Verbundsteinpflaster, schmale Stellen	RW1; 3703,7324 3612,7335 3389,7383
+	RW1; 3389,7383 3612,7335 3703,7324
 	RW2;RW2 17073,21329 16815,21156 16644,21042 16025,20631
 Verbundsteinpflaster	RW2; 18166,14277 18141,14363 18057,14549
 	RW4; 18057,14549 18141,14363 18166,14277
@@ -6652,7 +6653,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2021-09-02
+#: last_checked: 2021-09-28
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6923,7 +6924,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: osm_watch: way id="4401920" version="52"
 #: XXX wird mittlerweile verstetigt
 #: confirmed_by: srt
-#: last_checked: 2021-09-24
+#: last_checked: 2021-09-28
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-07-23
 provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
@@ -6978,7 +6979,7 @@ provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8953
 #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="21"
 #: osm_watch: way id="335487059" version="17"
-#: last_checked: 2021-09-13 vvv
+#: last_checked: 2021-09-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-07-30 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -7005,7 +7006,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
 #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
-#: last_checked: 2021-09-26 vvv
+#: last_checked: 2021-09-28 vvv
 # REMOVED --- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2021-06-30 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -7036,15 +7037,19 @@ Radspur hinter parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720 11710,9628
 #: by: https://twitter.com/VIZ_Berlin/status/1406948078658232321 (Bauarbeiten ab Anfang Juli 2021)
 #: source_id: 2147346996 (bis 21.5.2021)
 #: osm_watch: way id="34057952" version="40"
-#: last_checked: 2021-09-24 vvv
+#: last_checked: 2021-09-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-06-23 vvv
-provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8810,10305 9146,10284 9368,10211 9416,10196
+provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621
+provisorisch geschützter Radstreifen	RW4; 9146,10284 9368,10211 9416,10196
 #: osm_watch: way id="26472938" version="29"
 provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 9687,10180 9825,10206 9865,10227
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+# 
+#: note: einzelner Poller, durchgängig niedrige Protektionselemente
+geschützter Radstreifen	RW4; 8527,10621 8644,10408 8661,10377 8724,10327 8810,10305 9146,10284
 # 
 #: next_check_id: POPUPRADWEGE-2020
 #: by: https://www.openstreetmap.org/note/2178781 (Kantstr.)
@@ -7282,7 +7287,7 @@ provisorischer Radweg auf dem Gehweg	RW2; 8490,2084 8560,2181 8579,2265
 #: source_id: viz2021:13.38022,52.49874,19.07.2021,07:00 (bis 20.9.2021)
 #: osm_watch: way id="240451922" version="23"
 #: XXX kommen hier noch Poller/Leitboys hin?
-#: last_checked: 2021-09-24
+#: last_checked: 2021-09-28
 #: check_frequency: 30d
 Grünmarkierung	RW3; 8810,10305 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
 # 
