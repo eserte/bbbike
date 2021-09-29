@@ -1771,8 +1771,9 @@ Busspur ist immer gültig	RW5; 6460,8688 6449,8807 6449,8845 6445,8934 6445,8949 
 	RW1; 5808,10396 5764,10322
 #: XXX Bauarbeiten (Aufzugeinbau am U-Bhf. Augsburger Str.?), Radspur ist aufgehoben
 #: source_id: 2147345461 (bis 30.09.2021)
+#: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022)
 #: last_checked: 2021-07-10
-#: next_check: 2021-09-30
+#: next_check: 2022-06-30
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
 	RW3; 5808,10396 5866,10492
@@ -2995,12 +2996,12 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
 #: XXX Bauarbeiten voraussichtlich bis Ende März 2021; mittlerweile bis Ende Februar 2022
 #: osm_watch: way id="333893474" version="21"
-#: osm_watch: way id="10275151" version="39"
+#: osm_watch: way id="10275151" version="40"
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
-#: last_checked: 2021-06-05 vvv
+#: last_checked: 2021-09-29 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2022-02-28 vvv
 #: priority: #A vvv
@@ -3794,10 +3795,10 @@ Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337
 #: confirmed_by: srt
 #: also_indoor: traffic (G) vvv
 #: source_id: 2147346053 vvv
-#: source_id: viz2021:13.51214,52.454886,09.07.2020,07:00 vvv
+#: source_id: viz2021:13.51214,52.454886,09.07.2020,07:00 (bis 6.10.2021) vvv
 #: last_checked: 2021-09-17 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2021-10-01 vvv
+#: next_check: 2021-10-06 vvv
 	RW3; 17736,5441 17886,5587
 	RW4; 17886,5587 17736,5441
 #: next_check ^^^
@@ -4028,7 +4029,9 @@ aufgemalter Radweg	RW1; 9897,18496 9901,18522 9916,18610 9920,18636 9937,18728
 enger Radweg, Asphalt mit Unebenheiten	RW1; 12042,21886 12062,21834
 #: by: https://www.infravelo.de/projekt/berliner-strasse-1/ (bis 3. Quartal 2021)
 #: XXX Grünmarkierung (in Rautenform) geplant (beide Richtungen?)
-#: next_check: 2021-09-30
+#: priority: #C
+#: last_checked: 2021-09-26 (mapillary) (teilweise schon realisiert)
+# REMOVED --- #: next_check: 2021-09-30
 	RW4; 12062,21834 12172,21545 12209,21448 12188,21330 12176,21266
 enger Radweg, Asphalt mit Unebenheiten	RW1; 12176,21266 12166,21208 12158,21166
 	RW4; 12158,21166 12121,20969
@@ -6717,7 +6720,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2021-09-09 (mapillary)
+#: last_checked: 2021-09-14 (mapillary)
 #: check_frequency: 21d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: note: am Ende fehlen ein paar Meter Grünmarkierung

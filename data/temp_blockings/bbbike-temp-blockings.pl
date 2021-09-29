@@ -32744,7 +32744,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer? vvv
 #: note: laut rbb kann der Radverkehr den Sperrbereich passieren (stimmt aber nicht)
 #: also_indoor: traffic
-#: last_checked: 2021-08-31 (mapillary) vvv
+#: last_checked: 2021-09-22 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-08-23 vvv
 # REMOVED (hier nicht?) ---	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994

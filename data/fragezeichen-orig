@@ -1524,10 +1524,12 @@ Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::project
 # 
 #: XXX vielleicht auch ein größerer Abschnitt
 #: by: https://api.fixmyberlin.de/api/plannings/56 (Fertigstellung für 2019 geplant)
+#: by: https://www.infravelo.de/projekt/residenzstrasse-und-schwedenstrasse/ (1. Quartal 2023 - 4. Quartal 2023; Radfahrstreifen)
 #: osm_watch: way id="352683182" version="10"
 #: osm_watch: way id="501402607" version="4"
 #: last_checked: 2021-07-31
-#: check_frequency: 90d
+#: check_frequency: 180d
+#: next_check: 2023-12-31
 Residenzstr.: Radstreifen geplant	?::projected 8127,16894 8079,16953 7970,17087
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.655722.php (Erwähnung des Vorhabens Spreeradweg am Wullenwebersteg)
@@ -2825,9 +2827,10 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): Qualität? Gibt's hier Radwege?	? 291
 # 
 #: XXX in Niederlehme entsteht außerdem ein Kreisverkehr
 #: XXX laut osm eröffnet
+#: XXX laut osm "Ausgewiesenes Radfahrverbot"
 #: source_id: LS/722-W/20/231
 #: source_id: LS/722-W/20/231-9
-#: osm_watch: way id="341596787" version="12" brb
+#: osm_watch: way id="341596787" version="13" brb
 #: last_checked: 2020-04-12 (mapillary)
 #: next_check: 2021-09-23
 L30n: in Planung/Bau	?::inwork 28312,-9695 27950,-8900 27754,-8708
@@ -3578,9 +3581,11 @@ Rigaer Str.: Ausbau zur Fahrradstraße	?::projected 13761,12578 13991,12522 14091
 #: last_checked ^^^
 # 
 #: by: https://api.fixmyberlin.de/api/projects/426
+#: by: https://www.infravelo.de/projekt/triftstrasse-und-gerichtstrasse/ (1. Quartal 2022 - 4. Quartal 2022)
 #: last_checked: 2021-07-31
-#: next_check: 2021-12-31
-Triftstr.: Fahrradstraße soll entstehen	?::projected 6675,15080 6743,15102 6886,15156 7085,15226 7241,15293 7270,15307 7356,15350 7464,15409 7627,15412 7723,15417 7765,15417 7817,15418 7891,15417
+#: check_frequency: 180d
+#: next_check: 2022-12-31
+Triftstr. und Gerichtstr.: Fahrradstraße soll entstehen	?::projected 6675,15080 6743,15102 6886,15156 7085,15226 7241,15293 7270,15307 7356,15350 7464,15409 7627,15412 7723,15417 7765,15417 7817,15418 7891,15417
 # 
 #: by: https://api.fixmyberlin.de/api/projects/425
 #: last_checked: 2021-06-08
@@ -6026,10 +6031,7 @@ Niederwallstr.: Anbindung an den Spittelmarkt soll dauerhaft gesperrt werden ---
 #: next_check: 2021-12-31
 Blumberger Damm: entsteht hier ein Radweg oder eine Radspur?	?; 21869,16719 21889,16817 21925,16981
 # 
-#: by: https://www.infravelo.de/projekt/berliner-strasse-1/ (bis 3. Quartal 2021)
-#: priority: #C
-#: next_check: 2021-09-30
-Berliner Str. (Pankow): Grünbeschichtung geplant	?::projected 10680,18380 10718,18304 10739,18262 10755,18231 10815,18074 10830,17985
+# REMOVED (falsche Berliner Str.?) --- #: by: https://www.infravelo.de/projekt/berliner-strasse-1/ (bis 3. Quartal 2021) --- #: priority: #C --- #: last_checked: 2021-09-20 (mapillary) --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2021-09-30 --- Berliner Str. (Pankow): Grünbeschichtung geplant	?::projected 10680,18380 10718,18304 10739,18262 10755,18231 10815,18074 10830,17985
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1109922.php
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/strassenbau/krausenstrasse/ (geplanter Beginn der Maßnahme: Ende 2022)
