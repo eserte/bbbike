@@ -256,11 +256,11 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-28464.pdf (Widersprüche)
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2021-09-16 vvv
-#: next_check: 2021-10-01 vvv
+#: last_checked: 2021-09-24 (mapillary) vvv
+# REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -2344,13 +2344,13 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.777571.php
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
 #: XXX bis Ende 2022
-#: last_checked: 2021-08-08
+#: last_checked: 2021-09-27 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-12-31 
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2021-09-11 vvv
+#: last_checked: 2021-09-27 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
@@ -3913,7 +3913,7 @@ Rosensteinweg	N 1718,9653 1917,9821 1927,9820
 #: XXX Umbenennung zu Baraschstr. soll erfolgen (allerdings gibt es noch keinen Amtsblatt-Eintrag)
 #: also_indoor: search Wissmannstraße Baraschstraße
 #: osm_watch: way id="4623428" version="10"
-#: next_check: 2021-10-01
+#: next_check: 2021-10-08
 Wissmannstr.	N 1341,9244 1421,9173 1434,9154 1483,9132 1569,9137 1708,9298
 Winkler Str.	N 936,8933 1037,8884 1090,8892 1316,9067 1434,9154
 Erdener Str.	N 1457,9344 1587,9320 1708,9298 1757,9282 1782,9270
@@ -11534,7 +11534,7 @@ Allée du Stade	N 3585,16252 3781,16175 4035,16051 4076,16017 4089,15978 4084,158
 (Uferweg am Hohenzollernkanal)	NN 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -196,16060 -203,16064 -205,16086 -224,16095 -265,16111 -822,16535 -910,16608
 #: next_check_id: TEGELERBRUECKE-2021
 #: osm_watch: way id="930770437" version="2"
-#: last_checked: 2021-09-04
+#: last_checked: 2021-09-26 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2023-12-01
 (provisorische Umleitung)	NN -196,16060 -176,16089

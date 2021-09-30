@@ -123,8 +123,8 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linke
 #: last_checked ^^^
 # 
 #: next_check_id: LANGHANS-2021
-#: last_checked: 2021-07-31 (steht noch, aber war am 31.7.2021 ausgeschaltet (mittlerweile immer? oder nur am Wochenende?))
-#: next_check: 2021-08-20
+#: last_checked: 2021-09-02 (mapillary)
+#: next_check: 2021-10-11
 Roelckestr./Lehderstr.: temporäre Ampel	X::inwork 12842,16032
 # 
 #: next_check_id: BAHNHOF-2021
@@ -1370,7 +1370,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 #: osm_watch: node id="7241153386" version="1"
-#: last_checked: 2021-07-14
+#: last_checked: 2021-09-27 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2021-10-08
 	F::inwork 12330,8636
@@ -1768,7 +1768,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8677,17154
 	X 9727,17804
 	X 11630,16623
-	F 11548,16079
+# REMOVED (wurde verlegt) ---	F 11548,16079
+#: note: Anforderungsampel
+	F 11531,16053
 # REMOVED (keine Ampel (mehr?)) ---	X 12097,16263
 	X 12399,16479
 	X 12721,15807
@@ -3088,7 +3090,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20221231 vvv
-#: last_checked: 2021-09-11 vvv
+#: last_checked: 2021-09-27 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
@@ -3200,7 +3202,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX wird diese Ampel jemals wieder in Betrieb genommen?
 #: osm_watch: node id="28321258" version="8"
-#: last_checked: 2021-09-04
+#: last_checked: 2021-09-26 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2023-12-01
 	F0 -224,16095
@@ -3321,7 +3323,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX bleibt die Ampel Hermannstr./Thomasstr. permanent?
-#: last_checked: 2021-07-14
+#: last_checked: 2021-09-27 (mapillary)
 #: check_frequency: 90d
 	X::inwork 12185,7381
 # 

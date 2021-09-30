@@ -3258,7 +3258,7 @@ Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 724
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-09-17 (mapillary)
+#: last_checked: 2021-09-23 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -3491,18 +3491,7 @@ Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 724
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813076.php (ab August 2019)
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
-	q4::temp::play 11175,9882 11197,9894 11411,9810
-',
-         'from' => 1617141600,
-         'id' => 3145,
-         'recurring' => 1,
-         'text' => 'Böckhstr.: zwischen Grimmstr. und Graefestr. mittwochs zwischen 14 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.4. bis 30.9.',
-         'type' => 'handicap',
-         'until' => 1633017600
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T08 vvv
@@ -4860,14 +4849,15 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'until' => 1633089600
        },
        {
-         'data' => '	q4::inwork 9754,12775 9815,12705 9870,12657
+         'data' => '#: source_id: viz2021:13.395572,52.520171,27.09.2021,06:00
+	q4::inwork 9754,12775 9815,12705 9870,12657
 ',
          'from' => 1632628800,
          'id' => 3452,
          'source_id' => 'https://viz.berlin.de/2021/09/verkehrsvorschau-270921/',
-         'text' => 'Am Kupfergraben: Fahrbahn zwischen Dorotheenstr. und Georgenstr. gesperrt, ab 27. September 2021 bis Anfang Oktober 2021',
+         'text' => 'Am Kupfergraben: Fahrbahn zwischen Dorotheenstr. und Georgenstr. gesperrt, ab 27. September 2021 bis 4. Oktober 2021',
          'type' => 'handicap',
-         'until' => 1633125599
+         'until' => 1633341600
        },
        {
          'data' => '	2::inwork -3227,14260 -3173,14216 -3135,14183

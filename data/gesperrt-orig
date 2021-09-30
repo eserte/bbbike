@@ -160,10 +160,9 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: osm_watch: way id="871408060" version="1"
 #: XXX wird auch zwischen Grünbergallee und Paradiesstr. ein Radweg entstehen?
 #: XXX wird auch auf der Paradiesstr. zwischen B96a und Johannes-Tobei-Str. auf der westlichen Seite ein Radweg entstehen, möglicherweise ein Zweirichtungsradweg?
-#: last_checked: 2021-07-17
-#: check_frequency: 120d
-#: next_check: 2021-07-31
-# REMOVED --- #: next_check: 2021-01-31
+#: last_checked: 2021-09-19 (mapillary)
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2021-07-31
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271
 # REMOVED (Radweg) --- B96a (Kfz-Straße)	2 21115,271 21286,449 21613,923 21656,989 21829,1351
 # 
@@ -3316,6 +3315,7 @@ Schranke	BNP:3::trailer=10 17837,12277
 #: by: https://www.berliner-kurier.de/berlin/169-neue-wohnungen-mit-wasserblick-und-zu-bezahlbaren-mieten-li.182642 (Baustart einiger Häuser, Fertigstellung für September 2023 geplant)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/howoge-neubau-rummelsburger-bucht-und-stralauer-halbinsel.1106/#post-16492
 #: by: https://www.howoge.de/wohnungsbau/neubauprojekte/kynaststrasse.html
+#: by: https://www.berliner-woche.de/rummelsburg/c-bauen/neue-sozialwohnungen-mit-blick-aufs-wasser_a323324
 #: XXX wird es hier nach den Bauarbeiten weiterhin einen Weg geben?
 #: last_checked: 2021-09-15
 #: check_frequency: 180d
@@ -3384,7 +3384,7 @@ Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9
 # 
 #: next_check_id: TEGELERBRUECKE-2021
 #: osm_watch: way id="930770437" version="2"
-#: last_checked: 2021-09-04
+#: last_checked: 2021-09-26 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2023-12-01
 Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -196,16060 -203,16064 -205,16086 -224,16095 -265,16111
@@ -4291,7 +4291,7 @@ Bergiusstr.: wegen Bauarbeiten an der BAB100 gesperrt, vielleicht sogar dauerhaf
 #: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaßnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G)
-#: last_checked: 2021-09-11
+#: last_checked: 2021-09-27 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022

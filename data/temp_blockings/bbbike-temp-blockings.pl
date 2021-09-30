@@ -28744,7 +28744,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-09-17 (mapillary)
+#: last_checked: 2021-09-23 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -33625,11 +33625,12 @@ EOF
 EOF
      },
      { from  => 1632628800, # 2021-09-26 06:00
-       until => 1633125599, # 2021-10-01 23:59
-       text  => 'Am Kupfergraben: Fahrbahn zwischen Dorotheenstr. und Georgenstr. gesperrt, ab 27. September 2021 bis Anfang Oktober 2021',
+       until => $isodate2epoch->("2021-10-04 12:00:00"), # 1633125599, # 2021-10-01 23:59
+       text  => 'Am Kupfergraben: Fahrbahn zwischen Dorotheenstr. und Georgenstr. gesperrt, ab 27. September 2021 bis 4. Oktober 2021',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/2021/09/verkehrsvorschau-270921/',
        data  => <<EOF,
+#: source_id: viz2021:13.395572,52.520171,27.09.2021,06:00
 	q4::inwork 9754,12775 9815,12705 9870,12657
 EOF
      },

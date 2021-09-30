@@ -5474,7 +5474,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 	RW6;RW6 21608,85 21582,185
 	RW6;RW6 21515,67 21487,173
 #: XXX jetzt Hochbauarbeiten, Gehweg und Radweg teilweise nicht mehr vorhanden
-#: last_checked: 2021-05-29
+#: last_checked: 2021-09-19 (mapillary)
 #: check_frequency: 180d
 früher asphaltierter Radweg	RW0; 19894,-835 20078,-1029
 asphaltiert, teilweise mit Wurzelschäden	RW1; 20078,-1029 20388,-1373 20394,-1397 20416,-1721
@@ -6271,12 +6271,13 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: note: unmarkiert
 	RW3;RW3 10530,14452 10497,14391
 # 
-#: note: Pappelallee, Richtung Süden
+#: note: Stahlheimer Str. und Pappelallee, Richtung Süden
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2021-09-24 vvv
+#: last_checked: 2021-09-28 (mapillary) vvv
 #: check_frequency: 60d vvv
+	RW3; 11673,16367 11698,16311 11666,16260 11618,16183
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
 	RW3; 11506,16015 11492,15993 11477,15969 11445,15920 11387,15827 11367,15793 11353,15770
@@ -6296,7 +6297,9 @@ asphaltiertes Straßenbahnkap	RW1; 11316,15711 11328,15730 11344,15755
 	RW3; 11344,15755 11353,15770 11367,15793 11387,15827 11445,15920 11477,15969
 asphaltiertes Straßenbahnkap	RW1; 11477,15969 11492,15993 11506,16015
 	RW3; 11506,16015 11531,16053 11542,16070
+	RW3; 11618,16183 11666,16260
 asphaltiertes Straßenbahnkap	RW1; 11666,16260 11698,16311
+	RW3; 11698,16311 11727,16358
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
