@@ -52,7 +52,7 @@ use constant BIBER_URL => "https://biberweb.vmz.services/v3/incidents/biber?bbox
 # Berlin
 use constant VMZ_2021_DATA_URL => 'https://api.viz.berlin.de/daten/baustellen_sperrungen.json';
 
-use constant USE_VMZ_2021_WGET_HACK => 1;
+use constant USE_VMZ_2021_WGET_HACK => 0;
 
 # historical URLs
 # the following two are out-of-order
