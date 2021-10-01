@@ -49,6 +49,23 @@ BEGIN {
 
 check_network_testing;
 
+if ($^O eq 'linux') {
+    my($rdr,$wtr);
+    pipe($rdr,$wtr);
+    my $pid = fork;
+    die "fork: $!" if !defined $pid;
+    if ($pid == 0) {
+	close $rdr;
+	require Net::SSLeay;
+	print $wtr $Net::SSLeay::VERSION, "\n";
+	exit 0;
+    }
+    chomp(my $net_ssleay_version = <$rdr>);
+    if ($net_ssleay_version <= 1.65) {
+	plan skip_all => 'Problems with old Net::SSLeay against downloads.bbbike.org';
+    }
+}
+
 #plan skip_all => 'Mysterious download fails' if $ENV{APPVEYOR}; # for example: https://ci.appveyor.com/project/eserte/bbbike/build/1.0.65#L270
 plan 'no_plan';
 
@@ -138,8 +155,14 @@ for my $url (@urls) {
 
 SKIP: {
     # Simulate broken downloads
-    skip "wget needed for simulation", 1 if !is_in_path('wget');
+    my $wget_path = is_in_path('wget');
+    skip "wget needed for simulation", 1 if !$wget_path;
     skip "IPC::Run needed for simulation", 1 if !eval { require IPC::Run; 1 };
+    if ($^O eq 'linux' && is_in_path('ldd')) {
+	my $ldd_output = `ldd $wget_path`;
+	skip "wget with possibly problematic ssl library detected", 1
+	    if $ldd_output =~ m{libgnutls-deb0.so.28};
+    }
 
     require BBBikeOrgDownload;
 
