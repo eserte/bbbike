@@ -618,8 +618,8 @@ Alt-Tempelhof/Schönburgstr.: Überquerungshilfe in Planung	?::projected 8961,6662
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Abwägung)
 #: XXX evtl. gibt's auch nur eine Busspur zwischen Hranitzkystr. und Friedenfelser Str. Richtung Süden, siehe pardok
-#: osm_watch: way id="25415937" version="31"
-#: osm_watch: way id="30483116" version="9"
+#: osm_watch: way id="25415937" version="32"
+#: osm_watch: way id="30483116" version="11"
 #: last_checked: 2021-09-12
 #: check_frequency: 120d
 Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 8560,2181 8490,2084 8401,1938 8335,1806 8241,1617 8152,1425 8070,1261 8031,1172 7902,893 7884,851 7867,831
@@ -839,6 +839,7 @@ Späthstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 1
 #: by: https://www.berliner-woche.de/baumschulenweg/c-verkehr/anwohner-vermissen-eine-verbesserte-verkehrsfuehrung_a226702
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6308&date=20191018 (Ablehnung im Ausschuss)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6768 (Freigabe der Gehwege gefordert)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1131741.php (nördlicher Gehweg wird ertüchtigt, keine Information zu einer Radfreigabe)
 # REMOVED --- #: XXX wird die Einbahnstraßenregelung in der Chris-Gueffroy-Allee auch für Radfahrer gelten? --- #: XXX wird es nach den Bauarbeiten Radspuren geben? --- nein, sieht nicht so aus --- #: priority: #A
 #: osm_watch: way id="4579887" version="33"
 #: osm_watch: way id="25538902" version="16"
@@ -3603,7 +3604,7 @@ Alexanderufer: Fahrradstraße soll entstehen	?::projected 8315,13042 8315,13181 8
 # REMOVED (weitgehend markiert, nur die letzten Meter am Groß-Berliner Damm fehlen) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf (Übergabe der Verkehrsflächen im Oktober 2020) --- #: XXX wann sind sie fertig? (bei osm bereits eingetragen) --- #: last_checked: 2020-09-04 --- #: next_check: 2020-10-01 --- Benno-König-Str.: Radspuren werden markiert	?::inwork 18596,4517 18434,4363 18374,4307
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf
-#: last_checked: 2021-09-02 (mapillary) vvv
+#: last_checked: 2021-09-21 (mapillary) vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
 Bodestr.: in Zukunft nur für Rad- und Fußverkehr offen	? 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
 Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,12635
@@ -6063,7 +6064,9 @@ Uferweg an der Spree: soll hier entstehen	?::projected 5523,12231 5405,12292
 #: by: https://www.deutsches-architekturforum.de/thread/14304-quartier-staytion-berlin-pankow-in-planung/?postID=699537#post699537 (Bauzeitraum bis voraussichtlich 2026)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2021/10-08-2021-benennung-einer-privatstrasse-im-ot-pankow-in-paule-panke-strasse.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5905
+#: by: https://www.berliner-woche.de/pankow/c-bauen/neue-strasse-ist-eine-reminiszenz-an-die-rockband-pankow_a323804
 #: XXX fehlt bei Berlin.coords.data
+#: last_checked: 2021-10-01 (bw)
 #: next_check: 2023-08-01
 Paule-Panke-Str.: geplante Privatstraße	?::projected 11168,18542 11214,18388 11123,18343
 # 

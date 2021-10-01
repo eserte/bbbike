@@ -1052,12 +1052,12 @@ EOF
      { from  => $isodate2epoch->("2019-09-30 00:00:00"),
        until => $isodate2epoch->("2019-10-06 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 29, months => 9, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => -2,
+       recurrences => [['yearly', days => 29, months => 9, start => "2021-10-25T00:00:00"]],
        text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html
+#: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html?date=20211001 (findet 2021 anscheinend nicht statt)
 #: source_id: LMS-BR_r_LMS-BR_147349_LMS-BR_72
 	2 8055,12186 8089,12190 8214,12205
 	2 8214,12205 8303,12216 8344,12221 8538,12245
@@ -33641,6 +33641,26 @@ EOF
        source_id => 'viz2021:13.20521,52.53583,27.09.2021,09:33',
        data  => <<EOF,
 	2::inwork -3227,14260 -3173,14216 -3135,14183
+EOF
+     },
+     { from  => $isodate2epoch->("2021-10-03 00:00:00"),
+       until => 1648764000, # 2022-04-01 00:00
+       text  => 'Hohen Neuendorf: Brücke zwischen An den Rotpfuhlen und der August-Müller-Str. gesperrt, 04.10.2021 bis 31.03.2022 ',
+       type  => 'gesperrt',
+       source_id => 'LS/721-E/21/119',
+       data  => <<EOF,
+#: osm_watch: way id="8069460" version="15"
+#: also_indoor: traffic (none)
+	2::inwork 2885,28906 3450,28728
+EOF
+     },
+     { from  => 1633212000, # 2021-10-03 00:00
+       until => 1640214000, # 2021-12-23 00:00
+       text  => 'Rathausstr.: zwischen Königstr. und Ullsteinstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2021 08:00 bis 22.12.2021 17:00 ',
+       type  => 'handicap',
+       source_id => 'viz2021:13.378629,52.451139,04.10.2021,08:00',
+       data  => <<EOF,
+	q4::inwork; 8867,4506 8858,4579 8848,4683 8827,4874 8813,5004
 EOF
      },
     );
