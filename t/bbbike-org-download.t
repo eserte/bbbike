@@ -145,19 +145,27 @@ SKIP: {
     my $wget_path = is_in_path('wget');
     skip "wget needed for simulation", 1 if !$wget_path;
     skip "IPC::Run needed for simulation", 1 if !eval { require IPC::Run; 1 };
+    my @wget_options;
     # Detect problematic wget because of
     # https://letsencrypt.org/docs/dst-root-ca-x3-expiration-september-2021/
-    if ($^O eq 'linux' && is_in_path('ldd')) {
-	my $ldd_output = `ldd $wget_path`;
-	skip "wget with possibly problematic ssl library detected", 1
-	    if $ldd_output =~ m{(\Qlibgnutls-deb0.so.28\E|\Qlibssl.so.1.0.0\E)};
-	if ($ldd_output =~ m{\Qlibgnutls.so.30\E}) {
-	    # check for problematic versions
-	    my $cmd = q{dpkg -s libgnutls30 | perl -nle 'm/^Version:\s+(\S+)/ and print $1'};
-	    chomp(my $libgnutls_version = `$cmd`);
-	    if ($libgnutls_version =~ m{^3\.5\.8-5\+deb9u[0-5]$}) {
-		skip "wget compiled with libgnutls30, which is too old ($libgnutls_version)", 1;
+    {
+	my $no_check_certificate;
+	if ($^O eq 'linux' && is_in_path('ldd')) {
+	    my $ldd_output = `ldd $wget_path`;
+	    if ($ldd_output =~ m{(\Qlibgnutls-deb0.so.28\E|\Qlibssl.so.1.0.0\E)}) {
+		$no_check_certificate = 1;
+	    } elsif ($ldd_output =~ m{\Qlibgnutls.so.30\E}) {
+		# check for problematic versions
+		my $cmd = q{dpkg -s libgnutls30 | perl -nle 'm/^Version:\s+(\S+)/ and print $1'};
+		chomp(my $libgnutls_version = `$cmd`);
+		if ($libgnutls_version =~ m{^3\.5\.8-5\+deb9u[0-5]$}) {
+		    $no_check_certificate = 1;
+		}
 	    }
+	}
+	if ($no_check_certificate) {
+	    push @wget_options, '--no-check-certificate';
+	    diag "Run wget with --no-check-certificate";
 	}
     }
 
@@ -170,7 +178,7 @@ SKIP: {
     my $stderr;
     my $success = do {
 	local $ENV{LC_ALL} = 'C';
-	IPC::Run::run(['wget', "-O$dir/$city.tbz", $url], '2>', \$stderr);
+	IPC::Run::run(['wget', @wget_options, "-O$dir/$city.tbz", $url], '2>', \$stderr);
     };
     if (!$success) {
 	if ($stderr =~ /Unable to establish SSL connection/) {
