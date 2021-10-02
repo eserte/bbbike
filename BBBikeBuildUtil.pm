@@ -18,7 +18,7 @@ use vars qw($VERSION @EXPORT_OK);
 $VERSION = '0.05';
 
 use Exporter 'import';
-@EXPORT_OK = qw(get_pmake module_path get_modern_perl);
+@EXPORT_OK = qw(get_pmake module_path module_version get_modern_perl);
 
 use File::Glob qw(bsd_glob);
 use version ();
@@ -57,6 +57,14 @@ sub module_path {
     return undef;
 }
 # REPO END
+
+# Return module version without loading the module
+# (may fail in some situations)
+sub module_version {
+    my($module) = @_;
+    require ExtUtils::MakeMaker;
+    MM->parse_version(module_path($module));
+}
 
 sub get_modern_perl (;@) {
     my %opt = @_;

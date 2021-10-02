@@ -22,9 +22,9 @@ BEGIN {
 
 use IO::Pipe ();
 
-use BBBikeBuildUtil qw(get_pmake get_modern_perl);
+use BBBikeBuildUtil qw(get_pmake get_modern_perl module_path module_version);
 
-plan tests => 6;
+plan tests => 8;
 
 my $pmake = get_pmake;
 ok $pmake, "pmake call worked, result is $pmake";
@@ -59,6 +59,14 @@ ok $pmake, "pmake call worked, result is $pmake";
 {
     my $perl = get_modern_perl(required_modules => { 'This::Module::Does::Not::Exist' => 0 });
     is $perl, $^X, "Got fallback (current perl)";
+}
+
+{
+    is module_path("BBBikeBuildUtil"), $INC{"BBBikeBuildUtil.pm"}, "module_path of BBBikeBuildUtil";
+}
+
+{
+    is module_version("BBBikeBuildUtil"), $BBBikeBuildUtil::VERSION, "module_version of BBBikeBuildUtil";
 }
 
 __END__
