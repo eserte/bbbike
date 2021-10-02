@@ -1539,7 +1539,9 @@ Am Teltowkanal: Feldweg, holprig	Q2 20496,2321 20499,2285 20303,2254 20282,2259
 (Weg in Kolonie Bodenreform): Kopfsteinpflaster	Q2 20282,2259 20148,2254 20128,2271
 (Weg in Kolonie Bodenreform): Kopfsteinpflaster	Q2 20148,2254 20135,2251 20100,2247
 Am Teltowkanal: feiner Schotter	Q1 3375,1026 3366,1007 3370,955 3355,893 3304,832 3261,835 3232,803
-Akeleiweg: Kopfsteinpflaster	Q2 17631,3200 17603,3240
+Akeleiweg: Asphalt	Q0 17894,2783 17631,3200
+Akeleiweg: Asphalt	Q0 17631,3200 17603,3240
+Akeleiweg: Asphalt	Q0 17603,3240 17377,3571
 Winckelmannstr.: Kopfsteinpflaster an den Rändern, in der Mitte asphaltiert	Q1 17428,4503 17476,4337
 Winckelmannstr.: Kopfsteinpflaster Richtung Süden	Q2; 17476,4337 17507,4216 17503,4148 17468,3979
 Zwiestädter Str.: Asphalt	Q0 13513,7532 13392,7648
@@ -3905,7 +3907,8 @@ Birkenknick: unbefestigter Fahrweg	Q2 20035,7866 19922,7960 19779,8088
 Am Wriezener Bahnhof: Asphalt	Q0 12900,11515 12959,11631 12986,11699 12993,11717
 Parksteig: Asphalt	Q0 22583,1004 22525,1139 22453,1294
 Baderseestr.: Asphalt	Q0 22493,1325 22572,1159
-Eibseestr.: Kopfsteinpflaster	Q2 22462,1547 22560,1377
+Eibseestr.: Kopfsteinpflaster	Q3 22462,1547 22506,1472
+Eibseestr.: Kopfsteinpflaster	Q2 22506,1472 22560,1377
 Pfeiffergasse: mäßiges Kleinkopfsteinpflaster	Q2 25477,4832 25473,4786
 Emrichstr.: Asphalt	Q0 25369,4790 25349,4851 25353,4939 25358,5111 25255,5117
 Emrichstr. [Wohngebiet]: Beton	Q0 25353,4939 25443,4936 25453,5091 25467,5115 25470,5241
@@ -3969,7 +3972,7 @@ Kochelseestr.: Asphalt	Q0 22462,1547 22364,1487
 Kochelseestr.: schlechtes Kopfsteinpflaster	Q3 22364,1487 22247,1409
 Kochelseestr.: Asphalt	Q0 22247,1409 22163,1363
 Walchenseestr.: Asphalt	Q0 22453,1294 22364,1487 22334,1553
-Don-Ugoletti-Platz: Kopfsteinpflaster	Q2 22449,1569 22462,1547
+Don-Ugoletti-Platz: Kopfsteinpflaster	Q3 22449,1569 22462,1547
 Don-Ugoletti-Platz - Regattastr.: Beton	Q1 22449,1569 22478,1602 22549,1644
 Ede-und-Unku-Weg: Beton	Q0 15140,11811 15122,11834 15133,11902
 Chiemseestr.: schlechtes Kopfsteinpflaster	Q3 22204,1496 22334,1553
@@ -4273,7 +4276,7 @@ Am Kiesberg: Beton	Q1 18919,1888 18839,1715 18750,1522
 (Künnekeweg - Dankmarsteig): Asphalt, Wurzeln	Q1 18432,1352 18556,1394 18627,1396 18649,1378 18688,1260
 (Künnekeweg - Dankmarsteig): Asphalt	Q0 18688,1260 18628,1078 18727,1040 18737,1033
 (Schönbergweg - Dankmarsteig): wassergebundene Decke	Q1 18566,866 18557,891 18574,954 18592,1018 18628,1078
-(Künnekeweg - Mauerweg): Asphalt, Wurzeln	Q1 18688,1260 18716,1249
+(Künnekeweg - Mauerweg): Kleinsteinpflaster	Q1 18688,1260 18716,1249
 (Schönefelder Chaussee - Mauerweg): Gehwegplatten	Q1 18978,552 18750,592
 (Schönefelder Chaussee - Mauerweg): Asphalt	Q0 18750,592 18708,600
 (Kasperstr. - Mauerweg): Feinschotter	Q1 18796,1227 18770,1236 18716,1249
@@ -4328,7 +4331,7 @@ Kirschweg: Asphalt	Q0 19704,-490 19761,-438 19775,-437
 Rebenweg: Asphalt	Q0 19769,-495 19775,-437 19780,-407 19792,-327 19775,-252 19769,-221 19777,-196
 Weidenweg (Altglienicke): Verbundsteinpflaster	Q1 19780,-407 19794,-409 19879,-378 19941,-353 19974,-348 20051,-344 20327,-305 20476,-279
 Weidenweg (Altglienicke) [21B-21K]: unbefestigter Weg	Q2 19879,-378 20050,-386 20248,-397 20300,-416
-(Grünbergallee - Coloniaallee): Verbundsteinpflaster	Q1 20048,-499 20050,-386 20051,-344
+(Grünbergallee - Coloniaallee): Verbundsteinpflaster mit Unebenheiten	Q1 20048,-499 20050,-386 20051,-344
 Coloniaallee: Asphalt	Q0 20051,-344 20052,-239 20046,-160 20036,-122 20010,-71 19972,-19
 (Rodenkirchener Str. - Weidenweg): Verbundsteinpflaster	Q1 19975,-320 19974,-341 19974,-348
 Rodenkirchener Str.: Asphalt	Q0 19975,-320 19973,-245 19960,-158 19943,-118 19909,-75
@@ -6178,7 +6181,7 @@ Wildmeisterdamm: Verbundsteinpflaster	Q1 14362,2294 14744,2308 15123,2349
 (U Zwickauer Damm - U Wutzkyallee): Gehwegplatten	Q1 15843,2065 15622,2051
 Hasenlauf: Asphalt	Q0 21504,2385 21490,2535
 Alkenweg: Asphalt	Q0 21869,2367 21939,2388 22016,2391
-Lahmertstr.: Beton	Q1 22220,2018 22291,1892
+Lahmertstr.: löchriger Beton	Q2 22220,2018 22291,1892 22318,1834
 Regattastr. [Wohngebiet]: Beton	Q0 22388,1947 22291,1892
 Waldstr. (Grünau): Asphalt	Q0 21839,2419 21855,2392 21869,2367 21885,2343 21986,2176 22004,2149 22130,1961 22222,1831
 Elstersteg: Asphalt	Q0 21750,2593 21770,2535 21801,2480 21839,2419
@@ -10734,6 +10737,10 @@ Johanneskirchplatz: gepflastert	Q2 3030,3276 3056,3290 3067,3319 3059,3339
 Lauterplatz: Verbundsteinpflaster	Q1 5799,7880 5707,7878
 (Zufahrt zum Lauterplatz): Asphalt	Q0 5632,7821 5800,7826
 (Zufahrt zum Lauterplatz): Verbundsteinpflaster	Q1 5800,7826 5799,7880
+Chaukenstr. [21-37]: Verbundsteinpflaster	Q1 20207,789 20270,760
+Chaukenstr. [21-37]: Verbundsteinpflaster	Q1 20255,722 20270,760 20278,780
+Altglienicker Grund [Wohngebiet]: Beton	Q0 19243,450 19225,384 19202,306
+Altglienicker Grund [Wohngebiet]: Beton	Q0 19094,487 19076,420 19059,352
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13198,7 +13205,7 @@ Talstr.: mäßiges Kopfsteinpflaster	Q2 11776,16753 11825,16666
 Talstr.: Asphalt	Q0 11825,16666 11848,16628
 Talstr.: mäßiges Kopfsteinpflaster	Q2 11848,16628 11920,16508 11908,16410 11889,16328
 Flottenstr.: guter Asphalt	Q0 6392,19142 6680,19098 6960,19047 7329,18996 7519,18957 7890,18933 7920,18996
-Huronseestr.: Asphalt	Q0 16808,10554 16767,10398 16755,10352
+Huronseestr.: Asphalt mit einigen Wurzelhebungen	Q1 16808,10554 16767,10398 16755,10352
 Huronseestr.: Asphalt	Q0 16755,10352 16727,10245 16811,10219
 Huronseestr.: Asphalt	Q0 16887,10271 16829,10285 16811,10219 16795,10141 16855,10127
 Plautusstr.: guter Beton	Q0 11118,4550 11109,4503 11092,4433 11073,4342
@@ -13355,7 +13362,8 @@ Arthur-Weisbrodt-Str.: guter Asphalt	Q0 14170,13496 14218,13661
 Erdmann-Graeser-Weg: kleinteiliges Pflaster	Q1 -833,3619 -935,3706
 Erdmann-Graeser-Weg: Beton	Q0 -935,3706 -961,3737
 Erdmann-Graeser-Weg: kleinteiliges Pflaster	Q1 -961,3737 -1013,3804
-Friedrich-Wolf-Str.: mäßiger Beton	Q1 22236,2029 22224,2061 22210,2140 22131,2333 22205,2367
+Friedrich-Wolf-Str.: mäßiger Beton	Q1 22236,2029 22224,2061 22210,2140 22131,2333 22160,2346
+Friedrich-Wolf-Str.: Kleinsteinpflaster	Q1 22160,2346 22205,2367
 Jansenstr.: guter Asphalt	Q0 5266,19849 5338,19843 5396,19833 5422,19829 5439,19826 5533,19811
 (Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): Gehwegplatten	Q0 4997,19849 4992,19891 5029,19945
 (Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): Verbundsteinpflaster	Q1 5029,19945 5151,19960 5220,19982
@@ -13377,7 +13385,7 @@ Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8627,5866 8801,5844 8996,
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8996,5823 9176,5803 9378,5773 9668,5733
 Drachenfelsstr.: guter Asphalt	Q0 18945,8547 18951,8574
 Drachenfelsstr.: welliger Asphalt	Q1 18951,8574 18956,8618 18945,8660 18927,8702 18899,8754 18857,8790
-Chaukenstr./Mittelweg (Altglienicke): Beton	Q0 20252,901 20171,698
+Chaukenstr./Mittelweg (Altglienicke): Beton	Q0 20252,901 20207,789 20171,698
 Chaukenstr./Mittelweg (Altglienicke): Asphalt	Q0 20171,698 20136,608 20082,463
 Chaukenstr./Mittelweg (Altglienicke): Asphalt, leichte Schäden	Q0 20082,463 20035,348
 Mittelweg (Altglienicke): Beton	Q0 20098,359 20082,463

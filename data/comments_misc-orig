@@ -558,7 +558,7 @@ Bus 260	busroute_N 20283,2461 20119,2642 19983,2795 19878,2899 19743,3026 19695,
 Bus 160	busroute_N 19817,1404 19843,1375 19907,1404 19981,1397 19955,1502 19972,1505 20226,1416 20340,1401 20365,1394 20381,1390 20539,1285 20647,1208 20694,1175 20813,1014 20836,982 20850,963 20960,819 21089,639 21116,605 21139,568 21164,476 21182,436
 Bus 160, Bus 260	busroute_N 18860,248 19138,141 19297,80
 Bus 160, Bus 260	busroute_N 19676,1577 19686,1562 19725,1515 19817,1404
-Bus 160	busroute_N 18997,-351 19026,-283 19040,-250 19210,-85 19297,80
+Bus 160	busroute_N 18997,-351 19026,-283 19040,-250 19210,-85 19273,35 19297,80
 Bus 260	busroute_N 19297,80 19398,254 19429,337 19470,453 19477,472 19507,556 19559,696 19579,753 19613,851 19625,884 19651,956 19694,1074 19737,1204 19780,1311 19817,1404
 Bus 160	busroute_N 18675,-231 18906,-316 18997,-351 19105,-376 19270,-417 19348,-434 19385,-444 19451,-452 19607,-474 19658,-481 19704,-490
 Bus 161	busroute_N 29901,4264 29947,4268 30020,4273 30132,4281 30246,4287 30293,4290 30345,4293 30461,4300 30562,4306 30614,4309 30665,4312 30696,4314 30655,4186 30605,4028 30518,3753
@@ -757,6 +757,7 @@ Verlängerte Köpenicker Str.: nicht ausgeschildert	CP2; 21012,7328 21219,7111
 Kirchhofweg: nicht ausgeschildert	CS 11608,7267 11687,7284 12185,7381
 (Landschaftspark Johannisthal): Nord-Süd-Strecke	CS 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
 Weidenweg (Altglienicke) [21B-21K]: Privatweg	CS 19879,-378 20050,-386 20248,-397 20300,-416
+(Grünbergallee - Coloniaallee): Privatweg	CS 20048,-499 20050,-386 20051,-344
 Steffenstr.: nicht ausgeschildert, Zufahrt zum Sportforum	CP2; 15580,14880 15568,14901
 Hohenschönhauser Str.: ausgeschildert "Zu den Sport- und Tennisplätzen"	CP2; 14754,14406 14682,14572
 An den Feldtmanngärten: Privatstraße	CS 15810,17512 15802,17446 15537,17484 15264,17438
@@ -1317,7 +1318,7 @@ Waldpromenade: nicht ausgeschildert	CS 23473,8114 23376,8186 23261,8274 23149,83
 (Enckestr. - Friedrichstr.): entlang taz-Gebäude und Besselpark	CS; 9666,10848 9537,10837
 (Friedrichstr. - Enckestr.): ausgeschildert Friedrichstrasse 23 23A 23B; entlang taz-Gebäude und Besselpark	CP2; 9537,10837 9666,10848
 # 
-#: last_checked: 2021-09-09
+#: last_checked: 2021-10-02
 #: check_frequency: 90d
 Mergenthalerring: nicht ausgeschildert	CP2; 14261,8851 14252,8829
 # 
@@ -1332,11 +1333,13 @@ Bochumer Platz: als Bundesratufer ausgeschildert	CP2; 5914,12845 5938,12848
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_53_8205_8368_online.pdf (Widmung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_06_0673_0824_online.pdf (Eingruppierung in die Straßenreinigungsverzeichnisse)
-#: last_checked: 2021-05-29 vvv
+#: last_checked: 2021-10-02 vvv
 #: check_frequency: 90d vvv
 An der Dahme: nicht ausgeschildert	CS 22270,2549 22358,2460
 # REMOVED --- Gaffelsteig: nicht ausgeschildert	CS 22287,2431 22221,2520
 Relingstr: nicht ausgeschildert	CP2; 22358,2460 22287,2431
+Ankerweg: nicht ausgeschildert	CS 22118,2559 22159,2585
+Ankerweg: nicht ausgeschildert	CP2; 22159,2585 22197,2612
 #: check_frequency ^^^
 #: last_checked ^^^
 # 

@@ -808,10 +808,10 @@ Ofener Str. -> Müllerstr.: Mittelstreifen	3::igndisp 6256,16601 6201,16538 6304,
 Ofener Str. -> Sansibarstr.: Mittelstreifen	3::igndisp 6256,16601 6201,16538 6106,16433
 B110 nach Swinoujscie: kein Grenzübergang für Autos	2 62279,166179 62213,166173
 Mittelstreifen	3nocross::ignrte 16643,1460 16698,1392 16815,1278
-Neuköllner Str. -> Am Hanffgraben: Mittelstreifen	3::igndisp 16643,1460 16698,1392 16805,1488
 Neuköllner Str. -> Am Rudower Fließ: Mittelstreifen	3::igndisp 16815,1278 16698,1392 16650,1356
+Am Hanffgraben -> Neuköllner Str.: Mittelstreifen	3::igndisp 16805,1488 16698,1392 16815,1278
+Am Hanffgraben -> Am Rudower Fließ: Mittelstreifen	3::igndisp 16805,1488 16698,1392 16650,1356
 Am Rudower Fließ -> Neuköllner Str.: Mittelstreifen	3::igndisp 16650,1356 16698,1392 16643,1460
-Am Rudower Fließ -> Am Hanffgraben: Mittelstreifen	3::igndisp 16650,1356 16698,1392 16805,1488
 Mittelstreifen	3nocross::ignrte 13151,14855 13110,14879 12812,15053
 Storkower Str. -> Einsteinstr.: Mittelstreifen	3::igndisp 12812,15053 13110,14879 13143,14935
 Einsteinstr. -> Storkower Str.: Mittelstreifen	3::igndisp 13143,14935 13110,14879 13151,14855
@@ -1206,7 +1206,7 @@ Sybelstr.	1 4017,10585 4256,10583
 Hüttendorfer Weg	1 21409,-109 21463,-280
 Brückenstr.: Anlieger frei	1:Anlieger 17728,5756 17900,6072
 Passauer -> Lietzenburger	3 6033,10403 6020,10351 6147,10383
-Am Hanffgraben	1 16805,1488 16698,1392
+Am Hanffgraben	1 16698,1392 16805,1488
 Wustermarker Str.:	1 -4385,14305 -4559,14341
 Mittelstreifen und Straßennbahntrasse	3nocross::ignrte 10849,17848 10858,17721 10883,17491
 Berliner Str. -> Borkumstr.: Mittelstreifen und Straßennbahntrasse	3::igndisp 10849,17848 10858,17721 10956,17735

@@ -870,11 +870,11 @@ asphaltiert, gemeinsamer Geh- und Radweg	RW1; 12791,3814 12910,3739 13030,3664 1
 #: note: Neuköllner Str./Waltersdorfer Chaussee Richtung Süden 
 Verbundsteinpflaster	RW1; 16908,1217 17001,1157 17094,1102 17236,985 17384,775 17518,564 17685,311 17726,242 17772,166 17818,93 17879,-3 17946,-100 18009,-193 18121,-374
 #: note: Waltersdorfer Chaussee/Neuköllner Str. Richtung Norden
-Verbundsteinpflaster, für Radfahrer freigegebene Busspur	RW1; 18121,-374 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564 17384,775 17236,985 17094,1102 17001,1157
-#: XXX vermutlich wird nach den Bauarbeiten hier die Busspur ebenfalls freigegeben
-#: last_checked: 2021-04-24
-#: check_frequency: 60d
-	RW2; 17001,1157 16908,1217
+Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 18121,-374 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564 17384,775 17236,985 17094,1102 17001,1157
+#: XXX Inkonsistenz: Busspur ist freigegeben, eine Markierung auf der Fahrbahn vor dem Ampel existiert, aber es gibt ein Radwegschild?
+#: last_checked: 2021-10-02
+#: check_frequency: 30d
+für Radfahrer freigegebene Busspur ist immer gültig	RW2; 17001,1157 16908,1217
 # 
 Bushaltestelle mit Radspur	RW5;RW5 16908,1217 16839,1262
 	RW1;RW0 14239,4367 14164,4271 14111,4181 14108,4175
@@ -923,7 +923,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-09-12
+#: last_checked: 2021-10-02
 #: check_frequency: 60d
 #: next_check: 2022-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1656,7 +1656,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2021-09-09
+#: last_checked: 2021-10-02
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -3782,7 +3782,7 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 #	RW4; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
 #	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905
 #: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv
-#: last_checked: 2021-09-17 vvv
+#: last_checked: 2021-10-02 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-10-31 vvv
 Busspur ist immer gültig	RW5; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374
@@ -5413,9 +5413,8 @@ einige Meter Radspur an der Salvador-Allende-Str.	RW0;RW0 23388,4864 23451,4877
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20071108.1600.88578.html (Luftbild ist nicht immer eindeutig)
 #: by: Uwe Vogel: vvv
 #: confirmed_by: srt
-	RW1;RW1 16182,2200 16318,2146 16518,2122
-	RW1;RW 16518,2122 16570,2113
-	RW;RW 16570,2113 16809,2091
+	RW1;RW1 16182,2200 16318,2146 16518,2122 16570,2113
+	RW1;RW 16570,2113 16809,2091
 #: by: ^^^
 #: note: ein anonymer Beitrag meint dazu "katastrophaler Radweg ohne Pflicht" --- ich bin ihn nicht gefahren
 betoniert	RW1; 24639,10766 24593,10775 24458,10800 24363,10818 24229,10843
@@ -5942,7 +5941,8 @@ asphaltiert	RW1;RW1 984,14086 1058,14060 1216,13978 1381,13939 1559,13938 1674,1
 	RW3; 10680,18380 10718,18304 10739,18262 10755,18231 10815,18074 10830,17985
 	RW2;RW1 10830,17985 10849,17848
 	RW1; 19398,254 19297,80 19398,254 19429,337 19470,453 19477,472 19507,556
-	RW1;RW10 19297,80 19210,-85
+	RW1; 19297,80 19273,35 19210,-85
+	RW10; 19210,-85 19273,35
 	RW1;RW1 19210,-85 19040,-250 19026,-283 18997,-351
 	RW1; 19437,50 19546,12 19699,-41
 gemeinsamer Geh- und Radweg, asphaltiert	RW2;RW2 19894,-835 19815,-909 19618,-1021
