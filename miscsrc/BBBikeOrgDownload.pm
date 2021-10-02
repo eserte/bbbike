@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2016,2017,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016,2017,2019,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeOrgDownload;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 use File::Basename qw(basename);
 use File::Temp qw(tempdir);
@@ -37,6 +37,14 @@ sub new {
 
     my $ua = LWP::UserAgent->new;
     $ua->agent("bbbike/$BBBike::VERSION (" . __PACKAGE__ . "/$VERSION) (LWP::UserAgent/$LWP::VERSION) ($^O)" . ($agent_suffix ? $agent_suffix : ""));
+
+    # With older Net::SSLeay it's necessary to turn off cert checks
+    # https://letsencrypt.org/docs/dst-root-ca-x3-expiration-september-2021/
+    if (eval { require Net::SSLeay; require IO::Socket::SSL; 1 } && ($Net::SSLeay::VERSION < 1.69 || $IO::Socket::SSL::VERSION < 2.016)) {
+	warn "INFO: Net::SSLeay and/or IO::Socket::SSL too old, need to turn off certificate verification.\n";
+	$ua->ssl_opts(verify_hostname => 0);
+	$ua->ssl_opts(SSL_verify_mode => &IO::Socket::SSL::SSL_VERIFY_NONE); # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=907853
+    }
 
     bless {
 	   ua           => $ua,
