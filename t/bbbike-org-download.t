@@ -33,6 +33,7 @@ use IPC::Open3 qw(open3);
 use Symbol qw(gensym);
 
 use BBBikeUtil qw(is_in_path);
+use BBBikeBuildUtil qw(module_version);
 use Strassen::Core ();
 
 use BBBikeTest qw(check_network_testing);
@@ -49,22 +50,8 @@ BEGIN {
 
 check_network_testing;
 
-if ($^O eq 'linux') {
-    my($rdr,$wtr);
-    pipe($rdr,$wtr);
-    my $pid = fork;
-    die "fork: $!" if !defined $pid;
-    if ($pid == 0) {
-	close $rdr;
-	require Net::SSLeay;
-	print $wtr $Net::SSLeay::VERSION, "\n";
-	exit 0;
-    }
-    chomp(my $net_ssleay_version = <$rdr>);
-    if ($net_ssleay_version <= 1.65) {
-	plan skip_all => 'Problems with old Net::SSLeay against downloads.bbbike.org';
-    }
-}
+plan skip_all => 'Problems with old Net::SSLeay against downloads.bbbike.org'
+    if module_version("Net::SSLeay") <= 1.65;
 
 #plan skip_all => 'Mysterious download fails' if $ENV{APPVEYOR}; # for example: https://ci.appveyor.com/project/eserte/bbbike/build/1.0.65#L270
 plan 'no_plan';
