@@ -31,6 +31,7 @@ if (initLayerAbbrevs) {
 } else {
     initLayerAbbrevs = [];
 }
+var initBaseMapAbbrev = q.get('bm');
 
 // localization
 var msg = {"en":{"Kartendaten":"Map data",
@@ -218,6 +219,10 @@ function doLeaflet() {
     var cyclosmAttribution = '\u00a9 <a href="https://www.openstreetmap.org/">OpenStreetMap</a> Contributors. Tiles style by <a href="https://www.cyclosm.org">CyclOSM</a> hosted by <a href="https://openstreetmap.fr">OpenStreetMap France</a>';
     var cyclosmTileLayer = new L.TileLayer(cyclosmUrl, {maxZoom: 19, attribution: cyclosmAttribution});
 
+    var osmMapnikBWUrl = 'https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png';
+    // reuse osmAttribution
+    var osmMapnikBWTileLayer = new L.TileLayer(osmMapnikBWUrl, {maxZoom: 19, attribution: osmAttribution});
+
     var berlinAerialYear = '2019';
     var berlinAerialNewestUrl = 'https://tiles.codefor.de/berlin-' + berlinAerialYear + '/{z}/{x}/{y}.png';
     var berlinAerialAttribution = M("Kartendaten") + ': <a href="https://fbinter.stadt-berlin.de/fb/berlin/service_intern.jsp?id=a_luftbild' + berlinAerialYear + '_rgb@senstadt&type=FEED">Geoportal Berlin / Digitale farbige Orthophotos ' + berlinAerialYear + '</a>';
@@ -296,10 +301,22 @@ function doLeaflet() {
 	{label:M("Fragezeichen"),    layer:bbbikeUnknownTileLayer,    abbrev:'FZ'}
     ];
 
-    var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer, "CyclOSM":cyclosmTileLayer }; //, "Berlin Aerial":berlinAerialTileLayer };
+    var baseMapDefs = [
+	 {label:"BBBike",        layer:bbbikeTileLayer,       abbrev:'B',  inControl:true  }
+	,{label:"OSM",           layer:osmTileLayer,          abbrev:'O',  inControl:true  }
+	,{label:"CyclOSM",       layer:cyclosmTileLayer,      abbrev:'C',  inControl:true  }
+	,{label:"OSM B/W",       layer:osmMapnikBWTileLayer,  abbrev:'BW', inControl:false }
+	,{label:"Berlin Aerial", layer:berlinAerialTileLayer, abbrev:'A',  inControl:false }
+    ];
     var overlayMaps = {};
     for(var i=0; i<overlayDefs.length; i++) {
         overlayMaps[overlayDefs[i].label] = overlayDefs[i].layer;
+    }
+    var baseMaps = {};
+    for(var i=0; i<baseMapDefs.length; i++) {
+	if (baseMapDefs[i].inControl) {
+	    baseMaps[baseMapDefs[i].label] = baseMapDefs[i].layer;
+	}
     }
 
     if (initLayerAbbrevs.length) {
@@ -322,7 +339,28 @@ function doLeaflet() {
     var layersControl = new L.Control.Layers(baseMaps, overlayMaps);
     map.addControl(layersControl);
 
-    map.addLayer(bbbikeTileLayer);
+    var initTileLayer;
+    if (initBaseMapAbbrev) {
+	for(var i=0; i<baseMapDefs.length; i++) {
+	    if (initBaseMapAbbrev == baseMapDefs[i].abbrev) {
+		initTileLayer = baseMapDefs[i].layer;
+		if (!baseMapDefs[i].inControl) {
+		    layersControl.addBaseLayer(baseMapDefs[i].layer, baseMapDefs[i].label);
+		}
+		break;
+	    }
+	}
+    }
+    if (!initTileLayer) {
+	if (initBaseMapAbbrev && console && console.debug) {
+	    console.debug("Basemap abbrev '" + initBaseMapAbbrev + "' unhandled, fallback to default bbbike layer");
+	}
+	initTileLayer = bbbikeTileLayer;
+    }
+    map.addLayer(initTileLayer);
+    if (initTileLayer != bbbikeTileLayer) { // otherwise it looks like the first layer in control is rendered *additionally*
+	map.removeLayer(bbbikeTileLayer);
+    }
 
     routeLayer = new L.GeoJSON();
     map.addLayer(routeLayer);
