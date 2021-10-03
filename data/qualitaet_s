@@ -568,8 +568,10 @@ Berliner Allee: Asphalt	Q0 14832,17867 14782,17743 14766,17702
 Berliner Allee: Asphalt	Q0 14766,17702 14754,17673
 Berliner Allee: Asphalt	Q0 14754,17673 14731,17611 14673,17454
 Berliner Allee: Asphalt	Q0 14673,17454 14584,17224 14552,17137 14533,17084 14535,17003 14558,16907
-Lessingstr.: Kopfsteinpflaster	Q2 10425,67 10300,42 10156,13 10066,-3 9966,-22 9861,-44 9812,-41 9730,-33
-Lessingstr.: Asphalt	Q0 10425,67 10512,83 10614,105 10737,132
+Lessingstr.: Asphalt	Q0 10737,132 10614,105
+Lessingstr.: Asphalt mit Schäden	Q1 10614,105 10512,83 10425,67 10300,42
+Lessingstr.: schlechtes Kopfsteinpflaster	Q3 10300,42 10156,13 10066,-3 9966,-22 9861,-44 9812,-41
+Lessingstr.: schlechtes Kopfsteinpflaster	Q3 9812,-41 9730,-33
 Monbijoustr.: Asphalt	Q0 9771,13182 9736,13061 9714,12995 9707,12974
 Nördliche Monbijoubrücke: Kleinsteinpflaster	Q1 9707,12974 9683,12913
 Südliche Monbijoubrücke: Kopfsteinpflaster	Q2 9683,12913 9654,12882
@@ -2902,7 +2904,7 @@ Steinträgerweg: Beton	Q0 12987,2220 12963,2365
 Rohrlegerweg: Beton	Q0 12738,2162 12864,2191 12987,2220 13103,2271 13309,2410
 Mondsteinpfad: Gehwegplatten	Q1 11181,1884 11182,1976
 Grünsteinweg: Asphalt	Q0 10859,2033 10868,2120 10886,2167
-Birnhornweg: Beton	Q0 9281,1790 9342,1818 9470,1863 9585,1899 9731,1956 9876,2007 10024,2059
+Birnhornweg: Beton mit einigen Hebungen	Q1 9281,1790 9342,1818 9470,1863 9585,1899 9731,1956 9876,2007 10024,2059
 Rätikonweg: Beton	Q0 9669,2151 9731,1956 9805,1711 9821,1692
 Hollabergweg (Mariendorf): Beton	Q0 9342,1818 9336,2009
 Benzstr.: Kopfsteinpflaster mit Asphaltflicken	Q2 9145,1527 9182,1577 9281,1790
@@ -5486,7 +5488,7 @@ Zernickstr.: Verbundsteinpflaster	Q1 7408,257 7391,347
 (Diedersdorfer Weg - Marienfelder Allee, Kolonie Amstelveen): Verbundsteinpflaster	Q1 7668,-138 7552,-67 7535,20
 (KGA Birkholz): Verbundsteinpflaster	Q1 7751,-920 7766,-920 7765,-898 7977,-864 8026,-859 8059,-1077 8063,-1107 8085,-1120
 (KGA Birkholz): Verbundsteinpflaster	Q1 7766,-920 8059,-1077
-Diedersdorfer Weg: Asphalt	Q0 7781,-182 7776,-283 7773,-344 7765,-525 7749,-857 7751,-920 7752,-949
+Diedersdorfer Weg: Asphalt	Q0 7668,471 7810,424 7781,-182 7776,-283 7773,-344 7765,-525 7749,-857 7751,-920 7752,-949
 Reinstedter Weg: Asphalt	Q0 7300,-335 7384,-387 7475,-443 7565,-494 7603,-511 7657,-522 7706,-527
 Reinstedter Weg: unbefestigter Weg	Q2 7706,-527 7765,-525
 Hermeroder Weg: Asphalt mit einigen leichten Schäden	Q1 7616,-790 7657,-522 7665,-458 7630,-445
@@ -6160,7 +6162,7 @@ Großbeerenstr. (Lichterfelde): glattes Kopfsteinpflaster	Q1 5050,1133 5162,1110
 Heiterwanger Weg: Asphalt	Q0 5893,617 5985,630 6089,643 6186,652 6280,662 6383,667
 (Zufahrt Bauhaus): Asphalt	Q0 8382,347 8372,175
 Glaserweg: glattes Pflaster	Q1 10187,872 10237,749
-Ostheimer Str.: Verbundsteinpflaster	Q1 10664,1068 10738,906
+Ostheimer Str.: glattes Pflaster	Q1 10673,1072 10743,908
 Wingerter Str.: Asphalt	Q0 10829,1135 10845,1026 10851,929
 Künheimer Weg: Asphalt	Q0 11012,1210 11040,1135 11061,1029
 Alt-Buckow: Asphalt	Q0 12561,1931 12574,1866
@@ -10741,6 +10743,9 @@ Chaukenstr. [21-37]: Verbundsteinpflaster	Q1 20207,789 20270,760
 Chaukenstr. [21-37]: Verbundsteinpflaster	Q1 20255,722 20270,760 20278,780
 Altglienicker Grund [Wohngebiet]: Beton	Q0 19243,450 19225,384 19202,306
 Altglienicker Grund [Wohngebiet]: Beton	Q0 19094,487 19076,420 19059,352
+Steinstr.: Asphalt mit einigen Unebenheiten	Q0 10231,-1086 10248,-1346 10258,-1474
+Steinstr.: Asphalt	Q0 10258,-1474 10301,-1891 10303,-1954 10310,-2136
+Bahnhofstr.: schadhafter Asphalt	Q1 10310,-2136 10453,-2133 10509,-2131
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11232,7 +11237,7 @@ Kurpromenade: etwas welliger Asphalt	Q1 -8868,6798 -8804,6818 -8732,6840 -8656,6
 Wodanstr.: Beton	Q1 8824,19360 8768,19470 8710,19550
 Wodanstr.: Kopfsteinpflaster	Q2 8710,19550 8621,19683 8573,19766 8517,19849
 Wodanstr.: welliger Asphalt	Q0 8517,19849 8496,19874 8421,19915 8402,19959
-Tödiweg: Asphalt	Q0 9431,2059 9470,1863 9503,1693 9493,1661
+Tödiweg: Beton	Q0 9431,2059 9470,1863 9503,1693 9493,1661
 Ledebourstr.: Asphalt	Q0 24455,10113 24699,10060 24755,10028 24854,9975 25130,9816 25262,9740 25312,9704 25432,9600 25476,9561
 Seelbuschring: Betonplatten, OK	Q1 8244,4649 8309,4700 8430,4723 8457,4707 8477,4615
 Tschudistr.: Asphalt	Q0 23584,13661 23705,13636 23823,13611 23943,13588 24119,13556
@@ -14818,7 +14823,7 @@ Iselbergstr.: Asphalt mit Unebenheiten	Q1 23903,13361 23786,13385 23668,13408 23
 Telemannweg: Asphalt mit Unebenheiten	Q1 23754,13165 23747,13178 23786,13385 23823,13611
 Telemannweg: Asphaltdecke	Q0 23823,13611 23869,13830
 Auerbacher Ring: Asphalt	Q0 23826,14292 23825,14323 23776,14416 23744,14482 23725,14485 23669,14461 23646,14392 23713,14247
-Hochfeilerweg: guter Asphalt	Q0 10170,2158 10108,2174 10043,2351 9973,2541 9993,2551 10015,2651
+Hochfeilerweg: guter Asphalt	Q0 10170,2158 10108,2174 10043,2351 9975,2536 9993,2551 10015,2651
 Kaiserallee: Kopfsteinpflaster	Q2 7981,1505 8064,1460 8152,1425
 Caseler Str.: guter Asphalt	Q0 14608,16772 14700,16790 14732,16770
 Goldbeckweg: sehr guter Asphalt	Q0 -1480,14922 -1489,15027 -1511,15127 -1532,15225 -1556,15319 -1547,15377
@@ -17552,9 +17557,9 @@ Löwenbrucher Weg: Kopfsteinpflaster	Q2 10475,-2944 10392,-2980
 Löwenbrucher Weg: Asphalt	Q0 10392,-2980 10272,-3027 10107,-3063 9924,-3068 9878,-3075
 (Waldweg Straußstr. - Löwenbrucher Weg): Waldweg	Q2 9904,-2908 9924,-3068
 (Waldweg Löwenbrucher Weg - Mauerweg): Waldweg	Q2 9878,-3075 9693,-3075 9600,-3160
-(Blohmstr. - Diedersdorfer Str.): unbefestigter Waldweg	Q1 9093,-1670 8956,-1593 8845,-1521 8776,-1487
+(Blohmstr. - Diedersdorfer Str.): unbefestigter Waldweg	Q1 9093,-1670 8972,-1581 8845,-1521 8776,-1487
 (Blohmstr. - Diedersdorfer Str.): unbefestigter Weg, etwas Schotter	Q2 8776,-1487 8492,-1376
-(Blohmstr. - Diedersdorfer Str.): Asphalt mit Löchern	Q1 8492,-1376 8073,-1137
+(Blohmstr. - Diedersdorfer Str.): Asphalt mit Löchern und Unebenheiten	Q1 8492,-1376 8061,-1117 7752,-949
 (Dinnendahlstr. - Schichauweg): unbefestigter Waldweg	Q1 9139,-1350 8953,-1184 8882,-1142 8873,-1118
 (Mauerweg - Hohenzollernstr.): fester Waldweg	Q1 9506,-2421 9559,-2417
 (Straße 478 - Königsgraben): fester Parkweg	Q1 8585,-231 8054,-198

@@ -324,7 +324,7 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125
 	RW7;RW7 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12328,9117
 #: next_check_id: WESER-2021
 #: XXX während der Bauarbeiten Radweg aufgehoben (und möglicherweise entstehen hier auch keine neuen Radwege mehr), Einbahnstraße Richtung Westen, für Radfahrer nicht mehr offen
-#: last_checked: 2021-09-26
+#: last_checked: 2021-10-03
 #: check_frequency: 90d
 	RW0;RW1 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 	RW1;RW1 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
@@ -923,7 +923,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-10-02
+#: last_checked: 2021-10-03
 #: check_frequency: 60d
 #: next_check: 2022-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1656,7 +1656,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2021-10-02
+#: last_checked: 2021-10-03
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -1978,29 +1978,32 @@ vorhandener Radweg ist abgesperrt	RW0; 8079,16953 8127,16894 8197,16809
 Verbundsteinpflaster	RW1; 8093,16438 8166,16454 8307,16434 8436,16415 8486,16425
 	RW1; 8486,16425 8436,16415 8307,16434 8166,16454 8093,16438
 alte Gehwegplatten	RW1;RW1 10067,1939 9984,1860 9964,1839 9821,1692 9771,1641 9695,1563
-	RW1;RW1 10067,1939 10150,2006
+schmaler Verbundsteinpflasterradweg	RW1; 10067,1939 10150,2006
+	RW1; 10150,2006 10067,1939
 	RW1;RW1 9155,-1017 9276,-973
 	RW3;RW1 9276,-973 9379,-935
 	RW1;RW1 9379,-935 9498,-890 9598,-846
 	RW2;RW1 9598,-846 9640,-833
-	RW1;RW1 9640,-833 9693,-815 9780,-788 9815,-805 9888,-853 10082,-986 10143,-1026 10231,-1086 10379,-1194
+holpriges Verbundsteinpflaster, schmal	RW1; 9640,-833 9693,-815 9780,-788 9815,-805 9888,-853 10082,-986 10143,-1026 10231,-1086 10379,-1194
+	RW1; 10379,-1194 10231,-1086 10143,-1026 10082,-986 9888,-853 9815,-805 9780,-788 9693,-815 9640,-833
 die letzten Meter sind benutzungspflichtig	RW1; 10379,-1194 10492,-1266
 	RW1; 10492,-1266 10379,-1194
 	RW1;RW1 10492,-1266 10583,-1311 10720,-1340
 	RW2;RW1 10720,-1340 10844,-1335
 Verbundsteinpflaster	RW1;RW1 8736,337 8769,266 8853,172 9159,-171 9198,-264 9177,-569 9170,-673 9156,-883 9155,-1017
-neues Verbundsteinpflaster	RW1; 12207,1704 11865,1564 11765,1522 11476,1398 11216,1293 11157,1269 11012,1210 10829,1135 10769,1111
+relativ breit, neues Verbundsteinpflaster, allerdings schon einige Wurzelhebungen und andere Schäden	RW1; 12207,1704 11865,1564 11765,1522 11476,1398 11216,1293 11157,1269 11012,1210 10829,1135 10769,1111 10673,1072
+relativ breit, neues Verbundsteinpflaster, allerdings schon einige Wurzelhebungen und andere Schäden	RW2; 10673,1072 10427,968
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-18 Uhr und Sa 9-18 Uhr	RW1; 10769,1111 10829,1135 11012,1210 11157,1269 11216,1293 11476,1398 11765,1522 11865,1564
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/verkehrsbetriebe-haben-neue-sonderstreifen-auf-der-sonnenallee-und-dem-britzer-damm-beantragt_a257617 (neue Geltungszeiten für die Busspur)
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 11865,1564 12207,1704
-neues Verbundsteinpflaster	RW2; 10769,1111 10664,1068 10427,968
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22172.pdf (neue Geltungszeiten für die Busspur)
-für Radfahrer freigegebene Busspur gilt Mo-Fr 7-20 Uhr	RW1; 10427,968 10664,1068 10769,1111
+für Radfahrer freigegebene Busspur gilt Mo-Fr 7-20 Uhr	RW1; 10427,968 10673,1072 10769,1111
 neues Verbundsteinpflaster	RW1; 10427,968 10324,925 10276,906
 	RW2; 10324,925 10427,968
 	RW1; 10276,906 10187,872 10047,813 9858,744
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 9858,744 10047,813 10187,872 10276,906 10324,925
-	RW1;RW1 9858,744 9250,576
+	RW1; 9858,744 9250,576
+Radweg nur aufgemalt	RW1; 9250,576 9858,744
 	RW1;RW4 9250,576 9178,556
 	RW1;RW4 9178,556 9158,551 9069,506
 	RW1; 9069,506 9002,471 8906,392 8736,337
@@ -3446,7 +3449,7 @@ Verbundsteinpflaster	RW2; 12582,5232 12507,5228
 #: by: https://www.infravelo.de/projekt/blaschkoallee/ (mittlerweile wieder gelöscht)
 #: by: http://www.infravelo.de/projekt/blaschkoallee-1/ (Beginn/Ende: 3. Quartal 2021, Verstetigung)
 #: osm_watch: way id="451445143" version="7"
-#: last_checked: 2021-09-19 (mapillary) vvv
+#: last_checked: 2021-10-03 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 provisorisch geschützter Radstreifen	RW4; 12987,5263 13046,5267 13112,5253 13250,5234 13327,5234 13508,5238
@@ -3464,7 +3467,7 @@ provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
 #: next_check_id: POPUPRADWEGE-2020
 #: XXX existierender Bürgersteigradweg wurde zugunsten des Popup-Radwegs aufgehoben
 #: osm_watch: way id="4603499" version="34"
-#: last_checked: 2021-09-19 (mapillary)
+#: last_checked: 2021-10-03
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2020-12-31
 provisorisch geschützter Radstreifen	RW4; 13250,5234 13112,5253 13046,5267 12987,5263
@@ -3623,7 +3626,7 @@ holprig und eng	RW1;RW1 5474,1940 5519,1831 5570,1712 5633,1566 5661,1499 5706,1
 	RW6;RW6 12050,11511 12031,11529
 #: by: Axel Kokol:
 #: confirmed by: anonymous (sort-of, he specified q4)
-	RW6;RW6 10170,2158 10108,2174 10043,2351 9973,2541 9993,2551 10015,2651
+	RW6;RW6 10170,2158 10108,2174 10043,2351 9975,2536 9993,2551 10015,2651
 # 
 #: note: Greifswalder Str. stadtauswärts
 Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 12017,14098 12077,14186
@@ -6930,7 +6933,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: osm_watch: way id="4401920" version="52"
 #: XXX wird mittlerweile verstetigt
 #: confirmed_by: srt
-#: last_checked: 2021-09-28
+#: last_checked: 2021-10-03 (webcam)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-07-23
 provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
@@ -7012,14 +7015,15 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
 #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
+#: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021)
 #: last_checked: 2021-09-28 vvv
-# REMOVED --- #: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2021-06-30 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2021-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
-#: osm_watch: way id="30184955" version="25"
+#: osm_watch: way id="30184955" version="26"
 provisorisch geschützter Radstreifen	RW4;RW4 11393,10390 11512,10105
-# REMOVED --- #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: note: Kottbusser Damm/Str. Richtung Norden
@@ -7042,7 +7046,7 @@ Radspur hinter parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720 11710,9628
 #: by: https://twitter.com/SenUVKBerlin/status/1387045914317971459
 #: by: https://twitter.com/VIZ_Berlin/status/1406948078658232321 (Bauarbeiten ab Anfang Juli 2021)
 #: source_id: 2147346996 (bis 21.5.2021)
-#: osm_watch: way id="34057952" version="40"
+#: osm_watch: way id="34057952" version="41"
 #: last_checked: 2021-09-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-06-23 vvv

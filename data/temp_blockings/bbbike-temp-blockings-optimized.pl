@@ -3849,13 +3849,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/lichtenrade/c-kultur/spielen-auf-dem-rehagener-platz_a278641
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.949210.php (Fertigstellung IV. Quartal 2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten? Wird das Kopfsteinpflaster nach den Bauarbeiten etwas besser sein? vvv
-#: last_checked: 2021-05-30 vvv
+#: last_checked: 2021-10-03 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-12-15
 	q4::inwork 10642,-2371 10638,-2452
 # REMOVED (hier fertig)	q4::inwork 10638,-2452 10563,-2432
-	q3::inwork 10563,-2432 10638,-2452 10789,-2451
-	q3::inwork 10638,-2452 10648,-2547
+	q3::inwork 10563,-2432 10638,-2452
+# REMOVED (hier keine Bauarbeiten mehr) ---	q3::inwork 10638,-2452 10789,-2451
+# REMOVED (hier keine Bauarbeiten mehr) ---	q3::inwork 10638,-2452 10648,-2547
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -3958,7 +3959,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2021-08-20 (osm note)
+#: last_checked: 2021-09-14 (architektur-urbanistik)
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 ',
@@ -4078,7 +4079,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX sind tatsächlich Fußgänger und Radfahrer betroffen? -> ja, allerdings ist es außerhalb der Bauzeiten unter Umständen möglich, hier durchzufahren
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Können Radfahrer wieder durchfahren?
 #: osm_watch: way id="948039533" version="1"
-#: last_checked: 2021-08-05 (oesten b.)
+#: last_checked: 2021-10-03
 # REMOVED --- #: next_check: 2021-07-31
 	2::inwork 9693,-815 9692,-772 9693,-746 9699,-600
 ',
@@ -4447,7 +4448,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
 	q4::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="1"
 	q3::inwork 15279,10862 15355,10875
-#: osm_watch: way id="984056169" version="1"
+#: osm_watch: way id="984056169" version="2"
 	2::inwork 15272,10790 15388,10758
 ',
          'from' => 1625734800,
@@ -4796,6 +4797,20 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Rathausstr.: zwischen Königstr. und Ullsteinstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2021 08:00 bis 22.12.2021 17:00 ',
          'type' => 'handicap',
          'until' => 1640214000
+       },
+       {
+         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: XXX Wird nach den Bauarbeiten die Qualität der Fahrbahn besser sein? (jetzt: Q1)
+#: osm_watch: way id="10686356" version="18"
+#: also_indoor: traffic (none)
+#: last_checked: 2021-10-03
+	q4::inwork 13510,8138 13663,8011
+',
+         'from' => undef,
+         'id' => 3456,
+         'text' => 'Stuttgarter Platz: Bauarbeiten, Fahrbahn gesperrt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
