@@ -101,6 +101,17 @@ my $ua = LWP::UserAgent->new(keep_alive => 10);
 $ua->agent('BBBike-Test/1.0');
 $ua->env_proxy;
 
+my $ua_letsencrypt;
+# With older Net::SSLeay it's necessary to turn off cert checks on sites with Let's Encrypt certs
+# https://letsencrypt.org/docs/dst-root-ca-x3-expiration-september-2021/
+if (eval { require Net::SSLeay; require IO::Socket::SSL; 1 } && ($Net::SSLeay::VERSION < 1.69 || $IO::Socket::SSL::VERSION < 2.016)) {
+    $ua_letsencrypt = $ua->clone;
+    $ua_letsencrypt->ssl_opts(verify_hostname => 0);
+    $ua_letsencrypt->ssl_opts(SSL_verify_mode => &IO::Socket::SSL::SSL_VERIFY_NONE); # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=907853
+} else {
+    $ua_letsencrypt = $ua;
+}
+
 # seems to be necessary (for my system? for the freebsd server?)
 $ENV{FTP_PASSIVE} = 1;
 
@@ -180,9 +191,19 @@ sub check_url {
 	    skip("$url was already checked", $no_tests);
 	}
 
+	my $used_ua;
+	if ($url =~ m{^https?://sourceforge\.net}) {
+	    $used_ua = $ua_letsencrypt;
+	    if ($ua_letsencrypt != $ua) {
+		diag "Need to switch to 'forgiving' user-agent for accessing '$url'";
+	    }
+	} else {
+	    $used_ua = $ua;
+	}
+
 	my $method = "head";
 	my $t0 = time;
-	my $resp = $ua->$method($url);
+	my $resp = $used_ua->$method($url);
 	my $dt = time - $t0;
 	my $redir_text = do {
 	    my $redir_url = $resp->request->uri;
