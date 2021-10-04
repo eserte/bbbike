@@ -993,7 +993,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-09-22
+#: last_checked: 2021-10-04
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2606,7 +2606,7 @@ Mühlenfeldstr.: Kopfsteinpflaster	Q2 3046,22292 2757,22310 2587,22332
 (Tegeler Fließ - Mühlenfeldstr.): Verbundsteinpflaster	Q1 3758,22511 3772,22482
 #: XXX wird hier asphaltiert? --- 
 #: XXX Baumaßnahme 12.2 (Realisierung bis 2010) (nicht ganz sicher, ob es wirklich hier ist)
-#: last_checked: 2020-09-11
+#: last_checked: 2021-06-16 (kartaview)
 #: check_frequency: 360d
 Götzestr.: gutes Kopfsteinpflaster	Q1- 3896,22718 3738,22652
 (Weg am Tegeler Fließ): asphaltiert	Q0 4222,22854 4166,22752
@@ -20661,7 +20661,10 @@ Uhlandstr.: fester Sandweg mit Schlaglöchern	Q2 9054,20001 9023,19936 8962,19798
 # REMOVED (ja, etwas) --- #: XXX hat sich die Qualität verschlechtert?
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5623
 #: XXX wird die Qualität nach den Bauarbeiten wieder besser sein, zumindest nördlich des Forienwegs?
-#: next_check: 2021-10-05
+#: osm_watch: way id="665666063" version="7"
+#: last_checked: 2021-07-19 (kartaview)
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2021-10-05
 Ulmenstr.: Beton mit einigen Schäden	Q1+ 4000,23034 3862,23222 3743,23373
 #: confirmed_by: srt
 Heidenheimer Str.: schlechtes Kopfsteinpflaster	Q3 3695,23160 3544,23179 3463,23194 3283,23217 3146,23217

@@ -29222,16 +29222,16 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-01-24 07:00:00"), # 1568571027, # 1557083524, # 2019-05-05 21:12
-       until => $isodate2epoch->("2021-10-11 17:00:00"), # 1569607982, # $isodate2epoch->("2019-10-07 18:00:00"),
+       until => $isodate2epoch->("2021-10-25 17:00:00"), # 1569607982, # $isodate2epoch->("2019-10-07 18:00:00"),
        dont_check_date=>1,
-       text  => 'Langhansstr.: in Höhe Antonplatz ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, voraussichtlich bis 11.10.2021',
+       text  => 'Langhansstr.: in Höhe Antonplatz ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, voraussichtlich bis 25.10.2021',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
        data  => <<EOF,
 #: next_check_id: LANGHANS-2021
 #: source_id: 2147344802 (inaktiv)
 #: source_id: 2147346832 (Gesamtbaumaßnahme bis Mitte August 2021)
-#: source_id: viz2021:13.434734,52.553612,25.01.2021,07:00 (bis 20.8.2021, Gesamtmaßnahme bis Mitte 10/2021)
+#: source_id: viz2021:13.434734,52.553612,25.01.2021,07:00 (bis 20.8.2021, Gesamtmaßnahme bis Mitte 10/2021) (inaktiv)
 #: by: https://viz.berlin.de/2021/01/verkehrsvorschau25012021/ ("Mitte Februar (2021) wird die Sperrung um den Abschnitt Heinersdorfer Straße - Roelckestraße erweitert")
 #: by: https://viz.berlin.de/2021/01/langhansstr-sperrung/
 #: by: https://www.bahninfo-forum.de/read.php?9,691318,693319#msg-693319
@@ -29245,7 +29245,7 @@ EOF
 #: last_checked: 2021-09-17 (mapillary) vvv
 #: next_check: 2021-10-11 vvv
 #: note: hier nur an der Kreuzung Berliner Allee
-#: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 22.9.2021)
+#: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 22.9.2021) (mittlerweile 25.10.2021)
 	q3::inwork 13508,15912 13312,16027
 # REMOVED (hier nicht mehr) ---	q4::inwork 13312,16027 13250,16058 13189,16089 12943,16214
 # REMOVED (hier nicht mehr? "zwischen Roelckestr. und Gustav-Adolf-Str. sowie ...") ---	q4::inwork 12943,16214 12859,16255 12826,16271 12797,16285 12764,16302 12725,16321 12564,16399 12474,16443 12399,16479
@@ -31026,7 +31026,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-09-22
+#: last_checked: 2021-10-04
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33082,7 +33082,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRANKFURTER-2021
 #: note: auch last Schild der Wasserbetriebe bis März 2022
-#: last_checked: 2021-09-25 vvv
+#: last_checked: 2021-10-04 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-31 vvv
 	3 14888,11934 14926,12129 15003,12241

@@ -246,7 +246,7 @@ Müllerstr.: Radspuren geplant	?::projected 6781,16026 6914,15908 6936,15888 7024
 Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 # 
 #: XXX Baumaßnahme 12.15 (Realisierung nach 2011)
-#: last_checked: 2021-04-26 (mapillary)
+#: last_checked: 2021-05-04 (kartaview)
 #: check_frequency: 120d
 #: osm_watch: way id="82449630" version="21"
 #: osm_watch: way id="32426064" version="14"
@@ -1537,6 +1537,7 @@ Residenzstr.: Radstreifen geplant	?::projected 8127,16894 8079,16953 7970,17087
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.655722.php (Erwähnung des Vorhabens Spreeradweg am Wullenwebersteg)
 #: XXX oder ist was anderes mit "Rampe Wullenwebersteg" gemeint?
+#: osm_watch: way id="31528664" version="8"
 #: last_checked: 2020-10-10
 #: check_frequency: 360d
 Wullenwebersteg: wird hier eine Rampe erstellt?	?::projected 5714,12290 5714,12279 5714,12266
@@ -2464,8 +2465,8 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 #: priority: #D vvv
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765 --- #: last_checked: 2016-10-03 --- #: next_check: 2017-03-24 --- Alt-Wittenau/Techowpromenade: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5218,20471 5235,20439
 #: osm_watch: way id="665666065" version="8"
-#: last_checked: 2020-09-11
-#: check_frequency: 90d
+#: last_checked: 2021-06-17
+#: check_frequency: 120d
 Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3627,23246 3655,23244
 #: priority ^^^
 #: by: ^^^
@@ -3008,7 +3009,7 @@ Poelchaustr./Langhoffstr.: Zebrastreifen geplant	?::projected 19789,14494 19817,
 #: last_checked: 2021-08-07
 #: check_frequency: 120d
 Havemannstr./Flämingstr.: Zebrastreifen geplant (entsteht hier noch ein weiterer auf der Havemannstr., oder einer auf der Flämingstr.?)	?::projected 21427,18452 21446,18405 21399,18406
-#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: last_checked: 2021-05-10 (kartaview)
 #: check_frequency: 120d
 Burgfrauenstr./Fischgrundbrücke: Zebrastreifen geplant (entsteht hier noch ein weiterer auf der anderen Seite?)	?::projected 2645,24776 2690,24751 2684,24799
 #: priority ^^^
@@ -3064,7 +3065,7 @@ Am Falkenberg/Gartenstadtweg: Zebrastreifen geplant	?::projected 21680,948 21685
 #: by: https://abendblatt-berlin.de/2020/07/31/berlin-hermsdorf-verkehrsberuhigung-fuer-die-heinsestrasse/ (keine Erwähnung des Zebrastreifens, aber unterschiedliche Verkehrsberuhigungskonzepte)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9170 (Heinsestr./Max-Beckmann-Platz)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
-#: last_checked: 2021-04-14 (BVV)
+#: last_checked: 2021-06-17 (kartaview)
 #: check_frequency: 360d
 Heinsestr. 41: Zebrastreifen geplant	?::projected 3486,23443 3490,23472 3499,23507
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
@@ -3073,11 +3074,11 @@ Heinsestr. 41: Zebrastreifen geplant	?::projected 3486,23443 3490,23472 3499,235
 Buddestr./Königsweg: Zebrastreifen geplant	?::projected 2151,20619 2188,20600 2228,20581
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
-#: last_checked: 2021-03-18 (parlamentarische Anfrage)
+#: last_checked: 2021-07-19 (kartaview)
 #: check_frequency: 120d
 Dianastr. 44: Zebrastreifen geplant	?::projected 3778,21965 3771,21910 3818,21946
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
-#: last_checked: 2021-04-14 (mapillary) (Überquerungshilfe existiert bereits)
+#: last_checked: 2021-06-18 (kartaview) (Überquerungshilfe existiert bereits)
 #: check_frequency: 120d
 Berliner Str. 105: Zebrastreifen geplant	?::projected 3947,23753 3985,23814 4033,23775
 #: priority ^^^
@@ -3559,6 +3560,8 @@ Naunynstr.: Benennung einer Platzfläche in "Maria-von-Maltzan-Platz"	? 11365,107
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/stadtplatz-wird-vergroessert_a319700
 # REMOVED --- #: XXX Der Stadtplatz bleibt bis zum 1. November 2020 bestehen --- temporärer Stadtplatz, wo genau?
 #: XXX noch keine Bauarbeiten oder anderweitige Änderungen zu sehen
+#: osm_watch: way id="33492395" version="10"
+#: osm_watch: way id="58648979" version="6"
 #: last_checked: 2021-09-05
 Wundtstr./Horstweg: Können Radfahrer nach den Bauarbeiten durchfahren?	? 2934,11747 2888,11670
 # 
