@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012,2016,2018,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2016,2018,2020,2021 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -136,12 +136,14 @@ sub handle_file {
 				 my($date, $_cat) = @$time_limit;
 				 if ($dir->{_nextcheck_date}[0] le $date) {
 				     $cat = $_cat;
+				     my $is_directed = $r->[Strassen::CAT] =~ m{;$};
 				     if ($r->[Strassen::CAT] =~ m{^.*?:+(.*)}) { # preserve some category attributes like "projected", "inwork"
 					 my(@attr) = grep { $_ =~ m{^(?:projected|inwork|ignrte);?$} } split /::?/, $1;
 					 if (@attr) {
 					     $cat .= "::" . join("::", @attr);
 					 }
 				     }
+				     $cat .= ";" if $is_directed;
 				     $add_name = "($dir->{_nextcheck_label}[0])";
 				     $check_now = 1;
 				     last CHECK_TIME_LIMITS;
