@@ -3820,7 +3820,9 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        },
        {
          'data' => '#: note: laut rbb nur bis 5.10.2021 (erste Phase?)
-	q4::inwork 2793,22640 2652,22615 2556,22598
+#: source_id: viz2021:13.29552,52.61058,05.10.2021,19:48
+# REMOVED (hier mittlerweile frei, laut viz)	q4::inwork 2793,22640 2652,22615
+	q4::inwork 2652,22615 2556,22598
 ',
          'from' => 1630360800,
          'id' => 3426,
@@ -4011,11 +4013,12 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        },
        {
          'data' => '#: by: wosch
+#: confirmed_by: srt
 #: by: https://www.gmg-ing.de/referenzen/ernst-heilmann-steg-berlin/ ("Torsionsschwingungen")
 #: by: https://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10997_Berlin_Instandsetzung_Stahlbau_1924073.html (Ausschreibung)
 #: also_indoor: search Ernst-Heilmann-Steg
-#: last_checked: 2021-09-24
-#: check_frequency: 90d
+#: last_checked: 2021-10-05
+#: check_frequency: 120d
 	2::inwork 13270,10030 13306,10006
 ',
          'from' => undef,

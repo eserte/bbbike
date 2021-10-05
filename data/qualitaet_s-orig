@@ -1925,7 +1925,8 @@ Ebelingstr.: Kopfsteinpflaster	Q2 13487,13115 13610,13169 13707,13206
 Cuvrystr.: Asphalt	Q0 13035,10076 13132,10239
 Cuvrystr.: gutes Kopfsteinpflaster	Q1 13132,10239 13151,10276 13197,10355
 Cuvrystr.: Asphalt	Q0 13197,10355 13249,10445
-Cuvrystr.: Kopfsteinpflaster	Q2 13249,10445 13325,10565
+Cuvrystr.: Asphalt	Q0 13249,10445 13292,10513
+Cuvrystr.: Kopfsteinpflaster	Q2 13292,10513 13325,10565
 Zeughofstr.: Kopfsteinpflaster	Q2 12683,10896 12531,10676 12456,10563 12401,10461
 Pfuelstr.: Kopfsteinpflaster	Q2+ 12879,10750 12951,10839
 Muskauer Str.: Kopfsteinpflaster	Q2 12120,10772 11977,10846
@@ -2137,6 +2138,9 @@ Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368
 # REMOVED --- Beermannstr.: Kopfsteinpflaster	Q2 14119,9368 14157,9345
 # REMOVED --- Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14162,9381 14172,9457
 Matthesstr.: Asphalt	Q0 14172,9457 14185,9509
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/elbestrasse-soll-spaetestens-ab-2024-fuer-fussgaenger-und-radfahrer-attraktiver-werden_a324155
+#: XXX Umgestaltung geplant, vielleicht auch Asphaltierung?
+#: next_check: 2024-01-01
 Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12765,8605 12822,8675 12881,8750 12954,8840 13045,8951
 Schandauer Str.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 13105,8720 12954,8840
 Laubestr.: Kopfsteinpflaster	Q2 12982,8564 12822,8675
@@ -12920,6 +12924,7 @@ Stößerstr.: Asphalt mit gepflasterten Parkstreifen	Q0 -2248,19849 -2103,19833 -1
 #: corrected_by: srt (mäßiger Asphalt -> Verbundsteinpflaster)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1128280.php (Instandsetzung der Fahrbahnoberfläche)
 #: by: https://www.berliner-woche.de/konradshoehe/c-verkehr/bauarbeiten-am-falkenplatz_a323069
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9596
 #: XXX: neue Oberfläche soll aus "Drain-Pflastersteinen" bestehen --- wird die Qualität besser sein?
 #: next_check: 2021-10-29
 Stößerstr.: Verbundsteinpflaster	Q1 -1806,19806 -1739,19803

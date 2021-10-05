@@ -2123,6 +2123,7 @@ Groß-Berliner Damm: Mittelstreifen	3nocross 18826,3816 18779,3866 18541,4125
 Groß-Berliner Damm: Mittelstreifen	3nocross 18930,3703 19029,3595 19125,3491
 #: next_check_id: GROSSBERLINERDAMM-2020
 #: by: https://www.baustellen-doku.info/berlin_strassenbahn_adlershof_II_wista_schoeneweide/20200831/
+#: source_id: viz2021:13.511217,52.449474,28.01.2021,07:00 (Gleisbauarbeiten)
 #: confirmed_by: srt
 #: XXX hier wird ein Fußgängerübergang erstellt
 #: last_checked: 2021-10-02
@@ -3473,7 +3474,8 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615
 # 
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise
-#: last_checked: 2021-06-08
+#: osm_watch: note 2832326 1
+#: last_checked: 2021-09-02 (osm note)
 #: check_frequency: 120d
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
 # 
@@ -3622,15 +3624,16 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2021-10-03
+#: last_checked: 2021-10-05
 #: check_frequency: 360d
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
 # 
 #: by: wosch
+#: confirmed_by: srt
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2021-10-03
+#: last_checked: 2021-10-05
 #: check_frequency: 60d
-Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152 14373,10046
+Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 # 
 #: next_check_id: EUROPACITY-2015
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
@@ -4047,13 +4050,14 @@ Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22485.pdf (Fertigstellung Ende 2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8066 (Frage)
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,714167#msg-714167
 #: note: laut rbb ebenfalls bis 31.10.2021
 #: source_id: 2147342379 (bis 31.10.2021)
 #: source_id: LMS-BR_r_LMS-BR_127414_LMS-BR_72 (inaktiv)
 #: source_id  viz2021:13.380614,52.414283,29.03.2018,07:00 (bis 31.10.2021)
-#: osm_watch: way id="4716389" version="30"
-#: last_checked: 2020-10-22 (baustellen-doku)
-#: next_check: 2021-10-31
+#: osm_watch: way id="4716389" version="31"
+#: last_checked: 2021-10-04 (bahninfo-forum)
+# REMOVED --- #: next_check: 2021-10-31
 Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,898 9024,906 9058,932
 # 
 # REMOVED (mittlerweile kommt man durch) --- #: next_check_id: KLARAFRANKESTR-2018 --- #: XXX außerdem: genaue Lage der Straße --- #: osm_watch: way id="423494183" version="7" --- #: last_checked: 2019-08-28 --- #: check_frequency: 60d --- Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13735
