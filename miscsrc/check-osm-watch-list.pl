@@ -149,7 +149,7 @@ if ($with_notes) {
 	my $human_url = "$osm_url/note/$id";
 	my $resp = $ua->get($url);
 	if (!$resp->is_success) {
-	    warn "ERROR: Cannot fetch $url: " . $resp->status_line;
+	    warn "ERROR: Cannot fetch $url: " . $resp->dump;
 	} else {
 	    my $data = JSON::XS::decode_json($resp->decoded_content(charset => 'none'));
 	    my $properties = $data->{properties};
@@ -242,7 +242,7 @@ if ($method eq 'osm-file') {
 	} elsif ($resp->code == 410) {
 	    # 410 Gone handled later --- it's not consumed, so it's deleted
 	} else {
-	    die "ERROR: while fetching $url: " . $resp->status_line;
+	    die "ERROR: while fetching $url: " . $resp->dump;
 	}
     }
 } elsif ($method eq 'overpass') {
@@ -272,7 +272,7 @@ EOF
 	    $handle_record->($type, $id, $new_version);
 	}
     } else {
-	die "ERROR: while fetching $overpass_api_url:\n" . $resp->status_line . "\n" . $resp->decoded_content;
+	die "ERROR: while fetching $overpass_api_url:\n" . $resp->dump(maxlength => 4) . "\n" . $resp->decoded_content;
     }
 
 } else {
@@ -321,7 +321,7 @@ sub show_diff {
     my $url = "$osm_api_url/$type/$id/history";
     my $resp = $ua->get($url);
     if (!$resp->is_success) {
-	warn "ERROR: while fetching <$url>: " . $resp->status_line;
+	warn "ERROR: while fetching <$url>: " . $resp->dump;
     } else {
 	my $p = XML::LibXML->new;
 	my $root = $p->parse_string($resp->decoded_content)->documentElement;
