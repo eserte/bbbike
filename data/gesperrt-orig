@@ -3325,6 +3325,7 @@ Schranke	BNP:3::trailer=10 17837,12277
 # 
 #: osm_watch: way id="175828136" version="8"
 #: source_id: AdB/21-11-00135 (bis 11.03.2022)
+#: priority: #B
 #: last_checked: 2021-09-12 (wosch)
 #: next_check: 2022-03-11
 Schönfließ - Summt: Brücke über die A10 wird neu gebaut	2::inwork 5752,30817 5787,30867
@@ -3333,8 +3334,9 @@ Schönfließ - Summt: Brücke über die A10 wird neu gebaut	2::inwork 5752,30817 578
 # 
 #: osm_watch: way id="926868384" version="1"
 #: osm_watch: way id="926868383" version="1"
-#: source_id: AdB/21-11-00133 (bis 15.10.2021)
-#: next_check: 2021-10-15
+#: source_id: AdB/21-11-00133 (bis 15.11.2021)
+#: priority: #B
+#: next_check: 2021-11-15
 Stolper Weg: Brücke über die A10 wird neu gebaut	2::inwork 514,32607 525,32437
 # 
 #: next_check_id: WESER-2021
@@ -3961,7 +3963,7 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2021-09-14 (osm) vvv
+#: last_checked: 2021-10-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -3995,7 +3997,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
-#: last_checked: 2021-08-31
+#: last_checked: 2021-10-07
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: osm_watch: way id="496270260" version="6" brb
@@ -4394,6 +4396,7 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_41_5037_5124_online.pdf (Benennung von zwei privaten Stadtplätzen)
 #: by: https://www.architektur-urbanistik.berlin/index.php?attachments/1617229675566-png.6106/ (schematische Karte mit Johannisplatz und Aaron-Bernstein-Platz)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_29_2481_2536_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berliner-woche.de/mitte/c-bauen/neues-stadtquartier-soll-bis-mitte-2023-fertig-sein_a324308
 #: XXX vermutlich wird es keinen Zugang zur Oranienburger Str. mehr geben --- bleibt wenigstens der südliche Stummel?
 #: XXX außerdem: im Quartier Am Tacheles werden zwei Privatplätze entstehen und bekommen die Namen (fehlen in Berlin.coords.data; wo genau befinden sie sich?):
 #: XXX Johannisplatz
@@ -4403,6 +4406,7 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: osm_watch: way id="940764584" version="1"
 #: last_checked: 2021-07-30 (daf)
 #: check_frequency: 360d
+#: next_check: 2023-06-30
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
 # REMOVED (fast alles offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16 --- #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung) --- #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen --- #: last_checked: 2018-12-28 vvv --- #: check_frequency: 14d vvv --- #: XXX wird es hier in Zukunft noch einen Weg geben? (bei osm ist gar nichts eingezeichnet) --- Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9796,12284 9877,12293 --- #: XXX heißt dieser Abschnitt noch so oder Bebelplatz? --- #: osm_watch: way id="28251222" version="15" --- Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9796,12284 9780,12401 --- #: osm_watch: way id="474362271" version="2" --- Oberwallstr.: Bauarbeiten, vollständig gesperrt	2::inwork 9883,12251 9877,12293 --- # REMOVED (mittlerweile offen) --- Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9737,12238 9702,12307 9734,12395 --- #: check_frequency ^^^ --- #: last_checked: ^^^

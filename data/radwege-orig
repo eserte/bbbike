@@ -1496,7 +1496,7 @@ Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2021-09-24
+#: last_checked: 2021-10-05 (mapillary)
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1509,7 +1509,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: source_id: INKO_113041
 #: source_id: 2147339528 (bis 8.6.2020) (inaktiv)
 #: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2021-09-24
+#: last_checked: 2021-10-05 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
@@ -2914,6 +2914,9 @@ Busspur gilt immer	RW5; 16368,11912 16413,11906 16512,11894 16737,11866 16803,11
 #: note: eigentlich existiert hier kein Schild
 Busspur gilt immer	RW5; 17251,11789 17151,11801
 Busspur gilt immer	RW5; 17151,11801 17121,11806 17028,11821 16962,11833 16803,11859 16737,11866 16512,11894
+#: by: https://www.infravelo.de/projekt/alt-biesdorf/ (4. Quartal 2021)
+#: XXX Grünbeschichtung geplant
+#: next_check: 2021-12-31
 die ersten und letzten Meter werden auf dem Gehweg geführt	RW3; 21108,11628 20764,11675 20571,11698
 teilweise gemeinsamer, teilweise getrennter Rad- und Gehweg	RW2; 20540,11660 20633,11651 20838,11631 20963,11618 21108,11628
 asphaltiert	RW2; 21108,11628 21251,11560 21311,11528 21392,11486 21628,11384 21745,11333 21863,11289 21954,11269 22242,11269
@@ -4032,11 +4035,12 @@ aufgemalter Radweg	RW1; 9897,18496 9901,18522 9916,18610 9920,18636 9937,18728
 enger Radweg, Asphalt mit Unebenheiten	RW1; 12042,21886 12062,21834
 #: note: teilweise nur vereinzelte Grünmarkierungen in Rautenform
 stellenweise Grünmarkierungen	RW4; 12062,21834 12172,21545 12209,21448
-#: by: https://www.infravelo.de/projekt/berliner-strasse-1/ (bis 3. Quartal 2021)
+#: by: https://www.infravelo.de/projekt/berliner-strasse-1/ (bis 3. Quartal 2021) (mittlerweile bis 4. Quartal 2021)
 #: XXX Grünmarkierung (in Rautenform) geplant (beide Richtungen?)
 #: priority: #C
 #: last_checked: 2021-10-03 (mapillary)
-# REMOVED --- #: next_check: 2021-09-30
+#: check_frequency: 30d
+#: next_check: 2021-12-31
 	RW4; 12209,21448 12188,21330 12176,21266
 enger Radweg, Asphalt mit Unebenheiten	RW1; 12176,21266 12166,21208 12158,21166
 stellenweise Grünmarkierungen	RW4; 12158,21166 12121,20969

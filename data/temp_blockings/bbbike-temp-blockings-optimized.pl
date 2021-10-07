@@ -3445,7 +3445,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?
 #: note: 2021-07-26 ("Radfahrer frei"-Schilder fehlen weiterhin, aber manchmal scheint man auf dem noch existierenden Radstreifen gut durchzukommen), ebenso: 2021-08-31
-#: last_checked: 2021-08-31
+#: last_checked: 2021-10-07
 	q4::inwork; 9195,11972 9207,11880
 # REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
 ',
@@ -4001,16 +4001,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'type' => 'gesperrt',
          'until' => 1638313199
        },
-       {
-         'data' => '	q4::inwork; 8514,17634 8536,17786 8555,17928 8571,18037 8580,18106 8583,18127 8597,18214 8610,18309 8622,18402
-',
-         'from' => 1633471200,
-         'id' => 3446,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1129147.php',
-         'text' => 'Provinzstr.: Bauarbeiten zwischen Pankower Allee und Herbststr., Einbahnstraßenregelung, offen Richtung Süden, evtl. sind auch Radfahrer betroffen, vom 7. bis zum 30. Oktober 2021 ',
-         'type' => 'handicap',
-         'until' => 1635631199
-       },
+       undef,
        {
          'data' => '#: by: wosch
 #: confirmed_by: srt
@@ -4075,6 +4066,18 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'from' => undef,
          'id' => 3456,
          'text' => 'Stuttgarter Platz: Bauarbeiten, Fahrbahn gesperrt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Bis wann geht die Sperrung in der Alexandrinnenstr.?
+#: also_indoor: traffic (G)
+#: last_checked: 2021-10-07 (eric)
+	q4::inwork; 10069,10151 10083,10192 10122,10294
+',
+         'from' => undef,
+         'id' => 3457,
+         'text' => 'Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Brachvogelstr. und Gitschiner Str. gesperrt',
          'type' => 'handicap',
          'until' => undef
        }

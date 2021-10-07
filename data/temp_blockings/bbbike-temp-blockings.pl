@@ -32580,7 +32580,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?
 #: note: 2021-07-26 ("Radfahrer frei"-Schilder fehlen weiterhin, aber manchmal scheint man auf dem noch existierenden Radstreifen gut durchzukommen), ebenso: 2021-08-31
-#: last_checked: 2021-08-31
+#: last_checked: 2021-10-07
 	q4::inwork; 9195,11972 9207,11880
 # REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
 EOF
@@ -33566,7 +33566,7 @@ EOF
 EOF
      },
      { from  => 1633471200, # 2021-10-06 00:00
-       until => 1635631199, # 2021-10-30 23:59
+       until => 1633635916, # (für Radfahrer frei) --- 1635631199, # 2021-10-30 23:59
        text  => 'Provinzstr.: Bauarbeiten zwischen Pankower Allee und Herbststr., Einbahnstraßenregelung, offen Richtung Süden, evtl. sind auch Radfahrer betroffen, vom 7. bis zum 30. Oktober 2021 ',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1129147.php',
@@ -33679,6 +33679,17 @@ EOF
 #: also_indoor: traffic (none)
 #: last_checked: 2021-10-03
 	q4::inwork 13510,8138 13663,8011
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Brachvogelstr. und Gitschiner Str. gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Bis wann geht die Sperrung in der Alexandrinnenstr.?
+#: also_indoor: traffic (G)
+#: last_checked: 2021-10-07 (eric)
+	q4::inwork; 10069,10151 10083,10192 10122,10294
 EOF
      },
     );
