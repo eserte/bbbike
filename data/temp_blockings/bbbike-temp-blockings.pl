@@ -129,7 +129,7 @@ EOF
        text  => 'L71 Badstraße Berlin-Wedding - Berlin-Mitte in beiden Richtungen Zwischen Pankstraße und Böttgerstraße beidseitig Veranstaltung, Straße gesperrt bis 19.06.2005, 23:00 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 8862,16208 8788,16264
+	2 8862,16208 8776,16268
 	2 8913,16159 8986,16092
 	2 8986,16092 9053,16029
 	2 9123,15963 9053,16029
@@ -726,7 +726,7 @@ EOF
        text  => 'B96A Berlin-Pankow, Schönholzer Straße - Mühlenstraße, Oranienburg Richtung Berlin-Mitte, Zwischen Kreuzung Grabbeallee und Kreuzung Breite Straße Baustelle, großer Zeitverlust, lange Staus bis 31.08.2004 , eine Umleitung ist eingerichtet (Sperrung nur zwischen Wollankstraße und Kreuzstraße)',
        type  => 'handicap',
       data  => <<EOF,
-	q4 9909,18333 10054,18210 10089,18180
+	q4 9905,18329 10054,18210 10089,18180
 EOF
      },
      { from  => 1093125600, # 2004-08-22 00:00
@@ -4326,8 +4326,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002650',
        data  => <<EOF,
-	2 9902,18180 9909,18333
-	2 9902,18180 9832,17925
+	2 9893,18179 9895,18297 9905,18329
+	2 9893,18179 9818,17921
 EOF
      },
      { from  => 1145311200, # 2006-04-18 00:00
@@ -6550,8 +6550,8 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003850',
        data  => <<EOF,
-	q4::temp 8481,16136 8582,16052 8443,15901 8437,15894 8271,15734
-	q4::temp 8437,15894 8338,15987 8270,16047 8236,16071
+	q4::temp 8481,16136 8578,16057 8436,15907 8430,15901 8271,15734
+	q4::temp 8430,15901 8338,15987 8270,16047 8236,16071
 EOF
      },
      { from  => 1161326842, # 2006-10-20 08:47
@@ -8990,7 +8990,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_025247',
        data  => <<EOF,
-	2::temp 8788,16264 8862,16208 8913,16159 8986,16092 9053,16029 9123,15963
+	2::temp 8776,16268 8862,16208 8913,16159 8986,16092 9053,16029 9123,15963
 EOF
      },
      { from  => 1183280005, # 2007-07-01 10:53
@@ -15267,7 +15267,7 @@ EOF
        text  => 'Badstr. (Wedding) zwischen Pankstr. und Behmstr. Veranstaltung (Seifenkistenderby), Straße vollständig gesperrt (14. und 15. Juni 2014)',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 9123,15963 9053,16029 8986,16092 8913,16159 8862,16208 8788,16264
+	2::temp 9123,15963 9053,16029 8986,16092 8913,16159 8862,16208 8776,16268
 EOF
      },
      { from  => 1249106497, # 2009-08-01 08:01
@@ -19128,7 +19128,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_104731',
        data  => <<EOF,
-	q4::inwork; 9501,18902 9681,19179 9811,19302
+	q4::inwork; 9487,18887 9681,19179 9811,19302
 EOF
      },
      { from  => 1292184708, # 2010-12-12 21:11
@@ -19355,7 +19355,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_105988',
        data  => <<EOF,
-	q4::inwork; 9501,18902 9681,19179 9811,19302
+	q4::inwork; 9487,18887 9681,19179 9811,19302
 EOF
      },
      { from  => 1300611480, # 2011-03-20 09:58
@@ -23534,7 +23534,7 @@ EOF
        text  => 'Badstr.: Veranstaltung (Oktoberfest Badstraße) zwischen Pankstr. und Behmstr., von 11.10.2014 bis 12.10.2014',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 8788,16264 8862,16208 8913,16159 8986,16092 9053,16029 9123,15963
+	2::temp 8776,16268 8862,16208 8913,16159 8986,16092 9053,16029 9123,15963
 EOF
      },
      { from  => 1404403879, # 2014-07-03 18:11
@@ -25000,7 +25000,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_025833',
        data  => <<EOF,
-	q4::inwork; 9727,17804 9835,17797 10053,17777 10179,17772
+	q4::inwork; 9721,17806 9835,17797 10053,17777 10179,17772
 #	q4::inwork; 10179,17772 10311,17764 10459,17754
 EOF
      },
@@ -26415,7 +26415,7 @@ EOF
        type  => 'gesperrt',
        source_id => '2147341281',
        data  => <<EOF,
-	2::inwork 9549,17625 9590,17662
+	2::inwork 9544,17629 9586,17665
 EOF
      },
      { from  => undef, # 
@@ -26920,7 +26920,7 @@ EOF
        data  => <<EOF,
 #: note: vmz meint Ende November 2017
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
-	q3::inwork; 10066,20494 10064,20437 10066,20323 10067,20254 10068,20188 10106,20093 10117,20065 10134,19981 10156,19860 10167,19797
+	q3::inwork; 10066,20494 10064,20437 10066,20323 10067,20254 10068,20188 10098,20113 10106,20093 10117,20065 10134,19981 10156,19860 10167,19797
 EOF
      },
      { from  => undef, # 
@@ -26964,7 +26964,7 @@ EOF
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
 #: source_id: LMS-BR_r_LMS-BR_108061_LMS-BR_72
 #: source_id: 2147341767
-	q3::inwork; 10167,19797 10156,19860 10134,19981 10117,20065 10106,20093 10068,20188 10067,20254 10066,20323 10064,20437 10066,20494
+	q3::inwork; 10167,19797 10156,19860 10134,19981 10117,20065 10106,20093 10098,20113 10068,20188 10067,20254 10066,20323 10064,20437 10066,20494
 EOF
      },
      { from  => undef, # 
@@ -27758,7 +27758,7 @@ EOF
        type  => 'handicap',
        source_id => '2147342753',
        data  => <<EOF,
-	q4::inwork; 9727,17804 9835,17797 10053,17777
+	q4::inwork; 9721,17806 9835,17797 10053,17777
 EOF
      },
      { from  => 1529438047, # 2018-06-19 21:54
@@ -27871,11 +27871,14 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/einmuendung-komplett-gesperrt_a303306
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
 #: also_indoor: traffic (G)
-#: priority: #B
-#: last_checked: 2021-09-01
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2021-03-26
+#: priority: #B vvv
+#: last_checked: 2021-10-08 vvv
+#: check_frequency: 60d vvv
 	q3::inwork 13391,16436 13630,16629
+Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
 EOF
      },
      { from  => 1530907854, # 2018-07-06 22:10
@@ -28872,7 +28875,7 @@ EOF
 #: source_id: 2147343528 (bis Mitte September 2019)
 #: note: bei fritz in beiden Richtungen gesperrt?
 # REMOVED (sogar Autos dürfen in beide Richtungen fahren) ---	q3::inwork; 7259,14870 7308,14814 7353,14767 7429,14667 7458,14643
-	q3::inwork 7259,14870 7432,14969
+	q3::inwork 7259,14870 7409,14954
 EOF
      },
      { from  => 1544425200, # 2018-12-10 08:00
@@ -29242,7 +29245,7 @@ EOF
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12474,16443 12564,16399 12725,16321 12764,16302 12797,16285 12826,16271 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
-#: last_checked: 2021-09-17 (mapillary) vvv
+#: last_checked: 2021-10-08 vvv
 #: next_check: 2021-10-11 vvv
 #: note: hier nur an der Kreuzung Berliner Allee
 #: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 22.9.2021) (mittlerweile 25.10.2021)
@@ -31218,7 +31221,7 @@ EOF
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX Stand 2021-07-31: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2021-09-01
+#: last_checked: 2021-10-08
 #: check_frequency: 30d
 	q3::inwork 14136,17170 13996,16959
 EOF
@@ -32006,7 +32009,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-09-18 vvv
+#: last_checked: 2021-10-08 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -32735,8 +32738,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-08-22 17:00:00"), # 1626374087, # 1626386400, # 2021-07-16 00:00
-       until => $isodate2epoch->("2021-10-11 17:00:00"), # 1626374091, # 1630360799, # 2021-08-30 23:59
-       text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts zwischen Smetanastr. und Indira-Gandhi-Str. gesperrt, vom 23. August 2021 bis 11. Oktober 2021',
+       until => $isodate2epoch->("2021-10-25 17:00:00"), # 1626374091, # 1630360799, # 2021-08-30 23:59
+       text  => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts zwischen Smetanastr. und Indira-Gandhi-Str. gesperrt, vom 23. August 2021 bis 25. Oktober 2021',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
        data  => <<EOF,
@@ -32920,13 +32923,13 @@ EOF
 EOF
      },
      { from  => 1623092008, # 2021-06-07 20:53
-       until => $isodate2epoch->("2021-10-31 18:00:00"), # 1630101600, # 2021-08-28 00:00
+       until => 1633706277, # (keine Beeinträchtigung für Radfahrer) --- $isodate2epoch->("2021-10-31 18:00:00"), # 1630101600, # 2021-08-28 00:00
        text  => 'Lynarstr.: Sperrung der Fahrbahn zwischen Sparrstr. und Müllerstr., evtl. sind auch Radfahrer betroffen, bis 31.10.2021',
        type  => 'handicap',
        data  => <<EOF,
 #: note: laut rbb
 #: also_indoor: traffic (H)
-	q4::inwork 7432,14969 7624,15083 7694,15125
+	q4::inwork 7409,14954 7461,14986 7624,15083 7694,15125
 # REMOVED (hier keine Baustelle) ---	q4::inwork 7694,15125 7745,15160
 EOF
      },
@@ -33311,13 +33314,13 @@ EOF
      },
      { from  => 1627164000, # 2021-07-25 00:00
        until => $isodate2epoch->("2021-10-31 18:00:00"), # undef, # XXX
-       text  => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, vom 26.07.2021 bis voraussichtlich 31.10.2021',
+       text  => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich 31.10.2021',
        type  => 'handicap',
        source_id => 'viz2021:13.444,52.53356,26.07.2021,08:18',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021)
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
-#: last_checked: 2021-09-01
+#: last_checked: 2021-10-08
 #: check_frequency: 30d
 #: next_check: 2021-10-31
 	q3::inwork 13057,14267 13158,14117
@@ -33690,6 +33693,41 @@ EOF
 #: also_indoor: traffic (G)
 #: last_checked: 2021-10-07 (eric)
 	q4::inwork; 10069,10151 10083,10192 10122,10294
+EOF
+     },
+     { from  => 1615158000, # 2021-03-08 00:00
+       until => 1641337200, # 2022-01-05 00:00
+       text  => 'Schönholzer Weg: Richtung Süden zwischen Angerweg und Edelweißstr. gesperrt, vom 09.03.2021 07:00 bis 04.01.2022 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.374359,52.586234,09.03.2021,07:00',
+       data  => <<EOF,
+#: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
+	q4::inwork; 8196,20096 8224,19977 8234,19936
+EOF
+     },
+     { from  => 1634130000, # 2021-10-13 15:00
+       until => 1634335199, # 2021-10-15 23:59
+       text  => 'Köpenicker Straße und Umgebung: Sperrungen wegen eines Polizeieinsatzes möglich, vom 14. Oktober 2021, 15:00 Uhr, bis zum 15. Oktober 2021, 23:59 Uhr',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_44_3933_4008_online.pdf',
+       data  => <<EOF,
+#: by: https://berliner-abendblatt.de/2021/10/08/113916/
+	2::temp 11726,11265 11808,11482 11947,11398 12010,11545 12031,11529 12050,11511 12092,11475
+	3 11917,11186 11726,11265 11542,11342
+	3 11542,11342 11726,11265 11917,11186
+	3 11917,11186 11726,11265 11656,11106
+	3 11656,11106 11726,11265 11917,11186
+	3 11542,11342 11726,11265 11656,11106
+	3 11656,11106 11726,11265 11542,11342
+EOF
+     },
+     { from  => 1633816800, # 2021-10-10 00:00
+       until => 1634335200, # 2021-10-16 00:00
+       text  => 'Grüntal - Gratze: Sperrung (Neubau Durchlassbauwerk),11.10.2021 bis 15.10.2021',
+       type  => 'gesperrt',
+       source_id => 'LS/721-E/21/116',
+       data  => <<EOF,
+	2::inwork 32854,37244 31663,37734
 EOF
      },
     );

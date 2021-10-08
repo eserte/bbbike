@@ -10,7 +10,7 @@ Oderstr.: Einbahnstraﬂenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 (Notweg Bahn¸bergang Bahnhofstr.): Fuﬂg‰nger, Fahrrad ggfs. schieben	q3 10231,-2159 10215,-2170 10181,-2174 10161,-2146 10096,-2137
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraﬂe, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
-Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
+Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 (Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10804,12291 10830,12279
 Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -224,7 +224,7 @@ s¸dlicher Uferweg am Schlachtensee: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q
 s¸dlicher Uferweg an der Krummen Lanke: Fuﬂg‰nger	q2 -1204,4328 -1196,4351 -1247,4408 -1239,4436 -1197,4454 -1163,4532 -1162,4656 -1147,4705 -1146,4741 -1048,4893 -1017,4966 -753,5074 -666,5152 -618,5235 -578,5245 -579,5320
 nˆrdlicher/westlicher Uferweg an der Krummen Lanke: Fuﬂg‰nger	q2 -579,5320 -603,5317 -676,5323 -731,5291 -795,5233 -888,5172 -1098,5062 -1180,5020 -1243,4939 -1298,4815 -1298,4584 -1287,4486 -1272,4450 -1239,4436
 Krumme Lanke - Parkplatz am Fischerh¸ttenweg: Fuﬂg‰nger	q2 -1287,4486 -1304,4450 -1297,4385
-Pankeweg, B¸rgerpark: Fuﬂg‰nger	q2 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9424,18276 9324,18137 9310,18108
+Pankeweg, B¸rgerpark: Fuﬂg‰nger	q2 9905,18329 9882,18318 9855,18322 9716,18290 9713,18322 9424,18276 9324,18137 9310,18108
 B¸rgerpark: Fuﬂg‰nger	q2 9460,18053 9462,18234 9701,18256 9716,18290
 B¸rgerpark: Fuﬂg‰nger	q1 9419,18330 9424,18276 9462,18234
 Breite Str.: Fuﬂg‰ngerzone	q1 -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340 -3227,14260
@@ -1915,7 +1915,8 @@ Alice-Salomon-Platz: Fuﬂg‰nger, Lieferverkehr	q1 23993,14797 24061,14801
 (KGA Erpetal - S-Bhf. Hirschgarten): Bordstein	q3 24329,6089 24297,6086
 (Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.): einige Fuﬂg‰nger	q2 3218,8233 3206,7988 3198,7787 3183,7563
 Kreuzgraben: Fuﬂg‰nger	q4 10264,20209 10260,20222 10251,20252
-(entlang des Kreuzgrabens): Fuﬂg‰nger, Spielplatz	q4 10379,20309 10314,20262 10260,20222 10169,20144
+(entlang des Kreuzgrabens): Fuﬂg‰nger, Spielplatz	q4 10379,20309 10314,20262 10260,20222 10172,20142
+(entlang des Kreuzgrabens): Fuﬂg‰nger, eng	q4 10172,20142 10157,20128 10098,20113
 Europaplatz: viele Fuﬂg‰nger	q3 7938,13302 8015,13303 8102,13304
 Klinikum Neukˆlln: Krankenhausgel‰nde, Fuﬂg‰nger	q1 14180,3334 14227,3438 14323,3648 14276,3662 14264,3633
 Rohrs‰ngersteig: Fuﬂg‰nger	q2 -6866,4765 -6879,4775 -7038,4885
@@ -2191,7 +2192,7 @@ Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2717,3600
 (Bucher Teiche - Schˆnerlinder Chaussee): einige Fuﬂg‰nger	q1 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
 (Schloﬂpark Charlottenburg, westlicher Weg): Fuﬂg‰nger	q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
 (Uferweg): teilweise relativ schmal, Fuﬂg‰nger	q1 5166,13087 5144,13075 5076,13116 4940,13168 4742,13157 4751,13245
-Sparrstr. - Triftstr.: Gehweg	q1 7303,15173 7241,15293
+Sparrstr. - Triftstr.: Gehweg	q1 7281,15175 7241,15293
 (Max-Lingner-Str. - Maximilianstr.): schmaler Fuﬂweg und Parkplatz	q2 11094,17339 10899,17331
 (Seecktstr. - Wilhelmstr.): breiter Gehweg	q0 -4017,13167 -3896,13124
 Gralsburgsteig: enge Straﬂe	q1 2164,25190 2206,25260 2038,25531 1950,25763 1921,26019
@@ -2234,7 +2235,7 @@ Wentowsteig: enge Straﬂe mit parkenden Autos	q0 6904,20692 6930,20808 6943,20862
 (Spreeuferweg): Fuﬂg‰nger	q1 4478,12537 4441,12559 4321,12566
 (Schˆnholzer Heide, parallel zur Friesenstr.): einige Fuﬂg‰nger, Kurven	q1 8834,19253 8830,19239
 (Schˆnholzer Heide, parallel zur Friesenstr.): einige Fuﬂg‰nger	q0 8830,19239 8933,19179
-(Schˆnholzer Heide, parallel zur Friesenstr.): einige Fuﬂg‰nger	q1 8933,19179 9022,19135 9216,18974 9446,18855 9465,18855
+(Schˆnholzer Heide, parallel zur Friesenstr.): einige Fuﬂg‰nger	q1 8933,19179 9022,19135 9159,19010 9446,18855 9458,18859
 (Weg am Nordgraben): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q1 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3233,20834 3144,20865 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
 (Weg am Waldfriedhof Dahlem): Kurven	q2 1022,5525 820,5455 541,5306
 (Waldweg parallel zur Flanaganstr. zwischen H¸ttenweg und Im Jagen): starke Steigungen und Gef‰lle	q2 1022,5525 1697,5938
@@ -3098,6 +3099,7 @@ Mauerstr..: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. 
 J‰gerstr.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 9195,11972 9108,11961
 Taubenstr.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 9207,11880 9138,11872
 Mauerstr.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 9138,11872 9171,11777
+Margarete-Steffin-Str.: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 8700,12810 8732,12804
 (Los-Angeles-Platz): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5822,10609
 Walter-Friedrich-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 16172,25217 16171,25254
 Neuenhagener Str. (Mahlsdorf): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 24362,11954 24317,11754

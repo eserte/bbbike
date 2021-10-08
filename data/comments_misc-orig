@@ -450,9 +450,9 @@ Bus 250	busroute_N 10904,17288 10758,17288 10502,17286 10298,17299 10252,17357 1
 Bus 250	busroute_N 10377,19565 10457,19670 10527,19867
 Bus 250	busroute_N 10742,19632 10624,19912 10599,19957
 Bus M27	busroute_N 10830,17985 10705,17931 10548,17817 10459,17754 10311,17764 10179,17772
-Bus M27, Bus 250	busroute_N 10179,17772 10053,17777 9835,17797 9727,17804
-Bus 250	busroute_N 9549,17625 9383,17757 9358,17798 9236,17907 9190,17932 9171,17937 9147,17941 8944,17971 8746,17827 8536,17786
-Bus 155	busroute_N 9501,18902 9868,19023
+Bus M27, Bus 250	busroute_N 10179,17772 10053,17777 9835,17797 9721,17806
+Bus 250	busroute_N 9544,17629 9383,17757 9358,17798 9236,17907 9190,17932 9171,17937 9147,17941 8944,17971 8746,17827 8536,17786
+Bus 155	busroute_N 9487,18887 9868,19023
 Bus 155	busroute_N 15278,17352 15267,17349 15217,17284
 Bus 250	busroute_N 11162,19844 11229,19706 11278,19607 11437,19664 11652,19743 11695,19760 11627,19907 11555,20051 11537,20087 11419,20327 11269,20667
 Bus 251	busroute_N 16390,26315 16043,25898
@@ -1380,6 +1380,7 @@ entlang des ehemaligen Spreeparks	CS 15981,8872 15973,8894 15879,8994 15845,9031
 #: XXX wann wird die Straße ausgeschildert?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_48_5583_5626_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_27_2281_2388_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_44_3933_4008_online.pdf (Grundstücksnummerierungen)
 #: last_checked: 2021-05-24
 #: check_frequency: 180d
 Metropolitan Park: nicht ausgeschildert	CS -8064,13534 -8088,13594 -7984,13649 -7926,13709 -7893,13781 -7894,13878 -7928,13967 -8019,14036 -8095,14056 -8183,14041
@@ -1580,6 +1581,15 @@ ausgeschildert als "Am Klein Köriser See"	CP2; 31385,-24079 31364,-24080
 Werderstr.: Straßenschild wegen Pflanzenbewuchs schwierig zu sehen	CP2; -267,2945 -309,3016
 # 
 Hochspannungsweg: nicht ausgeschildert, Feuerwehrzufahrt zum Britzer Garten	CP; 12694,2544 12694,2517 12593,2472
+# 
+beide Geh/Radwege hinter der Einmündung Neukirchstr. können Richtung Am Feuchten Winkel genommen werden	CP2; 12002,18768 12024,18913
+# 
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1128830.php (Benennung eines Platzes nach Hans Peters)
+#: XXX wann wird der Platz ausgeschildert?
+#: last_checked: 2021-10-08
+Hans-Peters-Platz: nicht ausgeschildert	CS 7732,14131 7679,14030
+# 
+ausgeschildert "Fußweg Grünverbindung Dietzgenstraße 60/Kreuzgraben"	CP2; 10098,20113 10157,20128
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)

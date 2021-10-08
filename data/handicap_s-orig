@@ -179,9 +179,9 @@ Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,H)
 #: valid: 20171026-
-#: last_checked: 2021-07-31
+#: last_checked: 2021-10-08
 #: check_frequency: 60d
-Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
+Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
 ### Mitte ###
 # 
@@ -213,7 +213,7 @@ Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2021-09-08 (daf) vvv
+#: last_checked: 2021-10-08 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -246,7 +246,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-09-24
+#: last_checked: 2021-10-08
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2021-08-24 (mapillary)
@@ -365,7 +365,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2021-09-24 vvv
+#: last_checked: 2021-10-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -837,7 +837,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 # REMOVED (fertig) --- #: last_checked: 2020-12-30 --- Charlottenburger Str.: Einbahnstraßenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
 # 
 #: add_fragezeichen: Bis wann dauern die Bauarbeiten an?
-#: last_checked: 2021-07-06
+#: last_checked: 2021-10-08
 #: check_frequency: 90d
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
 # 
@@ -930,7 +930,7 @@ Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
 # 
 #: next_check_id: NKZ-2020
 #: XXX zurzeit Bauarbeiten, nur der Gehweg ist offen (alten Eintrag danach wieder aktivieren); vor Corona-Zeiten gab's außerdem einen großzügigen Restaurantbereich
-#: last_checked: 2021-09-13 vvv
+#: last_checked: 2021-10-06 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-01-01 vvv
 (Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11291,10438 11317,10485
@@ -1103,7 +1103,7 @@ südlicher Uferweg am Schlachtensee: Radfahren erlaubt, Fußgänger haben Vorrang	q
 südlicher Uferweg an der Krummen Lanke: Fußgänger	q2 -1204,4328 -1196,4351 -1247,4408 -1239,4436 -1197,4454 -1163,4532 -1162,4656 -1147,4705 -1146,4741 -1048,4893 -1017,4966 -753,5074 -666,5152 -618,5235 -578,5245 -579,5320
 nördlicher/westlicher Uferweg an der Krummen Lanke: Fußgänger	q2 -579,5320 -603,5317 -676,5323 -731,5291 -795,5233 -888,5172 -1098,5062 -1180,5020 -1243,4939 -1298,4815 -1298,4584 -1287,4486 -1272,4450 -1239,4436
 Krumme Lanke - Parkplatz am Fischerhüttenweg: Fußgänger	q2 -1287,4486 -1304,4450 -1297,4385
-Pankeweg, Bürgerpark: Fußgänger	q2 9909,18333 9882,18318 9855,18322 9716,18290 9713,18322 9424,18276 9324,18137 9310,18108
+Pankeweg, Bürgerpark: Fußgänger	q2 9905,18329 9882,18318 9855,18322 9716,18290 9713,18322 9424,18276 9324,18137 9310,18108
 Bürgerpark: Fußgänger	q2 9460,18053 9462,18234 9701,18256 9716,18290
 Bürgerpark: Fußgänger	q1 9419,18330 9424,18276 9462,18234
 # 
@@ -3331,8 +3331,10 @@ Alice-Salomon-Platz: Fußgänger, Lieferverkehr	q1 23993,14797 24061,14801
 (Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.): einige Fußgänger	q2+ 3218,8233 3206,7988 3198,7787 3183,7563
 #: note: für Radfahrer verboten
 Kreuzgraben: Fußgänger	q4 10264,20209 10260,20222 10251,20252
-#: note: vermutlich für Radfahrer verboten
-(entlang des Kreuzgrabens): Fußgänger, Spielplatz	q4 10379,20309 10314,20262 10260,20222 10169,20144
+#: note: für Radfahrer verboten vvv
+(entlang des Kreuzgrabens): Fußgänger, Spielplatz	q4 10379,20309 10314,20262 10260,20222 10172,20142
+(entlang des Kreuzgrabens): Fußgänger, eng	q4 10172,20142 10157,20128 10098,20113
+#: note ^^^
 Europaplatz: viele Fußgänger	q3 7938,13302 8015,13303 8102,13304
 Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1 14180,3334 14227,3438 14323,3648 14276,3662 14264,3633
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
@@ -3614,6 +3616,7 @@ Breslauer Platz/Lauterstr.: Fußgängerzone, Radfahrer frei	q3; 5810,7337 5817,722
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/neue-fussgaengerzonen_a309780
 #: by: https://twitter.com/jens_blume/status/1392408971747762178
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10014
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1133947.php
 #: confirmed_by: srt
 # REMOVED (wurde gesplittet) --- #: osm_watch: way id="4616246" version="24" --- #: osm_watch: way id="950186030" version="1" --- #: XXX zurzeit stehen die Barrieren so, dass man auf den Gehweg ausweichen muss --- #: last_checked: 2021-05-28 --- #: check_frequency: 14d --- #: next_check: 2021-05-14
 #: note: Stadtmobiliar auf den Fahrbahn (Bänke, Fahrradständer)
@@ -3731,7 +3734,7 @@ Friedrichstr. (Lichterfelde): Fuß- und Radweg	q1 2890,3561 2717,3600
 # REMOVED (elsewhere more accurate) --- (Krankenhausgelände): eher schmaler Gehweg	q1 2688,12701 2663,12699 2663,12695 2561,12686
 (Schloßpark Charlottenburg, westlicher Weg): Fußgänger	q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
 (Uferweg): teilweise relativ schmal, Fußgänger	q1 5166,13087 5144,13075 5076,13116 4940,13168 4742,13157 4751,13245
-Sparrstr. - Triftstr.: Gehweg	q1 7303,15173 7241,15293
+Sparrstr. - Triftstr.: Gehweg	q1 7281,15175 7241,15293
 #: note: laut ADFC-Karte "mäßig"
 (Max-Lingner-Str. - Maximilianstr.): schmaler Fußweg und Parkplatz	q2 11094,17339 10899,17331
 (Seecktstr. - Wilhelmstr.): breiter Gehweg	q0 -4017,13167 -3896,13124
@@ -3843,7 +3846,7 @@ Wentowsteig: enge Straße mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 (Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger, Kurven	q1 8834,19253 8830,19239
 #: corrected_by: srt (neu gemacht, relativ breit)
 (Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger	q0- 8830,19239 8933,19179
-(Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger	q1 8933,19179 9022,19135 9216,18974 9446,18855 9465,18855
+(Schönholzer Heide, parallel zur Friesenstr.): einige Fußgänger	q1 8933,19179 9022,19135 9159,19010 9446,18855 9458,18859
 #: by ^^^
 # REMOVED (nicht mehr relevant, wird neu gebaut) --- #: by: Felix Beutler: --- Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7427,14648 7464,14636
 #: by: Jörn Busch:

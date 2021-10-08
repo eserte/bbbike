@@ -261,7 +261,7 @@ Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11
 Leipziger Platz	1 8740,11524 8736,11557 8698,11589 8623,11580 8592,11541 8596,11508
 Crusemarkstr.	1 10825,18634 10712,18975
 Kavalierstr.	1 10625,18831 10721,18575
-Kattegatstr.	1 9323,17667 9475,17557
+Kattegatstr.	1 9323,17667 9469,17560
 Waldhüterpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10958,18512
 Amalienpark	1 10934,18500 10860,18650
@@ -320,7 +320,7 @@ Karl-Egon-Str.	1 18375,8874 18406,9052 18430,9199 18459,9354
 (Landsberger Allee - Georg-Knorr-Str.)	1 19169,15015 19314,15059 19364,15045
 Marschnerstr.	1 4629,3916 4634,4053
 Wollankstr.	1 10027,18165 10054,18210
-Kreuzstr.	1 9832,17925 9902,18180 9909,18333
+Kreuzstr.	1 9818,17921 9893,18179 9895,18297 9905,18329
 Vorbergstr.	1 7012,9222 7124,9226 7308,9163
 Wederstr.	1 12981,6366 12813,6334 12597,6293
 DGZ-Ring	1 12989,16921 12911,17021 12877,17039 12850,17084 12795,17151 12707,17085 12789,16977 12783,16925 12813,16884 12837,16853 12858,16825
@@ -1509,7 +1509,7 @@ Bärensteinstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 21379,1542
 Bärensteinstr. -> Hinter der Mühle: Straßenbahntrasse	3::igndisp 21379,15427 21228,15449 21090,15525
 Allee der Kosmonauten -> Alt-Marzahn: Straßenbahntrasse	3::igndisp 21163,15289 21187,15350 21139,15376
 Alt-Marzahn -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 21139,15376 21187,15350 21228,15449
-Straßenbahn auf der Fahrbahn	3nocross::ignrte 10089,18180 10054,18210 9909,18333
+Straßenbahn auf der Fahrbahn	3nocross::ignrte 10089,18180 10054,18210 9905,18329
 Schönholzer Str. -> Wollankstr.: Straßenbahn auf der Fahrbahn	3::igndisp 10089,18180 10054,18210 10027,18165
 Straßenbahntrasse	3nocross::ignrte 22674,4309 22713,4286 22812,4227 22888,4184 22907,4169 22949,4136 22965,4124
 Müggelheimer Str. -> Pohlestr.: Straßenbahntrasse	3::igndisp 22888,4184 22812,4227 22831,4070
@@ -2710,7 +2710,6 @@ Drängelgitter	BNP:2:-76:trailer=6 7886,8335
 Drängelgitter	BNP:2:-75:trailer=6 7911,8329
 Schranke, kann auf Bürgersteig umfahren werden	BNP:3:-217:trailer=5 1778,20377
 Drängelgitter	BNP:5:-65:trailer=10 4626,20960
-Drängelgitter	BNP:5:32:trailer=10 7764,21271
 Schranke	BNP:3:-105:trailer=10 11392,10520
 Schranken (2x)	BNP:3:-151:trailer=10 11317,10485
 Drängelgitter (2x)	BNP:5:2:trailer=10 22187,13304
@@ -3207,8 +3206,8 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
-Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeiten gesperrt	2::inwork 7959,13982 7997,13892
-George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7687,14017
+Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeiten gesperrt	2::inwork 7959,13982 7997,13892 8025,13835
+George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3219,7987 3224,8106 3230,8230
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055
@@ -3258,6 +3257,7 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10063,12438
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
+Margarete-Steffin-Str.: Einbahnstraßenregelung	1s:inwork 8700,12810 8732,12804
 Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006

@@ -2398,11 +2398,14 @@ Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 724
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/einmuendung-komplett-gesperrt_a303306
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht\'s nur auf dem Gehweg weiter
 #: also_indoor: traffic (G)
-#: priority: #B
-#: last_checked: 2021-09-01
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2021-03-26
+#: priority: #B vvv
+#: last_checked: 2021-10-08 vvv
+#: check_frequency: 60d vvv
 	q3::inwork 13391,16436 13630,16629
+Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
 ',
          'from' => undef,
          'id' => 2980,
@@ -2651,7 +2654,7 @@ Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 724
 # REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12474,16443 12564,16399 12725,16321 12764,16302 12797,16285 12826,16271 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
-#: last_checked: 2021-09-17 (mapillary) vvv
+#: last_checked: 2021-10-08 vvv
 #: next_check: 2021-10-11 vvv
 #: note: hier nur an der Kreuzung Berliner Allee
 #: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 22.9.2021) (mittlerweile 25.10.2021)
@@ -3015,7 +3018,7 @@ Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 724
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX Stand 2021-07-31: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2021-09-01
+#: last_checked: 2021-10-08
 #: check_frequency: 30d
 	q3::inwork 14136,17170 13996,16959
 ',
@@ -3196,7 +3199,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-09-18 vvv
+#: last_checked: 2021-10-08 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -3536,9 +3539,9 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'from' => 1629644400,
          'id' => 3374,
          'source_id' => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
-         'text' => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts zwischen Smetanastr. und Indira-Gandhi-Str. gesperrt, vom 23. August 2021 bis 11. Oktober 2021',
+         'text' => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts zwischen Smetanastr. und Indira-Gandhi-Str. gesperrt, vom 23. August 2021 bis 25. Oktober 2021',
          'type' => 'handicap',
-         'until' => 1633964400
+         'until' => 1635174000
        },
        undef,
        undef,
@@ -3609,18 +3612,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'until' => 1638288000
        },
        undef,
-       {
-         'data' => '#: note: laut rbb
-#: also_indoor: traffic (H)
-	q4::inwork 7432,14969 7624,15083 7694,15125
-# REMOVED (hier keine Baustelle) ---	q4::inwork 7694,15125 7745,15160
-',
-         'from' => 1623092008,
-         'id' => 3389,
-         'text' => 'Lynarstr.: Sperrung der Fahrbahn zwischen Sparrstr. und Müllerstr., evtl. sind auch Radfahrer betroffen, bis 31.10.2021',
-         'type' => 'handicap',
-         'until' => 1635699600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3693,17 +3685,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.560042,52.405163,12.07.2021,07:00
-	q4::inwork 21115,271 21171,222 21225,172 21250,118 21322,-176
-',
-         'from' => 1628978400,
-         'id' => 3408,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1103089.php',
-         'text' => 'Paradiesstr.: Bauarbeiten, Fahrbahn zwischen Johannes-Tobei-Str. und B96a gesperrt, vom 16.8.2021 bis 08.10.2021',
-         'type' => 'handicap',
-         'until' => 1633705200
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic
 #: XXX gibt es nach den Bauarbeiten bereits den neuen Radweg?
@@ -3793,7 +3775,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021)
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
-#: last_checked: 2021-09-01
+#: last_checked: 2021-10-08
 #: check_frequency: 30d
 #: next_check: 2021-10-31
 	q3::inwork 13057,14267 13158,14117
@@ -3801,7 +3783,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'from' => 1627164000,
          'id' => 3424,
          'source_id' => 'viz2021:13.444,52.53356,26.07.2021,08:18',
-         'text' => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, vom 26.07.2021 bis voraussichtlich 31.10.2021',
+         'text' => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich 31.10.2021',
          'type' => 'handicap',
          'until' => 1635699600
        },
@@ -4080,6 +4062,44 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Brachvogelstr. und Gitschiner Str. gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
+	q4::inwork; 8196,20096 8224,19977 8234,19936
+',
+         'from' => 1615158000,
+         'id' => 3458,
+         'source_id' => 'viz2021:13.374359,52.586234,09.03.2021,07:00',
+         'text' => 'Schönholzer Weg: Richtung Süden zwischen Angerweg und Edelweißstr. gesperrt, vom 09.03.2021 07:00 bis 04.01.2022 17:00',
+         'type' => 'handicap',
+         'until' => 1641337200
+       },
+       {
+         'data' => '#: by: https://berliner-abendblatt.de/2021/10/08/113916/
+	2::temp 11726,11265 11808,11482 11947,11398 12010,11545 12031,11529 12050,11511 12092,11475
+	3 11917,11186 11726,11265 11542,11342
+	3 11542,11342 11726,11265 11917,11186
+	3 11917,11186 11726,11265 11656,11106
+	3 11656,11106 11726,11265 11917,11186
+	3 11542,11342 11726,11265 11656,11106
+	3 11656,11106 11726,11265 11542,11342
+',
+         'from' => 1634130000,
+         'id' => 3459,
+         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_44_3933_4008_online.pdf',
+         'text' => 'Köpenicker Straße und Umgebung: Sperrungen wegen eines Polizeieinsatzes möglich, vom 14. Oktober 2021, 15:00 Uhr, bis zum 15. Oktober 2021, 23:59 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1634335199
+       },
+       {
+         'data' => '	2::inwork 32854,37244 31663,37734
+',
+         'from' => 1633816800,
+         'id' => 3460,
+         'source_id' => 'LS/721-E/21/116',
+         'text' => 'Grüntal - Gratze: Sperrung (Neubau Durchlassbauwerk),11.10.2021 bis 15.10.2021',
+         'type' => 'gesperrt',
+         'until' => 1634335200
        }
      
 );

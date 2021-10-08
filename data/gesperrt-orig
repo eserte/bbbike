@@ -404,7 +404,7 @@ Leipziger Platz	1 8740,11524 8736,11557 8698,11589 8623,11580 8592,11541 8596,11
 Crusemarkstr.	1 10825,18634 10712,18975
 Kavalierstr.	1 10625,18831 10721,18575
 # REMOVED (nach temp-blockings verschoben) --- Luitpoldstr., Verlängerung über Schulhof, nicht immer geöffnet!	2 6611,9879 6670,9887
-Kattegatstr.	1 9323,17667 9475,17557
+Kattegatstr.	1 9323,17667 9469,17560
 Waldhüterpfad	1 510,4202 371,4453 301,4643
 Amalienpark	1 10905,18671 10958,18512
 Amalienpark	1 10934,18500 10860,18650
@@ -513,7 +513,7 @@ Marschnerstr.	1 4629,3916 4634,4053
 Wollankstr.	1 10027,18165 10054,18210
 #: by: andk
 #: confirmed_by: srt
-Kreuzstr.	1 9832,17925 9902,18180 9909,18333
+Kreuzstr.	1 9818,17921 9893,18179 9895,18297 9905,18329
 #: note: war mal "1s", aber ich wurde dafür zu oft getadelt...
 Vorbergstr.	1 7012,9222 7124,9226 7308,9163
 Wederstr.	1 12981,6366 12813,6334 12597,6293
@@ -1868,7 +1868,7 @@ Schloßstr.: Mittelstreifen	3nocross 4741,5309 4745,5344 4767,5389 4832,5522 4861
 Blumberger Damm: Mittelstreifen	3nocross 21378,14490 21408,14591 21537,14932
 Blumberger Damm: Mittelstreifen	3nocross 21709,15808 21682,15673 21675,15636 21647,15496
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 21242,15529 21228,15449 21187,15350 21163,15289
-Schönholzer Str.: Straßenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9909,18333
+Schönholzer Str.: Straßenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9905,18329
 #: by: stefan: (sw-...)
 Müggelheimer Str.: Straßenbahntrasse	3nocross 22674,4309 22713,4286 22812,4227 22888,4184 22907,4169 22949,4136 22965,4124
 Prenzlauer Promenade: Straßenbahntrasse	3nocross 12090,16199 12097,16263 12087,16322 12077,16380
@@ -2669,8 +2669,7 @@ Schranke, kann auf Bürgersteig umfahren werden	BNP:3::trailer=5 1778,20377
 # REMOVED --- #: next_check_id: DIESEL-2015 vvv --- #: note: mittlerweile gibt es hier auch zwei Baustellenampeln mit Anforderung, allerdings wird relativ schnell auf grün geschaltet --- jetzt (2017-12) nur noch eine vvv --- #: last_checked: 2017-12-27 vvv --- Drängelgitter	BNP:3::trailer=8 14366,8058 --- Drängelgitter	BNP:5::trailer=10 14425,8052 --- #: note ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 Drängelgitter	BNP:5::trailer=10 4626,20960
-#: note: Umfahrung auf Gehwegabschnitt
-Drängelgitter	BNP:5::trailer=10 7764,21271
+# REMOVED (existiert nicht mehr) --- #: note: Umfahrung auf Gehwegabschnitt --- Drängelgitter	BNP:5::trailer=10 7764,21271
 Schranke	BNP:3::trailer=10 11392,10520
 Schranken (2x)	BNP:3::trailer=10 11317,10485
 Drängelgitter (2x)	BNP:5::trailer=10 22187,13304
@@ -3477,7 +3476,7 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise
 #: osm_watch: note 2832326 1
-#: last_checked: 2021-09-02 (osm note)
+#: last_checked: 2021-10-08
 #: check_frequency: 120d
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
 # 
@@ -3496,7 +3495,7 @@ Wildrosenweg: Überqueren der Schulstr. nicht möglich	3 20715,12040 20708,11918 2
 #: osm_watch: way id="690322561" version="2"
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-09-05
+#: last_checked: 2021-10-08
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
@@ -3587,7 +3586,7 @@ Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 188
 #: XXX vermutlich dauerhaft, die Fahrbahn ist schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben
 #: osm_watch: way id="860287005" version="4"
 #: also_indoor: traffic (G)
-#: last_checked: 2021-07-31
+#: last_checked: 2021-10-08
 #: check_frequency: 120d
 #: next_check: 2022-07-01
 Cotheniusstr.: Fahrbahn durch Bauzäune abgesperrt	2::inwork 13430,13733 13519,13785
@@ -3650,13 +3649,13 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: XXX Gehweg der nördlichen Seite ist schon weitgehend offen, südliche Seite nur als Baustraße erkennbar
 #: XXX ggfs. auch andere Seite des Platzes einzeichnen, ggfs. auch einen plaetze-orig-Eintrag machen
 #: osm_watch: way id="642581102" version="3"
-#: last_checked: 2021-08-08 (daf)
+#: last_checked: 2021-10-08
 #: check_frequency: 60d
 Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 # 
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2021-08-08 (daf)
-Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeiten gesperrt	2::inwork 7959,13982 7997,13892
+#: last_checked: 2021-10-08
+Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeiten gesperrt	2::inwork 7959,13982 7997,13892 8025,13835
 #  
 # REMOVED (Schranke wird nicht genutzt?) --- #: next_check_id: EUROPACITY-2015 --- #: XXX laut osm mittlerweile offen --- #: last_checked: 2021-02-05 --- #: check_frequency: 60d --- #: next_check: 2021-02-14 --- Lisa-Fittko-Str.: wegen Hochbauarbeiten gesperrt	2::inwork 7734,13944 7820,13994
 # 
@@ -3667,12 +3666,12 @@ Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeite
 #: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php (Webcam)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Grundstücksnummerierungen)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
-#: last_checked: 2021-08-08 (daf)
+#: last_checked: 2021-10-08
 #: check_frequency: 60d
-George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7687,14017
+George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
 # 
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2021-08-08 (daf)
+#: last_checked: 2021-10-08
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # 
@@ -3733,7 +3732,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
 #: osm_watch: way id="882672445" version="1"
-#: last_checked: 2021-09-24
+#: last_checked: 2021-10-08
 #: check_frequency: 60d
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
 # 
@@ -3784,7 +3783,8 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.berliner-woche.de/mitte/c-bauen/senat-lobt-verfahren-aus_a311991
 #: by: https://www.berliner-woche.de/mitte/c-bauen/infoveranstaltung-zum-molkenmarkt_a319166
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2021-09-24
+#: last_checked: 2021-10-08
+#: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -3796,7 +3796,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00
 #: note: laut rbb nur bis 31.08.2022
 # REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
-#: last_checked: 2021-09-05 vvv
+#: last_checked: 2021-10-08 vvv
 #: next_check: 2024-06-01 vvv
 Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285 10675,12280
@@ -4178,7 +4178,7 @@ Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2021-07-10 vvv
+#: last_checked: 2021-10-08 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
@@ -4427,7 +4427,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Eröffnung wird verschoben)
 #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauzäune werden im Dezember 2020 teilweise abgebaut)
 #: XXX mittlerweile können Fußgänger direkter von UdL zum Schloss gelangen, aber noch immer viel Baustelle und recht eng; außerdem ist ein Überqueren des Schloßplatzes an dieser Stelle nicht möglich
-#: last_checked: 2021-09-16
+#: last_checked: 2021-10-08
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384
@@ -4440,10 +4440,12 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10063,12438
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="5"
-#: last_checked: 2021-09-24
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2021-10-01
+#: last_checked: 2021-10-08 vvv
+#: check_frequency: 60d vvv
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
+Margarete-Steffin-Str.: Einbahnstraßenregelung	1s:q4:inwork 8700,12810 8732,12804
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
 #: by: http://www.carsten-schatz.de/fileadmin/linksfraktion/ka/2015/S17-16825.pdf (kleine Anfrage)
