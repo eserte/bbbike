@@ -291,6 +291,7 @@ function doLeaflet() {
     }
 
     map.addControl(new L.control.zoom());
+    map.addControl(new L.control.scale());
 
     var overlayDefs = [
 	{label:M("Qualit\u00e4t"),   layer:bbbikeSmoothnessTileLayer, abbrev:'Q'},
