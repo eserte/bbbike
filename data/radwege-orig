@@ -137,7 +137,7 @@ neu asphaltiert, relativ breit	RW1; 8593,5491 8480,5350
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
 #: by: http://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ausbau wird 2021 abgeschlossen)
-#: last_checked: 2021-07-18 vvv
+#: last_checked: 2021-10-09 vvv
 #: check_frequency: 90d vvv
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8480,5350 8406,5258 8356,5195
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_21.01.2021_final.pdf (Gehwegparken wurde abgeordnet) (bestätigt)
@@ -6671,7 +6671,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2021-09-28
+#: last_checked: 2021-10-09
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6942,7 +6942,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: osm_watch: way id="4401920" version="52"
 #: XXX wird mittlerweile verstetigt
 #: confirmed_by: srt
-#: last_checked: 2021-10-03 (webcam)
+#: last_checked: 2021-10-09 (webcam)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-07-23
 provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
@@ -6997,7 +6997,7 @@ provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8953
 #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="21"
 #: osm_watch: way id="335487059" version="17"
-#: last_checked: 2021-09-28 vvv
+#: last_checked: 2021-10-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-07-30 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -7025,7 +7025,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
 #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
 #: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021)
-#: last_checked: 2021-10-06 (mapillary) vvv
+#: last_checked: 2021-10-09 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -7191,10 +7191,11 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-durchgehenden-und-geschuetzten-weg-an-der-b96_a318755
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021)
-#: last_checked: 2021-10-06 (mapillary) vvv
-#: check_frequency: 90d vvv
-#: next_check: 2021-10-08 vvv
-#: valid: -20211007 vvv
+#: priority: #A
+#: last_checked: 2021-10-09 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2021-10-08 vvv
+# REMOVED --- #: valid: -20211007 vvv
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9249,6642 9254,6542 9253,6484 9250,6414 9246,6364 9245,6352 9221,6179 9212,6096 9192,5921 9176,5803 9158,5673 9161,5535 9176,5413 9188,5333 9196,5272 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672
 wegen Hochbauarbeiten nur fängt die Radspur erst nach ca. 70m an	RW4; 9275,4672 9294,4536
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9294,4536 9310,4407 9333,4229 9346,4144 9375,4022 9426,3797
@@ -7202,9 +7203,9 @@ Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9426,3797 9375,4022 9346,4144 9333,4229 9310,4407 9294,4536 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
 provisorischer Radweg auf dem Bürgersteig	RW2; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9161,5535 9158,5673 9176,5803 9192,5921 9212,6096 9221,6179 9245,6352 9246,6364 9250,6414 9253,6484 9254,6542 9249,6642
-#: valid ^^^
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
-#: next_check ^^^
 #: last_checked ^^^
 # 
 	RW6;RW6 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657

@@ -555,7 +555,9 @@ Sandgrasweg	1 2840,21141 2866,21103
 #: confirmed_by ^^^
 #: confirmed_by: srt
 Max-Eyth-Str.	1 2513,6581 2544,6546 2611,6495
-(IKEA-Zufahrt)	1 8211,7034 8222,7053 8224,7148
+(IKEA/Bauhaus-Zufahrt)	1 8077,7040 8211,7034 8222,7053 8224,7148
+(IKEA/Bauhaus-Zufahrt)	1 8221,7018 8210,7024 8078,7029
+(IKEA/Bauhaus-Zufahrt)	1 8211,7034 8221,7018
 #: by: anonymous:
 Neumarkplan	1 12485,3933 12572,3764 12578,3728 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12485,3933
 #: confirmed_by: srt
@@ -1265,7 +1267,7 @@ Waldstr.	1 9961,19513 10002,19418
 # REMOVED --- #: next_check_id: UBAHN1-2020 --- #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510 --- #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021 --- 
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022)
-#: last_checked: 2021-09-28
+#: last_checked: 2021-10-09
 #: check_frequency: 90d
 #: next_check: 2022-01-12
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -2209,6 +2211,11 @@ abgeschlossenes Tor	3 * 10000,1131 *
 abgeschlossenes Tor	3 * 14688,8355 *
 möglicherweise abgeschlossenes Tor	3 * 11382,21083 *
 abgeschlossenes Tor	3 * 14701,0 *
+# 
+#: XXX Bleibt das so? Laut Anwohner könnte es in Zukunft wieder geöffnet sein.
+#: last_checked: 2021-10-09
+#: check_frequency: 90d
+abgeschlossenes Tor	3 * 8203,7909 *
 #
 ####################################################################
 #
@@ -3415,7 +3422,7 @@ Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, te
 Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 15320,12375 15408,12394
 # 
 #: next_check_id: NKZ-2020
-#: last_checked: 2021-09-13
+#: last_checked: 2021-10-09
 #: check_frequency: 60d
 (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
@@ -3529,8 +3536,9 @@ Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,481
 #: by: https://www.hcu-hamburg.de/fileadmin/documents/REAP/BGS/Baumrigolen-Workshop/20-10-01_RUD_BA3_LP2_Broschuere_Strassenraeume_BGS_klein_sko_geaendert.pdf (geplante Umgestaltung Danneckerstr./Rudolfstr.)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_26_2221_2280_online.pdf (Straßenlandeinziehung, dauerhaft)
 #: XXX Wird der Radverkehr hier zugelassen?
+#: note: mittlerweile existieren an beiden Enden permanente Pollerreihen
 #: also_indoor: traffic (G)
-#: last_checked: 2021-09-11
+#: last_checked: 2021-10-09
 # REMOVED (bleibt vermutlich länger?) --- #: next_check: 2020-12-31
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939 13856,10864
 # 
@@ -3782,6 +3790,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://abendblatt-berlin.de/2021/06/01/berlin-mitte-molkenmarkt-planung-geht-in-die-naechste-phase/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/senat-lobt-verfahren-aus_a311991
 #: by: https://www.berliner-woche.de/mitte/c-bauen/infoveranstaltung-zum-molkenmarkt_a319166
+#: by: https://www.berliner-woche.de/mitte/c-bauen/architekten-koennen-bis-november-ihre-entwuerfe-einreichen_a324605
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
 #: last_checked: 2021-10-08
 #: check_frequency: 90d

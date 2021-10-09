@@ -167,7 +167,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2+ 11552,10863 11328,10957
 Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2021-08-04
+#: last_checked: 2021-10-09
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -178,7 +178,7 @@ Legiendamm: asphaltiert	Q0 11189,10831 11159,10769
 Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2021-09-05 vvv
+#: last_checked: 2021-10-09 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -294,7 +294,7 @@ Suadicanistr.: Asphalt	Q0 7858,7462 7858,7506
 Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
 Lilienthalstr.: Kopfsteinpflaster	Q2 10675,8940 10661,8914
 Lilienthalstr.: Asphalt	Q0 10661,8914 10640,8832 10633,8705
-Lilienthalstr.: Asphalt, etwas rau	Q0- 10633,8705 10615,8558
+Lilienthalstr.: Asphalt, etwas rau	Q1+ 10633,8705 10615,8558
 Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12330,8636 12392,8724 12434,8776 12478,8829 12590,8977 12682,9089
 #: note: Parkstreifen gepflastert
 Weichselstr.: Asphalt	Q0 12682,9089 12755,9188
@@ -1159,7 +1159,6 @@ Clauertstr.: Kopfsteinpflaster	Q2 -1082,2140 -763,1976 -613,1949
 Hanstedter Weg: Asphalt	Q0 6747,5010 6783,5011
 Hanstedter Weg: Kopfsteinpflaster	Q2 6783,5011 6908,5053 6923,5057
 Alboinstr.: Kopfsteinpflaster (auf Fahrbahn)	Q2 8182,6064 8191,6339 8194,6384 8199,6583 8200,6668
-#: note: Luftbild
 Alboinstr.: Asphalt	Q0 8200,6668 8206,6774 8215,6938 8232,6972 8319,7084
 Sredzkistr.: Kopfsteinpflaster	Q2 11436,14741 11535,14688 11633,14631
 Hochspannungsweg: Betonpflaster	Q0- 12694,2517 12593,2472 12391,2382 12384,2379 12373,2375 12280,2330 11747,2091 11626,2037 11373,1925 11343,1937
@@ -9628,7 +9627,7 @@ an der S-Bahn: Beton	Q0 25053,12246 24993,12217 24933,12215 24851,12204 24711,12
 #: note: der westliche Abschnitt war noch nicht fertig gebaut (2012-09-16)
 Amelieweg: Verbundsteinpflaster	Q1+ 22861,12390 22805,12456 22759,12420 22814,12353
 Gülzower Str. [Nebenstraße]: Asphalt	Q0 22400,12171 22344,12130
-IKEA-Parkplatz: Verbundsteinpflaster	Q1+ 7991,6938 8071,7006 8077,7040
+IKEA-Parkplatz: Verbundsteinpflaster	Q1+ 7991,6938 8071,7006 8078,7029 8077,7040
 (zur Neuen Mälzerei): Asphalt	Q0 12520,12938 12590,13018
 (Weg im Blankensteinpark): Kopfsteinpflaster	Q2 14376,12849 14289,12876
 (Weg im Blankensteinpark): Asphalt	Q0 14289,12876 14146,12921 14130,12926
@@ -15128,7 +15127,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20131119.1100.391816.html (BA-Beschluss 277/2013)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
-#: osm_watch: way id="42689070" version="8"
+#: osm_watch: way id="42689070" version="9"
 #: last_checked: 2021-09-01
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
@@ -30255,4 +30254,6 @@ Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 10043,2351
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 8277,21257
 Kreuzungsbereich asphaltiert	Q0 7711,20463
 Kreuzungsbereich asphaltiert	Q0 7809,20420
+Einmündungsbereich mit Kleinsteinpflaster	Q2+ 8292,6331
+Einmündungsbereich mit Kleinsteinpflaster	Q1- 8290,6191
 #: ignore ^^^

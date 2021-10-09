@@ -3711,7 +3711,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
-#: osm_watch: way id="984964447" version="1"
+#: osm_watch: way id="984964447" version="2"
 	q3::inwork 15279,10862 15355,10875
 #: osm_watch: way id="984056169" version="2"
 	2::inwork 15272,10790 15388,10758
@@ -4016,8 +4016,8 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'until' => 1634335200
        },
        {
-         'data' => '#: osm_watch: way id="8069460" version="15"
-#: also_indoor: traffic (none)
+         'data' => '#: osm_watch: way id="8069460" version="16"
+#: also_indoor: traffic (G,H(ungenau))
 	2::inwork 2885,28906 3450,28728
 ',
          'from' => 1633212000,
@@ -4028,12 +4028,13 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'until' => 1648764000
        },
        {
-         'data' => '	q4::inwork; 8867,4506 8858,4579 8848,4683 8827,4874 8813,5004
+         'data' => '#: note: im nördlichen Bereich zwischen Kurfürstenstr. und Ullsteinstr. nur ein kurzer Abschnitt betroffen, trotzdem ist hier alles ausnahmslos Einbahnstraße
+	q4::inwork; 8867,4506 8858,4579 8848,4683 8827,4874 8813,5004
 ',
          'from' => 1633212000,
          'id' => 3455,
          'source_id' => 'viz2021:13.378629,52.451139,04.10.2021,08:00',
-         'text' => 'Rathausstr.: zwischen Königstr. und Ullsteinstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen, vom 04.10.2021 08:00 bis 22.12.2021 17:00 ',
+         'text' => 'Rathausstr.: zwischen Königstr. und Ullsteinstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.10.2021 08:00 bis 22.12.2021 17:00 ',
          'type' => 'handicap',
          'until' => 1640214000
        },
@@ -4047,7 +4048,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
 ',
          'from' => undef,
          'id' => 3456,
-         'text' => 'Stuttgarter Platz: Bauarbeiten, Fahrbahn gesperrt',
+         'text' => 'Stuttgarter Str.: Bauarbeiten, Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4100,6 +4101,21 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Grüntal - Gratze: Sperrung (Neubau Durchlassbauwerk),11.10.2021 bis 15.10.2021',
          'type' => 'gesperrt',
          'until' => 1634335200
+       },
+       {
+         'data' => '#: next_check_id: CORONA-2020
+#: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so?
+#: last_checked: 2021-10-09
+#: check_frequency: 90d
+#: tempex: sa T09-T15
+	2::temp 9546,9198 9617,9185 9596,9092
+',
+         'from' => undef,
+         'id' => 3461,
+         'source_id' => 'https://oekomarkt-chamissoplatz.de/',
+         'text' => 'Ökomarkt Chamissoplatz: zu Marktzeiten Sperrung der Arndtstr. und des östlichen Teil des Chamissoplatzes, samstags von 9 bis 15 Uhr',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

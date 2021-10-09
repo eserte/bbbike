@@ -11,8 +11,10 @@
 ### Friedrichshain ###
 # 
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-ostbahnhof (bis 2025?)
-#: XXX Genauer anschauen! Gibt es einen Termin für das Ende der Bauarbeiten am Ostbahnhof?
-#: last_checked: 2021-09-24
+#: XXX Wann sind die Bauarbeiten beendet?
+#: osm_watch: way id="272512103" version="9"
+#: osm_watch: way id="767674684" version="1"
+#: last_checked: 2021-10-09
 #: check_frequency: 120d
 #: next_check: 2025-01-01
 Erich-Steinfurth-Str.: Bauarbeiten, etwa 50m der Fahrbahn gesperrt	q3::inwork 12596,11696 12453,11790
@@ -471,7 +473,7 @@ Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 # 
 ### Kreuzberg ###
 # 
-#: last_checked: 2021-09-26
+#: last_checked: 2021-10-09
 #: check_frequency: 14d
 Böckhstr.: einige Meter der Fahrbahn gesperrt	q3::inwork 11411,9810 11197,9894
 # 
@@ -528,9 +530,9 @@ Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 
 #: by: https://www.bahninfo-forum.de/read.php?9,689330,689356#msg-689356 (2021)
 #: XXX vermutlich wegen des neuen Aufzugs am U-Bhf. Birkenstr.
 #: also_indoor: traffic (G)
-#: osm_watch: way id="746589388" version="16"
+#: osm_watch: way id="746589388" version="17"
 #: osm_watch: way id="746589386" version="1"
-#: last_checked: 2021-07-12 (osm)
+#: last_checked: 2021-10-08 (osm)
 #: check_frequency: 90d
 #: next_check: 2021-12-31
 Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
@@ -2268,7 +2270,9 @@ Märkischer Platz: Fußgänger	q2 11034,12038 11084,12070 11111,12027
 (Wriezener Park): Fußgänger	q2 13324,11529 13308,11515
 #: XXX_prog BS zur Helsingforser Str.
 Wriezener Park: Fußgänger, Bordstein	q3 13261,11572 13274,11585
-(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fußgänger	q1 12986,11699 13002,11705 13042,11749 13095,11703 13123,11675 13172,11651 13202,11666
+#: note: Absperrungen am Zugang zum Berghain, recht schmaler Weg ist übrig geblieben
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fußgänger, Engstelle	q3 12986,11699 13002,11705 13042,11749
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fußgänger	q1 13042,11749 13095,11703 13123,11675 13172,11651 13202,11666
 (Rüdersdorfer Str. - Am Wriezener Bahnhof): einige Fußgänger	q1 13161,11795 13120,11725 13095,11703
 (Rüdersdorfer Str. - Helsingforser Str./Wriezener Park): einige Fußgänger	q1 13120,11725 13123,11675
 Oranienplatz: einige Fußgänger	q1 11264,10804 11227,10821
@@ -3646,6 +3650,11 @@ Zum Orankestrand: schmal	q2 15435,16063 15479,16060
 Heidelberger Platz [Bürgersteig]: einige Fußgänger	q2 4173,7993 4121,8016
 #: note: Verbindung zwischen S-Bahnhof und Wohngebiet
 (Grünbergallee - Coloniaallee): einige Fußgänger	q1- 20048,-499 20050,-386 20051,-344
+(IKEA/Bauhaus-Zufahrt): via Gehweg	q2 8211,7034 8210,7024
+#: note: hier mögliche Stauung vor der Alboinstr.
+(IKEA/Bauhaus-Zufahrt): Parkplatzverkehr	q2 8210,7024 8221,7018 8218,6983 8232,6972
+(IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8221,7018 8211,7034 8077,7040 8053,7061 8057,7080 8078,7101 8057,7163 8020,7185 7924,7185 7834,7131 7823,7083 7816,6953 7845,6930 7968,6927 7991,6938 8071,7006 8078,7029 8077,7040
+(IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8078,7029 8210,7024
 # 
 ######################### User Contributions #################################
 # 
@@ -4791,8 +4800,8 @@ Franckepark: einige Fußgänger	q1 9381,6277 9426,6239 9463,6232 9683,6199
 #: corrected_by: srt/policy (q4 -> q2)
 Straße 78: enge Straße	q2 7715,19408 7797,19580
 #: by: Chris (razorbacky):
-#: corrected_by: srt/policy (q2 -> q1)
-Tankredstr.: enge Straße	q1 8264,5383 8328,5417 8365,5418 8394,5412 8480,5350
+#: corrected_by: srt/policy (q2 -> q1, added "Kurve")
+Tankredstr.: enge Straße, Kurve	q1 8264,5383 8328,5417 8365,5418 8394,5412 8480,5350
 #: by: Thomas Penski:
 Battenheimer Weg: enge Straße	q1 11762,1040 11681,1031 11393,1243
 #: by: MaPo: vvv

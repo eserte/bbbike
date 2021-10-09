@@ -1109,7 +1109,8 @@ M‰rkischer Platz: Fuﬂg‰nger	q2 11034,12038 11084,12070 11111,12027
 (Wriezener Park): Fuﬂg‰nger	q2 13513,11351 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
 (Wriezener Park): Fuﬂg‰nger	q2 13324,11529 13308,11515
 Wriezener Park: Fuﬂg‰nger, Bordstein	q3 13261,11572 13274,11585
-(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 12986,11699 13002,11705 13042,11749 13095,11703 13123,11675 13172,11651 13202,11666
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger, Engstelle	q3 12986,11699 13002,11705 13042,11749
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 13042,11749 13095,11703 13123,11675 13172,11651 13202,11666
 (R¸dersdorfer Str. - Am Wriezener Bahnhof): einige Fuﬂg‰nger	q1 13161,11795 13120,11725 13095,11703
 (R¸dersdorfer Str. - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 13120,11725 13123,11675
 Oranienplatz: einige Fuﬂg‰nger	q1 11264,10804 11227,10821
@@ -2157,6 +2158,10 @@ Zum Orankestrand: schmal	q2 15435,16063 15479,16060
 (Neustrelitzer Str., Gehweg): Gehweg	q3 16323,14672 16356,14725
 Heidelberger Platz [B¸rgersteig]: einige Fuﬂg‰nger	q2 4173,7993 4121,8016
 (Gr¸nbergallee - Coloniaallee): einige Fuﬂg‰nger	q1 20048,-499 20050,-386 20051,-344
+(IKEA/Bauhaus-Zufahrt): via Gehweg	q2 8211,7034 8210,7024
+(IKEA/Bauhaus-Zufahrt): Parkplatzverkehr	q2 8210,7024 8221,7018 8218,6983 8232,6972
+(IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8221,7018 8211,7034 8077,7040 8053,7061 8057,7080 8078,7101 8057,7163 8020,7185 7924,7185 7834,7131 7823,7083 7816,6953 7845,6930 7968,6927 7991,6938 8071,7006 8078,7029 8077,7040
+(IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8078,7029 8210,7024
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2701,7 +2706,7 @@ Immenweg: eng (einspurig)	q1 6744,4983 6419,5048 6385,4896
 Albtalweg: enge Straﬂe	q1 5368,22669 5338,22753 5297,22830 5243,22896
 Franckepark: einige Fuﬂg‰nger	q1 9381,6277 9426,6239 9463,6232 9683,6199
 Straﬂe 78: enge Straﬂe	q2 7715,19408 7797,19580
-Tankredstr.: enge Straﬂe	q1 8264,5383 8328,5417 8365,5418 8394,5412 8480,5350
+Tankredstr.: enge Straﬂe, Kurve	q1 8264,5383 8328,5417 8365,5418 8394,5412 8480,5350
 Battenheimer Weg: enge Straﬂe	q1 11762,1040 11681,1031 11393,1243
 Birnbaumring: enge Straﬂe	q0 8661,24952 8751,24988 8785,25014 8825,25052 8871,25109 8922,25212 8856,25267 8776,25332 8735,25366 8673,25418 8584,25371 8501,25358
 Stavenhagener Str.: enge Straﬂe	q1 13632,5126 13534,5111 13444,5097 13359,5086
