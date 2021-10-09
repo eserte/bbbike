@@ -106,7 +106,7 @@ sub make_net {
 	my $r = $s->next;
 	my @c = @{ $r->[Strassen::COORDS()] };
 	last if !@c;
-	if (@c < 3) {
+	if (@c < 2) {
 	    if (!$warned_too_few_coord++) {
 		warn "Invalid directedhandicap record: less than three coordinates. Entry is: @$r (warn only once)";
 	    }
