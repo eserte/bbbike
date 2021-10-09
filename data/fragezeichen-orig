@@ -2197,7 +2197,7 @@ Antwerpener Str.: Fahrradstraﬂe soll entstehen	?::projected 6555,15827 6690,1567
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.687822.php
 #: by: http://www.berliner-woche.de/heiligensee/verkehr/bauarbeiten-verzoegern-sich-d147051.html
 #: by: https://www.bvg.de/images/content/unternehmen/medien/navi/2018/BVG_NAVI_0518_Web_Doppelseiten.pdf (Umleitung ab 4. Juni 2018)
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50505
+# REMOVED (superseded by new source_id) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50505
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksamt/bauen-bildung-und-kultur/dokumente/uebersicht-der-radwege-in-reinickendorf.pdf (im Bau)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20200720 (Bauende voraussichtlich Ende 2021)
 #: by: http://www.infravelo.de/projekt/hennigsdorfer-strasse/ (bis 1. Quartal 2022)
@@ -2205,6 +2205,7 @@ Antwerpener Str.: Fahrradstraﬂe soll entstehen	?::projected 6555,15827 6690,1567
 #: XXX zurzeit nur Einsch‰nkungen an der Kreuzung Schulzendorfer/Heiligenseestr., wegen Existenz eines Radwegs vermutlich nur f¸r den Autoverkehr (hier bis voraussichtlich 30.04.2019)
 #: source_id: 2147343419 (Gesamtmaﬂnahme bis Ende 2021)
 #: source_id: LMS-BR_r_LMS-BR_151882_LMS-BR_72
+#: source_id: bvg2021:124#BVG216059_0
 #: osm_watch: way id="24720225" version="16"
 #: also_indoor: traffic (H)
 #: priority: #A
