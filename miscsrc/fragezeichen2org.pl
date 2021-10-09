@@ -354,10 +354,15 @@ for my $file (@files) {
 	     # Further URLs which work as good as also_indoor directives
 	     if ($dir->{by}) {
 		 for my $by (@{ $dir->{by} }) {
-		     if ($by =~ m{(https?://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/\S+)}) {
-			 push @extra_url_defs, ['BVG', $1];
-		     } elsif ($by =~ m{(https?://\S+).*\bWebcam\b}) {
+		     if ($by =~ m{(https?://\S+).*\bWebcam\b}) {
 			 push @extra_url_defs, ['Webcam', $1];
+		     }
+		 }
+	     }
+	     for ($dir->{source_id}) {
+		 for my $source_id (@{ $dir->{source_id} }) {
+		     if ($source_id =~ m{^bvg2021:(.*)}) {
+			 push @extra_url_defs, ['BVG', "https://www.bvg.de/de/verbindungen/stoerungsmeldungen/$1"];
 		     }
 		 }
 	     }

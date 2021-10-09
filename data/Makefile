@@ -27,7 +27,7 @@ PERL?=			perl
 # assume we have a modern perl (> 5.8.0, which has utf8 bugs) installed...
 PERL_UTF8?=		${PERL}
 PERL_NO_HASH_RND?=	env PERL_HASH_SEED=0 PERL_PERTURB_KEYS=NO ${PERL}
-PERL_MODERN!=           perl -I$(BBBIKEDIR) -MBBBikeBuildUtil=get_modern_perl -e 'print get_modern_perl(required_modules => { LWP => 0 })'
+PERL_MODERN!=           perl -I$(BBBIKEDIR) -MBBBikeBuildUtil=get_modern_perl -e 'print get_modern_perl(required_modules => { LWP => 0, "Firefox::Marionette" => 0 })'
 NO_LOCALE=		env LANG=C LC_ALL=C LC_CTYPE=C
 SED?=			${NO_LOCALE} sed
 CUT?=			${NO_LOCALE} cut
@@ -1918,7 +1918,7 @@ ${PERSISTENTTMPDIR}/url_checks.log:	.check_daily ${FILES_WITH_URLS}
 check-bvg: ${PERSISTENTTMPDIR}/bvg_checks.log
 
 ${PERSISTENTTMPDIR}/bvg_checks.log: .check_daily
-	${PERL} ${MISCSRCDIR}/bvg_checker.pl -log $@
+	${PERL_MODERN} ${MISCSRCDIR}/bvg_checker.pl -log $@
 
 ######################################################################
 # Checks for unhandled streets
