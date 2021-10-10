@@ -1173,6 +1173,7 @@ Sennockstr.	N 9048,6877 8975,6875 8945,6873
 Bosestr.	N 8191,6339 8292,6331 8388,6322 8546,6307
 Bosestr.	N 8546,6329 8680,6322 8846,6303 8930,6295 8944,6293
 Rothariweg	N 8292,6331 8290,6191 8291,6048
+Rothariweg [Stichstraße]	N 8290,6191 8228,6191
 Friedrich-Franz-Str.	N 8767,5571 8786,5720 8801,5844 8815,5974 8830,6145 8846,6303
 Podewilsstr.	N 8707,6537 8551,6552
 Gäßnerweg	N 8532,6015 8541,6191 8546,6307 8546,6329 8551,6552 8553,6665
@@ -5747,16 +5748,10 @@ Rixdorfer Str. (Niederschöneweide, Johannisthal, Baumschulenweg)	N 17160,6239 17
 Radenzer Str.	N 15996,6144 16012,6177 16068,6216 16105,6193 16220,6277 16304,6358 16304,6374
 Hallberger Zeile	N 15954,6297 16068,6216
 Südostallee	H 15768,6214 15871,6187 15996,6144 16049,6121 16122,6084 16169,6064 16510,5917 16868,5938 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
-Sterndamm	H 17886,5587 17736,5441 17648,5338 17601,5090 17542,4772 17516,4657 17471,4570 17428,4503 17387,4446 17290,4308 17261,4267 17244,4242 17110,4055 17053,3971 17219,3795 17364,3565
+Sterndamm	H 17886,5587 17736,5441 17695,5394 17648,5338 17601,5090 17542,4772 17516,4657 17471,4570 17428,4503 17387,4446 17290,4308 17261,4267 17244,4242 17110,4055 17053,3971 17219,3795 17364,3565
 Sterndamm	H 17648,5338 17705,5223
-#: next_check_id: STERNDAMM-2020
-#: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2
-#: confirmed_by: srt
-#: XXX provisorische Verbindung, asphaltiert
-#: last_checked: 2021-10-02
-#: check_frequency: 30d
-#: next_check: 2021-10-31
-Sterndamm [Nebenfahrbahn]	NN 17648,5338 17697,5347
+# REMOVED (nun als Gehweg dauerhaft markiert) --- #: next_check_id: STERNDAMM-2020 --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: XXX provisorische Verbindung, asphaltiert --- #: last_checked: 2021-10-02 --- #: check_frequency: 30d --- #: next_check: 2021-10-31
+Sterndamm [Gehweg zur Nebenfahrbahn]	NN 17648,5338 17697,5347
 Sterndamm [Nebenfahrbahn]	N 17697,5347 17762,5408
 (Bushaltestelle und Straßenbahnwendestelle Schöneweide)	NN 17736,5441 17675,5521 17588,5573 17578,5566
 Cajamarcaplatz	NN 17728,5756 17713,5728 17730,5698 17782,5698
@@ -5807,7 +5802,7 @@ Waldstr. (Johannisthal)	N 17542,4772 17580,4761 17865,4534
 #: note: Besonderheit: am Segelfliegerdamm zeigt das südliche Straßenschild "Waldstraße" und das nördliche "Engelhardstraße"
 Waldstr. (Johannisthal)	N 17865,4534 17877,4525
 #: note: einige Straßenschilder fälschlicherweise mit einem zusätzlichen Bindestrich: "Groß-Berliner-Damm"
-Groß-Berliner Damm	H 17705,5223 17726,5166 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667 18239,4453 18374,4307 18541,4125 18779,3866 18826,3816 18856,3783 18884,3752 18930,3703 19029,3595 19125,3491 19242,3366 19348,3253 19417,3184 19501,3101
+Groß-Berliner Damm	H 17705,5223 17726,5166 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667 18239,4453 18374,4307 18541,4125 18739,3909 18779,3866 18826,3816 18856,3783 18884,3752 18930,3703 19029,3595 19125,3491 19242,3366 19348,3253 19417,3184 19501,3101
 # REMOVED (bei osm wieder entfernt worden) --- #: XXX evtl. wird hier verlängert werden, bei osm als "Charles-Boutard-Straße" (proposed) eingetragen --- #: osm_watch: way id="224721522" version="2" --- #: last_checked: 2014-05-17 --- #: next_check: 2014-12-01
 (Zufahrt Sersa)	N 18541,4125 18445,4035
 Abram-Joffe-Str.	N 18946,3077 19015,3129 19076,3193 19167,3287 19242,3366
@@ -6662,7 +6657,7 @@ Wasserstr. (Oberschöneweide)	N 19697,5835 19681,5924
 Am Rheinischen Viertel	N 19272,8606 19416,8668
 # REMOVED (Bauarbeiten sind weitgehend fertig, kein Rückbau) --- #: XXX wird dieser Abschnitt zurückgebaut? --- #: osm_watch: way id="26175292" version="6" --- #: last_checked: 2013-07-17 --- #: next_check: 2013-08-17
 Waldowallee	N 18867,9464 18916,9468
-Waldowallee	H 18878,9517 18901,9499 18916,9468 18939,9417 18977,9322 19048,9146 19083,9062 19164,8863 19245,8669 19272,8606 19321,8486 19425,8231 19468,8168
+Waldowallee	H 18878,9517 18901,9499 18916,9468 18939,9417 18977,9322 19048,9146 19083,9062 19164,8863 19248,8663 19272,8606 19321,8486 19425,8231 19468,8168
 Verlängerte Waldowallee	H 19468,8168 19558,8064 19666,7988 19843,7866 19927,7813 20031,7794 20077,7786 20139,7775 20280,7749
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/08re.pdf/file
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110323.1140.336899.html
@@ -11866,9 +11861,9 @@ Sinziger Str.	N 18886,9031 18978,9014
 Lahnsteiner Str.	N 18877,8973 18968,8959
 Rheingoldstr.	N 18903,9244 18961,9109 18983,9044 19007,8986 19059,8863 19073,8828
 Rheingoldstr.	NN 19073,8828 19145,8659
-Rheingoldstr.	N 19145,8659 19155,8631 19206,8514 19275,8419
+Rheingoldstr.	N 19145,8659 19157,8627 19206,8514 19275,8419
 Rolandseck	N 18834,9256 18903,9244 18977,9322 19020,9364
-Andernacher Str.	N 19245,8669 19155,8631 19075,8590 19054,8571 19000,8509 18949,8437
+Andernacher Str.	N 19248,8663 19157,8627 19075,8590 19054,8571 19000,8509 18949,8437
 (Unterführung Bhf. Karlshorst)	NN 18875,8365 18906,8394 18949,8437
 Ingelheimer Str.	N 19075,8590 19022,8571 18951,8574 18891,8586
 Zwieseler Str.	N 19621,9097 19626,9171 19628,9194 19634,9292 19641,9411 19646,9490 19657,9666 19663,9757 19669,9876 19683,10031 19688,10094 19697,10210 19711,10426
@@ -14816,7 +14811,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="15"
-#: last_checked: 2021-10-02
+#: last_checked: 2021-10-10
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15193,7 +15188,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2021-10-02
+#: last_checked: 2021-10-10
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)

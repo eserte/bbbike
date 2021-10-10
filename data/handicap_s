@@ -28,7 +28,8 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit für Radfahrer verboten	q4::inwork 8737,12098 8783,11959
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
-Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
+Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18557,8525 18627,8475 18704,8427
+Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18627,8475 18528,8331
 Böckhstr.: einige Meter der Fahrbahn gesperrt	q3::inwork 11411,9810 11197,9894
 Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3::inwork 20640,7122 20654,7136 20629,7189 20575,7226
 Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
@@ -598,7 +599,6 @@ Grazer Platz: Fußgänger, Bordsteine	q2 6546,6724 6530,6786 6529,6798
 (Nordmannzeile - Kleingartenkolonie): Fußgänger	q1 6807,7262 6809,7272 6841,7283
 (Nordmannzeile - Vorarlberger Damm): Fußgänger	q1 7220,7442 7307,7457
 Achenbachpromenade: Fußgänger, Radfahren erlaubt	q1 8763,8780 8748,8587 8722,8527 8715,8459
-Wildensteiner Str.: enge Straße	q0 18627,8475 18528,8331
 Wildensteiner Str.: enge Straße	q1 18528,8331 18416,8163 18365,8094 18333,8059
 Linienstr./Oranienburger Str.: Fußgänger	q2 9225,13389 9312,13388
 Fontanestr.: zwei Schwellen, können evtl. umfahren werden	q1 18240,6845 18254,6679
@@ -2162,6 +2162,7 @@ Heidelberger Platz [Bürgersteig]: einige Fußgänger	q2 4173,7993 4121,8016
 (IKEA/Bauhaus-Zufahrt): Parkplatzverkehr	q2 8210,7024 8221,7018 8218,6983 8232,6972
 (IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8221,7018 8211,7034 8077,7040 8053,7061 8057,7080 8078,7101 8057,7163 8020,7185 7924,7185 7834,7131 7823,7083 7816,6953 7845,6930 7968,6927 7991,6938 8071,7006 8078,7029 8077,7040
 (IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8078,7029 8210,7024
+Sterndamm, zur Nebenfahrbahn: Gehweg	q4 17648,5338 17697,5347
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3065,6 +3066,7 @@ Enckestr. - Friedrichstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::
 (Straße vor dem Berliner Ensemble): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9160,12932 9212,12969
 Grüne Aue: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 Am Heidehof: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -1410,2726 -1571,2669 -1612,2785
+Ehrenfelsstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 18737,8686 18778,8663
 Am Krusenick: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829
@@ -3095,6 +3097,7 @@ Ludolfinger Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp;
 Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17729,10331 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
+Wandlitzstr.: in Höhe Lehndorffstr. ist die Fahrbahn gesperrt: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 18401,8636 18448,8602
 Weserstr.: Einbahnstraßenregelung, für Radfahrer nicht mehr offen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 Hönower Str.: temporäre Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 18735,9421 18765,9426 18846,9532
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10472,14632 10320,14608

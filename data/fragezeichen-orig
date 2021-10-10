@@ -62,7 +62,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausführungsplanung)
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021)
-#: last_checked: 2021-10-09
+#: last_checked: 2021-10-10
 #: check_frequency: 90d
 #: next_check: 2022-03-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -400,7 +400,7 @@ Kladower Damm: Radpuren geplant	?::projected; -5097,7361 -5046,7442 -4967,7567
 #: osm_watch: way id="28961260" version="19"
 #: source_id: 2147339938
 #: source_id: LMS-BR_r_LMS-BR_91391
-#: last_checked: 2021-08-29
+#: last_checked: 2021-10-10
 #: check_frequency: 90d
 #: next_check: 2021-12-31
 Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
@@ -673,7 +673,7 @@ Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 #: osm_watch: way id="31091960" version="18" vvv
 #: osm_watch: way id="31091970" version="18" vvv
 #: osm_watch: way id="330922955" version="6" vvv
-#: last_checked: 2021-07-30 vvv
+#: last_checked: 2021-10-10 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2022-12-31 vvv
 Oberspreestr.: Lückenschluss geplant (Radweg?)	?::projected; 20949,4775 20765,4839 20689,4862
@@ -707,7 +707,7 @@ Siemensstr.: Radfahr- oder Schutzstreifen geplant	?::projected 17614,6571 17766,
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3771
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6088
 #: XXX Maßnahme Osw.1 + Osw.12
-#: last_checked: 2021-09-17
+#: last_checked: 2021-10-10
 #: check_frequency: 90d
 Wilhelminenhofstr.: Radfahrstreifen auf nördlicher Seite geplant	?::projected; 19024,5830 18932,5926 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18464,6269 18423,6285 18341,6313 18191,6363 17991,6431
 #: osm_watch: way id="199768813" version="10"
@@ -722,7 +722,7 @@ Wilhelminenhofstr.: Radfahrstreifen auf nördlicher Seite geplant	?::projected; 1
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf vvv
 # 
 #: XXX Ah.4
-#: last_checked: 2020-11-21 vvv
+#: last_checked: 2021-10-10 vvv
 #: check_frequency: 360d vvv
 Köllnische Heide: Verbesserung der Befahrbarkeit geplant	?::projected 19924,4252 19876,4304 19901,4334
 Köllnische Heide: Verbesserung der Befahrbarkeit geplant	?::projected 19924,4252 19901,4334 19894,4395 19864,4607
@@ -900,10 +900,11 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant (8
 # REMOVED (404) --- #: by: http://www.johthal.de/instar-video.html (Webcam)
 #: source_id: 2147345841 (bis 30.9.2021)
 #: source_id: LMS-BR_r_LMS-BR_204650_LMS-BR_72 (bis 30.9.2021) (inaktiv)
-#: last_checked: 2021-10-02
+#: last_checked: 2021-10-10
 #: check_frequency: 45d
 #: next_check: 2021-10-31
-Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17736,5441 17886,5587
+# REMOVED (hier realisiert) --- Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17695,5394 17736,5441
+Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17736,5441 17886,5587
 # 
 #: XXX Jt.2
 #: XXX evtl. nur Richtung Süden, Richtung Norden gibt es bereits eine Busspur
@@ -1382,7 +1383,7 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22312
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8903 (Antrag generell zur Fahrradinfrastruktur in Karlshorst-West)
 #: osm_watch: way id="51872061" version="36"
 #: osm_watch: way id="31525575" version="23"
-#: last_checked: 2021-10-02
+#: last_checked: 2021-10-10
 #: check_frequency: 120d
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
 # REMOVED (zusammengelegt) --- #: next_check_id: WALLENSTEIN-2020 --- #: osm_watch: way id="31525575" version="20" --- #: XXX zurzeit laufen Bauarbeiten; Parkverbot bis 31.10.2020 --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/unterfuehrung-voll-gesperrt_a285283 (bis 16.11.2020; nur Arbeiten an der Gasleitung?) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8603 (Frage) --- #: last_checked: 2020-11-28 --- #: check_frequency: 120d --- #: next_check: 2020-11-16 --- Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
@@ -2437,7 +2438,7 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9087,437
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5308 (Namensvorschlag: Jan Czochralski) (wurde vom BA abgelehnt)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6178
 #: osm_watch: way id="199532117" version="1"
-#: last_checked: 2021-09-17
+#: last_checked: 2021-10-10
 #: check_frequency: 120d
 Uferweg: wird verlängert	?::projected 18650,5707 18604,5898 18422,6013
 # 
@@ -2599,7 +2600,7 @@ Kanalstr.: Bau eines Geh- und Radwegs	?::projected 18111,2135 18101,2164 17928,2
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
 #: osm_watch: way id="640313616" version="2"
-#: last_checked: 2021-04-15
+#: last_checked: 2021-10-10
 #: check_frequency: 180d
 Planstraße 9: evtl. Fortsetzung der Regener Str.? Qualität etc?	?::projected 19705,9039 19806,9040 19863,9073 19870,9079 19874,9151
 # 
@@ -3450,13 +3451,19 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege geben?	?::projected
 #: by: https://twitter.com/Yantschi/status/1433748714145861635
 #: source_id: viz2021:13.359249,52.498514,30.08.2021,08:00 (bis 26.9.2021, weitere Arbeiten folgen) (mittlerweile inaktiv)
 #: source_id: viz2021:13.359249,52.498514,27.09.2021,10:00 (bis 25.10.2021)
+#: osm_watch: way id="4618713" version="33"
 #: XXX nur Richtung Westen oder in beiden Richtungen?
 #: XXX außerdem: Zweiwege-Popup-Radweg zwischen Steinmetzstr. und östlichem Ende der Bülowstr.
-#: last_checked: 2021-09-24
-#: check_frequency: 30d
-#: next_check: 2021-10-25
+#: last_checked: 2021-10-08 (Richtung Westen weitgehend fertig, außer Stück zwischen Steinmetzstr. und Potsdamer Str.) (mapillary) vvv
+#: check_frequency: 30d vvv
+#: next_check: 2021-10-25 vvv
+Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork; 6532,10529 6636,10492 6753,10446 6851,10416 6937,10363 6971,10346 7033,10328 7131,10331 7238,10299 7413,10244 7579,10183 7698,10147 7702,10146
 # REMOVED (hier schon fertig) --- Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork 7906,10098 7814,10117 7702,10146
-Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork 7702,10146 7698,10147 7579,10183 7413,10244 7238,10299 7131,10331 7033,10396 6851,10416 6753,10446 6636,10492 6532,10529
+Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork 7702,10146 7698,10147 7579,10183
+# REMOVED (realisiert) --- Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork 7579,10183 7413,10244 7238,10299 7131,10331 7033,10396 6851,10416 6753,10446 6636,10492 6532,10529
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: XXX laut Aushang Bauarbeiten in der zweiten Jahreshälfte 2021
 #: last_checked: 2021-10-09
@@ -3636,7 +3643,7 @@ Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,
 # REMOVED (nein, nur auf den paar Metern vor der Urbanstr.) --- Fichtestr.: ist hier auch eine Fahrradstraße?	? 11055,9539 11108,9187
 # 
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/ampel-als-ersatz-fuer-zebrastreifen_a278689
-#: last_checked: 2021-07-30
+#: last_checked: 2021-10-10
 #: check_frequency: 60d
 Oberspreestr./Bärenlauchstr.: Zebrastreifen soll durch eine Bedarfsampel ersetzt werden	?::projected 19761,5153 19733,5177 19767,5179
 # 
@@ -3685,7 +3692,7 @@ Fraenkelufer: Fahrradstraße entsteht	? 11177,9935 11199,9993 11310,10021 11464,1
 # 
 # REMOVED --- #: XXX Kynaststraße (Friedrichshain) Richtung Marktstraße zwischen Alt-Stralau und Untere Kynaststraße: Leitungsbau, Fahrtrichtung gesperrt, vom 12.07.2020 07:00 Uhr bis 04.12.2020 17:00 Uhr --- #: XXX ggfs. vorsichtshalber zunächst in temp_blockings eintragen --- #: by: https://viz.berlin.de/2020/07/schau-11_12-07_2020/ ("für den Kraftfahrzeugverkehr gesperrt") --- #: source_id: 2147346071 --- #: priority: #A --- #: last_checked: 2020-07-11 --- #: next_check: 2020-07-12 --- Kynaststr.: Leitungsbau, gesperrt, sind auch Radfahrer betroffen?	?::inwork; 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518
 # REMOVED (wurde endgültig entfernt) --- #: XXX laut rbbtext bis 31.08.2020; am 18. Juli 2020 aber noch offen --- #: priority: #C --- #: last_checked: 2020-08-23 --- #: check_frequency: 7d --- #: next_check: 2020-08-31 --- Lenbachstr.: Baustelle, Vollsperrung: sind auch Radfahrer betroffen?	?::inwork 14799,11330 14669,11152
-# REMOVED (-> radwege...) --- #: next_check_id: STERNDAMM-2020 --- #: XXX Sterndamm (Niederschöneweide) Richtung Stubenrauchstraße (A113) zwischen Michael-Brückner-Straße und Südostallee: Fahrtrichtung gesperrt, Gleisbauarbeiten (Straßenbahnneubau), Fuß- und Radverkehr nicht betroffen, vom 09.07.2020 07:00 Uhr bis 01.10.2021 17:00 Uhr --- #: XXX wie es scheint, werden Radfahrer Richtung Michael-Brückner-Straße erstmal über die Nebenfahrbahn geleitet --- #: by: https://viz.berlin.de/2020/07/strassenbahnneubaustelle-adlershof-schoeneweide/ --- #: by: https://viz.berlin.de/wp-content/uploads/2020_07_07_11_53_33_VZP_Gro%C3%9F_Berliner_Damm_Sterndamm_A1_neu_2.pdf_Adobe_Acrobat_Reader_DC.jpg --- #: by: https://www.bahninfo-forum.de/read.php?9,665091,672788#msg-672788 (Radspur ab Ecksteinweg in Richtung Osten; davor dürfen Radfahrer über die Nebenfahrbahn fahren (KS?)) --- #: also_indoor: traffic (G) --- #: source_id: 2147346053 --- #: last_checked: 2020-07-08 --- #: next_check: 2020-07-09 --- Sterndamm: wie wird die Regelung für Radfahrer während der Sperrung aussehen?	?; 17886,5587 17736,5441 17648,5338
+# REMOVED (-> radwege...) --- #: next_check_id: STERNDAMM-2020 --- #: XXX Sterndamm (Niederschöneweide) Richtung Stubenrauchstraße (A113) zwischen Michael-Brückner-Straße und Südostallee: Fahrtrichtung gesperrt, Gleisbauarbeiten (Straßenbahnneubau), Fuß- und Radverkehr nicht betroffen, vom 09.07.2020 07:00 Uhr bis 01.10.2021 17:00 Uhr --- #: XXX wie es scheint, werden Radfahrer Richtung Michael-Brückner-Straße erstmal über die Nebenfahrbahn geleitet --- #: by: https://viz.berlin.de/2020/07/strassenbahnneubaustelle-adlershof-schoeneweide/ --- #: by: https://viz.berlin.de/wp-content/uploads/2020_07_07_11_53_33_VZP_Gro%C3%9F_Berliner_Damm_Sterndamm_A1_neu_2.pdf_Adobe_Acrobat_Reader_DC.jpg --- #: by: https://www.bahninfo-forum.de/read.php?9,665091,672788#msg-672788 (Radspur ab Ecksteinweg in Richtung Osten; davor dürfen Radfahrer über die Nebenfahrbahn fahren (KS?)) --- #: also_indoor: traffic (G) --- #: source_id: 2147346053 --- #: last_checked: 2020-07-08 --- #: next_check: 2020-07-09 --- Sterndamm: wie wird die Regelung für Radfahrer während der Sperrung aussehen?	?; 17886,5587 17736,5441 17695,5394 17648,5338
 # REMOVED (eingetragen) --- #: next_check_id: FRIEDRICH-2020 --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.955281.php --- #: by: https://abendblatt-berlin.de/2020/07/07/friedrichstrasse-wird-ab-august-autofrei/ --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/bezirksamt-startet-verkehrsversuch-im-august_a280267 --- #: by: https://www.morgenpost.de/bezirke/mitte/article230139760/Autofreie-Friedrichstrasse-verzoegert-sich.html --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.975287.php (Ende August 2020; max. 20km/h für Radfahrer -> handicap_s?) --- #: by: https://abendblatt-berlin.de/2020/08/13/berlin-mitte-friedrichstrasse-wird-ab-29-august-autofrei/ --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.976612.php --- #: by: https://www.berlin.de/friedrichstrasse/_assets/karte/ueberblicksplan_friedrichstrasse.pdf --- #: by: https://abendblatt-berlin.de/2020/08/14/berlin-mitte-kritik-am-geplanten-radweg-auf-der-friedrichstrasse/ --- #: XXX für Radfahrer eine vier Meter breite Durchfahrt auf der Fahrbahn --- #: XXX was passiert mit der Ampel Mohrenstr.? --- #: source_id: 2147346249 --- #: priority: #A --- #: next_check: 2020-08-21 --- Friedrichstr.: zwischen Leipziger Str. und Französische Str. von Ende August 2020 bis Ende Januar 2021 für den Kfz-Verkehr gesperrt	? 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # REMOVED (-> temp blockings) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php --- #: by: https://www.kms-sonne.de/projekte/blueberry-inn/ --- #: XXX voraussichtlich ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen --- #: next_check: 2020-07-06 --- Durchgangsweg am Blueberry Inn: Sperrung geplant	? 12170,8548 12287,8602
 # REMOVED --- #: XXX vermutlich Parkweg & unbeleuchtet, aber genauer anschauen; welchen "Namen" soll ich hier am besten wählen? Gibt es vielleicht Schilder oder "Landmarken"? --- Weg im Tiergarten: Qualität, Beleuchtung?	? 7765,11737 7733,11713 7682,11703 7648,11708 7575,11748 7522,11799 7423,11812 7230,11845 7200,11881
@@ -3698,7 +3705,9 @@ Fraenkelufer: Fahrradstraße entsteht	? 11177,9935 11199,9993 11310,10021 11464,1
 #: osm_watch: way id="67556839" version="26"
 #: last_checked: 2021-09-28
 #: check_frequency: 21d
-Hauptstr., Rheinstr.: Busspur in Mittellage (für Radfahrer frei) in Vorbereitung	?; 6307,7893 6273,7849 6209,7765 6144,7677 6082,7594 5955,7420 5923,7374 5897,7337 5853,7274 5817,7223
+#: next_check: 2021-10-10
+# REMOVED (hier laut osm realisiert) --- Hauptstr., Rheinstr.: Busspur in Mittellage (für Radfahrer frei) in Vorbereitung	?; 6307,7893 6273,7849 6209,7765 6144,7677 6082,7594 5955,7420 5923,7374 5897,7337 5853,7274 5817,7223
+Hauptstr., Rheinstr.: gibt es hier auch eine Busspur?	?; 5817,7223 5806,7205
 # 
 #: XXX Markierung ist bereits fertig, aber Schilder fehlen noch
 #: last_checked: 2021-09-24
@@ -4945,7 +4954,7 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erwähnung, bis 3. Quartal 2021)
 #: XXX während der Bauarbeiten Einbahnstraßenregelung --- was wird das für den Radverkehr bedeuten? -> siehe temp blockings
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2021-10-02
+#: last_checked: 2021-10-10
 #: check_frequency: 90d
 #: next_check: 2021-12-16
 Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,10738
@@ -4956,7 +4965,7 @@ Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,1073
 #: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (nicht mehr aktiv)
 #: source_id: 2147345383 (bis 06.03.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun? -> nein, das ist an der Saganer Str.) (nicht mehr aktiv)
 #: source_id: 2147345563 (bis 24.04.2020, aber keine Anzeichen für Bauarbeiten) (nicht mehr aktiv)
-#: last_checked: 2021-09-17
+#: last_checked: 2021-10-10
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
 #: last_checked: 2021-10-02
@@ -5878,7 +5887,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Baubeginn Mitte 2021)
 #: XXX beide Fahrtrichtungen?
-#: last_checked: 2021-10-03
+#: last_checked: 2021-10-10
 #: check_frequency: 90d
 Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 # 
@@ -5989,7 +5998,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (kein Datum)
 #: by: https://api.fixmyberlin.de/api/projects/441
-#: last_checked: 2021-10-02
+#: last_checked: 2021-10-10
 #: check_frequency: 360d
 Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 18301,9946 18266,9853 18066,9770 17849,9679 17668,9632 17471,9688 17383,9719
 # 
@@ -6433,14 +6442,14 @@ Hüfnerweg (Groß Glienicke): genaue Lage, Qualität?	? -9801,6988 -9795,7066
 #: XXX nach früheren Plänen sollten hier Abramowitschallee und Gorissenstr. entstehen
 # REMOVED --- #: last_checked: 2020-11-15 --- Abramowitschallee: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18169,4159 17898,4434
 # REMOVED --- #: last_checked: 2021-02-24 --- Gorissenstr.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 17952,3975 17636,4082
-#: last_checked: 2021-10-02
+#: last_checked: 2021-10-10
 #: check_frequency: 720d
 Bebauungsplan 9-15a: hier werden Straßen entstehen	?::projected 18035,4631 17814,4426 17734,4261 17654,4150 17638,4080 17952,3979 18174,4150 18349,4305 18035,4631
 # 
 #: XXX fehlen in Berlin.coords.data (PLZ vermutlich 12487) vvv
 #: by: http://www.stadtentwicklung.berlin.de/umwelt/umweltatlas/karten/pdf/e07_01_2009_mit_strname.pdf (teilweise)
 #: check_frequency: 360d vvv
-#: last_checked: 2021-07-23 vvv
+#: last_checked: 2021-10-10 vvv
 Hubert-Latham-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18602,4220 18734,4077 19000,3798
 Henry-Farman-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::projected 18734,4077 18670,4013
 #: note: an der Gerhard-Sedlmayr-Str. sind keine Straßeneinfahrten vorbereitet
@@ -6777,7 +6786,7 @@ Friedhof Segen: Wohngebiet entsteht	?::projected 13581,16968 13522,17021 13687,1
 #: by: https://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_34_3753_3876_online.pdf (Teilung des Bebauungsplans)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6932&date=20170905
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8491
-#: last_checked: 2021-04-15 vvv
+#: last_checked: 2021-10-10 vvv
 #: check_frequency: 360d vvv
 #: XXX Planstraße 2:
 #: osm_watch: way id="646453312" version="2"
@@ -7526,13 +7535,7 @@ Bebauungsplan XXI-22-2 (Georg-Knorr-Park Teilgebiet Ost): Planung eines Geh- und
 #: next_check: 2023-05-01
 Spreebordpark: werden hier Wege entstehen?	? 4305,12927 4326,12673 4415,12661 4358,12932 4305,12927
 # 
-#: next_check_id: GROSSBERLINERDAMM-2020
-#: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie)
-#: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-5_gesiegelt.pdf (Ampel)
-#: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20210926 (Eröffnungstermin)
-#: last_checked: 2021-09-05 (krickstadt)
-#: next_check: 2021-10-31
-Groß-Berliner Damm/Benno-König-Str.: hier entsteht eine Ampel	?::inwork 18374,4307 18373,4280
+# REMOVED (realisiert) --- #: next_check_id: GROSSBERLINERDAMM-2020 --- #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie) --- #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-5_gesiegelt.pdf (Ampel)--- #: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20210926 (Eröffnungstermin) --- #: last_checked: 2021-09-05 (krickstadt) --- #: next_check: 2021-10-31 --- Groß-Berliner Damm/Benno-König-Str.: hier entsteht eine Ampel	?::inwork 18374,4307 18373,4280
 # 
 #: next_check_id: ANDERSTREUOBSTWIESE-2021
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5547 (Straßenbenennung)

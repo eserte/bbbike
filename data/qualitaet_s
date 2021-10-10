@@ -2311,8 +2311,8 @@ Wuhlewanderweg: unbefestigter Weg	Q2 22103,10814 22059,10782
 Wuhlewanderweg: guter Beton (zweispurig)	Q0 22110,10796 22059,10782 21950,10776 21869,10750 21827,10684 21791,10623 21727,10582 21657,10519 21646,10510 21608,10403 21586,10344 21584,10329
 Wuhlewanderweg: Parkweg	Q1 21584,10329 21585,10289 21566,10230 21620,9979 21611,9893
 Wuhlewanderweg: Parkweg	Q1 21691,9874 21675,9798 21633,9731 21587,9609 21517,9489 21467,9236 21383,9045
-Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631
-Andernacher Str.: Asphalt mit einigen Sch‰den	Q0 19155,8631 19075,8590 19054,8571 19000,8509
+Andernacher Str.: Asphalt	Q0 19248,8663 19157,8627
+Andernacher Str.: Asphalt mit einigen Sch‰den	Q0 19157,8627 19075,8590 19054,8571 19000,8509
 Andernacher Str.: m‰ﬂiger Asphalt	Q1 19000,8509 18949,8437
 Rheinsteinpark: Asphalt, etwas uneben	Q1 19073,8828 19145,8659
 Rolandseck: Asphalt	Q0 18834,9256 18903,9244 18977,9322
@@ -2864,7 +2864,8 @@ Bopparder Str.: m‰ﬂiger Beton	Q1 18790,9018 18881,9002
 Sinziger Str.: Beton	Q1 18886,9031 18978,9014
 Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 Wiesengrundstr. (Karlshorst): Schotterstraﬂe, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
-Wiesengrundstr. (Karlshorst): Asphalt	Q0 19898,8410 19964,8447 20046,8448
+Wiesengrundstr. (Karlshorst): Asphalt, etwas rau	Q0 19898,8410 19964,8447 20046,8448
+Wiesengrundstr. (Karlshorst): unbefestigter Weg	Q2 20046,8448 20129,8444 20174,8443 20187,8442 20224,8441 20293,8440
 Agavensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19550,8230 19723,8068 19746,8042 19892,7917 20031,7794
 Agavensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19723,8068 19725,8122 19734,8182 19759,8212
 (Abzweig vom Agavensteig): holpriger unbefestigter Fahrweg	Q2 19961,8249 19943,8279
@@ -10748,6 +10749,7 @@ Steinstr.: Asphalt mit einigen Unebenheiten	Q0 10231,-1086 10248,-1346 10258,-14
 Steinstr.: Asphalt	Q0 10258,-1474 10301,-1891 10303,-1954 10310,-2136
 Bahnhofstr.: schadhafter Asphalt	Q1 10310,-2136 10453,-2133 10509,-2131
 Sparrstr.: Kopfsteinpflaster	Q2 7461,14986 7405,15070 7340,15184
+Rothariweg [Stichstraﬂe]: Kleinsteinpflaster	Q1 8290,6191 8228,6191
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straﬂe 77 (Franzˆsisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straﬂe 77 (Franzˆsisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -10861,7 +10863,7 @@ Sieboldstr.: Asphalt	Q0 19707,46 19844,162 19906,217 19938,244 19971,272 20035,3
 Hamburger Str. (Mahlsdorf): m‰ﬂiger Asphalt	Q1 26029,13245 26190,13426
 Hamburger Str. (Mahlsdorf): Asphalt	Q0 26190,13426 26371,13630 26540,13826 26662,13876
 Hamburger Str. (Mahlsdorf): m‰ﬂiger Asphalt	Q1 26662,13876 26785,13925 26847,14002 26874,14070
-Steinbachstr.: m‰ﬂiger Asphalt	Q1 19587,3801 19673,3888 19703,3979
+Steinbachstr.: m‰ﬂiger Asphalt, Risse	Q1 19587,3801 19673,3888 19703,3979
 Steinbachstr.: guter Asphalt	Q0 19703,3979 19759,4160
 Am Kiebitzpfuhl: m‰ﬂiger Asphalt	Q1 14334,22694 14402,22790 14434,22835 14436,22869
 Marwitzer Str.: Asphalt	Q0 -4763,16809 -4628,16803 -4322,16776
@@ -12736,7 +12738,7 @@ Kattunsteig: Waldweg	Q2 19765,4876 19710,4760 19710,4682 19715,4410 19723,4348 1
 Kattunsteig: Waldweg	Q2 19766,4288 19754,4266 19760,4256 19756,4245
 B‰renlauchstr.: Asphalt	Q0 19733,5177 19735,5158
 B‰renlauchstr.: Kopfsteinpflaster	Q2 19735,5158 19737,5134
-B‰renlauchstr.: Asphalt	Q0 19737,5134 19744,5063 19755,4962 19760,4907 19765,4876
+B‰renlauchstr.: Asphalt, einige Querrillen	Q1 19737,5134 19744,5063 19755,4962 19760,4907 19765,4876
 Rudower Str. (Niederschˆneweide): Mitte der Fahrbahn Kopfsteinpflaster, Seiten mit lˆchrigem Beton	Q1 18695,5076 18641,5260 18659,5330
 Rudower Str. (Niederschˆneweide): Asphalt	Q0 18659,5330 18680,5413 18695,5453
 Paul-Schwenk-Str.: Beton	Q0 19613,14728 19579,14783 19588,14847 19646,14917 19856,14926 19872,14954 19893,14947
@@ -13201,8 +13203,8 @@ Schubartstr.: Asphalt	Q0 3158,19964 3343,19727 3546,19477
 Rheingoldstr.: guter Asphalt	Q0 18903,9244 18961,9109 18983,9044 19007,8986
 Rheingoldstr.: Asphalt mit einigen Sch‰den	Q1 19007,8986 19059,8863
 Rheingoldstr.: schlechtes Feldsteinpflaster	Q3 19059,8863 19073,8828
-Rheingoldstr.: guter Asphalt	Q0 19145,8659 19155,8631
-Rheingoldstr.: guter Asphalt	Q0 19155,8631 19206,8514 19275,8419
+Rheingoldstr.: guter Asphalt	Q0 19145,8659 19157,8627
+Rheingoldstr.: guter Asphalt	Q0 19157,8627 19206,8514 19275,8419
 Jagowstr. (Spandau): Asphalt	Q0 -3293,15568 -3260,15550 -3248,15543
 Jagowstr. (Spandau): Kopfsteinpflaster	Q2 -3248,15543 -3041,15434
 Jagowstr. (Spandau): Kopfsteinpflaster	Q2 -3041,15434 -2949,15385

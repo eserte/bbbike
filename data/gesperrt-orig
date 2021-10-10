@@ -1371,6 +1371,7 @@ Am Heidehof	1s:q3 -1410,2726 -1571,2669 -1612,2785
 Nuﬂbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
 Skalitzer Str.: Mittelstreifen, Bordsteine	3nocross 12930,10621 12899,10595 12731,10547
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
+Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2121,16 +2122,9 @@ Ernst-Ruska-Ufer: L‰rmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
 Indira-Gandhi-Str.: Straﬂenbahntrasse	3nocross 14843,15007 14828,15050 14686,15608
 Hansastr.: Straﬂenbahntrasse	3nocross 16460,17214 16578,17285 16837,17440
 Groﬂ-Berliner Damm: Mittelstreifen	3nocross 18930,3703 18884,3752 18856,3783 18826,3816
-Groﬂ-Berliner Damm: Mittelstreifen	3nocross 18826,3816 18779,3866 18541,4125
+Groﬂ-Berliner Damm: Mittelstreifen	3nocross 18826,3816 18779,3866 18739,3909
 Groﬂ-Berliner Damm: Mittelstreifen	3nocross 18930,3703 19029,3595 19125,3491
-#: next_check_id: GROSSBERLINERDAMM-2020
-#: by: https://www.baustellen-doku.info/berlin_strassenbahn_adlershof_II_wista_schoeneweide/20200831/
-#: source_id: viz2021:13.511217,52.449474,28.01.2021,07:00 (Gleisbauarbeiten)
-#: confirmed_by: srt
-#: XXX hier wird ein Fuﬂg‰nger¸bergang erstellt
-#: last_checked: 2021-10-02
-#: next_check: 2021-10-31
-Groﬂ-Berliner Damm: Straﬂenbahntrasse	3nocross 17879,4910 17951,4785 18042,4667
+# REMOVED (-> gesperrt_car-orig) --- #: next_check_id: GROSSBERLINERDAMM-2020 --- #: by: https://www.baustellen-doku.info/berlin_strassenbahn_adlershof_II_wista_schoeneweide/20200831/ --- #: source_id: viz2021:13.511217,52.449474,28.01.2021,07:00 (Gleisbauarbeiten) --- #: confirmed_by: srt --- #: XXX hier wird ein Fuﬂg‰nger¸bergang erstellt --- #: last_checked: 2021-10-02 --- #: next_check: 2021-10-31 --- Groﬂ-Berliner Damm: Straﬂenbahntrasse	3nocross 17879,4910 17951,4785 18042,4667
 Stromstr.: Mittelstreifen	3nocross 6228,13324 6229,13517 6230,13596
 Warschauer Br¸cke: unbequem zu ¸berqueren, zus‰tzlich Gel‰nder am Gehweg	3nocross 13476,11174 13493,11217 13541,11355
 Warschauer Str.: Straﬂenbahntrasse	3nocross 13391,10963 13409,11004 13454,11119
@@ -3319,6 +3313,15 @@ Schranke	BNP:3::trailer=10 17837,12277
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2021-10-10
+#: check_frequency: 180d
+Verl‰ngerung Zwieseler Str.: Baustellenabsperrung	2::inwork 19705,9039 19638,9070
+# 
+#: next_check_id: WANDLITZ-2021
+#: last_checked: 2021-10-10
+#: check_frequency: 90d
+Wandlitzstr.: in Hˆhe Lehndorffstr. ist die Fahrbahn gesperrt	1s:q4:inwork 18401,8636 18448,8602
+# 
 #: by: https://www.berliner-kurier.de/berlin/169-neue-wohnungen-mit-wasserblick-und-zu-bezahlbaren-mieten-li.182642 (Baustart einiger H‰user, Fertigstellung f¸r September 2023 geplant)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/howoge-neubau-rummelsburger-bucht-und-stralauer-halbinsel.1106/#post-16492
 #: by: https://www.howoge.de/wohnungsbau/neubauprojekte/kynaststrasse.html
@@ -3570,13 +3573,13 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dˆrfelweg: gesperrt wegen Bauarbeiten	
 #: next_check_id: STERNDAMM-2020
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_40_4933_5036_online.pdf (Grundst¸cksnummerierungen (neues Wohngebiet?))
 #: by: https://www.bahninfo-forum.de/read.php?9,665091,708278#msg-708278
-#: XXX Gesperrt wegen Bauarbeiten an der neuen Straﬂenbahntrasse sowie den neuen Baufeldern nˆrdlich davon? Laut bahninfo-forum wird der Weg nach den Bauarbeiten wieder geˆffnet.
+#: XXX Gesperrt wegen Bauarbeiten an der neuen Straﬂenbahntrasse sowie den neuen Baufeldern nˆrdlich davon. Laut bahninfo-forum wird der Weg nach den Bauarbeiten wieder geˆffnet.
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: osm_watch: way id="229647788" version="7"
 #: osm_watch: way id="850453338" version="4"
-#: last_checked: 2021-09-26 (krickstadt)
+#: last_checked: 2021-10-10
 #: check_frequency: 120d
-#: next_check: 2021-10-31
+# REMOVED (Hochbauarbeiten dauern l‰nger) --- #: next_check: 2021-10-31
 Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch f¸r Fuﬂg‰nger	2::inwork 18892,3256 18689,3465
 # 
 # REMOVED (-> temp blockings) --- #: next_check_id: STERNDAMM-2020 --- #: by: osm --- #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer ‹bergang existiert) --- #: XXX evtl. wegen der neuen Straﬂenbahntrasse gesperrt --- #: osm_watch: way id="855549020" version="1" --- #: next_check: 2021-03-15 --- Katharina-Boll-Dornberger-Str.: Durchgang gesperrt	2::inwork 18836,3611 18943,3508
@@ -3640,7 +3643,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2021-10-05
+#: last_checked: 2021-10-10
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 # 

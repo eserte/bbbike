@@ -444,6 +444,17 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # REMOVED (nur eine Engstelle ist entstanden, kaum relevant für Radfahrer) --- #: XXX bleibt das Kopfsteinpflaster? - wahrscheinlich ja --- #: last_checked: 2014-12-04 --- Leuschnerdamm: Bauarbeiten am Engelbecken, auf Gehweg ausweichen	q4::inwork 11365,11047 11421,11073
 # 
 ### Karlshorst ###
+# 
+#: XXX nach den Bauarbeiten den alten Eintrag für die Wildensteiner Str. wieder aktivieren!
+#: also_indoor: traffic (G) vvv
+#: last_checked: 2021-10-10 vvv
+#: check_frequency: 60d vvv
+Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18557,8525 18627,8475 18704,8427
+Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18627,8475 18528,8331
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+# 
 # REMOVED --- #: XXX nach den Bauarbeiten vermutlich bessere Qualität --- #: last_checked: 2016-12-10 --- Andernacher Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 19155,8631 19249,8662
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 vvv --- #: osm_watch: way id="580512810" version="4" --- #: osm_watch: way id="580508096" version="6" --- #: also_indoor traffic vvv --- #: last_checked: 2019-05-21 vvv --- #: next_check: 2019-06-10 vvv --- #: valid: -20201231 vvv --- #: priority: #A vvv
 # REMOVED (hier nicht mehr) --- Dönhoffstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q2::inwork 18733,8633 18609,8717
@@ -457,14 +468,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 ### Niederschöneweide ###
 # 
-#: next_check_id: STERNDAMM-2020
-#: XXX die Ausschilderung wird nach den Bauarbeiten vermutlich aufgehoben
-#: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2
-#: confirmed_by: srt
-#: last_checked: 2021-10-02
-#: check_frequency: 21d
-#: next_check: 2021-10-31
-Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
+# REMOVED (abgesperrt, wird vermutlich bald zurückgebaut) --- #: next_check_id: STERNDAMM-2020 --- #: XXX die Ausschilderung wird nach den Bauarbeiten vermutlich aufgehoben --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: last_checked: 2021-10-02 --- #: check_frequency: 21d --- #: next_check: 2021-10-31 --- Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 # 
 ### Oberschöneweide ###
 # 
@@ -1604,7 +1608,7 @@ Grazer Platz: Fußgänger, Bordsteine	q2 6546,6724 6530,6786 6529,6798
 (Nordmannzeile - Kleingartenkolonie): Fußgänger	q1 6807,7262 6809,7272 6841,7283
 (Nordmannzeile - Vorarlberger Damm): Fußgänger	q1 7220,7442 7307,7457
 Achenbachpromenade: Fußgänger, Radfahren erlaubt	q1 8763,8780 8748,8587 8722,8527 8715,8459
-Wildensteiner Str.: enge Straße	q0- 18627,8475 18528,8331
+# REMOVED (temporary) --- Wildensteiner Str.: enge Straße	q0- 18627,8475 18528,8331
 Wildensteiner Str.: enge Straße	q1 18528,8331 18416,8163 18365,8094 18333,8059
 # REMOVED --- #: XXX noch immer eine enge Stelle? --- (Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbrücke	q2 19460,7954 19504,8003 19558,8064
 Linienstr./Oranienburger Str.: Fußgänger	q2 9225,13389 9312,13388
@@ -2812,7 +2816,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="9"
-#: last_checked: 2021-09-17
+#: last_checked: 2021-10-10
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-09-02
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18634,5484 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
@@ -3655,6 +3659,7 @@ Heidelberger Platz [Bürgersteig]: einige Fußgänger	q2 4173,7993 4121,8016
 (IKEA/Bauhaus-Zufahrt): Parkplatzverkehr	q2 8210,7024 8221,7018 8218,6983 8232,6972
 (IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8221,7018 8211,7034 8077,7040 8053,7061 8057,7080 8078,7101 8057,7163 8020,7185 7924,7185 7834,7131 7823,7083 7816,6953 7845,6930 7968,6927 7991,6938 8071,7006 8078,7029 8077,7040
 (IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8078,7029 8210,7024
+Sterndamm, zur Nebenfahrbahn: Gehweg	q4 17648,5338 17697,5347
 # 
 ######################### User Contributions #################################
 # 

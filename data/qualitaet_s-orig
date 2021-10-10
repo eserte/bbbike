@@ -258,7 +258,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Fahrbahninstandsetzung ab Herbst 2021, bis 2022)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2021-10-02
+#: last_checked: 2021-10-10
 # REMOVED --- #: next_check: 2021-10-01
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
 Dönhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
@@ -3048,8 +3048,8 @@ Wuhlewanderweg: unbefestigter Weg	Q2 22103,10814 22059,10782
 Wuhlewanderweg: guter Beton (zweispurig)	Q0 22110,10796 22059,10782 21950,10776 21869,10750 21827,10684 21791,10623 21727,10582 21657,10519 21646,10510 21608,10403 21586,10344 21584,10329
 Wuhlewanderweg: Parkweg	Q1 21584,10329 21585,10289 21566,10230 21620,9979 21611,9893
 Wuhlewanderweg: Parkweg	Q1 21691,9874 21675,9798 21633,9731 21587,9609 21517,9489 21467,9236 21383,9045
-Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631
-Andernacher Str.: Asphalt mit einigen Schäden	Q0- 19155,8631 19075,8590 19054,8571 19000,8509
+Andernacher Str.: Asphalt	Q0 19248,8663 19157,8627
+Andernacher Str.: Asphalt mit einigen Schäden	Q0- 19157,8627 19075,8590 19054,8571 19000,8509
 Andernacher Str.: mäßiger Asphalt	Q1- 19000,8509 18949,8437
 # REMOVED (Bauarbeiten gibt's schon lange nicht mehr) --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.523136.php --- #: XXX evtl. nach den Bauarbeiten besserer Asphalt --- #: last_checked: 2019-06-17 --- #: check_frequency: 120d
 Rheinsteinpark: Asphalt, etwas uneben	Q1+ 19073,8828 19145,8659
@@ -3698,11 +3698,12 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124 (Anfrage von Juli 2017)
 #: by: https://politik-bei-uns.de/file/597985b41ae6a07d5fb74916 (Antwort: soll teilweise mit einem Asphaltstreifen befestigt werden, erster von drei Bauabschnitten 2018)
 #: osm_watch: way id="47159365" version="14"
-#: last_checked: 2021-05-09
+#: last_checked: 2021-10-10
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
-Wiesengrundstr. (Karlshorst): Asphalt	Q0 19898,8410 19964,8447 20046,8448
+Wiesengrundstr. (Karlshorst): Asphalt, etwas rau	Q0- 19898,8410 19964,8447 20046,8448
+Wiesengrundstr. (Karlshorst): unbefestigter Weg	Q2 20046,8448 20129,8444 20174,8443 20187,8442 20224,8441 20293,8440
 Agavensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19550,8230 19723,8068 19746,8042 19892,7917 20031,7794
 Agavensteig (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19723,8068 19725,8122 19734,8182 19759,8212
 (Abzweig vom Agavensteig): holpriger unbefestigter Fahrweg	Q2 19961,8249 19943,8279
@@ -3827,7 +3828,7 @@ Ilsestr. (Karlshorst, Rummelsburg): Beton	Q0- 18354,9575 18164,9623 18158,9625 1
 Lisztstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18319,9218 18332,9356
 Lisztstr. (Karlshorst): Asphalt	Q0 18332,9356 18377,9366
 Hönower Str. (Karlshorst): schlechtes Kopfsteinpflaster	Q3+ 18490,9387 18377,9366
-(Wandlitzstr. - Blockdammweg): Asphalt mit einigen schadhaften Stellen	Q1 18021,8976 17981,9000 17950,8974
+(Wandlitzstr. - Blockdammweg): Asphalt mit einigen schadhaften Stellen	Q1- 18021,8976 17981,9000 17950,8974
 (Wandlitzstr. - Blockdammweg): Asphalt	Q0 17950,8974 17915,8945 17754,8863 17729,8850
 (Fortsetzung Wandlitzstr.): Betonplattenstraße	Q2 17981,9000 17837,9086
 Schmiedeberger Weg: Verbundsteinpflaster	Q0- 18021,8976 17956,8935
@@ -6683,7 +6684,7 @@ Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 #: osm_watch: way id="156650954" version="15"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2021-09-03
+#: last_checked: 2021-10-10
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
@@ -12277,6 +12278,7 @@ Steinstr.: Asphalt mit einigen Unebenheiten	Q0- 10231,-1086 10248,-1346 10258,-1
 Steinstr.: Asphalt	Q0 10258,-1474 10301,-1891 10303,-1954 10310,-2136
 Bahnhofstr.: schadhafter Asphalt	Q1 10310,-2136 10453,-2133 10509,-2131
 Sparrstr.: Kopfsteinpflaster	Q2 7461,14986 7405,15070 7340,15184
+Rothariweg [Stichstraße]: Kleinsteinpflaster	Q1- 8290,6191 8228,6191
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12497,7 +12499,7 @@ Hamburger Str. (Mahlsdorf): Asphalt	Q0 26190,13426 26371,13630 26540,13826 26662
 Hamburger Str. (Mahlsdorf): mäßiger Asphalt	Q1 26662,13876 26785,13925 26847,14002 26874,14070
 #: confirmed_by: vito
 #: corrected_by: srt (guter -> mäßiger)
-Steinbachstr.: mäßiger Asphalt	Q1 19587,3801 19673,3888 19703,3979
+Steinbachstr.: mäßiger Asphalt, Risse	Q1- 19587,3801 19673,3888 19703,3979
 #: confirmed_by: srt
 Steinbachstr.: guter Asphalt	Q0 19703,3979 19759,4160
 Am Kiebitzpfuhl: mäßiger Asphalt	Q1- 14334,22694 14402,22790 14434,22835 14436,22869
@@ -15038,6 +15040,7 @@ Wandlitzstr.: Asphalt	Q0 18704,8427 18627,8475
 #: corrected_by: srt (Q2 -> Q0-)
 Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 18448,8602
 #: confirmed_by: srt
+#: next_check_id: WANDLITZ-2021
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8866
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036721830908/721830908/00310262/62-Anlagen/04/0262021-0311-57aAwEOeB_EBBRechtspruefung.pdf
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_14_0981_1088_online.pdf (Grundstücksnummerierungen)
@@ -15050,8 +15053,8 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228 (Fahrbahnerneuerung zwischen Grimnitz- und Liepnitzstr. ab September 2021)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9000 (Rechtskontrolle)
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
-#: last_checked: 2021-08-10
-#: check_frequency: 60d
+#: last_checked: 2021-10-10
+#: check_frequency: 180d
 #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976
 #: by: ^^^
@@ -17183,8 +17186,8 @@ Kattunsteig: Waldweg	Q2+ 19766,4288 19754,4266 19760,4256 19756,4245
 Bärenlauchstr.: Asphalt	Q0- 19733,5177 19735,5158
 #: corrected_by: srt (Asphalt -> ...)
 Bärenlauchstr.: Kopfsteinpflaster	Q2- 19735,5158 19737,5134
-#: corrected_by: srt (einige Schlaglöcher, Q1 -> Asphalt, Q0-)
-Bärenlauchstr.: Asphalt	Q0- 19737,5134 19744,5063 19755,4962 19760,4907 19765,4876
+#: corrected_by: srt (einige Schlaglöcher, Q1 -> Asphalt, Q0- -> ...)
+Bärenlauchstr.: Asphalt, einige Querrillen	Q1+ 19737,5134 19744,5063 19755,4962 19760,4907 19765,4876
 #: note: "Note 3":
 #: note: laut ADFC-Karte mäßig geeignet
 #: note: unklarer Eintrag von anonymous: mäßiges Kopfsteinpflaster, Bordsteinkanten/Schrittgeschwindigkeit???
@@ -18617,8 +18620,8 @@ Rheingoldstr.: Asphalt mit einigen Schäden	Q1+ 19007,8986 19059,8863
 #: corrected_by: srt
 Rheingoldstr.: schlechtes Feldsteinpflaster	Q3- 19059,8863 19073,8828
 #: corrected_by: srt (Q0 -> Q0-, hier einige Schäden)
-Rheingoldstr.: guter Asphalt	Q0- 19145,8659 19155,8631
-Rheingoldstr.: guter Asphalt	Q0 19155,8631 19206,8514 19275,8419
+Rheingoldstr.: guter Asphalt	Q0- 19145,8659 19157,8627
+Rheingoldstr.: guter Asphalt	Q0 19157,8627 19206,8514 19275,8419
 #: by: ^^^
 # 
 #: by: Karl Timm: vvv
@@ -19192,6 +19195,10 @@ Ecksteinweg: Asphalt	Q0- 17830,5324 17791,5371
 #: confirmed_by: srt
 Ecksteinweg: mäßiges Kopfsteinpflaster	Q2 17791,5371 17775,5392 17762,5408
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt (dieses Teilstück))
+#: next_check_id: STERNDAMM-2020
+#: XXX dieses Stück bekommt anscheinend eine neue Pflasterung; vielleicht wird die Anbindung auch für den Kfz-Verkehr gesperrt?
+#: last_checked: 2021-10-10
+#: next_check: 2021-10-31
 Ecksteinweg: Asphalt	Q0- 17762,5408 17736,5441
 #: confirmed_by: srt (Q1 -> ...)
 Waiblinger Weg: Asphalt	Q0- 17830,5324 17803,5303 17771,5278
@@ -30256,4 +30263,10 @@ Kreuzungsbereich asphaltiert	Q0 7711,20463
 Kreuzungsbereich asphaltiert	Q0 7809,20420
 Einmündungsbereich mit Kleinsteinpflaster	Q2+ 8292,6331
 Einmündungsbereich mit Kleinsteinpflaster	Q1- 8290,6191
+Kreuzungsbereich asphaltiert	Q0 19898,8410
+Kreuzungsbereich unbefestigt	Q2 20046,8448
+Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 19759,4160
+#: XXX_prog: allerdings ist Steinbachstr. vor und hinter der Kreuzung für einige Meter gepflastert
+Kreuzungsbereich asphaltiert	Q0 19703,3979
+Einmündungsbereich asphaltiert	Q0 19755,4962
 #: ignore ^^^

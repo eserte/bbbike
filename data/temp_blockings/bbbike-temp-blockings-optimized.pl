@@ -3218,24 +3218,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: STERNDAMM-2020
-#: by: osm
-#: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer ‹bergang existiert)
-#: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2021-05-09-adlershof-2/40-2021-05-09-214-xxl.jpg (kein provisorischer ‹bergang mehr)
-#: XXX evtl. wegen der neuen Straﬂenbahntrasse gesperrt
-#: osm_watch: way id="855549020" version="1"
-#: last_checked: 2021-09-05 (krickstadt)
-#: check_frequency: 30d
-#: next_check: 2021-10-31
-	2::inwork 18836,3611 18943,3508
-',
-         'from' => undef,
-         'id' => 3313,
-         'text' => 'Katharina-Boll-Dornberger-Str.: Weg kann wegen Straﬂenbahnbauarbeiten gesperrt sein (Stand 5.9.2021: provisorischer ‹bergang existiert)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3707,7 +3690,7 @@ Smetanastr.: Einbahnstraﬂenregelung	q3::inwork; 14056,15985 14015,16103
 #: note: die Anbindung Nˆldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nˆldnerstr. (Fahrbahn ist aufgerissen), evtl. auch f¸r Fuﬂg‰nger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man kˆnnte sein Rad r¸bertragen), Fr 2021-09-17 abends (ebenso)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-10-02
+#: last_checked: 2021-10-10
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -3838,10 +3821,10 @@ Smetanastr.: Einbahnstraﬂenregelung	q3::inwork; 14056,15985 14015,16103
        },
        {
          'data' => '#: next_check_id: STERNDAMM-2020
-#: last_checked: 2021-10-02 (bahninfo-forum)
+#: last_checked: 2021-10-10
 #: check_frequency: 60d
 #: next_check: 2021-10-31
-	q4::inwork 18766,3260 18828,3196 18946,3077
+	q3::inwork 18766,3260 18828,3196 18946,3077
 	3 18892,3256 18828,3196 18822,3188
 	3 18892,3256 18828,3196 18946,3077
 	3 18822,3188 18828,3196 18892,3256
@@ -3885,7 +3868,7 @@ Smetanastr.: Einbahnstraﬂenregelung	q3::inwork; 14056,15985 14015,16103
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6984 (Antrag)
 #: XXX bis wann bleibt die Sperrung bestehen? vvv
 #: note: der Verbindungsweg Puschkinallee und Am Treptower Park war nicht gesperrt: Do 2021-09-09 gegen 22:20 Uhr
-#: last_checked: 2021-10-02 vvv
+#: last_checked: 2021-10-10 vvv
 #: check_frequency: 30d vvv
 	2::night 15668,9140 15631,9114 15580,9181 15604,9215 15693,9194 15683,9136
 	2::night 14478,9545 14384,9565 14316,9542 14318,9688

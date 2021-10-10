@@ -894,6 +894,7 @@ Nußbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
 Mittelstreifen, Bordsteine	3nocross::ignrte 12930,10621 12899,10595 12731,10547
 Skalitzer Str. -> Skalitzer Str.: Mittelstreifen, Bordsteine	3::igndisp 12930,10621 12899,10595 12978,10581
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
+Ehrenfelsstr.	1s 18737,8686 18778,8663
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2204,19 +2205,12 @@ Neuzeller Weg -> Hansastr.: Straßenbahntrasse	3::igndisp 16658,17142 16578,17285
 Mittelstreifen	3nocross::ignrte 18930,3703 18884,3752 18856,3783 18826,3816
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18592,3743 18884,3752 18856,3783
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18856,3783 18826,3816
-Mittelstreifen	3nocross::ignrte 18826,3816 18779,3866 18541,4125
-Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18702,3790 18779,3866 18541,4125
+Mittelstreifen	3nocross::ignrte 18826,3816 18779,3866 18739,3909
+Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18702,3790 18779,3866 18739,3909
 Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18826,3816 18779,3866 18702,3790
 Mittelstreifen	3nocross::ignrte 18930,3703 19029,3595 19125,3491
 Groß-Berliner Damm -> Konrad-Zuse-Str.: Mittelstreifen	3::igndisp 19125,3491 19029,3595 18943,3508
 Konrad-Zuse-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18943,3508 19029,3595 18930,3703
-Straßenbahntrasse	3nocross::ignrte 17879,4910 17951,4785 18042,4667
-Pilotenstr. -> Pilotenstr.: Straßenbahntrasse	3::igndisp 18031,4831 17951,4785 17868,4742
-Pilotenstr. -> Groß-Berliner Damm: Straßenbahntrasse	3::igndisp 18031,4831 17951,4785 18042,4667
-Pilotenstr. -> Pilotenstr.: Straßenbahntrasse	3::igndisp 17868,4742 17951,4785 18031,4831
-Pilotenstr. -> Groß-Berliner Damm: Straßenbahntrasse	3::igndisp 17868,4742 17951,4785 17879,4910
-Groß-Berliner Damm -> Pilotenstr.: Straßenbahntrasse	3::igndisp 17879,4910 17951,4785 18031,4831
-Groß-Berliner Damm -> Pilotenstr.: Straßenbahntrasse	3::igndisp 18042,4667 17951,4785 17868,4742
 Mittelstreifen	3nocross::ignrte 6228,13324 6229,13517 6230,13596
 Stromstr. -> Bugenhagenstr.: Mittelstreifen	3::igndisp 6228,13324 6229,13517 6104,13522
 unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross::ignrte 13476,11174 13493,11217 13541,11355
@@ -3167,6 +3161,8 @@ Drängelgitter	BNP:3:-44:trailer=10 -739,23004
 Schranke	BNP:1:90:trailer=3 1201,15804
 Drängelgitter	BNP:3:57:trailer=10 32616,-23392
 Schranke	BNP:3:-115:trailer=10 17837,12277
+Verlängerung Zwieseler Str.: Baustellenabsperrung	2::inwork 19705,9039 19638,9070
+Wandlitzstr.: in Höhe Lehndorffstr. ist die Fahrbahn gesperrt	1s:inwork 18401,8636 18448,8602
 (Kynaststr. - Paul-und-Paula-Ufer): Bauarbeiten, Weg existiert nicht mehr	2::inwork 14843,10621 14911,10587
 Schönfließ - Summt: Brücke über die A10 wird neu gebaut	2::inwork 5752,30817 5787,30867
 Stolper Weg: Brücke über die A10 wird neu gebaut	2::inwork 514,32607 525,32437
