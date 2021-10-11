@@ -58,11 +58,16 @@ init_apt() {
 
     if [ "$USE_SYSTEM_PERL" = "1" ]
     then
-	if [ ! -e /etc/apt/sources.list.d/mydebs.bbbike.list ]
+	if [ "$USE_BBBIKE_PPA" = "1" ]
 	then
-	    wget --connect-timeout=10 --tries=5 -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | sudo apt-key add -
-	    sudo sh -c "echo deb http://mydebs.bbbike.de ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~"
-	    sudo mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
+	    sudo add-apt-repository ppa:eserte/bbbike
+	else
+	    if [ ! -e /etc/apt/sources.list.d/mydebs.bbbike.list ]
+	    then
+	        wget --connect-timeout=10 --tries=5 -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | sudo apt-key add -
+	        sudo sh -c "echo deb http://mydebs.bbbike.de ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~"
+	        sudo mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
+	    fi
 	fi
     fi
     sudo apt-get update $apt_quiet
