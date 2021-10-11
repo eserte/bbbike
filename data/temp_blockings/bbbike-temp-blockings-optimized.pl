@@ -2144,7 +2144,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.458347,52.485839,13.10.2021,20:00
+# REMOVED (hier vermutlich nicht) ---	2::inwork 14363,8738 14318,8790 14261,8851
+	2::inwork 14261,8851 14151,8967
+',
+         'from' => 1634061600,
+         'id' => 2841,
+         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1611/nachricht6250.html',
+         'text' => 'Kiefholzstr.: Sperrung zwischen Treptower Str. und Puderstr. im Bereich der Bahnbrücke, vom 13.10.2021, 20:00 Uhr bis zum 14.10.2021, 05:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1634180400
+       },
        {
          'data' => '#: tempex: sunset-T07
 	2::night -12544,-1799 -12396,-1681 -12253,-1589 -12260,-1503 -12256,-1456
@@ -2655,7 +2666,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 # REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12474,16443 12564,16399 12725,16321 12764,16302 12797,16285 12826,16271 12859,16255 12943,16214
 # REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 #: last_checked: 2021-10-08 vvv
-#: next_check: 2021-10-11 vvv
+#: next_check: 2021-10-25 vvv
 #: note: hier nur an der Kreuzung Berliner Allee
 #: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 22.9.2021) (mittlerweile 25.10.2021)
 	q3::inwork 13508,15912 13312,16027
@@ -2858,7 +2869,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        {
          'data' => '#: next_check_id: VOLTAIRE-2019
-#: osm_watch: way id="194962398" version="12"
+#: osm_watch: way id="194962398" version="13"
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?

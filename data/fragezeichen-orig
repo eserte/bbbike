@@ -3169,6 +3169,7 @@ Bebauungsplan 3-48 VE: Planstraße B in Planung	?::projected 13368,18674 13222,18
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/alboingaerten-jetzt-mit-richtkrone_a290227 (bis Ende 2021 fertig)
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/alboingaerten-werden-zum-jahresende-bezugsfertig_a324500 (weiterhin bis Ende 2021)
 #: by: https://berliner-abendblatt.de/2021/10/08/432-neue-wohnungen-am-suedgelaende/
+#: by: https://www.deutsches-architekturforum.de/thread/11061-kleinere-projekte-tempelhof-sch%C3%B6neberg/?postID=702118#post702118
 #: XXX Bebauungsplan 7-65
 # REMOVED (eingetragen) --- #: XXX für Berlin.coords.data: In den Alboingärten|Schöneberg|12103
 #: last_checked: 2021-09-26
@@ -3290,6 +3291,7 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.886948.php
 #: by: http://www.infravelo.de/projekt/spree-rad-und-wanderweg-bezirk-mitte/ (2. Quartal 2021 - 3. Quartal 2023, 1900m, außerdem: Kopfsteinpflaster am Holsteiner Ufer und Schleswiger Ufer wird durch Asphalt ersetzt)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1054614.php (Baumarbeiten im Frühjahr 2021)
+#: by: https://www.deutsches-architekturforum.de/thread/11116-kleinere-projekte-tiergarten-hansaviertel/?postID=702101#post702101 (Neubau der Uferbefestigung)
 #: XXX genauer Abschnitt?
 #: last_checked: 2021-09-04
 #: check_frequency: 150d
@@ -3702,7 +3704,7 @@ Fraenkelufer: Fahrradstraße entsteht	? 11177,9935 11199,9993 11310,10021 11464,1
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (bereits im März 2020 angeordnet)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Markierungsarbeiten werden erfolgen, sobald die Witterung es zulässt)
 #: note: mittlerweile (Mitte Juli 2021) sowohl markiert als auch ausgeschildert, letztere aber noch durchgestrichen
-#: osm_watch: way id="67556839" version="26"
+#: osm_watch: way id="67556839" version="27"
 #: last_checked: 2021-09-28
 #: check_frequency: 21d
 #: next_check: 2021-10-10
@@ -5027,7 +5029,7 @@ Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch 
 #: check_frequency: 180d
 #: next_check: 2022-12-31
 Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
-#: osm_watch: way id="4045220" version="41"
+#: osm_watch: way id="4045220" version="42"
 #: last_checked: 2021-08-03
 #: check_frequency: 120d
 Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18875,9570 18846,9532 18765,9426 18735,9421
@@ -6000,7 +6002,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by: https://api.fixmyberlin.de/api/projects/441
 #: last_checked: 2021-10-10
 #: check_frequency: 360d
-Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 18301,9946 18266,9853 18066,9770 17849,9679 17668,9632 17471,9688 17383,9719
+Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 18301,9946 18266,9853 18066,9770 17920,9698 17777,9649 17668,9632 17587,9655 17471,9688 17383,9719
 # 
 #: by: https://abendblatt-berlin.de/2021/06/11/steglitz-zehlendorf-erhaelt-ersten-pop-up-radweg/ (Anhörungsverfahren bis 14.6.2021)
 #: by: https://www.berliner-woche.de/lankwitz/c-verkehr/erster-pop-up-radweg-im-bezirk_a312882
@@ -6993,6 +6995,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_09_0573_0632_online.pdf (Benennung: Rummelsburger Seeblick)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erwähnung einer Radverbindung mit der Wasserstadt (vielleicht im Zuge der Straße "An der Bucht"?), evtl. auch eine Verbindung zur Karlshorster Str.?)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_26_2221_2280_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/strassennamen-werden-der-legende-von-paul-und-paula-gewidmet_a324533
 #: XXX vorgeschlagene Straßennamen (fehlen alle bei Berlin.coords.data):
 #: XXX * bestehende Untere Kynaststr. -> An der Mole
 #: XXX * Paul-und-Paula-Promenade
