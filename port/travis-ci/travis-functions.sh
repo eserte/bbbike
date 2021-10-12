@@ -60,6 +60,10 @@ init_apt() {
     then
 	if [ "$USE_BBBIKE_PPA" = "1" ]
 	then
+	    if ! which add-apt-repository >/dev/null 2>&1
+	    then
+	        sudo apt-get install -y $apt_quiet --no-install-recommends software-properties-common
+	    fi
 	    sudo add-apt-repository ppa:eserte/bbbike
 	else
 	    if [ ! -e /etc/apt/sources.list.d/mydebs.bbbike.list ]
