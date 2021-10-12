@@ -673,8 +673,20 @@ RUN apt-get update && apt-get install -qqy --no-install-recommends \\
 RUN perl -i -pe 's/^(deb.*main)\$/\$1 contrib non-free/' /etc/apt/sources.list && apt-get update
 RUN apt-get install -qqy --no-install-recommends \\
       agrep wget gnupg
+EOF
+    if ($opt{'use-bbbike-ppa'}) {
+	$dockerfile .= <<EOF;
+RUN apt-get install -qqy --no-install-recommends \\
+      software-properties-common
+RUN add-apt-repository ppa:eserte/bbbike
+EOF
+    } else {
+	$dockerfile .= <<EOF;
 RUN wget -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | apt-key add -
 RUN CODENAME=\$(perl -nle '/^VERSION="\\d+ \\((.*)\\)/ and print \$1' /etc/os-release); echo deb http://mydebs.bbbike.de \${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~ && mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
+EOF
+    }
+    $dockerfile .= <<EOF;
 RUN apt-get update
 RUN apt-get install -qqy --no-install-recommends \\
       libplack-middleware-rewrite-perl libcgi-emulate-psgi-perl libcgi-compile-perl \\
@@ -874,6 +886,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       test => 0,
 	       'invalidate-apt' => 0,
 	       mapserver => 0,
+	       'use-bbbike-ppa' => 0,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
@@ -881,6 +894,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       "test!",
 	       'invalidate-apt!',
 	       'mapserver!',
+	       'use-bbbike-ppa!',
 	      )
 	or usage_cgi;
     cgi($doit, %opt);
