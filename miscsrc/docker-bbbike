@@ -327,6 +327,8 @@ FROM $opt{dist}:$opt{distver}
 
 # travis defaults
 ENV DEBIAN_FRONTEND noninteractive
+# on newer systems sudo does not pass the environment, so another setting is needed
+RUN echo "DEBIAN_FRONTEND=noninteractive" >> /etc/environment
 
 EOF
 
