@@ -309,6 +309,7 @@ sub ci {
 	 # build config
 	 USE_MODPERL                => 1,
 	 USE_SYSTEM_PERL            => 1,
+	 USE_BBBIKE_PPA             => 0,
 	 # init_env_vars() is ineffective in this setup, so set it here
 	 BBBIKE_LONG_TESTS          => 1,
 	 BBBIKE_TEST_SKIP_MAPSERVER => 1,
