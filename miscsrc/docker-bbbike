@@ -653,6 +653,7 @@ EOF
     _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
     my $docker_port = 5000;
     $dockerfile .= <<EOF;
+ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -qqy --no-install-recommends \\
       libgd3 libgd-gd2-perl ttf-bitstream-vera ttf-dejavu \\
       libpdf-create-perl libcairo-perl libpango-perl libfont-afm-perl \\
