@@ -78,7 +78,7 @@ init_apt() {
 }
 
 # Reasons for the following dependencies
-# - freebsd-buildutils:     provides freebsd-make resp. fmake
+# - freebsd-buildutils:     provides freebsd-make resp. fmake resp. pmake
 # - libproj-dev + proj-bin: prerequisites for Geo::Proj4
 # - libdb-dev:              prerequisite for DB_File
 # - agrep + tre-agrep:      needed as String::Approx alternative
@@ -94,7 +94,7 @@ init_apt() {
 # - poppler-utils:          provides pdfinfo for testing
 # - tzdata:                 t/geocode_images.t needs to set TZ
 install_non_perl_dependencies() {
-    if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "buster" ]
+    if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "buster" -o "$CODENAME" = "bullseye" ]
     then
 	javascript_package=rhino
     else
@@ -102,7 +102,7 @@ install_non_perl_dependencies() {
     fi
     # debian/stretch and ubuntu/xenial have both rhino and libmozjs-24-bin
 
-    if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" ]
+    if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "bullseye" ]
     then
 	libgd_dev_package=libgd-dev
     else
@@ -114,14 +114,14 @@ install_non_perl_dependencies() {
 	# Not available anymore, see
 	# https://askubuntu.com/q/1028522
 	pdftk_package=
-    elif [ "$CODENAME" = "buster" -o "$CODENAME" = "focal" ]
+    elif [ "$CODENAME" = "buster" -o "$CODENAME" = "focal" -o "$CODENAME" = "bullseye" ]
     then
 	pdftk_package=pdftk-java
     else
 	pdftk_package=pdftk
     fi
 
-    if [ "$CODENAME" = "precise" -o "$CODENAME" = "focal" ]
+    if [ "$CODENAME" = "precise" -o "$CODENAME" = "focal" -o "$CODENAME" = "bullseye" ]
     then
 	# Since about 2018-06 not installable anymore on the
 	# travis instances
@@ -139,7 +139,21 @@ install_non_perl_dependencies() {
 	cpanminus_package=
     fi
 
-    sudo -E apt-get install -y $apt_quiet --no-install-recommends freebsd-buildutils $libproj_packages libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $cpanminus_package
+    if [ "$CODENAME" = "bullseye" ]
+    then
+        freebsdmake_package=bmake
+    else
+	freebsdmake_package=freebsd-buildutils
+    fi
+
+    if [ "$CODENAME" = "bullseye" ]
+    then
+        dejavu_package=fonts-dejavu
+    else
+	dejavu_package=ttf-dejavu
+    fi
+
+    sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package $libproj_packages libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $cpanminus_package
     if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
     then
 	sudo apt-get install -y $apt_quiet --no-install-recommends mapserver-bin cgi-mapserver
@@ -217,7 +231,7 @@ install_webserver_dependencies() {
     then
 	# install mod_perl
 	# probably valid also for all newer debians and ubuntus after jessie
-	if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" ]
+	if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "bullseye" ]
 	then
 	    sudo apt-get install -y $apt_quiet --no-install-recommends apache2
 	else
@@ -296,7 +310,7 @@ install_perl_dependencies() {
 
 	# Geo::Proj4 does not compile anymore with newer proj4 versions
 	# https://rt.cpan.org/Ticket/Display.html?id=129389
-	if [ "$CODENAME" = "focal" ]
+	if [ "$CODENAME" = "focal" -o "$CODENAME" = "bullseye" ]
 	then
 	    cpanm --quiet --notest Alien::Base::Wrapper Alien::Proj4
 	    cpanm --quiet git://github.com/eserte/perl5-Geo-Proj4.git@use-alien
