@@ -97,6 +97,9 @@ jobs:
           - dist:                       debian
             distver:                    buster
             bbbike_test_skip_mapserver: 0
+          - dist:                       debian
+            distver:                    bullseye
+            bbbike_test_skip_mapserver: 0
           - dist:                       ubuntu
             distver:                    xenial
             bbbike_test_skip_mapserver: 0
