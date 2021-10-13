@@ -28108,7 +28108,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-09-16
+#: last_checked: 2021-10-13
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28743,6 +28743,7 @@ EOF
 #: next_check_id: KYNAST-2021
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
 # REMOVED --- #: XXX regelmäßig prüfen --- #: priority: #A --- #: last_checked: 2018-11-16
+#: note: mittlerweile gibt es eine offizielle Radwegführung teilweise via Gehweg, deshalb: q4 -> q3
 #: by: https://viz.berlin.de/2020/07/schau-11_12-07_2020/ ("für den Kraftfahrzeugverkehr gesperrt")
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1043669.php ("Notweg für Radfahrer" (?))
@@ -28751,10 +28752,10 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-10-01
+#: last_checked: 2021-10-06 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
-	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
+	q3::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
 EOF
      },
      { from  => 1542222296, # 2018-11-14 20:04
@@ -32013,7 +32014,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-10-08 vvv
+#: last_checked: 2021-10-13 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -33147,6 +33148,7 @@ EOF
 #: also_indoor: traffic
 #: XXX gibt es nach den Bauarbeiten bereits den neuen Radweg?
 #: osm_watch: way id="827384487" version="3"
+#: last_checked: 2021-07-23
 #: next_check: 2021-10-15
 	2::inwork 27833,-16133 27643,-16156
 EOF
@@ -33739,6 +33741,18 @@ EOF
 #: check_frequency: 90d
 #: tempex: sa T09-T15
 	2::temp 9546,9198 9617,9185 9596,9092
+EOF
+     },
+     { from  => 1633989600, # 2021-10-12 00:00
+       until => 1635199200, # 2021-10-26 00:00
+       text  => 'Berliner Allee: stadteinwärts zwischen Pistoriusstr. und Streustr.: Fahrtrichtung gesperrt, Bauarbeiten, evtl. sind auch Radfahrer betroffen (besonders im Bereich Antonplatz/Langhansstr.), vom 13.10.2021 11:00 bis 25.10.2021 17:00 ',
+       type  => 'handicap',
+       source_id => 'viz2021:13.459025,52.550082,13.10.2021,11:00',
+       data  => <<EOF,
+#: by: https://twitter.com/VIZ_Berlin/status/1448195177022164992 (mit grob aufgelöster Karte)
+#: XXX Bauarbeiten überprüfen!
+# REMOVED (hier vermutlich nicht) ---	q4::inwork; 14056,16120 14015,16103 13826,16026 13737,15994 13623,15954
+	q4::inwork; 13623,15954 13508,15912 13484,15893 13425,15846
 EOF
      },
     );
