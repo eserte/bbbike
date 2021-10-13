@@ -916,7 +916,27 @@ docker-bbbike - run bbbike tasks in docker
 
 =head1 DESCRIPTION
 
-C<docker-bbbike> may run different tasks in a docker environment.
+C<docker-bbbike> may run different tasks in a docker environment, see below.
+
+Before you start, a working docker environment is needed. On a linux
+system, the following tasks usually need to be done:
+
+=over
+
+=item * install docker and further dependencies
+
+    sudo apt-get install docker.io libipc-perl-run
+
+=item * make sure you can run docker without C<sudo>
+
+Add yourself to the C<docker> group, e.g. using
+
+    sudo usermod -a -G docker $USER
+
+After doing this, it is necessary to have a fresh shell --- either
+logout and login again, or start a new shell.
+
+=back
 
 =head2 GUI
 
