@@ -3172,18 +3172,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.458347,52.485839,13.10.2021,20:00
-# REMOVED (hier vermutlich nicht) ---	2::inwork 14363,8738 14318,8790 14261,8851
-	2::inwork 14261,8851 14151,8967
-',
-         'from' => 1634061600,
-         'id' => 2841,
-         'source_id' => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1611/nachricht6250.html',
-         'text' => 'Kiefholzstr.: Sperrung zwischen Treptower Str. und Puderstr. im Bereich der Bahnbrücke, vom 13.10.2021, 20:00 Uhr bis zum 14.10.2021, 05:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1634180400
-       },
+       undef,
        {
          'data' => '#: tempex: sunset-T07
 	2::night -12544,-1799 -12396,-1681 -12253,-1589 -12260,-1503 -12256,-1456
@@ -4785,15 +4774,15 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'until' => 1635699600
        },
        {
-         'data' => '#: add_fragezeichen: Ist die Sperrung aufgehoben?
-#: last_checked: 2021-09-24
-# REMOVED --- #: check_frequency: 21d
-#: next_check: 2021-10-15
+         'data' => '#: add_fragezeichen: Ist die Sperrung mittlerweile aufgehoben?
+#: last_checked: 2021-10-14
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2021-10-15
 	2::inwork 8668,10219 8668,10236 8715,10314
 ',
          'from' => 1627924220,
          'id' => 3425,
-         'text' => 'Rampe zum Anhalter Steg gesperrt, mindestens bis 15.10.2021',
+         'text' => 'Rampe zum Anhalter Steg wegen Bauarbeiten gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5049,18 +5038,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: add_fragezeichen: Bis wann geht die Sperrung in der Alexandrinnenstr.?
-#: also_indoor: traffic (G)
-#: last_checked: 2021-10-07 (eric)
-	q4::inwork; 10069,10151 10083,10192 10122,10294
-',
-         'from' => undef,
-         'id' => 3457,
-         'text' => 'Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Brachvogelstr. und Gitschiner Str. gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
 	q4::inwork; 8196,20096 8224,19977 8234,19936

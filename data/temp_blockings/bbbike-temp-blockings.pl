@@ -33326,13 +33326,13 @@ EOF
      },
      { from  => 1627924220, # 2021-08-02 19:10
        until => undef, # 1630101600, # 2021-08-28 00:00
-       text  => 'Rampe zum Anhalter Steg gesperrt, mindestens bis 15.10.2021',
+       text  => 'Rampe zum Anhalter Steg wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: add_fragezeichen: Ist die Sperrung aufgehoben?
-#: last_checked: 2021-09-24
-# REMOVED --- #: check_frequency: 21d
-#: next_check: 2021-10-15
+#: add_fragezeichen: Ist die Sperrung mittlerweile aufgehoben?
+#: last_checked: 2021-10-14
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2021-10-15
 	2::inwork 8668,10219 8668,10236 8715,10314
 EOF
      },
@@ -33684,13 +33684,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1634232161, # nicht mehr gesehen --- undef, # XXX
        text  => 'Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Brachvogelstr. und Gitschiner Str. gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Bis wann geht die Sperrung in der Alexandrinnenstr.?
-#: also_indoor: traffic (G)
-#: last_checked: 2021-10-07 (eric)
+# REMOVED --- #: add_fragezeichen: Bis wann geht die Sperrung in der Alexandrinnenstr.? --- #: also_indoor: traffic (G) --- #: last_checked: 2021-10-07 (eric)
 	q4::inwork; 10069,10151 10083,10192 10122,10294
 EOF
      },

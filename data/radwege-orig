@@ -6685,7 +6685,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2021-10-09
+#: last_checked: 2021-10-14
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6956,7 +6956,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: osm_watch: way id="4401920" version="52"
 #: XXX wird mittlerweile verstetigt
 #: confirmed_by: srt
-#: last_checked: 2021-10-09 (webcam)
+#: last_checked: 2021-10-14
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-07-23
 provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
@@ -7011,7 +7011,7 @@ provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8953
 #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="21"
 #: osm_watch: way id="335487059" version="17"
-#: last_checked: 2021-10-09 vvv
+#: last_checked: 2021-10-14 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-10-22 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -7039,7 +7039,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
 #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
 #: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021)
-#: last_checked: 2021-10-09 vvv
+#: last_checked: 2021-10-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -7070,12 +7070,13 @@ Radspur hinter parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720 11710,9628
 #: by: https://twitter.com/VIZ_Berlin/status/1406948078658232321 (Bauarbeiten ab Anfang Juli 2021)
 #: source_id: 2147346996 (bis 21.5.2021)
 #: osm_watch: way id="34057952" version="42"
-#: last_checked: 2021-10-08 (mapillary) vvv
+#: last_checked: 2021-10-14 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-06-23 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710
 #: osm_watch: way id="26472938" version="29"
-provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 9687,10180 9825,10206 9865,10227
+#: note: keine Baken an den beiden Bushaltestellen
+provisorisch geschützter Radstreifen	RW4; 9416,10196 9599,10175 9687,10180 9825,10206 9865,10227
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -7321,7 +7322,7 @@ provisorischer Radweg auf dem Gehweg	RW2; 8490,2084 8560,2181 8579,2265
 #: source_id: viz2021:13.38022,52.49874,19.07.2021,07:00 (bis 20.9.2021)
 #: osm_watch: way id="240451922" version="23"
 #: XXX kommen hier noch Poller/Leitboys hin?
-#: last_checked: 2021-09-28
+#: last_checked: 2021-10-14
 #: check_frequency: 30d
 Grünmarkierung	RW3; 8810,10305 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
 # 
