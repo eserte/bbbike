@@ -20,7 +20,8 @@
 Erich-Steinfurth-Str.: Bauarbeiten, etwa 50m der Fahrbahn gesperrt	q3::inwork 12596,11696 12453,11790
 # 
 #: note: laut rbb bis 29.10.2021 vvv
-#: last_checked: 2021-10-04 vvv
+#: also_indoor: traffic (H(falsch),G(teilweise))
+#: last_checked: 2021-10-15 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-10-29 vvv
 Jessnerstr.: Sperrung der Fahrbahn nördlich der Oderstr.	q3::inwork 14946,11697 14986,11760
@@ -694,7 +695,7 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12
 ### Lichtenberg ###
 # 
 #: XXX bis wann dauern die Bauarbeiten an?
-#: also_indoor: traffic vvv
+#: also_indoor: traffic (G(teilweise)) vvv
 #: last_checked: 2021-10-02 vvv
 #: check_frequency: 14d vvv
 Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q2::inwork; 15932,10830 15681,10801
@@ -713,7 +714,7 @@ Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851
 #: XXX laut rbb (am 31.8.2021 entfernt) und Halteverbotsschildern bis 31.08.2021
 #: also_indoor: traffic (ex-H)
 #: priority: #B
-#: last_checked: 2021-10-04
+#: last_checked: 2021-10-15
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-08-31
 # REMOVED --- #: valid: -20210831

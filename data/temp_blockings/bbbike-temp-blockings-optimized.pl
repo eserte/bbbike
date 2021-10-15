@@ -2610,7 +2610,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -3913,7 +3913,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-09-22
+#: last_checked: 2021-10-15
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3962,7 +3962,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-10-12
+#: last_checked: 2021-10-15
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4328,6 +4328,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00
 #: source_id: viz2021:13.320517,52.466345,13.07.2021,08:00
+#: note: laut rbb nur bis 15.10.2021
 	q4::inwork; 4894,6509 4875,6552 4786,6717
 ',
          'from' => 1614754800,
@@ -4671,21 +4672,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic
-#: XXX gibt es nach den Bauarbeiten bereits den neuen Radweg?
-#: osm_watch: way id="827384487" version="3"
-#: last_checked: 2021-07-23
-#: next_check: 2021-10-15
-	2::inwork 27833,-16133 27643,-16156
-',
-         'from' => 1626559200,
-         'id' => 3409,
-         'source_id' => '216101007',
-         'text' => 'B179: Sperrung Brücke Körbiskrug, Radfahrer und Fußgänger sind ebenfalls von der Sperrung betroffen, 19.07.2021 bis 14.10.2021',
-         'type' => 'gesperrt',
-         'until' => 1634248800
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: KARLSHORSTER-2021
@@ -4902,16 +4889,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'type' => 'handicap',
          'until' => 1672527599
        },
-       {
-         'data' => '	q4::inwork; 4262,20025 4319,20182
-',
-         'from' => 1630274400,
-         'id' => 3439,
-         'source_id' => 'viz2021:13.316247,52.586804,31.08.2021,09:00',
-         'text' => 'Triftstr.: zwischen Holzhauser Str. und Am Nordgraben ist die Fahrbahn gesperrt (Richtung Norden), vom 31.08.2021 09:00 bis 15.10.2021 17:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1634310000
-       },
+       undef,
        {
          'data' => '#: tempex: su,holiday,(mo-sa T20:00-sunrise)
 	2::night:weekend -2245,21544 -2242,21927
@@ -4992,14 +4970,16 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        undef,
        undef,
        {
-         'data' => '	2::inwork -3227,14260 -3173,14216 -3135,14183
+         'data' => '#: source_id: viz2021:13.20521,52.53583,15.10.2021,12:28
+	2::inwork -3316,14169 -3227,14260 -3173,14216
+# REMOVED ---	2::inwork -3173,14216 -3135,14183
 ',
          'from' => 1632607200,
          'id' => 3453,
          'source_id' => 'viz2021:13.20521,52.53583,27.09.2021,09:33',
-         'text' => 'Charlottenstr.: Fahrbahn zwischen Fischerstr. und Mauerstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.09.2021 bis 15.10.2021',
+         'text' => 'Charlottenstr/Breite Str..: Fahrbahn zwischen Fischerstr. und Mauerstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.09.2021 bis 25.10.2021',
          'type' => 'gesperrt',
-         'until' => 1634335200
+         'until' => 1635199199
        },
        {
          'data' => '#: osm_watch: way id="8069460" version="16"
@@ -5104,6 +5084,19 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Berliner Allee: stadteinwärts zwischen Pistoriusstr. und Streustr.: Fahrtrichtung gesperrt, Bauarbeiten, evtl. sind auch Radfahrer betroffen (besonders im Bereich Antonplatz/Langhansstr.), vom 13.10.2021 11:00 bis 25.10.2021 17:00 ',
          'type' => 'handicap',
          'until' => 1635199200
+       },
+       {
+         'data' => '#: next_check_id: WUHLETALHAVEMANN-2021
+#: add_fragezeichen: Wann sind die Bauarbeiten hier abgeschlossen und die Sperrung aufgehoben?
+#: next_check: 2022-01-01
+	2::inwork 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198
+',
+         'from' => 1634421600,
+         'id' => 3463,
+         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1135832.php',
+         'text' => 'Radweg zwischen Wuhletalstr. und Havemannstr.: Sperrung des Radwegs während der Sanierung, vom 18.10.2021 bis Anfang 2022',
+         'type' => 'gesperrt',
+         'until' => 1646089200
        }
      
 );

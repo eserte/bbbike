@@ -1363,16 +1363,18 @@ An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19957
 #: check_frequency: 90d
 Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22312,919 22351,862 22547,651 22916,402
 # 
+#: next_check_id: WUHLETALHAVEMANN-2021
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7739
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993 (Startschuss nicht vor Mitte 2019)
 #: by: https://api.fixmyberlin.de/api/plannings/123 (Sanierung, Weiterführung der Radroute TR7)
 #: by: https://adfc-berlin.de/images/STG_Wuhletal/P0820.pdf (Stand 11.08.20: Ausschreibung noch 2020)
 #: by: http://www.infravelo.de/projekt/verbindung-zwischen-mehrower-allee-und-havemannstrasse/ (4. Quartal 2020 - 4. Quartal 2021)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/in-marzahn-hellersdorf-werden-2021-acht-groessere-radwegprojekte-umgesetzt_a297401 (Realisierung 2021)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1135832.php (Bauarbeiten: 18. Oktober 2021 bis Anfang 2022; Asphaltierung)
 #: osm_watch: way id="20425707" version="14"
 #: last_checked: 2021-05-15
-#: check_frequency: 120d
-#: next_check: 2021-12-31
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2022-01-01
 (An der Straßenbahn): Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198
 # 
 # REMOVED (realisiert) --- #: XXX routing_helper ggfs. anpassen --- #: last_checked: 2017-12-03 --- Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
@@ -2510,6 +2512,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: by: https://api.fixmyberlin.de/api/projects/272 (hier: im Trompetenbereich)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/in-marzahn-hellersdorf-werden-2021-acht-groessere-radwegprojekte-umgesetzt_a297401 ("sicherer gemacht", 2021)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1131315.php (Baumaßnahme bis 8.10.2021)
+#: by: https://www.infravelo.de/projekt/kreuzung-alt-biesdorfmaerkische-allee/ (4. Quartal 2021, Grünbeschichtung)
 #: osm_watch: way id="429284639" version="7"
 #: osm_watch: way id="4689615" version="16"
 #: source_id: viz2021:13.546257,52.509664,11.10.2021,09:00 (bis 15.10.2021)
@@ -2740,6 +2743,7 @@ Markelstr.: Verbindung durch die Grünfläche geplant	?::projected 4845,6532 4845,
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8898 (Aufstellungsbeschluss XXII-39-1 VE)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8899 (Aufstellungsbeschluss XXII-39-2)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_38_3493_3592_online.pdf (Grundstücksnummerierungen, Schilfanger ff.)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_45_4009_4092_online.pdf (Grundstücksnummerierungen, An den Auen)
 #: last_checked: 2021-08-07 vvv
 #: check_frequency: 150d vvv
 #: osm_watch: way id="506201934" version="10"
@@ -2847,7 +2851,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): Qualität? Gibt's hier Radwege?	? 291
 #: XXX laut osm "Ausgewiesenes Radfahrverbot"
 #: source_id: LS/722-W/20/231
 #: source_id: LS/722-W/20/231-9
-#: osm_watch: way id="341596787" version="17" brb
+#: osm_watch: way id="341596787" version="18" brb
 #: last_checked: 2020-04-12 (mapillary)
 #: next_check: 2021-09-23
 L30n: ist hier tatsächlich Radfahren verboten? von beiden Seiten?	? 28312,-9695 27950,-8900 27754,-8708
@@ -3407,10 +3411,10 @@ Luisenplatz: Radwegsanierung	?::inwork 3327,12818 3300,12751 3291,12721
 # 
 # REMOVED (kein Verbot, jedenfalls nicht direkt an der Marksburgstr., aber Engstelle und davor u.U. Stau) --- #: XXX Arbeiten dauern bis Anfang Oktober 2021 --- #: next_check: 2021-09-13 --- Treskowallee: Bauarbeiten, gibt es vielleicht wieder Verbote für den Radverkehr?	?::inwork; 18809,9133 18790,9018 18770,8898
 # 
-#: source_id: viz2021:13.718655,52.431423,13.09.2021,11:00 (bis 15.10.2021)
+#: source_id: viz2021:13.718655,52.431423,13.09.2021,11:00 (bis 15.10.2021) (mittlerweile bis 5.11.2021)
 #: XXX statt des existierenden Zebrastreifens?
 #: last_checked: 2021-07-18 (mapillary)
-#: next_check: 2021-10-15
+#: next_check: 2021-11-05
 Fürstenwalder Damm: Neubau eine Fußgängerampel	?::inwork 31946,3283 31973,3237 31938,3193
 # 
 #: by: https://www.infravelo.de/projekt/grellstrasse-und-storkower-strasse/ (Baubeginn und -ende: 2. Quartal 2022)
@@ -3915,6 +3919,7 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/s-bahnhof-greifswalder-strasse-bauarbeiten-fuer-umsteigemoeglichkeit-starten-ende-2020_a230359 (Fertigstellung voraussichtlich 2021)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/planungen-fuer-die-neugestaltung-der-strassenbahnhaltestelle-s-greifswalder-strasse-sind-schon-sehr-konkret_a253105 (Baubeginn Ende 2020)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/umbau-an-der-greifswalder-strasse-verzoegert-sich-weiter_a285928 (Fertigstellung 2024)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/kritik-an-plaenen-fuer-neue-tramhaltestelle-am-s-bahnhof-greifswalder-strasse_a325154 (Baustart frühestens 2023, Bauzeit 18 Monate)
 #: last_checked: 2021-09-01
 #: next_check: 2024-03-01
 S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12709,15112 12681,15028
@@ -5016,7 +5021,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 18
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2021-09-25
+#: last_checked: 2021-10-15
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: by: https://api.fixmyberlin.de/api/projects/328 (Grünmarkierung + Verbreiterung, teilweise Leitboys)
