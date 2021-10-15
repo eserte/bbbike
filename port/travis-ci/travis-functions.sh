@@ -27,7 +27,7 @@ init_env_vars() {
     export BBBIKE_LONG_TESTS BBBIKE_TEST_SKIP_MAPSERVER
     # The default www.cpan.org may not be the fastest one, and may
     # even cause problems if an IPv6 address is chosen...
-    export PERL_CPANM_OPT="--mirror https://cpan.metacpan.org --mirror http://cpan.cpantesters.org"
+    export PERL_CPANM_OPT="$PERL_CPANM_OPT --mirror https://cpan.metacpan.org --mirror http://cpan.cpantesters.org"
     CODENAME=$(lsb_release -c -s)
     if [ "$CODENAME" = "" ]
     then
