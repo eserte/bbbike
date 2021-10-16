@@ -103,6 +103,9 @@ jobs:
           - dist:                       ubuntu
             distver:                    xenial
             bbbike_test_skip_mapserver: 0
+          - dist:                       ubuntu
+            distver:                    trusty
+            bbbike_test_skip_mapserver: 0
     steps:
     - uses: actions/checkout@v2
     - name: Build and test
