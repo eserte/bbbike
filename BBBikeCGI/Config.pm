@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeCGI::Config;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 sub the_config {
     my(undef, $output_for, $ns) = @_;
@@ -26,6 +26,7 @@ sub the_config {
 		$output_for eq 'perl' ? sub { !!$_[0] } :
 		die 'output_for should be either json or perl'
 	       );
+    my $bool_or_undef = sub { !defined $_[0] ? undef : $bool->($_[0]) };
     my $var = sub {
 	no strict 'refs';
 	${$ns.'::'.$_[0]};
@@ -65,7 +66,7 @@ sub the_config {
       osm_data                   => $bool->($var->('osm_data')),
       bbbike_images              => $var->('bbbike_images'),
       bbbike_html                => $var->('bbbike_html'),
-      use_heap                   => $bool->($var->('StrassenNetz::use_heap')),
+      use_heap                   => $bool_or_undef->($var->('StrassenNetz::use_heap')),
      };
 }
 
