@@ -316,7 +316,7 @@ sub ci {
 	 BBBIKE_TEST_GUI            => 0,
 	 BBBIKE_TEST_WITH_SELENIUM  => 0,
 	 PERL_CPANM_OPT             => "--mirror https://cpan.metacpan.org --mirror http://cpan.cpantesters.org",
-	 CPAN_INSTALLER             => "cpanm",
+	 CPAN_INSTALLER             => "cpm",
 	);
 
     my $bbbike_rootdir = realpath("$FindBin::RealBin/..");
