@@ -927,6 +927,10 @@ system, the following tasks usually need to be done:
 
     sudo apt-get install docker.io libipc-perl-run
 
+Fur running the C<docker-bbbike ci --src=local> subcommand the following are also needed:
+
+    sudo apt-get install rsync git
+
 =item * make sure you can run docker without C<sudo>
 
 Add yourself to the C<docker> group, e.g. using
