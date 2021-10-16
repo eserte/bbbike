@@ -4396,17 +4396,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic
-	q4::inwork 5656,1882 5642,1912 5631,1937 5592,2021
-',
-         'from' => 1627682400,
-         'id' => 3354,
-         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.87783.php',
-         'text' => 'Ferdinandstr.: Sperrung der Fahrbahn zwischen Parallelstr. und Lange Str., vom 01.08.2021 bis 15.10.2021',
-         'type' => 'handicap',
-         'until' => 1634335200
-       },
+       undef,
        undef,
        {
          'data' => '#: note: keine genauen Zeiten verfügbar
@@ -5030,33 +5020,8 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'type' => 'handicap',
          'until' => 1641337200
        },
-       {
-         'data' => '#: by: https://berliner-abendblatt.de/2021/10/08/113916/
-	2::temp 11726,11265 11808,11482 11947,11398 12010,11545 12031,11529 12050,11511 12092,11475
-	3 11917,11186 11726,11265 11542,11342
-	3 11542,11342 11726,11265 11917,11186
-	3 11917,11186 11726,11265 11656,11106
-	3 11656,11106 11726,11265 11917,11186
-	3 11542,11342 11726,11265 11656,11106
-	3 11656,11106 11726,11265 11542,11342
-',
-         'from' => 1634130000,
-         'id' => 3459,
-         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_44_3933_4008_online.pdf',
-         'text' => 'Köpenicker Straße und Umgebung: Sperrungen wegen eines Polizeieinsatzes möglich, vom 14. Oktober 2021, 15:00 Uhr, bis zum 15. Oktober 2021, 23:59 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1634335199
-       },
-       {
-         'data' => '	2::inwork 32854,37244 31663,37734
-',
-         'from' => 1633816800,
-         'id' => 3460,
-         'source_id' => 'LS/721-E/21/116',
-         'text' => 'Grüntal - Gratze: Sperrung (Neubau Durchlassbauwerk),11.10.2021 bis 15.10.2021',
-         'type' => 'gesperrt',
-         'until' => 1634335200
-       },
+       undef,
+       undef,
        {
          'data' => '#: next_check_id: CORONA-2020
 #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so?
