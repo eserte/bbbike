@@ -42,9 +42,12 @@ init_env_vars() {
 }
 
 init_perl() {
-    if [ "$USE_SYSTEM_PERL" = "1" -a "$GITHUB_WORKFLOW" = "" ]
+    if [ "$USE_SYSTEM_PERL" = "1" ]
     then
-        perlbrew off
+	if which perlbrew >/dev/null 2>&1
+	then
+	    perlbrew off
+	fi
     fi
 }
 
