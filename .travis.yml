@@ -2,6 +2,7 @@ branches:
  except:
   - /appveyor/
   - /github-actions/
+  - /gitlab/
   - /doozer/
 before_install:
  - . port/travis-ci/travis-functions.sh

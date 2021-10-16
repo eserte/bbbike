@@ -5,6 +5,7 @@ on:
     branches-ignore:
       - '*travis*'
       - '*appveyor*'
+      - '*gitlab*'
       - '*doozer*'
   pull_request:
 
