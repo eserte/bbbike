@@ -78,7 +78,7 @@ jobs:
         wrapper start_selenium
         wrapper init_data
         # script:
-        perl Makefile.PL && make test HARNESS_OPTIONS=j4
+        perl Makefile.PL && make test HARNESS_OPTIONS=j4 HARNESS_TIMER=1
         # after_script:
         make distcheck
       if: "!startsWith(matrix.os,'windows-')"
