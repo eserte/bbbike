@@ -82,6 +82,7 @@ jobs:
         perl Makefile.PL && make test HARNESS_OPTIONS=j4 HARNESS_TIMER=1
         # after_script:
         make distcheck
+        used_config
       if: "!startsWith(matrix.os,'windows-')"
   test_in_container:
     name: Docker tests with ${{ matrix.dist }}:${{ matrix.distver }}

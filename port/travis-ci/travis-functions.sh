@@ -466,3 +466,28 @@ start_selenium() {
 }
 
 ######################################################################
+# Functions for the after_script phase:
+
+used_config() {
+    cat <<EOF
+======================================================================
+USED CONFIG
+======================================================================
+CODENAME:                   $CODENAME
+USE_SYSTEM_PERL:            $USE_SYSTEM_PERL
+USE_BBBIKE_PPA:             $USE_BBBIKE_PPA
+USE_MODPERL:                $USE_MODPERL
+CPAN_INSTALLER:             $CPAN_INSTALLER
+PERL_CPANM_OPT:             $PERL_CPANM_OPT
+BBBIKE_LONG_TESTS:          $BBBIKE_LONG_TESTS
+BBBIKE_TEST_GUI:            $BBBIKE_TEST_GUI
+BBBIKE_TEST_SKIP_MODPERL:   $BBBIKE_TEST_SKIP_MODPERL
+BBBIKE_TEST_SKIP_MAPSERVER: $BBBIKE_TEST_SKIP_MAPSERVER
+BBBIKE_TEST_WITH_SELENIUM:  $BBBIKE_TEST_WITH_SELENIUM
+BBBIKE_TEST_NO_NETWORK:     $BBBIKE_TEST_NO_NETWORK
+BBBIKE_TEST_NO_CGI_TESTS:   $BBBIKE_TEST_NO_CGI_TESTS
+======================================================================
+EOF
+}
+
+######################################################################
