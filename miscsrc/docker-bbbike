@@ -322,9 +322,14 @@ sub ci {
     my $bbbike_rootdir = realpath("$FindBin::RealBin/..");
     my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
 
+    my $image = "$opt{dist}:$opt{distver}";
+    if ($opt{'image-variant'}) {
+	$image .= "-" . $opt{'image-variant'};
+    }
+
     ## Build the Dockerfile
     my $dockerfile = <<EOF;
-FROM $opt{dist}:$opt{distver}
+FROM $image
 
 # travis defaults
 ENV DEBIAN_FRONTEND noninteractive
@@ -496,11 +501,12 @@ EOF
 
     in_directory {
 	my $scope_cleanups = Doit::ScopeCleanups->new;
-	my $tag = 'bbbike-travis-ci-' . $opt{dist} . '-' . $opt{distver};
+	(my $tag_suffix = $image) =~ s{:}{-}g;
+	my $tag = 'bbbike-travis-ci-' . $tag_suffix;
 
 	eval { $doit->system(qw(docker rmi), "$tag-old") };
 	eval { $doit->system(qw(docker tag), $tag, "$tag-old") };
-	_docker_build_with_retry($doit, "$opt{dist}:$opt{distver}", ['--tag', $tag, ($opt{'no-cache'} ? '--no-cache' : ()), '.']);
+	_docker_build_with_retry($doit, $image, ['--tag', $tag, ($opt{'no-cache'} ? '--no-cache' : ()), '.']);
 
 	eval { $doit->system(qw(docker rm), $tag) };
 
@@ -544,7 +550,7 @@ EOF
 	    my @test_note_cmd;
 	    push @test_note_cmd, @errors ? '--fail' : '--pass';
 	    push @test_note_cmd, '--docker';
-	    push @test_note_cmd, '--spec', $opt{dist}.':'.$opt{distver};
+	    push @test_note_cmd, '--spec', $image;
 	    for my $key (sort keys %changed_env) {
 		push @test_note_cmd, '--feature', $key.'='.$changed_env{$key};
 	    }
@@ -849,6 +855,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'no-cache' => 0,
 	       'invalidate-apt' => 0,
 	       'perl-ver' => undef,
+	       'image-variant' => undef,
 	      );
     GetOptions(\%opt,
 	       "jobs|j=i",
@@ -861,6 +868,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'no-cache',
 	       'invalidate-apt!',
 	       'perl-ver=s',
+	       'image-variant=s',
 	      )
 	or usage_ci;
     _check_distver $opt{distver};
