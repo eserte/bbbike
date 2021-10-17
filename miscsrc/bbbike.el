@@ -45,6 +45,8 @@
 
 (defvar bbbike-mc-traffic-base-url "https://mc.bbbike.org/mc/?profile=traffic&zoom=15&") ; add "lat=52.518117&lon=13.498035" for a complete URL
 
+(setq bbbike-perl-modern-executable (if (boundp 'perl-modern-executable) perl-modern-executable "perl"))
+
 (defconst bbbike-font-lock-defaults
   '(bbbike-font-lock-keywords t nil nil nil (font-lock-multiline . nil)))
 
@@ -578,7 +580,7 @@
       (let* ((elemtype (substring sel (match-beginning 1) (match-end 1)))
 	     (elemid (substring sel (match-beginning 2) (match-end 2)))
 	     (url (concat "https://www.openstreetmap.org/api/0.6/" elemtype "/" elemid))
-	     (elemversion (shell-command-to-string (concat "curl --silent " url " | perl -MXML::LibXML -e 'print XML::LibXML->load_xml(IO => \\*STDIN)->documentElement->findvalue(q{/osm/" elemtype "/@version})'"))))
+	     (elemversion (shell-command-to-string (concat bbbike-perl-modern-executable " -MLWP::UserAgent -MXML::LibXML -e 'my $ua = LWP::UserAgent->new; my $xml = $ua->get(shift)->decoded_content; print XML::LibXML->load_xml(string => $xml)->documentElement->findvalue(q{/osm/" elemtype "/@version})' " url))))
 	(beginning-of-line)
 	(insert (concat "#: osm_watch: " elemtype " id=\"" elemid "\" version=\"" elemversion "\"\n"))))
      (t (error "No X selection or X selection does not contain a way/node/relation line")))))
