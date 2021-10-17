@@ -1385,7 +1385,7 @@ EOF
 		}
 
 		# Google Maps
-		while ($s =~ s{maps/\@([-+]?[0-9\.]+),([-+]?[0-9\.]+),\d+z/}{}g) { # consume, because this kind of coordinates may be misinterpreted as BBBike coords otherwise
+		while ($s =~ s{maps/\@([-+]?[0-9\.]+),([-+]?[0-9\.]+),\d+[zm]/}{}g) { # consume, because this kind of coordinates may be misinterpreted as BBBike coords otherwise
 		    my($y,$x) = ($1,$2);
 		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
 		    push @coords, [$x, $y];
