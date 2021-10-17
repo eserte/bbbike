@@ -35,29 +35,30 @@ after_script:
 language: perl
 dist: trusty
 arch:
-#  - arm64
-  - ppc64le
+  - arm64
 matrix:
   include:
-### XXX system perl does not work yet --- missing arm64 packages in mydebs
-##    - dist: xenial
-##      perl: 5.22
-##      env: USE_MODPERL=1 USE_SYSTEM_PERL=1
-#    - dist: focal
-#      perl: 5.32
-#      env: USE_MODPERL=1 USE_SYSTEM_PERL=1 USE_BBBIKE_PPA=1
-#    - dist: xenial
-#      perl: 5.24
-#      env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
-#    - dist: bionic
-#      perl: 5.26
-#      env: BBBIKE_TEST_SKIP_MODPERL=1
-#    - dist: focal
-#      perl: 5.32
-#      env: BBBIKE_TEST_SKIP_MODPERL=1
+## arm64 builds
     - dist: focal
       perl: 5.32
-      env: BBBIKE_TEST_SKIP_MODPERL=1 PERL_CPANM_OPT=--sudo CPAN_INSTALLER=cpanm
+      env: USE_MODPERL=1 USE_SYSTEM_PERL=1 USE_BBBIKE_PPA=1
+      language: minimal
+    - dist: xenial
+      perl: 5.24
+      env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
+    - dist: bionic
+      perl: 5.26
+      env: BBBIKE_TEST_SKIP_MODPERL=1
+    - dist: focal
+      perl: 5.32
+      env: BBBIKE_TEST_SKIP_MODPERL=1
+
+## ppc64le builds (fallback only)
+#    - dist: focal
+#      perl: 5.32
+#      env: BBBIKE_TEST_SKIP_MODPERL=1 PERL_CPANM_OPT=--sudo CPAN_INSTALLER=cpanm
+#      arch: ppc64le
+#      language: minimal
 
 ### Fastest results (8 min)
 #    - perl: "5.18"
