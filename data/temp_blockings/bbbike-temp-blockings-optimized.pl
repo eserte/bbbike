@@ -1787,7 +1787,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-09-24
+#: last_checked: 2021-10-17
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',

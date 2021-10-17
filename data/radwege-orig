@@ -672,10 +672,10 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2021-10-13 vvv
+#: last_checked: 2021-10-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
-provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
+provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
 provisorische Radspuren	RW4; 10601,12521 10644,12469 10673,12434 10738,12364
 #: next_check ^^^
 #: check_frequency ^^^
@@ -1498,23 +1498,19 @@ Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2021-10-08
+#: last_checked: 2021-10-17
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 # 
+Busspur ist immer gültig	RW5;RW5 9984,12426 9934,12420 9858,12410
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam)
-#XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
-#: XXX siehe auch 3nocross in gesperrt-orig
-#: source_id: INKO_113041
-#: source_id: 2147339528 (bis 8.6.2020) (inaktiv)
-#: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2021-10-08
+# REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
+#: last_checked: 2021-10-17
 #: check_frequency: 14d
 #: next_check: 2021-10-31
-	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
+	RW0;RW0 10063,12438 10024,12431 9984,12426
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
 # 
 # REMOVED (weitgehend fertiggestellt) --- #: next_check_id: UDLU5-2014 --- #: XXX Markierung in Richtung Westen ist nur provisorisch; Richtung Osten fehlt sie fast komplett --- #: source_id: IM_018997 --- #: source_id: IM_023987 --- #: source_id: IM_025933 --- #: source_id: 2147342831 (bis Ende 2020) --- #: osm_watch: way id="342968607" version="15" --- #: osm_watch: way id="461526152" version="7" --- #: last_checked: 2020-11-19 --- #: check_frequency: 10d
