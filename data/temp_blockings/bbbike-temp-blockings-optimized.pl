@@ -3546,7 +3546,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-10-06 (mapillary)
+#: last_checked: 2021-10-13 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q3::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -3610,15 +3610,14 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        undef,
        {
-         'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
-#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
+         'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
 #: osm_watch: way id="8655276" version="22"
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2021-09-13 (osm)
+#: last_checked: 2021-10-18
 #: check_frequency: 30d
 	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
 ',
@@ -4670,7 +4669,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-10-10
+#: last_checked: 2021-10-18
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -5062,6 +5061,28 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Radweg zwischen Wuhletalstr. und Havemannstr.: Sperrung des Radwegs während der Sanierung, vom 18.10.2021 bis Anfang 2022',
          'type' => 'gesperrt',
          'until' => 1646089200
+       },
+       {
+         'data' => '#: also_indoor: traffic
+#: add_fragezeichen: Wann wird die Sperrung der Fahrbahn beendet?
+#: last_checked: 2021-10-18
+	q3::inwork 16153,10818 16192,10907
+',
+         'from' => undef,
+         'id' => 3464,
+         'text' => 'Giselastr.: Bauarbeiten zwischen Lückstr. und Leopoldstr., Fahrbahn gesperrt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 9940,559 10002,695
+',
+         'from' => 1634421600,
+         'id' => 3465,
+         'source_id' => 'viz2021:13.39486,52.41213,18.10.2021,00:00',
+         'text' => 'Kettinger Str.: zwischen Schillerstr. und Halker Zeile wegen Baustelle gesperrt, evtl. sind auch Radfahrer betroffen, vom 18.10.2021 00:00 bis 26.11.2021 23:59 ',
+         'type' => 'handicap',
+         'until' => 1637967600
        }
      
 );

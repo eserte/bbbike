@@ -2932,6 +2932,7 @@ Busspur gilt immer	RW5; 17151,11801 17121,11806 17028,11821 16962,11833 16803,11
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1134348.php (Sanierung der Fahrbahn/des Radwegs bis 22.10.2021)
 #: source_id: viz2021:13.55623,52.50913,11.10.2021,08:26 (hier nur bis 20.10.2021) (aber die Markierungen brauchen vielleicht auch noch etwas Zeit?)
 #: XXX Grünbeschichtung geplant
+#: last_checked: 2021-10-18
 #: next_check: 2021-10-22
 # REMOVED --- #: next_check: 2021-12-31
 die ersten und letzten Meter werden auf dem Gehweg geführt	RW3; 21108,11628 20764,11675 20571,11698
@@ -3267,12 +3268,12 @@ asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 #: source_id: 2147342363 (bis 30.7.2021)
 #: source_id: LMS-BR_r_LMS-BR_125793_LMS-BR_72 (inaktiv)
 #: source_id: 2147345793 (inaktiv)
-#: source_id: viz2021:13.518934,52.514367,25.01.2021,08:00 (bis 5.11.2021)
+#: source_id: viz2021:13.518934,52.514367,25.01.2021,08:00 (bis 5.11.2021) (inaktiv)
 #: XXX provisorische Radwegführung über den Bürgersteig
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18225,12697 18220,12450
 # REMOVED (wird später vermutlich richtig gemacht) --- provisorische Radspur	RW4; 18220,12450 18216,12262 18216,12239 18216,12209 18215,12123
-#: last_checked: 2021-09-11 vvv
+#: last_checked: 2021-10-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-11-05 vvv
 	RW0; 18215,12123 18216,12209
@@ -3320,7 +3321,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: osm_watch: way id="865716506" version="7"
-#: last_checked: 2021-09-25 vvv
+#: last_checked: 2021-10-18 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-06-01 vvv
 # REMOVED ---	RW0; 21190,12193 21166,12023
@@ -4468,22 +4469,11 @@ durch Bushaltestelle unterbrochen	RW3; 19904,3464 19840,3423
 	RW1;RW1 7979,20528 8055,20708 8081,20785 8092,20817 8107,20859 8158,21022 8277,21257
 # REMOVED --- #: note: Busspur hört einige Meter vor der Ampel auf --- Busspur gilt Mo-Fr 6-18 Uhr	RW0;RW5? 8467,16718 8457,16975
 	RW3;RW3 8467,16718 8457,16975 8449,17196
-	RW4;RW3 16786,11668 16815,11729
-	RW4; 16815,11729 16958,11778
+Grünmarkierung	RW4; 16786,11668 16815,11729 16958,11778
+Grünmarkierung	RW3; 16815,11729 16786,11668 16766,11603
 Busspur ist immer gültig	RW5; 16958,11778 16815,11729
-#: next_check_id: SKANDINAVISCHE-2021
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
-#: by: http://www.infravelo.de/projekt/weitlingstrasse-und-skandinavische-strasse/ (früherer Eintrag) (Grünbeschichtung+Verbreiterung, 2. Quartal 2021 - 3. Quartal 2021)
-#: by: http://www.infravelo.de/projekt/weitlingstrasse-und-skandinavische-strasse-2/
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erstellung eines grünbeschichteten Radfahrstreifens seit Mai 2021, Bauende Dezember 2021)
-#: source_id: viz2021:13.500319,52.510647,28.06.2021,08:00 (inaktiv)
-#: XXX dieser Abschnitt bekommt eine Grünmarkierung
-#: priority: #D
-#: last_checked: 2021-08-29
-#: check_frequency: 60d
-#: next_check: 2021-12-31
-# REMOVED --- #: next_check: 2021-07-22
-	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
+# REMOVED (realisiert) --- #: next_check_id: SKANDINAVISCHE-2021 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?)) --- #: by: http://www.infravelo.de/projekt/weitlingstrasse-und-skandinavische-strasse/ (früherer Eintrag) (Grünbeschichtung+Verbreiterung, 2. Quartal 2021 - 3. Quartal 2021) --- #: by: http://www.infravelo.de/projekt/weitlingstrasse-und-skandinavische-strasse-2/ --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erstellung eines grünbeschichteten Radfahrstreifens seit Mai 2021, Bauende Dezember 2021) --- #: source_id: viz2021:13.500319,52.510647,28.06.2021,08:00 (inaktiv) --- #: XXX dieser Abschnitt bekommt eine Grünmarkierung --- #: priority: #D --- #: last_checked: 2021-08-29 --- #: check_frequency: 60d --- #: next_check: 2021-12-31 --- # REMOVED --- #: next_check: 2021-07-22
+Grünmarkierung	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 Grünmarkierung	RW4;RW4 17166,11944 17210,11950 17338,11969
 	RW3;RW3 2717,7093 2731,7247 2744,7397 2750,7444 2757,7604
 	RW3; 2717,7093 2695,7082 2688,7067 2701,7045 2723,7029 2733,7039 2742,7056 2737,7073 2717,7093
@@ -7201,11 +7191,12 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 #: by: https://viz.berlin.de/2021/08/u6/ (bis 7.10.2021)
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-durchgehenden-und-geschuetzten-weg-an-der-b96_a318755
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
-#: source_id: 2147347065 (bis 17.10.2021)
-#: priority: #A
+#: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
+#: add_fragezeichen: Wurden die provisorischen Radspuren mittlerweile entfernt? vvv
+#: priority: #A vvv
 #: last_checked: 2021-10-09 vvv
 #: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2021-10-08 vvv
+#: next_check: 2021-10-18 vvv
 # REMOVED --- #: valid: -20211007 vvv
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9249,6642 9254,6542 9253,6484 9250,6414 9246,6364 9245,6352 9221,6179 9212,6096 9192,5921 9176,5803 9158,5673 9161,5535 9176,5413 9188,5333 9196,5272 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672
 wegen Hochbauarbeiten nur fängt die Radspur erst nach ca. 70m an	RW4; 9275,4672 9294,4536
@@ -7215,9 +7206,11 @@ provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4
 provisorischer Radweg auf dem Bürgersteig	RW2; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9161,5535 9158,5673 9176,5803 9192,5921 9212,6096 9221,6179 9245,6352 9246,6364 9250,6414 9253,6484 9254,6542 9249,6642
 # REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: priority ^^^
+#: add_fragezeichen ^^^
 # 
 	RW6;RW6 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # 

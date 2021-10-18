@@ -28752,7 +28752,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-10-06 (mapillary)
+#: last_checked: 2021-10-13 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q3::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -29176,7 +29176,6 @@ EOF
        text  => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt', # , von Sonnabend, den 04.09.2021, 14:00 Uhr, bis Montag, den 06.09.2021, 4:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
@@ -29184,7 +29183,7 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
 #: osm_watch: way id="8655276" version="22"
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2021-09-13 (osm)
+#: last_checked: 2021-10-18
 #: check_frequency: 30d
 	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
 EOF
@@ -33180,7 +33179,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-10-10
+#: last_checked: 2021-10-18
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33766,6 +33765,26 @@ EOF
 #: add_fragezeichen: Wann sind die Bauarbeiten hier abgeschlossen und die Sperrung aufgehoben?
 #: next_check: 2022-01-01
 	2::inwork 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Giselastr.: Bauarbeiten zwischen Lückstr. und Leopoldstr., Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic
+#: add_fragezeichen: Wann wird die Sperrung der Fahrbahn beendet?
+#: last_checked: 2021-10-18
+	q3::inwork 16153,10818 16192,10907
+EOF
+     },
+     { from  => 1634421600, # 2021-10-17 00:00
+       until => 1637967600, # 2021-11-27 00:00
+       text  => 'Kettinger Str.: zwischen Schillerstr. und Halker Zeile wegen Baustelle gesperrt, evtl. sind auch Radfahrer betroffen, vom 18.10.2021 00:00 bis 26.11.2021 23:59 ',
+       type  => 'handicap',
+       source_id => 'viz2021:13.39486,52.41213,18.10.2021,00:00',
+       data  => <<EOF,
+	q4::inwork 9940,559 10002,695
 EOF
      },
     );
