@@ -705,7 +705,7 @@ Karl-Heinrich-Ulrichs-Str.	H 6972,10665 6929,10852
 Nollendorfplatz	H 7033,10328 7033,10396
 Kleiststr. (Schöneberg)	HH 6851,10416 7033,10396
 Kleiststr. (Schöneberg)	HH 7033,10328 6971,10346 6937,10363 6851,10416
-Kleiststr. (Schöneberg)	HH 6851,10416 6753,10446 6636,10492 6532,10529 6468,10550 6353,10583
+Kleiststr. (Schöneberg)	HH 6851,10416 6753,10446 6636,10492 6602,10504 6532,10529 6468,10550 6353,10583
 Wittenbergplatz	HH 6228,10646 6292,10627 6353,10583
 Wittenbergplatz	HH 6353,10583 6268,10588 6216,10614
 An der Urania	HH 6532,10529 6685,10690 6740,10755
@@ -781,7 +781,7 @@ Marie-Elisabeth-Lüders-Str.	N 4502,11740 4476,11811 4507,11936
 Fasanenstr. (Charlottenburg, Wilmersdorf)	N 5219,9808 5203,9840 5194,9985 5191,10190 5192,10241 5196,10398 5215,10711 5230,10919 5236,10994 5241,11060 5258,11285
 Fasanenstr. (Charlottenburg, Wilmersdorf)	H 5258,11285 5352,11502 5356,11512 5456,11742
 Meinekestr.	N 5355,10322 5313,10420 5341,10756
-Joachimsthaler Str. (Wilmersdorf, Charlottenburg)	HH 5542,11075 5488,10978 5475,10808 5471,10719 5458,10443 5450,10338
+Joachimsthaler Str. (Wilmersdorf, Charlottenburg)	HH 5542,11075 5488,10978 5475,10808 5471,10719 5462,10523 5458,10443 5450,10338
 Bundesallee	HH 5450,10338 5458,10120 5463,9961
 Bundesallee	HH 5463,9961 5461,9923 5467,9866
 Bundesallee	HH 5467,9866 5464,9934 5463,9961
@@ -15675,8 +15675,11 @@ Joseph-von-Eichendorff-Gasse	N 8318,11324 8373,11301
 Joseph-von-Eichendorff-Gasse	N 8449,11277 8404,11290
 Rudolf-von-Gneist-Gasse	N 8278,11257 8354,11230
 Rudolf-von-Gneist-Gasse	N 8430,11211 8382,11224
-(Eichhornstr. - Reichpietschufer)	NN 8232,11414 8205,11401 8184,11160
-(Eichhornstr. - Reichpietschufer)	NN 8289,11205 8184,11160 8102,11099
+#: osm.highway: service vvv
+(Eichhornstr. - Reichpietschufer)	N 8232,11414 8205,11401 8199,11152
+(Eichhornstr. - Reichpietschufer)	N 8199,11152 8102,11099
+#: osm.highway: ^^^
+(Eichhornstr. - Reichpietschufer)	NN 8289,11205 8234,11173 8199,11152
 Freisinger Str.	N 6723,9433 6445,9432
 Frankenstr. (Schöneberg)	NN 6743,9678 6814,9678
 Frankenstr. (Schöneberg)	N 6814,9678 6891,9678 7028,9678

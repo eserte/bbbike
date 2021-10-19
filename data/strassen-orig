@@ -840,7 +840,7 @@ Nollendorfplatz	H 7033,10328 7033,10396
 Kleiststr. (Schöneberg)	HH 6851,10416 7033,10396
 Kleiststr. (Schöneberg)	HH 7033,10328 6971,10346 6937,10363 6851,10416
 #: carriageway_width: 39m (14m+medial strip=10m+15m) (bzw. östlich An der Urania direkt an der Kreuzung 14m+medial strip=7m+19m)
-Kleiststr. (Schöneberg)	HH 6851,10416 6753,10446 6636,10492 6532,10529 6468,10550 6353,10583
+Kleiststr. (Schöneberg)	HH 6851,10416 6753,10446 6636,10492 6602,10504 6532,10529 6468,10550 6353,10583
 Wittenbergplatz	HH 6228,10646 6292,10627 6353,10583
 Wittenbergplatz	HH 6353,10583 6268,10588 6216,10614
 #: carriageway_width: 53m (13m+medial strip=24m+16m, Kreuzung Kurfürstenstr.) (an der Kreuzung Kleiststr. sogar: 82m (18m+medial strip=40m+24m))
@@ -927,7 +927,7 @@ Meinekestr.	N 5355,10322 5313,10420 5341,10756
 # REMOVE (vor Ort gesehen) --- #: next_check_id: JOACHIMSTHALER-2014 --- #: XXX_indoor Straßenname bekommt in Zukunft ein "h" --- #: XXX_indoor Berlin.coords.data anpassen, _sichtbarer_ oldnames-Eintrag nicht notwendig --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140520.1410.397359.html (Umbenennung wurde beschlossen) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2014 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/32re.pdf/file?y=2014 (Widerspruch) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/37re.pdf/file?y=2014 (Widerspruch zurückgenommen) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140909.1320.399149.html --- #: last_checked: 2014-08-07 --- #: next_check: 2014-09-15
 #: oldname: -20140915: Joachimstaler Str.
 #: ignore_oldname_file: yes
-Joachimsthaler Str. (Wilmersdorf, Charlottenburg)	HH 5542,11075 5488,10978 5475,10808 5471,10719 5458,10443 5450,10338
+Joachimsthaler Str. (Wilmersdorf, Charlottenburg)	HH 5542,11075 5488,10978 5475,10808 5471,10719 5462,10523 5458,10443 5450,10338
 Bundesallee	HH 5450,10338 5458,10120 5463,9961
 Bundesallee	HH 5463,9961 5461,9923 5467,9866
 Bundesallee	HH 5467,9866 5464,9934 5463,9961
@@ -17718,8 +17718,11 @@ Joseph-von-Eichendorff-Gasse	N 8318,11324 8373,11301
 Joseph-von-Eichendorff-Gasse	N 8449,11277 8404,11290
 Rudolf-von-Gneist-Gasse	N 8278,11257 8354,11230
 Rudolf-von-Gneist-Gasse	N 8430,11211 8382,11224
-(Eichhornstr. - Reichpietschufer)	NN 8232,11414 8205,11401 8184,11160
-(Eichhornstr. - Reichpietschufer)	NN 8289,11205 8184,11160 8102,11099
+#: osm.highway: service
+(Eichhornstr. - Reichpietschufer)	N 8232,11414 8205,11401 8199,11152
+#: osm.highway: service
+(Eichhornstr. - Reichpietschufer)	N 8199,11152 8102,11099
+(Eichhornstr. - Reichpietschufer)	NN 8289,11205 8234,11173 8199,11152
 Freisinger Str.	N 6723,9433 6445,9432
 Frankenstr. (Schöneberg)	NN 6743,9678 6814,9678
 Frankenstr. (Schöneberg)	N 6814,9678 6891,9678 7028,9678

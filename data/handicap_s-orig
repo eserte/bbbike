@@ -482,7 +482,8 @@ Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::i
 # 
 ### Kreuzberg ###
 # 
-#: last_checked: 2021-10-09
+#: note: kann außerhalb der Arbeitszeiten geöffnet sein (gesehen: 2021-10-19 gegen 19:00)
+#: last_checked: 2021-10-19
 #: check_frequency: 14d
 Böckhstr.: einige Meter der Fahrbahn gesperrt	q3::inwork 11411,9810 11197,9894
 # 
@@ -573,7 +574,7 @@ Matthäikirchplatz: wegen Bauarbeiten am Museum der Moderne mögliche Behinderunge
 #: source_id: 2147346973 (Fernwärmebaustelle in Höhe Kantstr., bis März 2022)
 #: source_id: 2147346972 (- " -)
 #: source_id: viz2021:13.329043,52.505488,12.03.2021,09:00 (bis 5.3.2022)
-#: last_checked: 2021-07-24
+#: last_checked: 2021-10-19
 #: check_frequency: 90d
 #: next_check: 2022-03-05
 #: valid: -20220305
@@ -1425,7 +1426,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140603.1435.397678.html (Vorlage 096/2014)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
-#: osm_watch: way id="223184082" version="6"
+#: osm_watch: way id="223184082" version="7"
 #: last_checked: 2021-08-03
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
@@ -3665,6 +3666,8 @@ Heidelberger Platz [Bürgersteig]: einige Fußgänger	q2 4173,7993 4121,8016
 (IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8221,7018 8211,7034 8077,7040 8053,7061 8057,7080 8078,7101 8057,7163 8020,7185 7924,7185 7834,7131 7823,7083 7816,6953 7845,6930 7968,6927 7991,6938 8071,7006 8078,7029 8077,7040
 (IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8078,7029 8210,7024
 Sterndamm, zur Nebenfahrbahn: Gehweg	q4 17648,5338 17697,5347
+(Eichhornstr. - Reichpietschufer): einige Fußgänger	q2 8289,11205 8234,11173
+Theaterufer: einige Fußgänger	q1 8289,11205 8261,11015
 # 
 ######################### User Contributions #################################
 # 
