@@ -1157,7 +1157,6 @@ Kirchhofstr.	1s 13188,7590 13117,7471 13029,7353
 Björnsonstr	1s 10209,16674 10197,16528
 Ibsenstr.	1s 10295,16667 10209,16674
 Eichhornstr.	1s 8232,11414 8253,11306 8280,11296
-Ahornallee	1s 1589,11483 1574,11379
 Lindenallee	1s 1429,11528 1403,11428
 Gramzow (Dorfstr.?)	1s 49779,90206 49810,90444
 Alt-Tegel	1s 1668,20156 1753,20191 1907,20265
@@ -1310,7 +1309,7 @@ Altenescher Weg -> Kniprodestr.: Grünstreifen	3::igndisp 13758,15009 13744,15018
 Mittelstreifen	3nocross::ignrte 19578,6165 19405,6276 19276,6359
 An der Wuhlheide -> Treskowstr.: Mittelstreifen	3::igndisp 19578,6165 19405,6276 19333,6165
 Treskowstr. -> An der Wuhlheide: Mittelstreifen	3::igndisp 19333,6165 19405,6276 19276,6359
-nicht überquerbar	3nocross::ignrte 504,11243 571,11255 704,11273
+nicht überquerbar	3nocross::ignrte 504,11243 571,11255 683,11270
 Mittelstreifen	3nocross::ignrte -4078,11800 -4033,11786 -3820,11721 -3708,11686
 Südpark -> Heerstr.: Mittelstreifen	3::igndisp -4030,11794 -4033,11786 -3820,11721
 Mittelstreifen	3nocross::ignrte -3481,14523 -3498,14413 -3501,14365 -3506,14306
@@ -2957,7 +2956,7 @@ sehr enge Stelle	BNP:0:-188:trailer=no 31909,2802
 sehr enge Stelle	BNP:0:-255:trailer=no 1186,13529
 sehr enger Weg	BNP:0:-101:trailer=no 12515,22898
 am Oder-Spree-Kanal: teilweise enger Pfad	BNP:0:-253:trailer=no 29457,-2835
-Gummiweg: ein Befahren mit Anhänger ist nahezu ausgeschlossen	BNP:0:-255:trailer=no -7891,13616
+Gummiweg: ein Befahren mit Anhänger ist nahezu ausgeschlossen	BNP:0:-258:trailer=no -7884,13614
 steiler Weg	BNP:0:-233:trailer=no -2046,12036
 steiler Weg	BNP:0:29:trailer=no -1431,12284
 enger Pfad	BNP:0:80:trailer=no 17952,16675
@@ -3453,7 +3452,7 @@ Fröhner Str.	1 -4302,11669 -4432,11621 -4590,11541
 Bocksfeldstr.	1 -4312,11720 -4101,11708
 Roedeliusweg	1 -4432,11621 -4444,11772
 Bollmannweg	1 -4444,11772 -4310,11770
-Weinmeisterhornweg	1s -4798,11231 -4581,11183
+Weinmeisterhornweg	1s -4798,11231 -4579,11174
 Heerstr.	3nocross::ignrte -1523,11012 -1288,11037 -1050,11061
 Heerstr. -> Passenheimer Str.: Heerstr.	3::igndisp -1523,11012 -1288,11037 -1304,11183
 Passenheimer Str. -> Heerstr.: Heerstr.	3::igndisp -1304,11183 -1288,11037 -1050,11061

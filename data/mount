@@ -765,6 +765,8 @@ Steigung 2.7% (Mehringdamm)	St; 9225,9038 9226,8967
 Steigung 2.7% (Mehringdamm)	St; 9224,9053 9225,9038
 Steigung 2.7% (Lausanner Str.)	St; 3655,2210 3633,2210
 Steigung 2.7% (Kronprinzessinnenweg)	St; -4188,2674 -4001,2858
+Steigung 2.7% (Keltererweg)	St; -4321,11056 -4376,11046
+Steigung 2.7% (Keltererweg)	St; -4308,11114 -4321,11056
 Steigung 2.7% (Isarstr.)	St; 12368,8356 12382,8292
 Steigung 2.7% (Hundekehlestr.)	St; 2565,7637 2460,7658
 Steigung 2.7% (Horber Str.)	St; 4724,22780 4771,22696
@@ -897,8 +899,6 @@ Steigung 2.5% (Kurhausstr.)	St; 2932,24056 2824,24212
 Steigung 2.5% (Krampnitzer Weg)	St; -9015,4978 -8806,4957
 Steigung 2.5% (Knesebeckstr. (Lichterfelde))	St; 3151,4160 3054,4094
 Steigung 2.5% (Knesebeckstr. (Lichterfelde))	St; 3054,4094 3033,4113
-Steigung 2.5% (Keltererweg)	St; -4321,11056 -4376,11046
-Steigung 2.5% (Keltererweg)	St; -4306,11126 -4321,11056
 Steigung 2.5% (Joachim-Friedrich-Str.)	St; 3083,9796 3069,9622
 Steigung 2.5% (Inselstr. (Nikolassee))	St; -5021,4110 -5243,4212
 Steigung 2.5% (Inselstr. (Nikolassee))	St; -4964,4100 -5021,4110
@@ -1016,7 +1016,7 @@ Steigung 2.4% ((Mauerweg Spandau))	St; -5564,11209 -5742,11314
 Steigung 2.3% (Zernsdorfer Str.)	St; 22394,11895 22408,11940
 Steigung 2.3% (Zernsdorfer Str.)	St; 22333,11846 22394,11895
 Steigung 2.3% (Weinstr.)	St; 11909,13387 11992,13467
-Steigung 2.3% (Weinmeisterhornweg)	St; -4264,11117 -4306,11126
+Steigung 2.3% (Weinmeisterhornweg)	St; -4265,11109 -4308,11114
 Steigung 2.3% (Wallenbergstr.)	St; 4457,8484 4457,8372
 Steigung 2.3% (Wallenbergstr.)	St; 4457,8372 4473,8351
 Steigung 2.3% (Uferpromenade)	St; -8950,6853 -8922,6890
@@ -1046,7 +1046,7 @@ Steigung 2.3% (Lierbacher Weg)	St; 5152,22809 5260,22634
 Steigung 2.3% (Liebigstr.)	St; 13991,12522 14058,12709
 Steigung 2.3% (Kienitzer Str.)	St; 12823,8028 12692,7996
 Steigung 2.3% (Kellerstr.)	St; 6312,4806 6385,4896
-Steigung 2.3% (Hölderlinstr.)	St; 1781,11510 1589,11483
+Steigung 2.3% (Hölderlinstr.)	St; 1781,11510 1586,11483
 Steigung 2.3% (Horchheimer Weg)	St; 27949,182 27825,295
 Steigung 2.3% (Helmstr.)	St; 7382,9187 7444,9148
 Steigung 2.3% (Heinrich-Grüber-Str.)	St; 22842,12070 22693,12084
@@ -1526,6 +1526,7 @@ Steigung 1.8% (Johann-Sigismund-Str.)	St; 2974,10081 2975,10053
 Steigung 1.8% (Hüttenweg (Grunewald, Dahlem))	St; 884,5974 894,5829
 Steigung 1.8% (Heiligendammer Str.)	St; 3189,7249 3085,7211
 Steigung 1.8% (Heesestr. (Steglitz))	St; 5276,5622 5274,5557
+Steigung 1.8% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; -3069,11487 -2871,11423
 Steigung 1.8% (Handjerystr. (Friedenau))	St; 5641,7332 5642,7255
 Steigung 1.8% (Gutachstr.)	St; 4716,22535 4800,22412
 Steigung 1.8% (Gustavstr. (Mahlsdorf))	St; 25022,10715 24928,10737
@@ -1772,7 +1773,6 @@ Steigung 1.6% (Johannes-Tobei-Str.)	St; 21421,158 21487,173
 Steigung 1.6% (Hüttenweg (Grunewald, Dahlem))	St; 218,6571 -138,6681
 Steigung 1.6% (Hubertusallee)	St; 2322,8857 2337,9178
 Steigung 1.6% (Hohenzollerndamm)	St; 4224,9241 4096,9175
-Steigung 1.6% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; -3069,11487 -2851,11417
 Steigung 1.6% (Hedwig-Dohm-Str.)	St; 7600,7605 7696,7771
 Steigung 1.6% (Havelchaussee)	St; -3578,8578 -3389,8624
 Steigung 1.6% (Hauptstr. (Schöneberg, Friedenau))	St; 7363,9152 7354,9135
@@ -1848,7 +1848,6 @@ Steigung 1.5% (Spreetalallee)	St; 715,13126 729,12972
 Steigung 1.5% (Spandauer Damm)	St; -442,13058 -264,13009
 Steigung 1.5% (Sensburger Allee)	St; 45,11482 200,11428
 Steigung 1.5% (Schonacher Str.)	St; 4917,22662 5006,22507
-Steigung 1.5% (Sandheideweg)	St; -4560,11283 -4581,11183
 Steigung 1.5% (Sandbacher Weg)	St; 22146,-1183 21930,-1159
 Steigung 1.5% (Rudolf-Rühl-Allee)	St; 20510,7325 20616,7292
 Steigung 1.5% (Rudolf-Rühl-Allee)	St; 20393,7404 20510,7325
@@ -1893,7 +1892,7 @@ Steigung 1.5% (Heilbronner Str. (Halensee))	St; 2985,10534 2849,10445
 Steigung 1.5% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; -848,11086 -1050,11061
 Steigung 1.5% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; -779,11093 -848,11086
 Steigung 1.5% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; -3173,11520 -3069,11487
-Steigung 1.5% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; -2851,11417 -2476,11301
+Steigung 1.5% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; -2871,11423 -2476,11301
 Steigung 1.5% (Heerstr. (Westend, Wilhelmstadt, Staaken))	St; -2476,11301 -2413,11283
 Steigung 1.5% (Halenseestr.)	St; 2104,10494 2086,10552
 Steigung 1.5% (Habichtstr. (Bohnsdorf))	St; 22553,-756 22458,-742
@@ -1950,7 +1949,6 @@ Steigung 1.5% ((Berliner Balkon - Gründerzeitmuseum))	St; 24422,10972 24455,1094
 Steigung 1.5% ((Berliner Balkon - Gründerzeitmuseum))	St; 24341,10982 24422,10972
 Steigung 1.5% ((Berliner Balkon - Gründerzeitmuseum))	St; 24283,10960 24341,10982
 Steigung 1.5% ((Berliner Balkon - Gründerzeitmuseum))	St; 24239,10975 24283,10960
-Steigung 1.4% (für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr (bleibt die Absperrung des Radwegs permanent?))	St; 2532,9911 2590,9949
 Steigung 1.4% (Zabel-Krüger-Damm)	St; 5815,22870 5951,22935
 Steigung 1.4% (Zabel-Krüger-Damm)	St; 5777,22852 5815,22870
 Steigung 1.4% (Zabel-Krüger-Damm)	St; 5661,22797 5777,22852
@@ -1985,6 +1983,7 @@ Steigung 1.4% (Schäferstr. (Wannsee))	St; -7449,348 -7474,341
 Steigung 1.4% (Schenkendorf - Krummensee)	St; 24711,-15628 24721,-15837
 Steigung 1.4% (Sausenberger Str.)	St; 21468,-338 21463,-280
 Steigung 1.4% (Sausenberger Str.)	St; 21463,-434 21468,-338
+Steigung 1.4% (Sandheideweg)	St; -4560,11283 -4579,11174
 Steigung 1.4% (Salierstr.)	St; 20226,1416 20196,1325
 Steigung 1.4% (Sachsendamm)	St; 7001,8161 7073,8081
 Steigung 1.4% (Rüdigerstr. (Lichtenberg))	St; 17218,12281 17184,12286
@@ -2022,6 +2021,7 @@ Steigung 1.4% (Königstr. (Wannsee))	St; -6065,1222 -6053,1224
 Steigung 1.4% (Königstr. (Wannsee))	St; -6053,1224 -6006,1234
 Steigung 1.4% (Königstr. (Wannsee))	St; -6006,1234 -5952,1245
 Steigung 1.4% (Kurpromenade)	St; -8804,6818 -8732,6840
+Steigung 1.4% (Kurfürstendamm)	St; 2532,9911 2590,9949
 Steigung 1.4% (Krummensee - Bestensee)	St; 24721,-15837 24571,-16024
 Steigung 1.4% (Krummensee - Bestensee)	St; 24571,-16024 24515,-16318
 Steigung 1.4% (Kolberger Str. (Gesundbrunnen))	St; 8315,15293 8518,15506
@@ -2241,7 +2241,7 @@ Steigung 1.2% (Wilhelm-Hauff-Str.)	St; 5824,6974 5959,6976
 Steigung 1.2% (Westfälische Str.)	St; 3225,9844 3092,9886
 Steigung 1.2% (Westendallee)	St; 232,12207 262,12085
 Steigung 1.2% (Weinmeisterhornweg)	St; -6460,12169 -6305,12048
-Steigung 1.2% (Weinmeisterhornweg)	St; -4581,11183 -4798,11231
+Steigung 1.2% (Weinmeisterhornweg)	St; -4579,11174 -4798,11231
 Steigung 1.2% (Weinbergsweg)	St; 10209,13854 10263,13977
 Steigung 1.2% (Weinbergsweg)	St; 10193,13816 10209,13854
 Steigung 1.2% (Weinbergsweg)	St; 10177,13766 10193,13816

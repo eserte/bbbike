@@ -48,9 +48,9 @@ Ilsensteinweg -> B1: Ampel	DH:tl -1724,2743 -1626,2441 -1340,2554
 Ladenbergstr. -> Altensteinstr.: Fußgängerampel auf der linken Seite benutzen	DH:t=20 2858,4372 2997,4378 3037,4500
 Ladenbergstr. -> Habelschwerdter Allee: Fußgängerampel auf der linken Seite benutzen	DH:t=10 2858,4372 2997,4378 2852,4584
 Alemannenallee -> Badenallee: Fußgängerampel	DH:len=90:tl 1070,11226 943,11302 743,11462
-Alemannenallee -> Heerstr.: Fußgängerampel	DH:len=70:tl 1070,11226 943,11302 704,11273
+Alemannenallee -> Heerstr.: Fußgängerampel	DH:len=70:tl 1070,11226 943,11302 683,11270
 Badenallee -> Alemannenallee: Fußgängerampel, linker Gehweg	DH:len=90:tl:h=q3,85 743,11462 943,11302 1070,11226
-Heerstr. -> Badenallee: Fußgängerampel	DH:len=200:tl 704,11273 943,11302 743,11462
+Heerstr. -> Badenallee: Fußgängerampel	DH:len=200:tl 683,11270 943,11302 743,11462
 Bundesallee/Spichernstr.: zusätzliche Ampel	DH:tl 5464,9934 5463,9961 5458,10120
 Bundesallee/Spichernstr.: zusätzliche Ampel	DH:tl 5464,9934 5463,9961 5246,10168
 Bundesallee/Spichernstr.: zusätzliche Ampel	DH:tl 5464,9934 5463,9961 5461,9923
@@ -166,3 +166,5 @@ Sterndamm: Umweg für Radfahrer, weitere Ampel	DH:tl:len=150 17705,5223 17648,533
 Sterndamm: Umweg für Radfahrer, weitere Ampel	DH:tl:len=150 17705,5223 17648,5338 17601,5090
 Krügerstr. - Prenzlauer Allee: linker Gehweg	DH:h=q3,50 12013,16120 12075,16144 12090,16199
 Wisbyer Str. - Dunckerstr.: linker Gehweg	DH:h=q3,90 12090,16199 12012,16250 11926,16088
+Kurfürstendamm - Bornstedter Str.: linker Geh/Radweg	DH:h=q3,70 2532,9911 2590,9949 2551,9995
+Bornstedter Str. - Kurfürstendamm: linker Geh/Radweg	DH:h=q3,120 2551,9995 2590,9949 2694,10002

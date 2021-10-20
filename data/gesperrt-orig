@@ -1267,7 +1267,7 @@ Waldstr.	1 9961,19513 10002,19418
 # REMOVED --- #: next_check_id: UBAHN1-2020 --- #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510 --- #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021 --- 
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022)
-#: last_checked: 2021-10-19
+#: last_checked: 2021-10-20
 #: check_frequency: 90d
 #: next_check: 2022-01-12
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1699,17 +1699,11 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer offen? vvv
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
 #: by: http://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee)
-#: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage)
-#: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage)
-#: osm_watch: way id="850742955" version="1"
-#: last_checked: 2021-09-05
-#: check_frequency: 180d
-#: next_check: 2021-09-10
-Ahornallee	1s:q3 1589,11483 1574,11379
+# REMOVED (Umbau ist erfolgt) --- #: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage) --- #: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage) --- #: osm_watch: way id="850742955" version="1" --- #: last_checked: 2021-09-05 --- #: check_frequency: 180d --- #: next_check: 2021-09-10 --- Ahornallee	1s:q3 1586,11483 1566,11409 1574,11379
 #: osm_watch: way id="24852084" version="11"
-#: last_checked: 2021-03-20
-#: check_frequency: 180d
-#: next_check: 2021-12-31
+#: last_checked: 2021-10-20
+#: check_frequency: 120d
+# REMOVED --- #: next_check: 2021-12-31
 Lindenallee	1s:q3 1429,11528 1403,11428
 #: by: ^^^
 #: add_fragezeichen ^^^
@@ -1798,7 +1792,7 @@ Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16090,10141 16117,10120 16138,
 #: confirmed_by: srt
 Kniprodestr.: Grünstreifen	3nocross 13647,14912 13744,15018 13823,15111
 An der Wuhlheide: Mittelstreifen	3nocross 19578,6165 19405,6276 19276,6359
-Heerstr.: nicht überquerbar	3nocross 504,11243 571,11255 704,11273
+Heerstr.: nicht überquerbar	3nocross 504,11243 571,11255 683,11270
 Heerstr.: Mittelstreifen	3nocross -4078,11800 -4033,11786 -3820,11721 -3708,11686
 #: by: Sabine (schaeffler)
 Altstädter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3501,14365 -3506,14306
@@ -2992,7 +2986,7 @@ sehr enger Weg	BNP:0::trailer=no 12515,22898
 am Oder-Spree-Kanal: teilweise enger Pfad	BNP:0::trailer=no 29457,-2835
 #: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
 #: by: Stefan Klinkusch
-Gummiweg: ein Befahren mit Anhänger ist nahezu ausgeschlossen	BNP:0::trailer=no -7891,13616
+Gummiweg: ein Befahren mit Anhänger ist nahezu ausgeschlossen	BNP:0::trailer=no -7884,13614
 #: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
 steiler Weg	BNP:0::trailer=no -2046,12036
 #: XXX_prog: "künstlicher" Eintrag, um Anhänger auszusperren, siehe auch handicap_s
@@ -4342,7 +4336,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="21"
 #: also_indoor: traffic
-#: last_checked: 2021-09-24
+#: last_checked: 2021-10-20
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
@@ -4419,7 +4413,7 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 # REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7"
 #: osm_watch: way id="940764588" version="2"
 #: osm_watch: way id="940764584" version="1"
-#: last_checked: 2021-10-13
+#: last_checked: 2021-10-20
 #: check_frequency: 360d
 #: next_check: 2023-06-30
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
@@ -4682,7 +4676,7 @@ Fröhner Str.	1 -4302,11669 -4432,11621 -4590,11541
 Bocksfeldstr.	1 -4312,11720 -4101,11708
 Roedeliusweg	1 -4432,11621 -4444,11772
 Bollmannweg	1 -4444,11772 -4310,11770
-Weinmeisterhornweg	1s -4798,11231 -4581,11183
+Weinmeisterhornweg	1s:q3 -4798,11231 -4579,11174
 #: note: keine Verbindung zur südlichen Nebenfahrbahn
 Heerstr.	3nocross -1523,11012 -1288,11037 -1050,11061
 Heerstr.	3nocross -4515,11935 -4438,11910 -4311,11872

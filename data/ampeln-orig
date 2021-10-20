@@ -124,7 +124,7 @@ Roelckestr./Lehderstr.: temporäre Ampel	X::inwork 12842,16032
 #: add_fragezeichen: Gibt es noch immer eine Gegenverkehrsregelung?
 #: source_id: 2147347174 (bis 19.7.2021)
 #: source_id: viz2021:13.440334,52.59161,06.05.2021,09:00 (bis 30.9.2021, Gesamtmaßnahme bis Anfang 2022) (mittlerweile inaktiv)
-#: last_checked: 2021-08-23 (mapillary) vvv
+#: last_checked: 2021-10-16 (mapillary) vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-07-16 vvv
 #: valid: 20210222- vvv
@@ -826,9 +826,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX_prog nicht relevant beim Fahren von der Heerstr. auf den Platz
 	X 1381,11335
 #: XXX_prog Richtung Osten zwei Ampeln, Zeitverlust, da gegeneinander geschaltet
-	X 704,11273
+	X 683,11270
 	X 1457,10168
 	X 4342,9301
+#: XXX_prog für rechtsabbiegende Radfahrer in der Relation Westfälische Str. - Brandenburgische Str. nicht relevant 
 	X 4246,9406
 	X 4057,9648
 	X 4011,9474
@@ -860,6 +861,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -4110,15367
 	X -3552,14082
 	X -3721,14495
+#: XXX_prog gilt nicht für rechtsabbiegende Radfahrer in der Relation Ruhlebener Str. - Klosterstr.
 	X -3625,13889
 	X 653,12109
 	X 620,12144
@@ -955,7 +957,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3427,9771
 	X 3348,9806
 	X 3092,9886
-	X 2482,9870
+	X 2473,9861
 	X 2532,9911
 	X 1557,10306
 #: note: ausgeschaltet (gesehen 2017-02-18 gegen 0:00)
@@ -1113,6 +1115,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3820,10987
 	X 2192,12402
 	X 2151,12397
+#: XXX_prog: gilt nicht für stadtauswärts fahrende Radfahrer auf dem Radweg
 	X 795,12652
 	X -129,12947
 	X -264,13009
@@ -1134,7 +1137,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -3692,11681
 	X -4515,11935
 	X -4903,12055
-	X -2851,11417
+	X -2871,11423
 	X -2222,11225
 	X 9621,3155
 	X 9720,2887
@@ -1353,6 +1356,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6147,10383
 	X 7600,7605
 	X -1284,13340
+#: XXX_prog: gilt nicht für stadtauswärts fahrende Radfahrer auf dem Radweg
 	X -1337,13354
 	X -1560,13418
 	X 5627,10637
@@ -2040,6 +2044,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5189,9397
 	X 4957,9437
 	F 5799,6841
+#: XXX_prog: gilt nicht für stadtauswärts fahrende Radfahrer auf dem Radweg
 	X -772,13199
 	X 3965,7297
 	X 3084,7599
@@ -2969,7 +2974,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2021-09-24
+#: last_checked: 2021-10-10 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-11-15
 	X::inwork 8732,14098
@@ -3222,7 +3227,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: vermutlich nur an Werktagen angeschaltet
 #: off: weekend (seen 2017-07-15 11:45 (Sat))
 	X -1947,14394
-#: XXX_prog Ampel gilt nicht für Radfahrer, zumindest Richtung Westen
+#: XXX_prog Ampel gilt nicht für Radfahrer auf dem Radweg, zumindest Richtung Westen
 	F 546,12720
 	X 12185,23021
 #: note: Anforderungsampel für Radfahrer
@@ -3276,7 +3281,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5364,7330
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2021-09-24
+#: last_checked: 2021-10-10 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-11-15
 	X::inwork 8336,14586

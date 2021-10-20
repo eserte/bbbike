@@ -4352,7 +4352,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-10-15
+#: last_checked: 2021-10-20
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4861,12 +4861,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: XXX laut Baustellenschild der Wasserbetriebe bis Dezember 2021
+#: XXX mittlerweile wurde der Bereich verkleinert, der südliche Bereich ist offen
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-08-02
+#: last_checked: 2021-10-20
 #: check_frequency: 90d
 #: next_check: 2021-12-01
-	q4::inwork; 7771,9479 7829,9723
+	q3::inwork; 7771,9479 7829,9723
 ',
          'from' => undef,
          'id' => 3364,
@@ -5475,6 +5476,57 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Giselastr.: Bauarbeiten zwischen Lückstr. und Leopoldstr., Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       undef,
+       {
+         'data' => '#: XXX bleibt das dauerhaft so?
+#: last_checked: 2021-10-20
+#: check_frequency: 360d
+	2 -7663,15304 -7747,15315
+',
+         'from' => undef,
+         'id' => 3466,
+         'text' => 'Zeestower Weg - Finkenkruger Weg: ein Abschnitt laut Schild für Unbefugte verboten',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: SCHARFELANKE-2021
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
+#: last_checked: 2021-10-20 vvv
+#: check_frequency: 60d vvv
+	2::inwork -3752,11373 -3785,11445 -3828,11491 -3928,11526 -4028,11533 -4106,11519 -4181,11458 -4204,11432 -4245,11400
+	2::inwork -4246,11438 -4204,11432
+	2::inwork -3928,11526 -3909,11596
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => undef,
+         'id' => 3467,
+         'text' => 'Uferweg an der Scharfen Lange: Bauarbeiten, komplett gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '	2::inwork 1282,21118 1275,21094 1113,21003 976,21009 902,20988 817,20953 625,20738
+',
+         'from' => 1635026400,
+         'id' => 3468,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1137594.php',
+         'text' => 'Schwarzer Weg: Fahrbahnausbesserung zwischen Heiligenseestraße und Dicke Marie, Sperrung vom 25. bis zum 29. Oktober 2021',
+         'type' => 'gesperrt',
+         'until' => 1635544799
+       },
+       {
+         'data' => '	q4::inwork 9207,11880 9218,11793
+',
+         'from' => 1634882400,
+         'id' => 3469,
+         'source_id' => 'viz2021:13.387096,52.510605,23.10.2021,08:00',
+         'text' => 'Mauerstr.: Sperrung zwischen Mohrenstr. und Taubenstr., vom 23.10.2021 08:00 Uhr bis 24.10.2021 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1635087600
        }
      
 );

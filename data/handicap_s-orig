@@ -212,7 +212,7 @@ Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehw
 #: next_check_id: CHAUSSEE-2020
 #: source_id: 2147346552 (bis 16.7.2021)
 #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaﬂnahme bis Ende 2022)
-#: last_checked: 2021-09-24
+#: last_checked: 2021-10-10 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-11-15
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -3265,7 +3265,7 @@ entlang des Friedhofs Heerstr.: Gef‰lle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://viz.berlin.de/2020/03/verkehrsvorschau-fuer-freitag-06-03-2020/ (wird bei der Sanierung der Bushaltestelle auch was am Radweg gemacht?)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10410
 #: by: http://altstadtmanagement-spandau.de/isek-spandau/projekte-und-massnahmen/ (Neugestaltung Rathausvorplatz: Erw‰hnung der Radwegf¸hrung)
-#: last_checked: 2021-05-24 vvv
+#: last_checked: 2021-10-20 vvv
 #: check_frequency: 150d vvv
 Rathaus Spandau: Bushaltestelle, viel Fuﬂg‰ngerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
 Rathaus Spandau: Bushaltestelle, viel Fuﬂg‰ngerverkehr	q3; -3511,14260 -3517,14218 -3552,14082
@@ -3273,10 +3273,10 @@ Rathaus Spandau: Bushaltestelle, viel Fuﬂg‰ngerverkehr	q3; -3511,14260 -3517,142
 #: last_checked ^^^
 # 
 Spreeufer - Wiesendamm: kurze starke Steigung	q3; -280,13318 -287,13308 -285,13276 -309,13268
-#: note: eigentlich als Fuﬂweg gekennzeichnet vvv
-#: XXX_prog BS: ohne q1
-Hermann-Schmidt-Weg: Bordstein, Fuﬂg‰nger	q2 -5404,15920 -5325,15896
-Hermann-Schmidt-Weg: Fuﬂg‰nger	q1 -5325,15896 -5261,15900 -5061,15847
+#: note: an der Ostseite eigentlich als Fuﬂweg gekennzeichnet, keine Ausschilderung an der Westseite vvv
+#: XXX_prog BS: ohne q3
+Hermann-Schmidt-Weg: Bordstein, Fuﬂg‰nger	q4 -5404,15920 -5325,15896
+Hermann-Schmidt-Weg: Fuﬂg‰nger	q3 -5325,15896 -5261,15900 -5061,15847
 #: note ^^^
 (Weg am Grimbartgraben): einige Fuﬂg‰nger	q1 -1647,22153 -1482,22104 -1398,22050 -1148,21872 -1023,21788 -947,21737 -795,21685 -727,21676
 Mauerweg: schmaler Weg	q1 -1953,24435 -1940,24464 -1655,24428 -972,24498 -822,24540
@@ -3668,6 +3668,8 @@ Heidelberger Platz [B¸rgersteig]: einige Fuﬂg‰nger	q2 4173,7993 4121,8016
 Sterndamm, zur Nebenfahrbahn: Gehweg	q4 17648,5338 17697,5347
 (Eichhornstr. - Reichpietschufer): einige Fuﬂg‰nger	q2 8289,11205 8234,11173
 Theaterufer: einige Fuﬂg‰nger	q1 8289,11205 8261,11015
+Kapellenweg: eng, Fuﬂg‰nger	q3 -4259,11267 -4437,11256 -4560,11283
+Finkenweg: eng, Finkenweg	q3 -4457,11149 -4437,11256
 # 
 ######################### User Contributions #################################
 # 
@@ -5396,7 +5398,7 @@ Lee-Parry-Weg: schwieriges Befahren durch Steigung, in beiden Richtungen	q3 -509
 #: note: "... ist aber dennoch benutzbar"
 (Strittweg - Straﬂe 270): teilweise durch hereinragende Pflanzen wie Brennnesseln eingeengt	q2 -5256,11142 -5312,10948
 Litta-von-Stauffenberg-Weg: schmaler Rad- und Gehweg (1,5m-2m)	q1 -7009,5211 -7174,5307
-Scharfe Lanke: enge Straﬂe	q0- -4264,11117 -4266,11008 -4292,10888 -4284,10834 -4223,10714 -4223,10671 -4302,10584 -4387,10496 -4413,10447 -4445,10379
+Scharfe Lanke: enge Straﬂe	q0- -4265,11109 -4266,11008 -4292,10888 -4284,10834 -4223,10714 -4223,10671 -4302,10584 -4387,10496 -4413,10447 -4445,10379
 (Schiffahrtsufer - Betckestr.): einige Fuﬂg‰nger	q1 -3441,13270 -3352,13135 -3337,13111 -3230,12938 -3228,12920 -3208,12889 -3211,12868 -3211,12784 -3170,12603
 (Schiffahrtsufer - Betckestr.): einige Fuﬂg‰nger	q1 -3221,12925 -3199,12888 -3205,12816 -3180,12719 -3142,12615
 (zum R‰cknitzer Steig): einige Fuﬂg‰nger	q1 -5535,12631 -5559,12557
@@ -5410,7 +5412,8 @@ Lohrer Pfad: kombinierter Fuﬂ- und Radweg, eng	q3 -8386,14882 -8295,14948
 (Bahnweg, KGA Gartenbauverein Staaken): sehr enger Weg, einige Fuﬂg‰nger	q3 -7433,14308 -7340,14320 -7184,14310 -6942,14291 -6943,14262 -6937,14262
 #: XXX_prog: BS Bordstein am Perwenitzer Weg
 Perwenitzer Weg: Bordstein	q3 -3924,15915 -3942,15926
-Gummiweg: sehr eng, zwei entgegengesetzt fahrende Radfahrer kˆnnen einander nur schwierig passieren	q3 -7891,13616 -7917,13505 -7971,13467
+#: confirmed_by: srt
+Gummiweg: sehr eng, zwei entgegengesetzt fahrende Radfahrer kˆnnen einander nur schwierig passieren	q3 -7879,13613 -7917,13505 -7971,13467
 #: confirmed_by: anonymous
 Ederkopfweg: enge Straﬂe	q0- -4729,14958 -4761,14961 -4807,14990 -4879,15008
 Iznikstr.: enge Straﬂe	q0- -2140,16909 -2119,17015
