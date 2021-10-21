@@ -333,12 +333,14 @@ install_perl_dependencies() {
 	    # In the process EUMM would be upgraded, but the current latest stable
 	    # is broken (see https://rt.cpan.org/Ticket/Display.html?id=121924), so
 	    # use another one.
+	    #
+	    # PERL_CPM_OPT can be defined, for example to set --sudo if needed
 	    cpanm --quiet --notest 'ExtUtils::MakeMaker~!=7.26' 'App::cpm~>=0.293' LWP::Protocol::https
 	    perl Makefile.PL
 	    mymeta-cpanfile > cpanfile~ && mv cpanfile~ cpanfile
 	    # implement suggestion for more diagnostics in case of failures
 	    # https://github.com/skaji/cpm/issues/51#issuecomment-261754382
-	    if ! cpm install -g -v; then cat ~/.perl-cpm/build.log; false; fi
+	    if ! cpm $PERL_CPM_OPT install -g -v; then cat ~/.perl-cpm/build.log; false; fi
 	    rm cpanfile
 	fi
     fi
