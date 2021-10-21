@@ -5509,7 +5509,8 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'until' => undef
        },
        {
-         'data' => '	2::inwork 1282,21118 1275,21094 1113,21003 976,21009 902,20988 817,20953 625,20738
+         'data' => '#: by: https://www.berliner-woche.de/tegel/c-verkehr/fuenf-tage-umleitung_a325949
+	2::inwork 1282,21118 1275,21094 1113,21003 976,21009 902,20988 817,20953 625,20738
 ',
          'from' => 1635026400,
          'id' => 3468,

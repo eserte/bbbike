@@ -33831,6 +33831,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1137594.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/tegel/c-verkehr/fuenf-tage-umleitung_a325949
 	2::inwork 1282,21118 1275,21094 1113,21003 976,21009 902,20988 817,20953 625,20738
 EOF
      },
