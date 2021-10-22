@@ -35,15 +35,20 @@ my $image_api_url = 'https://graph.mapillary.com/images';
 
 my $ua = LWP::UserAgent->new(keep_alive => 1);
 
+my $capture_date = shift
+    or die "Please specify capture date (YYYY-MM-DD)\n";
+@ARGV and die "usage!";
+my($y,$m,$d) = split /-/, $capture_date;
+if (!$d) {
+    die "capture date cannot be parsed";
+}
+
 my $bbox = Geography::Berlin_DE->new->bbox_wgs84;
-my $capture_date = "2021-10-20";
 my $start_captured_at = do {
-    my($y,$m,$d) = split /-/, $capture_date;
     timelocal(0,0,0,$d,$m-1,$y);
 #    timelocal(0,0,12,$d,$m-1,$y);
 };
 my $end_captured_at = do {
-    my($y,$m,$d) = split /-/, $capture_date;
     timelocal(59,59,23,$d,$m-1,$y) + 1;
 #    timelocal(59,14,12,$d,$m-1,$y) + 1;
 };
