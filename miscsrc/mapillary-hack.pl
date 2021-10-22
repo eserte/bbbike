@@ -34,6 +34,8 @@ my $client_token = $conf->{client_token} || die "Can't get client_token from $co
 
 my $image_api_url = 'https://graph.mapillary.com/images';
 
+my $region = 'Berlin_DE';
+
 GetOptions(
 	   "to-file" => \my $to_file,
 	   "open"    => \my $do_open,
@@ -54,14 +56,14 @@ if (!$d) {
 
 my($ofh, $output_filename);
 if ($to_file) {
-    $output_filename = "$ENV{HOME}/.bbbike/mapillary_v4/Berlin_DE/$y/" . sprintf("%04d%02d%02d", $y, $m, $d) . ".bbd";
+    $output_filename = "$ENV{HOME}/.bbbike/mapillary_v4/$region/$y/" . sprintf("%04d%02d%02d", $y, $m, $d) . ".bbd";
     open $ofh, ">", "$output_filename~"
 	or die "Can't write to $output_filename~: $!";
 } else {
     $ofh = \*STDOUT;
 }    
 
-my $bbox = Geography::Berlin_DE->new->bbox_wgs84;
+my $bbox = Geography::Berlin_DE->new->bbox_wgs84; # XXX use $region?
 my $start_captured_at = do {
     timelocal(0,0,0,$d,$m-1,$y);
 #    timelocal(0,0,12,$d,$m-1,$y);
@@ -88,15 +90,18 @@ for my $image (@$data) {
 
 print $ofh "#: map: polar\n";
 print $ofh "#\n";
-print $ofh "# Fetched from mapillary for bbox=@$bbox (Berlin) and date $capture_date\n";
+print $ofh "# Fetched from mapillary for bbox=@$bbox ($region) and date $capture_date\n";
+print $ofh "#\n";
 for my $sequence (@sequences) {
+    my $id = $sequence->[0]->{id};
     my $name = join " ",
 	"start_captured_at=" . strftime("%FT%T", localtime($sequence->[0]->{captured_at}/1000)),
 	"end_captured_at="   . strftime("%FT%T", localtime($sequence->[-1]->{captured_at}/1000)),
-	"start_id=$sequence->[0]->{id}",
+	"start_id=$id",
 	"sequence=$sequence->[0]->{sequence}",
 	;
     my @coords = map { join(",", @{ $_->{computed_geometry}->{coordinates} }) } @$sequence;
+    print $ofh "#: url: https://www.mapillary.com/app/?pKey=$id&focus=photo&dateFrom=$capture_date&dateTo=$capture_date\n";
     print $ofh "$name\tX @coords\n";
 }
 
