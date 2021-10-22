@@ -34,8 +34,15 @@ my $client_token = $conf->{client_token} || die "Can't get client_token from $co
 
 my $image_api_url = 'https://graph.mapillary.com/images';
 
-GetOptions("to-file" => \my $to_file)
+GetOptions(
+	   "to-file" => \my $to_file,
+	   "open"    => \my $do_open,
+	  )
     or die "usage?";
+
+if ($do_open && !$to_file) {
+    die "--open cannot be used without --to-file\n";
+}
 
 my $capture_date = shift
     or die "Please specify capture date (YYYY-MM-DD)\n";
@@ -99,6 +106,10 @@ if ($output_filename) {
     rename "$output_filename~", $output_filename
 	or die "Error while renaming to $output_filename: $!";
     warn "INFO: written to $output_filename\n";
+}
+
+if ($do_open) {
+    system 'bbbikeclient', $output_filename;
 }
 
 sub fetch_images {
