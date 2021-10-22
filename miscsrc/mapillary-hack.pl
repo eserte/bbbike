@@ -16,6 +16,7 @@ use strict;
 use warnings;
 use lib "$ENV{HOME}/src/bbbike";
 
+use Getopt::Long;
 use JSON::XS qw(decode_json);
 use LWP::UserAgent;
 use POSIX qw(floor strftime);
@@ -33,7 +34,8 @@ my $client_token = $conf->{client_token} || die "Can't get client_token from $co
 
 my $image_api_url = 'https://graph.mapillary.com/images';
 
-my $ua = LWP::UserAgent->new(keep_alive => 1);
+GetOptions("to-file" => \my $to_file)
+    or die "usage?";
 
 my $capture_date = shift
     or die "Please specify capture date (YYYY-MM-DD)\n";
@@ -42,6 +44,15 @@ my($y,$m,$d) = split /-/, $capture_date;
 if (!$d) {
     die "capture date cannot be parsed";
 }
+
+my($ofh, $output_filename);
+if ($to_file) {
+    $output_filename = "$ENV{HOME}/.bbbike/mapillary_v4/Berlin_DE/$y/" . sprintf("%04d%02d%02d", $y, $m, $d) . ".bbd";
+    open $ofh, ">", "$output_filename~"
+	or die "Can't write to $output_filename~: $!";
+} else {
+    $ofh = \*STDOUT;
+}    
 
 my $bbox = Geography::Berlin_DE->new->bbox_wgs84;
 my $start_captured_at = do {
@@ -52,6 +63,8 @@ my $end_captured_at = do {
     timelocal(59,59,23,$d,$m-1,$y) + 1;
 #    timelocal(59,14,12,$d,$m-1,$y) + 1;
 };
+
+my $ua = LWP::UserAgent->new(keep_alive => 1);
 
 my $data = fetch_images($start_captured_at, $end_captured_at);
 @$data = sort {
@@ -66,9 +79,9 @@ for my $image (@$data) {
     push @{ $sequences[-1] }, $image;
 }
 
-print "#: map: polar\n";
-print "#\n";
-print "# Fetched from mapillary for bbox=@$bbox (Berlin) and date $capture_date\n";
+print $ofh "#: map: polar\n";
+print $ofh "#\n";
+print $ofh "# Fetched from mapillary for bbox=@$bbox (Berlin) and date $capture_date\n";
 for my $sequence (@sequences) {
     my $name = join " ",
 	"start_captured_at=" . strftime("%FT%T", localtime($sequence->[0]->{captured_at}/1000)),
@@ -77,7 +90,15 @@ for my $sequence (@sequences) {
 	"sequence=$sequence->[0]->{sequence}",
 	;
     my @coords = map { join(",", @{ $_->{computed_geometry}->{coordinates} }) } @$sequence;
-    print "$name\tX @coords\n";
+    print $ofh "$name\tX @coords\n";
+}
+
+if ($output_filename) {
+    close $ofh
+	or die "Error while writing file: $!";
+    rename "$output_filename~", $output_filename
+	or die "Error while renaming to $output_filename: $!";
+    warn "INFO: written to $output_filename\n";
 }
 
 sub fetch_images {
