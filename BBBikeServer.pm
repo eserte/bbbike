@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2007,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2007,2019,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,7 +21,7 @@ use strict;
 use vars qw($name $args $VERBOSE $VERSION);
 use Safe;
 
-$VERSION = '1.20';
+$VERSION = '1.21';
 
 #$VERBOSE = 1 if !defined $VERBOSE;
 
@@ -261,7 +261,11 @@ sub create_socket_server {
 			 main::load_save_route(0, $args{-routefile});
 		     } else {
 			 warn "Read <$args{-routefile}> as bbd ...\n";
-			 main::plot_additional_layer("str", $args{-routefile});
+			 my $type = 'str';
+			 my $abk = main::plot_additional_layer($type, $args{-routefile});
+			 if ($args{-strlist}) {
+			     main::choose_ort($type, $abk, -rebuild => 1);
+			 }
 		     }
 		 }
 		 $top->deiconify;
