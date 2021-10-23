@@ -123,7 +123,7 @@ if ($output_filename) {
 }
 
 if ($do_open) {
-    system 'bbbikeclient', $output_filename;
+    system 'bbbikeclient', '-strlist', $output_filename;
 }
 
 sub fetch_images {
