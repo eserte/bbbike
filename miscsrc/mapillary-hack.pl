@@ -38,6 +38,7 @@ my $region = 'Berlin_DE';
 
 GetOptions(
 	   "to-file" => \my $to_file,
+	   "allow-override" => \my $allow_override,
 	   "open"    => \my $do_open,
 	  )
     or die "usage?";
@@ -57,6 +58,9 @@ if (!$d) {
 my($ofh, $output_filename);
 if ($to_file) {
     $output_filename = "$ENV{HOME}/.bbbike/mapillary_v4/$region/$y/" . sprintf("%04d%02d%02d", $y, $m, $d) . ".bbd";
+    if (-e $output_filename && !$allow_override) {
+	die "Won't override $output_filename without --allow-override.\n";
+    }
     open $ofh, ">", "$output_filename~"
 	or die "Can't write to $output_filename~: $!";
 } else {
