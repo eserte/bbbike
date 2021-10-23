@@ -80,6 +80,15 @@ my $data = fetch_images($start_captured_at, $end_captured_at);
     $a->{sequence} cmp $b->{sequence} || $a->{captured_at} <=> $b->{captured_at}
 } @$data;
 
+if (!@$data) {
+    warn "INFO: no data found\n";
+    if ($output_filename) {
+	close $ofh;
+	unlink "$output_filename~";
+    }
+    exit 0;
+}
+
 my @sequences;
 for my $image (@$data) {
     if (!@sequences || $sequences[-1]->[0]->{sequence} ne $image->{sequence}) {
