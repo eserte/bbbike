@@ -19,8 +19,8 @@
 #: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/laermschutz-durch-fluesterasphalt-auf-der-berliner-strasse_a301599
 #: source_id: 2147344783 (Leitungsarbeiten bis 4.12.2020)
 #: source_id: 2147345057 (Leitungsarbeiten bis 30.4.2021)
-#: source_id: viz2021:13.313808,52.486798,04.11.2019,14:00 (Leitungsarbeiten bis 4.11.2021)
-#: XXX laut rbb Arbeiten bis 17.07.2021
+#: source_id: viz2021:13.313808,52.486798,04.11.2019,14:00 (Leitungsarbeiten bis 4.11.2021) (inaktiv)
+#: XXX laut rbb Arbeiten bis 25.10.2021
 #: also_indoor: traffic (H,G)
 #: last_checked: 2021-08-12 (mapillary)
 # REMOVED --- #: check_frequency: 180d
@@ -1235,7 +1235,7 @@ Messedamm: Verbesserung -> vermutlich Radspuren? in beiden Richtungen oder nur a
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/fahrrat/endversion-protokoll-18-06-20.pdf (Planungsbeginn nicht absehbar, außerdem weitere Abschnitte im Siemensdamm erwähnt)
 #: by: https://api.fixmyberlin.de/api/plannings/130
 #: XXX einige wenige Meter wurden provisorisch mit unebenen Asphalt versehen, vermutlich nur zur "Gefahrenabwehr"
-#: last_checked: 2021-07-25 (mapillary)
+#: last_checked: 2021-07-31 (mapillary)
 #: check_frequency: 90d
 Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 1361,14384 1420,14369 1479,14343 1709,14243 1932,14146 2087,14078
 # REMOVED (weggekürzt) --- Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 2087,14078 2211,14074 2301,14078 2795,14161
@@ -3417,7 +3417,8 @@ Wilmersdorfer Str.: Verlängerung der Fußgängerzone geplant	?::projected 3717,114
 #: XXX werden die Radwege hier auch asphaltiert und etwas breiter werden?
 #: last_checked: 2021-10-20 (keine Verbesserungen erkennbar)
 #: next_check: 2021-10-22
-Luisenplatz: Radwegsanierung	?::inwork 3327,12818 3300,12751 3291,12721
+# REMOVED (hier nicht?) --- Luisenplatz: Radwegsanierung	?::inwork 3327,12818 3300,12751
+Luisenplatz: Radwegsanierung	?::inwork; 3291,12721 3300,12751
 # 
 # REMOVED (kein Verbot, jedenfalls nicht direkt an der Marksburgstr., aber Engstelle und davor u.U. Stau) --- #: XXX Arbeiten dauern bis Anfang Oktober 2021 --- #: next_check: 2021-09-13 --- Treskowallee: Bauarbeiten, gibt es vielleicht wieder Verbote für den Radverkehr?	?::inwork; 18809,9133 18790,9018 18770,8898
 # 
@@ -3472,13 +3473,13 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege geben?	?::projected
 #: by: https://twitter.com/VIZ_Berlin/status/1433759152568950815
 #: by: https://twitter.com/Yantschi/status/1433748714145861635
 #: source_id: viz2021:13.359249,52.498514,30.08.2021,08:00 (bis 26.9.2021, weitere Arbeiten folgen) (mittlerweile inaktiv)
-#: source_id: viz2021:13.359249,52.498514,27.09.2021,10:00 (bis 25.10.2021)
+#: source_id: viz2021:13.359249,52.498514,27.09.2021,10:00 (bis 29.10.2021)
 #: osm_watch: way id="4618713" version="33"
 #: XXX nur Richtung Westen oder in beiden Richtungen?
 #: XXX außerdem: Zweiwege-Popup-Radweg zwischen Steinmetzstr. und östlichem Ende der Bülowstr.
 #: last_checked: 2021-10-19 (Richtung Westen weitgehend fertig, außer Stück zwischen Steinmetzstr. und Potsdamer Str.) vvv
 #: check_frequency: 30d vvv
-#: next_check: 2021-10-25 vvv
+#: next_check: 2021-10-29 vvv
 # REMOVED (hier weitgehend realisiert) --- Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork; 6532,10529 6602,10504 6636,10492 6753,10446
 Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork; 6753,10446 6851,10416 6937,10363 6971,10346 7033,10328 7131,10331 7238,10299 7413,10244 7579,10183 7698,10147 7702,10146
 # REMOVED (hier schon fertig) --- Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork 7906,10098 7814,10117 7702,10146
@@ -5035,7 +5036,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 18
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2021-10-15
+#: last_checked: 2021-10-22
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: by: https://api.fixmyberlin.de/api/projects/328 (Grünmarkierung + Verbreiterung, teilweise Leitboys)
