@@ -5514,7 +5514,7 @@ EOF
        text  => 'B 005 Abzw. Groß Gottschow-OU Perleberg Bahnübergang bei Perleberg Gleissanierung Vollsperrung 18.08.2006-21.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -94722,72190 -94274,71791 -93406,71227
+	2::inwork -94722,72190 -94579,71995 -94274,71791 -93406,71227
 EOF
      },
      { from  => 1156111200, # 2006-08-21 00:00
@@ -5522,7 +5522,7 @@ EOF
        text  => 'B 005 Abzw. Groß Gottschow-OU Perleberg Bahnübergang bei Perleberg Gleissanierung Vollsperrung 22.08.2006-23.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -94722,72190 -94274,71791 -93406,71227
+	2::inwork -94722,72190 -94579,71995 -94274,71791 -93406,71227
 EOF
      },
      { from  => 1155664127, # 2006-08-15 19:48
@@ -27881,7 +27881,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1058179.php (Sperrung der Kreuzung Schönstraße/Paul-Oestreich-Straße, bis 26. März 2021)
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/einmuendung-komplett-gesperrt_a303306
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (ex-G,H(falsch?))
 #: priority: #B vvv
 #: last_checked: 2021-10-08 vvv
 #: check_frequency: 60d vvv
@@ -28759,7 +28759,7 @@ EOF
 #: source_id: 2147346815 (neu)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2021-10-13 (mapillary)
+#: last_checked: 2021-10-23
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q3::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -29437,7 +29437,7 @@ EOF
 #: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022)
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
-#: also_indoor: traffic (ex-H)
+#: also_indoor: traffic (H)
 #: last_checked: 2021-09-04
 #: check_frequency: 60d
 #: next_check: 2022-03-31
@@ -31230,6 +31230,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
+#: also_indoor: traffic (H)
 #: XXX Stand 2021-07-31: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
 #: last_checked: 2021-10-08
@@ -32119,7 +32120,9 @@ EOF
        source_id => 'https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (ex-G)
+#: osm_watch: way id="362719487" version="6"
+#: osm_watch: way id="687428752" version="2"
 #: last_checked: 2021-10-19
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
@@ -32185,6 +32188,7 @@ EOF
 #: next_check_id: ABBESTR-2021
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
 #: note: reopened, es gibt wieder Bauzäune
+#: osm_watch: way id="152832871" version="16"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2021-09-06 (osm)
 #: check_frequency: 30d
@@ -32843,6 +32847,7 @@ EOF
        data  => <<EOF,
 #: last_checked: 2021-10-02
 #: XXX vermutlich werden es Betonstein oder Verbundsteinpflaster, außerdem gibt's ein neues Drängelgitter am südlichen Ende
+#: osm_watch: way id="28450096" version="9"
 #: add_fragezeichen: Wie lange gehen die Bauarbeiten? Wie ist die Wegoberfläche nach den Bauarbeiten?
 	2::inwork 18432,1352 18290,1574
 EOF
@@ -32886,6 +32891,7 @@ EOF
 #: next_check_id: SEYDLITZ-2021
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1116986.php (Neubau der Fahrbahn, bis Ende November 2021)
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/retzowstrasse-gesperrt_a320297
+#: osm_watch: way id="24917125" version="11"
 #: add_fragezeichen: Wann wird die Sperrung der Fahrbahn aufgehoben?
 #: last_checked: 2021-09-12
 # REMOVED --- #: check_frequency: 120d
@@ -33593,6 +33599,8 @@ EOF
 #: confirmed_by: srt
 #: by: https://www.gmg-ing.de/referenzen/ernst-heilmann-steg-berlin/ ("Torsionsschwingungen")
 #: by: https://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10997_Berlin_Instandsetzung_Stahlbau_1924073.html (Ausschreibung)
+#: osm_watch: note 2867467 2
+#: osm_watch: way id="16311543" version="17"
 #: also_indoor: search Ernst-Heilmann-Steg
 #: last_checked: 2021-10-05
 #: check_frequency: 120d
@@ -33783,7 +33791,7 @@ EOF
        text  => 'Giselastr.: Bauarbeiten zwischen Lückstr. und Leopoldstr., Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic
+#: also_indoor: traffic (G)
 #: add_fragezeichen: Wann wird die Sperrung der Fahrbahn beendet?
 #: last_checked: 2021-10-18
 	q3::inwork 16153,10818 16192,10907
@@ -33804,6 +33812,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bleibt das dauerhaft so?
+#: osm_watch: way id="57401221" version="6"
 #: last_checked: 2021-10-20
 #: check_frequency: 360d
 	2 -7663,15304 -7747,15315
@@ -33816,6 +33825,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: SCHARFELANKE-2021
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
+#: osm_watch: way id="187977779" version="13" vvv
 #: last_checked: 2021-10-20 vvv
 #: check_frequency: 60d vvv
 	2::inwork -3752,11373 -3785,11445 -3828,11491 -3928,11526 -4028,11533 -4106,11519 -4181,11458 -4204,11432 -4245,11400
@@ -33823,6 +33833,7 @@ EOF
 	2::inwork -3928,11526 -3909,11596
 #: check_frequency ^^^
 #: last_checked ^^^
+#: osm_watch ^^^
 #: add_fragezeichen ^^^
 EOF
      },

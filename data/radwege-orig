@@ -933,7 +933,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-10-10
+#: last_checked: 2021-10-23
 #: check_frequency: 60d
 #: next_check: 2022-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -4538,7 +4538,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: by: https://www.berliner-woche.de/malchow/c-verkehr/dorfstrasse-in-malchow-wird-drei-wochen-lang-saniert_a279529 (bis 8. August 2020, vermutlich nur Asphaltarbeiten an der Fahrbahn, Radwege werden nicht erwähnt)
 #: by: https://abendblatt-berlin.de/2020/07/10/berlin-malchow-bundesstrasse-mit-umleitungen/
 #: XXX wird der Radweg verbessert?
-#: last_checked: 2021-08-02 (mapillary)
+#: last_checked: 2021-10-13 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -5750,7 +5750,7 @@ Radweg beginnt nach 20 Metern	RW1; 7909,775 7857,802
 	RW3;RW3 14050,20955 13909,20928
 #: XXX wird hier eine Busspur eingerichtet?
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
-#: last_checked: 2021-09-27 (mapillary)
+#: last_checked: 2021-10-13 (mapillary)
 	RW3; 13909,20928 13662,20917
 	RW5; 13662,20917 13562,20913
 #: note: größtenteils eigentlich Bushaltestelle
@@ -6141,7 +6141,7 @@ Gelbmarkierung	RW3;RW3 12639,8344 12598,8390
 #: last_checked ^^^
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-10-01 (mapillary)
+#: last_checked: 2021-10-23
 #: check_frequency: 60d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünmarkierung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
@@ -6176,7 +6176,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-10-01 (mapillary)
+#: last_checked: 2021-10-23
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
@@ -7212,11 +7212,11 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-durchgehenden-und-geschuetzten-weg-an-der-b96_a318755
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
-#: add_fragezeichen: Wurden die provisorischen Radspuren mittlerweile entfernt? vvv
+#: XXX: Werden die provisorischen Radspuren wieder entfernt? vvv
 #: priority: #A vvv
-#: last_checked: 2021-10-09 vvv
+#: last_checked: 2021-10-23 (Markierungen alle noch da, Verkehrsschilder größtenteils auch) vvv
 #: check_frequency: 30d vvv
-#: next_check: 2021-10-18 vvv
+# REMOVED --- #: next_check: 2021-10-18 vvv
 # REMOVED --- #: valid: -20211007 vvv
 #: osm_watch: way id="31773580" version="13"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9249,6642 9254,6542 9253,6484 9250,6414 9246,6364 9245,6352 9221,6179 9212,6096 9192,5921 9176,5803 9158,5673 9161,5535 9176,5413 9188,5333 9196,5272 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672
@@ -7230,11 +7230,11 @@ provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4
 provisorischer Radweg auf dem Bürgersteig	RW2; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9161,5535 9158,5673 9176,5803 9192,5921 9212,6096 9221,6179 9245,6352 9246,6364 9250,6414 9253,6484 9254,6542 9249,6642
 # REMOVED --- #: valid ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
-#: add_fragezeichen ^^^
+#: XXX ^^^
 # 
 	RW6;RW6 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # 
@@ -7334,6 +7334,7 @@ provisorischer Radweg auf dem Gehweg	RW2; 8490,2084 8560,2181 8579,2265
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9983 (Frage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10016 (Antrag, abgelehnt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1137745.php (Poller)
+#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/poller-gegen-falschparker_a325790
 #: source_id: viz2021:13.38022,52.49874,19.07.2021,07:00 (bis 20.9.2021)
 #: osm_watch: way id="240451922" version="23"
 #: XXX kommen hier noch Poller/Leitboys hin?

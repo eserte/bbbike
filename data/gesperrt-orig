@@ -1236,7 +1236,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf
 #: XXX evtl wird die Straﬂe f¸r Radfahrer geˆffnet
-#: osm_watch: way id="31540773" version="15"
+#: osm_watch: way id="31540773" version="16"
 #: last_checked: 2021-09-12
 #: check_frequency: 180d
 Fritz-Werner-Str.	1s:q3 9105,2779 9081,2594
@@ -1267,7 +1267,7 @@ Waldstr.	1 9961,19513 10002,19418
 # REMOVED --- #: next_check_id: UBAHN1-2020 --- #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird fr¸hestens etwa am 22. April 2021 angefahren) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510 --- #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb R¸ckbau bis Ende Juni 2021 --- 
 #: XXX wieder gesperrt, vermutlich f¸r Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022)
-#: last_checked: 2021-10-20
+#: last_checked: 2021-10-23
 #: check_frequency: 90d
 #: next_check: 2022-01-12
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1635,6 +1635,11 @@ Heckenrosenweg (Schˆneiche)	1 32387,6349 32317,6312 32301,6346 32370,6380 32387,
 Weidenhof	1 10963,-4389 10956,-4470
 Weidenhof	1 10994,-4472 10998,-4391
 #: by ^^^
+# 
+#: by: mapillary
+#: note: explizit f¸r Radfahrer verboten
+B189	2 -92822,74184 -93082,74166 -93764,74187 -94063,74154 -94600,73988 -94721,73963 -94950,73927
+# 
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht ¸berquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -3336,7 +3341,7 @@ Schˆnflieﬂ - Summt: Br¸cke ¸ber die A10 wird neu gebaut	2::inwork 5752,30817 578
 # REMOVED (Hilfsbr¸cke existiert) --- #: osm_watch: way id="976563363" version="1" --- #: source_id: AdB/21-11-00134 (bis 17.12.2021) --- #: next_check: 2021-12-17 --- Fichteallee: Br¸cke ¸ber die A10 wird neu gebaut	2::inwork 2233,32334 2334,32485
 # 
 #: osm_watch: way id="926868384" version="1"
-#: osm_watch: way id="926868383" version="1"
+#: osm_watch: way id="926868383" version="2"
 #: source_id: AdB/21-11-00133 (bis 15.11.2021)
 #: priority: #B
 #: next_check: 2021-11-15
@@ -3350,7 +3355,7 @@ Weserstr.: Einbahnstraﬂenregelung, f¸r Radfahrer nicht mehr offen	1s:q4:inwork 1
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX vermutlich wird die Straﬂe dauerhaft verschwinden -> dann aus strassen-orig & Berlin.coords.data etc. entfernen
-#: last_checked: 2021-09-12
+#: last_checked: 2021-10-23
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Matthesstr.: Baustelle, keine Durchfahrt mˆglich	2::inwork 14185,9509 14172,9457
@@ -3729,7 +3734,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="2"
 #: osm_watch: node id="6778873745" version="1"
-#: last_checked: 2021-10-17
+#: last_checked: 2021-10-23
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3819,7 +3824,7 @@ Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realit‰t weiterhin Einbahnstraﬂe
 #: osm_watch: way id="5096644" version="16"
 #: priority: #C
-#: last_checked: 2021-10-17
+#: last_checked: 2021-10-23
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -4313,7 +4318,7 @@ Bergiusstr.: wegen Bauarbeiten an der BAB100 gesperrt, vielleicht sogar dauerhaf
 #: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaﬂnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G)
-#: last_checked: 2021-09-27 (mapillary)
+#: last_checked: 2021-10-17 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022

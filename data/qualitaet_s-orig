@@ -112,7 +112,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="16"
-#: last_checked: 2021-09-12
+#: last_checked: 2021-10-23
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -439,10 +439,12 @@ Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 92
 Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
 #: by: http://www.infravelo.de/projekt/gartenstrasse-und-gerichtstrasse-2/ (2. Quartal 2022 - 4. Quartal 2022)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
+#: last_checked: 2021-10-16 (mapillary) vvv
 #: next_check: 2022-12-31 vvv
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
 #: next_check ^^^
+#: last_checked ^^^
 #: XXX ^^^
 # REMOVED (nicht mehr) --- Liesenstr.: Kopfsteinpflaster, OK	Q1 8671,14919 8653,14899
 Am Kupfergraben: teilweise schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 9533,12925 9618,12907 9654,12882
@@ -805,7 +807,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2021-07-14
+#: last_checked: 2021-10-11 (mapillary)
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -874,8 +876,8 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: by: http://www.berliner-woche.de/heinersdorf/verkehr/radstreifen-und-neue-querungen-d155368.html
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
-#: osm_watch: way id="266580485" version="15"
-#: last_checked: 2021-08-12 (mapillary)
+#: osm_watch: way id="266580485" version="16"
+#: last_checked: 2021-10-13 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -3390,7 +3392,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: XXX ändert sich mit der Straßenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: osm_watch: way id="641657694" version="4"
 #: priority: #C
-#: last_checked: 2021-08-08
+#: last_checked: 2021-10-17 (mapillary)
 #: check_frequency: 120d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
@@ -4665,7 +4667,7 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Eingang Oderstr./Herrfurthstr. - Flughafen Tempelhof): Asphalt	Q0 11472,7899 11458,7897 11439,7894
 (Strecke an der nordöstlichen Begrenzung): Asphalt	Q0 11439,7894 11418,8015 11319,8010 11298,8097 11153,8145 11000,8067 10803,8251 10644,8363
 (Strecke an der nordöstlichen Begrenzung): Asphalt	Q0- 10644,8363 10360,8521
-(Strecke an der nordöstlichen Begrenzung - Rundkurs): Asphalt	Q0 11000,8067 10902,8012
+(Strecke an der nordöstlichen Begrenzung - Rundkurs): Asphalt	Q0+ 11000,8067 10902,8012
 (Weg parallel zur Oderstr.): Asphalt	Q0 11458,7897 11490,7737 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
 (Flughafen Tempelhof - Eingang Oderstr.): Asphalt	Q0 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn): Asphalt	Q0 9302,7294 9351,7241 9474,7182
