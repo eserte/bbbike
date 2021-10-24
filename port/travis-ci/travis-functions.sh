@@ -81,7 +81,7 @@ init_apt() {
 }
 
 # Reasons for the following dependencies
-# - freebsd-buildutils:     provides freebsd-make resp. fmake resp. pmake
+# - freebsd-buildutils or bmake: provides freebsd-make resp. fmake resp. pmake
 # - libproj-dev + proj-bin: prerequisites for Geo::Proj4
 # - libdb-dev:              prerequisite for DB_File
 # - agrep + tre-agrep:      needed as String::Approx alternative

@@ -34,8 +34,9 @@ sub get_pmake (;@) {
     (
      $^O =~ m{bsd}i                             ? "make"         # standard BSD make
      : $^O eq 'darwin' && is_in_path('bsdmake') ? 'bsdmake'      # homebrew bsdmake package
-     : is_in_path("fmake")                      ? "fmake"        # debian jessie and later
+     : is_in_path("fmake")                      ? "fmake"        # debian jessie .. buster (package freebsd-buildutils)
      : is_in_path("freebsd-make")               ? "freebsd-make" # debian wheezy and earlier
+     : -x '/usr/bin/pmake'			? '/usr/bin/pmake' # debian jessie and later (package bmake)
      : !$fallback                               ? die "No BSD make found on this system --- try to install bsdmake, fmake, pmake, or something similar"
      : "pmake"                                                   # self-compiled BSD make, maybe. Note that pmake may also be a script that comes with the CPAN module Make.pm, which is not a BSD make
     );
