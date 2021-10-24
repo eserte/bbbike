@@ -27358,7 +27358,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: last_checked: 2018-08-29 vvv --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-	q4::inwork; 24629,5831 24443,5765 24387,5672 24362,5635 24320,5621
+	q4::inwork; 24629,5831 24506,5780 24429,5749 24387,5672 24362,5635 24320,5621
 # REMOVED (fertig) ---	q4::inwork; 24629,5831 24798,5891
 # REMOVED (vermutlich fertig) ---	q3::inwork 24798,5891 24977,5880
 EOF
@@ -30001,7 +30001,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G)
-#: last_checked: 2021-09-18 (bahninfo-forum)
+#: last_checked: 2021-10-22 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2022-06-04
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
@@ -32207,7 +32207,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 9/2021: Fahrbahn im nördlichen Abschnitt gesperrt, enger Fußweg existiert)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 10/2021: Einfahrt im Bereich Blockdammweg kann während Arbeitszeiten gesperrt sein, außerdem Fahrbahn im nördlichen Abschnitt gesperrt, enger Fußweg existiert)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32216,8 +32216,8 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung? Falls ja, wo ist der gesperrte Abschnitt und gilt die Sperrung auch für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="24"
 #: osm_watch: way id="165832806" version="21"
-#: last_checked: 2021-09-03
-#: check_frequency: 45d
+#: last_checked: 2021-10-24
+#: check_frequency: 30d
 	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17483,8644 17449,8720 17416,8767 17380,8858
 EOF
      },
@@ -33191,9 +33191,9 @@ EOF
 #: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
-#: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso)
+#: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-10-18
+#: last_checked: 2021-10-24
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33698,7 +33698,7 @@ EOF
 #: XXX Wird nach den Bauarbeiten die Qualität der Fahrbahn besser sein? (jetzt: Q1)
 #: osm_watch: way id="10686356" version="18"
 #: also_indoor: traffic (none)
-#: last_checked: 2021-10-03
+#: last_checked: 2021-10-10 (mapillary)
 	q4::inwork 13510,8138 13663,8011
 EOF
      },
@@ -33853,6 +33853,8 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.387096,52.510605,23.10.2021,08:00',
        data  => <<EOF,
+#: by: https://twitter.com/VIZ_Berlin/status/1452241964015915008
+#: by: https://pbs.twimg.com/media/FCI_kkSXsAU7_wY?format=jpg&name=medium
 	q4::inwork 9207,11880 9218,11793
 EOF
      },

@@ -2199,8 +2199,8 @@ S-Bahn und Regionalbahn	B 21562,12088
 # 
 #: next_check_id: FRIEDRICH-2020
 #: last_checked: 2021-06-13
-#: next_check: 2021-10-31
-#: valid: !20200821-20211031
+#: next_check: 2022-04-01
+# REMOVED --- #: valid: !20200821-20211031
 	X 9418,11804
 # 
 # REMOVED (abgeschafft, seit Verschwenkung der Autobahnausfahrt) --- #: XXX wird diese Ampel abgeschafft oder bleibt sie als faktische Fußgängerampel bestehen? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02 ---	F 14153,6795
@@ -2526,6 +2526,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	F 5373,10981
 # REMOVED --- #: note: war früher (ca. 2006?) ein Zebrastreifen ---	F 18733,8650
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX hier wird eine richtige Ampel entstehen --- #: last_checked: 2020-11-28 --- #: next_check: 2020-12-13
+#: note: wenn man aus der Dönhoffstr. kommt und in die Stolzenfelsstr. einbiegen möchte, dann hat man als Radfahrer normalerweise eine "grüne Welle"
 	X 18718,8583
 	X 18727,8634
 	X 18737,8686

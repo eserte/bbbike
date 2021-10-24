@@ -232,8 +232,8 @@ Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
 #: last_checked: 2021-10-07
-#: next_check: 2021-10-31
-#: valid: 20200821-20211031
+#: next_check: 2022-04-01
+# REMOVED --- #: valid: 20200821-20211031
 Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # 
 # REMOVED (Radfahrer frei) --- #: priority: #A --- #: source_id: 2147345515 (bis 30.4.2021) --- #: XXX bei rbbtext bis 20.10.2020 --- #: last_checked: 2020-10-02 (mapillary) --- #: check_frequency: 30d --- #: next_check: 2021-04-30 --- # REMOVED --- #: valid: -20200918 --- Gormannstr.: Bauarbeiten an der Einmündung Torstr., Fahrbahn gesperrt	q3::inwork 10459,13760 10445,13675
@@ -522,7 +522,7 @@ Böckhstr.: einige Meter der Fahrbahn gesperrt	q3::inwork 11411,9810 11197,9894
 ### Köpenick ###
 # 
 #: next_check_id: WUHLHEIDE-2021
-#: last_checked: 2021-09-17
+#: last_checked: 2021-10-24
 #: check_frequency: 30d
 Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 20629,7189 20575,7226
 # 
@@ -2168,7 +2168,7 @@ Schrebergasse: enge Straße	q0- 23980,4633 23925,4555 23850,4497
 # REMOVED (existieren nicht mehr) --- Rathausstr.: einige "Moabiter Kissen", leicht umfahrbar	q0; 15576,12315 15628,12246 15651,12214
 Unterführung S-Bhf. Nöldnerplatz: Fußgänger	q3 15886,10947 15879,10954 15865,10965 15859,10970
 zum S-Bhf. Nöldnerplatz: Fußgänger	q2 15805,10949 15859,10970
-Spreepromenade: Pfad	q2 23608,5196 23785,5169 23808,5177
+Spreepromenade: Fußgänger	q2 23608,5196 23785,5169 23808,5177
 #: XXX_prog BS (2x, im Norden relativ flach, und im Süden) (ohne: q2)
 Liebstadter Gang: einige Fußgänger, Bordsteine	q3 24434,5645 24471,5544
 (Unterführung S-Bhf. Hirschgarten): Fußgänger	q3 23948,6054 23947,6014 23930,6013 23931,5992

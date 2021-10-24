@@ -4199,7 +4199,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G)
-#: last_checked: 2021-09-18 (bahninfo-forum)
+#: last_checked: 2021-10-22 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2022-06-04
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
@@ -4687,13 +4687,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung? Falls ja, wo ist der gesperrte Abschnitt und gilt die Sperrung auch für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="24"
 #: osm_watch: way id="165832806" version="21"
-#: last_checked: 2021-09-03
-#: check_frequency: 45d
+#: last_checked: 2021-10-24
+#: check_frequency: 30d
 	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17483,8644 17449,8720 17416,8767 17380,8858
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 9/2021: Fahrbahn im nördlichen Abschnitt gesperrt, enger Fußweg existiert)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 10/2021: Einfahrt im Bereich Blockdammweg kann während Arbeitszeiten gesperrt sein, außerdem Fahrbahn im nördlichen Abschnitt gesperrt, enger Fußweg existiert)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5065,9 +5065,9 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
-#: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso)
+#: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-10-18
+#: last_checked: 2021-10-24
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -5399,7 +5399,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
 #: XXX Wird nach den Bauarbeiten die Qualität der Fahrbahn besser sein? (jetzt: Q1)
 #: osm_watch: way id="10686356" version="18"
 #: also_indoor: traffic (none)
-#: last_checked: 2021-10-03
+#: last_checked: 2021-10-10 (mapillary)
 	q4::inwork 13510,8138 13663,8011
 ',
          'from' => undef,
@@ -5530,16 +5530,6 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'text' => 'Schwarzer Weg: Fahrbahnausbesserung zwischen Heiligenseestraße und Dicke Marie, Sperrung vom 25. bis zum 29. Oktober 2021',
          'type' => 'gesperrt',
          'until' => 1635544799
-       },
-       {
-         'data' => '	q4::inwork 9207,11880 9218,11793
-',
-         'from' => 1634882400,
-         'id' => 3469,
-         'source_id' => 'viz2021:13.387096,52.510605,23.10.2021,08:00',
-         'text' => 'Mauerstr.: Sperrung zwischen Mohrenstr. und Taubenstr., vom 23.10.2021 08:00 Uhr bis 24.10.2021 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1635087600
        }
      
 );
