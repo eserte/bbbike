@@ -138,7 +138,7 @@ sub fetch_images {
     my $url = "$image_api_url?access_token=$client_token&fields=id,computed_geometry,captured_at,sequence&bbox=" . join(",", @$bbox) . "&start_captured_at=$start_captured_at_iso&end_captured_at=$end_captured_at_iso";
 
     my $data;
-    my $max_try = 5;
+    my $max_try = 6;
     for my $try (1..$max_try) {
 	my $resp = $ua->get($url);
 	if (!$resp->is_success) {
@@ -160,8 +160,9 @@ sub fetch_images {
 	    }
 	}
 	if ($try < $max_try) {
-	    warn "INFO: sleep for $try seconds...\n" if $debug;
-	    sleep $try;
+	    my $sleep = $try * 2;
+	    warn "INFO: sleep for $sleep seconds...\n" if $debug;
+	    sleep $sleep;
 	}
     }
     if (!$data) {
