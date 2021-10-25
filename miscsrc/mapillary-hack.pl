@@ -142,7 +142,15 @@ sub fetch_images {
     for my $try (1..$max_try) {
 	my $resp = $ua->get($url);
 	if (!$resp->is_success) {
-	    warn "Try $try/$max_try: " . $resp->dump;
+	    my $error_data = eval { decode_json $resp->decoded_content };
+	    my $msg = "Try $try/$max_try: ";
+	    if ($error_data && ref $error_data eq 'HASH' && $error_data->{error}->{error_user_title} =~ m{^(Query Timeout)$}) {
+		my $e = $error_data->{error};
+		$msg .= "$e->{error_user_title}: $e->{error_user_msg}";
+	    } else {
+		$msg .= $resp->dump;
+	    }
+	    warn $msg, "\n";
 	} else {
 	    my $content = $resp->decoded_content;
 	    $data = eval { decode_json $content };
