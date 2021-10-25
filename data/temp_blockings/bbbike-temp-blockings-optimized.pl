@@ -4031,40 +4031,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: LANGHANS-2021
-#: source_id: 2147344802 (inaktiv)
-#: source_id: 2147346832 (Gesamtbaumaßnahme bis Mitte August 2021)
-#: source_id: viz2021:13.434734,52.553612,25.01.2021,07:00 (bis 20.8.2021, Gesamtmaßnahme bis Mitte 10/2021) (inaktiv)
-#: by: https://viz.berlin.de/2021/01/verkehrsvorschau25012021/ ("Mitte Februar (2021) wird die Sperrung um den Abschnitt Heinersdorfer Straße - Roelckestraße erweitert")
-#: by: https://viz.berlin.de/2021/01/langhansstr-sperrung/
-#: by: https://www.bahninfo-forum.de/read.php?9,691318,693319#msg-693319
-#: by: https://www.bahninfo-forum.de/read.php?9,691318,703556#msg-703556 (angeblich fährt die Straßenbahn wieder ab 24.06.2021)
-# REMOVED --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=74297 (Straßebahn fährt erst ab 1.7.2021)
-#: XXX teilweise existieren auch Einschränkungen beim Überqueren der Langhansstr., auch für Fußgänger (gesehen: 2021-02-17 an der Behaimstr.)
-#: also_indoor: traffic (H,G)
-# REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
-# REMOVED (hier war es 2019) ---	q4::inwork; 12399,16479 12474,16443 12564,16399 12725,16321 12764,16302 12797,16285 12826,16271 12859,16255 12943,16214
-# REMOVED (hier nicht mehr? (2019)) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
-#: last_checked: 2021-10-12 vvv
-#: next_check: 2021-10-25 vvv
-#: note: hier nur an der Kreuzung Berliner Allee
-#: source_id: viz2021:13.450478,52.54864,25.01.2021,07:00 (hier bis 22.9.2021) (mittlerweile 25.10.2021)
-	q3::inwork 13508,15912 13312,16027
-# REMOVED (hier nicht mehr) ---	q4::inwork 13312,16027 13250,16058 13189,16089 12943,16214
-# REMOVED (hier nicht mehr? "zwischen Roelckestr. und Gustav-Adolf-Str. sowie ...") ---	q4::inwork 12943,16214 12859,16255 12826,16271 12797,16285 12764,16302 12725,16321 12564,16399 12474,16443 12399,16479
-# REMOVED (wird bei viz nicht mehr erwähnt) --- #: note: hier keine Absperrungen mehr, aber offiziell nur für Tram und Bus frei --- q3::inwork 12399,16479 12189,16578
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'dont_check_date' => 1,
-         'from' => 1611468000,
-         'id' => 3091,
-         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
-         'text' => 'Langhansstr.: in Höhe Antonplatz ist die Fahrbahn wegen Gleisbauarbeiten gesperrt, auch Radfahrer sind betroffen, voraussichtlich bis 25.10.2021',
-         'type' => 'handicap',
-         'until' => 1635174000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4888,32 +4855,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BERLINERALLEE-2021
-#: source_id: viz2021:13.454427,52.549049,23.08.2021,07:00
-# REMOVED --- #: add_fragezeichen: Gibt es tatsächlich Einschränkungen für Radfahrer? vvv
-#: note: laut rbb kann der Radverkehr den Sperrbereich passieren (stimmt aber nicht)
-#: also_indoor: traffic
-#: last_checked: 2021-10-01 (mapillary) vvv
-#: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2021-08-23 vvv
-# REMOVED (hier nicht?) ---	q4::inwork; 13398,15826 13425,15846 13484,15893 13508,15912 13623,15954 13737,15994
-# REMOVED (hier nicht, laut mapillary) ---	q3::inwork; 13737,15994 13826,16026 14015,16103
-	q4::inwork; 14015,16103 14056,16120 14248,16202 14346,16241 14499,16341
-# REMOVED (Umleitung anscheinend via Lehderstr.) ---	q4::inwork; 14552,16171 14295,16076 14248,16058 14056,15985 13867,15915 13665,15840 13572,15804 13540,15792 13524,15786 13456,15760
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# REMOVED --- #: add_fragezeichen ^^^
-Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
-',
-         'from' => 1629644400,
-         'id' => 3374,
-         'source_id' => 'https://www.berliner-woche.de/weissensee/c-verkehr/auf-der-berliner-allee-werden-die-gleise-erneuert_a309699',
-         'text' => 'Berliner Allee: Gleisbauarbeiten, Fahrbahn stadtauswärts zwischen Smetanastr. und Indira-Gandhi-Str. gesperrt, vom 23. August 2021 bis 25. Oktober 2021',
-         'type' => 'handicap',
-         'until' => 1635174000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5071,9 +5013,9 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
-#: osm_watch: way id="984964447" version="2"
+#: osm_watch: way id="984964447" version="3"
 	q3::inwork 15279,10862 15355,10875
-#: osm_watch: way id="984056169" version="2"
+#: osm_watch: way id="984056169" version="3"
 	2::inwork 15272,10790 15388,10758
 ',
          'from' => 1625734800,
@@ -5361,15 +5303,16 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
        undef,
        {
          'data' => '#: source_id: viz2021:13.20521,52.53583,15.10.2021,12:28
+#: source_id: viz2021:13.20521,52.53583,15.10.2021,12:00
 	2::inwork -3316,14169 -3227,14260 -3173,14216
 # REMOVED ---	2::inwork -3173,14216 -3135,14183
 ',
          'from' => 1632607200,
          'id' => 3453,
          'source_id' => 'viz2021:13.20521,52.53583,27.09.2021,09:33',
-         'text' => 'Charlottenstr/Breite Str..: Fahrbahn zwischen Fischerstr. und Mauerstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.09.2021 bis 25.10.2021',
+         'text' => 'Charlottenstr/Breite Str..: Fahrbahn zwischen Fischerstr. und Mauerstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.09.2021 bis 26.10.2021',
          'type' => 'gesperrt',
-         'until' => 1635199199
+         'until' => 1635242400
        },
        {
          'data' => '#: osm_watch: way id="8069460" version="16"
@@ -5448,19 +5391,7 @@ Smetanastr.: Einbahnstraßenregelung	q3::inwork; 14056,15985 14015,16103
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1448195177022164992 (mit grob aufgelöster Karte)
-#: XXX Bauarbeiten überprüfen!
-# REMOVED (hier vermutlich nicht) ---	q4::inwork; 14056,16120 14015,16103 13826,16026 13737,15994 13623,15954
-	q4::inwork; 13623,15954 13508,15912 13484,15893 13425,15846
-',
-         'from' => 1633989600,
-         'id' => 3462,
-         'source_id' => 'viz2021:13.459025,52.550082,13.10.2021,11:00',
-         'text' => 'Berliner Allee: stadteinwärts zwischen Pistoriusstr. und Streustr.: Fahrtrichtung gesperrt, Bauarbeiten, evtl. sind auch Radfahrer betroffen (besonders im Bereich Antonplatz/Langhansstr.), vom 13.10.2021 11:00 bis 25.10.2021 17:00 ',
-         'type' => 'handicap',
-         'until' => 1635199200
-       },
+       undef,
        {
          'data' => '#: next_check_id: WUHLETALHAVEMANN-2021
 #: add_fragezeichen: Wann sind die Bauarbeiten hier abgeschlossen und die Sperrung aufgehoben?

@@ -33197,9 +33197,9 @@ EOF
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
-#: osm_watch: way id="984964447" version="2"
+#: osm_watch: way id="984964447" version="3"
 	q3::inwork 15279,10862 15355,10875
-#: osm_watch: way id="984056169" version="2"
+#: osm_watch: way id="984056169" version="3"
 	2::inwork 15272,10790 15388,10758
 EOF
      },
@@ -33658,12 +33658,13 @@ EOF
 EOF
      },
      { from  => 1632607200, # 2021-09-26 00:00
-       until => $isodate2epoch->("2021-10-25 23:59:59"), # 1634335200, # 2021-10-16 00:00
-       text  => 'Charlottenstr/Breite Str..: Fahrbahn zwischen Fischerstr. und Mauerstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.09.2021 bis 25.10.2021',
+       until => $isodate2epoch->("2021-10-26 12:00:00"), # 1634335200, # 2021-10-16 00:00
+       text  => 'Charlottenstr/Breite Str..: Fahrbahn zwischen Fischerstr. und Mauerstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.09.2021 bis 26.10.2021',
        type  => 'gesperrt',
        source_id => 'viz2021:13.20521,52.53583,27.09.2021,09:33',
        data  => <<EOF,
 #: source_id: viz2021:13.20521,52.53583,15.10.2021,12:28
+#: source_id: viz2021:13.20521,52.53583,15.10.2021,12:00
 	2::inwork -3316,14169 -3227,14260 -3173,14216
 # REMOVED ---	2::inwork -3173,14216 -3135,14183
 EOF
@@ -33763,13 +33764,13 @@ EOF
 EOF
      },
      { from  => 1633989600, # 2021-10-12 00:00
-       until => 1635199200, # 2021-10-26 00:00
+       until => 1635188504, # 1635199200, # 2021-10-26 00:00
        text  => 'Berliner Allee: stadteinwärts zwischen Pistoriusstr. und Streustr.: Fahrtrichtung gesperrt, Bauarbeiten, evtl. sind auch Radfahrer betroffen (besonders im Bereich Antonplatz/Langhansstr.), vom 13.10.2021 11:00 bis 25.10.2021 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.459025,52.550082,13.10.2021,11:00',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1448195177022164992 (mit grob aufgelöster Karte)
-#: XXX Bauarbeiten überprüfen!
+# REMOVED --- #: XXX Bauarbeiten überprüfen!
 # REMOVED (hier vermutlich nicht) ---	q4::inwork; 14056,16120 14015,16103 13826,16026 13737,15994 13623,15954
 	q4::inwork; 13623,15954 13508,15912 13484,15893 13425,15846
 EOF
