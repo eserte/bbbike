@@ -13,7 +13,7 @@
 #
 
 use FindBin;
-use lib "$FindBin::RealBin/../lib";
+use lib "$FindBin::RealBin/..", "$FindBin::RealBin/../lib";
 
 use Doit;
 use Doit::Log;
@@ -25,6 +25,8 @@ use Getopt::Long;
 use Hash::Util qw(lock_keys);
 use POSIX qw(strftime WNOHANG);
 use Time::HiRes ();
+
+use BBBikeUtil qw(save_pwd2 bbbike_root);
 
 sub usage (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
@@ -645,6 +647,9 @@ EOF
 sub cgi {
     my($doit, %opt) = @_;
     lock_keys %opt;
+
+    my $pwd = save_pwd2;
+    chdir bbbike_root or die "Can't chdir: $!";
 
     # Prepare docker environment
     my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
