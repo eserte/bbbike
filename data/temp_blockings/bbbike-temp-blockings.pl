@@ -308,13 +308,14 @@ EOF
      { from  => $isodate2epoch->("2019-11-24 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-12-22 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 22, months => 11, start => "2021-01-01T00:00:00"]], # 2020 wird der Weihnachtsmarkt nur in der Zitadelle stattfinden
+       recurrences => [['yearly', days => 22, months => 11, start => "2022-01-01T00:00:00"]], # 2020 wird der Weihnachtsmarkt nur in der Zitadelle stattfinden, 2021 auch
        recurrence_prewarn_days => 21, # später nochmal prüfen
        text  => 'Spandauer Weihnachtsmarkt, vom 25.11.2019 bis 22.12.2019',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971839-955635-spandauer-weihnachtsmarkt-in-der-altstad.html',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html (2020)
+#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20211026
 	2::xmas -3275,14407 -3231,14383 -3204,14368 -3155,14340
 	2::xmas -3275,14407 -3338,14333
 	2::xmas -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
@@ -3591,12 +3592,13 @@ EOF
      { from  => $isodate2epoch->("2019-11-30 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-12-01 20:00:00"), #
        periodic => 1,
-       recurrences => [['yearly', days => 26, months => 11, start => "2021-01-01T00:00:00"]],
+       recurrences => [['yearly', days => 26, months => 11, start => "2022-01-01T00:00:00"]],
        text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 1. Dezember 2019 von 13 bis 19 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.989619.php (fällt 2020 wegen Corona aus)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/?date=20211026 (fällt 2021 ebenfalls aus)
 	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -17282,12 +17284,12 @@ EOF
 	3 8374,11479 8389,11378 8427,11365
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-05 00:00:00"),
-       until => $isodate2epoch->("2019-12-08 23:59:59"),
+     { from  => $isodate2epoch->("2021-12-02 00:00:00"),
+       until => $isodate2epoch->("2021-12-05 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12, start => "2021-01-01T00:00:00"]], # findet 2020 wegen Corona nicht statt
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html',
-       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (06.12.2019 - 08.12.2019)',
+       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (voraussichtlich 03.12.2021 - 05.12.2021)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
@@ -22903,13 +22905,14 @@ EOF
      { from  => $isodate2epoch->("2019-12-20 12:00:00"), # 1 Tag Vorlauf # 1386198000, # 2013-12-05 00:00
        until => $isodate2epoch->("2019-12-22 21:00:00"), # 1386525600, # 2013-12-08 19:00
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 12, start => "2021-01-01T00:00:00"]],
+       recurrences => [['yearly', days => 1, months => 12, start => "2022-01-01T00:00:00"]],
        #recurrence_prewarn_days => -19,
        text  => 'Alt-Rudow zwischen Köpenicker Str. und Krokusstr.: Rudower Adventsmeile, Straße gesperrt, ab: 21.12.2019 12 Uhr bis 22.12.2019 21 Uhr ',
        type  => 'gesperrt',
        source_id => 'IM_020883',
        data  => <<EOF,
 #: by: http://www.weihnachtsmarkt-deutschland.de/berlin-rudow-weihnachtsmarkt.html
+#: by: https://www.berlin.de/weihnachtsmarkt/5685707-3496862-rudower-weihnachtsmeile.html (findet 2021 nicht statt)
 #: source_id: 2147345257
 	2::xmas 16849,1437 16805,1488 16610,1715
 EOF
@@ -26178,9 +26181,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2021-04-27 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-04-28 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 28. April 2021 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2021-10-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-10-27 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. Oktober 2021 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -31040,7 +31043,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-10-21
+#: last_checked: 2021-10-26
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33344,7 +33347,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Ist die Sperrung mittlerweile aufgehoben?
-#: last_checked: 2021-10-19
+#: last_checked: 2021-10-26
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-10-15
 	2::inwork 8668,10219 8668,10236 8715,10314
@@ -33857,6 +33860,35 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1452241964015915008
 #: by: https://pbs.twimg.com/media/FCI_kkSXsAU7_wY?format=jpg&name=medium
 	q4::inwork 9207,11880 9218,11793
+EOF
+     },
+     { from  => 1635634800, # 2021-10-31 01:00
+       until => $isodate2epoch->("2021-12-10 18:00:00"),
+       text  => 'Bärenlauchstr.: Fahrbahnarbeiten, vom 1. November 2021 bis voraussichtlich Anfang Dezember 2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1139553.php',
+       data  => <<EOF,
+	q4::inwork 19765,4876 19760,4907 19755,4962 19744,5063 19737,5134 19735,5158
+EOF
+     },
+     { from  => 1635634800, # 2021-10-31 01:00
+       until => 1638313199, # 2021-11-30 23:59
+       text  => 'Ostpreußendamm - Teltowkanal durch die Kolonie Erbkaveln: Sperrung wegen Bauarbeiten, zeitweise ist die Durchfahrt für Radfahrer nicht möglich, vom 01. November 2021 bis voraussichtlich Ende November 2021',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1139513.php',
+       data  => <<EOF,
+	2::inwork 3419,1061 3481,946 3561,789 3642,727
+EOF
+     },
+     { from  => 1635285600, # 2021-10-27 00:00
+       until => $isodate2epoch->("2021-11-12 23:59:59"), # 1637017199, # 2021-11-15 23:59
+       text  => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, evtl. sind auch Radfahrer betroffen, vom 28. Oktober 2021 bis voraussichtlich Mitte November 2021',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1139346.php',
+       data  => <<EOF,
+#: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (hier: nur für Kfz-Verkehr gesperrt)
+#: source_id: viz2021:13.403429,52.56939,28.10.2021,06:00 (hier: bis 12.11.2021, und nur für Kfz-Verkehr gesperrt)
+	q4::inwork; 10240,18193 10355,17963 10459,17754
 EOF
      },
     );

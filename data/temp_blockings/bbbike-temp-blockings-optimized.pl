@@ -2245,7 +2245,41 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.1016256.php (finder 2020 nicht statt)
+# REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
+#: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
+	2::xmas 13416,7712 13424,7680
+	2::xmas 13416,7712 13378,7695 13288,7653
+	2::xmas 13424,7680 13417,7654 13392,7648 13295,7627
+	2::xmas 12972,7602 13100,7626 13130,7633 13177,7644
+	2::xmas 13188,7590 13177,7644
+	2::xmas 13188,7590 13295,7627
+	2::xmas 13288,7653 13295,7627
+	2::xmas 13288,7653 13177,7644
+	2::xmas 13288,7653 13278,7673 13245,7742
+#: tempex ^^^
+',
+         'from' => 1638399600,
+         'id' => 1998,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html',
+         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (voraussichtlich 03.12.2021 - 05.12.2021)',
+         'type' => 'gesperrt',
+         'until' => 1638745199
+       },
        undef,
        undef,
        undef,
@@ -3562,7 +3596,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: source_id: 2147341022
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -1925,6790 -2080,6897
+	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1635199200,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. Oktober 2021 ab ca. 09:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1635322500
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -4319,7 +4367,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-10-21
+#: last_checked: 2021-10-26
 #: check_frequency: 30d
 #: next_check: 2021-12-31
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -5091,7 +5139,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: add_fragezeichen: Ist die Sperrung mittlerweile aufgehoben?
-#: last_checked: 2021-10-19
+#: last_checked: 2021-10-26
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-10-15
 	2::inwork 8668,10219 8668,10236 8715,10314
@@ -5301,19 +5349,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.20521,52.53583,15.10.2021,12:28
-#: source_id: viz2021:13.20521,52.53583,15.10.2021,12:00
-	2::inwork -3316,14169 -3227,14260 -3173,14216
-# REMOVED ---	2::inwork -3173,14216 -3135,14183
-',
-         'from' => 1632607200,
-         'id' => 3453,
-         'source_id' => 'viz2021:13.20521,52.53583,27.09.2021,09:33',
-         'text' => 'Charlottenstr/Breite Str..: Fahrbahn zwischen Fischerstr. und Mauerstr. gesperrt, evtl. sind auch Radfahrer betroffen, vom 27.09.2021 bis 26.10.2021',
-         'type' => 'gesperrt',
-         'until' => 1635242400
-       },
+       undef,
        {
          'data' => '#: osm_watch: way id="8069460" version="16"
 #: also_indoor: traffic (G,H(ungenau))
@@ -5461,6 +5497,39 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Schwarzer Weg: Fahrbahnausbesserung zwischen Heiligenseestraße und Dicke Marie, Sperrung vom 25. bis zum 29. Oktober 2021',
          'type' => 'gesperrt',
          'until' => 1635544799
+       },
+       undef,
+       {
+         'data' => '	q4::inwork 19765,4876 19760,4907 19755,4962 19744,5063 19737,5134 19735,5158
+',
+         'from' => 1635634800,
+         'id' => 3470,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1139553.php',
+         'text' => 'Bärenlauchstr.: Fahrbahnarbeiten, vom 1. November 2021 bis voraussichtlich Anfang Dezember 2021',
+         'type' => 'handicap',
+         'until' => 1639155600
+       },
+       {
+         'data' => '	2::inwork 3419,1061 3481,946 3561,789 3642,727
+',
+         'from' => 1635634800,
+         'id' => 3471,
+         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1139513.php',
+         'text' => 'Ostpreußendamm - Teltowkanal durch die Kolonie Erbkaveln: Sperrung wegen Bauarbeiten, zeitweise ist die Durchfahrt für Radfahrer nicht möglich, vom 01. November 2021 bis voraussichtlich Ende November 2021',
+         'type' => 'gesperrt',
+         'until' => 1638313199
+       },
+       {
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (hier: nur für Kfz-Verkehr gesperrt)
+#: source_id: viz2021:13.403429,52.56939,28.10.2021,06:00 (hier: bis 12.11.2021, und nur für Kfz-Verkehr gesperrt)
+	q4::inwork; 10240,18193 10355,17963 10459,17754
+',
+         'from' => 1635285600,
+         'id' => 3472,
+         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1139346.php',
+         'text' => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, evtl. sind auch Radfahrer betroffen, vom 28. Oktober 2021 bis voraussichtlich Mitte November 2021',
+         'type' => 'handicap',
+         'until' => 1636757999
        }
      
 );

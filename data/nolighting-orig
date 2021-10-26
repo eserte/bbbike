@@ -1369,13 +1369,7 @@ Berolinastr.	NL 11719,13088 11815,13045 11865,13027
 (Park am Gleisdreieck, Zufahrt)	NL 8384,10507 8377,10502 8361,10491 8328,10485 8322,10451 8296,10438
 (Park am Gleisdreieck)	NL 8579,10030 8521,9911 8504,9870 8477,9867 8464,9744 8446,9670 8428,9606 8426,9572
 Stresemannstr. - Wilhelmstr.	NL 9215,10607 9368,10641
-# 
-#: add_fragezeichen: funktioniert die Beleuchtung wieder?
-#: note: mittlerweile stehen nur die Masten, die Lampenköpfe wurden abmontiert
-#: last_checked: 2021-09-28
-#: check_frequency: 60d
-Stresemannstr. - Wilhelmstr.: vorhandene Beleuchtung ist kaputt	NL 9245,10565 9375,10616
-# 
+# REMOVED (neue Lampenköpfe wurden montiert --- assume fixed) --- #  --- #: add_fragezeichen: funktioniert die Beleuchtung wieder? --- #: note: mittlerweile stehen nur die Masten, die Lampenköpfe wurden abmontiert --- #: last_checked: 2021-09-28 --- #: check_frequency: 60d --- Stresemannstr. - Wilhelmstr.: vorhandene Beleuchtung ist kaputt	NL 9245,10565 9375,10616 --- # 
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.)	NL 8264,10192 8276,10079
 # REMOVED --- #: XXX Beleuchtung existiert, funktioniert aber nicht vvv --- #: last_checked: 2018-03-23 vvv --- Stresemannstr. - Wilhelmstr.	NL 9249,10562 9375,10616 --- Rahel-Varnhagen-Promenade	NL 9368,10641 9556,10666 --- #: last_checked ^^^ --- #: XXX ^^^
 (Weg an der Südpanke)	NL 8478,13941 8447,13983 8380,14024 8344,14133 8307,14175 8271,14222 8273,14269 8266,14346 8267,14395 8293,14453 8302,14517
