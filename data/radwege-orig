@@ -2252,13 +2252,13 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804
 #: XXX geschützer Radweg wird gebaut vvv
 #: source_id: viz2021:13.429807,52.523192,11.10.2021,07:00
-#: last_checked: 2021-10-20 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2021-10-31 vvv
+#: last_checked: 2021-10-27 vvv
+#: check_frequency: 21d vvv
+# REMOVED --- #: next_check: 2021-10-31 vvv
 	RW2; 12126,13088 12122,13029
 	RW4; 12122,13029 12112,12861
 	RW3; 12112,12861 12064,12673 12050,12616
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -2272,12 +2272,14 @@ Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 #: by: https://viz.berlin.de/2021/10/verkehrsvorschau-fuer-montag-11-10-2021/
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (ab 1.11.2021)
 #: XXX geschützer Radweg wird gebaut (nach den Bauarbeiten Richtung Süden) vvv
-#: last_checked: 2021-10-20 vvv
-#: next_check: 2021-11-01 vvv
+#: last_checked: 2021-10-27 vvv
+#: check_frequency: 7d vvv
+# REMOVED --- #: next_check: 2021-11-01 vvv
 # REMOVED --- #: next_check: 2021-12-31 vvv
 	RW3; 12050,12616 12064,12673 12112,12861 12122,13029
 	RW2; 12122,13029 12126,13088
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -3832,30 +3834,15 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 #: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv
 #: last_checked: 2021-10-02 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2021-10-31 vvv
+#: next_check: 2021-10-28 vvv
 Busspur ist immer gültig	RW5; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374
 	RW3; 17601,5374 17648,5338
 Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905 16868,5938
 #: last_checked ^^^
 #: check_frequency ^^^
 #: next_check ^^^
-#: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2
-#: confirmed_by: srt
-#: also_indoor: traffic (G) vvv
-#: source_id: 2147346053 vvv
-#: source_id: viz2021:13.51214,52.454886,09.07.2020,07:00 (bis 6.10.2021) (mittlerweile bis 1.11.2021) vvv
-#: last_checked: 2021-10-10 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2021-11-01 vvv
-	RW3; 17736,5441 17886,5587
-	RW4; 17886,5587 17736,5441
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: source_id ^^^
-#: source_id ^^^
-#: also_indoor ^^^
 #: XXX ^^^
+# REMOVED --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: by: https://www.bahninfo-forum.de/read.php?9,665091,716418#msg-716418 (Abbau) --- #: also_indoor: traffic (G) vvv --- #: source_id: 2147346053 vvv --- #: source_id: viz2021:13.51214,52.454886,09.07.2020,07:00 (bis 6.10.2021) (mittlerweile bis 1.11.2021) vvv --- #: last_checked: 2021-10-10 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2021-11-01 vvv --- #: valid: -20211028 vvv ---	RW3; 17736,5441 17886,5587 ---	RW4; 17886,5587 17736,5441 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: source_id ^^^ --- #: also_indoor ^^^
 # 
 	RW6;RW6 14705,10149 14621,10062 14599,10039
 	RW6;RW6 14621,10062 14702,10020 14788,9976
@@ -7350,3 +7337,7 @@ Grünmarkierung	RW3; 8810,10305 8808,10290 8790,10157 8784,9972 8779,9851 8779,98
 Gehweg für Radfahrer frei	RW1;RW1 475,1202 587,1230 718,1264 857,1300
 # 
 	RW2; 1566,11409 1574,11379
+# 
+#: by: osm
+Grünmarkierung	RW4; 12510,6508 12470,6586
+# 

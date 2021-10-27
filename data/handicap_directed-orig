@@ -361,17 +361,7 @@ Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Rad
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: next_check_id: STERNDAMM-2020
-#: source_id: viz2021:13.508713,52.452517,06.10.2021,07:00 vvv
-#: last_checked: 2021-10-20 (bahninfo-forum) vvv
-#: check_frequency: 7d vvv
-#: next_check: 2021-11-01 vvv
-Sterndamm: Umweg für Radfahrer, weitere Ampel	DH:tl:len=150 17705,5223 17648,5338 17601,5374
-Sterndamm: Umweg für Radfahrer, weitere Ampel	DH:tl:len=150 17705,5223 17648,5338 17601,5090
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: source_id ^^^
+# REMOVED --- #: next_check_id: STERNDAMM-2020 --- #: source_id: viz2021:13.508713,52.452517,06.10.2021,07:00 vvv --- #: note: laut rbb ab 28.10.2021 keine Einschränkungen mehr --- #: by: https://viz.berlin.de/2021/10/verkehrsvorschau-28102021/ --- #: last_checked: 2021-10-20 (bahninfo-forum) vvv --- #: check_frequency: 7d vvv --- #: next_check: 2021-11-01 vvv --- #: valid: -20211028 vvv --- Sterndamm: Umweg für Radfahrer, weitere Ampel	DH:tl:len=150 17705,5223 17648,5338 17601,5374 --- Sterndamm: Umweg für Radfahrer, weitere Ampel	DH:tl:len=150 17705,5223 17648,5338 17601,5090 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # 
 Krügerstr. - Prenzlauer Allee: linker Gehweg	DH:h=q3,50 12013,16120 12075,16144 12090,16199
 Wisbyer Str. - Dunckerstr.: linker Gehweg	DH:h=q3,90 12090,16199 12012,16250 11926,16088

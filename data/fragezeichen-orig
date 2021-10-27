@@ -893,7 +893,7 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant (8
 # REMOVED (hier eigentlich OK) --- Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant (800m), "Bau einer für Radfahrer nutzbaren Brücke im Zuge des Neuen Weges"	?::projected 23660,5307 23691,5368 23746,5276
 # REMOVED (ja) --- #: XXX Gr.3 --- Regattastr.: wird die Benutzungspflicht aufgehoben (auch Richtung Norden)?	?::projected 22328,2084 22378,1970 22388,1947 22421,1872 22448,1824 22455,1812 22549,1644 22570,1607 22655,1450
 # 
-#: next_check_id: STERNDAMM-2020
+# REMOVED --- #: next_check_id: STERNDAMM-2020
 #: XXX Jt.1
 #: XXX im nördlichen Teil vermutlich erst, nachdem die Straßenbahn verlegt wurde?
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-1_gesiegelt.pdf (für Planfeststellung; Radweg ist eingezeichnet)
@@ -902,9 +902,9 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant (8
 # REMOVED (404) --- #: by: http://www.johthal.de/instar-video.html (Webcam)
 #: source_id: 2147345841 (bis 30.9.2021)
 #: source_id: LMS-BR_r_LMS-BR_204650_LMS-BR_72 (bis 30.9.2021) (inaktiv)
-#: last_checked: 2021-10-10
-#: check_frequency: 45d
-#: next_check: 2021-10-31
+#: last_checked: 2021-10-27 (bahninfo-forum)
+#: check_frequency: 180d
+# REMOVED --- #: next_check: 2021-10-31
 # REMOVED (hier realisiert) --- Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17695,5394 17736,5441
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17736,5441 17886,5587
 # 
@@ -1033,7 +1033,7 @@ Kurpark: Verbesserung der Befahrbarkeit geplant	?::projected 24964,6046 25183,60
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-04-03-19-
 #: source_id: 2147343845 (Gesamtmaßnahme bis Mitte April 2019)
 #: source_id: 2147343951 (bis Mitte April 2019)
-#: osm_watch: way id="93704161" version="15"
+#: osm_watch: way id="93704161" version="16"
 #: last_checked: 2021-10-24 vvv
 #: check_frequency: 90d vvv
 Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projected 19957,5941 19795,5935
@@ -1217,7 +1217,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285
 # REMOVED --- #: next_check: 2020-10-16
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str., vielleicht als Zweirichtungsradweg?	?::projected 12121,16317 12097,16263 12090,16199
 # 
-#: last_checked: 2021-08-14 (mapillary)
+#: last_checked: 2021-10-23 (mapillary)
 #: check_frequency: 120d
 Blankenfelder Chaussee: Verbesserung -> Radspuren oder Verbesserung des Radwegs?	?::projected 10060,21916 9973,22133 9747,22694
 # 
@@ -1767,7 +1767,7 @@ Rummelsburger Landstr.: Verbesserung des Radwegs oder werden Radstreifen angeleg
 #: by: https://api.fixmyberlin.de/api/plannings/110
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5441
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/mobilitaetsgesetz-soll-bei-sanierung-der-strasse-vor-schoenholz-beruecksichtigt-werden_a275842
-#: last_checked: 2021-05-24 vvv
+#: last_checked: 2021-10-23 (mapillary) vvv
 #: next_check: 2022-04-01 vvv
 Straße vor Schönholz: Bau von Radspuren geplant	?::projected 8406,19081 8482,18986 8634,18787
 Straße vor Schönholz: Bau von Radspuren geplant	?::projected 8668,18744 8791,18605
@@ -2684,12 +2684,13 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1134851.php (Bauarbeiten ab 18.10.2021, Dauer "einige Wochen")
 #: by: https://berliner-abendblatt.de/2021/10/12/neukoelln-hermannstrasse-bekommt-poller-radweg/
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/in-einigen-wochen-koennen-radler-auf-eigenen-spuren-auf-der-suedlichen-hermannstrasse-fahren_a325322 (zunächst Richtung Norden)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/radverkehr-radverkehrsnetz.68/page-3#post-16835 (Markierungsarbeiten + Grünbeschichtung)
 #: source_id: 2147347020 (Fernwärmearbeiten bis 30.6.2021 --- hat das was mit der Radspur zu tun?)
 #: osm_watch: way id="860638046" version="7"
-#: osm_watch: way id="544599538" version="8"
+#: osm_watch: way id="544599538" version="9"
 #: osm_watch: way id="860638027" version="2"
 #: last_checked: 2021-10-23
-#: check_frequency: 45d
+#: check_frequency: 21d
 # REMOVED --- #: next_check: 2021-10-18
 # REMOVED (hier nicht) --- Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::projected 12588,6337 12576,6374 12553,6423 12510,6508
 Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::projected 12510,6508 12470,6586 12422,6715 12395,6785 12362,6881 12347,6923 12342,6936 12317,7007 12304,7039 12291,7074 12259,7164 12244,7205 12221,7271 12185,7381 12158,7449 12123,7549
@@ -4309,7 +4310,7 @@ Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 #: next_check_id: CHAUSSEE-2020
 #: by: https://api.fixmyberlin.de/api/plannings/51 (Fertigstellung: 2019 (abhängig von der Tunnelsanierung U6))
 #: XXX Tunnelsanierung beginnt am 2020-11-02 und dauert bis Mitte Juli 2021; während der Bauarbeiten wird der Radverkehr Richtung Norden über den Gehweg geführt
-#: last_checked: 2021-10-10 (mapillary)
+#: last_checked: 2021-10-23 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-11-15
 Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,13973 8732,14098 8607,14253
@@ -4622,7 +4623,7 @@ Sickingenstr./Rostocker Str.: Zebrastreifen geplant	?::projected 5131,14046 5100
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: priority: #D
-#: last_checked: 2021-07-31
+#: last_checked: 2021-10-23 (mapillary)
 #: check_frequency: 120d
 Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,14923 8442,14888
 # 
@@ -5692,7 +5693,7 @@ Mühlenstr.: Radstreifen geplant	?::projected 10240,18193 10355,17963 10459,17754
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (wenn, dann ab 2021, oder ist die Straße vor Schönholz gemeint?)
 #: source_id: 2147346942 (Kanalarbeiten, bis 4.1.2022)
 #: source_id: viz2021:13.374359,52.586234,09.03.2021,07:00 (Kanalarbeiten, bis 4.1.2022)
-#: last_checked: 2021-10-08
+#: last_checked: 2021-10-23 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2022-01-04
 Schönholzer Weg: wird hier eine Radverkehrsanlage erstellt?	?::projected; 8196,20096 8224,19977 8234,19936
@@ -5928,7 +5929,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Baubeginn Mitte 2021)
 #: XXX beide Fahrtrichtungen?
-#: last_checked: 2021-10-24
+#: last_checked: 2021-10-27
 #: check_frequency: 90d
 Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 # 
@@ -7375,7 +7376,7 @@ Bebauungsplan 7-77VE: geplante verkehrsberuhigte Straßen, ggfs. noch weitere Weg
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6649
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103661660911/61660911/00298709/09-Anlagen/02/2018-11-13_B-Plan12-68_PlanbildAufstellungsbes.pdf
-#: last_checked: 2020-12-11 (mapillary)
+#: last_checked: 2021-10-23 (mapillary)
 #: check_frequency: 270d
 Bebauungsplan 12-68: wird der bestehende Weg "aufgewertet"; entsteht eine offizielle Verbindung für Radfahrer?	?::projected 8628,18441 8823,18252
 # 
@@ -7762,6 +7763,11 @@ Spreeradweg am Grützmachergraben: geplante Radfahrer- und Fußgängerbrücke	?::pro
 #: by: https://berliner-abendblatt.de/wp-content/uploads/2021/10/Studio-Wessendorf_Buch_AmSandhaus_LP_karussell2.jpg
 #: next_check: 2025-06-30
 Am Sandhaus: werden hier neue Straßen entstehen?	? 14889,25937 15022,25846 15107,25665 15599,25819 15937,25650
+# 
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-fuer-meinberlin/bebauungsplan.1136857.php
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-fuer-meinberlin/unterlagen/karten-und-plaene/8-102_fbb_05-blatt2.pdf
+#: next_check: 2025-06-30
+Bebauungsplan 8-102 ("Ehemaliger NME-Bahnhof Rudow"): wird es hier eine Wegverbindung geben?	? 16512,920 16672,556
 # 
 #: ignore ^^^
 #: section ^^^

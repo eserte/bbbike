@@ -3600,16 +3600,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (n‰chste Termine 2021: 3.11., 10.11., 17.11., 24.11)
 #: source_id: 2147341022
+#: priority: #A
+#: next_check: 2021-11-03
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
 ',
-         'from' => 1635199200,
+         'from' => 1635807600,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. Oktober 2021 ab ca. 09:30 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 3. November 2021 ab ca. 09:30 Uhr',
          'type' => 'gesperrt',
-         'until' => 1635322500
+         'until' => 1635930900
        },
        undef,
        {
@@ -4269,7 +4272,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: XXX Unstetige Ausschilderung: mal ist f¸r Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-10-13 (architektur-urbanistik)
+#: last_checked: 2021-10-27
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 ',
@@ -4518,7 +4521,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
 #: add_fragezeichen: Bis wann gilt die Sperrung f¸r Radfahrer?
-#: last_checked: 2021-10-06 (architektur-urbanistik)
+#: last_checked: 2021-10-26 (daf)
 #: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 ',
@@ -4580,7 +4583,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: 2147346816 (bis 31.03.2025) (fr¸her nur bis 2022)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2021-09-09
+#: last_checked: 2021-09-27 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -4665,7 +4668,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021)
-#: last_checked: 2021-09-04
+#: last_checked: 2021-10-23 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-11-19
 	q2::inwork 8913,16159 9099,16398
@@ -5332,9 +5335,9 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.gmg-ing.de/referenzen/ernst-heilmann-steg-berlin/ ("Torsionsschwingungen")
 #: by: https://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10997_Berlin_Instandsetzung_Stahlbau_1924073.html (Ausschreibung)
 #: osm_watch: note 2867467 2
-#: osm_watch: way id="16311543" version="17"
+#: osm_watch: way id="16311543" version="18"
 #: also_indoor: search Ernst-Heilmann-Steg
-#: last_checked: 2021-10-05
+#: last_checked: 2021-10-26 (osm)
 #: check_frequency: 120d
 	2::inwork 13270,10030 13306,10006
 ',
