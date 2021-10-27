@@ -138,7 +138,7 @@ sub fetch_images {
     my $url = "$image_api_url?access_token=$client_token&fields=id,computed_geometry,captured_at,sequence&bbox=" . join(",", @$bbox) . "&start_captured_at=$start_captured_at_iso&end_captured_at=$end_captured_at_iso";
 
     my $data;
-    my $max_try = 6;
+    my $max_try = 10;
     for my $try (1..$max_try) {
 	my $resp = $ua->get($url);
 	if (!$resp->is_success) {
