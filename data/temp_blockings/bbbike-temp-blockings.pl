@@ -33479,6 +33479,8 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1120239.php
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_37_3401_3492_online.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6984 (Antrag)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1140269.php (Ausweitung)
+#: by: https://www.berlin.de/imgscaler/QDnYYRYHVON_2jnT8kEu7J2TMdjTUnhV5UGJwVZ-KuY/article/L3N5czExLXByb2QvYmEtdHJlcHRvdy1rb2VwZW5pY2svX2Fzc2V0cy9ha3R1ZWxsZXMvcG0vMjAyMS9jcm9wXzE1MDBfNzUwXzBfMjM2XzE1MDBfMTA2Ml82NTFlMDM1NWE0MDI3OTgyYzc0MWEwMWQ2YzBhODU4Yl9sYWdlcGxhbl8yMDAwLW1pbi5qcGc.jpg (Karte)
 #: XXX bis wann bleibt die Sperrung bestehen? vvv
 #: note: der Verbindungsweg Puschkinallee und Am Treptower Park war nicht gesperrt: Do 2021-09-09 gegen 22:20 Uhr
 #: last_checked: 2021-10-10 vvv
@@ -33490,6 +33492,12 @@ EOF
 	2::night 14382,9299 14398,9373 14485,9271 14531,9244 14612,9190
 	2::night 14398,9373 14347,9452 14316,9542 14242,9448
 	2::night 14635,9441 14588,9473
+	2::night 15558,8820 15439,8839 15297,8921 15245,8916 15223,8893
+	2::night 14705,9578 14791,9537 14823,9523 14837,9517 14867,9573 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545
+	2::night 14980,8940 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714 15298,8781 15235,8841 15223,8893 15159,8934 15110,8912 15057,8910
+	2::night 15214,9090 15190,9027 15181,8967
+	2::night 15159,8934 15181,8967 15245,8916
+	2::night 14837,9517 14809,9466
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -33885,13 +33893,24 @@ EOF
      },
      { from  => 1635285600, # 2021-10-27 00:00
        until => $isodate2epoch->("2021-11-12 23:59:59"), # 1637017199, # 2021-11-15 23:59
-       text  => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, evtl. sind auch Radfahrer betroffen, vom 28. Oktober 2021 bis voraussichtlich Mitte November 2021',
+       text  => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, Radfahrer dürfen den Gehweg benutzen, vom 28. Oktober 2021 bis voraussichtlich Mitte November 2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1139346.php',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (hier: nur für Kfz-Verkehr gesperrt)
+#: by: https://twitter.com/VIZ_Berlin/status/1453704442986049548 (Radfahrer frei)
+#: by: https://twitter.com/VIZ_Berlin/status/1453699314891595779
 #: source_id: viz2021:13.403429,52.56939,28.10.2021,06:00 (hier: bis 12.11.2021, und nur für Kfz-Verkehr gesperrt)
-	q4::inwork; 10240,18193 10355,17963 10459,17754
+	q3::inwork; 10240,18193 10355,17963 10459,17754
+EOF
+     },
+     { from  => 1636239600, # 2021-11-07 00:00
+       until => 1638313199, # 2021-11-30 23:59
+       text  => 'Alter Schönefelder Weg: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 8. November 2021 bis 30. November 2021 ',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1140276.php',
+       data  => <<EOF,
+	q4::inwork 19743,1804 19669,1729 19653,1671 19636,1609 19599,1557
 EOF
      },
     );

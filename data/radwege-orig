@@ -429,7 +429,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
-#: last_checked: 2021-09-13 vvv
+#: last_checked: 2021-10-28 vvv
 #: check_frequency: 60d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -932,6 +932,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
+#: source_id: viz2021:13.461003,52.492338,30.10.2021,06:00 (Wochenendsperrung für Kfz-Verkehr)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
 #: last_checked: 2021-10-23
 #: check_frequency: 60d
@@ -2250,9 +2251,10 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: note: Lichtenberger Str., Richtung Süden
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1139492.php (hier: bis Ende November 2021 (beide Richtungen oder nur Richtung Süden?))
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804
+#: by: https://berliner-abendblatt.de/2021/10/28/geschuetzter-radweg-auf-der-lichtenberger-strasse/
 #: XXX geschützer Radweg wird gebaut vvv
 #: source_id: viz2021:13.429807,52.523192,11.10.2021,07:00
-#: last_checked: 2021-10-27 vvv
+#: last_checked: 2021-10-28 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2021-10-31 vvv
 	RW2; 12126,13088 12122,13029
@@ -2272,7 +2274,7 @@ Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 #: by: https://viz.berlin.de/2021/10/verkehrsvorschau-fuer-montag-11-10-2021/
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (ab 1.11.2021)
 #: XXX geschützer Radweg wird gebaut (nach den Bauarbeiten Richtung Süden) vvv
-#: last_checked: 2021-10-27 vvv
+#: last_checked: 2021-10-28 vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2021-11-01 vvv
 # REMOVED --- #: next_check: 2021-12-31 vvv
@@ -5196,7 +5198,8 @@ Radspur zwischen Fahrspuren	RW3; 11139,13008 11226,12945
 asphaltiert	RW1;RW1 17648,5338 17705,5223 17726,5166 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667
 #: by: bahninfo-forum
 #: confirmed_by: srt
-asphaltiert, relativ breit	RW1; 17648,5338 17695,5394 17736,5441
+#: by: https://twitter.com/VIZ_Berlin/status/1453634816461713410/photo/1
+asphaltiert, relativ breit	RW2; 17648,5338 17695,5394 17736,5441
 asphaltiert, relativ breit	RW1; 17736,5441 17695,5394 17648,5338
 asphaltiert	RW1;RW1 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642
 asphaltiert	RW1;RW2 18445,2642 18338,2669
