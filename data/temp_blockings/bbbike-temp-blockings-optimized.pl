@@ -1312,7 +1312,40 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_48_4333_4456_online.pdf
+#: by: https://viz.berlin.de/2021/10/verkehrsvorschau-13102021/ (Erwähnung des Großen Zapfenstreichs)
+	2::temp 8424,12853 8503,12895
+	2::temp 7930,12912 8021,12832
+östl. John-Foster-Dulles-Allee	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
+östl. Straße des 17. Juni	2::temp 8775,12457 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150
+	2::temp 8595,12066 8600,12165 8538,12245
+Große Querallee	2::temp 7816,12150 7822,12201 7875,12363 7945,12592
+südl. Spreeuferweg	2::temp 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
+Paul-Löbe-Allee und Verlängerungen	2::temp 7710,12585 7741,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8596,12576
+Yitzhak-Rabin-Str. bis Gustav-Heinemann-Brücke	2::temp 8120,12756 8122,12603 8119,12414 8055,12186 8119,12414 8122,12603 8120,12756 8114,12839 8115,12912 8116,12938 8110,13042
+nördl. Wilhelmstr.	2::temp 8775,12457 8766,12541
+Willy-Brandt-Str. - Konrad-Adenauer-Str.	2::temp 8021,12832 8030,12824 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853
+Platz des 18. März	2::temp 8538,12245 8592,12252
+	2::temp 8252,12757 8115,12912
+	2::temp 8344,12221 8391,12389 8400,12417
+	2::temp 8546,12279 8391,12389 8354,12416
+	2::temp 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414
+	2::temp 8309,12758 8415,12749 8593,12742
+# REMOVED (Adele-Schreiber-Krieger-Str.) ---	2::temp 8737,12757 8596,12760 8545,12760
+# REMOVED (westl. John-Foster-Dulles-Allee) ---	2::temp 7514,12387 7627,12380 7821,12367 7875,12363
+# REMOVED (Schiffbauerdamm) ---	2::temp 8514,12877 8545,12760
+# REMOVED (westl. Straße des 17. Juni) ---	2::temp 7816,12150 7383,12095 7026,12054 6828,12031
+',
+         'from' => 1636585200,
+         'id' => 1422,
+         'text' => 'Straße des 17. Juni und Straßen im Regierungsviertel am 12. November 2021 von 10 bis 20 Uhr gesperrt (Feierliches Gelöbnis der Bundeswehr)',
+         'type' => 'gesperrt',
+         'until' => 1636743600
+       },
        undef,
        undef,
        undef,
@@ -4667,18 +4700,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021)
+         'data' => '#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021)
 #: last_checked: 2021-10-23 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2021-11-19
+#: next_check: 2021-11-25
 	q2::inwork 8913,16159 9099,16398
 ',
          'from' => 1611329064,
          'id' => 3324,
          'source_id' => '2147346268',
-         'text' => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., bis 19.11.2021',
+         'text' => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., bis 25.11.2021',
          'type' => 'handicap',
-         'until' => 1637337600
+         'until' => 1637856000
        },
        {
          'data' => '#: next_check_id: ABBESTR-2021
@@ -4738,17 +4771,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00
-#: source_id: viz2021:13.320517,52.466345,13.07.2021,08:00
+         'data' => '#: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00 (inaktiv)
+#: source_id: viz2021:13.320517,52.466345,13.07.2021,08:00 (mittlerweile bis 2.12.2021)
 #: note: laut rbb nur bis 15.10.2021
 	q4::inwork; 4894,6509 4875,6552 4786,6717
 ',
          'from' => 1614754800,
          'id' => 3339,
          'source_id' => '2147346935',
-         'text' => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Richtung Norden gesperrt, bis 2.11.2021',
+         'text' => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Richtung Norden gesperrt, bis 2.12.2021',
          'type' => 'handicap',
-         'until' => 1635868800
+         'until' => 1638460800
        },
        undef,
        undef,
@@ -5126,23 +5159,23 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021)
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
 #: last_checked: 2021-10-08
 #: check_frequency: 30d
-#: next_check: 2021-10-31
+#: next_check: 2021-11-30
 	q3::inwork 13057,14267 13158,14117
 ',
          'from' => 1627164000,
          'id' => 3424,
          'source_id' => 'viz2021:13.444,52.53356,26.07.2021,08:18',
-         'text' => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich 31.10.2021',
+         'text' => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich Ende November 2021',
          'type' => 'handicap',
-         'until' => 1635699600
+         'until' => 1638291600
        },
        {
          'data' => '#: add_fragezeichen: Ist die Sperrung mittlerweile aufgehoben?
-#: last_checked: 2021-10-26
+#: last_checked: 2021-10-29
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-10-15
 	2::inwork 8668,10219 8668,10236 8715,10314
@@ -5189,22 +5222,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: STERNDAMM-2020
-#: last_checked: 2021-10-10
-#: check_frequency: 60d
-#: next_check: 2021-10-31
-	q3::inwork 18766,3260 18828,3196 18946,3077
-	3 18892,3256 18828,3196 18822,3188
-	3 18892,3256 18828,3196 18946,3077
-	3 18822,3188 18828,3196 18892,3256
-',
-         'from' => undef,
-         'id' => 3428,
-         'text' => 'Karl-Ziegler-Str.: Sperrung der Fahrbahn wegen Gleisarbeiten, Umfahrung auf Gehweg möglich, Überqueren nicht möglich',
-         'type' => 'handicap',
-         'until' => 1635663600
-       },
+       undef,
        {
          'data' => '#: note: Gehweg für Radfahrer frei (beide Richtungen)
 # REMOVED --- #: next_check: 2021-08-13
@@ -5342,7 +5360,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: confirmed_by: srt
 #: by: https://www.gmg-ing.de/referenzen/ernst-heilmann-steg-berlin/ ("Torsionsschwingungen")
 #: by: https://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10997_Berlin_Instandsetzung_Stahlbau_1924073.html (Ausschreibung)
-#: osm_watch: note 2867467 2
+# REMOVED (eins reicht) --- #: osm_watch: note 2867467 2
 #: osm_watch: way id="16311543" version="18"
 #: also_indoor: search Ernst-Heilmann-Steg
 #: last_checked: 2021-10-26 (osm)
@@ -5511,7 +5529,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        {
-         'data' => '	q4::inwork 19765,4876 19760,4907 19755,4962 19744,5063 19737,5134 19735,5158
+         'data' => '#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-in-der-baerenlauchstrasse_a326432
+	q4::inwork 19765,4876 19760,4907 19755,4962 19744,5063 19737,5134 19735,5158
 ',
          'from' => 1635634800,
          'id' => 3470,

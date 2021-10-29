@@ -327,6 +327,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://berliner-abendblatt.de/2021/10/15/mitte-friedrichstrasse-soll-dauerhaft-autofrei-bleiben/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/flaniermeile-friedrichstrasse-soll-dauerhaft-gesperrt-bleiben_a326012 (Teileinziehung geplant, evtl. bis April 2022)
 #: source_id: 2147346249
+#: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00
 #: last_checked: 2021-07-26 vvv
 #: next_check: 2022-04-01 vvv
 # REMOVED --- #: valid: !20200821-20211031 --- Friedrichstr. (Mitte, Kreuzberg)	H 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103 --- #: valid: 20200821-20211031
@@ -10480,7 +10481,8 @@ Bahnhofstr. (Lichtenrade)	H 10983,-2116 10756,-2128 10631,-2130 10509,-2131 1045
 #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/bahnuebergang-in-der-lichtenrader-bahnhofstrasse-ist-seit-25-mai-geschlossen_a271258
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (evtl. mittlerweile etwas verlegt?)
 #: osm_watch: way id="855309801" version="2"
-#: osm_watch: way id="810461577" version="4"
+# REMOVED --- #: osm_watch: way id="810461577" version="5"
+#: osm_watch: way id="997120420" version="1"
 #: XXX bis wann wird es diesen Weg geben?
 #: last_checked: 2021-10-03
 #: next_check: 2023-07-31
@@ -10729,8 +10731,9 @@ Handjerystr. (Friedenau)	N 5357,6932 5478,6959 5565,7024 5624,7113 5641,7189
 Handjerystr. (Friedenau)	N 5642,7255 5641,7332 5640,7435 5636,7540 5635,7660 5636,7685 5636,7709 5636,7734 5632,7821 5630,7875
 Lauterplatz	NN 5799,7880 5707,7878
 #: osm.highway: service vvv
-#: note: bei osm "Hannah-Höch-Weg", in der Realität nicht ausgeschildert
+#: note: bei osm und fis-broker "Hannah-Höch-Weg", in der Realität nicht ausgeschildert
 (Zufahrt zum Lauterplatz)	N 5632,7821 5800,7826
+#: note: bei osm und fis-broker "Lauterplatz", in der Realität nicht ausgeschildert
 (Zufahrt zum Lauterplatz)	N 5800,7826 5799,7880
 #: osm.highway ^^^
 Renée-Sintenis-Platz	N 5642,7255 5624,7244 5614,7223 5621,7204 5641,7189 5661,7202 5675,7224 5664,7244 5642,7255

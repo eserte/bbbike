@@ -12226,23 +12226,20 @@ EOF
 	2::inwork 23402,5483 23384,5541 23370,5589 23333,5710
 EOF
      },
-     { from  => $isodate2epoch->("2021-10-12 00:00:00"), # $isodate2epoch->("2019-11-11 08:00:00"), # 1216461600, # 2008-07-19 12:00 # $isodate2epoch->("2021-08-31 00:00:00"), # 
-       until => $isodate2epoch->("2021-10-13 21:00:00"), # $isodate2epoch->("2019-11-12 14:00:00"), # 1216584000, # 2008-07-20 22:00 # $isodate2epoch->("2021-08-31 23:00:00"), # 
-       text  => 'Straße des 17. Juni und Straßen im Regierungsviertel am 13. Oktober 2021 von 11 bis 21 Uhr gesperrt (Großer Zapfenstreich)', # früher: Feierliches Gelöbnis der Bundeswehr
+     { from  => $isodate2epoch->("2021-11-11 00:00:00"), # $isodate2epoch->("2019-11-11 08:00:00"), # 1216461600, # 2008-07-19 12:00 # $isodate2epoch->("2021-08-31 00:00:00"), # 
+       until => $isodate2epoch->("2021-11-12 20:00:00"), # $isodate2epoch->("2019-11-12 14:00:00"), # 1216584000, # 2008-07-20 22:00 # $isodate2epoch->("2021-08-31 23:00:00"), # 
+       text  => 'Straße des 17. Juni und Straßen im Regierungsviertel am 12. November 2021 von 10 bis 20 Uhr gesperrt (Feierliches Gelöbnis der Bundeswehr)', # kann auch sein: Großer Zapfenstreich
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_48_4333_4456_online.pdf
 #: by: https://viz.berlin.de/2021/10/verkehrsvorschau-13102021/ (Erwähnung des Großen Zapfenstreichs)
 	2::temp 8424,12853 8503,12895
 	2::temp 7930,12912 8021,12832
-# REMOVED (Adele-Schreiber-Krieger-Str.) ---	2::temp 8737,12757 8596,12760 8545,12760
-# REMOVED (westl. John-Foster-Dulles-Allee) ---	2::temp 7514,12387 7627,12380 7821,12367 7875,12363
 östl. John-Foster-Dulles-Allee	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-# REMOVED (Schiffbauerdamm) ---	2::temp 8514,12877 8545,12760
 östl. Straße des 17. Juni	2::temp 8775,12457 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150
-# REMOVED (westl. Straße des 17. Juni) ---	2::temp 7816,12150 7383,12095 7026,12054 6828,12031
 	2::temp 8595,12066 8600,12165 8538,12245
 Große Querallee	2::temp 7816,12150 7822,12201 7875,12363 7945,12592
 südl. Spreeuferweg	2::temp 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
@@ -12256,6 +12253,10 @@ Platz des 18. März	2::temp 8538,12245 8592,12252
 	2::temp 8546,12279 8391,12389 8354,12416
 	2::temp 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414
 	2::temp 8309,12758 8415,12749 8593,12742
+# REMOVED (Adele-Schreiber-Krieger-Str.) ---	2::temp 8737,12757 8596,12760 8545,12760
+# REMOVED (westl. John-Foster-Dulles-Allee) ---	2::temp 7514,12387 7627,12380 7821,12367 7875,12363
+# REMOVED (Schiffbauerdamm) ---	2::temp 8514,12877 8545,12760
+# REMOVED (westl. Straße des 17. Juni) ---	2::temp 7816,12150 7383,12095 7026,12054 6828,12031
 EOF
      },
      { from  => 1217625690, # 2008-08-01 23:21
@@ -32174,15 +32175,15 @@ EOF
 EOF
      },
      { from  => 1611329064, # 2021-01-22 16:24
-       until => $isodate2epoch->("2021-11-19 17:00:00"), # 1630076400, # 2021-08-27 17:00
-       text  => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., bis 19.11.2021',
+       until => $isodate2epoch->("2021-11-25 17:00:00"), # 1630076400, # 2021-08-27 17:00
+       text  => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., bis 25.11.2021',
        type  => 'handicap',
        source_id => '2147346268',
        data  => <<EOF,
-#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021)
+#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021)
 #: last_checked: 2021-10-23 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2021-11-19
+#: next_check: 2021-11-25
 	q2::inwork 8913,16159 9099,16398
 EOF
      },
@@ -32341,13 +32342,13 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-03-03 08:00:00"),
-       until => $isodate2epoch->("2021-11-02 17:00:00"), # 1634223600, # 2021-10-14 17:00
-       text  => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Richtung Norden gesperrt, bis 2.11.2021',
+       until => $isodate2epoch->("2021-12-02 17:00:00"), # 1634223600, # 2021-10-14 17:00
+       text  => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Richtung Norden gesperrt, bis 2.12.2021',
        type  => 'handicap',
        source_id => '2147346935', # bis 14.10.2021
        data  => <<EOF,
-#: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00
-#: source_id: viz2021:13.320517,52.466345,13.07.2021,08:00
+#: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00 (inaktiv)
+#: source_id: viz2021:13.320517,52.466345,13.07.2021,08:00 (mittlerweile bis 2.12.2021)
 #: note: laut rbb nur bis 15.10.2021
 	q4::inwork; 4894,6509 4875,6552 4786,6717
 EOF
@@ -33331,16 +33332,16 @@ EOF
 EOF
      },
      { from  => 1627164000, # 2021-07-25 00:00
-       until => $isodate2epoch->("2021-10-31 18:00:00"), # undef, # XXX
-       text  => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich 31.10.2021',
+       until => $isodate2epoch->("2021-11-30 18:00:00"), # undef, # XXX
+       text  => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich Ende November 2021',
        type  => 'handicap',
        source_id => 'viz2021:13.444,52.53356,26.07.2021,08:18',
        data  => <<EOF,
-#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021)
+#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
 #: last_checked: 2021-10-08
 #: check_frequency: 30d
-#: next_check: 2021-10-31
+#: next_check: 2021-11-30
 	q3::inwork 13057,14267 13158,14117
 EOF
      },
@@ -33350,7 +33351,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Ist die Sperrung mittlerweile aufgehoben?
-#: last_checked: 2021-10-26
+#: last_checked: 2021-10-29
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-10-15
 	2::inwork 8668,10219 8668,10236 8715,10314
@@ -33391,14 +33392,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1635663600, # 2021-10-31 08:00
+       until => 1635488427, # 1635663600, # 2021-10-31 08:00
        text  => 'Karl-Ziegler-Str.: Sperrung der Fahrbahn wegen Gleisarbeiten, Umfahrung auf Gehweg möglich, Überqueren nicht möglich',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: STERNDAMM-2020
-#: last_checked: 2021-10-10
-#: check_frequency: 60d
-#: next_check: 2021-10-31
+# REMOVED (laut osm beendet) --- #: next_check_id: STERNDAMM-2020 --- #: last_checked: 2021-10-10 --- #: check_frequency: 60d --- #: next_check: 2021-10-31
 	q3::inwork 18766,3260 18828,3196 18946,3077
 	3 18892,3256 18828,3196 18822,3188
 	3 18892,3256 18828,3196 18946,3077
@@ -33613,7 +33611,7 @@ EOF
 #: confirmed_by: srt
 #: by: https://www.gmg-ing.de/referenzen/ernst-heilmann-steg-berlin/ ("Torsionsschwingungen")
 #: by: https://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10997_Berlin_Instandsetzung_Stahlbau_1924073.html (Ausschreibung)
-#: osm_watch: note 2867467 2
+# REMOVED (eins reicht) --- #: osm_watch: note 2867467 2
 #: osm_watch: way id="16311543" version="18"
 #: also_indoor: search Ernst-Heilmann-Steg
 #: last_checked: 2021-10-26 (osm)
@@ -33879,6 +33877,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1139553.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-in-der-baerenlauchstrasse_a326432
 	q4::inwork 19765,4876 19760,4907 19755,4962 19744,5063 19737,5134 19735,5158
 EOF
      },

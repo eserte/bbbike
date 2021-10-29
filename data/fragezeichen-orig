@@ -62,7 +62,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausführungsplanung)
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021)
-#: last_checked: 2021-10-28
+#: last_checked: 2021-10-29
 #: check_frequency: 90d
 #: next_check: 2022-03-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -84,7 +84,7 @@ NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 113
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Entwurfsplanung)
 #: by: http://www.infravelo.de/projekt/verbindung-zwischen-hornstrasse-und-yorckstrasse-2/ (bis 3. Quartal 2021) (Eintrag wurde ersetzt)
 #: by: https://www.infravelo.de/projekt/verbindung-zwischen-hornstrasse-und-yorckstrasse/
-#: last_checked: 2021-09-24
+#: last_checked: 2021-10-29
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-09-30
 Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9047,9750 9002,9731 8980,9751 8988,9783
@@ -370,8 +370,8 @@ Pasewalker Str.: Radspuren geplant	?::projected 11915,19580 11927,19308 11937,19
 #: by: https://www.berliner-woche.de/gatow/c-verkehr/baustradtrat-stoppt-ausbau-des-havel-radwegs_a170177
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/fahrrat/protokoll_18.09.19_endversion.pdf
 #: source_id: 2147345518
-#: osm_watch: way id="690918763" version="6"
-#: osm_watch: way id="123046107" version="9"
+#: osm_watch: way id="690918763" version="8"
+#: osm_watch: way id="123046107" version="10"
 #: last_checked: 2020-10-12
 #: check_frequency: 270d
 Alt-Gatow: Radspuren und Radweg geplant	?::projected; -4761,9404 -4760,9343 -4758,9259 -4757,9140 -4755,9120 -4751,9033 -4694,8897 -4590,8666
@@ -1033,7 +1033,7 @@ Kurpark: Verbesserung der Befahrbarkeit geplant	?::projected 24964,6046 25183,60
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-04-03-19-
 #: source_id: 2147343845 (Gesamtmaßnahme bis Mitte April 2019)
 #: source_id: 2147343951 (bis Mitte April 2019)
-#: osm_watch: way id="93704161" version="16"
+#: osm_watch: way id="93704161" version="17"
 #: last_checked: 2021-10-24 vvv
 #: check_frequency: 90d vvv
 Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projected 19957,5941 19795,5935
@@ -2213,7 +2213,7 @@ Antwerpener Str.: Fahrradstraße soll entstehen	?::projected 6555,15827 6690,1567
 #: source_id: 2147343419 (Gesamtmaßnahme bis Ende 2021)
 #: source_id: LMS-BR_r_LMS-BR_151882_LMS-BR_72
 #: source_id: bvg2021:124#BVG216059_0
-#: osm_watch: way id="24720225" version="16"
+#: osm_watch: way id="24720225" version="17"
 #: also_indoor: traffic (H)
 #: priority: #A
 #: last_checked: 2021-09-04
@@ -3011,7 +3011,7 @@ Wiesbadener Str./Sodener Str.: Zebrastreifen geplant	?::projected 3677,7363 3703
 #: last_checked: 2021-08-11
 #: check_frequency: 90d
 Lausitzer/Reichenberger Str.: zwei Zebrastreifen geplant	?::projected 12032,10144 12048,10097 12073,10050
-#: last_checked: 2021-10-26
+#: last_checked: 2021-10-29
 #: check_frequency: 90d
 Möckernstr./Obentrautstr.: Zebrastreifen geplant	?::projected 8809,10190 8790,10157 8769,10139
 # REMOVED (weitgehend realisiert) --- #: last_checked: 2021-03-18 (parlamentarische Anfrage) --- #: check_frequency: 120d --- Schönfließer Str./Gollanzcstr.: Zebrastreifen geplant	?::projected 2082,26098 2112,26066 2147,26039
@@ -3403,6 +3403,10 @@ Isenburger Weg: Neubau der Straße geplant	?::projected -7819,15342 -7867,15185 -
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/radstreifen-wird-auf-strasse-verlegt_a326225 (Umsetzung 2022)
+#: next_check: 2022-04-01
+Mahlsdorfer Str.: Höhe Wongrowitzer Steig Verlegung des Radwegs auf die Fahrbahn	?; 22876,7090 22797,6978 22759,6923
+# 
 #: last_checked: 2021-10-20
 Yorckstr.: Radweg wird saniert (möglicherweise Asphaltierung?)	?; 7938,9694 8097,9650
 # 
@@ -3478,15 +3482,16 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege geben?	?::projected
 #: by: https://twitter.com/VIZ_Berlin/status/1433759152568950815
 #: by: https://twitter.com/Yantschi/status/1433748714145861635
 #: source_id: viz2021:13.359249,52.498514,30.08.2021,08:00 (bis 26.9.2021, weitere Arbeiten folgen) (mittlerweile inaktiv)
-#: source_id: viz2021:13.359249,52.498514,27.09.2021,10:00 (bis 29.10.2021)
+#: source_id: viz2021:13.359249,52.498514,27.09.2021,10:00 (bis 29.10.2021) (mittlerweile 5.11.2021)
 #: osm_watch: way id="4618713" version="33"
 #: XXX nur Richtung Westen oder in beiden Richtungen?
 #: XXX außerdem: Zweiwege-Popup-Radweg zwischen Steinmetzstr. und östlichem Ende der Bülowstr.
-#: last_checked: 2021-10-19 (Richtung Westen weitgehend fertig, außer Stück zwischen Steinmetzstr. und Potsdamer Str.) vvv
-#: check_frequency: 30d vvv
-#: next_check: 2021-10-29 vvv
+#: last_checked: 2021-10-28 (osm) (Richtung Westen weitgehend fertig, außer Stück zwischen Steinmetzstr. und Potsdamer Str.) vvv
+#: check_frequency: 14d vvv
+#: next_check: 2021-11-05 vvv
 # REMOVED (hier weitgehend realisiert) --- Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork; 6532,10529 6602,10504 6636,10492 6753,10446
-Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork; 6753,10446 6851,10416 6937,10363 6971,10346 7033,10328 7131,10331 7238,10299 7413,10244 7579,10183 7698,10147 7702,10146
+# REMOVED (laut osm fertig) --- Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork; 6753,10446 6851,10416 6937,10363 6971,10346 7033,10328
+Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork; 7033,10328 7131,10331 7238,10299 7413,10244 7579,10183 7698,10147 7702,10146
 # REMOVED (hier schon fertig) --- Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork 7906,10098 7814,10117 7702,10146
 Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork 7702,10146 7698,10147 7579,10183
 # REMOVED (realisiert) --- Bülowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork 7579,10183 7413,10244 7238,10299 7131,10331 7033,10396 6851,10416 6753,10446 6636,10492 6602,10504 6532,10529
@@ -5108,7 +5113,7 @@ Charlottenburger Chaussee: Radwegsanierung in Planung, wo genau?	?::projected -2
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/fahrrat/endversion-protokoll-18-06-20.pdf
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1102866.php (Bauarbeiten ab Juli 2021 für rund vier Monate)
 #: by: https://www.berliner-woche.de/spandau/c-verkehr/in-der-urlaubszeit-muss-mit-staus-gerechnet-werden_a315900 (Erwähnung)
-#: source_id: viz2021:13.184866,52.547529,01.07.2021,07:00 (bis 12.10.2021) (mittlerweile bis 18.10.2021) (mittlerweile bis 29.10.2021) (mittlerweile bis 1.11.2021)
+#: source_id: viz2021:13.184866,52.547529,01.07.2021,07:00 (bis 12.10.2021) (mittlerweile bis 18.10.2021) (mittlerweile bis 29.10.2021) (mittlerweile bis 1.11.2021) (mittlerweile 3.11.2021)
 #: source_id: viz2021:13.1846,52.54751,01.07.2021,07:00 (bis 18.10.2021, zusätzlicher Eintrag) (mittlerweile inaktiv)
 #: last_checked: 2021-10-20
 #: check_frequency: 30d
@@ -5256,7 +5261,7 @@ Conrad-Blenkle-Str.: südlich der Rudi-Arndt-Str. soll ein Zebrastreifen entstehe
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2021-10-23
+#: last_checked: 2021-10-29
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -5755,6 +5760,9 @@ Vorarlberger Damm: Erneuerung des Radwegs	?::inwork; 6762,7109 6817,7101 6894,71
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/radwege-auch-fuer-kinder_a309906
 #: by: https://twitter.com/GBinfraVelo/status/1394682404472860676
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1089166.php (zur Parkraumbewirtschaftung)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1140577.php (Beginn der Bauarbeiten voraussichtlich KW 45/2021, Dauer bis 2022)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/#headline_1_5 (Informationsseite des BA)
+#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/grundsteinlegung-fuer-radweg-am-tempelhofer-damm_a326747
 #: note: außerdem existieren zwischen Ringbahnstr. und Alt-Tempelhof temporäre Busspuren, für Radfahrer freigegeben
 #: last_checked: 2021-09-26
 #: check_frequency: 60d
