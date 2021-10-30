@@ -915,7 +915,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 17960,5511
 	X 17728,5756
 	X 17886,5587
-	X 17736,5441
+# REMOVED (an der Einmündung keine Ampel mehr) ---	X 17736,5441
 	X 21332,4655
 	X 21789,4520
 #: XXX_prog Grüner Pfeil (Alt-Köpenick -> Lange Brücke)
@@ -2293,7 +2293,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
-#: last_checked: 2021-08-29
+#: last_checked: 2021-10-30
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746
@@ -2897,6 +2897,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 16606,25141
 #: note: Anforderungsampeln beim Überqueren des Groß-Berliner Damms (sowohl Geradeausfahrer als auch Linksabbieger)
 	X 17879,4910
+#: note: Richtung Südosten nur mit Gelb-Rot-Signalisierung, bereits an der Pietschkerstr.
+	X 17775,5083
 	F 718,2735
 	F 13999,2727
 	B0 17953,15221
@@ -2910,6 +2912,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: wahrscheinlich mit der Ampel am Adlergestell synchronisiert
 #: note: südliche Ampel dient auch als Straßenbahnampel
 	F 19840,3423
+#: note: Ampelanlange nur an der nördlichen Fahrbahn der Rudower Chaussee
 	X 19111,2777
 #: by: ^^^
 	F 4646,6040
@@ -3377,23 +3380,23 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 	F 3032,3319
 # 
-#: next_check_id: GROSSBERLINERDAMM-2020
-#: XXX wann werden die beiden Ampeln eingeschaltet? vvv
-#: last_checked: 2021-10-10 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2021-10-31 vvv
+# REMOVED --- #: next_check_id: GROSSBERLINERDAMM-2020 --- #: XXX wann werden die beiden Ampeln eingeschaltet? vvv --- #: last_checked: 2021-10-10 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2021-10-31 vvv
 #: XXX_prog gilt nicht für Radfahrer auf dem Radweg
 #: note: Anforderungsampel
-	F0 18739,3909
-	X0 18930,3703
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+	F 18739,3909
+	X 18930,3703
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 # 
 	X 18374,4307
-# REMOVED (ausgeschaltet) --- #: next_check_id: STERNDAMM-2020 --- #: XXX bleibt die Ampel nach Abschluss der Bauarbeiten? --- #: last_checked: 2021-10-10 --- #: next_check: 2021-10-31 ---	F::inwork 17695,5394
+# REMOVED (ausgeschaltet) --- #: next_check_id: STERNDAMM-2020 --- 
+#: XXX wie lange bleibt die provisorische Ampel?
+#: note: Anforderungsampel
+#: last_checked: 2021-10-10
+#: check_frequency: 90d
+	F::inwork 17695,5394
 # 
+#: note: die Relation Wilhelm-Hoff-Str. ist nicht direkt signalisiert
+	X 18828,3196
 ################################################################################
 #: note: Potsdam vvv
 	X -17127,-554

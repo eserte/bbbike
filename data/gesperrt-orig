@@ -3573,14 +3573,14 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: XXX ^^^
 #: osm_watch ^^^
 # 
-#: next_check_id: STERNDAMM-2020
+# REMOVED (hat nichts damit zu tun) --- #: next_check_id: STERNDAMM-2020
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_40_4933_5036_online.pdf (Grundstücksnummerierungen (neues Wohngebiet?))
 #: by: https://www.bahninfo-forum.de/read.php?9,665091,708278#msg-708278
-#: XXX Gesperrt wegen Bauarbeiten an der neuen Straßenbahntrasse sowie den neuen Baufeldern nördlich davon. Laut bahninfo-forum wird der Weg nach den Bauarbeiten wieder geöffnet.
+#: XXX Gesperrt wegen Bauarbeiten an den neuen Baufeldern nördlich der Straßenbahntrasse. Laut bahninfo-forum wird der Weg nach den Bauarbeiten wieder geöffnet.
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: osm_watch: way id="229647788" version="7"
 #: osm_watch: way id="850453338" version="5"
-#: last_checked: 2021-10-10
+#: last_checked: 2021-10-30
 #: check_frequency: 120d
 # REMOVED (Hochbauarbeiten dauern länger) --- #: next_check: 2021-10-31
 Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 18892,3256 18689,3465
@@ -3639,7 +3639,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2021-10-05
+#: last_checked: 2021-10-30
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4075,7 +4075,7 @@ Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,
 #: source_id: LMS-BR_r_LMS-BR_127414_LMS-BR_72 (inaktiv)
 #: source_id  viz2021:13.380614,52.414283,29.03.2018,07:00 (bis 31.10.2021) (mittlerweile 15.11.2021)
 #: osm_watch: way id="4716389" version="31"
-#: last_checked: 2021-10-13 (bahninfo-forum)
+#: last_checked: 2021-10-29 (bahninfo-forum)
 #: next_check: 2021-11-15
 Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,898 9024,906 9058,932
 # 
@@ -4442,7 +4442,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Eröffnung am 17.12.2020)
 #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Eröffnung wird verschoben)
 #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauzäune werden im Dezember 2020 teilweise abgebaut)
-#: last_checked: 2021-10-17
+#: last_checked: 2021-10-26 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384

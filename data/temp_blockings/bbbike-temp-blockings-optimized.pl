@@ -4440,20 +4440,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'until' => 1664550000
        },
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/an-einem-nachmittag-im-monat-wird-die-gudvanger-strasse-nun-offiziell-gesperrt_a274891 (hier: ab Juli 2020)
-#: by: http://www.spielstrassen.de/initiativen.php?init=Templiner_Str (hier: ab 30.6.2020, Hausnummern 15 bis 19)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/fuer-die-spielstrasse-unterschreiben_a277858
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/templiner-strasse-wird-spielstrasse_a276796 (Hausnummern hier vermutlich falsch)
-	q4::temp::play 10670,14116 10716,14195 10739,14228
-',
-         'from' => 1624917600,
-         'id' => 3253,
-         'recurring' => 1,
-         'text' => 'Templiner Str.: zwischen Zionskirchstr. und Schwedter Str. dienstags zwischen 15 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 30.6. bis 30.10.',
-         'type' => 'handicap',
-         'until' => 1635609600
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
@@ -5093,7 +5080,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-10-24
+#: last_checked: 2021-10-30
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -5258,7 +5245,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berlin.de/imgscaler/QDnYYRYHVON_2jnT8kEu7J2TMdjTUnhV5UGJwVZ-KuY/article/L3N5czExLXByb2QvYmEtdHJlcHRvdy1rb2VwZW5pY2svX2Fzc2V0cy9ha3R1ZWxsZXMvcG0vMjAyMS9jcm9wXzE1MDBfNzUwXzBfMjM2XzE1MDBfMTA2Ml82NTFlMDM1NWE0MDI3OTgyYzc0MWEwMWQ2YzBhODU4Yl9sYWdlcGxhbl8yMDAwLW1pbi5qcGc.jpg (Karte)
 #: XXX bis wann bleibt die Sperrung bestehen? vvv
 #: note: der Verbindungsweg Puschkinallee und Am Treptower Park war nicht gesperrt: Do 2021-09-09 gegen 22:20 Uhr
-#: last_checked: 2021-10-10 vvv
+#: last_checked: 2021-10-30 vvv
 #: check_frequency: 30d vvv
 	2::night 15668,9140 15631,9114 15580,9181 15604,9215 15693,9194 15683,9136
 	2::night 14478,9545 14384,9565 14316,9542 14318,9688
@@ -5322,27 +5309,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1638313199
        },
-       {
-         'data' => '	2::inwork -25222,-11698 -24174,-8751 -23816,-7874
-',
-         'from' => 1626559200,
-         'id' => 3443,
-         'source_id' => 'LS/723-P/20/113',
-         'text' => 'Glindow - Klaistow: zwischen Autobahnanschlussstelle und Poststraße Bauarbeiten, Fahrbahn gesperrt, für Radfahrer existiert eine Umleitungsstrecke (bei BBBike ist diese nicht bekannt), bis 30.4.2022',
-         'type' => 'gesperrt',
-         'until' => 1651355999
-       },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/siegener-strasse-wegen-strassenbauarbeiten-gesperrt_a322442
-	q4::inwork; -5151,15059 -5135,15172 -5132,15249 -5123,15298 -5115,15348 -5095,15432 -5036,15625
-',
-         'from' => 1632002400,
-         'id' => 3444,
-         'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2021/pressemitteilung.1125406.php',
-         'text' => 'Siegener Str.: Bauarbeiten, Einrichtung einer Einbahnstraße, offen Richtung Süden, vom 20.09.2021 bis 29.10.2021',
-         'type' => 'handicap',
-         'until' => 1635544800
-       },
+       undef,
+       undef,
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1437641256243453954/photo/2
 	1::inwork 6747,14436 6803,14459 6857,14488 6869,14494 6917,14504 6983,14508 7050,14501 7085,14482 7099,14461 7104,14432 7104,14403
@@ -5516,17 +5484,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/tegel/c-verkehr/fuenf-tage-umleitung_a325949
-	2::inwork 1282,21118 1275,21094 1113,21003 976,21009 902,20988 817,20953 625,20738
-',
-         'from' => 1635026400,
-         'id' => 3468,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1137594.php',
-         'text' => 'Schwarzer Weg: Fahrbahnausbesserung zwischen Heiligenseestraße und Dicke Marie, Sperrung vom 25. bis zum 29. Oktober 2021',
-         'type' => 'gesperrt',
-         'until' => 1635544799
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-in-der-baerenlauchstrasse_a326432
@@ -5572,6 +5530,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Alter Schönefelder Weg: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 8. November 2021 bis 30. November 2021 ',
          'type' => 'handicap',
          'until' => 1638313199
+       },
+       {
+         'data' => '	2::inwork 20850,38827 21039,38033 21051,37792 21040,37527 21159,36785 20969,36076 21015,35757 21193,35322 21465,34816 22153,33963
+',
+         'from' => 1635634800,
+         'id' => 3474,
+         'source_id' => 'LS/721-E/21/142',
+         'text' => 'Bernau - Lanke: Bauarbeiten, Sperrung, vom 01.11.2021 bis 15.01.2022',
+         'type' => 'gesperrt',
+         'until' => 1642287600
        }
      
 );

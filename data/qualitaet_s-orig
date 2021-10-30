@@ -19211,11 +19211,8 @@ Ecksteinweg: Asphalt	Q0- 17830,5324 17791,5371
 #: confirmed_by: srt
 Ecksteinweg: mäßiges Kopfsteinpflaster	Q2 17791,5371 17775,5392 17762,5408
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt (dieses Teilstück))
-#: next_check_id: STERNDAMM-2020
-#: XXX dieses Stück bekommt anscheinend eine neue Pflasterung; vielleicht wird die Anbindung auch für den Kfz-Verkehr gesperrt?
-#: last_checked: 2021-10-10
-#: next_check: 2021-10-31
-Ecksteinweg: Asphalt	Q0- 17762,5408 17736,5441
+# REMOVED --- #: next_check_id: STERNDAMM-2020 --- #: XXX dieses Stück bekommt anscheinend eine neue Pflasterung; vielleicht wird die Anbindung auch für den Kfz-Verkehr gesperrt? --- #: last_checked: 2021-10-10 --- #: next_check: 2021-10-31
+Ecksteinweg: Asphalt und Betonpflaster	Q0- 17762,5408 17736,5441
 #: confirmed_by: srt (Q1 -> ...)
 Waiblinger Weg: Asphalt	Q0- 17830,5324 17803,5303 17771,5278
 #: note: auch by anonymous:

@@ -32812,7 +32812,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.bahninfo-forum.de/read.php?9,665091,701727#msg-701727',
        data  => <<EOF,
-#: next_check_id: STERNDAMM-2020
+# REMOVED --- #: next_check_id: STERNDAMM-2020
 	q4::inwork 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
 EOF
      },
@@ -33200,7 +33200,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-10-24
+#: last_checked: 2021-10-30
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33481,7 +33481,7 @@ EOF
 #: by: https://www.berlin.de/imgscaler/QDnYYRYHVON_2jnT8kEu7J2TMdjTUnhV5UGJwVZ-KuY/article/L3N5czExLXByb2QvYmEtdHJlcHRvdy1rb2VwZW5pY2svX2Fzc2V0cy9ha3R1ZWxsZXMvcG0vMjAyMS9jcm9wXzE1MDBfNzUwXzBfMjM2XzE1MDBfMTA2Ml82NTFlMDM1NWE0MDI3OTgyYzc0MWEwMWQ2YzBhODU4Yl9sYWdlcGxhbl8yMDAwLW1pbi5qcGc.jpg (Karte)
 #: XXX bis wann bleibt die Sperrung bestehen? vvv
 #: note: der Verbindungsweg Puschkinallee und Am Treptower Park war nicht gesperrt: Do 2021-09-09 gegen 22:20 Uhr
-#: last_checked: 2021-10-10 vvv
+#: last_checked: 2021-10-30 vvv
 #: check_frequency: 30d vvv
 	2::night 15668,9140 15631,9114 15580,9181 15604,9215 15693,9194 15683,9136
 	2::night 14478,9545 14384,9565 14316,9542 14318,9688
@@ -33565,7 +33565,7 @@ EOF
 EOF
      },
      { from  => 1626559200, # 2021-07-18 00:00
-       until => $isodate2epoch->("2022-04-30 23:59:59"),
+       until => 1635617553, # $isodate2epoch->("2022-04-30 23:59:59"),
        text  => 'Glindow - Klaistow: zwischen Autobahnanschlussstelle und Poststraße Bauarbeiten, Fahrbahn gesperrt, für Radfahrer existiert eine Umleitungsstrecke (bei BBBike ist diese nicht bekannt), bis 30.4.2022',
        type  => 'gesperrt',
        source_id => 'LS/723-P/20/113',
@@ -33910,6 +33910,15 @@ EOF
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1140276.php',
        data  => <<EOF,
 	q4::inwork 19743,1804 19669,1729 19653,1671 19636,1609 19599,1557
+EOF
+     },
+     { from  => 1635634800, # 2021-10-31 01:00
+       until => 1642287600, # 2022-01-16 00:00
+       text  => 'Bernau - Lanke: Bauarbeiten, Sperrung, vom 01.11.2021 bis 15.01.2022',
+       type  => 'gesperrt',
+       source_id => 'LS/721-E/21/142',
+       data  => <<EOF,
+	2::inwork 20850,38827 21039,38033 21051,37792 21040,37527 21159,36785 20969,36076 21015,35757 21193,35322 21465,34816 22153,33963
 EOF
      },
     );
