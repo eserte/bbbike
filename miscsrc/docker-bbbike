@@ -30,14 +30,15 @@ use BBBikeUtil qw(save_pwd2 bbbike_root);
 
 sub usage (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
-usage: $0 [--dry-run] gui | cgi | ci [options]
+usage: $0 [--dry-run] gui | cgi | ci | build-deb [options]
 EOF
 }
 
 sub usage_gui (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
-usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--env KEY=VAL ...] [--bbbike-args "..."]
-	[--no-install-recommends] [--install-suggests] [--no-feature-pdf] [-no-feature-remote]
+usage: $0 [--dry-run] gui [--dist debian|ubuntu|...] [--distver bullseye|...] [--src local|github] [--bbbike-args "..."]
+	 [--no-feature-pdf] [-no-feature-remote]
+	 [--debug] [--no-install-recommends] [--install-suggests] [--invalidate-apt]
 
 Note that --install-suggests would install quite a lot...
 EOF
@@ -46,18 +47,21 @@ EOF
 sub usage_ci (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] ci [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--perl-ver X.Y.Z] [--env KEY=VAL ...] [--branch ...]
+	 [--with-data-build] [--cache] [--invalidate-apt] [--image-variant ...]
 EOF
 }
 
 sub usage_build_deb (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] build-dev [--dist debian|ubuntu|...] [--distver stretch|...] [--distfile BBBike-X.YY.tar.gz] [--continue]
+	 [--invalidate-apt]
 EOF
 }
 
 sub usage_cgi (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] cgi [--dist debian|ubuntu|...] [--distver stretch|...] [--test]
+	 [--invalidate-apt] [--[no]mapserver] [--use-bbbike-ppa]
 EOF
 }
 
