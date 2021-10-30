@@ -931,8 +931,9 @@ docker-bbbike - run bbbike tasks in docker
 
 C<docker-bbbike> may run different tasks in a docker environment, see below.
 
-Before you start, a working docker environment is needed. On a linux
-system, the following tasks usually need to be done:
+Before you start, a working docker environment and some other
+prerequisites are needed. On a linux system, the following tasks
+usually need to be done:
 
 =over
 
@@ -953,12 +954,18 @@ Add yourself to the C<docker> group, e.g. using
 After doing this, it is necessary to have a fresh shell --- either
 logout and login again, or start a new shell.
 
+=item * if you don't have the bbbike source code checked out at all, do the following (make sure that the C<git> package is installed)
+
+    git clone --depth=1 https://github.com/eserte/bbbike && cd bbbike
+
+Otherwise just C<cd> into the bbbike source directory.
+
 =back
 
 =head2 GUI
 
-Run GUI application in a docker image, forwarding display to the real
-X11 display:
+Run GUI application (also known as the BBBike Perl/Tk application) in
+a docker image, forwarding display to the real X11 display:
 
     ./miscsrc/docker-bbbike gui
 
@@ -1035,9 +1042,6 @@ Create a debian package for an existing tarball:
 Run the cgi in a docker container:
 
     ./miscrc/docker-bbbike cgi --distver jessie
-
-Currently not polished enough. Please note that newer debian versions
-(stretch and newer) are not yet supported due to missing packages.
 
 =head1 SEE ALSO
 
