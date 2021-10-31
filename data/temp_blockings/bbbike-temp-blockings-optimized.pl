@@ -4008,31 +4008,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'until' => 1640991599
        },
        undef,
-       {
-         'data' => '#: next_check_id: KYNAST-2021
-# REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
-# REMOVED --- #: XXX regelmäßig prüfen --- #: priority: #A --- #: last_checked: 2018-11-16
-#: note: mittlerweile gibt es eine offizielle Radwegführung teilweise via Gehweg, deshalb: q4 -> q3
-#: by: https://viz.berlin.de/2020/07/schau-11_12-07_2020/ ("für den Kraftfahrzeugverkehr gesperrt")
-#: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1043669.php ("Notweg für Radfahrer" (?))
-#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/kynaststrasse-gesperrt_a299447
-#: source_id: 2147346071 (inaktiv)
-#: source_id: 2147346815 (neu)
-#: also_indoor: traffic
-#: priority: #A
-#: last_checked: 2021-10-23
-#: check_frequency: 14d
-#: next_check: 2021-10-31
-	q3::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
-',
-         'from' => 1611036000,
-         'id' => 3048,
-         'source_id' => '2147343461',
-         'text' => 'Kynaststr.: Bauarbeiten an der Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden, mögliche Engstelle, bis 31.10.2021',
-         'type' => 'handicap',
-         'until' => 1635696000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4146,8 +4122,8 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-09-04
-#: check_frequency: 60d
+#: last_checked: 2021-10-31
+#: check_frequency: 45d
 #: next_check: 2022-03-31
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
@@ -5297,6 +5273,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: DRESDNERBAHN-2021
 #: XXX Ursprünglich wurde 08/2021 als Beginn geplant, das hat sich aber um einen Monat verschoben --- vielleicht das Ende auch?
+#: osm_watch: way id="229990468" version="6"
 #: add_fragezeichen: Bis wann genau geht die Sperrung?
 #: last_checked: 2021-09-18 (bahninfo-forum)
 #: next_check: 2021-11-01
@@ -5467,7 +5444,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: SCHARFELANKE-2021
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: osm_watch: way id="187977779" version="13" vvv
+#: osm_watch: way id="187977779" version="14" vvv
 #: last_checked: 2021-10-20 vvv
 #: check_frequency: 60d vvv
 	2::inwork -3752,11373 -3785,11445 -3828,11491 -3928,11526 -4028,11533 -4106,11519 -4181,11458 -4204,11432 -4245,11400

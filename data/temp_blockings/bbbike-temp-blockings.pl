@@ -29445,8 +29445,8 @@ EOF
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2021-09-04
-#: check_frequency: 60d
+#: last_checked: 2021-10-31
+#: check_frequency: 45d
 #: next_check: 2022-03-31
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
@@ -33558,6 +33558,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: DRESDNERBAHN-2021
 #: XXX Ursprünglich wurde 08/2021 als Beginn geplant, das hat sich aber um einen Monat verschoben --- vielleicht das Ende auch?
+#: osm_watch: way id="229990468" version="6"
 #: add_fragezeichen: Bis wann genau geht die Sperrung?
 #: last_checked: 2021-09-18 (bahninfo-forum)
 #: next_check: 2021-11-01
@@ -33838,7 +33839,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: SCHARFELANKE-2021
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: osm_watch: way id="187977779" version="13" vvv
+#: osm_watch: way id="187977779" version="14" vvv
 #: last_checked: 2021-10-20 vvv
 #: check_frequency: 60d vvv
 	2::inwork -3752,11373 -3785,11445 -3828,11491 -3928,11526 -4028,11533 -4106,11519 -4181,11458 -4204,11432 -4245,11400

@@ -212,10 +212,17 @@ Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehw
 #: next_check_id: CHAUSSEE-2020
 #: source_id: 2147346552 (bis 16.7.2021)
 #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaﬂnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaﬂnahme unver‰ndert)
-#: last_checked: 2021-10-23 (mapillary)
+#: last_checked: 2021-10-31
 #: check_frequency: 90d
 #: next_check: 2022-06-30
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
+# 
+#: next_check_id: CHAUSSEE-2020
+#: note: laut rbb bis voraussichtlich 30.4.2022
+#: last_checked: 2021-10-31
+#: check_frequency: 90d
+#: next_check: 2022-04-30
+Ida-von-Arnim-Str.: Bauarbeiten an der Kreuzung Chausseestr., Fahrbahn gesperrt	q2::inwork 8266,14346 8442,14456
 # 
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
@@ -253,10 +260,10 @@ Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-10-17
+#: last_checked: 2021-10-31
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
-#: last_checked: 2021-10-13
+#: last_checked: 2021-10-31
 #: check_frequency: 60d
 (Grunerstr. - Gustav-Bˆﬂ-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10953,12638 10772,12515
 # 
@@ -627,7 +634,7 @@ Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwor
 # REMOVED (laut osm nur noch construction=minor) --- Donaustr.: Fahrbahn an der Kreuzung Pannierstr. kann wegen Bauarbeiten noch nicht befahrbar sein	q2::inwork 12202,8895 12392,8724
 # 
 #: next_check_id: GRENZALLEE-2014
-#: last_checked: 2021-10-02 (mapillary) vvv
+#: last_checked: 2021-10-07 (mapillary) vvv
 #: check_frequency: 90d vvv
 Bergiusstr. - Grenzallee: kurvig, einige Fuﬂg‰nger	q1 14150,6609 14137,6658 14179,6714 14179,6743
 Bergiusstr. - Grenzallee: kurvig, einige Fuﬂg‰nger	q3 14179,6743 14139,6786
@@ -700,7 +707,7 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12
 ### Lichtenberg ###
 # 
 #: XXX bis wann dauern die Bauarbeiten an?
-#: also_indoor: traffic (G(teilweise)) vvv
+#: also_indoor: traffic (G(zu viel)) vvv
 #: last_checked: 2021-10-18 vvv
 #: check_frequency: 14d vvv
 Nˆldnerstr.: Einbahnstraﬂenregelung, Radfahrer Richtung Westen kˆnnen den Gehweg benutzen	q2::inwork; 15932,10830 15681,10801
@@ -1427,7 +1434,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="7"
-#: last_checked: 2021-08-03
+#: last_checked: 2021-09-16 (mapillary)
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
@@ -1944,7 +1951,7 @@ Rolandstr.: Fuﬂg‰nger	q1 11380,19783 11229,19706 11134,19655
 Kongostr.: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 6244,16096 6202,16041 6119,15965
 Sambesistr.: enge Straﬂe	q1 5968,15914 5787,15741
 Ugandastr.: enge Straﬂe	q1 6071,15768 5906,15623
-Limburger Str.: Fuﬂg‰nger	q2 7012,15571 7129,15717
+Elise-und-Otto-Hampel-Weg: Fuﬂg‰nger	q2 7012,15571 7129,15686 7115,15702 7129,15717
 Litfaﬂ-Platz: Fuﬂg‰ngerzone, Radfahren erlaubt	q3 10347,12881 10312,12982
 (Finkenweg - Mariendorfer Damm): Fuﬂg‰nger	q1 9360,4996 9239,4980
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/55re.pdf/file?y=2011
@@ -2429,8 +2436,8 @@ Ulrichsteiner Weg: Bordstein	q2 6093,21648 6066,21691
 (Hafersteig - Wuhlgartenweg): eng	q1 20835,12200 20824,12177 20823,12139
 (Teterower Ring - Hellersdorfer Str.): Fuﬂg‰nger	q2 22801,13096 22842,13089 22883,13013
 (Marderweg - Kieler Str. [Wohngebiet]): schmal	q2 25795,13257 25780,13274 25766,13289
-Straupitzer Steig: Fuﬂg‰ngerzone	q4 6765,21364 6766,21341
-(Straupitzer Steig - Wilhelmsruher Damm): Fuﬂg‰ngerzone	q4 6766,21341 6778,21154
+Straupitzer Steig: Fuﬂg‰ngerzone	q4 6769,21377 6770,21342
+(Straupitzer Steig - Wilhelmsruher Damm): Fuﬂg‰ngerzone	q4 6770,21342 6735,21338 6749,21150
 (Senftenberger Ring - Mittelfeldbecken): eng, kurvenreich	q2 6722,21722 6738,21752 6781,21761 6794,21779 6827,21782 6843,21772 6911,21774
 (am Fasaneriegraben): einige Fuﬂg‰nger	q1 6907,21751 6911,21774 6938,21825
 (Rundweg um das Mittelfeldbecken): einige Fuﬂg‰nger	q1 6938,21825 6954,21809 7007,21821 7144,21838 7141,21865 7077,21860 7050,21904 6999,21908 6947,21895 6923,21858 6938,21825
@@ -3384,7 +3391,7 @@ Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,1944
 #: XXX_prog BS (niedrig) an der Krontaler Str., ansonsten trotzdem q3
 #: note: explizites Fuﬂg‰ngerschild an der Krontaler Str.
 (Krontaler Str. - Bucher Str.): enger Pfad, nur f¸r Fuﬂg‰nger, Bordsteinkante an der Br¸cke	q3 13425,22932 13415,22940
-(Provinzstr. - Klemkestr.): schmal und kurvig	q2 8647,18567 8597,18554 8558,18597 8562,18642
+(Provinzstr. - Klemkestr.): schmal und kurvig	q2 8647,18567 8589,18559 8558,18597 8562,18642
 (Waldpark Steinberg und am Steinbergsee): einige Fuﬂg‰nger	q1 4190,21181 4116,21296 4058,21352 3925,21379 3848,21347 3712,21255 3656,21196 3562,21089
 (Weg in der Wuhlheide): einige Fuﬂg‰nger	q1 19161,7109 19515,6934 19691,6904 19895,6872 19914,6865 20156,6799 20244,6748 20269,6735
 (Rampe zum Ernst-Heilmann-Steg): eng, Gegenverkehr mˆglich	q3 13275,10055 13270,10030
@@ -3671,6 +3678,11 @@ Sterndamm, zur Nebenfahrbahn: Gehweg	q4 17648,5338 17697,5347
 Theaterufer: einige Fuﬂg‰nger	q1 8289,11205 8261,11015
 Kapellenweg: eng, Fuﬂg‰nger	q3 -4259,11267 -4437,11256 -4560,11283
 Finkenweg: eng, Finkenweg	q3 -4457,11149 -4437,11256
+(Sparrstr. - Sprengelstr.): einige Fuﬂg‰nger	q2 7308,15185 7281,15175
+Elsenpfuhlstr.: Gehweg	q3 5405,20072 5399,20106
+Im Wolfsgartenfeld: Gehweg	q3 5307,20067 5299,20104
+(Ludwig-Lesser-Park, westlicher Weg): einige Fuﬂg‰nger	q1 2312,25673 2247,25796 2237,25837 2207,26090
+(Ludwig-Lesser-Park - Am Poloplatz): einige Fuﬂg‰nger	q1 2207,26090 2204,26290 2199,26440 2199,26450
 # 
 ######################### User Contributions #################################
 # 
@@ -3759,7 +3771,8 @@ Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2717,3600
 # REMOVED (elsewhere more accurate) --- (Krankenhausgel‰nde): eher schmaler Gehweg	q1 2688,12701 2663,12699 2663,12695 2561,12686
 (Schloﬂpark Charlottenburg, westlicher Weg): Fuﬂg‰nger	q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
 (Uferweg): teilweise relativ schmal, Fuﬂg‰nger	q1 5166,13087 5144,13075 5076,13116 4940,13168 4742,13157 4751,13245
-Sparrstr. - Triftstr.: Gehweg	q1 7281,15175 7241,15293
+#: note: Privatweg, an einer Stelle Nicht-StVO-konforme "Radfahren verboten"-Schilder
+Sparrstr. - Triftstr.: Gehweg	q3 7281,15175 7248,15296
 #: note: laut ADFC-Karte "m‰ﬂig"
 (Max-Lingner-Str. - Maximilianstr.): schmaler Fuﬂweg und Parkplatz	q2 11094,17339 10899,17331
 (Seecktstr. - Wilhelmstr.): breiter Gehweg	q0 -4017,13167 -3896,13124

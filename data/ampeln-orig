@@ -19,7 +19,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: last_checked ^^^
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2021-09-01
+#: last_checked: 2021-10-31
 #: next_check: 2024-06-01
 Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
@@ -1665,7 +1665,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 5397,5302
 	F 5088,5495
 	F 8665,24941
-	X 3174,23273
+	X 3167,23277
 	X 3048,23109
 	X 2793,22640
 	X 3367,23654
@@ -3110,7 +3110,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked ^^^
 # REMOVED --- #: note: Anforderungsampel --- #: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen --- #: last_checked: 2021-04-04 ---	F::inwork 14239,6875
 #: note: Anforderungsampel
-#: last_checked: 2021-08-08
+#: last_checked: 2021-10-07 (mapillary)
 	F::inwork 14139,6786
 #: next_check ^^^
 #: valid ^^^
@@ -3285,7 +3285,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5364,7330
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2021-10-23 (mapillary)
+#: last_checked: 2021-10-31
 #: check_frequency: 90d
 #: next_check: 2022-06-30
 	X::inwork 8336,14586
@@ -3296,11 +3296,16 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2021-09-24
+#: last_checked: 2021-10-31
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 
-# REMOVED (gibt's nicht mehr) --- #: next_check_id: CORONA-2020 --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX vermutlich temporär für das Impfzentrum --- #: by: mapillary --- #: last_checked: 2021-07-27 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2021-09-01 ---	F::inwork 8153,14769
+# REMOVED (gibt's nicht mehr) --- #: next_check_id: CORONA-2020 --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX vermutlich temporär für das Impfzentrum --- #: by: mapillary --- 
+#: XXX wann wird diese Ampel abgebaut?
+#: last_checked: 2021-10-31
+#: check_frequency: 90d
+	F::inwork 8138,14786
+# 
 # REMOVED --- #: next_check_id: CHAUSSEESTR-2016 vvv
 # REMOVED (see https://www.openstreetmap.org/note/765740#map=18/52.53800/13.37363&layers=N ) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8232 (bleibt die Ampel permanent?) ---#: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019) --- #: source_id: 2147340715 vvv --- #: last_checked: 2018-05-17 vvv --- #: check_frequency: 60d vvv ---	X::inwork 8250,14672 --- # REMOVED --- F::inwork 8732,14098 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # REMOVED --- #: next_check_id ^^^

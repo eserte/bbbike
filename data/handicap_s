@@ -15,6 +15,7 @@ Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 (Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10804,12291 10830,12279
 Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
+Ida-von-Arnim-Str.: Bauarbeiten an der Kreuzung Chausseestr., Fahrbahn gesperrt	q2::inwork 8266,14346 8442,14456
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423
@@ -858,7 +859,7 @@ Rolandstr.: Fuﬂg‰nger	q1 11380,19783 11229,19706 11134,19655
 Kongostr.: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 6244,16096 6202,16041 6119,15965
 Sambesistr.: enge Straﬂe	q1 5968,15914 5787,15741
 Ugandastr.: enge Straﬂe	q1 6071,15768 5906,15623
-Limburger Str.: Fuﬂg‰nger	q2 7012,15571 7129,15717
+Elise-und-Otto-Hampel-Weg: Fuﬂg‰nger	q2 7012,15571 7129,15686 7115,15702 7129,15717
 Litfaﬂ-Platz: Fuﬂg‰ngerzone, Radfahren erlaubt	q3 10347,12881 10312,12982
 (Finkenweg - Mariendorfer Damm): Fuﬂg‰nger	q1 9360,4996 9239,4980
 Yva-Bogen: Fuﬂg‰nger	q2 5373,10981 5426,11039 5459,11135
@@ -1219,8 +1220,8 @@ Ulrichsteiner Weg: Bordstein	q2 6093,21648 6066,21691
 (Hafersteig - Wuhlgartenweg): eng	q1 20835,12200 20824,12177 20823,12139
 (Teterower Ring - Hellersdorfer Str.): Fuﬂg‰nger	q2 22801,13096 22842,13089 22883,13013
 (Marderweg - Kieler Str. [Wohngebiet]): schmal	q2 25795,13257 25780,13274 25766,13289
-Straupitzer Steig: Fuﬂg‰ngerzone	q4 6765,21364 6766,21341
-(Straupitzer Steig - Wilhelmsruher Damm): Fuﬂg‰ngerzone	q4 6766,21341 6778,21154
+Straupitzer Steig: Fuﬂg‰ngerzone	q4 6769,21377 6770,21342
+(Straupitzer Steig - Wilhelmsruher Damm): Fuﬂg‰ngerzone	q4 6770,21342 6735,21338 6749,21150
 (Senftenberger Ring - Mittelfeldbecken): eng, kurvenreich	q2 6722,21722 6738,21752 6781,21761 6794,21779 6827,21782 6843,21772 6911,21774
 (am Fasaneriegraben): einige Fuﬂg‰nger	q1 6907,21751 6911,21774 6938,21825
 (Rundweg um das Mittelfeldbecken): einige Fuﬂg‰nger	q1 6938,21825 6954,21809 7007,21821 7144,21838 7141,21865 7077,21860 7050,21904 6999,21908 6947,21895 6923,21858 6938,21825
@@ -1945,7 +1946,7 @@ Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,1944
 (Durchgang U-Bhf. Mendelssohn-Bartholdy-Park): Fuﬂg‰nger, Bordstein	q4 8476,10884 8399,10923
 (Niedstr. - Wilhelmshˆher Str.): einige Fuﬂg‰nger	q1 5364,7330 5310,7325
 (Krontaler Str. - Bucher Str.): enger Pfad, nur f¸r Fuﬂg‰nger, Bordsteinkante an der Br¸cke	q3 13425,22932 13415,22940
-(Provinzstr. - Klemkestr.): schmal und kurvig	q2 8647,18567 8597,18554 8558,18597 8562,18642
+(Provinzstr. - Klemkestr.): schmal und kurvig	q2 8647,18567 8589,18559 8558,18597 8562,18642
 (Waldpark Steinberg und am Steinbergsee): einige Fuﬂg‰nger	q1 4190,21181 4116,21296 4058,21352 3925,21379 3848,21347 3712,21255 3656,21196 3562,21089
 (Weg in der Wuhlheide): einige Fuﬂg‰nger	q1 19161,7109 19515,6934 19691,6904 19895,6872 19914,6865 20156,6799 20244,6748 20269,6735
 (Rampe zum Ernst-Heilmann-Steg): eng, Gegenverkehr mˆglich	q3 13275,10055 13270,10030
@@ -2167,6 +2168,11 @@ Sterndamm, zur Nebenfahrbahn: Gehweg	q4 17648,5338 17697,5347
 Theaterufer: einige Fuﬂg‰nger	q1 8289,11205 8261,11015
 Kapellenweg: eng, Fuﬂg‰nger	q3 -4259,11267 -4437,11256 -4560,11283
 Finkenweg: eng, Finkenweg	q3 -4457,11149 -4437,11256
+(Sparrstr. - Sprengelstr.): einige Fuﬂg‰nger	q2 7308,15185 7281,15175
+Elsenpfuhlstr.: Gehweg	q3 5405,20072 5399,20106
+Im Wolfsgartenfeld: Gehweg	q3 5307,20067 5299,20104
+(Ludwig-Lesser-Park, westlicher Weg): einige Fuﬂg‰nger	q1 2312,25673 2247,25796 2237,25837 2207,26090
+(Ludwig-Lesser-Park - Am Poloplatz): einige Fuﬂg‰nger	q1 2207,26090 2204,26290 2199,26440 2199,26450
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2202,7 +2208,7 @@ Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2717,3600
 (Bucher Teiche - Schˆnerlinder Chaussee): einige Fuﬂg‰nger	q1 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
 (Schloﬂpark Charlottenburg, westlicher Weg): Fuﬂg‰nger	q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
 (Uferweg): teilweise relativ schmal, Fuﬂg‰nger	q1 5166,13087 5144,13075 5076,13116 4940,13168 4742,13157 4751,13245
-Sparrstr. - Triftstr.: Gehweg	q1 7281,15175 7241,15293
+Sparrstr. - Triftstr.: Gehweg	q3 7281,15175 7248,15296
 (Max-Lingner-Str. - Maximilianstr.): schmaler Fuﬂweg und Parkplatz	q2 11094,17339 10899,17331
 (Seecktstr. - Wilhelmstr.): breiter Gehweg	q0 -4017,13167 -3896,13124
 Gralsburgsteig: enge Straﬂe	q1 2164,25190 2206,25260 2038,25531 1950,25763 1921,26019

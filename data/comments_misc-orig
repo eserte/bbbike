@@ -909,7 +909,7 @@ Schönleinstr.: Wochenmarkt Di+Sa, 11.00-19.00, betroffen ist wohl nur der abgesp
 Chamissoplatz: Öko-Markt, Sa, 09.00-15.00, wahrscheinlich nur Halteverbote	CS 9596,9092 9617,9185
 Bergmannstr.: Trödelmarkt Sa, 10.00-16.00, nur die Fahrbahn ist betroffen	CS 9973,9232 9880,9233 9793,9241
 Skalitzer Str.: Trödelmarkt, Sa+So, 08.00-16.00, Gehweg ist betroffen	CS; 12731,10547 12545,10496
-Schillingstr.: Wochenmarkt, Di,Do,Fr, 09.00-17.00, Gehweg ist betroffen, man kann eigentlich immer irgendwie vorbeifahren	CS 11472,12406 11472,12406 11485,12391
+# REMOVED (möglicherweise durch die neue offizielle Radwegführung nicht mehr relevant?) --- Schillingstr.: Wochenmarkt, Di,Do,Fr, 09.00-17.00, Gehweg ist betroffen, man kann eigentlich immer irgendwie vorbeifahren	CS 11472,12406 11472,12406 11485,12391
 Ackerstr.: Wochenmarkt, Do, 11.00-18.00, anscheinend nur Halteverbot	CS; 9048,14681 9197,14562
 Jagowstr.: Wochenmarkt, Mi+Sa, 08.00-13.00, anscheinend nur Halteverbot	CS; 5601,12756 5543,12664
 Koppenstr.: Wochenmarkt Di+Do 10.00-18.00, die Fahrbahn ist trotzdem befahrbar	CS 12632,12630 12592,12472
@@ -992,8 +992,8 @@ Mühlendorfstr.: private Wohnstraße	CS -7637,13822 -7630,13889 -7595,13963
 Mühlenbachring: private Wohnstraße	CS -7534,13936 -7556,13894 -7564,13817 -7637,13822 -7674,13827 -7665,13945 -7647,13985
 #: by: ^^^
 ausgeschildert LEG Brandenburg	CP2; -8634,9626 -8595,9582
-nach rechts abbiegen, um Drängelgitter am Spielplatz zu umfahren	CP; 6503,20978 6519,21002 6565,21004
-nach links abbiegen, um Drängelgitter am Spielplatz zu umfahren	CP; 6596,21062 6560,21055 6565,21004
+# REMOVED (Spielplatz wird umgestaltet, offizielle Radroutenführung existiert) --- nach rechts abbiegen, um Drängelgitter am Spielplatz zu umfahren	CP; 6503,20978 6519,21002 6565,21004
+# REMOVED (Spielplatz wird umgestaltet, offizielle Radroutenführung existiert) --- nach links abbiegen, um Drängelgitter am Spielplatz zu umfahren	CP; 6596,21062 6560,21055 6565,21004
 # REMOVED (alles entfernt) --- (Weserstr. - Boxhagener Str.): Gewerbegelände	CS 14949,11474 14838,11410 --- #: note: vor Ort ohne Bindestrich geschrieben --- (Weserstr. - Boxhagener Str.): Schreibfeder-Passage	CS 14792,11391 14838,11410 --- (Weserstr. - Boxhagener Str.): Lidl-Parkplatz	CS 14792,11391 14752,11369
 #: by: anna (miri...)
 #: confirmed_by: srt
