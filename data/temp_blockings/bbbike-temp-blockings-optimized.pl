@@ -2434,7 +2434,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -4008,7 +4008,31 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'until' => 1640991599
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: KYNAST-2021
+# REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
+# REMOVED --- #: XXX regelmäßig prüfen --- #: priority: #A --- #: last_checked: 2018-11-16
+#: note: mittlerweile gibt es eine offizielle Radwegführung teilweise via Gehweg, deshalb: q4 -> q3
+#: by: https://viz.berlin.de/2020/07/schau-11_12-07_2020/ ("für den Kraftfahrzeugverkehr gesperrt")
+#: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1043669.php ("Notweg für Radfahrer" (?))
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/kynaststrasse-gesperrt_a299447
+#: source_id: 2147346071 (inaktiv)
+#: source_id: 2147346815 (neu)
+#: also_indoor: traffic (G)
+#: priority: #A
+#: last_checked: 2021-10-28 (mapillary)
+#: check_frequency: 14d
+#: next_check: 2021-10-31
+	q3::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
+',
+         'from' => 1611036000,
+         'id' => 3048,
+         'source_id' => '2147343461',
+         'text' => 'Kynaststr.: Bauarbeiten an der Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden, mögliche Engstelle, bis 31.10.2021, möglicherweise noch länger',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -4330,7 +4354,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-10-21
+#: last_checked: 2021-11-01
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4379,17 +4403,22 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-10-26
-#: check_frequency: 30d
-#: next_check: 2021-12-31
+#: last_checked: 2021-11-01 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
 # REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
 	q3::inwork 14272,11775 14306,11889
+	q4::inwork 14306,11889 14354,12012
+	q3::inwork 14354,12012 14468,11992
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1590562800,
          'id' => 3240,
-         'text' => 'Gärtnerstr.: Bauarbeiten am Boxhagener Platz. Fahrbahn gesperrt, möglicherweise bis Dezember 2021',
+         'text' => 'Gärtnerstr./Mainzer Str.: Bauarbeiten zwischen Grünberger Str. und Scharnweberstr., Fahrbahn gesperrt, möglicherweise bis Dezember 2021',
          'type' => 'handicap',
          'until' => 1640966400
        },

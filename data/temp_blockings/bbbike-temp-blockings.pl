@@ -28749,8 +28749,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-01-19 07:00:00"), # $isodate2epoch->("2020-07-12 07:00:00"), # 1542150096, # 2018-11-14 00:01
-       until => $isodate2epoch->("2021-10-31 17:00:00"), # $isodate2epoch->("2020-12-05 17:00:00"), # 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
-       text  => 'Kynaststr.: Bauarbeiten an der Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden, mögliche Engstelle, bis 31.10.2021',
+       until => undef, # $isodate2epoch->("2021-10-31 17:00:00"), # $isodate2epoch->("2020-12-05 17:00:00"), # 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
+       text  => 'Kynaststr.: Bauarbeiten an der Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden, mögliche Engstelle, bis 31.10.2021, möglicherweise noch länger',
        type  => 'handicap',
        source_id => '2147343461', # inaktiv
        data  => <<EOF,
@@ -28764,9 +28764,9 @@ EOF
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/kynaststrasse-gesperrt_a299447
 #: source_id: 2147346071 (inaktiv)
 #: source_id: 2147346815 (neu)
-#: also_indoor: traffic
+#: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2021-10-23
+#: last_checked: 2021-10-28 (mapillary)
 #: check_frequency: 14d
 #: next_check: 2021-10-31
 	q3::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
@@ -30830,7 +30830,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-10-21
+#: last_checked: 2021-11-01
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31040,20 +31040,25 @@ EOF
      },
      { from  => $isodate2epoch->("2020-05-27 09:00:00"),
        until => $isodate2epoch->("2021-12-31 17:00:00"), # der ursprüngliche Termin (14.08.2020) kann wohl nicht gehalten werden; laut Schild bis Ende 2021
-       text  => 'Gärtnerstr.: Bauarbeiten am Boxhagener Platz. Fahrbahn gesperrt, möglicherweise bis Dezember 2021',
+       text  => 'Gärtnerstr./Mainzer Str.: Bauarbeiten zwischen Grünberger Str. und Scharnweberstr., Fahrbahn gesperrt, möglicherweise bis Dezember 2021',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-10-26
-#: check_frequency: 30d
-#: next_check: 2021-12-31
+#: last_checked: 2021-11-01 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
 # REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
 	q3::inwork 14272,11775 14306,11889
+	q4::inwork 14306,11889 14354,12012
+	q3::inwork 14354,12012 14468,11992
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { do {
