@@ -113,7 +113,7 @@ for my $sequence (@sequences) {
 	"start_id=$id",
 	"sequence=$sequence->[0]->{sequence}",
 	;
-    my @coords = map { join(",", @{ $_->{computed_geometry}->{coordinates} }) } @$sequence;
+    my @coords = map { join(",", @{ $_->{computed_geometry}->{coordinates} || [] }) } @$sequence;
     print $ofh "#: url: https://www.mapillary.com/app/?pKey=$id&focus=photo&dateFrom=$capture_date&dateTo=$capture_date\n";
     print $ofh "$name\tX @coords\n";
 }
