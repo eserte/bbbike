@@ -706,7 +706,7 @@ teilweise mit Leitboys geschützt	RW4; 14208,12235 14291,12220 14381,12205 14427,
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur, evtl. bleibt diese permanent
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
-#: last_checked: 2021-10-22
+#: last_checked: 2021-11-02
 #: check_frequency: 30d
 #: next_check: 2022-03-31
 	RW4; 14926,12129 14994,12121 15117,12106
@@ -1384,6 +1384,7 @@ Verbundsteinpflaster, erhebliche Schäden durch Wurzelhebungen	RW1; 5166,13087 49
 #: by: https://api.fixmyberlin.de/api/plannings/192 (Im Bereich der Gallwitzallee wird der bestehende Zweirichtungsradweg saniert und ausgebaut) (teilweise ist das schon passiert)
 #: source_id: 2147344664 (bis Ende Oktober 2019)
 #: source_id: viz2021:13.346369,52.431944,20.09.2021,07:30 (Leitungsarbeiten bis 26.10.2021 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?)
+#: source_id: viz2021:13.34634,52.43195,02.11.2021,17:40 (Arbeien bis 26.11.2021 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?)
 #: osm_watch: way id="85468589" version="17"
 #: osm_watch: way id="458915639" version="3"
 #: last_checked: 2021-09-12
@@ -2391,7 +2392,7 @@ neu asphaltiert, relativ breit	RW1; 13785,12292 13732,12526 13730,12535
 #: confirmed_by: ^^^
 #: by: ^^^
 Busspur ist immer gültig	RW5; 16246,12177 16207,11937
-	RW1;RW1 16860,12861 16484,12871 16384,12874 16376,12874 16312,12876 16242,12878 16197,12880 16146,12881 16073,12883 15950,12886
+	RW1;RW1 16860,12861 16484,12871 16439,12872 16384,12874 16376,12874 16312,12876 16242,12878 16197,12880 16146,12881 16073,12883 15950,12886
 	RW4;RW4 16866,13532 16863,13138
 	RW3;RW4 16863,13138 16865,13000 16860,12861
 	RW6;RW6 12671,8077 12446,8032
@@ -5381,7 +5382,11 @@ asphaltiert	RW1; 5312,6382 5346,6443 5370,6486
 	RW6;RW6 20294,10585 20319,10555 20335,10487
 Tempo 10	RW6;RW6 19810,10155 19819,10090 19842,9895
 asphaltiert, die letzten Meter werden auf der Fahrbahn geführt	RW1; 14805,10518 14828,10628 14880,10808 14902,10859 14928,10970 14950,11049 14988,11130
-	RW3;RW3 14805,10518 14797,10476 14766,10372 14724,10297 14652,10201
+	RW3; 14805,10518 14797,10476 14766,10372 14748,10334 14724,10297 14652,10201
+	RW3; 14652,10201 14724,10297 14748,10334
+#: note: zusätzlich existiert ein asphaltierter Bürgersteigradweg
+	RW3; 14748,10334 14766,10372 14797,10476
+	RW3; 14797,10476 14805,10518
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20080912.1205.109026.html
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20100528.1010.297121.html
 	RW4;RW4 9791,19363 9688,19440

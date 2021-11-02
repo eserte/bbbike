@@ -3132,7 +3132,7 @@ EOF
        text  => 'Josef-Orlopp-Str. (Lichtenberg) in Richtung Storkower Str. zwischen Siegfriedstr. und Vulkanstr. Fahrbahnerneuerung, Fahrtrichtung gesperrt (bis 23.10.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 16863,13138 16426,13145 15912,13153
+	1 16863,13138 16429,13146 15912,13153
 EOF
      },
      { from  => 1128899379, # 2005-10-10 01:09 (by Tagesspiegel)
@@ -3392,6 +3392,7 @@ EOF
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
 #: by: https://www.berlin.de/weihnachtsmarkt/3240274-3496862-weihnachtsmarkt-an-der-gedaechtniskirche.html (2020)
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarkt-an-der-gedaechtniskirche.html
+#: by: https://berliner-abendblatt.de/2021/11/02/ein-weihnachtsbaum-fuer-den-breitscheidplatz/
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
@@ -5371,7 +5372,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004084',
        data  => <<EOF,
-	1::inwork 16863,13138 16426,13145 15912,13153
+	1::inwork 16863,13138 16429,13146 15912,13153
 EOF
      },
      { from  => 1154210400, # 2006-07-30 00:00
@@ -22780,9 +22781,9 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2019-11-30 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-12-01 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 1. Dezember 2019, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2021-11-27 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-11-28 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 28. November 2021, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 11, start => "2021-01-01T00:00:00"]], # 2020 nicht!
        recurrence_prewarn_days => 21, # finden 2020 überhaupt Weihnachtsmärkte statt?
@@ -22794,9 +22795,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2020-12-05 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-12-06 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 6. Dezember 2020, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2021-12-04 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-12-05 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 5. Dezember 2021, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 3, months => 12]],
        type  => 'gesperrt',
@@ -22806,9 +22807,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2020-12-12 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-12-13 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 13. Dezember 2020, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2021-12-11 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-12-12 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 12. Dezember 2021, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 12]],
        type  => 'gesperrt',
@@ -22818,9 +22819,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2020-12-19 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-12-20 17:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 20. Dezember 2020, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2021-12-18 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-12-19 17:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 19. Dezember 2021, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 17, months => 12]],
        type  => 'gesperrt',
@@ -26192,6 +26193,7 @@ EOF
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
 #: source_id: 2147341022
+#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
 #: priority: #A
 #: next_check: 2021-11-03
 	2::temp -2218,5133 -927,6888
@@ -28749,12 +28751,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-01-19 07:00:00"), # $isodate2epoch->("2020-07-12 07:00:00"), # 1542150096, # 2018-11-14 00:01
-       until => undef, # $isodate2epoch->("2021-10-31 17:00:00"), # $isodate2epoch->("2020-12-05 17:00:00"), # 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
-       text  => 'Kynaststr.: Bauarbeiten an der Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden, mögliche Engstelle, bis 31.10.2021, möglicherweise noch länger',
+       until => $isodate2epoch->("2021-10-31 17:00:00"), # $isodate2epoch->("2020-12-05 17:00:00"), # 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
+       text  => 'Kynaststr.: Bauarbeiten an der Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden, mögliche Engstelle, bis 31.10.2021',
        type  => 'handicap',
        source_id => '2147343461', # inaktiv
        data  => <<EOF,
-#: next_check_id: KYNAST-2021
+# REMOVED --- #: next_check_id: KYNAST-2021
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
 # REMOVED --- #: XXX regelmäßig prüfen --- #: priority: #A --- #: last_checked: 2018-11-16
 #: note: mittlerweile gibt es eine offizielle Radwegführung teilweise via Gehweg, deshalb: q4 -> q3
@@ -28764,12 +28766,8 @@ EOF
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/kynaststrasse-gesperrt_a299447
 #: source_id: 2147346071 (inaktiv)
 #: source_id: 2147346815 (neu)
-#: also_indoor: traffic (G)
-#: priority: #A
-#: last_checked: 2021-10-28 (mapillary)
-#: check_frequency: 14d
-#: next_check: 2021-10-31
-	q3::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
+# REMOVED --- #: also_indoor: traffic (G) --- #: priority: #A --- #: last_checked: 2021-10-28 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2021-10-31
+	q3::inwork; 14652,10201 14724,10297 14748,10334 14766,10372 14797,10476
 EOF
      },
      { from  => 1542222296, # 2018-11-14 20:04
@@ -31047,7 +31045,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="3"
-#: last_checked: 2021-11-01 vvv
+#: last_checked: 2021-11-02 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32354,7 +32352,6 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00 (inaktiv)
 #: source_id: viz2021:13.320517,52.466345,13.07.2021,08:00 (mittlerweile bis 2.12.2021)
-#: note: laut rbb nur bis 15.10.2021
 	q4::inwork; 4894,6509 4875,6552 4786,6717
 EOF
      },
@@ -32903,7 +32900,7 @@ EOF
 #: next_check_id: SEYDLITZ-2021
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1116986.php (Neubau der Fahrbahn, bis Ende November 2021)
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/retzowstrasse-gesperrt_a320297
-#: osm_watch: way id="24917125" version="11"
+#: osm_watch: way id="24917125" version="12"
 #: add_fragezeichen: Wann wird die Sperrung der Fahrbahn aufgehoben?
 #: last_checked: 2021-09-12
 # REMOVED --- #: check_frequency: 120d
@@ -33108,7 +33105,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRANKFURTER-2021
 #: note: auch last Schild der Wasserbetriebe bis März 2022
-#: last_checked: 2021-10-22 vvv
+#: last_checked: 2021-11-02 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-31 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -33205,7 +33202,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-10-30
+#: last_checked: 2021-11-02
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
