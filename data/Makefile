@@ -120,11 +120,11 @@ FILES_WITH_URLS=	comments_route-orig comments_ferry-orig comments_misc-orig
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COOKED_TARGETS} ${COMPUTED_TARGETS}
 BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//:S/^oldnames$//}
-BBBGEOJSONP_PERSISTENTTMP_SOURCES=	fragezeichen-nextcheck.bbd fragezeichen-outdoor-nextcheck.bbd
+BBBGEOJSONP_PERSISTENTTMP_SOURCES=	fragezeichen-nextcheck.bbd fragezeichen-outdoor-nextcheck.bbd fragezeichen-outdoor.bbd
 BBBGEOJSONP_TARGETS=	${BBBGEOJSONPDIR}/bbbike-temp-blockings-optimized.bbbgeojsonp \
 			${BBD_TARGETS:S/$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//} \
 			${BBBGEOJSONP_PERSISTENTTMP_SOURCES:S/.bbd$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}
-GEOJSON_PERSISTENTTMP_SOURCES=	fragezeichen-nextcheck.bbd fragezeichen-outdoor-nextcheck.bbd
+GEOJSON_PERSISTENTTMP_SOURCES=	fragezeichen-nextcheck.bbd fragezeichen-outdoor-nextcheck.bbd fragezeichen-outdoor.bbd
 GEOJSON_TARGETS=	${GEOJSONDIR}/bbbike-temp-blockings-optimized.geojson \
 			${BBD_TARGETS:S/$/.geojson/:S/^/${GEOJSONDIR}\//} \
 			${GEOJSON_PERSISTENTTMP_SOURCES:S/.bbd$/.geojson/:S/^/${GEOJSONDIR}\//}
