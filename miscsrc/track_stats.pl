@@ -571,7 +571,7 @@ sub _parse_srt_device_quickly {
     my $file = shift;
     if (open my $fh, $file) {
 	while(<$fh>) {
-	    if (m{\tsrt:device=([^\t]+)}) {
+	    if (m{\tsrt:device=([^\t\n]+)}) {
 		return $1;
 	    }
 	    last if $. > 20; # typically the srt:device identifier is in the 5th or 7th line
