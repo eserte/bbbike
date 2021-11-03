@@ -10,15 +10,16 @@
 # 
 ### Friedrichshain ###
 # 
+#: next_check_id: OSTBAHNHOF-2021
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-ostbahnhof (bis 2025?)
 #: XXX Wann sind die Bauarbeiten beendet? Ist mittlerweile die gesamte Fahrbahn der Erich-Steinfurth-Str. gesperrt?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2021-10-17
-#: check_frequency: 120d
-# REMOVED --- #: next_check: 2025-01-01
-#: next_check: 2021-11-02
-Erich-Steinfurth-Str.: Bauarbeiten, etwa 50m der Fahrbahn gesperrt	q3::inwork 12596,11696 12453,11790
+#: last_checked: 2021-11-03
+# REMOVED --- #: check_frequency: 120d
+#: check_frequency: 30d
+#: next_check: 2025-01-01
+Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12596,11696 12453,11790
 # 
 #: note: laut rbb bis 29.10.2021, laut Parkverbotsschilder bis 28.1.2022 vvv
 #: also_indoor: traffic (H(falsch),G(teilweise))
@@ -264,6 +265,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 #: last_checked: 2021-10-31
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
+#: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
 #: last_checked: 2021-10-31
 #: check_frequency: 60d
 (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10953,12638 10772,12515
@@ -279,8 +281,8 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 # 
 #: source_id: viz2021:13.404739,52.514839,10.05.2021,06:00 (bis 1.10.2021) (inaktiv)
 #: note: laut rbb bis 1.11.2021
-#: last_checked: 2021-10-21 (mapillary)
-#: check_frequency: 14d
+#: last_checked: 2021-10-26 (mapillary)
+#: check_frequency: 21d
 # REMOVED --- #: next_check: 2021-10-30
 # REMOVED --- #: valid: -20211030
 Scharrenstr.: Bauarbeiten an der Breiten Str., einige Meter der Fahrbahn gesperrt	q3::inwork 10480,12077 10418,12016

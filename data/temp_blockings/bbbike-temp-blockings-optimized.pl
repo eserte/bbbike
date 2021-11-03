@@ -3722,16 +3722,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147341022
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
 #: priority: #A
-#: next_check: 2021-11-03
+#: next_check: 2021-11-10
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
 ',
-         'from' => 1635807600,
+         'from' => 1636412400,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 3. November 2021 ab ca. 09:30 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 10. November 2021 ab ca. 09:30 Uhr',
          'type' => 'gesperrt',
-         'until' => 1635930900
+         'until' => 1636535700
        },
        undef,
        {

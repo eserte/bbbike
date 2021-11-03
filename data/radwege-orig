@@ -1589,9 +1589,10 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 	RW4; 10738,12364 10804,12461 10878,12560
 #: by: https://pbs.twimg.com/media/EWHwSfnXQAAaaO9?format=jpg&name=large
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
+#: by: https://molkenmarkt01.hi-res-cam.com/ (webcam)
 #: XXX temporäre Radwegführung
-#: last_checked: 2021-09-24
-#: check_frequency: 60d
+#: last_checked: 2021-11-03 (webcam)
+#: check_frequency: 30d
 temporäre Führung als Bürgersteigradweg	RW1; 10878,12560 10954,12635
 # wieder herstellen:	RW4; 10878,12560 10954,12635
 	RW4; 10954,12635 11057,12715
@@ -5382,10 +5383,10 @@ asphaltiert	RW1; 5312,6382 5346,6443 5370,6486
 	RW6;RW6 20294,10585 20319,10555 20335,10487
 Tempo 10	RW6;RW6 19810,10155 19819,10090 19842,9895
 asphaltiert, die letzten Meter werden auf der Fahrbahn geführt	RW1; 14805,10518 14828,10628 14880,10808 14902,10859 14928,10970 14950,11049 14988,11130
-	RW3; 14805,10518 14797,10476 14766,10372 14748,10334 14724,10297 14652,10201
-	RW3; 14652,10201 14724,10297 14748,10334
+	RW3; 14805,10518 14797,10476 14766,10372 14738,10317 14652,10201
+	RW3; 14652,10201 14738,10317
 #: note: zusätzlich existiert ein asphaltierter Bürgersteigradweg
-	RW3; 14748,10334 14766,10372 14797,10476
+	RW3; 14738,10317 14766,10372 14797,10476
 	RW3; 14797,10476 14805,10518
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20080912.1205.109026.html
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20100528.1010.297121.html

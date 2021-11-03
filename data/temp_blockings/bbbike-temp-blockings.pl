@@ -26183,9 +26183,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2021-11-02 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-11-03 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 3. November 2021 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2021-11-09 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-11-10 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 10. November 2021 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26195,7 +26195,7 @@ EOF
 #: source_id: 2147341022
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
 #: priority: #A
-#: next_check: 2021-11-03
+#: next_check: 2021-11-10
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
@@ -28767,7 +28767,7 @@ EOF
 #: source_id: 2147346071 (inaktiv)
 #: source_id: 2147346815 (neu)
 # REMOVED --- #: also_indoor: traffic (G) --- #: priority: #A --- #: last_checked: 2021-10-28 (mapillary) --- #: check_frequency: 14d --- #: next_check: 2021-10-31
-	q3::inwork; 14652,10201 14724,10297 14748,10334 14766,10372 14797,10476
+	q3::inwork; 14652,10201 14738,10317 14766,10372 14797,10476
 EOF
      },
      { from  => 1542222296, # 2018-11-14 20:04
