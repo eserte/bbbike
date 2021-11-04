@@ -5252,29 +5252,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1638399600
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1113411.php
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10821 (Frage)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10830 (Antrag)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10860 (Frage)
-#: XXX bis wann bleibt die Sperrung bestehen? vvv
-#: tempex: T20-T06 vvv
-#: last_checked: 2021-09-21 (in und um den Park herum stehen Absperrgitter) vvv
-#: next_check: 2021-12-31 vvv
-	2::night 10132,12941 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992
-	2::night 10166,12777 10105,12855 9977,12912
-#: last_checked ^^^
-#: next_check ^^^
-#: tempex ^^^
-#: XXX ^^^
-',
-         'from' => undef,
-         'id' => 3427,
-         'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/amtliche-bekanntmachungen/allgemeinverfuegung_james-simon-park.pdf',
-         'text' => 'James-Simon-Park: nachts zwischen 20 und 6 Uhr geschlossen',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: note: Gehweg für Radfahrer frei (beide Richtungen)
@@ -5578,15 +5556,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (hier: nur für Kfz-Verkehr gesperrt)
 #: by: https://twitter.com/VIZ_Berlin/status/1453704442986049548 (Radfahrer frei)
 #: by: https://twitter.com/VIZ_Berlin/status/1453699314891595779
-#: source_id: viz2021:13.403429,52.56939,28.10.2021,06:00 (hier: bis 12.11.2021, und nur für Kfz-Verkehr gesperrt)
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/bauarbeiten-in-der-muehlenstrasse_a327002
+#: source_id: viz2021:13.403429,52.56939,28.10.2021,06:00 (hier: bis 12.11.2021, und nur für Kfz-Verkehr gesperrt) (mittlerweile bis 9.11.2021)
 	q3::inwork; 10240,18193 10355,17963 10459,17754
 ',
          'from' => 1635285600,
          'id' => 3472,
          'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1139346.php',
-         'text' => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, Radfahrer dürfen den Gehweg benutzen, vom 28. Oktober 2021 bis voraussichtlich Mitte November 2021',
+         'text' => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, Radfahrer dürfen den Gehweg benutzen, vom 28. Oktober 2021 bis 09.11.2021',
          'type' => 'handicap',
-         'until' => 1636757999
+         'until' => 1636452000
        },
        {
          'data' => '	q4::inwork 19743,1804 19669,1729 19653,1671 19636,1609 19599,1557
@@ -5607,6 +5586,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Bernau - Lanke: Bauarbeiten, Sperrung, vom 01.11.2021 bis 15.01.2022',
          'type' => 'gesperrt',
          'until' => 1642287600
+       },
+       {
+         'data' => '	2::inwork -57797,19638 -55780,18604
+',
+         'from' => 1617573600,
+         'id' => 3475,
+         'source_id' => 'LS/723-P/20/136',
+         'text' => 'Bamme - Rathenow: Brückenneubau, Sperrung vom 06.04.2021 bis 08.09.2022',
+         'type' => 'gesperrt',
+         'until' => 1662674400
        }
      
 );

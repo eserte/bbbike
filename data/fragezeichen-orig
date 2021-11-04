@@ -3488,13 +3488,13 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege geben?	?::projected
 #: by: https://twitter.com/VIZ_Berlin/status/1433759152568950815
 #: by: https://twitter.com/Yantschi/status/1433748714145861635
 #: source_id: viz2021:13.359249,52.498514,30.08.2021,08:00 (bis 26.9.2021, weitere Arbeiten folgen) (mittlerweile inaktiv)
-#: source_id: viz2021:13.359249,52.498514,27.09.2021,10:00 (bis 29.10.2021) (mittlerweile 5.11.2021)
+#: source_id: viz2021:13.359249,52.498514,27.09.2021,10:00 (bis 29.10.2021) (mittlerweile 5.11.2021) (mittlerweile 10.11.2021)
 #: osm_watch: way id="4618713" version="33"
 #: XXX nur Richtung Westen oder in beiden Richtungen?
 #: XXX auﬂerdem: Zweiwege-Popup-Radweg zwischen Steinmetzstr. und ˆstlichem Ende der B¸lowstr.
 #: last_checked: 2021-10-28 (osm) (Richtung Westen weitgehend fertig, auﬂer St¸ck zwischen Steinmetzstr. und Potsdamer Str.) vvv
 #: check_frequency: 14d vvv
-#: next_check: 2021-11-05 vvv
+#: next_check: 2021-11-10 vvv
 # REMOVED (hier weitgehend realisiert) --- B¸lowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork; 6532,10529 6602,10504 6636,10492 6753,10446
 # REMOVED (laut osm fertig) --- B¸lowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork; 6753,10446 6851,10416 6937,10363 6971,10346 7033,10328
 B¸lowstr./Kleiststr.: Popup-Radweg entsteht	?::inwork; 7033,10328 7131,10331 7238,10299 7413,10244 7579,10183 7698,10147 7702,10146
@@ -3674,7 +3674,7 @@ Alexanderufer: Fahrradstraﬂe soll entstehen	?::projected 8315,13042 8315,13181 8
 # REMOVED (weitgehend markiert, nur die letzten Meter am Groﬂ-Berliner Damm fehlen) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf (‹bergabe der Verkehrsfl‰chen im Oktober 2020) --- #: XXX wann sind sie fertig? (bei osm bereits eingetragen) --- #: last_checked: 2020-09-04 --- #: next_check: 2020-10-01 --- Benno-Kˆnig-Str.: Radspuren werden markiert	?::inwork 18596,4517 18434,4363 18374,4307
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf
-#: last_checked: 2021-10-08 vvv
+#: last_checked: 2021-11-02 (mapillary) vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
 Bodestr.: in Zukunft nur f¸r Rad- und Fuﬂverkehr offen	? 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
 Am Lustgarten: in Zukunft nur f¸r Rad- und Fuﬂverkehr offen	? 10054,12699 10094,12635
@@ -4063,7 +4063,7 @@ Teltower Damm: wird die Benutzungspflicht wieder eingef¸hrt?	? 1345,184 1322,352
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7888 (Anfrage)
 #: XXX folgende Straﬂe fehlt bei Berlin.coords.data:
 #: XXX c) Leonore-Goldschmidt-Str. (Privatstraﬂe), PLZ=14199
-#: osm_watch: relation id="12010271" version="3"
+#: osm_watch: relation id="12010271" version="4"
 #: osm_watch: way id="993566668" version="3"
 #: last_checked: 2021-09-28
 #: check_frequency: 180d
@@ -4499,7 +4499,7 @@ Piesporter Str./Feldtmannstr.: Zebrastreifen geplant	?::projected 15215,17630 15
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2021-08-12 (mapillary)
+#: last_checked: 2021-10-13 (mapillary)
 #: check_frequency: 90d
 Pistoriusstr./Heinersdorfer Str.: Zebrastreifen geplant	?::projected 12228,16862 12257,16876 12296,16880
 # 
@@ -4605,7 +4605,7 @@ Hannah-Arendt-Str./Gertrud-Kolmar-Str.: Zebrastreifen geplant	?::projected 8747,
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2023)
 #: XXX mittlerweile existiert hier eine Baustellenampel wegen der Hochbauarbeiten
 #: priority: #D
-#: last_checked: 2021-10-26
+#: last_checked: 2021-11-02 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2023-12-31
 Fischerinsel nˆrdl. der Roﬂstraﬂenbr¸cke: Zebrastreifen geplant	?::projected 10645,11867 10604,11941 10679,11898
@@ -5051,6 +5051,7 @@ Alfredstr., Schottstr., R¸digerstr.: Planung von Radverkehrsanlagen	?::projected
 #: by: http://www.infravelo.de/projekt/alt-friedrichsfelde-4/ (3. Quartal 2021 - 3. Quartal 2022)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (2022)
 #: by: https://api.fixmyberlin.de/api/projects/440 ("gesch¸tzt")
+#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Baubeginn 2022 vorgesehen)
 #: next_check: 2022-09-30
 Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 18215,11690
 # 
@@ -5063,6 +5064,7 @@ Frankfurter Allee ˆstlich Mˆllendorffstr.: was passiert hier bez¸glich einer Rad
 #: by: http://www.infravelo.de/projekt/scheffelstrasse/ (gesch¸tzter Radfahrstreifen in Planung, 2. Quartal 2021 - 4. Quartal 2022)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (gesch¸tzte Radstreifen 2021)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (kleine Protektion, herausnehmbare Poller, Planungsleistungen bis Herbst 2021, danach bauliche Umsetzung)
+#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Umsetzung 2022)
 #: last_checked: 2021-11-02
 #: check_frequency: 120d
 #: next_check: 2022-12-31
@@ -5071,9 +5073,10 @@ Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch 
 #: by: https://api.fixmyberlin.de/api/projects/331
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (kleine Protektion, Realisierung 2022, nach den BWB-Bauarbeiten, die mˆglicherweise erst im Oktober 2022 beginnen)
 #: by: https://www.infravelo.de/projekt/herzbergstrasse/ (1. Quartal 2023 - 4. Quartal 2023)
-#: last_checked: 2021-06-26
+#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Fertigstellung 2022)
+#: last_checked: 2021-07-21 (mapillary)
 #: check_frequency: 180d
-#: next_check: 2023-12-31
+#: next_check: 2022-12-31
 Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
 #: osm_watch: way id="4045220" version="42"
 #: last_checked: 2021-09-03
@@ -5769,7 +5772,8 @@ Vorarlberger Damm: Erneuerung des Radwegs	?::inwork; 6762,7109 6817,7101 6894,71
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1140577.php (Beginn der Bauarbeiten voraussichtlich KW 45/2021, Dauer bis 2022)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/#headline_1_5 (Informationsseite des BA)
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/grundsteinlegung-fuer-radweg-am-tempelhofer-damm_a326747
-#: note: auﬂerdem existieren zwischen Ringbahnstr. und Alt-Tempelhof tempor‰re Busspuren, f¸r Radfahrer freigegeben
+#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/markierung-eines-geschuetzten-radwegs-am-tempelhofer-damm-beginnt_a326756 (Bauarbeiten 2021/2022)
+# REMOVED --- #: note: auﬂerdem existieren zwischen Ringbahnstr. und Alt-Tempelhof tempor‰re Busspuren, f¸r Radfahrer freigegeben
 #: last_checked: 2021-09-26
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 240d
@@ -7058,6 +7062,7 @@ Krampnitz: neue Planstraﬂen	?::projected -14183,5214 -13771,5077
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erw‰hnung einer Radverbindung mit der Wasserstadt (vielleicht im Zuge der Straﬂe "An der Bucht"?), evtl. auch eine Verbindung zur Karlshorster Str.?)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_26_2221_2280_online.pdf (Grundst¸cksnummerierungen)
 #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/strassennamen-werden-der-legende-von-paul-und-paula-gewidmet_a324533
+#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Erw‰hnung einer Radverbindung, 2023)
 #: XXX vorgeschlagene Straﬂennamen (fehlen alle bei Berlin.coords.data):
 #: XXX * bestehende Untere Kynaststr. -> An der Mole
 #: XXX * Paul-und-Paula-Promenade
@@ -7564,7 +7569,7 @@ Marquardter Str. [Stichstraﬂe]: Qualit‰t?	? -16853,5634 -16885,5359 -16774,5335
 #: XXX Planstraﬂe 6: Jakob-Kaiser-Str.
 #: XXX Quartiersplatz: Hannah-von-Bredow-Platz
 #: osm_watch: way id="257216846" version="3" brb
-#: osm_watch: way id="556679999" version="2" brb
+#: osm_watch: way id="556679999" version="3" brb
 #: next_check: 2021-05-01
 Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante Planstraﬂen, wo genau, welche Qualit‰t?	? -11697,-2753 -11490,-2779 -11371,-2971
 # 
