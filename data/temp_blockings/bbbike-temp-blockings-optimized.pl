@@ -4343,7 +4343,24 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
+# REMOVED (alt) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php --- #: by: fritz --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergang-gesperrt_a251392
+#: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
+#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergaenge-werden-erneuert_a327470 (neue Sperrung November 2021)
+#: by: https://pascalgrothe.de/sperrung-der-bahnuebergaenge-in-biesdorf-vom-8-11-bis-26-11/
+# REMOVED --- #: XXX es wird nochmal im zweiten Halbjahr 2021 eine zweiwöchige Sperrung geben
+#: also_indoor: search Brebacher_Weg Bahnübergang
+#: osm_watch: way id="9829824" version="20"
+# REMOVED --- #: priority: #A --- #: last_checked: 2021-03-31 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2021-07-01
+	2::inwork 21558,12073 21562,12088 21564,12097
+',
+         'from' => 1636264800,
+         'id' => 3171,
+         'text' => 'Brebacher Weg: Bahnübergang gesperrt, vom 7.11.2021 bis voraussichtlich 26.11.2021',
+         'type' => 'gesperrt',
+         'until' => 1637942400
+       },
        undef,
        undef,
        undef,
@@ -4618,7 +4635,29 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9022 (Frage)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9049 (ab August (2020 oder 2021?) für sechs Monate, auch beim Brebacher Weg, Bau einer Autoüberfahrt?)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9184 (fehlende Umleitung)
+#: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
+#: by: https://twitter.com/SBahnBerlin/status/1347543580529758210 (S-Bahn fährt nicht bis 25.1.2021)
+#: by: https://abendblatt-berlin.de/2021/01/13/mit-dem-bus-statt-mit-der-bahn-durch-den-berliner-osten/
+#: by: https://viz.berlin.de/2021/01/s5/ (SEV bis 25.1.2021)
+#: by: https://pascalgrothe.de/neuigkeiten-zur-sperrung-der-bahnuebergaenge-in-biesdorf/ (zweiwöchige Sperrung im 2. Halbjahr 2021)
+#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergaenge-werden-erneuert_a327470 (neue Sperrung November 2021)
+#: by: https://pascalgrothe.de/sperrung-der-bahnuebergaenge-in-biesdorf-vom-8-11-bis-26-11/
+# REMOVED --- #: XXX bis wann ist der Bahnübergang gesperrt?
+#: also_indoor: search Oberfeldstraße Bahnübergang
+#: osm_watch: way id="868347101" version="3"
+# REMOVED --- #: priority: #A --- #: last_checked: 2021-03-31 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2021-07-01
+	2::inwork 20627,12162 20624,12133 20620,12108
+',
+         'from' => 1636264800,
+         'id' => 3282,
+         'text' => 'Oberfeldstr.: Bahnübergang am S-Bhf. Biesdorf gesperrt, vom 7.11.2021 bis voraussichtlich 26.11.2021',
+         'type' => 'gesperrt',
+         'until' => 1637942400
+       },
        undef,
        undef,
        undef,
@@ -5206,9 +5245,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1627164000,
          'id' => 3422,
          'source_id' => 'viz2021:13.326349,52.447526,26.07.2021,07:00',
-         'text' => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 06.11.2021 17:00',
+         'text' => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 30.11.2021 17:00',
          'type' => 'handicap',
-         'until' => 1636214400
+         'until' => 1638288000
        },
        undef,
        {

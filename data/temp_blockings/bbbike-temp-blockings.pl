@@ -30225,21 +30225,20 @@ EOF
 	2::inwork 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378
 EOF
      },
-     { from  => undef, # $isodate2epoch->("2020-02-02 00:00:00"), # 1570223758, # 2019-10-04 23:15
-       until => $isodate2epoch->("2021-03-31 18:00:00"), # undef, # $isodate2epoch->("2020-03-09 18:00:00"), # 1574118000, # 2019-11-19 00:00
-       text  => 'Brebacher Weg: Bahnübergang gesperrt, bis Ende März 2021',
+     { from  => $isodate2epoch->("2021-11-07 07:00:00"), # undef, # $isodate2epoch->("2020-02-02 00:00:00"), # 1570223758, # 2019-10-04 23:15
+       until => $isodate2epoch->("2021-11-26 17:00:00"), # $isodate2epoch->("2021-03-31 18:00:00"), # undef, # $isodate2epoch->("2020-03-09 18:00:00"), # 1574118000, # 2019-11-19 00:00
+       text  => 'Brebacher Weg: Bahnübergang gesperrt, vom 7.11.2021 bis voraussichtlich 26.11.2021',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
 # REMOVED (alt) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php --- #: by: fritz --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergang-gesperrt_a251392
 #: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
-#: XXX es wird nochmal im zweiten Halbjahr 2021 eine zweiwöchige Sperrung geben
+#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergaenge-werden-erneuert_a327470 (neue Sperrung November 2021)
+#: by: https://pascalgrothe.de/sperrung-der-bahnuebergaenge-in-biesdorf-vom-8-11-bis-26-11/
+# REMOVED --- #: XXX es wird nochmal im zweiten Halbjahr 2021 eine zweiwöchige Sperrung geben
 #: also_indoor: search Brebacher_Weg Bahnübergang
 #: osm_watch: way id="9829824" version="20"
-#: priority: #A
-#: last_checked: 2021-03-31
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2021-07-01
+# REMOVED --- #: priority: #A --- #: last_checked: 2021-03-31 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2021-07-01
 	2::inwork 21558,12073 21562,12088 21564,12097
 EOF
      },
@@ -31634,9 +31633,9 @@ EOF
 	q3::inwork; 5192,10241 5196,10398
 EOF
      },
-     { from  => undef, # 
-       until => $isodate2epoch->("2021-03-31 18:00:00"), # undef, # XXX
-       text  => 'Oberfeldstr.: Bahnübergang am S-Bhf. Biesdorf gesperrt, bis Ende März 2021',
+     { from  => $isodate2epoch->("2021-11-07 07:00:00"), # undef, # 
+       until => $isodate2epoch->("2021-11-26 17:00:00"), # $isodate2epoch->("2021-03-31 18:00:00"), # undef, # XXX
+       text  => 'Oberfeldstr.: Bahnübergang am S-Bhf. Biesdorf gesperrt, vom 7.11.2021 bis voraussichtlich 26.11.2021',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9022 (Frage)
@@ -31647,13 +31646,12 @@ EOF
 #: by: https://abendblatt-berlin.de/2021/01/13/mit-dem-bus-statt-mit-der-bahn-durch-den-berliner-osten/
 #: by: https://viz.berlin.de/2021/01/s5/ (SEV bis 25.1.2021)
 #: by: https://pascalgrothe.de/neuigkeiten-zur-sperrung-der-bahnuebergaenge-in-biesdorf/ (zweiwöchige Sperrung im 2. Halbjahr 2021)
-#: XXX bis wann ist der Bahnübergang gesperrt?
+#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergaenge-werden-erneuert_a327470 (neue Sperrung November 2021)
+#: by: https://pascalgrothe.de/sperrung-der-bahnuebergaenge-in-biesdorf-vom-8-11-bis-26-11/
+# REMOVED --- #: XXX bis wann ist der Bahnübergang gesperrt?
 #: also_indoor: search Oberfeldstraße Bahnübergang
 #: osm_watch: way id="868347101" version="3"
-#: priority: #A
-#: last_checked: 2021-03-31
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2021-07-01
+# REMOVED --- #: priority: #A --- #: last_checked: 2021-03-31 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2021-07-01
 	2::inwork 20627,12162 20624,12133 20620,12108
 EOF
      },
@@ -33315,8 +33313,8 @@ EOF
 EOF
      },
      { from  => 1627164000, # 2021-07-25 00:00
-       until => $isodate2epoch->("2021-11-06 17:00:00"),
-       text  => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 06.11.2021 17:00',
+       until => $isodate2epoch->("2021-11-30 17:00:00"),
+       text  => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 30.11.2021 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.326349,52.447526,26.07.2021,07:00',
        data  => <<EOF,

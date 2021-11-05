@@ -2802,6 +2802,7 @@ Am Dörferweg: wird die Straße verlängert?	?::projected 20998,18980 21039,18997
 Am Gehrensee: wird die Straße hier für Autos verlängert? bleibt der Fahrradweg, wird er zu einem Zweirichtungsradweg?	?::projected 21137,18782 21137,18782 21123,18813 21095,18874 21068,18934 21039,18997 21039,18997
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9074 vvv
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/9746yP6YIftgfYZtRGYpFGY8f6vXCcIyTGKHemqm/dQOYtRaW/95-Anlagen/02/AnlageBEStrassennamen.pdf vvv
+#: by: https://www.berliner-woche.de/falkenberg/c-verkehr/namen-fuer-neue-strassen-vergeben_a326990 (BVV-Beschluss)
 #: XXX fehlen alle bei Berlin.coords.data vvv
 Emilie-Mayer-Weg: geplante Straße, genaue Lage, Qualität?	?::projected 20727,18576 20759,18589 20804,18609 20852,18629 20883,18642 20874,18704
 Unkenpfad: geplante Straße, genaue Lage, Qualität?	?::projected 20759,18589 20736,18647
@@ -3868,7 +3869,7 @@ Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9623 (Runder Tisch)
 #: priority: #C vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2021-07-09 (bw) vvv
+#: last_checked: 2021-11-05 (indoor) vvv
 #: check_frequency: 120d vvv
 #: also_indoor: search Schildower_Straße
 Schildower Str.: wird hier ein modaler Filter entstehen?	? 4914,24366 4898,24351
@@ -7152,6 +7153,7 @@ Waldstr.: während der Bauarbeiten zur neuen Anschlussstelle vermutlich gesperrt	
 #: by: https://www.berliner-woche.de/buckow/c-bauen/klimapreis-fuer-stadt-und-land_a314340
 #: by: https://abendblatt-berlin.de/2021/09/03/900-neue-wohnungen-spatenstich-auf-den-buckower-feldern/ (bis Ende 2024, erste Wohnungen im Frühjahr 2023 bezugsfertig)
 #: by: https://www.stadtundland.de/Bauen/Neubau/Neukoelln/im-bau/Buckower-Felder.php.media/110669/Entwicklungsleitfaden_Stand_Juli_2019.pdf
+#: by: https://www.berliner-woche.de/buckow/c-bauen/stadt-und-land-hat-baufelder-an-gemeinwohlorientierte-dritte-vergeben_a327365 (erster Bauabschnitt soll 2024 fertig sein)
 #: XXX mögliche Straßennamen (laut bw):
 #: XXX * An den Buckower Feldern
 #: XXX * Gensweg
@@ -7617,6 +7619,7 @@ Spreebordpark: werden hier Wege entstehen?	? 4305,12927 4326,12673 4415,12661 43
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_47_5497_5582_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/strasse-entsteht-an-streuobstwiese_a295426
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_15_1089_1220_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_49_4457_4624_online.pdf (Straßenbenennung, Grundstücksnummerierungen)
 #: XXX Wiese ist eingezäunt, noch keine Hochbauten zu sehen (Stand April 2021)
 #: XXX Privatstraße, fehlt bei Berlin.coords.data
 #: last_checked: 2021-10-03 (mapillary)
@@ -7795,6 +7798,13 @@ Am Sandhaus: werden hier neue Straßen entstehen?	? 14889,25937 15022,25846 15107
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-fuer-meinberlin/unterlagen/karten-und-plaene/8-102_fbb_05-blatt2.pdf
 #: next_check: 2025-06-30
 Bebauungsplan 8-102 ("Ehemaliger NME-Bahnhof Rudow"): wird es hier eine Wegverbindung geben?	? 16512,920 16672,556
+# 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_49_4457_4624_online.pdf (Grundstücksnummerierungen)
+#: XXX wird die KGA an dieser Stelle aufgegeben?
+#: osm_watch: way id="293943813" version="3"
+#: last_checked: 2021-10-10 (mapillary)
+#: check_frequency: 180d
+Planstraße H: vermutlich entsteht hier eine neue Straße, genaue Lage, Qualität?	? 9250,21221 9268,21146
 # 
 #: ignore ^^^
 #: section ^^^
