@@ -193,6 +193,9 @@ function doLeaflet() {
     var bbbikeAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="http://bbbike.de">Slaven Rezi\u0107</a>';
     var bbbikeTileLayer = new L.TileLayer(bbbikeOrgMapnikGermanUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
+    var bbbike04TileLayer = new L.TileLayer(bbbikeOrgMapnikGermanUrl, {maxZoom: 18, attribution: bbbikeAttribution});
+    bbbike04TileLayer.setOpacity(0.4);
+
     var bbbikeOrgSmoothnessUrl = smoothness_map_url + '/{z}/{x}/{y}.png';
     var bbbikeSmoothnessTileLayer = new L.TileLayer(bbbikeOrgSmoothnessUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
@@ -304,6 +307,7 @@ function doLeaflet() {
 
     var baseMapDefs = [
 	 {label:"BBBike",        layer:bbbikeTileLayer,       abbrev:'B',  inControl:true  }
+	,{label:"BBBike (dull)", layer:bbbike04TileLayer,     abbrev:'B04',inControl:false }
 	,{label:"OSM",           layer:osmTileLayer,          abbrev:'O',  inControl:true  }
 	,{label:"CyclOSM",       layer:cyclosmTileLayer,      abbrev:'C',  inControl:true  }
 	,{label:"OSM B/W",       layer:osmMapnikBWTileLayer,  abbrev:'BW', inControl:false }
