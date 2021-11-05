@@ -319,7 +319,7 @@ function doLeaflet() {
     }
     var baseMaps = {};
     for(var i=0; i<baseMapDefs.length; i++) {
-	if (baseMapDefs[i].inControl) {
+	if (baseMapDefs[i].inControl || (initBaseMapAbbrev && initBaseMapAbbrev == baseMapDefs[i].abbrev)) {
 	    baseMaps[baseMapDefs[i].label] = baseMapDefs[i].layer;
 	}
     }
@@ -349,9 +349,6 @@ function doLeaflet() {
 	for(var i=0; i<baseMapDefs.length; i++) {
 	    if (initBaseMapAbbrev == baseMapDefs[i].abbrev) {
 		initTileLayer = baseMapDefs[i].layer;
-		if (!baseMapDefs[i].inControl) {
-		    layersControl.addBaseLayer(baseMapDefs[i].layer, baseMapDefs[i].label);
-		}
 		break;
 	    }
 	}
