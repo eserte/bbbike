@@ -1315,11 +1315,13 @@ ${i:S/.bbd$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}: ${PERSISTENTTMPDIR}/$i
 # Works only for cgi-bin layout (like on bbbike.de)
 # Once synced, URL will be
 #   http://bbbike.de/BBBike/tmp/bbbgeojsonp/index.html
+# The coordinate in the index file is generated using
+#    perl -MGeography::Berlin_DE -E '$"=","; say Geography::Berlin_DE->new->center_wgs84'
 ${BBBGEOJSONPDIR}/index.html:	${BBBGEOJSONP_TARGETS}
 	@mkdir -p ${BBBGEOJSONPDIR}
 	echo '<ul>' > $@~
 .for i in ${BBBGEOJSONP_TARGETS}
-	echo ' <li><a href="/cgi-bin/bbbikeleaflet.cgi?geojsonp_url=/BBBike/tmp/bbbgeojsonp/${i:T:S/.bbd$//}">${i:T:S/.bbbgeojsonp//:S/.bbd$//}</a>' >> $@~
+	echo ' <li><a href="/cgi-bin/bbbikeleaflet.cgi?geojsonp_url=/BBBike/tmp/bbbgeojsonp/${i:T:S/.bbd$//}&zoom=12&lat=52.51617&lon=13.377417">${i:T:S/.bbbgeojsonp//:S/.bbd$//}</a>' >> $@~
 .endfor
 	echo '</ul>' >> $@~
 	echo 'Last update: ' $$(date '+%F %T') >> $@~
