@@ -62,6 +62,7 @@ my $str_total_total_len = 0;
 	$s = Strassen->new(@strfile);
 	if (($s->get_global_directives->{map}->[0]||'') eq 'polar') {
 	    warn qq{NOTE: Turning on "polar" hack...\n};
+	    no warnings 'redefine';
 	    *Strassen::Util::strecke_s = \&Strassen::Util::strecke_s_polar;
 	    *Strassen::Util::strecke   = \&Strassen::Util::strecke_polar;
 	}
