@@ -526,8 +526,8 @@ Torstr. (Straßenbahntrasse)	3nocross::ignrte 11160,13492 11117,13521 10898,13632
 Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5331,8012 5304,8088 5304,8144 5354,8236
 Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7915 5346,7860
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10878,12560 10804,12461
-Grunerstr. (Richtungsfahrbahn)	1::igndisp 10804,12461 10876,12563 10953,12638 11055,12717 11105,12764
-Grunerstr. (Mittelstreifen)	3nocross::ignrte 11105,12764 11055,12717 10953,12638 10876,12563 10804,12461
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 10804,12461 10868,12572 10953,12638 11055,12717 11105,12764
+Grunerstr. (Mittelstreifen)	3nocross::ignrte 11105,12764 11055,12717 10953,12638 10868,12572 10804,12461
 Dircksenstr. (Mittelstreifen/Straßentunnel)	2::igndisp 11057,12715 11055,12717
 Badstr. (Richtungsfahrbahn)	1::igndisp 8659,16327 8543,16364 8516,16393 8486,16425
 Badstr. (Richtungsfahrbahn)	1::igndisp 8486,16425 8518,16394 8544,16365 8659,16327
@@ -693,7 +693,7 @@ Halskesteig	1 1058,14459 1157,14459
 Hefnersteig	1 1364,14191 1392,14287 1420,14369
 Bödikersteig	1 1141,14237 1182,14384
 Dorfstr. (Rahnsdorf)	1 29998,3170 29921,3079 29902,3104 29998,3170
-Grunerstr. - Gustav-Böß-Str.	1 10772,12515 10953,12638
+Grunerstr. - Gustav-Böß-Str.	1 10772,12515 10868,12572
 Grumbkowstr.	1 11555,20051 11627,19907 11695,19760
 Hardangerstr.	1 11725,16630 11720,16752
 (Weg)	2 14432,20188 14650,19956
@@ -3195,7 +3195,6 @@ Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun 
 Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18722,4628 18656,4687
 Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,4678
 Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,4817 18306,4753 18331,4744 18497,4529
-Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s 13886,10939 13856,10864
 Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12165,8566 12287,8602
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9468,-85 9271,323 9253,370 9218,458 9178,556
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9271,323 9296,335 9249,434 9218,458
@@ -3228,7 +3227,7 @@ Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285 10675,12280
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 Johannisstr.: Einbahnstraße	1s:inwork 9588,13174 9385,13174
-Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7769,4315 7727,4418 7692,4464 7667,4549
+Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
 Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
 Ringelblumenweg: Bauarbeiten, Straße gesperrt	2::inwork 21595,271 21618,193
 Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,8278

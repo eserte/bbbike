@@ -774,7 +774,7 @@ Schranke	3 * 10559,2252 *
 Einfahrt verboten	3 * 9561,-748 9340,-829
 Tordurchfahrt nur für Radfahrer/Fußgänger	3 11721,-351 11712,-289 11242,-332
 Tordurchfahrt nur für Radfahrer/Fußgänger	3 11242,-332 11712,-289 11721,-351
-Sächsische Str.	1 4550,9539 4533,9400
+Sächsische Str.	1 4550,9539 4517,9401
 Legiendamm	1 11159,10769 11189,10831
 Mariendorfer Damm: Mittelstreifen	3nocross 10067,1939 10127,1778 10172,1657 10226,1515
 #: note: für Radfahrer (auch mit Anhänger) breit genug
@@ -969,7 +969,7 @@ Hasenheide: Mittelstreifen	3nocross 11136,9183 11108,9187 10951,9216 10713,9260
 Rüdesheimer Str.	1 4317,7069 4393,7266
 Deidesheimer Str.	1 4978,7530 4785,7518 4616,7563 4486,7597
 #: note: Überquerungsmöglichkeit für Fußgänger/Radfahrer
-Brandenburgische Str.: Mittelstreifen	3nocross 4462,9166 4609,9027 4701,8941
+Brandenburgische Str.: Mittelstreifen	3nocross 4467,9163 4609,9027 4701,8941
 #: note: auch keine Überquerungsmöglichkeit für Fußgänger, Umweg über Ampel erforderlich
 Blissestr.: Mittelstreifen	3nocross 4783,8557 4772,8599 4777,8731
 #: note: Radfahrer können den Gehweg durch die Grünfläche nutzen
@@ -1509,8 +1509,7 @@ Groß-Berliner Damm: Straßenbahntrasse	3nocross 17879,4910 17951,4785 18042,4667
 Ahornallee	1 1586,11483 1566,11409 1574,11379
 # 
 #: by: https://viz.berlin.de/2021/07/spittelmarkt/
-#: last_checked: 2021-10-26
-# REMOVED --- #: next_check: 2021-07-29
-# XXX: wird auch die andere Einfahrt gesperrt werden?
-Niederwallstr.: gesperrt für alle Fahrzeuge außer Radfahrer	1 10205,11758 10238,11741
+# REMOVED --- #: last_checked: 2021-10-26 --- #: next_check: 2021-07-29
+#: note: von Norden ein explizites "Verboten für Fahrzeuge aller Art"-Schild, von Süden über die vorgeschriebene Fahrtrichtungen geregelt
+Niederwallstr.: gesperrt für alle Fahrzeuge außer Radfahrer	2 10205,11758 10238,11741
 # 

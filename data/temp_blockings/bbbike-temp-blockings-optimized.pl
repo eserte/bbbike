@@ -4014,7 +4014,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-10-13
+#: last_checked: 2021-11-06
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4268,11 +4268,11 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: also_indoor: traffic (G)
-#: osm_watch: way id="749226300" version="4"
-#: last_checked: 2021-07-18
+#: osm_watch: way id="749226300" version="5"
+#: last_checked: 2021-11-06
 #: check_frequency: 180d
-#: next_check: 2021-10-31
-	2::inwork 3079,5411 3209,5214
+# REMOVED --- #: next_check: 2021-10-31
+	2::inwork 3079,5411 3179,5267
 ',
          'from' => undef,
          'id' => 3143,
@@ -4351,7 +4351,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://pascalgrothe.de/sperrung-der-bahnuebergaenge-in-biesdorf-vom-8-11-bis-26-11/
 # REMOVED --- #: XXX es wird nochmal im zweiten Halbjahr 2021 eine zweiwöchige Sperrung geben
 #: also_indoor: search Brebacher_Weg Bahnübergang
-#: osm_watch: way id="9829824" version="20"
+# REMOVED --- #: osm_watch: way id="9829824" version="25"
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-03-31 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2021-07-01
 	2::inwork 21558,12073 21562,12088 21564,12097
 ',
@@ -4384,7 +4384,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-10-27
+#: last_checked: 2021-11-06
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 ',
@@ -4481,7 +4481,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
-#: osm_watch: way id="934995901" version="3"
+#: osm_watch: way id="934995901" version="4"
 #: last_checked: 2021-11-02 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
@@ -4648,7 +4648,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://pascalgrothe.de/sperrung-der-bahnuebergaenge-in-biesdorf-vom-8-11-bis-26-11/
 # REMOVED --- #: XXX bis wann ist der Bahnübergang gesperrt?
 #: also_indoor: search Oberfeldstraße Bahnübergang
-#: osm_watch: way id="868347101" version="3"
+# REMOVED --- #: osm_watch: way id="868347101" version="4"
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-03-31 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2021-07-01
 	2::inwork 20627,12162 20624,12133 20620,12108
 ',
@@ -4707,9 +4707,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: MAINZER-2021
 #: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022)
+#: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2021-09-27 (mapillary)
+#: last_checked: 2021-11-06
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -4812,15 +4813,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: reopened, es gibt wieder Bauzäune
 #: osm_watch: way id="152832871" version="16"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-09-06 (osm)
-#: check_frequency: 30d
-	2::inwork 4674,12076 4698,12124
+#: last_checked: 2021-11-06
+#: check_frequency: 60d
+	q4::inwork 4674,12076 4698,12124
 # REMOVED (hier nicht mehr) ---	q3::inwork 4698,12124 4755,12236
 ',
          'from' => undef,
          'id' => 3325,
-         'text' => 'Abbestr.: Bauarbeiten, Fahrbahn zwischen Guerickestr. und Fraunhoferstr. kann gesperrt sein, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
+         'text' => 'Abbestr.: Bauarbeiten, Fahrbahn zwischen Guerickestr. und Fraunhoferstr. kann gesperrt sein, ggfs. auf Bürgersteig ausweichen, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
          'until' => undef
        },
        undef,
@@ -4958,19 +4959,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer?
-#: note: 2021-07-26 ("Radfahrer frei"-Schilder fehlen weiterhin, aber manchmal scheint man auf dem noch existierenden Radstreifen gut durchzukommen), ebenso: 2021-08-31
-#: last_checked: 2021-10-07
-	q4::inwork; 9195,11972 9207,11880
-# REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
-',
-         'from' => undef,
-         'id' => 3360,
-         'text' => 'Glinkastr.: zwischen Jägerstr. und Mohrenstr. Richtung Süden offiziell Einbahnstraßenregelung für alle, es existiert aber eine Radspur',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '# REMOVED (hier wohl nicht?) ---	2::inwork 49011,71344 48996,71176 48982,71121 48929,70947
 #: also_indoor: traffic (G,H)
@@ -4995,9 +4984,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: add_fragezeichen: Wie lange gehen die Bauarbeiten?
+#: note: mittlerweile mit expliziten Radfahren-verboten-Schildern
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2021-09-26
+#: last_checked: 2021-11-06
 	q4::inwork 2523,5114 2746,5537
 ',
          'from' => undef,
@@ -5125,16 +5115,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: rbb
-	q4::inwork 3868,12401 3757,12372
-',
-         'from' => 1624917407,
-         'id' => 3399,
-         'text' => 'Alt-Lietzow: zwischen Wintersteinstr. und Arcostr. gesperrt, bis 05.11.2021) ',
-         'type' => 'handicap',
-         'until' => 1636153200
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: PICHELSDORFER-2021
@@ -5253,6 +5234,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
+#: also_indoor: traffic (G,H)
 #: last_checked: 2021-10-08
 #: check_frequency: 30d
 #: next_check: 2021-11-30
@@ -5380,10 +5362,11 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: DRESDNERBAHN-2021
 #: XXX Ursprünglich wurde 08/2021 als Beginn geplant, das hat sich aber um einen Monat verschoben --- vielleicht das Ende auch?
+#: note: Fertigstellung EÜ laut Baustellenschild 2023
 #: osm_watch: way id="229990468" version="6"
 #: add_fragezeichen: Bis wann genau geht die Sperrung?
-#: last_checked: 2021-09-18 (bahninfo-forum)
-#: next_check: 2021-11-01
+#: last_checked: 2021-11-06
+#: next_check: 2021-11-30
 	2::inwork 7673,4223 7769,4315
 ',
          'from' => 1630965600,
@@ -5635,6 +5618,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Bamme - Rathenow: Brückenneubau, Sperrung vom 06.04.2021 bis 08.09.2022',
          'type' => 'gesperrt',
          'until' => 1662674400
+       },
+       {
+         'data' => '	q3::inwork; 5417,11949 5518,12159
+	q2::inwork 5518,12159 5317,12242
+',
+         'from' => 1636213666,
+         'id' => 3476,
+         'text' => 'Englische Str. und Gutenbergstr.: Bauarbeiten, Einbahnstraßenregelung (Englische Str.) und Fahrbahn komplett gesperrt (Gutenbergstr.), voraussichtlich bis 23.12.2021',
+         'type' => 'handicap',
+         'until' => 1640300400
        }
      
 );

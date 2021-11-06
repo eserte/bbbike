@@ -23,7 +23,7 @@ Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,
 Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
-(Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10953,12638 10772,12515
+(Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10364,11896 10332,11929 10392,11991
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit für Radfahrer verboten	q4::inwork 8737,12098 8783,11959
@@ -49,6 +49,8 @@ Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweich
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3::inwork 7126,9825 7118,9870
 Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3898,4490
+Enzianstr.: Einbahnstraßenregelung	q2::inwork; 3806,4628 3839,4577
+Enzianstr.: Einbahnstraßenregelung	q3::inwork; 3839,4577 3867,4537
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4::inwork 12556,15518 12605,15491 12621,15482
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
@@ -326,7 +328,7 @@ Südstern: Fußgänger	q3 10749,9342 10741,9344 10695,9315 10656,9333 10647,9337
 Görlitzer Ufer: Bordsteine	q3 13275,10055 13283,10069
 Ruhlsdorfer Str.: Bordstein	q3 9350,10176 9368,10211
 (Olivaer Platz, Wielandstr. - Bayerische Str.): Fußgänger, Bordstein	q3 4360,10320 4352,10260
-(Güntzelstr. - Pommersche Str.): Fußgänger	q3 4708,9498 4550,9539
+(Güntzelstr. - Pommersche Str.): Fußgänger	q3 4699,9505 4550,9539
 Naunynstr.: Fußgänger	q1 11365,10791 11329,10785
 Spreepromenade am DomAquarée: Fußgänger, Cafés, Radfahren verboten	q4 10300,12587 10291,12600 10249,12658 10219,12701 10166,12777
 St.-Wolfgang-Str.: Fußgänger, Cafés	q3 10219,12701 10285,12744 10360,12793
@@ -1626,7 +1628,7 @@ Einbecker Str.: einige Fußgänger	q1 17734,11408 17764,11371
 Greifenhagener Str.: einige Fußgänger	q1 11150,15908 11176,15958
 Am Landwehrkanal: einige Fußgänger	q1 12897,9365 12889,9426 12905,9470 13109,9743 13225,9897 13271,9927 13333,9929
 Knobelsdorffstr.: einige Moabiter Kissen	q0 3117,11852 2953,11830 2728,11805 2547,11788
-Wegenerstr.: ein Moabiter Kissen	q0 4477,9176 4619,9200
+Wegenerstr.: ein Moabiter Kissen	q0 4495,9184 4619,9200
 Sigmaringer Str.: ein Moabiter Kissen	q0 4700,9179 4715,8977
 (Wittenauer Str. - Zabel-Krüger-Damm): einige Fußgänger	q1 6278,22615 6257,22632 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
 (Rummelsburger Ufer - Hauptstr.): einige Fußgänger	q1 15249,10564 15307,10701
@@ -2140,6 +2142,7 @@ Gertrud-Hanna-Promenade: Fußgänger, Bordsteine	q4 8548,7384 8603,7452
 Breslauer Platz/Lauterstr.: Fußgängerzone, Radfahrer frei	q3; 5810,7337 5817,7223
 Krautstr.: Fußgängerzone, Radfahrer frei	q2 12002,12008 12021,12066
 Waldeyerstr.: Fußgängerzone, Radfahrer frei	q2 15003,12241 15058,12329
+Danneckerstr.: Fußgängerzone, Radfahrer frei	q2 13886,10939 13856,10864
 Mittelheide - S-Bhf. Hirschgarten: schmal, einige Fußgänger	q2 24089,6144 24060,6059 23951,6063
 Puschkinallee [Nebenstraße]: Fußgänger	q3 14152,9746 14196,9749
 (Bouchéstr. - Puschkinallee, Nebenstraße): Fußgänger	q3 13890,9894 13914,9910
@@ -3123,7 +3126,6 @@ Walter-Friedrich-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::ignd
 Neuenhagener Str. (Mahlsdorf): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 24362,11954 24317,11754
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8376,6579 -8354,6590
 Seekorso: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -8339,6578 -8364,6562
-Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt: gesperrt, ggfs. schieben	q4::igndisp 13886,10939 13856,10864
 Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt: gesperrt, ggfs. schieben	q4:inwork::igndisp 9076,12054 9064,12156
 Kreuzung Sewanstr./Am Tierpark	q1::igndisp; 18631,10167 18647,10172
 Am Tierpark, linker Gehweg	q1::igndisp; 18647,10172 18715,10003
@@ -3176,7 +3178,7 @@ Greifswalder Str., linker Gehweg	q3::igndisp; 12584,14928 12563,14860
 Buschkrugallee, linker Radweg	q1::igndisp; 14111,4181 14119,4153
 Michelangelostr., linker Gehweg	q3::igndisp; 13854,15129 13758,15009 13647,14912
 Adlergestell, linker Gehweg	q2::igndisp; 19345,4077 19472,3922
-Bundesallee/Spichernplatz, linker Gehweg bis Pariser Str.	q2::igndisp; 5435,9859 5423,9932
+Bundesallee/Spichernplatz, linker Gehweg bis Pariser Str.	q3::igndisp; 5435,9859 5423,9932
 Bundesallee/Spichernplatz, Radweg bis Nachodstr.	q0::igndisp; 5491,9935 5487,9864
 Buschkrugallee, linker Gehweg ab Fußgängerampel bis zur Bürgerstr.	q4::igndisp; 13316,6320 13283,6354
 Otto-Suhr-Allee, linker Gehweg bis zur Fußgängerfurt	q3::igndisp; 4608,11935 4653,11896

@@ -775,16 +775,16 @@ Emser Str.	1 13051,7157 12872,7134
 Stuthirtenweg: Gitter	3 13450,1222 13542,1268 13580,1300
 Stuthirtenweg: Gitter	3 13580,1300 13542,1268 13450,1222
 Mittelstreifen	3nocross::ignrte 10738,12364 10804,12461 10878,12560 10954,12635
-Grunerstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10738,12364 10804,12461 10876,12563
+Grunerstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10738,12364 10804,12461 10868,12572
 Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10738,12364 10804,12461 10772,12515
 Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10878,12560 10804,12461 10831,12371
-Grunerstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10876,12563 10804,12461 10878,12560
-Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10876,12563 10804,12461 10831,12371
+Grunerstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10868,12572 10804,12461 10878,12560
+Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10868,12572 10804,12461 10831,12371
 Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10772,12515 10804,12461 10878,12560
-Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10772,12515 10804,12461 10876,12563
+Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10772,12515 10804,12461 10868,12572
 Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10772,12515 10804,12461 10831,12371
 Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10831,12371 10804,12461 10738,12364
-Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10831,12371 10804,12461 10876,12563
+Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10831,12371 10804,12461 10868,12572
 Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10831,12371 10804,12461 10772,12515
 Grunerstr. -> Klosterstr.: Mittelstreifen	3::igndisp 10954,12635 10878,12560 10952,12401
 Klosterstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10952,12401 10878,12560 10804,12461
@@ -1376,7 +1376,7 @@ Einfahrt verboten	3 9520,-641 9561,-748 9340,-829
 Einfahrt verboten	3 9598,-846 9561,-748 9340,-829
 Tordurchfahrt nur für Radfahrer/Fußgänger	3 11721,-351 11712,-289 11242,-332
 Tordurchfahrt nur für Radfahrer/Fußgänger	3 11242,-332 11712,-289 11721,-351
-Sächsische Str.	1 4550,9539 4533,9400
+Sächsische Str.	1 4550,9539 4517,9401
 Legiendamm	1 11159,10769 11189,10831
 Mittelstreifen	3nocross::ignrte 10067,1939 10127,1778 10172,1657 10226,1515
 Mariendorfer Damm -> Raucheckweg: Mittelstreifen	3::igndisp 10172,1657 10127,1778 10063,1759
@@ -1673,7 +1673,7 @@ Hasenheide -> Fichtestr.: Mittelstreifen	3::igndisp 10951,9216 11108,9187 11055,
 Fichtestr. -> Hasenheide: Mittelstreifen	3::igndisp 11055,9539 11108,9187 11136,9183
 Rüdesheimer Str.	1 4317,7069 4393,7266
 Deidesheimer Str.	1 4978,7530 4785,7518 4616,7563 4486,7597
-Mittelstreifen	3nocross::ignrte 4462,9166 4609,9027 4701,8941
+Mittelstreifen	3nocross::ignrte 4467,9163 4609,9027 4701,8941
 Gieselerstr. -> Brandenburgische Str.: Mittelstreifen	3::igndisp 4619,9200 4609,9027 4701,8941
 Mittelstreifen	3nocross::ignrte 4783,8557 4772,8599 4777,8731
 Blissestr. -> zur Mannheimer Str./Wilmersdorf: Mittelstreifen	3::igndisp 4783,8557 4772,8599 4456,8598
@@ -2189,4 +2189,4 @@ Pilotenstr. -> Groß-Berliner Damm: Straßenbahntrasse	3::igndisp 17868,4742 17951
 Groß-Berliner Damm -> Pilotenstr.: Straßenbahntrasse	3::igndisp 17879,4910 17951,4785 18031,4831
 Groß-Berliner Damm -> Pilotenstr.: Straßenbahntrasse	3::igndisp 18042,4667 17951,4785 17868,4742
 Ahornallee	1 1586,11483 1566,11409 1574,11379
-Niederwallstr.: gesperrt für alle Fahrzeuge außer Radfahrer	1 10205,11758 10238,11741
+Niederwallstr.: gesperrt für alle Fahrzeuge außer Radfahrer	2 10205,11758 10238,11741

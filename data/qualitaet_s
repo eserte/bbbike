@@ -1112,7 +1112,8 @@ Pr¸hﬂstr.: schlechtes Kopfsteinpflaster	Q3 9346,4144 9465,4173
 Pr¸hﬂstr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2 9465,4173 9580,4201 9869,4271
 Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
-Limonenstr.: Kopfsteinpflaster	Q2 3716,4764 3597,4941 3418,5088 3357,5178 3321,5212
+Limonenstr.: Kopfsteinpflaster	Q2 3716,4764 3597,4941 3418,5088 3357,5178
+Limonenstr.: Kleinsteinpflaster	Q1 3357,5178 3328,5218
 Willdenowstr.: Kopfsteinpflaster	Q2 3826,4800 3684,4998 3426,5292
 Manteuffelstr.: Kopfsteinpflaster	Q2 4092,4217 4317,4378 4516,4483
 Haydnstr.: Kopfsteinpflaster	Q2 4516,4483 4613,4515 4681,4537
@@ -9322,16 +9323,17 @@ B‰kepark: provisorischer Asphalt, uneben	Q1 5131,4207 5161,4206 5239,4175 5282,4
 B‰kepark: wassergebundene Decke, etwas Schotter	Q1 5225,4095 5184,4161
 B‰kepark: Asphalt	Q0 5184,4161 5131,4207
 B‰kepark: provisorischer Asphalt, uneben	Q1 5131,4207 5097,4221 5063,4266
-(Ehrenbergstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13596,10722 13582,10702
-(Ehrenbergstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13582,10702 13542,10695
-(Ehrenbergstr. - ehem. Osthafen): Beton mit Schienen	Q2 13542,10695 13531,10673
+(Ehrenbergstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13596,10722 13585,10693
+(Ehrenbergstr. - ehem. Osthafen): Beton mit Schienen	Q2 13558,10704 13531,10673
+(Modersohnstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13919,10583 13902,10546
+(ehem. Osthafen): Kopfsteinpflaster	Q2 13338,10801 13558,10704 13585,10693 13902,10546 13981,10499 14204,10397 14226,10387 14388,10307
 (am ehem. Osthafen): Groﬂsteinpflaster/Kleinsteinpflaster	Q2 13326,10765 13531,10673
 (am ehem. Osthafen): Beton	Q1 13531,10673 13527,10660 13679,10589
 (am ehem. Osthafen): Kopfsteinpflaster	Q2 13679,10589 13756,10554
 (am ehem. Osthafen): Beton	Q0 13756,10554 13805,10528
 (am ehem. Osthafen): Kopfsteinpflaster	Q2 13805,10528 13824,10521
 (am ehem. Osthafen): Beton	Q0 13824,10521 13944,10464 14207,10338 14361,10259 14462,10206 14480,10157
-(Bossestr. - ehem. Osthafen): Kopfsteinpflaster	Q2 14218,10430 14204,10397 14226,10387
+(Bossestr. - ehem. Osthafen): Kopfsteinpflaster	Q2 14218,10430 14204,10397
 (Bossestr. - ehem. Osthafen): Beton mit Schienen	Q2 14226,10387 14207,10338
 (KGA Neu Berlin): Gehwegplatten	Q1 13636,14900 13699,14801 13704,14780 13759,14723 13759,14706 13776,14675 13765,14665
 (Steengravenweg - KGA Neu Berlin): Gehwegplatten	Q1 13733,14813 13704,14780
@@ -9997,7 +9999,7 @@ Hellersdorfer Str.: Verbundsteinpflaster	Q1 22981,13966 22987,13989
 (Alte Hellersdorfer Str. - Gottfried-Funeck-Weg): Asphalt	Q0 23018,14251 22967,14129 22903,14063 22854,14018
 (Hellersdorfer Str. - Wuhlewanderweg): Asphalt	Q0 23081,14418 23030,14424 23001,14445 22938,14465 22868,14477
 Melanchthonstr.: Beton/Verbundsteinpflaster	Q1 25287,13464 25325,13543
-(Fehrbelliner Platz): welliges Verbundsteinpflaster	Q1 4417,9340 4427,9305 4428,9283 4414,9255 4396,9237
+(Fehrbelliner Platz): welliges Verbundsteinpflaster	Q1 4415,9343 4427,9305 4428,9283 4414,9255 4396,9237
 (Spreebogen): Verbundsteinpflaster	Q1 6183,13083 6207,13093 6289,13081
 (Spreebogen): Asphalt	Q0 6289,13081 6417,13052
 (Spreeuferweg - Joachim-Karnatz-Allee/Paulstr.): leicht welliger Asphalt	Q0 6859,12567 6988,12559 7064,12560 7077,12575
@@ -10766,6 +10768,7 @@ Hauptstr. [23 D-H]: Verbundsteinpflaster	Q1 -7884,13614 -7906,13549 -7925,13550
 (Ludwig-Lesser-Park - Am Poloplatz): unbefestigter Weg, gut befahrbar	Q1 2204,26290 2199,26440 2199,26450
 (Bornitzstr. - Straﬂe 15): Verbundsteinpflaster	Q1 16439,12872 16440,12895
 (Bornitzstr. - Straﬂe 15): Kopfsteinpflaster	Q2 16440,12895 16439,12979
+Messelstr.: vereinzelte Hebungen und Sch‰den, kˆnnen aber gut umfahren werden	Q0 2606,6708 2403,6962 2304,7059 2139,7239 2017,7412 1956,7453
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straﬂe 77 (Franzˆsisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straﬂe 77 (Franzˆsisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11821,7 +11824,7 @@ An der Wildbahn: Verbundsteinpflaster	Q1 -1581,22553 -1447,22522 -1333,22495
 An der Wildbahn: Beton	Q0 -1333,22495 -1270,22480 -1221,22468
 An der Wildbahn: Asphalt mit Sch‰den	Q1 -1221,22468 -996,22416 -926,22399 -725,22355
 An der Wildbahn: Verbundsteinpflaster	Q1 -725,22355 -489,22295 -313,22233
-Gieselerstr.: Asphalt	Q0 4602,9439 4619,9200 4609,9027
+Gieselerstr.: Asphalt	Q0 4601,9449 4619,9200 4609,9027
 Hattenheimer Str. (Frohnau): Kleinpflastersteine	Q2 2673,25012 2907,24757
 Hubertusstr. (Steglitz): Asphalt	Q0 5254,5900 5099,5994
 Hessenallee: Asphalt	Q0 640,11676 640,11706 769,11770 881,11893
@@ -11874,16 +11877,17 @@ Drosselweg (Dahlem): Kopfsteinpflaster	Q2 2412,5901 2587,5908
 Finkenstr. (Dahlem): Asphalt	Q0 2513,6581 2430,6564 2281,6469 2173,6424 2039,6394 1970,6392 1904,6415
 Franz-Cornelsen-Weg: Asphalt	Q1 3594,7191 3596,7199 3612,7335
 Franz-Cornelsen-Weg: wassergebundene Decke	Q1 3612,7335 3619,7587
-Patschkauer Weg: Kopfsteinpflaster	Q2 2996,5005 3132,4803
+Patschkauer Weg: Kopfsteinpflaster	Q2 2992,5011 3132,4803
 Patschkauer Weg: schlechtes Kopfsteinpflaster	Q3 3132,4803 3325,4517
 Patschkauer Weg: Asphalt	Q0 3325,4517 3344,4488
 Reichensteiner Weg: Kopfsteinpflaster	Q3 3095,4680 3243,4469
 Reichensteiner Weg: Kopfsteinpflaster	Q2 3057,4731 3095,4680
 Wichernstr. (Dahlem): Kopfsteinpflaster	Q2 2937,4645 3037,4500 3097,4409
 Goﬂlerstr. (Dahlem): Kopfsteinpflaster	Q2 2673,4651 2762,4522 2858,4372 2941,4245
-Liebensteinstr.: Kopfsteinpflaster	Q1 3166,5119 3260,5023
-Kamillenstr.: Kopfsteinpflaster	Q1 3637,4680 3506,4885 3260,5023
-Malvenstr.: Kopfsteinpflaster	Q1 3506,4885 3597,4941 3684,4998
+Liebensteinstr.: Kopfsteinpflaster	Q1 3161,5123 3265,5030
+Kamillenstr.: Kopfsteinpflaster	Q1 3637,4680 3499,4881 3391,4950
+Kamillenstr.: schlechtes Kopfsteinpflaster	Q3 3391,4950 3265,5030
+Malvenstr.: Kopfsteinpflaster	Q1 3499,4881 3597,4941 3684,4998
 Treitschkestr.: asphaltiertes Kopfsteinpflaster	Q1 4846,6417 4630,6534 4500,6612
 Viktoriapark/Zimmermannstr. (Steglitz): kleinteiliges Pflaster	Q1 4954,5888 4981,5939 5013,6003
 Herrfurthstr. (Steglitz): Kopfsteinpflaster	Q2 4558,5863 4724,5782
@@ -11957,10 +11961,12 @@ Verl‰ngerte Uferpromenade: Asphalt	Q0 -9063,5946 -9078,5894 -9114,5784 -9134,565
 Corrensplatz: Kopfsteinpflaster	Q2 2445,4471 2532,4364
 Von-Laue-Str.: schlechtes Kopfsteinpflaster	Q3 2532,4364 2713,4087
 Boetticherstr.: Kopfsteinpflaster	Q3 2434,4299 2599,4018
-Schwendenerstr.: Asphalt	Q0 3426,5292 3321,5212
-Schwendenerstr.: Kopfsteinpflaster	Q2 3321,5212 3166,5119 3072,5062 2996,5005 2909,4934 2841,4793 2762,4713
+Schwendenerstr.: Asphalt	Q0 3426,5292 3328,5218
+Schwendenerstr.: unebenes Kleinsteinpflaster	Q2 3273,5214 3272,5200 3161,5123 3072,5062 2992,5011 2909,4934 2863,4877
+Schwendenerstr.: Asphalt	Q0 2863,4877 2830,4809 2816,4789
+Schwendenerstr.: unebenes Kleinsteinpflaster	Q2 2816,4789 2745,4729
 Takustr.: Asphalt	Q0 2909,5674 2958,5598
-Takustr.: Kleinsteinpflaster	Q1 2958,5598 3079,5411 3209,5214 3321,5212
+Takustr.: Kleinsteinpflaster	Q1 2958,5598 3079,5411 3179,5267 3226,5227 3273,5214 3328,5218
 Dahlemer Weg - J‰gerndorfer Str./Weiﬂwasserweg: Radweg mit Gehwegplatten	Q0 2149,2897 2199,2909
 J‰gerndorfer Str.: Asphalt	Q0 2192,2933 2188,2920 2199,2909
 Weiﬂwasserweg: Asphalt	Q0 2199,2909 2390,2954
