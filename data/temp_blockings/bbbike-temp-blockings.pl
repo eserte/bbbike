@@ -27396,7 +27396,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 2147342379
-#: source_id: LMS-BR_r_LMS-BR_127414_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_127414_LMS-BR_72 (inaktiv)
 	2::inwork 9014,898 9024,906 9058,932
 EOF
      },
