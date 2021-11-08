@@ -26194,6 +26194,7 @@ EOF
 #: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
 #: source_id: 2147341022
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
 #: priority: #A
 #: next_check: 2021-11-10
 	2::temp -2218,5133 -927,6888
@@ -31044,7 +31045,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="4"
-#: last_checked: 2021-11-02 vvv
+#: last_checked: 2021-11-08 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32183,7 +32184,7 @@ EOF
        source_id => '2147346268',
        data  => <<EOF,
 #: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021)
-#: last_checked: 2021-10-23 (mapillary)
+#: last_checked: 2021-11-07 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-11-25
 	q2::inwork 8913,16159 9099,16398
@@ -33708,7 +33709,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: XXX Wird nach den Bauarbeiten die Qualität der Fahrbahn besser sein? (jetzt: Q1)
-#: osm_watch: way id="10686356" version="18"
+#: osm_watch: way id="10686356" version="19"
 #: also_indoor: traffic (none)
 #: last_checked: 2021-10-10 (mapillary)
 	q4::inwork 13510,8138 13663,8011
@@ -33900,6 +33901,8 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1453699314891595779
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/bauarbeiten-in-der-muehlenstrasse_a327002
 #: source_id: viz2021:13.403429,52.56939,28.10.2021,06:00 (hier: bis 12.11.2021, und nur für Kfz-Verkehr gesperrt) (mittlerweile bis 9.11.2021)
+#: by: https://www.berliner-woche.de/altglienicke/c-verkehr/deckschicht-wird-runderneuert_a327095 (bis 30.11.2021)
+#: note: laut rbb vorzeitiges Ende am 9.11.2021
 	q3::inwork; 10240,18193 10355,17963 10459,17754
 EOF
      },

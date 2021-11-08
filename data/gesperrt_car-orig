@@ -1432,12 +1432,14 @@ Clayallee -> Sophie-Charlotte-Str.: Linksabbiegen verboten	3 1283,4260 1297,4311
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/krumme-strasse-fuer-autos-gesperrt_a308592
 #: by: https://abendblatt-berlin.de/2021/05/02/berlin-charlottenburg-kritik-an-sperrung-der-krummen-strasse/
 #: by: https://mein.berlin.de/projekte/verkehrskonzept-karl-august-kiez/?date=20210503 (bis 4.7.2021)
-#: XXX bleiben die Poller permanent? zurzeit Halteverbot bis Ende Oktober 2021 (laut osm)
+#: XXX bleiben die Poller permanent? zurzeit Halteverbot bis Ende Oktober 2021 (laut osm), nun bis Juni 2022 (laut Notiz)
 #: also_indoor: traffic (H)
 #: osm_watch: node id="8709493528" version="2"
 #: osm_watch: node id="8709493529" version="2"
 #: osm_watch: way id="940405708" version="2"
-#: last_checked: 2021-10-30 (traffic)
+#: osm_watch: note 2648361 15
+#: last_checked: 2021-11-07 (Halteverbote wurden verlängert, siehe Notiz)
+#: next_check: 2022-06-30
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-10-31
 Krumme Str.: Poller	3 * 3983,11289 *

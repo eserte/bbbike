@@ -23,7 +23,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12596,11696 124
 # 
 #: note: laut rbb bis 29.10.2021, laut Parkverbotsschilder bis 28.1.2022 vvv
 #: also_indoor: traffic (H(falsch),G(teilweise))
-#: last_checked: 2021-11-01 vvv
+#: last_checked: 2021-11-08 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-01-28 vvv
 Jessnerstr.: Sperrung der Fahrbahn nördlich der Oderstr.	q3::inwork 14946,11697 14986,11760
@@ -724,7 +724,7 @@ Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg
 #: XXX laut rbb (am 31.8.2021 entfernt) und Halteverbotsschildern bis 31.08.2021
 #: also_indoor: traffic (ex-H)
 #: priority: #B
-#: last_checked: 2021-10-15
+#: last_checked: 2021-11-08
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-08-31
 # REMOVED --- #: valid: -20210831
@@ -2809,6 +2809,7 @@ Georg-Steger-Weg: einige Fußgänger	q1 1493,2247 1480,2199 1452,2095 1461,2073 14
 (Grolmanstr./Goethestr. - Am Schillertheater): gemeinsamer Rad- und Gehweg, Fußgänger haben Vorrang	q1 4651,11368 4648,11445 4616,11507 4574,11587
 (Verlängerung Hiddenseestr.): Fußgänger	q2 10960,17674 10969,17587
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
+Schillingstr.: breiter Geh- und Radweg	q0- 11472,12406 11485,12391 11417,12243 11388,12202
 #: XXX_prog BS an der Schillingstr., ansonsten q1
 (Schillingstr. - Neue Blumenstr.): Bordstein, einige Fußgänger	q2 11596,12668 11712,12614
 (Wutzkyallee - Zwickauer Damm): einige Fußgänger	q1 15349,1614 15437,1613 15505,1591 15606,1537 15670,1474

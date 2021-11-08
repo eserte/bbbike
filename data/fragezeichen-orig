@@ -744,7 +744,7 @@ Köllnische Heide: Verbesserung der Befahrbarkeit geplant, genaue Lage des Forstw
 S Adlershof - Köpenicker Str.: eine neue Verbindung wird entstehen, wo genau?	?::projected 19938,3294 19938,3294 20139,3062 20485,2707
 # 
 #: XXX Ag.1
-#: osm_watch: way id="144909690" version="12"
+#: osm_watch: way id="144909690" version="13"
 #: last_checked: 2021-07-23
 #: check_frequency: 120d
 Köpenicker Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 20196,2392 20212,2354 20154,2283 20128,2271 20100,2247 19933,2078 19839,2015 19819,1980 19803,1911 19766,1796 19704,1621 19676,1577 19599,1557 19579,1543
@@ -2755,7 +2755,7 @@ Markelstr.: Verbindung durch die Grünfläche geplant	?::projected 4845,6532 4845,
 #: XXX Christian-Dohm-Weg (Querstraße im Norden), PLZ=13057
 #: XXX David-Friedländer-Weg (Querstraße in der Mitte), PLZ=13057
 #: XXX Karl-Philipp-Moritz-Weg (Querstraße im Süden), PLZ=13057
-#: XXX vermutlich Bebauungspläne XXII-39, XXII-39-1 VE und XXII-39-2
+#: XXX vermutlich Bebauungspläne XXII-39, XXII-39-1 VE (see elsewhere) und XXII-39-2
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036437163615/437163615/00222875/75-Anlagen/02/LageplanAmGehrensee.pdf (schlecht erkennbarer Lageplan)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_45_5121_5232_online.pdf (Benennung von Straßen)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Grundstücksnummerierungen)
@@ -2768,6 +2768,8 @@ Markelstr.: Verbindung durch die Grünfläche geplant	?::projected 4845,6532 4845,
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8899 (Aufstellungsbeschluss XXII-39-2)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_38_3493_3592_online.pdf (Grundstücksnummerierungen, Schilfanger ff.)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_45_4009_4092_online.pdf (Grundstücksnummerierungen, An den Auen)
+#: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/bebauungsplan.1139614.php (XXII-39-2, keine neuen relevanten Verkehrsflächen)
+#: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/planz_xxii_39_2.pdf
 #: last_checked: 2021-08-07 vvv
 #: check_frequency: 150d vvv
 #: osm_watch: way id="506201934" version="10"
@@ -4782,7 +4784,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1097928.php (Bauarbeiten ab Juli 2021, Abschluss voraussichtlich im November 2021)
 #: by: https://abendblatt-berlin.de/2021/06/29/stargarder-strasse-wird-fahrradstrasse/
 #: by: https://api.fixmyberlin.de/api/projects/184
-#: osm_watch: way id="11114397" version="29"
+#: osm_watch: way id="11114397" version="30"
 #: last_checked: 2021-10-12
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-11-30
@@ -5964,7 +5966,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Baubeginn Mitte 2021)
 #: XXX beide Fahrtrichtungen?
-#: last_checked: 2021-10-31
+#: last_checked: 2021-11-07
 #: check_frequency: 90d
 Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 # 
@@ -7847,6 +7849,13 @@ Schumacher-Quartier: neues Viertel entsteht	?::projected 3976,17559 4849,17312 4
 #: next_check: 2022-04-01
 # REMOVED --- #: next_check: 2026-12-31
 Urban Tech Republic: neue Bebauung	?::projected 2074,16367 3258,16711 3342,16123 2515,15917 2074,16367
+# 
+#: next_check_id: FALKENBERG-2021
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1143365.php
+#: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/bebauungsplan.1139441.php
+#: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/planz_xxii_39_1ve.pdf
+#: next_check: 2023-06-07
+Bebauungsplan XXII-39-1 VE: neue Straßen könnten hier entstehen	?::projected 20937,18702 21110,18773 21120,18722 20948,18655 20937,18702
 # 
 #: ignore ^^^
 #: section ^^^
