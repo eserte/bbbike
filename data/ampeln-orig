@@ -70,7 +70,7 @@ Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
 # 
 #: next_check_id: FRANZOESISCHE-2018
 #: osm_watch: node id="6380038401" version="1"
-#: last_checked: 2021-08-31
+#: last_checked: 2021-11-09
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 #: valid: -20220930
@@ -78,7 +78,7 @@ Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2021-11-06
+#: last_checked: 2021-11-09
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -2207,10 +2207,11 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 14170,10675
 # 
 #: next_check_id: FRIEDRICH-2020
-#: last_checked: 2021-11-06
+#: note: vorhandene Ampel ist dauerhaft abgeschaltet
+#: last_checked: 2021-11-09
 #: next_check: 2022-04-01
 # REMOVED --- #: valid: !20200821-20211031
-	X 9418,11804
+	X0 9418,11804
 # 
 # REMOVED (abgeschafft, seit Verschwenkung der Autobahnausfahrt) --- #: XXX wird diese Ampel abgeschafft oder bleibt sie als faktische Fußgängerampel bestehen? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02 ---	F 14153,6795
 #: by: Andreas Mühlhausen: vvv
@@ -2961,13 +2962,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: osm_watch: node id="5931765487" version="1"
 #: osm_watch: node id="5931765488" version="1"
-#: last_checked: 2021-11-03 (mapillary)
+#: last_checked: 2021-11-09
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2021-10-28 (mapillary) vvv
+#: last_checked: 2021-11-09 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

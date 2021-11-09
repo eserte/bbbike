@@ -191,7 +191,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 ### Mitte ###
 # 
 #: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2021-11-02 (mapillary)
+#: last_checked: 2021-11-09
 Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -229,7 +229,7 @@ Ida-von-Arnim-Str.: Bauarbeiten an der Kreuzung Chausseestr., Fahrbahn gesperrt	
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2021-10-08 vvv
+#: last_checked: 2021-11-09 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q2::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -240,7 +240,7 @@ Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,
 # 
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
-#: last_checked: 2021-10-07
+#: last_checked: 2021-11-09
 #: next_check: 2022-04-01
 # REMOVED --- #: valid: 20200821-20211031
 Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
@@ -375,7 +375,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2021-10-28 (mapillary) vvv
+#: last_checked: 2021-11-09 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -485,8 +485,8 @@ Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::i
 # 
 ### Kreuzberg ###
 # 
-#: note: kann außerhalb der Arbeitszeiten geöffnet sein (gesehen: 2021-10-19 gegen 19:00)
-#: last_checked: 2021-10-23
+#: note: kann außerhalb der Arbeitszeiten geöffnet sein (gesehen: 2021-10-19 gegen 19:00, 2021-11-09 gegen 18:10)
+#: last_checked: 2021-11-09
 #: check_frequency: 14d
 Böckhstr.: einige Meter der Fahrbahn gesperrt	q3::inwork 11411,9810 11197,9894
 # 
@@ -917,7 +917,8 @@ Säntisstr.: Bauarbeiten	q3 9058,932 9129,986
 (Wuhlewanderweg - Parchimer Str.): einige Fußgänger	q1+ 22031,12208 22080,12218
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9750,14132 9676,14046
-(Frankfurter Allee - Liebigstr.): Fußgänger	q2 13885,12279 13927,12370
+#: note: früher stand hier "q2", wäre das tatsächlich möglich gewesen?
+(Frankfurter Allee - Liebigstr.): Fußgänger	q4+ 13885,12279 13927,12370
 Otto-Ludwig-Str.: Fußgängerzone	q2 4857,10909 4930,10903
 #: XXX_prog BS Bordstein zur Friedrichstr., ansonsten q3 oder trotzdem q4 (wegen der vielen Touristen)
 Mauerstr. (Mitte): Touristen, Bordsteine	q4 9405,11413 9474,11360
@@ -1047,6 +1048,7 @@ Tiergarten: einige Fußgänger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575
 (Bremer Weg - Fasanerieallee): einige Fußgänger	q1 6337,11887 6379,11843 6395,11806 6417,11796 6438,11784 6540,11754
 (Bremer Weg/Löwenbrücke - Großer Weg): einige Fußgänger	q1 6395,11806 6353,11730
 (zum Rosengarten): einige Fußgänger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
+#: note: Radfahren aber erlaubt, laut Schild "mit Schrittgeschwindigkeit frei"
 Parkweg: enge Brücke, Fußweg	q2 14318,9688 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
 # REMOVED (nun ein offizieller markierter Radweg) --- Spittelmarkt: Gehweg	q1 10369,11728 10274,11737 10240,11740
 Hasenheide: Fußgänger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
@@ -1089,11 +1091,12 @@ Am Stichkanal: Fußgänger	q1 22759,4430 22797,4518
 # REMOVED --- #: next_check_id: MAUERPARK-2019 --- #: XXX nach den Bauarbeiten: handicap_s-orig-Eintrag unten wiederherstellen --- #: last_checked: 2020-03-15 --- Mauerpark: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 10210,15407 10188,15474
 Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10186,15481 10130,15653
 (Fußweg am Griesinger-Krankenhaus): Fußgänger	q1 21935,12153 21930,12185 21816,12233 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
-(Fußgängerbrücke Ostkreuz): Fußgänger	q3 14808,10978 14763,10987 14738,10892 14810,10832
-(Ringbahnsteig Ostkreuz): Fußgänger	q4 14810,10832 14816,10862 14839,10856 14847,10892 14864,10962 14851,10966
+#: note: eher wenige Fußgänger, q3 wäre theoretisch möglich
+(Fußgängerbrücke Ostkreuz): Fußgänger	q4+ 14808,10978 14763,10987 14738,10892 14810,10832
+(Ringbahnsteig Ostkreuz): sehr viele Fußgänger	q4- 14810,10832 14816,10862 14839,10856 14847,10892 14864,10962 14851,10966
 Marheinekeplatz: Fußgänger, Brunnen	q3 9892,9286 9880,9233
-#: note: zumindest auf der westlichen Seite existiert kein explizites Verbotsschild für Radfahrer
-(Uferweg am Urbanhafen): Fußgänger	q1 11160,9932 11142,9939 10914,9925 10602,10006 10522,10056 10500,10081
+#: note: zumindest auf der westlichen Seite existiert kein explizites Verbotsschild für Radfahrer, allerdings auch keine Freigabe unter dem Grünanlagenschild
+(Uferweg am Urbanhafen): Fußgänger	q2 11160,9932 11142,9939 10914,9925 10602,10006 10522,10056 10500,10081
 Bahnhofsgebäude	q4 7854,7572 7934,7621
 Bahnhofsgebäude	q4 7774,7724 7804,7783 7838,7848
 Fußgänger	q3 7934,7621 7919,7679
@@ -1168,9 +1171,12 @@ Markgrafenstr.: Gehweg	q3 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9536,11922 9666,11935
 Gendarmenmarkt: Fußgängerzone, ggfs. schieben	q3 9523,12019 9656,12031
 Am Volkspark: Parkweg	q1 5730,8207 5925,8219
-Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12878,12430 12950,12340 12985,12303
-#: XXX_prog: zusätzlich noch Bordsteine an der östlichen Seite (BS) (ohne Bordstein q2)
-Lange Str. [vor dem ehemaligen Kaufhof]: Fußgänger, Bordstein	q3 12413,11901 12522,11837
+Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12878,12430 12950,12340
+#: note: hier Lieferanteneinfahrt
+Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12950,12340 12985,12303
+#: XXX_prog: zusätzlich noch Bordsteine an der östlichen Seite (BS) (ohne Bordstein früher q2)
+#: note: relativ breit, kann manchmal stehen hier viele Menschen, theoretisch wäre q3 möglich
+Lange Str. [vor dem ehemaligen Kaufhof]: Fußgänger, Bordstein	q4+ 12413,11901 12522,11837
 Hermann-Stöhr-Platz: Fußgänger	q2 12453,11790 12413,11901
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q2 7485,8777 7531,8848
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q3 7531,8848 7563,8871
@@ -1310,8 +1316,8 @@ Helgoländer Ufer - Stromstr.: Fußgänger, Café	q3 6551,12901 6535,12934 6443,1295
 Helgoländer Ufer - Stromstr.: einige Fußgänger	q1 6271,12985 6289,13081
 Helgoländer Ufer - Stromstr.: einige Fußgänger	q1 6417,13052 6289,13081 6207,13093 6183,13083
 Bundesratufer: Rampe, Fußgänger	q2 6164,12980 6122,12971 6118,12980
-#: XXX_prog BS am Wendehammer und falls man die Fahrbahn der Stralauer Allee benutzen möchte, ansonsten q2 oder schlechter
-Lehmbruckstr.: Bordsteine	q3 13678,10685 13690,10715
+#: XXX_prog BS am Wendehammer und falls man die Fahrbahn der Stralauer Allee benutzen möchte, ansonsten (früher) q2 oder schlechter
+Lehmbruckstr.: Bordsteine	q4+ 13678,10685 13690,10715
 #: note: dieser Abschnitt ist legal befahrbar
 (Stadtpark Steglitz): Fußgänger	q1 5787,4400 5836,4469 5841,4557 5890,4674 5947,4791 6000,4846 6006,4852
 Barsekowstr.: Fußgänger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
@@ -1344,14 +1350,17 @@ Eisenbahnstr.: Fußgängerzone	q2 12294,10663 12274,10612
 Waldemarstr.: Fußgängerzone	q2 12172,10585 12142,10600
 #: XXX_prog BS Bordstein an der Falkenberger Chausse, ansonsten q2
 (Grünanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fußgänger, Bordstein	q3 17686,18172 17721,18001
-Erich-Steinfurth-Str.: Fußgänger	q2 12645,11673 12596,11696
+#: note: etwas weiter nördlich verläuft eine Servicestraße
+Erich-Steinfurth-Str.: Fußgänger	q3 12645,11673 12596,11696
 #: XXX_prog BS auf beiden Seiten Bordsteine, außerdem noch zwei Bordsteine beim Überqueren der Bouchéstr.; ansonsten Fußgänger, q3
 Elbingeroder Weg: hohe Bordsteine	q4 13178,9062 13146,9085
 #: XXX_prog BS niedriger Bordstein auf der südlichen Seite, keiner an der Kurfüstenstr. (ansonsten q2)
 (An der Apostelkirche - Kurfürstenstr.): Fußgänger, Bordstein	q3 7312,10505 7315,10537
 Marie-Elisabeth-Lüders-Steg: eng, Fußgänger	q2 8415,12749 8593,12742 8596,12760
 # REMOVED --- #: XXX_prog BS Bordstein höchstens auf der Westseite, auf der Ostseite abgesenkt, aber Gehweg ist ziemlich kurvig
-Kleine Andreasstr.: Gehweg	q3 12211,12128 12279,12113
+#: note: theoretisch q3 möglich
+Kleine Andreasstr.: Gehweg	q4+ 12211,12128 12279,12113
+#: note: keine Grünanlage, keine Beschilderung
 Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 #: XXX_prog Bordstein zur Parochialstr., die andere Seite ist abgesenkt (ansonsten q1 oder sogar besser)
 (Molkenmarkt - Parochialstr.): Bordstein	q2 10738,12364 10831,12371
@@ -1377,7 +1386,10 @@ Moorlake - Krughorn: Fußgänger, aber breite Straße	q0 -9629,1408 -9707,1414 -972
 Krughorn - Volkspark Klein-Glienicke: Fußgänger, besonders an schönen Tagen	q1 -10078,1551 -10163,1288 -10190,1185 -10198,1173 -10273,1088 -10430,848 -10512,683 -10573,564 -10593,476
 Moorlake - Pfaueninsel: Fußgänger, besonders an schönen Tagen	q1 -9629,1408 -9619,1478 -9654,1544 -9648,1629 -9632,1672 -9584,1703 -9511,1739 -9444,1820 -9401,1837 -9082,1813 -9002,1797 -8926,1814 -8861,1855 -8707,2062 -8636,2102 -8595,2148
 am Wirtshaus zur Pfaueninsel: Fußgänger, besonders an schönen Tagen	q2 -8595,2148 -8542,2216 -8468,2152
-Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13543,12326 13556,12302 13551,12266
+#: note: früher "q1", was vielleicht etwas optimistisch ist, keine Ausschilderung, unklare Lage
+Karl-Marx-Allee - Kadiner Str.: Fußgänger	q3 13543,12326 13556,12302 13551,12266
+#: note: früher ohne handicap-Eintrag, keine Ausschilderung, unklare Lage
+(Ludwig-Pick-Str. - Karl-Marx-Allee): einige Fußgänger	q1 13552,12435 13543,12326
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7926,12865 7907,12817
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7696,7562 7739,7531 7708,7539 7747,7521
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
@@ -1404,7 +1416,8 @@ Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 7908,12804 79
 #: note: Radfahren erlaubt:
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8257,13037 8277,13032 8317,13015 8408,12968 8464,12919 8498,12870 8529,12757 8538,12710 8574,12662 8635,12629 8754,12622
 Spreeuferweg: besonders an Wochenenden tagsüber viele Fußgänger	q1 8635,12629 8709,12605 8756,12608
-Helenenhof: enge Tore, Fußgänger	q3 14506,11275 14395,11356
+#: note: im Mittelteil theoretisch q3 oder q3- möglich
+Helenenhof: enge Tore, Fußgänger	q4+ 14506,11275 14395,11356
 Färberstr. - Uferweg: sehr eng	q2 21662,4974 21670,4997 21665,5035 21696,5053
 Uferweg, Mentzelpark: Fußgänger	q1 21476,5434 21512,5404 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
 Uferweg, Mentzelpark: Fußgänger, eng	q3 21761,4979 21821,4918 21834,4889
@@ -1649,11 +1662,13 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 #: XXX_prog BS am östlichen Ende, am westlichen ist abgesenkt, ansonsten q2
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fußgänger	q3 11236,11508 11174,11554
 #: XXX_prog BS am westlichen Ende, östliches ist leicht abgesenkt und eigentlich kein Problem (wenn es nicht zugeparkt ist)
+#: XXX Verbindung prüfen!
 (Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q2 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Fußgänger, Bäume	q3 12845,9304 12862,9273 12909,9085 12902,9066
 (an der Notfallaufnahme Charité): Notfallwagen, Fußgänger	q2 8833,13440 8836,13396 8806,13384 8736,13369 8665,13353
-#: XXX_prog BS am westlichen Ende, am östlichen existiert eine Bordsteinabsenkung; ansonsten q2
-(Lasdehner Str. - Gubener Str.): Fußgänger, Bordsteine	q3 13375,12062 13339,12029
+#: XXX_prog BS am westlichen Ende, am östlichen existiert eine Bordsteinabsenkung; ansonsten (früher) q2
+#: note: theoretisch q3 möglich
+(Lasdehner Str. - Gubener Str.): Fußgänger, Bordsteine	q4+ 13375,12062 13339,12029
 # REMOVED (paralleler Radweg existiert) --- Straßenbahntrasse zum Alex: Bodenschwellen und Schienen	q1- 11139,13008 11191,13080
 Perleberger - Kieler: unterhalb der Brücke sehr eng	q3 7636,14414 7612,14449
 Ida-Wolff-Platz: Fußgänger	q2 9215,10607 9192,10528
@@ -1661,7 +1676,8 @@ Falkstr.: Fußgänger	q1 12179,7979 12216,7838 12220,7822
 (Falkstr. - Mittelweg): gemeinsamer Fuß- und Radweg	q1 12220,7822 12224,7799
 (Platanenweg - Willi-Sänger-Str.): Fußgänger	q1 15787,8073 15808,8099 15843,8125
 Carl-Herz-Ufer: gemeinsamer Fuß- und Radweg	q0- 10066,10071 10168,10085
-Am Landwehrkanal: Fußgänger	q2 10069,10151 10158,10117 10168,10085
+#: note: Schild steht zumindest am westlichen Ende
+Am Landwehrkanal: gemeinsamer Fuß- und Radweg	q2 10069,10151 10158,10117 10168,10085
 Münsterberger Weg: gemeinsamer Fuß- und Radweg	q1 23225,11649 23032,11729
 # REMOVED --- Münsterberger Weg: gemeinsamer Fuß- und Radweg	q1 23032,11729 22999,11725 22886,11776
 Münsterberger Weg: gemeinsamer Fuß- und Radweg	q1 22886,11776 22701,11843
@@ -1685,7 +1701,8 @@ Kätchenweg: sehr eng	q2 -6975,-1250 -6914,-1218
 Grassoweg: Gehweg für Radfahrer freigegeben	q1 -6193,1097 -6216,1192
 Nikolassteig: für Radfahrer nicht freigegeben, ggfs. schieben	q3 -3931,1637 -3872,1716
 #: XXX_prog BS 1x an Fischzug Richtung Süden
-Engelwiese: für Radfahrer nicht freigegeben, ggfs. schieben	q3 14974,10018 15050,10160 15054,10168 15097,10255 15101,10263
+#: note: theoretisch wäre mindestens q3 möglich
+Engelwiese: für Radfahrer nicht freigegeben, ggfs. schieben	q4+ 14974,10018 15050,10160 15054,10168 15097,10255 15101,10263
 Dora-Benjamin-Park: Bordstein bei der Einfahrt	q1 14705,10149 14621,10062
 Dora-Benjamin-Park: Bordstein bei der Einfahrt	q1 14747,10108 14702,10020
 (Dora-Benjamin-Park - Spreeufer): Fußgänger	q1 14702,10020 14690,9993
@@ -1703,11 +1720,13 @@ Uferweg: Fußgänger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fußgänger	q2 4456,12918 4514,12936 4581,13066 4582,13086 4576,13121 4592,13127 4613,13210 4617,13243
 # REMOVED (keine Fahrbahn mehr, nur der obere Uferweg) --- Bundesratufer: Fußgänger	q4 5938,12848 5922,12765
 # REMOVED --- (provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q3 14712,11039 14727,11005 14808,10978
-(Ostkreuz, Zugang Marktstr.): Fußgängerschutztunnel, Radfahrer sollen absteigen	q3 15069,10927 15054,10910 14945,10945
-(Ostkreuz, Zugang Marktstr.): Fußgänger	q3 14945,10945 14902,10967
-(Ostkreuz, Zugang Marktstr.): Fußgänger	q3- 14902,10967 14808,10978
-(Neue Bahnhofstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q3- 14798,11058 14809,11037 14808,10978
-(Sonntagstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q3- 14760,11044 14808,10978 14851,10966
+#: note: noch ist hier noch nicht so viel Fußgängerverkehr --- q3 oder manchmal gar q2 theoretisch möglich
+(Ostkreuz, Zugang Marktstr.): Fußgängerschutztunnel, Radfahrer sollen absteigen	q4+ 15069,10927 15054,10910 14945,10945
+#: note: hier auch noch nicht so viele Fußgänger --- theoretisch q3 möglich
+(Ostkreuz, Zugang Marktstr.): Fußgänger	q4+ 14945,10945 14902,10967
+(Ostkreuz, Zugang Marktstr.): Fußgänger	q4+ 14902,10967 14808,10978
+(Neue Bahnhofstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q4+ 14798,11058 14809,11037 14808,10978
+(Sonntagstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q4+ 14760,11044 14808,10978 14851,10966
 #: XXX_prog: für Anhänger relevant (q2 oder so)
 Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14996,12462 14801,12517
 #: XXX_prog: für Anhänger relevant (q2 oder so)
@@ -1786,7 +1805,7 @@ Karl-Vesper-Str.: enge Straße	q1 14184,13670 14205,13755 14263,13739
 #: XXX_prog: BS (am südlichen Ende) (ansonsten wohl q1)
 (Karl-Vesper-Str. - Landsberger Allee): Fußgänger, Bordstein	q2 14205,13755 14218,13834
 Mahlerstr.: Fußgängerzone, Radfahrer frei	q2 13739,15643 13714,15709
-Fußgängerbrücke Storkower Str.: Fußgänger	q3 14481,13143 14524,13271 14530,13269
+Fußgängerbrücke Storkower Str.: Fußgänger	q4+ 14481,13143 14524,13271 14530,13269
 #: XXX_prog: BS (an der Straßenseite)
 (Fußgängerbrücke Storkower Str.): Bordstein	q3 14465,13138 14481,13143
 #: XXX_prog: BS an der Rennbahnstr.
@@ -2277,8 +2296,10 @@ Idealpassage: Fußgänger, eng, Schrittgeschwindigkeit	q3 12434,8776 12582,8651
 (Normannenstr. - Jobcenter Lichtenberg): Bordstein, Fußgänger	q2 16056,12317 16068,12376
 (Normannenstr. - Jobcenter Lichtenberg): Fußgänger	q1 16068,12376 16080,12441 16089,12522
 (Normannenstr. - Jobcenter Lichtenberg): teilweise auf Geweg ausweichen	q2 16089,12522 16122,12524 16132,12621
-(Parkweg): Fußgänger, Radfahren offiziell nicht erlaubt	q2 14690,12900 14419,12978
+#: note: theoretisch wäre q2 möglich
+(Parkweg): Fußgänger, Radfahren offiziell nicht erlaubt	q4+ 14690,12900 14419,12978
 Zur Kreutzigerstr.: enger Hausdurchgang	q4+ 14291,12220 14285,12190
+Müggelstr.: einige Fußgänger	q3 14994,12121 14994,12064
 #: XXX_prog BS Bordstein an der Fischerstr.
 (Zobtener Str. - Fischerstr.): Fußgänger, Rampe, Bordstein	q2 16353,10207 16404,10286
 (Fischerstr. - Lückstr.): Fußgänger, teilweise recht eng	q2 16404,10286 16488,10381 16516,10448 16501,10460 16572,10613 16587,10613
@@ -2509,7 +2530,7 @@ Eyke-von-Repkow-Platz: einige Fußgänger, Bordsteine	q3 5556,12536 5531,12501
 (Rhinstr. - Am Mühlenberg): einige Fußgänger, Rampe	q1- 18215,11690 18242,11793 18258,11827
 (Kolonie Sanssouci): einige Fußgänger	q1 16488,10381 16375,10545 16288,10637 16265,10628 16246,10641
 (Kolonie Sanssouci): einige Fußgänger	q1 16288,10637 16265,10681
-Müggelstr., Hausdurchfahrt: einige Fußgänger	q1 14837,11706 14856,11740
+Müggelstr., Hausdurchfahrt: einige Fußgänger	q3 14837,11706 14856,11740
 (Bushaltestelle und Straßenbahnwendestelle Schöneweide): Bus- und Straßenbahnverkehr	q2 17736,5441 17675,5521
 (Fröbel-Kindergarten - Oststr.): Fußgänger, Kindergarten	q3 17416,5388 17455,5355
 #: XXX_prog: BS (2x)
@@ -2542,7 +2563,8 @@ Koseler Weg: einige Fußgänger, Bordstein	q2 9850,6135 9679,6160
 #: note: einige Einkaufsmöglichkeiten, relativ viele Fußgänger, schnell fahren nicht möglich
 #: XXX_prog BS zur Zechliner Str.
 (Landsberger Allee - Zechliner Str.): Fußgänger, Bordstein	q2 16590,14386 16544,14593
-(Krautstr./Blumenstr. - Strausberger Platz): Fußgänger, Hausdurchfahrt	q2 12125,12490 12134,12540
+#: note: früher stand hier "q2", wäre das auch tatsächlich möglich gewesen?
+(Krautstr./Blumenstr. - Strausberger Platz): Fußgänger, Hausdurchfahrt	q4+ 12125,12490 12134,12540
 # 
 # REMOVED (provisorische Absenkung existiert) --- #: XXX_prog BS (ansonsten entfernen) --- #: XXX wird der Bordstein noch abgesenkt? --- #: last_checked: 2014-09-13 (nein, zusätzlich noch Engstelle durch Bauarbeiten) --- #: next_check: 2015-03-01 --- Gleisdreieckpark, Einfahrt Lützowstr.: Bordstein	q2 8236,10623 8199,10634
 # REMOVED (provisorische Absenkung existiert) --- #: XXX_prog BS (ansonsten entfernen) --- #: XXX wird der Bordstein noch abgesenkt? --- #: last_checked: 2014-12-12 --- #: next_check: 2015-03-01 --- Gleisdreieckpark, Einfahrt Pohlstr.: Bordstein	q2 8159,10430 8199,10424
@@ -2714,6 +2736,7 @@ Geitnerweg: Bordstein, einige Fußgänger	q2 5420,511 5448,455
 Seydlitzstr.: einige Fußgänger	q1 6511,2284 6459,2364
 Trabener Steg: abgeflachte Treppenstufen, Fußgänger	q2 2142,10027 2131,10014 2128,9999
 Trabener Steg: abgeflachte Treppenstufen, Fußgänger	q2 2224,10083 2245,10092
+#: XXX Verbindung prüfen
 Wilhelm-Stolze-Str.: Fußgänger	q1 13267,13167 13233,13242
 Regatta-Ufer: Fußgänger, Radfahren nicht erlaubt	q4 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
 Am Schwanenberg: einige Fußgänger	q1 15752,9385 15793,9334
@@ -2772,6 +2795,7 @@ Berliner Freiheit: Fußgänger	q1 8481,11638 8387,11637
 Alfred-Kowalke-Str. [Mittelstreifen]: einige Fußgänger	q1 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): einige Fußgänger	q1 21467,9236 21511,9226
 Duftgeranienweg: Bodenschwellen, die leicht umfahren werden können	q0- 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
+#: XXX Verbindung prüfen (ist aber für das Routing nicht besonders interessant)
 Friedenstr. - Parkplatz: Fußgänger	q2 12131,13333 12152,13294 12141,13256 12107,13264 12066,13237
 #: XXX_prog BS ansonsten Eintrag entfernen
 Am Treptower Park: Bordstein	q2; 15166,8489 15079,8575
@@ -3192,8 +3216,8 @@ Steinrückweg: möglicher Bordstein	q1 4257,6856 4293,6719
 Gedonstr.: Bordsteine, parkende Autos, Fußgänger	q4 7915,17557 7916,17576 7917,17588
 Alexanderufer - Charité: durch das Tor schieben	q4 8371,13399 8363,13402 8356,13404
 Nöldnerplatz [Lückstr. - Nöldnerstr.]: einige Fußgänger	q1 15903,10906 15932,10830
-#: note: Radfahren explizit verboten
-Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger	q3 15932,10830 15970,10755
+#: note: theoretisch wäre q2 oder q1 möglich
+Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger, Radfahren nicht erlaubt	q4+ 15932,10830 15970,10755
 (Weg im Grünzug): einige Fußgänger	q1- 17391,9746 17316,9797 17257,9869 17161,9921 17005,9953 16963,9960
 #: note: hier etwas breiterer Weg
 (Weg im Grünzug): einige Fußgänger	q1 16963,9960 16886,9982 16841,9997
@@ -3338,8 +3362,14 @@ Färberstr. [Wohngebiet]: enge Straße, einige Fußgänger auf der Fahrbahn	q1 21622
 Färberstr. [Wohngebiet]: enge Straße, einige Fußgänger auf der Fahrbahn, Bordstein	q3 21643,5020 21665,5035
 (Ottomar-Geschke-Str. - Färberstr.): enge Straße, Kita	q1 21565,5046 21590,5010 21631,4991
 Pappelweg: eng	q4+ 17842,20065 18042,20612 18061,20715
-Siegfried-Hirschmann-Park: einige Fußgänger	q2- 14676,11572 14714,11549 14745,11487
-Siegfried-Hirschmann-Park: einige Fußgänger	q2- 14830,11551 14808,11520 14745,11487 14684,11456
+#: note: Servicezufahrt
+Siegfried-Hirschmann-Park: einige Fußgänger	q2 14676,11572 14714,11549 14723,11532
+Siegfried-Hirschmann-Park: einige Fußgänger	q4+ 14723,11532 14745,11487
+#: note: Servicezufahrt
+Siegfried-Hirschmann-Park: einige Fußgänger	q2 14830,11551 14808,11520 14779,11505
+Siegfried-Hirschmann-Park: einige Fußgänger	q4+ 14779,11505 14745,11487
+#: note: Servicezufahrt
+Siegfried-Hirschmann-Park: einige Fußgänger	q2 14745,11487 14684,11456
 #: XXX_prog BS am südlichen Ende, ansonsten entfernen
 Tuchollaplatz: Bordstein	q3; 15626,10915 15616,10920
 Heilbronner Str.: einige Fußgänger	q1- 6163,9340 6131,9241
@@ -3623,7 +3653,7 @@ Windhuker Str.: einige Fußgänger	q1 5426,16539 5712,16245 5748,16235
 (Stresemannstr. - Wilhelmstr.): einige Fußgänger	q1 9215,10607 9368,10641
 #: XXX_prog BS an der Ludwig-Renn-Str., ansonsten trotzdem q2
 (Weg im Hochzeitspark): Fußgänger, geschützte Grünanlage, Bordstein	q2 20547,16485 20553,16403 20583,16317
-Voigtstr.: einige Fußgänger	q3 14836,12826 14835,12801
+Voigtstr.: einige Fußgänger	q4+ 14836,12826 14835,12801
 (Uferweg an der Scharfen Lanke): Fußgänger	q1 -4204,11432 -4246,11438
 (Gorgasring - Nonnendammallee): gemeinsamer Geh- und Radweg, nicht besonders breit	q2 -695,14819 -676,14773 -679,14743 -941,14637
 (Uferweg an der Stockholmer Str.): Fußgänger	q2 8982,17299 8957,17217 8870,17073
@@ -3704,6 +3734,13 @@ Elsenpfuhlstr.: Gehweg	q3 5405,20072 5399,20106
 Im Wolfsgartenfeld: Gehweg	q3 5307,20067 5299,20104
 (Ludwig-Lesser-Park, westlicher Weg): einige Fußgänger	q1 2312,25673 2247,25796 2237,25837 2207,26090
 (Ludwig-Lesser-Park - Am Poloplatz): einige Fußgänger	q1 2207,26090 2204,26290 2199,26440 2199,26450
+#: note: rechtliche Lage unklar, teilweise werden die Wege auch von Autos befahren; Fußgängerfrequenz meist überschaubar vvv
+Osthafen: einige Fußgänger	q1 13326,10765 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14361,10259 14462,10206 14480,10157
+Osthafen: einige Fußgänger	q1 13531,10673 13558,10704
+Osthafen: einige Fußgänger	q1 14207,10338 14226,10387
+#: note ^^^
+#: note: rechtliche Lage unklar, asphaltierter Verkehrsbereich, außerhalb des ausgeschilderten Grünanlagen-Bereichs
+Wismarplatz: einige Fußgänger	q1 14475,11778 14461,11738
 # 
 ######################### User Contributions #################################
 # 
@@ -4054,12 +4091,17 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Berolinastr. - Mollstr.): Fußgänger, Bordstein	q2 11656,13100 11681,13161
 (Lichtenberger Str.): Fußgänger	q1 12054,12903 12039,12675
 #: XXX_prog BS (zur Georgenkirchstr. hin) (ansonsten wäre es q1)
+#: XXX Verbindung prüfen (ist aber für das Routing nicht besonders interessant)
 (Verbindungsweg): Fußgänger, Bordstein	q2 11667,13465 11703,13426
 #: corrected_by: srt ("Wurzeln" entfernt, "Schule" hinzugefügt)
-Weinstr.: Fußgänger, Schulen	q2 11785,13241 11909,13387
-(Mollstr. - Barnimstr.): Fußgänger, Radfahren offiziell nicht erlaubt	q2 11723,13139 11749,13215
+#: note: unklar, ob es sich hier um einen reinen Gehweg handelt; früher "q2"
+Weinstr.: Fußgänger, Schulen	q3 11785,13241 11909,13387
+#: note: früher "q2"
+(Mollstr. - Barnimstr.): Fußgänger, Radfahren offiziell nicht erlaubt	q4+ 11723,13139 11749,13215
 Brüder-Grimm-Gasse: Fußgänger	q2 8351,11163 8343,11133
-(zum Anhalter Steg): eng, Fußgänger	q2 8668,10219 8668,10236 8715,10314 8711,10322
+#: note: nach den Bauarbeiten im Sommer/Herbst 2021 stellenweise etwas breiter geworden
+(zum Anhalter Steg): Fußgänger	q2+ 8668,10219 8668,10236 8715,10314
+(zum Anhalter Steg): Fußgänger, im Kurvenbereich unübersichtlich	q3 8715,10314 8711,10322
 (Anhalter Steg): Fußgänger	q1 8711,10322 8726,10351 8760,10408 8773,10429
 (Anhalter Steg - Anhalter Bahnhof): Fußgänger	q1 8773,10429 8776,10548 8808,10598 8853,10708 8912,10846 8938,10872
 (Weg im Elise-Tilse-Park): Fußgänger	q1 8776,10548 8778,10578 8812,10662
@@ -4086,8 +4128,11 @@ Bautzener Platz: Fufgänger, Bordsteine	q3 8102,9262 8183,9260
 #: XXX_prog BS Bordstein an der Rudolf-Schwarz-Str., ansonsten q1
 (Anton-Saefkow-Str. - John-Schehr-Str.): Fußgänger, Bordstein	q2 13009,14371 12949,14292
 Ernst-Fürstenberg-Str.: Fußgänger	q1 13049,14141 12992,14196
-An der Brauerei: Fußgänger	q1 13288,13300 13279,13323 13375,13367
-An der Brauerei: Fußgänger	q2 13279,13323 13246,13420
+An der Brauerei: Fußgänger	q1 13288,13300 13279,13323
+#: XXX q1 aber gleichzeitig N --- ist hier eine Service-Straße? Ist Fußgänger+q1 vielleicht falsch?
+An der Brauerei: Fußgänger	q1 13279,13323 13375,13367
+#: note: früher q2, wären die tatsächlich möglich gewesen?
+An der Brauerei: Fußgänger	q4+ 13279,13323 13246,13420
 (Friedhofsweg): Fußgänger, Radfahren nicht erlaubt	q4 12851,12602 13108,12859 13046,12956 12878,13229
 (Friedhofsweg): Fußgänger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
 # REMOVED (bleibt bei q2) --- #: next_check_id: RITTER-2014 --- #: XXX erstmal q2, vielleicht später wieder q1 --- #: last_checked: 2015-06-02 --- #: check_frequency: 14d
@@ -4114,7 +4159,10 @@ Vereinsweg (Steglitz): Fußgänger, Privatstraße, Radfahren nicht erlaubt	q4 5334,
 (Volkspark Friedrichshain): kurze Rampe an der Friedenstr.	q3 12244,13240 12236,13229
 (Volkspark Friedrichshain): Fußgänger	q2 12369,13209 12369,13252 12341,13309 12307,13329 12206,13326 12166,13349 12141,13341
 (Volkspark Friedrichshain): Fußgänger	q2 12141,13609 12012,13599 12038,13685
-(Zufahrt Landsberger Allee): Fußgänger	q2 13433,13346 13397,13426 13574,13505
+#: XXX ist hier eine Parkplatzzufahrt?
+(Zufahrt Landsberger Allee): Fußgänger	q2 13433,13346 13397,13426
+#: note: früher q2, wären die möglich gewesen
+(Zufahrt Landsberger Allee): Fußgänger	q4+ 13397,13426 13574,13505
 (Verlängerte Wallenbergstr.): Fußgänger, schmal	q3 4139,8485 3992,8487
 (Zufahrt zur Kolonie Hohenzollerndamm): Fußgänger, Poller	q2 3751,8796 3858,8786
 #: XXX_prog: Bordstein am nördlichen Ende, ansonsten wäre es q1

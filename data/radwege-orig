@@ -429,7 +429,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
-#: last_checked: 2021-10-28 vvv
+#: last_checked: 2021-11-09 vvv
 #: check_frequency: 60d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -1530,7 +1530,7 @@ Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2021-11-03 (mapillary)
+#: last_checked: 2021-11-09
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1539,10 +1539,10 @@ Busspur ist immer gültig	RW5;RW5 9984,12426 9934,12420 9858,12410
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2021-11-03 (mapillary)
+#: last_checked: 2021-11-09
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-10-31
-	RW0;RW0 10063,12438 10024,12431 9984,12426
+	RW5;RW0 10063,12438 10024,12431 9984,12426
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
 # 
 # REMOVED (weitgehend fertiggestellt) --- #: next_check_id: UDLU5-2014 --- #: XXX Markierung in Richtung Westen ist nur provisorisch; Richtung Osten fehlt sie fast komplett --- #: source_id: IM_018997 --- #: source_id: IM_023987 --- #: source_id: IM_025933 --- #: source_id: 2147342831 (bis Ende 2020) --- #: osm_watch: way id="342968607" version="15" --- #: osm_watch: way id="461526152" version="7" --- #: last_checked: 2020-11-19 --- #: check_frequency: 10d
@@ -2273,7 +2273,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/geschuetzter-radweg_a326639
 #: XXX geschützer Radweg wird gebaut vvv
 #: source_id: viz2021:13.429807,52.523192,11.10.2021,07:00 (mittlerweile bis 15.11.2021)
-#: last_checked: 2021-10-31 vvv
+#: last_checked: 2021-11-09 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2021-11-15 vvv
 	RW2; 12126,13088 12122,13029
@@ -2293,7 +2293,7 @@ Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 #: by: https://viz.berlin.de/2021/10/verkehrsvorschau-fuer-montag-11-10-2021/
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (ab 1.11.2021)
 #: XXX geschützer Radweg wird gebaut (nach den Bauarbeiten Richtung Süden) vvv
-#: last_checked: 2021-10-31 vvv
+#: last_checked: 2021-11-09 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2021-11-01 vvv
 # REMOVED --- #: next_check: 2021-12-31 vvv
@@ -5515,7 +5515,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by ^^^
 # 
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2021-10-08 vvv
+#: last_checked: 2021-11-09 vvv
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9141,12320 9131,12438 9121,12514
 #: XXX früher RW3, zurzeit durch Gelbmarkierung (Kreuze) ungültig gemacht
@@ -6976,10 +6976,15 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: osm_watch: way id="4401920" version="52"
 #: XXX wird mittlerweile verstetigt
 #: confirmed_by: srt
-#: last_checked: 2021-11-07 (webcam)
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2021-07-23
-provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
+#: last_checked: 2021-11-09 vvv
+#: check_frequency: 7d vvv
+# REMOVED --- #: next_check: 2021-07-23 vvv
+provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8995,10370
+Bushaltestelle	RW5; 8995,10370 8953,10366 8919,10360
+provisorischer Radstreifen	RW4; 8919,10360 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: note: Spielstraßenschild am südlichen Ende
 	RW6;RW6 13392,9225 13421,9260
@@ -7059,7 +7064,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
 #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
 #: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021)
-#: last_checked: 2021-10-29 vvv
+#: last_checked: 2021-11-09 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -7351,7 +7356,7 @@ provisorischer Radweg auf dem Gehweg	RW2; 8490,2084 8560,2181 8579,2265
 #: source_id: viz2021:13.38022,52.49874,19.07.2021,07:00 (bis 20.9.2021)
 #: osm_watch: way id="240451922" version="23"
 #: XXX kommen hier noch Poller/Leitboys hin?
-#: last_checked: 2021-10-29
+#: last_checked: 2021-11-09
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-10-22
 Grünmarkierung	RW3; 8810,10305 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601

@@ -13,7 +13,7 @@ Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9146,10284 8810
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8328,10831 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7089,11073 7002,11034
 Kanalstraßen Nordufer	1 6880,11110 7115,11220 7160,11225 7253,11208 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108 7828,11133 8000,11137 8102,11099 8241,11024
 # Hier zwischen kann ein kurzes Stück auf dem Gehweg überbrückt werden
-Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8378,10858 8390,10835 8443,10780 8541,10714 8581,10663 8701,10428 8771,10381 8824,10366 8953,10366 9028,10371 9158,10342 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
+Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8378,10858 8390,10835 8443,10780 8541,10714 8581,10663 8701,10428 8771,10381 8824,10366 8919,10360 8953,10366 8995,10370 9028,10371 9158,10342 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
 Gitschiner Str.	1 9873,10285 9948,10280
 Gitschiner Str.	1 9948,10280 9865,10227
 Skalitzer Str.	1 12978,10581 12899,10595
@@ -3412,7 +3412,7 @@ Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, k
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
-#: also_indoor: traffic (G,H)
+#: also_indoor: traffic (G(teilweise),ex-H)
 #: last_checked: 2021-09-11 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
@@ -3513,7 +3513,7 @@ Wildrosenweg: Überqueren der Schulstr. nicht möglich	3 20715,12040 20708,11918 2
 #: osm_watch: way id="690322561" version="2"
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-10-08
+#: last_checked: 2021-11-09
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
@@ -3979,7 +3979,7 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2021-10-07 vvv
+#: last_checked: 2021-11-09 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -4442,7 +4442,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Eröffnung am 17.12.2020)
 #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Eröffnung wird verschoben)
 #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauzäune werden im Dezember 2020 teilweise abgebaut)
-#: last_checked: 2021-11-02 (mapillary)
+#: last_checked: 2021-11-09
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384

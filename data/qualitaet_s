@@ -656,8 +656,8 @@ Parkweg: Verbundsteinpflaster	Q1 14448,9922 14453,9929 14558,10082 14597,10129 1
 Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q1 14373,10046 14202,10152 14126,10176 13918,10240
 Hasenheide: asphaltiert	Q0 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
 Hasenheide, zur Lilienthalstr.: Verbundsteinpflaster, kleine Stück mit Kleinsteinpflaster	Q1 10709,9192 11111,9104 11141,9107
-Carl-Herz-Ufer: Kopfsteinpflaster (kann auf Uferweg umgangen werden)	Q2 10627,9912 10602,9957 10500,10081
-Carl-Herz-Ufer: Kopfsteinpflaster (kann auf breitem asphaltierten Uferweg umgangen werden)	Q1 10168,10085 10313,10084 10430,10081 10500,10081
+Carl-Herz-Ufer: Kopfsteinpflaster	Q2 10627,9912 10602,9957 10500,10081
+Carl-Herz-Ufer: Kopfsteinpflaster (aber es existiert ein breiter asphaltierter Uferweg)	Q1 10168,10085 10313,10084 10430,10081 10500,10081
 Schloßstr.: asphaltiert	Q0 3117,11852 3103,11968
 Zillestr.: Asphalt	Q0 3268,11847 3117,11852
 Am Graben: Kopfsteinpflaster und Verbundsteinpflaster	Q1 -4778,7791 -4819,7833
@@ -10233,8 +10233,8 @@ Weichselstr.: Asphalt mit einigen Schäden	Q0 14926,12129 14888,11934
 (Hosemannstr. - Naugarder Str.): unregelmäßiges Kleinsteinpflaster	Q2 12583,15566 12605,15491
 Färberstr. [Wohngebiet]: Beton/Asphalt	Q0 21622,4884 21591,4902 21631,4991 21643,5020 21665,5035
 Albert-Einstein-Str.: Asphalt	Q0 19091,2443 19094,2495 19204,2603 19329,2715 19396,2777 19440,2817 19534,2905 19592,2965 19695,3072
-Siegfried-Hirschmann-Park: Betonpflaster	Q1 14676,11572 14714,11549 14745,11487
-Siegfried-Hirschmann-Park: Betonpflaster	Q1 14830,11551 14808,11520 14745,11487 14684,11456
+Siegfried-Hirschmann-Park: Betonpflaster	Q1 14676,11572 14714,11549 14723,11532 14745,11487
+Siegfried-Hirschmann-Park: Betonpflaster	Q1 14830,11551 14808,11520 14779,11505 14745,11487 14684,11456
 Lobeckstr.: Asphalt mit einigen Schäden und Schlaglöchern	Q0 10585,10766 10492,10582 10484,10567 10433,10456 10363,10303
 Weidenkätzchenweg: Verbundsteinpflaster	Q1 21465,-15 21450,38 21421,158
 Buschwindröschenweg: Verbundsteinpflaster	Q1 21379,33 21393,-29 21382,-31 21409,-109
@@ -10769,6 +10769,7 @@ Hauptstr. [23 D-H]: Verbundsteinpflaster	Q1 -7884,13614 -7906,13549 -7925,13550
 (Bornitzstr. - Straße 15): Verbundsteinpflaster	Q1 16439,12872 16440,12895
 (Bornitzstr. - Straße 15): Kopfsteinpflaster	Q2 16440,12895 16439,12979
 Messelstr.: vereinzelte Hebungen und Schäden, können aber gut umfahren werden	Q0 2606,6708 2403,6962 2304,7059 2139,7239 2017,7412 1956,7453
+Müggelstr.: Mosaikpflaster	Q1 14994,12121 14994,12064
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -16403,7 +16404,7 @@ Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13916,13443 13805,13394
 Wilhelm-Stolze-Str.: Kopfsteinpflaster	Q2 13267,13167 13368,12943
 Fritz-Schiff-Weg: Kleinpflaster	Q1 13448,12340 13476,12461 13457,12505
 Ludwig-Pick-Str.: Asphalt	Q0 13548,12535 13552,12435
-Ludwig-Pick-Str.: Gehwegplatten	Q0 13552,12435 13543,12326
+(Ludwig-Pick-Str. - Karl-Marx-Allee): Gehwegplatten	Q0 13552,12435 13543,12326
 Alte Allee: Asphalt	Q0 890,9399 794,9472 759,9497 703,9538 678,9558 616,9602
 Kühler Weg: Asphalt	Q0 616,9602 743,9772 841,9914
 Falkensteiner Str.: Kopfsteinpflaster	Q3 4180,8098 4087,8204

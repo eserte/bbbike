@@ -32130,6 +32130,8 @@ EOF
        source_id => 'https://www.deutsches-architekturforum.de/thread/12678-umbau-des-kadewe/?postID=678680#post678680',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1141399.php (evtl. hat der Bebauungsplan was mit den Bauarbeiten zu tun)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-89ve/7-89-ve-pas_ol_11_mit-deckblatt_internetfassung_gez.pdf
 #: also_indoor: traffic (ex-G)
 #: osm_watch: way id="362719487" version="6"
 #: osm_watch: way id="687428752" version="2"
@@ -32594,11 +32596,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1636213453, # undef, # XXX
-       text  => 'Glinkastr.: zwischen Jägerstr. und Mohrenstr. Richtung Süden offiziell Einbahnstraßenregelung für alle, es existiert aber eine Radspur',
+       until => undef, # XXX
+       text  => 'Glinkastr.: zwischen Jägerstr. und Mohrenstr. Einbahnstraßenregelung, Richtung Süden gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-# REMOVED --- #: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer? --- #: note: 2021-07-26 ("Radfahrer frei"-Schilder fehlen weiterhin, aber manchmal scheint man auf dem noch existierenden Radstreifen gut durchzukommen), ebenso: 2021-08-31 --- #: last_checked: 2021-10-07
+# REMOVED --- #: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer? --- 
+#: note: 2021-11-09 ("Radfahrer frei"-Schilder fehlen weiterhin, außerdem gibt es eine explizite Bedarfsumleitung für Radfahrer via Jägerstr.
+#: last_checked: 2021-11-09
 	q4::inwork; 9195,11972 9207,11880
 # REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
 EOF
@@ -33348,13 +33352,11 @@ EOF
 EOF
      },
      { from  => 1627924220, # 2021-08-02 19:10
-       until => undef, # 1630101600, # 2021-08-28 00:00
+       until => 1636480326, # undef, # 1630101600, # 2021-08-28 00:00
        text  => 'Rampe zum Anhalter Steg wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: add_fragezeichen: Ist die Sperrung mittlerweile aufgehoben?
-#: last_checked: 2021-10-29
-#: check_frequency: 7d
+# REMOVED (offen) --- #: add_fragezeichen: Ist die Sperrung mittlerweile aufgehoben? --- #: last_checked: 2021-10-29 --- #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-10-15
 	2::inwork 8668,10219 8668,10236 8715,10314
 EOF
@@ -33716,13 +33718,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef,
+       until => 1636480477, # undef,
        text  => 'Brachvogelstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Alexandrinnenstr. gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.?
-#: also_indoor: traffic (G(falsch))
-#: last_checked: 2021-10-19
+# REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
 	q4::inwork; 10066,10071 10069,10151
 EOF
      },

@@ -4766,6 +4766,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1141399.php (evtl. hat der Bebauungsplan was mit den Bauarbeiten zu tun)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-89ve/7-89-ve-pas_ol_11_mit-deckblatt_internetfassung_gez.pdf
 #: also_indoor: traffic (ex-G)
 #: osm_watch: way id="362719487" version="6"
 #: osm_watch: way id="687428752" version="2"
@@ -4960,7 +4962,19 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer? --- 
+#: note: 2021-11-09 ("Radfahrer frei"-Schilder fehlen weiterhin, außerdem gibt es eine explizite Bedarfsumleitung für Radfahrer via Jägerstr.
+#: last_checked: 2021-11-09
+	q4::inwork; 9195,11972 9207,11880
+# REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
+',
+         'from' => undef,
+         'id' => 3360,
+         'text' => 'Glinkastr.: zwischen Jägerstr. und Mohrenstr. Einbahnstraßenregelung, Richtung Süden gesperrt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        {
          'data' => '# REMOVED (hier wohl nicht?) ---	2::inwork 49011,71344 48996,71176 48982,71121 48929,70947
 #: also_indoor: traffic (G,H)
@@ -5248,19 +5262,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1638291600
        },
-       {
-         'data' => '#: add_fragezeichen: Ist die Sperrung mittlerweile aufgehoben?
-#: last_checked: 2021-10-29
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2021-10-15
-	2::inwork 8668,10219 8668,10236 8715,10314
-',
-         'from' => 1627924220,
-         'id' => 3425,
-         'text' => 'Rampe zum Anhalter Steg wegen Bauarbeiten gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: note: laut rbb nur bis 5.10.2021 (erste Phase?)
 #: source_id: viz2021:13.29552,52.61058,05.10.2021,19:48
@@ -5452,18 +5454,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.?
-#: also_indoor: traffic (G(falsch))
-#: last_checked: 2021-10-19
-	q4::inwork; 10066,10071 10069,10151
-',
-         'from' => undef,
-         'id' => 3457,
-         'text' => 'Brachvogelstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Alexandrinnenstr. gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
 	q4::inwork; 8196,20096 8224,19977 8234,19936
@@ -5575,23 +5566,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1638313199
        },
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (hier: nur für Kfz-Verkehr gesperrt)
-#: by: https://twitter.com/VIZ_Berlin/status/1453704442986049548 (Radfahrer frei)
-#: by: https://twitter.com/VIZ_Berlin/status/1453699314891595779
-#: by: https://www.berliner-woche.de/pankow/c-verkehr/bauarbeiten-in-der-muehlenstrasse_a327002
-#: source_id: viz2021:13.403429,52.56939,28.10.2021,06:00 (hier: bis 12.11.2021, und nur für Kfz-Verkehr gesperrt) (mittlerweile bis 9.11.2021)
-#: by: https://www.berliner-woche.de/altglienicke/c-verkehr/deckschicht-wird-runderneuert_a327095 (bis 30.11.2021)
-#: note: laut rbb vorzeitiges Ende am 9.11.2021
-	q3::inwork; 10240,18193 10355,17963 10459,17754
-',
-         'from' => 1635285600,
-         'id' => 3472,
-         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1139346.php',
-         'text' => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, Radfahrer dürfen den Gehweg benutzen, vom 28. Oktober 2021 bis 09.11.2021',
-         'type' => 'handicap',
-         'until' => 1636452000
-       },
+       undef,
        {
          'data' => '	q4::inwork 19743,1804 19669,1729 19653,1671 19636,1609 19599,1557
 ',
