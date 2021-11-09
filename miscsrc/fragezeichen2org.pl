@@ -435,6 +435,7 @@ for my $file (@files) {
 		      priority => $prio,
 		      searches => $searches,
 		      expired => $nextcheck_date && $nextcheck_date le $today,
+		      open => !$has_nextcheck,
 		     );
 	     }
 
@@ -844,6 +845,7 @@ sub _make_dist_tag {
 	my $priority = delete $opts{priority};
 	my $searches = delete $opts{searches};
 	my $expired  = delete $opts{expired};
+	my $open     = delete $opts{open};
 	die "Unhandled options: " . join(" ", %opts) if %opts;
 
 	my $priority_points =
@@ -857,12 +859,18 @@ sub _make_dist_tag {
 
 	for my $planned_route_file (@$planned_route_files_ref) {
 	    my $numbers = ($planned_route_to_numbers{$planned_route_file} ||= { expired_count => 0,
+										expired_and_open_count => 0,
 										expired_priority_points => 0,
+										expired_and_open_priority_points => 0,
 									      });
 	    $numbers->{total_count}++;
 	    $numbers->{expired_count}++ if $expired;
+	    $numbers->{open_count}++ if $open;
+	    $numbers->{expired_and_open_count}++ if $expired || $open;
 	    $numbers->{priority_points} += $priority_points;
 	    $numbers->{expired_priority_points} += $priority_points if $expired;
+	    $numbers->{open_priority_points} += $priority_points if $open;
+	    $numbers->{expired_and_open_priority_points} += $priority_points if $expired || $open;
 	    $numbers->{searches} += $searches;
 	}
     }
@@ -872,9 +880,9 @@ sub _make_dist_tag {
 	if (%planned_route_to_numbers) {
 	    $out .= "* planned route importance\n";
 	    for my $sort_def (
-			      [qw(expired_priority_points expired_count searches)],
-			      [qw(expired_count expired_priority_points searches)],
-			      [qw(searches expired_priority_points expired_count)],
+			      [qw(expired_and_open_priority_points expired_and_open_count searches)],
+			      [qw(expired_and_open_count expired_and_open_priority_points searches)],
+			      [qw(searches expired_and_open_priority_points expired_and_open_count)],
 			     ) {
 		my @sort_keys = @$sort_def;
 		my $custom_sort = sub {
@@ -888,7 +896,7 @@ sub _make_dist_tag {
 		$out .= "** sorted by $sort_keys[0]\n";
 		for my $planned_route_file (sort { $custom_sort->($planned_route_to_numbers{$a}, $planned_route_to_numbers{$b}) } keys %planned_route_to_numbers) {
 		    my $numbers = $planned_route_to_numbers{$planned_route_file};
-		    $out .= "*** $planned_route_file (expired_prio=$numbers->{expired_priority_points} expired_count=$numbers->{expired_count} total_count=$numbers->{total_count} searches=$numbers->{searches})\n";
+		    $out .= "*** $planned_route_file (expired_and_open_prio=$numbers->{expired_and_open_priority_points} expired_and_open_count=$numbers->{expired_and_open_count} total_count=$numbers->{total_count} searches=$numbers->{searches})\n";
 		}
 	    }
 	}
