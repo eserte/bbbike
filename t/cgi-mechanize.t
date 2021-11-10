@@ -197,12 +197,15 @@ for my $browser (@browsers) {
 	my_tidy_check($agent);
 
 	$on_a_particular_page->('routeresult');
+	# Depending on handicap categorization of streets and speed settings
+	# the route may go via
+	#   Blücherplatz.*
+	#   Waterloo-Ufer.*
+	# (formerly) or via Zossener Str. (currently)
 	$like_long_data->(qr/Methfesselstr.*
 			     Kreuzbergstr.*
 			     Mehringdamm.*
 			     Blücherstr.*
-			     Blücherplatz.*
-			     Waterloo-Ufer.*
 			     Gitschiner.Str.*
 			     Wassertorplatz.*
 			     Skalitzer.Str.*
