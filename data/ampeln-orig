@@ -23,12 +23,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: next_check: 2024-06-01
 Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
-#: next_check_id: BERLINERALLEE-2021
-#: last_checked: 2021-10-13 (mapillary)
-#: next_check: 2021-10-25
-#: valid: -20211025
-Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
-# 
+# REMOVED (abgebaut) --- #: next_check_id: BERLINERALLEE-2021 --- #: last_checked: 2021-10-13 (mapillary) --- #: next_check: 2021-10-25 --- #: valid: -20211025 --- Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
 # REMOVED --- #: next_check_id: GAERTNER-2021 --- #: last_checked: 2021-09-02 --- # REMOVED (nicht mehr) --- Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775 --- Grünberger Str.	F::inwork 14272,11775
 # REMOVED --- #: XXX Hauffstraße (Rummelsburg) in beiden Richtungen zwischen Wiesenweg und Schreiberhauer Straße: Arbeiten an Gasleitung, für beide Richtungen nur ein gemeinsamer Fahrstreifen abwechselnd frei, eine Baustellenampel regelt den Verkehr, vom 06.07.2021 08:00 bis 23.07.2021 17:00 --- #: note: Ampeln in der Hauffstr. sowie in der Schulze-Boysen-Str. an der Buchberger Str.; außerdem ist die Anbindung Pfarrstr. offiziell gesperrt --- #: source_id: viz2021:13.478302,52.506695,06.07.2021,08:00 (mittlerweile bis 3.9.2021) vvv --- #: last_checked: 2021-08-09 vvv --- #: valid: -20210903 vvv --- Hauffstr.: Gegenverkehrsregelung	X::inwork 15458,11306 --- Schulze-Boysen-Str.: Gegenverkehrsregelung	X::inwork 15477,11338 --- #: valid ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # 
@@ -122,11 +117,7 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork 15433,10765
 # REMOVED --- #: XXX längerer Abschnitt, etwa 200m, eigentlich müssen Radfahrer in beiden Richtungen den Gehweg benutzen --- #: last_checked: 2021-08-03 --- #: check_frequency: 14d --- Nöldnerstr.: Gegenverkehrsregelung	X::inwork 15932,10830
 # REMOVED (vermutlich nun funktionslos) --- #: next_check_id: RHINSTRASSENBRUECKE-2018 --- #: last_checked: 2021-05-03 --- #: check_frequency: 30d --- #: next_check: 2021-07-30 --- #: note: Anforderung, gilt auch für nach Süden fahrenden Radfahrer --- Rhinstr.: Seitenwechsel für nach Norden fahrende Radfahrer	F::inwork 18225,12697
 # REMOVED (Ampeln stehen noch da, ausgeschaltet, keine Gegenverkehrsregelung mehr) --- #: next_check_id: KASTANIENALLEE-2021 --- #: last_checked: 2021-07-02 (mapillary) vvv --- #: check_frequency: 120d vvv --- #: next_check: 2021-10-29 vvv --- Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen auf den linken Bürgersteig wechseln	X::inwork 9073,20606 --- Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linken Bürgersteig auf die Fahrbahn wechseln	X::inwork 9227,20617 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: LANGHANS-2021
-#: last_checked: 2021-10-12
-#: next_check: 2021-10-25
-Roelckestr./Lehderstr.: temporäre Ampel	X::inwork 12842,16032
+# REMOVED (steht noch, aber ausgeschaltet) --- #: next_check_id: LANGHANS-2021 --- #: last_checked: 2021-10-12 --- #: next_check: 2021-10-25 --- Roelckestr./Lehderstr.: temporäre Ampel	X::inwork 12842,16032
 # 
 #: next_check_id: BAHNHOF-2021
 #: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/

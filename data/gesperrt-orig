@@ -939,7 +939,7 @@ Joachimstr.	1s:q3 22009,5593 21907,5517 21789,5427
 Cardinalstr.	1s:q3 21901,5728 21828,5623 21706,5541
 Fuchsbergeweg	1s:q3 20595,9558 20592,9298
 Piesporter Str. - Liebermannstr.	1 15217,17284 15267,17349 15278,17352
-(Marchlewskistr. - Gubener Str.)	1s:q3 13168,12219 13173,12202 13097,12166
+(Marchlewskistr. - Gubener Str.)	1s:q4 13168,12219 13173,12202 13097,12166
 Alter Schönefelder Weg	1 19599,1557 19636,1609 19653,1671 19669,1729 19743,1804
 Südstern	1 10713,9260 10625,9259 10564,9292
 Südstern	1 10564,9292 10615,9300 10639,9304 10670,9286 10713,9260
@@ -1100,7 +1100,7 @@ Edelhofdamm	1 3277,25575 3446,25628
 Olbrichweg	1 5787,19326 5879,19352
 Genfer Str.	1 6890,18190 6821,18216 6683,18243
 #: note: enge Hausdurchfahrt
-Eckertstr.	1s:q3 13598,12554 13585,12584
+Eckertstr.	1s:q4 13598,12554 13585,12584
 Am Krummen Weg	1 -7169,14849 -7026,14890
 Am Krummen Weg	1 -7169,14849 -7248,14826
 Henricistr.	1 5993,19477 5851,19440
@@ -1692,9 +1692,10 @@ Walsroder Str.	1s:q3 6395,5154 6295,5158 6202,5163 6094,5171
 Hünensteig	1s:q4 6419,5048 6387,5057
 Hünensteig	1s:q3 6387,5057 6395,5154
 #: note: Radfahren auf dem Uferweg ist wohl Sitte
-Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s:q2 12116,9825 11946,9913 11735,10022 11512,10105
+#: note: früher "1s:q2"
+Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s:q3 12116,9825 11946,9913 11735,10022 11512,10105
 Stallschreiberstr.	1 10482,11398 10615,11240 10674,11170
-Jahnstr.	1s:q3 11500,9116 11509,9392
+Jahnstr.	1s:q4 11500,9116 11509,9392
 Waldweg	1s 25496,2429 24981,2580
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
@@ -3483,7 +3484,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: by: https://dstrctberlin.com/de/2021/10/18/auf-gute-nachbarschaft/
 #: osm_watch: way id="164816805" version="7"
 #: priority: #C
-#: last_checked: 2021-09-02 (daf)
+#: last_checked: 2021-11-10
 #: check_frequency: 60d
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -3597,7 +3598,7 @@ Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 188
 #: XXX vermutlich dauerhaft, die Fahrbahn ist schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben
 #: osm_watch: way id="860287005" version="4"
 #: also_indoor: traffic (G)
-#: last_checked: 2021-10-08
+#: last_checked: 2021-11-10
 #: check_frequency: 120d
 #: next_check: 2022-07-01
 Cotheniusstr.: Fahrbahn durch Bauzäune abgesperrt	2::inwork 13430,13733 13519,13785

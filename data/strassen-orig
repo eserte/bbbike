@@ -2666,7 +2666,7 @@ Naugarder Str.	N 12737,15154 12712,15176 12693,15225 12610,15455 12621,15482
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5238 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5356
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_01_0001_0152_online.pdf (Benennung: Gertrud-Classen-Platz, Wirksamkeit am 6. März 2020)
-#: last_checked: 2021-09-02 (mapillary) (keine Schilder zu sehen)
+#: last_checked: 2021-11-10 (keine Schilder zu sehen)
 #: check_frequency: 60d
 (Hosemannstr. - Naugarder Str.)	N 12583,15566 12605,15491
 Malchower Chaussee	HH 14832,17867 15152,18115 15181,18137 15569,18492 15600,18551 15610,18596
@@ -13430,11 +13430,9 @@ Hermann-Blankenstein-Str.	N 14052,13389 13945,13564 13886,13668 13858,13719 1382
 Hermann-Blankenstein-Str.	N 13945,13564 13875,13532 13769,13487 13706,13460
 August-Lindemann-Str.	NN 14355,12752 14360,12792
 August-Lindemann-Str.	N 14360,12792 14376,12849 14411,12951 14419,12978 14433,13027 14448,13081 14465,13138 14476,13181
-#: XXX Verbindung prüfen --- braucht man hier einen handicap-Eintrag?
 (Weg im Blankensteinpark)	NN 14376,12849 14289,12876 14146,12921 14130,12926
 #: note: am nördlichen Eingang ist beim Rad/Gehweg ein Tor, welches verschlossen sein könnte; die Fahrbahn ist frei
 #: note: Tor war offen am 2013-01-02 gegen 19:15
-#: XXX Verbindung prüfen --- braucht man hier einen handicap-Eintrag?
 (Weg im Blankensteinpark)	NN 14355,13109 14289,12876
 Erich-Nehlhans-Str.	N 13999,13276 14089,13247 14132,13234 14231,13204
 Richard-Ermisch-Str.	N 14252,13263 14231,13204 14211,13150 14180,13064 14166,13024 14130,12926 14096,12827
@@ -16525,6 +16523,7 @@ Keibelstr.	N 11182,13123 11167,13107 11108,13142 11045,13183
 Mendelssohnstr.	N 11539,13425 11490,13463 11451,13495 11392,13528 11346,13441 11308,13389
 Mendelssohnstr. [Wohngebiet]	N 11490,13463 11433,13389 11346,13441
 Mendelssohnstr. [Wohngebiet]	N 11451,13495 11474,13524 11512,13493 11598,13598 11550,13642 11545,13690
+#: note: rechtliche Lage unklar, (noch) kein handicap_s-Eintrag
 Mendelssohnstr. [Wohngebiet]	NN 11512,13493 11490,13463
 Mendelssohnstr. [Wohngebiet]	NN 11598,13598 11652,13564
 Mendelssohnstr. [Wohngebiet]	NN 11433,13389 11486,13350
@@ -17946,10 +17945,10 @@ Hausburgstr.	N 13635,13605 13706,13460 13742,13376 13835,13149 13895,13017
 (Treppe zur Landsberger Allee)	NN 13858,13719 13853,13712 13854,13701
 Walter-Friedländer-Str.	N 13875,13532 13916,13443 13934,13403 13976,13309 13999,13276
 Otto-Ostrowski-Str.	NN 13702,13634 13711,13615
-Otto-Ostrowski-Str.	N 13711,13615 13769,13487 13805,13394 13819,13356 13862,13262 13930,13100
-Kurt-Exner-Str.	N 13976,13309 13862,13262
-Agnes-Wabnitz-Str.	N 13934,13403 13819,13356
-Agnes-Wabnitz-Str.	N 13916,13443 13805,13394
+Otto-Ostrowski-Str.	N 13711,13615 13769,13487 13809,13396 13825,13359 13869,13260 13924,13135 13943,13129
+Kurt-Exner-Str.	N 13976,13309 13869,13260
+Agnes-Wabnitz-Str.	N 13934,13403 13825,13359
+Agnes-Wabnitz-Str.	N 13916,13443 13809,13396
 Eckertstr.	N 13506,12752 13585,12584 13598,12554
 Ludwig-Pick-Str.	N 13548,12535 13552,12435
 (Ludwig-Pick-Str. - Karl-Marx-Allee)	NN 13552,12435 13543,12326

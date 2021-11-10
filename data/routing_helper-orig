@@ -2,33 +2,45 @@
 #: title: Routinghilfen
 #: line_do_offset: 0
 #:
-Kreuzung Sewanstr./Am Tierpark	q1; 18631,10167 18647,10172
-Am Tierpark, linker Gehweg	q1; 18647,10172 18715,10003
-Treskowallee, linker Gehweg	q1; 18715,10003 18748,9922
+Kreuzung Sewanstr./Am Tierpark	q0; 18631,10167 18647,10172
+Am Tierpark, linker Radweg	q0; 18647,10172 18715,10003
+Treskowallee, linker Radweg	q0; 18715,10003 18748,9922
+Kreuzung Gregoroviusweg/Treskowallee	q0; 18748,9922 18740,9907
 # REMOVED --- Treskowallee, linker Gehweg	q3; 18567,8041 18642,8169 18672,8238
 # REMOVED --- Treskowallee, linker Gehweg	q3; 18650,8111 18406,7760
-Kreuzung Gregoroviusweg/Treskowallee	q1; 18748,9922 18740,9907
-Alt-Friedrichsfelde, linker Gehweg	q2; 19735,11721 19005,11767 18778,11742 18624,11712 18520,11685 18216,11656
-Alt-Friedrichsfelde, linker Gehweg	q2; 18626,11742 18624,11712
-Landsberger Allee, linker Gehweg	q2; 15256,14237 15430,14272
-Landsberger Allee, linker Gehweg	q3; 12974,13289 13073,13329
-Landsberger Allee, linker Gehweg	q3; 16590,14409 16665,14420
+#: note: früher "q2" vvv
+Alt-Friedrichsfelde, linker Gehweg, ggfs. absteigen	q3; 19735,11721 19005,11767 18778,11742 18624,11712 18520,11685 18216,11656
+Alt-Friedrichsfelde, linker Gehweg, ggfs. absteigen	q3; 18626,11742 18624,11712
+#: note ^^^
+#: note: früher "q2"
+Landsberger Allee, linker Gehweg, ggfs. absteigen	q3; 15256,14237 15430,14272
+#: note: früher "q3"
+Landsberger Allee, linker Gehweg, ggfs. absteigen	q3-; 12974,13289 13073,13329
+Landsberger Allee, linker Gehweg, ggfs. absteigen	q3; 16590,14409 16665,14420
 Landsberger Allee, Fußgängerampel	q3; 16590,14386 16590,14409
-Sonnenallee, linker Gehweg	q4; 13474,8060 13457,8069
-Bundesallee, linker Gehweg zur Durlacher Str.	q3; 5438,8402 5399,8344
-Bundesallee, linker Gehweg zur Straße Am Volkspark	q3; 5399,8344 5419,8415
+Sonnenallee, linker Gehweg, ggfs. absteigen	q4; 13474,8060 13457,8069
+#: note: früher "q3" vvv
+Bundesallee, linker Gehweg zur Durlacher Str., ggfs. absteigen	q3-; 5438,8402 5399,8344
+Bundesallee, linker Gehweg zur Straße Am Volkspark, ggfs. absteigen	q3-; 5399,8344 5419,8415
+#: note ^^^
 ## just to help the routing list
 Urbanstr.	q0; 11888,9189 11861,9183
-Badstr., linker Gehweg	q3; 8534,16355 8486,16412 8486,16425
-Tempelhofer Ufer, linker Gehweg	q4; 8810,10305 8717,10322 8661,10377
+#: note: früher "q3"
+Badstr., linker Gehweg, ggfs. absteigen	q3-; 8534,16355 8486,16412 8486,16425
+Tempelhofer Ufer, linker Gehweg, ggfs. absteigen	q4; 8810,10305 8717,10322 8661,10377
 Bebelplatz, diagonal über den Platz	q0 9737,12238 9702,12307 9664,12387
 Bebelplatz, diagonal über den Platz	q0 9680,12232 9702,12307 9713,12392
-Leipziger Str., linker Gehweg	q3; 9902,11704 9997,11713
-zur Ampel Jerusalemer Str.	q3; 9997,11713 10000,11691 9992,11682
-Columbiadamm, linker Gehweg	q3; 10796,8498 10799,8504 10913,8463
+#: note: früher "q3" vvv
+Leipziger Str., linker Gehweg, ggfs. absteigen	q3-; 9902,11704 9997,11713
+zur Ampel Jerusalemer Str.	q3-; 9997,11713 10000,11691 9992,11682
+#: note ^^^
+#: note: früher "q3"
+Columbiadamm, linker Gehweg, ggfs. absteigen	q3-; 10796,8498 10799,8504 10913,8463
 #: note: Münchener Str./Hohenstaufenstr.: von Norden nach Süden vvv
-Hohenstaufenstr., linker Gehweg bis zur Fußgängerampel	q3; 6209,9774 6237,9772
-zur Münchener Str. auf dem linken Gehweg	q3; 6237,9772 6209,9771
+#: note: früher "q3" vvv
+Hohenstaufenstr., linker Gehweg bis zur Fußgängerampel, ggfs. absteigen	q3-; 6209,9774 6237,9772
+zur Münchener Str. auf dem linken Gehweg, ggfs. absteigen	q3-; 6237,9772 6209,9771
+#: note ^^^
 #: note ^^^
 Karl-Lieknecht-Str., linker Gehweg	q3; 11082,13371 11070,13357
 #XXX evtl. umorganisieren: Landsberger Allee, linker Gehweg bis zur Fußgängerampel	q3; 16634,14373 16591,14372 16589,14400

@@ -26183,9 +26183,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2021-11-09 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-11-10 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 10. November 2021 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2021-11-16 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-11-17 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 17. November 2021 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26196,7 +26196,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
 #: priority: #A
-#: next_check: 2021-11-10
+#: next_check: 2021-11-17
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
@@ -27893,7 +27893,7 @@ EOF
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
 #: also_indoor: traffic (ex-G,H(falsch?))
 #: priority: #B vvv
-#: last_checked: 2021-10-08 vvv
+#: last_checked: 2021-11-10 vvv
 #: check_frequency: 60d vvv
 	q3::inwork 13391,16436 13630,16629
 Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
@@ -31045,7 +31045,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="4"
-#: last_checked: 2021-11-08 vvv
+#: last_checked: 2021-11-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -31243,7 +31243,7 @@ EOF
 #: also_indoor: traffic (H)
 #: XXX Stand 2021-07-31: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2021-10-08
+#: last_checked: 2021-11-10
 #: check_frequency: 30d
 	q3::inwork 14136,17170 13996,16959
 EOF
@@ -33323,6 +33323,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.326349,52.447526,26.07.2021,07:00',
        data  => <<EOF,
+#: note: Eintrag bei rbb am 10.11.2021 entfernt
 	q4::inwork; 5271,4547 5316,4637 5336,4676
 EOF
      },
@@ -33345,8 +33346,8 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-10-08
-#: check_frequency: 30d
+#: last_checked: 2021-11-10
+#: check_frequency: 14d
 #: next_check: 2021-11-30
 	q3::inwork 13057,14267 13158,14117
 EOF
