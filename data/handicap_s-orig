@@ -724,7 +724,7 @@ Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg
 #: XXX laut rbb (am 31.8.2021 entfernt) und Halteverbotsschildern bis 31.08.2021
 #: also_indoor: traffic (ex-H)
 #: priority: #B
-#: last_checked: 2021-11-08
+#: last_checked: 2021-11-11
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-08-31
 # REMOVED --- #: valid: -20210831
@@ -1400,7 +1400,9 @@ Karl-Marx-Allee - Kadiner Str.: Fußgänger	q3 13543,12326 13556,12302 13551,12266
 (Ludwig-Pick-Str. - Karl-Marx-Allee): einige Fußgänger	q1 13552,12435 13543,12326
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7926,12865 7907,12817
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7696,7562 7739,7531 7708,7539 7747,7521
-Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
+#: XXX_prog BS am Sackgassenende
+#: note: früher "q1", war aber deutlich zu optimistisch
+Heidenfeldstr.: Gehweg, Bordstein	q3 13433,13371 13383,13349
 (Gudrunstr. - Lichtenberger Brücke): Gehweg	q1 16837,11920 16833,11897 16818,11878
 #: XXX_prog BS an der Lichtenberger Brücke, ansonsten q1; man könnte aber auch am Monimbóplatz legal auf den Gehweg ohne Bordstein wechseln
 (Lichtenberger Brücke - Gudrunstr.): Gehweg, Bordstein	q3; 16803,11859 16818,11878
@@ -1670,9 +1672,9 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getränke-Hoffmann-Parkplatz): Parkplatz	q1 13202,11666 13186,11692 13173,11788
 #: XXX_prog BS am östlichen Ende, am westlichen ist abgesenkt, ansonsten q2
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fußgänger	q3 11236,11508 11174,11554
-#: XXX_prog BS am westlichen Ende, östliches ist leicht abgesenkt und eigentlich kein Problem (wenn es nicht zugeparkt ist)
-#: XXX Verbindung prüfen!
-(Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q2 11966,11832 12132,11788
+#: XXX_prog BS am westlichen Ende und kann zugeparkt sein, östliches ist leicht abgesenkt und kann auch zugeparkt sein
+#: note: früher "q2"
+(Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q3 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Fußgänger, Bäume	q3 12845,9304 12862,9273 12909,9085 12902,9066
 (an der Notfallaufnahme Charité): Notfallwagen, Fußgänger	q2 8833,13440 8836,13396 8806,13384 8736,13369 8665,13353
 #: XXX_prog BS am westlichen Ende, am östlichen existiert eine Bordsteinabsenkung; ansonsten (früher) q2
@@ -2305,7 +2307,8 @@ Idealpassage: Fußgänger, eng, Schrittgeschwindigkeit	q3 12434,8776 12582,8651
 #: XXX_prog BS (die umfahrbare Stufe vielleicht in ein BS umwandeln? Oder auch nicht)
 (entlang der Hedwigskathedrale): Fußgänger, Radfahren verboten, eine (umfahrbare) Stufe	q4 9808,12182 9775,12178 9771,12190 9747,12205
 #: XXX_prog BS (beide Enden, am nördlichen kann man es durch einen weiten Bogen umfahren, am südlichen auch, wenn man in Richtung W weiterfährt)
-(Am Wriezener Bahnhof - Rüdersdorfer Str.): enger Weg, Bordsteine	q2 12944,11760 13052,11867
+#: note: früher "q2"; rechtliche Lage unklar, einzige Ausschilderung "kein Winterdienst"
+(Am Wriezener Bahnhof - Rüdersdorfer Str.): enger Weg, Bordsteine	q3 12944,11760 13052,11867
 #: XXX_prog BS an der Normannenstr., aber relativ niedrig (ansonsten -> q1)
 (Normannenstr. - Jobcenter Lichtenberg): Bordstein, Fußgänger	q2 16056,12317 16068,12376
 (Normannenstr. - Jobcenter Lichtenberg): Fußgänger	q1 16068,12376 16080,12441 16089,12522
@@ -2753,8 +2756,8 @@ Geitnerweg: Bordstein, einige Fußgänger	q2 5420,511 5448,455
 Seydlitzstr.: einige Fußgänger	q1 6511,2284 6459,2364
 Trabener Steg: abgeflachte Treppenstufen, Fußgänger	q2 2142,10027 2131,10014 2128,9999
 Trabener Steg: abgeflachte Treppenstufen, Fußgänger	q2 2224,10083 2245,10092
-#: XXX Verbindung prüfen
-Wilhelm-Stolze-Str.: Fußgänger	q1 13267,13167 13233,13242
+#: note: früher "q1"
+Wilhelm-Stolze-Str.: Fußgänger	q3 13267,13167 13233,13242
 Regatta-Ufer: Fußgänger, Radfahren nicht erlaubt	q4 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
 Am Schwanenberg: einige Fußgänger	q1 15752,9385 15793,9334
 (Kaiser's-Parkplatz): Parkplatzverkehr, Fußgänger	q2 16058,6629 16138,6548
@@ -2813,8 +2816,7 @@ Berliner Freiheit: Fußgänger	q1 8481,11638 8387,11637
 Alfred-Kowalke-Str. [Mittelstreifen]: einige Fußgänger	q1 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): einige Fußgänger	q1 21467,9236 21511,9226
 Duftgeranienweg: Bodenschwellen, die leicht umfahren werden können	q0- 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
-#: XXX Verbindung prüfen (ist aber für das Routing nicht besonders interessant)
-Friedenstr. - Parkplatz: Fußgänger	q2 12131,13333 12152,13294 12141,13256 12107,13264 12066,13237
+# REMOVED --- #: XXX Verbindung prüfen (ist aber für das Routing nicht besonders interessant) --- Friedenstr. - Parkplatz: Fußgänger	q2 12131,13333 12152,13294 12141,13256 12107,13264 12066,13237
 #: XXX_prog BS ansonsten Eintrag entfernen
 Am Treptower Park: Bordstein	q2; 15166,8489 15079,8575
 (Kleiner Tiergarten): Fußgänger, Spielplatz	q2 6573,13149 6564,13260 6535,13327
@@ -3703,8 +3705,8 @@ Breslauer Platz/Lauterstr.: Fußgängerzone, Radfahrer frei	q3; 5810,7337 5817,722
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1133947.php
 #: confirmed_by: srt
 # REMOVED (wurde gesplittet) --- #: osm_watch: way id="4616246" version="24" --- #: osm_watch: way id="950186030" version="1" --- #: XXX zurzeit stehen die Barrieren so, dass man auf den Gehweg ausweichen muss --- #: last_checked: 2021-05-28 --- #: check_frequency: 14d --- #: next_check: 2021-05-14
-#: note: Stadtmobiliar auf den Fahrbahn (Bänke, Fahrradständer)
-Krautstr.: Fußgängerzone, Radfahrer frei	q2- 12002,12008 12021,12066
+#: note: Stadtmobiliar auf den Fahrbahn (Bänke, Fahrradständer), aber wenn hier keine Leute sind, dann kommt man gut durch
+Krautstr.: Fußgängerzone, Radfahrer frei	q2 12002,12008 12021,12066
 Waldeyerstr.: Fußgängerzone, Radfahrer frei	q2 15003,12241 15058,12329
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964891.php (kein Endedatum)
@@ -3772,6 +3774,10 @@ zur Eisenbahnbrücke: einige Fußgänger	q2 13207,9868 13259,9870 13302,9894
 Blankensteinpark: Fußgänger, Radfahren nicht erlaubt	q4+ 14130,12926 14146,12921 14289,12876
 #: note: rechtliche Lage unklar, asphaltierter Verkehrsbereich
 Mendelssohnstr. [Wohngebiet]: einige Fußgänger	q2 11433,13389 11486,13350
+#: note: Verbot für Fahrzeuge aller Art (Nordseite)
+Schulweg: einige Fußgänger	q3 12600,12860 12551,12785 12483,12682
+#: note: rechtliche Lage unklar, möglicherweise Gehweg
+Diestelmeyerstr.: einige Fußgänger	q3 12833,12920 12690,12769
 # 
 ######################### User Contributions #################################
 # 
@@ -4120,13 +4126,14 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Berolinastr. - Mollstr.): Fußgänger, Bordstein	q3 11865,13027 11874,13048 11896,13075
 #: XXX_prog BS (zur Mollstr. hin)
 (Berolinastr. - Mollstr.): Fußgänger, Bordstein	q2 11656,13100 11681,13161
-(Lichtenberger Str.): Fußgänger	q1 12054,12903 12039,12675
+#: note: Charakter eine Service-Straße mit Fußgängerbenutzung; Verbot für Fahrzeuge aller Art (schwarz statt rot)
+(Lichtenberger Str.): Fußgänger	q2 12054,12903 12039,12675
 #: XXX_prog BS (zur Georgenkirchstr. hin) (ansonsten wäre es q1)
-#: XXX Verbindung prüfen (ist aber für das Routing nicht besonders interessant)
-(Verbindungsweg): Fußgänger, Bordstein	q2 11667,13465 11703,13426
+#: note: Grünanlagenschild
+(Verbindungsweg): Fußgänger, schmal, Bordstein	q3 11667,13465 11703,13426
 #: corrected_by: srt ("Wurzeln" entfernt, "Schule" hinzugefügt)
 #: note: unklar, ob es sich hier um einen reinen Gehweg handelt; früher "q2"
-Weinstr.: Fußgänger, Schulen	q3 11785,13241 11909,13387
+Weinstr.: Fußgänger, Schulen	q3 11774,13251 11909,13387
 #: note: früher "q2"
 (Mollstr. - Barnimstr.): Fußgänger, Radfahren offiziell nicht erlaubt	q4+ 11723,13139 11749,13215
 Brüder-Grimm-Gasse: Fußgänger	q2 8351,11163 8343,11133
@@ -4163,11 +4170,10 @@ Bautzener Platz: Fufgänger, Bordsteine	q3 8102,9262 8183,9260
 #: XXX ^^^
 #: note: früher "q1"
 Ernst-Fürstenberg-Str.: Fußgänger, schmal	q3 13049,14141 12992,14196
-An der Brauerei: Fußgänger	q1 13288,13300 13279,13323
-#: XXX q1 aber gleichzeitig N --- ist hier eine Service-Straße? Ist Fußgänger+q1 vielleicht falsch?
-An der Brauerei: Fußgänger	q1 13279,13323 13375,13367
-#: note: früher q2, wären die tatsächlich möglich gewesen?
-An der Brauerei: Fußgänger	q4+ 13279,13323 13246,13420
+# REMOVED (hier nicht) --- An der Brauerei: Fußgänger	q1 13288,13300 13279,13323
+# REMOVED (hier gibt's eine Servicestraße) --- #: XXX q1 aber gleichzeitig N --- ist hier eine Service-Straße? Ist Fußgänger+q1 vielleicht falsch? --- An der Brauerei: Fußgänger	q1 13279,13323 13375,13367
+#: note: teilweise Servicestraßen-Charakter, nur die letzten Meter zur Landsberger Allee reiner Fußweg
+An der Brauerei: Fußgänger	q2 13279,13323 13246,13420
 (Friedhofsweg): Fußgänger, Radfahren nicht erlaubt	q4 12851,12602 13108,12859 13046,12956 12878,13229
 (Friedhofsweg): Fußgänger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
 # REMOVED (bleibt bei q2) --- #: next_check_id: RITTER-2014 --- #: XXX erstmal q2, vielleicht später wieder q1 --- #: last_checked: 2015-06-02 --- #: check_frequency: 14d
@@ -4195,10 +4201,8 @@ Vereinsweg (Steglitz): Fußgänger, Privatstraße, Radfahren nicht erlaubt	q4 5334,
 (Volkspark Friedrichshain): kurze Rampe an der Friedenstr.	q3 12244,13240 12236,13229
 (Volkspark Friedrichshain): Fußgänger	q2 12369,13209 12369,13252 12341,13309 12307,13329 12206,13326 12166,13349 12141,13341
 (Volkspark Friedrichshain): Fußgänger	q2 12141,13609 12012,13599 12038,13685
-#: XXX ist hier eine Parkplatzzufahrt?
-(Zufahrt Landsberger Allee): Fußgänger	q2 13433,13346 13397,13426
-#: note: früher q2, wären die möglich gewesen
-(Zufahrt Landsberger Allee): Fußgänger	q4+ 13397,13426 13574,13505
+# REMOVED (falsch gewesen) --- #: XXX ist hier eine Parkplatzzufahrt? --- (Zufahrt Landsberger Allee): Fußgänger	q2 13445,13376 13419,13435
+# REMOVED --- #: note: früher q2, wären die möglich gewesen? --- (Zufahrt Landsberger Allee): Fußgänger	q4+ 13419,13435 13574,13505
 (Verlängerte Wallenbergstr.): Fußgänger, schmal	q3 4139,8485 3992,8487
 (Zufahrt zur Kolonie Hohenzollerndamm): Fußgänger, Poller	q2 3751,8796 3858,8786
 #: XXX_prog: Bordstein am nördlichen Ende, ansonsten wäre es q1

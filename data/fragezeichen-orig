@@ -299,7 +299,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: source_id: 2147342170 vvv
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72
 #: osm_watch: way id="336565341" version="10" vvv
-#: last_checked: 2021-10-19 (mapillary) vvv
+#: last_checked: 2021-11-11 vvv
 #: check_frequency: 120d vvv
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 #: check_frequency ^^^
@@ -3666,10 +3666,10 @@ Wundtstr./Horstweg: Können Radfahrer nach den Bauarbeiten durchfahren?	? 2888,11
 # REMOVED (vermutet) --- #: XXX wird die Einbahnstraßenregelung im Weidenweg für weniger Schleichverkehr sorgen? (-> comments_kfzverkehr anpassen)
 # REMOVED (realisiert) --- #: osm_watch: way id="29052147" version="29"
 # REMOVED (realisiert) --- #: osm_watch: way id="351509721" version="7"
-#: XXX Fahrradstraßen- und Vorfahrtsschilder in der Rigaer Str. sind vorbereitet
+#: XXX Fahrradstraßen- und Vorfahrtsschilder in der Rigaer Str. sind vorbereitet, Markierungsarbeiten laufen
 #: osm_watch: way id="4685718" version="27"
-#: last_checked: 2021-11-10 vvv
-#: check_frequency: 10d vvv
+#: last_checked: 2021-11-11 vvv
+#: check_frequency: 7d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (realisiert) --- Palisadenstr.: Ausbau zur Fahrradstraße	? 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
 # REMOVED (realisiert) --- Weidenweg: Ausbau zur Fahrradstraße	? 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
@@ -5030,6 +5030,7 @@ Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,1073
 #: source_id: 2147345383 (bis 06.03.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun? -> nein, das ist an der Saganer Str.) (nicht mehr aktiv)
 #: source_id: 2147345563 (bis 24.04.2020, aber keine Anzeichen für Bauarbeiten) (nicht mehr aktiv)
 #: source_id: viz2021:13.475605,52.501281,10.11.2021,13:00 (Leitungsarbeiten bis 17.12.2021)
+#: source_id: viz2021:13.486546,52.496468,15.11.2021,07:00 (Leitungsarbeiten bis 19.11.2021)
 #: last_checked: 2021-11-02
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
@@ -5076,7 +5077,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 18
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2021-10-22
+#: last_checked: 2021-11-11
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: by: https://api.fixmyberlin.de/api/projects/328 (Grünmarkierung + Verbreiterung, teilweise Leitboys)
@@ -5898,6 +5899,7 @@ B167 Neuhardenberg - Altfriedland: Radweg geplant	?::projected 65524,23028 65031
 #: by: https://www.bwb.de/de/24277_24683.php (Ende der Bauarbeiten: Mitte 2023)
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/sperrungen-auf-osdorfer-strasse_a297665
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/berliner-wasserbetriebe-erneuern-abwasserdruckleitungen-zum-klaerwerk-stahnsdorf_a325118 (Bauarbeiten auf Berliner Seite)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1145097.php (Bauarbeiten der Wasserbetriebe auf Berliner Seite)
 #: XXX wo genau befindet sich der Abschnitt? Auch in Berlin?
 #: osm_watch: way id="188869582" version="12"
 #: osm_watch: way id="29612540" version="19"
@@ -5974,7 +5976,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Baubeginn Mitte 2021)
 #: XXX beide Fahrtrichtungen?
-#: last_checked: 2021-11-09
+#: last_checked: 2021-11-11
 #: check_frequency: 90d
 Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 # 

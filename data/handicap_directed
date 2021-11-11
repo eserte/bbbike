@@ -144,8 +144,8 @@ Oranienburger Str. - Frommpromenade: Umweg zur Fußgängerfurt	DH:len=50 5476,2037
 Frommpromenade - Oranienburger Str.: Fußgängerfurt benutzen	DH:h=q3,25 5350,20495 5463,20461 5441,20613
 Urbanstr. - Kottbusser Damm: Radwegführung mit Umweg	DH:len=65 11861,9183 11909,9155 11888,9189
 Tegeler Weg - Uferweg: Umweg über Jakob-Kaiser-Platz	DH:len=110:tl 2935,13927 2881,14061 2817,14003
-Schulweg -> Friedenstr.: Umweg wegen Mittelstreifen	DH:len=60 12483,12682 12594,12866 12520,12938
-Friedenstr. -> Schulweg: linken Gehweg benutzen	DH:h=q3,30 12616,12844 12594,12866 12483,12682
+Schulweg -> Friedenstr.: Umweg wegen Mittelstreifen	DH:len=60 12483,12682 12551,12785 12600,12860 12520,12938
+Friedenstr. -> Schulweg: linken Gehweg benutzen	DH:h=q3,30 12616,12844 12600,12860 12551,12785 12483,12682
 Sulzfelder Str. -> Buschallee: Umweg zur Fußgängerampel	DH:len=20:tl 15120,16349 15134,16499 14809,16525
 Mittelstreifen Rudolf-Schwarz-Str.: zwei Bordsteine	DH:t=10 13084,14472 13009,14371 12949,14292
 Mittelstreifen Rudolf-Schwarz-Str.: zwei Bordsteine	DH:t=10 13084,14472 13009,14371 13079,14320
@@ -166,3 +166,5 @@ Bornstedter Str. - Kurfürstendamm: linker Geh/Radweg	DH:h=q3,120 2551,9995 2590,
 Berolinastr. - Karl-Marx-Allee: Umweg über Ampel Schillingstr.	DH:len=90:tl 11716,12803 11678,12727 11976,12595
 Habelschwerdter Allee - Schwendenerstr.: Umweg wegen Mittelstreifens	DH:len=50 2732,4741 2745,4729 2816,4789
 Schwendenerstr. - Habelschwerdter Allee: Umweg wegen Mittelstreifens	DH:len=50 2816,4789 2745,4729 2762,4713
+Schulweg - Palisadenstr.: Absperrgitter, Umweg zum Zebrastreifen	DH:len=30:h=q3,15 12551,12785 12483,12682 12632,12630
+Palisadenstr. - Schulweg: Absperrgitter, frühzeitig auf den Bürgersteig wechseln	DH:h=q3,25 12632,12630 12483,12682 12551,12785

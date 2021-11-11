@@ -410,7 +410,7 @@ Karl-Marx-Allee - Kadiner Str.: Fuﬂg‰nger	q3 13543,12326 13556,12302 13551,12266
 (Ludwig-Pick-Str. - Karl-Marx-Allee): einige Fuﬂg‰nger	q1 13552,12435 13543,12326
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7926,12865 7907,12817
 (s¸dliche Fahrbahn des Sachsendamms - Naturpark Schˆneberg): Rampe	q2 7696,7562 7739,7531 7708,7539 7747,7521
-Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
+Heidenfeldstr.: Gehweg, Bordstein	q3 13433,13371 13383,13349
 (Gudrunstr. - Lichtenberger Br¸cke): Gehweg	q1 16837,11920 16833,11897 16818,11878
 (Lichtenberger Br¸cke - Gudrunstr.): Gehweg, Bordstein	q3; 16803,11859 16818,11878
 (Gudrunstr. - Lichtenberger Br¸cke): Gehweg, Bordstein	q3; 16818,11878 16803,11859
@@ -616,7 +616,7 @@ Kiautschoustr.: Fuﬂg‰nger, Bordsteine	q3 6837,14848 6853,14854
 Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getr‰nke-Hoffmann-Parkplatz): Parkplatz	q1 13202,11666 13186,11692 13173,11788
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fuﬂg‰nger	q3 11236,11508 11174,11554
-(Entlang des Stadtbahnviadukts): Bordsteine, Fuﬂg‰nger	q2 11966,11832 12132,11788
+(Entlang des Stadtbahnviadukts): Bordsteine, Fuﬂg‰nger	q3 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Fuﬂg‰nger, B‰ume	q3 12845,9304 12862,9273 12909,9085 12902,9066
 (an der Notfallaufnahme CharitÈ): Notfallwagen, Fuﬂg‰nger	q2 8833,13440 8836,13396 8806,13384 8736,13369 8665,13353
 (Lasdehner Str. - Gubener Str.): Fuﬂg‰nger, Bordsteine	q4 13375,12062 13339,12029
@@ -1099,7 +1099,7 @@ Elisabeth-Schwarzhaupt-Platz: einige Fuﬂg‰nger	q1 9274,13963 9167,14127
 (Bl¸cherplatz - Johanniterstr.): Fuﬂg‰nger, Gr¸nanlage, Bordstein	q4 9702,10129 9816,10119 9837,10117
 Idealpassage: Fuﬂg‰nger, eng, Schrittgeschwindigkeit	q3 12434,8776 12582,8651
 (entlang der Hedwigskathedrale): Fuﬂg‰nger, Radfahren verboten, eine (umfahrbare) Stufe	q4 9808,12182 9775,12178 9771,12190 9747,12205
-(Am Wriezener Bahnhof - R¸dersdorfer Str.): enger Weg, Bordsteine	q2 12944,11760 13052,11867
+(Am Wriezener Bahnhof - R¸dersdorfer Str.): enger Weg, Bordsteine	q3 12944,11760 13052,11867
 (Normannenstr. - Jobcenter Lichtenberg): Bordstein, Fuﬂg‰nger	q2 16056,12317 16068,12376
 (Normannenstr. - Jobcenter Lichtenberg): Fuﬂg‰nger	q1 16068,12376 16080,12441 16089,12522
 (Normannenstr. - Jobcenter Lichtenberg): teilweise auf Geweg ausweichen	q2 16089,12522 16122,12524 16132,12621
@@ -1430,7 +1430,7 @@ Geitnerweg: Bordstein, einige Fuﬂg‰nger	q2 5420,511 5448,455
 Seydlitzstr.: einige Fuﬂg‰nger	q1 6511,2284 6459,2364
 Trabener Steg: abgeflachte Treppenstufen, Fuﬂg‰nger	q2 2142,10027 2131,10014 2128,9999
 Trabener Steg: abgeflachte Treppenstufen, Fuﬂg‰nger	q2 2224,10083 2245,10092
-Wilhelm-Stolze-Str.: Fuﬂg‰nger	q1 13267,13167 13233,13242
+Wilhelm-Stolze-Str.: Fuﬂg‰nger	q3 13267,13167 13233,13242
 Regatta-Ufer: Fuﬂg‰nger, Radfahren nicht erlaubt	q4 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
 Am Schwanenberg: einige Fuﬂg‰nger	q1 15752,9385 15793,9334
 (Kaiser's-Parkplatz): Parkplatzverkehr, Fuﬂg‰nger	q2 16058,6629 16138,6548
@@ -1474,7 +1474,6 @@ Berliner Freiheit: Fuﬂg‰nger	q1 8481,11638 8387,11637
 Alfred-Kowalke-Str. [Mittelstreifen]: einige Fuﬂg‰nger	q1 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): einige Fuﬂg‰nger	q1 21467,9236 21511,9226
 Duftgeranienweg: Bodenschwellen, die leicht umfahren werden kˆnnen	q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
-Friedenstr. - Parkplatz: Fuﬂg‰nger	q2 12131,13333 12152,13294 12141,13256 12107,13264 12066,13237
 Am Treptower Park: Bordstein	q2; 15166,8489 15079,8575
 (Kleiner Tiergarten): Fuﬂg‰nger, Spielplatz	q2 6573,13149 6564,13260 6535,13327
 Gleisdreieckpark: Rampe	q2 8011,10085 8013,10055 8027,10074 8042,10084
@@ -2190,6 +2189,8 @@ Bahndamm: einige Fuﬂg‰nger	q1 13966,9340 13934,9365 13476,9720 13282,9828 13207,
 zur Eisenbahnbr¸cke: einige Fuﬂg‰nger	q2 13207,9868 13259,9870 13302,9894
 Blankensteinpark: Fuﬂg‰nger, Radfahren nicht erlaubt	q4 14130,12926 14146,12921 14289,12876
 Mendelssohnstr. [Wohngebiet]: einige Fuﬂg‰nger	q2 11433,13389 11486,13350
+Schulweg: einige Fuﬂg‰nger	q3 12600,12860 12551,12785 12483,12682
+Diestelmeyerstr.: einige Fuﬂg‰nger	q3 12833,12920 12690,12769
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2345,9 +2346,9 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0 7959,10910 8119,10797
 (Berolinastr.): Weg am Spielplatz vorbei	q2 11865,13027 11815,13045
 (Berolinastr. - Mollstr.): Fuﬂg‰nger, Bordstein	q3 11865,13027 11874,13048 11896,13075
 (Berolinastr. - Mollstr.): Fuﬂg‰nger, Bordstein	q2 11656,13100 11681,13161
-(Lichtenberger Str.): Fuﬂg‰nger	q1 12054,12903 12039,12675
-(Verbindungsweg): Fuﬂg‰nger, Bordstein	q2 11667,13465 11703,13426
-Weinstr.: Fuﬂg‰nger, Schulen	q3 11785,13241 11909,13387
+(Lichtenberger Str.): Fuﬂg‰nger	q2 12054,12903 12039,12675
+(Verbindungsweg): Fuﬂg‰nger, schmal, Bordstein	q3 11667,13465 11703,13426
+Weinstr.: Fuﬂg‰nger, Schulen	q3 11774,13251 11909,13387
 (Mollstr. - Barnimstr.): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q4 11723,13139 11749,13215
 Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133
 (zum Anhalter Steg): Fuﬂg‰nger	q2 8668,10219 8668,10236 8715,10314
@@ -2373,9 +2374,7 @@ Bautzener Platz: Fufg‰nger, Bordsteine	q3 8102,9262 8183,9260
 (Anton-Saefkow-Str. - John-Schehr-Str.): Fuﬂg‰nger, Bordstein	q2 13084,14472 13009,14371
 (Anton-Saefkow-Str. - John-Schehr-Str.): Fuﬂg‰nger, Bordstein	q2 13009,14371 12949,14292
 Ernst-F¸rstenberg-Str.: Fuﬂg‰nger, schmal	q3 13049,14141 12992,14196
-An der Brauerei: Fuﬂg‰nger	q1 13288,13300 13279,13323
-An der Brauerei: Fuﬂg‰nger	q1 13279,13323 13375,13367
-An der Brauerei: Fuﬂg‰nger	q4 13279,13323 13246,13420
+An der Brauerei: Fuﬂg‰nger	q2 13279,13323 13246,13420
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12851,12602 13108,12859 13046,12956 12878,13229
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
 Ritterstr.: Fuﬂg‰nger, Spielplatz	q3 9763,11148 9935,11067
@@ -2400,8 +2399,6 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5334,
 (Volkspark Friedrichshain): kurze Rampe an der Friedenstr.	q3 12244,13240 12236,13229
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12369,13209 12369,13252 12341,13309 12307,13329 12206,13326 12166,13349 12141,13341
 (Volkspark Friedrichshain): Fuﬂg‰nger	q2 12141,13609 12012,13599 12038,13685
-(Zufahrt Landsberger Allee): Fuﬂg‰nger	q2 13433,13346 13397,13426
-(Zufahrt Landsberger Allee): Fuﬂg‰nger	q4 13397,13426 13574,13505
 (Verl‰ngerte Wallenbergstr.): Fuﬂg‰nger, schmal	q3 4139,8485 3992,8487
 (Zufahrt zur Kolonie Hohenzollerndamm): Fuﬂg‰nger, Poller	q2 3751,8796 3858,8786
 Apeldorner Weg: Fuﬂg‰nger, Bordstein	q2 3822,8718 3858,8786 3952,8980

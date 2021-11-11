@@ -203,7 +203,7 @@ Stromstr: kann über schmale Furt (keine Anhänger!) gequert werden	CP 6190,12978 
 # REMOVED ("normale" Straße, die Märkte sind besser über "An der Ostbahn" erschlossen, jedenfalls für KfZ) --- #: XXX stimmt das noch mit den Märkten? --- Am Wriezener Bahnhof: Privatstraße zu diversen Märkten	CS 12794,11893 12944,11760 12993,11717
 #: XXX_prog should be superseded by a superiour BNP-like implementation/wird irgendwann mal zu "BS" vvv
 Bordstein	CP 12054,12903 11987,12946 11921,12990
-Bordstein	CP2; 12483,12682 12594,12866
+Bordstein	CP2; 12483,12682 12551,12785
 #: XXX_prog ^^^
 Wilhelmstr.: Fahrbahn vor der britischen Botschaft für Autos gesperrt, passierbar für Radfahrer	CS 8861,12125 8804,12280
 # REMOVED --- Am Petersberg: Privatstraße	CS 948,5597 820,5455
@@ -1284,8 +1284,6 @@ Falkoniergasse: nicht ausgeschildert	CS 9939,12174 9909,12261
 #: by: Detlef Westphal
 Alter Radelander Weg: nicht ausgeschildert	CP2; 23457,35 24158,-1153
 # 
-Barnimstr.: nicht ausgeschildert	CS 11762,13207 11785,13241
-# 
 # REMOVED (mittlerweile gibt's ein provisorisches Schild, reicht) --- #: next_check_id: KARLINEKENWEG-2018 --- #: last_checked: 2018-05-27 (osm) --- #: check_frequency: 60d --- Karlinekenweg: noch nicht ausgeschildert	CS 11359,20297 11405,20196 11422,20202 11476,20058 11496,20068 11537,20087
 # 
 ausgeschildert als Heimkehlenstr. und Sonneberger Weg	CP2; 5570,1712 5592,1720
@@ -1586,6 +1584,8 @@ ausgeschildert "Fußweg Grünverbindung Dietzgenstraße 60/Kreuzgraben"	CP2; 10098,
 Kuckuckweg: ausgeschildert, allerdings sieht man das Schild nur von der anderen Seite	CP 20187,8442 20224,8441 20226,8354
 # 
 ausgeschildert "Finkenkruger Weg 69c"	CP2; -7371,15201 -7408,15219
+# 
+ausgeschildert "Joe-May-Platz"	CP2; 14343,17228 14282,17186
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)

@@ -1534,11 +1534,11 @@ Matternstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13798,13003 13579
 Straßenbahntrasse	3nocross::ignrte 13530,13014 13487,13115 13434,13234
 Petersburger Str. -> Ebelingstr.: Straßenbahntrasse	3::igndisp 13434,13234 13487,13115 13610,13169
 Ebelingstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13610,13169 13487,13115 13530,13014
-Straßenbahntrasse	3nocross::ignrte 13330,13468 13375,13367 13393,13326 13434,13234
-Petersburger Str. -> An der Brauerei: Straßenbahntrasse	3::igndisp 13393,13326 13375,13367 13279,13323
+Straßenbahntrasse	3nocross::ignrte 13330,13468 13375,13367 13383,13349 13434,13234
+Petersburger Str. -> An der Brauerei: Straßenbahntrasse	3::igndisp 13383,13349 13375,13367 13279,13323
 An der Brauerei -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13279,13323 13375,13367 13330,13468
-Petersburger Str. -> Heidenfeldstr.: Straßenbahntrasse	3::igndisp 13375,13367 13393,13326 13433,13346
-Heidenfeldstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13433,13346 13393,13326 13434,13234
+Petersburger Str. -> Heidenfeldstr.: Straßenbahntrasse	3::igndisp 13375,13367 13383,13349 13433,13371
+Heidenfeldstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13433,13371 13383,13349 13434,13234
 Bahntrasse	3nocross::ignrte 16635,2796 16677,2856 16786,2989
 Krokusstr. -> Stubenrauchstr.: Bahntrasse	3::igndisp 16739,2736 16677,2856 16635,2796
 Stubenrauchstr. -> Krokusstr.: Bahntrasse	3::igndisp 16786,2989 16677,2856 16739,2736

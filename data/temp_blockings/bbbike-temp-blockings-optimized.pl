@@ -4483,7 +4483,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="4"
-#: last_checked: 2021-11-10 vvv
+#: last_checked: 2021-11-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -5097,15 +5097,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: BUCKOWERDAMM-2021
 #: source_id: viz2021:13.438231,52.41937,02.06.2021,08:00
+#: source_id: viz2021:13.438231,52.41937,13.11.2021,08:00
 # REMOVED ---	q4::inwork 12984,1011 12941,1256 12938,1348
 	q4::inwork 12938,1348 12939,1469 12940,1547
 ',
          'from' => 1622527200,
          'id' => 3387,
          'source_id' => '2147347243',
-         'text' => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 30.11.2021 17:00 Uhr ',
+         'text' => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 23.12.2021 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1638288000
+         'until' => 1640275200
        },
        undef,
        undef,

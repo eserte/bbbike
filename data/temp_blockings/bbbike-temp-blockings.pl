@@ -3600,6 +3600,7 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.989619.php (fällt 2020 wegen Corona aus)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/?date=20211026 (fällt 2021 ebenfalls aus)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1145105.php (Absage 2021)
 	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -31045,7 +31046,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="4"
-#: last_checked: 2021-11-10 vvv
+#: last_checked: 2021-11-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32925,13 +32926,14 @@ EOF
 EOF
      },
      { from  => 1622527200, # 2021-06-01 08:00
-       until => $isodate2epoch->("2021-11-30 17:00:00"), # 1630422000, # 2021-08-31 17:00
-       text  => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 30.11.2021 17:00 Uhr ', # ursprünglich: Gerlinger Str./Ringslebenstr. und Stuthirtenweg/Stadtgrenze
+       until => $isodate2epoch->("2021-12-23 17:00:00"), # 1630422000, # 2021-08-31 17:00
+       text  => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 23.12.2021 17:00 Uhr ', # ursprünglich: Gerlinger Str./Ringslebenstr. und Stuthirtenweg/Stadtgrenze
        type  => 'handicap',
        source_id => '2147347243',
        data  => <<EOF,
 #: next_check_id: BUCKOWERDAMM-2021
 #: source_id: viz2021:13.438231,52.41937,02.06.2021,08:00
+#: source_id: viz2021:13.438231,52.41937,13.11.2021,08:00
 # REMOVED ---	q4::inwork 12984,1011 12941,1256 12938,1348
 	q4::inwork 12938,1348 12939,1469 12940,1547
 EOF

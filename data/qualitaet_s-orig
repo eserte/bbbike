@@ -991,7 +991,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-11-09
+#: last_checked: 2021-11-11
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1903,7 +1903,8 @@ Fontanepromenade: Kopfsteinpflaster	Q2 10617,9353 10706,9554 10746,9646 10760,96
 Freiligrathstr.: Kopfsteinpflaster	Q2 10905,9472 10735,9542
 Südstern: gutes Kopfsteinpflaster	Q1 10749,9342 10741,9344 10695,9315 10656,9333 10647,9337
 Südstern: Kopfsteinpflaster	Q2 10647,9337 10617,9353 10580,9361
-Samariterstr.: Kopfsteinpflaster	Q2 14488,12188 14538,12371 14570,12478 14588,12542 14591,12555 14596,12573 14599,12584 14628,12682 14661,12798
+Samariterstr.: Kopfsteinpflaster	Q2 14488,12188 14538,12371 14570,12478 14588,12542 14591,12555 14596,12573 14599,12584 14628,12682
+Samariterstr.: Kopfsteinpflaster	Q2- 14628,12682 14661,12798
 Fanningerstr.: Asphalt, Parkstreifen mit Kopfsteinpflaster	Q0 16255,12224 16359,12207 16456,12191
 Fanningerstr.: Asphalt	Q0 16456,12191 16556,12180 16657,12165 16794,12144
 Fanningerstr.: Betonplatten in der Mitte, Kopfsteinpflaster außen	Q0- 16794,12144 16890,12135 16950,12125
@@ -2248,7 +2249,8 @@ Dubrowstr.: Kopfsteinpflaster	Q2 -1453,3166 -1187,3264
 Gabelsbergerstr.: Kopfsteinpflaster	Q2 14381,12207 14451,12396
 #: note: simon hahn hat hier "schlechtes" Kopfsteinpflaster geschrieben, aber es sah recht normal = Q2 aus
 Hübnerstr.: Kopfsteinpflaster	Q2 13960,12866 13911,12692
-Heidenfeldstr.: Kopfsteinpflaster	Q2 13609,13427 13433,13346
+Heidenfeldstr.: Gehwegpflasterung	Q0- 13433,13371 13383,13349
+Heidenfeldstr.: Kopfsteinpflaster	Q2 13601,13445 13445,13376 13433,13371
 Neue Promenade: unebenes Pflaster	Q2+ 10286,13084 10263,13047 10185,12982 10132,12941
 Neue Promenade: unebenes Pflaster	Q2+ 10264,13097 10263,13047
 #: note: teilweise Schotter, teilweise alter Asphalt (?)
@@ -3372,7 +3374,7 @@ Erich-Müller-Str.: Asphalt	Q0 16038,9837 15948,9902 15936,9911 15892,9941 15840,
 Viehtrift: Asphalt	Q0 14130,12926 14029,12954 14015,12958 13886,12995
 Am Viehhof: Verbundsteinpflaster	Q1+ 14015,12958 13979,12861
 Zur Waage: Asphalt	Q0 14029,12954 14067,13050
-Zur Börse: Asphalt	Q0 14166,13024 14067,13050 13930,13100
+Zur Börse: Asphalt	Q0 14166,13024 14067,13050 13926,13090
 Zur Marktflagge: Asphalt	Q0 14180,13064 14086,13090 14035,13104 13943,13129
 Zur Innung: Asphalt	Q0 14086,13090 14132,13234
 (Zur Waage - Zur Innung): teilweise Kopfsteinpflaster	Q1- 14067,13050 14086,13090
@@ -9642,7 +9644,7 @@ IKEA-Parkplatz: Verbundsteinpflaster	Q1+ 7991,6938 8071,7006 8078,7029 8077,7040
 (Weg im Blankensteinpark): Kopfsteinpflaster	Q2 14376,12849 14289,12876
 (Weg im Blankensteinpark): Asphalt	Q0 14289,12876 14146,12921 14130,12926
 #: note: parallel verlaufende Fahrbahn ist mit Kopfsteinpflaster
-(Weg im Blankensteinpark): Asphalt	Q0 14355,13109 14289,12876
+(Weg im Blankensteinpark): Asphalt	Q0 14355,13109 14289,12876 14268,12799
 Götzstr. - Albrechtstr.: Verbundsteinpflaster	Q1 9389,6348 9381,6277
 (zum Parkplatz Rathaus Tempelhof): Verbundsteinpflaster	Q1 9346,6352 9389,6348
 (Berlinische Galerie): Asphalt	Q0 10056,10831 9966,10874
@@ -11590,7 +11592,7 @@ Parchimer Str. [Stichstraße]: Beton	Q1 22225,12281 22200,12267 22096,12267 22094
 (Fleischerstr. - Grünanlage): Verbundsteinpflaster	Q1 16433,1180 16450,1135 16457,1129
 #: next_check_id: BUCKOWERDAMM-2021
 #: add_fragezeichen: Wurden während der Bauarbeiten die Asphaltschäden ausgebessert?
-#: next_check: 2021-11-30
+#: next_check: 2021-12-23
 Buckower Damm: Asphalt mit Schäden	Q1 12938,1348 12939,1469 12940,1547
 Am Waldrand: Asphalt	Q0 -9393,445 -9407,514 -9412,546
 via Tilia: Kopfsteinpflaster	Q2- -7518,-1175 -7520,-1164 -7534,-1111 -7494,-1071 -7326,-1121 -7310,-1131
@@ -12306,6 +12308,8 @@ Hauptstr. [23 D-H]: Verbundsteinpflaster	Q1+ -7884,13614 -7906,13549 -7925,13550
 (Bornitzstr. - Straße 15): Kopfsteinpflaster	Q2 16440,12895 16439,12979
 Messelstr.: vereinzelte Hebungen und Schäden, können aber gut umfahren werden	Q0- 2606,6708 2403,6962 2304,7059 2139,7239 2017,7412 1956,7453
 Müggelstr.: Mosaikpflaster	Q1 14994,12121 14994,12064
+(Barnimstr. - Mollstr.): Beton	Q0- 11785,13241 11762,13207
+Heidenfeldstr. [Stichstraße]: Beton	Q1 13445,13376 13419,13435
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -27498,7 +27502,7 @@ Verlängerte Schulzendorfer Str.: mäßig bis gut befahrbarer Waldweg, je nach Witt
 # 
 ######################################################################
 #: by: Andreas Mühlhausen (bis zum Ende der Datei...)
-Erich-Nehlhans-Str.: Asphalt	Q0 13999,13276 14089,13247 14132,13234 14231,13204
+Erich-Nehlhans-Str.: Asphalt	Q0 13998,13272 14089,13247 14132,13234 14231,13204
 Richard-Ermisch-Str.: Asphalt	Q0 14252,13263 14231,13204 14211,13150 14180,13064 14166,13024 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14682,12874 14588,12901 14536,12916 14480,12932 14411,12951
 (Parkweg): Asphalt	Q0 14690,12900 14419,12978
@@ -27592,25 +27596,27 @@ Weydemeyerstr.: mäßiger Beton, Fugen	Q2+ 11716,12803 11809,12760 11933,12701 119
 (Berolinastr. - Mollstr.): Gehwegplatten	Q0 11865,13027 11874,13048 11896,13075
 (Berolinastr. - Mollstr.): Beton/Verbundsteine/gepflastert	Q1- 11609,12986 11656,13100 11681,13161
 (Lichtenberger Str.): Verbundsteine	Q1 12054,12903 12039,12675
-Barnimstr.: Beton	Q0 11561,13451 11608,13417 11652,13372 11785,13241
-Mollstr. [Wohngebiet]: Beton	Q0 11881,13147 11762,13207 11749,13215 11639,13268 11643,13279 11589,13305 11578,13310
+#: corrected_by: srt (Beton -> ...)
+Barnimstr.: Asphalt	Q0 11561,13451 11608,13417 11652,13372 11765,13260
+#: confirmed_by: srt
+Barnimstr.: Beton	Q0- 11765,13260 11774,13251 11785,13241
+#: corrected_by: srt (Q0 -> Q1+)
+Mollstr. [Wohngebiet]: Beton	Q1+ 11881,13147 11762,13207 11749,13215 11639,13268 11643,13279 11589,13305 11578,13310
 # REMOVED (existiert nicht mehr) --- (Erschließungstr./Parkplatz): Beton	Q0 11608,13417 11546,13327 11589,13305
-#: corrected_by: srt (Q0 -> Q0-)
-(Erschließungsstr.): Beton	Q0- 11608,13417 11652,13478 11667,13465
+#: corrected_by: srt (Q0 -> Q1+)
+(Erschließungsstr.): Beton	Q1+ 11608,13417 11652,13478 11667,13465
 #: corrected_by: srt (Q1 -> Q1-, added Kleinsteinpflaster)
 (Verbindungsweg): Kleinsteinpflaster	Q1- 11667,13465 11703,13426
 #: corrected_by: srt (Asphalt stark verwurzelt, Q3 -> ...)
-Weinstr.: Verbundsteinpflaster	Q1 11785,13241 11909,13387
+Weinstr.: Verbundsteinpflaster	Q1 11774,13251 11909,13387
 Weinstr.: Asphalt	Q0+ 11909,13387 11992,13467
 (Netto-Parkplatz): Verbundsteinpflaster	Q0- 11881,13147 11884,13145 11952,13095 11958,13079
-#: corrected_by: srt (Beton -> ...)
-(Friedenstr.): Gehwegplatten	Q0- 12131,13333 12152,13294 12141,13256
-#: corrected_by: srt (Beton -> ...)
-(Friedenstr.): Verbundsteinpflaster	Q1+ 12141,13256 12107,13264 12066,13237
+# REMOVED --- #: corrected_by: srt (Beton -> ...) --- (Friedenstr.): Gehwegplatten	Q0- 12131,13333 12152,13294 12141,13256
+# REMOVED --- #: corrected_by: srt (Beton -> ...) --- (Friedenstr.): Verbundsteinpflaster	Q1+ 12141,13256 12107,13264 12066,13237
 #: confirmed_by: srt
 Höchste Str.: Asphalt	Q0 11784,13513 11909,13387 12007,13290 12066,13237
 #: confirmed_by: srt (just a Q0 -> Q0-)
-(Parkplatz): Beton	Q0- 12066,13237 12046,13150 12011,13136 11919,13196
+(Parkplatz): Beton	Q0- 12090,13260 12066,13237 12046,13150 12011,13136 11919,13196
 Georgenkirchstr.: Asphalt	Q0 11842,13576 11784,13513 11703,13426 11652,13372 11589,13305
 #: corrected_by: srt (Q0 -> Q0-)
 (Mollstr. - Barnimstr.): Verbundsteine	Q0- 11723,13139 11749,13215
@@ -27746,14 +27752,14 @@ Ernst-Zinna-Weg: Kopfsteinpflaster	Q2 12586,13368 12604,13338 12597,13323 12556,
 (Volkspark Friedrichshain): Asphalt	Q0 12344,13627 12204,13609 12169,13609 12141,13609 12012,13599
 #: corrected_by: srt (was Kopfsteinpflaster, Q2)
 (Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1- 12012,13599 12038,13685
-(Zufahrt Landsberger Allee): Gehwegplatten, Beton	Q0 13433,13346 13397,13426 13574,13505
+# REMOVED --- (Zufahrt Landsberger Allee): Gehwegplatten Q0 13445,13376 13419,13435
 #: corrected_by: srt (Q1 -> Q1+)
 Weisbachstr.: Asphalt	Q1+ 13557,13290 13610,13169
 #: note: allerdings kann man bordsteinlos auf den wenig frequentierten Gehweg ausweichen
-Otto-Ostrowski-Str.: Kopfsteinpflaster	Q2 13702,13634 13711,13615 13769,13487 13809,13396 13825,13359 13869,13260 13924,13135 13943,13129
+Otto-Ostrowski-Str.: Kopfsteinpflaster	Q2 13702,13634 13711,13615 13769,13487 13811,13390 13825,13359 13869,13260 13924,13135 13943,13129
 Kurt-Exner-Str.: Kopfsteinpflaster	Q2 13976,13309 13869,13260
 Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13934,13403 13825,13359
-Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13916,13443 13809,13396
+Agnes-Wabnitz-Str.: Kopfsteinpflaster	Q2 13918,13438 13811,13390
 #: confirmed_by: srt
 Wilhelm-Stolze-Str.: Kopfsteinpflaster	Q2 13267,13167 13368,12943
 #: confirmed_by: srt
@@ -27927,8 +27933,12 @@ Putendorfstr.: mäßiges Kopfsteinpflaster	Q2 12616,12844 12842,13070
 #: confirmed_by: srt
 Diestelmeyerstr.: mäßiges Kopfsteinpflaster	Q2 12885,12980 12833,12920
 #: confirmed_by: srt
-Diestelmeyerstr.: Gehwegplatten	Q1 12833,12920 12690,12769
-Schulweg: Asphalt, teilweise unbefestigt	Q1- 12594,12866 12483,12682
+#: note: Charlottenburger Platten
+Diestelmeyerstr.: Gehwegplatten	Q1- 12833,12920 12690,12769
+#: corrected_by: srt (Asphalt, teilweise unbefestigt -> ...)
+Schulweg: Asphalt	Q0- 12600,12860 12551,12785
+#: corrected_by: srt (Asphalt, teilweise unbefestigt -> ...)
+Schulweg: wassergebundene Decke	Q1- 12551,12785 12483,12682
 #: confirmed_by: srt
 (Friedhofsweg): wassergebundene Decke	Q1 12851,12602 13108,12859 13046,12956 12878,13229
 #: confirmed_by: srt

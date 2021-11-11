@@ -712,7 +712,7 @@ teilweise mit Leitboys geschützt	RW4; 14208,12235 14291,12220 14381,12205 14427,
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur, evtl. bleibt diese permanent
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
-#: last_checked: 2021-11-02
+#: last_checked: 2021-11-11
 #: check_frequency: 30d
 #: next_check: 2022-03-31
 	RW4; 14926,12129 14994,12121 15117,12106
@@ -1184,10 +1184,10 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://twitter.com/VIZ_Berlin/status/1432299752406888449 (Grundsanierung ab 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="16"
-#: last_checked: 2021-10-12
+#: last_checked: 2021-11-11
 #: check_frequency: 120d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
-provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
+provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
 	RW1; 13676,12683 13695,12643
 	RW1; 13695,12643 13676,12683
 #: next_check_id: POPUPRADWEGE-2020
@@ -1197,11 +1197,11 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="29"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2021-10-12
+#: last_checked: 2021-11-11
 #: check_frequency: 120d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
-provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
-	RW1; 13393,13326 13375,13367 13330,13468
+provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13383,13349
+	RW1; 13383,13349 13375,13367 13330,13468
 unebenes Verbundsteinpflaster	RW1;RW1 9448,10014 9355,10038 9277,10057 9111,10090 8790,10157
 # 
 #: note: Hermannstr. Richtung Süden
@@ -2258,7 +2258,7 @@ Radspur zwischen Fahrspuren	RW4; 11221,12250 11300,12241 11347,12223
 # REMOVED ---	RW4; 10675,12280 10736,12285 10772,12288 10804,12291
 benutzungspflichtige Radspur fängt einige Meter nach der Kreuzung an	RW0; 10738,12364 10804,12291
 zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
-	RW3;RW3 12891,12549 12866,12582 12851,12602 12773,12683 12690,12769 12616,12844 12594,12866 12520,12938 12416,13045
+	RW3;RW3 12891,12549 12866,12582 12851,12602 12773,12683 12690,12769 12616,12844 12600,12860 12520,12938 12416,13045
 	RW3;RW3 12163,13295 12131,13333 12085,13377 11992,13467 11924,13529 11893,13547
 	RW3;RW0 11893,13547 11842,13576
 	RW0;RW0 11842,13576 11785,13625
@@ -2272,10 +2272,10 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://berliner-abendblatt.de/2021/10/28/geschuetzter-radweg-auf-der-lichtenberger-strasse/
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/geschuetzter-radweg_a326639
 #: XXX geschützer Radweg wird gebaut vvv
-#: source_id: viz2021:13.429807,52.523192,11.10.2021,07:00 (mittlerweile bis 15.11.2021)
-#: last_checked: 2021-11-09 vvv
+#: source_id: viz2021:13.429807,52.523192,11.10.2021,07:00 (mittlerweile bis 15.11.2021) (bis 17.11.2021)
+#: last_checked: 2021-11-11 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2021-11-15 vvv
+#: next_check: 2021-11-17 vvv
 	RW2; 12126,13088 12122,13029
 	RW4; 12122,13029 12112,12861
 	RW3; 12112,12861 12064,12673 12050,12616
@@ -2293,7 +2293,7 @@ Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 #: by: https://viz.berlin.de/2021/10/verkehrsvorschau-fuer-montag-11-10-2021/
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (ab 1.11.2021)
 #: XXX geschützer Radweg wird gebaut (nach den Bauarbeiten Richtung Süden) vvv
-#: last_checked: 2021-11-09 vvv
+#: last_checked: 2021-11-11 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2021-11-01 vvv
 # REMOVED --- #: next_check: 2021-12-31 vvv
@@ -2383,7 +2383,7 @@ Verbundsteinpflaster, einige Wurzelhebungen	RW1; 13945,13564 14052,13389
 #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14252,13263 14476,13181 14741,13081 14795,13022 14830,12932 14836,12826
-Verbundsteinpflaster	RW1;RW1 13895,13017 13930,13100 13943,13129 13999,13276 14052,13389 14109,13449
+Verbundsteinpflaster	RW1;RW1 13895,13017 13926,13090 13943,13129 13998,13272 14052,13389 14109,13449
 Gehwegpflasterung, teilweise schadhaft	RW1; 13730,12535 13732,12526 13785,12292
 neu asphaltiert, relativ breit	RW1; 13785,12292 13732,12526 13730,12535
 	RW1; 13675,12581 13698,12544 13730,12535 13761,12578 13771,12607 13767,12626 13747,12642 13695,12643 13681,12624 13675,12581
@@ -7332,33 +7332,7 @@ baulich getrennt	RW4; 10804,12461 10831,12371 10830,12279
 #: next_check: 2022-06-04
 provisorischer Radweg auf dem Gehweg	RW2; 8490,2084 8560,2181 8579,2265
 # 
-#: next_check_id: MOECKERN-2021
-#: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: by: https://api.fixmyberlin.de/api/plannings/23
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.920730.php (temporäre Radwege)
-#: by: https://api.fixmyberlin.de/api/projects/376
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
-#: by: https://abendblatt-berlin.de/2020/04/21/friedrichshain-kreuzberg-radwegprojekt-geht-weiter/
-#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/die-meisten-temporaeren-radwege-sollen-bleiben_a263404 (Verzögerung)
-#: by: https://abendblatt-berlin.de/2020/05/24/kreuzberg-radwege-statt-parkplaetze/ (... im Juni (2020) umgesetzt werden)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.937004.php (hier wird eine permanente Lösung entstehen, 600m mit Pollern)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (außerdem: Verbreiterung des existierenden Radwegs in Richtung Norden (Stand Mai 2020))
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (verkehrsrechtliche Anordnung fehlt (Stand Oktober 2020))
-#: by: http://www.infravelo.de/projekt/moeckernstrasse-ostseite/ (zwischen Yorckstr. und Hornstr. wird der Hochbordradweg saniert und verbreitert, bis 4. Quartal 2020)
-#: by: http://www.infravelo.de/projekt/moeckernstrasse-westseite/ (1. Quartal 2021, PBL) (alter Eintrag)
-#: by: http://www.infravelo.de/projekt/moeckernstrasse-westseite-2/ (3. Quartal 2021 - 4. Quartal 2021)
-#: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ostseite zwischen Hornstr. und Obentrautstr. wird auch saniert)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9983 (Frage)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10016 (Antrag, abgelehnt)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1137745.php (Poller)
-#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/poller-gegen-falschparker_a325790
-#: source_id: viz2021:13.38022,52.49874,19.07.2021,07:00 (bis 20.9.2021)
-#: osm_watch: way id="240451922" version="23"
-#: XXX kommen hier noch Poller/Leitboys hin?
-#: last_checked: 2021-11-09
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2021-10-22
+# REMOVED --- #: next_check_id: MOECKERN-2021 --- #: XXX Baumaßnahme 2.28 (Realisierung nach 2011)  --- #: by: https://api.fixmyberlin.de/api/plannings/23 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.920730.php (temporäre Radwege) --- #: by: https://api.fixmyberlin.de/api/projects/376 --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006 --- #: by: https://abendblatt-berlin.de/2020/04/21/friedrichshain-kreuzberg-radwegprojekt-geht-weiter/ --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/die-meisten-temporaeren-radwege-sollen-bleiben_a263404 (Verzögerung) --- #: by: https://abendblatt-berlin.de/2020/05/24/kreuzberg-radwege-statt-parkplaetze/ (... im Juni (2020) umgesetzt werden) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.937004.php (hier wird eine permanente Lösung entstehen, 600m mit Pollern) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (außerdem: Verbreiterung des existierenden Radwegs in Richtung Norden (Stand Mai 2020)) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (verkehrsrechtliche Anordnung fehlt (Stand Oktober 2020)) --- #: by: http://www.infravelo.de/projekt/moeckernstrasse-ostseite/ (zwischen Yorckstr. und Hornstr. wird der Hochbordradweg saniert und verbreitert, bis 4. Quartal 2020) --- #: by: http://www.infravelo.de/projekt/moeckernstrasse-westseite/ (1. Quartal 2021, PBL) (alter Eintrag) --- #: by: http://www.infravelo.de/projekt/moeckernstrasse-westseite-2/ (3. Quartal 2021 - 4. Quartal 2021) --- #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ostseite zwischen Hornstr. und Obentrautstr. wird auch saniert) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9983 (Frage) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10016 (Antrag, abgelehnt) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1137745.php (Poller) --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/poller-gegen-falschparker_a325790 --- #: source_id: viz2021:13.38022,52.49874,19.07.2021,07:00 (bis 20.9.2021) --- #: osm_watch: way id="240451922" version="23" --- #: XXX kommen hier noch Poller/Leitboys hin? -> es wurde nur zur Gehwegseite hin gepollert. Mehr kommt hier wohl nicht. --- #: last_checked: 2021-11-09 --- #: check_frequency: 30d --- #: next_check: 2021-10-22
 Grünmarkierung	RW3; 8810,10305 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
 # 
 Gehweg für Radfahrer frei	RW1;RW1 475,1202 587,1230 718,1264 857,1300

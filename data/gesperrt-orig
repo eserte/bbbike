@@ -1880,7 +1880,7 @@ Prenzlauer Promenade: Straßenbahntrasse	3nocross 12090,16199 12097,16263 12087,1
 Prenzlauer Promenade: Straßenbahntrasse	3nocross 12051,16535 12077,16380 12087,16322 12097,16263
 Petersburger Str.: Straßenbahntrasse	3nocross 13622,12806 13579,12904 13530,13014
 Petersburger Str.: Straßenbahntrasse	3nocross 13530,13014 13487,13115 13434,13234
-Petersburger Str.: Straßenbahntrasse	3nocross 13330,13468 13375,13367 13393,13326 13434,13234
+Petersburger Str.: Straßenbahntrasse	3nocross 13330,13468 13375,13367 13383,13349 13434,13234
 #: note: ^^^
 Stubenrauchstr.: Bahntrasse	3nocross 16635,2796 16677,2856 16786,2989
 Stubenrauchstr.: Bahntrasse	3nocross 16182,2200 16242,2279 16306,2364
@@ -3414,7 +3414,7 @@ Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, k
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
 #: also_indoor: traffic (G(teilweise),ex-H)
-#: last_checked: 2021-09-11 vvv
+#: last_checked: 2021-11-11 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, teilweise lange Umwege über die Gehwege möglich	2::inwork 16227,12280 16159,12301 16056,12317
@@ -3458,7 +3458,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen, sollte ein Teilabschnitt der Straße endgültig verschwinden
 #: XXX mittlerweile (April 2021) wurde der südliche Teil schon weggebaggert
 #: osm_watch: way id="25008069" version="15"
-#: last_checked: 2021-10-31 (osm)
+#: last_checked: 2021-11-11
 #: check_frequency: 60d
 # REMOVED (hier ist nichts mehr) --- Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881
 Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11923,11881 11940,11982
@@ -3484,7 +3484,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: by: https://dstrctberlin.com/de/2021/10/18/auf-gute-nachbarschaft/
 #: osm_watch: way id="164816805" version="7"
 #: priority: #C
-#: last_checked: 2021-11-10
+#: last_checked: 2021-11-11
 #: check_frequency: 60d
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 # 
