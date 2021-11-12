@@ -32927,7 +32927,7 @@ EOF
      },
      { from  => 1622527200, # 2021-06-01 08:00
        until => $isodate2epoch->("2021-12-23 17:00:00"), # 1630422000, # 2021-08-31 17:00
-       text  => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 23.12.2021 17:00 Uhr ', # ursprünglich: Gerlinger Str./Ringslebenstr. und Stuthirtenweg/Stadtgrenze
+       text  => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg Richtung Norden gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 23.12.2021 17:00 Uhr ', # ursprünglich: Gerlinger Str./Ringslebenstr. und Stuthirtenweg/Stadtgrenze; ursprünglich beide Richtungen
        type  => 'handicap',
        source_id => '2147347243',
        data  => <<EOF,
@@ -32935,7 +32935,7 @@ EOF
 #: source_id: viz2021:13.438231,52.41937,02.06.2021,08:00
 #: source_id: viz2021:13.438231,52.41937,13.11.2021,08:00
 # REMOVED ---	q4::inwork 12984,1011 12941,1256 12938,1348
-	q4::inwork 12938,1348 12939,1469 12940,1547
+	q4::inwork; 12938,1348 12939,1469 12940,1547
 EOF
      },
      { from  => 1622527200, # 2021-06-01 08:00
@@ -33242,11 +33242,12 @@ EOF
 EOF
      },
      { from  => 1627682400, # 2021-07-31 00:00
-       until => 1633039199, # 2021-09-30 23:59
-       text  => 'Am Vierrutenberg: Bauarbeiten zwischen Zehntwerderweg und Benekendorffstr., evtl. wird die Fahrbahn nicht benutzbar sein, von August bis Ende September 2021',
+       until => $isodate2epoch->("2022-01-01 18:00:00"), # 1633039199, # 2021-09-30 23:59
+       text  => 'Am Vierrutenberg: Bauarbeiten zwischen Zehntwerderweg und Benekendorffstr., evtl. wird die Fahrbahn nicht benutzbar sein, von August bis voraussichtlich Anfang 2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1106283.php',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1145930.php (Verzögerung)
 	q4::inwork 5793,23422 5893,23287
 EOF
      },
@@ -33943,6 +33944,18 @@ EOF
        data  => <<EOF,
 	q3::inwork; 5417,11949 5518,12159
 	q2::inwork 5518,12159 5317,12242
+EOF
+     },
+     { from  => 1636747480, # 2021-11-12 21:04
+       until => 1639177200, # 2021-12-11 00:00
+       text  => 'Archenholdstr. und Marie-Curie-Allee: Einbahnstraßenregelungen, voraussichtlich bis 10.12.2021',
+       type  => 'handicap',
+       source_id => 'viz2021:13.496206,52.500247,12.11.2021,06:00',
+       data  => <<EOF,
+#: by: https://twitter.com/VIZ_Berlin/status/1459133374208122880
+#: by: https://pbs.twimg.com/media/FD_h8clXEAUsQ1n?format=jpg&name=large
+	q4::inwork; 16861,10923 16751,10696 16751,10674
+	q4::inwork; 16892,10731 16961,10893
 EOF
      },
     );

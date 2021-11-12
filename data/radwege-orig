@@ -1949,7 +1949,7 @@ die letzten 50 Meter werden auf dem Gehweg geführt	RW3; 13151,14855 13438,14675
 die letzten Meter sind benutzungspflichtig	RW3; 11154,14985 11056,15009
 	RW3;RW3 11154,14985 11285,14958 11325,14949 11339,14946 11535,14900 11609,14881
 	RW1;RW2 12786,13185 12878,13229 12979,13280 13073,13329
-	RW2;RW2 13073,13329 13151,13367 13246,13420 13330,13468
+	RW2;RW2 13073,13329 13151,13367 13241,13415 13330,13468
 	RW2;RW2 13330,13468 13543,13568
 	RW1;RW2 13543,13568 13635,13605 13702,13634
 	RW2;RW2 13702,13634 13854,13701 13906,13722
@@ -6769,7 +6769,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2021-10-26 (mapillary)
+#: last_checked: 2021-11-10 (mapillary)
 #: check_frequency: 21d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: note: am Ende fehlen ein paar Meter Grünmarkierung
@@ -6814,7 +6814,8 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26300.pdf (Markierung wird im Zuge der Gleisbauarbeiten dauerhaft gemacht)
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
-#: osm_watch: way id="4566067" version="25"
+# REMOVED --- #: osm_watch: way id="4566067" version="26"
+#: osm_watch: way id="26708088" version="24"
 #: last_checked: 2021-10-30 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674

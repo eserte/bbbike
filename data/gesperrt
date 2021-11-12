@@ -3373,9 +3373,9 @@ Landsberger Allee	3nocross::ignrte 12382,13097 12585,13118 12711,13150
 Landsberger Allee -> Ernst-Zinna-Weg: Landsberger Allee	3::igndisp 12382,13097 12585,13118 12564,13216
 Ernst-Zinna-Weg -> Landsberger Allee: Landsberger Allee	3::igndisp 12564,13216 12585,13118 12711,13150
 Straßenbahntrasse	3nocross::ignrte 13635,13605 13702,13634 13854,13701
-Straßenbahntrasse	3nocross::ignrte 13151,13367 13246,13420 13330,13468
-Landsberger Allee -> An der Brauerei: Straßenbahntrasse	3::igndisp 13330,13468 13246,13420 13279,13323
-An der Brauerei -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13279,13323 13246,13420 13151,13367
+Straßenbahntrasse	3nocross::ignrte 13151,13367 13241,13415 13330,13468
+Landsberger Allee -> An der Brauerei: Straßenbahntrasse	3::igndisp 13330,13468 13241,13415 13279,13323
+An der Brauerei -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13279,13323 13241,13415 13151,13367
 Landsberger Allee	3nocross::ignrte 21475,15705 21584,15753 21709,15808
 Landsberger Allee -> Schönagelstr.: Landsberger Allee	3::igndisp 21475,15705 21584,15753 21602,15908
 Schönagelstr. -> Landsberger Allee: Landsberger Allee	3::igndisp 21602,15908 21584,15753 21709,15808
