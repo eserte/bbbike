@@ -80,6 +80,8 @@ for my $f (@files) {
 		       )$}x && $] < 5.010;
 	myskip "$f works only with installed Algorithm::Diff", 1
 	    if $f =~ m{/diffbbd$} && !eval { require Algorithm::Diff; 1 };
+	myskip "$f works only with installed DateTime::Format::ISO8601", 1
+	    if $f =~ m{/exif2gpsman$} && !eval { require DateTime::Format::ISO8601; 1 };
 	skip "$f works only if ~/src/Doit exists", 1
 	    if $f =~ m{/copy-doit.pl$} && !-d "$ENV{HOME}/src/Doit";
 
