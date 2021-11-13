@@ -944,7 +944,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147346063 (inaktiv)
 #: source_id: viz2021:13.461003,52.492338,30.10.2021,06:00 (Wochenendsperrung für Kfz-Verkehr)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-11-06
+#: last_checked: 2021-11-13
 #: check_frequency: 60d
 #: next_check: 2022-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1290,7 +1290,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2021-10-07 (mapillary) vvv
+#: last_checked: 2021-11-13 vvv
 #: check_frequency: 30d vvv
 #	RW1;RW2 14051,6731 14139,6786 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
@@ -1689,7 +1689,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2021-10-03
+#: last_checked: 2021-11-13
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -3431,7 +3431,7 @@ unebenes Verbundsteinpflaster, schmal	RW1; 3574,5717 3489,5690 3355,5655 3160,56
 unebenes Verbundsteinpflaster, kurvig	RW1; 2823,5672 2909,5674 2970,5676 3054,5677 3160,5671 3355,5655 3489,5690 3574,5717
 mäßiges Verbundsteinpflaster	RW1; 2574,5688 2477,5694 2320,5743 2314,5745 2165,5790 2137,5798 2106,5808 2030,5833 1909,5872 1746,5922
 	RW1; 1746,5922 1909,5872 2030,5833 2106,5808 2137,5798 2165,5790 2314,5745 2320,5743 2477,5694 2574,5688
-alte Gehwegplatten, deutliche Schäden	RW1; 14853,7451 14775,7385 14758,7373 14708,7325 14617,7243
+alte Gehwegplatten, deutliche Schäden und Wurzelhebungen, Bord gegen Gehweg	RW1; 14853,7451 14775,7385 14758,7373 14708,7325 14617,7243
 Verbundsteinpflaster	RW1;RW1 14853,7451 14989,7574 15221,7778 15355,7893 15425,7953 15444,7969 15557,8077
 #: note: nicht explizit freigegeben, nur durch Fahrbahnmarkierung
 asphaltierter Gehweg für Radfahrer frei, einige deutliche Wurzelhebungen	RW1; 15221,7778 15553,7408 15560,7400
@@ -7340,8 +7340,8 @@ Gehweg für Radfahrer frei	RW1;RW1 475,1202 587,1230 718,1264 857,1300
 # 
 	RW2; 1566,11409 1574,11379
 # 
-#: by: osm
-Grünmarkierung	RW4; 12510,6508 12470,6586
+#: note: Grünmarkierung fehlt an den Bushaltestellen
+Grünmarkierung	RW3; 12510,6508 12470,6586 12422,6715 12395,6785 12362,6881 12347,6923 12342,6936 12317,7007 12304,7039 12291,7074 12259,7164 12244,7205 12221,7271
 # 
 #: XXX Geltungszeit überprüfen!
 Busspur ist immer gültig	RW5; 3835,10352 3813,10435

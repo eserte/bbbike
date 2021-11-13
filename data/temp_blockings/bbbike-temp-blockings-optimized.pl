@@ -4401,7 +4401,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-11-01
+#: last_checked: 2021-11-13
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -5063,8 +5063,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: next_check_id: BUCKOWERDAMM-2021
-#: source_id: viz2021:13.438231,52.41937,02.06.2021,08:00
+#: source_id: viz2021:13.438231,52.41937,02.06.2021,08:00 (inaktiv)
 #: source_id: viz2021:13.438231,52.41937,13.11.2021,08:00
+#: note: bei rbb weiterhin "in beiden Richtungen gesperrt"
+#: by: https://twitter.com/VIZ_Berlin/status/1459408184053932037 (nur Richtung Norden)
 # REMOVED ---	q4::inwork 12984,1011 12941,1256 12938,1348
 	q4::inwork; 12938,1348 12939,1469 12940,1547
 ',
@@ -5284,39 +5286,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1640991600
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1120239.php
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_37_3401_3492_online.pdf
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6984 (Antrag)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1140269.php (Ausweitung)
-#: by: https://www.berlin.de/imgscaler/QDnYYRYHVON_2jnT8kEu7J2TMdjTUnhV5UGJwVZ-KuY/article/L3N5czExLXByb2QvYmEtdHJlcHRvdy1rb2VwZW5pY2svX2Fzc2V0cy9ha3R1ZWxsZXMvcG0vMjAyMS9jcm9wXzE1MDBfNzUwXzBfMjM2XzE1MDBfMTA2Ml82NTFlMDM1NWE0MDI3OTgyYzc0MWEwMWQ2YzBhODU4Yl9sYWdlcGxhbl8yMDAwLW1pbi5qcGc.jpg (Karte)
-#: XXX bis wann bleibt die Sperrung bestehen? vvv
-#: note: der Verbindungsweg Puschkinallee und Am Treptower Park war nicht gesperrt: Do 2021-09-09 gegen 22:20 Uhr
-#: last_checked: 2021-10-30 vvv
-#: check_frequency: 30d vvv
-	2::night 15668,9140 15631,9114 15580,9181 15604,9215 15693,9194 15683,9136
-	2::night 14478,9545 14384,9565 14316,9542 14318,9688
-	2::night 14475,9199 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441 14719,9419 14774,9437 14809,9466
-	2::night 14556,9581 14588,9473 14507,9529
-	2::night 14382,9299 14398,9373 14485,9271 14531,9244 14612,9190
-	2::night 14398,9373 14347,9452 14316,9542 14242,9448
-	2::night 14635,9441 14588,9473
-	2::night 15558,8820 15439,8839 15297,8921 15245,8916 15223,8893
-	2::night 14705,9578 14791,9537 14823,9523 14837,9517 14867,9573 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674 14577,9641 14627,9609 14695,9587 14792,9599 14867,9573 14918,9545
-	2::night 14980,8940 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714 15298,8781 15235,8841 15223,8893 15159,8934 15110,8912 15057,8910
-	2::night 15214,9090 15190,9027 15181,8967
-	2::night 15159,8934 15181,8967 15245,8916
-	2::night 14837,9517 14809,9466
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-',
-         'from' => undef,
-         'id' => 3436,
-         'text' => 'Treptower Park: Teile des Parks können nachts gesperrt sein (von 22:00 bis 04:00 Uhr)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.mobil-potsdam.de/fileadmin/user_upload/Informationen_Umleitungsplaene_Baumassnahme_Behlertstrasse.pdf
@@ -5424,7 +5394,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX Wird nach den Bauarbeiten die Qualität der Fahrbahn besser sein? (jetzt: Q1)
 #: osm_watch: way id="10686356" version="19"
 #: also_indoor: traffic (none)
-#: last_checked: 2021-10-10 (mapillary)
+#: last_checked: 2021-11-13
 	q4::inwork 13510,8138 13663,8011
 ',
          'from' => undef,
