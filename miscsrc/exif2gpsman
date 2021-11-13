@@ -1,0 +1,222 @@
+#!/usr/bin/perl -w
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2021 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  https://github.com/eserte/bbbike/
+#
+
+use strict;
+use FindBin;
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	);
+
+use DateTime::Format::ISO8601;
+use Getopt::Long;
+use Image::ExifTool ();
+
+use GPS::GpsmanData;
+
+sub usage (;$) {
+    my $msg = shift;
+    print STDERR $msg, "\n" if $msg;
+    die <<EOF;
+usage: $0 [-o ...] [--vehicle ...] [--brand ...] [--max-time-gap seconds] imagefiles ...
+EOF
+}
+
+my $outfile;
+my $vehicle;
+my $brand;
+my $max_time_gap = 30;
+GetOptions(
+	   'out-file|o=s' => \$outfile,
+	   'vehicle=s'    => \$vehicle,
+	   'brand=s'      => \$brand,
+	   'max-time-gap=i'   => \$max_time_gap,
+	  )
+    or die usage;
+my @image_files = @ARGV;
+@image_files
+    or usage "Please specify image files";
+
+my $exiftool = Image::ExifTool->new;
+$exiftool->Options(CoordFormat => '%+.6f');
+$exiftool->Options(DateFormat => '%Y-%m-%dT%H:%M:%SZ');
+
+my $device;
+my $name;
+
+my @trkpts;
+IMAGE: for my $image_file (@image_files) {
+    my $info = $exiftool->ImageInfo($image_file);
+
+    my $lon = $info->{GPSLongitude};
+    my $lat = $info->{GPSLatitude};
+    if (!defined $lon || !defined $lat) {
+	warn "Cannot get GPSLongitude and/or GPSLatitude from $image_file, ignoring file...\n";
+	next IMAGE;
+    }
+    $lon += 0; # +0 to get rid of sign
+    $lat += 0;
+
+    my $date_time;
+    {
+	my $raw_date_time = $info->{GPSDateTime};
+	if (!$raw_date_time) {
+	    warn "Cannot get GPSDateTime from $image_file, ignoring file...\n";
+	    next IMAGE;
+	}
+	$date_time = eval { DateTime::Format::ISO8601->parse_datetime($raw_date_time) };
+	if (!$date_time) {
+	    warn "Cannot parse GPSDateTime '$raw_date_time' in $image_file as an ISO 8601 date, ignoring file...\n";
+	    next IMAGE;
+	}
+    }
+
+    my $alt = $info->{GPSAltitude};
+    if (!$alt) {
+	warn "Cannot get GPSAltitude from $image_file, ignoring file...\n"; # XXX or should it be possible to allow coordinates without altitudes?
+	next IMAGE;
+    }
+    if ($alt !~ m{^(\d+(?:\.\d+)?)\s+m\s+(Above|Below)\s+Sea\s+Level$}i) {
+	warn "GPSAltitude exists in $image_file, but value '$alt' cannot be parsed, ignoring file...\n";
+	next IMAGE;
+    }
+    $alt = $1;
+    if (lc($2) eq 'below') {
+	$alt *= -1;
+    }
+
+    if (!$device && $info->{Model}) {
+	$device = $info->{Model};
+    }
+
+    if (!$name) {
+	$name = $date_time->strftime("%F %T"); # XXX make name configurable?
+    }
+
+    push @trkpts, {
+		   longitude => $lon,
+		   latitude  => $lat,
+		   datetime  => $date_time,
+		   altitude  => $alt,
+		  };
+}
+
+@trkpts = sort { $a->{datetime} cmp $b->{datetime} } @trkpts;
+my @chunks;
+for my $trkpt_i (0 .. $#trkpts) {
+    my $trkpt = $trkpts[$trkpt_i];
+    if ($trkpt_i == 0 || ($trkpt_i > 0 && $trkpt->{datetime}->epoch - $trkpts[$trkpt_i-1]->{datetime}->epoch > $max_time_gap)) {
+	push @chunks, [$trkpt];
+    } else {
+	push @{ $chunks[-1] }, $trkpt;
+    }
+}
+
+my $gpsman = GPS::GpsmanMultiData->new;
+for my $chunk_i (0 .. $#chunks) {
+    my $trkseg = GPS::GpsmanData->new;
+    $trkseg->Type($trkseg->TYPE_TRACK);
+    $trkseg->TimeOffset(0);
+    if ($chunk_i == 0) {
+	$trkseg->IsTrackSegment(0);
+	$trkseg->Name($name);
+	$trkseg->TrackAttrs({
+			     (defined $device  ? ('srt:device'  => $device) : ()),
+			     (defined $vehicle ? ('srt:vehicle' => $vehicle) : ()),
+			     (defined $brand   ? ('srt:brand'   => $brand) : ()),
+			    });
+    } else {
+	$trkseg->IsTrackSegment(1);
+    }
+    my @gpsman_trkpts;
+    for my $trkpt (@{ $chunks[$chunk_i] }) {
+	my $gpsman_trkpt = GPS::Gpsman::Waypoint->new;
+	$gpsman_trkpt->Ident('');
+	$gpsman_trkpt->Latitude($trkpt->{latitude});
+	$gpsman_trkpt->Longitude($trkpt->{longitude});
+	$gpsman_trkpt->Altitude($trkpt->{altitude});
+	$gpsman_trkpt->unixtime_to_DateTime($trkpt->{datetime}->epoch, $trkseg);
+	push @gpsman_trkpts, $gpsman_trkpt;
+    }
+    $trkseg->Track(\@gpsman_trkpts);
+    push @{ $gpsman->{Chunks} }, $trkseg;
+}
+
+if ($outfile) {
+    my $outdir = File::Basename::dirname($outfile);
+    if (!$outdir) {
+	die "Directory for $outfile does not exist";
+    }
+    require File::Temp;
+    require File::Basename;
+    my $tmp = File::Temp->new(UNLINK => 1, SUFFIX => '.gpsman', DIR => $outdir);
+    chmod 0644, $tmp;
+    print $tmp $gpsman->as_string;
+    close $tmp
+	or die "Writing to temporary file $tmp failed: $!";
+    rename $tmp, $outfile
+	or die "Rename $tmp -> $outfile failed: $!";
+    $tmp->unlink_on_destroy(0);
+} else {
+    print $gpsman->as_string;
+}
+
+__END__
+
+=head1 NAME
+
+exif2gpsman - extract coordinates from image files and create a GPSMan file out of it
+
+=head1 SYNOPSIS
+
+    exif2gpsman [-o outfile.trk] [--vehicle ...] [--brand ...] [--max-time-gap seconds] image1 image2 ...
+
+=head1 DESCRIPTION
+
+Extract coordinates from image files and create a GPSMan file out of
+it.
+
+=head1 OPTIONS
+
+=over
+
+=item C<--vehicle ...>
+
+Set the C<srt:vehicle> property of the generated file.
+
+=item C<--brand ...>
+
+Set the C<srt:brand> property of the generated file.
+
+=item C<--max-time-gap I<seconds>>
+
+Maximum gap allowed for subsequent points to be in the same track
+segment. Defaults to 30s. If the gap is larger, then a new track
+segment will be created.
+
+=item C<-o ...>
+
+Define a output file for the converted GPSMan data. If C<-o> is not
+set, then the output is written to stdout.
+
+=back
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<GPS::GpsmanData>, L<Image::ExifTool>.
+
+=cut
