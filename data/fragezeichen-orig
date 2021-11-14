@@ -1084,7 +1084,7 @@ Behrens-Ufer: öffentlicher Uferweg geplant	?::projected 19177,5560 19265,5611 19
 #: osm_watch: way id="43167459" version="13"
 #: osm_watch: way id="43167430" version="13"
 #: last_checked: 2021-07-18 (mapillary)
-#: check_frequency: 120d
+#: check_frequency: 270d
 Ingeborg-Hunzinger-Str./Straße nach Fichtenau: Einrichten einer Radverkehrsanlage (Zweirichtungsradweg, West- oder Ostseite)	?::projected 29714,4461 29712,4548 29705,4987 29832,5065 29898,5149 30038,5338 30074,5402 30090,5446 30331,5410 30410,5450 30737,5800 30760,5824
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf
@@ -1528,7 +1528,7 @@ Siegfriedstr.: Radstreifen geplant, vielleicht sogar geschützte Radstreifen	?::p
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7739
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/radweg-an-der-marzahner-chaussee-erst-nach-brueckenbau_a227482 (nach Fertigstellung der Rhinstraßenbrücke, mit der Planung wird 2020 begonnen)
 #: osm_watch: way id="27959240" version="42"
-#: osm_watch: way id="878343305" version="7"
+#: osm_watch: way id="878343305" version="8"
 #: last_checked: 2021-10-18
 #: check_frequency: 120d
 Marzahner Chaussee: Radstreifen geplant	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
@@ -2181,7 +2181,7 @@ Bohnsdorfer Kreisel: Bau von Radspuren (mit Grünmarkierung) in beiden Richtungen
 #: by: http://www.infravelo.de/projekt/r1-wasserweg-am-spreepark/ (in Planung, 2. Quartal 2021 - 3. Quartal 2021) (mittlerweile: 4. Quartal 2021 - 2. Quartal 2022) (mittlerweile: 1. Quartal 2022 - 2. Quartal 2022) (mittlerweile wieder ab 4. Quartal 2021) (und wieder ab 1. Quartal 2022) (mittlerweile: 3. Quartal 2022 - 4. Quartal 2022)
 #: osm_watch: way id="207761374" version="7"
 #: osm_watch: way id="306147854" version="5"
-#: last_checked: 2021-11-13
+#: last_checked: 2021-11-14
 #: check_frequency: 180d
 #: next_check: 2022-12-31
 Wasserweg: wird hier asphaltiert werden? Was ist mit dem "Schlenker" am Spreepark-Eingang?	?::projected 15680,8914 15873,8884 15981,8872 16028,8867 16161,8852 16201,8860
@@ -2567,7 +2567,7 @@ Fasanenstr.: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/pilotprojekt-geschuetzter-radweg-poller-zwischen-hermannplatz-und-reuterstrasse-geplant_a210229
 #: osm_watch: way id="764003876" version="5"
 #: osm_watch: way id="764003865" version="4"
-#: osm_watch: way id="764003862" version="15"
+#: osm_watch: way id="764003862" version="16"
 #: priority: #D
 #: last_checked: 2021-10-11 (mapillary) (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
 #: check_frequency: 60d vvv
@@ -2703,8 +2703,8 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/radverkehr-radverkehrsnetz.68/page-3#post-16835 (Markierungsarbeiten + Grünbeschichtung)
 #: source_id: 2147347020 (Fernwärmearbeiten bis 30.6.2021 --- hat das was mit der Radspur zu tun?)
 #: osm_watch: way id="860638046" version="7"
-#: osm_watch: way id="544599538" version="10"
-#: osm_watch: way id="860638027" version="3"
+#: osm_watch: way id="544599538" version="11"
+#: osm_watch: way id="860638027" version="4"
 #: XXX Stand 2021-11-13: Richtung Norden bis Jonasstr. markiert (grün), noch keine Protektion und keine Radwegschilder, Richtung Süden noch gar nichts
 #: last_checked: 2021-11-13
 #: check_frequency: 21d
@@ -3510,7 +3510,7 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege geben?	?::projected
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/radweg-ist-jetzt-dauerhaft_a328010
 #: source_id: viz2021:13.359249,52.498514,30.08.2021,08:00 (bis 26.9.2021, weitere Arbeiten folgen) (mittlerweile inaktiv)
 #: source_id: viz2021:13.359249,52.498514,27.09.2021,10:00 (bis 29.10.2021) (mittlerweile 5.11.2021) (mittlerweile 10.11.2021)
-#: osm_watch: way id="4618713" version="33"
+#: osm_watch: way id="4618713" version="34"
 #: XXX nur Richtung Westen oder in beiden Richtungen?
 #: XXX außerdem: Zweiwege-Popup-Radweg zwischen Steinmetzstr. und östlichem Ende der Bülowstr.
 #: last_checked: 2021-10-28 (osm) (Richtung Westen weitgehend fertig, außer Stück zwischen Steinmetzstr. und Potsdamer Str.) vvv
@@ -3671,7 +3671,7 @@ Wundtstr./Horstweg: Können Radfahrer nach den Bauarbeiten durchfahren?	? 2888,11
 # REMOVED (realisiert) --- #: osm_watch: way id="351509721" version="7"
 #: XXX Fahrradstraßen- und Vorfahrtsschilder in der Rigaer Str. sind vorbereitet, Markierungsarbeiten laufen
 #: osm_watch: way id="4685718" version="27"
-#: last_checked: 2021-11-11 vvv
+#: last_checked: 2021-11-14 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (realisiert) --- Palisadenstr.: Ausbau zur Fahrradstraße	? 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
@@ -5981,7 +5981,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Baubeginn Mitte 2021)
 #: XXX beide Fahrtrichtungen?
-#: last_checked: 2021-11-11
+#: last_checked: 2021-11-14
 #: check_frequency: 90d
 Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 # 
@@ -6929,6 +6929,7 @@ Arberlandplatz	? 19705,9039 19728,8998
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-bauen/die-naechsten-schritte-zur-festsetzung-von-bebauungsplaenen-stehen-an_a293341 (Beteiligung von Behörden am B-Plan ab Ende 2020)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5065 (Informationsveranstaltung)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/an-der-ludwig-quidde-strasse-sollen-500-wohnungen-entstehen_a318027 (Planung)
+#: by: https://berliner-abendblatt.de/2021/11/14/in-franzoesisch-buchholz-wird-gebaut/ (digitale Informationsveranstaltung)
 #: XXX zwischen Ludwig-Quidde-Str. und Weg zur Lyonstr. existiert bis zum Graben beret ein Track, hauptsächlich grasbewachsen; über den Graben kommt man nur über einen etwas provisorischen Übergang und ein paar Stufen
 #: last_checked: 2021-07-01 (mapillary)
 #: check_frequency: 720d

@@ -11389,13 +11389,20 @@ Kulbeweg	N -2659,17165 -2866,17207 -2886,17110
 Mertensstr.	N -2959,17507 -2856,17489 -2511,17430 -2451,17421 -1928,17341
 Pepitapromenade	NN -2573,17314 -2873,17369
 Pepitapromenade	NN -2856,17489 -2873,17369 -2878,17324
-#
+# 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file vvv
 #: note: Wohnsiedlung Hakenfelde e.V. vvv
 #: note: Straßenschilder sind überwiegend in Fraktur (oder so), Straßen sind überwiegend beleuchtet vvv
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Straßenumbenennung)
-#: XXX neuer Name wird "Erna-Koschwitz-Weg" lauten, Umbenennung soll zum 15. November 2021 wirksam werden
-#: next_check: 2021-11-15
+#: by: https://www.berliner-woche.de/hakenfelde/c-leute/erna-koschwitz-eine-laube-und-der-elkartweg_a327986 (Einsprüche)
+#: XXX neuer Name wird "Erna-Koschwitz-Weg" lauten, Umbenennung sollte ursprünglich zum 15. November 2021 wirksam werden
+#: also_indoor: search Erna-Koschwitz-Weg
+#: add_fragezeichen: Wurde der Elkartweg zu "Erna-Koschwitz-Weg" umbenannt? Hängen bereits neue Straßenschilder?
+#: osm_watch: way id="130775086" version="10"
+#: osm_watch: way id="22981785" version="42"
+#: last_checked: 2021-11-12 (bw)
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2021-11-15
 Elkartweg	N -2158,17613 -2135,17633 -2119,17647 -2103,17670 -2087,17715 -2120,17786 -2131,17827 -2114,17878 -2066,17896 -2074,17921 -2100,17953 -2196,18069
 Mittenwalder Weg	N -2091,17603 -2089,17573 -2255,17563
 (Mittenwalder Weg - Garmischer Weg)	NN -2255,17563 -2252,17515
