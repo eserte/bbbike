@@ -214,7 +214,8 @@ An der Schillingbrücke	1 12021,11349 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
 Schulze-Delitzsch-Platz	1 11024,11789 11073,11774 11155,11750
 Dorotheenstr.	1 9870,12657 9742,12609 9681,12601 9581,12588 9454,12558
-Dorotheenstr. (Straßenbahn)	1s:q2 9454,12558 9330,12538
+#: note: früher "1s:q2"
+Dorotheenstr. (Straßenbahn)	1s:q3 9454,12558 9330,12538
 Georgenstr.	1 9441,12670 9568,12688 9659,12704 9754,12775
 Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: Rolf Schröder <001301c0fe12$f9c9eb00$fe78a8c0@pc166>
@@ -3288,6 +3289,7 @@ offenes Tor	BNP:3 12592,9249
 #: by: mapillary
 Drängelgitter	BNP:3::trailer=10 1035,14996
 #: next_check_id: BUSINESSPARKBERLIN-2020
+#: osm_watch: node id="8176571994" version="1"
 #: add_fragezeichen: existiert die Schranke noch?
 #: last_checked: 2021-05-20 (mapillary)
 #: check_frequency: 180d
@@ -3351,7 +3353,8 @@ Schönfließ - Summt: Brücke über die A10 wird neu gebaut	2::inwork 5752,30817 578
 #: osm_watch: way id="926868384" version="1"
 #: osm_watch: way id="926868383" version="2"
 #: also_indoor: traffic
-#: source_id: AdB/21-11-00133 (bis 15.11.2021)
+#: source_id: AdB/21-11-00133 (bis 15.11.2021) (inaktiv)
+#: add_fragezeichen: Ist die Brücke mittlerweile wieder geöffnet?
 #: priority: #B
 #: next_check: 2021-11-15
 Stolper Weg: Brücke über die A10 wird neu gebaut	2::inwork 514,32607 525,32437
@@ -3716,7 +3719,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-10-28 (mapillary)
+#: last_checked: 2021-11-15 (daf)
 #: check_frequency: 60d
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833
 # 
@@ -4075,10 +4078,10 @@ Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,
 #: note: laut rbb ebenfalls bis 31.10.2021
 #: source_id: 2147342379 (bis 31.10.2021)
 #: source_id: LMS-BR_r_LMS-BR_127414_LMS-BR_72 (inaktiv)
-#: source_id  viz2021:13.380614,52.414283,29.03.2018,07:00 (bis 31.10.2021) (mittlerweile 15.11.2021)
+#: source_id  viz2021:13.380614,52.414283,29.03.2018,07:00 (bis 31.10.2021) (mittlerweile 15.11.2021) (mittlerweile 31.03.2022)
 #: osm_watch: way id="4716389" version="31"
 #: last_checked: 2021-11-06 (bahninfo-forum)
-#: next_check: 2021-11-15
+#: next_check: 2022-03-31
 Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,898 9024,906 9058,932
 # 
 # REMOVED (mittlerweile kommt man durch) --- #: next_check_id: KLARAFRANKESTR-2018 --- #: XXX außerdem: genaue Lage der Straße --- #: osm_watch: way id="423494183" version="7" --- #: last_checked: 2019-08-28 --- #: check_frequency: 60d --- Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13735
