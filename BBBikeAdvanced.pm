@@ -1488,6 +1488,20 @@ EOF
 		if ($s =~ m{GPS: \s+ Latitude \s+ (\d+.\d+) \s .* GPS: \s+ Longitude \s+ (\d+.\d+)}xs) {
 		    push @coords, [$Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($2, $1))];
 		}
+
+		if ($s =~ m{^file://(.*\.jpe?g)$}i) {
+		    my $file = $1;
+		    if (eval { require Image::ExifTool; 1}) {
+			my $exiftool = Image::ExifTool->new;
+			$exiftool->Options(CoordFormat => '%+.6f');
+			my $info = $exiftool->ImageInfo($file);
+			my $lon = $info->{GPSLongitude}; $lon += 0; # +0 to get rid of sign
+			my $lat = $info->{GPSLatitude};  $lat += 0;
+			if ($lon && $lat) {
+			    push @coords, [$Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon, $lat))];
+			}
+		    }
+		}
 	    }
 	    last if (@coords); # otherwise try the other selection type
 	}
