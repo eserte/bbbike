@@ -11,11 +11,12 @@
 # 
 #: next_check_id: DIESEL-2019
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
-#: osm_watch: way id="524560334" version="4"
+# REMOVED --- #: osm_watch: way id="524560334" version="5"
+#: osm_watch: way id="524560332" version="5"
 #: last_checked: 2021-09-27 (mapillary) vvv
 #: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
-#: osm_watch: way id="680579631" version="2"
+#: osm_watch: way id="680579631" version="3"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -991,7 +992,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? auﬂerdem: wird die Colbestr. zur Fahrradstraﬂe?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erw‰hnung)
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-11-11
+#: last_checked: 2021-11-16
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -4709,7 +4710,7 @@ Zwieseler Str.: sehr guter Asphalt	Q0+ 19669,9876 19663,9757 19657,9666 19646,94
 Zwieseler Str.: Beton	Q0 19669,9876 19683,10031 19688,10094 19697,10210 19711,10426
 (Verl‰ngerung der Zwieseler Str.): Kleinsteinpflaster	Q1- 19621,9097 19638,9070
 (Verl‰ngerung der Zwieseler Str.): Asphalt mit Sch‰den	Q1 19638,9070 19705,9039
-Bodenmaiser Weg: Asphalt	Q1+ 19406,9236 19488,9223 19628,9194
+Bodenmaiser Weg: Asphalt mit Sch‰den	Q1- 19406,9236 19488,9223 19628,9194
 Robert-Siewert-Str.: Asphalt mit Sch‰den	Q1 19669,9876 19842,9895
 Beerfelder Str.: unbefestigte, holprige Straﬂe	Q2 19842,9895 19819,10090 19810,10155
 Pirolstr. (Karlshorst): Beton	Q0 19688,10094 19789,10091
@@ -8753,7 +8754,7 @@ Straﬂe 74: Asphalt	Q0- 12583,22428 12696,22455 12821,22437 12855,22431 13136,223
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: wosch
 #: XXX eventuell wird der Asphalt noch glatter gemacht
-#: last_checked: 2021-10-03 (mapillary)
+#: last_checked: 2021-11-13 (mapillary)
 Kˆnigsteinbr¸cke: welliger Asphalt	Q1 13136,22397 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378 13394,22373
 Straﬂe 86: Asphalt	Q0 13805,22935 13726,22860
 Straﬂe 86: unbefestigt	Q2 13726,22860 13699,22834
@@ -9911,9 +9912,9 @@ Rathausstr.: Asphalt	Q0 10601,12521 10584,12507 10476,12432
 (Weg an der S¸dpanke - Am Pankepark): Asphalt	Q0 8323,14142 8282,14116
 Sigridstr.: Asphalt mit einigen Sch‰den	Q1+ 14284,14469 14159,14495 14025,14519
 # REMOVED (Asphalt ist fertig) --- #: XXX letzte Deckschicht fehlt noch vvv --- #: last_checked: 2013-10-14 vvv --- #: check_frequency: 30d vvv--- #: osm_watch: way id="51260521" version="4" vvv
-Sokratesweg: Asphalt, letzte Deckschicht fehlt noch	Q0 18527,9623 18520,9585 18514,9552 18505,9500 18497,9459
-Sokratesweg: Asphalt, letzte Deckschicht fehlt noch	Q0 18505,9500 18596,9485
-Sokratesweg: Asphalt, letzte Deckschicht fehlt noch	Q0 18520,9585 18610,9569
+Sokratesweg: Asphalt	Q0 18527,9623 18520,9585 18514,9552 18505,9500 18497,9459
+Sokratesweg: Asphalt	Q0 18505,9500 18596,9485
+Sokratesweg: Asphalt	Q0 18520,9585 18610,9569
 Sokratesweg: Verbundsteinpflaster	Q1+ 18514,9552 18604,9535
 Rhinstr. [Nebenstraﬂe]: Beton	Q1+ 18258,11827 18340,11830 18381,11857 18417,11854
 (Rhinstr. - Am M¸hlenberg): Beton	Q1+ 18215,11690 18242,11793 18258,11827
@@ -12311,6 +12312,8 @@ Messelstr.: vereinzelte Hebungen und Sch‰den, kˆnnen aber gut umfahren werden	Q0
 M¸ggelstr.: Mosaikpflaster	Q1 14994,12121 14994,12064
 (Barnimstr. - Mollstr.): Beton	Q0- 11785,13241 11762,13207
 Heidenfeldstr. [Stichstraﬂe]: Beton	Q1 13445,13376 13419,13435
+Mellenseestr. [Wohngebiet]: Beton, einige Hebungen	Q1+ 17633,9898 17633,9793 17587,9655
+Rhenser Str.: Mosaikpflaster	Q1- 19133,9087 19083,9062
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13065,7 +13068,9 @@ Parchimer Str.: guter Beton	Q1 22319,12637 22272,12610 22258,12573 22257,12481 2
 #: corrected_by: srt (guter Beton -> schadhafter Beton)
 Parchimer Str.: schadhafter Beton	Q2+ 22212,12403 22215,12303 22225,12281
 Parchimer Str.: guter Beton	Q1 22225,12281 22292,12198 22304,12157
-Arberstr.: m‰ﬂiger Beton	Q1 19392,9116 19406,9236 19424,9502
+#: corrected_by: srt (m‰ﬂiger Beton -> ...)
+Arberstr.: Asphalt mit einigen Sch‰den	Q1 19392,9116 19406,9236
+Arberstr.: m‰ﬂiger Beton	Q1 19406,9236 19424,9502
 #: corrected_by: srt (m‰ﬂiger Beton -> ...)
 Arberstr.: Asphalt	Q0 19424,9502 19437,9653
 #: corrected_by: srt (Asphalt/Gehwegplatten -> ...)
@@ -19135,8 +19140,12 @@ Malersteig: Asphalt	Q0 13606,3085 13596,3039 13561,2898 13510,2690 13487,2621 13
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Instandsetzung der Fahrbahn, von August bis voraussichtlich Oktober 2021)
 #: by: https://abendblatt-berlin.de/2021/07/06/lichtenberg-sommerbaustellen-im-bezirk/
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
-#: next_check: 2021-10-31
+# REMOVED --- #: next_check: 2021-10-31
+#: last_checked: 2021-11-16
 Weseler Str.: m‰ﬂiger Asphalt	Q1- 18865,8740 18857,8790 18854,8831 18860,8886
+#: XXX in diesem Abschnitt laufen gerade Asphaltierungsarbeiten
+#: last_checked: 2021-11-16
+#: check_frequency: 7d
 Weseler Str.: m‰ﬂiger Asphalt	Q1- 18860,8886 18877,8973 18881,9002
 Weseler Str.: Asphalt	Q0 18881,9002 18886,9031
 Weseler Str.: m‰ﬂiger Asphalt	Q1- 18886,9031 18900,9119
@@ -24297,6 +24306,7 @@ Roseggerstr. (Mahlsdorf): guter Asphalt	Q0 23661,8597 23860,8480
 Unionstr.: guter Asphalt	Q0 5708,14077 5782,14067
 # 
 #: by: Bernhard Albers:
+#: confirmed_by: srt
 Rhenser Weg: m‰ﬂiger Asphalt, Straﬂensch‰den	Q1- 19133,9087 19195,9122 19267,9201
 # 
 #: by: beate (rrerre...)
@@ -30182,6 +30192,7 @@ Kreuzungsbereich asphaltiert	Q0 20467,4122
 Kreuzungsbereich asphaltiert	Q0 20522,4056
 Kreuzungsbereich asphaltiert	Q0 20583,3983
 Kreuzungsbereich asphaltiert	Q0 19221,9517
+Kreuzungsbereich asphaltiert	Q0 19128,9523
 Kreuzungsbereich mit Verbundsteinpflaster	Q1 4685,10689
 Kreuzungsbereich asphaltiert	Q0 5274,5557
 Kreuzungsbereich asphaltiert	Q0 5115,5551

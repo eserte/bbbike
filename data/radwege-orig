@@ -1659,14 +1659,14 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2021-10-30 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2021-11-15 vvv
+#: last_checked: 2021-11-16 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2021-11-15 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
 # REMOVED --- #: XXX danach den schon existierenden Eintrag wieder aktivieren ---	RW8; 17769,7465 17681,7589
 neu asphaltiert	RW1; 17769,7465 17681,7589
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -2295,14 +2295,14 @@ Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 	RW3; 12006,12464 12028,12519
 #: by: https://viz.berlin.de/2021/10/verkehrsvorschau-fuer-montag-11-10-2021/
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (ab 1.11.2021)
+#: source_id: viz2021:13.428503,52.518895,16.11.2021,17:00 (bis 30.11.2021)
 #: XXX geschützer Radweg wird gebaut (nach den Bauarbeiten Richtung Süden) vvv
 #: last_checked: 2021-11-11 vvv
 #: check_frequency: 21d vvv
-# REMOVED --- #: next_check: 2021-11-01 vvv
-# REMOVED --- #: next_check: 2021-12-31 vvv
+#: next_check: 2021-11-30 vvv
 	RW3; 12050,12616 12064,12673 12112,12861 12122,13029
 	RW2; 12122,13029 12126,13088
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -6818,7 +6818,7 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26300.pdf (Markierung wird im Zuge der Gleisbauarbeiten dauerhaft gemacht)
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
-#: osm_watch: way id="26708088" version="24"
+#: osm_watch: way id="26708088" version="25"
 #: last_checked: 2021-10-30 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
@@ -7351,3 +7351,5 @@ Busspur ist immer gültig	RW5; 3835,10352 3813,10435
 #: by: https://twitter.com/KiezLewisham/status/1452992369406644233 (Geltungszeiten)
 Busspur gilt Mo-Fr 7-9 Uhr und 13-18 Uhr	RW5; 3813,10435 3783,10517 3753,10578 3644,10759
 # 
+	RW6;RW6 18738,9467 18754,9584 18772,9694
+	RW6;RW6 18754,9584 18811,9576

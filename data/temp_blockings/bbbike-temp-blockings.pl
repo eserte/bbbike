@@ -30830,7 +30830,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-11-13
+#: last_checked: 2021-11-16
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32187,10 +32187,10 @@ EOF
        type  => 'handicap',
        source_id => '2147346268',
        data  => <<EOF,
-#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021)
+#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022)
 #: last_checked: 2021-11-07 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2021-11-25
+#: next_check: 2022-02-01
 	q2::inwork 8913,16159 9099,16398
 EOF
      },
@@ -32230,7 +32230,7 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung? Falls ja, wo ist der gesperrte Abschnitt und gilt die Sperrung auch für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="24"
 #: osm_watch: way id="165832806" version="21"
-#: last_checked: 2021-10-24
+#: last_checked: 2021-11-16
 #: check_frequency: 30d
 	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17483,8644 17449,8720 17416,8767 17380,8858
 EOF
@@ -33210,7 +33210,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-11-02
+#: last_checked: 2021-11-16
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33412,13 +33412,14 @@ EOF
      },
      { from  => 1628719200, # 2021-08-12 00:00
        until => 1637362800, # 2021-11-20 00:00
-       text  => 'Waldowallee: Bauarbeiten zwischen Köpenicker Allee und Marksburgstr., Fahrbahn gesperrt, Radfahrer dürfen den Gehweg benutzen, vom 13.08.2021 07:00 bis 19.11.2021 17:00',
+       text  => 'Köpenicker Str./Rudolf-Grosse-Str.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, möglicherweise bis 19.11.2021', # Waldowallee: Bauarbeiten zwischen Köpenicker Allee und Marksburgstr., Fahrbahn gesperrt, Radfahrer dürfen den Gehweg benutzen, vom 13.08.2021 07:00 bis 19.11.2021 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.5302,52.487045,13.08.2021,07:00',
        data  => <<EOF,
-#: note: Gehweg für Radfahrer frei (beide Richtungen)
-# REMOVED --- #: next_check: 2021-08-13
-	q3::inwork 18939,9417 18977,9322 19048,9146
+# REMOVED (hier nicht mehr) --- #: note: Gehweg für Radfahrer frei (beide Richtungen) --- # REMOVED --- #: next_check: 2021-08-13 ---	q3::inwork 18939,9417 18977,9322 19048,9146
+	q2::inwork 19020,9364 19109,9306
+	q2::inwork 19128,9523 19109,9306
+	q2::inwork 19109,9306 19195,9249
 EOF
      },
      { from  => $isodate2epoch->("2021-08-15 00:00:00"),

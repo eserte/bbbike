@@ -3781,7 +3781,7 @@ Zwieseler Str.: sehr guter Asphalt	Q0 19669,9876 19663,9757 19657,9666 19646,949
 Zwieseler Str.: Beton	Q0 19669,9876 19683,10031 19688,10094 19697,10210 19711,10426
 (Verlängerung der Zwieseler Str.): Kleinsteinpflaster	Q1 19621,9097 19638,9070
 (Verlängerung der Zwieseler Str.): Asphalt mit Schäden	Q1 19638,9070 19705,9039
-Bodenmaiser Weg: Asphalt	Q1 19406,9236 19488,9223 19628,9194
+Bodenmaiser Weg: Asphalt mit Schäden	Q1 19406,9236 19488,9223 19628,9194
 Robert-Siewert-Str.: Asphalt mit Schäden	Q1 19669,9876 19842,9895
 Beerfelder Str.: unbefestigte, holprige Straße	Q2 19842,9895 19819,10090 19810,10155
 Pirolstr. (Karlshorst): Beton	Q0 19688,10094 19789,10091
@@ -8609,9 +8609,9 @@ Rathausstr.: Asphalt	Q0 10601,12521 10584,12507 10476,12432
 (Weg an der Südpanke - Am Pankepark): Pflasterung	Q1 8307,14175 8323,14142
 (Weg an der Südpanke - Am Pankepark): Asphalt	Q0 8323,14142 8282,14116
 Sigridstr.: Asphalt mit einigen Schäden	Q1 14284,14469 14159,14495 14025,14519
-Sokratesweg: Asphalt, letzte Deckschicht fehlt noch	Q0 18527,9623 18520,9585 18514,9552 18505,9500 18497,9459
-Sokratesweg: Asphalt, letzte Deckschicht fehlt noch	Q0 18505,9500 18596,9485
-Sokratesweg: Asphalt, letzte Deckschicht fehlt noch	Q0 18520,9585 18610,9569
+Sokratesweg: Asphalt	Q0 18527,9623 18520,9585 18514,9552 18505,9500 18497,9459
+Sokratesweg: Asphalt	Q0 18505,9500 18596,9485
+Sokratesweg: Asphalt	Q0 18520,9585 18610,9569
 Sokratesweg: Verbundsteinpflaster	Q1 18514,9552 18604,9535
 Rhinstr. [Nebenstraße]: Beton	Q1 18258,11827 18340,11830 18381,11857 18417,11854
 (Rhinstr. - Am Mühlenberg): Beton	Q1 18215,11690 18242,11793 18258,11827
@@ -10775,6 +10775,8 @@ Messelstr.: vereinzelte Hebungen und Schäden, können aber gut umfahren werden	Q0
 Müggelstr.: Mosaikpflaster	Q1 14994,12121 14994,12064
 (Barnimstr. - Mollstr.): Beton	Q0 11785,13241 11762,13207
 Heidenfeldstr. [Stichstraße]: Beton	Q1 13445,13376 13419,13435
+Mellenseestr. [Wohngebiet]: Beton, einige Hebungen	Q1 17633,9898 17633,9793 17587,9655
+Rhenser Str.: Mosaikpflaster	Q1 19133,9087 19083,9062
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11179,7 +11181,8 @@ Heesestr.: sehr guter Asphalt	Q0 21611,9893 21594,9895 21534,9901 21371,9923 211
 Parchimer Str.: guter Beton	Q1 22319,12637 22272,12610 22258,12573 22257,12481 22212,12422 22212,12403
 Parchimer Str.: schadhafter Beton	Q2 22212,12403 22215,12303 22225,12281
 Parchimer Str.: guter Beton	Q1 22225,12281 22292,12198 22304,12157
-Arberstr.: mäßiger Beton	Q1 19392,9116 19406,9236 19424,9502
+Arberstr.: Asphalt mit einigen Schäden	Q1 19392,9116 19406,9236
+Arberstr.: mäßiger Beton	Q1 19406,9236 19424,9502
 Arberstr.: Asphalt	Q0 19424,9502 19437,9653
 Arberstr.: Verbundsteinpflaster/Beton	Q1 19437,9653 19450,9728
 Zweibrücker Str.: guter Asphalt	Q0 -4489,15014 -4460,15007 -4352,15063 -4338,15137 -4332,15179 -4317,15298 -4308,15411 -4294,15525 -4283,15639 -4254,15813

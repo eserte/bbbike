@@ -1134,7 +1134,7 @@ Wittenbergplatz	1 6353,10583 6268,10588 6216,10614 6171,10657
 Amalienstr.	1s:q3 13794,16773 13722,16843 13653,16907 13581,16968
 Pasedagplatz	1 14099,17195 14150,17255 14170,17249
 (Vorfahrt am Bahnhof Friedrichstr.)	1 9303,12718 9171,12758
-Aristotelessteig	1s:q2 18496,9628 18527,9623 18660,9599
+Aristotelessteig	1s:q3 18435,9639 18496,9628 18527,9623 18660,9599
 #: by: Stefan Klinkusch vvv
 Hügelschanze	1 -3881,15589 -3982,15577
 Beim Pfarrhof	1 -7292,14811 -7304,14567
@@ -1373,6 +1373,7 @@ Nußbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
 Skalitzer Str.: Mittelstreifen, Bordsteine	3nocross 12930,10621 12899,10595 12731,10547
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
+Mellenseestr. [Wohngebiet]	1 17587,9655 17633,9793 17633,9898
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3352,7 +3353,7 @@ Schönfließ - Summt: Brücke über die A10 wird neu gebaut	2::inwork 5752,30817 578
 # 
 #: osm_watch: way id="926868384" version="1"
 #: osm_watch: way id="926868383" version="2"
-#: also_indoor: traffic
+#: also_indoor: traffic (G)
 #: source_id: AdB/21-11-00133 (bis 15.11.2021) (inaktiv)
 #: add_fragezeichen: Ist die Brücke mittlerweile wieder geöffnet?
 #: priority: #B
@@ -3401,7 +3402,7 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 #: osm_watch: way id="4045220" version="42"
 #: osm_watch: way id="938037386" version="1"
 #: osm_watch: way id="868103791" version="2"
-#: last_checked: 2021-08-03
+#: last_checked: 2021-11-16
 #: check_frequency: 90d
 Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9532
 # 
@@ -4502,13 +4503,16 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: by: osm
 #: by: https://www.bahninfo-forum.de/read.php?9,654720,702391#msg-702391
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210530/
-#: osm_watch: way id="663005792" version="5" brb
+#: note: laut osm Sperrung bis 01/2023
+#: osm_watch: way id="663005792" version="6" brb
 #: also_indoor: traffic
 #: last_checked: 2021-09-10 (osm) vvv
 #: check_frequency: 360d vvv
+#: next_check: 2023-01-01 vvv
 Berliner Str. (Mahlow): Straße gesperrt, neue Bahnunterführung wird gebaut	2:inwork 10776,-4460 10896,-4469 10956,-4470
 tragen (Treppe) oder Aufzug benutzen	0:35 10860,-4393
 tragen (Treppe) oder Aufzug benutzen	0:35 10888,-4384
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
