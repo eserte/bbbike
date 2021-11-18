@@ -246,11 +246,22 @@ returned. With C<< doit=>1 >> an actual synchronization is done. Files
 already present in the destination directory are not overwritten (note
 that no content check is done, only a presence check).
 
+=head2 BUGS
+
+If multiple devices are connected, then C<mtp-getfile> (and possibly
+C<mtp-sendfile>) might pick the wrong one, which will cause a sync
+workflow to fail. Unfortunaltey there are no options to force a
+particular device.
+
 =head2 EXAMPLES
 
 Run synchronization from commandline:
 
     cd ~/src/bbbike
     perl -I. -MGPS::BBBikeGPS::MTP -e 'GPS::BBBikeGPS::MTP::_mtp_sync_commands("garmin/activity", "/path/to/destination", doit=>1)'
+
+=head1 SEE ALSO
+
+L<mtp-tools(1)>.
 
 =cut
