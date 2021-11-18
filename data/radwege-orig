@@ -688,12 +688,12 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2021-11-06 vvv
+#: last_checked: 2021-11-18 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2021-12-31 vvv
+# REMOVED --- #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
 provisorische Radspuren	RW4; 10601,12521 10644,12469 10673,12434 10738,12364
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 	RW4;RW4 10601,12521 10431,12709
@@ -2175,7 +2175,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2021-10-08
+#: last_checked: 2021-11-18
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -2276,13 +2276,13 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/geschuetzter-radweg_a326639
 #: XXX geschützer Radweg wird gebaut vvv
 #: source_id: viz2021:13.429807,52.523192,11.10.2021,07:00 (mittlerweile bis 15.11.2021) (bis 17.11.2021)
-#: last_checked: 2021-11-11 vvv
-#: check_frequency: 21d vvv
-#: next_check: 2021-11-17 vvv
+#: last_checked: 2021-11-18 (Restarbeiten) vvv
+#: check_frequency: 3d vvv
+# REMOVED --- #: next_check: 2021-11-17 vvv
 	RW2; 12126,13088 12122,13029
 	RW4; 12122,13029 12112,12861
 	RW3; 12112,12861 12064,12673 12050,12616
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -2297,7 +2297,7 @@ Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (ab 1.11.2021)
 #: source_id: viz2021:13.428503,52.518895,16.11.2021,17:00 (bis 30.11.2021)
 #: XXX geschützer Radweg wird gebaut (nach den Bauarbeiten Richtung Süden) vvv
-#: last_checked: 2021-11-11 vvv
+#: last_checked: 2021-11-18 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2021-11-30 vvv
 	RW3; 12050,12616 12064,12673 12112,12861 12122,13029
@@ -7019,7 +7019,7 @@ provisorischer Radstreifen	RW4; 8919,10360 8824,10366 8771,10381 8701,10428 8581
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/radstreifen-wird-weiter-gebaut_a276997
 #: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-4/ (bis Alexandrinenstr., bis 2. Quartal 2021)
 #: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-3/ (Prinzenstr. - Alexandrinenstr., bis 4. Quartal 2021)
-#: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabsschnitt-2/ (Böcklerstr. - Prinzenstr., bis 2. Quartal 2021)
+#: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabsschnitt-2/ (Böcklerstr. - Prinzenstr., bis 2. Quartal 2021) (mittlerweile gelöscht)
 #: by: https://www.tagesspiegel.de/berlin/sanierung-der-bvg-hochbahn-sperrung-auf-u1-und-u3-in-berlin-kreuzberg-wird-ab-freitag-ausgeweitet/27039930.html (Verstetigung ab 12.4.2021)
 #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/
 #: source_id: 2147340884 (inaktiv)
@@ -7314,7 +7314,7 @@ Tempo 10	RW6;RW6 14468,11203 14442,11101
 Tempo 10	RW6;RW6 14531,11142 14513,11075
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2021-10-31 vvv
+#: last_checked: 2021-11-18 vvv
 #: next_check: 2024-06-01 vvv
 	RW2; 10830,12279 10831,12371
 	RW4; 10831,12371 10804,12461

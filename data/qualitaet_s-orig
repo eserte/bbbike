@@ -11924,11 +11924,8 @@ Sophie-Charlotten-Str.: Asphalt mit Schäden	Q1+ 2332,12793 2397,12513 2411,12428
 (Kieler Brücke - Heidestr.): Asphalt	Q0 7740,14409 7705,14383
 (Kieler Brücke - Heidestr.): Kleinsteinpflaster	Q1 7705,14383 7612,14325
 (Hedwig-Porschütz-Str. - Uferweg/Kieler Brücke): Asphalt	Q0- 7757,14318 7763,14332 7754,14354 7769,14364
-#: next_check_id: EUROPACITY-2015
-#: XXX nach den Bauarbeiten wird hier der parallel führende asphaltierte Weg eröffnet
-#: last_checked: 2021-10-08
-#: check_frequency: 120d
-(Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1 7769,14364 7746,14401
+# REMOVED --- #: next_check_id: EUROPACITY-2015 --- #: XXX nach den Bauarbeiten wird hier der parallel führende asphaltierte Weg eröffnet --- #: last_checked: 2021-10-08 --- #: check_frequency: 120d
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 7769,14364 7746,14401
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1 7746,14401 7705,14383
 #: by: mapillary
 Pfannschmidtstr. [Wohngebietsstraße]: Asphalt	Q0 15755,24039 15829,24138 15878,24207

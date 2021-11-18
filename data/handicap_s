@@ -3,7 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
-Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12596,11696 12453,11790
+Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn nur f¸r Baufahrzeuge	q3::inwork 12596,11696 12453,11790 12378,11806
 Jessnerstr.: Sperrung der Fahrbahn nˆrdlich der Oderstr.	q3::inwork 14946,11697 14986,11760
 Oderstr.: Einbahnstraﬂenregelung, offen Richtung Osten	q3::inwork; 15043,11637 14946,11697
 (Planstraﬂe C): Fahrbahn durch Bauz‰une abgesperrt, Ausweichen auf Gehweg mˆglich	q3::inwork 12926,11224 12848,11093
@@ -2340,7 +2340,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0 7959,10910 8119,10797
 (Weydemeyerstr.): Fuﬂg‰nger	q2 11843,12828 11825,12792 11809,12760
 (Weydemeyerstr.): einige Fuﬂg‰nger	q2 11933,12701 11971,12785 11925,12807
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11622,12850 11716,12803
-(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q2 11601,12858 11589,12768
+(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q3 11601,12858 11589,12768
 (Berolinastr.): Fuﬂg‰nger	q2 11847,12927 11888,12910
 (Berolinastr.): Fuﬂg‰nger	q4 11888,12910 11957,12876
 (Berolinastr.): Fuﬂg‰nger	q4 11888,12910 11906,12947 11921,12990
@@ -3138,7 +3138,7 @@ Mauerstr..: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. 
 J‰gerstr.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 9195,11972 9108,11961
 Taubenstr.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 9207,11880 9138,11872
 Mauerstr.: Bauarbeiten, Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 9138,11872 9171,11777
-Margarete-Steffin-Str.: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 8700,12810 8732,12804
+Margarete-Steffin-Str.: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 8559,12912 8631,12848 8700,12810 8732,12804
 (Los-Angeles-Platz): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5822,10609
 Weinmeisterhornweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -4798,11231 -4579,11174
 Walter-Friedrich-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 16172,25217 16171,25254

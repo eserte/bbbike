@@ -12,14 +12,13 @@
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-ostbahnhof (bis 2025?)
-#: XXX Wann sind die Bauarbeiten beendet? Ist mittlerweile die gesamte Fahrbahn der Erich-Steinfurth-Str. gesperrt?
+#: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2021-11-03
-# REMOVED --- #: check_frequency: 120d
-#: check_frequency: 30d
+#: last_checked: 2021-11-18
+#: check_frequency: 120d
 #: next_check: 2025-01-01
-Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12596,11696 12453,11790
+Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn nur für Baufahrzeuge	q3::inwork 12596,11696 12453,11790 12378,11806
 # 
 #: note: laut rbb bis 29.10.2021, laut Parkverbotsschilder bis 28.1.2022 vvv
 #: also_indoor: traffic (H(falsch),G(teilweise))
@@ -262,11 +261,11 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-10-31
+#: last_checked: 2021-11-18
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
-#: last_checked: 2021-11-06
+#: last_checked: 2021-11-18
 #: check_frequency: 60d
 (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
 # 
@@ -706,6 +705,9 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12
 # 
 #: XXX bis wann dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(zu viel)) vvv
+#: osm_watch: way id="1002249853" version="1"
+#: osm_watch: way id="198589916" version="8"
+#: osm_watch: way id="198589913" version="6"
 #: last_checked: 2021-11-17 vvv
 #: check_frequency: 14d vvv
 Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q2::inwork; 15932,10830 15681,10801
@@ -4142,8 +4144,8 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 #: note: rechtliche Lage unklar, Feuerwehrzufahrt
 (Karl-Marx-Allee): Fußgänger, Bordsteine	q1 11622,12850 11716,12803
 # REMOVED (by mapillary) --- #: next_check_id: KARLMARXALLEE-2018 --- #: last_checked: 2020-06-13 --- #: check_frequency: 60d
-#: note: früher "q1", rechtlich Lage unklar
-(Karl-Marx-Allee - Berolinastr.): Fußgänger, kurvig	q2 11601,12858 11589,12768
+#: note: früher "q1", geschützte Grünanlage
+(Karl-Marx-Allee - Berolinastr.): Fußgänger, kurvig	q3 11601,12858 11589,12768
 #: note: früher "q1", rechtliche Lage unklar
 (Berolinastr.): Fußgänger	q2 11847,12927 11888,12910
 #: note: früher "q1", Schild mit explizitem Radfahren-verboten-Schild
