@@ -1184,7 +1184,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://twitter.com/VIZ_Berlin/status/1432299752406888449 (Grundsanierung ab 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="16"
-#: last_checked: 2021-11-11
+#: last_checked: 2021-11-19
 #: check_frequency: 120d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1197,7 +1197,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13487
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="29"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2021-11-11
+#: last_checked: 2021-11-19
 #: check_frequency: 120d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13383,13349
@@ -1542,7 +1542,7 @@ Busspur ist immer gültig	RW5;RW5 9984,12426 9934,12420 9858,12410
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2021-11-09
+#: last_checked: 2021-11-16 (mapillary)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2021-10-31
 	RW5;RW0 10063,12438 10024,12431 9984,12426
@@ -5042,8 +5042,8 @@ Grünmarkierung	RW3; 5370,6486 5424,6584 5533,6753 5644,6936
 	RW6;RW6 15764,23482 15899,23508 15918,23512 15963,23523 16064,23547
 #: by: Holger Nitz:
 	RW6;RW6 3560,2467 3551,2212
-	RW3; 13438,14675 13396,14630 13362,14593 13291,14518 13239,14461 13183,14400 13097,14307 13057,14267
-	RW3; 13057,14267 13097,14307 13183,14400 13239,14461 13291,14518 13362,14593 13396,14630
+	RW3; 13438,14675 13396,14630 13362,14593 13291,14518 13239,14461 13183,14400 13107,14318 13057,14267
+	RW3; 13057,14267 13107,14318 13183,14400 13239,14461 13291,14518 13362,14593 13396,14630
 	RW4; 13396,14630 13438,14675
 #: by: Thomas Schäfer:
 #: note: ebenso by anonymous:
@@ -6150,7 +6150,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünmarkierung geben
-#: last_checked: 2021-10-11 (mapillary) vvv
+#: last_checked: 2021-11-17 (mapillary) vvv
 #: check_frequency: 60d
 Gelbmarkierung	RW3;RW3 12639,8344 12598,8390
 	RW4; 12639,8344 12689,8289 12714,8249
@@ -6192,11 +6192,11 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-11-06
+#: last_checked: 2021-11-17 (mapillary)
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
-#: last_checked: 2021-10-11 (mapillary)
+#: last_checked: 2021-11-17 (mapillary)
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -6772,9 +6772,10 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2021-11-10 (mapillary)
+#: last_checked: 2021-11-19
 #: check_frequency: 21d
-	RW3; 12616,14315 12522,14385 12407,14470
+	RW3; 12616,14315 12522,14385
+Grünmarkierung	RW3; 12522,14385 12407,14470
 #: note: am Ende fehlen ein paar Meter Grünmarkierung
 Grünmarkierung	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535
 #: note: am Anfang und am Ende fehlen ein paar Meter Grünmarkierung
@@ -6788,7 +6789,7 @@ Grünmarkierung	RW4; 12317,14535 12407,14470 12522,14385
 #: by: https://twitter.com/VIZ_Berlin/status/1389893047379496960 (Markierungsarbeiten)
 #: by: https://twitter.com/VIZ_Berlin/status/1402152820439138307
 #: XXX hier wird vermutlich auch eine Grünmarkierung entstehen
-#: last_checked: 2021-10-26 (mapillary) vvv
+#: last_checked: 2021-11-19 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2022-12-31 vvv
 #: osm_watch: way id="335479077" version="14"
@@ -7185,6 +7186,7 @@ außerdem Teil einer Fahrradstraße	RW4;RW4 10705,9234 10713,9260 10749,9342
 Tempo 10	RW6;RW6 11039,21632 10761,21535 10126,21314
 	RW7;RW7 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
 	RW7;RW7 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
+	RW7;RW7 13761,12578 13991,12522 14091,12494 14133,12482 14266,12446 14451,12396
 	RW3;RW3 18596,4517 18434,4363
 	RW6;RW6 -8061,4274 -8123,4273 -8143,4244 -8064,4190 -8033,4231 -8009,4266 -8046,4292
 	RW6;RW6 -7914,4150 -8033,4231

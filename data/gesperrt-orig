@@ -336,7 +336,7 @@ Müggelstr.	1 14901,11808 14965,11924
 # REMOVED (stimmt nicht (mehr?)) --- Schmollerplatz/str.	1 13231,9422 13178,9363 13206,9335
 Isarstr.	1s:q4 12349,8464 12368,8356
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1s:q4 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12575,14812 12528,14845
+Anton-Saefkow-Str.	1s:q4 13183,14400 13088,14469 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12575,14812 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
 Große Präsidentenstr.	1 10105,13004 10220,13098
@@ -1375,6 +1375,9 @@ Skalitzer Str.: Mittelstreifen, Bordsteine	3nocross 12930,10621 12899,10595 1273
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
 Mellenseestr. [Wohngebiet]	1 17587,9655 17633,9793 17633,9898
+Mühsamstr.	1 13818,12897 13844,12900
+#: note: nur ein Einfahrt-verboten-Schild ohne korrespondierendes Einbahnstraßenschild
+Lilli-Henoch-Str.	1s:q3 12357,15020 12388,14926
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3602,7 +3605,7 @@ Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 188
 #: XXX vermutlich dauerhaft, die Fahrbahn ist schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben
 #: osm_watch: way id="860287005" version="4"
 #: also_indoor: traffic (G)
-#: last_checked: 2021-11-10
+#: last_checked: 2021-11-19
 #: check_frequency: 120d
 #: next_check: 2022-07-01
 Cotheniusstr.: Fahrbahn durch Bauzäune abgesperrt	2::inwork 13430,13733 13519,13785
@@ -4624,7 +4627,7 @@ Danziger Str.	3nocross 12616,14315 12522,14385 12407,14470 12317,14535
 #: note: Luftbild:
 Greifswalder Str.: Straßenbahntrasse	3nocross 13078,15586 13225,15697 13307,15758
 Dietrich-Bonhoeffer-Str.	1 12556,14230 12266,14460
-tragen (3 einzelne Stufen)	0:15 13079,14320
+tragen (3 einzelne Stufen)	0:15 13087,14332
 Achtung, schlecht sichtbare Kette!	BNP:5 13485,14054
 # REMOVED (jetzt mit Rampe, siehe handicap_s-orig) --- tragen (ca. 4 x 4 Stufen)	0:30 12862,14632
 tragen (4 Stufen) oder schmale Rampe benutzen	0:5 13009,14616
@@ -4660,7 +4663,7 @@ Kette	BNP:5 3264,9261
 Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3nocross 12901,14093 12972,14173 12992,14196 13026,14234
 # 
 # REMOVED (ja) --- #: XXX Bauarbeiten, evtl. wird danach der Mittelstreifen an der Anton-Saefkow-Str. leichter zu überqueren sein --- #: last_checked: 2019-09-22
-Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross 13057,14267 13097,14307 13183,14400
+Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross 13057,14267 13107,14318 13183,14400
 Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross 13183,14400 13239,14461 13291,14518 13362,14593
 # 
 (Treppe zur Putlitzbrücke): tragen, ca. 35 Stufen	0:40 6253,14184

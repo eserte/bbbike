@@ -2172,8 +2172,8 @@ Landsberger Allee [Nebenfahrbahn]	N 22092,16029 21891,15938 21816,15954
 (Georg-Knorr-Str. - Landsberger Allee)	NN 19150,15009 19152,14999 19133,14987 19156,14987 19157,14979 19163,14981 19171,14984 19175,14968
 (Georg-Knorr-Str. - Frank-Schweitzer-Str.)	NN 19157,14979 19171,14938 19173,14931 19175,14926 19180,14915 19255,14911
 (Landsberger Allee - Frank-Schweitzer-Str.)	NN 19156,14953 19160,14935 19171,14938
-Kniprodestr.	H 12640,13814 12701,13873 12766,13942 12856,14042 12901,14093 12972,14173 12992,14196 13026,14234 13057,14267 13097,14307 13183,14400 13239,14461 13291,14518 13362,14593 13396,14630 13438,14675 13636,14900 13647,14912 13744,15018 13823,15111
-Anton-Saefkow-Str.	N 12528,14845 12575,14812 12700,14726 12789,14670 12862,14618 12901,14594 13013,14523 13084,14472 13183,14400
+Kniprodestr.	H 12640,13814 12701,13873 12766,13942 12856,14042 12901,14093 12972,14173 12992,14196 13026,14234 13057,14267 13107,14318 13183,14400 13239,14461 13291,14518 13362,14593 13396,14630 13438,14675 13636,14900 13647,14912 13744,15018 13823,15111
+Anton-Saefkow-Str.	N 12528,14845 12575,14812 12700,14726 12789,14670 12862,14618 12901,14594 13013,14523 13088,14469 13183,14400
 Pappelallee (Prenzlauer Berg)	NH 10881,15047 10900,15075 10916,15098 10930,15119 10941,15135 11065,15318 11090,15355 11112,15387 11131,15417 11156,15457 11176,15489 11290,15669 11316,15711 11328,15730 11344,15755 11353,15770 11367,15793 11387,15827
 Lychener Str.	N 11056,15009 11236,15312 11268,15360 11418,15587 11499,15710
 Stargarder Str.	N 11852,15281 11682,15397 11595,15460 11502,15527 11418,15587 11290,15669 11158,15739 11086,15772 10953,15787
@@ -3929,11 +3929,12 @@ Rosensteinweg	N 1718,9653 1917,9821 1927,9820
 #: by: https://www.berliner-woche.de/grunewald/c-politik/wissmannstrasse-soll-baraschstrasse-heissen_a311232
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7965 (Bericht bis 31.7.2021 erwartet) (nächste BVV am 19.8.2021)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/buergerbeteiligung/aktuelle-projekte/umbenennung-wissmannstrasse/
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Straßenumbenennung, wirksam ab 26.2.2022)
 #: note: früher mit Zusatz "(Grunewald)"
-#: XXX Umbenennung zu Baraschstr. soll erfolgen (allerdings gibt es noch keinen Amtsblatt-Eintrag)
+#: XXX Umbenennung zu Baraschstr.; oldname-Eintrag wieder mit "Grunewald"
 #: also_indoor: search Wissmannstraße Baraschstraße
 #: osm_watch: way id="4623428" version="10"
-#: next_check: 2021-11-26
+#: next_check: 2022-02-26
 Wissmannstr.	N 1341,9244 1421,9173 1434,9154 1483,9132 1569,9137 1708,9298
 Winkler Str.	N 936,8933 1037,8884 1090,8892 1316,9067 1434,9154
 Erdener Str.	N 1457,9344 1587,9320 1708,9298 1757,9282 1782,9270
@@ -3963,7 +3964,7 @@ Am Westkreuz	N 2104,10494 2117,10495 2157,10497 2170,10497 2203,10455
 # REMOVED (Baustelle, City Cube Berlin, wird wahrscheinlich nicht mehr existieren) --- #: XXX Straßenland wird eingezogen --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2011 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2012 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2012 --- (Parkplatz Deutschlandhalle)	N 1398,10201 1471,10368
 Messedamm	HH 2095,11440 2102,11307 2037,11122 2011,11046 1928,10728
 Messedamm	H 1928,10728 1847,10697 1557,10306 1457,10168
-Messedamm	N 1457,10168 1344,10012
+Messedamm	NH 1457,10168 1344,10012
 Waldschulallee	N 1344,10012 1318,10031 1274,10063 1212,10109 1205,10114 1159,10149 1047,10225 967,10285 863,10363 775,10426 643,10524 564,10584 452,10669 355,10740
 Lötzener Allee	N 452,10669 475,10882 495,11090
 Soldauer Allee	N 830,10983 778,10988 681,10997 521,11089 512,11084 495,11090 454,11159
@@ -5170,18 +5171,20 @@ Hüttenweg (Grunewald, Dahlem)	H -927,6888 -739,6838 -138,6681 218,6571 297,6541 
 Hüttenweg (Grunewald, Dahlem)	N 1573,5152 1964,5070
 Hüttenweg (Grunewald, Dahlem)	NN 1964,5070 2075,5075 2174,5081 2211,5120
 Hüttenweg (Grunewald, Dahlem)	NN 2211,5120 2232,5118 2279,5112 2313,5111
-Auerbachtunnel	N 425,8766 505,8702
+Auerbachtunnel	NH 425,8766 505,8702
 #: note: laut DPAG-Mitteilungsblatt 12/2013 ist der Straßenname "entfallen" vvv
 Pappelplatz (Grunewald)	N 425,8766 297,8894
 Pappelplatz (Grunewald)	NN 297,8894 197,8973 30,9105
 #: note ^^^
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2013 (Umbenennung)
 #: oldname: -20130408: Auerbacher Str.
-Auerbachstr.	N 505,8702 635,8842 731,8867 920,8895
-Eichkampstr.	N 425,8766 676,9104 693,9129 890,9399 1019,9573 1117,9706 1238,9869 1344,10012
+Auerbachstr.	NH 505,8702 635,8842 731,8867 920,8895
+#: note: bei osm bis S-Bhf. als "tertiary" klassifiziert, keine Verkehrsmengen 2014/2018, Vorfahrtsstraße
+Eichkampstr.	NH 425,8766 676,9104 693,9129 890,9399 1019,9573 1117,9706 1238,9869 1344,10012
 Am Bahnhof Grunewald	N 936,8933 901,8969 884,8954 870,8939 920,8895
 Tunnel unter Bhf. Grunewald	NN 693,9129 731,9103 884,8954
-Fontanestr. (Grunewald)	N 1074,8470 1043,8550 972,8626 941,8680 930,8746 918,8795 920,8895 936,8933
+Fontanestr. (Grunewald)	NH 1074,8470 1043,8550 972,8626 941,8680 930,8746 918,8795 920,8895
+Fontanestr. (Grunewald)	N 920,8895 936,8933
 Hagenplatz	N 1094,8398 1167,8556
 Hagenstr. (Grunewald)	H 1074,8470 1094,8398 1116,8349 1181,8301 1214,8279 1296,8218 1383,8152 1446,8114 1478,8092 1675,7938 1740,7917 1839,7887 1971,7844 2092,7810
 Theodor-Heuss-Platz	HH 1532,11280 1574,11379 1403,11428 1381,11335 1450,11309 1532,11280
@@ -10664,7 +10667,8 @@ Pfarrstr.	NH 15458,11306 15477,11338
 Scheffelstr.	NH 15563,12870 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855
 Eberhardstr.	N 15233,12829 15231,12929
 Eldenaer Str.	NH 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827 13979,12861 13960,12866 13844,12900
-Mühsamstr.	N 13844,12900 13622,12806 13559,12779 13506,12752 13371,12694 13273,12649
+Mühsamstr.	N 13844,12900 13818,12897 13622,12806 13559,12779 13506,12752 13371,12694 13273,12649
+Mühsamstr.	N 13818,12897 13838,12884
 (Auerstr. - Mühsamstr.)	NN 13067,12583 13091,12563 13232,12628 13273,12649
 Adalbertstr.	NH 11393,10390 11389,10463 11411,10515 11463,10642 11505,10744 11552,10863 11589,10947 11640,11067 11656,11106
 Adalbertstr.	N 11656,11106 11726,11265 11808,11482
@@ -11395,12 +11399,13 @@ Pepitapromenade	NN -2856,17489 -2873,17369 -2878,17324
 #: note: Straßenschilder sind überwiegend in Fraktur (oder so), Straßen sind überwiegend beleuchtet vvv
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Straßenumbenennung)
 #: by: https://www.berliner-woche.de/hakenfelde/c-leute/erna-koschwitz-eine-laube-und-der-elkartweg_a327986 (Einsprüche)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Widerspruch)
 #: XXX neuer Name wird "Erna-Koschwitz-Weg" lauten, Umbenennung sollte ursprünglich zum 15. November 2021 wirksam werden
 #: also_indoor: search Erna-Koschwitz-Weg
 #: add_fragezeichen: Wurde der Elkartweg zu "Erna-Koschwitz-Weg" umbenannt? Hängen bereits neue Straßenschilder?
 #: osm_watch: way id="130775086" version="10"
 #: osm_watch: way id="22981785" version="42"
-#: last_checked: 2021-11-12 (bw)
+#: last_checked: 2021-11-09 (Amtsblatt)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-11-15
 Elkartweg	N -2158,17613 -2135,17633 -2119,17647 -2103,17670 -2087,17715 -2120,17786 -2131,17827 -2114,17878 -2066,17896 -2074,17921 -2100,17953 -2196,18069
@@ -13431,7 +13436,7 @@ Straße 106	NN 14580,14636 14599,14679 14666,14845 14828,15050
 (Fußgängerbrücke Storkower Str.)	NN 14465,13138 14481,13143 14524,13271 14530,13269 14535,13267 14530,13256
 (Bersarinplatz - Thaerstr.)	NN 13747,12642 13761,12690
 (Thaerstr. - Bersarinplatz)	NN 13761,12690 13695,12643
-Thaerstr.	N 13761,12690 13844,12900 13886,12995 13895,13017 13926,13090 13943,13129 13998,13272 14052,13389 14109,13449
+Thaerstr.	N 13761,12690 13838,12884 13844,12900 13886,12995 13895,13017 13926,13090 13943,13129 13998,13272 14052,13389 14109,13449
 #: alias: Bersarinplatz
 #: note: Kein Straßenname, Häuser gehören wahrscheinlich zum Bersarinplatz
 (Thaerstr. - Weidenweg)	N 13761,12690 13786,12636
@@ -13572,7 +13577,7 @@ Monbijoubrücke	NN 9654,12882 9683,12913 9707,12974
 Monbijoustr.	N 9707,12974 9714,12995 9736,13061 9771,13182
 Ziegelstr. (Mitte)	N 9269,13060 9401,13072 9559,13087 9636,13076 9736,13061
 Johannisstr.	N 9254,13171 9385,13174 9588,13174
-John-Schehr-Str.	N 13026,14234 12949,14292 12881,14342 12832,14378 12730,14458 12573,14581 12512,14626 12422,14692
+John-Schehr-Str.	N 13026,14234 12954,14287 12881,14342 12832,14378 12730,14458 12573,14581 12512,14626 12422,14692
 Geraer Str.	N 5414,1304 5435,1390 5467,1409 5661,1499 5854,1585 5908,1612 6010,1657 6132,1709 6170,1707 6258,1697 6377,1671 6486,1680 6526,1688
 Hirzbacher Weg	N 6377,1671 6378,1700 6322,1807
 Altenauer Weg	N 5273,1456 5406,1400
@@ -15588,8 +15593,8 @@ Eichenhofweg	N 24056,9798 24299,9746
 Livländische Str.	N 5170,8449 5177,8356 5177,8139
 (Livländische Str. - Schoelerpark)	NN 5170,8449 5212,8602
 Weimarische Str.	N 5053,8355 5050,8140 5048,8012 5049,7966
-Rudolf-Schwarz-Str.	NN 13097,14307 13079,14320
-Rudolf-Schwarz-Str.	N 13079,14320 13009,14371 12947,14428 12798,14536
+Rudolf-Schwarz-Str.	NN 13107,14318 13087,14332
+Rudolf-Schwarz-Str.	N 13087,14332 13022,14378 12947,14428 12798,14536
 Kablower Weg	N 22298,494 22504,425 22695,209 22815,37 22976,-176 23225,192
 (Kablower Weg - Rabindranath-Tagore-Str.)	NN 23225,192 23462,531 23516,583 23540,591
 (Grünauer Str. - Kablower Weg)	NN 22928,-331 22938,-318 22843,-147 22815,37
@@ -17836,7 +17841,11 @@ Olga-Benario-Prestes-Str.	N 12628,14650 12473,14763
 Bernhard-Lichtenberg-Str. (Prenzlauer Berg)	N 12676,14393 12494,14532 12371,14615
 Margarete-Walter-Str.	N 12789,14670 12745,14613 12814,14556
 Werner-Kube-Str.	N 12881,14342 12947,14428 13013,14523
-(Anton-Saefkow-Str. - John-Schehr-Str.)	NN 13084,14472 13009,14371 12949,14292
+#: osm.highway: service
+(Anton-Saefkow-Str. - John-Schehr-Str.)	N 13088,14469 13031,14390
+(Anton-Saefkow-Str. - John-Schehr-Str.)	NN 13031,14390 13022,14378 13016,14370
+#: osm.highway: service
+(Anton-Saefkow-Str. - John-Schehr-Str.)	NN 13016,14370 12954,14287
 Hans-Otto-Str.	N 12832,14378 12783,14312 12722,14232 12601,14060 12542,13984 12478,13903 12398,13792
 Heinz-Kapelle-Str.	N 12783,14312 12972,14173
 Dietrich-Bonhoeffer-Str.	N 12556,14230 12266,14460

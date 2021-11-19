@@ -1438,7 +1438,7 @@ X	Vf 11536,17153 11755,17216 11782,17222
 X	Vf 11755,17216 11782,17222 11920,17245
 # REMOVED --- #: XXX wird wahrscheinlich aber zur abknickenden Vorfahrt geändert werden --- #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7412 --- #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7412&options=4&date=20140222 --- #: by: http://www.berlin.de/ba-spandau/bvv-online/___tmp/tmp/450810361048796077/1048796077/00094574/74-Anlagen/04/Drs0808-XIX_sb_Anlage.pdf ("kann nicht entsprochen werden") --- #: next_check: 2014-01-01
 X	Kz -6316,17363
-X	Vf 918,8795 930,8746 941,8680
+#NH!!! X	Vf 918,8795 930,8746 941,8680
 X	Vf 9098,12687 9117,12705 9171,12758
 X	Vf 2241,20487 2188,20600 2073,20847
 X	Vf 19021,2946 18946,3077 18828,3196
@@ -1907,3 +1907,6 @@ X	Kz 2663,23875
 X	Kz 2802,23768
 X	Kz 2908,23621
 X	Kz 3010,23480
+X	Vf 13844,12900 13838,12884 13761,12690
+X	Kz 920,8895
+X	Kz 731,8867

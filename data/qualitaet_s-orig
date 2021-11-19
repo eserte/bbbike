@@ -992,7 +992,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-11-16
+#: last_checked: 2021-11-19
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1045,7 +1045,8 @@ Luise-Zietz-Str.: Asphalt mit einigen Schäden	Q1+ 20141,13071 20162,13287 20166,
 Rigaer Str.: Asphalt	Q0 14266,12446 14133,12482 14091,12494
 Rigaer Str.: Asphalt mit einigen Aufpflasterungen	Q0- 14266,12446 14451,12396 14538,12371 14748,12314 15003,12241 15104,12216
 Rigaer Str.: Asphalt	Q0 15104,12216 15175,12180
-Thaerstr.: Kopfsteinpflaster	Q2 13761,12690 13844,12900
+Thaerstr.: Kopfsteinpflaster	Q2 13761,12690 13838,12884
+Thaerstr.: Asphalt	Q0 13838,12884 13844,12900
 Diesterwegstr.: Beton	Q0- 11852,15281 11900,15238 12056,15159 12060,15141
 Diesterwegstr.: Kopfsteinpflaster	Q2 12060,15141 11995,15012
 Diesterwegstr.: Asphalt	Q0 11995,15012 11964,14962
@@ -12040,7 +12041,7 @@ Abendseglersteig: Asphalt, letzte Deckschicht fehlt	Q1+ 33406,2852 33383,2792 33
 Kettinger Str.: Asphalt	Q0- 9693,-746 9699,-600 9698,-556 9709,-333 9719,-187 9730,-33 9741,95 9762,155 9838,327 9894,453 9940,559 10002,695 10021,741 10047,813
 (Karstadt-Parkplatz): Asphalt	Q0 11775,9234 11767,9026
 John-Schehr-Str.: Beton	Q0 12422,14692 12512,14626
-John-Schehr-Str.: Asphalt	Q0 12512,14626 12573,14581 12730,14458 12832,14378 12881,14342 12949,14292 13026,14234
+John-Schehr-Str.: Asphalt	Q0 12512,14626 12573,14581 12730,14458 12832,14378 12881,14342 12954,14287 13026,14234
 (Königsheide - Johannisthaler Chaussee): Waldweg, einige sandige Stellen	Q1- 16497,5323 16305,5152
 Sterndamm [Nebenfahrbahn]: Kopfsteinpflaster	Q2 17697,5347 17762,5408
 Auguste-Viktoria-Str.: Asphalt	Q0 2608,7798 2627,7821 2630,7859
@@ -13994,8 +13995,8 @@ Oldenburger Str.: mäßiges Kopfsteinpflaster	Q2 5725,13566 5743,13772 5782,14067 
 #: by: Sebastian Kröger/Andreas Mühlhausen vvv
 #: corrected_by: srt (Q2 -> Q1-) vvv
 Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q1- 12528,14845 12575,14812 12700,14726 12789,14670 12862,14618 12901,14594 13013,14523
-Anton-Saefkow-Str.: Beton mit Löchern und Kanten	Q1- 13013,14523 13084,14472
-Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q1- 13084,14472 13183,14400
+Anton-Saefkow-Str.: Beton mit Löchern und Kanten	Q1- 13013,14523 13088,14469
+Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q1- 13088,14469 13183,14400
 #: corrected_by ^^^
 #: by: ^^^
 # 
@@ -14425,10 +14426,10 @@ Martin-Buber-Str.: Asphalt	Q0 682,2660 610,2678
 # 
 #: by: Kathleen (kati): vvv
 #: confirmed_by: srt
-Rudolf-Schwarz-Str.: mäßiges Kopfsteinpflaster	Q2 13079,14320 13009,14371 12947,14428
+Rudolf-Schwarz-Str.: mäßiges Kopfsteinpflaster	Q2 13087,14332 13022,14378 12947,14428
 #: corrected_by: srt (was also mäßiges Kopfsteinpflaster):
 Rudolf-Schwarz-Str.: Beton	Q1 12947,14428 12798,14536
-Rudolf-Schwarz-Str.: Beton	Q1 13097,14307 13079,14320
+Rudolf-Schwarz-Str.: Beton	Q1 13107,14318 13087,14332
 #: by: ^^^
 # 
 #: by: Sabine Pesch:
@@ -27908,7 +27909,7 @@ Olga-Benario-Prestes-Str.: Asphalt und einige Kopfsteinpflasterabschnitte	Q1- 12
 #: corrected_by: srt (Asphalt -> Asphalt mit Schäden)
 Margarete-Walter-Str.: Asphalt mit Schäden	Q1 12789,14670 12745,14613 12814,14556
 #: confirmed_by: srt
-(Anton-Saefkow-Str. - John-Schehr-Str.): Verbundsteine	Q1 13084,14472 13009,14371 12949,14292
+(Anton-Saefkow-Str. - John-Schehr-Str.): Verbundsteine	Q1 13088,14469 13031,14390 13022,14378 13016,14370 12954,14287
 #: confirmed_by: srt
 Hans-Otto-Str.: Kopfsteinpflaster	Q2 12832,14378 12783,14312 12722,14232 12601,14060 12542,13984 12478,13903 12398,13792
 #: confirmed_by: srt

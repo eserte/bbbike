@@ -26597,9 +26597,9 @@ EOF
 	3 6122,10925 6145,10975 6266,10927
 EOF
      },
-     { from  => $isodate2epoch->("2021-10-12 09:00:00"), # $isodate2epoch->("2021-08-30 00:00:00"), # 
-       until => $isodate2epoch->("2021-10-13 16:30:00"), # $isodate2epoch->("2021-08-31 16:30:00"), # 
-       text  => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 13. Oktober 2021 von 09:00 bis 16:30 Uhr',
+     { from  => $isodate2epoch->("2021-12-01 00:00:00"), # $isodate2epoch->("2021-08-30 00:00:00"), # 
+       until => $isodate2epoch->("2021-12-02 21:00:00"), # $isodate2epoch->("2021-08-31 16:30:00"), # 
+       text  => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 2. Dezember 2021 von 16:00 bis 21:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
        data  => <<EOF,
@@ -26610,6 +26610,7 @@ EOF
 #: by: https://www.bmvg.de/de/presse/grosser-zapfenstreich-zur-wuerdigung-einsatz-afghanistan-5181746 (Verschiebung, noch kein neuer Termin)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf (Großer Zapfenstreich 2021, neuer Termin)
 #: by: https://viz.berlin.de/2021/10/verkehrsvorschau-13102021/ (Erwähnung des Großes Zapfenstreichs)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Großer Zapfenstreich für Merkel)
 	2::temp 7435,11514 7322,11177
 	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
 	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
@@ -32473,7 +32474,7 @@ EOF
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
 #: osm_watch: node id="8599852570" version="1"
 #: osm_watch: node id="8599852571" version="1"
-#: last_checked: 2021-07-16 (baustellen-doku)
+#: last_checked: 2021-11-17 (mapillary)
 #: check_frequency: 180d
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 EOF
@@ -33354,7 +33355,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-11-10
+#: last_checked: 2021-11-19
 #: check_frequency: 14d
 #: next_check: 2021-11-30
 	q3::inwork 13057,14267 13158,14117
@@ -33723,13 +33724,14 @@ EOF
 	q4::inwork 13510,8138 13663,8011
 EOF
      },
-     { from  => undef, # 
-       until => 1636480477, # undef,
-       text  => 'Brachvogelstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Alexandrinnenstr. gesperrt',
+     { from  => $isodate2epoch->("2021-11-22 00:00:00"), # undef, # 
+       until => $isodate2epoch->("2021-12-19 17:00:00"), # 1636480477, # undef,
+       text  => 'Brachvogelstr./Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
-	q4::inwork; 10066,10071 10069,10151
+#: source_id: viz2021:13.399042,52.497652,23.11.2021,06:00
+	q4::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
 EOF
      },
      { from  => 1615158000, # 2021-03-08 00:00

@@ -10,6 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
+#: XXX Bauarbeiten der Wasserbetriebe, möglicherweise bis April 2022
+#: last_checked: 2021-11-19
+#: check_frequency: 30d
+#: next_check: 2022-04-01
+Mühsamstr.: Fahrbahn im Kreuzungsbereich Thaerstr. gesperrt	q4::inwork 13844,12900 13818,12897 13838,12884
+# 
 #: next_check_id: OSTBAHNHOF-2021
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-ostbahnhof (bis 2025?)
 #: XXX Wann sind die Bauarbeiten beendet?
@@ -4202,12 +4208,11 @@ Bautzener Platz: Fufgänger, Bordsteine	q3 8102,9262 8183,9260
 (Prenzlauer Allee - Lilli-Henoch-Str.): Fußgänger	q2 11877,15366 11937,15349 12003,15311 12103,15218 12208,15108 12284,15068 12314,15008
 (Prenzlauer Allee - Lilly-Henoch-Str.): Fußgänger	q2 11860,15309 11919,15314 11937,15349
 (Verlängerte Diesterwegstr.): Fußgänger	q2 12056,15159 12082,15206 12103,15218
-#: XXX möglicherweise teilweise eine Servicestraße, überprüfen! vvv
-#: XXX_prog BS Bordstein an der Rudolf-Schwarz-Str., ansonsten q1
-(Anton-Saefkow-Str. - John-Schehr-Str.): Fußgänger, Bordstein	q2 13084,14472 13009,14371
-#: XXX_prog BS Bordstein an der Rudolf-Schwarz-Str., ansonsten q1
-(Anton-Saefkow-Str. - John-Schehr-Str.): Fußgänger, Bordstein	q2 13009,14371 12949,14292
-#: XXX ^^^
+(Anton-Saefkow-Str. - John-Schehr-Str.): einige Fußgänger, Parkplatz	q1 13088,14469 13031,14390
+#: XXX_prog: BS
+#: note: beim Überqueren des Mittelstreifens müssen insgesamt vier Bordsteine überquert werden
+(Anton-Saefkow-Str. - John-Schehr-Str.): Bordsteine, parkende Autos	q4 13031,14390 13022,14378 13016,14370
+(Anton-Saefkow-Str. - John-Schehr-Str.): einige Fußgänger, Parkplatz	q1 13016,14370 12954,14287
 #: note: früher "q1"
 Ernst-Fürstenberg-Str.: Fußgänger, schmal	q3 13049,14141 12992,14196
 # REMOVED (hier nicht) --- An der Brauerei: Fußgänger	q1 13288,13300 13279,13323

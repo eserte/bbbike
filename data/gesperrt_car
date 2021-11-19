@@ -2038,9 +2038,9 @@ Wrangelstr./Cuvrystr.: Diagonalsperre	3 13271,10193 13151,10276 13132,10239
 Waldsieversdorf - Garzau	1 54985,15912 54614,16119 54603,16125
 Gerstenweg	1 20943,12376 20952,12407 21028,12536 21053,12582 21101,12661 21168,12794
 Rapsweg: nur für Anlieger	2:Anlieger 21251,12767 21168,12794
-Mittelstreifen für Autos	3nocross::ignrte 13239,14461 13183,14400 13097,14307
-Kniprodestr. -> Anton-Saefkow-Str.: Mittelstreifen für Autos	3::igndisp 13097,14307 13183,14400 13084,14472
-Anton-Saefkow-Str. -> Kniprodestr.: Mittelstreifen für Autos	3::igndisp 13084,14472 13183,14400 13239,14461
+Mittelstreifen für Autos	3nocross::ignrte 13239,14461 13183,14400 13107,14318
+Kniprodestr. -> Anton-Saefkow-Str.: Mittelstreifen für Autos	3::igndisp 13107,14318 13183,14400 13088,14469
+Anton-Saefkow-Str. -> Kniprodestr.: Mittelstreifen für Autos	3::igndisp 13088,14469 13183,14400 13239,14461
 Straßenbahntrasse	3nocross::ignrte 12230,16915 12267,16946 12324,17213
 Tino-Schwierzina-Str. -> Am Steinberg: Straßenbahntrasse	3::igndisp 12324,17213 12267,16946 12307,16950
 Am Steinberg -> Am Steinberg: Straßenbahntrasse	3::igndisp 12307,16950 12267,16946 12230,16915
@@ -2191,3 +2191,5 @@ Groß-Berliner Damm -> Pilotenstr.: Straßenbahntrasse	3::igndisp 18042,4667 17951
 Ahornallee	1 1586,11483 1566,11409 1574,11379
 Niederwallstr.: gesperrt für alle Fahrzeuge außer Radfahrer	2 10205,11758 10238,11741
 Rudolf-Reusch-Str	1 15710,12365 15668,12304 15658,12231 15651,12214
+(Anton-Saefkow-Str. - John-Schehr-Str.): durch versenkbaren Poller gesperrt	2:Anlieger 13088,14469 13031,14390
+(Anton-Saefkow-Str. - John-Schehr-Str.): durch versenkbaren Poller gesperrt	2:Anlieger 13016,14370 12954,14287

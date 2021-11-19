@@ -3712,7 +3712,36 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147341611
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf (Großer Zapfenstreich 2021)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Aufhebung der letzten Einschränkung)
+#: by: https://www.bmvg.de/de/presse/grosser-zapfenstreich-zur-wuerdigung-einsatz-afghanistan-5181746 (Verschiebung, noch kein neuer Termin)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf (Großer Zapfenstreich 2021, neuer Termin)
+#: by: https://viz.berlin.de/2021/10/verkehrsvorschau-13102021/ (Erwähnung des Großes Zapfenstreichs)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Großer Zapfenstreich für Merkel)
+	2::temp 7435,11514 7322,11177
+	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
+	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
+	2::temp 7595,11086 7575,11076 7252,11188
+Lützowufer	2::temp 7089,11073 7248,11143 7461,11051 7579,11032
+Hiroshimastr.	2::temp 7253,11208 7356,11517
+Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7248,11143
+# REMOVED ---	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
+# REMOVED ---	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
+# REMOVED ---	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
+# REMOVED ---	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7218,11181 7140,11156
+# REMOVED ---	2::temp 7665,11353 7745,11332
+# REMOVED ---	2::temp 7745,11332 7690,11108
+',
+         'from' => 1638313200,
+         'id' => 2875,
+         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
+         'text' => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 2. Dezember 2021 von 16:00 bis 21:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1638475200
+       },
        undef,
        undef,
        undef,
@@ -4847,7 +4876,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
 #: osm_watch: node id="8599852570" version="1"
 #: osm_watch: node id="8599852571" version="1"
-#: last_checked: 2021-07-16 (baustellen-doku)
+#: last_checked: 2021-11-17 (mapillary)
 #: check_frequency: 180d
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 ',
@@ -5198,7 +5227,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-11-10
+#: last_checked: 2021-11-19
 #: check_frequency: 14d
 #: next_check: 2021-11-30
 	q3::inwork 13057,14267 13158,14117
@@ -5371,7 +5400,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '# REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
+#: source_id: viz2021:13.399042,52.497652,23.11.2021,06:00
+	q4::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
+',
+         'from' => 1637535600,
+         'id' => 3457,
+         'text' => 'Brachvogelstr./Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt',
+         'type' => 'handicap',
+         'until' => 1639929600
+       },
        {
          'data' => '#: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
 	q4::inwork; 8196,20096 8224,19977 8234,19936

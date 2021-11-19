@@ -220,7 +220,7 @@ Travestr.	1 14836,11842 14901,11808 14986,11760
 Müggelstr.	1 14901,11808 14965,11924
 Isarstr.	1s 12349,8464 12368,8356
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1s 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12575,14812 12528,14845
+Anton-Saefkow-Str.	1s 13183,14400 13088,14469 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12575,14812 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
 Große Präsidentenstr.	1 10105,13004 10220,13098
@@ -896,6 +896,8 @@ Skalitzer Str. -> Skalitzer Str.: Mittelstreifen, Bordsteine	3::igndisp 12930,10
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
 Ehrenfelsstr.	1s 18737,8686 18778,8663
 Mellenseestr. [Wohngebiet]	1 17587,9655 17633,9793 17633,9898
+Mühsamstr.	1 13818,12897 13844,12900
+Lilli-Henoch-Str.	1s 12357,15020 12388,14926
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3338,7 +3340,7 @@ Straßenbahntrasse	3nocross::ignrte 13078,15586 13225,15697 13307,15758
 Greifswalder Str. -> Cohnstr.: Straßenbahntrasse	3::igndisp 13078,15586 13225,15697 13197,15734
 Cohnstr. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 13197,15734 13225,15697 13307,15758
 Dietrich-Bonhoeffer-Str.	1 12556,14230 12266,14460
-tragen (3 einzelne Stufen)	0:15:-234 13079,14320
+tragen (3 einzelne Stufen)	0:15:-235 13087,14332
 Achtung, schlecht sichtbare Kette!	BNP:5:-121 13485,14054
 tragen (4 Stufen) oder schmale Rampe benutzen	0:5:-233 13009,14616
 tragen (3 Stufen) oder schmale Rampe benutzen	0:5:-244 12982,14629
@@ -3404,9 +3406,9 @@ Kniprodestr. -> Heinz-Kapelle-Str.: unpassierbarer Mittelstreifen (Straßenbahn, 
 Heinz-Kapelle-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 12783,14312 12972,14173 12992,14196
 Kniprodestr. -> Ernst-Fürstenberg-Str.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 13026,14234 12992,14196 13049,14141
 Ernst-Fürstenberg-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3::igndisp 13049,14141 12992,14196 12972,14173
-schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 13057,14267 13097,14307 13183,14400
-Kniprodestr. -> Rudolf-Schwarz-Str.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13057,14267 13097,14307 13079,14320
-Rudolf-Schwarz-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13079,14320 13097,14307 13183,14400
+schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 13057,14267 13107,14318 13183,14400
+Kniprodestr. -> Rudolf-Schwarz-Str.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13057,14267 13107,14318 13087,14332
+Rudolf-Schwarz-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13087,14332 13107,14318 13183,14400
 schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 13183,14400 13239,14461 13291,14518 13362,14593
 Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13183,14400 13239,14461 13195,14487
 Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13195,14487 13239,14461 13291,14518
