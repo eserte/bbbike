@@ -152,7 +152,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
 #: osm_watch: way id="102486250" version="14"
-#: last_checked: 2021-07-18
+#: last_checked: 2021-11-20
 #: check_frequency: 120d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
@@ -161,7 +161,7 @@ Hans-Baluschek-Park: Beton	Q0- 7252,6080 7278,6101 7305,6183
 Hans-Baluschek-Park: Asphalt	Q0 7305,6183 7393,6452 7605,7109 7707,7415 7733,7483 7747,7521 7757,7563
 Hans-Baluschek-Park - Südkreuz: Betonpflaster	Q0- 7757,7563 7777,7644 7789,7692 7792,7704 7789,7718 7774,7724
 (Lotte-Laserstein-Str. - Hans-Baluschek-Park): Betonpflaster	Q0- 7750,7658 7777,7644
-Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8035,9437 7960,9466
+Großgörschenstr.: mäßiges Kopfsteinpflaster	Q2 8186,9380 8086,9418 8041,9434 7960,9466
 Großgörschenstr.: verfugtes Kopfsteinpflaster	Q1- 7771,9479 7829,9485
 Großgörschenstr.: Asphalt	Q0 7829,9485 7882,9490
 Waldemarstr.: Kopfsteinpflaster	Q2+ 11552,10863 11328,10957
@@ -672,7 +672,8 @@ Libauer Str.: Kopfsteinpflaster	Q2 13895,11663 13711,11458
 Niederbarnimstr.: Kopfsteinpflaster	Q2 14208,12235 14045,11965
 Simon-Dach-Str.: Kopfsteinpflaster	Q2- 14045,11965 14006,11843
 Simon-Dach-Str.: Kopfsteinpflaster	Q2 14006,11843 13981,11746 13954,11647 13888,11405
-Krossener Str.: Kopfsteinpflaster	Q2 14561,11600 14496,11620 14424,11639 14358,11656 14247,11681 14102,11715 13981,11746
+Krossener Str.: Kopfsteinpflaster	Q2 14561,11600 14496,11620 14424,11639 14358,11656 14247,11681 14102,11715
+Krossener Str.: Kopfsteinpflaster	Q2- 14102,11715 13981,11746
 Gabriel-Max-Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 14161,11930 14127,11811
 Gabriel-Max-Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 14102,11715 14065,11605 14049,11553
 Kurfürstenstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 7633,10394 7744,10372 7850,10351 8058,10306
@@ -992,7 +993,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-11-19
+#: last_checked: 2021-11-20
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1635,8 +1636,8 @@ Dolomitenstr.: Kopfsteinpflaster	Q2 10572,17573 10466,17464 10298,17299
 (Orankestr. - Orankesee): Parkweg	Q2+ 15598,15793 15604,15824 15587,15852
 Peter-Vischer-Str.: Asphalt	Q0 6168,6467 6324,6480 6458,6492 6538,6499 6694,6512 6820,6522
 # REMOVED (ja) --- #: add_fragezeichen: ist die Qualität des Asphalts nach den Bauarbeiten besser geworden? --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf (Bauarbeiten) --- #: next_check: 2013-11-22
-Riemenschneiderweg: Asphalt	Q0 6820,6522 6798,6755 6791,6821 6770,7027
-Riemenschneiderweg: Beton	Q0- 6770,7027 6762,7109
+Riemenschneiderweg: Asphalt	Q0+ 6820,6522 6798,6755 6791,6821 6770,7027
+Riemenschneiderweg: Beton, einige Hebungen	Q1+ 6770,7027 6762,7109
 Wuhlewanderweg (Ahrensfelder Berg): glatter Parkweg	Q1+ 22631,16215 22657,16287 22672,16341 22690,16383 22701,16451 22746,16596 22722,16906
 Wuhlewanderweg (Ahrensfelder Berg): glatter Parkweg	Q1+ 22722,16906 22611,17126 22432,17245 22349,17302
 Wuhlewanderweg: Holzbohlen	Q1- 22349,17302 22364,17323
@@ -1996,7 +1997,7 @@ Sorauer Str.: Kopfsteinpflaster, teilweise mäßig, teilweise OK	Q2+ 12822,10487 1
 am Beisheim-Center: glatt gepflastert	Q0- 8322,11715 8387,11637 8442,11555
 Hans-Bülow-Str.: Asphalt	Q0 8553,11638 8481,11638
 Berliner Freiheit: glatt gepflastert	Q0 8481,11638 8387,11637
-Katzlerstr.: mäßiges Kopfsteinpflaster	Q2 8035,9437 8097,9650
+Katzlerstr.: mäßiges Kopfsteinpflaster	Q2 8041,9434 8097,9650
 Derfflingerstr.: einige kurze Kopfsteinpflasterabschnitte, sonst Asphalt	Q1+ 7117,10611 7236,10936
 Weimarer Str.: gutes Kopfsteinpflaster	Q1 4101,11347 4101,11233
 Graudenzer Str.: Kopfsteinpflaster	Q2 13243,12222 13470,12190
@@ -7917,7 +7918,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8256,10264
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8264,10192 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2021-08-02 vvv
+#: last_checked: 2021-11-20 vvv
 #: check_frequency: 100d vvv
 #: osm_watch: way id="531908445" version="9"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
@@ -12312,6 +12313,8 @@ Müggelstr.: Mosaikpflaster	Q1 14994,12121 14994,12064
 Heidenfeldstr. [Stichstraße]: Beton	Q1 13445,13376 13419,13435
 Mellenseestr. [Wohngebiet]: Beton, einige Hebungen	Q1+ 17633,9898 17633,9793 17587,9655
 Rhenser Str.: Mosaikpflaster	Q1- 19133,9087 19083,9062
+Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10123,9233 10547,9233
+Südstern: Asphalt, einige Querrillen	Q0- 10547,9233 10705,9234
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -30371,4 +30374,5 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 26496,5047
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 26079,5057
 Einmündungsbereich mit Kopfsteinpflaster	Q3+ 25732,5065
 Einmündungsbereich mit Kleinsteinpflaster	Q2 2380,25364
+Einmündungsbereich mit Kopfsteinpflaster	Q2 8086,9418
 #: ignore ^^^

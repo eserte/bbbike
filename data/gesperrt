@@ -398,7 +398,7 @@ Alt-Wittenau	1 4597,20778 4649,20771 4953,20624 5117,20517 4935,20574 4726,20690
 Miningstr.	1 13444,5097 13455,4995 13432,4900 13466,4889 13503,4846
 Dörchläuchtingstr.	1 13511,4695 13486,4650 13485,4496
 Biesenthaler Str. (Hohenschönhausen)	1 17242,14719 17074,14704 17063,14797
-Nollendorfplatz	1 6851,10416 7033,10396 7131,10331 7033,10328
+Nollendorfplatz	1 6851,10416 6937,10407 7033,10396 7131,10331 7033,10328
 Nollendorfplatz	1 6971,10346 6937,10363 6851,10416
 Begonienplatz	1 4193,4897 4132,4988
 Begonienplatz	1 4173,5013 4231,4922
@@ -1902,8 +1902,8 @@ Angermünder Str. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10703,138
 Torstr. -> Christinenstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10459,13760 10572,13731 10599,13775
 Christinenstr. -> Torstr.: Mittelstreifen mit Straßenbahn	3::igndisp 10599,13775 10572,13731 10645,13711
 Linksabbiegen verboten (und unbequem)	3nocross::ignrte 8192,9619 8097,9650 7938,9694
-Yorckstr. -> Katzlerstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8192,9619 8097,9650 8035,9437
-Katzlerstr. -> Yorckstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8035,9437 8097,9650 7938,9694
+Yorckstr. -> Katzlerstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8192,9619 8097,9650 8041,9434
+Katzlerstr. -> Yorckstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8041,9434 8097,9650 7938,9694
 unbequemes Überqueren, stark befahrene Straße	3nocross::ignrte 7507,9458 7512,9572 7518,9791
 Potsdamer Str. -> Kleistpark: unbequemes Überqueren, stark befahrene Straße	3::igndisp 7507,9458 7512,9572 7501,9573
 Kleistpark -> Potsdamer Str.: unbequemes Überqueren, stark befahrene Straße	3::igndisp 7501,9573 7512,9572 7518,9791

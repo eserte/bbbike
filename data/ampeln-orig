@@ -7,6 +7,12 @@
 # 
 #: temporary vvv
 # 
+#: next_check_id: LUECK-2021
+#: source_id: viz2021:13.496206,52.500247,12.11.2021,06:00
+#: by: https://www.bahninfo-forum.de/read.php?9,716845,718464#msg-718464
+#: next_check: 2021-12-22
+#: valid: -20211222
+Lückstr.: Gegenverkehrsregelung	X::inwork 16601,10650
 # 
 #: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00
 #: last_checked: 2021-10-23 (mapillary) vvv
@@ -947,7 +953,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: XXX: Ampel temporär verlegt
 # XXX	F 8065,11349
-#: last_checked: 2021-10-13
+#: last_checked: 2021-11-20
 #: check_frequency: 180d
 #: next_check: 2026-01-01
 	F::inwork 8096,11393
@@ -2356,12 +2362,11 @@ Industriebahn	B0 -2410,13746
 nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 #: note: Anforderungsampel
 	F 5051,7631
-#: note: laut Luftbild:
 	X 3805,2196
 	F 14745,2710
-#: note: laut Luftbild:
+#: by: mapillary
 	X -6031,12605
-#: note: laut Luftbild:
+#: note: zumindest für Radfahrer Richtung Westen Anforderungsampel
 	X -6675,12632
 #: note: Anforderungsampel
 	F -1389,15285
@@ -2399,7 +2404,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	B0 13559,2205
 	B0 14224,1925
 	B0 14512,1818
-#: note: laut Luftbild:
+#: by: mapillary
 #: XXX_prog: Gilt nur in Südwestrichtung!
 	B0 15799,1690
 	B0 12225,4370
@@ -2423,8 +2428,8 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 12908,11058
 #: XXX_prog: für linksabbiegende Radfahrer Anforderungsampel
 	X 13144,10921
-#: note: laut Luftbild
-	F 4717,21223
+#: note: Anforderungsampel
+	F 4719,21232
 #: note: Anforderungsampel
 	F 1724,3187
 	X 22797,6978
@@ -2479,7 +2484,6 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 #: note: Anforderungsampel
 	F 14809,9466
 #: by: Jonas Laehnemann:
-#: note: Luftbild
 	F 760,975
 	F 16459,1680
 	F 16815,1278
@@ -2511,13 +2515,12 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 17744,18016
 	F 17675,17971
 	F 17966,17768
-#: note: Luftbild
 	X -4671,14818
 	X 18809,9133
 	X 21337,13470
 	X 23021,13982
 	X 5476,19450
-#: note: Luftbild
+#: note: Anforderungsampel
 	F 6749,940
 nur Museumsbetrieb der Heidekrautbahn	B0 7768,21253
 nur Museumsbetrieb der Heidekrautbahn	B0 7966,21563
@@ -2528,9 +2531,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	X 20959,11472
 	F 21137,11294
 	X 7481,19400
-#: note: Luftbild
 	X 19809,15676
-#: note: Luftbild
 	X 19733,15511
 #: note: Anforderungsampel, langsame Reaktion
 	F 7164,-473
@@ -2580,12 +2581,11 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 #: by: Message-ID: <f7gpgb$22l$1@mobile.in-berlin.de>
 	F 1442,12480
 	F 1669,12413
-#: note: Luftbild:
 	X -4290,14025
 	X 4813,5350
 	X 5346,6443
 	X 8205,10979
-#: note: Luftbild:
+#: by: mapillary
 	X -9005,13354
 	X 3106,14195
 	F 8953,10366
@@ -2668,7 +2668,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F -6053,1224
 #: note: Anforderungsampel
 	F 6522,12662
-#: note: Luftbild:
+#: by: mapillary
 	X 4775,21522
 #: XXX_prog: gilt nicht für rechtsabbiegende Radfahrer in der Relation Breitscheidplatz (NO) - Schildhornstr. (SO)
 	X 4074,6681
@@ -2774,7 +2774,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 8743,12099
 	F 30993,3557
 	F 5238,13714
-#: note: Luftbild
+#: by: mapillary
+#: note: Anforderungsampel
 	F -6911,13817
 	F -4793,9970
 	F -4825,10560
@@ -2831,7 +2832,6 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5807,12070
 	F 6833,15215
 	F 3542,13203
-#: note: Luftbild
 	X 3429,13227
 	X 7733,8023
 	X 17533,14484
@@ -3041,10 +3041,15 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderung für Radfahrer/Fußgänger quer zur Schildhornstr.
 	X 4937,6205
 	F 6115,13328
+# 
+#: next_check_id: TRAMTURM-2021
+#: XXX wird im Zuge des Straßenbahnnaus zur "richtigen" Ampel
+#: next_check: 2023-06-01
 	F 6674,13332
-#: note: Luftbild
+# 
+#: by: mapillary
+#: note: Anforderungsampel
 	F -3693,13012
-#: note: Luftbild
 	X 9934,2307
 	F 16487,17785
 #: off: Sunday (seen 2019-11-03 15:00)
@@ -3768,7 +3773,6 @@ Umgehung mit Treppen existiert	Zbr 4611,63946
 #: note: Anforderungsampel
 	X 16365,-3036
 	X 14993,-4196
-#: note: Luftbild
 	X 13237,-4511
 	X 26508,14454
 	X 26334,15131

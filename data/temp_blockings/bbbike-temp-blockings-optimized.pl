@@ -4119,7 +4119,8 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
 #: last_checked: 2021-10-18
 #: check_frequency: 30d
-	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
+	2::inwork 21135,12127 21169,12113 21282,12115
+# REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
 ',
          'from' => 1630670400,
          'id' => 3086,
@@ -4396,7 +4397,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-11-16
+#: last_checked: 2021-11-20
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -5151,9 +5152,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
-#: osm_watch: way id="984964447" version="3"
+#: osm_watch: way id="984964447" version="4"
 	q3::inwork 15279,10862 15355,10875
-#: osm_watch: way id="984056169" version="3"
+#: osm_watch: way id="984056169" version="4"
 	2::inwork 15272,10790 15388,10758
 ',
          'from' => 1625734800,
@@ -5427,7 +5428,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: CORONA-2020
 #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so?
-#: last_checked: 2021-10-09
+#: last_checked: 2021-11-20
 #: check_frequency: 90d
 #: tempex: sa T09-T15
 	2::temp 9546,9198 9617,9185 9596,9092
@@ -5565,7 +5566,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1640300400
        },
        {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1459133374208122880
+         'data' => '#: next_check_id: LUECK-2021
+#: by: https://twitter.com/VIZ_Berlin/status/1459133374208122880
 #: by: https://pbs.twimg.com/media/FD_h8clXEAUsQ1n?format=jpg&name=large
 	q4::inwork; 16861,10923 16751,10696 16751,10674
 	q4::inwork; 16892,10731 16961,10893
@@ -5576,6 +5578,19 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Archenholdstr. und Marie-Curie-Allee: Einbahnstraßenregelungen, voraussichtlich bis 10.12.2021',
          'type' => 'handicap',
          'until' => 1639177200
+       },
+       {
+         'data' => '#: also_indoor: traffic
+#: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
+#: last_checked: 2021-11-20
+#: check_frequency: 60d
+	q4::inwork; 9227,8890 9417,8890
+',
+         'from' => undef,
+         'id' => 3478,
+         'text' => 'Schwiebusser Str.: wegen Bauarbeiten Einbahnstraßenregelung, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
