@@ -535,11 +535,12 @@ Impfzentrum Flughafen Tegel	Pl 2987,16486
 # REMOVED (am 28.9.2021 geschlossen) --- #: append_comment: Potsdam --- #: by: https://www.maz-online.de/Lokales/Potsdam/Impfzentrum-in-der-Metropolishalle-in-Potsdam-schliesst-zum-31.-Juli --- #: by: https://www.potsdam.de/impfen-der-landeshauptstadt-potsdam (doch nicht geschlossen) --- #: XXX siehe auch add_str_potsdam-Eintrag, der nach der Impfkampagne ebenfalls entfernt werden kann --- #: osm_watch: node id="8244360159" version="5" brb --- # REMOVED --- #: next_check: 2021-07-31 --- Impfzentrum Metropolis-Halle	Pl -8846,-2629
 #: by: https://berliner-abendblatt.de/2021/11/15/116891/ (noch im November 2021)
 #: by: https://www.berlin.de/aktuelles/berlin/7088443-958092-neues-impfzentrum-soll-auf-trabrennbahn-.html (noch im November (2021))
+#: by: https://www.rbb24.de/politik/thema/corona/beitraege/2021/11/berlin-corona-viele-helfer-an-impfzentren-nach-aufruf-mueller.html (voraussichtlich ab Anfang Dezember (2021))
 #: XXX genauer Standort?
 #: last_checked: 2021-11-15 (Meldung)
-#: check_frequency: 7d
-#: next_check: 2021-11-30
-#: valid: 20211130-
+# REMOVED --- #: check_frequency: 7d
+#: next_check: 2021-12-01
+#: valid: 20211201-
 Impfzentrum Trabrennbahn Karlshorst	Pl 18671,8092
 #: check_frequency ^^^
 #: next_check_id ^^^

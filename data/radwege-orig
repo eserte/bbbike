@@ -714,7 +714,7 @@ teilweise mit Leitboys geschützt	RW4; 14208,12235 14291,12220 14381,12205 14427,
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur, evtl. bleibt diese permanent
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
-#: last_checked: 2021-11-11
+#: last_checked: 2021-11-21
 #: check_frequency: 30d
 #: next_check: 2022-03-31
 	RW4; 14926,12129 14994,12121 15117,12106
@@ -2283,18 +2283,12 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804
 #: by: https://berliner-abendblatt.de/2021/10/28/geschuetzter-radweg-auf-der-lichtenberger-strasse/
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/geschuetzter-radweg_a326639
-#: XXX geschützer Radweg wird gebaut vvv
-#: source_id: viz2021:13.429807,52.523192,11.10.2021,07:00 (mittlerweile bis 15.11.2021) (bis 17.11.2021)
-#: last_checked: 2021-11-18 (Restarbeiten) vvv
-#: check_frequency: 3d vvv
-# REMOVED --- #: next_check: 2021-11-17 vvv
+# REMOVED (fertig) --- #: XXX geschützer Radweg wird gebaut vvv --- #: source_id: viz2021:13.429807,52.523192,11.10.2021,07:00 (mittlerweile bis 15.11.2021) (bis 17.11.2021) --- #: last_checked: 2021-11-18 (Restarbeiten) vvv --- #: check_frequency: 3d vvv --- # REMOVED --- #: next_check: 2021-11-17 vvv
 	RW2; 12126,13088 12122,13029
-	RW4; 12122,13029 12112,12861
-	RW3; 12112,12861 12064,12673 12050,12616
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+grüne Längsstreifen	RW4; 12122,13029 12112,12861
+Radspur hinter den parkenden Autos, grüne Längsstreifen	RW4; 12112,12861 12064,12673
+	RW4; 12064,12673 12050,12616
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 Radspur hinter den parkenden Autos	RW4; 12006,12464 11920,12266
 Radspur hinter den parkenden Autos	RW4; 11920,12266 11872,12185 11809,12078
 	RW4; 11809,12078 11764,12001
@@ -2306,8 +2300,8 @@ Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (ab 1.11.2021)
 #: source_id: viz2021:13.428503,52.518895,16.11.2021,17:00 (bis 30.11.2021)
 #: XXX geschützer Radweg wird gebaut (nach den Bauarbeiten Richtung Süden) vvv
-#: last_checked: 2021-11-18 vvv
-#: check_frequency: 21d vvv
+#: last_checked: 2021-11-21 vvv
+#: check_frequency: 14d vvv
 #: next_check: 2021-11-30 vvv
 	RW3; 12050,12616 12064,12673 12112,12861 12122,13029
 	RW2; 12122,13029 12126,13088
@@ -6990,7 +6984,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: osm_watch: way id="4401920" version="52"
 #: XXX wird mittlerweile verstetigt
 #: confirmed_by: srt
-#: last_checked: 2021-11-15 (webcam) vvv
+#: last_checked: 2021-11-21 (webcam) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2021-07-23 vvv
 provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8995,10370

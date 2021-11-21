@@ -1101,8 +1101,6 @@ Edelhofdamm	1 3456,25601 3307,25554
 Edelhofdamm	1 3277,25575 3446,25628
 Olbrichweg	1 5787,19326 5879,19352
 Genfer Str.	1 6890,18190 6821,18216 6683,18243
-#: note: enge Hausdurchfahrt
-Eckertstr.	1s:q4 13598,12554 13585,12584
 Am Krummen Weg	1 -7169,14849 -7026,14890
 Am Krummen Weg	1 -7169,14849 -7248,14826
 Henricistr.	1 5993,19477 5851,19440
@@ -3482,7 +3480,7 @@ Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
 #: osm_watch: way id="610818155" version="4"
-#: last_checked: 2021-10-18
+#: last_checked: 2021-11-21
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
@@ -4084,6 +4082,7 @@ Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,
 #: source_id: LMS-BR_r_LMS-BR_127414_LMS-BR_72 (inaktiv)
 #: source_id  viz2021:13.380614,52.414283,29.03.2018,07:00 (bis 31.10.2021) (mittlerweile 15.11.2021) (mittlerweile 31.03.2022) (mittlerweile 22.11.2021)
 #: osm_watch: way id="4716389" version="31"
+#: also_indoor: traffic (G,H)
 #: last_checked: 2021-11-06 (bahninfo-forum)
 #: next_check: 2021-11-22
 Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,898 9024,906 9058,932
