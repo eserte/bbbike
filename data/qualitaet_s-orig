@@ -11570,7 +11570,7 @@ Courbièrestr.: Verbundsteinpflaster	Q1 6725,10641 6685,10690
 Alte Köpenicker Allee: unbefestigte Straße, holprig	Q2 20316,7637 20348,7634 20459,7445 20501,7472 20540,7532
 (Weg im Grünzug): Asphalt	Q0 17391,9746 17316,9797 17257,9869
 (Weg im Grünzug): unebener Asphalt	Q1- 17257,9869 17161,9921 17005,9953
-(Weg im Grünzug): unbefestigt	Q2 17005,9953 16963,9960
+(Weg im Grünzug): unbefestigt	Q2+ 17005,9953 16963,9960
 (Weg im Grünzug): Asphalt	Q0 16963,9960 16886,9982 16841,9997
 (Dolgenseestr. - Weg im Grünzug): unbefestigter Weg	Q2+ 17275,9892 17257,9869
 (zum Poststadion): Kleinsteinpflaster	Q1- 7452,13904 7417,13880 7445,13792 7431,13740 7343,13679 7338,13649
@@ -12312,6 +12312,7 @@ Müggelstr.: Mosaikpflaster	Q1 14994,12121 14994,12064
 (Barnimstr. - Mollstr.): Beton	Q0- 11785,13241 11762,13207
 Heidenfeldstr. [Stichstraße]: Beton	Q1 13445,13376 13419,13435
 Mellenseestr. [Wohngebiet]: Beton, einige Hebungen	Q1+ 17633,9898 17633,9793 17587,9655
+Mellenseestr. [Wohngebiet]: Beton, einige Schäden	Q1+ 17738,9922 17738,9822 17777,9649
 Rhenser Str.: Mosaikpflaster	Q1- 19133,9087 19083,9062
 Bergmannstr.: Asphalt, einige leichte Schäden	Q0- 10123,9233 10547,9233
 Südstern: Asphalt, einige Querrillen	Q0- 10547,9233 10705,9234
@@ -15178,7 +15179,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20131119.1100.391816.html (BA-Beschluss 277/2013)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
-#: osm_watch: way id="42689070" version="9"
+#: osm_watch: way id="42689070" version="10"
 #: last_checked: 2021-11-10
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921

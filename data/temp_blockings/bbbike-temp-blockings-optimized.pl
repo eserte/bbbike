@@ -3656,6 +3656,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
 # REMOVED --- #: priority: #A --- #: next_check: 2021-11-17
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
@@ -4117,14 +4118,14 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
 #: osm_watch: way id="8655276" version="22"
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2021-10-18
+#: last_checked: 2021-11-22
 #: check_frequency: 30d
 	2::inwork 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
 ',
          'from' => 1630670400,
          'id' => 3086,
-         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt',
+         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand: Mitte November 2021: Durchfahrt ist gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5148,7 +5149,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-11-21
+#: last_checked: 2021-11-22
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -5591,6 +5592,45 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Schwiebusser Str.: wegen Bauarbeiten Einbahnstraßenregelung, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
+#: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021)
+#: also_indoor: traffic
+#: last_checked: 2021-11-22
+#: check_frequency: 7d
+	q3::inwork; 14965,11924 15077,11910 15133,11902 15256,11884
+	q3::inwork 14965,11924 14888,11934 14836,11842
+',
+         'from' => 1637599882,
+         'id' => 3479,
+         'text' => 'Scharnweberstr./Weichselstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei, bis 6.12.2021',
+         'type' => 'handicap',
+         'until' => 1638831600
+       },
+       {
+         'data' => '	q4::inwork 9333,4229 9208,4215
+	q4::inwork 9375,4022 9276,3997
+',
+         'from' => 1637608390,
+         'id' => 3480,
+         'text' => 'Richterstr. und Prinzenstr.: Sperrung am Mariendorfer Damm, bis 6.12.2021',
+         'type' => 'handicap',
+         'until' => 1638831600
+       },
+       {
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1462709242088103938/photo/1 (Umleitung für Radfahrer Richtung Osten)
+#: by: https://pbs.twimg.com/media/FEyV9K0XoAEO-Ob?format=jpg&name=large
+#: by: https://viz.berlin.de/2021/11/verkehrsvorschau-23112021/
+	q4::inwork; 14089,13509 14109,13449 14159,13384
+	q4::inwork 14109,13449 14052,13389
+',
+         'from' => 1637449200,
+         'id' => 3481,
+         'source_id' => 'viz2021:13.459082,52.526025,22.11.2021,06:00',
+         'text' => 'Storkower Str./Thaerstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 22.11.2021 06:00 bis 27.11.2021 17:00',
+         'type' => 'handicap',
+         'until' => 1638054000
        }
      
 );
