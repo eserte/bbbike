@@ -13,7 +13,7 @@
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 # REMOVED --- #: osm_watch: way id="524560334" version="5"
 #: osm_watch: way id="524560332" version="5"
-#: last_checked: 2021-09-27 (mapillary) vvv
+#: last_checked: 2021-11-23 vvv
 #: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="3"
@@ -259,7 +259,7 @@ Wallensteinstr.: Fahrbahn m‰ﬂiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Fahrbahninstandsetzung ab Herbst 2021, bis 2022)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2021-10-24
+#: last_checked: 2021-11-23
 # REMOVED --- #: next_check: 2021-10-01
 Wallensteinstr.: Asphalt mit einigen Sch‰den	Q1 18037,9195 18092,9141 18134,9080
 Dˆnhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
@@ -11946,8 +11946,8 @@ Helene-Jacobs-Str.: Asphalt	Q0 3230,8230 3224,8106 3219,7987 3210,7786 3309,7782
 #: next_check_id: MAXIMILIANSQUARTIER-2020
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1004182.php (zur Benennung des Platzes)
 #: XXX bleibt es hier beim Asphalt? oder wird die gesamte Platzfl‰che mit den Steinplatten versehen?
-#: last_checked: 2021-09-28
-#: check_frequency: 180d
+#: last_checked: 2021-11-22 (daf)
+#: check_frequency: 120d
 Werner-Richard-Heymann-Platz: provisorischer Asphalt & Steinplatten	Q0- 3320,7982 3219,7987
 # 
 Reichenhaller Str.: Gehwegpflasterung	Q0- 3210,7786 3198,7787
@@ -13903,6 +13903,8 @@ Guntherstr.: Kopfsteinpflaster	Q2- 17020,12309 16993,12118 16975,12000
 #: confirmed_by: srt
 Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7412,8273
 #: corrected_by: srt ("einige Sch‰den" hinzugef¸gt)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1149596.php (Sanierung bis zur KW 48/2021, hier?)
+#: next_check: 2021-12-03
 Cheruskerstr.: Asphalt, einige Sch‰den	Q0-; 7412,8273 7412,8351 7410,8593
 #: confirmed_by: srt
 Cheruskerstr.: Asphalt	Q0; 7410,8593 7412,8351 7412,8273
@@ -19144,13 +19146,16 @@ Malersteig: Asphalt	Q0 13606,3085 13596,3039 13561,2898 13510,2690 13487,2621 13
 #: by: https://abendblatt-berlin.de/2021/07/06/lichtenberg-sommerbaustellen-im-bezirk/
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 # REMOVED --- #: next_check: 2021-10-31
-#: last_checked: 2021-11-16
-Weseler Str.: m‰ﬂiger Asphalt	Q1- 18865,8740 18857,8790 18854,8831 18860,8886
 #: XXX in diesem Abschnitt laufen gerade Asphaltierungsarbeiten
-#: last_checked: 2021-11-16
+#: last_checked: 2021-11-23
 #: check_frequency: 7d
-Weseler Str.: m‰ﬂiger Asphalt	Q1- 18860,8886 18877,8973 18881,9002
+Weseler Str.: m‰ﬂiger Asphalt	Q1- 18865,8740 18857,8790 18854,8831 18860,8886
+#: corrected_by: srt (m‰ﬂiger Asphalt, Q1- -> neu gemacht)
+Weseler Str.: Asphalt	Q0 18860,8886 18877,8973 18881,9002
 Weseler Str.: Asphalt	Q0 18881,9002 18886,9031
+#: XXX in diesem Abschnitt laufen gerade Asphaltierungsarbeiten
+#: last_checked: 2021-11-23
+#: check_frequency: 7d
 Weseler Str.: m‰ﬂiger Asphalt	Q1- 18886,9031 18900,9119
 #: corrected_by ^^^
 #: by: ^^^

@@ -8,12 +8,12 @@
 #: temporary vvv
 # 
 #: next_check_id: LUECK-2021
-#: source_id: viz2021:13.496206,52.500247,12.11.2021,06:00
+#: source_id: viz2021:13.496206,52.500247,12.11.2021,06:00 (bis 10.12.2021)
 #: by: https://www.bahninfo-forum.de/read.php?9,716845,718464#msg-718464
 #: note: Gegenverkehrsregelung beginnt östlich der Einmündung Wönnichstr. und endet östlich der Kreuzung Rummelsburger Str.
 #: last_checked: 2021-11-21
-#: next_check: 2021-12-22
-#: valid: -20211222
+#: next_check: 2021-12-10
+#: valid: -20211210
 Lückstr.: Gegenverkehrsregelung	X::inwork 16601,10650
 # 
 #: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00
@@ -2317,7 +2317,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
-#: last_checked: 2021-11-06
+#: last_checked: 2021-11-23
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746
@@ -2549,6 +2549,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	X 18718,8583
 	X 18727,8634
 	X 18737,8686
+#: note: Anforderungsampel für Radfahrer aus der Godesberger Str. (und vermutlich auch Dorotheastr.)
 	X 18770,8898
 # 
 	X 18704,8427

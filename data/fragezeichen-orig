@@ -62,7 +62,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausführungsplanung)
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021)
-#: last_checked: 2021-11-12
+#: last_checked: 2021-11-23
 #: check_frequency: 90d
 #: next_check: 2022-03-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -319,7 +319,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/isek-lebendiges-zentrum-baumschulenstrasse-koepenicker-landstrasse_bericht.pdf (Erwähnung: Radverkehrsanlage entlang der Ostseite zwischen Dammweg und Baumschulenstr.; Machbarkeitsstudie)
 #: osm_watch: way id="138431358" version="16" vvv
 #: osm_watch: way id="330786038" version="16" vvv
-#: last_checked: 2021-10-02 vvv
+#: last_checked: 2021-11-23 vvv
 #: check_frequency: 270d vvv
 #: XXX Maßnahme Bsw.6 + Pw.7
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755
@@ -1054,7 +1054,7 @@ Nalepastr.: Einrichten einer Radverkehrsanlage auf der östlichen Seite	?::projec
 # 
 #: XXX Osw.13
 #: osm_watch: way id="22749854" version="46"
-#: last_checked: 2021-10-24
+#: last_checked: 2021-11-23
 #: check_frequency: 90d
 Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren auf Gehweg frei (Westseite)	?::projected 20280,7749 20307,7689 20316,7637 20323,7529 20340,7468 20393,7404 20510,7325 20616,7292 20653,7289
 # 
@@ -1393,7 +1393,7 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22312
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8903 (Antrag generell zur Fahrradinfrastruktur in Karlshorst-West)
 #: osm_watch: way id="51872061" version="36"
 #: osm_watch: way id="31525575" version="23"
-#: last_checked: 2021-10-24
+#: last_checked: 2021-11-23
 #: check_frequency: 120d
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
 # REMOVED (zusammengelegt) --- #: next_check_id: WALLENSTEIN-2020 --- #: osm_watch: way id="31525575" version="20" --- #: XXX zurzeit laufen Bauarbeiten; Parkverbot bis 31.10.2020 --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/unterfuehrung-voll-gesperrt_a285283 (bis 16.11.2020; nur Arbeiten an der Gasleitung?) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8603 (Frage) --- #: last_checked: 2020-11-28 --- #: check_frequency: 120d --- #: next_check: 2020-11-16 --- Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
@@ -1771,7 +1771,7 @@ Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten viell
 #: source_id: 2147347297 (Leitungsarbeiten bis 6.8.2021)
 #: source_id: viz2021:13.514442,52.468909,25.06.2021,08:00 (Leitungsarbeiten bis 15.11.2021) (inaktiv)
 #: XXX Radweg Richtung Norden wird vielleicht neu asphaltiert (zurzeit teilweise welliger Asphalt, hoffentlich nur provisorisch)
-#: last_checked: 2021-10-30
+#: last_checked: 2021-11-23
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-12-31
 Rummelsburger Landstr.: Verbesserung des Radwegs oder werden Radstreifen angelegt?	?::projected 18010,7133 17847,7356 17769,7465
@@ -4096,8 +4096,8 @@ Teltower Damm: wird die Benutzungspflicht wieder eingeführt?	? 1345,184 1322,352
 #: XXX c) Leonore-Goldschmidt-Str. (Privatstraße), PLZ=14199
 #: osm_watch: relation id="12010271" version="4"
 #: osm_watch: way id="993566668" version="3"
-#: last_checked: 2021-09-28
-#: check_frequency: 180d
+#: last_checked: 2021-11-22 (daf)
+#: check_frequency: 120d
 Leonore-Goldschmidt-Str.: Privatstraße, wo wird sie sein, Qualität?	?::projected 3224,8106 3326,8100
 # 
 # REMOVED (-> radwege-orig) --- #: next_check_id: BERNAUERSTR-2019 --- #: source_id: 2147342114 (bis Mitte September 2019) --- #: last_checked: 2019-08-17 --- #: next_check: 2019-09-17 --- Bernauer Str.: Bauarbeiten, danach vielleicht Radspuren?	?::inwork 560,18494 847,18738
@@ -5036,7 +5036,7 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erwähnung, bis 3. Quartal 2021)
 #: XXX während der Bauarbeiten Einbahnstraßenregelung --- was wird das für den Radverkehr bedeuten? -> siehe temp blockings
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2021-11-22
+#: last_checked: 2021-11-23
 #: check_frequency: 90d
 #: next_check: 2021-12-16
 Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,10738
@@ -5851,7 +5851,7 @@ Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_34_4445_4508_online.pdf (Widmung von Straßenland)
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/neues-entree-am-s-bahnhof-wuhlheide_a311040 (erster Bauabschnitt)
 #: XXX evtl. Vollsperrungen während der Bauzeit werden rechtzeitig mitgeteilt
-#: last_checked: 2021-10-24
+#: last_checked: 2021-11-23
 #: check_frequency: 30d
 Wuhlheide: Weg wird erneuert	?::inwork 20629,7189 20575,7226
 # REMOVED (hier weitgehend fertig) --- Wuhlheide: Zugang wird erneuert	? 20575,7226 20533,7199 20524,7176 20430,7122
@@ -6109,7 +6109,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (kein Datum)
 #: by: https://api.fixmyberlin.de/api/projects/441
-#: last_checked: 2021-11-22
+#: last_checked: 2021-11-23
 #: check_frequency: 360d
 Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 18301,9946 18266,9853 18066,9770 17920,9698 17777,9649 17668,9632 17587,9655 17471,9688 17383,9719
 # 
@@ -6178,6 +6178,7 @@ Hohenzollernring: Radwege werden neu gemacht	?::projected -3721,14495 -3835,1466
 #: by: https://bieterportal.noncd.db.de/evergabe.bieter/eva/supplierportal/portal/subproject/277ce8e7-649d-414b-b64e-463fcf45ed05/details (Auftragsdauer: 28.02.2022 - 31.12.2025)
 #: by: https://twitter.com/VIZ_Berlin/status/1462760545208131584
 #: by: https://www.deutschebahn.com/pr-berlin-de/aktuell/presseinformationen/Meilenstein-beim-Ausbau-der-Dresdner-Bahn-Erster-von-neun-Bahnuebergaengen-beseitigt-6959472 (Ende 2021 für den Autoverkehr gesperrt, ab Ende 2022 auch für den Rad/Fuß/Busverkehr)
+#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/unterfuehrung-an-der-dresdner-bahn-trasse-fertig-sperrung-der-buckower-chaussee-steht-bevor_a329177
 #: last_checked: 2021-10-03
 # REMOVED --- #: next_check: 2022-10-15
 #: next_check: 2021-12-31
@@ -6680,7 +6681,7 @@ Brunnenallee (Potsdam):genaue Lage? Qualität? Existiert die Straße schon?	?::pro
 #: XXX Friedenauer Höhe (Privatstraße) -> im Amtsblatt, PLZ=12159
 # REMOVED (eingetragen) --- #: XXX Lauterplatz -> im Amtsblatt, PLZ=12159
 #: XXX Hannah-Höch-Weg (evtl. ohne "h") -> laut Amtsblatt mit "h", bei DPAG ebenso, PLZ=12159
-#: last_checked: 2021-09-28 vvv
+#: last_checked: 2021-11-22 (daf) vvv
 #: check_frequency: 120d vvv
 Güterbahnhof Wilmersdorf, Bebauungsplan 7-68: neue Wege werden entstehen	?::projected 6307,7893 5807,7876 5806,7796
 Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten gesperrt und später eine andere Qualität haben	?::projected 6273,7849 5817,7824

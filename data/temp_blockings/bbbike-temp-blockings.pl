@@ -17349,11 +17349,12 @@ EOF
        until => $isodate2epoch->("2019-12-15 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12, start => "2021-01-01T00:00:00"]], # findet 2020 vermutlich nicht statt
-       recurrence_prewarn_days => 10,
+       recurrence_prewarn_days => 7,
        text  => 'Alt-Köpenicker Weihnachtsmarkt vom 13.12.2019 bis zum 15.12.2019',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
        data  => <<EOF,
+#: by: https://www.berlin.de/weihnachtsmarkt/5666333-3496862-weihnachtsmarkt-auf-dem-schlossplatz-koe.html (2021 unter Vorbehalt)
 	2::xmas 22111,4562 22162,4546 22214,4548
 EOF
      },
@@ -17412,7 +17413,7 @@ EOF
        until => $isodate2epoch->("2021-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12]],
-       #recurrence_prewarn_days => -1, # XXX Ausmaß der Sperrung 2020/2021 unklar
+       recurrence_prewarn_days => 7, # XXX Ausmaß der Sperrung 2020/2021 unklar, 2021/2022 ebenso
        text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., ab 26.12.2020 bis 02.01.2021',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -25336,7 +25337,7 @@ EOF
        until => $isodate2epoch->("2020-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
        periodic => 1,
        recurrences => [['yearly', days => 28, months => 12, start => "2021-01-01T00:00:00"]], # 2020/2021 keine große Silvesterparty
-       #recurrence_prewarn_days => 2, # XXX Ausmaß der Sperrung 2020/2021 unklar
+       recurrence_prewarn_days => 7, # XXX Ausmaß der Sperrung 2020/2021 unklar, 2021/2022 ebenso
        text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2019 bis 02.01.2020',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -33220,7 +33221,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-11-22
+#: last_checked: 2021-11-23
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33255,12 +33256,15 @@ EOF
 EOF
      },
      { from  => 1627682400, # 2021-07-31 00:00
-       until => $isodate2epoch->("2022-01-01 18:00:00"), # 1633039199, # 2021-09-30 23:59
+       until => $isodate2epoch->("2022-01-31 18:00:00"), # 1633039199, # 2021-09-30 23:59
        text  => 'Am Vierrutenberg: Bauarbeiten zwischen Zehntwerderweg und Benekendorffstr., evtl. wird die Fahrbahn nicht benutzbar sein, von August bis voraussichtlich Anfang 2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1106283.php',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1145930.php (Verzögerung)
+#: by: https://www.berliner-woche.de/luebars/c-bauen/fahrbahn-der-strasse-am-vierrutenberg-erst-im-fruehjahr-fertig_a328514
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: next_check: 2022-01-03
 	q4::inwork 5793,23422 5893,23287
 EOF
      },
@@ -33733,11 +33737,12 @@ EOF
      },
      { from  => $isodate2epoch->("2021-11-22 00:00:00"), # undef, # 
        until => $isodate2epoch->("2021-12-19 17:00:00"), # 1636480477, # undef,
-       text  => 'Brachvogelstr./Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt',
+       text  => 'Brachvogelstr./Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt, evtl. ist auch der Radverkehr betroffen, bis 19.12.2021',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
 #: source_id: viz2021:13.399042,52.497652,23.11.2021,06:00
+#: by: https://twitter.com/VIZ_Berlin/status/1463011930226917378 (Radverkehr nicht betroffen)
 	q4::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
 EOF
      },
@@ -33999,11 +34004,12 @@ EOF
      },
      { from  => 1637608390, # 2021-11-22 20:13
        until => 1638831600, # 2021-12-07 00:00
-       text  => 'Richterstr. und Prinzenstr.: Sperrung am Mariendorfer Damm, bis 6.12.2021',
+       text  => 'Markgrafenstr., Richterstr. und Prinzenstr.: Sperrung am Mariendorfer Damm, bis 6.12.2021',
        type  => 'handicap',
        data  => <<EOF,
 	q4::inwork 9333,4229 9208,4215
 	q4::inwork 9375,4022 9276,3997
+	q4::inwork 9020,4890 9248,4904
 EOF
      },
      { from  => 1637449200, # 2021-11-21 00:00

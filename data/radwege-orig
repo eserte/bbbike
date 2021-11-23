@@ -946,7 +946,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147346063 (inaktiv)
 #: source_id: viz2021:13.461003,52.492338,30.10.2021,06:00 (Wochenendsperrung für Kfz-Verkehr)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-11-14
+#: last_checked: 2021-11-23
 #: check_frequency: 60d
 #: next_check: 2022-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1673,11 +1673,12 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 # REMOVED --- #: next_check: 2021-11-15 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
-# REMOVED --- #: XXX danach den schon existierenden Eintrag wieder aktivieren ---	RW8; 17769,7465 17681,7589
-neu asphaltiert	RW1; 17769,7465 17681,7589
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+# 
+# REMOVED --- #: XXX danach den schon existierenden Eintrag wieder aktivieren ---	RW8; 17769,7465 17681,7589
+neu asphaltiert	RW1; 17769,7465 17681,7589
 # 
 Verbundsteinpflaster	RW1; 17769,7465 17847,7356 18010,7133
 # REMOVED (bestätigt) --- #: XXX Benutzungspflicht wird aufgehoben --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4770 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036541309630/541309630/00099460/60-Anlagen/04/B0670SB.pdf
@@ -2723,7 +2724,7 @@ Radweg nur aufgemalt	RW1; 7602,17399 7381,17317 7292,17316 7282,17318 7104,17326
 	RW2;RW2 9494,15998 9459,16029 9446,16060
 	RW2; 15166,8489 15303,8343 15357,8286 15557,8077
 	RW1; 15557,8077 15920,7697
-	RW2; 15920,7697 16195,7398
+asphaltiert, mäßige Qualität	RW2; 15920,7697 16195,7398
 asphaltiert, akzeptable Qualität	RW2; 16195,7398 16259,7328 16353,7226
 	RW1; 16353,7226 16428,7144
 #: note: kein Unterstreifen gegen parkende Autos, aber der Radweg ist relativ breit
@@ -7039,6 +7040,7 @@ provisorischer Radstreifen	RW4; 8919,10360 8824,10366 8771,10381 8701,10428 8581
 #: source_id: 2147345931 (bis 5.5.2021) (inaktiv)
 #: source_id: viz2021:13.402789,52.498471,01.09.2021,07:00 (bis 24.9.2021) (inaktiv)
 #: source_id: viz2021:13.402789,52.498471,28.09.2021,07:00 (bis 12.10.2021) (inaktiv)
+#: source_id: viz2021:13.397833,52.498335,06.10.2021,08:00 (bis 30.03.2022)
 #: note: laut rbb Einspurigkeit Höhe Lobeckstr. bis 22.10.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
@@ -7046,13 +7048,13 @@ provisorischer Radstreifen	RW4; 8919,10360 8824,10366 8771,10381 8701,10428 8581
 #: osm_watch: way id="335487059" version="17"
 #: last_checked: 2021-10-29 vvv
 #: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2021-10-22 vvv
+#: next_check: 2022-03-30 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4; 10605,10312 10363,10303 10122,10294
 provisorisch geschützter Radstreifen	RW4; 10122,10294 10363,10303 10605,10312
 provisorisch geschützter Radstreifen	RW4; 10122,10294 9948,10280 9873,10285
 provisorisch geschützter Radstreifen	RW4; 9865,10227 9948,10280 10122,10294
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^

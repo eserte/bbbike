@@ -5149,7 +5149,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-11-22
+#: last_checked: 2021-11-23
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -5169,6 +5169,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1145930.php (Verzögerung)
+#: by: https://www.berliner-woche.de/luebars/c-bauen/fahrbahn-der-strasse-am-vierrutenberg-erst-im-fruehjahr-fertig_a328514
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: next_check: 2022-01-03
 	q4::inwork 5793,23422 5893,23287
 ',
          'from' => 1627682400,
@@ -5176,7 +5179,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1106283.php',
          'text' => 'Am Vierrutenberg: Bauarbeiten zwischen Zehntwerderweg und Benekendorffstr., evtl. wird die Fahrbahn nicht benutzbar sein, von August bis voraussichtlich Anfang 2022',
          'type' => 'handicap',
-         'until' => 1641056400
+         'until' => 1643648400
        },
        undef,
        {
@@ -5405,11 +5408,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '# REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
 #: source_id: viz2021:13.399042,52.497652,23.11.2021,06:00
+#: by: https://twitter.com/VIZ_Berlin/status/1463011930226917378 (Radverkehr nicht betroffen)
 	q4::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
 ',
          'from' => 1637535600,
          'id' => 3457,
-         'text' => 'Brachvogelstr./Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt',
+         'text' => 'Brachvogelstr./Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt, evtl. ist auch der Radverkehr betroffen, bis 19.12.2021',
          'type' => 'handicap',
          'until' => 1639929600
        },
@@ -5611,10 +5615,11 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '	q4::inwork 9333,4229 9208,4215
 	q4::inwork 9375,4022 9276,3997
+	q4::inwork 9020,4890 9248,4904
 ',
          'from' => 1637608390,
          'id' => 3480,
-         'text' => 'Richterstr. und Prinzenstr.: Sperrung am Mariendorfer Damm, bis 6.12.2021',
+         'text' => 'Markgrafenstr., Richterstr. und Prinzenstr.: Sperrung am Mariendorfer Damm, bis 6.12.2021',
          'type' => 'handicap',
          'until' => 1638831600
        },
