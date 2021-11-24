@@ -3425,7 +3425,7 @@ Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, te
 # REMOVED --- #: XXX bis wann geht die Einbahnstraßenregelung? --- #: last_checked: 2021-05-17 --- Rudi-Arndt-Str.: Einbahnstraßenregelung	1s:q4:inwork 13449,13892 13359,13832
 # 
 #: osm_watch: way id="871451762" version="1"
-#: last_checked: 2021-10-15
+#: last_checked: 2021-11-24
 #: check_frequency: 45d
 Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 15320,12375 15408,12394
 # 
@@ -4174,7 +4174,7 @@ Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2021-11-18 vvv
+#: last_checked: 2021-11-24 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
@@ -4249,7 +4249,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_25_2105_2220_online.pdf (Straßenbenennung)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/upside-berlin-max-und-moritz.182/
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
-#: last_checked: 2021-10-13
+#: last_checked: 2021-11-24 (architektur-urbanistik)
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
@@ -4810,8 +4810,8 @@ Blumenweg	1 -9445,-2389 -9343,-2087
 Golliner Str.	1 22217,17989 22276,18107 22191,18150
 Schorfheidestr.	1s 21900,18215 21869,18227
 Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3055,22697
-Gehrenseestr.	1 18494,16750 18324,16625
-tragen	0:60 18475,16761
+Gehrenseestr.	1 18487,16741 18324,16625
+tragen	0:60 18467,16753
 # REMOVED (Drängelgitter existieren alle nur zur Hälfte und sind somit gut umfahrbar) --- #: note: bei den meisten Drängelgittern hier existiert mittlerweile ein umgehender Trampelpfad vvv --- Drängelgitter	BNP:5 6267,834 --- Drängelgitter	BNP:5 6250,834 --- Drängelgitter	BNP:5 6172,822 --- Drängelgitter	BNP:5 6155,821 --- Drängelgitter	BNP:5 6075,821 --- Drängelgitter	BNP:5 6057,821 --- Drängelgitter	BNP:5 5975,821 --- Drängelgitter	BNP:5 5954,819 --- Drängelgitter	BNP:5 5875,807 --- Drängelgitter	BNP:5 5860,805 --- Drängelgitter	BNP:5 5684,773
 # REMOVED (nur noch ein halbes Drängelgitter) --- Drängelgitter	BNP:5 6367,825
 # REMOVED (Drängelgitter entfernt) --- Drängelgitter	BNP:5 6352,825

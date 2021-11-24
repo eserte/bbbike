@@ -28074,8 +28074,8 @@ EOF
 #: next_check_id: BHFZEUTHEN-2018
 #: by: https://www.bahninfo-forum.de/read.php?9,672773,672947#msg-672947
 #: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
-#: osm_watch: way id="36936021" version="5" brb
-#: last_checked: 2021-09-09
+#: osm_watch: way id="36936021" version="6" brb
+#: last_checked: 2021-11-23 (osm)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2020-11-01
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
@@ -33996,10 +33996,14 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
 #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021)
 #: also_indoor: traffic
-#: last_checked: 2021-11-22
-#: check_frequency: 7d
+#: last_checked: 2021-11-24 vvv
+#: check_frequency: 7d vvv
 	q3::inwork; 14965,11924 15077,11910 15133,11902 15256,11884
 	q3::inwork 14965,11924 14888,11934 14836,11842
+#: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden
+Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1637608390, # 2021-11-22 20:13

@@ -28,7 +28,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn nur für Baufahrzeuge	q3::inwork 125
 # 
 #: note: laut rbb bis 29.10.2021, laut Parkverbotsschilder bis 28.1.2022 vvv
 #: also_indoor: traffic (H(falsch),G(teilweise))
-#: last_checked: 2021-11-17 vvv
+#: last_checked: 2021-11-24 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-01-28 vvv
 Jessnerstr.: Sperrung der Fahrbahn nördlich der Oderstr.	q3::inwork 14946,11697 14986,11760
@@ -2819,7 +2819,7 @@ Magdeburger Platz: Bordsteine	q3 7393,10809 7414,10804
 #: XXX_prog BS an der Privatstraße 10 (östliche Seite), anonsten Eintrag entfernen
 (Grünanlage): Bordsteinkante	q1 17185,17384 17006,17473
 Friedlander Str.: Bodenschwelle	q1 20574,4317 20594,4342
-#: note: Grünanlagen-Schild existiert, ohne Zusatzschilder
+#: note: Grünanlagen-Schild existiert am südlichen Ende, ohne Zusatzschilder, am nördlichen Ende sind keine Schilder
 (Paul-Junius-Str. - Alfred-Jung-Str.): Fußgänger	q1 15370,13508 15346,13298
 Hans-Bülow-Str.: Fußgänger	q1 8553,11638 8481,11638
 Berliner Freiheit: Fußgänger	q1 8481,11638 8387,11637
@@ -4517,7 +4517,7 @@ Uferweg am Weißen See: Fußgänger	q2 14521,16599 14521,16655 14482,16726 14423,16
 # REMOVED (gibt es nicht (mehr?)) --- Berliner Allee - Uferweg: enge Rampe oder 6 Stufen	q4+ 14499,16341 14485,16362
 Seeweg (Weißensee): Fußgänger	q2 14485,16362 14480,16449
 Seeweg (Weißensee): Fußgänger	q2 14610,16522 14581,16529 14510,16549
-(Treppe zur Gehrenseestr.)	q4 18490,16761 18475,16761 18482,16774
+(Treppe zur Gehrenseestr.)	q4 18478,16753 18467,16753 18471,16765
 # 
 #: by: Lydia Weitmann [AM] vvv
 (Blohmstr. - Diedersdorfer Str.): kaum Fußgänger	q1 9093,-1670 8972,-1581 8845,-1521 8776,-1487 8492,-1376 8061,-1117

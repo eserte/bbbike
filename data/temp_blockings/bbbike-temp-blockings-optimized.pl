@@ -3647,27 +3647,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
-#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
-#: source_id: 2147341022
-#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
-# REMOVED --- #: priority: #A --- #: next_check: 2021-11-17
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -1925,6790 -2080,6897
-	2::temp -1925,6790 -1851,6887
-',
-         'from' => 1637622000,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 17. November 2021 ab ca. 09:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1637745300
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -3957,8 +3937,8 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'data' => '#: next_check_id: BHFZEUTHEN-2018
 #: by: https://www.bahninfo-forum.de/read.php?9,672773,672947#msg-672947
 #: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
-#: osm_watch: way id="36936021" version="5" brb
-#: last_checked: 2021-09-09
+#: osm_watch: way id="36936021" version="6" brb
+#: last_checked: 2021-11-23 (osm)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2020-11-01
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
@@ -5601,10 +5581,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
 #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021)
 #: also_indoor: traffic
-#: last_checked: 2021-11-22
-#: check_frequency: 7d
+#: last_checked: 2021-11-24 vvv
+#: check_frequency: 7d vvv
 	q3::inwork; 14965,11924 15077,11910 15133,11902 15256,11884
 	q3::inwork 14965,11924 14888,11934 14836,11842
+#: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden
+Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1637599882,
          'id' => 3479,
