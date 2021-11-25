@@ -156,7 +156,7 @@ Oderstr.: Einbahnstraﬂenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2021-09-27 (mapillary)
+#: last_checked: 2021-11-23
 #: check_frequency: 60d
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
@@ -196,7 +196,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 ### Mitte ###
 # 
 #: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2021-11-09
+#: last_checked: 2021-11-25
 Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -4143,8 +4143,10 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 #: note: rechtliche Lage unklar, Feuerwehrzufahrt
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11622,12850 11716,12803
 # REMOVED (by mapillary) --- #: next_check_id: KARLMARXALLEE-2018 --- #: last_checked: 2020-06-13 --- #: check_frequency: 60d
-#: note: fr¸her "q1", gesch¸tzte Gr¸nanlage
-(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q3 11601,12858 11589,12768
+# REMOVED (anderer Weg nun) --- #: note: fr¸her "q1", gesch¸tzte Gr¸nanlage
+#: XXX_prog BS (an der Berolinastr.)
+#: note: rechtliche Lage unklar
+(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, Bordstein	q3 11622,12850 11645,12774 11635,12745
 #: note: fr¸her "q1", rechtliche Lage unklar
 (Berolinastr.): Fuﬂg‰nger	q2 11847,12927 11888,12910
 #: note: fr¸her "q1", Schild mit explizitem Radfahren-verboten-Schild
@@ -4164,7 +4166,8 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 #: XXX_prog BS (zur Mollstr. hin) (ansonsten -> q2)
 (Berolinastr. - Mollstr.): Fuﬂg‰nger, Bordstein	q3 11865,13027 11874,13048 11896,13075
 #: XXX_prog BS (zur Mollstr. hin)
-(Berolinastr. - Mollstr.): Fuﬂg‰nger, Bordstein	q2 11656,13100 11681,13161
+#: note: fr¸her "q2", rechtliche Lage unklar
+(Berolinastr. - Mollstr.): Fuﬂg‰nger, Bordstein	q3 11656,13100 11681,13161
 #: note: Charakter eine Service-Straﬂe mit Fuﬂg‰ngerbenutzung; Verbot f¸r Fahrzeuge aller Art (schwarz statt rot)
 (Lichtenberger Str.): Fuﬂg‰nger	q2 12054,12903 12039,12675
 #: XXX_prog BS (zur Georgenkirchstr. hin) (ansonsten w‰re es q1)

@@ -3958,7 +3958,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-11-06
+#: last_checked: 2021-11-25
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4427,7 +4427,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="4"
-#: last_checked: 2021-11-14 vvv
+#: last_checked: 2021-11-25 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4740,20 +4740,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1641398400
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022)
-#: last_checked: 2021-11-07 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2022-02-01
-	q2::inwork 8913,16159 9099,16398
-',
-         'from' => 1611329064,
-         'id' => 3324,
-         'source_id' => '2147346268',
-         'text' => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., bis 25.11.2021',
-         'type' => 'handicap',
-         'until' => 1637856000
-       },
+       undef,
        {
          'data' => '#: next_check_id: ABBESTR-2021
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
@@ -5617,9 +5604,9 @@ Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
          'from' => 1637449200,
          'id' => 3481,
          'source_id' => 'viz2021:13.459082,52.526025,22.11.2021,06:00',
-         'text' => 'Storkower Str./Thaerstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 22.11.2021 06:00 bis 27.11.2021 17:00',
+         'text' => 'Storkower Str./Thaerstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 22.11.2021 06:00 bis 26.11.2021 12:00',
          'type' => 'handicap',
-         'until' => 1638054000
+         'until' => 1637924400
        }
      
 );

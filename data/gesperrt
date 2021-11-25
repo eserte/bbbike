@@ -898,6 +898,7 @@ Mellenseestr. [Wohngebiet]	1 17587,9655 17633,9793 17633,9898
 Mellenseestr. [Wohngebiet]	1 17777,9649 17738,9822 17738,9922
 Mühsamstr.	1 13818,12897 13844,12900
 Lilli-Henoch-Str.	1s 12357,15020 12388,14926
+(Weydemeyerstr.): durch Tore abgesperrt	2 11933,12701 11971,12785
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2058,8 +2059,6 @@ Theanolte-Bähnisch-Str. -> Otto-Braun-Str.: Mittelstreifen	3::igndisp 11235,1314
 Otto-Braun-Str. -> Theanolte-Bähnisch-Str.: Mittelstreifen	3::igndisp 11267,13012 11320,13095 11235,13143
 Mittelstreifen	3nocross::ignrte 11226,12945 11289,12908 11589,12768 11635,12745
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11367,12940 11289,12908 11589,12768
-Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3::igndisp 11289,12908 11589,12768 11601,12858
-Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11601,12858 11589,12768 11635,12745
 unbequem zu überqueren (Bordsteine)	3nocross::ignrte 10796,8498 10911,8457 11225,8350 11266,8336
 Columbiadamm -> Hasenheide, am Rixdorfer Teich: unbequem zu überqueren (Bordsteine)	3::igndisp 10796,8498 10911,8457 10913,8463
 Hasenheide, am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 10913,8463 10911,8457 11225,8350

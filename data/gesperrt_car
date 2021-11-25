@@ -2080,7 +2080,11 @@ Mittelstreifen	3nocross::ignrte 12892,7850 12898,7832 12914,7785
 Herrnhuter Weg -> Karl-Marx-Str.: Mittelstreifen	3::igndisp 13103,7889 12898,7832 12914,7785
 Mittelstreifen	3nocross::ignrte 11589,12768 11635,12745 11678,12727 11976,12595
 Karl-Marx-Allee -> Schillingstr.: Mittelstreifen	3::igndisp 11678,12727 11635,12745 11596,12668
+Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3::igndisp 11589,12768 11635,12745 11645,12774
 Schillingstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11596,12668 11635,12745 11589,12768
+Schillingstr. -> Berolinastr.: Mittelstreifen	3::igndisp 11596,12668 11635,12745 11645,12774
+Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11645,12774 11635,12745 11678,12727
+Berolinastr. -> Schillingstr.: Mittelstreifen	3::igndisp 11645,12774 11635,12745 11596,12668
 Karl-Marx-Allee -> Berolinastr.: Mittelstreifen	3::igndisp 11635,12745 11678,12727 11716,12803
 Berolinastr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 11716,12803 11678,12727 11976,12595
 Am Erlengrund: Poller	3 44050,21331 44106,21385 44309,21572
@@ -2195,3 +2199,4 @@ Rudolf-Reusch-Str	1 15710,12365 15668,12304 15658,12231 15651,12214
 (Anton-Saefkow-Str. - John-Schehr-Str.): durch versenkbaren Poller gesperrt	2:Anlieger 13016,14370 12954,14287
 Eckertstr.	1 13598,12554 13585,12584
 Mittelstr.	1 15647,14693 15539,14493
+(Weydemeyerstr.): Absperrung	2 11925,12807 11971,12785

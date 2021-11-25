@@ -15661,13 +15661,17 @@ Berolinastr.	N 11541,12886 11590,12995
 (Berolinastr.)	NN 11921,12990 11865,13027 11815,13045 11719,13088
 (Berolinastr.)	NN 11847,12927 11888,12910 11957,12876
 (Berolinastr. - Mollstr.)	NN 11865,13027 11874,13048 11896,13075
-(Berolinastr. - Mollstr.)	NN 11609,12986 11656,13100 11681,13161
+#: osm.highway: service
+(Berolinastr. - Mollstr.)	N 11609,12986 11656,13100
+(Berolinastr. - Mollstr.)	NN 11656,13100 11681,13161
 (Lichtenberger Str.)	NN 12054,12903 12039,12675
-(Weydemeyerstr.)	NN 11933,12701 11971,12785 11925,12807
+(Weydemeyerstr.)	NN 11933,12701 11971,12785
+#: osm.highway: service
+(Weydemeyerstr.)	N 11971,12785 11925,12807
 (Mollstr.)	N 11673,12955 11630,12867
 (Mollstr.)	NN 11630,12867 11622,12850
 (Karl-Marx-Allee)	NN 11601,12858 11622,12850 11716,12803
-(Karl-Marx-Allee - Berolinastr.)	NN 11589,12768 11601,12858
+(Karl-Marx-Allee - Berolinastr.)	NN 11635,12745 11645,12774 11622,12850
 (Karl-Marx-Allee - Berolinastr.)	NN 11289,12908 11367,12940
 (Karl-Marx-Allee - Berolinastr.)	N 11367,12940 11419,12944
 Am Festungsgraben	N 9742,12609 9747,12584

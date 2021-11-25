@@ -25582,7 +25582,7 @@ EOF
        text  => 'Karl-Marx-Allee - umliegende Straßen: Zugang wegen Vorbereitungen zum Formel-E-Rennen u.U. nicht möglich, voraussichtlich bis 28.05.2016',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 11601,12858 11589,12768
+	2::temp 11622,12850 11645,12774 11635,12745
 	2::temp 11635,12745 11596,12668
 	2::temp 11678,12727 11716,12803
 EOF
@@ -28136,7 +28136,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-11-06
+#: last_checked: 2021-11-25
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -31057,7 +31057,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="4"
-#: last_checked: 2021-11-14 vvv
+#: last_checked: 2021-11-25 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -34017,8 +34017,8 @@ EOF
 EOF
      },
      { from  => 1637449200, # 2021-11-21 00:00
-       until => 1638054000, # 2021-11-28 00:00
-       text  => 'Storkower Str./Thaerstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 22.11.2021 06:00 bis 27.11.2021 17:00',
+       until => $isodate2epoch->("2021-11-26 12:00:00"), # 1638054000, # 2021-11-28 00:00
+       text  => 'Storkower Str./Thaerstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 22.11.2021 06:00 bis 26.11.2021 12:00',
        type  => 'handicap',
        source_id => 'viz2021:13.459082,52.526025,22.11.2021,06:00',
        data  => <<EOF,
