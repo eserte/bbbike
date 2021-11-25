@@ -32,6 +32,9 @@ my $conf_file = "$ENV{HOME}/.mapillary";
 my $conf = LoadFile $conf_file;
 my $client_token = $conf->{client_token} || die "Can't get client_token from $conf_file";
 
+my $default_limit = 2000;
+my $used_limit = $default_limit;
+
 my $image_api_url = 'https://graph.mapillary.com/images';
 
 my $region = 'Berlin_DE';
@@ -40,6 +43,7 @@ GetOptions(
 	   "to-file" => \my $to_file,
 	   "allow-override" => \my $allow_override,
 	   "open"    => \my $do_open,
+	   "used-limit=i" => \$used_limit,
 	  )
     or die "usage?";
 
@@ -177,11 +181,10 @@ sub fetch_images {
 	die "Fetching $url failed permanently";
     }
 
-    my $default_limit = 2000;
     if (@$data > $default_limit) {
 	die "Unexpected: more than $default_limit items in result (" . scalar(@$data) . ")";
     }
-    if (@$data == $default_limit) {
+    if (@$data >= $used_limit) {
 	my $interval = $end_captured_at - $start_captured_at;
 	if ($interval < 60) {
 	    die "Interval is/got too small: $interval ($start_captured_at_iso .. $end_captured_at_iso)";
