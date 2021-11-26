@@ -29205,9 +29205,9 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="22"
+#: osm_watch: way id="8655276" version="23"
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2021-11-22
+#: last_checked: 2021-11-26 (osm)
 #: check_frequency: 30d
 	2::inwork 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -33221,7 +33221,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-11-23
+#: last_checked: 2021-11-26
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -34027,6 +34027,16 @@ EOF
 #: by: https://viz.berlin.de/2021/11/verkehrsvorschau-23112021/
 	q4::inwork; 14089,13509 14109,13449 14159,13384
 	q4::inwork 14109,13449 14052,13389
+EOF
+     },
+     { from  => 1637953683, # 2021-11-26 20:08
+       until => 1667257200, # 2022-11-01 00:00
+       text  => 'Ruhlsdorf: Bauarbeiten, Sperrung, vermutlich auch für Radfahrer, bis 31.10.2022',
+       type  => 'handicap',
+       source_id => '217202207',
+       data  => <<EOF,
+#: note: innterörtliche Umleitung für Radfahrer existiert, deshalb nur q4 statt 2
+	q4::inwork -4311,-30322 -4686,-30955 -4813,-31339 -4835,-31548
 EOF
      },
     );

@@ -1200,7 +1200,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13487
 #: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
 #: note: abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="4615746" version="29"
+#: osm_watch: way id="4615746" version="30"
 #: source_id: 2147346157 (bis 19.10.2020)
 #: last_checked: 2021-11-19
 #: check_frequency: 120d
@@ -1668,7 +1668,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2021-11-16 vvv
+#: last_checked: 2021-11-26 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-11-15 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -3843,27 +3843,15 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 	RW6;RW6 4826,17456 4805,17367
 #: by: ^^^
 # 
-#: next_check_id: STERNDAMM-2020
+# REMOVED --- #: next_check_id: STERNDAMM-2020
 # REMOVED --- #: XXX_prog: während der Sperrung Sterndamm (bis 2013-12-20) geänderte Regelung: in Richtung Süden Radspur aufgehoben, ab temporärer Ampel Busspur, Radfahrer frei; in Richtung Norden Radspur bis temporäre Ampel aufgehoben, danach Busspur, Radfahrer frei; ggfs. mit valid_...-Direktive modellieren vvv
-#: by: https://www.bahninfo-forum.de/read.php?9,445440,672346#msg-672346 (Aufhebung der Radspuren)
-#: by: https://viz.berlin.de/2020/07/strassenbahnneubaustelle-adlershof-schoeneweide/
-#: by: https://viz.berlin.de/wp-content/uploads/2020_07_07_11_53_33_VZP_Gro%C3%9F_Berliner_Damm_Sterndamm_A1_neu_2.pdf_Adobe_Acrobat_Reader_DC.jpg
+# REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,445440,672346#msg-672346 (Aufhebung der Radspuren) --- #: by: https://viz.berlin.de/2020/07/strassenbahnneubaustelle-adlershof-schoeneweide/ --- #: by: https://viz.berlin.de/wp-content/uploads/2020_07_07_11_53_33_VZP_Gro%C3%9F_Berliner_Damm_Sterndamm_A1_neu_2.pdf_Adobe_Acrobat_Reader_DC.jpg
 # REMOVED (webcam existiert nicht mehr) --- #: by: http://www.johthal.de/ (Webcam)
 # REMOVED (certificate problems with LWP) --- by: https://www.meinetram.de/de/Anschluss-an-die-Zukunft (mit Baudokumentation)
-#: confirmed_by: srt
-#	RW4; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
-#	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905
-#: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv
-#: last_checked: 2021-10-30 vvv
-#: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2021-10-28 vvv
-Busspur ist immer gültig	RW5; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374
-	RW3; 17601,5374 17648,5338
-Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905 16868,5938
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED --- #: confirmed_by: srt
+	RW4; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
+	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905
+# REMOVED --- #: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv --- #: last_checked: 2021-10-30 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2021-10-28 vvv --- Busspur ist immer gültig	RW5; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 ---	RW3; 17601,5374 17648,5338 --- Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905 16868,5938 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 # REMOVED --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: by: https://www.bahninfo-forum.de/read.php?9,665091,716418#msg-716418 (Abbau) --- #: also_indoor: traffic (G) vvv --- #: source_id: 2147346053 vvv --- #: source_id: viz2021:13.51214,52.454886,09.07.2020,07:00 (bis 6.10.2021) (mittlerweile bis 1.11.2021) vvv --- #: last_checked: 2021-10-10 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2021-11-01 vvv --- #: valid: -20211028 vvv ---	RW3; 17736,5441 17886,5587 ---	RW4; 17886,5587 17736,5441 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: source_id ^^^ --- #: also_indoor ^^^
 # 
 	RW6;RW6 14705,10149 14621,10062 14599,10039

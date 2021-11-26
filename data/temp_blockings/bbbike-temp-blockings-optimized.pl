@@ -4096,9 +4096,9 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="22"
+#: osm_watch: way id="8655276" version="23"
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2021-11-22
+#: last_checked: 2021-11-26 (osm)
 #: check_frequency: 30d
 	2::inwork 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -4288,24 +4288,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
-# REMOVED (alt) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php --- #: by: fritz --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergang-gesperrt_a251392
-#: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
-#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergaenge-werden-erneuert_a327470 (neue Sperrung November 2021)
-#: by: https://pascalgrothe.de/sperrung-der-bahnuebergaenge-in-biesdorf-vom-8-11-bis-26-11/
-# REMOVED --- #: XXX es wird nochmal im zweiten Halbjahr 2021 eine zweiwöchige Sperrung geben
-#: also_indoor: search Brebacher_Weg Bahnübergang
-# REMOVED --- #: osm_watch: way id="9829824" version="25"
-# REMOVED --- #: priority: #A --- #: last_checked: 2021-03-31 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2021-07-01
-	2::inwork 21558,12073 21562,12088 21564,12097
-',
-         'from' => 1636264800,
-         'id' => 3171,
-         'text' => 'Brebacher Weg: Bahnübergang gesperrt, vom 7.11.2021 bis voraussichtlich 26.11.2021',
-         'type' => 'gesperrt',
-         'until' => 1637942400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4580,29 +4563,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9022 (Frage)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9049 (ab August (2020 oder 2021?) für sechs Monate, auch beim Brebacher Weg, Bau einer Autoüberfahrt?)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9184 (fehlende Umleitung)
-#: by: https://www.gruenemarzahnhellersdorf.de/2020/zuegig-nachbessern-und-umleitungen-schaffen-an-den-biesdorfer-bahnuebergaengen/ (bis Frühjahr 2021)
-#: by: https://twitter.com/SBahnBerlin/status/1347543580529758210 (S-Bahn fährt nicht bis 25.1.2021)
-#: by: https://abendblatt-berlin.de/2021/01/13/mit-dem-bus-statt-mit-der-bahn-durch-den-berliner-osten/
-#: by: https://viz.berlin.de/2021/01/s5/ (SEV bis 25.1.2021)
-#: by: https://pascalgrothe.de/neuigkeiten-zur-sperrung-der-bahnuebergaenge-in-biesdorf/ (zweiwöchige Sperrung im 2. Halbjahr 2021)
-#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergaenge-werden-erneuert_a327470 (neue Sperrung November 2021)
-#: by: https://pascalgrothe.de/sperrung-der-bahnuebergaenge-in-biesdorf-vom-8-11-bis-26-11/
-# REMOVED --- #: XXX bis wann ist der Bahnübergang gesperrt?
-#: also_indoor: search Oberfeldstraße Bahnübergang
-# REMOVED --- #: osm_watch: way id="868347101" version="4"
-# REMOVED --- #: priority: #A --- #: last_checked: 2021-03-31 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2021-07-01
-	2::inwork 20627,12162 20624,12133 20620,12108
-',
-         'from' => 1636264800,
-         'id' => 3282,
-         'text' => 'Oberfeldstr.: Bahnübergang am S-Bhf. Biesdorf gesperrt, vom 7.11.2021 bis voraussichtlich 26.11.2021',
-         'type' => 'gesperrt',
-         'until' => 1637942400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5116,7 +5077,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-11-23
+#: last_checked: 2021-11-26
 #: check_frequency: 30d
 #: next_check: 2021-12-15
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -5594,19 +5555,17 @@ Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
          'type' => 'handicap',
          'until' => 1638831600
        },
+       undef,
        {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1462709242088103938/photo/1 (Umleitung für Radfahrer Richtung Osten)
-#: by: https://pbs.twimg.com/media/FEyV9K0XoAEO-Ob?format=jpg&name=large
-#: by: https://viz.berlin.de/2021/11/verkehrsvorschau-23112021/
-	q4::inwork; 14089,13509 14109,13449 14159,13384
-	q4::inwork 14109,13449 14052,13389
+         'data' => '#: note: innterörtliche Umleitung für Radfahrer existiert, deshalb nur q4 statt 2
+	q4::inwork -4311,-30322 -4686,-30955 -4813,-31339 -4835,-31548
 ',
-         'from' => 1637449200,
-         'id' => 3481,
-         'source_id' => 'viz2021:13.459082,52.526025,22.11.2021,06:00',
-         'text' => 'Storkower Str./Thaerstr.: Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 22.11.2021 06:00 bis 26.11.2021 12:00',
+         'from' => 1637953683,
+         'id' => 3482,
+         'source_id' => '217202207',
+         'text' => 'Ruhlsdorf: Bauarbeiten, Sperrung, vermutlich auch für Radfahrer, bis 31.10.2022',
          'type' => 'handicap',
-         'until' => 1637924400
+         'until' => 1667257200
        }
      
 );
