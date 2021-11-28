@@ -86,7 +86,7 @@ Radweg vorhanden, aber Benutzung verboten (Gehwegschäden)	RW0; 9022,10857 8941,1
 	RW2;RW1 9521,10010 9448,10014
 schlechter Zustand des Radwegs, Wurzelschäden	RW1; 9827,10051 9521,10010
 Verbundsteinpflaster, Wurzelschäden	RW1; 9521,10010 9827,10051
-	RW4;RW4 9416,10196 9409,10226 9404,10250
+geschützter Radstreifen, mit "Leitboys"	RW4;RW4 9416,10196 9409,10226 9404,10250
 	RW3; 9229,8785 9229,8718
 neu asphaltiert	RW1; 9229,8718 9229,8785
 Verbundsteinpflaster	RW1; 9229,8718 9233,8597 9238,8410
@@ -112,7 +112,7 @@ Gehwegpflasterung, aber mäßiger Zustand	RW1; 9233,8597 9229,8718
 #: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021)
 #: XXX Grünmarkierung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2021-09-26 vvv
+#: last_checked: 2021-11-28 vvv
 #: check_frequency: 130d vvv
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
@@ -138,7 +138,7 @@ neu asphaltiert, relativ breit	RW1; 8593,5491 8480,5350
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
 #: by: http://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ausbau wird 2021 abgeschlossen)
-#: last_checked: 2021-10-09 vvv
+#: last_checked: 2021-11-28 vvv
 #: check_frequency: 90d vvv
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8480,5350 8406,5258 8356,5195
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_21.01.2021_final.pdf (Gehwegparken wurde abgeordnet) (bestätigt)
@@ -146,8 +146,10 @@ Bord gegen Gehweg	RW1; 8356,5195 8406,5258 8480,5350 8593,5491
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
-alte Gehwegplatten, Bord gegen Gehweg, Autos parken auf dem Unterstreifen	RW1; 8356,5195 8348,5184 8219,5010 8130,4932 8014,4832
-	RW1; 8014,4832 8130,4932 8219,5010 8348,5184 8356,5195
+#: note: früher (bis 2021) haben die Autos auf dem Unterstreifen geparkt
+alte Gehwegplatten, Bord gegen Gehweg	RW1; 8356,5195 8348,5184 8219,5010 8130,4932 8014,4832
+alte Gehwegplatten, Bord gegen Gehweg, relativ breit	RW1; 8014,4832 8130,4932
+alte Gehwegplatten, Bord gegen Gehweg	RW1; 8130,4932 8219,5010 8348,5184 8356,5195
 	RW2; 9242,7286 9242,7218 9242,7145
 	RW2; 9242,7145 9242,7218 9242,7286
 	RW2;RW2 9242,7145 9242,7044 9242,6962
@@ -431,7 +433,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
-#: last_checked: 2021-11-09 vvv
+#: last_checked: 2021-11-28 vvv
 #: check_frequency: 60d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -690,7 +692,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2021-11-18 vvv
+#: last_checked: 2021-11-28 (daf) vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
@@ -712,9 +714,9 @@ asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 #: note: alter Bürgersteigradweg existiert noch, ist aber abgesperrt
 teilweise mit Leitboys geschützt	RW4; 14208,12235 14291,12220 14381,12205 14427,12197 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129
 #: next_check_id: FRANKFURTER-2021
-#: XXX Bauarbeiten, provisorische Radspur, evtl. bleibt diese permanent
+#: XXX Bauarbeiten, provisorische Radspur, danach vermutlich wieder ein Bürgersteigradweg
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
-#: last_checked: 2021-11-24
+#: last_checked: 2021-11-28
 #: check_frequency: 30d
 #: next_check: 2022-03-31
 	RW4; 14926,12129 14994,12121 15117,12106
@@ -907,8 +909,7 @@ neues Verbundsteinpflaster	RW1; 16839,1262 16815,1278
 Gehwegplatten, teilweise mit Schäden und Hebungen	RW1; 16815,1278 16698,1392 16643,1460 16459,1680 16450,1691 16400,1770 16315,1904 16254,1999 16135,2135
 Verbundsteinpflaster, teilweise mit Schäden und Hebungen	RW1; 16135,2135 16028,2261 15980,2318 15804,2512 15736,2593 15613,2739 15599,2752 15572,2785 15459,2921 15301,3038 15176,3136 14994,3245
 Verbundsteinpflaster	RW1; 14994,3245 14822,3409 14788,3441 14550,3625 14391,3786 14347,3836 14290,3908 14119,4153
-	RW2; 13316,6320 13307,6359 13294,6386 13261,6456 13236,6489
-	RW2; 13248,6452 13275,6382 13289,6355 13316,6320
+	RW2; 13316,6320 13307,6359 13294,6386 13261,6456 13236,6489 13248,6452 13275,6382 13289,6355 13316,6320
 	RW2;RW1 13316,6320 13355,6235
 	RW1;RW1 13355,6235 13430,6086
 	RW4; 14089,9610 14196,9749
@@ -946,7 +947,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147346063 (inaktiv)
 #: source_id: viz2021:13.461003,52.492338,30.10.2021,06:00 (Wochenendsperrung für Kfz-Verkehr)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-11-27
+#: last_checked: 2021-11-28
 #: check_frequency: 60d
 #: next_check: 2022-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1702,7 +1703,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2021-11-13
+#: last_checked: 2021-11-28
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -4125,7 +4126,7 @@ Grünmarkierung	RW4; 13891,7107 13627,7047 13500,7018 13336,6986
 Grünmarkierung	RW3; 13336,6986 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2021-10-02 (mapillary) vvv
+#: last_checked: 2021-11-28 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2022-12-31 vvv
 #: valid: 20140224-20221231 vvv
@@ -7034,7 +7035,7 @@ provisorischer Radstreifen	RW4; 8919,10360 8824,10366 8771,10381 8701,10428 8581
 #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="21"
 #: osm_watch: way id="335487059" version="17"
-#: last_checked: 2021-11-16 (mapillary) vvv
+#: last_checked: 2021-11-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-30 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -7099,8 +7100,9 @@ Radspur hinter den parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720 11710,
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710
 #: osm_watch: way id="26472938" version="30"
 #: note: keine Baken an den beiden Bushaltestellen
-#: last_checked: 2021-11-16 (mapillary)
-provisorisch geschützter Radstreifen	RW4; 9416,10196 9599,10175 9687,10180 9825,10206 9865,10227
+#: last_checked: 2021-11-28
+Bushaltestelle	RW5; 9416,10196 9472,10182
+provisorisch geschützter Radstreifen	RW4; 9472,10182 9599,10175 9687,10180 9825,10206 9865,10227
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 # 
@@ -7231,12 +7233,12 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: XXX: Werden die provisorischen Radspuren wieder entfernt? vvv
 #: priority: #A vvv
-#: last_checked: 2021-11-06 (Markierungen alle noch da, Verkehrsschilder größtenteils auch) vvv
+#: last_checked: 2021-11-28 (Markierungen alle noch da, Verkehrsschilder größtenteils auch) vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2021-10-18 vvv
 # REMOVED --- #: valid: -20211007 vvv
 #: osm_watch: way id="31773580" version="14"
-provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9249,6642 9254,6542 9253,6484 9250,6414 9246,6364 9245,6352 9221,6179 9212,6096 9192,5921 9176,5803 9158,5673 9161,5535 9176,5413 9188,5333 9196,5272 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672
+provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9249,6642 9254,6542 9253,6484 9250,6414 9246,6364 9245,6352 9221,6179 9212,6096 9192,5930 9176,5803 9158,5673 9161,5535 9176,5413 9188,5333 9196,5272 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672
 wegen Hochbauarbeiten nur fängt die Radspur erst nach ca. 70m an	RW4; 9275,4672 9294,4536
 #: osm_watch: way id="28680188" version="18"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9294,4536 9310,4407 9333,4229 9346,4144 9375,4022 9426,3797
@@ -7245,7 +7247,7 @@ Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9426,3797 9375,4022 9346,4144 9333,4229 9310,4407 9294,4536 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
 #: osm_watch: way id="4526218" version="22"
 provisorischer Radweg auf dem Bürgersteig	RW2; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
-provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9161,5535 9158,5673 9176,5803 9192,5921 9212,6096 9221,6179 9245,6352 9246,6364 9250,6414 9253,6484 9254,6542 9249,6642
+provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9161,5535 9158,5673 9176,5803 9192,5930 9212,6096 9221,6179 9245,6352 9246,6364 9250,6414 9253,6484 9254,6542 9249,6642
 # REMOVED --- #: valid ^^^
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^

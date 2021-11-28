@@ -28,7 +28,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn nur für Baufahrzeuge	q3::inwork 125
 # 
 #: note: laut rbb bis 29.10.2021, laut Parkverbotsschilder bis 28.1.2022 vvv
 #: also_indoor: traffic (H(falsch),G(teilweise))
-#: last_checked: 2021-11-24 vvv
+#: last_checked: 2021-11-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-01-28 vvv
 Jessnerstr.: Sperrung der Fahrbahn nördlich der Oderstr.	q3::inwork 14946,11697 14986,11760
@@ -195,6 +195,14 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
+#: last_checked: 2021-11-28 vvv
+Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269
+#: note: hier nur ein kurzer Abschnitt betroffen
+Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+# 
 #: next_check_id: MUSEUMSINSEL-2020
 #: last_checked: 2021-11-25
 Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
@@ -271,7 +279,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
-#: last_checked: 2021-11-18
+#: last_checked: 2021-11-28 (daf)
 #: check_frequency: 60d
 (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
 # 
@@ -732,7 +740,7 @@ Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg
 #: XXX laut rbb (am 31.8.2021 entfernt) und Halteverbotsschildern bis 31.08.2021
 #: also_indoor: traffic (ex-H)
 #: priority: #B
-#: last_checked: 2021-11-17
+#: last_checked: 2021-11-28
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-08-31
 # REMOVED --- #: valid: -20210831
@@ -770,6 +778,7 @@ Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweich
 # 
 #: add_fragezeichen Bis wann gibt es diese Einschränkung?
 #: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9657 (hier sogar bis Ende 2026)
 #: last_checked: 2021-09-25
 #: check_frequency: 120d
 #: next_check: 2024-12-31
@@ -4052,7 +4061,8 @@ Hünensteig: Fußgänger	q2 6395,5154 6405,5238 6108,5253
 (Götzstr. - Albrechtstr.): Fußgänger	q2 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
 #: note: ähnliche Angaben von Christian (chrispan), nach Mailverkehr mit ihm (Message-Id: <E1EtpOe-0001ZH-IJ@www.radzeit.de>) von q2 auf q4 degradiert:
 #: XXX_prog BS an der Gersdorfstr., ansonsten bleibt es aber bei q4
-(Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, Fußgänger (schieben!), tiefe Steinregenabläufe quer zum Weg, Bordstein	q4 7911,4465 7925,4477 8027,4571 8192,4710
+#: confirmed_by: srt
+(Ringstr. - Gersdorfstr. (Kolonie Marienhöhe)): Kleingartenanlage, Fußgänger (schieben!), tiefe Steinregenabläufe quer zum Weg, Bordstein	q4 7911,4465 7925,4477 8027,4571 8076,4606 8192,4710
 #: by: ^^^
 #: by: Philipp Kaufmann
 Mühlenbecker Weg: Fußgänger	q1 20150,15678 20321,16043 20330,16040

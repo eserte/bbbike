@@ -115,6 +115,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,688517#msg-688517
 #: confirmed_by: srt
 #: source_id: 2147346700 (bis 30.11.2021)
+#: source_id: viz2021:13.479483,52.501885,16.12.2020,09:00 (bis 30.11.2021)
 #: also_indoor: traffic
 #: last_checked: 2021-11-21
 #: check_frequency: 45d
@@ -989,6 +990,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel für Fußgänger über die Eisenacher Str., vermutlich auch Kontaktschleifen
 	X 10010,4606
 	X 10412,4552
+#: note: Anforderung und Kontaktschleifen für Radfahrer Richtung Westen
 	X 10288,4354
 	X 10800,5203
 	X 11266,5097
@@ -1124,7 +1126,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9695,1563
 	X 9858,744
 	X 9346,4144
-	X 9192,5921
+	X 9192,5930
 	F 9720,15578
 	X 9446,16060
 	X 9514,16603
@@ -3135,12 +3137,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2021-10-02 (mapillary)
+#: last_checked: 2021-11-28
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
 	X::inwork 13265,6972
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: last_checked: 2021-10-02 (mapillary)
+#: last_checked: 2021-11-28
 #: check_frequency: 90d
 	X::inwork 13627,7047
 # REMOVED --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103
@@ -3569,7 +3571,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2021-11-13 vvv
+#: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
+#: last_checked: 2021-11-28 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

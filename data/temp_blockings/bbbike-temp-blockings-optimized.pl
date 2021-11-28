@@ -3188,31 +3188,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
-#: by: https://www.rbb24.de/panorama/beitrag/2020/10/potsdam-weihnachtsmarkt-brandenburger-strasse-abgesagt-corona.html
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/brandenburg/3404397-1329503-der-traditionelle-potsdamer-weihnachtsma.html
-#: tempex: before(first_advent,mo) - YYYY1230
-	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
-',
-         'from' => 1637449200,
-         'id' => 2526,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11,
-                              'start',
-                              '2021-01-01T00:00:00'
-                            ]
-                          ],
-         'text' => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 22.11.2021 - 29.12.2021',
-         'type' => 'gesperrt',
-         'until' => 1640818799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4410,7 +4386,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="3"
 #: osm_watch: way id="934995901" version="4"
-#: last_checked: 2021-11-25 vvv
+#: last_checked: 2021-11-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -5045,7 +5021,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: FRANKFURTER-2021
 #: note: auch last Schild der Wasserbetriebe bis März 2022
-#: last_checked: 2021-11-02 vvv
+#: last_checked: 2021-11-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-31 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -5246,17 +5222,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX Ursprünglich wurde 08/2021 als Beginn geplant, das hat sich aber um einen Monat verschoben --- vielleicht das Ende auch?
 #: note: Fertigstellung EÜ laut Baustellenschild 2023
 #: osm_watch: way id="229990468" version="6"
-#: add_fragezeichen: Bis wann genau geht die Sperrung?
-#: last_checked: 2021-11-06
-#: next_check: 2021-11-30
+#: add_fragezeichen: Ist hier noch immer gesperrt?
+#: last_checked: 2021-11-28
+# REMOVED --- #: next_check: 2021-11-30
 	2::inwork 7673,4223 7769,4315
 ',
          'from' => 1630965600,
          'id' => 3442,
          'source_id' => 'https://www.dresdnerbahn.de/mediathek/file/371/XuemcxFdBKgO2ODB13RfVD6NGI-aMFPmtCRyf_fgMuk/Downloads/20210604_DrB_virtuelle_Buergerinfo_online.pdf',
-         'text' => 'Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer: Bauarbeiten an der Eisenbahnüberführung, komplette Sperrung des Weges, bis November 2021',
+         'text' => 'Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer: Bauarbeiten an der Eisenbahnüberführung, komplette Sperrung des Weges, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
-         'until' => 1638313199
+         'until' => undef
        },
        undef,
        undef,
@@ -5319,25 +5295,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1640214000
        },
-       {
-         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: XXX Wird nach den Bauarbeiten die Qualität der Fahrbahn besser sein? (jetzt: Q1)
-#: osm_watch: way id="10686356" version="19"
-#: also_indoor: traffic (none)
-#: last_checked: 2021-11-13
-	q4::inwork 13510,8138 13663,8011
-',
-         'from' => undef,
-         'id' => 3456,
-         'text' => 'Stuttgarter Str.: Bauarbeiten, Fahrbahn gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '# REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
 #: source_id: viz2021:13.399042,52.497652,23.11.2021,06:00
 #: by: https://twitter.com/VIZ_Berlin/status/1463011930226917378 (Radverkehr nicht betroffen)
-	q4::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
+	q3::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
 ',
          'from' => 1637535600,
          'id' => 3457,
@@ -5515,7 +5478,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: also_indoor: traffic
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2021-11-20
+#: last_checked: 2021-11-28
 #: check_frequency: 60d
 	q4::inwork; 9227,8890 9417,8890
 ',
@@ -5529,7 +5492,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
 #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021)
 #: also_indoor: traffic
-#: last_checked: 2021-11-24 vvv
+#: last_checked: 2021-11-28 vvv
 #: check_frequency: 7d vvv
 	q3::inwork; 14965,11924 15077,11910 15133,11902 15256,11884
 	q3::inwork 14965,11924 14888,11934 14836,11842
