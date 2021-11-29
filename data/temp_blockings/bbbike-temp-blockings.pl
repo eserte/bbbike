@@ -1390,16 +1390,17 @@ EOF
 	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
-     { from  => $isodate2epoch->("2021-11-26 00:00:00"), # weitere Termine unten
-       until => $isodate2epoch->("2021-11-28 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (27.11.2021 - 28.11.2021)',
+     { from  => $isodate2epoch->("2019-11-29 00:00:00"), # weitere Termine unten
+       until => $isodate2epoch->("2019-12-01 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.2019 - 01.12.2019)',
        periodic => 1,
-       recurrences => [['yearly', days => 25, months => 11, start => "2021-01-01T00:00:00"]], # note: keine Weihnachtsmärkte vor dem 30.11.2020!
+       recurrences => [['yearly', days => 25, months => 11, start => "2022-01-01T00:00:00"]], # note: keine Weihnachtsmärkte vor dem 30.11.2020!
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/3659027-3496862-umwelt-und-weihnachtsmarkt-in-der-sophie.html
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001302-955635-weihnachts-und-umweltmarkt-in-der-sophie.html
+#: by: https://www.weihnachtsmarkt-sophienstrasse.de/ (Absage 2021)
 #: tempex: before(1st_advent,1d) - +1d
 	2::xmas 9986,13412 10317,13248
 EOF
@@ -22749,11 +22750,11 @@ EOF
 	2::inwork 12624,25570 12697,25704
 EOF
      },
-     { from  => $isodate2epoch->("2021-12-03 00:00:00"), # erster Termin oben
-       until => $isodate2epoch->("2021-12-05 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (04.12.2021 - 05.12.2021)',
+     { from  => $isodate2epoch->("2019-12-06 00:00:00"), # erster Termin oben
+       until => $isodate2epoch->("2019-12-08 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (07.12.2019 - 08.12.2019)',
        periodic => 1,
-       recurrences => [['yearly', days => 2, months => 12]],
+       recurrences => [['yearly', days => 2, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
@@ -22761,11 +22762,11 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2021-12-10 00:00:00"),
-       until => $isodate2epoch->("2021-12-12 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (11.12.2021 - 12.12.2021)',
+     { from  => $isodate2epoch->("2019-12-13 00:00:00"),
+       until => $isodate2epoch->("2019-12-15 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (14.12.2019 - 15.12.2019)',
        periodic => 1,
-       recurrences => [['yearly', days => 9, months => 12]],
+       recurrences => [['yearly', days => 9, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
@@ -22773,11 +22774,11 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2021-12-17 00:00:00"),
-       until => $isodate2epoch->("2021-12-19 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (18.12.2021 - 19.12.2021)',
+     { from  => $isodate2epoch->("2019-12-20 00:00:00"),
+       until => $isodate2epoch->("2019-12-22 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (21.12.2019 - 22.12.2019)',
        periodic => 1,
-       recurrences => [['yearly', days => 16, months => 12]],
+       recurrences => [['yearly', days => 16, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
@@ -22785,25 +22786,26 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2021-11-27 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-11-28 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 28. November 2021, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2019-11-30 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-12-01 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 1. Dezember 2019, 12:00 bis 19:00 Uhr',
        periodic => 1,
-       recurrences => [['yearly', days => 26, months => 11, start => "2021-01-01T00:00:00"]], # 2020 nicht!
+       recurrences => [['yearly', days => 26, months => 11, start => "2022-01-01T00:00:00"]], # 2020 nicht!
        recurrence_prewarn_days => 21, # finden 2020 überhaupt Weihnachtsmärkte statt?
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/3250022-3496862-adventsmarkt-am-kollwitzplatz.html
+#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/ (2021 abgesagt)
 #: tempex: 1st_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2021-12-04 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-12-05 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 5. Dezember 2021, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2019-12-07 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-12-08 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 8. Dezember 2019, 12:00 bis 19:00 Uhr',
        periodic => 1,
-       recurrences => [['yearly', days => 3, months => 12]],
+       recurrences => [['yearly', days => 3, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
        data  => <<EOF,
@@ -22811,11 +22813,11 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2021-12-11 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-12-12 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 12. Dezember 2021, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2019-12-14 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-12-15 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 15. Dezember 2019, 12:00 bis 19:00 Uhr',
        periodic => 1,
-       recurrences => [['yearly', days => 10, months => 12]],
+       recurrences => [['yearly', days => 10, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
        data  => <<EOF,
@@ -22823,11 +22825,11 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2021-12-18 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-12-19 17:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 19. Dezember 2021, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2019-12-21 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-12-22 17:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 22. Dezember 2019, 12:00 bis 19:00 Uhr',
        periodic => 1,
-       recurrences => [['yearly', days => 17, months => 12]],
+       recurrences => [['yearly', days => 17, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
        data  => <<EOF,
@@ -30472,7 +30474,7 @@ EOF
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-11-16 (mapillary)
+#: last_checked: 2021-11-29
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 EOF
@@ -32425,18 +32427,11 @@ EOF
 EOF
      },
      { from  => 1616281200, # 2021-03-21 00:00
-       until => undef, # 1627768799, # 2021-07-31 23:59
+       until => 1638213771, # undef, # 1627768799, # 2021-07-31 23:59
        text  => 'Kettinger Str.: Verbindung zur Barnetstr. wegen Bauarbeiten unterbrochen, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: S-SCHICHAUWEG-2021
-#: by: rbb
-#: by: https://viz.berlin.de/2021/03/verkehrsvorschau_220321/
-#: by: https://twitter.com/VIZ_Berlin/status/1373879362806816774 (mit Radfahrer-Icon)
-#: XXX sind tatsächlich Fußgänger und Radfahrer betroffen? -> ja, allerdings ist es außerhalb der Bauzeiten unter Umständen möglich, hier durchzufahren
-#: add_fragezeichen: Sind die Bauarbeiten beendet? Können Radfahrer wieder durchfahren?
-#: osm_watch: way id="948039533" version="1"
-#: last_checked: 2021-10-03
+# REMOVED (laut daf-Bilder offen) --- #: next_check_id: S-SCHICHAUWEG-2021 --- #: by: rbb --- #: by: https://viz.berlin.de/2021/03/verkehrsvorschau_220321/ --- #: by: https://twitter.com/VIZ_Berlin/status/1373879362806816774 (mit Radfahrer-Icon) --- #: XXX sind tatsächlich Fußgänger und Radfahrer betroffen? -> ja, allerdings ist es außerhalb der Bauzeiten unter Umständen möglich, hier durchzufahren --- #: add_fragezeichen: Sind die Bauarbeiten beendet? Können Radfahrer wieder durchfahren? --- #: osm_watch: way id="948039533" version="1" --- #: last_checked: 2021-11-28 (daf)
 # REMOVED --- #: next_check: 2021-07-31
 	2::inwork 9693,-815 9692,-772 9693,-746 9699,-600
 EOF
@@ -33367,9 +33362,9 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-11-19
+#: last_checked: 2021-11-29
 #: check_frequency: 14d
-#: next_check: 2021-11-30
+# REMOVED --- #: next_check: 2021-11-30
 	q3::inwork 13057,14267 13158,14117
 EOF
      },
@@ -34034,6 +34029,19 @@ EOF
        data  => <<EOF,
 #: note: innterörtliche Umleitung für Radfahrer existiert, deshalb nur q4 statt 2
 	q4::inwork -4311,-30322 -4686,-30955 -4813,-31339 -4835,-31548
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'S-Bhf. Schichauweg: Unterführung an der Nordseite möglicherweise wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: S-SCHICHAUWEG-2021
+#: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
+#: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
+#: osm_watch: way id="114381366" version="13"
+#: add_fragezeichen: Ist die Unterführung tatsächlich gesperrt?
+	2::inwork 9699,-600 9562,-619
 EOF
      },
     );

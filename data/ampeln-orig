@@ -1883,7 +1883,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9907,15618
 	X 10629,14299
 	X 11535,14900
-#: note: Anforderungsampel für Radfahrer in der Relation Fröbelstr. - Raumerstr.
+#: note: Anforderungsampel für Fußgänger und Radfahrer in der Relation Fröbelstr. - Raumerstr.
 	X 11776,15060
 	X 11112,15387
 #: note: Autos können nicht aus der Knaack in die Immanuelkirchstr., demnach eine Fußgängerampel
@@ -2396,6 +2396,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 9870,14759
 	X 9621,14624
 	X 10170,14905
+#: note: keine Haltelinie für Radfahrer
 	F 10515,15045
 	X 21163,15289
 	X 23565,15993
@@ -2966,7 +2967,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: osm_watch: node id="5931765487" version="1"
 #: osm_watch: node id="5931765488" version="1"
-#: last_checked: 2021-11-25
+#: last_checked: 2021-11-28 (daf)
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 

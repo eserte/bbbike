@@ -140,7 +140,7 @@ Oderstr.: Einbahnstraﬂenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: source_id: 2147345858
-#: last_checked: 2021-10-03
+#: last_checked: 2021-11-28 (daf)
 #: next_check: 2023-07-31
 (Notweg Bahn¸bergang Bahnhofstr.): Fuﬂg‰nger, Fahrrad ggfs. schieben	q3 10231,-2159 10215,-2170 10181,-2174 10161,-2146 10096,-2137
 # 
@@ -204,7 +204,7 @@ Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork
 #: add_fragezeichen ^^^
 # 
 #: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2021-11-25
+#: last_checked: 2021-11-28 (daf)
 Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -242,7 +242,7 @@ Ida-von-Arnim-Str.: Bauarbeiten an der Kreuzung Chausseestr., Fahrbahn gesperrt	
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2021-11-09 vvv
+#: last_checked: 2021-11-28 (daf) vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423
@@ -269,7 +269,7 @@ Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1- 9444,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/volt-berlin-baufeld-e3a.312/page-8#post-14027
 #: XXX Bebauungsplanentwurf I-43a "S¸dliche Alexanderstraﬂe": entsteht hier eine Planstraﬂe?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straﬂe, Fahrbahn ist noch abgesperrt
-#: last_checked: 2021-11-06
+#: last_checked: 2021-11-29
 #: check_frequency: 60d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
@@ -288,7 +288,7 @@ Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-11-06
+#: last_checked: 2021-11-28 (daf)
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -388,7 +388,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Fr¸hjahr 2021 abgebaut, bis Sommer 2021 wird die Straﬂenseite wiederhergestellt; Sperrung in der Universit‰tsstraﬂe womˆglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2021-11-09 vvv
+#: last_checked: 2021-11-28 (daf) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -3249,7 +3249,8 @@ Hampstedtstr.: einige Fuﬂg‰nger	q1 749,2616 816,2658
 #: note: hier etwas enger
 (Greifswalder Str. - Ella-Kay-Str.): einige Fuﬂg‰nger	q2 12224,14707 12213,14742 12183,14757
 #: XXX_prog: BS an der Ella-Kay-Str., ansonsten q2
-(Greifswalder Str. - Ella-Kay-Str.): einige Fuﬂg‰nger, Bordstein	q3 12183,14757 12056,14831
+(Greifswalder Str. - Ella-Kay-Str.): einige Fuﬂg‰nger, Bordstein	q3 12183,14757 12060,14827
+(Greifswalder Str. - Ella-Kay-Str.): einige Fuﬂg‰nger	q2 12174,14739 12128,14764
 (Wohngebiet Michelangelostr.): nur f¸r Fuﬂg‰nger	q4 13687,15387 13597,15443
 Arberstr.: einige Fuﬂg‰nger	q1 19437,9653 19450,9728
 Schwarzer Weg: einige Fuﬂg‰nger	q2 17294,7367 17276,7348
@@ -4214,7 +4215,7 @@ Alice-Salomon-Park: Fuﬂg‰nger	q1 6771,9458 6724,9457
 Bautzener Platz: Fuﬂg‰nger, Bordsteine	q3 8182,9240 8100,9240
 Bautzener Platz: Fufg‰nger, Bordsteine	q3 8102,9262 8183,9260
 #: XXX_prog ^^^
-(Danziger Str. - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 12123,14643 12183,14757 12193,14775 12212,14781 12252,14860 12236,14870 12314,15008
+(Danziger Str. - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 12123,14643 12174,14739 12183,14757 12193,14775 12212,14781 12252,14860 12236,14870 12314,15008
 #: note: gemeinsamer Rad- und Gehweg
 (Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 11877,15366 11937,15349 12003,15311 12103,15218 12208,15108 12284,15068 12314,15008
 (Prenzlauer Allee - Lilly-Henoch-Str.): Fuﬂg‰nger	q2 11860,15309 11919,15314 11937,15349

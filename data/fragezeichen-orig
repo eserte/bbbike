@@ -1743,6 +1743,9 @@ Königsweg: Asphaltierung geplant	?::projected -298,2577 -197,2634 -155,2658
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-80/7-80-blatt-1_gez.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-80/7-80-blatt-2.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf (erst nach Baumaßnahmen Dresdner Bahn 2025)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1149301.php#modul_headline_1_0
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-80/7-80_pl_blatt1_deckblatt_zusammen2021_10_12_mit-hinweis.pdf (Verbreiterung im nördlichen Bereich; außerdem möglicherweise neue Straßen/Plätze im Gaswerk-Bereich)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-80/7-80_pl_blatt2_deckblatt_zusammen2021_10_12_mit-hinweis.pdf (Verbreiterung im nördlichen Bereich)
 #: XXX außerdem: gibt es mittlerweile eine (provisorische) Beleuchtung?
 #: osm_watch: way id="150301193" version="11"
 #: last_checked: 2021-11-28
@@ -1797,7 +1800,7 @@ Straße vor Schönholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf vvv
-#: last_checked: 2021-11-19
+#: last_checked: 2021-11-29
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -2197,11 +2200,15 @@ Wasserweg: wird hier asphaltiert werden? Was ist mit dem "Schlenker" am Spreepar
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/180_2438-iv-togostrasse-zur-fahrradstrasse-machen_sb.pdf vvv
 #: by: https://api.fixmyberlin.de/api/projects/423 (hier: nur zwischen Kongostr. und Seestr., bis 31.12.2021)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10595 (Frage zu geplanten Fahrradstraßen in Mitte)
+#: by: https://berliner-abendblatt.de/2021/11/29/zwei-fahrradstrassen-fuer-den-wedding/ (seit 29.11.2021 Fahrradstraße, die Kameruner Str. auch)
+#: by: https://twitter.com/VIZ_Berlin/status/1465292246744539144
+#: by: https://twitter.com/fahrrad_berlin/status/1465269083516149763
+#: by: https://weddingweiser.de/bitte-nicht-nur-etikettenschwindel/
 #: osm_watch: way id="597289462" version="2"
 #: osm_watch: way id="281071129" version="7"
 #: last_checked: 2021-11-20 (mapillary)
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2021-12-31
+#: next_check: 2021-11-29
 Togostr.: Ausweisung als Fahrradstraße?	? 6530,15849 6383,15972 6244,16096 6104,16223 6005,16313 5906,16403 5700,16584 5596,16662
 #: osm_watch: way id="4674390" version="13"
 #: last_checked: 2021-11-13 (mapillary)
@@ -3502,7 +3509,7 @@ Zillestr./Krumme Str.: Planung einer Fahrradstraße, wo genau?	?::projected 3801,
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/strassen-und-kfz-verkehr/projekte-in-planung/boulevard-unter-den-linden/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/boulevard-unter-den-linden-soll-autofrei-werden_a321794
 #: by: https://www.berliner-zeitung.de/mensch-metropole/unter-den-linden-wird-zur-baustelle-in-mitte-geht-eine-aera-zu-ende-li.190324?pid=true
-#: last_checked: 2021-11-25
+#: last_checked: 2021-11-28 (daf)
 #: check_frequency: 30d
 #: next_check: 2022-07-01
 Unter den Linden: temporäre Umgestaltung, eine besondere Fahrspur für Radfahrer entsteht	?::projected 8804,12280 9028,12307 9141,12320 9358,12351 9475,12365 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431
@@ -4208,6 +4215,7 @@ Allee der Kosmonauten: Radwege geplant	?::projected 20150,13562 20193,13621 2020
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-strassenbahnstrecke-im-suedosten-von-berlin-soll-am-31-oktober-oeffnen-li.140686 (Umbau der Straße 2026?)
 #: by: https://www.meinetram.de/de/Wir-machen-den-Sued-Osten-fit
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-28344.pdf (Baubeginn: zweiten Halbjahr 2024)
+#: by: https://berliner-abendblatt.de/2021/11/29/117918/ (Erwähnung von Planungen für Aus/Neubau)
 #: last_checked: 2021-08-07
 #: check_frequency: 720d
 #: next_check: 2024-06-01
@@ -4557,10 +4565,10 @@ Pistoriusstr./Heinersdorfer Str.: Zebrastreifen geplant	?::projected 12228,16862
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1097928.php (im Zuge der Bauarbeiten für die Fahrradstraße Stargarder Str.)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2021-10-12
-#: check_frequency: 90d
-#: next_check: 2021-11-30
-Dunckerstr./Stargarder Str.: Zebrastreifen geplant, evtl. jetzt in der Dunckerstr.?	?::projected 11629,15467 11595,15460 11556,15446
+#: last_checked: 2021-11-29
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2021-11-30
+Dunckerstr./Stargarder Str.: Zebrastreifen in Bau, nördliche der Kreuzung in der Dunckerstr.	?::inwork 11629,15467 11595,15460 11581,15493
 # 
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
@@ -4821,8 +4829,9 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://abendblatt-berlin.de/2021/06/29/stargarder-strasse-wird-fahrradstrasse/
 #: by: https://api.fixmyberlin.de/api/projects/184
 #: osm_watch: way id="11114397" version="30"
-#: last_checked: 2021-10-12
-#: check_frequency: 60d
+#: XXX Masten sind schon vorbereitet
+#: last_checked: 2021-11-29
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-11-30
 Stargarder Str.: hier wird eine Fahrradstraße eingerichtet	?::projected 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
@@ -4842,12 +4851,12 @@ Bizetstr.: entsteht hier eine Fahrradstraße?	? 13409,15687 13456,15760 13524,157
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (abschnittsweise Umsetzung 2021 und 2022/2023)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908&date=20210720 (Dunckerstr. südlich Wichertstr.: Umsetzung 2022)
 #: XXX laut Tsp "später auch südlich bis zur Danziger und nördlich bis zur Wisbyer/Ostseestraße"
-#: last_checked: 2021-11-10
+#: last_checked: 2021-11-29
 #: check_frequency: 120d
 Dunckerstr.: entsteht hier eine Fahrradstraße?	? 11595,15460 11632,15530 11654,15572 11689,15639 11736,15727 11777,15808 11833,15912 11899,16037 11926,16088 12012,16250
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908&date=20210720 (Umsetzung 2022)
-#: last_checked: 2021-10-12
+#: last_checked: 2021-11-29
 #: check_frequency: 120d
 Senefelderstr: entsteht hier eine Fahrradstraße?	? 11535,14900 11582,15021 11595,15058 11609,15114 11631,15192 11651,15273 11682,15397
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-12-06-19.pdf
@@ -4860,7 +4869,7 @@ Senefelderstr: entsteht hier eine Fahrradstraße?	? 11535,14900 11582,15021 11595
 Gleimstr.: entsteht hier eine Fahrradstraße?	? 10953,15787 10713,15753 10564,15728 10426,15705 10418,15704 10170,15659 10130,15653
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021/2022)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908&date=20210720 (Umsetzung 2022/2023)
-#: last_checked: 2021-10-31
+#: last_checked: 2021-11-29
 #: check_frequency: 360d
 Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,14235 11229,14422 11285,14515 11317,14564 11436,14741 11535,14900
 # REMOVED --- #: next_check ^^^
@@ -4882,7 +4891,7 @@ Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,
 #: XXX ^^^
 # 
 #: by: http://www.infravelo.de/projekt/oderberger-strasse/ (4. Quartal 2021 - 2. Quartal 2022)
-#: last_checked: 2021-09-24
+#: last_checked: 2021-11-29
 #: next_check: 2022-06-30
 Oderberger Str.: Planung einer Fahrradstraße	?::projected 10366,14992 10379,14963 10401,14963 10723,14772 10864,14692 10893,14705
 # 
@@ -4895,7 +4904,7 @@ Oderberger Str.: Planung einer Fahrradstraße	?::projected 10366,14992 10379,1496
 #: by: http://www.infravelo.de/projekt/schoenhauser-allee/ (3. - 4. Quartal 2022)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1128430.php (Planungen gestartet, fertig im Herbst 2022)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/planungen-fuer-die-schoenhauser-allee-haben-begonnen_a323363
-#: last_checked: 2021-09-24
+#: last_checked: 2021-11-29
 #: check_frequency: 180d
 #: next_check: 2022-11-15
 Schönhauser Allee: Radwege sollen zu einer protected bike lane umgewandelt werden	?::projected 10881,15047 10883,15129 10886,15251 10887,15287 10902,15422 10917,15525 10941,15697 10953,15787
@@ -6047,13 +6056,7 @@ Gendarmenmarkt: Sanierung geplant (werden dabei Bereiche gesperrt?)	?::projected
 # 
 # REMOVED (eigentlich für Lieferfahrzeuge gedacht, Gefälle/Steigung, lohnt sich nicht) --- Zufahrt Forum: mögliche Abkürzung eintragen, Qualität? Gibt es weitere Einschränkungen?	? 22280,6128 22431,6068
 # REMOVED --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf (umgesetzt) --- Holländerstr., Hst. "Brienzer Str." -> Markstr.: ist die Busspur für Radfahrer frei? Geltungszeiten?	?; 7292,17316 7381,17317 7602,17399
-# 
-#: next_check_id: S-SCHICHAUWEG-2021
-#: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
-#: osm_watch: way id="114381366" version="13"
-#: last_checked: 2021-10-03
-# REMOVED --- #: next_check: 2021-06-01
-Unterführung am Schichauweg: bleibt die Unterführung während der Bauarbeiten offen?	? 9562,-619 9699,-600
+# REMOVED (-> temp blockings) --- #: next_check_id: S-SCHICHAUWEG-2021 --- #: osm_watch: way id="114381366" version="13" --- #: last_checked: 2021-10-03 --- # REMOVED --- #: next_check: 2021-06-01 --- Unterführung am Schichauweg: bleibt die Unterführung während der Bauarbeiten offen?	? 9562,-619 9699,-600
 # 
 #: by: https://dresdner-bahn.de/2019/05/ (Bahnübergang bleibt bis 2023)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA2_Lichtenrade_Schichauweg-Stadtgrenze/20210716/
@@ -7399,6 +7402,7 @@ Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,179
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6860 (Antrag: Schienen-TVO)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6981
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/z18ZZXy3J2ZHtmAHncHKlckhWz5jf80zxBKviUyW/TtJeNpYA/50-Anlagen/03/B1463SB.pdf
+#: by: https://berliner-abendblatt.de/2021/11/29/117918/ (Erwähnung)
 #: by: osm
 #: osm_watch: way id="154505652" version="14"
 #: XXX wird es bereits durch den Bau Beeinträchtigungen geben?
@@ -7602,6 +7606,7 @@ Planstraße D: geplante neue Straße, geplanter Name "Brigitte-Reimann-Str."	?::pr
 #: by: https://abendblatt-berlin.de/2020/08/16/berliner-norden-neue-forderungen-zur-bundesstrasse-158/
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/buergerinitiativen-fordern-abbruch-des-planungfeststellungsverfahren_a285964
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/weitere-abstimmungen-zur-ortsumfahrung-ahrensfelde_a317685
+#: by: https://berliner-abendblatt.de/2021/11/29/117918/ (Erwähnung)
 #: XXX außerdem Umgestaltung diverser Kreuzungsbereiche (Märkische Allee, Eiche - Ahrensfelde ...), Bau einiger Radwege
 #: last_checked: 2020-12-05
 #: check_frequency: 720d
