@@ -1489,9 +1489,9 @@ EOF
 		    push @coords, [$Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($2, $1))];
 		}
 
-		if ($s =~ m{^file://(.*\.jpe?g)$}i) {
+		if ($s =~ m{^file://(.*\.(?:jpe?g|tiff?))$}i) {
 		    my $file = $1;
-		    if (eval { require Image::ExifTool; 1}) {
+		    if (-r $file && eval { require Image::ExifTool; 1}) {
 			my $exiftool = Image::ExifTool->new;
 			$exiftool->Options(CoordFormat => '%+.6f');
 			my $info = $exiftool->ImageInfo($file);
