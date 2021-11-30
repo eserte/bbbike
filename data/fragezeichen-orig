@@ -1550,7 +1550,7 @@ Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::project
 #: by: https://api.fixmyberlin.de/api/plannings/56 (Fertigstellung für 2019 geplant)
 #: by: https://www.infravelo.de/projekt/residenzstrasse-und-schwedenstrasse/ (1. Quartal 2023 - 4. Quartal 2023; Radfahrstreifen)
 #: osm_watch: way id="352683182" version="10"
-#: osm_watch: way id="501402607" version="4"
+#: osm_watch: way id="501402607" version="7"
 #: last_checked: 2021-07-31
 #: check_frequency: 180d
 #: next_check: 2023-12-31
@@ -1831,6 +1831,7 @@ Roedernallee: Sanierung des Radweges	?::projected 6392,19142 6267,19388 6238,194
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1118293.php
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/anfang-september-erhaelt-die-schulzendorfer-strasse-einen-breiten-radfahrstreifen_a319988
 #: note: urspründlicher Fertigstellungstermin (siehe BVV-Drucksache): 2019
+#: add_fragezeichen: Wurde die Asphaltierung der Straße abgeschlossen?
 #: osm_watch: way id="518889334" version="5"
 #: last_checked: 2021-10-31
 # REMOVED --- #: check_frequency: 240d
@@ -3952,6 +3953,7 @@ Alt-Treptow, vor der Sternwarte: Planung einer Überquerungshilfe, evtl. eine Amp
 #: by: https://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/nachhaltige-erneuerung/Einsteinpark-mit-Spielplatz.8299.0.html
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/arbeiten-im-einsteinpark-haben-begonnen_a282556
 #: by: https://abendblatt-berlin.de/2020/08/07/berlin-pankow-baumassnahmen-am-ensteinpark-haben-begonnen/
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1151985.php (Erwähnung)
 #: XXX wird nach den Bauarbeiten das Radfahren hier legal sein? (handicap-Eintrag!) Außerdem wird wohl eine Beleuchtung entstehen (nolighting-Eintrag!)
 #: last_checked: 2021-10-08 (Hauptweg noch befahrbar, Nebenwege sind eingezäunt)
 #: check_frequency: 90d
@@ -5059,9 +5061,9 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erwähnung, bis 3. Quartal 2021)
 #: XXX während der Bauarbeiten Einbahnstraßenregelung --- was wird das für den Radverkehr bedeuten? -> siehe temp blockings
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2021-11-27
+#: last_checked: 2021-11-30
 #: check_frequency: 90d
-#: next_check: 2021-12-16
+#: next_check: 2022-04-29
 Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,10738
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8958 (Antrag auf Tempo 30)
@@ -5075,7 +5077,7 @@ Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,1073
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023)
 #: source_id: viz2021:13.475017,52.501547,29.04.2021,08:00 (Bauarbeiten bis 29.04.2022)
 #: source_id: viz2021:13.475184,52.501511,29.11.2021,08:00 (Bauarbeiten bis 29.04.2022)
-#: last_checked: 2021-11-27
+#: last_checked: 2021-11-30
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
@@ -7003,7 +7005,7 @@ Bebauungsplan 3-59: geplante Straßen und Wege	?::projected 12512,21482 12783,214
 #: XXX Benennung zu "Metropolitan Park" --- welche der neuen Straßen bekommt diesen Namen?
 #: last_checked: 2021-10-20 vvv
 #: check_frequency: 360d vvv
-#: osm_watch: way id="328465413" version="8"
+#: osm_watch: way id="328465413" version="9"
 # REMOVED (-> strassen-orig) --- Privatstraße A und Planstraße A: Namen, Qualität? Was passiert mit dem Fuß/Radweg am Brunsbütteler Damm?	? -8064,13534 -8088,13594 -7984,13649 -7926,13709 -7893,13781 -7894,13878 -7928,13967 -8019,14036 -8095,14056 -8183,14041
 Planstraße A: Namen, Qualität? Was passiert mit dem Fuß/Radweg am Brunsbütteler Damm?	? -8150,14064 -8220,14038 -8243,14183
 # REMOVED (eingetragen) --- #: osm_watch: way id="725376312" version="4" --- #: XXX laut osm mittlerweile fertig, asphaltiert, aber kein Straßenname --- Privatstraße B: Name, Qualität?	? -7893,13781 -7720,13839

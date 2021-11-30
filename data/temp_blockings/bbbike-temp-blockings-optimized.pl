@@ -4640,9 +4640,9 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nˆldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nˆldnerstr. (Fahrbahn ist aufgerissen), evtl. auch f¸r Fuﬂg‰nger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man kˆnnte sein Rad r¸bertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-11-27
+#: last_checked: 2021-11-30
 #: check_frequency: 30d
-#: next_check: 2021-12-15
+#: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="4"
 	q3::inwork 15279,10862 15355,10875
@@ -4652,9 +4652,9 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1625734800,
          'id' => 3411,
          'source_id' => 'viz2021:13.475242,52.50154,09.07.2021,11:00',
-         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und T¸rrschmidtstr. Radfahrer m¸ssen absteigen und schieben, auﬂerdem ist die Anbindung T¸rrschmidtstr. gesperrt (nur Fahrbahn, B¸rgersteig ist frei), sowie die Anbindung Nˆldnerstr. (komplett, auch f¸r Fuﬂg‰nger), vom 09.07.2021 11:00 bis 15.12.2021 17:00 ',
+         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und T¸rrschmidtstr. Radfahrer m¸ssen absteigen und schieben, auﬂerdem ist die Anbindung T¸rrschmidtstr. gesperrt (nur Fahrbahn, B¸rgersteig ist frei), sowie die Anbindung Nˆldnerstr. (komplett, auch f¸r Fuﬂg‰nger), vom 09.07.2021 11:00 bis 29.04.2022 17:00',
          'type' => 'gesperrt',
-         'until' => 1639584000
+         'until' => 1651244400
        },
        undef,
        undef,
@@ -4714,27 +4714,12 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1627164000,
          'id' => 3422,
          'source_id' => 'viz2021:13.326349,52.447526,26.07.2021,07:00',
-         'text' => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 30.11.2021 17:00',
+         'text' => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 31.01.2022 17:00',
          'type' => 'handicap',
-         'until' => 1638288000
+         'until' => 1643644800
        },
        undef,
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
-#: note: nordˆstlicher B¸rgersteig ist wenig frequentiert; Bordsteine m¸ssen ¸berwunden werden, wenn man zu sp‰t von der Fahrbahn herunterf‰hrt; mittlerweile d¸rfen Radfahrer offziell ¸ber den Gehweg fahren
-#: also_indoor: traffic (G,H)
-#: last_checked: 2021-11-29
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2021-11-30
-	q3::inwork 13057,14267 13158,14117
-',
-         'from' => 1627164000,
-         'id' => 3424,
-         'source_id' => 'viz2021:13.444,52.53356,26.07.2021,08:18',
-         'text' => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg f¸r Radfahrer frei, vom 26.07.2021 bis voraussichtlich Ende November 2021',
-         'type' => 'handicap',
-         'until' => 1638291600
-       },
+       undef,
        undef,
        {
          'data' => '#: note: laut rbb nur bis 5.10.2021 (erste Phase?)
@@ -4843,7 +4828,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED (eins reicht) --- #: osm_watch: note 2867467 2
 #: osm_watch: way id="16311543" version="18"
 #: also_indoor: search Ernst-Heilmann-Steg
-#: last_checked: 2021-10-26 (osm)
+#: last_checked: 2021-11-24 (mapillary)
 #: check_frequency: 120d
 	2::inwork 13270,10030 13306,10006
 ',

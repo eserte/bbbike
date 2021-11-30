@@ -3315,10 +3315,15 @@ Schranke	BNP:3::trailer=10 17837,12277
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: TEGELERBRUECKE-2021
+#: next_check: 2023-12-01
+Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,16043 -226,16086
+# 
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: by: https://ausschreibungen-deutschland.de/816165_Spreepark_Berlin_Erschliessung_Ost__Pionierweg_C1_2021_Berlin (u.a.: "Beleuchtung" (zurzeit nolighting), ~6 Monate)
 #: by: https://www.spreepark.berlin/konzept-und-grundlagen/news/detail/weitere-baumassnahmen-im-und-am-spreepark/ (Ausbesserung, Verringerung der Breite von 7 auf 4m, voraussichtlich bis Mai 2022)
+#: by: https://www.berliner-woche.de/plaenterwald/c-bauen/der-pionierweg-wird-erneuert-und-erhaelt-eine-neue-beleuchtung-korrosionsschutz-fuer-mero-halle_a327800
 #: XXX Wird der Weg nach den Bauarbeiten beleuchtet sein?
 #: last_checked: 2021-11-26
 #: check_frequency: 90d
@@ -4300,7 +4305,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: source_id: 2147346461 (bis 31.12.2021)
 #: source_id: 2147346643 (bis 31.12.2021)
 #: osm_watch: way id="194653032" version="23"
-#: osm_watch: way id="846595294" version="3"
+#: osm_watch: way id="846595294" version="6"
 #: osm_watch: way id="38725490" version="15"
 #: also_indoor: traffic (G)
 #: last_checked: 2021-10-07 (mapillary)

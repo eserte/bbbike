@@ -229,14 +229,18 @@ Gartenfelder Brücke	Br -302,15602 -302,15546
 #: XXX erstmal wird eine Behelfsbrücke erstellt (westlich); die neue Brücke wird Platz für eine Radwegunterführung haben
 #: source_id: 2147345790 (nicht mehr aktiv)
 #: source_id: 2147346453 (Leitungsbauarbeiten, bis 16.10.2020)
-#: osm_watch: way id="4568174" version="25"
-#: osm_watch: way id="883834105" version="9"
-#: osm_watch: way id="883834106" version="10"
-#: osm_watch: way id="883834107" version="8"
-#: last_checked: 2021-11-25 (osm)
-#: check_frequency: 180d
-#: next_check: 2023-12-01
+#: last_checked: 2021-11-29 (osm) vvv
+#: check_frequency: 360d vvv
+#: next_check: 2023-12-01 vvv
+#: osm_watch: way id="4568174" version="27"
 Tegeler Brücke	Br -242,15982 -236,16043 -226,16086
+#: osm_watch: way id="883834105" version="15"
+#: osm_watch: way id="883834106" version="18"
+#: osm_watch: way id="883834107" version="13"
+provisorische Tegeler Brücke	Br -255,15993 -239,16077
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 Spandauer-See-Brücke	Br -2209,16501 -1928,16423
 Wasserstadtbrücke	Br -2149,16921 -1832,16858

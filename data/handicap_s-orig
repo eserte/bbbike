@@ -147,7 +147,7 @@ Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 ### Treptow ###
 # 
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
-#: last_checked: 2021-10-05
+#: last_checked: 2021-11-25 (mapillary)
 #: check_frequency: 60d
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 # 
@@ -722,8 +722,8 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12
 #: osm_watch: way id="1002249853" version="1"
 #: osm_watch: way id="198589916" version="8"
 #: osm_watch: way id="198589913" version="6"
-#: last_checked: 2021-11-21 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2021-11-30 vvv
+#: check_frequency: 10d vvv
 Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q2::inwork; 15932,10830 15681,10801
 # REMOVED --- Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851
 #: check_frequency ^^^
@@ -3270,8 +3270,8 @@ Steinrückweg: möglicher Bordstein	q1 4257,6856 4293,6719
 Gedonstr.: Bordsteine, parkende Autos, Fußgänger	q4 7915,17557 7916,17576 7917,17588
 Alexanderufer - Charité: durch das Tor schieben	q4 8371,13399 8363,13402 8356,13404
 Nöldnerplatz [Lückstr. - Nöldnerstr.]: einige Fußgänger	q1 15903,10906 15932,10830
-#: note: theoretisch wäre q2 oder q1 möglich
-Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger, Radfahren nicht erlaubt	q4+ 15932,10830 15970,10755
+#: note: am nördlichen Ende Schild Fußgänger, Radfahrer frei
+Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger	q1 15932,10830 15970,10755
 (Weg im Grünzug): einige Fußgänger	q1- 17391,9746 17316,9797 17257,9869 17161,9921 17005,9953 16963,9960
 #: note: hier etwas breiterer Weg
 (Weg im Grünzug): einige Fußgänger	q1 16963,9960 16886,9982 16841,9997

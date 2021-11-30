@@ -115,12 +115,12 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,688517#msg-688517
 #: confirmed_by: srt
 #: source_id: 2147346700 (bis 30.11.2021)
-#: source_id: viz2021:13.479483,52.501885,16.12.2020,09:00 (bis 30.11.2021)
+#: source_id: viz2021:13.479483,52.501885,16.12.2020,09:00 (bis 30.11.2021) (mittlerweile bis 31.03.2022)
 #: also_indoor: traffic
-#: last_checked: 2021-11-21
+#: last_checked: 2021-11-30
 #: check_frequency: 45d
-#: next_check: 2021-11-30
-# REMOVED --- #: valid: -20211130
+#: next_check: 2022-03-31
+#: valid: -20220331
 Nöldnerstr.: Gegenverkehrsregelung	X::inwork 15433,10765
 # 
 # REMOVED --- #: XXX längerer Abschnitt, etwa 200m, eigentlich müssen Radfahrer in beiden Richtungen den Gehweg benutzen --- #: last_checked: 2021-08-03 --- #: check_frequency: 14d --- Nöldnerstr.: Gegenverkehrsregelung	X::inwork 15932,10830
@@ -154,8 +154,8 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 #: next_check_id: KARLSHORSTER-2021
 #: note: provisorische Ampel
 #: last_checked: 2021-11-27
-#: next_check: 2021-12-16
-#: valid: 20210302-20211216
+#: next_check: 2022-04-29
+#: valid: 20210302-20220429
 	X::inwork 14805,10518
 # 
 #: temporary ^^^
@@ -3228,7 +3228,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: TEGELERBRUECKE-2021
 #: note: Anforderungsampel
 #: XXX wird diese Ampel jemals wieder in Betrieb genommen?
-#: osm_watch: node id="28321258" version="8"
+#: osm_watch: node id="28321258" version="9"
 #: last_checked: 2021-10-25 (daf)
 #: check_frequency: 180d
 #: next_check: 2023-12-01

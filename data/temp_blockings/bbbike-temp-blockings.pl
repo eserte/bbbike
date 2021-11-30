@@ -17350,7 +17350,7 @@ EOF
        until => $isodate2epoch->("2019-12-15 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12, start => "2021-01-01T00:00:00"]], # findet 2020 vermutlich nicht statt
-       recurrence_prewarn_days => 7,
+       recurrence_prewarn_days => 1,
        text  => 'Alt-Köpenicker Weihnachtsmarkt vom 13.12.2019 bis zum 15.12.2019',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
@@ -33207,8 +33207,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-07-08 11:00:00"),
-       until => $isodate2epoch->("2021-12-15 17:00:00"),
-       text  => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), sowie die Anbindung Nöldnerstr. (komplett, auch für Fußgänger), vom 09.07.2021 11:00 bis 15.12.2021 17:00 ',
+       until => $isodate2epoch->("2022-04-29 17:00:00"), # undef, # Termin kann wohl nicht gehalten werden --- $isodate2epoch->("2021-12-15 17:00:00"),
+       text  => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), sowie die Anbindung Nöldnerstr. (komplett, auch für Fußgänger), vom 09.07.2021 11:00 bis 29.04.2022 17:00',
        type  => 'gesperrt',
        source_id => 'viz2021:13.475242,52.50154,09.07.2021,11:00',
        data  => <<EOF,
@@ -33217,9 +33217,9 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-11-27
+#: last_checked: 2021-11-30
 #: check_frequency: 30d
-#: next_check: 2021-12-15
+#: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="4"
 	q3::inwork 15279,10862 15355,10875
@@ -33334,8 +33334,8 @@ EOF
 EOF
      },
      { from  => 1627164000, # 2021-07-25 00:00
-       until => $isodate2epoch->("2021-11-30 17:00:00"),
-       text  => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 30.11.2021 17:00',
+       until => $isodate2epoch->("2022-01-31 17:00:00"),
+       text  => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 31.01.2022 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.326349,52.447526,26.07.2021,07:00',
        data  => <<EOF,
@@ -33630,7 +33630,7 @@ EOF
 # REMOVED (eins reicht) --- #: osm_watch: note 2867467 2
 #: osm_watch: way id="16311543" version="18"
 #: also_indoor: search Ernst-Heilmann-Steg
-#: last_checked: 2021-10-26 (osm)
+#: last_checked: 2021-11-24 (mapillary)
 #: check_frequency: 120d
 	2::inwork 13270,10030 13306,10006
 EOF
