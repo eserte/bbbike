@@ -198,7 +198,11 @@ sub run_checks {
 		$die_text = "until date mismatch: $until_text vs. $until_field and $until_and_one_day_field in " . Dumper($o);
 	    }
 	    if ($die_text) {
-		die $die_text . "Please set 'dont_check_date=>1' to ignore this failure\n";
+		die $die_text . <<EOF;
+Please set
+       dont_check_date => 1,
+to ignore this failure
+EOF
 	    }
 	}
 
