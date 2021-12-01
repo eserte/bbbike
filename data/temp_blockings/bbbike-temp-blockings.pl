@@ -33354,8 +33354,8 @@ EOF
 EOF
      },
      { from  => 1627164000, # 2021-07-25 00:00
-       until => $isodate2epoch->("2021-11-30 18:00:00"), # undef, # XXX
-       text  => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich Ende November 2021',
+       until => $isodate2epoch->("2021-12-20 18:00:00"), # undef, # XXX
+       text  => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich 20.12.2021',
        type  => 'handicap',
        source_id => 'viz2021:13.444,52.53356,26.07.2021,08:18',
        data  => <<EOF,
@@ -33363,8 +33363,8 @@ EOF
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
 #: also_indoor: traffic (G,H)
 #: last_checked: 2021-11-29
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2021-11-30
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2021-12-20
 	q3::inwork 13057,14267 13158,14117
 EOF
      },
@@ -34042,6 +34042,18 @@ EOF
 #: osm_watch: way id="114381366" version="13"
 #: add_fragezeichen: Ist die Unterführung tatsächlich gesperrt?
 	2::inwork 9699,-600 9562,-619
+EOF
+     },
+     { from  => 1638385908, # 2021-12-01 20:11
+       until => 1638471600, # 2021-12-02 20:00
+       text  => 'Havelchaussee und Kronprinzessinenweg: Forstarbeiten, Sperrungen für Radfahrer möglich, am 2.12.2021 von 7 Uhr bis 20 Uhr',
+       type  => 'handicap',
+       source_id => 'viz2021:13.191315,52.461666,02.12.2021,07:00',
+       data  => <<EOF,
+#: source_id: viz2021:13.233805,52.467757,02.12.2021,07:00
+#: by: https://viz.berlin.de/2021/12/verkehrsvorschau-02122021/
+	q4::inwork -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+	q4::inwork 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888 -2218,5133 -3296,3686
 EOF
      },
     );

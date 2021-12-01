@@ -2116,7 +2116,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -4719,7 +4719,22 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1643644800
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
+#: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
+#: also_indoor: traffic (G,H)
+#: last_checked: 2021-11-29
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2021-12-20
+	q3::inwork 13057,14267 13158,14117
+',
+         'from' => 1627164000,
+         'id' => 3424,
+         'source_id' => 'viz2021:13.444,52.53356,26.07.2021,08:18',
+         'text' => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich 20.12.2021',
+         'type' => 'handicap',
+         'until' => 1640019600
+       },
        undef,
        {
          'data' => '#: note: laut rbb nur bis 5.10.2021 (erste Phase?)
@@ -4808,17 +4823,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1437641256243453954/photo/2
-	1::inwork 6747,14436 6803,14459 6857,14488 6869,14494 6917,14504 6983,14508 7050,14501 7085,14482 7099,14461 7104,14432 7104,14403
-',
-         'from' => 1631646083,
-         'id' => 3445,
-         'source_id' => 'https://twitter.com/VIZ_Berlin/status/1437641256243453954',
-         'text' => 'Ellen-Epstein-Str.: Radweg in Richtung Perleberger Str. gesperrt, bis Ende November 2021',
-         'type' => 'gesperrt',
-         'until' => 1638313199
-       },
+       undef,
        undef,
        {
          'data' => '#: by: wosch
@@ -4982,27 +4987,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1639155600
        },
-       {
-         'data' => '	2::inwork 3419,1061 3481,946 3561,789 3642,727
-',
-         'from' => 1635634800,
-         'id' => 3471,
-         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1139513.php',
-         'text' => 'Ostpreußendamm - Teltowkanal durch die Kolonie Erbkaveln: Sperrung wegen Bauarbeiten, zeitweise ist die Durchfahrt für Radfahrer nicht möglich, vom 01. November 2021 bis voraussichtlich Ende November 2021',
-         'type' => 'gesperrt',
-         'until' => 1638313199
-       },
        undef,
-       {
-         'data' => '	q4::inwork 19743,1804 19669,1729 19653,1671 19636,1609 19599,1557
-',
-         'from' => 1636239600,
-         'id' => 3473,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1140276.php',
-         'text' => 'Alter Schönefelder Weg: Bauarbeiten, Sperrung der Fahrbahn, voraussichtlich vom 8. November 2021 bis 30. November 2021 ',
-         'type' => 'handicap',
-         'until' => 1638313199
-       },
+       undef,
+       undef,
        {
          'data' => '	2::inwork 20850,38827 21039,38033 21051,37792 21040,37527 21159,36785 20969,36076 21015,35757 21193,35322 21465,34816 22153,33963
 ',
@@ -5115,6 +5102,19 @@ Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
          'text' => 'S-Bhf. Schichauweg: Unterführung an der Nordseite möglicherweise wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: source_id: viz2021:13.233805,52.467757,02.12.2021,07:00
+#: by: https://viz.berlin.de/2021/12/verkehrsvorschau-02122021/
+	q4::inwork -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+	q4::inwork 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888 -2218,5133 -3296,3686
+',
+         'from' => 1638385908,
+         'id' => 3484,
+         'source_id' => 'viz2021:13.191315,52.461666,02.12.2021,07:00',
+         'text' => 'Havelchaussee und Kronprinzessinenweg: Forstarbeiten, Sperrungen für Radfahrer möglich, am 2.12.2021 von 7 Uhr bis 20 Uhr',
+         'type' => 'handicap',
+         'until' => 1638471600
        }
      
 );
