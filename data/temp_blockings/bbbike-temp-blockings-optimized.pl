@@ -4640,7 +4640,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-11-30
+#: last_checked: 2021-12-02
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -4736,19 +4736,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1640019600
        },
        undef,
-       {
-         'data' => '#: note: laut rbb nur bis 5.10.2021 (erste Phase?)
-#: source_id: viz2021:13.29552,52.61058,05.10.2021,19:48
-# REMOVED (hier mittlerweile frei, laut viz)	q4::inwork 2793,22640 2652,22615
-	q4::inwork 2652,22615 2556,22598
-',
-         'from' => 1630360800,
-         'id' => 3426,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1111853.php',
-         'text' => 'Schulzendorfer Str.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich vom 1.9.2021 bis 1.12.2021 ',
-         'type' => 'handicap',
-         'until' => 1638399600
-       },
+       undef,
        undef,
        undef,
        {

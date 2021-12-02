@@ -230,7 +230,7 @@ Corneliusstr.: m‰ﬂiges Kopfsteinpflaster	Q2 6880,11110 6841,11114 6630,11247 645
 Kopernikusstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13467,11778 13651,11731
 Torellstr.: m‰ﬂiges Kopfsteinpflaster	Q2 13295,11792 13467,11778
 R¸dersdorfer Str.: Asphalt	Q0 13295,11792 13173,11788 13161,11795 13066,11854
-Kaskelstr.: relative glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
+Kaskelstr.: relativ glattes Kopfsteinpflaster	Q1- 15359,11115 15434,11086 15509,11058 15586,11030 15756,10966
 Spittastr.: m‰ﬂiges Kopfsteinpflaster	Q2 15447,10883 15509,11058 15578,11241
 Geusenstr.: m‰ﬂiges Kopfsteinpflaster	Q2+ 15586,11030 15560,10946 15541,10892
 T¸rrschmidtstr.: glattes Kopfsteinpflaster	Q1- 15279,10862 15355,10875 15447,10883 15541,10892
@@ -261,7 +261,7 @@ Wallensteinstr.: Fahrbahn m‰ﬂiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Fahrbahninstandsetzung ab Herbst 2021, bis 2022)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2021-11-23
+#: last_checked: 2021-12-02
 # REMOVED --- #: next_check: 2021-10-01
 Wallensteinstr.: Asphalt mit einigen Sch‰den	Q1 18037,9195 18092,9141 18134,9080
 Dˆnhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
@@ -11578,7 +11578,7 @@ CourbiËrestr.: Verbundsteinpflaster	Q1 6725,10641 6685,10690
 Alte Kˆpenicker Allee: unbefestigte Straﬂe, holprig	Q2 20316,7637 20348,7634 20459,7445 20501,7472 20540,7532
 (Weg im Gr¸nzug): Asphalt	Q0 17391,9746 17316,9797 17257,9869
 (Weg im Gr¸nzug): unebener Asphalt	Q1- 17257,9869 17161,9921 17005,9953
-(Weg im Gr¸nzug): unbefestigt	Q2+ 17005,9953 16963,9960
+(Weg im Gr¸nzug): wassergebundene Decke	Q1- 17005,9953 16963,9960
 (Weg im Gr¸nzug): Asphalt	Q0 16963,9960 16886,9982 16841,9997
 (Dolgenseestr. - Weg im Gr¸nzug): unbefestigter Weg	Q2+ 17275,9892 17257,9869
 (zum Poststadion): Kleinsteinpflaster	Q1- 7452,13904 7417,13880 7445,13792 7431,13740 7343,13679 7338,13649
@@ -12321,6 +12321,7 @@ M¸ggelstr.: Mosaikpflaster	Q1 14994,12121 14994,12064
 Heidenfeldstr. [Stichstraﬂe]: Beton	Q1 13445,13376 13419,13435
 Mellenseestr. [Wohngebiet]: Beton, einige Hebungen	Q1+ 17633,9898 17633,9793 17587,9655
 Mellenseestr. [Wohngebiet]: Beton, einige Sch‰den	Q1+ 17738,9922 17738,9822 17777,9649
+Mellenseestr. [Wohngebiet]: Beton	Q0- 17838,9956 17868,9823 17920,9698
 Rhenser Str.: Mosaikpflaster	Q1- 19133,9087 19083,9062
 Bergmannstr.: Asphalt, einige leichte Sch‰den	Q0- 10123,9233 10547,9233
 S¸dstern: Asphalt, einige Querrillen	Q0- 10547,9233 10705,9234
@@ -13845,7 +13846,7 @@ Friederike-Nadig-Str.: Asphalt	Q0 17250,-175 17359,-345 17429,-453
 # 
 #: by: Torre:
 #: corrected_by: srt (Beton, Q0 -> )
-Mellenseestr.: Asphalt	Q0- 17527,9899 17633,9898 17738,9922 17841,9960 17958,10012
+Mellenseestr.: Asphalt	Q0- 17527,9899 17633,9898 17738,9922 17838,9956 17958,10012
 # 
 #: by: Benjamin Pauli:
 #: confirmed_by: srt
@@ -19168,15 +19169,15 @@ Malersteig: Asphalt	Q0 13606,3085 13596,3039 13561,2898 13510,2690 13487,2621 13
 #: by: https://abendblatt-berlin.de/2021/07/06/lichtenberg-sommerbaustellen-im-bezirk/
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 # REMOVED --- #: next_check: 2021-10-31
-#: XXX in diesem Abschnitt laufen gerade Asphaltierungsarbeiten
-#: last_checked: 2021-11-23
+#: XXX in diesem Abschnitt laufen gerade Asphaltierungsarbeiten --- allerdings wurden nur 30m asphaltiert, was passiert mit dem Rest?
+#: last_checked: 2021-12-02
 #: check_frequency: 7d
 Weseler Str.: m‰ﬂiger Asphalt	Q1- 18865,8740 18857,8790 18854,8831 18860,8886
 #: corrected_by: srt (m‰ﬂiger Asphalt, Q1- -> neu gemacht)
 Weseler Str.: Asphalt	Q0 18860,8886 18877,8973 18881,9002
 Weseler Str.: Asphalt	Q0 18881,9002 18886,9031
 #: XXX in diesem Abschnitt laufen gerade Asphaltierungsarbeiten
-#: last_checked: 2021-11-23
+#: last_checked: 2021-12-02
 #: check_frequency: 7d
 Weseler Str.: m‰ﬂiger Asphalt	Q1- 18886,9031 18900,9119
 #: corrected_by ^^^
