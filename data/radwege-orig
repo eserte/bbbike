@@ -205,7 +205,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2021-11-20 vvv
+#: last_checked: 2021-12-03 vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
 #: last_checked ^^^
@@ -433,7 +433,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
-#: last_checked: 2021-11-28 vvv
+#: last_checked: 2021-12-03 vvv
 #: check_frequency: 60d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -1129,7 +1129,7 @@ asphaltiert	RW1;RW1 6107,4718 6116,4707 6212,4622
 	RW1; 6168,6467 6248,6388 6343,6297 6494,6128
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6494,6128 6629,5946 6696,5854
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-10 Uhr	RW1; 6696,5854 6629,5946 6494,6128 6343,6297 6248,6388 6168,6467
-	RW0;RW2 8328,10831 8358,10782 8371,10769 8430,10710
+	RW2; 8430,10710 8371,10769 8358,10782 8328,10831
 	RW1;RW9 8571,11846 8489,11782 8456,11763 8322,11715 8203,11686
 	RW1; 8203,11686 8172,11679
 hier steht ein Radwegschild, wird aber nicht wiederholt, aber die Fahrbahnmarkierungen für Radfahrer zeigen keine Verschwenkung an	RW8; 8172,11679 8203,11686
@@ -3063,6 +3063,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.1020785.php (Sperrung der Müggelspree)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1024022.php (Abriss der alten Brücke)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27501.pdf (Brückenbauarbeiten bis 2022)
+#: by: https://www.berliner-woche.de/koepenick/c-bauen/die-salvador-allende-bruecke-wird-erst-im-spaetsommer-2022-fertig-sein_a329342
 #: XXX 1. Verkehrsführung Bauabschnitt 1: östlicher Gehweg gesperrt, bis ca. Mitte November 2017
 #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
@@ -3075,7 +3076,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
 #: last_checked: 2021-10-24 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2022-02-28 vvv
+#: next_check: 2022-08-28 vvv
 #: priority: #A vvv
 	RW8; 23451,4877 23444,4942 23433,5037 23420,5159 23404,5325
 #: by: https://www.bahninfo-forum.de/read.php?9,622793,671456#msg-671456
@@ -6974,7 +6975,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: osm_watch: way id="4401920" version="52"
 #: XXX wird mittlerweile verstetigt
 #: confirmed_by: srt
-#: last_checked: 2021-11-27 (webcam) vvv
+#: last_checked: 2021-12-03 (webcam) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2021-07-23 vvv
 provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8995,10370
@@ -7063,7 +7064,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
 #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
 #: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021)
-#: last_checked: 2021-11-20 vvv
+#: last_checked: 2021-12-03 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -7096,13 +7097,16 @@ Radspur hinter den parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720 11710,
 #: osm_watch: way id="34057952" version="42"
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-06-23 vvv
-#: last_checked: 2021-10-29
-provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710
+#: last_checked: 2021-12-03 vvv
+provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769
+Bushaltestelle	RW5; 8371,10769 8430,10710
+#: last_checked ^^^
 #: osm_watch: way id="26472938" version="30"
 #: note: keine Baken an den beiden Bushaltestellen
-#: last_checked: 2021-11-28
+#: last_checked: 2021-11-28 vvv
 Bushaltestelle	RW5; 9416,10196 9472,10182
 provisorisch geschützter Radstreifen	RW4; 9472,10182 9599,10175 9687,10180 9825,10206 9865,10227
+#: last_checked ^^^
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 # 
@@ -7162,9 +7166,9 @@ Tempo 10	RW6;RW6 17308,9090 17300,9135
 	RW7;RW7 11944,11152 11986,11118 11961,11041 11899,10886 11839,10736 11824,10708 11781,10696
 	RW7;RW7 11772,10764 11760,10732 11781,10696 11763,10635 11734,10563
 geschützer Radstreifen	RW4; 11734,10563 11721,10530
-	RW7; 11721,10530 11734,10563
+	RW3; 11721,10530 11734,10563
 geschützer Radstreifen	RW4; 11708,10497 11721,10530
-	RW7; 11721,10530 11708,10497
+	RW3; 11721,10530 11708,10497
 	RW7;RW7 11708,10497 11671,10402 11616,10288 11512,10105
 die letzten 10 Meter sind als benutzungspflichtige Radspur geführt	RW7; 11089,9751 11072,9711 11042,9642 11023,9597
 	RW7;RW7 11023,9597 11004,9554 10905,9472 10749,9342

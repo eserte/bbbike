@@ -32650,17 +32650,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1638545089, # undef, # XXX
        text  => 'Kulmer Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, vermutlich bis Dezember 2021',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX laut Baustellenschild der Wasserbetriebe bis Dezember 2021
-#: XXX mittlerweile wurde der Bereich verkleinert, der südliche Bereich ist offen
-#: also_indoor: traffic
-#: priority: #A
-#: last_checked: 2021-10-20
-#: check_frequency: 90d
-#: next_check: 2021-12-01
+# REMOVED (beendet) --- #: XXX laut Baustellenschild der Wasserbetriebe bis Dezember 2021 --- #: XXX mittlerweile wurde der Bereich verkleinert, der südliche Bereich ist offen --- #: also_indoor: traffic --- #: priority: #A --- #: last_checked: 2021-10-20 --- #: check_frequency: 90d --- #: next_check: 2021-12-01
 	q3::inwork; 7771,9479 7829,9723
 EOF
      },

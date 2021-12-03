@@ -498,11 +498,7 @@ Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::i
 # 
 ### Kreuzberg ###
 # 
-#: note: kann außerhalb der Arbeitszeiten geöffnet sein (gesehen: 2021-10-19 gegen 19:00, 2021-11-09 gegen 18:10)
-#: last_checked: 2021-11-20
-#: check_frequency: 14d
-Böckhstr.: einige Meter der Fahrbahn gesperrt	q3::inwork 11411,9810 11197,9894
-# 
+# REMOVED (beendet) --- #: note: kann außerhalb der Arbeitszeiten geöffnet sein (gesehen: 2021-10-19 gegen 19:00, 2021-11-09 gegen 18:10) --- #: last_checked: 2021-11-20 --- #: check_frequency: 14d --- Böckhstr.: einige Meter der Fahrbahn gesperrt	q3::inwork 11411,9810 11197,9894
 # REMOVED (offen) --- #: next_check_id: FRIESEN-2018 --- #: source_id: 2147342598 --- #: source_id: 2147344059 --- #: source_id: 2147344058 --- #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, bei VMZ bis Juli 2019, laut fritz bis 31.08.2019 --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44021 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.832802.php (Ende der Bauarbeiten KW 31/2019) --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/ende-der-bauarbeiten_a225376 (ab Anfang August 2019 passierbar) --- #: also_indoor: traffic vvv --- #: last_checked: 2019-07-30 vvv --- #: next_check: 2019-07-31 vvv --- #: valid: -20190731 vvv --- #: priority: #A vvv
 # REMOVED (hier nicht mehr?) --- #: source_id: 2147344148 --- Friesenstr.: Einbahnstraße zwischen Fidicinstr. und Columbiadamm, offen Richtung Columbiadamm	q3::inwork; 9801,8683 9801,8889 9799,8962
 # REMOVED --- #: source_id: 2147344147 --- Friesenstr.: Fahrbahn zwichen Fidicinstr. und Bergmannstr. gesperrt	q4::inwork 9799,8962 9797,9063 9795,9162 9793,9241
@@ -788,8 +784,10 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 ### Schöneberg ###
 # 
 #: by: https://www.nbb-netzgesellschaft.de/ueber-die-nbb/presse/pressemitteilungen/reparatur-beeintraechtigt-verkehr-in-schoeneberg/
-#: last_checked: 2021-09-28
+#: XXX laut Schild bis Dezember 2021
+#: last_checked: 2021-12-03
 #: check_frequency: 60d
+#: next_check: 2021-12-31
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
 # 
 # REMOVED (-> temp blockings) --- #: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021) --- #: by: https://twitter.com/rbbabendschau/status/1392489796426162177 --- #: source_id: 2147347186 --- #: also_indoor: traffic (G) --- #: XXX wann werden die Fahrbahn und die Radwege wieder freigegeben? bei rbb "bis auf Weiteres" --- #: priority: #A --- #: last_checked: 2021-05-14 --- #: next_check: 2021-06-18 --- #: valid: -20210612 --- Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126
@@ -1305,6 +1303,7 @@ Zauritzweg: Fußgänger	q1 4182,11831 4194,11703
 #: note: früher "q2"
 (Blücherplatz - Zossener Str.): Fußgänger, Grünanlage	q4+ 9702,10129 9827,10051
 Hebbelstr.: Fußgänger	q2 3117,11852 3251,12025 3258,12035 3295,12068
+#: note: Schild "Fußgänger", außerdem Feuerwehrzufahrt, eigentliche eine service-ähnliche Straße
 Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: XXX_prog BS auf beiden Seiten, ansonsten q2 oder q2+ (GPS-Tracks anschauen)
 Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8561 8759,8458 8720,8373
@@ -1380,6 +1379,8 @@ Erich-Steinfurth-Str.: Fußgänger	q3 12645,11673 12596,11696
 Elbingeroder Weg: hohe Bordsteine	q4 13178,9062 13146,9085
 #: XXX_prog BS niedriger Bordstein auf der südlichen Seite, keiner an der Kurfüstenstr. (ansonsten q2)
 (An der Apostelkirche - Kurfürstenstr.): Fußgänger, Bordstein	q3 7312,10505 7315,10537
+#: note: eigentlich ausgeschildert als "getrennter ...", aber eine bauliche oder gezeichnete Trennung ist nicht zu erkennen
+Else-Lasker-Schüler-Str.: gemeinsamer Rad- und Gehweg	q1 7281,10510 7315,10537
 Marie-Elisabeth-Lüders-Steg: eng, Fußgänger	q2 8415,12749 8593,12742 8596,12760
 # REMOVED --- #: XXX_prog BS Bordstein höchstens auf der Westseite, auf der Ostseite abgesenkt, aber Gehweg ist ziemlich kurvig
 #: note: theoretisch q3 möglich

@@ -3273,36 +3273,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147341611
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf (Großer Zapfenstreich 2021)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Aufhebung der letzten Einschränkung)
-#: by: https://www.bmvg.de/de/presse/grosser-zapfenstreich-zur-wuerdigung-einsatz-afghanistan-5181746 (Verschiebung, noch kein neuer Termin)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf (Großer Zapfenstreich 2021, neuer Termin)
-#: by: https://viz.berlin.de/2021/10/verkehrsvorschau-13102021/ (Erwähnung des Großes Zapfenstreichs)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Großer Zapfenstreich für Merkel)
-	2::temp 7435,11514 7322,11177
-	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
-	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
-	2::temp 7595,11086 7575,11076 7252,11188
-Lützowufer	2::temp 7089,11073 7248,11143 7461,11051 7579,11032
-Hiroshimastr.	2::temp 7253,11208 7356,11517
-Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7248,11143
-# REMOVED ---	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
-# REMOVED ---	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
-# REMOVED ---	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
-# REMOVED ---	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7218,11181 7140,11156
-# REMOVED ---	2::temp 7665,11353 7745,11332
-# REMOVED ---	2::temp 7745,11332 7690,11108
-',
-         'from' => 1638313200,
-         'id' => 2875,
-         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
-         'text' => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 2. Dezember 2021 von 16:00 bis 21:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1638475200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4467,22 +4438,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: XXX laut Baustellenschild der Wasserbetriebe bis Dezember 2021
-#: XXX mittlerweile wurde der Bereich verkleinert, der südliche Bereich ist offen
-#: also_indoor: traffic
-#: priority: #A
-#: last_checked: 2021-10-20
-#: check_frequency: 90d
-#: next_check: 2021-12-01
-	q3::inwork; 7771,9479 7829,9723
-',
-         'from' => undef,
-         'id' => 3364,
-         'text' => 'Kulmer Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, vermutlich bis Dezember 2021',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5090,19 +5046,6 @@ Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
          'text' => 'S-Bhf. Schichauweg: Unterführung an der Nordseite möglicherweise wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       {
-         'data' => '#: source_id: viz2021:13.233805,52.467757,02.12.2021,07:00
-#: by: https://viz.berlin.de/2021/12/verkehrsvorschau-02122021/
-	q4::inwork -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
-	q4::inwork 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888 -2218,5133 -3296,3686
-',
-         'from' => 1638385908,
-         'id' => 3484,
-         'source_id' => 'viz2021:13.191315,52.461666,02.12.2021,07:00',
-         'text' => 'Havelchaussee und Kronprinzessinenweg: Forstarbeiten, Sperrungen für Radfahrer möglich, am 2.12.2021 von 7 Uhr bis 20 Uhr',
-         'type' => 'handicap',
-         'until' => 1638471600
        }
      
 );
