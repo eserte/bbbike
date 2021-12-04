@@ -30474,7 +30474,7 @@ EOF
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-11-29
+#: last_checked: 2021-12-04
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 EOF
@@ -30843,7 +30843,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-11-20
+#: last_checked: 2021-12-04
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31058,8 +31058,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
-#: osm_watch: way id="934995899" version="3"
-#: osm_watch: way id="934995901" version="4"
+#: osm_watch: way id="934995899" version="4"
+#: osm_watch: way id="934995901" version="5"
 #: last_checked: 2021-11-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
@@ -32217,7 +32217,7 @@ EOF
 #: note: reopened, es gibt wieder Bauzäune
 #: osm_watch: way id="152832871" version="16"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-11-06
+#: last_checked: 2021-12-04
 #: check_frequency: 60d
 	q4::inwork 4674,12076 4698,12124
 # REMOVED (hier nicht mehr) ---	q3::inwork 4698,12124 4755,12236

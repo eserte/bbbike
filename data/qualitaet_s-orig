@@ -114,7 +114,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED (-> gesperrt-orig) --- #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
-#: osm_watch: way id="65707583" version="16"
+#: osm_watch: way id="65707583" version="17"
 #: last_checked: 2021-11-06
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
@@ -660,7 +660,7 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: http://www.infravelo.de/projekt/roennestrasse/ (1. Quartal 2022 - 1. Quartal 2024)
 #: osm_watch: way id="4480580" version="13"
 #: osm_watch: way id="4436949" version="11"
-#: last_checked: 2021-05-01
+#: last_checked: 2021-12-04
 #: check_frequency: 300d
 #: next_check: 2024-03-31
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
@@ -995,7 +995,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-11-29
+#: last_checked: 2021-12-04
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -12328,6 +12328,7 @@ Südstern: Asphalt, einige Querrillen	Q0- 10547,9233 10705,9234
 Lückstr.: Asphalt, einige Schäden	Q0-; 16153,10818 16300,10753 16313,10747 16468,10695
 (Greifswalder Str. - Ella-Kay-Str.): Verbundsteinpflaster	Q1 12174,14739 12128,14764
 (Greifswalder Str. - Ella-Kay-Str.): Beton	Q1+ 12128,14764 12050,14808
+Aschaffenburger Str. (Schöneberg, Wilmersdorf): Kleinsteinpflaster	Q1 5668,9590 5642,9613
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

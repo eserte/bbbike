@@ -204,7 +204,7 @@ Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork
 #: add_fragezeichen ^^^
 # 
 #: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2021-11-28 (daf)
+#: last_checked: 2021-12-04
 Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -219,9 +219,9 @@ Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 #: by: https://www.wbm.de/neubau-berlin/mitte/ifflandstrasse/ (Fertigstellung vsl. 01/2022)
 #: osm_watch: way id="822127127" version="2"
 #: osm_watch: way id="736448990" version="8"
-#: last_checked: 2021-10-17
-#: check_frequency: 90d
-#: next_check: 2022-01-01
+#: last_checked: 2021-12-04
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2022-01-01
 Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
 # 
 #: next_check_id: CHAUSSEE-2020
@@ -242,7 +242,7 @@ Ida-von-Arnim-Str.: Bauarbeiten an der Kreuzung Chausseestr., Fahrbahn gesperrt	
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2021-11-28 (daf) vvv
+#: last_checked: 2021-12-04 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423
@@ -275,7 +275,7 @@ Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-11-18
+#: last_checked: 2021-12-04
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -388,7 +388,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Fr¸hjahr 2021 abgebaut, bis Sommer 2021 wird die Straﬂenseite wiederhergestellt; Sperrung in der Universit‰tsstraﬂe womˆglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2021-11-28 (daf) vvv
+#: last_checked: 2021-12-04 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -1217,9 +1217,10 @@ Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12876,13440 12826,13526 128
 (Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3379,8969 3333,9026
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
 Leon-Jessel-Platz: Fuﬂg‰nger	q2 4700,9179 4735,9171 4755,9154
+#: note: mit Schild "Gehweg, Radfahrer frei"
 Nikolsburger Platz: Fuﬂg‰nger	q2 5374,9619 5291,9675
 #: note: hier kein Zeichen "Gehweg, Radfahrer frei"
-Nikolsburger Platz: Fuﬂg‰nger	q2 5291,9675 5297,9579
+Nikolsburger Platz: Fuﬂg‰nger	q3 5291,9675 5297,9579
 #: XXX_prog BS (an der Lewishamstr., ansonsten unbekannter qX-Wert)
 zur Sybelstr.: Bordsteine	q4 3712,10566 3738,10574
 #: XXX_prog BS (an der Lewishamstr., ansonsten unbekannter qX-Wert)

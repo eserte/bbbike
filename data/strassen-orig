@@ -1686,7 +1686,7 @@ Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7802,14250 7781,14238 7
 Lisa-Fittko-Str.	N 7734,13944 7820,13994
 George-Stephenson-Str.	N 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 7734,13944
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
-#: last_checked: 2021-11-18
+#: last_checked: 2021-12-04 (daf)
 #: check_frequency: 90d
 #: osm.highway: service
 Hans-Peters-Platz	N 7732,14131 7679,14030
@@ -3980,7 +3980,8 @@ Wundtstr.	N 2233,11049 2249,11082 2346,11147 2365,11179 2417,11254 2623,11385
 Wundtstr.	NN 2623,11385 2764,11500
 Wundtstr.	N 2764,11519 2793,11547 2888,11670 2910,11697 2934,11747 2956,11790 2953,11830
 Wundtstr.	N 2249,11082 2222,11104
-(Wundtstr. - Horstweg)	N 2910,11697 2869,11690
+#: note: durch Poller auf beiden Seiten abgesperrt
+(Wundtstr. - Horstweg)	NN 2910,11697 2869,11690
 Nehringstr.	N 2953,11830 2924,12047 2899,12200 2895,12217 2888,12292
 Kuno-Fischer-Str.	N 2621,11065 2679,10931 2766,10750
 Lietzenseeufer	N 2621,11065 2621,11190 2748,11206 2806,11241 2871,11211
@@ -5416,7 +5417,7 @@ An der Spreeschanze	N -2623,14396 -2600,14436 -2597,14532
 Lagerweg	N -1392,14527 -1404,14441 -1354,14424
 #: next_check_id: TEGELERBRUECKE-2021
 #: next_check: 2023-12-01
-(provisorische Tegeler Brücke)	H -261,15858 -265,15917 -255,15993 -239,16077 -226,16086
+(provisorische Tegeler Brücke)	H -261,15858 -265,15917 -255,15993 -239,16077 -203,16168
 Gartenfelder Str.	H -1336,14786 -1299,14797 -1258,14846 -1099,14925 -945,14999 -834,15053 -767,15082 -707,15108 -569,15167 -532,15184 -453,15219 -344,15200 -286,15354 -302,15546 -302,15602 -292,15715 -261,15858 -252,15903 -242,15982 -236,16043
 Schwerter Weg	N -692,15491 -676,15370
 Kanalstr. (Haselhorst)	N -736,15294 -593,15300
@@ -18143,7 +18144,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9160,12932
 #: XXX für den Autoverkehr mittlerweile gesperrt?
 #: XXX oder eventuell wird das eine Einbahnstraße, wenn die Bauarbeiten an der Pankebrücke beendet sind (Schilder hängen schon, obwohl es eine Sackgasse ist?!)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
-#: last_checked: 2021-09-24
+#: last_checked: 2021-12-04
 #: check_frequency: 90d
 (Straße vor dem Berliner Ensemble)	N 9212,12969 9160,12932
 Karlplatz	N 8711,12986 8676,12976
@@ -19669,7 +19670,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: 2147346962 (hier: Einschränkungen an der Gegenfahrbahn, bis 31.1.2025)
-#: last_checked: 2021-11-06
+#: last_checked: 2021-12-04
 #: check_frequency: 180d
 #: next_check: 2025-01-31
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913
