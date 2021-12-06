@@ -15,8 +15,8 @@
 # REMOVED (Radweg in Bau) --- #: note: gesehen: 2014-10-15 19:00 (Werktag, S/DB-Bahnstreik) --- #: note: gesehen: 2016-03-27 16:30 (Werktag, keine sonstigen Besonderheiten) --- #: XXX_indoor: oder gibt es auch in den Morgenstunden hier Staus? --- #: tempex: rush_hour_evening --- Möckernstr.	Jam; 8810,10305 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
 # 
 #: tempex: T06-T22 vvv
-Leipziger Str. Richtung Westen	Jam; 9569,11631 9444,11616 9268,11590 9058,11564
-Leipziger Str. Richtun Osten	Jam; 9268,11590 9444,11616 9569,11631
+Leipziger Str. (Richtung Westen)	Jam; 9569,11631 9444,11616 9268,11590 9058,11564
+Leipziger Str. (Richtung Osten)	Jam; 9268,11590 9444,11616 9569,11631
 #: tempex ^^^
 # REMOVED (Radspuren existieren) --- Leipziger Str. Richtung Westen	Jam; 9058,11564 8834,11536 8740,11524
 # REMOVED (Radspuren existieren) --- Leipziger Str. Richtung Osten	Jam; 8740,11524 8834,11536 9058,11564
@@ -43,10 +43,10 @@ Friedrichstr.	Jam; 9254,13171 9246,13235 9225,13389
 #: note: Stau eher morgens, meistens 150m vor der Ampel an der Stralauer Allee
 #: note: außerdem: Stau oft zwischen Simplonstr. und Revaler Str.
 #: tempex: rush_hour_morning
-Modersohnstr. Richtung Süden	Jam; 14011,10812 13919,10583
+Modersohnstr. (Richtung Süden)	Jam; 14011,10812 13919,10583
 # REMOVED (in letzter Zeit nicht mehr beobachtet) --- #: note: Stau eher abends --- #: tempex: rush_hour_evening --- Modersohnstr. Richtung Norden	Jam; 13919,10583 14011,10812
 # 
-Torstr. vor Schönhauser Tor	Jam; 10898,13632 10741,13685
+Torstr. (vor Schönhauser Tor)	Jam; 10898,13632 10741,13685
 # 
 # REMOVED (nicht mehr relevant seitdem es die Radspur gibt) --- Skalitzer Str. vor Kottbusser Tor	Jam; 11117,10326 11130,10326 11316,10372 11335,10375
 # REMOVED (nicht mehr relevant seitdem es die Radspur gibt) --- Gitschiner Str. vor Lindenstr.	Jam; 10122,10294 9948,10280 9873,10285
@@ -90,7 +90,7 @@ Baumschulenstr./Späthstr.	Jam; 15723,6151 15628,6009 15584,5946 15382,5687 15363
 # REMOVED (Radspur existiert) --- Treskowallee	Jam; 18731,8577 18733,8633 18733,8650 18737,8686
 # REMOVED --- Treskowallee	Jam; 18737,8686 18770,8898
 # REMOVED (nicht mehr gesehen) --- #: note: kein Stau 2020-08-05 morgens (siehe mapillary), auch kein Stau 2020-09-04 am späten Abend --- 
-#: last_checked: 2021-12-05 (indoor)
+#: last_checked: 2021-12-06 (indoor)
 #: check_frequency: 2d
 #: XXX siehe Verkehrsmeldungen und bahninfo-forum
 #: note: früher (2020) nur ab Heiligenberger Str. eingezeichnet, 2021-11 ab Lehndorffstr. (und manchmal fängt der Stau schon Liepnitzstr. oder sogar Trautenauer Str. an)
@@ -171,12 +171,19 @@ Alexanderstr.	Jam; 11139,13008 11226,12945
 #: note: gesehen 2017-09-25 morgens
 Lehrter Str.	Jam; 7630,13584 7655,13539 7660,13506 7653,13480 7647,13461 7651,13447 7759,13246
 # 
+#: next_check_id: FASANEN-2021
+#: XXX während der Fernwärmebaustelle kein Kfz-Durchgangsverkehr vvv
+#: next_check: 2022-03-05 vvv
+#: valid: 20220305- vvv
 #: note: gesehen 2018-04-10 abends vvv
-#: note: aber kein Problem a, 2018-04-30 (Di) gegen 19 Uhr
+#: note: aber kein Problem am 2018-04-30 (Di) gegen 19 Uhr
 Fasanenstr.	Jam; 5258,11285 5241,11060 5236,10994 5230,10919 5215,10711
 #: note: Einbahnstraße für Autos, unter Umständen nur eine enge Fahrgasse in der Gegenrichtung vorhanden
 Fasanenstr.	Jam; 5215,10711 5230,10919 5236,10994 5241,11060 5258,11285
 #: note ^^^
+#: valid ^^^
+#: next_check ^^^
+#: XXX ^^^
 # 
 An der Spandauer Brücke	Jam; 10339,13052 10301,13075 10286,13084 10264,13097
 # 

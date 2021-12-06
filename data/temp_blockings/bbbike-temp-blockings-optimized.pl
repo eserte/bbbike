@@ -3961,7 +3961,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2021-11-28 vvv
+#: last_checked: 2021-12-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4488,23 +4488,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: SEYDLITZ-2021
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1116986.php (Neubau der Fahrbahn, bis Ende November 2021)
-#: by: https://www.berliner-woche.de/lankwitz/c-bauen/retzowstrasse-gesperrt_a320297
-#: osm_watch: way id="24917125" version="12"
-#: add_fragezeichen: Wann wird die Sperrung der Fahrbahn aufgehoben?
-#: last_checked: 2021-09-12
-# REMOVED --- #: check_frequency: 120d
-#: next_check: 2021-11-30
-	q4::inwork 6331,2281 6399,2184
-',
-         'from' => undef,
-         'id' => 3385,
-         'text' => 'Retzowstr.: südlich der Dessauerstr. Bauarbeiten, Fahrbahn gesperrt, Gehweg ist noch offen, Ende der Bauarbeiten vermutlich Ende November 2021',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: BUCKOWERDAMM-2021
@@ -4564,7 +4548,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: FRANKFURTER-2021
 #: note: auch last Schild der Wasserbetriebe bis März 2022
-#: last_checked: 2021-11-28 vvv
+#: last_checked: 2021-12-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-31 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -4817,18 +4801,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1640214000
        },
        undef,
-       {
-         'data' => '# REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
-#: source_id: viz2021:13.399042,52.497652,23.11.2021,06:00
-#: by: https://twitter.com/VIZ_Berlin/status/1463011930226917378 (Radverkehr nicht betroffen)
-	q3::inwork; 10066,10071 10069,10151 10083,10192 10122,10294
-',
-         'from' => 1637535600,
-         'id' => 3457,
-         'text' => 'Brachvogelstr./Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt, evtl. ist auch der Radverkehr betroffen, bis 19.12.2021',
-         'type' => 'handicap',
-         'until' => 1639929600
-       },
+       undef,
        {
          'data' => '#: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
 	q4::inwork; 8196,20096 8224,19977 8234,19936
@@ -4873,9 +4846,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: also_indoor: traffic (G)
-#: osm_watch: way id="1003079755" version="1"
+#: osm_watch: way id="1003079755" version="2"
 #: add_fragezeichen: Wann wird die Sperrung der Fahrbahn beendet?
-#: last_checked: 2021-11-21
+#: last_checked: 2021-12-05 (osm)
 	q3::inwork 16153,10818 16192,10907
 ',
          'from' => undef,
@@ -4993,10 +4966,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
-#: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021)
-#: also_indoor: traffic
-#: last_checked: 2021-11-28 vvv
-#: check_frequency: 7d vvv
+#: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fertig, aber die Bauarbeiten sind noch nicht beendet)
+#: also_indoor: traffic (G)
+#: last_checked: 2021-12-06 vvv
+#: check_frequency: 4d vvv
 	q3::inwork; 14965,11924 15077,11910 15133,11902 15256,11884
 	q3::inwork 14965,11924 14888,11934 14836,11842
 #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden
@@ -5006,21 +4979,11 @@ Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
 ',
          'from' => 1637599882,
          'id' => 3479,
-         'text' => 'Scharnweberstr./Weichselstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei, bis 6.12.2021',
+         'text' => 'Scharnweberstr./Weichselstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
-         'until' => 1638831600
+         'until' => undef
        },
-       {
-         'data' => '	q4::inwork 9333,4229 9208,4215
-	q4::inwork 9375,4022 9276,3997
-	q4::inwork 9020,4890 9248,4904
-',
-         'from' => 1637608390,
-         'id' => 3480,
-         'text' => 'Markgrafenstr., Richterstr. und Prinzenstr.: Sperrung am Mariendorfer Damm, bis 6.12.2021',
-         'type' => 'handicap',
-         'until' => 1638831600
-       },
+       undef,
        undef,
        {
          'data' => '#: note: innterörtliche Umleitung für Radfahrer existiert, deshalb nur q4 statt 2

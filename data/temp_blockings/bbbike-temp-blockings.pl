@@ -17350,7 +17350,7 @@ EOF
        until => $isodate2epoch->("2019-12-15 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12, start => "2021-01-01T00:00:00"]], # findet 2020 vermutlich nicht statt
-       recurrence_prewarn_days => 1,
+       recurrence_prewarn_days => -1,
        text  => 'Alt-Köpenicker Weihnachtsmarkt vom 13.12.2019 bis zum 15.12.2019',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
@@ -24834,14 +24834,16 @@ EOF
      },
      { from  => $isodate2epoch->("2020-01-12 08:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2020-01-17 23:59:59"),
-       periodic => 1,
-       recurrences => [['yearly', days => 8, months => 1, start => "2021-01-31T00:00:00"],
-                       ['yearly', days => 27, months => 6, start => "2021-10-25T00:00:00"]],
+       ## möglicherweise nicht mehr in der Schöneberger Str.
+       #periodic => 1,
+       #recurrences => [['yearly', days => 8, months => 1, start => "2021-01-31T00:00:00"],
+       #                ['yearly', days => 27, months => 6, start => "2021-10-25T00:00:00"]],
        text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 13.01.2020-17.01.2020',
        type  => 'handicap',
        source_id => 'https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-termin-fuer-januar-2020.html',
        data  => <<EOF,
 #: by: https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-der-sommertermin-in-2021-steht-fest.html (6. bis 12. September 2021) (allerdings möglicherweise nicht in der Schöneberger/Luckenwalder)
+#: by: https://www.fashionstreet-berlin.de/mbfw-berlin-herbst-winter-2021-22-findet-statt-fashion-week-berlin/278738/ (Januar 2021: Kraftwerk Berlin?)
 #: source_id: 2147343639
 #: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
 	q4::temp 8644,10408 8397,10488 8384,10507 8527,10621
@@ -31060,7 +31062,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2021-11-28 vvv
+#: last_checked: 2021-12-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32899,18 +32901,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1638814514, # undef, # XXX
        text  => 'Retzowstr.: südlich der Dessauerstr. Bauarbeiten, Fahrbahn gesperrt, Gehweg ist noch offen, Ende der Bauarbeiten vermutlich Ende November 2021',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: SEYDLITZ-2021
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1116986.php (Neubau der Fahrbahn, bis Ende November 2021)
-#: by: https://www.berliner-woche.de/lankwitz/c-bauen/retzowstrasse-gesperrt_a320297
-#: osm_watch: way id="24917125" version="12"
-#: add_fragezeichen: Wann wird die Sperrung der Fahrbahn aufgehoben?
-#: last_checked: 2021-09-12
-# REMOVED --- #: check_frequency: 120d
-#: next_check: 2021-11-30
+# REMOVED (laut osm ist die Fahrbahn nun offen) --- #: next_check_id: SEYDLITZ-2021 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1116986.php (Neubau der Fahrbahn, bis Ende November 2021) --- #: by: https://www.berliner-woche.de/lankwitz/c-bauen/retzowstrasse-gesperrt_a320297 --- #: osm_watch: way id="24917125" version="14" --- #: add_fragezeichen: Wann wird die Sperrung der Fahrbahn aufgehoben? --- #: last_checked: 2021-09-12 --- # REMOVED --- #: check_frequency: 120d --- #: next_check: 2021-11-30
 	q4::inwork 6331,2281 6399,2184
 EOF
      },
@@ -33114,7 +33109,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRANKFURTER-2021
 #: note: auch last Schild der Wasserbetriebe bis März 2022
-#: last_checked: 2021-11-28 vvv
+#: last_checked: 2021-12-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-31 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -33722,8 +33717,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-11-22 00:00:00"), # undef, # 
-       until => $isodate2epoch->("2021-12-19 17:00:00"), # 1636480477, # undef,
-       text  => 'Brachvogelstr./Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt, evtl. ist auch der Radverkehr betroffen, bis 19.12.2021',
+       until => 1638803714, # $isodate2epoch->("2021-12-19 17:00:00"), # 1636480477, # undef,
+       text  => 'Brachvogelstr./Alexandrinnenstr.: Fahrbahn Richtung Norden zwischen Johanniterstr. und Gitschiner Str. gesperrt, evtl. ist auch der Radverkehr betroffen, bis 19.12.2021', # -> "Radfahrer frei"
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (beendet) --- #: add_fragezeichen: Bis wann geht die Sperrung in der Brachvogelstr.? --- #: also_indoor: traffic (G(falsch)) --- #: last_checked: 2021-10-19
@@ -33811,9 +33806,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G)
-#: osm_watch: way id="1003079755" version="1"
+#: osm_watch: way id="1003079755" version="2"
 #: add_fragezeichen: Wann wird die Sperrung der Fahrbahn beendet?
-#: last_checked: 2021-11-21
+#: last_checked: 2021-12-05 (osm)
 	q3::inwork 16153,10818 16192,10907
 EOF
      },
@@ -33975,15 +33970,15 @@ EOF
 EOF
      },
      { from  => 1637599882, # 2021-11-22 17:51
-       until => 1638831600, # 2021-12-07 00:00
-       text  => 'Scharnweberstr./Weichselstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei, bis 6.12.2021',
+       until => undef, # 1638831600, # 2021-12-07 00:00
+       text  => 'Scharnweberstr./Weichselstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei, Ende der Bauarbeiten unbekannt', # --- bis 6.12.2021
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
-#: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021)
-#: also_indoor: traffic
-#: last_checked: 2021-11-28 vvv
-#: check_frequency: 7d vvv
+#: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fertig, aber die Bauarbeiten sind noch nicht beendet)
+#: also_indoor: traffic (G)
+#: last_checked: 2021-12-06 vvv
+#: check_frequency: 4d vvv
 	q3::inwork; 14965,11924 15077,11910 15133,11902 15256,11884
 	q3::inwork 14965,11924 14888,11934 14836,11842
 #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden
@@ -33993,7 +33988,7 @@ Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
 EOF
      },
      { from  => 1637608390, # 2021-11-22 20:13
-       until => 1638831600, # 2021-12-07 00:00
+       until => 1638817261, # 1638831600, # 2021-12-07 00:00
        text  => 'Markgrafenstr., Richterstr. und Prinzenstr.: Sperrung am Mariendorfer Damm, bis 6.12.2021',
        type  => 'handicap',
        data  => <<EOF,
