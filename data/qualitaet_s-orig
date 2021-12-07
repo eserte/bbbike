@@ -494,10 +494,10 @@ Rotherstr.: Kopfsteinpflaster	Q2- 14011,10812 13896,10851 13856,10864
 Rotherstr.: Mitte der Fahrbahn betoniert	Q1 13856,10864 13755,10896
 Rotherstr.: Asphalt	Q0 13755,10896 13676,10926
 Rotherstr.: Kopfsteinpflaster	Q2 13676,10926 13575,10963 13478,10998
-Warschauer Platz: Kopfsteinpflaster	Q2 13527,11110 13478,10998
-Warschauer Platz: Asphalt	Q0 13478,10998 13471,10983 13436,10903
+Warschauer Platz: Asphalt	Q0 13527,11110 13478,10998 13471,10983 13436,10903
 Warschauer Platz: Kopfsteinpflaster	Q2 13436,10903 13408,10837 13394,10805
-Warschauer Platz: Kopfsteinpflaster	Q2 13478,10998 13463,11003 13457,10987 13395,10843 13408,10837
+Warschauer Platz: Asphalt	Q0 13478,10998 13463,11003
+Warschauer Platz: Kopfsteinpflaster	Q2- 13463,11003 13457,10987 13395,10843 13408,10837
 Colditzstr.: Kopfsteinpflaster	Q2 9698,6024 9796,5790 9863,5637 9893,5569 9974,5385 10029,5230
 Volkmarstr.: Asphalt	Q0 9687,5237 9703,5274
 Volkmarstr.: Kopfsteinpflaster	Q2 9703,5274 9974,5385 10230,5498
@@ -1079,7 +1079,7 @@ Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 92
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/verordnete-fordern-moderne-planung-fuer-friedrich-engels-strasse_a303957
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/zweigleisiger-ausbau-der-m1-ist-von-der-bvg-geplant_a318012 (Straßenbahn ab 2026 zweigleisig)
 #: XXX Wird nach der Straßenbaumaßnahme die Straße asphaltiert sein? Werden die Radspuren verlängert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus? vvv
-#: last_checked: 2021-10-08 vvv
+#: last_checked: 2021-12-05 (mapillary) vvv
 #: check_frequency: 540d vvv
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
 Friedrich-Engels-Str.: Asphalt	Q2 8967,20539 8904,20596
@@ -1961,7 +1961,7 @@ Dirschauer Str.: Kopfsteinpflaster	Q2 14031,11569 13970,11366
 Laskerstr.: mäßiger Beton	Q1- 14675,10693 14541,10735
 Bödikerstr.: Kopfsteinpflaster mit Asphaltflicken	Q2 14541,10735 14490,10610
 Bödikerstr.: Kopfsteinpflaster	Q2 14490,10610 14447,10491 14405,10340
-Rudolfstr.: Kopfsteinpflaster	Q2 13527,11110 13716,11032 13795,10995 13886,10939 14026,10869
+Rudolfstr.: Kopfsteinpflaster	Q2- 13527,11110 13716,11032 13795,10995 13886,10939 14026,10869
 Danneckerstr.: Kopfsteinpflaster	Q2 13779,10642 13856,10864 13886,10939
 Lehmbruckstr.: Kopfsteinpflaster	Q2 13690,10715 13755,10896 13795,10995
 Müllenhoffstr.: Kopfsteinpflaster	Q2 11110,9661 11311,9576
@@ -8765,7 +8765,7 @@ Straße 74: Asphalt	Q0- 12583,22428 12696,22455 12821,22437 12855,22431 13136,223
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: wosch
 #: XXX eventuell wird der Asphalt noch glatter gemacht
-#: last_checked: 2021-11-13 (mapillary)
+#: last_checked: 2021-12-05 (mapillary)
 Königsteinbrücke: welliger Asphalt	Q1 13136,22397 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378 13394,22373
 Straße 86: Asphalt	Q0 13805,22935 13726,22860
 Straße 86: unbefestigt	Q2 13726,22860 13699,22834
@@ -30436,4 +30436,10 @@ Kreuzungsbereich asphaltiert	Q0 8816,5980
 Kreuzungsbereich asphaltiert	Q0 8996,5956
 Kreuzungsbereich asphaltiert, Vorbereich mit Kleinsteinpflaster	Q0- 10683,11175
 Kreuzungsbereich asphaltiert	Q0 10706,13043
+Kreuzungsbereich asphaltiert	Q0 13716,11032
+Kreuzungsbereich asphaltiert	Q0 13478,10998
+Kreuzungsbereich asphaltiert	Q0 13676,10926
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 13755,10896
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 13856,10864
+Kreuzungsbereich asphaltiert	Q0 14447,10491
 #: ignore ^^^

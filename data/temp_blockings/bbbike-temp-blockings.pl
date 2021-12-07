@@ -3394,6 +3394,7 @@ EOF
 #: by: https://www.berlin.de/weihnachtsmarkt/3240274-3496862-weihnachtsmarkt-an-der-gedaechtniskirche.html (2020)
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarkt-an-der-gedaechtniskirche.html
 #: by: https://berliner-abendblatt.de/2021/11/02/ein-weihnachtsbaum-fuer-den-breitscheidplatz/
+#: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
@@ -28745,11 +28746,12 @@ EOF
 EOF
      },
      { from  => 1542148916, # 2018-11-13 23:41
-       until => $isodate2epoch->("2021-12-31 23:59:59"), # $isodate2epoch->("2019-07-09 18:00:00"), # 1561931999, # 2019-06-30 23:59
-       text  => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, möglicherweise bis Ende 2021',
+       until => $isodate2epoch->("2022-11-15 17:00:00"), # $isodate2epoch->("2019-07-09 18:00:00"), # 1561931999, # 2019-06-30 23:59
+       text  => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte November 2022',
        type  => 'handicap',
        source_id => '2147343419', # Gesamtmaßnahme bis Ende 2021
        data  => <<EOF,
+#: source_id: viz2021:13.222469,52.619767,05.11.2018,10:34 (bis 15.11.2022)
 #: next_check_id: HENNIGSDORFER-2019
 	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259
 # REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2306,23259 -2248,23409 -2185,23567
@@ -33977,9 +33979,10 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
 #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fertig, aber die Bauarbeiten sind noch nicht beendet)
 #: also_indoor: traffic (G)
-#: last_checked: 2021-12-06 vvv
+#: last_checked: 2021-12-07 vvv
 #: check_frequency: 4d vvv
-	q3::inwork; 14965,11924 15077,11910 15133,11902 15256,11884
+	q3::inwork 14965,11924 15077,11910
+	q3::inwork; 15077,11910 15133,11902 15256,11884
 	q3::inwork 14965,11924 14888,11934 14836,11842
 #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden
 Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
@@ -34043,6 +34046,56 @@ EOF
 #: by: https://viz.berlin.de/2021/12/verkehrsvorschau-02122021/
 	q4::inwork -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
 	q4::inwork 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888 -2218,5133 -3296,3686
+EOF
+     },
+     { from  => $isodate2epoch->("2021-12-11 00:00:00"),
+       until => $isodate2epoch->("2021-12-12 23:59:59"),
+       text  => 'Residenzstr./Reinickendorfer Str./Osloer Str./Seestr.: umfangreiche Sperrungen wegen Bombenentschärfung, am 12.12.2021 voraussichtlich ab 6 Uhr',
+       type  => 'handicap',
+       source_id => 'viz2021:13.191315,52.461666,02.12.2021,07:00',
+# erstellt mit dem folgenden Kommando:
+#    ./miscsrc/grepstrassen -ignoreglobaldirectives -inner /tmp/2.bbd -onlyenclosed data/strassen | perl -pe 's/\t\S+/\t2::temp/' >| /tmp/2s.bbd
+# 2.bbd beschreibt die Fläche:
+#	X 7969,17137 7727,17098 7597,16968 7472,16764 7454,16550 7707,16135 7882,16115 8112,16107 8366,16248 8471,16471 8515,16551 8433,16776 8165,17092
+# und dann manuell editiert/erweitert
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1154884.php
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1154873.php
+#: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/allgemeinverfuegung_12122021_bombenentschaerfung.pdf
+Osloer Str.	2::temp 8467,16718 8249,16741 8161,16752 8144,16754 7852,16790 7763,16779 7681,16769
+Schulstr. (Wedding, Gesundbrunnen)	2::temp 8093,16438 7987,16332 7818,16166
+Heinz-Galinski-Str.	2::temp 8161,16752 8082,16483 8093,16438
+Exerzierstr.	2::temp 8093,16438 8166,16454 8307,16434 8436,16415
+Schwedenstr.	2::temp 8486,16425 8249,16741 8197,16809 8127,16894
+Tromsöer Str.	2::temp 8197,16809 8243,16889
+Uferstr. (Gesundbrunnen)	2::temp 8334,16282 8420,16365
+Reinickendorfer Str.	2::temp 7818,16166 7793,16233 7746,16375 7713,16557 7681,16769
+Seestr. (Wedding, Charlottenburg-Nord, Moabit)	2::temp 7681,16769 7606,16746
+Louise-Schroeder-Platz	2::temp 7681,16769 7672,16834 7666,16879
+Louise-Schroeder-Platz	2::temp 7763,16779 7745,16889
+Louise-Schroeder-Platz	2::temp 7583,16872 7594,16805
+Residenzstr.	2::temp 7970,17087 8079,16953 8127,16894
+Ungarnstr.	2::temp 7583,16872 7666,16879
+Reginhardstr.	2::temp 7970,17087 7926,17050 7841,16966 7745,16889 7666,16879
+Haßlingerweg	2::temp 7894,17073 7926,17050
+Hansastr. (Gesundbrunnen)	2::temp 8079,16953 7884,16940 7841,16966
+Gottschedstr.	2::temp 8014,16089 8077,16178 8307,16434
+Martin-Opitz-Str.	2::temp 8236,16071 8077,16178 7987,16332
+Iranische Str.	2::temp 8082,16483 7843,16524
+Iranische Str.	2::temp 7843,16524 7713,16557 7447,16613
+Liebenwalder Str. (Wedding)	2::temp 7727,16223 7793,16233
+Koloniestr.	2::temp 8467,16718 8486,16425
+Oudenarder Str.	2::temp 7433,16375 7746,16375
+EOF
+     },
+     { from  => 1638745200, # 2021-12-06 00:00
+       until => 1646262000, # 2022-03-03 00:00
+       text  => 'Perleberger Str.: Richtung Heidestr. Bauarbeiten zwischen Lübecker Str. und Birkenstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 07.12.2021 10:00 bis 02.03.2022 17:00 ',
+       type  => 'handicap',
+       source_id => 'viz2021:13.346358,52.530349,07.12.2021,10:00',
+       data  => <<EOF,
+#: add_fragezeichen: Sind Radfahrer von der Baustelle betroffen?
+	q4::inwork; 6366,13716 6493,13822
 EOF
      },
     );

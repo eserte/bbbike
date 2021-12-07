@@ -247,7 +247,7 @@ Müllerstr.: Radspuren geplant	?::projected 6781,16026 6914,15908 6936,15888 7024
 Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 # 
 #: XXX Baumaßnahme 12.15 (Realisierung nach 2011)
-#: last_checked: 2021-10-08
+#: last_checked: 2021-12-05 (mapillary)
 #: check_frequency: 120d
 #: osm_watch: way id="82449630" version="21"
 #: osm_watch: way id="32426064" version="14"
@@ -1817,7 +1817,7 @@ Friederikestr.: entsteht hier ein Radstreifen (geplante Fertigstellung: 2019)?	?
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksamt/bauen-bildung-und-kultur/dokumente/uebersicht-der-radwege-in-reinickendorf.pdf (53m Radweg wurden realisiert, hier?) --- #: osm_watch: way id="179164083" version="3" --- #: next_check: 2018-12-31 --- Staehleweg - Mauerweg: wird hier eine Asphaltierung passieren? Ist überhaupt diese Stelle hier gemeint? Geplante Fertigstellung: 2018	?::projected 1734,27565 1784,27560 1858,27576
 #: XXX geplante Fertigstellung war 2019
 #: source_id: 2147344459 (bis Ende August 2019, Leitungsbau, inaktiv)
-#: last_checked: 2021-09-04
+#: last_checked: 2021-12-05 (mapillary)
 #: check_frequency: 120d
 Roedernallee: Sanierung des Radweges	?::projected 6392,19142 6267,19388 6238,19450 6190,19551 6141,19649 5983,19974 5914,20112 5868,20198 5847,20243 5833,20273 5801,20339
 # REMOVED --- #: by: https://api.fixmyberlin.de/api/projects/295 --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.886600.php --- #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/baeume-an-der-roedernallee-mussten-gefaellt-werden_a249832 --- #: by: https://www.berliner-woche.de/bezirk-reinickendorf/c-verkehr/streit-um-zuegigen-ausbau-der-radwege_a263752 (ein breiter asphaltierter Radweg entsteht) --- #: by: https://abendblatt-berlin.de/2020/05/08/berlin-reinickendorf-radwege/ (abgeschlossen) --- #: XXX erst später bei fixmyberlin hinzugekommen, dieser Abschnitt war noch nicht in der ursprünglichen Liste dabei --- #: source_id: 2147345202 (bis 30.4.2020) --- #: last_checked: 2020-02-29 (mapillary) --- #: next_check: 2020-04-30 --- Roedernallee: Sanierung des Radweges	?::projected 6435,18839 6437,18958 6437,19013 6433,19024 6415,19083 6392,19142
@@ -2247,7 +2247,7 @@ Antwerpener Str.: Fahrradstraße soll entstehen	?::projected 6555,15827 6690,1567
 #: priority: #A
 #: last_checked: 2021-09-04
 #: check_frequency: 150d
-#: next_check: 2021-12-31
+#: next_check: 2022-11-15
 Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen (Suggestivstreifen)	?::projected -2504,22626 -2540,22694 -2424,22991 -2306,23259
 # REMOVED (realisiert) --- Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen (Suggestivstreifen)	?::projected -2306,23259 -2248,23409 -2185,23567 -2168,23607 -2132,23697 -2071,23850
 # REMOVED (realisiert) --- #: priority: #A --- #: last_checked: 2020-06-13 --- Hennigsdorfer Str.: erste Markierungsarbeiten laufen	?::inwork -2071,23850 -2051,23901 -1940,24176
@@ -2604,8 +2604,9 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12150,8764 123
 #: note: laut rbb bis 31.12.2021
 #: last_checked: 2021-09-27 (mapillary)
 #: check_frequency: 360d
-#: next_check: 2021-12-31
-Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501 12330,8636
+#: next_check: 2022-01-31
+# REMOVED (hier realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390
+Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501 12330,8636
 # 
 # REMOVED (weitgehend realisiert) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022) --- #: by: http://www.berliner-woche.de/neukoelln/bauen/neues-von-der-baustelle-arbeiten-auf-der-karl-marx-strasse-ruhen-d143549.html (Bauarbeiten ab April 2018, Briesestr. bis Erkstr.) --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.697573.php (Briese- bis Weichselstr., bis Ende 2021) --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/durch-die-aktion-karl-marx-strasse-treffen-sich-alle-beteiligten-regelmaessig_a196585 (bis Jahresende 2019) --- #: by: https://fahrradfreundliches-neukoelln.de/blog/bericht-vom-7-fahrrat-21-februar-2019 (Baubeginn April/Mai 2019) --- #: by: http://cm.kms-sonne.de/mailing/99/2206225/0/8dc0731155/index.html (8. Baustellennewsletter der Aktion KMS) (Asphaltierung zwischen Briese- und Werbellinstr. am 28. und 29. August 2019) --- #: by: https://www.abendblatt-berlin.de/2019/10/05/berlin-neukoelln-bauarbeiten-am-rathaus-gehen-voran/ (Gehwegarbeiten) --- #: by: https://www.kms-sonne.de/baustellennews/?date=20191023 --- #: osm_watch: way id="629657606" version="7" --- #: last_checked: 2020-09-25 --- #: check_frequency: 60d --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12753,8187 12714,8249
 # REMOVED --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187
@@ -3006,6 +3007,8 @@ Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Geplante Straße; Qualität? Wird de
 #: by: https://abendblatt-berlin.de/2020/10/29/neue-fussgaengerbruecke-an-der-europacity/
 #: by: https://twitter.com/weddingweiser/status/1343568926601580545 (Umleitung beendet)
 #: by: https://www.deutsches-architekturforum.de/thread/8424-europacity-allgemeines/?postID=706377#post706377 (Eröffnung am 8.12.2021, provisorische Asphaltwege auf der Westseite)
+#: by: https://berliner-abendblatt.de/2021/12/07/europacity-golda-meir-steg-wird-eroeffnet/
+#: by: https://viz.berlin.de/2021/12/verkehrsvorschau-08122021/ (Einweihung am 8.12.2021 vormittags)
 #: XXX laut osm: opening_date=2021-04
 #: osm_watch: way id="237716417" version="8"
 #: last_checked: 2021-11-18
@@ -4199,12 +4202,12 @@ Hönower/Karlshafener Str.: entsteht hier eine Fußgängerampel?	?::projected 24895
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/umbau-des-mahlsdorfer-kreisels-rueckt-naeher_a320888 (Umbauarbeiten frühestens ab November 2021)
 #: source_id: 2147347010 (Bau einer Fahrbahnquerung, bis 1.4.2021)
-#: source_id: viz2021:13.612191,52.513569,16.11.2021,10:00 (Leitungsarbeiten, bis 31.12.2021)
+#: source_id: viz2021:13.612191,52.513569,16.11.2021,10:00 (Leitungsarbeiten, bis 31.12.2021) (mittlerweile bis 8.12.2021)
 #: note: laut rbb "bis auf weiteres"
 #: priority: #D
 #: last_checked: 2021-08-07
-#: check_frequency: 90d
-#: next_check: 2021-11-30
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2021-12-08
 Jacques-Offenbach-Platz: hier sollen Zebrastreifen an den Einmündungen entstehen	?::projected 24491,12310 24530,12296 24568,12283
 # 
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/senat-will-noch-2021-geplanten-fussgaengerueberweg-bauen_a304653 (kein Fertigstellungstermin, aber noch 2021)
@@ -4339,7 +4342,7 @@ Amrumer Str.: Planung eines Radfahrstreifens	?; 6562,15177 6474,15278 6375,15391
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/62 (Fertigstellung für 2018 geplant)
 #: XXX wird auf der infravelo-Karte nicht erwähnt (Stand 2020-12-14)
-#: last_checked: 2021-11-20 (mapillary)
+#: last_checked: 2021-12-05 (mapillary)
 #: check_frequency: 90d
 Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 # 
@@ -5005,7 +5008,7 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen ausgebaut werden	?::projected 7763,20124 7790,20132 7802,20110
 # 
 #: next_check_id: HEIDEKRAUTBAHN-2021
-#: last_checked: 2021-10-31
+#: last_checked: 2021-12-05 (mapillary)
 #: check_frequency: 60d
 Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Radrouten) angepasst?	? 7504,19459 7446,19522 7435,19547 7273,19682 7236,19689
 # 
@@ -6054,7 +6057,7 @@ Schule am Planetarium: Weg wird entfallen, neue Wege nördlich und südlich des Sc
 #: XXX die Wasserbetriebe bauen bis Ende September 2022 noch bis zur Nithackstr. weiter, in insgesamt acht Bauabschnitten
 #: source_id: viz2021:13.28661,52.518717,19.01.2021,07:00 (Gesamtbaumaßnahme bis Mitte November 2022)
 #: source_id: viz2021:13.29383,52.519215,06.09.2021,12:13 (zwischen Klausener Platz und Schloßstr., bis 6.10.2021, Gesamtbaumaßnahme bis Ende 2022)
-#: source_id: viz2021:13.29383,52.519215,06.10.2021,14:00
+#: source_id: viz2021:13.29383,52.519215,06.10.2021,14:00 (bis 14.2.2022, Gesamtbaumaßnahme bis Ende 2022)
 #: last_checked: 2021-10-20
 #: check_frequency: 270d
 #: next_check: 2023-06-30
@@ -7480,7 +7483,7 @@ Bebauungsplan 12-68: wird der bestehende Weg "aufgewertet"; entsteht eine offizi
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/z18ZZXy3J2ZHtmAHncHKlckhWz5jf80zxBKviUyW/yXbAPpYA/66-Anlagen/01/DRS0017VK.pdf
 #: by. https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Straßenbenennung, mit Lageplan)
 #: XXX außerdem muss die Grünfläche (oder eher Brache hier) verkleinert werden
-#: XXX Privatstraße; Name: Clara-Müller-Jahnke-Str. (Berlin.coords.data-Eintrag fehlt)
+#: XXX Privatstraße; Name: Clara-Müller-Jahnke-Str. (Berlin.coords.data-Eintrag fehlt, PLZ=12589)
 #: osm_watch: way id="264953674" version="5"
 #: last_checked: 2019-07-20
 #: check_frequency: 720d
@@ -7550,7 +7553,7 @@ Bebauungsplan 10-45: verkehrsberuhigter Bereich sowie Rad/Gehweg geplant	?::proj
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtgut-hellersdorf-alt-hellersdorf.841/post-10583
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf (Straßenbenennung)
 #: XXX evtl. 10-44 und 10-45 verbinden; könnte das gleiche Bauprojekt sein
-#: XXX Brigitte-Reimann-Str. fehlt in Berlin.coords.data
+#: XXX Brigitte-Reimann-Str. (PLZ=12629) fehlt in Berlin.coords.data
 #: last_checked: 2021-08-07 vvv
 #: check_frequency: 180d vvv
 geplanter Rad- und Fußweg	?::projected 23265,15351 23368,15362
@@ -7879,7 +7882,7 @@ Bebauungsplan 8-102 ("Ehemaliger NME-Bahnhof Rudow"): wird es hier eine Wegverbi
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_49_4457_4624_online.pdf (Grundstücksnummerierungen)
 #: XXX wird die KGA an dieser Stelle aufgegeben?
 #: osm_watch: way id="293943813" version="3"
-#: last_checked: 2021-10-10 (mapillary)
+#: last_checked: 2021-12-05 (mapillary)
 #: check_frequency: 180d
 Planstraße H: vermutlich entsteht hier eine neue Straße, genaue Lage, Qualität?	? 9250,21221 9268,21146
 # 
