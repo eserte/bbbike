@@ -721,7 +721,7 @@ Kolonnenstr.	H 8209,8773 8145,8773 8078,8772 8014,8771 8008,8771 7795,8765 7709,
 #: XXX wird am 18.10.2021 zum Richard-von-Weizsäcker-Platz umbenannt --- verzögert sich wegen Widerspruchs
 #: also_indoor: search Richard-von-Weizsäcker-Platz
 # REMOVED --- #: next_check: 2021-10-18
-#: last_checked: 2021-11-25 (research)
+#: last_checked: 2021-12-08 (research)
 #: check_frequency: 14d
 Kaiser-Wilhelm-Platz	NN 7201,8870 7307,8945
 Herbertstr. (Schöneberg)	N 7360,8918 7389,8837 7402,8783 7395,8761
@@ -1677,8 +1677,11 @@ Heidestr. (Moabit)	N 8092,13467 8059,13551 8048,13578 8019,13650
 Heidestr. (Moabit)	HH 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7778,14059 7732,14131 7697,14187 7652,14257 7612,14325 7566,14404 7532,14446 7487,14472 7401,14526 7368,14573
 #: note: blaues Straßenschild vvv
 Otto-Weidt-Platz	NN 7923,14142 7778,14059
-Otto-Weidt-Platz	NN 7732,14131 7866,14215
+Otto-Weidt-Platz	NN 7732,14131 7818,14185 7866,14215
 #: note ^^^
+(provisorischer Weg zum Golda-Meir-Steg)	NN 7818,14185 7861,14133
+Golda-Meir-Steg	NN 7861,14133 7899,14157 7962,14198 7973,14195
+Golda-Meir-Steg	NN 7962,14198 7968,14202
 Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 (Am Hamburger Bahnhof - Lydia-Rabinowitsch-Str.)	NN 7997,13892 7959,13982
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7802,14250 7781,14238 7697,14187
@@ -14210,7 +14213,7 @@ Schwarzer Weg (Mitte)	N 8572,13671 8426,13909
 Habersaathstr.	N 8313,13839 8426,13909 8478,13941 8571,13999 8732,14098
 Habersaathstr. [36A-E und 38E-40]	N 8571,13999 8624,13915
 Kieler Str. (Mitte)	N 8054,14257 8033,14241 7973,14195
-# REMOVED --- #: next_check_id: GOLDAMEIRSTEG-2019 --- #: XXX nach den Bauarbeiten entfernen, auch Extrapunkte löschen --- #: XXX wann sind die Bauarbeiten beendet? Laut Aushang handelt es sich um Brückenbauarbeiten, bis März 2021 --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10088 --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10081 --- #: priority: #A --- #: also_indoor: traffic (H) --- #: last_checked: 2020-11-07 --- #: check_frequency: 60d --- #: next_check: 2021-03-01 --- #: valid: -20210301 --- (Umfahrung Kieler Str.)	NN 7965,14207 8025,14251 8033,14241 8039,14232 7972,14185
+# REMOVED --- #: next_check_id: GOLDAMEIRSTEG-2019 --- #: XXX nach den Bauarbeiten entfernen, auch Extrapunkte löschen --- #: XXX wann sind die Bauarbeiten beendet? Laut Aushang handelt es sich um Brückenbauarbeiten, bis März 2021 --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10088 --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10081 --- #: priority: #A --- #: also_indoor: traffic (H) --- #: last_checked: 2020-11-07 --- #: check_frequency: 60d --- #: next_check: 2021-03-01 --- #: valid: -20210301 --- (Umfahrung Kieler Str.)	NN 7968,14202 8025,14251 8033,14241 8039,14232 7972,14185
 Boyenstr.	N 7938,14423 8250,14672
 (Unterführung Nordhafenbrücke)	NN 7661,14398 7636,14414 7612,14449 7551,14464
 (Nordhafenpark West)	NN 7566,14404 7572,14432 7551,14464 7426,14539 7396,14569 7368,14573
@@ -16025,7 +16028,7 @@ Am Hamburger Bahnhof	N 8025,13835 7997,13892
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_04_0705_0832_online.pdf (Ergänzung der Widmung)
 (Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 8295,13531 8290,13538 8224,13634 8169,13705 8131,13770 8086,13862 8057,13923
 (Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 7866,14215 7830,14268 7799,14314
-Promenade am Berlin-Spandauer Schiffahrtskanal	NN 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096 8001,14096 7966,14148 7972,14185 7973,14195 7965,14207 7804,14445 7787,14473 7753,14528 7733,14570
+Promenade am Berlin-Spandauer Schiffahrtskanal	NN 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096 8001,14096 7966,14148 7972,14185 7973,14195 7968,14202 7804,14445 7787,14473 7753,14528 7733,14570
 (Am Invalidenfriedhof - Scharnhorststr.)	NN 8096,13951 8200,14016
 Baseler Str. (Reinickendorf)	N 6784,17960 6815,17871 6841,17781 6886,17649 6897,17616 6904,17596 6987,17321
 Grindelwaldweg	N 6904,17596 6797,17568 6679,17568 6642,17571

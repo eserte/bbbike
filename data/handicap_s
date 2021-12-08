@@ -18,7 +18,7 @@ Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 (Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10804,12291 10830,12279
 Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
-Ida-von-Arnim-Str.: Bauarbeiten an der Kreuzung Chausseestr., Fahrbahn gesperrt	q2::inwork 8266,14346 8442,14456
+Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr.	q2::inwork 8266,14346 8442,14456
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423
@@ -44,7 +44,6 @@ Bergiusstr. - Grenzallee: kurvig, einige Fuﬂg‰nger	q1 14150,6609 14137,6658 1417
 Bergiusstr. - Grenzallee: kurvig, einige Fuﬂg‰nger	q3 14179,6743 14139,6786
 Neukˆllnische Allee: Fuﬂg‰ngerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 Neukˆllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
-Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12392,8724 12330,8636
 Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12368,8356 12582,8408
 Nˆldnerstr.: Einbahnstraﬂenregelung, Radfahrer Richtung Westen kˆnnen den Gehweg benutzen	q2::inwork; 15932,10830 15681,10801
 Wiesenweg: Sperrung unter der Br¸cke, Fahrbahn ist gesperrt, auf Gehweg ausweichen	q3::inwork 15055,11505 15126,11474 15162,11458
@@ -2127,7 +2126,7 @@ Am Berlin Museum: einige Katzenkopfreihen	q2 10032,10752 9829,10830
 Traberweg: einige Fuﬂg‰nger	q1 18577,8033 18567,8041 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18072,8470 18005,8517 17930,8567 17851,8662
 (Trautenauer Str. - Liepnitzstr.): einige Fuﬂg‰nger	q1 17838,8611 17873,8578 17912,8515 18037,8420
 Campus AF 60: Schranke kann auf Gehweg umfahren werden	q2 18964,11719 18919,11720
-Otto-Weidt-Platz: einige Fuﬂg‰nger	q1 7732,14131 7866,14215
+Otto-Weidt-Platz: einige Fuﬂg‰nger	q1 7732,14131 7818,14185 7866,14215
 Teltowkanaluferweg: gemeinsamer Geh- und Radweg	q1 7994,4430 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095 8881,5143 9080,5225 9171,5263 9196,5272
 Humannstr. - General-Woyna-Str.: Fuﬂg‰nger, Bordstein	q3 4324,18523 4340,18497
 Humannstr.: Fuﬂg‰nger	q2 4332,18581 4324,18523 4311,18454
@@ -2197,6 +2196,8 @@ Diestelmeyerstr.: einige Fuﬂg‰nger	q3 12833,12920 12690,12769
 (Sebastianstr./Alexandrinenstr. - Dresdener Str.): einige Fuﬂg‰nger	q1 10826,11251 10907,11290 10957,11294 11000,11327
 Sokratesweg: einige Fuﬂg‰nger	q2 18514,9552 18604,9535
 Hans-Baluschek-Park: enge Rampe, Fuﬂg‰nger	q2 7252,6080 7278,6101
+(provisorischer Weg zum Golda-Meir-Steg): Fuﬂg‰nger	q3 7818,14185 7861,14133
+Golda-Meir-Steg: Fuﬂg‰nger	q2 7861,14133 7899,14157 7962,14198
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

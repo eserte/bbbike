@@ -161,11 +161,11 @@ Lindenhofbrücke	Br 12108,24547 12136,24607
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/bruecke-ueber-die-a114-wird-neu-gebaut_a264184
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1001081.php
 #: osm_watch: way id="9712546" version="15"
-#: source_id: viz2021:13.442786,52.614523,27.09.2021,08:00 (bis Ende 2021; werden bei den Fahrbahnarbeiten auch die Radwege gemacht?)
+#: source_id: viz2021:13.442786,52.614523,27.09.2021,08:00 (bis Ende 2021; werden bei den Fahrbahnarbeiten auch die Radwege gemacht?) (mittlerweile bis 21.1.2022)
 #: also_indoor: search Bucher_Straße
 #: last_checked: 2021-10-03 (mapillary)
-#: check_frequency: 45d
-#: next_check: 2021-12-31
+# REMOVED --- #: check_frequency: 45d
+#: next_check: 2022-01-21
 Bucher Str., Autobahnbrücke	Br 12882,23312 12915,23337
 Bucher Str., S-Bahnbrücke	Br 13045,23465 13080,23508
 Bucher Str., Autobahnbrücke	Br 14217,24999 14182,24940
@@ -227,13 +227,14 @@ Gartenfelder Brücke	Br -302,15602 -302,15546
 #: by: https://www.deutsches-architekturforum.de/thread/14128-das-neue-gartenfeld-auf-insel-in-spandau-siemensstadt/?postID=695605#post695605
 #: by: https://twitter.com/VIZ_Berlin/status/1430011984922152963 (Behelfsbrücke)
 #: by: https://twitter.com/SenUVKBerlin/status/1466405326601830405
+#: by: https://www.berliner-woche.de/haselhorst/c-verkehr/spatenstich-fuer-neubau-der-tegeler-bruecke_a330146
 #: XXX erstmal wird eine Behelfsbrücke erstellt (westlich); die neue Brücke wird Platz für eine Radwegunterführung haben
 #: source_id: 2147345790 (nicht mehr aktiv)
 #: source_id: 2147346453 (Leitungsbauarbeiten, bis 16.10.2020)
 #: last_checked: 2021-11-29 (osm) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2023-12-01 vvv
-#: osm_watch: way id="4568174" version="28"
+#: osm_watch: way id="4568174" version="29"
 Tegeler Brücke	Br -242,15982 -236,16043 -226,16086
 # REMOVED --- #: osm_watch: way id="883834105" version="16"
 #: osm_watch: way id="883834106" version="18"
@@ -707,6 +708,8 @@ Lindensteg	Br -3306,14035 -3291,14043
 	Br 32095,2475 32115,2492
 Zufahrt Flughafen Tegel	Tu 2733,16343 2675,16361 2638,16406
 Zufahrt Flughafen Tegel	Tu 2621,16344 2692,16326 2709,16291
+#: note: Eröffnung 2021-12-08
+Golda-Meir-Steg	Br 7899,14157 7962,14198
 #: section ^^^
 #
 ## Brandenburg und weiter ####################################################
