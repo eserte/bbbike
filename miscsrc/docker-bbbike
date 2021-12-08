@@ -176,7 +176,7 @@ EOF
 	my $uid = $<;
 	$username = (getpwuid($uid))[0];
 	$dockerfile .= <<"EOF";
-RUN adduser --disabled-password -u $uid --gecos '' $username
+RUN adduser --disabled-password --force-badname -u $uid --gecos '' $username
 USER $username
 EOF
     }
