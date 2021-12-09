@@ -2000,7 +2000,30 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geˆffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5666333-3496862-weihnachtsmarkt-auf-dem-schlossplatz-koe.html (2021 unter Vorbehalt)
+	2::xmas 22111,4562 22162,4546 22214,4548
+',
+         'from' => 1639054800,
+         'id' => 2003,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => -1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              12,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
+         'text' => 'Alt-Kˆpenicker Weihnachtsmarkt vom 10.12.2021 bis zum 12.12.2021',
+         'type' => 'gesperrt',
+         'until' => 1639349999
+       },
        undef,
        undef,
        undef,
@@ -3914,7 +3937,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-12-04
+#: last_checked: 2021-12-09
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3963,13 +3986,13 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2021-12-06 vvv
+#: last_checked: 2021-12-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
 # REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
-	q3::inwork 14272,11775 14306,11889
+# REMOVED (beendet) ---	q3::inwork 14272,11775 14306,11889
 	q4::inwork 14306,11889 14354,12012
 	q3::inwork 14354,12012 14468,11992
 #: next_check ^^^
@@ -4939,20 +4962,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1640300400
        },
-       {
-         'data' => '#: next_check_id: LUECK-2021
-#: by: https://twitter.com/VIZ_Berlin/status/1459133374208122880
-#: by: https://pbs.twimg.com/media/FD_h8clXEAUsQ1n?format=jpg&name=large
-	q4::inwork; 16861,10923 16751,10696 16751,10674
-	q4::inwork; 16892,10731 16961,10893
-',
-         'from' => 1636747480,
-         'id' => 3477,
-         'source_id' => 'viz2021:13.496206,52.500247,12.11.2021,06:00',
-         'text' => 'Archenholdstr. und Marie-Curie-Allee: Einbahnstraﬂenregelungen, voraussichtlich bis 10.12.2021',
-         'type' => 'handicap',
-         'until' => 1639177200
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic
 #: add_fragezeichen: Wurde die Einbahnstraﬂenregelung aufgehoben?

@@ -17347,12 +17347,12 @@ EOF
 	2::inwork -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-12 00:00:00"),
-       until => $isodate2epoch->("2019-12-15 23:59:59"),
+     { from  => $isodate2epoch->("2021-12-09 14:00:00"),
+       until => $isodate2epoch->("2021-12-12 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12, start => "2021-01-01T00:00:00"]], # findet 2020 vermutlich nicht statt
        recurrence_prewarn_days => -1,
-       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 13.12.2019 bis zum 15.12.2019',
+       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 10.12.2021 bis zum 12.12.2021',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
        data  => <<EOF,
@@ -30847,7 +30847,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-12-04
+#: last_checked: 2021-12-09
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31064,13 +31064,13 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2021-12-06 vvv
+#: last_checked: 2021-12-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
 # REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
-	q3::inwork 14272,11775 14306,11889
+# REMOVED (beendet) ---	q3::inwork 14272,11775 14306,11889
 	q4::inwork 14306,11889 14354,12012
 	q3::inwork 14354,12012 14468,11992
 #: next_check ^^^
@@ -33947,7 +33947,7 @@ EOF
 EOF
      },
      { from  => 1636747480, # 2021-11-12 21:04
-       until => 1639177200, # 2021-12-11 00:00
+       until => 1639076742, # 1639177200, # 2021-12-11 00:00
        text  => 'Archenholdstr. und Marie-Curie-Allee: Einbahnstraßenregelungen, voraussichtlich bis 10.12.2021',
        type  => 'handicap',
        source_id => 'viz2021:13.496206,52.500247,12.11.2021,06:00',
