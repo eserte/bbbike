@@ -17357,6 +17357,7 @@ EOF
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/5666333-3496862-weihnachtsmarkt-auf-dem-schlossplatz-koe.html (2021 unter Vorbehalt)
+#: by: https://berliner-abendblatt.de/2021/12/10/dieses-wochenende-weihnachtsmarkt-in-der-altstadt/
 	2::xmas 22111,4562 22162,4546 22214,4548
 EOF
      },
@@ -30946,8 +30947,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: VIRCHOW-2020
 #: next_check_id: CORONA-2020
+#: by: https://www.charite.de/klinikum/themen_klinikum/themenschwerpunkt_coronavirus/#c30751057 (Eingangskontrollen)
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-08-12 (website) vvv
+#: last_checked: 2021-12-10 (website) vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -31064,7 +31066,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2021-12-09 vvv
+#: last_checked: 2021-12-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33111,7 +33113,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRANKFURTER-2021
 #: note: auch last Schild der Wasserbetriebe bis März 2022
-#: last_checked: 2021-12-06 vvv
+#: last_checked: 2021-12-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-31 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -33978,7 +33980,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
 #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fertig, aber die Bauarbeiten sind noch nicht beendet)
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (G,H)
 #: last_checked: 2021-12-07 vvv
 #: check_frequency: 4d vvv
 	q3::inwork 14965,11924 15077,11910
@@ -34014,8 +34016,8 @@ EOF
 EOF
      },
      { from  => 1637953683, # 2021-11-26 20:08
-       until => 1667257200, # 2022-11-01 00:00
-       text  => 'Ruhlsdorf: Bauarbeiten, Sperrung, vermutlich auch für Radfahrer, bis 31.10.2022',
+       until => $isodate2epoch->("2022-03-31 18:00:00"), # 1667257200, # 2022-11-01 00:00
+       text  => 'Ruhlsdorf: Bauarbeiten, Sperrung, vermutlich auch für Radfahrer, bis 31.03.2022',
        type  => 'handicap',
        source_id => '217202207',
        data  => <<EOF,

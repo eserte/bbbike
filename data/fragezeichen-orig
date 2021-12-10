@@ -505,7 +505,7 @@ Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623
 #: by: http://www.infravelo.de/projekt/munsterdamm/ (4. Quartal 2021 - 4. Quartal 2023) (mittlerweile Baubeginn 2. Quartal 2022)
 #: source_id: 2147344224 (bis Mitte Juni 2019) (es ist aber nichts passiert) (nicht mehr aktiv)
 #: source_id: 2147345316 (bis Anfang Februar 2020) (nicht mehr aktiv)
-#: osm_watch: way id="30190074" version="24"
+#: osm_watch: way id="30190074" version="25"
 #: last_checked: 2021-09-26
 #: check_frequency: 270d
 #: next_check: 2023-12-31
@@ -1525,7 +1525,7 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 #: source_id: 2147343976 (bis Mitte Januar 2020; Leitungsarbeiten)
 #: XXX laut fritz bis 17.01.2020
 #: osm_watch: way id="93221335" version="19"
-#: last_checked: 2021-11-17
+#: last_checked: 2021-12-10
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Siegfriedstr.: Radstreifen geplant, vielleicht sogar geschützte Radstreifen	?::projected 16860,12861 16859,12613 16857,12600 16826,12408 16820,12339
@@ -2112,7 +2112,7 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 #: by: https://api.fixmyberlin.de/api/projects/322
 #: osm_watch: way id="488431238" version="6"
 #: osm_watch: way id="488430846" version="8"
-#: last_checked: 2021-11-10
+#: last_checked: 2021-12-08 (mapillary)
 #: check_frequency: 30d
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16079 11618,16183
 # REMOVED (hier realisiert) --- Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11618,16183 11666,16260 11698,16311 11727,16358
@@ -2662,7 +2662,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf
 #: osm_watch: way id="4663347" version="28"
-#: last_checked: 2021-09-12
+#: last_checked: 2021-09-20 (mapillary)
 #: check_frequency: 180d
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,5921 10027,5868 9796,5790
 # 
@@ -2861,17 +2861,18 @@ Ackerhummelweg: geplante Straße, genaue Lage, Qualität?	?::projected 20852,18629
 #: by: https://www.stadtundland.de/johannes-tobei-strasse (Bezugsfertigkeit: zwischen Dezember 2021 und September 2022)
 #: last_checked: 2021-07-17 (Bauarbeiten haben begonnen) vvv
 #: check_frequency: 180d vvv
-#: next_check: 2022-09-01 vvv
+#: XXX laut osm offen
 #: osm_watch: way id="751726575" version="1"
 #: osm_watch: way id="263140225" version="4"
-#: osm_watch: way id="174182916" version="3"
-Wilhelmine-Duncker-Str.	?::projected 21487,173 21457,289
+#: osm_watch: way id="174182916" version="4"
+#: next_check: 2021-12-09
+Wilhelmine-Duncker-Str.: wie ist die Qualität der Straße?	? 21487,173 21457,289
 # REMOVED (-> gesperrt) --- #: osm_watch: way id="174182914" version="3" --- #: note: Privatstraße --- Weidenkätzchenweg	?::inwork 21421,158 21450,38
 # REMOVED (-> gesperrt) --- #: osm_watch: way id="174182906" version="3" --- #: note: Privatstraße --- Buschwindröschenweg	?::inwork 21354,142 21379,33
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_23_2881_3012_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="174182908" version="3"
+#: next_check: 2022-09-01
 Kletterrosenweg	?::projected 21382,149 21354,289
-#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -3494,8 +3495,9 @@ Zillestr./Krumme Str.: Planung einer Fahrradstraße, wo genau?	?::projected 3801,
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/strassen-und-kfz-verkehr/projekte-in-planung/boulevard-unter-den-linden/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/boulevard-unter-den-linden-soll-autofrei-werden_a321794
 #: by: https://www.berliner-zeitung.de/mensch-metropole/unter-den-linden-wird-zur-baustelle-in-mitte-geht-eine-aera-zu-ende-li.190324?pid=true
+#: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022)
 #: last_checked: 2021-12-04
-#: check_frequency: 30d
+#: check_frequency: 45d
 #: next_check: 2022-07-01
 Unter den Linden: temporäre Umgestaltung, eine besondere Fahrspur für Radfahrer entsteht	?::projected 8804,12280 9028,12307 9141,12320 9358,12351 9475,12365 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431
 # 
@@ -3764,7 +3766,7 @@ Hauptstr., Rheinstr.: gibt es hier auch eine Busspur?	?; 5817,7223 5806,7205
 #: next_check_id: VIRCHOW-2020
 #: by: https://www.charite.de/die_charite/campi/campus_virchow_klinikum/ (Zugangsbeschränkungen)
 #: XXX vermutlich komplett 20km/h-Zone; Öffnungszeiten, Schranken? (nach der Corona-Krise prüfen) vvv
-#: last_checked: 2021-08-12 (website) vvv
+#: last_checked: 2021-12-10 (website) vvv
 #: check_frequency: 120d vvv
 (Südstr., Virchow-Klinikum): genaue Wegführung? Qualität? Einbahnstraßenregelung?	? 6504,14969 6470,14990 6414,14981
 (Oststr., Virchow-Klinikum): Qualität?	? 6380,15210 6320,15283 6309,15320 6298,15327
@@ -5040,7 +5042,7 @@ Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,885
 #: last_checked: 2021-11-02
 #: check_frequency: 120d
 Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18042,10392 18081,10312 18085,10244 18113,10208 18130,10201 18132,10183
-#: last_checked: 2021-11-24
+#: last_checked: 2021-12-10
 #: check_frequency: 90d
 Bornitzstr.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 15950,12886 16073,12883 16146,12881 16197,12880 16242,12878 16312,12876 16376,12874 16384,12874 16439,12872 16484,12871 16860,12861
 #: last_checked: 2021-08-02 (mapillary)
@@ -5060,10 +5062,10 @@ Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?:
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Beginn des Baus im Herbst 2021)
 #: XXX unklar, ob es nur um die Richtung Süden geht oder auch Richtung Norden (mit Aufhebung der Einbahnstraße für Radfahrer in der Alfredstr.?) --- Mischung aus Radspur, Gehwegradweg und für Radfahrer freigegebene Busspur
 #: source_id: viz2021:13.493057,52.516212,14.10.2021,07:00 (Fahrbahnsanierungsarbeiten, bis 20.11.2021)
-#: last_checked: 2021-09-11
+#: last_checked: 2021-12-10
 #: check_frequency: 90d
 #: next_check: 2023-12-31
-Alfredstr., Schottstr., Rüdigerstr.: Planung von Radverkehrsanlagen	?::projected 16485,12384 16397,12397 16276,12273 16255,12224 16246,12177 16207,11937
+Alfredstr., Schottstr., Rüdigerstr.: Planung von Radverkehrsanlagen	?::projected 16485,12384 16397,12397 16276,12273 16255,12224 16248,12177 16223,11999 16214,11935
 # 
 #: by: http://www.infravelo.de/projekt/alt-friedrichsfelde-4/ (3. Quartal 2021 - 3. Quartal 2022)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (2022)
@@ -5076,7 +5078,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 18
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2021-11-24
+#: last_checked: 2021-12-10
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: by: https://api.fixmyberlin.de/api/projects/328 (Grünmarkierung + Verbreiterung, teilweise Leitboys)
@@ -6195,7 +6197,7 @@ Krausenstr.: Erneuerung geplant	?::projected 10176,11593 10001,11577 9925,11568 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/2021_08_30-bauschild-neugestaltung-roedeliusplatz.pdf
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/bauarbeiten-rund-um-den-roedeliusplatz-dauern-bis-mitte-2023_a328430
 #: XXX Bauarbeiten in Gange, keine Einschränkungen
-#: last_checked: 2021-09-11
+#: last_checked: 2021-12-10
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 Roedeliusplatz: Asphaltierung	?::inwork 16159,12301 16227,12280 16276,12273
@@ -7134,7 +7136,7 @@ Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straßen und Wegen sowie Was
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6898 (wird hier eine Entlastungsstraße für den Glienicker Weg entstehen?)
 #: XXX Bebauungsplan 9-63
 #: last_checked: 2021-09-09
-#: next_check: 2022-01-01
+#: check_frequency: 360d
 Gewerbegebiet Glienicker Weg: hier enstehen Straßen, evtl. eine Bahnunterführung Richtung Osten und ein Uferweg am Teltowkanal	?::projected 20653,2772 20877,3116 21082,2917 21376,3072 21329,2568 20904,2469 20653,2772
 # 
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-auslegung/artikel.632231.php
@@ -7204,7 +7206,8 @@ Waldstr.: während der Bauarbeiten zur neuen Anschlussstelle vermutlich gesperrt	
 #: by: https://abendblatt-berlin.de/2021/09/03/900-neue-wohnungen-spatenstich-auf-den-buckower-feldern/ (bis Ende 2024, erste Wohnungen im Frühjahr 2023 bezugsfertig)
 #: by: https://www.stadtundland.de/Bauen/Neubau/Neukoelln/im-bau/Buckower-Felder.php.media/110669/Entwicklungsleitfaden_Stand_Juli_2019.pdf
 #: by: https://www.berliner-woche.de/buckow/c-bauen/stadt-und-land-hat-baufelder-an-gemeinwohlorientierte-dritte-vergeben_a327365 (erster Bauabschnitt soll 2024 fertig sein)
-#: XXX mögliche Straßennamen (laut bw):
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_54_4961_5184_online.pdf (Benennung von Straßen, mit Lageplan)
+#: XXX mögliche Straßennamen (laut bw) (mittlerweile im Amtsblatt bestätigt) (fehlen alle in Berlin.coords.data):
 #: XXX * An den Buckower Feldern
 #: XXX * Gensweg
 #: XXX * An den Weiden
@@ -7539,8 +7542,10 @@ Bebauungsplan 10-45: verkehrsberuhigter Bereich sowie Rad/Gehweg geplant	?::proj
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8445 (Festsetzung)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtgut-hellersdorf-alt-hellersdorf.841/post-10583
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf (Straßenbenennung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_54_4961_5184_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. 10-44 und 10-45 verbinden; könnte das gleiche Bauprojekt sein
 #: XXX Brigitte-Reimann-Str. (PLZ=12629) fehlt in Berlin.coords.data
+#: osm_watch: way id="504240852" version="7"
 #: last_checked: 2021-08-07 vvv
 #: check_frequency: 180d vvv
 geplanter Rad- und Fußweg	?::projected 23265,15351 23368,15362

@@ -721,7 +721,7 @@ teilweise mit Leitboys geschützt	RW4; 14208,12235 14291,12220 14381,12205 14427,
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur, danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
-#: last_checked: 2021-12-06
+#: last_checked: 2021-12-10
 #: check_frequency: 30d
 #: next_check: 2022-03-31
 	RW4; 14926,12129 14994,12121 15117,12106
@@ -1559,7 +1559,7 @@ Busspur ist immer gültig	RW5;RW5 9984,12426 9934,12420 9858,12410
 #: next_check_id: ZEUGHAUS-2014
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
 #: last_checked: 2021-12-04
-#: check_frequency: 7d
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-10-31
 	RW5;RW0 10063,12438 10024,12431 9984,12426
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1977,9 +1977,9 @@ die letzten Meter sind benutzungspflichtig	RW3; 13906,13722 14006,13761
 Gehwegplatten	RW2; 14006,13761 13906,13722
 	RW2;RW2 15361,12071 15670,12022
 	RW2;RW1 15670,12022 15717,12015 15863,11992
-	RW2;RW1 15863,11992 16066,11960 16127,11950 16207,11937
-für Radfahrer freigegebene Busspur	RW1; 16207,11937 16317,11920 16368,11912
-	RW1; 16368,11912 16317,11920 16207,11937
+	RW2;RW1 15863,11992 16066,11960 16127,11950 16214,11935
+für Radfahrer freigegebene Busspur	RW1; 16214,11935 16317,11920 16368,11912
+	RW1; 16368,11912 16317,11920 16214,11935
 #: note: Benutzungspflicht unklar. Es existieren widersprüchliche Einbahnstraßenschilder mit und ohne "Radfahrer frei"-Zusatzschildern.
 	RW1; 13086,9825 13136,9883 13155,9907 13216,9983
 	RW1; 13216,9983 13155,9907
@@ -2306,15 +2306,15 @@ Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 	RW3; 12006,12464 12028,12519
 #: by: https://viz.berlin.de/2021/10/verkehrsvorschau-fuer-montag-11-10-2021/
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (ab 1.11.2021)
-#: source_id: viz2021:13.428503,52.518895,16.11.2021,17:00 (bis 30.11.2021) (mittlerweile bis 10.12.2021)
+#: source_id: viz2021:13.428503,52.518895,16.11.2021,17:00 (bis 30.11.2021) (mittlerweile bis 10.12.2021) (bis 22.12.2021)
 #: XXX geschützer Radweg wird gebaut (nach den Bauarbeiten Richtung Süden) vvv
 #: last_checked: 2021-12-08 vvv
-#: check_frequency: 7d vvv
-#: next_check: 2021-12-10 vvv
+# REMOVED --- #: check_frequency: 7d vvv
+#: next_check: 2021-12-22 vvv
 	RW3; 12050,12616 12064,12673 12112,12861 12122,13029
 	RW2; 12122,13029 12126,13088
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -2414,7 +2414,7 @@ neu asphaltiert, relativ breit	RW1; 13785,12292 13732,12526 13730,12535
 	RW6;RW6 15832,12518 15733,12528
 #: confirmed_by: ^^^
 #: by: ^^^
-Busspur ist immer gültig	RW5; 16246,12177 16207,11937
+Busspur ist immer gültig	RW5; 16248,12177 16223,11999
 	RW1;RW1 16860,12861 16484,12871 16439,12872 16384,12874 16376,12874 16312,12876 16242,12878 16197,12880 16146,12881 16073,12883 15950,12886
 	RW4;RW4 16866,13532 16863,13138
 	RW3;RW4 16863,13138 16865,13000 16860,12861
@@ -6330,7 +6330,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2021-11-29 vvv
+#: last_checked: 2021-12-08 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183
 	RW3; 11542,16070 11531,16053
@@ -6984,7 +6984,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: osm_watch: way id="4401920" version="52"
 #: XXX wird mittlerweile verstetigt
 #: confirmed_by: srt
-#: last_checked: 2021-12-04 vvv
+#: last_checked: 2021-12-10 (webcam) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2021-07-23 vvv
 provisorischer Radstreifen	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8995,10370

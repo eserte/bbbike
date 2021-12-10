@@ -296,7 +296,7 @@ Lietzenseeufer	1 2871,11211 2806,11241 2748,11206 2621,11190 2621,11065
 Darßer Str.	1 15000,18056 15019,18104 15053,18118 15152,18115
 # REMOVED (stimmt nicht) --- Schottstr.	1 16276,12273 16389,12394
 # REMOVED (stimmt nicht) --- Rüdigerstr.	1 16389,12394 16485,12384
-Alfredstr.	1 16207,11937 16246,12177 16255,12224
+Alfredstr.	1 16214,11935 16223,11999 16248,12177 16255,12224
 # REMOVED (stimmt nicht) --- Alfredstr.	1 16255,12224 16276,12273
 Fanningerstr.	1s:q4 16890,12135 16794,12144
 Gierkeplatz	1 3447,12269 3456,12296 3478,12306 3510,12301 3528,12276 3521,12243 3493,12228 3463,12237 3447,12269
@@ -2005,7 +2005,7 @@ Frankfurter Allee	1::igndisp 14488,12188 14427,12197 14381,12205 14291,12220 142
 Frankfurter Allee	3nocross::ignrte 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188
 #: note ^^^
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13785,12292 13885,12279 14020,12261
-Frankfurter Allee: Mittelstreifen mit Geländer	3nocross 16066,11960 16127,11950 16207,11937
+Frankfurter Allee: Mittelstreifen mit Geländer	3nocross 16066,11960 16127,11950 16214,11935
 Frankfurter Allee: Mittelstreifen mit Geländer	3nocross 15670,12022 15717,12015 15863,11992
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11656 9905,11680 9991,11690
 #Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13330,13468
@@ -3429,7 +3429,7 @@ Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, k
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
 #: also_indoor: traffic (G(teilweise),ex-H)
-#: last_checked: 2021-11-11 vvv
+#: last_checked: 2021-12-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, teilweise lange Umwege über die Gehwege möglich	2::inwork 16227,12280 16159,12301 16056,12317

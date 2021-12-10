@@ -1298,6 +1298,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8540,12420
 	X 7930,12912
 	X 7111,12743
+#: note: Anforderung für linksabbiegende Radfahrer (Frankfurter Allee -> Atzpodienstr.)
 	X 16413,11906
 	X 16368,11912
 	X 6757,13112
@@ -1388,7 +1389,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # REMOVED --- #: next_check_id: KARLMARXSTR-2018 --- #: XXX provisorische Ampel an der Briesestr. während der Bauarbeiten --- #: last_checked: 2020-02-27 --- #: check_frequency: 90d ---	X::inwork 12794,8103
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
-#: osm_watch: node id="7241153386" version="1"
+#: osm_watch: node id="7241153386" version="3"
 #: last_checked: 2021-11-17 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-10-08
@@ -1402,7 +1403,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12901,14093
 	X 14709,12156
 #: XXX_prog nicht relevant für Radfahrer Richtung Osten oder beim Einbiegen ins oder Abbiegen aus dem Wohngebiet
-	X 16207,11937
+	X 16214,11935
 	X 6575,8469
 	X 5352,7428
 	X 8249,16741

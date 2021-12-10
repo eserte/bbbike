@@ -427,7 +427,7 @@ Breitestr. - Lindenstr.: bereits an der Kreuzung "Wall am Kiez" auf die linke St
 # REMOVED (reguläres Abbiegen mittlerweile möglich) --- Buchberger Str. - Frankfurter Allee: zum Überqueren der Frankfurter Allee entweder Ampel an der Atzpodienstr. (rechts) oder Alfredstr. (links) benutzen	CP; 16242,11533 16368,11912 16317,11920
 # REMOVED (nicht mehr notwendig, obwohl man das zwecks Umgehung einer weiteren Ampel machen kann) --- Holzmarktstr. - Schillingstr.: bereits an der Kreuzung Stralauer Allee/Alexanderstr. auf die linke Straßenseite wechseln	PI; 11347,12223 11388,12202 11417,12243 11485,12391
 # REMOVED (nicht mehr!) --- #: XXX_prog: Zeitverlust durch Umweg; Ampel wird nicht in der Berechnung verwendet! --- Schillingstr. - Holzmarktstr.: zum Linksabbiegen die Ampel an der Kreuzung Alexanderstr. benutzen	CP; 11485,12391 11417,12243 11388,12202 11513,12138
-Frankfurter Allee - Bürgerheimstr.: bereits an der Ampel Alfredstr. auf die linke Straßenseite wechseln, oder an der Ampel Buchberger Str. die Straßenseite wechseln	PI; 16207,11937 16317,11920 16326,11966
+Frankfurter Allee - Bürgerheimstr.: bereits an der Ampel Alfredstr. auf die linke Straßenseite wechseln, oder an der Ampel Buchberger Str. die Straßenseite wechseln	PI; 16214,11935 16317,11920 16326,11966
 Bürgerheimstr. - Frankfurter Allee: auf dem linken Gehweg bis zur Atzpodienstr. fahren und dort die Straßenseite wechseln	CP; 16326,11966 16317,11920 16368,11912
 Gradestr. - Moosrosenstr.: entweder schon an der Holzmindener Str. die Straßenseite wechseln oder am Busbahnhof umdrehen	PI; 12773,5248 12727,5244 12726,5147
 Moosrosenstr. - Gradestr.: auf dem linken Gehweg bis Höhe Busbahnhof fahren und dort die Straßenseite wechseln	CP; 12726,5147 12727,5244 12582,5232
@@ -565,7 +565,7 @@ Mahlsdorfer Str.: zur Weiterfahrt Richtung B1 oder Dorfstr. nicht den Radweg ben
 Kyritzer Str.: nicht ausgeschildert	CP2; 22573,15552 22579,15416
 Buckower Damm - Britzer Park: bereits an der Kreuzung Mohriner Allee auf den linken Gehweg wechseln	PI; 12564,4308 12637,4014 12734,4021
 Britzer Park - Buckower Damm: linken Gehweg bis zur Ampel benutzen	CP; 12734,4021 12637,4014 12655,3882
-Magdalenenstr. - Frankfurter Allee: linken Gehweg bis zur Ampel benutzen	CP; 16158,12191 16127,11950 16207,11937
+Magdalenenstr. - Frankfurter Allee: linken Gehweg bis zur Ampel benutzen	CP; 16158,12191 16127,11950 16214,11935
 Malchower Chaussee - Hohenschönhauser Weg: bereits an der Kreuzung Malchower Chaussee/Ortnitstr. auf den linken Radweg wechseln	PI; 15610,18596 15600,18551 15825,18385
 Bornholmer Str. - Tegnerstr.: bereits an der Ampel Schönfließer Str. auf den linken Gehweg wechseln	PI; 10620,16497 10699,16492 10708,16579
 Dietzgenstr. - (Am Nordgraben): bereits am Kräuterweg auf den linken Gehweg wechseln	PI; 10085,21840 10097,21809 10177,21802

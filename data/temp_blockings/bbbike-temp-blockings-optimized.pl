@@ -2002,6 +2002,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        {
          'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5666333-3496862-weihnachtsmarkt-auf-dem-schlossplatz-koe.html (2021 unter Vorbehalt)
+#: by: https://berliner-abendblatt.de/2021/12/10/dieses-wochenende-weihnachtsmarkt-in-der-altstadt/
 	2::xmas 22111,4562 22162,4546 22214,4548
 ',
          'from' => 1639054800,
@@ -3954,8 +3955,9 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: next_check_id: VIRCHOW-2020
 #: next_check_id: CORONA-2020
+#: by: https://www.charite.de/klinikum/themen_klinikum/themenschwerpunkt_coronavirus/#c30751057 (Eingangskontrollen)
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-08-12 (website) vvv
+#: last_checked: 2021-12-10 (website) vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -3986,7 +3988,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2021-12-09 vvv
+#: last_checked: 2021-12-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4573,7 +4575,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: FRANKFURTER-2021
 #: note: auch last Schild der Wasserbetriebe bis März 2022
-#: last_checked: 2021-12-06 vvv
+#: last_checked: 2021-12-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-31 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -4918,17 +4920,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-in-der-baerenlauchstrasse_a326432
-	q4::inwork 19765,4876 19760,4907 19755,4962 19744,5063 19737,5134 19735,5158
-',
-         'from' => 1635634800,
-         'id' => 3470,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1139553.php',
-         'text' => 'Bärenlauchstr.: Fahrbahnarbeiten, vom 1. November 2021 bis voraussichtlich Anfang Dezember 2021',
-         'type' => 'handicap',
-         'until' => 1639155600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4979,7 +4971,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
 #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fertig, aber die Bauarbeiten sind noch nicht beendet)
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (G,H)
 #: last_checked: 2021-12-07 vvv
 #: check_frequency: 4d vvv
 	q3::inwork 14965,11924 15077,11910
@@ -5005,9 +4997,9 @@ Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
          'from' => 1637953683,
          'id' => 3482,
          'source_id' => '217202207',
-         'text' => 'Ruhlsdorf: Bauarbeiten, Sperrung, vermutlich auch für Radfahrer, bis 31.10.2022',
+         'text' => 'Ruhlsdorf: Bauarbeiten, Sperrung, vermutlich auch für Radfahrer, bis 31.03.2022',
          'type' => 'handicap',
-         'until' => 1667257200
+         'until' => 1648742400
        },
        {
          'data' => '#: next_check_id: S-SCHICHAUWEG-2021
