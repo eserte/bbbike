@@ -1831,7 +1831,7 @@ Luxemburger Str. -> Triftstr.: Mittelstreifen	3::igndisp 6833,15215 6715,15152 6
 Buschkrugallee	1::igndisp 13236,6489 13261,6456 13294,6386 13307,6359 13316,6320
 Buschkrugallee	1::igndisp 13316,6320 13289,6355 13275,6382 13248,6452 13236,6489
 Frankfurter Allee	1::igndisp 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188
-Frankfurter Allee	1::igndisp 14488,12188 14427,12197 14381,12205 14291,12220 14208,12235
+Frankfurter Allee	1::igndisp 14488,12188 14427,12197 14381,12205 14280,12223 14208,12235
 Frankfurter Allee	3nocross::ignrte 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 13785,12292 13885,12279 14020,12261
 Liebigstr. -> Frankfurter Allee: unbequem passierbarer Mittelstreifen	3::igndisp 13927,12370 13885,12279 14020,12261
@@ -3023,7 +3023,7 @@ Drängelgitter	BNP:5:72 11010,-378
 Drängelgitter	BNP:5:-42 22268,11285
 Drängelgitter	BNP:5:66 -7228,15504
 Drängelgitter	BNP:5:-249 -7182,15524
-Drängelgitter und Schranke	BNP:5:-154:trailer=15 14285,12190
+Drängelgitter und Schranke	BNP:5:-156:trailer=15 14274,12190
 Drängelgitter	BNP:5:-58 14314,14841
 Drängelgitter	BNP:3:70:trailer=10 12373,2375
 Drängelgitter	BNP:3:64:trailer=10 12280,2330

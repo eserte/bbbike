@@ -2001,7 +2001,7 @@ Buschkrugallee	1::igndisp 13316,6320 13289,6355 13275,6382 13248,6452 13236,6489
 #: note ^^^
 #: note: Mittelstreifen, schlechte Überquerungsmöglichkeiten vvv
 Frankfurter Allee	1::igndisp 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188
-Frankfurter Allee	1::igndisp 14488,12188 14427,12197 14381,12205 14291,12220 14208,12235
+Frankfurter Allee	1::igndisp 14488,12188 14427,12197 14381,12205 14280,12223 14208,12235
 Frankfurter Allee	3nocross::ignrte 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188
 #: note ^^^
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13785,12292 13885,12279 14020,12261
@@ -3103,7 +3103,7 @@ Drängelgitter	BNP:5 -7182,15524
 #: by: ^^^
 #: by: (x)qusor
 #: XXX_prog: BS (wg. Umfahrung der Schranke; min. 1x; wenn zugeparkt ist, dann 2x)
-Drängelgitter und Schranke	BNP:5::trailer=15 14285,12190
+Drängelgitter und Schranke	BNP:5::trailer=15 14274,12190
 Drängelgitter	BNP:5 14314,14841
 # REMOVED (nur noch auf einer Seite) --- Drängelgitter	BNP:5 20586,10935
 Drängelgitter	BNP:3::trailer=10 12373,2375
@@ -3482,7 +3482,7 @@ Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11923,11881 11940,1
 #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022)
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht außerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht
 #: osm_watch: way id="308312347" version="3"
-#: last_checked: 2021-11-29
+#: last_checked: 2021-12-11
 #: check_frequency: 30d
 #: next_check: 2022-08-15
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608

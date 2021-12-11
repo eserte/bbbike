@@ -4575,7 +4575,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: FRANKFURTER-2021
 #: note: auch last Schild der Wasserbetriebe bis M‰rz 2022
-#: last_checked: 2021-12-10 vvv
+#: last_checked: 2021-12-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-31 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -4972,7 +4972,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
 #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straﬂenbahn fertig, aber die Bauarbeiten sind noch nicht beendet)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-12-07 vvv
+#: last_checked: 2021-12-11 vvv
 #: check_frequency: 4d vvv
 	q3::inwork 14965,11924 15077,11910
 	q3::inwork; 15077,11910 15133,11902 15256,11884

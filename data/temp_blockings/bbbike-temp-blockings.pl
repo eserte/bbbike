@@ -4361,9 +4361,9 @@ EOF
        text  => 'Invalidenstraße, Prenzlauer Berg Richtung Tiergarten Zwischen Kreuzung Gartenstraße und Kreuzung Chausseestraße Baustelle, gesperrt, Dauer: 19.04.2006 09:00 Uhr bis 15:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 9383,13986 9285,13965 9274,13963 9203,13953
-	2 9151,13941 9203,13953
-	2 9151,13941 9085,13919
+	2 9383,13986 9285,13965 9274,13963 9189,13953
+	2 9148,13944 9189,13953
+	2 9148,13944 9085,13919
 	2 9085,13919 8935,13844
 EOF
      },
@@ -19661,7 +19661,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017330',
        data  => <<EOF,
-	q4::inwork; 9383,13986 9285,13965 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8841,13800 8685,13728
+	q4::inwork; 9383,13986 9285,13965 9274,13963 9189,13953 9148,13944 9085,13919 8935,13844 8841,13800 8685,13728
 EOF
      },
      { from  => 1308261600, # 2011-06-17 00:00
@@ -21896,7 +21896,7 @@ EOF
        source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
        data  => <<EOF,
 # REMOVED --- #: tempex: 20170630T2000-20170701T2359
-	2::temp 14161,11930 14285,12190
+	2::temp 14161,11930 14274,12190
 EOF
      },
      { from  => 1377867600, # 2013-08-30 15:00
@@ -29747,7 +29747,7 @@ EOF
 #: priority: #B vvv
 #: last_checked: 2019-12-14 vvv
 #: check_frequency: 7d vvv
-# REMOVED ---	q4::inwork; 13745,12118 13991,11992 14045,11965 14097,11949 14161,11930 14306,11889 14416,11815 14461,11738
+# REMOVED ---	q4::inwork; 13745,12118 13991,11992 14055,11964 14097,11949 14161,11930 14306,11889 14416,11815 14461,11738
 # REMOVED ---	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
 # REMOVED ---	2::inwork 14461,11738 14416,11815
 # REMOVED ---	q4::inwork; 14395,11753 14461,11738
@@ -29759,8 +29759,8 @@ EOF
 # REMOVED ---	q4::inwork 14496,11620 14513,11657
 # REMOVED --- #: note: Sperrung zur Mainzer Str. ---	q3::inwork 14306,11889 14272,11775
 # REMOVED ---	q3::inwork 14354,12012 14306,11889
-# REMOVED --- #: note: Sperrung zur Niederbarnimstr. ---	q3::inwork 14208,12235 14045,11965
-# REMOVED --- #: note: Sperrung zur Simon-Dach-Str. ---	q3::inwork 14045,11965 14006,11843
+# REMOVED --- #: note: Sperrung zur Niederbarnimstr. ---	q3::inwork 14208,12235 14055,11964
+# REMOVED --- #: note: Sperrung zur Simon-Dach-Str. ---	q3::inwork 14055,11964 14021,11910 14006,11843
 # REMOVED --- #: note: Umwege am Wismarplatz, Richtung Kinzigstr. ---	q3::inwork 14475,11778 14461,11738
 # REMOVED (hier nicht) --- #: note: Umwege am Wismarplatz, Richtung Weserstr. ---	q3::inwork 14475,11778 14416,11815
 #: check_frequency: ^^^
@@ -33113,7 +33113,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRANKFURTER-2021
 #: note: auch last Schild der Wasserbetriebe bis März 2022
-#: last_checked: 2021-12-10 vvv
+#: last_checked: 2021-12-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-03-31 vvv
 	3 14888,11934 14926,12129 15003,12241
@@ -33981,7 +33981,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
 #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fertig, aber die Bauarbeiten sind noch nicht beendet)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-12-07 vvv
+#: last_checked: 2021-12-11 vvv
 #: check_frequency: 4d vvv
 	q3::inwork 14965,11924 15077,11910
 	q3::inwork; 15077,11910 15133,11902 15256,11884

@@ -28,7 +28,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn nur für Baufahrzeuge	q3::inwork 125
 # 
 #: note: laut rbb bis 29.10.2021, laut Parkverbotsschilder bis 28.1.2022 vvv
 #: also_indoor: traffic (H(falsch),G(teilweise))
-#: last_checked: 2021-12-07 vvv
+#: last_checked: 2021-12-11 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-01-28 vvv
 Jessnerstr.: Sperrung der Fahrbahn nördlich der Oderstr.	q3::inwork 14946,11697 14986,11760
@@ -189,7 +189,7 @@ Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,H)
 #: valid: 20171026-
-#: last_checked: 2021-12-02 (osm)
+#: last_checked: 2021-12-11
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -227,7 +227,7 @@ Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehw
 #: next_check_id: CHAUSSEE-2020
 #: source_id: 2147346552 (bis 16.7.2021)
 #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert)
-#: last_checked: 2021-12-08
+#: last_checked: 2021-12-11
 #: check_frequency: 90d
 #: next_check: 2022-06-30
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -236,7 +236,7 @@ Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570
 #: note: laut rbb bis voraussichtlich 30.4.2022
 #: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
 #: osm_watch: way id="129104626" version="16"
-#: last_checked: 2021-12-08
+#: last_checked: 2021-12-11
 #: check_frequency: 90d
 #: next_check: 2022-04-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr.	q2::inwork 8266,14346 8442,14456
@@ -417,9 +417,9 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # REMOVED --- #: next_check_id: INVALIDEN-2014 vvv --- #: last_checked: 2015-08-10 vvv --- #: next_check: 2015-08-30 vvv --- #: XXX voraussichtlich gesperrt bis zum 30. August 2015 --- #: priority: #A vvv --- #: source_id: IM_017330 --- #: source_id: INKO_113944 --- #: source_id: IM_021586 --- #: source_id: IM_021585 --- #: XXX siehe auch temporäre Ampel an der Chausseestr. sowie an der Luisenstr. --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1207/nachricht4724.html --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1403/nachricht5212.html
 # REMOVED --- Caroline-Michaelis-Str.: Bauarbeiten, Zufahrt zur Invalidenstr. umständlich	q4::inwork; 9151,13941 9125,13973
 # REMOVED --- #: XXX_prog: evtl. als q4+ eintragen (falls möglich), 9km/h sind eigentlich möglich
-# REMOVED (but check!) --- Invalidenstr. (Mitte): Baustelle, Fahrbahn zwischen Caroline-Michaelis-Str. und Gartenstr. gesperrt	q4::inwork 9383,13986 9285,13965 9274,13963 9203,13953 9151,13941
+# REMOVED (but check!) --- Invalidenstr. (Mitte): Baustelle, Fahrbahn zwischen Caroline-Michaelis-Str. und Gartenstr. gesperrt	q4::inwork 9383,13986 9285,13965 9274,13963 9189,13953 9151,13941
 # REMOVED (but check!) --- Invalidenstr.: Fahrbahn zwischen Gartenstr. und Bergstr. teilweise gesperrt	q2::inwork 9383,13986 9659,14043 9676,14046
-# REMOVED (mittlerweile besser befahrbar, denke ich) --- Invalidenstr. (Mitte): Baustelle, Fahrbahn in Richtung Gartenstr. zwischen Caroline-Michaelis-Str. und Eichendorffstr. gesperrt	q4::inwork; 9151,13941 9203,13953
+# REMOVED (mittlerweile besser befahrbar, denke ich) --- Invalidenstr. (Mitte): Baustelle, Fahrbahn in Richtung Gartenstr. zwischen Caroline-Michaelis-Str. und Eichendorffstr. gesperrt	q4::inwork; 9151,13941 9189,13953
 # REMOVED (wieder offen ab 2013-08-29) --- Invalidenstr. (Mitte): Baustelle, Richtung Alt-Moabit zwischen Gartenstr. und Hessische Str. gesperrt	q4::inwork; 8690,13723 8661,13715 8622,13696
 # REMOVED (wieder offen ab 2013-08-29) --- #: source_id: IM_019009 --- #: source_id: IM_018437 --- Hessische Str.: Sackgasse zur Invalidenstr.	q3::inwork 8775,13606 8690,13723
 # REMOVED --- #: XXX Einbahnstraßenregelung danach wieder aufheben! --- #: XXX Vollsperrung ab 6. August für vier Wochen --- können Radfahrer trotzdem hier trotzdem fahren? --- #: source_id: IM_024549 --- #: last_checked: 2015-04-01 --- #: next_check: 2015-08-06 --- #: priority: #A --- Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, gesperrt Richtung Osten, bis 15. August 2015	q4::inwork; 8870,13926 9011,14019
@@ -2323,7 +2323,7 @@ Idealpassage: Fußgänger, eng, Schrittgeschwindigkeit	q3 12434,8776 12582,8651
 (Normannenstr. - Jobcenter Lichtenberg): teilweise auf Geweg ausweichen	q2 16089,12522 16122,12524 16132,12621
 #: note: theoretisch wäre q2 möglich
 (Parkweg): Fußgänger, Radfahren offiziell nicht erlaubt	q4+ 14690,12900 14419,12978
-Zur Kreutzigerstr.: enger Hausdurchgang	q4+ 14291,12220 14285,12190
+Zur Kreutzigerstr.: enger Hausdurchgang	q4+ 14280,12223 14274,12190
 Müggelstr.: einige Fußgänger	q3 14994,12121 14994,12064
 #: XXX_prog BS Bordstein an der Fischerstr.
 (Zobtener Str. - Fischerstr.): Fußgänger, Rampe, Bordstein	q2 16353,10207 16404,10286

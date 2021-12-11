@@ -442,7 +442,7 @@ Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 92
 Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
 #: by: http://www.infravelo.de/projekt/gartenstrasse-und-gerichtstrasse-2/ (2. Quartal 2022 - 4. Quartal 2022)
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: last_checked: 2021-11-20 (mapillary) vvv
+#: last_checked: 2021-12-11 vvv
 #: next_check: 2022-12-31 vvv
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
@@ -525,7 +525,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.683334.php
 #: by: http://www.berliner-woche.de/gesundbrunnen/bauen/kopfsteinpflaster-kommt-weg-d144903.html
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2021-10-31
+#: last_checked: 2021-12-11
 #: check_frequency: 90d
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
@@ -535,7 +535,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
-#: last_checked: 2021-11-29
+#: last_checked: 2021-12-11
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -672,8 +672,8 @@ Josef-Nawrocki-Str.: Asphalt	Q0 25552,4829 25554,4758 25695,4714 25724,4706 2579
 Bötzowstr.: Kopfsteinpflaster	Q2 12161,13711 12189,13750 12280,13880 12361,13985 12423,14066 12486,14143
 Kohlhasenbrücker Str.: Kopfsteinpflaster	Q2 -7232,445 -7180,378 -7167,362 -7123,310
 Libauer Str.: Kopfsteinpflaster	Q2 13895,11663 13711,11458
-Niederbarnimstr.: Kopfsteinpflaster	Q2 14208,12235 14045,11965
-Simon-Dach-Str.: Kopfsteinpflaster	Q2- 14045,11965 14006,11843
+Niederbarnimstr.: Kopfsteinpflaster	Q2 14208,12235 14055,11964
+Simon-Dach-Str.: Kopfsteinpflaster	Q2- 14055,11964 14021,11910 14006,11843
 Simon-Dach-Str.: Kopfsteinpflaster	Q2 14006,11843 13981,11746 13954,11647 13888,11405
 Krossener Str.: Kopfsteinpflaster	Q2 14561,11600 14496,11620 14424,11639 14358,11656 14247,11681 14102,11715
 Krossener Str.: Kopfsteinpflaster	Q2- 14102,11715 13981,11746
@@ -2078,6 +2078,7 @@ Caroline-Tübbecke-Ufer: Parkweg	Q1 15000,9820 15043,9790 15367,9691
 Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 15453,10419
 (Rummelsburger Ufer - Emma-Ihrer-Str.): glatt gepflastert	Q0 15453,10419 15550,10361
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8907 (wird neu gepflastert)
+#: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/wegesanierung-angeschoben_a330248
 #: XXX möglicherweise Änderung des Wegbelags
 #: next_check: 2022-06-01
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
@@ -2559,7 +2560,7 @@ Lindenstr.: äußere Fahrstreifen mit Kopfsteinpflaster	Q2+ 22154,4923 22196,4847
 Lienhardweg: asphaltiert	Q0 22958,2005 23099,2031 23209,2050 23325,2070 23431,2092 23526,2112
 Bendigstr.: Kopfsteinpflaster	Q2 23431,2092 23448,2013 23497,1812
 Logauweg: Kopfsteinpflaster	Q2 23390,1785 23497,1812 23627,1835
-(Walter-Nicklitz-Promenade): glattes Verbundsteinpflaster	Q0- 8290,15304 8329,15397
+(Walter-Nicklitz-Promenade): wassergebundene Decke	Q1 8290,15304 8329,15397
 Pankebrücke: Holzbohlen	Q1 8329,15397 8308,15409
 (Walter-Nicklitz-Promenade): glattes Verbundsteinpflaster	Q0- 8308,15409 8312,15470 8156,15614
 Parkstr.: leicht welliger Asphalt	Q0 9905,18329 10075,18472 10205,18575 10359,18646 10496,18704
@@ -2848,8 +2849,10 @@ Eschengraben: Asphalt	Q0 11428,16745 11369,16744 11351,16744
 Eschengraben: Kopfsteinpflaster	Q2 11351,16744 11274,16743 11008,16729
 #: note: es gab widersprüchliche Angaben: mäßiger Beton Q1 (by anonymous) und guter Asphalt Q0 (by openbc...), die verkehrsberuhigte Zone hat sich wahrscheinlich erledigt
 Tiroler Str.: schlechter Asphalt	Q1- 10862,17087 10654,17091 10497,17095 10226,17098 10114,17098
-#: note: laut ADFC-Karte/neu schlecht geeignet:
-Weg am Humboldthain: Parkweg	Q1 8742,15298 8757,15328 8735,15478 8831,15644 8934,15740
+#: note: laut ADFC-Karte/neu schlecht geeignet: vvv
+Weg am Humboldthain: Asphalt	Q0 8742,15298 8757,15328
+Weg am Humboldthain: Parkweg	Q1 8757,15328 8735,15478 8831,15644 8934,15740
+#: note ^^
 #: note: es gab einen unklaren anonymen Beitrag: Asphalt Q0, aber bezog sich das auf den Klinkeplatz oder die Kaiserstr.?:
 Kaiserstr. (Spandau): Asphalt	Q0 -3854,16997 -3845,16921 -3832,16847 -3819,16769 -3808,16690 -3779,16537 -3755,16369
 Hubertusstr.: Kopfsteinpflaster	Q2 -5178,17258 -5042,17191 -4871,17205
@@ -10602,7 +10605,7 @@ Virchowstr.: Kopfsteinpflaster	Q2 12784,13610 12766,13621 12743,13634
 # REMOVED (neu asphaltiert) --- #: next_check_id: SPANDAUERSTR-2014 --- #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein --- #: last_checked: 2014-03-24 --- #: check_frequency: 7d --- Spandauer Str.: mäßiger Asphalt im Bereich Kreuzung Rathaustr.	Q1 10431,12709 10601,12521 10644,12469
 # REMOVED --- #: next_check_id: INVALIDENSTRMOABIT-2014 --- #: XXX wahrscheinlich wird nach den Bauarbeiten die Fahrbahn besser sein --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/invalidenstr/de/bau.shtml ---#: XXX ab April 2014 wird hier neu gebaut --- #: last_checked: 2014-06-02 --- #: check_frequency: 14d --- Invalidenstr.: mäßiger Asphalt vor der Kreuzung Alt-Moabit	Q1 7573,13149 7563,13143 7433,13070 7415,13060 --- Invalidenstr.: mäßiger Asphalt vor der Kreuzung Alt-Moabit	Q1 7415,13060 7346,13022
 # REMOVED (ist schon jetzt gut befahrbar) --- #: next_check_id: INVALIDEN-2014 --- #: XXX nach den Bauarbeiten wahrscheinlich neuer Asphalt --- #: last_checked: 2014-06-26 --- #: next_check: 2015-05-31
-Invalidenstr.: Asphalt	Q0 8935,13844 9085,13919 9151,13941
+Invalidenstr.: Asphalt	Q0 8935,13844 9085,13919 9148,13944
 (Möllendorffstr. - Paul-Junius-Str.): Verbundsteinpflaster	Q1+ 15513,13539 15470,13509
 (Möllendorffstr. - Paul-Junius-Str.): Asphalt mit einigen Schäden	Q0- 15470,13509 15370,13508
 (Fanny-Zobel-Str. - Uferweg): Verbundsteinpflaster	Q1 14049,10164 14116,10149
@@ -16448,7 +16451,7 @@ Am Bäkequell: gutes Kopfsteinpflaster	Q1- 4593,5235 4656,5101
 # 
 #: by: holger (hd, sav):
 #: confirmed_by: srt
-Caroline-Michaelis-Str.: Asphalt	Q0 8825,14401 8992,14176 9070,14058 9151,13941
+Caroline-Michaelis-Str.: Asphalt	Q0 8825,14401 8992,14176 9070,14058 9148,13944
 # 
 #: by: Bertil: vvv
 #: note: er war sich nicht sicher, Bestätigung durch öffentliche Fotos
@@ -28010,10 +28013,11 @@ Kernhofer Str.: Kopfsteinpflaster	Q2+ 15434,11086 15386,10961
 Kernhofer Str.: Kopfsteinpflaster	Q2 15386,10961 15380,10946
 Kernhofer Str.: glattes Pflaster	Q0 15380,10946 15355,10875
 Eichendorffstr.: Kopfsteinpflaster	Q2 9275,13720 9231,13843
-Eichendorffstr.: Kopfsteinpflaster	Q2- 9231,13843 9203,13953
+Eichendorffstr.: Kopfsteinpflaster	Q2- 9231,13843 9189,13953
 Novalisstr.: Kopfsteinpflaster	Q2 9353,13521 9275,13720
 #: corrected_by: srt (Q1 -> Q0)
 Philippstr.: Asphalt	Q0 8892,13498 8833,13440
+#: confirmed_by: srt
 Schlegelstr.: Asphalt	Q0 9316,13870 9231,13843 9042,13707
 Claire-Waldoff-Str.: Asphalt	Q0 9246,13235 9132,13187
 Am Zirkus: Asphalt	Q0 9118,13070 9137,13032
@@ -30448,4 +30452,8 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 13755,10896
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 13856,10864
 Kreuzungsbereich asphaltiert	Q0 14447,10491
 Einmündungsbereich asphaltiert	Q0 8054,14257
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 9231,13843
+Kreuzungsbereich asphaltiert	Q0 8899,15147
+Kreuzungsbereich asphaltiert	Q0 6794,15553
+Einmündungsbereich mit Kleinsteinpflaster	Q1 14986,11760
 #: ignore ^^^

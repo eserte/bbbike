@@ -710,18 +710,19 @@ provisorische Radspuren	RW4; 10601,12521 10644,12469 10673,12434 10738,12364
 #: note: Frankfurter Allee ab Möllendorffstr. Richtung Westen
 	RW3; 15361,12071 15117,12106
 asphaltiert	RW2; 15117,12106 14994,12121 14926,12129 14854,12137 14709,12156
+#: note: hier nicht eindeutig: Radspur per Gelbmarkierung existiert ebenfalls, ist aber teilweise durch gelbe Kreuze ungültig gemacht?
 	RW2; 14709,12156 14621,12168
 	RW4; 14621,12168 14523,12183 14488,12188 14427,12199 14381,12207 14291,12222 14208,12235
 	RW2; 14208,12235 14020,12261
 asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 #: note: Frankfurter Allee Richtung Osten bis Möllendorffstr.
-	RW2; 13785,12292 13885,12279 14020,12261 14208,12235
+	RW1; 13785,12292 13885,12279 14020,12261 14208,12235
 #: note: alter Bürgersteigradweg existiert noch, ist aber abgesperrt
-teilweise mit Leitboys geschützt	RW4; 14208,12235 14291,12220 14381,12205 14427,12197 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129
+teilweise mit Leitboys geschützt	RW4; 14208,12235 14280,12223 14381,12205 14427,12197 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur, danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
-#: last_checked: 2021-12-10
+#: last_checked: 2021-12-11
 #: check_frequency: 30d
 #: next_check: 2022-03-31
 	RW4; 14926,12129 14994,12121 15117,12106
@@ -1592,17 +1593,19 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: osm_watch: way id="882672444" version="4"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2021-10-13 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2021-03-11 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
+#: last_checked: 2021-11-05 (mapillary) vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
 provisorische Radspur	RW4; 10625,12206 10659,12259 10675,12280
 # REMOVED ---	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
 provisorische Radspur	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
+#: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
+#: last_checked: 2021-11-25 (mapillary)
 provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
 #: next_check ^^^
 #: check_frequency ^^^
@@ -2478,7 +2481,7 @@ mit grüner Leitlinie	RW7;RW7 10709,13629 10597,13647 10445,13675 10301,13701 102
 mit grüner Leitlinie	RW7;RW7 9900,13653 9744,13584 9609,13522 9312,13388 9293,13366
 mit grüner Leitlinie	RW7;RW7 10777,13614 10872,13570 11059,13480 11104,13456
 	RW7;RW7 11059,13480 11079,13492
-	RW2;RW2 9151,13941 9070,14058
+	RW2;RW2 9148,13944 9070,14058
 	RW1;RW1 9070,14058 9167,14127 9192,14145
 	RW3;RW1 9192,14145 9224,14169
 	RW2;RW2 9224,14169 9272,14208
@@ -2536,7 +2539,7 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 	RW3; 8831,13973 8870,13926 8935,13844
 	RW3; 8935,13844 8870,13926
 	RW4;RW4 8935,13844 9085,13919
-	RW3;RW3 9085,13919 9151,13941 9203,13953 9274,13963
+	RW3;RW3 9085,13919 9148,13944 9189,13953 9274,13963
 Straßenbahnkap mit Gehwegpflasterung	RW1;RW1 9274,13963 9285,13965 9383,13986
 	RW3; 8935,13844 8841,13800
 #: note: hier existiert noch ein alter enger Radweg, der aber nicht weiter "beworben" wird
@@ -6948,9 +6951,9 @@ Tempo 10	RW6;RW6 14798,12502 15005,12443
 #: note: gestrichelte Linie
 	RW3; 14461,11738 14513,11657
 asphaltiertes Straßenbahnkap	RW1;RW1 14461,11738 14416,11815
-asphaltiertes Straßenbahnkap	RW1; 13991,11992 14045,11965
+asphaltiertes Straßenbahnkap	RW1; 13991,11992 14055,11964
 asphaltiertes Straßenbahnkap	RW1; 14161,11930 14097,11949
-	RW4; 14097,11949 14045,11965
+	RW4; 14097,11949 14055,11964
 #: by: mapillary
 	RW6;RW6 4471,19124 4519,19040 4934,19075
 #: note: Schild steht etwa 30m weiter hinten
@@ -7370,6 +7373,7 @@ Gelbmarkierung	RW3;RW3 8971,864 9014,898 9024,906 9058,932 9129,986
 # 
 	RW7;RW7 6383,15972 6484,16085 6587,16199
 	RW7;RW7 6530,15849 6383,15972 6244,16096
+	RW7;RW7 6555,15827 6690,15671 6794,15553
 # 
 #: next_check_id: TEGELERBRUECKE-2021
 #: by: osm

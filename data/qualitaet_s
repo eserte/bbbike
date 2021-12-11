@@ -437,8 +437,8 @@ Josef-Nawrocki-Str.: Asphalt	Q0 25552,4829 25554,4758 25695,4714 25724,4706 2579
 Bötzowstr.: Kopfsteinpflaster	Q2 12161,13711 12189,13750 12280,13880 12361,13985 12423,14066 12486,14143
 Kohlhasenbrücker Str.: Kopfsteinpflaster	Q2 -7232,445 -7180,378 -7167,362 -7123,310
 Libauer Str.: Kopfsteinpflaster	Q2 13895,11663 13711,11458
-Niederbarnimstr.: Kopfsteinpflaster	Q2 14208,12235 14045,11965
-Simon-Dach-Str.: Kopfsteinpflaster	Q2 14045,11965 14006,11843
+Niederbarnimstr.: Kopfsteinpflaster	Q2 14208,12235 14055,11964
+Simon-Dach-Str.: Kopfsteinpflaster	Q2 14055,11964 14021,11910 14006,11843
 Simon-Dach-Str.: Kopfsteinpflaster	Q2 14006,11843 13981,11746 13954,11647 13888,11405
 Krossener Str.: Kopfsteinpflaster	Q2 14561,11600 14496,11620 14424,11639 14358,11656 14247,11681 14102,11715
 Krossener Str.: Kopfsteinpflaster	Q2 14102,11715 13981,11746
@@ -1939,7 +1939,7 @@ Lindenstr.: äußere Fahrstreifen mit Kopfsteinpflaster	Q2 22154,4923 22196,4847
 Lienhardweg: asphaltiert	Q0 22958,2005 23099,2031 23209,2050 23325,2070 23431,2092 23526,2112
 Bendigstr.: Kopfsteinpflaster	Q2 23431,2092 23448,2013 23497,1812
 Logauweg: Kopfsteinpflaster	Q2 23390,1785 23497,1812 23627,1835
-(Walter-Nicklitz-Promenade): glattes Verbundsteinpflaster	Q0 8290,15304 8329,15397
+(Walter-Nicklitz-Promenade): wassergebundene Decke	Q1 8290,15304 8329,15397
 Pankebrücke: Holzbohlen	Q1 8329,15397 8308,15409
 (Walter-Nicklitz-Promenade): glattes Verbundsteinpflaster	Q0 8308,15409 8312,15470 8156,15614
 Parkstr.: leicht welliger Asphalt	Q0 9905,18329 10075,18472 10205,18575 10359,18646 10496,18704
@@ -2155,7 +2155,8 @@ Eschengraben: Kopfsteinpflaster	Q2 11473,16746 11441,16745 11428,16745
 Eschengraben: Asphalt	Q0 11428,16745 11369,16744 11351,16744
 Eschengraben: Kopfsteinpflaster	Q2 11351,16744 11274,16743 11008,16729
 Tiroler Str.: schlechter Asphalt	Q1 10862,17087 10654,17091 10497,17095 10226,17098 10114,17098
-Weg am Humboldthain: Parkweg	Q1 8742,15298 8757,15328 8735,15478 8831,15644 8934,15740
+Weg am Humboldthain: Asphalt	Q0 8742,15298 8757,15328
+Weg am Humboldthain: Parkweg	Q1 8757,15328 8735,15478 8831,15644 8934,15740
 Kaiserstr. (Spandau): Asphalt	Q0 -3854,16997 -3845,16921 -3832,16847 -3819,16769 -3808,16690 -3779,16537 -3755,16369
 Hubertusstr.: Kopfsteinpflaster	Q2 -5178,17258 -5042,17191 -4871,17205
 Hubertusstr.: Schotterstraße	Q2 -4871,17205 -4787,17136
@@ -9230,7 +9231,7 @@ Röblingstr.: Verbundsteinpflaster	Q1 7598,5926 7607,5944
 Virchowstr.: Kopfsteinpflaster	Q2 12784,13610 12766,13621 12743,13634
 (Borussenstr. - Kronprinzessinnenweg): Verbundsteinpflaster	Q1 -4134,1984 -4139,1976 -4166,1941 -4180,1941
 (Rasthof Dreilinden): Asphalt	Q0 -4003,1234 -3994,1170 -3642,1199 -3577,1148
-Invalidenstr.: Asphalt	Q0 8935,13844 9085,13919 9151,13941
+Invalidenstr.: Asphalt	Q0 8935,13844 9085,13919 9148,13944
 (Möllendorffstr. - Paul-Junius-Str.): Verbundsteinpflaster	Q1 15513,13539 15470,13509
 (Möllendorffstr. - Paul-Junius-Str.): Asphalt mit einigen Schäden	Q0 15470,13509 15370,13508
 (Fanny-Zobel-Str. - Uferweg): Verbundsteinpflaster	Q1 14049,10164 14116,10149
@@ -12514,7 +12515,7 @@ Salmbacher Str.: Asphalt	Q0 11139,1145 11250,1189 11393,1243 11523,1292 11643,13
 Geßlerstr.: Asphalt	Q0 8006,8887 7973,8886 7791,8882
 Brunhildstr.: grobes Kopfsteinpflaster	Q3 7790,8913 7707,8915 7604,8927
 Am Bäkequell: gutes Kopfsteinpflaster	Q1 4593,5235 4656,5101
-Caroline-Michaelis-Str.: Asphalt	Q0 8825,14401 8992,14176 9070,14058 9151,13941
+Caroline-Michaelis-Str.: Asphalt	Q0 8825,14401 8992,14176 9070,14058 9148,13944
 Machonstr.: betoniert	Q0 9020,4890 9032,4791
 Machonstr.: asphaltiert	Q0 9032,4791 9047,4686 9070,4512 9087,4378
 Jungfernstieg: Asphalt	Q0 5559,3058 5549,3038 5493,2931
@@ -16563,7 +16564,7 @@ Kernhofer Str.: Kopfsteinpflaster	Q2 15434,11086 15386,10961
 Kernhofer Str.: Kopfsteinpflaster	Q2 15386,10961 15380,10946
 Kernhofer Str.: glattes Pflaster	Q0 15380,10946 15355,10875
 Eichendorffstr.: Kopfsteinpflaster	Q2 9275,13720 9231,13843
-Eichendorffstr.: Kopfsteinpflaster	Q2 9231,13843 9203,13953
+Eichendorffstr.: Kopfsteinpflaster	Q2 9231,13843 9189,13953
 Novalisstr.: Kopfsteinpflaster	Q2 9353,13521 9275,13720
 Philippstr.: Asphalt	Q0 8892,13498 8833,13440
 Schlegelstr.: Asphalt	Q0 9316,13870 9231,13843 9042,13707

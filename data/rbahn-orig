@@ -223,9 +223,8 @@ RB35	R 55840,-11737 55917,-12682
 #: by: https://www.facebook.com/photo/?fbid=2172571849549969&set=gm.581300136327141 (Bauarbeiten)
 #: by: https://www.bahninfo-forum.de/read.php?9,701828,719789#msg-719789
 #: by: https://berliner-abendblatt.de/2021/12/09/fahrplan-fuer-mehr-busse-und-bahnen/
-#: XXX wird vermutlich zum Fahrplanwechsel Dezember 2021 wieder eröffnet
-#: next_check: 2021-12-11
-	RBau 55917,-12682 56076,-13335 56187,-13914 56271,-14149
+# REMOVED --- #: XXX wird vermutlich zum Fahrplanwechsel Dezember 2021 wieder eröffnet --- #: next_check: 2021-12-11
+RB35	R 55917,-12682 56076,-13335 56187,-13914 56271,-14149
 # Bad Saarow-Pieskow Süd - Beeskow 
 	R0 56271,-14149 56527,-14406 60288,-14704 60649,-14836 61919,-15513 62864,-16032 63873,-18582 64291,-19380 64523,-19510 65755,-20078 66496,-20467 66816,-20727 67381,-21694 67712,-22751 68000,-23651 67963,-24110 68015,-24308 68069,-24387
 # Schönefeld - Kreuz Blankenfelde
