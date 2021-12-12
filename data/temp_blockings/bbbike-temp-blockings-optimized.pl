@@ -3986,6 +3986,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
+#: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
 #: last_checked: 2021-12-10 vvv
@@ -4003,7 +4004,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 ',
          'from' => 1590562800,
          'id' => 3240,
-         'text' => 'Gärtnerstr./Mainzer Str.: Bauarbeiten zwischen Grünberger Str. und Scharnweberstr., Fahrbahn gesperrt, möglicherweise bis Dezember 2021',
+         'text' => 'Mainzer Str.: Bauarbeiten zwischen Boxhagener Str. und Scharnweberstr., Fahrbahn gesperrt, möglicherweise bis Ende Dezember 2021',
          'type' => 'handicap',
          'until' => 1640966400
        },
@@ -5016,43 +5017,7 @@ Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1154884.php
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1154873.php
-#: by: https://www.berlin.de/polizei/_assets/polizeimeldungen/allgemeinverfuegung_12122021_bombenentschaerfung.pdf
-#: by: https://berliner-abendblatt.de/2021/12/08/bombenentschaerfung-am-sonntag/
-Osloer Str.	2::temp 8467,16718 8249,16741 8161,16752 8144,16754 7852,16790 7763,16779 7681,16769
-Schulstr. (Wedding, Gesundbrunnen)	2::temp 8093,16438 7987,16332 7818,16166
-Heinz-Galinski-Str.	2::temp 8161,16752 8082,16483 8093,16438
-Exerzierstr.	2::temp 8093,16438 8166,16454 8307,16434 8436,16415
-Schwedenstr.	2::temp 8486,16425 8249,16741 8197,16809 8127,16894
-Tromsöer Str.	2::temp 8197,16809 8243,16889
-Uferstr. (Gesundbrunnen)	2::temp 8334,16282 8420,16365
-Reinickendorfer Str.	2::temp 7818,16166 7793,16233 7746,16375 7713,16557 7681,16769
-Seestr. (Wedding, Charlottenburg-Nord, Moabit)	2::temp 7681,16769 7606,16746
-Louise-Schroeder-Platz	2::temp 7681,16769 7672,16834 7666,16879
-Louise-Schroeder-Platz	2::temp 7763,16779 7745,16889
-Louise-Schroeder-Platz	2::temp 7583,16872 7594,16805
-Residenzstr.	2::temp 7970,17087 8079,16953 8127,16894
-Ungarnstr.	2::temp 7583,16872 7666,16879
-Reginhardstr.	2::temp 7970,17087 7926,17050 7841,16966 7745,16889 7666,16879
-Haßlingerweg	2::temp 7894,17073 7926,17050
-Hansastr. (Gesundbrunnen)	2::temp 8079,16953 7884,16940 7841,16966
-Gottschedstr.	2::temp 8014,16089 8077,16178 8307,16434
-Martin-Opitz-Str.	2::temp 8236,16071 8077,16178 7987,16332
-Iranische Str.	2::temp 8082,16483 7843,16524
-Iranische Str.	2::temp 7843,16524 7713,16557 7447,16613
-Liebenwalder Str. (Wedding)	2::temp 7727,16223 7793,16233
-Koloniestr.	2::temp 8467,16718 8486,16425
-Oudenarder Str.	2::temp 7433,16375 7746,16375
-',
-         'from' => 1639177200,
-         'id' => 3485,
-         'source_id' => 'viz2021:13.191315,52.461666,02.12.2021,07:00',
-         'text' => 'Residenzstr./Reinickendorfer Str./Osloer Str./Seestr.: umfangreiche Sperrungen wegen Bombenentschärfung, am 12.12.2021 voraussichtlich ab 6 Uhr',
-         'type' => 'handicap',
-         'until' => 1639349999
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Sind Radfahrer von der Baustelle betroffen?
 	q4::inwork; 6366,13716 6493,13822

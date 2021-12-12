@@ -1093,6 +1093,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: XXX hier werden wohl auch Leitboys entstehen
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
 #: last_checked: 2021-11-20
 #: check_frequency: 45d
 	RW3; 7236,5685 7497,5610
@@ -1550,7 +1551,7 @@ Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2021-12-04
+#: last_checked: 2021-12-10 (mapillary)
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1559,8 +1560,8 @@ Busspur ist immer gültig	RW5;RW5 9984,12426 9934,12420 9858,12410
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2021-12-04
-#: check_frequency: 14d
+#: last_checked: 2021-12-10 (mapillary)
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-10-31
 	RW5;RW0 10063,12438 10024,12431 9984,12426
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1609,7 +1610,6 @@ provisorische Radspur	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
 provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
 #: next_check ^^^
 #: check_frequency ^^^
-#: last_checked ^^^
 #: priority ^^^
 # 
 Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10460,11979 10423,11936
@@ -1677,6 +1677,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
 #: last_checked: 2021-11-26 vvv
 #: check_frequency: 30d vvv
@@ -1806,7 +1807,7 @@ neu asphaltiert	RW2; -6675,12632 -6590,12606 -6538,12590 -6512,12581 -6492,12574
 	RW2; -7294,12833 -6675,12632
 	RW2;RW2 -7294,12833 -7344,12854 -7600,12934 -7716,12970
 #: by: Stefan Klinkusch (Benutzungspflicht) vvv
-	RW2;RW2 -7716,12970 -8040,13077 -8050,13080 -8313,13167 -8784,13321
+	RW2;RW2 -7716,12970 -8040,13077 -8050,13080 -8313,13167 -8371,13186 -8784,13321
 	RW2; -8784,13321 -8892,13351 -9005,13354
 #: by: http://farm2.static.flickr.com/1088/815107029_6d7bfb8a42.jpg
 	RW2; -9005,13354 -8892,13351 -8784,13321
@@ -1903,6 +1904,12 @@ asphaltiert, relativ breit	RW1; 6214,13225 6183,13083 6164,12980
 #: note: Radspur für Linksabbieger, der noch existierende alte Hochbordradweg ist nun für Rechtsabbieger
 	RW4; 5350,12906 5316,12928
 	RW1;RW1 5350,12906 5442,12852 5601,12756 5734,12673 5871,12595
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210824_protokoll_mobrat.pdf (Umsetzung in 2023 angestrebt)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211005_protokoll_radtour.pdf
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (Frühjahr 2022)
+#: XXX Radweg wird zu einem (geschützten?) Radfahrstreifen
+#: next_check: 2022-04-15
 	RW3;RW1 5871,12595 5905,12573 5944,12548
 	RW2;RW1 5944,12548 6025,12494
 	RW4; 7193,7950 7310,7818 7480,7683
@@ -2410,7 +2417,8 @@ neu asphaltiert, relativ breit	RW1; 13785,12292 13732,12526 13730,12535
 	RW6;RW6 15458,11306 15484,11292 15567,11247 15578,11241 15620,11210
 	RW4;RW4 15904,12340 15896,12273
 	RW4;RW3 15896,12273 15879,12131
-	RW4?;RW4 15879,12131 15863,11992
+	RW3; 15879,12131 15871,12060
+	RW4; 15863,11992 15871,12060 15879,12131
 #: by: René (rkarlo): vvv
 #: confirmed_by: srt vvv
 	RW6;RW6 15928,12483 15819,12498
@@ -6794,6 +6802,7 @@ Grünmarkierung	RW4; 12317,14535 12407,14470 12522,14385
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1389893047379496960 (Markierungsarbeiten)
 #: by: https://twitter.com/VIZ_Berlin/status/1402152820439138307
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-24-06-2020.pdf (Erwähnung)
 #: XXX hier wird vermutlich auch eine Grünmarkierung entstehen
 #: last_checked: 2021-11-19 vvv
 #: check_frequency: 21d vvv
@@ -7105,6 +7114,9 @@ Radspur hinter den parkenden Autos	RW4; 11543,10015 11623,9841 11673,9720 11710,
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-wird-verstetigt_a304893
 #: by: https://twitter.com/SenUVKBerlin/status/1387045914317971459
 #: by: https://twitter.com/VIZ_Berlin/status/1406948078658232321 (Bauarbeiten ab Anfang Juli 2021)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210223_sachstandsbericht.pdf (Schöneberger Ufer: Frühjahr 2021)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (Schöneberger Ufer: Herbst 2021)
 #: source_id: 2147346996 (bis 21.5.2021)
 #: osm_watch: way id="34057952" version="42"
 #: check_frequency: 30d vvv
@@ -7293,6 +7305,7 @@ provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4
 #: by: http://www.infravelo.de/projekt/schoeneberger-strasse-2/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-dauerhaften-radweg-an-der-schoeneberger-strasse_a317109
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-17-06-2021.pdf (Erwähnung)
 #: XXX laut rbbtext Bauarbeiten bis 2021-03-20
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 2021-12-16)

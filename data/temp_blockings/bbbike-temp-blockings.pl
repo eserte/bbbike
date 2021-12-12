@@ -4382,7 +4382,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002668',
        data  => <<EOF,
-	q4; 15904,12340 15896,12273 15879,12131 15863,11992
+	q4; 15904,12340 15896,12273 15879,12131 15871,12060 15863,11992
 EOF
      },
      { from  => 1146175200, # 2006-04-28 00:00
@@ -5358,7 +5358,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003134',
        data  => <<EOF,
-	1::inwork 15904,12340 15896,12273 15879,12131 15863,11992
+	1::inwork 15904,12340 15896,12273 15879,12131 15871,12060 15863,11992
 EOF
      },
      { from  => 1154210400, # 2006-07-30 00:00
@@ -31059,11 +31059,12 @@ EOF
      },
      { from  => $isodate2epoch->("2020-05-27 09:00:00"),
        until => $isodate2epoch->("2021-12-31 17:00:00"), # der ursprüngliche Termin (14.08.2020) kann wohl nicht gehalten werden; laut Schild bis Ende 2021
-       text  => 'Gärtnerstr./Mainzer Str.: Bauarbeiten zwischen Grünberger Str. und Scharnweberstr., Fahrbahn gesperrt, möglicherweise bis Dezember 2021',
+       text  => 'Mainzer Str.: Bauarbeiten zwischen Boxhagener Str. und Scharnweberstr., Fahrbahn gesperrt, möglicherweise bis Ende Dezember 2021',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
+#: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
 #: last_checked: 2021-12-10 vvv
@@ -34051,7 +34052,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-12-11 00:00:00"),
-       until => $isodate2epoch->("2021-12-12 23:59:59"),
+       until => 1639334607, # $isodate2epoch->("2021-12-12 23:59:59"),
        text  => 'Residenzstr./Reinickendorfer Str./Osloer Str./Seestr.: umfangreiche Sperrungen wegen Bombenentschärfung, am 12.12.2021 voraussichtlich ab 6 Uhr',
        type  => 'handicap',
        source_id => 'viz2021:13.191315,52.461666,02.12.2021,07:00',
