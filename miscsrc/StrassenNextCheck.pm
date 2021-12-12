@@ -57,32 +57,34 @@ sub read_stream_nextcheck_records {
 sub process_nextcheck_record {
     my($self, $r, $dir, %args) = @_;
 
-    my $next_check_info;
-    if (exists $dir->{next_check}) {
-	my($y,$m,$d) = $dir->{next_check}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
+    my $get_date = sub {
+	my($directive) = @_;
+	my $directive_val = $dir->{$directive}[0];
+	my($y,$m,$d) = $directive_val =~ m{(\d{4})-(\d{2})-(\d{2})};
 	if (!$y) {
-	    ($y,$m) = $dir->{next_check}[0] =~ m{(\d{4})-(\d{2})};
+	    ($y,$m) = $directive_val =~ m{(\d{4})-(\d{2})};
 	    $d=1;
 	}
 	if (!$y) {
-	    warn "*** WARN: Malformed next_check directive '$dir->{next_check}[0]' in '" . $self->file . "', ignoring...\n";
-	} else {
-	    my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
+	    warn "*** WARN: Malformed $directive directive '$directive_val' in '" . $self->file . "', ignoring...\n";
+	    return;
+	}
+	sprintf "%04d-%02d-%02d", $y,$m,$d;
+    };
+
+    my $next_check_info;
+    if (exists $dir->{next_check}) {
+	my $date = $get_date->('next_check');
+	if ($date) {
 	    my $label = "next check: $date";
 	    $next_check_info = { date => $date, label => $label };
 	}
     }
     if (exists $dir->{last_checked} && (!$next_check_info || exists $dir->{check_frequency})) {
-	my($y,$m,$d) = $dir->{last_checked}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
-	if (!$y) {
-	    ($y,$m) = $dir->{last_checked}[0] =~ m{(\d{4})-(\d{2})};
-	    $d=1;
-	}
-	if (!$y) {
-	    warn "*** WARN: Malformed last_checked directive '$dir->{next_check}[0]' in '" . $self->file . "', ignoring...\n";
-	} else {
+	my $last_checked_date = $get_date->('last_checked');
+	if ($last_checked_date) {
 	    my $check_frequency_days = _get_check_frequency_days($dir) || $args{check_frequency_days};
-	    my $last_checked_date = sprintf "%04d-%02d-%02d", $y,$m,$d;
+	    my($y,$m,$d) = split /-/, $last_checked_date;
 	    ($y,$m,$d) = Add_Delta_Days($y,$m,$d, $check_frequency_days);
 	    my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
 	    if (!$next_check_info || $next_check_info->{date} gt $date) {
