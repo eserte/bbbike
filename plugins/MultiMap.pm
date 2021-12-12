@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.69;
+$VERSION = 1.70;
 
 use vars qw(%images);
 
@@ -219,6 +219,15 @@ sub register {
 	  callback_3_std => sub { showmap_url_streckeninfo(@_) },
 	  ($images{StreckenInfo} ? (icon => $images{StreckenInfo}) : ()),
 	};
+    if ($is_berlin) {
+	$main::info_plugins{__PACKAGE__ . '_HierBautBerlin'} =
+	    { name => 'Hier Baut Berlin',
+	      callback => sub { showmap_hierbautberlin(@_) },
+	      callback_3_std => sub {showmap_url_hierbautberlin(@_) },
+	      ($images{HierBautBerlin} ? (icon => $images{HierBautBerlin}) : ()),
+	      order => 7500,
+	    };
+    }
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
 	{ name => 'All Maps',
 	  callback => sub { show_links_to_all_maps(@_) },
@@ -638,6 +647,34 @@ Q4gChG2iiFvD7yGapMKeoMF4ZKMXwH040NX1Ha2megzZ/lJIEAbjS9+D+13Cf0Ktshc3AfmK9CZi
 H8eqU8gEhGdf4mS+AYZNdawbQZCda6VqTzZOXPqdzxJK0YV7WOt7OAD8BdTV7r1onAbLAAAAJXRF
 WHRkYXRlOmNyZWF0ZQAyMDIxLTA0LTE3VDE3OjQzOjU3KzAyOjAwFF/rKAAAACV0RVh0ZGF0ZTpt
 b2RpZnkAMjAyMS0wNC0xN1QxNzo0Mzo1NyswMjowMGUCU5QAAAAASUVORK5CYII=
+EOF
+    }
+
+    if (!defined $images{HierBautBerlin}) {
+	# Fetched https://hierbautberlin.de/images/hierbautberlin.png
+	# Converted with:
+	#   convert -resize 16x16 hierbautberlin.png png:- | base64
+	$images{HierBautBerlin} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAAA0AAAAQCAMAAAD6fQULAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABjFBMVEUAAAA8MAwEAwFzXRif
+gyJKEgkAAAAfGAOCbCe7nkPGqEuojTpeTBUAAAAFBAEAAAATDgGcfyfqxlbRsU9dSxSNcR2XeR+9
+mCnzyUmhhzeskSaKbxy2kia8oEYAAAAAAAAAAAAAAAANDQwgHA+vkzsAAAAAAAAAAAAAAADxylGE
+ax3/PRgUERARERFpVBa2lCxYRxL2ORvLUDtwZGJbV1YODg0BAAAsIwghGwfzOx3zOhzsQSXrWUFx
+JxsDAAAAAAAAAABEAABdUU9qYF8+NDMAAAAAAAAAAAAAAAAKCwsHCAgBAQEAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/1lP/1Ez+1lv/
+0kT/zDP/zDP/zTX81VvzyUf/2l//11r/zz7/zDL/1VBXRRC6lSf3zEf/2mH/003/1FFPT09wcHEY
+GBgQDQJZRxHBnCz701cFBQUUFBQoKCgmJiYAAAARDgMAAAAAAAD///8LB7SeAAAAYHRSTlMAAAAA
+AAAAFIrt+ctXBAENH6T85FU1vsj4uBec+tYDLEBdwfzOCLD6+/6ICmr69edLT06HwOHPSRwibG9w
+n/zREgWJ2NH3xw0DTn3NnAEHWOH6UyCh9vhIILx1lv6Q5X6cpwUhAAAAAWJLR0SD/LTP0gAAAAlw
+SFlzAAAOxAAADsQBlSsOGwAAAAd0SU1FB+UMDBAYGmYksHsAAAC8SURBVAjXY2AAAUZ2Dk4ubh5e
+IJOJj19AUCghMUlYBMhjFhUTl0hOSU1LlwTyWKSkZTIys7JzcmUZ5OQVFJWU8/ILCouKVRhU1dQ1
+SkrLyisqqzS1GLR1dKtrauvq6xv09A0YDI2MTUzrG5vq683MLRgsraxtbO3qgcDegYGB1dHJ2cUV
+xHNzZ2Bg8/D08gZx6n18Qc7y8w8AcQKDQJzgkFCwVFg4kBMRWQ8FUUBedAyMFwvkxcE49fEMDABP
+JTqRI9bbGAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMS0xMi0xMlQxNzoyNDoxNCswMTowMDvDbNgA
+AAAldEVYdGRhdGU6bW9kaWZ5ADIwMjEtMTItMTJUMTc6MjQ6MTQrMDE6MDBKntRkAAAAAElFTkSu
+QmCC
 EOF
     }
 }
@@ -1398,6 +1435,22 @@ sub showmap_url_streckeninfo {
 sub showmap_streckeninfo {
     my(%args) = @_;
     my $url = showmap_url_streckeninfo(%args);
+    start_browser($url);
+}
+
+######################################################################
+# hierbautberlin.de
+sub showmap_url_hierbautberlin {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    sprintf "https://hierbautberlin.de/map?lat=%s&lng=%s&zoom=%.1f", $py, $px, $scale;
+}
+
+sub showmap_hierbautberlin {
+    my(%args) = @_;
+    my $url = showmap_url_hierbautberlin(%args);
     start_browser($url);
 }
 
