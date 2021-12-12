@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2016,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016,2019,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package StrassenNextCheck;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.10';
+$VERSION = '0.11';
 
 use Strassen::Core;
 use vars qw(@ISA);
@@ -91,6 +91,36 @@ sub process_nextcheck_record {
 		my $label = "last checked: $last_checked_date";
 		$next_check_info = { date => $date, label => $label };
 	    }
+	}
+    }
+
+    {
+	# Set a pseudo directive _begincheck_date, currently used for
+	# the Mapillary dateFrom filter. The rationale here:
+	# * if last_checked is set, then use the day after this day
+	#   (no need to see older Mapillary sequences)
+	# * elsif begin_check is set (XXX not yet documented in bbd.pod),
+	#   then use this day for filtering
+	# * elsif next_check is set, then use this day for filtering
+	my $begin_check_date;
+	if (exists $dir->{last_checked}) {
+	    $begin_check_date = $get_date->('last_checked');
+	    my($y,$m,$d) = split /-/, $begin_check_date;
+	    ($y,$m,$d) = Add_Delta_Days($y,$m,$d, 1); # with last_checked, use the next day for the begin_check filter
+	    $begin_check_date = sprintf "%04d-%02d-%02d", $y,$m,$d;
+	}
+	if (!$begin_check_date) {
+	    if (exists $dir->{begin_check}) {
+		$begin_check_date = $get_date->('begin_check');
+	    }
+	}
+	if (!$begin_check_date) {
+	    if (exists $dir->{next_check}) {
+		$begin_check_date = $get_date->('next_check');
+	    }
+	}
+	if ($begin_check_date) {
+	    $dir->{_begincheck_date}[0] = $begin_check_date;
 	}
     }
 
