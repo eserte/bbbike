@@ -2000,31 +2000,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/5666333-3496862-weihnachtsmarkt-auf-dem-schlossplatz-koe.html (2021 unter Vorbehalt)
-#: by: https://berliner-abendblatt.de/2021/12/10/dieses-wochenende-weihnachtsmarkt-in-der-altstadt/
-	2::xmas 22111,4562 22162,4546 22214,4548
-',
-         'from' => 1639054800,
-         'id' => 2003,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => -1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              12,
-                              'start',
-                              '2021-01-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
-         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 10.12.2021 bis zum 12.12.2021',
-         'type' => 'gesperrt',
-         'until' => 1639349999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5028,6 +5004,15 @@ Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
          'text' => 'Perleberger Str.: Richtung Heidestr. Bauarbeiten zwischen Lübecker Str. und Birkenstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 07.12.2021 10:00 bis 02.03.2022 17:00 ',
          'type' => 'handicap',
          'until' => 1646262000
+       },
+       {
+         'data' => '	2::inwork 14405,10027 14501,10169
+',
+         'from' => undef,
+         'id' => 3487,
+         'text' => 'Elsenbrücke komplett gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

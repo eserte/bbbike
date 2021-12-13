@@ -34102,4 +34102,12 @@ EOF
 	q4::inwork; 6366,13716 6493,13822
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Elsenbrücke komplett gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::inwork 14405,10027 14501,10169
+EOF
+     },
     );
