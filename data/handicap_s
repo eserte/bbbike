@@ -160,7 +160,9 @@ Tiergarten: einige Fußgänger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575
 (Bremer Weg - Fasanerieallee): einige Fußgänger	q1 6337,11887 6379,11843 6395,11806 6417,11796 6438,11784 6540,11754
 (Bremer Weg/Löwenbrücke - Großer Weg): einige Fußgänger	q1 6395,11806 6353,11730
 (zum Rosengarten): einige Fußgänger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
-Parkweg: enge Brücke, Fußweg	q2 14318,9688 14361,9772 14404,9847 14448,9922 14453,9929 14558,10082 14597,10129 14626,10162 14652,10201
+Parkweg: enge Brücke, Fußweg	q2 14318,9688 14361,9772 14404,9847 14448,9922 14453,9929
+Parkweg: enge Brücke, Fußweg	q3 14558,10082 14453,9929
+Parkweg: enge Brücke, Fußweg	q2 14558,10082 14597,10129 14626,10162 14652,10201
 Hasenheide: Fußgänger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
 Hasenheide: Fußgänger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 Hasenheide: Fußgänger	q1 11182,8983 11137,8979 11100,8974
@@ -617,7 +619,7 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getränke-Hoffmann-Parkplatz): Parkplatz	q1 13202,11666 13186,11692 13173,11788
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fußgänger	q3 11236,11508 11174,11554
 (Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q3 11966,11832 12132,11788
-(Maybachufer - Weigandufer): Fußgänger, Bäume	q3 12845,9304 12862,9273 12909,9085 12902,9066
+(Maybachufer - Weigandufer): Fußgänger, explizit für Radfahrer verboten	q4 12845,9304 12862,9273 12909,9085 12902,9066
 (an der Notfallaufnahme Charité): Notfallwagen, Fußgänger	q2 8833,13440 8836,13396 8806,13384 8736,13369 8665,13353
 (Lasdehner Str. - Gubener Str.): Fußgänger, Bordsteine	q4 13375,12062 13339,12029
 Perleberger - Kieler: unterhalb der Brücke sehr eng	q3 7636,14414 7612,14449

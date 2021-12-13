@@ -653,6 +653,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: linksabbiegende Radfahrer (Neuköllnische Allee -> Grenzallee Richtung Osten) sollten die Fußgängeranforderung betätigen! (während der Sperrung der Grenzallee)
 	X 14344,7003
 	X 13762,7321
+#: note: gilt nicht auf dem Radweg im Zuge der Sonnenallee (SO -> NW)
 	X 14015,7631
 	X 14617,7243
 	X 13474,8060
@@ -1390,10 +1391,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 #: osm_watch: node id="7241153386" version="3"
-#: last_checked: 2021-11-17 (mapillary)
-#: check_frequency: 30d
+#: last_checked: 2021-12-13
+#: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
-	F::inwork 12330,8636
+	F::inwork 12318,8645
 # REMOVED (entfernt) --- #: next_check_id: KARLMARXSTR-2018 --- #: XXX provisorische Ampel an der Rollbergstr. während der Bauarbeiten --- laut osm mittlerweile entfernt --- #: osm_watch: node id="27554998" version="9" --- #: last_checked: 2020-09-29 --- #: next_check: 2020-10-20 ---	X::inwork 12714,8249
 	X 11154,14985
 	X 12025,14695
@@ -2308,7 +2309,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
-#: last_checked: 2021-11-06
+#: last_checked: 2021-12-13
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -3111,7 +3112,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20221231 vvv
-#: last_checked: 2021-11-13 vvv
+#: last_checked: 2021-12-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
@@ -3150,7 +3151,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2021-10-02 (mapillary)
+#: last_checked: 2021-12-13
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3350,7 +3351,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2021-10-23
+#: last_checked: 2021-12-13
 #: check_frequency: 90d
 	X::inwork 12185,7381
 # 
@@ -3567,7 +3568,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2021-11-28 vvv
+#: last_checked: 2021-12-13 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

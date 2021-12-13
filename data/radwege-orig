@@ -328,7 +328,7 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125
 	RW7;RW7 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12328,9117
 #: next_check_id: WESER-2021
 #: XXX während der Bauarbeiten Radweg aufgehoben (und möglicherweise entstehen hier auch keine neuen Radwege mehr), Einbahnstraße Richtung Westen, für Radfahrer nicht mehr offen
-#: last_checked: 2021-10-03
+#: last_checked: 2021-12-13
 #: check_frequency: 90d
 	RW0;RW1 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 	RW1;RW1 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
@@ -953,7 +953,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147346063 (inaktiv)
 #: source_id: viz2021:13.461003,52.492338,30.10.2021,06:00 (Wochenendsperrung für Kfz-Verkehr)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-12-07
+#: last_checked: 2021-12-13
 #: check_frequency: 60d
 #: next_check: 2022-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1304,7 +1304,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2021-11-13 vvv
+#: last_checked: 2021-12-13 vvv
 #: check_frequency: 30d vvv
 #	RW1;RW2 14051,6731 14139,6786 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
@@ -6164,14 +6164,14 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünmarkierung geben
-#: last_checked: 2021-11-17 (mapillary) vvv
+#: last_checked: 2021-12-13 vvv
 #: check_frequency: 60d
 Gelbmarkierung	RW3;RW3 12639,8344 12598,8390
 	RW4; 12639,8344 12689,8289 12714,8249
 #: last_checked ^^^
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-11-06
+#: last_checked: 2021-12-13
 #: check_frequency: 60d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünmarkierung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
@@ -6206,11 +6206,11 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2021-11-17 (mapillary)
+#: last_checked: 2021-12-13
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
-#: last_checked: 2021-11-17 (mapillary)
+#: last_checked: 2021-12-13
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -6917,12 +6917,17 @@ asphaltiert	RW1; 25522,4935 25519,4830
 # 
 	RW3; 16669,25373 16583,25440 16485,25516
 	RW4; 16485,25516 16414,25575
+#: next_check_id: KARLMARXSTR-2018
+#: XXX wann und wie wird die Radspur verstetigt?
+#: last_checked: 2021-12-13
+#: check_frequency: 60d
+provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
 #: note: die Radspur fängt bereits einige Meter vor der Weichselstr. an
-	RW4; 12330,8636 12150,8764 12063,8826 11998,8872 11880,8955
+	RW4; 12330,8636 12318,8645 12150,8764 12063,8826 11998,8872 11880,8955
 	RW1; 11880,8955 11831,8989
 	RW4; 11831,8989 11880,8955
 geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764
-	RW3; 12150,8764 12330,8636
+	RW3; 12150,8764 12318,8645 12330,8636
 	RW6;RW6 -8703,6571 -8682,6435
 	RW6;RW6 -8678,6414 -8650,6296
 	RW6;RW6 9160,12932 9212,12969
@@ -7372,6 +7377,10 @@ Gehweg für Radfahrer frei	RW1;RW1 475,1202 587,1230 718,1264 857,1300
 # 
 #: note: Grünmarkierung fehlt an den Bushaltestellen
 Grünmarkierung	RW3; 12510,6508 12470,6586 12422,6715 12395,6785 12362,6881 12347,6923 12342,6936 12317,7007 12304,7039 12291,7074 12259,7164 12244,7205 12221,7271
+#: XXX Radweg markiert und ausgeschildert, allerdings ignoriert
+#: last_checked: 2021-12-13
+#: check_frequency: 7d
+	RW0; 12221,7271 12244,7205 12259,7164 12291,7074 12304,7039 12317,7007
 # 
 # REMOVED (korrekt) --- #: XXX Geltungszeit überprüfen!
 Busspur ist immer gültig	RW5; 3835,10352 3813,10435

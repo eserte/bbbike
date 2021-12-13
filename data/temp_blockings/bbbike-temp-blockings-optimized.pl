@@ -4171,7 +4171,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G)
-#: last_checked: 2021-11-06
+#: last_checked: 2021-12-13
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -5006,11 +5006,20 @@ Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
          'until' => 1646262000
        },
        {
-         'data' => '	2::inwork 14405,10027 14501,10169
+         'data' => '#: next_check_id: ELSENBRUECKE-2021
+#: by: https://berliner-abendblatt.de/2021/12/13/elsenbruecke-seit-montagfrueh-komplett-gesperrt/ (Arbeiten am Provisorium bis zum ersten Quartal 2022)
+#: by: https://viz.berlin.de/2021/12/elsenbruecke-gesperrt/
+#: by: https://viz.berlin.de/2021/12/verkehrsvorschau-14122021/
+#: source_id: viz2021:13.460136,52.493499,13.12.2021,04:44 (kein Endedatum)
+#: also_indoor: traffic (G,H)
+#: priority: #A
+#: last_checked: 2021-12-13
+#: check_frequency: 7d
+	2::inwork 14323,9913 14405,10027 14501,10169 14558,10264
 ',
          'from' => undef,
          'id' => 3487,
-         'text' => 'Elsenbrücke komplett gesperrt',
+         'text' => 'Elsenbrücke komplett gesperrt (auch für Fußgänger und Radfahrer), Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        }
