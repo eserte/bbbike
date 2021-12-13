@@ -17,10 +17,12 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.33';
+$VERSION = '0.34';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
+
+use constant PLUGIN_DISABLED => 1; # since 2021-12-13 or so the mobile search is not working and there's no replacement yet
 
 use vars qw($icon %city_border_points $menu);
 
@@ -183,6 +185,10 @@ sub add_button {
 }
 
 sub choose {
+    if (PLUGIN_DISABLED) {
+	main::status_message("Das Fahrinfo-Plugin funktioniert nicht mehr.", "error");
+	return;
+    }
     if (@main::search_route_points < 2) {
 	main::status_message(M"Es existiert keine Route", "error");
 	return;
