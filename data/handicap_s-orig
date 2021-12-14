@@ -185,7 +185,8 @@ Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.641406.php
 #: by: https://abendblatt-berlin.de/2021/04/05/berlin-wedding-geisterhaus-an-der-burgsdorfstrasse-soll-abgerissen-werden/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
-#: osm_watch: way id="549316654" version="11"
+#: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
+#: osm_watch: way id="549316654" version="12"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,H)
 #: valid: 20171026-
@@ -1314,15 +1315,15 @@ Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8561 8759,8458 8720,8
 Am Rummelsburger See: Fußgänger, kurvenreich	q1 15793,9334 15813,9378 15819,9430 15749,9558 15739,9583 15708,9607 15659,9647 15621,9704 15626,9710 15561,9809 15465,9860 15347,9922 15296,10000 15295,10022 15260,10048 15283,10087 15289,10092 15289,10097 15311,10127 15306,10142 15253,10171 15199,10211 15134,10243 15101,10263 15044,10297 14977,10348 14892,10411 14864,10451 14861,10467 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15145,10636
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX nach den Bauarbeiten am "My Bay Way" wird der zweite Strange wohl wieder offen sein, dann wieder mit dem vorherigen Eintrag zusammenfügen
-#: last_checked: 2021-11-27
+#: last_checked: 2021-12-14
 #: check_frequency: 90d
 Am Rummelsburger See: Fußgänger, kurvenreich, Engstelle wegen Bauarbeiten	q2 15145,10636 15200,10600 15249,10564
-#: note: unklar, ob Radfahrer hier fahren dürfen oder nicht
+#: note: siehe auch permanenten temp-blockings-Eintrag (Radfahren verboten)
 Am Rummelsburger See: teilweise enge Kurven, Fußgänger an schönen Tagen	q2 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Fußgänger an schönen Tagen	q1 15931,9846 16002,9787 16049,9749 16119,9689 16125,9678 16120,9653
 #: note: hier unübersichtlich und relativ eng, besonders vor der Kletterhalle
 Am Rummelsburger See: Fußgänger an schönen Tagen	q2+ 16120,9653 16182,9591 16268,9670
-Am Rummelsburger See: Fußgänger an schönen Tagen	q1 16268,9670 16347,9594
+# REMOVED (hier eigentlich Service-Straße) --- Am Rummelsburger See: Fußgänger an schönen Tagen	q1 16268,9670 16347,9594
 # REMOVED (ist jetzt breiter) --- Unterführung unter Adlergestell und S-Bahn ist sehr eng, nicht für Anhänger geeignet	q3 20939,2413 20904,2426 20810,2398
 # REMOVED (nun komplett gesperrt) --- Vorfahrt Reichstagsgebäude: Fußgänger	q4 8400,12417 8399,12616
 Am Teltowkanal: kurverreich und recht eng	q1 3766,1389 3695,1308 3619,1207 3419,1061 3375,1026 3366,1007

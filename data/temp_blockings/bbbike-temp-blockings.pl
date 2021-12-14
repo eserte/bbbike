@@ -31347,8 +31347,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-05-30 08:30:00"), # 1589275980, # 2020-05-12 11:33
-       until => $isodate2epoch->("2021-12-23 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: Fahrbahn zwischen Hindenburgdamm und Lipaer Str. wegen Bauarbeiten gesperrt, möglicherweise Einschränkungen für den Radverkehr, vom 31.05.2021 bis 23.12.2021',
+       until => $isodate2epoch->("2022-03-18 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
+       text  => 'Gardeschützenweg: Fahrbahn zwischen Hindenburgdamm und Lipaer Str. wegen Bauarbeiten gesperrt, möglicherweise Einschränkungen für den Radverkehr, vom 31.05.2021 bis 18.03.2022',
        type  => 'handicap',
        source_id => '2147345834', # (inaktiv)
        data  => <<EOF,
@@ -31357,9 +31357,7 @@ EOF
 #: by: https://viz.berlin.de/2021/05/verkehrsvorschau-310521/ (Fuß- und Radverkehr ist frei)
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: source_id: 2147347233 (bis 23.12.2021)
-#: priority: #A
-#: last_checked: 2021-09-26
-#: next_check: 2021-12-23
+# REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,G) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
 #: XXX NEW	Gardeschützenweg (Lichterfelde) in beiden Richtungen zwischen Hindenburgdamm und Lipaer Straße: Leitungsbau,Vollsperrung, Fußverkehr frei, vom 31.05.2021 08:30 Uhr bis 23.12.2021 17:00 Uhr
@@ -32202,8 +32200,8 @@ EOF
 EOF
      },
      { from  => 1611329064, # 2021-01-22 16:24
-       until => $isodate2epoch->("2021-11-25 17:00:00"), # 1630076400, # 2021-08-27 17:00
-       text  => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., bis 25.11.2021',
+       until => $isodate2epoch->("2022-02-01 17:00:00"), # 1630076400, # 2021-08-27 17:00
+       text  => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., bis 01.02.2022',
        type  => 'handicap',
        source_id => '2147346268',
        data  => <<EOF,
@@ -33211,7 +33209,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-12-02
+#: last_checked: 2021-12-14
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33473,8 +33471,8 @@ EOF
 EOF
      },
      { from  => 1629669600, # 2021-08-23 00:00
-       until => 1640991600, # 2022-01-01 00:00
-       text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 31.12.2021 17:00 ',
+       until => $isodate2epoch->("2022-02-04 17:00:00"), # 1640991600, # 2022-01-01 00:00
+       text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 04.02.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
        data  => <<EOF,
@@ -33703,8 +33701,8 @@ EOF
 EOF
      },
      { from  => 1633212000, # 2021-10-03 00:00
-       until => 1640214000, # 2021-12-23 00:00
-       text  => 'Rathausstr.: zwischen Königstr. und Ullsteinstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.10.2021 08:00 bis 22.12.2021 17:00 ',
+       until => $isodate2epoch->("2021-12-30 17:00:00"), # 1640214000, # 2021-12-23 00:00
+       text  => 'Rathausstr.: zwischen Königstr. und Ullsteinstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.10.2021 08:00 bis 30.12.2021 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.378629,52.451139,04.10.2021,08:00',
        data  => <<EOF,
@@ -34111,12 +34109,39 @@ EOF
 #: by: https://berliner-abendblatt.de/2021/12/13/elsenbruecke-seit-montagfrueh-komplett-gesperrt/ (Arbeiten am Provisorium bis zum ersten Quartal 2022)
 #: by: https://viz.berlin.de/2021/12/elsenbruecke-gesperrt/
 #: by: https://viz.berlin.de/2021/12/verkehrsvorschau-14122021/
+#: by: https://viz.berlin.de/2021/12/elsenbruecke-gesperrt/?date=20211214 (update: offen?)
+#: by: https://twitter.com/VIZ_Berlin/status/1470700292798832641 (offen oder nicht?)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1157183.php
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1157085.php
+#: by: https://berliner-abendblatt.de/2021/12/14/elsenbruecke-wieder-frei-fuer-fussgaenger-radler-und-schiffe/
 #: source_id: viz2021:13.460136,52.493499,13.12.2021,04:44 (kein Endedatum)
 #: also_indoor: traffic (G,H)
+#: osm_watch: way id="4068043" version="31"
+#: osm_watch: way id="839092016" version="4"
+#: osm_watch: way id="838651758" version="4"
+#: XXX laut osm wieder für Radfahrer/Fußgänger offen
+#: add_fragezeichen: Ist die Elsenbrücke mittlerweile wieder für den Radverkehr geöffnet?
 #: priority: #A
 #: last_checked: 2021-12-13
 #: check_frequency: 7d
+#: next_check: 2021-12-14
 	2::inwork 14323,9913 14405,10027 14501,10169 14558,10264
+EOF
+     },
+     { from  => undef, # 
+       until => undef, #
+       text  => 'Bolleufer: Grünanlage, Radfahren offiziell verboten',
+       permanent => 1,
+       type  => 'handicap',
+       data  => <<EOF,
+	q4 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
+	q4 15931,9846 16002,9787 16049,9749
+	q4 16119,9689 16125,9678 16120,9653
+	q4 16120,9653 16182,9591 16268,9670
+	q4 15513,10298 15496,10277
+	q4 15621,10214 15604,10204
+	q4 15840,9980 15811,9957 15786,9957
+	q4 16038,9837 16002,9787
 EOF
      },
     );

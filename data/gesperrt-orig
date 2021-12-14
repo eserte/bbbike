@@ -3317,6 +3317,12 @@ Schranke	BNP:3::trailer=10 17837,12277
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
+#: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
+#: last_checked: 2021-12-14
+#: check_frequency: 60d
+Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
+# 
 #: next_check_id: TEGELERBRUECKE-2021
 #: next_check: 2023-12-01
 Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,16043 -226,16086
@@ -3527,10 +3533,10 @@ Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708
 # 
 #: next_check_id: MITTEL-2019
 #: source_id: IM_020714
-#: osm_watch: way id="690322561" version="2"
+#: osm_watch: way id="690322561" version="3"
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-12-04
+#: last_checked: 2021-12-13 (osm)
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
