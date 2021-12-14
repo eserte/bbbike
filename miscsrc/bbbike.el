@@ -612,7 +612,7 @@
     (if search-key
 	(let ((bbbike-rootdir (bbbike-rootdir))
 	      (bbbike-datadir (bbbike-datadir)))
-	  (grep (concat "2>/dev/null grep -ins " bbbike-datadir "/*-orig " bbbike-datadir "/*.coords.data " bbbike-datadir "/temp_blockings/bbbike-temp-blockings.pl " bbbike-rootdir "/t/cgi-mechanize.t " bbbike-rootdir "/t/old_comments.t " "-e '^#:[ ]*" search-key ".*" search-val "'"))))))
+	  (grep (concat "2>/dev/null egrep -ins " bbbike-datadir "/*-orig " bbbike-datadir "/*.coords.data " bbbike-datadir "/temp_blockings/bbbike-temp-blockings.pl " bbbike-rootdir "/t/cgi-mechanize.t " bbbike-rootdir "/t/old_comments.t " "-e '^#:[ ]*" search-key ":?[ ]*" search-val "'"))))))
 
 (defun bbbike-grep-button (button)
   (bbbike-grep))
