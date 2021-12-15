@@ -3965,7 +3965,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2021-12-10 vvv
+#: last_checked: 2021-12-15 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4289,17 +4289,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-im-bau/?postID=673580#post673580 (ab dem kommenden Jahr, also 2021)
-#: confirmed_by: srt (Sackgassenschild am nördlichen und südlichen Ende, aber noch keine Sperrung)
-#: add_fragezeichen: Gibt es mittlerweile eine Sperrung? Falls ja, wo ist der gesperrte Abschnitt und gilt die Sperrung auch für Fußgänger und Radfahrer?
+#: confirmed_by: srt (Sackgassenschild am nördlichen und südlichen Ende, als Fußgänger und Radfahrer kommt man durch)
+#: XXX im nördlichen Teil entsteht eine neue asphaltierte Straße, etwas weiter östlich versetzt
+#: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="24"
 #: osm_watch: way id="165832806" version="21"
-#: last_checked: 2021-11-16
+#: last_checked: 2021-12-15
 #: check_frequency: 30d
-	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17483,8644 17449,8720 17416,8767 17380,8858
+	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17497,8623 17461,8693 17416,8767 17380,8858
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 10/2021: Einfahrt im Bereich Blockdammweg kann während Arbeitszeiten gesperrt sein, außerdem Fahrbahn im nördlichen Abschnitt gesperrt, enger Fußweg existiert)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 12/2021: Einfahrt im Bereich Blockdammweg kann während Arbeitszeiten gesperrt sein, außerdem Fahrbahn im nördlichen Abschnitt gesperrt, schmaler Fußweg existiert)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4595,7 +4596,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-12-14
+#: last_checked: 2021-12-15
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -4958,10 +4959,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
-#: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fertig, aber die Bauarbeiten sind noch nicht beendet)
+#: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fährt wieder, aber die Bauarbeiten sind noch nicht beendet)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-12-11 vvv
-#: check_frequency: 4d vvv
+#: last_checked: 2021-12-15 vvv
+#: check_frequency: 3d vvv
 	q3::inwork 14965,11924 15077,11910
 	q3::inwork; 15077,11910 15133,11902 15256,11884
 	q3::inwork 14965,11924 14888,11934 14836,11842
@@ -5016,35 +5017,7 @@ Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
          'type' => 'handicap',
          'until' => 1646262000
        },
-       {
-         'data' => '#: next_check_id: ELSENBRUECKE-2021
-#: by: https://berliner-abendblatt.de/2021/12/13/elsenbruecke-seit-montagfrueh-komplett-gesperrt/ (Arbeiten am Provisorium bis zum ersten Quartal 2022)
-#: by: https://viz.berlin.de/2021/12/elsenbruecke-gesperrt/
-#: by: https://viz.berlin.de/2021/12/verkehrsvorschau-14122021/
-#: by: https://viz.berlin.de/2021/12/elsenbruecke-gesperrt/?date=20211214 (update: offen?)
-#: by: https://twitter.com/VIZ_Berlin/status/1470700292798832641 (offen oder nicht?)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1157183.php
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1157085.php
-#: by: https://berliner-abendblatt.de/2021/12/14/elsenbruecke-wieder-frei-fuer-fussgaenger-radler-und-schiffe/
-#: source_id: viz2021:13.460136,52.493499,13.12.2021,04:44 (kein Endedatum)
-#: also_indoor: traffic (G,H)
-#: osm_watch: way id="4068043" version="31"
-#: osm_watch: way id="839092016" version="4"
-#: osm_watch: way id="838651758" version="4"
-#: XXX laut osm wieder für Radfahrer/Fußgänger offen
-#: add_fragezeichen: Ist die Elsenbrücke mittlerweile wieder für den Radverkehr geöffnet?
-#: priority: #A
-#: last_checked: 2021-12-13
-#: check_frequency: 7d
-#: next_check: 2021-12-14
-	2::inwork 14323,9913 14405,10027 14501,10169 14558,10264
-',
-         'from' => undef,
-         'id' => 3487,
-         'text' => 'Elsenbrücke komplett gesperrt (auch für Fußgänger und Radfahrer), Ende der Sperrung unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '	q4 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 	q4 15931,9846 16002,9787 16049,9749

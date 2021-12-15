@@ -703,20 +703,9 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12
 # 
 ### Lichtenberg ###
 # 
-#: XXX bis wann dauern die Bauarbeiten an?
-#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FD6C35EF-640E-43B3-8F22-17914A1869B0 (Verbindungstrasse Fernwärme Klingenberg)
-#: also_indoor: traffic (G(zu viel)) vvv
-#: osm_watch: way id="1002249853" version="1"
-#: osm_watch: way id="198589916" version="8"
-#: osm_watch: way id="198589913" version="6"
-#: last_checked: 2021-12-02 vvv
-#: check_frequency: 10d vvv
-Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q2::inwork; 15932,10830 15681,10801
+# REMOVED (offen) --- #: XXX bis wann dauern die Bauarbeiten an? --- #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FD6C35EF-640E-43B3-8F22-17914A1869B0 (Verbindungstrasse Fernwärme Klingenberg) --- #: also_indoor: traffic (G(zu viel)) vvv --- #: osm_watch: way id="1002249853" version="1" --- #: osm_watch: way id="198589916" version="8" --- #: osm_watch: way id="198589913" version="6" --- #: last_checked: 2021-12-02 vvv --- #: check_frequency: 10d vvv --- Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q2::inwork; 15932,10830 15681,10801
 # REMOVED --- Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-# 
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
 # REMOVED --- #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/neue-vorstreckungen-ueberwege-mittelinseln-und-abgesenkte-bordsteine_a319370 (Erwähnung der Wege in der Grünanlage) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8710 (Abschluss der Bauarbeiten im 3. Quartal 2021) --- #: last_checked: 2021-09-11 vvv --- #: check_frequency: 7d vvv
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16878,9875 16900,9861
@@ -1049,11 +1038,8 @@ Tiergarten: einige Fußgänger	q1 7765,11737 7733,11713 7682,11703 7648,11708 7575
 (zum Rosengarten): einige Fußgänger	q1 7026,12054 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
 #: note: Radfahren aber erlaubt, laut Schild "mit Schrittgeschwindigkeit frei"
 Parkweg: enge Brücke, Fußweg	q2 14318,9688 14361,9772 14404,9847 14448,9922 14453,9929
-#: next_check_id: ELSENBRUECKE-2021
-#: XXX hier besonders eng und erwartete höhere Frequenz wegen Ausweichverkehr von der Elsenbrücke, deshalb q2 -> q3; später wieder auf q2 ändern
-#: last_checked: 2021-12-13
-#: check_frequency: 7d
-Parkweg: enge Brücke, Fußweg	q3 14558,10082 14453,9929
+# REMOVED (q3 -> q2) --- #: next_check_id: ELSENBRUECKE-2021 --- #: XXX hier besonders eng und erwartete höhere Frequenz wegen Ausweichverkehr von der Elsenbrücke, deshalb q2 -> q3; später wieder auf q2 ändern --- #: last_checked: 2021-12-13 --- #: check_frequency: 7d
+Parkweg: enge Brücke, Fußweg	q2 14558,10082 14453,9929
 Parkweg: enge Brücke, Fußweg	q2 14558,10082 14597,10129 14626,10162 14652,10201
 # REMOVED (nun ein offizieller markierter Radweg) --- Spittelmarkt: Gehweg	q1 10369,11728 10274,11737 10240,11740
 Hasenheide: Fußgänger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183

@@ -1782,7 +1782,8 @@ Braunschweiger Ufer: Verbundsteinpflaster	Q1 13077,5893 13483,5973
 Braunschweiger Ufer: Parkweg	Q1 13077,5893 12718,5845
 Zeppelinstr.: Asphalt	Q0 18700,6604 18417,6775 18240,6845
 Zeppelinstr.: Asphalt	Q0 18240,6845 18041,6924 17919,6968
-Roedernstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2 18010,7133 18041,6924
+Roedernstr.: Beton	Q0 18010,7133 18019,7071
+Roedernstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2 18019,7071 18041,6924
 Roedernstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2 18041,6924 18068,6748
 Roedernstr.: Asphalt	Q0 18068,6748 18076,6693 18079,6678
 Scharnweberstr.: kleinteiliges, unebenes Kopfsteinpflaster	Q2 19344,6119 19495,6029
@@ -13061,7 +13062,7 @@ Graf-Haeseler-Str.: gutes Kopfsteinpflaster	Q1 4096,17890 4139,18091 4181,18284
 Driesener Str.: Kopfsteinpflaster	Q2 10458,16509 10449,16415
 Driesener Str.: Kopfsteinpflaster	Q2 10449,16415 10438,16340 10421,16175 10405,16017
 Kleeblattstr.: gute Betonstraße	Q0 20813,536 20866,334 20894,236 20903,210
-Hentigstr.: Asphalt	Q0 18548,8942 18586,9172 18626,9406
+Hentigstr.: Asphalt mit einigen Schäden	Q0 18548,8942 18586,9172 18626,9406
 Hentigstr.: Asphalt	Q0 18518,8778 18548,8942
 Jostweg: Kleinsteinpflaster	Q2 3415,25731 3356,25725 3216,25778
 Siemenswerderweg: sehr schlechtes Kopfsteinpflaster	Q3 -2871,11423 -2951,11231 -3078,11157 -2934,11078 -2894,11025 -2970,10748
@@ -13423,7 +13424,7 @@ Malersteig: Asphalt	Q0 13606,3085 13596,3039 13561,2898 13510,2690 13487,2621 13
 Weseler Str.: mäßiger Asphalt	Q1 18865,8740 18857,8790 18854,8831 18860,8886
 Weseler Str.: Asphalt	Q0 18860,8886 18877,8973 18881,9002
 Weseler Str.: Asphalt	Q0 18881,9002 18886,9031
-Weseler Str.: mäßiger Asphalt	Q1 18886,9031 18900,9119
+Weseler Str.: Asphalt	Q0 18886,9031 18900,9119
 Arthur-Weisbrodt-Str.: guter Asphalt	Q0 14170,13496 14218,13661
 Erdmann-Graeser-Weg: kleinteiliges Pflaster	Q1 -833,3619 -935,3706
 Erdmann-Graeser-Weg: Beton	Q0 -935,3706 -961,3737
@@ -13450,7 +13451,8 @@ Friedrich-Wilhelm-Str.: Asphalt	Q0 8266,5911 8385,5907
 Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8627,5866 8801,5844 8996,5823
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8996,5823 9176,5803 9378,5773 9668,5733
 Drachenfelsstr.: guter Asphalt	Q0 18945,8547 18951,8574
-Drachenfelsstr.: welliger Asphalt	Q1 18951,8574 18956,8618 18945,8660 18927,8702 18899,8754 18857,8790
+Drachenfelsstr.: welliger Asphalt	Q1 18951,8574 18956,8618 18945,8660 18927,8702 18899,8754
+Drachenfelsstr.: schadhafter Asphalt	Q1 18899,8754 18857,8790
 Chaukenstr./Mittelweg (Altglienicke): Beton	Q0 20252,901 20207,789 20171,698
 Chaukenstr./Mittelweg (Altglienicke): Asphalt	Q0 20171,698 20136,608 20082,463
 Chaukenstr./Mittelweg (Altglienicke): Asphalt, leichte Schäden	Q0 20082,463 20035,348
@@ -14302,7 +14304,7 @@ Schlehdornsteig: Wechsel zwischen Kopfsteinpflaster und Verbundsteinpflaster	Q1 
 Mittelstr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 104,2802 50,3031
 Trautenauer Str.: Kopfsteinpflaster	Q2 17753,8290 17774,8342 17794,8429 17813,8508
 Trautenauer Str.: Kopfsteinpflaster, mäßiger Asphaltstreifen in der Mitte	Q2 17813,8508 17830,8578
-Trautenauer Str.: Asphalt	Q0 17830,8578 17838,8611 17851,8662 17879,8773 17910,8881 17915,8900
+Trautenauer Str.: Asphalt	Q0 17830,8578 17838,8611 17843,8632 17851,8662 17879,8773 17910,8881 17915,8900
 Am Forstacker: Beton	Q0 -3676,17131 -3671,17202 -3648,17250 -3612,17280 -3532,17333 -3491,17381 -3418,17525
 Talsandweg: guter Asphalt	Q0 3138,21372 3206,21179 3222,21134
 Tourcoingstr.: guter Asphalt	Q0 3781,16175 3796,16202 3836,16273 3895,16381
@@ -14561,8 +14563,8 @@ Königsteinstr. (Blankenburg): asphaltiert	Q0 13404,22384 13476,22345 13541,22300
 Kolonie Dreieck - Klemkepark: wassergebundene Decke	Q1 8260,18765 8188,18819 8101,18846 7988,18861 7846,18884 7802,18883 7781,18897 7710,18902 7609,18891 7574,18874
 Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke, Schotter	Q1 7574,18874 7576,18837 7480,18828 7332,18818 7313,18781
 Klemkepark - Kopenhagener Str./Freiheitsweg: Mosaikpflaster	Q1 7313,18781 7248,18793
-Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2 17308,9090 17335,8971 17380,8858 17416,8767 17449,8720
-Hönower Wiesenweg: provisorische Baustraße	Q2 17449,8720 17483,8644 17515,8567
+Hönower Wiesenweg: provisorische Baustraße	Q2 17308,9090 17335,8971 17380,8858 17416,8767 17461,8693
+Hönower Wiesenweg: provisorische Baustraße	Q2 17461,8693 17497,8623 17515,8567
 Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2 17515,8567 17533,8505
 Hönower Wiesenweg: provisorische Baustraße	Q2 17533,8505 17554,8458
 Hönower Wiesenweg: provisorische Baustraße	Q2 17554,8458 17620,8366 17704,8327 17753,8290 17793,8225 17856,8162

@@ -949,14 +949,17 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1140512.php (Wochenendsperrung für Kfz-Verkehr)
 #: by: https://berliner-abendblatt.de/2021/10/29/am-wochenende-elsenbruecke-gesperrt/
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1157085.php (Freigabe der Ersatzbrücke spätestens Januar 2022)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1158054.php (Radspur ab 16.12.2021)
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: source_id: viz2021:13.461003,52.492338,30.10.2021,06:00 (Wochenendsperrung für Kfz-Verkehr)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2021-12-13
+#: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
+#: last_checked: 2021-12-15
 #: check_frequency: 60d
-#: next_check: 2022-01-31
+# REMOVED --- #: next_check: 2022-01-31
+#: next_check: 2021-12-16
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
 	RW4; 14323,9913 14289,9870 14244,9812 14196,9749
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
@@ -4183,10 +4186,10 @@ etwa zur Hälfte neu asphaltiert, danach Verbundsteinpflaster	RW1; 17211,7280 172
 Verbundsteinpflaster	RW1; 17286,7173 17352,7051 17459,6854 17510,6751
 neu asphaltiert	RW1; 17286,7173 17211,7280
 asphaltiert, uneben	RW1; 18010,7133 18086,7243 18165,7371 18256,7520
-Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18577,8033
+Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18483,7883 18577,8033
 neu asphaltiert	RW1; 18577,8033 18633,8126 18657,8163
 neu asphaltiert	RW2; 18657,8163 18672,8238
-	RW1; 18577,8033 18406,7760 18382,7724 18256,7520 18165,7371 18086,7243 18010,7133
+	RW1; 18577,8033 18483,7883 18406,7760 18382,7724 18256,7520 18165,7371 18086,7243 18010,7133
 	RW2; 18672,8238 18657,8163 18633,8126 18577,8033
 	RW2;RW1 18672,8238 18704,8427
 	RW1; 13265,5519 13305,5316
@@ -7184,7 +7187,7 @@ Tempo 10	RW6;RW6 11785,7583 11763,7687 11738,7790 11713,7899
 Tempo 10	RW6;RW6 14560,8528 14469,8455 14422,8407 14563,8243
 Tempo 10	RW6;RW6 14688,8355 14563,8243 14425,8116
 # 
-Tempo 10	RW6;RW6 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17483,8644 17449,8720 17416,8767 17380,8858 17335,8971 17308,9090 17282,9135
+Tempo 10	RW6;RW6 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17497,8623 17461,8693 17416,8767 17380,8858 17335,8971 17308,9090 17282,9135
 Tempo 10	RW6;RW6 17308,9090 17300,9135
 # 
 	RW3;RW3 -1872,24336 -1896,24275 -1940,24176 -2051,23901 -2071,23850 -2132,23697 -2168,23607 -2185,23567 -2248,23409 -2306,23259
