@@ -1555,7 +1555,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5720 (Prüfung einer Glättung des Kopfsteinpflasters)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/verkehrsprojekte-im-boetzowviertel_a319036 (Erwähnung der Hufelandstraße)
 #: by: http://www.infravelo.de/projekt/hufelandstrasse/ ("erschütterungsarmer Belag", Bauzeitraum 1. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 3. Quartal 2022 - 2. Quartal 2023)
-#: last_checked: 2021-09-01
+#: last_checked: 2021-12-16
 #: check_frequency: 210d
 #: next_check: 2023-06-30
 Hufelandstr.: Kopfsteinpflaster	Q2 12077,14186 12228,14083 12361,13985 12478,13903 12579,13840 12578,13800
@@ -4359,6 +4359,8 @@ Solonplatz: Kopfsteinpflaster	Q2 14286,15962 14248,16058
 Smetanastr.: Kopfsteinpflaster	Q2 14015,16103 14056,15985 14095,15891
 Smetanastr.: Asphalt	Q0 14095,15891 14125,15796 14133,15773 14195,15604
 Meyerbeerstr.: Asphalt	Q0 14576,16069 14484,16035 14411,16008 14330,15978
+#: XXX Asphaltierungsarbeiten laufen, wie sieht die Qualität danach aus?
+#: last_checked: 2021-12-16
 Meyerbeerstr.: Asphalt, einige Löcher	Q0- 14330,15978 14286,15962 14095,15891 13904,15818 13701,15744 13609,15706
 Meyerbeerstr.: rauer Asphalt, einige Löcher	Q1+ 13609,15706 13459,15653
 Seidenberger Str.: Asphalt mit Schäden	Q2+ 12521,16817 12391,16994
@@ -30477,4 +30479,9 @@ Einmündungsbereich mit Kleinsteinpflaster	Q1 14986,11760
 Einmündungsbereich mit Kopfsteinpflaster	Q2 12545,8209
 Einmündungsbereich asphaltiert	Q0 18068,6748
 Kreuzungsbereich asphaltiert	Q0 18041,6924
+Einmündungsbereich asphaltiert	Q0 12707,13706
+Kreuzungsbereich asphaltiert	Q0 14056,15985
+Kreuzungsbereich asphaltiert	Q0 14095,15891
+Einmündungsbereich asphaltiert	Q0 13776,15546
+Einmündungsbereich asphaltiert	Q0 13700,15501
 #: ignore ^^^

@@ -807,6 +807,7 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: by: https://abendblatt-berlin.de/2021/07/05/steglitz-zehlendorf-die-marode-moltkebruecke-verschwindet/ (Bauarbeiten beginnen ab Oktober 2021, Behelfsbrücken ab Februar 2022, Abbruch der alten Brücke April 2022, Verkehrsfreigabe September 2023)
 #: by: https://mein.berlin.de/projekte/ersatzneubau-der-moltkebrucke-in-steglitz-zehlendo/
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neubau-der-moltkebruecke-beginnt_a316440
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/der-neubau-der-moltkebruecke-startet-anfang-2022_a330836 (Fertigstellung Anfang 2024)
 #: XXX wann wird die Einschränkung beendet?
 #: osm_watch: way id="13860352" version="16"
 #: also_indoor: traffic (ex-H)
@@ -814,15 +815,9 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: last_checked: 2021-11-06
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2022-04-01
-Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3898,4490
+Moltkestraßenbrücke: Fahrbahn gesperrt	q4::inwork 3867,4537 3898,4490
 # 
-#: also_indoor: traffic
-#: last_checked: 2021-11-06 vvv
-#: check_frequency: 90d vvv
-Enzianstr.: Einbahnstraßenregelung	q2::inwork; 3806,4628 3839,4577
-Enzianstr.: Einbahnstraßenregelung	q3::inwork; 3839,4577 3867,4537
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (assume ended --- wegen der Sperrung der Moltkestraßenbrücke) --- #: also_indoor: traffic --- #: last_checked: 2021-11-06 vvv --- #: check_frequency: 90d vvv --- Enzianstr.: Einbahnstraßenregelung	q2::inwork; 3806,4628 3839,4577 --- Enzianstr.: Einbahnstraßenregelung	q3::inwork; 3839,4577 3867,4537 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 ### Prenzlauer Berg ###
 # 

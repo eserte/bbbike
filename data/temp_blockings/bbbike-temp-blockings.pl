@@ -27911,7 +27911,7 @@ EOF
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
 #: also_indoor: traffic (ex-G,H(falsch?))
 #: priority: #B vvv
-#: last_checked: 2021-11-10 vvv
+#: last_checked: 2021-12-16 vvv
 #: check_frequency: 60d vvv
 	q3::inwork 13391,16436 13630,16629
 Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
@@ -31265,7 +31265,7 @@ EOF
 #: also_indoor: traffic (H)
 #: XXX Stand 2021-07-31: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2021-11-10
+#: last_checked: 2021-12-16
 #: check_frequency: 30d
 	q3::inwork 14136,17170 13996,16959
 EOF
@@ -33981,8 +33981,8 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
 #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fährt wieder, aber die Bauarbeiten sind noch nicht beendet)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-12-15 vvv
-#: check_frequency: 3d vvv
+#: last_checked: 2021-12-16 vvv
+#: check_frequency: 2d vvv
 	q3::inwork 14965,11924 15077,11910
 	q3::inwork; 15077,11910 15133,11902 15256,11884
 	q3::inwork 14965,11924 14888,11934 14836,11842
@@ -34141,6 +34141,16 @@ EOF
 	q4 15621,10214 15604,10204
 	q4 15840,9980 15811,9957 15786,9957
 	q4 16038,9837 16002,9787
+EOF
+     },
+     { from  => $isodate2epoch->("2021-12-17 05:00:00"),
+       until => $isodate2epoch->("2021-12-19 23:00:00"),
+       text  => 'Preußenallee: Richtung Heerstr. zwischen Marathonallee und Badenallee gesperrt (Weihnachten in Westend), vom 18.12.2021 05:00 bis 19.12.2021 23:00 ',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.259828,52.514849,18.12.2021,05:00',
+       data  => <<EOF,
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
+	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607
 EOF
      },
     );
