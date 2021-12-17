@@ -692,8 +692,6 @@ Vogelsangsruh: ist die gesamte Straße asphaltiert?	? 66431,84540 66638,84513
 Niederfelde: ist die gesamte Straße gepflastert?	? 66126,84243 66092,84252 66062,84129
 Auguststr. (Schwedt): Qualität des westlichen Abschnitts?	? 68135,73168 68517,73160 68591,73201 68777,73351
 Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9847,6891
-Rita-Maiburg-Str.: Wann wird die Straße fertiggestellt? Qualität? Wo wird sich die Straße befinden (möglichst mit GPS-Track)?	?::projected 20342,-777 20782,-1199 20822,-1242 20833,-1298 20872,-1748
-Ludwig-Prandtl-Str.: ist die Straße bis zur Rita-Maiburg-Str. verlängert worden?	?::projected 20274,-845 20342,-777
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 16377,90072 15782,90862 15728,90935 15398,92093 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 17912,95192 18005,95449
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 18029,95408 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
@@ -957,7 +955,7 @@ Tiergartenstr. (Einbahnstraße?)	? -15004,105813 -14862,105712 -14570,105702 -142
 Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105763 -13977,105850 -13932,106157
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 # added from flaechen
-(Hängen hier Straßenschilder für den neuen "Paulinenplatz"?)	? 3328,3313 3327,3261 3348,3278 3328,3313
+(HÃ¤ngen hier StraÃŸenschilder fÃ¼r den neuen "Paulinenplatz"?)	? 3328,3313 3327,3261 3348,3278 3328,3313
 # added from qualitaet_s
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
 Retzowstr.: löchriger Asphalt (Ist die Qualität des Asphalts nach den Bauarbeiten besser geworden?)	? 6331,2281 6399,2184
@@ -965,8 +963,8 @@ Mausohrweg: Asphalt, letzte Deckschicht fehlt (wann wird die Fahrbahndecke endgü
 Mausohrweg: Asphalt, letzte Deckschicht fehlt (wann wird die Fahrbahndecke endgültig hergestellt?)	? 33176,2938 33296,2894 33406,2852 33503,2818
 Abendseglersteig: Asphalt, letzte Deckschicht fehlt (wann wird die Fahrbahndecke endgültig hergestellt?)	? 33406,2852 33383,2792 33267,2810 33147,2832 33176,2938
 Campestr.: Asphalt (Wird die Qualität der Fahrbahn nach den Bauarbeiten besser sein?)	? 1127,20434 1128,20525 1080,20617
-Bärenlauchstr.: Asphalt, einige Querrillen (Sind die Bauarbeiten beendet? Liegt hier nun besserer Asphalt?)	? 19737,5134 19744,5063 19755,4962 19760,4907 19765,4876
 # added from qualitaet_l
+Ortsdurchfahrt Beerbaum: schlechtes Kopfsteinpflaster (Ist die Fahrbahnqualität nach den Bauarbeiten besser geworden?)	? 36000,36534 36215,36497 36307,36503 36359,36493
 Neuruppin - Wuthenow - Gnewikow - Wustrau-Altfriesack: teilweise gut, teilweise mäßiges Kopfsteinpflaster (wird sich die Qualität nach den Bauarbeiten verbessern?)	? -29918,57158 -29816,57117 -29490,56714 -29243,56187 -29198,55801 -29109,55374 -28677,55014 -28367,54202 -28911,54055 -29276,53427 -29210,52915 -28736,52387 -28368,51517 -28001,50966 -27421,50349 -27196,50015 -27035,49829 -25968,49631 -25719,49500 -25060,48842
 Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK (ist hier mittlerweile asphaltiert?)	? 5633,-2011 5292,-2221 5132,-2299
 Werder - Golm: relativ glatter Feldweg mit einigen Schlaglöchern (welche Nummer des F-Wegs?)	? -21131,-2004 -20954,-1991 -20933,-1960 -20719,-1956 -20528,-1962
@@ -1068,6 +1066,6 @@ L25 (Prenzlau - Güstow): straßenbegleitender Radweg entsteht (Gibt es zwischen P
 Rehagener Platz: Bauarbeiten, Fahrbahn gesperrt, außerdem ist der Kreuzungsbereich Rehagener Str./Kirchbachstr. gesperrt (Bis wann gehen die Bauarbeiten? Wird das Kopfsteinpflaster nach den Bauarbeiten etwas besser sein?)	? 10642,-2371 10638,-2452
 Rehagener Platz: Bauarbeiten, Fahrbahn gesperrt, außerdem ist der Kreuzungsbereich Rehagener Str./Kirchbachstr. gesperrt (Bis wann gehen die Bauarbeiten? Wird das Kopfsteinpflaster nach den Bauarbeiten etwas besser sein?)	? 10563,-2432 10638,-2452
 Brümmerstr.: zwischen Thielallee und Fabeckstr. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt (Wie lange gehen die Bauarbeiten?)	? 2523,5114 2746,5537
-Glashütter Weg - Künnekeweg: Bauarbeiten, Weg ist gesperrt, Umfahrung über Trampelpfade möglich, Ende der Bauarbeiten unbekannt (Stand August 2021) (Wie lange gehen die Bauarbeiten? Wie ist die Wegoberfläche nach den Bauarbeiten?)	? 18432,1352 18290,1574
+Seydlitzstr.: südlich der Dessauerstr. Bauarbeiten, komplett gesperrt, Ende der Sperrung unbekannt (Wann wird die Sperrung aufgehoben?)	? 6511,2284 6459,2364
 S-Bhf. Schichauweg: Unterführung an der Nordseite möglicherweise wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt (Ist die Unterführung tatsächlich gesperrt?)	? 9699,-600 9562,-619
 Perleberger Str.: Richtung Heidestr. Bauarbeiten zwischen Lübecker Str. und Birkenstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 07.12.2021 10:00 bis 02.03.2022 17:00  (Sind Radfahrer von der Baustelle betroffen?)	? 6366,13716 6493,13822

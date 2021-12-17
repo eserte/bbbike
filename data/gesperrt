@@ -97,10 +97,8 @@ Nöldnerplatz	1 15903,10906 16049,10844
 Adlergestell (extra Radweg)	2 22096,1136 21837,1340 21812,1366 21506,1768 21388,1895
 Adlergestell (extra Radweg)	2 21998,1239 21937,1343 21874,1511 21862,1532
 Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
-B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271
 B96a (Kfz-Straße)	2 21829,1351 21862,1532
 B96a (Kfz-Straße)	2 21862,1532 21819,1595 21506,1768
-Zufahrt zur B96a	2 20288,-511 20272,-501
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
 Platz S (Hundekehlestr.)	1 2301,7698 2213,7637
 Platz S (Hundekehlestr.)	1 2169,7690 2222,7718 2277,7705
@@ -2409,6 +2407,8 @@ abgeschlossenes Tor	3 14556,409 14701,0 14710,-25
 abgeschlossenes Tor	3 14710,-25 14701,0 14556,409
 abgeschlossenes Tor	3 8161,7907 8203,7909 8260,7911
 abgeschlossenes Tor	3 8260,7911 8203,7909 8161,7907
+abgeschlossenes Tor	3 20555,15 20561,17 20685,52
+abgeschlossenes Tor	3 20685,52 20561,17 20555,15
 tragen (ca. 33 Stufen)	0:30:-86 20661,12140
 tragen	0:30:5 20657,12101
 tragen (16 Stufen)	0:25:-233 20330,12025
@@ -2418,7 +2418,7 @@ tragen (6+6+1 Stufen)	0:25:-190 5606,12232
 tragen (insgesamt 16 Stufen)	0:35:-160 2913,13919
 tragen (3x13 Stufen)	0:45:-132 18739,4728
 tragen (3x13 Stufen)	0:45:-225 18636,4660
-tragen (ca. 35 Stufen)	0:45:-38 18704,4665
+tragen (36 Stufen)	0:45:-38 18704,4665
 tragen (28 Stufen)	0:30:-260 6138,12877
 Schranke	BNP:3:-142:trailer=10 20480,5445
 Tor, kann geschlossen sein	BNP:10:-180:trailer=15 20682,9834
@@ -3164,6 +3164,11 @@ Drängelgitter	BNP:3:-44:trailer=10 -739,23004
 Schranke	BNP:1:90:trailer=3 1201,15804
 Drängelgitter	BNP:3:57:trailer=10 32616,-23392
 Schranke	BNP:3:-115:trailer=10 17837,12277
+Schranke	BNP:1:9:trailer=5 20813,-941
+Drängelgitter	BNP:3:-32:trailer=10 18414,1380
+Drängelgitter	BNP:3:-32:trailer=10 18232,1669
+Drängelgitter	BNP:3:-147:trailer=10 20560,23
+Drängelgitter	BNP:3:-106:trailer=10 20675,56
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,16043 -226,16086
 Pionierweg: wegen Bauarbeiten gesperrt	2::inwork 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
@@ -3195,7 +3200,6 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18722,4628 18656,4687
 Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,4678
-Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,4817 18306,4753 18331,4744 18497,4529
 Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12165,8566 12287,8602
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9468,-85 9271,323 9253,370 9218,458 9178,556
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9271,323 9296,335 9249,434 9218,458

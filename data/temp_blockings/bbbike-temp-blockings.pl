@@ -12717,7 +12717,7 @@ EOF
        source_id => 'IM_009890',
        data  => <<EOF,
 	2::inwork 20673,-31 20590,-120 20519,-198
-	2::inwork 20688,-10 20685,52 20684,105 20719,140
+	2::inwork 20688,-10 20685,52 20685,59 20684,105 20719,140
 	2::inwork 20161,-487 20300,-416 20348,-380 20476,-279 20505,-217
 EOF
      },
@@ -22321,7 +22321,7 @@ EOF
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124
 #: source_id: 2147339574
 #: confirmed_by: srt
-	1::inwork 17886,5587 17736,5441
+	1::inwork 17886,5587 17747,5452 17736,5441
 EOF
      },
      { from  => 1376816220, # 2013-08-18 10:57
@@ -22583,7 +22583,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20131007.1105.390062.html',
        data  => <<EOF,
 #: source_id: IM_020526
-	q4::inwork 20790,-537 20675,-526 20362,-511 20354,-569 20252,-571 20205,-548
+	q4::inwork 20783,-528 20675,-526 20362,-511 20354,-569 20252,-571 20205,-548
 EOF
      },
      { from  => 1381615200, # 2013-10-13 00:00
@@ -24485,7 +24485,7 @@ EOF
 #: note: laut BA Treptow-Köpenick geht die Sperrung bis zum 2018-06-16, laut vmz bis Mitte Juni 2018
 #: by http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180406
 #: source_id: 2147342409
-	2::inwork 17886,5587 17736,5441
+	2::inwork 17886,5587 17747,5452 17736,5441
 EOF
      },
      { from  => 1425164400, # 2015-03-01 00:00
@@ -25343,7 +25343,7 @@ EOF
      { from  => $isodate2epoch->("2019-12-28 15:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
        until => $isodate2epoch->("2020-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
        periodic => 1,
-       recurrences => [['yearly', days => 28, months => 12, start => "2021-01-01T00:00:00"]], # 2020/2021 keine große Silvesterparty
+       recurrences => [['yearly', days => 28, months => 12, start => "2022-01-01T00:00:00"]], # 2020/2021 keine große Silvesterparty; 2021/2022 ebenso, nur eine kleine
        recurrence_prewarn_days => 2, # XXX Ausmaß der Sperrung 2020/2021 unklar, 2021/2022 ebenso
        text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2019 bis 02.01.2020',
        type  => 'gesperrt',
@@ -30479,7 +30479,7 @@ EOF
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-12-04
+#: last_checked: 2021-12-08 (mapillary)
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 EOF
@@ -32862,15 +32862,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1639748285, # undef, # XXX
        text  => 'Glashütter Weg - Künnekeweg: Bauarbeiten, Weg ist gesperrt, Umfahrung über Trampelpfade möglich, Ende der Bauarbeiten unbekannt (Stand August 2021)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2021-10-02
-#: XXX vermutlich werden es Betonstein oder Verbundsteinpflaster, außerdem gibt's ein neues Drängelgitter am südlichen Ende
-#: osm_watch: way id="28450096" version="9"
-#: add_fragezeichen: Wie lange gehen die Bauarbeiten? Wie ist die Wegoberfläche nach den Bauarbeiten?
-	2::inwork 18432,1352 18290,1574
+# REMOVED --- #: last_checked: 2021-10-02 --- #: XXX vermutlich werden es Betonstein oder Verbundsteinpflaster, außerdem gibt's ein neues Drängelgitter am südlichen Ende --- #: osm_watch: way id="28450096" version="9" --- #: add_fragezeichen: Wie lange gehen die Bauarbeiten? Wie ist die Wegoberfläche nach den Bauarbeiten?
+	2::inwork 18432,1352 18414,1380 18290,1574
 EOF
      },
      { from  => 1621843200, # 2021-05-24 10:00
@@ -32896,11 +32893,11 @@ EOF
 #: by: https://www.degewo.de/wachstum/neubau/steglitz-zehlendorf/dessauer-strasse-37-39/ (Fertigstellung 2022)
 #: by: https://www.deutsches-architekturforum.de/thread/11060-steglitz-zehlendorf-kleinere-projekte/?postID=631390#post631390
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/degewo-wohnungsbauprojekt-in-der-dessauerstrasse-soll-noch-in-diesem-jahr-starten_a211105 (Fertigstellung Dezember 2021 (Stand Mai 2019))
-#: osm_watch: way id="48490204" version="4"
+# REMOVED (wurde entfernt) --- #: osm_watch: way id="48490204" version="5"
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: last_checked: 2021-09-12
 #: check_frequency: 120d
-#: next_check: 2022-01-01
+#: next_check: 2021-12-17
 	2::inwork 6511,2284 6459,2364
 EOF
      },
@@ -33210,7 +33207,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-12-15
+#: last_checked: 2021-12-17
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33347,8 +33344,8 @@ EOF
 EOF
      },
      { from  => 1627164000, # 2021-07-25 00:00
-       until => $isodate2epoch->("2021-12-20 18:00:00"), # undef, # XXX
-       text  => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich 20.12.2021',
+       until => $isodate2epoch->("2022-03-31 17:00:00"), # undef, # XXX
+       text  => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich 31.03.2022',
        type  => 'handicap',
        source_id => 'viz2021:13.444,52.53356,26.07.2021,08:18',
        data  => <<EOF,
@@ -33356,8 +33353,8 @@ EOF
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
 #: also_indoor: traffic (G,H)
 #: last_checked: 2021-11-29
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2021-12-20
+#: check_frequency: 45d
+#: next_check: 2022-03-31
 	q3::inwork 13057,14267 13158,14117
 EOF
      },
@@ -33884,7 +33881,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1139553.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-in-der-baerenlauchstrasse_a326432
-	q4::inwork 19765,4876 19760,4907 19755,4962 19744,5063 19737,5134 19735,5158
+	q4::inwork 19765,4876 19761,4907 19755,4962 19744,5063 19737,5134 19735,5158
 EOF
      },
      { from  => 1635634800, # 2021-10-31 01:00
@@ -34151,6 +34148,17 @@ EOF
        data  => <<EOF,
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
 	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607
+EOF
+     },
+     { from  => 1640408400, # 2021-12-25 06:00
+       until => 1641164400, # 2022-01-03 00:00
+       text  => 'Silvesterfeier am Brandenburger Tor: Sperrung vom 26.12.2021 06:00 Uhr bis 02.01.2022 24:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: note: nicht-öffentliche Silvesterfeier; für die richtige große Silvesterfeier see elsewhere
+#: by: https://viz.berlin.de/2021/12/feiertage/
+	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165 8595,12066
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8592,12252 8637,12258 8643,12208 8728,12220 8722,12268 8714,12319 8630,12307 8637,12258 8722,12268
 EOF
      },
     );

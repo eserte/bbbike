@@ -3865,7 +3865,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-12-04
+#: last_checked: 2021-12-08 (mapillary)
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 ',
@@ -4472,30 +4472,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: last_checked: 2021-10-02
-#: XXX vermutlich werden es Betonstein oder Verbundsteinpflaster, außerdem gibt\'s ein neues Drängelgitter am südlichen Ende
-#: osm_watch: way id="28450096" version="9"
-#: add_fragezeichen: Wie lange gehen die Bauarbeiten? Wie ist die Wegoberfläche nach den Bauarbeiten?
-	2::inwork 18432,1352 18290,1574
-',
-         'from' => undef,
-         'id' => 3382,
-         'text' => 'Glashütter Weg - Künnekeweg: Bauarbeiten, Weg ist gesperrt, Umfahrung über Trampelpfade möglich, Ende der Bauarbeiten unbekannt (Stand August 2021)',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: SEYDLITZ-2021
 #: by: https://www.degewo.de/wachstum/neubau/steglitz-zehlendorf/dessauer-strasse-37-39/ (Fertigstellung 2022)
 #: by: https://www.deutsches-architekturforum.de/thread/11060-steglitz-zehlendorf-kleinere-projekte/?postID=631390#post631390
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/degewo-wohnungsbauprojekt-in-der-dessauerstrasse-soll-noch-in-diesem-jahr-starten_a211105 (Fertigstellung Dezember 2021 (Stand Mai 2019))
-#: osm_watch: way id="48490204" version="4"
+# REMOVED (wurde entfernt) --- #: osm_watch: way id="48490204" version="5"
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: last_checked: 2021-09-12
 #: check_frequency: 120d
-#: next_check: 2022-01-01
+#: next_check: 2021-12-17
 	2::inwork 6511,2284 6459,2364
 ',
          'from' => undef,
@@ -4596,7 +4584,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-12-15
+#: last_checked: 2021-12-17
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -4680,16 +4668,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
 #: also_indoor: traffic (G,H)
 #: last_checked: 2021-11-29
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2021-12-20
+#: check_frequency: 45d
+#: next_check: 2022-03-31
 	q3::inwork 13057,14267 13158,14117
 ',
          'from' => 1627164000,
          'id' => 3424,
          'source_id' => 'viz2021:13.444,52.53356,26.07.2021,08:18',
-         'text' => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich 20.12.2021',
+         'text' => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich 31.03.2022',
          'type' => 'handicap',
-         'until' => 1640019600
+         'until' => 1648738800
        },
        undef,
        undef,
@@ -5045,6 +5033,18 @@ Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
          'text' => 'Preußenallee: Richtung Heerstr. zwischen Marathonallee und Badenallee gesperrt (Weihnachten in Westend), vom 18.12.2021 05:00 bis 19.12.2021 23:00 ',
          'type' => 'gesperrt',
          'until' => 1639951200
+       },
+       {
+         'data' => '#: note: nicht-öffentliche Silvesterfeier; für die richtige große Silvesterfeier see elsewhere
+#: by: https://viz.berlin.de/2021/12/feiertage/
+	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165 8595,12066
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8592,12252 8637,12258 8643,12208 8728,12220 8722,12268 8714,12319 8630,12307 8637,12258 8722,12268
+',
+         'from' => 1640408400,
+         'id' => 3490,
+         'text' => 'Silvesterfeier am Brandenburger Tor: Sperrung vom 26.12.2021 06:00 Uhr bis 02.01.2022 24:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1641164400
        }
      
 );

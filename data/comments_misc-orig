@@ -943,7 +943,7 @@ Ausgeschildert zum Heckerdamm 181-213 und zur Siedlung Juliusruh	CP2; 3765,14746
 Ausgeschildert als Wohlrabedamm 24-30	CP2; 1216,13978 1252,14007
 Am Igelgrund: Privatstraﬂe	CS 9068,20446 9126,20515
 Sterndamm: Richtung Groﬂ-Berliner Damm	CP2; 17648,5338 17705,5223
-Vergissmeinnichtweg: nur f¸r Berechtigte	CS 21582,185 21608,85
+Vergissmeinnichtweg: nur f¸r Berechtigte	CS 21582,185 21596,132 21608,85
 Heidelbeerweg: nur f¸r Berechtigte	CS 21669,99 21645,200
 (Schmiedegasse - Pappelallee): Privatstraﬂe	CS -13581,-10 -13558,88
 Kutscherweg: Privatstraﬂe	CS -13620,-131 -13700,-106 -13775,-85
@@ -1192,7 +1192,7 @@ Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788&d=20191216 (Benennung nach Hans Otto Obrikat vorgeschlagen)
 #: XXX oder wird statt Wasserstr. und Uferstr. die Straﬂe nach Hans Otto Obrikat benannt? (erster Vorschlag: "Else-Schierhorn-Str.")
-#: last_checked: 2021-12-15
+#: last_checked: 2021-12-17
 #: check_frequency: 60d
 Wasserstr. und Uferstr.: noch nicht ausgeschildert	CS 17483,6024 17681,6212 17847,6089
 # 
@@ -1489,7 +1489,8 @@ ausgeschildert als "zu den H‰usern Seefelder Str. 15-49"	CP2; 17383,16197 17362,
 # 
 zum Terminal A	CP2; 2853,16293 2812,16348
 # 
-am Anfang als Hauptweg 15 (blau-weiﬂe Markierung) ausgeschildert	CP2; 19924,4252 19901,4334
+am Anfang als Wanderweg 15 (weiﬂ-blau-weiﬂe Markierung) ausgeschildert	CP2; 19924,4252 19901,4334
+als Wanderweg 15 (weiﬂ-blau-weiﬂe Markierung) ausgeschildert	CP2; 19864,4607 19890,4505
 # 
 # REMOVED (mittlerweile wurden die Straﬂenschilder ausgewechselt) --- #: XXX bleibt diese Ausschilderung? Immerhin heiﬂt der Platz nun offiziell "Scharounplatz" --- #: last_checked: 2021-06-13 --- #: check_frequency: 60d --- ausgeschildert als "Scharounstr."	CP2; 7943,11431 8083,11381
 # 
@@ -1602,6 +1603,9 @@ ausgeschildert "Nachtigalplatz"	CP2; 5581,16708 5639,16768
 ausgeschildert "Danziger Str. 101-109"	CP2; 12123,14643 12174,14739
 # 
 Privatstraﬂe	CS 21193,11330 21214,11331
+# 
+blaues Straﬂenschild "Ewaldstr."	CP2; 20685,52 20561,17
+blaues Straﬂenschild "Klettenberger Str."	CP2; 20555,15 20561,17
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straﬂen)
