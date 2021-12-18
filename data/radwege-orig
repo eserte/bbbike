@@ -1530,8 +1530,9 @@ Busspur ist immer gültig	RW5; 7579,10183 7698,10147 7702,10146 7813,10112
 provisorische Radspuren, abgegrenzt	RW2;RW8 7906,10098 7814,10117 7702,10146
 Busspur ist immer gültig	RW5; 7702,10146 7698,10147 7579,10183
 Bushaltestelle	RW5; 7579,10183 7536,10199
+Radspur hinter den parkenden Autos	RW4; 7536,10199 7413,10244
 #: note: außerdem ist die Busspur (immer gültig) für Radfahrer freigegeben
-Radspur hinter den parkenden Autos	RW4; 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396
+Radspur hinter den parkenden Autos	RW4; 7413,10244 7238,10299 7131,10331 7033,10396
 Bushaltestelle	RW5; 7033,10396 6937,10407
 #: note: außerdem ist die Busspur (immer gültig) für Radfahrer freigegeben
 Radspur hinter den parkenden Autos	RW4; 6937,10407 6851,10416 6753,10446 6636,10492
@@ -5306,6 +5307,8 @@ asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 #: check_frequency: 60d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
+#: osm_watch: way id="153370345" version="11"
+#: osm_watch: way id="153373877" version="15"
 	RW3; 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
 #: note: außerdem werden Rechtsabbieger auf dem ehemaligen Bürgersteigradweg geführt, an der Ampel vorbei
 Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
@@ -5317,6 +5320,8 @@ Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
 #: by: https://westnordost.de/p/32402.jpg
 #: confirmed_by: srt
 	RW3; 6145,10975 6168,11042
+#: osm_watch: way id="153370344" version="18"
+#: osm_watch: way id="153373879" version="15"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
 #: check_frequency ^^^
 # REMOVED --- #: next_check ^^^
@@ -7103,6 +7108,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
 #: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
+#: by: https://berliner-abendblatt.de/2021/12/18/pop-up-radwege-bleiben-dauerhaft/
 #: last_checked: 2021-12-03 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
