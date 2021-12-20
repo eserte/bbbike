@@ -3603,7 +3603,8 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        {
          'data' => '#: source_id: 2147343519 (bis 31.12.2021)
-#: note: laut rbbtext bis 4.1.2021 (mittlerweile existiert die Meldung hier nicht mehr)
+#: source_id: viz2021:13.468875,52.614511,27.11.2018,09:00 (bis 31.08.2023)
+#: note: laut rbb nur bis 31.08.2022
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5735 (bis Ende 2022?)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5772 (bis Ende August 2023?)
@@ -3612,9 +3613,9 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 ',
          'from' => 1543258848,
          'id' => 3058,
-         'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, voraussichtlich bis Ende 2021',
+         'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, voraussichtlich bis Ende August 2023',
          'type' => 'gesperrt',
-         'until' => 1640970000
+         'until' => 1693497600
        },
        undef,
        undef,
@@ -3966,7 +3967,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2021-12-18 vvv
+#: last_checked: 2021-12-20 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4947,26 +4948,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
-#: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fährt wieder, aber die Bauarbeiten sind noch nicht beendet)
-#: also_indoor: traffic (G,H)
-#: last_checked: 2021-12-18 vvv
-#: check_frequency: 2d vvv
-	q3::inwork 14965,11924 15077,11910
-	q3::inwork; 15077,11910 15133,11902 15256,11884
-	q3::inwork 14965,11924 14888,11934 14836,11842
-#: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden
-Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1637599882,
-         'id' => 3479,
-         'text' => 'Scharnweberstr./Weichselstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -5025,17 +5007,7 @@ Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/2772887-955635-weihnachten-in-westend.html
-	1::xmas 589,11953 577,11837 562,11710 560,11695 550,11607
-',
-         'from' => 1639713600,
-         'id' => 3489,
-         'source_id' => 'viz2021:13.259828,52.514849,18.12.2021,05:00',
-         'text' => 'Preußenallee: Richtung Heerstr. zwischen Marathonallee und Badenallee gesperrt (Weihnachten in Westend), vom 18.12.2021 05:00 bis 19.12.2021 23:00 ',
-         'type' => 'gesperrt',
-         'until' => 1639951200
-       },
+       undef,
        {
          'data' => '#: note: nicht-öffentliche Silvesterfeier; für die richtige große Silvesterfeier see elsewhere
 #: by: https://viz.berlin.de/2021/12/feiertage/
