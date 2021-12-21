@@ -742,6 +742,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12317,14535
 	X 13330,13468
 	X 14006,13761
+#: XXX_prog gilt nur für Radfahrer Richtung NO
+#: note: Anforderungsampel
+	F 13906,13722
 	X 9426,3797
 	X 9455,3671
 #: XXX_prog: für rechtsabbiegende Radfahrer auf dem Radweg aus der Rixdorfer Str. nach Alt-Mariendorf nicht relevant (Radweg wird vor der Ampel nach rechts geführt)
@@ -2337,6 +2340,7 @@ Industriebahn	B0 -2410,13746
 #: note: kann ausgeschaltet sein (gesehen: Di, 2016-08-23, gegen 18:45)
 	F 11285,14515
 # REMOVED (Baustellenampel, existiert nicht mehr, 2009-07) ---	X 10635,13207
+#: XXX_prog Gilt nicht für Radfahrer auf dem Radweg Richtung Süden
 	F 11909,15477
 	X 7880,13315
 # REMOVED (zurzeit ausgeschaltet) ---	X 8019,13650

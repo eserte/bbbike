@@ -10,9 +10,9 @@
 # 
 ### Friedrichshain ###
 # 
-#: XXX Bauarbeiten der Wasserbetriebe, möglicherweise bis April 2022
-#: last_checked: 2021-11-19
-#: check_frequency: 30d
+#: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022
+#: last_checked: 2021-12-21
+#: check_frequency: 45d
 #: next_check: 2022-04-01
 Mühsamstr.: Fahrbahn im Kreuzungsbereich Thaerstr. gesperrt	q4::inwork 13844,12900 13818,12897 13838,12884
 # 
@@ -823,14 +823,15 @@ Moltkestraßenbrücke: Fahrbahn gesperrt	q4::inwork 3867,4537 3898,4490
 # 
 #: next_check_id: HOSEMANN-2019
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
+#: XXX laut Schild bis Dezember 2022
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021)
 #: osm_watch: way id="885619857" version="5"
 #: osm_watch: way id="885619858" version="4"
 #: note: laut rbbtext bis 31.12.2020
 #: priority: #B
-#: last_checked: 2021-11-10 vvv
-#: check_frequency: 45d vvv
-#: next_check: 2021-12-31 vvv
+#: last_checked: 2021-12-21 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwork 12556,15518 12605,15491 12621,15482
@@ -4201,7 +4202,7 @@ Bautzener Platz: Fußgänger, Bordsteine	q3 8182,9240 8100,9240
 Bautzener Platz: Fufgänger, Bordsteine	q3 8102,9262 8183,9260
 #: XXX_prog ^^^
 (Danziger Str. - Lilli-Henoch-Str.): Fußgänger	q2 12123,14643 12174,14739 12183,14757 12193,14775 12212,14781 12252,14860 12236,14870 12314,15008
-#: note: gemeinsamer Rad- und Gehweg
+#: note: gemeinsamer Rad- und Gehweg (am westlichen Ende fehlt das Schild, ansonsten ausgeschildert)
 (Prenzlauer Allee - Lilli-Henoch-Str.): Fußgänger	q2 11877,15366 11937,15349 12003,15311 12103,15218 12208,15108 12284,15068 12314,15008
 (Prenzlauer Allee - Lilly-Henoch-Str.): Fußgänger	q2 11860,15309 11919,15314 11937,15349
 (Verlängerte Diesterwegstr.): Fußgänger	q2 12056,15159 12082,15206 12103,15218

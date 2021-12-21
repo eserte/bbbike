@@ -2325,15 +2325,15 @@ Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (ab 1.11.2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158998.php (Abschluss Woche 51/2021, Grünmarkierung erst im Frühjahr 2022)
 #: by: https://berliner-abendblatt.de/2021/12/20/radweg-auf-der-lichtenberger-strasse-wird-fertig/
-#: source_id: viz2021:13.428503,52.518895,16.11.2021,17:00 (bis 30.11.2021) (mittlerweile bis 10.12.2021) (bis 22.12.2021) (bis 21.12.2021)
+#: source_id: viz2021:13.428503,52.518895,16.11.2021,17:00 (bis 30.11.2021) (mittlerweile bis 10.12.2021) (bis 22.12.2021) (bis 21.12.2021) (inaktiv)
 #: XXX geschützer Radweg wird gebaut (nach den Bauarbeiten Richtung Süden) vvv
-#: last_checked: 2021-12-08 vvv
-# REMOVED --- #: check_frequency: 7d vvv
-#: next_check: 2021-12-21 vvv
+#: last_checked: 2021-12-21 vvv
+#: check_frequency: 2d vvv
+# REMOVED --- #: next_check: 2021-12-21 vvv
 	RW3; 12050,12616 12064,12673 12112,12861 12122,13029
 	RW2; 12122,13029 12126,13088
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -2583,7 +2583,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20210720 (Baubeginn Ende 2022)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
-#: last_checked: 2021-12-16 vvv
+#: last_checked: 2021-12-21 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-12-31 vvv
 	RW1;RW1 13438,14675 13731,14200 13736,14192 13879,13967
@@ -5446,7 +5446,7 @@ benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17991,6431
 	RW4;RW4 12758,11915 12822,12067
 	RW4;RW4 12822,12067 12833,12154
 	RW4;RW3 12833,12154 12854,12287
-Radspuren noch einige Meter in Richtung Karl-Marx-Allee	RW0;RW0 12854,12287 12878,12430
+	RW3;RW3 12854,12287 12862,12332
 	RW1; 23402,5483 23384,5541
 	RW3; 23384,5541 23370,5589 23333,5710
 	RW3; 23333,5710 23370,5589
@@ -7426,4 +7426,6 @@ Gelbmarkierung	RW3;RW3 8971,864 9014,898 9024,906 9058,932 9129,986
 	RW;RW -261,15858 -265,15917 -255,15993 -239,16077 -203,16168
 # 
 	RW3;RW3 20919,3082 21068,2926
+# 
+	RW7;RW7 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
