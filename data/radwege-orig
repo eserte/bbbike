@@ -1411,7 +1411,7 @@ Verbundsteinpflaster, erhebliche Schäden durch Wurzelhebungen	RW1; 5166,13087 49
 #: source_id: 2147344664 (bis Ende Oktober 2019)
 #: source_id: viz2021:13.346369,52.431944,20.09.2021,07:30 (Leitungsarbeiten bis 26.10.2021 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?)
 #: source_id: viz2021:13.34634,52.43195,02.11.2021,17:40 (Arbeien bis 26.11.2021 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?)
-#: osm_watch: way id="85468589" version="17"
+#: osm_watch: way id="85468589" version="18"
 #: osm_watch: way id="458915639" version="3"
 #: last_checked: 2021-09-12
 #: check_frequency: 90d
@@ -2326,15 +2326,19 @@ Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158998.php (Abschluss Woche 51/2021, Grünmarkierung erst im Frühjahr 2022)
 #: by: https://berliner-abendblatt.de/2021/12/20/radweg-auf-der-lichtenberger-strasse-wird-fertig/
 #: source_id: viz2021:13.428503,52.518895,16.11.2021,17:00 (bis 30.11.2021) (mittlerweile bis 10.12.2021) (bis 22.12.2021) (bis 21.12.2021) (inaktiv)
-#: XXX geschützer Radweg wird gebaut (nach den Bauarbeiten Richtung Süden) vvv
-#: last_checked: 2021-12-21 vvv
-#: check_frequency: 2d vvv
-# REMOVED --- #: next_check: 2021-12-21 vvv
-	RW3; 12050,12616 12064,12673 12112,12861 12122,13029
+#: XXX Radspuren sind fertig, Grünmarkierung folgt im Frühjahr 2022 vvv
+#: priority: #D vvv
+#: last_checked: 2021-12-22 vvv
+# REMOVED --- #: check_frequency: 30d vvv
+#: next_check: 2022-04-01 vvv
+	RW4; 12050,12616 12064,12673
+Radspur hinter den parkenden Autos	RW4; 12064,12673 12112,12861
+	RW3; 12112,12861 12122,13029
 	RW2; 12122,13029 12126,13088
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
+#: priority ^^^
 #: XXX ^^^
 # 
 	RW4;RW2 12126,13088 12139,13162

@@ -1789,7 +1789,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2021-11-18
+#: last_checked: 2021-12-22
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -3864,10 +3864,10 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: next_check_id: VOLTAIRE-2019
 #: osm_watch: way id="194962398" version="13"
-#: XXX Unstetige Ausschilderung: mal ist für Radfahrer explizit frei, zumindest von einer Seite, mal nicht.
+#: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-12-08 (mapillary)
+#: last_checked: 2021-12-22
 #: check_frequency: 14d
 	2::inwork 11329,12497 11209,12430
 ',
@@ -3916,7 +3916,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-12-18
+#: last_checked: 2021-12-22
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4504,12 +4504,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: bei rbb weiterhin "in beiden Richtungen gesperrt"
 #: by: https://twitter.com/VIZ_Berlin/status/1459408184053932037 (nur Richtung Norden)
 # REMOVED ---	q4::inwork 12984,1011 12941,1256 12938,1348
-	q4::inwork; 12938,1348 12939,1469 12940,1547
+	q4::inwork; 12940,1547 12939,1469 12938,1348
 ',
          'from' => 1622527200,
          'id' => 3387,
          'source_id' => '2147347243',
-         'text' => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg Richtung Norden gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 23.12.2021 17:00 Uhr ',
+         'text' => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg Richtung Süden gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 23.12.2021 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1640275200
        },
@@ -4591,9 +4591,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
-#: osm_watch: way id="984964447" version="4"
+#: osm_watch: way id="984964447" version="5"
 	q3::inwork 15279,10862 15355,10875
-#: osm_watch: way id="984056169" version="4"
+#: osm_watch: way id="984056169" version="5"
 	2::inwork 15272,10790 15388,10758
 ',
          'from' => 1625734800,
@@ -4853,9 +4853,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: also_indoor: traffic (G)
-#: osm_watch: way id="1003079755" version="2"
+#: osm_watch: way id="1003079755" version="3"
 #: add_fragezeichen: Wann wird die Sperrung der Fahrbahn beendet?
-#: last_checked: 2021-12-05 (osm)
+#: last_checked: 2021-12-22 (osm)
 	q3::inwork 16153,10818 16192,10907
 ',
          'from' => undef,
