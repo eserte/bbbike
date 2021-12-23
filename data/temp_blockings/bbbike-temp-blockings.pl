@@ -28143,7 +28143,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-11-25
+#: last_checked: 2021-12-23
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -32053,7 +32053,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-11-18 vvv
+#: last_checked: 2021-12-23 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -32618,9 +32618,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer? --- 
-#: note: 2021-11-09 ("Radfahrer frei"-Schilder fehlen weiterhin, außerdem gibt es eine explizite Bedarfsumleitung für Radfahrer via Jägerstr.
+#: note: 2021-12-23 ("Radfahrer frei"-Schilder fehlen weiterhin, außerdem gibt es eine explizite Bedarfsumleitung für Radfahrer via Jägerstr.
 #: osm_watch: way id="753316505" version="3"
-#: last_checked: 2021-11-09
+#: last_checked: 2021-12-23
 	q4::inwork; 9195,11972 9207,11880
 # REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
 EOF
@@ -32927,14 +32927,15 @@ EOF
 EOF
      },
      { from  => 1622527200, # 2021-06-01 08:00
-       until => $isodate2epoch->("2021-12-23 17:00:00"), # 1630422000, # 2021-08-31 17:00
-       text  => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg Richtung Süden gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 23.12.2021 17:00 Uhr ', # ursprünglich: Gerlinger Str./Ringslebenstr. und Stuthirtenweg/Stadtgrenze; ursprünglich beide Richtungen
+       until => $isodate2epoch->("2022-02-28 17:00:00"), # 1630422000, # 2021-08-31 17:00
+       text  => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg Richtung Süden gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 28.02.2022 17:00 Uhr ', # ursprünglich: Gerlinger Str./Ringslebenstr. und Stuthirtenweg/Stadtgrenze; ursprünglich beide Richtungen
        type  => 'handicap',
        source_id => '2147347243',
        data  => <<EOF,
 #: next_check_id: BUCKOWERDAMM-2021
 #: source_id: viz2021:13.438231,52.41937,02.06.2021,08:00 (inaktiv)
 #: source_id: viz2021:13.438231,52.41937,13.11.2021,08:00
+#: also_indoor: traffic (G)
 #: note: bei rbb weiterhin "in beiden Richtungen gesperrt"
 #: by: https://twitter.com/VIZ_Berlin/status/1459408184053932037 (nur Richtung Norden)
 # REMOVED ---	q4::inwork 12984,1011 12941,1256 12938,1348
@@ -33703,12 +33704,14 @@ EOF
      },
      { from  => 1633212000, # 2021-10-03 00:00
        until => $isodate2epoch->("2021-12-30 17:00:00"), # 1640214000, # 2021-12-23 00:00
-       text  => 'Rathausstr.: zwischen Königstr. und Ullsteinstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.10.2021 08:00 bis 30.12.2021 17:00 ',
+       text  => 'Rathausstr.: zwischen Kaiserstr. und Kurfürstenstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.10.2021 08:00 bis 30.12.2021 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.378629,52.451139,04.10.2021,08:00',
        data  => <<EOF,
-#: note: im nördlichen Bereich zwischen Kurfürstenstr. und Ullsteinstr. nur ein kurzer Abschnitt betroffen, trotzdem ist hier alles ausnahmslos Einbahnstraße
-	q4::inwork; 8867,4506 8858,4579 8848,4683 8827,4874 8813,5004
+# REMOVED (hier nicht mehr) --- #: note: im nördlichen Bereich zwischen Kurfürstenstr. und Ullsteinstr. nur ein kurzer Abschnitt betroffen, trotzdem ist hier alles ausnahmslos Einbahnstraße ---	q4::inwork; 8848,4683 8827,4874 8813,5004
+#: source_id: viz2021:13.379481,52.445266,04.10.2021,08:00
+#: also_indoor: traffic (H,G(falsch))
+	q4::inwork; 8881,4360 8868,4498 8867,4506 8858,4579 8848,4683
 EOF
      },
      { from  => undef, # 

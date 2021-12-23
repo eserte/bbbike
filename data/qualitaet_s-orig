@@ -1015,7 +1015,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2021-12-22
+#: last_checked: 2021-12-23
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2052,7 +2052,7 @@ Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,1
 #: XXX Asphalt oder Beton?
 Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
-#: last_checked: 2021-05-23 (mapillary)
+#: last_checked: 2021-12-21 (mapillary)
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -11641,7 +11641,7 @@ Parchimer Str. [Stichstraße]: Beton	Q1 22225,12281 22200,12267 22096,12267 22094
 (Fleischerstr. - Grünanlage): Verbundsteinpflaster	Q1 16433,1180 16450,1135 16457,1129
 #: next_check_id: BUCKOWERDAMM-2021
 #: add_fragezeichen: Wurden während der Bauarbeiten die Asphaltschäden ausgebessert?
-#: next_check: 2021-12-23
+#: next_check: 2022-02-28
 Buckower Damm: Asphalt mit Schäden	Q1 12938,1348 12939,1469 12940,1547
 Am Waldrand: Asphalt	Q0 -9393,445 -9407,514 -9412,546
 via Tilia: Kopfsteinpflaster	Q2- -7518,-1175 -7520,-1164 -7534,-1111 -7494,-1071 -7326,-1121 -7310,-1131
@@ -30512,4 +30512,8 @@ Kreuzungsbereich asphaltiert	Q0 11821,14317
 Kreuzungsbereich asphaltiert	Q0 11713,14118
 Einmündungsbereich asphaltiert	Q0 11657,14018
 Einmündungsbereich asphaltiert	Q0 11607,13928
+Einmündungsbereich asphaltiert	Q0 12378,11806
+Einmündungsbereich mit Kopfsteinpflaster	Q1- 13590,12260
+Einmündungsbereich mit Kopfsteinpflaster	Q2 9870,12657
+Kreuzungsbereich asphaltiert	Q0 9919,12613
 #: ignore ^^^
