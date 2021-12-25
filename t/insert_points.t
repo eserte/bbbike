@@ -37,7 +37,7 @@ GetOptions("v!" => \$v)
 
 plan tests => 5 * 2;
 
-my($logfh,$logfile) = tempfile(SUFFIX => ".log");
+my($logfh,$logfile) = tempfile(SUFFIX => ".log", UNLINK => 1);
 
 my $dudenstr      = "9229,8785"; # ecke Mehringdamm
 my $dudenstr_orig = $dudenstr; # "8796,8817";
