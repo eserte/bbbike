@@ -14253,7 +14253,9 @@ sub show_info {
 # diesen sollten aus der Fläche eine vernünftige Länge berechnet werden
 # und diese zu der normalen Länge dazuaddiert werden.
 	    if ($r) {
-		if ($r->[Strassen::CAT()] =~ /^F:/) {
+		my $calc_area   = $r->[Strassen::CAT] =~ /^F:/ || $r->[Strassen::COORDS][0] eq $r->[Strassen::COORDS][-1];
+		my $calc_length = $r->[Strassen::CAT] !~ /^F:/;
+		if ($calc_area) {
 		    $area = Strassen::area($r);
 #XXX Noch nicht --- siehe Kommentare in wasserstrassen-orig und data/Makefile
 #  	    # Inseln abziehen
@@ -14264,7 +14266,8 @@ sub show_info {
 #  		last if $r->[Strassen::CAT] ne 'F:I';
 #  		$area - Strassen::area($r) / 1_000_000;
 #  	    }
-		} else {
+		}
+		if ($calc_length) {
 		    $total_len = Strassen::total_len($r) / 1_000;
 		}
 	    }
@@ -14429,12 +14432,15 @@ sub show_info {
 	    }
 	    $info_text->insert("end", M("Fläche") . ":", "bold",
 			       sprintf("\t%.2f %s", $area_value, $area_unit) . M(" (dieses Teilstück)"), undef); # XXX Msg
-	    $info_text->insert("end", "\n\n");
+	    $info_text->insert("end", "\n");
 	}
 	if (defined $total_len) {
 	    $info_text->insert("end", M("Länge") . ":", "bold",
 			       sprintf("\t%.2f km", $total_len) . M(" (dieses Teilstück)"), undef); # XXX Msg
-	    $info_text->insert("end", "\n\n");
+	    $info_text->insert("end", "\n");
+	}
+	if (defined $area || defined $total_len) {
+	    $info_text->insert("end", "\n");
 	}
 
 	$info_text->insert("end", "Links\n", "bold");
