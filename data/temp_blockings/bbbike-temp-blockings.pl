@@ -29463,6 +29463,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022)
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
 #: also_indoor: traffic (H)
 #: osm_watch: way id="1006570991" version="1"
@@ -33771,16 +33772,22 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Ökomarkt Chamissoplatz: zu Marktzeiten Sperrung der Arndtstr. und des östlichen Teil des Chamissoplatzes, samstags von 9 bis 15 Uhr',
+       text  => 'Ökomarkt Chamissoplatz: zu Marktzeiten Sperrung der Arndtstr. und des östlichen Teil des Chamissoplatzes, samstags von 6 bis 19 Uhr',
        type  => 'gesperrt',
        source_id => 'https://oekomarkt-chamissoplatz.de/',
        data  => <<EOF,
 #: next_check_id: CORONA-2020
-#: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so?
-#: last_checked: 2021-11-20
-#: check_frequency: 90d
-#: tempex: sa T09-T15
-	2::temp 9546,9198 9617,9185 9596,9092
+#: note: Marktzeiten sind wohl 9 bis 15 Uhr, Parkverbote (und mögliche Sperrung/Beeinträchtigung) aber länger
+#: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv
+#: last_checked: 2021-12-25 vvv
+#: check_frequency: 90d vvv
+#: tempex: sa T06-T19 vvv
+	2::temp 9546,9198 9617,9185 9674,9179
+	2::temp 9617,9185 9596,9092
+#: tempex ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 EOF
      },
      { from  => 1633989600, # 2021-10-12 00:00
@@ -33796,15 +33803,16 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-10-17 00:00:00"),
-       until => 1646089200, # 2022-03-01 00:00
-       text  => 'Radweg zwischen Wuhletalstr. und Havemannstr.: Sperrung des Radwegs während der Sanierung, vom 18.10.2021 bis Anfang 2022',
+       until => undef, # 1646089200, # 2022-03-01 00:00
+       text  => 'Radweg zwischen Wuhletalstr. und Havemannstr.: Sperrung des Radwegs während der Sanierung, vom 18.10.2021 bis Frühjahr 2022',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1135832.php',
        data  => <<EOF,
 #: next_check_id: WUHLETALHAVEMANN-2021
 #: add_fragezeichen: Wann sind die Bauarbeiten hier abgeschlossen und die Sperrung aufgehoben?
-#: next_check: 2022-01-01
-	2::inwork 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198
+#: last_checked: 2021-12-22 (mapillary)
+#: next_check: 2022-03-01
+	2::inwork 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198 21871,18244
 EOF
      },
      { from  => undef, # 
@@ -34160,6 +34168,7 @@ EOF
        data  => <<EOF,
 #: note: nicht-öffentliche Silvesterfeier; für die richtige große Silvesterfeier see elsewhere
 #: by: https://viz.berlin.de/2021/12/feiertage/
+#: source_id: viz2021:13.369855,52.515768,26.12.2021,06:00
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165 8595,12066
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8592,12252 8637,12258 8643,12208 8728,12220 8722,12268 8714,12319 8630,12307 8637,12258 8722,12268
 EOF
