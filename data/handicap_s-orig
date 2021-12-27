@@ -708,9 +708,21 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12
 # 
 ### Lichtenberg ###
 # 
-# REMOVED (offen) --- #: XXX bis wann dauern die Bauarbeiten an? --- #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FD6C35EF-640E-43B3-8F22-17914A1869B0 (Verbindungstrasse Fernwärme Klingenberg) --- #: also_indoor: traffic (G(zu viel)) vvv --- #: osm_watch: way id="1002249853" version="1" --- #: osm_watch: way id="198589916" version="8" --- #: osm_watch: way id="198589913" version="6" --- #: last_checked: 2021-12-02 vvv --- #: check_frequency: 10d vvv --- Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q2::inwork; 15932,10830 15681,10801
+#: XXX Bis wann dauern die Bauarbeiten an?
+#: XXX Mittlerweile nur etwa 100m
+#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FD6C35EF-640E-43B3-8F22-17914A1869B0 (Verbindungstrasse Fernwärme Klingenberg)
+#: also_indoor: traffic (G(zu viel)) vvv
+#: osm_watch: way id="1002249853" version="1"
+#: osm_watch: way id="198589916" version="8"
+#: osm_watch: way id="198589913" version="6"
+#: last_checked: 2021-12-27 vvv
+#: check_frequency: 14d vvv
+Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q1::inwork; 15932,10830 15681,10801
 # REMOVED --- Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851
-# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+# 
 # REMOVED --- #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/neue-vorstreckungen-ueberwege-mittelinseln-und-abgesenkte-bordsteine_a319370 (Erwähnung der Wege in der Grünanlage) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8710 (Abschluss der Bauarbeiten im 3. Quartal 2021) --- #: last_checked: 2021-09-11 vvv --- #: check_frequency: 7d vvv
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16878,9875 16900,9861
@@ -1466,7 +1478,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="7"
-#: last_checked: 2021-11-22
+#: last_checked: 2021-12-27
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268

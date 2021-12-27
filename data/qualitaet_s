@@ -4862,12 +4862,12 @@ Allendorfer Weg: Verbundsteinpflaster	Q1 17791,14639 17879,14659
 Allendorfer Weg: Beton	Q1 17879,14659 17991,14684
 Allendorfer Weg: unbefestigte Fahrbahn	Q2 18016,14688 18067,14700 18119,14709
 Allendorfer Weg: Asphalt	Q0 18232,14753 18286,14782
-Charlottenstr.: Beton	Q0 18520,11707 18520,11685 18519,11662 18516,11631 18461,11588
-Charlottenstr: Asphalt	Q0 18461,11588 18477,11388
+Charlottenstr.: Beton	Q0 18520,11707 18520,11685 18520,11662 18520,11631 18462,11602
+Charlottenstr: Asphalt	Q0 18462,11602 18477,11388
 Am Tierpark [zur Nebenfahrbahn]: Beton	Q1 18263,11393 18304,11407
 Am Tierpark [Nebenfahrbahn]: Beton	Q1 18304,11407 18272,11552 18264,11596 18285,11637
 Am Tierpark [Wohngebiet]: Beton	Q1 18304,11407 18387,11427
-Alt-Friedrichsfelde [Nebenfahrbahn]: Beton	Q0 18285,11637 18329,11654 18381,11655 18519,11662
+Alt-Friedrichsfelde [Nebenfahrbahn]: Beton	Q0 18285,11637 18329,11654 18381,11655 18520,11662
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1 18317,11734 18382,11740 18461,11767 18600,11814 18716,11810 18717,11821 18717,11835 18719,11903
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1 18717,11821 18574,11833 18525,11806 18453,11804 18461,11767
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1 18717,11835 18730,11834
@@ -7193,6 +7193,7 @@ Naumannstr.: Kopfsteinpflaster	Q1 7716,8370 7716,8356 7715,8308
 Rüdigerstr.: schlechtes Kopfsteinpflaster	Q3 16259,12419 16147,12434
 Rüdigerstr.: mäßiges Kopfsteinpflaster	Q2 16147,12434 16080,12441
 (Blücherplatz - Johanniterstr.): Gehwegplatten	Q0 9702,10129 9816,10119 9837,10117
+(Blücherplatz - Zossener Str.): Gehwegplatten	Q0 9702,10129 9827,10051
 Idealpassage: Asphalt	Q0 12434,8776 12582,8651
 Hüttigpfad: Verbundsteinpflaster	Q1 4810,15000 4724,15055 4668,15066 4598,15057 4459,15066
 (entlang der Hedwigskathedrale): Pflasterung	Q2 9808,12182 9775,12178 9771,12190 9747,12205
@@ -14612,7 +14613,7 @@ Münsingerstr.: kleinteiliges Kopfsteinpflaster	Q1 -3598,14587 -3535,14408
 (Franckepark - Templerzeile): Parkweg markiert als Radweg auf Verbundsteinpflaster und teilweise fester Kies (wassergebunden)	Q1 9381,6277 9426,6239 9463,6232 9683,6199
 (Schachtelhalmweg - Strohblumenweg): Gras- bzw. Schotterweg	Q2 20351,1981 20340,1974 20383,1903 20471,1768 20525,1713
 Genossenschaftssteg: Asphalt	Q0 7940,19521 7920,19471
-Genossenschaftssteg: unbefestigter Weg, z.T. tiefe Schlaglöcher	Q2 7920,19471 7911,19449 7987,19387
+Genossenschaftssteg: Asphalt	Q0 7920,19471 7911,19449 7987,19387
 Genossenschaftssteg: Asphalt	Q0 7987,19387 8029,19353 8105,19286 8099,19276 8122,19252 8194,19193
 Genossenschaftssteg: Asphalt	Q0 8122,19252 8166,19308
 Straße 33 (Niederschönhausen): Asphalt	Q0 7920,19471 7877,19507 7797,19580

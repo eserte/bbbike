@@ -29206,7 +29206,7 @@ EOF
      },
      { from  => $isodate2epoch->("2021-09-03 14:00:00"), # undef, # 
        until => undef, # $isodate2epoch->("2021-09-06 04:00:00"), # 1570116625, # 1680364800, # 2023-04-01 18:00
-       text  => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand: Mitte November 2021: Durchfahrt ist gesperrt)', # , von Sonnabend, den 04.09.2021, 14:00 Uhr, bis Montag, den 06.09.2021, 4:00 Uhr',
+       text  => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand: Ende Dezember 2021: Durchfahrt ist gesperrt)', # , von Sonnabend, den 04.09.2021, 14:00 Uhr, bis Montag, den 06.09.2021, 4:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
@@ -29214,11 +29214,11 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="23"
+#: osm_watch: way id="8655276" version="24"
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2021-11-26 (osm)
-#: check_frequency: 30d
-	2::inwork 21135,12127 21169,12113 21282,12115
+#: last_checked: 2021-12-27
+#: check_frequency: 60d
+	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
 EOF
      },
@@ -31585,8 +31585,8 @@ EOF
        text  => 'Sigismundstr. und Matthäikirchplatz: Bauarbeiten, Fahrbahn und Bürgersteig unter Umständen komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: SIGISMUND-2020
-#: next_check_id: MUSEUMDERMODERNE-2021
+# REMOVED (beendet) --- #: next_check_id: SIGISMUND-2020
+# REMOVED (beendet) --- #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
 # REMOVED (für Radfahrer mittlerweile sogar explizit frei) --- #: XXX wann sind die Bauarbeiten fertig? vvv
 # REMOVED --- #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
@@ -32209,7 +32209,7 @@ EOF
        source_id => '2147346268',
        data  => <<EOF,
 #: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022)
-#: last_checked: 2021-11-07 (mapillary)
+#: last_checked: 2021-12-25 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-02-01
 	q2::inwork 8913,16159 9099,16398
@@ -33212,7 +33212,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-12-17
+#: last_checked: 2021-12-27
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33817,14 +33817,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Giselastr.: Bauarbeiten zwischen Lückstr. und Leopoldstr., Fahrbahn gesperrt',
+       text  => 'Giselastr.: Bauarbeiten zwischen Lückstr. und Leopoldstr., Einbahnstraßenregelung, offen Richtung Norden',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G)
 #: osm_watch: way id="1003079755" version="3"
-#: add_fragezeichen: Wann wird die Sperrung der Fahrbahn beendet?
-#: last_checked: 2021-12-22 (osm)
-	q3::inwork 16153,10818 16192,10907
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2021-12-27
+	q3::inwork; 16192,10907 16153,10818
 EOF
      },
      { from  => 1634421600, # 2021-10-17 00:00
@@ -33973,14 +33973,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1640626005, # undef, # XXX
        text  => 'Schwiebusser Str.: wegen Bauarbeiten Einbahnstraßenregelung, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic
-#: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2021-11-28
-#: check_frequency: 60d
+# REMOVED (Einbahnstraße nur noch im Mittelteil, sehr vermutlich "Radfahrer frei") ---  #: also_indoor: traffic --- #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben? --- #: last_checked: 2021-11-28 --- #: check_frequency: 60d
 	q4::inwork; 9227,8890 9417,8890
 EOF
      },
@@ -34169,8 +34166,39 @@ EOF
 #: note: nicht-öffentliche Silvesterfeier; für die richtige große Silvesterfeier see elsewhere
 #: by: https://viz.berlin.de/2021/12/feiertage/
 #: source_id: viz2021:13.369855,52.515768,26.12.2021,06:00
+#: source_id: viz2021:13.37737,52.51457,26.12.2021,06:00
+#: source_id: viz2021:13.351326,52.514425,26.12.2021,06:00
+#: source_id: viz2021:13.36968,52.51571,26.12.2021,06:00
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165 8595,12066
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8592,12252 8637,12258 8643,12208 8728,12220 8722,12268 8714,12319 8630,12307 8637,12258 8722,12268
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Braunschweiger Str. und Niemetzstr.: Bauarbeiten, Einbahnstraßenregelung bzw. Sperrung, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Niemetzstraße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
+#: XXX Haben die Bauarbeiten etwas mit der geplanten Asphaltierung zu tun, oder sind das nur 
+#: also_indoor: traffic (G(nur Niemetz)) vvv
+#: last_checked: 2021-12-26 vvv
+#: check_frequency: 45d vvv
+	q4::inwork; 13702,7418 13654,7380 13601,7366 13519,7345 13476,7330
+	q3::inwork 13702,7418 13762,7321
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
+EOF
+     },
+     { from  => 1640991600, # 2022-01-01 00:00
+       until => 1672527599, # 2022-12-31 23:59
+       text  => 'Waldschulallee: Bauarbeiten, evtl. gibt es auch für Radfahrer Beeinträchtigungen, von Januar 2022 bis Ende 2022',
+       type  => 'handicap',
+       source_id => 'https://www.berliner-woche.de/westend/c-bauen/erneuerung-der-trinkwasserleitung-dauert-bis-ende-2022_a330884',
+       data  => <<EOF,
+#: also_indoor: traffic
+	q4::inwork 1047,10225 1159,10149 1205,10114 1212,10109 1274,10063 1318,10031
 EOF
      },
     );

@@ -171,7 +171,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2021-12-25
+#: last_checked: 2021-12-27
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -183,7 +183,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2021-12-25 vvv
+#: last_checked: 2021-12-27 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -5912,12 +5912,12 @@ Allendorfer Weg: Verbundsteinpflaster	Q1+ 17791,14639 17879,14659
 Allendorfer Weg: Beton	Q1+ 17879,14659 17991,14684
 Allendorfer Weg: unbefestigte Fahrbahn	Q2 18016,14688 18067,14700 18119,14709
 Allendorfer Weg: Asphalt	Q0 18232,14753 18286,14782
-Charlottenstr.: Beton	Q0- 18520,11707 18520,11685 18519,11662 18516,11631 18461,11588
-Charlottenstr: Asphalt	Q0 18461,11588 18477,11388
+Charlottenstr.: Beton	Q0- 18520,11707 18520,11685 18520,11662 18520,11631 18462,11602
+Charlottenstr: Asphalt	Q0 18462,11602 18477,11388
 Am Tierpark [zur Nebenfahrbahn]: Beton	Q1+ 18263,11393 18304,11407
 Am Tierpark [Nebenfahrbahn]: Beton	Q1+ 18304,11407 18272,11552 18264,11596 18285,11637
 Am Tierpark [Wohngebiet]: Beton	Q1+ 18304,11407 18387,11427
-Alt-Friedrichsfelde [Nebenfahrbahn]: Beton	Q0- 18285,11637 18329,11654 18381,11655 18519,11662
+Alt-Friedrichsfelde [Nebenfahrbahn]: Beton	Q0- 18285,11637 18329,11654 18381,11655 18520,11662
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 18317,11734 18382,11740 18461,11767 18600,11814 18716,11810 18717,11821 18717,11835 18719,11903
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 18717,11821 18574,11833 18525,11806 18453,11804 18461,11767
 Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 18717,11835 18730,11834
@@ -6015,7 +6015,7 @@ Straße 79: mäßiger Asphalt und Schotter	Q2 7877,19507 7805,19359 7797,19345
 Mittelsteg: Asphalt	Q0 8340,18984 8247,19054
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-bauen/irgendwann-sollen-alle-stege-ausgebaut-sein_a298643
 #: XXX wann wird der Rest asphaltiert? werden auch die umliegenden Straßen asphaltiert? vvv
-#: last_checked: 2021-10-31 vvv
+#: last_checked: 2021-12-25 (mapillary) vvv
 #: check_frequency: 210d vvv
 Mittelsteg: Schotterstraße	Q2+ 8247,19054 8211,19082 8209,19107 8136,19159
 Mittelsteg: Schotterstraße	Q2 8136,19159 8062,19212 7981,19269 7930,19282 7805,19359
@@ -8406,6 +8406,7 @@ Naumannstr.: Kopfsteinpflaster	Q1 7716,8370 7716,8356 7715,8308
 Rüdigerstr.: schlechtes Kopfsteinpflaster	Q3+ 16259,12419 16147,12434
 Rüdigerstr.: mäßiges Kopfsteinpflaster	Q2- 16147,12434 16080,12441
 (Blücherplatz - Johanniterstr.): Gehwegplatten	Q0- 9702,10129 9816,10119 9837,10117
+(Blücherplatz - Zossener Str.): Gehwegplatten	Q0- 9702,10129 9827,10051
 Idealpassage: Asphalt	Q0- 12434,8776 12582,8651
 Hüttigpfad: Verbundsteinpflaster	Q1 4810,15000 4724,15055 4668,15066 4598,15057 4459,15066
 (entlang der Hedwigskathedrale): Pflasterung	Q2+ 9808,12182 9775,12178 9771,12190 9747,12205
@@ -8426,7 +8427,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="7"
-#: last_checked: 2021-11-17
+#: last_checked: 2021-12-27
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -22710,7 +22711,8 @@ Münsingerstr.: kleinteiliges Kopfsteinpflaster	Q1 -3598,14587 -3535,14408
 #: corrected_by: srt (Q1 -> Q0)
 Genossenschaftssteg: Asphalt	Q0 7940,19521 7920,19471
 #: corrected_by: srt (loser Sandweg, z.T. tiefe Schlaglöcher, Q3 -> ...)
-Genossenschaftssteg: unbefestigter Weg, z.T. tiefe Schlaglöcher	Q2- 7920,19471 7911,19449 7987,19387
+#: corrected_by: mapillary (unbefestigter Weg, z.T. tiefe Schlaglöcher, Q2- -> ..., neu gemacht)
+Genossenschaftssteg: Asphalt	Q0 7920,19471 7911,19449 7987,19387
 #: corrected_by: srt (loser Sandweg, z.T. tiefe Schlaglöcher, Q3 -> ..., neu gemacht?)
 Genossenschaftssteg: Asphalt	Q0 7987,19387 8029,19353 8105,19286 8099,19276 8122,19252 8194,19193
 #: corrected_by: srt (loser Sandweg, z.T. tiefe Schlaglöcher, Q3 -> ..., neu gemacht?)
@@ -30521,4 +30523,5 @@ Einmündungsbereich asphaltiert	Q0 12378,11806
 Einmündungsbereich mit Kopfsteinpflaster	Q1- 13590,12260
 Einmündungsbereich mit Kopfsteinpflaster	Q2 9870,12657
 Kreuzungsbereich asphaltiert	Q0 9919,12613
+Einmündungsbereich mit Kopfsteinpflaster	Q2 15649,10922
 #: ignore ^^^
