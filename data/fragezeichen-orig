@@ -1400,7 +1400,7 @@ Neudecker Weg: Verbesserung -> Radspuren oder Asphaltierung des Radwegs? ("Teila
 #: next_check: 2022-12-31
 An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19957,5941
 # 
-#: last_checked: 2021-12-18 (mapillary)
+#: last_checked: 2021-12-26 (mapillary)
 #: check_frequency: 90d
 Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22312,919 22351,862 22547,651 22916,402
 # 
@@ -1499,7 +1499,7 @@ Brandenburgische Str.: Radstreifen geplant (wo genau? oder die gesamte Strecke?)
 #: osm_watch: way id="171484595" version="13"
 #: osm_watch: way id="129621748" version="12"
 #: source_id: 2147340011
-#: last_checked: 2021-12-04
+#: last_checked: 2021-12-26 (mapillary)
 #: check_frequency: 90d
 Ernst-Reuter-Platz: Zweirichtungsradwege geplant	?::projected 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768 4781,11708 4838,11697
 # 
@@ -2284,7 +2284,7 @@ Togostr.: Ausweisung als Fahrradstraße, auch im nördlichen Abschnitt?	? 5531,167
 #: priority: #A
 #: last_checked: 2021-09-04
 #: check_frequency: 150d
-#: next_check: 2022-11-15
+#: next_check: 2022-05-31
 Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen (Suggestivstreifen)	?::projected -2504,22626 -2540,22694 -2424,22991 -2306,23259
 # REMOVED (realisiert) --- Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen (Suggestivstreifen)	?::projected -2306,23259 -2248,23409 -2185,23567 -2168,23607 -2132,23697 -2071,23850
 # REMOVED (realisiert) --- #: priority: #A --- #: last_checked: 2020-06-13 --- Hennigsdorfer Str.: erste Markierungsarbeiten laufen	?::inwork -2071,23850 -2051,23901 -1940,24176
@@ -3239,9 +3239,9 @@ Bebauungsplan 3-48 VE: Planstraße B in Planung	?::projected 13368,18674 13222,18
 #: by: https://www.deutsches-architekturforum.de/thread/11061-kleinere-projekte-tempelhof-sch%C3%B6neberg/?postID=702118#post702118
 #: XXX Bebauungsplan 7-65
 # REMOVED (eingetragen) --- #: XXX für Berlin.coords.data: In den Alboingärten|Schöneberg|12103
-#: last_checked: 2021-09-26
-#: check_frequency: 180d
-#: next_check: 2021-12-31
+#: last_checked: 2021-12-26 (mapillary)
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2021-12-31
 In den Alboingärten: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 7607,5944
 # 
 #: XXX Bebauungsplan 10-86 im Bezirk Marzahn-Hellersdorf
@@ -3764,7 +3764,7 @@ Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_29.04.2021.pdf (gegenläufiger Radweg auf der Monumentenbrücke; Fahrradstraße)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-17-06-2021.pdf (Erwähnung)
 #: XXX außerdem: ein gegenläufiger Radweg auf der Südseite der Monumentenbrücke ist geplant
-#: last_checked: 2021-11-20 vvv
+#: last_checked: 2021-12-26 (mapillary) vvv
 #: check_frequency: 60d vvv
 # REMOVED (nicht mehr schaffbar) --- #: next_check: 2020-12-31 vvv
 Freiherr-vom-Stein-Str.: Fahrradstraße geplant	?::projected 5913,8415 5995,8477 6123,8546 6230,8602 6313,8638 6454,8653
@@ -5130,7 +5130,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 18
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2021-12-10
+#: last_checked: 2021-12-28
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: by: https://api.fixmyberlin.de/api/projects/328 (Grünmarkierung + Verbreiterung, teilweise Leitboys)
@@ -5388,7 +5388,7 @@ Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,48
 # 
 #: XXX Maßnahme Gr.6
 #: osm_watch: way id="151627030" version="20"
-#: last_checked: 2021-09-09
+#: last_checked: 2021-12-26 (mapillary)
 #: check_frequency: 180d
 Regattastr.: Fahrradstraße soll eingerichtet werden	?::projected 23252,792 23501,797 23681,800 23953,731 24011,710 24197,585 24571,514 24666,436
 #: XXX Maßnahme Gr.6 + Sw.1
@@ -6668,10 +6668,10 @@ Alte Gärtnerei (Potsdam): genaue Lage, Qualität?	? -11094,-2975 -11172,-2996
 # REMOVED (weitgehend realisiert) --- #: XXX Privatstraße 2,3 --- Gaffelsteig: wann wird der nördliche Abschnitt der Straße fertiggestellt? Qualität (vermutlich auch Betonpflaster)?	?::inwork 22159,2585 22221,2520
 #: XXX Privatstraße 1
 #: XXX bereits ausgeschildert, aber noch nicht realisiert
-#: last_checked: 2021-12-20 (daf)
+#: last_checked: 2021-12-26 (mapillary)
 #: check_frequency: 90d
 An der Brücke: Wann beginnen die Bauarbeiten? Qualität? Wird es einen Gehweg zur Regattastr. geben?	?::projected 22197,2612 22109,2636
-#: last_checked: 2021-10-02
+#: last_checked: 2021-12-26 (mapillary)
 #: check_frequency: 90d
 (An der Dahme - Teichmummelring): wird dieser Abschnitt einen Straßennamen bekommen?	? 22358,2460 22418,2390
 # 
@@ -9520,8 +9520,6 @@ Egelsteg (Schulzendorf): Qualität?	? 23538,-3808 23484,-3871
 #: XXX laut osm asphalt+intermediate
 Am Abhang (Schulzendorf): Qualität?	? 23955,-3520 23897,-3667 23842,-3871 23854,-3920
 Finkenweg (Schulzendorf): Qualität?	? 23897,-3667 23985,-3836 24124,-4044
-#: XXX laut osm paving_stones
-Fließsteig (Schulzendorf): Qualität? Ist hier eine Einbahnstraße und gilt diese auch für Radfahrer?	? 24314,-3438 24394,-3534 24533,-3746
 #: XXX laut osm paving_stones
 Kieler Str. (Schulzendorf): Qualität?	? 23782,-6223 23854,-6323 23927,-6423 23993,-6509 24062,-6607
 #: XXX laut osm paving_stones

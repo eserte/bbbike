@@ -28747,12 +28747,12 @@ EOF
 EOF
      },
      { from  => 1542148916, # 2018-11-13 23:41
-       until => $isodate2epoch->("2022-11-15 17:00:00"), # $isodate2epoch->("2019-07-09 18:00:00"), # 1561931999, # 2019-06-30 23:59
-       text  => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte November 2022',
+       until => $isodate2epoch->("2022-05-31 17:00:00"), # $isodate2epoch->("2019-07-09 18:00:00"), # 1561931999, # 2019-06-30 23:59
+       text  => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, voraussichtlich bis Ende Mai 2022',
        type  => 'handicap',
        source_id => '2147343419', # Gesamtmaßnahme bis Ende 2021
        data  => <<EOF,
-#: source_id: viz2021:13.222469,52.619767,05.11.2018,10:34 (bis 15.11.2022)
+#: source_id: viz2021:13.222469,52.619767,05.11.2018,10:34 (bis 15.11.2022) (mittlerweile bis 31.5.2022)
 #: next_check_id: HENNIGSDORFER-2019
 	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259
 # REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2306,23259 -2248,23409 -2185,23567
@@ -30851,7 +30851,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-12-22
+#: last_checked: 2021-12-28
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31061,8 +31061,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2020-05-27 09:00:00"),
-       until => $isodate2epoch->("2021-12-31 17:00:00"), # der ursprüngliche Termin (14.08.2020) kann wohl nicht gehalten werden; laut Schild bis Ende 2021
-       text  => 'Mainzer Str.: Bauarbeiten zwischen Boxhagener Str. und Scharnweberstr., Fahrbahn gesperrt, möglicherweise bis Ende Dezember 2021',
+       until => undef, # $isodate2epoch->("2021-12-31 17:00:00"), # der ursprüngliche Termin (14.08.2020) kann wohl nicht gehalten werden; laut Schild bis Ende 2021
+       text  => 'Mainzer Str.: Bauarbeiten zwischen Boxhagener Str. und Scharnweberstr., Fahrbahn gesperrt, möglicherweise bis Ende Dezember 2021, vielleicht auch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
@@ -31070,16 +31070,16 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2021-12-20 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2021-12-31 vvv
+#: last_checked: 2021-12-28 vvv
+#: check_frequency: 14d vvv
+# REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
 # REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
 # REMOVED (beendet) ---	q3::inwork 14272,11775 14306,11889
 	q4::inwork 14306,11889 14354,12012
 	q3::inwork 14354,12012 14468,11992
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -32651,8 +32651,9 @@ EOF
        text  => 'Brümmerstr.: zwischen Thielallee und Fabeckstr. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Wie lange gehen die Bauarbeiten?
+#: add_fragezeichen: Sind die Bauarbeiten in der Brümmerstraße mittlerweile beendet und die Straße frei?
 #: note: mittlerweile mit expliziten Radfahren-verboten-Schildern
+#: XXX Stand Dez 2021: möglicherweise wieder offen (anhand Traffic-Daten)
 #: also_indoor: traffic (G)
 #: priority: #A
 #: last_checked: 2021-11-06
@@ -33075,8 +33076,8 @@ EOF
 EOF
      },
      { from  => 1624917600, # 2021-06-29 00:00
-       until => 1640991600, # 2022-01-01 00:00
-       text  => 'Pichelsdorfer Str.: Bauarbeiten zwischen Wilhelmstr. und Zimmerstr., evtl. sind auch Radfahrer betroffen, vom 30.06.2021 06:00 bis 31.12.2021 17:00 ',
+       until => $isodate2epoch->("2022-12-31 17:00:00"), # 1640991600, # 2022-01-01 00:00
+       text  => 'Pichelsdorfer Str.: Bauarbeiten zwischen Wilhelmstr. und Zimmerstr., evtl. sind auch Radfahrer betroffen, vom 30.06.2021 06:00 bis 31.12.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.195212,52.527938,30.06.2021,06:00',
        data  => <<EOF,
@@ -33108,25 +33109,19 @@ EOF
 EOF
      },
      { from  => 1625250931, # 2021-07-02 20:35
-       until => $isodate2epoch->("2022-03-31 18:00:00"), # 1631570400, # 2021-09-14 00:00
+       until => 1640706952, # $isodate2epoch->("2022-03-31 18:00:00"), # 1631570400, # 2021-09-14 00:00
        text  => 'Frankfurter Allee: Überqueren in Höhe Weichselstr./Waldeyerstr. und Müggelstr. nicht möglich, möglicherweise bis März 2022',
        type  => 'gesperrt',
        source_id => 'viz2021:13.471852,52.513916,22.06.2021,07:00',
        data  => <<EOF,
-#: next_check_id: FRANKFURTER-2021
-#: note: auch last Schild der Wasserbetriebe bis März 2022
-#: last_checked: 2021-12-11 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2022-03-31 vvv
+# REMOVED (Überquerung wieder möglich) --- #: next_check_id: FRANKFURTER-2021 --- #: note: auch last Schild der Wasserbetriebe bis März 2022 --- #: last_checked: 2021-12-11 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-03-31 vvv
 	3 14888,11934 14926,12129 15003,12241
 	3 15003,12241 14926,12129 14888,11934
 	3 14888,11934 14926,12129 14854,12137
 	3 15003,12241 14926,12129 14994,12121
 	3 14994,12064 14994,12121 14926,12129
 	3 15117,12106 14994,12121 14994,12064
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1625004000, # 2021-06-30 00:00
@@ -34097,12 +34092,12 @@ Oudenarder Str.	2::temp 7433,16375 7746,16375
 EOF
      },
      { from  => 1638745200, # 2021-12-06 00:00
-       until => 1646262000, # 2022-03-03 00:00
+       until => 1640724899, # 1646262000, # 2022-03-03 00:00
        text  => 'Perleberger Str.: Richtung Heidestr. Bauarbeiten zwischen Lübecker Str. und Birkenstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 07.12.2021 10:00 bis 02.03.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.346358,52.530349,07.12.2021,10:00',
        data  => <<EOF,
-#: add_fragezeichen: Sind Radfahrer von der Baustelle betroffen?
+# REMOVED (nein, extra Radspur, wie es scheint) --- #: add_fragezeichen: Sind Radfahrer von der Baustelle betroffen?
 	q4::inwork; 6366,13716 6493,13822
 EOF
      },
