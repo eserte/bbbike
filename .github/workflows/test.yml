@@ -37,6 +37,9 @@ jobs:
            bbbike_test_skip_modperl: 0
 
     steps:
+    - name: network check
+      run: |
+        curl -s -I http://bbbike.de/robots.txt | head -1; true
     - name: apt hacks
       # the already installed libgd3 conflicts with libgd-dev to be installed
       # also, /etc/apt/sources.list should be sufficient; all the other repositories are possibly problematic
@@ -106,6 +109,9 @@ jobs:
             distver:                    trusty
             bbbike_test_skip_mapserver: 0
     steps:
+    - name: network check
+      run: |
+        curl -s -I http://bbbike.de/robots.txt | head -1; true
     - uses: actions/checkout@v2
     - name: Build and test
       run: |
