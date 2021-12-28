@@ -27,6 +27,7 @@ BEGIN {
 
 use Data::Dumper;
 use Sys::Hostname;
+use URI;
 
 use Http;
 use Strassen::Core;
@@ -50,8 +51,8 @@ if ($ENV{BBBIKE_TEST_HTMLDIR}) {
     push @urls, $bbbike_data_pps_url;
 }
 
-my $tests_per_url = 17;
-plan tests => $tests_per_url * scalar(@urls) + 2;
+my $tests_per_url = 19;
+plan tests => $tests_per_url * scalar(@urls);
 
 my $ua_string = 'BBBike-Test/1.0';
 
@@ -99,19 +100,26 @@ for my $url (@urls) {
 	    is($res{'error'}, 200, "Got $url/handicap_l with Http.pm");
 	    do_content_checks($res{'content'}, 'Http (SRT)');
 	}
+
+	my $root_url = URI->new($url);
+	$root_url->path("/");
+
+	{
+	    my $robots_url = $root_url->clone;
+	    $robots_url->path('/robots.txt');
+	    my $resp = $ua->get("$robots_url");
+	    ok($resp->is_success, 'robots.txt exists')
+		or diag($resp->as_string);
+	}
+
+	{
+	    my $favicon_url = $root_url->clone;
+	    $favicon_url->path('/favicon.ico');
+	    my $resp = $ua->get("$favicon_url");
+	    ok($resp->is_success, 'favicon exists')
+		or diag($resp->as_string);
+	}
     }
-}
-
-{
-    my $resp = $ua->get("$bbbike_url/robots.txt");
-    ok($resp->is_success, 'robots.txt exists')
-	or diag($resp->as_string);
-}
-
-{
-    my $resp = $ua->get("$bbbike_url/favicon.ico");
-    ok($resp->is_success, 'favicon exists')
-	or diag($resp->as_string);
 }
 
 sub do_content_checks {
