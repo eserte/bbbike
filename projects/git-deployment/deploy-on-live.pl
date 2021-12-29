@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2016,2017,2018,2019,2021 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -428,6 +428,17 @@ sub init_other {
 
 	mkdir_root "$dir/public";
 	symlink_root '../BBBike', "$dir/public/BBBike";
+
+	symlink_root 'BBBike/images/favicon.ico', "$dir/public/favicon.ico";
+	symlink_root 'BBBike/images/srtbike57.png', "$dir/public/apple-touch-icon.png";
+
+	if (!-e "$dir/public/robots.txt") {
+	    open my $ofh, ">", "/tmp/robots.txt" or die $!;
+	    print $ofh "User-Agent: *\nDisallow: /\n";
+	    close $ofh or die "Error writing to temporary robots.txt";
+	    system 'sudo', 'mv', '/tmp/robots.txt', "$dir/public/robots.txt";
+	    die "Error moving robots.txt to $dir/public" if $? != 0;
+	}
 
 	if ($with_mapserver) {
 	    mkdir_root "$dir/public/mapserver";
