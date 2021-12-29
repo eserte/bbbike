@@ -61,7 +61,7 @@ IMAGE: for my $image_file (@image_files) {
     my $lon = $info->{GPSLongitude};
     my $lat = $info->{GPSLatitude};
     if (!defined $lon || !defined $lat) {
-	warn "Cannot get GPSLongitude and/or GPSLatitude from $image_file, ignoring file...\n";
+	warn "WARN: Cannot get GPSLongitude and/or GPSLatitude from $image_file, ignoring file...\n";
 	next IMAGE;
     }
     $lon += 0; # +0 to get rid of sign
@@ -71,23 +71,23 @@ IMAGE: for my $image_file (@image_files) {
     {
 	my $raw_date_time = $info->{GPSDateTime};
 	if (!$raw_date_time) {
-	    warn "Cannot get GPSDateTime from $image_file, ignoring file...\n";
+	    warn "WARN: Cannot get GPSDateTime from $image_file, ignoring file...\n";
 	    next IMAGE;
 	}
 	$date_time = eval { DateTime::Format::ISO8601->parse_datetime($raw_date_time) };
 	if (!$date_time) {
-	    warn "Cannot parse GPSDateTime '$raw_date_time' in $image_file as an ISO 8601 date, ignoring file...\n";
+	    warn "WARN: Cannot parse GPSDateTime '$raw_date_time' in $image_file as an ISO 8601 date, ignoring file...\n";
 	    next IMAGE;
 	}
     }
 
     my $alt = $info->{GPSAltitude};
     if (!$alt) {
-	warn "Cannot get GPSAltitude from $image_file, ignoring file...\n"; # XXX or should it be possible to allow coordinates without altitudes?
+	warn "WARN: Cannot get GPSAltitude from $image_file, ignoring file...\n"; # XXX or should it be possible to allow coordinates without altitudes?
 	next IMAGE;
     }
     if ($alt !~ m{^(\d+(?:\.\d+)?)\s+m\s+(Above|Below)\s+Sea\s+Level$}i) {
-	warn "GPSAltitude exists in $image_file, but value '$alt' cannot be parsed, ignoring file...\n";
+	warn "WARN: GPSAltitude exists in $image_file, but value '$alt' cannot be parsed, ignoring file...\n";
 	next IMAGE;
     }
     $alt = $1;
@@ -150,6 +150,10 @@ for my $chunk_i (0 .. $#chunks) {
     }
     $trkseg->Track(\@gpsman_trkpts);
     push @{ $gpsman->{Chunks} }, $trkseg;
+}
+
+if (@trkpts < @image_files) {
+    warn "WARN: Failed to process " . (@image_files-@trkpts) . "/" . scalar(@image_files) . " file(s).\n";
 }
 
 if ($outfile) {
