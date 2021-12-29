@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = 1.38;
+our $VERSION = 1.39;
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -17,6 +17,7 @@ use File::Basename;
 use Getopt::Long;
 use Image::ExifTool qw(ImageInfo);
 eval 'use Digest::MD5 qw(md5_hex);';
+use POSIX qw(strftime);
 use Time::Local qw(timelocal);
 use DB_File;
 use FindBin;
@@ -921,7 +922,7 @@ sub manipulate_copy {
     for my $file (@images) {
 	my $ret = get_image_location($file);
 	if (defined $ret) {
-	    my($lat, $lon) = @{$ret}{qw(Latitude Longitude)};
+	    my($lat, $lon, $local_date) = @{$ret}{qw(Latitude Longitude Date)};
 	    my(@lat_dms) = Karte::Polar::ddd2dms($lat);
 	    my(@lon_dms) = Karte::Polar::ddd2dms($lon);
 
@@ -942,8 +943,15 @@ sub manipulate_copy {
 
 	    my $gps_latitude  = qq{$lat_dms[0] deg $lat_dms[1]' $lat_dms[2]"};
 	    my $gps_longitude = qq{$lon_dms[0] deg $lon_dms[1]' $lon_dms[2]"};
+
+	    my $gps_datetime;
+	    if ($local_date) {
+		my $epoch = _isodate_to_epoch($local_date);
+		$gps_datetime = strftime '%Y:%m:%d %H:%M:%S', gmtime $epoch;
+	    }
+
 	    if ($debug) {
-		warn "Found position '$gps_latitude $gps_latitude_ref, $gps_longitude $gps_longitude_ref' for $file.\n";
+		warn "Found position '$gps_latitude $gps_latitude_ref, $gps_longitude $gps_longitude_ref'" . ($gps_datetime ? " and datetime '$gps_datetime'" : "") . " for $file.\n";
 	    }
 
 	    my $o_file = "$out_file/" . basename($file);
@@ -955,6 +963,9 @@ sub manipulate_copy {
 	    $exiftool->SetNewValue('GPSLatitudeRef',  $gps_latitude_ref);
 	    $exiftool->SetNewValue('GPSLongitude',    $gps_longitude);
 	    $exiftool->SetNewValue('GPSLongitudeRef', $gps_longitude_ref);
+	    if ($gps_datetime) {
+		$exiftool->SetNewValue('GPSDateTime', $gps_datetime);
+	    }
 	    $exiftool->WriteInfo($o_file);
 	}
     }
