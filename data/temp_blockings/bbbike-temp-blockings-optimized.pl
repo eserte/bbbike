@@ -4307,7 +4307,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00 (inaktiv)
 #: source_id: viz2021:13.320517,52.466345,13.07.2021,08:00 (mittlerweile bis 2.12.2021) (inaktiv)
 #: source_id: viz2021:13.32146,52.465174,13.07.2021,08:00 (mittlerweile bis 22.2.2022)
-	q4::inwork; 4894,6509 4875,6552 4786,6717
+	q4::inwork; 4894,6509 4875,6552
+#: note: im nördlichen Abschnitt mittlerweile (Ende Dez 2021) keine Einschränkungen mehr
+	q3::inwork; 4875,6552 4786,6717
 ',
          'from' => 1614754800,
          'id' => 3339,
@@ -4986,6 +4988,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Waldschulallee: Bauarbeiten, evtl. gibt es auch für Radfahrer Beeinträchtigungen, von Januar 2022 bis Ende 2022',
          'type' => 'handicap',
          'until' => 1672527599
+       },
+       {
+         'data' => '#: source_id: viz2021:13.3156,52.4588,27.12.2021,15:34 (hier kein Endedatum)
+#: by: https://viz.berlin.de/2021/12/grunewaldstrasse/
+	q3::inwork 4520,5793 4671,5697
+',
+         'from' => 1640808198,
+         'id' => 3493,
+         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1162305.php',
+         'text' => 'Grunewaldstr.: Wasserrohrbruch, Fahrbahn zwischen Lepsiusstr. und Rothenburgstr. gesperrt, evtl. gibt es Beeinträchtigungen für Radfahrer, voraussichtlich bis Ende Januar 2022',
+         'type' => 'handicap',
+         'until' => 1643644800
        }
      
 );

@@ -22529,7 +22529,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (beendet) --- #: XXX bis wann gehen die Bauarbeiten? --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4579 (eventuell Einschränkungen bis 2018?) --- #: last_checked: 2013-10-16 --- #: check_frequency: 30d --- #: priority: #A
-	q4::inwork 7001,8161 7158,8208 7225,8219 7250,8223
+	q4::inwork 7001,8161 7014,8165 7158,8208 7225,8219 7250,8223
 EOF
      },
      { from  => 1379328680, # 2013-09-16 12:51
@@ -32379,7 +32379,9 @@ EOF
 #: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00 (inaktiv)
 #: source_id: viz2021:13.320517,52.466345,13.07.2021,08:00 (mittlerweile bis 2.12.2021) (inaktiv)
 #: source_id: viz2021:13.32146,52.465174,13.07.2021,08:00 (mittlerweile bis 22.2.2022)
-	q4::inwork; 4894,6509 4875,6552 4786,6717
+	q4::inwork; 4894,6509 4875,6552
+#: note: im nördlichen Abschnitt mittlerweile (Ende Dez 2021) keine Einschränkungen mehr
+	q3::inwork; 4875,6552 4786,6717
 EOF
      },
      { from  => 1615071600, # 2021-03-07 00:00
@@ -34194,6 +34196,17 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic
 	q4::inwork 1047,10225 1159,10149 1205,10114 1212,10109 1274,10063 1318,10031
+EOF
+     },
+     { from  => 1640808198, # 2021-12-29 21:03
+       until => 1643644800, # 2022-01-31 17:00
+       text  => 'Grunewaldstr.: Wasserrohrbruch, Fahrbahn zwischen Lepsiusstr. und Rothenburgstr. gesperrt, evtl. gibt es Beeinträchtigungen für Radfahrer, voraussichtlich bis Ende Januar 2022',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1162305.php',
+       data  => <<EOF,
+#: source_id: viz2021:13.3156,52.4588,27.12.2021,15:34 (hier kein Endedatum)
+#: by: https://viz.berlin.de/2021/12/grunewaldstrasse/
+	q3::inwork 4520,5793 4671,5697
 EOF
      },
     );

@@ -187,9 +187,9 @@ Schulze-Boysen-Str: Asphalt	Q0 15738,11851 15660,11695 15639,11653 15572,11533 1
 Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): Beton	Q0 15639,11653 15489,11735 15413,11690
 Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
-Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3; 7250,8223 7225,8219 7158,8208 7001,8161
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7225,8219 7250,8223
+Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
+Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3; 7225,8219 7158,8208 7014,8165 7001,8161
+Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7014,8165 7158,8208 7225,8219
 Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6792,8122
 Ebersstr.: Asphalt	Q0 6792,8122 6657,8070 6559,8033
 Reichenberger Str.: Kopfsteinpflaster	Q2 11443,10394 11476,10357 11616,10288 11829,10192 12048,10097 12229,10014 12398,9938 12556,9862 12714,9792 12834,9738 12935,9689
@@ -10666,7 +10666,7 @@ George-Stephenson-Str.: Asphalt	Q0 7487,14472 7452,14415 7500,14333 7569,14217 7
 (Verlängerte Hämmerlingstr. - Straße G, Innovationspark Wuhlheide): Beton	Q0 21582,6842 21560,6869
 (Lindenstr. - Schmetterlingswiesen, östlicher Weg): wassergebundene Decke	Q1 21420,11150 21483,11129
 Potsdamer Str.: Asphaltschäden	Q1; 7507,9458 7512,9572 7518,9791
-Potsdamer Str.: Asphaltschäden	Q1; 7526,9969 7579,10183
+Potsdamer Str.: Asphaltschäden	Q1 7526,9969 7579,10183
 (Supermarktparkplatz): Verbundsteinpflaster	Q1 2554,10258 2551,10266 2706,10362 2718,10359
 Marktplatz Griechische Allee: glatte Pflasterung	Q0 18025,6700 18029,6674
 (Gotlindestr. - entlang des Wohngebiets Lindenhof): unbefestigter Weg	Q2 17357,12566 17461,12521
@@ -11570,7 +11570,7 @@ Görschstr.: Kopfsteinpflaster	Q3 10053,17777 9858,17967
 Neue Schönholzer Str.: guter Asphalt	Q0 10089,18180 10141,18030 10179,17772
 Guntherstr.: Kopfsteinpflaster	Q2 17020,12309 16993,12118 16975,12000
 Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7412,8273
-Cheruskerstr.: Asphalt, einige Schäden	Q0; 7412,8273 7412,8351 7410,8593
+Cheruskerstr.: Asphalt	Q0; 7412,8273 7412,8351 7410,8593
 Cheruskerstr.: Asphalt	Q0; 7410,8593 7412,8351 7412,8273
 Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777

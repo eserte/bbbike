@@ -313,7 +313,7 @@ Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
 # REMOVED (nach den Bauarbeiten Richtung S¸den besser) --- #: XXX Bauarbeiten in Gange, danach vielleicht Q0? --- #: last_checked: 2013-07-14 --- #: next_check: 2013-08-05
 # REMOVED (ist vermutlich besser) --- Buchberger Str.: teilweise kleinere Sch‰den an den Betonplatten	Q1+; 16242,11533 16368,11912
 Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
-Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
+Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: XXX Planung einer Radverkehrsanlage (Asphaltierung?), neue Ampel an der Dominicusstr. vvv
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7379
@@ -323,10 +323,10 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-16-12-2020_mit-anhang.pdf (Asphaltierung vorgesehen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ampel am Sachsendamm: "man hofft auf eine Umsetzung im Herbst (2021)")
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Sanierung wird erw‰hnt)
-#: last_checked: 2021-09-28 vvv
+#: last_checked: 2021-12-29 vvv
 #: check_frequency: 120d vvv
-Torgauer Str.: m‰ﬂiges, teils schlechtes Kopfsteinpflaster, 17 km/h mˆglich (weil bergab)	Q3+; 7250,8223 7225,8219 7158,8208 7001,8161
-Torgauer Str.: m‰ﬂiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7225,8219 7250,8223
+Torgauer Str.: m‰ﬂiges, teils schlechtes Kopfsteinpflaster, 17 km/h mˆglich (weil bergab)	Q3+; 7225,8219 7158,8208 7014,8165 7001,8161
+Torgauer Str.: m‰ﬂiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7014,8165 7158,8208 7225,8219
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -5572,7 +5572,7 @@ Zur Gartenstadt: schlechtes Kopfsteinpflaster	Q3 21800,-109 21847,-303
 Heidelbeerweg: Asphalt	Q0 21645,200 21669,99
 #: next_check_id: JOHANNESTOBEI-2021
 #: XXX wird die Straﬂe asphaltiert/befestigt?
-#: osm_watch: way id="174182913" version="4"
+#: osm_watch: way id="174182913" version="5"
 #: last_checked: 2021-07-17
 #: check_frequency: 360d
 #: next_check: 2022-09-01
@@ -12230,7 +12230,7 @@ George-Stephenson-Str.: Asphalt	Q0 7487,14472 7452,14415 7500,14333 7569,14217 7
 (Verl‰ngerte H‰mmerlingstr. - Straﬂe G, Innovationspark Wuhlheide): Beton	Q0- 21582,6842 21560,6869
 (Lindenstr. - Schmetterlingswiesen, ˆstlicher Weg): wassergebundene Decke	Q1 21420,11150 21483,11129
 Potsdamer Str.: Asphaltsch‰den	Q1; 7507,9458 7512,9572 7518,9791
-Potsdamer Str.: Asphaltsch‰den	Q1; 7526,9969 7579,10183
+Potsdamer Str.: Asphaltsch‰den	Q1;Q1 7526,9969 7579,10183
 (Supermarktparkplatz): Verbundsteinpflaster	Q1 2554,10258 2551,10266 2706,10362 2718,10359
 Marktplatz Griechische Allee: glatte Pflasterung	Q0- 18025,6700 18029,6674
 (Gotlindestr. - entlang des Wohngebiets Lindenhof): unbefestigter Weg	Q2 17357,12566 17461,12521
@@ -13967,8 +13967,9 @@ Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7412,8273
 #: corrected_by: srt ("einige Sch‰den" hinzugef¸gt)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1149596.php (Sanierung bis zur KW 48/2021, hier?)
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/cheruskerstrasse-wird-saniert_a329435
-#: next_check: 2021-12-03
-Cheruskerstr.: Asphalt, einige Sch‰den	Q0-; 7412,8273 7412,8351 7410,8593
+#: corrected_by: srt (nach Sanierung: Q0- -> Q0)
+# REMOVED --- #: next_check: 2021-12-03
+Cheruskerstr.: Asphalt	Q0; 7412,8273 7412,8351 7410,8593
 #: confirmed_by: srt
 Cheruskerstr.: Asphalt	Q0; 7410,8593 7412,8351 7412,8273
 #: confirmed_by: srt
@@ -13976,7 +13977,7 @@ Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 #: corrected_by: srt
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf (Asphaltierung geplant)
 #: XXX wann wird hier asphaltiert?
-#: last_checked: 2021-09-28
+#: last_checked: 2021-12-29
 #: check_frequency: 180d
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
 #: by: ^^^
@@ -15949,7 +15950,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="6"
-#: last_checked: 2021-09-26
+#: last_checked: 2021-12-29
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4645,6646 4682,6625 4845,6532 4875,6552
 #: confirmed_by: srt
@@ -16729,6 +16730,7 @@ Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: corrected_by: srt (added "etwas sandig")
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1121547.php (Asphaltierung geplant)
 #: XXX wird hier asphaltiert?
+#: last_checked: 2021-11-24 (kartaview)
 #: next_check: 2022-08-01
 Ernst-Liesegang-Ufer: wassergebundene Decke, etwas sandig	Q1- -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602
 #: confirmed_by: srt
@@ -20907,6 +20909,7 @@ Stolzingstr.: Asphalt	Q0 1338,25262 1360,25269 1429,25335 1468,25384
 #: by: https://www.berliner-woche.de/frohnau/c-verkehr/nicht-gehweg-sondern-fahrbahn_a318330 (Klarstellung: die Fahrbahn wird repariert)
 #: osm_watch: way id="958504172" version="2"
 #: note: laut rbb bis 24.09.2021
+#: add_fragezeichen: Sind die Bauarbeiten in der Stolzingstraﬂe beendet? Ist die Fahrbahn mittlerweile asphaltiert?
 #: last_checked: 2021-10-31
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-09-24

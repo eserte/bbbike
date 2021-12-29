@@ -220,8 +220,8 @@ Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # REMOVED --- #: also_indoor: traffic --- #: last_checked: 2021-04-13 --- Singerstr.: Baustelle, etwa 50m Fahrbahn gesperrt	q2::inwork 11613,12408 11497,12463
 # 
 #: by: https://www.wbm.de/neubau-berlin/mitte/ifflandstrasse/ (Fertigstellung vsl. 01/2022)
-#: osm_watch: way id="822127127" version="2"
-#: osm_watch: way id="736448990" version="8"
+# REMOVED --- #: osm_watch: way id="822127127" version="3"
+#: osm_watch: way id="736448990" version="9"
 #: last_checked: 2021-12-04
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-01-01
@@ -569,9 +569,18 @@ Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwo
 # 
 ### Tiergarten ###
 # 
+#: by: https://www.berliner-woche.de/tiergarten/c-bauen/zweite-bauphase-abgeschlossen_a181544 (Wiedereröffnung für 2020 geplant)
+#: by: https://www.tagesspiegel.de/berlin/spaeter-als-geplant-neue-nationalgalerie-in-berlin-wird-erst-mitte-august-2021-eroeffnet/26645770.html (Eröffnung Mitte August 2021)
+# REMOVED --- #: XXX laut Plakatwerbung wird am 22.8.2021 eröffnet
+#: XXX Straße fertig asphaltiert, aber noch durch Bauzäune abgesperrt
+#: last_checked: 2021-12-29
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2021-08-22
+Neue Nationalgalerie: Bauzäune, Umfahren über Gehweg (Bordstein) möglich	q3::inwork 7874,11293 7828,11133
+# 
 #: next_check_id: MUSEUMDERMODERNE-2021
 #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
-#: last_checked: 2021-11-20
+#: last_checked: 2021-12-29
 #: check_frequency: 90d
 Matthäikirchplatz: wegen Bauarbeiten am Museum der Moderne mögliche Behinderungen	q3::inwork 7934,11275 7965,11380
 # 
@@ -781,10 +790,10 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 ### Schöneberg ###
 # 
 #: by: https://www.nbb-netzgesellschaft.de/ueber-die-nbb/presse/pressemitteilungen/reparatur-beeintraechtigt-verkehr-in-schoeneberg/
-#: XXX laut Schild bis Dezember 2021
-#: last_checked: 2021-12-03
+#: XXX laut Schild bis Dezember 2021 (dauer aber länger)
+#: last_checked: 2021-12-29
 #: check_frequency: 60d
-#: next_check: 2021-12-31
+# REMOVED --- #: next_check: 2021-12-31
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
 # 
 # REMOVED (-> temp blockings) --- #: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021) --- #: by: https://twitter.com/rbbabendschau/status/1392489796426162177 --- #: source_id: 2147347186 --- #: also_indoor: traffic (G) --- #: XXX wann werden die Fahrbahn und die Radwege wieder freigegeben? bei rbb "bis auf Weiteres" --- #: priority: #A --- #: last_checked: 2021-05-14 --- #: next_check: 2021-06-18 --- #: valid: -20210612 --- Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126

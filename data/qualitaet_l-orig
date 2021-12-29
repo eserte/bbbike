@@ -4052,7 +4052,7 @@ Espengrund: Beton	Q0- -9033,-1385 -9033,-1459
 Otto-Erich-Str.: schlechtes Kopfsteinpflaster	Q3 -8784,-1596 -8786,-1376
 Otto-Erich-Str.: Asphalt	Q0 -8786,-1376 -8786,-1345 -8758,-1346
 Otto-Erich-Str.: Asphalt	Q0 -8758,-1346 -8756,-1273
-Scheffelstr. (Potsdam): Kleinsteinpflaster	Q1- -9434,-1255 -9535,-1222 -9638,-1193
+Scheffelstr. (Potsdam): Kleinsteinpflaster	Q1- -9434,-1255 -9535,-1222 -9638,-1193 -9695,-1182
 Baldurstr.: Asphalt	Q1+ -9535,-1222 -9498,-1132 -9500,-1086 -9515,-1059
 Plantagenplatz: schlechtes Kopfsteinpflaster	Q3 -9874,-1551 -9905,-1627
 Plantagenhof: schlechtes Kopfsteinpflaster	Q3 -9860,-1550 -9832,-1536
@@ -6184,8 +6184,8 @@ Donarstr.: Kleinsteinpflaster	Q1 -9692,-986 -9769,-950
 Donarstr.: Kleinsteinpflaster	Q1 -9769,-950 -9824,-906
 #: corrected_by: srt (Asphalt -> ...)
 Donarstr.: Asphalt/Kopfsteinpflaster/unbefestigt	Q2 -9824,-906 -9858,-862
-#: XXX Ist hier tats‰chlich asphaltiert, oder nur ein Teilst¸ck?
-Scheffelstr.: Asphalt	Q0 -9638,-1193 -9751,-1183
+#: confirmed_by: kartaview
+Scheffelstr.: Asphalt	Q0 -9695,-1182 -9751,-1183
 Scheffelstr.: Kleinsteinpflaster	Q1 -9751,-1183 -9826,-1179 -9903,-1171 -9948,-1165
 #: corrected_by: srt (Q2 -> Q3)
 Semmelweisstr.: schlechtes Kopfsteinpflaster	Q3 -10297,-1186 -9991,-1271
@@ -6373,8 +6373,10 @@ Wulkow - Hermersdorf: grobes Kopfsteinpflaster und Sand	Q3 66523,19497 66192,195
 #: by: anonymous: vvv
 #: corrected_by: srt (Kopfsteinpflaster -> )
 Rosa-Luxemburg-Str. (Potsdam): Asphalt	Q0 -9090,-1293 -9176,-1188
-#: XXX Ist die Rosa-Luxemburg-Str. gepflastert oder asphaltiert?
-Rosa-Luxemburg-Str. (Potsdam): m‰ﬂiges Kopfsteinpflaster	Q2 -9176,-1188 -9207,-1144 -9306,-1000 -9410,-815
+#: corrected_by: kartaview (m‰ﬂiges Kopfsteinpflaster, Q2 -> ...)
+#: XXX Sieht auf den kartaview-Bilder nach unebenen Asphalt aus.
+#: add_fragezeichen: Wie ist die Qualit‰t des Asphalts in der Rosa-Luxemburg-Straﬂe?
+Rosa-Luxemburg-Str. (Potsdam): Asphalt	Q1 -9176,-1188 -9207,-1144 -9306,-1000 -9410,-815
 #: by: ^^^
 # 
 #: by: Andreas M¸hlhausen: vvv
@@ -7097,6 +7099,10 @@ Am Kirchberg (Neu Fahrland): Asphalt	Q0 -13783,3919 -13925,3928 -14242,3997 -145
 Kiekebusch - Karlshof: Kopfsteinpflaster mit Sandbanketten	Q3+ 20883,-6592 20870,-6654 20797,-6729 20522,-6989 20385,-7297 20255,-7591
 #: by: osm/srt
 Waldrandstr.: Asphalt	Q0 -11719,13486 -12032,13708 -12089,13741 -12596,13763 -12956,13814
+#: by: kartaview
+Hermann-Maaﬂ-Str.: Asphalt	Q0 -9421,-1103 -9390,-1145
+#: by: kartaview
+Hermann-Maaﬂ-Str.: Asphalt mit einigen Sch‰den	Q1 -9390,-1145 -9353,-1194 -9204,-1194 -9176,-1188
 ######################################################################
 #: by: Andreas Titz vvv
 #: append_comment Oranienburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv

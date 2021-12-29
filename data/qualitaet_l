@@ -3504,7 +3504,7 @@ Espengrund: Beton	Q0 -9033,-1385 -9033,-1459
 Otto-Erich-Str.: schlechtes Kopfsteinpflaster	Q3 -8784,-1596 -8786,-1376
 Otto-Erich-Str.: Asphalt	Q0 -8786,-1376 -8786,-1345 -8758,-1346
 Otto-Erich-Str.: Asphalt	Q0 -8758,-1346 -8756,-1273
-Scheffelstr. (Potsdam): Kleinsteinpflaster	Q1 -9434,-1255 -9535,-1222 -9638,-1193
+Scheffelstr. (Potsdam): Kleinsteinpflaster	Q1 -9434,-1255 -9535,-1222 -9638,-1193 -9695,-1182
 Baldurstr.: Asphalt	Q1 -9535,-1222 -9498,-1132 -9500,-1086 -9515,-1059
 Plantagenplatz: schlechtes Kopfsteinpflaster	Q3 -9874,-1551 -9905,-1627
 Plantagenhof: schlechtes Kopfsteinpflaster	Q3 -9860,-1550 -9832,-1536
@@ -5367,7 +5367,7 @@ Donarstr.: Asphalt	Q1 -9584,-1030 -9692,-986
 Donarstr.: Kleinsteinpflaster	Q1 -9692,-986 -9769,-950
 Donarstr.: Kleinsteinpflaster	Q1 -9769,-950 -9824,-906
 Donarstr.: Asphalt/Kopfsteinpflaster/unbefestigt	Q2 -9824,-906 -9858,-862
-Scheffelstr.: Asphalt	Q0 -9638,-1193 -9751,-1183
+Scheffelstr.: Asphalt	Q0 -9695,-1182 -9751,-1183
 Scheffelstr.: Kleinsteinpflaster	Q1 -9751,-1183 -9826,-1179 -9903,-1171 -9948,-1165
 Semmelweisstr.: schlechtes Kopfsteinpflaster	Q3 -10297,-1186 -9991,-1271
 Semmelweisstr.: Asphalt	Q0 -9991,-1271 -9929,-1291 -9856,-1312 -9785,-1333
@@ -5445,7 +5445,7 @@ Grenzweg zwischen Kleinmachnow/Düppel und Europarc Dreilinden: mäßiger Weg	Q2 -1
 Zepernick: Asphalt	Q0 20510,28585 20482,28536 20362,28420 20114,28315 19855,28134 19595,27953 19534,27833 19377,27432 19364,27415
 Wulkow - Hermersdorf: grobes Kopfsteinpflaster und Sand	Q3 66523,19497 66192,19534 65989,19492 65116,19171 63458,18917 63301,18950
 Rosa-Luxemburg-Str. (Potsdam): Asphalt	Q0 -9090,-1293 -9176,-1188
-Rosa-Luxemburg-Str. (Potsdam): mäßiges Kopfsteinpflaster	Q2 -9176,-1188 -9207,-1144 -9306,-1000 -9410,-815
+Rosa-Luxemburg-Str. (Potsdam): Asphalt	Q1 -9176,-1188 -9207,-1144 -9306,-1000 -9410,-815
 asphaltiert	Q0 21303,19918 21329,19947 21318,19984 21174,20436 21142,20575 21140,20812 21164,20938 21214,21086 21356,21335 21395,21467 21449,21662 21731,21815 21946,21541
 Lindenberger Str. (Ahrensfelde): gut asphaltiert	Q0 21975,19068 21895,19198 21878,19226 21801,19325 21692,19455 21675,19477 21665,19490
 Mehrow - Hönow: Asphalt	Q0 25232,18413 25253,18365 25497,17801
@@ -5956,6 +5956,8 @@ Herzberg - Vielitz: Asphalt	Q0 -19823,54829 -19552,55097 -19449,55212 -18485,567
 Am Kirchberg (Neu Fahrland): Asphalt	Q0 -13783,3919 -13925,3928 -14242,3997 -14507,4057 -14632,4093 -14725,4141 -14777,4143
 Kiekebusch - Karlshof: Kopfsteinpflaster mit Sandbanketten	Q3 20883,-6592 20870,-6654 20797,-6729 20522,-6989 20385,-7297 20255,-7591
 Waldrandstr.: Asphalt	Q0 -11719,13486 -12032,13708 -12089,13741 -12596,13763 -12956,13814
+Hermann-Maaß-Str.: Asphalt	Q0 -9421,-1103 -9390,-1145
+Hermann-Maaß-Str.: Asphalt mit einigen Schäden	Q1 -9390,-1145 -9353,-1194 -9204,-1194 -9176,-1188
 Am Kanal: Sandweg (Oranienburg)	Q3 -2287,37260 -2189,37248 -2173,37226 -2151,37206
 Am Kanal: Sandweg (Oranienburg)	Q3 -2318,37181 -2218,37179 -2173,37226
 Birkenallee: Betonstr. (Oranienburg)	Q1 -760,35601 -854,35612 -876,35614 -1075,35546 -1196,35510
