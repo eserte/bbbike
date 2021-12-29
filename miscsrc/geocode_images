@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = 1.39;
+our $VERSION = 1.40;
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -267,6 +267,7 @@ sub get_image_location {
 		}
 		$iso_date =~ s{^(\d+):(\d+):(\d+)}{$1-$2-$3};
 		$iso_date =~ s{ }{T}; # -> iso date sep
+		# XXX missing: Altitude
 		my $ret = { Longitude => $lon,
 			    Latitude  => $lat,
 			    Delta    => 0,
@@ -367,6 +368,7 @@ sub get_image_location {
 		}
 
 		if ($delta <= $max_delta) {
+		    # XXX missing: Altitude
 		    my $ret = { Longitude => $fields[1],
 				Latitude  => $fields[2],
 				Delta    => $delta,
@@ -475,7 +477,8 @@ sub get_image_location {
 	if ($got_wpt) {
 	    return { Latitude  => $got_wpt->Latitude,
 		     Longitude => $got_wpt->Longitude,
-		     Delta  => $delta,
+		     Altitude  => $got_wpt->Altitude,
+		     Delta     => $delta,
 		     Waypoint  => $got_wpt,
 		     Date      => $iso_date,
 		   };
@@ -922,7 +925,7 @@ sub manipulate_copy {
     for my $file (@images) {
 	my $ret = get_image_location($file);
 	if (defined $ret) {
-	    my($lat, $lon, $local_date) = @{$ret}{qw(Latitude Longitude Date)};
+	    my($lat, $lon, $local_date, $gps_altitude) = @{$ret}{qw(Latitude Longitude Date Altitude)};
 	    my(@lat_dms) = Karte::Polar::ddd2dms($lat);
 	    my(@lon_dms) = Karte::Polar::ddd2dms($lon);
 
@@ -951,7 +954,10 @@ sub manipulate_copy {
 	    }
 
 	    if ($debug) {
-		warn "Found position '$gps_latitude $gps_latitude_ref, $gps_longitude $gps_longitude_ref'" . ($gps_datetime ? " and datetime '$gps_datetime'" : "") . " for $file.\n";
+		warn "Found position '$gps_latitude $gps_latitude_ref, $gps_longitude $gps_longitude_ref'"
+		    . ($gps_datetime ? ", datetime '$gps_datetime'" : "")
+		    . ($gps_altitude ? ", altitude '$gps_altitude'" : "")
+		    . " for $file.\n";
 	    }
 
 	    my $o_file = "$out_file/" . basename($file);
@@ -965,6 +971,15 @@ sub manipulate_copy {
 	    $exiftool->SetNewValue('GPSLongitudeRef', $gps_longitude_ref);
 	    if ($gps_datetime) {
 		$exiftool->SetNewValue('GPSDateTime', $gps_datetime);
+	    }
+	    if ($gps_altitude) {
+		if ($gps_altitude >= 0) {
+		    $exiftool->SetNewValue('GPSAltitude', $gps_altitude);
+		    $exiftool->SetNewValue('GPSAltitudeRef', 'Above Sea Level');
+		} else {
+		    $exiftool->SetNewValue('GPSAltitude', -$gps_altitude);
+		    $exiftool->SetNewValue('GPSAltitudeRef', 'Below Sea Level');
+		}
 	    }
 	    $exiftool->WriteInfo($o_file);
 	}
