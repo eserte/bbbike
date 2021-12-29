@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = 1.37;
+our $VERSION = 1.38;
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -31,6 +31,7 @@ sub parse_clock_adjust_file ($);
 sub _isodate_to_epoch ($);
 
 my $gps_data_dir = "$FindBin::RealBin/../misc/gps_data";
+my @additional_tracks_dirs;
 my $no_gps_data_dir;
 my $thumbnail_dir = "/tmp/thumbnails";
 my $clock_gps;
@@ -75,6 +76,7 @@ usage: $0
 	  [-anchor nw|n|ne|e|se|s|sw] [-thumbnailsize pixels]
           [-converter Image::GD::Thumbnail|ImageMagick|ImageMagick+exiftool|best|fast]
 	  [-recreatethumbnails] [-rel|-relativepaths] [-o file]
+	  [-addtracksdir dir ...]
 	  [-person ...]
           [-v] [-debug] image ...
 EOF
@@ -84,6 +86,7 @@ GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "nogpsdatadir" => \$no_gps_data_dir,
 	   "dateindex=s" => \$date_index_file,
 	   "thumbnaildir=s" => \$thumbnail_dir,
+	   'addtracksdir=s@' => \@additional_tracks_dirs,
 	   "clockgps=s" => \$clock_gps,
 	   "clockcamera=s" => \$clock_camera,
 	   "clockadjustfile=s" => \$clock_adjust_file,
@@ -380,11 +383,22 @@ sub get_image_location {
     my $isodate1 = sprintf("%04d%02d%02d", $y,$m,$d);
     my $isodate2 = sprintf("%04d-%02d-%02d", $y,$m,$d);
 
-    my @filenames = map {
-	($gps_data_dir . "/" . $_,
+    my @try_basenames = ("$isodate1.trk", "$isodate2.trk");
+
+    my @filenames;
+    if (@additional_tracks_dirs) {
+	for my $additional_tracks_dir (@additional_tracks_dirs) {
+	    push @filenames, map {
+		$additional_tracks_dir . "/" . $_
+	    } @try_basenames;
+	}
+    }
+    push @filenames, map {
+	(
+	 $gps_data_dir . "/" . $_,
 	 $gps_data_dir . "/generated/" . $_, # This is the directory where generated tracks (e.g. originally from GPX) live
 	)
-    } ("$isodate1.trk", "$isodate2.trk");
+    } @try_basenames;
 
     my $filename;
     for my $check_filename (@filenames) {
@@ -397,7 +411,17 @@ sub get_image_location {
     }
 
     if (!$filename) {
-	for my $check_filename (glob("$gps_data_dir/*$isodate1*.trk"),
+	for my $check_filename (
+				(@additional_tracks_dirs
+				 ? map {
+				     (
+				      glob("$_/*$isodate1*.trk"),
+				      glob("$_/*$isodate2*.trk"),
+				     )
+				 } @additional_tracks_dirs
+				 : ()
+				),
+				glob("$gps_data_dir/*$isodate1*.trk"),
 				glob("$gps_data_dir/*$isodate1*.track*"),
 				glob("$gps_data_dir/*$isodate2*.trk"),
 				glob("$gps_data_dir/*$isodate2*.track*"),
