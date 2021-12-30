@@ -1270,7 +1270,8 @@ sub make_grid {
     my $cachefile;
     if ($use_cache) {
 	$cachefile = $self->grid_cachefile(Exact => $use_exact, ($conv ? (-tomap => $args{tomap}) : ()));
-
+    }
+    if (defined $cachefile) {
 	require Strassen::Util;
 	my $hashref = Strassen::Util::get_from_cache($cachefile, [$self->dependent_files]);
 	if (defined $hashref) {
@@ -1303,8 +1304,11 @@ sub grid_cachefile {
     my $tomap     = delete $args{-tomap};
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
+    my $id = $self->id;
+    return undef if !defined $id;
+
     my $cachefile = "grid" . ($use_exact ? "x" : "")
-	. "_" . $self->id
+	. "_" . $id
 	. "_" . $self->{GridWidth}."x".$self->{GridHeight};
     if ($tomap) {
 	$cachefile .= "_" . $tomap;

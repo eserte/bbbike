@@ -36,7 +36,7 @@ BEGIN {
 
 use BBBikeTest qw(using_bbbike_test_data);
 
-plan tests => 42;
+plan tests => 43;
 
 my %opt;
 GetOptions(\%opt, "v!") or die "usage!";
@@ -102,13 +102,15 @@ for my $use_cache (1, 0) {
 }
 
 {
-    local $TODO = "objects without associated files should not share the same cache file";
+    # Test for old bug: objects without associated files should not
+    # share the same cache file
     my $s1 = Strassen->new_from_data_string("Street1\tX 1000,1000 2000,2000\n");
     my $s2 = Strassen->new_from_data_string("Strasse A\tX 100,100 200,200\nStrasse B\tX 2000,2000 1000,1000\n");
-    {
-	local $^W; # known warning on missing file name
-	$_->make_grid(Exact => 1, UseCache => 1) for ($s1, $s2);
-    }
+
+    $_->make_grid(Exact => 1, UseCache => 1) for ($s1, $s2);
+
+    is $s1->grid_cachefile(Exact => 1), undef, 'no cachefile possible for object without id';
+
     my $ret = $s2->nearest_point("1000,1000", FullReturn => 1);
     is $ret->{N}, 1, '2nd element should match';
     is $ret->{Dist}, 0, 'exact match expected -> distance is zero';
