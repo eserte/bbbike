@@ -3359,7 +3359,7 @@ sub show_diffs_since_last_deployment {
 
     my($tmpfh,$tmpfile) = File::Temp::tempfile('bbbike_since_tag_XXXXXXXX', SUFFIX => '.bbd', TMPDIR => 1, UNLINK => 1);
 
-    IPC::Run::run(['git', 'diff', $tag, '--', @files], '|', [@cvsdiffbbd_cmd, '--add-file-label', '--diff-file=-'], '>', $tmpfile)
+    IPC::Run::run(['git', 'diff', $tag, '--', @files], '|', [@cvsdiffbbd_cmd, '--title=BBBike diff since last deployment', '--add-file-label', '--diff-file=-'], '>', $tmpfile)
 	    or main::status_message("Creation of diff bbd file '$tmpfile' using 'git diff' and '@cvsdiffbbd_cmd' failed", 'die');
 
     # Create only if missing. XXX Creating is somewhat dangerous, as

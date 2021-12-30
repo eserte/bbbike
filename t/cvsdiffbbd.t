@@ -136,6 +136,27 @@ EOF
 
     {
 	my $out;
+	ok run([$^X, $cvsdiffbbd, "--title=Test Diff", "--localized-title", "de=Test-Differenz", "--localized-title", "en=Test Difference", "--diff-file=-"], "<", \$test_diff, ">", \$out);
+	eq_or_diff $out, <<'EOF', '--title and --localized-title options',
+#: title: Test Diff
+#: title.de: Test-Differenz
+#: title.en: Test Difference
+#:
+# File: data/comments_path
+Warschauer Str. - Boxhagener Str.: bereits am Frankfurter Tor auf den Mittelstreifen wechseln	#000080 13785,12292 13745,12118 14045,11965
+# File: data/comments_route
+Berlin - Usedom	#000080 10240,15318 10188,15474 10185,15487
+# File: data/flaechen
+Mauerpark	#000080 10185,15487 10188,15474 10234,15490 10403,15007 10271,14950
+Falkplatz	#000080 10456,15561 10234,15490 10188,15474 10185,15487
+Friedrich-Ludwig-Jahn-Sportpark	#000080 10403,15007 10618,15076 10607,15142 10886,15251 10804,15447 10768,15534 10733,15638 10456,15561 10234,15490 10403,15007
+# File: data/gesperrt
+Wartenbergstr.: wegen Einsturzgefahr gesperrt, auch für Radfahrer und Fußgänger	#000080 15300,11584 15220,11440
+EOF
+    }
+
+    {
+	my $out;
 	ok run([$^X, $cvsdiffbbd, '--preserve-areas', "--diff-file=-"], "<", \$test_diff, ">", \$out);
 	eq_or_diff $out, <<'EOF';
 # File: data/comments_path
