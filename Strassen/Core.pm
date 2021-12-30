@@ -1267,12 +1267,10 @@ sub make_grid {
     if ($args{-tomap}) {
 	$conv = $self->get_conversion(-tomap => $args{-tomap});
     }
-    my $cachefile = "grid" . ($use_exact ? "x" : "") . "_" . $self->id .
-	            "_" . $self->{GridWidth}."x".$self->{GridHeight};
-    if ($conv) {
-	$cachefile .= "_" . $args{-tomap};
-    }
+    my $cachefile;
     if ($use_cache) {
+	$cachefile = $self->grid_cachefile(Exact => $use_exact, ($conv ? (-tomap => $args{tomap}) : ()));
+
 	require Strassen::Util;
 	my $hashref = Strassen::Util::get_from_cache($cachefile, [$self->dependent_files]);
 	if (defined $hashref) {
@@ -1291,12 +1289,27 @@ sub make_grid {
     while(my($g, $v) = each %$grid_build) {
 	$self->{Grid}{$g} = [keys %$v];
     }
-    if ($use_cache) {
+    if (defined $cachefile) {
 	require Strassen::Util;
 	if (Strassen::Util::write_cache($self->{Grid}, $cachefile)) {
 	    warn "Wrote cache ($cachefile)\n" if $VERBOSE;
 	}
     }
+}
+
+sub grid_cachefile {
+    my($self, %args) = @_;
+    my $use_exact = delete $args{Exact};
+    my $tomap     = delete $args{-tomap};
+    die "Unhandled arguments: " . join(" ", %args) if %args;
+
+    my $cachefile = "grid" . ($use_exact ? "x" : "")
+	. "_" . $self->id
+	. "_" . $self->{GridWidth}."x".$self->{GridHeight};
+    if ($tomap) {
+	$cachefile .= "_" . $tomap;
+    }
+    $cachefile;
 }
 
 ### AutoLoad Sub

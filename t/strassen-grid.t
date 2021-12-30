@@ -36,7 +36,7 @@ BEGIN {
 
 use BBBikeTest qw(using_bbbike_test_data);
 
-plan tests => 36;
+plan tests => 40;
 
 my %opt;
 GetOptions(\%opt, "v!") or die "usage!";
@@ -84,6 +84,20 @@ for my $use_cache (1, 0) {
 	is($s_exact->nearest_point($p), $p_exact, "Exact test for $p, $cache_text");
 	is(($kr->nearest_loop(split /,/, $p))[0], $p_kr, "Nearest loop test for $p, $cache_text");
 	is($s_fast->nearest_point($p), $p_fast, "Fast test for $p, $cache_text");
+    }
+
+    if ($use_cache) {
+	require Strassen::Util;
+
+	my $grid_cachefile_fast = $s_fast->grid_cachefile(Exact => 0);
+	like $grid_cachefile_fast, qr{^grid_data-test_strassen_1000x1000$}, 'grid cachefile filename (not exact)';
+	my $cache_fast = Strassen::Util::get_from_cache($grid_cachefile_fast, []);
+	isa_ok $cache_fast, 'HASH';
+
+	my $grid_cachefile_exact = $s_fast->grid_cachefile(Exact => 1);
+	like $grid_cachefile_exact, qr{^gridx_data-test_strassen_1000x1000$}, 'grid cachefile filename (exact)';
+	my $cache_exact = Strassen::Util::get_from_cache($grid_cachefile_exact, []);
+	isa_ok $cache_exact, 'HASH';
     }
 }
 
