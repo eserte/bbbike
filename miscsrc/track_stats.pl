@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2010,2012,2015,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010,2012,2015,2018,2021 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -395,7 +395,11 @@ sub stage_trackdata {
 
     if ($outbbd) {
 	open my $ofh, ">", $outbbd or die "Can't write to $outbbd: $!";
-	print $ofh "#: map: polar\n#:\n";
+	print $ofh <<EOF;
+#: map: polar
+#: listing_sort: unsorted
+
+EOF
 	if ($outbbd_sortby) {
 	    _sort_outbbd_records(\@outbbd_records, $outbbd_sortby);
 	}

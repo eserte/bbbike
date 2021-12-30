@@ -709,28 +709,11 @@ sub choose_from_additional_layer {
 	(-title => M"Straßen/Punkte auswählen",
 	 -scb => sub {
 	     my $abk = shift;
-	     my %extra_args;
-	     # XXX instead of the heuristics there should be a better
-	     # solution. Maybe a hint in the bbd as global directive.
-	     #
-	     # heuristic to detect layers created by "GPS-Daten zeichnen"
-	     # chronologically sorted works better here
-	     if ($str_file{$abk} =~ m{gpsspeed\.bbd} ||
-		 $str_file{$abk} =~ m{(^|/)track_stat_.*\.bbd} # another heuristic: outbbd option of track-stat
-		) {
-		 $extra_args{'-unsorted'} = 1;
-	     }
-	     choose_ort('s', $abk, -rebuild => 1, %extra_args);
+	     choose_ort('s', $abk, -rebuild => 1);
 	 },
 	 -pcb => sub {
 	     my $abk = shift;
-	     my %extra_args;
-	     # heuristic to detect layers created by "GPS-Daten zeichnen"
-	     # XXX unfortunately gpsman-created .wpt files are not chronologically sorted
-	     if ($p_file{$abk} =~ m{gpspoints\.bbd}) {
-		 $extra_args{'-unsorted'} = 1;
-	     }
-	     choose_ort('p', $abk, -rebuild => 1, %extra_args);
+	     choose_ort('p', $abk, -rebuild => 1);
 	 },
 	 -token => 'choose_from_additional_layer',
 	);

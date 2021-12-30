@@ -890,6 +890,7 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	}
 	$s_speed->set_global_directives({ 'line_dash.Rte' => ["5, 5"],
 					  'category_color.Rte' => ['#000000'],
+					  'listing_sort' => ['unsorted'],
 					});
 	$s_speed->write($real_speed_outfile);
 	my $abk = main::plot_layer('str',$speed_outfile,
@@ -945,6 +946,9 @@ sub BBBikeGPS::do_draw_gpsman_data {
 	    # See above
 	    $real_outfile = $outfile . "-orig";
 	}
+	$s->set_global_directives({
+				   'listing_sort' => ['unsorted'],
+				  });
 	$s->write($real_outfile);
 	my %args;
 	if ($draw_point_names) {
