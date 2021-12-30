@@ -34167,6 +34167,8 @@ EOF
 #: source_id: viz2021:13.37737,52.51457,26.12.2021,06:00
 #: source_id: viz2021:13.351326,52.514425,26.12.2021,06:00
 #: source_id: viz2021:13.36968,52.51571,26.12.2021,06:00
+#: source_id: viz2021:13.377132,52.512991,31.12.2021,06:00
+#: source_id: viz2021:13.351095,52.514567,31.12.2021,06:00
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165 8595,12066
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8592,12252 8637,12258 8643,12208 8728,12220 8722,12268 8714,12319 8630,12307 8637,12258 8722,12268
 EOF
@@ -34208,6 +34210,17 @@ EOF
 #: source_id: viz2021:13.3156,52.4588,27.12.2021,15:34 (hier kein Endedatum)
 #: by: https://viz.berlin.de/2021/12/grunewaldstrasse/
 	q3::inwork 4520,5793 4671,5697
+EOF
+     },
+     { from  => 1640894267, # 2021-12-30 20:57
+       until => 1643670000, # 2022-02-01 00:00
+       text  => 'Greifswalder Str.: vor der Kreuzung Thomas-Mann-Str. Wasserrohrbruch, Fahrbahn gesperrt, evtl. gibt es Beeinträchtigungen für Radfahrer, bis Januar 2022',
+       type  => 'handicap',
+       source_id => 'https://twitter.com/VIZ_Berlin/status/1476450886004219906',
+       data  => <<EOF,
+#: source_id: viz2021:13.43916,52.54122,29.12.2021,09:14
+#: also_indoor: traffic (G,H)
+	q3::inwork; 12737,15154 12870,15342
 EOF
      },
     );

@@ -4754,19 +4754,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1648764000
        },
-       {
-         'data' => '# REMOVED (hier nicht mehr) --- #: note: im nördlichen Bereich zwischen Kurfürstenstr. und Ullsteinstr. nur ein kurzer Abschnitt betroffen, trotzdem ist hier alles ausnahmslos Einbahnstraße ---	q4::inwork; 8848,4683 8827,4874 8813,5004
-#: source_id: viz2021:13.379481,52.445266,04.10.2021,08:00
-#: also_indoor: traffic (H,G(falsch))
-	q4::inwork; 8881,4360 8868,4498 8867,4506 8858,4579 8848,4683
-',
-         'from' => 1633212000,
-         'id' => 3455,
-         'source_id' => 'viz2021:13.378629,52.451139,04.10.2021,08:00',
-         'text' => 'Rathausstr.: zwischen Kaiserstr. und Kurfürstenstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.10.2021 08:00 bis 30.12.2021 17:00 ',
-         'type' => 'handicap',
-         'until' => 1640880000
-       },
+       undef,
        undef,
        undef,
        {
@@ -4951,6 +4939,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.37737,52.51457,26.12.2021,06:00
 #: source_id: viz2021:13.351326,52.514425,26.12.2021,06:00
 #: source_id: viz2021:13.36968,52.51571,26.12.2021,06:00
+#: source_id: viz2021:13.377132,52.512991,31.12.2021,06:00
+#: source_id: viz2021:13.351095,52.514567,31.12.2021,06:00
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165 8595,12066
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8592,12252 8637,12258 8643,12208 8728,12220 8722,12268 8714,12319 8630,12307 8637,12258 8722,12268
 ',
@@ -5001,6 +4991,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Grunewaldstr.: Wasserrohrbruch, Fahrbahn zwischen Lepsiusstr. und Rothenburgstr. gesperrt, evtl. gibt es Beeinträchtigungen für Radfahrer, voraussichtlich bis Ende Januar 2022',
          'type' => 'handicap',
          'until' => 1643644800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.43916,52.54122,29.12.2021,09:14
+#: also_indoor: traffic (G,H)
+	q3::inwork; 12737,15154 12870,15342
+',
+         'from' => 1640894267,
+         'id' => 3494,
+         'source_id' => 'https://twitter.com/VIZ_Berlin/status/1476450886004219906',
+         'text' => 'Greifswalder Str.: vor der Kreuzung Thomas-Mann-Str. Wasserrohrbruch, Fahrbahn gesperrt, evtl. gibt es Beeinträchtigungen für Radfahrer, bis Januar 2022',
+         'type' => 'handicap',
+         'until' => 1643670000
        }
      
 );
