@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2003,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2003,2014,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -48,38 +48,24 @@ sub BBBikeLazy::bbbikelazy_setup {
 			 ['l', 'landstrassen'],
 			);
 	} else {
-	    if ($environment eq 'novacom') {
-		@defs_str = (['s', 'strassen'],
-			     ['w', 'wasserstrassen'],
-			     ['u', 'ubahn'],
-			     ['b', 'sbahn'],
-			    );
-		@defs_p = (['u', 'ubahnhof'],
-			   ['b', 'sbahnhof'],
-			  );
-
-	    } else {
-
-		@defs_str = (['s', 'strassen'],
-			     ['w', 'wasserstrassen'],
-			     ['l', 'landstrassen'],
-			     ['f', 'flaechen'],
-			     ['u', 'ubahn'],
-			     ['b', 'sbahn'],
-			     ['r', 'rbahn'],
-			     ['qs', 'qualitaet_s'],
-			     ['ql', 'qualitaet_l'],
-			     ['hs', 'handicap_s'],
-			     ['hl', 'handicap_l'],
-			    );
-		@defs_p = (['u', 'ubahnhof'],
-			   ['b', 'sbahnhof'],
-			   ['r', 'rbahnhof'],
-			   ['lsa', 'ampeln'],
-			  );
-#XXX		@defs_p_o = (['o', 'orte']); # Extra-Wurst wegen plotorte()
-	    }
-
+	    @defs_str = (['s', 'strassen'],
+			 ['w', 'wasserstrassen'],
+			 ['l', 'landstrassen'],
+			 ['f', 'flaechen'],
+			 ['u', 'ubahn'],
+			 ['b', 'sbahn'],
+			 ['r', 'rbahn'],
+			 ['qs', 'qualitaet_s'],
+			 ['ql', 'qualitaet_l'],
+			 ['hs', 'handicap_s'],
+			 ['hl', 'handicap_l'],
+			);
+	    @defs_p = (['u', 'ubahnhof'],
+		       ['b', 'sbahnhof'],
+		       ['r', 'rbahnhof'],
+		       ['lsa', 'ampeln'],
+		      );
+#XXX	    @defs_p_o = (['o', 'orte']); # Extra-Wurst wegen plotorte()
 	}
     } elsif ($coord_system eq 'berlinmap') {
 	@defs_str = (['s', 'strassen-orig'],

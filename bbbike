@@ -5433,8 +5433,6 @@ dazu verwendet wird",
 	 ['autosave','!',1,
 	  label => M"Speichern beim Beenden", var => \$autosave_opts],
 	 ['environment','=s','normal',
-	  # "novacom" (für GDF-Daten als Standard)
-	  # "onlineoffice" (für Onlineoffice-Präsentationen)
 	  nogui => 1, var => \$environment],
 	 ['mldbm','!',0,
 	  label => M"Verwendung von MLDBM",
