@@ -150,6 +150,11 @@ the maptype B<polar>.
 This global directive sets the title or some descriptive text for the
 file.
 
+It is possible to localize the title by using the C<< title.I<$lang> >> syntax, e.g.
+
+    title.en: English title
+    title.de: deutscher Titel
+
 =item C<version: I<RCS or CVS identifier string>>
 
 This global directive introduces an RCS/CVS Id string. Not recommended
