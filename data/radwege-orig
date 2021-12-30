@@ -1689,7 +1689,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2021-12-17 vvv
+#: last_checked: 2021-12-30 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -5684,7 +5684,9 @@ asphaltiert	RW1; 9660,17736 9721,17806
 #: last_checked: 2021-10-31 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
+#: osm_watch: way id="162965650" version="21"
 	RW3; 8776,16268 8921,16578
+#: osm_watch: way id="761539110" version="6"
 die letzten 20 Meter sind benutzungspflichtig	RW3; 8921,16578 8952,16666
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^

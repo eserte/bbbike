@@ -3307,7 +3307,7 @@ Drängelgitter	BNP:3::trailer=10 20675,56
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2021-12-17
+#: last_checked: 2021-12-30
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -3768,15 +3768,13 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2021-10-24 vvv
+#: last_checked: 2021-12-30 vvv
 #: check_frequency: 60d vvv
-Carl-Spindler-Str.: durch Bauzäune abgesperrt, mittlerweile ist eine Durchfahrt nicht mehr möglich	2::inwork 21442,5414 21474,5388
-Carl-Spindler-Str.: Hochbauarbeiten, Fahrbahn kann unpassierbar sein	2::inwork 21379,5163 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388
-Carl-Spindler-Str.: kann durch Bauzäune abgesperrt sein	2::inwork 21346,5165 21379,5163
+Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21386,5251 21355,5254
+Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # REMOVED (nicht mehr gesehen) --- Henriette-Lustig-Str.: teilweise gesperrt	2::inwork 21375,4974 21380,5003
 # REMOVED (fast fertig) --- Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21611,5119 21645,5135
-Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 # REMOVED (offen) --- Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 21355,5254 21386,5251
 #: check_frequency ^^^
 #: last_checked ^^^

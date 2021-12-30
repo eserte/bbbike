@@ -30988,7 +30988,7 @@ EOF
        type  => 'handicap',
        source_id => '2147343596',
        data  => <<EOF,
-#: next_check_id: BOHNSDORFERKREISEL-2017
+# REMOVED (inaktiv) --- #: next_check_id: BOHNSDORFERKREISEL-2017
 	q3::inwork 22120,886 22062,773
 EOF
      },
@@ -31652,6 +31652,7 @@ EOF
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
+#: osm_watch: way id="759405498" version="2"
 #: last_checked: 2021-10-26 (daf)
 #: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
@@ -33209,7 +33210,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-12-27
+#: last_checked: 2021-12-30
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862

@@ -320,7 +320,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="10"
 #: also_indoor: traffic
-#: last_checked: 2021-11-16 (mapillary)
+#: last_checked: 2021-12-16 (mapillary)
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -539,7 +539,7 @@ Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::i
 ### Köpenick ###
 # 
 #: next_check_id: WUHLHEIDE-2021
-#: last_checked: 2021-11-23
+#: last_checked: 2021-12-30
 #: check_frequency: 30d
 Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 20629,7189 20575,7226
 # 
@@ -559,9 +559,9 @@ Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 
 #: also_indoor: traffic (G)
 #: osm_watch: way id="746589388" version="17"
 #: osm_watch: way id="746589386" version="1"
-#: last_checked: 2021-10-08 (osm)
+#: last_checked: 2021-12-12 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2021-12-31
+# REMOVED --- #: next_check: 2021-12-31
 Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
 # 
 # REMOVED (nicht mehr) --- #: next_check_id: HILDAGEIRINGERWEG-2019 --- #: source_id: 2147345153 (Gehwegarbeiten in der Invalidenstr., bis Anfang Dezember 2019) --- #: priority: #C vvv --- #: last_checked: 2020-10-10 vvv --- #: check_frequency: 30d vvv --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt	q3::inwork 8281,13394 8302,13430 8293,13527 --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur über Restaurantbereich	q4::inwork 8174,13390 8241,13393 8281,13394 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^
