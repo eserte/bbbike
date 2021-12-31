@@ -106,6 +106,7 @@ for my $image (@$data) {
 }
 
 print $ofh "#: map: polar\n";
+print $ofh "#: line_arrow: last\n";
 print $ofh "#\n";
 print $ofh "# Fetched from mapillary for bbox=@$bbox ($region) and date $capture_date\n";
 print $ofh "#\n";
