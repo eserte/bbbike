@@ -4808,9 +4808,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: also_indoor: traffic (G)
-#: osm_watch: way id="1003079755" version="3"
+#: osm_watch: way id="1003079755" version="4"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2021-12-27
+#: check_frequency: 14d
 	q3::inwork; 16192,10907 16153,10818
 ',
          'from' => undef,

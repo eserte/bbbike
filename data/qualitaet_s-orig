@@ -6157,10 +6157,10 @@ Dorfstr. (Falkenberg): schlechtes Kopfsteinpflaster	Q3 19154,18498 19036,18521
 Falkenberger Fußsteig: Asphalt, einige Wurzelhebungen	Q0- 18922,18436 18761,18480 18507,18541 18215,18629
 (Falkenberger Fußsteig - Dorfstr./Wartenberg): Asphalt	Q0 18185,18641 18215,18629
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): Asphalt	Q0 18737,18380 18761,18480 18864,18772
-Hauptweg (Wartenberg, Neu-Hohenschönhausen): etwas holpriger Asphalt	Q1 18864,18772 18923,18941
+Hauptweg (Wartenberg, Neu-Hohenschönhausen): holpriger Asphalt	Q1 18864,18772 18923,18941
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): Asphalt	Q0 18923,18941 18997,19157 19066,19380 19126,19560
 Grüne Trift (Wartenberg): etwas rauer Asphalt	Q0- 19157,19122 19125,19130 19061,19145 18997,19157 18947,19168 18910,19175
-Grüne Trift (Wartenberg): Asphalt	Q0 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18071,19227
+Grüne Trift (Wartenberg): Asphalt, einige leichte Wurzelhebungen	Q0 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18071,19227
 Ahornweg (Wartenberg): unbefestigter Weg	Q2 18879,18954 18947,19168 19019,19396 19071,19576
 Lindenweg (Wartenberg): unbefestigter Weg	Q2 18983,18906 19061,19145 19129,19360 19187,19543
 Akazienweg (Wartenberg): unbefestigter Weg	Q2 19043,18876 19125,19130 19190,19340 19248,19525
@@ -12379,6 +12379,7 @@ Golda-Meir-Steg: Kopfsteinpflaster	Q2 7962,14198 7968,14202
 (Gewerbegebiet Glienicker Weg): Asphalt	Q0 20839,3163 20919,3082 21068,2926
 (Wilhelmine-Duncker-Str. - Grünzug am Falkenberg): wassergebundene Decke	Q1- 21440,300 21435,323
 Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
+(Demminer Str. - Am Gutshof): Betonpflaster	Q0- 17797,18675 17813,18726
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12862,7 +12863,7 @@ Nidecksteig: schlechter Sandweg	Q3 -8059,15014 -8041,15132
 #: confirmed_by: srt
 Hirtsieferzeile: guter Asphalt	Q0 15086,2856 15086,2881 15172,2971
 #: confirmed_by: srt
-Kröpeliner Str.: guter Beton	Q0- 18009,18640 17999,18540 18048,18480 18045,18456
+Kröpeliner Str.: guter Beton	Q0- 18010,18649 17999,18540 18048,18480 18045,18456
 Neumagener Str.: guter Asphalt	Q0 14923,16914 14910,17010
 #: corrected_by: srt (Asphalt -> Beton)
 Neumagener Str.: Beton	Q1 14910,17010 14897,17093
@@ -15249,7 +15250,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="10"
-#: last_checked: 2021-11-10
+#: last_checked: 2021-12-31
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -19106,7 +19107,7 @@ Ahornallee (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25123,5767 25111,5
 #: by: Hollie (freak...): vvv
 #: note: laut ADFC-Karte/neu gut geeigntet:
 #: confirmed_by: srt
-Demminer Str.: guter Beton	Q0 17502,18286 17673,18438 17772,18523 17795,18670
+Demminer Str.: guter Beton	Q0 17502,18286 17673,18438 17772,18523 17797,18675
 # REMOVED --- #: note: laut ADFC-Karte/neu schlechter als mäßig geeignet: --- #: XXX wird sich am Fahrbahnbelag was ändern? --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.559438.php --- #: source_id: 2147341173 --- #: source_id: LMS-BR_r_LMS-BR_93888 --- #: next_check: 2017-08-31
 #: corrected_by: srt (neu gemacht)
 Dorfstr.: Asphalt	Q0 17600,18994 17697,18989 17799,19000 17887,18975 17900,18972 17980,18947 18007,18938
@@ -19178,7 +19179,7 @@ Duchrother Str.: guter Asphalt	Q0 29344,1577 29288,1618 29166,1715 28978,1864 28
 # 
 #: by: Anja (_soci_):
 #: confirmed_by: srt
-Neubrandenburger Str.: guter Beton	Q0- 17589,18709 17680,18700 17795,18670 17829,18656 17899,18649 18009,18640 18040,18657 18185,18641
+Neubrandenburger Str.: guter Beton	Q0- 17589,18709 17680,18700 17797,18675 17823,18662 17900,18653 17996,18644 18010,18649 18040,18657 18185,18641
 # 
 #: by: Michael Reimann: vvv
 #: corrected_by: srt ("mäßiger" gestrichen)
@@ -24487,7 +24488,7 @@ Reuterpfad: guter Asphalt	Q0 1839,7887 1843,8059
 Kieler Str. (Mahlsdorf): Asphalt	Q0 25722,13490 25763,13476 25850,13400 25961,13304 26029,13245 26102,13180 26212,13089
 #: note: "einige Fußgänger, q0" ignoriert
 #: corrected_by: srt (Beton -> ...)
-Klützer Str.: Asphalt	Q0 17881,18344 17788,18463 17885,18550 17899,18649
+Klützer Str.: Asphalt	Q0 17881,18344 17788,18463 17885,18550 17900,18653
 #: by: ^^^
 # 
 #: by: Tietz (teddy):
@@ -30529,4 +30530,5 @@ Einmündungsbereich mit Kopfsteinpflaster	Q1- 13590,12260
 Einmündungsbereich mit Kopfsteinpflaster	Q2 9870,12657
 Kreuzungsbereich asphaltiert	Q0 9919,12613
 Einmündungsbereich mit Kopfsteinpflaster	Q2 15649,10922
+Kreuzungsbereich mit Kopfsteinpflaster	Q2- 18215,18629
 #: ignore ^^^

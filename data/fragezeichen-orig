@@ -300,7 +300,7 @@ Heerstr.: Erneuerung des Radwegs geplant	?::projected -3069,11487 -2871,11423 -2
 #: osm_watch: way id="182782708" version="11"
 #: osm_watch: way id="168307255" version="10"
 #: osm_watch: way id="4687243" version="28"
-#: last_checked: 2021-11-10
+#: last_checked: 2021-12-31
 #: check_frequency: 360d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14243,13890 14218,13834
 # 
@@ -1445,7 +1445,7 @@ Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::pro
 #: source_id: 2147344112 (bis Mitte November 2019)
 #: source_id: 2147345106 (bis Ende 2019) 
 #: source_id: 2147345785 (bis 16.5.2020)
-#: last_checked: 2021-06-26
+#: last_checked: 2021-12-31
 #: check_frequency: 270d
 # REMOVED --- #: next_check: 2020-05-16
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs stadtauswärts?	?::projected; 17744,18016 17843,18078
@@ -2312,8 +2312,6 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_05_0549_0672_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_50_4625_4696_online.pdf (Straßenlandwidmung (Carl-Spindler-Str., Adolf-Heyden-Str.))
-#: osm_watch: way id="162120177" version="15"
-#: osm_watch: node id="6751063701" version="4"
 #: XXX "Rewatex"-Gelände
 #: XXX eine Straße könnte nach Henriette Lustig ("Mutter Lustig") benannt werden
 # REMOVED (eingetragen) --- #: XXX alle Straßen fehlen in Berlin.coords.data
@@ -2321,9 +2319,11 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: last_checked: 2021-10-02
 #: check_frequency: 180d
 #: XXX Qualität? culdesac-Eintrag zu culdesac_pseudo machen
+#: osm_watch: way id="719023971" version="6"
 (Blütenweißweg - Harnischweg): wird es hier eine Verlängerung für Radfahrer/Fußgänger bis zum Harnischweg geben?	?::projected 21427,5347 21399,5336 21363,5336
 #: last_checked: 2021-12-30
 #: check_frequency: 120d
+#: osm_watch: way id="721602418" version="3"
 (Uferweg - Eiselenweg): wird hier die Radroute neu geführt? Weg ist asphaltiert	?::inwork 21518,5389 21483,5374
 # REMOVED (-> strassen-orig) --- #: XXX Planstraße 1+2 -> Carl-Spindler-Str. --- #: XXX laut Amtsblatt auch Privatstraße? --- Carl-Spindler-Str.: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität: Asphalt. Anbindung zum Uferweg?	?::projected 21442,5414 21482,5388 21483,5374 21514,5310 21547,5245 21408,5178 21345,5157
 # REMOVED (-> strassen-orig) --- #: XXX laut Amtsblatt auch Privatstraße? --- #: XXX laut osm komplett asphaltiert --- #: XXX Planstraße 3 -> Adolf-Heyden-Str. --- Adolf-Heyden-Str.: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität (am südöstlichen Ende asphaltiert)? Anbindung zum Uferweg?	?::projected 21408,5178 21444,5112 21476,5048 21494,5011
@@ -4075,7 +4075,7 @@ Brunsbütteler Damm: neue Busspur wurde angeordnet	?::projected; -3824,13947 -362
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/bezirk-lichtenberg-bringt-radwege-auf-vordermann_a210997
 #: osm_watch: way id="24206093" version="12"
 #: osm_watch: way id="24217292" version="7"
-#: last_checked: 2021-04-08 (mapillary)
+#: last_checked: 2021-12-31
 #: check_frequency: 180d
 Nordostumfahrung von Malchow: wird hier die Qualität verbessert? Ist überhaupt dieser Abschnitt gemeint, oder vielleicht der Hauptweg weiter westlich?	? 15617,19775 16082,19754 16081,19656 16074,19436 16074,19162
 # 
@@ -4424,7 +4424,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1113179.php (Beteiligung bis 31.8.2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10119 (Einwohnerfrage)
 #: osm_watch: way id="4685729" version="20"
-#: last_checked: 2021-12-16
+#: last_checked: 2021-12-31
 #: check_frequency: 60d
 Waldeyerstr.: wird es hier zu weiteren Einschränkungen für den Radverkehr kommen?	? 15058,12329 15003,12241
 # 
@@ -4827,7 +4827,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: http://www.infravelo.de/projekt/bizetstrasse-2/
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/informationen-fuer-anwohner_a322112 (temporärer Kiezblock ab Frühjahr 2022)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll_fahrrat_pankow17-02-2021.pdf (Erwähnung)
-#: last_checked: 2021-12-22 (mapillary)
+#: last_checked: 2021-12-31
 #: check_frequency: 120d
 #: next_check: 2022-03-01
 Bizetstr.: entsteht hier eine Fahrradstraße?	? 13409,15687 13456,15760 13524,15786 13540,15792 13572,15804 13665,15840 13867,15915 14056,15985 14248,16058 14295,16076 14552,16171
@@ -4991,7 +4991,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: XXX mittlerweile existiert ein temporärer Zebrastreifen mit Gelbmarkierung, vielleicht wegen der Bauarbeiten in der Berliner Allee errichtet?
 #: priority: #D
-#: last_checked: 2021-12-22 (mapillary)
+#: last_checked: 2021-12-31
 #: check_frequency: 30d
 Meyerbeerstr./Smetanastr.: wird hier ein Zebrastreifen gebaut?	?::projected 14103,15916 14095,15891 14115,15875
 # 
@@ -5079,11 +5079,11 @@ Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur?
 #: last_checked: 2021-12-10
 #: check_frequency: 90d
 Bornitzstr.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 15950,12886 16073,12883 16146,12881 16197,12880 16242,12878 16312,12876 16376,12874 16384,12874 16439,12872 16484,12871 16860,12861
-#: last_checked: 2021-08-02 (mapillary)
+#: last_checked: 2021-12-31
 #: check_frequency: 90d
 Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 17003,19035 16736,19193 16646,19221 16216,19183 16104,19165 16074,19162 16011,19158 15642,19179
 # REMOVED (fertig) --- #: by: https://api.fixmyberlin.de/api/projects/329 (mittlerweile: "execution", construction_completed 2021-12-31) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2020/pressemitteilung.976038.php (Bauarbeiten östliche Seite: 24.8.2020-Ende Oktober 2020; westliche Seite 2021; "asphaltierter Radfahrstreifen") --- #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/fahrradstreifen-wird-erneuert_a283621 --- #: by: http://www.infravelo.de/projekt/rhinstrasse-ostseite/ (bis 4. Quartal 2020) (alter Eintrag) --- #: by: http://www.infravelo.de/projekt/rhinstrasse-ostseite-2/ (bis 4. Quartal 2020) --- #: by: http://www.infravelo.de/projekt/rhinstrasse-westseite/ (1. Quartal 2021 - 4. Quartal 2021) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erwähnung, voraussichtlich bis Herbst 2021) --- #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995 --- #: source_id: 2147346260 (bis 18.12.2020) (inaktiv) --- #: source_id: 2147347002 (bis 9.4.2021; hat die Baustelle was mit den geplanten Arbeiten zu tun?) --- #: source_id: 2147347183 (bis 2.8.2021; Radwegsanierung) --- #: source_id: viz2021:13.510848,52.543955,12.05.2021,06:00 (bis 8.9.2021; Radwegsanierung) --- #: last_checked: 2021-08-02 (mapillary) --- #: check_frequency: 130d --- #: next_check: 2021-09-08 --- Rhinstr.: Verbreiterung des Radwegs, vielleicht auch Asphaltierung?	?::inwork; 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17774,15129 17789,15098 17829,15015
-#: last_checked: 2021-12-22 (mapillary)
+#: last_checked: 2021-12-31
 #: check_frequency: 60d
 Indira-Gandhi-Str.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 14828,15050 14686,15608 14653,15738 14609,15921 14597,15970 14595,15980 14576,16069 14552,16171 14522,16260 14499,16341
 #: last_checked: 2021-12-22 (mapillary)
@@ -5112,7 +5112,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 18
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2021-12-28
+#: last_checked: 2021-12-31
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: by: https://api.fixmyberlin.de/api/projects/328 (Grünmarkierung + Verbreiterung, teilweise Leitboys)
@@ -5120,7 +5120,7 @@ Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Rad
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (geschützte Radstreifen 2021)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (kleine Protektion, herausnehmbare Poller, Planungsleistungen bis Herbst 2021, danach bauliche Umsetzung)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Umsetzung 2022)
-#: last_checked: 2021-11-24
+#: last_checked: 2021-12-31
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch eine Änderung von RW3 -> RW4	?::projected 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855
@@ -5138,7 +5138,7 @@ Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
 #: check_frequency: 120d
 Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18875,9570 18846,9532 18765,9426 18735,9421
 #: osm_watch: way id="261883742" version="8"
-#: last_checked: 2021-08-13
+#: last_checked: 2021-12-31
 #: check_frequency: 90d
 Lindenberger Str.: Was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18106,19353 18119,19400 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
 #: osm_watch: way id="25760211" version="10"
@@ -6276,7 +6276,7 @@ Paule-Panke-Str.: geplante Privatstraße	?::projected 11168,18542 11214,18388 111
 Hegemeisterweg/Treskowallee: Ampel geplant	?::projected 18390,7797 18406,7760 18424,7721
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8592
-#: last_checked: 2021-11-16 (mapillary)
+#: last_checked: 2021-12-31
 #: check_frequency: 180d
 Malchower Str./Königswalder Str.: Fußgängerüberweg bzw. Ampel geplant	?::projected 16931,17024 16951,17055 16974,17087
 # 
@@ -6357,7 +6357,10 @@ Paradiesstr.: evtl. werden hier noch Radwege als Zufahrt zur B96a erstellt, viel
 Alt-Karow/ Bucher Chaussee/ Hofzeichendamm/ Schönerlinder Weg: "Fußgängerschutzweg" (Zebrastreifen?) soll errichtet werden	?::projected 15721,23508 15726,23475 15738,23436
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8820 (bis 4. Quartal 2021)
-#: next_check: 2021-12-31
+#: priority: #C
+#: last_checked: 2021-12-31
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2021-12-31
 zum Am Gutshof: wurde bereits das Hinweisschild aufgestellt? wo genau?	? 17887,18975 17874,18936
 # 
 #: ignore ^^^
@@ -6851,7 +6854,7 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 # REMOVED --- #: XXX: am Wartenberger Weg habe ich ein Straßenschild "An der Margaretenhöhe" gesehen --- kann das sein? --- Schnitterinnenweg: Benennung?	? 16736,19193 16768,19191 17015,19287 17351,19411 17679,19532
 # REMOVED (Schild steht) --- Am Alten Malchower Graben: Benennung?	? 15424,19861 15393,19671 15383,19610 15386,19485 15426,19216 15412,19082 15407,19024 15376,18908 15400,18840 15399,18782 15434,18731 15413,18626
 #: XXX beim ersten Vorschlag war der Name noch offen
-#: last_checked: 2021-07-06 (mapillary)
+#: last_checked: 2021-10-31 (mapillary)
 #: check_frequency: 180d
 Barnimer Dörferweg: werden hier auch grüne Straßenschilder aufgestellt?	? 18515,20587 18061,20715 18083,20782 18026,20847 17946,20889 17475,20851 17287,20837 17080,21288 17073,21329
 # REMOVED --- Ahornallee: Benennung?	? 17015,19287 17015,19587 17050,20298 17061,20451 17079,20716 17287,20837
@@ -7279,8 +7282,9 @@ ehemaliger Güterbahnhof Neukölln: Radweg geplant	?::projected 12704,6920 12696,6
 # 
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-auslegung/artikel.632232.php
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-auslegung/unterlagen/seiten-4-aus-170912_xiv-285_jerusalemv_plakate_highres.pdf
-#: last_checked: 2021-02-27
-#: next_check: 2022-01-01
+#: last_checked: 2021-09-27 (mapillary)
+#: check_frequency: 360d
+# REMOVED --- #: next_check: 2022-01-01
 Friedhof Jerusalem und Neue Kirche: Wohngebiet geplant, Straßen geplant	?::projected 11710,7184 11799,7199 11791,7246 11924,7271
 # 
 #: XXX Bebauungsplan XIV-269-1b
@@ -7904,9 +7908,9 @@ Fahlenbergbrücke: Behelfsbrücke wird hier gebaut	?::projected 30942,-62 31103,-1
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_16_1221_1304_online.pdf (Benennung)
 #: XXX fehlt bei Berlin.coords.data
 #: XXX geplante neue Privatstraße
-#: last_checked: 2021-08-13
-#: check_frequency: 120d
-Zum Wartenberger Anger: genaue Lage, Qualität?	?::projected 17697,18956 17670,18850 17753,18835 17813,18933
+#: last_checked: 2021-12-31
+#: check_frequency: 180d
+Zum Wartenberger Anger: genaue Lage, Qualität?	?::projected 17697,18956 17687,18846 17753,18835 17813,18933
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_31_2589_2676_online.pdf (Benennung)
 #: by: https://www.berliner-woche.de/wartenberg/c-verkehr/strassenteil-wird-umbenannt_a318539
@@ -7914,8 +7918,8 @@ Zum Wartenberger Anger: genaue Lage, Qualität?	?::projected 17697,18956 17670,18
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/F79WiFP2abgRrV4KLrsX5olu6b3JLkHvrN4jHx9G/WMnlwMsx/03-Anlagen/02/LageplanASKultur.pdf (Lageplan)
 #: XXX fehlt bei Berlin.coords.data
 #: XXX geplante neue Privatstraße
-#: last_checked: 2021-05-15
-#: check_frequency: 120d
+#: last_checked: 2021-12-31
+#: check_frequency: 180d
 Neben dem Dorfteich: genaue Lage, Qualität?	?::projected 17750,18984 17744,18953 17762,18948 17753,18919
 # 
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/bebauungsplan.1070410.php

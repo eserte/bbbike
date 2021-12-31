@@ -722,7 +722,7 @@ teilweise mit Leitboys geschützt	RW4; 14208,12235 14280,12223 14381,12205 14427,
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur, danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
-#: last_checked: 2021-12-28
+#: last_checked: 2021-12-31
 #: check_frequency: 30d
 #: next_check: 2022-03-31
 	RW4; 14926,12129 14994,12121 15117,12106
@@ -4587,12 +4587,16 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: by: https://abendblatt-berlin.de/2020/07/10/berlin-malchow-bundesstrasse-mit-umleitungen/
 #: by: https://www.berliner-woche.de/malchow/c-verkehr/wann-kommt-die-ortsumfahrung-malchow_a331229 (keine konkreten Absichten für eine Ortsumfahrung)
 #: XXX wird der Radweg verbessert?
-#: last_checked: 2021-10-13 (mapillary)
+#: last_checked: 2021-12-31
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
 	RW1;RW1 15642,19179 15604,19349 15597,19573 15617,19775 15620,19809
-auf beiden Seiten asphaltierter Rad- und Gehweg, mittlerweile schon mit Wurzelschäden	RW2;RW2 14832,17867 15152,18115 15181,18137 15569,18492 15600,18551 15610,18596
+#: note: Wurzelschäden wurden mittlerweile weitgehend ausgebessert (Stand Ende 2021)
+asphaltierter Rad- und Gehweg	RW2; 14832,17867 15152,18115 15181,18137 15569,18492
+asphaltierter Rad- und Gehweg, leichte Wurzelhebungen	RW2; 15569,18492 15600,18551
+asphaltierter Rad- und Gehweg	RW2; 15600,18551 15610,18596
+asphaltierter Rad- und Gehweg, mittlerweile schon mit Wurzelschäden	RW2; 15610,18596 15600,18551 15569,18492 15181,18137 15152,18115 14832,17867
 	RW1;RW1 1074,8470 1007,8428 911,8374 860,8323 834,8273 834,8206 850,8128 834,8067 811,8022 761,7922 674,7758 -138,6681
 alter Asphalt, Unebenheiten und einige Wurzelschäden	RW1; -138,6681 -150,6168 -119,5885 40,5606 67,5404
 	RW; 67,5404 40,5606 -119,5885 -150,6168 -138,6681
@@ -6314,7 +6318,8 @@ asphaltiertes Straßenbahnkap	RW2; 15469,12831 15417,12823
 	RW3; 15367,12815 15357,12813 15233,12829
 	RW3; 15233,12829 15169,12839
 asphaltiertes Straßenbahnkap	RW2; 15169,12839 15117,12846 15098,12849
-	RW3; 15098,12849 15010,12855
+#: note: frühere Radstreifenmarkierung nicht mehr erkennbar
+	RW0; 15098,12849 15010,12855
 	RW4; 15010,12855 14940,12843 14906,12837
 	RW3; 14906,12837 14836,12826 14731,12809
 asphaltiertes Straßenbahnkap	RW1; 14731,12809 14661,12798
@@ -6918,8 +6923,9 @@ Gehweg für Radfahrer frei	RW8;RW0 -3746,2849 -3756,2790
 	RW6;RW6 17370,12649 17475,12603
 	RW6;RW6 17467,12659 17455,12687 17426,12699 17412,12660 17436,12652 17467,12659 17492,12650 17519,12638 17530,12620 17571,12557
 	RW6;RW6 17461,12521 17472,12552 17475,12603 17492,12650
-	RW3; 17843,18078 17768,18160 17702,18168
-die letzten Meter werden als Radweg auf dem Gehweg geführt	RW3; 17702,18168 17768,18160 17843,18078
+	RW3; 17843,18078 17796,18130 17768,18160 17702,18168
+	RW3; 17702,18168 17768,18160 17796,18130
+Verbundsteinpflaster	RW1; 17796,18130 17843,18078
 	RW3;RW3 11754,10516 11721,10530 11690,10543
 Gehweg für Radfahrer frei	RW1; 10177,13766 10193,13816 10209,13854
 	RW2; 10193,13816 10177,13766

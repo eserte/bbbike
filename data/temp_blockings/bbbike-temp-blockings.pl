@@ -33819,9 +33819,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G)
-#: osm_watch: way id="1003079755" version="3"
+#: osm_watch: way id="1003079755" version="4"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2021-12-27
+#: check_frequency: 14d
 	q3::inwork; 16192,10907 16153,10818
 EOF
      },

@@ -5082,10 +5082,10 @@ Dorfstr. (Falkenberg): schlechtes Kopfsteinpflaster	Q3 19154,18498 19036,18521
 Falkenberger Fußsteig: Asphalt, einige Wurzelhebungen	Q0 18922,18436 18761,18480 18507,18541 18215,18629
 (Falkenberger Fußsteig - Dorfstr./Wartenberg): Asphalt	Q0 18185,18641 18215,18629
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): Asphalt	Q0 18737,18380 18761,18480 18864,18772
-Hauptweg (Wartenberg, Neu-Hohenschönhausen): etwas holpriger Asphalt	Q1 18864,18772 18923,18941
+Hauptweg (Wartenberg, Neu-Hohenschönhausen): holpriger Asphalt	Q1 18864,18772 18923,18941
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): Asphalt	Q0 18923,18941 18997,19157 19066,19380 19126,19560
 Grüne Trift (Wartenberg): etwas rauer Asphalt	Q0 19157,19122 19125,19130 19061,19145 18997,19157 18947,19168 18910,19175
-Grüne Trift (Wartenberg): Asphalt	Q0 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18071,19227
+Grüne Trift (Wartenberg): Asphalt, einige leichte Wurzelhebungen	Q0 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18071,19227
 Ahornweg (Wartenberg): unbefestigter Weg	Q2 18879,18954 18947,19168 19019,19396 19071,19576
 Lindenweg (Wartenberg): unbefestigter Weg	Q2 18983,18906 19061,19145 19129,19360 19187,19543
 Akazienweg (Wartenberg): unbefestigter Weg	Q2 19043,18876 19125,19130 19190,19340 19248,19525
@@ -10807,6 +10807,7 @@ Golda-Meir-Steg: Kopfsteinpflaster	Q2 7962,14198 7968,14202
 (Gewerbegebiet Glienicker Weg): Asphalt	Q0 20839,3163 20919,3082 21068,2926
 (Wilhelmine-Duncker-Str. - Grünzug am Falkenberg): wassergebundene Decke	Q1 21440,300 21435,323
 Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
+(Demminer Str. - Am Gutshof): Betonpflaster	Q0 17797,18675 17813,18726
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11061,7 +11062,7 @@ Lobelienweg: Asphalt	Q0 21902,11055 21981,11092
 Nidecksteig: guter Asphalt	Q0 -8126,14740 -8099,14771 -8059,15014
 Nidecksteig: schlechter Sandweg	Q3 -8059,15014 -8041,15132
 Hirtsieferzeile: guter Asphalt	Q0 15086,2856 15086,2881 15172,2971
-Kröpeliner Str.: guter Beton	Q0 18009,18640 17999,18540 18048,18480 18045,18456
+Kröpeliner Str.: guter Beton	Q0 18010,18649 17999,18540 18048,18480 18045,18456
 Neumagener Str.: guter Asphalt	Q0 14923,16914 14910,17010
 Neumagener Str.: Beton	Q1 14910,17010 14897,17093
 Neumagener Str.: Beton	Q0 14897,17093 14881,17209
@@ -13394,7 +13395,7 @@ Engelmannweg: guter Beton	Q0 4558,18342 4531,18217
 Engelmannweg: gut befahrbares Kopfsteinpflaster	Q1 4531,18217 4492,18013 4462,17892 4429,17763
 Ahornallee (Friedrichshagen): Asphalt	Q0 25121,5795 25123,5767
 Ahornallee (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25123,5767 25111,5464 25121,5286
-Demminer Str.: guter Beton	Q0 17502,18286 17673,18438 17772,18523 17795,18670
+Demminer Str.: guter Beton	Q0 17502,18286 17673,18438 17772,18523 17797,18675
 Dorfstr.: Asphalt	Q0 17600,18994 17697,18989 17799,19000 17887,18975 17900,18972 17980,18947 18007,18938
 Am Gutshof: Verbundsteinpflaster	Q0 17730,18747 17813,18726 17819,18738 17839,18782 17854,18777
 Am Gutshof: Kopfsteinpflaster	Q2 17854,18777 17907,18759
@@ -13418,7 +13419,7 @@ Straße 45 (Karow): guter Asphalt	Q0 14742,21843 14885,21827 15031,21810 15126,21
 Pausiner Str.: Asphalt	Q0 -4318,16979 -4319,16879 -4322,16776
 Pausiner Str.: Asphalt mit einigen Schäden	Q1 -4322,16776 -4325,16675 -4326,16581 -4337,16494
 Duchrother Str.: guter Asphalt	Q0 29344,1577 29288,1618 29166,1715 28978,1864 28703,2104
-Neubrandenburger Str.: guter Beton	Q0 17589,18709 17680,18700 17795,18670 17829,18656 17899,18649 18009,18640 18040,18657 18185,18641
+Neubrandenburger Str.: guter Beton	Q0 17589,18709 17680,18700 17797,18675 17823,18662 17900,18653 17996,18644 18010,18649 18040,18657 18185,18641
 Schirpitzer Weg: Asphalt	Q0 18123,906 17984,1100 17944,1156
 Schirpitzer Weg: Kopfsteinpflaster	Q2 17944,1156 17786,1377
 Schirpitzer Weg: Asphalt	Q0 17786,1377 17763,1412 17730,1464
@@ -15170,7 +15171,7 @@ Röbellweg: schlechtes Kopfsteinpflaster, Radfahrer werden auf dem Gehweg gedulde
 Kreuztaler Weg: guter Beton	Q0 2220,18554 2416,18598
 Reuterpfad: guter Asphalt	Q0 1839,7887 1843,8059
 Kieler Str. (Mahlsdorf): Asphalt	Q0 25722,13490 25763,13476 25850,13400 25961,13304 26029,13245 26102,13180 26212,13089
-Klützer Str.: Asphalt	Q0 17881,18344 17788,18463 17885,18550 17899,18649
+Klützer Str.: Asphalt	Q0 17881,18344 17788,18463 17885,18550 17900,18653
 Bodelschwinghstr.: Asphalt	Q0 15946,6722 15838,6816
 Promenadenstr.: Asphalt	Q0 5425,2735 5230,2840
 Promenadenstr.: Asphalt	Q0 5079,2929 4871,3045

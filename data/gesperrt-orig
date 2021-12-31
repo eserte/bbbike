@@ -1352,6 +1352,7 @@ Mühsamstr.	1 13818,12897 13844,12900
 #: note: nur ein Einfahrt-verboten-Schild ohne korrespondierendes Einbahnstraßenschild
 Lilli-Henoch-Str.	1s:q3 12357,15020 12388,14926
 (Weydemeyerstr.): durch Tore abgesperrt	2 11933,12701 11971,12785
+Falkenberger Chaussee: Straßenbahntrasse, Mittelstreifen	3nocross 17400,17790 17482,17844 17601,17922 17675,17971
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3770,8 +3771,13 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
 #: last_checked: 2021-12-30 vvv
 #: check_frequency: 60d vvv
+#: osm_watch: way id="729324149" version="6"
+#: osm_watch: way id="162120178" version="10"
+#: osm_watch: node id="6751063701" version="4"
 Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
+#: osm_watch: way id="719023970" version="9"
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21386,5251 21355,5254
+#: osm_watch: way id="719023969" version="10"
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 # REMOVED (nicht mehr gesehen) --- Henriette-Lustig-Str.: teilweise gesperrt	2::inwork 21375,4974 21380,5003
 # REMOVED (fast fertig) --- Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21611,5119 21645,5135
@@ -4015,7 +4021,7 @@ Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 #: last_checked: 2021-12-23
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
-#: osm_watch: way id="496270260" version="6" brb
+# REMOVED (wurde gelöscht) --- #: osm_watch: way id="496270260" version="7" brb
 # REMOVED (wurde gelöscht) --- #: osm_watch: node id="3453536641" version="5" brb
 #: osm_watch: way id="733725947" version="5" brb
 #: last_checked: 2020-02-29
