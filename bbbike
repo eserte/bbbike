@@ -12519,6 +12519,18 @@ sub choose_ort {
 			$args{'-width'} = 20;
 			$args{'-type'} = "$type-bg";
 		    } else {
+			if (!defined $showcenter) {
+			    # heuristic: if the bbd file defaults to
+			    # plotting with arrows at the end, then
+			    # usually it should be scrolled to the
+			    # beginning of the feature
+			    if ($object && $object->can('get_global_directive')) {
+				my $line_arrow = $object->get_global_directive('line_arrow');
+				if ($line_arrow && $line_arrow eq 'last') {
+				    $showcenter = 'begin';
+				}
+			    }
+			}
 			if ($showcenter) {
 			    if ($showcenter eq 'begin') {
 				$args{'-scrollto'} = $tcoords->[0][0];

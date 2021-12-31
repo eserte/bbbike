@@ -290,6 +290,11 @@ Example:
  #: line_arrow: last
  #: line_arrow.cat: both
 
+Currently setting the C<line_arrow> directive (without category) to
+C<last> has also the effect to center to the beginning of a feature
+selected in the street list of the Perl/Tk application (otherwise the
+default is the center of the feature).
+
 =item C<line_shorten: I<boolean>>
 
 =item C<line_shorten.I<category>: I<boolean>>
