@@ -34224,4 +34224,14 @@ EOF
 	q3::inwork; 12737,15154 12870,15342
 EOF
      },
+     { from  => 1640905200, # 2021-12-31 00:00
+       until => 1672527600, # 2023-01-01 00:00
+       text  => 'Waitzstr.: Baustelle, gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.01.2022 bis 31.12.2022 ',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.306069,52.502061,01.01.2022,06:00',
+       data  => <<EOF,
+#: note: vermutlich nur im Bereich Sybelstr. 14
+	2::inwork 3726,10757 3731,10640 3764,10580 3883,10585
+EOF
+     },
     );

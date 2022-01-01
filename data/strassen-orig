@@ -329,7 +329,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/flaniermeile-friedrichstrasse-soll-dauerhaft-gesperrt-bleiben_a326012 (Teileinziehung geplant, evtl. bis April 2022)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_49_4457_4624_online.pdf (Teileinziehung)
 #: source_id: 2147346249
-#: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00
+#: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: last_checked: 2021-12-23 vvv
 #: next_check: 2022-04-01 vvv
 # REMOVED --- #: valid: !20200821-20211031 --- Friedrichstr. (Mitte, Kreuzberg)	H 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103 --- #: valid: 20200821-20211031
@@ -1301,7 +1301,7 @@ Mercedes-Platz	NN 12990,11006 13063,11147
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="9"
 #: priority: #C
-#: last_checked: 2021-12-06
+#: last_checked: 2022-01-01
 #: next_check: 2023-01-01
 (Planstraße C)	N 12926,11224 12848,11093
 # 
@@ -2543,9 +2543,9 @@ Straße 12 (Neukölln)	N 13882,6674 13881,6634 13915,6592
 #: last_checked: 2021-12-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
-#: valid: 20140224-20211231
+#: valid: 20140224-20221231
 Naumburger Str.	H 13265,6972 13520,6583
-#: valid: !20140224-20211231
+#: valid: !20140224-20221231
 Naumburger Str.	N 13265,6972 13520,6583
 #: next_check ^^^
 #: check_frequency ^^^
@@ -17879,7 +17879,7 @@ Werner-Kube-Str.	N 12881,14342 12947,14428 13013,14523
 (Anton-Saefkow-Str. - John-Schehr-Str.)	N 13088,14469 13031,14390
 (Anton-Saefkow-Str. - John-Schehr-Str.)	NN 13031,14390 13022,14378 13016,14370
 #: osm.highway: service
-(Anton-Saefkow-Str. - John-Schehr-Str.)	NN 13016,14370 12954,14287
+(Anton-Saefkow-Str. - John-Schehr-Str.)	N 13016,14370 12954,14287
 Hans-Otto-Str.	N 12832,14378 12783,14312 12722,14232 12601,14060 12542,13984 12478,13903 12398,13792
 Heinz-Kapelle-Str.	N 12783,14312 12972,14173
 Dietrich-Bonhoeffer-Str.	N 12556,14230 12266,14460

@@ -2117,7 +2117,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3757,7 +3757,18 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813076.php (ab August 2019)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
+	q4::temp::play 11175,9882 11197,9894 11411,9810
+',
+         'from' => 1648677600,
+         'id' => 3145,
+         'recurring' => 1,
+         'text' => 'Böckhstr.: zwischen Grimmstr. und Graefestr. mittwochs zwischen 14 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.4. bis 30.9.',
+         'type' => 'handicap',
+         'until' => 1664553600
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T08 vvv
@@ -3984,7 +3995,20 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'until' => 1664550000
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/an-einem-nachmittag-im-monat-wird-die-gudvanger-strasse-nun-offiziell-gesperrt_a274891 (hier: ab Juli 2020)
+#: by: http://www.spielstrassen.de/initiativen.php?init=Templiner_Str (hier: ab 30.6.2020, Hausnummern 15 bis 19)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/fuer-die-spielstrasse-unterschreiben_a277858
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/templiner-strasse-wird-spielstrasse_a276796 (Hausnummern hier vermutlich falsch)
+	q4::temp::play 10670,14116 10716,14195 10739,14228
+',
+         'from' => 1656453600,
+         'id' => 3253,
+         'recurring' => 1,
+         'text' => 'Templiner Str.: zwischen Zionskirchstr. und Schwedter Str. dienstags zwischen 15 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 30.6. bis 30.10.',
+         'type' => 'handicap',
+         'until' => 1667149200
+       },
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
@@ -4644,19 +4668,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (hier nicht mehr) --- #: note: Gehweg für Radfahrer frei (beide Richtungen) --- # REMOVED --- #: next_check: 2021-08-13 ---	q3::inwork 18939,9417 18977,9322 19048,9146
-	q2::inwork 19020,9364 19109,9306
-	q2::inwork 19128,9523 19109,9306
-	q2::inwork 19109,9306 19195,9249
-',
-         'from' => 1628719200,
-         'id' => 3429,
-         'source_id' => 'viz2021:13.5302,52.487045,13.08.2021,07:00',
-         'text' => 'Köpenicker Str./Rudolf-Grosse-Str.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, voraussichtlich bis Dezember 2021',
-         'type' => 'handicap',
-         'until' => 1640970000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5004,6 +5016,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Greifswalder Str.: vor der Kreuzung Thomas-Mann-Str. Wasserrohrbruch, Fahrbahn gesperrt, evtl. gibt es Beeinträchtigungen für Radfahrer, bis Januar 2022',
          'type' => 'handicap',
          'until' => 1643670000
+       },
+       {
+         'data' => '#: note: vermutlich nur im Bereich Sybelstr. 14
+	2::inwork 3726,10757 3731,10640 3764,10580 3883,10585
+',
+         'from' => 1640905200,
+         'id' => 3495,
+         'source_id' => 'viz2021:13.306069,52.502061,01.01.2022,06:00',
+         'text' => 'Waitzstr.: Baustelle, gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.01.2022 bis 31.12.2022 ',
+         'type' => 'gesperrt',
+         'until' => 1672527600
        }
      
 );

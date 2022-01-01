@@ -60,13 +60,6 @@ Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 # REMOVED (beendet) --- #: XXX_prog eigentlich besser mit handicap_directed darstellbar --- Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: last_checked: 2020-07-08 vvv --- #: check_frequency: 7d vvv --- #: valid: -20200717 vvv --- Stralauer Allee: enge Stelle	q3::inwork; 14558,10264 14405,10340 --- #: valid ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (Engstelle nun kürzer und nicht mehr so eng) --- #: next_check_id: STRALAUER-2019 --- #: last_checked: 2020-01-24 --- #: check_frequency: 7d --- #: valid: -20200331 --- Stralauer Allee: enger gemeinsamer Geh- und Radweg während der Bauarbeiten	q3::inwork; 14558,10264 14405,10340
-# 
-#: next_check_id: PLANSTRASSEC-2019
-# REMOVED (ein osm_watch reicht aus) --- #: osm_watch: way id="491906864" version="6"
-#: last_checked: 2021-12-06
-#: check_frequency: 60d
-(Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q3::inwork 12926,11224 12848,11093
-# 
 # REMOVED (feritg) --- #: source_id: 2147346950 (bis 31.5.2021) --- #: also_indoor: traffic (G) --- #: last_checked: 2021-04-08 --- #: check_frequency: 14d --- #: next_check: 2021-05-31 --- #: valid: -20210531 --- Am Rudolfplatz: etwa 35m Fahrbahn vor der Modersohnstr. gesperrt, Ausweichen auf Gehweg	q3::inwork 14011,10812 13896,10851
 # REMOVED (Fahrräder kommen durch) --- #: next_check_id: GUBENER-2019 --- #: priority: #A --- #: last_checked: 2019-07-03 --- #: check_frequency: 2d --- Gubener Str.: Fahrbahn wegen Asphaltierungsarbeiten Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13326,12056 13243,12222
 # REMOVED (Durchfahrt möglich) --- #: last_checked: 2019-05-12 --- #: check_frequency: 30d --- Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
@@ -658,7 +651,7 @@ Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwor
 # REMOVED (laut osm nur noch construction=minor) --- Donaustr.: Fahrbahn an der Kreuzung Pannierstr. kann wegen Bauarbeiten noch nicht befahrbar sein	q2::inwork 12202,8895 12392,8724
 # 
 #: next_check_id: GRENZALLEE-2014
-#: last_checked: 2021-10-07 (mapillary) vvv
+#: last_checked: 2021-12-13 vvv
 #: check_frequency: 90d vvv
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q1 14150,6609 14137,6658 14179,6714 14179,6743
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
@@ -716,6 +709,19 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12
 # REMOVED (fertig, noch immer KS) --- #: next_check_id: FRIEDEL-2014 --- #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht? --- #: last_checked: 2014-12-12 --- #: check_frequency: 60d --- Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
 ### Lichtenberg ###
+# 
+#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
+#: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
+#: XXX Laut Schild der Wasserbetriebe bis Juni 2022
+#: also_indoor: traffic (G(teilweise),ex-H)
+#: last_checked: 2021-12-30 (mapillary) vvv
+#: check_frequency: 60d vvv
+#: next_check: 2022-06-30 vvv
+Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16227,12280 16159,12301 16056,12317
+Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16144,12388 16159,12301 16158,12191
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: XXX Bis wann dauern die Bauarbeiten an?
 #: XXX Mittlerweile nur etwa 100m

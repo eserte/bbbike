@@ -1222,7 +1222,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 #: osm_watch: way id="111283481" version="14"
 #: source_id: 2147344555 (bis Ende August 2019, Gleisbauarbeiten, inaktiv)
-#: last_checked: 2021-03-07
+#: last_checked: 2021-12-30 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2023-06-30
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 15437,16491 15662,16649 15735,16698 15776,16721 15892,16834 15986,16922 16139,17017 16296,17114 16318,17128
@@ -2991,7 +2991,7 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14270,83
 #: by: https://www.deutsches-architekturforum.de/thread/11524-am-stadthafen-europacity/?postID=658734#post658734 (ca. 150m realisiert)
 #: osm_watch: way id="237716440" version="12"
 #: XXX wird vermutlich zusammen mit dem Golda-Meir-Steg gebaut
-#: last_checked: 2021-12-08
+#: last_checked: 2021-12-13 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-04-01
 Uferweg in Bau	?::inwork 8057,13923 7989,14035 7923,14142 7912,14160 7866,14215
@@ -3575,7 +3575,7 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege geben?	?::projected
 # REMOVED --- #: last_checked ^^^
 # 
 #: XXX laut Aushang Bauarbeiten in der zweiten Jahreshälfte 2021
-#: last_checked: 2021-11-19
+#: last_checked: 2022-01-01
 #: check_frequency: 45d
 Wriezener Park: Umbauarbeiten geplant, evtl. werden Wege zwischenzeitlich gesperrt sein	?::projected 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
 # 
@@ -3657,7 +3657,7 @@ Ludwigsluster Str.: Radweg wird neu gemacht (?)	? 22896,12827 22906,12766 22906,
 # REMOVED --- #: next_check: 2021-12-31
 Gülzower Str.: Radweg wird neu gemacht	?; 22304,12157 22388,12190 22603,12359 22817,12525 22967,12647
 #: XXX aber nicht 2021
-#: last_checked: 2021-08-07
+#: last_checked: 2021-12-30 (mapillary)
 #: check_frequency: 270d
 Cottbusser Str.: Fahrradstraße geplant	?::projected 23104,14827 23175,14823 23222,14809 23297,14772 23354,14756 23405,14758 23531,14781 23735,14814 23798,14826
 #: by: ^^^
@@ -3844,6 +3844,8 @@ Britzer Damm: Busspur geplant	?::projected; 12564,4308 12547,4391 12731,4841
 # REMOVED --- #: by: https://www.berliner-woche.de/hakenfelde/c-bauen/viele-wissen-gar-nicht-was-hier-passiert_a258061 (Bauvorbereitungen) --- #: by: https://www.hs02.de/projekte/berlin-spandau-carossa-quartier/ (Weg ist nicht betroffen; Park sowieso schon zu groß eingezeichnet -> korrigiert) --- #: by: https://www.deutsches-architekturforum.de/thread/11058-kleinere-projekte-spandau-reinickendorf/?postID=681039#post681039 --- #: osm_watch: way id="22981817" version="15" --- #: osm_watch: way id="653917549" version="1" --- #: last_checked: 2020-09-12 --- #: check_frequency: 180d --- Maselakepark: bleibt der Weg erhalten? Was wird aus dem Park?	? -2632,16347 -2587,16600
 # 
 #: by: https://api.fixmyberlin.de/api/projects/325
+#: osm_watch: way id="18830950" version="25"
+#: osm_watch: way id="57685001" version="19"
 #: last_checked: 2021-09-04
 #: check_frequency: 120d
 Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -3006,17128 -2958,17509
@@ -6250,7 +6252,7 @@ Krausenstr.: Erneuerung geplant	?::projected 10176,11593 10001,11577 9925,11568 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/2021_08_30-bauschild-neugestaltung-roedeliusplatz.pdf
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/bauarbeiten-rund-um-den-roedeliusplatz-dauern-bis-mitte-2023_a328430
 #: XXX Bauarbeiten in Gange, keine Einschränkungen
-#: last_checked: 2021-12-10
+#: last_checked: 2021-12-30 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 Roedeliusplatz: Asphaltierung	?::inwork 16159,12301 16227,12280 16276,12273
@@ -7660,16 +7662,17 @@ Bitterfelder Str. - Alte Rüsternallee: Radwegrampen in Planung	?::projected 2031
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-bauen/neubauboom-in-marzahn-hellersdorf-setzt-sich-fort_a302274
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/134-wohnungen-im-quartier-stadtgut-hellersdorf-bezugsfertig_a317319 (gesamtes Bauvorhaben bis Ende 2023)
 #: XXX bleiben die bestehenden Straßen während der Bauzeit passierbar?
-#: last_checked: 2021-12-28 (daf) vvv
 #: check_frequency: 150d vvv
 #: next_check: 2023-12-31 vvv
-Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23305,14914 23110,14945 23117,15081
+#: last_checked: 2021-12-28 (daf) vvv
 Bebauungsplan 10-45: Stadtplatz und Planstraße C geplant	?::projected 23269,15062 23339,15079 23348,15042 23416,15060 23690,15096 23686,15128
 Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23416,15060 23396,15223 23399,15252
 Bebauungsplan 10-45: verkehrsberuhigter Bereich sowie Rad/Gehweg geplant	?::projected 23396,15223 23663,15270
+#: last_checked ^^^
+#: last_checked: 2021-12-30 (mapillary)
+Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23305,14914 23110,14945 23117,15081
 #: next_check ^^^
 #: check_frequency ^^^
-#: last_checked ^^^
 # 
 #: XXX Bebauungsplan 10-44 vvv
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.685526.php
@@ -9500,7 +9503,6 @@ Dollgow - Zernikow: Qualität?	? -17141,74157 -16859,74184 -16629,74151 -15730,74
 Leipziger Str. (Schöneiche): wie ist die Qualität im nördlichen Abschnitt? ebenfalls unbefestigt?	? 32156,6405 32056,6607 31993,6776 31952,6917 31951,7060
 # 
 Puschkinstr. (Schulzendorf): Qualität?	? 23969,-3515 24087,-3734 24237,-3966 24304,-4061 24390,-4190
-Dohlenstieg (Schulzendorf): Qualität?	? 24169,-3653 24328,-3896 24501,-4155
 Ulmenweg (Schulzendorf): Qualität?	? 23657,-3411 23759,-3608
 Egelsteg (Schulzendorf): Qualität?	? 23538,-3808 23484,-3871
 #: XXX laut osm asphalt+intermediate
