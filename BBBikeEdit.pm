@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2009,2015,2016,2020,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2009,2015,2016,2020,2021,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -2327,7 +2327,11 @@ sub edit_temp_blockings {
 
     open my $TEMP_BLOCKINGS, $click_info->basefile
 	or main::status_message("Can't open " . $click_info->basefile . ": $!", "die");
-    my $line = $main::temp_blocking_inx_mapping{ $click_info->line };
+    my $id = eval { $main::current_temp_blockings_ms->get_directives($click_info->line)->{id}->[0] };
+    if (!defined $id) {
+	main::status_message("Can't find id for " . $click_info->line . " in " . $click_info->basefile, "die");
+    }
+    my $line = $id;
     my $record = 0;
     my $linenumber = 1;
     while(<$TEMP_BLOCKINGS>) {

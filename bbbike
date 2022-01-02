@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2021 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2022 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -11208,7 +11208,6 @@ sub activate_temp_blockings {
 
     eval {
 	use vars qw(@temp_blocking); # XXX do not use a global such as this
-	use vars qw(%temp_blocking_inx_mapping); # XXX dito
 	@temp_blocking = ();
 	do $file; # XXX Safe?
 	my($file_mtime) = (stat($file))[9];
@@ -11266,9 +11265,8 @@ sub activate_temp_blockings {
 		    last if !@{ $ret->[Strassen::COORDS()] };
 		    $ret->[Strassen::NAME] = $text;
 		    $new_s->push($ret);
-		    $new_s->set_directives_for_current({ info => [$o] });
+		    $new_s->set_directives_for_current({ info => [$o], id => [$global_inx] });
 		    $used_inx++;
-		    $temp_blocking_inx_mapping{$used_inx} = $global_inx;
 		}
 		$new_s->{Modtime} = $mtime;
 		push @s, $new_s;
