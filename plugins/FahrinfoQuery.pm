@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2015,2016,2017,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,12 +17,12 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.34';
+$VERSION = '0.35';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
 
-use constant PLUGIN_DISABLED => 1; # since 2021-12-13 or so the mobile search is not working and there's no replacement yet
+use constant PLUGIN_DISABLED => 0; # since 2021-12-13 or so the mobile search is not working and there's no replacement yet
 
 use vars qw($icon %city_border_points $menu);
 
@@ -340,13 +340,14 @@ sub search {
     my($start_name, $goal_name) = @_;
     my $url = uri_with_query
 	(
-	 "http://mobil.bvg.de/Fahrinfo/bin/query.bin/dox",
-	 [from => $start_name, # XXX add " (Berlin)"? # XXX add !
-	  to   => $goal_name,  # XXX "
-	  REQ0JourneyStopsSA1 => 1,
-	  REQ0JourneyStopsZA1 => 1,
+	 "https://www.vbb.de/fahrinfo",
+	 [
+	  start    => 'yes',
+	  S        => $start_name,
+	  Z        => $goal_name,
+	  language => $Msg::lang eq 'de' ? 'de_DE' : 'en_GB',
 	 ],
-	 encoding => 'iso-8859-1',
+	 encoding => 'utf-8',
 	);
     start_browser($url);
 }
