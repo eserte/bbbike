@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2016,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2016,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package VMZTool;
 
 use v5.10.0; # named captures, defined-or
 use strict;
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -916,6 +916,7 @@ my($vmzrssfile);
 my($biberfile);
 my($vmz_2020_file);
 my($vmz_2021_file);
+my $need_to_use_old_store;
 if ($do_test) {
     my $samples_dir = "$ENV{HOME}/src/bbbike-aux/samples";
     if ($do_aspurls) {
@@ -966,42 +967,49 @@ if ($do_test) {
 	$File::Temp::KEEP_ALL = 1;
 	die $@;
     }
-    
+} else {
+    if (!$old_store) {
+	die "Please specify -oldstore when using -no-fetch!\n";
+    }
+    $need_to_use_old_store = 1;
 }
+
 my %res;
-if ($file && $mapfile) {
-    %res = $vmz->parse($file);
-    $vmz->parse_mappage($mapfile, \%res);
-} elsif (-r $new_store_file) {
-    my $res = BBBikeYAML::LoadFile($new_store_file);
-    %res = %$res;
-}
-if ($biberfile) {
-    my %biber_res = $vmz->parse_biber($biberfile);
-    while(my($id,$rec) = each %{ $biber_res{id2rec} }) {
-	if (!exists $res{id2rec}->{$id}) {
-	    $res{id2rec}->{$id} = $rec;
-	    push @{ $res{place2rec}->{$rec->{place}} }, $rec;
+if ($need_to_use_old_store) {
+    %res = %$old_store;
+} else {
+    if ($file && $mapfile) {
+	%res = $vmz->parse($file);
+	$vmz->parse_mappage($mapfile, \%res);
+    }
+    if ($biberfile) {
+	my %biber_res = $vmz->parse_biber($biberfile);
+	while(my($id,$rec) = each %{ $biber_res{id2rec} }) {
+	    if (!exists $res{id2rec}->{$id}) {
+		$res{id2rec}->{$id} = $rec;
+		push @{ $res{place2rec}->{$rec->{place}} }, $rec;
+	    }
+	}
+    }
+    if ($vmz_2020_file || $vmz_2021_file || ($berlinsummaryfile && $vmzrssfile)) {
+	my %berlin_res;
+	if ($vmz_2021_file) {
+	    %berlin_res = $vmz->parse_vmz_2021($vmz_2021_file);
+	} elsif ($vmz_2020_file) {
+	    %berlin_res = $vmz->parse_vmz_2020($vmz_2020_file);
+	} elsif ($berlinsummaryfile && $vmzrssfile) {
+	    my %berlin_rss_res = $vmz->parse_vmz_rss($vmzrssfile);
+	    %berlin_res = $vmz->parse_berlin_summary($berlinsummaryfile, \%berlin_rss_res);
+	}
+	while(my($id,$rec) = each %{ $berlin_res{id2rec} }) {
+	    if (!exists $res{id2rec}->{$id}) {
+		$res{id2rec}->{$id} = $rec;
+		push @{ $res{place2rec}->{$rec->{place}} }, $rec;
+	    }
 	}
     }
 }
-if ($vmz_2020_file || $vmz_2021_file || ($berlinsummaryfile && $vmzrssfile)) {
-    my %berlin_res;
-    if ($vmz_2021_file) {
-	%berlin_res = $vmz->parse_vmz_2021($vmz_2021_file);
-    } elsif ($vmz_2020_file) {
-	%berlin_res = $vmz->parse_vmz_2020($vmz_2020_file);
-    } elsif ($berlinsummaryfile && $vmzrssfile) {
-	my %berlin_rss_res = $vmz->parse_vmz_rss($vmzrssfile);
-	%berlin_res = $vmz->parse_berlin_summary($berlinsummaryfile, \%berlin_rss_res);
-    }
-    while(my($id,$rec) = each %{ $berlin_res{id2rec} }) {
-	if (!exists $res{id2rec}->{$id}) {
-	    $res{id2rec}->{$id} = $rec;
-	    push @{ $res{place2rec}->{$rec->{place}} }, $rec;
-	}
-    }
-}
+
 my $bbd = $vmz->as_bbd($res{place2rec}, $old_store);
 if ($new_store_file && $do_fetch) {
     BBBikeYAML::DumpFile($new_store_file, \%res);
@@ -1028,11 +1036,6 @@ Conversion between old vmz file into new format for "removed"
 detection:
 
     perl -MYAML::XS=LoadFile,Dump -e '$d = LoadFile(shift); for (@$d) { $seen{$_->{id}} = $_ } print Dump { id2rec => \%seen }' ~/cache/misc/vmz.yaml > /tmp/oldvmz.yaml
-
-Test usage:
-
-    echo "---" > /tmp/oldvmz.yaml
-    perl miscsrc/VMZTool.pm -test -oldstore /tmp/oldvmz.yaml -newstore /tmp/newvmz.yaml -outbbd /tmp/diffnewvmz.bbd
 
 First-time usage:
 
@@ -1067,5 +1070,24 @@ locations (useful for testing).
   * store the parsed data
   * get old data (either last marked as checked or previous set)
   * call as_bbd and write down the bbd file
+
+=head2 TEST USAGES
+
+=head3 TEST PARSING
+
+Use C<-test> to just test the parsing functions without fetching the
+files. This needs some pre-fetched files stored in
+F<~/src/bbbike-aux/samples/>.
+
+    echo "---" > /tmp/oldvmz.yaml
+    perl miscsrc/VMZTool.pm -test -oldstore /tmp/oldvmz.yaml -newstore /tmp/newvmz.yaml -outbbd /tmp/diffnewvmz.bbd
+
+=head3 TEST BBD CREATION
+
+To just re-use the previously fetched data (which should be available
+as C<-oldstore>), e.g. to test a newer version of the C<as_bbd>
+function, use:
+
+    perl miscsrc/VMZTool.pm -no-fetch -oldstore ~/cache/misc/newvmz.yaml -outbbd /tmp/diffnewvmz.bbd
 
 =cut
