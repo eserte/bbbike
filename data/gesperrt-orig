@@ -819,7 +819,7 @@ Bundesplatz (Richtungsfahrbahn)	1 5346,7860 5331,8012 5304,8088 5304,8144 5354,8
 Bundesplatz (Richtungsfahrbahn)	1 5354,8236 5363,8170 5376,8104 5357,8013 5350,7915 5346,7860
 #: note ^^^
 #: note: Mittelstreifen mit teilweise dichter Beparkung, sehr breite Straße, Straßentunnel vvv
-Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10878,12560 10804,12461
+Grunerstr. (Richtungsfahrbahn)	1::igndisp 11105,12764 11057,12715 10954,12635 10887,12570 10804,12461
 # REMOVED --- Grunerstr. (Richtungsfahrbahn)	1::igndisp 10804,12461 10738,12364
 # REMOVED --- Grunerstr. (Richtungsfahrbahn)	1::igndisp 10738,12364 10804,12461
 Grunerstr. (Richtungsfahrbahn)	1::igndisp 10804,12461 10868,12572 10953,12638 11055,12717 11105,12764
@@ -1240,7 +1240,8 @@ Waldstr.	1 9961,19513 10002,19418
 # REMOVED --- #: next_check_id: UBAHN1-2020 --- #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510 --- #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021 --- 
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022)
-#: last_checked: 2021-12-29
+#: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
+#: last_checked: 2022-01-03
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-01-12
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -3421,8 +3422,8 @@ Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, k
 Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 15320,12375 15408,12394
 # 
 #: next_check_id: NKZ-2020
-#: last_checked: 2021-12-06
-#: check_frequency: 60d
+#: last_checked: 2022-01-03
+#: check_frequency: 30d
 (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
@@ -3794,7 +3795,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.berliner-woche.de/mitte/c-bauen/architekten-koennen-bis-november-ihre-entwuerfe-einreichen_a324605
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2021-12-04
+#: last_checked: 2022-01-03
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
@@ -3807,7 +3808,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00
 #: note: laut rbb nur bis 31.08.2022
 # REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
-#: last_checked: 2021-11-18 vvv
+#: last_checked: 2022-01-03 vvv
 #: next_check: 2024-06-01 vvv
 Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285 10675,12280
@@ -3858,12 +3859,13 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: by: https://abendblatt-berlin.de/2020/04/25/berlin-marzahn-bazubeginn-fuer-wuhletalbruecke-erst-ab-2022/
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9099 (Empfehlung für vorzeitigen Abriss)
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/abriss-der-wuhletalbruecke-startet-ende-2021_a299255 (Abschluss der Baumaßnahme 2026/2027)
-#: XXX Wann wird sie wieder eröffnet?
-#: source_id: 2147344261 (bis Ende 2021)
-#: source_id: 2147344262 (bis Ende 2021)
+#: by: https://berliner-abendblatt.de/2022/01/03/abbruch-der-wuhletalbruecke-startet/ (bis 2025)
+#: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022)
+#: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022)
+#: XXX Wann wird die Brücke wieder eröffnet?
 #: last_checked: 2021-05-08
 #: next_check: 2022-12-31
-#: valid: 20190603-20221231
+#: valid: 20190603-20250101
 Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
 # 
 # REMOVED (Bauzäune sind nur stellenweise vorhanden (z.B. Seidenschwanzstr., westliche Einfahrt) und können leicht umfahren werden --- siehe mapillary) --- #: next_check_id: SEIDENSCHWANZSTR-2019 --- #: last_checked: 2020-04-26 vvv --- #: check_frequency: 360d vvv --- #: next_check: 2021-01-09 vvv --- #: XXX wann werden die Straßen eröffnet? vvv --- #: XXX laut osm (via StreetComplete) nicht mehr highway=construction vvv --- #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf --- #: by: https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjn5uqLgY_NAhVHsBQKHcfIAEEQFggvMAE&url=https%3A%2F%2Fwww.berlin.de%2Fba-marzahn-hellersdorf%2Fpolitik-und-verwaltung%2Faemter%2Fstadtentwicklungsamt%2Fstadtplanung%2Fmdb-bamarzahnhellersdorf-stadtplanung-festgesetb-xxiii_15b_1_abzeichnung.pdf&usg=AFQjCNHD5t6sh5hLTtunUdcS4SG222H6xw&cad=rja --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_29_3241_3364_online.pdf (Grundstücksnummerierungen) --- #: by; https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-soll-an-der-bisamstrasse-den-bau-von-mehrfamilienhaeusern-pruefen_a228628 --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-plant-mehrgeschosser-im-siedlungsgebiet-zwischen-bisamstrasse-und-landesgrenze_a278290 --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.959124.php --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/die-degewo-will-ab-2023-an-der-stadtgrenze-200-mietwohnungen-bauen_a300659 --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/buergerinitiative-lehnt-mietwohnungsbau-ab_a301920 --- #: osm_watch: way id="515337708" version="8" --- Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801 --- Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26452,12683 26428,12708 --- #: osm_watch: way id="515337706" version="6" --- Wildkatzenweg: durch Bauzäune abgesperrt	2::inwork 26475,12761 26414,12811 26334,12854 --- #: osm_watch: way id="515337707" version="6" --- Ringeltaubenweg: durch Bauzäune abgesperrt	2::inwork 26519,12808 26460,12858 26379,12909 --- #: osm_watch: way id="515337709" version="6" --- Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421,12959 --- #: XXX ^^^ --- #: XXX ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^

@@ -189,22 +189,14 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
-#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv
-#: last_checked: 2021-12-23 vvv
-#: check_frequency: 14d vvv
-# REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269
-#: note: hier nur ein kurzer Abschnitt betroffen
-Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: last_checked: 2021-12-30 (mapillary)
 Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2021-09-01 vvv
+#: last_checked: 2022-01-03 vvv
 #: next_check: 2024-06-01 vvv
 (Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10804,12291 10830,12279
 #: next_check ^^^
@@ -273,8 +265,8 @@ Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2021-12-04
-Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
+#: last_checked: 2022-01-03
+Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
 #: last_checked: 2021-11-28 (daf)
@@ -286,7 +278,7 @@ Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-11-28 (daf)
+#: last_checked: 2022-01-03
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -970,17 +962,11 @@ Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone), nachts und sonntag
 Am M¸ggelsee: Fuﬂg‰nger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28853,3279
 Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11231
 # 
-#: next_check_id: NKZ-2020
-#: XXX zurzeit Bauarbeiten, nur der Gehweg ist offen (alten Eintrag danach wieder aktivieren); vor Corona-Zeiten gab's auﬂerdem einen groﬂz¸gigen Restaurantbereich
-#: last_checked: 2021-12-06 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2022-01-01 vvv
+# REMOVED --- #: next_check_id: NKZ-2020 --- #: XXX zurzeit Bauarbeiten, nur der Gehweg ist offen (alten Eintrag danach wieder aktivieren); vor Corona-Zeiten gab's auﬂerdem einen groﬂz¸gigen Restaurantbereich --- #: last_checked: 2022-01-03 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2022-01-01 vvv
 (Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr	q2 11291,10438 11317,10485
-# REMOVED (Originaleintrag) --- (Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr	q2 11317,10485 11344,10507
-(Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr, Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11317,10485 11344,10507
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+(Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr	q2 11317,10485 11344,10507
+# REMOVED (Bauarbeiten beendet) -- (Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr, Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11317,10485 11344,10507
+# REMOVED --- #: next_check ^^^  --- #: check_frequency ^^^ --- #: last_checked ^^^
 (Zufahrt am NKZ): Fuﬂg‰nger, un¸bersichtlich	q3 11344,10507 11392,10520 11411,10515
 # 
 #: XXX_prog BS (1x oder 2x?)

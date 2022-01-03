@@ -1225,7 +1225,8 @@ entlang der S-Bahn: asphaltiert	Q0 14869,24387 15293,24578 15347,24614 15469,248
 Pankeweg: Beton/Verbundsteinpflaster	Q1 16294,25683 16253,25651 16227,25620 16205,25540 16150,25484 16033,25319 16074,25301
 Pankeweg: gut befestigter Weg	Q1 15998,24887 15820,25003 15810,24981 15643,25090
 Nesselweg: Betonplatten, OK	Q1 8717,21429 8654,21327 8631,21290 8605,21248 8587,21218 8513,21099
-Schönholzer Weg: sehr schlechtes Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 8001,20530 8003,20507 8040,20454 8057,20430
+Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
+Schönholzer Weg: sehr schlechtes Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 8003,20507 8040,20454 8057,20430
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 8057,20430 8071,20410 8093,20379 8131,20287 8196,20096
 Uferstr.: Kopfsteinpflaster	Q2 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
 Oderstr.: Kopfsteinpflaster	Q2 15106,11598 15043,11637 14946,11697
@@ -1658,8 +1659,8 @@ Löwestr.: mäßiges Kopfsteinpflaster	Q2 13202,12790 13273,12649
 Löwestr.: teilweise schlechtes Kopfsteinpflaster	Q3 13273,12649 13357,12473
 Jacobystr.: Beton mit Schäden	Q1 11596,12668 11287,12814
 Jacobystr.: Beton mit Schäden	Q1 11287,12814 11207,12706
-Parochialstr.: Asphalt	Q0 10952,12401 11040,12415
-Parochialstr.: Asphalt mit einer leichten Schadstelle	Q0 10831,12371 10952,12401
+Parochialstr.: Asphalt	Q0 10957,12401 11040,12415
+Parochialstr.: Asphalt mit einer leichten Schadstelle	Q0 10831,12371 10957,12401
 Waisenstr.: Asphalt	Q1 11017,12487 11032,12439
 Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11032,12439 11040,12415 11049,12386 11094,12243
 (Waisenstr. - Littenstr.): schlechtes Kopfsteinpflaster	Q3 11032,12439 11059,12450
@@ -14201,7 +14202,8 @@ Herbert-Baum-Str.: Asphalt	Q0 13826,16026 13867,15915 13904,15818
 Herbert-Baum-Str.: Kleinsteinpflaster	Q2 13904,15818 13939,15723
 Herbert-Baum-Str.: Asphalt	Q0 13939,15723 13964,15656 13989,15589
 Schneewittchenstr.: mäßiges Kopfsteinpflaster	Q2 22893,6835 22970,6834 23112,6867 23214,6925 23270,6978
-Am Rollberg: mäßiger Asphalt mit vielen Löchern	Q2 10129,21251 9852,21151 9529,21045 9462,21025
+Am Rollberg: mäßiger Asphalt mit vielen Löchern	Q2 10129,21251 9852,21151 9774,21125
+Am Rollberg: Asphalt	Q0 9774,21125 9529,21045 9462,21025
 Sendener Weg: guter Beton	Q0 964,18321 1141,18238 1186,18242 1221,18332 1281,18487 1346,18662
 Alfred-Rojek-Weg: Asphalt	Q0 17809,1855 17725,1834 17656,1815 17669,1774
 Alfred-Rojek-Weg: Asphalt	Q0 17725,1834 17734,1791
@@ -14654,7 +14656,7 @@ Oeserstr.: guter Beton	Q0 2645,20300 2833,20350 2995,20386 3155,20416 3344,20453
 Elisabeth-Flickenschildt-Str.: Asphalt	Q0 -1489,15027 -1811,15121
 Glambecker Weg: Verbundsteinpflaster	Q1 2577,24048 2482,23985 2430,24155 2385,24298 2362,24370
 Erxlebenstr.: Asphalt	Q0 19726,-32 19707,46 19691,107 19663,222 19624,377
-Erbeskopfweg: mäßiger Asphalt, Schlaglöcher	Q2 9982,20793 9924,20951
+Erbeskopfweg: Beton	Q1 9982,20793 9924,20951
 Gewanneweg: guter Asphalt	Q0 15389,23898 15321,23979 15256,24056
 Dörchläuchtingstr.: guter Asphalt	Q0 13485,4496 13486,4650 13511,4695
 Seerosensteig: schlechtes Kopfsteinpflaster, teilweise mit Asphaltbanketten	Q2 11187,3999 11272,4017 11314,4026 11374,4041 11432,4054
@@ -15219,7 +15221,7 @@ Ritterhufen: guter Asphalt	Q0 1020,496 1046,537 1016,737 958,1009
 Mohnweg (Altglienicke): guter Asphalt	Q0 19470,453 19591,394 19624,377 19652,366 19728,362 19785,360 19821,358 19843,357 19895,355 19921,355 20035,348 20098,359 20214,375 20267,375
 Buchsteinweg - Säntisstr.: Parkweg	Q1 9964,1839 9922,1896
 Brockenweg: mäßiges Kopfsteinpflaster	Q2 14529,20807 14721,20776 14799,20786 14847,20776 14945,20748 14995,20731 15052,20725 15102,20723
-Straße 113: guter Asphalt	Q1 9924,20951 9897,21035 9852,21151
+Straße 113: guter Asphalt	Q0 9924,20951 9897,21035 9852,21151
 Schnepfenreuther Weg: guter Asphalt	Q1 -3495,16393 -3466,16455 -3444,16576 -3426,16837 -3404,17147
 Feldstedter Weg: schlechtes Kopfsteinpflaster	Q3 10539,662 10423,636
 Feldstedter Weg: Asphalt in der Fahrbahnmitte	Q0 10423,636 10332,607

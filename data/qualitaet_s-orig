@@ -1720,14 +1720,15 @@ Pankeweg: Beton/Verbundsteinpflaster	Q1 16294,25683 16253,25651 16227,25620 1620
 #: confirmed_by: srt (s¸dlicher Abschnitt)
 Pankeweg: gut befestigter Weg	Q1 15998,24887 15820,25003 15810,24981 15643,25090
 Nesselweg: Betonplatten, OK	Q1- 8717,21429 8654,21327 8631,21290 8605,21248 8587,21218 8513,21099
+Schˆnholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: by: http://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
 #: osm_watch: way id="34428911" version="10" vvv
 #: XXX wird hier asphaltiert? vvv
-#: last_checked: 2021-10-23 (mapillary) vvv
+#: last_checked: 2022-01-01 (mapillary) vvv
 #: next_check: 2023-04-30 vvv
 #: by: mapillary
-Schˆnholzer Weg: sehr schlechtes Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 8001,20530 8003,20507 8040,20454 8057,20430
+Schˆnholzer Weg: sehr schlechtes Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 8003,20507 8040,20454 8057,20430
 Schˆnholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 8057,20430 8071,20410 8093,20379 8131,20287 8196,20096
 #: next_check ^^^
 #: last_checked ^^^
@@ -2249,8 +2250,8 @@ Lˆwestr.: m‰ﬂiges Kopfsteinpflaster	Q2 13202,12790 13273,12649
 Lˆwestr.: teilweise schlechtes Kopfsteinpflaster	Q3 13273,12649 13357,12473
 Jacobystr.: Beton mit Sch‰den	Q1- 11596,12668 11287,12814
 Jacobystr.: Beton mit Sch‰den	Q1+ 11287,12814 11207,12706
-Parochialstr.: Asphalt	Q0 10952,12401 11040,12415
-Parochialstr.: Asphalt mit einer leichten Schadstelle	Q0- 10831,12371 10952,12401
+Parochialstr.: Asphalt	Q0 10957,12401 11040,12415
+Parochialstr.: Asphalt mit einer leichten Schadstelle	Q0- 10831,12371 10957,12401
 Waisenstr.: Asphalt	Q1 11017,12487 11032,12439
 Waisenstr.: schlechtes Kopfsteinpflaster	Q3 11032,12439 11040,12415 11049,12386 11094,12243
 (Waisenstr. - Littenstr.): schlechtes Kopfsteinpflaster	Q3 11032,12439 11059,12450
@@ -21374,9 +21375,12 @@ Herbert-Baum-Str.: Asphalt	Q0 13939,15723 13964,15656 13989,15589
 #: note: bei einem weiteren Eintrag hat Hartmut Q3 eingetragen
 Schneewittchenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 22893,6835 22970,6834 23112,6867 23214,6925 23270,6978
 # 
-#: by: Petra (schulz):
+#: by: Petra (schulz): vvv
 #: confirmed_by: srt
-Am Rollberg: m‰ﬂiger Asphalt mit vielen Lˆchern	Q2- 10129,21251 9852,21151 9529,21045 9462,21025
+Am Rollberg: m‰ﬂiger Asphalt mit vielen Lˆchern	Q2- 10129,21251 9852,21151 9774,21125
+#: corrected_by: mapillary (m‰ﬂiger Asphalt mit vielen Lˆchern, Q2- -> ..., neu gemacht?)
+Am Rollberg: Asphalt	Q0 9774,21125 9529,21045 9462,21025
+#: by ^^^
 # 
 #: by: Bernd Mahrin:
 #: confirmed_by: Jˆrg Henke & srt
@@ -22851,7 +22855,8 @@ Erxlebenstr.: Asphalt	Q0 19726,-32 19707,46 19691,107 19663,222 19624,377
 #: by: Maria Ludwig:
 #: note: aber "Schrittgeschwindigkeit"? q4 -> Q2
 #: note: "boehlke-weber..." meint nur "gut", go with Maria:
-Erbeskopfweg: m‰ﬂiger Asphalt, Schlaglˆcher	Q2 9982,20793 9924,20951
+#: corrected_by: mapillary (m‰ﬂiger Asphalt, Schlaglˆcher, Q2 -> ...)
+Erbeskopfweg: Beton	Q1 9982,20793 9924,20951
 # 
 #: by: tielmann, christine:
 #: confirmed_by: srt
@@ -24653,8 +24658,8 @@ Buchsteinweg - S‰ntisstr.: Parkweg	Q1 9964,1839 9922,1896
 Brockenweg: m‰ﬂiges Kopfsteinpflaster	Q2 14529,20807 14721,20776 14799,20786 14847,20776 14945,20748 14995,20731 15052,20725 15102,20723
 # 
 #: by: franziska (...ringleb...):
-#: note: Q1, because no street in the surrounding has Q0
-Straﬂe 113: guter Asphalt	Q1 9924,20951 9897,21035 9852,21151
+#: confirmed_by: mapillary
+Straﬂe 113: guter Asphalt	Q0- 9924,20951 9897,21035 9852,21151
 # 
 #: by: Nikola Notz:
 Schnepfenreuther Weg: guter Asphalt	Q1 -3495,16393 -3466,16455 -3444,16576 -3426,16837 -3404,17147

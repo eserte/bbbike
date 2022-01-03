@@ -118,7 +118,7 @@ Alex-Wedding-Str. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11085,13
 Alex-Wedding-Str. -> Hirtenstr.: Straßenbahntrasse	3::igndisp 11085,13239 11012,13278 10925,13322
 Hirtenstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 10925,13322 11012,13278 11070,13357
 Hirtenstr. -> Alex-Wedding-Str.: Straßenbahntrasse	3::igndisp 10925,13322 11012,13278 11085,13239
-Parochialstr.	1 10952,12401 11040,12415
+Parochialstr.	1 10957,12401 11040,12415
 Waisenstr.	1 11040,12415 11032,12439 11059,12450
 Waisenstr.	1 11040,12415 11049,12386 11094,12243
 Sonnenallee - Tellstr.	3 12240,8964 12316,8921 12402,9080
@@ -774,20 +774,20 @@ Delbrückstr.	1 12743,6645 12470,6586
 Emser Str.	1 13051,7157 12872,7134
 Stuthirtenweg: Gitter	3 13450,1222 13542,1268 13580,1300
 Stuthirtenweg: Gitter	3 13580,1300 13542,1268 13450,1222
-Mittelstreifen	3nocross::ignrte 10738,12364 10804,12461 10878,12560 10954,12635
+Mittelstreifen	3nocross::ignrte 10738,12364 10804,12461 10887,12570 10954,12635
 Grunerstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10738,12364 10804,12461 10868,12572
 Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10738,12364 10804,12461 10772,12515
-Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10878,12560 10804,12461 10831,12371
-Grunerstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10868,12572 10804,12461 10878,12560
+Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10887,12570 10804,12461 10831,12371
+Grunerstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10868,12572 10804,12461 10887,12570
 Grunerstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10868,12572 10804,12461 10831,12371
-Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10772,12515 10804,12461 10878,12560
+Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10772,12515 10804,12461 10887,12570
 Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10772,12515 10804,12461 10868,12572
 Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10772,12515 10804,12461 10831,12371
 Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10831,12371 10804,12461 10738,12364
 Jüdenstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10831,12371 10804,12461 10868,12572
 Jüdenstr. -> Jüdenstr.: Mittelstreifen	3::igndisp 10831,12371 10804,12461 10772,12515
-Grunerstr. -> Klosterstr.: Mittelstreifen	3::igndisp 10954,12635 10878,12560 10952,12401
-Klosterstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10952,12401 10878,12560 10804,12461
+Grunerstr. -> Klosterstr.: Mittelstreifen	3::igndisp 10954,12635 10887,12570 10947,12457
+Klosterstr. -> Grunerstr.: Mittelstreifen	3::igndisp 10947,12457 10887,12570 10804,12461
 Bayernring	1 8616,8605 8454,8574 8380,8545
 Georg-Hermann-Allee (Potsdam): (teilweise) Einbahnstraße	1 -13429,1069 -13418,1668
 Mittelstreifen	3nocross::ignrte -3002,13442 -2977,13424 -2967,13417 -2937,13399 -2725,13287
@@ -1939,6 +1939,7 @@ Im Waldwinkel	1 184,22257 231,22418
 Beyschlagstr.	1 21,22545 5,22384 184,22257
 Beyschlagstr.	1 408,22184 184,22257
 Petriplatz -> Gertraudenstr.: Abbiegen verboten	3 10418,12016 10460,11979 10512,12039
+Scharrenstr. -> Breite Str.: Abbiegen verboten	3 10418,12016 10480,12077 10383,12191
 Schmohlstr.	1 13196,17223 13159,17196 13057,17120
 Kiehlufer	1 12913,9353 12901,9340 12895,9323
 Naumannstr.	1 7709,8777 7707,8915

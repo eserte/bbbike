@@ -28143,7 +28143,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2021-12-23
+#: last_checked: 2022-01-03
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30474,7 +30474,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, #
-       text  => 'Voltairestr.: Fahrbahn kann wegen Bauarbeiten gesperrt sein',
+       text  => 'Voltairestr.: Einbahnstraße wegen Bauarbeiten, offen Richtung Osten',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: VOLTAIRE-2019
@@ -30482,9 +30482,9 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-12-22
+#: last_checked: 2022-01-03
 #: check_frequency: 14d
-	2::inwork 11329,12497 11209,12430
+	q4::inwork; 11329,12497 11209,12430
 EOF
      },
      { from  => 1574189084, # 2019-11-19 19:44
@@ -33514,7 +33514,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'viz2021:13.409118,52.51693,01.09.2021,06:00',
        data  => <<EOF,
-#: next_check_id: MOLKENMARKT-2021
+# REMOVED --- #: next_check_id: MOLKENMARKT-2021
 	2::inwork 10804,12291 10738,12364
 	2::inwork 10675,12280 10736,12285 10772,12288
 EOF
@@ -33734,12 +33734,14 @@ EOF
 EOF
      },
      { from  => 1615158000, # 2021-03-08 00:00
-       until => 1641337200, # 2022-01-05 00:00
-       text  => 'Schönholzer Weg: Richtung Süden zwischen Angerweg und Edelweißstr. gesperrt, vom 09.03.2021 07:00 bis 04.01.2022 17:00',
+       until => undef, # 1641337200, # 2022-01-05 00:00
+       dont_check_date => 1,
+       text  => 'Schönholzer Weg: Richtung Süden zwischen Angerweg und Edelweißstr. gesperrt, vom 09.03.2021 07:00 bis mindestens 04.01.2022 17:00, vielleicht auch länger',
        type  => 'handicap',
        source_id => 'viz2021:13.374359,52.586234,09.03.2021,07:00',
        data  => <<EOF,
 #: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
+#: last_checked: 2022-01-01 (mapillary)
 	q4::inwork; 8196,20096 8224,19977 8234,19936
 EOF
      },
@@ -34210,6 +34212,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.3156,52.4588,27.12.2021,15:34 (hier kein Endedatum)
 #: by: https://viz.berlin.de/2021/12/grunewaldstrasse/
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/grunewaldstrasse-nach-rohrbruch-wohl-bis-ende-januar-gesperrt_a332651
 	q3::inwork 4520,5793 4671,5697
 EOF
      },
@@ -34228,7 +34231,7 @@ EOF
        until => 1672527600, # 2023-01-01 00:00
        text  => 'Waitzstr.: Baustelle, gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.01.2022 bis 31.12.2022 ',
        type  => 'gesperrt',
-       source_id => 'viz2021:13.306069,52.502061,01.01.2022,06:00',
+       source_id => 'viz2021:13.306069,52.502061,01.01.2022,06:00', # mittlerweile inaktiv
        data  => <<EOF,
 #: note: vermutlich nur im Bereich Sybelstr. 14
 	2::inwork 3726,10757 3731,10640 3764,10580 3883,10585

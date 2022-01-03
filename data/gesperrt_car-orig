@@ -113,7 +113,7 @@ Almstadtstr.	1 10797,13575 10767,13443 10757,13401 10699,13173
 Schendelgasse	1 10644,13497 10703,13467 10767,13443
 Mulackstr.	1 10313,13568 10406,13543 10535,13509 10633,13474
 Karl-Liebknecht-Str.: Straßenbahntrasse	3nocross 10976,13229 11012,13278 11070,13357
-Parochialstr.	1 10952,12401 11040,12415
+Parochialstr.	1 10957,12401 11040,12415
 Waisenstr.	1 11040,12415 11032,12439 11059,12450
 Waisenstr.	1 11040,12415 11049,12386 11094,12243
 # nicht mehr: Jacobystr.	1 11207,12706 11260,12809 11594,12662
@@ -425,7 +425,7 @@ Rosenthaler Weg: Straßenbahntrasse	3nocross 11279,22316 11383,22369 11484,22406 
 Delbrückstr.	1 12743,6645 12470,6586
 Emser Str.	1 13051,7157 12872,7134
 Stuthirtenweg: Gitter	3 * 13542,1268 *
-Grunerstr.: Mittelstreifen	3nocross 10738,12364 10804,12461 10878,12560 10954,12635
+Grunerstr.: Mittelstreifen	3nocross 10738,12364 10804,12461 10887,12570 10954,12635
 Bayernring	1 8616,8605 8454,8574 8380,8545
 Georg-Hermann-Allee (Potsdam): (teilweise) Einbahnstraße	1 -13429,1069 -13418,1668
 Ruhlebener Str.: Mittelstreifen	3nocross -3002,13442 -2977,13424 -2967,13417 -2937,13399 -2725,13287
@@ -1193,6 +1193,7 @@ Beyschlagstr.	1 408,22184 184,22257
 #: corrected_by ^^^
 #: confirmed_by ^^^
 Petriplatz -> Gertraudenstr.: Abbiegen verboten	3 10418,12016 10460,11979 10512,12039
+Scharrenstr. -> Breite Str.: Abbiegen verboten	3 10418,12016 10480,12077 10383,12191
 #: by: Marco (mar-bet):
 #: corrected_by: srt (mittlerweile für Radfahrer frei, verschoben nach gesperrt_car)
 # REMOVED (hier nicht) --- Schmohlstr.	1 13239,17269 13196,17223
