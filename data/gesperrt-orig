@@ -1155,7 +1155,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 #: note implizite Fahrtrichtung
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
-#: osm_watch: way id="151237878" version="10"
+#: osm_watch: way id="151237878" version="12"
 #: last_checked: 2021-12-26 (mapillary)
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
@@ -3303,6 +3303,15 @@ Drängelgitter	BNP:3::trailer=10 20675,56
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: CHAUSSEE-2020
+#: note: laut rbb bis voraussichtlich 30.4.2022
+#: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
+#: osm_watch: way id="129104626" version="17"
+#: last_checked: 2021-12-11
+#: check_frequency: 90d
+#: next_check: 2022-04-30
+Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
+# 
 #: next_check_id: PLANSTRASSEC-2019
 # REMOVED (ein osm_watch reicht aus) --- #: osm_watch: way id="491906864" version="6"
 #: last_checked: 2022-01-01
@@ -3398,7 +3407,7 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 # 
 #: XXX Bis wann bleibt die Einbahnstraße bestehen? Siehe auch anderen Eintrag zur möglichen Asphaltierung.
 #: osm_watch: way id="4045220" version="42"
-#: osm_watch: way id="938037386" version="1"
+#: osm_watch: way id="938037386" version="2"
 #: osm_watch: way id="868103791" version="2"
 #: last_checked: 2021-12-02
 #: check_frequency: 90d
@@ -3472,7 +3481,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677220#post677220
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1119011.php (Erwähnung)
 #: by: https://dstrctberlin.com/de/2021/10/18/auf-gute-nachbarschaft/
-#: osm_watch: way id="164816805" version="8"
+#: osm_watch: way id="164816805" version="10"
 #: priority: #C
 #: last_checked: 2021-12-30 (mapillary)
 #: check_frequency: 30d
@@ -3627,7 +3636,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2021-12-01
+#: last_checked: 2022-01-04
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -3805,7 +3814,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/ein-jahr-lang-bauarbeiten_a320747
 #: by: https://abendblatt-berlin.de/2021/08/31/berlin-mitte-an-der-stralauer-strasse-droht-dauerstau/
 #: by: https://molkenmarkt.berlin.de/webcam/ (Webcam)
-#: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00
+#: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00 (bis Ende 2022, Gesamtbaumaßnahme bis 2023)
 #: note: laut rbb nur bis 31.08.2022
 # REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
 #: last_checked: 2022-01-03 vvv

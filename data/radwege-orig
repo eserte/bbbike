@@ -697,12 +697,13 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
+#: source_id: viz2021:13.408836,52.517143,22.04.2020,15:00 (Bauarbeiten bis 30.6.2023)
 #: last_checked: 2022-01-03 vvv
 #: check_frequency: 60d vvv
-# REMOVED --- #: next_check: 2021-12-31 vvv
+#: next_check: 2023-06-30 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
 provisorische Radspuren	RW4; 10601,12521 10644,12469 10673,12434 10738,12364
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 	RW4;RW4 10601,12521 10431,12709
@@ -957,7 +958,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.461003,52.492338,30.10.2021,06:00 (Wochenendsperrung für Kfz-Verkehr)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2021-12-25
+#: last_checked: 2022-01-04
 #: check_frequency: 60d
 #: next_check: 2022-01-31
 # REMOVED --- provisorischer gemeinsamer Geh- und Radweg	RW2;
@@ -3117,9 +3118,10 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
+#: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022)
 #: last_checked: 2021-10-24 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2022-08-28 vvv
+#: next_check: 2022-02-28 vvv
 #: priority: #A vvv
 	RW8; 23451,4877 23444,4942 23433,5037 23420,5159 23404,5325
 #: by: https://www.bahninfo-forum.de/read.php?9,622793,671456#msg-671456

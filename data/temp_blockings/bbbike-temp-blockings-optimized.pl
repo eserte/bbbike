@@ -2958,9 +2958,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1610431200,
          'id' => 3322,
          'source_id' => '2147346788',
-         'text' => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 05.01.2022 17:00 Uhr ',
+         'text' => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 01.04.2022 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1641398400
+         'until' => 1648825200
        },
        undef,
        {
@@ -3473,21 +3473,33 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1648764000
        },
-       undef,
+       {
+         'data' => '# REMOVED (hier nicht mehr) --- #: note: im nördlichen Bereich zwischen Kurfürstenstr. und Ullsteinstr. nur ein kurzer Abschnitt betroffen, trotzdem ist hier alles ausnahmslos Einbahnstraße ---	q4::inwork; 8848,4683 8827,4874 8813,5004
+#: source_id: viz2021:13.379481,52.445266,04.10.2021,08:00
+#: also_indoor: traffic (H,G(falsch))
+	q4::inwork; 8881,4360 8868,4498 8867,4506 8858,4579 8848,4683
+',
+         'from' => 1633212000,
+         'id' => 3455,
+         'source_id' => 'viz2021:13.378629,52.451139,04.10.2021,08:00',
+         'text' => 'Rathausstr.: zwischen Kaiserstr. und Kurfürstenstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.10.2021 08:00 bis 06.01.2022 17:00 ',
+         'type' => 'handicap',
+         'until' => 1641484800
+       },
        undef,
        undef,
        {
          'data' => '#: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
 #: last_checked: 2022-01-01 (mapillary)
+#: next_check: 2022-03-07
 	q4::inwork; 8196,20096 8224,19977 8234,19936
 ',
-         'dont_check_date' => 1,
          'from' => 1615158000,
          'id' => 3458,
          'source_id' => 'viz2021:13.374359,52.586234,09.03.2021,07:00',
-         'text' => 'Schönholzer Weg: Richtung Süden zwischen Angerweg und Edelweißstr. gesperrt, vom 09.03.2021 07:00 bis mindestens 04.01.2022 17:00, vielleicht auch länger',
+         'text' => 'Schönholzer Weg: Richtung Süden zwischen Angerweg und Edelweißstr. gesperrt, vom 09.03.2021 07:00 bis 07.03.2022 17:00',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1646668800
        },
        undef,
        undef,
@@ -3700,6 +3712,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: source_id: viz2021:13.43916,52.54122,29.12.2021,09:14
+#: note: bei rbb seit dem 4.1.2021 entfernt
 #: also_indoor: traffic (G,H)
 	q3::inwork; 12737,15154 12870,15342
 ',

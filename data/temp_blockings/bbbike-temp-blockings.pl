@@ -32183,8 +32183,8 @@ EOF
 EOF
      },
      { from  => 1610431200, # 2021-01-12 07:00
-       until => $isodate2epoch->("2022-01-05 17:00:00"), # 1620831600, # 2021-05-12 17:00
-       text  => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 05.01.2022 17:00 Uhr ',
+       until => $isodate2epoch->("2022-04-01 17:00:00"), # 1620831600, # 2021-05-12 17:00
+       text  => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 01.04.2022 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346788',
        data  => <<EOF,
@@ -33702,8 +33702,8 @@ EOF
 EOF
      },
      { from  => 1633212000, # 2021-10-03 00:00
-       until => $isodate2epoch->("2021-12-30 17:00:00"), # 1640214000, # 2021-12-23 00:00
-       text  => 'Rathausstr.: zwischen Kaiserstr. und Kurfürstenstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.10.2021 08:00 bis 30.12.2021 17:00 ',
+       until => $isodate2epoch->("2022-01-06 17:00:00"), # 1640214000, # 2021-12-23 00:00
+       text  => 'Rathausstr.: zwischen Kaiserstr. und Kurfürstenstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.10.2021 08:00 bis 06.01.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.378629,52.451139,04.10.2021,08:00',
        data  => <<EOF,
@@ -33734,14 +33734,14 @@ EOF
 EOF
      },
      { from  => 1615158000, # 2021-03-08 00:00
-       until => undef, # 1641337200, # 2022-01-05 00:00
-       dont_check_date => 1,
-       text  => 'Schönholzer Weg: Richtung Süden zwischen Angerweg und Edelweißstr. gesperrt, vom 09.03.2021 07:00 bis mindestens 04.01.2022 17:00, vielleicht auch länger',
+       until => $isodate2epoch->("2022-03-07 17:00:00"), # undef, # 1641337200, # 2022-01-05 00:00
+       text  => 'Schönholzer Weg: Richtung Süden zwischen Angerweg und Edelweißstr. gesperrt, vom 09.03.2021 07:00 bis 07.03.2022 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.374359,52.586234,09.03.2021,07:00',
        data  => <<EOF,
 #: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
 #: last_checked: 2022-01-01 (mapillary)
+#: next_check: 2022-03-07
 	q4::inwork; 8196,20096 8224,19977 8234,19936
 EOF
      },
@@ -34223,6 +34223,7 @@ EOF
        source_id => 'https://twitter.com/VIZ_Berlin/status/1476450886004219906',
        data  => <<EOF,
 #: source_id: viz2021:13.43916,52.54122,29.12.2021,09:14
+#: note: bei rbb seit dem 4.1.2021 entfernt
 #: also_indoor: traffic (G,H)
 	q3::inwork; 12737,15154 12870,15342
 EOF
