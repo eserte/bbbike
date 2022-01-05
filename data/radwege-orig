@@ -958,7 +958,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.461003,52.492338,30.10.2021,06:00 (Wochenendsperrung für Kfz-Verkehr)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-01-04
+#: last_checked: 2022-01-05
 #: check_frequency: 60d
 #: next_check: 2022-01-31
 # REMOVED --- provisorischer gemeinsamer Geh- und Radweg	RW2;
@@ -3118,10 +3118,10 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
-#: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022)
+#: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022)
 #: last_checked: 2021-10-24 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2022-02-28 vvv
+#: next_check: 2022-08-31 vvv
 #: priority: #A vvv
 	RW8; 23451,4877 23444,4942 23433,5037 23420,5159 23404,5325
 #: by: https://www.bahninfo-forum.de/read.php?9,622793,671456#msg-671456
@@ -3553,6 +3553,8 @@ Verbundsteinpflaster	RW2; 12582,5232 12507,5228
 # 
 #: note: Blaschkoallee Richtung Osten
 	RW1; 12883,5257 12987,5263
+#: note: im Bereich der Bushaltestellen keine Leitboys
+geschützter Radstreifen, mit "Leitboys"	RW4; 12987,5263 13046,5267 13112,5253 13250,5234 13327,5234 13508,5238 13594,5240 13607,5241
 #: next_check_id: POPUPRADWEGE-2020
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
 #: by: https://leute.tagesspiegel.de/neukoelln/macher/2020/04/29/121469/nun-doch-pop-up-radwege-im-bezirk/ (entsteht hier ein Popup-Radweg?)
@@ -3564,15 +3566,13 @@ Verbundsteinpflaster	RW2; 12582,5232 12507,5228
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7549 (Forderung nach Verstetigung)
 #: by: https://www.infravelo.de/projekt/blaschkoallee/ (mittlerweile wieder gelöscht)
 #: by: http://www.infravelo.de/projekt/blaschkoallee-1/ (Beginn/Ende: 3. Quartal 2021, Verstetigung)
+#: XXX Radspur wird vermutlich "verstetigt"
 #: osm_watch: way id="451445143" version="7"
-#: last_checked: 2021-10-03 vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2022-01-05 vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
-provisorisch geschützter Radstreifen	RW4; 12987,5263 13046,5267 13112,5253 13250,5234 13327,5234 13508,5238
-#: note: im Bereich der Bushaltestelle unterbrochen
 # REMOVED --- #: XXX hier wegen Baustelle (?) keine Radspur --- #: source_id: 2147345958 (Leitungsarbeiten, bis 6.11.2020, inaktiv) --- #: source_id: 2147346600 (bis 26.3.2021) --- #: next_check: 2021-03-26
 #: osm_watch: way id="824542508" version="3"
-provisorisch geschützter Radstreifen	RW4; 13508,5238 13594,5240 13607,5241
 #: osm_watch: way id="824542507" version="4"
 provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
 # REMOVED --- #: next_check ^^^
@@ -3582,9 +3582,10 @@ provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
 	RW1; 13809,5257 13607,5241 13594,5240 13508,5238 13327,5234 13250,5234
 #: next_check_id: POPUPRADWEGE-2020
 #: XXX existierender Bürgersteigradweg wurde zugunsten des Popup-Radwegs aufgehoben
+#: XXX Radspur wird vermutlich "verstetigt"
 #: osm_watch: way id="4603499" version="34"
-#: last_checked: 2021-10-03
-#: check_frequency: 90d
+#: last_checked: 2022-01-05
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-12-31
 provisorisch geschützter Radstreifen	RW4; 13250,5234 13112,5253 13046,5267 12987,5263
 	RW1; 12987,5263 12883,5257
@@ -4173,7 +4174,7 @@ Grünmarkierung	RW4; 13891,7107 13627,7047 13500,7018 13336,6986
 Grünmarkierung	RW3; 13336,6986 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2021-11-28 vvv
+#: last_checked: 2022-01-05 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2022-12-31 vvv
 #: valid: 20140224-20221231 vvv
@@ -6693,7 +6694,8 @@ Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 neu asphaltiert	RW2; 18737,8686 18727,8634 18718,8583 18704,8427 18718,8583
 	RW6;RW6 7781,14238 7802,14250 7757,14318 7735,14305
 	RW6;RW6 7930,14060 7973,13991
-10km/h	RW6;RW6 13510,8138 13663,8011
+#: note: früher (vor 2022) 10km/h
+	RW6;RW6 13554,8101 13633,8036
 	RW6;RW6 12509,8318 12382,8292 12368,8356
 	RW3;RW3 5582,6360 5701,6386 5781,6404 5823,6413
 	RW6;RW6 7518,5753 7659,5735
@@ -6831,8 +6833,8 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2021-12-16
-#: check_frequency: 21d
+#: last_checked: 2021-12-21 (mapillary)
+#: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünmarkierung	RW3; 12522,14385 12407,14470
 #: note: am Ende fehlen ein paar Meter Grünmarkierung
@@ -6849,7 +6851,7 @@ Grünmarkierung	RW4; 12317,14535 12407,14470 12522,14385
 #: by: https://twitter.com/VIZ_Berlin/status/1402152820439138307
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-24-06-2020.pdf (Erwähnung)
 #: XXX hier wird vermutlich auch eine Grünmarkierung entstehen
-#: last_checked: 2021-12-16 vvv
+#: last_checked: 2021-12-21 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-31 vvv
 #: osm_watch: way id="335479077" version="14"
@@ -7064,6 +7066,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: by: https://www.tagesspiegel.de/berlin/sanierung-der-bvg-hochbahn-sperrung-auf-u1-und-u3-in-berlin-kreuzberg-wird-ab-freitag-ausgeweitet/27039930.html (Verstetigung ab 12.4.2021)
 #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung erst 2023)
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/pop-up-radwege-werden-dauerhaft_a332363 (2022 nur teilweise Verstetigung, fertig erst 2023)
 #: source_id: 2147340884 (inaktiv)
 #: source_id: 2147340970 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_90638 (inaktiv)

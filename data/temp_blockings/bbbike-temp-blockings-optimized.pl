@@ -3733,6 +3733,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Waitzstr.: Baustelle, gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.01.2022 bis 31.12.2022 ',
          'type' => 'gesperrt',
          'until' => 1672527600
+       },
+       {
+         'data' => '#: also_indoor: traffic
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2022-01-05
+	q4::inwork 13355,6235 13227,6209 13220,6237
+',
+         'from' => undef,
+         'id' => 3496,
+         'text' => 'Jahnstr. und Priesterweg: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

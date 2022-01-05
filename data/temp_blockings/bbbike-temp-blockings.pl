@@ -33719,7 +33719,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: XXX Wird nach den Bauarbeiten die Qualität der Fahrbahn besser sein? (jetzt: Q1) --- #: osm_watch: way id="10686356" version="19" --- #: also_indoor: traffic (none) --- #: last_checked: 2021-11-13
-	q4::inwork 13510,8138 13663,8011
+	q4::inwork 13510,8138 13554,8101 13633,8036 13663,8011
 EOF
      },
      { from  => $isodate2epoch->("2021-11-22 00:00:00"), # undef, # 
@@ -34236,6 +34236,17 @@ EOF
        data  => <<EOF,
 #: note: vermutlich nur im Bereich Sybelstr. 14
 	2::inwork 3726,10757 3731,10640 3764,10580 3883,10585
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Jahnstr. und Priesterweg: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2022-01-05
+	q4::inwork 13355,6235 13227,6209 13220,6237
 EOF
      },
     );
