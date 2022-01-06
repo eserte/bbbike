@@ -2556,7 +2556,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        {
          'data' => '#: next_check_id: VOLTAIRE-2019
-#: osm_watch: way id="194962398" version="13"
+#: osm_watch: way id="194962398" version="14"
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
@@ -3276,7 +3276,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2021-12-30
+#: last_checked: 2022-01-06
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -3473,19 +3473,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1648764000
        },
-       {
-         'data' => '# REMOVED (hier nicht mehr) --- #: note: im nördlichen Bereich zwischen Kurfürstenstr. und Ullsteinstr. nur ein kurzer Abschnitt betroffen, trotzdem ist hier alles ausnahmslos Einbahnstraße ---	q4::inwork; 8848,4683 8827,4874 8813,5004
-#: source_id: viz2021:13.379481,52.445266,04.10.2021,08:00
-#: also_indoor: traffic (H,G(falsch))
-	q4::inwork; 8881,4360 8868,4498 8867,4506 8858,4579 8848,4683
-',
-         'from' => 1633212000,
-         'id' => 3455,
-         'source_id' => 'viz2021:13.378629,52.451139,04.10.2021,08:00',
-         'text' => 'Rathausstr.: zwischen Kaiserstr. und Kurfürstenstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.10.2021 08:00 bis 06.01.2022 17:00 ',
-         'type' => 'handicap',
-         'until' => 1641484800
-       },
+       undef,
        undef,
        undef,
        {
@@ -3701,6 +3689,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: source_id: viz2021:13.3156,52.4588,27.12.2021,15:34 (hier kein Endedatum)
 #: by: https://viz.berlin.de/2021/12/grunewaldstrasse/
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/grunewaldstrasse-nach-rohrbruch-wohl-bis-ende-januar-gesperrt_a332651
+#: note: auch laut rbb bis Ende Januar
 	q3::inwork 4520,5793 4671,5697
 ',
          'from' => 1640808198,

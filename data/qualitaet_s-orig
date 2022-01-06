@@ -3944,7 +3944,6 @@ Agnes-von-Zahn-Harnack-Str.: Kopfsteinpflaster	Q2 7795,13093 7867,13127 7938,131
 Katharina-Paulus-Str.: Kopfsteinpflaster	Q2 7867,13106 7867,13127
 Priesterweg (Britz): sehr schlechtes Kopfsteinpflaster	Q3- 13227,6209 13220,6237 13239,6344
 Mackenroder Weg: schlechtes Kopfsteinpflaster, mit einigen Asphaltflicken	Q3 12805,6248 12833,6127
-#: note: aus dem Auto gesehen
 Otto-Krüger-Zeile: Asphalt	Q0 17456,7132 17484,7087 17552,6959 17574,6908
 Rampe: asphaltiert	Q0 4206,12691 4234,12710
 #: note: "gelber Asphalt"
@@ -4056,8 +4055,10 @@ Treptower Park: wassergebundene Decke	Q1 14475,9199 14531,9244
 Treptower Park: wassergebundene Decke	Q1 14531,9244 14655,9311 14673,9353 14669,9389 14635,9441
 Treptower Park: wassergebundene Decke	Q1 14719,9419 14774,9437 14809,9466
 Treptower Park: Mosaikpflaster	Q1 14488,9848 14460,9814 14436,9784 14361,9772
-Treptower Park: Asphalt	Q0 15190,9027 15214,9090 15185,9189
-Treptower Park: wassergebundene Decke	Q1 14889,9381 15003,9337 15185,9189 15275,9140 15359,9131 15407,9151
+Treptower Park: Asphalt	Q0 15190,9027 15214,9090 15183,9186
+Treptower Park: wassergebundene Decke	Q1+ 14889,9381 15003,9337 15163,9200
+Treptower Park: Kleinsteinpflaster	Q1- 15163,9200 15183,9186 15213,9166
+Treptower Park: wassergebundene Decke	Q1+ 15213,9166 15275,9140 15359,9131 15407,9151
 (Neue Krugallee/Bulgarische Str. - Karpfenteich): Schotterweg	Q2+ 15558,8820 15439,8839 15297,8921 15245,8916
 (Neue Krugallee/Bulgarische Str. - Karpfenteich): Asphalt	Q0 15245,8916 15223,8893
 Heylstr: Asphalt	Q0 6181,8181 6246,8222 6313,8254 6385,8274 6459,8281 6552,8281
@@ -17927,7 +17928,7 @@ Am Kesselpfuhl: Verbundsteinpflaster	Q1 3915,20711 3954,20574 3994,20508 4041,20
 #: by: anna (w/o mail): vvv
 #: corrected_by: srt (westl. Abschnitt mit AS)
 Helmholtzstr. (Oberschöneweide): Asphalt	Q0 17359,6799 17459,6854
-#: confirmed_by: mapillary
+#: confirmed_by: mapillary, srt
 Helmholtzstr. (Oberschöneweide): gutes Kopfsteinpflaster	Q1- 17459,6854 17574,6908 17632,6930
 #: corrected_by: mapillary (gutes Kopfsteinpflaster, Q1 -> ...)
 Helmholtzstr. (Oberschöneweide): schlechtes Kopfsteinpflaster	Q3 17632,6930 17763,6960
@@ -30539,4 +30540,5 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 15649,10922
 Kreuzungsbereich mit Kopfsteinpflaster	Q2- 18215,18629
 Kreuzungsbereich asphaltiert	Q0 13341,7423
 Kreuzungsbereich asphaltiert	Q0 13331,8283
+Einmündungsbereich mit Kleinsteinpflaster	Q1- 15183,9186
 #: ignore ^^^
