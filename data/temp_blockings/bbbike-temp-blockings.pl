@@ -30851,7 +30851,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2021-12-28
+#: last_checked: 2022-01-07
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31070,7 +31070,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2022-01-02 vvv
+#: last_checked: 2022-01-07 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33210,7 +33210,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-01-06
+#: last_checked: 2022-01-07
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33823,7 +33823,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="1003079755" version="4"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-12-27
+#: last_checked: 2022-01-07
 #: check_frequency: 14d
 	q3::inwork; 16192,10907 16153,10818
 EOF
@@ -34218,13 +34218,14 @@ EOF
 EOF
      },
      { from  => 1640894267, # 2021-12-30 20:57
-       until => 1643670000, # 2022-02-01 00:00
-       text  => 'Greifswalder Str.: vor der Kreuzung Thomas-Mann-Str. Wasserrohrbruch, Fahrbahn gesperrt, evtl. gibt es Beeinträchtigungen für Radfahrer, bis Januar 2022',
+       until => $isodate2epoch->("2022-01-14 08:00:00"), # 1643670000, # 2022-02-01 00:00
+       text  => 'Greifswalder Str.: vor der Kreuzung Thomas-Mann-Str. Wasserrohrbruch, Fahrbahn gesperrt, evtl. gibt es Beeinträchtigungen für Radfahrer, voraussichtlich bis 14.01.2022',
        type  => 'handicap',
        source_id => 'https://twitter.com/VIZ_Berlin/status/1476450886004219906',
        data  => <<EOF,
 #: source_id: viz2021:13.43916,52.54122,29.12.2021,09:14
 #: note: bei rbb seit dem 4.1.2021 entfernt
+#: by: https://twitter.com/VIZ_Berlin/status/1479526789810692104 (bis 14.1.2022)
 #: also_indoor: traffic (G,H)
 	q3::inwork; 12737,15154 12870,15342
 EOF
@@ -34248,6 +34249,17 @@ EOF
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2022-01-05
 	q4::inwork 13355,6235 13227,6209 13220,6237
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Robert-Uhrig-Str.: zwischen Rummelsburger Str. und Zachertstr. Bauarbeiten, Richtung Norden gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (G)
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2022-01-07
+	q4::inwork; 17719,11092 17725,11228
 EOF
      },
     );

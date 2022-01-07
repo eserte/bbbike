@@ -448,14 +448,18 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 ### Karlshorst ###
 # 
 #: XXX nach den Bauarbeiten den alten Eintrag für die Wildensteiner Str. wieder aktivieren!
-#: also_indoor: traffic (G) vvv
+#: add_fragezeichen: Sind die Bauarbeiten an der Einmündung Wandlitzstr./Wildensteiner Str. beendet? vvv
+#: also_indoor: traffic (ex-G) vvv
 #: last_checked: 2021-11-16 vvv
 #: check_frequency: 60d vvv
+#: next_check: 2022-01-01 vvv
 Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18557,8525 18627,8475 18704,8427
 Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18627,8475 18528,8331
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
+#: add_fragezeichen ^^^
 # 
 # REMOVED --- #: XXX nach den Bauarbeiten vermutlich bessere Qualität --- #: last_checked: 2016-12-10 --- Andernacher Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 19155,8631 19249,8662
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 vvv --- #: osm_watch: way id="580512810" version="4" --- #: osm_watch: way id="580508096" version="6" --- #: also_indoor traffic vvv --- #: last_checked: 2019-05-21 vvv --- #: next_check: 2019-06-10 vvv --- #: valid: -20201231 vvv --- #: priority: #A vvv
@@ -713,7 +717,7 @@ Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Um
 #: osm_watch: way id="1002249853" version="1"
 #: osm_watch: way id="198589916" version="8"
 #: osm_watch: way id="198589913" version="6"
-#: last_checked: 2021-12-27 vvv
+#: last_checked: 2022-01-07 vvv
 #: check_frequency: 14d vvv
 Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q1::inwork; 15932,10830 15681,10801
 # REMOVED --- Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851
@@ -1891,7 +1895,7 @@ Maselakepark: Fußgänger	q1 -2587,16600 -2632,16347
 Nordhafen: Fußgänger	q1 -2477,16351 -2510,16357 -2632,16347 -2779,16330 -2980,16401 -2972,16420
 (Grünheider Weg - Fredersdorfer Weg): starker Anstieg, nicht für Fahrräder geeignet	q4 30867,3806 30862,3816 30849,3843 30823,3866
 Seidenbienenweg: sehr eng	q4 31914,2767 31909,2802 31884,2841
-(entlang des Tränkegrabens): Fußgänger, Radfahren erlaubt	q2+ 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158 17157,10173 17143,10186 17144,10297 17163,10374 17239,10632 17249,10651 17255,10662 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584 18034,10567 18059,10556 18150,10543
+(entlang des Tränkegrabens): Fußgänger, Radfahren erlaubt	q2+ 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164 17157,10173 17143,10186 17144,10297 17163,10374 17239,10632 17249,10651 17255,10662 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584 18034,10567 18059,10556 18150,10543
 Hortensienplatz: einige Fußgänger, Bordsteine	q3 4156,4784 4121,4841 4116,4850
 #: note: früher q2
 (Lustgarten entlang des Spreekanals): Fußgänger	q3 10063,12438 9956,12617 9948,12631
@@ -3816,6 +3820,8 @@ Hans-Baluschek-Park: enge Rampe, Fußgänger	q2 7252,6080 7278,6101
 (provisorischer Weg zum Golda-Meir-Steg): Fußgänger	q3 7818,14185 7861,14133
 Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
 (Wilhelmine-Duncker-Str. - Grünzug am Falkenberg): schmal, einige Fußgänger	q2 21440,300 21435,323
+#: note: Fußgängerzone, Radfahrer frei
+(Dolgenseestr., Fußgängerzone): Fußgänger	q3+ 17457,10083 17384,9807
 # 
 ######################### User Contributions #################################
 # 

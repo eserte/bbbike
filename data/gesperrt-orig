@@ -3349,6 +3349,7 @@ Pionierweg: wegen Bauarbeiten gesperrt	2::inwork 15714,8633 15772,8667 15922,871
 Verlängerung Zwieseler Str.: Baustellenabsperrung	2::inwork 19705,9039 19638,9070
 # 
 #: next_check_id: WANDLITZ-2021
+#: also_indoor: traffic
 #: last_checked: 2021-10-10
 #: check_frequency: 90d
 Wandlitzstr.: in Höhe Lehndorffstr. ist die Fahrbahn gesperrt	1s:q4:inwork 18401,8636 18448,8602
@@ -3474,7 +3475,7 @@ Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
 #: osm_watch: way id="610818155" version="4"
-#: last_checked: 2021-12-27
+#: last_checked: 2022-01-07
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 

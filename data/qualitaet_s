@@ -3701,7 +3701,7 @@ Brückenstr. (Rahnsdorf): Asphalt	Q0 29609,4049 29568,4098 29524,4208
 (Fürstenwalder Damm - Brückenstraßenbrücke): unbefestigter Weg, sandige Stellen	Q3 29653,4490 29635,4455 29630,4419 29613,4371
 (entlang des Fließes): unbefestigter Weg	Q2 29714,4461 29695,4434 29656,4431 29613,4371 29616,4311 29571,4256 29515,4227 29446,4193 29354,4062 29232,3991
 (entlang des Tränkegrabens): Asphalt	Q0 16900,9861 17005,9953 17041,9985 17078,10038
-(entlang des Tränkegrabens): Beton	Q0 17078,10038 17138,10109 17154,10158 17157,10173 17143,10186 17144,10297 17163,10374
+(entlang des Tränkegrabens): Beton	Q0 17078,10038 17138,10109 17156,10164 17157,10173 17143,10186 17144,10297 17163,10374
 (entlang des Tränkegrabens): Beton/Asphalt	Q0 17163,10374 17239,10632 17249,10651 17255,10662
 (entlang des Tränkegrabens): Beton	Q0 17255,10662 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584 18034,10567 18059,10556 18150,10543
 (Baikalstr. - Tränkegraben): asphaltiert	Q0 17284,10616 17294,10632 17249,10651
@@ -4891,12 +4891,13 @@ Vogesenstr.: unbefestigte Straße	Q2 13351,21239 13368,21142
 Elsa-Rendschmidt-Weg: Asphalt	Q0 -1749,11403 -1711,11452 -1687,11458 -1663,11487 -1627,11465 -1593,11507 -1635,11535 -1750,11719
 Rollbergstr.: glatte Pflasterung	Q0 12147,8117 12226,8137 12295,8154
 (Werbellinstr. 50 - Rollbergstr.): glatte Pflasterung	Q0 12311,8084 12295,8154 12282,8204
-Michiganseestr.: Asphalt	Q0 17081,10415 17042,10269
-Michiganseestr.: Beton	Q0 17042,10269 17025,10193
-Dolomitenstr.: Beton	Q0 17025,10193 17154,10158 17328,10112 17567,10055
-Dolgenseestr.: Beton	Q0 17025,10193 17018,10122 17035,10079 17078,10038 17288,9952
+Michiganseestr.: Asphalt	Q0; 17042,10269 17081,10415
+Michiganseestr.: Asphalt/Beton	Q0; 17081,10415 17042,10269
+Michiganseestr.: Beton	Q0 17042,10269 17026,10199
+Dolomitenstr.: Beton	Q0 17026,10199 17156,10164 17330,10117 17457,10083 17567,10055
+Dolgenseestr.: Beton	Q0 17026,10199 17018,10122 17035,10079 17078,10038 17288,9952
 Dolgenseestr.: Beton	Q0 17273,9880 17275,9892 17288,9952
-Dolgenseestr.: Asphalt und Beton mit einigen Hebungen	Q1 17288,9952 17328,10112
+Dolgenseestr.: Asphalt und Beton mit einigen Hebungen	Q1 17288,9952 17330,10117
 Upsalaer Str.: Kopfsteinpflaster	Q2 11369,16744 11364,16887
 Obernburger Weg: Kopfsteinpflaster	Q2 11686,17710 11700,17629
 Obernburger Weg: Beton	Q0 11700,17629 11711,17569
@@ -10416,7 +10417,8 @@ Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1 19649,13481 1
 (Weg am Westhafenkanal - Tegeler Weg): feiner Schotter	Q1 2899,13934 2895,13869 2957,13796 2984,13789
 (Weg am Westhafenkanal - Tegeler Weg): feiner Schotter, Beton	Q1 2895,13869 2913,13919 2935,13927
 Schulstr. (Staaken): unbefestigte Straße	Q2 -8180,13453 -8279,13433
-Boxhagener Str.: Asphalt mit einigen Schäden	Q0 14799,11330 14918,11249
+Boxhagener Str.: Asphalt mit einigen Schäden	Q1; 14799,11330 14918,11249
+Boxhagener Str.: Asphalt mit einigen Schäden	Q0; 14918,11249 14799,11330
 Scharounplatz: Betonpflaster	Q0 8083,11381 7943,11431
 Wilhelm-Caspar-Wegely-Platz: Kleinpflastersteine	Q1 5627,12105 5621,12150
 Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0 5621,12150 5606,12232 5604,12244
@@ -10811,6 +10813,7 @@ Golda-Meir-Steg: Kopfsteinpflaster	Q2 7962,14198 7968,14202
 (Wilhelmine-Duncker-Str. - Grünzug am Falkenberg): wassergebundene Decke	Q1 21440,300 21435,323
 Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
 (Demminer Str. - Am Gutshof): Betonpflaster	Q0 17797,18675 17813,18726
+(Dolgenseestr., Fußgängerzone): Betonpflaster	Q0 17457,10083 17384,9807
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

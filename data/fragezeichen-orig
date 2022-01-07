@@ -1765,7 +1765,7 @@ Brauerstr.: evtl. wird hier die Einbahnstraßenregelung für Radfahrer aufgehoben	
 # REMOVED (done) --- Brauerstr.: Asphaltierung	? 5159,2176 4979,1964
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/214 (Erneuerung des Fahrbahnbelags)
-#: by: http://www.infravelo.de/projekt/koenigsweg/ (Asphaltierung, in Planung, 3. Quartal 2021 - 3. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/koenigsweg/ (Asphaltierung, in Planung, 3. Quartal 2021 - 3. Quartal 2022) (mittlerweile gelöscht)
 #: osm_watch: way id="47574921" version="12"
 #: osm_watch: way id="119024153" version="7"
 #: last_checked: 2021-04-28
@@ -2784,7 +2784,7 @@ Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::
 #: by: https://abendblatt-berlin.de/2020/05/15/neukoelln-weserstrasse-fuer-radler-ausbauen/
 #: by: http://www.infravelo.de/projekt/weserstrasse-und-ederstrasse/ (hier wird auch die Ederstr. erwähnt, außerdem: modale Filter, 2. Quartal 2021 - 4. Quartal 2022) (mittlerweile Ende: 1. Quartal 2024) (mittlerweile gelöscht und durch drei Teilprojekte ersetzt, siehe unten)
 #: by: http://www.infravelo.de/projekt/weserstrasse-bauabschnitt-1/ (2. Quartal 2021 - 2. Quartal 2022)
-#: by: http://www.infravelo.de/projekt/weserstrasse-bauabschnitt-2/ (2. Quartal 2022 - 1. Quartal 2023)
+#: by: http://www.infravelo.de/projekt/weserstrasse-bauabschnitt-2/ (2. Quartal 2022 - 1. Quartal 2023) (mittlerweile gelöscht)
 #: by: https://www.infravelo.de/projekt/weserstrasse-und-ederstrasse/ (2. Quartal 2021 - 1. Quartal 2024)
 #: by: https://www.kms-sonne.de/assets/2020/06/Karlson_Ausgabe7_2020_web.pdf (Diagonalstr. an Weichsel- und Roseggerstr. geplant)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1100616.php (zwischen Pannierstraße und Fuldastraße bis Ende 2021)
@@ -3479,6 +3479,8 @@ Bebauungsplan 3-65 ("Grundschule Heinersdorfer Straße"): Fußgänger- und Radfahre
 # - XXX_prog- und XXX_indoor-Einträge
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1164139.php (12. Januar 2022 bis voraussichtlich bis April 2022)
+#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/bauarbeiten-auf-dem-tegeler-weg_a332945
+#: by: https://berliner-abendblatt.de/2022/01/07/bauarbeiten-am-tegeler-weg/
 #: next_check: 2022-04-15
 Tegeler Weg: Ausbau des Radwegs (Richtung Norden? Beide Richtungen?)	?::projected 3005,13728 2984,13789 2935,13927
 # 
@@ -3547,7 +3549,7 @@ Zillestr./Krumme Str.: Planung einer Fahrradstraße, wo genau?	?::projected 3801,
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/boulevard-unter-den-linden-soll-autofrei-werden_a321794
 #: by: https://www.berliner-zeitung.de/mensch-metropole/unter-den-linden-wird-zur-baustelle-in-mitte-geht-eine-aera-zu-ende-li.190324?pid=true
 #: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022)
-#: last_checked: 2021-12-23
+#: last_checked: 2022-01-05 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2022-07-01
 Unter den Linden: temporäre Umgestaltung, eine besondere Fahrspur für Radfahrer entsteht	?::projected 8804,12280 9028,12307 9141,12320 9358,12351 9475,12365 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431
@@ -3736,7 +3738,7 @@ Ungarnstr.: Fahrradstraße soll entstehen	?::projected 6843,16346 7056,16587 7106
 # REMOVED (weitgehend markiert, nur die letzten Meter am Groß-Berliner Damm fehlen) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf (Übergabe der Verkehrsflächen im Oktober 2020) --- #: XXX wann sind sie fertig? (bei osm bereits eingetragen) --- #: last_checked: 2020-09-04 --- #: next_check: 2020-10-01 --- Benno-König-Str.: Radspuren werden markiert	?::inwork 18596,4517 18434,4363 18374,4307
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf
-#: last_checked: 2021-12-23 vvv
+#: last_checked: 2022-01-05 (mapillary) vvv
 # REMOVED --- #: next_check: 2020-09-28 vvv
 Bodestr.: in Zukunft nur für Rad- und Fußverkehr offen	? 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
 Am Lustgarten: in Zukunft nur für Rad- und Fußverkehr offen	? 10054,12699 10094,12635
@@ -4618,7 +4620,7 @@ Paulsborner Str./Nestorstr.: Zebrastreifen geplant	?::projected 3315,9720 3340,9
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Finanzierung 2020)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: priority: #D
-#: last_checked: 2021-11-02
+#: last_checked: 2022-01-07
 #: check_frequency: 60d
 Sewanstr. östlich der B.-Grzimek-Schule: Zebrastreifen geplant (oder ist der schon realisierte Zebrastreifen weiter südöstlich gemeint?)	?::projected 17778,10123 17905,10122 17795,10177
 # 
@@ -4980,7 +4982,7 @@ Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="13"
 #: also_indoor: traffic
-#: last_checked: 2021-11-09 (traffic)
+#: last_checked: 2022-01-07 (traffic)
 #: check_frequency: 60d
 Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
 # 
@@ -5059,7 +5061,7 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8708
 #: XXX während der Bauarbeiten Einbahnstraßenregelung --- was wird das für den Radverkehr bedeuten? -> siehe temp blockings
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2022-01-06
+#: last_checked: 2022-01-07
 #: check_frequency: 90d
 #: next_check: 2022-04-29
 Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,10738
@@ -5153,7 +5155,7 @@ Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht 
 #: check_frequency: 90d
 Lindenberger Str.: Was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18106,19353 18119,19400 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
 #: osm_watch: way id="25760211" version="10"
-#: last_checked: 2021-10-18
+#: last_checked: 2022-01-07
 #: check_frequency: 90d
 Eggersdorfer Str.: Asphaltierung	?::projected 17255,11077 17322,11296
 #: XXX wird hier eine offizielle Führung von der Kreuzung Malchower Str./Wartenberger Str. realisiert? (dann könnte man den handicap-Eintrag (Bordsteinkante) entschärfen)
@@ -5408,6 +5410,7 @@ Rohrwallallee - Windwallstr.: Asphaltstreifen soll eingerichtet werden	?::projec
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6832 (Antrag: Tempo 30 gefordert)
 #: by: https://www.meinetram.de/de/Wir-machen-den-Sued-Osten-fit
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/protokoll-18-ag-radverkehr_24-02-2021.pdf (Erwähnung)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1164852.php
 #: osm_watch: way id="11389403" version="40"
 #: last_checked: 2021-12-17
 #: check_frequency: 360d
@@ -6116,7 +6119,7 @@ Spandauer Damm: hier ist eine Radspur geplant	?::projected; 2411,12428 2641,1245
 #: by: https://www.eba.bund.de/SharedDocs/Anhoerungsverfahren/DE/Berlin/2021/0426_Anhoerung_Lichtenberger_Bruecken.html
 #: XXX während der Bauzeit (Bauvorbereitungen ab 01/2023, Bazueit 06/2023-12/2024, Restleistungen bis 06/2025) werden abwechselnd Hauffstr. und Am Alten Lokschuppen gesperrt vvv
 #: XXX außerdem sind kurzzeitige Sperrungen an den Brücken geplant: Kaskelstr., Archibaldweg, Nöldnerstr.
-#: last_checked: 2021-12-15 vvv
+#: last_checked: 2022-01-07 vvv
 #: next_check: 2023-06-01 vvv
 Hauffstr.: bauzeitliche Sperrung geplant	? 15578,11241 15620,11210 15694,11125 15740,11028 15756,10966
 Am Alten Lokschuppen: bauzeitliche Sperrung geplant	? 15708,11193 15752,11115 15805,10949
