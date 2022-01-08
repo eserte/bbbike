@@ -1354,6 +1354,14 @@ Mühsamstr.	1 13818,12897 13844,12900
 Lilli-Henoch-Str.	1s:q3 12357,15020 12388,14926
 (Weydemeyerstr.): durch Tore abgesperrt	2 11933,12701 11971,12785
 Falkenberger Chaussee: Straßenbahntrasse, Mittelstreifen	3nocross 17400,17790 17482,17844 17601,17922 17675,17971
+# 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
+#: note: permanenter Zaun
+#: osm_watch: way id="722664473" version="2"
+#: osm_watch: node id="6778873745" version="1"
+# REMOVED --- #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen --- #: last_checked: 2021-12-27 --- #: check_frequency: 30d
+(An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
+# 
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3437,7 +3445,7 @@ Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 153
 (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2021-12-04 vvv
+#: last_checked: 2022-01-08 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-01-31 vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -3458,7 +3466,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen, sollte ein Teilabschnitt der Straße endgültig verschwinden
 #: XXX mittlerweile (April 2021) wurde der südliche Teil schon weggebaggert
 #: osm_watch: way id="25008069" version="15"
-#: last_checked: 2021-12-12 (architektur-urbanistik)
+#: last_checked: 2022-01-08
 #: check_frequency: 60d
 # REMOVED (hier ist nichts mehr) --- Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881
 Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11923,11881 11940,11982
@@ -3577,7 +3585,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: osm_watch: way id="229647788" version="8"
 #: osm_watch: way id="850453338" version="5"
-#: last_checked: 2021-10-30
+#: last_checked: 2021-12-15 (krickstadt)
 #: check_frequency: 120d
 #: next_check: 2022-11-01
 # REMOVED (Hochbauarbeiten dauern länger) --- #: next_check: 2021-10-31
@@ -3719,7 +3727,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2021-11-15 (daf)
+#: last_checked: 2022-01-08
 #: check_frequency: 60d
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833
 # 
@@ -3733,15 +3741,6 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 # 
 # REMOVED (beendet, etwas besser) --- #: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität des Wegs danach besser sein? --- #: last_checked: 2019-12-29 --- #: check_frequency: 21d --- (Stresemannstr. - Wilhelmstr.): Bauarbeiten, komplett gesperrt	2::inwork 9215,10607 9368,10641
-# 
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
-#: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
-#: osm_watch: way id="722664473" version="2"
-#: osm_watch: node id="6778873745" version="1"
-#: last_checked: 2021-12-27
-#: check_frequency: 30d
-(An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
-# 
 # REMOVED --- #: last_checked: 2021-07-26 --- #: check_frequency: 60d --- Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10804,12461 10804,12461
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9747
@@ -3899,7 +3898,7 @@ Ringelblumenweg: Bauarbeiten, Straße gesperrt	2::inwork 21595,271 21618,193
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_17_1305_1380_online.pdf (Einziehung)
 #: XXX wann wird die Straße wieder geöffnet? --- vermutlich nie, sollte man also entfernen?
 #: osm_watch: node id="791819743" version="4"
-#: last_checked: 2021-09-11
+#: last_checked: 2021-10-02 (mapillary)
 #: check_frequency: 120d
 Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,8278
 # 
@@ -4418,7 +4417,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="5"
-#: last_checked: 2021-12-04 vvv
+#: last_checked: 2022-01-08 vvv
 #: check_frequency: 60d vvv
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 Margarete-Steffin-Str.: Einbahnstraßenregelung	1s:q4:inwork 8559,12912 8631,12848 8700,12810 8732,12804
@@ -4673,7 +4672,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-106/download/210225_Planzeichnung_1-106.pdf (verkehrsberuhigter Bereich)
 #: osm_watch: way id="257432926" version="7"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2021-10-13
+#: last_checked: 2022-01-08
 #: check_frequency: 150d
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754
 # REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731

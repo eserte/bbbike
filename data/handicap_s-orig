@@ -250,7 +250,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/volt-berlin-baufeld-e3a.312/page-8#post-14027
 #: XXX Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straße, Fahrbahn ist noch abgesperrt
-#: last_checked: 2021-12-22
+#: last_checked: 2022-01-08
 #: check_frequency: 60d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
@@ -369,7 +369,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2021-12-23 vvv
+#: last_checked: 2022-01-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -582,12 +582,12 @@ Matthäikirchplatz: wegen Bauarbeiten am Museum der Moderne mögliche Behinderunge
 #: source_id: viz2021:13.329043,52.505488,12.03.2021,09:00 (bis 5.3.2022) (inaktiv)
 #: source_id: viz2021:13.32784,52.505061,22.12.2021,06:00 (bis 5.3.2022)
 #: XXX evtl. sind die Einschränkungen auf der Nordseite aufgehoben?
-#: last_checked: 2021-10-19
+#: last_checked: 2022-01-08
 #: check_frequency: 90d
-# REMOVED --- #: next_check: 2022-03-05
-#: next_check: 2021-12-22
+#: next_check: 2022-03-05
 #: valid: -20220305
-Fasanenstr.: Engstelle in Höhe Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5241,11060 5236,10994 5230,10919
+# REMOVED (hier nicht mehr) --- Fasanenstr.: Engstelle in Höhe Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5241,11060 5236,10994
+Fasanenstr.: Engstelle südliche de Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5236,10994 5230,10919
 # 
 # REMOVED (aufgehoben) --- #: next_check_id: ENGLISCHESTR-2017 --- #: osm_watch: way id="503096340" version="3" --- #: source_id: LMS-BR_r_LMS-BR_121156_LMS-BR_72 --- #: XXX laut fritz bis 2019-04-30 --- #: also_indoor: traffic (H) --- #: last_checked: 2019-09-08 --- #: check_frequency: 60d --- Englische Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 5417,11949 5518,12159
 # REMOVED (offen) --- #: next_check_id: ENGLISCHESTR-2017 --- #: last_checked: 2019-10-30 --- Wegelystr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 5712,12033 5775,11975
