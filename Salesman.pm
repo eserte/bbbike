@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2003,2006,2013,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2003,2006,2013,2021,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -69,6 +69,9 @@ sub add_point {
 	my $new_point = $point;
 	if (!$self->{Net}->reachable($point)) {
 	    $new_point = $self->{AddNewPoint}->($self->{Net}, $point);
+	    if (!$new_point || !$self->{Net}->reachable($new_point)) {
+		die "Point '$point' is not reachable";
+	    }
 	}
 	if ($at_beginning) {
 	    unshift @{ $self->{ProcessPoints} }, $new_point;

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2008,2013,2017,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2008,2013,2017,2021,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -232,6 +232,9 @@ sub itembutton {
     my($xx, $yy) = ($c->canvasx($e->x), $c->canvasy($e->y));
     if ($salesman->add_point(join(",", main::anti_transpose($xx, $yy)))) {
 	main::set_flag('start', $xx, $yy, "leaveold");
+	main::status_message(M("Punkt hinzugefügt"), "info");
+    } else {
+	main::status_message(M("Punkt ist nicht im Straßennetz erreichbar"), "info");
     }
     Tk->break;
 }
