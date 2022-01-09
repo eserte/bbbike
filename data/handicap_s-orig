@@ -192,7 +192,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
 #: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2021-12-30 (mapillary)
+#: last_checked: 2022-01-07 (mapillary)
 Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -388,7 +388,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # REMOVED (by wosch) --- #: osm_watch: way id="4597205" version="6" --- Tieckstr.: Einbahnstraﬂe zwischen Borsigstr. und Gartenstr. (Bauarbeiten)	q3::inwork; 9376,13765 9510,13823 
 # REMOVED (Fahrbahn wieder befahrbar) --- #: next_check_id: VOSSSTR-2014 vvv --- #: source_id: INKO_113363 vvv --- #: XXX laut INKO_113363 bis Ende September 2014 gesperrt vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0206-quartier-am-leipzigerplatz.html --- #: by: http://www.tagesspiegel.de/berlin/einkaufszentrum-am-leipziger-platz-in-berlin-mitte-mall-of-berlin-eroeffnet-am-25-september/10340428.html --- #: osm_watch: way id="197160274" version="1" vvv --- #: last_checked: 2014-09-13 vvv --- #: next_check: 2014-09-25 vvv --- Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich, eng	q4::inwork 8743,11663 8837,11676 --- Voﬂstr.: gesperrte Fahrbahn (Baustelle), Ausweichen auf Gehweg mˆglich	q3::inwork 8837,11676 9000,11727
 # REMOVED (geht noch weiter) --- : XXX http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/ai_saarbr__cker_stra__e.pdf?start&ts=1373539007&file=ai_saarbr__cker_stra__e.pdf (bis Dezember 2013)
-# REMOVED (fertig) --- #: last_checked: 2015-01-30 --- Saarbr¸cker Str.: Einbahnstraﬂenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11134,13820 11250,13655
+# REMOVED (fertig) --- #: last_checked: 2015-01-30 --- Saarbr¸cker Str.: Einbahnstraﬂenregelung wegen Baustelle, ggfs. auf Gehweg ausweichen	q3::inwork; 11116,13830 11250,13655
 # REMOVED (Bauarbeiten fertig) --- Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10822,14179 10755,14067
 # REMOVED (noch nicht ganz fertig, im S¸den noch kurze Baustelle, umgedrehte Einbahnstraﬂenregelung, lohnt aber nicht) ---  #: last_checked: 2015-04-09 vvv --- Christinenstr.: Einbahnstraﬂenregelung wegen Baustelle	q4::inwork; 10688,13963 10639,13864 10599,13775 10569,13719 --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: SCHWEDTER-2014 vvv --- #: last_checked: 2015-08-11 vvv --- # REMOVED --- Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10567,14337 10530,14452 --- Schwedter Str.: Bauarbeiten an der Kastanienallee, Fahrbahn gesperrt	q2::inwork 10530,14452 10506,14521
@@ -872,7 +872,7 @@ Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr., Gehweg benutzen	q4+::inwor
 # REMOVED (fertig) --- #: last_checked: 2020-12-30 --- Charlottenburger Str.: Einbahnstraﬂenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
 # 
 #: add_fragezeichen: Bis wann dauern die Bauarbeiten an?
-#: last_checked: 2021-10-08
+#: last_checked: 2022-01-09
 #: check_frequency: 90d
 Charlottenburger Str.: Einbahnstraﬂenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
 # 
@@ -2570,7 +2570,7 @@ Eyke-von-Repkow-Platz: einige Fuﬂg‰nger, Bordsteine	q3 5556,12536 5531,12501
 (Rhinstr. - Am M¸hlenberg): einige Fuﬂg‰nger, Rampe	q1- 18215,11690 18242,11793 18258,11827
 (Kolonie Sanssouci): einige Fuﬂg‰nger	q1 16488,10381 16375,10545 16288,10637 16265,10628 16246,10641
 (Kolonie Sanssouci): einige Fuﬂg‰nger	q1 16288,10637 16265,10681
-M¸ggelstr., Hausdurchfahrt: einige Fuﬂg‰nger	q3 14837,11706 14856,11740
+M¸ggelstr., Hausdurchfahrt: einige Fuﬂg‰nger	q3 14837,11706 14858,11744
 (Bushaltestelle und Straﬂenbahnwendestelle Schˆneweide): Bus- und Straﬂenbahnverkehr	q2 17736,5441 17675,5521
 (Frˆbel-Kindergarten - Oststr.): Fuﬂg‰nger, Kindergarten	q3 17416,5388 17455,5355
 #: XXX_prog: BS (2x)
@@ -3277,7 +3277,7 @@ Nˆldnerplatz [Nˆldnerstr. - Schlichtallee]: einige Fuﬂg‰nger	q1 15932,10830 1597
 Wadzeckstr. - Mollstr.: einige Fuﬂg‰nger	q1 11315,13210 11399,13333
 (zum Poststadion): Parkplatzverkehr	q1 7452,13904 7417,13880 7445,13792 7431,13740 7343,13679 7338,13649
 (entlang des Vabali Spa): einige Fuﬂg‰nger	q1 7338,13649 7422,13487
-Liebigstr.: kurvig, recht eng durch parkende Autos	q1 13905,12374 13927,12370 14074,12343 14091,12355 14147,12344 14166,12323 14229,12311
+Liebigstr.: kurvig, recht eng durch parkende Autos	q1 13905,12374 13927,12370 14074,12343 14100,12354 14152,12344 14168,12328 14229,12311
 (Marseillestr. - Dr.-Markus-Str.): Fuﬂweg	q1 12364,21623 12402,21537
 (Parkplatz Kaufland): Parkplatzverkehr	q1 13031,17775 12981,17557
 Lubminer Weg: einige Fuﬂg‰nger	q1 22319,12663 22391,12677
@@ -3391,10 +3391,10 @@ Volkspark Anton Saefkow: einige Fuﬂg‰nger, Rampe	q3 12862,14632 12888,14625
 Volkspark Anton Saefkow: einige Fuﬂg‰nger, Steigung/Gef‰lle	q3 12901,14594 12888,14625 12900,14637 12932,14640 12970,14632 12982,14629
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12709,14745 12700,14726
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12794,14678 12789,14670
-Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12982,14629 13009,14616 13036,14596 13053,14578 13195,14487 13239,14461
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12982,14629 13009,14616 13036,14596 13053,14578 13195,14487 13240,14460
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 13036,14596 13049,14623 13119,14622 13231,14583 13266,14541
 #: XXX_prog BS, wenn man von S¸dwesten kommt sogar zwei weitere Bordsteine am Mittelstreifen (aber hier ist sowieso ein 3nocross getaggt), ansonsten q2
-Volkspark Anton Saefkow: einige Fuﬂg‰nger, Bordstein	q4 13266,14541 13291,14518
+Volkspark Anton Saefkow: einige Fuﬂg‰nger, Bordstein	q4 13266,14541 13294,14515
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 13266,14541 13246,14515 13233,14509 13169,14532 13195,14487
 #: XXX_prog BS an der Greifswalder Str., ansonsten q2
 Volkspark Anton Saefkow: einige Fuﬂg‰nger, Bordstein	q3 12547,14873 12557,14865 12563,14860 12592,14838
@@ -3585,7 +3585,8 @@ Einstein-Park: Fuﬂg‰nger, Radfahren offiziell verboten, flacher Bordstein am Sto
 (Innovationspark Wuhlheide - Wuhlewanderweg): einige Fuﬂg‰nger	q1 21491,7182 21547,7208
 (Innovationspark Wuhlheide - Wuhlewanderweg): einige Fuﬂg‰nger, eng	q2 21547,7208 21542,7246 21569,7252
 (Weg im erweiterten Mauerpark): Fuﬂg‰nger	q2 10235,14934 10215,14977 10192,14967
-(Weg im erweiterten Mauerpark): Fuﬂg‰nger	q1 10192,14967 10129,15130 10075,15307 10052,15429 10044,15487 10009,15618 10070,15626 10127,15463 10274,15024
+(Weg im erweiterten Mauerpark): Fuﬂg‰nger	q2 10274,15024 10297,14961
+(Weg im erweiterten Mauerpark): Fuﬂg‰nger	q1 10192,14967 10129,15130 10075,15307 10052,15429 10044,15487 10009,15618 10070,15626 10127,15463 10233,15147 10274,15024
 (Weg im erweiterten Mauerpark): Fuﬂg‰nger	q2 10274,15024 10209,14996 10215,14977
 (Karstadt-Parkplatz): einige Fuﬂg‰nger	q1 11775,9234 11767,9026
 Neuchateller Str.: einige Fuﬂg‰nger	q2 3898,4490 3951,4521
@@ -3822,6 +3823,8 @@ Golda-Meir-Steg: Fuﬂg‰nger	q2 7861,14133 7899,14157 7962,14198
 (Wilhelmine-Duncker-Str. - Gr¸nzug am Falkenberg): schmal, einige Fuﬂg‰nger	q2 21440,300 21435,323
 #: note: Fuﬂg‰ngerzone, Radfahrer frei
 (Dolgenseestr., Fuﬂg‰ngerzone): Fuﬂg‰nger	q3+ 17457,10083 17384,9807
+#: XXX_prog: BS am nˆrdlichen Ende, ansonsten q3
+(Gaudystr. - Sonneberger Weg): einige Fuﬂg‰nger, Bordstein	q4 10547,15586 10542,15609
 # 
 ######################### User Contributions #################################
 # 

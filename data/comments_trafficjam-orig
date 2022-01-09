@@ -66,6 +66,7 @@ Marktstr./Karlshorster Str.	Jam; 15144,10905 15279,10862
 # 
 Ruschestr.	Jam; 15947,12626 15928,12483 15904,12340
 # 
+#: note: eher schwache Staugefahr
 Lückstr.	Jam; 16313,10747 16468,10695
 # 
 # REMOVED --- #: next_check_id: KARLMARXSTR-2018 --- #: last_checked: 2021-05-18 (mapillary) --- #: check_frequency: 90d
@@ -81,7 +82,11 @@ Lückstr.	Jam; 16313,10747 16468,10695
 Karl-Marx-Str.	Jam; 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390
 Karl-Marx-Str.	Jam; 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
 # 
-Baumschulenstr./Späthstr.	Jam; 14744,5211 14808,5202 14988,5214 15038,5235 15174,5467 15363,5668 15382,5687 15584,5946 15628,6009 15723,6151
+#: note: mittlere Staugefahr, besonders nachmittags
+Baumschulenstr./Späthstr.	Jam; 14744,5211 14808,5202 14988,5214 15038,5235 15174,5467 15363,5668 15382,5687
+#: note: stärkste Staugefahr, besonders nachmittags
+Baumschulenstr./Späthstr.	Jam; 15382,5687 15584,5946 15628,6009 15723,6151
+#: note: schwache Staugefahr
 Baumschulenstr./Späthstr.	Jam; 15723,6151 15628,6009 15584,5946 15382,5687 15363,5668 15174,5467 15038,5235 14988,5214 14808,5202 14744,5211
 # 
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: by: https://www.berliner-woche.de/karlshorst/c-bauen/neue-gleise-fuer-die-treskowallee_a197014 --- #: source_id: 2147342174 --- #: source_id: LMS-BR_r_LMS-BR_120804_LMS-BR_72 --- #: last_checked: 2020-12-12 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2020-12-13 vvv --- Treskowallee	Jam; 18809,9133 18790,9018 18770,8898 18737,8686
@@ -127,7 +132,7 @@ L33	Jam; 23895,15904 23965,15894 23992,15894 25007,15650 25528,15587 25866,15543
 L33	Jam; 26175,15461 26071,15470 25955,15531 25866,15543 25528,15587 25007,15650 23992,15894 23965,15894 23895,15904
 #: next_check_id ^^^
 # 
-#: note: tagsüber meistens mit Beeinträchtigungen vvv
+#: note: tagsüber (besonders nachmittags, auch am Wochenende) meistens mit Beeinträchtigungen vvv
 Adalbertstr.	Jam; 11505,10744 11463,10642 11411,10515 11389,10463
 Adalbertstr.	Jam; 11389,10463 11411,10515 11463,10642
 Adalbertstr.	Jam; 11640,11067 11589,10947 11552,10863

@@ -669,7 +669,7 @@ EOF
        until => 1092439940,
        data => <<EOF,
 	2 9457,18612 9366,18669 9279,18724
-	2 9565,18555 9821,18392 9881,18354
+	2 9565,18555 9821,18392 9873,18364
 EOF
        text  => 'Heinrich-Mann-Straße Berlin-Reinickendorf Richtung Berlin-Pankow Zwischen Heinrich-Mann-Straße und Grabbeallee Störungen durch geplatzte Wasserleitung, Straße gesperrt',
        type  => 'gesperrt',
@@ -2801,7 +2801,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005006',
        data  => <<EOF,
-	2 10459,17754 10548,17817 10705,17931 10830,17985
+	2 10448,17751 10548,17817 10705,17931 10830,17985
 EOF
      },
      { from  => 1127508095, # 2005-09-23 22:41
@@ -4475,7 +4475,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002743',
        data  => <<EOF,
-	1 10572,17573 10510,17649 10459,17754
+	1 10573,17566 10495,17658 10448,17751
 EOF
      },
      { from  => undef, # 
@@ -7688,7 +7688,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004035',
        data  => <<EOF,
-	1::inwork 10459,17754 10548,17817 10705,17931 10830,17985
+	1::inwork 10448,17751 10548,17817 10705,17931 10830,17985
 EOF
      },
      { from  => undef, # 
@@ -8188,7 +8188,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005412',
        data  => <<EOF,
-	1::inwork 10953,15787 10713,15753 10564,15728 10426,15705 10418,15704
+	1::inwork 10953,15787 10713,15753 10554,15725 10426,15705 10418,15704
 EOF
      },
      { from  => 1178402400, # 2007-05-06 00:00
@@ -8673,7 +8673,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005738',
        data  => <<EOF,
-	2::inwork 12721,15807 12642,15668 12583,15566 12556,15518 12466,15359 12421,15278
+	2::inwork 12721,15807 12642,15668 12583,15566 12556,15518 12466,15359 12417,15272
 EOF
      },
      { from  => $isodate2epoch->("2013-08-08 00:00:00"), # 1 Tag Vorlauf
@@ -13087,7 +13087,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_008229',
        data  => <<EOF,
-	1::inwork 10366,14992 10515,15045 10618,15076 10881,15047
+	1::inwork 10372,14994 10515,15045 10618,15076 10881,15047
 EOF
      },
      { from  => 1226267354, # 2008-11-09 22:49
@@ -13141,7 +13141,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010408',
        data  => <<EOF,
-	1::inwork 13438,14675 13151,14855 13110,14879 12812,15053 12709,15112
+	1::inwork 13439,14673 13148,14850 13107,14873 12807,15045 12704,15105
 EOF
      },
      { from  => 1224626400, # 2008-10-22 00:00
@@ -13496,7 +13496,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_011698',
        data  => <<EOF,
-	q4::inwork; 10366,14992 10515,15045 10618,15076 10881,15047
+	q4::inwork; 10372,14994 10515,15045 10618,15076 10881,15047
 EOF
      },
      { from  => 1238347383, # 2009-03-29 19:23
@@ -16254,7 +16254,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014138',
        data  => <<EOF,
-	q4::temp 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345 10680,18380 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241
+	q4::temp 10228,18196 10320,18197 10469,18262 10487,18270 10660,18345 10680,18380 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241
 EOF
      },
      { from  => 1252651605, # 2009-09-11 08:46
@@ -17746,7 +17746,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015518',
        data  => <<EOF,
-	q4::inwork 9881,18354 9821,18392
+	q4::inwork 9873,18364 9821,18392
 EOF
      },
      { from  => 1271281013, # 2010-04-14 23:36
@@ -18773,7 +18773,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016308',
        data  => <<EOF,
-	q4::temp 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345 10680,18380 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241
+	q4::temp 10228,18196 10320,18197 10469,18262 10487,18270 10660,18345 10680,18380 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241
 EOF
      },
      { from  => $isodate2epoch->("2013-08-29 14:00:00"), # 1 Tag Vorlauf
@@ -20241,7 +20241,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.laubinger.de/termine/50-fest-an-der-panke/
 #: by: https://www.wollenschlaeger-berlin.de/51-fest-an-der-panke/
-	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
+	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10228,18196 10320,18197 10469,18262 10487,18270 10660,18345
 	2::temp 10602,18382 10562,18506 10532,18601
 EOF
      },
@@ -20513,7 +20513,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016853',
        data  => <<EOF,
-	q4::inwork 9881,18354 9821,18392
+	q4::inwork 9873,18364 9821,18392
 EOF
      },
      { from  => $isodate2epoch->("2019-08-23 08:00:00"), # 1 Tag Vorlauf # --- ALLGEMEINE VERANSTALTUNG AM BRANDENBURGER TOR ---
@@ -20859,7 +20859,7 @@ EOF
        text  => 'Gleimstr.: Bauarbeiten zwischen Ystadter Str. und Schönhauser Allee, Einbahnstraße Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,
-	q3::inwork; 10418,15704 10426,15705 10564,15728 10713,15753 10953,15787
+	q3::inwork; 10418,15704 10426,15705 10554,15725 10713,15753 10953,15787
 EOF
      },
      { from  => 1336057200, # 2012-05-03 17:00
@@ -20890,8 +20890,8 @@ EOF
 #: last_checked: 2012-10-18 (aber Asphaltierung in Gange)
 #: next_check: 2012-10-20
 	q4::inwork 10401,14963 10379,14963
-#XXX del --- hier nicht mehr ---	q4::inwork 10379,14963 10370,14946 10380,14911
-#XXX del --- hier nicht mehr ---	q4::inwork 10379,14963 10366,14992
+#XXX del --- hier nicht mehr ---	q4::inwork 10379,14963 10367,14946 10377,14909
+#XXX del --- hier nicht mehr ---	q4::inwork 10379,14963 10372,14994
 EOF
      },
      { from  => 1339624800, # 2012-06-14 00:00
@@ -22194,12 +22194,12 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Mauerpark: Flohmarkt Sonntag 08.00-18.00 Uhr, Behinderungen möglich',
+       text  => 'Mauerpark: Flohmarkt Sonntag 08.00-18.00 Uhr, einige Wege gesperrt',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
 #: tempex: su T08-T18
-	q4::temp:clock 10354,14987 10319,15090 10240,15318
+	2::temp:clock 10274,15024 10233,15147
 EOF
      },
      { from  => 1372568400, # 2013-06-30 07:00
@@ -23218,7 +23218,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_022477',
        data  => <<EOF,
-	q4::inwork; 10758,17288 10706,17391 10690,17420 10670,17458 10647,17501 10572,17573 10510,17649 10459,17754
+	q4::inwork; 10758,17288 10706,17391 10690,17420 10670,17458 10647,17501 10573,17566 10495,17658 10448,17751
 EOF
      },
      { from  => 1391682540, # 2014-02-06 11:29
@@ -25024,7 +25024,7 @@ EOF
        source_id => 'IM_025833',
        data  => <<EOF,
 	q4::inwork; 9721,17806 9835,17797 10053,17777 10179,17772
-#	q4::inwork; 10179,17772 10311,17764 10459,17754
+#	q4::inwork; 10179,17772 10311,17764 10448,17751
 EOF
      },
      { from  => 1442080673, # 2015-09-12 19:57
@@ -31070,7 +31070,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2022-01-07 vvv
+#: last_checked: 2022-01-09 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33353,12 +33353,12 @@ EOF
        source_id => 'viz2021:13.444,52.53356,26.07.2021,08:18',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
-#: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
+#: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren; außerdem sind etwa 100m der Fahrbahn wieder befahrbar (q3 -> q2)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-11-29
+#: last_checked: 2022-01-09
 #: check_frequency: 45d
 #: next_check: 2022-03-31
-	q3::inwork 13057,14267 13158,14117
+	q2::inwork 13057,14267 13158,14117
 EOF
      },
      { from  => 1627924220, # 2021-08-02 19:10
@@ -33921,7 +33921,7 @@ EOF
 #: source_id: viz2021:13.403429,52.56939,28.10.2021,06:00 (hier: bis 12.11.2021, und nur für Kfz-Verkehr gesperrt) (mittlerweile bis 9.11.2021)
 #: by: https://www.berliner-woche.de/altglienicke/c-verkehr/deckschicht-wird-runderneuert_a327095 (bis 30.11.2021)
 #: note: laut rbb vorzeitiges Ende am 9.11.2021
-	q3::inwork; 10240,18193 10355,17963 10459,17754
+	q3::inwork; 10228,18196 10347,17959 10448,17751
 EOF
      },
      { from  => 1636239600, # 2021-11-07 00:00
@@ -34260,6 +34260,19 @@ EOF
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2022-01-07
 	q4::inwork; 17719,11092 17725,11228
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Einsteinpark: Bauarbeiten, alle Wege sind gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: EINSTEINPARK-2022
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2022-01-09
+#: check_frequency: 90d
+#: next_check: 2022-07-24
+	2::inwork 13204,15062 13207,14998 13163,14924
 EOF
      },
     );

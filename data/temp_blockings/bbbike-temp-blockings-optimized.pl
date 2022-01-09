@@ -1378,12 +1378,12 @@ Kleistpark	2::night 7310,9622 7307,9528
        },
        {
          'data' => '#: tempex: su T08-T18
-	q4::temp:clock 10354,14987 10319,15090 10240,15318
+	2::temp:clock 10274,15024 10233,15147
 ',
          'from' => undef,
          'id' => 2458,
          'recurring' => 1,
-         'text' => 'Mauerpark: Flohmarkt Sonntag 08.00-18.00 Uhr, Behinderungen möglich',
+         'text' => 'Mauerpark: Flohmarkt Sonntag 08.00-18.00 Uhr, einige Wege gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -2660,7 +2660,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2022-01-07 vvv
+#: last_checked: 2022-01-09 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -3357,12 +3357,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
-#: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren
+#: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren; außerdem sind etwa 100m der Fahrbahn wieder befahrbar (q3 -> q2)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2021-11-29
+#: last_checked: 2022-01-09
 #: check_frequency: 45d
 #: next_check: 2022-03-31
-	q3::inwork 13057,14267 13158,14117
+	q2::inwork 13057,14267 13158,14117
 ',
          'from' => 1627164000,
          'id' => 3424,
@@ -3746,6 +3746,20 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'id' => 3497,
          'text' => 'Robert-Uhrig-Str.: zwischen Rummelsburger Str. und Zachertstr. Bauarbeiten, Richtung Norden gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: EINSTEINPARK-2022
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2022-01-09
+#: check_frequency: 90d
+#: next_check: 2022-07-24
+	2::inwork 13204,15062 13207,14998 13163,14924
+',
+         'from' => undef,
+         'id' => 3498,
+         'text' => 'Einsteinpark: Bauarbeiten, alle Wege sind gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
          'until' => undef
        }
      

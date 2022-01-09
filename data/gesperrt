@@ -81,8 +81,8 @@ Falkenseer Platz	1 -3352,14676 -3368,14723 -3355,14764 -3295,14777 -3251,14741 -
 Alt-Müggelheim	1 28317,891 28188,962 28094,1090 28225,1009 28317,891
 Prenzlauer Promenade	2 12008,19613 12042,19682 11990,19741 11907,19749
 Prenzlauer Promenade	2 12164,19581 12008,19613 11953,19363 12003,18896 11984,18771 11950,18529
-Breite Str. (Pankow)	1 10240,18193 10281,18241 10449,18315 10463,18321 10502,18338 10567,18366 10602,18382
-Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10469,18262 10320,18197 10240,18193
+Breite Str. (Pankow)	1 10228,18196 10281,18241 10449,18315 10463,18321 10502,18338 10567,18366 10602,18382
+Breite Str. (Pankow)	1 10680,18380 10660,18345 10487,18270 10469,18262 10320,18197 10228,18196
 Heinrich-Mann-Platz.	1 9565,18555 9524,18531 9480,18539 9454,18570 9457,18612 9495,18639 9542,18634 9567,18599 9565,18555
 Edelweißstr.	1 8234,19936 7993,19949 7935,19954 7885,19975 7748,20040
 Edelhofdamm	1 3185,25437 3101,25402 2909,25322 2756,25260 2683,25238 2713,25300 2744,25314 2882,25375 3076,25456 3166,25496
@@ -388,7 +388,7 @@ Geisenheimer Str.	1 4393,7266 4462,7137 4530,7021
 Straße zum FEZ	1 20716,6029 20593,6082 20428,6157 20453,6211 20623,6136 20707,6098
 Paul-Francke-Str.	1 9916,18610 9994,18595 10013,18545 10006,18502 9901,18522
 Zellerfelder Str.	1 11526,18929 11468,19106
-Storkower - Einsteinstr.	1 13110,14879 13143,14935 13163,14924 13185,14912 13151,14855
+Storkower - Einsteinstr.	1 13107,14873 13143,14935 13163,14924 13185,14912 13148,14850
 Adlershofer Str.	1 21633,4355 21585,4459
 Adlershofer Str.	1 21633,4355 21649,4111 21655,4091 21679,4059
 Alt-Wittenau	1 4597,20778 4649,20771 4953,20624 5117,20517 4935,20574 4726,20690 4597,20778
@@ -1861,8 +1861,8 @@ Greifswalder Str. -> Anton-Saefkow-Str.: Mittelstreifen mit Straßenbahn	3::igndi
 Anton-Saefkow-Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12575,14812 12528,14845 12473,14763
 Greifswalder Str. -> Volkspark Anton Saefkow: Mittelstreifen mit Straßenbahn	3::igndisp 12584,14928 12547,14873 12557,14865
 Volkspark Anton Saefkow -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12557,14865 12547,14873 12528,14845
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 12709,15112 12737,15154 12870,15342
-Greifswalder Str. -> Naugarder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12709,15112 12737,15154 12712,15176
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 12704,15105 12737,15154 12870,15342
+Greifswalder Str. -> Naugarder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12704,15105 12737,15154 12712,15176
 Naugarder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12712,15176 12737,15154 12870,15342
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 11633,14631 11655,14697 11682,14777
 Prenzlauer Allee -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 11682,14777 11655,14697 11949,14557
@@ -3208,7 +3208,7 @@ Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9468,-85 9271,323 9253,370 9218,458 9178,556
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9271,323 9296,335 9249,434 9218,458
 Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 18892,3256 18689,3465
-Cotheniusstr.: Fahrbahn durch Bauzäune abgesperrt	2::inwork 13430,13733 13519,13785
+Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
 Abendseglersteig: noch in Bau	2::inwork 33176,2938 33147,2832 33267,2810 33383,2792
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): Sperrung am Bahnübergang	2::inwork 10096,-2137 10203,-2137 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am Bahnübergang	2::inwork 10228,-2136 10231,-2159
@@ -3410,11 +3410,11 @@ Ernst-Fürstenberg-Str. -> Kniprodestr.: unpassierbarer Mittelstreifen (Straßenba
 schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 13057,14267 13107,14318 13183,14400
 Kniprodestr. -> Rudolf-Schwarz-Str.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13057,14267 13107,14318 13087,14332
 Rudolf-Schwarz-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13087,14332 13107,14318 13183,14400
-schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 13183,14400 13239,14461 13291,14518 13362,14593
-Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13183,14400 13239,14461 13195,14487
-Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13195,14487 13239,14461 13291,14518
-Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13239,14461 13291,14518 13266,14541
-Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13266,14541 13291,14518 13362,14593
+schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 13183,14400 13240,14460 13294,14515 13364,14591
+Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13183,14400 13240,14460 13195,14487
+Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13195,14487 13240,14460 13294,14515
+Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13240,14460 13294,14515 13266,14541
+Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13266,14541 13294,14515 13364,14591
 (Treppe zur Putlitzbrücke): tragen, ca. 35 Stufen	0:40:90 6253,14184
 (Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40:-168 6209,14245
 Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6226,13951 6228,14077 6230,14184 6230,14246 6231,14308

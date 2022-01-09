@@ -247,8 +247,8 @@ Lilli-Henoch-Str. -> Ahlbecker Str.: Straßenbahn	3::igndisp 11937,15349 11877,15
 Straßenbahn	3nocross::ignrte 12473,14763 12422,14692 12403,14663 12371,14615
 Greifswalder Str. -> John-Schehr-Str.: Straßenbahn	3::igndisp 12473,14763 12422,14692 12512,14626
 John-Schehr-Str. -> Greifswalder Str.: Straßenbahn	3::igndisp 12512,14626 12422,14692 12403,14663
-Straßenbahntrasse	3nocross::ignrte 12709,15112 12737,15154 12870,15342
-Greifswalder Str. -> Naugarder Str.: Straßenbahntrasse	3::igndisp 12709,15112 12737,15154 12712,15176
+Straßenbahntrasse	3nocross::ignrte 12704,15105 12737,15154 12870,15342
+Greifswalder Str. -> Naugarder Str.: Straßenbahntrasse	3::igndisp 12704,15105 12737,15154 12712,15176
 Naugarder Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12712,15176 12737,15154 12870,15342
 Straßenbahntrasse	3nocross::ignrte 12620,14979 12584,14928 12547,14873 12528,14845
 Greifswalder Str. -> Lilli-Henoch-Str.: Straßenbahntrasse	3::igndisp 12547,14873 12584,14928 12477,14987
@@ -811,9 +811,9 @@ Neuköllner Str. -> Am Rudower Fließ: Mittelstreifen	3::igndisp 16815,1278 16698,
 Am Hanffgraben -> Neuköllner Str.: Mittelstreifen	3::igndisp 16805,1488 16698,1392 16815,1278
 Am Hanffgraben -> Am Rudower Fließ: Mittelstreifen	3::igndisp 16805,1488 16698,1392 16650,1356
 Am Rudower Fließ -> Neuköllner Str.: Mittelstreifen	3::igndisp 16650,1356 16698,1392 16643,1460
-Mittelstreifen	3nocross::ignrte 13151,14855 13110,14879 12812,15053
-Storkower Str. -> Einsteinstr.: Mittelstreifen	3::igndisp 12812,15053 13110,14879 13143,14935
-Einsteinstr. -> Storkower Str.: Mittelstreifen	3::igndisp 13143,14935 13110,14879 13151,14855
+Mittelstreifen	3nocross::ignrte 13148,14850 13107,14873 12807,15045
+Storkower Str. -> Einsteinstr.: Mittelstreifen	3::igndisp 12807,15045 13107,14873 13143,14935
+Einsteinstr. -> Storkower Str.: Mittelstreifen	3::igndisp 13143,14935 13107,14873 13148,14850
 Hönower Wiesenweg: nur für Anlieger und Radfahrer offen	2:Anlieger 17380,8858 17416,8767 17461,8693 17497,8623 17515,8567 17533,8505 17554,8458 17620,8366 17704,8327 17753,8290
 Mittelstreifen	3nocross::ignrte 9248,4904 9239,4980 9206,5193
 Finkenweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9360,4996 9239,4980 9248,4904
@@ -1784,7 +1784,7 @@ Hermann-Hesse-Str. -> Schützenstr.	3 9214,18666 8891,18545 8839,18504
 Friedrichstr. -> Am Weidendamm	3 9279,12953 9286,12886 9323,12895
 Murtzaner Ring	1 19593,14452 19593,14472
 Invalidenstr. - Hessische Str.	3 8841,13800 8685,13728 8775,13606
-Prenzlauer Allee -> Saarbrücker Str.	3 11160,13492 11251,13667 11134,13820
+Prenzlauer Allee -> Saarbrücker Str.	3 11160,13492 11251,13667 11116,13830
 Stolzenfelsstr.	1 19447,8175 19407,8143 19333,8165 19171,8280 18949,8437 18787,8540
 Treskowallee - Dönhoffstr.	3 18718,8583 18727,8634 18609,8717
 Straßenbahntrasse	3nocross::ignrte 15639,10469 15404,10633 15372,10655
@@ -2006,9 +2006,9 @@ Eberswalder Str. (Bernau): Radweg vorhanden	1 23109,30968 23103,30923 23084,3089
 Linienstr.	1 9609,13522 9744,13584
 Linienstr.	1 9993,13682 9947,13674
 Linienstr.	1 10301,13701 10445,13675
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 12584,14928 12620,14979 12709,15112
-Greifswalder Str. -> Güterbahnhof Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12709,15112 12620,14979 12717,14908
-Greifswalder Str. -> Volkspark Anton Saefkow: Mittelstreifen mit Straßenbahn	3::igndisp 12709,15112 12620,14979 12632,14956
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 12584,14928 12620,14979 12704,15105
+Greifswalder Str. -> Güterbahnhof Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12704,15105 12620,14979 12717,14908
+Greifswalder Str. -> Volkspark Anton Saefkow: Mittelstreifen mit Straßenbahn	3::igndisp 12704,15105 12620,14979 12632,14956
 Güterbahnhof Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12717,14908 12620,14979 12584,14928
 Güterbahnhof Greifswalder Str. -> Volkspark Anton Saefkow: Mittelstreifen mit Straßenbahn	3::igndisp 12717,14908 12620,14979 12632,14956
 Volkspark Anton Saefkow -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12632,14956 12620,14979 12584,14928
@@ -2039,9 +2039,9 @@ Wrangelstr./Cuvrystr.: Diagonalsperre	3 13271,10193 13151,10276 13132,10239
 Waldsieversdorf - Garzau	1 54985,15912 54614,16119 54603,16125
 Gerstenweg	1 20943,12376 20952,12407 21028,12536 21053,12582 21101,12661 21168,12794
 Rapsweg: nur für Anlieger	2:Anlieger 21251,12767 21168,12794
-Mittelstreifen für Autos	3nocross::ignrte 13239,14461 13183,14400 13107,14318
+Mittelstreifen für Autos	3nocross::ignrte 13240,14460 13183,14400 13107,14318
 Kniprodestr. -> Anton-Saefkow-Str.: Mittelstreifen für Autos	3::igndisp 13107,14318 13183,14400 13088,14469
-Anton-Saefkow-Str. -> Kniprodestr.: Mittelstreifen für Autos	3::igndisp 13088,14469 13183,14400 13239,14461
+Anton-Saefkow-Str. -> Kniprodestr.: Mittelstreifen für Autos	3::igndisp 13088,14469 13183,14400 13240,14460
 Straßenbahntrasse	3nocross::ignrte 12230,16915 12267,16946 12324,17213
 Tino-Schwierzina-Str. -> Am Steinberg: Straßenbahntrasse	3::igndisp 12324,17213 12267,16946 12307,16950
 Am Steinberg -> Am Steinberg: Straßenbahntrasse	3::igndisp 12307,16950 12267,16946 12230,16915
@@ -2207,3 +2207,10 @@ Roedernstr.	1 18019,7071 18010,7133
 Bellermannstr.: Diagonalsperren	2 9248,16248 9259,16236
 Manteuffelstr.	1 11829,10192 11949,10414
 Manteuffelstr.	1 11829,10192 11735,10022
+Mittelstreifen, Hochbahnviadukt	3nocross::ignrte 10982,16121 10975,16010 10969,15944
+Schönhauser Allee -> Dänenstr.: Mittelstreifen, Hochbahnviadukt	3::igndisp 10969,15944 10975,16010 10729,16042
+Schönhauser Allee -> an den Schönhauser Allee Arcaden: Mittelstreifen, Hochbahnviadukt	3::igndisp 10982,16121 10975,16010 11086,15984
+an den Schönhauser Allee Arcaden -> Schönhauser Allee: Mittelstreifen, Hochbahnviadukt	3::igndisp 11086,15984 10975,16010 10969,15944
+an den Schönhauser Allee Arcaden -> Dänenstr.: Mittelstreifen, Hochbahnviadukt	3::igndisp 11086,15984 10975,16010 10729,16042
+Dänenstr. -> Schönhauser Allee: Mittelstreifen, Hochbahnviadukt	3::igndisp 10729,16042 10975,16010 10982,16121
+Dänenstr. -> an den Schönhauser Allee Arcaden: Mittelstreifen, Hochbahnviadukt	3::igndisp 10729,16042 10975,16010 11086,15984
