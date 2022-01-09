@@ -14,7 +14,7 @@
 
 use strict;
 use warnings;
-use List::Util qw(any);
+use List::Util qw(first);
 
 sub usage (;$) {
     my $msg = shift;
@@ -30,7 +30,7 @@ my $task = shift
 {
     my @available_tasks;
     sub check_task (@) {
-        if (any { $task eq $_ } @_) {
+        if (first { $task eq $_ } @_) { # List::Util::any would be more correct, but requires a relatively new List::Util
             1;
         } else {
             push @available_tasks, @_;
