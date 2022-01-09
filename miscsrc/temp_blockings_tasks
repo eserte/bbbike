@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2011,2013,2016,2017,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2011,2013,2016,2017,2020,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,6 +14,7 @@
 
 use strict;
 use warnings;
+use List::Util qw(any);
 
 sub usage (;$) {
     my $msg = shift;
@@ -26,6 +27,19 @@ EOF
 my $task = shift
     or usage("Task is missing");
 
+{
+    my @available_tasks;
+    sub check_task (@) {
+        if (any { $task eq $_ } @_) {
+            1;
+        } else {
+            push @available_tasks, @_;
+            0;
+        }
+    }
+    sub get_available_tasks () { @available_tasks }
+}
+
 if ($task eq 'yml_to_permanent_bbd') {
     warn "WARNING: Please rename 'yml_to_permanent_bbd' to 'yml_to_recurring_bbd'.\n";
     $task = 'yml_to_recurring_bbd';
@@ -34,7 +48,7 @@ if ($task eq 'yml_to_permanent_bbd') {
     $task = 'yml_to_nonrecurring_bbd';
 }
 
-if ($task eq 'pl_to_yml') {
+if (check_task 'pl_to_yml') {
     my $in_file = shift
 	or usage("in file is missing");
     my $out_file = shift
@@ -47,7 +61,7 @@ if ($task eq 'pl_to_yml') {
     my $temp_blocking_records = _load_records($in_file);
     BBBikeYAML::DumpFile($out_file, $temp_blocking_records);
 
-} elsif ($task eq 'cmp_pl_and_yml') {
+} elsif (check_task 'cmp_pl_and_yml') {
     my $file_pl = shift
 	or usage("pl file is missing");
     my $file_yml = shift
@@ -82,28 +96,28 @@ if ($task eq 'pl_to_yml') {
 	exit 1;
     }
 
-} elsif ($task eq 'yml_to_bbd') {
+} elsif (check_task 'yml_to_bbd') {
     my $infile = shift
 	or usage "yml file is missing";
     @ARGV and usage "Extra args";
 
     yml_to_bbd($infile);
 
-} elsif ($task eq 'yml_to_recurring_bbd') {
+} elsif (check_task 'yml_to_recurring_bbd') {
     my $infile = shift
 	or usage "yml file is missing";
     @ARGV and usage "Extra args";
 
     yml_to_bbd($infile, filter => 'recurring');
 
-} elsif ($task eq 'yml_to_nonrecurring_bbd') {
+} elsif (check_task 'yml_to_nonrecurring_bbd') {
     my $infile = shift
 	or usage "yml file is missing";
     @ARGV and usage "Extra args";
 
     yml_to_bbd($infile, filter => 'nonrecurring');
 
-} elsif ($task eq 'check_recurrences') {
+} elsif (check_task 'check_recurrences') {
     require Getopt::Long;
     my $prewarn_days = 7;
     my $now;
@@ -117,7 +131,7 @@ if ($task eq 'pl_to_yml') {
 	or usage "pl file is missing";
     my $temp_blocking_records = _load_records($pl_file);
     check_recurrences($temp_blocking_records, prewarn_days => $prewarn_days, now => $now);
-} elsif ($task eq 'check_data_islands') {
+} elsif (check_task 'check_data_islands') {
     require Getopt::Long;
     my $acceptable_distance = 1000; # visible area on my monitor at 1:6000 is approx. 2800x1300 meters, so 1000 is hopefully enough
     if (!Getopt::Long::GetOptions(
@@ -130,7 +144,7 @@ if ($task eq 'pl_to_yml') {
     my $temp_blocking_records = _load_records($pl_file);
     check_data_islands($temp_blocking_records, acceptable_distance => $acceptable_distance);
 } else {
-    usage("Task $task is unknown");
+    usage("Task '$task' is unknown, known tasks are:\n" . join("", map { "- $_\n" } get_available_tasks()));
 }
 
 sub yml_to_bbd {
