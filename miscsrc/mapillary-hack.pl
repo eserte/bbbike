@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2021,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -115,6 +115,7 @@ print $ofh "#: map: polar\n";
 print $ofh "#: line_arrow: last\n";
 print $ofh "#\n";
 print $ofh "# Fetched from mapillary for bbox=@$bbox ($region) and date $capture_date\n";
+print $ofh "# Used geometry field: $geometry_field\n";
 print $ofh "#\n";
 for my $sequence (@sequences) {
     my $id = $sequence->[0]->{id};
