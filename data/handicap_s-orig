@@ -269,7 +269,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-01-03
+#: last_checked: 2022-01-10 (daf)
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -447,20 +447,14 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 ### Karlshorst ###
 # 
-#: XXX nach den Bauarbeiten den alten Eintrag für die Wildensteiner Str. wieder aktivieren!
-#: add_fragezeichen: Sind die Bauarbeiten an der Einmündung Wandlitzstr./Wildensteiner Str. beendet? vvv
-#: also_indoor: traffic (ex-G) vvv
-#: last_checked: 2021-11-16 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2022-01-01 vvv
-Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18557,8525 18627,8475 18704,8427
-Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18627,8475 18528,8331
-#: next_check ^^^
-#: check_frequency ^^^
+#: next_check_id: PARKSTADTKARLSHORST-2021
+#: last_checked: 2022-01-10 vvv
+Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17461,8693 17656,8700 17640,8627 17497,8623
+Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17461,8693
+Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17461,8693 17497,8623
 #: last_checked ^^^
-#: also_indoor ^^^
-#: add_fragezeichen ^^^
 # 
+# REMOVED --- #: XXX nach den Bauarbeiten den alten Eintrag für die Wildensteiner Str. wieder aktivieren! --- #: add_fragezeichen: Sind die Bauarbeiten an der Einmündung Wandlitzstr./Wildensteiner Str. beendet? vvv --- #: also_indoor: traffic (ex-G) vvv --- #: last_checked: 2021-11-16 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2022-01-01 vvv --- Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18557,8525 18627,8475 18704,8427 --- Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18627,8475 18528,8331 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
 # REMOVED --- #: XXX nach den Bauarbeiten vermutlich bessere Qualität --- #: last_checked: 2016-12-10 --- Andernacher Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 19155,8631 19249,8662
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 vvv --- #: osm_watch: way id="580512810" version="4" --- #: osm_watch: way id="580508096" version="6" --- #: also_indoor traffic vvv --- #: last_checked: 2019-05-21 vvv --- #: next_check: 2019-06-10 vvv --- #: valid: -20201231 vvv --- #: priority: #A vvv
 # REMOVED (hier nicht mehr) --- Dönhoffstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q2::inwork 18733,8633 18609,8717
@@ -714,10 +708,10 @@ Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Um
 #: XXX Mittlerweile nur etwa 100m
 #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FD6C35EF-640E-43B3-8F22-17914A1869B0 (Verbindungstrasse Fernwärme Klingenberg)
 #: also_indoor: traffic (G(zu viel)) vvv
-#: osm_watch: way id="1002249853" version="1"
-#: osm_watch: way id="198589916" version="8"
+# REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="1002249853" version="2"
+# REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="198589916" version="9"
 #: osm_watch: way id="198589913" version="6"
-#: last_checked: 2022-01-07 vvv
+#: last_checked: 2022-01-10 vvv
 #: check_frequency: 14d vvv
 Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q1::inwork; 15932,10830 15681,10801
 # REMOVED --- Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851
@@ -1662,7 +1656,7 @@ Grazer Platz: Fußgänger, Bordsteine	q2 6546,6724 6530,6786 6529,6798
 (Nordmannzeile - Kleingartenkolonie): Fußgänger	q1 6807,7262 6809,7272 6841,7283
 (Nordmannzeile - Vorarlberger Damm): Fußgänger	q1 7220,7442 7307,7457
 Achenbachpromenade: Fußgänger, Radfahren erlaubt	q1 8763,8780 8748,8587 8722,8527 8715,8459
-# REMOVED (temporary) --- Wildensteiner Str.: enge Straße	q0- 18627,8475 18528,8331
+Wildensteiner Str.: enge Straße	q0- 18627,8475 18528,8331
 Wildensteiner Str.: enge Straße	q1 18528,8331 18416,8163 18365,8094 18333,8059
 # REMOVED --- #: XXX noch immer eine enge Stelle? --- (Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbrücke	q2 19460,7954 19504,8003 19558,8064
 Linienstr./Oranienburger Str.: Fußgänger	q2 9225,13389 9312,13388
@@ -3825,6 +3819,8 @@ Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
 (Dolgenseestr., Fußgängerzone): Fußgänger	q3+ 17457,10083 17384,9807
 #: XXX_prog: BS am nördlichen Ende, ansonsten q3
 (Gaudystr. - Sonneberger Weg): einige Fußgänger, Bordstein	q4 10547,15586 10542,15609
+#: XXX_prog: BS am nördlichen Ende, sowie am südlichen Ende, falls man links in die Sewanstr. einbiegen möchte, ansonsten q4 beibehalten
+(Fußweg zum Wohngebiet Sewanstr.): Fußgänger, Bordstein	q4 17882,10128 17889,10163 17883,10185
 # 
 ######################### User Contributions #################################
 # 

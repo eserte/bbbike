@@ -1124,7 +1124,7 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218
 #: by: https://api.fixmyberlin.de/api/projects/334 (war früher fälschlicherweise zur Bismarckstr. in Steglitz zugeordnet)
 #: by: http://www.infravelo.de/projekt/bismarckstrasse/ (Asphaltierung, in Planung, 4. Quartal 2024 - 4. Quartal 2025)
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
-#: osm_watch: way id="4810830" version="31"
+#: osm_watch: way id="4810830" version="32"
 #: last_checked: 2021-04-28
 #: check_frequency: 720d
 #: next_check: 2025-12-31
@@ -12366,6 +12366,9 @@ Hauptstr. [23 D-H]: Verbundsteinpflaster	Q1+ -7884,13614 -7906,13549 -7925,13550
 (Ludwig-Lesser-Park - Am Poloplatz): unbefestigter Weg, gut befahrbar	Q1- 2204,26290 2199,26440 2199,26450
 (Bornitzstr. - Straße 15): Verbundsteinpflaster	Q1 16439,12872 16440,12895
 (Bornitzstr. - Straße 15): Kopfsteinpflaster	Q2 16440,12895 16439,12979
+#: next_check_id: MESSELSTR-2022
+#: XXX wird die Fahrbahn nach den Bauarbeiten besser sein, zumindest zwischen Pücklerstr. und Heydenstr.?
+#: next_check: 2022-11-21
 Messelstr.: vereinzelte Hebungen und Schäden, können aber gut umfahren werden	Q0- 2606,6708 2403,6962 2304,7059 2139,7239 2017,7412 1956,7453
 Müggelstr.: Mosaikpflaster	Q1 14994,12121 14994,12064
 (Barnimstr. - Mollstr.): Beton	Q0- 11785,13241 11762,13207
@@ -12391,6 +12394,9 @@ Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
 (Demminer Str. - Am Gutshof): Betonpflaster	Q0- 17797,18675 17813,18726
 (Dolgenseestr., Fußgängerzone): Betonpflaster	Q0- 17457,10083 17384,9807
 (Gaudystr. - Sonneberger Weg): glatte Pflasterung	Q0- 10547,15586 10542,15609
+Georg-Klingenberg-Str.: Asphalt	Q0 17461,8693 17656,8700
+Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627 17621,8544
+Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -15183,7 +15189,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228 (Fahrbahnerneuerung zwischen Grimnitz- und Liepnitzstr. ab September 2021)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9000 (Rechtskontrolle)
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
-#: last_checked: 2021-10-10
+#: last_checked: 2022-01-10
 #: check_frequency: 180d
 #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976
@@ -22608,10 +22614,12 @@ Klemkepark - Kopenhagener Str./Freiheitsweg: Mosaikpflaster	Q1 7313,18781 7248,1
 #: by: Ilka vvv
 #: note: erlaubte Höchstgeschwindigkeit 10 km/h
 #: confirmed_by: Christian Marwitz meint "Unebener Weg mit teilweise Schienen und Betonflächen... Bodenmängel":
-#: corrected_by: srt: (Q3 -> Q2+, kein Kopfsteinpflaster, Beton mit alten Bahngleisen -> ...)
-Hönower Wiesenweg: provisorische Baustraße	Q2 17308,9090 17335,8971 17380,8858 17416,8767 17461,8693
+#: corrected_by: srt (Q3 -> Q2+, kein Kopfsteinpflaster, Beton mit alten Bahngleisen -> ...; ... -> ..., neu gemacht)
+Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17461,8693
 # REMOVED (früher) --- Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17461,8693 17497,8623 17515,8567
-Hönower Wiesenweg: provisorische Baustraße	Q2 17461,8693 17497,8623 17515,8567
+#: corrected_by: srt (... -> ..., neu gemacht)
+Hönower Wiesenweg: Asphalt	Q0 17461,8693 17497,8623
+Hönower Wiesenweg: provisorische Baustraße	Q2 17497,8623 17515,8567
 Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17515,8567 17533,8505
 # REMOVED (früher) --- Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17533,8505 17554,8458
 Hönower Wiesenweg: provisorische Baustraße	Q2 17533,8505 17554,8458
@@ -29548,12 +29556,14 @@ Johannes-Zoschke-Str.: brüchiger Asphalt	Q1- 19020,9364 19030,9530
 Johannes-Zoschke-Str.: mäßiger Asphalt	Q2+ 19030,9530 19037,9636
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/rheinpfalzallee-wird-ab-2024-saniert_a332567 (Instandsetzung ab 2024) vvv
 #: XXX Instandsetzung geplant, danach vielleicht befestigt? vvv
+#: last_checked: 2022-01-10 vvv
 #: next_check: 2024-06-01 vvv
 #: confirmed_by: srt
 Rheinpfalzallee: Sandweg	Q2+ 18865,9608 18931,9629
 #: confirmed_by: srt (added holprig)
 Rheinpfalzallee: holpriger Sandweg	Q2 18931,9629 18987,9534 19030,9530
 #: next_check ^^^
+#: last_checked ^^^
 #: XXX ^^^
 #: by ^^^
 #: confirmed_by: srt

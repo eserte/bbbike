@@ -1451,12 +1451,12 @@ neues Verbundsteinpflaster, allerdings schon erste leichte Wurzelhebungen sichtb
 	RW3; 13651,11731 13696,11920 13745,12118
 Radspur zwischen Fahrspuren	RW3; 13745,12118 13785,12292
 	RW3; 13785,12292 13745,12118 13696,11920 13651,11731
-	RW1; 17427,10259 17605,10199 17905,10122 17938,10054 17958,10012
+	RW1; 17427,10259 17605,10199 17882,10128 17905,10122 17938,10054 17958,10012
 	RW3; 17958,10012 17997,9929
 Asphalt mit Schäden	RW1; 17997,9929 17958,10012
 #: note: hier ist auch eine Bushaltestelle
 	RW3; 17958,10012 17938,10054
-Asphalt mit Schäden	RW1; 17938,10054 17905,10122 17605,10199 17427,10259
+Asphalt mit Schäden	RW1; 17938,10054 17905,10122 17882,10128 17605,10199 17427,10259
 brüchiger Asphalt auf Fahrbahn	RW3; 17997,9929 18045,9917
 	RW1; 18045,9917 17997,9929
 	RW1; 18045,9917 18210,9989 18296,10027 18339,10048 18387,10070
@@ -3024,7 +3024,7 @@ Busspur gilt immer	RW5; 17151,11801 17121,11806 17028,11821 16962,11833 16803,11
 #: source_id: viz2021:13.55623,52.50913,11.10.2021,08:26 (hier nur bis 20.10.2021) (aber die Markierungen brauchen vielleicht auch noch etwas Zeit?)
 #: XXX Grünbeschichtung geplant
 #: priority: #D
-#: last_checked: 2021-12-27
+#: last_checked: 2022-01-08 (mapillary)
 #: next_check: 2022-05-15
 die ersten und letzten Meter werden auf dem Gehweg geführt	RW3; 21108,11628 20764,11675 20571,11698
 teilweise gemeinsamer, teilweise getrennter Rad- und Gehweg	RW2; 20540,11660 20633,11651 20838,11631 20963,11618 21108,11628
@@ -3178,10 +3178,12 @@ Busspur ist immer gültig	RW5; 3707,13274 3711,13210
 #: confirmed_by: srt
 	RW6;RW6 6196,2204 6257,2120 6223,2097 6170,2060 6150,2089 6201,2125 6223,2097
 	RW6;RW6 6201,2125 6159,2176
-	RW3; 17067,8725 17380,8858
+	RW1; 17067,8725 17126,8750
+	RW3; 17126,8750 17380,8858
 die letzten Meter sind benutzungspflichtig	RW3; 17380,8858 17729,8850
 die ersten 80 Meter sind nicht benutzungspflichtig	RW4; 17729,8850 17380,8858
-die letzten 50 Meter werden auf dem Gehweg geführt	RW4; 17380,8858 17067,8725
+	RW4; 17380,8858 17126,8750
+	RW1; 17126,8750 17067,8725
 	RW2; 18615,8269 18672,8238
 Radweg endet schon nach 30 Metern	RW1; 18672,8238 18615,8269
 #: by: Butch Coolidge:
@@ -3416,7 +3418,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: osm_watch: way id="865716506" version="7"
-#: last_checked: 2021-12-27 vvv
+#: last_checked: 2022-01-08 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-06-01 vvv
 # REMOVED ---	RW0; 21190,12193 21166,12023
@@ -3761,7 +3763,7 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: viz2021:13.42941,52.533057,25.02.2020,08:00 (bis 1.9.2021, Gesamtbaumaßnahme bis 2022)
 #: source_id: viz2021:13.42941,52.533057,01.09.2021,08:00 (bis 31.12.2021, Gesamtbaumaßnahme bis 2022) (mittlerweile bis 28.2.2022)
 #: priority: #D vvv
-#: last_checked: 2021-10-12 vvv
+#: last_checked: 2022-01-08 (mapillary) vvv
 #: next_check: 2022-02-28 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -5826,7 +5828,7 @@ Radweg beginnt nach 20 Metern	RW1; 7909,775 7857,802
 	RW3;RW3 14050,20955 13909,20928
 #: XXX wird hier eine Busspur eingerichtet?
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
-#: last_checked: 2021-12-13 (mapillary)
+#: last_checked: 2021-12-28 (mapillary)
 	RW3; 13909,20928 13662,20917
 	RW5; 13662,20917 13562,20913
 #: note: größtenteils eigentlich Bushaltestelle
@@ -6853,7 +6855,7 @@ Grünmarkierung	RW4; 12317,14535 12407,14470 12522,14385
 #: by: https://twitter.com/VIZ_Berlin/status/1402152820439138307
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-24-06-2020.pdf (Erwähnung)
 #: XXX hier wird vermutlich auch eine Grünmarkierung entstehen
-#: last_checked: 2021-12-21 (mapillary) vvv
+#: last_checked: 2022-01-08 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-31 vvv
 #: osm_watch: way id="335479077" version="14"
@@ -7211,7 +7213,10 @@ Tempo 10	RW6;RW6 11785,7583 11763,7687 11738,7790 11713,7899
 Tempo 10	RW6;RW6 14560,8528 14469,8455 14422,8407 14563,8243
 Tempo 10	RW6;RW6 14688,8355 14563,8243 14425,8116
 # 
-Tempo 10	RW6;RW6 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17497,8623 17461,8693 17416,8767 17380,8858 17335,8971 17308,9090 17282,9135
+Tempo 10	RW6;RW6 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17497,8623
+# REMOVED (nicht mehr) --- Tempo 10	RW6;RW6 17497,8623 17461,8693 17416,8767 17380,8858
+	RW6;RW6 17380,8858 17416,8767 17461,8693 17656,8700 17640,8627 17497,8623 17461,8693
+Tempo 10	RW6;RW6 17380,8858 17335,8971 17308,9090 17282,9135
 Tempo 10	RW6;RW6 17308,9090 17300,9135
 # 
 	RW3;RW3 -1872,24336 -1896,24275 -1940,24176 -2051,23901 -2071,23850 -2132,23697 -2168,23607 -2185,23567 -2248,23409 -2306,23259
