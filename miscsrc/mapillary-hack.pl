@@ -39,7 +39,7 @@ my $image_api_url = 'https://graph.mapillary.com/images';
 
 my $region = 'Berlin_DE';
 
-my $geometry_field = 'computed_geometry';
+my $geometry_field = 'geometry';
 
 GetOptions(
 	   "to-file" => \my $to_file,
