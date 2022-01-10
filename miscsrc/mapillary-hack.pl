@@ -39,13 +39,19 @@ my $image_api_url = 'https://graph.mapillary.com/images';
 
 my $region = 'Berlin_DE';
 
+my $geometry_field = 'computed_geometry';
+
 GetOptions(
 	   "to-file" => \my $to_file,
 	   "allow-override" => \my $allow_override,
 	   "open"    => \my $do_open,
 	   "used-limit=i" => \$used_limit,
+	   "geometry-field=s" => \$geometry_field,
 	  )
     or die "usage?";
+
+$geometry_field =~ m{^(computed_geometry|geometry)$}
+    or die "Invalid --geometry-field type";
 
 if ($do_open && !$to_file) {
     die "--open cannot be used without --to-file\n";
@@ -118,7 +124,7 @@ for my $sequence (@sequences) {
 	"start_id=$id",
 	"sequence=$sequence->[0]->{sequence}",
 	;
-    my @coords = map { join(",", @{ $_->{computed_geometry}->{coordinates} || [] }) } @$sequence;
+    my @coords = map { join(",", @{ $_->{$geometry_field}->{coordinates} || [] }) } @$sequence;
     print $ofh "#: url: https://www.mapillary.com/app/?pKey=$id&focus=photo&dateFrom=$capture_date&dateTo=$capture_date\n";
     print $ofh "$name\tX @coords\n";
 }
@@ -140,7 +146,7 @@ sub fetch_images {
     my $start_captured_at_iso = Time::Moment->from_epoch($start_captured_at)->strftime("%FT%TZ");
     my $end_captured_at_iso   = Time::Moment->from_epoch($end_captured_at)  ->strftime("%FT%TZ");
     warn "INFO: Fetching $start_captured_at_iso .. $end_captured_at_iso...\n" if $debug;
-    my $url = "$image_api_url?access_token=$client_token&fields=id,computed_geometry,captured_at,sequence&bbox=" . join(",", @$bbox) . "&start_captured_at=$start_captured_at_iso&end_captured_at=$end_captured_at_iso";
+    my $url = "$image_api_url?access_token=$client_token&fields=id,$geometry_field,captured_at,sequence&bbox=" . join(",", @$bbox) . "&start_captured_at=$start_captured_at_iso&end_captured_at=$end_captured_at_iso";
 
     my $data;
     my $max_try = 10;
