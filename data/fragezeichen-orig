@@ -1765,12 +1765,12 @@ Brauerstr.: evtl. wird hier die Einbahnstraßenregelung für Radfahrer aufgehoben	
 # REMOVED (done) --- Brauerstr.: Asphaltierung	? 5159,2176 4979,1964
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/214 (Erneuerung des Fahrbahnbelags)
-#: by: http://www.infravelo.de/projekt/koenigsweg/ (Asphaltierung, in Planung, 3. Quartal 2021 - 3. Quartal 2022) (mittlerweile gelöscht)
+#: by: http://www.infravelo.de/projekt/koenigsweg/ (Asphaltierung, in Planung, 3. Quartal 2021 - 3. Quartal 2022) (mittlerweile gelöscht) (wieder da: 1. Quartal 2023 - 3. Quartal 2023)
 #: osm_watch: way id="47574921" version="12"
 #: osm_watch: way id="119024153" version="7"
 #: last_checked: 2021-04-28
-#: check_frequency: 180d
-#: next_check: 2022-09-30
+#: check_frequency: 360d
+#: next_check: 2023-09-30
 Königsweg: Asphaltierung geplant	?::projected -298,2577 -197,2634 -155,2658
 # 
 #: by: http://www.berliner-woche.de/mariendorf/bauen/es-stockt-beim-ausbau-des-mariendorfer-hafen-wegs-d134880.html
@@ -2784,7 +2784,7 @@ Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::
 #: by: https://abendblatt-berlin.de/2020/05/15/neukoelln-weserstrasse-fuer-radler-ausbauen/
 #: by: http://www.infravelo.de/projekt/weserstrasse-und-ederstrasse/ (hier wird auch die Ederstr. erwähnt, außerdem: modale Filter, 2. Quartal 2021 - 4. Quartal 2022) (mittlerweile Ende: 1. Quartal 2024) (mittlerweile gelöscht und durch drei Teilprojekte ersetzt, siehe unten)
 #: by: http://www.infravelo.de/projekt/weserstrasse-bauabschnitt-1/ (2. Quartal 2021 - 2. Quartal 2022)
-#: by: http://www.infravelo.de/projekt/weserstrasse-bauabschnitt-2/ (2. Quartal 2022 - 1. Quartal 2023) (mittlerweile gelöscht)
+#: by: http://www.infravelo.de/projekt/weserstrasse-bauabschnitt-2/ (2. Quartal 2022 - 1. Quartal 2023) (mittlerweile gelöscht) (wieder da, nun bis 2. Quartal 2023)
 #: by: https://www.infravelo.de/projekt/weserstrasse-und-ederstrasse/ (2. Quartal 2021 - 1. Quartal 2024)
 #: by: https://www.kms-sonne.de/assets/2020/06/Karlson_Ausgabe7_2020_web.pdf (Diagonalstr. an Weichsel- und Roseggerstr. geplant)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1100616.php (zwischen Pannierstraße und Fuldastraße bis Ende 2021)
@@ -3666,7 +3666,7 @@ Ludwigsluster Str.: Radweg wird neu gemacht (?)	? 22896,12827 22906,12766 22906,
 # REMOVED --- #: next_check: 2021-12-31
 Gülzower Str.: Radweg wird neu gemacht	?; 22304,12157 22388,12190 22603,12359 22817,12525 22967,12647
 #: XXX aber nicht 2021
-#: last_checked: 2021-12-30 (mapillary)
+#: last_checked: 2022-01-09 (mapillary)
 #: check_frequency: 270d
 Cottbusser Str.: Fahrradstraße geplant	?::projected 23104,14827 23175,14823 23222,14809 23297,14772 23354,14756 23405,14758 23531,14781 23735,14814 23798,14826
 #: by: ^^^
@@ -3834,8 +3834,8 @@ Gartenstadt Tempelhof: Radwegverbindung geplant	?::projected 7949,7607 8188,7610
 # 
 #: by: https://www.berliner-woche.de/hellersdorf/c-verkehr/kreuzung-erhaelt-ampelanlage_a260779 (noch 2020)
 #: osm_watch: node id="34104628" version="14"
-#: last_checked: 2021-03-06
-#: check_frequency: 90d
+#: last_checked: 2022-01-09 (mapillary)
+#: check_frequency: 120d
 Gothaer/Eisenacher Str.: Ampel wird gebaut	?::projected 22883,15091 22899,15073 22916,15054
 # 
 # REMOVED (Gehwegplatten sind geblieben) --- #: by: https://twitter.com/VIZ_Berlin/status/1247487908363280386 --- #: next_check: 2020-05-07 --- Columbiadamm: Radweg wird saniert	?::inwork; 9395,8726 9570,8715
@@ -5102,7 +5102,7 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 #: last_checked: 2021-12-31
 #: check_frequency: 60d
 Indira-Gandhi-Str.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 14828,15050 14686,15608 14653,15738 14609,15921 14597,15970 14595,15980 14576,16069 14552,16171 14522,16260 14499,16341
-#: last_checked: 2021-12-22 (mapillary)
+#: last_checked: 2022-01-09 (mapillary)
 #: check_frequency: 90d
 Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 18223,18153 18279,18079 18412,17920 18476,17842 18553,17749 18635,17649
 # REMOVED (hier vermutlich sowieso nicht) --- Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 18635,17649 18694,17577 18704,17565
@@ -5128,7 +5128,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 18
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2021-12-31
+#: last_checked: 2022-01-11
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: by: https://api.fixmyberlin.de/api/projects/328 (Grünmarkierung + Verbreiterung, teilweise Leitboys)
@@ -5414,6 +5414,7 @@ Rohrwallallee - Windwallstr.: Asphaltstreifen soll eingerichtet werden	?::projec
 #: by: https://www.meinetram.de/de/Wir-machen-den-Sued-Osten-fit
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/protokoll-18-ag-radverkehr_24-02-2021.pdf (Erwähnung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1164852.php
+#: by: https://berliner-abendblatt.de/2022/01/11/umgestaltung-doerpfeldstrasse-gutachten-wird-vorgestellt/
 #: osm_watch: way id="11389403" version="40"
 #: last_checked: 2021-12-17
 #: check_frequency: 360d
@@ -5812,7 +5813,8 @@ Ollenhauerstr.: Planung von Radverkehrsanlagen	?::projected 5345,18675 5324,1856
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8893
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103654302722/54302722/00115526/26-Anlagen/02/vzb0972_V-B-Plan_10-110VE_Aufstellung.pdf
 #: XXX Bebauungsplan 10-110VE
-#: next_check: 2022-05-01
+#: last_checked: 2022-01-09 (mapillary)
+#: check_frequency: 360d
 Theaterplatz: entfällt die direkte Durchwegung? Oder wird es eine Hausdurchfahrt geben?	?::projected 24968,15307 25086,15298
 # 
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/bezirksamt-listet-alle-2020-kommenden-radverkehrsanlagen-auf_a274738 (bis ins Jahr 2021) vvv
@@ -7086,6 +7088,10 @@ Arberlandplatz	? 19705,9039 19728,8998
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/an-der-ludwig-quidde-strasse-sollen-500-wohnungen-entstehen_a318027 (Planung)
 #: by: https://berliner-abendblatt.de/2021/11/14/in-franzoesisch-buchholz-wird-gebaut/ (digitale Informationsveranstaltung)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1158307.php
+#: by: http://www.bjp-planer.de/projekt_pankow.php (städtebaulicher Wettbewerb)
+#: by: https://www.dafmap.de/d/berlin.html?id=8037&mt=4&zoom=17
+#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/wettbewerb-zum-quartier-ludwig-quidde-strasse-entschieden_a332531
+#: by: https://media04.berliner-woche.de/article/2021/12/31/1/386501_XXL.jpg
 #: XXX zwischen Ludwig-Quidde-Str. und Weg zur Lyonstr. existiert bis zum Graben beret ein Track, hauptsächlich grasbewachsen; über den Graben kommt man nur über einen etwas provisorischen Übergang und ein paar Stufen
 #: last_checked: 2021-07-01 (mapillary)
 #: check_frequency: 720d
@@ -7653,9 +7659,9 @@ Stresowufer: ein Uferweg wird entstehen	?::projected -3393,13777 -3300,13923 -31
 #: by: https://api.fixmyberlin.de/api/projects/271 (zusätzlich auch eine Verbindung zum TR7 über Ludwig-Renn-Str. und Bürgerpark)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/fahr-rat-formulierte-empfehlungen-fuer-den-radverkehr-in-marzahn-hellersdorf_a277189 (Verzögerung)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/in-marzahn-hellersdorf-werden-2021-acht-groessere-radwegprojekte-umgesetzt_a297401 (Realisierung 2021)
-#: last_checked: 2021-03-06
+#: last_checked: 2022-01-09 (mapillary)
 #: check_frequency: 180d
-#: next_check: 2021-12-31
+# REMOVED --- #: next_check: 2021-12-31
 #: XXX Wo genau befindet sich die Alte Rüsternallee? Wo sollen die Radwegrampen gebaut werden? Oder ist vielleicht auch der Privatweg südlich der Bitterfelder Str. gemeint?
 Bitterfelder Str. - Alte Rüsternallee: Radwegrampen in Planung	?::projected 20319,16542 20423,16541 20359,16521
 # 

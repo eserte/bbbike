@@ -723,7 +723,7 @@ teilweise mit Leitboys geschützt	RW4; 14208,12235 14280,12223 14381,12205 14427,
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur, danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
-#: last_checked: 2021-12-31
+#: last_checked: 2022-01-11
 #: check_frequency: 30d
 #: next_check: 2022-03-31
 	RW4; 14926,12129 14994,12121 15117,12106
@@ -3568,17 +3568,17 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 12987,5263 13046,5267 13112,5253 13
 #: by: https://api.fixmyberlin.de/api/projects/416
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7549 (Forderung nach Verstetigung)
 #: by: https://www.infravelo.de/projekt/blaschkoallee/ (mittlerweile wieder gelöscht)
-#: by: http://www.infravelo.de/projekt/blaschkoallee-1/ (Beginn/Ende: 3. Quartal 2021, Verstetigung) (mittlerweile gelöscht)
+#: by: http://www.infravelo.de/projekt/blaschkoallee-1/ (Beginn/Ende: 3. Quartal 2021, Verstetigung) (mittlerweile gelöscht) (und wieder da, nun bis 1. Quartal 2022)
 #: XXX Radspur wird vermutlich "verstetigt"
 #: osm_watch: way id="451445143" version="8"
 #: last_checked: 2022-01-05 vvv
 #: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2020-12-31 vvv
+#: next_check: 2022-03-31 vvv
 # REMOVED --- #: XXX hier wegen Baustelle (?) keine Radspur --- #: source_id: 2147345958 (Leitungsarbeiten, bis 6.11.2020, inaktiv) --- #: source_id: 2147346600 (bis 26.3.2021) --- #: next_check: 2021-03-26
 #: osm_watch: way id="824542508" version="4"
 #: osm_watch: way id="824542507" version="5"
 provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: note: Blaschkoallee Richtung Westen
@@ -3589,7 +3589,7 @@ provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
 #: osm_watch: way id="4603499" version="35"
 #: last_checked: 2022-01-05
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2020-12-31
+#: next_check: 2022-03-31
 provisorisch geschützter Radstreifen	RW4; 13250,5234 13112,5253 13046,5267 12987,5263
 	RW1; 12987,5263 12883,5257
 # 
@@ -5880,7 +5880,7 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2
 #: by: https://api.fixmyberlin.de/api/projects/439
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Bauarbeiten ab Mitte 2022)
 #: XXX Asphaltierung des Radwegs vvv
-#: last_checked: 2021-08-10 (mapillary) vvv
+#: last_checked: 2022-01-09 (mapillary) vvv
 #: check_frequency: 300d vvv
 #: next_check: 2022-09-30 vvv
 	RW1; 16718,18204 16905,17949 16981,17855

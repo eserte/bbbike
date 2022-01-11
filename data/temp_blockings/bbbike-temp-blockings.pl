@@ -34225,14 +34225,15 @@ EOF
 EOF
      },
      { from  => 1640894267, # 2021-12-30 20:57
-       until => $isodate2epoch->("2022-01-14 08:00:00"), # 1643670000, # 2022-02-01 00:00
-       text  => 'Greifswalder Str.: vor der Kreuzung Thomas-Mann-Str. Wasserrohrbruch, Fahrbahn gesperrt, evtl. gibt es Beeinträchtigungen für Radfahrer, voraussichtlich bis 14.01.2022',
+       until => $isodate2epoch->("2022-01-20 08:00:00"), # 1643670000, # 2022-02-01 00:00
+       text  => 'Greifswalder Str.: vor der Kreuzung Thomas-Mann-Str. Wasserrohrbruch, Fahrbahn gesperrt, es gibt auch Beeinträchtigungen für Radfahrer, voraussichtlich bis 20.01.2022',
        type  => 'handicap',
        source_id => 'https://twitter.com/VIZ_Berlin/status/1476450886004219906',
        data  => <<EOF,
 #: source_id: viz2021:13.43916,52.54122,29.12.2021,09:14
 #: note: bei rbb seit dem 4.1.2021 entfernt
 #: by: https://twitter.com/VIZ_Berlin/status/1479526789810692104 (bis 14.1.2022)
+#: by: https://twitter.com/VIZ_Berlin/status/1480861566732050437 (bis 20.1.2022)
 #: also_indoor: traffic (G,H)
 	q3::inwork; 12737,15154 12870,15342
 EOF

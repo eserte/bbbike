@@ -28,7 +28,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn nur für Baufahrzeuge	q3::inwork 125
 # 
 #: note: laut rbb bis 29.10.2021, laut Parkverbotsschilder bis 28.1.2022 vvv
 #: also_indoor: traffic (H(falsch),G(teilweise))
-#: last_checked: 2021-12-28 vvv
+#: last_checked: 2022-01-11 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-01-28 vvv
 # REMOVED (offen) --- Jessnerstr.: Sperrung der Fahrbahn nördlich der Oderstr.	q3::inwork 14946,11697 14986,11760
@@ -725,16 +725,7 @@ Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg
 # REMOVED (keine Einschränkungen mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16900,9861 16925,9852
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (kein Zweirichtungsradweg mehr) --- #: next_check_id: RHINSTRASSENBRUECKE-2018 --- #: last_checked: 2021-05-03 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2021-07-30 vvv --- Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig	q2::inwork; 18225,12697 18220,12450 18216,12262 18216,12239 18215,12123 --- Rhinstr.: Zweirichtungsradweg auf engem Bürgersteig, langer Umweg an der Seddiner Str.	q3::inwork; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: XXX laut rbb (am 31.8.2021 entfernt) und Halteverbotsschildern bis 31.08.2021
-#: also_indoor: traffic (ex-H)
-#: priority: #B
-#: last_checked: 2021-12-18
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2021-08-31
-# REMOVED --- #: valid: -20210831
-Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweichen	q3::inwork 15055,11505 15126,11474 15162,11458
-# 
+# REMOVED (offen) --- #: XXX laut rbb (am 31.8.2021 entfernt) und Halteverbotsschildern bis 31.08.2021 --- #: also_indoor: traffic (ex-H) --- #: priority: #B --- #: last_checked: 2021-12-18 --- #: check_frequency: 30d -- # REMOVED --- #: next_check: 2021-08-31 --- # REMOVED --- #: valid: -20210831 --- Wiesenweg: Sperrung unter der Brücke, Fahrbahn ist gesperrt, auf Gehweg ausweichen	q3::inwork 15055,11505 15126,11474 15162,11458
 # REMOVED (fertig) --- #: next_check_id: KYNASTSTRASSE-2018 --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50705 --- #: XXX mittlerweile steht sogar schon an der Straße Alt-Stralau ein "Radfahren verboten"-Schild --- #: source_id: 2147343461 (bis Mitte Juni 2019) --- #: note: laut fritz bis Ende August 2019 --- #: priority: #A --- #: also_indoor: traffic (H) --- #: last_checked: 2019-07-06 --- #: next_check: 2019-08-31 --- #: valid: -20190831 --- Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis Mitte Juni 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
 # REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: XXX laut vmz bis Ende Dezember 2018, Gesamtmaßnahme bis März 2019 laut fritz bis 25.01.2019 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: -20190125 --- Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 15335,11943
 # REMOVED #: also_indoor: traffic --- #: next_check_id: WIESENWEG-2018 --- #: last_checked: 2018-11-27 --- Wiesenweg: Fußgängerschutztunnel unter der S-Bahnbrücke, eng	q3:inwork 15162,11458 15126,11474
@@ -865,9 +856,10 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 # 
 # REMOVED (fertig) --- #: last_checked: 2020-12-30 --- Charlottenburger Str.: Einbahnstraßenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
 # 
+#: by: https://charlieundderwundergarten.de/ (kein Fertigstellungsdatum)
 #: add_fragezeichen: Bis wann dauern die Bauarbeiten an?
 #: last_checked: 2022-01-09
-#: check_frequency: 90d
+#: check_frequency: 150d
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
 # 
 ### Pankow ###
