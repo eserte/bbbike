@@ -29465,7 +29465,7 @@ EOF
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
-#: also_indoor: traffic (H)
+#: also_indoor: traffic (H,B)
 #: osm_watch: way id="1006570991" version="1"
 #: last_checked: 2021-12-18 (indoor)
 #: check_frequency: 30d
@@ -31265,7 +31265,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
-#: also_indoor: traffic (H)
+#: also_indoor: traffic (H,B)
 #: XXX Stand 2021-07-31: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
 #: last_checked: 2021-12-16
@@ -32156,7 +32156,7 @@ EOF
 #: XXX wann sind die Bauarbeiten beendet?
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1141399.php (evtl. hat der Bebauungsplan was mit den Bauarbeiten zu tun)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-89ve/7-89-ve-pas_ol_11_mit-deckblatt_internetfassung_gez.pdf
-#: also_indoor: traffic (ex-G)
+#: also_indoor: traffic (H,G)
 #: osm_watch: way id="362719487" version="6"
 #: osm_watch: way id="687428752" version="2"
 #: last_checked: 2021-10-19
@@ -33565,18 +33565,21 @@ EOF
 EOF
      },
      { from  => 1630965600, # 2021-09-07 00:00
-       until => undef, # 1638313199, # 2021-11-30 23:59
-       text  => 'Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer: Bauarbeiten an der Eisenbahnüberführung, komplette Sperrung des Weges, Ende der Bauarbeiten unbekannt', # was 'bis November 2021'
+       until => $isodate2epoch->("2023-12-31 18:00:00"), # undef, # 1638313199, # 2021-11-30 23:59
+       text  => 'Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer: Bauarbeiten an der Eisenbahnüberführung, komplette Sperrung des Weges, voraussichtlich bis Ende 2023', # was 'bis November 2021'
        type  => 'gesperrt',
        source_id => 'https://www.dresdnerbahn.de/mediathek/file/371/XuemcxFdBKgO2ODB13RfVD6NGI-aMFPmtCRyf_fgMuk/Downloads/20210604_DrB_virtuelle_Buergerinfo_online.pdf',
        data  => <<EOF,
 #: next_check_id: DRESDNERBAHN-2021
 #: XXX Ursprünglich wurde 08/2021 als Beginn geplant, das hat sich aber um einen Monat verschoben --- vielleicht das Ende auch?
+#: XXX ggfs nach gesperrt-orig überführen
+#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20220111 (bis Ende 2023)
 #: note: Fertigstellung EÜ laut Baustellenschild 2023
 #: osm_watch: way id="229990468" version="6"
 #: add_fragezeichen: Ist hier noch immer gesperrt?
 #: last_checked: 2021-11-28
-# REMOVED --- #: next_check: 2021-11-30
+#: check_frequency: 120d
+#: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
 EOF
      },

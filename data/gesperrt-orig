@@ -1239,11 +1239,11 @@ Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 # REMOVED --- #: next_check_id: UBAHN1-2020 --- #: by: https://viz.berlin.de/2021/03/bvg-letzte-arbeiten-am-kreuzberger-viadukt/ (Schlesisches Tor wird frühestens etwa am 22. April 2021 angefahren) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahnen-fahren-wieder-durch_a306510 --- #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt --- laut rbb Rückbau bis Ende Juni 2021 --- 
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
-#: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022)
+#: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
 #: last_checked: 2022-01-03
 #: check_frequency: 30d
-# REMOVED --- #: next_check: 2022-01-12
+#: next_check: 2022-06-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
 #(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
 Wadzeckstr.	1s:q4 11315,13210 11354,13184 11369,13174
@@ -2571,7 +2571,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #: osm_watch: way id="43205335" version="2"
 # REMOVED --- #: last_checked: 2019-10-26 (wosch) (keine Anzeichen für Bauarbeiten) --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-01-01
-#: last_checked: 2021-07-19 (wosch)
+#: last_checked: 2021-11-13 (wosch)
 #: check_frequency: 180d
 tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 # 
@@ -3414,7 +3414,7 @@ Tasmanienweg: durch Bauzäune abgesperrt	2::inwork -2747,19074 -2647,19070
 #: by: https://viz.berlin.de/2021/06/a114-vollsperrung/ (gesperrt seit 14.6.2021) (kein Fertigstellungdatum)
 #: osm_watch: way id="298416172" version="8"
 #: XXX wird abgerissen und neu gebaut
-#: last_checked: 2021-07-19 (wosch) vvv
+#: last_checked: 2021-11-13 (wosch) vvv
 #: check_frequency: 180d vvv
 # REMOVED --- #: next_check: 2021-01-01
 Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
@@ -3545,6 +3545,7 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/betriebsbahnhof-schoeneweide-ist-geschichte_a296360 (bis Ende 2021)
 #: by: https://www.facebook.com/larsduesterhoeft1981/posts/2986916781559149 (provisorische Treppe wurde geöffnet)
 #: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022)
+#: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
 #: last_checked: 2021-12-17 vvv
 # REMOVED --- #: check_frequency: 90d vvv
@@ -3646,14 +3647,14 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2021-09-11
+#: last_checked: 2022-01-12
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2022-01-06
+#: last_checked: 2022-01-12
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -3661,7 +3662,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2022-01-05
+#: last_checked: 2022-01-12
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 # 

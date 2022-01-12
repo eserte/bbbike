@@ -953,13 +953,17 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1157085.php (Freigabe der Ersatzbrücke spätestens Januar 2022)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1158054.php (Radspur ab 16.12.2021)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7048 (Antrag)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1166441.php (alte Brücke bleibt noch bis ca. Mitte 2022, dann Zweirichtungsradweg?)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1166680.php
+#: by: https://berliner-abendblatt.de/2022/01/12/elsenbruecke-behelfsbruecke-ueber-die-spree-ist-fuer-den-verkehr-freigegeben/
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
 #: source_id: viz2021:13.461003,52.492338,30.10.2021,06:00 (Wochenendsperrung für Kfz-Verkehr)
+#: source_id: viz2021:13.463301,52.496054,12.01.2022,11:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-01-06
+#: last_checked: 2022-01-12
 #: check_frequency: 60d
 #: next_check: 2022-01-31
 # REMOVED --- provisorischer gemeinsamer Geh- und Radweg	RW2;
@@ -2857,13 +2861,13 @@ asphaltiert	RW1; 30210,4046 30037,4176 29959,4235 29931,4249
 	RW3; 29931,4249 29901,4264 29850,4288
 Gehweg für Radfahrer frei	RW1; 31447,3372 31632,3297
 	RW2; 31632,3297 31447,3372
-	RW2; 31632,3297 31863,3257 31973,3237
+	RW2; 31632,3297 31863,3257 31967,3238 31973,3237
 # REMOVED --- #: XXX nach den Bauarbeiten kein Zweirichtungsradweg mehr --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (Fertigstellung soll bis Oktober 2018 erfolgen) --- #: last_checked: 2018-08-04 (mapillary)
 asphaltiert	RW2;RW2 33525,2901 33327,2979 33111,3064
 asphaltiert	RW2;RW2 33111,3064 32814,3107 32376,3175 32121,3215 32016,3230
 asphaltiert	RW2; 32016,3230 31973,3237
 	RW3; 31973,3237 32016,3230
-alter Beton	RW1; 31973,3237 31863,3257 31632,3297
+alter Beton	RW1; 31973,3237 31967,3238 31863,3257 31632,3297
 betonierter gemeinsamer Geh- und Radweg	RW2; 29192,7368 29168,7350 28586,7139 26247,6228 26139,6188 25967,6125 25776,6054 25584,6029
 	RW3; 25627,6347 25601,6158 25584,6029
 asphaltierter gemeinsamer Geh- und Radweg, einige leichte Wurzelhebungen	RW8;RW2 25627,6347 25663,6586 25766,7319 26027,7623 26113,7760 26180,7898 26699,8385 26745,8455
@@ -3120,7 +3124,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: 2147345165 (bis Ende 2021)
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
 #: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022)
-#: last_checked: 2021-10-24 vvv
+#: last_checked: 2022-01-10 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2022-08-31 vvv
 #: priority: #A vvv
