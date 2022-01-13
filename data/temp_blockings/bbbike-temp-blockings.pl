@@ -27909,7 +27909,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1058179.php (Sperrung der Kreuzung Schönstraße/Paul-Oestreich-Straße, bis 26. März 2021)
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/einmuendung-komplett-gesperrt_a303306
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
-#: also_indoor: traffic (ex-G,H(falsch?))
+#: also_indoor: traffic (G(wieder),H(falsch?),B)
 #: priority: #B vvv
 #: last_checked: 2021-12-16 vvv
 #: check_frequency: 60d vvv
@@ -28885,6 +28885,7 @@ EOF
 #: source_id: 2147343519 (bis 31.12.2021)
 #: source_id: viz2021:13.468875,52.614511,27.11.2018,09:00 (bis 31.08.2023)
 #: note: laut rbb nur bis 31.08.2022
+#: also_indoor: traffic (G,H,B)
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5735 (bis Ende 2022?)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5772 (bis Ende August 2023?)
@@ -30851,7 +30852,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-01-07
+#: last_checked: 2022-01-13
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31070,7 +31071,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2022-01-09 vvv
+#: last_checked: 2022-01-13 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -31867,7 +31868,7 @@ EOF
 #: source_id: 2147346816 (bis 31.03.2025) (früher nur bis 2022)
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (G,H,B)
 #: last_checked: 2021-12-13
 #: check_frequency: 120d
 #: next_check: 2025-03-31
@@ -32189,6 +32190,7 @@ EOF
        source_id => '2147346788',
        data  => <<EOF,
 #: source_id: viz2021:13.536634,52.420965,13.01.2021,07:00
+#: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="683770241" version="6"
 	q4::inwork 19564,1871 19743,1804
 EOF
@@ -32941,7 +32943,7 @@ EOF
 #: next_check_id: BUCKOWERDAMM-2021
 #: source_id: viz2021:13.438231,52.41937,02.06.2021,08:00 (inaktiv)
 #: source_id: viz2021:13.438231,52.41937,13.11.2021,08:00
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (G,B)
 #: note: bei rbb weiterhin "in beiden Richtungen gesperrt"
 #: by: https://twitter.com/VIZ_Berlin/status/1459408184053932037 (nur Richtung Norden)
 # REMOVED ---	q4::inwork 12984,1011 12941,1256 12938,1348
@@ -33014,6 +33016,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/bruno-taut-strasse-bekommt-unter-anderem-eine-neue-asphaltdecke_a313839 (bis Juli 2022)
 #: by: https://abendblatt-berlin.de/2021/06/23/mit-den-ferien-kommen-die-baustellen/
+#: also_indoor: traffic (G,B)
 #: source_id: viz2021:13.569262,52.411283,12.07.2021,09:00 (hier: bis 31.1.2022)
 	q4::inwork; 21858,811 21902,877 21977,988 22034,1006 22092,999
 EOF
@@ -33424,6 +33427,7 @@ EOF
 # REMOVED (hier nicht mehr) ---	q2::inwork 19020,9364 19109,9306
 # REMOVED (hier nicht mehr) ---	q2::inwork 19128,9523 19109,9306
 # REMOVED (hier nicht mehr) ---	q2::inwork 19109,9306 19195,9249
+#: also_indoor: traffic (G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: last_checked: 2022-01-10 vvv
 	q3::inwork 19020,9364 18939,9417
@@ -33944,11 +33948,12 @@ EOF
 EOF
      },
      { from  => 1635634800, # 2021-10-31 01:00
-       until => 1642287600, # 2022-01-16 00:00
-       text  => 'Bernau - Lanke: Bauarbeiten, Sperrung, vom 01.11.2021 bis 15.01.2022',
+       until => $isodate2epoch->("2022-04-22 18:00:00"), # 1642287600, # 2022-01-16 00:00
+       text  => 'Bernau - Lanke: Bauarbeiten, Sperrung, vom 01.11.2021 bis 22.04.2022',
        type  => 'gesperrt',
        source_id => 'LS/721-E/21/142',
        data  => <<EOF,
+#: next_check_id: BERNAULANKE-2021
 	2::inwork 20850,38827 21039,38033 21051,37792 21040,37527 21159,36785 20969,36076 21015,35757 21193,35322 21465,34816 22153,33963
 EOF
      },
@@ -34193,7 +34198,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Niemetzstraße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Haben die Bauarbeiten etwas mit der geplanten Asphaltierung zu tun, oder sind das nur 
-#: also_indoor: traffic (G(nur Niemetz)) vvv
+#: also_indoor: traffic (ex-G,H,B(alle nur Niemetz)) vvv
 #: last_checked: 2021-12-26 vvv
 #: check_frequency: 45d vvv
 	q4::inwork; 13702,7418 13654,7380 13601,7366 13519,7345 13476,7330
@@ -34256,7 +34261,7 @@ EOF
        text  => 'Jahnstr. und Priesterweg: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic
+#: also_indoor: traffic (B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2022-01-05
 	q4::inwork 13355,6235 13227,6209 13220,6237
@@ -34267,7 +34272,7 @@ EOF
        text  => 'Robert-Uhrig-Str.: zwischen Rummelsburger Str. und Zachertstr. Bauarbeiten, Richtung Norden gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2022-01-07
 	q4::inwork; 17719,11092 17725,11228

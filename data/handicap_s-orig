@@ -11,6 +11,7 @@
 ### Friedrichshain ###
 # 
 #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022
+#: also_indoor: traffic (G,B)
 #: last_checked: 2021-12-21
 #: check_frequency: 45d
 #: next_check: 2022-04-01
@@ -27,7 +28,7 @@ Mühsamstr.: Fahrbahn im Kreuzungsbereich Thaerstr. gesperrt	q4::inwork 13844,129
 Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn nur für Baufahrzeuge	q3::inwork 12596,11696 12453,11790 12378,11806
 # 
 #: note: laut rbb bis 29.10.2021, laut Parkverbotsschilder bis 28.1.2022 vvv
-#: also_indoor: traffic (H(falsch),G(teilweise))
+#: also_indoor: traffic (H(falsch),G(teilweise),B)
 #: last_checked: 2022-01-11 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-01-28 vvv
@@ -309,7 +310,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # REMOVED (mittlerweile entfernt) --- #: source_id: 2147347007 (bis 25.6.2022) --- #: source_id: viz2021:13.381216,52.513773,22.03.2021,14:44 --- #: last_checked: 2021-05-22 --- #: check_frequency: 90d --- #: next_check: 2022-06-25 --- Hannah-Arendt-Str.: Fahrbahn Richtung Westen gesperrt	q3::inwork; 8901,12008 8844,11984
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/palais-am-brandenburger-tor-neubau-am-holocaust-mahnmal.177/
-#: also_indoor: traffic (H,G)
+#: also_indoor: traffic (ex-H,ex-G,B)
 #: osm_watch: way id="4597320" version="19"
 #: osm_watch: way id="43350531" version="11"
 #: source_id: 2147343824 (bis 30.6.2021)
@@ -694,7 +695,7 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
-#: also_indoor: traffic (G(teilweise),ex-H)
+#: also_indoor: traffic (G(zu viel),H(zu wenig),B)
 #: last_checked: 2021-12-30 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
@@ -707,7 +708,7 @@ Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Um
 #: XXX Bis wann dauern die Bauarbeiten an?
 #: XXX Mittlerweile nur etwa 100m
 #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FD6C35EF-640E-43B3-8F22-17914A1869B0 (Verbindungstrasse Fernwärme Klingenberg)
-#: also_indoor: traffic (G(zu viel)) vvv
+#: also_indoor: traffic (G,B(beide zu viel)) vvv
 # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="1002249853" version="2"
 # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="198589916" version="9"
 #: osm_watch: way id="198589913" version="6"
@@ -754,11 +755,12 @@ Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg
 # REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1053645.php (25. Februar 2021 - 16. April 2021) --- #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-bauen/bauarbeiten-kreuzung-gesperrt_a301644 --- #: source_id: 2147346907 (bis 16.4.2021) --- #: last_checked: 2021-03-25 (mapillary) vvv --- #: next_check: 2021-04-16 vvv --- #: valid: -20210416 vvv --- Simon-Bolivar-Str./Küstriner Str.: Kreuzungsbereich gesperrt	q3::inwork 15856,14915 15944,14836 16033,14756 --- Simon-Bolivar-Str./Küstriner Str.: Kreuzungsbereich gesperrt	q3::inwork 15878,14761 15944,14836 15977,14871 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED --- #: source_id: INKO_111447 --- #: source_id: LMS_1290313357 --- #: last_checked: 2013-04-20 --- #: next_check: 2013-06-30 (Ende: 1.7.2013) --- Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17171,16372 17220,16320 17271,16280 17383,16197
 # 
-### Marzzahn ###
+### Marzahn ###
 # 
 #: add_fragezeichen Bis wann gibt es diese Einschränkung?
 #: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9657 (hier sogar bis Ende 2026)
+#: also_indoor: traffic (G,H,B)
 #: last_checked: 2021-12-21 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2024-12-31
@@ -770,6 +772,7 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: by: https://www.nbb-netzgesellschaft.de/ueber-die-nbb/presse/pressemitteilungen/reparatur-beeintraechtigt-verkehr-in-schoeneberg/
 #: XXX laut Schild bis Dezember 2021 (dauer aber länger)
 #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.2.2022)
+#: also_indoor: traffic (H,B)
 #: last_checked: 2021-12-29
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2022-02-28
@@ -833,6 +836,7 @@ Moltkestraßenbrücke: Fahrbahn gesperrt	q4::inwork 3867,4537 3898,4490
 #: osm_watch: way id="885619857" version="6"
 #: osm_watch: way id="885619858" version="4"
 #: note: laut rbbtext bis 31.12.2020
+#: also_indoor: traffic (G,B)
 #: priority: #B
 #: last_checked: 2021-12-21 vvv
 #: check_frequency: 60d vvv
