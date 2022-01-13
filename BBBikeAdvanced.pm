@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1312,7 +1312,7 @@ EOF
 	if ($os eq 'win') {
 	    @selection_types = ('CLIPBOARD');
 	}
-	for my $selection_type (@selection_types) {
+    SELTYPELOOP: for my $selection_type (@selection_types) {
 	    my $s = eval { $t->SelectionGet('-selection' => $selection_type) };
 	    next if $@;
 	    if ($map eq 'postgis') {
@@ -1373,6 +1373,15 @@ EOF
 		    my($y,$x) = ($1,$2);
 		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
 		    push @coords, [$x, $y];
+		}
+
+		# BingMaps
+		if ($s =~ m{https://dev.virtualearth.net/REST/v1/Locations/([-+]?[0-9\.]+),([-+]?[0-9\.]+)} ||
+		    $s =~ m{https://dev.virtualearth.net/REST/V1/Imagery/Copyright/de-DE/RoadOnDemand/\d+/([-+]?[0-9\.]+)/([-+]?[0-9\.]+)}) {
+		    my($y,$x) = ($1,$2);
+		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		    push @coords, [$x,$y];
+		    last SELTYPELOOP; # detect only one coordinate, and shortcut the search --- the pure lon/lat check below probably also matches, and does it the wrong way around
 		}
 
 		# DDD or BBBike coordinates
