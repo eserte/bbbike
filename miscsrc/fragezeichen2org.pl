@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2016,2017,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016,2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -279,7 +279,7 @@ for my $file (@files) {
 		 }
 	     }
 
-	     my @extra_url_defs;
+	     my @extra_url_defs; # array of arrays: linktext, URL, text after link
 
 	     # Southmost coordinate --- works best with a marker with
 	     # bubble put to the bottom
@@ -318,7 +318,8 @@ for my $file (@files) {
 	     if ($dir->{also_indoor}) {
 		 for my $also_indoor_dir (@{ $dir->{also_indoor} }) {
 		     if      ($also_indoor_dir =~ m{^traffic\b}) {
-			 push @extra_url_defs, ['Traffic', "https://mc.bbbike.org/mc/?lon=$southmost_px&lat=$southmost_py&zoom=15&profile=traffic"];
+			 my($extra) = $also_indoor_dir =~ m{(\(.*?\))};
+			 push @extra_url_defs, ['Traffic', "https://mc.bbbike.org/mc/?lon=$southmost_px&lat=$southmost_py&zoom=15&profile=traffic", $extra];
 		     } elsif ($also_indoor_dir =~ m{^search\b}) {
 			 (my $search_term = $also_indoor_dir) =~ s{^search\s+}{};
 			 if ($search_term) {
@@ -487,7 +488,7 @@ EOF
 	     # Links (bbbike data, OSM and other extra URLs)
 	     $body .= "   [[$where][$basebasename]]";
 	     if (@extra_url_defs) {
-		 $body .= " " . join(" ", map { "[[$_->[1]][$_->[0]]]" } @extra_url_defs);
+		 $body .= " " . join(" ", map { "[[$_->[1]][$_->[0]]]" . (defined $_->[2] ? $_->[2] : "") } @extra_url_defs);
 	     }
 	     $body .= "\n";
 
