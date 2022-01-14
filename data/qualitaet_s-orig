@@ -12310,9 +12310,10 @@ Falkenberger Chaussee [Wohngebiet]: Beton	Q1+ 17358,17400 17211,17600
 Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q1 13870,9872 14152,9746
 #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/anreise-zum-spreepark-soll-mit-schiffen-und-mehr-bussen-erfolgen_a315294 (Fahrbahn soll wasserdurchlässige Deckschicht bekommen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_50_4625_4696_online.pdf (Absichtserklärung zu einer Straßenlandeinziehung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_02_0049_0116_online.pdf (Teileinziehung)
 #: XXX Wann wird der Asphalt ersetzt? Wann wird die Straße nur für Anlieger/Radfahrer frei sein?
 #: last_checked: 2022-01-05
-#: check_frequency: 180d
+# REMOVED --- #: check_frequency: 180d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
 Chlodwigstr.: Asphalt	Q0 8499,5016 8433,5108 8356,5195
@@ -30576,4 +30577,5 @@ Kreuzungsbereich asphaltiert	Q0 10571,15933
 Kreuzungsbereich asphaltiert	Q0 10593,16037
 Einmündungsbereich mit Kopfsteinpflaster	Q2+ 10755,14067
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 11457,17585
+Einmündungsbereich asphaltiert	Q0 12053,9793
 #: ignore ^^^

@@ -11954,7 +11954,7 @@ Viechtacher Str.	N 19657,9666 19727,9672 19801,9680 19871,9680 19923,9682
 Eisensteiner Str.	N 19727,9672 19722,9483
 #: note: Privatstraße
 #: XXX wird hier noch ein verkehrsberuhigter Bereich ausgewiesen?
-#: osm_watch: way id="338124008" version="9"
+#: osm_watch: way id="338124008" version="10"
 #: priority: #C
 #: last_checked: 2021-11-16
 #: check_frequency: 120d
@@ -15304,7 +15304,12 @@ Bleicheroder Str.	N 11263,18842 11439,18890 11526,18929 11622,18964 11727,19001 
 #: note: Parkplatz
 (Bleicheroder Str. - Pasewalker Str.)	N 11818,19089 11845,19121
 (Bleicheroder Str. - Pasewalker Str.)	NN 11845,19121 11884,19169 11895,19183 11912,19279 11927,19308
-(Pasewalker Str. - Vesaliusstr.)	NN 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169 11841,19188 11763,19191
+(Pasewalker Str. - Vesaliusstr.)	NN 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_02_0049_0116_online.pdf (Einziehung einer öffentlichen Grün- und Erholungsanlage)
+#: XXX Wird dieser Weg zurückgebaut? Evtl. als "Ersatz" den nördlich verlaufenden Weg aufnehmen?
+#: osm_watch: way id="59204281" version="7"
+#: osm_watch: way id="881307384" version="2"
+(Pasewalker Str. - Vesaliusstr.)	NN 11884,19169 11841,19188 11763,19191
 (Pasewalker Str. - Prenzlauer Promenade)	NN 11913,19144 11928,19133 11947,19161 11958,19158
 Grevesmühlener Str.	N 18187,18439 18045,18456 18024,18455 17972,18418 17881,18344 17800,18277 17709,18201 17702,18168
 Klützer Str.	N 17881,18344 17788,18463 17885,18550 17900,18653
