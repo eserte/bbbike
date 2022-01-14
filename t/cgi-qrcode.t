@@ -35,8 +35,9 @@ $ua->env_proxy;
 
 {
     my $resp = $ua->get("$qrcode_cgi/bbbike.cgi?info=1");
-    ok $resp->is_success;
-    is $resp->content_type, 'image/png';
+    ok $resp->is_success, 'using local host'
+	or diag $resp->dump;
+    is $resp->content_type, 'image/png', 'png by content-type';
     my $data = $resp->decoded_content;
     image_ok(\$data);
     is_barcode($resp, type => "QR-Code", like_data => qr{^https?://.*\Q/bbbike.cgi?info=1\E$});
@@ -44,10 +45,11 @@ $ua->env_proxy;
 
 {
     my $resp = $ua->get("$qrcode_cgi/.l/bbbike.cgi?info=1");
-    ok $resp->is_success, 'forcing live host';
+    ok $resp->is_success, 'forcing live host'
+	or diag $resp->dump;
     # In the error log should appear (if $DEBUG is on):
     #     Requested change of host to 'bbbike.de'
-    is $resp->content_type, 'image/png';
+    is $resp->content_type, 'image/png', 'png by content-type';
     my $data = $resp->decoded_content;
     image_ok(\$data);
     is_barcode($resp, type => "QR-Code", is_data => q{http://bbbike.de/bbbike/cgi/bbbike.cgi?info=1});
