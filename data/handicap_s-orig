@@ -193,7 +193,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
 #: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2022-01-07 (mapillary)
+#: last_checked: 2022-01-15
 Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -224,7 +224,7 @@ Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2021-12-23 vvv
+#: last_checked: 2022-01-15 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -251,7 +251,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/volt-berlin-baufeld-e3a.312/page-8#post-14027
 #: XXX Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straße, Fahrbahn ist noch abgesperrt
-#: last_checked: 2022-01-08
+#: last_checked: 2022-01-15
 #: check_frequency: 60d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
@@ -370,7 +370,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2022-01-12 (mapillary) vvv
+#: last_checked: 2022-01-15 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
@@ -577,7 +577,7 @@ Matthäikirchplatz: wegen Bauarbeiten am Museum der Moderne mögliche Behinderunge
 #: source_id: viz2021:13.329043,52.505488,12.03.2021,09:00 (bis 5.3.2022) (inaktiv)
 #: source_id: viz2021:13.32784,52.505061,22.12.2021,06:00 (bis 5.3.2022)
 #: XXX evtl. sind die Einschränkungen auf der Nordseite aufgehoben?
-#: last_checked: 2022-01-08
+#: last_checked: 2022-01-15
 #: check_frequency: 90d
 #: next_check: 2022-03-05
 #: valid: -20220305
@@ -598,9 +598,10 @@ Fasanenstr.: Engstelle südliche de Kantstr., Radfahrer werden über den Bürgerste
 #: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/baustart-fuer-neues-geschaeftshaus_a290278 (bis Herbst 2022)
 #: by: http://www.infravelo.de/projekt/bundesallee/ (Erwähnung der Hochbauarbeiten an der Pariser Str.; Verbesserungen für den Radverkehr bis 4. Quartal 2023)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_14_0981_1088_online.pdf (Erwähnung des B-Plans 4-19)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundesallee-13-14-pariser-str.599/page-5#post-17417
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
-#: last_checked: 2022-01-04 (webcam)
+#: last_checked: 2022-01-09 (architektur-urbanistik)
 #: check_frequency: 60d
 #: next_check: 2022-10-01
 # REMOVED --- #: next_check: 2020-02-03
@@ -3823,6 +3824,8 @@ Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
 (Gaudystr. - Sonneberger Weg): einige Fußgänger, Bordstein	q4 10547,15586 10542,15609
 #: XXX_prog: BS am nördlichen Ende, sowie am südlichen Ende, falls man links in die Sewanstr. einbiegen möchte, ansonsten q4 beibehalten
 (Fußweg zum Wohngebiet Sewanstr.): Fußgänger, Bordstein	q4 17882,10128 17889,10163 17883,10185
+#: note: Grünanlage, für Radfahrer freigegeben
+(Altonaer Str. - Händelallee): einige Fußgänger	q1 6354,12278 6280,12222
 # 
 ######################### User Contributions #################################
 # 

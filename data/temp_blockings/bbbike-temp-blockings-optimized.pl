@@ -2561,7 +2561,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-01-08
+#: last_checked: 2022-01-15
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 ',
@@ -2814,15 +2814,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: also_indoor: traffic
+#: XXX von Norden her außerdem: Verboten für Fahrzeuge aller Art außer Anlieger
+#: XXX Es gibt nun eine weitere Baustelle, Halteverbotschilder bis Ende Dezember 2022
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
 #: osm_watch: way id="759405498" version="2"
-#: last_checked: 2021-10-26 (daf)
-#: check_frequency: 60d
+#: last_checked: 2022-01-15
+#: check_frequency: 120d
+#: next_check: 2022-12-28
 	q3::inwork; 5192,10241 5196,10398
 ',
          'from' => undef,
          'id' => 3281,
-         'text' => 'Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung auch für Radfahrer gesperrt',
+         'text' => 'Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Hochbaustelle, Fahrtrichtung auch für Radfahrer gesperrt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -2939,7 +2942,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: also_indoor: traffic (H,G)
 #: osm_watch: way id="362719487" version="6"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2021-10-19
+#: last_checked: 2022-01-15
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 ',
@@ -3301,6 +3304,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1145930.php (Verzögerung)
 #: by: https://www.berliner-woche.de/luebars/c-bauen/fahrbahn-der-strasse-am-vierrutenberg-erst-im-fruehjahr-fertig_a328514
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9770 (Frage)
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: next_check: 2022-01-03
 	q4::inwork 5793,23422 5893,23287
@@ -3800,6 +3804,20 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Messelstr.: zwischen Pücklerstr. und Heydenstr. Bauarbeiten, Sperrung der Fahrbahn, bis 21.11.2022 ',
          'type' => 'handicap',
          'until' => 1669071600
+       },
+       {
+         'data' => '#: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
+#: last_checked: 2022-01-13 (architektur-urbanistik)
+#: check_frequency: 120d
+#: next_check: 2023-12-31
+	q3::inwork; 6626,11178 6549,11015
+',
+         'from' => undef,
+         'id' => 3500,
+         'text' => 'Keithstr.: Einbahnstraßenregelung, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

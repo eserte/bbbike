@@ -852,7 +852,7 @@ Wittenbergplatz	HH 6353,10583 6268,10588 6216,10614
 An der Urania	HH 6532,10529 6685,10690 6740,10755
 Kurfürstenstr. (Tiergarten, Schöneberg)	N 8058,10306 7850,10351 7744,10372 7633,10394
 #: carriageway_width: 37m (10m+medial strip=13m+14m) (Höhe An der Urania; östlich der Einemstr. deutlich schmaler)
-Kurfürstenstr. (Tiergarten, Schöneberg)	H 7633,10394 7444,10479 7315,10537 7117,10611 7110,10613 6972,10665 6818,10725 6740,10755 6607,10801 6471,10851 6378,10887 6277,10924 6266,10927 6145,10975
+Kurfürstenstr. (Tiergarten, Schöneberg)	H 7633,10394 7444,10479 7416,10492 7315,10537 7117,10611 7110,10613 6972,10665 6818,10725 6740,10755 6607,10801 6471,10851 6378,10887 6277,10924 6266,10927 6145,10975
 Derfflingerstr. (Tiergarten)	N 7117,10611 7236,10936
 #: carriageway_width: 29m (12m+medial strip=5m+12m, Höhe Motzstr.)
 Martin-Luther-Str. (Schöneberg)	HH 6532,10529 6494,10440 6487,10277 6499,10086 6504,9961 6504,9865 6492,9782 6447,9661 6445,9538 6445,9432 6446,9328 6440,9192 6442,9068 6445,8949 6445,8934 6449,8845 6449,8807 6460,8688 6454,8653 6461,8463 6459,8281 6459,8272 6460,8186 6460,8093
@@ -13019,7 +13019,10 @@ Bischofstaler Str.	N 21759,7856 21614,7773 21570,7751
 Bischofstaler Str.	NN 21468,7727 21542,7752
 Drausnitzer Str.	N 21625,8735 21540,8815 21512,8857 21508,8988
 Gleiwitzer Str.	N 21175,9989 20947,9999 20703,10004
-Genthiner Str.	N 7461,11051 7415,10883 7393,10809 7354,10671 7315,10537
+Genthiner Str.	N 7461,11051 7415,10883 7393,10809 7354,10671 7330,10590 7315,10537
+#: note: Privatstraße
+#: osm.highway: service
+Schönegarten	N 7416,10492 7432,10546 7330,10590
 Else-Lasker-Schüler-Str.	N 7033,10396 7227,10489 7281,10510
 Else-Lasker-Schüler-Str.	NN 7281,10510 7315,10537
 Kurmärkische Str.	N 7429,10366 7422,10368 7337,10396 7275,10418
@@ -14097,10 +14100,7 @@ Schillerpromenade (Neukölln)	N 11661,8131 11689,8006
 Schillerpromenade (Neukölln)	N 11713,7899 11738,7790 11763,7687 11785,7583 11803,7487
 Zeitzer Str.	N 13325,7210 13326,7291
 #: next_check_id: SIEGFRIED-2021
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/#post-15273 (Bau einer Apartmentanlage, evtl. wird dann die Straße hier öffentlich?)
 #: osm.highway: service
-#: last_checked: 2021-12-25
-#: check_frequency: 360d
 (Verlängerung der Siegfriedstr.)	N 11664,6796 11488,6781
 Siegfriedstr. (Neukölln)	N 11664,6796 11935,6848 12122,6886 12342,6936 12479,6969 12664,7013 12810,7047
 Kirchhofstr. (Neukölln)	N 12810,7047 12843,7093 12872,7134 12909,7181 13001,7296 13003,7316
@@ -18436,7 +18436,7 @@ Hanseatenweg	N 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8819
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036923752617/923752617/00406668/68-Anlagen/02/MA_1265_V.pdf
 #: osm_watch: way id="26590565" version="17"
-#: last_checked: 2022-01-08
+#: last_checked: 2022-01-15
 #: check_frequency: 120d
 (Zufahrt Parkplätze Klopstockstr.)	N 5909,12073 5870,12106 5982,12291
 (Cuxhavener Str. - Altonaer Str.)	NN 5982,12291 6030,12363 6067,12381 6098,12446

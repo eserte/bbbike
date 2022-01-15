@@ -144,7 +144,8 @@ Hittorfstr	1 2442,4806 2469,4882 2516,4936 2577,4959
 Lefèvrestr.	1 5360,6642 5215,6643
 Kühlebornweg	1 5165,4667 5075,4600 5004,4709
 Gartenstr.	1 22456,3889 22281,4033 22263,4120 22279,4220
-Wichmannstr.	1 6472,11049 6549,11015 6681,10959 6824,10904
+Wichmannstr.	1 6549,11015 6681,10959 6824,10904
+Burggrafenstr.	1 6266,10927 6278,10949 6472,11049
 Lützowufer	1 6873,11011 6742,11099 6626,11178 6582,11202
 Mulackstr.	1 10313,13568 10406,13543 10535,13509 10633,13474
 Kirchhofstr.	1 13188,7590 13117,7471 13029,7353
@@ -2214,3 +2215,10 @@ an den Schönhauser Allee Arcaden -> Schönhauser Allee: Mittelstreifen, Hochbahnv
 an den Schönhauser Allee Arcaden -> Dänenstr.: Mittelstreifen, Hochbahnviadukt	3::igndisp 11086,15984 10975,16010 10729,16042
 Dänenstr. -> Schönhauser Allee: Mittelstreifen, Hochbahnviadukt	3::igndisp 10729,16042 10975,16010 10982,16121
 Dänenstr. -> an den Schönhauser Allee Arcaden: Mittelstreifen, Hochbahnviadukt	3::igndisp 10729,16042 10975,16010 11086,15984
+Mittelstreifen	3nocross::ignrte 5458,10443 5450,10338 5458,10120
+Joachimsthaler Str. -> Schaperstr.: Mittelstreifen	3::igndisp 5458,10443 5450,10338 5597,10299
+Bundesallee -> Schaperstr.: Mittelstreifen	3::igndisp 5458,10120 5450,10338 5355,10322
+Schaperstr. -> Bundesallee: Mittelstreifen	3::igndisp 5597,10299 5450,10338 5458,10120
+Schaperstr. -> Schaperstr.: Mittelstreifen	3::igndisp 5597,10299 5450,10338 5355,10322
+Schaperstr. -> Joachimsthaler Str.: Mittelstreifen	3::igndisp 5355,10322 5450,10338 5458,10443
+Schaperstr. -> Schaperstr.: Mittelstreifen	3::igndisp 5355,10322 5450,10338 5597,10299

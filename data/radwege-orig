@@ -57,7 +57,8 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 9047,9750 9243,9696 933
 	RW1; 9334,9670 9243,9696 9047,9750 9002,9731 8777,9601
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8777,9601 8679,9544 8595,9495
 	RW1; 8595,9495 8679,9544 8777,9601
-alte Gehwegplatten	RW1; 7938,9694 8097,9650 8192,9619 8358,9567 8595,9495
+bis zur Brücke neu asphaltiert, etwas breiter, dann alte Gehwegplatten	RW1; 7938,9694 8097,9650
+alte Gehwegplatten	RW1; 8097,9650 8192,9619 8358,9567 8595,9495
 Gehwegplatten	RW1; 8595,9495 8358,9568 8192,9619
 neu asphaltiert	RW1; 8192,9619 8097,9650
 neu asphaltiert, teilweise etwas breiter	RW2; 8097,9650 7938,9694
@@ -158,7 +159,8 @@ alte Gehwegplatten, Bord gegen Gehweg	RW1; 8130,4932 8219,5010 8348,5184 8356,51
 	RW3; 7735,9121 7790,9126
 	RW1;RW1 7735,9121 7647,9196 7604,9242 7509,9337
 	RW1; 7829,9723 7725,9748 7631,9770 7625,9771
-	RW1; 7625,9771 7631,9770 7725,9748 7829,9723 7938,9694
+	RW1; 7625,9771 7631,9770 7725,9748 7829,9723
+Busspur ist nicht für Radfahrer freigegeben	RW1; 7829,9723 7938,9694
 	RW2;RW1 7625,9771 7518,9791
 	RW1;RW1 7518,9791 7223,9815 7126,9825 7049,9833
 # REMOVED (existiert nicht mehr) ---	RW1;RW1 7033,10328 7060,10221 7080,10098
@@ -193,7 +195,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 6851,11346 6825,1148
 asphaltiert	RW2;RW8 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936
 asphaltiert, einige Wurzelhebungen	RW2; 6828,12031 7026,12054 7383,12095
 asphaltiert	RW2; 7383,12095 7816,12150 8055,12186
-asphaltiert	RW2; 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+asphaltiert, zahlreiche Wurzelhebungen	RW2; 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	RW4;RW4 8055,12186 8089,12190 8214,12205 8303,12216
 	RW4;RW3 8303,12216 8344,12221 8538,12245
 Busspur ist immer gültig	RW5; 7471,9360 7507,9458
@@ -402,7 +404,8 @@ neu asphaltiert, relativ breit	RW1; 5766,13175 5863,13214 5975,13256
 	RW2;RW2 5478,11860 5565,11871 5758,11895 5810,11902 5900,11913
 Radweg auf der Fahrbahn hinter den parkenden Autos	RW2;RW2 5900,11913 6164,11947 6642,12010
 	RW1; 5258,11285 5352,11502 5356,11512 5456,11742
-nur die letzten 25 Meter sind benutzungspflichtig	RW1; 5456,11742 5356,11512 5352,11502 5258,11285
+#: note: früher waren die letzten 25 Meter benutzungspflichtig
+	RW1; 5456,11742 5356,11512 5352,11502 5258,11285
 	RW1;RW1 5456,11742 5381,11847
 	RW1;RW1 4239,10358 4245,10435
 	RW1;RW1 4245,10435 4256,10583 4267,10724 4276,10867 4289,11060 4302,11232 4312,11354 4331,11554 4337,11721 4356,12009
@@ -1567,7 +1570,7 @@ Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2022-01-07 (mapillary)
+#: last_checked: 2022-01-15
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1576,10 +1579,10 @@ Busspur ist immer gültig	RW5;RW5 9984,12426 9934,12420 9858,12410
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2022-01-07 (mapillary)
+#: last_checked: 2022-01-15
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-10-31
-	RW5;RW0 10063,12438 10024,12431 9984,12426
+Busspur ist immer gültig	RW5;RW0 10063,12438 10024,12431 9984,12426
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
 # 
 # REMOVED (weitgehend fertiggestellt) --- #: next_check_id: UDLU5-2014 --- #: XXX Markierung in Richtung Westen ist nur provisorisch; Richtung Osten fehlt sie fast komplett --- #: source_id: IM_018997 --- #: source_id: IM_023987 --- #: source_id: IM_025933 --- #: source_id: 2147342831 (bis Ende 2020) --- #: osm_watch: way id="342968607" version="15" --- #: osm_watch: way id="461526152" version="7" --- #: last_checked: 2020-11-19 --- #: check_frequency: 10d
@@ -1593,8 +1596,8 @@ Busspur ist immer gültig	RW5; 10176,12506 10243,12546 10300,12587
 	RW2; 10300,12587 10243,12546 10176,12506
 Busspur ist immer gültig	RW5;RW5 10300,12587 10352,12627 10431,12709
 Busspur gilt Mo-Fr 14-19 Uhr	RW5; 10431,12709 10515,12780 10525,12789 10695,12933 10733,12967
-Busspur ist immer gültig	RW5; 10733,12967 10776,13005
-Busspur gilt Mo-Sa 7-19 Uhr	RW5; 10776,13005 10733,12967 10695,12933 10525,12789
+Busspur ist immer gültig	RW5; 10733,12967 10776,13005 10733,12967 10695,12933
+Busspur gilt Mo-Sa 9-14 Uhr	RW5; 10695,12933 10525,12789
 	RW3; 10525,12789 10515,12780 10431,12709
 Busspur ist immer gültig	RW5; 10776,13005 10863,13095
 Busspur ist immer gültig	RW5; 10923,13156 10863,13095 10776,13005
@@ -1848,7 +1851,7 @@ Busspur ist immer gültig	RW5; 6460,8688 6449,8807 6449,8845 6445,8934 6445,8949 
 #: source_id: 2147345461 (bis 30.09.2021)
 #: source_id: viz2021:13.335895,52.499985,05.11.2020,07:00 (bis 30.6.2022)
 #: also_indoor: traffic (B(minor))
-#: last_checked: 2021-07-10
+#: last_checked: 2022-01-15
 #: next_check: 2022-06-30
 #	RW3; 5764,10322 5808,10396
 gemeinsamer Rad- und Gehweg	RW2; 5764,10322 5808,10396
@@ -2531,7 +2534,9 @@ Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW
 	RW4; 10908,13978 10933,14122
 Gehwegplatten	RW2; 10933,14122 10908,13978
 	RW1;RW1 10431,12709 10387,12760 10360,12793 10308,12859
-	RW3;RW3 10923,13156 11033,13086 11139,13008
+	RW3; 10923,13156 11033,13086 11139,13008
+#: note: die letzten Meter vor der Ampel mit Radwegschild
+	RW3; 11139,13008 11033,13086 10923,13156
 	RW4;RW1 11226,12945 11267,13012
 	RW4; 11267,13012 11320,13095 11369,13174
 	RW3; 11369,13174 11320,13095 11267,13012
@@ -5268,7 +5273,7 @@ die ersten und letzten Meter sind Schutzstreifen	RW1; 12962,15480 13078,15586
 	RW4;RW3 12584,14928 12547,14873 12528,14845 12473,14763 12422,14692 12403,14663
 Verbundsteinpflaster	RW2; 12403,14663 12371,14615 12317,14535
 	RW3; 12317,14535 12371,14615 12403,14663
-	RW3; 11226,12945 11139,13008
+Grünmarkierung	RW4; 11226,12945 11139,13008
 Radspur zwischen Fahrspuren	RW3; 11139,13008 11226,12945
 	RW6;RW6 17470,4998 17463,4964 17428,4792
 asphaltiert	RW1;RW1 17648,5338 17705,5223 17726,5166 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667
@@ -5339,7 +5344,7 @@ asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünmarkierung?) vvv
-#: last_checked: 2021-10-19 vvv
+#: last_checked: 2022-01-15 vvv
 #: check_frequency: 60d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
@@ -5355,7 +5360,7 @@ Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
 # REMOVED (nicht mehr "extra" prüfen) --- #: last_checked: 2020-10-12 --- #: check_frequency: 30d
 #: by: https://westnordost.de/p/32402.jpg
 #: confirmed_by: srt
-	RW3; 6145,10975 6168,11042
+	RW4; 6145,10975 6168,11042
 #: osm_watch: way id="153370344" version="18"
 #: osm_watch: way id="153373879" version="15"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
@@ -5581,7 +5586,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by ^^^
 # 
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2022-01-08 vvv
+#: last_checked: 2022-01-15 vvv
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9141,12320 9131,12438 9121,12514
 #: XXX früher RW3, zurzeit durch Gelbmarkierung (Kreuze) ungültig gemacht
@@ -6780,7 +6785,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2022-01-12 (mapillary)
+#: last_checked: 2022-01-15
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -7097,7 +7102,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="21"
 #: osm_watch: way id="335487059" version="17"
-#: last_checked: 2022-01-12 (mapillary) vvv
+#: last_checked: 2022-01-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-01-01 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -7127,7 +7132,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: by: https://berliner-abendblatt.de/2021/12/18/pop-up-radwege-bleiben-dauerhaft/
-#: last_checked: 2021-12-29 vvv
+#: last_checked: 2022-01-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -7169,7 +7174,7 @@ Bushaltestelle	RW5; 8371,10769 8430,10710
 #: last_checked ^^^
 #: osm_watch: way id="26472938" version="30"
 #: note: keine Baken an den beiden Bushaltestellen
-#: last_checked: 2022-01-12 (mapillary) vvv
+#: last_checked: 2022-01-15 vvv
 Bushaltestelle	RW5; 9416,10196 9472,10182
 provisorisch geschützter Radstreifen	RW4; 9472,10182 9599,10175 9687,10180 9825,10206 9865,10227
 #: last_checked ^^^

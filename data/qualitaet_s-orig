@@ -171,7 +171,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erw‰hnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2021-12-27
+#: last_checked: 2022-01-15
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -692,7 +692,7 @@ Krossener Str.: Kopfsteinpflaster	Q2- 14102,11715 13981,11746
 Gabriel-Max-Str.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2- 14161,11930 14127,11811
 Gabriel-Max-Str.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2- 14102,11715 14065,11605 14049,11553
 Kurf¸rstenstr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 7633,10394 7744,10372 7850,10351 8058,10306
-Kurf¸rstenstr.: Asphalt mit einigen Sch‰den	Q0- 7315,10537 7444,10479 7633,10394
+Kurf¸rstenstr.: Asphalt mit einigen Sch‰den	Q0- 7315,10537 7416,10492 7444,10479 7633,10394
 (Im Jagen, Verl‰ngerung): Waldweg	Q1 1375,6138 1057,6461 909,6584 902,6642
 Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11500,9116
 Mauerweg: Asphalt	Q0 7736,21247 7306,20635 7289,20618
@@ -12398,6 +12398,9 @@ Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
 Georg-Klingenberg-Str.: Asphalt	Q0 17461,8693 17656,8700
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627 17621,8544
 Heiner-M¸ller-Str.: Asphalt	Q0 17497,8623 17640,8627
+Schˆnegarten: Betonpflaster	Q0- 7416,10492 7432,10546 7330,10590
+Wichmannstr.: Kleinsteinpflaster	Q1 6447,11144 6452,11118
+Frobenstr.: Asphalt mit einigen Rissen	Q0-; 7429,10366 7413,10244
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -29555,6 +29558,7 @@ Steinbockstr.: Asphalt	Q0 14840,7307 14861,7316 14868,7297 14848,7288
 Johannes-Zoschke-Str.: br¸chiger Asphalt	Q1- 19020,9364 19030,9530
 #: corrected_by: srt (Q2 -> Q2+)
 Johannes-Zoschke-Str.: m‰ﬂiger Asphalt	Q2+ 19030,9530 19037,9636
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8654 vvv
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/rheinpfalzallee-wird-ab-2024-saniert_a332567 (Instandsetzung ab 2024) vvv
 #: XXX Instandsetzung geplant, danach vielleicht befestigt? vvv
 #: last_checked: 2022-01-10 vvv
@@ -29566,6 +29570,7 @@ Rheinpfalzallee: holpriger Sandweg	Q2 18931,9629 18987,9534 19030,9530
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
+#: by ^^^
 #: by ^^^
 #: confirmed_by: srt
 Rheinpfalzallee: geflickter Asphalt	Q1 19030,9530 19128,9523
