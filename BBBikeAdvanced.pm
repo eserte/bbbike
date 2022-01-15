@@ -1376,8 +1376,11 @@ EOF
 		}
 
 		# BingMaps
-		if ($s =~ m{https://dev.virtualearth.net/REST/v1/Locations/([-+]?[0-9\.]+),([-+]?[0-9\.]+)} ||
-		    $s =~ m{https://dev.virtualearth.net/REST/V1/Imagery/Copyright/de-DE/RoadOnDemand/\d+/([-+]?[0-9\.]+)/([-+]?[0-9\.]+)}) {
+		if (
+		    $s =~ m{https://dev.virtualearth.net/REST/v1/Locations/([-+]?[0-9\.]+),([-+]?[0-9\.]+)} ||
+		    $s =~ m{https://dev.virtualearth.net/REST/V1/Imagery/Copyright/de-DE/RoadOnDemand/\d+/([-+]?[0-9\.]+)/([-+]?[0-9\.]+)} ||
+		    $s =~ m{https://www.bing.com/maps.*cp=([-+]?[0-9\.]+)~([-+]?[0-9\.]+)}
+		   ) {
 		    my($y,$x) = ($1,$2);
 		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
 		    push @coords, [$x,$y];
