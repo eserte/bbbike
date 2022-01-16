@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.70;
+$VERSION = 1.71;
 
 use vars qw(%images);
 
@@ -123,6 +123,12 @@ sub register {
      	      callback => sub { showmap_bvgstadtplan(@_) },
      	      callback_3_std => sub { showmap_url_bvgstadtplan(@_) },
      	      ($images{BvgStadtplan} ? (icon => $images{BvgStadtplan}) : ()),
+     	    };
+	$main::info_plugins{__PACKAGE__ . "_SBahnBerlin"} =
+	    { name => "S-Bahn Berlin (Stadtplan)",
+     	      callback => sub { showmap_sbahnberlin(@_) },
+     	      callback_3_std => sub { showmap_url_sbahnberlin(@_) },
+     	      ($main::sbahn_photo ? (icon => $main::sbahn_photo) : ()),
      	    };
     }
     $main::info_plugins{__PACKAGE__ . "_BikeMapNet"} =
@@ -990,6 +996,24 @@ sub showmap_url_bvgstadtplan {
 sub showmap_bvgstadtplan {
     my(%args) = @_;
     my $url = showmap_url_bvgstadtplan(%args);
+    start_browser($url);
+}
+
+######################################################################
+# S-Bahn Berlin (via mc.bbbike.org)
+
+sub showmap_url_sbahnberlin {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = int(17 - log(($args{mapscale_scale})/3000)/log(2) + 0.5);
+    sprintf "http://mc.bbbike.org/mc/?lon=%s&lat=%s&zoom=%d&num=1&mt0=sbahnberlin-standard", $px, $py, $scale;
+}
+
+sub showmap_sbahnberlin {
+    my(%args) = @_;
+    my $url = showmap_url_sbahnberlin(%args);
     start_browser($url);
 }
 
