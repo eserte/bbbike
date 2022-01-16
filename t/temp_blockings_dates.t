@@ -25,7 +25,7 @@ BEGIN {
     }
 }
 
-plan tests => 81;
+plan tests => 87;
 
 my @Today_and_Now = System_Clock(); # use System_Clock(), to include DST information
 my $This_Year = $Today_and_Now[0];
@@ -274,6 +274,19 @@ EOF
       0,
      ],
 
+     [<<EOF,
+Fischerinsel (Mitte) Richtung Breite Straße Kreuzungszufahrt Mühlendamm: Leitungsbauarbeiten, Fahrbahn auf einen Fahrstreifen verengt, Linksabbiegen nicht möglich, vom 16.03.2021 08:00 bis 31.12.2023 17:00
+EOF
+      Mktime(2021, 3,16, 8, 0, 0),
+      Mktime(2023,12,31,17, 0, 0),
+     ],
+
+     [<<EOF,
+Greifswalder Straße (Prenzlauer Berg) stadtauswärts zwischen Storkower Straße und Thomas-Mann-Straße: geplatzte Wasserleitung, Fahrtrichtung gesperrt, vom 29.12.2021 09:14
+EOF
+      Mktime(2021,12,29, 9,14, 0),
+      undef,
+     ],
     ) {
 	my($btxt, $start_date_expected, $end_date_expected, $prewarn_days_expected) = @$test_data;
 	my $label = substr($btxt,0,20)."..."; $label =~ s{[\n\r]}{ }g;
@@ -301,8 +314,9 @@ EOF
 	    diag $@;
 	    $errors++;
 	}
-	diag "$btxt\nParsed: " . scalar(localtime($start_date)) . " - " .
-	    scalar(localtime($end_date)) . ", $prewarn_days prewarn days\n" .
+	diag "$btxt\nParsed: " .
+	    (defined $start_date ? scalar(localtime($start_date)) : "(undef)") . " - " .
+	    (defined $end_date   ? scalar(localtime($end_date))   : "(undef)") . ", $prewarn_days prewarn days\n" .
 	    "Regular expression match $rx_matched"
 	    if $errors;
     }
