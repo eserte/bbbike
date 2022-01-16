@@ -2610,14 +2610,14 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-01-13
+#: last_checked: 2022-01-15
 #: check_frequency: 21d
-	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
+	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
          'from' => 1587621600,
          'id' => 3224,
          'text' => 'Boxhagener Platz: samstags 6 bis 20 Uhr Sperrung der umliegenden Straßen wegen des Wochenmarkts',
-         'type' => 'handicap',
+         'type' => 'gesperrt',
          'until' => undef
        },
        undef,
@@ -2748,7 +2748,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: source_id: 2147347233 (bis 23.12.2021)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
-#: also_indoor: traffic (H,G) vvv
+#: also_indoor: traffic (H,G,B) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
 #: XXX NEW	Gardeschützenweg (Lichterfelde) in beiden Richtungen zwischen Hindenburgdamm und Lipaer Straße: Leitungsbau,Vollsperrung, Fußverkehr frei, vom 31.05.2021 08:30 Uhr bis 23.12.2021 17:00 Uhr
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv --- #: last_checked: 2020-12-27 (mapillary) vvv --- #: next_check: 2021-05-03 vvv
@@ -3688,12 +3688,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Niemetzstraße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
-#: XXX Haben die Bauarbeiten etwas mit der geplanten Asphaltierung zu tun, oder sind das nur 
 #: also_indoor: traffic (ex-G,H,B(alle nur Niemetz)) vvv
-#: last_checked: 2021-12-26 vvv
-#: check_frequency: 45d vvv
+#: last_checked: 2022-01-16 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2022-09-30 vvv
 	q4::inwork; 13702,7418 13654,7380 13601,7366 13519,7345 13476,7330
 	q3::inwork 13702,7418 13762,7321
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -3701,9 +3702,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => undef,
          'id' => 3491,
-         'text' => 'Braunschweiger Str. und Niemetzstr.: Bauarbeiten, Einbahnstraßenregelung bzw. Sperrung, Ende der Bauarbeiten unbekannt',
+         'text' => 'Braunschweiger Str. und Niemetzstr.: Bauarbeiten, Einbahnstraßenregelung bzw. Sperrung, voraussichtlich bis September 2022',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1664553600
        },
        {
          'data' => '#: also_indoor: traffic

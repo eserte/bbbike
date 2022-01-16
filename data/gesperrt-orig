@@ -3362,7 +3362,7 @@ Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,
 #: by: https://www.spreepark.berlin/konzept-und-grundlagen/news/detail/weitere-baumassnahmen-im-und-am-spreepark/ (Ausbesserung, Verringerung der Breite von 7 auf 4m, voraussichtlich bis Mai 2022)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/der-pionierweg-wird-erneuert-und-erhaelt-eine-neue-beleuchtung-korrosionsschutz-fuer-mero-halle_a327800
 #: XXX Wird der Weg nach den Bauarbeiten beleuchtet sein?
-#: last_checked: 2022-01-05
+#: last_checked: 2022-01-16
 #: check_frequency: 90d
 #: next_check: 2022-05-31
 Pionierweg: wegen Bauarbeiten gesperrt	2::inwork 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
@@ -3654,7 +3654,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-01-12
+#: last_checked: 2022-01-16
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -3669,7 +3669,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2022-01-12
+#: last_checked: 2022-01-16
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 # 
@@ -3994,7 +3994,7 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: XXX rund um das Ministeriums für Ernährung, Landwirtschaft und Verbraucherschutz
 #: XXX "Verkehrsregelung bleibt voraussichtlich bis 2021 bestehen", trotzdem in der Anfangszeit häufiger nachprüfen
 #: XXX in der Glinkastr. Einbahnstraße offen für Radfahrer
-#: also_indoor: traffic (G,H)
+#: also_indoor: traffic (G,H,B(teilweise))
 #: source_id: 2147343289 (bis 30.6.2021)
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.) (mittlerweile inaktiv)
 #: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022)
@@ -4041,9 +4041,10 @@ Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 #: last_checked: 2021-12-23
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
+#: next_check_id: POTSDAMSPEICHERSTADT-2022
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="496270260" version="7" brb
 # REMOVED (wurde gelöscht) --- #: osm_watch: node id="3453536641" version="5" brb
-#: osm_watch: way id="733725947" version="7" brb
+# REMOVED (siehe osm_watch in fragezeichen) --- #: osm_watch: way id="733725947" version="7" brb
 #: last_checked: 2022-01-10 (osm)
 #: check_frequency: 90d
 Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -12754,-2154
@@ -4265,7 +4266,7 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_25_2105_2220_online.pdf (Straßenbenennung)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/upside-berlin-max-und-moritz.182/
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
-#: last_checked: 2022-01-01
+#: last_checked: 2022-01-16 (daf)
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
@@ -4306,7 +4307,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: osm_watch: way id="194653032" version="23"
 #: osm_watch: way id="846595294" version="6"
 #: osm_watch: way id="38725490" version="15"
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (G,B)
 #: last_checked: 2021-12-13
 #: check_frequency: 90d
 #: next_check: 2022-12-31
@@ -4315,8 +4316,8 @@ Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14051,6731 1410
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaßnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
-#: also_indoor: traffic (G)
-#: last_checked: 2021-12-13
+#: also_indoor: traffic (G,B)
+#: last_checked: 2022-01-16
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022

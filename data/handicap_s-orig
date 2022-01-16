@@ -182,7 +182,7 @@ Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 #: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
 #: osm_watch: way id="549316654" version="12"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
-#: also_indoor: traffic (G,H)
+#: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
 #: last_checked: 2021-12-11
 #: check_frequency: 60d
@@ -256,7 +256,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
 #: osm_watch: way id="751595931" version="2"
-#: also_indoor: traffic (H)
+#: also_indoor: traffic (H,B)
 #: last_checked: 2022-01-03
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
@@ -375,7 +375,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
-#: also_indoor: traffic (H,G)
+#: also_indoor: traffic (ex-H,ex-G)
 #: osm_watch: way id="114667396" version="9"
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 # REMOVED --- #: next_check ^^^
@@ -531,7 +531,7 @@ Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 
 # 
 #: by: https://www.bahninfo-forum.de/read.php?9,689330,689356#msg-689356 (2021)
 #: XXX vermutlich wegen des neuen Aufzugs am U-Bhf. Birkenstr.
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (ex-G,H)
 #: osm_watch: way id="746589388" version="17"
 #: osm_watch: way id="746589386" version="1"
 #: last_checked: 2021-12-12 (mapillary)
@@ -648,7 +648,7 @@ Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2021-12-13 vvv
+#: last_checked: 2022-01-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
@@ -669,7 +669,7 @@ Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/boddinstrasse-wird-gesperrt_a314931
 #: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024) (mittlerweile bis 31.1.2022)
-#: last_checked: 2021-12-13
+#: last_checked: 2022-01-16
 #: check_frequency: 120d
 #: next_check: 2022-01-31
 Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12368,8356 12582,8408
@@ -824,7 +824,7 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/der-neubau-der-moltkebruecke-startet-anfang-2022_a330836 (Fertigstellung Anfang 2024)
 #: XXX wann wird die Einschränkung beendet?
 #: osm_watch: way id="13860352" version="16"
-#: also_indoor: traffic (ex-H)
+#: also_indoor: traffic (G,ex-H,B)
 #: priority: #A
 #: last_checked: 2021-11-06
 # REMOVED --- #: check_frequency: 90d

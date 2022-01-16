@@ -824,7 +824,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraﬂe soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2021-12-13
+#: last_checked: 2022-01-16
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -1015,7 +1015,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? auﬂerdem: wird die Colbestr. zur Fahrradstraﬂe?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erw‰hnung)
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-01-13
+#: last_checked: 2022-01-16
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3030,7 +3030,7 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: next_check_id: DRESDNERBAHN-2021
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraﬂe auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
-#: osm_watch: way id="30893534" version="18"
+#: osm_watch: way id="30893534" version="20"
 #: last_checked: 2021-11-28
 #: check_frequency: 180d
 Am Teltowkanal: Asphalt	Q0 7911,4465 7769,4315
@@ -12312,7 +12312,7 @@ Puschkinallee [Nebenstraﬂe]: teilweise etwas schadhafter Asphalt	Q1 13870,9872 1
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_50_4625_4696_online.pdf (Absichtserkl‰rung zu einer Straﬂenlandeinziehung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_02_0049_0116_online.pdf (Teileinziehung)
 #: XXX Wann wird der Asphalt ersetzt? Wann wird die Straﬂe nur f¸r Anlieger/Radfahrer frei sein?
-#: last_checked: 2022-01-05
+#: last_checked: 2022-01-16
 # REMOVED --- #: check_frequency: 180d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
@@ -14197,8 +14197,8 @@ Majakowskiring: asphaltiert	Q0 10434,18907 10358,18882
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20200613 (Planung)
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/der-guellweg-wird-fuer-radler-saniert_a278794 (Planung)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20210720 (Abschluss der Planung Anfang 2022)
-#: osm_watch: way id="4764684" version="23"
-#: osm_watch: way id="26790073" version="11"
+#: osm_watch: way id="4764684" version="24"
+#: osm_watch: way id="26790073" version="13"
 #: last_checked: 2022-01-09
 #: check_frequency: 150d
 G¸llweg: m‰ﬂiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421
@@ -20927,18 +20927,9 @@ Wahnfriedstr.: gut befahrbarer Asphalt	Q1 2019,25360 1931,25511 1884,25628 1843,
 #: corrected_by: srt (Kleinpflastersteine, Q2 -> ..., neu gemacht)
 Stolzingstr.: Asphalt	Q0 1338,25262 1360,25269 1429,25335 1468,25384
 #: confirmed_by: srt (konkretisiert: Kleinpflastersteine -> Mosaikpflaster)
-#: XXX hier sind Bauarbeiten, mˆglicherweise wird hier auch asphaltiert
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1051692.php (Erw‰hnung einer zuk¸nftigen Fahrbahninstandsetzung 2021)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1107545.php (Fahrbahn (oder nur Gehweg?)-Instandsetzung ab 1.8.2021, f¸r ca. sechs Wochen)
-#: by: https://www.berliner-woche.de/frohnau/c-verkehr/vollsperrung-der-stolzingstrasse_a317400
-#: by: https://www.berliner-woche.de/frohnau/c-verkehr/nicht-gehweg-sondern-fahrbahn_a318330 (Klarstellung: die Fahrbahn wird repariert)
-#: osm_watch: way id="958504172" version="2"
-#: note: laut rbb bis 24.09.2021
-#: add_fragezeichen: Sind die Bauarbeiten in der Stolzingstraﬂe beendet? Ist die Fahrbahn mittlerweile asphaltiert?
-#: last_checked: 2021-10-31
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2021-09-24
-Stolzingstr.: Mosaikpflaster, uneben	Q2 1468,25384 1542,25483
+# REMOVED --- #: XXX hier sind Bauarbeiten, mˆglicherweise wird hier auch asphaltiert --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1051692.php (Erw‰hnung einer zuk¸nftigen Fahrbahninstandsetzung 2021) --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1107545.php (Fahrbahn (oder nur Gehweg?)-Instandsetzung ab 1.8.2021, f¸r ca. sechs Wochen) --- #: by: https://www.berliner-woche.de/frohnau/c-verkehr/vollsperrung-der-stolzingstrasse_a317400 --- #: by: https://www.berliner-woche.de/frohnau/c-verkehr/nicht-gehweg-sondern-fahrbahn_a318330 (Klarstellung: die Fahrbahn wird repariert) --- #: osm_watch: way id="958504172" version="2" --- #: note: laut rbb bis 24.09.2021 --- #: add_fragezeichen: Sind die Bauarbeiten in der Stolzingstraﬂe beendet? Ist die Fahrbahn mittlerweile asphaltiert? --- #: last_checked: 2021-10-31 --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2021-09-24
+#: corrected_by: osm note 2865989 (Mosaikpflaster, uneben, Q2 -> ...)
+Stolzingstr.: Asphalt	Q0 1468,25384 1542,25483
 #: corrected_by: srt (Kleinpflastersteine, Q2 -> ...)
 Stolzingstr.: Asphalt	Q0 1542,25483 1558,25505
 #: XXX Wird der Abschnitt zwischen Alemannenstr. und Nibelungenstr. auch asphaltiert?
@@ -28758,6 +28749,7 @@ Sprengelstr. (Wilhelmstadt): Gehwegplatten	Q1+ -4026,12720 -4119,12763
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022; Asphaltierung)
 #: by: https://www.berliner-woche.de/spandau/c-bauen/spandau-erneuert-bis-2025-das-rathaus-schulen-strassen-und-friedhoefe_a307134
 #: XXX geplanter Umbau der Straﬂe --- Asphaltiertung ist geplant
+#: also_indoor: traffic (B)
 #: last_checked: 2021-07-31 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2022-12-31
