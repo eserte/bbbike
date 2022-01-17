@@ -4479,7 +4479,7 @@ Goethebahn - Lessingallee: Verbundsteinpflaster	Q1 25107,-9554 25197,-9566
 (Goethebahn - A10-Center): Verbundsteinpflaster	Q1 25209,-10021 25109,-10060 25022,-10098
 Forstallee (Miersdorf): Asphalt	Q0; 24602,-7131 24623,-6966 24672,-6698 24726,-6632
 Forstallee (Miersdorf): Asphalt mit einigen Unebenheiten	Q1; 24726,-6632 24672,-6698 24623,-6966 24602,-7131
-Forstallee (Miersdorf): Asphalt mit einigen Schäden	Q1 24726,-6632 24797,-6578 24946,-6533 25400,-6408 25581,-6359 25619,-6350
+Forstallee (Miersdorf): Asphalt mit einigen Schäden	Q1 24726,-6632 24797,-6578 24946,-6533 25083,-6494 25400,-6408 25581,-6359 25619,-6350
 Am Mühlenberg: Asphalt	Q0 24703,-7243 24416,-7241 24283,-7242
 Straße am Hochwald: Asphalt	Q0 24700,-7331 24616,-7384
 Straße am Hochwald: Asphalt	Q0 24616,-7384 24593,-7405 24447,-7554 24315,-7711 24241,-7799 24064,-8013
@@ -4494,7 +4494,7 @@ Westpromenade: Asphalt	Q0 24802,-8072 24695,-8064
 Westpromenade: Asphalt	Q0 24695,-8064 24241,-7799
 Birkenstr.: unbefestigte Straße	Q2 24623,-6966 24405,-6854
 Waldpromenade: Asphalt	Q0 25252,-6904 25237,-6852 25124,-6719 24946,-6533 24842,-6412 24612,-6099 24529,-5986 24453,-5884 24373,-5777
-Neckarstr.: Asphalt	Q0 25124,-6719 25236,-6613
+Neckarstr.: Asphalt	Q0 25124,-6719 25199,-6647 25236,-6613
 Mainzer Str.: Kleinsteinpflaster	Q1 24842,-6412 24990,-6345
 Mainzer Str.: unbefestigt	Q2 24990,-6345 25083,-6314
 Otto-Krien-Str. (Schulzendorf): Schotterstraße	Q2 24373,-5777 24350,-5789
@@ -4729,7 +4729,7 @@ Im Heidewinkel (Zeuthen): unbefestigte Straße	Q2 24529,-5986 24567,-5933 24579,-
 Chemnitzer Str. (Zeuthen): unbefestigte Straße	Q2 24529,-5986 24314,-6140
 Bamberger Str. (Zeuthen): Schotterstraße	Q2 25879,-4133 25923,-4182 25963,-4263 25966,-4344
 Brückenstr. (Schluzendorf/Zeuthen): schlechtes Kopfsteinpflaster	Q3 24233,-6370 24397,-6252 24612,-6099
-Parkstr. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 24612,-6099 25048,-6104 25471,-6116
+Parkstr. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 24612,-6099 24799,-6100 25048,-6104 25471,-6116
 Nürnberger Str.: Kleinsteinpflaster	Q2 25764,-4345 25966,-4344 26106,-4364
 Regensburger Str. (Zeuthen): Kleinsteinpflaster	Q2 25761,-4276 25821,-4265 25881,-4228 25923,-4182 26014,-4087 26031,-4072 26147,-4004 26277,-3957
 Lessingstr. (Eichwalde): Kleinsteinpflaster	Q2 25649,-3850 25707,-3835 25999,-3760
@@ -4775,6 +4775,7 @@ Wiesenstr. (Zeuthen): Kleinsteinpflaster	Q2 25448,-5869 25478,-5805
 Wiesenstr. (Zeuthen): Beton	Q0 25478,-5805 25450,-5746
 Wiesenstr. (Zeuthen): Asphalt	Q0 25450,-5746 25371,-5577
 Wiesenstr. (Zeuthen): unbefestigt	Q2 25371,-5577 25337,-5516
+Wiesenstr. (Zeuthen): unbefestigt	Q2 25337,-5516 25025,-5155 24903,-5113
 Am Heideberg (Zeuthen): Kleinsteinpflaster	Q2 25496,-5885 25448,-5869 25321,-5848
 Wilhelmshavener Str. (Zeuthen): Kleinsteinpflaster	Q2 25496,-5885 25538,-5874 25680,-5836 25782,-5801
 Stedinger Str. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 25842,-5903 25717,-5945 25590,-5988 25485,-5989
@@ -5326,7 +5327,8 @@ Rathausstr.: Asphalt	Q0 29648,12973 29674,13008 29776,13146
 Rathausstr.: Kopfsteinpflaster	Q2 29776,13146 29834,13227 29838,13311 29761,13498 29736,13737
 Fichtestr. (Neuenhagen): Asphalt	Q0 31491,14010 31417,14056 31267,13896 30923,13482 30727,13245
 parallel zur B101: Asphalt	Q0 15402,-99614 14723,-99382 14578,-99350 14557,-99367 14510,-99373 14497,-99338 14124,-99208 13840,-99029
-Am Heideberg (Zeuthen): Kleinsteinpflaster	Q2 25321,-5848 24730,-5712
+Am Heideberg (Zeuthen): Kleinsteinpflaster	Q2 25321,-5848 24809,-5729
+Am Heideberg (Zeuthen): unbefestigt	Q2 24809,-5729 24730,-5712
 Herweghstr. (Schulzendorf): Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Gehweg Verbundsteinpflaster, einige Wurzelhebungen	Q1 24397,-6252 24314,-6140 24240,-6037 24157,-5931 24079,-5824 23985,-5719 23891,-5615 23802,-5509 23693,-5368
 Zur Hamey (Angermünde): unbefestigte Straße	Q2 50678,68920 50744,68893 50741,68655
 (Königszelter Str. - Luchweg): wassergebundene Decke	Q1 -7724,16124 -7734,16084 -7739,15993
@@ -6627,6 +6629,11 @@ Altlandsberg - Wegendorf: schlechtes Kopfsteinpflaster	Q3 32483,18870 32561,1909
 Friedrich-Engels-Str.: Asphalt	Q0 950,29767 707,29911 590,29922 320,29941 171,29953 0,30042
 Jägerstr.: Asphalt	Q0 667,29004 719,29085 934,29434
 Heidestr. (Schönow): Asphalt	Q0 19032,30053 18941,30212 18773,30398 18635,30610 18580,30715
+Bergstr. (Schulzendorf): Verbundsteinpflaster	Q1 24045,-7112 24173,-7015
+Hennigsdorfer Str. (Schulzendorf): Verbundsteinpflaster	Q1 23478,-6844 23574,-6800 23673,-6743 23785,-6662
+Fürstenberger Str. (Schulzendorf): Verbundsteinpflaster	Q1 23196,-6255 23478,-6844 23572,-7040 23662,-7235
+Kieler Str. (Schulzendorf): Verbundsteinpflaster	Q1 23782,-6223 23854,-6323 23927,-6423 23993,-6509 24062,-6607
+Otto-Krien-Platz (Schulzendorf): Verbundsteinpflaster	Q1 23728,-6264 23804,-6360
 Buchhorster Str.: Asphalt	Q0 34310,1418 34190,1425 34155,1427
 Buchhorster Str.: Beton	Q0 34155,1427 34018,1436 33644,1463 33491,1480 33350,1494
 An der Mühle: Asphalt	Q0 30309,16639 30298,16739 29920,17671 30021,18559

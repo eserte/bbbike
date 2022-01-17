@@ -2191,7 +2191,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2022-01-03
+#: last_checked: 2022-01-17
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -3126,7 +3126,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '# REMOVED --- #: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer? --- 
 #: note: 2021-12-23 ("Radfahrer frei"-Schilder fehlen weiterhin, außerdem gibt es eine explizite Bedarfsumleitung für Radfahrer via Jägerstr.
 #: osm_watch: way id="753316505" version="3"
-#: last_checked: 2021-12-23
+#: last_checked: 2022-01-17
 	q4::inwork; 9195,11972 9207,11880
 # REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
 ',

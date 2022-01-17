@@ -448,7 +448,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (geplante Fertigstellung nun 2023, Stand August 2021)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: last_checked: 2021-12-11 vvv
+#: last_checked: 2022-01-15 (mapillary) vvv
 #: next_check: 2023-06-01 vvv
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
@@ -1015,7 +1015,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-01-16
+#: last_checked: 2022-01-17
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1571,7 +1571,7 @@ Haydnstr.: Kopfsteinpflaster	Q2 4681,4537 4785,4557
 #: corrected_by: srt (Q2 -> Q1+)
 Haydnstr.: Asphalt mit einigen Straßenschäden	Q1+ 4785,4557 4870,4609 5004,4709 5076,4762
 Breite Str.: Kopfsteinpflaster	Q2 5048,4798 5087,4853 5169,4969 5216,5047 5259,5110 5318,5205 5382,5312
-Schiffbauerdamm: Kleinsteinpflaster	Q2 9239,12923 9193,12875
+Schiffbauerdamm: Kleinsteinpflaster	Q2+ 9239,12923 9193,12875
 Albrechtstr.: Asphalt	Q0 9102,12790 9042,12931 8997,13037
 #: note: außer ein etwas längeres Stück beiderseits der Kreuzung Johanniterstr./Wilmsstr.
 Tempelherrenstr.: asphaltiert	Q0 10183,9876 10251,9979 10313,10084
@@ -6022,7 +6022,7 @@ Straße 79: mäßiger Asphalt und Schotter	Q2 7877,19507 7805,19359 7797,19345
 Mittelsteg: Asphalt	Q0 8340,18984 8247,19054
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-bauen/irgendwann-sollen-alle-stege-ausgebaut-sein_a298643
 #: XXX wann wird der Rest asphaltiert? werden auch die umliegenden Straßen asphaltiert? vvv
-#: last_checked: 2021-12-25 (mapillary) vvv
+#: last_checked: 2022-01-15 (mapillary) vvv
 #: check_frequency: 210d vvv
 Mittelsteg: Schotterstraße	Q2+ 8247,19054 8211,19082 8209,19107 8136,19159
 Mittelsteg: Schotterstraße	Q2 8136,19159 8062,19212 7981,19269 7930,19282 7805,19359
@@ -27710,7 +27710,7 @@ Weydemeyerstr.: mäßiger Beton, Fugen	Q2+ 11716,12803 11809,12760 11933,12701 119
 Weydemeyerstr.: Asphalt	Q0- 12039,12675 12064,12673
 (Karl-Marx-Allee): Gehwegplatten	Q0 11601,12858 11622,12850 11716,12803
 (Karl-Marx-Allee - Berolinastr.): Beton	Q1+ 11419,12944 11367,12940
-(Karl-Marx-Allee - Berolinastr.): Gehwegplatten	Q0 11367,12940 11289,12908
+(Karl-Marx-Allee - Berolinastr.): Gehwegplatten	Q0- 11367,12940 11289,12908
 #: corrected_by: srt (früher paralleler Weg)
 (Karl-Marx-Allee - Berolinastr.): Gehwegplatten	Q0- 11622,12850 11645,12774 11635,12745
 #: corrected_by: srt (Q0 -> Q1)
@@ -30575,4 +30575,6 @@ Kreuzungsbereich asphaltiert	Q0 10593,16037
 Einmündungsbereich mit Kopfsteinpflaster	Q2+ 10755,14067
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 11457,17585
 Einmündungsbereich asphaltiert	Q0 12053,9793
+Einmündungsbereich asphaltiert	Q0 9193,12875
+Einmündungsbereich teilweise asphaltiert, teilweise Kleinsteinpflaster	Q1- 9239,12923
 #: ignore ^^^

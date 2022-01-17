@@ -1156,7 +1156,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="12"
-#: last_checked: 2022-01-08 (mapillary)
+#: last_checked: 2022-01-15 (mapillary)
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -1241,7 +1241,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-01-15
+#: last_checked: 2022-01-17
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -3537,7 +3537,7 @@ Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708
 #: osm_watch: way id="690322561" version="3"
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2022-01-15
+#: last_checked: 2022-01-17
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
@@ -4004,7 +4004,7 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2021-12-23 vvv
+#: last_checked: 2022-01-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -4034,11 +4034,12 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2021-12-23
+#: last_checked: 2022-01-17
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
-#: last_checked: 2021-12-23
+#: note: allerdings war das Einbahnstraßenschild am 2022-01-17 weggedreht
+#: last_checked: 2022-01-17
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: next_check_id: POTSDAMSPEICHERSTADT-2022

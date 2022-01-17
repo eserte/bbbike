@@ -7,6 +7,11 @@
 # 
 #: temporary vvv
 # 
+#: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.?
+#: last_checked: 2022-01-17
+#: check_frequency: 90d
+Friedrichstr./Behrenstr.	X::inwork 9373,12197
+# 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: last_checked: 2022-01-06
 #: check_frequency: 60d
@@ -72,7 +77,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
 #: next_check_id: FRANZOESISCHE-2018
 #: osm_watch: node id="6380038401" version="1"
-#: last_checked: 2021-11-09
+#: last_checked: 2022-01-17
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 #: valid: -20220930
@@ -2987,7 +2992,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2022-01-15 vvv
+#: last_checked: 2022-01-17 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
