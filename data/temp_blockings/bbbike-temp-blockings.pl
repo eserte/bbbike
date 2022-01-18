@@ -27911,7 +27911,7 @@ EOF
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
 #: also_indoor: traffic (G(wieder),H(falsch?),B)
 #: priority: #B vvv
-#: last_checked: 2021-12-16 vvv
+#: last_checked: 2022-01-18 vvv
 #: check_frequency: 60d vvv
 	q3::inwork 13391,16436 13630,16629
 Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
@@ -31259,7 +31259,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Rennbahnstr., Fahrbahn gesperrt',
+       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Rennbahnstr., Fahrbahn kann gesperrt sein',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020)
@@ -31267,9 +31267,9 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (H,B)
-#: XXX Stand 2021-07-31: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden
+#: XXX Stand 2021-07-31 und 2022-01-18: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2021-12-16
+#: last_checked: 2022-01-18
 #: check_frequency: 30d
 	q3::inwork 14136,17170 13996,16959
 EOF
@@ -33340,7 +33340,8 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.326349,52.447526,26.07.2021,07:00',
        data  => <<EOF,
-#: note: Eintrag bei rbb am 10.11.2021 entfernt
+#: note: Eintrag bei rbb am 10.11.2021 entfernt --- mittlerweile wieder da, sogar bis zum 28.2.2022
+#: also_indoor: traffic (G,H,B)
 	q4::inwork; 5271,4547 5316,4637 5336,4676
 EOF
      },
@@ -34225,12 +34226,12 @@ EOF
 EOF
      },
      { from  => 1640808198, # 2021-12-29 21:03
-       until => 1643644800, # 2022-01-31 17:00
-       text  => 'Grunewaldstr.: Wasserrohrbruch, Fahrbahn zwischen Lepsiusstr. und Rothenburgstr. gesperrt, evtl. gibt es Beeinträchtigungen für Radfahrer, voraussichtlich bis Ende Januar 2022',
+       until => $isodate2epoch->("2022-01-21 12:00:00"), # 1643644800, # 2022-01-31 17:00
+       text  => 'Grunewaldstr.: Wasserrohrbruch, Fahrbahn zwischen Lepsiusstr. und Rothenburgstr. gesperrt, evtl. gibt es Beeinträchtigungen für Radfahrer, voraussichtlich bis 21. Januar 2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1162305.php',
        data  => <<EOF,
-#: source_id: viz2021:13.3156,52.4588,27.12.2021,15:34 (hier kein Endedatum)
+#: source_id: viz2021:13.3156,52.4588,27.12.2021,15:34 (hier kein Endedatum) (mittlerweile bis 21.1.2022)
 #: by: https://viz.berlin.de/2021/12/grunewaldstrasse/
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/grunewaldstrasse-nach-rohrbruch-wohl-bis-ende-januar-gesperrt_a332651
 #: note: auch laut rbb bis Ende Januar
@@ -34317,6 +34318,28 @@ EOF
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Antonplatz: Wochenmarkt Mo bis Fr 09:00-18:00',
+       type  => 'handicap',
+       recurring => 1,
+       source_id => 'https://www.berlin.de/sen/web/service/maerkte-feste/wochen-troedelmaerkte/index.php/detail/205',
+       data  => <<EOF,
+#: tempex: mo-fr T09-T18
+	q4::temp:clock 13508,15912 13511,15964
+EOF
+     },
+     { from  => 1614492000, # 2021-02-28 07:00
+       until => 1672502400, # 2022-12-31 17:00
+       text  => 'Ringstr.: Bauarbeiten, Straße abschnittsweise gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.03.2021 07:00 bis 31.12.2022 17:00 ',
+       type  => 'handicap',
+       source_id => 'viz2021:13.287063,52.432721,01.03.2021,07:00',
+       data  => <<EOF,
+#: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun?
+#: also_indoor: traffic (G,H,B)
+	q4::inwork 3011,3303 2781,3122 2698,3068 2655,3025 2632,2969 2625,2850
 EOF
      },
     );

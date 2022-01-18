@@ -1215,7 +1215,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="16"
-#: last_checked: 2021-11-29
+#: last_checked: 2022-01-18
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
@@ -2431,7 +2431,7 @@ Verbundsteinpflaster, einige Wurzelhebungen	RW1; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2021-12-30 (mapillary)
+#: last_checked: 2022-01-18
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -2612,7 +2612,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="7"
 #: osm_watch: way id="420112509" version="7"
 #: osm_watch: way id="966685279" version="1"
-#: last_checked: 2022-01-09 vvv
+#: last_checked: 2022-01-18 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -3775,7 +3775,7 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: viz2021:13.42941,52.533057,25.02.2020,08:00 (bis 1.9.2021, Gesamtbaumaßnahme bis 2022)
 #: source_id: viz2021:13.42941,52.533057,01.09.2021,08:00 (bis 31.12.2021, Gesamtbaumaßnahme bis 2022) (mittlerweile bis 28.2.2022)
 #: priority: #D vvv
-#: last_checked: 2022-01-08 (mapillary) vvv
+#: last_checked: 2022-01-18 vvv
 #: next_check: 2022-02-28 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -6849,14 +6849,14 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2021-12-21 (mapillary)
+#: last_checked: 2022-01-18
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünmarkierung	RW3; 12522,14385 12407,14470
 #: note: am Ende fehlen ein paar Meter Grünmarkierung
 Grünmarkierung	RW4; 11709,14856 11864,14781 11998,14709 12025,14695 12123,14643 12317,14535
-#: note: am Anfang und am Ende fehlen ein paar Meter Grünmarkierung
-Grünmarkierung	RW4; 12317,14535 12407,14470 12522,14385
+#: note: am Ende fehlen ein paar Meter Grünmarkierung
+Grünmarkierung	RW4; 12407,14470 12522,14385
 #: next_check_id: POPUPRADWEGE-2020
 #: by: https://api.fixmyberlin.de/api/projects/342 (Danziger Str., als temporärer Radstreifen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.927647.php (Einrichtung ab 5. Mai 2020, Abschluss vorraussichtlich KW 20/2020 (~15. Mai 2020))
@@ -6867,11 +6867,12 @@ Grünmarkierung	RW4; 12317,14535 12407,14470 12522,14385
 #: by: https://twitter.com/VIZ_Berlin/status/1402152820439138307
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-24-06-2020.pdf (Erwähnung)
 #: XXX hier wird vermutlich auch eine Grünmarkierung entstehen
-#: last_checked: 2022-01-11 (mapillary) vvv
+#: last_checked: 2022-01-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-31 vvv
 #: osm_watch: way id="335479077" version="14"
 teilweise provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
+provisorischer Radstreifen	RW4; 12317,14535 12407,14470
 # REMOVED --- #: osm_watch: way id="41954398" version="20"
 # REMOVED --- #: osm_watch: way id="4615031" version="39"
 #: next_check ^^^
@@ -7101,7 +7102,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="21"
-#: osm_watch: way id="335487059" version="17"
+#: osm_watch: way id="335487059" version="18"
 #: last_checked: 2022-01-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-01-01 vvv
