@@ -3745,7 +3745,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'source_id' => 'https://twitter.com/VIZ_Berlin/status/1476450886004219906',
          'text' => 'Greifswalder Str.: vor der Kreuzung Thomas-Mann-Str. Wasserrohrbruch, Fahrbahn gesperrt, es gibt auch Beeinträchtigungen für Radfahrer, voraussichtlich bis 20.01.2022',
          'type' => 'handicap',
-         'until' => 1642662000
+         'until' => 1642687200
        },
        {
          'data' => '#: note: vermutlich nur im Bereich Sybelstr. 14

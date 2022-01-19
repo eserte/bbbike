@@ -34239,7 +34239,7 @@ EOF
 EOF
      },
      { from  => 1640894267, # 2021-12-30 20:57
-       until => $isodate2epoch->("2022-01-20 08:00:00"), # 1643670000, # 2022-02-01 00:00
+       until => $isodate2epoch->("2022-01-20 15:00:00"), # 1643670000, # 2022-02-01 00:00
        text  => 'Greifswalder Str.: vor der Kreuzung Thomas-Mann-Str. Wasserrohrbruch, Fahrbahn gesperrt, es gibt auch Beeinträchtigungen für Radfahrer, voraussichtlich bis 20.01.2022',
        type  => 'handicap',
        source_id => 'https://twitter.com/VIZ_Berlin/status/1476450886004219906',
