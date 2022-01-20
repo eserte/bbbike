@@ -29,7 +29,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn nur für Baufahrzeuge	q3::inwork 125
 # 
 #: note: laut rbb bis 29.10.2021, laut Parkverbotsschilder bis 28.1.2022 vvv
 #: also_indoor: traffic (H(falsch),G(teilweise),B)
-#: last_checked: 2022-01-19 vvv
+#: last_checked: 2022-01-20 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-01-28 vvv
 # REMOVED (offen) --- Jessnerstr.: Sperrung der Fahrbahn nördlich der Oderstr.	q3::inwork 14946,11697 14986,11760
@@ -826,12 +826,17 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: osm_watch: way id="13860352" version="16"
 #: also_indoor: traffic (G,ex-H,B)
 #: priority: #A
-#: last_checked: 2021-11-06
+#: last_checked: 2022-01-20 (osm)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2022-04-01
 Moltkestraßenbrücke: Fahrbahn gesperrt	q4::inwork 3867,4537 3898,4490
 # 
-# REMOVED (assume ended --- wegen der Sperrung der Moltkestraßenbrücke) --- #: also_indoor: traffic --- #: last_checked: 2021-11-06 vvv --- #: check_frequency: 90d vvv --- Enzianstr.: Einbahnstraßenregelung	q2::inwork; 3806,4628 3839,4577 --- Enzianstr.: Einbahnstraßenregelung	q3::inwork; 3839,4577 3867,4537 --- #: check_frequency ^^^ --- #: last_checked ^^^
+#: by: https://westnordost.de/p/76978.jpg (Bauarbeiten der Wasserbetriebe bis September 2023)
+#: also_indoor: traffic (G)
+#: last_checked: 2022-01-20 (osm)
+#: check_frequency: 180d
+#: next_check: 2023-09-30
+Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 3839,4577 3867,4537
 # 
 ### Prenzlauer Berg ###
 # 

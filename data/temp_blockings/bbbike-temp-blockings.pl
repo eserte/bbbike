@@ -29215,9 +29215,9 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="24"
+#: osm_watch: way id="8655276" version="25"
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-01-08 (mapillary)
+#: last_checked: 2022-01-19 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -31063,7 +31063,7 @@ EOF
      },
      { from  => $isodate2epoch->("2020-05-27 09:00:00"),
        until => undef, # $isodate2epoch->("2021-12-31 17:00:00"), # der ursprüngliche Termin (14.08.2020) kann wohl nicht gehalten werden; laut Schild bis Ende 2021
-       text  => 'Mainzer Str.: Bauarbeiten zwischen Boxhagener Str. und Scharnweberstr., Fahrbahn gesperrt, möglicherweise bis Ende Dezember 2021, vielleicht auch länger',
+       text  => 'Mainzer Str.: Bauarbeiten zwischen Boxhagener Str. und Scharnweberstr., mögliche Einschränkugen, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
@@ -31071,14 +31071,14 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2022-01-13 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2022-01-20 vvv
+#: check_frequency: 7d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
 # REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
 # REMOVED (beendet) ---	q3::inwork 14272,11775 14306,11889
-	q4::inwork 14306,11889 14354,12012
+	q2::inwork 14306,11889 14354,12012
 	q3::inwork 14354,12012 14468,11992
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -34340,6 +34340,15 @@ EOF
 #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun?
 #: also_indoor: traffic (G,H,B)
 	q4::inwork 3011,3303 2781,3122 2698,3068 2655,3025 2632,2969 2625,2850
+EOF
+     },
+     { from  => 1642917600, # 2022-01-23 07:00
+       until => 1653663600, # 2022-05-27 17:00
+       text  => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., vom 24.01.2022 07:00 bis 27.05.2022 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.445809,52.479541,24.01.2022,07:00',
+       data  => <<EOF,
+	q4::inwork 13277,8211 13331,8283
 EOF
      },
     );

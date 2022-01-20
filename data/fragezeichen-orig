@@ -1365,7 +1365,15 @@ Mühlenstr.: Verbesserung -> evtl. Radspuren oder Asphaltierung?	?::projected 123
 Radweg durch den Gemeindepark Lankwitz: Qualität des neuen Weges? Beleuchtet? Wird hier der Radweg B-L geführt?	?::inwork 6745,2848 6677,2718
 # 
 # REMOVED (hier vermutlich nicht) --- #: by: http://www.berliner-woche.de/steglitz/bauen/bezirk-investiert-in-sanierung-von-strassen-und-radwegen-d140640.html --- #: last_checked: 2020-05-08 --- #: check_frequency: 90d --- Gallwitzallee: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected 6665,2836 6658,2907 6643,3070 6638,3138 6640,3192 6712,3237
-# REMOVED (Busspur fängt ein paar Meter früher an; neue Markierung der Radwege an der Kreuzung Großbeerenstr.) --- #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902 --- #: XXX oder wird hier ein Radweg in der Gegenrichtung gebaut? --- #: osm_watch: way id="156579468" version="12" --- #: last_checked: 2021-09-12 --- #: check_frequency: 180d --- Alt-Mariendorf: Verbesserung (hmmm, hier ist schon eine Busspur; wird sie zur Radspur?)	?::projected; 8964,3539 9128,3580
+# 
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
+#: source_id: viz2021:13.381888,52.438085,24.01.2022,07:00 (Bauarbeiten bis 11.2.2022, haben diese etwas mit dem Vorhaben zu tun?)
+#: XXX oder wird hier ein Radweg in der Gegenrichtung gebaut?
+#: osm_watch: way id="156579468" version="12"
+#: last_checked: 2021-10-06 (mapillary)
+# REMOVED --- #: check_frequency: 180d
+#: next_check: 2022-02-11
+Alt-Mariendorf: Verbesserung (hmmm, hier ist schon eine Busspur; wird sie zur Radspur?)	?::projected; 8964,3539 9128,3580
 # 
 #: source_id: 2147344406 (bis Mitte Juli 2019) (mittlerweile inaktiv; ohne Auswirkungen)
 #: source_id: 2147346801 (bis 31.3.2021) (wurde noch nicht entfernt)
@@ -3432,10 +3440,13 @@ Gartenstr. (Biesdorf): wird eventuell noch kürzer werden	?::projected 21193,1133
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8902
 #: by: https://berliner-abendblatt.de/2021/10/21/lichtenberg-buerger-bewerten-konzept-fuer-karlshorst/
 #: by: https://berliner-abendblatt.de/wp-content/uploads/2021/10/1-planzeichnung-mit-dem-konzept-entwurf_lH0UKLd.jpg
-#: osm_watch: way id="43566318" version="7"
-#: osm_watch: way id="37739269" version="11"
+#: osm_watch: way id="43566318" version="9"
+# REMOVED (gelöscht) --- #: osm_watch: way id="37739269" version="12"
+#: osm_watch: way id="1022558675" version="1"
+#: XXX laut osm mittlerweile wegen Bauarbeiten gesperrt, auch für Radfahrer?
 #: last_checked: 2021-11-22
 #: check_frequency: 360d
+#: next_check: 2022-01-19
 Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler Str. und Verkehrsberuhigung der nördlichen Zwieseler Str. geplant	?::projected 19810,10155 19790,10298 19704,10301 19711,10426
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/beteiligung/bebauungsplan.839347.php
@@ -4816,6 +4827,7 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.596879.php
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.630514.php
+#: source_id: viz2021:13.397721,52.495244,24.01.2022,06:00 (Kabelarbeiten bis 11.2.2022, haben diese etwas mit dem Radweg zu tun?)
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: osm_watch: way id="496239503" version="8"
 #: last_checked: 2021-12-27 (nur ein provisorisch asphaltierter Radweg)
@@ -7634,7 +7646,7 @@ S-Bhf. Eichborndamm: neue Unterführung geplant, wird diese für Radfahrer benutzb
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_42_5125_5208_online.pdf (Benennung einer Privatstraße)
 #: by: https://www.bonava.de/immobilien/berlin/mariendorf/quartier-hugos
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (Grundstücksnummerierungen)
-#: osm_watch: way id="287142081" version="9"
+#: osm_watch: way id="287142081" version="10"
 #: osm_watch: way id="255588538" version="5"
 #: osm_watch: way id="271172796" version="4"
 #: XXX laut osm opening_date=2020; laut osm teilweise schon fertig
