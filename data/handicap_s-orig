@@ -141,7 +141,7 @@ Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 ### Treptow ###
 # 
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
-#: last_checked: 2022-01-06 (mapillary)
+#: last_checked: 2022-01-18 (mapillary)
 #: check_frequency: 60d
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 # 
@@ -711,21 +711,7 @@ Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Um
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: XXX Bis wann dauern die Bauarbeiten an?
-#: XXX Mittlerweile nur etwa 100m
-#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FD6C35EF-640E-43B3-8F22-17914A1869B0 (Verbindungstrasse Fernwärme Klingenberg)
-#: also_indoor: traffic (G,B(beide zu viel)) vvv
-# REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="1002249853" version="2"
-# REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="198589916" version="9"
-#: osm_watch: way id="198589913" version="6"
-#: last_checked: 2022-01-10 vvv
-#: check_frequency: 14d vvv
-Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q1::inwork; 15932,10830 15681,10801
-# REMOVED --- Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-# 
+# REMOVED (wieder beendet) --- #: XXX Bis wann dauern die Bauarbeiten an? --- #: XXX Mittlerweile nur etwa 100m --- #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FD6C35EF-640E-43B3-8F22-17914A1869B0 (Verbindungstrasse Fernwärme Klingenberg) --- #: also_indoor: traffic (G,B(beide zu viel)) vvv --- # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="1002249853" version="2" --- # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="198589916" version="9" --- #: osm_watch: way id="198589913" version="6" --- #: last_checked: 2022-01-10 vvv --- #: check_frequency: 14d vvv --- Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q1::inwork; 15932,10830 15681,10801 --- # REMOVED --- Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
 # REMOVED --- #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/neue-vorstreckungen-ueberwege-mittelinseln-und-abgesenkte-bordsteine_a319370 (Erwähnung der Wege in der Grünanlage) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8710 (Abschluss der Bauarbeiten im 3. Quartal 2021) --- #: last_checked: 2021-09-11 vvv --- #: check_frequency: 7d vvv
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16878,9875 16900,9861

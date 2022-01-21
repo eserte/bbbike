@@ -3283,7 +3283,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-01-10
+#: last_checked: 2022-01-21
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -3562,7 +3562,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: also_indoor: traffic (G)
 #: osm_watch: way id="1003079755" version="4"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-01-10
+#: last_checked: 2022-01-21
 #: check_frequency: 14d
 	q3::inwork; 16192,10907 16153,10818
 ',
@@ -3718,20 +3718,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1672527599
        },
-       {
-         'data' => '#: source_id: viz2021:13.3156,52.4588,27.12.2021,15:34 (hier kein Endedatum) (mittlerweile bis 21.1.2022)
-#: by: https://viz.berlin.de/2021/12/grunewaldstrasse/
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/grunewaldstrasse-nach-rohrbruch-wohl-bis-ende-januar-gesperrt_a332651
-#: note: auch laut rbb bis Ende Januar
-	q3::inwork 4520,5793 4671,5697
-',
-         'from' => 1640808198,
-         'id' => 3493,
-         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1162305.php',
-         'text' => 'Grunewaldstr.: Wasserrohrbruch, Fahrbahn zwischen Lepsiusstr. und Rothenburgstr. gesperrt, evtl. gibt es Beeinträchtigungen für Radfahrer, voraussichtlich bis 21. Januar 2022',
-         'type' => 'handicap',
-         'until' => 1642762800
-       },
+       undef,
        undef,
        {
          'data' => '#: note: vermutlich nur im Bereich Sybelstr. 14
@@ -3840,6 +3827,21 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., vom 24.01.2022 07:00 bis 27.05.2022 17:00',
          'type' => 'handicap',
          'until' => 1653663600
+       },
+       {
+         'data' => '#: next_check_id: ZWIESELER-2022
+#: XXX Stand 2022-01-21: Verbotsschild für Fußgänger am nördlichen Ende, Verbot für Fahrzeuge aller Art außer Grundstücksanlieger am südlichen Ende, man kann aber trotzdem passieren
+#: XXX Halteverbotsschilder gelten bis Ende Juni 2023
+#: last_checked: 2022-01-21
+#: check_frequency: 120d
+#: next_check: 2023-06-30
+	2::inwork 19711,10426 19697,10210
+',
+         'from' => undef,
+         'id' => 3504,
+         'text' => 'Zwieseler Str.: Zufahrt zum Richard-Kolkwitz-Weg kann wegen Bauarbeiten gesperrt sein, auch für Fußgänger',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

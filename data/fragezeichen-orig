@@ -245,7 +245,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11030 (Anfrage)
 #: source_id: 2147345414 (bis Mitte April 2020) (haben die Leitungsarbeiten was mit den geplanten Radspuren zu tun?) (inaktiv)
 #: source_id: viz2021:13.365263,52.543096,15.12.2021,07:00 (Bauarbeiten bis 23.12.2021) (mittlerweile bis 20.01.2022)
-#: source_id: viz2021:13.365263,52.543096,01.01.2022,07:00 (Bauarbeiten bis 28.01.2022)
+#: source_id: viz2021:13.365263,52.543096,01.01.2022,07:00 (Bauarbeiten bis 28.01.2022) (mittlerweile bis 24.01.2022)
 #: osm_watch: way id="4543585" version="34"
 #: osm_watch: way id="42732291" version="23"
 #: last_checked: 2022-01-01 (architektur-urbanistik)
@@ -2898,6 +2898,7 @@ Am Gehrensee: wird die Straße hier für Autos verlängert? bleibt der Fahrradweg, 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9074 vvv
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/9746yP6YIftgfYZtRGYpFGY8f6vXCcIyTGKHemqm/dQOYtRaW/95-Anlagen/02/AnlageBEStrassennamen.pdf vvv
 #: by: https://www.berliner-woche.de/falkenberg/c-verkehr/namen-fuer-neue-strassen-vergeben_a326990 (BVV-Beschluss)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Benennungen)
 #: osm_watch: way id="506203940" version="2"
 #: XXX fehlen alle bei Berlin.coords.data vvv
 Emilie-Mayer-Weg: geplante Straße, genaue Lage, Qualität?	?::projected 20727,18576 20759,18589 20804,18609 20852,18629 20883,18642 20874,18704
@@ -3433,6 +3434,7 @@ Gartenstr. (Biesdorf): wird eventuell noch kürzer werden	?::projected 21193,1133
 # REMOVED (realisiert) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1809/nachricht6603.html --- #: by: https://www.berliner-woche.de/friedenau/c-bauen/wettbewerb-zur-neugestaltung-des-friedrich-wilhelm-platzes-ist-entschieden_a180932 (auch eine Fußgängerampel geplant, und im Plan kommen nur noch Radspuren vor) --- #: by: https://media04.berliner-woche.de/article/2018/09/14/3/218633_XL.jpg?1537206510 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf --- #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902 (2019) --- #: last_checked: 2019-07-13 (mapillary) (vermutlich schon realisiert) --- #: next_check: 2019-07-13 --- Friedrich-Wilhelm-Platz: existiert bereits die neue Verbindung zwischen Niedstr. und Wilhelmshöher Str.?	? 5364,7330 5310,7325
 # REMOVED (Schranke existiert) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7875 --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036502888894/502888894/00101128/28-Anlagen/02/vzb0323_V_Auswertg_fruehzeitige_Beteilig_B_Pla.pdf --- #: osm_watch: way id="25796032" version="9" --- #: last_checked: 2019-07-21 --- #: check_frequency: 90d --- Moßbacher Brücke: wird für den Kfz-Verkehr vermutlich geschlossen	?::projected 22195,10993 22221,10985 22240,10980
 # 
+#: next_check_id: ZWIESELER-2022
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bebauungsplan.813189.php
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan11158neu.pdf
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/plaene-fuer-die-zwieseler-strasse_a217594
@@ -3443,11 +3445,11 @@ Gartenstr. (Biesdorf): wird eventuell noch kürzer werden	?::projected 21193,1133
 #: osm_watch: way id="43566318" version="9"
 # REMOVED (gelöscht) --- #: osm_watch: way id="37739269" version="12"
 #: osm_watch: way id="1022558675" version="1"
-#: XXX laut osm mittlerweile wegen Bauarbeiten gesperrt, auch für Radfahrer?
-#: last_checked: 2021-11-22
-#: check_frequency: 360d
-#: next_check: 2022-01-19
-Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler Str. und Verkehrsberuhigung der nördlichen Zwieseler Str. geplant	?::projected 19810,10155 19790,10298 19704,10301 19711,10426
+#: XXX Hier sind mittlerweile Bauarbeiten; offiziell "Verbot für Fahrzeuge aller Art, bis auf Anlieger", als Radfahrer kommt man eigentlich noch problemlos vorbei; außerdem nun "Gehweg, Radfahrer frei" im Bereich der Baustelle am Richard-Kolkwitz-Weg
+#: last_checked: 2022-01-21
+#: check_frequency: 180d
+#: next_check: 2023-06-30
+Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler Str. und Verkehrsberuhigung der nördlichen Zwieseler Str. geplant	?::inwork 19810,10155 19790,10298 19704,10301 19711,10426
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/beteiligung/bebauungsplan.839347.php
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/beteiligung/b110070191b_mit_namen_pl.pdf
@@ -5094,7 +5096,7 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8708&date=20220115 (Radfahrstreifen bis zur Kynaststr.?)
 #: XXX während der Bauarbeiten Einbahnstraßenregelung --- was wird das für den Radverkehr bedeuten? -> siehe temp blockings
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2022-01-10
+#: last_checked: 2022-01-21
 #: check_frequency: 90d
 #: next_check: 2022-04-29
 Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,10738
@@ -5110,7 +5112,7 @@ Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,1073
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023)
 #: source_id: viz2021:13.475017,52.501547,29.04.2021,08:00 (Bauarbeiten bis 29.04.2022)
 #: source_id: viz2021:13.475184,52.501511,29.11.2021,08:00 (Bauarbeiten bis 29.04.2022)
-#: last_checked: 2022-01-10
+#: last_checked: 2022-01-21
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
@@ -5742,7 +5744,7 @@ B96: parallel geführte Kfz-Straße geplant, ehemalige B96 könnte man dann "degrad
 #: source_id: LS/721-F/20/206
 #: source_id: LS/721-F/21/185
 #: source_id: LS/721-F/21/184
-#: next_check: 2021-12-30
+#: next_check: 2022-03-31
 B168: straßenbegleitender Radweg (westliche Seite) in Bau	?::inwork 67495,-21856 67300,-21371 66817,-20600
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=19117
@@ -6209,7 +6211,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by: https://api.fixmyberlin.de/api/projects/441
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8742 (Anordnungsprozess in Vorbereitung)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8792 (Anordnungsprozess in Vorbereitung)
-#: last_checked: 2022-01-10
+#: last_checked: 2022-01-21
 #: check_frequency: 180d
 Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 18301,9946 18266,9853 18066,9770 17920,9698 17777,9649 17668,9632 17587,9655 17471,9688 17383,9719
 # 

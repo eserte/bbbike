@@ -3382,7 +3382,7 @@ asphaltiert	RW2;RW2 18176,14108 18178,14078 18181,14039 18198,13816 18226,13506
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18225,12697 18220,12450
 # REMOVED (wird später vermutlich richtig gemacht) --- provisorische Radspur	RW4; 18220,12450 18216,12262 18216,12239 18216,12209 18215,12123
-#: last_checked: 2021-12-21 (mapillary) vvv
+#: last_checked: 2022-01-21 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-11-05 vvv
 	RW0; 18215,12123 18216,12209
@@ -4457,7 +4457,7 @@ gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 19676,3705 19735,3643 198
 Verbundsteinpflaster	RW2; 20010,3340 20002,3349 19946,3415
 neu asphaltiert	RW2; 19946,3415 19904,3464
 # REMOVED --- #: next_check_id: ADLERGESTELL-2019 --- #: last_checked: 2020-02-07 (mapillary) --- #: next_check: 2020-04-18 --- # REMOVED --- #: next_check: 2019-12-31 --- # REMOVED (Bauarbeiten) --- schlechte Qualität des Radwegs (holprig), eng, Fußgänger	RW2; 20010,3340 20064,3278 20207,3115 20289,3033 20339,2983 20451,2869 20565,2754
-	RW4; 20002,3349 20010,3340 20064,3278 20207,3115
+Grünmarkierung	RW4; 20002,3349 20010,3340 20064,3278 20207,3115
 #: note: hier vermutlich wegen der langen Bushaltestelle keine Radspur
 gemeinsamer Rad- und Gehweg, neu asphaltiert, relativ breit	RW2; 20207,3115 20289,3033 20339,2983
 	RW4; 20339,2983 20451,2869

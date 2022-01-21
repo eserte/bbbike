@@ -33217,7 +33217,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-01-10
+#: last_checked: 2022-01-21
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33842,7 +33842,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="1003079755" version="4"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-01-10
+#: last_checked: 2022-01-21
 #: check_frequency: 14d
 	q3::inwork; 16192,10907 16153,10818
 EOF
@@ -34349,6 +34349,20 @@ EOF
        source_id => 'viz2021:13.445809,52.479541,24.01.2022,07:00',
        data  => <<EOF,
 	q4::inwork 13277,8211 13331,8283
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Zwieseler Str.: Zufahrt zum Richard-Kolkwitz-Weg kann wegen Bauarbeiten gesperrt sein, auch für Fußgänger',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: ZWIESELER-2022
+#: XXX Stand 2022-01-21: Verbotsschild für Fußgänger am nördlichen Ende, Verbot für Fahrzeuge aller Art außer Grundstücksanlieger am südlichen Ende, man kann aber trotzdem passieren
+#: XXX Halteverbotsschilder gelten bis Ende Juni 2023
+#: last_checked: 2022-01-21
+#: check_frequency: 120d
+#: next_check: 2023-06-30
+	2::inwork 19711,10426 19697,10210
 EOF
      },
     );
