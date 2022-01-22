@@ -108,20 +108,20 @@ Columbiahaus	F:SW 9249,8871 9568,8877 9572,8855 9249,8851
 #: by: https://www.rbb24.de/politik/Flughafen-BER/BER-Aktuelles/akteure_aktuell/2021/01/ber-terminal-5-schliesst-februar-berlin-flughafen-sparen.html
 #: by: https://www.flugrevue.de/zivil/terminal-5-wird-voruebergehend-stillgelegt-ber-konzentriert-den-verkehr-im-termnal-1/
 #: by: https://viz.berlin.de/2021/02/ber-terminal-5/
-#: by: https://ber.berlin-airport.de/de.html (noch immer temporär geschlossen, Stand Juni 2021)
-#: by: https://www.berlin.de/tourismus/infos/flughafen-ber/1872375-5653185-flughafen-berlin-schoenefeld-sxf.html (temporär bis Februar 2022 geschlossen)
+#: by: https://ber.berlin-airport.de/de.html (noch immer temporär geschlossen, Stand Juni 2021) (keine Änderung, Stand Januar 2021)
+#: by: https://www.berlin.de/tourismus/infos/flughafen-ber/1872375-5653185-flughafen-berlin-schoenefeld-sxf.html (temporär bis Februar 2022 geschlossen) (mittlerweile (Januar 2021) kein Termin mehr)
 #: XXX Terminal 5 wird (temporär) am 2021-02-23 geschlossen --- wann wird das Terminal wieder geöffnet oder für immer geschlossen? vvv
-#: last_checked: 2021-06-21 (website) vvv
-# REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2022-02-01 vvv
+#: last_checked: 2022-01-22 (website) vvv
+#: check_frequency: 90d vvv
+# REMOVED --- #: next_check: 2022-02-01 vvv
 #: note (XXX_prog): Reihenfolge Flughafen -> Touristeninformation beibehalten, da sonst das Icon der Information überdeckt wird.
 #: valid: -20210223 vvv
 #: oldname: -20201025: Flughafen Schönefeld
 Flughafen BER Terminal 5	F:SW|IMG:airport 18581,-1760 18594,-1810 18359,-1889 18335,-1843 18581,-1760
 Touristeninformation Berlin-Brandenburg in BER T5	SW|IMG:touristinfo 18443,-1787
 #: valid ^^^
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 Flughafen BER	F:SW|IMG:airport 17884,-4900 18309,-4733 18262,-4633 18038,-4722 17836,-4229 18053,-4130 18010,-4039 17606,-4214

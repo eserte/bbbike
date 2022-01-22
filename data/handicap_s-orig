@@ -180,11 +180,11 @@ Oderstr.: Einbahnstraﬂenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 #: by: https://abendblatt-berlin.de/2021/04/05/berlin-wedding-geisterhaus-an-der-burgsdorfstrasse-soll-abgerissen-werden/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
 #: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
-#: osm_watch: way id="549316654" version="12"
+#: osm_watch: way id="549316654" version="13"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
-#: last_checked: 2021-12-11
+#: last_checked: 2022-01-21 (osm)
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -809,7 +809,7 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neubau-der-moltkebruecke-beginnt_a316440
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/der-neubau-der-moltkebruecke-startet-anfang-2022_a330836 (Fertigstellung Anfang 2024)
 #: XXX wann wird die Einschr‰nkung beendet?
-#: osm_watch: way id="13860352" version="16"
+#: osm_watch: way id="13860352" version="17"
 #: also_indoor: traffic (G,ex-H,B)
 #: priority: #A
 #: last_checked: 2022-01-20 (osm)
@@ -2997,8 +2997,11 @@ B¸rgerstr. - Bendastr.: einige Fuﬂg‰nger	q1 12830,6254 12813,6334 12812,6343 128
 (U-Bhf. Scharnweberstr. - Scharnweberstr.): U-Bahnhof, T¸ren	q4 3987,17808 3997,17840
 (U-Bhf. Scharnweberstr. - Scharnweberstr.): Fuﬂg‰nger	q2 3997,17840 4016,17918
 (Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): Fuﬂg‰nger, kurvig	q2 4997,19849 4992,19891 5029,19945 5151,19960 5220,19982
-#: XXX_prog BS am Wendehammer, ansonsten q1
-Brienzer Str.: einige Fuﬂg‰nger, Bordstein	q2 7282,17318 7289,17277
+# REMOVED (Absenkung existiert am Wendehammer, aber q2 beibehalten) --- #: XXX_prog BS am Wendehammer, ansonsten q1
+Brienzer Str.: einige Fuﬂg‰nger	q2 7282,17318 7289,17277
+(Weg um den Sch‰fersee): einige Fuﬂg‰nger	q1 7320,17718 7215,17689 7189,17666 7173,17591 7222,17471 7253,17467 7350,17464 7455,17495 7477,17544 7466,17627 7415,17696 7320,17718
+(Sch‰fersee - Baseler Str.): einige Fuﬂg‰nger	q1 7215,17689 7185,17681 7166,17677 6897,17616
+(Genfer Str. - Sch‰fersee): einige Fuﬂg‰nger	q1 7161,17743 7185,17681 7189,17666
 Torfstraﬂensteg: einige Fuﬂg‰nger	q1 6847,14735 6824,14821
 (Parkplatz Getr‰nke Hoffmann): Parkplatzverkehr	q2+ 18647,12354 18715,12348
 (westlicher Wuhlewanderweg - ˆstlicher Wuhlewanderweg): Fuﬂg‰nger	q1 22347,13858 22389,13824 22426,13735 22445,13720 22457,13713

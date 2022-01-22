@@ -29216,6 +29216,8 @@ EOF
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
 #: osm_watch: way id="8655276" version="25"
+#: also_indoor: search Blumberger-Damm-Brücke
+#: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
 #: last_checked: 2022-01-19 (osm)
 #: check_frequency: 60d
@@ -29468,7 +29470,7 @@ EOF
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
 #: also_indoor: traffic (H,B)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2021-12-18 (indoor)
+#: last_checked: 2022-01-22
 #: check_frequency: 30d
 #: next_check: 2022-03-31
 	q3::inwork  8986,16092 9178,16317
@@ -30843,6 +30845,7 @@ EOF
 	q4::temp 7126,9825 7118,9870 7080,10098
 EOF
      },
+
      { from  => 1587621600, # 2020-04-23 08:00
        until => undef, # XXX
        text  => 'Boxhagener Platz: samstags 6 bis 20 Uhr Sperrung der umliegenden Straßen wegen des Wochenmarkts',
@@ -30852,7 +30855,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-01-15
+#: last_checked: 2022-01-22
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32215,7 +32218,8 @@ EOF
        source_id => '2147346268',
        data  => <<EOF,
 #: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022)
-#: last_checked: 2021-12-25 (mapillary)
+#: also_indoor: traffic (G)
+#: last_checked: 2022-01-22
 #: check_frequency: 90d
 #: next_check: 2022-02-01
 	q2::inwork 8913,16159 9099,16398
@@ -33221,9 +33225,9 @@ EOF
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
-#: osm_watch: way id="984964447" version="5"
+#: osm_watch: way id="984964447" version="6"
 	q3::inwork 15279,10862 15355,10875
-#: osm_watch: way id="984056169" version="5"
+#: osm_watch: way id="984056169" version="6"
 	2::inwork 15272,10790 15388,10758
 EOF
      },
@@ -33642,7 +33646,7 @@ EOF
 # REMOVED (eins reicht) --- #: osm_watch: note 2867467 2
 #: osm_watch: way id="16311543" version="18"
 #: also_indoor: search Ernst-Heilmann-Steg
-#: last_checked: 2021-11-24 (mapillary)
+#: last_checked: 2022-01-20 (mapillary)
 #: check_frequency: 120d
 	2::inwork 13270,10030 13306,10006
 EOF

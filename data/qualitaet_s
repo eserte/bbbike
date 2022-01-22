@@ -784,7 +784,7 @@ Roland-Krüger-Str. - Lessinghöhe: Verbundsteinpflaster	Q1 12571,7899 12602,7907
 Neuwedeller Str.: Kopfsteinpflaster	Q2 12327,7847 12335,7770
 Morusstr.: Kopfsteinpflaster	Q2 12478,7878 12520,7694
 Leinestr.: Kopfsteinpflaster	Q2 12123,7549 11929,7512 11803,7487 11675,7462 11558,7438
-Auguststr.: Kopfsteinpflaster	Q2 10309,13601 10263,13594 10142,13556 10049,13528 10026,13521
+Auguststr.: Kopfsteinpflaster	Q2 10309,13601 10263,13594 10142,13556 10049,13528
 (Kleine) Rosenthaler Str.: Asphalt	Q0 10301,13701 10309,13601 10313,13568 10318,13528
 Magazinstr.: Kopfsteinpflaster, OK	Q1 11562,12597 11329,12497
 Saarbrücker Str.: Asphalt, etwas brüchig	Q0 10895,13961 11052,13870 11116,13830 11251,13667
@@ -7831,7 +7831,9 @@ Olbrichweg: Kleinsteinpflaster	Q2 5787,19326 5879,19352
 Knauerstr.: Beton	Q0 5993,19477 6003,19461 6084,19297
 (Genfer Str. - Schäfersee): wassergebundene Decke	Q1 7116,17989 7123,17892
 (Genfer Str. - Schäfersee): Asphalt	Q0 7123,17892 7127,17857
-(Genfer Str. - Schäfersee): wassergebundene Decke	Q1 7127,17857 7161,17743 7185,17681 7189,17666
+(Genfer Str. - Schäfersee): wassergebundene Decke	Q1 7127,17857 7161,17743
+(Genfer Str. - Schäfersee): Asphalt	Q0 7161,17743 7185,17681
+(Genfer Str. - Schäfersee): wassergebundene Decke	Q1 7185,17681 7189,17666
 (Genfer Str. - Deutsche Str./Schäfersee): Kleinsteinpflaster	Q1 7076,18026 7089,17990
 (Genfer Str. - Deutsche Str./Schäfersee): wassergebundene Decke	Q1 7089,17990 7116,17989
 (Genfer Str. - Deutsche Str.): wassergebundene Decke	Q1 7116,17989 7159,17997
@@ -7968,8 +7970,9 @@ Rundpfuhlweg: Kleinsteinpflaster	Q2 5713,18739 5715,18586
 Holzweidepfad: Gehwegplatten	Q0 5791,18778 5792,18727
 Holzweidepfad: Beton	Q0 5792,18727 5795,18585
 Romanshorner Weg: Gehwegplatten	Q0 6619,18639 6608,18547
-(Schäfersee - Baseler Str.): wassergebundene Decke	Q1 7215,17689 7185,17681
-(Schäfersee - Baseler Str.): Mosaikpflaster	Q1 7185,17681 6897,17616
+(Schäfersee - Baseler Str.): Asphalt	Q0 7215,17689 7185,17681
+(Schäfersee - Baseler Str.): Asphalt	Q0 7185,17681 7166,17677
+(Schäfersee - Baseler Str.): Mosaikpflaster	Q1 7166,17677 6897,17616
 Am Schäfersee: Verbundsteinpflaster	Q1 7572,17558 7477,17544 7455,17495 7350,17464 7253,17467
 Demminer Str.: Kopfsteinpflaster	Q2 9969,15191 10018,15211
 Marthashof: Asphalt	Q0 10448,14707 10483,14720 10561,14746 10556,14766 10476,14741 10440,14730
@@ -12101,7 +12104,9 @@ Greifenhagener Str.: Kopfsteinpflaster	Q2 11040,15398 11055,15504 11086,15772
 Greifenhagener Str.: Kopfsteinpflaster	Q2 11214,16043 11253,16118 11295,16199 11337,16291 11397,16405
 Zermatter Str.: Betonplatten, gut	Q1 6375,17755 6495,17721 6594,17713
 Zermatter Str.: Kopfsteinpflaster besserer Qualität	Q1 6594,17713 6631,17721 6739,17749 6841,17781
-(Um den Schäfersee): guter fester Sandweg	Q1 7477,17544 7466,17627 7415,17696 7320,17718 7215,17689 7189,17666 7173,17591 7222,17471 7253,17467
+(Um den Schäfersee): guter fester Sandweg	Q1 7477,17544 7466,17627 7415,17696 7320,17718
+(Um den Schäfersee): Asphalt	Q0 7320,17718 7215,17689
+(Um den Schäfersee): guter fester Sandweg	Q1 7215,17689 7189,17666 7173,17591 7222,17471 7253,17467
 Baseler Str. (Reinickendorf): Kleinpflaster	Q2 6784,17960 6815,17871 6841,17781 6886,17649 6897,17616 6904,17596 6987,17321
 Mudrackzeile: Kleinsteinpflaster	Q1 6886,17649 6950,17669 7020,17690 7033,17692
 Mudrackzeile: asphaltiert	Q0 7020,17690 6985,17812

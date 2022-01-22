@@ -537,7 +537,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2021-12-11
+#: last_checked: 2022-01-22
 #: check_frequency: 90d
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
@@ -1015,7 +1015,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-01-20
+#: last_checked: 2022-01-22
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1147,7 +1147,7 @@ Roland-Krüger-Str. - Lessinghöhe: Verbundsteinpflaster	Q1- 12571,7899 12602,7907
 Neuwedeller Str.: Kopfsteinpflaster	Q2 12327,7847 12335,7770
 Morusstr.: Kopfsteinpflaster	Q2 12478,7878 12520,7694
 Leinestr.: Kopfsteinpflaster	Q2 12123,7549 11929,7512 11803,7487 11675,7462 11558,7438
-Auguststr.: Kopfsteinpflaster	Q2 10309,13601 10263,13594 10142,13556 10049,13528 10026,13521
+Auguststr.: Kopfsteinpflaster	Q2 10309,13601 10263,13594 10142,13556 10049,13528
 (Kleine) Rosenthaler Str.: Asphalt	Q0 10301,13701 10309,13601 10313,13568 10318,13528
 Magazinstr.: Kopfsteinpflaster, OK	Q1- 11562,12597 11329,12497
 #: by: Lutz Epperlein:
@@ -9121,7 +9121,10 @@ Olbrichweg: Kleinsteinpflaster	Q2+ 5787,19326 5879,19352
 Knauerstr.: Beton	Q0 5993,19477 6003,19461 6084,19297
 (Genfer Str. - Schäfersee): wassergebundene Decke	Q1 7116,17989 7123,17892
 (Genfer Str. - Schäfersee): Asphalt	Q0 7123,17892 7127,17857
-(Genfer Str. - Schäfersee): wassergebundene Decke	Q1 7127,17857 7161,17743 7185,17681 7189,17666
+(Genfer Str. - Schäfersee): wassergebundene Decke	Q1 7127,17857 7161,17743
+#: note: früher wassergebundene Decke, Q1
+(Genfer Str. - Schäfersee): Asphalt	Q0 7161,17743 7185,17681
+(Genfer Str. - Schäfersee): wassergebundene Decke	Q1 7185,17681 7189,17666
 (Genfer Str. - Deutsche Str./Schäfersee): Kleinsteinpflaster	Q1 7076,18026 7089,17990
 (Genfer Str. - Deutsche Str./Schäfersee): wassergebundene Decke	Q1 7089,17990 7116,17989
 (Genfer Str. - Deutsche Str.): wassergebundene Decke	Q1 7116,17989 7159,17997
@@ -9278,8 +9281,11 @@ Rundpfuhlweg: Kleinsteinpflaster	Q2 5713,18739 5715,18586
 Holzweidepfad: Gehwegplatten	Q0- 5791,18778 5792,18727
 Holzweidepfad: Beton	Q0- 5792,18727 5795,18585
 Romanshorner Weg: Gehwegplatten	Q0- 6619,18639 6608,18547
-(Schäfersee - Baseler Str.): wassergebundene Decke	Q1 7215,17689 7185,17681
-(Schäfersee - Baseler Str.): Mosaikpflaster	Q1 7185,17681 6897,17616
+#: note: früher wassergebundene Decke, Q1
+(Schäfersee - Baseler Str.): Asphalt	Q0 7215,17689 7185,17681
+#: note: früher Mosaikpflaster, Q1
+(Schäfersee - Baseler Str.): Asphalt	Q0 7185,17681 7166,17677
+(Schäfersee - Baseler Str.): Mosaikpflaster	Q1 7166,17677 6897,17616
 Am Schäfersee: Verbundsteinpflaster	Q1 7572,17558 7477,17544 7455,17495 7350,17464 7253,17467
 Demminer Str.: Kopfsteinpflaster	Q2 9969,15191 10018,15211
 Marthashof: Asphalt	Q0 10448,14707 10483,14720 10561,14746 10556,14766 10476,14741 10440,14730
@@ -15226,7 +15232,10 @@ Zermatter Str.: Betonplatten, gut	Q1 6375,17755 6495,17721 6594,17713
 #: confirmed_by: srt
 Zermatter Str.: Kopfsteinpflaster besserer Qualität	Q1- 6594,17713 6631,17721 6739,17749 6841,17781
 #: confirmed_by: srt
-(Um den Schäfersee): guter fester Sandweg	Q1 7477,17544 7466,17627 7415,17696 7320,17718 7215,17689 7189,17666 7173,17591 7222,17471 7253,17467
+(Um den Schäfersee): guter fester Sandweg	Q1 7477,17544 7466,17627 7415,17696 7320,17718
+#: corrected_by: srt (guter fester Sandweg, Q1 -> ..., neu gemacht)
+(Um den Schäfersee): Asphalt	Q0 7320,17718 7215,17689
+(Um den Schäfersee): guter fester Sandweg	Q1 7215,17689 7189,17666 7173,17591 7222,17471 7253,17467
 #: note: Rainer (ghostviewer...) meint "Kleinpflaster"
 #: corrected_by: srt (Q2 -> Q2+)
 Baseler Str. (Reinickendorf): Kleinpflaster	Q2+ 6784,17960 6815,17871 6841,17781 6886,17649 6897,17616 6904,17596 6987,17321
@@ -30262,7 +30271,8 @@ Kreuzungsbereich asphaltiert	Q0 13467,11778
 Kreuzungsbereich asphaltiert	Q0 13295,11792
 Kreuzungsbereich asphaltiert	Q0 13368,7300
 Kreuzungsbereich asphaltiert	Q0 9505,9306
-Kreuzungsbereich asphaltiert	Q0 10026,13521
+Einmündungsbereich asphaltiert	Q0 10049,13528
+Kreuzungsbereich asphaltiert	Q0 10142,13556
 Kreuzungsbereich asphaltiert	Q0 9799,8962
 Kreuzungsbereich asphaltiert	Q0 9797,9063
 Kreuzungsbereich asphaltiert	Q0 9795,9162
@@ -30585,4 +30595,9 @@ Einmündungsbereich teilweise asphaltiert, teilweise Kleinsteinpflaster	Q1- 9239,
 Einmündungsbereich asphaltiert	Q0 14188,12664
 Kreuzungsbereich asphaltiert	Q0 13665,15840
 Kreuzungsbereich asphaltiert	Q0 13701,15744
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 10228,14564
+Kreuzungsbereich asphaltiert	Q0 10155,14719
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 9646,15737
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 7309,17159
+Einmündungsbereich asphaltiert	Q0 10311,14391
 #: ignore ^^^

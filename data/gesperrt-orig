@@ -1144,7 +1144,14 @@ Edith-Kiss-Str.	1 12793,11132 12866,11256
 Garzauer Str.	1 21830,13688 21722,13708 21731,13789
 Flankenschanze	1 -3507,15341 -3534,15219
 Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,17088 10917,17088
-Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
+# 
+#: next_check_id: TRAMTURM-2021
+#: last_checked: 2022-01-22
+#: check_frequency: 180d
+#: next_check: 2022-12-22
+# später wieder reaktivieren: Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
+Alt-Moabit - Invalidenstr.	2::inwork 7422,13012 7415,13060
+# 
 (Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14271,9712
 Parkaue	1s:q4 15406,12444 15408,12394 15370,12264
 Stahlheimer Str.	1 11727,16358 11698,16311
@@ -3714,7 +3721,7 @@ Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeite
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
 # 
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2021-12-31 (architektur-urbanistik)
+#: last_checked: 2022-01-22
 #: check_frequency: 30d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # 
@@ -3887,6 +3894,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9099 (Empfehlung für vorzeitigen Abriss)
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/abriss-der-wuhletalbruecke-startet-ende-2021_a299255 (Abschluss der Baumaßnahme 2026/2027)
 #: by: https://berliner-abendblatt.de/2022/01/03/abbruch-der-wuhletalbruecke-startet/ (bis 2025)
+#: by: https://www.berliner-woche.de/marzahn/c-bauen/abriss-der-wuhletalbruecke-erfolgt-im-fruehjahr-2022_a332741
 #: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022)
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022)
 #: XXX Wann wird die Brücke wieder eröffnet?
@@ -4343,7 +4351,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="21"
 #: also_indoor: traffic
-#: last_checked: 2021-11-18
+#: last_checked: 2022-01-22
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
