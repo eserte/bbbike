@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 #
-# Copyright (C) 2005-2008,2010,2012,2016,2020,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005-2008,2010,2012,2016,2020,2021,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -9,7 +9,7 @@
 #
 
 use strict;
-our $VERSION = 1.40;
+our $VERSION = 1.41;
 
 use Cwd qw(realpath);
 use File::Spec;
@@ -45,6 +45,7 @@ my $recreate_thumbnails;
 my $date_index_file;
 my $date_db;
 my $do_update;
+my $do_interpolate;
 my $v;
 my $debug;
 my $relative_paths;
@@ -79,6 +80,7 @@ usage: $0
 	  [-recreatethumbnails] [-rel|-relativepaths] [-o file]
 	  [-addtracksdir dir ...]
 	  [-person ...]
+	  [-interpolate]
           [-v] [-debug] image ...
 EOF
 }
@@ -97,6 +99,7 @@ GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "recreatethumbnails" => \$recreate_thumbnails,
 	   "rel|relativepaths!" => \$relative_paths,
 	   "update" => \$do_update,
+	   "interpolate!" => \$do_interpolate,
 	   "person=s" => \$for_person,
 	   "o=s" => \$out_file,
 	   "v!" => \$v,
@@ -185,7 +188,9 @@ if ($date_index_file) {
 }
 
 sub get_image_location {
-    my $file = shift;
+    my($file, %opts) = @_;
+    my $do_interpolate = delete $opts{interpolate};
+    die "Unhandled options: " . join(" ", %opts) if %opts;
 
     my($y,$m,$d,$H,$M,$S);
 
@@ -457,7 +462,11 @@ sub get_image_location {
 		for my $wpt (@{ $chunk->Track }) {
 		    my $wpt_epoch = $wpt->Comment_to_unixtime($chunk);
 		    if ($wpt_epoch > $epoch) {
-			if ($last_wpt &&
+			if ($last_wpt && $do_interpolate) {
+			    $got_wpt = interpolate($last_wpt, $chunk,
+						   $wpt,      $chunk,
+						   $epoch);
+			} elsif ($last_wpt &&
 			    abs($last_wpt->Comment_to_unixtime($chunk) - $epoch) <
 			    abs($wpt_epoch - $epoch)) {
 			    $got_wpt = $last_wpt;
@@ -567,6 +576,25 @@ if ($ofh) {
     rename "$out_file.$$", $out_file
 	or die "Can't rename $out_file.$$ to $out_file: $!";
     select STDOUT;
+}
+
+sub interpolate {
+    my($wpt1, $wpt1_container, $wpt2, $wpt2_container, $camera_epoch) = @_;
+    my $epoch1 = $wpt1->Comment_to_unixtime($wpt1_container);
+    my $epoch2 = $wpt2->Comment_to_unixtime($wpt2_container);
+    my $fraction = ($camera_epoch-$epoch1)/($epoch2-$epoch1);
+    my($lon1, $lat1, $alt1) = ($wpt1->Longitude, $wpt1->Latitude, $wpt1->Altitude);
+    my($lon2, $lat2, $alt2) = ($wpt2->Longitude, $wpt2->Latitude, $wpt2->Altitude);
+    my $lon = ($lon2-$lon1)*$fraction + $lon1;
+    my $lat = ($lat2-$lat1)*$fraction + $lat1;
+    my $alt = ($alt2-$alt1)*$fraction + $alt1;
+
+    my $got_wpt = GPS::Gpsman::Waypoint->new;
+    $got_wpt->Latitude($lat);
+    $got_wpt->Longitude($lon);
+    $got_wpt->Altitude($alt);
+    $got_wpt->unixtime_to_Comment($camera_epoch, $wpt1_container);
+    $got_wpt;
 }
 
 sub handle_file {
@@ -923,7 +951,7 @@ sub manipulate_copy {
     require File::Copy;
 
     for my $file (@images) {
-	my $ret = get_image_location($file);
+	my $ret = get_image_location($file, interpolate => $do_interpolate);
 	if (defined $ret) {
 	    my($lat, $lon, $local_date, $gps_altitude) = @{$ret}{qw(Latitude Longitude Date Altitude)};
 	    my(@lat_dms) = Karte::Polar::ddd2dms($lat);
