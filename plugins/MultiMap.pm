@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.71;
+$VERSION = 1.72;
 
 use vars qw(%images);
 
@@ -990,7 +990,13 @@ sub showmap_url_bvgstadtplan {
     my $px = $args{px};
     my $py = $args{py};
     my $scale = int(17 - log(($args{mapscale_scale})/3000)/log(2) + 0.5);
-    sprintf "http://mc.bbbike.org/mc/?lon=%s&lat=%s&zoom=%d&num=1&mt0=bvg", $px, $py, $scale;
+
+    if ($main::devel_host) { # temporary
+	$main::devel_host = $main::devel_host if 0; # cease -w
+        sprintf "http://localhost/bbbike/cgi/bbbikeleaflet.cgi?mlat=%s&mlon=%s&zoom=%d&bm=BVG", $py, $px, $scale;
+    } else {
+	sprintf "http://mc.bbbike.org/mc/?lon=%s&lat=%s&zoom=%d&num=1&mt0=bvg", $px, $py, $scale;
+    }
 }
 
 sub showmap_bvgstadtplan {
