@@ -129,7 +129,7 @@ GEOJSON_TARGETS=	${GEOJSONDIR}/bbbike-temp-blockings-optimized.geojson \
 			${BBD_TARGETS:S/$/.geojson/:S/^/${GEOJSONDIR}\//} \
 			${GEOJSON_PERSISTENTTMP_SOURCES:S/.bbd$/.geojson/:S/^/${GEOJSONDIR}\//}
 
-XXX_NON_OUTDOOR=	indoor prog checklater
+XXX_NON_OUTDOOR=	indoor prog
 XXX_TARGETS=		outdoor ${XXX_NON_OUTDOOR}
 
 ALL_STREETS=		strassen landstrassen landstrassen2
