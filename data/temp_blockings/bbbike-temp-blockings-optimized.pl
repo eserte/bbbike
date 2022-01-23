@@ -3479,7 +3479,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED (eins reicht) --- #: osm_watch: note 2867467 2
 #: osm_watch: way id="16311543" version="18"
 #: also_indoor: search Ernst-Heilmann-Steg
-#: last_checked: 2022-01-20 (mapillary)
+#: last_checked: 2022-01-23
 #: check_frequency: 120d
 	2::inwork 13270,10030 13306,10006
 ',
