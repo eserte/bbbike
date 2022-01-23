@@ -65,17 +65,13 @@ if (!$d) {
     die "capture date cannot be parsed";
 }
 
-my($ofh, $output_filename);
+my $output_filename;
 if ($to_file) {
     $output_filename = "$ENV{HOME}/.bbbike/mapillary_v4/$region/$y/" . sprintf("%04d%02d%02d", $y, $m, $d) . ".bbd";
     if (-e $output_filename && !$allow_override) {
 	die "Won't override $output_filename without --allow-override.\n";
     }
-    open $ofh, ">", "$output_filename~"
-	or die "Can't write to $output_filename~: $!";
-} else {
-    $ofh = \*STDOUT;
-}    
+}
 
 my $bbox = Geography::Berlin_DE->new->bbox_wgs84; # XXX use $region?
 my $start_captured_at = do {
@@ -96,10 +92,6 @@ my $data = fetch_images($start_captured_at, $end_captured_at);
 
 if (!@$data) {
     warn "INFO: no data found\n";
-    if ($output_filename) {
-	close $ofh;
-	unlink "$output_filename~";
-    }
     exit 0;
 }
 
@@ -110,6 +102,14 @@ for my $image (@$data) {
     }
     push @{ $sequences[-1] }, $image;
 }
+
+my $ofh;
+if (defined $output_filename) {
+    open $ofh, ">", "$output_filename~"
+	or die "Can't write to $output_filename~: $!";
+} else {
+    $ofh = \*STDOUT;
+}    
 
 print $ofh "#: map: polar\n";
 print $ofh "#: line_arrow: last\n";
