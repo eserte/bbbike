@@ -226,8 +226,9 @@ function doLeaflet() {
     // reuse osmAttribution
     var osmMapnikBWTileLayer = new L.TileLayer(osmMapnikBWUrl, {maxZoom: 19, attribution: osmAttribution});
 
-    var berlinAerialYear = '2019';
-    var berlinAerialNewestUrl = 'https://tiles.codefor.de/berlin-' + berlinAerialYear + '/{z}/{x}/{y}.png';
+    var berlinAerialYear = '2021';
+    var berlinAerialVariant = '-dop20rgbi';
+    var berlinAerialNewestUrl = 'https://tiles.codefor.de/berlin-' + berlinAerialYear + berlinAerialVariant + '/{z}/{x}/{y}.png';
     var berlinAerialAttribution = M("Kartendaten") + ': <a href="https://fbinter.stadt-berlin.de/fb/berlin/service_intern.jsp?id=a_luftbild' + berlinAerialYear + '_rgb@senstadt&type=FEED">Geoportal Berlin / Digitale farbige Orthophotos ' + berlinAerialYear + '</a>';
     var berlinAerialTileLayer = new L.TileLayer(berlinAerialNewestUrl, {maxZoom: 20, attribution: berlinAerialAttribution});
 
