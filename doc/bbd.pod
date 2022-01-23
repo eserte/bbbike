@@ -440,16 +440,6 @@ even the other way around), but in reality C<unsure> was almost never
 used and also never considered in supporting scripts, so its use is
 now deprecated.
 
-=item C<XXX_checklater: I<why>>
-
-Like C<XXX>, and additionally attach the E<quot>checklaterE<quot>
-attribute.
-
-NOTE: Currently it's not recommended to use this tag. It is better to
-use just C<XXX> in conjunction with C<next_check> or C<last_checked>,
-because the current infrastructure (supporting scripts etc.) have
-better support for this.
-
 =item C<XXX_prog: I<why>>
 
 The next block or line contains problematic information due to
@@ -468,11 +458,6 @@ rendering problem. But this is solved in bbbike since July 2009.
 
 The unclear information can only be researched E<quot>indoorE<quot>,
 and usually not on-site.
-
-=item C<XXX_outdoor: I<why>>
-
-Deprecated. Usually this is the same as C<XXX>, and scripts don't
-support this type anymore.
 
 =item C<XXX_osm: I<why>>
 
@@ -705,6 +690,20 @@ E<quot>UnverifiedE<quot> means that there's no communication channel
 back to the information provider. Nowadays this would be a couple of
 E<quot>by:E<quot> and E<quot>add_fragezeichen:E<quot> or
 E<quot>XXX:E<quot> directives.
+
+=item C<XXX_checklater: I<why>>
+
+Like C<XXX>, and additionally attach the E<quot>checklaterE<quot>
+attribute.
+
+This tag is not supported anymore. Instead, use just C<XXX> in
+conjunction with C<next_check> or C<last_checked>. The current
+infrastructure (supporting scripts etc.) have better support for this.
+
+=item C<XXX_outdoor: I<why>>
+
+Deprecated. Usually this is the same as C<XXX>, and scripts don't
+support this type anymore.
 
 =back
 

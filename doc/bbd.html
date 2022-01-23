@@ -204,6 +204,13 @@ the maptype <b>polar</b>.
 <dd>
 This global directive sets the title or some descriptive text for the
 file.
+<p class="POD_TEXT">
+It is possible to localize the title by using the <code>title.<i>$lang</i></code> syntax, e.g.
+</p>
+<pre class="POD_VERBATIM">
+    title.en: English title
+    title.de: deutscher Titel
+</pre>
 <dt class="POD_ITEM"><a name="version_RCS_or_CVS_i"><code>version: <i>RCS or CVS identifier string</i></code></a>
 <dd>
 This global directive introduces an RCS/CVS Id string. Not recommended
@@ -332,6 +339,12 @@ Example:
  #: line_arrow: last
  #: line_arrow.cat: both
 </pre>
+<p class="POD_TEXT">
+Currently setting the <code>line_arrow</code> directive (without category) to
+<code>last</code> has also the effect to center to the beginning of a feature
+selected in the street list of the Perl/Tk application (otherwise the
+default is the center of the feature).
+</p>
 <dt class="POD_ITEM"><a name="line_shorten_boolean"><code>line_shorten: <i>boolean</i></code></a>
 <dt><a name="line_shorten_categor"><code>line_shorten.<i>category</i>: <i>boolean</i></code></a>
 <dd>
@@ -461,16 +474,6 @@ even the other way around), but in reality <code>unsure</code> was almost never
 used and also never considered in supporting scripts, so its use is
 now deprecated.
 </p>
-<dt class="POD_ITEM"><a name="XXX_checklater_why"><code>XXX_checklater: <i>why</i></code></a>
-<dd>
-Like <code>XXX</code>, and additionally attach the &quot;checklater&quot;
-attribute.
-<p class="POD_TEXT">
-NOTE: Currently it&#39;s not recommended to use this tag. It is better to
-use just <code>XXX</code> in conjunction with <code>next_check</code> or <code>last_checked</code>,
-because the current infrastructure (supporting scripts etc.) have
-better support for this.
-</p>
 <dt class="POD_ITEM"><a name="XXX_prog_why"><code>XXX_prog: <i>why</i></code></a>
 <dd>
 The next block or line contains problematic information due to
@@ -490,10 +493,6 @@ rendering problem. But this is solved in bbbike since July 2009.
 <dd>
 The unclear information can only be researched &quot;indoor&quot;,
 and usually not on-site.
-<dt class="POD_ITEM"><a name="XXX_outdoor_why"><code>XXX_outdoor: <i>why</i></code></a>
-<dd>
-Deprecated. Usually this is the same as <code>XXX</code>, and scripts don&#39;t
-support this type anymore.
 <dt class="POD_ITEM"><a name="XXX_osm_why"><code>XXX_osm: <i>why</i></code></a>
 <dd>
 An issue in OpenStreetMap data, e.g. incorrectly spelled street name
@@ -698,6 +697,19 @@ Same as &quot;by:&quot; for unverified data.
 back to the information provider. Nowadays this would be a couple of
 &quot;by:&quot; and &quot;add_fragezeichen:&quot; or
 &quot;XXX:&quot; directives.
+<dt class="POD_ITEM"><a name="XXX_checklater_why"><code>XXX_checklater: <i>why</i></code></a>
+<dd>
+Like <code>XXX</code>, and additionally attach the &quot;checklater&quot;
+attribute.
+<p class="POD_TEXT">
+This tag is not supported anymore. Instead, use just <code>XXX</code> in
+conjunction with <code>next_check</code> or <code>last_checked</code>. The current
+infrastructure (supporting scripts etc.) have better support for this.
+</p>
+<dt class="POD_ITEM"><a name="XXX_outdoor_why"><code>XXX_outdoor: <i>why</i></code></a>
+<dd>
+Deprecated. Usually this is the same as <code>XXX</code>, and scripts don&#39;t
+support this type anymore.
 </dl>
 <h3 class="POD_HEAD2"><a name="Comment_lines">Comment lines</a></h3>
 <p class="POD_TEXT">
