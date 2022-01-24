@@ -32150,8 +32150,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (nicht mehr) --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2021-03-01 --- #: check_frequency: 45d
-# REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17774,8342
-	q4::inwork 17774,8342 17753,8290
+# REMOVED (hier nicht mehr) ---	q4::inwork 17794,8429 17771,8349
+	q4::inwork 17771,8349 17753,8290
 EOF
      },
      { from  => undef, # 
@@ -32212,16 +32212,16 @@ EOF
 EOF
      },
      { from  => 1611329064, # 2021-01-22 16:24
-       until => $isodate2epoch->("2022-02-01 17:00:00"), # 1630076400, # 2021-08-27 17:00
-       text  => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., bis 01.02.2022',
+       until => $isodate2epoch->("2022-04-06 17:00:00"), # 1630076400, # 2021-08-27 17:00
+       text  => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., voraussichtlich bis 06.04.2022',
        type  => 'handicap',
        source_id => '2147346268',
        data  => <<EOF,
-#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022)
+#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022) (mittlerweile: 06.04.2022)
 #: also_indoor: traffic (G)
 #: last_checked: 2022-01-22
 #: check_frequency: 90d
-#: next_check: 2022-02-01
+#: next_check: 2022-04-06
 	q2::inwork 8913,16159 9099,16398
 EOF
      },
@@ -32262,7 +32262,7 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="24"
 #: osm_watch: way id="165832806" version="21"
-#: last_checked: 2022-01-10
+#: last_checked: 2022-01-24
 #: check_frequency: 30d
 	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17497,8623
 # REMOVED (hier neu gemacht) ---	2::inwork 17497,8623 17461,8693 17416,8767 17380,8858
@@ -33221,7 +33221,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-01-21
+#: last_checked: 2022-01-24
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -34352,6 +34352,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.445809,52.479541,24.01.2022,07:00',
        data  => <<EOF,
+#: also_indoor: traffic (G,H,B)
 	q4::inwork 13277,8211 13331,8283
 EOF
      },
@@ -34367,6 +34368,20 @@ EOF
 #: check_frequency: 120d
 #: next_check: 2023-06-30
 	2::inwork 19711,10426 19697,10210
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Uferweg am Salzhof: möglicherweise gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10698 (Absperrung wegen eines Chemiewaffenfundes)
+#: by: https://www.deutsches-architekturforum.de/thread/14836-stadtlandhavel-spandau-kleine-eiswerderstra%C3%9Fe/?postID=710407#post710407
+#: by: https://immobilien.stadtlandhavel.com/
+#: osm_watch: way id="577673938" version="5"
+#: osm_watch: way id="35043662" version="10"
+#: add_fragezeichen: Ist dieser Weg tatsächlich gesperrt? Wenn ja: wo genau ist der gesperrte Abschnitt?
+	2::inwork -1923,15684 -1938,15782 -1935,15826 -1978,15940 -1976,16012
 EOF
      },
     );

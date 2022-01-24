@@ -228,7 +228,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: by: https://www.nalepaland.de/
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2021-11-26
+#: last_checked: 2022-01-24
 #: check_frequency: 60d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -2440,8 +2440,9 @@ tragen (zwei Treppen, je ca. 10 Stufen)	0:30 8823,16877
 tragen (Treppe)	0:30 14390,5443
 tragen (Treppe)	0:30 14325,5409
 tragen (28 Stufen)	0:30 18180,12262
-tragen (Treppe S-Bhf. Marzahn, ca. 35 Stufen)	0:35 19567,15406
-tragen (Treppe S-Bhf. Marzahn, ca. 35 Stufen)	0:35 19636,15417
+# REMOVED --- tragen (Treppe S-Bhf. Marzahn, ca. 35 Stufen)	0:35 19567,15406
+# REMOVED --- tragen (Treppe S-Bhf. Marzahn, ca. 35 Stufen)	0:35 19636,15417
+tragen (Treppe S-Bhf. Marzahn)	0:35 19694,15529
 tragen (13 Stufen)	0:30 7924,12872
 tragen (2 x 5 Stufen)	0:30 4985,6370
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2292,4927
@@ -3324,8 +3325,8 @@ Drängelgitter	BNP:3::trailer=10 20675,56
 Schönegarten: an beiden Enden gesperrt	2 7416,10492 7432,10546 7330,10590
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2022-01-10 vvv
-Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17843,8632 17781,8655 17656,8700
+#: last_checked: 2022-01-24 vvv
+Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17783,8663 17656,8700
 Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17621,8544 17604,8466 17597,8434
 Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17640,8627 17771,8605
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17497,8623 17640,8627 17656,8700 17461,8693

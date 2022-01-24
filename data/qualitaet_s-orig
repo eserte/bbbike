@@ -264,7 +264,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Fahrbahninstandsetzung ab Herbst 2021, bis 2022)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2021-12-30
+#: last_checked: 2022-01-24
 # REMOVED --- #: next_check: 2021-10-01
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
 Dönhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
@@ -537,9 +537,11 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1170047.php (Bauarbeiten April 2022 - Oktober 2023)
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
 #: last_checked: 2022-01-22
-#: check_frequency: 90d
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2022-04-15
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
 Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
@@ -18291,7 +18293,7 @@ Isenburger Weg: Kopfsteinpflaster, teilweise mit Asphaltüberzug	Q2 -7867,15185 -
 #: by: Felix (Hartung):
 #: corrected_by: srt (mäßiger Belag -> schlechtes Kopfsteinpflaster)
 #: note: am westlichen Ende einige Asphaltflicken
-Güntherstr.: schlechtes Kopfsteinpflaster	Q3 17976,8106 17920,8256 17774,8342
+Güntherstr.: schlechtes Kopfsteinpflaster	Q3 17976,8106 17920,8256 17771,8349
 # 
 #: by: Jörg (studi):
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> kleinteiliges Kopfsteinpflaster, Q2+)
@@ -19259,7 +19261,7 @@ Malersteig: Asphalt	Q0 13606,3085 13596,3039 13561,2898 13510,2690 13487,2621 13
 #: by: https://abendblatt-berlin.de/2021/07/06/lichtenberg-sommerbaustellen-im-bezirk/
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: XXX wird hier auch noch asphaltiert?
-#: last_checked: 2021-12-30
+#: last_checked: 2022-01-24
 #: check_frequency: 30d
 Weseler Str.: mäßiger Asphalt	Q1- 18865,8740 18857,8790
 #: corrected_by: srt (mäßiger Asphalt, Q1- -> neu gemacht)
@@ -21749,11 +21751,11 @@ Mittelstr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 104,2802 50,3031
 # 
 #: by: Fabian Jakob: vvv
 #: confirmed_by: srt (schlechtes Kopfsteinpflaster -> )
-Trautenauer Str.: Kopfsteinpflaster	Q2- 17753,8290 17774,8342 17794,8429 17813,8508
+Trautenauer Str.: Kopfsteinpflaster	Q2- 17753,8290 17771,8349 17794,8429 17813,8508
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> )
 Trautenauer Str.: Kopfsteinpflaster, mäßiger Asphaltstreifen in der Mitte	Q2 17813,8508 17830,8578
 #: corrected_by: srt (neuer Asphalt seit Juni 2013)
-Trautenauer Str.: Asphalt	Q0 17830,8578 17838,8611 17843,8632 17851,8662 17879,8773 17910,8881 17915,8900
+Trautenauer Str.: Asphalt	Q0 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773 17910,8881 17915,8900
 #: by: ^^^
 # 
 #: by: Tinka:
@@ -30601,4 +30603,6 @@ Kreuzungsbereich asphaltiert	Q0 10155,14719
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 9646,15737
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 7309,17159
 Einmündungsbereich asphaltiert	Q0 10311,14391
+Kreuzungsbereich asphaltiert	Q0 18548,8942
+Kreuzungsbereich asphaltiert	Q0 18319,9218
 #: ignore ^^^

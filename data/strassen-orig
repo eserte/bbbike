@@ -3614,10 +3614,10 @@ Lindenstr. (Lichterfelde)	N 3895,1219 3999,1185 4146,1128 4207,1113 4271,1081 43
 Nahmitzer Damm	H 7790,672 7937,583 8075,499 8250,392 8382,347 8470,329 8584,320 8736,337
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: priority: #A
-#: next_check: 2025-12-31 vvv
-#: valid: !20220124-20251231
+#: next_check: 2025-01-04 vvv
+#: valid: !20220124-20250104
 Nahmitzer Damm	H 8736,337 8906,392 9002,471
-#: valid: 20220124-20251231
+#: valid: 20220124-20250104
 Nahmitzer Damm	N 8736,337 8906,392 9002,471
 #: next_check ^^^
 # 
@@ -3628,10 +3628,10 @@ Buckower Chaussee	N 8533,512 8742,475 8972,498 9002,471
 #: carriageway_width: 12m (aber nur im Bereich des Bahnübergangs, ansonsten breiter, mit Mittelstreifen)
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: priority: #A
-#: next_check: 2025-12-31 vvv
-#: valid: !20220124-20251231
+#: next_check: 2025-01-04 vvv
+#: valid: !20220124-20250104
 Buckower Chaussee	H 9002,471 9069,506 9158,551 9178,556 9250,576 9858,744
-#: valid: 20220124-20251231
+#: valid: 20220124-20250104
 Buckower Chaussee	N 9002,471 9069,506 9158,551 9178,556 9250,576 9858,744
 #: next_check ^^^
 Buckower Chaussee	H 9858,744 10047,813 10187,872 10276,906 10324,925 10427,968
@@ -6311,7 +6311,9 @@ Georg-Knorr-Str.	N 19352,15639 19350,15573 19301,15503 19295,15447 19414,15132
 # XXX: laut http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20060921.1145.47773.html ist in der Georg-Knorr-Str. ein Radweg
 Georg-Knorr-Str.	N 19414,15132 19191,15043 19169,15015
 (Landsberger Allee - Georg-Knorr-Str.)	N 19364,15045 19314,15059 19169,15015
-(Fußgängerbrücke am S-Bhf. Marzahn)	NN 19573,15401 19567,15406 19574,15423 19612,15403 19626,15396 19636,15417 19681,15405
+# REMOVED --- #: by: https://www.berliner-woche.de/marzahn/c-bauen/zeitplan-fuer-geplanten-ersatzneubau-am-s-bahnhof-marzahn-unklar_a333896 (im Dez 2021 abgerissen) --- (Fußgängerbrücke am S-Bhf. Marzahn)	NN 19573,15401 19567,15406 19574,15423 19612,15403 19626,15396 19636,15417 19681,15405
+(Fußgängerbrücke S-Bhf. Marzahn - Eastgate)	NN 19653,15544 19671,15561 19657,15527 19672,15519 19687,15513 19767,15473
+(Fußgängerbrücke - Märkische Allee)	NN 19687,15513 19694,15529 19733,15511
 Frank-Schweitzer-Str.	N 19350,14997 19175,14926 19113,14901 19117,14875 19255,14911 19347,14936 19400,15027 19424,15068 19414,15132
 (Landsberger Allee - Frank-Schweitzer-Str.)	N 19214,14966 19244,14980 19400,15027
 (Frank-Schweitzer-Str. - Landsberger Allee)	N 19244,14980 19205,14980
@@ -6612,7 +6614,7 @@ Hönower Wiesenweg	N 17856,8162 17793,8225 17753,8290 17704,8327 17620,8366 17554
 (Hönower Wiesenweg - Betriebsbahnhof Rummelsburg)	N 17308,9090 17300,9135 17284,9198
 # 
 #: note: Parkstadt Karlshorst vvv
-Georg-Klingenberg-Str.	N 17843,8632 17781,8655 17656,8700 17461,8693
+Georg-Klingenberg-Str.	N 17846,8644 17783,8663 17656,8700 17461,8693
 Adolf-Wermuth-Allee	N 17656,8700 17640,8627 17621,8544 17604,8466 17597,8434
 Heiner-Müller-Str.	N 17497,8623 17640,8627 17771,8605
 #: note ^^^
@@ -6665,11 +6667,11 @@ Hoher Wallgraben	N 17988,8350 17999,8336 18078,8112 18101,8044
 (Hoher Wallgraben - Hegemeisterweg)	NN 18101,8044 18119,7996 18287,7815
 (Hegemeisterweg - Hoher Wallgraben/KGA Stallwiese)	NN 17987,7973 18025,7986 18101,8044
 Rödelstr.	N 18007,8377 17813,8508
-Trautenauer Str.	N 17753,8290 17774,8342 17794,8429 17813,8508 17830,8578 17838,8611 17843,8632 17851,8662 17879,8773 17910,8881 17915,8900
+Trautenauer Str.	N 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,8611 17846,8644 17851,8662 17879,8773 17910,8881 17915,8900
 (Blockdammweg - Trautenauer Str.)	NN 17904,8924 17888,8899 17910,8881
 Schenkestr.	N 17961,8312 17794,8429
 Stechlinstr.	N 18005,8517 18086,8634 18222,8843
-Güntherstr.	N 17976,8106 17920,8256 17774,8342
+Güntherstr.	N 17976,8106 17920,8256 17771,8349
 Sadowastr. (Karlshorst)	N 17856,8162 17925,8101 17976,8106 18078,8112
 Drosselstieg	N 17748,8109 17683,7958
 Gleyeweg	N 17762,7931 17683,7958 17651,7973 17613,7989 17529,8073 17532,8125 17566,8199 17597,8258
@@ -14957,7 +14959,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2022-01-21
+#: last_checked: 2022-01-24
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15335,7 +15337,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2022-01-21
+#: last_checked: 2022-01-24
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
