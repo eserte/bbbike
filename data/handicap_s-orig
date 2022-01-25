@@ -193,7 +193,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
 #: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2022-01-15
+#: last_checked: 2022-01-25
 Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -208,23 +208,27 @@ Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 #: by: https://www.wbm.de/neubau-berlin/mitte/ifflandstrasse/ (Fertigstellung vsl. 01/2022)
 # REMOVED --- #: osm_watch: way id="822127127" version="3"
 #: osm_watch: way id="736448990" version="9"
-#: last_checked: 2021-12-04
-#: check_frequency: 60d
+#: last_checked: 2022-01-25
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-01-01
 Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
 # 
 #: next_check_id: CHAUSSEE-2020
 #: source_id: 2147346552 (bis 16.7.2021)
 #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert)
+#: last_checked: 2022-01-25
+#: check_frequency: 60d
+#: next_check: 2022-06-30
+Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456
 #: last_checked: 2021-12-11
 #: check_frequency: 90d
 #: next_check: 2022-06-30
-Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
+Chausseestr.: gemeinsamer Geh- und Radweg	q2::inwork; 8442,14456 8406,14507 8336,14586
 # 
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2022-01-15 vvv
+#: last_checked: 2022-01-25 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -235,7 +239,7 @@ Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,
 # 
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
-#: last_checked: 2022-01-17
+#: last_checked: 2022-01-25
 #: next_check: 2022-04-01
 # REMOVED --- #: valid: 20200821-20211031
 Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
@@ -251,7 +255,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/volt-berlin-baufeld-e3a.312/page-8#post-14027
 #: XXX Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straße, Fahrbahn ist noch abgesperrt
-#: last_checked: 2022-01-15
+#: last_checked: 2022-01-25
 #: check_frequency: 60d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
@@ -261,7 +265,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
-#: last_checked: 2021-11-28 (daf)
+#: last_checked: 2022-01-25
 #: check_frequency: 60d
 (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
 # 
@@ -603,7 +607,7 @@ Fasanenstr.: Engstelle südliche de Kantstr., Radfahrer werden über den Bürgerste
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundesallee-13-14-pariser-str.599/page-5#post-17417
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
-#: last_checked: 2022-01-09 (architektur-urbanistik)
+#: last_checked: 2022-01-24 (daf)
 #: check_frequency: 60d
 #: next_check: 2022-10-01
 # REMOVED --- #: next_check: 2020-02-03

@@ -1565,6 +1565,7 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Planungsleistungen bis zum dritten Quartal 2021, danach bauliche Umsetzung)
 #: by: https://api.fixmyberlin.de/api/projects/438
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8192&date=20211225 (BPU 2021)
+#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/siegfriedstrasse-bekommt-radweg_a333575
 #: source_id: 2147343976 (bis Mitte Januar 2020; Leitungsarbeiten)
 #: XXX laut fritz bis 17.01.2020
 #: osm_watch: way id="93221335" version="19"
@@ -1981,7 +1982,7 @@ Verlängerung der Gotlindestr.: wird der Fußweg auch für Radfahrer benutzbar sein
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629695&postcount=135
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
-#: last_checked: 2022-01-08
+#: last_checked: 2022-01-25
 #: check_frequency: 60d
 Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::inwork 8870,12647 8754,12622
 # 
@@ -3011,7 +3012,7 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14270,83
 #: by: https://www.deutsches-architekturforum.de/thread/11524-am-stadthafen-europacity/?postID=658734#post658734 (ca. 150m realisiert)
 #: osm_watch: way id="237716440" version="12"
 #: XXX wird vermutlich zusammen mit dem Golda-Meir-Steg gebaut
-#: last_checked: 2022-01-10 (daf)
+#: last_checked: 2022-01-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-04-01
 Uferweg in Bau	?::inwork 8057,13923 7989,14035 7923,14142 7912,14160 7866,14215
@@ -3023,8 +3024,8 @@ Uferweg in Bau	?::inwork 7799,14314 7769,14364
 # REMOVED (offen) --- #: XXX fertig, aber noch abgesperrt --- Planstraße 1.3 - Uferweg: Fußgängerbereich geplant	?::projected 7802,14250 7830,14268
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: last_checked: 2021-12-08 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2022-01-25 vvv
+#: check_frequency: 45d vvv
 # REMOVED (nein, vermutlich erst einmal nicht) --- #: XXX wird es auch eine Brücke zum Invalidenfriedhof geben?
 # REMOVED (nicht mehr) --- #: by: https://www.webcam-profi.de/bilder/ca-immo/berlin/rieck2/image.jpg (Webcam)
 # REMOVED (nicht mehr) --- #: by: https://rieck1-berlin.webcam-profi.de/startseite.html (Webcam, Startseite)
@@ -3574,7 +3575,7 @@ Zillestr./Krumme Str.: Planung einer Fahrradstraße, wo genau?	?::projected 3801,
 #: by: https://berliner-abendblatt.de/2022/01/12/unter-den-linden-arbeiten-haben-begonnen/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/boulevard-unter-den-linden-erneut-nur-einspurig_a333677
 #: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022) (mittlerweile bis 11.2.2022)
-#: last_checked: 2022-01-17
+#: last_checked: 2022-01-25
 #: check_frequency: 30d
 #: next_check: 2022-07-01
 Unter den Linden: temporäre Umgestaltung, eine besondere Fahrspur für Radfahrer entsteht	?::projected 8804,12280 9028,12307 9141,12320 9358,12351 9475,12365 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431
@@ -4426,7 +4427,7 @@ Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (2022)
 #: XXX Tunnelsanierung beginnt am 2020-11-02 und dauert bis Mitte Juli 2021; während der Bauarbeiten wird der Radverkehr Richtung Norden über den Gehweg geführt
-#: last_checked: 2021-12-11
+#: last_checked: 2022-01-25
 #: check_frequency: 90d
 #: next_check: 2022-06-30
 Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,13973 8732,14098 8607,14253
@@ -5668,7 +5669,7 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2019 bis III/2020) (außerdem: Umbau des Schiffbauerdamms)
 #: by: https://www.deutsches-architekturforum.de/thread/8594-luisenblock-ost-vollendung-band-des-bundes-in-entwicklung/?postID=699582#post699582 (städtebaulicher Wettbewerb 2021)
 #: by: https://luisenblock.berlin.de/
-#: last_checked: 2022-01-08
+#: last_checked: 2022-01-25
 #: check_frequency: 360d
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
@@ -5918,7 +5919,7 @@ Mauerweg: Untertunnelung der Dresdener Bahn	?::projected 10460,-3199 10687,-3270
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (Fertigstellung des westlichen Abschnitts nun 2023 (Stand August 2021))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (mittlerweile für beide Abschnitte Fertigstellung 2022)
-#: last_checked: 2022-01-17
+#: last_checked: 2022-01-25
 #: check_frequency: 90d
 Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
@@ -7708,7 +7709,7 @@ Stresowufer: ein Uferweg wird entstehen	?::projected -3393,13777 -3300,13923 -31
 #: by: https://api.fixmyberlin.de/api/projects/271 (zusätzlich auch eine Verbindung zum TR7 über Ludwig-Renn-Str. und Bürgerpark)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/fahr-rat-formulierte-empfehlungen-fuer-den-radverkehr-in-marzahn-hellersdorf_a277189 (Verzögerung)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/in-marzahn-hellersdorf-werden-2021-acht-groessere-radwegprojekte-umgesetzt_a297401 (Realisierung 2021)
-#: last_checked: 2022-01-09 (mapillary)
+#: last_checked: 2022-01-23 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 #: XXX Wo genau befindet sich die Alte Rüsternallee? Wo sollen die Radwegrampen gebaut werden? Oder ist vielleicht auch der Privatweg südlich der Bitterfelder Str. gemeint?

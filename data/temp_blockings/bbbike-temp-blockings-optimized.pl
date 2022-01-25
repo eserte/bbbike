@@ -2563,7 +2563,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-01-15
+#: last_checked: 2022-01-25
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 ',
@@ -3129,7 +3129,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '# REMOVED --- #: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer? --- 
 #: note: 2021-12-23 ("Radfahrer frei"-Schilder fehlen weiterhin, außerdem gibt es eine explizite Bedarfsumleitung für Radfahrer via Jägerstr.
 #: osm_watch: way id="753316505" version="3"
-#: last_checked: 2022-01-17
+#: last_checked: 2022-01-25
 	q4::inwork; 9195,11972 9207,11880
 # REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
 ',

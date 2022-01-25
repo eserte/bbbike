@@ -3337,7 +3337,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17497,8623 1764
 #: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
 #: osm_watch: way id="129104626" version="17"
 #: also_indoor: traffic (H,G,B(alle falsch))
-#: last_checked: 2021-12-11
+#: last_checked: 2022-01-25
 #: check_frequency: 90d
 #: next_check: 2022-04-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -3697,14 +3697,14 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: XXX Gehweg der nördlichen Seite ist schon weitgehend offen, südliche Seite nur als Baustraße erkennbar
 #: XXX ggfs. auch andere Seite des Platzes einzeichnen, ggfs. auch einen plaetze-orig-Eintrag machen
 #: osm_watch: way id="642581102" version="4"
-#: last_checked: 2021-12-08
+#: last_checked: 2022-01-25
 #: check_frequency: 60d
 #: next_check: 2022-12-31
 Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 # 
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2021-12-08
-#: check_frequency: 60d
+#: last_checked: 2022-01-25
+#: check_frequency: 45d
 Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeiten gesperrt	2::inwork 7959,13982 7997,13892 8025,13835
 #  
 # REMOVED (Schranke wird nicht genutzt?) --- #: next_check_id: EUROPACITY-2015 --- #: XXX laut osm mittlerweile offen --- #: last_checked: 2021-02-05 --- #: check_frequency: 60d --- #: next_check: 2021-02-14 --- Lisa-Fittko-Str.: wegen Hochbauarbeiten gesperrt	2::inwork 7734,13944 7820,13994
@@ -3718,12 +3718,12 @@ Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeite
 #: by: https://portal1915.webcam-profi.de/ (Webcam)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
-#: last_checked: 2021-12-04 (daf)
+#: last_checked: 2022-01-25
 #: check_frequency: 60d
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
 # 
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2022-01-22
+#: last_checked: 2022-01-25
 #: check_frequency: 30d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # 
@@ -3775,7 +3775,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
 #: osm_watch: way id="882672445" version="1"
-#: last_checked: 2022-01-10 (daf)
+#: last_checked: 2022-01-25
 #: check_frequency: 60d
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
 # 
@@ -4017,7 +4017,7 @@ Mergenthalerring: durch Tore versperrt	2::inwork 14121,8147 14210,8227 14229,827
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2022-01-17 vvv
+#: last_checked: 2022-01-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -4354,7 +4354,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="21"
 #: also_indoor: traffic
-#: last_checked: 2022-01-22
+#: last_checked: 2022-01-25
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
@@ -4405,14 +4405,14 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_29_2481_2536_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/neues-stadtquartier-soll-bis-mitte-2023-fertig-sein_a324308
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7042 (angeblich wurde die Straße niemals benannt --- aber die GoogleMaps-Bilder von 2008/2009 zeigen ein Straßenschild)
-#: XXX vermutlich wird es keinen Zugang zur Oranienburger Str. mehr geben --- bleibt wenigstens der südliche Stummel?
+#: XXX vermutlich wird es keinen Zugang zur Oranienburger Str. mehr geben --- bleibt wenigstens der südliche Stummel? --- die Helga-Hahnemann-Str. wird es in Zukunft wohl nicht mehr geben
 #: XXX außerdem: im Quartier Am Tacheles werden zwei Privatplätze entstehen und bekommen die Namen (fehlen in Berlin.coords.data; wo genau befinden sie sich?):
 #: XXX Johannisplatz
 #: XXX Aaron-Bernstein-Platz
 # REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7"
 #: osm_watch: way id="940764588" version="2"
 #: osm_watch: way id="940764584" version="1"
-#: last_checked: 2021-11-18
+#: last_checked: 2022-01-25
 #: check_frequency: 360d
 #: next_check: 2023-06-30
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
@@ -4434,7 +4434,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Eröffnung am 17.12.2020)
 #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Eröffnung wird verschoben)
 #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauzäune werden im Dezember 2020 teilweise abgebaut)
-#: last_checked: 2022-01-15
+#: last_checked: 2022-01-25
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384
@@ -4448,7 +4448,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="5"
-#: last_checked: 2022-01-08 vvv
+#: last_checked: 2022-01-25 vvv
 #: check_frequency: 60d vvv
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 Margarete-Steffin-Str.: Einbahnstraßenregelung	1s:q4:inwork 8559,12912 8631,12848 8700,12810 8732,12804
