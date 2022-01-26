@@ -390,9 +390,10 @@ EOF
        text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2019',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1170557.php (2022 vermutlich nicht)
 #: tempex: YYYY0431T1200-YYYY05020000 vvv
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2971249-2970764-myfest-berlin.html
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1170557.php (2022 vermutlich nicht)
+#: by: https://berliner-abendblatt.de/2022/01/26/myfest-findet-nicht-statt/
 	2::temp 11763,10635 11734,10563 11721,10530 11754,10516 11949,10414
 	2::temp 11552,10863 11772,10764 11760,10732 11781,10696 11763,10635 11505,10744 11552,10863 11589,10947 11640,11067
 	2::temp 11961,11041 11899,10886 11839,10736 11824,10708 11781,10696
@@ -33222,7 +33223,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-01-24
+#: last_checked: 2022-01-26
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33340,8 +33341,8 @@ EOF
 EOF
      },
      { from  => 1627164000, # 2021-07-25 00:00
-       until => $isodate2epoch->("2022-01-31 17:00:00"),
-       text  => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 31.01.2022 17:00',
+       until => $isodate2epoch->("2022-03-28 17:00:00"),
+       text  => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 28.03.2022 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.326349,52.447526,26.07.2021,07:00',
        data  => <<EOF,
@@ -33439,7 +33440,7 @@ EOF
 # REMOVED (hier nicht mehr) ---	q2::inwork 19109,9306 19195,9249
 #: also_indoor: traffic (G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2022-01-10 vvv
+#: last_checked: 2022-01-26 vvv
 	q3::inwork 19020,9364 18939,9417
 	q2::inwork 18977,9322 19020,9364 19030,9530
 #: last_checked ^^^

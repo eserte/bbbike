@@ -3753,7 +3753,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124 (Anfrage von Juli 2017)
 #: by: https://politik-bei-uns.de/file/597985b41ae6a07d5fb74916 (Antwort: soll teilweise mit einem Asphaltstreifen befestigt werden, erster von drei Bauabschnitten 2018)
 #: osm_watch: way id="47159365" version="14"
-#: last_checked: 2021-12-30
+#: last_checked: 2022-01-26
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -7470,9 +7470,15 @@ Jerichower Str.: Verbundsteinpflaster	Q0- 24047,15370 24035,15442
 Stendaler Str. [Nebenfahrbahn] (Hellersdorf): Beton	Q0- 23941,15458 23960,15340 23978,15215 23993,15111
 (Stendaler Str. - Tangermünder Str.): Beton	Q0- 23895,15450 23914,15453 23941,15458 24038,15475
 (Stendaler Str. - Tangermünder Str.): Verbundsteinpflaster	Q1+ 24038,15475 24076,15481 24169,15497
+#: by: https://lsg-hoenower-weiherkette.de/2021/11/24/bald-ist-es-soweit-beginn-der-masnahmen/ (Wegebaumaßnahmen bis Sommer 2022)
+#: by: https://berliner-abendblatt.de/2022/01/26/gestaltung-an-der-hoenower-weiherkette-beginnt/
+#: XXX Wie sieht die Wegbeschaffenheit nach den Bauarbeiten aus? vvv
+#: next_check: 2022-08-31 vvv
 (Zerbster Str. - Louis-Lewin-Str.): Kleinsteinpflaster	Q1 24324,15519 24379,15511
 (Zerbster Str. - Louis-Lewin-Str.): wassergebundene Decke	Q1 24379,15511 24459,15526 24468,15554 24811,15513 24827,15564 24927,15611 25003,15617
 (Louis-Lewin-Str. - U-Bhf. Hönow): wassergebundene Decke	Q1 25003,15617 25052,15591 25224,15578 25312,15558 25332,15507 25357,15489 25419,15487 25446,15447 25493,15427 25540,15429 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
+#: next_check ^^^
+#: XXX ^^^
 (Gohliser Str. - Wuhle-Hönow-Weg): wassergebundene Decke	Q1 25504,15352 25541,15406 25540,15429
 Eilenburger Str.: Asphalt	Q0 25743,15118 25752,15219 25578,15238
 Oschatzer Ring: Asphalt mit leichten Schäden	Q0- 24651,15239 24634,15314 24639,15372 24648,15465 24779,15448
@@ -12415,6 +12421,9 @@ Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
 Schönegarten: Betonpflaster	Q0- 7416,10492 7432,10546 7330,10590
 Wichmannstr.: Kleinsteinpflaster	Q1 6447,11144 6452,11118
 Frobenstr.: Asphalt mit einigen Rissen	Q0-; 7429,10366 7413,10244
+#: note: paralleler Fußweg mit Verbundsteinpflaster
+(Edeka-Parkplatz): Asphalt	Q0 18846,8616 18870,8646 18880,8689
+(Edeka-Parkplatz - Rheinsteinstr.): Verbundsteinpflaster	Q1 18880,8689 18865,8740
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13531,7 +13540,8 @@ Paracelsusstr.: schlechter Asphalt	Q2+ 11671,19204 11613,19312 11575,19296
 #: by: ^^^
 # 
 #: by: Henry Könner vvv
-Honnefer Str.: Asphalt	Q0 19299,8946 19195,9122
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Honnefer Str.: Asphalt mit einigen Schäden	Q1 19299,8946 19195,9122
 #: confirmed_by: srt
 Voltastr.: Kopfsteinpflaster	Q2 9034,14910 9201,14997 9355,15078 9566,15188
 #: by: ^^^

@@ -1700,7 +1700,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2022-01-24 vvv
+#: last_checked: 2022-01-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -5359,8 +5359,8 @@ asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 #: check_frequency: 60d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
-#: osm_watch: way id="153370345" version="11"
-#: osm_watch: way id="153373877" version="15"
+#: osm_watch: way id="153370345" version="12"
+#: osm_watch: way id="153373877" version="16"
 	RW3; 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
 #: note: außerdem werden Rechtsabbieger auf dem ehemaligen Bürgersteigradweg geführt, an der Ampel vorbei
 Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
@@ -5372,8 +5372,8 @@ Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
 #: by: https://westnordost.de/p/32402.jpg
 #: confirmed_by: srt
 	RW4; 6145,10975 6168,11042
-#: osm_watch: way id="153370344" version="18"
-#: osm_watch: way id="153373879" version="15"
+#: osm_watch: way id="153370344" version="19"
+#: osm_watch: way id="153373879" version="16"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
 #: check_frequency ^^^
 # REMOVED --- #: next_check ^^^
@@ -7325,11 +7325,12 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/s-bahn-faehrt-u-bahn-gesperrt_a317418
 #: by: https://viz.berlin.de/2021/08/u6/ (bis 7.10.2021)
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-durchgehenden-und-geschuetzten-weg-an-der-b96_a318755
+#: by: https://twitter.com/VIZ_Berlin/status/1486281393856462852
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: XXX: Werden die provisorischen Radspuren wieder entfernt? vvv
 #: priority: #A vvv
-#: last_checked: 2021-12-25 vvv
+#: last_checked: 2022-01-26 (twitter) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-10-18 vvv
 # REMOVED --- #: valid: -20211007 vvv
@@ -7356,7 +7357,7 @@ provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4
 	RW6;RW6 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # 
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf
-#: osm_watch: way id="4357826" version="16"
+#: osm_watch: way id="4357826" version="17"
 #: XXX laut fahrrat/2016-07-28 "Ausführung im Jahr 2017 geplant."
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-11-24_prot-fahrratsitzung4.pdf ("Entwurfsplanung liegt vor" + "Schwierigkeiten")
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf

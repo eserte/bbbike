@@ -518,8 +518,8 @@ Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwor
 ### Köpenick ###
 # 
 #: next_check_id: WUHLHEIDE-2021
-#: last_checked: 2021-12-30
-#: check_frequency: 30d
+#: last_checked: 2022-01-26
+#: check_frequency: 45d
 Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 20629,7189 20575,7226
 # 
 # REMOVED --- #: XXX laut bahninfo-forum wird die Baustelle mittlerweile bis März 2020 gehen (genauer: 6.3.2020), laut fritz bis 5.3.2020 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/reparaturarbeiten-dauern-bis-maerz-2020_a245005 (bis Mitte März 2020) --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/ab-7-maerz-faehrt-die-tram-wieder_a251845 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-in-der-bahnhofstrasse_a252970 --- #: by: https://www.bahninfo-forum.de/read.php?9,642252,658082#msg-658082 (letzte Deckschickt wird aufgetragen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.900893.php (Verlängerung bis 9. März 2020) --- #: source_id: 2147344732 (bis 06. März 2020) --- #: priority: #B --- #: last_checked: 2020-02-22 (mittlerweile aber Fahrbahn fast fertig) --- #: check_frequency: 3d --- #: next_check: 2020-03-06 --- #: valid: -20200306 --- Seelenbinderstr.: Fahrbahn wegen Bauarbeiten gesperrt, enger gemeinsamer Geh- und Radweg	q3::inwork 22292,5774 22513,5747
@@ -3831,6 +3831,8 @@ Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
 (Fußgängerbrücke S-Bhf. Marzahn - Eastgate): Rampe	q3 19653,15544 19671,15561 19657,15527
 (Fußgängerbrücke S-Bhf. Marzahn - Eastgate): Fußgänger	q4 19657,15527 19672,15519 19687,15513 19767,15473
 (Fußgängerbrücke - Märkische Allee): Fußgänger	q3 19687,15513 19694,15529 19733,15511
+(Edeka-Parkplatz): Parkplatzverkehr	q2 18846,8616 18870,8646 18880,8689
+(Edeka-Parkplatz - Rheinsteinstr.): Fußgänger	q3 18880,8689 18865,8740
 # 
 ######################### User Contributions #################################
 # 

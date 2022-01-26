@@ -431,10 +431,12 @@ Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 # REMOVED (hier wird nicht verbessert) --- Köpenicker Landstraße: Verbesserung des Radwegs	?::inwork; 16259,7328 16195,7398
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3225
+#: by: https://www.berliner-woche.de/wilhelmsruh/c-verkehr/entlang-der-hauptstrasse-in-wilhelmsruh-muessen-noch-grundstuecke-erworben-werden_a333710 (nicht vor 2025)
 #: XXX mittelfristig Realisierung von Radstreifen
 #: osm_watch: way id="340337649" version="7"
 #: last_checked: 2021-12-13 (mapillary)
-#: check_frequency: 150d
+#: check_frequency: 360d
+#: next_check: 2025-03-01
 Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3233 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6512 ("Fertigstellung: 2019, Ausschreibung in Vorbereitung") --- #: by: https://www.berliner-woche.de/tegel/c-verkehr/neupflanzungen-am-radweg_a205861 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7273 ("geplant") --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7501 (keine Änderungen am Ernststraßensteg) --- #: by: https://www.berliner-woche.de/borsigwalde/c-verkehr/es-kommt-keine-radroute-ueber-den-ernststrassensteg_a237319 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7662 (Vorschlag: Neubau der Schneckenbrücke) --- #: by: https://www.abendblatt-berlin.de/2019/11/14/berlin-tegel-cdu-fordert-neubau-der-schneckenbruecke/ --- #: by: https://api.fixmyberlin.de/api/projects/292 --- #: by: https://abendblatt-berlin.de/2020/05/08/berlin-reinickendorf-radwege/ ("komfortable Oberflächenbefestigung ... dieses Jahr", also 2020) --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.979862.php (Erneuerung bis 18.12.2020) --- #: by: https://www.berliner-woche.de/borsigwalde/c-verkehr/fahrbahn-und-gehwege-in-der-ernststrasse-erneuert_a284884 --- #: by: http://www.infravelo.de/projekt/ernststrasse/ (4. Quartal 2020) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8935 (Forderung nach Neubau der Schneckenbrücke) --- #: osm_watch: way id="333626105" version="7" --- #: last_checked: 2020-11-07 --- #: next_check: 2020-12-18 --- Ernststr.: Verbesserung für den Radverkehr, evtl. Entfernung des Kopfsteinpflasters?	?::projected 2477,19520 2553,19528 2689,19544
@@ -1083,7 +1085,7 @@ Nalepastr.: Einrichten einer Radverkehrsanlage auf der östlichen Seite	?::projec
 # 
 #: XXX Osw.13
 #: osm_watch: way id="22749854" version="46"
-#: last_checked: 2021-12-30
+#: last_checked: 2022-01-26
 #: check_frequency: 90d
 Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren auf Gehweg frei (Westseite)	?::projected 20280,7749 20307,7689 20316,7637 20323,7529 20340,7468 20393,7404 20510,7325 20616,7292 20653,7289
 # 
@@ -3307,6 +3309,7 @@ Chemnitzer Str.: Verlegung der Straße, Radwege	?::projected  22436,11054 22483,1
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1165515.php (Baubeginn 3. Kalenderwoche 2022)
 #: by: https://berliner-abendblatt.de/2022/01/14/bauarbeiten-in-wittenau/
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/strassen-werden-erneuert_a333635
+#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/im-schmitzweg-heiligental-und-brodersenstrasse-starten-langwierige-strassenbauarbeiten_a334127
 #: XXX ursprüngliche Bauzeit: Frühjahr 2019 - Ende 2020 vvv
 #: last_checked: 2021-09-04 vvv
 #: check_frequency: 180d vvv
@@ -4068,11 +4071,11 @@ Daumstr.: neue Busspur wurde angeordnet	?::projected; -1485,15463 -1389,15285 -1
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf (Ausführung steht aus, Einwände des Bezirks)
 #: source_id: 2147347217 (bis 19.8.2021, haben die Bauarbeiten etwas mit der geplanten Busspur zu tun?)
 #: source_id: viz2021:13.210243,52.56137,25.05.2021,10:13 (bis 27.9.2021, haben die Bauarbeiten etwas mit der geplanten Busspur zu tun?) (mittlerweile inaktiv)
-#: source_id: viz2021:13.21413,52.56088,25.05.2021,10:13 (bis 25.10.2021, andere Baustelle zwischen Goltz- und Bamihlstr.) (mittlerweile bis 6.12.2021) (mittlerweile bis 24.12.2021) (bis 15.01.2022) (bis 27.01.2022)
+#: source_id: viz2021:13.21413,52.56088,25.05.2021,10:13 (bis 25.10.2021, andere Baustelle zwischen Goltz- und Bamihlstr.) (mittlerweile bis 6.12.2021) (mittlerweile bis 24.12.2021) (bis 15.01.2022) (bis 27.01.2022) (bis 31.01.2022)
 #: osm_watch: way id="4978664" version="32"
 #: last_checked: 2021-09-04
 # REMOVED --- #: check_frequency: 60d
-#: next_check: 2022-01-27
+#: next_check: 2022-01-31
 Rauchstr.: Busspur in "finaler Abstimmung"	?::projected; -2728,17038 -2908,17072 -3009,17090
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf (Ausführung steht aus, bauliche Umgestaltung steht aus; am Wilhelmshavener Str.)
@@ -5085,7 +5088,7 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8708&date=20220115 (Radfahrstreifen bis zur Kynaststr.?)
 #: XXX während der Bauarbeiten Einbahnstraßenregelung --- was wird das für den Radverkehr bedeuten? -> siehe temp blockings
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2022-01-24
+#: last_checked: 2022-01-26
 #: check_frequency: 90d
 #: next_check: 2022-04-29
 Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,10738
@@ -5101,7 +5104,7 @@ Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,1073
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023)
 #: source_id: viz2021:13.475017,52.501547,29.04.2021,08:00 (Bauarbeiten bis 29.04.2022)
 #: source_id: viz2021:13.475184,52.501511,29.11.2021,08:00 (Bauarbeiten bis 29.04.2022)
-#: last_checked: 2022-01-24
+#: last_checked: 2022-01-26
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
@@ -5171,7 +5174,7 @@ Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch 
 #: next_check: 2022-12-31
 Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
 #: osm_watch: way id="4045220" version="42"
-#: last_checked: 2022-01-10
+#: last_checked: 2022-01-26
 #: check_frequency: 120d
 Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18875,9570 18846,9532 18765,9426 18735,9421
 #: osm_watch: way id="261883742" version="9"
@@ -5438,6 +5441,7 @@ Rohrwallallee - Windwallstr.: Asphaltstreifen soll eingerichtet werden	?::projec
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/protokoll-18-ag-radverkehr_24-02-2021.pdf (Erwähnung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1164852.php
 #: by: https://berliner-abendblatt.de/2022/01/11/umgestaltung-doerpfeldstrasse-gutachten-wird-vorgestellt/
+#: by: https://www.aktives-adlershof.de/aktuelles/umbau-doerpfeldstrasse
 #: osm_watch: way id="11389403" version="40"
 #: last_checked: 2021-12-17
 #: check_frequency: 360d
@@ -5893,10 +5897,10 @@ Vorarlberger Damm: Erneuerung des Radwegs	?::projected; 7227,7352 7101,7198 6991
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/cdu-abgeordneter-christian-zander-stellt-fragen-zur-verkehrsfuehrung-und-zu-parkplaetzen_a330692
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/startschuss-fuer-bau-eines-geschuetzten-radwegs-am-te-damm-gefallen_a330785
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8216 (Antrag)
-#: source_id: viz2021:13.385593,52.465718,08.12.2021,10:21 (bis 28.1.2022)
-#: source_id: viz2021:13.385594,52.464277,08.12.2021,10:21 (bis 28.1.2022)
+#: source_id: viz2021:13.385593,52.465718,08.12.2021,10:21 (bis 28.1.2022) (mittlerweile bis 31.3.2022)
+#: source_id: viz2021:13.385594,52.464277,08.12.2021,10:21 (bis 28.1.2022) (mittlerweile bis 31.3.2022)
 # REMOVED --- #: note: außerdem existieren zwischen Ringbahnstr. und Alt-Tempelhof temporäre Busspuren, für Radfahrer freigegeben
-#: last_checked: 2021-12-25
+#: last_checked: 2022-01-26 (twitter)
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 240d
 #: next_check: 2022-10-01
@@ -5931,7 +5935,7 @@ Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/neues-entree-am-s-bahnhof-wuhlheide_a311040 (erster Bauabschnitt)
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/bauarbeiten-an-der-rudolf-ruehl-allee_a333401 (zweiter Bauabschnitt bis Frühjahr 2022)
 #: XXX evtl. Vollsperrungen während der Bauzeit werden rechtzeitig mitgeteilt
-#: last_checked: 2021-12-30
+#: last_checked: 2022-01-26
 #: check_frequency: 45d
 #: next_check: 2022-05-30
 Wuhlheide: Weg wird erneuert	?::inwork 20629,7189 20575,7226
@@ -5974,9 +5978,10 @@ Am Priesteracker (Potsdam): genaue Lage? Qualität? Einbahnstraße für Radfahrer o
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_43_5209_5256_online.pdf (Verlängerung des Planfeststellungsverfahrens)
 #: by: https://abendblatt-berlin.de/2021/04/09/berliner-norden-sanierung-der-a111-soll-2024-starten/ (geplant: Anfang 2022 bis Ende 2023)
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/der-senat-will-die-a111-ab-2024-sanieren_a306780
-#: XXX wann beginnen die Bauarbeiten?
+#: source_id: viz2021:13.307546,52.56813,27.01.2022,09:00 (Vorbereitung Brückenneubau, bis 30.11.2022)
+#: XXX Gibt es für Radfahrer bereits Einschränkungen (z.B. Sperrung einer Straßenseite)?
 #: last_checked: 2022-01-22 (research)
-# REMOVED --- #: next_check: 2022-02-01
+#: next_check: 2022-01-27
 Seidelstraßenbrücke: Bauarbeiten mit Komplettsperrung geplant	?::projected 3833,17929 3706,17931 3570,17938
 # 
 #: next_check_id: WOLTERSDORFSTOLPKANAL-2022
@@ -6175,6 +6180,7 @@ Am Alten Lokschuppen: bauzeitliche Sperrung geplant	? 15708,11193 15752,11115 15
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1087466.php
 #: by: https://www.berliner-woche.de/reinickendorf/c-bauen/umbau-des-parks-am-schaeferplatz-startet-ende-mai_a310338
 #: by: https://www.berliner-woche.de/reinickendorf/c-bauen/sorge-um-den-schaeferseepark_a314889
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1171119.php
 #: XXX Fertigstellung 2021 vvv
 #: last_checked: 2022-01-22 vvv
 #: check_frequency: 90d vvv
@@ -6211,7 +6217,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by: https://api.fixmyberlin.de/api/projects/441
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8742 (Anordnungsprozess in Vorbereitung)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8792 (Anordnungsprozess in Vorbereitung)
-#: last_checked: 2022-01-24
+#: last_checked: 2022-01-26
 #: check_frequency: 180d
 Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 18301,9946 18266,9853 18066,9770 17920,9698 17777,9649 17668,9632 17587,9655 17471,9688 17383,9719
 # 
@@ -6349,7 +6355,7 @@ Paule-Panke-Str.: geplante Privatstraße	?::projected 11168,18542 11214,18388 111
 Hegemeisterweg/Treskowallee: Ampel geplant	?::projected 18390,7797 18406,7760 18424,7721
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8592
-#: last_checked: 2021-12-31
+#: last_checked: 2022-01-26
 #: check_frequency: 180d
 Malchower Str./Königswalder Str.: Fußgängerüberweg bzw. Ampel geplant	?::projected 16931,17024 16951,17055 16974,17087
 # 
@@ -7104,7 +7110,7 @@ Friedhof Segen: Wohngebiet entsteht	?::projected 13581,16968 13522,17021 13687,1
 #: by: https://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_34_3753_3876_online.pdf (Teilung des Bebauungsplans)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6932&date=20170905
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8491
-#: last_checked: 2022-01-10 vvv
+#: last_checked: 2022-01-26 vvv
 #: check_frequency: 360d vvv
 #: XXX Planstraße 2:
 #: osm_watch: way id="646453312" version="2"
@@ -8048,6 +8054,7 @@ Bundeskanzleramt: hier wird eine Brücke "für die Allgemeinheit" entstehen --- au
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/bebauungsplan.1110112.php
 #: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/planzeichnung-bebauungsplanentwurf-11-173.pdf
 #: XXX im Zuge des Bebauungsplans 11-173
+#: last_checked: 2022-01-26
 #: next_check: 2023-01-01
 Köpenicker Allee 146-162: Wohngebiet geplant, Wege werden entstehen	?::projected 19464,8627 19552,8437 19793,8566 19700,8731 19464,8627
 # 
@@ -8063,7 +8070,7 @@ Köpenicker Allee 146-162: Wohngebiet geplant, Wege werden entstehen	?::projected
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9183 (Bebauungsplan 11-178)
 #: by: https://berliner-abendblatt.de/2021/12/25/plaene-fuer-trabrennbahn-karlshorst-werden-konkreter/
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/bebauungsplan-fuer-trabrennbahn-karlshorst-in-sicht_a332516
-#: last_checked: 2021-12-15
+#: last_checked: 2022-01-26
 #: next_check: 2023-08-01
 Trabrennbahn Karlshorst: Wohngebiet geplant, werden hier auch neue Straßen entstehen?	?::projected 18598,7984 18460,7777 18892,7197 19013,7427 18598,7984
 # 

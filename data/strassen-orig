@@ -8813,6 +8813,7 @@ Fritz-Lang-Str.	N 23833,15066 23841,15004 23846,14931
 Fritz-Lang-Str.	NN 23856,14868 23878,14748
 Fritz-Lang-Platz	N 23871,14914 23846,14931 23820,14896 23856,14868 23882,14904 23871,14914
 Zerbster Str. (Hellersdorf)	N 24451,15181 24413,15372 24357,15429 24346,15505 24324,15519 24169,15497
+#: by: https://lsg-hoenower-weiherkette.de/
 (Zerbster Str. - Louis-Lewin-Str.)	NN 24324,15519 24379,15511 24459,15526 24468,15554 24811,15513 24827,15564 24927,15611 25003,15617
 (Louis-Lewin-Str. - U-Bhf. Hönow)	NN 25003,15617 25052,15591 25224,15578 25312,15558 25332,15507 25357,15489 25419,15487 25446,15447 25493,15427 25540,15429 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
 (Gohliser Str. - Wuhle-Hönow-Weg)	NN 25504,15352 25541,15406 25540,15429
@@ -11082,6 +11083,10 @@ Dönhoffstr.	N 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 
 Hönower Weg	N 16900,9861 16925,9852 16984,9857 17383,9719 17471,9688 17587,9655 17668,9632 17777,9649 17920,9698 18066,9770 18266,9853
 Friedenhorster Str.	N 18266,9853 18301,9946 18312,9985 18296,10027
 Ehrenfelsstr.	N 19468,8168 19447,8175 19375,8250 19228,8350 19148,8406 19107,8435 19000,8509 18945,8547 18891,8586 18846,8616 18778,8663 18737,8686
+#: osm.highway: service
+(Edeka-Parkplatz)	N 18846,8616 18870,8646 18880,8689
+#: note: Privatgrundstück, Durchgang gestattet
+(Edeka-Parkplatz - Rheinsteinstr.)	NN 18880,8689 18865,8740
 (Waldweg)	NN 20872,7268 20892,7236 20867,7165 20869,7116
 (Waldweg an der S-Bahn)	NN 20869,7116 21409,6731 21576,6644
 (Waldweg an der S-Bahn)	NN 20869,7116 20682,7262 20653,7289
@@ -14959,7 +14964,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2022-01-24
+#: last_checked: 2022-01-26
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15337,7 +15342,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2022-01-24
+#: last_checked: 2022-01-26
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
