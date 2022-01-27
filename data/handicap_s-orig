@@ -559,12 +559,7 @@ Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwo
 # REMOVED --- #: next_check: 2021-08-22
 Neue Nationalgalerie: Bauz‰une, Umfahren ¸ber Gehweg (Bordstein) mˆglich	q3::inwork 7874,11293 7828,11133
 # 
-#: next_check_id: MUSEUMDERMODERNE-2021
-#: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
-#: last_checked: 2021-12-29
-#: check_frequency: 90d
-Matth‰ikirchplatz: wegen Bauarbeiten am Museum der Moderne mˆgliche Behinderungen	q3::inwork 7934,11275 7965,11380
-# 
+# REMOVED (eigentlich keine Behinderungen durch die Bauarbeiten) --- #: next_check_id: MUSEUMDERMODERNE-2021 --- #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam) --- #: last_checked: 2021-12-29 --- #: check_frequency: 90d --- Matth‰ikirchplatz: wegen Bauarbeiten am Museum der Moderne mˆgliche Behinderungen	q3::inwork 7934,11275 7965,11380
 # REMOVED --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629697&postcount=1218 --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Verschwinden die Radspuren nach den Bauarbeiten? --- #: last_checked: 2019-08-04
 # REMOVED (hier nicht mehr) --- Moltkebr¸cke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg mˆglich	q4+::inwork 8206,12757 8120,12756
 # REMOVED (hier nicht mehr) --- Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg mˆglich	q2-::inwork 8120,12756 8030,12824 8021,12832
@@ -4039,6 +4034,9 @@ Wentowsteig: enge Straﬂe mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 # REMOVED (nicht mehr relevant, wird neu gebaut) --- #: by: Felix Beutler: --- Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7427,14648 7464,14636
 #: by: Jˆrn Busch:
 #: corrected_by: srt (q2 -> q1)
+#: by: https://www.infravelo.de/projekt/nordgraben/ (1. Quartal 2022 - 4. Quartal 2022; Asphaltierung & Verbreiterung auf 4m)
+#: XXX Weg wird asphaltiert
+#: next_check: 2022-03-31
 (Weg am Nordgraben): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q1 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3233,20834 3144,20865 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
 # 
 #: by: Hans-Reiner Padberg: vvv
