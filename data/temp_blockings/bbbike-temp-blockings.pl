@@ -32093,7 +32093,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (alter Übergang existiert zur Hälfte --- bleibt es so?) --- #: next_check_id: STERNDAMM-2020 --- #: by: osm --- #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert) --- #: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2021-05-09-adlershof-2/40-2021-05-09-214-xxl.jpg (kein provisorischer Übergang mehr) --- #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt --- #: osm_watch: way id="855549020" version="1" --- #: last_checked: 2021-09-05 (krickstadt) --- #: check_frequency: 30d --- #: next_check: 2021-10-31
-	2::inwork 18836,3611 18943,3508
+	2::inwork 18836,3611 18848,3600 18943,3508
 EOF
      },
      { from  => $isodate2epoch->("2021-03-08 05:00:00"), # 1609650000, # 2021-01-03 06:00
@@ -33804,7 +33804,7 @@ EOF
 #: next_check_id: CORONA-2020
 #: note: Marktzeiten sind wohl 9 bis 15 Uhr, Parkverbote (und mögliche Sperrung/Beeinträchtigung) aber länger
 #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv
-#: last_checked: 2021-12-25 vvv
+#: last_checked: 2022-01-28 vvv
 #: check_frequency: 90d vvv
 #: tempex: sa T06-T19 vvv
 	2::temp 9546,9198 9617,9185 9674,9179
@@ -34338,14 +34338,18 @@ EOF
 EOF
      },
      { from  => 1614492000, # 2021-02-28 07:00
-       until => 1672502400, # 2022-12-31 17:00
+       until => $isodate2epoch->("2022-12-31 07:00:00"), # 1672502400, # 2022-12-31 17:00
        text  => 'Ringstr.: Bauarbeiten, Straße abschnittsweise gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.03.2021 07:00 bis 31.12.2022 17:00 ',
        type  => 'handicap',
-       source_id => 'viz2021:13.287063,52.432721,01.03.2021,07:00',
+       source_id => 'viz2021:13.287063,52.432721,01.03.2021,07:00', # mittlerweile nur bis 31.1.2022, aber siehe unten
        data  => <<EOF,
-#: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun?
-#: also_indoor: traffic (G,H,B)
+#: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.12.2022)
+#: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
+#: also_indoor: traffic (G,H,B) vvv
 	q4::inwork 3011,3303 2781,3122 2698,3068 2655,3025 2632,2969 2625,2850
+	q4::inwork; 3507,3654 3372,3557 3228,3455 3184,3427
+#: also_indoor ^^^
+#: XXX ^^^
 EOF
      },
      { from  => 1642917600, # 2022-01-23 07:00
@@ -34384,6 +34388,15 @@ EOF
 #: osm_watch: way id="35043662" version="10"
 #: add_fragezeichen: Ist dieser Weg tatsächlich gesperrt? Wenn ja: wo genau ist der gesperrte Abschnitt?
 	2::inwork -1923,15684 -1938,15782 -1935,15826 -1978,15940 -1976,16012
+EOF
+     },
+     { from  => 1643397267, # 2022-01-28 20:14
+       until => 1648764000, # 2022-04-01 00:00
+       text  => 'Dreesch - Grünow: Bauarbeiten, Sperrung bis zum 31.03.2022',
+       type  => 'gesperrt',
+       source_id => '217300506',
+       data  => <<EOF,
+	2::inwork 45543,101043 45648,100789 45806,100487 45847,100277 45868,100193
 EOF
      },
     );

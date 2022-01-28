@@ -724,7 +724,7 @@ Kolonnenstr.	H 8209,8773 8145,8773 8078,8772 8014,8771 8008,8771 7795,8765 7709,
 #: XXX wird am 18.10.2021 zum Richard-von-Weizsäcker-Platz umbenannt --- verzögert sich wegen Widerspruchs
 #: also_indoor: search Richard-von-Weizsäcker-Platz
 # REMOVED --- #: next_check: 2021-10-18
-#: last_checked: 2022-01-15 (research)
+#: last_checked: 2022-01-27 (research)
 #: check_frequency: 14d
 Kaiser-Wilhelm-Platz	NN 7201,8870 7307,8945
 Herbertstr. (Schöneberg)	N 7360,8918 7389,8837 7402,8783 7395,8761
@@ -2535,7 +2535,7 @@ Rumplerzeile	N 19331,3098 19417,3184
 Erich-Thilo-Str.	N 19417,3015 19331,3098 19257,3172
 Katharina-Boll-Dornberger-Str.	N 19269,3183 19167,3287 19086,3370 19097,3380 19057,3422 19013,3466 18998,3454 18943,3508
 Katharina-Boll-Dornberger-Str.	N 18998,3454 18987,3442 19033,3397 19073,3357 19086,3370
-Katharina-Boll-Dornberger-Str.	NN 18943,3508 18836,3611
+Katharina-Boll-Dornberger-Str.	NN 18943,3508 18848,3600 18836,3611
 Wilhelm-Hoff-Str.	N 18828,3196 18892,3256 18953,3318
 Wilhelm-Hoff-Str.	NN 18953,3318 19033,3397 19057,3422 19061,3426 19107,3472 19125,3491
 (Wilhelm-Hoff-Str. - James-Franck-Str.)	NN 18828,3196 18822,3188 18724,3091 18716,3082 18707,3074 18613,2983 18601,2971
@@ -16938,10 +16938,12 @@ Emmichstr.	N 7282,2386 7370,2400 7424,2400 7559,2385 7648,2356
 (Emmichstr. - Parkweg)	NN 7648,2356 7665,2357
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-28464.pdf
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksamt/protokolle/2021/2021-10-05_maerckerweg-umbebennen_top-10.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_04_0173_0236_online.pdf (Straßenumbenennung zum 29. April 2022)
 #: XXX geplante Umbenennung in Maria-Rimkus-Weg
 #: also_indoor: search Maria-Rimkus-Weg
 #: last_checked: 2021-10-05 (BA-Beschluss)
-#: check_frequency: 180d
+# REMOVED --- #: check_frequency: 180d
+#: next_check: 2022-04-29
 Maerckerweg	N 7559,2385 7602,2522
 #: note: relativ stark befahren, evtl. NH? (Aber keine Vorfahrtstraße)
 Eiswaldtstr.	N 6718,2443 6834,2449 6965,2418 7051,2366 7172,2343 7282,2386

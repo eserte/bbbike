@@ -968,7 +968,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,12.01.2022,11:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-01-23
+#: last_checked: 2022-01-28
 #: check_frequency: 60d
 #: next_check: 2022-06-30
 # REMOVED --- provisorischer gemeinsamer Geh- und Radweg	RW2;
@@ -1522,8 +1522,9 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/bauarbeiten-auf-der-hauptstrasse_a310431 (Länge der Baustelle 300m, Dauer ein halbes Jahr, kein Startdatum)
 #: source_id: 2147347198 (Markierungsarbeiten bis 20.5.2021) (inaktiv)
 #: source_id: 2147347199 (bis 31.1.2022)
+#: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 31.1.2022) (mittlerweile bis 17.2.2022)
 #: last_checked: 2021-09-05
-#: next_check: 2022-01-31
+#: next_check: 2022-02-17
 #: XXX Hauptstr.: Bauarbeiten der Wasserbetriebe, die östliche Fahrbahn ist gesperrt
 # REMOVED (wieder herstellen) --- Busspur gilt Mo-Fr 7-18 Uhr	RW5;RW5 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7268,8960
 temporäre Radspuren	RW4;RW4 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7268,8960
@@ -1640,7 +1641,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: by: https://molkenmarkt01.hi-res-cam.com/ (webcam)
 #: XXX temporäre Radwegführung
-#: last_checked: 2022-01-03
+#: last_checked: 2022-01-27 (webcam)
 #: check_frequency: 30d
 temporäre Führung als Bürgersteigradweg	RW1; 10887,12570 10954,12635
 # wieder herstellen:	RW4; 10887,12570 10954,12635
@@ -6243,7 +6244,7 @@ Gelbmarkierung	RW3;RW3 12639,8344 12598,8390
 #: last_checked ^^^
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2022-01-16
+#: last_checked: 2022-01-28
 #: check_frequency: 60d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünmarkierung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
@@ -6278,7 +6279,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2022-01-16
+#: last_checked: 2022-01-28
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
@@ -6796,7 +6797,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2022-01-15
+#: last_checked: 2022-01-28
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6881,7 +6882,7 @@ Grünmarkierung	RW4; 12407,14470 12522,14385
 #: last_checked: 2022-01-18 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-31 vvv
-#: osm_watch: way id="335479077" version="14"
+#: osm_watch: way id="335479077" version="15"
 teilweise provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 provisorischer Radstreifen	RW4; 12317,14535 12407,14470
 # REMOVED --- #: osm_watch: way id="41954398" version="20"
@@ -7114,7 +7115,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="21"
 #: osm_watch: way id="335487059" version="19"
-#: last_checked: 2022-01-15 vvv
+#: last_checked: 2022-01-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-01-01 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -7441,9 +7442,11 @@ Gehweg für Radfahrer frei	RW1;RW1 475,1202 587,1230 718,1264 857,1300
 	RW2; 1566,11409 1574,11379
 # 
 #: note: Grünmarkierung fehlt an den Bushaltestellen vvv
-Grünmarkierung	RW3; 12510,6508 12470,6586 12422,6715 12395,6785 12362,6881 12347,6923 12342,6936 12317,7007 12304,7039 12291,7074
+Grünmarkierung, Poller	RW3; 12510,6508 12470,6586
+Grünmarkierung	RW3; 12470,6586 12422,6715 12395,6785 12362,6881 12347,6923 12342,6936 12317,7007 12304,7039 12291,7074
 Grünmarkierung	RW4; 12291,7074 12259,7164 12244,7205 12221,7271
 #: note ^^^
+provisorische Radspuren	RW4;RW4 12185,7381 12221,7271
 # REMOVED --- #: XXX Radweg markiert und ausgeschildert, allerdings ignoriert --- #: last_checked: 2021-12-13 --- #: check_frequency: 7d
 	RW4; 12221,7271 12244,7205 12259,7164 12291,7074 12304,7039 12317,7007
 # 
