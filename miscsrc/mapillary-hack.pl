@@ -156,7 +156,7 @@ sub fetch_images {
 	if (!$resp->is_success) {
 	    my $error_data = eval { decode_json $resp->decoded_content };
 	    my $msg = "Try $try/$max_try: ";
-	    if ($error_data && ref $error_data eq 'HASH' && $error_data->{error}->{error_user_title} =~ m{^(Query Timeout)$}) {
+	    if ($error_data && ref $error_data eq 'HASH' && ($error_data->{error}->{error_user_title}//"") =~ m{^(Query Timeout)$}) {
 		my $e = $error_data->{error};
 		$msg .= "$e->{error_user_title}: $e->{error_user_msg}";
 	    } else {
