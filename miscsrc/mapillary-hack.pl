@@ -34,6 +34,7 @@ my $client_token = $conf->{client_token} || die "Can't get client_token from $co
 
 my $default_limit = 2000;
 my $used_limit = $default_limit;
+my $max_try = 10;
 
 my $image_api_url = 'https://graph.mapillary.com/images';
 
@@ -47,6 +48,7 @@ GetOptions(
 	   "open"    => \my $do_open,
 	   "used-limit=i" => \$used_limit,
 	   "geometry-field=s" => \$geometry_field,
+	   "max-try=i" => \$max_try,
 	  )
     or die "usage?";
 
@@ -150,7 +152,6 @@ sub fetch_images {
     my $url = "$image_api_url?access_token=$client_token&fields=id,$geometry_field,captured_at,sequence&bbox=" . join(",", @$bbox) . "&start_captured_at=$start_captured_at_iso&end_captured_at=$end_captured_at_iso";
 
     my $data;
-    my $max_try = 10;
     for my $try (1..$max_try) {
 	my $resp = $ua->get($url);
 	if (!$resp->is_success) {
@@ -186,7 +187,7 @@ sub fetch_images {
 	}
     }
     if (!$data) {
-	die "Fetching $url failed permanently";
+	die "Fetching " . scrambled_url($url) . " failed permanently";
     }
 
     if (@$data > $default_limit) {
@@ -204,6 +205,18 @@ sub fetch_images {
     } else {
 	$data;
     }
+}
+
+sub scrambled_url {
+    my $url = shift;
+    if (eval { require URI; require URI::QueryParam; 1 }) {
+	my $u = URI->new($url);
+	$u->query_param('access_token', '...');
+	$url = $u->as_string;
+    } else {
+	$url =~ s{\?.*}{?...};
+    }
+    $url;
 }
 
 __END__
