@@ -1813,8 +1813,9 @@ Waldsiedlung	OHT -8626,8698
 Krampnitz	OS -13260,5556
 # 
 Neu Fahrland	OS -13763,4232
-Neu Fahrland	OS -13781,4027
 Neu Fahrland	OS -13760,4512
+#: note: von Norden: Beginn "Neu Fahrland" (2021), von Süden Ende "Potsdam" (2022)
+Neu Fahrland	OS -13781,4027
 # 
 Diensdorf-Radlow	OS 56303,-16563
 Diensdorf-Radlow	OS 55654,-17800
@@ -1836,10 +1837,12 @@ Potsdam	OS -9389,425
 Potsdam	OS -7418,-1200
 Potsdam	OS -7993,-2287
 Potsdam	OS -13891,-3173
+#: note: von Norden "Potsdam" (2021), von Süden leer (2022)
 Potsdam	OS -13384,2979
-#: by: mapillary
-Potsdam	OS -7575,-1383
 Potsdam	OS -13079,-3716
+#: by: mapillary vvv
+Potsdam	OS -7575,-1383
+#: by ^^^
 # 
 Sacrow	OS -9834,2806
 Sacrow	OS -10900,2189

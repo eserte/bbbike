@@ -4,7 +4,8 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Mühsamstr.: Fahrbahn im Kreuzungsbereich Thaerstr. gesperrt	q4::inwork 13844,12900 13818,12897 13838,12884
-Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn nur für Baufahrzeuge	q3::inwork 12596,11696 12453,11790 12378,11806
+Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
+(Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
 Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 14946,11697
 (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10215,-2170 10181,-2174 10161,-2146 10096,-2137
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
@@ -377,7 +378,7 @@ Lausitzer Platz: Fußgängerzone, einige Bodenschwellen	q2 12328,10442 12274,10612
 Eisenbahnstr.: Fußgängerzone	q2 12294,10663 12274,10612
 Waldemarstr.: Fußgängerzone	q2 12172,10585 12142,10600
 (Grünanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fußgänger, Bordstein	q3 17686,18172 17721,18001
-Erich-Steinfurth-Str.: Fußgänger	q3 12645,11673 12596,11696
+Erich-Steinfurth-Str.: Fußgänger	q3 12645,11673 12608,11692
 Elbingeroder Weg: hohe Bordsteine	q4 13178,9062 13146,9085
 (An der Apostelkirche - Kurfürstenstr.): Fußgänger, Bordstein	q3 7312,10505 7315,10537
 Else-Lasker-Schüler-Str.: gemeinsamer Rad- und Gehweg	q1 7281,10510 7315,10537
@@ -454,7 +455,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
 (Treseburger Ufer - Rungiusstr.): nur für Fußgänger erlaubt	q4 12736,5913 13064,5953
-Treseburger Ufer: einige Fußgänger	q1 12301,5783 12453,5844 12507,5860 12636,5896 12699,5909
+Treseburger Ufer: nur für Fußgänger erlaubt	q4 12301,5783 12453,5844 12507,5860 12636,5896 12699,5909
 (Bellevuepark): einige Fußgänger	q1 22798,5731 22796,5640 22796,5631 22787,5582 22841,5571 22855,5554 22834,5481 22851,5327
 (Bellevuepark): nur für Fußgänger erlaubt	q4 22787,5582 22733,5569 22701,5428 22657,5328
 Walter-Nicklitz-Promenade: eng und kurvenreich, Fußgänger	q2 8290,15304 8329,15397 8308,15409 8312,15470

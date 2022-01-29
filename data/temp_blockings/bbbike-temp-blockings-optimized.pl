@@ -522,10 +522,10 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        {
          'data' => '#: tempex: su T09-T16
-	q4::temp:clock 12596,11696 12453,11790 12378,11806
+	q4::temp:clock 12608,11692 12453,11790 12378,11806
 #: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2022-01-08
+#: last_checked: 2022-01-29
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -2663,14 +2663,14 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2022-01-20 vvv
+#: last_checked: 2022-01-29 vvv
 #: check_frequency: 7d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
 # REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
 # REMOVED (beendet) ---	q3::inwork 14272,11775 14306,11889
-	q2::inwork 14306,11889 14354,12012
+	q2::inwork 14306,11889 14354,12012 14427,12197
 	q3::inwork 14354,12012 14468,11992
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -2678,7 +2678,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 ',
          'from' => 1590562800,
          'id' => 3240,
-         'text' => 'Mainzer Str.: Bauarbeiten zwischen Boxhagener Str. und Scharnweberstr., mögliche Einschränkugen, Ende der Bauarbeiten unbekannt',
+         'text' => 'Mainzer Str.: Bauarbeiten zwischen Boxhagener Str. und Frankfurter Allee, mögliche Einschränkugen, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -3308,8 +3308,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1145930.php (Verzögerung)
 #: by: https://www.berliner-woche.de/luebars/c-bauen/fahrbahn-der-strasse-am-vierrutenberg-erst-im-fruehjahr-fertig_a328514
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9770 (Frage)
+#: also_indoor: traffic
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: next_check: 2022-01-03
+#: last_checked: 2022-01-19 (kartaview)
+# REMOVED --- #: next_check: 2022-01-03
 	q4::inwork 5793,23422 5893,23287
 ',
          'from' => 1627682400,
@@ -3317,7 +3319,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1106283.php',
          'text' => 'Am Vierrutenberg: Bauarbeiten zwischen Zehntwerderweg und Benekendorffstr., evtl. wird die Fahrbahn nicht benutzbar sein, von August bis voraussichtlich Anfang 2022',
          'type' => 'handicap',
-         'until' => 1643648400
+         'until' => 1646067600
        },
        undef,
        {
@@ -3561,20 +3563,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (G)
-#: osm_watch: way id="1003079755" version="4"
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-01-21
-#: check_frequency: 14d
-	q3::inwork; 16192,10907 16153,10818
-',
-         'from' => undef,
-         'id' => 3464,
-         'text' => 'Giselastr.: Bauarbeiten zwischen Lückstr. und Leopoldstr., Einbahnstraßenregelung, offen Richtung Norden',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: XXX bleibt das dauerhaft so?

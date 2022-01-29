@@ -12,7 +12,7 @@
 # 
 #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-01-18
+#: last_checked: 2022-01-24 (kartaview)
 #: check_frequency: 45d
 #: next_check: 2022-04-01
 Mühsamstr.: Fahrbahn im Kreuzungsbereich Thaerstr. gesperrt	q4::inwork 13844,12900 13818,12897 13838,12884
@@ -22,19 +22,23 @@ Mühsamstr.: Fahrbahn im Kreuzungsbereich Thaerstr. gesperrt	q4::inwork 13844,129
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2021-12-22
-#: check_frequency: 120d
-#: next_check: 2025-01-01
-Erich-Steinfurth-Str.: Bauarbeiten, Fahrbahn nur für Baufahrzeuge	q3::inwork 12596,11696 12453,11790 12378,11806
+#: last_checked: 2022-01-29 vvv
+#: check_frequency: 120d vvv
+#: next_check: 2025-01-01 vvv
+Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
+(Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: note: laut rbb bis 29.10.2021, laut Parkverbotsschilder bis 28.1.2022 vvv
 #: also_indoor: traffic (H(falsch),G(teilweise),B)
-#: last_checked: 2022-01-20 vvv
+#: last_checked: 2022-01-29 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2022-01-28 vvv
+# REMOVED --- #: next_check: 2022-01-28 vvv
 # REMOVED (offen) --- Jessnerstr.: Sperrung der Fahrbahn nördlich der Oderstr.	q3::inwork 14946,11697 14986,11760
 Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 14946,11697
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: note ^^
@@ -1359,7 +1363,7 @@ Waldemarstr.: Fußgängerzone	q2 12172,10585 12142,10600
 #: XXX_prog BS Bordstein an der Falkenberger Chausse, ansonsten q2
 (Grünanlage Egon-Erwin-Kisch-Str. - Falkenberger Chaussee): Fußgänger, Bordstein	q3 17686,18172 17721,18001
 #: note: etwas weiter nördlich verläuft eine Servicestraße
-Erich-Steinfurth-Str.: Fußgänger	q3 12645,11673 12596,11696
+Erich-Steinfurth-Str.: Fußgänger	q3 12645,11673 12608,11692
 #: XXX_prog BS auf beiden Seiten Bordsteine, außerdem noch zwei Bordsteine beim Überqueren der Bouchéstr.; ansonsten Fußgänger, q3
 Elbingeroder Weg: hohe Bordsteine	q4 13178,9062 13146,9085
 #: XXX_prog BS niedriger Bordstein auf der südlichen Seite, keiner an der Kurfüstenstr. (ansonsten q2)
@@ -1471,7 +1475,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
 # REMOVED (BS wurde abgesenkt) --- #: XXX_prog BS (an der Rungiusstr., ansonsten weiterhin q4)
 (Treseburger Ufer - Rungiusstr.): nur für Fußgänger erlaubt	q4 12736,5913 13064,5953
-Treseburger Ufer: einige Fußgänger	q1 12301,5783 12453,5844 12507,5860 12636,5896 12699,5909
+Treseburger Ufer: nur für Fußgänger erlaubt	q4 12301,5783 12453,5844 12507,5860 12636,5896 12699,5909
 (Bellevuepark): einige Fußgänger	q1 22798,5731 22796,5640 22796,5631 22787,5582 22841,5571 22855,5554 22834,5481 22851,5327
 (Bellevuepark): nur für Fußgänger erlaubt	q4 22787,5582 22733,5569 22701,5428 22657,5328
 Walter-Nicklitz-Promenade: eng und kurvenreich, Fußgänger	q2 8290,15304 8329,15397 8308,15409 8312,15470

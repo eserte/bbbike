@@ -1248,7 +1248,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-01-28
+#: last_checked: 2022-01-29
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -3368,6 +3368,12 @@ Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,
 # 
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
+#: next_check_id: OSTBAHNHOF-2021
+#: last_checked: 2022-01-29
+#: check_frequency: 120d
+#: next_check: 2025-01-01
+Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
+# 
 #: by: https://ausschreibungen-deutschland.de/816165_Spreepark_Berlin_Erschliessung_Ost__Pionierweg_C1_2021_Berlin (u.a.: "Beleuchtung" (zurzeit nolighting), ~6 Monate)
 #: by: https://www.spreepark.berlin/konzept-und-grundlagen/news/detail/weitere-baumassnahmen-im-und-am-spreepark/ (Ausbesserung, Verringerung der Breite von 7 auf 4m, voraussichtlich bis Mai 2022)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/der-pionierweg-wird-erneuert-und-erhaelt-eine-neue-beleuchtung-korrosionsschutz-fuer-mero-halle_a327800
@@ -3460,14 +3466,11 @@ Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, k
 # REMOVED --- #: XXX bis wann geht die Einbahnstraßenregelung? --- #: last_checked: 2021-05-17 --- Rudi-Arndt-Str.: Einbahnstraßenregelung	1s:q4:inwork 13449,13892 13359,13832
 # 
 #: osm_watch: way id="871451762" version="1"
-#: last_checked: 2021-12-28
+#: last_checked: 2022-01-29
 #: check_frequency: 30d
 Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 15320,12375 15408,12394
 # 
-#: next_check_id: NKZ-2020
-#: last_checked: 2022-01-03
-#: check_frequency: 30d
-(Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
+# REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
 #: last_checked: 2022-01-08 vvv
@@ -4705,7 +4708,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-106/download/210225_Planzeichnung_1-106.pdf (verkehrsberuhigter Bereich)
 #: osm_watch: way id="257432926" version="7"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2022-01-08
+#: last_checked: 2022-01-28 (daf)
 #: check_frequency: 150d
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754
 # REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731

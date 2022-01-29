@@ -2158,7 +2158,7 @@ Kienitzer Str.: Kopfsteinpflaster	Q2 11504,7738 11612,7762 11738,7790 11867,7813
 Allerstr.: Kopfsteinpflaster	Q2 11521,7638 11633,7662 11763,7687 11888,7710 12057,7744
 Okerstr.: Kopfsteinpflaster	Q2 11540,7534 11654,7559 11785,7583 11911,7609 12090,7651
 Lasdehner Str.: Kopfsteinpflaster	Q2 13524,12271 13470,12190 13375,12062
-Erich-Steinfurth-Str.: Kopfsteinpflaster	Q2 12596,11696 12453,11790 12378,11806
+Erich-Steinfurth-Str.: Kopfsteinpflaster	Q2 12608,11692 12453,11790 12378,11806
 Rütlistr.: Kopfsteinpflaster	Q2 12480,9037 12526,9125
 Rütlistr.: Asphalt	Q0 12526,9125 12554,9178 12592,9249
 Rütlistr.: Betonpflaster	Q0- 12592,9249 12621,9297
@@ -9159,7 +9159,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2022-01-02 vvv
+#: last_checked: 2022-01-29 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -15271,7 +15271,7 @@ Fräsersteig: Betonplatten	Q0 5761,20401 5842,20451 5885,20478 5900,20487 5959,20
 Alter Bernauer Heerweg: unbefestigter Pfad	Q2 6641,22756 6770,22801
 #: corrected_by: srt (Q2 -> Q2-)
 Alter Bernauer Heerweg: Kopfsteinpflaster	Q2- 6770,22801 6779,22804 6836,22824 6892,22843 6948,22862 7004,22881 7072,22905
-Alter Bernauer Heerweg: Kopfsteinpflaster	Q2 7072,22905 7109,22919 7171,22942 7493,23064 7609,23108 7839,23195 7852,23200 7930,23227 8143,23305
+Alter Bernauer Heerweg: Kopfsteinpflaster	Q2 7072,22905 7109,22919 7171,22942 7493,23064 7609,23108 7839,23195 7852,23200 7930,23227 7998,23252 8143,23305
 #: by: ^^^
 # 
 #: by: Wolfhard Schleese:
@@ -30247,6 +30247,11 @@ Am Weingarten: Beton	Q1+ 13867,14507 13837,14563
 (KGA Freies Land, G-Weg): Gehwegplatten	Q1 12908,17807 12764,17725 12630,17636
 #: by ^^^
 # 
+#: by: kartaview vvv
+(Siedlung Talheim): Verbundsteinpflaster	Q1+ 7998,23252 7984,23284
+(Siedlung Talheim): Asphalt	Q0 7984,23284 7872,23538
+#: by ^^^
+# 
 #: by: mapillary, osm: vvv
 (Rosenthaler Weg - Aubertstr.): Asphalt	Q0 11747,22496 11278,22848 11220,22886
 (Blankenfelder Str. - Goetheweg): Asphalt	Q0 10968,22546 11220,22886 11228,22914 11219,22932 11162,22939
@@ -30616,4 +30621,6 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 7309,17159
 Einmündungsbereich asphaltiert	Q0 10311,14391
 Kreuzungsbereich asphaltiert	Q0 18548,8942
 Kreuzungsbereich asphaltiert	Q0 18319,9218
+#: by: kartaview
+Einmündungsbereich mit Kopfsteinpflaster	Q2 7998,23252
 #: ignore ^^^
