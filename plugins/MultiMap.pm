@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.72;
+$VERSION = 1.73;
 
 use vars qw(%images);
 
@@ -900,7 +900,7 @@ sub showmap_url_mapcompare {
     }
     my $common_qs;
     if ($profile && $profile eq '__distinct_map_data') {
-	$common_qs = 'num=10&mt0=bvg&mt1=bbbike-bbbike&mt2=mapnik&mt3=esri&mt4=falk-base&mt5=google-map&mt6=nokia-map&mt7=lgb-webatlas&mt8=pharus&mt9=tomtom-basic-main';
+	$common_qs = 'num=10&mt0=bvg-stadtplan&mt1=bbbike-bbbike&mt2=mapnik&mt3=esri&mt4=falk-base&mt5=google-map&mt6=nokia-map&mt7=lgb-webatlas&mt8=pharus&mt9=tomtom-basic-main';
     } elsif ($maps) {
 	$common_qs = "num=" . scalar(@$maps);
 	for my $map_i (0 .. $#$maps) {
@@ -995,7 +995,7 @@ sub showmap_url_bvgstadtplan {
 	$main::devel_host = $main::devel_host if 0; # cease -w
         sprintf "http://localhost/bbbike/cgi/bbbikeleaflet.cgi?mlat=%s&mlon=%s&zoom=%d&bm=BVG", $py, $px, $scale;
     } else {
-	sprintf "http://mc.bbbike.org/mc/?lon=%s&lat=%s&zoom=%d&num=1&mt0=bvg", $px, $py, $scale;
+	sprintf "http://mc.bbbike.org/mc/?lon=%s&lat=%s&zoom=%d&num=1&mt0=bvg-stadtplan", $px, $py, $scale;
     }
 }
 
