@@ -402,23 +402,54 @@ function doLeaflet() {
     }
 
     map.on('moveend', function() {
-	var func = URLchanged ? history.replaceState : history.pushState;
-	if (func) {
-	    var center = map.getCenter();
-	    q.set('lat', center.lat.toString());
-	    q.set('lon', center.lng.toString());
-	    func.call(history, null, null, q.toString('&'));
-	    q = new HTTP.Query;
-	    URLchanged = true;
-	}
+	var center = map.getCenter();
+	q.set('lat', center.lat.toString());
+	q.set('lon', center.lng.toString());
+	adjustHistory();
     });
     map.on('zoomend', function() {
-	var func = URLchanged ? history.replaceState : history.pushState;
-	if (func) {
-	    q.set('zoom', map.getZoom().toString());
-	    func.call(history, null, null, q.toString('&'));
-	    q = new HTTP.Query;
-	    URLchanged = true;
+	q.set('zoom', map.getZoom().toString());
+	adjustHistory();
+    });
+    map.on('baselayerchange', function(e) {
+	for (var i=0; i<baseMapDefs.length; i++) {
+	    if (baseMapDefs[i].layer == e.layer) {
+		q.set('bm', baseMapDefs[i].abbrev);
+		adjustHistory();
+		return;
+	    }
+	}
+    });
+    map.on('overlayadd', function(e) {
+	for (var i=0; i<overlayDefs.length; i++) {
+	    if (overlayDefs[i].layer == e.layer) {
+		var abbrev = overlayDefs[i].abbrev;
+		var val = q.get('l');
+		if (val != null) {
+		    val += ',' + abbrev;
+		} else {
+		    val = abbrev;
+		}
+		q.set('l', val);
+		adjustHistory();
+		return;
+	    }
+	}
+    });
+    map.on('overlayremove', function(e) {
+	for (var i=0; i<overlayDefs.length; i++) {
+	    if (overlayDefs[i].layer == e.layer) {
+		var abbrev = overlayDefs[i].abbrev;
+		var oldval = q.get('l').split(',');
+		var newval = oldval.filter(function(e) { return e != abbrev }).join(',');
+		if (newval == '') {
+		    q.unset('l');
+		} else {
+		    q.set('l', newval);
+		}
+		adjustHistory();
+		return;
+	    }
 	}
     });
 
@@ -1065,6 +1096,15 @@ function getLineStringCenter(latLngArray) {
        }
     }
     // should never be reached
+}
+
+function adjustHistory() {
+    var func = URLchanged ? history.replaceState : history.pushState;
+    if (func) {
+	func.call(history, null, null, q.toString('&'));
+	q = new HTTP.Query;
+	URLchanged = true;
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////
