@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.73;
+$VERSION = 1.74;
 
 use vars qw(%images);
 
@@ -121,7 +121,7 @@ sub register {
      	$main::info_plugins{__PACKAGE__ . "_BvgStadtplan"} =
      	    { name => "BVG-Stadtplan",
      	      callback => sub { showmap_bvgstadtplan(@_) },
-     	      callback_3_std => sub { showmap_url_bvgstadtplan(@_) },
+     	      callback_3 => sub { show_bvgstadtplan_menu(@_) },
      	      ($images{BvgStadtplan} ? (icon => $images{BvgStadtplan}) : ()),
      	    };
 	$main::info_plugins{__PACKAGE__ . "_SBahnBerlin"} =
@@ -990,12 +990,12 @@ sub showmap_url_bvgstadtplan {
     my $px = $args{px};
     my $py = $args{py};
     my $scale = int(17 - log(($args{mapscale_scale})/3000)/log(2) + 0.5);
+    my $variant = $args{variant} || 'bvg-stadtplan';
 
-    if ($main::devel_host) { # temporary
-	$main::devel_host = $main::devel_host if 0; # cease -w
+    if ($variant eq 'bbbikeleaflet') {
         sprintf "http://localhost/bbbike/cgi/bbbikeleaflet.cgi?mlat=%s&mlon=%s&zoom=%d&bm=BVG", $py, $px, $scale;
     } else {
-	sprintf "http://mc.bbbike.org/mc/?lon=%s&lat=%s&zoom=%d&num=1&mt0=bvg-stadtplan", $px, $py, $scale;
+	sprintf "http://mc.bbbike.org/mc/?lon=%s&lat=%s&zoom=%d&num=1&mt0=%s", $px, $py, $scale, $variant;
     }
 }
 
@@ -1003,6 +1003,33 @@ sub showmap_bvgstadtplan {
     my(%args) = @_;
     my $url = showmap_url_bvgstadtplan(%args);
     start_browser($url);
+}
+
+sub show_bvgstadtplan_menu {
+    my(%args) = @_;
+    my $lang = $Msg::lang || 'de';
+    my $w = $args{widget};
+    my $menu_name = __PACKAGE__ . '_BvgStadtplan_Menu';
+    if (Tk::Exists($w->{$menu_name})) {
+	$w->{$menu_name}->destroy;
+    }
+    my $link_menu = $w->Menu(-title => 'BVG',
+			     -tearoff => 0);
+    $link_menu->command
+	(-label => 'BVG (details)',
+	 -command => sub { showmap_bvgstadtplan(%args, variant => 'bvg-stadtplan-10') },
+	);
+    if ($main::devel_host) {
+	$main::devel_host = $main::devel_host if 0; # cease -w
+	$link_menu->command
+	    (-label => "BVG on bbbikeleaflet",
+	     -command => sub { showmap_bvgstadtplan(%args, variant => 'bbbikeleaflet') },
+	    );
+    }
+    $w->{$menu_name} = $link_menu;
+    my $e = $w->XEvent;
+    $link_menu->Post($e->X, $e->Y);
+    Tk->break;
 }
 
 ######################################################################
