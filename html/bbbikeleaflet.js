@@ -25,6 +25,8 @@ if (q.get("lang") == "de") {
     lang = "en";
 }
 
+var URLchanged = false;
+
 var initLayerAbbrevs = q.get('l');
 if (initLayerAbbrevs) {
     initLayerAbbrevs = initLayerAbbrevs.split(",");
@@ -398,6 +400,27 @@ function doLeaflet() {
 		}
 	    });
     }
+
+    map.on('moveend', function() {
+	var func = URLchanged ? history.replaceState : history.pushState;
+	if (func) {
+	    var center = map.getCenter();
+	    q.set('lat', center.lat.toString());
+	    q.set('lon', center.lng.toString());
+	    func.call(history, null, null, q.toString('&'));
+	    q = new HTTP.Query;
+	    URLchanged = true;
+	}
+    });
+    map.on('zoomend', function() {
+	var func = URLchanged ? history.replaceState : history.pushState;
+	if (func) {
+	    q.set('zoom', map.getZoom().toString());
+	    func.call(history, null, null, q.toString('&'));
+	    q = new HTTP.Query;
+	    URLchanged = true;
+	}
+    });
 
     var setViewLatLng;
     var setViewZoom;
