@@ -1381,8 +1381,8 @@ Radweg durch den Gemeindepark Lankwitz: Qualität des neuen Weges? Beleuchtet? Wi
 Alt-Mariendorf: Verbesserung (hmmm, hier ist schon eine Busspur; wird sie zur Radspur?)	?::projected; 8964,3539 9128,3580
 # 
 #: source_id: 2147344406 (bis Mitte Juli 2019) (mittlerweile inaktiv; ohne Auswirkungen)
-#: source_id: 2147346801 (bis 31.3.2021) (wurde noch nicht entfernt)
-#: last_checked: 2021-10-03
+#: source_id: 2147346801 (bis 31.3.2021) (wurde noch nicht entfernt) (inaktiv)
+#: last_checked: 2021-10-06 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-03-31
 Reißeckstr./Britzer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 9751,3769 9953,3806 10048,3806
@@ -4043,7 +4043,7 @@ Hindenburgdamm: Busspur zwischen Klingsorstr. und Händelplatz Richtung Norden ge
 Potsdamer Str.: Busspur vermutlich nur in Richtung Osten, oder doch in beiden Richtungen?	?::projected; 161,3062 255,3085 452,3133 534,3149 669,3119
 # REMOVED (zurückgestellt, Konflikt mit Radverkehrsanlage) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Kuhligshofstr. -> Albrechtstr.) --- #: osm_watch: way id="30157290" version="22" --- #: XXX hier vermutlich erst nach Abschluss der Bauarbeiten am Steglitzer Kreisel --- #: last_checked: 2020-07-11 --- #: check_frequency: 180d --- Schloßstr.: wird eine Busspur Richtung Norden eingerichtet?	?::projected; 4741,5309 4745,5344 4767,5389 4832,5522 4861,5581
 #: XXX im Artikel fälschlicherweise als "Unter den Eichen" bezeichnet
-#: osm_watch: way id="183331569" version="14"
+#: osm_watch: way id="183331569" version="15"
 #: last_checked: 2021-11-06
 Schloßstr.: Busspur vermutlich nur in Richtung Steglitz, oder doch in beiden Richtungen? Wird hier die Radwegbenutzungspflicht aufgehoben?	?::projected; 4432,5160 4512,5199 4593,5235 4677,5274 4741,5309
 # REMOVED (zurückgestellt) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Rendtorffstr. -> Kleinmachnower Weg) --- #: osm_watch: way id="318434643" version="6" --- #: last_checked: 2020-07-11 --- Teltower Damm: Busspur vermutlich nur in Richtung Süden, oder doch in beiden Richtungen?	?::projected; 1304,537 1322,352 1345,184
@@ -6188,6 +6188,7 @@ Am Alten Lokschuppen: bauzeitliche Sperrung geplant	? 15708,11193 15752,11115 15
 #: by: https://www.berliner-woche.de/reinickendorf/c-bauen/umbau-des-parks-am-schaeferplatz-startet-ende-mai_a310338
 #: by: https://www.berliner-woche.de/reinickendorf/c-bauen/sorge-um-den-schaeferseepark_a314889
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1171119.php
+#: by: https://berliner-abendblatt.de/2022/01/30/neue-baeume-fuer-den-schaeferseepark/
 #: XXX Fertigstellung 2021 vvv
 #: last_checked: 2022-01-22 vvv
 #: check_frequency: 90d vvv
@@ -6312,8 +6313,8 @@ Hohenzollernring: Radwege werden neu gemacht	?::projected -3721,14495 -3835,1466
 Buckower Chaussee: Straße wird gesperrt, Neubau einer Brücke	?::projected 9069,506 9158,551 9178,556 9250,576
 # 
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/ausbau-der-kreuzung-blumberger-dammmehrower-allee-verzoegert-sich_a315639 (Umbau der Kreuzung ab 2021, Bauende 2021 ungewiss)
-#: osm_watch: way id="441659160" version="12"
-#: osm_watch: way id="441659161" version="12"
+#: osm_watch: way id="441659160" version="13"
+#: osm_watch: way id="441659161" version="13"
 #: last_checked: 2022-01-23 (StefanHRT)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-12-31
@@ -8030,7 +8031,7 @@ Arnimstr.: hier soll eine Grünfläche entstehen	?::projected 18472,16844 18267,17
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/b-plan_xv-11_entwurf.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6756 (Vorlage)
 #: XXX Planstraßen A bis C, außerdem ein Uferweg mit Anschluss an die Spreestr., außerdem scheint die Grünanlage etwas vergrößert zu werden
-#: osm_watch: way id="44606576" version="21"
+#: osm_watch: way id="44606576" version="22"
 #: last_checked: 2021-10-30
 #: check_frequency: 1080d
 Bebauungsplan XV-11 (Hasselwerderstr....): Planstraßen sowie ein Uferweg werden entstehen	?::projected 17968,5904 18213,5783

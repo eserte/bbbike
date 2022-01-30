@@ -345,19 +345,12 @@ Verbundsteinpflaster	RW1; 5266,8903 5195,8880 5182,8880 5172,8880 5022,8879 4918
 	RW0;RW1 6286,8799 6367,8804
 	RW1;RW1 4342,9301 4246,9406
 	RW1;RW1 3427,9771 3471,9754 3583,9690 3698,9624 3813,9566 3905,9523 4011,9474 4193,9404 4246,9406
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2770,10024 2702,10006 2694,10002 2590,9949 2532,9911
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
-#: note: vorhandener Radweg ist abgesperrt
-#: osm_watch: way id="110680554" version="16"
-#: add_fragezeichen: bleibt die Absperrung des Radwegs permanent?
-#: XXX Hat sich die Geltungszeit der Busspur geändert (gilt immer)?
-#: last_checked: 2021-10-20
-#: check_frequency: 120d
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW5; 2532,9911 2590,9949 2694,10002 2702,10006
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2702,10006 2770,10024
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1;RW1 2532,9911 2473,9861 2445,9838
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2445,9838 2369,9779
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2415,9765 2445,9838
+# REMOVED (laut osm ist der Radweg wieder nutzbar) --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf --- #: note: vorhandener Radweg ist abgesperrt --- #: osm_watch: way id="110680554" version="17" --- #: add_fragezeichen: bleibt die Absperrung des Radwegs permanent? --- #: XXX Hat sich die Geltungszeit der Busspur geändert (gilt immer)? --- #: last_checked: 2021-10-20 --- #: check_frequency: 120d
+#: note: allerdings ist vormittags das Be- und Entladen möglich
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 2415,9765 2445,9838 2473,9861 2532,9911 2590,9949 2694,10002 2702,10006 2770,10024
+#: note: allerdings ist vormittags das Be- und Entladen möglich
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 2770,10024 2702,10006 2694,10002 2590,9949 2532,9911 2473,9861
+	RW1; 2473,9861 2445,9838 2369,9779
 	RW2; 2369,9779 2360,9754 2361,9664
 	RW2; 2361,9664 2394,9714 2415,9765
 	RW2; 2415,9765 2369,9779 2300,9883 2268,9976 2218,10067

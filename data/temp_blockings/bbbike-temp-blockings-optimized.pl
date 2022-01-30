@@ -3800,10 +3800,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.12.2022)
+#: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
 	q4::inwork 3011,3303 2781,3122 2698,3068 2655,3025 2632,2969 2625,2850
-	q4::inwork; 3507,3654 3372,3557 3228,3455 3184,3427
+	q3::inwork 3507,3654 3372,3557
+# REMOVED ---	q4::inwork; 3507,3654 3372,3557 3228,3455 3184,3427
 #: also_indoor ^^^
 #: XXX ^^^
 ',

@@ -4731,7 +4731,7 @@ Rübländerstr.	N 14321,23378 14382,23574
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3988
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3988&date=20151213
 #: XXX Planstraße D --- bleibt dieser Weg erhalten?
-#: osm_watch: way id="224122378" version="12"
+#: osm_watch: way id="224122378" version="13"
 #: last_checked: 2021-02-25 (mapillary)
 #: check_frequency: 360d
 (S-Bahndamm - Hobrechtsfelder Chaussee)	NN 15469,24813 15339,24861 14434,25388
@@ -15086,11 +15086,7 @@ Naglerstr.	N 13575,10963 13496,10763
 Müncheberger Str.	N 12450,11980 12617,11888
 Erich-Steinfurth-Str.	NN 12645,11673 12608,11692
 Erich-Steinfurth-Str.	N 12608,11692 12453,11790 12378,11806
-#: next_check_id: OSTBAHNHOF-2021
-#: XXX evtl. nur provisorische Zufahrt
-#: last_checked: 2022-01-29
-#: check_frequency: 120d
-#: next_check: 2025-01-01
+#: osm.highway: service
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.)	N 12660,11705 12634,11705 12608,11692
 Rütlistr. (Neukölln)	NN 12480,9037 12526,9125 12554,9178 12592,9249 12621,9297
 Schleusenufer	N 13487,10227 13628,10396
