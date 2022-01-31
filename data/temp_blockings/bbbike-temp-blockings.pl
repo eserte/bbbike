@@ -33026,7 +33026,7 @@ EOF
 #: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/bruno-taut-strasse-bekommt-unter-anderem-eine-neue-asphaltdecke_a313839 (bis Juli 2022)
 #: by: https://abendblatt-berlin.de/2021/06/23/mit-den-ferien-kommen-die-baustellen/
 #: also_indoor: traffic (G,B)
-#: source_id: viz2021:13.569262,52.411283,12.07.2021,09:00 (hier: bis 31.1.2022)
+#: source_id: viz2021:13.569262,52.411283,12.07.2021,09:00 (hier: bis 31.1.2022) (inaktiv)
 	q4::inwork; 21858,811 21902,877 21977,988 22034,1006 22092,999
 EOF
      },
