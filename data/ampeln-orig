@@ -25,11 +25,11 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
 # REMOVED --- #: next_check_id: LUECK-2021 --- #: source_id: viz2021:13.496206,52.500247,12.11.2021,06:00 (bis 10.12.2021) --- #: by: https://www.bahninfo-forum.de/read.php?9,716845,718464#msg-718464 --- #: note: Gegenverkehrsregelung beginnt östlich der Einmündung Wönnichstr. und endet östlich der Kreuzung Rummelsburger Str. --- #: last_checked: 2021-11-21 --- #: next_check: 2021-12-10 --- #: valid: -20211210 --- Lückstr.: Gegenverkehrsregelung	X::inwork 16601,10650
 # 
-#: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00 (bis 02.02.2022)
+#: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00 (bis 02.02.2022) (mittlerweile bis 7.3.2022)
 #: note laut rbb bis 9.2.2022
 #: last_checked: 2022-01-01 (mapillary) vvv
-#: next_check: 2022-02-09 vvv
-#: valid: -20220209 vvv
+#: next_check: 2022-03-07 vvv
+#: valid: -20220307 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: valid ^^^
@@ -71,7 +71,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: XXX Ampel Am Dachsbau/Schulzendorfer Str. vermutlich nur eine temporäre Lösung wegen der Bauarbeiten in der Hennigsdorfer Str., später wird hier wohl ein Zebrastreifen entstehen
 #: osm_watch: node id="5469708920" version="1"
 #: last_checked: 2021-03-18 (parlamentarische Anfrage)
-#: next_check: 2022-05-31
+#: next_check: 2022-02-03
 	X::inwork -1538,22800
 #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/anregungen-der-eltern-endlich-verwirklicht_a207979
 #: XXX später wird hier ein Kreisverkehr entstehen
@@ -144,14 +144,15 @@ Nöldnerstr.: Gegenverkehrsregelung	X::inwork 15433,10765
 #: add_fragezeichen: Gibt es noch immer eine Gegenverkehrsregelung?
 #: source_id: 2147347174 (bis 19.7.2021)
 #: source_id: viz2021:13.440334,52.59161,06.05.2021,09:00 (bis 30.9.2021, Gesamtmaßnahme bis Anfang 2022) (mittlerweile inaktiv)
+#: source_id: viz2021:13.44047,52.591526,07.02.2022,04:30 (bis 28.2.2022)
 #: last_checked: 2022-01-01 (mapillary) vvv
 #: check_frequency: 60d vvv
-# REMOVED --- #: next_check: 2021-07-16 vvv
-#: valid: 20210222- vvv
+#: next_check: 2021-02-28 vvv
+#: valid: 20210222-20220228 vvv
 Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12672,20720
 Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12723,20691
 #: valid ^^^
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -1421,7 +1422,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 #: osm_watch: node id="7241153386" version="3"
-#: last_checked: 2021-12-13
+#: last_checked: 2022-02-01
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
 	F::inwork 12318,8645

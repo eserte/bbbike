@@ -824,7 +824,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2257,7 +2257,8 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.222469,52.619767,05.11.2018,10:34 (bis 15.11.2022) (mittlerweile bis 31.5.2022)
+         'data' => '#: source_id: viz2021:13.222469,52.619767,05.11.2018,10:34 (bis 15.11.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 3.2.2022)
+#: source_id: viz2021:13.217617,52.61126,03.02.2022,10:00 (Umbau der Kreuzung Henningsdorfer Str./Alt-Heiligensee/Schulzendorfer Str./..., möglicherweise sind Radfahrer nicht besonders betroffen, bis 31.5.2022)
 #: next_check_id: HENNIGSDORFER-2019
 	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259
 # REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2306,23259 -2248,23409 -2185,23567
@@ -2267,9 +2268,9 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'from' => 1542148916,
          'id' => 3046,
          'source_id' => '2147343419',
-         'text' => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, voraussichtlich bis Ende Mai 2022',
+         'text' => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, voraussichtlich bis 3.2.2022',
          'type' => 'handicap',
-         'until' => 1654009200
+         'until' => 1643878800
        },
        undef,
        undef,
@@ -3025,7 +3026,19 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147347231
+#: source_id: viz2021:13.440907,52.591391,03.07.2021,00:30
+#: source_id: viz2021:13.440554,52.591497,04.02.2022,01:00
+	2::inwork 12672,20720 12723,20691
+',
+         'from' => 1643846400,
+         'id' => 3331,
+         'source_id' => '2147346882',
+         'text' => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, Fußgänger und Radfahrer sind auch betroffen, vom 4.2.2022 01:00 bis 7.2.2022 04:30',
+         'type' => 'gesperrt',
+         'until' => 1644204600
+       },
        {
          'data' => '#: by: https://tierparkcenter.de/wochenmarkt/ (Öffnungszeiten)
 #: tempex: (mo,th,fr) T08-T17
@@ -3479,7 +3492,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.gmg-ing.de/referenzen/ernst-heilmann-steg-berlin/ ("Torsionsschwingungen")
 #: by: https://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10997_Berlin_Instandsetzung_Stahlbau_1924073.html (Ausschreibung)
 # REMOVED (eins reicht) --- #: osm_watch: note 2867467 2
-#: osm_watch: way id="16311543" version="18"
+#: osm_watch: way id="16311543" version="19"
 #: also_indoor: search Ernst-Heilmann-Steg
 #: last_checked: 2022-01-23
 #: check_frequency: 120d
@@ -3866,6 +3879,22 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Dreesch - Grünow: Bauarbeiten, Sperrung bis zum 31.03.2022',
          'type' => 'gesperrt',
          'until' => 1648764000
+       },
+       {
+         'data' => '#: next_check_id: SPREEUFER-2022
+#: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (diese oder alle Bauabschnitte)? vvv
+#: add_fragezeichen: Haben die Bauarbeiten bereits begonnen? Sind die Uferwege bereits gesperrt? vvv
+	2::inwork 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
+	2::inwork 7031,12320 6694,12627
+#: add_fragezeichen ^^^
+#: XXX ^^^
+',
+         'from' => 1643583600,
+         'id' => 3507,
+         'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1172556.php',
+         'text' => 'Spreeuferweg: Bauarbeiten, zwischen Flotowstr. und Lessingbrücke sowie am Bellevueufer kann der Uferweg gesperrt sein, ab Anfang Februar 2022',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

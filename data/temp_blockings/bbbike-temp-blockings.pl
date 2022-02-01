@@ -28749,12 +28749,13 @@ EOF
 EOF
      },
      { from  => 1542148916, # 2018-11-13 23:41
-       until => $isodate2epoch->("2022-05-31 17:00:00"), # $isodate2epoch->("2019-07-09 18:00:00"), # 1561931999, # 2019-06-30 23:59
-       text  => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, voraussichtlich bis Ende Mai 2022',
+       until => $isodate2epoch->("2022-02-03 10:00:00"), # $isodate2epoch->("2019-07-09 18:00:00"), # 1561931999, # 2019-06-30 23:59
+       text  => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, voraussichtlich bis 3.2.2022',
        type  => 'handicap',
        source_id => '2147343419', # Gesamtmaßnahme bis Ende 2021
        data  => <<EOF,
-#: source_id: viz2021:13.222469,52.619767,05.11.2018,10:34 (bis 15.11.2022) (mittlerweile bis 31.5.2022)
+#: source_id: viz2021:13.222469,52.619767,05.11.2018,10:34 (bis 15.11.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 3.2.2022)
+#: source_id: viz2021:13.217617,52.61126,03.02.2022,10:00 (Umbau der Kreuzung Henningsdorfer Str./Alt-Heiligensee/Schulzendorfer Str./..., möglicherweise sind Radfahrer nicht besonders betroffen, bis 31.5.2022)
 #: next_check_id: HENNIGSDORFER-2019
 	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259
 # REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2306,23259 -2248,23409 -2185,23567
@@ -32303,14 +32304,15 @@ EOF
 	2::inwork 35479,7051 35482,7099
 EOF
      },
-     { from  => $isodate2epoch->("2021-07-02 00:00:00"), # $isodate2epoch->("2021-05-28 00:00:00"), # 1613631600, # 2021-02-18 08:00
-       until => $isodate2epoch->("2021-07-05 03:00:00"), # 1613977200, # 2021-02-22 08:00
-       text  => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, Fußgänger und Radfahrer sind auch betroffen, vom 3.7.2021 bis 5.7.2021 3 Uhr',
+     { from  => $isodate2epoch->("2022-02-03 01:00:00"), # $isodate2epoch->("2021-07-02 00:00:00"), # $isodate2epoch->("2021-05-28 00:00:00"), # 1613631600, # 2021-02-18 08:00
+       until => $isodate2epoch->("2022-02-07 04:30:00"), # $isodate2epoch->("2021-07-05 03:00:00"), # 1613977200, # 2021-02-22 08:00
+       text  => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, Fußgänger und Radfahrer sind auch betroffen, vom 4.2.2022 01:00 bis 7.2.2022 04:30',
        type  => 'gesperrt',
        source_id => '2147346882',
        data  => <<EOF,
 #: source_id: 2147347231
 #: source_id: viz2021:13.440907,52.591391,03.07.2021,00:30
+#: source_id: viz2021:13.440554,52.591497,04.02.2022,01:00
 	2::inwork 12672,20720 12723,20691
 EOF
      },
@@ -33648,7 +33650,7 @@ EOF
 #: by: https://www.gmg-ing.de/referenzen/ernst-heilmann-steg-berlin/ ("Torsionsschwingungen")
 #: by: https://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10997_Berlin_Instandsetzung_Stahlbau_1924073.html (Ausschreibung)
 # REMOVED (eins reicht) --- #: osm_watch: note 2867467 2
-#: osm_watch: way id="16311543" version="18"
+#: osm_watch: way id="16311543" version="19"
 #: also_indoor: search Ernst-Heilmann-Steg
 #: last_checked: 2022-01-23
 #: check_frequency: 120d
@@ -34397,6 +34399,21 @@ EOF
        source_id => '217300506',
        data  => <<EOF,
 	2::inwork 45543,101043 45648,100789 45806,100487 45847,100277 45868,100193
+EOF
+     },
+     { from  => 1643583600, # 2022-01-31 00:00
+       until => undef, # XXX
+       text  => 'Spreeuferweg: Bauarbeiten, zwischen Flotowstr. und Lessingbrücke sowie am Bellevueufer kann der Uferweg gesperrt sein, ab Anfang Februar 2022',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1172556.php',
+       data  => <<EOF,
+#: next_check_id: SPREEUFER-2022
+#: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (diese oder alle Bauabschnitte)? vvv
+#: add_fragezeichen: Haben die Bauarbeiten bereits begonnen? Sind die Uferwege bereits gesperrt? vvv
+	2::inwork 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
+	2::inwork 7031,12320 6694,12627
+#: add_fragezeichen ^^^
+#: XXX ^^^
 EOF
      },
     );

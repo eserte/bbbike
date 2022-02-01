@@ -622,11 +622,7 @@ Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwor
 # 
 ### Neukölln ###
 # 
-#: add_fragezeichen: Dauern die Bauarbeiten an?
-#: also_indoor: traffic (G,B)
-#: last_checked: 2022-01-12 (mapillary)
-Maybachufer: Bauarbeiten zwischen Friedelstr. und Liberdastr., teilweise Radfahrerführung über den Bürgersteig	q2::inwork 12085,9778 12250,9691
-# 
+# REMOVED (Sperrung noch da, aber die Bürgersteigüberfahrt ist weggefallen) --- #: add_fragezeichen: Dauern die Bauarbeiten an? --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-02-01 --- Maybachufer: Bauarbeiten zwischen Friedelstr. und Liberdastr., teilweise Radfahrerführung über den Bürgersteig	q2::inwork 12085,9778 12250,9691
 # REMOVED --- #: next_check_id: BRAUNSCHWEIGER-2020 --- #: last_checked: 2020-10-24 vvv
 # REMOVED (hier kommt man mittlerweile gut durch) --- Braunschweiger Str.: Fahrbahn wird neu gemacht, Ausweichen auf Gehweg	q4::inwork 13702,7418 13781,7524 13854,7620
 # REMOVED --- Braunschweiger Str.: Einmündung Sonnenallee wird neu gemacht, Ausweichen auf Gehweg	q3::inwork 13854,7620 13919,7707 --- Brusendorfer Str.: Kreuzung Braunschweiger Str. wird neu gemacht, Ausweichen auf Gehweg, Umwege	q3::inwork 13742,7708 13854,7620 13953,7548 --- #: last_checked ^^^
@@ -674,7 +670,7 @@ Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/boddinstrasse-wird-gesperrt_a314931
 #: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022)
-#: last_checked: 2022-01-16
+#: last_checked: 2022-02-01
 #: check_frequency: 120d
 #: next_check: 2022-07-31
 Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12368,8356 12582,8408
