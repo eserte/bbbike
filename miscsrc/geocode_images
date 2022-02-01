@@ -46,6 +46,7 @@ my $date_index_file;
 my $date_db;
 my $do_update;
 my $do_interpolate;
+my $allow_overwrite_gpspos;
 my $v;
 my $debug;
 my $relative_paths;
@@ -80,7 +81,7 @@ usage: $0
 	  [-recreatethumbnails] [-rel|-relativepaths] [-o file]
 	  [-addtracksdir dir ...]
 	  [-person ...]
-	  [-interpolate]
+	  [-interpolate] [-allow-overwrite-gpspos]
           [-v] [-debug] image ...
 EOF
 }
@@ -100,6 +101,7 @@ GetOptions("gpsdatadir=s" => \$gps_data_dir,
 	   "rel|relativepaths!" => \$relative_paths,
 	   "update" => \$do_update,
 	   "interpolate!" => \$do_interpolate,
+	   "allow-overwrite-gpspos!" => \$allow_overwrite_gpspos,
 	   "person=s" => \$for_person,
 	   "o=s" => \$out_file,
 	   "v!" => \$v,
@@ -190,6 +192,7 @@ if ($date_index_file) {
 sub get_image_location {
     my($file, %opts) = @_;
     my $do_interpolate = delete $opts{interpolate};
+    my $allow_overwrite_gpspos = delete $opts{allow_overwrite_gpspos};
     die "Unhandled options: " . join(" ", %opts) if %opts;
 
     my($y,$m,$d,$H,$M,$S);
@@ -210,6 +213,8 @@ sub get_image_location {
 	    my($lat_deg, $lat_min, $lat_sec, $lat_ref, $lon_deg, $lon_min, $lon_sec, $lon_ref);
 	    my $polar_qr = qr{(\d+)\s+deg\s+(\d+)\'\s+([\d\.]+)\"};
 	FIND_GPS_POS: {
+		last FIND_GPS_POS if $allow_overwrite_gpspos;
+
 		if ($exif->{GPSPosition}) {
 		    if (($lat_deg, $lat_min, $lat_sec, $lat_ref, $lon_deg, $lon_min, $lon_sec, $lon_ref) =
 			$exif->{GPSPosition} =~ m{
@@ -951,7 +956,7 @@ sub manipulate_copy {
     require File::Copy;
 
     for my $file (@images) {
-	my $ret = get_image_location($file, interpolate => $do_interpolate);
+	my $ret = get_image_location($file, interpolate => $do_interpolate, allow_overwrite_gpspos => $allow_overwrite_gpspos);
 	if (defined $ret) {
 	    my($lat, $lon, $local_date, $gps_altitude) = @{$ret}{qw(Latitude Longitude Date Altitude)};
 	    my(@lat_dms) = Karte::Polar::ddd2dms($lat);
