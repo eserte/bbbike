@@ -28756,6 +28756,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.222469,52.619767,05.11.2018,10:34 (bis 15.11.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 3.2.2022)
 #: source_id: viz2021:13.217617,52.61126,03.02.2022,10:00 (Umbau der Kreuzung Henningsdorfer Str./Alt-Heiligensee/Schulzendorfer Str./..., möglicherweise sind Radfahrer nicht besonders betroffen, bis 31.5.2022)
+#: by: https://viz.berlin.de/2022/02/verkehrsvorschau-03022022/
 #: next_check_id: HENNIGSDORFER-2019
 	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259
 # REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2306,23259 -2248,23409 -2185,23567
@@ -31077,14 +31078,14 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="5"
-#: last_checked: 2022-01-29 vvv
+#: last_checked: 2022-02-02 vvv
 #: check_frequency: 7d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
 # REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
 # REMOVED (beendet) ---	q3::inwork 14272,11775 14306,11889
-	q2::inwork 14306,11889 14354,12012 14427,12197
+	q3::inwork 14306,11889 14354,12012 14427,12197
 	q3::inwork 14354,12012 14468,11992
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -34414,6 +34415,22 @@ EOF
 	2::inwork 7031,12320 6694,12627
 #: add_fragezeichen ^^^
 #: XXX ^^^
+EOF
+     },
+     { from  => 1643670000, # 2022-02-01 00:00
+       until => 1645052400, # 2022-02-17 00:00
+       text  => 'Konrad-Adenauer-Str., Paul-Löbe-Str.: Sperrung wegen einer Veranstaltung, evtl. sind auch Radfahrer betroffen, vom 2.2.2022 bis 16.2.2022',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: source_id: viz2021:13.37203,52.51939,02.02.2022,06:00
+#: source_id: viz2021:13.37353,52.52075,02.02.2022,06:00-1
+#: source_id: viz2021:13.37353,52.52075,02.02.2022,06:00
+#: also_indoor: traffic (H,B) vvv
+#: add_fragezeichen: Sind Radfahrer von der Sperrung betroffen? vvv
+	2::temp 8369,12609 8306,12609 8309,12758
+	2::temp 8306,12609 8207,12606
+#: add_fragezeichen ^^^
+#: also_indoor ^^^
 EOF
      },
     );

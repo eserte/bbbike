@@ -714,8 +714,11 @@ asphaltiert	RW2; 15117,12106 14994,12121 14926,12129 14854,12137 14709,12156
 asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 #: note: Frankfurter Allee Richtung Osten bis Möllendorffstr.
 	RW1; 13785,12292 13885,12279 14020,12261 14208,12235
-#: note: alter Bürgersteigradweg existiert noch, ist aber abgesperrt
-teilweise mit Leitboys geschützt	RW4; 14208,12235 14280,12223 14381,12205 14427,12197 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129
+#: note: alter Bürgersteigradweg existiert noch, ist aber abgesperrt vvv
+teilweise mit Leitboys geschützt	RW4; 14208,12235 14280,12223 14381,12205 14427,12197 14488,12188
+	RW2; 14488,12188 14523,12183
+teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129
+#: note ^^^
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
@@ -960,7 +963,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,12.01.2022,11:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-02-01
+#: last_checked: 2022-02-02
 #: check_frequency: 60d
 #: next_check: 2022-06-30
 # REMOVED --- provisorischer gemeinsamer Geh- und Radweg	RW2;
