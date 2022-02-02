@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018,2019,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019,2021,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,6 +24,7 @@ use File::Temp qw(tempfile);
 use Getopt::Long;
 use Cwd qw(realpath cwd);
 use POSIX qw(strftime);
+use Time::Local qw(timelocal);
 
 my $perl = $^X;
 my $valid_date = 'today';
@@ -54,6 +55,17 @@ sub _need_rebuild ($@) {
 	}
     }
     return 0;
+}
+
+sub _need_daily_rebuild ($) {
+    my($dest) = @_;
+    my @s = stat($dest);
+    return 1 if !@s;
+    my $beginning_of_day_epoch = do {
+	my @l = localtime;
+	timelocal 0,0,0,$l[3],$l[4],$l[5]+1900;
+    };
+    return $s[9] < $beginning_of_day_epoch;
 }
 
 sub _make_writable ($@) {
@@ -224,7 +236,7 @@ sub action_fragezeichen_nextcheck_home_home_org {
     my @srcs = (@orig_files, "$persistenttmpdir/bbbike-temp-blockings-optimized.bbd");
     my $gps_uploads_dir = "$ENV{HOME}/.bbbike/gps_uploads";
     my @gps_uploads_files = bsd_glob("$gps_uploads_dir/*.bbr");
-    if (_need_rebuild $dest, @srcs, @gps_uploads_files) {
+    if (_need_daily_rebuild $dest || _need_rebuild $dest, @srcs, @gps_uploads_files) {
 	require Safe;
 	my $config = Safe->new->rdo("$ENV{HOME}/.bbbike/config");
 	my $centerc = $config->{centerc};
