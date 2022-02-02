@@ -1065,7 +1065,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd:	\
 	-rm -f /tmp/nextcheck.bbd
 	mv -f ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd
 
-${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
+${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd .check_daily
 	-@$(WRITEABLE) $@
 	${PERL} ${MISCSRCDIR}/fragezeichen2org.pl *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
 	mv $@~ $@
