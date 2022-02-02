@@ -173,7 +173,7 @@ all:	targets data-images check .WAIT .modified .WAIT make_misc
 # Some targets have to be rebuild once a day. These should depend on
 # ".check_daily"
 .BEGIN:
-	@$(PERL) -e '$$_ = ".check_daily"; if (!-e $$_ || -M $$_ >= 1) { open my $$fh, ">", $$_ or die "Cannot touch $$_" }'
+	@$(PERL) -e '$$_ = ".check_daily"; if (!-e $$_ || -M $$_ >= 1) { open my $$fh, ">", $$_ or die "Cannot touch $$_"; my @l = localtime; require Time::Local; my $$t = Time::Local::timelocal(0,0,0,$$l[3],$$l[4],$$l[5]+1900); utime $$t, $$t, $$_ or warn "Cannot set $$_ to " . scalar localtime $$t }'
 
 targets:	${TARGETS}
 
