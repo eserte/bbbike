@@ -1,6 +1,6 @@
 ;;; bbbike.el --- editing BBBike .bbd files in GNU Emacs
 
-;; Copyright (C) 1997-2014,2016-2021 Slaven Rezic
+;; Copyright (C) 1997-2014,2016-2022 Slaven Rezic
 
 ;; To use this major mode, put something like:
 ;;
@@ -245,6 +245,13 @@
 (defun bbbike-datadir ()
   (concat (bbbike-rootdir) "/data"))
 
+(defun bbbike-aux-rootdir ()
+  (concat (bbbike-rootdir) "-aux"))
+
+(defun bbbike-aux-bbddir ()
+  (concat (bbbike-aux-rootdir) "/bbd"))
+
+
 (defvar bbbike-mode-map nil "Keymap for BBBike bbd mode.")
 (if bbbike-mode-map
     nil
@@ -475,8 +482,7 @@
   (interactive)
   (if (not url)
       (setq url (bbbike--get-url-under-cursor)))
-  (let ((bbbike-aux-dir (concat (bbbike-rootdir) "-aux")))
-    (call-process-shell-command (concat bbbike-aux-dir "/downloads/view -show-best '" url "'") nil 0)))
+  (call-process-shell-command (concat (bbbike-aux-rootdir) "/downloads/view -show-best '" url "'") nil 0))
 
 (defun bbbike-view-remote-url (&optional url)
   "View the URL under cursor remotely"
