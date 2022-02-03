@@ -2256,23 +2256,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.222469,52.619767,05.11.2018,10:34 (bis 15.11.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 3.2.2022)
-#: source_id: viz2021:13.217617,52.61126,03.02.2022,10:00 (Umbau der Kreuzung Henningsdorfer Str./Alt-Heiligensee/Schulzendorfer Str./..., möglicherweise sind Radfahrer nicht besonders betroffen, bis 31.5.2022)
-#: by: https://viz.berlin.de/2022/02/verkehrsvorschau-03022022/
-#: next_check_id: HENNIGSDORFER-2019
-	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259
-# REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2306,23259 -2248,23409 -2185,23567
-# REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850
-# REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
-',
-         'from' => 1542148916,
-         'id' => 3046,
-         'source_id' => '2147343419',
-         'text' => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, voraussichtlich bis 3.2.2022',
-         'type' => 'handicap',
-         'until' => 1643878800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2664,7 +2648,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
-#: osm_watch: way id="934995901" version="5"
+#: osm_watch: way id="934995901" version="6"
 #: last_checked: 2022-02-02 vvv
 #: check_frequency: 7d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
@@ -3740,7 +3724,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: also_indoor: traffic (B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-01-05
+#: last_checked: 2022-02-03 (traffic)
+# REMOVED (solange indoor gecheckt wird) --- #: check_frequency: 30d
+#: check_frequency: 7d
 	q4::inwork 13355,6235 13227,6209 13220,6237
 ',
          'from' => undef,
@@ -3896,23 +3882,6 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Spreeuferweg: Bauarbeiten, zwischen Flotowstr. und Lessingbrücke sowie am Bellevueufer kann der Uferweg gesperrt sein, ab Anfang Februar 2022',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       {
-         'data' => '#: source_id: viz2021:13.37203,52.51939,02.02.2022,06:00
-#: source_id: viz2021:13.37353,52.52075,02.02.2022,06:00-1
-#: source_id: viz2021:13.37353,52.52075,02.02.2022,06:00
-#: also_indoor: traffic (H,B) vvv
-#: add_fragezeichen: Sind Radfahrer von der Sperrung betroffen? vvv
-	2::temp 8369,12609 8306,12609 8309,12758
-	2::temp 8306,12609 8207,12606
-#: add_fragezeichen ^^^
-#: also_indoor ^^^
-',
-         'from' => 1643670000,
-         'id' => 3508,
-         'text' => 'Konrad-Adenauer-Str., Paul-Löbe-Str.: Sperrung wegen einer Veranstaltung, evtl. sind auch Radfahrer betroffen, vom 2.2.2022 bis 16.2.2022',
-         'type' => 'gesperrt',
-         'until' => 1645052400
        }
      
 );

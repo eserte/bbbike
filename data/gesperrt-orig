@@ -1691,9 +1691,7 @@ Walsroder Str.	1s:q3 6395,5154 6295,5158 6202,5163 6094,5171
 #: note: hier q4 wegen unübersichtlicher Kurve
 Hünensteig	1s:q4 6419,5048 6387,5057
 Hünensteig	1s:q3 6387,5057 6395,5154
-#: note: Radfahren auf dem Uferweg ist wohl Sitte
-#: note: früher "1s:q2"
-Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s:q3 12116,9825 11946,9913 11735,10022 11512,10105
+Paul-Lincke-Ufer	1s:q3 12116,9825 11946,9913 11735,10022 11512,10105
 Stallschreiberstr.	1 10482,11398 10615,11240 10674,11170
 Jahnstr.	1s:q4 11500,9116 11509,9392
 Waldweg	1s 25496,2429 24981,2580
@@ -4391,7 +4389,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1051294.php (Baumfällungen)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/uferwand-und-promenade-sollen-bis-spaetsommer-fertig-sein_a301440 (bis Spätsommer 2021)
 #: osm_watch: way id="501191631" version="3"
-#: last_checked: 2022-01-10 (daf)
+#: last_checked: 2022-02-02 (daf)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-09-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
@@ -4454,8 +4452,10 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="5"
 #: last_checked: 2022-01-25 vvv
+#: also_indoor: traffic
 #: check_frequency: 60d vvv
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
+#: also_indoor: traffic (G)
 Margarete-Steffin-Str.: Einbahnstraßenregelung	1s:q4:inwork 8559,12912 8631,12848 8700,12810 8732,12804
 #: check_frequency ^^^
 #: last_checked ^^^

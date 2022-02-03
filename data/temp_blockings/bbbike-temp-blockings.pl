@@ -28757,6 +28757,8 @@ EOF
 #: source_id: viz2021:13.222469,52.619767,05.11.2018,10:34 (bis 15.11.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 3.2.2022)
 #: source_id: viz2021:13.217617,52.61126,03.02.2022,10:00 (Umbau der Kreuzung Henningsdorfer Str./Alt-Heiligensee/Schulzendorfer Str./..., möglicherweise sind Radfahrer nicht besonders betroffen, bis 31.5.2022)
 #: by: https://viz.berlin.de/2022/02/verkehrsvorschau-03022022/
+#: by: https://twitter.com/VIZ_Berlin/status/1489146640095006722
+#: by: https://pbs.twimg.com/media/FKmLhoHWYA0Sivj?format=jpg&name=large
 #: next_check_id: HENNIGSDORFER-2019
 	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259
 # REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2306,23259 -2248,23409 -2185,23567
@@ -30944,7 +30946,7 @@ S13 - Cuvrystr. zwischen Görlitzer Str. und Schlesische Str.	q4::temp::play 1303
 #: note: gesehen am 2020-07-26: statt der Helmerdingstr. wurde die angrenzende Simplonstr. gesperrt; mittlerweile (August/September 2020) wird immer nur die Simplonstr. gesperrt
 Simplonstr. zwischen Helmerdingstr. und Matkowskystr	q4::temp::play 14468,11203 14531,11142
 # REMOVED --- S14 - Helmerdingstr. zwischen Revaler Str. und Simplonstr.	q4::temp::play 14442,11101 14468,11203
-S15 - Paul-Lincke-Ufer zwischen Glogauer Str. bis Ohlauer Str.	q4::temp::play 12591,9584 12439,9660 12286,9739 12116,9825
+S15 - Paul-Lincke-Ufer zwischen Glogauer Str. bis Ohlauer Str.	q4::temp::play 12596,9587 12441,9663 12286,9739 12116,9825
 S16 - Lilienthalstr. zwischen Bergmannstr. und Züllichauer Str.	q4::temp::play 10705,9234 10709,9192 10748,9054 10675,8940
 S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp::play 11334,10527 11258,10682
 S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp::play 14026,10869 13886,10939
@@ -31077,7 +31079,7 @@ EOF
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
-#: osm_watch: way id="934995901" version="5"
+#: osm_watch: way id="934995901" version="6"
 #: last_checked: 2022-02-02 vvv
 #: check_frequency: 7d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
@@ -34276,7 +34278,9 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-01-05
+#: last_checked: 2022-02-03 (traffic)
+# REMOVED (solange indoor gecheckt wird) --- #: check_frequency: 30d
+#: check_frequency: 7d
 	q4::inwork 13355,6235 13227,6209 13220,6237
 EOF
      },
@@ -34418,7 +34422,7 @@ EOF
 EOF
      },
      { from  => 1643670000, # 2022-02-01 00:00
-       until => 1645052400, # 2022-02-17 00:00
+       until => 1643917599, # 1645052400, # 2022-02-17 00:00
        text  => 'Konrad-Adenauer-Str., Paul-Löbe-Str.: Sperrung wegen einer Veranstaltung, evtl. sind auch Radfahrer betroffen, vom 2.2.2022 bis 16.2.2022',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -34426,10 +34430,10 @@ EOF
 #: source_id: viz2021:13.37353,52.52075,02.02.2022,06:00-1
 #: source_id: viz2021:13.37353,52.52075,02.02.2022,06:00
 #: also_indoor: traffic (H,B) vvv
-#: add_fragezeichen: Sind Radfahrer von der Sperrung betroffen? vvv
+# REMOVED --- #: add_fragezeichen: Sind Radfahrer von der Sperrung betroffen? vvv
 	2::temp 8369,12609 8306,12609 8309,12758
 	2::temp 8306,12609 8207,12606
-#: add_fragezeichen ^^^
+# REMOVED --- #: add_fragezeichen ^^^
 #: also_indoor ^^^
 EOF
      },

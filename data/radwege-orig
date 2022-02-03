@@ -956,6 +956,8 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://berliner-abendblatt.de/2022/01/12/elsenbruecke-behelfsbruecke-ueber-die-spree-ist-fuer-den-verkehr-freigegeben/
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/behelfsbruecke-der-elsenbruecke-ist-jetzt-passierbar_a333443
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/ersatzbau-fuer-elsenbruecke-ist-fertig_a333458
+#: by: https://viz.berlin.de/2022/02/elsenbruecke-sperrung/
+#: by: https://berliner-abendblatt.de/2022/02/03/routinekontrolle-heute-nacht-werden-die-treptower-behelfsbruecken-gesperrt/
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
@@ -1899,7 +1901,7 @@ asphaltiert	RW1; 13795,9941 13860,9861 14089,9610
 # REMOVED (-> Fußgängerzone) ---	RW6;RW6 12172,10585 12142,10600
 	RW6;RW6 12142,10600 12056,10642
 	RW6;RW6 12243,10274 12292,10374 12274,10436
-	RW6;RW6 12116,9825 12286,9739 12439,9660 12591,9584
+	RW6;RW6 12116,9825 12286,9739 12441,9663 12596,9587
 	RW6;RW6 11543,10015 11507,10004 11485,10029 11400,10022 11295,9958 11177,9935 11160,9932 10929,9897 10914,9887
 	RW6;RW6 11464,10102 11310,10021 11199,9993 11082,9992 10979,10017 10967,10092
 #: note: Richtung Osten einige Meter vor dem Fraenkelufer schon anfangend, sogar mit Radwegschild, aber meist zugeparkt; Richtung Westen wegen halb auf dem Radweg parkenden Autos auch nicht benutzbar
@@ -6903,7 +6905,7 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
-#: osm_watch: way id="671329664" version="4"
+#: osm_watch: way id="671329664" version="5"
 provisorische Radspur	RW4; 17991,6431 17962,6674
 provisorische Radspur	RW4; 17962,6674 17919,6968
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
