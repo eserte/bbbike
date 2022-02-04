@@ -2649,8 +2649,8 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-02-02 vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2022-02-04 vvv
+#: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
@@ -3356,22 +3356,24 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: note: Eintrag bei rbb am 10.11.2021 entfernt --- mittlerweile wieder da, sogar bis zum 28.2.2022
+#: source_id: viz2021:13.327411,52.448681,26.07.2021,07:00 (mittlerweile nur noch bis 28.2.2022)
 #: also_indoor: traffic (G,H,B)
-	q4::inwork; 5271,4547 5316,4637 5336,4676
+# REMOVED (hier nicht mehr) ---	q4::inwork; 5271,4547 5316,4637 5336,4676
+	q4::inwork; 5336,4676 5407,4815
 ',
          'from' => 1627164000,
          'id' => 3422,
          'source_id' => 'viz2021:13.326349,52.447526,26.07.2021,07:00',
-         'text' => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 28.03.2022 17:00',
+         'text' => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 28.02.2022 17:00',
          'type' => 'handicap',
-         'until' => 1648479600
+         'until' => 1646064000
        },
        undef,
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren; außerdem sind etwa 100m der Fahrbahn wieder befahrbar (q3 -> q2)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2022-01-09
+#: last_checked: 2022-02-04
 #: check_frequency: 45d
 #: next_check: 2022-03-31
 	q2::inwork 13057,14267 13158,14117
@@ -3412,16 +3414,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork 8555,17928 8415,17902
-',
-         'from' => 1629669600,
-         'id' => 3435,
-         'source_id' => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
-         'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 04.02.2022 17:00 ',
-         'type' => 'handicap',
-         'until' => 1643990400
-       },
+       undef,
        undef,
        undef,
        {

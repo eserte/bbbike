@@ -2610,7 +2610,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="7"
 #: osm_watch: way id="420112509" version="7"
 #: osm_watch: way id="966685279" version="1"
-#: last_checked: 2022-01-18 vvv
+#: last_checked: 2022-02-04 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -5842,7 +5842,7 @@ Radweg beginnt nach 20 Metern	RW1; 7909,775 7857,802
 	RW3;RW3 14050,20955 13909,20928
 #: XXX wird hier eine Busspur eingerichtet?
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
-#: last_checked: 2022-01-11 (mapillary)
+#: last_checked: 2022-01-31 (mapillary)
 	RW3; 13909,20928 13662,20917
 	RW5; 13662,20917 13562,20913
 #: note: größtenteils eigentlich Bushaltestelle
@@ -6986,8 +6986,10 @@ asphaltiert	RW1; 25522,4935 25519,4830
 	RW4; 16485,25516 16414,25575
 #: next_check_id: KARLMARXSTR-2018
 #: XXX wann und wie wird die Radspur verstetigt?
+#: XXX vermulich wird die Radspur bei der Baustellenumstellung Anfang Februar 2021 wieder entfernt
 #: last_checked: 2022-02-01
 #: check_frequency: 60d
+#: next_check: 2022-02-10
 provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
 #: note: die Radspur fängt bereits einige Meter vor der Weichselstr. an
 	RW4; 12330,8636 12318,8645 12150,8764 12063,8826 11998,8872 11880,8955
@@ -7100,6 +7102,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.402789,52.498471,01.09.2021,07:00 (bis 24.9.2021) (inaktiv)
 #: source_id: viz2021:13.402789,52.498471,28.09.2021,07:00 (bis 12.10.2021) (inaktiv)
 #: source_id: viz2021:13.397833,52.498335,06.10.2021,08:00 (bis 30.03.2022)
+#: source_id: viz2021:13.398158,52.498346,07.02.2022,07:00 (bis 25.02.2022)
 #: note: laut rbb Einspurigkeit Höhe Lobeckstr. bis 22.10.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)

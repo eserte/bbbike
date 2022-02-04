@@ -15307,7 +15307,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="10"
-#: last_checked: 2021-12-31
+#: last_checked: 2022-02-04
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -20425,8 +20425,9 @@ Straße 103 (Niederschönhausen): Asphalt	Q0- 10914,20065 11051,19789
 #: by: ^^^
 # 
 #: by: piksieben: vvv
-#: corrected_by: srt (Q2 -> Q3)
-Jörsstr.: schlechtes Kopfsteinpflaster	Q3 -1478,18407 -1358,18400
+#: corrected_by: srt (Q2 -> schlechtes Kopfsteinpflaster, Q3)
+#: corrected_by: infravelo (... -> neu gemacht)
+Jörsstr.: Asphalt	Q0 -1478,18407 -1358,18400
 #: note: laut ADFC-Karte mäßig
 (Schwarzer Weg - Jörsstr.): gut zu fahrender Waldweg	Q1- -847,18577 -932,18558 -1124,18480 -1307,18408 -1358,18400
 #: by: ^^^
@@ -30633,4 +30634,7 @@ Kreuzungsbereich asphaltiert	Q0 18319,9218
 Einmündungsbereich mit Kopfsteinpflaster	Q2 7998,23252
 Einmündungsbereich mit Kopfsteinpflaster	Q2 11946,9913
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12048,10097
+Einmündungsbereich mit Kopfsteinpflaster	Q2 13645,15609
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 13739,15643
+Kreuzungsbereich asphaltiert	Q0 13939,15723
 #: ignore ^^^
