@@ -371,9 +371,9 @@ Saltykowstr.	1 12726,7887 12865,7923
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4360&options=4 ("alltägliche Praxis")
 #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben oder geändert
 #: osm_watch: way id="27491366" version="10"
-#: last_checked: 2021-01-23 (mapillary)
+#: last_checked: 2022-02-05
 #: check_frequency: 300d
-Barbarastr.	1s:q3 6456,3038 6372,2959 6329,2916 6359,2875 6372,2856
+Barbarastr.	1s:q3 6456,3038 6372,2959 6329,2916 6359,2875
 Leipziger Platz	1 8596,11508 8599,11474 8639,11441 8713,11448 8743,11489 8740,11524
 Leipziger Platz	1 8740,11524 8736,11557 8698,11589 8623,11580 8592,11541 8596,11508
 Crusemarkstr.	1 10825,18634 10712,18975
@@ -1248,7 +1248,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-02-01
+#: last_checked: 2022-02-05
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1368,6 +1368,10 @@ Falkenberger Chaussee: Straßenbahntrasse, Mittelstreifen	3nocross 17400,17790 17
 #: osm_watch: node id="6778873745" version="1"
 # REMOVED --- #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen --- #: last_checked: 2021-12-27 --- #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
+# 
+Eythstr. (Wendeschleife)	1 7682,5963 7615,5938 7606,5939 7618,5960 7638,5967 7682,5963
+Röblingstr.	1 7598,5926 7606,5939
+Röblingstr.	1 7615,5938 7598,5926
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -3885,9 +3889,9 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 #: osm_watch: way id="588431071" version="5"
 #: osm_watch: way id="696227207" version="3"
 #: add_fragezeichen: Bis wann genau geht die Sperrung?
-#: last_checked: 2021-11-28
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2021-11-01
+#: last_checked: 2022-02-05
+#: check_frequency: 120d
+#: next_check: 2023-12-31
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
 # 
 #: next_check_id: WUHLETALBRUECKE-2019
@@ -3915,13 +3919,7 @@ Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: source_id: 2147343910 (bis 10.7.2020) vvv --- #: source_id: 2147344585 (bis Ende Mai 2020) vvv --- #: last_checked: 2020-07-08 vvv --- #: next_check: 2020-07-10 vvv --- #: valid: 20190319-20200717 vvv --- Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552 --- Corinthstr.: Einbahnstraßenregelung, Radweg wird auf dem Gehweg geführt	1s:q3:inwork 14608,10409 14447,10491 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: source_id ^^^
 # REMOVED --- #: last_checked: 2019-04-04 --- #: check_frequency: 7d --- Luckauer Str.: Bauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 11113,10943 11150,11030
 # REMOVED (offen laut osm) --- #: next_check_id: BUSCHWINDROESCHENWEG-2019 --- #: XXX Wann wird die Straße eröffnet? Wie wird die Qualität sein? Wird diese Straße verkehrsberuhigt sein? --- #: osm_watch: way id="734004873" version="5" --- #: last_checked: 2021-07-17 --- #: check_frequency: 90d --- Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
-# 
-#: next_check_id: JOHANNESTOBEI-2021
-#: last_checked: 2021-07-17
-#: check_frequency: 360d
-#: next_check: 2022-09-01
-Ringelblumenweg: Bauarbeiten, Straße gesperrt	2::inwork 21595,271 21618,193
-# 
+# REMOVED (offen laut osm) --- #: next_check_id: JOHANNESTOBEI-2021 --- #: last_checked: 2021-07-17 --- #: check_frequency: 360d --- #: next_check: 2022-09-01 --- Ringelblumenweg: Bauarbeiten, Straße gesperrt	2::inwork 21587,302 21618,193
 # REMOVED (offen, aber als provisorische Einbahnstraße ausgeschildert) --- #: next_check_id: WEIDENKAETZCHENWEG-2020 --- #: osm_watch: way id="889476798" version="2" ---#: last_checked: 2021-04-24 ---#: check_frequency: 30d ---Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21450,38
 # REMOVED (offen) --- #: last_checked: 2020-08-06 --- #: check_frequency: 90d --- Rosenrotweg: Bauarbeiten, Straße gesperrt	2::inwork 21487,173 21515,67
 # REMOVED (wieder offen) --- #: next_check_id: KARLMARXSTR-2018 --- #: last_checked: 2019-02-13 --- Alfred-Scholz-Platz: wegen Bauarbeiten kein Zugang zur Karl-Marx-Str.	2::inwork 12753,8187 12779,8188
@@ -4495,9 +4493,9 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: by: https://www.bahninfo-forum.de/read.php?9,654720,702391#msg-702391
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210530/
 #: note: laut osm Sperrung bis 01/2023
-#: osm_watch: way id="663005792" version="6" brb
+#: osm_watch: way id="663005792" version="7" brb
 #: also_indoor: traffic
-#: last_checked: 2021-11-09 (baustellen-doku) vvv
+#: last_checked: 2022-02-04 (osm) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2023-01-01 vvv
 Berliner Str. (Mahlow): Straße gesperrt, neue Bahnunterführung wird gebaut	2:inwork 10776,-4460 10896,-4469 10956,-4470
@@ -4534,8 +4532,8 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 #: XXX die derzeitige Straße ist asphaltiert, bleibt das so?
-#: osm_watch: way id="765539341" version="4" brb
-#: last_checked: 2021-11-05 (osm)
+#: osm_watch: way id="765539341" version="5" brb
+#: last_checked: 2022-02-04 (osm)
 # REMOVED --- #: next_check: 2020-09-01
 #: check_frequency: 180d
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449

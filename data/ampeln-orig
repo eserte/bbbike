@@ -573,6 +573,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9863,6617
 	X 9206,5193
 	X 8014,4832
+#: XXX_prog: Ampel gilt nicht für Radfahrer auf dem Radweg aus der Ringstr. rechts in die Rathausstr.
 	X 9021,3878
 	X 9275,4672
 	X 9310,4407
@@ -1480,6 +1481,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	B 12944,26163
 	X 11552,10863
 	X 10397,10852
+#: note: Kontaktschleifen in der Havemannstr.
 	X 6665,2836
 	X 6718,2443
 #: note: Anforderungsampel
@@ -1676,6 +1678,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5671,3987
 # REMOVED --- #: by: http://www.tagesspiegel.de/berlin/verkehr-in-berlin-drei-unfallschwerpunkte-sollen-kurzfristig-entschaerft-werden/19800156.html --- #: XXX hier wird umgestaltet, dann vermutlich eine normale Kreuzung; die Einträge in gesperrt-orig sowie diese XXX_prog-Direktive können dann entfallen --- #: source_id: 2147341195 --- #: next_check: 2017-07-31 --- #: XXX_prog: keine Ampel aus Richtung Birkbuschstr.
 #: XXX_prog keine Ampel für Radfahrer aus der Birkbuschstr. nach Norden
+#: XXX_prog keine Ampel für Radfahrer im Zuge des Wolfensteindamms von Nord nach Südwest
 	X 4796,5129
 	X 25519,4830
 	X 984,14086
@@ -2340,7 +2343,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
-#: last_checked: 2022-01-28
+#: last_checked: 2022-02-05
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -3166,7 +3169,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2022-01-05
+#: last_checked: 2022-02-05
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
 	X::inwork 13265,6972
@@ -3616,7 +3619,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2022-01-23 vvv
+#: last_checked: 2022-02-05 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

@@ -739,7 +739,7 @@ Sackgassenende, zur Straße An der Sternwarte	culdesac_pseudo -9767,-619
 	culdesac_pseudo 21620,372
 	culdesac_pseudo 21703,388
 	culdesac_pseudo 21688,312
-	culdesac 21595,271
+	culdesac 21587,302
 	culdesac_pseudo 21790,682
 	culdesac_pseudo 17874,10729
 	culdesac 17856,10961
@@ -1605,6 +1605,8 @@ nördliches Sackgassenende der östlichen Stichstraße	culdesac_pseudo 19243,450
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 7598,5926
+	culdesac_pseudo 6511,2284
 	culdesac 13419,13435
 	culdesac 7966,14622
 	culdesac_pseudo 22528,12924
