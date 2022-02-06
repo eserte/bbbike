@@ -2151,25 +2151,34 @@ warn "#XXXny";
 sub del_add_net {
     my $self = shift;
 
+    my $net      = $self->{Net};
+    my $net2name = $self->{Net2Name};
+
     foreach my $b (@{$self->{AdditionalNet}}) {
-	delete $self->{Net}{$b->[0]}{$b->[1]};
-	if (exists $self->{Net2Name}{$b->[0]}{$b->[1]}) {
-	    delete $self->{Net2Name}{$b->[0]}{$b->[1]};
+	delete $net->{$b->[0]}{$b->[1]};
+	if (!keys %{ $net->{$b->[0]} }) {
+	    delete $net->{$b->[0]};
+	}
+	if (exists $net2name->{$b->[0]}{$b->[1]}) {
+	    delete $net2name->{$b->[0]}{$b->[1]};
+	    if (!keys %{ $net2name->{$b->[0]} }) {
+		delete $net2name->{$b->[0]};
+	    }
 	}
     }
-    @{$self->{AdditionalNet}} = ();
+    delete $self->{AdditionalNet};
 
     foreach my $def (reverse @{$self->{AdditionalDelNet} || []}) {
 	my($p1,$p2,$val) = @$def;
-	$self->{Net}{$p1}{$p2} = $val;
+	$net->{$p1}{$p2} = $val;
     }
-    @{$self->{AdditionalDelNet}} = ();
+    delete $self->{AdditionalDelNet};
 
     foreach my $def (reverse @{$self->{AdditionalDelNet2Name} || []}) {
 	my($p1,$p2,$val) = @$def;
-	$self->{Net2Name}{$p1}{$p2} = $val;
+	$net2name->{$p1}{$p2} = $val;
     }
-    @{$self->{AdditionalDelNet2Name}} = ();
+    delete $self->{AdditionalDelNet2Name};
 }
 
 *reachable = \&reachable_1;
