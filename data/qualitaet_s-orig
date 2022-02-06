@@ -1024,7 +1024,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-02-05
+#: last_checked: 2022-02-06
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -4978,7 +4978,7 @@ Tegernseestr.: Asphalt	Q0 22287,1165 22209,1278 22163,1363 22128,1443 22095,1572
 Kochelseestr.: Asphalt	Q0 22462,1547 22364,1487
 Kochelseestr.: schlechtes Kopfsteinpflaster	Q3 22364,1487 22247,1409
 Kochelseestr.: Asphalt	Q0 22247,1409 22163,1363
-Walchenseestr.: Asphalt	Q0 22453,1294 22364,1487 22334,1553
+Walchenseestr.: Asphalt	Q0 22453,1294 22364,1487 22334,1553 22300,1627 22222,1831 22130,1961
 Don-Ugoletti-Platz: Kopfsteinpflaster	Q3+ 22449,1569 22462,1547
 Don-Ugoletti-Platz - Regattastr.: Beton	Q1 22449,1569 22478,1602 22549,1644
 #: note: undefinierbarer Belag, aber sehr glatt
@@ -7376,7 +7376,7 @@ Hasenlauf: Asphalt	Q0 21504,2385 21490,2535
 Alkenweg: Asphalt	Q0 21869,2367 21939,2388 22016,2391
 Lahmertstr.: löchriger Beton	Q2+ 22220,2018 22291,1892 22318,1834
 Regattastr. [Wohngebiet]: Beton	Q0- 22388,1947 22291,1892
-Waldstr. (Grünau): Asphalt	Q0 21839,2419 21855,2392 21869,2367 21885,2343 21986,2176 22004,2149 22130,1961 22222,1831
+Waldstr. (Grünau): Asphalt	Q0 21839,2419 21855,2392 21869,2367 21885,2343 21986,2176 22004,2149 22130,1961
 Elstersteg: Asphalt	Q0 21750,2593 21770,2535 21801,2480 21839,2419
 (Ammerseestr. - Waldstr.): Waldweg, teilweise etwas sandig	Q2 22166,1636 22222,1831
 Zur Uferbahn: Asphalt	Q0 23085,898 22952,821 22902,796 22766,778
@@ -9093,6 +9093,9 @@ Münchener Str. (Frohnau): unebenes Mosaikpflaster, einige Asphaltflicken	Q2 1576
 Münchener Str. (Frohnau): Beton	Q0- 1443,25399 1378,25406 1278,25401 1153,25425 1081,25483 975,25627
 Katzensteg: Asphalt mit Schäden	Q1 2756,25260 2744,25314 2728,25386
 Fürstendamm: Asphalt	Q0 2673,25012 2818,25022 2904,24993 3015,24965 3117,24966 3267,24964 3398,24931 3490,24887
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9859 (Erwähnung einer Straßenbaumaßnahme 2022/2023 --- hier?)
+#: XXX wird hier die Fahrbahn neu gemacht?
+#: next_check: 2022-12-31
 Fürstendamm: Asphalt mit einigen Schäden	Q1+ 3490,24887 3550,24887 3741,24942 3754,24946
 Hambacher Weg: Kopfsteinpflaster	Q2- 3205,24839 3239,24892 3267,24964
 Hambacher Weg: unbefestigt	Q2 3205,24839 3195,24825 3186,24812
@@ -15680,6 +15683,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.lemkestrasse-feldsteinpflaster.de/
 #: by: https://stefan-ziller.eu/2021/tempo-30-fuer-die-lemkestrasse-und-modellprojekt-fuer-baumfreundlichen-strassenbelag/ (nur Gehwegarbeiten bis zum 1.8.2021, Planung für Neubau der Straße noch nicht abgeschlossen (Stand März 2021))
 #: by: https://stefan-ziller.eu/2021/planungen-fuer-die-lemkestrasse-baumerhalt-und-zweiter-bauabschnitt/ (August 2021: erster Bauabschnitt)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9810 (Anfrage)
 #: also_indoor: search Lemkestraße
 #: last_checked: 2022-01-16 (mapillary) (im südlichen Abschnitt sind schon Bauarbeiten)
 #: check_frequency: 150d
