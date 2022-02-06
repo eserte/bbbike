@@ -403,8 +403,8 @@ function doLeaflet() {
 
     map.on('moveend', function() {
 	var center = map.getCenter();
-	q.set('lat', center.lat.toString());
-	q.set('lon', center.lng.toString());
+	q.set('lat', parseFloat(center.lat).toFixed(6));
+	q.set('lon', parseFloat(center.lng).toFixed(6));
 	adjustHistory();
     });
     map.on('zoomend', function() {
@@ -1024,7 +1024,7 @@ function populateRouteList(geojson) {
     var result = geojson.properties.result;
     var route = result.Route;
 
-    var html = "<div>LÃ¤nge: " + sprintf("%.2f", result.Len / 1000) + " km</div>\n";
+    var html = "<div>LÃÂ¤nge: " + sprintf("%.2f", result.Len / 1000) + " km</div>\n";
 
     var pref_speed;
     var pref_time;
@@ -1049,7 +1049,7 @@ function populateRouteList(geojson) {
 			       'u':  '&#x21b6;',
 			      };
     html += "<table>\n";
-    html += "<tr><th>Etappe</th><th></th><th>StraÃe</th></tr>\n";
+    html += "<tr><th>Etappe</th><th></th><th>StraÃÂe</th></tr>\n";
     for(var i=0; i<route.length; i++) {
 	var elem = route[i];
 	html += "<tr>";
