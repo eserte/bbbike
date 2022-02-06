@@ -236,7 +236,7 @@ sub action_fragezeichen_nextcheck_home_home_org {
     my @srcs = (@orig_files, "$persistenttmpdir/bbbike-temp-blockings-optimized.bbd");
     my $gps_uploads_dir = "$ENV{HOME}/.bbbike/gps_uploads";
     my @gps_uploads_files = bsd_glob("$gps_uploads_dir/*.bbr");
-    if (_need_daily_rebuild $dest || _need_rebuild $dest, @srcs, @gps_uploads_files) {
+    if (_need_daily_rebuild $dest || _need_rebuild $dest, @srcs, @gps_uploads_files, $gps_uploads_dir) {
 	require Safe;
 	my $config = Safe->new->rdo("$ENV{HOME}/.bbbike/config");
 	my $centerc = $config->{centerc};
