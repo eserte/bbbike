@@ -130,11 +130,7 @@ sub map_mode_activate {
 	-addnewpoint => sub { my($net, $point) = @_;
 			      my $xy = main::set_coords_str($main::c); # set_coords_str also handles fragezeichen
 			      return $xy if $xy;
-
-			      $xy = $main::net->fix_coords($point); # use nearest point in net
-			      return $xy if $xy;
-			      
-			      main::status_message("Cannot use point $point", "die");
+			      main::add_new_point($net, $point); # fallback to old method
 			  },
 	-tk          => $main::top,
 	-progress    => $main::progress,
