@@ -1931,7 +1931,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: next_check_id: KANTSTR-2017 --- #: source_id: LMS-BR_r_LMS-BR_121
+#: source_id: viz2021:13.331602,52.505283,08.02.2022,07:30
+	q4::inwork; 5488,10978 5613,10963 5652,11004
+',
+         'from' => 1644215400,
+         'id' => 2851,
+         'source_id' => '2147341048',
+         'text' => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 8.2.2022 bis 31.3.2022',
+         'type' => 'handicap',
+         'until' => 1648738800
+       },
        undef,
        undef,
        undef,
@@ -2598,7 +2609,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-02-05
+#: last_checked: 2022-02-07
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2649,14 +2660,15 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-02-04 vvv
+#: last_checked: 2022-02-07 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
 # REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
 # REMOVED (beendet) ---	q3::inwork 14272,11775 14306,11889
-	q3::inwork 14306,11889 14354,12012 14427,12197
+	q3::inwork 14306,11889 14354,12012
+	q4::inwork 14354,12012 14427,12197
 	q3::inwork 14354,12012 14468,11992
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -3012,19 +3024,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147347231
-#: source_id: viz2021:13.440907,52.591391,03.07.2021,00:30
-#: source_id: viz2021:13.440554,52.591497,04.02.2022,01:00
-	2::inwork 12672,20720 12723,20691
-',
-         'from' => 1643846400,
-         'id' => 3331,
-         'source_id' => '2147346882',
-         'text' => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, Fußgänger und Radfahrer sind auch betroffen, vom 4.2.2022 01:00 bis 7.2.2022 04:30',
-         'type' => 'gesperrt',
-         'until' => 1644204600
-       },
+       undef,
        {
          'data' => '#: by: https://tierparkcenter.de/wochenmarkt/ (Öffnungszeiten)
 #: tempex: (mo,th,fr) T08-T17
@@ -3417,7 +3417,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::inwork 8555,17928 8415,17902
+',
+         'from' => 1629669600,
+         'id' => 3435,
+         'source_id' => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
+         'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 30.04.2022 17:00 ',
+         'type' => 'handicap',
+         'until' => 1651330800
+       },
        undef,
        undef,
        {

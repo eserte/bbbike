@@ -3617,7 +3617,7 @@ Lindenstr. (Schulzendorf): Verbundsteinpflaster	Q1+ 23571,-3325 23676,-3276 2379
 Waltersdorf - Schulzendorf: Asphalt	Q0 21607,-3739 21638,-3747 21662,-3737 21673,-3660 21709,-3605 22041,-3237 22170,-3064 23053,-2729 23152,-2691 23205,-2670 23332,-2621 23453,-2642 23505,-2626 23562,-2604 23626,-2563 23708,-2488 23753,-2479 23787,-2504 23831,-2603
 #: by: osm
 #: confirmed_by: srt (im Bereich Rosa-Luxemburg-Str.)
-Ernst-Thälmann-Str.: Asphalt	Q0 22389,-5159 22711,-5004 23034,-4850 23161,-4729 23364,-4539 23387,-4518 23402,-4512 23556,-4460 23658,-4428 23860,-4362 24200,-4252 24295,-4221 24390,-4190 24501,-4155 24613,-4121 24714,-4087 24758,-4072 24798,-4061
+Ernst-Thälmann-Str.: Asphalt	Q0 22389,-5159 22711,-5004 22991,-4869 23034,-4850 23161,-4729 23364,-4539 23387,-4518 23402,-4512 23556,-4460 23658,-4428 23860,-4362 24200,-4252 24295,-4221 24390,-4190 24501,-4155 24613,-4121 24714,-4087 24758,-4072 24798,-4061
 Karl-Liebknecht-Str. (Schulzendorf): Asphalt	Q0 24613,-4121 24423,-3825 24256,-3568 24185,-3434 24138,-3336 24085,-3227 23885,-2838 23839,-2639 23831,-2603
 #: corrected_by: srt (Beton mit Schäden, Q2 -> ..., neu gemacht)
 August-Bebel-Str. (Schulzendorf): Asphalt	Q0 23655,-3997 23717,-3975 23821,-3942
@@ -5842,7 +5842,7 @@ ehemalige B179 (Berlin - Königs Wusterhausen): asphaltiert, einige Wurzelschäden
 Im Ritterschlag: Asphalt	Q0 22437,-5335 22527,-5312
 #: by: osm
 Im Ritterschlag: Asphalt	Q0 22527,-5312 22554,-5376 22589,-5367 22627,-5358 22691,-5301 22765,-5234 22787,-5165 22814,-5119 22739,-5062 22711,-5004
-(Miersdorfer Str. - Walther-Rathenau-Str.): Verbundsteinpflaster	Q1+ 22469,-5470 22914,-5365
+(Miersdorfer Str. - Walther-Rathenau-Str.): Verbundsteinpflaster	Q1+ 22469,-5470 22983,-5346
 (Miersdorfer Str. - Zum Mühlenschlag): Verbundsteinpflaster	Q1 22866,-5844 22830,-5878
 Zum Mühlenschlag: Verbundsteinpflaster	Q1 22794,-5842 22830,-5878 22883,-5923 22992,-6018 23041,-6154 23089,-6242 23097,-6282
 Kornblumenweg: Verbundsteinpflaster	Q1 22883,-5923 22857,-5955 22889,-6026 22916,-6082 22940,-6134 22965,-6188 23011,-6169 23041,-6154
@@ -8265,6 +8265,15 @@ Heidestr. (Schönow): Asphalt	Q0 19032,30053 18941,30212 18773,30398 18635,30610 
 #: by: ^^^
 # 
 #: by: mapillary vvv
+Auf dem Ritterfleck (Schulzendorf): Asphalt	Q0 22991,-4869 23038,-4962 23070,-5001 23063,-5053 23151,-5197 23166,-5220 23212,-5297
+Ackerstr. (Schulzendorf): Verbundsteinpflaster	Q1+ 23038,-4962 22996,-4983 22962,-5193 22956,-5233 22951,-5304 22983,-5346
+Lupinienweg (Schulzendorf): Verbundsteinpflaster	Q1+ 23063,-5053 23039,-5079 23026,-5162 23014,-5179
+Sonnenblumenweg (Schulzendorf): Verbundsteinpflaster	Q1+ 23151,-5197 23014,-5179 22994,-5197 22962,-5193
+Malvenweg (Schulzendorf): Verbundsteinpflaster	Q1+ 23166,-5220 23081,-5258 22999,-5239 22956,-5233
+Ernteweg (Schulzendorf): Verbundsteinpflaster	Q1+ 23103,-5320 23081,-5258
+Kräuterplatz (Schulzendorf): Verbundsteinpflaster	Q1+ 22999,-5239 22994,-5197
+Walther-Rathenau-Str. (Schulzendorf): Asphalt	Q0 23296,-5280 23212,-5297
+Walther-Rathenau-Str. (Schulzendorf): Verbundsteinpflaster	Q1+ 23212,-5297 23103,-5320 22983,-5346
 Bergstr. (Schulzendorf): Verbundsteinpflaster	Q1+ 24045,-7112 24173,-7015
 Hennigsdorfer Str. (Schulzendorf): Verbundsteinpflaster	Q1+ 23478,-6844 23574,-6800 23673,-6743 23785,-6662
 Fürstenberger Str. (Schulzendorf): Verbundsteinpflaster	Q1+ 23196,-6255 23478,-6844 23572,-7040 23662,-7235
