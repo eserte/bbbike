@@ -26327,12 +26327,15 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2022-02-07 07:30:00"), # 1488236400, # 2017-02-28 00:00
-       until => $isodate2epoch->("2022-03-31 17:00:00"), # 1499103102, # $isodate2epoch->("2017-07-14 18:00:00"), # 1493589599, # 2017-04-30 23:59
+       until => 1644349647, # $isodate2epoch->("2022-03-31 17:00:00"), # 1499103102, # $isodate2epoch->("2017-07-14 18:00:00"), # 1493589599, # 2017-04-30 23:59
        text  => 'Kantstr.: Richtung Budapester Str. ab Joachimsthaler Str. gesperrt, evtl. sind auch Radfahrer betroffen, vom 8.2.2022 bis 31.3.2022',
        type  => 'handicap',
        source_id => '2147341048', # inaktiv
        data  => <<EOF,
 # REMOVED --- #: next_check_id: KANTSTR-2017 --- #: source_id: LMS-BR_r_LMS-BR_121
+#: by: https://berliner-abendblatt.de/2022/02/08/baustelle-in-der-city-west/
+#: by: https://twitter.com/VIZ_Berlin/status/1490939304281260033 (nicht betroffen)
+#: by: https://pbs.twimg.com/media/FLDhVoCWQAEXRcf?format=jpg&name=large
 #: source_id: viz2021:13.331602,52.505283,08.02.2022,07:30
 	q4::inwork; 5488,10978 5613,10963 5652,11004
 EOF
@@ -34459,6 +34462,16 @@ EOF
        source_id => 'viz2021:13.346369,52.431944,20.09.2021,07:30',
        data  => <<EOF,
 	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Nostitzstr.: Hochbaustelle, Einbahnstraße zwischen Gneisenaustr. und Baruther Str., offen Richtung Süden',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2022-02-08
+#: check_frequency: 60d
+	q4::inwork; 9552,9602 9588,9827
 EOF
      },
     );
