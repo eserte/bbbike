@@ -1024,7 +1024,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? auﬂerdem: wird die Colbestr. zur Fahrradstraﬂe?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erw‰hnung)
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-02-07
+#: last_checked: 2022-02-09
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3374,6 +3374,7 @@ Mauerweg - Am Rudower Flieﬂ: Asphalt	Q0 15571,-93 15606,-104 15640,-149
 (Straﬂe 618 - Rudower Flieﬂ): Verbundsteinpflaster	Q1 16297,592 16271,609
 # REMOVED (ja, bessere Qualit‰t) --- #: XXX nach den Bauarbeiten vielleicht bessere Qualit‰t? --- #: source_id: IM_021231 --- #: next_check: 2014-07-15
 Waﬂmannsdorfer Chaussee: asphaltiert	Q0 16536,26 16477,-160 16431,-311
+#: by: https://www.berliner-woche.de/rudow/c-verkehr/da-planungen-voellig-neu-erarbeitet-werden-muessen-bleibt-wassmanndorfer-chaussee-weiter-holperstrecke_a335288 (Sanierung nicht vor 2030)
 Waﬂmannsdorfer Chaussee: asphaltiert mit Straﬂensch‰den	Q1 16431,-311 16378,-489 16341,-614 16307,-718 16273,-824
 (Mauerweg): Asphalt	Q0 18121,-374 18218,-325 18280,-295
 (Landschaftspark Rudow): Gehwegplatten	Q0- 18385,-173 17973,428
@@ -9093,9 +9094,10 @@ M¸nchener Str. (Frohnau): unebenes Mosaikpflaster, einige Asphaltflicken	Q2 1576
 M¸nchener Str. (Frohnau): Beton	Q0- 1443,25399 1378,25406 1278,25401 1153,25425 1081,25483 975,25627
 Katzensteg: Asphalt mit Sch‰den	Q1 2756,25260 2744,25314 2728,25386
 F¸rstendamm: Asphalt	Q0 2673,25012 2818,25022 2904,24993 3015,24965 3117,24966 3267,24964 3398,24931 3490,24887
+#: next_check_id: FUERSTENDAMM-2022
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9859 (Erw‰hnung einer Straﬂenbaumaﬂnahme 2022/2023 --- hier?)
 #: XXX wird hier die Fahrbahn neu gemacht?
-#: next_check: 2022-12-31
+#: next_check: 2023-05-09
 F¸rstendamm: Asphalt mit einigen Sch‰den	Q1+ 3490,24887 3550,24887 3741,24942 3754,24946
 Hambacher Weg: Kopfsteinpflaster	Q2- 3205,24839 3239,24892 3267,24964
 Hambacher Weg: unbefestigt	Q2 3205,24839 3195,24825 3186,24812

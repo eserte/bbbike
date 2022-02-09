@@ -2344,7 +2344,7 @@ Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 #: source_id: viz2021:13.428503,52.518895,16.11.2021,17:00 (bis 30.11.2021) (mittlerweile bis 10.12.2021) (bis 22.12.2021) (bis 21.12.2021) (inaktiv)
 #: XXX Radspuren sind fertig, Grünmarkierung folgt im Frühjahr 2022 vvv
 #: priority: #D vvv
-#: last_checked: 2022-01-22 vvv
+#: last_checked: 2022-02-09 vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2022-04-01 vvv
 	RW4; 12050,12616 12064,12673
@@ -3438,6 +3438,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27501.pdf (Brückenbauarbeiten bis 2025)
 #: by: https://sbahn.berlin/aktuelles/artikel/diese-bauprojekte-stehen-2022-an/
 #: by: https://berliner-abendblatt.de/2022/01/24/bauprojekte-der-s-bahn-2022/
+#: by: https://viz.berlin.de/2022/02/blumberger-damm-bruecke/ (2-tägige Sperrung nur für Kfz)
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: osm_watch: way id="865716506" version="7"
@@ -3712,6 +3713,9 @@ Radweg nur aufgemalt	RW1; 9751,3769 9732,3883
 	RW6;RW6 3981,11232 4101,11233 4176,11235 4302,11232
 	RW6;RW6 4905,18142 4786,18168 4690,18185 4609,18199
 	RW1;RW4 6288,14661 6281,14630
+#: by: https://berliner-abendblatt.de/2022/02/09/putlitzbruecke-soll-sicherer-werden/ (Erneuerung der Radwege 2022 geplant)
+#: XXX Was ändert sich bei der Sanierung der Radwege?
+#: next_check: 2022-12-31
 	RW4;RW4 6281,14630 6231,14308 6230,14246 6230,14184 6228,14077
 	RW2;RW2 6228,14077 6226,13951
 	RW2;RW1 6226,13951 6227,13938
@@ -4561,7 +4565,7 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 #: next_check_id: BAHNHOF-2021
 #: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/
 #: XXX während der Bauarbeiten ist der Radweg auf der Nordseite gesperrt, es gibt auch keinen Gehweg
-#: last_checked: 2022-01-01 (mapillary)
+#: last_checked: 2022-02-07 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2022-02-28
 # REMOVED (Original-Eintrag) ---	RW1; 12723,20691 12672,20720
@@ -5561,7 +5565,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by ^^^
 # 
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2022-01-15 vvv
+#: last_checked: 2022-02-09 vvv
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9141,12320 9131,12438 9121,12514
 #: XXX früher RW3, zurzeit durch Gelbmarkierung (Kreuze) ungültig gemacht
@@ -7326,7 +7330,7 @@ provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4
 	RW6;RW6 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # 
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf
-#: osm_watch: way id="4357826" version="17"
+#: osm_watch: way id="4357826" version="18"
 #: XXX laut fahrrat/2016-07-28 "Ausführung im Jahr 2017 geplant."
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-11-24_prot-fahrratsitzung4.pdf ("Entwurfsplanung liegt vor" + "Schwierigkeiten")
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf

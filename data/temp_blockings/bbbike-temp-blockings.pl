@@ -28149,7 +28149,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2022-01-17
+#: last_checked: 2022-02-09
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30495,7 +30495,7 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-01-25
+#: last_checked: 2022-02-09
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 EOF
@@ -34433,7 +34433,9 @@ EOF
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (diese oder alle Bauabschnitte)? vvv
 #: add_fragezeichen: Haben die Bauarbeiten bereits begonnen? Sind die Uferwege bereits gesperrt? vvv
+#: osm_watch: way id="4410535" version="21"
 	2::inwork 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
+#: osm_watch: way id="4395450" version="25"
 	2::inwork 7031,12320 6694,12627
 #: add_fragezeichen ^^^
 #: XXX ^^^
@@ -34469,9 +34471,25 @@ EOF
        text  => 'Nostitzstr.: Hochbaustelle, Einbahnstraße zwischen Gneisenaustr. und Baruther Str., offen Richtung Süden',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://www.kiezundkneipe.de/artikel/das-ende-der-lenau-schule (neue Schule ist 2023 fertig)
+#: osm_watch: way id="49233007" version="8"
 #: last_checked: 2022-02-08
 #: check_frequency: 60d
+#: next_check: 2023-01-01
 	q4::inwork; 9552,9602 9588,9827
+EOF
+     },
+     { from  => 1646694000, # 2022-03-08 00:00
+       until => 1683583200, # 2023-05-09 00:00
+       text  => 'Fürstendamm: Bauarbeiten zwischen Zeltinger Platz und Eltviller Str., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, ab 9.3.2022, Gesamtbaumaßnahme bis voraussichtlich Mitte 2023',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1175116.php',
+       data  => <<EOF,
+#: next_check_id: FUERSTENDAMM-2022
+#: by: https://berliner-abendblatt.de/2022/02/09/fuerstendamm/
+#: XXX Wann beginnt der 2. Bauabschnitt: Eltviller Straße bis Oranienburger Chaussee?
+#: next_check: 2022-10-01
+	q4::inwork 2486,25156 2599,25047 2647,25018 2673,25012 2818,25022 2904,24993 3015,24965 3117,24966
 EOF
      },
     );
