@@ -188,11 +188,10 @@ install_perl_testonly_dependencies() {
     else
 	if [ "$CODENAME" = "buster" -o "$CODENAME" = "focal" -o "$CODENAME" = "bullseye" ]
 	then
-	    # Does not compile on newer Linux distributions,
-	    # see https://rt.cpan.org/Ticket/Display.html?id=128085
-	    barcode_zbar_module=
+	    barcode_zbar_module="Barcode::ZBar"
 	else
-	    barcode_zbar_module=Barcode::ZBar
+	    # Does not compile on older Linux distributions,
+	    barcode_zbar_module="Barcode::ZBar~<0.10"
 	fi
 	cpanm --quiet --notest Email::MIME HTML::TreeBuilder::XPath $barcode_zbar_module
     fi
