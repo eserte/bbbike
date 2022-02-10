@@ -426,7 +426,9 @@ function doLeaflet() {
 		var abbrev = overlayDefs[i].abbrev;
 		var val = q.get('l');
 		if (val != null) {
-		    val += ',' + abbrev;
+		    if (!val.match("(^|,)" + abbrev + "(,|$)")) {
+			val += ',' + abbrev;
+		    }
 		} else {
 		    val = abbrev;
 		}
