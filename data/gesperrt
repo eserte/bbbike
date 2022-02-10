@@ -3207,7 +3207,6 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11923,11881 11940,11982
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s 10472,14632 10320,14608
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
-Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
 Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708,11918 20738,11915
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
@@ -3385,6 +3384,8 @@ Landsberger Allee	3nocross::ignrte 12382,13097 12585,13118 12711,13150
 Landsberger Allee -> Ernst-Zinna-Weg: Landsberger Allee	3::igndisp 12382,13097 12585,13118 12564,13216
 Ernst-Zinna-Weg -> Landsberger Allee: Landsberger Allee	3::igndisp 12564,13216 12585,13118 12711,13150
 Straßenbahntrasse	3nocross::ignrte 13635,13605 13702,13634 13854,13701
+Landsberger Allee -> Otto-Ostrowski-Str.: Straßenbahntrasse	3::igndisp 13854,13701 13702,13634 13711,13615
+Otto-Ostrowski-Str. -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13711,13615 13702,13634 13635,13605
 Straßenbahntrasse	3nocross::ignrte 13151,13367 13241,13415 13330,13468
 Landsberger Allee -> An der Brauerei: Straßenbahntrasse	3::igndisp 13330,13468 13241,13415 13279,13323
 An der Brauerei -> Landsberger Allee: Straßenbahntrasse	3::igndisp 13279,13323 13241,13415 13151,13367
