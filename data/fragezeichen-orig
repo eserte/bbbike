@@ -65,7 +65,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausführungsplanung)
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021)
-#: last_checked: 2022-02-08
+#: last_checked: 2022-02-11
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-03-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -831,7 +831,7 @@ Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::proj
 # 
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: source_id: 2147342868 (inaktiv)
-#: last_checked: 2022-02-01
+#: last_checked: 2022-02-11
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 # 
@@ -1822,7 +1822,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: osm_watch: way id="110450333" version="14"
 #: source_id: 2147343384
-#: last_checked: 2022-02-05
+#: last_checked: 2022-02-11
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13892,9365 13849,9310
 # 
@@ -2597,7 +2597,7 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="24"
-#: last_checked: 2022-02-01
+#: last_checked: 2022-02-11
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12049,9781 12053,9793
 # 
@@ -2657,7 +2657,7 @@ Fasanenstr.: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 
 #: osm_watch: way id="764003865" version="4"
 #: osm_watch: way id="764003862" version="16"
 #: priority: #D
-#: last_checked: 2022-02-01 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
+#: last_checked: 2022-02-11 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
 #: check_frequency: 60d vvv
 Karl-Marx-Str.: Markierung von Schutzstreifen (geschützt)	?::inwork; 11831,8989 11880,8955 11998,8872 12063,8826 12150,8764
 Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12150,8764 12318,8645 12330,8636
@@ -2675,29 +2675,11 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12150,8764 123
 #: source_id: viz2021:13.435258,52.480947,05.07.2021,10:00 (Bauarbeiten in Höhe Erkstr. bis Anfang 10/2021) (mittlerweile nur noch bis 14.7.2021) (inaktiv)
 #: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022)
 #: source_id: viz2021:13.435262,52.480879,05.07.2021,10:00 (bis 5.11.2021) (inaktiv)
-#: last_checked: 2022-02-01
+#: last_checked: 2022-02-11
 #: check_frequency: 180d
 #: next_check: 2022-07-31
 # REMOVED (hier realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501 12330,8636
-# 
-#: next_check_id: KARLMARXSTR-2018
-#: by: https://viz.berlin.de/2022/01/verkehrsvorschau-01022022/
-#: by: https://twitter.com/VIZ_Berlin/status/1488418565413871617 (verschoben)
-#: by: https://www.kms-sonne.de/baustellennews
-#: by: https://www.kms-sonne.de/assets/2022/02/Baustellenuebersicht-2022-02.pdf
-#: by: https://berliner-abendblatt.de/2022/02/04/sperrung-flughafenstrasse/
-#: by: https://twitter.com/VIZ_Berlin/status/1491648121176145925 (Sperrung ab 10.2.2022)
-#: XXX Flughafenstraße (Neukölln) Richtung Hermannstraße zwischen Karl-Marx-Straße und Isarstraße: Umbau Karl-Marx-Straße, Fahrtrichtung gesperrt, vom 01.02.2022 08:00 bis 31.07.2022 17:00
-#: XXX Am 1.2.2022 wurde der VIZ-Eintrag wieder entfernt, ohne dass was passiert ist.
-#: source_id: viz2021:13.432818,52.481758,01.02.2022,08:00 (inaktiv)
-#: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00
-#: also_indoor: traffic (G(zu früh+falsche Richtung))
-#: priority: #B
-#: last_checked: 2022-02-01
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2022-02-10
-Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen für den Kfz-Verkehr gesperrt; sind auch Radfahrer betroffen?	?; 12494,8501 12349,8464
 # 
 # REMOVED (weitgehend realisiert) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022) --- #: by: http://www.berliner-woche.de/neukoelln/bauen/neues-von-der-baustelle-arbeiten-auf-der-karl-marx-strasse-ruhen-d143549.html (Bauarbeiten ab April 2018, Briesestr. bis Erkstr.) --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.697573.php (Briese- bis Weichselstr., bis Ende 2021) --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/durch-die-aktion-karl-marx-strasse-treffen-sich-alle-beteiligten-regelmaessig_a196585 (bis Jahresende 2019) --- #: by: https://fahrradfreundliches-neukoelln.de/blog/bericht-vom-7-fahrrat-21-februar-2019 (Baubeginn April/Mai 2019) --- #: by: http://cm.kms-sonne.de/mailing/99/2206225/0/8dc0731155/index.html (8. Baustellennewsletter der Aktion KMS) (Asphaltierung zwischen Briese- und Werbellinstr. am 28. und 29. August 2019) --- #: by: https://www.abendblatt-berlin.de/2019/10/05/berlin-neukoelln-bauarbeiten-am-rathaus-gehen-voran/ (Gehwegarbeiten) --- #: by: https://www.kms-sonne.de/baustellennews/?date=20191023 --- #: osm_watch: way id="629657606" version="7" --- #: last_checked: 2020-09-25 --- #: check_frequency: 60d --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12753,8187 12714,8249
 # REMOVED --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187
@@ -2841,7 +2823,7 @@ Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/sanierte-fusswege-baeume-asphalt-und-weniger-autoverkehr-auf-der-weserstrasse_a314958
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/der-schulweg-auf-der-weserstrasse-bleibt-weiterhin-fuer-die-kinder-gefaehrlich_a334967
 #: by: https://berliner-abendblatt.de/2022/02/03/reuterkiez-2/ (Verkehrskonzept)
-#: last_checked: 2022-02-05
+#: last_checked: 2022-02-11
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-12-31
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
@@ -3620,6 +3602,7 @@ Zillestr./Krumme Str.: Planung einer Fahrradstraße, wo genau?	?::projected 3801,
 #: by: https://berliner-abendblatt.de/2022/01/12/unter-den-linden-arbeiten-haben-begonnen/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/boulevard-unter-den-linden-erneut-nur-einspurig_a333677
 #: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022) (mittlerweile bis 11.2.2022) (mittlerweile bis 13.3.2022)
+#: note: laut rbb bis 11.4.2022
 #: last_checked: 2022-02-09
 #: check_frequency: 40d
 #: next_check: 2022-07-01
@@ -5402,7 +5385,7 @@ Conrad-Blenkle-Str.: südlich der Rudi-Arndt-Str. soll ein Zebrastreifen entstehe
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2022-02-08
+#: last_checked: 2022-02-11
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -5778,6 +5761,7 @@ B96: parallel geführte Kfz-Straße geplant, ehemalige B96 könnte man dann "degrad
 B168: straßenbegleitender Radweg (westliche Seite) in Bau	?::inwork 67495,-21856 67300,-21371 66817,-20600
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=19117
+#: source_id: LS/221-E/22/018 (vorbereitende Arbeiten bis 28.2.2022)
 #: last_checked: 2021-06-27 (mapillary)
 #: check_frequency: 360d
 B158, Oderberg, Brücke über die HOW: Radstreifen geplant	?::projected 53201,51677 53170,51879
@@ -6503,6 +6487,11 @@ zum Am Gutshof: hier soll ein Hinweisschild aufgestellt werden	? 17887,18975 178
 #: check_frequency: 360d
 Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 11049,10816 11159,10769 11220,10744 11275,10723 11463,10642 11690,10543 11721,10530 11754,10516 11949,10414
 # 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_06_0305_0372_online.pdf
+#: XXX Bleibt dieses Stück noch öffentlich befahrbar?
+#: next_check: 2022-03-11
+Gockelweg: Einziehung als öffentliches Straßenland	? 15846,-591 16114,-610 16187,-565
+# 
 #: ignore ^^^
 # 
 ######################################################################
@@ -6937,7 +6926,7 @@ Brunnenallee (Potsdam):genaue Lage? Qualität? Existiert die Straße schon?	?::pro
 #: XXX Friedenauer Höhe (Privatstraße) -> im Amtsblatt, PLZ=12159
 # REMOVED (eingetragen) --- #: XXX Lauterplatz -> im Amtsblatt, PLZ=12159
 #: XXX Hannah-Höch-Weg (evtl. ohne "h") -> laut Amtsblatt mit "h", bei DPAG ebenso, PLZ=12159
-#: last_checked: 2022-01-12 (architektur-urbanistik) vvv
+#: last_checked: 2022-02-06 (architektur-urbanistik) vvv
 #: check_frequency: 120d vvv
 Güterbahnhof Wilmersdorf, Bebauungsplan 7-68: neue Wege werden entstehen	?::projected 6307,7893 5807,7876 5806,7796
 Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten gesperrt und später eine andere Qualität haben	?::projected 6273,7849 5817,7824
@@ -7333,6 +7322,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: by: https://leute.tagesspiegel.de/charlottenburg-wilmersdorf/macher/2021/03/26/164265/streit-um-westkreuzpark-bahn-lehnt-umwidmung-des-gelaendes-ab/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1175370.php
 #: by: https://berliner-abendblatt.de/2022/02/09/vorkaufsrecht-fuer-westkreuzpark-wurde-gekippt/
+#: by: https://berliner-abendblatt.de/2022/02/11/westkreuzpark-linke/
 #: last_checked: 2022-02-09 (Pressemitteilung)
 #: check_frequency: 720d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
@@ -7823,8 +7813,8 @@ Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23305,14914 23110,14945 231
 #: XXX evtl. 10-44 und 10-45 verbinden; könnte das gleiche Bauprojekt sein
 #: XXX Brigitte-Reimann-Str. (PLZ=12629) fehlt in Berlin.coords.data
 #: osm_watch: way id="504240852" version="7"
-#: last_checked: 2022-01-11 (mapillary) vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2022-02-09 (architektur-urbanistik) vvv
+#: check_frequency: 90d vvv
 geplanter Rad- und Fußweg	?::projected 23265,15351 23368,15362
 geplante Straßen bzw. Rad- und Fußweg	?::projected 23391,15298 23324,15292 23280,15244
 Planstraße D: geplante neue Straße, geplanter Name "Brigitte-Reimann-Str."	?::projected 23368,15469 23363,15517 23386,15621

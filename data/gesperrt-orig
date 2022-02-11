@@ -1250,7 +1250,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-02-08
+#: last_checked: 2022-02-11
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -3366,8 +3366,8 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: SIEGFRIED-2021
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/#post-15273 (Bau einer Apartmentanlage, vielleicht wird dann die Straße öffentlich sein?)
-#: last_checked: 2022-01-12 (architektur-urbanistik)
-#: check_frequency: 180d
+#: last_checked: 2022-02-09 (architektur-urbanistik)
+#: check_frequency: 150d
 (Verlängerung der Siegfriedstr.): während der Hochbauarbeiten gesperrt	2::inwork 11664,6796 11488,6781
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
@@ -3431,7 +3431,7 @@ Weserstr.: Einbahnstraßenregelung, für Radfahrer nicht mehr offen	1s:q4:inwork 1
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX vermutlich wird die Straße dauerhaft verschwinden -> dann aus strassen-orig & Berlin.coords.data etc. entfernen
-#: last_checked: 2022-01-23
+#: last_checked: 2022-02-11
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Matthesstr.: Baustelle, keine Durchfahrt möglich	2::inwork 14185,9509 14172,9457
@@ -3675,7 +3675,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-02-02
+#: last_checked: 2022-02-11
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -4079,10 +4079,11 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/hoelzerner-dachstuhl-denkmalgerecht-nachgebaut_a238627 (Eröffnung 2021)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/im-fruehjahr-geht-es-mit-den-arbeiten-im-spreepark-in-grossem-stil-weiter_a295117 (Erwähnung des Eierhäuschens --- Eröffnung nun 2022)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/abbau-des-riesenrads-im-spreepark-fuer-geplante-sanierung-hat-begonnen_a297932 (Erwähnung des Eierhäuschens)
+#: by: https://plus.tagesspiegel.de/berlin/spreepark-zeitplan-verschiebt-sich-eierhauschen-geht-erst-2023-in-betrieb-388960.html (Frühjahr 2023)
 #: priority: #C
 #: last_checked: 2022-01-06
-#: check_frequency: 45d
-# REMOVED --- #: next_check: 2022-01-01
+#: check_frequency: 180d
+#: next_check: 2023-03-01
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
 # 
 # REMOVED (laut PTR-Berlin) --- #: XXX Wann sind die Bauarbeiten beendet? --- #: by: https://residential.jll.de/de/embassy (bezugsfertig Ende 2020) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_47_7145_7272_online.pdf (Grundstücksnummerierungen) --- #: osm_watch: way id="710342475" version="2" --- #: also_indoor: traffic (G) --- #: last_checked: 2020-12-29 (mapillary) --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2020-12-31 --- Am Köllnischen Park: Bauarbeiten, Fahrbahn gesperrt	2s:q3:inwork 11197,11882 11155,11750
@@ -4416,8 +4417,8 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: XXX Johannisplatz
 #: XXX Aaron-Bernstein-Platz
 # REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7"
-#: osm_watch: way id="940764588" version="2"
-#: osm_watch: way id="940764584" version="1"
+#: osm_watch: way id="940764588" version="3"
+#: osm_watch: way id="940764584" version="2"
 #: last_checked: 2022-01-25
 #: check_frequency: 360d
 #: next_check: 2023-06-30

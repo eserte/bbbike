@@ -965,7 +965,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,12.01.2022,11:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-02-06
+#: last_checked: 2022-02-11
 #: check_frequency: 60d
 #: next_check: 2022-06-30
 # REMOVED --- provisorischer gemeinsamer Geh- und Radweg	RW2;
@@ -6204,7 +6204,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünmarkierung geben
-#: last_checked: 2022-02-01 vvv
+#: last_checked: 2022-02-11 vvv
 #: check_frequency: 60d
 Gelbmarkierung	RW3;RW3 12639,8344 12598,8390
 	RW4; 12639,8344 12689,8289 12714,8249
@@ -6250,7 +6250,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
-#: last_checked: 2022-01-16
+#: last_checked: 2022-02-11
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -6962,14 +6962,14 @@ asphaltiert	RW1; 25522,4935 25519,4830
 	RW3; 16669,25373 16583,25440 16485,25516
 	RW4; 16485,25516 16414,25575
 #: next_check_id: KARLMARXSTR-2018
-#: XXX wann und wie wird die Radspur verstetigt?
-#: XXX vermulich wird die Radspur bei der Baustellenumstellung Anfang Februar 2021 wieder entfernt
-#: last_checked: 2022-02-01
-#: check_frequency: 60d
-#: next_check: 2022-02-10
-provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
-#: note: die Radspur fängt bereits einige Meter vor der Weichselstr. an
-	RW4; 12330,8636 12318,8645 12150,8764 12063,8826 11998,8872 11880,8955
+#: XXX Zwischendurch eine provisorische Radspur, wurde bei der Baustellenumstellung Anfang Februar 2021 wieder entfernt
+#: last_checked: 2022-02-11
+#: check_frequency: 120d
+#: next_check: 2022-07-31
+# REMOVED --- provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
+# REMOVED ---	RW4; 12330,8636 12318,8645
+	RW0; 12494,8501 12330,8636 12318,8645
+	RW4; 12318,8645 12150,8764 12063,8826 11998,8872 11880,8955
 	RW1; 11880,8955 11831,8989
 	RW4; 11831,8989 11880,8955
 geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12150,8764

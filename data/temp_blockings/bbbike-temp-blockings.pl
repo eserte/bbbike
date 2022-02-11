@@ -26306,16 +26306,22 @@ EOF
 	2::inwork 11980,24276 12015,24351 12108,24547 12136,24607 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570
 EOF
      },
-     { from  => 1486676031, # 2017-02-09 22:33
-       until => 1487026800, # 2017-02-14 00:00
-       text  => 'Scheidemannstr.: wegen der Bundespräsidentwahl zwischen Yitzhak-Rabin-Str. und Ebertstr. gesperrt (bis zum 13.02.2017)',
+     { from  => $isodate2epoch->("2022-02-10 07:00:00"), # 1486676031, # 2017-02-09 22:33
+       until => $isodate2epoch->("2022-02-11 23:00:00"), # 1487026800, # 2017-02-14 00:00
+       text  => 'Regierungsviertel: mögliche Sperrungen wegen der Bundespräsidentwahl, 11.02.2023 zwischen 07:00 und 23:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
+# REMOVED ---		2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
 # REMOVED ---	3 8369,12609 8373,12416 8391,12389
-	3 8391,12389 8400,12417 8399,12610
+# REMOVED ---		3 8391,12389 8400,12417 8399,12610
 # REMOVED ---	3 8391,12389 8373,12416 8369,12609
-	3 8399,12610 8400,12417 8391,12389
+# REMOVED ---		3 8399,12610 8400,12417 8391,12389
+#: by: https://viz.berlin.de/2022/02/verkehrsvorschau12-13022022/
+	2::temp 8399,12610 8369,12609 8306,12609 8207,12606
+	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279
+	2::temp 8306,12609 8309,12758
+	2::temp 8415,12749 8309,12758 8252,12757 8206,12757
 EOF
      },
      { from  => 1488649671, # 2017-03-04 18:47
@@ -32765,14 +32771,14 @@ EOF
 	q4::temp::play 11258,10682 11334,10527
 EOF
      },
-     { from  => 1622844000, # 2021-06-05 00:00
-       until => 1633039199, # 2021-09-30 23:59
-       text  => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer Spielstraße sonntags 14 bis 18 Uhr, 6. Juni 2021 bis 30. September 2021, außer in den Sommerferien',
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-31 00:00:00") }, # 1 Tag Vorlauf
+       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-30 18:00:00") },
+       text  => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer sonntags zwischen 14 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.6. bis 30.9',
        type  => 'handicap',
+       recurring => 1,
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
-#: XXX wird diese Spielstraße verstetigt?
-#: next_check: 2022-05-31
+# REMOVED (ja, Schilder hängen) --- #: XXX wird diese Spielstraße verstetigt? --- #: next_check: 2022-05-31
 	q4::temp::play 12286,9739 12398,9938
 EOF
      },

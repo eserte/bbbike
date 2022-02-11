@@ -514,11 +514,11 @@ Volkmarstr.: Asphalt	Q0 9687,5237 9703,5274
 Volkmarstr.: Kopfsteinpflaster	Q2 9703,5274 9974,5385 10230,5498
 Str. 229: Kopfsteinpflaster mit asphaltierten Banketten	Q1- 11073,4342 11153,4325
 Str. 229: Kopfsteinpflaster mit asphaltierten Banketten	Q2+ 11153,4325 11244,4325
-Reuterstr.: Kopfsteinpflaster	Q2 12148,9209 12146,9384 12148,9426 12150,9545
+Reuterstr.: Kopfsteinpflaster	Q2;Q2- 12148,9209 12146,9384 12148,9426 12150,9545
 Lenaustr.: Kopfsteinpflaster	Q2 12148,9426 12047,9429 11954,9415 11803,9390
 Pflügerstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster	Q2- 12481,9390 12333,9470 12316,9477 12150,9545 12066,9558 11934,9538
 Pflügerstr.: Kopfsteinpflaster	Q2 11934,9538 11757,9509
-Liberdastr.: Kopfsteinpflaster	Q2 12150,9545 12207,9632 12250,9691
+Liberdastr.: Kopfsteinpflaster	Q2- 12150,9545 12207,9632 12250,9691
 Fuldastr.: Kopfsteinpflaster	Q2 12902,9066 12836,8980 12740,8862
 Reuterstr.: Kopfsteinpflaster	Q2- 12195,8436 12216,8323
 Torfstr.: Kopfsteinpflaster	Q2; 6626,15104 6652,15073
@@ -2194,8 +2194,8 @@ Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12765,8605 12822,8675
 Schandauer Str.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 13105,8720 12954,8840
 Laubestr.: Kopfsteinpflaster	Q2 12982,8564 12822,8675
 Neckarstr.: Asphalt	Q0 12639,8344 12509,8318
-Neckarstr.: Verbundsteinpflaster	Q1+ 12509,8318 12382,8292
-Isarstr.: Verbundsteinpflaster	Q1+ 12382,8292 12368,8356
+Neckarstr.: Betonpflaster	Q0- 12509,8318 12382,8292
+Isarstr.: Betonpflaster	Q0- 12382,8292 12368,8356
 Isarstr.: Kopfsteinpflaster	Q2 12368,8356 12349,8464
 Heidelberger Str.: asphaltiert	Q0 13664,9073 13491,9201
 Lexisstr.: Beton	Q1+ 12987,9481 13063,9422
@@ -12438,6 +12438,7 @@ Frobenstr.: Asphalt mit einigen Rissen	Q0-; 7429,10366 7413,10244
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): Beton	Q0- 12660,11705 12634,11705 12608,11692
 (Retzowstr. - Seydlitzstr.): Betonpflaster	Q0- 6391,2200 6511,2284
 An der alten Gärtnerei: Asphalt	Q0 11046,3895 11053,3828 11019,3786 10972,3779 10958,3710
+Lübbener Str.: Asphalt, einige Löcher	Q0- 12729,10515 12608,10294
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -30652,4 +30653,7 @@ Einmündungsbereich asphaltiert	Q0 3936,4014
 Kreuzungsbereich asphaltiert	Q0 3870,3914
 Einmündungsbereich asphaltiert	Q0 3558,3688
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 3375,3559
+Kreuzungsbereich asphaltiert	Q0 12148,9209
+Kreuzungsbereich mit Kreuzungsbereich	Q2- 12368,8356
+Einmündungsbereich asphaltiert	Q0 13405,8737
 #: ignore ^^^

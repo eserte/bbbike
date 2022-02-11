@@ -1929,7 +1929,25 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED ---		2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
+# REMOVED ---	3 8369,12609 8373,12416 8391,12389
+# REMOVED ---		3 8391,12389 8400,12417 8399,12610
+# REMOVED ---	3 8391,12389 8373,12416 8369,12609
+# REMOVED ---		3 8399,12610 8400,12417 8391,12389
+#: by: https://viz.berlin.de/2022/02/verkehrsvorschau12-13022022/
+	2::temp 8399,12610 8369,12609 8306,12609 8207,12606
+	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279
+	2::temp 8306,12609 8309,12758
+	2::temp 8415,12749 8309,12758 8252,12757 8206,12757
+',
+         'from' => 1644472800,
+         'id' => 2849,
+         'text' => 'Regierungsviertel: mögliche Sperrungen wegen der Bundespräsidentwahl, 11.02.2023 zwischen 07:00 und 23:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1644616800
+       },
        undef,
        undef,
        undef,
@@ -3171,7 +3189,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED (ja, Schilder hängen) --- #: XXX wird diese Spielstraße verstetigt? --- #: next_check: 2022-05-31
+	q4::temp::play 12286,9739 12398,9938
+',
+         'from' => 1653948000,
+         'id' => 3371,
+         'recurring' => 1,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
+         'text' => 'Forster Str.: zwischen Reichenberger Str. und Paul-Lincke-Ufer sonntags zwischen 14 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.6. bis 30.9',
+         'type' => 'handicap',
+         'until' => 1664553600
+       },
        undef,
        undef,
        undef,

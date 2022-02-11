@@ -1430,7 +1430,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # REMOVED --- #: next_check_id: KARLMARXSTR-2018 --- #: XXX provisorische Ampel an der Briesestr. während der Bauarbeiten --- #: last_checked: 2020-02-27 --- #: check_frequency: 90d ---	X::inwork 12794,8103
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
-#: osm_watch: node id="7241153386" version="3"
+# REMOVED --- #: osm_watch: node id="7241153386" version="4"
+#: osm_watch: node id="9498243538" version="1"
 #: last_checked: 2022-02-01
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
@@ -2351,7 +2352,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
-#: last_checked: 2022-02-05
+#: last_checked: 2022-02-11
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020

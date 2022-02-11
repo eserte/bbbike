@@ -2224,3 +2224,6 @@ Schaperstr. -> Schaperstr.: Mittelstreifen	3::igndisp 5597,10299 5450,10338 5355
 Schaperstr. -> Joachimsthaler Str.: Mittelstreifen	3::igndisp 5355,10322 5450,10338 5458,10443
 Schaperstr. -> Schaperstr.: Mittelstreifen	3::igndisp 5355,10322 5450,10338 5597,10299
 Am Karlsbad: Anlieger frei	3 7959,10910 8027,11000
+Karl-Marx-Str./Neckarstr.	3nocross::ignrte 12689,8289 12639,8344 12598,8390
+Karl-Marx-Str. -> Neckarstr.: Karl-Marx-Str./Neckarstr.	3::igndisp 12689,8289 12639,8344 12509,8318
+Neckarstr. -> Karl-Marx-Str.: Karl-Marx-Str./Neckarstr.	3::igndisp 12509,8318 12639,8344 12598,8390
