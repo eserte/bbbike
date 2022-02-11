@@ -1942,11 +1942,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	2::temp 8306,12609 8309,12758
 	2::temp 8415,12749 8309,12758 8252,12757 8206,12757
 ',
-         'from' => 1644472800,
+         'from' => 1644645600,
          'id' => 2849,
-         'text' => 'Regierungsviertel: mögliche Sperrungen wegen der Bundespräsidentwahl, 11.02.2023 zwischen 07:00 und 23:00 Uhr',
+         'text' => 'Regierungsviertel: mögliche Sperrungen wegen der Bundespräsidentwahl, 13.02.2023 zwischen 07:00 und 23:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1644616800
+         'until' => 1644789600
        },
        undef,
        undef,

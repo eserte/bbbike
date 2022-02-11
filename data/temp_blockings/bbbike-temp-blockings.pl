@@ -26306,9 +26306,9 @@ EOF
 	2::inwork 11980,24276 12015,24351 12108,24547 12136,24607 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570
 EOF
      },
-     { from  => $isodate2epoch->("2022-02-10 07:00:00"), # 1486676031, # 2017-02-09 22:33
-       until => $isodate2epoch->("2022-02-11 23:00:00"), # 1487026800, # 2017-02-14 00:00
-       text  => 'Regierungsviertel: mögliche Sperrungen wegen der Bundespräsidentwahl, 11.02.2023 zwischen 07:00 und 23:00 Uhr',
+     { from  => $isodate2epoch->("2022-02-12 07:00:00"), # 1486676031, # 2017-02-09 22:33
+       until => $isodate2epoch->("2022-02-13 23:00:00"), # 1487026800, # 2017-02-14 00:00
+       text  => 'Regierungsviertel: mögliche Sperrungen wegen der Bundespräsidentwahl, 13.02.2023 zwischen 07:00 und 23:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED ---		2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
@@ -31347,7 +31347,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php --- #: by: https://www.kms-sonne.de/projekte/blueberry-inn/ --- #: XXX voraussichtlich ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen --- #: last_checked: 2020-07-26 --- #: check_frequency: 360d --- #: next_check: 2023-01-01
-	2::inwork 12165,8566 12287,8602
+	2::inwork 12165,8566 12276,8590 12274,8607
 EOF
      },
      { from  => 1595714400, # 2020-07-26 00:00

@@ -3586,16 +3586,7 @@ Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,46
 # 
 # REMOVED (Bauzaun offen) --- #: last_checked: 2021-09-09 --- #: check_frequency: 90d --- Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,4817 18306,4753 18331,4744 18497,4529
 # REMOVED --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2021) --- #: last_checked: 2021-01-02 --- #: check_frequency: 30d --- #: next_check: 2021-06-01 --- (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
-# 
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php
-#: by: https://www.kms-sonne.de/projekte/blueberry-inn/
-#: by: https://www.berliner-woche.de/neukoelln/c-bauen/in-anderthalb-jahren-soll-das-neue-blueberry-inn-an-der-reuterstrasse-fuer-kinder-und-jugendliche-oeffnen_a327431 (neuer Weg ist fast fertig, Eröffnung Anfang 2022)
-#: XXX ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen
-#: last_checked: 2022-02-01
-#: check_frequency: 120d
-#: next_check: 2023-01-01
-#: valid: -20231231
-Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12165,8566 12287,8602
+# REMOVE (Weg offen) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php --- #: by: https://www.kms-sonne.de/projekte/blueberry-inn/ --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/in-anderthalb-jahren-soll-das-neue-blueberry-inn-an-der-reuterstrasse-fuer-kinder-und-jugendliche-oeffnen_a327431 (neuer Weg ist fast fertig, Eröffnung Anfang 2022) --- #: XXX ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen --- #: last_checked: 2022-02-01 --- #: check_frequency: 120d --- #: next_check: 2023-01-01 --- #: valid: -20231231 --- Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12165,8566 12276,8590 12274,8607
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-EISNER-2020
 #: next_check_id: BUCKOWERCHAUSSEE-2022

@@ -1544,7 +1544,10 @@ Im Gestell: Fußgänger	q1 371,4453 267,4375
 Heinitzweg: Fußgänger	q2 10325,1083 10379,1097
 #: XXX_prog Bordstein ist am südlichen Wendehammer, ansonsten trotzdem q1
 Haewererweg: enge Durchfahrt, niedriger Bordstein	q1 12125,1282 12097,1243
-(Weichselstr. - Sasarsteig): Spielplatz, Radfahren verboten	q4+ 12287,8602 12165,8566
+#: note: keine Schilder (Stand Februar 2022) vvv
+(Weichselstr. - Sasarsteig): enger Durchgang	q4+ 12330,8636 12300,8613 12274,8607
+(Weichselstr. - Sasarsteig): Fußgänger	q3 12274,8607 12276,8590 12165,8566
+#: note ^^^
 #: note: mittlerweile werden Radfahrer offiziell über den Platz geführt
 Kaiser-Wilhelm-Platz: einige Fußgänger	q2 7201,8870 7307,8945
 Kernhofer Str.: Fußgänger, Supermarkt	q2 15380,10946 15355,10875
