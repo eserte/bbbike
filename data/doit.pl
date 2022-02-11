@@ -413,6 +413,30 @@ sub action_old_bbbike_data {
 
 ######################################################################
 
+# note: not run in action_all
+sub action_last_checked_vs_next_check {
+    require Strassen::Core;
+    binmode STDERR, ":utf8"; # XXX "localize" change?
+    my $fails = 0;
+    for my $f (bsd_glob("$datadir/*-orig"), "$persistenttmpdir/bbbike-temp-blockings.bbd") {
+	print STDERR "$f... ";
+	my $file_fails = 0;
+	Strassen->new_stream($f)->read_stream
+	    (sub {
+		 my($r, $dir) = @_;
+		 if ($dir->{last_checked} && $dir->{next_check} && $dir->{last_checked}[0] gt $dir->{next_check}[0]) {
+		     print STDERR "\n  $r->[Strassen::NAME()] $dir->{last_checked}[0] $dir->{next_check}[0]";
+		     $file_fails++;
+		 }
+	     });
+	print STDERR ($file_fails ? "\n--> ERROR" : "OK"), "\n";
+	$fails += $file_fails;
+    }
+    error "Failures seen\n" if $fails;
+}
+
+######################################################################
+
 sub action_doit_update {
     my $d = shift;
     my $doitsrc  = "$ENV{HOME}/src/Doit/lib";
