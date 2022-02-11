@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.74;
+$VERSION = 1.75;
 
 use vars qw(%images);
 
@@ -171,6 +171,12 @@ sub register {
 	       : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
 	      ),
 	      ($images{FIS_Broker} ? (icon => $images{FIS_Broker}) : ()),
+	    };
+	$main::info_plugins{__PACKAGE__ . "_LGB"} =
+	    { name => "LGB Brandenburg Topo DTK10",
+	      callback => sub { showmap_mapcompare(@_, maps => 'lgb-topo-10') },
+	      callback_3_std => sub { showmap_url_mapcompare(@_, maps => 'lgb-topo-10') },
+	      ($images{BRB} ? (icon => $images{BRB}) : ()),
 	    };
     }
     $main::info_plugins{__PACKAGE__ . "_BKG"} =
@@ -683,6 +689,27 @@ AAAldEVYdGRhdGU6bW9kaWZ5ADIwMjEtMTItMTJUMTc6MjQ6MTQrMDE6MDBKntRkAAAAAElFTkSu
 QmCC
 EOF
     }
+
+    if (!defined $images{BRB}) {
+	# wget 'https://geoportal.brandenburg.de/typo3conf/ext/di_gpstyleguide/Resources/Public/Images/favicon.ico'
+	# scaled using gimp to 16x16 using the technique described here: https://graphicdesign.stackexchange.com/a/92675/172122
+	# called base64 on the exported png
+	$images{BRB} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5gILFQMgq6aUzgAAAetJREFUOMudkz1oFFEUhb+dZTeJ
+SSNpFAlCCiWdfwgWIqYQsbAKIgg2KeyChZWFhSB2EjvLkEIQQTtRkBgSSCMaEESEgBEFY7KYTbI/
+M7Mz81lkRpZoIPjg8t7lvnvfeeeeWxKMgQAw38tAApTyM3nsXyugXCE2ZbOT0L57j8bQQbI8eU8r
+Apv3J91St0yM1fTzsmFlwA5ol2U7TBDBBvhz6Z2riwuGI8fV2NbsK6Oui39bScEgBapAz9M5BpaW
+qX5aJDx9huDcBcqnjmHOR9qFOiMgRjqVEqT5K/H5S7bm35qBKZjW6jZnXtrogtzJY4XfKr4gmID1
+jW8mhw+Zgc3Ry26p7ZFhozwx2u6Y5sUE6eTVErAxcdPGi3mT3E+eP7Gu/pp+7PrUtLWpZ66N3zDJ
+c1KQtIvh+thVv6jxlbE/5MXXxm0/euiPMHFFTda+2wHDAkEb/HprwhW1pdbUzdt33Ci4AFsBfnDD
+WI0GB03zAhkY9AIHZt8zOPOanjikhwZpf5O+XH0p0JfB0YvXKa+tki3MER84QhXIANpd7CZgWN1n
+Wi0b7eh7VPAy+cBQjYeGjcFSBu5FtubyzgiI5t8Q9A8QnDgJ7qq03a1+dtRW7aNRUNlGsJeZKVAm
+hTJ799MbrvNfBYpprQC/AQyAoLWdM9PPAAAAAElFTkSuQmCC
+EOF
+    }
 }
 
 ######################################################################
@@ -890,6 +917,7 @@ sub showmap_url_mapcompare {
 
     my $profile = delete $args{profile};
     my $maps = delete $args{maps};
+    $maps = [$maps] if $maps && ref $maps ne 'ARRAY';
 
     my $px = $args{px};
     my $py = $args{py};
@@ -955,10 +983,13 @@ sub show_mapcompare_menu {
     $link_menu->command
 	(-label => 'Newest eight only',
 	 -command => sub {
+	     # note: berlin-historical-2020 and lgb-satellite-color is
+	     # the same imagery from 2020, but the lgb version covers
+	     # whole of Brandenburg
 	     showmap_mapcompare
 		 (maps => [qw(
 				 berlin-historical-2021
-				 berlin-historical-2020
+				 lgb-satellite-color
 				 berlin-historical-2019
 				 berlin-historical-2018
 				 berlin-historical-2017
