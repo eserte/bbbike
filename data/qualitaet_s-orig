@@ -607,7 +607,7 @@ Alt-Buch: Asphalt	Q0 17011,25830 16847,25778 16602,25646 16593,25640 16414,25575
 Müggelseedamm: Kopfsteinpflaster, OK	Q1 26620,4936 26971,5025 27097,5108
 Dahlwitzer Landstr.: Asphalt	Q0 25584,6029 25579,5958
 Auguste-Viktoria-Str.: Fahrbahn Kopfsteinpflaster, Radwege Verbundsteinpflaster	Q1- 2685,8819 2680,8608 2678,8571 2668,8372
-Auguste-Viktoria-Str.: Beton	Q0 3733,18376 3909,18342 4009,18322
+Auguste-Viktoria-Str.: Beton	Q0 3733,18376 3876,18348 3909,18342 4009,18322
 Hüttenweg: Kleinsteinpflaster	Q1 1573,5152 1964,5070
 #: note: und in der kälteren Jahreszeit kann es an einigen Stellen leicht matschig sein
 Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig, Wurzeln	Q2 20872,7268 20892,7236 20867,7165 20869,7116 21409,6731 21576,6644
@@ -1024,7 +1024,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-02-09
+#: last_checked: 2022-02-12
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1168,10 +1168,13 @@ Corinthstr.: Kopfsteinpflaster	Q2+ 14608,10409 14447,10491
 (zum Mergenthalerring): holpriger Sandweg	Q2 14700,8368 14688,8355
 (zum Mergenthalerring): Verbundsteinpflaster	Q1 14688,8355 14563,8243
 (zum Mergenthalerring): Asphalt	Q0 14419,8112 14425,8116 14563,8243 14422,8407 14469,8455 14560,8528
-Allée St. Exupéry: Betonpflaster	Q1 3213,18115 3174,18090 3108,18103
+Allée St. Exupéry: Betonpflaster	Q1- 3213,18115 3174,18090 3108,18103
 Allée St. Exupéry: Asphalt	Q0 3108,18103 2964,18068 2848,18041
-Nordufer Flughafensee: Betonpflaster	Q1 3108,18103 2848,18138 2839,18131
-Nordufer Flughafensee: Waldweg, OK	Q1 2839,18131 2819,18130 2792,18130 2768,18147 2747,18162 2226,18228
+Nordufer Flughafensee: Betonpflaster	Q1- 3108,18103 2883,18136 2855,18132
+Nordufer Flughafensee: Waldweg, OK	Q1- 2855,18132 2829,18126
+Nordufer Flughafensee: Holzbohlen	Q1 2829,18126 2797,18126 2790,18139
+Nordufer Flughafensee: Waldweg, OK	Q1- 2790,18139 2771,18157 2226,18228
+Ostufer des Flughafensees: Betonpflaster	Q1- 2855,18132 2840,18121 2820,17991
 Maienwerderweg: etwas welliger Asphalt	Q0- 2731,18729 2723,18675 2622,18546 2440,18440
 Maienwerderweg: teils Waldweg (OK), teils mäßiger Asphalt	Q1 2440,18440 2284,18310 2243,18274 2226,18228 1547,17726 1270,17566 660,17352 281,17236 130,17187
 #: by: Thomas Thomas
@@ -8548,10 +8551,11 @@ Letterhausweg: Asphalt	Q0- 2111,14235 2087,14078
 #: by: https://www.berliner-woche.de/charlottenburg-nord/c-bauen/umgestaltung-des-gruenzugs-zwischen-halemweg-und-popitzweg-startet_a254857
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=687886#post687886
 #: by: https://www.berliner-woche.de/charlottenburg-nord/c-bauen/infoabend-zum-staedtebau_a318865
-#: last_checked: 2021-07-31 (mapillary)
-#: check_frequency: 60d
+#: note: laut Baustellenschild Bauzeit des jetzigen Bauabschnitts: 2021-2022
+#: last_checked: 2022-02-12
+#: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-04-01
-(Popitzweg - Halemweg): Kleinsteinpflaster	Q1- 1884,14412 2126,14392 2254,14387 2376,14392
+(Popitzweg - Halemweg): etwas unebenes Kleinsteinpflaster	Q1- 1884,14412 2126,14392 2254,14387 2371,14392
 (Haeftenzeile - Weg über der U-Bahn): Gehwegplatten	Q0- 2135,14475 2126,14392
 Heinickeweg: Asphalt	Q0 2207,14576 2210,14696 2224,14825
 An der Mäckeritzbrücke: Verbundsteinpflaster	Q1+ 1232,15804 1164,15902 1141,15949
@@ -12441,6 +12445,12 @@ An der alten Gärtnerei: Asphalt	Q0 11046,3895 11053,3828 11019,3786 10972,3779 1
 Lübbener Str.: Asphalt, einige Löcher	Q0- 12729,10515 12608,10294
 Weichselstr. - Sasarsteig: Verbundsteinpflaster	Q1 12330,8636 12300,8613 12274,8607
 Weichselstr. - Sasarsteig: Mosaikpflaster	Q1 12274,8607 12276,8590 12165,8566
+(Weg am Kienhorstgraben): Asphalt	Q0 3876,18348 3799,18159 3723,17979
+#: XXX Wird dieser Abschnitt auch asphaltiert?
+#: osm_watch: way id="5059946" version="4"
+#: last_checked: 2022-02-12
+#: check_frequency: 150d
+(Weg am Kienhorstgraben): unbefestigter Weg, Schotter	Q2 3723,17979 3706,17931
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13871,7 +13881,9 @@ Buchstr.: Asphalt	Q0 6596,14740 6445,14893
 Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6226,13951 6394,14085 6487,14156 6677,14219 6956,14288 6992,14251
 #: corrected_by: srt (OK -> normal)
 Holsteiner Ufer: Kopfsteinpflaster	Q2+ 6182,12900 6347,12901 6449,12865 6575,12778
-Holsteiner Ufer: mäßiges Kopfsteinpflaster	Q2 6575,12778 6694,12627
+#: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 -> ...)
+Holsteiner Ufer: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 6575,12778 6631,12707
+Holsteiner Ufer: mäßiges Kopfsteinpflaster	Q2 6631,12707 6694,12627
 #: note: die ADFC-Karte sagt hierzu: mäßig geeignet
 Rathenower Str.: Asphalt	Q0 6730,14021 6719,14047
 #: confirmed_by: srt
@@ -15561,7 +15573,7 @@ Goebelstr.: Asphalt	Q0 1871,14561 1751,14562 1646,14583 1406,14686 1282,14710 12
 #: confirmed_by: srt
 Popitzweg: sehr guter Asphalt	Q0 1361,14431 1881,14425
 #: corrected_by: srt (Asphalt -> )
-Dahrendorfzeile: Beton	Q0 2597,14288 2680,14287
+Dahrendorfzeile: Beton	Q0 2591,14296 2680,14287
 #: corrected_by: srt (Asphalt -> )
 Hofackerzeile: Asphalt	Q0 2657,14486 2769,14482
 Habermannzeile: Beton	Q0 2671,14653 2806,14645
@@ -19645,7 +19657,7 @@ Herthastr. (Pankow): schlechtes Kopfsteinpflaster	Q3 11908,16410 12077,16380
 # 
 #: by: Helga Rief:
 #: confirmed_by: rj & srt
-Klixstr.: schlechtes Kopfsteinpflaster	Q3 3833,17929 3871,18144 3909,18342
+Klixstr.: sehr schlechtes Kopfsteinpflaster	Q3- 3833,17929 3871,18144 3909,18342
 # 
 #: by: Sofian Salam:
 #: confirmed_by: srt (zumindest der südliche Abschnitt)
@@ -21933,7 +21945,7 @@ Rapsstr.: Kopfsteinpflaster	Q2 755,15123 702,15274 693,15335 665,15414 659,15469
 #: by: http://www.infravelo.de/projekt/wilhelm-von-siemens-park/ (Sanierung des Verbundsteinpflasters, 2. Quartal 2021 - 4. Quartal 2022)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1146290.php (Bauarbeiten im Park ab 15.11.2021 für insgesamt 1 1/2 Jahre, Sanierung einiger Wege, möglicherweise auch hier)
 #: XXX Verbesserung der Qualität
-#: last_checked: 2021-11-15 (Start Bauarbeiten)
+#: last_checked: 2022-02-12
 #: check_frequency: 120d
 #: next_check: 2023-05-31
 Dihlmannstr.: Fahrbahn Kopfsteinpflaster, paralleler Radweg Verbundsteinpflaster	Q1- 1065,15229 976,15195 971,15193 851,15155 755,15123 651,15091
@@ -22169,11 +22181,12 @@ Schirmvogelweg: Asphalt	Q0 14854,3587 14859,3602 14957,3696 15055,3787 15103,383
 Rademeierweg: guter Asphalt	Q0 11372,706 11237,773 11078,844
 # 
 #: by: Jörg Henke vvv
-#: confirmed_by: srt (nördlicher Abschnitt)
-Bocholter Weg: guter Beton	Q0 964,18321 1015,18419 1117,18557 1230,18698
+#: corrected_by: srt (Q0 -> ...)
+Bocholter Weg: guter Beton	Q0- 964,18321 1015,18419 1117,18557 1230,18698
 Polsumer Pfad: guter Beton	Q0 1082,18389 1169,18533
 Selmer Pfad: guter Beton	Q0 1117,18557 1169,18533 1198,18520 1225,18508 1281,18487
-Dattelner Weg: guter Beton	Q0 1015,18419 1082,18389 1153,18359 1221,18332
+#: corrected_by: srt (Q0 -> ...)
+Dattelner Weg: guter Beton	Q0- 1015,18419 1082,18389 1153,18359 1221,18332
 Seppenrader Weg: betoniert	Q0 1153,18359 1225,18508
 #: confirmed_by: srt
 Dülmener Pfad: betoniert	Q0 1198,18520 1290,18679
@@ -24593,7 +24606,7 @@ Gravensteinstr.: Verbundsteinpflaster	Q1; 12229,22457 12185,22465
 # 
 #: by: R.H. (berima...):
 #: confirmed_by: srt (teilweise, entweder Asphalt/Beton)
-Heilmannring: guter Asphalt	Q0- 1871,14561 1881,14425 1884,14412 1906,14326 1984,14255 2111,14235 2384,14237 2548,14248 2597,14288 2657,14486 2671,14653 2673,14756
+Heilmannring: guter Asphalt	Q0- 1871,14561 1881,14425 1884,14412 1906,14326 1984,14255 2111,14235 2378,14249 2526,14252 2591,14296 2657,14486 2671,14653 2673,14756
 # 
 #: by: Alexander Stokowski:
 #: confirmed_by: srt
@@ -26519,7 +26532,7 @@ Oppenheimer Weg: Asphalt	Q0- 3416,25311 3387,25331 3266,25374 3225,25374
 #: confirmed_by: srt
 Werdohler Weg: Asphalt	Q0 1278,18307 1301,18297 1390,18256
 #: corrected_by: srt (Asphalt -> Beton)
-Werdohler Weg: guter Beton	Q0 1390,18256 1457,18237 1524,18221 1596,18214 1672,18205 1760,18200 1848,18199 1936,18209 2022,18225
+Werdohler Weg: guter Beton	Q0- 1390,18256 1457,18237 1524,18221 1596,18214 1672,18205 1760,18200 1848,18199 1936,18209 2022,18225
 #: corrected_by: srt: (Asphalt -> Beton)
 Borkener Weg: Beton	Q0 1375,18209 1390,18256 1448,18436 1507,18629
 #: by: ^^^
@@ -30658,4 +30671,6 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 3375,3559
 Kreuzungsbereich asphaltiert	Q0 12148,9209
 Kreuzungsbereich mit Kreuzungsbereich	Q2- 12368,8356
 Einmündungsbereich asphaltiert	Q0 13405,8737
+Kreuzungsbereich asphaltiert	Q0 3871,18144
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 11290,10972
 #: ignore ^^^

@@ -188,7 +188,7 @@ Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
-#: last_checked: 2022-01-21 (osm)
+#: last_checked: 2022-02-12
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -224,7 +224,7 @@ Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehw
 #: check_frequency: 60d
 #: next_check: 2022-06-30
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456
-#: last_checked: 2021-12-11
+#: last_checked: 2022-02-12
 #: check_frequency: 90d
 #: next_check: 2022-06-30
 Chausseestr.: gemeinsamer Geh- und Radweg	q2::inwork; 8442,14456 8406,14507 8336,14586
@@ -278,7 +278,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-01-10 (daf)
+#: last_checked: 2022-02-12
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -324,7 +324,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: source_id: 2147343824 (bis 30.6.2021)
 #: source_id: viz2021:13.379936,52.514077,04.03.2019,08:00 (bis 30.6.2021)
 #: add_fragezeichen: Sind die Bauarbeiten hier beendet?
-#: last_checked: 2022-01-16 (daf)
+#: last_checked: 2022-02-12
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-06-30
 # REMOVED --- #: valid: 20191218-20210531
@@ -2389,7 +2389,9 @@ Straße 618: schmale Straße	q1 16346,481 16320,538 16297,592
 Harry-Liedtke-Pfad: einige Fußgänger	q1 15788,1747 15783,1820 15806,1903 15834,2024 15843,2065 15836,2113
 #: XXX_prog BS auf Nordseite (nicht allzu hoch), vielleicht auch auf der Südseite?
 Gormannstr.: Bordstein	q2 10350,13376 10353,13384
-(Popitzweg - Halemweg): Fußgänger	q2 1884,14412 2126,14392 2254,14387 2376,14392
+(Popitzweg - Halemweg): Fußgänger	q2 1884,14412 2126,14392 2254,14387
+#: XXX_prog BS (ansonsten q2)
+(Popitzweg - Halemweg): Fußgänger, Bordstein	q3 2254,14387 2371,14392
 (Haeftenzeile - Weg über der U-Bahn): Fußgänger	q1 2135,14475 2126,14392
 #: XXX_prog BS auf Nordseite
 (Wohlrabedamm - Reisstr.): Bordstein	q2 1311,14191 1314,14207
@@ -3865,6 +3867,8 @@ Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
 #: note: Radfahren auf dem Uferweg ist wohl Sitte; an einigen Stellen als "Grünanlage" ausgeschildert
 (Uferweg am Paul-Lincke-Ufer): Fußgänger, besonders an schönen Tagen	q2- 11735,10022 11756,9990 11948,9895 12045,9843 12116,9825 12165,9786 12280,9728 12432,9652 12596,9587 12639,9547 12703,9522 12718,9529
 (Uferweg - Lausitzer Str.): Rampe, enge Kurven	q3 11948,9895 11946,9913
+#: note: Grünanlage, kein explizites Radfahrverbot
+(Weg am Kienhorstgraben): einige Fußgänger	q3 3876,18348 3799,18159 3723,17979 3706,17931
 # 
 ######################### User Contributions #################################
 # 

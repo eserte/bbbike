@@ -386,7 +386,7 @@ Alt-Buch: Asphalt	Q0 17011,25830 16847,25778 16602,25646 16593,25640 16414,25575
 Müggelseedamm: Kopfsteinpflaster, OK	Q1 26620,4936 26971,5025 27097,5108
 Dahlwitzer Landstr.: Asphalt	Q0 25584,6029 25579,5958
 Auguste-Viktoria-Str.: Fahrbahn Kopfsteinpflaster, Radwege Verbundsteinpflaster	Q1 2685,8819 2680,8608 2678,8571 2668,8372
-Auguste-Viktoria-Str.: Beton	Q0 3733,18376 3909,18342 4009,18322
+Auguste-Viktoria-Str.: Beton	Q0 3733,18376 3876,18348 3909,18342 4009,18322
 Hüttenweg: Kleinsteinpflaster	Q1 1573,5152 1964,5070
 Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig, Wurzeln	Q2 20872,7268 20892,7236 20867,7165 20869,7116 21409,6731 21576,6644
 Wuhlheide: fester Waldweg	Q2 20869,7116 20682,7262 20653,7289
@@ -802,8 +802,11 @@ Corinthstr.: Kopfsteinpflaster	Q2 14608,10409 14447,10491
 (zum Mergenthalerring): Asphalt	Q0 14419,8112 14425,8116 14563,8243 14422,8407 14469,8455 14560,8528
 Allée St. Exupéry: Betonpflaster	Q1 3213,18115 3174,18090 3108,18103
 Allée St. Exupéry: Asphalt	Q0 3108,18103 2964,18068 2848,18041
-Nordufer Flughafensee: Betonpflaster	Q1 3108,18103 2848,18138 2839,18131
-Nordufer Flughafensee: Waldweg, OK	Q1 2839,18131 2819,18130 2792,18130 2768,18147 2747,18162 2226,18228
+Nordufer Flughafensee: Betonpflaster	Q1 3108,18103 2883,18136 2855,18132
+Nordufer Flughafensee: Waldweg, OK	Q1 2855,18132 2829,18126
+Nordufer Flughafensee: Holzbohlen	Q1 2829,18126 2797,18126 2790,18139
+Nordufer Flughafensee: Waldweg, OK	Q1 2790,18139 2771,18157 2226,18228
+Ostufer des Flughafensees: Betonpflaster	Q1 2855,18132 2840,18121 2820,17991
 Maienwerderweg: etwas welliger Asphalt	Q0 2731,18729 2723,18675 2622,18546 2440,18440
 Maienwerderweg: teils Waldweg (OK), teils mäßiger Asphalt	Q1 2440,18440 2284,18310 2243,18274 2226,18228 1547,17726 1270,17566 660,17352 281,17236 130,17187
 (Der Breite Weg): Waldweg mit tiefem Sand, wird auch als Reitweg genutzt	Q3 1464,17373 1547,17726
@@ -7312,7 +7315,7 @@ Goerdelerdamm: Gehwegplatten	Q0 3595,14267 3229,14224 3191,14215 3133,14186 3106
 (Goerdelerdamm - Nonnendamm): Verbundsteinpflaster	Q1 2419,13833 2247,13805 2149,13775
 Nonnendamm: schlechtes Kopfsteinpflaster	Q3 1929,13843 1983,13828
 Letterhausweg: Asphalt	Q0 2111,14235 2087,14078
-(Popitzweg - Halemweg): Kleinsteinpflaster	Q1 1884,14412 2126,14392 2254,14387 2376,14392
+(Popitzweg - Halemweg): etwas unebenes Kleinsteinpflaster	Q1 1884,14412 2126,14392 2254,14387 2371,14392
 (Haeftenzeile - Weg über der U-Bahn): Gehwegplatten	Q0 2135,14475 2126,14392
 Heinickeweg: Asphalt	Q0 2207,14576 2210,14696 2224,14825
 An der Mäckeritzbrücke: Verbundsteinpflaster	Q1 1232,15804 1164,15902 1141,15949
@@ -10845,6 +10848,8 @@ An der alten Gärtnerei: Asphalt	Q0 11046,3895 11053,3828 11019,3786 10972,3779 1
 Lübbener Str.: Asphalt, einige Löcher	Q0 12729,10515 12608,10294
 Weichselstr. - Sasarsteig: Verbundsteinpflaster	Q1 12330,8636 12300,8613 12274,8607
 Weichselstr. - Sasarsteig: Mosaikpflaster	Q1 12274,8607 12276,8590 12165,8566
+(Weg am Kienhorstgraben): Asphalt	Q0 3876,18348 3799,18159 3723,17979
+(Weg am Kienhorstgraben): unbefestigter Weg, Schotter	Q2 3723,17979 3706,17931
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11557,7 +11562,8 @@ Wiclefstr.: Kopfsteinpflaster	Q2 5231,13843 5417,13817 5609,13790 5743,13772 590
 Buchstr.: Asphalt	Q0 6596,14740 6445,14893
 Stephanstr. (Tiergarten): Kopfsteinpflaster	Q2 6226,13951 6394,14085 6487,14156 6677,14219 6956,14288 6992,14251
 Holsteiner Ufer: Kopfsteinpflaster	Q2 6182,12900 6347,12901 6449,12865 6575,12778
-Holsteiner Ufer: mäßiges Kopfsteinpflaster	Q2 6575,12778 6694,12627
+Holsteiner Ufer: mäßiges bis schlechtes Kopfsteinpflaster	Q3 6575,12778 6631,12707
+Holsteiner Ufer: mäßiges Kopfsteinpflaster	Q2 6631,12707 6694,12627
 Rathenower Str.: Asphalt	Q0 6730,14021 6719,14047
 Rathenower Str.: Asphalt mit gepflasterten Bodenschwellen	Q1 6719,14047 6677,14219 6656,14311
 Albrecht-Thaer-Weg: Asphalt	Q0 3350,6467 3449,6863
@@ -12227,7 +12233,7 @@ Goebelplatz: Asphalt	Q0 1873,14650 1974,14646 1974,14565
 Toeplerstr.: Asphalt	Q0 2362,14582 2207,14576 2142,14573 2081,14570 2009,14567 1974,14565 1871,14561
 Goebelstr.: Asphalt	Q0 1871,14561 1751,14562 1646,14583 1406,14686 1282,14710 1226,14714 1134,14721 1042,14721 994,14721
 Popitzweg: sehr guter Asphalt	Q0 1361,14431 1881,14425
-Dahrendorfzeile: Beton	Q0 2597,14288 2680,14287
+Dahrendorfzeile: Beton	Q0 2591,14296 2680,14287
 Hofackerzeile: Asphalt	Q0 2657,14486 2769,14482
 Habermannzeile: Beton	Q0 2671,14653 2806,14645
 Am Heidebusch: Asphalt	Q0 3039,14743 3092,15000
@@ -13590,7 +13596,7 @@ Pfändnerweg: asphaltiert	Q0 -8508,5023 -8406,4983
 Pfändnerweg: sehr viele Straßenschäden	Q2 -8406,4983 -8283,4936
 Fählmannweg: mäßiges Verbundsteinpflaster	Q1 -8508,5023 -8211,5490
 Herthastr. (Pankow): schlechtes Kopfsteinpflaster	Q3 11908,16410 12077,16380
-Klixstr.: schlechtes Kopfsteinpflaster	Q3 3833,17929 3871,18144 3909,18342
+Klixstr.: sehr schlechtes Kopfsteinpflaster	Q3 3833,17929 3871,18144 3909,18342
 Düppelstr.: mäßiges Kopfsteinpflaster	Q2 37,2562 45,2592 45,2644 39,2669 21,2728 12,2752 -49,3003
 Miltenberger Weg: mäßiges Kopfsteinpflaster	Q2 11320,18218 11448,18051
 Darbystr.: guter Asphalt	Q0 -5400,16285 -5449,16153 -5464,16040 -5473,15967 -5505,15859
@@ -15226,7 +15232,7 @@ Gravensteinstr.: Kopfsteinpflaster	Q3 12366,22434 12397,22429
 Gravensteinstr.: Kopfsteinpflaster	Q3; 12185,22465 12229,22457
 Gravensteinstr.: Kopfsteinpflaster	Q3 12229,22457 12257,22452
 Gravensteinstr.: Verbundsteinpflaster	Q1; 12229,22457 12185,22465
-Heilmannring: guter Asphalt	Q0 1871,14561 1881,14425 1884,14412 1906,14326 1984,14255 2111,14235 2384,14237 2548,14248 2597,14288 2657,14486 2671,14653 2673,14756
+Heilmannring: guter Asphalt	Q0 1871,14561 1881,14425 1884,14412 1906,14326 1984,14255 2111,14235 2378,14249 2526,14252 2591,14296 2657,14486 2671,14653 2673,14756
 Sollmannweg: Asphalt	Q0 15010,2032 14993,2029 14865,1952 14846,1940 14627,1902 14549,1922
 Gertrudstr. (Alt-Hohenschönhausen): Kleinkopfsteinpflaster	Q2 15891,16041 15869,16078 15793,16162 15731,16208
 Didostr.: Asphalt	Q0 10165,4386 10178,4477 10183,4583
