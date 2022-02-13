@@ -28,7 +28,7 @@ sub usage (;$) {
     my $msg = shift;
     print STDERR $msg, "\n" if $msg;
     die <<EOF;
-usage: $0 [-o ...] [--vehicle ...] [--brand ...] [--max-time-gap seconds] imagefiles ...
+usage: $0 [-o ...] [--vehicle ...] [--brand ...] [--max-time-gap seconds] [--silent] imagefiles ...
 EOF
 }
 
@@ -36,11 +36,13 @@ my $outfile;
 my $vehicle;
 my $brand;
 my $max_time_gap = 30;
+my $silent;
 GetOptions(
 	   'out-file|o=s' => \$outfile,
 	   'vehicle=s'    => \$vehicle,
 	   'brand=s'      => \$brand,
 	   'max-time-gap=i'   => \$max_time_gap,
+	   's|silent'     => \$silent,
 	  )
     or die usage;
 my @image_files = @ARGV;
@@ -54,8 +56,19 @@ $exiftool->Options(DateFormat => '%Y-%m-%dT%H:%M:%SZ');
 my $device;
 my $name;
 
+my $tp = !$silent && @image_files >= 10 && eval {
+    require Time::Progress;
+    my $tp = Time::Progress->new;
+    $tp->restart(min => 0, max => $#image_files);
+    $tp;
+};
+
 my @trkpts;
+my $image_file_i = 0;
 IMAGE: for my $image_file (@image_files) {
+    print STDERR $tp->report("\r  images done %p elapsed: %L, ETA %E", $image_file_i) if $tp && $image_file_i%10==0;
+    $image_file_i++;
+
     my $info = $exiftool->ImageInfo($image_file);
 
     my $lon = $info->{GPSLongitude};
@@ -175,6 +188,8 @@ if ($outfile) {
     print $gpsman->as_string;
 }
 
+print STDERR "\n" if $tp;
+
 __END__
 
 =head1 NAME
@@ -212,6 +227,12 @@ segment will be created.
 
 Define a output file for the converted GPSMan data. If C<-o> is not
 set, then the output is written to stdout.
+
+=item C<--silent>
+
+Turn progress report off. Progress report is only available if
+L<Time::Progress> is installed, and only if ten or more images have to
+be processed.
 
 =back
 
