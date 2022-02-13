@@ -127,8 +127,8 @@ Lettestr	1 11268,15360 11368,15301 11480,15229
 Kleine Auguststr.	1 10049,13528 9993,13682
 Steinstr. (Mitte)	1 10596,13398 10390,13493 10318,13528 10302,13525
 Roennebergstr.	1 5533,6753 5357,6932
-Matternstr.	1 13798,13003 13579,12904
-Ebelingstr.	1 13707,13206 13610,13169 13487,13115
+Matternstr.	1 13788,13002 13579,12904
+Ebelingstr.	1 13692,13221 13598,13180 13481,13128
 John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12512,14626 12422,14692 12403,14663 12371,14615 12317,14535
 Prenzlauer Allee	3nocross::ignrte 11828,15210 11801,15132 11776,15060 11740,14950 11709,14856
 Prenzlauer Allee -> Stubbenkammerstr.: Prenzlauer Allee	3::igndisp 11776,15060 11801,15132 11631,15192
@@ -2130,8 +2130,6 @@ Jenbacher Weg: f¸r Radfahrer umfahrbare Schranke	3 5418,-98 5665,51 5703,74
 Jenbacher Weg: f¸r Radfahrer umfahrbare Schranke	3 5703,74 5665,51 5418,-98
 Hasenholzer Allee	2:Anlieger 21903,15174 21927,15303
 Straﬂenbahntrasse	3nocross::ignrte 18406,7760 18483,7883 18577,8033 18633,8126
-Treskowallee -> Zufahrt Impfzentrum Trabrennbahn Karlshorst: Straﬂenbahntrasse	3::igndisp 18577,8033 18483,7883 18662,7914
-Zufahrt Impfzentrum Trabrennbahn Karlshorst -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18662,7914 18483,7883 18406,7760
 Treskowallee -> Traberweg: Straﬂenbahntrasse	3::igndisp 18483,7883 18577,8033 18567,8041
 Traberweg -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18567,8041 18577,8033 18633,8126
 Schierker Str. - Karl-Marx-Str.	3 13003,7316 13034,7319 13030,7346

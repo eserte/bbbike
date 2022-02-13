@@ -894,7 +894,7 @@ Ehrenfelsstr.	1s 18737,8686 18778,8663
 Mellenseestr. [Wohngebiet]	1 17587,9655 17633,9793 17633,9898
 Mellenseestr. [Wohngebiet]	1 17777,9649 17738,9822 17738,9922
 Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
-Mühsamstr.	1 13818,12897 13844,12900
+Mühsamstr.	1 13818,12897 13830,12907
 Lilli-Henoch-Str.	1s 12357,15020 12388,14926
 (Weydemeyerstr.): durch Tore abgesperrt	2 11933,12701 11971,12785
 Straßenbahntrasse, Mittelstreifen	3nocross::ignrte 17400,17790 17482,17844 17601,17922 17675,17971
@@ -1538,11 +1538,11 @@ Straßenbahntrasse	3nocross::ignrte 12051,16535 12077,16380 12087,16322 12097,162
 Prenzlauer Promenade -> Herthastr.: Straßenbahntrasse	3::igndisp 12087,16322 12077,16380 11908,16410
 Herthastr. -> Prenzlauer Promenade: Straßenbahntrasse	3::igndisp 11908,16410 12077,16380 12051,16535
 Straßenbahntrasse	3nocross::ignrte 13622,12806 13579,12904 13530,13014
-Petersburger Str. -> Matternstr.: Straßenbahntrasse	3::igndisp 13530,13014 13579,12904 13798,13003
-Matternstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13798,13003 13579,12904 13622,12806
-Straßenbahntrasse	3nocross::ignrte 13530,13014 13487,13115 13434,13234
-Petersburger Str. -> Ebelingstr.: Straßenbahntrasse	3::igndisp 13434,13234 13487,13115 13610,13169
-Ebelingstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13610,13169 13487,13115 13530,13014
+Petersburger Str. -> Matternstr.: Straßenbahntrasse	3::igndisp 13530,13014 13579,12904 13788,13002
+Matternstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13788,13002 13579,12904 13622,12806
+Straßenbahntrasse	3nocross::ignrte 13530,13014 13481,13128 13434,13234
+Petersburger Str. -> Ebelingstr.: Straßenbahntrasse	3::igndisp 13434,13234 13481,13128 13598,13180
+Ebelingstr. -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13598,13180 13481,13128 13530,13014
 Straßenbahntrasse	3nocross::ignrte 13330,13468 13375,13367 13383,13349 13434,13234
 Petersburger Str. -> An der Brauerei: Straßenbahntrasse	3::igndisp 13383,13349 13375,13367 13279,13323
 An der Brauerei -> Petersburger Str.: Straßenbahntrasse	3::igndisp 13279,13323 13375,13367 13330,13468
@@ -2413,8 +2413,6 @@ möglicherweise abgeschlossenes Tor	3 11360,20982 11382,21083 11371,21121
 möglicherweise abgeschlossenes Tor	3 11371,21121 11382,21083 11360,20982
 abgeschlossenes Tor	3 14556,409 14701,0 14710,-25
 abgeschlossenes Tor	3 14710,-25 14701,0 14556,409
-abgeschlossenes Tor	3 8161,7907 8203,7909 8260,7911
-abgeschlossenes Tor	3 8260,7911 8203,7909 8161,7907
 abgeschlossenes Tor	3 20555,15 20561,17 20685,52
 abgeschlossenes Tor	3 20685,52 20561,17 20555,15
 tragen (ca. 33 Stufen)	0:30:-86 20661,12140

@@ -10,12 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-#: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022
-#: also_indoor: traffic (G,B)
-#: last_checked: 2022-01-24 (kartaview)
-#: check_frequency: 45d
-#: next_check: 2022-04-01
-Mühsamstr.: Fahrbahn im Kreuzungsbereich Thaerstr. gesperrt	q4::inwork 13844,12900 13818,12897 13838,12884
+# REMOVED (vorzeitig beendet) --- #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022 --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-01-24 (kartaview) --- #: check_frequency: 45d --- #: next_check: 2022-04-01 --- Mühsamstr.: Fahrbahn im Kreuzungsbereich Thaerstr. gesperrt	q4::inwork 13844,12900 13818,12897 13838,12884
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-ostbahnhof (bis 2025?)
@@ -786,7 +781,7 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: XXX laut Schild bis Dezember 2021 (dauer aber länger)
 #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.2.2022)
 #: also_indoor: traffic (H,B)
-#: last_checked: 2021-12-29
+#: last_checked: 2022-02-13
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2022-02-28
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870

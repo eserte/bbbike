@@ -65,7 +65,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausf¸hrungsplanung)
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021)
-#: last_checked: 2022-02-12
+#: last_checked: 2022-02-13
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-03-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -208,7 +208,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: source_id: LMS-BR_r_LMS-BR_120802_LMS-BR_72 (inaktiv)
 #: source_id: 2147343746 (bis Mitte April 2019) (inaktiv)
 #: osm_watch: way id="698150954" version="10"
-#: last_checked: 2022-02-08
+#: last_checked: 2022-02-13
 # REMOVED (Hochbauarbeiten fertig, trotzdem nichts weiter passiert) --- #: check_frequency: 21d
 # REMOVED --- #: next_check: 2021-06-30
 Hasenheide: hier werden gesch¸tzte Radspuren erstellt, vermutlich erst nach den Hochbauarbeiten	?::projected; 10951,9216 11108,9187 11136,9183
@@ -674,7 +674,7 @@ Marienfelder Allee: Projektplanung f¸r Schutzstreifen	?::projected 8579,2265 856
 #: source_id:LMS-BR_r_LMS-BR_93889
 #: source_id: 2147341183
 #: XXX Ende laut rbbtext: 19. April, laut fritz: 22. April (beide: in Hˆhe Bayernring), laut vmz: Ende April (Gesamtmaﬂnahme), am 2017-04-25 ist aber noch nichts passiert
-#: last_checked: 2022-01-28
+#: last_checked: 2022-02-13
 #: check_frequency: 120d
 Boelckestr.: Planung f¸r Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876
 #: XXX hier vermutlich sp‰ter
@@ -2514,7 +2514,7 @@ XXIII-4a (oder XXIII-4b?): hier wird eine Straﬂe entstehen, Straﬂenname, Qualit‰
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_37_3401_3492_online.pdf (Grundst¸cksnummerierungen)
 #: XXX PLZ laut DPAG-Mitteilungsblatt und LOR 1/2021: 12524
 # REMOVED (laut osm bereits umbenannt) --- #: XXX Planstraﬂe 1 -> Chaukenstr. --- #: XXX der Mittelweg in diesem Bereich wird in Chaukenstr. umbenannt --- #: osm_watch: way id="152354590" version="7"
-#: XXX Planstraﬂe 2 -> Lugierring
+#: XXX Planstraﬂe 2 -> Lugierring (PLZ laut LOR: 12524)
 # REMOVED (construction area -> barrier) --- #: osm_watch: way id="712036105" version="4"
 #: osm_watch: way id="770730608" version="4"
 #: osm_watch: way id="770730612" version="3"
@@ -3157,10 +3157,10 @@ Wilhelmstr. 28 (Spandau): Zebrastreifen geplant	?::projected -4648,12219 -4647,1
 # REMOVED (fast realisiert) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen) --- #: source_id: viz2021:13.384592,52.422147,05.07.2021,09:00 (Bau eines Fuﬂg‰nger¸berwegs, bis 26.8.2021) --- #: source_id: viz2021:13.38453,52.42217,05.07.2021,09:00 (bis 26.8.2021) --- #: last_checked: 2021-03-18 (parlamentarische Anfrage) --- # REMOVED --- #: check_frequency: 120d --- #: next_check: 2021-08-26 --- Daimlerstr./Benzstr.: Zebrastreifen geplant	?::projected 9282,1821 9281,1790 9288,1751
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1004381.php (bereits realisiert) --- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/zebrastreifen-an-der-leberstrasse_a290401 --- #: next_check: 2020-10-05 --- Leberstr./Gustav-M¸ller-Platz: neuer Zebrastreifen, wo genau?	? 7550,8622 7574,8596 7594,8563
 #: XXX hier sind mittlerweile Bauarbeiten --- f¸r den Zebrastreifen?
-#: last_checked: 2022-01-28
+#: last_checked: 2022-02-13
 #: check_frequency: 60d
 Boelckestr./Fritz-Br‰uning-Promenade: Zebrastreifen geplant	?::projected 8596,8043 8623,8018 8654,7994
-#: last_checked: 2022-01-28
+#: last_checked: 2022-02-13
 #: check_frequency: 120d
 Boelckestr./Badener Ring: Zebrastreifen geplant	?::projected 8625,8476 8660,8454 8695,8426
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
@@ -3799,7 +3799,7 @@ Am Lustgarten: in Zukunft nur f¸r Rad- und Fuﬂverkehr offen	? 10054,12699 10094,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_29.04.2021.pdf (gegenl‰ufiger Radweg auf der Monumentenbr¸cke; Fahrradstraﬂe)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-17-06-2021.pdf (Erw‰hnung)
 #: XXX auﬂerdem: ein gegenl‰ufiger Radweg auf der S¸dseite der Monumentenbr¸cke ist geplant
-#: last_checked: 2021-12-29 vvv
+#: last_checked: 2022-02-13 vvv
 #: check_frequency: 60d vvv
 # REMOVED (nicht mehr schaffbar) --- #: next_check: 2020-12-31 vvv
 Freiherr-vom-Stein-Str.: Fahrradstraﬂe geplant	?::projected 5913,8415 5995,8477 6123,8546 6230,8602 6313,8638 6454,8653
@@ -4208,7 +4208,7 @@ Bahnhofstr.: ‰ndert sich bei den Maﬂnahmen etwas f¸r Radfahrer? Wird eine Radspu
 #: by: https://abendblatt-berlin.de/2020/12/03/tempelhof-kreuzberg-der-platz-der-luftbruecke-wird-gruener/
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1025759.php (Beteiligungsveranstaltung)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1027810.php
-#: last_checked: 2022-02-05
+#: last_checked: 2022-02-13
 #: check_frequency: 180d
 Manfred-von-Richthofen-Str.: ‰ndert sich bei den geplanten Umbaumaﬂnahmen etwas f¸r Radfahrer?	?::projected 9229,8718 9158,8706 9099,8670
 # 
@@ -4363,7 +4363,7 @@ Hermann-Hesse-Str.: gesch¸tzte Radfahrstreifen geplant	?::projected 9870,19360 9
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_39_5323_5498_online.pdf
 #: XXX hat das irgendwelche Konsequenzen?
-#: last_checked: 2021-12-26
+#: last_checked: 2022-02-13
 #: check_frequency: 90d
 S¸dkreuz: Einziehung von Straﬂenland	? 7951,7801 7932,7795 7919,7679
 # 
@@ -4706,7 +4706,7 @@ Graunstr. 8: Zebrastreifen geplant	?::projected 9976,15366 9996,15400 10026,1538
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: XXX Mittelinsel existiert, Masten stehen schon
 #: priority: #D
-#: last_checked: 2022-02-12
+#: last_checked: 2022-02-13
 #: check_frequency: 30d
 Schlesische Str./Cuvrystr.: Zebrastreifen in Bau	?::inwork 13255,10397 13249,10445 13242,10497
 # 
@@ -5384,7 +5384,7 @@ Conrad-Blenkle-Str.: s¸dlich der Rudi-Arndt-Str. soll ein Zebrastreifen entstehe
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2022-02-11
+#: last_checked: 2022-02-13
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -6127,7 +6127,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Baubeginn Mitte 2021)
 #: by: https://www.infravelo.de/projekt/karl-marx-allee/ (2. - 4. Quartal 2021)
 #: XXX beide Fahrtrichtungen?
-#: last_checked: 2022-02-12
+#: last_checked: 2022-02-13
 #: check_frequency: 90d
 Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 # 
@@ -6418,7 +6418,7 @@ Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/2020-03-05_vwr_vortrag_hallesches_tor_bund_internet.pdf
 #: XXX mˆgliche Lˆsungen: Bl¸cherstr. wird zur¸ckgebaut (komplett oder nur f¸r den Kfz-Verkehr), Reaktivierung der alten Verbindung Hallesches Tor - Urbanstr., ... dabei Straﬂenbahnplanungen beachten
 #: XXX zurzeit (Dez 2021) gibt es Bauarbeiten s¸dlich der AGB; Radfahrer haben Richtung Westen nun eine Radspur auf etwa 150m L‰nge
-#: last_checked: 2022-01-15
+#: last_checked: 2022-02-13
 #: check_frequency: 1080d
 Bl¸cherstr., Bl¸cherplatz: Umgestaltung	?::projected 9448,10014 9521,10010 9722,10036 9827,10051
 # 
@@ -6483,7 +6483,7 @@ zum Am Gutshof: hier soll ein Hinweisschild aufgestellt werden	? 17887,18975 178
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10213 (Antrag)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10228 (Anfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10239 (Antrag)
-#: last_checked: 2022-02-12
+#: last_checked: 2022-02-13
 #: check_frequency: 360d
 Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 11049,10816 11159,10769 11220,10744 11275,10723 11463,10642 11690,10543 11721,10530 11754,10516 11949,10414
 # 
@@ -7060,20 +7060,23 @@ Lichterfelde S¸d: neue Straﬂen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1142172.php (Baugenehmigungen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1155121.php (Baugenehmigungen)
 #: XXX alle hier aufgef¸hrten Straﬂen fehlen noch bei Berlin.coords.data
-#: XXX Samuel-Lewin-Str. laut DPAG-Mitteilungsblatt PLZ=10318
+#: XXX Samuel-Lewin-Str. laut DPAG-Mitteilungsblatt und LOR PLZ=10318
 #: osm_watch: way id="428279379" version="10" vvv
 #: last_checked: 2022-02-10 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-03-01 vvv
 # REMOVED --- Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue Straﬂen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
 #: XXX dieser Abschnitt fehlt im Amtsblatt 52/2020
+#: XXX laut LOR hat die Irmtraud-Morgner-Straﬂe die PLZ=10318
 Planstraﬂe C: genaue Lage, Qualit‰t? geplanter Name: Irmtraud-Morgner-Str.	?::projected 17534,8545 17621,8544
 Planstraﬂe D: genaue Lage, Qualit‰t? geplanter Name: Irmtraud-Morgner-Str.	?::projected 17752,8520 17621,8544
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8882 (Benennung der Samuel-Lewin-Str.)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_24_2053_2104_online.pdf (Straﬂenbenennung: Samuel-Lewin-Str.)
 Planstraﬂe D1: genaue Lage, Qualit‰t? geplanter Name: Samuel-Lewin-Str.	?::projected 17783,8663 17771,8605 17752,8520 17735,8440
+#: XXX laut LOR PLZ=10318
 Planstraﬂe E: genaue Lage, Qualit‰t? geplanter Name: Ruth-Baumgarte-Str.	?::projected 17794,8429 17735,8440 17668,8454 17604,8466
 Planstraﬂe F: genaue Lage, Qualit‰t? geplanter Name: Adolf-Wermuth-Allee	?::projected 17656,8700 17640,8627 17621,8544 17604,8466 17597,8434
+#: XXX laut LOR PLZ=10318
 Planstraﬂe G: genaue Lage, Qualit‰t? geplanter Name: An der Waldsiedlung	?::projected 17668,8454 17651,8370
 Fuﬂg‰nger- und Radfahrerbereich: genaue Lage, Qualit‰t?	?::projected 17686,8826 17656,8700
 Parkanlage: genaue Lage? Wird es hier Wege geben?	?::projected 17454,8747 17468,8722 17644,8719 17800,8689 17753,8516 17804,8503 17853,8731 17643,8769 17483,8768 17454,8747
@@ -7383,14 +7386,15 @@ Krampnitz: neue Planstraﬂen	?::projected -14183,5214 -13771,5077
 #: by: https://berliner-abendblatt.de/2022/01/12/wird-coral-world-noch-groesser-als-geplant/
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/verordnete-wollen-veraenderte-tierhaltung_a334955
 #: XXX vorgeschlagene Straﬂennamen (fehlen alle bei Berlin.coords.data):
-#: XXX * bestehende Untere Kynaststr. -> An der Mole
+#: XXX * bestehende Untere Kynaststr. -> An der Mole (PLZ=10317 laut LOR)
 #: XXX * Paul-und-Paula-Promenade
-#: XXX * Rummelsburger Seeblick
-#: XXX * Ulrich-Plenzdorf-Str.
+#: XXX * Rummelsburger Seeblick (PLZ=10317 laut LOR)
+#: XXX * Ulrich-Plenzdorf-Str. (PLZ=10317 laut LOR)
 #: XXX * An den Eiswerken
 #: XXX * Heiner-Carow-Str.
-#: XXX * Ingrid-Reschke-Str.
-#: XXX * Gustav-Tempel-Str.
+#: XXX * Ingrid-Reschke-Str. (PLZ=10317 laut LOR)
+#: XXX * Gustav-Tempel-Str. (PLZ=10317 laut LOR)
+#: XXX laut LOR gibt's nun auch eine Hauptstraﬂe in Friedrichshain, PLZ 10317 --- vielleicht ein Zipfel des Baugebiets hier, w‰re aber zu verwirrend, das in Berlin.coords.data einzutragen
 #: last_checked: 2022-02-02
 #: check_frequency: 360d
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straﬂen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
@@ -7512,7 +7516,7 @@ Bebauungsplan 8-84 (Koppelweg): neue Straﬂe geplant	?::projected 11987,4329 1204
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_45_5341_5412_online.pdf (Straﬂenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_49_5627_5702_online.pdf (Grundst¸cksnummerierungen)
-#: XXX fehlt bei Berlin.coords.data, PLZ=12683 (laut DPAG-Mitteilungsblatt)
+#: XXX fehlt bei Berlin.coords.data, PLZ=12683 (laut DPAG-Mitteilungsblatt und laut LOR)
 #: osm_watch: way id="865780927" version="9"
 #: last_checked: 2021-12-27
 #: check_frequency: 60d
@@ -7962,7 +7966,7 @@ Spreebordpark: werden hier Wege entstehen?	? 4305,12927 4326,12673 4415,12661 43
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_49_4457_4624_online.pdf (Straﬂenbenennung, Grundst¸cksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_52_4785_4880_online.pdf
 #: XXX Wiese ist eingez‰unt, noch keine Hochbauten zu sehen (Stand April 2021)
-#: XXX Privatstraﬂe, fehlt bei Berlin.coords.data
+#: XXX Privatstraﬂe, fehlt bei Berlin.coords.data (PLZ=13127 laut LOR)
 #: last_checked: 2021-10-03 (mapillary)
 #: check_frequency: 360d
 An der Streuobstwiese: hier entsteht eine neue Straﬂe; genaue Lage, Qualit‰t?	?::inwork 12685,22705 12697,22610
@@ -8044,7 +8048,7 @@ Fahlenbergbr¸cke: Behelfsbr¸cke wird hier gebaut	?::projected 30942,-62 31103,-1
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103661961405/61961405/00307872/72-Anlagen/02/AnlageBEKulturimg20210122_09481666.jpg
 #: by: https://www.berliner-woche.de/wartenberg/c-verkehr/strassenname-erinnert-an-anger_a303876
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_16_1221_1304_online.pdf (Benennung)
-#: XXX fehlt bei Berlin.coords.data
+#: XXX fehlt bei Berlin.coords.data (laut LOR PLZ=13059)
 #: XXX geplante neue Privatstraﬂe
 #: last_checked: 2021-12-31
 #: check_frequency: 180d
@@ -8054,7 +8058,7 @@ Zum Wartenberger Anger: genaue Lage, Qualit‰t?	?::projected 17697,18956 17687,18
 #: by: https://www.berliner-woche.de/wartenberg/c-verkehr/strassenteil-wird-umbenannt_a318539
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8988
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/F79WiFP2abgRrV4KLrsX5olu6b3JLkHvrN4jHx9G/WMnlwMsx/03-Anlagen/02/LageplanASKultur.pdf (Lageplan)
-#: XXX fehlt bei Berlin.coords.data
+#: XXX fehlt bei Berlin.coords.data (PLZ=13059 laut LOR)
 #: XXX geplante neue Privatstraﬂe
 #: last_checked: 2021-12-31
 #: check_frequency: 180d

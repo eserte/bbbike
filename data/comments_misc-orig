@@ -797,7 +797,7 @@ Bordsteine beim ‹berqueren der Wuhletalstr.	CS 20801,17821 20728,17670 20657,175
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7138 (Realisierung einer Querung Anfang 2021, vielleicht)
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/baumassnahme-an-der-grunewaldstrasse-haengt-von-senatsplaenen-ab_a252769
 #: XXX Realisierung einer Querung geplant
-#: last_checked: 2021-10-20
+#: last_checked: 2022-02-13
 #: check_frequency: 120d
 Bordsteine beim ‹berqueren der Grunewaldstr.	CP; 6851,9365 6917,9274 7001,9291
 Quastenhornweg: Privatstraﬂe	CS -7595,4374 -7557,4340 -7473,4306 -7413,4304
@@ -895,6 +895,10 @@ Straﬂe 181: Anlieger frei	CS 16991,-81 16989,-147 17036,-421 17065,-589 17076,-6
 Nikolaus-Ehlen-Weg: Privatstraﬂe	CS 17308,-36 17215,94 17176,90
 #: ignore vvv
 #: XXX_indoor: w¸rde besser unter sehenswuerdigkeit passen
+#: by: https://www.morgenpost.de/bezirke/mitte/article230905682/Lichter-der-Vergangenheit-die-Gaslaternen-im-Tiergarten.html
+#: XXX wurden die Gaslaternen mittlerweile umgezogen?
+#: priority: #C
+#: osm_watch: note 2969085 1
 Gaslaternen-Freilichtmuseum Berlin	CS 5895,11692 5835,11768 5858,11863 5900,11913
 #: ignore ^^^
 #: ignore vvv
@@ -1613,7 +1617,7 @@ blaues Straﬂenschild "Klettenberger Str."	CP2; 20555,15 20561,17
 Privatstraﬂe	CS 20694,11811 20708,11918 20715,12040
 # 
 #: next_check_id: SCHOENERGARTEN-2022
-#: last_checked: 2022-01-15
+#: last_checked: 2022-02-13
 Schˆnegarten: nicht ausgeschildert	CS 7416,10492 7432,10546 7330,10590
 # 
 (Edeka-Parkplatz - Rheinsteinstr.): Hausdurchfahrt	CS 18880,8689 18865,8740
@@ -1625,8 +1629,6 @@ Am Karlsbad: Hausdurchfahrt	CP2; 8027,11000 7959,10910
 #: last_checked: 2022-02-05
 #: check_frequency: 180d
 An der alten G‰rtnerei: nicht ausgeschildert	CS 11046,3895 11053,3828 11019,3786 10972,3779 10958,3710
-# 
-Weichselstr. - Sasarsteig: Weg rechts neben dem Parkplatz nehmen	CP2; 12330,8636 12300,8613
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straﬂen)

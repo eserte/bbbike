@@ -1250,7 +1250,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-02-12
+#: last_checked: 2022-02-13
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1358,7 +1358,7 @@ Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
 Mellenseestr. [Wohngebiet]	1 17587,9655 17633,9793 17633,9898
 Mellenseestr. [Wohngebiet]	1 17777,9649 17738,9822 17738,9922
 Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
-Mühsamstr.	1 13818,12897 13844,12900
+Mühsamstr.	1 13818,12897 13830,12907
 #: note: nur ein Einfahrt-verboten-Schild ohne korrespondierendes Einbahnstraßenschild
 Lilli-Henoch-Str.	1s:q3 12357,15020 12388,14926
 (Weydemeyerstr.): durch Tore abgesperrt	2 11933,12701 11971,12785
@@ -1883,7 +1883,7 @@ Prenzlauer Promenade: Straßenbahntrasse	3nocross 12090,16199 12097,16263 12087,1
 #: note: Luftbild: vvv
 Prenzlauer Promenade: Straßenbahntrasse	3nocross 12051,16535 12077,16380 12087,16322 12097,16263
 Petersburger Str.: Straßenbahntrasse	3nocross 13622,12806 13579,12904 13530,13014
-Petersburger Str.: Straßenbahntrasse	3nocross 13530,13014 13487,13115 13434,13234
+Petersburger Str.: Straßenbahntrasse	3nocross 13530,13014 13481,13128 13434,13234
 Petersburger Str.: Straßenbahntrasse	3nocross 13330,13468 13375,13367 13383,13349 13434,13234
 #: note: ^^^
 Stubenrauchstr.: Bahntrasse	3nocross 16635,2796 16677,2856 16786,2989
@@ -2211,10 +2211,7 @@ abgeschlossenes Tor	3 * 14688,8355 *
 möglicherweise abgeschlossenes Tor	3 * 11382,21083 *
 abgeschlossenes Tor	3 * 14701,0 *
 # 
-#: XXX Bleibt das so? Laut Anwohner könnte es in Zukunft wieder geöffnet sein.
-#: last_checked: 2021-10-09
-#: check_frequency: 90d
-abgeschlossenes Tor	3 * 8203,7909 *
+# REMOVED (-> temp blockings) --- #: XXX Bleibt das so? Laut Anwohner könnte es in Zukunft wieder geöffnet sein. --- #: last_checked: 2021-10-09 --- #: check_frequency: 90d --- abgeschlossenes Tor	3 * 8203,7909 *
 # 
 abgeschlossenes Tor	3 * 20561,17 *
 #
@@ -3349,7 +3346,7 @@ Weg zur Walther-Rathenau-Str.: Weg kann durch Bauzäune versperrt sein	2::inwork 
 # 
 #: next_check_id: SCHOENERGARTEN-2022
 #: XXX Bleibt das so? Am westlichen Ende ist ein Zaun mit Tor, am südlichen Ende nur ein Bauzaun.
-#: last_checked: 2022-01-15
+#: last_checked: 2022-02-13
 Schönegarten: an beiden Enden gesperrt	2 7416,10492 7432,10546 7330,10590
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -3777,9 +3774,10 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- Tor	BNP:5 14692,10867
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/rossstrassenbruecke-wird-abgerissen_a244615 (Beginn der Bauarbeiten ab 16. Dezember 2019, ab Januar 2020 für alle gesperrt) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.876928.php (bis Herbst 2021) --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung --- #: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: bis Mai 2021) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1097688.php --- #: also_indoor: traffic (G,H) vvv --- #: source_id: 2147345254 (bis 18.06.2021) vvv --- #: last_checked: 2021-06-15 vvv --- #: next_check: 2021-06-18 vvv --- #: priority: #A vvv --- Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901 --- Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875 10672,11870 10662,11863 --- #: priority ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: also_indoor ^^^
 # 
+#: by: https://leute.tagesspiegel.de/tempelhof-schoeneberg/macher/2021/01/19/154834/sanierung-des-hochbahnviadukts-bauarbeiten-ab-2023-geplant/ (Sanierung 2023 - Mitte 2024)
 #: osm_watch: way id="223707973" version="10"
-#: last_checked: 2021-12-04
-#: check_frequency: 60d
+#: last_checked: 2022-02-13
+#: check_frequency: 120d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 # 
@@ -4418,8 +4416,8 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7042 (angeblich wurde die Straße niemals benannt --- aber die GoogleMaps-Bilder von 2008/2009 zeigen ein Straßenschild)
 #: XXX vermutlich wird es keinen Zugang zur Oranienburger Str. mehr geben --- bleibt wenigstens der südliche Stummel? --- die Helga-Hahnemann-Str. wird es in Zukunft wohl nicht mehr geben
 #: XXX außerdem: im Quartier Am Tacheles werden zwei Privatplätze entstehen und bekommen die Namen (fehlen in Berlin.coords.data; wo genau befinden sie sich?):
-#: XXX Johannisplatz
-#: XXX Aaron-Bernstein-Platz
+#: XXX Johannisplatz (PLZ=10117 laut LOR)
+#: XXX Aaron-Bernstein-Platz (PLZ=10117 laut LOR)
 # REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7"
 #: osm_watch: way id="940764588" version="3"
 #: osm_watch: way id="940764584" version="2"
