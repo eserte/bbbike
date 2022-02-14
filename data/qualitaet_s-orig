@@ -1738,7 +1738,7 @@ Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
 #: osm_watch: way id="34428911" version="10" vvv
 #: XXX wird hier asphaltiert? vvv
-#: last_checked: 2022-01-01 (mapillary) vvv
+#: last_checked: 2022-02-12 (mapillary) vvv
 #: next_check: 2023-04-30 vvv
 #: by: mapillary
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 8003,20507 8040,20454 8057,20430
@@ -3457,7 +3457,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: XXX ändert sich mit der Straßenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: osm_watch: way id="641657694" version="4"
 #: priority: #C
-#: last_checked: 2021-10-17 (mapillary)
+#: last_checked: 2022-02-14
 #: check_frequency: 120d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
@@ -5585,7 +5585,7 @@ Am Gartenstadtweg: Beton	Q1 21527,547 21549,533 21592,547 21657,580 21673,590 21
 #: XXX heißt dieser Abschnitt auch "Höhensteig"?
 # REMOVED (dieser Stummel ist bereits asphaltiert) --- #: osm_watch: way id="226981995" version="4"
 #: osm_watch: way id="226982293" version="3"
-#: last_checked: 2021-07-17
+#: last_checked: 2022-02-12 (mapillary)
 #: check_frequency: 360d
 Mohnblütenweg: unbefestigte Straße	Q2 21712,215 21688,312
 Zur Gartenstadt: Asphalt	Q0 21712,215 21742,115 21769,-30 21800,-109
@@ -5593,6 +5593,7 @@ Zur Gartenstadt: schlechtes Kopfsteinpflaster	Q3 21800,-109 21847,-303
 Heidelbeerweg: Asphalt	Q0 21645,200 21669,99
 # REMOVED --- #: next_check_id: JOHANNESTOBEI-2021 --- #: XXX wird die Straße asphaltiert/befestigt? --- #: osm_watch: way id="174182913" version="6" --- #: last_checked: 2021-07-17 --- #: check_frequency: 360d --- #: next_check: 2022-09-01
 #: corrected_by: osm (unbefestigt -> ...)
+#: confirmed_by: mapillary
 Ringelblumenweg: Verbundsteinpflaster	Q1+ 21618,193 21587,302
 Vergissmeinnichtweg: Asphalt	Q0 21608,85 21596,132 21582,185
 (Grünbergallee - Schwalbenweg): Gehwegplatten	Q1 20288,-511 20205,-548
@@ -6054,8 +6055,9 @@ Vereinssteg: unbefestigte Straße	Q2 8340,18984 8321,18954
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/tuchmerweg-veroeffentlichung-bpu_08-07-2019.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/tuchmerweg_lageplan_2021-11-25.pdf
 #: XXX wird neu gemacht, zusammen mit der Straße vor Schönholz, danach "Sickerpflaster" (Verbundsteinpflaster?)
-#: last_checked: 2019-12-27 (mapillary)
-#: next_check: 2022-04-01
+#: last_checked: 2022-02-12 (mapillary)
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2022-04-01
 Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8616,19065
 # 
 Frühlingstr.: Kopfsteinpflaster	Q2 8583,18668 8660,18679
@@ -12347,7 +12349,7 @@ Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q1 13870,9872 1
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_50_4625_4696_online.pdf (Absichtserklärung zu einer Straßenlandeinziehung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_02_0049_0116_online.pdf (Teileinziehung)
 #: XXX Wann wird der Asphalt ersetzt? Wann wird die Straße nur für Anlieger/Radfahrer frei sein?
-#: last_checked: 2022-01-16
+#: last_checked: 2022-02-14
 # REMOVED --- #: check_frequency: 180d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721

@@ -7,6 +7,25 @@
 # 
 #: temporary vvv
 # 
+#: next_check_id: KIEFHOLZ-2015 vvv
+#: osm_watch: node id="31260916" version="5"
+#: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
+#: last_checked: 2022-02-14 vvv
+#: check_frequency: 60d vvv
+	X::inwork 14151,8967
+#: check_frequency ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
+# 
+#: note: eigentlich südlich der Kreuzung
+#: source_id: viz2021:13.456209,52.487399,17.01.2022,09:00 (unklar, ob diese Ampel gemeint ist, bis 14.2.2022) (inaktiv)
+#: source_id: viz2021:13.46142,52.48374,14.02.2022,12:27 (bis 28.2.2022)
+#: source_id: viz2021:13.4617,52.483555,17.01.2022,09:00 (bis 28.2.2022)
+#: also_indoor: traffic
+#: last_checked: 2022-02-14
+#: next_check: 2022-02-28
+Kiefholzstr./Puderstr.: Gegenverkehrsregelung	X::inwork 14363,8738
+# 
 #: by: https://twitter.com/VIZ_Berlin/status/1491370038774964227
 #: by: https://pbs.twimg.com/media/FLEUIiEX0AA8mNx?format=jpg&name=large
 #: source_id: viz2021:13.157143,52.539213,09.02.2022,13:00 (bis 12.3.2022)
@@ -35,7 +54,7 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
 #: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00 (bis 02.02.2022) (mittlerweile bis 7.3.2022)
 #: note laut rbb bis 9.2.2022
-#: last_checked: 2022-01-01 (mapillary) vvv
+#: last_checked: 2022-02-12 (mapillary) vvv
 #: next_check: 2022-03-07 vvv
 #: valid: -20220307 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
@@ -2352,12 +2371,12 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
-#: last_checked: 2022-02-11
+#: last_checked: 2022-02-14
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
-#: last_checked: 2022-01-23
+#: last_checked: 2022-02-14
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746
@@ -3033,7 +3052,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2022-01-25
+#: last_checked: 2022-02-12 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-06-30
 	X::inwork 8732,14098
@@ -3624,17 +3643,6 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X -9942,21
 	X -12653,-1723
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
-# 
-#: next_check_id: KIEFHOLZ-2015 vvv
-#: osm_watch: node id="31260916" version="5"
-#: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2022-02-05 vvv
-#: check_frequency: 60d vvv
-	X::inwork 14151,8967
-# REMOVED (abgebaut) ---	X::inwork 14363,8738
-#: check_frequency ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
 # 
 #: off: Pfingstmontag 2016-05-16 gegen 13 Uhr
 	F -7554,13514

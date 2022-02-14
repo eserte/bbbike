@@ -28099,7 +28099,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,672773,672947#msg-672947
 #: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
 #: osm_watch: way id="36936021" version="6" brb
-#: last_checked: 2021-11-23 (osm)
+#: last_checked: 2022-02-12 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2020-11-01
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
@@ -29240,7 +29240,7 @@ EOF
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-01-19 (osm)
+#: last_checked: 2022-02-12 (mapillary)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -34531,6 +34531,20 @@ EOF
 	3 8161,7907 8203,7909 8260,7911
 #: check_frequency ^^^
 #: last_checked ^^^
+EOF
+     },
+     { from  => 1644793200, # 2022-02-14 00:00
+       until => 1648763999, # 2022-03-31 23:59
+       text  => 'Landschaftspark Johannisthal: mögliche Sperrungen wegen temporären Baustraßen, Mitte Februar 2022 bis Ende März 2022',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1176225.php',
+       data  => <<EOF,
+	2::inwork 18511,3290 18451,3352 18562,3461
+	2::inwork 18689,3465 18633,3530 18562,3461 18624,3402
+	2::inwork 18326,3141 18304,3208 18337,3238 18451,3352
+	2::inwork 18633,3530 18803,3694
+	2::inwork 18228,4168 18178,4125 18176,4105 18162,4105 18122,4074 18006,3992 18031,3737
+	2::inwork 18337,3238 18395,3176
 EOF
      },
     );

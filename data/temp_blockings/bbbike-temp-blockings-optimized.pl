@@ -1929,25 +1929,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED ---		2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
-# REMOVED ---	3 8369,12609 8373,12416 8391,12389
-# REMOVED ---		3 8391,12389 8400,12417 8399,12610
-# REMOVED ---	3 8391,12389 8373,12416 8369,12609
-# REMOVED ---		3 8399,12610 8400,12417 8391,12389
-#: by: https://viz.berlin.de/2022/02/verkehrsvorschau12-13022022/
-	2::temp 8399,12610 8369,12609 8306,12609 8207,12606
-	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279
-	2::temp 8306,12609 8309,12758
-	2::temp 8415,12749 8309,12758 8252,12757 8206,12757
-',
-         'from' => 1644645600,
-         'id' => 2849,
-         'text' => 'Regierungsviertel: mögliche Sperrungen wegen der Bundespräsidentwahl, 13.02.2023 zwischen 07:00 und 23:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1644789600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2204,7 +2186,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.bahninfo-forum.de/read.php?9,672773,672947#msg-672947
 #: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
 #: osm_watch: way id="36936021" version="6" brb
-#: last_checked: 2021-11-23 (osm)
+#: last_checked: 2022-02-12 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2020-11-01
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
@@ -2355,7 +2337,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-01-19 (osm)
+#: last_checked: 2022-02-12 (mapillary)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -4050,6 +4032,21 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Wintgensstr./Gontermannstr. - General-Pape-Str.: Tor kann verschlossen sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	2::inwork 18511,3290 18451,3352 18562,3461
+	2::inwork 18689,3465 18633,3530 18562,3461 18624,3402
+	2::inwork 18326,3141 18304,3208 18337,3238 18451,3352
+	2::inwork 18633,3530 18803,3694
+	2::inwork 18228,4168 18178,4125 18176,4105 18162,4105 18122,4074 18006,3992 18031,3737
+	2::inwork 18337,3238 18395,3176
+',
+         'from' => 1644793200,
+         'id' => 3514,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1176225.php',
+         'text' => 'Landschaftspark Johannisthal: mögliche Sperrungen wegen temporären Baustraßen, Mitte Februar 2022 bis Ende März 2022',
+         'type' => 'gesperrt',
+         'until' => 1648763999
        }
      
 );
