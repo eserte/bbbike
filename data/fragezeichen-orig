@@ -5145,7 +5145,7 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 #: last_checked: 2022-02-04
 #: check_frequency: 60d
 Indira-Gandhi-Str.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 14828,15050 14686,15608 14653,15738 14609,15921 14597,15970 14595,15980 14576,16069 14552,16171 14522,16260 14499,16341
-#: last_checked: 2022-01-09 (mapillary)
+#: last_checked: 2022-02-13 (mapillary)
 #: check_frequency: 90d
 Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 18223,18153 18279,18079 18412,17920 18476,17842 18553,17749 18635,17649
 # REMOVED (hier vermutlich sowieso nicht) --- Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 18635,17649 18694,17577 18704,17565
@@ -5197,7 +5197,7 @@ Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
 #: check_frequency: 120d
 Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18875,9570 18846,9532 18765,9426 18735,9421
 #: osm_watch: way id="261883742" version="9"
-#: last_checked: 2021-12-31
+#: last_checked: 2022-02-13 (mapillary)
 #: check_frequency: 90d
 Lindenberger Str.: Was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18106,19353 18119,19400 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
 #: osm_watch: way id="25760211" version="10"
@@ -5824,8 +5824,8 @@ Bamihlstr.: Einbahnstraßenregelung gefordert/geplant	? -2563,17004 -2585,16900 -
 #: by: https://www.stadtentwicklung.berlin.de/wohnen/wohnungsbau/gueterbahnhof-koepenick/
 #: by: https://www.stadtentwicklung.berlin.de/wohnen/wohnungsbau/gueterbahnhof-koepenick/download/Strukturkonzept_%202020_c_urbanplan.pdf
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1081944.php
-#: last_checked: 2021-07-11
-#: next_check: 2022-03-01
+#: last_checked: 2022-01-15 (mapillary)
+#: check_frequency: 360d
 Güterbahnhof Köpenick: hier entsteht die Ostumfahrung Bahnhofstraße	?::projected 23327,5817 23244,6154 22796,6118 22777,6151
 # 
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/radstreifen-fuer-die-muehlenstrasse_a234826 ("Maßnahme mit Priorität", kein Datum)
@@ -6134,11 +6134,12 @@ Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 1260
 # 
 # REMOVED (alle eingetragen) --- #: next_check_id: LANGHANS-2021 --- #: by: https://unternehmen.bvg.de/pressemitteilung/das-machen-wir-gleis-richtig/ (Sperrung bis 24. Juni 2021) --- #: last_checked: 2021-02-04 --- #: next_check: 2021-08-13 --- Langhansstr.: Straßenbahnkaps entstehen	?::inwork 13508,15912 13312,16027 13250,16058 13189,16089 12943,16214 12859,16255 12826,16271 12797,16285 12764,16302 12725,16321 12564,16399 12474,16443 12399,16479
 # 
-#: XXX wo genau?
 #: source_id: LS/721-E/19/134
-#: last_checked: 2020-08-30 (mapillary)
-#: next_check: 2021-10-30
-Wandlitz - Wensickendorf: Radwegbau	?::inwork 11192,38568 10878,38650 10471,38685 10407,38693 10356,38700 10251,38712 10181,38717 10139,38721 9981,38735 9893,38742 9343,38794 9329,38795 9056,38825 8954,38837 8873,38845 8740,38857 8665,38862 8643,38865 8518,38881 8240,38876 7990,38846 7950,38843 7836,38835 7698,38825 7632,38828 7465,38830
+#: last_checked: 2022-02-13 (mapillary)
+# REMOVED --- #: next_check: 2021-10-30
+# REMOVED (realisiert) --- Wandlitz - Wensickendorf: Radwegbau	?::inwork 11192,38568 10878,38650 10471,38685 10407,38693
+Wandlitz - Wensickendorf: Radwegbau, weitgehend realisiert, aber die Ausschilderung fehlt noch	?::inwork 10407,38693 10356,38700 10251,38712 10181,38717 10139,38721 9981,38735 9893,38742 9343,38794 9329,38795 9056,38825 8954,38837 8873,38845 8740,38857
+# REMOVED (hier vermutlich nicht) --- Wandlitz - Wensickendorf: Radwegbau	?::inwork 8740,38857 8665,38862 8643,38865 8518,38881 8240,38876 7990,38846 7950,38843 7836,38835 7698,38825 7632,38828 7465,38830
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1054982.php (kein konkretes Datum (außer für Baumfällungen: Ende Februar 2021))
 #: last_checked: 2021-04-11 (mapillary)
@@ -6470,7 +6471,9 @@ Paradiesstr.: evtl. werden hier noch Radwege als Zufahrt zur B96a erstellt, viel
 #: by: https://www.berliner-woche.de/karow/c-verkehr/kreuzung-soll-sicherer-werden_a330395 (kein Termin)
 #: by: https://www.berliner-woche.de/karow/c-verkehr/johannes-kraft-hakt-erneut-beim-senat-nach_a333683
 #: priority: #C
-#: next_check: 2022-04-15
+#: last_checked: 2022-02-13 (mapillary)
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2022-04-15
 Alt-Karow/ Bucher Chaussee/ Hofzeichendamm/ Schönerlinder Weg: "Fußgängerschutzweg" (Zebrastreifen?) soll errichtet werden	?::projected 15721,23508 15726,23475 15738,23436
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8820 (bis 4. Quartal 2021)
@@ -6501,6 +6504,10 @@ Gockelweg: Einziehung als öffentliches Straßenland	? 15846,-591 16114,-610 16187
 #: last_checked: 2022-02-10
 #: check_frequency: 360d
 Blockdammweg: Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird enger, neue Ampel am Kreuzungspunkt Ehrlichstr.	?::projected 17729,8850 17760,8853 17904,8924
+# 
+#: by: https://www.berliner-woche.de/baumschulenweg/c-verkehr/marggraffbruecke-erhaelt-ab-herbst-einen-ersatzneubau_a335078 (ab 3. Quartal 2022, Bauzeit drei Jahre)
+#: next_check: 2022-09-30
+Marggraffbrücke: Abriss und Neubau	?::projected 16677,6892 16720,6845
 # 
 #: ignore ^^^
 # 
@@ -6993,7 +7000,7 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 # REMOVED --- #: XXX: am Wartenberger Weg habe ich ein Straßenschild "An der Margaretenhöhe" gesehen --- kann das sein? --- Schnitterinnenweg: Benennung?	? 16736,19193 16768,19191 17015,19287 17351,19411 17679,19532
 # REMOVED (Schild steht) --- Am Alten Malchower Graben: Benennung?	? 15424,19861 15393,19671 15383,19610 15386,19485 15426,19216 15412,19082 15407,19024 15376,18908 15400,18840 15399,18782 15434,18731 15413,18626
 #: XXX beim ersten Vorschlag war der Name noch offen
-#: last_checked: 2021-10-31 (mapillary)
+#: last_checked: 2022-02-13 (mapillary)
 #: check_frequency: 180d
 Barnimer Dörferweg: werden hier auch grüne Straßenschilder aufgestellt?	? 18515,20587 18061,20715 18083,20782 18026,20847 17946,20889 17475,20851 17287,20837 17080,21288 17073,21329
 # REMOVED --- Ahornallee: Benennung?	? 17015,19287 17015,19587 17050,20298 17061,20451 17079,20716 17287,20837

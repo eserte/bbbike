@@ -1840,8 +1840,21 @@ asphaltiert	RW1; 26154,16397 26338,16536
 	RW6;RW6 10994,-4472 10998,-4391 10963,-4389 10956,-4470
 	RW6;RW6 10898,-4383 10963,-4389 10967,-4309
 asphaltiert	RW2;RW8 16953,35907 16653,35993 16424,36152 16132,36512 15491,37176 15387,37252 15201,37349 14948,37315 14703,37197 14470,37191 13546,37474
-#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31763
-	RW2;RW8 13237,37524 12812,37567 11818,37915 11621,38036 11437,38505 11269,38548 11192,38568
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 11192,38568 10878,38650 10471,38685 10407,38693
+#: note: Ausschilderung fehlt noch teilweise
+Gehweg für Radfahrer frei, asphaltiert	RW1; 10407,38693 10356,38700 10251,38712 10181,38717 10139,38721 9981,38735
+#: note: Ausschilderung fehlt vermutlich noch
+asphaltiert	RW1;RW9 9981,38735 9893,38742 9343,38794 9329,38795
+#: note: Ausschilderung fehlt vermutlich noch
+Gehweg ist noch nicht für Radfahrer freigegeben, asphaltiert	RW1; 9329,38795 9056,38825 8954,38837 8873,38845
+#: note: Ausschilderung fehlt vermutlich noch
+Gehweg ist noch nicht für Radfahrer freigegeben, asphaltiert	RW1;RW1 8873,38845 8740,38857
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31763 vvv
+#: confirmed_by: mapillary vvv
+asphaltiert	RW2;RW8 13237,37524 12812,37567 11818,37915 11621,38036 11437,38505 11269,38548
+Verbundsteinpflaster	RW2;RW8 11269,38548 11192,38568
+#: confirmed_by ^^^
+#: by ^^^
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=27953
 	RW8;RW2 48794,91837 48821,91724 48715,91375 48742,90931 48850,90656 48894,90545
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=18946
