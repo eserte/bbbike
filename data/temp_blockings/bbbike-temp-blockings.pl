@@ -32750,15 +32750,13 @@ EOF
 	q4::temp::play 13273,12902 13371,12694
 EOF
      },
-     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-18 00:00:00") }, # 1 Tag Vorlauf
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-04-30 00:00:00") }, # 1 Tag Vorlauf
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-30 18:30:00") },
-       text  => 'Simplonstr.: zwischen Helmerdingstr. und Matkowskystr. mittwochs zwischen 15.30 und 18.30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, 19.05. bis 30.09.',
+       text  => 'Simplonstr.: zwischen Helmerdingstr. und Matkowskystr. mittwochs zwischen 15.30 und 18.30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.05. bis 30.09.',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
        data  => <<EOF,
-#: XXX Spielstraße wurde möglicherweise verstetigt; genaue Geltungszeiten?
-#: last_checked: 2021-05-12
-#: next_check: 2022-05-12
+# REMOVED --- #: XXX Spielstraße wurde möglicherweise verstetigt; genaue Geltungszeiten? --- #: last_checked: 2021-05-12 --- #: next_check: 2022-05-12
 	q4::temp::play 14468,11203 14531,11142
 EOF
      },
@@ -34493,6 +34491,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FUERSTENDAMM-2022
 #: by: https://berliner-abendblatt.de/2022/02/09/fuerstendamm/
+#: by: https://www.berliner-woche.de/frohnau/c-verkehr/bauarbeiten-auf-dem-fuerstendamm-ab-9-maerz_a335966
 #: XXX Wann beginnt der 2. Bauabschnitt: Eltviller Straße bis Oranienburger Chaussee?
 #: next_check: 2022-10-01
 	q4::inwork 2486,25156 2599,25047 2647,25018 2673,25012 2818,25022 2904,24993 3015,24965 3117,24966
@@ -34546,6 +34545,15 @@ EOF
 	2::inwork 18633,3530 18803,3694
 	2::inwork 18228,4168 18178,4125 18176,4105 18162,4105 18122,4074 18006,3992 18031,3737
 	2::inwork 18337,3238 18395,3176
+EOF
+     },
+     { from  => 1645074000, # 2022-02-17 06:00
+       until => 1645470000, # 2022-02-21 20:00
+       text  => 'Buchberger Str.: zwischen Frankfurter Allee und Coppistr. Aufbau eines Tumrdrehkrans, Sperrung der Fahrbahn, auch für Radfahrer, vom 18.02.2022 06:00 bis 21.02.2022 20:00 ',
+       type  => 'handicap',
+       source_id => 'viz2021:13.488112,52.507697,18.02.2022,06:00',
+       data  => <<EOF,
+	q4::inwork 16242,11533 16119,11435
 EOF
      },
     );

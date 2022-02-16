@@ -3325,6 +3325,7 @@ Chemnitzer Str.: Verlegung der Straße, Radwege	?::projected  22436,11054 22483,1
 #: by: https://berliner-abendblatt.de/2022/01/14/bauarbeiten-in-wittenau/
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/strassen-werden-erneuert_a333635
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/im-schmitzweg-heiligental-und-brodersenstrasse-starten-langwierige-strassenbauarbeiten_a334127
+#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/probleme-fuer-den-pflegedienst_a336035
 #: XXX ursprüngliche Bauzeit: Frühjahr 2019 - Ende 2020 vvv
 #: last_checked: 2021-09-04 vvv
 #: check_frequency: 180d vvv
@@ -3616,6 +3617,7 @@ Torstr.: Planung von Radwegen	?::projected 10177,13766 9917,13741 9797,13691 967
 #: by: https://abendblatt-berlin.de/2021/09/08/schildower-strasse/
 #: by: https://berliner-abendblatt.de/2022/02/02/mehr-radverkehr-im-waldseeviertel/
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9903 (Einwohneranfrage)
+#: by: https://berliner-abendblatt.de/2022/02/15/waldseeviertel-linke-hofft-auf-neue-verkehrsplanung/
 #: XXX wird es während der Bauarbeiten Einschränkungen geben?
 #: next_check: 2023-04-15
 Schildower Str.: Neubau geplant, wird es danach noch Radwege geben?	?::projected 4425,24067 4510,24170 4614,24233 4683,24275 4705,24284 4779,24321 4849,24335
@@ -4304,6 +4306,7 @@ Stadtpark Steglitz: bleibt die Beleuchtung?	? 6026,4744 5947,4791 5885,4813 5852
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5789 (Benennungsabsicht)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5906 (Benennungsverfahren wird durchgeführt)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_55_5185_5316_online.pdf (Benennung, wirksam ab 10.3.2021)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1177103.php
 # REMOVED (done) --- : XXX außerdem: kann man hier eine Grünfläche einzeichnen? --- ein bisschen Gras gibt es...
 #: last_checked: 2022-01-09
 # REMOVED --- #: check_frequency: 90d
@@ -4783,6 +4786,8 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 # 
 #: next_check_id: SOWJETISCHESEHRENMAL-2019
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.663947.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1176947.php (Rodungsarbeiten Frühjahr 2022 und Winter 2022/2023 --- hier auch?)
+#: by: https://berliner-abendblatt.de/2022/02/16/treptower-park-rodung-und-neupflanzung/
 #: XXX Verbreiterung vermutlich erst ab Ende 2018, handicap dann von q2+ -> q1 ändern
 #: XXX wird hier überhaupt was passieren?
 #: priority: #C
@@ -6178,6 +6183,7 @@ Goerdelerdamm: teilweise Verbreiterung des Radwegs	?::projected 5043,14671 4897,
 #: by: https://abendblatt-berlin.de/2021/03/28/thaelmann-park-bezirksamt-will-ueber-schulanbau-aufklaeren/
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/anwohner-sammeln-unterschriften-gegen-halbierung-des-thaelmannparks_a308565
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5857 (Antrag)
+#: osm_watch: way id="18677670" version="11"
 #: last_checked: 2022-01-18
 #: check_frequency: 30d
 Schule am Planetarium: Weg wird entfallen, neue Wege nördlich und südlich des Schulgeländes werden entstehen	?::projected 12208,15108 12103,15218
@@ -8201,6 +8207,7 @@ Schumacher-Quartier: neues Viertel entsteht	?::projected 3976,17559 4849,17312 4
 #: by: https://berliner-abendblatt.de/2021/08/06/tegel-die-zukunft-kann-beginnen/ (erste Bauabschnitte 2027 abgeschlossen)
 #: by: https://berliner-abendblatt.de/2021/12/13/erster-bebauungsplan-fuer-txl-gelaende/
 #: by: https://leute.tagesspiegel.de/reinickendorf/macher/2021/12/15/201764/erster-bebauungsplan-fuer-urban-tech-republic-unterzeichnet/
+#: by: https://berliner-abendblatt.de/2022/02/16/txl-wird-testgebiet-fuer-automatisiertes-fahren/
 #: XXX werden die alten Zufahrtstraßen während der Bauarbeiten noch benutzbar sein?
 #: next_check: 2022-04-01
 # REMOVED --- #: next_check: 2026-12-31
@@ -8214,6 +8221,10 @@ Urban Tech Republic: neue Bebauung	?::projected 2074,16367 3258,16711 3342,16123
 #: osm_watch: relation id="9106229" version="5"
 #: next_check: 2023-06-07
 Bebauungsplan XXII-39-1 VE: neue Straßen könnten hier entstehen	?::projected 20937,18702 21110,18773 21120,18722 20948,18655 20937,18702
+# 
+#: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-naechster-halt-koepenick-ein-neuer-regionalbahnhof-fuer-den-osten-berlins-li.211852 (Fertigstellung Juli 2027)
+#: next_check: 2027-07-31
+Regionalbahnhof Köpenick	?::projected 22530,6100
 # 
 #: ignore ^^^
 #: section ^^^
