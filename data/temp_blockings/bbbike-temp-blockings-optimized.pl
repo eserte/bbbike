@@ -4057,6 +4057,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Buchberger Str.: zwischen Frankfurter Allee und Coppistr. Aufbau eines Tumrdrehkrans, Sperrung der Fahrbahn, auch für Radfahrer, vom 18.02.2022 06:00 bis 21.02.2022 20:00 ',
          'type' => 'handicap',
          'until' => 1645470000
+       },
+       {
+         'data' => '	2::inwork 33330,-36389 33356,-36311
+',
+         'from' => 1645938000,
+         'id' => 3516,
+         'source_id' => '226100229',
+         'text' => 'Halbe: Sperrung des Bahnübergangs Oderin, evtl. sind auch Radfahrer betroffen, vom 28.02.2022 - 11.03.2022',
+         'type' => 'gesperrt',
+         'until' => 1647014400
        }
      
 );

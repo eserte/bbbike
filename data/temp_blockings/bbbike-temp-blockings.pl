@@ -34556,4 +34556,13 @@ EOF
 	q4::inwork 16242,11533 16119,11435
 EOF
      },
+     { from  => 1645938000, # 2022-02-27 06:00
+       until => 1647014400, # 2022-03-11 17:00
+       text  => 'Halbe: Sperrung des Bahnübergangs Oderin, evtl. sind auch Radfahrer betroffen, vom 28.02.2022 - 11.03.2022',
+       type  => 'gesperrt',
+       source_id => '226100229',
+       data  => <<EOF,
+	2::inwork 33330,-36389 33356,-36311
+EOF
+     },
     );
