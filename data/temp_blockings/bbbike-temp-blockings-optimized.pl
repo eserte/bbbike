@@ -2613,7 +2613,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-02-12
+#: last_checked: 2022-02-18
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2664,7 +2664,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-02-13 vvv
+#: last_checked: 2022-02-18 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -2680,7 +2680,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 ',
          'from' => 1590562800,
          'id' => 3240,
-         'text' => 'Mainzer Str.: Bauarbeiten zwischen Boxhagener Str. und Frankfurter Allee, mögliche Einschränkugen, Ende der Bauarbeiten unbekannt',
+         'text' => 'Mainzer Str.: Bauarbeiten zwischen Boxhagener Str. und Frankfurter Allee, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -3799,10 +3799,11 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '#: also_indoor: traffic (G,B,H)
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+         'data' => '#: also_indoor: traffic (G,ex-B,ex-H)
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
 #: last_checked: 2022-02-05 (traffic)
 #: check_frequency: 14d
+#: next_check: 2022-02-18
 	q4::inwork; 17719,11092 17725,11228
 ',
          'from' => undef,
@@ -4067,6 +4068,21 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Halbe: Sperrung des Bahnübergangs Oderin, evtl. sind auch Radfahrer betroffen, vom 28.02.2022 - 11.03.2022',
          'type' => 'gesperrt',
          'until' => 1647014400
+       },
+       {
+         'data' => '#: next_check_id: NIEMETZ-2022
+#: XXX laut VIZ für Fußgänger nicht gesperrt -> als q4 eintragen; evtl. auch nach handicap_s-orig übertragen
+#: also_indoor: traffic
+#: priority: #B
+#: next_check: 2022-02-21
+	2::inwork 13797,7267 13762,7321
+',
+         'from' => 1645336800,
+         'id' => 3517,
+         'source_id' => 'viz2021:13.452362,52.470898,21.02.2022,07:00',
+         'text' => 'Niemetzstr.: Brückenneubau, Sperrung, vom 21.02.2022 07:00 bis 31.12.2022 17:00',
+         'type' => 'gesperrt',
+         'until' => 1672502400
        }
      
 );

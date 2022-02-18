@@ -5971,6 +5971,7 @@ Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9
 Wuhlheide: Weg wird erneuert	?::inwork 20629,7189 20575,7226
 # REMOVED (hier weitgehend fertig) --- Wuhlheide: Zugang wird erneuert	? 20575,7226 20533,7199 20524,7176 20430,7122
 # 
+#: next_check_id: NIEMETZ-2022
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_35_4509_4568_online.pdf
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/eisenbahn/bekanntmachung_niemetzstr.shtml
 #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=E4EFC03A-D526-495B-BCEB-8D5C9F19E6A1&plugid=/ingrid-group:ige-iplug-be&docid=E4EFC03A-D526-495B-BCEB-8D5C9F19E6A1
@@ -5984,11 +5985,9 @@ Wuhlheide: Weg wird erneuert	?::inwork 20629,7189 20575,7226
 #: by: https://berliner-abendblatt.de/2022/01/24/bauprojekte-der-s-bahn-2022/
 #: XXX laut Plänen wird es Richtung Norden eine Fahrradschleuse und Richtung Süden eine Radspur geben; vermutlich wird die Straße während der Bauarbeiten komplett gesperrt
 #: XXX laut Ausschilderung an der Sonnenallee Sperrung ab 21.2.2022 4:30 Uhr
-#: also_indoor: traffic
 #: last_checked: 2022-01-16
 # REMOVED --- #: check_frequency: 30d (indoor frequency)
 # REMOVED --- #: next_check: 2022-09-01
-#: next_check: 2022-02-21
 Niemetzstr.: EÜ wird erneuert, Fahrbahn wird abgesenkt	?::projected 13797,7267 13762,7321
 # 
 # REMOVED (ja) --- #: XXX leider sind die mapillary-Aufnahmen nicht scharf genug... Busspur ist vermutlich nicht zeitlich beschränkt --- Gotthardstr.: Busspur für Radfahrer frei?	?; 5628,17631 5382,17419
@@ -8110,6 +8109,7 @@ Bebauungsplan XV-11 (Hasselwerderstr....): Planstraßen sowie ein Uferweg werden 
 #: by: https://www.berliner-woche.de/heinersdorf/c-bauen/im-sommer-startet-der-staedtebauliche-wettbewerb_a312567
 #: by: https://www.stadtentwicklung.berlin.de/wohnen/wohnungsbau/blankenburger-sueden/de/alte-gaertnerei.shtml
 #: by: https://berliner-abendblatt.de/2021/12/13/wettbewerb-alte-gaertnerei-jetzt-oeffentlich/
+#: by: https://www.berliner-woche.de/heinersdorf/c-bauen/am-ortskern-sollen-etwa-500-neue-wohnungen-entstehen_a335642
 #: XXX und was wird mit dem südlichen Abschnitt der Hödurstr.?
 #: last_checked: 2021-06-10 (bw)
 #: check_frequency: 360d
@@ -8224,6 +8224,7 @@ Urban Tech Republic: neue Bebauung	?::projected 2074,16367 3258,16711 3342,16123
 Bebauungsplan XXII-39-1 VE: neue Straßen könnten hier entstehen	?::projected 20937,18702 21110,18773 21120,18722 20948,18655 20937,18702
 # 
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-naechster-halt-koepenick-ein-neuer-regionalbahnhof-fuer-den-osten-berlins-li.211852 (Fertigstellung Juli 2027)
+#: by: https://www.berliner-woche.de/koepenick/c-bauen/deutsche-bahn-startet-im-fruehjahr-2023-mit-dem-ausbau-des-s-bahnhofs-koepenick_a336512
 #: next_check: 2027-07-31
 Regionalbahnhof Köpenick	?::projected 22530,6100
 # 
