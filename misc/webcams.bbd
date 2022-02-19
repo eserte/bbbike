@@ -106,6 +106,7 @@ http://www.met.fu-berlin.de/de/wetter/webcam/	WC 4149,5755 4140,5796
 # REMOVED (Webcam-Seiten existieren nicht mehr) --- http://www.oldpetrus.de/webcam/piescam.jpg	WC 13269,15053 13194,15093 --- http://www.oldpetrus.de/webcam/citycam2.jpg	WC 13269,15053 13237,15003
 # 
 #: note: Indexseite: http://www.olympiastadion-berlin.de/index.php?id=80
+#: note: Seite existiert noch, aber keine Webcam-Bilder (Stand 19.2.2022)
 # früher: http://www.olympiastadion-berlin.de/webcam2.php	WC -642,11931 -752,11907
 # früher: http://www.olympiastadion-berlin.de/webcam3.php	WC -517,11940 -627,11928
 # früher: http://www.olympiastadion-berlin.de/webcam5.php	WC -1262,11788 -1185,11806
@@ -155,7 +156,8 @@ https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg	WC 10749,12785 10477,127
 https://quartier-heidestrasse.contempo-webcam.de/	WC 7799,13944 7751,14023
 https://quartier-heidestrasse.contempo-webcam.de/kamera-2.php	WC 7641,14286 7642,14177
 https://quartier-heidestrasse.contempo-webcam.de/kamera-3.php	WC 7712,14009 7621,14076
-https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php	WC 7582,14169 7540,14240
+#: note: früher 7582,14169 7540,14240
+https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php	WC 7642,14326 7567,14373
 https://quartier-heidestrasse.contempo-webcam.de/kamera-5.php	WC 7760,13961 7833,13913
 # 
 # REMOVED ("Objekt nicht gefunden") --- https://myb-berlin.webcam-profi.de/	WC 7988,13667 7940,13839
@@ -166,19 +168,21 @@ https://cam.webcam-profi.de/bilder/fay/spandau/image.jpg	WC -3647,13878 -3490,13
 https://trockland.webcam-profi.de/berlin/pier6163/image.jpg	WC 12770,10969 12775,11090
 https://www.finanzen.de/webcam	WC 13440,10498 13368,10637
 # REMOVED (404) --- http://www.wsv.de/wsa-b/aktuelles/webcam/index.html	WC 10913,12120 10800,12129
-https://baucam159.it-wms.com/	WC 5778,7884 5698,7884
+# REMOVED (login page) --- https://baucam159.it-wms.com/	WC 5778,7884 5698,7884
 # 
 # REMOVED --- http://www.johthal.de/	WC 17694,5315 17600,5333
 # REMOVED --- http://www.johthal.de/instar-video.html	WC 17694,5312 17645,5366
 # REMOVED --- http://www.johthal.de/instar-video2.html	WC 17691,5318 17657,5273
 # 
+#: note: "Leider ist unsere webcam defekt." (19.2.2022)
 https://www.surf-und-segelschule-mueggelsee.de/webcam/webcam.php	WC 29111,4449 28990,4440
 # 
+#: note: broken since Sep 2021 (last checked: 19.2.2022)
 https://camera.deckchair.com/park-inn-berlin-alexanderplatz	WC 10913,13028 10805,12853
 # 
 https://www.webcam-profi.de/bilder/ca-immo/berlin/europaplatz/cam1/image.jpg	WC 7988,13315 7990,13418
 # 
-https://www.spreepark.berlin/entwicklung/baumassnahmen/sanierung-riesenrad/	WC 16275,8897 16355,8882
+# REMOVED (keine aktuellen Bilder mehr) --- https://www.spreepark.berlin/entwicklung/baumassnahmen/sanierung-riesenrad/	WC 16275,8897 16355,8882
 # 
 #: section Berlin ^^^
 #
