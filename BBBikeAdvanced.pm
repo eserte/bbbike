@@ -1387,6 +1387,21 @@ EOF
 		    last SELTYPELOOP; # detect only one coordinate, and shortcut the search --- the pure lon/lat check below probably also matches, and does it the wrong way around
 		}
 
+		# kartaview map URL, e.g.
+	        # https://kartaview.org/map/@52.490343464210895,13.506068897170195,15z
+		{
+		    my @_coords;
+		    while ($s =~ m{kartaview.org.*?\@([-+]?[0-9\.]+),([-+]?[0-9\.]+),}g) {
+			my($y,$x) = ($1,$2);
+			($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+			push @_coords, [$x,$y];
+		    }
+		    if (@_coords) {
+			push @coords, @_coords;
+			last SELTYPELOOP; # shortcut search, lat,lon order may conflict with further regexps
+		    }
+		}
+
 		# DDD or BBBike coordinates
 		while ($s =~ /([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
 		    my($x,$y) = ($1,$2);
