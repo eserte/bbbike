@@ -3743,7 +3743,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Niemetzstraße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
-#: also_indoor: traffic (ex-G,H,B(alle nur Niemetz)) vvv
+#: also_indoor: traffic (G,H(nur Niemetz),B(nur Niemetz)) vvv
 #: last_checked: 2022-02-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
@@ -4071,17 +4071,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: NIEMETZ-2022
-#: XXX laut VIZ für Fußgänger nicht gesperrt -> als q4 eintragen; evtl. auch nach handicap_s-orig übertragen
+#: by: https://viz.berlin.de/2022/02/verkehrsvorschau-21022022/ (für Fußgänger offen)
+#: XXX evtl. nach handicap_s-orig übertragen
 #: also_indoor: traffic
 #: priority: #B
 #: next_check: 2022-02-21
-	2::inwork 13797,7267 13762,7321
+	q4::inwork 13797,7267 13762,7321
 ',
          'from' => 1645336800,
          'id' => 3517,
          'source_id' => 'viz2021:13.452362,52.470898,21.02.2022,07:00',
-         'text' => 'Niemetzstr.: Brückenneubau, Sperrung, vom 21.02.2022 07:00 bis 31.12.2022 17:00',
-         'type' => 'gesperrt',
+         'text' => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, vom 21.02.2022 07:00 bis 31.12.2022 17:00',
+         'type' => 'handicap',
          'until' => 1672502400
        }
      
