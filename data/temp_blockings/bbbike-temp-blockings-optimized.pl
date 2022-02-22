@@ -3366,6 +3366,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/luebars/c-bauen/fahrbahn-der-strasse-am-vierrutenberg-erst-im-fruehjahr-fertig_a328514
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9770 (Frage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9876 (möglicherweise bis März 2022?)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1179022.php (Fahrbahninstandsetzungsmaßnahme 19.04.2022 - 17.05.2022)
 #: also_indoor: traffic
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2022-01-19 (kartaview)
@@ -3375,9 +3376,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1627682400,
          'id' => 3414,
          'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1106283.php',
-         'text' => 'Am Vierrutenberg: Bauarbeiten zwischen Zehntwerderweg und Benekendorffstr., evtl. wird die Fahrbahn nicht benutzbar sein, von August bis voraussichtlich März 2022',
+         'text' => 'Am Vierrutenberg: Bauarbeiten zwischen Zehntwerderweg und Benekendorffstr., evtl. wird die Fahrbahn nicht benutzbar sein, bis voraussichtlich Mitte Mai 2022',
          'type' => 'handicap',
-         'until' => 1648742400
+         'until' => 1652803200
        },
        undef,
        {
@@ -3798,20 +3799,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (G,ex-B,ex-H)
-#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2022-02-05 (traffic)
-#: check_frequency: 14d
-#: next_check: 2022-02-18
-	q4::inwork; 17719,11092 17725,11228
-',
-         'from' => undef,
-         'id' => 3497,
-         'text' => 'Robert-Uhrig-Str.: zwischen Rummelsburger Str. und Zachertstr. Bauarbeiten, Richtung Norden gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: EINSTEINPARK-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
@@ -4064,7 +4052,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: NIEMETZ-2022
 #: by: https://viz.berlin.de/2022/02/verkehrsvorschau-21022022/ (für Fußgänger offen)
 #: XXX evtl. nach handicap_s-orig übertragen
-#: also_indoor: traffic
+#: also_indoor: traffic (B,H(unvollständig),G)
 #: priority: #B
 #: next_check: 2022-02-21
 	q4::inwork 13797,7267 13762,7321
@@ -4078,10 +4066,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1495626806573076482
-#: XXX bei viz bis zum Abend des 21.2.2022, aber stimmt das?
-#: also_indoor: traffic
+#: XXX bei viz bis zum Abend des 21.2.2022, aber stimmt das? (mittlerweile bis 22.2.2022)
+#: also_indoor: traffic (G,H,B)
 #: priority: #A
-#: next_check: 2022-02-22
+#: next_check: 2022-02-23
 	2::inwork 741,14827 778,14713 838,14530
 ',
          'from' => 1645240500,
