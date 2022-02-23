@@ -65,7 +65,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausführungsplanung)
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021)
-#: last_checked: 2022-02-20
+#: last_checked: 2022-02-23
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-03-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -698,9 +698,9 @@ Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609 (Antrag)
 #: by: http://www.infravelo.de/projekt/oberspreestrasse-abschnitt-2/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2022 - 4. Quartal 2022) (mittlerweile 2. Quartal 2023 - 4. Quartal 2023)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-18-ag_radverkehr-24-02-2021.pdf (bauliche Umsetzung voraussichtlich 2021/2022 (nur westl. Silbergrasweg))
-#: osm_watch: way id="31091960" version="19" vvv
-#: osm_watch: way id="31091970" version="19" vvv
-#: osm_watch: way id="330922955" version="7" vvv
+#: osm_watch: way id="31091960" version="20" vvv
+#: osm_watch: way id="31091970" version="20" vvv
+#: osm_watch: way id="330922955" version="8" vvv
 #: last_checked: 2021-12-17 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-07-01 vvv
@@ -831,7 +831,7 @@ Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::proj
 # 
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: source_id: 2147342868 (inaktiv)
-#: last_checked: 2022-02-11
+#: last_checked: 2022-02-23
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 # 
@@ -1822,7 +1822,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: osm_watch: way id="110450333" version="14"
 #: source_id: 2147343384
-#: last_checked: 2022-02-20
+#: last_checked: 2022-02-23
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13892,9365 13849,9310
 # 
@@ -2221,6 +2221,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: by: https://twitter.com/VIZ_Berlin/status/1400813335705227264
 #: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/bruno-taut-strasse-bekommt-unter-anderem-eine-neue-asphaltdecke_a313839 (bis Juli 2022)
 #: by: https://www.infravelo.de/projekt/richterstrasse-und-bruno-taut-strasse/ (bis 3. Quartal 2022)
+#: by: https://www.berliner-woche.de/gruenau/c-verkehr/bohnsdorfer-kreisel-wird-noch-2022-wieder-freigegeben_a336521 (bis Ende August 2022, Restarbeiten im September 2022)
 #: XXX außerdem: zwei Zebrastreifen werden eingerichtet, an der Kreuzung Richterstr. wird eine Ampel eingerichtet (statt des jetzigen Zebrastreifens)
 #: XXX außerdem: Vorfahrtsregelung werden geändert (zum Am Falkenberg) oder spezifiziert (zur Buntzelstr.)
 #: XXX komplettes Bauende 2018
@@ -2239,7 +2240,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: also_indoor: traffic (G,H,B)
 #: last_checked: 2022-02-12 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2022-07-31
+#: next_check: 2022-08-31
 Bohnsdorfer Kreisel: Bau von Radspuren (mit Grünmarkierung) in beiden Richtungen	?::projected 22092,999 22034,1006 21977,988
 # REMOVED (realisiert) --- Bohnsdorfer Kreisel: Bau von Radspuren (mit Grünmarkierung) in beiden Richtungen	?::projected 22062,773 22120,886 22100,941 22092,977 22092,999
 # REMOVED --- #: check_frequency: 90d
@@ -2824,7 +2825,7 @@ Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/sanierte-fusswege-baeume-asphalt-und-weniger-autoverkehr-auf-der-weserstrasse_a314958
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/der-schulweg-auf-der-weserstrasse-bleibt-weiterhin-fuer-die-kinder-gefaehrlich_a334967
 #: by: https://berliner-abendblatt.de/2022/02/03/reuterkiez-2/ (Verkehrskonzept)
-#: last_checked: 2022-02-11
+#: last_checked: 2022-02-23
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-12-31
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
@@ -3621,6 +3622,7 @@ Torstr.: Planung von Radwegen	?::projected 10177,13766 9917,13741 9797,13691 967
 #: by: https://berliner-abendblatt.de/2022/02/02/mehr-radverkehr-im-waldseeviertel/
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9903 (Einwohneranfrage)
 #: by: https://berliner-abendblatt.de/2022/02/15/waldseeviertel-linke-hofft-auf-neue-verkehrsplanung/
+#: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/die-senatsverwaltung-schafft-neue-fakten-in-der-schildower-strasse_a336851
 #: XXX wird es während der Bauarbeiten Einschränkungen geben?
 #: next_check: 2023-04-15
 Schildower Str.: Neubau geplant, wird es danach noch Radwege geben?	?::projected 4425,24067 4510,24170 4614,24233 4683,24275 4705,24284 4779,24321 4849,24335
@@ -5369,7 +5371,7 @@ Am Brunnen (Potsdam): Bauarbeiten, danach vielleicht etwas bessere Qualität (Asp
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
 #: priority: #D
-#: last_checked: 2022-01-23
+#: last_checked: 2022-02-23
 #: check_frequency: 150d
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,7623 14614,7614
 # 
@@ -5988,9 +5990,8 @@ Wuhlheide: Weg wird erneuert	?::inwork 20629,7189 20575,7226
 #: by: https://berliner-abendblatt.de/2022/01/24/bauprojekte-der-s-bahn-2022/
 #: XXX laut Plänen wird es Richtung Norden eine Fahrradschleuse und Richtung Süden eine Radspur geben; vermutlich wird die Straße während der Bauarbeiten komplett gesperrt
 #: XXX laut Ausschilderung an der Sonnenallee Sperrung ab 21.2.2022 4:30 Uhr
-#: last_checked: 2022-01-16
-# REMOVED --- #: check_frequency: 30d (indoor frequency)
-# REMOVED --- #: next_check: 2022-09-01
+#: last_checked: 2022-02-23
+#: next_check: 2022-12-31
 Niemetzstr.: EÜ wird erneuert, Fahrbahn wird abgesenkt	?::projected 13797,7267 13762,7321
 # 
 # REMOVED (ja) --- #: XXX leider sind die mapillary-Aufnahmen nicht scharf genug... Busspur ist vermutlich nicht zeitlich beschränkt --- Gotthardstr.: Busspur für Radfahrer frei?	?; 5628,17631 5382,17419

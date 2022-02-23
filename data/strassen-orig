@@ -2422,7 +2422,7 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2022-01-16 vvv
+#: last_checked: 2022-02-23 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
@@ -2580,7 +2580,7 @@ Straße 12 (Neukölln)	N 13882,6674 13881,6634 13915,6592
 (Grenzallee - Britzer Hafensteg)	NN 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2021-12-13 vvv
+#: last_checked: 2022-02-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: valid: 20140224-20221231
@@ -2760,7 +2760,7 @@ Straße 56 (Heinersdorf)	N 12429,17685 12587,17603
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/29re.pdf/file?y=2014 (Benennung)
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3835 (Vorlange zur Kenntnisnahme)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2014 (Widerspruch)
-#: osm_watch: way id="45904921" version="11"
+#: osm_watch: way id="45904921" version="12"
 #: last_checked: 2022-02-04 (mapillary)
 #: check_frequency: 120d
 Straße 16 (Heinersdorf)	N 13031,17775 13034,17895
@@ -4008,12 +4008,13 @@ Rosensteinweg	N 1718,9653 1917,9821 1927,9820
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/buergerbeteiligung/aktuelle-projekte/umbenennung-wissmannstrasse/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Straßenumbenennung, wirksam ab 26.2.2022)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1179087.php (Umbenennung am Samstag oder Sonntag, dem 27.2.2022)
+#: by: https://berliner-abendblatt.de/2022/02/23/wissmannstrasse-in-grunewald-heisst-ab-samstag-baraschstrasse/ (Samstag)
 #: note: früher mit Zusatz "(Grunewald)"
 #: XXX Umbenennung zu Baraschstr.; oldname-Eintrag wieder mit "Grunewald"
 #: also_indoor: search Wissmannstraße Baraschstraße
 #: osm_watch: way id="4623428" version="10"
 #: priority: #A
-#: next_check: 2022-02-27
+#: next_check: 2022-02-26
 Wissmannstr.	N 1341,9244 1421,9173 1434,9154 1483,9132 1569,9137 1708,9298
 Winkler Str.	N 936,8933 1037,8884 1090,8892 1316,9067 1434,9154
 Erdener Str.	N 1457,9344 1587,9320 1708,9298 1757,9282 1782,9270
@@ -13732,7 +13733,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED (Verschwenkung realisiert) --- #: XXX Verschwenkung der Bergiusstr. --- #: XXX nach den Bauarbeiten: Bergiusstr. führt direkt zur Grenzallee, ebenso neu: Ampel an der Anschlussstelle --- #: XXX wahrscheinlich ist auch die alte Ampel abgeschaltet? --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/A100_UmbauAusfahrtGrenzallee.pdf --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5044.html --- #: prio: #A --- #: next_check: 2013-08-23
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
 # REMOVED --- #: last_checked: 2021-03-30 --- #: check_frequency: 90d --- #: next_check: 2021-12-31 --- #: next_check: 2021-04-02 --- (Zufahrt zur Bergiusstr.)	NN 14051,6731 14106,6663
-#: last_checked: 2022-01-16 vvv
+#: last_checked: 2022-02-23 vvv
 #: check_frequency: 90d vvv
 #: XXX im Zuge des A100-Ausbaus wird die Bergiusstr. verschwenkt
 Bergiusstr.	H 14051,6731 14106,6663

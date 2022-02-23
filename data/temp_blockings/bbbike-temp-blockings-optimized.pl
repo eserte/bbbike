@@ -3745,7 +3745,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Niemetzstraße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: also_indoor: traffic (G,H(nur Niemetz),B(nur Niemetz)) vvv
-#: last_checked: 2022-02-20 vvv
+#: last_checked: 2022-02-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 	q4::inwork; 13702,7418 13654,7380 13601,7366 13519,7345 13476,7330
@@ -3973,6 +3973,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: FUERSTENDAMM-2022
 #: by: https://berliner-abendblatt.de/2022/02/09/fuerstendamm/
 #: by: https://www.berliner-woche.de/frohnau/c-verkehr/bauarbeiten-auf-dem-fuerstendamm-ab-9-maerz_a335966
+#: source_id: 226500387 (bis 31.12.2022)
 #: XXX Wann beginnt der 2. Bauabschnitt: Eltviller Straße bis Oranienburger Chaussee?
 #: next_check: 2022-10-01
 	q4::inwork 2486,25156 2599,25047 2647,25018 2673,25012 2818,25022 2904,24993 3015,24965 3117,24966
@@ -4053,29 +4054,38 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://viz.berlin.de/2022/02/verkehrsvorschau-21022022/ (für Fußgänger offen)
 #: XXX evtl. nach handicap_s-orig übertragen
 #: also_indoor: traffic (B,H(unvollständig),G)
-#: priority: #B
-#: next_check: 2022-02-21
+#: last_checked: 2022-02-23 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2022-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
+	2::inwork 13797,7267 13693,7228 13575,7200
+#: note: evtl. damit zusammenhängend: Einbahnstraßenregelung in der Mierstr. und Teilen des Mittelbuschwegs
+	q4::inwork; 13484,7140 13575,7200 13627,7047
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1645336800,
          'id' => 3517,
          'source_id' => 'viz2021:13.452362,52.470898,21.02.2022,07:00',
-         'text' => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, vom 21.02.2022 07:00 bis 31.12.2022 17:00',
+         'text' => 'Niemetzstr.: Brückenneubau, Sperrung der Fahrbahn, Fußgängerschutztunnel existiert, außerdem kann der Mittelbuschweg vollständig gesperrt sein, vom 21.02.2022 07:00 bis 31.12.2022 17:00',
          'type' => 'handicap',
          'until' => 1672502400
        },
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1495626806573076482
-#: XXX bei viz bis zum Abend des 21.2.2022, aber stimmt das? (mittlerweile bis 22.2.2022)
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1179333.php
+#: by: https://berliner-abendblatt.de/2022/02/23/sturmschaeden-rohrdamm-bleibt-gesperrt/
+#: source_id: viz2021:13.262931,52.540599,20.02.2022,04:15 (kein Endedatum)
 #: also_indoor: traffic (G,H,B)
 #: priority: #A
-#: next_check: 2022-02-23
+#: next_check: 2022-02-24
 	2::inwork 741,14827 778,14713 838,14530
 ',
          'from' => 1645240500,
          'id' => 3518,
          'source_id' => 'viz2021:13.26293,52.54059,20.02.2022,04:15',
-         'text' => 'Rohrdamm: zwischen Schuckertdamm und Jugendweg gesperrt, evtl. auch für Radfahrer und Fußgänger ',
+         'text' => 'Rohrdamm: zwischen Schuckertdamm und Jugendweg gesperrt, auch für Radfahrer und Fußgänger ',
          'type' => 'gesperrt',
          'until' => undef
        }
