@@ -1424,7 +1424,7 @@ Friedrichshaller Str.: Kopfsteinpflaster	Q2 3084,7599 2911,7686 2786,7721 2774,7
 Christburger Str.: Kopfsteinpflaster	Q2 11633,14631 11912,14486
 Christburger Str.: Asphalt	Q0 11912,14486 12177,14335
 Pasteurstr.: Asphalt	Q0 12188,14350 12335,14246 12486,14143
-Pasteurstr.: Kopfsteinpflaster	Q2 12486,14143 12601,14060 12766,13942
+Pasteurstr.: Kopfsteinpflaster	Q2 12486,14143 12594,14065 12766,13942
 Ebelingstr.: Kopfsteinpflaster	Q2 13481,13128 13598,13180 13692,13221
 Cuvrystr.: Asphalt	Q0 13035,10076 13132,10239
 Cuvrystr.: gutes Kopfsteinpflaster	Q1 13132,10239 13151,10276 13197,10355
@@ -1482,7 +1482,7 @@ Mainzer Str.: mäßiges Kopfsteinpflaster	Q2 12116,8247 12134,8172 12147,8117
 Mainzer Str.: Asphalt	Q0 12147,8117 12162,8053
 Lucy-Lameck-Str.: schlechtes Kopfsteinpflaster	Q3 11767,9026 11768,8871 11768,8739 11768,8696 11769,8515
 Liebigstr.: Kopfsteinpflaster	Q2 13905,12374 13991,12522 14058,12709
-Liselotte-Herrmann-Str.: Kopfsteinpflaster	Q2 12701,13873 12542,13984 12423,14066 12281,14164
+Liselotte-Herrmann-Str.: Kopfsteinpflaster	Q2 12701,13873 12537,13987 12423,14066 12281,14164
 Esmarchstr.: Kopfsteinpflaster	Q2 12335,14246 12281,14164 12228,14083 12148,13961
 Chodowieckistr.: Kopfsteinpflaster	Q2 12266,14460 11982,14614 11682,14777
 Christinenstr.: Kopfsteinpflaster	Q2 10572,13731 10599,13775 10639,13864 10688,13963 10755,14067 10822,14179
@@ -2504,7 +2504,7 @@ Feldtmannstr.: asphaltiert	Q0 15239,17599 14754,17673
 Am Schweizer Garten: Asphalt	Q0 11868,13646 12001,13863
 (Volkspark Friedrichshain): Parkweg	Q1 12161,13711 12145,13628
 (Volkspark Friedrichshain): kleinteiliges Kopfsteinpflaster	Q1 12145,13628 12141,13609
-(Volkspark Friedrichshain): Asphalt	Q0 12141,13609 12130,13554 12111,13480 12060,13422
+(Volkspark Friedrichshain): Asphalt	Q0 12141,13609 12126,13538 12111,13480 12060,13422
 Kadiner Str.: Asphalt	Q0 13515,11969 13590,12260
 Südtorweg: wassergebundene Decke	Q1 -503,11782 -750,11740
 Carl-Schuhmann-Weg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
@@ -2786,7 +2786,8 @@ Hubertusweg: gepflastert	Q2 3333,27766 2939,27694 2770,27677 2568,27697 2345,276
 Schwarzkittelweg: Verbundsteinpflaster	Q1 3013,26458 3088,26485 3170,26502 3281,26524 3422,26540
 (Quickborner Str. - Wilhelmsruher Damm): Asphalt	Q0 7959,21573 7764,21271 7750,21250
 Norwegerstr. - Behmstr.: Verbundsteinpflaster	Q0 10022,16237 10026,16165 10055,16104 10065,16110 10045,16157
-(Holzmarktstraße, Wohngebiet): Beton	Q1 11589,12296 11524,12314 11488,12225 11736,12097
+(Holzmarktstraße, Wohngebiet): Beton	Q1 11515,12293 11488,12225 11736,12097
+(Holzmarktstr. - Ifflandstr.): Gehwegbetonplatten	Q1 11515,12293 11584,12258 11589,12296
 (Lichtenberger Str., Wohngebiet): Beton	Q1 11736,12097 11845,12292
 Burchardstr.: Beton	Q0 8200,6668 8553,6665 8722,6656
 Podewilsstr.: Asphalt	Q0 8707,6537 8551,6552
@@ -10203,7 +10204,7 @@ Pepitapromenade: Betonpflaster	Q0 -2856,17489 -2873,17369 -2878,17324
 Waldstr.: schlechtes Kopfsteinpflaster	Q3 22985,-1319 23042,-1297
 Waldstr.: Asphalt	Q0 22003,-1625 22257,-1533 22362,-1509 22685,-1421
 Waldstr.: Beton	Q0 22685,-1421 22985,-1319
-(Volkspark Friedrichshain, von/zur Weinstr.): Asphalt	Q0 12130,13554 12002,13485 11992,13467
+(Volkspark Friedrichshain, von/zur Weinstr.): Asphalt	Q0 12126,13538 12006,13481 11995,13463
 Sebastianstr.: Asphalt, einige Schäden	Q0 10644,11569 10818,11269 10826,11251
 Waldowstr.: Asphalt, einige Schäden	Q0 10309,20562 10379,20309 10383,20295 10435,20098 10486,19955 10508,19910
 Bahnhofstr. - S-Bhf. Lichterfelde Ost: Kopfsteinpflaster	Q2 5332,2568 5367,2528
@@ -16384,14 +16385,14 @@ Barnimstr.: Beton	Q0 11765,13260 11774,13251 11785,13241
 Mollstr. [Wohngebiet]: Beton	Q1 11881,13147 11762,13207 11749,13215 11639,13268 11643,13279 11589,13305 11578,13310
 (Erschließungsstr.): Beton	Q1 11608,13417 11652,13478 11667,13465
 (Verbindungsweg): Kleinsteinpflaster	Q1 11667,13465 11703,13426
-Weinstr.: Verbundsteinpflaster	Q1 11774,13251 11909,13387
-Weinstr.: Asphalt	Q0 11909,13387 11992,13467
+Weinstr.: Verbundsteinpflaster	Q1 11774,13251 11914,13381
+Weinstr.: Asphalt	Q0 11914,13381 11995,13463
 (Netto-Parkplatz): Verbundsteinpflaster	Q0 11881,13147 11884,13145 11952,13095 11958,13079
-Höchste Str.: Asphalt	Q0 11784,13513 11909,13387 12007,13290 12066,13237
+Höchste Str.: Asphalt	Q0 11784,13513 11914,13381 12007,13290 12066,13237
 (Parkplatz): Beton	Q0 12090,13260 12066,13237 12046,13150 12011,13136 11919,13196
 Georgenkirchstr.: Asphalt	Q0 11842,13576 11784,13513 11703,13426 11652,13372 11589,13305
 (Mollstr. - Barnimstr.): Verbundsteine	Q0 11723,13139 11749,13215
-(Volkspark Friedrichshain, parallel zur Friedenstr.): Gehwegplatten und kurze Kopfsteinpflasterabschnitte	Q0 12382,13097 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12002,13485 11957,13528 11857,13596 11823,13610 11785,13625
+(Volkspark Friedrichshain, parallel zur Friedenstr.): Gehwegplatten und kurze Kopfsteinpflasterabschnitte	Q0 12382,13097 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12006,13481 11957,13528 11857,13596 11823,13610 11785,13625
 Hinter der Katholischen Kirche: Kleinsteinpflaster	Q1 9798,12267 9796,12284 9780,12401
 Behrenstr.: Asphalt	Q0 9496,12215 9631,12227 9680,12232 9730,12238 9737,12238 9798,12267
 Markgrafenstr. (Kreuzberg, Mitte): Asphalt	Q0 9631,12227 9645,12133
@@ -16594,7 +16595,7 @@ Lilli-Henoch-Str.: Beton	Q0 12584,14928 12477,14987 12393,15030 12357,15020 1231
 Olga-Benario-Prestes-Str.: Asphalt und einige Kopfsteinpflasterabschnitte	Q1 12628,14650 12473,14763
 Margarete-Walter-Str.: Asphalt mit Schäden	Q1 12789,14670 12745,14613 12814,14556
 (Anton-Saefkow-Str. - John-Schehr-Str.): Verbundsteine	Q1 13088,14469 13031,14390 13022,14378 13016,14370 12954,14287
-Hans-Otto-Str.: Kopfsteinpflaster	Q2 12832,14378 12783,14312 12722,14232 12601,14060 12542,13984 12478,13903 12398,13792
+Hans-Otto-Str.: Kopfsteinpflaster	Q2 12832,14378 12783,14312 12722,14232 12594,14065 12537,13987 12478,13903 12398,13792
 Heinz-Kapelle-Str.: Kopfsteinpflaster	Q2 12783,14312 12972,14173
 Dietrich-Bonhoeffer-Str.: schlechtes Kopfsteinpflaster	Q3 12556,14230 12266,14460
 Margarete-Sommer-Str.: Kopfsteinpflaster	Q2 12707,13706 12805,13809 12879,13889 12975,13990

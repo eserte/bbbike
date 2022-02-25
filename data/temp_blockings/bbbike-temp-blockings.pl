@@ -16309,13 +16309,15 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-#: tempex: su T09-T16
-	q4::temp:clock 12608,11692 12453,11790 12378,11806
-#: next_check_id: CORONA-2020
-#: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2022-01-29
-#: check_frequency: 30d
+#: tempex: su T09-T16 vvv
+# REMOVED (temporarily removed) ---	q4::temp:clock 12608,11692 12453,11790 12378,11806
+# REMOVED --- #: next_check_id: CORONA-2020
+#: next_check_id: OSTBAHNHOF-2021
+#: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
+#: last_checked: 2022-02-25
+#: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
+#: tempex ^^^
 EOF
      },
      { from  => undef, #
@@ -30506,7 +30508,7 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-02-18 (mapillary)
+#: last_checked: 2022-02-23 (mapillary)
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 EOF
@@ -33362,13 +33364,13 @@ EOF
 EOF
      },
      { from  => 1627164000, # 2021-07-25 00:00
-       until => $isodate2epoch->("2022-02-28 17:00:00"),
-       text  => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 28.02.2022 17:00',
+       until => $isodate2epoch->("2022-03-01 15:00:00"),
+       text  => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 01.03.2022 15:00',
        type  => 'handicap',
        source_id => 'viz2021:13.326349,52.447526,26.07.2021,07:00', # inaktiv
        data  => <<EOF,
 #: note: Eintrag bei rbb am 10.11.2021 entfernt --- mittlerweile wieder da, sogar bis zum 28.2.2022
-#: source_id: viz2021:13.327411,52.448681,26.07.2021,07:00 (mittlerweile nur noch bis 28.2.2022)
+#: source_id: viz2021:13.327411,52.448681,26.07.2021,07:00 (mittlerweile nur noch bis 28.2.2022) (mittlerweile bis 1.3.2022)
 #: also_indoor: traffic (G,H,B)
 # REMOVED (hier nicht mehr) ---	q4::inwork; 5271,4547 5316,4637 5336,4676
 	q4::inwork; 5336,4676 5407,4815
@@ -33393,7 +33395,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
 #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren; außerdem sind etwa 100m der Fahrbahn wieder befahrbar (q3 -> q2)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2022-02-04
+#: last_checked: 2022-02-25
 #: check_frequency: 45d
 #: next_check: 2022-03-31
 	q2::inwork 13057,14267 13158,14117
@@ -34602,7 +34604,7 @@ EOF
 #: source_id: viz2021:13.262931,52.540599,20.02.2022,04:15 (kein Endedatum)
 #: also_indoor: traffic (G,H,B)
 #: priority: #A
-#: next_check: 2022-02-24
+#: next_check: 2022-02-26
 	2::inwork 741,14827 778,14713 838,14530
 EOF
      },

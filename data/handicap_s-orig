@@ -140,7 +140,7 @@ Oderstr.: Einbahnstraﬂenregelung, offen Richtung Osten	q3::inwork; 15043,11637 1
 ### Treptow ###
 # 
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
-#: last_checked: 2022-01-23
+#: last_checked: 2022-02-23 (mapillary)
 #: check_frequency: 60d
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraﬂe, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 # 
@@ -208,14 +208,7 @@ Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 #: last_checked ^^^
 # 
 # REMOVED --- #: also_indoor: traffic --- #: last_checked: 2021-04-13 --- Singerstr.: Baustelle, etwa 50m Fahrbahn gesperrt	q2::inwork 11613,12408 11497,12463
-# 
-#: by: https://www.wbm.de/neubau-berlin/mitte/ifflandstrasse/ (Fertigstellung vsl. 01/2022)
-# REMOVED --- #: osm_watch: way id="822127127" version="3"
-#: osm_watch: way id="736448990" version="9"
-#: last_checked: 2022-01-25
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2022-01-01
-Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
+# REMOVED (hier gibt's nur noch Fuﬂwege) --- #: by: https://www.wbm.de/neubau-berlin/mitte/ifflandstrasse/ (Fertigstellung vsl. 01/2022) --- # REMOVED --- #: osm_watch: way id="822127127" version="3" --- #: osm_watch: way id="736448990" version="9" --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2022-01-01 --- Holzmarktstr. - Ifflandstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 11524,12314 11589,12296
 # 
 #: next_check_id: CHAUSSEE-2020
 #: source_id: 2147346552 (bis 16.7.2021)
@@ -232,7 +225,7 @@ Chausseestr.: gemeinsamer Geh- und Radweg	q2::inwork; 8442,14456 8406,14507 8336
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2022-02-09 vvv
+#: last_checked: 2022-02-24 (mapillary) vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423
@@ -797,11 +790,12 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 # 
 #: by: https://www.nbb-netzgesellschaft.de/ueber-die-nbb/presse/pressemitteilungen/reparatur-beeintraechtigt-verkehr-in-schoeneberg/
 #: XXX laut Schild bis Dezember 2021 (dauer aber l‰nger)
-#: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.2.2022)
-#: also_indoor: traffic (H,B)
+#: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022)
+#: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022)
+#: also_indoor: traffic (ex-H,B)
 #: last_checked: 2022-02-13
-# REMOVED --- #: check_frequency: 60d
-#: next_check: 2022-02-28
+#: check_frequency: 60d
+#: next_check: 2022-05-02
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
 # 
 # REMOVED (-> temp blockings) --- #: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (f¸r ca. vier Wochen, ab 12.5.2021) --- #: by: https://twitter.com/rbbabendschau/status/1392489796426162177 --- #: source_id: 2147347186 --- #: also_indoor: traffic (G) --- #: XXX wann werden die Fahrbahn und die Radwege wieder freigegeben? bei rbb "bis auf Weiteres" --- #: priority: #A --- #: last_checked: 2021-05-14 --- #: next_check: 2021-06-18 --- #: valid: -20210612 --- Langenscheidtbr¸cke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, s¸dwestlicher Fuﬂweg steht noch zur Verf¸gung	q3::inwork 7647,9196 7735,9121 7790,9126
@@ -875,14 +869,14 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 # 
 #: next_check_id: HOSEMANN-2019
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
-#: XXX laut Schild bis Dezember 2022
-#: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaﬂnahme bis Ende 2021)
+#: XXX laut Schild der Wasserbetriebe bis Dezember 2022
+#: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaﬂnahme bis Ende 2021) (vermutlich inaktiv)
 #: osm_watch: way id="885619857" version="6"
 #: osm_watch: way id="885619858" version="4"
-#: note: laut rbbtext bis 31.12.2020
-#: also_indoor: traffic (G,B)
+# REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
+#: also_indoor: traffic (ex-G,B)
 #: priority: #B
-#: last_checked: 2021-12-21 vvv
+#: last_checked: 2022-02-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -1145,16 +1139,68 @@ Marx-Engels-Forum: einige Fuﬂg‰nger	q2+ 10363,12535 10405,12462 10416,12394
 Marx-Engels-Forum: einige Fuﬂg‰nger	q2+ 10357,12514 10363,12535 10379,12580 10409,12597 10456,12590
 Marx-Engels-Forum - Spandauer Str./Karl-Liebknecht-Str.: einige Fuﬂg‰nger	q2+ 10409,12597 10438,12671 10431,12709
 #: note ^^^
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12325,13148 12344,13157 12369,13209 12404,13266 12405,13300 12445,13320
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12476,13273 12445,13320 12420,13370 12483,13418 12450,13542 12344,13627 12372,13755
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12344,13627 12204,13609 12169,13609 12141,13609 12130,13554 12002,13485 11992,13467
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13609 12145,13628 12161,13711
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12130,13554 12111,13480 12060,13422
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 11857,13596 11842,13576
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12141,13341 12131,13333
-Volkspark Friedrichshain: Fuﬂg‰nger	q1 12038,13685 12145,13628 12169,13609
+#
+## Volkspark Friedrichshain, nur einige Wege sind f¸r Radfahrer freigegeben ##########
+#: by: https://www.flickr.com/photos/hajo-ed/2710210211 (Karte mit Radwegen im Volkspark Friedrichshain)
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q3 12325,13148 12344,13157 12369,13209 12404,13266 12405,13300 12445,13320
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q3 12476,13273 12445,13320 12420,13370
+#: note: offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q2 12244,13240 12341,13309 12420,13370
+#: note: offizieller Radweg, hier etwas breiter
+Volkspark Friedrichshain: Fuﬂg‰nger	q1 12420,13370 12483,13418
+#: note: offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q1 12483,13418 12450,13542 12344,13627 12372,13755
+#: note: offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q1 12344,13627 12204,13609 12169,13609 12141,13609
+#: note: offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q1 12161,13711 12145,13628 12141,13609 12126,13538 12111,13480 12060,13422
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q3 12126,13538 12006,13481 11995,13463
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q3 11857,13596 11842,13576
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q3 12141,13341 12131,13333
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q3 12038,13685 12145,13628 12169,13609
 #: XXX_prog: Steigung sollte in comments_mount erw‰hnt werden?
-(Weg zum groﬂen Bunkerberg): Fuﬂg‰nger, Steigung	q2 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12307,13491 12254,13495 12232,13477 12246,13440 12278,13418 12287,13443
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain, Weg zum groﬂen Bunkerberg: Fuﬂg‰nger, Steigung	q3 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12307,13491 12254,13495 12232,13477 12246,13440 12278,13418 12287,13443
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q3 13100,13803 12987,13727 12965,13709 12829,13621 12766,13621
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain: Skater, Fuﬂg‰nger	q3 12829,13621 12887,13537 12925,13523 12991,13539 13025,13585 13023,13627 12965,13709 12915,13785 12877,13795 12825,13783 12793,13749 12783,13699 12829,13621
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q3 12915,13785 12937,13803 12887,13877 12879,13889
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q3 12937,13803 12987,13727
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q3 12825,13783 12813,13799 12805,13809
+#: note: offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q2 12372,13755 12436,13719 12460,13716 12608,13760 12640,13814
+#: note: offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q2 12766,13621 12738,13608 12656,13581 12572,13523 12483,13418
+#: note: offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q2 12483,13418 12586,13368
+#: note: offizieller Radweg
+#: corrected_by: srt (-> Rampe)
+Volkspark Friedrichshain: kurze Rampe an der Friedenstr.	q3 12244,13240 12236,13229
+#: note: kein offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q3 12369,13209 12369,13252 12341,13309 12307,13329 12206,13326 12166,13349 12141,13341
+#: note: offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q2 12141,13609 12012,13599 12038,13685
+#: note: offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger	q1 12707,13706 12719,13704 12813,13799 12887,13877 12972,13970 12975,13990
+#: note: offizieller Radweg
+Volkspark Friedrichshain: Fuﬂg‰nger, flache enge Rampe	q4 12058,13403 12044,13427 12060,13422
+# REMOVED (-> Treppe + Rampe) --- #: XXX ist hier tats‰chlich eine Rampe oder nur eine Treppe? --- (Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger, kurze Rampe	q3 12382,13097 12380,13120
+#: note: offizieller Radweg
+(Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger	q1 12382,13097 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12006,13481 11957,13528 11857,13596 11823,13610 11785,13625
+#: note: offizieller Radweg
+Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12876,13440 12826,13526 12802,13584 12784,13610 12766,13621 12743,13634 12709,13691 12707,13706
+######################################################################
+# 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120418.1330.368930.html
 Luisenhain: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang	q2- 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22071,4501
 (Rathaus Kˆpenick - Luisenhain): Fuﬂg‰nger	q2- 22138,4642 22074,4664
@@ -1239,7 +1285,6 @@ Volkspark Wilmersdorf: einige Fuﬂg‰nger	q1- 5762,8335 5699,8308 5687,8280 5700,8
 (Weg im Wustrower Park): eng und teilweise kurvenreich	q1 17235,18352 17206,18332
 #: note: jeweils zwei Serpentinen pro Seite, groﬂer Zeitverlust
 Bernburger Treppe: Rampen	q4 8536,11063 8512,11069 8516,11086 8484,11097 8478,11080 8454,11086
-Virchowstr. (Volkspark Friedrichshain): Fuﬂg‰nger	q1 12876,13440 12826,13526 12802,13584 12784,13610 12766,13621 12743,13634 12709,13691 12707,13706
 (Buckower Ring - Cecilienstr.): Fuﬂg‰nger, eng, einige Regenablaufrinnen	q2 21879,13515 21894,13514 21920,13680
 (Hohenzollerndamm - Friedrichsruher Str.): enger Gehweg	q2 3379,8969 3333,9026
 Gillweg: enger Gehweg	q2 2585,9653 2484,9671 2394,9714
@@ -3883,6 +3928,8 @@ Golda-Meir-Steg: Fuﬂg‰nger	q2 7861,14133 7899,14157 7962,14198
 (Uferweg - Lausitzer Str.): Rampe, enge Kurven	q3 11948,9895 11946,9913
 #: note: Gr¸nanlage, kein explizites Radfahrverbot
 (Weg am Kienhorstgraben): einige Fuﬂg‰nger	q3 3876,18348 3799,18159 3723,17979 3706,17931
+#: XXX_prog: BS an beiden Enden, ansonsten trotzdem q3
+(Holzmarktstr. - Ifflandstr.): Fuﬂg‰nger, Bordsteine	q3 11515,12293 11584,12258 11589,12296
 # 
 ######################### User Contributions #################################
 # 
@@ -4215,8 +4262,6 @@ Kamminer Str.: un¸bersichtliche Kreuzungen, parkende PKWs	q1 3240,12966 3283,131
 (Kolonieweg a. d. Forkenbeckstr.): Fuﬂg‰nger, teilweise eng	q3 3358,8190 3584,8136 3756,8101 3779,8105
 Claire-Waldoff-Weg: Fuﬂg‰nger	q2 3584,8136 3571,8085 3538,7515
 Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
-# REMOVED (-> Treppe + Rampe) --- #: XXX ist hier tats‰chlich eine Rampe oder nur eine Treppe? --- (Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger, kurze Rampe	q3 12382,13097 12380,13120
-(Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger	q1 12382,13097 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12002,13485 11957,13528 11857,13596 11823,13610 11785,13625
 #: note: fr¸her "q1", rechtliche Lage unklar
 (Weydemeyerstr.): Fuﬂg‰nger	q2 11900,12756 11892,12760 11831,12789 11825,12792
 #: note: fr¸her "q1", rechtliche Lage unklar
@@ -4258,7 +4303,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Verbindungsweg): Fuﬂg‰nger, schmal, Bordstein	q3 11667,13465 11703,13426
 #: corrected_by: srt ("Wurzeln" entfernt, "Schule" hinzugef¸gt)
 #: note: unklar, ob es sich hier um einen reinen Gehweg handelt; fr¸her "q2"
-Weinstr.: Fuﬂg‰nger, Schulen	q3 11774,13251 11909,13387
+Weinstr.: Fuﬂg‰nger, Schulen	q3 11774,13251 11914,13381
 #: note: fr¸her "q2"
 (Mollstr. - Barnimstr.): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q4+ 11723,13139 11749,13215
 Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133
@@ -4312,19 +4357,6 @@ Rezonvillestr.: Fuﬂg‰nger	q2 5589,4617 5607,4610
 Am Stadtpark (Steglitz): Fuﬂg‰nger	q2 5656,4543 5751,4497 5817,4473
 (Stadtpark Steglitz): Fuﬂg‰nger	q2 5806,4840 5772,4766 5736,4686 5724,4670 5676,4552 5656,4543
 Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5334,4857 5356,4892 5377,4901 5436,4983
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 13100,13803 12987,13727 12965,13709 12829,13621 12766,13621
-(Volkspark Friedrichshain): Skater, Fuﬂg‰nger	q2 12829,13621 12887,13537 12925,13523 12991,13539 13025,13585 13023,13627 12965,13709 12915,13785 12877,13795 12825,13783 12793,13749 12783,13699 12829,13621
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12915,13785 12937,13803 12887,13877 12879,13889
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12937,13803 12987,13727
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12825,13783 12813,13799 12805,13809
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12372,13755 12436,13719 12460,13716 12608,13760 12640,13814
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12766,13621 12738,13608 12656,13581 12572,13523 12483,13418
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12483,13418 12586,13368
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12420,13370 12341,13309 12244,13240
-#: corrected_by: srt (-> Rampe)
-(Volkspark Friedrichshain): kurze Rampe an der Friedenstr.	q3 12244,13240 12236,13229
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12369,13209 12369,13252 12341,13309 12307,13329 12206,13326 12166,13349 12141,13341
-(Volkspark Friedrichshain): Fuﬂg‰nger	q2 12141,13609 12012,13599 12038,13685
 # REMOVED (falsch gewesen) --- #: XXX ist hier eine Parkplatzzufahrt? --- (Zufahrt Landsberger Allee): Fuﬂg‰nger	q2 13445,13376 13419,13435
 # REMOVED --- #: note: fr¸her q2, w‰ren die mˆglich gewesen? --- (Zufahrt Landsberger Allee): Fuﬂg‰nger	q4+ 13419,13435 13574,13505
 (Verl‰ngerte Wallenbergstr.): Fuﬂg‰nger, schmal	q3 4139,8485 3992,8487
