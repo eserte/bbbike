@@ -330,7 +330,6 @@ for my $file (@files) {
 			     }
 			     my $prepared_search_term = join("+", @search_tokens);
 			     push @extra_url_defs, ['Search', qq{https://start.duckduckgo.com/?q=$prepared_search_term&df=m}];
-			     push @extra_url_defs, ['Y',      qq{https://yandex.com/search/?text=$prepared_search_term&within=2}];
 			     push @extra_url_defs, ['G',      qq{https://www.google.com/search?ie=UTF-8&q=$prepared_search_term&tbs=qdr:m}];
 			     push @extra_url_defs, ['B',      qq{https://www.bing.com/search?q=$prepared_search_term&filters=ex1%3a"ez3"}];
 			 } else {
