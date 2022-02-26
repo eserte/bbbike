@@ -556,7 +556,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
-#: last_checked: 2022-01-17 (mapillary)
+#: last_checked: 2022-02-25 (mapillary)
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -1025,7 +1025,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-02-25
+#: last_checked: 2022-02-26
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -9979,6 +9979,7 @@ Rampe zum Alfred-Lion-Steg: Asphalt	Q0 8088,8254 8078,8256 8086,8289
 Alfred-Lion-Steg: Beton	Q0 8086,8289 7992,8312
 Rampe/Zufahrt zum Alfred-Lion-Steg: Asphalt	Q0 7992,8312 7932,8325 7911,8329 7899,8332
 (Radweg an der Bahnstrecke - Alfred-Lion-Steg): Asphalt	Q0 7996,8298 7932,8325
+Göhrener Str.: Asphalt mit einigen Schäden	Q0- 11505,15150 11505,15065
 Göhrener Str.: Kopfsteinpflaster, OK	Q1 11514,15041 11505,15065
 Heinrich-Heine-Platz: Asphalt mit leichten Schäden	Q1; 11337,11197 11241,11247
 Wrangelstr.: vor der Schule zweimal Aufpflasterungen, ansonsten Asphalt	Q0- 12731,10547 12531,10676
@@ -30350,7 +30351,7 @@ Kreuzungsbereich asphaltiert	Q0 17248,11317
 Kreuzungsbereich asphaltiert	Q0 17155,11348
 Kreuzungsbereich asphaltiert	Q0 11295,16199
 Kreuzungsbereich asphaltiert	Q0 11404,16140
-Kreuzungsbereich mit Kreuzungsbereich	Q2 13724,8090
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 13724,8090
 #: note: wobei Q3 eigentlich nur für die N-S-Richtung gilt, in der Mitte der Kreuzung und damit für die O-W-Richtung ist es eher Q2
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 21321,9672
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 21241,9287
@@ -30426,7 +30427,7 @@ Kreuzungsbereich mit unebenem Kleinsteinpflaster	Q2 15799,14674
 Kreuzungsbereich mit Kleinsteinpflaster	Q2 1761,4255
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ -1422,3785
 Kreuzungsbereich asphaltiert	Q0 9250,14658
-Kreuzungsbereich mit Kreuzungsbereich	Q2 9108,14777
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 9108,14777
 Kreuzungsbereich asphaltiert	Q0 16856,11438
 Kreuzungsbereich asphaltiert	Q0 16948,11409
 Kreuzungsbereich asphaltiert	Q0 17322,11296
@@ -30680,7 +30681,7 @@ Kreuzungsbereich asphaltiert	Q0 3870,3914
 Einmündungsbereich asphaltiert	Q0 3558,3688
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 3375,3559
 Kreuzungsbereich asphaltiert	Q0 12148,9209
-Kreuzungsbereich mit Kreuzungsbereich	Q2- 12368,8356
+Kreuzungsbereich mit Kopfsteinpflaster	Q2- 12368,8356
 Einmündungsbereich asphaltiert	Q0 13405,8737
 Kreuzungsbereich asphaltiert	Q0 3871,18144
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 11290,10972
@@ -30690,4 +30691,5 @@ Einmündungsbereich mit Kleinsteinpflaster	Q1- 14764,11591
 Einmündungsbereich mit Kopfsteinpflaster	Q2+ 15102,11120
 Einmündungsbereich mit Kopfsteinpflaster	Q2 14475,11778
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 13384,8354
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 11450,15173
 #: ignore ^^^

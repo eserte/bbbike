@@ -257,7 +257,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11012 (Frage)
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2022-01-28 (mapillary) vvv
+#: last_checked: 2022-02-24 (mapillary) vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -713,7 +713,7 @@ Friedenstr. (Friedrichshain)	H 12163,13295 12131,13333 12085,13377 12058,13403 1
 (Volkspark Friedrichshain, von/zur Hans-Otto-Str.)	NN 12344,13627 12372,13755
 (Volkspark Friedrichshain)	NN 12344,13627 12204,13609 12169,13609 12141,13609 12126,13538
 (Volkspark Friedrichshain, von/zur Weinstr.)	NN 12126,13538 12006,13481 11995,13463
-(Volkspark Friedrichshain, von/zur Büschingstr.)	NN 12058,13403 12044,13427 12060,13422
+(Volkspark Friedrichshain, von/zur Büschingstr.)	NN 12058,13403 12040,13429 12060,13422
 (Volkspark Friedrichshain, von/zur Bötzowstr.)	NN 12141,13609 12145,13628 12161,13711
 (Volkspark Friedrichshain, von/zur Friedenstr.)	NN 12126,13538 12111,13480 12060,13422
 (Volkspark Friedrichshain)	NN 12038,13685 12145,13628 12169,13609
@@ -729,7 +729,7 @@ Kolonnenstr.	H 8209,8773 8145,8773 8078,8772 8014,8771 8008,8771 7795,8765 7709,
 #: XXX wird am 18.10.2021 zum Richard-von-Weizsäcker-Platz umbenannt --- verzögert sich wegen Widerspruchs
 #: also_indoor: search Richard-von-Weizsäcker-Platz
 # REMOVED --- #: next_check: 2021-10-18
-#: last_checked: 2022-02-13
+#: last_checked: 2022-02-26 (research)
 #: check_frequency: 14d
 Kaiser-Wilhelm-Platz	NN 7201,8870 7307,8945
 Herbertstr. (Schöneberg)	N 7360,8918 7389,8837 7402,8783 7395,8761
@@ -4003,21 +4003,9 @@ Trabener Str.	NN 2163,10024 2157,10020 2128,9999 1981,9865
 Trabener Str.	N 1981,9865 1927,9820 1904,9745 1756,9610 1709,9567 1562,9436 1457,9344 1341,9244 1312,9220 1141,9078 936,8933
 Hilde-Ephraim-Str.	N 1312,9220 1261,9285 1662,9642 1709,9663 1718,9653 1756,9610
 Rosensteinweg	N 1718,9653 1917,9821 1927,9820
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1086857.php (BVV entscheidet am 27.5.2021 über Umbenennung)
-#: by: https://www.berliner-woche.de/grunewald/c-politik/wissmannstrasse-soll-baraschstrasse-heissen_a311232
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7965 (Bericht bis 31.7.2021 erwartet) (nächste BVV am 19.8.2021)
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/buergerbeteiligung/aktuelle-projekte/umbenennung-wissmannstrasse/
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Straßenumbenennung, wirksam ab 26.2.2022)
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1179087.php (Umbenennung am Samstag oder Sonntag, dem 27.2.2022)
-#: by: https://berliner-abendblatt.de/2022/02/23/wissmannstrasse-in-grunewald-heisst-ab-samstag-baraschstrasse/ (Samstag)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_08_0445_0532_online.pdf (Umbenennung)
-#: note: früher mit Zusatz "(Grunewald)"
-#: XXX Umbenennung zu Baraschstr.; oldname-Eintrag wieder mit "Grunewald"
-#: also_indoor: search Wissmannstraße Baraschstraße
-#: osm_watch: way id="4623428" version="10"
-#: priority: #A
-#: next_check: 2022-02-26
-Wissmannstr.	N 1341,9244 1421,9173 1434,9154 1483,9132 1569,9137 1708,9298
+# REMOVED --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1086857.php (BVV entscheidet am 27.5.2021 über Umbenennung) --- #: by: https://www.berliner-woche.de/grunewald/c-politik/wissmannstrasse-soll-baraschstrasse-heissen_a311232 --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7965 (Bericht bis 31.7.2021 erwartet) (nächste BVV am 19.8.2021) --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/buergerbeteiligung/aktuelle-projekte/umbenennung-wissmannstrasse/ --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Straßenumbenennung, wirksam ab 26.2.2022) --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1179087.php (Umbenennung am Samstag oder Sonntag, dem 27.2.2022) --- #: by: https://berliner-abendblatt.de/2022/02/23/wissmannstrasse-in-grunewald-heisst-ab-samstag-baraschstrasse/ (Samstag) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_08_0445_0532_online.pdf (Umbenennung) --- #: note: früher mit Zusatz "(Grunewald)" --- #: XXX Umbenennung zu Baraschstr.; oldname-Eintrag wieder mit "Grunewald" --- #: also_indoor: search Wissmannstraße Baraschstraße --- #: osm_watch: way id="4623428" version="10" --- #: priority: #A --- #: next_check: 2022-02-26
+#: oldname: -20220226: Wissmannstr. (Grunewald)
+Baraschstr.	N 1341,9244 1421,9173 1434,9154 1483,9132 1569,9137 1708,9298
 Winkler Str.	N 936,8933 1037,8884 1090,8892 1316,9067 1434,9154
 Erdener Str.	N 1457,9344 1587,9320 1708,9298 1757,9282 1782,9270
 Erbacher Str.	N 1708,9298 1677,9404 1709,9567

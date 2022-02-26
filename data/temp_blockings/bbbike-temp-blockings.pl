@@ -30878,7 +30878,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-02-24
+#: last_checked: 2022-02-26
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -34604,7 +34604,7 @@ EOF
 #: source_id: viz2021:13.262931,52.540599,20.02.2022,04:15 (kein Endedatum)
 #: also_indoor: traffic (G,H,B)
 #: priority: #A
-#: next_check: 2022-02-26
+#: next_check: 2022-02-27
 	2::inwork 741,14827 778,14713 838,14530
 EOF
      },
