@@ -465,6 +465,7 @@ Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwor
 #: by: https://twitter.com/VIZ_Berlin/status/1496514043573678085
 #: XXX vor Ort überprüfen!
 #: source_id: viz2021:13.525209,52.480103,21.02.2022,08:00 (bis 19.3.2022)
+#: also_indoor: traffic (G,H(incomplete?),B)
 #: valid: -20220319
 Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::inwork 18627,8475 18704,8427
 # 
@@ -602,6 +603,11 @@ Fasanenstr.: Engstelle südliche de Kantstr., Radfahrer werden über den Bürgerste
 # REMOVED (scheint in beide Richtungen befahrbar zu sein) --- #: last_checked: 2012-09-22 --- #: next_check: 2012-10-15 --- #: by: IM_008926 --- #: XXX wahrscheinlich bis Ende Oktober 2012 --- #: XXX wahrscheinlich wird es teilweise oder sogar komplett Radspuren geben --- Kantstr.: Bauarbeiten am Zoofenster, Fahrbahn Richtung Westen gesperrt	q2::inwork; 5652,11004 5613,10963 5488,10978
 # 
 ### Wilmersdorf ###
+# 
+#: next_check_id: MAXIMILIANSQUARTIER-2020
+#: last_checked: 2022-02-27
+#: check_frequency: 120d
+Werner-Richard-Heymann-Platz: große Teile der Fahrbahn gesperrt, Bordsteine	q3 3320,7982 3219,7987
 # 
 #: next_check_id: PARISER-2021
 #: source_id: LMS-BR_r_LMS-BR_194782_LMS-BR_72 (mittlerweile entfernt)
@@ -837,6 +843,7 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neubau-der-moltkebruecke-beginnt_a316440
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/der-neubau-der-moltkebruecke-startet-anfang-2022_a330836 (Fertigstellung Anfang 2024)
 #: by: https://sbahn.berlin/aktuelles/artikel/diese-bauprojekte-stehen-2022-an/
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1178507.php
 #: by: https://berliner-abendblatt.de/2022/01/24/bauprojekte-der-s-bahn-2022/
 #: by: https://berliner-abendblatt.de/2022/02/21/moltkebruecke/
 #: XXX wann wird die Einschränkung beendet?
@@ -1199,6 +1206,7 @@ Volkspark Friedrichshain: Fußgänger, flache enge Rampe	q4 12058,13403 12040,1342
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Fußgänger	q1 12382,13097 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12006,13481 11957,13528 11857,13596 11823,13610 11785,13625
 #: note: offizieller Radweg
 Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12876,13440 12826,13526 12802,13584 12784,13610 12766,13621 12743,13634 12709,13691 12707,13706
+Friedrichshaller Str.: einige Fußgänger	q2 2757,7604 2774,7655
 ######################################################################
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120418.1330.368930.html
@@ -4208,7 +4216,8 @@ Hessenallee: enge Straße	q1 640,11676 640,11706 769,11770 881,11893
 #: by: Andreas Mühlhausen: vvv
 Pechüler Pfad: eng, Fußgänger	q3 2793,6593 2875,6648
 Pechüler Pfad: Fußgänger	q3 2854,6675 2953,6743
-Friedrichshaller Str.: Bodenschwellen	q2 2774,7655 2786,7721 2911,7686 3084,7599
+# REMOVED (keine gesehen) --- Friedrichshaller Str.: Bodenschwellen	q2 2774,7655 2786,7721
+Friedrichshaller Str.: Bodenschwellen	q2 2786,7721 2911,7686 3084,7599
 Hechtgraben: eng, Fußgänger, Treppen oder Rampen	q3 3105,5594 3173,5493
 (Weg in d. Kolonie Norderney): Fußgänger	q3 3596,6828 3607,6952 3582,6964
 #: note: südlicher Teil von Ulrike Orlowski:

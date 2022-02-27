@@ -172,7 +172,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2022-02-08
+#: last_checked: 2022-02-27
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -184,7 +184,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2022-02-08 vvv
+#: last_checked: 2022-02-27 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -1025,7 +1025,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-02-26
+#: last_checked: 2022-02-27
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -6768,7 +6768,7 @@ Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 #: osm_watch: way id="156650954" version="15"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2021-10-10
+#: last_checked: 2022-02-26 (mapillary)
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
@@ -9178,7 +9178,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2022-02-20 vvv
+#: last_checked: 2022-02-27 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -12047,12 +12047,8 @@ Senftenberger Ring [Wohngebiet]: Asphalt	Q0 6790,21950 6989,21975
 #: by ^^^
 Helene-Jacobs-Str.: Asphalt	Q0 3230,8230 3224,8106 3219,7987 3210,7786 3309,7782 3320,7982 3326,8100 3332,8207
 # 
-#: next_check_id: MAXIMILIANSQUARTIER-2020
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1004182.php (zur Benennung des Platzes)
-#: XXX bleibt es hier beim Asphalt? oder wird die gesamte Platzfläche mit den Steinplatten versehen?
-#: last_checked: 2021-11-22 (daf)
-#: check_frequency: 120d
-Werner-Richard-Heymann-Platz: provisorischer Asphalt & Steinplatten	Q0- 3320,7982 3219,7987
+# REMOVED --- #: next_check_id: MAXIMILIANSQUARTIER-2020 --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1004182.php (zur Benennung des Platzes) --- #: XXX bleibt es hier beim Asphalt? oder wird die gesamte Platzfläche mit den Steinplatten versehen? --- #: last_checked: 2021-11-22 (daf) --- #: check_frequency: 120d
+Werner-Richard-Heymann-Platz: Steinplatten	Q0- 3320,7982 3219,7987
 # 
 Reichenhaller Str.: Gehwegpflasterung	Q0- 3210,7786 3198,7787
 Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0- 3219,7987 3206,7988
@@ -16037,7 +16033,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="6"
-#: last_checked: 2021-12-29
+#: last_checked: 2022-02-27
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4645,6646 4682,6625 4845,6532 4875,6552
 #: confirmed_by: srt
@@ -30418,11 +30414,11 @@ Kreuzungsbereich asphaltiert	Q0 15608,4722
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 2642,8040
 #: by: mapillary vvv
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2756,8025
-Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2873,8016
-Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2988,8007
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 4248,18066
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 13622,22409
 #: by ^^^
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2873,8016
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2988,8007
 Kreuzungsbereich mit unebenem Kleinsteinpflaster	Q2 15799,14674
 Kreuzungsbereich mit Kleinsteinpflaster	Q2 1761,4255
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ -1422,3785
@@ -30692,4 +30688,5 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2+ 15102,11120
 Einmündungsbereich mit Kopfsteinpflaster	Q2 14475,11778
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 13384,8354
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 11450,15173
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2786,7721
 #: ignore ^^^

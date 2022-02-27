@@ -2666,7 +2666,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-02-24 vvv
+#: last_checked: 2022-02-27 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -3050,12 +3050,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00 (inaktiv)
+         'data' => '#: next_check_id: MASSMANN-2022
+#: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00 (inaktiv)
 #: source_id: viz2021:13.320517,52.466345,13.07.2021,08:00 (mittlerweile bis 2.12.2021) (inaktiv)
 #: source_id: viz2021:13.32146,52.465174,13.07.2021,08:00 (mittlerweile bis 22.2.2022) (mittlerweile bis 24.5.2022)
 	q4::inwork; 4894,6509 4875,6552
-#: note: im nördlichen Abschnitt mittlerweile (Ende Dez 2021) keine Einschränkungen mehr
-	q3::inwork; 4875,6552 4786,6717
+# REMOVED --- #: note: im nördlichen Abschnitt mittlerweile (Ende Dez 2021) keine Einschränkungen mehr ---	q3::inwork; 4875,6552 4786,6717
 ',
          'from' => 1614754800,
          'id' => 3339,
@@ -3891,9 +3891,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: ZWIESELER-2022
-#: XXX Stand 2022-01-21: Verbotsschild für Fußgänger am nördlichen Ende, Verbot für Fahrzeuge aller Art außer Grundstücksanlieger am südlichen Ende, man kann aber trotzdem passieren
+#: XXX Stand 2022-01-21: Verbotsschild für Fußgänger am nördlichen Ende, Verbot für Fahrzeuge aller Art außer Grundstücksanlieger am südlichen Ende, man kann aber trotzdem passieren. Stand 2022-02-26: Passieren weiterhin möglich.
 #: XXX Halteverbotsschilder gelten bis Ende Juni 2023
-#: last_checked: 2022-01-21
+#: last_checked: 2022-02-26 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2023-06-30
 	2::inwork 19711,10426 19697,10210
@@ -4081,7 +4081,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.262931,52.540599,20.02.2022,04:15 (kein Endedatum)
 #: also_indoor: traffic (G,H,B)
 #: priority: #A
-#: next_check: 2022-02-27
+#: next_check: 2022-02-28
 	2::inwork 741,14827 778,14713 838,14530
 ',
          'from' => 1645240500,
@@ -4089,6 +4089,46 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'source_id' => 'viz2021:13.26293,52.54059,20.02.2022,04:15',
          'text' => 'Rohrdamm: zwischen Schuckertdamm und Jugendweg gesperrt, auch für Radfahrer und Fußgänger ',
          'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: GNEISENAUKIEZ-2022
+#: also_indoor: traffic (G,B) vvv
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/gneisenau-kiez-wird-verkehrsberuhigt_a334304
+#: by: https://berliner-abendblatt.de/2022/01/24/verkehrsberuhigung-im-gneisenaukiez/
+#: XXX Wie werden die verkehrsberuhigenden Maßnahmen aussehen? vvv
+#: last_checked: 2022-02-27 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2022-03-15 vvv
+#: XXX Fahrbahn zurzeit gesperrt
+	q4::inwork 9723,9842 9837,9856
+#: XXX hier noch keine Bauarbeiten
+	q3::inwork 9705,9732 9723,9842
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+#: also_indoor ^^^
+',
+         'from' => 1644102000,
+         'id' => 3519,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1169529.php',
+         'text' => 'Baruther Str., Solmsstr.: Bauarbeiten, Fahrbahn kann gesperrt sein, voraussichtlich 07. Februar 2022 - 15. März 2022',
+         'type' => 'handicap',
+         'until' => 1647385199
+       },
+       {
+         'data' => '#: next_check_id: MASSMANN-2022
+#: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maßmannstr.
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: also_indoor: traffic (G,H)
+#: last_checked: 2022-02-27
+	q3::inwork 5020,6434 5269,6305
+',
+         'from' => undef,
+         'id' => 3520,
+         'text' => 'Markelstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
          'until' => undef
        }
      

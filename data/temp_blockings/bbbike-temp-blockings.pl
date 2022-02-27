@@ -12144,7 +12144,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009394',
        data  => <<EOF,
-	2::inwork 4280,8188 4325,8229 4423,8315 4473,8351 4623,8457 4783,8557
+	2::inwork 4280,8188 4344,8246 4423,8315 4473,8351 4623,8457 4783,8557
 	2::inwork 4772,8599 4456,8598
 	2::inwork 4473,8351 4457,8372 4457,8484
 EOF
@@ -31097,7 +31097,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-02-24 vvv
+#: last_checked: 2022-02-27 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32413,12 +32413,12 @@ EOF
        type  => 'handicap',
        source_id => '2147346935', # bis 14.10.2021
        data  => <<EOF,
+#: next_check_id: MASSMANN-2022
 #: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00 (inaktiv)
 #: source_id: viz2021:13.320517,52.466345,13.07.2021,08:00 (mittlerweile bis 2.12.2021) (inaktiv)
 #: source_id: viz2021:13.32146,52.465174,13.07.2021,08:00 (mittlerweile bis 22.2.2022) (mittlerweile bis 24.5.2022)
 	q4::inwork; 4894,6509 4875,6552
-#: note: im nördlichen Abschnitt mittlerweile (Ende Dez 2021) keine Einschränkungen mehr
-	q3::inwork; 4875,6552 4786,6717
+# REMOVED --- #: note: im nördlichen Abschnitt mittlerweile (Ende Dez 2021) keine Einschränkungen mehr ---	q3::inwork; 4875,6552 4786,6717
 EOF
      },
      { from  => 1615071600, # 2021-03-07 00:00
@@ -34402,9 +34402,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZWIESELER-2022
-#: XXX Stand 2022-01-21: Verbotsschild für Fußgänger am nördlichen Ende, Verbot für Fahrzeuge aller Art außer Grundstücksanlieger am südlichen Ende, man kann aber trotzdem passieren
+#: XXX Stand 2022-01-21: Verbotsschild für Fußgänger am nördlichen Ende, Verbot für Fahrzeuge aller Art außer Grundstücksanlieger am südlichen Ende, man kann aber trotzdem passieren. Stand 2022-02-26: Passieren weiterhin möglich.
 #: XXX Halteverbotsschilder gelten bis Ende Juni 2023
-#: last_checked: 2022-01-21
+#: last_checked: 2022-02-26 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2023-06-30
 	2::inwork 19711,10426 19697,10210
@@ -34604,8 +34604,46 @@ EOF
 #: source_id: viz2021:13.262931,52.540599,20.02.2022,04:15 (kein Endedatum)
 #: also_indoor: traffic (G,H,B)
 #: priority: #A
-#: next_check: 2022-02-27
+#: next_check: 2022-02-28
 	2::inwork 741,14827 778,14713 838,14530
+EOF
+     },
+     { from  => 1644102000, # 2022-02-06 00:00
+       until => 1647385199, # 2022-03-15 23:59
+       text  => 'Baruther Str., Solmsstr.: Bauarbeiten, Fahrbahn kann gesperrt sein, voraussichtlich 07. Februar 2022 - 15. März 2022',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1169529.php',
+       data  => <<EOF,
+#: next_check_id: GNEISENAUKIEZ-2022
+#: also_indoor: traffic (G,B) vvv
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/gneisenau-kiez-wird-verkehrsberuhigt_a334304
+#: by: https://berliner-abendblatt.de/2022/01/24/verkehrsberuhigung-im-gneisenaukiez/
+#: XXX Wie werden die verkehrsberuhigenden Maßnahmen aussehen? vvv
+#: last_checked: 2022-02-27 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2022-03-15 vvv
+#: XXX Fahrbahn zurzeit gesperrt
+	q4::inwork 9723,9842 9837,9856
+#: XXX hier noch keine Bauarbeiten
+	q3::inwork 9705,9732 9723,9842
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+#: also_indoor ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Markelstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: MASSMANN-2022
+#: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maßmannstr.
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: also_indoor: traffic (G,H)
+#: last_checked: 2022-02-27
+	q3::inwork 5020,6434 5269,6305
 EOF
      },
     );

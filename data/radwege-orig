@@ -521,7 +521,7 @@ für Radfahrer freigegebene Busspur hat eingeschränkte Geltungszeiten	RW1; 1125,3
 eng, Wurzelhebungen und -schäden	RW2; 4132,4988 3929,4863 3826,4800
 	RW2; 3826,4800 3754,4755 3710,4728
 	RW10; 3710,4728 3754,4755 3826,4800 3929,4863 4132,4988 4153,5001 4173,5013 4343,5112
-Busspur gilt Mo-Fr 7-18 Uhr	RW1;RW1 6687,8385 6608,8277 6560,8219 6460,8093
+kein Abstand zu parkenden Autos, Busspur gilt Mo-Fr 7-18 Uhr	RW1;RW1 6687,8385 6608,8277 6560,8219 6460,8093
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 6409,8026 6388,7999 6333,7927
 Busspur gilt Mo-Fr 7-18 Uhr	RW1; 6333,7927 6307,7893
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 6144,7677 6209,7765 6273,7849
@@ -1028,7 +1028,7 @@ Radweg nur aufgemalt	RW1; 4218,6583 4335,6523 4423,6477
 #: by: https://api.fixmyberlin.de/api/plannings/216
 #: by: http://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022)
 #: osm_watch: way id="8590249" version="19"
-#: last_checked: 2021-04-28
+#: last_checked: 2022-02-27
 #: check_frequency: 300d
 #: next_check: 2022-12-31
 	RW2; 4349,8118 4280,8188
@@ -1122,10 +1122,10 @@ Busspur gilt Mo-Fr 13-19h	RW1; 8200,5510 8365,5502 8593,5491
 Gehwegplatten	RW1; 4918,8872 4918,8785 4918,8740
 alte Gehwegplatten	RW1; 4918,8740 4892,8624
 Verbundsteinpflaster und alte Gehwegplatten	RW1; 4892,8624 4783,8557
-Verbundsteinpflaster	RW1; 4783,8557 4623,8457 4473,8351 4423,8315 4325,8229 4280,8188 4229,8142 4180,8098 4106,8031 4061,7992 3968,7906 3839,7787 3634,7601 3619,7587 3596,7566 3538,7515 3468,7455 3389,7383 3346,7369
+Verbundsteinpflaster	RW1; 4783,8557 4623,8457 4473,8351 4423,8315 4344,8246 4280,8188 4229,8142 4180,8098 4106,8031 4061,7992 3968,7906 3839,7787 3634,7601 3619,7587 3596,7566 3538,7515 3468,7455 3389,7383 3346,7369
 	RW1; 3346,7369 3389,7383 3468,7455 3538,7515 3596,7566 3619,7587 3634,7601 3839,7787 3968,7906 4061,7992 4106,8031 4180,8098
-	RW3; 4180,8098 4229,8142 4280,8188
-	RW1; 4280,8188 4325,8229 4423,8315 4473,8351 4623,8457 4783,8557 4892,8624 4918,8740 4918,8785
+	RW3; 4229,8142 4280,8188
+	RW1; 4280,8188 4344,8246 4423,8315 4473,8351 4623,8457 4783,8557 4892,8624 4918,8740 4918,8785
 	RW2; 4918,8785 4918,8872
 	RW1;RW1 3346,7369 3279,7386 3228,7401 3042,7465 2757,7604
 	RW1; 5346,7860 5344,7729 5343,7681 5344,7620 5350,7554
@@ -6774,7 +6774,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2022-02-13
+#: last_checked: 2022-02-27
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -7095,7 +7095,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="21"
 #: osm_watch: way id="335487059" version="19"
-#: last_checked: 2022-02-13 vvv
+#: last_checked: 2022-02-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-01-01 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -7125,7 +7125,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: by: https://berliner-abendblatt.de/2021/12/18/pop-up-radwege-bleiben-dauerhaft/
-#: last_checked: 2022-02-13 vvv
+#: last_checked: 2022-02-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -7172,6 +7172,7 @@ provisorisch geschützter Radstreifen	RW4; 9472,10182 9599,10175 9687,10180 9825,
 #: last_checked ^^^
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
+geschützter Radstreifen	RW4; 9825,10206 9858,10199
 # 
 #: note: einzelner Poller, durchgängig niedrige Protektionselemente
 provisorisch geschützter Radstreifen	RW4; 8328,10831 8358,10782 8371,10769
