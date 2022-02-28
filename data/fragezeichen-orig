@@ -65,7 +65,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausführungsplanung)
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021)
-#: last_checked: 2022-02-27
+#: last_checked: 2022-02-28
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-03-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -3381,7 +3381,7 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8917,5986 -8871,628
 #: by: https://abendblatt-berlin.de/2021/01/19/strassenbahnstecke-vom-berliner-hauptbahnhof-zur-turmstrasse-ist-genehmigt/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_03_0125_0212_online.pdf (Planfeststellung)
 #: by: https://abendblatt-berlin.de/2021/08/12/berlin-moabit-bald-rollt-die-tram-richtung-turmstrasse/ (bis erstes Halbjahr 2023)
-#: last_checked: 2022-01-22
+#: last_checked: 2022-02-27 (bahninfo-forum)
 #: check_frequency: 360d
 #: next_check: 2023-06-01
 Alt-Moabit - Rathenower Str.: Radspuren werden gemalt	?::projected 7415,13060 7346,13022 7172,13051 7187,13126 7161,13190 7131,13261 7084,13352 7069,13381
@@ -3646,9 +3646,9 @@ Schildower Str.: Neubau geplant, wird es danach noch Radwege geben?	?::projected
 #: XXX laut Aushang Bauarbeiten in der zweiten Jahreshälfte 2021
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1179769.php (Hundeauslaufgebiet wird erstellt, wo genau? ab März 2022)
 #: by: https://berliner-abendblatt.de/2022/02/24/neuer-hundeauslauf-wriezener-park/
-#: last_checked: 2022-02-09
-#: check_frequency: 45d
-#: next_check: 2022-03-01
+#: last_checked: 2022-02-28
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2022-03-01
 Wriezener Park: Umbauarbeiten geplant, evtl. werden Wege zwischenzeitlich gesperrt sein	?::projected 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
 # 
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1400108218588729347 --- #: by: https://viz.berlin.de/2021/05/schnellerstrasse/ (3.+4. Bauabschnitt) --- #: source_id: viz2021:13.523904,52.453131,28.06.2021,07:00 (28.6.2021 - 16.7.2021) --- #: also_indoor: traffic (H,G) --- #: last_checked: 2021-05-29 --- #: check_frequency: 23d --- #: next_check: 2021-06-28 --- Schnellerstr.: Bauarbeiten werden später zwischen Köllnische Str. bis Bruno-Bürgel-Weg erweitert	?; 18955,5320 19037,5316 19186,5310 19328,5304
@@ -4719,7 +4719,7 @@ Graunstr. 8: Zebrastreifen geplant	?::projected 9976,15366 9996,15400 10026,1538
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: XXX Mittelinsel existiert, Masten stehen schon
 #: priority: #D
-#: last_checked: 2022-02-27
+#: last_checked: 2022-02-28
 #: check_frequency: 30d
 Schlesische Str./Cuvrystr.: Zebrastreifen in Bau	?::inwork 13255,10397 13249,10445 13242,10497
 # 
@@ -4900,9 +4900,11 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://berliner-abendblatt.de/2022/01/14/komponistenviertel-wird-kiezblock/ (Start des Kiezblocks in Kürze, einjährige Pilotphase)
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/fuer-den-projektbeirat-werden-kiezbewohner-gesucht_a333098
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5379
-#: last_checked: 2022-01-18
-#: check_frequency: 120d
-#: next_check: 2022-03-01
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1180910.php (Kiezblock ab Sommer 2022)
+#: by: https://www.berliner-woche.de/weissensee/c-verkehr/infoveranstaltung-zum-kiezblock_a337805
+#: last_checked: 2022-02-28 (research)
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2022-07-01
 Bizetstr.: entsteht hier eine Fahrradstraße?	? 13409,15687 13456,15760 13524,15786 13540,15792 13572,15804 13665,15840 13867,15915 14056,15985 14248,16058 14295,16076 14552,16171
 #: XXX laut Tsp bis Ende 2021 vvv
 # REMOVED --- #: next_check: 2021-11-01 vvv
@@ -5777,7 +5779,7 @@ B96: parallel geführte Kfz-Straße geplant, ehemalige B96 könnte man dann "degrad
 B168: straßenbegleitender Radweg (westliche Seite) in Bau	?::inwork 67495,-21856 67300,-21371 66817,-20600
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=19117
-#: source_id: LS/221-E/22/018 (vorbereitende Arbeiten bis 28.2.2022)
+#: source_id: LS/221-E/22/018 (vorbereitende Arbeiten bis 28.2.2022) (inaktiv)
 #: last_checked: 2021-06-27 (mapillary)
 #: check_frequency: 360d
 B158, Oderberg, Brücke über die HOW: Radstreifen geplant	?::projected 53201,51677 53170,51879

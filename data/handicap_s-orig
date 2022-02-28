@@ -796,7 +796,7 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 # 
 #: by: https://www.nbb-netzgesellschaft.de/ueber-die-nbb/presse/pressemitteilungen/reparatur-beeintraechtigt-verkehr-in-schoeneberg/
 #: XXX laut Schild bis Dezember 2021 (dauer aber länger)
-#: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022)
+#: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022) (inaktiv)
 #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022)
 #: also_indoor: traffic (ex-H,B)
 #: last_checked: 2022-02-13
@@ -846,13 +846,15 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1178507.php
 #: by: https://berliner-abendblatt.de/2022/01/24/bauprojekte-der-s-bahn-2022/
 #: by: https://berliner-abendblatt.de/2022/02/21/moltkebruecke/
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/alte-moltkebruecke-wird-abgerissen-und-durch-neubau-ersetzt_a337406 (Freigabe der Behelfsbrücke Ende April 2022)
+#: by: https://berliner-abendblatt.de/2022/02/28/titel-bruecken/
 #: XXX wann wird die Einschränkung beendet?
 #: osm_watch: way id="13860352" version="18"
 #: also_indoor: traffic (G,ex-H,B)
 #: priority: #A
 #: last_checked: 2022-01-20 (osm)
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-04-01
+#: next_check: 2022-04-30
 Moltkestraßenbrücke: Fahrbahn gesperrt	q4::inwork 3867,4537 3898,4490
 # 
 #: by: https://westnordost.de/p/76978.jpg (Bauarbeiten der Wasserbetriebe bis September 2023)

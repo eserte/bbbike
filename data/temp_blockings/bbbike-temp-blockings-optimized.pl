@@ -2103,20 +2103,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '# REMOVED --- #: by: fritz --- # REMOVED (keine Bauarbeiten mehr)
-#: by: https://aera.berlin/
+         'data' => '#: by: https://aera.berlin/
 #: by: https://pictures.construction.camera/construction-camera/661BerlinAERA/FullHD102570/webcam.jpg (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
-#: XXX bis wann geht die Sperrung?
+#: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei)
 #: last_checked: 2022-02-12
 #: check_frequency: 180d
+#: next_check: 2022-10-31
 	q4::inwork 4234,12710 4303,12692
 ',
          'from' => 1644676199,
          'id' => 2961,
-         'text' => 'Am Spreebord: Bauarbeiten zwischen Zufahrt zum Uferweg und Röntgenstr., Passieren für Radfahrer möglich, ggfs. Bordsteine, Ende der Bauarbeiten unbekannt',
+         'text' => 'Am Spreebord: Bauarbeiten zwischen Zufahrt zum Uferweg und Darwinstr., Passieren für Radfahrer möglich, ggfs. Bordsteine, voraussichtlich bis Ende Oktober 2022',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1667232000
        },
        undef,
        undef,
@@ -3275,23 +3275,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BUCKOWERDAMM-2021
-#: source_id: viz2021:13.438231,52.41937,02.06.2021,08:00 (inaktiv)
-#: source_id: viz2021:13.438231,52.41937,13.11.2021,08:00
-#: also_indoor: traffic (G,B)
-#: note: bei rbb weiterhin "in beiden Richtungen gesperrt"
-#: by: https://twitter.com/VIZ_Berlin/status/1459408184053932037 (nur Richtung Norden)
-# REMOVED ---	q4::inwork 12984,1011 12941,1256 12938,1348
-	q4::inwork; 12940,1547 12939,1469 12938,1348
-',
-         'from' => 1622527200,
-         'id' => 3387,
-         'source_id' => '2147347243',
-         'text' => 'Buckower Damm: wegen Bauarbeiten zwischen Gerlinger Str./Ringslebenstr. und Mollnerweg Richtung Süden gesperrt, auch Radfahrer sind betroffen, vom 02.06.2021 08:00 Uhr bis 28.02.2022 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1646064000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3421,6 +3405,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: note: Eintrag bei rbb am 10.11.2021 entfernt --- mittlerweile wieder da, sogar bis zum 28.2.2022
 #: source_id: viz2021:13.327411,52.448681,26.07.2021,07:00 (mittlerweile nur noch bis 28.2.2022) (mittlerweile bis 1.3.2022)
+#: source_id: viz2021:13.32733,52.4486,28.02.2022,14:37 (zusätzlicher Eintrag)
 #: also_indoor: traffic (G,H,B)
 # REMOVED (hier nicht mehr) ---	q4::inwork; 5271,4547 5316,4637 5336,4676
 	q4::inwork; 5336,4676 5407,4815
@@ -3428,7 +3413,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1627164000,
          'id' => 3422,
          'source_id' => 'viz2021:13.326349,52.447526,26.07.2021,07:00',
-         'text' => 'Klingsorstr.: zwischen Birkbuschstr. und Barsekowstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 01.03.2022 15:00',
+         'text' => 'Klingsorstr.: zwischen Barsekowstr. und Goebenstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 01.03.2022 15:00',
          'type' => 'handicap',
          'until' => 1646143200
        },
@@ -4081,7 +4066,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.262931,52.540599,20.02.2022,04:15 (kein Endedatum)
 #: also_indoor: traffic (G,H,B)
 #: priority: #A
-#: next_check: 2022-02-28
+#: next_check: 2022-03-01
 	2::inwork 741,14827 778,14713 838,14530
 ',
          'from' => 1645240500,
@@ -4121,7 +4106,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: MASSMANN-2022
 #: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maßmannstr.
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (G,H)
+#: also_indoor: traffic (G,B)
 #: last_checked: 2022-02-27
 	q3::inwork 5020,6434 5269,6305
 ',
@@ -4130,6 +4115,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Markelstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1498247389118873600
+#: by: https://pbs.twimg.com/media/FMrYBZQXEAAQlaA?format=jpg&name=large
+	q4::inwork 10776,10682 10944,10606
+',
+         'from' => 1645945200,
+         'id' => 3521,
+         'source_id' => 'viz2021:13.409755,52.50158,28.02.2022,08:00',
+         'text' => 'Ritterstr.: Bauarbeiten zwischen Prinzenstr. und Bergfriedstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 28.02.2022 08:00 bis 29.04.2022 17:00 ',
+         'type' => 'handicap',
+         'until' => 1651244400
        }
      
 );
