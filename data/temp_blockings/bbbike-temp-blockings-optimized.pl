@@ -826,7 +826,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2244,7 +2244,29 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
+# REMOVED (fertig) --- #: next_check_id: TREPTOWERPARK-2018 --- #: XXX wann sind die Bauarbeiten fertig? --- #: XXX Sanierungsarbeiten im Treptower Park geplant: die meisten Wege um den Karpfenteich sind betroffen --- #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet --- #: osm_watch: way id="26608603" version="9" --- #: last_checked: 2019-11-02 vvv --- #: check_frequency: 7d vvv
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14980,8940
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14918,8813 14883,8823 14852,8799
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14980,8940 15057,8910
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1176947.php (kein Datum genannt)
+#: by: https://berliner-abendblatt.de/2022/02/16/treptower-park-rodung-und-neupflanzung/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1181109.php
+#: by: https://www.berlin.de/imgscaler/ZyeZkkdwQemyWEdhwaVn9BCTIwwfgpHdAz40E0MQ50E/article/L3N5czExLXByb2QvYmEtdHJlcHRvdy1rb2VwZW5pY2svX2Fzc2V0cy9ha3R1ZWxsZXMvcG0vMjAyMi8yMi0wMy0wMV9iYXVtYXNzbmFobWVfLV9wbGFuX3RyZXB0b3dlcl9wYXJrLnBuZw.png
+#: XXX Nach den Bauarbeiten vermutlich bessere Qualität
+#: next_check: 2022-05-01
+	2::inwork 14980,8940 14947,8993 14855,9046 14705,9034
+',
+         'from' => undef,
+         'id' => 3027,
+         'text' => 'Treptower Park, Weg zwischen Karpfenteich und Sowjetisches Ehrenmal: Bauarbeiten, Weg kann gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -2335,18 +2357,18 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="25"
+#: osm_watch: way id="8655276" version="26"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-02-12 (mapillary)
+#: last_checked: 2022-03-01 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
 ',
          'from' => 1630670400,
          'id' => 3086,
-         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand: Ende Dezember 2021: Durchfahrt ist gesperrt)',
+         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke möglicherweise gesperrt (Stand Anfang März 2022: Durchfahrt ist gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3329,7 +3351,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-02-10
+#: last_checked: 2022-03-01
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -3402,21 +3424,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: note: Eintrag bei rbb am 10.11.2021 entfernt --- mittlerweile wieder da, sogar bis zum 28.2.2022
-#: source_id: viz2021:13.327411,52.448681,26.07.2021,07:00 (mittlerweile nur noch bis 28.2.2022) (mittlerweile bis 1.3.2022)
-#: source_id: viz2021:13.32733,52.4486,28.02.2022,14:37 (zusätzlicher Eintrag)
-#: also_indoor: traffic (G,H,B)
-# REMOVED (hier nicht mehr) ---	q4::inwork; 5271,4547 5316,4637 5336,4676
-	q4::inwork; 5336,4676 5407,4815
-',
-         'from' => 1627164000,
-         'id' => 3422,
-         'source_id' => 'viz2021:13.326349,52.447526,26.07.2021,07:00',
-         'text' => 'Klingsorstr.: zwischen Barsekowstr. und Goebenstr. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 26.07.2021 07:00 bis 01.03.2022 15:00',
-         'type' => 'handicap',
-         'until' => 1646143200
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
@@ -3438,26 +3446,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (hier nicht mehr) --- #: note: Gehweg für Radfahrer frei (beide Richtungen) --- # REMOVED --- #: next_check: 2021-08-13 ---	q3::inwork 18939,9417 18977,9322 19048,9146
-# REMOVED (hier nicht mehr) ---	q2::inwork 19020,9364 19109,9306
-# REMOVED (hier nicht mehr) ---	q2::inwork 19128,9523 19109,9306
-# REMOVED (hier nicht mehr) ---	q2::inwork 19109,9306 19195,9249
-#: also_indoor: traffic (G,B)
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2022-01-26 vvv
-	q3::inwork 19020,9364 18939,9417
-	q2::inwork 18977,9322 19020,9364 19030,9530
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => 1628719200,
-         'id' => 3429,
-         'source_id' => 'viz2021:13.5302,52.487045,13.08.2021,07:00',
-         'text' => 'Köpenicker Str.: im Bereich Johannes-Zoschke-Str./Rolandseck/Digedagsplatz Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4066,7 +4055,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.262931,52.540599,20.02.2022,04:15 (kein Endedatum)
 #: also_indoor: traffic (G,H,B)
 #: priority: #A
-#: next_check: 2022-03-01
+#: next_check: 2022-03-02
 	2::inwork 741,14827 778,14713 838,14530
 ',
          'from' => 1645240500,
@@ -4127,6 +4116,19 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Ritterstr.: Bauarbeiten zwischen Prinzenstr. und Bergfriedstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 28.02.2022 08:00 bis 29.04.2022 17:00 ',
          'type' => 'handicap',
          'until' => 1651244400
+       },
+       {
+         'data' => '#: source_id: viz2021:13.55864,52.562688,03.03.2022,14:00
+#: by: https://twitter.com/VIZ_Berlin/status/1498672727842082819
+	2::inwork 20895,17594 20769,17650
+	2::inwork 20769,17650 20891,17572
+',
+         'from' => 1646226000,
+         'id' => 3522,
+         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1181336.php',
+         'text' => 'Wuhletalstr.: Wuhletalbrücke wird abgebrochen, Sperrung, auch für Radfahrer und Fußgänger, vom 3.3.2022 14:00 bis 7.3.2022 12:00',
+         'type' => 'gesperrt',
+         'until' => 1646650800
        }
      
 );

@@ -5,7 +5,6 @@
 #:
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
 (Straße der Pariser Kommune - Erich-Steinfurth-Str.): einige Fußgänger	q2; 12660,11705 12634,11705 12608,11692
-Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 14946,11697
 (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10215,-2170 10181,-2174 10161,-2146 10096,-2137
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
@@ -31,7 +30,6 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17461,8693 17656,8700 17640,8627 17497,8623
 Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17461,8693
 Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17461,8693 17497,8623
-Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::inwork 18627,8475 18704,8427
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt	q4::inwork 17728,5756 17656,5701
 Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3::inwork 20640,7122 20654,7136 20629,7189 20575,7226
 Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
@@ -46,8 +44,7 @@ Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 1425
 Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12368,8356 12582,8408
 Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4::inwork; 12494,8501 12349,8464
-Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16227,12280 16159,12301 16056,12317
-Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16144,12388 16159,12301 16158,12191
+Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16276,12273 16227,12280 16159,12301 16056,12317
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3::inwork 7126,9825 7118,9870
 Moltkestraßenbrücke: Fahrbahn gesperrt	q4::inwork 3867,4537 3898,4490
@@ -2239,6 +2236,7 @@ Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
 (Uferweg - Lausitzer Str.): Rampe, enge Kurven	q3 11948,9895 11946,9913
 (Weg am Kienhorstgraben): einige Fußgänger	q3 3876,18348 3799,18159 3723,17979 3706,17931
 (Holzmarktstr. - Ifflandstr.): Fußgänger, Bordsteine	q3 11515,12293 11584,12258 11589,12296
+Johannes-Zoschke-Str.: einige Fußgänger	q1 19037,9636 19042,9708
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

@@ -3308,7 +3308,10 @@ Drängelgitter	BNP:3::trailer=10 -739,23004
 #: note: kann allerdings recht gut umfahren werden
 Schranke	BNP:1::trailer=3 1201,15804
 Drängelgitter	BNP:3::trailer=10 32616,-23392
-Schranke	BNP:3::trailer=10 17837,12277
+#: note: kann offen sein, eine kurvige Umfahrungsmöglichkeit existiert
+Schranke	BNP:2::trailer=8 17837,12277
+#: note: kann offen sein, eine gerade Umfahrungsmöglichkeit existiert
+Schranke	BNP:0::trailer=2 18037,12362
 Schranke	BNP:1::trailer=5 20813,-941
 Drängelgitter	BNP:3::trailer=10 18414,1380
 Drängelgitter	BNP:3::trailer=10 18232,1669

@@ -545,7 +545,7 @@ Swinem¸nder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.berliner-woche.de/mitte/c-bauen/drei-bauvorhaben-beginnen-jetzt_a335114
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/brunnenviertel-ev-will-baumfaellungen-stoppen_a336818
 #: XXX Umgestaltungsmaﬂnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2022-01-22
+#: last_checked: 2022-02-28 (mapillary)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2022-04-15
 Swinem¸nder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -4362,7 +4362,7 @@ Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8469&date=20200814 (Investitionsplanung 2021-2025)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058
 #: XXX wann wird hier saniert?
-#: last_checked: 2021-03-07
+#: last_checked: 2021-04-01 (mapillary)
 #: check_frequency: 360d
 Elsastr. (Alt-Hohenschˆnhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16217,16208 16154,16227 16075,16249 15997,16272 15956,16299
 Elsastr. (Alt-Hohenschˆnhausen): Asphalt	Q0 15956,16299 15927,16344
@@ -4882,7 +4882,7 @@ Daheimstr.: Asphalt	Q0 21324,4986 21268,4992 21271,5065
 (Ernst-Grube-Park): Parkweg	Q1 21345,5157 21329,5192 21208,5291
 Mollergasse: Kleinsteinpflaster	Q1 9892,12596 9894,12564
 (Weg entlang der Bahnstrecke): unbefestigter Pfad	Q2 17425,9605 17438,9619 17474,9603 17694,9600 17826,9630 17866,9639
-Johannes-Zoschke-Str.: m‰ﬂiger Asphalt	Q2+ 19037,9636 19042,9708
+Johannes-Zoschke-Str.: m‰ﬂiger Asphalt	Q2 19037,9636 19042,9708
 Roﬂm‰ﬂlerstr.: Beton	Q0- 19479,10050 19487,10205
 Grafenauer Weg: Kleinsteinpflaster	Q1 19488,9223 19510,9497
 Grafenauer Weg: Plattenweg	Q2 19510,9497 19523,9648 19437,9653
@@ -9210,10 +9210,6 @@ J¸licher Str.: Asphalt	Q0 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297
 (Dennewitzstr., hinterer Weg): Kleinsteinpflaster	Q1 8011,10085 8023,10106 8074,10292 8058,10306
 (Park am Gleisdreieck, Eingang Schˆneberger Str.): Verbundsteinpflaster	Q1 8296,10438 8322,10451 8328,10485 8361,10491 8377,10502 8384,10507
 (Treptower Park): Asphalt	Q0 15190,9027 15181,8967 15159,8934
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1176947.php (kein Datum genannt)
-#: by: https://berliner-abendblatt.de/2022/02/16/treptower-park-rodung-und-neupflanzung/
-#: XXX Wird die wassergebundene Decke hier neu gemacht, oder ist ein anderer Weg gemeint?
-#: next_check: 2022-05-01
 (Treptower Park): wassergebundene Decke	Q1- 15190,9027 15154,9106 15025,9171 14955,9294
 (Treptower Park): Asphalt	Q0 14955,9294 14898,9364 14889,9381 14879,9433
 (Treptower Park): Asphalt	Q0 15159,8934 15223,8893 15235,8841 15298,8781 15335,8714 15378,8668
@@ -19306,9 +19302,9 @@ Malersteig: Asphalt	Q0 13606,3085 13596,3039 13561,2898 13510,2690 13487,2621 13
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Instandsetzung der Fahrbahn, von August bis voraussichtlich Oktober 2021)
 #: by: https://abendblatt-berlin.de/2021/07/06/lichtenberg-sommerbaustellen-im-bezirk/
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
-#: XXX wird hier auch noch asphaltiert?
-#: last_checked: 2022-01-24
-#: check_frequency: 30d
+#: XXX Hier sind gerade Asphaltierungsarbeiten, ebenso in der angrenzenden Drachenfelsstr.
+#: last_checked: 2022-03-01
+#: check_frequency: 7d
 Weseler Str.: m‰ﬂiger Asphalt	Q1- 18865,8740 18857,8790
 #: corrected_by: srt (m‰ﬂiger Asphalt, Q1- -> neu gemacht)
 Weseler Str.: Asphalt	Q0 18857,8790 18854,8831 18860,8886
@@ -29619,7 +29615,7 @@ Johannes-Zoschke-Str.: m‰ﬂiger Asphalt	Q2+ 19030,9530 19037,9636
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8654 vvv
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/rheinpfalzallee-wird-ab-2024-saniert_a332567 (Instandsetzung ab 2024) vvv
 #: XXX Instandsetzung geplant, danach vielleicht befestigt? vvv
-#: last_checked: 2022-01-10 vvv
+#: last_checked: 2022-03-01 vvv
 #: next_check: 2024-06-01 vvv
 #: confirmed_by: srt
 Rheinpfalzallee: Sandweg	Q2+ 18865,9608 18931,9629

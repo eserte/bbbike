@@ -5654,13 +5654,15 @@ Nennhauser Damm [Stichstraße]	N -8049,13332 -8043,13464 -8064,13534
 #: note: Privatstraße
 Metropolitan Park	N -8064,13534 -8088,13594 -7984,13649 -7926,13709 -7893,13781 -7894,13878 -7928,13967 -8019,14036 -8095,14056 -8183,14041
 #: osm_watch: way id="725376312" version="9"
-#: note: Privatstraße
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_06_0305_0372_online.pdf (Straßenbenennung)
-#: XXX Straße soll "Eidechsenweg" heißen, Benennung zum 1.3.2022 wirksam, Eintrag in Berlin.coords.data fehlt
+# REMOVED --- #: XXX Straße soll "Eidechsenweg" heißen, Benennung zum 1.3.2022 wirksam, Eintrag in Berlin.coords.data fehlt
+#: add_fragezeichen: Ist der Eidechsenweg bereits ausgeschildert?
 #: last_checked: 2021-10-20
 #: check_frequency: 180d
 #: next_check: 2022-03-01
-(Metropolitan Park - Brunsbütteler Damm)	N -7893,13781 -7720,13839
+#: note: Privatstraße
+#: oldname: -20220301: <namenslos>
+Eidechsenweg	N -7893,13781 -7720,13839
 Staakener Feldstr.	N -7464,13904 -7534,13936 -7595,13963 -7647,13985
 (Staakener Feldstr. - Brunsbütteler Damm)	NN -7647,13985 -7716,14031
 Mühlendorfstr.	N -7637,13822 -7630,13889 -7595,13963

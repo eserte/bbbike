@@ -26,18 +26,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: note: laut rbb bis 29.10.2021, laut Parkverbotsschilder bis 28.1.2022, mittlerweile Parkverbot bis 25.2.2022 vvv
-#: also_indoor: traffic (ex-H(falsch),G(falsch),B)
-#: last_checked: 2022-02-24 vvv
-#: check_frequency: 7d vvv
-# REMOVED --- #: next_check: 2022-01-28 vvv
-# REMOVED (offen) --- Jessnerstr.: Sperrung der Fahrbahn nördlich der Oderstr.	q3::inwork 14946,11697 14986,11760
-Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 14946,11697
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: note ^^
-# 
+# REMOVED --- #: note: laut rbb bis 29.10.2021, laut Parkverbotsschilder bis 28.1.2022, mittlerweile Parkverbot bis 25.2.2022 vvv --- #: also_indoor: traffic (ex-H(falsch),G(falsch),B) --- #: last_checked: 2022-02-24 vvv --- #: check_frequency: 7d vvv --- # REMOVED --- #: next_check: 2022-01-28 vvv --- # REMOVED (offen) --- Jessnerstr.: Sperrung der Fahrbahn nördlich der Oderstr.	q3::inwork 14946,11697 14986,11760 --- Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 14946,11697 --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: note ^^
 # REMOVED (entfernt) --- #: also_indoor: traffic (G,H) --- #: XXX Parkverbotsschilder bis zum 20.6.2021 --- #: add_fragezeichen: Sind die Bauarbeiten in der Pettenkoferstr. bereits beendet? --- #: last_checked: 2021-05-17 --- #: next_check: 2021-06-20 --- # REMOVED --- #: valid: -20210620 --- Pettenkoferstr.: Bauarbeiten an der Kreuzung Eldenaer Str., Sperrung der Fahrbahn	q3::inwork 14858,12775 14836,12826
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: RUEDERSDORFER-2016 --- #: osm_watch: way id="472360197" version="1" --- #: last_checked: 2017-04-12 --- #: check_frequency: 7d --- Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13161,11795 13066,11854# 
 # REMOVED --- #: last_checked: 2017-03-30 vvv --- #: check_frequency: 14d vvv --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003 --- # REMOVED --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q3-::inwork 13339,12029 13352,12003
@@ -450,7 +439,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 ### Karlshorst ###
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2022-02-10 vvv
+#: last_checked: 2022-03-01 vvv
 Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17461,8693 17656,8700 17640,8627 17497,8623
 Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17461,8693
 Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17461,8693 17497,8623
@@ -461,13 +450,7 @@ Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwor
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 vvv --- #: osm_watch: way id="580512810" version="4" --- #: osm_watch: way id="580508096" version="6" --- #: also_indoor traffic vvv --- #: last_checked: 2019-05-21 vvv --- #: next_check: 2019-06-10 vvv --- #: valid: -20201231 vvv --- #: priority: #A vvv
 # REMOVED (hier nicht mehr) --- Dönhoffstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q2::inwork 18733,8633 18609,8717
 # REMOVED  --- #: priority ^^^ --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: next_check_id ^^^
-# 
-#: by: https://twitter.com/VIZ_Berlin/status/1496514043573678085
-#: XXX vor Ort überprüfen!
-#: source_id: viz2021:13.525209,52.480103,21.02.2022,08:00 (bis 19.3.2022)
-#: also_indoor: traffic (G,H(incomplete?),B)
-#: valid: -20220319
-Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::inwork 18627,8475 18704,8427
+# REMOVED (Richtung Osten offizielle Führung über Gehweg, Richtung Westen keine Einschränkung) --- #: by: https://twitter.com/VIZ_Berlin/status/1496514043573678085 --- #: XXX vor Ort überprüfen! --- #: source_id: viz2021:13.525209,52.480103,21.02.2022,08:00 (bis 19.3.2022) --- #: also_indoor: traffic (G,H(incomplete?),B) --- #: valid: -20220319 --- Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::inwork 18627,8475 18704,8427
 # 
 ### Friedrichsfelde ###
 # 
@@ -735,11 +718,11 @@ Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4:
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
 #: also_indoor: traffic (G(zu viel),H(zu wenig),B)
-#: last_checked: 2021-12-30 (mapillary) vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2022-03-01 vvv
+#: check_frequency: 30d vvv
 #: next_check: 2022-06-30 vvv
-Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16227,12280 16159,12301 16056,12317
-Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16144,12388 16159,12301 16158,12191
+Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16276,12273 16227,12280 16159,12301 16056,12317
+# REMOVED (hier mittlerweile offen) --- Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16144,12388 16159,12301 16158,12191
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1208,9 +1191,9 @@ Volkspark Friedrichshain: Fußgänger, flache enge Rampe	q4 12058,13403 12040,1342
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Fußgänger	q1 12382,13097 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12006,13481 11957,13528 11857,13596 11823,13610 11785,13625
 #: note: offizieller Radweg
 Virchowstr. (Volkspark Friedrichshain): Fußgänger	q1 12876,13440 12826,13526 12802,13584 12784,13610 12766,13621 12743,13634 12709,13691 12707,13706
-Friedrichshaller Str.: einige Fußgänger	q2 2757,7604 2774,7655
-######################################################################
+## ^^^ Volkspark Friedrichshain ^^^ ####
 # 
+Friedrichshaller Str.: einige Fußgänger	q2 2757,7604 2774,7655
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20120418.1330.368930.html
 Luisenhain: Radfahren erlaubt, Fußgänger haben Vorrang	q2- 22196,4847 22153,4840 22074,4664 22057,4618 22043,4562 22057,4531 22071,4501
 (Rathaus Köpenick - Luisenhain): Fußgänger	q2- 22138,4642 22074,4664
@@ -3940,6 +3923,8 @@ Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
 (Weg am Kienhorstgraben): einige Fußgänger	q3 3876,18348 3799,18159 3723,17979 3706,17931
 #: XXX_prog: BS an beiden Enden, ansonsten trotzdem q3
 (Holzmarktstr. - Ifflandstr.): Fußgänger, Bordsteine	q3 11515,12293 11584,12258 11589,12296
+#: note: Gehweg, Radfahrer frei
+Johannes-Zoschke-Str.: einige Fußgänger	q1 19037,9636 19042,9708
 # 
 ######################### User Contributions #################################
 # 
