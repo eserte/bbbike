@@ -1618,7 +1618,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10299,11786 10314,11804 10349,11847 10376,11879
 # REMOVED --- #: next_check: 2021-03-11 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2022-01-03 vvv
+#: last_checked: 2022-03-02 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
 provisorische Radspur	RW4; 10574,12131 10625,12206 10659,12259 10675,12280
 # REMOVED ---	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
@@ -1626,7 +1626,7 @@ provisorische Radspur	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
 #: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
-#: last_checked: 2022-01-03
+#: last_checked: 2022-03-02
 provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
 #: next_check ^^^
 #: check_frequency ^^^
@@ -2337,6 +2337,8 @@ Radspur hinter den parkenden Autos	RW4; 11920,12266 11872,12185 11809,12078
 	RW4; 11764,12001 11809,12078 11872,12185
 Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 	RW3; 12006,12464 12028,12519
+grüne Längsstreifen	RW4; 12050,12616 12064,12673
+Radspur hinter den parkenden Autos, grüne Längsstreifen	RW4; 12064,12673 12112,12861
 #: by: https://viz.berlin.de/2021/10/verkehrsvorschau-fuer-montag-11-10-2021/
 #: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (ab 1.11.2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158998.php (Abschluss Woche 51/2021, Grünmarkierung erst im Frühjahr 2022)
@@ -2345,11 +2347,9 @@ Radspur hinter den parkenden Autos	RW4; 11872,12185 11920,12266 12006,12464
 #: source_id: viz2021:13.428503,52.518895,16.11.2021,17:00 (bis 30.11.2021) (mittlerweile bis 10.12.2021) (bis 22.12.2021) (bis 21.12.2021) (inaktiv)
 #: XXX Radspuren sind fertig, Grünmarkierung folgt im Frühjahr 2022 vvv
 #: priority: #D vvv
-#: last_checked: 2022-02-26 vvv
-# REMOVED --- #: check_frequency: 30d vvv
+#: last_checked: 2022-03-02 vvv
+# REMOVED --- #: check_frequency: 14d vvv
 #: next_check: 2022-04-01 vvv
-	RW4; 12050,12616 12064,12673
-Radspur hinter den parkenden Autos	RW4; 12064,12673 12112,12861
 	RW3; 12112,12861 12122,13029
 	RW2; 12122,13029 12126,13088
 #: next_check ^^^

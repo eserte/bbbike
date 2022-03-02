@@ -34,7 +34,7 @@ Klosterbuschweg/Torweg: Gegenverkehrsregelung	X::inwork -6451,14413
 Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
 # 
 #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.?
-#: last_checked: 2022-02-12
+#: last_checked: 2022-03-02
 #: check_frequency: 90d
 Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
@@ -45,11 +45,11 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
 # REMOVED --- #: next_check_id: LUECK-2021 --- #: source_id: viz2021:13.496206,52.500247,12.11.2021,06:00 (bis 10.12.2021) --- #: by: https://www.bahninfo-forum.de/read.php?9,716845,718464#msg-718464 --- #: note: Gegenverkehrsregelung beginnt östlich der Einmündung Wönnichstr. und endet östlich der Kreuzung Rummelsburger Str. --- #: last_checked: 2021-11-21 --- #: next_check: 2021-12-10 --- #: valid: -20211210 --- Lückstr.: Gegenverkehrsregelung	X::inwork 16601,10650
 # 
-#: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00 (bis 02.02.2022) (mittlerweile bis 7.3.2022)
+#: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00 (bis 02.02.2022) (mittlerweile bis 7.3.2022) (mittlerweile bis 30.4.2022)
 #: note laut rbb bis 9.2.2022
 #: last_checked: 2022-02-12 (mapillary) vvv
-#: next_check: 2022-03-07 vvv
-#: valid: -20220307 vvv
+#: next_check: 2022-04-30 vvv
+#: valid: -20220430 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: valid ^^^
@@ -112,7 +112,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2022-01-17
+#: last_checked: 2022-03-02
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -3025,7 +3025,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2022-02-24 (mapillary) vvv
+#: last_checked: 2022-03-02 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

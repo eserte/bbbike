@@ -2208,7 +2208,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2022-02-09
+#: last_checked: 2022-03-02
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2588,7 +2588,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-02-23 (mapillary)
+#: last_checked: 2022-03-01 (mapillary)
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 ',
@@ -3152,20 +3152,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: add_fragezeichen: Bis wann gilt die Einbahnstraßenregelung für Radfahrer? --- 
-#: note: 2021-12-23 ("Radfahrer frei"-Schilder fehlen weiterhin, außerdem gibt es eine explizite Bedarfsumleitung für Radfahrer via Jägerstr.
-#: osm_watch: way id="753316505" version="3"
-#: last_checked: 2022-01-25
-	q4::inwork; 9195,11972 9207,11880
-# REMOVED (hier nicht mehr) ---	q4::inwork; 9207,11880 9218,11793
-',
-         'from' => undef,
-         'id' => 3360,
-         'text' => 'Glinkastr.: zwischen Jägerstr. und Mohrenstr. Einbahnstraßenregelung, Richtung Süden gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '# REMOVED (hier wohl nicht?) ---	2::inwork 49011,71344 48996,71176 48982,71121 48929,70947
 #: also_indoor: traffic (G,H)
@@ -3554,15 +3541,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
 #: last_checked: 2022-01-01 (mapillary)
-#: next_check: 2022-03-07
+#: next_check: 2022-04-30
 	q4::inwork; 8196,20096 8224,19977 8234,19936
 ',
          'from' => 1615158000,
          'id' => 3458,
          'source_id' => 'viz2021:13.374359,52.586234,09.03.2021,07:00',
-         'text' => 'Schönholzer Weg: Richtung Süden zwischen Angerweg und Edelweißstr. gesperrt, vom 09.03.2021 07:00 bis 07.03.2022 17:00',
+         'text' => 'Schönholzer Weg: Richtung Süden zwischen Angerweg und Edelweißstr. gesperrt, vom 09.03.2021 07:00 bis 30.04.2022 17:00',
          'type' => 'handicap',
-         'until' => 1646668800
+         'until' => 1651330800
        },
        undef,
        undef,
@@ -3950,6 +3937,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://berliner-abendblatt.de/2022/02/09/fuerstendamm/
 #: by: https://www.berliner-woche.de/frohnau/c-verkehr/bauarbeiten-auf-dem-fuerstendamm-ab-9-maerz_a335966
 #: source_id: 226500387 (bis 31.12.2022)
+#: source_id: viz2021:13.298114,52.631634,09.03.2022,07:00 (bis 31.12.2022)
 #: XXX Wann beginnt der 2. Bauabschnitt: Eltviller Straße bis Oranienburger Chaussee?
 #: next_check: 2022-10-01
 	q4::inwork 2486,25156 2599,25047 2647,25018 2673,25012 2818,25022 2904,24993 3015,24965 3117,24966
@@ -4052,18 +4040,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1495626806573076482
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1179333.php
 #: by: https://berliner-abendblatt.de/2022/02/23/sturmschaeden-rohrdamm-bleibt-gesperrt/
-#: source_id: viz2021:13.262931,52.540599,20.02.2022,04:15 (kein Endedatum)
-#: also_indoor: traffic (G,H,B)
+#: source_id: viz2021:13.262931,52.540599,20.02.2022,04:15 (kein Endedatum) (inaktiv, ersetzt)
+#: also_indoor: traffic (ex-G,H,B)
 #: priority: #A
-#: next_check: 2022-03-02
+#: next_check: 2022-03-11
 	2::inwork 741,14827 778,14713 838,14530
 ',
          'from' => 1645240500,
          'id' => 3518,
          'source_id' => 'viz2021:13.26293,52.54059,20.02.2022,04:15',
-         'text' => 'Rohrdamm: zwischen Schuckertdamm und Jugendweg gesperrt, auch für Radfahrer und Fußgänger ',
+         'text' => 'Rohrdamm: zwischen Schuckertdamm und Jugendweg gesperrt, auch für Radfahrer und Fußgänger, voraussichtlich bis 11.3.2022 ',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1647039599
        },
        {
          'data' => '#: next_check_id: GNEISENAUKIEZ-2022
