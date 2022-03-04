@@ -65,7 +65,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausf¸hrungsplanung)
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021)
-#: last_checked: 2022-02-28
+#: last_checked: 2022-03-04
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-03-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -98,7 +98,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9047,9750 90
 #: by: https://api.fixmyberlin.de/api/plannings/66 (asphaltiert und verbreitert)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
-#: last_checked: 2022-02-02
+#: last_checked: 2022-03-04
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -3063,6 +3063,7 @@ Annemarie-Renger-Str.: Fuﬂg‰nger- und Radfahrerbereich entsteht hier	?::inwork 8
 #: XXX fehlt in Berlin.coords.data, PLZ=10557
 Lisa-Fittko-Str. (Ziffer 2): Geplante Straﬂe; Qualit‰t? wird das hier auch die Lisa-Fittko-Str. werden, oder eine andere Straﬂe?	?::projected 7569,14217 7652,14257
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_57_5513_5592_online.pdf (Straﬂenbenennung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_09_0533_0596_online.pdf (Grundst¸cksnummerierungen)
 #: XXX fehlt in Berlin.coords.data, mˆglicherweise auch PLZ=10557 (Fehler in DPAG-MTB 09/2020?)
 Clara-Mleinek-Str. (Ziffer 3; platz‰hnlich): Geplante Straﬂe; Qualit‰t?	?::projected 7500,14333 7566,14404
 #: check_frequency ^^^
@@ -3131,9 +3132,10 @@ Burgfrauenstr./Fischgrundbr¸cke: Zebrastreifen geplant (entsteht hier noch ein w
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8074 (Ampel gefordert)
 #: XXX laut rbb Sperrung zwischen Platanenstr. und Reichsstr. bis zum 1.10.2021, evtl. im Zusammenhang mit dem Zebrastreifenbau?
+#: osm_watch: note 2903783 3
 #: priority: #D vvv
-#: last_checked: 2021-10-20 (Bauarbeiten)
-#: check_frequency: 16d
+#: last_checked: 2022-03-03
+#: check_frequency: 90d
 Reichsstr./Eschenallee: Zebrastreifen in Bau	?::inwork 1034,11720 1033,11754 1027,11797
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: last_checked: 2021-12-04
@@ -3961,7 +3963,7 @@ Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9765 (Frage)
 #: priority: #C vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2021-11-05 (indoor) vvv
+#: last_checked: 2022-03-04 (indoor) vvv
 #: check_frequency: 120d vvv
 #: also_indoor: search Schildower_Straﬂe
 Schildower Str.: wird hier ein modaler Filter entstehen?	? 4914,24366 4898,24351
@@ -5942,13 +5944,15 @@ Vorarlberger Damm: Erneuerung des Radwegs	?::projected; 7227,7352 7101,7198 6991
 #: by: https://twitter.com/SenUMVKBerlin/status/1490626663167799300 (sp‰testens bis April 2022)
 #: by: https://berliner-abendblatt.de/2022/02/08/bauarbeiten-am-tempelhofer-damm-gehen-voran/
 #: by: https://twitter.com/VIZ_Berlin/status/1498564359043252225 (Bauarbeiten bis April 2022)
-#: source_id: viz2021:13.385593,52.465718,08.12.2021,10:21 (bis 28.1.2022) (mittlerweile bis 31.3.2022)
+#: source_id: viz2021:13.385593,52.465718,08.12.2021,10:21 (bis 28.1.2022) (mittlerweile bis 31.3.2022) (mittlerweile bis 8.3.2022)
 #: source_id: viz2021:13.385594,52.464277,08.12.2021,10:21 (bis 28.1.2022) (mittlerweile bis 31.3.2022)
+#: source_id: viz2021:13.384119,52.457228,08.03.2022,08:00 (stadteinw‰rts, bis 6.5.2022)
 # REMOVED --- #: note: auﬂerdem existieren zwischen Ringbahnstr. und Alt-Tempelhof tempor‰re Busspuren, f¸r Radfahrer freigegeben
+#: XXX stadtausw‰rts zuerst fertig
 #: last_checked: 2022-02-07 (twitter)
 #: check_frequency: 60d
 # REMOVED --- #: check_frequency: 240d
-#: next_check: 2022-04-01
+#: next_check: 2022-05-06
 Tempelhofer Damm: gesch¸tzte Radspur, in beiden Richtungen	?::projected 9249,6642 9254,6542 9253,6484 9250,6414 9246,6364 9245,6352 9221,6179 9212,6096 9192,5930 9176,5803 9158,5673 9161,5535
 #: XXX bis zur Ende der Legislaturperiode 2021 --- beide Richtungen? Welcher Abschnitt genau?
 #: last_checked: 2021-12-26 (mapillary)
@@ -6719,6 +6723,7 @@ Planstraﬂen im Marienhain: Straﬂennamen? Qualit‰t?	? 22771,3151 22476,3118 22485
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-50a/download/01_PLANZEICHNUNG.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6763 (Forderung nach einem Verkehrsgutachten)
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1086032.php
+#: by: https://www.berliner-woche.de/koepenick/c-bauen/baubeginn-auf-dem-gelaende-des-alten-funkwerks-koepenick-ist-weiter-unklar_a336002
 #: XXX Bebauungsplan 9-50a; auﬂerdem wird eine Gr¸nanlage mit Weg am Ufer und weitere Durchwegungen entstehen
 #: last_checked: 2021-08-08
 #: check_frequency: 720d
@@ -7429,6 +7434,7 @@ Krampnitz: neue Planstraﬂen	?::projected -14183,5214 -13771,5077
 #: by: https://berliner-abendblatt.de/2022/01/12/wird-coral-world-noch-groesser-als-geplant/
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/verordnete-wollen-veraenderte-tierhaltung_a334955
 #: by: https://www.rbb24.de/politik/beitrag/2022/03/berlin-coral-world-rummelsburger-bucht-hotel-hotelkomplex.html
+#: by: https://berliner-abendblatt.de/2022/03/04/unklare-mischung-hotelplaene-fuer-die-coral-world/
 #: XXX vorgeschlagene Straﬂennamen (fehlen alle bei Berlin.coords.data):
 #: XXX * bestehende Untere Kynaststr. -> An der Mole (PLZ=10317 laut LOR)
 #: XXX * Paul-und-Paula-Promenade
@@ -7439,7 +7445,7 @@ Krampnitz: neue Planstraﬂen	?::projected -14183,5214 -13771,5077
 #: XXX * Ingrid-Reschke-Str. (PLZ=10317 laut LOR)
 #: XXX * Gustav-Tempel-Str. (PLZ=10317 laut LOR)
 #: XXX laut LOR gibt's nun auch eine Hauptstraﬂe in Friedrichshain, PLZ 10317 --- vielleicht ein Zipfel des Baugebiets hier, w‰re aber zu verwirrend, das in Berlin.coords.data einzutragen
-#: last_checked: 2022-02-20
+#: last_checked: 2022-03-04
 #: check_frequency: 360d
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straﬂen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 
