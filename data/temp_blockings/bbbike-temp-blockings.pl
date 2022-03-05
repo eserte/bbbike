@@ -30886,7 +30886,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-02-26
+#: last_checked: 2022-03-05
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -34516,7 +34516,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: last_checked: 2022-02-12 vvv
+#: last_checked: 2022-03-05 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4395450" version="25"
@@ -34607,6 +34607,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1495626806573076482
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1179333.php
 #: by: https://berliner-abendblatt.de/2022/02/23/sturmschaeden-rohrdamm-bleibt-gesperrt/
+#: by: https://www.berliner-woche.de/spandau/c-umwelt/baustadtrat-legt-sturmbilanz-vor-schaden-in-millionenhoehe_a337754
 #: source_id: viz2021:13.262931,52.540599,20.02.2022,04:15 (kein Endedatum) (inaktiv, ersetzt)
 #: also_indoor: traffic (ex-G,H,B)
 #: priority: #A
@@ -34673,6 +34674,21 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1498672727842082819
 	2::inwork 20895,17594 20769,17650
 	2::inwork 20769,17650 20891,17572
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022)
+#: add_fragezeichen: Wie lange dauern die Bauarbeiten an? Wo genau gilt die Einbahnstraßenregelung?
+#: also_indoor: traffic (none)
+#: priority: #B
+#: last_checked: 2022-03-05
+#: check_frequency: 30d
+#: next_check: 2022-04-08
+	q4::inwork; 7259,14870 7209,14927 7182,14986 7178,14996 7131,15109
 EOF
      },
     );

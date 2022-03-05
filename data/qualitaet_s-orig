@@ -184,7 +184,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2022-02-27 vvv
+#: last_checked: 2022-03-05 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -453,7 +453,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (geplante Fertigstellung nun 2023, Stand August 2021)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: last_checked: 2022-01-15 (mapillary) vvv
+#: last_checked: 2022-03-05 vvv
 #: next_check: 2023-06-01 vvv
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
@@ -998,10 +998,13 @@ Tegeler Weg: Asphalt	Q0 7259,14870 7209,14927 7182,14986 7178,14996 7131,15109 7
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_ppp_8.pdf (ebenso)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
-#: XXX wird hier asphaltiert?
-#: last_checked: 2022-01-01 (architektur-urbanistik)
+#: XXX Wird die restliche Lynarstr. auch asphaltiert?
+#: last_checked: 2022-03-05
 #: check_frequency: 60d
-Lynarstr.: Kopfsteinpflaster	Q2 7129,14787 7143,14794 7259,14870 7409,14954 7461,14986 7624,15083 7694,15125
+Lynarstr.: Kopfsteinpflaster	Q2 7129,14787 7143,14794 7259,14870 7409,14954
+Lynarstr.: Kopfsteinpflaster	Q2 7409,14954 7461,14986
+#: note: früher Kopfsteinpflaster, Q2; Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
+Lynarstr.: Asphalt	Q0 7461,14986 7624,15083 7694,15125
 Lynarstr.: Asphalt	Q0 7694,15125 7745,15160
 Kiautschoustr.: Kopfsteinpflaster	Q2 7182,14986 7007,14911 6853,14854 6837,14848
 Samoastr.: Kopfsteinpflaster	Q2 7000,14832 7007,14911 6945,15045 6886,15156
@@ -1025,7 +1028,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-02-27
+#: last_checked: 2022-03-05
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1260,7 +1263,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
 #: last_checked: 2021-12-30 vvv
 #: check_frequency: 90d vvv
-#: osm_watch: way id="317233618" version="5"
+#: osm_watch: way id="317233618" version="6"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
 #: osm_watch: way id="25216398" version="31"
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1- 22084,5877 22070,5876 21846,5856 21744,5804 21618,5699 21602,5685 21507,5620
@@ -7996,7 +7999,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8256,10264
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8264,10192 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2021-11-20 vvv
+#: last_checked: 2022-03-05 vvv
 #: check_frequency: 100d vvv
 #: osm_watch: way id="531908445" version="9"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
@@ -12459,6 +12462,7 @@ Weichselstr. - Sasarsteig: Mosaikpflaster	Q1 12274,8607 12276,8590 12165,8566
 #: last_checked: 2022-02-12
 #: check_frequency: 150d
 (Weg am Kienhorstgraben): unbefestigter Weg, Schotter	Q2 3723,17979 3706,17931
+Hornstr.: Asphalt mit einigen Schäden	Q0- 8779,9812 8980,9751
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -30300,7 +30304,7 @@ Am Weingarten: Beton	Q1+ 13867,14507 13837,14563
 ######################################################################
 # Gepflasterte Kreuzungsbereiche
 #: ignore vvv
-Kreuzungsbereich mit Kleinsteinpflaster	Q1- 9627,14229
+Einmündungsbereich mit Kleinsteinpflaster	Q1- 9627,14229
 Kreuzungsbereich asphaltiert (umgebene Straßen sind zumeist gepflastert)	Q0 9750,14132
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 3726,2209
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 22456,3889
@@ -30691,4 +30695,7 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 13384,8354
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 11450,15173
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2786,7721
 Einmündungsbereich mit Kopfsteinpflaster	Q2- 10945,12150
+Einmündungsbereich asphaltiert	Q0 7624,15083
+Einmündungsbereich mit Kopfsteinpflaster	Q2 7461,14986
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 7259,14870
 #: ignore ^^^
