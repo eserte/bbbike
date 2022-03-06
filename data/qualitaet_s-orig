@@ -268,7 +268,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Fahrbahninstandsetzung ab Herbst 2021, bis 2022)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2022-02-10
+#: last_checked: 2022-03-06
 # REMOVED --- #: next_check: 2021-10-01
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
 Dönhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
@@ -1028,7 +1028,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-03-05
+#: last_checked: 2022-03-06
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1467,8 +1467,8 @@ Nitzwalder Str.: unbefestigter Weg	Q2 21578,7947 21593,7934
 Kaulsdorfer Str.: Asphalt	Q0 22049,7085 22075,6967 22186,6672 22192,6659 22305,6404 22325,6385
 Marksburgstr.: Asphalt	Q0 19048,9146 18961,9109 18900,9119 18809,9133 18697,9153 18586,9172 18511,9185 18430,9199 18319,9218
 Marksburgstr.: Asphalt mit einigen Schäden	Q1+ 19048,9146 19131,9187 19195,9249
-Walkürenstr.: Asphalt	Q0- 18070,9292 18006,9335
-Walkürenstr.: Kopfsteinpflaster	Q2 18006,9335 17720,9533
+Walkürenstr.: Asphalt	Q0- 18070,9292 18022,9324
+Walkürenstr.: Kopfsteinpflaster	Q2 18022,9324 18006,9335 17720,9533
 Tannhäuserstr.: Kopfsteinpflaster	Q2 18125,9676 17890,9580 17720,9533 17549,9529
 (am Schloß Schönhausen): Kleinsteinpflaster	Q1- 10294,19298 10339,19179 10382,19066
 (am Schloß Schönhausen): Kleinsteinpflaster	Q1- 10339,19179 10249,19148
@@ -2447,7 +2447,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="11"
-#: last_checked: 2021-12-30
+#: last_checked: 2022-03-06
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -3774,7 +3774,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124 (Anfrage von Juli 2017)
 #: by: https://politik-bei-uns.de/file/597985b41ae6a07d5fb74916 (Antwort: soll teilweise mit einem Asphaltstreifen befestigt werden, erster von drei Bauabschnitten 2018)
 #: osm_watch: way id="47159365" version="14"
-#: last_checked: 2022-01-26
+#: last_checked: 2022-03-06
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -8636,7 +8636,7 @@ Gehwegplatten	Q0 21844,238 21963,261 21979,274 21991,273 22008,262
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6453 (Empfehlung zu Verbesserungen in der BVV 2020-06-18 beschlossen)
 #: XXX siehe auch Maßnahme Gr.9; außerdem soll die Straße "Am Kanal" asphaltiert werden -> letzteres ist realisiert
 #: note: jemand hat hier Teppiche ausgelegt, um die Lage etwas zu lindern (gesehen: 2018-05-06, 2019-01-02, 2019-10-19, 2020-11-28, 2021-04-24)
-#: last_checked: 2021-09-12 (martin.f)
+#: last_checked: 2022-03-05 (mapillary)
 #: check_frequency: 120d
 Unterführung unter Adlergestell und Bahn: sandig, aber notdürftig mit Teppichen ausgelegt	Q3+ 20939,2413 20904,2426 20810,2398
 (Hartriegelstr. - Michael-Brückner-Str.): Verbundsteinpflaster	Q1+ 18695,5076 18622,5049 18514,5028 18425,5032
@@ -11208,7 +11208,8 @@ Reichenberger Str.: Asphalt	Q0 11291,10438 11393,10390
 Am Wuhlebogen [zur Kaulsdorfer Str.]: Asphalt	Q0 21632,8105 21688,8115
 Am Wuhlebogen: Asphalt	Q0 21680,7943 21632,8105 21573,8169 21400,8322
 Am Wuhlebogen: unbefestigter Zugang	Q2 21400,8322 21396,8326
-Stolzenfelsstr.: unbefestigter Weg	Q2+; 19407,8143 19333,8165 19171,8280
+Stolzenfelsstr.: unbefestigter Weg	Q2+; 19407,8143 19333,8165
+Stolzenfelsstr.: Verbundsteinpflaster	Q1+; 19333,8165 19171,8280
 Stolzenfelsstr.: Mosaikpflaster, teilweise uneben	Q2+; 19171,8280 18949,8437
 #: corrected_by: mapillary (Mosaikpflaster, teilweise uneben, Q2+; -> ..., neu gemacht)
 Stolzenfelsstr.: Verbundsteinpflaster	Q1+; 18949,8437 18787,8540
@@ -15713,6 +15714,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://stefan-ziller.eu/2021/tempo-30-fuer-die-lemkestrasse-und-modellprojekt-fuer-baumfreundlichen-strassenbelag/ (nur Gehwegarbeiten bis zum 1.8.2021, Planung für Neubau der Straße noch nicht abgeschlossen (Stand März 2021))
 #: by: https://stefan-ziller.eu/2021/planungen-fuer-die-lemkestrasse-baumerhalt-und-zweiter-bauabschnitt/ (August 2021: erster Bauabschnitt)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9810 (Anfrage)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9889 (Anfrage)
 #: also_indoor: search Lemkestraße
 #: last_checked: 2022-01-16 (mapillary) (im südlichen Abschnitt sind schon Bauarbeiten)
 #: check_frequency: 150d
@@ -19305,13 +19307,9 @@ Malersteig: Asphalt	Q0 13606,3085 13596,3039 13561,2898 13510,2690 13487,2621 13
 # 
 #: by: Anna Behrend: vvv
 #: corrected_by: srt (guter Beton, Q0 -> ...) vvv
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Instandsetzung der Fahrbahn, von August bis voraussichtlich Oktober 2021)
-#: by: https://abendblatt-berlin.de/2021/07/06/lichtenberg-sommerbaustellen-im-bezirk/
-#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
-#: XXX Hier sind gerade Asphaltierungsarbeiten, ebenso in der angrenzenden Drachenfelsstr.
-#: last_checked: 2022-03-01
-#: check_frequency: 7d
-Weseler Str.: mäßiger Asphalt	Q1- 18865,8740 18857,8790
+# REMOVED --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Instandsetzung der Fahrbahn, von August bis voraussichtlich Oktober 2021) --- #: by: https://abendblatt-berlin.de/2021/07/06/lichtenberg-sommerbaustellen-im-bezirk/ --- #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228 --- #: XXX Hier sind gerade Asphaltierungsarbeiten, ebenso in der angrenzenden Drachenfelsstr. --- #: last_checked: 2022-03-01 --- #: check_frequency: 7d
+#: corrected_by: srt (mäßiger Asphalt, Q1- -> neu gemacht)
+Weseler Str.: Asphalt	Q0 18865,8740 18857,8790
 #: corrected_by: srt (mäßiger Asphalt, Q1- -> neu gemacht)
 Weseler Str.: Asphalt	Q0 18857,8790 18854,8831 18860,8886
 #: corrected_by: srt (mäßiger Asphalt, Q1- -> neu gemacht)
@@ -19409,8 +19407,8 @@ Friedrich-Wilhelm-Str.: Asphalt	Q0 8996,5823 9176,5803 9378,5773 9668,5733
 Drachenfelsstr.: guter Asphalt	Q0 18945,8547 18951,8574
 #: corrected_by: srt (guter Asphalt, Q0- -> ...)
 Drachenfelsstr.: welliger Asphalt	Q1 18951,8574 18956,8618 18945,8660 18927,8702 18899,8754
-#: corrected_by: srt (guter Asphalt, Q0- -> ...)
-Drachenfelsstr.: schadhafter Asphalt	Q1- 18899,8754 18857,8790
+#: corrected_by: srt (guter Asphalt, Q0- -> schadhafter Asphalt	Q1-; ... -> neu gemacht)
+Drachenfelsstr.: Asphalt	Q0 18899,8754 18857,8790
 #: by ^^^
 # 
 #: by: Andrea Kliche: vvv
@@ -30698,4 +30696,5 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2- 10945,12150
 Einmündungsbereich asphaltiert	Q0 7624,15083
 Einmündungsbereich mit Kopfsteinpflaster	Q2 7461,14986
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 7259,14870
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 17890,9580
 #: ignore ^^^

@@ -1047,8 +1047,8 @@ Nitzwalder Str.: unbefestigter Weg	Q2 21578,7947 21593,7934
 Kaulsdorfer Str.: Asphalt	Q0 22049,7085 22075,6967 22186,6672 22192,6659 22305,6404 22325,6385
 Marksburgstr.: Asphalt	Q0 19048,9146 18961,9109 18900,9119 18809,9133 18697,9153 18586,9172 18511,9185 18430,9199 18319,9218
 Marksburgstr.: Asphalt mit einigen Schäden	Q1 19048,9146 19131,9187 19195,9249
-Walkürenstr.: Asphalt	Q0 18070,9292 18006,9335
-Walkürenstr.: Kopfsteinpflaster	Q2 18006,9335 17720,9533
+Walkürenstr.: Asphalt	Q0 18070,9292 18022,9324
+Walkürenstr.: Kopfsteinpflaster	Q2 18022,9324 18006,9335 17720,9533
 Tannhäuserstr.: Kopfsteinpflaster	Q2 18125,9676 17890,9580 17720,9533 17549,9529
 (am Schloß Schönhausen): Kleinsteinpflaster	Q1 10294,19298 10339,19179 10382,19066
 (am Schloß Schönhausen): Kleinsteinpflaster	Q1 10339,19179 10249,19148
@@ -9738,7 +9738,8 @@ Reichenberger Str.: Asphalt	Q0 11291,10438 11393,10390
 Am Wuhlebogen [zur Kaulsdorfer Str.]: Asphalt	Q0 21632,8105 21688,8115
 Am Wuhlebogen: Asphalt	Q0 21680,7943 21632,8105 21573,8169 21400,8322
 Am Wuhlebogen: unbefestigter Zugang	Q2 21400,8322 21396,8326
-Stolzenfelsstr.: unbefestigter Weg	Q2; 19407,8143 19333,8165 19171,8280
+Stolzenfelsstr.: unbefestigter Weg	Q2; 19407,8143 19333,8165
+Stolzenfelsstr.: Verbundsteinpflaster	Q1; 19333,8165 19171,8280
 Stolzenfelsstr.: Mosaikpflaster, teilweise uneben	Q2; 19171,8280 18949,8437
 Stolzenfelsstr.: Verbundsteinpflaster	Q1; 18949,8437 18787,8540
 Konrad-Adenauer-Str.: großflächige Pflasterung	Q0 8306,12609 8309,12758
@@ -13480,7 +13481,7 @@ Freischützstr.: schlechtes Kopfsteinpflaster	Q3 13249,22003 13315,21969
 Freischützstr.: schlechtes Kopfsteinpflaster	Q3 13315,21969 13601,21826
 Pfingstrosenweg: Verbundsteinpflaster	Q0 22085,10855 22060,10914 22035,10971 22012,11024 21981,11092 21956,11146 21924,11216 21872,11196
 Malersteig: Asphalt	Q0 13606,3085 13596,3039 13561,2898 13510,2690 13487,2621 13452,2548 13420,2509
-Weseler Str.: mäßiger Asphalt	Q1 18865,8740 18857,8790
+Weseler Str.: Asphalt	Q0 18865,8740 18857,8790
 Weseler Str.: Asphalt	Q0 18857,8790 18854,8831 18860,8886
 Weseler Str.: Asphalt	Q0 18860,8886 18877,8973 18881,9002
 Weseler Str.: Asphalt	Q0 18881,9002 18886,9031
@@ -13512,7 +13513,7 @@ Friedrich-Wilhelm-Str.: Kopfsteinpflaster	Q2 8385,5907 8627,5866 8801,5844 8996,
 Friedrich-Wilhelm-Str.: Asphalt	Q0 8996,5823 9176,5803 9378,5773 9668,5733
 Drachenfelsstr.: guter Asphalt	Q0 18945,8547 18951,8574
 Drachenfelsstr.: welliger Asphalt	Q1 18951,8574 18956,8618 18945,8660 18927,8702 18899,8754
-Drachenfelsstr.: schadhafter Asphalt	Q1 18899,8754 18857,8790
+Drachenfelsstr.: Asphalt	Q0 18899,8754 18857,8790
 Chaukenstr./Mittelweg (Altglienicke): Beton	Q0 20252,901 20207,789 20171,698
 Chaukenstr./Mittelweg (Altglienicke): Asphalt	Q0 20171,698 20136,608 20082,463
 Chaukenstr./Mittelweg (Altglienicke): Asphalt, leichte Schäden	Q0 20082,463 20035,348
