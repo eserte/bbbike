@@ -3654,7 +3654,7 @@ EOF
        text  => 'Säntisstraße zwischen Daimlerstraße und Nahmitzer Damm Bahnübergang gesperrt bzw. halbseitig gesperrt, Dauer: 17.12.05 04:00 Uhr bis 20.12.05 20:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 9024,906 9058,932 9129,986 9165,1014 9241,1073
+	2 9024,906 9058,932 9129,986 9155,1006 9165,1014 9241,1073
 EOF
      },
      { from  => 1136070000, # 2006-01-01 00:00
@@ -3807,7 +3807,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2 8971,864 9014,898 9024,906
-	2 9241,1073 9165,1014 9129,986 9058,932 9024,906
+	2 9241,1073 9165,1014 9155,1006 9129,986 9058,932 9024,906
 EOF
      },
      { from  => 1140303600, # 2006-02-19 00:00
@@ -7923,7 +7923,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005211',
        data  => <<EOF,
-	2::inwork 9695,1563 9391,1235 9241,1073 9165,1014 9129,986 9058,932 9024,906
+	2::inwork 9695,1563 9391,1235 9241,1073 9165,1014 9155,1006 9129,986 9058,932 9024,906
 EOF
      },
      { from  => 1176674400, # 2007-04-16 00:00
@@ -28561,6 +28561,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/02/16/treptower-park-rodung-und-neupflanzung/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1181109.php
 #: by: https://www.berlin.de/imgscaler/ZyeZkkdwQemyWEdhwaVn9BCTIwwfgpHdAz40E0MQ50E/article/L3N5czExLXByb2QvYmEtdHJlcHRvdy1rb2VwZW5pY2svX2Fzc2V0cy9ha3R1ZWxsZXMvcG0vMjAyMi8yMi0wMy0wMV9iYXVtYXNzbmFobWVfLV9wbGFuX3RyZXB0b3dlcl9wYXJrLnBuZw.png
+#: by: https://www.berliner-woche.de/alt-treptow/c-bauen/weitere-arbeiten-im-treptower-park_a337841
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität
 #: last_checked: 2022-03-03
 #: next_check: 2022-05-01
@@ -30172,7 +30173,7 @@ EOF
        data  => <<EOF,
 #: by: Tsp 2019-09-10
 #: by: https://www.lichtenrade-berlin.de/news/aktuelle-news-internetzeitung/1562-schienenersatzverkehr-auch-mit-schnellbussen (nicht für Fahrräder)
-	2::inwork 10259,-2660 10365,-2603 10382,-2598
+	2::inwork 10259,-2660 10287,-2644 10365,-2603 10382,-2598
 EOF
      },
      { from  => $isodate2epoch->("2019-09-23 12:00:00"), # 1568498400, # 2019-09-15 00:00
@@ -30834,7 +30835,7 @@ EOF
        type  => 'handicap',
        source_id => '2147345675',
        data  => <<EOF,
-	q3::inwork 10365,-2603 10259,-2660
+	q3::inwork 10365,-2603 10287,-2644 10259,-2660
 EOF
      },
      { from  => undef, # 
@@ -31836,25 +31837,21 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1646662791, # undef, # XXX
        text  => 'Rehagener Platz: Bauarbeiten, Fahrbahn gesperrt, außerdem ist der Kreuzungsbereich Rehagener Str./Kirchbachstr. gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.lichtenrade-berlin.de/news/aktuelle-news-internetzeitung/30-blog/blog2019/1485-baubeginn-des-spielplatzes-auf-dem-rehagener-platz
 #: by: https://www.berliner-woche.de/lichtenrade/c-kultur/spielen-auf-dem-rehagener-platz_a278641
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.949210.php (Fertigstellung IV. Quartal 2020)
-#: add_fragezeichen: Bis wann gehen die Bauarbeiten? Wird das Kopfsteinpflaster nach den Bauarbeiten etwas besser sein? vvv
-#: last_checked: 2021-10-03 vvv
-#: check_frequency: 60d vvv
+# REMOVED --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten? Wird das Kopfsteinpflaster nach den Bauarbeiten etwas besser sein? vvv --- #: last_checked: 2021-10-03 vvv --- #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-12-15
 	q4::inwork 10642,-2371 10638,-2452
 # REMOVED (hier fertig)	q4::inwork 10638,-2452 10563,-2432
 	q3::inwork 10563,-2432 10638,-2452
 # REMOVED (hier keine Bauarbeiten mehr) ---	q3::inwork 10638,-2452 10789,-2451
 # REMOVED (hier keine Bauarbeiten mehr) ---	q3::inwork 10638,-2452 10648,-2547
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
@@ -34092,7 +34089,9 @@ EOF
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
 #: osm_watch: way id="114381366" version="13"
-#: add_fragezeichen: Ist die Unterführung tatsächlich gesperrt?
+#: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
+#: last_checked: 2022-03-07
+#: check_frequency: 180d
 	2::inwork 9699,-600 9562,-619
 EOF
      },
@@ -34296,12 +34295,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Jahnstr. und Priesterweg: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Jahnstr. und Priesterweg: Bauarbeiten, Fahrbahn kann gesperrt sein, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (B)
+#: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-02-05
+#: last_checked: 2022-03-07
 #: check_frequency: 30d
 	q4::inwork 13355,6235 13227,6209 13220,6237
 EOF
@@ -34688,6 +34688,23 @@ EOF
 #: check_frequency: 30d
 #: next_check: 2022-04-08
 	q4::inwork; 7259,14870 7209,14927 7182,14986 7178,14996 7131,15109
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str.',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2022-03-07 vvv
+#: next_check: 2022-03-31 vvv
+#: also_indoor: traffic (G,B(beide nur Zeitzer)) vvv
+	q4::inwork; 13326,7291 13368,7300 13476,7330
+	q4::inwork 13326,7291 13325,7210
+#: note: außerdem mögliche Beeinträchtigungen in der Kanner Str.
+	q3::inwork 13476,7330 13373,7426 13341,7423
+#: also_indoor ^^^
+#: next_check ^^^
+#: last_checked ^^^
 EOF
      },
     );

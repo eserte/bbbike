@@ -37,6 +37,7 @@ Neue Nationalgalerie: Bauzäune, Umfahren über Gehweg (Bordstein) möglich	q3::inw
 Werner-Richard-Heymann-Platz: große Teile der Fahrbahn gesperrt, Bordsteine	q3 3320,7982 3219,7987
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
 Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwork 5461,9923 5423,9932 5382,9942
+Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q1 14150,6609 14137,6658 14179,6714 14179,6743
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
@@ -3075,6 +3076,7 @@ Pitschener Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 2
 Dankratstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 21097,9538 20943,9543
 Havermannstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13803,4932 13892,4955
 Rambowstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13853,4759 13825,4850 13803,4932
+Onkel-Herse-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13939,4778 13853,4759
 Arabisweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17721,2232 17772,2331
 Wilhelm-von-Siemens-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9284,2624 9437,2649
 Saaleckplatz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5162,1110 5178,1123
@@ -3161,7 +3163,6 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einba
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 8266,14346 8442,14456
 (Planstraße C): Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12848,11093 12926,11224
-Weserstr.: Einbahnstraßenregelung, für Radfahrer nicht mehr offen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 Hönower Str.: temporäre Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 18735,9421 18765,9426 18846,9532
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10472,14632 10320,14608
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9429,12728 9402,12792 9386,12833

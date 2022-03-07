@@ -10,7 +10,7 @@
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2022-03-03 vvv
+#: last_checked: 2022-03-07 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -139,7 +139,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: XXX außerdem wurde der Zebrastreifen nördlich der Kreuzung deaktiviert
-#: last_checked: 2021-10-03
+#: last_checked: 2022-03-07
 #: next_check: 2023-07-31
 	X::inwork 10096,-2137
 # 
@@ -189,6 +189,14 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 #: next_check: 2022-04-29
 #: valid: 20210302-20220429
 	X::inwork 14805,10518
+# 
+#: next_check_id: BUCKOWERCHAUSSEE-2022
+#: valid: -20250104 vvv
+#: note: Anforderungsampel
+	F::inwork 8950,847
+#: note: Anforderungsampel
+	F::inwork 9155,1006
+#: valid ^^^
 # 
 #: temporary ^^^
 # 
@@ -3192,7 +3200,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2022-02-23
+#: last_checked: 2022-03-07
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
 	X::inwork 13265,6972
@@ -3411,7 +3419,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2022-01-28
+#: last_checked: 2022-03-07
 #: check_frequency: 90d
 	X::inwork 12185,7381
 # 

@@ -331,9 +331,9 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125
 	RW7;RW7 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12328,9117
 #: next_check_id: WESER-2021
 #: XXX während der Bauarbeiten Radweg aufgehoben (und möglicherweise entstehen hier auch keine neuen Radwege mehr), Einbahnstraße Richtung Westen, für Radfahrer nicht mehr offen
-#: last_checked: 2021-12-13
+#: last_checked: 2022-03-07
 #: check_frequency: 90d
-	RW0;RW1 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
+	RW0;RW0 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 	RW1;RW1 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
 Radweg nur aufgemalt, schadhafter Gehweg	RW1; 13891,7961 13724,8090
@@ -969,11 +969,15 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,12.01.2022,11:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-03-03
-#: check_frequency: 60d
-#: next_check: 2022-06-30
-# REMOVED --- provisorischer gemeinsamer Geh- und Radweg	RW2;
-	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
+#: last_checked: 2022-03-07 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2022-06-30 vvv
+provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169
+	RW4; 14501,10169 14405,10027 14323,9913
+# REMOVED ---	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 	RW4; 14323,9913 14289,9870 14244,9812 14196,9749
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 17621,10994 17560,10973 17466,10941 17257,10875 17226,10865 17141,10838 17083,10814 16892,10731 16751,10674 16725,10662 16699,10611
@@ -1734,7 +1738,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2022-03-03
+#: last_checked: 2022-03-07
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2064,7 +2068,7 @@ vorhandener Radweg ist abgesperrt	RW0; 8079,16953 8127,16894 8197,16809
 	RW1;RW1 8742,15298 8899,15147
 Verbundsteinpflaster	RW1; 8093,16438 8166,16454 8307,16434 8436,16415 8486,16425
 	RW1; 8486,16425 8436,16415 8307,16434 8166,16454 8093,16438
-alte Gehwegplatten	RW1;RW1 10067,1939 9984,1860 9964,1839 9821,1692 9771,1641 9695,1563
+alte Gehwegplatten, teilweise mit Bord	RW1;RW1 10067,1939 9984,1860 9964,1839 9821,1692 9771,1641 9695,1563
 schmaler Verbundsteinpflasterradweg	RW1; 10067,1939 10150,2006
 	RW1; 10150,2006 10067,1939
 	RW1;RW1 9155,-1017 9276,-973
@@ -3862,11 +3866,17 @@ Grünmarkierung, Poller	RW4; 18626,11742 18696,11754
 alte Gehwegplatten	RW1; 13010,2085 13023,2093 13045,2107 13104,2143
 Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster	RW1; 13104,2143 13367,2322 13418,2357
 Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster	RW2; 13418,2357 13501,2413
-Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster	RW1; 13501,2413 13709,2551 13886,2653 13915,2673 13951,2697 13999,2727 14203,2859 14212,2865 14392,2979
-	RW1; 14392,2979 14212,2865 14203,2859 13999,2727 13951,2697 13915,2673 13886,2653 13709,2551 13501,2413 13418,2357 13367,2322
+Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster	RW1; 13501,2413 13709,2551 13886,2653
+#: by: https://www.bahninfo-forum.de/read.php?9,574461,702779#msg-702779
+#: by: https://www.bahninfo-forum.de/read.php?9,574461,705045#msg-705045
+Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13886,2653 13915,2673 13951,2697 13999,2727 14203,2859 14212,2865 14392,2979
+	RW1; 14392,2979 14212,2865 14203,2859 13999,2727 13951,2697
+Verbundsteinpflaster sowie alte und teils schadhafte Gehwegplatten, teilweise mit Bord	RW1; 13951,2697 13915,2673 13886,2653 13709,2551 13501,2413 13418,2357 13367,2322
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/verkehrsbetriebe-haben-neue-sonderstreifen-auf-der-sonnenallee-und-dem-britzer-damm-beantragt_a257617 (neue Geltungszeiten der Busspur)
 #: confirmed_by: srt
-für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13367,2322 13104,2143 13045,2107 13023,2093 13010,2085
+Verbundsteinpflaster sowie alte Gehwegplatten, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13367,2322 13104,2143 13045,2107
+alte Gehwegplatten	RW1; 13045,2107 13023,2093
+	RW3; 13023,2093 13010,2085
 # 
 # REMOVED --- #: XXX Markierung von Schutzstreifen und Fahrbahnverbreiterung, Rückbau des alten Radweges vvv --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) vvv --- #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.601178.php --- #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20180202 --- #: osm_watch: way id="172243640" version="5" --- #: osm_watch: way id="30084195" version="17" --- #: osm_watch: way id="30084196" version="20" --- #: last_checked: 2018-04-29 vvv --- #: check_frequency: 60d vvv
 # REMOVED (ja, ist so) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4688 (abgesperrt) (vorher: Radwege mit Schäden) --- #: XXX vor Ort anschauen!
@@ -4154,10 +4164,9 @@ Radweg nur aufgemalt	RW1;RW1 7317,12751 7111,12743
 	RW6;RW6 7346,13022 7330,12871 7317,12751
 	RW1;RW1 11762,1040 11767,1007 11777,927 11791,834
 	RW1;RW0 11762,1040 11729,1102
-	RW0;RW1 11791,834 11720,803 11671,750
-	RW1;RW1 11671,750 11634,673 11596,583 11563,501
+	RW1; 11563,501 11596,583 11634,673 11671,750 11720,803 11791,834
 #: note: ... und vor und hinter den Kreuzungen normale Verbundsteinpflasterradwege
-Radweg auf der Fahrbahn hinter den parkenden Autos	RW1; 11563,501 11459,225 11453,208 11447,192 11418,120 11381,28 11364,-16
+Radweg auf der Fahrbahn hinter den parkenden Autos	RW1; 11596,583 11563,501 11459,225 11453,208 11447,192 11418,120 11381,28 11364,-16
 	RW1; 11364,-16 11381,28 11418,120 11447,192 11453,208 11459,225 11563,501
 	RW1; 11364,-16 11335,-90 11242,-332 11207,-413 11176,-489 11125,-613 11077,-714
 	RW3; 11077,-714 11054,-740
@@ -5962,7 +5971,7 @@ breiter asphaltierter Gehweg für Radfahrer frei, die letzten Meter sind benutzun
 	RW6;RW6 10693,2513 10507,2548 10392,2577 10369,2582 10271,2603
 	RW6;RW6 10402,2721 10383,2639 10369,2582
 	RW6;RW6 9762,155 9652,196
-	RW1;RW1 9697,-997 9640,-833
+Verbundsteinpflaster	RW1;RW1 9697,-997 9640,-833
 	RW1; 10793,-161 10835,-145
 	RW6;RW6 10676,299 10866,364
 	RW3;RW3 10955,-769 10831,-808
@@ -6888,7 +6897,7 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26300.pdf (Markierung wird im Zuge der Gleisbauarbeiten dauerhaft gemacht)
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
-#: osm_watch: way id="26708088" version="26"
+#: osm_watch: way id="26708088" version="27"
 #: last_checked: 2022-03-06 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
@@ -7403,8 +7412,11 @@ Gehweg für Radfahrer frei	RW1;RW1 475,1202 587,1230 718,1264 857,1300
 # 
 #: note: Grünmarkierung fehlt an den Bushaltestellen vvv
 Grünmarkierung, Poller	RW3; 12510,6508 12470,6586
-Grünmarkierung	RW3; 12470,6586 12422,6715 12395,6785 12362,6881 12347,6923 12342,6936 12317,7007 12304,7039 12291,7074
-Grünmarkierung	RW4; 12291,7074 12259,7164 12244,7205 12221,7271
+Bushaltestelle	RW5; 12470,6586 12448,6646
+Grünmarkierung, Poller	RW4; 12448,6646 12422,6715
+Grünmarkierung	RW4; 12422,6715 12395,6785
+Grünmarkierung	RW3; 12395,6785 12362,6881 12347,6923 12342,6936
+Grünmarkierung	RW4; 12342,6936 12317,7007 12304,7039 12291,7074 12259,7164 12244,7205 12221,7271
 #: note ^^^
 provisorische Radspuren	RW4;RW4 12185,7381 12221,7271
 # REMOVED --- #: XXX Radweg markiert und ausgeschildert, allerdings ignoriert --- #: last_checked: 2021-12-13 --- #: check_frequency: 7d
@@ -7419,7 +7431,8 @@ Busspur gilt Mo-Fr 7-9 Uhr und 13-18 Uhr	RW5; 3813,10435 3783,10517 3753,10578 3
 	RW6;RW6 18754,9584 18811,9576
 # 
 #: by: https://twitter.com/VIZ_Berlin/status/1462758945030909957
-Gelbmarkierung	RW3;RW3 8971,864 9014,898 9024,906 9058,932 9129,986
+#: confirmed_by: srt
+Gelbmarkierung	RW3;RW3 8950,847 8971,864 9014,898 9024,906 9058,932 9129,986 9155,1006 9165,1014
 # 
 	RW7;RW7 6383,15972 6484,16085 6587,16199
 	RW7;RW7 6530,15849 6383,15972 6244,16096
@@ -7444,4 +7457,8 @@ Bushaltestelle	RW3; 8787,6660 8739,6701
 Tempo 10	RW6;RW6 9423,5227 9478,5041 9482,5012 9507,4838 9486,4748 9494,4658
 # 
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 19171,8280 19333,8165
+# 
+	RW1; 6958,821 6966,880
+# 
+aus dem Nichts beginnender bzw. abgesperrter Radweg	RW0; 12307,964 12102,903 12007,877
 # 

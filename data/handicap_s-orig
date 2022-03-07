@@ -122,7 +122,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: source_id: 2147345858
-#: last_checked: 2021-11-28 (daf)
+#: last_checked: 2022-03-07
 #: next_check: 2023-07-31
 (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10215,-2170 10181,-2174 10161,-2146 10096,-2137
 # 
@@ -607,6 +607,12 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwork 5461,9923 5423,9932 5382,9942
 # 
 ### Neukölln ###
+# 
+#: next_check_id: WESER-2021
+#: XXX: während der Bauarbeiten ist der Radweg nicht befahrbar
+#: last_checked: 2022-03-07
+#: check_frequency: 30d
+Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # 
 # REMOVED (Sperrung noch da, aber die Bürgersteigüberfahrt ist weggefallen) --- #: add_fragezeichen: Dauern die Bauarbeiten an? --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-02-01 --- Maybachufer: Bauarbeiten zwischen Friedelstr. und Liberdastr., teilweise Radfahrerführung über den Bürgersteig	q2::inwork 12085,9778 12250,9691
 # REMOVED --- #: next_check_id: BRAUNSCHWEIGER-2020 --- #: last_checked: 2020-10-24 vvv
@@ -1587,7 +1593,7 @@ Im Gestell: Fußgänger	q1 371,4453 267,4375
 Heinitzweg: Fußgänger	q2 10325,1083 10379,1097
 #: XXX_prog Bordstein ist am südlichen Wendehammer, ansonsten trotzdem q1
 Haewererweg: enge Durchfahrt, niedriger Bordstein	q1 12125,1282 12097,1243
-#: note: keine Schilder (Stand Februar 2022) vvv
+#: note: am westlichen Ende Grünanlagen-Schild, ohne explizite Freigabe oder Verbot für Radfahrer vvv
 (Weichselstr. - Sasarsteig): enger Durchgang	q4+ 12330,8636 12300,8613 12274,8607
 (Weichselstr. - Sasarsteig): Fußgänger	q3 12274,8607 12276,8590 12165,8566
 #: note ^^^
@@ -3362,7 +3368,8 @@ Waldstr.: Fußgänger auf dem asphaltiertern Weg	q2 5384,13555 5390,13616 5417,138
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1655,615
 (Gotlindestr. - Bornitzstr.): Spielplatz	q3 16432,12612 16433,12626 16421,12682 16428,12741
 (Bärbel-Bohley-Ring - Ramlerstr.): einige Fußgänger	q1 9744,15793 9644,15780
-#: XXX_prog: BS am Buckower Damm, ansonsten keine Einschränkung
+#: XXX_prog: BS am Buckower Damm, kann mit ein paar Meter Umweg umfahren werden, ansonsten keine Einschränkung
+#: note: Gehweg für Radfahrer frei, wenig Fußgängerverkehr
 (Christoph-Ruden-Str. - Buckower Damm): Bordstein	q1 12725,1429 12939,1469
 (Alt-Lichtenrade - Töpchiner Weg): einige Fußgänger	q1 10950,-438 11207,-413
 Am Lichtenrader Graben: einige Fußgänger	q1 10695,-1515 10615,-1772 10537,-1943 10513,-1954

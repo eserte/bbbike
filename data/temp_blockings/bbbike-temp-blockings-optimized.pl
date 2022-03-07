@@ -2257,6 +2257,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://berliner-abendblatt.de/2022/02/16/treptower-park-rodung-und-neupflanzung/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1181109.php
 #: by: https://www.berlin.de/imgscaler/ZyeZkkdwQemyWEdhwaVn9BCTIwwfgpHdAz40E0MQ50E/article/L3N5czExLXByb2QvYmEtdHJlcHRvdy1rb2VwZW5pY2svX2Fzc2V0cy9ha3R1ZWxsZXMvcG0vMjAyMi8yMi0wMy0wMV9iYXVtYXNzbmFobWVfLV9wbGFuX3RyZXB0b3dlcl9wYXJrLnBuZw.png
+#: by: https://www.berliner-woche.de/alt-treptow/c-bauen/weitere-arbeiten-im-treptower-park_a337841
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität
 #: last_checked: 2022-03-03
 #: next_check: 2022-05-01
@@ -2869,29 +2870,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.lichtenrade-berlin.de/news/aktuelle-news-internetzeitung/30-blog/blog2019/1485-baubeginn-des-spielplatzes-auf-dem-rehagener-platz
-#: by: https://www.berliner-woche.de/lichtenrade/c-kultur/spielen-auf-dem-rehagener-platz_a278641
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.949210.php (Fertigstellung IV. Quartal 2020)
-#: add_fragezeichen: Bis wann gehen die Bauarbeiten? Wird das Kopfsteinpflaster nach den Bauarbeiten etwas besser sein? vvv
-#: last_checked: 2021-10-03 vvv
-#: check_frequency: 60d vvv
-# REMOVED --- #: next_check: 2020-12-15
-	q4::inwork 10642,-2371 10638,-2452
-# REMOVED (hier fertig)	q4::inwork 10638,-2452 10563,-2432
-	q3::inwork 10563,-2432 10638,-2452
-# REMOVED (hier keine Bauarbeiten mehr) ---	q3::inwork 10638,-2452 10789,-2451
-# REMOVED (hier keine Bauarbeiten mehr) ---	q3::inwork 10638,-2452 10648,-2547
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 3292,
-         'text' => 'Rehagener Platz: Bauarbeiten, Fahrbahn gesperrt, außerdem ist der Kreuzungsbereich Rehagener Str./Kirchbachstr. gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: tempex: (we,sa) T08-T13
 	q4::temp:clock 16801,1791 16988,1571
@@ -3673,7 +3652,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
 #: osm_watch: way id="114381366" version="13"
-#: add_fragezeichen: Ist die Unterführung tatsächlich gesperrt?
+#: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
+#: last_checked: 2022-03-07
+#: check_frequency: 180d
 	2::inwork 9699,-600 9562,-619
 ',
          'from' => undef,
@@ -3751,14 +3732,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: also_indoor: traffic (B)
+#: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-02-05
+#: last_checked: 2022-03-07
 #: check_frequency: 30d
 	q4::inwork 13355,6235 13227,6209 13220,6237
 ',
          'from' => undef,
          'id' => 3496,
-         'text' => 'Jahnstr. und Priesterweg: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Jahnstr. und Priesterweg: Bauarbeiten, Fahrbahn kann gesperrt sein, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4106,19 +4088,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1651244400
        },
-       {
-         'data' => '#: source_id: viz2021:13.55864,52.562688,03.03.2022,14:00
-#: by: https://twitter.com/VIZ_Berlin/status/1498672727842082819
-	2::inwork 20895,17594 20769,17650
-	2::inwork 20769,17650 20891,17572
-',
-         'from' => 1646226000,
-         'id' => 3522,
-         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1181336.php',
-         'text' => 'Wuhletalstr.: Wuhletalbrücke wird abgebrochen, Sperrung, auch für Radfahrer und Fußgänger, vom 3.3.2022 14:00 bis 7.3.2022 12:00',
-         'type' => 'gesperrt',
-         'until' => 1646650800
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022)
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an? Wo genau gilt die Einbahnstraßenregelung?
@@ -4132,6 +4102,24 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => undef,
          'id' => 3523,
          'text' => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: last_checked: 2022-03-07 vvv
+#: next_check: 2022-03-31 vvv
+#: also_indoor: traffic (G,B(beide nur Zeitzer)) vvv
+	q4::inwork; 13326,7291 13368,7300 13476,7330
+	q4::inwork 13326,7291 13325,7210
+#: note: außerdem mögliche Beeinträchtigungen in der Kanner Str.
+	q3::inwork 13476,7330 13373,7426 13341,7423
+#: also_indoor ^^^
+#: next_check ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 3524,
+         'text' => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str.',
          'type' => 'handicap',
          'until' => undef
        }
