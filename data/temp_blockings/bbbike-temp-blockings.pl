@@ -5224,7 +5224,7 @@ EOF
        text  => 'Neubau der Treptower Straße in Neukölln, Sperrung zwischen Kiefholzstraße und Heidelberger Straße (Anliegerverkehr ist frei) (bis Ende 2006) ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 13860,8599 14011,8787 14151,8967
+	q4::inwork 13863,8597 14011,8787 14151,8967
 EOF
      },
      { from  => 1153955394, # 2006-07-27 01:09
@@ -7035,7 +7035,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004418',
        data  => <<EOF,
-	2::inwork 14151,8967 14011,8787 13860,8599
+	2::inwork 14151,8967 14011,8787 13863,8597
 EOF
      },
      { from  => 1171050907, # 2007-02-09 20:55
@@ -9082,7 +9082,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004418',
        data  => <<EOF,
-	2::inwork 13860,8599 14011,8787 14151,8967
+	2::inwork 13863,8597 14011,8787 14151,8967
 EOF
      },
      { from  => 1183412580, # 2007-07-02 23:43
@@ -26815,7 +26815,7 @@ EOF
        type  => 'handicap',
        source_id => '2147341662',
        data  => <<EOF,
-	q3::inwork 13716,8410 13648,8321 13566,8212 13510,8138
+	q3::inwork 13718,8408 13650,8320 13566,8212 13510,8138
 EOF
      },
      { from  => 1503784800, # 2017-08-27 00:00
