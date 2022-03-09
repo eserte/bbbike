@@ -65,7 +65,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausf¸hrungsplanung)
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
-#: last_checked: 2022-03-08
+#: last_checked: 2022-03-09
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-03-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -98,7 +98,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9047,9750 90
 #: by: https://api.fixmyberlin.de/api/plannings/66 (asphaltiert und verbreitert)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
-#: last_checked: 2022-03-04
+#: last_checked: 2022-03-09
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -3067,7 +3067,7 @@ Annemarie-Renger-Str.: Fuﬂg‰nger- und Radfahrerbereich entsteht hier	?::inwork 8
 Lisa-Fittko-Str. (Ziffer 2): Geplante Straﬂe; Qualit‰t? wird das hier auch die Lisa-Fittko-Str. werden, oder eine andere Straﬂe?	?::projected 7569,14217 7652,14257
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_57_5513_5592_online.pdf (Straﬂenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_09_0533_0596_online.pdf (Grundst¸cksnummerierungen)
-#: XXX fehlt in Berlin.coords.data, mˆglicherweise auch PLZ=10557 (Fehler in DPAG-MTB 09/2020?)
+#: XXX fehlt in Berlin.coords.data, mˆglicherweise auch PLZ=10557 (Fehler in DPAG-MTB 09/2020?) (in DPAG-MTB 03/2022 ist es richtig)
 Clara-Mleinek-Str. (Ziffer 3; platz‰hnlich): Geplante Straﬂe; Qualit‰t?	?::projected 7500,14333 7566,14404
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3620,10 +3620,10 @@ Zillestr./Krumme Str.: Planung einer Fahrradstraﬂe, wo genau?	?::projected 3801,
 #: by: https://www.berliner-zeitung.de/mensch-metropole/unter-den-linden-wird-zur-baustelle-in-mitte-geht-eine-aera-zu-ende-li.190324?pid=true
 #: by: https://berliner-abendblatt.de/2022/01/12/unter-den-linden-arbeiten-haben-begonnen/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/boulevard-unter-den-linden-erneut-nur-einspurig_a333677
-#: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022) (mittlerweile bis 11.2.2022) (mittlerweile bis 13.3.2022)
+#: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022) (mittlerweile bis 11.2.2022) (mittlerweile bis 13.3.2022) (mittlerweile bis 7.4.2022)
 #: note: laut rbb bis 11.4.2022
 #: last_checked: 2022-03-06
-#: check_frequency: 21d
+#: check_frequency: 30d
 #: next_check: 2022-07-01
 Unter den Linden: tempor‰re Umgestaltung, eine besondere Fahrspur f¸r Radfahrer entsteht	?::projected 8804,12280 9028,12307 9141,12320 9358,12351 9475,12365 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431
 # 
@@ -4341,6 +4341,7 @@ Stadtpark Steglitz: bleibt die Beleuchtung?	? 6026,4744 5947,4791 5885,4813 5852
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1177103.php
 #: by: https://berliner-abendblatt.de/2022/02/21/platz-in-prenzlauer-berg-wird-nach-gertrud-pincus-benannt/
 # REMOVED (done) --- : XXX auﬂerdem: kann man hier eine Gr¸nfl‰che einzeichnen? --- ein bisschen Gras gibt es...
+#: XXX in Berlin.coords.data aufnehmen, PLZ=10439 laut DPAG-Mitteilungsblatt
 #: last_checked: 2022-03-07 (mapillary)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2022-03-10
@@ -4494,7 +4495,7 @@ Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 #: XXX Tunnelsanierung beginnt am 2020-11-02 und dauert bis Mitte Juli 2021; w‰hrend der Bauarbeiten wird der Radverkehr Richtung Norden ¸ber den Gehweg gef¸hrt
 #: last_checked: 2022-02-12 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2022-06-30
+#: next_check: 2022-07-31
 Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,13973 8732,14098 8607,14253
 # 
 # REMOVED (Evaluierung ist zu Ende) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.741426.php ("Dunkelampel") --- #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/de/testphase.shtml --- #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/download/bgzb_lageplan_ganze_strasse.pdf (wird daf¸r die Ampel an der Nostitzstr. aufgegeben?) --- #: XXX zurzeit gibt es hier nur einen provisorischen Zebrastreifen --- #: last_checked: 2019-09-24 (mapillary) --- #: check_frequency: 60d --- Bergmannstr.: entsteht hier eine weitere Fuﬂg‰ngerampel?	? 9404,9345 9309,9347 9398,9311
@@ -4751,7 +4752,7 @@ Graunstr. 8: Zebrastreifen geplant	?::projected 9976,15366 9996,15400 10026,1538
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: XXX Mittelinsel existiert, Masten stehen schon
 #: priority: #D
-#: last_checked: 2022-03-08
+#: last_checked: 2022-03-09
 #: check_frequency: 30d
 Schlesische Str./Cuvrystr.: Zebrastreifen in Bau	?::inwork 13255,10397 13249,10445 13242,10497
 # 
@@ -5157,7 +5158,7 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8708&date=20220115 (Radfahrstreifen bis zur Kynaststr.?)
 #: XXX w‰hrend der Bauarbeiten Einbahnstraﬂenregelung --- was wird das f¸r den Radverkehr bedeuten? -> siehe temp blockings
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2022-03-06
+#: last_checked: 2022-03-09
 #: check_frequency: 90d
 #: next_check: 2022-04-29
 Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,10738
@@ -5173,7 +5174,7 @@ Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,1073
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023)
 #: source_id: viz2021:13.475017,52.501547,29.04.2021,08:00 (Bauarbeiten bis 29.04.2022)
 #: source_id: viz2021:13.475184,52.501511,29.11.2021,08:00 (Bauarbeiten bis 29.04.2022)
-#: last_checked: 2022-03-06
+#: last_checked: 2022-03-09
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
@@ -5977,7 +5978,7 @@ Vorarlberger Damm: Erneuerung des Radwegs	?::projected; 7227,7352 7101,7198 6991
 #: source_id: viz2021:13.385593,52.465718,08.12.2021,10:21 (bis 28.1.2022) (mittlerweile bis 31.3.2022) (mittlerweile bis 8.3.2022) (inaktiv)
 #: source_id: viz2021:13.385594,52.464277,08.12.2021,10:21 (bis 28.1.2022) (mittlerweile bis 31.3.2022)
 #: source_id: viz2021:13.384119,52.457228,08.03.2022,08:00 (stadteinw‰rts, bis 6.5.2022)
-#: source_id: viz2021:13.38404,52.45584,08.03.2022,08:00 (stadteinw‰rts, bis 6.5.2022)
+#: source_id: viz2021:13.38404,52.45584,08.03.2022,08:00 (stadteinw‰rts, bis 6.5.2022) (inaktiv)
 # REMOVED --- #: note: auﬂerdem existieren zwischen Ringbahnstr. und Alt-Tempelhof tempor‰re Busspuren, f¸r Radfahrer freigegeben
 #: XXX stadtausw‰rts zuerst fertig
 #: last_checked: 2022-03-08
@@ -7166,16 +7167,17 @@ Lichterfelde S¸d: neue Straﬂen im Zuge des Bebauungsplans 6-30?	?::projected 406
 # REMOVED --- #: next_check: 2022-03-01 vvv
 # REMOVED --- Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue Straﬂen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
 #: XXX dieser Abschnitt fehlt im Amtsblatt 52/2020
-#: XXX laut LOR hat die Irmtraud-Morgner-Straﬂe die PLZ=10318
+#: XXX laut LOR hat die Irmtraud-Morgner-Straﬂe die PLZ=10318, best‰tigt in DPAG-Mitteilungsblatt 03/2022
 Planstraﬂe C: genaue Lage, Qualit‰t? geplanter Name: Irmtraud-Morgner-Str.	?::projected 17534,8545 17621,8544
 Planstraﬂe D: genaue Lage, Qualit‰t? geplanter Name: Irmtraud-Morgner-Str.	?::projected 17752,8520 17621,8544
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8882 (Benennung der Samuel-Lewin-Str.)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_24_2053_2104_online.pdf (Straﬂenbenennung: Samuel-Lewin-Str.)
 Planstraﬂe D1: genaue Lage, Qualit‰t? geplanter Name: Samuel-Lewin-Str.	?::projected 17783,8663 17771,8605 17752,8520 17735,8440
-#: XXX laut LOR PLZ=10318
+#: XXX laut LOR und DPAG-Mitteilungsblatt PLZ=10318
 Planstraﬂe E: genaue Lage, Qualit‰t? geplanter Name: Ruth-Baumgarte-Str.	?::projected 17794,8429 17735,8440 17668,8454 17604,8466
+#: XXX laut DPAG-Mitteilungsblatt PLZ=10318
 Planstraﬂe F: genaue Lage, Qualit‰t? geplanter Name: Adolf-Wermuth-Allee	?::projected 17656,8700 17640,8627 17621,8544 17604,8466 17597,8434
-#: XXX laut LOR PLZ=10318
+#: XXX laut LOR und DPAG-Mitteilungsblatt PLZ=10318
 Planstraﬂe G: genaue Lage, Qualit‰t? geplanter Name: An der Waldsiedlung	?::projected 17668,8454 17651,8370
 Fuﬂg‰nger- und Radfahrerbereich: genaue Lage, Qualit‰t?	?::projected 17686,8826 17656,8700
 Parkanlage: genaue Lage? Wird es hier Wege geben?	?::projected 17454,8747 17468,8722 17644,8719 17800,8689 17753,8516 17804,8503 17853,8731 17643,8769 17483,8768 17454,8747
@@ -7497,7 +7499,7 @@ Krampnitz: neue Planstraﬂen	?::projected -14183,5214 -13771,5077
 #: XXX * Ingrid-Reschke-Str. (PLZ=10317 laut LOR)
 #: XXX * Gustav-Tempel-Str. (PLZ=10317 laut LOR)
 #: XXX laut LOR gibt's nun auch eine Hauptstraﬂe in Friedrichshain, PLZ 10317 --- vielleicht ein Zipfel des Baugebiets hier, w‰re aber zu verwirrend, das in Berlin.coords.data einzutragen
-#: last_checked: 2022-03-06
+#: last_checked: 2022-03-09
 #: check_frequency: 360d
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straﬂen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 
@@ -7582,14 +7584,14 @@ Waldstr.: w‰hrend der Bauarbeiten zur neuen Anschlussstelle vermutlich gesperrt	
 #: by: https://www.berliner-woche.de/buckow/c-bauen/stadt-und-land-hat-baufelder-an-gemeinwohlorientierte-dritte-vergeben_a327365 (erster Bauabschnitt soll 2024 fertig sein)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_54_4961_5184_online.pdf (Benennung von Straﬂen, mit Lageplan)
 #: XXX mˆgliche Straﬂennamen (laut bw) (mittlerweile im Amtsblatt best‰tigt) (fehlen alle in Berlin.coords.data):
-#: XXX * An den Buckower Feldern
-#: XXX * Gensweg
-#: XXX * An den Weiden
-#: XXX * Dyrekeweg
-#: XXX * In den Bauerng‰rten
+#: XXX * An den Buckower Feldern (PLZ=12349)
+#: XXX * Gensweg (PLZ=12349)
+#: XXX * An den Weiden (PLZ=12349)
+#: XXX * Dyrekeweg (PLZ=12349)
+#: XXX * In den Bauerng‰rten (PLZ=12349)
 #: XXX sowie die Privatstraﬂen:
-#: XXX * Am M¸hlanger
-#: XXX * Knyphausenweg
+#: XXX * Am M¸hlanger (PLZ=12349)
+#: XXX * Knyphausenweg (PLZ=12349)
 #: osm_watch: way id="28319563" version="15"
 #: last_checked: 2022-03-07
 #: check_frequency: 720d

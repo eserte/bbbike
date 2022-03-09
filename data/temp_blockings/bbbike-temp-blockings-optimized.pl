@@ -3317,7 +3317,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-03-06
+#: last_checked: 2022-03-09
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -4018,24 +4018,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1672502400
        },
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1495626806573076482
-#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1179333.php
-#: by: https://berliner-abendblatt.de/2022/02/23/sturmschaeden-rohrdamm-bleibt-gesperrt/
-#: by: https://www.berliner-woche.de/spandau/c-umwelt/baustadtrat-legt-sturmbilanz-vor-schaden-in-millionenhoehe_a337754
-#: source_id: viz2021:13.262931,52.540599,20.02.2022,04:15 (kein Endedatum) (inaktiv, ersetzt)
-#: also_indoor: traffic (ex-G,H,B)
-#: priority: #A
-#: next_check: 2022-03-11
-	2::inwork 741,14827 778,14713 838,14530
-',
-         'from' => 1645240500,
-         'id' => 3518,
-         'source_id' => 'viz2021:13.26293,52.54059,20.02.2022,04:15',
-         'text' => 'Rohrdamm: zwischen Schuckertdamm und Jugendweg gesperrt, auch für Radfahrer und Fußgänger, voraussichtlich bis 11.3.2022 ',
-         'type' => 'gesperrt',
-         'until' => 1647039599
-       },
+       undef,
        {
          'data' => '#: next_check_id: GNEISENAUKIEZ-2022
 #: also_indoor: traffic (G,B) vvv
@@ -4122,6 +4105,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str.',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 8187,15965 8236,16071 8334,16282 8420,16365
+',
+         'from' => 1646719260,
+         'id' => 3525,
+         'source_id' => 'viz2021:13.374637,52.551773,09.03.2022,07:01',
+         'text' => 'Uferstr.: Bauarbeiten zwischen Bornemannstr. und Exerzierstr., Fahrbahn abschnittsweise gesperrt, vom 09.03.2022 07:01 bis 15.12.2023 17:00 ',
+         'type' => 'handicap',
+         'until' => 1702656000
        }
      
 );
