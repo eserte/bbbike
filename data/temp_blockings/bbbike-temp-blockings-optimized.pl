@@ -196,25 +196,25 @@ push @temp_blocking,
        {
          'data' => '#: note: Sperrung bestätigt von Stefan (s.sms): vvv
 #: note: genauere Uhrzeit von Dieter Heimann
-#: confirmed_by: um 20:30 Uhr steht man vor einem geschlossenen Tor, zumindest an der Nordostseite (2012-08)
+#: confirmed_by: um 20:30 Uhr steht man vor einem geschlossenen Tor, zumindest an der Nordostseite (2012-08); mapillary tagsüber am 2022-03-08 (Frauentag)
 #: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
-Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21683,6946 21572,7051 21505,7129 21491,7182 21490,7197 21484,7326 21475,7500 21497,7597 21540,7630
-Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21475,7500 21341,7487 21153,7393 21050,7341 21019,7340
-Verlängerte Köpenicker Str.: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21291,7048 21345,7000 21359,6983
-(Straße A, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21484,7326 21343,7321 21231,7249
-(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
-(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21153,7393 21207,7280 21231,7249 21175,7212 21243,7135
-(Straße F, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21505,7129 21410,7027 21394,7040 21371,7021 21345,7000
-(Straße G, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21572,7051 21547,7024 21476,6956 21560,6869 21627,6942 21547,7024
+Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21683,6946 21572,7051 21505,7129 21491,7182 21490,7197 21484,7326 21475,7500 21497,7597 21540,7630
+Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21475,7500 21341,7487 21153,7393 21050,7341 21019,7340
+Verlängerte Köpenicker Str.: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21291,7048 21345,7000 21359,6983
+(Straße A, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21484,7326 21343,7321 21231,7249
+(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21490,7197 21427,7174 21366,7120 21294,7189 21243,7135 21219,7111
+(Straße E, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21153,7393 21207,7280 21231,7249 21175,7212 21243,7135
+(Straße F, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21505,7129 21410,7027 21394,7040 21371,7021 21345,7000
+(Straße G, Innovationspark Wuhlheide): Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21572,7051 21547,7024 21476,6956 21560,6869 21627,6942 21547,7024
 (Verlängerte Hämmerlingstr. - Straße G, Innovationspark Wuhlheide)	2::night:weekend 21582,6842 21560,6869
-(Innovationspark Wuhlheide - Wuhlewanderweg): Tor nachts ab 20 Uhr und am Wochenende gesperrt	2::night::weekend 21491,7182 21547,7208
+(Innovationspark Wuhlheide - Wuhlewanderweg): Tor nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night::weekend 21491,7182 21547,7208
 #: tempex ^^^
 #: note: ^^^
 ',
          'from' => undef,
          'id' => 1808,
          'recurring' => 1,
-         'text' => 'Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt',
+         'text' => 'Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -2639,7 +2639,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-03-05
+#: last_checked: 2022-03-10
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2690,7 +2690,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-02-27 vvv
+#: last_checked: 2022-03-10 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4115,6 +4115,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Uferstr.: Bauarbeiten zwischen Bornemannstr. und Exerzierstr., Fahrbahn abschnittsweise gesperrt, vom 09.03.2022 07:01 bis 15.12.2023 17:00 ',
          'type' => 'handicap',
          'until' => 1702656000
+       },
+       {
+         'data' => '	2::inwork 49004,64047 48516,64085 48151,64245
+',
+         'from' => 1645513200,
+         'id' => 3526,
+         'source_id' => '227300117',
+         'text' => 'Herzsprung: Gleisbauarbeiten am Bahnübergang, Vollsperrung vom 23.02.2022 - 8:00 Uhr bis 25.03.2022 18:00 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1648227600
        }
      
 );
