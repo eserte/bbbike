@@ -27930,7 +27930,7 @@ EOF
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
 #: also_indoor: traffic (G(wieder),H(falsch?),B)
 #: priority: #B vvv
-#: last_checked: 2022-01-18 vvv
+#: last_checked: 2022-03-11 vvv
 #: check_frequency: 60d vvv
 	q3::inwork 13391,16436 13630,16629
 Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
@@ -31106,7 +31106,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-03-10 vvv
+#: last_checked: 2022-03-11 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -31305,7 +31305,7 @@ EOF
 #: also_indoor: traffic (H,B)
 #: XXX Stand 2021-07-31 und 2022-01-18: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2022-02-04 (mapillary)
+#: last_checked: 2022-03-11
 #: check_frequency: 30d
 	q3::inwork 14136,17170 13996,16959
 EOF

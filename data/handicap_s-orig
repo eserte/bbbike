@@ -10,7 +10,18 @@
 # 
 ### Friedrichshain ###
 # 
-# REMOVED (vorzeitig beendet) --- #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022 --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-01-24 (kartaview) --- #: check_frequency: 45d --- #: next_check: 2022-04-01 --- Mühsamstr.: Fahrbahn im Kreuzungsbereich Thaerstr. gesperrt	q4::inwork 13844,12900 13818,12897 13838,12884
+#: next_check_id: MUEHSAM-2022
+#: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022
+#: XXX Datensatz in gesperrt-orig beachten!
+#: also_indoor: traffic (ex-G,ex-B)
+#: last_checked: 2022-03-11 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2022-04-01 vvv
+Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Fahrbahn gesperrt	q4::inwork 13838,12884 13818,12897
+Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Einbahnstraßenrichtung gedreht	q4::inwork; 13830,12907 13818,12897
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-ostbahnhof (bis 2025?)

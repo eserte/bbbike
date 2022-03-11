@@ -1236,7 +1236,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 #: osm_watch: way id="111283481" version="14"
 #: source_id: 2147344555 (bis Ende August 2019, Gleisbauarbeiten, inaktiv)
-#: last_checked: 2022-02-04
+#: last_checked: 2022-03-11
 #: check_frequency: 360d
 #: next_check: 2023-06-30
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 15437,16491 15662,16649 15735,16698 15776,16721 15892,16834 15986,16922 16139,17017 16296,17114 16318,17128
@@ -2195,7 +2195,7 @@ Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1167870.php (Baumfällungen bis Ende Februar 2022)
 #: XXX qualitaet: -> Q0 vermutlich
 # REMOVED (-> temp blockings) --- #: last_checked: 2018-06-19 (noch keine Sperrung) --- #: check_frequency: 2d --- Schönstr.: Neubau geplant, Vollsperrung während der Bauarbeiten	?::projected 13391,16436 13630,16629
-#: last_checked: 2022-01-18
+#: last_checked: 2022-03-11
 #: check_frequency: 240d
 Schönstr.: Neubau geplant	?::projected 13630,16629 13794,16773 13870,16837 13974,16924 13996,16959
 # REMOVED (-> temp blockings) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020) --- #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101 --- #: last_checked: 2020-04-15 --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2020-02-01 --- Schönstr.: Neubau geplant	?::projected 13996,16959 14136,17170
@@ -2262,6 +2262,7 @@ Bohnsdorfer Kreisel: Bau von Radspuren (mit Grünmarkierung) in beiden Richtungen
 #: by: https://api.fixmyberlin.de/api/projects/396 (planning)
 #: by: http://www.infravelo.de/projekt/r1-wasserweg-am-spreepark/ (in Planung, 2. Quartal 2021 - 3. Quartal 2021) (mittlerweile: 4. Quartal 2021 - 2. Quartal 2022) (mittlerweile: 1. Quartal 2022 - 2. Quartal 2022) (mittlerweile wieder ab 4. Quartal 2021) (und wieder ab 1. Quartal 2022) (mittlerweile: 3. Quartal 2022 - 4. Quartal 2022)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/isek-lebendiges-zentrum-baumschulenstrasse-koepenicker-landstrasse_bericht.pdf (Erwähnung einer neuen Führung des R1, evtl. hier?)
+#: by: https://www.berliner-woche.de/plaenterwald/c-bauen/schiffsanleger-und-eierhaeuschen-sollen-bis-ende-des-jahres-fertig-werden_a335405 (Umbauarbeiten ab Herbst 2022)
 #: osm_watch: way id="207761374" version="7"
 #: osm_watch: way id="306147854" version="5"
 #: last_checked: 2022-01-16
@@ -3621,7 +3622,7 @@ Zillestr./Krumme Str.: Planung einer Fahrradstraße, wo genau?	?::projected 3801,
 #: by: https://www.berliner-zeitung.de/mensch-metropole/unter-den-linden-wird-zur-baustelle-in-mitte-geht-eine-aera-zu-ende-li.190324?pid=true
 #: by: https://berliner-abendblatt.de/2022/01/12/unter-den-linden-arbeiten-haben-begonnen/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/boulevard-unter-den-linden-erneut-nur-einspurig_a333677
-#: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022) (mittlerweile bis 11.2.2022) (mittlerweile bis 13.3.2022) (mittlerweile bis 7.4.2022) (und wieder 13.3.2022)
+#: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022) (mittlerweile bis 11.2.2022) (mittlerweile bis 13.3.2022) (mittlerweile bis 7.4.2022) (und wieder 13.3.2022) (inaktiv)
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022)
 #: note: laut rbb bis 11.4.2022
 #: last_checked: 2022-03-06
@@ -4416,7 +4417,7 @@ Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
-#: last_checked: 2022-01-15
+#: last_checked: 2022-03-07 (architektur-urbanistik)
 #: check_frequency: 120d
 Kurfürstenstr.: Umbau/Erneuerung der Radverkehrsanlagen	? 6740,10755 6607,10801 6471,10851 6378,10887 6277,10924 6266,10927 6145,10975
 # 
@@ -4938,7 +4939,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3124,26288 3138,26315 3168,
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5379
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1180910.php (Kiezblock ab Sommer 2022)
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/infoveranstaltung-zum-kiezblock_a337805
-#: last_checked: 2022-02-28 (research)
+#: last_checked: 2022-03-11
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2022-07-01
 Bizetstr.: entsteht hier eine Fahrradstraße?	? 13409,15687 13456,15760 13524,15786 13540,15792 13572,15804 13665,15840 13867,15915 14056,15985 14248,16058 14295,16076 14552,16171
@@ -5042,7 +5043,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
 #: osm_watch: way id="295627704" version="14"
-#: last_checked: 2022-02-27
+#: last_checked: 2022-03-11
 #: check_frequency: 90d
 # REMOVED (hier ist nichts) --- #: next_check: 2021-03-01
 Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14168,12328 14152,12344 14100,12354 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
@@ -5102,7 +5103,7 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: XXX mittlerweile existiert ein temporärer Zebrastreifen mit Gelbmarkierung, vielleicht wegen der Bauarbeiten in der Berliner Allee errichtet?
 #: priority: #D
-#: last_checked: 2022-02-04
+#: last_checked: 2022-03-11
 #: check_frequency: 30d
 Meyerbeerstr./Smetanastr.: wird hier ein Zebrastreifen gebaut?	?::projected 14103,15916 14095,15891 14115,15875
 # 
@@ -5242,7 +5243,7 @@ Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (kleine Protektion, Realisierung 2022, nach den BWB-Bauarbeiten, die möglicherweise erst im Oktober 2022 beginnen)
 #: by: https://www.infravelo.de/projekt/herzbergstrasse/ (1. Quartal 2023 - 4. Quartal 2023)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Fertigstellung 2022)
-#: last_checked: 2022-01-19
+#: last_checked: 2022-03-11
 #: check_frequency: 180d
 #: next_check: 2022-12-31
 Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
@@ -5259,7 +5260,7 @@ Lindenberger Str.: Was passiert hier bezüglich einer Radweginfrastruktur? Vielle
 #: check_frequency: 90d
 Eggersdorfer Str.: Asphaltierung	?::projected 17255,11077 17322,11296
 #: XXX wird hier eine offizielle Führung von der Kreuzung Malchower Str./Wartenberger Str. realisiert? (dann könnte man den handicap-Eintrag (Bordsteinkante) entschärfen)
-#: last_checked: 2021-11-24
+#: last_checked: 2022-03-11
 #: check_frequency: 90d
 Seefelder Str.: Radweganbindung	?::projected 17362,16189 17383,16197
 #: by: ^^^
@@ -6125,7 +6126,7 @@ Osdorfer Str.: neue parallele Straße wird gebaut, alte Straße wird zum Radweg	?:
 #: priority: #D
 #: osm_watch: way id="8150996" version="8"
 #: osm_watch: way id="4687336" version="18"
-#: last_checked: 2022-02-04
+#: last_checked: 2022-03-11
 #: check_frequency: 120d
 Stedingerweg: wird es hier Maßnahmen gegen den MIV-Durchgangsverkehr geben?	? 13636,14900 13733,14813 13908,14654 13933,14622 13947,14513
 # 
@@ -7199,7 +7200,7 @@ Parkanlage: genaue Lage? Wird es hier Wege geben?	?::projected 17454,8747 17468,
 #: by: https://portal1917.webcam-profi.de/ (Webcam)
 #: XXX außerdem: bleibt der nach Süden verlaufende Abzweig der Plauener Str. erhalten?
 #: osm_watch: way id="914159830" version="4"
-#: last_checked: 2021-12-16 (webcam)
+#: last_checked: 2022-03-11 (webcam)
 #: check_frequency: 180d
 Plauener Str.: Verbindungsstück wird gebaut	?::projected 17531,14923 17638,14951
 # 
@@ -7624,8 +7625,8 @@ Bebauungsplan 8-84 (Koppelweg): neue Straße geplant	?::projected 11987,4329 1204
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_45_5341_5412_online.pdf (Straßenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_49_5627_5702_online.pdf (Grundstücksnummerierungen)
 #: XXX fehlt bei Berlin.coords.data, PLZ=12683 (laut DPAG-Mitteilungsblatt und laut LOR)
-#: osm_watch: way id="865780927" version="9"
-#: last_checked: 2021-12-27
+#: osm_watch: way id="865780927" version="10"
+#: last_checked: 2022-03-11 (osm)
 #: check_frequency: 60d
 Kleiner Parkweg: neue "fußläufige Erschließung" entsteht hier; Qualität? Für Radfahrer benutzbar? Ausgeschildert?	?::inwork 20779,11801 20808,11993
 # 
@@ -8126,7 +8127,7 @@ Bebauungsplan 9-53 (Friedrichshagener Str. (Köpenick)): vermutlich entstehen hie
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9041
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1165332.php (Baugenehmigungen, evtl. für dieses oder das benachbarte Grundstück?)
 #: osm_watch: way id="89803856" version="15"
-#: last_checked: 2021-02-23
+#: last_checked: 2022-03-06 (architektur-urbanistik)
 #: check_frequency: 720d
 Bebauungsplan 11-118 VE (Landsberger Allee, Weiße Taube): werden hier Straßen oder Wege entstehen?	?::projected 17633,14857 17633,14707 17763,14588
 # 
@@ -8320,6 +8321,7 @@ Bebauungsplan XXII-39-1 VE: neue Straßen könnten hier entstehen	?::projected 209
 #: next_check_id: RBAHNHOFKOEPENICK-2022
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-naechster-halt-koepenick-ein-neuer-regionalbahnhof-fuer-den-osten-berlins-li.211852 (Fertigstellung Juli 2027)
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/deutsche-bahn-startet-im-fruehjahr-2023-mit-dem-ausbau-des-s-bahnhofs-koepenick_a336512
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_10_0597_0656_online.pdf (Bekanntmachung der Planfeststellung)
 #: next_check: 2027-07-31
 Regionalbahnhof Köpenick	?::projected 22530,6100
 # 

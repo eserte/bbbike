@@ -1028,7 +1028,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-03-10
+#: last_checked: 2022-03-11
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3730,6 +3730,8 @@ Wildrosenweg: Asphalt	Q0- 20715,12040 20708,11918 20694,11811
 Schulstr. (Biesdorf): Kopfsteinpflaster	Q2 20016,11980 20173,11971 20275,11960
 Schulstr. (Biesdorf): mäßiger Asphalt	Q1 20275,11960 20324,11952 20368,11937
 Schulstr. (Biesdorf): schlechtes Kopfsteinpflaster	Q3 20413,11953 20542,11941 20599,11938
+#: XXX evtl. ist die Qualität nach den Bauarbeiten besser geworden
+#: priority: #C
 Schulstr. (Biesdorf): Asphalt, Schlaglöcher	Q1 20599,11938 20708,11918 20738,11915
 (Schulstr. - Braunsdorfstr.): Beton	Q0- 20413,11953 20396,11983
 # REMOVED #: next_check_id: WALDBACHERWEGBRUECKE-2020 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_30_3845_4008_online.pdf (Einziehung von Straßenland) --- #: XXX wie sieht die Wegoberfläche nach den Bauarbeiten aus? Außerdem wird der Weg vermutlich bis zum Waldbacher Weg verlängert. --- #: last_checked: 2020-06-22 --- #: next_check: 2020-08-13
@@ -4367,7 +4369,7 @@ Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8469&date=20200814 (Investitionsplanung 2021-2025)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058
 #: XXX wann wird hier saniert?
-#: last_checked: 2021-04-01 (mapillary)
+#: last_checked: 2022-03-11
 #: check_frequency: 360d
 Elsastr. (Alt-Hohenschönhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16217,16208 16154,16227 16075,16249 15997,16272 15956,16299
 Elsastr. (Alt-Hohenschönhausen): Asphalt	Q0 15956,16299 15927,16344
@@ -4388,7 +4390,8 @@ Otto-Brahm-Str.: Asphalt	Q0- 14321,15636 14282,15746 14365,15778 14400,15787 144
 (Gounodstr. - Otto-Brahm-Str.): Asphalt	Q0 14433,15908 14451,15873 14383,15848 14349,15825 14365,15778
 Chopinstr.: Asphalt	Q0 14653,15738 14440,15682 14321,15636 14195,15604
 Solonplatz: Kopfsteinpflaster	Q2 14286,15962 14248,16058
-Smetanastr.: Kopfsteinpflaster	Q2 14015,16103 14056,15985 14095,15891
+Smetanastr.: Kopfsteinpflaster	Q2 14015,16103 14056,15985
+Smetanastr.: Kleinsteinpflaster	Q2+ 14056,15985 14095,15891
 Smetanastr.: Asphalt	Q0 14095,15891 14125,15796 14133,15773 14195,15604
 Meyerbeerstr.: Asphalt	Q0 14576,16069 14484,16035 14411,16008 14330,15978
 # REMOVED --- #: XXX Asphaltierungsarbeiten laufen, wie sieht die Qualität danach aus? --- #: last_checked: 2021-12-16
@@ -30718,4 +30721,5 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 8114,722
 Einmündungsbereich mit Kopfsteinpflaster	Q2 8482,536
 Kreuzungsbereich asphaltiert	Q0 8380,5766
 Kreuzungsbereich asphaltiert	Q0 8385,5907
+Kreuzungsbereich asphaltiert	Q0 13904,15818
 #: ignore ^^^
