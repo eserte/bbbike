@@ -2084,6 +2084,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 10181,4181
 	X 8968,5554
 	X 8206,6774
+#: note: Anforderungsampel
 	F 5070,4770
 	X 5141,5744
 	X 6477,6311
@@ -3055,7 +3056,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2022-02-12 (mapillary)
+#: last_checked: 2022-03-12 (daf)
 #: check_frequency: 90d
 #: next_check: 2022-07-31
 	X::inwork 8732,14098

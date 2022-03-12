@@ -4041,7 +4041,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maßmannstr.
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-02-27
+#: last_checked: 2022-03-12
 	q3::inwork 5020,6434 5269,6305
 ',
          'from' => undef,

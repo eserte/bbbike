@@ -901,6 +901,7 @@ Straßenbahntrasse, Mittelstreifen	3nocross::ignrte 17400,17790 17482,17844 17601
 Eythstr. (Wendeschleife)	1 7682,5963 7615,5938 7606,5939 7618,5960 7638,5967 7682,5963
 Röblingstr.	1 7598,5926 7606,5939
 Röblingstr.	1 7615,5938 7598,5926
+Birkbuschstr. - Wolfensteindamm	1 4794,5161 4810,5134 4822,5114
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2069,9 +2070,11 @@ Hasenheide, am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordstei
 Columbiadamm -> Hasenheide, westlicher Weg: unbequem zu überqueren (Bordsteine)	3::igndisp 10911,8457 11225,8350 11230,8402
 Hasenheide, westlicher Weg -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 11230,8402 11225,8350 11266,8336
 Mittelstreifen	3nocross::ignrte 4796,5129 4794,5161 4766,5208 4745,5283
+Wolfensteindamm -> Wolfensteindamm: Mittelstreifen	3::igndisp 4810,5134 4794,5161 4796,5129
 Wolfensteindamm -> Fronhoferstr.: Mittelstreifen	3::igndisp 4794,5161 4766,5208 4677,5121
 Fronhoferstr. -> Wolfensteindamm: Mittelstreifen	3::igndisp 4677,5121 4766,5208 4745,5283
 Metallgitter auf dem Mittelstreifen	3nocross::ignrte 4796,5129 4822,5114 4846,5069 4879,5017
+Birkbuschstr. -> Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3::igndisp 4796,5129 4822,5114 4810,5134
 Birkbuschstr. -> Oberlinstr.: Metallgitter auf dem Mittelstreifen	3::igndisp 4879,5017 4846,5069 4732,4939
 Oberlinstr. -> Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3::igndisp 4732,4939 4846,5069 4822,5114
 Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3nocross::ignrte 4772,5069 4692,4997 4675,4983 4517,4853

@@ -78,7 +78,7 @@ Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,1
 Weserstr.: asphaltiert	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12328,9117
 #: next_check_id: WESER-2021
 #: XXX: während der Bauarbeiten ist der Radweg (schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität, Q2+) nicht befahrbar
-#: last_checked: 2022-03-07
+#: last_checked: 2022-03-12
 #: check_frequency: 90d
 Weserstr.: mäßiges, teilweise schlechtes Kopfsteinpflaster	Q2-; 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+; 12590,8977 12531,9009 12480,9037 12402,9080 12328,9117
@@ -172,7 +172,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2022-02-27
+#: last_checked: 2022-03-12
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -184,7 +184,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2022-03-05 vvv
+#: last_checked: 2022-03-12 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -494,7 +494,7 @@ Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/zu-eng-zu-gefaehrlich-gasse-fuer-radler-an-der-oderstrasse-geplant-d130109.html (Realisierung 2020)
 #: by: https://api.fixmyberlin.de/api/plannings/212 (Asphaltierung + Fahrradstraße, bis zum Eingang Tempelhofer Feld)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf
-#: last_checked: 2021-12-25
+#: last_checked: 2022-03-12
 #: check_frequency: 180d
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
 #: note: Parkstreifen gepflastert
@@ -1563,7 +1563,7 @@ Normannenstr.: Kopfsteinpflaster	Q2; 16276,12273 16227,12280
 Rüdigerstr. (Lichtenberg): Asphalt	Q0 17471,12243 17441,12247 17314,12265 17218,12281 17184,12286 17122,12295 17056,12304 17020,12309 16918,12325 16820,12339
 Barbarossastr.: Kopfsteinpflaster	Q2 7122,9517 7002,9526
 Prühßstr.: Beton	Q0- 8780,4054 8962,4096
-Prühßstr.: Kopfsteinpflaster	Q2 8962,4096 9106,4114 9346,4144
+Prühßstr.: Kopfsteinpflaster	Q2- 8962,4096 9106,4114 9346,4144
 Prühßstr.: schlechtes Kopfsteinpflaster	Q3 9346,4144 9465,4173
 Prühßstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 9465,4173 9580,4201 9869,4271
 Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
@@ -3051,7 +3051,7 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
 #: osm_watch: way id="30893534" version="20"
-#: last_checked: 2022-03-08
+#: last_checked: 2022-03-12
 #: check_frequency: 180d
 #: next_check: 2023-12-31
 Am Teltowkanal: Asphalt	Q0 7911,4465 7769,4315
@@ -7631,6 +7631,11 @@ Slabystr.: Asphalt	Q0 24117,13043 24317,13006 24462,12975
 Rudolf-Virchow-Str.: Asphalt	Q0 23948,12879 24187,12836
 Wernerstr.: Asphalt mit einigen Kopfsteinpflasterabschnitten	Q1- 24230,12733 24365,12712 24459,12664
 Hirtschulzstr.: schlechtes Kopfsteinpflaster	Q3 24316,12566 24195,12558 24077,12544 24018,12541
+#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=A52708EE-CE1B-417C-AD65-05C9975C940D&plugid=%2Fingrid-group%3Aige-iplug-be&docid=A52708EE-CE1B-417C-AD65-05C9975C940D
+#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/UL03_Anlage03_Lageplan_Bl_1.pdf
+#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/UL01_Anlage01_Erlaeuterungsbericht.pdf
+#: XXX Straßenbahnhaltestelle soll auf die Westseite verlegt werden; gemeinsamer Rad- und Gehweg bis zur Schöneicher Str.; Kopfsteinpflaster wird durch Asphalt ersetzt; ggfs. eine Signalisierung für die Straßenbahn
+#: next_check: 2023-06-30
 Dahlwitzer Landstr.: Kopfsteinpflaster	Q2; 25601,6158 25584,6029
 Biesterfelder Str.: Asphalt	Q0 16942,16174 17010,16349 17102,16464
 Klettwitzer Str.: Asphalt	Q0 18875,16872 18782,16597
@@ -12468,6 +12473,7 @@ Weichselstr. - Sasarsteig: Mosaikpflaster	Q1 12274,8607 12276,8590 12165,8566
 #: check_frequency: 150d
 (Weg am Kienhorstgraben): unbefestigter Weg, Schotter	Q2 3723,17979 3706,17931
 Hornstr.: Asphalt mit einigen Schäden	Q0- 8779,9812 8980,9751
+Birkbuschstr. - Wolfensteindamm: Asphalt	Q0 4822,5114 4810,5134 4794,5161
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13855,7 +13861,7 @@ Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: note: "fester Sandweg, Q0" von lepiorz...:
 #: XXX wird dieser Abschnitt vielleicht auch asphaltiert?
 #: osm_watch: way id="115724952" version="10"
-#: last_checked: 2021-10-10 (mapillary)
+#: last_checked: 2022-03-12
 #: check_frequency: 180d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
 #: corrected_by: srt (Parkweg -> Asphalt, wahrscheinlich neu gemacht)
@@ -30560,6 +30566,7 @@ Kreuzungsbereich gepflastert	Q2 17091,12105
 Kreuzungsbereich asphaltiert	Q0- 16993,12118
 Kreuzungsbereich asphaltiert	Q0 11776,8253
 Kreuzungsbereich asphaltiert	Q0 11795,8160
+Kreuzungsbereich mit Kopfsteinpflaster	Q2- 11661,8131
 Kreuzungsbereich asphaltiert	Q0 11833,7980
 Einmündungsbereich mit Kopfsteinpflaster	Q2 6318,1484
 Kreuzungsbereich asphaltiert	Q0 6441,1444
@@ -30722,4 +30729,7 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 8482,536
 Kreuzungsbereich asphaltiert	Q0 8380,5766
 Kreuzungsbereich asphaltiert	Q0 8385,5907
 Kreuzungsbereich asphaltiert	Q0 13904,15818
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 10251,9979
+#: note: nur Fahrbahn
+Einmündungsbereich mit Kopfsteinpflaster	Q2 10313,10084
 #: ignore ^^^

@@ -32277,7 +32277,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2021/01/verkehrsvorschau27012021/
-	2::inwork 14196,7086 14233,7086 14251,7096 14323,7080 14310,7022
+	2::inwork 14196,7086 14223,7084 14235,7100 14323,7080 14310,7022
 EOF
      },
      { from  => undef, # 
@@ -34647,7 +34647,7 @@ EOF
 #: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maﬂmannstr.
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-02-27
+#: last_checked: 2022-03-12
 	q3::inwork 5020,6434 5269,6305
 EOF
      },

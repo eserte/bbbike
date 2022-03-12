@@ -331,7 +331,7 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125
 	RW7;RW7 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12328,9117
 #: next_check_id: WESER-2021
 #: XXX während der Bauarbeiten Radweg aufgehoben (und möglicherweise entstehen hier auch keine neuen Radwege mehr), Einbahnstraße Richtung Westen, für Radfahrer nicht mehr offen
-#: last_checked: 2022-03-07
+#: last_checked: 2022-03-12
 #: check_frequency: 90d
 	RW0;RW0 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 	RW1;RW1 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
@@ -6783,7 +6783,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2022-03-05
+#: last_checked: 2022-03-12
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -7042,7 +7042,8 @@ asphaltiertes Straßenbahnkap	RW1; 14161,11930 14097,11949
 	RW6;RW6 8167,13457 8174,13390 8241,13393 8281,13394 8302,13430 8293,13527
 	RW6;RW6 8083,11381 7943,11431
 	RW3;RW3 -7365,15306 -7155,15233 -6888,15139 -6861,15129
-Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
+Busspur gilt Mo-Fr 6-8 und 14-18 Uhr	RW5; 4879,5017 4846,5069
+Busspur ist immer gültig	RW5; 4846,5069 4822,5114
 # 
 niedrige Protektionselemente, vereinzelte Poller	RW4; 9404,10250 9239,10313 9158,10342 9028,10371 8995,10370
 Bushaltestelle	RW5; 8995,10370 8953,10366 8919,10360
@@ -7104,7 +7105,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="21"
 #: osm_watch: way id="335487059" version="19"
-#: last_checked: 2022-03-05 vvv
+#: last_checked: 2022-03-12 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-01-01 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
@@ -7134,7 +7135,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: by: https://berliner-abendblatt.de/2021/12/18/pop-up-radwege-bleiben-dauerhaft/
-#: last_checked: 2022-03-08 vvv
+#: last_checked: 2022-03-12 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -7276,7 +7277,7 @@ asphaltierter gemeinsamer Geh- und Radweg, sehr breit	RW2;RW8 21115,271 21286,44
 Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 # 
 #: note: Tempelhofer Damm, Richtung Süden
-	RW4; 9249,6642 9254,6542 9253,6484 9250,6414 9246,6364 9245,6352 9221,6179 9212,6096 9192,5930 9176,5803 9158,5673 9161,5535
+	RW4; 9249,6642 9254,6542 9253,6484 9250,6414 9246,6364 9245,6352 9221,6179 9212,6096 9192,5930 9176,5803 9158,5673 9161,5535 9176,5413 9188,5333 9196,5272
 # 
 #: next_check_id: TEDAMM-2021
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1069651.php (14.04. bis 20.06.2021 sowie 11.08. bis 07.10.2021)
@@ -7302,12 +7303,13 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: XXX: Werden die provisorischen Radspuren wieder entfernt? vvv
 #: priority: #A vvv
-#: last_checked: 2022-03-08 vvv
+#: last_checked: 2022-03-12 vvv
 #: check_frequency: 45d vvv
 # REMOVED --- #: next_check: 2021-10-18 vvv
 # REMOVED --- #: valid: -20211007 vvv
-#: osm_watch: way id="31773580" version="14"
-provisorischer Radstreifen	RW4; 9161,5535 9176,5413 9188,5333 9196,5272 9206,5193
+# REMOVED --- #: osm_watch: way id="31773580" version="14"
+#: osm_watch: way id="111048866" version="12"
+provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9196,5272 9206,5193
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672
 wegen Hochbauarbeiten nur fängt die Radspur erst nach ca. 70m an	RW4; 9275,4672 9294,4536
 #: osm_watch: way id="28680188" version="18"

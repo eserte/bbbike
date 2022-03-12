@@ -1379,6 +1379,7 @@ Falkenberger Chaussee: Straßenbahntrasse, Mittelstreifen	3nocross 17400,17790 17
 Eythstr. (Wendeschleife)	1 7682,5963 7615,5938 7606,5939 7618,5960 7638,5967 7682,5963
 Röblingstr.	1 7598,5926 7606,5939
 Röblingstr.	1 7615,5938 7598,5926
+Birkbuschstr. - Wolfensteindamm	1 4794,5161 4810,5134 4822,5114
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -2074,7 +2075,7 @@ Karl-Marx-Allee: Mittelstreifen	3nocross 11226,12945 11289,12908 11589,12768 116
 Columbiadamm: unbequem zu überqueren (Bordsteine)	3nocross 10796,8498 10911,8457 11225,8350 11266,8336
 #: by: Axel Schumacher:
 Wolfensteindamm: Mittelstreifen	3nocross 4796,5129 4794,5161 4766,5208 4745,5283
-# REMOVED (neue Ampel) --- #: by: Wolfgang Schmidt: vvv --- Birkbuschstr.: unbequem zu passieren	3 4829,5173 4796,5129 4772,5069 --- Birkbuschstr.: unbequem zu passieren	3 4772,5069 4792,5097 4796,5129 4827,5140 4829,5173 --- Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4829,5173 4796,5129 4822,5114 4846,5069 --- #: by: ^^^
+# REMOVED (neue Ampel) --- #: by: Wolfgang Schmidt: vvv --- Birkbuschstr.: unbequem zu passieren	3 4829,5173 4796,5129 4772,5069 --- Birkbuschstr.: unbequem zu passieren	3 4772,5069 4792,5097 4796,5129 4810,5134 4827,5140 4829,5173 --- Birkbuschstr.: unbequem zu passieren, aber Ausweichen auf linken Gehweg möglich	3 4829,5173 4796,5129 4822,5114 4846,5069 --- #: by: ^^^
 #: by: Kai Brueggemann [AM] vvv
 Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3nocross 4796,5129 4822,5114 4846,5069 4879,5017
 Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3nocross 4772,5069 4692,4997 4675,4983 4517,4853
@@ -3383,7 +3384,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: SIEGFRIED-2021
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/#post-15273 (Bau einer Apartmentanlage, vielleicht wird dann die Straße öffentlich sein?)
-#: last_checked: 2022-02-09 (architektur-urbanistik)
+#: last_checked: 2022-03-12
 #: check_frequency: 150d
 (Verlängerung der Siegfriedstr.): während der Hochbauarbeiten gesperrt	2::inwork 11664,6796 11488,6781
 # 
@@ -3532,7 +3533,7 @@ Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11923,11881 11940,1
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung)
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht außerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht
 #: osm_watch: way id="308312347" version="3"
-#: last_checked: 2022-02-26
+#: last_checked: 2022-03-12 (daf)
 #: check_frequency: 90d
 #: next_check: 2022-08-15
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
@@ -3897,7 +3898,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 #: osm_watch: way id="588431071" version="5"
 #: osm_watch: way id="696227207" version="3"
 #: add_fragezeichen: Bis wann genau geht die Sperrung?
-#: last_checked: 2022-03-08
+#: last_checked: 2022-03-12
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
