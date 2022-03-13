@@ -179,11 +179,11 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: by: https://abendblatt-berlin.de/2021/04/05/berlin-wedding-geisterhaus-an-der-burgsdorfstrasse-soll-abgerissen-werden/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
 #: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
-#: osm_watch: way id="549316654" version="14"
+#: osm_watch: way id="549316654" version="15"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
-#: last_checked: 2022-02-14 (osm)
+#: last_checked: 2022-03-12 (osm)
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -476,7 +476,7 @@ Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwor
 #: note: auch als "Verlängerte Brückenstraße" bezeichnet
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2022-03-03
+#: last_checked: 2022-03-13
 #: next_check: 2022-04-01
 # REMOVED --- #: valid: -20220401
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
@@ -860,10 +860,11 @@ Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677220#post677220
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2021/pressemitteilung.1119011.php (Erwähnung)
 #: by: https://dstrctberlin.com/de/2021/10/18/auf-gute-nachbarschaft/
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/dstrctberlin-ist-bald-bezugsfertig_a338513
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="10"
 #: priority: #C
-#: last_checked: 2022-02-10
+#: last_checked: 2022-03-13 (bw)
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -1580,7 +1581,10 @@ Uferweg am Tegeler Hafen: Fußgänger	q1 1259,20303 1349,20345 1534,20421 1569,204
 (Uferweg am Tegeler Hafen - Berliner Str.): Fußgänger	q1 1863,20478 1929,20501
 # REMOVED --- Uferweg am Tegeler Hafen: Fußgänger	q1 1863,20478 1826,20492 1761,20539
 (Berliner Str. - Tegeler Hafen): Fußgänger	q1 1872,20683 1741,20566
-(Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20566 1721,20603 1697,20623 1691,20638
+(Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20566 1721,20603
+#: note: am Mühlensteg explizit: Fußgänger, Radfahrer absteigen
+(Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q3 1721,20603 1697,20623
+(Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1697,20623 1691,20638
 # REMOVED (normale Straße) --- (Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1687,20645 1667,20665 1630,20731
 (Brücke über den Tegeler Fließ): eng, Fußgänger	q3 2371,21524 2352,21559
 Egidysteg: eng, Fußgänger	q3 3094,22216 3134,22153
@@ -2990,7 +2994,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="9"
-#: last_checked: 2021-12-17
+#: last_checked: 2022-03-13
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-09-02
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18634,5484 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
@@ -3877,7 +3881,8 @@ Heidelberger Platz [Bürgersteig]: einige Fußgänger	q2 4173,7993 4121,8016
 (IKEA/Bauhaus-Zufahrt): Parkplatzverkehr	q2 8210,7024 8221,7018 8218,6983 8232,6972
 (IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8221,7018 8211,7034 8077,7040 8053,7061 8057,7080 8078,7101 8057,7163 8020,7185 7924,7185 7834,7131 7823,7083 7816,6953 7845,6930 7968,6927 7991,6938 8071,7006 8078,7029 8077,7040
 (IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8078,7029 8210,7024
-Sterndamm, zur Nebenfahrbahn: Gehweg	q4 17648,5338 17697,5347
+#: XXX_prog BS Bordstein am Wendehammer, ansonsten q3-
+Sterndamm, zur Nebenfahrbahn: Gehweg, Bordstein	q4 17648,5338 17697,5347
 (Eichhornstr. - Reichpietschufer): einige Fußgänger	q2 8289,11205 8234,11173
 Theaterufer: einige Fußgänger	q1 8289,11205 8261,11015
 Kapellenweg: eng, Fußgänger	q3 -4259,11267 -4437,11256 -4560,11283

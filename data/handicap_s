@@ -493,7 +493,9 @@ Pankeweg: Fußgänger	q1 8303,15298 8260,15226 8266,15134
 Uferweg am Tegeler Hafen: Fußgänger	q1 1259,20303 1349,20345 1534,20421 1569,20408 1610,20385 1655,20388 1756,20405 1858,20431 1863,20478
 (Uferweg am Tegeler Hafen - Berliner Str.): Fußgänger	q1 1863,20478 1929,20501
 (Berliner Str. - Tegeler Hafen): Fußgänger	q1 1872,20683 1741,20566
-(Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20566 1721,20603 1697,20623 1691,20638
+(Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20566 1721,20603
+(Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q3 1721,20603 1697,20623
+(Tegeler Hafen - An der Mühle): Fußgänger, teilweise eng	q2 1697,20623 1691,20638
 (Brücke über den Tegeler Fließ): eng, Fußgänger	q3 2371,21524 2352,21559
 Egidysteg: eng, Fußgänger	q3 3094,22216 3134,22153
 (Egidysteg - Mühlenfeldstr.): Fußgänger	q1 3118,22294 3094,22233 3094,22216
@@ -2200,7 +2202,7 @@ Heidelberger Platz [Bürgersteig]: einige Fußgänger	q2 4173,7993 4121,8016
 (IKEA/Bauhaus-Zufahrt): Parkplatzverkehr	q2 8210,7024 8221,7018 8218,6983 8232,6972
 (IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8221,7018 8211,7034 8077,7040 8053,7061 8057,7080 8078,7101 8057,7163 8020,7185 7924,7185 7834,7131 7823,7083 7816,6953 7845,6930 7968,6927 7991,6938 8071,7006 8078,7029 8077,7040
 (IKEA/Bauhaus-Parkplatz): Parkplatzverkehr	q1 8078,7029 8210,7024
-Sterndamm, zur Nebenfahrbahn: Gehweg	q4 17648,5338 17697,5347
+Sterndamm, zur Nebenfahrbahn: Gehweg, Bordstein	q4 17648,5338 17697,5347
 (Eichhornstr. - Reichpietschufer): einige Fußgänger	q2 8289,11205 8234,11173
 Theaterufer: einige Fußgänger	q1 8289,11205 8261,11015
 Kapellenweg: eng, Fußgänger	q3 -4259,11267 -4437,11256 -4560,11283
