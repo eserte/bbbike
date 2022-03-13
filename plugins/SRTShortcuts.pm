@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.07;
+$VERSION = 2.08;
 
 use File::Glob qw(bsd_glob);
 
@@ -824,6 +824,10 @@ EOF
 		     $Tk::WidgetDump::ref2widget{$main::c} = $main::c; # XXX hack
 		     $wd->show_bindings($main::c);
 		 },
+		],
+		'-',
+		[Button => "Center to current Garmin's device position",
+		 -command => sub { center_garmin_device_position() },
 		],
 	       ]
 	      ],
@@ -3598,6 +3602,31 @@ sub save_mapillary_done_file {
 
 ######################################################################
 
+sub center_garmin_device_position {
+    require GPS::BBBikeGPS::MountedDevice;
+    require Strassen::GPX;
+    GPS::BBBikeGPS::MountedDevice->maybe_mount
+	    (sub {
+		 my $dir = shift;
+		 my $pos_file = "$dir/Garmin/.Position.gpx";
+		 if (!-r $pos_file) {
+		     main::status_message("File $pos_file not available", "error");
+		     return;
+		 }
+		 my $s = Strassen::GPX->new;
+		 $s->gpx2bbd($pos_file);
+		 $s->init;
+		 my $r = $s->next;
+		 my $sxy = $r->[Strassen::COORDS()]->[0];
+		 main::status_message("Found coordinate in $pos_file: bbbike coordinates $sxy", "info");
+		 main::mark_point(-coords => [[[ main::transpose(split /,/, $sxy) ]]],
+				  -clever_center => 1,
+				  -inactive => 1,
+				 );
+	     });
+}
+
+######################################################################
 1;
 
 __END__
