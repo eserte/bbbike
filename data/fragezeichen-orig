@@ -65,7 +65,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausführungsplanung)
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
-#: last_checked: 2022-03-13
+#: last_checked: 2022-03-14
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-03-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -4685,7 +4685,7 @@ Piesporter Str./Feldtmannstr.: Zebrastreifen geplant	?::projected 15215,17630 15
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2022-03-07 (mapillary)
+#: last_checked: 2022-03-13 (mapillary)
 #: check_frequency: 30d
 Pistoriusstr./Heinersdorfer Str.: Zebrastreifen in Bau	?::inwork 12263,16857 12258,16873 12275,16882
 # 
@@ -4753,12 +4753,7 @@ Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 1
 #: check_frequency: 90d
 Graunstr. 8: Zebrastreifen geplant	?::projected 9976,15366 9996,15400 10026,15380
 # 
-#: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
-#: XXX Mittelinsel existiert, Masten stehen schon (weggedreht), erste Schilder auch schon
-#: priority: #D
-#: last_checked: 2022-03-12
-#: check_frequency: 7d
-Schlesische Str./Cuvrystr.: Zebrastreifen in Bau	?::inwork 13255,10397 13249,10445 13242,10497
+# REMOVED (realisiert) --- #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege --- #: XXX Mittelinsel existiert, Masten stehen schon (weggedreht), erste Schilder auch schon --- #: priority: #D --- #: last_checked: 2022-03-12 --- #: check_frequency: 7d --- Schlesische Str./Cuvrystr.: Zebrastreifen in Bau	?::inwork 13255,10397 13249,10445 13242,10497
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
@@ -8209,14 +8204,7 @@ Bebauungsplan XV-11 (Hasselwerderstr....): Planstraßen sowie ein Uferweg werden 
 #: check_frequency: 360d
 Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverkehrs	?::projected 12566,18275 12717,18322 12847,18284 12885,18329
 # 
-#: XXX wie werden die früheren Radwege hier nach den Bauarbeiten aussehen? Wird es Überquerungshilfen geben?
-#: XXX laut osm fertig
-# REMOVED (existiert nicht mehr) --- #: osm_watch: way id="72029465" version="9"
-#: osm_watch: way id="354505962" version="5" brb
-#: last_checked: 2021-08-13
-#: check_frequency: 60d
-#: next_check: 2021-08-25
-Bernau: Straße (geplante Ortsumfahrung) wird neu gebaut	?::inwork 22287,29890 22767,30118 22946,30298 23110,30313 23179,30439
+# REMOVED --- #: XXX wie werden die früheren Radwege hier nach den Bauarbeiten aussehen? Wird es Überquerungshilfen geben? --- #: XXX laut osm fertig --- # REMOVED (existiert nicht mehr) --- #: osm_watch: way id="72029465" version="9" --- #: osm_watch: way id="354505962" version="5" brb --- #: last_checked: 2021-08-13 --- #: check_frequency: 60d --- #: next_check: 2021-08-25 --- Bernau: Straße (geplante Ortsumfahrung) wird neu gebaut	?::inwork 22257,29858 22305,29870 22344,29915 22793,30130 22959,30307 23014,30300 23073,30296 23110,30313 23176,30427
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1120743.php
 #: by: https://mein.berlin.de/projekte/marzahner-knoten/ (Beginn der Bauarbeiten Ende 2022)
@@ -8359,7 +8347,7 @@ Oderberg - Brodowin: hier auch schlechtes Kopfsteinpflaster?	? 49286,55260 48690
 Oderberg - Brodowin: hier auch schlechtes Kopfsteinpflaster?	? 49922,54493 50090,54190 50380,54021 50588,53986 50844,53492 51073,53389 51294,53424 51481,53349 51849,53346 51976,53118 52247,52823 52431,52720 52647,52516 52957,52467 53058,52599 53087,52602
 Neuendorf - Sandkrug: Qualität?	? 47100,53337 46649,53269 46521,53312 46084,53267 45373,53443 44978,53613 44875,53550 44664,53701 44453,53698 44350,53761 44217,53746 44039,53852 43641,53979 43444,53864 43004,53843
 Sandkrug - Neuendorf: Qualität?	? 49967,54609 51183,55005 51506,55009 51873,55078 52067,55167 52177,55296 52348,55277 52693,55282 53013,55094 53292,55124 53634,55048 53937,54875
-Elisenau - Börnicke: Privatgelände, ist die Durchfahrt uneingeschränkt möglich?	? 24360,26503 24427,26841
+# REMOVED (keine Einschränkungen laut mapillary) --- Elisenau - Börnicke: Privatgelände, ist die Durchfahrt uneingeschränkt möglich?	? 24311,26512 24412,26796
 Basdorf - Bernauer Heide: Ist der Weg wegen der Bahnstrecke überhaupt passierbar? Qualität? Dürfen hier Autos fahren?	? 12854,36464 13740,36119
 Leipe - Lübbenau: Waldweg, teilweise muss getragen werden (wie oft und wo genau?)	? 55335,-60336 55150,-60225 54925,-60300 54337,-60275 53208,-60124 52537,-60162 52137,-60387 51162,-59762 50725,-59237 50575,-59287
 Leipe - Burg, nördliche Strecke: Qualität?	? 55850,-60475 56425,-59960 57291,-59826 57848,-59878 57989,-59765 58120,-59786 58010,-60210 58351,-60356 58665,-60426 58659,-60530 58845,-60667 58915,-60655 59466,-60914 59518,-60816 59850,-60929 59987,-60862 60417,-61057 60545,-61185 60600,-61166 61066,-61334 61416,-61334 61355,-61459 61581,-61648 61645,-61855 61889,-61953 61998,-62056 62017,-62175 61953,-62212

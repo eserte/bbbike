@@ -10323,7 +10323,7 @@ EOF
        text  => 'L 030 Börnicker Chaussee OD Bernau, zw. Gernotstr. und Eberswalder Str. grundhater Straßenbau Vollsperrung 16.10.2007-30.12.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 23113,30450 23179,30439 23368,30409 23392,30395 23620,30267
+	2::inwork 23113,30450 23176,30427 23368,30409 23392,30395 23620,30267
 EOF
      },
      { from  => 1192312800, # 2007-10-14 00:00
@@ -10991,7 +10991,7 @@ EOF
        text  => 'L 030 Börnicker Chaussee OD Bernau, zw. Gernotstr. und Schönfelder Weg Straßenbau Vollsperrung 20.12.2007-30.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 23113,30450 23179,30439 23368,30409 23392,30395 23620,30267
+	q4::inwork 23113,30450 23176,30427 23368,30409 23392,30395 23620,30267
 EOF
      },
      { from  => 1216405512, # 2008-07-18 20:25
@@ -26790,7 +26790,7 @@ EOF
        source_id => 'http://www.berliner-zeitung.de/berlin/pankow-lebensgefahr-fuer-besucher--schlosspark-schoenhausen-gesperrt-28080750',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.616643.php
-# REMOVED ---	2::temp 10638,19149 10600,19225 10584,19132 10529,19055 10509,18981 10497,18883 10513,18854 10518,18750
+# REMOVED ---	2::temp 10638,19149 10600,19225 10584,19132 10529,19055 10507,18959 10497,18883 10513,18854 10518,18750
 # REMOVED ---	2::temp 10569,19395 10575,19327 10636,19289 10600,19225 10589,19275 10636,19289 10857,19379 11081,19456 11236,19509 11273,19521 11328,19413 11364,19313
 # REMOVED ---	2::temp 10249,19148 10339,19179 10382,19066 10434,18907
 # REMOVED ---	2::temp 10575,19327 10503,19371
@@ -32220,12 +32220,12 @@ EOF
 EOF
      },
      { from  => 1610431200, # 2021-01-12 07:00
-       until => $isodate2epoch->("2022-04-01 17:00:00"), # 1620831600, # 2021-05-12 17:00
-       text  => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 01.04.2022 17:00 Uhr ',
+       until => $isodate2epoch->("2022-04-14 17:00:00"), # 1620831600, # 2021-05-12 17:00
+       text  => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 14.04.2022 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346788',
        data  => <<EOF,
-#: source_id: viz2021:13.536634,52.420965,13.01.2021,07:00
+#: source_id: viz2021:13.536634,52.420965,13.01.2021,07:00 (mittlerweile bis 14.4.2022)
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="683770241" version="6"
 	q4::inwork 19564,1871 19743,1804
@@ -33289,6 +33289,7 @@ EOF
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9770 (Frage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9876 (möglicherweise bis März 2022?)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1179022.php (Fahrbahninstandsetzungsmaßnahme 19.04.2022 - 17.05.2022)
+#: by: https://www.berliner-woche.de/luebars/c-verkehr/strassenbau-geht-nach-pause-weiter_a338612
 #: also_indoor: traffic
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2022-01-19 (kartaview)
@@ -33675,7 +33676,7 @@ EOF
 # REMOVED (eins reicht) --- #: osm_watch: note 2867467 2
 #: osm_watch: way id="16311543" version="19"
 #: also_indoor: search Ernst-Heilmann-Steg
-#: last_checked: 2022-01-23
+#: last_checked: 2022-03-09 (mapillary)
 #: check_frequency: 120d
 	2::inwork 13270,10030 13306,10006
 EOF

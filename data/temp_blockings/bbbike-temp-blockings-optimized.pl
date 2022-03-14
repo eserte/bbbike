@@ -2964,7 +2964,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.536634,52.420965,13.01.2021,07:00
+         'data' => '#: source_id: viz2021:13.536634,52.420965,13.01.2021,07:00 (mittlerweile bis 14.4.2022)
 #: also_indoor: traffic (G,H,B)
 #: osm_watch: way id="683770241" version="6"
 	q4::inwork 19564,1871 19743,1804
@@ -2972,9 +2972,9 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1610431200,
          'id' => 3322,
          'source_id' => '2147346788',
-         'text' => 'Rudower Str.: Fahrbahn zwischen Kˆpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 01.04.2022 17:00 Uhr ',
+         'text' => 'Rudower Str.: Fahrbahn zwischen Kˆpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 14.04.2022 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1648825200
+         'until' => 1649948400
        },
        undef,
        {
@@ -3341,6 +3341,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9770 (Frage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9876 (mˆglicherweise bis M‰rz 2022?)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1179022.php (Fahrbahninstandsetzungsmaﬂnahme 19.04.2022 - 17.05.2022)
+#: by: https://www.berliner-woche.de/luebars/c-verkehr/strassenbau-geht-nach-pause-weiter_a338612
 #: also_indoor: traffic
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2022-01-19 (kartaview)
@@ -3486,7 +3487,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED (eins reicht) --- #: osm_watch: note 2867467 2
 #: osm_watch: way id="16311543" version="19"
 #: also_indoor: search Ernst-Heilmann-Steg
-#: last_checked: 2022-01-23
+#: last_checked: 2022-03-09 (mapillary)
 #: check_frequency: 120d
 	2::inwork 13270,10030 13306,10006
 ',
