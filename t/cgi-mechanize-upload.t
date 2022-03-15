@@ -252,8 +252,8 @@ EOF
 		    do_display(\$image_content, "png");
 		}
 		
-		$agent->back;
-		$agent->back;
+		back_with_retry($agent);
+		back_with_retry($agent);
 	    }
 	}
     }
@@ -285,14 +285,25 @@ EOF
 # https://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html).
 # WWW::Mechanize or LWP::UserAgent does not do this, so this
 # re-sending is implemented here.
-sub submit_with_retry {
-    my($agent) = @_;
-    if (!eval { $agent->submit; 1 }) {
+sub _anything_with_retry {
+    my($agent, $method) = @_;
+    if (!eval { $agent->$method; 1 }) {
 	if ($@ =~ /Server closed connection without sending any data back/) {
-	    diag "First submit failed ($@), will now retry once...";
+	    diag "First $method failed ($@), will now retry once...";
 	    $agent->submit;
 	} else {
 	    confess $@;
 	}
     }
 }
+
+sub submit_with_retry {
+    my($agent) = @_;
+    _anything_with_retry($agent, 'submit');
+}
+
+sub back_with_retry {
+    my($agent) = @_;
+    _anything_with_retry($agent, 'back');
+}
+
