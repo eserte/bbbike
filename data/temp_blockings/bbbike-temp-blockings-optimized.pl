@@ -3321,9 +3321,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
-#: osm_watch: way id="984964447" version="6"
+#: osm_watch: way id="984964447" version="7"
 	q3::inwork 15279,10862 15355,10875
-#: osm_watch: way id="984056169" version="6"
+#: osm_watch: way id="984056169" version="7"
 	2::inwork 15272,10790 15388,10758
 ',
          'from' => 1625734800,
@@ -3587,8 +3587,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: SCHARFELANKE-2021
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: osm_watch: way id="187977779" version="14" vvv
-#: last_checked: 2021-10-20 vvv
+#: osm_watch: way id="187977779" version="15" vvv
+#: last_checked: 2022-03-15 (osm) vvv
 #: check_frequency: 60d vvv
 	2::inwork -3752,11373 -3785,11445 -3828,11491 -3928,11526 -4028,11533 -4106,11519 -4181,11458 -4204,11432 -4245,11400
 	2::inwork -4246,11438 -4204,11432

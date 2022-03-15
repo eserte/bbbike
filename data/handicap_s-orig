@@ -256,9 +256,9 @@ Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1- 9444,
 #: check_frequency: 60d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
-#: osm_watch: way id="751595931" version="2"
+#: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-02-18 (mapillary)
+#: last_checked: 2022-03-13 (osm)
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -3942,6 +3942,14 @@ Golda-Meir-Steg: Fuﬂg‰nger	q2 7861,14133 7899,14157 7962,14198
 (Holzmarktstr. - Ifflandstr.): Fuﬂg‰nger, Bordsteine	q3 11515,12293 11584,12258 11589,12296
 #: note: Gehweg, Radfahrer frei
 Johannes-Zoschke-Str.: einige Fuﬂg‰nger	q1 19037,9636 19042,9708
+#: note: Gehweg, nicht freigegeben, aber eher geringe Fuﬂg‰ngerfrequenz
+Brodenbacher Weg: einige Fuﬂg‰nger	q2 15278,17152 15308,17166
+#: note: Gr¸nanlage, Zusatzschild existiert, aber nicht erkennbar vvv
+Orankesee, s¸dliches Ufer: Fuﬂg‰nger	q2 15856,15924 15815,15939 15758,15932 15703,15953 15587,15852 15534,15911 15486,16000 15479,16060
+(Orankestr. - Orankesee): Fuﬂg‰nger	q2 15598,15793 15604,15824 15587,15852
+(Oranksee - Hansastr.): einige Fuﬂg‰nger	q1- 15479,16060 15358,16151 15320,16163 15270,16205
+#: note ^^^
+Hansastr.: einige Fuﬂg‰nger	q3 15236,16241 15254,16243
 # 
 ######################### User Contributions #################################
 # 

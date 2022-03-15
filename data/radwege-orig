@@ -726,7 +726,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
-#: last_checked: 2022-03-01
+#: last_checked: 2022-03-15
 #: check_frequency: 30d
 #: next_check: 2022-03-31
 	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
@@ -1616,7 +1616,8 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10299,11786 10314,11804 10349,11847 10376,11879
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/umbau-des-molkenmarktes-beginnt-mit-stauchaos-und-baumfaellungen_a197140
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: by: https://twitter.com/VIZ_Berlin/status/1369264298120388614 (Umstellung der Baustelle ab 2021-03-09)
-#: osm_watch: way id="882672444" version="5"
+# REMOVED --- #: osm_watch: way id="882672444" version="6"
+#: osm_watch: way id="82654055" version="10"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
 #: check_frequency: 60d vvv
@@ -3137,13 +3138,13 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
 #: XXX Bauarbeiten voraussichtlich bis Ende März 2021; mittlerweile bis Ende Februar 2022
 #: osm_watch: way id="333893474" version="22"
-#: osm_watch: way id="10275151" version="41"
+#: osm_watch: way id="10275151" version="42"
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
 #: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022)
-#: last_checked: 2022-02-05 (mapillary) vvv
+#: last_checked: 2022-03-14 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2022-08-31 vvv
 #: priority: #A vvv
@@ -7299,6 +7300,8 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-durchgehenden-und-geschuetzten-weg-an-der-b96_a318755
 #: by: https://twitter.com/VIZ_Berlin/status/1486281393856462852
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8273 (Antrag (Mariendorfer Damm))
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1185354.php (Radverkehrsanlage Mariendorfer Damm: Informationsveranstaltung)
+#: by: https://www.berliner-woche.de/mariendorf/c-verkehr/info-abend-zur-radverkehrsanlage_a339422
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: XXX: Werden die provisorischen Radspuren wieder entfernt? vvv
