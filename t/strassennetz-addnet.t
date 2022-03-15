@@ -38,7 +38,19 @@ my $s = Strassen->new('strassen');
 my $net = StrassenNetz->new($s);
 $net->make_net;
 
-my $orig_net = dclone $net;
+# Cannot use Storable::dclone on $net, as there may be CODE references
+# embedded, depending whether the object was freshly created here or
+# was loaded from a cache file.
+my $orig_net = {};
+while(my($k,$v) = each %$net) {
+    if (ref $v eq 'CODE') {
+	$orig_net->{$k} = $v;
+    } elsif (ref $v) {
+	$orig_net->{$k} = dclone $v;
+    } else {
+	$orig_net->{$k} = $v;
+    }
+}
 
 my $pos = 0;
 my $first_record = $s->get_obj($pos);
