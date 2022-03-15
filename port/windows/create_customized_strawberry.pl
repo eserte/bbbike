@@ -161,7 +161,7 @@ save_pwd {
 	$chdir = 'prefs';
 	@cmd = ("git", "pull", '--depth=10');
     } else {
-	@cmd = ("git", "clone", '--depth=10', "git://github.com/eserte/srezic-cpan-distroprefs.git", "prefs");
+	@cmd = ("git", "clone", '--depth=10', "https://github.com/eserte/srezic-cpan-distroprefs.git", "prefs");
     }
     if (is_in_path('git')) {
 	if ($chdir) {

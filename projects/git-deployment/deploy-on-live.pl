@@ -341,13 +341,13 @@ sub init {
     if (!-d "$red_dir/BBBike") {
 	my $save_pwd = save_pwd2();
 	checked_chdir $red_dir;
-	run ['git', 'clone', '--depth=1', 'git://github.com/eserte/bbbike', 'BBBike']
+	run ['git', 'clone', '--depth=1', 'https://github.com/eserte/bbbike', 'BBBike']
 	    or die "git-clone failed";
     }
     if (!-d "$blue_dir/BBBike") {
 	my $save_pwd = save_pwd2();
 	checked_chdir $blue_dir;
-	run ['git', 'clone', '--depth=1', 'git://github.com/eserte/bbbike', 'BBBike']
+	run ['git', 'clone', '--depth=1', 'https://github.com/eserte/bbbike', 'BBBike']
 	    or die "git-clone failed";
     }
     for my $dir ($red_dir, $blue_dir) {

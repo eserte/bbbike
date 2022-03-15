@@ -315,7 +315,7 @@ install_perl_dependencies() {
 	if [ "$CODENAME" = "focal" -o "$CODENAME" = "bullseye" ]
 	then
 	    cpanm --quiet --notest Alien::Base::Wrapper Alien::Proj4
-	    cpanm --quiet git://github.com/eserte/perl5-Geo-Proj4.git@use-alien
+	    cpanm --quiet https://github.com/eserte/perl5-Geo-Proj4.git@use-alien
 	fi
 
 	if [ "$CPAN_INSTALLER" = "cpanm" ]

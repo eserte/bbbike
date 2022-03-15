@@ -3322,7 +3322,7 @@ sub get_mapnik_map_directory {
     my $dir = "$bbbike_rootdir/../mapnik-bbbike";
     if (!-x $dir) {
 	require File::Basename;
-	main::status_message("Mapnik project '$dir' not available --- please run 'git clone git://github.com/eserte/mapnik-bbbike.git' in " . File::Basename::dirname($bbbike_rootdir) . " and follow the instructions in mapnik-bbbike/tools/Makefile", 'error');
+	main::status_message("Mapnik project '$dir' not available --- please run 'git clone https://github.com/eserte/mapnik-bbbike.git' in " . File::Basename::dirname($bbbike_rootdir) . " and follow the instructions in mapnik-bbbike/tools/Makefile", 'error');
 	return;
     }
     return $dir;

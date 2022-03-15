@@ -64,7 +64,7 @@ $candidate.
 You can get it using the following commands:
 
     cd $src_dir
-    git clone git://github.com/eserte/mapnik-bbbike.git
+    git clone https://github.com/eserte/mapnik-bbbike.git
 EOF
 	}
     }
@@ -128,7 +128,7 @@ Using C<bbbikedraw.pl>:
 
 It's necessary to prepare C<mapnik-bbbike> first. git-clone it from
 
-    git://github.com/eserte/mapnik-bbbike.git
+    https://github.com/eserte/mapnik-bbbike.git
 
 next to the F<bbbike> directory, and follow the setup instructions in
 F<mapnik-bbbike/tools/Makefile>.

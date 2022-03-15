@@ -92,7 +92,7 @@ $BBBIKE_MAPSERVER_DIRECT = 'http://bbbike.de/mapserver/brb/';
 $BBBIKE_MAPSERVER_INDIRECT = "http://www.bbbike.de/mapserver/brb/";
 
 # git
-$BBBIKE_GIT_CLONE_URL = 'git://github.com/eserte/bbbike.git';
+$BBBIKE_GIT_CLONE_URL = 'https://github.com/eserte/bbbike.git';
 $BBBIKE_GIT_HTTP = 'http://github.com/eserte/bbbike';
 
 $BBBIKE_GOOGLEMAP_URL = 'http://bbbike.de/cgi-bin/bbbikegooglemap.cgi';

@@ -153,7 +153,7 @@ EOF
 RUN apt-get update && apt-get install -qqy @packages
 EOF
 	if ($opt{src} eq 'github') {
-	    $docker_cmd = "git clone --depth=1 git://github.com/eserte/bbbike.git && bbbike/bbbike $opt{'bbbike-args'}";
+	    $docker_cmd = "git clone --depth=1 https://github.com/eserte/bbbike.git && bbbike/bbbike $opt{'bbbike-args'}";
 	} elsif ($opt{src} eq 'local') {
 	    $docker_cmd = "/bbbike/bbbike $opt{'bbbike-args'}";
 	}
