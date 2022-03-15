@@ -6,6 +6,8 @@
 #
 
 use strict;
+use warnings;
+use Carp qw(confess);
 
 BEGIN {
     if (!eval q{
@@ -222,8 +224,8 @@ EOF
 		$form->value("routefile", $filename);
 		eval { $form->value("imagetype", "mapserver") };
 		skip("Cannot do mapserver imagetype", $mapserver_tests) if $@;
-		
-		$agent->submit;
+
+		submit_with_retry($agent);
 		
 		is($agent->ct, "text/html", "It's a html file (from $testname)");
 		my $content = $agent->content;
@@ -276,3 +278,20 @@ EOF
     }
 }
 
+# A http keep-alive connection may be closed just in the moment the
+# (POST) request is sent, leading to a client error. "Real" user
+# agents (browsers like firefox or chrome) send the request again
+# (though this seems to violate the HTTP RFC, see section 8.1.4 in
+# https://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html).
+# WWW::Mechanize or LWP::UserAgent does not do this, so this
+# re-sending is implemented here.
+sub submit_with_retry {
+    my($agent) = @_;
+    if (!eval { $agent->submit; 1 }) {
+	if ($@ =~ /Server closed connection without sending any data back/) {
+	    $agent->submit;
+	} else {
+	    confess $@;
+	}
+    }
+}
