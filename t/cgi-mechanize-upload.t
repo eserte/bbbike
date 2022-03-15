@@ -289,6 +289,7 @@ sub submit_with_retry {
     my($agent) = @_;
     if (!eval { $agent->submit; 1 }) {
 	if ($@ =~ /Server closed connection without sending any data back/) {
+	    diag "First submit failed ($@), will now retry once...";
 	    $agent->submit;
 	} else {
 	    confess $@;
