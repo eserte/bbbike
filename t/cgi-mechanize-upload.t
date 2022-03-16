@@ -7,7 +7,6 @@
 
 use strict;
 use warnings;
-use Carp qw(confess);
 
 BEGIN {
     if (!eval q{
@@ -68,7 +67,10 @@ my $sample_coords = do {
 plan tests => 4 + $gpsman_tests * @gps_types;
 
 {
-    my $agent = WWW::Mechanize->new(keep_alive => 1);
+    # Because of possible
+    # "Server closed connection without sending any data back" errors
+    # keep_alive is explicitly turned off.
+    my $agent = WWW::Mechanize->new(keep_alive => 0);
     set_user_agent($agent);
 
     $agent->get($cgiurl);
@@ -225,7 +227,7 @@ EOF
 		eval { $form->value("imagetype", "mapserver") };
 		skip("Cannot do mapserver imagetype", $mapserver_tests) if $@;
 
-		submit_with_retry($agent);
+		$agent->submit;
 		
 		is($agent->ct, "text/html", "It's a html file (from $testname)");
 		my $content = $agent->content;
@@ -252,8 +254,8 @@ EOF
 		    do_display(\$image_content, "png");
 		}
 		
-		back_with_retry($agent);
-		back_with_retry($agent);
+		$agent->back;
+		$agent->back;
 	    }
 	}
     }
@@ -277,33 +279,3 @@ EOF
 	$agent->back;
     }
 }
-
-# A http keep-alive connection may be closed just in the moment the
-# (POST) request is sent, leading to a client error. "Real" user
-# agents (browsers like firefox or chrome) send the request again
-# (though this seems to violate the HTTP RFC, see section 8.1.4 in
-# https://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html).
-# WWW::Mechanize or LWP::UserAgent does not do this, so this
-# re-sending is implemented here.
-sub _anything_with_retry {
-    my($agent, $method) = @_;
-    if (!eval { $agent->$method; 1 }) {
-	if ($@ =~ /Server closed connection without sending any data back/) {
-	    diag "First $method failed ($@), will now retry once...";
-	    $agent->submit;
-	} else {
-	    confess $@;
-	}
-    }
-}
-
-sub submit_with_retry {
-    my($agent) = @_;
-    _anything_with_retry($agent, 'submit');
-}
-
-sub back_with_retry {
-    my($agent) = @_;
-    _anything_with_retry($agent, 'back');
-}
-
