@@ -26199,21 +26199,23 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2021-11-23 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-11-24 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 17. November 2021 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2022-03-22 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-03-23 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 23. März 2022 ab ca. 09:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
+#: note: Termine im Frühjahr 2022: 23.3., 13.4., 20.4., 27.4.
 #: source_id: 2147341022
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
-# REMOVED --- #: priority: #A --- #: next_check: 2021-11-17
+#: priority: #A
+#: next_check: 2022-02-23
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
@@ -28162,7 +28164,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2022-03-02
+#: last_checked: 2022-03-16
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30517,7 +30519,7 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-03-01 (mapillary)
+#: last_checked: 2022-03-16
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 EOF
@@ -31387,8 +31389,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-05-30 08:30:00"), # 1589275980, # 2020-05-12 11:33
-       until => $isodate2epoch->("2022-03-18 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: Fahrbahn am Hindenburgdamm gesperrt, vom 31.05.2021 bis 18.03.2022',
+       until => $isodate2epoch->("2022-03-29 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
+       text  => 'Gardeschützenweg: Fahrbahn am Hindenburgdamm gesperrt, vom 31.05.2021 bis 29.03.2022',
        type  => 'handicap',
        source_id => '2147345834', # (inaktiv)
        data  => <<EOF,
@@ -31397,6 +31399,7 @@ EOF
 #: by: https://viz.berlin.de/2021/05/verkehrsvorschau-310521/ (Fuß- und Radverkehr ist frei)
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: source_id: 2147347233 (bis 23.12.2021)
+#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,G,B) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"

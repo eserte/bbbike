@@ -20,7 +20,7 @@
 #: source_id: 2147344783 (Leitungsarbeiten bis 4.12.2020)
 #: source_id: 2147345057 (Leitungsarbeiten bis 30.4.2021)
 #: source_id: viz2021:13.313808,52.486798,04.11.2019,14:00 (Leitungsarbeiten bis 4.11.2021) (inaktiv)
-#: XXX laut rbb Arbeiten bis 25.10.2021
+#: XXX laut rbb Arbeiten bis 25.10.2021, mittlerweile bis 30.8.2022
 # REMOVED --- #: also_indoor: traffic (H,G)
 #: last_checked: 2022-02-27
 #: check_frequency: 90d
@@ -65,7 +65,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Ausführungsplanung)
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
-#: last_checked: 2022-03-14
+#: last_checked: 2022-03-16
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-03-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -833,7 +833,7 @@ Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::proj
 # 
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: source_id: 2147342868 (inaktiv)
-#: last_checked: 2022-02-23
+#: last_checked: 2022-03-16
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 # 
@@ -1826,7 +1826,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: osm_watch: way id="110450333" version="14"
 #: source_id: 2147343384
-#: last_checked: 2022-03-07
+#: last_checked: 2022-03-16
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13892,9365 13849,9310
 # 
@@ -2605,7 +2605,7 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="24"
-#: last_checked: 2022-02-11
+#: last_checked: 2022-03-16
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12049,9781 12053,9793
 # 
@@ -2665,7 +2665,7 @@ Fasanenstr.: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 
 #: osm_watch: way id="764003865" version="4"
 #: osm_watch: way id="764003862" version="16"
 #: priority: #D
-#: last_checked: 2022-03-12 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
+#: last_checked: 2022-03-16 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
 #: check_frequency: 60d vvv
 Karl-Marx-Str.: Markierung von Schutzstreifen (geschützt)	?::inwork; 11831,8989 11880,8955 11998,8872 12063,8826 12150,8764
 Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12150,8764 12318,8645 12330,8636
@@ -2831,7 +2831,7 @@ Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/sanierte-fusswege-baeume-asphalt-und-weniger-autoverkehr-auf-der-weserstrasse_a314958
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/der-schulweg-auf-der-weserstrasse-bleibt-weiterhin-fuer-die-kinder-gefaehrlich_a334967
 #: by: https://berliner-abendblatt.de/2022/02/03/reuterkiez-2/ (Verkehrskonzept)
-#: last_checked: 2022-03-12
+#: last_checked: 2022-03-16
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-12-31
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
@@ -3308,6 +3308,7 @@ In den Alboingärten: Weg in Bau	?::inwork 7971,6087 7739,6099 7646,6031 7638,596
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.1112531.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/10000086_pl_210806_barrierefrei.pdf
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9516 (Frage)
+#: by: https://www.berliner-woche.de/kaulsdorf/c-bauen/wohnungsbauprojekt-bremst-erneut-umgestaltung-der-chemnitzer-strasse-aus_a333944
 #: last_checked: 2022-01-10 (mapillary) vvv
 #: check_frequency: 540d vvv
 Planstraße B: Straßenname? Qualität?	?::projected 22310,10927 22343,11072 22372,11191
@@ -3321,9 +3322,10 @@ Weg an der Wuhle: evtl. entsteht auch ein Weg hier --- wird es auch eine Anbindu
 # 
 #: by: https://www.berliner-woche.de/kaulsdorf/c-verkehr/umbau-der-chemnitzer-strasse-auf-2022-verschoben_a254422 (Baubeginn 2022)
 #: by: https://www.berliner-woche.de/kaulsdorf/c-bauen/umbau-der-chemnitzer-strasse-beginnt-erst-2022_a302727
+#: by: https://www.berliner-woche.de/kaulsdorf/c-bauen/wohnungsbauprojekt-bremst-erneut-umgestaltung-der-chemnitzer-strasse-aus_a333944 (Baubeginn erst 2024, Bauzeit 1 bis 1 1/2 Jahre)
 #: XXX ggfs. im Zusammenhang mit dem Bebauungsplan 10-86
 #: last_checked: 2022-01-10 (mapillary)
-#: next_check: 2022-04-01
+#: next_check: 2024-04-01
 Chemnitzer Str.: Verlegung der Straße, Radwege	?::projected  22436,11054 22483,11261
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20161104 vvv
@@ -3758,7 +3760,7 @@ Bölschestr.: Prüfung einer Fahrradstraße	? 13188,9134 13298,9252 13357,9313 1348
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_12_0821_0896_online.pdf (Benennung)
 #: XXX ggfs. auch die Platzfläche als solche einzeichnen
 #: osm_watch: way id="478838381" version="4"
-#: last_checked: 2022-02-12 (keine Schilder zu sehen)
+#: last_checked: 2022-03-16 (keine Schilder zu sehen)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-03-25
 Naunynstr.: Benennung einer Platzfläche in "Maria-von-Maltzan-Platz"	? 11365,10791 11403,10782
@@ -6481,7 +6483,7 @@ Umbau des Dreiecks Funkturm: werden Straßen im Bereich der Nordkurve/des Rasthof
 Wegedornstr.: Markierung eines Schutzstreifens geplant	?::projected 18881,2062 18922,2238 18928,2319 18928,2327
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-18-ag_radverkehr-24-02-2021.pdf (bauliche Umsetzung voraussichtlich 2021/2022)
-#: last_checked: 2022-03-07
+#: last_checked: 2022-03-16
 #: next_check: 2022-12-31
 Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9610 13860,9861
 # 
@@ -6556,7 +6558,7 @@ zum Am Gutshof: hier soll ein Hinweisschild aufgestellt werden	? 17887,18975 178
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10213 (Antrag)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10228 (Anfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10239 (Antrag)
-#: last_checked: 2022-03-08
+#: last_checked: 2022-03-16
 #: check_frequency: 360d
 Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 11049,10816 11159,10769 11220,10744 11275,10723 11463,10642 11690,10543 11721,10530 11754,10516 11949,10414
 # 

@@ -201,7 +201,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882
 Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-01-03 vvv
+#: last_checked: 2022-03-16 vvv
 #: next_check: 2024-06-01 vvv
 (Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10804,12291 10830,12279
 #: next_check ^^^
@@ -258,7 +258,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-03-13 (osm)
+#: last_checked: 2022-03-16
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -271,7 +271,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-03-04 (mapillary)
+#: last_checked: 2022-03-16
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -544,13 +544,14 @@ Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 
 #: by: https://www.bahninfo-forum.de/read.php?9,689330,689356#msg-689356 (2021)
 #: by: https://www.berliner-woche.de/moabit/c-verkehr/kein-halt-an-der-birkenstrasse_a334325 (geplant für 1. Quartal 2022)
 #: by: https://berliner-abendblatt.de/2022/01/24/kein-halt-am-u-bahnhof-birkenstrasse/
+#: by: https://berliner-abendblatt.de/2022/03/16/bahnhof-birkenstrasse-jetzt-stufenlos-erreichbar/
 #: XXX vermutlich wegen des neuen Aufzugs am U-Bhf. Birkenstr.
 #: also_indoor: traffic (ex-G,H)
 #: osm_watch: way id="746589388" version="17"
 #: osm_watch: way id="746589386" version="1"
-#: last_checked: 2021-12-12 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2022-03-31
+#: last_checked: 2022-03-16 (twitter)
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2022-03-31
 Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
 # 
 # REMOVED (nicht mehr) --- #: next_check_id: HILDAGEIRINGERWEG-2019 --- #: source_id: 2147345153 (Gehwegarbeiten in der Invalidenstr., bis Anfang Dezember 2019) --- #: priority: #C vvv --- #: last_checked: 2020-10-10 vvv --- #: check_frequency: 30d vvv --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt	q3::inwork 8281,13394 8302,13430 8293,13527 --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur über Restaurantbereich	q4::inwork 8174,13390 8241,13393 8281,13394 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^
@@ -675,7 +676,7 @@ Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 #: by: https://www.kms-sonne.de/baustellennews (nun bis Herbst 2022)
 #: by: https://www.kms-sonne.de/assets/2022/02/Baustellenuebersicht-2022-02.pdf
 #: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022)
-#: last_checked: 2022-02-01
+#: last_checked: 2022-03-16
 #: check_frequency: 120d
 #: next_check: 2022-09-20
 Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12368,8356 12582,8408
@@ -693,7 +694,7 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00
 #: also_indoor: traffic (G(zu früh+falsche Richtung),B)
 #: priority: #A
-#: last_checked: 2022-02-11
+#: last_checked: 2022-03-16
 #: check_frequency: 120d
 #: next_check: 2022-07-31
 Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4::inwork; 12494,8501 12349,8464

@@ -698,7 +698,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: source_id: 2147345481
 #: source_id: 2147345753
 #: source_id: viz2021:13.408836,52.517143,22.04.2020,15:00 (Bauarbeiten bis 30.6.2023)
-#: last_checked: 2022-01-25 vvv
+#: last_checked: 2022-03-16 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
@@ -970,7 +970,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,12.01.2022,11:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-03-14 vvv
+#: last_checked: 2022-03-16 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169
@@ -1624,7 +1624,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10299,11786 10314,11804 10349,11847 10376,11879
 # REMOVED --- #: next_check: 2021-03-11 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2022-03-02 vvv
+#: last_checked: 2022-03-16 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
 provisorische Radspur	RW4; 10574,12131 10625,12206 10659,12259 10675,12280
 # REMOVED ---	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
@@ -1645,7 +1645,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: by: https://molkenmarkt01.hi-res-cam.com/ (webcam)
 #: XXX temporäre Radwegführung
-#: last_checked: 2022-02-25 (webcam)
+#: last_checked: 2022-03-16
 #: check_frequency: 30d
 temporäre Führung als Bürgersteigradweg	RW1; 10887,12570 10954,12635
 # wieder herstellen:	RW4; 10887,12570 10954,12635
@@ -6224,14 +6224,14 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünmarkierung geben
-#: last_checked: 2022-02-11 vvv
+#: last_checked: 2022-03-16 vvv
 #: check_frequency: 60d
 Gelbmarkierung	RW3;RW3 12639,8344 12598,8390
 	RW4; 12639,8344 12689,8289 12714,8249
 #: last_checked ^^^
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2022-02-01
+#: last_checked: 2022-03-16
 #: check_frequency: 60d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünmarkierung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
@@ -6266,11 +6266,11 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12823
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2022-02-01
+#: last_checked: 2022-03-16
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
-#: last_checked: 2022-02-11
+#: last_checked: 2022-03-16
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -6983,7 +6983,7 @@ asphaltiert	RW1; 25522,4935 25519,4830
 	RW4; 16485,25516 16414,25575
 #: next_check_id: KARLMARXSTR-2018
 #: XXX Zwischendurch eine provisorische Radspur, wurde bei der Baustellenumstellung Anfang Februar 2021 wieder entfernt
-#: last_checked: 2022-02-11
+#: last_checked: 2022-03-16
 #: check_frequency: 120d
 #: next_check: 2022-07-31
 # REMOVED --- provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
@@ -7136,7 +7136,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: by: https://berliner-abendblatt.de/2021/12/18/pop-up-radwege-bleiben-dauerhaft/
-#: last_checked: 2022-03-12 vvv
+#: last_checked: 2022-03-16 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -7302,6 +7302,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8273 (Antrag (Mariendorfer Damm))
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1185354.php (Radverkehrsanlage Mariendorfer Damm: Informationsveranstaltung)
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/info-abend-zur-radverkehrsanlage_a339422
+#: by: https://berliner-abendblatt.de/2022/03/16/radweg-tempelhofer-damm/
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: XXX: Werden die provisorischen Radspuren wieder entfernt? vvv
