@@ -1350,7 +1350,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schlieﬂzeiten im Winter: 18.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schlieﬂzeiten im Sommer: 21.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -4011,32 +4011,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1672502400
        },
        undef,
-       {
-         'data' => '#: next_check_id: GNEISENAUKIEZ-2022
-#: also_indoor: traffic (G,B) vvv
-#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/gneisenau-kiez-wird-verkehrsberuhigt_a334304
-#: by: https://berliner-abendblatt.de/2022/01/24/verkehrsberuhigung-im-gneisenaukiez/
-#: XXX Wie werden die verkehrsberuhigenden Maﬂnahmen aussehen? vvv
-#: last_checked: 2022-02-27 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2022-03-15 vvv
-#: XXX Fahrbahn zurzeit gesperrt
-	q4::inwork 9723,9842 9837,9856
-#: XXX hier noch keine Bauarbeiten
-	q3::inwork 9705,9732 9723,9842
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: also_indoor ^^^
-',
-         'from' => 1644102000,
-         'id' => 3519,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1169529.php',
-         'text' => 'Baruther Str., Solmsstr.: Bauarbeiten, Fahrbahn kann gesperrt sein, voraussichtlich 07. Februar 2022 - 15. M‰rz 2022',
-         'type' => 'handicap',
-         'until' => 1647385199
-       },
+       undef,
        {
          'data' => '#: next_check_id: MASSMANN-2022
 #: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maﬂmannstr.
