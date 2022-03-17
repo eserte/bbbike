@@ -21691,11 +21691,13 @@ EOF
        until => $isodate2epoch->("2019-04-28 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 4, start => "2021-05-01T00:00:00"]], # keine Anzeichen dafür, dass der Winzerfrühling 2021 stattfinden könnte
+       recurrence_prewarn_days => 7,
        text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 26.4.2019 bis 28.4.2019',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.907823.php (fällt 2020 aus)
+#: by: https://www.winzerfest-koepenick.de/?date=20220317 (geplant für 22.04. bis zum 24.04.2022)
 # REMOVED --- #: tempex: 20170421T1400-20170423 vvv
 	2::temp 22138,4642 22111,4562 22093,4499
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664

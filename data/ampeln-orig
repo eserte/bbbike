@@ -60,7 +60,9 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
 #: next_check_id: HERMANNHESSESTR-2019
 #: XXX wird die temporäre Ampel durch eine permanente ersetzt?
-#: osm_watch: note 2356634 3
+# REMOVED (closed) --- #: osm_watch: note 2356634 3
+#: osm_watch: node id="9569639494" version="1"
+#: osm_watch: node id="9569639496" version="1"
 #: last_checked: 2022-01-09
 #: check_frequency: 60d
 	X::inwork 9868,19023
