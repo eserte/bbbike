@@ -225,7 +225,7 @@ Chausseestr.: gemeinsamer Geh- und Radweg	q2::inwork; 8442,14456 8406,14507 8336
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2022-02-24 (mapillary) vvv
+#: last_checked: 2022-03-12 (architektur-urbanistik) vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423
@@ -311,12 +311,14 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # REMOVED (mittlerweile entfernt) --- #: source_id: 2147347007 (bis 25.6.2022) --- #: source_id: viz2021:13.381216,52.513773,22.03.2021,14:44 --- #: last_checked: 2021-05-22 --- #: check_frequency: 90d --- #: next_check: 2022-06-25 --- Hannah-Arendt-Str.: Fahrbahn Richtung Westen gesperrt	q3::inwork; 8901,12008 8844,11984
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/palais-am-brandenburger-tor-neubau-am-holocaust-mahnmal.177/
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_11_0657_0712_online.pdf (Teileinziehung)
 #: also_indoor: traffic (ex-H,ex-G,B)
 #: osm_watch: way id="4597320" version="19"
 #: osm_watch: way id="43350531" version="11"
 #: source_id: 2147343824 (bis 30.6.2021)
 #: source_id: viz2021:13.379936,52.514077,04.03.2019,08:00 (bis 30.6.2021)
 #: add_fragezeichen: Sind die Bauarbeiten hier beendet?
+#: XXX nach den Bauarbeiten vermutlich nur f¸r Radfahrer, Fuﬂg‰nger und MIV-Anlieger frei
 #: last_checked: 2022-02-12
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-06-30
@@ -1557,7 +1559,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="7"
-#: last_checked: 2021-12-27
+#: last_checked: 2022-03-18
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268

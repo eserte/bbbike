@@ -1028,7 +1028,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-03-17
+#: last_checked: 2022-03-18
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -29266,7 +29266,8 @@ Rutnikstr.: Asphalt	Q0 15546,12690 15648,12687 15731,12687 15857,12682 15952,126
 Heringer Str.: Asphalt	Q0 15648,12687 15643,12875
 #: corrected_by: srt (Asphalt -> ...) vvv
 Hendrichplatz: Beton	Q0- 15953,12753 15859,12753
-Hendrichplatz: Betonpflaster	Q1+ 15859,12753 15859,12793 15734,12793 15733,12753 15732,12715
+Hendrichplatz: Betonpflaster und Asphalt	Q1+ 15859,12753 15859,12793 15734,12793
+Hendrichplatz: Betonpflaster	Q1+ 15734,12793 15733,12753 15732,12715
 Hendrichplatz: Asphalt	Q0- 15732,12715 15731,12687
 Hendrichplatz: Betonpflaster	Q1+ 15733,12753 15859,12753
 #: corrected_by ^^^
