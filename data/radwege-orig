@@ -1617,7 +1617,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10299,11786 10314,11804 10349,11847 10376,11879
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: by: https://twitter.com/VIZ_Berlin/status/1369264298120388614 (Umstellung der Baustelle ab 2021-03-09)
 # REMOVED --- #: osm_watch: way id="882672444" version="6"
-#: osm_watch: way id="82654055" version="11"
+#: osm_watch: way id="82654055" version="12"
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
 #: check_frequency: 60d vvv
@@ -2232,7 +2232,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2022-02-24 (mapillary)
+#: last_checked: 2022-03-19
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -3713,7 +3713,9 @@ Radspur hinter den parkenden Autos, teilweise kaum Abstand	RW3; 6149,16958 6191,
 schmaler asphaltierter Radweg, kein Unterstreifen gegen parkende Autos (hier wird aber selten geparkt)	RW1;RW2 5700,15043 5625,15132
 schmaler asphaltierter Radweg, kein Unterstreifen gegen parkende Autos (hier wird aber selten geparkt)	RW1;RW1 5625,15132 5587,15177 5553,15271 5522,15354 5490,15440 5446,15489
 	RW3;RW3 2905,14754 2956,14752
-	RW1;RW1 -7050,152 -7050,199 -7067,240 -7078,262 -7123,310
+	RW1; -7050,152 -7050,199 -7067,240 -7078,262 -7123,310
+	RW1; -7123,310 -7078,262 -7067,240 -7050,199
+Gehweg für Radfahrer frei	RW1; -7050,199 -7050,152
 	RW1;RW1 -1012,3465 -968,3438 -800,3409 -741,3410 -645,3434 -548,3467 -478,3509 -370,3585 -267,3657
 	RW1;RW1 -267,3657 -141,3715 -92,3724 16,3744 199,3774 263,3779 394,3694 458,3697
 	RW1;RW 458,3697 627,3749 732,3780
@@ -7390,7 +7392,7 @@ Tempo 10	RW6;RW6 14468,11203 14442,11101
 Tempo 10	RW6;RW6 14531,11142 14513,11075
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-01-03 vvv
+#: last_checked: 2022-03-19 vvv
 #: next_check: 2024-06-01 vvv
 	RW2; 10830,12279 10831,12371
 	RW4; 10831,12371 10804,12461
@@ -7419,6 +7421,7 @@ Gehweg für Radfahrer frei	RW1;RW1 475,1202 587,1230 718,1264 857,1300
 # 
 	RW2; 1566,11409 1574,11379
 # 
+#: note: Hermannstr., Richtung Norden
 #: note: Grünmarkierung fehlt an den Bushaltestellen vvv
 Grünmarkierung, Poller	RW3; 12510,6508 12470,6586
 Bushaltestelle	RW5; 12470,6586 12448,6646
@@ -7429,7 +7432,11 @@ Grünmarkierung	RW4; 12342,6936 12317,7007 12304,7039 12291,7074 12259,7164 12244
 #: note ^^^
 provisorische Radspuren	RW4;RW4 12185,7381 12221,7271
 # REMOVED --- #: XXX Radweg markiert und ausgeschildert, allerdings ignoriert --- #: last_checked: 2021-12-13 --- #: check_frequency: 7d
+# 
+#: note: Hermannstr., Richtung Süden
 	RW4; 12221,7271 12244,7205 12259,7164 12291,7074 12304,7039 12317,7007
+#: by: osm
+	RW4?; 12470,6586 12510,6508
 # 
 # REMOVED (korrekt) --- #: XXX Geltungszeit überprüfen!
 Busspur ist immer gültig	RW5; 3835,10352 3813,10435

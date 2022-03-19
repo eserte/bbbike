@@ -1147,14 +1147,7 @@ Edith-Kiss-Str.	1 12793,11132 12866,11256
 Garzauer Str.	1 21830,13688 21722,13708 21731,13789
 Flankenschanze	1 -3507,15341 -3534,15219
 Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,17088 10917,17088
-# 
-#: next_check_id: TRAMTURM-2021
-#: last_checked: 2022-03-05
-#: check_frequency: 180d
-#: next_check: 2022-12-22
-# sp‰ter wieder reaktivieren: Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
-Alt-Moabit - Invalidenstr.	2::inwork 7422,13012 7415,13060
-# 
+Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
 (Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14271,9712
 Parkaue	1s:q4 15406,12444 15408,12394 15370,12264
 Stahlheimer Str.	1 11727,16358 11698,16311
@@ -1715,11 +1708,11 @@ Ibsenstr.	1s:q1 10295,16667 10209,16674
 Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: add_fragezeichen: Ist die Einbahnstraﬂe mittlerweile f¸r Radfahrer offen? vvv
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
-#: by: http://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erw‰hnung der Lindenallee)
+#: by: http://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erw‰hnung der Lindenallee, mittlerweile status "Abgeschlossen")
 # REMOVED (Umbau ist erfolgt) --- #: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage) --- #: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage) --- #: osm_watch: way id="850742955" version="1" --- #: last_checked: 2021-09-05 --- #: check_frequency: 180d --- #: next_check: 2021-09-10 --- Ahornallee	1s:q3 1586,11483 1566,11409 1574,11379
 #: osm_watch: way id="24852084" version="11"
 #: last_checked: 2021-10-20
-#: check_frequency: 120d
+#: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Lindenallee	1s:q3 1429,11528 1403,11428
 #: by: ^^^
@@ -3371,7 +3364,7 @@ Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17497,8623 1764
 #: note: von Westen her offiziell nur f¸r Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschr‰nkungen
 #: osm_watch: way id="129104626" version="17"
 #: also_indoor: traffic (H,G,B(alle falsch))
-#: last_checked: 2022-01-25
+#: last_checked: 2022-03-19
 #: check_frequency: 90d
 #: next_check: 2022-04-30
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraﬂe, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -3708,13 +3701,13 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: XXX Gehweg der nˆrdlichen Seite ist schon weitgehend offen, s¸dliche Seite nur als Baustraﬂe erkennbar
 #: XXX ggfs. auch andere Seite des Platzes einzeichnen, ggfs. auch einen plaetze-orig-Eintrag machen
 #: osm_watch: way id="642581102" version="4"
-#: last_checked: 2022-03-12 (daf)
+#: last_checked: 2022-03-19
 #: check_frequency: 60d
 #: next_check: 2022-12-31
 Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 # 
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2022-03-05
+#: last_checked: 2022-03-19
 #: check_frequency: 45d
 Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeiten gesperrt	2::inwork 7959,13982 7997,13892 8025,13835
 #  
@@ -3732,12 +3725,7 @@ Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeite
 #: last_checked: 2022-03-05
 #: check_frequency: 60d
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
-# 
-#: next_check_id: EUROPACITY-2015
-#: last_checked: 2022-01-25
-#: check_frequency: 30d
-Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
-# 
+# REMOVED (offen) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # REMOVED (realisiert) --- #: next_check_id: WRIEZENERPARK-2019 --- #: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Wriezener%20Park.htm --- #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php --- #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschr‰nkungen geben? -> ja, siehe temp_blockings-Eintrag --- #: last_checked: 2020-07-09 --- #: check_frequency: 7d --- Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13161,11795 13120,11725 13095,11703
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaﬂnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13123,11675 13095,11703
 # REMOVED (offen) --- #: next_check_id: WRIEZENERPARK-2019 --- #: last_checked: 2020-11-12 --- Wriezener Park, Diagonalverbindung	2::inwork 13120,11725 13123,11675
@@ -3788,7 +3776,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
 #: osm_watch: way id="882672445" version="1"
-#: last_checked: 2022-01-25
+#: last_checked: 2022-03-19
 #: check_frequency: 60d
 Gustav-Bˆﬂ-Str.: Bauarbeiten, Komplettsperrung, Straﬂenf¸hrung wird neu gemacht	2::inwork 10673,12434 10772,12515
 # 
@@ -3860,7 +3848,7 @@ Henriette-Lustig-Str.: durch Bauz‰une abgesperrt	2::inwork 21476,5048 21380,5003
 #: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00 (bis Ende 2022, Gesamtbaumaﬂnahme bis 2023)
 #: note: laut rbb nur bis 31.08.2022
 # REMOVED --- #: XXX auﬂerdem: J¸denstr. wird zur Einbahnstraﬂe f¸r Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./J¸denstr. geben
-#: last_checked: 2022-03-16 vvv
+#: last_checked: 2022-03-19 vvv
 #: next_check: 2024-06-01 vvv
 Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285 10675,12280
@@ -3881,7 +3869,7 @@ Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 #: next_check_id: TACHELES-2020
 #: XXX Wann wird die Einbahnstraﬂenregelung wieder aufgehoben? (vermutlich zusammenh‰ngend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2022-02-09
+#: last_checked: 2022-03-19
 #: check_frequency: 60d
 Johannisstr.: Einbahnstraﬂe	1s:q3:inwork 9588,13174 9385,13174
 # 
@@ -4361,7 +4349,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="21"
 #: also_indoor: traffic
-#: last_checked: 2022-01-25
+#: last_checked: 2022-03-19
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
@@ -4420,7 +4408,7 @@ Wikingerufer: wegen Besch‰digungen an der Ufermauer gesperrt	2:inwork 5354,12552
 # REMOVED (gelˆscht) --- #: osm_watch: way id="33036326" version="7"
 #: osm_watch: way id="940764588" version="3"
 #: osm_watch: way id="940764584" version="3"
-#: last_checked: 2022-03-05 (osm)
+#: last_checked: 2022-03-19
 #: check_frequency: 360d
 #: next_check: 2023-06-30
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
@@ -4457,12 +4445,11 @@ Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
 #: XXX wird nach den Bauarbeiten die Einbahnstraﬂenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="7"
 #: last_checked: 2022-02-24 (mapillary) vvv
-#: check_frequency: 60d vvv
+# REMOVED (fertig?) --- #: check_frequency: 60d vvv
 #: also_indoor: traffic
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
-#: also_indoor: traffic (G)
-Margarete-Steffin-Str.: Einbahnstraﬂenregelung	1s:q4:inwork 8559,12912 8631,12848 8700,12810 8732,12804
-#: check_frequency ^^^
+# REMOVED (wieder offen) --- #: also_indoor: traffic (G) --- Margarete-Steffin-Str.: Einbahnstraﬂenregelung	1s:q4:inwork 8559,12912 8631,12848 8700,12810 8732,12804
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html

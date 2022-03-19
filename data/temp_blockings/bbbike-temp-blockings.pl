@@ -30891,7 +30891,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-03-10
+#: last_checked: 2022-03-19
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -33670,7 +33670,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Ernst-Heilmann-Steg gesperrt',
+       text  => 'Ernst-Heilmann-Steg gesperrt, möglicherweise bis Ende April 2022',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: wosch
@@ -33678,11 +33678,14 @@ EOF
 #: by: https://www.gmg-ing.de/referenzen/ernst-heilmann-steg-berlin/ ("Torsionsschwingungen")
 #: by: https://www.strassenbauportal.de/oeffentliche_ausschreibung_vobvol_details_10997_Berlin_Instandsetzung_Stahlbau_1924073.html (Ausschreibung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10215 (Anfrage)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10215&date=20220319 (mögliche Freigabe vor Ostern 2022, spätestens Ende April 2022)
 # REMOVED (eins reicht) --- #: osm_watch: note 2867467 2
 #: osm_watch: way id="16311543" version="19"
 #: also_indoor: search Ernst-Heilmann-Steg
+#: priority: #A
 #: last_checked: 2022-03-09 (mapillary)
-#: check_frequency: 120d
+#: check_frequency: 30d
+#: next_check: 2022-04-30
 	2::inwork 13270,10030 13306,10006
 EOF
      },

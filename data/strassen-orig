@@ -1693,9 +1693,9 @@ Invalidenstr.	H 8098,13419 8003,13374 7880,13315 7842,13292 7816,13276 7759,1324
 #: by: https://viz.berlin.de/2022/01/invalidenstrasse-sperrung/ (Radverkehr kann den gesperrten Bereich passieren)
 #: by: https://www.berliner-woche.de/moabit/c-verkehr/bvg-verlegt-tramgleise_a333938
 #: by: https://www.berliner-woche.de/moabit/c-verkehr/arbeiten-fuer-m10-schreiten-voran_a336662
-#: XXX weitere Einschränkungen für den Kfz-Verkehr (nicht eingezeichnet): Turmstr. Richtung Westen zwischen Rathenower Str. und Lübecker Str. gesperrt (Radweg existiert); Thusnelda-Allee gesperrt (Radweg existiert); neu: Alt-Moabit zwischen Paulstr. und Lüneburger Str.
+#: XXX weitere Einschränkungen für den Kfz-Verkehr (nicht eingezeichnet): Turmstr. Richtung Westen zwischen Rathenower Str. und Lübecker Str. gesperrt (Radweg existiert); Thusnelda-Allee gesperrt (Radweg existiert); neu: Alt-Moabit zwischen Paulstr. und Lüneburger Str.; außerdem sind diverse Ampeln ausgeschaltet
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-03-05 vvv
+#: last_checked: 2022-03-19 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2022-12-22 vvv
 #: valid: 20220119-20221222 vvv
@@ -1720,7 +1720,7 @@ Otto-Weidt-Platz	NN 7732,14131 7818,14185 7866,14215
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php
 #: by: https://www.berliner-woche.de/moabit/c-bauen/golda-meir-steg-verbindet-jetzt-moabit-mit-mitte_a330725
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2022-03-12 (daf)
+#: last_checked: 2022-03-19
 #: check_frequency: 60d
 #: next_check: 2022-12-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7818,14185 7861,14133
@@ -1732,8 +1732,9 @@ Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7802,14250 7781,14238 7
 (Hedwig-Porschütz-Str. - Uferweg)	NN 7802,14250 7830,14268
 Lisa-Fittko-Str.	N 7734,13944 7820,13994
 George-Stephenson-Str.	N 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 7734,13944
+#: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
-#: last_checked: 2022-03-05
+#: last_checked: 2022-03-19
 #: check_frequency: 90d
 #: osm.highway: service
 Hans-Peters-Platz	N 7732,14131 7679,14030

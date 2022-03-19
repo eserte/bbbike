@@ -213,7 +213,7 @@ Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 #: next_check_id: CHAUSSEE-2020
 #: source_id: 2147346552 (bis 16.7.2021)
 #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert) (mittlerweile bis 31.7.2022)
-#: last_checked: 2022-03-12 (daf)
+#: last_checked: 2022-03-19
 #: check_frequency: 60d
 #: next_check: 2022-07-31
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456
@@ -258,7 +258,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-03-16
+#: last_checked: 2022-03-19
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -298,7 +298,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="11"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-02-09
+#: last_checked: 2022-03-19
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -542,6 +542,12 @@ Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160319 --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463650.php --- #: note: vor Ort sahen die Beeinträchtigungen nicht so groß aus --- #: source_id: 2147339863 --- #: valid: 20160627-20161130 --- S-Bhf. Friedrichshagen: Bauarbeiten	q2::inwork 25579,5958 25584,6029
 # 
 ### Moabit ###
+# 
+#: next_check_id: TRAMTURM-2021
+#: last_checked: 2022-03-05
+#: check_frequency: 180d
+#: next_check: 2022-12-22
+Alt-Moabit - Invalidenstr.: Bauarbeiten, engen Gehweg benutzen	q4::inwork 7422,13012 7415,13060
 # 
 #: by: https://www.bahninfo-forum.de/read.php?9,689330,689356#msg-689356 (2021)
 #: by: https://www.berliner-woche.de/moabit/c-verkehr/kein-halt-an-der-birkenstrasse_a334325 (geplant für 1. Quartal 2022)
