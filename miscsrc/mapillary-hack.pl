@@ -16,6 +16,8 @@ use strict;
 use warnings;
 use lib "$ENV{HOME}/src/bbbike";
 
+use File::Basename qw(dirname);
+use File::Path qw(make_path);
 use Getopt::Long;
 use JSON::XS qw(decode_json);
 use LWP::UserAgent;
@@ -107,6 +109,10 @@ for my $image (@$data) {
 
 my $ofh;
 if (defined $output_filename) {
+    my $output_dirname = dirname $output_filename;
+    if (!-d $output_dirname) {
+	make_path $output_dirname;
+    }
     open $ofh, ">", "$output_filename~"
 	or die "Can't write to $output_filename~: $!";
 } else {
