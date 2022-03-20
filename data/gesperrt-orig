@@ -1373,6 +1373,8 @@ Eythstr. (Wendeschleife)	1 7682,5963 7615,5938 7606,5939 7618,5960 7638,5967 768
 Röblingstr.	1 7598,5926 7606,5939
 Röblingstr.	1 7615,5938 7598,5926
 Birkbuschstr. - Wolfensteindamm	1 4794,5161 4810,5134 4822,5114
+#: note: keine echte Einbahnstraße, aber die Raoul-Wallenberg-Str. ist hier nur unbequem zu überqueren
+(S-Bhf. Raoul-Wallenberg-Str. - Raoul-Wallenberg-Str.)	1::igndisp 20212,16252 20116,16228
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -3323,6 +3325,11 @@ zwei Drängelgitter (Z-Anordnung)	BNP:5::trailer=15 18848,3600
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+#
+#: next_check_id: FALKENBERG-2021
+#: last_checked: 2022-03-20
+#: check_frequency: 150d
+Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943 20948,18968
 # 
 #: by: https://www.hedwigs-kathedrale.de/umgestaltung/ (Umbauarbeiten bis 1. November 2023 geplant)
 #: last_checked: 2022-02-12
@@ -3907,8 +3914,9 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwor
 #: source_id: viz2021:13.557685,52.561638,03.06.2019,12:00 (bis Ende 2022)
 #: source_id: viz2021:13.558565,52.562687,03.06.2019,12:00 (bis Ende 2022)
 #: XXX Wann wird die Brücke wieder eröffnet?
-#: last_checked: 2021-05-08
-#: next_check: 2022-12-31
+#: last_checked: 2022-03-20
+#: check_frequency: 360d
+#: next_check: 2025-06-30
 #: valid: 20190603-20250630
 Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
 # 
@@ -3955,7 +3963,7 @@ Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738
-#: last_checked: 2022-03-13
+#: last_checked: 2022-03-20 (krickstadt)
 #: check_frequency: 360d
 #: next_check: 2022-12-20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612

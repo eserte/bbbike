@@ -33249,7 +33249,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-03-13
+#: last_checked: 2022-03-20
 #: check_frequency: 30d
 #: next_check: 2022-04-29
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -33871,7 +33871,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WUHLETALHAVEMANN-2021
 #: add_fragezeichen: Wann sind die Bauarbeiten hier abgeschlossen und die Sperrung aufgehoben?
-#: last_checked: 2022-02-20 (mapillary)
+#: last_checked: 2022-02-27 (mapillary)
 # REMOVED --- #: next_check: 2022-03-01
 	2::inwork 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198 21871,18244
 EOF
@@ -34411,13 +34411,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Zwieseler Str.: Zufahrt zum Richard-Kolkwitz-Weg kann wegen Bauarbeiten gesperrt sein, auch für Fußgänger',
+       text  => 'Zwieseler Str.: Zufahrt zum Richard-Kolkwitz-Weg kann wegen Bauarbeiten gesperrt sein, auch für Fußgänger (Stand Mitte März 2022: zumindest am Wochenende passierbar)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZWIESELER-2022
 #: XXX Stand 2022-01-21: Verbotsschild für Fußgänger am nördlichen Ende, Verbot für Fahrzeuge aller Art außer Grundstücksanlieger am südlichen Ende, man kann aber trotzdem passieren. Stand 2022-02-26: Passieren weiterhin möglich.
 #: XXX Halteverbotsschilder gelten bis Ende Juni 2023
-#: last_checked: 2022-02-26 (mapillary)
+#: last_checked: 2022-03-20
 #: check_frequency: 120d
 #: next_check: 2023-06-30
 	2::inwork 19711,10426 19697,10210
@@ -34731,6 +34731,18 @@ EOF
        source_id => '227300117',
        data  => <<EOF,
 	2::inwork 49004,64047 48516,64085 48151,64245
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hannaweg: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, Ausweichen auf engen Gehweg, Bordsteine, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: XXX Evtl. gab es hier früher eine Einbahnstraßenregelung, die nach den Bauarbeiten wieder aktiviert wird.
+#: last_checked: 2022-03-20
+#: check_frequency: 60d
+	q4::inwork 20923,13953 20938,14066
 EOF
      },
     );

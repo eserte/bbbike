@@ -902,6 +902,7 @@ Eythstr. (Wendeschleife)	1 7682,5963 7615,5938 7606,5939 7618,5960 7638,5967 768
 Röblingstr.	1 7598,5926 7606,5939
 Röblingstr.	1 7615,5938 7598,5926
 Birkbuschstr. - Wolfensteindamm	1 4794,5161 4810,5134 4822,5114
+(S-Bhf. Raoul-Wallenberg-Str. - Raoul-Wallenberg-Str.)	1::igndisp 20212,16252 20116,16228
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3178,6 +3179,7 @@ Drängelgitter	BNP:3:-32:trailer=10 18232,1669
 Drängelgitter	BNP:3:-147:trailer=10 20560,23
 Drängelgitter	BNP:3:-106:trailer=10 20675,56
 zwei Drängelgitter (Z-Anordnung)	BNP:5:-225:trailer=15 18848,3600
+Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943 20948,18968
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
 Überqueren wegen eines Gerüsts nicht möglich	3nocross::ignrte 3570,17938 3706,17931 3833,17929
 Seidelstr. -> Weg am Kienhorstgraben: Überqueren wegen eines Gerüsts nicht möglich	3::igndisp 3570,17938 3706,17931 3723,17979

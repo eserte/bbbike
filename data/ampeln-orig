@@ -114,15 +114,17 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: XXX Wann werden die Ampeln wieder abgebaut? vvv
-#: last_checked: 2021-12-22 (mapillary) vvv
-#: next_check: 2022-12-31 vvv
-#: valid: 20190603-20221231 vvv
+#: last_checked: 2022-03-20 vvv
+#: check_frequency: 360d vvv
+#: next_check: 2025-06-30 vvv
+#: valid: 20190603-20250630 vvv
 #: note: die beiden folgenden Punkte gehören eigentlich zu einer Ampelanlage
 	X::inwork 20891,17572
 	X::inwork 20895,17594
 	X::inwork 20769,17650
 #: valid ^^^
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -1872,7 +1874,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 16961,16042
 	X 16653,16150
 	X 18601,18342
+#: XXX_prog: gilt nicht auf dem Radweg im Zuge der Wartenberger Str. Richtung Nordosten
 	X 17516,16208
+#: XXX_prog: gilt nicht auf dem Radweg im Zuge der Wartenberger Str., S->NO
 	X 17425,16165
 	X 21251,18508
 #: XXX_prog: nur eine Ampel: vvv
@@ -2296,6 +2300,8 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: by: Andreas Mühlhausen: vvv
 #: note: Anforderungsampel
 	F 14624,16659
+#: note: Anforderungsampel
+#: XXX_prog gilt nicht auf dem Radweg Richtung Nordosten
 	F 18179,16534
 #: corrected_by: srt (X -> F)
 	F 5294,7216
@@ -2573,6 +2579,8 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 4924,3148
 	X -3923,13060
 	B -5242,17405
+#: XXX_prog: Ampel gilt nicht auf dem Radweg
+#: note: Anforderungsampel
 	F 17130,16032
 	F 21539,17442
 	F 17202,10355
@@ -2832,7 +2840,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Abends meist (immer?) ausgeschaltet, und auch sonntags (Sa 2014-09-27 15:30 eingeschaltet; Sa 2015-09-12 17:30 eingeschaltet; Sa 2016-02-13 14 und 16 Uhr eingeschaltet, Sa 2016-06-04 gegen 17 Uhr eingeschaltet)
 #: note: Anforderungsampel
 #: off: night
-#: off: Sunday & holiday (seen 2014-09-21 afternoon, 2015-03-15 afternoon, 2015-05-10 afternoon, 2015-08-09 afternoon, 2016-05-29 afternoon, 2016-06-16 noon, 2017-12-03 noon, 2019-12-26 noon)
+#: off: Sunday & holiday (seen 2014-09-21 afternoon, 2015-03-15 afternoon, 2015-05-10 afternoon, 2015-08-09 afternoon, 2016-05-29 afternoon, 2016-06-16 noon, 2017-12-03 noon, 2019-12-26 noon, 2022-03-20 noon)
 	F 14802,11784
 	X -1810,16391
 	X -1675,16813
@@ -3484,13 +3492,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296478" version="1"
 #: note: Anforderungsampel
-#: last_checked: 2022-03-13
+#: last_checked: 2022-03-20 (krickstadt)
 #: check_frequency: 90d
 	F::inwork 17695,5394
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296482" version="3"
 #: note: Anforderungsampel
-#: last_checked: 2022-03-13
+#: last_checked: 2022-03-20 (krickstadt)
 #: check_frequency: 90d
 	F::inwork 17747,5452
 # 

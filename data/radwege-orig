@@ -726,7 +726,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
-#: last_checked: 2022-03-18
+#: last_checked: 2022-03-20
 #: check_frequency: 30d
 #: next_check: 2022-03-31
 	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
@@ -3459,7 +3459,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: osm_watch: way id="865716506" version="7"
-#: last_checked: 2022-02-12 (mapillary) vvv
+#: last_checked: 2022-03-20 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-06-01 vvv
 # REMOVED ---	RW0; 21190,12193 21166,12023
@@ -5749,8 +5749,8 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 7482,4416 7597,4499
 	RW6;RW6 20586,18822 20694,18857
 	RW6;RW6 20635,18707 20553,18734 20494,18755
 	RW6;RW6 20701,18634 20702,18662 20727,18726 20760,18812 20790,18892
-	RW6;RW6 20727,18726 20901,18793 21038,18851 21028,18915 20998,18980
-	RW6;RW6 20760,18812 20894,18861 21028,18915
+# REMOVED (mittlerweile nur Tempo 20) ---	RW6;RW6 20727,18726 20901,18793 21038,18851 21036,18888 21028,18915 20998,18980
+# REMOVED (mittlerweile nur Tempo 20) ---	RW6;RW6 20760,18812 20894,18861 21028,18915
 asphaltiert	RW8;RW2 21165,18715 21137,18782
 	RW4;RW2 20160,18301 20173,18306 20458,18424 20582,18475 20612,18487 20622,18491 20743,18540 20922,18613
 	RW3;RW2 20922,18613 21165,18715
@@ -5927,7 +5927,7 @@ Verbundsteinpflaster	RW1; 21170,16942 21390,16903
 gemeinsamer Geh- und Radweg	RW2; 20832,15981 20712,16011 20636,16046
 	RW2; 20712,16011 20832,15981
 #: note: alter DDR-Radweg, an Kreuzungen entfernt sich der Radweg von der Hauptstraße vvv
-	RW1;RW1 20120,16297 20372,16173 20394,16162 20479,16124 20636,16046
+	RW1;RW1 20120,16297 20212,16252 20372,16173 20394,16162 20479,16124 20636,16046
 	RW1; 20636,16046 20712,16011
 #: note ^^^
 Busspur gilt Mo-Fr 14-18 Uhr	RW5; 21187,15350 21228,15449 21242,15529
