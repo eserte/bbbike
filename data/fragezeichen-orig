@@ -3551,6 +3551,18 @@ Bebauungsplan 3-65 ("Grundschule Heinersdorfer Straße"): Fußgänger- und Radfahre
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=715173#post715173
+#: XXX anscheinend gibt es schon teilweise einen Uferweg, an der Spreestr. fehlt noch ein Abschnitt
+#: last_checked: 2022-03-20 (daf)
+#: check_frequency: 60d
+Spreestr.: Uferweg an der Spree	? 21901,5117 21817,5164 21753,5250 21692,5401 21632,5483
+# 
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1188135.php
+#: XXX Wird hier tatsächlich eine Radspur auf der Fahrbahn erstellt?
+#: priority: #B
+#: next_check: 2022-04-01
+Unter den Eichen: Markierungsarbeiten für den Radstreifen?	?; 4343,5112 4173,5013 4153,5001 4132,4988 3929,4863 3826,4800
+# 
 #: last_checked: 2022-03-06
 Stolzenfelsstr.: Bauarbeiten am für Radfahrer freigegeben Gehweg, möglicherweise wird hier auch Verbundsteinpflaster verlegt	?::inwork 19333,8165 19407,8143 19447,8175
 # 
@@ -4318,6 +4330,7 @@ Hönower/Karlshafener Str.: entsteht hier eine Fußgängerampel?	?::projected 24895
 #: by: https://stefan-ziller.eu/wp-content/uploads/2022/01/211217-Anlage-2-J-Offenbach-Platz-Lage-800x445.jpg (4 Zebrastreifen)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1187303.php (bis Ende 2022)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/ab-21-maerz-baut-der-senat-vier-fussgaengerueberwege-am-jacques-offenbach-platz_a338588
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1188073.php (Abschluss der Bauarbeiten: Dezember 2022)
 #: source_id: 2147347010 (Bau einer Fahrbahnquerung, bis 1.4.2021)
 #: source_id: viz2021:13.612191,52.513569,16.11.2021,10:00 (Leitungsarbeiten, bis 31.12.2021) (mittlerweile bis 8.12.2021)
 #: note: laut rbb "bis auf weiteres"
@@ -4522,7 +4535,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1113179.php (Beteiligung bis 31.8.2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10119 (Einwohnerfrage)
 #: osm_watch: way id="4685729" version="21"
-#: last_checked: 2022-03-15
+#: last_checked: 2022-03-21
 #: check_frequency: 60d
 Waldeyerstr.: wird es hier zu weiteren Einschränkungen für den Radverkehr kommen?	? 15058,12329 15003,12241
 # 
@@ -5225,7 +5238,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 18
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2022-03-18
+#: last_checked: 2022-03-21
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: by: https://api.fixmyberlin.de/api/projects/328 (Grünmarkierung + Verbreiterung, teilweise Leitboys)
@@ -5475,7 +5488,7 @@ Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projecte
 #: by: https://www.berliner-woche.de/friedrichshagen/c-verkehr/bvv-beschluss-zur-nawrocki-strasse_a298007
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036824237869/824237869/00334544/44-Anlagen/04/B1148ZB.pdf (Zwischenbericht)
 #: osm_watch: way id="9702843" version="19"
-#: last_checked: 2021-10-24
+#: last_checked: 2022-03-19 (mapillary)
 #: check_frequency: 180d
 Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,4829 25554,4758 25695,4714 25724,4706 25796,4683
 # 
@@ -5488,7 +5501,7 @@ Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,48
 Regattastr.: Fahrradstraße soll eingerichtet werden	?::projected 23252,792 23501,797 23681,800 23953,731 24011,710 24197,585 24571,514 24666,436
 #: XXX Maßnahme Gr.6 + Sw.1
 #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/bezirksamt-prueft-die-einrichtung-von-weiteren-fahrradstrassen_a317157 (Erwähnung)
-#: osm_watch: way id="10671504" version="19"
+#: osm_watch: way id="10671504" version="21"
 #: last_checked: 2022-03-05 (mapillary)
 #: check_frequency: 180d
 Sportpromenade: Fahrradstraße soll eingerichtet werden	?::projected 25646,-209 25768,-457 25958,-731
@@ -5499,7 +5512,7 @@ Sportpromenade: Fahrradstraße soll eingerichtet werden	?::projected 25646,-209 2
 # REMOVED (realisiert) --- Rehfeldtstr./Rohrwallallee: Verbesserung der Befahrbarkeit geplant	?::inwork 26389,-932 26445,-1037
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2018 bereits umgesetzt?) --- #: osm_watch: way id="21721170" version="21" --- #: last_checked: 2018-08-12 --- #: next_check: 2018-12-31 --- Karolinenhofweg: wurde die Befahrbarkeit verbessert (Asphaltierung?)?	? 26129,-807 26107,-833 26077,-846
 #: XXX Maßnahme Sw.3
-#: osm_watch: way id="176187626" version="3"
+#: osm_watch: way id="176187626" version="4"
 #: last_checked: 2022-03-05 (mapillary)
 #: check_frequency: 180d
 Rohrwallallee - Windwallstr.: Asphaltstreifen soll eingerichtet werden	?::projected 26662,-1914 26728,-2030 26846,-2176 26869,-2191 26898,-2242 26988,-2301 27021,-2336
@@ -7933,14 +7946,17 @@ Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23305,14914 23110,14945 231
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtgut-hellersdorf-alt-hellersdorf.841/post-10583
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf (Straßenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_54_4961_5184_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berliner-woche.de/hellersdorf/c-bauen/das-stadtgut-hellersdorf-soll-heimat-fuer-einen-bunten-mix-an-unternehmen-werden_a338531 (einige Wohnungen sind ab 1.4.2021 bezugsfertig (Zossener, Brigitte-Reimann-Str.))
 #: XXX evtl. 10-44 und 10-45 verbinden; könnte das gleiche Bauprojekt sein
 #: XXX Brigitte-Reimann-Str. (PLZ=12629) fehlt in Berlin.coords.data
 #: osm_watch: way id="504240852" version="7"
 #: last_checked: 2022-02-09 (architektur-urbanistik) vvv
 #: check_frequency: 90d vvv
+#: next_check: 2022-04-01 vvv
 geplanter Rad- und Fußweg	?::projected 23265,15351 23368,15362
 geplante Straßen bzw. Rad- und Fußweg	?::projected 23391,15298 23324,15292 23280,15244
 Planstraße D: geplante neue Straße, geplanter Name "Brigitte-Reimann-Str."	?::projected 23368,15469 23363,15517 23386,15621
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^

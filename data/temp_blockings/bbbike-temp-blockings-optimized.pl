@@ -1922,6 +1922,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
 #: priority: #A
 #: next_check: 2022-03-23
 	2::temp -2218,5133 -927,6888
@@ -2443,7 +2444,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (H,B,G)
 #: osm_watch: way id="1006570991" version="1"
 #: last_checked: 2022-02-20 (traffic)
-#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 30d
 #: next_check: 2022-03-31
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
@@ -3643,7 +3644,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1635634800,
          'id' => 3474,
          'source_id' => 'LS/721-E/21/142',
-         'text' => 'Bernau - Lanke: Bauarbeiten, Sperrung, vom 01.11.2021 bis 22.04.2022',
+         'text' => 'Bernau - Lanke: Bauarbeiten, Sperrung, für Radfahrer unter Umständen bereits passierbar, vom 01.11.2021 bis 22.04.2022',
          'type' => 'gesperrt',
          'until' => 1650643200
        },
@@ -4130,6 +4131,19 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'id' => 3527,
          'text' => 'Hannaweg: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, Ausweichen auf engen Gehweg, Bordsteine, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: STADTPARKLICHTENBERG-2022
+#: priority: #B
+#: last_checked: 2022-03-21
+#: check_frequency: 7d
+	2::inwork 15457,12449 15454,12519
+',
+         'from' => undef,
+         'id' => 3528,
+         'text' => 'Stadtpark Lichtenberg: Bauarbeiten, Wege können gesperrt sein',
+         'type' => 'gesperrt',
          'until' => undef
        }
      

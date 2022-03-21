@@ -10,6 +10,12 @@
 # 
 ### Friedrichshain ###
 # 
+#: next_check_id: FRANKFURTER-2021
+#: last_checked: 2022-03-21
+#: check_frequency: 30d
+#: next_check: 2022-03-31
+Jessnerstr.: Bauarbeiten an der Kreuzung Frankfurter Allee, schmalen Gehweg nutzen	q2::inwork 15077,11910 15117,12106
+# 
 #: next_check_id: MUEHSAM-2022
 #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022
 #: XXX Datensatz in gesperrt-orig beachten!
@@ -558,6 +564,7 @@ Alt-Moabit - Invalidenstr.: Bauarbeiten, engen Gehweg benutzen	q4::inwork 7422,1
 #: by: https://www.berliner-woche.de/moabit/c-verkehr/kein-halt-an-der-birkenstrasse_a334325 (geplant für 1. Quartal 2022)
 #: by: https://berliner-abendblatt.de/2022/01/24/kein-halt-am-u-bahnhof-birkenstrasse/
 #: by: https://berliner-abendblatt.de/2022/03/16/bahnhof-birkenstrasse-jetzt-stufenlos-erreichbar/
+#: by: https://www.berliner-woche.de/moabit/c-bauen/u-bahnhof-birkenstrasse-erhielt-weiteren-ausgang_a339752
 #: XXX vermutlich wegen des neuen Aufzugs am U-Bhf. Birkenstr.
 #: also_indoor: traffic (ex-G,H)
 #: osm_watch: way id="746589388" version="17"

@@ -26216,6 +26216,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
 #: priority: #A
 #: next_check: 2022-03-23
 	2::temp -2218,5133 -927,6888
@@ -29507,7 +29508,7 @@ EOF
 #: also_indoor: traffic (H,B,G)
 #: osm_watch: way id="1006570991" version="1"
 #: last_checked: 2022-02-20 (traffic)
-#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 30d
 #: next_check: 2022-03-31
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
@@ -33992,7 +33993,7 @@ EOF
      },
      { from  => 1635634800, # 2021-10-31 01:00
        until => $isodate2epoch->("2022-04-22 18:00:00"), # 1642287600, # 2022-01-16 00:00
-       text  => 'Bernau - Lanke: Bauarbeiten, Sperrung, vom 01.11.2021 bis 22.04.2022',
+       text  => 'Bernau - Lanke: Bauarbeiten, Sperrung, für Radfahrer unter Umständen bereits passierbar, vom 01.11.2021 bis 22.04.2022',
        type  => 'gesperrt',
        source_id => 'LS/721-E/21/142',
        data  => <<EOF,
@@ -34743,6 +34744,18 @@ EOF
 #: last_checked: 2022-03-20
 #: check_frequency: 60d
 	q4::inwork 20923,13953 20938,14066
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Stadtpark Lichtenberg: Bauarbeiten, Wege können gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: STADTPARKLICHTENBERG-2022
+#: priority: #B
+#: last_checked: 2022-03-21
+#: check_frequency: 7d
+	2::inwork 15457,12449 15454,12519
 EOF
      },
     );
