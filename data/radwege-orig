@@ -970,7 +970,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,12.01.2022,11:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-03-22 vvv
+#: last_checked: 2022-03-23 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169
@@ -1330,7 +1330,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2022-02-23 vvv
+#: last_checked: 2022-03-23 vvv
 #: check_frequency: 30d vvv
 #	RW1;RW2 14051,6731 14139,6786 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
@@ -1385,7 +1385,7 @@ die ersten 50 Meter mit abgesperrtem Radweg	RW0; 15591,8848 15558,8820 15378,866
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX südlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2022-01-23
+#: last_checked: 2022-03-23
 #: check_frequency: 120d
 # früher: Verbundsteinpflaster	RW1; 14089,9610 14185,9509
 Asphalt, provisorische Wegführung	RW8; 14089,9610 14185,9509
@@ -1740,11 +1740,11 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2022-03-07
+#: last_checked: 2022-03-23
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
-	RW4;RW4 14261,8851 14318,8790 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
+	RW4;RW4 14261,8851 14318,8790 14363,8738 14560,8528 14700,8368 14841,8207 14976,8053 15053,7966
 	RW4;RW3 15053,7966 15221,7778
 # 
 # REMOVED (realisiert) --- #: XXX Grünmarkierung in der Reinickendorfer Str. vorgesehen vvv --- #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/ --- #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (nicht mehr 2019) --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.925421.php (ab 27. April 2020, bis Anfang Juli 2020 abgeschlossen) --- #: by: https://www.berliner-woche.de/wedding/c-verkehr/radwege-werden-gruen_a263962 --- #: by: https://twitter.com/GBinfraVelo/status/1258447321551036418 (erste Teilstücke sind schon fertig --- wo?) --- #: by: https://twitter.com/VIZ_Berlin/status/1268162272238673920 --- #: by: https://api.fixmyberlin.de/api/projects/409 --- #: priority: #D vvv --- #: last_checked: 2020-06-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2020-07-01 vvv
@@ -2232,7 +2232,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2022-03-19
+#: last_checked: 2022-03-18 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -4217,7 +4217,7 @@ Grünmarkierung	RW3; 13336,6986 13500,7018 13627,7047 13891,7107
 	RW1;RW1 14069,7100 14196,7086 14310,7022 14344,7003
 	RW1; 14344,7003 14567,6810
 bestehender Radweg abgesperrt	RW0; 14567,6810 14344,7003
-	RW1;RW1 14567,6810 14724,6668 14853,6550 15026,6391 15135,6291 15187,6245 15300,6148 15332,6138
+	RW1;RW1 14567,6810 14724,6668 14843,6558 15026,6391 15135,6291 15187,6245 15300,6148 15332,6138
 asphaltiert	RW1;RW1 -1102,3345 -1122,3372
 asphaltiert	RW1;RW1 -1102,3345 -1054,3328 -1026,3321
 	RW1;RW1 17293,6230 17432,6352
@@ -5535,12 +5535,12 @@ einige Meter Radspur an der Salvador-Allende-Str.	RW0;RW0 23388,4864 23451,4877
 #: confirmed_by: srt (+ Benutzungspflicht) (mittlerweile ist die Benutzungspflicht zumindest Richtung Westen entfallen)
 	RW1;RW2 24215,15057 24139,15046 24063,15035 23960,15021
 #: by: ^^^
+# 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20071108.1600.88578.html (Luftbild ist nicht immer eindeutig)
-#: by: Uwe Vogel: vvv
+#: by: Uwe Vogel:
 #: confirmed_by: srt
-	RW1;RW1 16182,2200 16318,2146 16518,2122 16570,2113
-	RW1;RW 16570,2113 16809,2091
-#: by: ^^^
+	RW1;RW1 16182,2200 16318,2146 16518,2122 16570,2113 16809,2091
+# 
 #: note: ein anonymer Beitrag meint dazu "katastrophaler Radweg ohne Pflicht" --- ich bin ihn nicht gefahren
 betoniert	RW1; 24639,10766 24593,10775 24458,10800 24363,10818 24229,10843
 	RW6;RW6 17827,3549 17892,3550
@@ -7483,4 +7483,9 @@ Gehweg für Radfahrer frei, alter Asphalt, schmal	RW1; 12666,23223 12805,23268 12
 #: note: vor der Bahnbrücke waghalsige Ausfädelung auf die Fahrbahn, oder man fährt weiter auf den wieder schmalen Gehweg
 Gehweg für Radfahrer frei, Asphalt, relativ breit	RW1; 12937,23357 13012,23424
 #: by: ^^^
+# 
+#: note: grünes Schild vvv
+	RW6;RW6 14771,8142 14903,7997 14962,7934
+	RW6;RW6 14903,7997 14968,8046 14976,8053
+#: note ^^^
 # 

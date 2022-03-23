@@ -26201,9 +26201,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2022-03-22 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-03-23 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 23. März 2022 ab ca. 09:15 Uhr',
+     { from  => $isodate2epoch->("2022-04-12 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-04-13 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 13. April 2022 ab ca. 09:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26218,7 +26218,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
 #: priority: #A
-#: next_check: 2022-03-23
+#: next_check: 2022-04-13
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
@@ -33802,7 +33802,7 @@ EOF
        source_id => 'viz2021:13.374359,52.586234,09.03.2021,07:00',
        data  => <<EOF,
 #: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
-#: last_checked: 2022-01-01 (mapillary)
+#: last_checked: 2022-03-18 (mapillary)
 #: next_check: 2022-04-30
 	q4::inwork; 8196,20096 8224,19977 8234,19936
 EOF
@@ -34756,6 +34756,28 @@ EOF
 #: last_checked: 2022-03-21
 #: check_frequency: 7d
 	2::inwork 15457,12449 15454,12519
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Neuköllnische Wiesen: Tor kann möglicherweise verschlossen sein', # nachts? am Wochenende?
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: note: Tor offen, gesehen am 2022-03-23 mittags vvv
+	3 14976,8053 14968,8046 14903,7997
+	3 14903,7997 14968,8046 14976,8053
+#: note ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Dieselstr. - westlicher Mergenthalerring: Durchfahrt kann möglicherweise durch Bauzäune versperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: note: Durchfahrt möglich, gesehen am 2022-03-23 mittags
+#: XXX Bleibt es bei der möglichen Durchfahrt?
+#: last_checked: 2022-03-23
+	2 14249,8075 14239,8095 14247,8254 14229,8278
 EOF
      },
     );

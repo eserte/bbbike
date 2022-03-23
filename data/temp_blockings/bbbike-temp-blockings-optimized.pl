@@ -1924,16 +1924,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
 #: priority: #A
-#: next_check: 2022-03-23
+#: next_check: 2022-04-13
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
 ',
-         'from' => 1647903600,
+         'from' => 1649714400,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 23. März 2022 ab ca. 09:15 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 13. April 2022 ab ca. 09:15 Uhr',
          'type' => 'gesperrt',
-         'until' => 1648026900
+         'until' => 1649837700
        },
        undef,
        {
@@ -3547,7 +3547,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
-#: last_checked: 2022-01-01 (mapillary)
+#: last_checked: 2022-03-18 (mapillary)
 #: next_check: 2022-04-30
 	q4::inwork; 8196,20096 8224,19977 8234,19936
 ',
@@ -4143,6 +4143,30 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => undef,
          'id' => 3528,
          'text' => 'Stadtpark Lichtenberg: Bauarbeiten, Wege können gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: note: Tor offen, gesehen am 2022-03-23 mittags vvv
+	3 14976,8053 14968,8046 14903,7997
+	3 14903,7997 14968,8046 14976,8053
+#: note ^^^
+',
+         'from' => undef,
+         'id' => 3529,
+         'text' => 'Neuköllnische Wiesen: Tor kann möglicherweise verschlossen sein',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: note: Durchfahrt möglich, gesehen am 2022-03-23 mittags
+#: XXX Bleibt es bei der möglichen Durchfahrt?
+#: last_checked: 2022-03-23
+	2 14249,8075 14239,8095 14247,8254 14229,8278
+',
+         'from' => undef,
+         'id' => 3530,
+         'text' => 'Dieselstr. - westlicher Mergenthalerring: Durchfahrt kann möglicherweise durch Bauzäune versperrt sein',
          'type' => 'gesperrt',
          'until' => undef
        }

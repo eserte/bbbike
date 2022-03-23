@@ -133,9 +133,8 @@ asphaltiert, teilweise leicht wellig	RW8;RW2 22771,16194 22809,16240 22889,16350
 Betonplatten	RW2; 22771,16194 22974,16139 23162,16095
 	RW3; 23162,16095 22974,16139 22771,16194
 Betonplatten	RW2; 23162,16095 23565,15993 23895,15904
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9544 (kein Radweg mehr?)
-#: XXX existiert hier noch ein Radweg? laut osm nicht mehr...
-Betonplatten	RW; 23895,15904 23565,15993 23162,16095
+# REMOVED (man wird per Spur auf den Bürgersteig geleitet) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9544 (kein Radweg mehr?) --- #: XXX existiert hier noch ein Radweg? laut osm nicht mehr...
+Verbundsteinpflaster	RW1; 23895,15904 23565,15993 23162,16095
 	RW1; 23895,15904 23965,15894 23992,15894
 Verbundsteinpflaster/Betonplatten	RW8;RW2 25632,11132 25912,11081
 	RW8;RW2 25912,11081 26449,10953 26596,10921
@@ -1884,6 +1883,7 @@ asphaltiert	RW8;RW2 66140,22621 65524,23028
 #: by ^^^
 # 
 #: by: mapillary vvv
+	RW4; 23965,15894 23895,15904
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 23176,30427 23110,30313 23073,30296 23014,30300 22959,30307
 	RW6;RW6 24105,-7174 24122,-7213 24248,-7168 24236,-7136
 Asphalt	RW2;RW8 -6021,-7385 -6319,-7795 -6711,-8160 -6781,-8172

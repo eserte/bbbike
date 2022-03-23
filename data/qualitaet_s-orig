@@ -13,7 +13,7 @@
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 # REMOVED --- #: osm_watch: way id="524560334" version="5"
 #: osm_watch: way id="524560332" version="5"
-#: last_checked: 2022-01-23 vvv
+#: last_checked: 2022-03-23 vvv
 #: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="3"
@@ -1628,7 +1628,7 @@ Wullenweberstr.: eher unangenehmes Kopfsteinpflaster	Q2- 5354,12552 5372,12538 5
 (Gemeindewäldchen): Parkweg	Q1 452,3133 71,3179
 Beerenstr.: Kopfsteinpflaster	Q2 71,3179 -107,3194 -179,3204 -300,3219 -434,3236 -530,3241 -654,3249 -779,3257 -1026,3321
 Beerenstr.: Fahrbahn Kopfsteinpflaster, Radwege asphaltiert	Q0- -1026,3321 -1054,3328 -1102,3345
-Jupiterstr.: Kopfsteinpflaster	Q2 14853,6550 15058,6784
+Jupiterstr.: Kopfsteinpflaster	Q2 14843,6558 15058,6784
 #: by: Julius (u): vvv
 #: note: ADFC-Karte meint "mäßig geeignet"
 #: corrected_by: http://www.berlin.de/ba-pankow/presse/archiv/20080626.0955.103689.html (mäßiger Asphalt, Q1 -> Asphalt Q0)
@@ -1742,7 +1742,7 @@ Schönholzer Weg: asphaltiert	Q0 8001,20530 8003,20507
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/abwasserleitung-wird-erneuert_a303255 (Bauarbeiten des Wasserbetriebe, bis April 2023)
 #: osm_watch: way id="34428911" version="10" vvv
 #: XXX wird hier asphaltiert? vvv
-#: last_checked: 2022-02-12 (mapillary) vvv
+#: last_checked: 2022-03-18 (mapillary) vvv
 #: next_check: 2023-04-30 vvv
 #: by: mapillary
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 8003,20507 8040,20454 8057,20430
@@ -2070,15 +2070,14 @@ Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,1
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20120913.1335.375172.html vvv
 #: source_id: 2147342864 (inaktiv)
 #: source_id: 2147345560 (inaktiv) (Radwegarbeiten)
-#: last_checked: 2022-03-20 vvv
 #: check_frequency: 120d vvv
-#: XXX Asphalt oder Beton?
-Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
+#: last_checked: 2022-03-20 vvv
+Landsberger Allee: Beton-Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
-#: last_checked: 2021-12-21 (mapillary)
+#: last_checked ^^^
+#: last_checked: 2022-03-18 (mapillary)
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 #: check_frequency ^^^
-#: last_checked ^^^
 #: by: ^^^
 #: XXX ^^^
 # 
@@ -4320,7 +4319,8 @@ Megedestr.: schlechtes Kopfsteinpflaster	Q3 17244,4242 17113,4295 17092,4297
 Megedestr.: Kopfsteinpflaster/Sandbankette	Q2- 17092,4297 17001,4307 16909,4309
 Ellernweg: Kleinsteinpflaster	Q2+ 17173,4902 17303,4824
 Drosselbartstr.: Asphalt	Q0 15188,6908 15024,7083 14951,7163
-Rübezahlstr.: Asphalt	Q1 15024,7083 15058,7115 15115,7128 15136,7106 15222,7162
+Rübezahlstr.: Asphalt	Q1 15024,7083 15058,7115 15115,7128
+Rübezahlstr.: Asphalt	Q0 15115,7128 15136,7106 15222,7162
 Wegastr.: schlechtes Kopfsteinpflaster	Q3 15222,7162 15172,7231
 (Planetenstr. - Am Heidekampgraben): Asphalt	Q0 15172,7231 15204,7236
 Prinzregentenstr.: Verbundsteinpflaster, mit Aufpflasterungen	Q1 5660,8351 5651,8218
@@ -11316,7 +11316,7 @@ Im Marienpark: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 8404,3648 8346,3633 
 Im Marienpark: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 8178,3591 8167,3641
 Im Marienpark: Asphalt	Q0 8167,3641 8181,3668 8326,3703 8346,3633
 (Mariendorfer-Hafen-Weg - Im Marienpark): Verbundsteinpflaster	Q1 8046,3626 8181,3668
-(Dieselstr. - Kiefholzstr.): Asphalt	Q0 14642,8022 14832,8199
+(Dieselstr. - Kiefholzstr.): Asphalt	Q0 14642,8022 14771,8142 14832,8199
 (Unterführung Seehofstr.): Verbundsteinpflaster	Q1 1145,2898 1126,2879 1093,2866
 Wasgensteig: unbefestigt	Q2 -2053,1632 -2043,1608
 (Alexandrinenstr. - Wassertorstr.): Asphalt mit einigen Schäden	Q1 10293,10645 10401,10601 10431,10606 10492,10582
@@ -12486,6 +12486,11 @@ Birkbuschstr. - Wolfensteindamm: Asphalt	Q0 4822,5114 4810,5134 4794,5161
 (Richard-Kolkwitz-Weg - Kötztinger Str.): Betonplatten	Q0- 19401,10295 19398,10257
 (Richard-Kolkwitz-Weg - Kötztinger Str.): wassergebundene Decke	Q1- 19398,10257 19396,10227 19434,10223
 (Richard-Kolkwitz-Weg - Kötztinger Str.): Verbundsteinpflaster	Q1+ 19434,10223 19487,10218 19513,10224 19560,10218
+(Neuköllnische Wiesen, Wiesenallee): unebener Asphalt	Q1- 14771,8142 14903,7997
+(Neuköllnische Wiesen, Wiesenallee): Verbundsteinpflaster	Q1 14903,7997 14962,7934 14990,7904
+(Neuköllnische Wiesen, Hauptweg): Verbundsteinpflaster	Q1 14903,7997 14968,8046 14976,8053
+(Hänselstr. - Michael-Bohnen-Ring): neues Betonsteinpflaster	Q0- 15143,6865 15251,6745
+(Dieselstr. - westlicher Mergenthalerring): unbefestigte Straße	Q2- 14249,8075 14239,8095 14247,8254 14229,8278
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -21985,7 +21990,7 @@ Harriesstr.: Kopfsteinpflaster	Q2 525,15435 659,15469 768,15486
 Rapsstr.: Kopfsteinpflaster	Q2 755,15123 702,15274 693,15335 665,15414 659,15469
 #: corrected_by: srt (Radweg ist Verbundsteinpflaster)
 #: next_check_id: WILHELMVONSIEMENSPARK-2019
-#: by: http://www.infravelo.de/projekt/wilhelm-von-siemens-park/ (Sanierung des Verbundsteinpflasters, 2. Quartal 2021 - 4. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/wilhelm-von-siemens-park/ (Sanierung des Verbundsteinpflasters, 2. Quartal 2021 - 4. Quartal 2022) (mittlerweile Start 1. Quartal 2022)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1146290.php (Bauarbeiten im Park ab 15.11.2021 für insgesamt 1 1/2 Jahre, Sanierung einiger Wege, möglicherweise auch hier)
 #: XXX Verbesserung der Qualität
 #: last_checked: 2022-02-12
@@ -23810,7 +23815,9 @@ Wilhelm-Blos-Str.: schlechtes Kopfsteinpflaster	Q3 23961,7877 23949,7805 23936,7
 #: by: ^^^
 # 
 #: by: Thomas Krohn:
-Gretelstr.: mäßiger Asphalt, Straßenschäden	Q1 15136,7106 15178,7065 15250,6970
+#: corrected_by: srt (mäßiger Asphalt, Straßenschäden, Q1 -> ..., neu gemacht?)
+Gretelstr.: Asphalt	Q0 15136,7106 15178,7065 15250,6970
+# 
 #: by: Manfred (mannerig):
 Borner Str.: Beton	Q0 16472,17791 16480,17824 16501,17851 16523,17877 16618,17963 16658,18008 16607,18088
 # 
