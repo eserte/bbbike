@@ -3002,11 +3002,11 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022) (mittlerweile: 06.04.2022)
+         'data' => '#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022) (mittlerweile: 06.04.2022) (mittlerweile: bis 19.05.2022)
 #: also_indoor: traffic (G)
 #: last_checked: 2022-01-22
 #: check_frequency: 90d
-#: next_check: 2022-04-06
+#: next_check: 2022-05-19
 	q2::inwork 8913,16159 9099,16398
 ',
          'from' => 1611329064,
@@ -3014,7 +3014,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'source_id' => '2147346268',
          'text' => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., voraussichtlich bis 06.04.2022',
          'type' => 'handicap',
-         'until' => 1649257200
+         'until' => 1652972400
        },
        {
          'data' => '#: next_check_id: ABBESTR-2021
@@ -3931,7 +3931,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.kiezundkneipe.de/artikel/das-ende-der-lenau-schule (neue Schule ist 2023 fertig)
 #: osm_watch: way id="49233007" version="8"
-#: last_checked: 2022-02-08
+#: last_checked: 2022-03-24
 #: check_frequency: 60d
 #: next_check: 2023-01-01
 	q4::inwork; 9552,9602 9588,9827
@@ -4038,7 +4038,31 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1672502400
        },
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: GNEISENAUKIEZ-2022
+#: also_indoor: traffic (G,B) vvv
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/gneisenau-kiez-wird-verkehrsberuhigt_a334304
+#: by: https://berliner-abendblatt.de/2022/01/24/verkehrsberuhigung-im-gneisenaukiez/
+#: XXX Wie werden die verkehrsberuhigenden Maﬂnahmen aussehen? vvv
+#: last_checked: 2022-03-24 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2022-03-15 vvv
+# REMOVED (hier Bauarbeiten bereits fertig) --- #: XXX Fahrbahn zurzeit gesperrt ---	q4::inwork 9723,9842 9837,9856
+#: XXX Fahrbahn zurzeit gesperrt
+	q4::inwork 9705,9732 9723,9842
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+#: also_indoor ^^^
+',
+         'from' => 1644102000,
+         'id' => 3519,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1169529.php',
+         'text' => 'Baruther Str., Solmsstr.: Bauarbeiten, Fahrbahn kann gesperrt sein, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        {
          'data' => '#: next_check_id: MASSMANN-2022
 #: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maﬂmannstr.

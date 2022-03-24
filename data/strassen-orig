@@ -725,20 +725,9 @@ Virchowstr.	N 12707,13706 12640,13814
 Langenbeckstr. (Friedrichshain)	N 13151,13367 13081,13457
 (Straßenbahnwendestelle)	N 12925,13373 13081,13457
 Kolonnenstr.	H 8209,8773 8145,8773 8078,8772 8014,8771 8008,8771 7795,8765 7709,8777 7642,8815 7563,8871 7548,8879 7497,8916 7360,8918 7315,8941 7307,8945 7268,8960
-#: next_check_id: KAISERWILHELMPLATZ-2022
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7886 (Antrag)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_29_2481_2536_online.pdf (Umbenennung)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_45_4009_4092_online.pdf (Widerspruch)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1186684.php (am 24.3.2022)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_11_0657_0712_online.pdf (Umbenennung eines Platzes)
-#: by: https://berliner-abendblatt.de/2022/03/21/kaiser-wilhelm-platz-wird-umbenannt/
-#: XXX wird am 18.10.2021 zum Richard-von-Weizsäcker-Platz umbenannt --- verzögert sich wegen Widerspruchs
-#: also_indoor: search Richard-von-Weizsäcker-Platz
-#: priority: #A
-#: last_checked: 2022-03-08 (indoor)
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2022-03-24
-Kaiser-Wilhelm-Platz	NN 7201,8870 7307,8945
+# REMOVED --- #: next_check_id: KAISERWILHELMPLATZ-2022 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7886 (Antrag) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_29_2481_2536_online.pdf (Umbenennung) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_45_4009_4092_online.pdf (Widerspruch) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1186684.php (am 24.3.2022) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_11_0657_0712_online.pdf (Umbenennung eines Platzes) --- #: by: https://berliner-abendblatt.de/2022/03/21/kaiser-wilhelm-platz-wird-umbenannt/ --- #: XXX wird am 18.10.2021 zum Richard-von-Weizsäcker-Platz umbenannt --- verzögert sich wegen Widerspruchs --- #: also_indoor: search Richard-von-Weizsäcker-Platz --- #: priority: #A --- #: last_checked: 2022-03-08 (indoor) --- # REMOVED --- #: check_frequency: 14d --- #: next_check: 2022-03-24
+#: oldname: -20220324: Kaiser-Wilhelm-Platz
+Richard-von-Weizsäcker-Platz	NN 7201,8870 7307,8945
 Herbertstr. (Schöneberg)	N 7360,8918 7389,8837 7402,8783 7395,8761
 Feurigstr.	N 6807,8309 7012,8511 7086,8579 7346,8817 7389,8837 7467,8863 7497,8916
 Ebersstr.	N 7395,8761 7313,8661 7288,8635
@@ -10639,6 +10628,7 @@ Nuthestr.	N 10301,-1891 10270,-1890 10251,-1877 10239,-1849 10095,-1482 10048,-1
 Nuthestr.	NN 9815,-805 9813,-822
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_08_0445_0532_online.pdf (Teileinziehung von Straßenland)
 #: XXX wenn die Teileinziehung vollzogen ist: N -> NN
+#: osm_watch: way id="49719228" version="9"
 #: next_check: 2022-03-25
 Nuthestr.	N 9813,-822 9849,-911
 Rieflerstr.	N 9989,-1278 10147,-1273

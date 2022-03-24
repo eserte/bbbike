@@ -6284,11 +6284,13 @@ EOF
        until => $isodate2epoch->("2019-05-05 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4, start => "2021-10-25T00:00:00"]],
+       recurrence_prewarn_days => 14,
        text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (4.5.2019 und 5.5.2019)',
        type  => 'gesperrt',
        source_id => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/4390033-2229501-primavera-fruehlingsfest.html (geplanter Termin: 08. bis 09. Mai 2021) (2021 abgesagt)
+#: by: https://www.berlin.de/events/4390033-2229501-fruehlings-und-spargelfest-primavera.html (geplanter Termin: 07. und 08. Mai 2022)
 	2::temp 7101,9027 7035,9161 7012,9222 7001,9291
 	2::temp 6945,9142 7035,9161
 EOF
@@ -19507,12 +19509,14 @@ EOF
        until => $isodate2epoch->("2019-05-19 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 4, start => "2021-06-02T00:00:00"]],
+       recurrence_prewarn_days => 14,
        text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 26.04.2019 bis 19.05.2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.915775.php (Absage 2020)
 #: by: https://www.wollenschlaeger-berlin.de/54-neukoellner-maientage/ (geplant: 28.4.2021 - 24.5.2021)
+#: by: https://www.berlin.de/events/2983315-2229501-neukoellner-maientage.html (geplant: 29. April bis 22. Mai 2022)
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -21866,15 +21870,17 @@ EOF
      },
      { from  => $isodate2epoch->("2019-05-02 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-05 23:59:59"),
-       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2019 bis 05.05.2019)',
+       text  => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2019 bis 05.05.2019)', # früher: Lichtenrader Maientanz
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 4, start => "2021-05-06T00:00:00"]],
+       recurrence_prewarn_days => 14,
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (ja) --- #: XXX wird die Veranstaltung noch abgesagt? --- #: next_check: 2020-04-23
 #: by: https://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
 #: by: https://www.family-and-friends-ev.de/?date=20210418 (4.-6. Juni 2021, dann aber vermutlich kein Maientanz")
 #: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-vom-4-6-juni-2021 (2021 verschoben auf 29. April - 1. Mai 2022)
+#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-2022 (2022: 29. April - 1. Mai 2022)
 # REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
 	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 EOF
@@ -23289,12 +23295,14 @@ EOF
        until => $isodate2epoch->("2019-05-02 02:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4, start => "2021-05-03T00:00:00"]],
+       recurrence_prewarn_days => 14,
        text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung des DGB), am 1. Mai 2019',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
        data  => <<EOF,
 #: by: https://www.dgb.de/termine/++co++8f919aec-3095-11ea-93f3-52540088cada (2020 abgesagt)
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20210416 (Mai-Kundgebung auf dem Platz des 18. März vor dem Brandenburger Tor findet [2021] ... nicht statt)
+#: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20220324 (unklar)
 #: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
 	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 	2::inwork 8573,12325 8540,12420
@@ -32248,16 +32256,16 @@ EOF
 EOF
      },
      { from  => 1611329064, # 2021-01-22 16:24
-       until => $isodate2epoch->("2022-04-06 17:00:00"), # 1630076400, # 2021-08-27 17:00
+       until => $isodate2epoch->("2022-05-19 17:00:00"), # 1630076400, # 2021-08-27 17:00
        text  => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., voraussichtlich bis 06.04.2022',
        type  => 'handicap',
        source_id => '2147346268',
        data  => <<EOF,
-#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022) (mittlerweile: 06.04.2022)
+#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022) (mittlerweile: 06.04.2022) (mittlerweile: bis 19.05.2022)
 #: also_indoor: traffic (G)
 #: last_checked: 2022-01-22
 #: check_frequency: 90d
-#: next_check: 2022-04-06
+#: next_check: 2022-05-19
 	q2::inwork 8913,16159 9099,16398
 EOF
      },
@@ -34495,7 +34503,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.kiezundkneipe.de/artikel/das-ende-der-lenau-schule (neue Schule ist 2023 fertig)
 #: osm_watch: way id="49233007" version="8"
-#: last_checked: 2022-02-08
+#: last_checked: 2022-03-24
 #: check_frequency: 60d
 #: next_check: 2023-01-01
 	q4::inwork; 9552,9602 9588,9827
@@ -34624,8 +34632,8 @@ EOF
 EOF
      },
      { from  => 1644102000, # 2022-02-06 00:00
-       until => 1647385199, # 2022-03-15 23:59
-       text  => 'Baruther Str., Solmsstr.: Bauarbeiten, Fahrbahn kann gesperrt sein, voraussichtlich 07. Februar 2022 - 15. März 2022',
+       until => undef, # 1647385199, # 2022-03-15 23:59
+       text  => 'Baruther Str., Solmsstr.: Bauarbeiten, Fahrbahn kann gesperrt sein, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1169529.php',
        data  => <<EOF,
@@ -34634,14 +34642,13 @@ EOF
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/gneisenau-kiez-wird-verkehrsberuhigt_a334304
 #: by: https://berliner-abendblatt.de/2022/01/24/verkehrsberuhigung-im-gneisenaukiez/
 #: XXX Wie werden die verkehrsberuhigenden Maßnahmen aussehen? vvv
-#: last_checked: 2022-02-27 vvv
+#: last_checked: 2022-03-24 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2022-03-15 vvv
+# REMOVED --- #: next_check: 2022-03-15 vvv
+# REMOVED (hier Bauarbeiten bereits fertig) --- #: XXX Fahrbahn zurzeit gesperrt ---	q4::inwork 9723,9842 9837,9856
 #: XXX Fahrbahn zurzeit gesperrt
-	q4::inwork 9723,9842 9837,9856
-#: XXX hier noch keine Bauarbeiten
-	q3::inwork 9705,9732 9723,9842
-#: next_check ^^^
+	q4::inwork 9705,9732 9723,9842
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
