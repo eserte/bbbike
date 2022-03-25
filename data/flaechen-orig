@@ -1266,10 +1266,9 @@ Platz der Weißen Rose	F:P -4304,12562 -4406,12468 -4351,12460 -4304,12562
 Berkaer Platz	F:P 2587,7823 2627,7821 2608,7798 2587,7823
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7698 (früher "Paulinenplatz", in Zukunft wieder?)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Benennung von Straßenland)
-#: add_fragezeichen Hängen hier Straßenschilder für den neuen "Paulinenplatz"?
-#: last_checked: 2022-02-05
-#: check_frequency: 120d
-	F:P 3328,3313 3327,3261 3348,3278 3328,3313
+#: by: https://berliner-abendblatt.de/2022/03/24/paulinenplatz-in-lichterfelde-offiziell-eingeweiht/
+# REMOVED --- #: add_fragezeichen Hängen hier Straßenschilder für den neuen "Paulinenplatz"? --- #: last_checked: 2022-02-05 --- #: check_frequency: 120d
+Paulinenplatz	F:P 3328,3313 3327,3261 3348,3278 3328,3313
 Karlplatz	F:P 3186,3515 3185,3476 3184,3427 3228,3455 3186,3515
 	F:P 25166,13228 25138,13183 25181,13157 25208,13206 25166,13228
 	F:P 1338,25262 1339,25251 1364,25256 1360,25269 1338,25262
@@ -1382,6 +1381,8 @@ Franz-Neumann-Platz	F:Square 7675,17430 7602,17399 7579,17532 7675,17430
 Schloßplatz (Oranienburg)	F:Square -1495,38569 -1569,38566 -1568,38510 -1553,38501 -1524,38498 -1487,38509 -1471,38541
 #: note: an Nicht-Markttagen theoretisch frei befahrbar, allerdings nur an wenigen Stellen bordsteinlos erreichbar
 Marktplatz Griechische Allee	F:Square 18025,6700 17962,6674 18029,6674 18079,6678 18076,6693 18025,6700
+#: note: überwiegend frei befahrbar, allerdings hohe Fußgängerfrequenz
+Richard-von-Weizsäcker-Platz	F:Square 7268,8960 7201,8870 7307,8945 7268,8960
 #: ignore ^^^
 #############################################################################
 # in Potsdam

@@ -268,7 +268,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Fahrbahninstandsetzung ab Herbst 2021, bis 2022)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2022-03-06
+#: last_checked: 2022-03-25
 # REMOVED --- #: next_check: 2021-10-01
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
 Dönhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
@@ -2573,11 +2573,16 @@ Bernstadter Weg: Beton	Q0 20774,5131 20852,5106
 Bruno-Bürgel-Weg: Asphalt	Q0 20793,5256 20740,5273
 Bruno-Bürgel-Weg: Beton	Q0 20740,5273 20473,5436 20435,5460
 Bruno-Bürgel-Weg: Asphalt	Q0 20435,5460 20348,5509 20065,5534 19814,5512 19696,5456 19588,5385 19386,5335 19328,5304
-#: by: Marko (hilse)
-#: corrected_by: srt (teilweise)
-Wattstr. (Oberschöneweide): sehr schlechtes Kopfsteinpflaster	Q3 17620,7259 17644,7219 17632,6930
+# 
+#: by: Marko (hilse) vvv
+#: corrected_by: srt
+Wattstr. (Oberschöneweide): schlechtes Kopfsteinpflaster	Q3+ 17620,7259 17644,7219
+#: corrected_by: srt
+Wattstr. (Oberschöneweide): sehr schlechtes Kopfsteinpflaster	Q3 17644,7219 17632,6930
 #: note: aber das ursprüngliche Kopfsteinpflaster war eher schlecht, deshalb "-"
 Wattstr. (Oberschöneweide): mit Teer verfugtes Kopfsteinpflaster	Q2- 17632,6930 17652,6828 17766,6616
+#: by ^^^
+# 
 #: confirmed_by: srt
 Karl-Elsasser-Str.: Asphalt	Q0 11943,5825 12063,5927 12160,5997 12271,6025
 Andreasberger Str.: Kopfsteinpflaster	Q2 12053,6185 12053,6042 12063,5927
@@ -6783,7 +6788,7 @@ Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 #: osm_watch: way id="156650954" version="15"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2022-02-26 (mapillary)
+#: last_checked: 2022-03-25
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
@@ -13028,7 +13033,7 @@ Windwallstr.: Asphalt	Q0 27161,-2474 27219,-2538
 #: confirmed_by: srt
 Untertürkheimer Str.: guter Asphalt	Q0 9487,2391 9199,2337 9053,2373
 #: corrected_by: srt (mäßiges -> schlechtes)
-Paulinenstr.: schlechtes Kopfsteinpflaster	Q3 3328,3313 3318,3046 3313,2842
+Paulinenstr.: schlechtes Kopfsteinpflaster	Q3 3328,3313 3327,3261 3318,3046 3313,2842
 #: corrected_by: srt (guter Asphalt, Q0 -> ...)
 Gorgasring: Beton	Q0- -1207,14781 -1120,14709 -995,14704 -836,14765 -695,14819 -653,14843 -626,14871 -621,14907 -663,14996
 #: corrected_by: srt (Asphalt -> unbefestigte Straße; später wieder -> Asphalt (neu gemacht)):
@@ -27161,8 +27166,7 @@ Döberitzer Weg: sehr gut asphaltiert	Q0 -8377,13126 -8313,13167 -8264,13197 -825
 # REMOVED --- #: note: "... kann die Befahrbarkeit nach längeren Regenfällen eingeschränkt sein" --- #: XXX wird die Fahrbahn hier neu gebaut? (siehe Finanzplan Berlin 2019-2023, S. 215 im pdf) --- #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.836416.php (Asphaltierung geplant, Baubeginn voraussichtlich 2020) --- #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/dokumente/internet-auftritt-doeberitzer-weg-1-1-0.pdf --- #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2023) --- #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/pressemitteilung.1101587.php (Ausbau vom 08.07.2021 bis voraussichtlich 30.11.2021) --- #: by: https://www.berliner-woche.de/staaken/c-bauen/doeberitzer-weg-wird-asphaltiert_a315291
 #: confirmed_by: srt
 #: corrected_by: Viktoria (relativ glatte unbefestigte Straße, Q2+ -> neu asphaltiert)
-#: osm_watch: way id="127586615" version="7"
-# REMOVED --- #: add_fragezeichen: Ist der Döberitzer Weg mittlerweile asphaltiert? --- #: last_checked: 2021-10-20 (Bauarbeiten laufen) --- # REMOVED --- #: check_frequency: 360d --- #: next_check: 2021-11-30
+# REMOVED --- #: osm_watch: way id="127586615" version="8" --- #: add_fragezeichen: Ist der Döberitzer Weg mittlerweile asphaltiert? --- #: last_checked: 2021-10-20 (Bauarbeiten laufen) --- # REMOVED --- #: check_frequency: 360d --- #: next_check: 2021-11-30
 Döberitzer Weg: Asphalt	Q0 -8256,13202 -8049,13332
 #: confirmed_by: srt
 (Supermarktparkplatz): asphaltiert	Q0 -8264,13197 -8282,13225 -8299,13230 -8296,13338

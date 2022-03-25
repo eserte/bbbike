@@ -2760,9 +2760,13 @@ Straﬂe 56 (Heinersdorf)	N 12429,17685 12587,17603
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/29re.pdf/file?y=2014 (Benennung)
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3835 (Vorlange zur Kenntnisnahme)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2014 (Widerspruch)
-#: osm_watch: way id="45904921" version="12"
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_12_0713_0788_online.pdf (Wirksamkeit der Umbenennung)
+#: XXX laut osm mittlerweile umbenannt
+#: add_fragezeichen: Wurde die Straﬂe 16 mittlerweile umbenannt?
+#: osm_watch: way id="45904921" version="13"
 #: last_checked: 2022-03-14 (mapillary)
 #: check_frequency: 120d
+#: next_check: 2022-03-17
 Straﬂe 16 (Heinersdorf)	N 13031,17775 13034,17895
 (Straﬂe 16 - Eigerstr.)	NN 13034,17895 12995,17873 12945,17958
 # 
@@ -3626,7 +3630,7 @@ Nahmitzer Damm	H 7790,672 7937,583 8075,499 8250,392 8382,347 8470,329 8584,320 
 #: valid: !20220124-20250104
 Nahmitzer Damm	H 8736,337 8906,392 9002,471
 #: valid: 20220124-20250104
-Nahmitzer Damm	N 8736,337 8906,392 9002,471
+Nahmitzer Damm	NH 8736,337 8906,392 9002,471
 #: next_check ^^^
 # 
 #: oldname: -200910: Straﬂe 490 (zwischen Hildburghauser und Marienfelder)
@@ -15012,7 +15016,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2022-03-20
+#: last_checked: 2022-03-25
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15394,7 +15398,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (auﬂerdem: Umgestaltung der Gr¸nanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2022-03-20
+#: last_checked: 2022-03-25
 (entlang des Tr‰nkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -19175,7 +19179,7 @@ Eiswerderufer	N -2853,15127 -2835,15168 -2830,15208
 Krienickesteig	N -2903,15237 -2882,15290
 Triftstr. (Hakenfelde, Spandau)	N -2992,15271 -2903,15237 -2890,15231 -2830,15208
 Weddigenweg	N 2698,3068 3026,3058 3174,3052 3318,3046 3462,3042 3646,3034 3953,3022
-Paulinenstr.	N 3328,3313 3318,3046 3313,2842
+Paulinenstr.	N 3328,3313 3327,3261 3318,3046 3313,2842
 Kalvinistenweg	N 11807,22395 11785,22290 11765,22198 11743,22096 11718,21978 11653,21613
 Stadtg‰rten	N 11585,22082 11568,22056 11544,21897 11575,21888 11566,21829 11534,21831 11518,21727 11551,21720 11589,21713
 SaupÈweg	N 11641,22038 11589,21713 11584,21688

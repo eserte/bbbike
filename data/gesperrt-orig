@@ -230,7 +230,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: by: https://www.nalepaland.de/
 #: XXX Maﬂnahme Osw.10, auﬂerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraﬂe
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2022-01-24
+#: last_checked: 2022-03-25
 #: check_frequency: 60d
 Nalepastr. am Rundfunkgeb‰ude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -3390,7 +3390,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraﬂ
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2022-03-03
+#: last_checked: 2022-03-25
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -3533,7 +3533,7 @@ Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11923,11881 11940,1
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundst¸cksnummerierung)
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraﬂe. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht auﬂerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht
 #: osm_watch: way id="308312347" version="3"
-#: last_checked: 2022-03-12 (daf)
+#: last_checked: 2022-03-20 (architektur-urbanistik)
 #: check_frequency: 90d
 #: next_check: 2022-08-15
 F¸rstenberger Str.: Bauarbeiten, Einbahnstraﬂe	1s:q3 10472,14632 10320,14608
@@ -3728,6 +3728,7 @@ Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeite
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Grundst¸cksnummerierungen)
 #: by: https://portal1915.webcam-profi.de/ (Webcam)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundst¸cksnummerierung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_12_0713_0788_online.pdf (Grundst¸cksnummerierung)
 #: XXX f¸r den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfl‰che vermutet (bereits eingetragen)
 #: last_checked: 2022-03-05
 #: check_frequency: 60d
@@ -3760,7 +3761,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-03-02
+#: last_checked: 2022-03-24 (architektur-urbanistik)
 #: check_frequency: 60d
 Planckstr.: Einbahnstraﬂenregelung, offen Richtung S¸den	1s:q3:inwork 9429,12728 9402,12792 9386,12833
 # 
@@ -3984,7 +3985,7 @@ Wuhletalbr¸cke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/seit-13-september-ist-der-aufzug-am-bahnhof-schoeneweide-in-betrieb_a232699
 #: by: https://www.abendblatt-berlin.de/2019/09/25/treptow-schoeneweider-fahrstuehle-endlich-in-betrieb/
 #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
-#: osm_watch: way id="226163591" version="4"
+#: osm_watch: way id="226163591" version="5"
 #: priority: #C
 #: last_checked: 2022-01-27 (krickstadt)
 #: check_frequency: 360d
@@ -4018,7 +4019,7 @@ Wuhletalbr¸cke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2022-03-02 vvv
+#: last_checked: 2022-03-25 (daf) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -4048,7 +4049,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2022-03-02
+#: last_checked: 2022-03-25 (daf)
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraﬂe	1s:q4:inwork 9207,11880 9138,11872
 # 
@@ -4522,7 +4523,7 @@ Neue Plantage: hier noch Baustelle	2:inwork -13100,-1411 -13017,-1426
 #: XXX Kaiserstr. -> Anna-Fl¸gge-Straﬂe (PLZ: 14467)
 #: XXX Schlossstraﬂe (ˆstlicher Verlauf) -> Anna-Zielenziger-Straﬂe (PLZ: 14467)
 #: XXX Schwertfegerstraﬂe (ˆstlicher Verlauf) -> Erika-Wolf-Straﬂe (bereits eingetragen)
-#: osm_watch: way id="534669300" version="9" brb
+#: osm_watch: way id="534669300" version="10" brb
 #: last_checked: 2021-10-11 (daf)
 # REMOVED --- #: next_check: 2020-09-01
 #: check_frequency: 180d
