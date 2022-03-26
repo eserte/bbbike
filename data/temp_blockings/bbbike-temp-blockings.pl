@@ -32704,16 +32704,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1648307032, # undef, # XXX
        text  => 'Brümmerstr.: zwischen Thielallee und Fabeckstr. Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Sind die Bauarbeiten in der Brümmerstraße mittlerweile beendet und die Straße frei?
-#: note: mittlerweile mit expliziten Radfahren-verboten-Schildern
-#: XXX Stand Dez 2021: möglicherweise wieder offen (anhand Traffic-Daten)
-#: also_indoor: traffic (G)
-#: priority: #A
-#: last_checked: 2021-11-06
+# REMOVED (keine Bauarbeiten mehr) --- #: add_fragezeichen: Sind die Bauarbeiten in der Brümmerstraße mittlerweile beendet und die Straße frei? --- #: note: mittlerweile mit expliziten Radfahren-verboten-Schildern --- #: XXX Stand Dez 2021: möglicherweise wieder offen (anhand Traffic-Daten) --- #: also_indoor: traffic (G) --- #: priority: #A --- #: last_checked: 2021-11-06
 	q4::inwork 2523,5114 2746,5537
 EOF
      },
@@ -33850,7 +33845,7 @@ EOF
 #: next_check_id: CORONA-2020
 #: note: Marktzeiten sind wohl 9 bis 15 Uhr, Parkverbote (und mögliche Sperrung/Beeinträchtigung) aber länger
 #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv
-#: last_checked: 2022-01-28 vvv
+#: last_checked: 2022-03-26 vvv
 #: check_frequency: 90d vvv
 #: tempex: sa T06-T19 vvv
 	2::temp 9546,9198 9617,9185 9674,9179

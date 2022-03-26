@@ -4006,6 +4006,17 @@ Bruno-Baum-Grünzug: Grünanlage, Fußgänger	q3 20260,15434 20245,15394 20004,15251
 (Neuköllnische Wiesen, Hauptweg): enges Tor	q3 14968,8046 14976,8053
 #: note: Grünanlage, keine Zusatzschilder
 (Hänselstr. - Michael-Bohnen-Ring): Grünanlage, Fußgänger	q3 15143,6865 15251,6745
+#: XXX_prog BS (ansonsten q1)
+(Garystr. - Saargemünder Str.): gemeinsamer Rad- und Gehweg, Bordstein	q3 1722,4701 1730,4743
+(Garystr. - Saargemünder Str.): gemeinsamer Rad- und Gehweg	q1 1730,4743 1736,4774 1747,4829
+#: note: hier keine Schilder
+(Lützelsteiner Weg - Saargemünder Str.): einige Fußgänger	q2+ 1690,4708 1730,4743
+#: note: Grünanlage
+(Ihnestr. - Clayallee): einige Fußgänger	q2 1450,4766 1730,4743 1870,4732 1981,4741
+#: note: Grünanlage
+#: XXX_prog BS (ansonsten q2)
+(Ihnestr. - Clayallee): einige Fußgänger, Bordstein	q3 1981,4741 2033,4757
+(Breitenbachplatz/Südwestkorso - Kreuznacher Str.): Gehweg	q4+ 4103,6716 4174,6711
 # 
 ######################### User Contributions #################################
 # 
@@ -5740,7 +5751,7 @@ Frommpromenade: enge Straße	q0- 5463,20461 5350,20495 5257,20551
 Brodersenstr.: enge Straße	q0- 6033,19611 5885,19920 5804,20047
 # 
 #: by: Kay Leonhardt:
-Eduard-Spranger-Promenade: Verbot für Radfahrer	q4 4317,2638 4659,3065 4866,3371 4951,3516
+Eduard-Spranger-Promenade: Verbot für Radfahrer	q4 4317,2638 4659,3065 4866,3371
 # 
 #: by: Karsten Denkler vvv
 #: corrected_by: srt (q1 -> q0-)

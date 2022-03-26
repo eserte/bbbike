@@ -10877,6 +10877,8 @@ Birkbuschstr. - Wolfensteindamm: Asphalt	Q0 4822,5114 4810,5134 4794,5161
 (Neuköllnische Wiesen, Hauptweg): Verbundsteinpflaster	Q1 14903,7997 14968,8046 14976,8053
 (Hänselstr. - Michael-Bohnen-Ring): neues Betonsteinpflaster	Q0 15143,6865 15251,6745
 (Dieselstr. - westlicher Mergenthalerring): unbefestigte Straße	Q2 14249,8075 14239,8095 14247,8254 14229,8278
+Holstweg: Beton und Asphalt	Q0 -1013,2579 -882,2260
+(Lützelsteiner Weg - Saargemünder Str.): wassergebundene Decke	Q1 1690,4708 1730,4743
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11163,7 +11165,9 @@ Tolkmittstr.: Asphalt	Q0 24609,13219 24531,13237 24487,13245 24466,13250 24364,1
 Windwallstr.: Beton	Q0 27021,-2336 27161,-2474
 Windwallstr.: Asphalt	Q0 27161,-2474 27219,-2538
 Untertürkheimer Str.: guter Asphalt	Q0 9487,2391 9199,2337 9053,2373
-Paulinenstr.: schlechtes Kopfsteinpflaster	Q3 3328,3313 3327,3261 3318,3046 3313,2842
+Paulinenstr.: schlechtes Kopfsteinpflaster, schmaler Asphaltstreifen am Rand	Q2; 3318,3046 3327,3261 3328,3313
+Paulinenstr.: schlechtes Kopfsteinpflaster	Q3; 3328,3313 3327,3261 3318,3046
+Paulinenstr.: schlechtes Kopfsteinpflaster	Q3 3318,3046 3313,2842
 Gorgasring: Beton	Q0 -1207,14781 -1120,14709 -995,14704 -836,14765 -695,14819 -653,14843 -626,14871 -621,14907 -663,14996
 Arnsberger Str.: Asphalt	Q0 20522,9852 20527,9961 20529,10056
 Arnsberger Str.: guter Asphalt	Q0 20529,10056 20536,10233 20542,10439 20546,10615 20540,10652 20523,10686
@@ -16306,7 +16310,7 @@ Brauerplatz: guter Asphalt	Q0 4979,1964 5004,1939 4964,1890
 Dorstener Str.: guter Asphalt	Q0 3691,566 3596,655
 Draisweg: gutes Verbundsteinpflaster	Q1 5366,1041 5413,1064 5488,943
 Fahrenheitstr. - Celsiusstr.: guter Belag (teils Betonplatten, teils kleinteiliges Pflaster)	Q1 4510,669 4436,621
-Eduard-Spranger-Promenade: mäßiger Belag, viel Splitt	Q2 4317,2638 4659,3065 4866,3371 4951,3516
+Eduard-Spranger-Promenade: mäßiger Belag, viel Splitt	Q2 4317,2638 4659,3065 4866,3371
 Frauenstr.: Basaltpflaster	Q2 4963,2318 5060,2490
 Kirchmeisterweg: mäßiges kleinteiliges Kopfsteinpflaster, wellige Straßenoberfläche	Q2 4980,1870 4958,1844 5007,1718 5035,1723
 Schillerstr. (Lichterfelde): glattes Kopfsteinpflaster	Q1 5021,2274 5071,2169
@@ -16348,11 +16352,12 @@ Claire-Waldoff-Weg: wassergebundene Decke	Q1 3584,8136 3571,8085 3538,7515
 (Eppinger Str. - Garystr.): Kleinpflaster	Q1 2211,4280 2254,4376
 Breisacher Str.: Kopfsteinpflaster	Q2 2054,4190 2147,4173 2169,4169 2233,4156 2280,4148 2372,4127
 Leichhardtstr.: Kleinsteinpflaster	Q2 1500,4356 1543,4341 1608,4313 1659,4297
-(Ihnestr. - Clayallee): Asphalt	Q1 1450,4766 1730,4743 1870,4732
+(Ihnestr. - Clayallee): wassergebundene Decke	Q1 1450,4766 1730,4743 1870,4732
 (Ihnestr. - Clayallee): wassergebundene Decke	Q1 1870,4732 1981,4741 2033,4757
 (Lützelsteiner Weg - Reichshofer Str.): wassergebundene Decke	Q1 1667,4664 1674,4661 1698,4653 1712,4648
 (Clayallee - Ripleystr.): fester Sand	Q1 1482,4628 1411,4654
-(Garystr. - Saargemünder): Verbundsteine	Q1 1722,4701 1730,4743 1736,4774
+(Garystr. - Saargemünder): Asphalt	Q0 1722,4701 1730,4743
+(Garystr. - Saargemünder): Verbundsteine	Q1 1730,4743 1736,4774
 Lützelsteiner Weg: Beton	Q0 1385,4138 1478,4206 1500,4356
 Balbronner Str.: Asphalt	Q1 1740,4176 1954,4108
 Zaberner Str.: Beton	Q0 1276,3892 1252,3821

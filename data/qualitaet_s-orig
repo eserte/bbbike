@@ -155,7 +155,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
 #: osm_watch: way id="102486250" version="14"
-#: last_checked: 2021-11-20
+#: last_checked: 2022-03-26
 #: check_frequency: 120d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
@@ -12496,6 +12496,8 @@ Birkbuschstr. - Wolfensteindamm: Asphalt	Q0 4822,5114 4810,5134 4794,5161
 (Neuköllnische Wiesen, Hauptweg): Verbundsteinpflaster	Q1 14903,7997 14968,8046 14976,8053
 (Hänselstr. - Michael-Bohnen-Ring): neues Betonsteinpflaster	Q0- 15143,6865 15251,6745
 (Dieselstr. - westlicher Mergenthalerring): unbefestigte Straße	Q2- 14249,8075 14239,8095 14247,8254 14229,8278
+Holstweg: Beton und Asphalt	Q0- -1013,2579 -882,2260
+(Lützelsteiner Weg - Saargemünder Str.): wassergebundene Decke	Q1- 1690,4708 1730,4743
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13032,8 +13034,13 @@ Windwallstr.: Beton	Q0- 27021,-2336 27161,-2474
 Windwallstr.: Asphalt	Q0 27161,-2474 27219,-2538
 #: confirmed_by: srt
 Untertürkheimer Str.: guter Asphalt	Q0 9487,2391 9199,2337 9053,2373
-#: corrected_by: srt (mäßiges -> schlechtes)
-Paulinenstr.: schlechtes Kopfsteinpflaster	Q3 3328,3313 3327,3261 3318,3046 3313,2842
+#: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...) vvv
+#: note: typischerweise nicht zugeparkt
+Paulinenstr.: schlechtes Kopfsteinpflaster, schmaler Asphaltstreifen am Rand	Q2; 3318,3046 3327,3261 3328,3313
+#: note: hier auch ein Asphaltstreifen, der aber komplett zugeparkt ist; zur Not kann man am linken Rand fahren
+Paulinenstr.: schlechtes Kopfsteinpflaster	Q3; 3328,3313 3327,3261 3318,3046
+Paulinenstr.: schlechtes Kopfsteinpflaster	Q3 3318,3046 3313,2842
+#: corrected_by ^^^
 #: corrected_by: srt (guter Asphalt, Q0 -> ...)
 Gorgasring: Beton	Q0- -1207,14781 -1120,14709 -995,14704 -836,14765 -695,14819 -653,14843 -626,14871 -621,14907 -663,14996
 #: corrected_by: srt (Asphalt -> unbefestigte Straße; später wieder -> Asphalt (neu gemacht)):
@@ -27621,7 +27628,7 @@ Dorstener Str.: guter Asphalt	Q0 3691,566 3596,655
 Draisweg: gutes Verbundsteinpflaster	Q1 5366,1041 5413,1064 5488,943
 Fahrenheitstr. - Celsiusstr.: guter Belag (teils Betonplatten, teils kleinteiliges Pflaster)	Q1 4510,669 4436,621
 #: note: "wahrscheinlich Deckschicht ohne Bindemittel mit viel Split"
-Eduard-Spranger-Promenade: mäßiger Belag, viel Splitt	Q2+ 4317,2638 4659,3065 4866,3371 4951,3516
+Eduard-Spranger-Promenade: mäßiger Belag, viel Splitt	Q2+ 4317,2638 4659,3065 4866,3371
 Frauenstr.: Basaltpflaster	Q2 4963,2318 5060,2490
 Kirchmeisterweg: mäßiges kleinteiliges Kopfsteinpflaster, wellige Straßenoberfläche	Q2 4980,1870 4958,1844 5007,1718 5035,1723
 #: confirmed_by: srt (just changed "gutes" -> "glattes")
@@ -27744,14 +27751,18 @@ Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14682,12874 14588,12901 1
 Claire-Waldoff-Weg: wassergebundene Decke	Q1 3584,8136 3571,8085 3538,7515
 (Eppinger Str. - Garystr.): Kleinpflaster	Q1 2211,4280 2254,4376
 Breisacher Str.: Kopfsteinpflaster	Q2 2054,4190 2147,4173 2169,4169 2233,4156 2280,4148 2372,4127
-#: corrected_by: (Kopfsteinpflaster, Q2 -> ...)
+#: corrected_by: srt (Kopfsteinpflaster, Q2 -> ...)
 Leichhardtstr.: Kleinsteinpflaster	Q2+ 1500,4356 1543,4341 1608,4313 1659,4297
-(Ihnestr. - Clayallee): Asphalt	Q1 1450,4766 1730,4743 1870,4732
-(Ihnestr. - Clayallee): wassergebundene Decke	Q1 1870,4732 1981,4741 2033,4757
+#: corrected_by: srt (Asphalt, Q1 -> ...)
+(Ihnestr. - Clayallee): wassergebundene Decke	Q1- 1450,4766 1730,4743 1870,4732
+#: corrected_by: srt (Q1 -> Q1-)
+(Ihnestr. - Clayallee): wassergebundene Decke	Q1- 1870,4732 1981,4741 2033,4757
 (Lützelsteiner Weg - Reichshofer Str.): wassergebundene Decke	Q1 1667,4664 1674,4661 1698,4653 1712,4648
 (Clayallee - Ripleystr.): fester Sand	Q1 1482,4628 1411,4654
+#: corrected_by; srt (Verbundsteine, Q1 -> ...)
+(Garystr. - Saargemünder): Asphalt	Q0 1722,4701 1730,4743
 #: confirmed_by; srt
-(Garystr. - Saargemünder): Verbundsteine	Q1 1722,4701 1730,4743 1736,4774
+(Garystr. - Saargemünder): Verbundsteine	Q1 1730,4743 1736,4774
 #: confirmed_by: srt
 Lützelsteiner Weg: Beton	Q0 1385,4138 1478,4206 1500,4356
 Balbronner Str.: Asphalt	Q1 1740,4176 1954,4108
@@ -29450,7 +29461,7 @@ Weddigenweg: schlechtes Kopfsteinpflaster	Q3 2698,3068 3026,3058
 #: corrected_by: srt (schlechtes -> mäßiges)
 Weddigenweg: mäßiges Kopfsteinpflaster	Q2 3026,3058 3174,3052
 #: corrected_by: srt (Kopfsteinpflaster -> Beton)
-Weddigenweg: Beton	Q0 3174,3052 3318,3046
+Weddigenweg: Beton	Q0- 3174,3052 3318,3046
 #: confirmed_by: srt (and added Asphaltstreifen)
 Weddigenweg: schlechtes Kopfsteinpflaster, teilweise zugeparkte enge Asphaltstreifen	Q3 3318,3046 3462,3042
 #: confirmed_by: srt
@@ -30760,4 +30771,10 @@ Kreuzungsbereich asphaltiert	Q0 13904,15818
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 10251,9979
 #: note: nur Fahrbahn
 Einmündungsbereich mit Kopfsteinpflaster	Q2 10313,10084
+Einmündungsbereich asphaltiert	Q0 3459,2944
+Kreuzungsbereich asphaltiert	Q0 3462,3042
+Einmündungsbereich asphaltiert	Q0 3450,3142
+Einmündungsbereich asphaltiert	Q0 3328,3313
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 3318,3046
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 3174,3052
 #: ignore ^^^
