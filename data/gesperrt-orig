@@ -1483,6 +1483,10 @@ Bienenwinkel	1 -13335,1927 -13333,1957 -13227,1962 -13228,1927
 # elsewhere in Brandenburg
 # 
 #: by: mapillary
+Am Tonberg (Zeuthen)	1 24593,-7405 24492,-7311 24416,-7241
+#: by: mapillary
+Am Tonberg (Zeuthen)	1 24493,-7282 24616,-7384
+#: by: mapillary
 Finkenweg (Schulzendorf)	1 23985,-3836 24124,-4044
 Fließsteig (Schulzendorf)	1 24314,-3438 24394,-3534 24533,-3746
 Prieroser Dorfaue	1s:q2 35663,-19764 35627,-19777 35631,-19861
@@ -3343,13 +3347,10 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 #: next_check: 2022-11-30
 Seidelstraßenbrücke: Überqueren wegen eines Gerüsts nicht möglich	3nocross 3570,17938 3706,17931 3833,17929
 # 
-#: by: mapillary
-#: last_checked: 2022-02-05 (mapillary)
-#: check_frequency: 90d
-Ackerstr. (Schulzendorf): Hochbauarbeiten, Straße gesperrt	2::inwork 22996,-4983 22962,-5193
+# REMOVED --- #: by: mapillary --- #: last_checked: 2022-02-05 (mapillary) --- #: check_frequency: 90d --- Ackerstr. (Schulzendorf): Hochbauarbeiten, Straße gesperrt	2::inwork 22996,-4983 22962,-5193
 # 
 #: by: mapillary
-#: last_checked: 2022-03-05 (mapillary)
+#: last_checked: 2022-03-26 (mapillary)
 #: check_frequency: 120d
 Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5346 22677,-5418
 # 
@@ -3445,7 +3446,7 @@ Wandlitzstr.: in Höhe Lehndorffstr. sind Gehweg und Fahrbahn gesperrt	2::inwork 
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX vermutlich wird die Straße dauerhaft verschwinden -> dann aus strassen-orig & Berlin.coords.data etc. entfernen
-#: last_checked: 2022-02-14
+#: last_checked: 2022-03-27
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Matthesstr.: Baustelle, keine Durchfahrt möglich	2::inwork 14185,9509 14172,9457
@@ -3675,7 +3676,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-03-09
+#: last_checked: 2022-03-27
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 

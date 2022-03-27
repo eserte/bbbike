@@ -27944,7 +27944,7 @@ EOF
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
 #: also_indoor: traffic (G(wieder),H(falsch?),B)
 #: priority: #B vvv
-#: last_checked: 2022-03-11 vvv
+#: last_checked: 2022-03-25 (mapillary) vvv
 #: check_frequency: 60d vvv
 	q3::inwork 13391,16436 13630,16629
 Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
@@ -31317,9 +31317,9 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (H,B)
-#: XXX Stand 2021-07-31 und 2022-01-18: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden
+#: XXX Stand 2021-07-31 und 2022-01-18: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden; März 2023: letzte Deckschicht ist drauf
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2022-03-11
+#: last_checked: 2022-03-25 (mapillary)
 #: check_frequency: 30d
 	q3::inwork 14136,17170 13996,16959
 EOF
@@ -33869,14 +33869,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-10-17 00:00:00"),
-       until => undef, # 1646089200, # 2022-03-01 00:00
+       until => 1648374926, # undef, # 1646089200, # 2022-03-01 00:00
        text  => 'Radweg zwischen Wuhletalstr. und Havemannstr.: Sperrung des Radwegs während der Sanierung, vom 18.10.2021 bis Frühjahr 2022',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1135832.php',
        data  => <<EOF,
-#: next_check_id: WUHLETALHAVEMANN-2021
-#: add_fragezeichen: Wann sind die Bauarbeiten hier abgeschlossen und die Sperrung aufgehoben?
-#: last_checked: 2022-02-27 (mapillary)
+# REMOVED --- #: next_check_id: WUHLETALHAVEMANN-2021 --- #: add_fragezeichen: Wann sind die Bauarbeiten hier abgeschlossen und die Sperrung aufgehoben? --- #: last_checked: 2022-02-27 (mapillary)
 # REMOVED --- #: next_check: 2022-03-01
 	2::inwork 21539,17442 21555,17546 21559,17617 21576,17678 21639,17803 21698,17920 21726,17974 21804,18125 21843,18198 21871,18244
 EOF
@@ -34252,7 +34250,7 @@ EOF
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 	q4::inwork; 13702,7418 13654,7380 13601,7366 13519,7345 13476,7330
-	q3::inwork 13702,7418 13762,7321
+# REMOVED (hier nicht mehr)	q3::inwork 13702,7418 13762,7321
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -34547,8 +34545,8 @@ EOF
        text  => 'Wintgensstr./Gontermannstr. - General-Pape-Str.: Tor kann verschlossen sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: note: geöffnet (großes Tor) am 2022-02-13 (So) gegen 14:45
-#: last_checked: 2022-02-13 vvv
+#: note: geöffnet (großes Tor) am 2022-02-13 (So) gegen 14:45, sowie 2022-03-27 (So) gegen 13:45
+#: last_checked: 2022-03-27 vvv
 #: check_frequency: 120d vvv
 	3 8260,7911 8203,7909 8161,7907
 	3 8161,7907 8203,7909 8260,7911
@@ -34599,7 +34597,7 @@ EOF
 #: by: https://viz.berlin.de/2022/02/verkehrsvorschau-21022022/ (für Fußgänger offen)
 #: XXX evtl. nach handicap_s-orig übertragen
 #: also_indoor: traffic (B,H(unvollständig),G)
-#: last_checked: 2022-02-23 vvv
+#: last_checked: 2022-03-27 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -34704,18 +34702,19 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str.',
+       text  => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str. und Kanner Str.',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2022-03-07 vvv
-#: next_check: 2022-03-31 vvv
-#: also_indoor: traffic (G,B(beide nur Zeitzer)) vvv
+#: last_checked: 2022-03-27 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2022-03-31 vvv
+#: also_indoor: traffic (ex-G(nur Zeitzer),B(außer Kanner)) vvv
 	q4::inwork; 13326,7291 13368,7300 13476,7330
 	q4::inwork 13326,7291 13325,7210
-#: note: außerdem mögliche Beeinträchtigungen in der Kanner Str.
 	q3::inwork 13476,7330 13373,7426 13341,7423
 #: also_indoor ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },

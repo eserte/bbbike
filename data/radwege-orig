@@ -671,12 +671,16 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenrei
 	RW1; 8057,14876 7911,15008
 #: note: Radweg befindet sich in "Auflösung", hinterer Teil besteht nur noch aus Kleinsteinpflaster
 	RW1; 7911,15008 8057,14876
-#: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert
-#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526
-#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf
-	RW0; 7911,15008 7811,15096
+# 
+#: note: Müllerstr., Richtung Norden
+# REMOVED --- #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf ---	RW0; 7911,15008 7811,15096
+provisorische Busspur ist immer gültig	RW5; 7911,15008 7811,15096 7745,15160
+provisorische Radspur, mit Pollern abgetrennt	RW4; 7745,15160 7607,15282
+# 
+#: note: Müllerstr., Richtung Süden
 #: note: frühere Markierung scheint verschwunden zu sein
 	RW0; 7811,15096 7911,15008
+# 
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr	RW1;RW1 7911,15008 7533,14702 7518,14689
 	RW1;RW1 7518,14689 7514,14686 7480,14660 7458,14643 7438,14627 7368,14573 7180,14419
 	RW1; 7911,15008 7998,15068 8007,15087 8001,15205 8002,15340 8024,15401 8049,15470
@@ -970,7 +974,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,12.01.2022,11:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-03-23 vvv
+#: last_checked: 2022-03-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169
@@ -1740,7 +1744,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2022-03-23
+#: last_checked: 2022-03-27
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2354,13 +2358,13 @@ Radspur hinter den parkenden Autos, grüne Längsstreifen	RW4; 12064,12673 12112,1
 #: source_id: viz2021:13.428503,52.518895,16.11.2021,17:00 (bis 30.11.2021) (mittlerweile bis 10.12.2021) (bis 22.12.2021) (bis 21.12.2021) (inaktiv)
 #: XXX Radspuren sind fertig, Grünmarkierung folgt im Frühjahr 2022 vvv
 #: priority: #D vvv
-#: last_checked: 2022-03-02 vvv
-# REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2022-04-01 vvv
+#: last_checked: 2022-03-25 (mapillary) vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2022-04-01 vvv
 	RW3; 12112,12861 12122,13029
 	RW2; 12122,13029 12126,13088
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -6415,7 +6419,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2022-03-15 (mapillary) vvv
+#: last_checked: 2022-03-25 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183
 	RW3; 11542,16070 11531,16053
@@ -6861,7 +6865,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2022-03-03 (mapillary)
+#: last_checked: 2022-03-25 (mapillary)
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünmarkierung	RW3; 12522,14385 12407,14470
@@ -7149,7 +7153,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: by: https://berliner-abendblatt.de/2021/12/18/pop-up-radwege-bleiben-dauerhaft/
-#: last_checked: 2022-03-26 vvv
+#: last_checked: 2022-03-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105

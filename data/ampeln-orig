@@ -10,7 +10,7 @@
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2022-03-23 vvv
+#: last_checked: 2022-03-27 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -83,6 +83,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Zebrastreifen)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8161
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (Erwähnung des Zebrastreifens, 2022 unwahrscheinlich)
 #: XXX Ampel Am Dachsbau/Schulzendorfer Str. vermutlich nur eine temporäre Lösung wegen der Bauarbeiten in der Hennigsdorfer Str., später wird hier wohl ein Zebrastreifen entstehen
 #: osm_watch: node id="5469708920" version="1"
 #: last_checked: 2021-03-18 (parlamentarische Anfrage)
@@ -2383,7 +2384,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
-#: last_checked: 2022-02-23
+#: last_checked: 2022-03-27
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -3068,7 +3069,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2022-03-19
+#: last_checked: 2022-03-26 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-07-31
 	X::inwork 8732,14098
@@ -3231,7 +3232,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2022-02-20
+#: last_checked: 2022-03-27
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3381,7 +3382,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5364,7330
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2022-02-12
+#: last_checked: 2022-03-26 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-07-31
 	X::inwork 8336,14586
@@ -3392,13 +3393,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2022-02-12
+#: last_checked: 2022-03-26 (mapillary)
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 
 # REMOVED (gibt's nicht mehr) --- #: next_check_id: CORONA-2020 --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX vermutlich temporär für das Impfzentrum --- #: by: mapillary --- 
 #: XXX wann wird diese Ampel abgebaut?
-#: last_checked: 2022-02-12
+#: last_checked: 2022-03-26 (mapillary)
 #: check_frequency: 90d
 	F::inwork 8138,14786
 # 

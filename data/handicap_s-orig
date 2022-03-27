@@ -219,11 +219,11 @@ Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 #: next_check_id: CHAUSSEE-2020
 #: source_id: 2147346552 (bis 16.7.2021)
 #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert) (mittlerweile bis 31.7.2022)
-#: last_checked: 2022-03-19
+#: last_checked: 2022-03-26 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2022-07-31
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456
-#: last_checked: 2022-02-12
+#: last_checked: 2022-03-26 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-07-31
 Chausseestr.: gemeinsamer Geh- und Radweg	q2::inwork; 8442,14456 8406,14507 8336,14586
@@ -304,7 +304,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="11"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-03-19
+#: last_checked: 2022-03-25 (mapillary)
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -885,7 +885,7 @@ Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="10"
 #: priority: #C
-#: last_checked: 2022-03-13 (bw)
+#: last_checked: 2022-03-20 (mapillary)
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
