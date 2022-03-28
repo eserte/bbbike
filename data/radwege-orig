@@ -730,9 +730,9 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: next_check_id: FRANKFURTER-2021
 #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur
 #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022)
-#: last_checked: 2022-03-20
-#: check_frequency: 30d
-#: next_check: 2022-03-31
+#: last_checked: 2022-03-28
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2022-03-31
 	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
@@ -5851,10 +5851,9 @@ Radweg beginnt nach 20 Metern	RW1; 7909,775 7857,802
 #: note: erwähnt in http://www.berlin.de/ba-pankow/presse/archiv/20081119.1005.114651.html sowie MoPo 2009-08-01
 #: confirmed_by: srt vvv
 	RW3;RW3 14050,20955 13909,20928
-#: XXX wird hier eine Busspur eingerichtet?
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
-#: last_checked: 2022-03-10 (mapillary)
-	RW3; 13909,20928 13662,20917
+# REMOVED (realisiert) --- #: XXX wird hier eine Busspur eingerichtet? --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf --- #: last_checked: 2022-03-10 (mapillary)
+Busspur ist immer gültig	RW5; 13909,20928 13712,20919
+	RW4; 13712,20919 13662,20917
 	RW5; 13662,20917 13562,20913
 #: note: größtenteils eigentlich Bushaltestelle
 	RW3; 13562,20913 13576,20849
