@@ -2231,7 +2231,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2022-03-16
+#: last_checked: 2022-03-29
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2281,6 +2281,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1181109.php
 #: by: https://www.berlin.de/imgscaler/ZyeZkkdwQemyWEdhwaVn9BCTIwwfgpHdAz40E0MQ50E/article/L3N5czExLXByb2QvYmEtdHJlcHRvdy1rb2VwZW5pY2svX2Fzc2V0cy9ha3R1ZWxsZXMvcG0vMjAyMi8yMi0wMy0wMV9iYXVtYXNzbmFobWVfLV9wbGFuX3RyZXB0b3dlcl9wYXJrLnBuZw.png
 #: by: https://www.berliner-woche.de/alt-treptow/c-bauen/weitere-arbeiten-im-treptower-park_a337841
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität
 #: last_checked: 2022-03-03
 #: next_check: 2022-05-01
@@ -2662,7 +2663,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-03-19
+#: last_checked: 2022-03-29
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',

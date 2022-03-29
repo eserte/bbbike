@@ -50,7 +50,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: last_checked ^^^
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-03-19
+#: last_checked: 2022-03-29
 #: next_check: 2024-06-01
 Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
@@ -108,7 +108,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2022-03-02
+#: last_checked: 2022-03-29
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -2292,8 +2292,9 @@ S-Bahn und Regionalbahn	B 21562,12088
 # 
 #: next_check_id: FRIEDRICH-2020
 #: note: vorhandene Ampel ist dauerhaft abgeschaltet
-#: last_checked: 2021-12-23
-#: next_check: 2022-04-01
+#: last_checked: 2022-03-29
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2022-04-01
 # REMOVED --- #: valid: !20200821-20211031
 	X0 9418,11804
 # 
@@ -3043,7 +3044,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: osm_watch: node id="5931765487" version="5"
 #: osm_watch: node id="5931765488" version="5"
-#: last_checked: 2022-03-04 (daf)
+#: last_checked: 2022-03-29
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 

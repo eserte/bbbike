@@ -3181,6 +3181,10 @@ Drängelgitter	BNP:3:-32:trailer=10 18232,1669
 Drängelgitter	BNP:3:-147:trailer=10 20560,23
 Drängelgitter	BNP:3:-106:trailer=10 20675,56
 zwei Drängelgitter (Z-Anordnung)	BNP:5:-225:trailer=15 18848,3600
+(Vorfahrt Neues-Deutschland-Gebäude): zwischen Rüdersdorfer Str. und ND mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
+Überqueren der Straße vor der Russischen Botschaft nicht möglich	3nocross::ignrte 8804,12280 9028,12307 9141,12320
+Schadowstr. -> Unter den Linden: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3::igndisp 9011,12423 9028,12307 9141,12320
+Unter den Linden -> Schadowstr.: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3::igndisp 8804,12280 9028,12307 9011,12423
 Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943 20948,18968
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
 Überqueren wegen eines Gerüsts nicht möglich	3nocross::ignrte 3570,17938 3706,17931 3833,17929

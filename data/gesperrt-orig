@@ -1354,8 +1354,9 @@ Mellenseestr. [Wohngebiet]	1 17777,9649 17738,9822 17738,9922
 Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
 #: next_check_id: MUEHSAM-2022
 #: XXX Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-03-11
-#: valid: 20220401-
+#: last_checked: 2022-03-29
+#: check_frequency: 14d
+#: valid: 20220501-
 Mühsamstr.	1 13818,12897 13830,12907
 #: note: nur ein Einfahrt-verboten-Schild ohne korrespondierendes Einbahnstraßenschild
 Lilli-Henoch-Str.	1s:q3 12357,15020 12388,14926
@@ -3330,6 +3331,13 @@ zwei Drängelgitter (Z-Anordnung)	BNP:5::trailer=15 18848,3600
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
+#: last_checked: 2022-03-29
+#: check_frequency: 14d
+(Vorfahrt Neues-Deutschland-Gebäude): zwischen Rüdersdorfer Str. und ND mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
+# 
+#: last_checked: 2022-03-29
+Unter den Linden/Schadowstr.: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3nocross 8804,12280 9028,12307 9141,12320
+# 
 #: next_check_id: FALKENBERG-2021
 #: last_checked: 2022-03-20
 #: check_frequency: 150d
@@ -3567,7 +3575,7 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 #: osm_watch: way id="690322561" version="3"
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2022-02-24 (mapillary)
+#: last_checked: 2022-03-29
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
@@ -3785,7 +3793,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
 #: osm_watch: way id="882672445" version="1"
-#: last_checked: 2022-03-19
+#: last_checked: 2022-03-29
 #: check_frequency: 60d
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
 # 
@@ -3844,7 +3852,7 @@ Henriette-Lustig-Str.: durch Bauzäune abgesperrt	2::inwork 21476,5048 21380,5003
 #: by: https://www.berliner-woche.de/mitte/c-bauen/architekten-koennen-bis-november-ihre-entwuerfe-einreichen_a324605
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2022-03-16
+#: last_checked: 2022-03-29
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
@@ -3857,7 +3865,7 @@ Henriette-Lustig-Str.: durch Bauzäune abgesperrt	2::inwork 21476,5048 21380,5003
 #: source_id: viz2021:13.409118,52.51693,01.09.2021,06:00 (bis Ende 2022, Gesamtbaumaßnahme bis 2023)
 #: note: laut rbb nur bis 31.08.2022
 # REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
-#: last_checked: 2022-03-19 vvv
+#: last_checked: 2022-03-29 vvv
 #: next_check: 2024-06-01 vvv
 Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285 10675,12280
@@ -4020,7 +4028,7 @@ Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2022-03-25 (daf) vvv
+#: last_checked: 2022-03-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -4050,12 +4058,12 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2022-03-25 (daf)
+#: last_checked: 2022-03-29
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
 #: note: allerdings war das Einbahnstraßenschild am 2022-01-17 weggedreht, am 2022-03-02 wieder vollständig aktiv
-#: last_checked: 2022-03-02
+#: last_checked: 2022-03-29
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: next_check_id: POTSDAMSPEICHERSTADT-2022
@@ -4440,7 +4448,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Eröffnung am 17.12.2020)
 #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Eröffnung wird verschoben)
 #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauzäune werden im Dezember 2020 teilweise abgebaut)
-#: last_checked: 2022-03-04 (daf)
+#: last_checked: 2022-03-29
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384

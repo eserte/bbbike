@@ -257,7 +257,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11012 (Frage)
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2022-03-02 vvv
+#: last_checked: 2022-03-29 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -334,12 +334,11 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11130 (Anfrage)
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
-#: last_checked: 2022-03-02 vvv
-#: next_check: 2022-04-01 vvv
+#: last_checked: 2022-03-29
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2022-04-01
 # REMOVED --- #: valid: !20200821-20211031 --- Friedrichstr. (Mitte, Kreuzberg)	H 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103 --- #: valid: 20200821-20211031
 Friedrichstr. (Mitte, Kreuzberg)	NN 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
-#: next_check ^^^
-#: last_checked ^^^
 # 
 Friedrichstr. (Mitte, Kreuzberg)	H 9384,12103 9373,12197 9369,12253 9358,12351 9343,12464 9330,12538 9314,12652 9313,12662 9303,12718 9298,12765 9286,12886 9279,12953 9269,13060 9262,13111 9254,13171 9246,13235 9225,13389 9212,13471
 #: street_width ^^^
@@ -4682,7 +4681,8 @@ Gravensteinstr. [Wohngebiet]	N 12694,22570 12738,22546 12781,22593 12738,22630
 #: by: https://www.deutsches-architekturforum.de/thread/13357-ortsteile-im-pankower-norden-kleinere-projekte/?postID=701626#post701626
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5704 (Antrag)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/gebaut-wird-in-holztafelbauweise_a339233 (bis Herbst 2024)
-#: last_checked: 2021-10-03 (mapillary)
+#: by: https://www.dafmap.de/d/berlin.html?id=7898&mt=4&zoom=17
+#: last_checked: 2022-03-28 (daf)
 #: check_frequency: 360d
 #: next_check: 2024-10-01
 Straße 171	N 12694,22570 12657,22596 12628,22604
@@ -10788,7 +10788,7 @@ Pfarrstr.	N 15279,10862 15359,11115 15458,11306
 Pfarrstr.	NH 15458,11306 15477,11338
 Scheffelstr.	NH 15563,12870 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855
 Eberhardstr.	N 15233,12829 15231,12929
-Eldenaer Str.	NH 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827 13979,12861 13960,12866 13844,12900
+Eldenaer Str.	NH 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827 13979,12861 13975,12862 13844,12900
 Mühsamstr.	N 13830,12907 13818,12897 13622,12806 13559,12779 13506,12752 13371,12694 13273,12649
 Mühsamstr.	N 13818,12897 13838,12884
 (Auerstr. - Mühsamstr.)	NN 13067,12583 13091,12563 13232,12628 13273,12649
@@ -15954,7 +15954,7 @@ Gürtelstr. (Weißensee) [Wohngebiet]	N 13801,15256 13891,15206
 (Wohngebiet Michelangelostr.)	NN 13687,15387 13597,15443
 (Zufahrt zum Gewerbegebiet)	N 13875,15142 14073,15018
 Argenauer Str.	N 22035,7146 21944,7122 21846,7096 21791,7126 21594,7233 21569,7252
-Hübnerstr.	N 13960,12866 13911,12692
+Hübnerstr.	N 13975,12862 13911,12692
 Jacobsohnstr.	N 12189,16578 12357,16696 12472,16783 12521,16817 12699,16945
 Bühringstr.	N 12562,17135 12699,16945 12761,16862 12813,16791
 Frieda-Seidlitz-Str.	N 12761,16862 12613,16749 12602,16727
@@ -18232,7 +18232,7 @@ Dossestr. (Friedrichshain)	N 15043,11637 15140,11811 15202,11789
 #: note: Name ab Ende 2011-01
 Ede-und-Unku-Weg	NN 15140,11811 15122,11834 15133,11902
 Neue Welt	N 14704,12950 14433,13027
-Zellestr.	N 14133,12482 14188,12664
+Zellestr.	N 14133,12482 14161,12576 14188,12664
 Umgehungschaussee	NN 1125,7184 1251,7429 1263,7450 1252,7741 1215,7797 1043,7929 860,8052 834,8067
 (südlicher Hüttenweg - Jagdschloss Grunewald)	NN 869,6085 866,6328 878,6651
 (Jagdschloss Grunewald - Umgehungschaussee)	NN 878,6651 884,6701 1024,6898 1066,7093 1125,7184

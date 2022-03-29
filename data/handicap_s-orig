@@ -20,12 +20,12 @@ Jessnerstr.: Bauarbeiten an der Kreuzung Frankfurter Allee, schmalen Gehweg nutz
 #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022
 #: XXX Datensatz in gesperrt-orig beachten!
 #: also_indoor: traffic (ex-G,ex-B)
-#: last_checked: 2022-03-11 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2022-04-01 vvv
+#: last_checked: 2022-03-29 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2022-04-01 vvv
 Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Fahrbahn gesperrt	q4::inwork 13838,12884 13818,12897
-Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Einbahnstraßenrichtung gedreht	q4::inwork; 13830,12907 13818,12897
-#: next_check ^^^
+# REMOVED (Radfahrer frei-Schild existiert mittlerweile) --- Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Einbahnstraßenrichtung gedreht	q4::inwork; 13830,12907 13818,12897
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -203,7 +203,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
 #: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2022-03-04 (daf)
+#: last_checked: 2022-03-29
 Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -231,7 +231,7 @@ Chausseestr.: gemeinsamer Geh- und Radweg	q2::inwork; 8442,14456 8406,14507 8336
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2022-03-12 (architektur-urbanistik) vvv
+#: last_checked: 2022-03-29 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -242,8 +242,9 @@ Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,
 # 
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
-#: last_checked: 2022-03-02
-#: next_check: 2022-04-01
+#: last_checked: 2022-03-29
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2022-04-01
 # REMOVED --- #: valid: 20200821-20211031
 Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # 
@@ -264,7 +265,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-03-19
+#: last_checked: 2022-03-29
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -325,7 +326,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: source_id: viz2021:13.379936,52.514077,04.03.2019,08:00 (bis 30.6.2021)
 #: add_fragezeichen: Sind die Bauarbeiten hier beendet?
 #: XXX nach den Bauarbeiten vermutlich nur für Radfahrer, Fußgänger und MIV-Anlieger frei
-#: last_checked: 2022-03-25 (daf)
+#: last_checked: 2022-03-29
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-06-30
 # REMOVED --- #: valid: 20191218-20210531
@@ -379,13 +380,13 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2022-03-02 vvv
+#: last_checked: 2022-03-29 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="9"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 #: also_indoor: traffic (ex-H,ex-G)
-#: osm_watch: way id="114667396" version="9"
+#: osm_watch: way id="114667396" version="11"
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -893,7 +894,7 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021) (vermutlich inaktiv)
-#: osm_watch: way id="885619857" version="6"
+#: osm_watch: way id="885619857" version="8"
 #: osm_watch: way id="885619858" version="4"
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (ex-G,B)

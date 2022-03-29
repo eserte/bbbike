@@ -1028,7 +1028,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-03-28
+#: last_checked: 2022-03-29
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1261,7 +1261,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2021-12-30 vvv
+#: last_checked: 2022-02-26 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="6"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -2305,7 +2305,7 @@ Dubrowstr.: schlechtes Kopfsteinpflaster	Q3 -1819,3042 -1709,3080 -1633,3104 -15
 Dubrowstr.: Kopfsteinpflaster	Q2 -1453,3166 -1187,3264
 Gabelsbergerstr.: Kopfsteinpflaster	Q2 14381,12207 14451,12396
 #: note: simon hahn hat hier "schlechtes" Kopfsteinpflaster geschrieben, aber es sah recht normal = Q2 aus
-Hübnerstr.: Kopfsteinpflaster	Q2 13960,12866 13911,12692
+Hübnerstr.: Kopfsteinpflaster	Q2 13975,12862 13911,12692
 Heidenfeldstr.: Gehwegpflasterung	Q0- 13433,13371 13383,13349
 Heidenfeldstr.: Kopfsteinpflaster	Q2 13595,13442 13445,13376 13433,13371
 Neue Promenade: unebenes Pflaster	Q2+ 10286,13084 10263,13047 10185,12982 10132,12941
@@ -8861,7 +8861,7 @@ Straße 74: Asphalt	Q0- 12583,22428 12696,22455 12821,22437 12855,22431 13136,223
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: wosch
 #: XXX eventuell wird der Asphalt noch glatter gemacht
-#: last_checked: 2022-03-19 (mapillary)
+#: last_checked: 2022-03-28 (daf)
 #: check_frequency: 60d
 Königsteinbrücke: welliger Asphalt	Q1 13136,22397 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378 13394,22373
 Straße 86: Asphalt	Q0 13805,22935 13726,22860
@@ -9204,7 +9204,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2022-02-27 vvv
+#: last_checked: 2022-03-29 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -28066,12 +28066,14 @@ Fanny-Zobel-Str.: Asphalt	Q0 13975,10187 13899,10214
 (Hoffmannstr. - Uferweg an den Treptowers): Verbundsteine	Q1 14077,10016 14116,10149 14126,10176
 #: confirmed_by: srt
 Dossestr. (Friedrichshain): Kopfsteinpflaster	Q2 15043,11637 15140,11811 15202,11789
-# REMOVED --- Eldenaer Str.: Asphalt	Q1 14096,12827 14066,12836 13979,12861 13960,12866 13844,12900
+# REMOVED --- Eldenaer Str.: Asphalt	Q1 14096,12827 14066,12836 13979,12861 13975,12862 13844,12900
 Neue Welt: Asphalt	Q0 14704,12950 14433,13027
 August-Lindemann-Str.: Gehwegplatten, Kopfsteinpflaster	Q2 14355,12752 14360,12792
 August-Lindemann-Str.: Asphalt	Q0 14360,12792 14376,12849 14411,12951 14419,12978 14433,13027 14448,13081 14465,13138 14476,13181
+#: corrected_by: srt (Kopfsteinpflaster, Q2 -> ..., neu gemacht)
+Zellestr.: Asphalt	Q0 14133,12482 14161,12576
 #: confirmed_by: srt
-Zellestr.: Kopfsteinpflaster	Q2 14133,12482 14188,12664
+Zellestr.: Kopfsteinpflaster	Q2 14161,12576 14188,12664
 Umgehungschaussee: fester breiter Waldweg	Q1 1125,7184 1251,7429 1263,7450 1252,7741 1215,7797 1043,7929 860,8052 834,8067
 #: corrected_by: srt (Q1 -> Q1-)
 (Jagdschloss Grunewald - Umgehungschaussee): fester breiter Waldweg	Q1- 878,6651 884,6701 1024,6898 1066,7093 1125,7184
@@ -30779,4 +30781,5 @@ Einmündungsbereich asphaltiert	Q0 3450,3142
 Einmündungsbereich asphaltiert	Q0 3328,3313
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 3318,3046
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 3174,3052
+Einmündungsbereich mit Kopfsteinpflaster	Q2 13273,12649
 #: ignore ^^^

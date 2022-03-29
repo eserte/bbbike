@@ -702,7 +702,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: source_id: 2147345481
 #: source_id: 2147345753
 #: source_id: viz2021:13.408836,52.517143,22.04.2020,15:00 (Bauarbeiten bis 30.6.2023)
-#: last_checked: 2022-03-16 vvv
+#: last_checked: 2022-03-29 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
@@ -970,8 +970,10 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
-#: source_id: viz2021:13.461003,52.492338,30.10.2021,06:00 (Wochenendsperrung für Kfz-Verkehr)
-#: source_id: viz2021:13.463301,52.496054,12.01.2022,11:00 (bis 2028)
+#: source_id: viz2021:13.461003,52.492338,30.10.2021,06:00 (Wochenendsperrung für Kfz-Verkehr) (inaktiv)
+#: source_id: viz2021:13.463301,52.496054,12.01.2022,11:00 (bis 2028) (mittlerweile bis 30.3.2022)
+#: source_id: viz2021:13.463301,52.496054,30.03.2022,07:00 (bis 14.4.2022)
+#: source_id: viz2021:13.463301,52.496054,14.04.2022,15:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
 #: last_checked: 2022-03-27 vvv
@@ -1226,7 +1228,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="17"
-#: last_checked: 2022-02-25
+#: last_checked: 2022-03-29
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1240,7 +1242,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="30"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2022-02-25
+#: last_checked: 2022-03-29
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -1578,7 +1580,7 @@ Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2022-03-04 (daf)
+#: last_checked: 2022-03-29
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1587,7 +1589,7 @@ Busspur ist immer gültig	RW5;RW5 9984,12426 9934,12420 9858,12410
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
-#: last_checked: 2022-03-04 (daf)
+#: last_checked: 2022-03-29
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-10-31
 Busspur ist immer gültig	RW5;RW0 10063,12438 10024,12431 9984,12426
@@ -1649,7 +1651,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: by: https://molkenmarkt01.hi-res-cam.com/ (webcam)
 #: XXX temporäre Radwegführung
-#: last_checked: 2022-03-16
+#: last_checked: 2022-03-29
 #: check_frequency: 30d
 temporäre Führung als Bürgersteigradweg	RW1; 10887,12570 10954,12635
 # wieder herstellen:	RW4; 10887,12570 10954,12635
@@ -2358,7 +2360,7 @@ Radspur hinter den parkenden Autos, grüne Längsstreifen	RW4; 12064,12673 12112,1
 #: source_id: viz2021:13.428503,52.518895,16.11.2021,17:00 (bis 30.11.2021) (mittlerweile bis 10.12.2021) (bis 22.12.2021) (bis 21.12.2021) (inaktiv)
 #: XXX Radspuren sind fertig, Grünmarkierung folgt im Frühjahr 2022 vvv
 #: priority: #D vvv
-#: last_checked: 2022-03-25 (mapillary) vvv
+#: last_checked: 2022-03-29 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-04-01 vvv
 	RW3; 12112,12861 12122,13029
@@ -5599,7 +5601,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by ^^^
 # 
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2022-02-24 (mapillary) vvv
+#: last_checked: 2022-03-29 vvv
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9141,12320 9131,12438 9121,12514
 #: XXX früher RW3, zurzeit durch Gelbmarkierung (Kreuze) ungültig gemacht
@@ -6331,7 +6333,7 @@ Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW6;RW6 4971,6345 4846,6417
 # 
 #: note Eldenaer Str./Scheffelstr. Richtung Osten ###########
-	RW3; 13844,12900 13960,12866 13979,12861 14096,12827 14162,12808 14355,12752
+	RW3; 13844,12900 13975,12862 13979,12861 14096,12827 14162,12808 14355,12752
 #: note: 50m
 teilweise mit asphaltiertem Straßenbahnkap	RW1; 14355,12752 14435,12761
 	RW3; 14435,12761 14556,12781 14661,12798
@@ -6364,7 +6366,7 @@ teilweise mit asphaltiertem Straßenbahnkap	RW1; 14435,12761 14355,12752
 	RW3; 14355,12752 14162,12808
 asphaltiertes Straßenbahnkap	RW1; 14162,12808 14096,12827
 	RW4; 14096,12827 13979,12861
-	RW3; 13979,12861 13960,12866 13844,12900
+	RW3; 13979,12861 13975,12862 13844,12900
 #: note Ende Scheffelstr./Eldenaer Str. #####################
 # 
 # REMOVED --- #: next_check_id: KANTSTR-2017 --- #: XXX wegen Bauarbeiten am Hochhaus "Upper West" sind die Radspuren aufgehoben --- #: by: http://www.tagesspiegel.de/berlin/stadtentwicklung-zwillingsturm-soll-2016-in-der-city-west-eroeffnen/7416454.html (geplante Eröffnung Mitte 2016) --- #: source_id: 2147341048 --- #: last_checked: 2017-08-13 --- #: next_check: 2017-08-26
@@ -7152,9 +7154,11 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: by: https://berliner-abendblatt.de/2021/12/18/pop-up-radwege-bleiben-dauerhaft/
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191261.php (Verstetigung bis Ende April 2022)
+#: by: https://berliner-abendblatt.de/2022/03/29/kottbusser-strasse-pop-up-radweg-wird-verstetigt/
 #: last_checked: 2022-03-27 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2022-12-31 vvv
+#: next_check: 2022-04-30 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="30184955" version="26"
 provisorisch geschützter Radstreifen	RW4;RW4 11393,10390 11512,10105
