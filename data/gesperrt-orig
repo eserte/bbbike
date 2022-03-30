@@ -3314,7 +3314,7 @@ Drängelgitter	BNP:3::trailer=10 -739,23004
 #: note: kann allerdings recht gut umfahren werden
 Schranke	BNP:1::trailer=3 1201,15804
 Drängelgitter	BNP:3::trailer=10 32616,-23392
-#: note: kann offen sein, eine kurvige Umfahrungsmöglichkeit existiert
+#: note: kann offen sein, eine kurvige sowie eine gerade+enge Umfahrungsmöglichkeit existieren
 Schranke	BNP:2::trailer=8 17837,12277
 #: note: kann offen sein, eine gerade Umfahrungsmöglichkeit existiert
 Schranke	BNP:0::trailer=2 18037,12362
@@ -3331,8 +3331,11 @@ zwei Drängelgitter (Z-Anordnung)	BNP:5::trailer=15 18848,3600
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191451.php (Umgestaltung bis Sommer 2023)
+#: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
 #: last_checked: 2022-03-29
-#: check_frequency: 14d
+#: check_frequency: 30d
+#: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): zwischen Rüdersdorfer Str. und ND mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
 # 
 #: last_checked: 2022-03-29
@@ -3504,7 +3507,7 @@ Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, k
 # REMOVED --- #: XXX bis wann geht die Einbahnstraßenregelung? --- #: last_checked: 2021-05-17 --- Rudi-Arndt-Str.: Einbahnstraßenregelung	1s:q4:inwork 13449,13892 13359,13832
 # 
 #: osm_watch: way id="871451762" version="1"
-#: last_checked: 2022-03-28
+#: last_checked: 2022-03-30
 #: check_frequency: 21d
 Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 15320,12375 15408,12394
 # 
