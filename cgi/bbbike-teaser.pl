@@ -139,17 +139,17 @@ EOF
 }
 
 sub teaser_halbmarathon {
-    my $out_of_date = $today gt "20150329";
+    my $out_of_date = $today gt "20220403";
     if (!$out_of_date) {
-	my $halbmarathon_map_url = 'http://www.berliner-halbmarathon.de/event/streckesperrungen.html';
+	my $halbmarathon_map_url = 'https://viz.berlin.de/2022/03/halbmarathon/';
 	if ($lang eq 'en') {
 	    <<EOF
-<div class="teaser" style="font-weight:bold">BERLIN HALF MARATHON on 29 March 2015<br/>
+<div class="teaser" style="font-weight:bold">BERLIN HALF MARATHON on 03 April 2022<br/>
 <a href="$halbmarathon_map_url">Map with blockings</a></div>
 EOF
 	} else {
 	    <<EOF
-<div class="teaser" style="font-weight:bold">Am 29. März 2015 findet der Berliner Halbmarathon statt.<br/>
+<div class="teaser" style="font-weight:bold">Am 3. April 2022 findet der Berliner Halbmarathon statt.<br/>
 <a href="$halbmarathon_map_url">Karte mit den Sperrungen</a></div>
 EOF
 	}
