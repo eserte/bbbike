@@ -197,7 +197,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: also_indoor: traffic (none)
-#: last_checked: 2022-03-24
+#: last_checked: 2022-03-31
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882 11160,12071
 # 
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
@@ -259,7 +259,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/volt-berlin-baufeld-e3a.312/page-8#post-14027
 #: XXX Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straße, Fahrbahn ist noch abgesperrt
-#: last_checked: 2022-02-18 (mapillary)
+#: last_checked: 2022-03-31
 #: check_frequency: 60d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
@@ -641,12 +641,7 @@ Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwor
 # 
 ### Neukölln ###
 # 
-#: next_check_id: WESER-2021
-#: XXX: während der Bauarbeiten ist der Radweg nicht befahrbar
-#: last_checked: 2022-03-12
-#: check_frequency: 30d
-Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
-# 
+# REMOVED --- #: next_check_id: WESER-2021 --- #: XXX: während der Bauarbeiten ist der Radweg nicht befahrbar --- #: last_checked: 2022-03-12 --- #: check_frequency: 30d --- Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # REMOVED (Sperrung noch da, aber die Bürgersteigüberfahrt ist weggefallen) --- #: add_fragezeichen: Dauern die Bauarbeiten an? --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-02-01 --- Maybachufer: Bauarbeiten zwischen Friedelstr. und Liberdastr., teilweise Radfahrerführung über den Bürgersteig	q2::inwork 12085,9778 12250,9691
 # REMOVED --- #: next_check_id: BRAUNSCHWEIGER-2020 --- #: last_checked: 2020-10-24 vvv
 # REMOVED (hier kommt man mittlerweile gut durch) --- Braunschweiger Str.: Fahrbahn wird neu gemacht, Ausweichen auf Gehweg	q4::inwork 13702,7418 13781,7524 13854,7620
@@ -1188,7 +1183,9 @@ Volkspark Friedrichshain: Fußgänger	q2 12244,13240 12341,13309 12420,13370
 #: note: offizieller Radweg, hier etwas breiter
 Volkspark Friedrichshain: Fußgänger	q1 12420,13370 12483,13418
 #: note: offizieller Radweg
-Volkspark Friedrichshain: Fußgänger	q1 12483,13418 12450,13542 12344,13627 12372,13755
+Volkspark Friedrichshain: Fußgänger	q1 12483,13418 12450,13542 12366,13615 12344,13627 12353,13653 12372,13755
+#: note: offizieller Radweg
+Volkspark Friedrichshain: Fußgänger	q1 12366,13615 12353,13653
 #: note: offizieller Radweg
 Volkspark Friedrichshain: Fußgänger	q1 12344,13627 12204,13609 12169,13609 12141,13609
 #: note: offizieller Radweg
@@ -4018,6 +4015,7 @@ Bruno-Baum-Grünzug: Grünanlage, Fußgänger	q3 20260,15434 20245,15394 20004,15251
 #: XXX_prog BS (ansonsten q2)
 (Ihnestr. - Clayallee): einige Fußgänger, Bordstein	q3 1981,4741 2033,4757
 (Breitenbachplatz/Südwestkorso - Kreuznacher Str.): Gehweg	q4+ 4103,6716 4174,6711
+(Krautstr. - Kleine Markusstr.): zwei Bodenschwellen	q2 12002,12008 11961,12025 11956,12071 11932,12111 11937,12127
 # 
 ######################### User Contributions #################################
 # 

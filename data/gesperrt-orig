@@ -647,7 +647,7 @@ Breitenbachplatz	1 4103,6716 4074,6681 4034,6642 3983,6599 3925,6604 3938,6651 4
 Südwestkorso	1 4061,6753 4204,6826
 Südwestkorso	1 4204,6826 4125,6763 4103,6716
 Kleine Markusstr. - Krautstr.	1 12021,12066 11958,12112
-Kleine Markusstr. - Krautstr.	1 11958,12112 11962,12034 12002,12008
+Kleine Markusstr. - Krautstr.	1 11937,12127 11932,12111 11956,12071 11961,12025 12002,12008
 Schönstedtstr.	1 12545,8449 12643,8533
 # REMOVED (verkürzt) --- Eckertstr.	1 13608,12547 13522,12748
 Erkelenzdamm	1s:q3 11117,10326 11094,10261
@@ -3333,10 +3333,10 @@ zwei Drängelgitter (Z-Anordnung)	BNP:5::trailer=15 18848,3600
 #
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191451.php (Umgestaltung bis Sommer 2023)
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2022-03-29
+#: last_checked: 2022-03-31
 #: check_frequency: 30d
 #: next_check: 2023-07-01
-(Vorfahrt Neues-Deutschland-Gebäude): zwischen Rüdersdorfer Str. und ND mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
+(Vorfahrt Neues-Deutschland-Gebäude): mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
 # 
 #: last_checked: 2022-03-29
 Unter den Linden/Schadowstr.: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3nocross 8804,12280 9028,12307 9141,12320
@@ -3533,12 +3533,12 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.deutsches-architekturforum.de/thread/14527-neubau-holzmarktstra%C3%9Fe-51-friedrichshain-in-planung/?postID=681293#post681293
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_39_3593_3676_online.pdf (Einziehung und Widmung einer Grünanlage)
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen, sollte ein Teilabschnitt der Straße endgültig verschwinden
-#: XXX mittlerweile (April 2021) wurde der südliche Teil schon weggebaggert
+#: XXX mittlerweile (April 2021) wurde der südliche Teil schon weggebaggert; Ende März 2022: die komplette Straße existiert nicht mehr
 #: osm_watch: way id="25008069" version="15"
-#: last_checked: 2022-02-23 (mapillary)
-#: check_frequency: 60d
+#: last_checked: 2022-03-31
+#: check_frequency: 90d
 # REMOVED (hier ist nichts mehr) --- Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881
-Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11923,11881 11940,11982
+Mehlbeerenweg: Straße existiert nicht mehr	2::inwork 11923,11881 11940,11982
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14299-wohnquartier-f%C3%BCrstenberger-stra%C3%9Fe-8-mitte-in-bau/?postID=686545#post686545
 #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022)
@@ -3882,7 +3882,7 @@ Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realität weiterhin Einbahnstraße
 #: osm_watch: way id="5096644" version="16"
 #: priority: #C
-#: last_checked: 2022-02-27
+#: last_checked: 2022-03-31
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 

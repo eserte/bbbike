@@ -38,8 +38,7 @@ Hobrechtsfelder Chaussee (bis Kurve): asphaltiert	Q0 15589,27116 15230,26548 144
 Hobrechtsfelder Chaussee (ab Kurve): Kopfsteinpflaster	Q2 15589,27116 15711,27928 15777,28037
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12012,16250 12090,16199
 Weserstr.: asphaltiert	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12328,9117
-Weserstr.: mäßiges, teilweise schlechtes Kopfsteinpflaster	Q2; 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
-Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2; 12590,8977 12531,9009 12480,9037 12402,9080 12328,9117
+Weserstr.: Asphalt	Q0 12590,8977 12531,9009 12480,9037 12402,9080 12328,9117
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Jessnerstr.: Asphalt mit Aufpflasterungen	Q0 15077,11910 14986,11760 14946,11697 14849,11539
 Stuttgarter Str.: Asphalt	Q0 13663,8011 13633,8036 13554,8101 13510,8138
@@ -2759,7 +2758,7 @@ Helsingforser Str.: Betonpflaster	Q0 13427,11431 13410,11447
 Helsingforser Str.: Kopfsteinpflaster	Q2 13410,11447 13324,11529 13274,11585 13202,11666
 Helsingforser Str.: Betonpflaster	Q0 13427,11431 13496,11384
 Kleine Markusstr. - Krautstr.: Beton	Q1 11937,12127 11958,12112 12021,12066
-Kleine Markusstr. - Krautstr.: Beton	Q1 12002,12008 11962,12034 11958,12112
+Kleine Markusstr. - Krautstr.: Beton	Q1 12002,12008 11961,12025 11956,12071 11932,12111 11937,12127
 Pücklerstr.: Kopfsteinpflaster	Q2 12142,10600 12210,10716
 Hertefeldstr.: Asphalt	Q0 -3039,14522 -2964,14478
 Kirchgasse (Spandau): Kopfsteinpflaster	Q2 -3089,14440 -3150,14478
@@ -9477,7 +9476,8 @@ Am Steinberg: Beton	Q1 12998,17480 13156,17579
 Volkspark Friedrichshain: wassergebundene Decke	Q1 12420,13370 12483,13418
 Volkspark Friedrichshain: wassergebundene Decke	Q1 12445,13320 12405,13300 12404,13266 12369,13209
 Volkspark Friedrichshain: kleinteiliges Kopfsteinpflaster	Q1 12476,13273 12445,13320 12420,13370
-Volkspark Friedrichshain: Asphalt	Q0 12483,13418 12450,13542 12344,13627 12372,13755
+Volkspark Friedrichshain: Asphalt	Q0 12483,13418 12450,13542 12366,13615 12344,13627 12353,13653 12372,13755
+Volkspark Friedrichshain: Asphalt	Q0 12366,13615 12353,13653
 Viechtacher Str.: Asphalt	Q0 19657,9666 19727,9672 19801,9680 19871,9680 19923,9682
 Gensinger Str. [Wohngebiet]: Asphalt	Q0 18927,12135 18913,11909 18910,11826
 Marzahner Chaussee [Wohngebiet]: Asphalt	Q0 18417,11854 18482,11849 18578,11881
