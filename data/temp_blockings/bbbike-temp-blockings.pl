@@ -29219,11 +29219,13 @@ EOF
 	q4::inwork; 9936,14085 10002,14092
 EOF
      },
-     { from  => 1554400800, # 2019-04-04 20:00
-       until => $isodate2epoch->("2019-04-08 06:00:00"),
-       text  => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, von 5.4.2019 20 Uhr bis 8.4.2019 6 Uhr',
+     { from  => 1648843431, # 1554400800, # 2019-04-04 20:00
+       until => $isodate2epoch->("2022-04-04 06:00:00"),
+       text  => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, bis 4.4.2022 6 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://viz.berlin.de/2022/04/halbmarathon/
+#: by: https://twitter.com/ellirhc11/status/1509924822444298250
 	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
@@ -29516,7 +29518,7 @@ EOF
        source_id => '2147344253', # bis Juni 2021 (!)
        data  => <<EOF,
 #: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022)
-#: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag)
+#: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
 #: also_indoor: traffic (H,B,G)
@@ -33249,8 +33251,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-07-08 11:00:00"),
-       until => $isodate2epoch->("2022-04-29 17:00:00"), # undef, # Termin kann wohl nicht gehalten werden --- $isodate2epoch->("2021-12-15 17:00:00"),
-       text  => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), sowie die Anbindung Nöldnerstr. (komplett, auch für Fußgänger), vom 09.07.2021 11:00 bis 29.04.2022 17:00',
+       until => $isodate2epoch->("2022-06-20 17:00:00"), # undef, # Termin kann wohl nicht gehalten werden --- $isodate2epoch->("2021-12-15 17:00:00"),
+       text  => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), sowie die Anbindung Nöldnerstr. (komplett, auch für Fußgänger), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
        type  => 'gesperrt',
        source_id => 'viz2021:13.475242,52.50154,09.07.2021,11:00',
        data  => <<EOF,
@@ -33261,7 +33263,7 @@ EOF
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
 #: last_checked: 2022-03-30
 #: check_frequency: 30d
-#: next_check: 2022-04-29
+#: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="7"
 	q3::inwork 15279,10862 15355,10875
@@ -34800,7 +34802,7 @@ EOF
        source_id => 'https://twitter.com/VIZ_Berlin/status/1509046513573498881',
        data  => <<EOF,
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-03-31
+#: last_checked: 2022-04-01
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583

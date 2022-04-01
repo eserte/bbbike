@@ -826,7 +826,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2418,7 +2418,46 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2022/04/halbmarathon/
+#: by: https://twitter.com/ellirhc11/status/1509924822444298250
+	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
+	2::temp 8540,12420 8775,12457
+	2::temp 8309,12758 8306,12609 8207,12606
+	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
+	2::temp 8306,12609
+	3 8554,12593 8540,12420 8775,12457
+	3 8399,12610 8400,12417 8391,12389
+# REMOVED ---	3 8369,12609 8373,12416 8391,12389
+	3 8775,12457 8540,12420 8554,12593
+	3 8327,12174 8344,12221 8391,12389
+	3 7429,12070 7383,12095 7031,12320
+# REMOVED ---	3 8391,12389 8373,12416 8369,12609
+	3 8391,12389 8344,12221 8327,12174
+	3 8391,12389 8400,12417 8399,12610
+	3 7654,12464 7627,12380 7603,12353
+	3 7603,12353 7627,12380 7654,12464
+	3 8592,12252 8538,12245 8522,12187
+	3 8592,12252 8538,12245 8522,12239
+	3 7822,12201 7816,12150 7823,12120
+	3 7822,12201 7875,12363 7945,12592
+	3 8522,12187 8538,12245 8522,12239
+	3 8522,12187 8538,12245 8592,12252
+	3 7945,12592 7875,12363 7822,12201
+	3 7945,12592 8122,12603 8120,12756
+	3 7031,12320 7383,12095 7429,12070
+	3 8522,12239 8538,12245 8522,12187
+	3 8522,12239 8538,12245 8592,12252
+	3 8120,12756 8122,12603 7945,12592
+	3 7823,12120 7816,12150 7822,12201
+',
+         'from' => 1648843431,
+         'id' => 3085,
+         'text' => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, bis 4.4.2022 6 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1649044800
+       },
        {
          'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
@@ -2481,7 +2520,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        {
          'data' => '#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022)
-#: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag)
+#: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
 #: also_indoor: traffic (H,B,G)
@@ -3372,7 +3411,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
 #: last_checked: 2022-03-30
 #: check_frequency: 30d
-#: next_check: 2022-04-29
+#: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="7"
 	q3::inwork 15279,10862 15355,10875
@@ -3382,9 +3421,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1625734800,
          'id' => 3411,
          'source_id' => 'viz2021:13.475242,52.50154,09.07.2021,11:00',
-         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), sowie die Anbindung Nöldnerstr. (komplett, auch für Fußgänger), vom 09.07.2021 11:00 bis 29.04.2022 17:00',
+         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), sowie die Anbindung Nöldnerstr. (komplett, auch für Fußgänger), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
          'type' => 'gesperrt',
-         'until' => 1651244400
+         'until' => 1655737200
        },
        undef,
        undef,
@@ -3533,18 +3572,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: osm_watch: way id="8069460" version="16"
-#: also_indoor: traffic (G,H(ungenau))
-	2::inwork 2885,28906 3450,28728
-',
-         'from' => 1633212000,
-         'id' => 3454,
-         'source_id' => 'LS/721-E/21/119',
-         'text' => 'Hohen Neuendorf: Brücke zwischen An den Rotpfuhlen und der August-Müller-Str. gesperrt, 04.10.2021 bis 31.03.2022 ',
-         'type' => 'gesperrt',
-         'until' => 1648764000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3881,16 +3909,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '	2::inwork 45543,101043 45648,100789 45806,100487 45847,100277 45868,100193
-',
-         'from' => 1643397267,
-         'id' => 3506,
-         'source_id' => '217300506',
-         'text' => 'Dreesch - Grünow: Bauarbeiten, Sperrung bis zum 31.03.2022',
-         'type' => 'gesperrt',
-         'until' => 1648764000
-       },
+       undef,
        {
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)?
@@ -3987,22 +4006,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://berliner-abendblatt.de/2022/02/15/naturschutz-und-bauen/
-	2::inwork 18511,3290 18451,3352 18562,3461
-	2::inwork 18689,3465 18633,3530 18562,3461 18624,3402
-	2::inwork 18326,3141 18304,3208 18337,3238 18451,3352
-	2::inwork 18633,3530 18803,3694
-	2::inwork 18228,4168 18178,4125 18176,4105 18162,4105 18122,4074 18006,3992 18031,3737
-	2::inwork 18337,3238 18395,3176
-',
-         'from' => 1644793200,
-         'id' => 3514,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1176225.php',
-         'text' => 'Landschaftspark Johannisthal: mögliche Sperrungen wegen temporären Baustraßen, Mitte Februar 2022 bis Ende März 2022',
-         'type' => 'gesperrt',
-         'until' => 1648763999
-       },
+       undef,
        undef,
        undef,
        {
@@ -4167,7 +4171,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: next_check_id: STRALAUER-2019
-#: last_checked: 2022-03-31
+#: last_checked: 2022-04-01
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583

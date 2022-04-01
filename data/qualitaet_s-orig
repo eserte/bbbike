@@ -345,7 +345,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="24"
-#: last_checked: 2022-01-23
+#: last_checked: 2022-04-01
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13450,9714 13251,9829
 # 
@@ -2006,7 +2006,7 @@ Lehmbruckstr.: Kopfsteinpflaster	Q2 13690,10715 13755,10896 13795,10995
 Müllenhoffstr.: Kopfsteinpflaster	Q2 11110,9661 11311,9576
 Manitiusstr.: Kopfsteinpflaster	Q2 12207,9632 12374,9542
 Manitiusstr.: Asphalt	Q0 12374,9542 12523,9465
-Nansenstr.: Kopfsteinpflaster	Q2 12412,9610 12374,9542 12333,9470 12270,9362 12248,9320 12186,9205 12180,9193
+Nansenstr.: Kopfsteinpflaster	Q2- 12412,9610 12374,9542 12333,9470 12270,9362 12248,9320 12186,9205 12180,9193
 Reuterplatz: Kopfsteinpflaster	Q2 12248,9320 12146,9384
 Knorrpromenade: Kopfsteinpflaster	Q2 14369,11489 14424,11639
 (Vorfahrt Neues-Deutschland-Gebäude): Kopfsteinpflaster, OK	Q1 12788,11898 12891,12008
@@ -12373,7 +12373,7 @@ Kastanienallee: wassergebundene Decke	Q1- 23817,14461 23877,14315 23897,14274 23
 Kastanienallee: Verbundsteinpflaster	Q1 23962,14140 24055,13984
 Gertrud-Hanna-Promenade: Mosaikpflaster	Q1- 8548,7384 8603,7452
 Falkenberger Chaussee [Wohngebiet]: Beton	Q1+ 17358,17400 17211,17600
-Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q1 13870,9872 14152,9746
+Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q0- 13870,9872 14152,9746
 #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/anreise-zum-spreepark-soll-mit-schiffen-und-mehr-bussen-erfolgen_a315294 (Fahrbahn soll wasserdurchlässige Deckschicht bekommen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_50_4625_4696_online.pdf (Absichtserklärung zu einer Straßenlandeinziehung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_02_0049_0116_online.pdf (Teileinziehung)
@@ -12496,6 +12496,8 @@ Birkbuschstr. - Wolfensteindamm: Asphalt	Q0 4822,5114 4810,5134 4794,5161
 (Dieselstr. - westlicher Mergenthalerring): unbefestigte Straße	Q2- 14249,8075 14239,8095 14247,8254 14229,8278
 Holstweg: Beton und Asphalt	Q0- -1013,2579 -882,2260
 (Lützelsteiner Weg - Saargemünder Str.): wassergebundene Decke	Q1- 1690,4708 1730,4743
+(Uferweg - Forster Str.): unbefestigt	Q2 12280,9728 12286,9739
+(Uferweg - Liegnitzer Str.): unbefestigt	Q2 12432,9652 12441,9663
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -30544,6 +30546,7 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 22985,-1319
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 21828,-1015
 Einmündungsbereich mit Kleinsteinpflaster	Q1- 13245,7742
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12682,9089
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 12590,8977
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12740,8862
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12836,8980
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 11769,8515
@@ -30781,4 +30784,14 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 3318,3046
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 3174,3052
 Einmündungsbereich mit Kopfsteinpflaster	Q2 13273,12649
 Kreuzungsbereich mit Kreuzungsbereich	Q2 13156,13978
+Kreuzungsbereich mit Kopfsteinpflaster	Q2- 12374,9542
+Kreuzungsbereich mit Kopfsteinpflaster	Q2- 12270,9362
+Einmündungsbereich asphaltiert	Q0 12412,9610
+Einmündungsbereich asphaltiert	Q0 12250,9691
+Einmündungsbereich asphaltiert	Q0 12402,9080
+Einmündungsbereich asphaltiert	Q0 12480,9037
+Einmündungsbereich asphaltiert	Q0 12531,9009
+Einmündungsbereich mit Kopfsteinpflaster	Q2- 12950,9132
+Einmündungsbereich mit Kopfsteinpflaster	Q2- 13078,8992
+Kreuzungsbereich asphaltiert	Q0 12210,10716
 #: ignore ^^^

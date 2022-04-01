@@ -515,8 +515,10 @@ für Radfahrer freigegebene Busspur hat eingeschränkte Geltungszeiten	RW1; 1125,3
 	RW1; 3425,4541 3344,4488 3260,4444 3048,4305
 	RW10; 3048,4305 3266,4438 3344,4488 3425,4541
 	RW1;RW1 3710,4728 3637,4680 3527,4608 3425,4541
-	RW2; 4343,5112 4173,5013 4153,5001 4132,4988
-eng, Wurzelhebungen und -schäden	RW2; 4132,4988 3929,4863 3826,4800
+#: by: https://twitter.com/SenUMVKBerlin/status/1509818033098919936
+# früher:	RW2; 4343,5112 4173,5013 4153,5001 4132,4988
+# früher: eng, Wurzelhebungen und -schäden	RW2; 4132,4988 3929,4863 3826,4800
+für Linienverkehr frei	RW4; 4343,5112 4173,5013 4153,5001 4132,4988 3929,4863 3826,4800
 	RW2; 3826,4800 3754,4755 3710,4728
 	RW10; 3710,4728 3754,4755 3826,4800 3929,4863 4132,4988 4153,5001 4173,5013 4343,5112
 kein Abstand zu parkenden Autos, für Radfahrer freigegebene Busspur gilt Mo-Fr 7-18 Uhr	RW1;RW1 6687,8385 6608,8277 6560,8219 6460,8093
@@ -974,7 +976,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,14.04.2022,15:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-03-27 vvv
+#: last_checked: 2022-04-01 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169
@@ -7157,7 +7159,8 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://berliner-abendblatt.de/2021/12/18/pop-up-radwege-bleiben-dauerhaft/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191261.php (Verstetigung bis Ende April 2022)
 #: by: https://berliner-abendblatt.de/2022/03/29/kottbusser-strasse-pop-up-radweg-wird-verstetigt/
-#: last_checked: 2022-03-27 vvv
+#: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html
+#: last_checked: 2022-04-01 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-04-30 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105

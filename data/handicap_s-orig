@@ -486,12 +486,12 @@ Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwor
 ### Niederschöneweide ###
 # 
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,726545#msg-726545
-#: source_id: viz2021:13.509646,52.45627,10.02.2022,10:00 (bis 1.4.2022)
+#: source_id: viz2021:13.509646,52.45627,10.02.2022,10:00 (bis 1.4.2022) (mittlerweile bis 31.5.2022)
 #: note: auch als "Verlängerte Brückenstraße" bezeichnet
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
 #: last_checked: 2022-03-20 (krickstadt)
-#: next_check: 2022-04-01
+#: next_check: 2022-05-31
 # REMOVED --- #: valid: -20220401
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
 # 
@@ -641,7 +641,14 @@ Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwor
 # 
 ### Neukölln ###
 # 
-# REMOVED --- #: next_check_id: WESER-2021 --- #: XXX: während der Bauarbeiten ist der Radweg nicht befahrbar --- #: last_checked: 2022-03-12 --- #: check_frequency: 30d --- Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
+#: next_check_id: WESER-2021
+#: XXX: während der Bauarbeiten ist der Radweg nicht befahrbar
+#: last_checked: 2022-04-01
+#: check_frequency: 30d
+#: next_check: 2022-09-15
+# REMOVED (hier fertig) --- Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
+Weserstr.: Bauarbeiten, Fahrbahn gesperrt, gemeinsamer Geh- und Radweg. eng	q3::inwork 12590,8977 12740,8862
+# 
 # REMOVED (Sperrung noch da, aber die Bürgersteigüberfahrt ist weggefallen) --- #: add_fragezeichen: Dauern die Bauarbeiten an? --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-02-01 --- Maybachufer: Bauarbeiten zwischen Friedelstr. und Liberdastr., teilweise Radfahrerführung über den Bürgersteig	q2::inwork 12085,9778 12250,9691
 # REMOVED --- #: next_check_id: BRAUNSCHWEIGER-2020 --- #: last_checked: 2020-10-24 vvv
 # REMOVED (hier kommt man mittlerweile gut durch) --- Braunschweiger Str.: Fahrbahn wird neu gemacht, Ausweichen auf Gehweg	q4::inwork 13702,7418 13781,7524 13854,7620
