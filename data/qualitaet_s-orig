@@ -1258,12 +1258,12 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2022-02-26 (mapillary) vvv
+#: last_checked: 2022-04-02 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="6"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
 #: osm_watch: way id="25216398" version="31"
-Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1- 22084,5877 22070,5876 21846,5856 21744,5804 21618,5699 21602,5685 21507,5620
+Wuhlewanderweg: Verbundsteine	Q1 22084,5877 22070,5876 21846,5856 21744,5804 21618,5699 21605,5687 21600,5683 21507,5620
 #: check_frequency ^^^
 #: last_checked ^^^
 Hämmerlingstr.: Kleinsteinpflaster	Q2+ 21683,6946 21705,6931
@@ -2153,11 +2153,12 @@ südliches Spreeufer: kleinteiliges Kopfsteinpflaster	Q1 7670,12576 7710,12585 77
 südliches Spreeufer: glattes Pflaster	Q1 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576
 Glasbläserallee: Verbundsteinpflaster	Q0- 14747,10108 14835,10272 14888,10385
 Bootsbauerstr.: Verbundsteinpflaster	Q0- 15134,10243 15090,10140 15079,10116 15023,9992
-Fischzug: Asphalt	Q0 14835,10272 14920,10225 14993,10188 15050,10160 15090,10140 15148,10111
+Fischzug: Asphalt	Q0 14835,10272 14920,10225 14993,10188 15050,10160 15090,10140
+Fischzug: Asphalt und Kopfsteinpflasterabschnitt	Q2+ 15090,10140 15148,10111
 Fischzug: Kopfsteinpflaster, teilweise auch Verbundsteinpflaster	Q2 15148,10111 15170,10100 15210,10080
 Am Speicher: Kopfsteinpflaster	Q2 15210,10080 15216,10093 15253,10171
 Palmkernzeile: Verbundsteinpflaster	Q0- 15088,9842 15142,9931 15210,10080
-Friedrich-Junge-Str.: Asphalt	Q0 15031,9876 15071,9967 15148,10111 15165,10144
+Friedrich-Junge-Str.: Asphalt	Q0 15031,9876 15077,9964 15148,10111 15165,10144
 Friedrich-Junge-Str.: Verbundsteinpflaster	Q0 15165,10144 15199,10211
 Schinkestr.: Kopfsteinpflaster	Q2 11623,9841 11734,9856 11880,9874
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): asphaltierter Radweg	Q0 17557,17999 17267,18343 17235,18352
@@ -5739,8 +5740,9 @@ Zum Wuhleblick: Asphalt	Q0 21958,6944 21918,6939 21911,6938 21896,6937
 Hoernlestr.: Beton	Q0 22301,6683 22351,6756
 Schönecker Weg: Beton	Q0 22330,6973 22358,7093
 Wolfsgartenstr.: Asphalt	Q0 23011,6181 22994,6296 23002,6428
-Uhlenhorster Str.: Asphalt	Q0 23353,6384 23299,6541 23283,6601
-Uhlenhorster Str.: Kopfsteinpflaster	Q2 23283,6601 23261,6683 23217,6779
+Uhlenhorster Str.: Asphalt	Q0 23353,6384 23299,6541
+Uhlenhorster Str.: Betonpflaster	Q0- 23299,6541 23283,6601
+Uhlenhorster Str.: Kopfsteinpflaster	Q2- 23283,6601 23261,6683 23217,6779
 Frau-Holle-Str.: Kopfsteinpflaster	Q2 23471,6776 23412,6753 23261,6683
 Aschenbrödelstr.: Asphalt	Q0 23082,6925 23052,6957 22985,7007
 Rautendeleinweg: Asphalt	Q0 23164,6753 23112,6867 23082,6925
@@ -12498,6 +12500,8 @@ Holstweg: Beton und Asphalt	Q0- -1013,2579 -882,2260
 (Lützelsteiner Weg - Saargemünder Str.): wassergebundene Decke	Q1- 1690,4708 1730,4743
 (Uferweg - Forster Str.): unbefestigt	Q2 12280,9728 12286,9739
 (Uferweg - Liegnitzer Str.): unbefestigt	Q2 12432,9652 12441,9663
+Schmausstr.: Asphalt	Q0 23242,6308 23353,6384
+Schmausstr.: Asphalt mit einigen leichten Schäden	Q0- 23353,6384 23489,6463 23577,6504
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -19173,6 +19177,7 @@ Bornhagenweg: Asphalt	Q0 11445,-1846 11666,-1825 11784,-1809 12058,-1785
 #: by: ^^^
 # 
 #: by: jenny (jeenz):
+#: confirmed_by: srt
 Nixenstr.: guter Asphalt	Q0 20428,5841 20371,5753
 # 
 #: by: Bettina Weyh:
@@ -19783,7 +19788,7 @@ Martin-Opitz-Str.: Asphalt	Q0 8077,16178 7987,16332
 #: by: ^^^
 # 
 #: by: Pythagoras:
-#: corrected_by: srt (mäßiger -> sehr guter, zumindest im westlichen Abschnitt)
+#: corrected_by: srt (mäßiger -> sehr guter)
 Mittelheide: Asphalt	Q0+ 22724,6608 22858,6535 23033,6511 23135,6500 23220,6520 23299,6541 23375,6579 23482,6649 23593,6663
 # 
 #: by: Pastille (jean):
@@ -28055,7 +28060,7 @@ Otto-Dix-Str.: Asphalt und Kopfsteinpflasterabschnitte	Q1+ 7187,13126 7356,13213
 Lesser-Ury-Weg: Asphalt und Kopfsteinpflasterabschnitte	Q1+ 7573,13149 7500,13283 7426,13420
 Claire-Waldoff-Promenade: Asphalt und Kopfsteinpflasterabschnitte	Q1+ 7433,13070 7356,13213 7287,13342
 #: confirmed_by: srt
-Bahrfeldtstr.: Kopfsteinpflaster	Q2 14844,10088 14921,10047 14956,10028 14974,10018 15023,9992 15071,9967 15142,9931
+Bahrfeldtstr.: Kopfsteinpflaster	Q2 14844,10088 14921,10047 14956,10028 14974,10018 15023,9992 15077,9964 15142,9931
 #: confirmed_by: srt vvv
 Fanny-Zobel-Str.: Asphalt	Q0 13936,10062 13975,10187
 # REMOVED (Straße existiert nicht mehr) --- Fanny-Zobel-Str.: Asphalt	Q0 13975,10187 14049,10164
@@ -30794,4 +30799,10 @@ Einmündungsbereich asphaltiert	Q0 12531,9009
 Einmündungsbereich mit Kopfsteinpflaster	Q2- 12950,9132
 Einmündungsbereich mit Kopfsteinpflaster	Q2- 13078,8992
 Kreuzungsbereich asphaltiert	Q0 12210,10716
+Kreuzungsbereich asphaltiert	Q0 22200,5776
+Einmündungsbereich mit Kopfsteinpflaster	Q2 23593,6663
+Einmündungsbereich mit Kopfsteinpflaster	Q2 23164,6753
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 23112,6867
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 22985,7007
+Kreuzungsbereich asphaltiert	Q0 15077,9964
 #: ignore ^^^

@@ -117,30 +117,17 @@ Blissestr. - Am Volkspark: bereits an der Ampel Mecklenburgische Str. auf die li
 Lietzenburger Str. - Rankestr.: bereits an der Ampel Bundesallee/Lietzenburger Str. auf den linken Gehweg wechseln	PI; 5458,10443 5520,10453 5568,10535 5627,10637
 Nordufer: bereits an der Ampel Fˆhrer Str. auf den linken Zweirichtungsradweg wechseln	PI; 6334,14756 5972,14820 5873,14847
 # 
-#: note: unbequemes ‹berqueren, aber (mittlerweile?) mˆglich; 
+#: next_check_id: PYRAMIDENBRUECKE-2022
+#: note: vor den Bauarbeiten: unbequemes ‹berqueren, aber (mittlerweile?) mˆglich; 
 #: XXX hier wird eine Querungshilfe erstellt (nach Br¸ckenneubau)
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (mit Ampel, Br¸ckenneubau 2021)
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (nach 2021)
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27501.pdf (Erw‰hnung)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erw‰hnung)
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-18-ag_radverkehr-24-02-2021.pdf (nach Br¸ckenneubau 2021)
-#: by: https://viz.berlin.de/2022/02/verkehrsvorschau-08022022/
-#: by: https://berliner-abendblatt.de/2022/02/08/an-der-wuhlheide-bleibt-ein-fahrstreifen-gesperrt/ (bis Mitte Juni 2022, Gesamtbaumaﬂnahme bis Mitte 2023)
-#: by: https://berliner-abendblatt.de/2022/02/21/moltkebruecke/ (neue Pyramidenbr¸cke wird bis 2028 fertiggestellt)
-#: by: https://www.berliner-woche.de/koepenick/c-bauen/pyramidenbruecke-nahe-dem-stadion-an-der-alten-foersterei-wird-abgerissen-und-durch-neubau-ersetzt_a340043 (Radweg mittlerweile provisorisch auf der Fahrbahn; Gesamtbauzeit: bis 2028)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1189355.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1189424.php
-#: by: https://berliner-abendblatt.de/2022/03/25/138713/
-#: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Br¸ckenneubau, Verengung, bis 09.06.2022)
-#: last_checked: 2021-10-24
+#: last_checked: 2022-04-02
 #: check_frequency: 180d
-#: next_check: 2022-03-21
-An der Wuhlheide - Wuhlewanderweg: ggfs. bereits an der Ampel Kˆpenicker Allee die Straﬂenseite wechseln (insbesondere mit Anh‰nger oder mit Lastenrad wenig Platz auf dem Mittelstreifen)	PI; 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21596,5693 21602,5685 21618,5699 21744,5804
+#: next_check: 2022-06-09
+An der Wuhlheide - Wuhlewanderweg: bereits an der Ampel Rudolf-R¸hl-Allee die Straﬂenseite wechseln	PI; 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21600,5694 21605,5687 21618,5699
 # 
 #: XXX_prog: RL:ja, GPS:nein
-An der Wuhlheide - Alte Fˆrsterei: bereits an der Ampel Kˆpenicker Allee die Straﬂenseite wechseln (Straﬂenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 21406,5864
-Wuhlewanderweg - Lindenstr.: zun‰chst linken Gehweg benutzen, an der Cardinalstr. oder Ampel Joachimstr. die Straﬂenseite wechseln	CP; 21744,5804 21618,5699 21602,5685 21706,5541
+An der Wuhlheide - Alte Fˆrsterei: bereits an der Ampel Rudolf-R¸hl-Allee die Straﬂenseite wechseln (Straﬂenbahn auf Mittelstreifen)	PI; 21303,5826 21365,5832 21406,5864
+Wuhlewanderweg - Lindenstr.: zun‰chst linken Gehweg benutzen, an der Cardinalstr. oder Ampel Joachimstr. die Straﬂenseite wechseln	CP; 21618,5699 21605,5687 21706,5541
 Mariendorfer Damm - Am Teltowkanal: bereits an der Ullsteinstr. auf den linken Gehweg wechseln	PI; 9206,5193 9196,5272 9171,5263
 # REMOVED (-> routing_helper-orig) --- #: note: schlecht passierbarer Mittelstreifen --- Jerusalemer - Leipziger Str.: zun‰chst linken Gehweg benutzen, an der Ampel Jerusalemer Str. die Straﬂenseite wechseln	CP; 9892,11752 9896,11703 9898,11679 9981,11689
 #: XXX_prog: RL:ja, GPS:nein
@@ -637,7 +624,7 @@ Rathausstr. - Frankfurter Allee: Fuﬂg‰ngerampel auf der linken Seite benutzen	CP
 # 
 #: next_check_id: ZUMBETRIEBSBHF-2017 vvv
 #: XXX ‰ndert sich die Ausschilderung? vvv
-#: last_checked: 2022-03-30 vvv
+#: last_checked: 2022-04-02 vvv
 #: note: fr¸her: ausgeschildert "zur Salzmannstraﬂe Huronseestraﬂe"
 nicht ausgeschildert, Richtung Salzmannstr./Huronseestr.	CP2; 16900,9861 16895,9922
 #: note: fr¸her: ausgeschildert "zur Sewanstraﬂe"
