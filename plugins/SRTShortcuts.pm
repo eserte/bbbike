@@ -157,6 +157,10 @@ TMdqPDqirLUAFJgZ+WyOpqlhjJF/AHqpZ2nFH6CCAAAAAElFTkSuQmCC
 EOF
     }
 
+    # XXX NOTE: Image is also defined in MultiMap.pm, maybe reuse from
+    # there? But in this case it has to be made sure that MultiMap.pm
+    # is loaded; could be done without using the plugin, just the
+    # image initialization should be (partially) done)
     if (!defined $images{VIZ}) {
 	# Got from: http://www.vmz-info.de/vmz-fuercho-5.1.1.1/images/liferay.ico
 	# Converted with convert + mmencode -b

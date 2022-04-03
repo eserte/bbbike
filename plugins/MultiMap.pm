@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.75;
+$VERSION = 1.76;
 
 use vars qw(%images);
 
@@ -177,6 +177,15 @@ sub register {
 	      callback => sub { showmap_mapcompare(@_, maps => 'lgb-topo-10') },
 	      callback_3_std => sub { showmap_url_mapcompare(@_, maps => 'lgb-topo-10') },
 	      ($images{BRB} ? (icon => $images{BRB}) : ()),
+	    };
+	$main::info_plugins{__PACKAGE__ . '_VIZ'} =
+	    { name => 'VIZ Berlin',
+	      (module_exists('Geo::Proj4')
+	       ? (callback => sub { showmap_viz(@_) },
+		  callback_3_std => sub { showmap_url_viz(@_) })
+	       : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
+	      ),
+	      ($images{VIZ} ? (icon => $images{VIZ}) : ()),
 	    };
     }
     $main::info_plugins{__PACKAGE__ . "_BKG"} =
@@ -708,6 +717,35 @@ c1KQtIvh+thVv6jxlbE/5MXXxm0/euiPMHFFTda+2wHDAkEb/HprwhW1pdbUzdt33Ci4AFsBfnDD
 WI0GB03zAhkY9AIHZt8zOPOanjikhwZpf5O+XH0p0JfB0YvXKa+tki3MER84QhXIANpd7CZgWN1n
 Wi0b7eh7VPAy+cBQjYeGjcFSBu5FtubyzgiI5t8Q9A8QnDgJ7qq03a1+dtRW7aNRUNlGsJeZKVAm
 hTJ799MbrvNfBYpprQC/AQyAoLWdM9PPAAAAAElFTkSuQmCC
+EOF
+    }
+
+    if (!defined $images{VIZ}) {
+	# Got from: http://www.vmz-info.de/vmz-fuercho-5.1.1.1/images/liferay.ico
+	# Converted with convert + mmencode -b
+	$images{VIZ} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAAAFz
+UkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAA
+AiJQTFRFL06DGj9/ETd5d4mqprXFhZ+9hJ69o7PEz9fdyNfmyNflx9Hb+vr6////G0CACjWB
+ACt6bYOqp7nMh6fKhqbKo7XJ09vj0uPz0uPyzNjkEzh7ACp6AB9zZXylorXJgKLHf6DHnrHG
+0Nnhz+Hyz+HxydbjfI6tcIara4GnqrXIxM3Wrr3Prb3Pw8zW3uLm2ODo2N7kp7bGprjNorbL
+wsvV1drf0drk0Nrj193i/fz7/vz7//792+DlyNXgztvmxtDZh6C+iKbKgaLHrLvN0drj0uLz
+0OHy0tzm/Pv72ODny9zt0uTzxNPhhp+9hqXKgKHHq7rN0NnizuDx0dvl2eDny93u0uT0xdPh
+p7XGpLbKoLPIw8vW09zm0dzl2d/l/Pv6/f384OPnz9jg093kzdXbzdXa0dnh2t/l0dvk0tzl
+197jx8/YoLHGprbKprTFxtPg0+P019/n0tvl0d3msL7PfZzCh6bKgp29xdPf1t/n09zl0eLz
+0t3nsb/Pfp3DiafKhJ6+xtDYztnly9fj//38/v382N7j0Nvk1dzhxc7Xn7PIprnNpLTG3uPm
+rr3Os7zMboGndImtfI6s+/v6y9fhzd/vzd/wz9ngobPHfp7EgKDFn7PLcYaqABxuACt5DzN3
+z9vl0uP009zjprjLhqTJpbjOeYyuACh3CjaBFDt9+/v7yNLaxtXhxtXiztbbqbfHiKK/pbXH
+hJSxFjd5H0SCLEyCxY87YQAAAAFiS0dEDfa0YfUAAAEJSURBVBjTY2BgZGJmYWVj5+Dk4ubh
+5eVl4OMXEBQSFhEVE5eQBAtIScvIyskrKCopq6iCBdTUNTS1tHV09fT1DXiAgMHQyNjE1Mzc
+wtLKytrG1s6ewcHRydnF1c3dA6jc08vbh8HXzz8g0C0oGCQQEhoWzhARGRVtERMbFx8fn5CY
+lJzCkCqWphfv4RGfnpGZlZ2Tm8eQX6BcaMXL61EUpFxcUlpWzlAhrlJpCRSoUq6uqa2rb2Bo
+bGo2aLG2bm1rD+7o7OruYQA5xsbTsze7r0S3f8LESQxA2yZPmTpt+oyZs2bPmTtvPlhggfjC
+RYuXOC5dtnzFSpDAqtVr1q5b77Bh46bNW7YCAKJlS6V7R7bEAAAAJXRFWHRkYXRlOmNyZWF0
+ZQAyMDEzLTAyLTE5VDIxOjQyOjUxKzAxOjAws5ftwQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAx
+Mi0wOC0xNFQxNjoyODo1MCswMjowMOv6tcMAAAAASUVORK5CYII=
 EOF
     }
 }
@@ -1542,6 +1580,25 @@ sub showmap_hierbautberlin {
     start_browser($url);
 }
 
+######################################################################
+# VIZ Berlin
+
+sub showmap_url_viz {
+    my(%args) = @_;
+    require Geo::Proj4;
+    my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=intl +units=m +no_defs") # see http://www.spatialreference.org/ref/epsg/2078/
+	or die Geo::Proj4->error;
+    my($x,$y) = $proj4->forward($args{py}, $args{px});
+    $y -= 125; # XXX why? otherwise the selected coordinate is at the bottom of the screen
+    my $scale = 11; # XXX hardcoded for now
+    sprintf 'https://viz.berlin.de/wp-content/plugins/masterportal-wordpress/public/portals/berlin3_2_6_3/index.html?layerIDs=WebatlasBrandenburg,Baustellen_OCIT&visibility=true,true&transparency=30,0&center=%d,%d&zoomlevel=%d', $x, $y, $scale;
+}
+
+sub showmap_viz {
+    my(%args) = @_;
+    my $url = showmap_url_viz(%args);
+    start_browser($url);
+}
 ######################################################################
 
 sub show_links_to_all_maps {
