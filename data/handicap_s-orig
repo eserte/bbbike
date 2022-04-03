@@ -11,7 +11,7 @@
 ### Friedrichshain ###
 # 
 #: next_check_id: FRANKFURTER-2021
-#: last_checked: 2022-03-30
+#: last_checked: 2022-04-03
 # REMOVED --- #: check_frequency: 7d
 #: next_check: 2022-04-30
 Jessnerstr.: Bauarbeiten an der Kreuzung Frankfurter Allee, schmalen Gehweg nutzen	q2::inwork 15077,11910 15117,12106
@@ -3986,8 +3986,10 @@ Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
 (Fußgängerbrücke - Märkische Allee): Fußgänger	q3 19687,15513 19694,15529 19733,15511
 (Edeka-Parkplatz): Parkplatzverkehr	q2 18846,8616 18870,8646 18880,8689
 (Edeka-Parkplatz - Rheinsteinstr.): Fußgänger	q3 18880,8689 18865,8740
-#: note: Radfahren auf dem Uferweg ist wohl Sitte; an einigen Stellen als "Grünanlage" ausgeschildert
+#: note: Radfahren auf dem Uferweg ist wohl Sitte; an einigen Stellen als "Grünanlage" ausgeschildert vvv
+#: note: Der Uferweg fängt erst Höhe Manteuffelstr. an, und hier ist der Zugang wegen eng parkender Autos und eines Bordsteins unbequem. Die meisten Radfahrer scheinen noch den Verbundsteinpflastergehweg bis zur Mariannenstr./Kottbusser Brücke zu nehmen.
 (Uferweg am Paul-Lincke-Ufer): Fußgänger, besonders an schönen Tagen	q2- 11735,10022 11756,9990 11948,9895 12045,9843 12116,9825 12165,9786 12280,9728 12432,9652 12596,9587 12639,9547 12703,9522 12718,9529
+#: note ^^^
 (Uferweg - Lausitzer Str.): Rampe, enge Kurven	q3 11948,9895 11946,9913
 #: note: Grünanlage, kein explizites Radfahrverbot
 (Weg am Kienhorstgraben): einige Fußgänger	q3 3876,18348 3799,18159 3723,17979 3706,17931

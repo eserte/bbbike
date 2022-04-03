@@ -3057,6 +3057,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.1141399.php (evtl. hat der Bebauungsplan was mit den Bauarbeiten zu tun)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-89ve/7-89-ve-pas_ol_11_mit-deckblatt_internetfassung_gez.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8371
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8370
 #: also_indoor: traffic (H,G)
 #: osm_watch: way id="362719487" version="6"
 #: osm_watch: way id="687428752" version="2"
@@ -4091,12 +4093,13 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022)
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an? Wo genau gilt die Einbahnstraßenregelung?
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (G)
 #: priority: #B
 #: last_checked: 2022-03-05
-#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 30d
 #: next_check: 2022-04-08
-	q4::inwork; 7259,14870 7209,14927 7182,14986 7178,14996 7131,15109
+	q4::inwork; 7259,14870 7209,14927 7182,14986
+# REMOVED (hier vermutlich nicht?) ---	q4::inwork; 7182,14986 7178,14996 7131,15109
 ',
          'from' => undef,
          'id' => 3523,
@@ -4197,6 +4200,19 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Schicklerstr.: Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1510640770461671434#m
+#: by: https://nitter.net/pic/media%2FFPMDmJMXoAcscus.jpg%3Fname%3Dorig
+#: by: https://nitter.net/pic/media%2FFPMDmJMX0AMSw_N.jpg%3Fname%3Dorig
+	q4::inwork; 25567,5749 25479,5753 25294,5761 25123,5767 25121,5795
+',
+         'from' => 1648962000,
+         'id' => 3533,
+         'source_id' => 'viz2021:13.618661,52.455532,04.04.2022,07:00',
+         'text' => 'Lindenstr. (Friedrichshagen): temporäre Einbahnstraßenregelung, vom 04.04.2022 07:00 bis 09.06.2022 17:00',
+         'type' => 'handicap',
+         'until' => 1654786800
        }
      
 );

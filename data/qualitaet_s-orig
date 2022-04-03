@@ -411,7 +411,8 @@ Müggelstr.: Asphalt	Q0 14764,11591 14837,11706
 Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 15016,11431 14949,11474 14849,11539
 Weserstr. (Friedrichshain): Asphalt	Q0 14849,11539 14830,11551 14764,11591 14710,11626
 Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 14710,11626 14651,11666 14622,11685 14550,11732 14475,11778 14416,11815
-Finowstr.: Kopfsteinpflaster	Q2 14622,11685 14710,11824 14783,11949 14836,12045 14854,12137
+Finowstr.: Kopfsteinpflaster	Q2 14622,11685 14710,11824 14783,11949 14836,12045
+Finowstr.: Kopfsteinpflaster	Q2- 14836,12045 14854,12137
 Glatzer Str.: Kopfsteinpflaster	Q2 14570,11589 14651,11666
 Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15477,11338 15303,11412 15220,11440 15162,11458
 # REMOVED (gezimmerter Fußgängerdurchgang) --- #: next_check_id: WIESENWEG-2018 --- #: XXX temporär während der Baustelle, danach wieder Asphalt --- #: last_checked: 2018-10-03 --- #: check_frequency: 30d --- Wiesenweg (Lichtenberg): sandig	Q3 15162,11458 15126,11474
@@ -1346,7 +1347,7 @@ Pankeweg: feiner Schotter	Q1 14869,24387 14625,24215 14356,23862 14265,23759 139
 Pankeweg: feiner Schotter	Q1 13953,23497 13940,23486 13833,23400 13559,23116
 Pankeweg: Asphalt mit einigen Unebenheiten	Q1+ 13206,22290 13141,22018
 Pankeweg: mäßiger Asphalt, Wurzelschäden	Q1- 13141,22018 13078,21754
-Pankeweg: wassergebundene Decke	Q1- 13078,21754 13031,21538 12807,20944 12753,20884 12553,20757
+Pankeweg: wassergebundene Decke	Q1- 13078,21754 13031,21538 12914,21229 12854,21147 12880,21134 12807,20944 12753,20884 12553,20757
 Pankeweg: unbefestigter Weg	Q2+ 13365,22743 13321,22586 13295,22545 13291,22422
 Pankeweg: Feinschotter	Q1 13291,22422 13290,22399 13404,22384
 Weinapfelweg: unbefestigte Straße, relativ gut befahrbar	Q2+ 13136,22397 13117,22337 13110,22313
@@ -2466,6 +2467,10 @@ Uferweg: Kopfsteinpflaster	Q2 7972,14185 7973,14195 7968,14202
 Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 7968,14202 7804,14445
 (Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7480,14660
 Gabrielenstr.: neuer Asphalt	Q0 1687,20782 1630,20731 1518,20615 1407,20563
+#: XXX Eventuell wird hier auch noch saniert
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10160 (Sanierung der Gabrielenstraße: noch kein Zeitplan)
+#: last_checked: 2022-04-01 (Drucksache)
+#: check_frequency: 720d
 Gabrielenstr.: mäßiger Asphalt	Q1 1407,20563 1127,20434 1106,20424 1031,20394
 An der Malche: fester Waldweg	Q1- 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Avenue Jean Mermoz: asphaltiert	Q0 3319,18043 3248,17921 3213,17858 3159,17780 3080,17634
@@ -7504,6 +7509,7 @@ Stendaler Str. [Nebenfahrbahn] (Hellersdorf): Beton	Q0- 23941,15458 23960,15340 
 (Stendaler Str. - Tangermünder Str.): Verbundsteinpflaster	Q1+ 24038,15475 24076,15481 24169,15497
 #: by: https://lsg-hoenower-weiherkette.de/2021/11/24/bald-ist-es-soweit-beginn-der-masnahmen/ (Wegebaumaßnahmen bis Sommer 2022)
 #: by: https://berliner-abendblatt.de/2022/01/26/gestaltung-an-der-hoenower-weiherkette-beginnt/
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9982 (Anfrage)
 #: XXX Wie sieht die Wegbeschaffenheit nach den Bauarbeiten aus? vvv
 #: next_check: 2022-08-31 vvv
 (Zerbster Str. - Louis-Lewin-Str.): Kleinsteinpflaster	Q1 24324,15519 24379,15511
@@ -30377,7 +30383,7 @@ Kreuzungsbereich mit Kleinsteinpflaster	Q1- 3726,2209
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 22456,3889
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 17344,1060
 Kreuzungsbereich asphaltiert	Q0 14605,11078
-Kreuzungsbereich asphaltiert	Q0 14531,11142
+Einmündungsbereich asphaltiert	Q0 14531,11142
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 14468,11203
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 10585,10766
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 14946,11697
@@ -30788,7 +30794,7 @@ Einmündungsbereich asphaltiert	Q0 3328,3313
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 3318,3046
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 3174,3052
 Einmündungsbereich mit Kopfsteinpflaster	Q2 13273,12649
-Kreuzungsbereich mit Kreuzungsbereich	Q2 13156,13978
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 13156,13978
 Kreuzungsbereich mit Kopfsteinpflaster	Q2- 12374,9542
 Kreuzungsbereich mit Kopfsteinpflaster	Q2- 12270,9362
 Einmündungsbereich asphaltiert	Q0 12412,9610
@@ -30805,4 +30811,8 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 23164,6753
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 23112,6867
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 22985,7007
 Kreuzungsbereich asphaltiert	Q0 15077,9964
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 14760,11044
+Einmündungsbereich mit Kopfsteinpflaster	Q2 14442,11101
+Kreuzungsbereich asphaltiert	Q0 14783,11949
+Kreuzungsbereich asphaltiert	Q0 14675,11964
 #: ignore ^^^
