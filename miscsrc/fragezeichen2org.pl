@@ -13,6 +13,7 @@
 #
 
 use strict;
+use feature 'state';
 use utf8;
 use FindBin;
 use lib (
@@ -157,6 +158,11 @@ my $crossings;
     $crossings = Kreuzungen->new(UseCache => 1, Strassen => $ms, WantPos => 1);
 }
 
+my $can_proj4 = eval {
+    require Geo::Proj4;
+    1;
+};
+
 # Usually all -orig and bbbike-temp-blockings files should be supplied
 # here. See data/Makefile.
 my @files = @ARGV
@@ -170,6 +176,16 @@ $SIG{INT} = sub { exit };
 my %files_add_street_name = map{($_,1)} ('radwege', 'ampeln', 'vorfahrt');
 
 my $today = strftime "%Y-%m-%d", localtime;
+
+# for VIZ links
+my $proj4_epsg2078;
+if ($can_proj4) {
+    $proj4_epsg2078 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=intl +units=m +no_defs") # see http://www.spatialreference.org/ref/epsg/2078/
+	or do {
+	    warn Geo::Proj4->error;
+	    $can_proj4 = 0;
+	};
+}
 
 for my $file (@files) {
     debug("$file...\n");
@@ -353,9 +369,23 @@ for my $file (@files) {
 		 }
 	     }
 	     for ($dir->{source_id}) {
+		 my $viz_seen;
 		 for my $source_id (@{ $dir->{source_id} }) {
-		     if ($source_id =~ m{^bvg2021:(.*)}) {
+		     if      ($source_id =~ m{^bvg2021:(.*)}) {
 			 push @extra_url_defs, ['BVG', "https://www.bvg.de/de/verbindungen/stoerungsmeldungen/$1"];
+		     } elsif ($source_id =~ m{^viz2021:} && !$viz_seen++) {
+			 if ($proj4_epsg2078) {
+			     # NOTE: taken from MultiMap.pm
+			     my($x,$y) = $proj4_epsg2078->forward($py, $px);
+			     $y -= 125; # XXX why? otherwise the selected coordinate is at the bottom of the screen
+			     my $scale = 11; # XXX hardcoded for now
+			     my $viz_url = sprintf 'https://viz.berlin.de/wp-content/plugins/masterportal-wordpress/public/portals/berlin3_2_6_3/index.html?layerIDs=WebatlasBrandenburg,Baustellen_OCIT&visibility=true,true&transparency=30,0&center=%d,%d&zoomlevel=%d', $x, $y, $scale;
+			     push @extra_url_defs, ['VIZ', $viz_url];
+			 } else {
+			     if (!state $warned_proj4++) {
+				 warn "No proj4 handling available, cannot create VIZ links (warn only once)...\n";
+			     }
+			 }
 		     }
 		 }
 	     }

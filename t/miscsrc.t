@@ -76,6 +76,7 @@ for my $f (@files) {
 	    if $f =~ m{/correct_data.pl$} && !eval { require DB_File::Lock; 1 };
 	myskip "$f works only with perl >= 5.10.0", 1
 	    if $f =~ m{/( cvsdiffbbd
+		       |  fragezeichen2org\.pl
 		       |  VMZTool\.pm
 		       )$}x && $] < 5.010;
 	myskip "$f works only with installed Algorithm::Diff", 1
