@@ -2128,6 +2128,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: http://www.berliner-woche.de/alt-treptow/verkehr/radelverbot-im-park-bleibt-d122937.html
 #: by: http://www.berliner-woche.de/alt-treptow/bauen/der-vater-des-rosengartens-d156358.html
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1193326.php (bei den Scherpunktkontrollen im März/April 2022 wurde wegen geringer Auslastung des Parks nicht eingeschritten)
 	q4 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786
 	q4 14635,9786 14500,9863 14467,9887
 	q4 14467,9887 14455,9892 14448,9922
@@ -2418,46 +2419,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2022/04/halbmarathon/
-#: by: https://twitter.com/ellirhc11/status/1509924822444298250
-	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
-	2::temp 8540,12420 8775,12457
-	2::temp 8309,12758 8306,12609 8207,12606
-	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
-	2::temp 8306,12609
-	3 8554,12593 8540,12420 8775,12457
-	3 8399,12610 8400,12417 8391,12389
-# REMOVED ---	3 8369,12609 8373,12416 8391,12389
-	3 8775,12457 8540,12420 8554,12593
-	3 8327,12174 8344,12221 8391,12389
-	3 7429,12070 7383,12095 7031,12320
-# REMOVED ---	3 8391,12389 8373,12416 8369,12609
-	3 8391,12389 8344,12221 8327,12174
-	3 8391,12389 8400,12417 8399,12610
-	3 7654,12464 7627,12380 7603,12353
-	3 7603,12353 7627,12380 7654,12464
-	3 8592,12252 8538,12245 8522,12187
-	3 8592,12252 8538,12245 8522,12239
-	3 7822,12201 7816,12150 7823,12120
-	3 7822,12201 7875,12363 7945,12592
-	3 8522,12187 8538,12245 8522,12239
-	3 8522,12187 8538,12245 8592,12252
-	3 7945,12592 7875,12363 7822,12201
-	3 7945,12592 8122,12603 8120,12756
-	3 7031,12320 7383,12095 7429,12070
-	3 8522,12239 8538,12245 8522,12187
-	3 8522,12239 8538,12245 8592,12252
-	3 8120,12756 8122,12603 7945,12592
-	3 7823,12120 7816,12150 7822,12201
-',
-         'from' => 1648843431,
-         'id' => 3085,
-         'text' => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, bis 4.4.2022 6 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1649044800
-       },
+       undef,
        {
          'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
@@ -2744,7 +2706,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-03-29
+#: last_checked: 2022-04-04
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2795,7 +2757,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-03-28 vvv
+#: last_checked: 2022-04-04 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4091,13 +4053,13 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022)
+         'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022)
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an? Wo genau gilt die Einbahnstraßenregelung?
 #: also_indoor: traffic (G)
 #: priority: #B
 #: last_checked: 2022-03-05
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2022-04-08
+#: next_check: 2022-04-20
 	q4::inwork; 7259,14870 7209,14927 7182,14986
 # REMOVED (hier vermutlich nicht?) ---	q4::inwork; 7182,14986 7178,14996 7131,15109
 ',
@@ -4213,6 +4175,19 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Lindenstr. (Friedrichshagen): temporäre Einbahnstraßenregelung, vom 04.04.2022 07:00 bis 09.06.2022 17:00',
          'type' => 'handicap',
          'until' => 1654786800
+       },
+       {
+         'data' => '#: note: laut rbb
+#: by: https://nitter.net/VIZ_Berlin/status/1510845115371196423
+#: by: https://nitter.net/pic/media%2FFPQYYPyX0CoHC1A.jpg%3Fname%3Dorig
+#: also_indoor: traffic (G,H)
+	q2::inwork 17900,6072 17728,5756
+',
+         'from' => 1649101432,
+         'id' => 3534,
+         'text' => 'Brückenstr.: zwischen Michael-Brückner-Str. und Treskowbrücke Sperrung der Fahrbahn wegen Gleisbauarbeiten, Radfahrer werden über den Gehweg geleitet, bis 14.04.2022',
+         'type' => 'handicap',
+         'until' => 1649973600
        }
      
 );

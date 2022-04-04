@@ -27614,6 +27614,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.berliner-woche.de/alt-treptow/verkehr/radelverbot-im-park-bleibt-d122937.html
 #: by: http://www.berliner-woche.de/alt-treptow/bauen/der-vater-des-rosengartens-d156358.html
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1193326.php (bei den Scherpunktkontrollen im März/April 2022 wurde wegen geringer Auslastung des Parks nicht eingeschritten)
 	q4 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786
 	q4 14635,9786 14500,9863 14467,9887
 	q4 14467,9887 14455,9892 14448,9922
@@ -30909,7 +30910,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-03-29
+#: last_checked: 2022-04-04
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31128,7 +31129,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-03-28 vvv
+#: last_checked: 2022-04-04 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -34711,13 +34712,13 @@ EOF
        text  => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022)
+#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022)
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an? Wo genau gilt die Einbahnstraßenregelung?
 #: also_indoor: traffic (G)
 #: priority: #B
 #: last_checked: 2022-03-05
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2022-04-08
+#: next_check: 2022-04-20
 	q4::inwork; 7259,14870 7209,14927 7182,14986
 # REMOVED (hier vermutlich nicht?) ---	q4::inwork; 7182,14986 7178,14996 7131,15109
 EOF
@@ -34836,6 +34837,18 @@ EOF
 #: by: https://nitter.net/pic/media%2FFPMDmJMXoAcscus.jpg%3Fname%3Dorig
 #: by: https://nitter.net/pic/media%2FFPMDmJMX0AMSw_N.jpg%3Fname%3Dorig
 	q4::inwork; 25567,5749 25479,5753 25294,5761 25123,5767 25121,5795
+EOF
+     },
+     { from  => 1649101432, # 2022-04-04 21:43
+       until => 1649973600, # 2022-04-15 00:00
+       text  => 'Brückenstr.: zwischen Michael-Brückner-Str. und Treskowbrücke Sperrung der Fahrbahn wegen Gleisbauarbeiten, Radfahrer werden über den Gehweg geleitet, bis 14.04.2022',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: laut rbb
+#: by: https://nitter.net/VIZ_Berlin/status/1510845115371196423
+#: by: https://nitter.net/pic/media%2FFPQYYPyX0CoHC1A.jpg%3Fname%3Dorig
+#: also_indoor: traffic (G,H)
+	q2::inwork 17900,6072 17728,5756
 EOF
      },
     );
