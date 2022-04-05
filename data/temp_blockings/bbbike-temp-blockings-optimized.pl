@@ -3522,8 +3522,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: osm_watch: way id="16311543" version="19"
 #: also_indoor: search Ernst-Heilmann-Steg
 #: priority: #A
-#: last_checked: 2022-03-09 (mapillary)
-#: check_frequency: 30d
+#: last_checked: 2022-04-05
+#: check_frequency: 14d
 #: next_check: 2022-04-30
 	2::inwork 13270,10030 13306,10006
 ',
@@ -3736,9 +3736,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1672527600
        },
        {
-         'data' => '#: also_indoor: traffic (B)
+         'data' => '#: also_indoor: traffic (ex-B)
 #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
 #: last_checked: 2022-03-07
 #: check_frequency: 30d
 	q4::inwork 13355,6235 13227,6209 13220,6237
@@ -4053,7 +4053,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022)
+         'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv)
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an? Wo genau gilt die Einbahnstraßenregelung?
 #: also_indoor: traffic (G)
 #: priority: #B
@@ -4139,7 +4139,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: next_check_id: STRALAUER-2019
-#: last_checked: 2022-04-01
+#: last_checked: 2022-04-05
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583

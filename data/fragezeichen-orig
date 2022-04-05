@@ -73,7 +73,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr.
-#: last_checked: 2022-04-01
+#: last_checked: 2022-04-05
 #: check_frequency: 90d
 #: next_check: 2022-06-30
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -3335,7 +3335,7 @@ Bebauungsplan 3-48 VE: Planstraße B in Planung	?::projected 13368,18674 13222,18
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_42_5683_5818_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_50_6831_7006_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.luftbildsuche.de/info/luftbilder/baustelle-zum-neubau-mehrfamilienhaus-wohnanlage-eythstrasse-ecke-bessemerstrasse-ortsteil-schoeneberg-berlin-deutschland-426193.html
-#: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Buid%5D=233&cHash=8e6b4f2cdd2bf189306b6d8269a37e7b (Webcam)
+# REMOVED (existiert nicht mehr) --- #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Buid%5D=233&cHash=8e6b4f2cdd2bf189306b6d8269a37e7b (Webcam)
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/alboingaerten-jetzt-mit-richtkrone_a290227 (bis Ende 2021 fertig)
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/alboingaerten-werden-zum-jahresende-bezugsfertig_a324500 (weiterhin bis Ende 2021)
 #: by: https://berliner-abendblatt.de/2021/10/08/432-neue-wohnungen-am-suedgelaende/
@@ -5994,6 +5994,7 @@ L25 (Prenzlau - Güstow): straßenbegleitender Radweg entsteht	?::inwork 37020,101
 # 
 #: by: https://www.berliner-woche.de/hakenfelde/c-verkehr/durchgangsverkehr-stresst-anwohner_a235156
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10820 (Antrag)
+#: source_id: viz2021:13.21502,52.56076,05.04.2022,13:25 (Sperrung wegen Bauarbeiten bis zum 25.4.2022)
 #: XXX erst nach der Bebauung Carossa-Quartier (Baubeginn hier: frühestens 2020)
 #: also_indoor: traffic (G,B)
 #: last_checked: 2021-09-26 (mapillary)
@@ -6337,7 +6338,7 @@ Wandlitz - Wensickendorf: Radwegbau, weitgehend realisiert, aber die Ausschilder
 # REMOVED (hier vermutlich nicht) --- Wandlitz - Wensickendorf: Radwegbau	?::inwork 8740,38857 8665,38862 8643,38865 8518,38881 8240,38876 7990,38846 7950,38843 7836,38835 7698,38825 7632,38828 7465,38830
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1054982.php (kein konkretes Datum (außer für Baumfällungen: Ende Februar 2021))
-#: last_checked: 2021-04-11 (mapillary)
+#: last_checked: 2021-10-31
 #: check_frequency: 360d
 Schönfließer Str., Senheimer Str., Gollanczstr.: Bauarbeiten geplant, kommt es dabei zu Änderungen (z.B. Asphaltierungen?)	?::projected 2206,25649 2139,25830 2112,26066 2207,26090 2293,26111 2402,26121 2490,26126 2499,26128 2490,26126 2484,25984 2496,25915 2519,25772 2515,25666
 # 
@@ -6733,6 +6734,7 @@ KW: Neubau der Eisenbahnunterführung, Anlage von Radspuren, außerdem neuer Kreis
 # 
 #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/feuerwache-und-verwaltungsgebaeude-entstehen_a339905 (Fertigstellung 2026)
 #: by: https://alt-friedrichsfelde60.berlin.de/
+#: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/entwuerfe-werden-online-ausgestellt_a340574
 #: priority: #C
 #: last_checked: 2021-04-17
 #: check_frequency: 480d
@@ -8283,6 +8285,7 @@ An der Streuobstwiese: hier entsteht eine neue Straße; genaue Lage, Qualität?	?:
 #: by: https://www.berliner-woche.de/tempelhof/c-bauen/klimaschutzkonzept-geschichtsgefluester-und-infobox-sind-in-arbeit_a332129
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2022/pressemitteilung.1168460.php (FNP-Anpassung)
 #: by: https://www.berliner-woche.de/tempelhof/c-bauen/2024-ist-baustart-fuer-neue-polizeiwache_a339143
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2022/pressemitteilung.1193638.php (jenseits der Templerzeile, Bebauungsplan 7-82b)
 #: next_check: 2024-06-01
 Neue Mitte Tempelhof: ändert sich etwas an den bestehenden Wegen oder an den Grünflächen?	?::projected 9321,6450 9274,6138 9635,6089 9667,6418 9321,6450
 # 
