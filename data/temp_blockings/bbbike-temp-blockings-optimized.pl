@@ -2706,7 +2706,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-04-04
+#: last_checked: 2022-04-06
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2757,7 +2757,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-04-04 vvv
+#: last_checked: 2022-04-06 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -3753,8 +3753,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: EINSTEINPARK-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-01-09
-#: check_frequency: 90d
+#: last_checked: 2022-04-06
+#: check_frequency: 30d
 #: next_check: 2022-07-24
 	2::inwork 13204,15062 13207,14998 13163,14924
 ',

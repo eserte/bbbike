@@ -1856,11 +1856,12 @@ Frankfurter Allee [Wohngebiet] -> Frankfurter Allee: Mittelstreifen mit Geländer
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 9701,11656 9905,11680 9991,11690
 Leipziger Str. -> Jerusalemer Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9701,11656 9905,11680 9902,11704
 Jerusalemer Str. -> Leipziger Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9902,11704 9905,11680 9991,11690
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 12177,14335 12188,14350 12228,14404 12266,14460 12317,14535
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 12177,14335 12188,14350 12228,14404 12266,14460
 Greifswalder Str. -> Pasteurstr.: Mittelstreifen mit Straßenbahn	3::igndisp 12228,14404 12188,14350 12335,14246
 Pasteurstr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12335,14246 12188,14350 12177,14335
 Greifswalder Str. -> Jablonskistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12188,14350 12228,14404 11949,14557
 Jablonskistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11949,14557 12228,14404 12266,14460
+Mittelstreifen mit Straßenbahn	3nocross::ignrte 12228,14404 12266,14460 12317,14535
 Greifswalder Str. -> Chodowieckistr.: Mittelstreifen mit Straßenbahn	3::igndisp 12228,14404 12266,14460 11982,14614
 Greifswalder Str. -> Dietrich-Bonhoeffer-Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12317,14535 12266,14460 12556,14230
 Chodowieckistr. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 11982,14614 12266,14460 12317,14535

@@ -1026,7 +1026,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-04-04
+#: last_checked: 2022-04-06
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2069,7 +2069,7 @@ Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,1
 #: source_id: 2147342864 (inaktiv)
 #: source_id: 2147345560 (inaktiv) (Radwegarbeiten)
 #: check_frequency: 120d vvv
-#: last_checked: 2022-03-20 vvv
+#: last_checked: 2022-04-03 (mapillary) vvv
 Landsberger Allee: Beton-Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 #: last_checked ^^^
@@ -3450,9 +3450,8 @@ Zur Börse: Asphalt	Q0 14166,13024 14067,13050 13926,13090
 Zur Marktflagge: Asphalt	Q0 14180,13064 14086,13090 14035,13104 13943,13129
 Zur Innung: Asphalt	Q0 14086,13090 14132,13234
 (Zur Waage - Zur Innung): teilweise Kopfsteinpflaster	Q1- 14067,13050 14086,13090
-#: note: einige Meter an der Storkower Str. wurden frisch asphaltiert, aber weiter hinten gibt es noch weiterhin Schäden
-Storkower Str. - Einsteinstr.: Asphalt, teilweise mit Schäden	Q1+ 13148,14850 13185,14912 13163,14924 13143,14935
-Storkower Str. - Einsteinstr.: Asphalt	Q0 13143,14935 13107,14873
+#: note: früher teilweise mit Asphaltschäden, jetzt eigentlich OK
+Storkower Str. - Einsteinstr.: Asphalt	Q0 13148,14850 13185,14912 13163,14924 13143,14935 13107,14873
 Einsteinstr.: Asphalt/Beton mit Schäden	Q1- 13185,14912 13235,14888 13507,14822 13537,14835
 Einsteinstr.: Asphalt	Q0 13537,14835 13598,14936
 Preußstr.: Asphalt	Q0 12325,15328 12367,15396
@@ -12508,6 +12507,8 @@ Holstweg: Beton und Asphalt	Q0- -1013,2579 -882,2260
 (Uferweg - Liegnitzer Str.): unbefestigt	Q2 12432,9652 12441,9663
 Schmausstr.: Asphalt	Q0 23242,6308 23353,6384
 Schmausstr.: Asphalt mit einigen leichten Schäden	Q0- 23353,6384 23489,6463 23577,6504
+Hans-Otto-Str. [Wohnblockstraße]: Kopfsteinpflaster	Q2 12659,14149 12705,14116
+Hans-Otto-Str. [Wohnblockstraße]: unebenes Kopfsteinpflaster	Q2- 12705,14116 12684,14081 12726,14036 12776,14024 12826,14087 12737,14156 12705,14116
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -16801,7 +16802,9 @@ Richterstr.: Asphalt	Q0- 9106,4114 9099,4204
 # 
 #: by: Anja Rößler: vvv
 #: confirmed_by: srt
-Dolziger Str.: mäßiges Kopfsteinpflaster	Q2 14435,12761 14436,12731 14628,12682 14814,12626
+Dolziger Str.: mäßiges Kopfsteinpflaster	Q2 14435,12761 14436,12731
+Dolziger Str.: mäßiges Kopfsteinpflaster	Q2- 14436,12731 14628,12682
+Dolziger Str.: mäßiges Kopfsteinpflaster	Q2 14628,12682 14814,12626
 Dolziger Str.: mäßiges Kopfsteinpflaster	Q2 14436,12731 14405,12738
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Dolziger Str.: Asphalt	Q0 14814,12626 14935,12596
@@ -28162,11 +28165,11 @@ Margarete-Walter-Str.: Asphalt mit Schäden	Q1 12789,14670 12745,14613 12814,1455
 #: confirmed_by: srt
 (Anton-Saefkow-Str. - John-Schehr-Str.): Verbundsteine	Q1 13088,14469 13031,14390 13022,14378 13016,14370 12954,14287
 #: confirmed_by: srt
-Hans-Otto-Str.: Kopfsteinpflaster	Q2 12832,14378 12783,14312 12722,14232 12594,14065 12537,13987 12478,13903 12398,13792
+Hans-Otto-Str.: Kopfsteinpflaster	Q2 12832,14378 12783,14312 12722,14232 12659,14149 12594,14065 12537,13987 12478,13903 12398,13792
 #: confirmed_by: srt
 Heinz-Kapelle-Str.: Kopfsteinpflaster	Q2 12783,14312 12972,14173
-#: confirmed_by: srt
-Dietrich-Bonhoeffer-Str.: schlechtes Kopfsteinpflaster	Q3 12556,14230 12266,14460
+#: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ...)
+Dietrich-Bonhoeffer-Str.: Kopfsteinpflaster	Q2- 12556,14230 12266,14460
 Margarete-Sommer-Str.: Kopfsteinpflaster	Q2 12707,13706 12805,13809 12879,13889 12975,13990
 Margarete-Sommer-Str.: wassergebundene Decke	Q1 12707,13706 12719,13704 12813,13799 12887,13877 12972,13970 12975,13990
 #: confirmed_by: srt
@@ -30815,4 +30818,6 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 14760,11044
 Einmündungsbereich mit Kopfsteinpflaster	Q2 14442,11101
 Kreuzungsbereich asphaltiert	Q0 14783,11949
 Kreuzungsbereich asphaltiert	Q0 14675,11964
+Einmündungsbereich asphaltiert	Q0 12556,14230
+Kreuzungsbereich asphaltiert	Q0 12486,14143
 #: ignore ^^^

@@ -1441,7 +1441,7 @@ Neudecker Weg: Verbesserung -> Radspuren oder Asphaltierung des Radwegs? ("Teila
 #: next_check: 2024-12-31
 An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19957,5941
 # 
-#: last_checked: 2022-03-05 (mapillary)
+#: last_checked: 2022-04-05 (mapillary)
 #: check_frequency: 90d
 Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22312,919 22351,862 22547,651 22916,402
 # 
@@ -1873,7 +1873,7 @@ Straße vor Schönholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf vvv
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/bagger-heben-baugrube-fuer-schuldrehscheibe-aus_a335846
-#: last_checked: 2022-03-31
+#: last_checked: 2022-04-06
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -2241,7 +2241,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: XXX laut osm mittlerweile Radspuren in der Richterstr.; bei Mapillary Grünmarkierungen zu sehen
 # REMOVED (inaktiv) --- #: XXX NEW¦Richterstraße (Bohnsdorf) Richtung Adlergestell ab Buntzelstraße (Berlin)  Gültig ab: 30.10.2018 10:31  Fahrtrichtung gesperrt, Sraßenbauarbeiten (bis 08/19)¦2147343391 -> für Radfahrer relevant?
 # REMOVED (gelöscht) --- #: osm_watch: way id="151627031" version="21"
-#: osm_watch: way id="639935469" version="11"
+#: osm_watch: way id="639935469" version="12"
 #: osm_watch: way id="913879539" version="4"
 #: osm_watch: way id="377862703" version="7"
 #: source_id: 2147341295 (inaktiv)
@@ -2250,7 +2250,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: source_id: 2147343391 (inaktiv)
 #: source_id: 2147343596 (bis 2021-01-18) (inaktiv)
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-03-05 (mapillary)
+#: last_checked: 2022-04-05 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-08-31
 Bohnsdorfer Kreisel: Bau von Radspuren (mit Grünmarkierung) in beiden Richtungen	?::projected 22092,999 22034,1006 21977,988
@@ -2844,6 +2844,7 @@ Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::
 #: by: https://twitter.com/BerlinNkl/status/1509514254587678720 (bis Fuldastr. bis September 2022)
 #: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html (bis 2024, auch die Edenstr. soll Fahrradstraße werden)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/neuer-abschnitt-fahrradstrasse_a341213 (bis Sommer 2022 bis zur Fuldastraße, im Herbst 2022 startet der nächste Abschnitt bis Innstraße)
+#: by: https://berliner-abendblatt.de/2022/04/06/weserstrasse-fahrradstrasse-wird-verlaengert/
 #: last_checked: 2022-04-01
 #: check_frequency: 90d
 #: next_check: 2022-09-15
@@ -3685,7 +3686,7 @@ Wilmersdorfer Str.: Verlängerung der Fußgängerzone geplant	?::projected 3717,114
 #: by: https://www.infravelo.de/projekt/grellstrasse-und-storkower-strasse/ (Baubeginn und -ende: 2. Quartal 2022)
 #: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html (bis Ende 2022)
 #: priority: #D
-#: last_checked: 2022-02-25
+#: last_checked: 2022-04-06
 #: next_check: 2022-06-30
 Grellstr. und Storkower Str.: Grünmarkierung geplant	?::projected 11941,15586 12252,15376 12325,15328 12417,15272 12704,15105 12807,15045 13107,14873 13148,14850 13439,14673
 # 
@@ -3844,7 +3845,7 @@ Bölschestr.: Prüfung einer Fahrradstraße	? 13188,9134 13298,9252 13357,9313 1348
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_12_0821_0896_online.pdf (Benennung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191542.php (Einweihung am 6.4.2022)
 #: XXX ggfs. auch die Platzfläche als solche einzeichnen
-#: osm_watch: way id="478838381" version="4"
+#: osm_watch: way id="478838381" version="5"
 #: last_checked: 2022-03-16 (keine Schilder zu sehen)
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2022-04-06
@@ -4117,8 +4118,8 @@ Alt-Treptow, vor der Sternwarte: Planung einer Überquerungshilfe, evtl. eine Amp
 #: by: https://abendblatt-berlin.de/2020/08/07/berlin-pankow-baumassnahmen-am-ensteinpark-haben-begonnen/
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1151985.php (Erwähnung)
 #: XXX wird nach den Bauarbeiten das Radfahren hier legal sein? (handicap-Eintrag!) Außerdem wird wohl eine Beleuchtung entstehen (nolighting-Eintrag!)
-#: last_checked: 2022-01-09
-#: check_frequency: 90d
+#: last_checked: 2022-04-06
+#: check_frequency: 30d
 #: next_check: 2022-07-24
 Einsteinpark: Rad/Gehweg wird entstehen	?::inwork 13163,14924 13207,14998 13204,15062
 # REMOVED (done) --- Pieskower Weg: Abzweig der Straße einzeichnen, Qualität?	? 13224,15049 13204,15062 13105,15122
@@ -4167,7 +4168,7 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/planungen-fuer-die-neugestaltung-der-strassenbahnhaltestelle-s-greifswalder-strasse-sind-schon-sehr-konkret_a253105 (Baubeginn Ende 2020)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/umbau-an-der-greifswalder-strasse-verzoegert-sich-weiter_a285928 (Fertigstellung 2024)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/kritik-an-plaenen-fuer-neue-tramhaltestelle-am-s-bahnhof-greifswalder-strasse_a325154 (Baustart frühestens 2023, Bauzeit 18 Monate)
-#: last_checked: 2022-02-25
+#: last_checked: 2022-04-06
 #: next_check: 2024-03-01
 S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12704,15105 12681,15028
 # 
@@ -4374,6 +4375,7 @@ zur Pasewalker Straße: wird sich bei der neuen Wegweisung etwas ändern?	?; 11950
 Allee der Kosmonauten: Radwege geplant	?::projected 20150,13562 20193,13621 20207,13778 20235,14017 20249,14143 20262,14255 20281,14361 20318,14402 20367,14429 20474,14442 20611,14445 20657,14446 20727,14467 20756,14486
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1190899.php (zweites 100-Tage-Programm)
+#: last_checked: 2022-04-03 (mapillary)
 #: next_check: 2022-06-30
 Allee der Kosmonauten: Radwege zwischen Elisabethstr. und Landsberger Allee geplant	? 20756,14486 20822,14594 20868,14698 20944,14840 20980,14914 21018,14991 21025,15005 21099,15158 21163,15289 21187,15350 21228,15449 21242,15529 21241,15573
 # 
@@ -4428,7 +4430,7 @@ Jacques-Offenbach-Platz: hier sollen Zebrastreifen an den Einmündungen entstehen
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9390 (Anfrage)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (Umsetzung 2022 unwahrscheinlich)
 #: priority: #D
-#: last_checked: 2022-03-20
+#: last_checked: 2022-04-03 (mapillary)
 #: check_frequency: 180d
 Marzahner Promenade: entsteht hier ein Zebrastreifen oder nur eine Überquerungshilfe?	?::projected  20155,15492 20226,15512 20173,15457
 # 
@@ -5994,7 +5996,7 @@ L25 (Prenzlau - Güstow): straßenbegleitender Radweg entsteht	?::inwork 37020,101
 # 
 #: by: https://www.berliner-woche.de/hakenfelde/c-verkehr/durchgangsverkehr-stresst-anwohner_a235156
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10820 (Antrag)
-#: source_id: viz2021:13.21502,52.56076,05.04.2022,13:25 (Sperrung wegen Bauarbeiten bis zum 25.4.2022)
+#: source_id: viz2021:13.21502,52.56076,05.04.2022,13:25 (Sperrung wegen Bauarbeiten bis zum 25.4.2022) (inaktiv)
 #: XXX erst nach der Bebauung Carossa-Quartier (Baubeginn hier: frühestens 2020)
 #: also_indoor: traffic (G,B)
 #: last_checked: 2021-09-26 (mapillary)
@@ -6375,7 +6377,7 @@ Goerdelerdamm: teilweise Verbreiterung des Radwegs	?::projected 5043,14671 4897,
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/anwohner-sammeln-unterschriften-gegen-halbierung-des-thaelmannparks_a308565
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5857 (Antrag)
 #: osm_watch: way id="18677670" version="12"
-#: last_checked: 2022-02-25
+#: last_checked: 2022-04-06
 #: check_frequency: 30d
 Schule am Planetarium: Weg wird entfallen, neue Wege nördlich und südlich des Schulgeländes werden entstehen	?::projected 12208,15108 12103,15218
 # 
@@ -6539,7 +6541,7 @@ Buckower Chaussee: Straße wird gesperrt, Neubau einer Brücke	?::projected 9069,5
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/ausbau-der-kreuzung-blumberger-dammmehrower-allee-verzoegert-sich_a315639 (Umbau der Kreuzung ab 2021, Bauende 2021 ungewiss)
 #: osm_watch: way id="441659160" version="14"
 #: osm_watch: way id="441659161" version="13"
-#: last_checked: 2022-01-23 (StefanHRT)
+#: last_checked: 2022-04-02 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-12-31
 Blumberger Damm: entsteht hier ein Radweg oder eine Radspur?	?; 21869,16719 21889,16817 21925,16981
@@ -8247,7 +8249,8 @@ Uferweg geplant	?::projected 11981,11578 11821,11733 11676,11839 11375,11994
 #: by: https://abendblatt-berlin.de/2021/04/25/marzahn-schaufensterausstellung-zu-knorr-park-plaenen/
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/schaufensterausstellung-zeigt-plaene-fuer-zukunftsquartier-im-georg-knorr-park_a308124
 #: XXX evtl. entstehen auch weitere Verkehrsflächen
-#: next_check: 2022-06-01
+#: last_checked: 2022-04-02 (mapillary)
+#: check_frequency: 720d
 Bebauungsplan XXI-22-2 (Georg-Knorr-Park Teilgebiet Ost): Planung eines Geh- und Radwegs	?::projected 19345,15425 19605,15528
 # 
 # REMOVED --- #: next_check_id: MAUERPARKERWEITERUNG-2019 --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/artikel.601949.php --- #: by: https://www.bbs-landscape.com/projekte/mauerpark-berlin-mitte/ --- #: by: https://gruen-berlin.de/projekt/mauerpark (Steinkreis) --- #: by: https://gruen-berlin.de/sites/default/files/gruenberlinmagazin_herbst-winter_2018.pdf (mit Plan, Umsetzung bis 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812066.php --- #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/3-64/index.shtml --- #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/3-64/download/3_64-Planzeichnung-Bebauungsplanentwurf.pdf (aber keine konkreten Wegbeziehungen hier) --- #: by: https://www.abendblatt-berlin.de/2019/10/03/berlin-mauerpark-bald-schoen-wie-nie/ --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=641461&postcount=306 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_46_6905_7144_online.pdf (Widmung einer öffentlichen Grün- und Erholungsanlage) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.951044.php (Eröffnung) --- #: XXX Wie werden die Wege nach den Bauarbeiten aussehen? Wird es auch einen neuen (asphaltierten?) Radweg zwischen Bernauer und Gleimtunnel geben? --- #: XXX laut osm-Notiz ist der gesamte Kreis gesperrt; dafür sind die neuen Wege Richtung Gleimstr. offen (prüfen!) --- heute (2020-06-13) war das nicht der Fall --- # REMOVED --- #: osm_watch: way id="233994265" version="7" --- # REMOVED --- #: osm_watch: way id="30539724" version="11" --- #: last_checked: 2020-06-13 --- #: check_frequency: 30d --- #: next_check: 2020-06-26 --- (Lortzingstr. - Mauerpark): wann wird der südliche Teil des Kreise eröffnet?	?::inwork 10070,15438 10083,15425 10103,15437 10107,15457

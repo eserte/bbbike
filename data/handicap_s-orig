@@ -20,7 +20,7 @@ Jessnerstr.: Bauarbeiten an der Kreuzung Frankfurter Allee, schmalen Gehweg nutz
 #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022
 #: XXX Datensatz in gesperrt-orig beachten!
 #: also_indoor: traffic (ex-G,ex-B)
-#: last_checked: 2022-03-29 vvv
+#: last_checked: 2022-04-06 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-04-01 vvv
 Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Fahrbahn gesperrt	q4::inwork 13838,12884 13818,12897
@@ -185,11 +185,11 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: by: https://abendblatt-berlin.de/2021/04/05/berlin-wedding-geisterhaus-an-der-burgsdorfstrasse-soll-abgerissen-werden/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
 #: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
-#: osm_watch: way id="549316654" version="15"
+#: osm_watch: way id="549316654" version="16"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
-#: last_checked: 2022-03-12 (osm)
+#: last_checked: 2022-04-05 (osm)
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -4036,6 +4036,8 @@ Bruno-Baum-Grünzug: Grünanlage, Fußgänger	q3 20260,15434 20245,15394 20004,15251
 (Krautstr. - Kleine Markusstr.): zwei Bodenschwellen	q2 12002,12008 11961,12025 11956,12071 11932,12111 11937,12127
 An der Wuhlheide: gegenläufiger Geh/Radweg	q3; 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21600,5694 21605,5687
 Lindenstr.: gegenläufiger Geh/Radweg	q3; 21605,5687 21706,5541 21789,5427
+#: note: Grünanlage, keine Zusatzschilder
+(Zur Waage - Zur Innung): Grünanlage, einige Fußgänger	q3 14067,13050 14086,13090
 # 
 ######################### User Contributions #################################
 # 
