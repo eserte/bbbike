@@ -4000,31 +4000,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => 1672502400
        },
        undef,
-       {
-         'data' => '#: next_check_id: GNEISENAUKIEZ-2022
-#: also_indoor: traffic (G,B) vvv
-#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/gneisenau-kiez-wird-verkehrsberuhigt_a334304
-#: by: https://berliner-abendblatt.de/2022/01/24/verkehrsberuhigung-im-gneisenaukiez/
-#: XXX Wie werden die verkehrsberuhigenden Maßnahmen aussehen? vvv
-#: last_checked: 2022-03-24 vvv
-#: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2022-03-15 vvv
-# REMOVED (hier Bauarbeiten bereits fertig) --- #: XXX Fahrbahn zurzeit gesperrt ---	q4::inwork 9723,9842 9837,9856
-#: XXX Fahrbahn zurzeit gesperrt
-	q4::inwork 9705,9732 9723,9842
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: also_indoor ^^^
-',
-         'from' => 1644102000,
-         'id' => 3519,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1169529.php',
-         'text' => 'Baruther Str., Solmsstr.: Bauarbeiten, Fahrbahn kann gesperrt sein, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: MASSMANN-2022
 #: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maßmannstr.
@@ -4042,12 +4018,13 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1498247389118873600
 #: by: https://pbs.twimg.com/media/FMrYBZQXEAAQlaA?format=jpg&name=large
-	q4::inwork 10776,10682 10944,10606
+#: note: es existiert ein etwas breiterer Fußgängerschutztunnel, etwa 50m lang
+	q3::inwork 10776,10682 10944,10606
 ',
          'from' => 1645945200,
          'id' => 3521,
          'source_id' => 'viz2021:13.409755,52.50158,28.02.2022,08:00',
-         'text' => 'Ritterstr.: Bauarbeiten zwischen Prinzenstr. und Bergfriedstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 28.02.2022 08:00 bis 29.04.2022 17:00 ',
+         'text' => 'Ritterstr.: Bauarbeiten zwischen Prinzenstr. und Bergfriedstr., Fahrbahn gesperrt, Engstelle, vom 28.02.2022 08:00 bis 29.04.2022 17:00 ',
          'type' => 'handicap',
          'until' => 1651244400
        },
@@ -4139,7 +4116,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: next_check_id: STRALAUER-2019
-#: last_checked: 2022-04-05
+#: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten
+#: last_checked: 2022-04-07
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583

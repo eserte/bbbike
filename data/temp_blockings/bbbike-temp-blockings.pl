@@ -397,10 +397,10 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/01/26/myfest-findet-nicht-statt/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10236 (Anfrage)
 	2::temp 11763,10635 11734,10563 11721,10530 11754,10516 11949,10414
-	2::temp 11552,10863 11772,10764 11760,10732 11781,10696 11763,10635 11505,10744 11552,10863 11589,10947 11640,11067
+	2::temp 11552,10863 11772,10764 11760,10732 11781,10696 11763,10635 11506,10746 11552,10863 11589,10947 11640,11067
 	2::temp 11961,11041 11899,10886 11839,10736 11824,10708 11781,10696
 	2::temp 11805,10899 11805,10858
-	2::temp 11275,10723 11301,10783 11329,10785 11365,10791 11403,10782 11505,10744 11463,10642 11690,10543 11721,10530
+	2::temp 11275,10723 11301,10783 11329,10787 11366,10793 11376,10788 11397,10781 11400,10790 11506,10746 11463,10642 11690,10543 11721,10530
 	2::temp 11839,10736 11772,10764 11804,10846
 	2::temp 11463,10642 11275,10723 11220,10744 11159,10769
 	2::temp 11708,10497 11690,10543 11734,10563 11754,10516 11708,10497
@@ -6285,7 +6285,7 @@ EOF
        until => $isodate2epoch->("2019-05-05 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4, start => "2021-10-25T00:00:00"]],
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => -7,
        text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (4.5.2019 und 5.5.2019)',
        type  => 'gesperrt',
        source_id => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
@@ -8179,11 +8179,13 @@ EOF
        until => $isodate2epoch->("2019-05-12 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 5, start => "2021-10-25T00:00:00"]], # note: findet 2021 vermutlich nicht statt
+       recurrence_prewarn_days => 14,
        source_id => 'https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html',
        text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (11. und 12. Mai 2019)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html?date=20210410 (Termin noch nicht bekannt)
+#: by: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html (geplanter Termin: 07. und 08. Mai 2022)
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 	2::temp 16610,1715 16767,1831
 EOF
@@ -14123,12 +14125,14 @@ EOF
        until => $isodate2epoch->("2019-05-12 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 5, start => "2021-10-25T00:00:00"]],
+       recurrence_prewarn_days => 14,
        text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (11. und 12. Mai 2019)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html?date=20210409 (geplant 8. und 9. Mai 2021)
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html?date=20210418 (erst 2022)
+#: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html?date=20220407 (geplant 7. und 8. Mai 2022)
 	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
@@ -19513,7 +19517,7 @@ EOF
        until => $isodate2epoch->("2019-05-19 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 4, start => "2021-06-02T00:00:00"]],
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 7,
        text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 26.04.2019 bis 19.05.2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
@@ -19523,6 +19527,7 @@ EOF
 #: by: https://www.berlin.de/events/2983315-2229501-neukoellner-maientage.html (geplant: 29. April bis 22. Mai 2022)
 #: by: https://berliner-abendblatt.de/2022/03/24/die-maientage-verlassen-neukoelln/ (in Zukunft nicht mehr in der Hasenheide?)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7936
+#: by: https://www.berlin.de/events/2983315-2229501-neukoellner-maientage.html (geplant: 29. April bis 22. Mai 2022)
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -21701,7 +21706,7 @@ EOF
        until => $isodate2epoch->("2019-04-28 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 4, start => "2021-05-01T00:00:00"]], # keine Anzeichen dafür, dass der Winzerfrühling 2021 stattfinden könnte
-       recurrence_prewarn_days => 7,
+       recurrence_prewarn_days => 2,
        text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 26.4.2019 bis 28.4.2019',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
@@ -22979,6 +22984,7 @@ EOF
        until => $isodate2epoch->("2021-09-11 22:00:00"),
        periodic => 1, # erster Termin im Jahr
        recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
+       recurrence_prewarn_days => 7,
        # früher: Fest der Nationen
        # früher: Prager Platz
        text  => 'Nikolsburger Platz: Veranstaltung "Fest der Vielfalt", Durchfahrt vermutlich nicht möglich, am 11.9.2021 von 14 bis 20 Uhr',
@@ -22988,6 +22994,7 @@ EOF
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.932471.php (Absage 2020)
 #: by: https://www.charlottenburg-wilmersdorf-zeitung.de/fest-der-vielfalt-am-prager-platz/ (11. September 2021, 14-20 Uhr, Nikolsburger Platz/Trautenaustraße)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1123056.php
+#: note: für 2022 noch keine Termine, vielleicht wieder erst im September?
 #: note: kein tempex-Ausdruck möglich
 # REMOVED ---	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
 	2::temp 5291,9675 5374,9619 5314,9588 5297,9579 5291,9675
@@ -34648,27 +34655,18 @@ EOF
 EOF
      },
      { from  => 1644102000, # 2022-02-06 00:00
-       until => undef, # 1647385199, # 2022-03-15 23:59
+       until => 1649345558, # undef, # 1647385199, # 2022-03-15 23:59
        text  => 'Baruther Str., Solmsstr.: Bauarbeiten, Fahrbahn kann gesperrt sein, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1169529.php',
        data  => <<EOF,
-#: next_check_id: GNEISENAUKIEZ-2022
-#: also_indoor: traffic (G,B) vvv
-#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/gneisenau-kiez-wird-verkehrsberuhigt_a334304
-#: by: https://berliner-abendblatt.de/2022/01/24/verkehrsberuhigung-im-gneisenaukiez/
-#: XXX Wie werden die verkehrsberuhigenden Maßnahmen aussehen? vvv
-#: last_checked: 2022-03-24 vvv
-#: check_frequency: 14d vvv
+# REMOVED --- #: next_check_id: GNEISENAUKIEZ-2022 --- #: also_indoor: traffic (G,B) vvv --- #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/gneisenau-kiez-wird-verkehrsberuhigt_a334304 --- #: by: https://berliner-abendblatt.de/2022/01/24/verkehrsberuhigung-im-gneisenaukiez/--- #: XXX Wie werden die verkehrsberuhigenden Maßnahmen aussehen? vvv --- #: last_checked: 2022-03-24 vvv--- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-03-15 vvv
 # REMOVED (hier Bauarbeiten bereits fertig) --- #: XXX Fahrbahn zurzeit gesperrt ---	q4::inwork 9723,9842 9837,9856
-#: XXX Fahrbahn zurzeit gesperrt
+# REMOVED --- #: XXX Fahrbahn zurzeit gesperrt
 	q4::inwork 9705,9732 9723,9842
 # REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: also_indoor ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: also_indoor ^^^
 EOF
      },
      { from  => undef, # 
@@ -34686,13 +34684,14 @@ EOF
      },
      { from  => 1645945200, # 2022-02-27 08:00
        until => 1651244400, # 2022-04-29 17:00
-       text  => 'Ritterstr.: Bauarbeiten zwischen Prinzenstr. und Bergfriedstr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 28.02.2022 08:00 bis 29.04.2022 17:00 ',
+       text  => 'Ritterstr.: Bauarbeiten zwischen Prinzenstr. und Bergfriedstr., Fahrbahn gesperrt, Engstelle, vom 28.02.2022 08:00 bis 29.04.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.409755,52.50158,28.02.2022,08:00',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1498247389118873600
 #: by: https://pbs.twimg.com/media/FMrYBZQXEAAQlaA?format=jpg&name=large
-	q4::inwork 10776,10682 10944,10606
+#: note: es existiert ein etwas breiterer Fußgängerschutztunnel, etwa 50m lang
+	q3::inwork 10776,10682 10944,10606
 EOF
      },
      { from  => $isodate2epoch->("2022-03-02 14:00:00"), # 1 Tag Vorlauf
@@ -34810,7 +34809,8 @@ EOF
        source_id => 'https://twitter.com/VIZ_Berlin/status/1509046513573498881',
        data  => <<EOF,
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-04-05
+#: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten
+#: last_checked: 2022-04-07
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
