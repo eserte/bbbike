@@ -371,7 +371,7 @@ for my $file (@files) {
 	     for ($dir->{source_id}) {
 		 my $viz_seen;
 		 for my $source_id (@{ $dir->{source_id} }) {
-		     if      ($source_id =~ m{^bvg2021:(.*)}) {
+		     if      ($source_id =~ m{^bvg2021:(\S+)}) {
 			 push @extra_url_defs, ['BVG', "https://www.bvg.de/de/verbindungen/stoerungsmeldungen/$1"];
 		     } elsif ($source_id =~ m{^viz2021:} && !$viz_seen++) {
 			 if ($proj4_epsg2078) {
