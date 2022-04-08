@@ -2547,8 +2547,8 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: also_indoor: traffic (G)
-#: osm_watch: way id="749226300" version="5"
-#: last_checked: 2021-11-06
+#: osm_watch: way id="749226300" version="6"
+#: last_checked: 2022-04-08 (osm)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-10-31
 	2::inwork 3079,5411 3179,5267
@@ -3629,9 +3629,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1635634800,
          'id' => 3474,
          'source_id' => 'LS/721-E/21/142',
-         'text' => 'Bernau - Lanke: Bauarbeiten, Sperrung, für Radfahrer unter Umständen bereits passierbar, vom 01.11.2021 bis 22.04.2022',
+         'text' => 'Bernau - Lanke: Bauarbeiten, Sperrung, für Radfahrer unter Umständen bereits passierbar, vom 01.11.2021 bis 04.06.2022',
          'type' => 'gesperrt',
-         'until' => 1650643200
+         'until' => 1654358400
        },
        {
          'data' => '	2::inwork -57797,19638 -55780,18604
@@ -4117,7 +4117,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten
-#: last_checked: 2022-04-07
+#: last_checked: 2022-04-08
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -4166,6 +4166,30 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Brückenstr.: zwischen Michael-Brückner-Str. und Treskowbrücke Sperrung der Fahrbahn wegen Gleisbauarbeiten, Radfahrer werden über den Gehweg geleitet, bis 14.04.2022',
          'type' => 'handicap',
          'until' => 1649973600
+       },
+       {
+         'data' => '#: add_fragezeichen: Bis wann gehen die Bauarbeiten? Ist der Kroppenstedtweg danach komplett asphaltiert?
+#: next_check: 2022-08-01
+	2::inwork 983,15136 971,15193
+',
+         'from' => 1649541600,
+         'id' => 3535,
+         'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1194824.php',
+         'text' => 'Kroppenstedtweg: Bauarbeiten zwischen Dihlmannstr. und Hauptweg, Weg ist gesperrt, ab 11.04.2022, Ende der Bauarbeiten ist unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: XXX sind Radfahrer in beiden Richtungen betroffen?
+#: next_check: 2022-04-11
+	q4::inwork 15560,7400 15693,7512
+',
+         'from' => 1649574000,
+         'id' => 3536,
+         'source_id' => 'viz2021:13.479739,52.472118,11.04.2022,09:00',
+         'text' => 'Eichbuschallee : Fahrbahn zwischen Kiefholzstr. und Bergaustr. gesperrt, Radfahrer sollen schieben, vom 11.04.2022 09:00 bis 31.10.2022 17:00',
+         'type' => 'handicap',
+         'until' => 1667232000
        }
      
 );

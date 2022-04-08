@@ -29984,8 +29984,8 @@ EOF
        data  => <<EOF,
 #: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: also_indoor: traffic (G)
-#: osm_watch: way id="749226300" version="5"
-#: last_checked: 2021-11-06
+#: osm_watch: way id="749226300" version="6"
+#: last_checked: 2022-04-08 (osm)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-10-31
 	2::inwork 3079,5411 3179,5267
@@ -34012,8 +34012,8 @@ EOF
 EOF
      },
      { from  => 1635634800, # 2021-10-31 01:00
-       until => $isodate2epoch->("2022-04-22 18:00:00"), # 1642287600, # 2022-01-16 00:00
-       text  => 'Bernau - Lanke: Bauarbeiten, Sperrung, für Radfahrer unter Umständen bereits passierbar, vom 01.11.2021 bis 22.04.2022',
+       until => $isodate2epoch->("2022-06-04 18:00:00"), # 1642287600, # 2022-01-16 00:00
+       text  => 'Bernau - Lanke: Bauarbeiten, Sperrung, für Radfahrer unter Umständen bereits passierbar, vom 01.11.2021 bis 04.06.2022',
        type  => 'gesperrt',
        source_id => 'LS/721-E/21/142',
        data  => <<EOF,
@@ -34810,7 +34810,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten
-#: last_checked: 2022-04-07
+#: last_checked: 2022-04-08
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -34849,6 +34849,28 @@ EOF
 #: by: https://nitter.net/pic/media%2FFPQYYPyX0CoHC1A.jpg%3Fname%3Dorig
 #: also_indoor: traffic (G,H)
 	q2::inwork 17900,6072 17728,5756
+EOF
+     },
+     { from  => 1649541600, # 2022-04-10 00:00
+       until => undef, # XXX
+       text  => 'Kroppenstedtweg: Bauarbeiten zwischen Dihlmannstr. und Hauptweg, Weg ist gesperrt, ab 11.04.2022, Ende der Bauarbeiten ist unbekannt',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1194824.php',
+       data  => <<EOF,
+#: add_fragezeichen: Bis wann gehen die Bauarbeiten? Ist der Kroppenstedtweg danach komplett asphaltiert?
+#: next_check: 2022-08-01
+	2::inwork 983,15136 971,15193
+EOF
+     },
+     { from  => 1649574000, # 2022-04-10 09:00
+       until => 1667232000, # 2022-10-31 17:00
+       text  => 'Eichbuschallee : Fahrbahn zwischen Kiefholzstr. und Bergaustr. gesperrt, Radfahrer sollen schieben, vom 11.04.2022 09:00 bis 31.10.2022 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.479739,52.472118,11.04.2022,09:00',
+       data  => <<EOF,
+#: XXX sind Radfahrer in beiden Richtungen betroffen?
+#: next_check: 2022-04-11
+	q4::inwork 15560,7400 15693,7512
 EOF
      },
     );

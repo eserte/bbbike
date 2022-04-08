@@ -980,7 +980,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,26.04.2022,15:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-04-05 vvv
+#: last_checked: 2022-04-08 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169
@@ -1340,7 +1340,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2022-03-23 vvv
+#: last_checked: 2022-04-08 vvv
 #: check_frequency: 30d vvv
 #	RW1;RW2 14051,6731 14139,6786 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
@@ -4219,7 +4219,7 @@ Grünmarkierung	RW4; 13891,7107 13627,7047 13500,7018 13336,6986
 Grünmarkierung	RW3; 13336,6986 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2022-02-23 vvv
+#: last_checked: 2022-04-08 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2022-12-31 vvv
 #: valid: 20140224-20221231 vvv
@@ -7173,8 +7173,8 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://berliner-abendblatt.de/2022/03/29/kottbusser-strasse-pop-up-radweg-wird-verstetigt/
 #: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-wird-dauerhaft_a340844
-#: last_checked: 2022-04-01 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2022-04-08 vvv
+#: check_frequency: 30d vvv
 #: next_check: 2022-04-30 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="30184955" version="26"
@@ -7470,6 +7470,14 @@ provisorische Radspuren	RW4;RW4 12185,7381 12221,7271
 # 
 #: note: Hermannstr., Richtung Süden
 	RW4; 12221,7271 12244,7205 12259,7164 12291,7074 12304,7039 12317,7007
+#: by: osm
+	RW4?; 12317,7007 12342,6936
+#: by: osm
+#: confirmed_by: srt (südliches Ende)
+Bushaltestelle; die letzten 50 Meter als Radspur hinter parkenden Autos	RW5; 12342,6936 12347,6923 12362,6881 12395,6785
+Radspur hinter parkenden Autos	RW4?; 12395,6785 12422,6715 12448,6646
+#: by: osm
+Bushaltestelle	RW5; 12448,6646 12470,6586
 #: by: osm
 	RW4?; 12470,6586 12510,6508
 # 

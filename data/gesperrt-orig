@@ -1274,7 +1274,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-04-01
+#: last_checked: 2022-04-08
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -3430,7 +3430,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: PLANSTRASSEC-2019
 # REMOVED (ein osm_watch reicht aus) --- #: osm_watch: way id="491906864" version="6"
-#: last_checked: 2022-02-22
+#: last_checked: 2022-04-07 (architektur-urbanistik)
 #: check_frequency: 60d
 (Planstraße C): Einbahnstraßenregelung	1s:q4:inwork 12848,11093 12926,11224
 # 
@@ -3497,7 +3497,7 @@ Wandlitzstr.: in Höhe Lehndorffstr. sind Gehweg und Fahrbahn gesperrt	2::inwork 
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX vermutlich wird die Straße dauerhaft verschwinden -> dann aus strassen-orig & Berlin.coords.data etc. entfernen
-#: last_checked: 2022-03-27
+#: last_checked: 2022-04-08
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Matthesstr.: Baustelle, keine Durchfahrt möglich	2::inwork 14185,9509 14172,9457
@@ -3728,7 +3728,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-04-01
+#: last_checked: 2022-04-08
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -4379,7 +4379,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: osm_watch: way id="846595294" version="6"
 #: osm_watch: way id="38725490" version="15"
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-03-23
+#: last_checked: 2022-04-08
 #: check_frequency: 90d
 #: next_check: 2022-12-31
 Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14051,6731 14106,6663 14150,6609
@@ -4388,7 +4388,7 @@ Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14051,6731 1410
 #: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaßnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-02-23
+#: last_checked: 2022-04-08
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
