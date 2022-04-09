@@ -908,6 +908,9 @@ Röblingstr.	1 7598,5926 7606,5939
 Röblingstr.	1 7615,5938 7598,5926
 Birkbuschstr. - Wolfensteindamm	1 4794,5161 4810,5134 4822,5114
 (S-Bhf. Raoul-Wallenberg-Str. - Raoul-Wallenberg-Str.)	1::igndisp 20212,16252 20116,16228
+Mittelstreifen	3nocross::ignrte 6239,15553 6348,15423 6375,15391
+Amrumer Str. -> Ost-West-Str., Virchow-Klinikum: Mittelstreifen	3::igndisp 6375,15391 6348,15423 6265,15349
+Ost-West-Str., Virchow-Klinikum -> Amrumer Str.: Mittelstreifen	3::igndisp 6265,15349 6348,15423 6239,15553
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2231,8 +2234,8 @@ Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18826,381
 Mittelstreifen	3nocross::ignrte 18930,3703 19029,3595 19125,3491
 Groß-Berliner Damm -> Konrad-Zuse-Str.: Mittelstreifen	3::igndisp 19125,3491 19029,3595 18943,3508
 Konrad-Zuse-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18943,3508 19029,3595 18930,3703
-Mittelstreifen	3nocross::ignrte 6228,13324 6229,13517 6230,13596
-Stromstr. -> Bugenhagenstr.: Mittelstreifen	3::igndisp 6228,13324 6229,13517 6104,13522
+Mittelstreifen	3nocross::ignrte 6228,13324 6230,13532 6230,13596
+Stromstr. -> Bugenhagenstr.: Mittelstreifen	3::igndisp 6228,13324 6230,13532 6104,13530
 unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross::ignrte 13476,11174 13493,11217 13541,11355
 Straßenbahntrasse	3nocross::ignrte 13391,10963 13409,11004 13454,11119
 Warschauer Str. -> Max-Koch-Passage: Straßenbahntrasse	3::igndisp 13454,11119 13409,11004 13438,10994
@@ -3187,7 +3190,7 @@ Drängelgitter	BNP:3:-32:trailer=10 18232,1669
 Drängelgitter	BNP:3:-147:trailer=10 20560,23
 Drängelgitter	BNP:3:-106:trailer=10 20675,56
 zwei Drängelgitter (Z-Anordnung)	BNP:5:-225:trailer=15 18848,3600
-(Vorfahrt Neues-Deutschland-Gebäude): mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
+(Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
 Überqueren der Straße vor der Russischen Botschaft nicht möglich	3nocross::ignrte 8804,12280 9028,12307 9141,12320
 Schadowstr. -> Unter den Linden: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3::igndisp 9011,12423 9028,12307 9141,12320
 Unter den Linden -> Schadowstr.: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3::igndisp 8804,12280 9028,12307 9011,12423
@@ -3245,7 +3248,7 @@ Lydia-Rabinowitsch-Str. - Hamburger Bahnhof: direkter Durchgang wegen Bauarbeite
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
 Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3219,7987 3224,8106 3230,8230
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055
-Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9429,12728 9402,12792 9386,12833
+Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9429,12728 9402,12792 9386,12833 9375,12911
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
 Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414

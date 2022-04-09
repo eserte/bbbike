@@ -883,8 +883,8 @@ Mittelstreifen	3nocross::ignrte 5705,13359 5857,13342 5956,13330
 Turmstr. -> Bremer Str.: Mittelstreifen	3::igndisp 5705,13359 5857,13342 5868,13441
 Bremer Str. -> Turmstr.: Mittelstreifen	3::igndisp 5868,13441 5857,13342 5956,13330
 Mittelstreifen	3nocross::ignrte 6228,13324 6115,13328 6105,13328 6011,13330
-Turmstr. -> Wilhelmshavener Str.: Mittelstreifen	3::igndisp 6011,13330 6105,13328 6104,13522
-Wilhelmshavener Str. -> Turmstr.: Mittelstreifen	3::igndisp 6104,13522 6105,13328 6115,13328
+Turmstr. -> Wilhelmshavener Str.: Mittelstreifen	3::igndisp 6011,13330 6105,13328 6104,13530
+Wilhelmshavener Str. -> Turmstr.: Mittelstreifen	3::igndisp 6104,13530 6105,13328 6115,13328
 Straßenbahntrasse	3nocross::ignrte 10935,22174 10999,22195 11073,22225
 Rosenthaler Weg -> Guyotstr.: Straßenbahntrasse	3::igndisp 11073,22225 10999,22195 11056,21978
 Guyotstr. -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11056,21978 10999,22195 10935,22174
@@ -1904,7 +1904,7 @@ Goebelplatz	1 1974,14646 1974,14565
 Brixplatz	1 179,12434 269,12462 329,12503
 Brixplatz	1 419,12397 335,12343 208,12305
 Oldenburgallee	1 454,11670 461,11455
-Kirschenallee	1 919,11938 881,11893
+Kirschenallee	1 919,11938 884,11896
 Karolingerplatz	1 1278,11087 1184,11143
 Karolingerplatz	1 1203,11221 1310,11193
 Ubierstr.	1 1310,11193 1278,11087
@@ -2230,3 +2230,5 @@ Birkbuschstr. - Hindenburgdamm	3 4822,5114 4796,5129 4792,5097
 Weserstr.	1 12531,9009 12480,9037 12402,9080 12328,9117
 Edith-Stein-Str.: Poller an der Einmündung "Zur Marktflagge"	3 14089,13247 14035,13104 13943,13129
 Edith-Stein-Str.: Poller an der Einmündung "Zur Marktflagge"	3 14089,13247 14035,13104 14086,13090
+Wilhelmshavener Str.	2:Anlieger 6093,13990 6089,14197
+Cuxhavener Str.	2:Anlieger 5951,12353 5982,12291 5870,12106 5909,12073

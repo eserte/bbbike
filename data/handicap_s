@@ -35,8 +35,6 @@ Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwor
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
 Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3::inwork 20640,7122 20654,7136 20629,7189 20575,7226
 Alt-Moabit - Invalidenstr.: Bauarbeiten, engen Gehweg benutzen	q4::inwork 7422,13012 7415,13060
-Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
-Neue Nationalgalerie: Bauzäune, Umfahren über Gehweg (Bordstein) möglich	q3::inwork 7874,11293 7828,11133
 Werner-Richard-Heymann-Platz: große Teile der Fahrbahn gesperrt, Bordsteine	q3 3320,7982 3219,7987
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
 Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwork 5461,9923 5423,9932 5382,9942
@@ -2153,7 +2151,7 @@ Mercedes-Platz: Fußgängerzone	q4 13150,11101 13063,11147 12984,11194
 Mercedes-Platz: Fußgängerzone	q4 12990,11006 13063,11147
 (Abbestr. - Otto-Suhr-Allee): einige Fußgänger	q1 4674,12076 4608,11935 4596,11912
 (Kniprodestr./Michelangelostr. - Puccinistr.): kurze Rampe	q2 13905,15306 13809,15370
-An der Kieler Brücke: Fußgängerzone	q3 7877,14504 7804,14445
+An der Kieler Brücke: Fußgängerzone, Radfahren verboten	q4 7877,14504 7804,14445
 (Straße E, Innovationspark Wuhlheide): Gewerbebetriebe	q2 21231,7249 21175,7212 21243,7135
 (Straße G, Innovationspark Wuhlheide): Gewerbebetriebe	q1 21627,6942 21547,7024
 (Relingstr. - Uferweg): einige Fußgänger	q2 22358,2460 22399,2481
@@ -2388,7 +2386,7 @@ Konradinstr.: enge Straße	q0 8575,5202 8556,5234 8632,5331 8674,5357 8872,5484 8
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fußgänger	q1 1453,3085 1667,3232 1687,3244 1715,3257 1977,3414 2228,3554
 Uferpromenade: Restaurantbetrieb	q3 -1659,18104 -1659,18076
 Bruno-Bauer-Str.: Bordsteine, Gehweg	q2 12893,6527 12904,6488 12921,6424
-Hessenallee: enge Straße	q1 640,11676 640,11706 769,11770 881,11893
+Hessenallee: enge Straße	q1 640,11676 640,11706 769,11770 884,11896
 Pechüler Pfad: eng, Fußgänger	q3 2793,6593 2875,6648
 Pechüler Pfad: Fußgänger	q3 2854,6675 2953,6743
 Friedrichshaller Str.: Bodenschwellen	q2 2786,7721 2911,7686 3084,7599
@@ -3211,7 +3209,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 (Planstraße C): Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12848,11093 12926,11224
 Hönower Str.: temporäre Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 18735,9421 18765,9426 18846,9532
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10472,14632 10320,14608
-Planckstr.: Einbahnstraßenregelung, offen Richtung Süden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9429,12728 9402,12792 9386,12833
+Planckstr.: Einbahnstraßenregelung, offen Richtung Süden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9429,12728 9402,12792 9386,12833 9375,12911
 Johannisstr.: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174
 Mauerstr..: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9108,11961 9076,12054
 Jägerstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9195,11972 9108,11961

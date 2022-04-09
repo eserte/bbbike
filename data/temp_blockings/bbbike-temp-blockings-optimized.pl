@@ -526,7 +526,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 # REMOVED --- #: next_check_id: CORONA-2020
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-02-25
+#: last_checked: 2022-04-09
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -2657,7 +2657,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-03-31
+#: last_checked: 2022-04-09
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 ',
@@ -2706,7 +2706,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-04-06
+#: last_checked: 2022-04-09
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2725,7 +2725,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: next_check_id: CORONA-2020
 #: by: https://www.charite.de/klinikum/themen_klinikum/themenschwerpunkt_coronavirus/#c30751057 (Eingangskontrollen)
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-12-10 (website) vvv
+#: last_checked: 2022-04-09 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -3024,7 +3024,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: also_indoor: traffic (H,G)
 #: osm_watch: way id="362719487" version="6"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2022-01-15
+#: last_checked: 2022-04-09
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 ',
@@ -3881,7 +3881,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)?
 #: add_fragezeichen: Haben die Bauarbeiten bereits begonnen? Ist der Uferweg bereits gesperrt?
-#: last_checked: 2022-02-12
+#: last_checked: 2022-04-09
 #: check_frequency: 60d
 #: next_check: 2024-02-12
 #: osm_watch: way id="4410535" version="21"
@@ -3890,7 +3890,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1643583600,
          'id' => 3507,
          'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1172556.php',
-         'text' => 'Spreeuferweg: Bauarbeiten, zwischen Flotowstr. und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand 12.2.2022: Weg ist passierbar)',
+         'text' => 'Spreeuferweg: Bauarbeiten, zwischen Flotowstr. und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Anfang April 2022: Weg ist zumindest in Höhe Lessingbrücke nicht passierbar)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4034,15 +4034,16 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an? Wo genau gilt die Einbahnstraßenregelung?
 #: also_indoor: traffic (G)
 #: priority: #B
-#: last_checked: 2022-03-05
+#: last_checked: 2022-04-09
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2022-04-20
 	q4::inwork; 7259,14870 7209,14927 7182,14986
+	q4::inwork; 6945,15045 7007,14911 7000,14832
 # REMOVED (hier vermutlich nicht?) ---	q4::inwork; 7182,14986 7178,14996 7131,15109
 ',
          'from' => undef,
          'id' => 3523,
-         'text' => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden',
+         'text' => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, außerdem Einbahnstraße in der Samoastr., offen Richtung Norden',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4132,7 +4133,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
 #: also_indoor: traffic (B)
-#: last_checked: 2022-03-31
+#: last_checked: 2022-04-09
 	q4::inwork 11273,12301 11355,12331
 ',
          'from' => undef,
