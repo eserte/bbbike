@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.76;
+$VERSION = 1.77;
 
 use vars qw(%images);
 
@@ -176,6 +176,16 @@ sub register {
 	    { name => "LGB Brandenburg Topo DTK10",
 	      callback => sub { showmap_mapcompare(@_, maps => 'lgb-topo-10') },
 	      callback_3_std => sub { showmap_url_mapcompare(@_, maps => 'lgb-topo-10') },
+	      ($images{BRB} ? (icon => $images{BRB}) : ()),
+	    };
+	$main::info_plugins{__PACKAGE__ . "_LSB"} =
+	    { name => "LS Brandenburg Verkehrsmengen",
+	      (module_exists('Geo::Proj4')
+	       ? (callback => sub { showmap_bbviewer(@_, layers => [520], subpage => 'strassennetz') },
+		  callback_3_std => sub { showmap_url_bbviewer(@_, layers => [520], subpage => 'strassennetz') },
+		 )
+	       : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
+	      ),
 	      ($images{BRB} ? (icon => $images{BRB}) : ()),
 	    };
 	$main::info_plugins{__PACKAGE__ . '_VIZ'} =
@@ -1599,6 +1609,32 @@ sub showmap_viz {
     my $url = showmap_url_viz(%args);
     start_browser($url);
 }
+
+######################################################################
+# bb-viewer (BrandenburgViewer, STRASSENNETZVIEWER)
+
+sub showmap_url_bbviewer {
+    my(%args) = @_;
+    my $bglayer = $args{bglayer} // 1;
+    my $layers  = $args{layers};
+    my $subpage = $args{subpage};
+    my $rooturl = "https://bb-viewer.geobasis-bb.de/" . ($subpage ? "$subpage/" : "");
+    require Geo::Proj4;
+    my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs") # see https://epsg.io/25833
+	or die Geo::Proj4->error;
+    my($x,$y) = $proj4->forward($args{py}, $args{px});
+    my $scale = 7 - log(($args{mapscale_scale})/12000)/log(2);
+    $scale = 15 if $scale > 15;
+    my $layers_param = $layers ? "&" . join("&", map { "layers=$_" } @$layers) : "";
+    sprintf "$rooturl?projection=EPSG:25833&center=%d,%d&zoom=%d&bglayer=%d" . $layers_param, $x, $y, $scale, $bglayer;
+}
+
+sub showmap_bbviewer {
+    my(%args) = @_;
+    my $url = showmap_url_bbviewer(%args);
+    start_browser($url);
+}
+
 ######################################################################
 
 sub show_links_to_all_maps {
