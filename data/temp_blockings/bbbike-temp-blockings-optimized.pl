@@ -2963,7 +2963,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
 #: last_checked: 2021-12-13
-#: check_frequency: 120d
+# REMOVED --- #: check_frequency: 120d
+#: check_frequency: 130d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
 ',
@@ -4006,7 +4007,10 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maßmannstr.
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-03-12
+#: last_checked: 2022-04-10 (indoor)
+# REMOVED --- #: check_frequency: 30d
+#: check_frequency: 10d
+#: next_check: 2022-05-24
 	q3::inwork 5020,6434 5269,6305
 ',
          'from' => undef,

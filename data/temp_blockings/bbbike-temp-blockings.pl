@@ -19340,7 +19340,7 @@ EOF
 #: by: https://viz.berlin.de/2021/07/verkehrsvorschau-120721/
 #: note: offiziell gemeinsamer Rad- und Gehweg, aber der Gehweg ist so schmal, dass es bei q4 bleibt
 #: note: laut rbb bis 16.8.2021
-# REMOVED (nur noch kürzere Engstelle mit Vorrang vor Gegenvekehr, allerdings dort verpflichtender Rad- und Gehweg) --- #: XXX zurzeit (2021-07-26 ist die Baustelle etwa 120m lang) --- #: last_checked: 2021-08-08 --- #: check_frequency: 2d
+# REMOVED (nur noch kürzere Engstelle mit Vorrang vor Gegenverkehr, allerdings dort verpflichtender Rad- und Gehweg) --- #: XXX zurzeit (2021-07-26 ist die Baustelle etwa 120m lang) --- #: last_checked: 2021-08-08 --- #: check_frequency: 2d
 	q4::inwork; 13651,11731 13895,11663
 # REMOVED (hier nicht mehr)	q4::inwork; 13895,11663 13954,11647
 EOF
@@ -26869,7 +26869,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_104863_LMS-BR_72
-	q4::inwork 3069,11551 2924,11309
+	q4::inwork 3069,11551 2986,11413 2921,11311
 EOF
      },
      { from  => 1504389600, # 2017-09-03 00:00
@@ -31779,7 +31779,7 @@ EOF
      },
      { from  => 1602655200, # 2020-10-14 08:00
        until => 1602785821, # 1605196800, # 2020-11-12 17:00
-       text  => 'Rudower Chaussee: zwischen Franz-Ehrlich-Str. und Adlergestell Richtung Dörpfeldstr. Bauarbeiten, Umleitung für Fuß- und Radvekehr, vom 15.10.2020 08:00 Uhr bis 12.11.2020 17:00 Uhr ',
+       text  => 'Rudower Chaussee: zwischen Franz-Ehrlich-Str. und Adlergestell Richtung Dörpfeldstr. Bauarbeiten, Umleitung für Fuß- und Radverkehr, vom 15.10.2020 08:00 Uhr bis 12.11.2020 17:00 Uhr ',
        type  => 'gesperrt',
        source_id => '2147346457',
        data  => <<EOF,
@@ -31940,7 +31940,8 @@ EOF
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
 #: last_checked: 2021-12-13
-#: check_frequency: 120d
+# REMOVED --- #: check_frequency: 120d
+#: check_frequency: 130d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
 EOF
@@ -34678,7 +34679,10 @@ EOF
 #: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maßmannstr.
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-03-12
+#: last_checked: 2022-04-10 (indoor)
+# REMOVED --- #: check_frequency: 30d
+#: check_frequency: 10d
+#: next_check: 2022-05-24
 	q3::inwork 5020,6434 5269,6305
 EOF
      },

@@ -2767,12 +2767,12 @@ Straße 56 (Heinersdorf)	N 12429,17685 12587,17603
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3835 (Vorlange zur Kenntnisnahme)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2014 (Widerspruch)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_12_0713_0788_online.pdf (Wirksamkeit der Umbenennung)
-#: XXX laut osm mittlerweile umbenannt
+#: XXX laut osm mittlerweile umbenannt, aber es hängen noch keine Schilder (siehe Mapillary)
 #: add_fragezeichen: Wurde die Straße 16 mittlerweile umbenannt?
 #: osm_watch: way id="45904921" version="13"
-#: last_checked: 2022-03-14 (mapillary)
-#: check_frequency: 120d
-#: next_check: 2022-03-17
+#: last_checked: 2022-04-09 (mapillary)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2022-03-17
 Straße 16 (Heinersdorf)	N 13031,17775 13034,17895
 (Straße 16 - Eigerstr.)	NN 13034,17895 12995,17873 12945,17958
 # 
@@ -4070,7 +4070,7 @@ Wundtstr.	N 2249,11082 2222,11104
 (Wundtstr. - Horstweg)	NN 2910,11697 2869,11690
 Nehringstr.	N 2953,11830 2924,12047 2899,12200 2895,12217 2888,12292
 Kuno-Fischer-Str.	N 2621,11065 2679,10931 2766,10750
-Lietzenseeufer	N 2621,11065 2621,11190 2748,11206 2806,11241 2871,11211
+Lietzenseeufer	N 2621,11065 2621,11190 2748,11206 2806,11241 2864,11214
 Friedbergstr.	NN 2766,10750 2793,10752
 Friedbergstr.	N 2793,10752 3012,10812 3204,10895
 Königin-Elisabeth-Str.	H 2095,11440 2082,11554 2058,11756 2047,11873 1999,12207 1969,12375
@@ -10815,7 +10815,7 @@ Riemeisterstr.	N 88,5136 144,5102 197,5036 294,4916 346,4833 374,4779 418,4696 5
 Ladenstr.	N 374,4779 169,4676
 Hertastr. (Zehlendorf)	N 1015,3858 949,4055
 Witzlebenstr.	H 2981,10892 2921,10928
-Witzlebenstr.	N 2921,10928 2880,10996 2854,11085 2871,11211 2924,11309 3069,11551
+Witzlebenstr.	N 2921,10928 2880,10996 2854,11085 2864,11214 2902,11281 2921,11311 2986,11413 3069,11551
 Gervinusstr.	N 3093,10594 3395,10704
 Gervinusstr.	H 3395,10704 3567,10771 3603,10765
 # REMOVED (existiert nicht (mehr?)) --- Gervinusstr.	H 3603,10765 3623,10800
@@ -13629,7 +13629,7 @@ An den Eldenaer Höfen	N 14509,12819 14536,12916
 An den Eldenaer Höfen	N 14588,12901 14560,12808
 (Parkweg)	NN 14690,12900 14419,12978
 Hildegardstr.	N 5399,8344 5372,8357 5177,8356 5053,8355 4958,8355 4874,8354 4788,8354
-Steifensandstr.	N 2924,11309 3054,11240
+Steifensandstr.	N 2921,11311 3054,11240
 Pestalozzistr. (Charlottenburg)	N 3054,11240 3252,11237 3368,11237 3479,11238 3721,11230
 Pestalozzistr. (Charlottenburg)	NN 3721,11230 3770,11231 3822,11231
 Pestalozzistr. (Charlottenburg)	N 3822,11231 3981,11232 4101,11233 4176,11235 4302,11232 4434,11227 4546,11217 4729,11206 4775,11203
@@ -13642,7 +13642,7 @@ Rönnestr.	N 2698,10645 2774,10663 3041,10732 3295,10831
 (Stuttgarter Platz/zur Rönnestr.)	N 3295,10831 3291,10853
 (Stuttgarter Platz/zur Leonhardtstr.)	N 3291,10853 3340,10888
 Leonhardtstr.	N 3033,10980 3204,10895 3241,10877 3291,10853
-Witzlebenplatz	N 2924,11309 2850,11386 2764,11500 2764,11519
+Witzlebenplatz	N 2921,11311 2850,11386 2764,11500 2764,11519
 Boltonstr.	N -457,14536 -390,14476 -245,14333
 Großer Spreering	N -1020,14084 -1002,14162 -792,14258 -650,14355 -495,14311 -447,14338 -415,14392 -390,14476
 Motardstr.	NH -260,14210 -224,14184 -113,14206 217,14181 386,14162 984,14086

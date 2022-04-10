@@ -732,14 +732,10 @@ teilweise mit Leitboys geschützt	RW4; 14208,12235 14280,12223 14381,12205 14427,
 	RW2; 14488,12188 14523,12183
 teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129
 #: note ^^^
-#: next_check_id: FRANKFURTER-2021
-#: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig
-#: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv)
-#: last_checked: 2022-04-03
-# REMOVED --- #: check_frequency: 7d
-# REMOVED --- #: next_check: 2022-04-30
-#: next_check: 2022-04-06
-	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
+# REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
+#: XXX wird hier auch eine Radspur entstehen?
+#: last_checked: 2022-04-10
+	RW2; 14926,12129 14994,12121 15117,12106 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
 asphaltiert	RW2; 13785,12292 13543,12326
@@ -5838,7 +5834,8 @@ asphaltiert	RW1;RW1 8179,18756 8066,18754 7886,18742
 	RW6;RW6 -4958,9433 -5004,9460 -5050,9387 -5135,9272
 	RW6;RW6 -4713,9589 -4702,9404
 	RW6;RW6 -4713,9589 -4720,9822
-	RW6;RW6 2850,11386 2924,11309
+	RW6;RW6 2850,11386 2921,11311
+	RW6;RW6 2986,11413 2921,11311 2902,11281
 10km/h	RW6;RW6 15810,17512 15802,17446 15537,17484 15264,17438
 	RW1;RW1 14832,17867 14785,17896 14754,18054
 	RW6;RW6 14124,17730 14101,17817 14047,17894 13958,17966 13830,17990 13740,17977 13640,17921 13586,17830 13582,17738 13614,17650

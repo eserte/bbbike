@@ -543,9 +543,9 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.berliner-woche.de/mitte/c-bauen/drei-bauvorhaben-beginnen-jetzt_a335114
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/brunnenviertel-ev-will-baumfaellungen-stoppen_a336818
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2022-02-28 (mapillary)
+#: last_checked: 2022-03-19 (mapillary)
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-04-15
+# REMOVED --- #: next_check: 2022-04-15
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
 Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
@@ -1816,7 +1816,7 @@ Am Rosengarten: Parkweg	Q1 14909,9649 14867,9573 14837,9517 14809,9466
 Lichtensteinallee: wassergebundene Decke	Q1 6378,11553 6289,11440
 Storkwinkel: Kopfsteinpflaster	Q2 2489,9784 2473,9861
 Witzlebenplatz: Kopfsteinpflaster, OK	Q1- 2764,11519 2764,11500 2850,11386
-Witzlebenplatz: Asphalt	Q0 2850,11386 2924,11309
+Witzlebenplatz: Asphalt	Q0 2850,11386 2921,11311
 Friedbergstr.: Kopfsteinpflaster, OK	Q1- 2766,10750 2793,10752 3012,10812 3204,10895
 Am Berlin Museum: Asphalt	Q0 10032,10752 9829,10830
 # REMOVED --- #: next_check_id: SPREERADWEGEINSTEINUFER-2014 --- #: XXX Bauarbeiten, wie sieht es danach aus? -> asphaltiert! --- #: XXX wird der Spreeradweg ab Charlottenburger Brücke hier entlanggeführt? --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140911.1355.399203.html --- #: last_checked: 2017-07-11 --- #: check_frequency: 14d
@@ -12511,6 +12511,8 @@ Schmausstr.: Asphalt	Q0 23242,6308 23353,6384
 Schmausstr.: Asphalt mit einigen leichten Schäden	Q0- 23353,6384 23489,6463 23577,6504
 Hans-Otto-Str. [Wohnblockstraße]: Kopfsteinpflaster	Q2 12659,14149 12705,14116
 Hans-Otto-Str. [Wohnblockstraße]: unebenes Kopfsteinpflaster	Q2- 12705,14116 12684,14081 12726,14036 12776,14024 12826,14087 12737,14156 12705,14116
+#: note: 3x und nur relevant in Fahrtrichtung Südwesten
+Witzlebenstr.: Asphalt mit einigen Aufpflasterungen	Q0-; 2986,11413 2921,11311
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

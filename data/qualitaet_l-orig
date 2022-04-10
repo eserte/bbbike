@@ -2180,8 +2180,10 @@ Mittelstr. (Blumberg): Betonsteinpflaster	Q1- 24746,22198 24701,22290 24685,2232
 Grünstr. (Blumberg): Betonsteinpflaster	Q1- 24772,22125 24666,22052
 Spittelweg (Blumberg): Betonsteinpflaster	Q1- 24829,22061 24944,22130
 Blumberg - Krummensee: schlechtes Kopfsteinpflaster	Q3 25239,21918 25407,22008
-#: add_fragezeichen: Wie ist die Qualität im östlichen Abschnitt, auch schlechtes Kopfsteinpflaster?
-Blumberg - Krummensee: schlechtes Kopfsteinpflaster	Q3 25407,22008 25897,22058 27458,21831 29124,21709 29271,21673 29562,21771
+# REMOVED --- #: add_fragezeichen: Wie ist die Qualität im östlichen Abschnitt, auch schlechtes Kopfsteinpflaster?
+Blumberg - Krummensee: schlechtes Kopfsteinpflaster	Q3 25407,22008 25897,22058 27458,21831 29124,21709 29271,21673
+#: by: mapillary, osm
+Blumberg - Krummensee: unbefestigte Straße	Q2- 29271,21673 29562,21771
 Asphalt	Q0 29195,21058 29275,21185 29383,21333 29408,21348
 #: note: früher schlechtes Kopfsteinpflaster, Q3
 Asphalt	Q0 29408,21348 29587,21414
