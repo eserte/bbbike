@@ -319,12 +319,13 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: osm_watch: way id="4597320" version="19"
 #: osm_watch: way id="43350531" version="11"
 #: source_id: 2147343824 (bis 30.6.2021)
-#: source_id: viz2021:13.379936,52.514077,04.03.2019,08:00 (bis 30.6.2021)
+#: source_id: viz2021:13.379936,52.514077,04.03.2019,08:00 (bis 30.6.2021) (inaktiv)
+#: source_id: viz2021:13.379568,52.514769,14.04.2022,07:00 (angrenzende Behrenstr., bis 27.5.2022)
 #: add_fragezeichen: Sind die Bauarbeiten hier beendet?
 #: XXX nach den Bauarbeiten vermutlich nur für Radfahrer, Fußgänger und MIV-Anlieger frei
 #: last_checked: 2022-03-29
-#: check_frequency: 45d
-# REMOVED --- #: next_check: 2021-06-30
+# REMOVED --- #: check_frequency: 45d
+#: next_check: 2022-05-27
 # REMOVED --- #: valid: 20191218-20210531
 Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit für Radfahrer verboten	q4::inwork 8737,12098 8783,11959
 # 

@@ -1953,30 +1953,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
-#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
-#: note: Termine im Frühjahr 2022: 23.3., 13.4., 20.4., 27.4.
-#: source_id: 2147341022
-#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
-#: priority: #A
-#: next_check: 2022-04-13
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -1925,6790 -2080,6897
-	2::temp -1925,6790 -1851,6887
-',
-         'from' => 1649714400,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 13. April 2022 ab ca. 09:15 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1649837700
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -2426,11 +2403,11 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="26"
+#: osm_watch: way id="8655276" version="27"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-03-01 (osm)
+#: last_checked: 2022-04-12 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -3037,19 +3014,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.536634,52.420965,13.01.2021,07:00 (mittlerweile bis 14.4.2022)
-#: also_indoor: traffic (G,H,B)
-#: osm_watch: way id="683770241" version="6"
-	q4::inwork 19564,1871 19743,1804
-',
-         'from' => 1610431200,
-         'id' => 3322,
-         'source_id' => '2147346788',
-         'text' => 'Rudower Str.: Fahrbahn zwischen Köpenicker Str. und Lehmfeldsteig wegen Bauarbeiten gesperrt, vom 13.01.2021 07:00 Uhr bis 14.04.2022 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1649948400
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022) (mittlerweile: 06.04.2022) (mittlerweile: bis 19.05.2022)
@@ -4136,8 +4101,10 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
+#: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022)
 #: also_indoor: traffic (B)
 #: last_checked: 2022-04-09
+#: next_check: 2022-05-13
 	q4::inwork 11273,12301 11355,12331
 ',
          'from' => undef,
@@ -4159,19 +4126,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1654786800
        },
-       {
-         'data' => '#: note: laut rbb
-#: by: https://nitter.net/VIZ_Berlin/status/1510845115371196423
-#: by: https://nitter.net/pic/media%2FFPQYYPyX0CoHC1A.jpg%3Fname%3Dorig
-#: also_indoor: traffic (G,H)
-	q2::inwork 17900,6072 17728,5756
-',
-         'from' => 1649101432,
-         'id' => 3534,
-         'text' => 'Brückenstr.: zwischen Michael-Brückner-Str. und Treskowbrücke Sperrung der Fahrbahn wegen Gleisbauarbeiten, Radfahrer werden über den Gehweg geleitet, bis 14.04.2022',
-         'type' => 'handicap',
-         'until' => 1649973600
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Bis wann gehen die Bauarbeiten? Ist der Kroppenstedtweg danach komplett asphaltiert?
 #: next_check: 2022-08-01
@@ -4186,6 +4141,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: XXX sind Radfahrer in beiden Richtungen betroffen?
+#: by: https://nitter.net/VIZ_Berlin/status/1513397936151044099#m
+#: by: https://nitter.net/pic/media%2FFP1LIs8XMAENMUm.jpg%3Fname%3Dorig
 #: next_check: 2022-04-11
 	q4::inwork 15560,7400 15693,7512
 ',

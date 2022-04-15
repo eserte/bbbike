@@ -1683,6 +1683,9 @@ Weidenhof	1 10994,-4472 10998,-4391
 #: note: explizit für Radfahrer verboten
 B189	2 -92822,74184 -93082,74166 -93764,74187 -94063,74154 -94600,73988 -94721,73963 -94950,73927
 # 
+Prenzlau, Bahnhofsvorplatz	1 39907,102441 39949,102431
+Prenzlau, Bahnhofsvorplatz	1 39918,102499 39966,102492 39949,102431 39946,102422 39904,102425
+# 
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -1755,7 +1758,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 Lindenallee	1s:q3 1429,11528 1403,11428
 #: by: ^^^
 #: add_fragezeichen ^^^
-Gramzow (Dorfstr.?)	1s:q1 49779,90206 49810,90444
+Gramzow	1s:q3 49779,90206 49810,90444
 Alt-Tegel	1s:q3 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s:q3 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
 May-Ayim-Ufer	1s:q1 13206,10651 13077,10747
@@ -3803,7 +3806,7 @@ Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3
 # 
 #: XXX wann wird der Weg wiederhergestellt, wenn überhaupt?
 #: by: https://www.deutsches-architekturforum.de/thread/9401-wasserstadt-stralau-kleine-und-gr%C3%B6%C3%9Fere-projekte/?postID=653296#post653296 (Bauarbeiten bis Ende September 2021)
-#: osm_watch: way id="541556560" version="2"
+#: osm_watch: way id="541556560" version="3"
 #: last_checked: 2022-04-02
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-09-30
@@ -4535,7 +4538,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 # 
 #: XXX temporär oder dauerhaft gesperrt? vvv
 #: osm_watch: way id="4615233" version="9"
-#: last_checked: 2022-04-06 vvv
+#: last_checked: 2022-04-15 vvv
 #: check_frequency: 180d vvv
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006

@@ -17,6 +17,14 @@ Prenzlau	OS 41817,103329
 Prenzlau	OS 36972,100027
 Prenzlau	OS 37020,101115
 Prenzlau	OS 41979,103529
+Prenzlau	OS 40388,104944
+# 
+Blindow	OS 41018,106054
+Blindow	OS 41602,106953
+# 
+Dauer	OS 42792,109569
+#: by: osm
+Dauer	OS 42914,110352
 # 
 #: by: mapillary vvv
 Dedelow	OS 34971,106202
@@ -73,6 +81,11 @@ Carmzow	OS 51901,109234
 #: linked: Hedwigshof|(bei Carmzow) vvv
 Hedwigshof	OS 54144,109576
 Hedwigshof	OS 54565,109426
+#: linked ^^^
+# 
+#: linked: Hammelstall|(Brüssow) vvv
+Hammelstall	OS 57059,109199
+Hammelstall	OS 56643,108988
 #: linked ^^^
 # 
 Moor|(Brüssow)	OS 55318,109732
@@ -223,7 +236,8 @@ Klockow	OS 49412,111409
 Klockow	OS 48941,110668
 Klockow	OS 49754,110705
 # 
-Dauerthal	OS 46963,107308
+Dauerthal	OS 46976,107303
+Dauerthal	OS 46634,107416
 # 
 #: linked: Schenkenberg|(bei Prenzlau) vvv
 Schenkenberg	OS 45784,107451
@@ -244,8 +258,21 @@ Karlshof	OS 47461,110852
 #: linked ^^^
 # 
 Göritz	OS 43232,111943
+#: by: osm
+Göritz	OS 42970,111554
+#: by: osm
+Göritz	OS 43187,112522
+# 
+#: linked: Malchow|(bei Göritz) vvv
+#: by: osm
+Malchow	OS 43451,112997
+#: by: osm
+Malchow	OS 43732,113523
+#: linked ^^^
 # 
 Ziemkendorf	OS 49759,102325
+Ziemkendorf	OS 50828,102083
+Ziemkendorf	OS 50790,102606
 # 
 Grenz	OS 51097,104264
 Grenz	OS 51728,104218
@@ -519,12 +546,13 @@ Gramzow	OS 49935,89343
 Gramzow	OS 50578,90756
 Gramzow	OS 52338,90735
 Gramzow	OS 52363,90636
+Gramzow	OS 53731,92133
 # 
 Hohengüstow	OS 49543,92938
 Hohengüstow	OHT 48794,91837
 Hohengüstow	OS 48059,93344
-#: by: mapillary
-Hohengüstow	OS 48399,92808
+Hohengüstow	OS 48402,92801
+Hohengüstow	OS 48342,93424
 # 
 Weselitz	OS 47682,95741
 Weselitz	OS 46976,95231
@@ -550,6 +578,7 @@ Wollin	OHT 53631,97972
 #: linked ^^^
 # 
 Kleinow|(Falkenwalde)	OS 50138,96960
+Kleinow|(Falkenwalde)	OS 50781,96778
 # 
 #: linked: Falkenwalde|(Uckermark) vvv
 Falkenwalde	OS 49927,96921
@@ -1343,6 +1372,7 @@ Niederfinow	OS 43609,49473
 #: linked: Trampe|bei Grünberg vvv
 Trampe	OS 57345,107207
 Trampe	OS 57498,107334
+Trampe	OS 57768,107954
 #: linked ^^^
 # 
 Trampe	OS 39350,42740
@@ -1486,9 +1516,9 @@ Ahrensfelde	OS 21971,18836
 # 
 Drense	OS 47340,101150
 Drense	OS 47709,101591
+Drense	OS 48485,101810
 # 
-#: XXX abgeschätzter Punkt
-Grünow	OS 45080,101325
+Grünow	OS 45031,101287
 Grünow	OS 46326,102203
 Grünow	OS 46228,102142
 Grünow	OS 46018,102470

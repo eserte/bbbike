@@ -7,6 +7,12 @@
 # 
 #: temporary vvv
 # 
+#: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00
+#: last_checked: 2022-04-11
+#: next_check: 2022-07-30
+#: valid: -20220730
+Mollstr./Büschingstr.	F::inwork 11913,13077
+# 
 #: XXX Ampel hängt mit den Bauarbeiten am Forschungsgebäude Si-M zusammen
 #: osm_watch: way id="870502434" version="2"
 #: last_checked: 2022-04-09
@@ -90,6 +96,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8161
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (Erwähnung des Zebrastreifens, 2022 unwahrscheinlich)
+#: source_id: viz2021:13.217617,52.61126,19.04.2022,08:00
 #: XXX Ampel Am Dachsbau/Schulzendorfer Str. vermutlich nur eine temporäre Lösung wegen der Bauarbeiten in der Hennigsdorfer Str., später wird hier wohl ein Zebrastreifen entstehen
 #: osm_watch: node id="5469708920" version="1"
 #: last_checked: 2021-03-18 (parlamentarische Anfrage)
@@ -98,6 +105,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/anregungen-der-eltern-endlich-verwirklicht_a207979
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1194601.php (Bauarbeiten für den Kreisverkehr)
 #: by: https://berliner-abendblatt.de/2022/04/08/umbau-fuer-kreisverkehr-kreuzung-wird-voll-gesperrt/
+#: by: https://www.berliner-woche.de/heiligensee/c-verkehr/kreuzungsbereich-wegen-asphaltarbeiten-gesperrt_a342023
 #: XXX später wird hier ein Kreisverkehr entstehen
 #: last_checked: 2021-09-04
 #: check_frequency: 180d
@@ -3496,7 +3504,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296478" version="1"
 #: note: Anforderungsampel
-#: last_checked: 2022-03-20 (krickstadt)
+#: last_checked: 2022-04-10 (bahninfo-forum)
 #: check_frequency: 90d
 	F::inwork 17695,5394
 #: XXX wie lange bleibt die provisorische Ampel?
@@ -4218,6 +4226,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 11616,30519
 	X 68240,74219
 	X 68682,74325
 	X 68933,74089
+#: note: Anforderungsampel
 	F 69031,73974
 unbeschrankter Bahnübergang	B0 57683,14751
 unbeschrankter Bahnübergang	B0 56520,16826
@@ -4358,6 +4367,9 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 27454,-12435
 	B -59520,59145
 	B -67724,-66871
+# 
+#: note: Anforderungsampel für die B109 überquerende Radfahrer
+	X 40361,104822
 # 
 #: note: ^^^
 ################################################################################

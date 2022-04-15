@@ -15067,7 +15067,7 @@ EOF
        text  => 'B 109 Prenzlau - Pasewalk OD Göritz bis LG MVP Deckensanierung Vollsperrung 20.07.2009-30.08.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 44142,114926 43702,113455 43362,112836 43271,112666 43031,112230
+	2::inwork 44142,114926 43732,113523 43451,112997 43362,112836 43271,112666 43187,112522 43031,112230
 EOF
      },
      { from  => 1247608800, # 2009-07-15 00:00
@@ -18120,12 +18120,14 @@ EOF
        until => $isodate2epoch->("2021-09-06 04:00:00"), # bis in die Nacht hinein
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 5, start => "2020-06-08T00:00:00"]], # kann auch erst im September stattfinden
+       recurrence_prewarn_days => 2,
        source_id => 'http://www.erkner.de/271.html?date=20190415',
        text  => 'Erkner: Heimatfest, 3.9.2021 bis 5.9.2021',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.laubinger.de/event/28-heimatfest-erkner/ (Absage 2020)
 #: by: https://www.laubinger.de/event/28-heimatfest-erkner/?date=20210415 (2021)
+#: by: https://www.erkner.de/erkner-kompakt/heimatfest/ (geplant vom 20. bis 22. Mai 2022)
 	2::temp 34421,1950 34359,2165 34250,2546
 EOF
      },
@@ -21884,7 +21886,7 @@ EOF
        text  => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2019 bis 05.05.2019)', # früher: Lichtenrader Maientanz
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 4, start => "2021-05-06T00:00:00"]],
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 7,
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (ja) --- #: XXX wird die Veranstaltung noch abgesagt? --- #: next_check: 2020-04-23
@@ -29277,11 +29279,11 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="26"
+#: osm_watch: way id="8655276" version="27"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-03-01 (osm)
+#: last_checked: 2022-04-12 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -34827,8 +34829,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
+#: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022)
 #: also_indoor: traffic (B)
 #: last_checked: 2022-04-09
+#: next_check: 2022-05-13
 	q4::inwork 11273,12301 11355,12331
 EOF
      },
@@ -34874,6 +34878,8 @@ EOF
        source_id => 'viz2021:13.479739,52.472118,11.04.2022,09:00',
        data  => <<EOF,
 #: XXX sind Radfahrer in beiden Richtungen betroffen?
+#: by: https://nitter.net/VIZ_Berlin/status/1513397936151044099#m
+#: by: https://nitter.net/pic/media%2FFP1LIs8XMAENMUm.jpg%3Fname%3Dorig
 #: next_check: 2022-04-11
 	q4::inwork 15560,7400 15693,7512
 EOF

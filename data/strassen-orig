@@ -335,6 +335,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11130 (Anfrage)
 #: by: https://berliner-abendblatt.de/2022/03/31/senat-plant-neues-konzept-fuer-autofreie-friedrichstrasse/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/senatorin-kuendigt-neues-konzept-fuer-friedrichstrassen-kiez-an_a341216
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/senat-will-neues-konzept-fuer-einen-autofreien-kiez-rund-um-die-friedrichstrasse-vorlegen_a342098
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: last_checked: 2022-03-29
@@ -15697,7 +15698,7 @@ Togostr.	N 5531,16734 5315,16936
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9450
 #: by: https://www.deutschlandfunkkultur.de/widerstand-gegen-manga-bell-platz-wie-in-berlin-um-einen.976.de.html?dram:article_id=455728
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10895 (Forderung: alte Straﬂenschilder erneuern)
-#: osm_watch: way id="333607502" version="8"
+#: osm_watch: way id="333607502" version="9"
 #: also_indoor: search Manga-Bell-Platz
 #: last_checked: 2022-02-12
 #: check_frequency: 90d
@@ -15708,7 +15709,7 @@ Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,168
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_02_0441_0548_online.pdf (Widerspruch)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9450
 #: add_fragezeichen: Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgef¸hrt? H‰ngen schon die neuen Straﬂenschilder?
-#: osm_watch: way id="5199719" version="15"
+#: osm_watch: way id="5199719" version="17"
 #: also_indoor: search Maji-Maji-Allee
 #: last_checked: 2022-02-12
 #: check_frequency: 90d
@@ -17013,11 +17014,12 @@ Emmichstr.	N 7282,2386 7370,2400 7424,2400 7559,2385 7648,2356
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-28464.pdf
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksamt/protokolle/2021/2021-10-05_maerckerweg-umbebennen_top-10.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_04_0173_0236_online.pdf (Straﬂenumbenennung zum 29. April 2022)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_15_0917_0976_online.pdf (Widerspruch)
 #: XXX geplante Umbenennung in Maria-Rimkus-Weg; im DPAG-Mitteilungsblatt 03/2022 ist die Umbenennung aufgelistet
 #: also_indoor: search Maria-Rimkus-Weg
-#: last_checked: 2021-10-05 (BA-Beschluss)
-# REMOVED --- #: check_frequency: 180d
-#: next_check: 2022-04-29
+#: last_checked: 2022-04-04 (Amtsblatt)
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2022-04-29
 Maerckerweg	N 7559,2385 7602,2522
 #: note: relativ stark befahren, evtl. NH? (Aber keine Vorfahrtstraﬂe)
 Eiswaldtstr.	N 6718,2443 6834,2449 6965,2418 7051,2366 7172,2343 7282,2386

@@ -692,7 +692,7 @@ Ausschilderung nach Luisenthal (?) folgen	CS; 41134,76881 41143,76365
 ausgeschildert Richtung Campingplatz Warnitz	CP; 40652,83924 40702,84070 40703,84157 40753,84220 40736,84265 40768,84393
 ausgeschildert Richtung Werneuchen, Wegendorf	CP2; 32325,18434 32338,18762
 ausgeschildert Richtung Drense	CP2; 47330,101147 47340,101150
-ausgeschildert Richtung Grünow	CP2; 45050,101273 45080,101325
+ausgeschildert Richtung Grünow	CP2; 45029,101282 45031,101287
 ausgeschildert nach Charlottenhof	CP2; -14500,-2012 -14536,-1943
 ausgeschildert mit Tafel "Windfeld Randowhöhe" und "Wolliner Weg"	CP2; 52527,98581 52471,98189
 ausgeschildert zum Sportplatz	CP2; 13535,10184 13371,9974
@@ -1437,6 +1437,8 @@ ausgeschildert Marienfelder Anger	CP2; 3647,299 3607,283
 # 
 ausgeschildert nach Grenz	CP2; 51391,106540 51178,106442
 # 
+ausgeschildert nach Cremzow	CP2; 51128,104358 50931,104373
+# 
 nicht ausgeschildert, hinter dem Netto links abbiegen	CP; 5429,19165 5476,19450 5398,19463
 nicht ausgeschildert, vor dem Netto links abbiegen	CP; 5495,19571 5486,19515 5476,19450 5398,19463
 # 
@@ -1638,6 +1640,12 @@ Schulstr.: Privatstraße, "Durchfahrt verboten"	CP2; 20599,11938 20636,11931
 ausgeschildert "Vereinsheim Neuköllnische Wiesen"	CP2; 14976,8053 14968,8046
 # 
 Am Johannistisch: nicht ausgeschildert	CP2; 10029,9989 10111,9942
+# 
+Dauer - Schenkenberg: nicht ausgeschildert	CP2; 42779,109523 44444,109014
+# 
+Cremzow - Carmzow: nicht ausgeschildert	CP2; 51293,106693 51301,106780
+# 
+Kirchstr. (Gramzow): nicht ausgeschildert	CS 49655,90469 49651,90395 49640,90243
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)

@@ -919,7 +919,6 @@ Sperberstr. (wo beginnt die Rosenstr.)	? 1377,33855 1282,33870
 # added from landstrassen2
 Neukünkendorf - Crussow (ist der mittlere Abschnitt nur ein Feldweg?)	? 53408,65212 53784,65420 54441,66028 54955,66376
 (Ueckermünde Ost) (tatsächlich für Autos freigegeben?)	? 53734,149122 53840,149419
-Kirchstr. (Gramzow) (Stimmt der Straßenname?)	? 49640,90243 49651,90395 49655,90469
 Kamp - Bugewitz (Qualität?)	? 37530,160248 37642,160110 37706,159810 37564,159556 37568,159198 37632,159105 37647,158986 37601,158858 37332,158131 36619,157250 36304,156988 35784,156808
 Feldweg bei Elsdorf (scheint nur ein Feldweg zu sein)	? -85546,-71546 -85443,-71112
 Coswig - Seegrehna (Qualität?)	? -53612,-61306 -53317,-62077 -52160,-62556 -52119,-62259 -51765,-62321 -51099,-62190 -50711,-61903 -50057,-62146 -49781,-61999 -49703,-62114 -49464,-62088 -48133,-62759 -48091,-62657 -47958,-62654 -47556,-62599 -47473,-62694 -47419,-62718 -46673,-62964 -46343,-63228 -46092,-64191 -45973,-64354 -45905,-64734 -45937,-64869
@@ -950,12 +949,8 @@ Karlshof - Schönfeld: Kopfsteinplaster (ist hier auch asphaltiert?)	? 47493,1112
 Schönwerder - B198: zweispuriger Plattenweg (ist der Abschnitt nach Schönwerder mittlerweile asphaltiert?)	? 39192,107687 38970,107400 38860,107132 38580,106837 38516,106706 38525,106532 38034,105319
 Schönwerder - B198: zweispuriger Plattenweg (ist der Abschnitt nach Schönwerder mittlerweile asphaltiert?)	? 37760,104661 37559,103631 37410,103257
 Am Havelblick (Potsdam): Kopfsteinpflaster (ist das Kopfsteinpflaster mäßig oder eher schlecht?)	? -12492,-2555 -12442,-2389 -12623,-2367
-Randow - Lützlow: Feldweg, Schotter (nur das nördliche Ende gesehen, weiter südlich wahrscheinlich Plattenweg)	? 53971,92780 53361,93046 53126,92961 52699,93129
 Hammer: teilweise schlechtes Kopfsteinpflaster, Sandbanketten (ist hier mittlerweile asphaltiert?)	? 12243,52862 12212,52762 11994,52768 11747,52381
 Trebbin: Kopfsteinpflaster, OK (Hier sind Bauarbeiten in Gange, danach kein Kopfsteinpflaster mehr?)	? -1614,-21103 -1902,-21499 -1969,-21492
-Bietikow - Grünow: mäßige Betonplatten (Wurden die Betonplattenabschnitte durch asphaltierte Abschnitte ersetzt?)	? 45868,100193 45847,100277
-Bietikow - Grünow: asphaltiert (Wurden die Betonplattenabschnitte durch asphaltierte Abschnitte ersetzt?)	? 45847,100277 45806,100487 45648,100789
-Bietikow - Grünow: mäßige Betonplatten (Wurden die Betonplattenabschnitte durch asphaltierte Abschnitte ersetzt?)	? 45648,100789 45543,101043
 Langenberg - Bansin: Asphalt (tatsächlich Asphalt oder nur ein Waldweg?)	? 55234,177013 55335,176921 55531,176625 55452,176481 55620,176402 55724,176149 55759,176100
 Kachlin - Dargen: guter Asphalt mit einigen schadhaften Stellen (nur gesehen, nicht befahren)	? 52553,166779 52425,166396
 Brandenburgische Str. (Hennigsdorf): Asphalt (ist hier tatsächlich auch asphaltiert?)	? -4359,26315 -4048,26914
@@ -1011,6 +1006,7 @@ Leistenhaus - Neugrimnitz: Schotterweg (Ist hier durchgängig ein Schotterweg?)	?
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt
 Schranke, umständlich zu umfahren (existiert die Schranke noch?)	? 19608,-1953
+Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger (Bis wann gehen die Bauarbeiten?)	? 18892,3256 18689,3465
 Poller (wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?)	? -1889,37093
 # added from comments_cyclepath
 Verbundsteinpflaster, teilweise schadhaft (Wurzelschäden) (Wird die Qualität des Radwegs nach den Bauarbeiten besser sein?)	? 43162,14428 42996,14793
@@ -1039,6 +1035,7 @@ L25 (Prenzlau - Güstow): straßenbegleitender Radweg entsteht (Gibt es zwischen P
 (Mausohrweg - R1): Qualität des Geh- und Radweg? Ist der Weg beleichtet? (Ist der Weg asphaltiert und beleuchtet?)	? 33296,2894 33267,2810 33255,2762
 # added from bbbike-temp-blockings-optimized
 Gardeschützenweg: Fahrbahn am Hindenburgdamm gesperrt, vom 31.05.2021 bis 30.09.2022 (Sind die Bauarbeiten bereits beendet?)	? 4515,4760 4214,4595
+Abbestr.: Bauarbeiten, Fahrbahn zwischen Guerickestr. und Fraunhoferstr. kann gesperrt sein, ggfs. auf Bürgersteig ausweichen, Ende der Bauarbeiten unbekannt (Wann sind die Bauarbeiten beendet?)	? 4674,12076 4698,12124
 Seydlitzstr.: südlich der Dessauerstr. Bauarbeiten, Bauzäune können den Zugang versperren, Ende der Sperrung unbekannt (Wann wird die Sperrung aufgehoben?)	? 6511,2284 6459,2364
 Am Vierrutenberg: Bauarbeiten zwischen Zehntwerderweg und Benekendorffstr., evtl. wird die Fahrbahn nicht benutzbar sein, bis voraussichtlich Mitte Mai 2022 (Sind die Bauarbeiten beendet?)	? 5793,23422 5893,23287
 Jahnstr. und Priesterweg: Bauarbeiten, Fahrbahn kann gesperrt sein, Ende der Bauarbeiten unbekannt (Sind die Bauarbeiten bereits beendet?)	? 13355,6235 13227,6209 13220,6237
