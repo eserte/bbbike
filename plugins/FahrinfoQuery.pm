@@ -649,7 +649,7 @@ sub _check_download_url () {
 	    my $content_length_in_megabytes = $content_length / (1024**2);
 	    my $diff = abs($content_length_in_megabytes - $openvbb_download_size_in_megabytes);
 	    if ($diff > 1) {
-		die "Expected Content-Length does not match real ($content_length_in_megabytes vs. $openvbb_download_size_in_megabytes)";
+		die "Expected Content-Length does not match real ($content_length_in_megabytes vs. $openvbb_download_size_in_megabytes).\nFetched URL: $openvbb_data_url\nComplete response headers:\n" . $resp->dump;
 	    }
 	    print STDERR "All checks OK.\n";
 	}
