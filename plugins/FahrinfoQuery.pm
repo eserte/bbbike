@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.36';
+$VERSION = '0.37';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -61,9 +61,9 @@ my $bbbike_root = bbbike_root;
 
 ######################################################################
 # configurable
-my $openvbb_download_size = '60MB';
-my $openvbb_year = 2021;
-my $openvbb_index = 3;
+my $openvbb_download_size = '71MB';
+my $openvbb_year = 2022;
+my $openvbb_index = 1;
 my $openvbb_data_url = 'https://www.vbb.de/fileadmin/user_upload/VBB/Dokumente/API-Datensaetze/gtfs-mastscharf/GTFS.zip';
 ######################################################################
 
