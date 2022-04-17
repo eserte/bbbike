@@ -413,6 +413,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geˆffnet	
 	2::night 21150,11925 21134,11913 21132,11943 21100,11960 20857,12027 20810,12031
 	2::night 20857,12027 20835,11810 20831,11771 20825,11732 20764,11675
 	2::night 20779,11801 20804,11797 20818,11812 20835,11810
+	2::night 20807,12083 20857,12027
 #: tempex ^^^
 ',
          'from' => undef,
@@ -1304,7 +1305,32 @@ Am Schloss Schˆnhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.907823.php (f‰llt 2020 aus)
+#: by: https://www.winzerfest-koepenick.de/?date=20220317 (geplant f¸r 22.04. bis zum 24.04.2022)
+# REMOVED --- #: tempex: 20170421T1400-20170423 vvv
+	2::temp 22138,4642 22111,4562 22093,4499
+	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
+	2::temp 22111,4562 22162,4546 22214,4548
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1650542400,
+         'id' => 2419,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              21,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'http://www.winzerfest-kˆpenick.de/',
+         'text' => 'Kˆpenicker Winzerfr¸hling: Altstadt Kˆpenick, Luisenhain, Schlossinsel, Behinderungen mˆglich, 22.4.2022 bis 24.4.2022',
+         'type' => 'gesperrt',
+         'until' => 1650837599
+       },
        undef,
        undef,
        undef,
@@ -1953,7 +1979,30 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (n‰chste Termine 2021: 3.11., 10.11., 17.11., 24.11)
+#: note: Termine im Fr¸hjahr 2022: 23.3., 13.4., 20.4., 27.4.
+#: source_id: 2147341022
+#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
+#: priority: #A
+#: next_check: 2022-04-20
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -1925,6790 -2080,6897
+	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1650319200,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. April 2022 ab ca. 09:15 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1650442500
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -2461,11 +2510,11 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'data' => '#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022)
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
-#: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
+#: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022
 #: also_indoor: traffic (H,B,G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2022-03-30 (traffic)
-#: check_frequency: 30d
+#: last_checked: 2022-04-13 (mapillary)
+#: check_frequency: 45d
 #: next_check: 2022-11-30
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
@@ -2634,7 +2683,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am ˆstlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-04-09
+#: last_checked: 2022-04-12 (mapillary)
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 ',
@@ -2683,7 +2732,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-04-09
+#: last_checked: 2022-04-16
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3342,7 +3391,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nˆldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nˆldnerstr. (Fahrbahn ist aufgerissen), evtl. auch f¸r Fuﬂg‰nger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man kˆnnte sein Rad r¸bertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-04-02
+#: last_checked: 2022-04-16
 #: check_frequency: 30d
 #: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -3775,8 +3824,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: last_checked: 2022-02-05 vvv
 #: check_frequency: 150d vvv
 	q2::inwork 3011,3303 2781,3122 2698,3068 2655,3025 2632,2969 2625,2850
-#: note: L‰nge der Sperrung nur 30m
-	q3::inwork 3507,3654 3375,3559
+# REMOVED (hier vermutlich nicht mehr, by mapillary) --- #: note: L‰nge der Sperrung nur 30m ---	q3::inwork 3507,3654 3375,3559
 	q4::inwork 2655,3025 2594,3009
 	q4::inwork 2632,2969 2594,3009
 #: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022) vvv
@@ -4087,7 +4135,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch f¸r Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: STRALAUER-2019
 #: note: explizites Verbot f¸r Radfahrer auf der Stralauer Allee Richtung S¸dosten
-#: last_checked: 2022-04-08
+#: last_checked: 2022-04-16
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -4103,7 +4151,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch f¸r Radfahrer	q3::inwork 3
          'data' => '#: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
 #: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraﬂe, bis 13.5.2022)
 #: also_indoor: traffic (B)
-#: last_checked: 2022-04-09
+#: last_checked: 2022-04-12 (mapillary)
 #: next_check: 2022-05-13
 	q4::inwork 11273,12301 11355,12331
 ',

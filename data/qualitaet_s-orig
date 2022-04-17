@@ -902,7 +902,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="16"
-#: last_checked: 2022-03-15 (mapillary)
+#: last_checked: 2022-04-12 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -1026,7 +1026,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-04-09
+#: last_checked: 2022-04-16
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -8868,7 +8868,7 @@ Straße 74: Asphalt	Q0- 12583,22428 12696,22455 12821,22437 12855,22431 13136,223
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: wosch
 #: XXX eventuell wird der Asphalt noch glatter gemacht
-#: last_checked: 2022-03-28 (daf)
+#: last_checked: 2022-04-13 (mapillary)
 #: check_frequency: 60d
 Königsteinbrücke: welliger Asphalt	Q1 13136,22397 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378 13394,22373
 Straße 86: Asphalt	Q0 13805,22935 13726,22860
@@ -12387,8 +12387,9 @@ Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q0- 13870,9872 
 #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/anreise-zum-spreepark-soll-mit-schiffen-und-mehr-bussen-erfolgen_a315294 (Fahrbahn soll wasserdurchlässige Deckschicht bekommen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_50_4625_4696_online.pdf (Absichtserklärung zu einer Straßenlandeinziehung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_02_0049_0116_online.pdf (Teileinziehung)
+#: osm_watch: way id="24202434" version="24"
 #: XXX Wann wird der Asphalt ersetzt? Wann wird die Straße nur für Anlieger/Radfahrer frei sein?
-#: last_checked: 2022-03-13
+#: last_checked: 2022-04-12 (osm note)
 # REMOVED --- #: check_frequency: 180d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
@@ -12514,6 +12515,8 @@ Hans-Otto-Str. [Wohnblockstraße]: Kopfsteinpflaster	Q2 12659,14149 12705,14116
 Hans-Otto-Str. [Wohnblockstraße]: unebenes Kopfsteinpflaster	Q2- 12705,14116 12684,14081 12726,14036 12776,14024 12826,14087 12737,14156 12705,14116
 #: note: 3x und nur relevant in Fahrtrichtung Südwesten
 Witzlebenstr.: Asphalt mit einigen Aufpflasterungen	Q0-; 2986,11413 2921,11311
+(Nordpromenade, entlang der S-Bahn): Asphalt	Q0 20640,12095 20807,12083
+Park Biesdorf: wassergebundene Decke	Q1- 20807,12083 20857,12027
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -15779,7 +15782,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9810 (Anfrage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9889 (Anfrage)
 #: also_indoor: search Lemkestraße
-#: last_checked: 2022-01-16 (mapillary) (im südlichen Abschnitt sind schon Bauarbeiten)
+#: last_checked: 2022-04-10 (mapillary) (im südlichen Abschnitt sind schon Bauarbeiten)
 #: check_frequency: 150d
 # REMOVED --- #: next_check: 2021-07-30
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553 25191,12343 25149,12266 25109,12196

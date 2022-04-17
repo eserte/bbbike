@@ -424,13 +424,14 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (zwischen Moritzplatz und Alte Jakobstraße Verbreiterung auf 2,50m und Asphaltierung)
-#: by: http://www.infravelo.de/projekt/oranienstrasse-nordseite-bauabschnitt-1/ (zwischen Stallschreiberstr. und Alte Jakobstr., bis 4. Quartal 2020) (alter Eintrag)
-#: by: http://www.infravelo.de/projekt/oranienstrasse-nordseite-bauabschnitt-1-2/ (2. Quartal 2020 - 4. Quartal 2021)
+#: by: http://www.infravelo.de/projekt/oranienstrasse-nordseite-bauabschnitt-1/ (zwischen Stallschreiberstr. und Alte Jakobstr., bis 4. Quartal 2020) (alter Eintrag) (mittlerweile wieder aktiv) (2. Quartal 2020 - 2. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/oranienstrasse-nordseite-bauabschnitt-1-2/ (2. Quartal 2020 - 4. Quartal 2021) (mittlerweile wieder inaktiv)
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
 #: last_checked: 2022-04-07 vvv
 #: check_frequency: 60d vvv
+#: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056
@@ -443,6 +444,7 @@ für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,1097
 # REMOVED --- #: XXX wegen Bauarbeiten (Erweiterung AUFBAU) ist der Radweg hier aufgehoben (danach den alten Eintrag wieder herstellen + join machen) --- #: last_checked: 2014-11-21 --- #: check_frequency: 60d
 eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10779,10934 10794,10927 10839,10907
 mäßiger Verbundsteinpflasterradweg	RW1; 10839,10907 10794,10927
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: by ^^^
@@ -707,7 +709,7 @@ für Radfahrer freigegebene Busspur gilt immer	RW1; 8567,11799 8553,11638 8553,11
 #: source_id: 2147345481
 #: source_id: 2147345753
 #: source_id: viz2021:13.408836,52.517143,22.04.2020,15:00 (Bauarbeiten bis 30.6.2023)
-#: last_checked: 2022-04-07 vvv
+#: last_checked: 2022-04-12 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
@@ -740,11 +742,13 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
 asphaltiert	RW2; 13785,12292 13543,12326
 	RW10; 13543,12326 13448,12340
-asphaltiert	RW2; 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
+asphaltiert	RW2; 13448,12340 13163,12382 12936,12420 12878,12430 12828,12437 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 #: note: Karl-Marx-Allee Richtung Osten ab Strausberger Platz
-asphaltiert	RW2; 12114,12546 12134,12540 12352,12509 12592,12472 12603,12470 12878,12430
+asphaltiert	RW2; 12114,12546 12134,12540 12352,12509 12592,12472 12603,12470 12828,12437
+ein Fahrstreifen, mit Betonbordsteinen von der restlichen Fahrbahn getrennt	RW4; 12828,12437 12878,12430
+	RW4; 12878,12430 12936,12420
 #: note: leicht wellig nach den frischen Asphaltierungsarbeiten
-neu asphaltiert, ca. 2,3m breit	RW2; 12878,12430 13163,12382 13448,12340 13543,12326
+neu asphaltiert, ca. 2,3m breit	RW2; 12936,12420 13163,12382 13448,12340 13543,12326
 #: note: erste leichtere Schäden (Hebungen) fangen schon an
 neu asphaltiert, ca. 2,3m breit	RW2; 13543,12326 13785,12292
 # 
@@ -980,7 +984,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,26.04.2022,15:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-04-08 vvv
+#: last_checked: 2022-04-16 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169
@@ -1988,7 +1992,8 @@ alter Asphalt	RW1; 1191,3997 1159,3915 1139,3876 1159,3915
 alter Asphalt, kein Abstand zu parkenden Autos	RW1; 1159,3915 1191,3997 1221,4071 1240,4126 1283,4260 1297,4311 1304,4334
 	RW1; 1304,4334 1370,4547 1411,4654
 welliger Asphalt	RW1; 1139,3876 1070,3741 971,3534
-welliger Asphalt für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 971,3534 935,3430 932,3422 856,3188 820,3081
+welliger Asphalt, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 971,3534 935,3430
+welliger Asphalt	RW1; 935,3430 932,3422 856,3188 820,3081
 welliger Asphalt	RW1; 820,3081 856,3188 932,3422 935,3430 971,3534 1070,3741 1139,3876
 	RW4;RW3 9811,16112 10005,16150 10045,16157 10301,16186
 	RW3;RW3 10301,16186 10421,16175 10603,16158 10739,16146
@@ -2245,7 +2250,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2022-03-18 (mapillary)
+#: last_checked: 2022-04-08 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -2925,10 +2930,9 @@ Radweg endet etwa 60 Meter vor der Kreuzung	RW1; 6651,4843 6827,4810 6846,4808
 # REMOVED (Hinweis von Jörg Feler) ---	RW;RW0 6385,4896 6353,4895 6288,4906 6215,4926 6191,4923 6184,4924 6055,4950
 	RW1; 4348,2627 4317,2638 4233,2675 4170,2727
 	RW1; 4170,2727 4224,2671 4313,2630 4348,2627
-für Radfahrer freigegebene Busspur gilt Mo-Fr 12-18 Uhr	RW1; 4348,2627 4392,2628 4526,2648 4702,2676
-für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 4702,2676 4750,2667 4943,2557 4968,2543 5060,2490 5229,2395 5256,2379
-	RW1; 5256,2379 5229,2395
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-10 Uhr	RW1; 5229,2395 5060,2490 4968,2543 4943,2557 4750,2667 4702,2676 4526,2648 4392,2628
+für Radfahrer freigegebene Busspur gilt Mo-Fr 12-18 Uhr	RW1; 4348,2627 4392,2628 4526,2648 4702,2676 4750,2667 4943,2557 4968,2543 5060,2490 5191,2416
+	RW1; 5191,2416 5229,2395 5256,2379 5229,2395
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-10 Uhr	RW1; 5229,2395 5191,2416 5060,2490 4968,2543 4943,2557 4750,2667 4702,2676 4526,2648 4392,2628
 	RW1; 4392,2628 4348,2627
 	RW1;RW1 5256,2379 5317,2345
 Gehweg für Radfahrer frei	RW1; 5191,2350 5212,2360 5256,2379
@@ -3055,7 +3059,7 @@ Busspur gilt immer	RW5; 17151,11801 17121,11806 17028,11821 16962,11833 16803,11
 #: source_id: viz2021:13.561129,52.508807,19.04.2022,07:00 (Deckenschlussarbeiten, bis 14.5.2022)
 #: XXX Grünbeschichtung geplant
 #: priority: #D
-#: last_checked: 2022-02-12 (mapillary)
+#: last_checked: 2022-04-15 (mapillary)
 #: next_check: 2022-05-14
 die ersten und letzten Meter werden auf dem Gehweg geführt	RW3; 21108,11628 20764,11675 20571,11698
 teilweise gemeinsamer, teilweise getrennter Rad- und Gehweg	RW2; 20540,11660 20633,11651 20838,11631 20963,11618 21108,11628
@@ -4470,6 +4474,7 @@ Gehweg für Radfahrer frei	RW1; 9073,20606 9027,20603 8904,20596
 #: by: https://abendblatt-berlin.de/2020/09/27/berlin-koepenick-teurer-radweg-ohne-radler/
 #: by: https://api.fixmyberlin.de/api/projects/428
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/pop-up-radweg-bleibt-erhalten_a297530
+#: by: https://www.bahninfo-forum.de/read.php?9,651938,730544#msg-730544 (Verlängerung bis zur Minna-Todenhagen-Brücke, noch 2022?)
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="19"
 #: last_checked: 2022-03-13
@@ -6899,7 +6904,7 @@ Grünmarkierung	RW4; 12407,14470 12522,14385
 #: by: https://twitter.com/VIZ_Berlin/status/1402152820439138307
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-24-06-2020.pdf (Erwähnung)
 #: XXX hier wird vermutlich auch eine Grünmarkierung entstehen
-#: last_checked: 2022-03-24 (mapillary) vvv
+#: last_checked: 2022-04-12 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-31 vvv
 #: osm_watch: way id="335479077" version="15"
@@ -7166,7 +7171,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
 #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
-#: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021)
+#: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021) (mittlerweile: 1. Quartal 2022 - 2. Quartal 2022)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: by: https://berliner-abendblatt.de/2021/12/18/pop-up-radwege-bleiben-dauerhaft/
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191261.php (Verstetigung bis Ende April 2022)
@@ -7427,7 +7432,7 @@ Tempo 10	RW6;RW6 14468,11203 14442,11101
 Tempo 10	RW6;RW6 14531,11142 14513,11075
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-03-19 vvv
+#: last_checked: 2022-04-12 (mapillary) vvv
 #: next_check: 2024-06-01 vvv
 	RW2; 10830,12279 10831,12371
 	RW4; 10831,12371 10804,12461

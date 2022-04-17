@@ -379,8 +379,8 @@ Berliner Allee -> Falkenberger Str.: Straßenbahntrasse	3::igndisp 14608,16772 14
 Falkenberger Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14723,16686 14622,16674 14624,16659
 Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14558,16907 14608,16772 14700,16790
 Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14622,16674
-Bahnübergang nur für Fußgänger/Radfahrer	3 20620,12108 20624,12133 20627,12162
-Bahnübergang nur für Fußgänger/Radfahrer	3 20627,12162 20624,12133 20620,12108
+Bahnübergang nur für Fußgänger/Radfahrer	3 20619,12098 20624,12133 20627,12162
+Bahnübergang nur für Fußgänger/Radfahrer	3 20627,12162 20624,12133 20619,12098
 Straßenbahntrasse	3nocross::ignrte 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
 Zossener Str. -> Klausdorfer Str.: Straßenbahntrasse	3::igndisp 23080,15700 23218,15671 23243,15820
 Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23243,15820 23218,15671 23411,15632
@@ -851,7 +851,7 @@ Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3::igndisp 12211,16688 1
 Mittelstreifen	3nocross::ignrte 12114,12546 12134,12540 12352,12509
 Karl-Marx-Allee -> Krautstr./Blumenstr.: Mittelstreifen	3::igndisp 12352,12509 12134,12540 12125,12490
 Krautstr./Blumenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12125,12490 12134,12540 12114,12546
-Mittelstreifen	3nocross::ignrte 12352,12509 12592,12472 12603,12470 12878,12430
+Mittelstreifen	3nocross::ignrte 12352,12509 12592,12472 12603,12470 12828,12437 12878,12430
 Karl-Marx-Allee -> Koppenstr.: Mittelstreifen	3::igndisp 12603,12470 12592,12472 12573,12227
 Karl-Marx-Allee -> Koppenstr.: Mittelstreifen	3::igndisp 12352,12509 12592,12472 12632,12630
 Koppenstr. -> Karl-Marx-Allee: Mittelstreifen	3::igndisp 12632,12630 12592,12472 12603,12470

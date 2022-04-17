@@ -11,8 +11,60 @@
 # Beachte: hier werden next_check_id-Einträge ohne
 # next_check/last_checked-Einträgen gemacht.
 # 
+################################################################################
+# Temporäre Staus
+# 
+#: temporary vvv
+# 
+#: next_check_id: BERLINERALLEE-2022
+#: by: https://viz.berlin.de/2022/04/berliner-allee/ (11. April 2022 - 25. Juli 2022, verschiedene Bauphasen)
+#: by: https://viz.berlin.de/wp-content/uploads/BA1.jpg
+#: by: https://viz.berlin.de/wp-content/uploads/BA2.jpg
+#: by: https://viz.berlin.de/wp-content/uploads/BA3.jpg
+#: by: https://viz.berlin.de/wp-content/uploads/BA4.jpg
+#: by: https://viz.berlin.de/wp-content/uploads/BA5.jpg
+#: by: https://viz.berlin.de/wp-content/uploads/Anwohnerflyer_Berliner_Allee.pdf
+#: XXX Einzelne Straßenanbindungen werden abgesperrt (Wegenerstr., Rennbahnstr.), außerdem wird direktes Linksabbiegen an einigen Stellen nicht möglich sein. Wie wird sich das auf Radfahrer auswirken?
+#: last_checked: 2022-04-12 (mapillary) vvv
+#: next_check: 2022-05-08 vvv
+#: valid: -20220725 vvv
+# REMOVED (gesamter Bereich) --- Berliner Allee und Rennbahnstr.: Gleisarbeiten	? 14346,16241 14499,16341 14556,16391 14610,16522 14619,16551 14624,16659 14622,16674 14608,16772 14558,16907 14528,16910 14341,17030
+Berliner Allee: Gleisbauarbeiten	Jam; 14056,16120 14248,16202 14346,16241 14499,16341 14556,16391 14610,16522 14619,16551
+Berliner Allee: Gleisbauarbeiten	Jam; 14619,16551 14610,16522 14556,16391 14499,16341 14346,16241 14248,16202 14056,16120
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+# 
+#: next_check_id: KARLMARXSTR-2018
+#: last_checked: 2021-12-13
+#: check_frequency: 180d
+#: next_check: 2022-07-31
+Karl-Marx-Str.	Jam; 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390
+Karl-Marx-Str.	Jam; 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
+# 
+#: next_check_id: FRANZOESISCHE-2018 vvv
+#: source_id: 2147343056 (bis 30.06.2021) vvv
+#: last_checked: 2022-02-12 (morgens zumindest Richtung Osten) vvv
+#: check_frequency: 90d vvv
+#: next_check: 2022-09-30 vvv
+#: valid: -20220930 vvv
+Behrenstr.	Jam; 8861,12125 9054,12154 9064,12156 9164,12172
+Behrenstr.	Jam; 9164,12172 9064,12156 9054,12154 8861,12125
+#: valid ^^^
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: source_id ^^^
+#: next_check_id ^^^
+# 
 # REMOVED (hat sich mittlerweile etwas entschärft) --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12502-tempelhof-treptower-park-baumschulenweg/#con-14537 (Dauer des SEVs) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kein-zugverkehr-richtung-tempelhof-und-treptow_a278500 --- #: XXX Stau möglicherweise verschärft durch den SEV für die Ringbahn --- #: last_checked: 2020-06-25 vvv --- #: next_check: 2020-07-27 vvv --- Saalestr.	Jam; 13762,7321 13794,7333 13887,7416 13952,7497 13980,7548 14015,7631 --- Saalestr.	Jam; 14015,7631 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321 --- #: next_check ^^^ --- #: last_checked ^^^
+# REMOVED (vermutlich nur am 14.4.2022 wegen der Sperrung der A100 schlimm gewesen) --- #: by: https://sbahn.berlin/fahren/bauen-stoerung/detail/17776-neubau-der-bruecke-niemetzstrasse-errichtung-einer-laermschutzwand/#con-24180 --- #: by: https://nitter.net/VIZ_Berlin/status/1514525684873502723 --- #: also_indoor: traffic --- #: next_check: 2022-04-19 vvv --- #: valid: -20220419 vvv --- Saalestr.: Staugefahr (SEV, Baustellenampel an der Niemetzstr.)	Jam; 13051,7157 13161,7173 13325,7210 13495,7249 13648,7284 13762,7321 13794,7333 13887,7416 13952,7497 13980,7548 14015,7631 --- Saalestr.: Staugefahr (SEV, Baustellenampel an der Niemetzstr.)	Jam; 14015,7631 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321 13648,7284 13495,7249 13325,7210 13161,7173 13051,7157 --- #: valid ^^^ --- #: next_check ^^^
+# 
 # REMOVED (Radweg in Bau) --- #: note: gesehen: 2014-10-15 19:00 (Werktag, S/DB-Bahnstreik) --- #: note: gesehen: 2016-03-27 16:30 (Werktag, keine sonstigen Besonderheiten) --- #: XXX_indoor: oder gibt es auch in den Morgenstunden hier Staus? --- #: tempex: rush_hour_evening --- Möckernstr.	Jam; 8810,10305 8808,10290 8790,10157 8784,9972 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
+# 
+#: temporary ^^^
+# 
+################################################################################
 # 
 #: tempex: T06-T22 vvv
 Leipziger Str. (Richtung Westen)	Jam; 9569,11631 9444,11616 9268,11590 9058,11564
@@ -76,13 +128,6 @@ Ruschestr.	Jam; 15947,12626 15928,12483 15904,12340
 # REMOVED --- Karl-Marx-Str.	Jam; 12753,8187 12714,8249
 # REMOVED --- Karl-Marx-Str.	Jam; 12714,8249 12689,8289 12639,8344 12598,8390
 # 
-#: next_check_id: KARLMARXSTR-2018
-#: last_checked: 2021-12-13
-#: check_frequency: 180d
-#: next_check: 2022-07-31
-Karl-Marx-Str.	Jam; 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390
-Karl-Marx-Str.	Jam; 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
-# 
 #: note: mittlere Staugefahr, besonders nachmittags
 Baumschulenstr./Späthstr.	Jam; 14744,5211 14808,5202 14988,5214 15038,5235 15174,5467 15363,5668 15382,5687
 #: note: stärkste Staugefahr, besonders nachmittags
@@ -119,21 +164,6 @@ Erkstr.	Jam; 12765,8435 12598,8390
 Flughafenstr.	Jam; 12349,8464 12494,8501
 # 
 # REMOVED (nicht mehr) --- #: next_check_id: FRIEDRICHSTR-2018 vvv --- Behrenstr.	Jam; 9373,12197 9496,12215 --- Behrenstr.	Jam; 9631,12227 9496,12215 9373,12197 --- Charlottenstr.	Jam; 9496,12215 9489,12263 9475,12365 --- Charlottenstr.	Jam; 9475,12365 9489,12263 9496,12215 --- #: next_check_id ^^^
-# 
-#: next_check_id: FRANZOESISCHE-2018 vvv
-#: source_id: 2147343056 (bis 30.06.2021) vvv
-#: last_checked: 2022-02-12 (morgens zumindest Richtung Osten) vvv
-#: check_frequency: 90d vvv
-#: next_check: 2022-09-30 vvv
-#: valid: -20220930 vvv
-Behrenstr.	Jam; 8861,12125 9054,12154 9064,12156 9164,12172
-Behrenstr.	Jam; 9164,12172 9064,12156 9054,12154 8861,12125
-#: valid ^^^
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: source_id ^^^
-#: next_check_id ^^^
 # 
 #: next_check_id: L33-2022 vvv
 L33	Jam; 23895,15904 23965,15894 23992,15894 25007,15650 25528,15587 25866,15543 25955,15531 26071,15470 26175,15461

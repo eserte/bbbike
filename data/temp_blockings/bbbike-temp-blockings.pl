@@ -386,7 +386,7 @@ EOF
      { from  => $isodate2epoch->("2019-04-30 12:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-01 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 5, start => "2021-05-02T00:00:00"]],
+       recurrences => [['yearly', days => 1, months => 5, start => "2022-05-02T00:00:00"]],
        recurrence_prewarn_days => 14,
        text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2019',
        type  => 'gesperrt',
@@ -921,7 +921,6 @@ EOF
        until => $isodate2epoch->("2019-09-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 8, start => "2021-10-25T00:00:00"]],
-       recurrence_prewarn_days => -13,
        text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (07.09.2019 bis 08.09.2019)',
        type  => 'gesperrt',
        source_id => 'http://www.hier-in-rudow.de/meilenfeste.html',
@@ -8284,7 +8283,7 @@ EOF
        until => $isodate2epoch->("2019-05-12 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5, start => "2021-05-13T00:00:00"]],
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 7,
        text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (11. und 12. Mai 2019)',
        type  => 'gesperrt',
        source_id => 'https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/',
@@ -8293,6 +8292,7 @@ EOF
 #: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html (geplant für 8. und 9. Mai 2021)
 #: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20210418 (abgesagt)
 #: by: https://www.laubinger.de/event/30-fest-auf-der-boelschestrasse/ (geplant für 7.05.2022 - 8.05.2022)
+#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20220416 (geplant für 7. und 8. Mai 2022)
 	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 EOF
      },
@@ -14642,7 +14642,6 @@ EOF
        until => $isodate2epoch->("2021-06-20 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 7,
        text  => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Alt-Köpenick, Schlossplatz, Schlossinsel, Luisenhain, Rosenstr., Schüßlerplatz, Laurenzstr., Jägerstr., Böttcherstr.); außerdem Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Bahnhofstr. (18.06.2021 - 20.06.2021)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -15779,6 +15778,7 @@ EOF
 	2::night 21150,11925 21134,11913 21132,11943 21100,11960 20857,12027 20810,12031
 	2::night 20857,12027 20835,11810 20831,11771 20825,11732 20764,11675
 	2::night 20779,11801 20804,11797 20818,11812 20835,11810
+	2::night 20807,12083 20857,12027
 #: tempex ^^^
 EOF
      },
@@ -17366,7 +17366,6 @@ EOF
        until => $isodate2epoch->("2021-12-12 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12, start => "2021-01-01T00:00:00"]], # findet 2020 vermutlich nicht statt
-       recurrence_prewarn_days => -1,
        text  => 'Alt-Köpenicker Weihnachtsmarkt vom 10.12.2021 bis zum 12.12.2021',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
@@ -17431,7 +17430,7 @@ EOF
        until => $isodate2epoch->("2021-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12, start => "2022-01-01T00:00:00"]], # 2021/2022 nur kleine Party, siehe unten
-       recurrence_prewarn_days => 2, # XXX Ausmaß der Sperrung 2020/2021 unklar, 2021/2022 ebenso
+       #recurrence_prewarn_days => 2, # XXX Ausmaß der Sperrung 2020/2021 unklar, 2021/2022 ebenso
        text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., ab 26.12.2020 bis 02.01.2021',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -18421,7 +18420,6 @@ EOF
        until => $isodate2epoch->("2019-06-30 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6, start => "2021-10-25T00:00:00"]],
-       recurrence_prewarn_days => -80,
        # früher Bergmannstraßenfest
        text  => 'Kreuzbergstr.: Veranstaltung (Kreuzbergstraßenfest), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (28. Juni 2019 bis 30. Juni 2019)',
        type  => 'gesperrt',
@@ -19519,7 +19517,7 @@ EOF
        until => $isodate2epoch->("2019-05-19 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 4, start => "2021-06-02T00:00:00"]],
-       recurrence_prewarn_days => 7,
+       recurrence_prewarn_days => 3,
        text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 26.04.2019 bis 19.05.2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
@@ -21704,12 +21702,11 @@ EOF
 	2::inwork -739,6838 -927,6888
 EOF
      },
-     { from  => $isodate2epoch->("2019-04-25 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-04-28 23:59:59"),
+     { from  => $isodate2epoch->("2022-04-21 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-04-24 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 21, months => 4, start => "2021-05-01T00:00:00"]], # keine Anzeichen dafür, dass der Winzerfrühling 2021 stattfinden könnte
-       recurrence_prewarn_days => 2,
-       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 26.4.2019 bis 28.4.2019',
+       recurrences => [['yearly', days => 21, months => 4]],
+       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 22.4.2022 bis 24.4.2022',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
@@ -21988,6 +21985,7 @@ EOF
        until => $isodate2epoch->("2019-05-20 04:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 17, months => 5, start => "2021-06-01T00:00:00"]], # auf 2021 verlegt --- auf 2020 verlegt
+       recurrence_prewarn_days => 7,
        text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 18.05.2019 bis 20.05.2019 früh',
        type  => 'handicap',
        source_id => 'IM_025248',
@@ -21995,6 +21993,7 @@ EOF
 #: by: http://www.die-classic-days-berlin.de/programm-2/
 #: by: https://www.berlin.de/events/2902692-2229501-classic-days-berlin.html (voraussichtlich 12.+13.6.2021)
 #: by: https://www.die-classic-days-berlin.de/programm-2/ (wird auf 2022 verschoben)
+#: by: https://www.die-classic-days-berlin.de/programm-2/?date=20220416 (geplant: 18. und 19. Juni 2022)
 #: note: kann im Juni oder Juli stattfinden
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
@@ -23310,7 +23309,7 @@ EOF
        until => $isodate2epoch->("2019-05-02 02:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4, start => "2021-05-03T00:00:00"]],
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 7,
        text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung des DGB), am 1. Mai 2019',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
@@ -23318,6 +23317,7 @@ EOF
 #: by: https://www.dgb.de/termine/++co++8f919aec-3095-11ea-93f3-52540088cada (2020 abgesagt)
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20210416 (Mai-Kundgebung auf dem Platz des 18. März vor dem Brandenburger Tor findet [2021] ... nicht statt)
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20220324 (unklar)
+#: by: https://berlin.dgb.de/++co++0f45cbd8-aeba-11ec-82e9-001a4a160123 (Kundgebung Platz des 18. März, 12 bis 14:30 Uhr)
 #: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
 	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 	2::inwork 8573,12325 8540,12420
@@ -26224,9 +26224,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2022-04-12 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-04-13 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 13. April 2022 ab ca. 09:15 Uhr',
+     { from  => $isodate2epoch->("2022-04-19 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-04-20 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. April 2022 ab ca. 09:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26241,7 +26241,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
 #: priority: #A
-#: next_check: 2022-04-13
+#: next_check: 2022-04-20
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
@@ -29531,11 +29531,11 @@ EOF
 #: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022)
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
-#: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021
+#: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022
 #: also_indoor: traffic (H,B,G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2022-03-30 (traffic)
-#: check_frequency: 30d
+#: last_checked: 2022-04-13 (mapillary)
+#: check_frequency: 45d
 #: next_check: 2022-11-30
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
@@ -30549,7 +30549,7 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-04-09
+#: last_checked: 2022-04-12 (mapillary)
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 EOF
@@ -30919,7 +30919,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-04-09
+#: last_checked: 2022-04-16
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31754,7 +31754,7 @@ EOF
 #: also_indoor: search Oberfeldstraße Bahnübergang
 # REMOVED --- #: osm_watch: way id="868347101" version="4"
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-03-31 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2021-07-01
-	2::inwork 20627,12162 20624,12133 20620,12108
+	2::inwork 20627,12162 20624,12133 20619,12098
 EOF
      },
      { from  => 1602147600, # 2020-10-08 11:00
@@ -33278,7 +33278,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-04-02
+#: last_checked: 2022-04-16
 #: check_frequency: 30d
 #: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -34414,8 +34414,7 @@ EOF
 #: last_checked: 2022-02-05 vvv
 #: check_frequency: 150d vvv
 	q2::inwork 3011,3303 2781,3122 2698,3068 2655,3025 2632,2969 2625,2850
-#: note: Länge der Sperrung nur 30m
-	q3::inwork 3507,3654 3375,3559
+# REMOVED (hier vermutlich nicht mehr, by mapillary) --- #: note: Länge der Sperrung nur 30m ---	q3::inwork 3507,3654 3375,3559
 	q4::inwork 2655,3025 2594,3009
 	q4::inwork 2632,2969 2594,3009
 #: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022) vvv
@@ -34817,7 +34816,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten
-#: last_checked: 2022-04-08
+#: last_checked: 2022-04-16
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -34831,7 +34830,7 @@ EOF
 #: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
 #: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022)
 #: also_indoor: traffic (B)
-#: last_checked: 2022-04-09
+#: last_checked: 2022-04-12 (mapillary)
 #: next_check: 2022-05-13
 	q4::inwork 11273,12301 11355,12331
 EOF

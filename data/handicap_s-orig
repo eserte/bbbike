@@ -261,7 +261,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-04-07
+#: last_checked: 2022-04-12 (mapillary)
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -315,6 +315,8 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/palais-am-brandenburger-tor-neubau-am-holocaust-mahnmal.177/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_11_0657_0712_online.pdf (Teileinziehung)
+#: by: https://nitter.net/VIZ_Berlin/status/1514464715438653441
+#: by: https://nitter.net/pic/media%2FFQObyYMXIAAzaOI.jpg%3Fname%3Dorig
 #: also_indoor: traffic (ex-H,ex-G,B)
 #: osm_watch: way id="4597320" version="19"
 #: osm_watch: way id="43350531" version="11"
@@ -598,7 +600,7 @@ Werner-Richard-Heymann-Platz: große Teile der Fahrbahn gesperrt, Bordsteine	q3 3
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundesallee-13-14-pariser-str.599/page-5#post-17417
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
-#: last_checked: 2022-03-20 (webcam)
+#: last_checked: 2022-04-13 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2022-10-01
 # REMOVED --- #: next_check: 2020-02-03
@@ -607,7 +609,7 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 # 
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
-#: last_checked: 2022-03-20 (webcam)
+#: last_checked: 2022-04-13 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwork 5461,9923 5423,9932 5382,9942
@@ -924,7 +926,7 @@ Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickes
 #: source_id: bvg2021:190#BVG291273_0 (kein Endedatum)
 # REMOVED --- #: source_id: bvg2021:190#BVG297363_0 (kein Endedatum)
 #: XXX Laut Baustellenschild der Wasserbetriebe bis April 2022
-#: last_checked: 2022-04-09 (indoor) vvv
+#: last_checked: 2022-04-16 (indoor) vvv
 #: check_frequency: 7d vvv
 #: next_check: 2022-04-30 vvv
 Kreuzung Grabensprung/Dohlengrund: Bauarbeiten, Fahrbahn gesperrt, umständliche Umwege, Bordsteine	q3::inwork 20725,10594 20716,10434 20713,10293
@@ -1414,7 +1416,7 @@ Am Rummelsburger See: Fußgänger, Grünanlage	q3 15253,10171 15199,10211 15134,102
 Am Rummelsburger See: Fußgänger, kurvenreich	q1 14892,10411 14864,10451 14861,10467 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15145,10636
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX nach den Bauarbeiten am "My Bay Way" wird der zweite Strang wohl wieder offen sein, dann wieder mit dem vorherigen Eintrag zusammenfügen
-#: last_checked: 2022-04-02
+#: last_checked: 2022-04-16
 #: check_frequency: 90d
 Am Rummelsburger See: Fußgänger, kurvenreich, Engstelle wegen Bauarbeiten	q2 15145,10636 15200,10600 15249,10564
 #: note: siehe auch permanenten temp-blockings-Eintrag (Radfahren verboten)
@@ -1832,8 +1834,13 @@ Münsterberger Weg: Pfad, Bordstein	q3 24029,11363 24172,11320
 #: XXX_prog BS an der Dorfstr., ansonsten entfernen
 Dorfstr. - Wuhletal: Bordstein	q2 22112,11936 22104,11925
 Unterführung Wuhletal: Fußgänger	q2 21970,12153 21972,12038 21936,12022
+# 
+#: note: Grünanlagenschild, laut Parkordnung ist das Radfahren auf ausgewiesenen Wegen erlaubt --- aber welche sind das? vvv
 Park Biesdorf: Fußgänger	q2 21150,11925 21134,11913 21132,11943 21100,11960 20857,12027 20810,12031
+Park Biesdorf: Fußgänger	q2 20807,12083 20857,12027
 Albert-Brodersen-Allee: Fußgänger	q2 20857,12027 20835,11810 20831,11771 20825,11732
+#: note ^^^
+# 
 # REMOVED (existiert nicht mehr) --- (Wuhlgartenweg - Ährenweg): einige Fußgänger, schmal	q2 21101,12132 21107,12186
 (Schulstr. - Braunsdorfstr.): sehr eng	q3 20413,11953 20396,11983
 (Am Schlachtensee - Altvaterstr., Unterführung): enge Unterführung	q3 -3192,3129 -3176,3081 -3170,3070
@@ -3367,6 +3374,8 @@ Mariannenplatz: einige Fußgänger, insbesondere vor dem Bethanienhaus	q2 11804,10
 (Schloßpark - Blankenburger Str.): für Radfahrer offiziell verboten, Bordstein, kurze Rampe	q4 10569,19395 10578,19417 10525,19592
 (Schnellerstr. - Uferstr.): Fußgänger, besonders zu Geschäftszeiten	q2 17628,5865 17678,5916
 (Schnellerstr. - Uferstr.): Parkplatzverkehr, besonders zu Geschäftszeiten	q1 17678,5916 17847,6089
+#: note: unklar: von Osten her ist Lieferverkehr frei, manchmal parken Autos vor dem Bürgeramt; von Westen sieht es wie ein Bürgersteig aus
+Schnellerstr.: einige Fußgänger	q2 17728,5756 17807,5730
 an den Gewächshäusern: kurvig	q2 17659,12823 17638,12813 17637,12785
 Hampstedtstr.: einige Fußgänger	q1 749,2616 816,2658
 (Oderstr. - Kirchhofweg): einige Fußgänger	q1 11565,7402 11602,7375 11656,7375 11677,7351 11687,7284
@@ -3762,7 +3771,7 @@ Herzfelder Steig: starke Steigung	q4; 31275,4224 31321,4226
 Herzfelder Steig: starkes Gefälle	q4; 31321,4226 31331,4248 31342,4254
 (Bahnüberführung S-Bhf. Biesdorf): Fußgänger	q3 20627,12162 20643,12141 20661,12140
 (Bahnüberführung S-Bhf. Biesdorf): Fußgänger	q4 20661,12140 20657,12101
-(Bahnüberführung S-Bhf. Biesdorf): Fußgänger	q3 20657,12101 20620,12108
+(Bahnüberführung S-Bhf. Biesdorf): Fußgänger	q3 20657,12101 20640,12095
 #: XXX_prog BS an der Galenstr., ansonsten q1
 (Galenstr. - Falkenseer Damm): einige Fußgänger, Bordstein	q3 -3499,14806 -3470,14836
 Vorfahrt Urban-Krankenhaus: Krankenhausgelände	q2 10627,9912 10695,9922 10783,9892 10893,9854
@@ -4020,6 +4029,8 @@ Lindenstr.: gegenläufiger Geh/Radweg	q3; 21605,5687 21706,5541 21789,5427
 (Zur Waage - Zur Innung): Grünanlage, einige Fußgänger	q3 14067,13050 14086,13090
 Baruther Str.: asphaltierte Kissen (2x)	q1 9837,9856 9723,9842
 Solmsstr.: asphaltierte Kissen (2x)	q1 9723,9842 9705,9732
+#: note: (noch) keine Ausschilderung
+(Nordpromenade, entlang der S-Bahn): einige Fußgänger	q2 20640,12095 20807,12083
 # 
 ######################### User Contributions #################################
 # 
@@ -4680,7 +4691,7 @@ Altenburger Str.: Fußgänger, Bordstein	q2 6651,1063 6631,968
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5783 (Schilder "Radfahren erlaubt. Fußgänger haben Vorrang.") vvv
 #: XXX wird das Radfahren hier explizit erlaubt werden? vvv
 #: osm_watch: way id="114381362" version="6"
-#: last_checked: 2021-05-30
+#: last_checked: 2022-04-13 (mapillary)
 #: check_frequency: 360d
 (Hildburghauser Str. - Lilienthalpark): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben, einige halbhohe Bordsteine	q2 6446,1033 6435,986 6446,950 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6223,823 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719
 #: XXX ^^^
