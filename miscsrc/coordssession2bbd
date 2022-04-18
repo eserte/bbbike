@@ -203,7 +203,7 @@ sub handle_data {
 		$name .= " " . join(" ", map {
 		    (my $short_key = $_) =~ s{^pref_}{};
 		    $short_key . ':' . $prefs->{$_};
-		} grep { length $prefs->{$_} } grep { $_ ne 'pref_seen' } keys %$prefs);
+		} grep { length $prefs->{$_} } grep { $_ ne 'pref_seen' } sort keys %$prefs);
 	    }
 	    print "$name\tX $coords\n";
 	}
