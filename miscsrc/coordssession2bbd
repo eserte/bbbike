@@ -170,6 +170,12 @@ sub handle_data {
 		return;
 	    }
 	}
+	if ($do_ignore_bots && $data->{'remote_ip'}) {
+	    if ($data->{'remote_ip'} eq '194.165.16.68') {
+		warn "  Ignoring bot (illegal, SQL)...\n" if $debug;
+		return;
+	    }
+	}
 	(my $coords = $data->{routestringrep}) =~ s{!}{ }g;
 	if ($do_cumulated || $do_cumulated_per_dir) {
 	    my @coords = split / /, $coords;
