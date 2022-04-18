@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2010,2012,2013,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2010,2012,2013,2018,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -23,6 +23,7 @@ my $do_start_goal;
 my $max;
 my $do_automax;
 my $do_allow_test;
+my $do_ignore_bots;
 my $debug;
 
 my $ignore_test_points;
@@ -70,10 +71,11 @@ GetOptions("cumulated!" => \$do_cumulated,
 	   "max=i" => \$max,
 	   "automax!" => \$do_automax,
 	   "allow-test!" => \$do_allow_test,
+	   "ignore-bots!" => \$do_ignore_bots,
 	   "debug!" => \$debug,
 	  )
     or die "usage: $0 [-cumulated | -cumulated-per-dir | -start-goal]
-	[-ignore-test-points] [-automax | -max ...] [-allow-test]
+	[-ignore-test-points] [-automax | -max ...] [-allow-test] [-ignore-bots]
         [-debug]
 	/path/to/coordssessiondir ...";
 
@@ -155,6 +157,16 @@ sub handle_data {
 	unless ($do_allow_test) {
 	    if (($data->{'user_agent'}||'') =~ m{BBBike-?Test/}) { # ignore test accesses
 		warn "  Ignoring test access...\n" if $debug;
+		return;
+	    }
+	}
+	if ($do_ignore_bots && $data->{'user_agent'}) {
+	    # Apple iMessage, see
+	    #   https://webmasters.stackexchange.com/questions/137914/spike-in-traffic-from-facebot-twitterbot-user-agent
+	    #   https://medium.com/@siggi/apples-imessage-impersonates-twitter-facebook-bots-when-scraping-cef85b2cbb7d
+	    # First appearance: Nov 2016. UA stable since this time (checked: Apr 2022).
+	    if ($data->{'user_agent'} eq 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.4 facebookexternalhit/1.1 Facebot Twitterbot/1.0') {
+		warn "  Ignoring bot (Apple iMessage)...\n" if $debug;
 		return;
 	    }
 	}
