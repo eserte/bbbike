@@ -171,7 +171,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: source_id: 2147347174 (bis 19.7.2021)
 #: source_id: viz2021:13.440334,52.59161,06.05.2021,09:00 (bis 30.9.2021, Gesamtmaßnahme bis Anfang 2022) (mittlerweile inaktiv)
 #: source_id: viz2021:13.44047,52.591526,07.02.2022,04:30 (bis 28.2.2022) (mittlerweile bis 20.5.2022)
-#: last_checked: 2022-02-21 (mapillary) vvv
+#: last_checked: 2022-04-16 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-05-20 vvv
 #: valid: 20210222-20220520 vvv
@@ -209,6 +209,12 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+# 
+#: note: Anforderung für Radfahrer in Richtung Nord -> Süd, Richtung Süd -> Nord keine Ampel
+#: osm_watch: node id="1646650915" version="3"
+#: last_checked: 2022-04-16 (mapillary)
+#: check_frequency: 120d
+	X::inwork 18768,-1350
 # 
 #: temporary ^^^
 # 
@@ -2394,12 +2400,12 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
-#: last_checked: 2022-04-08
+#: last_checked: 2022-04-18
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
-#: last_checked: 2022-03-23
+#: last_checked: 2022-04-18
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746
@@ -3204,7 +3210,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20221231 vvv
-#: last_checked: 2022-04-08 vvv
+#: last_checked: 2022-04-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
@@ -3217,7 +3223,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked ^^^
 # REMOVED --- #: note: Anforderungsampel --- #: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen --- #: last_checked: 2021-04-04 ---	F::inwork 14239,6875
 #: note: Anforderungsampel
-#: last_checked: 2022-04-08
+#: last_checked: 2022-04-18
 	F::inwork 14139,6786
 #: next_check ^^^
 #: valid ^^^
@@ -3225,7 +3231,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2022-04-08
+#: last_checked: 2022-04-18
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
 	X::inwork 13265,6972
@@ -3474,7 +3480,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: BERLINERBAHNHOF-2020
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6134 (Antrag)
 #: XXX wird die provisorische Ampelanlage in eine permanente umgebaut? vvv
-#: last_checked: 2022-02-21 (mapillary) vvv
+#: last_checked: 2022-04-17 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166
@@ -4266,17 +4272,17 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	F 26300,-11864
 	F 26085,-5839
 	X 18423,-843
+	X 19909,-2863
 #: next_check_id: BER-20XX vvv
 #: XXX: Ampel noch ausgeschaltet, wird wahrscheinlich mit BER in Betrieb gehen vvv
-#: last_checked: 2021-08-13 (mapillary) (in der Jürgen-Schumann-Allee gesehen) vvv
-#: check_frequency: 180d vvv
-	X0 19909,-2863
 #: last_checked: 2022-03-12 (mapillary)
 	F0 18517,-4502
+#: XXX hier existieren nur Masten
+#: osm_watch: node id="1736933178" version="6"
+#: last_checked: 2022-04-16 (mapillary)
+#: check_frequency: 360d
 	X0 19131,-2145
 #: XXX ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
 #: next_check_id ^^^
 	F 18861,-3921
 	F 18423,-4094

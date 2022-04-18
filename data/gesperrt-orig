@@ -1514,6 +1514,10 @@ Bienenwinkel	1 -13335,1927 -13333,1957 -13227,1962 -13228,1927
 ###################################################################### 
 # elsewhere in Brandenburg
 # 
+#: by: osm, mapillary
+#: note: explizites Radfahrer-verboten-Schild, zumindest am nördlichen Ende
+Segelfliegerdamm (Zernsdorf - Niederlehme)	2 28499,-10164 28454,-10018 28385,-9820 28312,-9695 27950,-8900 27754,-8708
+Königs Wusterhausen - Wernsdorf	1 27704,-8747 27719,-8666
 #: by: mapillary
 Am Tonberg (Zeuthen)	1 24593,-7405 24492,-7311 24416,-7241
 #: by: mapillary
@@ -3361,6 +3365,7 @@ Drängelgitter	BNP:3::trailer=10 20560,23
 Drängelgitter	BNP:3::trailer=10 20675,56
 #: by: krickstadt
 zwei Drängelgitter (Z-Anordnung)	BNP:5::trailer=15 18848,3600
+weites Drängelgitter	BNP:2::trailer=7 12614,6301
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3441,7 +3446,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: SIEGFRIED-2021
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/#post-15273 (Bau einer Apartmentanlage, vielleicht wird dann die Straße öffentlich sein?)
-#: last_checked: 2022-03-12
+#: last_checked: 2022-04-18
 #: check_frequency: 150d
 (Verlängerung der Siegfriedstr.): während der Hochbauarbeiten gesperrt	2::inwork 11664,6796 11488,6781
 # 
@@ -3469,8 +3474,8 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/der-pionierweg-wird-erneuert-und-erhaelt-eine-neue-beleuchtung-korrosionsschutz-fuer-mero-halle_a327800
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/schiffsanleger-und-eierhaeuschen-sollen-bis-ende-des-jahres-fertig-werden_a335405 (bis Mai 2022)
 #: XXX Wird der Weg nach den Bauarbeiten beleuchtet sein?
-#: last_checked: 2022-03-13
-#: check_frequency: 90d
+#: last_checked: 2022-04-18
+#: check_frequency: 30d
 #: next_check: 2022-05-31
 Pionierweg: wegen Bauarbeiten gesperrt	2::inwork 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
 # 
@@ -3740,7 +3745,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2022-04-16
+#: last_checked: 2022-04-18
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4393,7 +4398,7 @@ Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14051,6731 1410
 #: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaßnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-04-08
+#: last_checked: 2022-04-18
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022

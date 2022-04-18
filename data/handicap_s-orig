@@ -15,7 +15,7 @@
 #: next_check_id: MUEHSAM-2022
 #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022
 #: XXX Datensatz in gesperrt-orig beachten!
-#: also_indoor: traffic (ex-G,ex-B)
+#: also_indoor: traffic (ex-B,G(falsch))
 #: last_checked: 2022-04-06 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-04-01 vvv
@@ -654,7 +654,7 @@ Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2022-04-08 vvv
+#: last_checked: 2022-04-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
@@ -779,8 +779,9 @@ Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Um
 #: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9657 (hier sogar bis Ende 2026)
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2021-12-21 (mapillary)
-#: check_frequency: 120d
+#: last_checked: 2022-04-18 (indoor)
+#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 120d
 #: next_check: 2024-12-31
 #: valid: -20241231
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung Süden	q3::inwork; 19181,13485 19198,13272 19180,13219
@@ -931,8 +932,8 @@ Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickes
 #: next_check: 2022-04-30 vvv
 Kreuzung Grabensprung/Dohlengrund: Bauarbeiten, Fahrbahn gesperrt, umständliche Umwege, Bordsteine	q3::inwork 20725,10594 20716,10434 20713,10293
 Kreuzung Grabensprung/Dohlengrund: Bauarbeiten, Fahrbahn gesperrt, umständliche Umwege, Bordsteine	q3::inwork 20542,10439 20716,10434 21017,10423
-Husumer Str.: Einbahnstraßenregelung	q3::inwork; 20713,10293 20945,10286 21015,10284 21276,10271
-Straubinger Str.: Einbahnstraßenregelung	q3::inwork; 21223,10123 21009,10135 20947,10137 20938,10137 20708,10144
+# REMOVED (hier nicht mehr) --- Husumer Str.: Einbahnstraßenregelung	q3::inwork; 20713,10293 20945,10286 21015,10284 21276,10271
+# REMOVED (hier nicht mehr) --- Straubinger Str.: Einbahnstraßenregelung	q3::inwork; 21223,10123 21009,10135 20947,10137 20938,10137 20708,10144
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3226,7 +3227,7 @@ Nordsternstr.: Feuerwehrzufahrt	q2 6268,8884 6292,8899
 #: XXX_prog BS am Wendehammer, ansonsten q2
 Finckensteinallee: Fußgänger, Bordstein	q3 4115,2726 4140,2706 4170,2727
 Kietzgrabensteg: einige Fußgänger	q1 22514,4632 22531,4605
-Brücke über den Britzer Damm: Rampe, enge Kurven	q2 12637,6309 12630,6326 12605,6322 12619,6310
+Brücke über den Britzer Damm: Rampe, enge Kurven	q2 12638,6307 12630,6326 12605,6322 12619,6310
 #: XXX_prog BS am Wendehammer, ansonsten vielleicht q1 wg. Fußgängern
 Falkenberger Str.: Bordstein	q3 15819,16857 15892,16834
 (Mauerstr. - Sternbergpromenade): Fußgänger	q1 -3275,14114 -3187,14116
@@ -4031,6 +4032,8 @@ Baruther Str.: asphaltierte Kissen (2x)	q1 9837,9856 9723,9842
 Solmsstr.: asphaltierte Kissen (2x)	q1 9723,9842 9705,9732
 #: note: (noch) keine Ausschilderung
 (Nordpromenade, entlang der S-Bahn): einige Fußgänger	q2 20640,12095 20807,12083
+#: note: Ausschilderung existiert am westlichen Ende; am östlichen Ende nur ein Grünanlagenschild ohne Zusatzschilder
+Carl-Weder-Park: gemeinsamer Geh- und Radweg	q1 12595,6299 12614,6301 12638,6307 12812,6343 12979,6374
 # 
 ######################### User Contributions #################################
 # 

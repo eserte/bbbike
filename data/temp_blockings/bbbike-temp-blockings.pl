@@ -30088,7 +30088,7 @@ EOF
        type  => 'gesperrt',
        source_id => '2147344558', # bis 2020-09-10
        data  => <<EOF,
-#: next_check_id: MARIENFELDERALLEE-2021
+#: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 16.7.2021, Gesamtbaumaßnahme bis 2024)
@@ -30096,9 +30096,9 @@ EOF
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
-#: also_indoor: traffic (G)
-#: last_checked: 2021-10-22 (mapillary)
-#: check_frequency: 180d
+#: also_indoor: traffic (G,H)
+#: last_checked: 2022-04-18 (indoor)
+#: check_frequency: 30d
 #: next_check: 2022-06-04
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 EOF
@@ -31138,7 +31138,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="4"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-04-06 vvv
+#: last_checked: 2022-04-18 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -31941,9 +31941,8 @@ EOF
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2021-12-13
-# REMOVED --- #: check_frequency: 120d
-#: check_frequency: 130d
+#: last_checked: 2022-04-18
+#: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
 EOF
@@ -32286,9 +32285,10 @@ EOF
        type  => 'handicap',
        source_id => '2147346268',
        data  => <<EOF,
+#: XXX laut Baustellenschild bis Juli 2022
 #: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022) (mittlerweile: 06.04.2022) (mittlerweile: bis 19.05.2022)
 #: also_indoor: traffic (G)
-#: last_checked: 2022-01-22
+#: last_checked: 2022-04-17 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-05-19
 	q2::inwork 8913,16159 9099,16398
@@ -34262,20 +34262,25 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2022-09-30 18:00:00"),
-       text  => 'Braunschweiger Str. und Niemetzstr.: Bauarbeiten, Einbahnstraßenregelung bzw. Sperrung, voraussichtlich bis September 2022',
+       text  => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung sowie Sperrung der Kanner Str., voraussichtlich bis September 2022',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Niemetzstraße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
-#: also_indoor: traffic (G,H(nur Niemetz),B(nur Niemetz)) vvv
-#: last_checked: 2022-02-23 vvv
+#: next_check_id: BRAUNSCHWEIGER-2022
+#: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Kanner Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
+#: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
+#: also_indoor: traffic (ex-G,ex-H(nur Niemetz),ex-B(nur Niemetz)) vvv
+#: last_checked: 2022-04-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
-	q4::inwork; 13702,7418 13654,7380 13601,7366 13519,7345 13476,7330
-# REMOVED (hier nicht mehr)	q3::inwork 13702,7418 13762,7321
+# REMOVED (hier nicht mehr) ---	q4::inwork; 13702,7418 13654,7380 13601,7366
+	q4::inwork; 13601,7366 13519,7345 13476,7330
+	q4::inwork 13476,7330 13373,7426 13341,7423
+# REMOVED (hier nicht mehr) ---	q3::inwork 13702,7418 13762,7321
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
+#: XXX ^^^
 #: add_fragezeichen ^^^
 EOF
      },
@@ -34334,9 +34339,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (ex-B)
-#: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren
+#: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18 ebenso
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: last_checked: 2022-03-07
+#: last_checked: 2022-04-18
 #: check_frequency: 30d
 	q4::inwork 13355,6235 13227,6209 13220,6237
 EOF
@@ -34628,7 +34633,9 @@ EOF
 #: by: https://viz.berlin.de/2022/02/verkehrsvorschau-21022022/ (für Fußgänger offen)
 #: XXX evtl. nach handicap_s-orig übertragen
 #: also_indoor: traffic (B,H(unvollständig),G)
-#: last_checked: 2022-03-27 vvv
+#: osm_watch: way id="1047544509" version="1"
+#: osm_watch: way id="1047544510" version="1"
+#: last_checked: 2022-04-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -34730,20 +34737,24 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str. und Kanner Str.',
+       text  => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str., voraussichtlich bis Dezember 2022',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2022-03-27 vvv
-#: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2022-03-31 vvv
-#: also_indoor: traffic (ex-G(nur Zeitzer),B(außer Kanner)) vvv
-	q4::inwork; 13326,7291 13368,7300 13476,7330
+#: next_check_id: BRAUNSCHWEIGER-2022
+#: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
+#: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
+#: last_checked: 2022-04-18 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2022-12-31 vvv
+#: also_indoor: traffic (G,B) vvv
+	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300 13476,7330
 	q4::inwork 13326,7291 13325,7210
-	q3::inwork 13476,7330 13373,7426 13341,7423
 #: also_indoor ^^^
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: XXX ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => 1646719260, # 2022-03-08 07:01
@@ -34790,6 +34801,7 @@ EOF
        until => undef, # XXX
        text  => 'Neuköllnische Wiesen: Tor kann möglicherweise verschlossen sein', # nachts? am Wochenende?
        type  => 'gesperrt',
+       permanent => 1,
        data  => <<EOF,
 #: note: Tor offen, gesehen am 2022-03-23 mittags vvv
 	3 14976,8053 14968,8046 14903,7997
@@ -34816,7 +34828,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten
-#: last_checked: 2022-04-16
+#: last_checked: 2022-04-18
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -34876,11 +34888,70 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.479739,52.472118,11.04.2022,09:00',
        data  => <<EOF,
-#: XXX sind Radfahrer in beiden Richtungen betroffen?
 #: by: https://nitter.net/VIZ_Berlin/status/1513397936151044099#m
 #: by: https://nitter.net/pic/media%2FFP1LIs8XMAENMUm.jpg%3Fname%3Dorig
-#: next_check: 2022-04-11
-	q4::inwork 15560,7400 15693,7512
+#: XXX Bleibt die Baustelle bis Oktober 2022 so? vvv
+#: last_checked: 2022-04-18 vvv
+#: check_frequency: 90d vvv
+# REMOVED --- #: next_check: 2022-04-11 vvv
+	q4::inwork; 15560,7400 15693,7512
+#: note: Radweg Richtung Kiefholzstraße noch weitgehend "intakt"
+	q3::inwork; 15693,7512 15560,7400
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/markthalle-101-ehemalige-quellekaufhaus.587/#post-17884
+#: by: https://www.deutsches-architekturforum.de/thread/14587-revitalisierung-b%C3%BCrokomplex-kalle-neuk%C3%B6lln-in-bau/
+#: by: https://www.kalle-neukoelln.com/#architektur (Erstbezüge ab 2022 möglich)
+#: osm_watch: way id="734271970" version="5"
+#: osm_watch: way id="975241319" version="3"
+#: also_indoor: traffic (none)
+#: last_checked: 2022-04-18
+#: check_frequency: 45d
+#: next_check: 2022-12-31
+	q4::inwork 12779,8188 12805,8194 12873,8218 12911,8232
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Weserstr.: Bauarbeiten östlich der Innstr., Fahrbahn gesperrt, Radweg Richtung Osten gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: WESER-2021
+#: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022)
+#: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv
+#: osm_watch: way id="799282063" version="8"
+#: osm_watch: way id="36738531" version="34"
+#: also_indoor: traffic (G) vvv
+#: last_checked: 2022-04-18 vvv
+#: check_frequency: 30d vvv
+	q4::inwork; 13217,8493 13384,8354
+#: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen
+	q2::inwork; 13384,8354 13217,8493
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: XXX ^^^
+EOF
+     },
+     { from  => 1650305075, # 2022-04-18 20:04
+       until => 1656626399, # 2022-06-30 23:59
+       text  => 'Pionierstr.: Bauarbeiten, Einbahnstraßenregelung (offen Richtung Westen), evtl. sind auch Radfahrer betroffen, voraussichtlich bis 30. Juni 2022',
+       type  => 'handicap',
+       source_id => 'https://www.berliner-woche.de/falkenhagener-feld/c-bauen/zwischen-bauzeit-und-bauzeitraum-in-der-pionierstrasse_a342872',
+       data  => <<EOF,
+#: also_indoor: traffic (G,H,B)
+#: XXX kommt es zu einer Verlängerung der Bauarbeiten?
+#: next_check: 2022-06-22
+	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415 -5830,16356
 EOF
      },
     );
