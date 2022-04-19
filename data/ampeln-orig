@@ -7,6 +7,13 @@
 # 
 #: temporary vvv
 # 
+#: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
+#: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
+#: last_checked: 2022-04-19
+#: check_frequency: 120d
+#: next_check: 2022-12-31
+Fischerinsel	F::inwork 10578,11969
+# 
 #: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00
 #: last_checked: 2022-04-11
 #: next_check: 2022-07-30
@@ -62,7 +69,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: last_checked ^^^
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-04-12 (mapillary)
+#: last_checked: 2022-04-19
 #: next_check: 2024-06-01
 Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
@@ -3066,7 +3073,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2022-04-08 (mapillary) vvv
+#: last_checked: 2022-04-19 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3399,7 +3406,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5364,7330
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2022-03-26 (mapillary)
+#: last_checked: 2022-04-18 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-07-31
 	X::inwork 8336,14586
@@ -3410,13 +3417,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2022-03-26 (mapillary)
+#: last_checked: 2022-04-18 (mapillary)
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 
 # REMOVED (gibt's nicht mehr) --- #: next_check_id: CORONA-2020 --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX vermutlich temporär für das Impfzentrum --- #: by: mapillary --- 
 #: XXX wann wird diese Ampel abgebaut?
-#: last_checked: 2022-03-26 (mapillary)
+#: last_checked: 2022-04-18 (mapillary)
 #: check_frequency: 90d
 	F::inwork 8138,14786
 # 

@@ -26240,6 +26240,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15
 #: priority: #A
 #: next_check: 2022-04-20
 	2::temp -2218,5133 -927,6888
@@ -28191,7 +28192,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2022-03-29
+#: last_checked: 2022-04-19
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30549,7 +30550,7 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-04-12 (mapillary)
+#: last_checked: 2022-04-19
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 EOF
@@ -32128,7 +32129,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2021-12-23 vvv
+#: last_checked: 2022-04-19 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -33284,7 +33285,7 @@ EOF
 	q4::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="7"
 	q3::inwork 15279,10862 15355,10875
-#: osm_watch: way id="984056169" version="7"
+#: osm_watch: way id="984056169" version="8"
 	2::inwork 15272,10790 15388,10758
 EOF
      },
@@ -34719,20 +34720,24 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, außerdem Einbahnstraße in der Samoastr., offen Richtung Norden',
+       until => $isodate2epoch->("2022-09-30 17:00:00"), # undef, # XXX
+       text  => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, außerdem Anbindung Lynarstr. gesperrt, außerdem Einbahnstraße in der Samoastr., offen Richtung Norden, voraussichtlich bis Ende September 2022',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv)
-#: add_fragezeichen: Wie lange dauern die Bauarbeiten an? Wo genau gilt die Einbahnstraßenregelung?
+#: source_id: viz2021:13.358072,52.540517,20.04.2022,08:00 (bis 30.9.2022)
+#: note: laut rbb nur bis 20.4.2022
+#: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G)
 #: priority: #B
 #: last_checked: 2022-04-09
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2022-04-20
+#: check_frequency: 30d
+#: next_check: 2022-09-30
 	q4::inwork; 7259,14870 7209,14927 7182,14986
 	q4::inwork; 6945,15045 7007,14911 7000,14832
 # REMOVED (hier vermutlich nicht?) ---	q4::inwork; 7182,14986 7178,14996 7131,15109
+#: XXX hier müsste der Ausmaß der Einschränkung geprüft werden
+	q2::inwork 7259,14870 7409,14954
 EOF
      },
      { from  => undef, # 
