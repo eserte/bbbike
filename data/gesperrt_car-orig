@@ -198,6 +198,7 @@ Schˆnhauser Allee: U-Bahnviadukt und Straﬂenbahn	3nocross 11019,16465 11004,1636
 Prenzlauer Allee: Straﬂenbahn	3nocross 11860,15309 11877,15366 11891,15413
 Greifswalder Str.: Straﬂenbahn	3nocross 12473,14763 12422,14692 12403,14663 12371,14615
 Greifswalder Str.: Straﬂenbahntrasse	3nocross 12704,15105 12737,15154 12870,15342
+Greifswalder Str.: Straﬂenbahntrasse	3nocross 12908,15398 12962,15480 13078,15586
 #: note: Radfahrer kˆnnen einen ‹bergang mit Dr‰ngelgitter benutzen
 Greifswalder Str.: Straﬂenbahntrasse	3nocross 12620,14979 12584,14928 12547,14873 12528,14845
 Landsberger Allee: Straﬂenbahn	3nocross 13543,13568 13635,13605 13702,13634
@@ -281,10 +282,7 @@ Bornitzstr.	1 15643,12875 15563,12870
 Washingtonplatz: nur f¸r Taxis	2 8106,13130 8011,13128 7937,13126
 Ella-Trebe-Str.: nur f¸r Taxis	2 7937,13126 7938,13150 7938,13302
 An der Wuhlheide: Straﬂenbahntrasse	3nocross 20352,5877 20428,5841 20536,5789
-#: by: Torsten Franik: vvv
-G¸rtelstr. - Lehderstr.: nur rechts abbiegen erlaubt	3 13409,15687 13307,15758 13214,15830
-G¸rtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13307,15758 13225,15697 13078,15586
-#: by: ^^^
+# REMOVED (stimmt nicht (mehr?)) --- #: by: Torsten Franik: vvv --- G¸rtelstr. - Lehderstr.: nur rechts abbiegen erlaubt	3 13409,15687 13307,15758 13214,15830 --- G¸rtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13307,15758 13225,15697 13078,15586 --- #: by: ^^^
 #: by: Timo Feyerabend: vvv
 #: confirmed_by: srt
 Jochen-N¸ﬂler-Str.	1 13571,4493 13589,4681
@@ -371,10 +369,9 @@ Knollstr.: Poller	3 17351,451 17559,134 17609,164
 Knollstr.: Poller	3 17490,89 17559,134 17608,61
 Knollstr.: Poller	3 17608,61 17559,134 17490,89
 Neumannstr.: Mittelstreifen	3nocross 11536,17153 11522,17248 11508,17315 11482,17459
-#: note: Luftbild: vvv
+#: note: durchgezogene Linie, Straﬂenbahn (aber ohne eigene Trasse)
 Berliner Allee: Straﬂenbahn	3nocross 14056,16120 14248,16202 14346,16241
 Berliner Allee: Straﬂenbahn	3nocross 13398,15826 13425,15846 13484,15893 13508,15912
-#: note: ^^^
 Berliner Allee: Straﬂenbahn	3nocross 13508,15912 13623,15954 13737,15994
 #: note: ‹berquerungsmˆglichkeit f¸r Fuﬂg‰nger/Radfahrer mit Dr‰ngelgitter ca. 15 Meter ˆstlich
 Berliner Allee: Straﬂenbahntrasse	3nocross 13826,16026 13737,15994 13623,15954
@@ -455,7 +452,6 @@ Nollendorfplatz	1 7033,10328 6971,10346
 Grunewaldstr.: Mittelstreifen	3nocross 5895,9083 5974,9100 6059,9118
 #: by: Florian (olf-kcots):
 Stavenhagener Str.	1 13534,5111 13632,5126
-#: note: Luftbild:
 Berliner Allee -> Rossinistr.	3 13425,15846 13398,15826 13456,15760
 #: note: Luftbild:
 Prenzlauer Promenade: Straﬂenbahntrasse	3nocross 12010,16774 12017,16734 12045,16574

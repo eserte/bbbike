@@ -74,7 +74,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr.
-#: last_checked: 2022-04-18
+#: last_checked: 2022-04-20
 #: check_frequency: 90d
 #: next_check: 2022-06-30
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -309,7 +309,7 @@ Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,2
 #: by: https://api.fixmyberlin.de/api/plannings/127
 #: source_id: LMS-BR_r_LMS-BR_138344_LMS-BR_72
 #: source_id: 2147343836
-#: last_checked: 2021-04-26 (mapillary)
+#: last_checked: 2021-10-20
 #: check_frequency: 360d
 Heerstr.: Erneuerung des Radwegs geplant	?::projected -3069,11487 -2871,11423 -2476,11301 -2413,11283 -2317,11254
 # 
@@ -3704,6 +3704,7 @@ Zillestr./Krumme Str.: Planung einer Fahrradstraﬂe, wo genau?	?::projected 3801,
 #: by: https://www.berliner-woche.de/mitte/c-bauen/boulevard-unter-den-linden-erneut-nur-einspurig_a333677
 #: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022) (mittlerweile bis 11.2.2022) (mittlerweile bis 13.3.2022) (mittlerweile bis 7.4.2022) (und wieder 13.3.2022) (inaktiv)
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
+#: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022)
 #: note: laut rbb bis 11.4.2022
 #: last_checked: 2022-04-19
 #: check_frequency: 30d
@@ -6021,7 +6022,7 @@ Ollenhauerstr.: Planung von Radverkehrsanlagen	?::projected 5345,18675 5324,1856
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8893
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103654302722/54302722/00115526/26-Anlagen/02/vzb0972_V-B-Plan_10-110VE_Aufstellung.pdf
 #: XXX Bebauungsplan 10-110VE
-#: last_checked: 2022-01-09 (mapillary)
+#: last_checked: 2022-04-19 (mapillary)
 #: check_frequency: 360d
 Theaterplatz: entf‰llt die direkte Durchwegung? Oder wird es eine Hausdurchfahrt geben?	?::projected 24968,15307 25086,15298
 # 
@@ -8096,13 +8097,13 @@ Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23305,14914 23110,14945 231
 #: XXX evtl. 10-44 und 10-45 verbinden; kˆnnte das gleiche Bauprojekt sein
 #: XXX Brigitte-Reimann-Str. (PLZ=12629) fehlt in Berlin.coords.data
 #: osm_watch: way id="504240852" version="7"
-#: last_checked: 2022-02-09 (architektur-urbanistik) vvv
+#: last_checked: 2022-04-19 (mapillary) vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-04-01 vvv
+# REMOVED --- #: next_check: 2022-04-01 vvv
 geplanter Rad- und Fuﬂweg	?::projected 23265,15351 23368,15362
 geplante Straﬂen bzw. Rad- und Fuﬂweg	?::projected 23391,15298 23324,15292 23280,15244
 Planstraﬂe D: geplante neue Straﬂe, geplanter Name "Brigitte-Reimann-Str."	?::projected 23368,15469 23363,15517 23386,15621
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^

@@ -251,6 +251,9 @@ John-Schehr-Str. -> Greifswalder Str.: Straßenbahn	3::igndisp 12512,14626 12422,
 Straßenbahntrasse	3nocross::ignrte 12704,15105 12737,15154 12870,15342
 Greifswalder Str. -> Naugarder Str.: Straßenbahntrasse	3::igndisp 12704,15105 12737,15154 12712,15176
 Naugarder Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12712,15176 12737,15154 12870,15342
+Straßenbahntrasse	3nocross::ignrte 12908,15398 12962,15480 13078,15586
+Schieritzstr. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12821,15565 12962,15480 13078,15586
+Greifswalder Str. -> Schieritzstr.: Straßenbahntrasse	3::igndisp 12908,15398 12962,15480 12821,15565
 Straßenbahntrasse	3nocross::ignrte 12620,14979 12584,14928 12547,14873 12528,14845
 Greifswalder Str. -> Lilli-Henoch-Str.: Straßenbahntrasse	3::igndisp 12547,14873 12584,14928 12477,14987
 Greifswalder Str. -> Greifswalder Str., linker Gehweg: Straßenbahntrasse	3::igndisp 12620,14979 12584,14928 12563,14860
@@ -458,8 +461,6 @@ Ella-Trebe-Str.: nur für Taxis	2 7937,13126 7938,13150 7938,13302
 Straßenbahntrasse	3nocross::ignrte 20352,5877 20428,5841 20536,5789
 An der Wuhlheide -> Nixenstr.: Straßenbahntrasse	3::igndisp 20536,5789 20428,5841 20371,5753
 Nixenstr. -> An der Wuhlheide: Straßenbahntrasse	3::igndisp 20371,5753 20428,5841 20352,5877
-Gürtelstr. - Lehderstr.: nur rechts abbiegen erlaubt	3 13409,15687 13307,15758 13214,15830
-Gürtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13307,15758 13225,15697 13078,15586
 Jochen-Nüßler-Str.	1 13571,4493 13589,4681
 Parchimer Allee	3nocross::ignrte 13671,4490 13571,4493 13485,4496 13394,4500
 Jochen-Nüßler-Str. -> Parchimer Allee: Parchimer Allee	3::igndisp 13589,4681 13571,4493 13671,4490

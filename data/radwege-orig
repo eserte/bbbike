@@ -256,7 +256,7 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 	RW1;RW1 11949,10414 12212,10440 12274,10436 12328,10442 12401,10461 12545,10496 12621,10516 12731,10547
 	RW1; 12731,10547 12899,10595
 	RW2; 12985,10665 12930,10621 12899,10595 12731,10547
-3m breit	RW4; 13206,10651 13178,10623 13082,10634
+3m breit, mit Betonbordsteinen von der restlichen Fahrbahn getrennt	RW4; 13206,10651 13178,10623 13082,10634
 	RW4; 13082,10634 13015,10659 12985,10665
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1080786.php (bis Mai 2021) --- #: XXX Verbreiterung der Radstreifen vvv --- #: last_checked: 2021-04-28 vvv --- #: next_check: 2021-05-31 vvv
 3m breit, mit Betonbordsteinen von der restlichen Fahrbahn getrennt	RW4; 13028,10629 13082,10634 13178,10623
@@ -983,7 +983,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,26.04.2022,15:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-04-18 vvv
+#: last_checked: 2022-04-20 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169

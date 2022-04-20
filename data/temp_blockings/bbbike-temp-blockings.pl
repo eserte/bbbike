@@ -8174,13 +8174,12 @@ EOF
 	2::temp 6228,13324 6115,13328 6105,13328 6011,13330 5956,13330 5857,13342 5705,13359
 EOF
      },
-     { from  => $isodate2epoch->("2019-05-10 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2019-05-12 23:59:59"),
+     { from  => $isodate2epoch->("2022-05-06 00:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2022-05-08 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 10, months => 5, start => "2021-10-25T00:00:00"]], # note: findet 2021 vermutlich nicht statt
-       recurrence_prewarn_days => 14,
+       recurrences => [['yearly', days => 6, months => 5, start => "2021-10-25T00:00:00"]], # note: findet 2021 vermutlich nicht statt
        source_id => 'https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html',
-       text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (11. und 12. Mai 2019)',
+       text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (7. und 8. Mai 2022)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html?date=20210410 (Termin noch nicht bekannt)
@@ -14121,12 +14120,11 @@ EOF
 	q4::inwork 9098,42254 9043,42165 9032,42153
 EOF
      },
-     { from  => $isodate2epoch->("2019-05-10 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-05-12 23:59:59"),
+     { from  => $isodate2epoch->("2022-05-06 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-05-08 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 8, months => 5, start => "2021-10-25T00:00:00"]],
-       recurrence_prewarn_days => 14,
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (11. und 12. Mai 2019)',
+       recurrences => [['yearly', days => 7, months => 5, start => "2021-10-25T00:00:00"]],
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (7. und 8. Mai 2022)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
@@ -19513,12 +19511,11 @@ EOF
 	q4::temp 13206,10651 13305,10789 13332,10832
 EOF
      },
-     { from  => $isodate2epoch->("2019-04-25 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-05-19 23:59:59"), # 1 Tag Nachlauf
+     { from  => $isodate2epoch->("2022-04-28 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-05-23 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 4, start => "2021-06-02T00:00:00"]],
-       recurrence_prewarn_days => 3,
-       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 26.04.2019 bis 19.05.2019',
+       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2022 bis 22.05.2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
        data  => <<EOF,
@@ -21878,12 +21875,11 @@ EOF
 	q4::inwork; 7085,15226 7131,15109
 EOF
      },
-     { from  => $isodate2epoch->("2019-05-02 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-05-05 23:59:59"),
-       text  => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2019 bis 05.05.2019)', # früher: Lichtenrader Maientanz
+     { from  => $isodate2epoch->("2022-04-28 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-05-01 23:59:59"),
+       text  => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (29.04.2022 bis 01.05.2022)', # früher: Lichtenrader Maientanz
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 4, start => "2021-05-06T00:00:00"]],
-       recurrence_prewarn_days => 7,
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (ja) --- #: XXX wird die Veranstaltung noch abgesagt? --- #: next_check: 2020-04-23
@@ -23305,12 +23301,11 @@ EOF
 	2::inwork 48229,74776 48296,74641
 EOF
      },
-     { from  => $isodate2epoch->("2019-04-28 00:00:00"),
-       until => $isodate2epoch->("2019-05-02 02:00:00"),
+     { from  => $isodate2epoch->("2022-04-30 00:00:00"),
+       until => $isodate2epoch->("2022-05-01 02:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4, start => "2021-05-03T00:00:00"]],
-       recurrence_prewarn_days => 7,
-       text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung des DGB), am 1. Mai 2019',
+       text  => 'Platz des 18. März: Veranstaltung (Kundgebung des DGB), am 1. Mai 2022', # wenn größer: "Straße des 17. Juni und Ebertstraße"
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
        data  => <<EOF,
@@ -26224,9 +26219,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2022-04-19 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-04-20 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. April 2022 ab ca. 09:15 Uhr',
+     { from  => $isodate2epoch->("2022-04-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-04-27 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. April 2022 ab ca. 09:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26241,8 +26236,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
 #: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15
-#: priority: #A
-#: next_check: 2022-04-20
+# REMOVED --- #: priority: #A --- #: next_check: 2022-04-20
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
@@ -33710,8 +33704,8 @@ EOF
 #: osm_watch: way id="16311543" version="19"
 #: also_indoor: search Ernst-Heilmann-Steg
 #: priority: #A
-#: last_checked: 2022-04-05
-#: check_frequency: 14d
+#: last_checked: 2022-04-20
+#: check_frequency: 7d
 #: next_check: 2022-04-30
 	2::inwork 13270,10030 13306,10006
 EOF
@@ -34724,20 +34718,23 @@ EOF
        text  => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, außerdem Anbindung Lynarstr. gesperrt, außerdem Einbahnstraße in der Samoastr., offen Richtung Norden, voraussichtlich bis Ende September 2022',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv)
+#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv) (bis 30.9.2022)
 #: source_id: viz2021:13.358072,52.540517,20.04.2022,08:00 (bis 30.9.2022)
 #: note: laut rbb nur bis 20.4.2022
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-04-09
-#: check_frequency: 30d
-#: next_check: 2022-09-30
+#: last_checked: 2022-04-09 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2022-09-30 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
 	q4::inwork; 6945,15045 7007,14911 7000,14832
 # REMOVED (hier vermutlich nicht?) ---	q4::inwork; 7182,14986 7178,14996 7131,15109
 #: XXX hier müsste der Ausmaß der Einschränkung geprüft werden
 	q2::inwork 7259,14870 7409,14954
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -34833,7 +34830,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten
-#: last_checked: 2022-04-18
+#: last_checked: 2022-04-20
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
