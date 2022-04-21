@@ -396,7 +396,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: last_checked: 2022-04-19 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
-#: osm_watch: way id="153698394" version="9"
+#: osm_watch: way id="153698394" version="10"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 #: also_indoor: traffic (ex-H,ex-G)
 #: osm_watch: way id="114667396" version="11"
@@ -882,7 +882,7 @@ Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="10"
 #: priority: #C
-#: last_checked: 2022-03-20 (mapillary)
+#: last_checked: 2022-04-21
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg mˆglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -1601,9 +1601,13 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140603.1435.397678.html (Vorlage 096/2014)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
+#: by: https://www.meinetram.de/de/Umsteigepunkt-SU-Lichtenberg
+#: by: https://www.meinetram.de/de/index.php?section=Downloads&download=69 (komplette Umgestaltung der Alten Frankfurter Allee; hier wird eine Zufahrtsstraﬂe zum Krankenhaus entstehen; Anbindung Siegfriedstr. gesperrt auﬂer f¸r Radfahrer; die Gleisschleife Gudrunstr. - Fanningerstr. wird entfallen)
+#: by: https://www.bahninfo-forum.de/read.php?9,731381,731381#msg-731381
 #: osm_watch: way id="223184082" version="7"
 #: last_checked: 2022-03-18
-#: check_frequency: 90d
+# REMOVED --- #: check_frequency: 90d
+#: check_frequency: 360d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
 # REMOVED (BS wurde abgesenkt) --- #: XXX_prog BS (an der Rungiusstr., ansonsten weiterhin q4)
@@ -2969,7 +2973,7 @@ L¸bbener Str.: Fuﬂg‰nger	q3 12729,10515 12731,10547
 (Rudolf-Seiffert-Str./Storkower Str. - Paul-Junius-Str.): Fuﬂg‰nger	q2 14871,13135 14889,13150 14909,13223 14941,13283 14978,13289 15084,13276
 # REMOVED --- #: by: http://www.sanierung-berlin.de/sanwa/Projekte/Helsingforser_Platz/Helsingf_Platz_Fugmann_Pr_sentation.pdf --- #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Helsingforser-Platz.6562.0.html --- #: XXX der handicap_s-Eintrag wird wohl bleiben, q2 oder q1? --- #: last_checked: 2013-11-19 --- #: check_frequency: 7d
 Helsingforser Str.: einige Fuﬂg‰nger	q1 13496,11384 13427,11431
-#: note: mittlerweile ein gemeinsamer Rad- und Gehweg
+#: note: gemeinsamer Rad- und Gehweg
 Karl-Lade-Str.: Fuﬂg‰nger	q1 14821,13674 14987,13621
 #: note: offiziell nur f¸r Fuﬂg‰nger
 Karl-Lade-Str.: Fuﬂg‰nger	q2 14987,13621 15040,13602
@@ -4484,6 +4488,7 @@ Vereinsweg (Steglitz): Fuﬂg‰nger, Privatstraﬂe, Radfahren nicht erlaubt	q4 5334,
 #: XXX_prog: Bordstein am nˆrdlichen Ende, ansonsten w‰re es q1
 Apeldorner Weg: Fuﬂg‰nger, Bordstein	q2+ 3822,8718 3858,8786 3952,8980
 M¸nstersche Str.: Fuﬂg‰nger	q2 3840,9683 3698,9624
+#: note: gemeinsamer Geh- und Radweg
 (Hoffmannstr. - Puschkinallee): Fuﬂg‰nger	q1 14077,10016 14011,9868 13999,9842
 # tempor‰r entfernt: (Hoffmannstr. - Uferweg an den Treptowers): Fuﬂg‰nger	q1 14077,10016 14116,10149 14126,10176
 August-Lindemann-Str.: Fuﬂg‰nger	q3 14355,12752 14360,12792

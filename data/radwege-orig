@@ -736,13 +736,17 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-04-10
+#: last_checked: 2022-04-21
 	RW2; 14926,12129 14994,12121 15117,12106 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
 asphaltiert	RW2; 13785,12292 13543,12326
 	RW10; 13543,12326 13448,12340
-asphaltiert	RW2; 13448,12340 13163,12382 12929,12421 12878,12430 12848,12434 12816,12439 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
+asphaltiert	RW2; 13448,12340 13163,12382 12929,12421
+#: XXX evtl. kommen hier auch noch Betonbordsteine hin
+#: last_checked: 2022-04-21
+ein Fahrstreifen, mit Pollern von der restlichen Fahrbahn getrennt	RW4; 12929,12421 12878,12430 12848,12434
+asphaltiert	RW2; 12848,12434 12816,12439 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 #: note: Karl-Marx-Allee Richtung Osten ab Strausberger Platz
 asphaltiert	RW2; 12114,12546 12134,12540 12352,12509 12592,12472 12603,12470 12816,12439
 ein Fahrstreifen, mit Betonbordsteinen von der restlichen Fahrbahn getrennt	RW4; 12816,12439 12848,12434 12878,12430 12929,12421
@@ -1235,7 +1239,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="17"
-#: last_checked: 2022-04-06
+#: last_checked: 2022-04-21
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1249,7 +1253,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="30"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2022-04-06
+#: last_checked: 2022-04-21
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -2625,7 +2629,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="7"
 #: osm_watch: way id="420112509" version="7"
 #: osm_watch: way id="966685279" version="1"
-#: last_checked: 2022-04-06 vvv
+#: last_checked: 2022-04-21 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -4074,7 +4078,7 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 	RW2;RW1 11984,13081 12126,13088
 	RW3; 12382,13097 12210,13091
 	RW2; 12210,13091 12126,13088
-	RW2; 12126,13088 12210,13091 12382,13097
+	RW1; 12126,13088 12210,13091 12382,13097
 # REMOVED (war hier jemals ein Radweg?) ---	RW0;RW2 7458,14643 7429,14667 7353,14767 7310,14817 7263,14873
 #: note: Asphalt sah älter aus
 Gehweg für Radfahrer frei, asphaltiert	RW9;RW1 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
@@ -5022,8 +5026,9 @@ ehemaliger Radweg existiert noch teilweise	RW0; 6074,4172 6051,4151 6006,4127
 mäßiger Radweg und für Radfahrer freigegebene Busspur (Geltungszeiten Mo-Fr 14-19 Uhr)	RW1; 6120,4214 6248,4127
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1196812.php (Sanierung bis Ende Juli 2022)
 #: by: https://berliner-abendblatt.de/2022/04/19/bauarbeiten-in-der-leonorenstrasse/
+#: source_id: viz2021:13.342002,52.441544,25.04.2022,09:00 (bis 23.7.2022)
 #: XXX Wird der Radweg danach asphaltiert sein?
-#: next_check: 2022-07-31
+#: next_check: 2022-07-23
 mäßiger Radweg und für Radfahrer freigegebene Busspur (Geltungszeiten Mo-Fr 14-19 Uhr)	RW1; 6248,4127 6295,4017 6315,3974 6324,3953 6378,3828
 neu asphaltierter Radweg und für Radfahrer freigegebene Busspur (Geltungszeiten Mo-Fr 14-19 Uhr)	RW1; 6378,3828 6412,3750 6435,3697
 neu asphaltierter Radweg und für Radfahrer freigegebene Busspur (Geltungszeiten Mo-Fr 6-19 Uhr)	RW1; 6412,3750 6378,3828
@@ -7350,6 +7355,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1185354.php (Radverkehrsanlage Mariendorfer Damm: Informationsveranstaltung)
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/info-abend-zur-radverkehrsanlage_a339422
 #: by: https://berliner-abendblatt.de/2022/03/16/radweg-tempelhofer-damm/
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198245.php (bis August 2022 Weiterführung bis Alt-Mariendorf)
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: XXX: Werden die provisorischen Radspuren wieder entfernt? vvv

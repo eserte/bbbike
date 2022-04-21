@@ -15,10 +15,14 @@
 Fischerinsel	F::inwork 10578,11969
 # 
 #: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00
-#: last_checked: 2022-04-11
-#: next_check: 2022-07-30
-#: valid: -20220730
+#: last_checked: 2022-04-21 vvv
+#: next_check: 2022-07-30 vvv
+#: valid: -20220730 vvv
 Mollstr./Büschingstr.	F::inwork 11913,13077
+Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: XXX Ampel hängt mit den Bauarbeiten am Forschungsgebäude Si-M zusammen
 #: osm_watch: way id="870502434" version="2"
@@ -40,7 +44,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1491370038774964227 --- #: by: https://pbs.twimg.com/media/FLEUIiEX0AA8mNx?format=jpg&name=large --- #: source_id: viz2021:13.157143,52.539213,09.02.2022,13:00 (bis 12.3.2022) --- #: valid: 20220209-20220312 vvv --- Klosterbuschweg/Torweg: Gegenverkehrsregelung	X::inwork -6442,14535 --- Klosterbuschweg/Torweg: Gegenverkehrsregelung	X::inwork -6451,14413 --- #: valid ^^^
 # 
 #: next_check_id: TRAMTURM-2021
-#: last_checked: 2022-03-05
+#: last_checked: 2022-04-12 (baustellen-doku)
 #: check_frequency: 180d
 #: next_check: 2022-12-22
 Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
@@ -218,7 +222,7 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 #: last_checked ^^^
 # 
 #: note: Anforderung für Radfahrer in Richtung Nord -> Süd, Richtung Süd -> Nord keine Ampel
-#: osm_watch: node id="1646650915" version="3"
+#: osm_watch: node id="1646650915" version="4"
 #: last_checked: 2022-04-16 (mapillary)
 #: check_frequency: 120d
 	X::inwork 18768,-1350
@@ -425,6 +429,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX_prog: ^^^
 	F 15367,12815
 	X 15515,13134
+#: note: Ampel gilt nicht für rechtsabbiegende Radfahrer vom Radweg südlich der Straßenbahntrasse
 	X 15513,13539
 	X 16866,13532
 #: XXX_prog Fußgängerüberweg auf der westl. Seite fehlt, und macht einige Wege (von N nach S) länger
