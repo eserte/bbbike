@@ -52,7 +52,8 @@ EXTRA_MISCSRC_FILES=	bbd2esri \
 			FixRemoteAddrHandler.pm \
 			bbbike_cgi_clean_expired_cache.pl \
 			cron-wrapper \
-			update-modperl-reload-touchfile.pl
+			update-modperl-reload-touchfile.pl \
+			icao_metar.pl
 EXTRA_MISC_FILES=	gpx.xsd kml21.xsd bbbikecgires.kwalify bbbikecgires.rnc kreisfahrt_anyyear/kreisfahrt_anyyear.png
 EXTRA_HTML_FILES=	Makefile newstreetform.tpl.html \
 			opensearch/bbbike-opensearch.tpl.src \
