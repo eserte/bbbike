@@ -265,7 +265,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Fahrbahninstandsetzung ab Herbst 2021, bis 2022)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2022-03-25
+#: last_checked: 2022-04-22
 # REMOVED --- #: next_check: 2021-10-01
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
 Dönhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
@@ -3919,8 +3919,9 @@ Hönower Str. (Karlshorst): schlechtes Kopfsteinpflaster	Q3+ 18490,9387 18377,936
 (Wandlitzstr. - Blockdammweg): Asphalt	Q0 17950,8974 17915,8945 17754,8863 17729,8850
 (Fortsetzung Wandlitzstr.): Betonplattenstraße	Q2 17981,9000 17837,9086
 Schmiedeberger Weg: Verbundsteinpflaster	Q0- 18021,8976 17956,8935
-Grimnitzstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18070,8945 17929,8742
-Müritzstr.: schlechtes Kopfsteinpflaster	Q3 18147,8895 18009,8687 17930,8567
+Grimnitzstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3- 18070,8945 17929,8742
+Müritzstr.: schlechtes Kopfsteinpflaster	Q3- 18147,8895 18009,8687
+Müritzstr.: schlechtes Kopfsteinpflaster	Q3 18009,8687 17930,8567
 Hoher Wallgraben: Asphalt	Q0 17988,8350 17999,8336
 Hoher Wallgraben: Asphalt mit Schäden	Q2+ 17999,8336 18078,8112
 Hoher Wallgraben: Asphalt mit einigen Rissen	Q1+ 18078,8112 18101,8044
@@ -13159,7 +13160,9 @@ Lockenhuhnweg: schlechtes Kopfsteinpflaster	Q3 16642,393 16555,464 16491,517 164
 Eschelberger Weg: Asphalt	Q0 22116,9585 21954,9640 21822,9681 21692,9727
 Heinrich-Seidel-Str.: mäßiges Kopfsteinpflaster	Q2 6360,4654 6414,4723 6464,4779 6531,4865
 #: confirmed_by: srt (südlich der Ehrlichstr.)
-Stühlinger Str.: schlechtes Kopfsteinpflaster	Q3 18283,8273 18391,8425 18494,8569
+Stühlinger Str.: schlechtes Kopfsteinpflaster	Q3 18283,8273 18391,8425
+#: corrected_by: srt (Q3 -> Q3-)
+Stühlinger Str.: schlechtes Kopfsteinpflaster	Q3- 18391,8425 18494,8569
 #: corrected_by: srt (Q3 -> Q2-)
 Laudaer Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 11442,17664 11540,17684 11579,17692 11686,17710 11785,17729 11839,17738
 #: note: die restlichen Angaben waren zweifelhaft: Schrittgeschwindigkeit, Radspur
@@ -15312,8 +15315,8 @@ Justus-von-Liebig-Str.: Asphalt	Q0 19495,2535 19704,2726 19878,2899
 Braillestr.: Asphalt	Q0 4512,5199 4477,5250 4430,5324
 # 
 #: by: maja wegener: vvv
-#: corrected_by: srt (mäßiger Asphalt -> Asphalt)
-Wandlitzstr.: Asphalt	Q0 18704,8427 18627,8475
+#: corrected_by: srt (mäßiger Asphalt -> Asphalt; mittlerweile wieder schlechter)
+Wandlitzstr.: Asphalt mit einigen Schäden	Q1+ 18704,8427 18627,8475
 #: corrected_by: srt (Q2 -> Q0-)
 Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 18448,8602
 #: confirmed_by: srt
@@ -15330,7 +15333,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228 (Fahrbahnerneuerung zwischen Grimnitz- und Liepnitzstr. ab September 2021)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9000 (Rechtskontrolle)
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
-#: last_checked: 2022-01-10
+#: last_checked: 2022-04-22
 #: check_frequency: 180d
 #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976
@@ -20238,9 +20241,12 @@ In den Kaveln: Beton	Q1+ 4041,20472 4026,20428 3999,20367
 (Uferweg am Nordgraben): Parkweg, teilweise mit Schotter	Q1- 4026,20356 4052,20321 4088,20301 4187,20258 4332,20211 4418,20185 4808,20159
 #: by: ^^^
 # 
-#: by: Roland (herwig):
-#: confirmed_by: srt
-Stechlinstr.: schlechtes Kopfsteinpflaster	Q3 18005,8517 18086,8634 18222,8843
+#: by: Roland (herwig): vvv
+#: confirmed_by: srt vvv
+Stechlinstr.: schlechtes Kopfsteinpflaster	Q3 18005,8517 18086,8634
+Stechlinstr.: schlechtes Kopfsteinpflaster	Q3- 18086,8634 18222,8843
+#: confirmed_by ^^^
+#: by ^^^
 # 
 #: by: Klaus Arndt:
 #: confirmed_by: srt
@@ -23318,8 +23324,8 @@ Schillerstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4568,2424 4721,2449
 #: confirmed_by: srt
 Lehndorffstr.: schlechtes Kopfsteinpflaster	Q3 18401,8636 18397,8611 18407,8592 18428,8588 18448,8602
 #: confirmed_by: srt (+ Aufteilung + Konkretisierung) vvv
-Lehndorffstr.: schlechtes Kopfsteinpflaster, teilweise mit Asphaltflicken	Q3; 18407,8592 18322,8470
-Lehndorffstr.: schlechtes Kopfsteinpflaster	Q3-; 18322,8470 18407,8592
+Lehndorffstr.: schlechtes Kopfsteinpflaster, teilweise mit Asphaltflicken	Q3+; 18322,8470 18407,8592
+Lehndorffstr.: schlechtes Kopfsteinpflaster	Q3-; 18407,8592 18322,8470
 #: confirmed_by ^^^
 #: confirmed_by: srt (+ Aufteilung der Richtungen) vvv
 Lehndorffstr.: glatter Asphalt	Q0-; 18322,8470 18221,8328
@@ -29607,7 +29613,9 @@ Gielower Str.: Asphalt	Q0 13825,4240 14012,4184
 # 
 #: by: Richard Klemm [AM] vvv
 #: confirmed_by: srt (südlich der Ehrlichstr.)
-Üderseestr.: Kopfsteinpflaster	Q3 18135,8404 18228,8537 18331,8685
+Üderseestr.: schlechtes Kopfsteinpflaster	Q3 18135,8404 18228,8537
+#: corrected_by: srt (Q3 -> Q3-)
+Üderseestr.: schlechtes Kopfsteinpflaster	Q3- 18228,8537 18331,8685
 #: corrected_by: Sabine (3113sf) (Q2 -> Q1)
 #: confirmed_by: srt
 Traberweg: fester Sandweg	Q1- 18577,8033 18567,8041 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18072,8470
@@ -30848,4 +30856,13 @@ Kreuzungsbereich asphaltiert	Q0 8525,12958
 Einmündungsbereich asphaltiert	Q0 13198,12311
 Einmündungsbereich asphaltiert	Q0 13243,12222
 Einmündungsbereich mit Kopfsteinpflaster	Q1- 13524,12271
+Einmündungsbereich asphaltiert	Q0- 18557,8525
+Einmündungsbereich asphaltiert	Q0- 18494,8569
+Einmündungsbereich asphaltiert	Q0- 18448,8602
+Einmündungsbereich Asphalt und Kopfsteinpflaster	Q2 18401,8636
+Einmündungsbereich Asphalt und Kopfsteinpflaster	Q2 18331,8685
+Einmündungsbereich Asphalt mit Unebenheiten	Q1 18272,8764
+Einmündungsbereich Asphalt und Kopfsteinpflaster	Q2 18222,8843
+Einmündungsbereich Asphalt und Kopfsteinpflaster	Q2 18147,8895
+Einmündungsbereich Asphalt und Kopfsteinpflaster	Q2 18070,8945
 #: ignore ^^^

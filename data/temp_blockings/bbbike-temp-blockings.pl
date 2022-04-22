@@ -24689,13 +24689,15 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Ruderfähre F24: fährt nur samstags, sonntags und an Feiertagen, ab 1. Mai bis zum 3. Oktober',
+       text  => 'Ruderfähre F24: fährt nur samstags, sonntags und an Feiertagen, ab 30. April bis zum 3. Oktober',
        recurring => 1,
        type  => 'gesperrt',
        source_id => 'http://www.bvg.de/de/Aktuell/Newsmeldung?newsid=612',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-f-24-geht-erst-spaeter-in-betrieb_a261679
 #: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/mit-muskelkraft-ueber-die-mueggelspree_a266224
+#: by: https://unternehmen.bvg.de/pressemitteilung/ahoi-paule-iii/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1198551.php
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
 #: tempex: (20170430|YYYY0501)-YYYY1003 & (sa|su|holiday) & T11-T19
 	2::temp 29959,3031 29968,2986
@@ -29278,7 +29280,7 @@ EOF
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-04-12 (osm)
+#: last_checked: 2022-04-21 (mapillary)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -33279,7 +33281,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-04-16
+#: last_checked: 2022-04-22
 #: check_frequency: 30d
 #: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862

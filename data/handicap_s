@@ -10,8 +10,9 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
-Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
-Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork 10350,13376 10324,13459 10302,13525
+Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Umwege, Bordsteine	q3::inwork 10199,13446 10350,13376
+Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork; 10302,13525 10324,13459 10350,13376
+Rosenthaler Str.: Fahrbahn gesperrt, Umweg über Gormannstr.	q3::inwork; 10350,13376 10324,13459 10302,13525
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882 11160,12071
 Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 (Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10804,12291 10830,12279
@@ -30,6 +31,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit für Radfahrer verboten	q4::inwork 8737,12098 8783,11959
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
+Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
 Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17461,8693 17656,8700 17640,8627 17497,8623
 Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17461,8693
 Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17461,8693 17497,8623
@@ -55,8 +57,6 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4::inwork 12556,15518 12605,15491 12621,15482
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
-Kreuzung Grabensprung/Dohlengrund: Bauarbeiten, Fahrbahn gesperrt, umständliche Umwege, Bordsteine	q3::inwork 20725,10594 20716,10434 20713,10293
-Kreuzung Grabensprung/Dohlengrund: Bauarbeiten, Fahrbahn gesperrt, umständliche Umwege, Bordsteine	q3::inwork 20542,10439 20716,10434 21017,10423
 (Wuhlewanderweg - Parchimer Str.): einige Fußgänger	q1 22031,12208 22080,12218
 (An der Wuhle, östliches Ufer): Fußgänger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Pappelplatz (Mitte): gemeinsamer Fuß- und Radweg	q2 9750,14132 9676,14046

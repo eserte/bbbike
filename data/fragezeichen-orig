@@ -1018,7 +1018,7 @@ Am Wuhleufer: TR7 soll hier geführt werden --- wird die Sperrung am Wochenende d
 #: XXX Kö.4
 #: osm_watch: way id="77386772" version="13"
 #: osm_watch: way id="370590101" version="10"
-#: last_checked: 2022-01-10 (mapillary)
+#: last_checked: 2022-04-21 (mapillary)
 #: check_frequency: 120d
 Kaulsdorfer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 21713,7952 21759,7856 21810,7749 21901,7548 21956,7428 21988,7367 22009,7327 22021,7245 22035,7146 22049,7085 22075,6967
 # 
@@ -1036,7 +1036,7 @@ Alte Kaulsdorfer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 
 # 
 #: XXX Kö.7
 #: osm_watch: way id="47974159" version="11"
-#: last_checked: 2022-04-02
+#: last_checked: 2022-04-21 (mapillary)
 #: check_frequency: 120d
 Am Bahndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected; 22467,6135 22365,6149
 # 
@@ -1047,7 +1047,7 @@ Am Bahndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected; 22467,613
 Däumlingsweg - Waldesruher Str.: Verbesserung der Befahrbarkeit geplant	?::projected 23577,6504 23954,6721 24185,6880 24593,7455
 # 
 #: XXX Kö.10
-#: last_checked: 2022-01-08 (mapillary)
+#: last_checked: 2022-04-21 (mapillary)
 #: check_frequency: 360d
 Köllnischer Platz/Grünauer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 21966,3827 21829,4212 21799,4319 21778,4440 21781,4470 21789,4520
 # 
@@ -1461,7 +1461,7 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22312
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8903 (Antrag generell zur Fahrradinfrastruktur in Karlshorst-West)
 #: osm_watch: way id="51872061" version="38"
 #: osm_watch: way id="31525575" version="25"
-#: last_checked: 2022-03-25
+#: last_checked: 2022-04-22
 #: check_frequency: 120d
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
 # REMOVED (zusammengelegt) --- #: next_check_id: WALLENSTEIN-2020 --- #: osm_watch: way id="31525575" version="20" --- #: XXX zurzeit laufen Bauarbeiten; Parkverbot bis 31.10.2020 --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/unterfuehrung-voll-gesperrt_a285283 (bis 16.11.2020; nur Arbeiten an der Gasleitung?) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8603 (Frage) --- #: last_checked: 2020-11-28 --- #: check_frequency: 120d --- #: next_check: 2020-11-16 --- Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
@@ -2322,6 +2322,7 @@ Togostr.: Ausweisung als Fahrradstraße, auch im nördlichen Abschnitt?	? 5531,167
 #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/wie-kann-der-dauerstau-am-recyclinghof-aufgeloest-werden_a304977 (mindestens bis Herbst 2021 wird gebaut)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9907 (Anfrage, endgültiges Ende der Bauarbeiten April 2022)
 #: XXX zurzeit nur Einschänkungen an der Kreuzung Schulzendorfer/Heiligenseestr., wegen Existenz eines Radwegs vermutlich nur für den Autoverkehr (hier bis voraussichtlich 30.04.2019)
+#: XXX an allen vier Zufahrten zum neuen Kreisverkehr gibt es vermutlich Zebrastreifen
 #: source_id: 2147343419 (Gesamtmaßnahme bis Ende 2021)
 #: source_id: LMS-BR_r_LMS-BR_151882_LMS-BR_72
 # REMOVED --- #: source_id: bvg2021:124#BVG216059_0
@@ -3612,7 +3613,8 @@ Bülowstr.: Markierungsarbeiten, vielleicht entsteht hier eine Fahrradstraße?	? 7
 #: check_frequency: 60d
 Spreestr.: Uferweg an der Spree	? 21901,5117 21817,5164 21753,5250 21692,5401 21632,5483
 # 
-#: last_checked: 2022-03-06
+#: last_checked: 2022-04-22
+#: check_frequency: 45d
 Stolzenfelsstr.: Bauarbeiten am für Radfahrer freigegeben Gehweg, möglicherweise wird hier auch Verbundsteinpflaster verlegt	?::inwork 19333,8165 19407,8143 19447,8175
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_04_0173_0236_online.pdf (Einziehung von Straßenland)
@@ -4323,7 +4325,7 @@ Manfred-von-Richthofen-Str.: ändert sich bei den geplanten Umbaumaßnahmen etwas 
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/protokoll-18-ag-radverkehr_24-02-2021.pdf (Erwähnung)
-#: last_checked: 2022-04-02 vvv
+#: last_checked: 2022-04-21 (mapillary) vvv
 #: check_frequency: 60d vvv
 Bahnhofstr.: "Abordnung" der Benutzungspflicht geplant	?::projected 22467,6135 22431,6068 22358,5918
 # REMOVED (hier weitgehend nicht mehr) --- Bahnhofstr.: "Abordnung" der Benutzungspflicht geplant	?::projected 22358,5918 22292,5774 22236,5633 22184,5545 22116,5442
@@ -5267,7 +5269,7 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/arbeiten-an-der-karlshorster-strasse-dauern-bis-juni_a341192 (bis 20.6.2022)
 #: XXX während der Bauarbeiten Einbahnstraßenregelung --- was wird das für den Radverkehr bedeuten? -> siehe temp blockings
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2022-04-16
+#: last_checked: 2022-04-22
 #: check_frequency: 30d
 #: next_check: 2022-06-20
 Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,10738
@@ -5283,11 +5285,11 @@ Karlshorster Str.: Bau von Radwegen	?::inwork 15279,10862 15272,10790 15261,1073
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023)
 #: source_id: viz2021:13.475017,52.501547,29.04.2021,08:00 (Bauarbeiten bis 29.04.2022)
 #: source_id: viz2021:13.475184,52.501511,29.11.2021,08:00 (Bauarbeiten bis 29.04.2022)
-#: last_checked: 2022-04-16
+#: last_checked: 2022-04-22
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
-#: last_checked: 2022-03-13
+#: last_checked: 2022-04-22
 #: check_frequency: 90d
 #: next_check: 2022-12-23
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
@@ -6411,7 +6413,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8742 (Anordnungsprozess in Vorbereitung)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8792 (Anordnungsprozess in Vorbereitung)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8572 (Erwähnung der Anordnung)
-#: last_checked: 2022-04-02
+#: last_checked: 2022-04-22
 #: check_frequency: 180d
 Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 18301,9946 18266,9853 18066,9770 17920,9698 17777,9649 17668,9632 17587,9655 17471,9688 17383,9719
 # 
@@ -6674,7 +6676,7 @@ Gockelweg: Einziehung als öffentliches Straßenland	? 15846,-591 16114,-610 16187
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/3_Lageplan_250.pdf
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/4_Schnitt_50.pdf
 #: by: https://www.bahninfo-forum.de/read.php?9,726473,726473
-#: last_checked: 2022-03-01
+#: last_checked: 2022-04-22
 #: check_frequency: 360d
 Blockdammweg: Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird enger, neue Ampel am Kreuzungspunkt Ehrlichstr.	?::projected 17729,8850 17760,8853 17904,8924
 # 
@@ -7305,7 +7307,7 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: XXX alle hier aufgeführten Straßen fehlen noch bei Berlin.coords.data
 #: XXX Samuel-Lewin-Str. laut DPAG-Mitteilungsblatt und LOR PLZ=10318
 #: osm_watch: way id="428279379" version="10" vvv
-#: last_checked: 2022-04-02 vvv
+#: last_checked: 2022-04-22 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-03-01 vvv
 # REMOVED --- Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue Straßen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
@@ -7644,7 +7646,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 #: XXX * Ingrid-Reschke-Str. (PLZ=10317 laut LOR)
 #: XXX * Gustav-Tempel-Str. (PLZ=10317 laut LOR)
 #: XXX laut LOR gibt's nun auch eine Hauptstraße in Friedrichshain, PLZ 10317 --- vielleicht ein Zipfel des Baugebiets hier, wäre aber zu verwirrend, das in Berlin.coords.data einzutragen
-#: last_checked: 2022-04-16
+#: last_checked: 2022-04-22
 #: check_frequency: 360d
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straßen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 
@@ -8210,6 +8212,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10907 (provisorischer Uferweg zwischen Michael- und Schillingbrücke, Bau Herbst 2021 - 2022)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11160 (Bebauungsplanentwurf I-32aa (Holzufer))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036570366892/570366892/00528691/91-Anlagen/02/VzK_0226_VI_Anlage_42-2022-Anlage-B-Plan-I-32a.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_16_0977_1032_online.pdf (Einziehung einer Grünanlage)
 #: last_checked: 2022-04-12 (mapillary)
 #: check_frequency: 90d
 Uferweg geplant	?::projected 11981,11578 11821,11733 11676,11839 11375,11994

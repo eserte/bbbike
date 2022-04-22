@@ -195,12 +195,12 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: by: https://nitter.net/VIZ_Berlin/status/1516286721096310787#m
 #: by: https://nitter.net/pic/media%2FFQTg6WoXsAYOgpa.jpg%3Fname%3Dorig
 #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 vvv
-#: last_checked: 2022-04-19 vvv
+#: last_checked: 2022-04-21 (mapillary) vvv
 #: next_check: 2022-05-31 vvv
-Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
-#: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt?
-#: next_check: 2022-04-25
-Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork 10350,13376 10324,13459 10302,13525
+Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Umwege, Bordsteine	q3::inwork 10199,13446 10350,13376
+# REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
+Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork; 10302,13525 10324,13459 10350,13376
+Rosenthaler Str.: Fahrbahn gesperrt, Umweg über Gormannstr.	q3::inwork; 10350,13376 10324,13459 10302,13525
 #: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -471,10 +471,17 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 ### Karlshorst ###
 # 
+#: next_check_id: WANDLITZ-2021
+#: note: am 2022-04-22 war die Fahrbahn offen, aber möglicherweise war das nur "zufällig" so, weil Baufahrzeuge reinfahren mussten; jedenfalls stehen an beiden Enden Bauzäune, die umgeklappt werden können
+#: also_indoor: traffic
+#: last_checked: 2022-04-22
+#: check_frequency: 90d
+Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
+# 
 # REMOVED (fertig) --- #: next_check_id: ZWIESELER-2022 --- #: last_checked: 2022-03-20 --- #: check_frequency: 60d --- Richard-Kolkwitz-Weg: Engstelle wegen Bauarbeiten	q2::inwork 19711,10426 19813,10468
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2022-04-02 vvv
+#: last_checked: 2022-04-22 vvv
 Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17461,8693 17656,8700 17640,8627 17497,8623
 Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17461,8693
 Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17461,8693 17497,8623
@@ -938,21 +945,12 @@ Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickes
 # 
 ### Biesdorf ###
 # 
-#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wegen-arbeiten-der-wasserbetriebe-wird-die-linie-190-bis-1-april-umgeleitet_a337988
-#: source_id: bvg2021:190#BVG291273_0 (kein Endedatum)
-# REMOVED --- #: source_id: bvg2021:190#BVG297363_0 (kein Endedatum)
-#: XXX Laut Baustellenschild der Wasserbetriebe bis April 2022
-#: last_checked: 2022-04-16 (indoor) vvv
-#: check_frequency: 7d vvv
-#: next_check: 2022-04-30 vvv
-Kreuzung Grabensprung/Dohlengrund: Bauarbeiten, Fahrbahn gesperrt, umständliche Umwege, Bordsteine	q3::inwork 20725,10594 20716,10434 20713,10293
-Kreuzung Grabensprung/Dohlengrund: Bauarbeiten, Fahrbahn gesperrt, umständliche Umwege, Bordsteine	q3::inwork 20542,10439 20716,10434 21017,10423
+# REMOVED --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wegen-arbeiten-der-wasserbetriebe-wird-die-linie-190-bis-1-april-umgeleitet_a337988 --- #: source_id: bvg2021:190#BVG291273_0 (kein Endedatum) --- # REMOVED --- #: source_id: bvg2021:190#BVG297363_0 (kein Endedatum) --- #: XXX Laut Baustellenschild der Wasserbetriebe bis April 2022 --- #: last_checked: 2022-04-16 (indoor) vvv --- #: check_frequency: 7d vvv --- #: next_check: 2022-04-30 vvv
+# REMOVED (hier wohl nicht mehr) --- Kreuzung Grabensprung/Dohlengrund: Bauarbeiten, Fahrbahn gesperrt, umständliche Umwege, Bordsteine	q3::inwork 20725,10594 20716,10434 20713,10293
+# REMOVED (hier wohl nicht mehr) --- Kreuzung Grabensprung/Dohlengrund: Bauarbeiten, Fahrbahn gesperrt, umständliche Umwege, Bordsteine	q3::inwork 20542,10439 20716,10434 21017,10423
 # REMOVED (hier nicht mehr) --- Husumer Str.: Einbahnstraßenregelung	q3::inwork; 20713,10293 20945,10286 21015,10284 21276,10271
 # REMOVED (hier nicht mehr) --- Straubinger Str.: Einbahnstraßenregelung	q3::inwork; 21223,10123 21009,10135 20947,10137 20938,10137 20708,10144
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (laut osm für Radfahrer bereits befahrbar) --- #: next_check_id: ZIMMERMANNSTRBR-2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5575.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/zimmermannstrassenbruecke/ --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6162.html --- #: XXX Radfahrer können weiterhin passieren, zunächst über den nördlichen Gehweg, später über eine Behelfsbrücke (Breite 2,50m) --- #: XXX nach den Bauarbeiten (bis 2016-08?) wird es hier Radspuren geben --- #: XXX laut rbbtext bis 31.03.2016 --- #: XXX laut vmz bis Ende Oktober 2016, laut fritz bis 15.09.2016, laut Pressemitteilung Mitte September --- #: source_id: IM_024857 --- #: source_id: 2147339545 --- #: osm_watch: way id="25795962" version="15"  --- #: last_checked: 2016-06-19 --- #: next_check: 2016-09-15 --- Zimmermannstraßenbrücke: Bau einer neuen Brücke, Radfahrer müssen den Gehweg bzw. Behelfsbrücke benutzen	q4::inwork 21430,9026 21383,9045 21365,9059 21354,9059 21314,9083
 # 
 ### Bohnsdorf ###

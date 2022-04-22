@@ -55,7 +55,7 @@ Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
 Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2022-04-02
+#: last_checked: 2022-04-22
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
@@ -115,15 +115,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: last_checked: 2021-03-18 (parlamentarische Anfrage)
 #: next_check: 2022-02-03
 	X::inwork -1538,22800
-#: by: https://www.berliner-woche.de/heiligensee/c-verkehr/anregungen-der-eltern-endlich-verwirklicht_a207979
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1194601.php (Bauarbeiten für den Kreisverkehr)
-#: by: https://berliner-abendblatt.de/2022/04/08/umbau-fuer-kreisverkehr-kreuzung-wird-voll-gesperrt/
-#: by: https://www.berliner-woche.de/heiligensee/c-verkehr/kreuzungsbereich-wegen-asphaltarbeiten-gesperrt_a342023
-#: XXX später wird hier ein Kreisverkehr entstehen
-#: last_checked: 2021-09-04
-#: check_frequency: 180d
-#: next_check: 2022-11-15
-	X::inwork -2504,22626
+# REMOVED --- #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/anregungen-der-eltern-endlich-verwirklicht_a207979 --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1194601.php (Bauarbeiten für den Kreisverkehr) --- #: by: https://berliner-abendblatt.de/2022/04/08/umbau-fuer-kreisverkehr-kreuzung-wird-voll-gesperrt/ --- #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/kreuzungsbereich-wegen-asphaltarbeiten-gesperrt_a342023 --- #: XXX später wird hier ein Kreisverkehr entstehen --- #: last_checked: 2021-09-04 --- #: check_frequency: 180d --- #: next_check: 2022-11-15 ---	X::inwork -2504,22626
 # 
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2019 --- #: last_checked: 2020-06-14 ---	X::inwork 18406,7760
 # 
