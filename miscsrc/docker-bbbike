@@ -20,6 +20,7 @@ use Doit::Log;
 use Doit::Util qw(in_directory);
 
 use Cwd qw(realpath);
+use File::Glob qw(bsd_glob);
 use File::Temp qw(tempdir);
 use Getopt::Long;
 use Hash::Util qw(lock_keys);
@@ -665,6 +666,18 @@ sub cgi {
     for my $f ("cgi/GNUmakefile", "cgi/Makefile", "miscsrc/b2gmake") {
 	$doit->copy("$FindBin::RealBin/../$f", "$docker_context_dir/" . File::Basename::dirname($f));
     }
+    if ($opt{mapserver}) {
+	# XXX Actually it would be easier to copy everything in the repository, not just the files mentioned in MANIFEST
+	for my $f ("data/Makefile", "data/Makefile.mapfiles", "data/Makefile.garmin", "data/BASE", bsd_glob("data/*-orig"), "data/temp_blockings/bbbike-temp-blockings.pl", bsd_glob("data/temp_blockings/*.bbd"),  bsd_glob("miscsrc/*")) {
+	    my($src, $dest) = ("$FindBin::RealBin/../$f", "$docker_context_dir/" . File::Basename::dirname($f));
+	    next if -d $src; # ignore directories in miscsrc
+	    $doit->copy($src, $dest);
+	}
+	for my $f ("miscsrc/bbbikedraw.pl", "miscsrc/bbd2esri") {
+	    $doit->chmod(0755, "$docker_context_dir/$f"); # XXX copy should really preserve the file mode
+	}
+	$doit->system("cp", "-rf", "$FindBin::RealBin/../mapserver/", "$docker_context_dir/mapserver/");
+    }
 
     my $dockerfile = <<EOF;
 FROM $opt{dist}:$opt{distver}
@@ -688,7 +701,7 @@ RUN apt-get update && apt-get install -qqy --no-install-recommends \\
       libobject-realize-later-perl libmldbm-perl \\
       libclass-accessor-perl libarchive-zip-perl \\
       libtemplate-perl libxml-libxml-perl libxml-simple-perl \\
-      libyaml-perl libyaml-syck-perl libjson-xs-perl \\
+      libyaml-libyaml-perl libjson-xs-perl \\
       libtext-unidecode-perl libdata-compare-perl \\
       libdate-calc-perl libdatetime-perl libimage-exiftool-perl \\
       libgeo-metar-perl libtext-csv-xs-perl libxml2-utils libdb-file-lock-perl \\
