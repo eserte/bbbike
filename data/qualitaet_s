@@ -2109,7 +2109,7 @@ Köpenzeile: Beton	Q0 23174,3791 23227,3724 23319,3528 23436,3212 23467,3110 2354
 Köpenzeile: Asphalt	Q0 23550,2528 23484,2360
 Feldblumenweg: Asphalt	Q0 23479,2398 23484,2360 23487,2276 23526,2112
 Dörbeckweg: asphaltiert	Q0 -6251,13396 -6425,13347
-Moritzstr.: Asphalt	Q0 -3640,14643 -3598,14587 -3481,14523
+Moritzstr.: Asphalt	Q0 -3640,14643 -3598,14587 -3481,14523 -3440,14498 -3410,14479
 Möthlower Str.: Asphalt	Q0 -7736,15460 -7664,15601 -7588,15656
 Möthlower Str.: Sand	Q2 -7588,15656 -7483,15690 -7457,15704
 Straße 270: unbestigter Weg, Schotter	Q2 -5886,10837 -5312,10948
@@ -3349,7 +3349,7 @@ Katharina-Boll-Dornberger-Str.: Asphalt	Q0 19269,3183 19167,3287 19086,3370 1909
 Katharina-Boll-Dornberger-Str.: Asphalt	Q0 18998,3454 18987,3442 19033,3397 19073,3357 19086,3370
 Katharina-Boll-Dornberger-Str.: Verbundsteinpflaster	Q1 18943,3508 18848,3600 18836,3611
 Alexander-von-Humboldt-Weg: Gehwegplatten	Q1 19015,3129 18892,3256
-Alexander-von-Humboldt-Weg: Verbundsteinpflaster	Q1 18892,3256 18689,3465
+Alexander-von-Humboldt-Weg: Verbundsteinpflaster	Q1 18892,3256 18825,3325 18689,3465
 Brook-Taylor-Str.: Gehwegplatten	Q1 19146,2975 19101,3028 19015,3129
 Johann-Hittorf-Str.: Asphalt	Q0 18946,3077 18802,2993 18757,2966 18716,2966 18601,2971
 Karl-Ziegler-Str.: Asphalt	Q0 18946,3077 18828,3196 18766,3260 18624,3402
@@ -5584,7 +5584,7 @@ Freymüllerweg: Verbundsteinpflaster, mit einigen Aufpflasterungen	Q1 7589,4008 7
 (Alt-Lankwitz - Kamenzer Damm): Asphalt	Q0 8009,3375 8026,3298
 (Alt-Lankwitz - Kamenzer Damm): Verbundsteinpflaster	Q1 8026,3298 8036,3253
 (Buckower Damm - Neumarkplan): holpriges Verbundsteinpflaster	Q2 12673,3619 12624,3659 12603,3712 12578,3728
-Moritzstr.: Kopfsteinpflaster	Q1 -3350,14446 -3393,14470
+Moritzstr.: Kleinsteinpflaster	Q1 -3350,14446 -3393,14470 -3410,14479
 (Müggelheimer Damm - Teufelssee): Asphalt	Q0 25570,2407 25820,2021 25848,1858
 Weg zum Wirtshaus Rübezahl: Beton	Q0 25898,2307 25942,2453 26006,2615
 Neuhelgoländer Weg: Beton	Q0 29546,2825 29438,2887 29370,2887
@@ -6012,8 +6012,11 @@ Uferweg: unbefestigter Weg	Q1 -1197,17860 -1102,17869
 Uferweg: Kleinsteinpflaster	Q2 -1102,17869 -1085,17878 -997,18069
 Uferweg: Waldweg	Q1 -997,18069 -984,18136 -934,18284 -930,18337
 (Uferweg am Tegeler See): Waldweg	Q1 72,19790 119,19931 167,19978 193,20024 209,20083 226,20116 222,20175 248,20233 324,20350 430,20338
-(Uferweg am Salzhof): Asphalt, teilweise mit Wurzelschäden	Q1 -1923,15684 -1938,15782 -1935,15826 -1978,15940 -1976,16012
-(Uferweg am Salzhof): Asphalt, einige Wurzelschäen	Q0 -1976,16012 -1948,16045 -1942,16105 -1945,16202 -1956,16220 -1958,16269 -1950,16292 -1962,16312 -1967,16380 -1937,16383 -1928,16423
+(Uferweg am Salzhof): Asphalt	Q0 -1923,15684 -1927,15716
+(Uferweg am Salzhof): Verbundsteinpflaster	Q1 -1927,15716 -1938,15782 -1935,15826 -1948,15862
+(Uferweg am Salzhof): Asphalt und Verbundsteinpflaster	Q1 -1948,15862 -1978,15940
+(Uferweg am Salzhof): Asphalt	Q0 -1978,15940 -1976,16012 -1948,16045 -1942,16105
+(Uferweg am Salzhof): Asphalt und Verbundsteinpflaster, einige Wurzelschäden	Q1 -1942,16105 -1945,16202 -1956,16220 -1958,16269 -1950,16292 -1962,16312 -1967,16380 -1937,16383 -1928,16423
 (Daumstr. - Uferweg): wassergebundene Decke	Q1 -1816,16111 -1942,16105
 (Uferweg Eiswerder): Asphalt	Q0 -2038,15683 -2094,15663 -2138,15622 -2163,15571 -2177,15511 -2325,15431 -2431,15436 -2465,15471 -2454,15472 -2453,15476
 Menzelstr.: Beton	Q0 25149,12266 25318,12294
@@ -16214,7 +16217,7 @@ Mülheimer Str.: guter Beton	Q0 -5531,15522 -5470,15750
 Oberhauser Str.: guter Beton	Q0 -5426,15528 -5370,15721
 Lüdinghauser Weg: guter Beton	Q0 -5442,15282 -5396,15515
 Unnaer Str.: guter Beton	Q0 -5608,15105 -5600,15214 -5590,15313 -5575,15512
-Iserlohner Str.: guter Beton	Q0 -5575,15512 -5531,15522 -5481,15526 -5426,15528 -5396,15515 -5319,15477 -5208,15460
+Iserlohner Str.: guter Beton	Q0 -5575,15512 -5531,15522 -5478,15535 -5426,15528 -5396,15515 -5319,15477 -5208,15460
 Portaer Str.: mäßiges Verbundsteinpflaster	Q2 -5590,15313 -5527,15285 -5442,15282 -5355,15277
 Wandsbeker Weg: Beton	Q0 -6643,14051 -6539,14064
 Filmwerkeweg: Beton	Q0 -7050,13807 -7046,13918
@@ -16352,7 +16355,7 @@ Markendorfer Str.: Beton	Q0 6374,20987 5840,20953
 Mehlweg: gutes Verbundsteinpflaster	Q1 6779,22804 6723,22924
 Lichtweg: Asphalt	Q0 1301,18297 1337,18427
 Martha-Fontane-Str.: gutes Verbundsteinpflaster	Q1 11788,23229 11754,23195 11600,23317
-Gütersloher Weg: guter Beton	Q0 -5527,15285 -5481,15526
+Gütersloher Weg: guter Beton	Q0 -5527,15285 -5478,15535
 Prinz-Eitel-Weg: Asphalt	Q1 -3832,16847 -3967,16830
 (Lankegrabenpark): aufgeplatzter, welliger Asphalt	Q2 7365,3199 7409,3331 7458,3451
 Verlängerte Schulzendorfer Str.: mäßig bis gut befahrbarer Waldweg, je nach Witterung	Q2 2150,22464 2015,22435 1834,22421 1583,22376 1499,22378 1411,22365 1266,22401 1094,22504 670,22646 636,22658 587,22646 520,22624 439,22620 289,22618 194,22547

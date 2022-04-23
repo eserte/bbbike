@@ -9,7 +9,7 @@
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2022-04-19
+#: last_checked: 2022-04-22 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
@@ -902,6 +902,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3761,12298
 	X 3337,12855
 #: note: Kontaktschleife/Anforderungsampel Richtung Osten
+#: XXX_prog: nicht relevant beim Fahren vom Jakob-Kaiser-Platz in den Tegeler Weg
 	X 2860,14118
 #: note: Kontaktschleife/Anforderungsampel von Süden her, auf der Mittelinsel "gegenläufig" geschaltet
 	X 2896,14187
@@ -1390,6 +1391,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5956,13330
 	X -1350,14646
 #: note: Anforderung für linksabbiegende Radfahrer (Am Juliusturm -> Daumstr.)
+#: XXX_prog: gilt nicht für geradesausfahrende Radfahrer
 	X -1337,14538
 	X 5043,14671
 #: XXX_prog: gilt nicht für rechtsabbiegende Radfahrer (Beusselstr. -> Seestr.)
@@ -1461,6 +1463,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -1284,13340
 #: XXX_prog: gilt nicht für stadtauswärts fahrende Radfahrer auf dem Radweg
 	X -1337,13354
+#: XXX_prog: gilt nicht für stadtauswärts fahrende Radfahrer auf dem Radweg
 	X -1560,13418
 	X 5627,10637
 	X 5866,10492
@@ -2682,6 +2685,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 #: by: Message-ID: <f7gpgb$22l$1@mobile.in-berlin.de>
 	F 1442,12480
 	F 1669,12413
+#: XXX_prog: gilt nicht für stadtauswärts fahrende Radfahrer auf dem Radweg
 	X -4290,14025
 	X 4813,5350
 	X 5346,6443
@@ -3064,13 +3068,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: osm_watch: node id="5931765487" version="5"
 #: osm_watch: node id="5931765488" version="5"
-#: last_checked: 2022-03-29
+#: last_checked: 2022-04-23
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2022-04-19 vvv
+#: last_checked: 2022-04-23 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3516,13 +3520,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296478" version="1"
 #: note: Anforderungsampel
-#: last_checked: 2022-04-10 (bahninfo-forum)
+#: last_checked: 2022-04-22 (mapillary)
 #: check_frequency: 90d
 	F::inwork 17695,5394
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296482" version="3"
 #: note: Anforderungsampel
-#: last_checked: 2022-03-20 (krickstadt)
+#: last_checked: 2022-04-22 (mapillary)
 #: check_frequency: 90d
 	F::inwork 17747,5452
 # 

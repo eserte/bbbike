@@ -30917,7 +30917,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-04-16
+#: last_checked: 2022-04-23
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32302,9 +32302,9 @@ EOF
 #: note: reopened, es gibt wieder Bauzäune
 #: osm_watch: way id="152832871" version="16"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-02-12
+#: last_checked: 2022-04-23
 #: check_frequency: 60d
-	q4::inwork 4674,12076 4698,12124
+	q3::inwork 4674,12076 4698,12124
 # REMOVED (hier nicht mehr) ---	q3::inwork 4698,12124 4755,12236
 EOF
      },
@@ -34466,7 +34466,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1650719215, # undef, # XXX
        text  => 'Uferweg am Salzhof: möglicherweise gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -34475,8 +34475,8 @@ EOF
 #: by: https://immobilien.stadtlandhavel.com/
 #: osm_watch: way id="577673938" version="5"
 #: osm_watch: way id="35043662" version="10"
-#: add_fragezeichen: Ist dieser Weg tatsächlich gesperrt? Wenn ja: wo genau ist der gesperrte Abschnitt?
-	2::inwork -1923,15684 -1938,15782 -1935,15826 -1978,15940 -1976,16012
+# REMOVED (Weg ist offen) --- #: add_fragezeichen: Ist dieser Weg tatsächlich gesperrt? Wenn ja: wo genau ist der gesperrte Abschnitt?
+	2::inwork -1923,15684 -1927,15716 -1938,15782 -1935,15826 -1948,15862 -1978,15940 -1976,16012
 EOF
      },
      { from  => 1643397267, # 2022-01-28 20:14
@@ -34956,14 +34956,16 @@ EOF
      },
      { from  => 1650305075, # 2022-04-18 20:04
        until => 1656626399, # 2022-06-30 23:59
-       text  => 'Pionierstr.: Bauarbeiten, Einbahnstraßenregelung (offen Richtung Westen), evtl. sind auch Radfahrer betroffen, voraussichtlich bis 30. Juni 2022',
+       #text  => 'Pionierstr.: Bauarbeiten, Einbahnstraßenregelung (offen Richtung Westen), evtl. sind auch Radfahrer betroffen, voraussichtlich bis 30. Juni 2022',
+       text  => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), voraussichtlich bis 30. Juni 2022',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/falkenhagener-feld/c-bauen/zwischen-bauzeit-und-bauzeitraum-in-der-pionierstrasse_a342872',
        data  => <<EOF,
 #: also_indoor: traffic (G,H,B)
 #: XXX kommt es zu einer Verlängerung der Bauarbeiten?
 #: next_check: 2022-06-22
-	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415 -5830,16356
+	q4::inwork; -5804,16415 -5830,16356 -5849,16199
+# REMOVED (Radspur existiert in der Gegenrichtung) ---	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415
 EOF
      },
     );

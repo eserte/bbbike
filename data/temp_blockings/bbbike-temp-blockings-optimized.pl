@@ -3548,7 +3548,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-04-16
+#: last_checked: 2022-04-23
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3902,9 +3902,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: reopened, es gibt wieder Bauzäune
 #: osm_watch: way id="152832871" version="16"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-02-12
+#: last_checked: 2022-04-23
 #: check_frequency: 60d
-	q4::inwork 4674,12076 4698,12124
+	q3::inwork 4674,12076 4698,12124
 # REMOVED (hier nicht mehr) ---	q3::inwork 4698,12124 4755,12236
 ',
          'from' => undef,
@@ -4701,21 +4701,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10698 (Absperrung wegen eines Chemiewaffenfundes)
-#: by: https://www.deutsches-architekturforum.de/thread/14836-stadtlandhavel-spandau-kleine-eiswerderstra%C3%9Fe/?postID=710407#post710407
-#: by: https://immobilien.stadtlandhavel.com/
-#: osm_watch: way id="577673938" version="5"
-#: osm_watch: way id="35043662" version="10"
-#: add_fragezeichen: Ist dieser Weg tatsächlich gesperrt? Wenn ja: wo genau ist der gesperrte Abschnitt?
-	2::inwork -1923,15684 -1938,15782 -1935,15826 -1978,15940 -1976,16012
-',
-         'from' => undef,
-         'id' => 3505,
-         'text' => 'Uferweg am Salzhof: möglicherweise gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: SPREEUFER-2022
@@ -5096,12 +5082,13 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: also_indoor: traffic (G,H,B)
 #: XXX kommt es zu einer Verlängerung der Bauarbeiten?
 #: next_check: 2022-06-22
-	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415 -5830,16356
+	q4::inwork; -5804,16415 -5830,16356 -5849,16199
+# REMOVED (Radspur existiert in der Gegenrichtung) ---	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415
 ',
          'from' => 1650305075,
          'id' => 3539,
          'source_id' => 'https://www.berliner-woche.de/falkenhagener-feld/c-bauen/zwischen-bauzeit-und-bauzeitraum-in-der-pionierstrasse_a342872',
-         'text' => 'Pionierstr.: Bauarbeiten, Einbahnstraßenregelung (offen Richtung Westen), evtl. sind auch Radfahrer betroffen, voraussichtlich bis 30. Juni 2022',
+         'text' => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), voraussichtlich bis 30. Juni 2022',
          'type' => 'handicap',
          'until' => 1656626399
        }
