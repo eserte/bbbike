@@ -142,11 +142,11 @@ install_non_perl_dependencies() {
 	cpanminus_package=
     fi
 
-    if [ "$CODENAME" = "bullseye" ]
+    if [ "$CODENAME" = "trusty" -o "$CODENAME" = "precise" ]
     then
-        freebsdmake_package=bmake
-    else
 	freebsdmake_package=freebsd-buildutils
+    else
+        freebsdmake_package=bmake
     fi
 
     if [ "$CODENAME" = "trusty" -o "$CODENAME" = "precise" ]

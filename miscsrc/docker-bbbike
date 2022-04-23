@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -470,7 +470,8 @@ RUN apt-get install -qqy \\
     libdatetime-event-recurrence-perl \\
     libdatetime-format-iso8601-perl \\
     libkwalify-perl \\
-    libyaml-syck-perl
+    libyaml-syck-perl \\
+    bmake
 EOF
     }
 
@@ -533,7 +534,7 @@ EOF
 
 	    # XXX hmmm --- probably it would be a good idea to wait until the initial CMD was already done
 	    eval {
-		$doit->system(qw(docker exec), $tag, 'sh', '-c', 'cd data && fmake all slow-checks really-slow-checks');
+		$doit->system(qw(docker exec), $tag, 'sh', '-c', 'cd data && bmake all slow-checks really-slow-checks');
 	    };
 	    if ($@) {
 		push @errors, "data build errored: $@";
@@ -722,10 +723,9 @@ RUN apt-get install -qqy --no-install-recommends \\
       libmime-lite-perl
 EOF
     if ($opt{mapserver}) {
-	# freebsd-buildutils for pmake/fmake needed
 	$dockerfile .= <<EOF;
 RUN apt-get install -qqy --no-install-recommends \\
-      freebsd-buildutils mapserver-bin cgi-mapserver
+      bmake mapserver-bin cgi-mapserver libobject-iterate-perl
 EOF
     }
     $dockerfile .= <<EOF;

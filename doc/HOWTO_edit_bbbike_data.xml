@@ -264,10 +264,11 @@
   dass bei <link
   xlink:href="http://sourceforge.net/project/showfiles.php?group_id=91459package_id=115420">Sourceforge</link>
   als <command>pmake</command> im Quellcode erhältlich ist.
-  Debian-Benutzer können das Kommando <command>freebsd-make</command>
-  (bis Debian/wheezy) bzw. <command>fmake</command> (seit Debian/jessie)
-  aus dem Paket <package>freebsd-buildutils</package> verwenden. Ein
-  Windows-Binary existiert noch nicht.</para>
+  Debian-Benutzer können das Kommando <command>bmake</command> (seit
+  Debian/jessie) (alternativ, falls verfügbar,
+  <command>freebsd-make</command> oder <command>fmake</command> oder
+  <command>pmake</command>). Ein Windows-Binary existiert noch
+  nicht.</para>
 
   <para>Mit <command>make</command> im
   <filename>data</filename>-Verzeichnis wird eine Konvertierung

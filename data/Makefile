@@ -2,9 +2,7 @@
 # This Makefile is only usable with a modern version of BSD make (also known
 # as "pmake").
 #
-# Debian users may use fmake from the freebsd-buildutils package. On
-# older Debian versions (wheezy?) the executable is named
-# freebsd-make.
+# Debian users may use bmake from the bmake package.
 #
 # For other systems: the source for pmake can be found at
 #

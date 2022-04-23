@@ -340,7 +340,7 @@ fbsdport-pkg-plist-check: fbsdport
 
 # Debian packages needed for (subparts of) BBBike, loosely
 # categorized:
-DEB_DEVEL=	git-core bison byacc flex g++ freebsd-buildutils gcc \
+DEB_DEVEL=	git-core bison byacc flex g++ bmake gcc \
 		libc6-dev libinline-perl strace rsync less make
 DEB_TEST=	libimage-info-perl libwww-mechanize-perl libemail-mime-perl
 # Note: libpango-perl not available in lenny, only squeeze

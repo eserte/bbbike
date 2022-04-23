@@ -3,12 +3,11 @@ README
 
 Showing bbbike data within Mapserver.
 
-Rough installation procedure on a Debian system (note that for
-Debian/jessie and later "freebsd-make" must be replaced by "fmake"):
+Rough installation procedure on a Debian system:
 
    * Install the following packages:
 
-         sudo apt-get install freebsd-buildutils apache2 cgi-mapserver \
+         sudo apt-get install bmake apache2 cgi-mapserver \
                               mapserver-bin libclass-accessor-perl \
                               libxbase-perl libtext-unidecode-perl \
 			      libwww-mechanize-formfiller-perl \
@@ -16,7 +15,7 @@ Debian/jessie and later "freebsd-make" must be replaced by "fmake"):
 
    * Prepare apache:
 
-         (cd ../../cgi && freebsd-make httpd.conf)
+         (cd ../../cgi && bmake httpd.conf)
 
      The resulting httpd.conf should be included into apache, e.g.
 
@@ -33,12 +32,12 @@ Debian/jessie and later "freebsd-make" must be replaced by "fmake"):
 
    * Create the mapserver data:
 
-         (cd ../../data && freebsd-make mapfiles)
+         (cd ../../data && bmake mapfiles)
 
    * Create the mapserver templates and mapfiles:
 
          touch -t 197001010000 Makefile.local.inc
-         freebsd-make
+         bmake
 
    * Point your browser to http://localhost/bbbike/cgi/bbbike.cgi
      bbbike should appear. In the footer there's a link to the
@@ -48,4 +47,4 @@ Debian/jessie and later "freebsd-make" must be replaced by "fmake"):
      use a real (external) hostname run
 
          touch -t 197001010000 Makefile.automatic.inc
-         freebsd-make TARGET=automatic WWW_HOST=www.example.com
+         bmake TARGET=automatic WWW_HOST=www.example.com

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2017,2018,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2017,2018,2021,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeBuildUtil;
 
 use strict;
 use vars qw($VERSION @EXPORT_OK);
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 use Exporter 'import';
 @EXPORT_OK = qw(get_pmake module_path module_version get_modern_perl);
@@ -34,10 +34,11 @@ sub get_pmake (;@) {
     (
      $^O =~ m{bsd}i                             ? "make"         # standard BSD make
      : $^O eq 'darwin' && is_in_path('bsdmake') ? 'bsdmake'      # homebrew bsdmake package
+     : is_in_path("bmake")			? 'bmake'        # debian jessie and later (package bmake)
      : is_in_path("fmake")                      ? "fmake"        # debian jessie .. buster (package freebsd-buildutils)
      : is_in_path("freebsd-make")               ? "freebsd-make" # debian wheezy and earlier
-     : -x '/usr/bin/pmake'			? '/usr/bin/pmake' # debian jessie and later (package bmake)
-     : !$fallback                               ? die "No BSD make found on this system --- try to install bsdmake, fmake, pmake, or something similar"
+     : -x '/usr/bin/pmake'			? '/usr/bin/pmake' # debian jessie and later (package bmake, just a symlink to bmake)
+     : !$fallback                               ? die "No BSD make found on this system --- try to install bsdmake, bmake, fmake, pmake, or something similar"
      : "pmake"                                                   # self-compiled BSD make, maybe. Note that pmake may also be a script that comes with the CPAN module Make.pm, which is not a BSD make
     );
 }
