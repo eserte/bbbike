@@ -28,7 +28,7 @@ init_env_vars() {
     # The default www.cpan.org may not be the fastest one, and may
     # even cause problems if an IPv6 address is chosen...
     export PERL_CPANM_OPT="$PERL_CPANM_OPT --mirror https://cpan.metacpan.org --mirror http://cpan.cpantesters.org"
-    CODENAME=$(lsb_release -c -s || perl -nle '/^VERSION_CODENAME=(.*)/ and print $1' /etc/os-release)
+    CODENAME=$(lsb_release -c -s || perl -nle '/^VERSION_CODENAME="?([^"]+)/ and $codename=$1; /^VERSION="\d+ \((.*)\)/ and $maybe_codename=$1; END { print $codename // $maybe_codename }' /etc/os-release)
     if [ "$CODENAME" = "" ]
     then
 	if grep -q "Ubuntu 12.04" /etc/issue

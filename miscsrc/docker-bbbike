@@ -719,9 +719,9 @@ RUN apt-get install -qqy --no-install-recommends \\
 RUN add-apt-repository ppa:eserte/bbbike
 EOF
     } else {
-	$dockerfile .= <<EOF;
+	$dockerfile .= <<'EOF';
 RUN wget -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | apt-key add -
-RUN CODENAME=\$(perl -nle '/^VERSION="\\d+ \\((.*)\\)/ and print \$1' /etc/os-release); echo deb http://mydebs.bbbike.de \${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~ && mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
+RUN CODENAME=$(perl -nle '/^VERSION_CODENAME="?([^"]+)/ and $codename=$1; /^VERSION="\d+ \((.*)\)/ and $maybe_codename=$1; END { print $codename // $maybe_codename }' /etc/os-release); echo deb http://mydebs.bbbike.de ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~ && mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
 EOF
     }
     $dockerfile .= <<EOF;
