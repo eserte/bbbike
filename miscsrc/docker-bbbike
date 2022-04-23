@@ -376,7 +376,7 @@ EOF
 RUN apt-get update -qq && apt-get install -qqy git cpanminus libssl-dev wget
 EOF
     if (
-	$opt{distver} eq 'precise' || $opt{distver} eq 'xenial' || $opt{distver} eq 'bionic' || $opt{distver} eq 'focal' ||
+	($opt{dist} eq 'ubuntu' && $opt{distver} ne 'trusty') ||
 	$opt{dist} eq 'debian'
        ) {
 	# Lacking packages in precise and bionic (18.04) (and debian/stretch, lsb-release at least)
@@ -670,10 +670,16 @@ FROM $opt{dist}:$opt{distver}
 EOF
     _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
     my $docker_port = 5000;
+    my $fonts_dejavu_package = (
+				(
+				 ($opt{dist} eq 'ubuntu' && $opt{distver} =~ m{^(trusty|precise|xenial)$}) ||
+				 ($opt{dist} eq 'debian' && $opt{distver} =~ 'wheezy')
+				) ? 'ttf-dejavu' : 'fonts-dejavu'
+			       );
     $dockerfile .= <<EOF;
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -qqy --no-install-recommends \\
-      libgd3 libgd-gd2-perl ttf-bitstream-vera ttf-dejavu \\
+      libgd3 libgd-gd2-perl ttf-bitstream-vera $fonts_dejavu_package \\
       libpdf-create-perl libcairo-perl libpango-perl libfont-afm-perl \\
       libimager-perl libsvg-perl librsvg2-bin \\
       libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \\

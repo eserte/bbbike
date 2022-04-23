@@ -86,7 +86,7 @@ init_apt() {
 # - libdb-dev:              prerequisite for DB_File
 # - agrep + tre-agrep:      needed as String::Approx alternative
 # - libgd2-xpm-dev or libgd-dev: prerequisite for GD
-# - ttf-bitstream-vera + ttf-dejavu: fonts e.g. for BBBikeDraw::GD
+# - ttf-bitstream-vera + fonts-dejavu: fonts e.g. for BBBikeDraw::GD
 # - xvfb + fvwm:            some optional tests require an X server
 # - libmozjs-24-bin or rhino: javascript tests
 # - imagemagick:            typ2legend test
@@ -149,11 +149,11 @@ install_non_perl_dependencies() {
 	freebsdmake_package=freebsd-buildutils
     fi
 
-    if [ "$CODENAME" = "bullseye" ]
+    if [ "$CODENAME" = "trusty" -o "$CODENAME" = "precise" ]
     then
-        dejavu_package=fonts-dejavu
-    else
 	dejavu_package=ttf-dejavu
+    else
+        dejavu_package=fonts-dejavu
     fi
 
     sudo -E apt-get install -y $apt_quiet --no-install-recommends $freebsdmake_package $libproj_packages libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera $dejavu_package gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $cpanminus_package
