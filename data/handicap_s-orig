@@ -185,7 +185,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
-#: last_checked: 2022-04-05 (osm)
+#: last_checked: 2022-04-23 (mapillary) (Sackgassenschild)
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -229,7 +229,7 @@ Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 #: next_check_id: CHAUSSEE-2020
 #: source_id: 2147346552 (bis 16.7.2021)
 #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert) (mittlerweile bis 31.7.2022)
-#: last_checked: 2022-03-26 (mapillary)
+#: last_checked: 2022-04-23 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2022-07-31
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456
@@ -481,7 +481,7 @@ Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 # REMOVED (fertig) --- #: next_check_id: ZWIESELER-2022 --- #: last_checked: 2022-03-20 --- #: check_frequency: 60d --- Richard-Kolkwitz-Weg: Engstelle wegen Bauarbeiten	q2::inwork 19711,10426 19813,10468
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2022-04-22 vvv
+#: last_checked: 2022-04-24 vvv
 Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17461,8693 17656,8700 17640,8627 17497,8623
 Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17461,8693
 Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17461,8693 17497,8623
@@ -556,11 +556,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg,
 # 
 ### Köpenick ###
 # 
-#: next_check_id: WUHLHEIDE-2021
-#: last_checked: 2022-03-06
-#: check_frequency: 45d
-Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 20629,7189 20575,7226
-# 
+# REMOVED (Bauarbeiten weitgehende fertig) --- #: next_check_id: WUHLHEIDE-2021 --- #: last_checked: 2022-03-06 --- #: check_frequency: 45d --- Am Bahnhof Wuhlheide: Bauarbeiten, Engstellen	q3-::inwork 20640,7122 20654,7136 20629,7189 20575,7226
 # REMOVED --- #: XXX laut bahninfo-forum wird die Baustelle mittlerweile bis März 2020 gehen (genauer: 6.3.2020), laut fritz bis 5.3.2020 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/reparaturarbeiten-dauern-bis-maerz-2020_a245005 (bis Mitte März 2020) --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/ab-7-maerz-faehrt-die-tram-wieder_a251845 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-in-der-bahnhofstrasse_a252970 --- #: by: https://www.bahninfo-forum.de/read.php?9,642252,658082#msg-658082 (letzte Deckschickt wird aufgetragen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.900893.php (Verlängerung bis 9. März 2020) --- #: source_id: 2147344732 (bis 06. März 2020) --- #: priority: #B --- #: last_checked: 2020-02-22 (mittlerweile aber Fahrbahn fast fertig) --- #: check_frequency: 3d --- #: next_check: 2020-03-06 --- #: valid: -20200306 --- Seelenbinderstr.: Fahrbahn wegen Bauarbeiten gesperrt, enger gemeinsamer Geh- und Radweg	q3::inwork 22292,5774 22513,5747
 # REMOVED (vermutlich (hoffentlich) ist der neue Geh/Radweg breit genug) --- #: next_check_id: SALVADORALLENDEBRUECKE-2017 --- #: last_checked: 2020-06-14 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2021-12-31 vvv --- Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23404,5325 23420,5159 --- Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23433,5037 23444,4942 23451,4877 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: last_checked: 2012-10-21 --- #: next_check: 2012-11-01 --- Elcknerplatz, Borgmannstr.: Bauarbeiten, Einbahnstraße	q4::inwork; 22478,6041 22544,6037 22539,5956
