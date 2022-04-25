@@ -74,7 +74,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr.
-#: last_checked: 2022-04-20
+#: last_checked: 2022-04-25
 #: check_frequency: 90d
 #: next_check: 2022-06-30
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -793,6 +793,9 @@ Köllnische Heide: Verbesserung der Befahrbarkeit geplant, genaue Lage des Forstw
 #: by: https://www.bahninfo-forum.de/read.php?9,728847,728847#msg-728847 (Betriebshof Adlershof Neubau)
 #: by: https://vergabekooperation.berlin/NetServer/PublicationControllerServlet?function=Detail&TOID=54321-NetTender-17f923ad975-30b9686392bcdd81&Category=InvitationToTender (erster Bauabschnitt endet Ende 2028, zweiter Bauabschnitt 2030)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_15_0917_0976_online.pdf (Planunterlagen)
+#: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/planfeststellungen/bekanntmachungen/neubau-des-strassenbahnbetriebshofs-adlershof/
+#: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=898B7E54-5343-4430-A677-8F1299293310&plugid=/ingrid-group:ige-iplug-be&docid=898B7E54-5343-4430-A677-8F1299293310
+#: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/898B7E54-5343-4430-A677-8F1299293310/UL03_Lageplan.pdf
 #: last_checked: 2021-09-09
 #: check_frequency: 720d
 #: next_check: 2028-12-31
@@ -1289,7 +1292,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285
 #: source_id: 2147344033 (bis Mitte Juli 2019; haben die Bauarbeiten was mit der Radwegführung zu tun?) (inaktiv)
 #: source_id: 2147346379 (bis 16.10.2020; beziehen sich die Bauarbeiten auf diese Verbindung oder den Radweg auf der Prenzlauer Promenade?) (keine Bauarbeiten zu erkennen)
 #: XXX war mal bei infravelo gelistet (id 9030023, URL http://www.infravelo.de/projekt/caligariplatz-2/, Bauende 3. Quartal 2023), ist aber mittlerweile (2021-02) verschwunden
-#: last_checked: 2022-03-07 (mapillary)
+#: last_checked: 2022-04-24 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2020-10-16
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str., vielleicht als Zweirichtungsradweg?	?::projected 12121,16317 12097,16263 12090,16199
@@ -2112,7 +2115,7 @@ Mellowpark: geplanter Uferweg	?::projected 21567,5727 21463,5640 21355,5679 2124
 # REMOVED (weitgehend fertig) --- #: source_id: 2147344045 (bis Mitte Juli 2019) --- #: last_checked: 2019-04-23 (zumindest stehen schon die Straßenbaken für die Bauarbeiten) --- #: next_check: 2019-07-09 -- Landsberger Allee: Ausbau der Radwege	?; 14771,14048 14343,13882 14291,13862 14218,13834
 # 
 #: XXX evtl. im Zusammenhang der Bebauungspläne 11-123 und 11-61, beide noch nicht festgesetzt (Stand Anfang 2022; seit 2016 keine Bewegung bei den B-Plänen)
-#: osm_watch: way id="25793149" version="21"
+#: osm_watch: way id="25793149" version="22"
 #: last_checked: 2022-01-19
 #: check_frequency: 360d
 Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::projected 17010,14269 17060,14255 17198,14269
@@ -2192,7 +2195,7 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 #: by: https://api.fixmyberlin.de/api/projects/322
 #: osm_watch: way id="488431238" version="6"
 #: osm_watch: way id="488430846" version="8"
-#: last_checked: 2022-03-30 (mapillary)
+#: last_checked: 2022-04-24 (mapillary)
 #: check_frequency: 30d
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16079 11618,16183
 # REMOVED (hier realisiert) --- Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11618,16183 11666,16260 11698,16311 11727,16358
@@ -5098,7 +5101,7 @@ Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,
 #: by: http://www.infravelo.de/projekt/oderberger-strasse/ (4. Quartal 2021 - 2. Quartal 2022) (mittlerweile "in Bau") (mittlerweile 1. Quartal 2022 - 2. Quartal 2022)
 #: osm_watch: way id="41828679" version="20"
 #: osm_watch: way id="42156202" version="21"
-#: last_checked: 2022-02-26
+#: last_checked: 2022-04-24 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2022-06-30
 Oderberger Str.: Planung einer Fahrradstraße	?::projected 10372,14994 10379,14963 10401,14963 10723,14772 10864,14692 10893,14705
@@ -5109,12 +5112,15 @@ Oderberger Str.: Planung einer Fahrradstraße	?::projected 10372,14994 10379,1496
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-05-02-2020.pdf (Erwähnung)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5436 (Zwischenbericht: 1. Bauabschnitt: Danziger/Eberswalder - Stargarder/Gleim)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4925 (Zwischenbericht, Verweis auf die Drucksache oben)
-#: by: http://www.infravelo.de/projekt/schoenhauser-allee/ (3. - 4. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/schoenhauser-allee/ (3. - 4. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 1. Quartal 2023)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1128430.php (Planungen gestartet, fertig im Herbst 2022)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/planungen-fuer-die-schoenhauser-allee-haben-begonnen_a323363
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1199091.php
+#: by: https://berliner-abendblatt.de/2022/04/25/schoenhauser-allee-mehr-platz-fuer-radfahrer-und-fussgaenger/
+#: by: https://www.bz-berlin.de/berlin/pankow/radikal-umbau-schoenhauser-allee-wird-zur-fahrradallee
 #: last_checked: 2021-12-22 (mapillary)
 #: check_frequency: 180d
-#: next_check: 2022-11-15
+#: next_check: 2023-03-31
 Schönhauser Allee: Radwege sollen zu einer protected bike lane umgewandelt werden	?::projected 10881,15047 10883,15129 10886,15251 10887,15287 10902,15422 10917,15525 10941,15697 10953,15787
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20161010 --- Grünfließer Gang: hat sich hier etwas nach den Bauarbeiten geändert/verbessert?	? 23675,5823 23675,5729 23675,5706 23681,5579
@@ -6083,6 +6089,8 @@ Vorarlberger Damm: Erneuerung des Radwegs	?::projected; 7227,7352 7101,7198 6991
 #: by: https://twitter.com/VIZ_Berlin/status/1498564359043252225 (Bauarbeiten bis April 2022)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198245.php (Poller, bis zum 29.4.2022)
 #: by: https://nitter.net/VIZ_Berlin/status/1517113603287138304#m
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/rund-530-poller-werden-am-radweg-installiert_a343484
+#: by: https://berliner-abendblatt.de/2022/04/25/gemeinsames-anradeln-auf-dem-tempelhofer-damm/
 #: source_id: viz2021:13.385593,52.465718,08.12.2021,10:21 (bis 28.1.2022) (mittlerweile bis 31.3.2022) (mittlerweile bis 8.3.2022) (inaktiv)
 #: source_id: viz2021:13.385594,52.464277,08.12.2021,10:21 (bis 28.1.2022) (mittlerweile bis 31.3.2022) (inaktiv)
 #: source_id: viz2021:13.384119,52.457228,08.03.2022,08:00 (stadteinwärts, bis 6.5.2022)

@@ -994,7 +994,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,24.05.2022,15:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-04-20 vvv
+#: last_checked: 2022-04-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169
@@ -5033,6 +5033,7 @@ ehemaliger Radweg existiert noch teilweise	RW0; 6074,4172 6051,4151 6006,4127
 mäßiger Radweg und für Radfahrer freigegebene Busspur (Geltungszeiten Mo-Fr 14-19 Uhr)	RW1; 6120,4214 6248,4127
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1196812.php (Sanierung bis Ende Juli 2022)
 #: by: https://berliner-abendblatt.de/2022/04/19/bauarbeiten-in-der-leonorenstrasse/
+#: by: https://www.berliner-woche.de/lankwitz/c-bauen/geh-und-radweg-wird-saniert_a343217
 #: source_id: viz2021:13.342002,52.441544,25.04.2022,09:00 (bis 23.7.2022)
 #: XXX Wird der Radweg danach asphaltiert sein?
 #: next_check: 2022-07-23
@@ -6454,7 +6455,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2022-03-25 (mapillary) vvv
+#: last_checked: 2022-04-24 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183
 	RW3; 11542,16070 11531,16053
@@ -7235,6 +7236,8 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/fdp-stellt-ihr-verkehrskonzept-fuer-kantstrasse-vor_a288349
 #: by: https://berliner-abendblatt.de/2021/12/09/radweg-an-der-kantstrasse-vorantreiben/
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/umwelthilfe-lobt-pop-up-radweg-auf-der-kantstrasse_a330752
+#: by: https://www.tagesspiegel.de/berlin/streit-um-verkehrskonzept-berlin-will-busspur-statt-parkplaetzen-an-der-kantstrasse/28274762.html
+#: by: https://berliner-abendblatt.de/2022/04/25/nur-eine-spur-fuer-autos-in-kantstrasse-fdp-kritisiert-konzept/
 #: last_checked: 2022-04-09 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
