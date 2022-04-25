@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.77;
+$VERSION = 1.78;
 
 use vars qw(%images);
 
@@ -825,6 +825,7 @@ sub showmap_url_openstreetmap {
     } else {
 	if ($variant eq 'de') {
 	    $with_marker = 0; # not implemented on openstreetmap.de
+	    $layers_spec = '&layers=B00TT';
 	} elsif ($variant eq 'sautter') {
 	    $with_marker = 0; # not implemented on sautter.com
 	    $layers_spec = '&layers=B000000FTFFFFTFF';
@@ -832,7 +833,7 @@ sub showmap_url_openstreetmap {
 	    $layers_spec = "&layers=$args{layers}";
 	}
 	my $mpfx = $with_marker ? 'm' : ''; # "marker prefix"
-	my $base_url = (  $variant eq 'de'      ? 'http://www.openstreetmap.de/karte.html'
+	my $base_url = (  $variant eq 'de'      ? 'https://openstreetmap.de/karte/'
 			  : $variant eq 'sautter' ? 'http://sautter.com/map/'
 			  :                         'http://www.openstreetmap.org/index.html'
 		       );
