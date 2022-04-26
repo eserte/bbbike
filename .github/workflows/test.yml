@@ -96,18 +96,27 @@ jobs:
           - dist:                       debian
             distver:                    jessie
             bbbike_test_skip_mapserver: 0
+            use_bbbike_ppa:             0
           - dist:                       debian
             distver:                    stretch
             bbbike_test_skip_mapserver: 0
+            use_bbbike_ppa:             0
           - dist:                       debian
             distver:                    buster
             bbbike_test_skip_mapserver: 0
+            use_bbbike_ppa:             0
           - dist:                       debian
             distver:                    bullseye
             bbbike_test_skip_mapserver: 0
+            use_bbbike_ppa:             0
           - dist:                       ubuntu
             distver:                    trusty
             bbbike_test_skip_mapserver: 0
+            use_bbbike_ppa:             0
+          - dist:                       ubuntu
+            distver:                    jammy
+            bbbike_test_skip_mapserver: 0
+            use_bbbike_ppa:             1
     steps:
     - name: network check
       run: |
@@ -117,4 +126,4 @@ jobs:
       run: |
         set -e
         sudo apt-get install -y libipc-run-perl
-        ./miscsrc/docker-bbbike test --dist ${{ matrix.dist }} --distver ${{ matrix.distver }} --src local --jobs 8 --env BBBIKE_TEST_SKIP_MAPSERVER=${{ matrix.bbbike_test_skip_mapserver }}
+        ./miscsrc/docker-bbbike test --dist ${{ matrix.dist }} --distver ${{ matrix.distver }} --src local --jobs 8 --env BBBIKE_TEST_SKIP_MAPSERVER=${{ matrix.bbbike_test_skip_mapserver }} --env USE_BBBIKE_PPA=${{ matrix.use_bbbike_ppa }}
