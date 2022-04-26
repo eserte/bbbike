@@ -107,14 +107,17 @@ SKIP: {
 	pass("Sent route...");
     }
 
- SKIP: {
-	skip("Requires gpsbabel with gpsman support", 2)
-	    if !$gpsb->gpsbabel_supports('gpsman');
+    {
 	my(undef, $gpxfile) = tempfile(UNLINK => 1,
 				       SUFFIX => ".gpx");
 	$gpsb->strassen_to_gpsbabel($s, "gpx", $gpxfile, as => "track");
 	my $s2 = $gpsb->convert_to_strassen_using_gpsbabel($gpxfile, title => "test title", input_format => "gpx");
 	isa_ok($s2, "Strassen", "Converted data is a Strassen object");
+	if ($debug && $keep) {
+	    my $dstfile = "/tmp/gpsbabel.t.$$.bbd";
+	    warn "Write file $dstfile...\n";
+	    $s2->write($dstfile);
+	}
 
 	# This test used to simply compare the first and last
 	# coordinate in the source and generated file. Unfortunately

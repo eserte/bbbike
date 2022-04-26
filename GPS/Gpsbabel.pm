@@ -17,7 +17,7 @@ push @ISA, 'GPS';
 
 use strict;
 use vars qw($VERSION $GPSBABEL $DEBUG);
-$VERSION = '1.20';
+$VERSION = '1.21';
 
 use File::Basename qw(dirname);
 use BBBikeUtil qw(is_in_path bbbike_root);
@@ -96,35 +96,33 @@ sub convert_to_route {
     @coords;
 }
 
+# Note: in the case of .gpx as input file gpsbabel is not used.
 sub convert_to_strassen_using_gpsbabel {
     my($self, $file, %args) = @_;
     my $title = $args{title} || $file;
     my $input_format = $args{input_format} || die "input_format is missing";
-    require File::Temp;
-    my(undef,$ofilename) = File::Temp::tempfile(UNLINK => 1);
-    my @cmd = ("-t",
-	       "-i", $input_format, "-f", $file,
-	       "-o", "gpsman", "-F", $ofilename,
-	      );
-    warn "Run\n    @cmd\n    ...\n" if $DEBUG;
-    $self->run_gpsbabel([@cmd]);
-    # Hack: set track name
-    my($o2fh,$o2filename) = File::Temp::tempfile(UNLINK => 1);
-    open my $F, $ofilename
-	or die "Can't open $ofilename: $!";
-    while(<$F>) {
-	s/(^!T:)/$1\t$title/;
-	print $o2fh $_;
+    my($gpxfile, $tmpfile);
+    if ($input_format ne 'gpx') {
+	require File::Temp;
+	(undef,$tmpfile) = File::Temp::tempfile(UNLINK => 1);
+	my @cmd = ("-t",
+		   "-i", $input_format, "-f", $file,
+		   "-o", "gpx", "-F", $tmpfile,
+		  );
+	warn "Run\n    @cmd\n    ...\n" if $DEBUG;
+	$self->run_gpsbabel([@cmd]);
+	$gpxfile = $tmpfile;
+    } else {
+	$gpxfile = $file;
     }
-    close $F;
-    close $o2fh
-	or die "Error writing to $o2filename: $!";
 
-    require Strassen::Gpsman;
-    my $s = Strassen::Gpsman->new($o2filename, cat => "#000080");
+    require Strassen::GPX;
+    my $s = Strassen::GPX->new($gpxfile, cat => "#000080");
+    $s->set_global_directives({title => [$title]});
 
-    unlink $ofilename unless $File::Temp::KEEP_ALL;
-    unlink $o2filename unless $File::Temp::KEEP_ALL;
+    if (defined $tmpfile) {
+	unlink $tmpfile unless $File::Temp::KEEP_ALL;
+    }
 
     $s;
 }
