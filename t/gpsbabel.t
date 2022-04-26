@@ -107,7 +107,9 @@ SKIP: {
 	pass("Sent route...");
     }
 
-    {
+ SKIP: {
+	skip("Requires gpsbabel with gpsman support", 2)
+	    if !$gpsb->gpsbabel_supports('gpsman');
 	my(undef, $gpxfile) = tempfile(UNLINK => 1,
 				       SUFFIX => ".gpx");
 	$gpsb->strassen_to_gpsbabel($s, "gpx", $gpxfile, as => "track");

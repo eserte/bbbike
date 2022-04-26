@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2008,2012,2013,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2008,2012,2013,2015,2016,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -178,6 +178,19 @@ sub gpsbabel_available {
     } else {
 	return is_in_path($GPSBABEL);
     }
+}
+
+sub gpsbabel_supports {
+    my($self, $fileformat) = @_;
+    die "gpsbabel_supports can currently only check if 'gpsman' support is built in.\n"
+	if $fileformat ne 'gpsman';
+    open my $ofh, '-|', 'gpsbabel', '-h' or die $!;
+    while(<$ofh>) {
+	if (/\b\Q$fileformat\E\b/) {
+	    return 1;
+	}
+    }
+    return 0;
 }
 
 # May be called also as a static method
