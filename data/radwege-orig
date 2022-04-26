@@ -1246,7 +1246,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="17"
-#: last_checked: 2022-04-21
+#: last_checked: 2022-04-26
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1260,7 +1260,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="30"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2022-04-21
+#: last_checked: 2022-04-26
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -2735,6 +2735,7 @@ neu asphaltiert	RW2; -1350,14646 -1337,14538
 	RW2; -3355,14764 -3470,14836 -3561,14918 -3638,14995
 	RW1; -3638,14995 -3857,15205 -3937,15299 -4110,15367 -4308,15411 -4466,15460 -4591,15496
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1196437.php
+#: by: https://www.berliner-woche.de/spandau/c-verkehr/lueckenschluss-auf-radweg_a343064
 #: note: früher alte Gehwegplatten
 neu asphaltiert, relativ breit	RW1; -4591,15496 -4466,15460
 neu asphaltiert, relativ breit	RW1; -4466,15460 -4308,15411 -4110,15367 -3937,15299
@@ -7371,7 +7372,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 #: XXX: Werden die provisorischen Radspuren wieder entfernt? vvv
 #: priority: #A vvv
 #: last_checked: 2022-03-12 vvv
-#: check_frequency: 45d vvv
+#: check_frequency: 48d vvv
 # REMOVED --- #: next_check: 2021-10-18 vvv
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"

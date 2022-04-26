@@ -30917,7 +30917,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-04-23
+#: last_checked: 2022-04-26
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31293,6 +31293,8 @@ EOF
        data  => <<EOF,
 #: XXX_prog: eigentlich q3-::inwork
 #: also_indoor: traffic (G,H)
+#: last_checked: 2022-04-25 (mapillary)
+#: next_check: 2022-09-30
 	q3::inwork 3348,9806 3340,9700
 EOF
      },
@@ -34967,6 +34969,16 @@ EOF
 #: next_check: 2022-06-22
 	q4::inwork; -5804,16415 -5830,16356 -5849,16199
 # REMOVED (Radspur existiert in der Gegenrichtung) ---	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Zähringerstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2022-04-25 (mapillary)
+#: check_frequency: 60d
+	q4::inwork; 4277,9895 4126,9932 3927,9935
 EOF
      },
     );

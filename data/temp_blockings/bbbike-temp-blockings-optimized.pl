@@ -3523,7 +3523,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-04-23
+#: last_checked: 2022-04-26
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3607,6 +3607,8 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: XXX_prog: eigentlich q3-::inwork
 #: also_indoor: traffic (G,H)
+#: last_checked: 2022-04-25 (mapillary)
+#: next_check: 2022-09-30
 	q3::inwork 3348,9806 3340,9700
 ',
          'from' => 1587963600,
@@ -5067,6 +5069,17 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), voraussichtlich bis 30. Juni 2022',
          'type' => 'handicap',
          'until' => 1656626399
+       },
+       {
+         'data' => '#: last_checked: 2022-04-25 (mapillary)
+#: check_frequency: 60d
+	q4::inwork; 4277,9895 4126,9932 3927,9935
+',
+         'from' => undef,
+         'id' => 3540,
+         'text' => 'Zähringerstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
