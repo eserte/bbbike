@@ -55,7 +55,7 @@ my $max_delta = 180;
 my $for_person;
 my $gps_track_sync_grace_time = 14; # in days; means that GPS track syncs may happen that number of days after making the photos
 my $mode = 'external-geocoding';
-my @valid_modes = qw(external-geocoding manipulate-copy);
+my @valid_modes = qw(external-geocoding manipulate-copy manipulate-inplace);
 
 my $lax_iso_date_qr = qr{^(\d{4})\D*(\d{2})\D*(\d{2})T(\d{2})\D(\d{2})\D(\d{2})};
 my $clock_qr        = qr{^\d{1,2}:\d{2}(:\d{2})?};
@@ -284,6 +284,7 @@ sub get_image_location {
 			    Waypoint => undef, # ? XXX
 			    Date     => $iso_date,
 			    Used     => "exact",
+			    Source   => "image",
 			  };
 		return $ret;
 	    }
@@ -385,6 +386,7 @@ sub get_image_location {
 				Waypoint => undef, # !
 				Date     => $iso_date,
 				Used     => $used,
+				Source   => "trk",
 			      };
 		    return $ret;
 		}
@@ -495,14 +497,15 @@ sub get_image_location {
 		     Delta     => $delta,
 		     Waypoint  => $got_wpt,
 		     Date      => $iso_date,
+		     Source   => "trk",
 		   };
 	}
     }
     undef;
 }
 
-if ($mode eq 'manipulate-copy') {
-    manipulate_copy();
+if  ($mode =~ m{^manipulate-(copy|inplace)$}) {
+    manipulate(mode => $1);
     exit;
 }
 
@@ -941,23 +944,31 @@ sub _isodate_to_epoch ($) {
     timelocal($s,$m,$h,$D,$M-1,$Y-1900);
 }
 
-sub manipulate_copy {
-    # Note: in this mode, $out_file is really a directory
-    if (!defined $out_file) {
-	die "Please define output directory (option -o)\n";
+sub manipulate {
+    my(%opts) = @_;
+    my $mode = delete $opts{mode} || die "mode is mandatory";
+    my $inplace;
+    if ($mode eq 'inplace') {
+	$inplace = 1;
+    } elsif ($mode eq 'copy') {
+	# Note: in this mode, $out_file is really a directory
+	require File::Copy;
+	if (!defined $out_file) {
+	    die "Please define output directory (option -o)\n";
+	}
+	if (!-e $out_file) {
+	    mkdir $out_file
+		or die "Cannot create output directory <$out_file>: $!\n";
+	} elsif (!-d $out_file) {
+	    die "<$out_file> exists, but is not a directory\n";
+	}
+    } else {
+	die "mode must be either 'copy' or 'inplace', not '$mode'";
     }
-    if (!-e $out_file) {
-	mkdir $out_file
-	    or die "Cannot create output directory <$out_file>: $!\n";
-    } elsif (!-d $out_file) {
-	die "<$out_file> exists, but is not a directory\n";
-    }
-
-    require File::Copy;
 
     for my $file (@images) {
 	my $ret = get_image_location($file, interpolate => $do_interpolate, allow_overwrite_gpspos => $allow_overwrite_gpspos);
-	if (defined $ret) {
+	if (defined $ret && $ret->{Source} ne 'image') {
 	    my($lat, $lon, $local_date, $gps_altitude) = @{$ret}{qw(Latitude Longitude Date Altitude)};
 	    my(@lat_dms) = Karte::Polar::ddd2dms($lat);
 	    my(@lon_dms) = Karte::Polar::ddd2dms($lon);
@@ -993,9 +1004,14 @@ sub manipulate_copy {
 		    . " for $file.\n";
 	    }
 
-	    my $o_file = "$out_file/" . basename($file);
-	    File::Copy::copy($file, $o_file)
-		    or die "Can't $file to $o_file: $!";
+	    my $o_file;
+	    if (!$inplace) {
+		$o_file = "$out_file/" . basename($file);
+		File::Copy::copy($file, $o_file)
+			or die "Can't $file to $o_file: $!";
+	    } else {
+		$o_file = $file;
+	    }
 	    my $exiftool = Image::ExifTool->new;
 	    $exiftool->ExtractInfo($o_file);
 	    $exiftool->SetNewValue('GPSLatitude',     $gps_latitude);
@@ -1015,6 +1031,9 @@ sub manipulate_copy {
 		}
 	    }
 	    $exiftool->WriteInfo($o_file);
+	    if ($debug) {
+		warn "Wrote GPS info to $o_file.\n";
+	    }
 	}
     }
 }
