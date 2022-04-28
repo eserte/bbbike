@@ -650,7 +650,8 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 3112,13296 3066,135
 für Radfahrer freigegebene Busspur gilt immer	RW1; 3038,13612 3033,13633 3005,13728
 	RW1; 3038,13612 3066,13514 3112,13296
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 2881,14061 2935,13927 2984,13789 3005,13728 3033,13633 3038,13612
-	RW2; 3005,13728 2984,13789 2935,13927 2881,14061
+neu asphaltiert, etwas breiter	RW2; 3005,13728 2984,13789 2935,13927
+	RW2; 2935,13927 2881,14061
 	RW2;RW2 2881,14061 2860,14118
 neu asphaltiert, relativ breit	RW1; 3279,12533 3271,12609 3269,12648 3291,12721
 asphaltiert	RW2; 3291,12721 3300,12751 3327,12818
@@ -1958,11 +1959,10 @@ asphaltiert, relativ breit	RW1; 6214,13225 6183,13083 6164,12980
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211005_protokoll_radtour.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (Frühjahr 2022)
-#: XXX Radweg wird zu einem (geschützten?) Radfahrstreifen
-#: last_checked: 2022-04-09
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2022-04-15
-	RW3;RW1 5871,12595 5905,12573 5944,12548
+#: by: https://nitter.net/BA_Mitte_Berlin/status/1519246846828363776#m (tatsächlich 150m?)
+#: by: https://nitter.net/pic/media%2FFRVypwxWQAAjeWj.jpg%3Fname%3Dorig
+# REMOVED --- #: XXX Radweg wird zu einem (geschützten?) Radfahrstreifen --- #: last_checked: 2022-04-09 --- #: check_frequency: 90d --- #: next_check: 2022-04-15
+	RW3;RW4 5871,12595 5905,12573 5944,12548
 	RW2;RW1 5944,12548 6025,12494
 	RW4; 7193,7950 7310,7818 7480,7683
 vorhandener Radweg ist abgesperrt	RW5; 7480,7683 7310,7818 7193,7950
@@ -6835,7 +6835,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2022-03-24
+#: last_checked: 2022-04-28
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -7194,7 +7194,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://berliner-abendblatt.de/2022/03/29/kottbusser-strasse-pop-up-radweg-wird-verstetigt/
 #: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-wird-dauerhaft_a340844
-#: last_checked: 2022-04-08 vvv
+#: last_checked: 2022-04-28 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-04-30 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
@@ -7236,7 +7236,8 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/umwelthilfe-lobt-pop-up-radweg-auf-der-kantstrasse_a330752
 #: by: https://www.tagesspiegel.de/berlin/streit-um-verkehrskonzept-berlin-will-busspur-statt-parkplaetzen-an-der-kantstrasse/28274762.html
 #: by: https://berliner-abendblatt.de/2022/04/25/nur-eine-spur-fuer-autos-in-kantstrasse-fdp-kritisiert-konzept/
-#: last_checked: 2022-04-09 vvv
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/senat-will-die-kantstrasse-umbauen_a344111
+#: last_checked: 2022-04-26 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
@@ -7567,4 +7568,10 @@ Tempo 10	RW6;RW6 14089,13247 14035,13104
 # 
 #: note: wegen Fahrbahnschäden (die eigentlich nur für Busse u.ä. problematisch sind)
 Tempo 10	RW6;RW6 13198,12311 13524,12271
+# 
+#: by: mapillary vvv
+Grünmarkierung, Poller	RW4; 5212,10661 5215,10711 5217,10736
+Grünmarkierung, Poller	RW4; 5232,10947 5236,10994 5240,11047
+Grünmarkierung, Poller	RW4;RW4 5254,11237 5258,11285
+#: by ^^^
 # 

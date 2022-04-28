@@ -7,9 +7,16 @@
 # 
 #: temporary vvv
 # 
+#: by: https://berliner-abendblatt.de/2022/04/27/das-sind-die-aktuellen-staufallen-in-berlin/ (bis Anfang Juni 2022)
+#: source_id: viz2021:13.450705,52.480066,28.04.2022,09:00 (hier: bis 4.7.2022)
+#: by: https://nitter.net/VIZ_Berlin/status/1519602332090179585#m (hier: bis Anfang Juni 2022)
+#: by: https://nitter.net/pic/media%2FFRWA3_cWYAAYbnf.jpg%3Fname%3Dorig (südlich der Kreuzung)
+#: valid: -20220704
+Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
+# 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2022-04-22 (mapillary)
+#: last_checked: 2022-04-28
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
@@ -49,10 +56,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check: 2022-12-22
 Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
 # 
-#: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.?
-#: last_checked: 2022-03-02
-#: check_frequency: 90d
-Friedrichstr./Behrenstr.	X::inwork 9373,12197
+# REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: last_checked: 2022-04-24

@@ -1738,6 +1738,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
 #: by: https://berliner-abendblatt.de/2022/03/24/die-maientage-verlassen-neukoelln/ (in Zukunft nicht mehr in der Hasenheide?)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7936
 #: by: https://www.berlin.de/events/2983315-2229501-neukoellner-maientage.html (geplant: 29. April bis 22. Mai 2022)
+#: by: https://berliner-abendblatt.de/2022/04/28/grosser-nachholbedarf-eroeffnung-der-neukoellner-maientage/
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -2370,6 +2371,7 @@ Kleistpark	2::night 7310,9622 7307,9528
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20210416 (Mai-Kundgebung auf dem Platz des 18. März vor dem Brandenburger Tor findet [2021] ... nicht statt)
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20220324 (unklar)
 #: by: https://berlin.dgb.de/++co++0f45cbd8-aeba-11ec-82e9-001a4a160123 (Kundgebung Platz des 18. März, 12 bis 14:30 Uhr)
+#: source_id: viz2021:13.376808,52.516209,30.04.2022,12:00
 #: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
 	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 	2::inwork 8573,12325 8540,12420
@@ -3067,7 +3069,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2022-04-19
+#: last_checked: 2022-04-28
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -3549,7 +3551,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: also_indoor: traffic (G)
-#: osm_watch: way id="934995899" version="4"
+#: osm_watch: way id="934995899" version="5"
 #: osm_watch: way id="934995901" version="6"
 #: last_checked: 2022-04-24 vvv
 #: check_frequency: 14d vvv
@@ -3644,6 +3646,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: source_id: 2147347233 (bis 23.12.2021)
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022)
+#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -3651,6 +3654,8 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv --- #: last_checked: 2020-12-27 (mapillary) vvv --- #: next_check: 2021-05-03 vvv
 #: note: nur etwa 100m, deshalb q3 statt q4
 	q3::inwork 4515,4760 4214,4595
+#: note: Einbahnstraßenregelung, bis 30.6.2022
+	q4::inwork; 3643,4232 3523,4139
 # REMOVED --- #: note: hier nur ein kurzes Stück ---	q2::inwork; 4214,4595 4039,4500
 # REMOVED (nicht mehr, laut rbb) ---	q4::inwork 4179,4662 4214,4595
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
@@ -3659,7 +3664,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'from' => 1622356200,
          'id' => 3261,
          'source_id' => '2147345834',
-         'text' => 'Gardeschützenweg: Fahrbahn am Hindenburgdamm gesperrt, vom 31.05.2021 bis 30.09.2022',
+         'text' => 'Gardeschützenweg: Fahrbahn am Hindenburgdamm sowie zwischen Tietzenweg und Viktoriaplatz gesperrt, vom 31.05.2021 bis 30.09.2022',
          'type' => 'handicap',
          'until' => 1664550000
        },
@@ -3716,7 +3721,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX Es gibt nun eine weitere Baustelle, Halteverbotschilder bis Ende Dezember 2022
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
 #: osm_watch: way id="759405498" version="2"
-#: last_checked: 2022-01-15
+#: last_checked: 2022-04-26 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2022-12-28
 	q3::inwork; 5192,10241 5196,10398
@@ -4912,7 +4917,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
 #: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022)
 #: also_indoor: traffic (B)
-#: last_checked: 2022-04-12 (mapillary)
+#: last_checked: 2022-04-28
 #: next_check: 2022-05-13
 	q4::inwork 11273,12301 11355,12331
 ',
@@ -5027,7 +5032,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => 1656626399
        },
        {
-         'data' => '#: last_checked: 2022-04-25 (mapillary)
+         'data' => '#: last_checked: 2022-04-26 (mapillary)
 #: check_frequency: 60d
 	q4::inwork; 4277,9895 4126,9932 3927,9935
 ',

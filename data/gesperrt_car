@@ -1218,8 +1218,8 @@ Hundekehlestr. -> Sulzaer Str.: Mittelstreifen	3::igndisp 2346,7684 2460,7658 24
 Sulzaer Str. -> Hundekehlestr.: Mittelstreifen	3::igndisp 2499,7883 2460,7658 2565,7637
 Lietzenburger Str.	3nocross::ignrte 5047,10381 5196,10398 5313,10420
 Lietzenburger Str. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5313,10420 5196,10398 5192,10241
-Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5313,10420
-Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 5192,10241
+Fasanenstr. -> Lietzenburger Str.: Lietzenburger Str.	3::igndisp 5212,10661 5196,10398 5313,10420
+Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5212,10661 5196,10398 5192,10241
 Sybelstr.	1 3981,10590 3883,10585
 Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10418
 Clausewitzstr.	1 3971,10381 4007,10559
@@ -1706,7 +1706,7 @@ Fasanenstr. (Ahrensfelde): Poller	3 22092,19121 22031,19261 22012,19308
 Fasanenstr. (Ahrensfelde): Poller	3 22092,19121 22031,19261 22049,19268
 Oelder Weg	1 1967,18743 1965,18686
 Bernhard-Lichtenberg-Platz	1 2643,18738 2731,18729 2867,18736
-Fasanenstr.	1 5196,10398 5215,10711 5230,10919 5236,10994 5241,11060 5258,11285
+Fasanenstr.	1 5196,10398 5212,10661 5215,10711 5217,10736 5230,10919 5232,10947 5236,10994 5240,11047 5254,11237 5258,11285
 Straﬂenbahntrasse	3nocross::ignrte 12030,15968 12061,16091 12075,16144 12090,16199
 Prenzlauer Allee -> Kr¸gerstr.: Straﬂenbahntrasse	3::igndisp 12061,16091 12075,16144 12013,16120
 Kr¸gerstr. -> Prenzlauer Allee: Straﬂenbahntrasse	3::igndisp 12013,16120 12075,16144 12090,16199

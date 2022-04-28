@@ -207,7 +207,7 @@ Rosenthaler Str.: Fahrbahn gesperrt, offizielle Umleitung über Gormannstr.	q4::i
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: also_indoor: traffic (none)
-#: last_checked: 2022-04-22 (mapillary)
+#: last_checked: 2022-04-28
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882 11160,12071
 # 
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
@@ -252,7 +252,7 @@ Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,
 # 
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
-#: last_checked: 2022-04-09
+#: last_checked: 2022-04-28
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 # REMOVED --- #: valid: 20200821-20211031
@@ -594,7 +594,7 @@ Alt-Moabit - Invalidenstr.: Bauarbeiten, getrennter Rad/Gehweg	q3::inwork 7422,1
 # 
 ### Charlottenburg ###
 # 
-# REMOVED (laut viz fertig) --- #: next_check_id: FASANEN-2021 --- #: source_id: 2147346973 (Fernwärmebaustelle in Höhe Kantstr., bis März 2022) --- #: source_id: 2147346972 (- " -) --- #: source_id: viz2021:13.329043,52.505488,12.03.2021,09:00 (bis 5.3.2022) (inaktiv) --- #: source_id: viz2021:13.32784,52.505061,22.12.2021,06:00 (bis 5.3.2022) --- #: XXX evtl. sind die Einschränkungen auf der Nordseite aufgehoben? --- #: last_checked: 2022-01-15 --- #: check_frequency: 90d --- #: next_check: 2022-03-05 --- #: valid: -20220305 --- # REMOVED (hier nicht mehr) --- Fasanenstr.: Engstelle in Höhe Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5241,11060 5236,10994 --- Fasanenstr.: Engstelle südliche de Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5236,10994 5230,10919
+# REMOVED (laut viz fertig) --- #: next_check_id: FASANEN-2021 --- #: source_id: 2147346973 (Fernwärmebaustelle in Höhe Kantstr., bis März 2022) --- #: source_id: 2147346972 (- " -) --- #: source_id: viz2021:13.329043,52.505488,12.03.2021,09:00 (bis 5.3.2022) (inaktiv) --- #: source_id: viz2021:13.32784,52.505061,22.12.2021,06:00 (bis 5.3.2022) --- #: XXX evtl. sind die Einschränkungen auf der Nordseite aufgehoben? --- #: last_checked: 2022-01-15 --- #: check_frequency: 90d --- #: next_check: 2022-03-05 --- #: valid: -20220305 --- # REMOVED (hier nicht mehr) --- Fasanenstr.: Engstelle in Höhe Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5241,11060 5236,10994 --- Fasanenstr.: Engstelle südliche de Kantstr., Radfahrer werden über den Bürgersteig geführt	q3::inwork 5236,10994 5232,10947 5230,10919
 # REMOVED (aufgehoben) --- #: next_check_id: ENGLISCHESTR-2017 --- #: osm_watch: way id="503096340" version="3" --- #: source_id: LMS-BR_r_LMS-BR_121156_LMS-BR_72 --- #: XXX laut fritz bis 2019-04-30 --- #: also_indoor: traffic (H) --- #: last_checked: 2019-09-08 --- #: check_frequency: 60d --- Englische Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 5417,11949 5518,12159
 # REMOVED (offen) --- #: next_check_id: ENGLISCHESTR-2017 --- #: last_checked: 2019-10-30 --- Wegelystr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 5712,12033 5775,11975
 # REMOVED --- #: next_check_id: ALTONAERSCHLESWIGER-2019 --- #: XXX nach Abschluss wieder die alten handicap-Einträge (siehe unten, 2x) aktivieren --- #: by: http://www.dafmap.de/d/berlin.html?id=3027&mt=0&zoom=17 --- #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31 --- #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html --- #: osm_watch: way id="151857175" version="8" --- #: last_checked: 2021-04-25 --- #: check_frequency: 30d --- #: next_check: 2020-03-31 --- Schleswiger Ufer: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5886,12467 5944,12548
@@ -860,6 +860,9 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/alte-moltkebruecke-wird-abgerissen-und-durch-neubau-ersetzt_a337406 (Freigabe der Behelfsbrücke Ende April 2022)
 #: by: https://berliner-abendblatt.de/2022/02/28/titel-bruecken/
 #: by: https://berliner-abendblatt.de/2022/04/20/abriss-der-moltkebruecke-infotermin-fuer-anwohner/
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1200158.php (Abriss der Moltkebrücke bis 2.5.2022)
+#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/s-bahnhof-botanischer-garten-gesperrt_a344162
+#: by: https://berliner-abendblatt.de/2022/04/28/abriss-der-moltkebruecke-ersatzverkehr-am-wochenende/
 #: XXX wann wird die Einschränkung beendet?
 #: osm_watch: way id="13860352" version="18"
 #: also_indoor: traffic (G,ex-H,B)

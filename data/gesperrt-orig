@@ -174,7 +174,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="14"
-#: last_checked: 2022-04-09
+#: last_checked: 2022-04-26 (mapillary)
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
 # 
@@ -328,7 +328,7 @@ Gritznerstr.	1 4511,6318 4555,6403
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
 #: osm_watch: way id="4437134" version="10"
-#: last_checked: 2022-04-25 (mapillary)
+#: last_checked: 2022-04-26 (mapillary)
 #: check_frequency: 120d
 Duisburger Str.	1 4183,10144 3880,10154
 # 
@@ -1395,7 +1395,7 @@ Falkenberger Chaussee: Straßenbahntrasse, Mittelstreifen	3nocross 17400,17790 17
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: note: permanenter Zaun
-#: osm_watch: way id="722664473" version="2"
+#: osm_watch: way id="722664473" version="3"
 #: osm_watch: node id="6778873745" version="1"
 # REMOVED --- #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen --- #: last_checked: 2021-12-27 --- #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
@@ -3380,7 +3380,7 @@ weites Drängelgitter	BNP:2::trailer=7 12614,6301
 #: by: https://images.competitionline.com/image/f/9/5/a/b/e/1/b/f95abe1bc3b10ee4f2778b024afc5734_1.jpg?auto=format,compress&fm=jpg&ixlib=imgixjs-3.4.1&w=4742
 #: by: https://www.gm013.la/work/fmp
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2022-04-27
+#: last_checked: 2022-04-28
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
@@ -3807,7 +3807,7 @@ Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3
 # 
 #: XXX wann wird der Weg wiederhergestellt, wenn überhaupt?
 #: by: https://www.deutsches-architekturforum.de/thread/9401-wasserstadt-stralau-kleine-und-gr%C3%B6%C3%9Fere-projekte/?postID=653296#post653296 (Bauarbeiten bis Ende September 2021)
-#: osm_watch: way id="541556560" version="3"
+#: osm_watch: way id="541556560" version="4"
 #: last_checked: 2022-04-16
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-09-30
@@ -3841,8 +3841,8 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9747
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erwähnt)
 #: XXX bis wann geht die Sperrung?
-#: osm_watch: way id="729492933" version="2"
-#: osm_watch: way id="882672445" version="1"
+#: osm_watch: way id="729492933" version="3"
+# REMOVED (wurde entfernt) --- #: osm_watch: way id="882672445" version="2"
 #: last_checked: 2022-04-19
 #: check_frequency: 60d
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515

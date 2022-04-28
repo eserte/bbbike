@@ -2705,8 +2705,8 @@ EOF
 	2 6025,10746 6133,10679
 	2 5475,10808 5341,10756
 	3 5829,10964 5782,10884 5669,10704
-	3 5236,10994 5230,10919 5215,10711 5196,10398
-	3 5196,10398 5215,10711 5230,10919 5236,10994
+	3 5236,10994 5232,10947 5230,10919 5217,10736 5215,10711 5212,10661 5196,10398
+	3 5196,10398 5212,10661 5215,10711 5217,10736 5230,10919 5232,10947 5236,10994
 	3 5471,10719 5475,10808 5488,10978
 	3 5866,10492 6025,10746 6122,10925 6145,10975
 	3 5488,10978 5475,10808 5471,10719
@@ -18308,7 +18308,7 @@ EOF
 # REMOVED ---	3 7131,10331 7033,10328 7055,10220
 # REMOVED ---	3 6869,11567 6809,11570 6679,11602 6512,11608
 # REMOVED ---	3 6725,10641 6743,10615 6753,10446 6719,10347
-# REMOVED ---	3 5196,10398 5215,10711 5230,10919
+# REMOVED ---	3 5196,10398 5212,10661 5215,10711 5217,10736 5230,10919
 # REMOVED ---	3 6681,10959 6824,10904 6740,10755
 # REMOVED ---	3 6740,10755 6824,10904 6681,10959
 # REMOVED ---	3 6818,10725 6972,10665 7110,10613
@@ -18332,7 +18332,7 @@ EOF
 # REMOVED ---	3 5900,11913 6164,11947 6642,12010 6550,11954
 # REMOVED ---	3 5471,10719 5475,10808 5488,10978
 # REMOVED ---	3 7110,10613 6972,10665 6818,10725
-# REMOVED ---	3 5230,10919 5215,10711 5196,10398
+# REMOVED ---	3 5230,10919 5217,10736 5215,10711 5212,10661 5196,10398
 # REMOVED ---	3 6550,11954 6642,12010 6164,11947 5900,11913
 # REMOVED ---	3 6494,10440 6532,10529 6685,10690
 # REMOVED ---	3 7103,11247 6851,11346 6692,11365
@@ -19525,6 +19525,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/03/24/die-maientage-verlassen-neukoelln/ (in Zukunft nicht mehr in der Hasenheide?)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7936
 #: by: https://www.berlin.de/events/2983315-2229501-neukoellner-maientage.html (geplant: 29. April bis 22. Mai 2022)
+#: by: https://berliner-abendblatt.de/2022/04/28/grosser-nachholbedarf-eroeffnung-der-neukoellner-maientage/
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -21748,7 +21749,7 @@ EOF
 #: source_id: LMS-BR_r_LMS-BR_172061_LMS-BR_72
 #: also_indoor: traffic (H)
 # REMOVED --- #: next_check: 2019-06-13
-	q2::inwork 5258,11285 5241,11060 5236,10994
+	q2::inwork 5258,11285 5254,11237 5240,11047 5236,10994
 EOF
      },
      { from  => 1367100000, # 2013-04-28 00:00
@@ -23313,6 +23314,7 @@ EOF
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20210416 (Mai-Kundgebung auf dem Platz des 18. März vor dem Brandenburger Tor findet [2021] ... nicht statt)
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20220324 (unklar)
 #: by: https://berlin.dgb.de/++co++0f45cbd8-aeba-11ec-82e9-001a4a160123 (Kundgebung Platz des 18. März, 12 bis 14:30 Uhr)
+#: source_id: viz2021:13.376808,52.516209,30.04.2022,12:00
 #: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
 	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 	2::inwork 8573,12325 8540,12420
@@ -24812,8 +24814,8 @@ EOF
 	2::temp 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5069,10662
 	3 5669,10704 5782,10884 5829,10964
 	3 5488,10978 5475,10808 5471,10719
-	3 5196,10398 5215,10711 5230,10919
-	3 5230,10919 5215,10711 5196,10398
+	3 5196,10398 5212,10661 5215,10711 5217,10736 5230,10919
+	3 5230,10919 5217,10736 5215,10711 5212,10661 5196,10398
 	3 5471,10719 5475,10808 5488,10978
 	3 5829,10964 5782,10884 5669,10704
 EOF
@@ -25417,9 +25419,9 @@ EOF
 	3 4485,10307 4496,10504 4513,10702
 	3 4239,10358 4245,10435 4256,10583
 	3 4381,10583 4371,10465 4360,10320
-	3 5230,10919 5215,10711 5196,10398
+	3 5230,10919 5217,10736 5215,10711 5212,10661 5196,10398
 	3 4819,10355 4838,10597 4841,10686
-	3 5196,10398 5215,10711 5230,10919
+	3 5196,10398 5212,10661 5215,10711 5217,10736 5230,10919
 	3 5072,10701 5069,10662 5047,10381
 	3 4256,10583 4245,10435 4239,10358
 	3 5829,10964 5782,10884 5669,10704
@@ -26274,7 +26276,7 @@ EOF
        data  => <<EOF,
 #: osm_watch: way id="454003207" version="1"
 #: last_checked: 2016-12-16
-	q4::inwork 5236,10994 5230,10919
+	q4::inwork 5236,10994 5232,10947 5230,10919
 EOF
      },
      { from  => undef, # 
@@ -28188,7 +28190,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2022-04-19
+#: last_checked: 2022-04-28
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -31134,7 +31136,7 @@ EOF
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: also_indoor: traffic (G)
-#: osm_watch: way id="934995899" version="4"
+#: osm_watch: way id="934995899" version="5"
 #: osm_watch: way id="934995901" version="6"
 #: last_checked: 2022-04-24 vvv
 #: check_frequency: 14d vvv
@@ -31420,7 +31422,7 @@ EOF
      },
      { from  => $isodate2epoch->("2021-05-30 08:30:00"), # 1589275980, # 2020-05-12 11:33
        until => $isodate2epoch->("2022-09-30 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: Fahrbahn am Hindenburgdamm gesperrt, vom 31.05.2021 bis 30.09.2022',
+       text  => 'Gardeschützenweg: Fahrbahn am Hindenburgdamm sowie zwischen Tietzenweg und Viktoriaplatz gesperrt, vom 31.05.2021 bis 30.09.2022',
        type  => 'handicap',
        source_id => '2147345834', # (inaktiv)
        data  => <<EOF,
@@ -31433,6 +31435,7 @@ EOF
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: source_id: 2147347233 (bis 23.12.2021)
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022)
+#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -31440,6 +31443,8 @@ EOF
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv --- #: last_checked: 2020-12-27 (mapillary) vvv --- #: next_check: 2021-05-03 vvv
 #: note: nur etwa 100m, deshalb q3 statt q4
 	q3::inwork 4515,4760 4214,4595
+#: note: Einbahnstraßenregelung, bis 30.6.2022
+	q4::inwork; 3643,4232 3523,4139
 # REMOVED --- #: note: hier nur ein kurzes Stück ---	q2::inwork; 4214,4595 4039,4500
 # REMOVED (nicht mehr, laut rbb) ---	q4::inwork 4179,4662 4214,4595
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
@@ -31729,7 +31734,7 @@ EOF
 #: XXX Es gibt nun eine weitere Baustelle, Halteverbotschilder bis Ende Dezember 2022
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
 #: osm_watch: way id="759405498" version="2"
-#: last_checked: 2022-01-15
+#: last_checked: 2022-04-26 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2022-12-28
 	q3::inwork; 5192,10241 5196,10398
@@ -34851,7 +34856,7 @@ EOF
 #: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
 #: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022)
 #: also_indoor: traffic (B)
-#: last_checked: 2022-04-12 (mapillary)
+#: last_checked: 2022-04-28
 #: next_check: 2022-05-13
 	q4::inwork 11273,12301 11355,12331
 EOF
@@ -34971,7 +34976,7 @@ EOF
        text  => 'Zähringerstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2022-04-25 (mapillary)
+#: last_checked: 2022-04-26 (mapillary)
 #: check_frequency: 60d
 	q4::inwork; 4277,9895 4126,9932 3927,9935
 EOF
