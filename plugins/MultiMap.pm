@@ -977,7 +977,7 @@ sub showmap_url_mapcompare {
     }
     my $common_qs;
     if ($profile && $profile eq '__distinct_map_data') {
-	$common_qs = 'num=10&mt0=bvg-stadtplan&mt1=bbbike-bbbike&mt2=mapnik&mt3=esri&mt4=falk-base&mt5=google-map&mt6=nokia-map&mt7=lgb-webatlas&mt8=pharus&mt9=tomtom-basic-main';
+	$common_qs = 'num=10&mt0=bvg-stadtplan&mt1=bbbike-bbbike&mt2=mapnik&mt3=esri&mt4=falk-base&mt5=google-map&mt6=nokia-map&mt7=lgb-webatlas&mt8=pharus&mt9=waze-world';
     } elsif ($maps) {
 	$common_qs = "num=" . scalar(@$maps);
 	for my $map_i (0 .. $#$maps) {
