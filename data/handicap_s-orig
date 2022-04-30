@@ -30,7 +30,7 @@ Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Fahrbahn gesperrt	q4::inw
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2022-04-09 vvv
+#: last_checked: 2022-04-29 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -142,7 +142,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
-#: last_checked: 2022-04-25
+#: last_checked: 2022-04-29
 #: check_frequency: 60d
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 # 
@@ -185,7 +185,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
-#: last_checked: 2022-04-23 (mapillary) (Sackgassenschild)
+#: last_checked: 2022-04-29
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -252,7 +252,7 @@ Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,
 # 
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
-#: last_checked: 2022-04-28
+#: last_checked: 2022-04-29
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 # REMOVED --- #: valid: 20200821-20211031
@@ -339,7 +339,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: source_id: viz2021:13.379568,52.514769,14.04.2022,07:00 (angrenzende Behrenstr., bis 27.5.2022)
 #: add_fragezeichen: Sind die Bauarbeiten hier beendet?
 #: XXX nach den Bauarbeiten vermutlich nur für Radfahrer, Fußgänger und MIV-Anlieger frei
-#: last_checked: 2022-03-29
+#: last_checked: 2022-04-29
 # REMOVED --- #: check_frequency: 45d
 #: next_check: 2022-05-27
 # REMOVED --- #: valid: 20191218-20210531
@@ -810,9 +810,9 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022) (inaktiv)
 #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022)
 #: also_indoor: traffic (ex-H,B)
-#: last_checked: 2022-02-27
+#: last_checked: 2022-04-30
 #: check_frequency: 60d
-#: next_check: 2022-05-02
+# REMOVED --- #: next_check: 2022-05-02
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
 # 
 # REMOVED (-> temp blockings) --- #: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021) --- #: by: https://twitter.com/rbbabendschau/status/1392489796426162177 --- #: source_id: 2147347186 --- #: also_indoor: traffic (G) --- #: XXX wann werden die Fahrbahn und die Radwege wieder freigegeben? bei rbb "bis auf Weiteres" --- #: priority: #A --- #: last_checked: 2021-05-14 --- #: next_check: 2021-06-18 --- #: valid: -20210612 --- Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126
@@ -888,7 +888,7 @@ Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="10"
 #: priority: #C
-#: last_checked: 2022-04-21
+#: last_checked: 2022-04-29
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -3149,7 +3149,7 @@ Biedermannweg: einige Fußgänger	q1 -717,12823 -686,12735
 Am Murellenteich: Bordstein	q3 -440,12767 -408,12766
 (Am Nordhafen - Uferweg am Nordhafen): Fußgänger, Gefälle	q1; 7733,14570 7696,14577 7662,14579 7653,14570
 (Am Nordhafen - Uferweg am Nordhafen): Fußgänger, Steigung	q2; 7653,14570 7662,14579 7696,14577 7733,14570
-(Uferweg am Nordhafen - Am Nordhafen/Fennstr.): Fußgänger	q1 7605,14600 7589,14627 7549,14664 7514,14686
+(Uferweg am Nordhafen - Am Nordhafen/Fennstr.): Fußgänger	q1 7605,14600 7589,14627 7549,14664 7514,14687
 #: XXX_prog BS beim Überqueren der Lietzenburger Str., ansonsten weiterhin q2
 Kelheimer Str.: einige Fußgänger, Bordstein	q2 5894,10287 5898,10318
 #: XXX_prog BS am Wendehammer, sowie beim Überqueren der Lietzenburger Str., ansonsten q2

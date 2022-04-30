@@ -43,13 +43,10 @@ Berliner Str. (Wilmersdorf): wird es hier Radspuren geben?	? 3952,8980 4006,8967
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1200646.php (Fertigstellung in der KW 17/2022)
-#: XXX Bauarbeiten zwischen Bergmannstr. und Gneisenaustr. (Richtung Norden) haben begonnen
-#: last_checked: 2022-04-08
-#: check_frequency: 45d
-#: next_check: 2022-04-30
+# REMOVED --- #: XXX Bauarbeiten zwischen Bergmannstr. und Gneisenaustr. (Richtung Norden) haben begonnen --- #: last_checked: 2022-04-08 --- #: check_frequency: 45d --- #: next_check: 2022-04-30
 # REMOVED (hier fertig) --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350
-Mehringdamm: Sanierung des Radwegs (Asphaltierung + Verbreiterung)	?::inwork; 9248,9350 9283,9487 9334,9670
-#: last_checked: 2022-03-24
+# REMOVED (hier fertig) --- Mehringdamm: Sanierung des Radwegs (Asphaltierung + Verbreiterung)	?::inwork; 9248,9350 9283,9487 9334,9670
+#: last_checked: 2022-04-30
 #: check_frequency: 120d
 Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 9444,9919 9448,10014
 # 
@@ -75,7 +72,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr.
-#: last_checked: 2022-04-27
+#: last_checked: 2022-04-30
 #: check_frequency: 90d
 #: next_check: 2022-06-30
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -97,7 +94,7 @@ NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 113
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Entwurfsplanung)
 #: by: http://www.infravelo.de/projekt/verbindung-zwischen-hornstrasse-und-yorckstrasse-2/ (bis 3. Quartal 2021) (Eintrag wurde ersetzt)
 #: by: https://www.infravelo.de/projekt/verbindung-zwischen-hornstrasse-und-yorckstrasse/ (mittlerweile bis 3. Quartal 2022)
-#: last_checked: 2022-03-05
+#: last_checked: 2022-04-30
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2022-09-30
 Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9047,9750 9002,9731 8980,9751 8988,9783
@@ -108,7 +105,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9047,9750 90
 #: by: https://api.fixmyberlin.de/api/plannings/66 (asphaltiert und verbreitert)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
-#: last_checked: 2022-04-16
+#: last_checked: 2022-04-29
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -221,12 +218,12 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: source_id: 2147342276 (inaktiv)
 #: source_id: LMS-BR_r_LMS-BR_120802_LMS-BR_72 (inaktiv)
 #: source_id: 2147343746 (bis Mitte April 2019) (inaktiv)
-#: osm_watch: way id="698150954" version="11"
+# REMOVED --- #: osm_watch: way id="698150954" version="12"
 #: last_checked: 2022-04-08
-#: next_check: 2022-05-02
+#: next_check: 2022-04-29
 # REMOVED (Hochbauarbeiten fertig, trotzdem nichts weiter passiert) --- #: check_frequency: 21d
 # REMOVED --- #: next_check: 2021-06-30
-Hasenheide: hier werden gesch¸tzte Radspuren erstellt	?::projected; 10951,9216 11108,9187 11136,9183
+Hasenheide: hier werden gesch¸tzte Radspuren erstellt	?; 10951,9216 11108,9187 11136,9183
 # REMOVED --- #: last_checked: 2019-03-25 --- #: next_check: 2019-04-01
 # REMOVED (hier realisiert) --- Hasenheide: hier werden gesch¸tzte Radspuren erstellt	?::inwork; 10713,9260 10951,9216
 # REMOVED (hier weitgehend realisiert) --- Hasenheide: hier werden gesch¸tzte Radspuren erstellt	?::inwork; 11136,9183 11449,9125 11500,9116 11550,9104 11629,9086 11767,9026
@@ -269,7 +266,7 @@ Markgrafenstr.: wird hier eine Radwegf¸hrung erstellt? Bleibt das Dr‰ngelgitter?
 #: osm_watch: way id="4543585" version="34"
 #: osm_watch: way id="42732291" version="23"
 #: XXX mittlerweile gibt es bereits abschnittsweise provisorische Radspuren (vermutlich nur wegen der Hochbaustelle?)
-#: last_checked: 2022-04-21 (mapillary) (Busspur ab Reinickendorfer Str.)
+#: last_checked: 2022-04-30 (Busspur ab Reinickendorfer Str.)
 #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2022-06-30
@@ -521,7 +518,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: by: http://www.infravelo.de/projekt/neumannstrasse/ (2. Quartal 2021 - 2. Quartal 2022) (mittlerweile: 4. Quartal 2021 - 4. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023)
 #: osm_watch: way id="35573588" version="21"
 #: osm_watch: way id="4632077" version="27"
-#: last_checked: 2022-03-10 (mapillary)
+#: last_checked: 2022-04-29
 #: check_frequency: 90d
 #: next_check: 2022-12-31
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11536,17153 11565,17027 11590,16878 11613,16747 11630,16623 11655,16486 11659,16457 11673,16367
@@ -695,7 +692,7 @@ Marienfelder Allee: Projektplanung f¸r Schutzstreifen	?::projected 8579,2265 856
 #: source_id:LMS-BR_r_LMS-BR_93889
 #: source_id: 2147341183
 #: XXX Ende laut rbbtext: 19. April, laut fritz: 22. April (beide: in Hˆhe Bayernring), laut vmz: Ende April (Gesamtmaﬂnahme), am 2017-04-25 ist aber noch nichts passiert
-#: last_checked: 2022-03-27
+#: last_checked: 2022-04-30
 #: check_frequency: 90d
 Boelckestr.: Planung f¸r Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876
 #: XXX hier vermutlich sp‰ter
@@ -1631,7 +1628,7 @@ Residenzstr.: Radverkehrsanlagen zur Erhˆhung der Radverkehrsqualit‰t	?::project
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: osm_watch: way id="352683182" version="10"
 #: osm_watch: way id="501402607" version="8"
-#: last_checked: 2022-01-22
+#: last_checked: 2022-04-29
 #: check_frequency: 180d
 #: next_check: 2023-12-31
 Residenzstr.: Radstreifen geplant	?::projected 8127,16894 8079,16953 7970,17087
@@ -1649,7 +1646,7 @@ Wullenwebersteg: wird hier eine Rampe erstellt?	?::projected 5714,12290 5714,122
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2019, aber welcher Abschnitt?)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/strassenarbeiten-im-richardkiez_a254128 (im kommenden Jahr, also 2021)
 #: by: http://www.infravelo.de/projekt/braunschweiger-strasse-bauabschnitt-3/ (1. Quartal 2021 - 3. Quartal 2021) (mittlerweile: 2. Quartal 2022 - 4. Quartal 2022)
-#: osm_watch: way id="423009430" version="15"
+#: osm_watch: way id="423009430" version="16"
 #: last_checked: 2022-03-07
 #: check_frequency: 120d
 #: next_check: 2022-12-31
@@ -2793,9 +2790,9 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/tempo-30-fuer-die-hermannstrasse_a288709
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7348 (Antrag f¸r Popup-Radwege auf der gesamten Hermannstraﬂe)
 #: by: http://www.infravelo.de/projekt/hermannstrasse-bauabschnitt-1/ (1. Quartal 2021 - 2. Quartal 2022) (mittlerweile: Baubeginn 2. Quartal 2021) (Eintrag wurde mittlerweile ersetzt)
-#: by: https://www.infravelo.de/projekt/hermannstrasse-bauabschnitt/ (4. Quartal 2021 - 1. Quartal 2022; neuer Eintrag f¸r den 1. Bauabschnitt)
-#: by: http://www.infravelo.de/projekt/hermannstrasse-bauabschnitt-1-1/ (Umbenennung von .../hermannstrasse-bauabschnitt/)
-#: by: http://www.infravelo.de/projekt/hermannstrasse-bauabschnitt-2-2/ (der nˆrdliche Teil bis Hermannplatz, bis Mitte 2023)
+#: by: https://www.infravelo.de/projekt/hermannstrasse-bauabschnitt/ (4. Quartal 2021 - 1. Quartal 2022; neuer Eintrag f¸r den 1. Bauabschnitt) (mittlerweile: 4. Quartal 2021 - 2. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/hermannstrasse-bauabschnitt-1-1/ (Umbenennung von .../hermannstrasse-bauabschnitt/) (mittlerweile: 4. Quartal 2021 - 2. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/hermannstrasse-bauabschnitt-2-2/ (der nˆrdliche Teil bis Hermannplatz, bis Mitte 2023) (existiert nicht mehr)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/ausschuss-stimmt-mehrheitlich-fuer-radweg-auf-der-hermannstrasse_a296162
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/radweg-fuer-die-hermannstrasse_a300413 ("sobald es die Witterung erlaubt")
 #: by: https://abendblatt-berlin.de/2021/02/05/neukoelln-radfahrer-fordern-schnellere-loesung-fuer-die-hermannstrasse/
@@ -3063,7 +3060,7 @@ Annemarie-Renger-Str.: Fuﬂg‰nger- und Radfahrerbereich entsteht hier	?::inwork 8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2022-03-12 (daf) vvv
+#: last_checked: 2022-04-29 (webcam) vvv
 #: check_frequency: 60d vvv
 # REMOVED (eingetragen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_23_2881_3012_online.pdf (Straﬂenbenennung) --- #: by: https://www.berliner-woche.de/tiergarten/c-bauen/neues-stadtquartier-an-der-heidestrasse-waechst_a286237 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_38_4713_4844_online.pdf (Grundst¸cksnummerierungen) --- #: XXX fehlt in Berlin.coords.data, PLZ=10557 --- George-Stephenson-Str.: Geplante Straﬂe; Qualit‰t? Genaue Lage?	?::projected 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 7734,13944
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_25_3117_3296_online.pdf (Straﬂenbenennung)
@@ -3073,6 +3070,7 @@ Annemarie-Renger-Str.: Fuﬂg‰nger- und Radfahrerbereich entsteht hier	?::inwork 8
 Lisa-Fittko-Str. (Ziffer 2): Geplante Straﬂe; Qualit‰t? wird das hier auch die Lisa-Fittko-Str. werden, oder eine andere Straﬂe?	?::projected 7569,14217 7652,14257
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_57_5513_5592_online.pdf (Straﬂenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_09_0533_0596_online.pdf (Grundst¸cksnummerierungen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Grundst¸cksnummerierung)
 #: XXX fehlt in Berlin.coords.data, mˆglicherweise auch PLZ=10557 (Fehler in DPAG-MTB 09/2020?) (in DPAG-MTB 03/2022 ist es richtig)
 Clara-Mleinek-Str. (Ziffer 3; platz‰hnlich): Geplante Straﬂe; Qualit‰t?	?::projected 7500,14333 7566,14404
 #: check_frequency ^^^
@@ -3279,7 +3277,7 @@ Titiseestraﬂe/Waldshuter Zeile: Zebrastreifen geplant	?::projected 5493,22596 54
 # REMOVED (fertig) --- Bautzener Brache - Groﬂgˆrschenstr.: Weg in Planung	?::projected 8255,9357 8186,9380
 #: also_indoor: search Yorckbr¸cke_5
 #: osm_watch: way id="268088020" version="11"
-#: last_checked: 2022-02-27
+#: last_checked: 2022-04-30
 #: check_frequency: 150d
 Yorckstraﬂenbr¸cke 5 und Anbindung: in Planung, geplanter Baubeginn: Sommer 2020	?::projected 8227,9579 8255,9698 8256,9778 8233,9863
 # REMOVED --- #: osm_watch: way id="722795299" version="3" --- #: XXX ein Trampelpfad existiert bereits; laut osm exisitiert nun die Anbindung --- #: last_checked: 2020-05-08 --- #: check_frequency: 90d --- #: next_check: 2020-06-27 --- zum Bautzener Wohnquartier: Anbindung fehlt noch, genaue Lage	?::projected 8206,9262 8209,9270
@@ -3490,6 +3488,7 @@ L33: Neubau geplant	?::projected 23895,15904 23965,15894 23992,15894 25007,15650
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9613
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/WKPBSpJVeywdWnIKLsfcb3cWjGQ88gYmHAZeFp8T/FXFZAPdm/41-Anlagen/02/vzb1418_V-B-Plan_10-77_Entwurf_Festsetzung.pdf
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2022/pressemitteilung.1168460.php (FNP-Anpassung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (FNP-Berichtigung)
 #: XXX Bebauungsplan 10-77 in Marzahn
 #: last_checked: 2021-12-30 (mapillary)
 #: check_frequency: 90d
@@ -3584,7 +3583,9 @@ Bebauungsplan 3-65 ("Grundschule Heinersdorfer Straﬂe"): Fuﬂg‰nger- und Radfahre
 Steglitzer Damm: Radwege zwischen Sembritzkistr. und Attilastr. geplant	? 6846,4808 7092,4763 7205,4741 7285,4724 7364,4704 7387,4696 7485,4659 7532,4605 7544,4587 7597,4499
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1190899.php (zweites 100-Tage-Programm)
-#: next_check: 2022-06-30
+#: last_checked: 2022-04-30
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2022-06-30
 Berliner Str./Grunewaldstr.: Radwege von Blissestr. bis Akazienstr. geplant	? 4777,8870 4918,8872 5022,8879 5172,8880 5182,8880 5195,8880 5266,8903 5341,8931 5492,8982 5635,9018 5725,9041 5783,9060 5801,9065 5895,9083 5974,9100 6059,9118 6152,9136 6264,9156 6361,9175 6440,9192 6568,9211 6709,9234 6861,9263 6917,9274 7001,9291
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1190899.php (zweites 100-Tage-Programm)
@@ -3601,7 +3602,9 @@ Spandauer Damm (von Kirschenallee bis Soorstr.): Busspur Richtung Osten geplant,
 Ringslebenstr. (von Heidel‰uferweg bis Buckower Damm): Busspur geplant, evtl. nur Richtung Westen	? 13089,1351 12938,1348
 # 
 #: osm_watch: way id="154484610" version="10"
-#: last_checked: 2022-03-24
+#: XXX Markierung weitgehend fertig, aber die Schilder fehlen
+#: last_checked: 2022-04-30
+#: check_frequency: 14d
 B¸lowstr.: Markierungsarbeiten, vielleicht entsteht hier eine Fahrradstraﬂe?	? 7866,9902 7889,9901 7933,9755
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=715173#post715173
@@ -3658,7 +3661,7 @@ Wilmersdorfer Str.: Verl‰ngerung der Fuﬂg‰ngerzone geplant	?::projected 3717,114
 #: by: https://www.infravelo.de/projekt/grellstrasse-und-storkower-strasse/ (Baubeginn und -ende: 2. Quartal 2022) (mittlerweile bis 4. Quartal 2022)
 #: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html (bis Ende 2022)
 #: priority: #D
-#: last_checked: 2022-04-06
+#: last_checked: 2022-04-29
 #: check_frequency: 60d
 #: next_check: 2022-12-31
 Grellstr. und Storkower Str.: Gr¸nmarkierung geplant	?::projected 11941,15586 12252,15376 12325,15328 12417,15272 12704,15105 12807,15045 13107,14873 13148,14850 13439,14673
@@ -3687,7 +3690,7 @@ Zillestr./Krumme Str.: Planung einer Fahrradstraﬂe, wo genau?	?::projected 3801,
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022)
 #: note: laut rbb bis 11.4.2022
-#: last_checked: 2022-04-23
+#: last_checked: 2022-04-29
 #: check_frequency: 30d
 #: next_check: 2022-07-01
 Unter den Linden: tempor‰re Umgestaltung, eine besondere Fahrspur f¸r Radfahrer entsteht	?::projected 8804,12280 9028,12307 9141,12320 9358,12351 9475,12365 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431
@@ -3743,8 +3746,12 @@ Wriezener Park: Umbauarbeiten geplant, evtl. werden Wege zwischenzeitlich gesper
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6847
 #: XXX urspr¸nglicher Vorschlag "Dagobert-Wiesm¸ller-Platz"
 #: also_indoor: search Dagobert-Wiesm¸ller-Platz
-#: last_checked: 2021-11-01 (research)
-#: check_frequency: 180d
+#: osm_watch: way id="25468896" version="7"
+#: osm_watch: way id="35218633" version="14"
+#: osm_watch: way id="610258191" version="1"
+#: last_checked: 2022-04-30 (research)
+# REMOVED --- #: check_frequency: 180d
+#: check_frequency: 30d
 Bahnhofsvorplatz am S-Bahnhof Wilhelmshagen: mˆgliche Benennung zu "Wiesm¸ller-Platz"	? 32097,4070 32143,4082 32127,4035
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5828
@@ -3850,7 +3857,7 @@ Bˆlschestr.: Pr¸fung einer Fahrradstraﬂe	? 13188,9134 13298,9252 13357,9313 1348
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html (zurzeit in Planung)
-#: last_checked: 2022-04-09
+#: last_checked: 2022-04-29
 #: check_frequency: 180d
 #: next_check: 2022-12-31
 Triftstr. und Gerichtstr.: Fahrradstraﬂe soll entstehen	?::projected 6675,15080 6743,15102 6886,15156 7085,15226 7248,15296 7270,15307 7356,15350 7464,15409 7627,15412 7723,15417 7765,15417 7817,15418 7891,15417
@@ -3891,7 +3898,7 @@ Am Lustgarten: in Zukunft nur f¸r Rad- und Fuﬂverkehr offen	? 10054,12699 10094,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_29.04.2021.pdf (gegenl‰ufiger Radweg auf der Monumentenbr¸cke; Fahrradstraﬂe)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-17-06-2021.pdf (Erw‰hnung)
 #: XXX auﬂerdem: ein gegenl‰ufiger Radweg auf der S¸dseite der Monumentenbr¸cke ist geplant
-#: last_checked: 2022-04-13 (mapillary) vvv
+#: last_checked: 2022-04-30 vvv
 #: check_frequency: 60d vvv
 # REMOVED (nicht mehr schaffbar) --- #: next_check: 2020-12-31 vvv
 Freiherr-vom-Stein-Str.: Fahrradstraﬂe geplant	?::projected 5913,8415 5995,8477 6123,8546 6230,8602 6313,8638 6454,8653
@@ -4271,7 +4278,7 @@ Spreeradweg: wird hier auch die Wegoberfl‰che verbessert?	? 3867,12616 3888,1261
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/aufpflasterung-im-bereich-grossgoerschenstrasse-geplant_a202243
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8177 (Antrag)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8272 (Antrag)
-#: last_checked: 2022-01-15
+#: last_checked: 2022-04-30
 #: check_frequency: 120d
 Bautzener/Groﬂgˆrschenstr.: Aufpflasterung geplant	?::projected 8206,9400 8186,9380 8165,9366
 # 
@@ -4306,9 +4313,10 @@ Bahnhofstr.: ‰ndert sich bei den Maﬂnahmen etwas f¸r Radfahrer? Wird eine Radspu
 #: by: https://abendblatt-berlin.de/2020/12/03/tempelhof-kreuzberg-der-platz-der-luftbruecke-wird-gruener/
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1025759.php (Beteiligungsveranstaltung)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1027810.php
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/umgestaltung-des-platz-der-luftbr%C3%BCcke.1186/#post-18304
 #: last_checked: 2022-03-12
 #: check_frequency: 180d
-Manfred-von-Richthofen-Str.: ‰ndert sich bei den geplanten Umbaumaﬂnahmen etwas f¸r Radfahrer?	?::projected 9229,8718 9158,8706 9099,8670
+Manfred-von-Richthofen-Str.: ‰ndert sich bei den geplanten Umbaumaﬂnahmen etwas f¸r Radfahrer?	?::projected 9229,8718 9158,8706 9093,8665
 # 
 # REMOVED (fertig) --- #: source_id: 2147344618 --- #: last_checked: 2020-01-05 --- #: next_check: 2020-01-30 --- Tempelhofer Damm: Asphaltierung des Radwegs	?::inwork; 9229,8718 9229,8785
 # REMOVED (existiert nun, noch mit Gelbmarkierung) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf --- #: source_id: 2147345479 (bis 18.09.2020; haben die Leitungsarbeiten was mit der Radwegplanung zu tun? --- mittlerweile inaktiv) --- #: source_id: 2147345864 (bis 20.11.2020) --- #: source_id: LMS-BR_r_LMS-BR_205345_LMS-BR_72 --- #: last_checked: 2020-10-24 (Bauarbeiten) --- #: check_frequency: 90d --- #: next_check: 2020-11-20 --- M¸ggelheimer Str.: wird eine Radspur zwischen Wendenschloﬂstr. und Pohlestr. (S¸dseite) realisiert?	?; 22674,4309 22812,4227
@@ -4806,7 +4814,7 @@ Wittenauer Str. zwischen Michelbacher Zeile und Liﬂberger Zeile: Zebrastreifen i
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
 #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (2022)
 #: priority: #D
-#: last_checked: 2022-02-12
+#: last_checked: 2022-04-29
 #: check_frequency: 90d
 Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 11349,11227 11309,11221
 # 
@@ -4842,7 +4850,7 @@ Huttenstr. 12/N‰he Berlichingenstr.: Zebrastreifen geplant	?::projected 4916,135
 #: source_id: 2147347007 (Fernw‰rmebau bis 25.6.2022, hat das auch Auswirkungen auf den Zebrastreifen?)
 #: priority: #D
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (noch nicht umgesetzt)
-#: last_checked: 2022-04-27
+#: last_checked: 2022-04-29
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-12-31
 Hannah-Arendt-Str./Gertrud-Kolmar-Str.: Zebrastreifen geplant	?::projected 8747,11976 8783,11959 8824,11934
@@ -4879,7 +4887,7 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 #: next_check: 2022-09-01 vvv
 #: last_checked: 2022-04-19
 Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102,12790 9135,12779
-#: last_checked: 2022-04-21
+#: last_checked: 2022-04-29
 Friedenstr./Koppenstr.: Zebrastreifen geplant	?::projected 12658,12755 12690,12769 12687,12809
 Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,9899 12556,9862 12565,9825
 Roelckestr./Streustr.: Zebrastreifen geplant	?::projected 12882,16165 12890,16121 12906,16074
@@ -5533,7 +5541,7 @@ Conrad-Blenkle-Str.: s¸dlich der Rudi-Arndt-Str. soll ein Zebrastreifen entstehe
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2022-04-28
+#: last_checked: 2022-04-30
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -5931,11 +5939,15 @@ B158, Oderberg, Br¸cke ¸ber die HOW: Radstreifen geplant	?::projected 53201,5167
 #: next_check: 2022-05-31
 B2: straﬂenbegleitender Radweg geplant	?::projected 49788,67668 49825,67707 49872,67713 49907,67684 49908,67683 50386,68158 50632,68484 50863,68629
 # 
-#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=33123
-#: source_id: LS/723-P/20/210
-#: source_id: LS/723-P/21/238
-#: next_check: 2022-04-30
-L962: straﬂenbegleitender Radweg geplant	?::projected -55301,-467 -55311,-415 -55216,63 -55304,482 -55228,951 -55292,1560 -55647,1763 -55837,2017 -55876,2842 -55469,3121 -55178,4111 -55089,4644 -54721,5177 -54708,5380 -54480,5735 -54073,6243 -54035,6446
+# REMOVED --- #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=33123 --- #: source_id: LS/723-P/20/210--- #: source_id: LS/723-P/21/238 --- #: next_check: 2022-04-30
+# REMOVED (aufgenommen) --- L962: straﬂenbegleitender Radweg geplant	?::projected -55301,-467 -55311,-415 -55216,63 -55304,482 -55228,951 -55292,1560 -55647,1763 -55837,2017 -55855,2426
+# REMOVED (hier nicht?) --- L962: straﬂenbegleitender Radweg geplant	?::projected -55855,2426 -55876,2842 -55807,2889
+# REMOVED (aufgenommen) --- L962: straﬂenbegleitender Radweg geplant	?::projected -55807,2889 -55469,3121 -55434,3333
+# REMOVED (aufgenommen) --- L962: straﬂenbegleitender Radweg geplant	?::projected -55434,3333 -55178,4111 -55148,4434
+# REMOVED (hier nicht?) --- L962: straﬂenbegleitender Radweg geplant	?::projected -55148,4434 -55119,4535
+# REMOVED (aufgenommen) --- L962: straﬂenbegleitender Radweg geplant	?::projected -55119,4535 -55089,4644 -55010,4757
+# REMOVED (aufgenommen) --- L962: straﬂenbegleitender Radweg geplant	?::projected -55010,4757 -54721,5177 -54708,5380 -54480,5735 -54282,6044
+# REMOVED (hier nicht?) --- L962: straﬂenbegleitender Radweg geplant	?::projected -54282,6044 -54073,6243 -54035,6446
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=42675
 #: by: https://www.o-sp.de/download/lbvbrandenburg/216140
@@ -5995,9 +6007,10 @@ M¸hlenstr.: Radstreifen geplant	?::projected 10228,18196 10347,17959 10448,17751
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (wenn, dann ab 2021, oder ist die Straﬂe vor Schˆnholz gemeint?)
 #: source_id: 2147346942 (Kanalarbeiten, bis 4.1.2022)
 #: source_id: viz2021:13.374359,52.586234,09.03.2021,07:00 (Kanalarbeiten, bis 4.1.2022) (mittlerweile bis 7.3.2022) (mittlerweile bis 30.4.2022)
-#: last_checked: 2022-02-12 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2022-04-30
+#: last_checked: 2022-03-19 (mapillary)
+#: check_frequency: 45d
+# REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: next_check: 2022-04-30
 Schˆnholzer Weg: wird hier eine Radverkehrsanlage erstellt?	?::projected; 8196,20096 8224,19977 8234,19936
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7721 (Umsetzungsplanung 2023)
@@ -6110,7 +6123,7 @@ Mauerweg: Untertunnelung der Dresdener Bahn	?::inwork 10460,-3199 10687,-3270
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210518_sachstandsbericht.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (Fertigstellung des westlichen Abschnitts nun 2023 (Stand August 2021))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (mittlerweile f¸r beide Abschnitte Fertigstellung 2022)
-#: last_checked: 2022-04-19
+#: last_checked: 2022-04-29
 #: check_frequency: 90d
 Franzˆsische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
@@ -6271,7 +6284,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::projected 4342,9301 4415,93
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Erw‰hnung, Planung)
 #: XXX wo genau?
-#: last_checked: 2022-04-28
+#: last_checked: 2022-04-30
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
@@ -6285,7 +6298,7 @@ Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 1284
 # 
 # REMOVED (alle eingetragen) --- #: next_check_id: LANGHANS-2021 --- #: by: https://unternehmen.bvg.de/pressemitteilung/das-machen-wir-gleis-richtig/ (Sperrung bis 24. Juni 2021) --- #: last_checked: 2021-02-04 --- #: next_check: 2021-08-13 --- Langhansstr.: Straﬂenbahnkaps entstehen	?::inwork 13508,15912 13312,16027 13250,16058 13189,16089 12943,16214 12859,16255 12826,16271 12797,16285 12764,16302 12725,16321 12564,16399 12474,16443 12399,16479
 # 
-#: source_id: LS/721-E/19/134 (bis 30.4.2022)
+#: source_id: LS/721-E/19/134 (bis 30.4.2022) (inaktiv)
 #: last_checked: 2022-02-13 (mapillary)
 #: next_check: 2022-04-30
 # REMOVED (realisiert) --- Wandlitz - Wensickendorf: Radwegbau	?::inwork 11192,38568 10878,38650 10471,38685 10407,38693
@@ -6583,7 +6596,7 @@ Am Treptower Park: Planung eines Radwegs auf der Nordseite	?::projected; 14089,9
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/2020-03-05_vwr_vortrag_hallesches_tor_bund_internet.pdf
 #: XXX mˆgliche Lˆsungen: Bl¸cherstr. wird zur¸ckgebaut (komplett oder nur f¸r den Kfz-Verkehr), Reaktivierung der alten Verbindung Hallesches Tor - Urbanstr., ... dabei Straﬂenbahnplanungen beachten
 #: XXX zurzeit (Dez 2021) gibt es Bauarbeiten s¸dlich der AGB; Radfahrer haben Richtung Westen nun eine Radspur auf etwa 150m L‰nge
-#: last_checked: 2022-04-07
+#: last_checked: 2022-04-30
 #: check_frequency: 1080d
 Bl¸cherstr., Bl¸cherplatz: Umgestaltung	?::projected 9448,10014 9521,10010 9722,10036 9827,10051
 # 
@@ -6597,7 +6610,8 @@ Bl¸cherstr., Bl¸cherplatz: Umgestaltung	?::projected 9448,10014 9521,10010 9722,
 #: next_check: 2023-01-01
 Am Zeppelinpark: wird bis zur Heerstr. verl‰ngert	?::inwork -8358,13340 -8371,13186
 # 
-#: source_id: LS/722-W/21/096
+#: source_id: LS/722-W/21/096 (inaktiv)
+#: osm_watch: way id="29055564" version="12"
 #: next_check: 2022-04-30
 Neuhof - W¸nsdorf: Radwegbau	?::inwork 16360,-29489 16379,-29446 16407,-29400 16434,-29189 16376,-29007 16412,-28496 15962,-26911
 # 
@@ -6651,7 +6665,7 @@ zum Am Gutshof: hier soll ein Hinweisschild aufgestellt werden	? 17887,18975 178
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10213 (Antrag)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10228 (Anfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10239 (Antrag)
-#: last_checked: 2022-04-08
+#: last_checked: 2022-04-30
 #: check_frequency: 360d
 Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 11049,10816 11159,10769 11220,10744 11275,10723 11463,10642 11690,10543 11721,10530 11754,10516 11949,10414
 # 
@@ -7156,6 +7170,8 @@ Brunnenallee (Potsdam):genaue Lage? Qualit‰t? Existiert die Straﬂe schon?	?::pro
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7993 (Frage)
 #: by: https://www.berliner-woche.de/friedenau/c-bauen/grundsteinlegung-fuer-537-mietwohnungen_a321434
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8225 (Vorschl‰ge f¸r Straﬂennamen: June-und-Helmut-Newton-Platz)
+#: by: http://www.deal-magazin.com/news/3/113681/Start-fuer-Marlene-und-Dietrich-mit-131-Wohnungen-in-Berlin
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Grundst¸cksnummerierung (Friedenauer Hˆhe))
 #: XXX vorgeschlagene Straﬂennamen (fehlen alle bei Berlin.coords.data):
 #: XXX Friedenauer Hˆhe (Privatstraﬂe) -> im Amtsblatt, PLZ=12159
 # REMOVED (eingetragen) --- #: XXX Lauterplatz -> im Amtsblatt, PLZ=12159
@@ -7398,6 +7414,7 @@ Friedhof Segen: Wohngebiet entsteht	?::projected 13581,16968 13522,17021 13687,1
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6932&date=20170905
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8491
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9230
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Auslegung eines Bebauungsplan-Entwurfs)
 #: last_checked: 2022-01-26 vvv
 #: check_frequency: 360d vvv
 #: XXX Planstraﬂe 2:
@@ -7465,7 +7482,7 @@ Bebauungsplan 3-59: geplante Straﬂen und Wege	?::projected 12512,21482 12783,214
 #: XXX Benennung zu "Metropolitan Park" --- welche der neuen Straﬂen bekommt diesen Namen?
 #: last_checked: 2021-10-20 vvv
 #: check_frequency: 360d vvv
-#: osm_watch: way id="328465413" version="10"
+#: osm_watch: way id="328465413" version="11"
 # REMOVED (-> strassen-orig) --- Privatstraﬂe A und Planstraﬂe A: Namen, Qualit‰t? Was passiert mit dem Fuﬂ/Radweg am Brunsb¸tteler Damm?	? -8064,13534 -8088,13594 -7984,13649 -7926,13709 -7893,13781 -7894,13878 -7928,13967 -8019,14036 -8095,14056 -8183,14041
 Planstraﬂe A: Namen, Qualit‰t? Was passiert mit dem Fuﬂ/Radweg am Brunsb¸tteler Damm?	? -8150,14064 -8220,14038 -8243,14183
 # REMOVED (eingetragen) --- #: osm_watch: way id="725376312" version="4" --- #: XXX laut osm mittlerweile fertig, asphaltiert, aber kein Straﬂenname --- Privatstraﬂe B: Name, Qualit‰t?	? -7893,13781 -7720,13839
@@ -7637,7 +7654,7 @@ Krampnitz: neue Planstraﬂen	?::projected -14183,5214 -13771,5077
 #: XXX * Ingrid-Reschke-Str. (PLZ=10317 laut LOR)
 #: XXX * Gustav-Tempel-Str. (PLZ=10317 laut LOR)
 #: XXX laut LOR gibt's nun auch eine Hauptstraﬂe in Friedrichshain, PLZ 10317 --- vielleicht ein Zipfel des Baugebiets hier, w‰re aber zu verwirrend, das in Berlin.coords.data einzutragen
-#: last_checked: 2022-04-22
+#: last_checked: 2022-04-29
 #: check_frequency: 360d
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straﬂen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 

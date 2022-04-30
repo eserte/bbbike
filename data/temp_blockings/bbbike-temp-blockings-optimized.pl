@@ -37,7 +37,33 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.921158.php (Absage 2020)
+#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html (geplant für 8. und 9. Mai 2021)
+#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20210418 (abgesagt)
+#: by: https://www.laubinger.de/event/30-fest-auf-der-boelschestrasse/ (geplant für 7.05.2022 - 8.05.2022)
+#: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20220416 (geplant für 7. und 8. Mai 2022)
+	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
+',
+         'from' => 1651788000,
+         'id' => 964,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              7,
+                              'months',
+                              5,
+                              'start',
+                              '2021-05-13T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/',
+         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (7. und 8. Mai 2022)',
+         'type' => 'gesperrt',
+         'until' => 1652047199
+       },
        undef,
        undef,
        undef,
@@ -1248,7 +1274,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 # REMOVED --- #: next_check_id: CORONA-2020
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-04-09
+#: last_checked: 2022-04-29
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -2372,6 +2398,8 @@ Kleistpark	2::night 7310,9622 7307,9528
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20220324 (unklar)
 #: by: https://berlin.dgb.de/++co++0f45cbd8-aeba-11ec-82e9-001a4a160123 (Kundgebung Platz des 18. März, 12 bis 14:30 Uhr)
 #: source_id: viz2021:13.376808,52.516209,30.04.2022,12:00
+#: source_id: viz2021:13.37688,52.51775,30.04.2022,12:00
+#: source_id: viz2021:13.36968,52.51571,30.04.2022,12:00
 #: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
 	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 	2::inwork 8573,12325 8540,12420
@@ -2398,7 +2426,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'source_id' => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
          'text' => 'Platz des 18. März: Veranstaltung (Kundgebung des DGB), am 1. Mai 2022',
          'type' => 'gesperrt',
-         'until' => 1651363200
+         'until' => 1651428000
        },
        undef,
        undef,
@@ -2582,6 +2610,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/mit-muskelkraft-ueber-die-mueggelspree_a266224
 #: by: https://unternehmen.bvg.de/pressemitteilung/ahoi-paule-iii/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1198551.php
+#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/hol-ueber-seit-111-jahren_a344228
+#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-der-bvg-ab-sofort-wieder-auf-der-mueggelspree-unterwegs_a343523
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
 #: tempex: (20170430|YYYY0501)-YYYY1003 & (sa|su|holiday) & T11-T19
 	2::temp 29959,3031 29968,2986
@@ -3120,6 +3150,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.berlin.de/imgscaler/ZyeZkkdwQemyWEdhwaVn9BCTIwwfgpHdAz40E0MQ50E/article/L3N5czExLXByb2QvYmEtdHJlcHRvdy1rb2VwZW5pY2svX2Fzc2V0cy9ha3R1ZWxsZXMvcG0vMjAyMi8yMi0wMy0wMV9iYXVtYXNzbmFobWVfLV9wbGFuX3RyZXB0b3dlcl9wYXJrLnBuZw.png
 #: by: https://www.berliner-woche.de/alt-treptow/c-bauen/weitere-arbeiten-im-treptower-park_a337841
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
+#: osm_watch: way id="29547073" version="11"
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität
 #: last_checked: 2022-03-03
 #: next_check: 2022-05-01
@@ -3496,7 +3527,21 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/gleditschstrasse-am-2-mai-gesperrt_a262750
+#: XXX ist die Sperrung nur im Sommer 2022 oder dauerhaft?
+#: next_check: 2022-08-27
+# REMOVED (hier nicht, hier sind Bauarbeiten) ---	q4::temp 7126,9825 7118,9870
+	q4::temp 7118,9870 7080,10098
+',
+         'from' => 1646348400,
+         'id' => 3223,
+         'recurring' => 1,
+         'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.923431.php',
+         'text' => 'Gleditschstr. am Winterfeldplatz: samstags Sperrung wegen des Wochenmarkts, 6 bis 19 Uhr',
+         'type' => 'handicap',
+         'until' => 1661619600
+       },
        {
          'data' => '#: next_check_id: CORONA-2020
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
@@ -3508,6 +3553,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 ',
          'from' => 1587621600,
          'id' => 3224,
+         'recurring' => 1,
          'text' => 'Boxhagener Platz: samstags 6 bis 20 Uhr Sperrung der umliegenden Straßen wegen des Wochenmarkts',
          'type' => 'gesperrt',
          'until' => undef
@@ -4026,6 +4072,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen
 #: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen/kieze
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/neun-spielstrassen-im-sommer_a343397
 # REMOVED --- #: XXX Spielstraße wurde verstetigt; genaue Geltungszeiten? --- #: next_check: 2022-05-24
 	q4::temp::play 14798,12502 15005,12443
 ',
@@ -4247,16 +4294,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork 8555,17928 8415,17902
-',
-         'from' => 1629669600,
-         'id' => 3435,
-         'source_id' => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
-         'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 30.04.2022 17:00 ',
-         'type' => 'handicap',
-         'until' => 1651330800
-       },
+       undef,
        undef,
        undef,
        {
@@ -4317,19 +4355,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
-#: last_checked: 2022-03-18 (mapillary)
-#: next_check: 2022-04-30
-	q4::inwork; 8196,20096 8224,19977 8234,19936
-',
-         'from' => 1615158000,
-         'id' => 3458,
-         'source_id' => 'viz2021:13.374359,52.586234,09.03.2021,07:00',
-         'text' => 'Schönholzer Weg: Richtung Süden zwischen Angerweg und Edelweißstr. gesperrt, vom 09.03.2021 07:00 bis 30.04.2022 17:00',
-         'type' => 'handicap',
-         'until' => 1651330800
-       },
+       undef,
        undef,
        undef,
        {
@@ -4473,7 +4499,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: next_check: 2022-09-30 vvv
 # REMOVED (hier nicht mehr) ---	q4::inwork; 13702,7418 13654,7380 13601,7366
 	q4::inwork; 13601,7366 13519,7345 13476,7330
-	q4::inwork 13476,7330 13373,7426 13341,7423
+	q4::inwork; 13476,7330 13373,7426 13341,7423
 # REMOVED (hier nicht mehr) ---	q3::inwork 13702,7418 13762,7321
 #: next_check ^^^
 #: check_frequency ^^^
@@ -4484,7 +4510,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => undef,
          'id' => 3491,
-         'text' => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung sowie Sperrung der Kanner Str., voraussichtlich bis September 2022',
+         'text' => 'Braunschweiger Str. und Kanner Str.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis September 2022',
          'type' => 'handicap',
          'until' => 1664553600
        },
@@ -4788,14 +4814,25 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1498247389118873600
 #: by: https://pbs.twimg.com/media/FMrYBZQXEAAQlaA?format=jpg&name=large
 #: note: es existiert ein etwas breiterer Fußgängerschutztunnel, etwa 50m lang
+#: XXX bis wann gehen die Bauarbeiten?
+#: also_indoor: traffic (G(partial),B)
+#: last_checked: 2022-04-29 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2022-07-01 vvv
 	q3::inwork 10776,10682 10944,10606
+#: note: Kreuzungsbereich zur Prinzenstr. gesperrt
+#: source_id: viz2021:13.408387,52.502028,14.03.2022,08:00 (bis 1.7.2022)
+	q2::inwork 10776,10682 10585,10766
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1645945200,
          'id' => 3521,
          'source_id' => 'viz2021:13.409755,52.50158,28.02.2022,08:00',
-         'text' => 'Ritterstr.: Bauarbeiten zwischen Prinzenstr. und Bergfriedstr., Fahrbahn gesperrt, Engstelle, vom 28.02.2022 08:00 bis 29.04.2022 17:00 ',
+         'text' => 'Ritterstr.: Bauarbeiten zwischen Lobeckstr. und Bergfriedstr., Fahrbahn gesperrt, Engstelle, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
-         'until' => 1651244400
+         'until' => undef
        },
        undef,
        {
@@ -4901,7 +4938,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar)
-#: last_checked: 2022-04-27
+#: last_checked: 2022-04-30
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -4976,24 +5013,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1667232000
        },
-       {
-         'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/markthalle-101-ehemalige-quellekaufhaus.587/#post-17884
-#: by: https://www.deutsches-architekturforum.de/thread/14587-revitalisierung-b%C3%BCrokomplex-kalle-neuk%C3%B6lln-in-bau/
-#: by: https://www.kalle-neukoelln.com/#architektur (Erstbezüge ab 2022 möglich)
-#: osm_watch: way id="734271970" version="5"
-#: osm_watch: way id="975241319" version="3"
-#: also_indoor: traffic (none)
-#: last_checked: 2022-04-18
-#: check_frequency: 45d
-#: next_check: 2022-12-31
-	q4::inwork 12779,8188 12805,8194 12873,8218 12911,8232
-',
-         'from' => undef,
-         'id' => 3537,
-         'text' => 'Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: WESER-2021
 #: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022)
@@ -5041,6 +5061,19 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Zähringerstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::temp 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390 12639,8344 12689,8289
+	q4::temp 12152,9015 12240,8964
+	q4::temp 11861,9183 11909,9155 11888,9189
+	q4::temp 11831,8989 11909,9155 12012,9092
+',
+         'from' => undef,
+         'id' => 3541,
+         'source_id' => 'https://viz.berlin.de/2022/04/verkehr-1-mai/',
+         'text' => 'Straßenfeste in Neukölln: Karl-Marx-Str. (Bereich Rathaus Neukölln), Hermannplatz und abschnittsweise Sonnenallee gesperrt, am 1. Mai 2022',
+         'type' => 'handicap',
+         'until' => 1651442399
        }
      
 );

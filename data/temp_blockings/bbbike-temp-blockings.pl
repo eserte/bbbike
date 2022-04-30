@@ -8278,12 +8278,11 @@ EOF
 	q4::temp 6173,12396 6276,12506 6314,12518 6442,12545
 EOF
      },
-     { from  => $isodate2epoch->("2019-05-10 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-05-12 23:59:59"),
+     { from  => $isodate2epoch->("2022-05-06 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-05-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5, start => "2021-05-13T00:00:00"]],
-       recurrence_prewarn_days => 7,
-       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (11. und 12. Mai 2019)',
+       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (7. und 8. Mai 2022)',
        type  => 'gesperrt',
        source_id => 'https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/',
        data  => <<EOF,
@@ -16322,7 +16321,7 @@ EOF
 # REMOVED --- #: next_check_id: CORONA-2020
 #: next_check_id: OSTBAHNHOF-2021
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-04-09
+#: last_checked: 2022-04-29
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -22412,7 +22411,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130827.1005.388421.html',
        data  => <<EOF,
 #: source_id: IM_020294
-	q4::inwork; 9099,8670 9011,8605 8916,8511 8854,8429 8807,8353 8776,8285
+	q4::inwork; 9093,8665 9011,8605 8916,8511 8854,8429 8807,8353 8776,8285
 EOF
      },
      { from  => 1378591200, # 2013-09-08 00:00
@@ -23303,7 +23302,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2022-04-30 00:00:00"),
-       until => $isodate2epoch->("2022-05-01 02:00:00"),
+       until => $isodate2epoch->("2022-05-01 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4, start => "2021-05-03T00:00:00"]],
        text  => 'Platz des 18. März: Veranstaltung (Kundgebung des DGB), am 1. Mai 2022', # wenn größer: "Straße des 17. Juni und Ebertstraße"
@@ -23315,6 +23314,8 @@ EOF
 #: by: https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html?date=20220324 (unklar)
 #: by: https://berlin.dgb.de/++co++0f45cbd8-aeba-11ec-82e9-001a4a160123 (Kundgebung Platz des 18. März, 12 bis 14:30 Uhr)
 #: source_id: viz2021:13.376808,52.516209,30.04.2022,12:00
+#: source_id: viz2021:13.37688,52.51775,30.04.2022,12:00
+#: source_id: viz2021:13.36968,52.51571,30.04.2022,12:00
 #: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
 	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 	2::inwork 8573,12325 8540,12420
@@ -24700,6 +24701,8 @@ EOF
 #: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/mit-muskelkraft-ueber-die-mueggelspree_a266224
 #: by: https://unternehmen.bvg.de/pressemitteilung/ahoi-paule-iii/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1198551.php
+#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/hol-ueber-seit-111-jahren_a344228
+#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-der-bvg-ab-sofort-wieder-auf-der-mueggelspree-unterwegs_a343523
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
 #: tempex: (20170430|YYYY0501)-YYYY1003 & (sa|su|holiday) & T11-T19
 	2::temp 29959,3031 29968,2986
@@ -28591,6 +28594,7 @@ EOF
 #: by: https://www.berlin.de/imgscaler/ZyeZkkdwQemyWEdhwaVn9BCTIwwfgpHdAz40E0MQ50E/article/L3N5czExLXByb2QvYmEtdHJlcHRvdy1rb2VwZW5pY2svX2Fzc2V0cy9ha3R1ZWxsZXMvcG0vMjAyMi8yMi0wMy0wMV9iYXVtYXNzbmFobWVfLV9wbGFuX3RyZXB0b3dlcl9wYXJrLnBuZw.png
 #: by: https://www.berliner-woche.de/alt-treptow/c-bauen/weitere-arbeiten-im-treptower-park_a337841
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
+#: osm_watch: way id="29547073" version="11"
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität
 #: last_checked: 2022-03-03
 #: next_check: 2022-05-01
@@ -30899,14 +30903,18 @@ EOF
 	2::inwork 15758,10578 16148,10329 16353,10207 16539,10097
 EOF
      },
-     { from  => 1587614400, # 2020-04-23 06:00
-       until => 1588449600, # 2020-05-02 22:00
-       text  => 'Gleditschstr. am Winterfeldplatz: samstags Sperrung wegen des Wochenmarkts',
+     { from  => $isodate2epoch->("2022-03-04 00:00:00"), # 1587614400, # 2020-04-23 06:00
+       until => $isodate2epoch->("2022-08-27 19:00:00"), # 1588449600, # 2020-05-02 22:00
+       text  => 'Gleditschstr. am Winterfeldplatz: samstags Sperrung wegen des Wochenmarkts, 6 bis 19 Uhr',
        type  => 'handicap',
+       recurring => 1,
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.923431.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/gleditschstrasse-am-2-mai-gesperrt_a262750
-	q4::temp 7126,9825 7118,9870 7080,10098
+#: XXX ist die Sperrung nur im Sommer 2022 oder dauerhaft?
+#: next_check: 2022-08-27
+# REMOVED (hier nicht, hier sind Bauarbeiten) ---	q4::temp 7126,9825 7118,9870
+	q4::temp 7118,9870 7080,10098
 EOF
      },
 
@@ -30914,6 +30922,7 @@ EOF
        until => undef, # XXX
        text  => 'Boxhagener Platz: samstags 6 bis 20 Uhr Sperrung der umliegenden Straßen wegen des Wochenmarkts',
        type  => 'gesperrt',
+       recurring => 1,
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
@@ -32781,6 +32790,7 @@ EOF
 #: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen
 #: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen/kieze
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/neun-spielstrassen-im-sommer_a343397
 # REMOVED --- #: XXX Spielstraße wurde verstetigt; genaue Geltungszeiten? --- #: next_check: 2022-05-24
 	q4::temp::play 14798,12502 15005,12443
 EOF
@@ -33281,7 +33291,7 @@ EOF
        until => $isodate2epoch->("2022-06-20 17:00:00"), # undef, # Termin kann wohl nicht gehalten werden --- $isodate2epoch->("2021-12-15 17:00:00"),
        text  => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), sowie die Anbindung Nöldnerstr. (komplett, auch für Fußgänger), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
        type  => 'gesperrt',
-       source_id => 'viz2021:13.475242,52.50154,09.07.2021,11:00',
+       source_id => 'viz2021:13.475242,52.50154,09.07.2021,11:00', # bis 20.6.2022
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
@@ -34267,7 +34277,7 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2022-09-30 18:00:00"),
-       text  => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung sowie Sperrung der Kanner Str., voraussichtlich bis September 2022',
+       text  => 'Braunschweiger Str. und Kanner Str.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis September 2022',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BRAUNSCHWEIGER-2022
@@ -34279,7 +34289,7 @@ EOF
 #: next_check: 2022-09-30 vvv
 # REMOVED (hier nicht mehr) ---	q4::inwork; 13702,7418 13654,7380 13601,7366
 	q4::inwork; 13601,7366 13519,7345 13476,7330
-	q4::inwork 13476,7330 13373,7426 13341,7423
+	q4::inwork; 13476,7330 13373,7426 13341,7423
 # REMOVED (hier nicht mehr) ---	q3::inwork 13702,7418 13762,7321
 #: next_check ^^^
 #: check_frequency ^^^
@@ -34700,15 +34710,26 @@ EOF
 EOF
      },
      { from  => 1645945200, # 2022-02-27 08:00
-       until => 1651244400, # 2022-04-29 17:00
-       text  => 'Ritterstr.: Bauarbeiten zwischen Prinzenstr. und Bergfriedstr., Fahrbahn gesperrt, Engstelle, vom 28.02.2022 08:00 bis 29.04.2022 17:00 ',
+       until => undef, # 1651244400, # 2022-04-29 17:00
+       text  => 'Ritterstr.: Bauarbeiten zwischen Lobeckstr. und Bergfriedstr., Fahrbahn gesperrt, Engstelle, Ende der Bauarbeiten unbekannt', # vom 28.02.2022 08:00 bis 29.04.2022 17:00 ',
        type  => 'handicap',
-       source_id => 'viz2021:13.409755,52.50158,28.02.2022,08:00',
+       source_id => 'viz2021:13.409755,52.50158,28.02.2022,08:00', # (mittlerweile inaktiv)
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1498247389118873600
 #: by: https://pbs.twimg.com/media/FMrYBZQXEAAQlaA?format=jpg&name=large
 #: note: es existiert ein etwas breiterer Fußgängerschutztunnel, etwa 50m lang
+#: XXX bis wann gehen die Bauarbeiten?
+#: also_indoor: traffic (G(partial),B)
+#: last_checked: 2022-04-29 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2022-07-01 vvv
 	q3::inwork 10776,10682 10944,10606
+#: note: Kreuzungsbereich zur Prinzenstr. gesperrt
+#: source_id: viz2021:13.408387,52.502028,14.03.2022,08:00 (bis 1.7.2022)
+	q2::inwork 10776,10682 10585,10766
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => $isodate2epoch->("2022-03-02 14:00:00"), # 1 Tag Vorlauf
@@ -34842,7 +34863,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar)
-#: last_checked: 2022-04-27
+#: last_checked: 2022-04-30
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -34919,7 +34940,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1651248083, # undef, # XXX
        text  => 'Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
@@ -34928,10 +34949,7 @@ EOF
 #: by: https://www.kalle-neukoelln.com/#architektur (Erstbezüge ab 2022 möglich)
 #: osm_watch: way id="734271970" version="5"
 #: osm_watch: way id="975241319" version="3"
-#: also_indoor: traffic (none)
-#: last_checked: 2022-04-18
-#: check_frequency: 45d
-#: next_check: 2022-12-31
+# REMOVED (laut osm note 3139636 wieder offen) --- #: also_indoor: traffic (none) --- #: last_checked: 2022-04-18 --- #: check_frequency: 45d --- #: next_check: 2022-12-31
 	q4::inwork 12779,8188 12805,8194 12873,8218 12911,8232
 EOF
      },
@@ -34979,6 +34997,18 @@ EOF
 #: last_checked: 2022-04-26 (mapillary)
 #: check_frequency: 60d
 	q4::inwork; 4277,9895 4126,9932 3927,9935
+EOF
+     },
+     { from  => undef, # 
+       until => 1651442399, # 2022-05-01 23:59
+       text  => 'Straßenfeste in Neukölln: Karl-Marx-Str. (Bereich Rathaus Neukölln), Hermannplatz und abschnittsweise Sonnenallee gesperrt, am 1. Mai 2022',
+       type  => 'handicap',
+       source_id => 'https://viz.berlin.de/2022/04/verkehr-1-mai/',
+       data  => <<EOF,
+	q4::temp 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390 12639,8344 12689,8289
+	q4::temp 12152,9015 12240,8964
+	q4::temp 11861,9183 11909,9155 11888,9189
+	q4::temp 11831,8989 11909,9155 12012,9092
 EOF
      },
     );

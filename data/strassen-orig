@@ -85,7 +85,7 @@ Ida-Wolff-Platz	NN 9161,10574 9192,10528
 Schwiebusser Str.	N 9227,8890 9417,8890 9801,8889
 Mussehlstr.	N 8982,8781 8926,8682 8842,8561
 Mussehlstr.	NN 8842,8561 8759,8458 8720,8373
-Manfred-von-Richthofen-Str.	H 9229,8718 9158,8706 9099,8670 9011,8605 8916,8511 8854,8429 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 8731,7956
+Manfred-von-Richthofen-Str.	H 9229,8718 9158,8706 9093,8665 9011,8605 8916,8511 8854,8429 8807,8353 8776,8285 8730,8079 8731,8050 8731,8020 8731,7990 8731,7956
 Manfred-von-Richthofen-Str.	N 8731,7956 8757,7841 8796,7751 8812,7730 8864,7676 8900,7643 8956,7598 9070,7493 9097,7469 9242,7325
 Paradestr.	N 9240,8028 9130,8029 9033,8029 8952,8030 8921,8028 8834,8023 8783,8020
 (Paradestr. - Flughafengelände)	N 9240,8028 9268,8029 9300,8027
@@ -258,7 +258,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11193 (Gebühren für Widerspruchsbescheide)
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2022-04-28 vvv
+#: last_checked: 2022-04-29 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -338,6 +338,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/senat-will-neues-konzept-fuer-einen-autofreien-kiez-rund-um-die-friedrichstrasse-vorlegen_a342098
 #: by: https://www.bz-berlin.de/berlin/mitte/erst-autos-jetzt-fahrraeder-verbannt-friedrichstrasse-kuenftig-nur-noch-fuer-fussgaenger
 #: by: https://berliner-abendblatt.de/2022/04/28/__trashed-1450/ (Autofreie Friedrichstraße soll zur Fußgängerzone werden)
+#: by: https://berliner-abendblatt.de/2022/04/30/fussgaengerverband-ohne-fahrraeder-das-entspannteste/
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: last_checked: 2022-04-28
@@ -1184,7 +1185,7 @@ Badener Ring	N 8482,8364 8531,8404 8570,8427 8660,8454 8715,8459 8759,8458 8854,
 Thuyring	N 8886,7377 8902,7481 8956,7598 8994,7639 9040,7648 9115,7645 9132,7661 9242,7658
 Kleineweg	N 9097,7469 9145,7522 9120,7600 9115,7645
 Kleineweg	N 9132,7661 9130,7810 9130,8029 9128,8251
-Kaiserkorso	N 9128,8251 9128,8414 9132,8629 9099,8670
+Kaiserkorso	N 9128,8251 9128,8414 9135,8633 9093,8665
 Leonhardyweg	N 9040,7648 9035,7810 9033,8029 9032,8254
 Ringbahnstr. (Tempelhof)	N 8460,6959 8723,6958 9050,6960 9242,6962 9457,6959 9706,6802 9861,6693 9863,6617
 Borussiastr.	N 8653,6781 8750,6779 8846,6781 9046,6784 9245,6791 9511,6797 9706,6802
@@ -1694,7 +1695,7 @@ Invalidenstr.	H 8098,13419 8003,13374 7880,13315 7842,13292 7816,13276 7759,1324
 #: by: https://www.berliner-woche.de/moabit/c-verkehr/arbeiten-fuer-m10-schreiten-voran_a336662
 #: XXX weitere Einschränkungen für den Kfz-Verkehr (nicht eingezeichnet): Turmstr. Richtung Westen zwischen Rathenower Str. und Lübecker Str. gesperrt (Radweg existiert); Thusnelda-Allee gesperrt (Radweg existiert); neu: Alt-Moabit zwischen Paulstr. und Lüneburger Str.; außerdem sind diverse Ampeln ausgeschaltet
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-04-23 vvv
+#: last_checked: 2022-04-29 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2022-12-22 vvv
 #: valid: 20220119-20221222 vvv
@@ -2292,7 +2293,7 @@ Triftstr. (Wedding)	N 6675,15080 6743,15102 6886,15156 7085,15226 7248,15296 727
 Triftstr. (Wedding)	N 6743,15102 6715,15152
 Luxemburger Str.	H 7277,15586 7138,15437 6996,15319 6833,15215 6715,15152 6626,15104
 Sellerstr.	HH 8057,14876 7960,14794 7733,14570 7711,14548 7609,14447 7566,14404
-Fennstr. (Wedding)	HH 7998,15068 7911,15008 7533,14702 7518,14689 7514,14686 7480,14660 7458,14643 7438,14627
+Fennstr. (Wedding)	HH 7998,15068 7911,15008 7533,14702 7514,14687 7480,14660 7458,14643 7438,14627
 Fennbrücke	HH 7438,14627 7368,14573
 Schulzendorfer Str. (Gesundbrunnen)	N 8057,14876 8091,14895 8219,14897 8248,14900 8264,14902 8412,14923
 Grenzstr. (Gesundbrunnen)	N 8412,14923 8570,15107 8614,15156 8654,15201 8742,15298
@@ -12546,6 +12547,7 @@ Zum Biesenwerder	N 14064,1590 14008,1835
 Am Buschfeld	N 14171,1634 14124,1857
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_05_0237_0304_online.pdf (Verkauf eines Flurstücks)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Einziehung von Straßenland)
 #: XXX ändert sich durch die (teilweise?) Straßenlandwidmung etwas?
 #: osm_watch: way id="156346093" version="6"
 #: osm_watch: way id="23106203" version="13"
@@ -13103,7 +13105,7 @@ Falckensteinstr. (Kreuzberg)	N 12905,10143 13032,10355 13136,10535 13178,10623
 # REMOVED (Berlin.coords.data): Am Nordhafen|Wedding|13353|7694,14581
 # REMOVED --- Am Nordhafen	N 7733,14570
 (Sellerstr. - Uferweg am Nordhafen)	NN 7733,14570 7696,14577 7662,14579 7653,14570
-(Uferweg am Nordhafen - Fennstr./Am Nordhafen)	NN 7605,14600 7589,14627 7549,14664 7514,14686
+(Uferweg am Nordhafen - Fennstr./Am Nordhafen)	NN 7605,14600 7589,14627 7549,14664 7514,14687
 (Uferweg am Nordhafen)	NN 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7480,14660
 (Nordhafenpark)	NN 7696,14577 7635,14628 7560,14670 7533,14702
 Torfstraßensteg	NN 6824,14821 6847,14735
