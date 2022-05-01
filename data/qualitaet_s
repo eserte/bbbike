@@ -1429,7 +1429,7 @@ Christburger Str.: Asphalt	Q0 11912,14486 12177,14335
 Pasteurstr.: Asphalt	Q0 12188,14350 12335,14246 12486,14143
 Pasteurstr.: Kopfsteinpflaster	Q2 12486,14143 12594,14065 12766,13942
 Ebelingstr.: Kopfsteinpflaster	Q2 13481,13128 13598,13180 13692,13221
-Cuvrystr.: Asphalt	Q0 13035,10076 13132,10239
+Cuvrystr.: Asphalt und gepflasterte Abschnitte	Q1 13035,10076 13132,10239
 Cuvrystr.: gutes Kopfsteinpflaster	Q1 13132,10239 13151,10276 13197,10355
 Cuvrystr.: Asphalt	Q0 13197,10355 13249,10445
 Cuvrystr.: Asphalt	Q0 13249,10445 13292,10513
@@ -10897,6 +10897,8 @@ Witzlebenstr.: Asphalt mit einigen Aufpflasterungen	Q0; 2986,11413 2921,11311
 Park Biesdorf: wassergebundene Decke	Q1 20807,12083 20857,12027
 Gubener Str.: Asphalt mit leichten Schäden	Q1; 13568,11560 13467,11778
 Gubener Str.: Asphalt	Q0; 13467,11778 13568,11560
+In den Alboingärten: Betonpflaster	Q0 7971,6087 7910,6090
+In den Alboingärten: unbefestigte Baustraße	Q2 7910,6090 7739,6099 7646,6031 7638,5967
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -14902,7 +14904,7 @@ Lutherstr. (Lichtenrade): Beton	Q0 10692,-804 10726,-1166
 Lutherstr. (Lichtenrade): Gehwegplatten	Q0 10726,-1166 10728,-1198 10720,-1340
 Grimmingweg: guter Beton	Q0 9984,1860 10001,1814 10004,1787 10003,1768 9947,1559
 Grimmingweg: guter Asphalt	Q0 9947,1559 9943,1543 9931,1502 9908,1416
-Grimmingweg: Verbundsteinpflaster	Q1 9908,1416 9832,1380
+Grimmingweg: Verbundsteinpflaster	Q1 9908,1416 9870,1398 9832,1380
 Gallipoliweg: guter Beton	Q0 10455,4189 10460,4272
 Gallipoliweg: guter Beton	Q0 10460,4272 10462,4328
 Straße 9 (Lichtenrade): guter Asphalt	Q0 11747,-440 11644,-451 11454,-470 11203,-495 11176,-489

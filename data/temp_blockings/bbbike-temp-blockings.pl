@@ -387,7 +387,6 @@ EOF
        until => $isodate2epoch->("2019-05-01 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 5, start => "2022-05-02T00:00:00"]],
-       recurrence_prewarn_days => 14,
        text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2019',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -6280,12 +6279,11 @@ EOF
 	1::inwork 4356,12009 4337,11721
 EOF
      },
-     { from  => $isodate2epoch->("2019-05-03 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-05-05 23:59:59"),
+     { from  => $isodate2epoch->("2022-05-06 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-05-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4, start => "2021-10-25T00:00:00"]],
-       recurrence_prewarn_days => -7,
-       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (4.5.2019 und 5.5.2019)',
+       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (7.5.2022 und 8.5.2022)',
        type  => 'gesperrt',
        source_id => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
        data  => <<EOF,
@@ -18112,13 +18110,12 @@ EOF
 	q4::inwork 18586,9172 18511,9185 18430,9199 18319,9218
 EOF
      },
-     { from  => $isodate2epoch->("2021-09-02 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-09-06 04:00:00"), # bis in die Nacht hinein
+     { from  => $isodate2epoch->("2022-05-19 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-05-22 04:00:00"), # bis in die Nacht hinein
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 5, start => "2020-06-08T00:00:00"]], # kann auch erst im September stattfinden
-       recurrence_prewarn_days => 2,
        source_id => 'http://www.erkner.de/271.html?date=20190415',
-       text  => 'Erkner: Heimatfest, 3.9.2021 bis 5.9.2021',
+       text  => 'Erkner: Heimatfest, 20.5.2022 bis 22.5.2022',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.laubinger.de/event/28-heimatfest-erkner/ (Absage 2020)
@@ -30553,7 +30550,7 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-04-19
+#: last_checked: 2022-04-21 (mapillary)
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 EOF
@@ -33939,8 +33936,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bleibt das dauerhaft so?
+#: note: mittlerweile (Ende April 2022) ist eins der Schilder entfernt worden, aber an der östlichen Seite scheint das Verbotsschild noch da zu sein (leider sind die Mapillary-Aufnahmen nicht scharf genug)
 #: osm_watch: way id="57401221" version="8"
-#: last_checked: 2021-10-20
+#: last_checked: 2022-04-30 (mapillary)
 #: check_frequency: 360d
 	2 -7663,15304 -7747,15315
 EOF
@@ -34284,11 +34282,11 @@ EOF
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Kanner Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
 #: also_indoor: traffic (ex-G,ex-H(nur Niemetz),ex-B(nur Niemetz)) vvv
-#: last_checked: 2022-04-18 vvv
+#: last_checked: 2022-05-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 # REMOVED (hier nicht mehr) ---	q4::inwork; 13702,7418 13654,7380 13601,7366
-	q4::inwork; 13601,7366 13519,7345 13476,7330
+# REMOVED (falsches Ausschilderung, von Osten kommend kein Einfahrt-verboten-Schild) --- q4::inwork; 13601,7366 13519,7345 13476,7330
 	q4::inwork; 13476,7330 13373,7426 13341,7423
 # REMOVED (hier nicht mehr) ---	q3::inwork 13702,7418 13762,7321
 #: next_check ^^^
@@ -34755,13 +34753,13 @@ EOF
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-04-09 vvv
+#: last_checked: 2022-04-30 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-09-30 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
 	q4::inwork; 6945,15045 7007,14911 7000,14832
 # REMOVED (hier vermutlich nicht?) ---	q4::inwork; 7182,14986 7178,14996 7131,15109
-#: XXX hier müsste der Ausmaß der Einschränkung geprüft werden
+#: note: zumindest am 2022-05-01 konnte man hier ohne Einschränkungen fahren, aber vielleicht werden die Absperrungen während der Arbeitszeiten geschlossen
 	q2::inwork 7259,14870 7409,14954
 #: next_check ^^^
 #: check_frequency ^^^
@@ -34776,7 +34774,7 @@ EOF
 #: next_check_id: BRAUNSCHWEIGER-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
-#: last_checked: 2022-04-18 vvv
+#: last_checked: 2022-05-01 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 #: also_indoor: traffic (G,B) vvv
@@ -34863,7 +34861,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar)
-#: last_checked: 2022-04-30
+#: last_checked: 2022-05-01
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -34964,7 +34962,7 @@ EOF
 #: osm_watch: way id="799282063" version="8"
 #: osm_watch: way id="36738531" version="34"
 #: also_indoor: traffic (G) vvv
-#: last_checked: 2022-04-18 vvv
+#: last_checked: 2022-05-01 vvv
 #: check_frequency: 30d vvv
 	q4::inwork; 13217,8493 13384,8354
 #: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen
@@ -35005,6 +35003,9 @@ EOF
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/2022/04/verkehr-1-mai/',
        data  => <<EOF,
+#: source_id: viz2021:13.43776,52.48126,01.05.2022,15:00 (Erkstr.)
+#: source_id: viz2021:13.42511,52.48785,01.05.2022,13:00 (Hermannplatz)
+#: source_id: viz2021:13.43025,52.48616,01.05.2022,19:00 (Sonnenallee)
 	q4::temp 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390 12639,8344 12689,8289
 	q4::temp 12152,9015 12240,8964
 	q4::temp 11861,9183 11909,9155 11888,9189

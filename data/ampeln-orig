@@ -11,6 +11,8 @@
 #: source_id: viz2021:13.450705,52.480066,28.04.2022,09:00 (hier: bis 4.7.2022)
 #: by: https://nitter.net/VIZ_Berlin/status/1519602332090179585#m (hier: bis Anfang Juni 2022)
 #: by: https://nitter.net/pic/media%2FFRWA3_cWYAAYbnf.jpg%3Fname%3Dorig (südlich der Kreuzung)
+#: last_checked: 2022-05-01
+#: next_check: 2022-07-04
 #: valid: -20220704
 Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
@@ -1549,6 +1551,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8680,6322
 	X 11308,-2535
 	F 10617,452
+#: off: Sunday? (seen 2022-05-01 13:30)
 	X 10226,1515
 #: XXX_prog: für linksabbiegende Radfahrer Anforderungsampel, auch Richtung Osthafengelände
 	X 14218,10430
@@ -1961,7 +1964,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10432 (sichere Querungsmöglichkeit gefordert)
 #: XXX Ampel ausgeschaltet, vielleicht dauerhaft (Lynar/Tegeler)
 #: osm_watch: node id="3777205512" version="4"
-#: last_checked: 2022-04-23 (architektur-urbanistik)
+#: last_checked: 2022-04-30 (mapillary)
 #: check_frequency: 90d
 	X0 7259,14870
 #: note: Anforderungsampel für Radfahrer aus Richtung Osten Richtung Luisenstr. und für Radfahrer aus der Luisenstr.
@@ -3333,7 +3336,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX wird diese Ampel jemals wieder in Betrieb genommen?
 #: osm_watch: node id="28321258" version="9"
-#: last_checked: 2022-02-12
+#: last_checked: 2022-04-30 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2023-12-01
 	F0 -224,16095

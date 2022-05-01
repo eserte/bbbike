@@ -1000,7 +1000,7 @@ Tegeler Weg: Asphalt	Q0 7259,14870 7209,14927 7182,14986 7178,14996 7131,15109 7
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: XXX Wird die restliche Lynarstr. auch asphaltiert?
-#: last_checked: 2022-04-23 (architektur-urbanistik)
+#: last_checked: 2022-04-30 (mapillary)
 #: check_frequency: 60d
 Lynarstr.: Kopfsteinpflaster	Q2 7129,14787 7143,14794 7259,14870 7409,14954
 Lynarstr.: Kopfsteinpflaster	Q2 7409,14954 7461,14986
@@ -1973,7 +1973,8 @@ Christburger Str.: Asphalt	Q0 11912,14486 12177,14335
 Pasteurstr.: Asphalt	Q0 12188,14350 12335,14246 12486,14143
 Pasteurstr.: Kopfsteinpflaster	Q2 12486,14143 12594,14065 12766,13942
 Ebelingstr.: Kopfsteinpflaster	Q2 13481,13128 13598,13180 13692,13221
-Cuvrystr.: Asphalt	Q0 13035,10076 13132,10239
+#: note: Borde sind relativ hoch
+Cuvrystr.: Asphalt und gepflasterte Abschnitte	Q1- 13035,10076 13132,10239
 Cuvrystr.: gutes Kopfsteinpflaster	Q1 13132,10239 13151,10276 13197,10355
 Cuvrystr.: Asphalt	Q0 13197,10355 13249,10445
 Cuvrystr.: Asphalt	Q0 13249,10445 13292,10513
@@ -3661,7 +3662,7 @@ Norwegerstr. - Behmstr.: Verbundsteinpflaster	Q0- 10022,16237 10026,16165 10055,
 (Holzmarktstr. - Ifflandstr.): Gehwegbetonplatten	Q1 11515,12293 11584,12258 11589,12296
 (Lichtenberger Str., Wohngebiet): Beton	Q1+ 11736,12097 11845,12292
 #: note ^^^
-Burchardstr.: Beton	Q0 8200,6668 8553,6665 8722,6656
+Burchardstr.: Beton	Q0- 8200,6668 8553,6665 8722,6656
 Podewilsstr.: Asphalt	Q0 8707,6537 8551,6552
 Zastrowstr.: Beton	Q0 9979,6349 9860,6348
 Weidenweg: Asphalt	Q0 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
@@ -12530,6 +12531,13 @@ Witzlebenstr.: Asphalt mit einigen Aufpflasterungen	Q0-; 2986,11413 2921,11311
 Park Biesdorf: wassergebundene Decke	Q1- 20807,12083 20857,12027
 Gubener Str.: Asphalt mit leichten Schäden	Q1+; 13568,11560 13467,11778
 Gubener Str.: Asphalt	Q0; 13467,11778 13568,11560
+In den Alboingärten: Betonpflaster	Q0- 7971,6087 7910,6090
+#: next_check_id: INDENALBOINGARTEN-2022
+#: XXX Bauarbeiten; wird hier später auch Betonpflaster liegen?
+#: osm_watch: way id="962201820" version="7"
+#: last_checked: 2022-05-01
+#: check_frequency: 60d
+In den Alboingärten: unbefestigte Baustraße	Q2 7910,6090 7739,6099 7646,6031 7638,5967
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14568,7 +14576,7 @@ Dielingsgrund: gutes Verbundsteinpflaster	Q1 10590,525 10783,587
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.522382.php
 #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/grundeigentuemer-kritisieren-die-bvv_a234142 (auch erwähnt hier: Schwedter Str.)
 #: XXX siehe auch Finanzplan Berlin 2019-2023, S. 232 im pdf)
-#: last_checked: 2021-10-03
+#: last_checked: 2022-05-01
 #: check_frequency: 180d
 Dielingsgrund: glattes Kopfsteinpflaster, etwas wellig	Q2+ 10777,605 10880,633 11083,639
 #: by: ^^^
@@ -23504,7 +23512,7 @@ Grimmingweg: guter Beton	Q0 9984,1860 10001,1814 10004,1787 10003,1768 9947,1559
 #: confirmed_by: srt
 Grimmingweg: guter Asphalt	Q0 9947,1559 9943,1543 9931,1502 9908,1416
 #: corrected_by: srt (Asphalt -> Verbundsteinpflaster)
-Grimmingweg: Verbundsteinpflaster	Q1 9908,1416 9832,1380
+Grimmingweg: Verbundsteinpflaster	Q1 9908,1416 9870,1398 9832,1380
 Gallipoliweg: guter Beton	Q0 10455,4189 10460,4272
 Gallipoliweg: guter Beton	Q0 10460,4272 10462,4328
 #: note: 30km/h-Schild
@@ -30887,4 +30895,7 @@ Einmündungsbereich Asphalt und Kopfsteinpflaster	Q2 18147,8895
 Einmündungsbereich Asphalt und Kopfsteinpflaster	Q2 18070,8945
 Einmündungsbereich asphaltiert	Q0 -3410,14479
 Kreuzungsbereich asphaltiert	Q0 -3006,15534
+Einmündungsbereich asphaltiert	Q0 8200,6668
+Einmündungsbereich asphaltiert	Q0 12909,7181
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- 13601,7366
 #: ignore ^^^
