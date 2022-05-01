@@ -96,11 +96,11 @@ sub teaser {
 }
 
 sub teaser_sternfahrt_adfc {
-    my $out_of_date = $today gt "20210606";
+    my $out_of_date = $today gt "20220612";
     if (!$out_of_date) {
-	my $url = "https://adfc-berlin.de/aktiv-werden/bei-demonstrationen/sternfahrt/987-adfc-sternfahrt-am-sonntag-6-juni-2021.html";
+	my $url = "https://adfc-berlin.de/aktiv-werden/bei-demonstrationen/1118-sternfahrt-2022.html";
 	<<EOF
-<div class="teaser" style="font-size:larger;"><a href="$url"><b>Sternfahrt ${year}</b></a> am 6. Juni $year</div>
+<div class="teaser" style="font-size:larger;"><a href="$url"><b>Sternfahrt ${year}</b></a> am 12. Juni $year</div>
 EOF
     } else {
 	();
