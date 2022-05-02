@@ -741,14 +741,16 @@ Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4:
 # 
 ### Lichtenberg ###
 # 
+#: next_check_id: ROEDELIUSPLATZ-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
 #: also_indoor: traffic (G(zu viel),H(zu wenig),B)
-#: last_checked: 2022-03-30 vvv
+#: last_checked: 2022-05-02 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-06-30 vvv
-Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16276,12273 16227,12280 16159,12301 16056,12317
+Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,12280 16159,12301
+# REMOVED (hier auch offen, Einbahnstraßenregelung für Nicht-Radfahrer) --- Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16159,12301 16056,12317
 # REMOVED (hier mittlerweile offen) --- Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16144,12388 16159,12301 16158,12191
 #: next_check ^^^
 #: check_frequency ^^^
@@ -808,7 +810,8 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: by: https://www.nbb-netzgesellschaft.de/ueber-die-nbb/presse/pressemitteilungen/reparatur-beeintraechtigt-verkehr-in-schoeneberg/
 #: XXX laut Schild bis Dezember 2021 (dauer aber länger)
 #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022) (inaktiv)
-#: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022)
+#: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022)
+#: source_id: viz2021:13.35399,52.49475,02.05.2022,13:59 (bis 31.5.2022)
 #: also_indoor: traffic (ex-H,B)
 #: last_checked: 2022-04-30
 #: check_frequency: 60d
@@ -863,14 +866,16 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1200158.php (Abriss der Moltkebrücke bis 2.5.2022)
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/s-bahnhof-botanischer-garten-gesperrt_a344162
 #: by: https://berliner-abendblatt.de/2022/04/28/abriss-der-moltkebruecke-ersatzverkehr-am-wochenende/
-#: XXX wann wird die Einschränkung beendet?
-#: osm_watch: way id="13860352" version="18"
+#: by: https://www.bz-berlin.de/berlin/steglitz-zehlendorf/moltkebruecke-in-lichterfelde-ist-nur-noch-geschichte
+#: XXX Neubau der Brücke, laut osm bis 2024
+#: osm_watch: way id="13860352" version="19"
+#: osm_watch: way id="1056377427" version="1"
 #: also_indoor: traffic (G,ex-H,B)
 #: priority: #A
 #: last_checked: 2022-01-20 (osm)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2022-04-30
-Moltkestraßenbrücke: Fahrbahn gesperrt	q4::inwork 3867,4537 3898,4490
+Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q4::inwork 3867,4537 3898,4490
 # 
 #: by: https://westnordost.de/p/76978.jpg (Bauarbeiten der Wasserbetriebe bis September 2023)
 #: also_indoor: traffic (G)
@@ -1603,6 +1608,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.meinetram.de/de/Umsteigepunkt-SU-Lichtenberg
 #: by: https://www.meinetram.de/de/index.php?section=Downloads&download=69 (komplette Umgestaltung der Alten Frankfurter Allee; hier wird eine Zufahrtsstraße zum Krankenhaus entstehen; Anbindung Siegfriedstr. gesperrt außer für Radfahrer; die Gleisschleife Gudrunstr. - Fanningerstr. wird entfallen)
 #: by: https://www.bahninfo-forum.de/read.php?9,731381,731381#msg-731381
+#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/planungen-werden-online-vorgestellt_a343700
 #: osm_watch: way id="223184082" version="7"
 #: last_checked: 2022-03-18
 # REMOVED --- #: check_frequency: 90d

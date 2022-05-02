@@ -21903,14 +21903,15 @@ EOF
 	2::temp 13886,10939 13856,10864
 EOF
      },
-     { from  => $isodate2epoch->("2019-06-13 20:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-06-16 02:00:00"), 
-       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 14.06.2019 und 15.06.2019',
+     { from  => $isodate2epoch->("2022-06-10 20:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-06-11 02:00:00"), 
+       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 11.06.2022',
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 6, start => "2021-10-01T00:00:00"]], # kann Anfang Juni oder Anfang Juli oder Ende August passieren
        type  => 'gesperrt',
        source_id => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
        data  => <<EOF,
+#: by: https://de-de.facebook.com/pg/KreutzigerStrassenfest/posts/ (11.06.2022)
 # REMOVED --- #: tempex: 20170630T2000-20170701T2359
 	2::temp 14161,11930 14274,12190
 EOF
@@ -22977,8 +22978,8 @@ EOF
      { from  => $isodate2epoch->("2021-09-10 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2021-09-11 22:00:00"),
        periodic => 1, # erster Termin im Jahr
-       recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
-       recurrence_prewarn_days => 7,
+       #recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
+       recurrences => [["yearly", days => 11, months => 9]],
        # früher: Fest der Nationen
        # früher: Prager Platz
        text  => 'Nikolsburger Platz: Veranstaltung "Fest der Vielfalt", Durchfahrt vermutlich nicht möglich, am 11.9.2021 von 14 bis 20 Uhr',
@@ -33295,8 +33296,8 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-04-24
-#: check_frequency: 30d
+#: last_checked: 2022-05-02
+#: check_frequency: 21d
 #: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="7"
@@ -33569,11 +33570,12 @@ EOF
 EOF
      },
      { from  => 1629669600, # 2021-08-23 00:00
-       until => $isodate2epoch->("2022-04-30 17:00:00"), # 1640991600, # 2022-01-01 00:00
-       text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 30.04.2022 17:00 ',
+       until => $isodate2epoch->("2022-05-06 17:00:00"), # 1640991600, # 2022-01-01 00:00
+       text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 06.05.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
        data  => <<EOF,
+#: source_id: viz2021:13.37876,52.56731,02.05.2022,16:04
 	q4::inwork 8555,17928 8415,17902
 EOF
      },
@@ -35010,6 +35012,30 @@ EOF
 	q4::temp 12152,9015 12240,8964
 	q4::temp 11861,9183 11909,9155 11888,9189
 	q4::temp 11831,8989 11909,9155 12012,9092
+EOF
+     },
+     { from  => 1650924000, # 2022-04-26 00:00
+       until => 1652306400, # 2022-05-12 00:00
+       text  => 'Treskowstr.: Einbahnstraßenregelung, offen Richtung Prenzlauer Promenade, voraussichtlich bis 11.5.2022',
+       type  => 'handicap',
+       source_id => 'https://www.bahninfo-forum.de/read.php?9,701070,732194#msg-732194',
+       data  => <<EOF,
+#: source_id: viz2021:13.440009,52.567594,26.04.2022,07:00 (26.4.-11.5.2022)
+#: source_id: bvg2021:x54#BVG301047_0
+#: by: https://nitter.net/VIZ_Berlin/status/1517050882063581184#m (2.BA -> Tino-Schwierzina-Str. (bis 30.5.2022?))
+#: by: https://nitter.net/VIZ_Berlin/status/1518605828533727234#m
+#: by: https://nitter.net/pic/media%2FFRMr68PXsAUrCyR.jpg%3Fname%3Dorig (Radfahrer können den nordöstlichen Gehweg benutzen)
+#: note: SEV wird über die Treskowstr. geführt
+	q4::inwork; 11893,17397 12324,17213
+EOF
+     },
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-02 00:00:00") }, # 1 Tag Vorlauf
+       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-07-06 18:00:00") },
+       text  => 'Jessnerstr.: zwischen Travestr. und Oderstr. dienstags zwischen 15 und 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 03.05. bis 06.07.',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
+       data  => <<EOF,
+	q4::temp::play 14946,11697 14986,11760
 EOF
      },
     );

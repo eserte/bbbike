@@ -2413,35 +2413,32 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
+       undef,
+       undef,
        {
-         'data' => '# REMOVED (ja) --- #: XXX wird die Veranstaltung noch abgesagt? --- #: next_check: 2020-04-23
-#: by: https://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
-#: by: https://www.family-and-friends-ev.de/?date=20210418 (4.-6. Juni 2021, dann aber vermutlich kein Maientanz")
-#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-vom-4-6-juni-2021 (2021 verschoben auf 29. April - 1. Mai 2022)
-#: by: https://www.family-and-friends-ev.de/kunst-trifft-wein-2022 (2022: 29. April - 1. Mai 2022)
-# REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
-	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
+         'data' => '#: by: https://de-de.facebook.com/pg/KreutzigerStrassenfest/posts/ (11.06.2022)
+# REMOVED --- #: tempex: 20170630T2000-20170701T2359
+	2::temp 14161,11930 14274,12190
 ',
-         'from' => 1651096800,
-         'id' => 2431,
+         'from' => 1654884000,
+         'id' => 2433,
          'periodic' => 1,
          'recurrences' => [
                             [
                               'yearly',
                               'days',
-                              29,
+                              1,
                               'months',
-                              4,
+                              6,
                               'start',
-                              '2021-05-06T00:00:00'
+                              '2021-10-01T00:00:00'
                             ]
                           ],
-         'text' => 'Alt-Lichtenrade: Veranstaltung (Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (29.04.2022 bis 01.05.2022)',
-         'type' => 'handicap',
-         'until' => 1651442399
+         'source_id' => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
+         'text' => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 11.06.2022',
+         'type' => 'gesperrt',
+         'until' => 1654905600
        },
-       undef,
-       undef,
        undef,
        undef,
        undef,
@@ -4455,8 +4452,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-04-24
-#: check_frequency: 30d
+#: last_checked: 2022-05-02
+#: check_frequency: 21d
 #: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="7"
@@ -4531,7 +4528,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.37876,52.56731,02.05.2022,16:04
+	q4::inwork 8555,17928 8415,17902
+',
+         'from' => 1629669600,
+         'id' => 3435,
+         'source_id' => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
+         'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 06.05.2022 17:00 ',
+         'type' => 'handicap',
+         'until' => 1651849200
+       },
        undef,
        undef,
        {
@@ -5300,21 +5307,32 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => undef
        },
+       undef,
        {
-         'data' => '#: source_id: viz2021:13.43776,52.48126,01.05.2022,15:00 (Erkstr.)
-#: source_id: viz2021:13.42511,52.48785,01.05.2022,13:00 (Hermannplatz)
-#: source_id: viz2021:13.43025,52.48616,01.05.2022,19:00 (Sonnenallee)
-	q4::temp 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390 12639,8344 12689,8289
-	q4::temp 12152,9015 12240,8964
-	q4::temp 11861,9183 11909,9155 11888,9189
-	q4::temp 11831,8989 11909,9155 12012,9092
+         'data' => '#: source_id: viz2021:13.440009,52.567594,26.04.2022,07:00 (26.4.-11.5.2022)
+#: source_id: bvg2021:x54#BVG301047_0
+#: by: https://nitter.net/VIZ_Berlin/status/1517050882063581184#m (2.BA -> Tino-Schwierzina-Str. (bis 30.5.2022?))
+#: by: https://nitter.net/VIZ_Berlin/status/1518605828533727234#m
+#: by: https://nitter.net/pic/media%2FFRMr68PXsAUrCyR.jpg%3Fname%3Dorig (Radfahrer können den nordöstlichen Gehweg benutzen)
+#: note: SEV wird über die Treskowstr. geführt
+	q4::inwork; 11893,17397 12324,17213
 ',
-         'from' => undef,
-         'id' => 3541,
-         'source_id' => 'https://viz.berlin.de/2022/04/verkehr-1-mai/',
-         'text' => 'Straßenfeste in Neukölln: Karl-Marx-Str. (Bereich Rathaus Neukölln), Hermannplatz und abschnittsweise Sonnenallee gesperrt, am 1. Mai 2022',
+         'from' => 1650924000,
+         'id' => 3542,
+         'source_id' => 'https://www.bahninfo-forum.de/read.php?9,701070,732194#msg-732194',
+         'text' => 'Treskowstr.: Einbahnstraßenregelung, offen Richtung Prenzlauer Promenade, voraussichtlich bis 11.5.2022',
          'type' => 'handicap',
-         'until' => 1651442399
+         'until' => 1652306400
+       },
+       {
+         'data' => '	q4::temp::play 14946,11697 14986,11760
+',
+         'from' => 1651442400,
+         'id' => 3543,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
+         'text' => 'Jessnerstr.: zwischen Travestr. und Oderstr. dienstags zwischen 15 und 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 03.05. bis 06.07.',
+         'type' => 'handicap',
+         'until' => 1657123200
        }
      
 );

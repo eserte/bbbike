@@ -668,7 +668,7 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 #: by: http://www.infravelo.de/projekt/windscheidstrasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile (2021-08) gelöscht)
 #: XXX: wird die Windscheidstr. asphaltiert?
 # REMOVED (für Radfahrer offen) --- #: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
-#: osm_watch: way id="4515622" version="17"
+#: osm_watch: way id="4515622" version="18"
 #: last_checked: 2022-04-26 (mapillary)
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-12-31
@@ -905,7 +905,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="17"
-#: last_checked: 2022-04-12 (mapillary)
+#: last_checked: 2022-04-24 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -8499,7 +8499,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="7"
-#: last_checked: 2021-12-27
+#: last_checked: 2022-05-02
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -9675,8 +9675,8 @@ Drebkauer Str.: Beton	Q0 6317,20751 6117,20738
 John-Sieg-Str.: Beton	Q0- 15434,11846 15504,11809 15532,11753 15660,11695
 (am Kaiser's): Verbundsteinpflaster	Q1+ 15714,11941 15710,11857
 Frankfurter Allee [Wohngebiet]: Asphalt	Q0 15714,11941 15717,12010 15717,12015
-Frankfurter Allee [Wohngebiet]: Beton	Q0- 15335,11943 15400,11976 15504,11967 15597,11957 15714,11941
-Frankfurter Allee [Wohngebiet]/Schulze-Boysen-Str.: Beton	Q0- 15597,11957 15592,11881 15710,11857 15738,11851 15836,11840
+Frankfurter Allee [Wohngebiet]: Beton	Q0- 15330,11946 15405,11983 15504,11969 15602,11956 15714,11941
+Frankfurter Allee [Wohngebiet]/Schulze-Boysen-Str.: Beton	Q0- 15602,11956 15592,11881 15710,11857 15738,11851 15836,11840
 Frankfurter Allee [Wohngebiet]: Beton	Q0- 15836,11840 15856,11835 15871,11832 15930,11843 15941,11855 15952,11905 16128,11881 16190,11872 16214,11935
 Elsterwerdaer Platz: Gehwegplatten	Q0 20818,11293 20829,11275 20839,11300 21055,11284 21084,11319 21110,11326 21134,11331
 Haltoner Str.: Verbundsteinpflaster	Q1+ 20968,11203 21010,11223 21055,11284
@@ -10121,7 +10121,7 @@ Kastanienallee (Westend): Asphalt mit einigen Schäden	Q1+ 1366,12168 1379,12219
 #: note: Stefan Klinkusch meint "guter Asphalt"
 Westendallee: Asphalt	Q0 131,12672 130,12624 151,12541 179,12434 208,12305 232,12207 262,12085 301,11942 323,11801 329,11696 395,11486 425,11455 461,11455 541,11464
 Schulze-Boysen-Str. [Wohngebiet]: Beton	Q1+ 15856,11835 15766,11680 15730,11694 15724,11680 15679,11591 15555,11351
-John-Sieg-Str.: Asphalt	Q0 15504,11967 15461,11897 15434,11846 15411,11823
+John-Sieg-Str.: Asphalt	Q0 15504,11969 15461,11897 15434,11846 15411,11823
 Kaiser-Wilhelm-Str.: Asphalt mit Löchern	Q1+; 6613,3320 6780,3497
 Liebenowzeile: Asphalt	Q0 6820,4347 6826,4472 6826,4500 6841,4667 6845,4761 6846,4808
 Franckepark: wassergebundene Decke	Q1 9339,6076 9349,6102 9376,6102
@@ -30560,8 +30560,8 @@ Kreuzungsbereich asphaltiert	Q0 9250,14658
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 9108,14777
 Kreuzungsbereich asphaltiert	Q0 16856,11438
 Kreuzungsbereich asphaltiert	Q0 16948,11409
-Kreuzungsbereich asphaltiert	Q0 17322,11296
-Kreuzungsbereich asphaltiert	Q0 17500,11252
+Einmündungsbereich asphaltiert	Q0 17322,11296
+Einmündungsbereich asphaltiert	Q0 17500,11252
 Kreuzungsbereich asphaltiert	Q0 17587,11238
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 23430,11576
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 23526,11541
@@ -30898,4 +30898,7 @@ Kreuzungsbereich asphaltiert	Q0 -3006,15534
 Einmündungsbereich asphaltiert	Q0 8200,6668
 Einmündungsbereich asphaltiert	Q0 12909,7181
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 13601,7366
+Kreuzungsbereich asphaltiert	Q0 16785,11212
+Einmündungsbereich asphaltiert	Q0 16657,12165
+Kreuzungsbereich asphaltiert	Q0 16556,12180
 #: ignore ^^^
