@@ -3781,7 +3781,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-04-26
+#: last_checked: 2022-05-03
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3833,7 +3833,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="5"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-04-24 vvv
+#: last_checked: 2022-05-03 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4528,17 +4528,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.37876,52.56731,02.05.2022,16:04
-	q4::inwork 8555,17928 8415,17902
-',
-         'from' => 1629669600,
-         'id' => 3435,
-         'source_id' => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
-         'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 06.05.2022 17:00 ',
-         'type' => 'handicap',
-         'until' => 1651849200
-       },
+       undef,
        undef,
        undef,
        {
@@ -5183,7 +5173,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar)
-#: last_checked: 2022-05-01
+#: last_checked: 2022-05-03
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -5315,6 +5305,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://nitter.net/VIZ_Berlin/status/1518605828533727234#m
 #: by: https://nitter.net/pic/media%2FFRMr68PXsAUrCyR.jpg%3Fname%3Dorig (Radfahrer können den nordöstlichen Gehweg benutzen)
 #: note: SEV wird über die Treskowstr. geführt
+#: confirmed_by: mapillary
 	q4::inwork; 11893,17397 12324,17213
 ',
          'from' => 1650924000,
@@ -5325,7 +5316,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => 1652306400
        },
        {
-         'data' => '	q4::temp::play 14946,11697 14986,11760
+         'data' => '#: confirmed_by: srt (am 2022-05-03 gesehen)
+	q4::temp::play 14946,11697 14986,11760
 ',
          'from' => 1651442400,
          'id' => 3543,

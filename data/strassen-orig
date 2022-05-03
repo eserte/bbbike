@@ -339,6 +339,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.bz-berlin.de/berlin/mitte/erst-autos-jetzt-fahrraeder-verbannt-friedrichstrasse-kuenftig-nur-noch-fuer-fussgaenger
 #: by: https://berliner-abendblatt.de/2022/04/28/__trashed-1450/ (Autofreie Friedrichstraße soll zur Fußgängerzone werden)
 #: by: https://berliner-abendblatt.de/2022/04/30/fussgaengerverband-ohne-fahrraeder-das-entspannteste/
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1202275.php (noch kein Zeitpunkt für den Baubeginn der Fußgängerzone)
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: last_checked: 2022-04-28
@@ -17023,10 +17024,13 @@ Emmichstr.	N 7282,2386 7370,2400 7424,2400 7559,2385 7648,2356
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksamt/protokolle/2021/2021-10-05_maerckerweg-umbebennen_top-10.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_04_0173_0236_online.pdf (Straßenumbenennung zum 29. April 2022)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_15_0917_0976_online.pdf (Widerspruch)
+#: by: https://berlin.kauperts.de/Strassen/Maria-Rimkus-Weg-12249-Berlin (Widerspruch)
 #: XXX geplante Umbenennung in Maria-Rimkus-Weg; im DPAG-Mitteilungsblatt 03/2022 ist die Umbenennung aufgelistet
 #: also_indoor: search Maria-Rimkus-Weg
+#: osm_watch: way id="4792052" version="11"
 #: last_checked: 2022-04-04 (Amtsblatt)
-#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 30d
+#: check_frequency: 35d
 # REMOVED --- #: next_check: 2022-04-29
 Maerckerweg	N 7559,2385 7602,2522
 #: note: relativ stark befahren, evtl. NH? (Aber keine Vorfahrtstraße)
@@ -18139,7 +18143,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3651 (beim Bau des R-Bahnhofs Köpenick ggfs. auch Umgestaltung des Elcknerplatzes?)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036553475560/553475560/00071473/73-Anlagen/05/B1481ZB1.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26099.pdf (Anfrage zum Regionalbahnhof Köpenick)
-#: last_checked: 2022-04-21 (mapillary)
+#: last_checked: 2022-05-01 (mapillary)
 #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044
 Parrisiusstr.	N 22358,5918 22531,5871 22631,5866 22766,5840 22819,5812 22885,5835

@@ -30926,7 +30926,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-04-26
+#: last_checked: 2022-05-03
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31145,7 +31145,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="5"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-04-24 vvv
+#: last_checked: 2022-05-03 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33570,7 +33570,7 @@ EOF
 EOF
      },
      { from  => 1629669600, # 2021-08-23 00:00
-       until => $isodate2epoch->("2022-05-06 17:00:00"), # 1640991600, # 2022-01-01 00:00
+       until => 1651602086, # $isodate2epoch->("2022-05-06 17:00:00"), # 1640991600, # 2022-01-01 00:00
        text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 06.05.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
@@ -34863,7 +34863,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar)
-#: last_checked: 2022-05-01
+#: last_checked: 2022-05-03
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -35026,6 +35026,7 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1518605828533727234#m
 #: by: https://nitter.net/pic/media%2FFRMr68PXsAUrCyR.jpg%3Fname%3Dorig (Radfahrer können den nordöstlichen Gehweg benutzen)
 #: note: SEV wird über die Treskowstr. geführt
+#: confirmed_by: mapillary
 	q4::inwork; 11893,17397 12324,17213
 EOF
      },
@@ -35035,6 +35036,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
        data  => <<EOF,
+#: confirmed_by: srt (am 2022-05-03 gesehen)
 	q4::temp::play 14946,11697 14986,11760
 EOF
      },
