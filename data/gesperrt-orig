@@ -3475,11 +3475,13 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: by: https://www.spreepark.berlin/konzept-und-grundlagen/news/detail/weitere-baumassnahmen-im-und-am-spreepark/ (Ausbesserung, Verringerung der Breite von 7 auf 4m, voraussichtlich bis Mai 2022)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/der-pionierweg-wird-erneuert-und-erhaelt-eine-neue-beleuchtung-korrosionsschutz-fuer-mero-halle_a327800
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/schiffsanleger-und-eierhaeuschen-sollen-bis-ende-des-jahres-fertig-werden_a335405 (bis Mai 2022)
-#: XXX Wird der Weg nach den Bauarbeiten beleuchtet sein?
-#: last_checked: 2022-04-18
-#: check_frequency: 30d
-#: next_check: 2022-05-31
-Pionierweg: wegen Bauarbeiten gesperrt	2::inwork 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
+# REMOVED (ja, eingetragen) --- #: XXX Wird der Weg nach den Bauarbeiten beleuchtet sein?
+#: XXX laut Schild noch bis zum 13.5.2022
+#: last_checked: 2022-05-04
+#: check_frequency: 14d
+#: next_check: 2022-05-13
+# REMOVED (hier mittlerweile offen) --- Pionierweg: wegen Bauarbeiten gesperrt	2::inwork 15714,8633 15772,8667 15922,8717 16026,8731
+Pionierweg: wegen Bauarbeiten gesperrt	2::inwork 16026,8731 16074,8776 16084,8833
 # 
 #: last_checked: 2022-02-26 (mapillary)
 #: check_frequency: 180d
@@ -3749,7 +3751,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2022-04-29
+#: last_checked: 2022-05-04
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 # 
