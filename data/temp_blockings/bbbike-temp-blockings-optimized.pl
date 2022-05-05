@@ -4818,7 +4818,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
-#: last_checked: 2022-01-13 (architektur-urbanistik)
+#: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
+#: last_checked: 2022-05-04 (webcam)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -5173,7 +5174,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar)
-#: last_checked: 2022-05-04
+#: last_checked: 2022-05-05
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -5339,6 +5340,21 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Hänselstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Südwesten, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: note: etwa 40m sind gesperrt; laut rbb bis Anfang Juni 2022
+#: by: https://nitter.net/VIZ_Berlin/status/1522185157117108224#m
+#: by: https://nitter.net/pic/media%2FFR_IhjAXIAAI5Cf.jpg%3Fname%3Dorig
+#: by: https://nitter.net/pic/media%2FFR_Iyz8WUAAg28B.jpg%3Fname%3Dorig
+#: XXX_prog: eigentlich q4+::inwork;
+	q4::inwork; 5248,13434 5368,13406
+',
+         'from' => 1651655760,
+         'id' => 3545,
+         'source_id' => 'viz2021:13.328697,52.527383,05.05.2022,11:16',
+         'text' => 'Turmstr.: Fahrbahn zwischen Beusselstr. und Gotzkowskystr. Richtung Osten gesperrt (geplatzte Wasserleitung), vom 05.05.2022 bis voraussichtlich Anfang Juni 2022',
+         'type' => 'handicap',
+         'until' => 1654095600
        }
      
 );

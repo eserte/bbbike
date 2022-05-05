@@ -73,7 +73,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr.
-#: last_checked: 2022-05-04
+#: last_checked: 2022-05-05
 #: check_frequency: 90d
 #: next_check: 2022-06-30
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -6694,7 +6694,7 @@ Jean-JaurËs-Str.: wird es hier in Zukunft eine Radverkehrsanlage geben?	? 4456,2
 #: next_check_id: ROSENTHALER-2022
 #: XXX Genaue Lage? Wird es eine Fuﬂg‰ngerampel werden?
 #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30
-#: last_checked: 2022-04-23
+#: last_checked: 2022-05-03 (mapillary)
 #: next_check: 2022-05-31
 Rosenthaler Str.: Bau einer Ampel	?::inwork 10299,13481 10324,13459 10335,13486
 # 
@@ -6944,7 +6944,7 @@ weitere Straﬂen geplant	?::projected 24437,10337 24476,10248
 #: XXX PLZ=14473 (by Leitdaten)
 Inselweg (Potsdam): genaue Lage, Qualit‰t?	? -13829,-2596 -13769,-2508
 # 
-Leiterstr. (Potsdam): existiert eine direkte Verbindung zur Templiner Str.? Qualit‰t?	? -13495,-3094 -13524,-3083 -13566,-2971 -13718,-2991
+Leiterstr. (Potsdam): existiert eine direkte Verbindung zur Templiner Str.? Qualit‰t?	? -13495,-3094 -13524,-3083 -13567,-2967
 # 
 Templiner Str. - Uferweg: Gibt es hier eine Steigung?	? -13481,-2956 -13492,-2901 -13487,-2870 -13505,-2842 -13520,-2772
 # 
@@ -9590,10 +9590,15 @@ Amundsenstr.: Rad- und Gehweg, bereits befahrbar, Qualit‰t?	? -15825,-166 -16108
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._1_2016.pdf (zum Bebauungsplan Speicherstadt-S¸d)
 #: by: https://www.potsdam.de/sites/default/files/documents/17210_amtsblatt_mai2017_dsjs_korr3_final.pdf (ebenso)
 #: by: https://www.potsdam.de/sites/default/files/documents/final_18057_amtsblatt3_www.pdf (ebenso)
-#: osm_watch: way id="313404756" version="4" brb
-#: last_checked: 2018-09-01
-#: check_frequency: 360d
-Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualit‰t?	?::inwork -12783,-2269 -12803,-2371 -12906,-2537 -13156,-2702
+#: last_checked: 2018-09-01 vvv
+#: check_frequency: 360d vvv
+#: XXX hier existiert vermutlich schon ein Geh/Radweg, laut osm Verbundsteinpflaster
+# REMOVED --- #: osm_watch: way id="313404756" version="4" brb
+Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualit‰t?	?::inwork -12783,-2269 -12781,-2376
+#: osm_watch: way id="911461112" version="1"
+Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualit‰t?	?::inwork -12831,-2439 -12906,-2537 -13156,-2702
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf
 #: XXX hier existiert noch nichts
@@ -9692,12 +9697,15 @@ Hermann-Mattern-Promenade: wurde die Straﬂe schon teilweise Richtung Norden verl
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf
 #: XXX Privatstraﬂe, PLZ=14473
-Am Uferpark (Potsdam): genaue Lage der Straﬂe, Qualit‰t?	? -13381,-2943 -13452,-2841
+Am Uferpark (Potsdam): genaue Lage der Straﬂe, Qualit‰t? verkehrsberuhigt?	? -13325,-2935 -13331,-2900 -13454,-2914 -13450,-2951
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/abl_pdmstadt_05_2015_web.pdf
-#: XXX Privatstraﬂe
-#: XXX fehlt in Potsdam.coords.data, PLZ=14473
-Luisenhof (Potsdam): genaue Lage der Straﬂe, Qualit‰t?	? -13481,-2956 -13629,-2860
+#: XXX Privatstraﬂe vvv
+#: XXX fehlt in Potsdam.coords.data, PLZ=14473 vvv
+Luisenhof (Potsdam): genaue Lage der Straﬂe, Qualit‰t? verkehrsberuhigt?	? -13532,-2963 -13548,-2893 -13636,-2897 -13698,-2875 -13761,-2924
+Luisenhof (Potsdam): genaue Lage der Straﬂe, Qualit‰t? verkehrsberuhigt?	? -13636,-2897 -13634,-2978
+#: XXX ^^^
+#: XXX ^^^
 # 
 # REMOVED --- (Weg am Eschengraben): Qualit‰t? Verl‰uft hier die Reinickendorfer Radroute 3?	? -2165,22794 -2162,22855 -2125,22882 -2076,22988 -2040,23061
 # REMOVED --- (Weg am Haselgraben): Qualit‰t? Verl‰uft hier die Reinickendorfer Radroute 3?	? -2076,22988 -2142,23030 -2269,23147
