@@ -31147,7 +31147,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="5"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-05-03 vvv
+#: last_checked: 2022-05-06 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -34383,7 +34383,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: EINSTEINPARK-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-04-06
+#: last_checked: 2022-05-06
 #: check_frequency: 30d
 #: next_check: 2022-07-24
 	2::inwork 13204,15062 13207,14998 13163,14924

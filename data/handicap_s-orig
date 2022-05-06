@@ -16,7 +16,7 @@
 #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022
 #: XXX Datensatz in gesperrt-orig beachten!
 #: also_indoor: traffic (ex-B,G(falsch))
-#: last_checked: 2022-04-26 vvv
+#: last_checked: 2022-05-06 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-04-01 vvv
 Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Fahrbahn gesperrt	q4::inwork 13838,12884 13818,12897
@@ -241,11 +241,12 @@ Chausseestr.: gemeinsamer Geh- und Radweg	q2::inwork; 8442,14456 8406,14507 8336
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2022-04-08 (mapillary) vvv
+#: last_checked: 2022-05-06 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
 Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,12438
+Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
@@ -635,7 +636,7 @@ Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwor
 # 
 #: next_check_id: WESER-2021
 #: XXX: während der Bauarbeiten ist der Radweg nicht befahrbar
-#: osm_watch: way id="1050315263" version="1"
+#: osm_watch: way id="1050315263" version="2"
 #: osm_watch: way id="996616281" version="5"
 #: osm_watch: way id="996616282" version="4"
 #: last_checked: 2022-05-01
@@ -906,7 +907,7 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (ex-G,B)
 #: priority: #B
-#: last_checked: 2022-02-25 vvv
+#: last_checked: 2022-05-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -4059,6 +4060,7 @@ Solmsstr.: asphaltierte Kissen (2x)	q1 9723,9842 9705,9732
 (Nordpromenade, entlang der S-Bahn): einige Fußgänger	q2 20640,12095 20807,12083
 #: note: Ausschilderung existiert am westlichen Ende; am östlichen Ende nur ein Grünanlagenschild ohne Zusatzschilder
 Carl-Weder-Park: gemeinsamer Geh- und Radweg	q1 12595,6299 12614,6301 12638,6307 12812,6343 12979,6374
+(Pieskower Weg - Hanns-Eisler-Str.): einige Fußgänger	q1 13224,15049 13249,15037 13270,15046 13295,15107 13313,15113 13324,15109
 # 
 ######################### User Contributions #################################
 # 
