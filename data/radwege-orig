@@ -744,7 +744,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-04-21
+#: last_checked: 2022-05-07
 	RW2; 14926,12129 14994,12121 15117,12106 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
@@ -996,7 +996,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,24.05.2022,15:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-04-29 vvv
+#: last_checked: 2022-05-07 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169
@@ -4044,7 +4044,8 @@ die letzten Meter werden auf dem Gehweg geführt	RW3; 14653,15738 14808,15788
 die Nebenstraße ist gepflastert, die letzten Meter werden auf dem Gehweg (für Radfahrer frei) geführt	RW10; 15297,16321 15437,16491
 	RW3; 15437,16491 15297,16321 15236,16241 15194,16186 15130,16098 14967,15885 14936,15857 14808,15788
 die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 14808,15788 14653,15738
-	RW4;RW1 17843,18078 17744,18016 17721,18001 17675,17971 17601,17922 17482,17844
+	RW4; 17843,18078 17744,18016 17721,18001 17675,17971 17577,17910 17482,17844
+	RW1; 17482,17844 17579,17908 17675,17971 17721,18001 17744,18016 17843,18078
 	RW2;RW1 17482,17844 17400,17790
 	RW2; 18223,18153 18196,18254
 wenige Meter Verbundsteinpflaster, dann verliert sich der Radweg	RW1; 18196,18254 18223,18153
@@ -4253,7 +4254,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: source_id: 2147342739
-#: last_checked: 2022-02-27 (mapillary) vvv
+#: last_checked: 2022-05-07 vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str. Richtung Westen
@@ -4278,7 +4279,7 @@ Gehweg für Radfahrer frei	RW1; 18106,19353 18544,19722
 	RW2;RW1 17640,16259 17516,16208
 gemeinsamer Geh- und Radweg, Betonplatten	RW2; 17418,16014 17419,16080 17425,16165
 	RW2; 17425,16165 17419,16080 17418,16014
-	RW2;RW2 17425,16165 17516,16208
+	RW2;RW1 17425,16165 17516,16208
 Verbundsteinpflaster	RW1;RW2 16852,14412 16873,14236
 Verbundsteinpflaster	RW1;RW1 16873,14236 16881,14063 16875,13834
 	RW2;RW1 9883,16557 9816,16565
@@ -5052,8 +5053,8 @@ Betonplatten	RW2; 22631,16215 22696,16208 22739,16203 22760,16197 22771,16194
 neues Verbundsteinpflaster	RW2; 22739,16203 22696,16208 22631,16215
 #: by: Hollie (freak...)
 #: confirmed_by: srt
-	RW6;RW6 17730,18747 17813,18726 17819,18738 17839,18782 17854,18777 17907,18759 17938,18749 17929,18709 17900,18717 17837,18733 17819,18738
-	RW6;RW6 17845,18837 17843,18823 17839,18782
+	RW6;RW6 17730,18747 17813,18726 17817,18738 17824,18774 17837,18784 17854,18777 17907,18759 17938,18749 17929,18709 17900,18717 17837,18733 17817,18738
+	RW6;RW6 17845,18837 17843,18823 17837,18784
 #: by: Alexander Unertl:
 #: confirmed_by: srt (allerdings nur südl. des Hochspannungswegs)
 #: note: Alexander meinte, dass es "demnächst auch mit Betonschwellen" gibt, aber davon ist 2011-03 noch nichts zu sehen

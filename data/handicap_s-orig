@@ -142,7 +142,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
-#: last_checked: 2022-04-29
+#: last_checked: 2022-05-07
 #: check_frequency: 60d
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 # 
@@ -747,7 +747,7 @@ Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4:
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
 #: also_indoor: traffic (G(zu viel),H(zu wenig),B)
-#: last_checked: 2022-05-02 vvv
+#: last_checked: 2022-05-07 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-06-30 vvv
 Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,12280 16159,12301
@@ -1437,7 +1437,7 @@ Am Rummelsburger See: Fußgänger, Grünanlage	q3 15253,10171 15199,10211 15134,102
 Am Rummelsburger See: Fußgänger, kurvenreich	q1 14892,10411 14864,10451 14861,10467 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15145,10636
 #: next_check_id: RUMMELSBURGERBUCHT-2021
 #: XXX nach den Bauarbeiten am "My Bay Way" wird der zweite Strang wohl wieder offen sein, dann wieder mit dem vorherigen Eintrag zusammenfügen
-#: last_checked: 2022-04-16
+#: last_checked: 2022-05-07
 #: check_frequency: 90d
 Am Rummelsburger See: Fußgänger, kurvenreich, Engstelle wegen Bauarbeiten	q2 15145,10636 15200,10600 15249,10564
 #: note: siehe auch permanenten temp-blockings-Eintrag (Radfahren verboten)
@@ -2444,7 +2444,7 @@ Anna-Nemitz-Weg: Fußgänger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Park am Fennpfuhlpark - Anton-Saefkow-Platz): Fußgänger	q1 15179,13872 15062,13827
 Anton-Saefkow-Platz: Fußgängerzone, Radfahrer frei	q2+ 15062,13827 15034,13814 15010,13807 14989,13815 14846,13760 14821,13674
 (Darßer Str. - Malchower See): Fußgänger	q1 15505,17967 15825,18385 15949,18555
-Am Malchower See: Fußgänger	q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16161,18687
+Am Malchower See: Fußgänger	q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16036,18604 16161,18687
 (Wartenberger Str. - Margaretenhöhe): Gehweg, für Radfahrer freigegeben	q0- 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
 (Siedlung Wartenberg - Tierheim): eng, mit Anhänger nur langsam passierbar	q2- 19279,19517 19381,19830 19691,19748 19819,19602
 (Jänschwalder Str. - Hönower Str.): eng	q2 25370,14421 25408,14189 25451,14018
@@ -4061,6 +4061,10 @@ Solmsstr.: asphaltierte Kissen (2x)	q1 9723,9842 9705,9732
 #: note: Ausschilderung existiert am westlichen Ende; am östlichen Ende nur ein Grünanlagenschild ohne Zusatzschilder
 Carl-Weder-Park: gemeinsamer Geh- und Radweg	q1 12595,6299 12614,6301 12638,6307 12812,6343 12979,6374
 (Pieskower Weg - Hanns-Eisler-Str.): einige Fußgänger	q1 13224,15049 13249,15037 13270,15046 13295,15107 13313,15113 13324,15109
+#: XXX_prog BS (ansonsten q3+)
+(Falkenberger Chaussee - Wartenberger Str.): Bordstein, Rampe	q4+ 17577,17910 17521,17894
+(Falkenberger Chaussee - Wartenberger Str.): Rampe	q3+ 17521,17894 17568,17945
+Max-und Herta-Naujocks-Weg: Fußgänger, schmaler Weg	q2- 16036,18604 16077,18674 16112,18692 16133,18765 16163,18780
 # 
 ######################### User Contributions #################################
 # 

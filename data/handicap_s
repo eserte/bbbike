@@ -1111,7 +1111,7 @@ Anna-Nemitz-Weg: Fuﬂg‰nger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 (Park am Fennpfuhlpark - Anton-Saefkow-Platz): Fuﬂg‰nger	q1 15179,13872 15062,13827
 Anton-Saefkow-Platz: Fuﬂg‰ngerzone, Radfahrer frei	q2 15062,13827 15034,13814 15010,13807 14989,13815 14846,13760 14821,13674
 (Darﬂer Str. - Malchower See): Fuﬂg‰nger	q1 15505,17967 15825,18385 15949,18555
-Am Malchower See: Fuﬂg‰nger	q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16161,18687
+Am Malchower See: Fuﬂg‰nger	q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16036,18604 16161,18687
 (Wartenberger Str. - Margaretenhˆhe): Gehweg, f¸r Radfahrer freigegeben	q0 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542 16359,19590 16384,19678
 (Siedlung Wartenberg - Tierheim): eng, mit Anh‰nger nur langsam passierbar	q2 19279,19517 19381,19830 19691,19748 19819,19602
 (J‰nschwalder Str. - Hˆnower Str.): eng	q2 25370,14421 25408,14189 25451,14018
@@ -2286,6 +2286,9 @@ Solmsstr.: asphaltierte Kissen (2x)	q1 9723,9842 9705,9732
 (Nordpromenade, entlang der S-Bahn): einige Fuﬂg‰nger	q2 20640,12095 20807,12083
 Carl-Weder-Park: gemeinsamer Geh- und Radweg	q1 12595,6299 12614,6301 12638,6307 12812,6343 12979,6374
 (Pieskower Weg - Hanns-Eisler-Str.): einige Fuﬂg‰nger	q1 13224,15049 13249,15037 13270,15046 13295,15107 13313,15113 13324,15109
+(Falkenberger Chaussee - Wartenberger Str.): Bordstein, Rampe	q4 17577,17910 17521,17894
+(Falkenberger Chaussee - Wartenberger Str.): Rampe	q3 17521,17894 17568,17945
+Max-und Herta-Naujocks-Weg: Fuﬂg‰nger, schmaler Weg	q2 16036,18604 16077,18674 16112,18692 16133,18765 16163,18780
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3158,7 +3161,6 @@ Kriemhildstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 173
 Am Lehnshof: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 4291,22986 4264,22992 4202,23034
 Gartenstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 720,2718 835,2715
 Belﬂstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 7899,2391 7983,2348 7987,2337
-Gotenburger Str.: Einfahrt verboten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9008,16799 8847,16870
 Fritz-Werner-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9105,2779 9081,2594
 Gravensteinstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 12229,22457 12185,22465
 Hauptstr. (Franzˆsisch Buchholz): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 12199,22367 12229,22457

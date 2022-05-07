@@ -4,8 +4,13 @@ push @temp_blocking,
        {
          'data' => '#: by: https://www.berlin.de/events/4390033-2229501-primavera-fruehlingsfest.html (geplanter Termin: 08. bis 09. Mai 2021) (2021 abgesagt)
 #: by: https://www.berlin.de/events/4390033-2229501-fruehlings-und-spargelfest-primavera.html (geplanter Termin: 07. und 08. Mai 2022)
-	2::temp 7101,9027 7035,9161 7012,9222 7001,9291
+#: source_id: viz2021:13.3532,52.48982,07.05.2022,06:00
+#: by: https://nitter.net/VIZ_Berlin/status/1522628508719075328#m
+#: by: https://nitter.net/pic/media%2FFSAFp14XwAA4gcp.jpg%3Fname%3Dorig
+	2::temp 7201,8870 7101,9027 7035,9161 7012,9222 7001,9291
+	2::temp 7308,9163 7101,9027 6975,8944
 	2::temp 6945,9142 7035,9161
+	2::temp 7012,9222 7124,9226
 ',
          'from' => 1651788000,
          'id' => 728,
@@ -252,6 +257,7 @@ push @temp_blocking,
        {
          'data' => '#: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html?date=20210410 (Termin noch nicht bekannt)
 #: by: https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html (geplanter Termin: 07. und 08. Mai 2022)
+#: source_id: viz2021:13.49469,52.42125,06.05.2022,19:00
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 	2::temp 16610,1715 16767,1831
 ',
@@ -291,6 +297,7 @@ push @temp_blocking,
 #: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20210418 (abgesagt)
 #: by: https://www.laubinger.de/event/30-fest-auf-der-boelschestrasse/ (geplant für 7.05.2022 - 8.05.2022)
 #: by: https://www.berlin.de/events/5980135-2229501-boelschefest.html?date=20220416 (geplant für 7. und 8. Mai 2022)
+#: source_id: viz2021:13.62428,52.44685,07.05.2022,06:00
 	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 ',
          'from' => 1651788000,
@@ -3900,7 +3907,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (H,B)
 #: XXX Stand 2021-07-31 und 2022-01-18: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden; März 2023: letzte Deckschicht ist drauf
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2022-03-25 (mapillary)
+#: last_checked: 2022-05-07
 #: check_frequency: 30d
 	q3::inwork 14136,17170 13996,16959
 ',
@@ -4452,7 +4459,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-05-02
+#: last_checked: 2022-05-07
 #: check_frequency: 21d
 #: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -4528,7 +4535,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.37876,52.56731,02.05.2022,16:04 (inaktiv)
+#: source_id: viz2021:13.37876,52.56731,06.05.2022,14:35 (zweiter Eintrag)
+	q4::inwork 8555,17928 8415,17902
+',
+         'from' => 1629669600,
+         'id' => 3435,
+         'source_id' => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
+         'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 21.05.2022 17:00 ',
+         'type' => 'handicap',
+         'until' => 1653145200
+       },
        undef,
        undef,
        {
@@ -4933,6 +4951,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: by: https://www.kiezundkneipe.de/artikel/das-ende-der-lenau-schule (neue Schule ist 2023 fertig)
+#: note: Die Einbahnstraßenregelung fängt erst 60m nördlich der Gneisenaustr. an und es gibt keine Sackgassenschilder.
 #: osm_watch: way id="49233007" version="8"
 #: last_checked: 2022-03-24
 #: check_frequency: 60d
@@ -5174,7 +5193,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar)
-#: last_checked: 2022-05-05
+#: last_checked: 2022-05-07
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -5355,6 +5374,45 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Turmstr.: Fahrbahn zwischen Beusselstr. und Gotzkowskystr. Richtung Osten gesperrt (geplatzte Wasserleitung), vom 05.05.2022 bis voraussichtlich Anfang Juni 2022',
          'type' => 'handicap',
          'until' => 1654095600
+       },
+       {
+         'data' => '#: next_check_id: BERLINERALLEE-2022
+#: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt)
+	q4::inwork 14558,16907 14528,16910
+	q3::inwork 14528,16910 14341,17030
+',
+         'from' => 1651960800,
+         'id' => 3546,
+         'source_id' => 'https://viz.berlin.de/wp-content/uploads/BA2.jpg',
+         'text' => 'Rennbahnstr.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, vom 9.5.2022 bis 30.5.2022 ',
+         'type' => 'handicap',
+         'until' => 1653908400
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/2022/05/verkehrsvorschau-090522/
+#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
+#: next_check: 2022-05-09
+	q4::inwork; 12330,8636 12494,8501
+',
+         'from' => 1651986000,
+         'id' => 3547,
+         'source_id' => 'viz2021:13.431455,52.483123,09.05.2022,07:00',
+         'text' => 'Karl-Marx-Str.: zwischen Weichselstr. und Fuldastr. Bauarbeiten, Fahrbahn Richtung Südosten gesperrt, evtl. sind auch Radfahrer betroffen, vom 09.05.2022 07:00 bis 13.05.2022 17:00 ',
+         'type' => 'handicap',
+         'until' => 1652454000
+       },
+       {
+         'data' => '#: next_check_id: HAEMMERLING-2022
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00
+#: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
+	q4::inwork 21984,6317 21856,6390
+',
+         'from' => 1651953282,
+         'id' => 3548,
+         'source_id' => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
+         'text' => 'Schubertstr.: Baustelle, Fahrbahn gesperrt, voraussichtlich bis 30.11.2022',
+         'type' => 'handicap',
+         'until' => 1669849200
        }
      
 );

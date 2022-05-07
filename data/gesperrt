@@ -810,7 +810,6 @@ Belßstr.	1s 7899,2391 7983,2348 7987,2337
 Röbeler Weg: Privatstraße, Durchfahrt verboten	2 24831,10730 24831,10772 24760,10790
 Markgrafenstr.	1 9799,10846 9834,10840
 Morgensternstr.	1 5212,2360 5229,2395
-Gotenburger Str.: Einfahrt verboten	1s 9008,16799 8847,16870
 Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 Fritz-Werner-Str.	1s 9105,2779 9081,2594
 Kraftwerk Reuter West	2 -447,14338 -495,14311 -650,14355 -792,14258 -1002,14162 -1020,14084
@@ -901,7 +900,9 @@ Mellenseestr. [Wohngebiet]	1 17777,9649 17738,9822 17738,9922
 Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
 Lilli-Henoch-Str.	1s 12357,15020 12388,14926
 (Weydemeyerstr.): durch Tore abgesperrt	2 11933,12701 11971,12785
-Straßenbahntrasse, Mittelstreifen	3nocross::ignrte 17400,17790 17482,17844 17601,17922 17675,17971
+Falkenberger Chaussee (Richtungsfahrbahn)	1::igndisp 17482,17844 17577,17910 17675,17971
+Falkenberger Chaussee (Richtungsfahrbahn)	1::igndisp 17675,17971 17579,17908 17482,17844
+Falkenberger Chaussee (Straßenbahntrasse)	3nocross::ignrte 17482,17844 17577,17910 17675,17971
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 Eythstr. (Wendeschleife)	1 7682,5963 7615,5938 7606,5939 7618,5960 7638,5967 7682,5963
 Röblingstr.	1 7598,5926 7606,5939

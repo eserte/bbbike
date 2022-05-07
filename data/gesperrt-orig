@@ -1236,7 +1236,6 @@ Röbeler Weg: Privatstraße, Durchfahrt verboten	2 24831,10730 24831,10772 24760,1
 # REMOVED (nicht mehr) --- Markgrafenstr.	1 9807,10788 9799,10846
 Markgrafenstr.	1 9799,10846 9834,10840
 Morgensternstr.	1 5212,2360 5229,2395
-Gotenburger Str.: Einfahrt verboten	1s:q3 9008,16799 8847,16870
 Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
@@ -1391,7 +1390,13 @@ Mühsamstr.	1 13818,12897 13830,12907
 #: note: nur ein Einfahrt-verboten-Schild ohne korrespondierendes Einbahnstraßenschild
 Lilli-Henoch-Str.	1s:q3 12357,15020 12388,14926
 (Weydemeyerstr.): durch Tore abgesperrt	2 11933,12701 11971,12785
-Falkenberger Chaussee: Straßenbahntrasse, Mittelstreifen	3nocross 17400,17790 17482,17844 17601,17922 17675,17971
+# 
+#: note: Straßenbahntrasse vvv
+Falkenberger Chaussee (Richtungsfahrbahn)	1::igndisp 17482,17844 17577,17910 17675,17971
+Falkenberger Chaussee (Richtungsfahrbahn)	1::igndisp 17675,17971 17579,17908 17482,17844
+Falkenberger Chaussee (Straßenbahntrasse)	3nocross::ignrte 17482,17844 17577,17910 17675,17971
+#: note: ^^^
+# 
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: note: permanenter Zaun
@@ -2080,7 +2085,7 @@ Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6164,12980 6157,129
 Märkische Allee: Linksabbiegen verboten	3nocross 20120,16297 20232,16522 20323,16706
 Märkische Allee: Linksabbiegen verboten	3nocross 20516,17088 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21009,18055
 Märkische Allee: Mittelstreifen	3nocross 19900,11697 19924,11890 19934,11977 19946,12075 19951,12114 19954,12140 19958,12177 19962,12222 19967,12270 19982,12405 19994,12484
-# REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17482,17844 17601,17922 17675,17971 17744,18016 17843,18078
+# REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17482,17844 17579,17908 17675,17971 17744,18016 17843,18078
 Falkenberger Chaussee: Straßenbahntrasse	3nocross 18196,18254 18530,18327 18601,18342
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13394,10805 13496,10763 13596,10722
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
@@ -3494,7 +3499,7 @@ Verlängerung Zwieseler Str.: Baustellenabsperrung	2::inwork 19705,9039 19638,907
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/neue-sozialwohnungen-mit-blick-aufs-wasser_a323324
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/staedtische-und-private-gesellschaften-planen-hunderte-wohnungen_a334934 (Erwähnung der Hochbauarbeiten)
 #: XXX wird es hier nach den Bauarbeiten weiterhin einen Weg geben?
-#: last_checked: 2022-04-29
+#: last_checked: 2022-05-07
 #: check_frequency: 180d
 #: next_check: 2023-09-30
 (Kynaststr. - Paul-und-Paula-Ufer): Bauarbeiten, Weg existiert nicht mehr	2::inwork 14843,10621 14911,10587
@@ -3743,7 +3748,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2022-05-05
+#: last_checked: 2022-05-07
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -3811,7 +3816,7 @@ Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3
 #: XXX wann wird der Weg wiederhergestellt, wenn überhaupt?
 #: by: https://www.deutsches-architekturforum.de/thread/9401-wasserstadt-stralau-kleine-und-gr%C3%B6%C3%9Fere-projekte/?postID=653296#post653296 (Bauarbeiten bis Ende September 2021)
 #: osm_watch: way id="541556560" version="4"
-#: last_checked: 2022-04-29
+#: last_checked: 2022-05-07
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-09-30
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055

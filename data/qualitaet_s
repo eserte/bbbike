@@ -7014,7 +7014,7 @@ Hansastr. [Wohngebiet]: Beton	Q0 15341,15912 15413,16007 15435,16063 15292,16167
 Zum Orankestrand: Feinschotter	Q1 15435,16063 15479,16060
 Zum Hechtgraben: etwas unebener Asphalt	Q1 16210,18706 16198,18753 16163,18780 16158,19049 16104,19165
 (Darßer Str. - Malchower See): wassergebundene Decke	Q1 15505,17967 15825,18385 15949,18555
-Am Malchower See: grobes Verbundsteinpflaster	Q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16161,18687 16210,18706
+Am Malchower See: grobes Verbundsteinpflaster	Q1 15611,18627 15732,18666 15774,18656 15873,18561 15949,18555 16036,18604 16161,18687 16210,18706
 (Wartenberger Str. - Margaretenhöhe): Verbundsteinpflaster	Q1 16216,19183 16314,19210 16349,19442 16343,19470 16309,19542
 (Wartenberger Str. - Margaretenhöhe): Holzbohlen	Q1 16309,19542 16359,19590
 (Wartenberger Str. - Margaretenhöhe): Verbundsteinpflaster	Q1 16359,19590 16384,19678
@@ -10750,7 +10750,7 @@ Sophie-Charlotte-Str.: Kopfsteinpflaster	Q2 1246,4310 1297,4311
 (Waltraudstr. - Clayallee): Rindenmulch	Q3 919,4815 935,4814 1253,4788 1447,4757
 Oberhaardter Weg: Asphalt	Q0 911,8374 1023,8292 1056,8267
 Dorfstr. - Am Gutshof: Asphalt	Q0 17887,18975 17874,18936 17845,18837 17843,18823
-Dorfstr. - Am Gutshof: Verbundsteinpflaster, Aufpflasterung	Q1 17843,18823 17839,18782
+Dorfstr. - Am Gutshof: Verbundsteinpflaster, Aufpflasterung	Q1 17843,18823 17837,18784
 Märkische Allee [Wohngebiet]: Beton	Q0 21377,18663 21299,18508
 Bruno-Baum-Str.: Beton	Q0 20260,15434 20286,15382 20123,15293 19993,15116
 Bruno-Baum-Str.: Asphalt	Q0 19993,15116 19893,14947 19867,14886 19793,14728 19768,14674 19719,14566 19687,14469
@@ -10901,6 +10901,9 @@ Gubener Str.: Asphalt	Q0; 13467,11778 13568,11560
 In den Alboingärten: Betonpflaster	Q0 7971,6087 7910,6090
 In den Alboingärten: unbefestigte Baustraße	Q2 7910,6090 7739,6099 7646,6031 7638,5967
 (Pieskower Weg - Hanns-Eisler-Str.): Verbundsteinpflaster, einige Aufpflasterungen	Q1 13224,15049 13249,15037 13270,15046 13295,15107 13313,15113 13324,15109
+(Falkenberger Chaussee - Wartenberger Str.): Beton	Q0 17577,17910 17521,17894 17568,17945
+(Falkenberger Chaussee - Wartenberger Str.): Asphalt	Q0 17568,17945 17585,17963
+Max-und Herta-Naujocks-Weg: wassergebundene Decke	Q1 16036,18604 16077,18674 16112,18692 16133,18765 16163,18780
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11773,7 +11776,7 @@ Antwerpener Str.: asphaltiert, Parkstreifen mit Kopfsteinpflaster	Q0 6555,15827 
 Goeckestr.: mäßiges Kleinsteinpflaster, wellig	Q2 16128,14685 16248,14819 16354,14928 16361,14936 16377,14952 16514,15092 16604,15224 16651,15345
 Simon-Bolivar-Str.: geteert, guter Zustand	Q0 15774,14992 15856,14915 15944,14836 16033,14756 16128,14685 16281,14604
 Freienwalder Str.: Kleinsteinpflaster	Q2 16849,15263 16651,15345 16618,15356 16406,15452 16331,15486
-Wriezener Str.: Kopfsteinpflaster	Q2 16604,15224 16522,15258 16354,15323 16218,15386
+Wriezener Str.: Kleinsteinpflaster	Q2 16604,15224 16522,15258 16354,15323 16218,15386
 Roedernstr.: Asphalt	Q0 16218,15386 15825,15547 15552,15660
 Prießnitzstr.: Asphalt	Q0 11351,19169 11407,19186 11549,19258
 Ortlerweg: schlechtes Kopfsteinpflaster	Q3 3511,1601 3762,1953 3716,2063
@@ -13500,11 +13503,11 @@ Ahornallee (Friedrichshagen): Asphalt	Q0 25121,5795 25123,5767
 Ahornallee (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3 25123,5767 25111,5464 25121,5286
 Demminer Str.: guter Beton	Q0 17502,18286 17673,18438 17772,18523 17797,18675
 Dorfstr.: Asphalt	Q0 17600,18994 17697,18989 17799,19000 17887,18975 17900,18972 17980,18947 18007,18938
-Am Gutshof: Verbundsteinpflaster	Q0 17730,18747 17813,18726 17819,18738 17839,18782 17854,18777
+Am Gutshof: Verbundsteinpflaster	Q0 17730,18747 17813,18726 17817,18738 17824,18774 17837,18784 17854,18777
 Am Gutshof: Kopfsteinpflaster	Q2 17854,18777 17907,18759
 Am Gutshof: Verbundsteinpflaster	Q0 17907,18759 17938,18749 17929,18709 17900,18717
 Am Gutshof: Kopfsteinpflaster	Q2 17900,18717 17837,18733
-Am Gutshof: Verbundsteinpflaster	Q0 17837,18733 17819,18738
+Am Gutshof: Verbundsteinpflaster	Q0 17837,18733 17817,18738
 Epensteinstr.: sehr schlechtes Kopfsteinpflaster	Q3 8423,17626 8433,17754
 Epensteinstr.: sehr schlechtes Kopfsteinpflaster	Q3 8432,17798 8415,17902 8391,17996
 Lübecker Str.: Asphalt	Q0 26061,14085 26063,13897 26104,13861 26156,13813 26244,13740
