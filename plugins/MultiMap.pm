@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.78;
+$VERSION = 1.79;
 
 use vars qw(%images);
 
@@ -1449,6 +1449,10 @@ sub show_mapillary_menu {
     $link_menu->command
 	(-label => 'Fresh Mapillary (< 1 month)',
 	 -command => sub { showmap_mapillary(dateFrom => '-1month', %args) },
+	);
+    $link_menu->command
+	(-label => 'Fresh Mapillary (< 3 months)',
+	 -command => sub { showmap_mapillary(dateFrom => '-3month', %args) },
 	);
     $link_menu->command
 	(-label => 'Fresh Mapillary (< 1 year)',
