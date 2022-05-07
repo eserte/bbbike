@@ -14800,13 +14800,36 @@ sub show_info {
 		$need_indentation = 1;
 	    }
 
+	    my $normal_url = do {
+		my $scale = int(17 - log(($mapscale_scale)/2907)/log(2) + 0.5);
+		"http://www.google.com/maps/\@$py,$px,${scale}z";
+	    };
+
+	    my $googlemaps_menu = $info_text->Menu(-title => M"Google Maps",
+						   -tearoff => 0);
+	    my $googlemaps_show_url_menu_item = sub {
+		my($label, $url) = @_;
+		$googlemaps_menu->command
+		    (-label => $label,
+		     -command => sub {
+			 require WWWBrowser;
+			 main::status_message("URL: $url", "info");
+			 WWWBrowser::start_browser($url);
+		     },
+		    );
+	    };
+	    $googlemaps_show_url_menu_item->("Aerial",  "$normal_url/data=!3m1!1e3");
+	    $googlemaps_show_url_menu_item->("Traffic", "$normal_url/data=!5m1!1e1");
+	    $googlemaps_show_url_menu_item->("Bicycle", "$normal_url/data=!5m1!1e3");
+	    $googlemaps_menu->separator;
+	    $googlemaps_menu->command
+		(-label => M"Link kopieren",
+		 -command => sub { $copy_link->($normal_url) },
+		);
+
 	    $info_text->insert("end", "Google Maps" . ($devel_host ? " (Original)" : ""),
 			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-	    $show_url->($linkcount, sub {
-			    my $scale = int(17 - log(($mapscale_scale)/2907)/log(2) + 0.5);
-			    my $url = "http://www.google.com/maps/\@$py,$px,${scale}z";
-			    $url;
-			});
+	    $show_url->($linkcount, $normal_url, $googlemaps_menu);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
 	}
