@@ -2213,9 +2213,12 @@ Hugstr.	N -17060,1048 -17059,1174
 Herzbergstr.	N -17083,624 -17051,796 -17052,841 -17062,957 -17060,1048
 (Herzbergstr. - Weiﬂdornweg/Eiche)	NN -17083,624 -17098,554 -17219,221
 Golmer Chaussee	NH -17646,1636 -18058,1645 -18302,1546 -18522,1325 -18673,1266
-#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_15_2019_final.pdf (Umbenennung)
-#: oldname: -201912: Kuhforter Damm
-Kuhfortdamm	NH -18130,-837 -18115,-1154 -18163,-1320 -18162,-1330 -18163,-1357 -18181,-1443 -18142,-1517 -17925,-1599 -18017,-1876 -18106,-2079 -18309,-2049 -18364,-2035
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_15_2019_final.pdf (Umbenennung) vvv
+#: oldname: -201912: Kuhforter Damm vvv
+Kuhfortdamm	NH -18130,-837 -18115,-1154 -18163,-1320 -18162,-1330 -18163,-1357 -18181,-1443 -18142,-1517 -17925,-1599
+Kuhfortdamm	N -17925,-1599 -18017,-1876 -18106,-2079 -18309,-2049 -18364,-2035
+#: oldname ^^^
+#: by ^^^
 (Waldweg an der Pirschheide)	NN -16435,-5680 -16350,-5511 -16245,-5370 -16179,-5354
 (Am Templiner See)	NN -16094,-5148 -15964,-5052 -15936,-4783 -15949,-4504 -15924,-4447
 (Am Templiner See)	N -15924,-4447 -15853,-4327
