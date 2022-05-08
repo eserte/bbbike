@@ -1244,8 +1244,8 @@ Neuer Garten: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffne
        },
        {
          'data' => '#: tempex: sunset-T06 vvv
-(Am Neuen Palais, direkter Weg)	2::night -15799,-1352 -15820,-1146 -15854,-656
-(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13857,-1040 -14159,-1119 -14173,-1013
+(Am Neuen Palais, direkter Weg)	2::night -15799,-1352 -15820,-1146 -15820,-1131 -15854,-656
+(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13829,-1034 -14159,-1119 -14173,-1013
 (Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14173,-1013 -14482,-1043 -14622,-1138 -14869,-1120 -15030,-1101 -15556,-1133 -15651,-1137 -15820,-1146
 (Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14611,-1329 -14858,-1215 -14869,-1120
 (Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14129,-1258 -14131,-1181 -14159,-1119
@@ -1528,6 +1528,9 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 # REMOVED (temporarily removed) ---	q4::temp:clock 12608,11692 12453,11790 12378,11806
 # REMOVED --- #: next_check_id: CORONA-2020
 #: next_check_id: OSTBAHNHOF-2021
+#: by: https://www.berlin.de/special/shopping/flohmaerkte/1998249-1724959-grosser-antikmarkt-am-ostbahnhof.html
+#: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
+#: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
 #: last_checked: 2022-04-29
 #: check_frequency: 120d
@@ -1537,7 +1540,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 1886,
          'recurring' => 1,
-         'text' => 'Erich-Steinfurth-Str. und Koppenstr.: Antikmarkt am Ostbahnhof, Sonntag 9-16 Uhr, nur Schieben möglich',
+         'text' => 'Erich-Steinfurth-Str. und Koppenstr.: Antikmarkt am Ostbahnhof, Sonntag 9-16 Uhr (kann am ersten oder zweiten Sonntag im Monat ausfallen), nur Schieben möglich',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3725,7 +3728,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-05-03 (mapillary)
+#: last_checked: 2022-05-08
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 ',
@@ -3840,7 +3843,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="5"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-05-06 vvv
+#: last_checked: 2022-05-08 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4077,7 +4080,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-04-19 vvv
+#: last_checked: 2022-05-08 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -4987,6 +4990,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: last_checked: 2022-03-05 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
+#: note: Bellevueufer möglicherweise wieder offen?
 #: osm_watch: way id="4395450" version="25"
 	2::inwork 7031,12320 6694,12627
 #: osm_watch: way id="505363417" version="7"
@@ -5209,7 +5213,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
 #: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022)
 #: also_indoor: traffic (B)
-#: last_checked: 2022-04-28
+#: last_checked: 2022-05-08
 #: next_check: 2022-05-13
 	q4::inwork 11273,12301 11355,12331
 ',
@@ -5413,6 +5417,17 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Schubertstr.: Baustelle, Fahrbahn gesperrt, voraussichtlich bis 30.11.2022',
          'type' => 'handicap',
          'until' => 1669849200
+       },
+       {
+         'data' => '#: next_check_id: BRUECKEWERDER-2022
+	2::inwork -21227,-2017 -21125,-2012	
+',
+         'from' => 1651442400,
+         'id' => 3549,
+         'source_id' => 'https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=4210',
+         'text' => 'Eisenbahnbrücke Werder: wegen Bauarbeiten montags bis freitags tagsüber (6:30 bis 18:00 Uhr) gesperrt, bis zum 22.5.2022',
+         'type' => 'gesperrt',
+         'until' => 1653235200
        }
      
 );

@@ -2,7 +2,7 @@
 #: title: Sonstige Behinderungen (Brandenburg und weiteres Umland)
 #:
 Bahnstr.: Bauarbeiten am Bahnhof Zeuthen, Umfahrung auf teilweise engem Gehweg notwendig, Bordstein	q3::inwork 25961,-6132 25893,-6002
-Brandenburger Str.: Fuﬂg‰ngerzone	q4 -12883,-976 -12999,-1000 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
+Brandenburger Str.: Fuﬂg‰ngerzone	q4 -12883,-976 -12999,-1000 -13173,-1039 -13289,-1071 -13410,-1101 -13525,-1131 -13556,-1140
 Neuer Garten: Schiebestrecke	q4 -11615,853 -11715,959 -11818,993 -11871,1087 -12081,1168 -12094,1273 -12133,1323
 Neuer Garten: Fuﬂg‰nger	q1 -11510,810 -11562,918 -11575,1031 -11537,1206 -11544,1262 -11580,1281 -11871,1185 -11990,1214 -12124,1359 -12135,1358
 Neuer Garten, Westufer des Heiligen Sees: Schiebestrecke	q4 -12263,-403 -12262,-393 -12262,-362 -12328,-212 -12334,-114 -12321,9 -12293,110 -12222,186 -12227,219 -12177,283 -12115,409 -12068,384 -11990,790 -11950,781 -11887,837 -11856,950 -11818,993
@@ -14,7 +14,8 @@ Neuer Garten: Radfahren nicht erlaubt	q4 -12332,585 -12276,554 -12115,409
 (Uferweg): Fuﬂg‰nger, Steigung/Gef‰lle	q2 -12200,1859 -12223,1911 -12330,1974 -12424,2034 -12462,2139 -12460,2288
 Am Waldessaum: Fuﬂg‰nger, enger Weg	q2 -12825,1284 -12709,1106
 Heiliger See, Ostufer: Schiebestrecke	q4 -11650,590 -11603,721 -11615,853
-Uferpromenade Caputh: Fuﬂg‰nger	q3 -17643,-7028 -17703,-7228 -18009,-7528
+Uferpromenade Caputh: Fuﬂg‰nger, Radfahrer sollen absteigen	q4 -17643,-7028 -17660,-7125 -17755,-7282 -17911,-7436 -18009,-7492
+Eisenbahnbr¸cke Caputh: enger Steg, Fuﬂg‰nger	q3 -18002,-7496 -18001,-7395
 Uferweg am Straussee: viele Fuﬂg‰nger, enger Weg	q2 41668,17984 41612,18287 41699,18454 41913,19064 42031,19131 42148,19199 42341,19200 42488,19363 42578,19587
 Am Schafgraben: enger Parkweg	q2 -14500,-2012 -14536,-1943 -14571,-1881 -14612,-1809
 Gesundheitsweg: enger Parkweg	q2 -14351,-1882 -14571,-1881
@@ -44,7 +45,7 @@ Strandpromenade Bansin - Ahlbeck: viele Fuﬂg‰nger	q2 57443,175137 57550,175037 5
 Stormstr.: Spielstraﬂe	q3 -15168,-2529 -15235,-2603 -15179,-2662 -15206,-2695 -15239,-2728 -15268,-2762 -15331,-2700 -15390,-2678
 Stormstr.: Spielstraﬂe	q3 -15206,-2695 -15270,-2639 -15300,-2670 -15331,-2700
 Stormstr.: Spielstraﬂe	q3 -15239,-2728 -15300,-2670
-(Am Gr¸nen Gitter, Sanssouci): Fuﬂg‰nger haben Vorrang	q1 -13857,-1040 -14159,-1119 -14173,-1013
+(Am Gr¸nen Gitter, Sanssouci): Fuﬂg‰nger haben Vorrang	q1 -13829,-1034 -14159,-1119 -14173,-1013
 (÷konomieweg, Sanssouci): Fuﬂg‰nger haben Vorrang	q1 -14173,-1013 -14482,-1043 -14622,-1138 -14869,-1120 -15030,-1101 -15556,-1133 -15651,-1137 -15820,-1146
 (Lennestr. - ÷konomieweg, Sanssouci): Fuﬂg‰nger haben Vorrang	q1 -14611,-1329 -14858,-1215 -14869,-1120
 (Affengang, Sanssouci): Schiebestrecke	q4 -14129,-1258 -14131,-1181 -14159,-1119
@@ -205,6 +206,7 @@ Gˆritz, entlang Schule und Kita: enger Weg	q2 42997,112503 43014,112559 43032,11
 (Fichtestr. - Sanddornweg): Fuﬂg‰nger, kurvig	q2 25670,-8402 25636,-8386
 Am Finowkanal: schmaler Weg, Radfahrgegenverkehr	q1 33817,48983 33737,49032 33685,49038 33525,49019 33456,48987 33383,48906 33225,48835 33215,48817 33213,48789 33174,48779
 Am Finowkanal: enge Br¸cke	q2 34550,49206 34531,49214
+(Leipziger Str. - Ufer): einige Fuﬂg‰nger, schmal	q2 -12655,-2202 -12712,-2172 -12754,-2154 -12800,-2142
 Wollestr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -10717,-1227 -10984,-1574
 Am Bˆttcherberg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; -9565,62 -9541,97 -9539,147
 Lange Br¸cke: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -12493,-1896 -12567,-1817 -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652

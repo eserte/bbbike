@@ -345,9 +345,12 @@ Autobahnbrücke: Asphalt	Q0 27041,18505 26504,18512
 Ahrensfelde - Altlandsberg: Asphalt	Q0 25232,18413 26504,18512
 #: corrected_by: mapillary (mäßiger Asphalt, Q1 -> ..., neu gemacht?)
 Ahrensfelde - Altlandsberg: Asphalt	Q0 27041,18505 27803,18459
-Straße der Einheit (Caputh): Asphalt	Q0 -17643,-7028 -17578,-7043 -17265,-6945 -17034,-6950 -16981,-6952 -16868,-6959 -16823,-6996
+Straße der Einheit (Caputh): Asphalt	Q0 -17643,-7028 -17578,-7043 -17265,-6945 -17034,-6950 -16981,-6952 -16885,-6959 -16834,-6993
 Schmelberger Weg (Caputh): Asphalt	Q0 -16981,-6952 -16995,-7004
-Caputh: Asphalt	Q0 -16283,-6740 -16553,-6765 -16562,-6825 -16823,-6996
+Caputh: Asphalt	Q0 -16283,-6740 -16553,-6765 -16584,-6842
+Caputh: Kleinsteinpflaster	Q1- -16584,-6842 -16704,-6918
+Caputh: Asphalt	Q0 -16704,-6918 -16767,-6974 -16834,-6993
+entlang der Bahnstrecke: welliger Asphalt	Q1 -17978,-7384 -17983,-7339 -17954,-7157 -17819,-6855
 Ferch: gutes Kopfsteinpflaster	Q0 -20816,-10818 -21019,-10850 -21381,-11049
 Ferch: schlechtes Kopfsteinpflaster, teilweise Ränder asphaltiert	Q3 -22222,-10968 -22072,-11138 -21915,-11303 -21641,-11281 -21381,-11049
 Neue Scheune: Kopfsteinpflaster, Seitenstreifen asphaltiert	Q1 -21630,-9646 -21584,-9875 -21584,-10290 -21733,-10366
@@ -714,7 +717,7 @@ Gutenbergstr. (Potsdam): schlechtes Kopfsteinpflaster	Q3 -12886,-869 -13025,-901
 Gutenbergstr. (Potsdam): mäßiger Beton	Q1 -13433,-991 -13553,-1020 -13576,-1026
 Jägerstr. (Potsdam): mäßiges Kopfsteinpflaster, südlich der Brandenburger Str. eher schlechter	Q2 -13064,-715 -13058,-740 -13025,-901 -12999,-1000 -12973,-1106
 Dortustr. (Potsdam): Kopfsteinpflaster	Q2 -13187,-1150 -13173,-1039 -13158,-930 -13140,-766 -13137,-737
-Bäckerstr. (Potsdam): Asphalt	Q0 -13314,-1226 -13287,-1231 -13203,-1246
+Bäckerstr. (Potsdam): Asphalt	Q0 -13314,-1226 -13287,-1231 -13202,-1250
 Lindenstr. (Potsdam): Kopfsteinpflaster	Q2 -13231,-763 -13236,-797 -13264,-952 -13289,-1071 -13305,-1176 -13314,-1226 -13350,-1403
 Lindenstr. (Potsdam): Asphalt	Q0 -13350,-1403 -13366,-1499
 Lindenstr. (Potsdam): Gehwegpflaster	Q0 -13366,-1499 -13375,-1546
@@ -748,7 +751,7 @@ Wildpark West - Geltow: Asphalt	Q0 -20550,-2118 -20525,-2226 -20491,-2479 -20386
 Amselweg (Wildpark West): Asphalt	Q0 -19982,-2675 -19656,-2510
 #: by: osm
 Amselweg (Wildpark West): Schotterstraße	Q2 -19656,-2510 -19500,-2433
-Caputh: Eisenbahnbrücke - Straße: etwas sandig	Q2 -18009,-7528 -18008,-7684
+Caputh: Eisenbahnbrücke - Straße: etwas sandig	Q2 -18009,-7492 -18008,-7684
 Ferch: Weg am Wasser: teils etwas sandig	Q2 -20816,-10818 -21029,-10817 -21537,-10897 -21593,-10759 -21562,-10593 -21440,-10387 -21584,-10290
 Lindstedter Chaussee: Waldweg	Q2 -15825,-166 -16006,-80 -16156,135 -16176,330 -16232,431 -16446,1006 -16694,1310
 Lindstedter Chaussee: Asphalt	Q0 -16694,1310 -16742,1387
@@ -1487,10 +1490,10 @@ Fahrbahn Asphalt, Radweg Verbundsteinpflaster	Q1+ -20281,-6915 -20435,-7213 -205
 Fahrbahn asphaltiert, Radweg wassergebundene Decke	Q1- -20740,-7375 -20778,-7496 -20733,-7600 -20707,-7820 -20710,-7872
 Glindow - Petzow: asphaltiert	Q0 -20860,-7318 -20740,-7375
 Fahrbahn und Radweg asphaltiert	Q0 -20710,-7872 -20725,-8059 -20936,-8343 -21251,-8604 -21441,-8731 -21544,-8879 -21561,-8963 -21575,-9333 -21577,-9348 -21582,-9386 -21554,-9465 -21605,-9560 -21630,-9646
-	Q0 -20816,-10818 -20590,-10806 -20112,-10437 -19606,-9698 -19146,-9196 -18909,-9080 -18756,-8962 -18631,-8412 -18431,-7978 -18008,-7684 -18002,-7679 -17650,-7464 -17334,-7253 -17267,-7134 -16995,-7004 -16823,-6996
+	Q0 -20816,-10818 -20590,-10806 -20112,-10437 -19606,-9698 -19146,-9196 -18909,-9080 -18756,-8962 -18631,-8412 -18431,-7978 -18008,-7684 -18002,-7679 -17650,-7464 -17334,-7253 -17267,-7134 -16995,-7004 -16834,-6993
 	Q0 -16283,-6740 -16079,-6643 -16006,-6579 -15829,-6534 -15732,-6454 -15583,-6329 -15269,-5900 -15228,-5678 -14947,-5405 -14801,-5162 -14733,-4982 -14697,-4583 -14262,-4175 -14204,-3944 -14116,-3826 -14095,-3670 -14031,-3554 -14038,-3356 -13891,-3173 -13771,-3023 -13718,-2991 -13634,-2978 -13567,-2967 -13532,-2963 -13481,-2956 -13450,-2951 -13381,-2943 -13325,-2935 -13155,-2913 -13062,-2901
-	Q0 -13062,-2901 -13022,-2776 -13003,-2754 -12879,-2573 -12796,-2488 -12779,-2467 -12756,-2437 -12743,-2387 -12713,-2279 -12708,-2257 -12697,-2235 -12620,-2174 -12534,-2125 -12431,-2096
-	Q0 -17643,-7028 -17703,-7228 -18009,-7528
+	Q0 -13062,-2901 -13022,-2776 -13003,-2754 -12879,-2573 -12796,-2488 -12779,-2467 -12756,-2437 -12743,-2387 -12713,-2279 -12708,-2257 -12697,-2235 -12655,-2202 -12620,-2174 -12534,-2125 -12431,-2096
+	Q0 -17643,-7028 -17660,-7125 -17755,-7282 -17911,-7436 -18009,-7492
 	Q0 -5662,-3583 -5463,-3467 -5156,-3192 -4963,-3121 -4885,-3087 -4456,-2968 -3965,-2749 -3933,-2734 -3908,-2723 -3650,-2609 -3484,-2531 -3252,-2368 -3105,-2267 -3020,-2208 -2989,-2177 -2946,-2130 -2842,-1976 -2789,-1919 -2662,-1841 -2498,-1741 -2267,-1612 -2184,-1575 -2115,-1551 -2056,-1544 -1973,-1560 -1781,-1676 -1664,-1720 -1457,-1722 -1291,-1770 -1196,-1771 -866,-1615 -713,-1542 -671,-1507 -624,-1468 -556,-1402 -248,-1160 -90,-1056 -68,-1041 -36,-1017 154,-876 212,-834 351,-738 465,-662 590,-618 685,-591 731,-585 757,-587 791,-598 948,-684 1067,-699 1212,-706 1235,-714 1329,-753 1390,-759 1453,-746
 	Q0 3467,560 3417,524 3263,427 3177,374 2958,229 2754,101 2560,-25 2457,-100 2338,-210 2215,-328 1974,-440 1744,-543 1672,-577 1492,-697 1460,-714 1453,-746
 	Q0 -5201,-35443 -5621,-35171 -5722,-34792
@@ -2401,7 +2404,7 @@ Plantagenstr.: Asphalt	Q0 -9837,-1612 -9860,-1550 -9902,-1445
 #: confirmed_by: Aimo Raasch:
 Karl-Gruhl-Str.: Asphalt	Q0 -9837,-1612 -9905,-1627 -10102,-1522 -10119,-1515 -10369,-1374
 Oderstr.: Asphalt	Q0 818,-298 595,-310 525,-347 346,-454 240,-519 -395,-920 -650,-1077 -861,-1207 -882,-1220
-Brandenburger Str.: grobes Pflaster	Q1 -12883,-976 -12999,-1000 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
+Brandenburger Str.: grobes Pflaster	Q1 -12883,-976 -12999,-1000 -13173,-1039 -13289,-1071 -13410,-1101 -13525,-1131 -13556,-1140
 Brandenburger Str.: etwas besseres Kopfsteinpflaster	Q1- -12883,-976 -12801,-960
 # von der Bahn aus gesehen: vvv
 Welsow - Bruchhagen: Asphalt	Q0 49075,74662 48437,74675 48296,74641
@@ -2736,15 +2739,19 @@ Lichterfeld - Besucherbergwerk F60: Asphalt	Q0 37870,-89814 37883,-89858 37885,-
 B96, Finsterwalde: Kopfsteinpflaster, OK	Q1 33060,-85292 33240,-85187
 Finsterwalde, Markt: Kopfsteinpflaster, OK	Q1 33115,-86029 33103,-85728
 Lichterfeld - Finsterwalde: Asphalt	Q0 37906,-89609 37820,-89570 37574,-89532 37609,-89082 37306,-89106 36662,-89253 36710,-88670 36767,-88091 36808,-87793
-(Am Grünen Gitter, Sanssouci): asphaltiert	Q0 -13857,-1040 -14159,-1119 -14173,-1013
-(Ökonomieweg, Sanssouci): asphaltiert	Q0 -14173,-1013 -14482,-1043 -14622,-1138 -14869,-1120 -15030,-1101 -15556,-1133 -15651,-1137 -15820,-1146
+(Am Grünen Gitter, Sanssouci): asphaltiert	Q0 -13829,-1034 -14159,-1119 -14173,-1013
+(Ökonomieweg, Sanssouci): asphaltiert, einige Schäden	Q1+ -14173,-1013 -14482,-1043 -14622,-1138 -14869,-1120 -15030,-1101 -15556,-1133 -15651,-1137 -15820,-1146
 (Lennéstr. - Ökonomieweg, Sanssouci): asphaltiert	Q0 -14611,-1329 -14858,-1215
 (Lennéstr. - Ökonomieweg, Sanssouci): Pflasterung	Q1 -14858,-1215 -14869,-1120
 (Affengang, Sanssouci): Parkweg	Q1 -14129,-1258 -14131,-1181 -14159,-1119
-(Am Neuen Palais, direkter Weg): asphaltiert	Q0- -15799,-1352 -15820,-1146 -15854,-656
+(Am Neuen Palais, direkter Weg): asphaltiert	Q0- -15799,-1352 -15820,-1146 -15820,-1131 -15854,-656
+(Am Neuen Palais, Radwegverbindung): Mosaikpflaster	Q1- -16048,-1087 -16023,-1084
+(Am Neuen Palais, Radwegverbindung): Kleinsteinpflaster	Q2+ -16023,-1084 -15962,-1078
+(Am Neuen Palais, Radwegverbindung): schlechtes Kopfsteinpflaster	Q3 -15962,-1078 -15956,-1137
+(Am Neuen Palais, Radwegverbindung): wassergebundene Decke	Q1- -15956,-1137 -15820,-1131
 Yorckstr.: asphaltiert	Q0 -12841,-1347 -12869,-1354 -13001,-1329 -13089,-1313 -13206,-1294
 Yorckstr.: asphaltiert	Q0 -13208,-1322 -13092,-1344 -13006,-1360 -12976,-1365 -12879,-1380 -12839,-1371
-Luisenplatz: Kopfsteinpflaster, OK	Q1 -13626,-1205 -13637,-1164 -13646,-1115 -13560,-1106
+Luisenplatz: Kopfsteinpflaster, OK	Q1 -13626,-1205 -13637,-1164 -13649,-1097 -13565,-1080
 Käthe-Kollwitz-Str.: asphaltiert	Q0 -62,-37 -355,-3 -568,-18 -658,-39 -746,-74
 #: corrected_by: mapillary (früher gutes Kopfsteinpflaster)
 Ernst-Thälmann-Str.: Asphalt	Q0 -1709,653 -1831,641
@@ -2891,11 +2898,11 @@ Am Hinzenberg: gute Pflasterung	Q0 -12708,-1928 -12678,-1812 -12669,-1768
 Alter Markt: gepflastert	Q2+ -12614,-1487 -12619,-1549 -12624,-1598
 Alter Markt: gepflastert	Q2+ -12583,-1552 -12619,-1549 -12677,-1536 -12719,-1542
 #: next_check_id: AMALTENMARKT-2018
-#: XXX bleibt es hier asphaltiert?
+#: XXX früher provisorisch asphaltiert, jetzt ein provisorischer Weg
 #: osm_watch: way id="760022943" version="5" brb
-#: last_checked: 2022-02-04 (osm)
+#: last_checked: 2022-05-08
 #: check_frequency: 180d
-Alter Markt: provisorischer Asphalt	Q0- -12719,-1542 -12790,-1560
+Alter Markt: unbefestigt	Q2 -12719,-1542 -12790,-1560
 Schwertfegerstr.: teils schlechtes Kopfsteinpflaster	Q3 -12812,-1490 -12870,-1493
 Am Neuen Markt: mäßiges bis schlechtes Kopfsteinpflaster	Q2- -12882,-1565 -12870,-1493
 Am Neuen Markt: teils schlechtes Kopfsteinpflaster	Q3 -12870,-1493 -12865,-1462 -12913,-1451
@@ -3911,9 +3918,11 @@ Brücke: Holzbohlen	Q1 -13001,-1329 -13006,-1360
 Friedrich-Wilhelm-Boelcke-Str.: Kopfsteinpflaster	Q2- -12796,-2488 -12831,-2439 -12815,-2419 -12779,-2467
 Friedrich-Wilhelm-Boelcke-Str.: Kopfsteinpflaster	Q2- -12815,-2419 -12781,-2376
 (Friedrich-Wilhelm-Boelcke-Str. - Leipziger Str.): unbefestigte Straße	Q2 -12781,-2376 -12743,-2387
-Uferweg auf Hermannswerder: mäßiges bis schlechtes Kopfsteinpflaster	Q2- -13003,-2754 -13177,-2722
+#: note: früher mäßiges bis schlechtes Kopfsteinpflaster, Q2-
+Uferweg auf Hermannswerder: Asphalt	Q0 -13003,-2754 -13177,-2722
 #: corrected_by: mapillary (früher unbefestigter Weg)
-Uferweg auf Hermannswerder: Asphalt	Q0 -13177,-2722 -13266,-2716 -13371,-2752 -13460,-2757 -13520,-2772 -13685,-2818 -13767,-2718 -13786,-2642 -13829,-2596
+#: confirmed_by: srt
+Uferweg auf Hermannswerder: Asphalt	Q0 -13177,-2722 -13266,-2716 -13371,-2752 -13443,-2762 -13523,-2783 -13570,-2795 -13685,-2818 -13767,-2718 -13786,-2642 -13829,-2596
 Uferweg auf Hermannswerder: Asphalt	Q0 -13829,-2596 -13865,-2565
 Uferweg auf Hermannswerder: Asphalt, einige Wurzelhebungen	Q0- -13865,-2565 -13921,-2516 -14045,-2521
 Uferweg auf Hermannswerder: Verbundsteinpflaster	Q1 -14045,-2521 -14081,-2516
@@ -3927,14 +3936,14 @@ Küsselstr.: welliges Kleinsteinpflaster	Q2- -13772,-2426 -13554,-2334 -13472,-23
 An der Fährwiese: Asphalt	Q0 -14119,-2778 -14163,-2706
 An der Fährwiese: Verbundsteinpflaster	Q1 -14163,-2706 -14182,-2679 -14234,-2587 -14169,-2548 -14110,-2642 -14182,-2679
 (An der Fährwiese - Hermannswerder): Asphalt	Q0 -14119,-2778 -14044,-2918
-Alter Tornow: Asphalt	Q0 -13718,-2991 -13733,-2967 -13761,-2924 -13793,-2880 -13890,-2838 -13981,-2723
+Alter Tornow: Asphalt	Q0 -13718,-2991 -13733,-2967 -13763,-2926 -13793,-2880 -13890,-2838 -13981,-2723
 An der Vorderkappe: Kopfsteinpflaster	Q2- -13022,-2776 -13123,-2797
 An der Vorderkappe: Kopfsteinpflaster	Q3+ -13123,-2797 -13150,-2777
 An der Vorderkappe: Kopfsteinpflaster	Q2 -13257,-2821 -13209,-2829 -13123,-2797
 An der Vorderkappe: Asphalt	Q0 -13150,-2777 -13304,-2779 -13321,-2801
 An der Vorderkappe: Asphalt oder Feinschotter	Q1 -13321,-2801 -13257,-2821
 An der Vorderkappe: unbefestigte Straße	Q2 -13321,-2801 -13356,-2792
-(An der Vorderkappe - Uferweg): Waldweg, ein bisschen sandig	Q2 -13356,-2792 -13460,-2757
+(An der Vorderkappe - Uferweg): Waldweg, ein bisschen sandig	Q2 -13356,-2792 -13443,-2762
 Ulrich-von-Hutten-Str.: sehr welliger Asphalt	Q2 -13481,-2956 -13456,-3099
 Leiterstr.: welliger Asphalt	Q1- -13381,-2943 -13359,-3096
 Leiterstr.: welliger Asphalt	Q1- -13495,-3094 -13456,-3099 -13359,-3096 -13316,-3091
@@ -5010,7 +5019,7 @@ Melchow - Schönholz/Grüntal: Asphalt	Q0 30122,41503 30183,41308 30175,41193 3049
 (Eberswalder Zoo - Spechthausen): unbefestigter Weg mit Asphaltrandstreifen	Q1+ 35197,46798 35174,46756 35160,46666 35166,46582 35155,46498 35218,46368 35212,46269 35127,46125 35131,46048
 (Eberswalder Zoo - Spechthausen): Asphalt	Q0 35131,46048 35094,45846 35103,45737 35060,45551
 (Eberswalder Zoo - Spechthausen): Kopfsteinpflaster	Q3 35060,45551 35057,45527 35069,45501
-Am Grünen Weg (Potsdam-Eiche): wassergebundene Decke	Q1- -16886,-626 -16850,-793 -16875,-1050
+Am Grünen Weg (Potsdam-Eiche): wassergebundene Decke	Q1- -16870,-699 -16850,-793 -16875,-1050
 Ecksteinweg: Asphalt	Q0 -17305,-608 -17290,-679 -17395,-725
 Ecksteinweg: Verbundsteinpflaster	Q1+ -17395,-725 -17411,-722 -17465,-741 -17482,-743 -17512,-750
 Ecksteinweg: feste Sandstraße	Q1- -17395,-725 -17375,-806
@@ -5044,10 +5053,15 @@ Meisenweg (Potsdam-Golm): Verbundsteinpflaster	Q1+ -17965,195 -17918,316
 Zaunkönigweg (Potsdam-Golm): Steinpflaster	Q1 -18017,333 -18084,316 -18077,267 -18034,259
 Zum Großen Herzberg (Potsdam-Golm): Asphalt	Q0 -18047,223 -18034,259 -18017,316 -18017,333 -18026,357 -18049,424
 Zum Großen Herzberg (Potsdam-Golm): Verbundsteinpflaster	Q1+ -18049,424 -18051,485
-Taubenbogen (Potsdam-Golm): Asphalt	Q0 -18222,253 -18238,364 -18251,459 -18250,543
-Grasmückenring (Potsdam-Golm): Asphalt	Q0 -18238,364 -18135,397 -18049,424 -17997,440 -17993,490
-Elsternstr. (Potsdam-Golm): Asphalt	Q0 -18135,397 -18145,499
-In der Feldmark: Asphalt	Q0 -18429,195 -18625,129 -18631,102
+Taubenbogen (Potsdam-Golm): Asphalt	Q0 -18222,253 -18238,364 -18251,459 -18249,551
+Grasmückenring (Potsdam-Golm): Asphalt	Q0 -18238,364 -18135,397 -18049,424 -17997,440 -17993,490 -17992,525 -18146,544 -18241,559 -18249,551
+Elsternstr. (Potsdam-Golm): Asphalt	Q0 -18135,397 -18140,452 -18131,476 -18145,499 -18146,544
+Elsternstr. (Potsdam-Golm): Asphalt	Q0 -18145,499 -18153,473 -18140,452
+In der Feldmark: Asphalt	Q0 -18429,195 -18617,136 -18625,129 -18631,102
+An der Bahn (Potsdam-Golm): Asphalt	Q0 -18617,136 -18633,152 -18609,354
+Marie-Curie-Ring (Potsdam-Golm): Asphalt	Q0 -18609,354 -18549,349 -18520,346 -18451,355 -18406,368 -18416,451 -18416,557 -18521,572
+(In der Feldmark - Marie-Curie-Ring): Asphalt	Q0 -18405,203 -18449,351 -18451,355
+Clara-Immerwahr-Str. (Potsdam-Golm): Asphalt	Q0 -18504,691 -18521,572 -18549,349
 Karl-Liebknecht-Str. (Potsdam-Golm): Asphalt	Q0 -18725,-673 -18726,-501 -18754,-419 -18656,-9 -18631,102
 Am Mühlenberg (Potsdam-Golm): Asphalt	Q0 -18656,-9 -18711,-2 -18746,5 -18820,19 -18790,282 -18898,334 -19100,407
 (Bhf. Golm - Am Mühlenberg): Asphalt	Q0 -18785,-77 -18769,-27 -18966,0 -18971,73 -18919,178 -18910,270 -18898,334
@@ -5080,8 +5094,8 @@ Am Langen Berg (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17410,-202 -17373,-214
 Thujaweg (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17395,-154 -17454,-131
 Am Sandberg (Potsdam-Eiche): Verbundsteinpflaster	Q1+ -17211,-356 -17144,-342 -17132,-399
 Am Alten Mörtelwerk (Potsdam-Eiche): Asphalt	Q0 -17127,-554 -17141,-496 -17186,-451 -17211,-356 -17224,-310 -17257,-252
-#: note: wenige asphaltierte Stellen
-Am Grünen Weg (Potsdam-Eiche): zumeist unbefestigte Straße	Q2 -16907,-531 -16886,-626
+#: note: früher: zumeist unbefestigte Straße, wenige asphaltierte Stellen, Q2
+Am Grünen Weg (Potsdam-Eiche): Asphalt	Q0 -16907,-531 -16870,-699
 Am Tempelberg (Potsdam-Eiche): Asphalt	Q0 -17009,-539 -17029,-408 -17025,-378
 Park Sanssouci: wassergebundene Decke	Q1 -13728,-807 -13995,-826
 Park Sanssouci: wassergebundene Decke	Q1 -14025,-829 -14021,-818 -14012,-813 -14001,-817 -13995,-826 -13998,-837 -14008,-843 -14019,-841 -14025,-829
@@ -5554,7 +5568,7 @@ Werderscher Weg (Potsdam): schlechtes Kopfsteinpflaster	Q3 -15483,-1993 -15547,-
 Werderscher Weg (Potsdam): Asphalt	Q0 -15590,-1942 -15646,-1955 -15748,-1961 -15962,-2003 -16033,-2029
 Peter-Kühne-Siedlung: unbefestigter Weg	Q2 -15962,-2003 -15961,-2168
 Feldweg: Asphalt	Q0 -15449,-1959 -15307,-1982 -15144,-1979
-Neue Plantage: gepflastert	Q2+ -13092,-1344 -13100,-1411
+Neue Plantage: Kleinsteinpflaster	Q2+ -13092,-1344 -13116,-1525
 (Uferweg am Tiefen See): Asphalt	Q0 -11913,-1032 -11906,-989 -11866,-993 -11851,-962 -11825,-934 -11823,-903 -11823,-862 -11790,-812 -11751,-822 -11686,-765 -11622,-709 -11676,-627 -11753,-515 -11790,-537
 (Uferweg am Tiefen See - Humboldtbrücke): Asphalt	Q0 -11823,-903 -11881,-870
 Heinrich-Mann-Allee [Nebenfahrbahn]: Asphalt	Q0 -10748,-4065 -10795,-3996 -10899,-3866 -10963,-3762 -11036,-3654 -11097,-3570 -11162,-3502 -11322,-3332 -11672,-2958
@@ -6128,6 +6142,15 @@ Ahornring (Wildau): Asphalt	Q0 26466,-7734 26376,-7738 26349,-7539
 Am Markt (Vierraden): Kleinsteinpflaster	Q1- 69806,77907 69781,77912 69701,77931
 Breite Str. (Vierraden): Kleinsteinpflaster	Q1- 69790,78095 69780,78073 69749,78025 69736,78005 69701,77931 69551,77764 69509,77714
 Schwedter Str. (Vierraden): Kleinsteinpflaster	Q1- 69509,77714 69606,77348
+(Leipziger Str. - Ufer): Gehwegplatten	Q0- -12655,-2202 -12712,-2172 -12754,-2154 -12800,-2142
+(Am Speicher - Friedrich-Wilhelm-Boelcke-Str.): Verbundsteinpflaster	Q1+ -12783,-2269 -12781,-2376
+Luisenhof: Verbundsteinpflaster	Q1+ -13532,-2963 -13548,-2893
+Luisenhof: Kleinsteinpflaster	Q1- -13548,-2893 -13558,-2841 -13570,-2795
+Luisenhof: Kleinsteinpflaster	Q1- -13548,-2893 -13635,-2900 -13671,-2903
+Luisenhof: Verbundsteinpflaster	Q1+ -13671,-2903 -13705,-2875 -13719,-2846
+Luisenhof: Verbundsteinpflaster	Q1+ -13705,-2875 -13763,-2926
+Luisenhof: Verbundsteinpflaster	Q1+ -13635,-2900 -13634,-2978
+Schopenhauerstr. Kopfsteinpflaster	Q2 -13525,-1131 -13516,-1225
 ######################### User Contributions #################################
 #: by: osm vvv
 Prieros - Neubrück: Sand	Q3 35093,-21361 34097,-22246
@@ -8138,7 +8161,7 @@ Lindstedter Str. (Potsdam-Eiche): Asphalt	Q0 -17809,-321 -17696,-360 -17477,-411
 # 
 #: by: Christoph Buller:
 #: confirmed_by: srt
-In der Feldmark (Potsdam-Golm): Asphalt	Q0 -17725,94 -17785,120 -17848,145 -17906,170 -17965,195 -18047,223 -18222,253 -18245,254 -18342,224 -18429,195 -18444,77
+In der Feldmark (Potsdam-Golm): Asphalt	Q0 -17725,94 -17785,120 -17848,145 -17906,170 -17965,195 -18047,223 -18222,253 -18245,254 -18342,224 -18405,203 -18429,195 -18444,77
 # 
 #: by: Ramona Hesse vvv
 #: XXX anonymous meint aber: Beton, Q2 - was stimmt?
@@ -8361,7 +8384,8 @@ Seelower Str.: Asphalt	Q0 55814,-3796 55776,-3770 55722,-3765 55423,-3769
 #: note: laut Sarah (sweetblngirl) mittlerweile asphaltiert; am westlichen Ende bestätigt
 Strausberg - Garzau: Asphalt	Q0- 42578,15750 43666,15719 43839,15716 44155,15701 45039,15575 45359,15489
 An der Sandscholle: Kopfsteinpflaster	Q2 -9092,-2599 -9052,-2510 -8953,-2210 -8909,-2009 -8905,-1939
-(Templiner Str. - Uferweg): Asphalt	Q0 -13481,-2956 -13492,-2901 -13487,-2870 -13505,-2842 -13520,-2772
+(Templiner Str. - Uferweg): Asphalt mit Wurzelhebungen	Q1 -13481,-2956 -13494,-2902
+(Templiner Str. - Uferweg): Asphalt	Q0 -13494,-2902 -13494,-2863 -13505,-2842 -13523,-2783
 Dorfstr. (Schönwalde-Dorf): Betonpflastersteine	Q1 -8750,22965 -8746,22955 -8736,22926 -8704,22771
 Havellandkanal - Schönwalde-Dorf: Verbundsteinpflaster	Q1 -8625,22267 -8695,22424 -8704,22771
 B5 (parallele Straße): Asphalt	Q0 -24659,20151 -24478,19910 -24441,19892 -23931,19164 -23612,18701 -23467,18695 -23452,18658

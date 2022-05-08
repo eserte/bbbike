@@ -1516,6 +1516,7 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
 #: by: osm, mapillary (Rückseite eines länglichen Schildes)
 Bienenwinkel	1 -13335,1927 -13333,1957 -13227,1962 -13228,1927
+Luisenhof: durch Tore abgesperrt	2 -13558,-2841 -13570,-2795
 ###################################################################### 
 # elsewhere in Brandenburg
 # 
@@ -1560,7 +1561,7 @@ Lindenberger Weg	1 17228,24640 17193,24683
 # REMOVED --- zur Mülldeponie	2 14682,1782 14709,1732 14849,1672
 # REMOVED (laut osm offen) --- zur Mülldeponie	2 14849,1672 14588,1053 14768,510 14556,409 14710,-25
 Wiesenweg (Schulzendorf)	1 23717,-3975 23618,-3854 23538,-3808 23466,-3768 23456,-3746
-Str. der Einheit (Caputh)	1 -16868,-6959 -16823,-6996
+Str. der Einheit (Caputh)	1 -16885,-6959 -16834,-6993
 Am Stern	1 26002,-3362 26002,-3342 26011,-3331 26029,-3326 26048,-3334 26046,-3365 26013,-3367 26002,-3362
 Am Bergpark	1 30589,-1736 30664,-1629 30758,-1606 30968,-1681
 August-Bebel-Str. (Eichwalde)	1s:q4 25269,-3906 25322,-4042
@@ -2502,7 +2503,7 @@ tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2175,4845
 tragen (Eisenbahnbrücke Templiner See)	0:60 -15537,-4535
 tragen (Eisenbahnbrücke Templiner See)	0:60 -15652,-4441
 tragen (Eisenbahnbrücke Caputh)	0:60 -18002,-7496
-tragen (Eisenbahnbrücke Caputh)	0:60 -17978,-7375
+tragen (Eisenbahnbrücke Caputh)	0:60 -18001,-7395
 tragen (Eisenbahnbrücke Werder, 27 Stufen)	0:60 -21125,-2012
 tragen (Eisenbahnbrücke Werder, 27 Stufen)	0:60 -21227,-2017
 tragen (Elsensteg, 6 Stufen)	0:10 13379,8703
@@ -3471,7 +3472,7 @@ Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2022-04-09
+#: last_checked: 2022-05-08
 #: check_frequency: 120d
 #: next_check: 2025-01-01
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -3567,7 +3568,7 @@ Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 153
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2022-04-23 vvv
+#: last_checked: 2022-05-08 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-01-31 vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -3579,19 +3580,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 # REMOVED (wieder offen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/uebersicht-ueber-aktuelle-bauvorhaben-118918.php (voraussichtliche Dauer bis 2023 (!)) --- #: priority: #C --- #: last_checked: 2021-05-16 --- #: check_frequency: 45d --- (Weg parallel zur und unter der Minna-Todenhagen-Brücke): mit Bauzäunen abgesperrt	2::inwork 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
 # REMOVED (wieder offen) --- #: last_checked: 2021-07-17 --- #: check_frequency: 14d --- (Breiter Weg - Südostallee/Sterndamm): Durchgang ist wegen Bauarbeiten gesperrt	2::inwork 17538,5301 17601,5374
 # REMOVED (laut osm mittlerweile offen) --- #: next_check_id: NORD52-2019 --- #: last_checked: 2021-02-24 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2021-04-14 vvv --- #: osm_watch: way id="630987121" version="10" --- Ankerweg: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22118,2559 22159,2585 22197,2612 --- #: osm_watch: way id="353948101" version="11" --- An der Dahme: kann wegen Hochbauarbeiten nicht passierbar sein	2::inwork 22197,2612 22270,2549 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016
-#: by: https://www.berndalbers.com/krautstrasse-30-berlin (vielleicht verschwindet die Straße im Zuge dieses Neubaus?)
-#: by: https://www.deutsches-architekturforum.de/thread/14527-neubau-holzmarktstra%C3%9Fe-51-friedrichshain-in-planung/?postID=681293#post681293
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_39_3593_3676_online.pdf (Einziehung und Widmung einer Grünanlage)
-#: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen, sollte ein Teilabschnitt der Straße endgültig verschwinden
-#: XXX mittlerweile (April 2021) wurde der südliche Teil schon weggebaggert; Ende März 2022: die komplette Straße existiert nicht mehr
-#: osm_watch: way id="25008069" version="15"
-#: last_checked: 2022-03-31
-#: check_frequency: 90d
-# REMOVED (hier ist nichts mehr) --- Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881
-Mehlbeerenweg: Straße existiert nicht mehr	2::inwork 11923,11881 11940,11982
+# REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016 --- #: by: https://www.berndalbers.com/krautstrasse-30-berlin (vielleicht verschwindet die Straße im Zuge dieses Neubaus?) --- #: by: https://www.deutsches-architekturforum.de/thread/14527-neubau-holzmarktstra%C3%9Fe-51-friedrichshain-in-planung/?postID=681293#post681293 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_39_3593_3676_online.pdf (Einziehung und Widmung einer Grünanlage)--- #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen, sollte ein Teilabschnitt der Straße endgültig verschwinden--- #: XXX mittlerweile (April 2021) wurde der südliche Teil schon weggebaggert; Ende März 2022: die komplette Straße existiert nicht mehr --- #: osm_watch: way id="25008069" version="15" --- #: last_checked: 2022-03-31 --- #: check_frequency: 90d --- # REMOVED (hier ist nichts mehr) --- Mehlbeerenweg: wegen Bauarbeiten komplett gesperrt	2::inwork 11916,11846 11923,11881 --- Mehlbeerenweg: Straße existiert nicht mehr	2::inwork 11923,11881 11940,11982
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/14299-wohnquartier-f%C3%BCrstenberger-stra%C3%9Fe-8-mitte-in-bau/?postID=686545#post686545
 #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022)
@@ -3723,6 +3712,7 @@ Abendseglersteig: noch in Bau	2::inwork 33176,2938 33147,2832 33267,2810 33383,2
 # REMOVED (hier offen) --- Abendseglersteig: noch in Bau	2::inwork 33383,2792 33406,2852
 # 
 #: next_check_id: BAHNHOFSTR-2020
+#: by: https://berliner-abendblatt.de/2022/05/08/die-s2-wird-wochenlang-unterbrochen/
 #: XXX hier wird eine neue Unterführung gebaut vvv
 #: last_checked: 2022-03-07 vvv
 #: next_check: 2023-07-31 vvv
@@ -3828,7 +3818,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-04-19
+#: last_checked: 2022-05-08
 #: check_frequency: 60d
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833 9375,12911
 # 
@@ -4128,8 +4118,8 @@ Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="496270260" version="7" brb
 # REMOVED (wurde gelöscht) --- #: osm_watch: node id="3453536641" version="5" brb
 # REMOVED (siehe osm_watch in fragezeichen) --- #: osm_watch: way id="733725947" version="7" brb
-#: last_checked: 2022-01-10 (osm)
-#: check_frequency: 90d
+#: last_checked: 2022-05-08
+#: check_frequency: 120d
 Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -12754,-2154
 # 
 # REMOVED (-> temp blockings) --- #: XXX vielleicht sogar dauerhaft? --- #: last_checked: 2018-08-24 (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln) --- #: check_frequency: 14d --- Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
@@ -4425,7 +4415,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="21"
 #: also_indoor: traffic
-#: last_checked: 2022-04-23
+#: last_checked: 2022-05-08
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
@@ -4482,9 +4472,9 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: XXX Johannisplatz (PLZ=10117 laut LOR)
 #: XXX Aaron-Bernstein-Platz (PLZ=10117 laut LOR)
 # REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7"
-#: osm_watch: way id="940764588" version="3"
+#: osm_watch: way id="940764588" version="4"
 #: osm_watch: way id="940764584" version="3"
-#: last_checked: 2022-04-27
+#: last_checked: 2022-05-08 (osm)
 #: check_frequency: 360d
 #: next_check: 2023-06-30
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
@@ -4520,7 +4510,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="8"
-#: last_checked: 2022-05-06 vvv
+#: last_checked: 2022-05-08 vvv
 # REMOVED (fertig?) --- #: check_frequency: 60d vvv
 #: also_indoor: traffic
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
@@ -4575,10 +4565,7 @@ tragen (Treppe) oder Aufzug benutzen	0:35 10888,-4384
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: XXX wann wird die Straße fertig werden? wie wird die genaue Wegführung sein? wird hier auch gepflastert sein?
-#: last_checked: 2019-05-25
-#: check_frequency: 180d
-Neue Plantage: hier noch Baustelle	2:inwork -13100,-1411 -13017,-1426
+# REMOVED (andere Straßenführung) --- #: XXX wann wird die Straße fertig werden? wie wird die genaue Wegführung sein? wird hier auch gepflastert sein? --- #: last_checked: 2019-05-25 --- #: check_frequency: 180d --- Neue Plantage: hier noch Baustelle	2:inwork -13116,-1525 -13017,-1426
 # 
 #: by: osm
 #: by: https://www.potsdam.de/sites/default/files/documents/17554_amtsblatt_de2017_nr13_dsjs_korr2.pdf (Einziehung von Straßenland)
@@ -4591,7 +4578,7 @@ Neue Plantage: hier noch Baustelle	2:inwork -13100,-1411 -13017,-1426
 #: XXX Schlossstraße (östlicher Verlauf) -> Anna-Zielenziger-Straße (PLZ: 14467)
 #: XXX Schwertfegerstraße (östlicher Verlauf) -> Erika-Wolf-Straße (bereits eingetragen)
 #: osm_watch: way id="534669300" version="10" brb
-#: last_checked: 2021-10-11 (daf)
+#: last_checked: 2022-05-08
 # REMOVED --- #: next_check: 2020-09-01
 #: check_frequency: 180d
 Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-1449 -12694,-1408 -12727,-1416
@@ -4603,7 +4590,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 #: XXX die derzeitige Straße ist asphaltiert, bleibt das so?
 #: osm_watch: way id="765539341" version="6" brb
-#: last_checked: 2022-02-04 (osm)
+#: last_checked: 2022-05-08
 # REMOVED --- #: next_check: 2020-09-01
 #: check_frequency: 180d
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449
@@ -4779,7 +4766,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-106/download/210225_Planzeichnung_1-106.pdf (verkehrsberuhigter Bereich)
 #: osm_watch: way id="257432926" version="7"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2022-01-28 (daf)
+#: last_checked: 2022-05-08
 #: check_frequency: 150d
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754
 # REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731

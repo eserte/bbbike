@@ -538,7 +538,7 @@ Hermannswerder	1 -14306,-2867 -14044,-2918 -13765,-2974 -13733,-2967
 Neue Schönholzer Str.	1 10089,18180 10141,18030 10179,17772
 Kleine Kurstr.	1 10230,11839 10189,11773
 Schendelgasse	1 10644,13497 10703,13467 10767,13443
-Leipziger Str. (Potsdam)	1 -12431,-2096 -12534,-2125 -12620,-2174 -12697,-2235 -12708,-2257 -12713,-2279 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573 -13003,-2754 -13022,-2776 -13062,-2901
+Leipziger Str. (Potsdam)	1 -12431,-2096 -12534,-2125 -12620,-2174 -12655,-2202 -12697,-2235 -12708,-2257 -12713,-2279 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573 -13003,-2754 -13022,-2776 -13062,-2901
 #: XXX_prog für Anhänger auch nicht geeignet, Mittelstreifen zu schmal
 Grunewaldstr.: Mittelstreifen	3nocross 6152,9136 6264,9156 6361,9175
 #: note: Breite zwischen Pollern ca. 150cm
@@ -577,7 +577,7 @@ Suermondtstr: Straßenbahntrasse	3nocross 15918,16383 16099,16339 16263,16288
 Paulsborner Str.: Mittelstreifen	3nocross 3587,9905 3605,9929 3701,10047
 Paulsborner Str.: Mittelstreifen	3nocross 3605,9929 3701,10047 3741,10097 3852,10236
 Eisenhartstr.	1 -12637,-8 -12779,-294 -12821,-417
-Brandenburger Str. (Potsdam): Fußgängerzone	3nocross -13556,-1140 -13410,-1101 -13289,-1071 -13173,-1039 -12999,-1000 -12883,-976
+Brandenburger Str. (Potsdam): Fußgängerzone	3nocross -13556,-1140 -13525,-1131 -13410,-1101 -13289,-1071 -13173,-1039 -12999,-1000 -12883,-976
 Eichhornstr. - Potsdamer: abbiegen verboten	3 8232,11414 8226,11458 8145,11438
 Kottbusser Damm/Schinkestr.: Mittelstreifen	3nocross 11543,10015 11623,9841 11673,9720
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19676,3705 19633,3751
@@ -916,7 +916,7 @@ Friedbergstr.:	3 2793,10752 2766,10750 *
 # 
 #: by: http://www.potsdam.de/cms/beitrag/10093238/1463075 vvv
 Wilhelm-Staab-Str. (Potsdam)	1 -13001,-1329 -12988,-1265 -12981,-1222 -12961,-1105
-Bäckerstr. (Potsdam)	1 -13314,-1226 -13287,-1231 -13203,-1246
+Bäckerstr. (Potsdam)	1 -13314,-1226 -13287,-1231 -13202,-1250
 Brandenburger Str. (Potsdam)	1 -12801,-960 -12883,-976
 #: note (Originaleintrag von Axel Dörrie)
 Stadtheide (Potsdam)	1 -15432,-2763 -15504,-2984 -15537,-3091 -15501,-3122
@@ -1572,4 +1572,6 @@ Kettinger Str. [Siedlungsstraße]	2:Anlieger 10035,1000 10011,942 9987,889
 #: by: mapillary
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/prinzenallee-ecke-gotenburger-stra%C3%9Fe.377/#post-18325
 Gotenburger Str.	1 9008,16799 8847,16870
+# 
+In der Feldmark - Marie-Curie-Ring: Poller	3 * -18449,351 *
 # 

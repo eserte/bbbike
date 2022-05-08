@@ -1262,18 +1262,18 @@ zum Tunnel unter dem ICC	CP2; 1928,10728 1960,10710
 Am Gr¸nen Weg (Potsdam-Eiche): nicht ausgeschildert	CP2; -16875,-1050 -16850,-793
 Ecksteinweg (Potsdam-Eiche): nicht ausgeschildert	CP2; -17390,-1092 -17387,-1064
 # 
-#: XXX hier wird vermutlich noch ausgeschildert vvv
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_oktober_2018_web.pdf (Widmung)
+#: add_fragezeichen: Sind die Straﬂen mittlerweile ausgeschildert? vvv
 #: last_checked: 2019-08-03 vvv
 #: check_frequency: 60d vvv
-Zum Groﬂen Herzberg (Potsdam-Golm): noch nicht ausgeschildert	CS -18049,424 -18051,485
-Taubenbogen (Potsdam-Golm): noch nicht ausgeschildert	CS -18222,253 -18238,364 -18251,459 -18250,543
+# REMOVED --- Zum Groﬂen Herzberg (Potsdam-Golm): noch nicht ausgeschildert	CS -18049,424 -18051,485
+Taubenbogen (Potsdam-Golm): noch nicht ausgeschildert	CS -18222,253 -18238,364 -18251,459 -18249,551
 #: XXX wird vermutlich noch nach Norden und dann nach Westen weitergef¸hrt
 Grasm¸ckenring (Potsdam-Golm): noch nicht ausgeschildert	CS -18238,364 -18135,397 -18049,424 -17997,440 -17993,490
-Elsternstr. (Potsdam-Golm): noch nicht ausgeschildert	CS -18135,397 -18145,499
+Elsternstr. (Potsdam-Golm): noch nicht ausgeschildert	CS -18135,397 -18140,452 -18131,476 -18145,499 -18146,544
 #: check_frequency ^^^
 #: last_checked ^^^
-#: XXX ^^^
+#: add_fragezeichen ^^^
 # 
 Charles-Tellier-Platz: nicht ausgeschildert	CS -14665,481 -14626,465 -14622,440 -14574,431 -14559,460 -14608,485 -14626,465
 # 
@@ -1658,6 +1658,11 @@ Kirchstr. (Gramzow): nicht ausgeschildert	CS 49655,90469 49651,90395 49640,90243
 In den Alboing‰rten: nicht ausgeschildert	CS 7971,6087 7910,6090 7739,6099 7646,6031 7638,5967
 # 
 ausgeschildert "Kettinger Str. 18A-18H 16A-16H"	CP2; 10116,949 10035,1000
+# 
+Luisenhof: Privatstraﬂe	CS -13532,-2963 -13548,-2893 -13558,-2841 -13570,-2795
+Luisenhof: Privatstraﬂe	CS -13548,-2893 -13635,-2900 -13671,-2903 -13705,-2875 -13719,-2846
+Luisenhof: Privatstraﬂe	CS -13705,-2875 -13763,-2926
+Luisenhof: Privatstraﬂe	CS -13635,-2900 -13634,-2978
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straﬂen)

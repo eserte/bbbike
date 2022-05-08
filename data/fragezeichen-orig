@@ -134,7 +134,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: osm_watch: way id="4609212"  version="13"
 #: osm_watch: way id="25113713" version="17"
 #: osm_watch: way id="4752742"  version="12"
-#: osm_watch: way id="4752743"  version="15"
+#: osm_watch: way id="4752743"  version="18"
 #: osm_watch: way id="8049679"  version="17"
 #: osm_watch: way id="8049678"  version="13"
 #: last_checked: 2022-04-23
@@ -163,9 +163,9 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: osm_watch: way id="4323788" version="23"
 #: osm_watch: way id="23109081" version="18"
 #: osm_watch: way id="41108858" version="13"
-#: last_checked: 2021-09-26
-#: check_frequency: 120d
-#: next_check: 2022-05-13
+#: last_checked: 2022-05-08
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2022-05-13
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 # 
 #: XXX Baumaßnahme 7.4 (Realisierung nach 2011)
@@ -1930,7 +1930,7 @@ Borsigdamm: Richtung Norden soll ein baulicher Radweg entstehen, Richtung Süden 
 # 
 #: by: https://api.fixmyberlin.de/api/projects/335
 #: osm_watch: way id="4441941" version="20"
-#: last_checked: 2022-03-11 (kartaview)
+#: last_checked: 2022-05-08
 #: check_frequency: 360d
 Kohlhasenbrücker Str.: Radverkehrsanlagen sollen erstellt werden	?::projected -7145,-961 -7066,-840 -7042,-724 -7069,-392 -7067,-36 -7050,152 -7050,199 -7067,240 -7078,262 -7123,310 -7167,362 -7180,378 -7178,377
 # 
@@ -2011,12 +2011,13 @@ Verlängerung der Gotlindestr.: wird der Fußweg auch für Radfahrer benutzbar sein
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629695&postcount=135
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
-#: last_checked: 2022-05-06
+#: last_checked: 2022-05-08
 #: check_frequency: 60d
 Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::inwork 8870,12647 8754,12622
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6865 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136628495807/628495807/00322943/43-Anlagen/02/1016_XXAnlage_1_Bebauungsplanentwurf7-29_2014-.pdf --- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/beschaeftigte-auf-euref-campus-kommen-zu-fuss-per-fahrrad-bus-oder-bahn_a220429 (keine weitere Zufahrtsstraße?) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_40_4933_5036_online.pdf (Bebauungsplan 7-29 wird erwähnt) --- #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Wegfall der Planstraße zum Sachsendamm) --- #: XXX Bebauungsplan 7-29 --- #: last_checked: 2021-03-02 --- #: check_frequency: 540d --- Planstraße A: Straße geplant	?::projected 7268,8008 7250,8223
 # 
+#: next_check_id: BRUECKEWERDER-2022
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_15_fertig_web.pdf (Fertigstellung bis Mitte 2021)
 #: by: https://www.potsdam.de/oeffentliche-auslegung-zum-bau-einer-bruecke-und-wegeverbindung-werder-havel-potsdam-schielowsee
 #: by: https://www.potsdam.de/sites/default/files/documents/4_lageplan_1.pdf
@@ -2654,7 +2655,7 @@ Märkische Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projec
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/pilotprojekt-geschuetzter-radweg-poller-zwischen-hermannplatz-und-reuterstrasse-geplant_a210229
 #: osm_watch: way id="764003876" version="5"
 #: osm_watch: way id="764003865" version="4"
-#: osm_watch: way id="764003862" version="16"
+#: osm_watch: way id="764003862" version="18"
 #: priority: #D
 #: last_checked: 2022-03-16 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
 #: check_frequency: 60d vvv
@@ -5194,7 +5195,7 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Berlin.coords.data-Eintrag fehlt
 #: osm_watch: way id="104991251" version="2"
-#: last_checked: 2022-03-25 (mapillary)
+#: last_checked: 2022-04-19 (mapillary)
 #: check_frequency: 60d
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
 # 
@@ -5873,7 +5874,7 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: https://www.deutsches-architekturforum.de/thread/8594-luisenblock-ost-vollendung-band-des-bundes-in-entwicklung/?postID=699582#post699582 (städtebaulicher Wettbewerb 2021)
 #: by: https://luisenblock.berlin.de/
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2203/nachricht7271.html
-#: last_checked: 2022-01-25
+#: last_checked: 2022-05-08
 #: check_frequency: 360d
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
@@ -6260,7 +6261,7 @@ Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,1084
 #: by: https://www.infravelo.de/projekt/karl-marx-allee/ (2. - 4. Quartal 2021) (mittlerweile bis 4. Quartal 2022)
 #: XXX beide Fahrtrichtungen?
 #: XXX Mittlerweile Bauarbeiten Richtung Westen zwischen Koppenstr. und Andreasstr., Radfahrer werden zwischenzeitlich auf die Fahrspur geleitet
-#: last_checked: 2022-05-06
+#: last_checked: 2022-05-08
 #: check_frequency: 90d
 #: next_check: 2022-12-31
 Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 12848,12434 12816,12439 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
@@ -6312,6 +6313,7 @@ Goerdelerdamm: teilweise Verbreiterung des Radwegs	?::projected 5043,14671 4897,
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/anwohner-sammeln-unterschriften-gegen-halbierung-des-thaelmannparks_a308565
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5857 (Antrag)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1200078.php (Erwähnung der Umverlegung des Weges)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/start-fuer-neubau-und-gehwegverlegung_a344432
 #: osm_watch: way id="18677670" version="12"
 #: last_checked: 2022-05-06
 #: check_frequency: 30d
@@ -6788,7 +6790,7 @@ Neubrandenburg: Hinterste Mühle - Stadt (Waldweg), wie geht es weiter?	? -78,126
 #: XXX laut anonymen Eintrag Radweg; keine Verbindung zum restlichen Netz:
 Hermsdorfer Str. (Hohen Neuendorf): Qualität?	? 562,29490 590,29922
 #: XXX fehlt in Potsdam.coords.data
-An der Hinterkappe (Potsdam): Existiert diese Straße? Ausgeschildert? Qualität?	? -13940,-3163 -14075,-3027
+An der Hinterkappe (Potsdam): Existiert diese Straße? Ausgeschildert? Qualität?	? -13880,-2970 -14075,-3027
 Aalsteig (Potsdam-Grube): Qualität?	? -19509,4469 -19489,4471 -19449,4477
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10115978_1771576/bbb8d1f2/ENDFASSUNGAbl.%20PdmStadt%2004_13.pdf
@@ -6951,7 +6953,7 @@ Inselweg (Potsdam): genaue Lage, Qualität?	? -13829,-2596 -13769,-2508
 # 
 Leiterstr. (Potsdam): existiert eine direkte Verbindung zur Templiner Str.? Qualität?	? -13495,-3094 -13524,-3083 -13567,-2967
 # 
-Templiner Str. - Uferweg: Gibt es hier eine Steigung?	? -13481,-2956 -13492,-2901 -13487,-2870 -13505,-2842 -13520,-2772
+# REMOVED (ja, eingetragen) --- Templiner Str. - Uferweg: Gibt es hier eine Steigung?	? -13481,-2956 -13494,-2902 -13494,-2863 -13505,-2842 -13523,-2783
 # 
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_landeshauptstadtpotsdam_09-2014.pdf vvv
 #: XXX PLZ=14482
@@ -7555,7 +7557,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: by: https://berliner-abendblatt.de/2022/02/09/vorkaufsrecht-fuer-westkreuzpark-wurde-gekippt/
 #: by: https://berliner-abendblatt.de/2022/02/11/westkreuzpark-linke/
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/plaene-fuer-westkreuzpark-gescheitert_a336131
-#: last_checked: 2022-02-09 (Pressemitteilung)
+#: last_checked: 2022-05-08
 #: check_frequency: 720d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
 # 
@@ -7927,17 +7929,16 @@ Eisenhutweg: Wohngebiet mit neuen Privatstraßen (verkehrsberuhigter Bereich) ent
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_oktober_2018_web.pdf (Widmung)
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_06_2019final.pdf (neue Namen)
 #: XXX weitere Straßenbenennungen, fehlen alle in Potsdam.coords.data
-#: XXX Planstraße A: An der Bahn (Weiterführung)
-#: XXX Planstraße B (Nord-, Ost-, Südverlauf): Feldlerchenwinkel, PLZ=14476 -> neuer Name: Marie-Curie-Ring
-#: XXX Planstraße B (Westverlauf): Sperlingsweg, PLZ=14476 -> neuer Name: Clara-Immerwahr-Str.
+#: XXX Planstraße A: An der Bahn (Weiterführung) --- nördlich Marie-Curie-Ring zwar ausgeschildert, aber nur Schotterweg (Stand 05/2022); entsteht hier noch eine richtige Straße?
+# REMOVED (realisiert) --- #: XXX Planstraße B (Nord-, Ost-, Südverlauf): Feldlerchenwinkel, PLZ=14476 -> neuer Name: Marie-Curie-Ring
+# REMOVED (realisiert) --- #: XXX Planstraße B (Westverlauf): Sperlingsweg, PLZ=14476 -> neuer Name: Clara-Immerwahr-Str.
+# REMOVED (confirmed) --- #: XXX laut osm sind mittlerweile Clara-Immerwahr-Str. und Marie-Curie-Ring fertig
 #: osm_watch: way id="412161707" version="6" brb
 # REMOVED --- #: osm_watch: way id="812663298" version="2" brb
 #: osm_watch: way id="412161703" version="8" brb
 #: osm_watch: way id="812663297" version="4" brb
-#: XXX laut osm sind mittlerweile Clara-Immerwahr-Str. und Marie-Curie-Ring fertig
-#: last_checked: 2021-01-16 (osm)
-#: check_frequency: 180d
-#: next_check: 2021-06-10
+#: last_checked: 2022-05-08
+#: check_frequency: 360d
 nördlich der Feldmark (Golm): weitere Straßen geplant	?::projected -18587,697 -18262,679 -18254,344 -18629,247 -18587,697
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bebauungsplan.715578.php
@@ -8140,7 +8141,7 @@ Rote Kaserne West: neue Straßen	?::projected -13257,1337 -13239,1179 -13375,1330
 Gartenfeld: entsteht ein durchgängiger Weg entlang der S-Bahn?	?::projected 168,15220 -246,15538
 # 
 #: next_check_id: POTSDAMSPEICHERSTADT-2022
-#: last_checked: 2022-01-10 (osm) vvv
+#: last_checked: 2022-05-08 vvv
 #: check_frequency: 360d vvv
 #: next_check: 2024-06-01 vvv
 #: XXX neue Straßen in Potsdam: Genauer Verlauf? vvv
@@ -8197,7 +8198,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11160 (Bebauungsplanentwurf I-32aa (Holzufer))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036570366892/570366892/00528691/91-Anlagen/02/VzK_0226_VI_Anlage_42-2022-Anlage-B-Plan-I-32a.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_16_0977_1032_online.pdf (Einziehung einer Grünanlage)
-#: last_checked: 2022-04-22 (mapillary)
+#: last_checked: 2022-05-08
 #: check_frequency: 90d
 Uferweg geplant	?::projected 11981,11578 11821,11733 11676,11839 11375,11994
 # 
@@ -9597,11 +9598,11 @@ Amundsenstr.: Rad- und Gehweg, bereits befahrbar, Qualität?	? -15825,-166 -16108
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._1_2016.pdf (zum Bebauungsplan Speicherstadt-Süd)
 #: by: https://www.potsdam.de/sites/default/files/documents/17210_amtsblatt_mai2017_dsjs_korr3_final.pdf (ebenso)
 #: by: https://www.potsdam.de/sites/default/files/documents/final_18057_amtsblatt3_www.pdf (ebenso)
-#: last_checked: 2018-09-01 vvv
+#: last_checked: 2022-05-08 vvv
 #: check_frequency: 360d vvv
 #: XXX hier existiert vermutlich schon ein Geh/Radweg, laut osm Verbundsteinpflaster
 # REMOVED --- #: osm_watch: way id="313404756" version="4" brb
-Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12783,-2269 -12781,-2376
+# REMOVED --- Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12783,-2269 -12781,-2376
 #: osm_watch: way id="911461112" version="1"
 Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12831,-2439 -12906,-2537 -13156,-2702
 #: check_frequency ^^^
@@ -9706,14 +9707,7 @@ Hermann-Mattern-Promenade: wurde die Straße schon teilweise Richtung Norden verl
 #: XXX Privatstraße, PLZ=14473
 Am Uferpark (Potsdam): genaue Lage der Straße, Qualität? verkehrsberuhigt?	? -13325,-2935 -13331,-2900 -13454,-2914 -13450,-2951
 # 
-#: by: http://www.potsdam.de/sites/default/files/documents/abl_pdmstadt_05_2015_web.pdf
-#: XXX Privatstraße vvv
-#: XXX fehlt in Potsdam.coords.data, PLZ=14473 vvv
-Luisenhof (Potsdam): genaue Lage der Straße, Qualität? verkehrsberuhigt?	? -13532,-2963 -13548,-2893 -13636,-2897 -13698,-2875 -13761,-2924
-Luisenhof (Potsdam): genaue Lage der Straße, Qualität? verkehrsberuhigt?	? -13636,-2897 -13634,-2978
-#: XXX ^^^
-#: XXX ^^^
-# 
+# REMOVED --- #: by: http://www.potsdam.de/sites/default/files/documents/abl_pdmstadt_05_2015_web.pdf --- #: XXX Privatstraße vvv --- #: XXX fehlt in Potsdam.coords.data, PLZ=14473 vvv --- Luisenhof (Potsdam): genaue Lage der Straße, Qualität? verkehrsberuhigt?	? -13532,-2963 -13548,-2893 -13635,-2900 -13671,-2903 -13705,-2875 -13761,-2924 --- Luisenhof (Potsdam): genaue Lage der Straße, Qualität? verkehrsberuhigt?	? -13635,-2900 -13634,-2978 --- #: XXX ^^^ --- #: XXX ^^^
 # REMOVED --- (Weg am Eschengraben): Qualität? Verläuft hier die Reinickendorfer Radroute 3?	? -2165,22794 -2162,22855 -2125,22882 -2076,22988 -2040,23061
 # REMOVED --- (Weg am Haselgraben): Qualität? Verläuft hier die Reinickendorfer Radroute 3?	? -2076,22988 -2142,23030 -2269,23147
 # REMOVED --- (Weg am Wiesengraben): Qualität? Nachts beleuchtet? Verläuft hier eine Reinickendorfer Radroute? Gibt es Verbindungen zu allen anliegenden Straßen?	? -2165,22794 -2165,22641 -2239,22442 -2246,22354
@@ -9921,10 +9915,7 @@ Wilhelmstr. (Dallgow-Döberitz): Qualität?	? -13426,14823 -13375,13886
 Mühlenstr. (Dallgow-Döberitz): Qualität?	? -14055,13775 -14057,13830 -14060,13884 -14098,13916 -14528,14353 -14633,14358
 Feldstr. (Dallgow-Döberitz): Qualität?	? -14633,14358 -14737,14356 -14821,14299 -14883,14246
 Döberitz - Elstal: Qualität?	? -14821,14299 -15013,14417 -15467,14476 -15733,14666 -15997,14714 -16080,14680 -16152,14690
-#: XXX laut osm fertig vvv
-Grasmückenring: ist der nördliche Teil der Straße schon fertiggestellt? Qualität?	? -17993,490 -17993,490 -17992,525 -18146,544 -18232,557 -18250,543 -18250,543
-Elsternstr.: ist der nördliche Teil der Straße schon fertiggestellt? Qualität?	? -18145,499 -18145,499 -18146,544 -18146,544 -18140,573
-#: XXX ^^^
+# REMOVED --- #: XXX laut osm fertig vvv --- Grasmückenring: ist der nördliche Teil der Straße schon fertiggestellt? Qualität?	? -17993,490 -17993,490 -17992,525 -18146,544 -18241,559 -18249,551 -18249,551 --- Elsternstr.: ist der nördliche Teil der Straße schon fertiggestellt? Qualität?	? -18145,499 -18145,499 -18146,544 -18146,544 -18140,573 --- #: XXX ^^^
 #: XXX laut mapillary Asphalt/Beton, möglicherweise mit Unebenheiten/Schäden
 Brandenburgische Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtung Süden?	? 30512,7909 30454,7670 30495,7350
 #: XXX laut mapillary Kopfsteinpflaster (schlechtes oder mäßiges?), allerdings ist zumindest der Gehweg Richtung Süden für Radfahrer freigegeben

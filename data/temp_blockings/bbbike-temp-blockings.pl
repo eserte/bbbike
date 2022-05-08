@@ -13616,7 +13616,7 @@ EOF
        text  => 'K 6910 Am Wasser OD Schwielowsee, zw. Baumgartenbrück u. OA Kanal- u. Straßenbau halbseitig gesperrt; Einbahnstraße 02.04.2009-30.05.2010 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; -19332,-5240 -19652,-5090 -19744,-4792
+	q4::inwork; -19313,-5239 -19413,-5156 -19654,-5108 -19762,-4865 -19777,-4780
 EOF
      },
      { from  => 1240005600, # 2009-04-18 00:00
@@ -14902,7 +14902,7 @@ EOF
        text  => 'K 6910 Am Wasser OD Schwielowsee, zw. Baumgartenbrück u. B 1 Kanal- u. Straßenbau Vollsperrung 16.07.2009-01.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -19332,-5240 -19112,-5226 -19013,-5247
+	q4::inwork -19313,-5239 -19112,-5226 -19013,-5247
 EOF
      },
      { from  => 1246744800, # 2009-07-05 00:00
@@ -15612,8 +15612,8 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: sunset-T06 vvv
-(Am Neuen Palais, direkter Weg)	2::night -15799,-1352 -15820,-1146 -15854,-656
-(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13857,-1040 -14159,-1119 -14173,-1013
+(Am Neuen Palais, direkter Weg)	2::night -15799,-1352 -15820,-1146 -15820,-1131 -15854,-656
+(Am Grünen Gitter, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -13829,-1034 -14159,-1119 -14173,-1013
 (Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14173,-1013 -14482,-1043 -14622,-1138 -14869,-1120 -15030,-1101 -15556,-1133 -15651,-1137 -15820,-1146
 (Lennestr. - Ökonomieweg, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14611,-1329 -14858,-1215 -14869,-1120
 (Affengang, Sanssouci): Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	2::night -14129,-1258 -14131,-1181 -14159,-1119
@@ -16319,7 +16319,7 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Erich-Steinfurth-Str. und Koppenstr.: Antikmarkt am Ostbahnhof, Sonntag 9-16 Uhr, nur Schieben möglich',
+       text  => 'Erich-Steinfurth-Str. und Koppenstr.: Antikmarkt am Ostbahnhof, Sonntag 9-16 Uhr (kann am ersten oder zweiten Sonntag im Monat ausfallen), nur Schieben möglich',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -16327,6 +16327,9 @@ EOF
 # REMOVED (temporarily removed) ---	q4::temp:clock 12608,11692 12453,11790 12378,11806
 # REMOVED --- #: next_check_id: CORONA-2020
 #: next_check_id: OSTBAHNHOF-2021
+#: by: https://www.berlin.de/special/shopping/flohmaerkte/1998249-1724959-grosser-antikmarkt-am-ostbahnhof.html
+#: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
+#: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
 #: last_checked: 2022-04-29
 #: check_frequency: 120d
@@ -16419,7 +16422,7 @@ EOF
        type  => 'handicap',
        source_id => '96900159',
        data  => <<EOF,
-	q4::inwork -19013,-5247 -19112,-5226 -19332,-5240
+	q4::inwork -19013,-5247 -19112,-5226 -19313,-5239
 EOF
      },
      { from  => 1253138400, # 2009-09-17 00:00
@@ -27544,7 +27547,7 @@ EOF
 	2::temp -12267,-2261 -12138,-2383
 	2::temp -12318,-2192 -12355,-2263 -12358,-2278 -12423,-2459 -12476,-2605 -12643,-2673 -12840,-2799
 	2::temp -12358,-2278 -12330,-2297 -12335,-2571 -12300,-2630 -12236,-2748
-	2::temp -12431,-2096 -12534,-2125 -12620,-2174 -12697,-2235 -12708,-2257 -12713,-2279 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573
+	2::temp -12431,-2096 -12534,-2125 -12620,-2174 -12655,-2202 -12697,-2235 -12708,-2257 -12713,-2279 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573
 	2::temp -12110,-1862 -12247,-1858 -12457,-1857 -12478,-1879 -12493,-1896
 	2::temp -12493,-1896 -12528,-1950
 	2::temp -12557,-1900 -12625,-1956 -12721,-2082 -12754,-2154
@@ -30560,7 +30563,7 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-05-03 (mapillary)
+#: last_checked: 2022-05-08
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 EOF
@@ -31154,7 +31157,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="5"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-05-06 vvv
+#: last_checked: 2022-05-08 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -32149,7 +32152,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-04-19 vvv
+#: last_checked: 2022-05-08 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -34593,6 +34596,7 @@ EOF
 #: last_checked: 2022-03-05 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
+#: note: Bellevueufer möglicherweise wieder offen?
 #: osm_watch: way id="4395450" version="25"
 	2::inwork 7031,12320 6694,12627
 #: osm_watch: way id="505363417" version="7"
@@ -34889,7 +34893,7 @@ EOF
 #: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
 #: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022)
 #: also_indoor: traffic (B)
-#: last_checked: 2022-04-28
+#: last_checked: 2022-05-08
 #: next_check: 2022-05-13
 	q4::inwork 11273,12301 11355,12331
 EOF
@@ -35113,6 +35117,16 @@ EOF
 #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 	q4::inwork 21984,6317 21856,6390
+EOF
+     },
+     { from  => $isodate2epoch->("2022-05-02 00:00:00"),
+       until => $isodate2epoch->("2022-05-22 18:00:00"),
+       text  => 'Eisenbahnbrücke Werder: wegen Bauarbeiten montags bis freitags tagsüber (6:30 bis 18:00 Uhr) gesperrt, bis zum 22.5.2022',
+       type  => 'gesperrt',
+       source_id => 'https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=4210',
+       data  => <<EOF,
+#: next_check_id: BRUECKEWERDER-2022
+	2::inwork -21227,-2017 -21125,-2012	
 EOF
      },
     );

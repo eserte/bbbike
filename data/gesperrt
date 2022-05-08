@@ -1002,6 +1002,7 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14191,-818 -14199,-707 -14205,-644
 Bahnhofstr.	1s -8417,-2862 -8410,-2884
 Bienenwinkel	1 -13335,1927 -13333,1957 -13227,1962 -13228,1927
+Luisenhof: durch Tore abgesperrt	2 -13558,-2841 -13570,-2795
 Segelfliegerdamm (Zernsdorf - Niederlehme)	2 28499,-10164 28454,-10018 28385,-9820 28312,-9695 27950,-8900 27754,-8708
 Königs Wusterhausen - Wernsdorf	1 27704,-8747 27719,-8666
 Am Tonberg (Zeuthen)	1 24593,-7405 24492,-7311 24416,-7241
@@ -1033,7 +1034,7 @@ Heinestr. (Zepernick)	1 17659,27135 17759,27229
 Lindenberger Weg	1 17193,24683 17226,24664 17228,24640
 Lindenberger Weg	1 17228,24640 17193,24683
 Wiesenweg (Schulzendorf)	1 23717,-3975 23618,-3854 23538,-3808 23466,-3768 23456,-3746
-Str. der Einheit (Caputh)	1 -16868,-6959 -16823,-6996
+Str. der Einheit (Caputh)	1 -16885,-6959 -16834,-6993
 Am Stern	1 26002,-3362 26002,-3342 26011,-3331 26029,-3326 26048,-3334 26046,-3365 26013,-3367 26002,-3362
 Am Bergpark	1 30589,-1736 30664,-1629 30758,-1606 30968,-1681
 August-Bebel-Str. (Eichwalde)	1s 25269,-3906 25322,-4042
@@ -2600,8 +2601,8 @@ tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20:-40 2292,4927
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20:-34 2175,4845
 tragen (Eisenbahnbrücke Templiner See)	0:60:-168 -15537,-4535
 tragen (Eisenbahnbrücke Templiner See)	0:60:-230 -15652,-4441
-tragen (Eisenbahnbrücke Caputh)	0:60:-167 -18002,-7496
-tragen (Eisenbahnbrücke Caputh)	0:60:-168 -17978,-7375
+tragen (Eisenbahnbrücke Caputh)	0:60:-60 -18002,-7496
+tragen (Eisenbahnbrücke Caputh)	0:60:-179 -18001,-7395
 tragen (Eisenbahnbrücke Werder, 27 Stufen)	0:60:-36 -21125,-2012
 tragen (Eisenbahnbrücke Werder, 27 Stufen)	0:60:87 -21227,-2017
 tragen (Elsensteg, 6 Stufen)	0:10:-141 13379,8703
@@ -3230,7 +3231,6 @@ Uferweg am Hohenzollernkanal: vorbereitende Bauarbeiten an der Tegeler Brücke, k
 Straße 77: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 15320,12375 15408,12394
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
 Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 6024,11978 6132,11984 6164,11947
-Mehlbeerenweg: Straße existiert nicht mehr	2::inwork 11923,11881 11940,11982
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s 10472,14632 10320,14608
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
@@ -3298,7 +3298,6 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 Berliner Str. (Mahlow): Straße gesperrt, neue Bahnunterführung wird gebaut	2:inwork 10776,-4460 10896,-4469 10956,-4470
 tragen (Treppe) oder Aufzug benutzen	0:35:-104 10860,-4393
 tragen (Treppe) oder Aufzug benutzen	0:35:-107 10888,-4384
-Neue Plantage: hier noch Baustelle	2:inwork -13100,-1411 -13017,-1426
 Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-1449 -12694,-1408 -12727,-1416
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449
 Tor	BNP:5:-106:trailer=10 10281,19364

@@ -993,7 +993,7 @@ Hermannswerder	1 -14306,-2867 -14044,-2918 -13765,-2974 -13733,-2967
 Neue Schˆnholzer Str.	1 10089,18180 10141,18030 10179,17772
 Kleine Kurstr.	1 10230,11839 10189,11773
 Schendelgasse	1 10644,13497 10703,13467 10767,13443
-Leipziger Str. (Potsdam)	1 -12431,-2096 -12534,-2125 -12620,-2174 -12697,-2235 -12708,-2257 -12713,-2279 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573 -13003,-2754 -13022,-2776 -13062,-2901
+Leipziger Str. (Potsdam)	1 -12431,-2096 -12534,-2125 -12620,-2174 -12655,-2202 -12697,-2235 -12708,-2257 -12713,-2279 -12743,-2387 -12756,-2437 -12779,-2467 -12796,-2488 -12879,-2573 -13003,-2754 -13022,-2776 -13062,-2901
 Mittelstreifen	3nocross::ignrte 6152,9136 6264,9156 6361,9175
 Grunewaldstr. -> M¸nchener Str.: Mittelstreifen	3::igndisp 6361,9175 6264,9156 6276,9042
 Grunewaldstr. -> M¸nchener Str.: Mittelstreifen	3::igndisp 6152,9136 6264,9156 6255,9194
@@ -1060,12 +1060,14 @@ Eisenzahnstr. -> Paulsborner Str.: Mittelstreifen	3::igndisp 3720,10027 3701,100
 Paulsborner Str. -> Eisenzahnstr.: Mittelstreifen	3::igndisp 3701,10047 3741,10097 3728,10125
 Eisenzahnstr. -> Paulsborner Str.: Mittelstreifen	3::igndisp 3728,10125 3741,10097 3852,10236
 Eisenhartstr.	1 -12637,-8 -12779,-294 -12821,-417
-Fuﬂg‰ngerzone	3nocross::ignrte -13556,-1140 -13410,-1101 -13289,-1071 -13173,-1039 -12999,-1000 -12883,-976
+Fuﬂg‰ngerzone	3nocross::ignrte -13556,-1140 -13525,-1131 -13410,-1101 -13289,-1071 -13173,-1039 -12999,-1000 -12883,-976
+Schopenhauerstr. -> Brandenburger Str.: Fuﬂg‰ngerzone	3::igndisp -13516,-1225 -13525,-1131 -13556,-1140
+Brandenburger Str. -> Schopenhauerstr.: Fuﬂg‰ngerzone	3::igndisp -13410,-1101 -13525,-1131 -13516,-1225
 Brandenburger Str. -> Hermann-Elflein-Str.: Fuﬂg‰ngerzone	3::igndisp -13289,-1071 -13410,-1101 -13392,-1196
-Brandenburger Str. -> Hermann-Elflein-Str.: Fuﬂg‰ngerzone	3::igndisp -13556,-1140 -13410,-1101 -13433,-991
+Brandenburger Str. -> Hermann-Elflein-Str.: Fuﬂg‰ngerzone	3::igndisp -13525,-1131 -13410,-1101 -13433,-991
 Hermann-Elflein-Str. -> Brandenburger Str.: Fuﬂg‰ngerzone	3::igndisp -13433,-991 -13410,-1101 -13289,-1071
 Hermann-Elflein-Str. -> Hermann-Elflein-Str.: Fuﬂg‰ngerzone	3::igndisp -13433,-991 -13410,-1101 -13392,-1196
-Hermann-Elflein-Str. -> Brandenburger Str.: Fuﬂg‰ngerzone	3::igndisp -13392,-1196 -13410,-1101 -13556,-1140
+Hermann-Elflein-Str. -> Brandenburger Str.: Fuﬂg‰ngerzone	3::igndisp -13392,-1196 -13410,-1101 -13525,-1131
 Hermann-Elflein-Str. -> Hermann-Elflein-Str.: Fuﬂg‰ngerzone	3::igndisp -13392,-1196 -13410,-1101 -13433,-991
 Brandenburger Str. -> Lindenstr.: Fuﬂg‰ngerzone	3::igndisp -13173,-1039 -13289,-1071 -13305,-1176
 Brandenburger Str. -> Lindenstr.: Fuﬂg‰ngerzone	3::igndisp -13410,-1101 -13289,-1071 -13264,-952
@@ -1594,7 +1596,7 @@ Friedbergstr.:	3 2793,10752 2766,10750 2673,10670
 Friedbergstr.:	3 2793,10752 2766,10750 2679,10931
 Friedbergstr.:	3 2793,10752 2766,10750 2845,10840
 Wilhelm-Staab-Str. (Potsdam)	1 -13001,-1329 -12988,-1265 -12981,-1222 -12961,-1105
-B‰ckerstr. (Potsdam)	1 -13314,-1226 -13287,-1231 -13203,-1246
+B‰ckerstr. (Potsdam)	1 -13314,-1226 -13287,-1231 -13202,-1250
 Brandenburger Str. (Potsdam)	1 -12801,-960 -12883,-976
 Stadtheide (Potsdam)	1 -15432,-2763 -15504,-2984 -15537,-3091 -15501,-3122
 Stormstr. (Potsdam)	1 -15243,-2459 -15168,-2529 -15060,-2626
@@ -2237,3 +2239,5 @@ Kettinger Str. [Siedlungsstraﬂe]	2:Anlieger 10116,949 10035,1000 9976,1042
 Kettinger Str. [Siedlungsstraﬂe]	2:Anlieger 10091,892 10011,942 9950,985
 Kettinger Str. [Siedlungsstraﬂe]	2:Anlieger 10035,1000 10011,942 9987,889
 Gotenburger Str.	1 9008,16799 8847,16870
+In der Feldmark - Marie-Curie-Ring: Poller	3 -18405,203 -18449,351 -18451,355
+In der Feldmark - Marie-Curie-Ring: Poller	3 -18451,355 -18449,351 -18405,203
