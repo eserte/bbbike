@@ -2766,21 +2766,9 @@ Straﬂe 54	N 12924,17676 12918,17736 12908,17807
 Straﬂe 56 (Heinersdorf)	N 12429,17685 12587,17603
 (KGA Freies Land, G-Weg)	NN 12908,17807 12764,17725 12630,17636
 # 
-#: XXX wird diese Straﬂe umbenannt? neuer Name "Rudolf-Spitzley-Str."
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3721 ("Benennungsabsicht")
-#: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036892092299/892092299/00059938/38-Anlagen/02/BenennungsabsichtfuerdieNummernstrasseStrasse1.pdf
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/29re.pdf/file?y=2014 (Benennung)
-#: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3835 (Vorlange zur Kenntnisnahme)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2014 (Widerspruch)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_12_0713_0788_online.pdf (Wirksamkeit der Umbenennung)
-#: XXX laut osm mittlerweile umbenannt, aber es h‰ngen noch keine Schilder (siehe Mapillary)
-#: add_fragezeichen: Wurde die Straﬂe 16 mittlerweile umbenannt?
-#: osm_watch: way id="45904921" version="13"
-#: last_checked: 2022-04-09 (mapillary)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2022-03-17
-Straﬂe 16 (Heinersdorf)	N 13031,17775 13034,17895
-(Straﬂe 16 - Eigerstr.)	NN 13034,17895 12995,17873 12945,17958
+# REMOVED (umbenannt, siehe Mapillary) --- #: XXX wird diese Straﬂe umbenannt? neuer Name "Rudolf-Spitzley-Str." --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3721 ("Benennungsabsicht") --- #: by: http://www.berlin.de/ba-pankow/bvv-online/___tmp/tmp/45081036892092299/892092299/00059938/38-Anlagen/02/BenennungsabsichtfuerdieNummernstrasseStrasse1.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/29re.pdf/file?y=2014 (Benennung) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3835 (Vorlange zur Kenntnisnahme) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/36re.pdf/file?y=2014 (Widerspruch) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_12_0713_0788_online.pdf (Wirksamkeit der Umbenennung) --- #: XXX laut osm mittlerweile umbenannt, aber es h‰ngen noch keine Schilder (siehe Mapillary) --- #: add_fragezeichen: Wurde die Straﬂe 16 mittlerweile umbenannt? --- #: osm_watch: way id="45904921" version="13" --- #: last_checked: 2022-04-09 (mapillary) --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2022-03-17 --- #: oldname: -202204: Straﬂe 16 (Heinersdorf)
+Rudolf-Spitzley-Str.	N 13031,17775 13034,17895
+(Rudolf-Spitzley-Str. - Eigerstr.)	NN 13034,17895 12995,17873 12945,17958
 # 
 #: osm.highway: service
 (Parkplatz Kaufland)	N 13031,17775 12981,17557
@@ -6809,7 +6797,7 @@ Verl‰ngerte Waldowallee	H 19468,8168 19558,8064 19666,7988 19843,7866 19927,7813
 #: oldname: -20110329: Kˆpenicker Allee
 Rudolf-R¸hl-Allee	H 21303,5826 21243,6046 21239,6063 20722,6971 20640,7122 20603,7189 20653,7289 20616,7292 20510,7325 20393,7404 20340,7468 20323,7529 20316,7637 20307,7689 20280,7749
 Kˆpenicker Allee	NN 20280,7749 20226,7846
-Kˆpenicker Allee	N 20226,7846 20096,8077 19990,8253 19898,8410 19813,8564 19697,8776 19610,8933 19575,8978 19500,9043 19392,9116 19267,9201 19206,9243 19195,9249 19109,9306 19020,9364 18939,9417
+Kˆpenicker Allee	N 20226,7846 20096,8077 19990,8253 19898,8410 19813,8564 19697,8776 19633,8892 19575,8978 19500,9043 19392,9116 19267,9201 19206,9243 19195,9249 19109,9306 19020,9364 18939,9417
 # REMOVED --- #: XXX neuer Straﬂenname: "Am alten Flugplatz", evtl. nur im Bereich der neuen Gartenstadt --- #: XXX fehlt in Berlin.coords.data --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6985 --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_31_3489_3616_online.pdf (Benennung) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_39_4845_4932_online.pdf (sp‰te Straﬂenlandwidmung) --- #: osm_watch: way id="24845022" version="16" --- #: last_checked: 2017-11-05 --- #: check_frequency: 45d
 #: note: am Anfang waren die Straﬂenschilder mit kleinem "alten" geschrieben, mittlerweile (sp‰testens 2020) wurde das korrigiert
 #: note: bei LOR ist die Schreibweise weiterhin "Am alten Flugplatz"
@@ -6831,7 +6819,7 @@ Anemonensteig (Karlshorst)	N 19843,7866 19892,7917 19922,7960 19952,8002 19980,8
 Birkenallee (Karlshorst)	N 19909,8242 19937,8200 19952,8174 20014,8071 20023,8056 20055,7985 20077,7786
 Birkenallee (Karlshorst)	N 20139,7775 20146,7806 20194,7830 20226,7846
 Kiesweg (Karlshorst)	N 20280,7749 20334,7753 20379,7848 20429,7977
-Biesenhorster Weg (Karlshorst)	N 19950,9234 19972,8935 19983,8861 20001,8738 20006,8706 20012,8670 20037,8508 20046,8448 20058,8355 20096,8077
+Biesenhorster Weg (Karlshorst)	N 19950,9234 19972,8935 19983,8861 20002,8730 20006,8706 20012,8670 20037,8508 20041,8480 20046,8448 20058,8355 20096,8077
 Drosselweg (Karlshorst)	N 19946,9328 20008,9340 20018,9262 20059,8951 20089,8706 20108,8583 20129,8444
 Amselweg (Karlshorst)	N 20091,9330 20150,8962 20172,8703 20173,8580 20174,8443
 Spechtweg (Karlshorst)	N 20006,8706 20089,8706 20172,8703

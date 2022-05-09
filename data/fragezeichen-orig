@@ -502,7 +502,7 @@ Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/vollrad-kuhn-beantwortete-beim-ersten-stadtratsfruehstueck-im-frei-zeit-haus-fragen-der-buerger_a201517 (Ende 2019/Anfang 2020)
 #: osm_watch: node id="29420748" version="5"
 #: source_id: 2147342788
-#: last_checked: 2022-04-12 (mapillary)
+#: last_checked: 2022-05-07 (mapillary)
 #: check_frequency: 90d
 Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623,15954 13653,15938
 #: by: ^^^
@@ -920,7 +920,7 @@ Grünbergallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 20783,-5
 # REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6054 (Schlussbericht: negativ) --- #: XXX Fh.2 --- #: last_checked: 2019-04-06 --- #: check_frequency: 90d --- Fürstenwalder Damm: Einrichtung einer Radverkehrsanlage auf der Südseite durch den Forst geplant	?::projected 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633 24871,5699 25015,5751
 # 
 #: XXX Fh.9
-#: last_checked: 2022-01-10 (mapillary (entfernt))
+#: last_checked: 2022-03-19 (mapillary (entfernt))
 #: check_frequency: 120d
 zwischen Fürstenwalder Damm und Müggelseedamm (Charlotte-E-Pauly-Str.): Verbesserung der Befahrbarkeit geplant	?::projected 25014,5751 25015,5751 25015,5729 25009,5593 25002,5296 25018,5294 25018,4987
 # 
@@ -1414,7 +1414,7 @@ Im Eck: Verbesserung -> evtl. Asphaltierung?	?::projected 10276,906 10232,1015 1
 # REMOVED --- #: XXX es laufen gerade Ausbesserungsarbeiten, aber anscheinend bleibt es bei Verbundsteinpflasterradwegen
 #: source_id: 2147346424 (Fernwärmeleitungsbau, bis 1.6.2021) (inaktiv)
 #: source_id: viz2021:13.515721,52.420847,24.08.2021,11:53 (Fernwärmearbeiten, bis 26.11.2021) (mittlerweile bis 23.12.2021) (mittlerweile bis 24.12.2021) (inaktiv)
-#: last_checked: 2022-03-12 (mapillary)
+#: last_checked: 2022-03-13 (mapillary)
 #: check_frequency: 60d
 # REMOVED (hier neues Verbundsteinpflaster, evtl. passiert an dieser Stelle nichts) --- Neudecker Weg: Verbesserung -> Radspuren oder Asphaltierung des Radwegs? ("Teilabschnitte")	?::projected 16908,1217 16975,1262 17120,1394 17211,1469 17323,1494 17526,1540
 Neudecker Weg: Verbesserung -> Radspuren oder Asphaltierung des Radwegs? ("Teilabschnitte")	?::projected 17526,1540 17855,1629 18047,1710 18199,1811 18361,1926 18396,1990
@@ -2185,7 +2185,7 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 #: by: https://api.fixmyberlin.de/api/projects/322
 #: osm_watch: way id="488431238" version="6"
 #: osm_watch: way id="488430846" version="8"
-#: last_checked: 2022-04-24 (mapillary)
+#: last_checked: 2022-05-07 (mapillary)
 #: check_frequency: 30d
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16079 11618,16183
 # REMOVED (hier realisiert) --- Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11618,16183 11666,16260 11698,16311 11727,16358
@@ -4352,13 +4352,7 @@ Bahnhofstr.: "Abordnung" der Benutzungspflicht geplant	?::projected 22467,6135 2
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-09-2018.pdf
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll_fahrrat_pankow17-02-2021.pdf (Umsetzung 2021)
-#: XXX zum Beispiel: wird das Fahren auf der linken Seite explizit verboten?
-#: note: mittlerweile existieren Hinweisschilder zum Fernradweg Berlin-Usedom *hinter* der Kreuzung
-#: last_checked: 2022-01-24 (kartaview)
-#: check_frequency: 120d
-zur Pasewalker Straße: wird sich bei der neuen Wegweisung etwas ändern?	?; 11950,18529 11934,18576
+# REMOVED (vermutlich bleibt es beim Schild hinter der Kreuzung) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-09-2018.pdf --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll_fahrrat_pankow17-02-2021.pdf (Umsetzung 2021) --- #: XXX zum Beispiel: wird das Fahren auf der linken Seite explizit verboten? --- #: note: mittlerweile existieren Hinweisschilder zum Fernradweg Berlin-Usedom *hinter* der Kreuzung --- #: last_checked: 2022-01-24 (kartaview) --- #: check_frequency: 120d --- zur Pasewalker Straße: wird sich bei der neuen Wegweisung etwas ändern?	?; 11950,18529 11934,18576
 # 
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/fahrrat-marzahn-hellersdorf-fordert-kreuzungsumbau-mehr-abstellanlagen-und-eine-fahrradstrasse_a292385 (erstmal als Popup-Radweg?)
@@ -4621,7 +4615,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1113179.php (Beteiligung bis 31.8.2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10119 (Einwohnerfrage)
 #: osm_watch: way id="4685729" version="21"
-#: last_checked: 2022-04-10
+#: last_checked: 2022-05-09
 #: check_frequency: 60d
 Waldeyerstr.: wird es hier zu weiteren Einschränkungen für den Radverkehr kommen?	? 15058,12329 15003,12241
 # 
@@ -5358,7 +5352,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 18
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2022-05-07
+#: last_checked: 2022-05-09
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: by: https://api.fixmyberlin.de/api/projects/328 (Grünmarkierung + Verbreiterung, teilweise Leitboys)
@@ -5576,7 +5570,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5913
 #: by: https://www.berliner-woche.de/karow/c-verkehr/der-ueberweg-soll-kommen_a331769
-#: last_checked: 2022-04-23 (mapillary)
+#: last_checked: 2022-05-07 (mapillary)
 #: check_frequency 90d
 #: priority: #D
 Blankenburger Chaussee Höhe Beuthener Str./Straße 43: wird hier ein Zebrastreifen realisiert?	? 15057,22288 15094,22290 15134,22293
@@ -7391,34 +7385,39 @@ Friedhof Segen: Wohngebiet entsteht	?::projected 13581,16968 13522,17021 13687,1
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8491
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9230
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Auslegung eines Bebauungsplan-Entwurfs)
+#: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/bebauungsplaene/bebauungsplan.1199690.php
+#: by: https://www.berlin.de/bebauungsplan-lichtenberg/beteiligung/xvii50aba_planzeichnung_neu.pdf
 #: last_checked: 2022-01-26 vvv
 #: check_frequency: 360d vvv
 #: XXX Planstraße 2:
 #: osm_watch: way id="646453312" version="2"
-Arnbrucker Str.	? 19610,8933 19667,8965 19728,8998
+Arnbrucker Str.	? 19633,8892 19691,8921 19667,8965 19704,8984
 #: XXX Planstraße 3:
 #: osm_watch: way id="640313625" version="2"
-Bischofsmaiser Str.	? 19667,8965 19754,8809 19840,8649
+Bischofsmaiser Str.	? 19691,8921 19754,8809 19840,8649
 #: XXX Planstraße 4:
 #: osm_watch: way id="640313641" version="2"
-Langdorfer Str.	? 19705,9039 19728,8998 19815,8844 19903,8684 19956,8587 19977,8566 20037,8508
+# REMOVED (hier nicht mehr) --- Langdorfer Str.	? 19705,9039 19728,8998 19815,8844
+Langdorfer Str.	? 19815,8844 19903,8684 19956,8587 19977,8566 20037,8508
 #: XXX Planstraße 5:
 #: osm_watch: way id="640313638" version="2"
-Osserweg	? 19806,9040 19891,8887 19980,8727 20012,8670
+Osserweg	? 19806,9040 19891,8887 19980,8727
+# REMOVED (hier nicht mehr) --- Osserweg	? 19980,8727 20012,8670
 #: XXX Planstraße 6:
 #: osm_watch: way id="640313631" version="3"
 Rachelweg	? 19863,9073 19949,8920 19983,8861
 #: XXX Planstraße 7: 
 #: osm_watch: way id="640313634" version="3"
-Ruhmannsfeldener Str.	? 19840,8649 19855,8657 19903,8684 19980,8727 20001,8738
+Ruhmannsfeldener Str.	? 19840,8649 19855,8657 19903,8684 19980,8727 20002,8730
 #: XXX Planstraße 8:
 #: osm_watch: way id="640313622" version="2"
-Prackenbacher Str.	? 19855,8657 19937,8533 19962,8486
+Prackenbacher Str.	? 19855,8657 19937,8533 19986,8456
 #: XXX Die kleine Verbindungsstraße zwischen Langdorfer Straße und Prackenbacher Straße:
 #: osm_watch: way id="640313620" version="2"
 Lusenpfad	? 19937,8533 19977,8566
 #: XXX der Stadtplatz an der Arnbrucker Straße:
 Arberlandplatz	? 19705,9039 19728,8998
+Verlegung der Wiesengrundstr.	? 19964,8447 19986,8456 20041,8480
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -8277,7 +8276,7 @@ Bebauungsplan 3-41: Straßen werden entstehen; genaue Lage, Qualität?	?::projecte
 #: by: https://mein.berlin.de/vorhaben/2021-00212/
 #: osm_watch: way id="37588146" version="11"
 #: XXX auch interessant: möglicher Uferweg unter der Salvador-Allende-Brücke bis zum Katzengrabensteg
-#: last_checked: 2022-04-16 (mapillary)
+#: last_checked: 2022-05-07 (mapillary)
 #: check_frequency: 720d
 Bebauungsplan 9-53 (Friedrichshagener Str. (Köpenick)): vermutlich entstehen hier neue Straßen	?::projected 22913,5273 22928,5071 23073,5176 23396,5176 23381,5291 23294,5270 22913,5273
 # 
@@ -8369,7 +8368,7 @@ Bebauungsplan XV-11 (Hasselwerderstr....): Planstraßen sowie ein Uferweg werden 
 #: by: https://www.berliner-woche.de/heinersdorf/c-bauen/am-ortskern-sollen-etwa-500-neue-wohnungen-entstehen_a335642
 #: by: https://www.berliner-woche.de/heinersdorf/c-bauen/auf-der-frueheren-gaertnerei-wird-bald-gebaut_a337076
 #: XXX und was wird mit dem südlichen Abschnitt der Hödurstr.?
-#: last_checked: 2021-06-10 (bw)
+#: last_checked: 2022-05-07 (mapillary)
 #: check_frequency: 360d
 Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverkehrs	?::projected 12566,18275 12717,18322 12847,18284 12885,18329
 # 

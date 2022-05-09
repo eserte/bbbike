@@ -18422,17 +18422,18 @@ EOF
 	2::temp 7429,12070 7031,12024 6884,12006
 EOF
      },
-     { from  => $isodate2epoch->("2019-06-27 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-06-30 23:59:59"),
+     { from  => $isodate2epoch->("2022-06-30 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-07-03 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6, start => "2021-10-25T00:00:00"]],
        # früher Bergmannstraßenfest
-       text  => 'Kreuzbergstr.: Veranstaltung (Kreuzbergstraßenfest), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (28. Juni 2019 bis 30. Juni 2019)',
+       text  => 'Kreuzbergstr.: Veranstaltung (Kreuzbergstraßenfest), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (01.07.2022 bis 03.07.2022)',
        type  => 'gesperrt',
        source_id => 'https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html (8.-10.10.2021, als "Kreuzberg-Festival", vermutlich auf Kreuzbergstraße)
 #: by: https://kreuzberg-festival.de/
+#: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html?date=20220509 (1.-3. Juli 2022)
 	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
 	3 9000,9509 8970,9323 9007,9264
 	3 9007,9264 8970,9323 9000,9509
@@ -31157,7 +31158,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="5"
 #: osm_watch: way id="934995901" version="6"
-#: last_checked: 2022-05-08 vvv
+#: last_checked: 2022-05-09 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33588,7 +33589,7 @@ EOF
        source_id => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
        data  => <<EOF,
 #: source_id: viz2021:13.37876,52.56731,02.05.2022,16:04 (inaktiv)
-#: source_id: viz2021:13.37876,52.56731,06.05.2022,14:35 (zweiter Eintrag)
+#: source_id: viz2021:13.37876,52.56731,06.05.2022,14:35 (zweiter Eintrag) (wieder inaktiv)
 	q4::inwork 8555,17928 8415,17902
 EOF
      },
@@ -34735,7 +34736,8 @@ EOF
 #: by: https://pbs.twimg.com/media/FMrYBZQXEAAQlaA?format=jpg&name=large
 #: note: es existiert ein etwas breiterer Fußgängerschutztunnel, etwa 50m lang
 #: XXX bis wann gehen die Bauarbeiten?
-#: also_indoor: traffic (G(partial),B)
+#: also_indoor: traffic (G(partial),B(partial))
+#: source_id: bvg2021:140#BVG297945_0 (bis 1.8.2022)
 #: last_checked: 2022-04-29 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-07-01 vvv
@@ -35084,25 +35086,29 @@ EOF
 EOF
      },
      { from  => 1651960800, # 2022-05-08 00:00
-       until => $isodate2epoch->("2022-05-30 13:00:00"), # 1653861600, # 2022-05-30 00:00
-       text  => 'Rennbahnstr.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, vom 9.5.2022 bis 30.5.2022 ',
+       until => $isodate2epoch->("2022-07-03 13:00:00"), # 1653861600, # 2022-05-30 00:00
+       text  => 'Rennbahnstr.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, vom 9.5.2022 bis 3.7.2022 ',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/wp-content/uploads/BA2.jpg',
        data  => <<EOF,
 #: next_check_id: BERLINERALLEE-2022
 #: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt)
+#: by: https://nitter.net/VIZ_Berlin/status/1523659832569389058#m (Rennbahnstr. bis 3.7.2022 gesperrt)
 	q4::inwork 14558,16907 14528,16910
 	q3::inwork 14528,16910 14341,17030
 EOF
      },
      { from  => 1651986000, # 2022-05-08 07:00
        until => 1652454000, # 2022-05-13 17:00
-       text  => 'Karl-Marx-Str.: zwischen Weichselstr. und Fuldastr. Bauarbeiten, Fahrbahn Richtung Südosten gesperrt, evtl. sind auch Radfahrer betroffen, vom 09.05.2022 07:00 bis 13.05.2022 17:00 ',
+       text  => 'Karl-Marx-Str.: zwischen Weichselstr. und Fuldastr. Bauarbeiten, Fahrbahn Richtung Südosten gesperrt, vermutlich sind auch Radfahrer betroffen, vom 09.05.2022 07:00 bis 13.05.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.431455,52.483123,09.05.2022,07:00',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2022/05/verkehrsvorschau-090522/
+#: by: https://nitter.net/VIZ_Berlin/status/1523516862247718914#m
+#: by: https://nitter.net/pic/media%2FFSDxLnfWUAAAicX.jpg%3Fname%3Dorig (laut Plan keine gesonderte Verkehrsführung für Radfahrer vorgesehen)
 #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
+#: also_indoor: traffic (H,B)
 #: next_check: 2022-05-09
 	q4::inwork; 12330,8636 12494,8501
 EOF
@@ -35127,6 +35133,18 @@ EOF
        data  => <<EOF,
 #: next_check_id: BRUECKEWERDER-2022
 	2::inwork -21227,-2017 -21125,-2012	
+EOF
+     },
+     { from  => 1652122429, # 2022-05-09 20:53
+       until => 1706716800, # 2024-01-31 17:00
+       text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024',
+       type  => 'handicap',
+       source_id => 'viz2021:13.492858,52.63663,09.05.2022,11:58',
+       data  => <<EOF,
+#: next_check_id: WILTBERG-2022
+#: by: https://nitter.net/VIZ_Berlin/status/1523578356306169857#m
+#: by: https://nitter.net/pic/media%2FFSTWWSqXIAAPomO.jpg%3Fname%3Dorig
+	q4::inwork; 16166,25767 16121,25818
 EOF
      },
     );
