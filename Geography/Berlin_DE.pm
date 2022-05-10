@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2006,2015,2016,2018,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2006,2015,2016,2018,2020,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -197,6 +197,9 @@ sub parse_street_type_nr {
     } elsif ($strname =~ /mauer.*weg/i) {
 	$type = 'M';
 	$image = 'M.png';
+    } elsif ($strname =~ /havelradweg/i) {
+	$type = 'H';
+	$image = 'H.png';
     } elsif ($strname =~ /havellandradweg/i) {
 	$type = 'HVL';
 	$image = 'HVL.gif';
@@ -204,7 +207,7 @@ sub parse_street_type_nr {
 	$type = 'SPR';
 	$image = 'SPR.gif';
     } elsif ($strname =~ /hofjagdweg/i) {
-	$type = 'H';
+	$type = 'HOF';
     } elsif ($strname =~ /uckerm.*rkischer\s+.*rundweg/i) {
 	$type = 'UMR';
 	$image = 'UMR.gif';
