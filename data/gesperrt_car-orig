@@ -143,7 +143,7 @@ Wichmannstr.	1 6549,11015 6681,10959 6824,10904
 Burggrafenstr.	1 6266,10927 6278,10949 6472,11049
 Lützowufer	1 6873,11011 6742,11099 6626,11178 6582,11202
 Mulackstr.	1 10313,13568 10406,13543 10535,13509 10633,13474
-Kirchhofstr.	1 13188,7590 13117,7471 13029,7353
+Kirchhofstr.	1 13179,7613 13173,7567 13117,7471 13029,7353
 Prenzlauer Allee/Sredzkistr.	3nocross 11655,14697 11633,14631 11572,14452
 Gärtnerstr.	1 14211,11552 14247,11681 14272,11775
 Wismarplatz	1 14395,11753 14416,11815
@@ -206,7 +206,7 @@ Landsberger Allee: Straßenbahn	3nocross 21398,15671 21475,15705 21584,15753 2170
 Topsstr.	1 10607,15142 10883,15251
 Schönhauser Allee	3nocross 10902,15422 10917,15525 10941,15697
 Am Kupfergraben	1 9754,12775 9815,12705 9870,12657 9900,12643 9919,12613
-Uthmannstr.	1 13150,7845 12914,7785
+Uthmannstr.	1 13156,7839 12916,7775
 Herrnhuter Str.	1 12898,7832 13103,7889
 Ganghoferstr.	1 12779,8188 12805,8194 12873,8218 12911,8232
 Richardstr.	1 12870,8087 12797,8168 12779,8188
@@ -1356,7 +1356,7 @@ Petrusweg	2:Anlieger 15225,1553 15217,1463
 Lappiner Str.	1 20418,12699 20545,12683
 # 
 #: note: für Radfahrer existiert eine Furt
-Karl-Marx-Str.: Mittelstreifen	3nocross 12892,7850 12898,7832 12914,7785
+Karl-Marx-Str.: Mittelstreifen	3nocross 12892,7850 12898,7832 12916,7775
 # 
 #: note: für Radfahrer existieren zwei Furten (Berolinastr., Schillingstr.)
 Karl-Marx-Allee: Mittelstreifen	3nocross 11589,12768 11635,12745 11678,12727 11976,12595
@@ -1574,4 +1574,6 @@ Kettinger Str. [Siedlungsstraße]	2:Anlieger 10035,1000 10011,942 9987,889
 Gotenburger Str.	1 9008,16799 8847,16870
 # 
 In der Feldmark - Marie-Curie-Ring: Poller	3 * -18449,351 *
+# 
+Karl-Marx-Platz	1 12972,7602 13100,7626
 # 

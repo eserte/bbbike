@@ -1404,6 +1404,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        {
          'data' => '#: by: https://www.berliner-frauenlauf.de/?date=20210404 (geplanter Termin: vom 13. bis 16. Mai 2021)
 #: by: https://www.berlin.de/events/2101687-2229501-avonrunning-berliner-frauenlauf.html (2021 abgesagt)
+#: by: https://viz.berlin.de/2022/05/laufveranstaltungen/
 # REMOVED --- #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -1478,7 +1479,34 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.die-classic-days-berlin.de/programm-2/
+#: by: https://www.berlin.de/events/2902692-2229501-classic-days-berlin.html (voraussichtlich 12.+13.6.2021)
+#: by: https://www.die-classic-days-berlin.de/programm-2/ (wird auf 2022 verschoben)
+#: by: https://www.die-classic-days-berlin.de/programm-2/?date=20220416 (geplant: 18. und 19. Juni 2022)
+#: note: kann im Juni oder Juli stattfinden
+# REMOVED --- #: tempex: 20170616T0400-20170619T0400
+	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
+',
+         'from' => 1655344800,
+         'id' => 2439,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              17,
+                              'months',
+                              5,
+                              'start',
+                              '2021-06-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'IM_025248',
+         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 17.06.2022 bis 20.06.2022 früh',
+         'type' => 'handicap',
+         'until' => 1655694000
+       },
        undef,
        undef,
        undef,
@@ -2865,7 +2893,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: also_indoor: traffic (G)
-#: osm_watch: way id="934995899" version="5"
+#: osm_watch: way id="934995899" version="6"
 #: osm_watch: way id="934995901" version="6"
 #: last_checked: 2022-05-09 vvv
 #: check_frequency: 14d vvv
@@ -4210,7 +4238,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: XXX Bleibt es bei der möglichen Durchfahrt?
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2022-05-04
+#: last_checked: 2022-05-10
 	2 14249,8075 14239,8095 14247,8254 14229,8278
 ',
          'from' => undef,
@@ -4222,7 +4250,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar)
-#: last_checked: 2022-05-07
+#: last_checked: 2022-05-10
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -4422,9 +4450,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: by: https://viz.berlin.de/2022/05/verkehrsvorschau-090522/
 #: by: https://nitter.net/VIZ_Berlin/status/1523516862247718914#m
 #: by: https://nitter.net/pic/media%2FFSDxLnfWUAAAicX.jpg%3Fname%3Dorig (laut Plan keine gesonderte Verkehrsführung für Radfahrer vorgesehen)
-#: add_fragezeichen: Sind Radfahrer tatsächlich betroffen?
 #: also_indoor: traffic (H,B)
-#: next_check: 2022-05-09
+# REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen? --- #: next_check: 2022-05-09
 	q4::inwork; 12330,8636 12494,8501
 ',
          'from' => 1651986000,

@@ -73,7 +73,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr.
-#: last_checked: 2022-05-05
+#: last_checked: 2022-05-10
 #: check_frequency: 90d
 #: next_check: 2022-06-30
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -833,7 +833,7 @@ Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::proj
 # 
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: source_id: 2147342868 (inaktiv)
-#: last_checked: 2022-04-18
+#: last_checked: 2022-05-10
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 # 
@@ -1697,7 +1697,7 @@ Seegefelder Str.: Umbau/Sanierung des Radwegs	?::projected -5257,14668 -5097,145
 #: XXX unklar: auf der fixmyberlin-Karte ist der Fischerhüttenweg (Waldweg im Grunewald!) markiert, vermutlich fälschlicherweise
 #: osm_watch: way id="718428128" version="2"
 #: osm_watch: way id="4740663" version="38"
-#: osm_watch: way id="718428121" version="5"
+#: osm_watch: way id="718428121" version="6"
 #: last_checked: 2022-03-26
 #: check_frequency: 150d
 Fischerhüttenstr.: vielleicht Radstreifen?	?::projected 534,3149 251,3325 137,3396 17,3471 -135,3567 -216,3623 -267,3657 -329,3702 -432,3788 -580,3912 -762,4054 -843,4116 -968,4184 -1096,4267 -1204,4328 -1245,4351 -1297,4385
@@ -1831,7 +1831,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: osm_watch: way id="110450333" version="14"
 #: source_id: 2147343384
-#: last_checked: 2022-05-04
+#: last_checked: 2022-05-10
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13892,9365 13849,9310
 # 
@@ -2325,7 +2325,7 @@ Togostr.: Ausweisung als Fahrradstraße, auch im nördlichen Abschnitt?	? 5531,167
 #: source_id: LMS-BR_r_LMS-BR_151882_LMS-BR_72
 # REMOVED --- #: source_id: bvg2021:124#BVG216059_0
 #: osm_watch: way id="24720225" version="18"
-#: osm_watch: way id="161677837" version="15"
+#: osm_watch: way id="161677837" version="19"
 #: also_indoor: traffic (ex-G(falsch),H,ex-B)
 #: add_fragezeichen: Gibt es mitterweile durchgängige Radstreifen zwischen Alt-Heiligensee und Ruppiner Chaussee?
 #: priority: #A
@@ -2611,7 +2611,7 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="24"
-#: last_checked: 2022-03-16
+#: last_checked: 2022-05-10
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12049,9781 12053,9793
 # 
@@ -2657,7 +2657,7 @@ Märkische Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projec
 #: osm_watch: way id="764003865" version="4"
 #: osm_watch: way id="764003862" version="18"
 #: priority: #D
-#: last_checked: 2022-03-16 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
+#: last_checked: 2022-05-10 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
 #: check_frequency: 60d vvv
 Karl-Marx-Str.: Markierung von Schutzstreifen (geschützt)	?::inwork; 11831,8989 11880,8955 11998,8872 12063,8826 12150,8764
 Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12150,8764 12318,8645 12330,8636
@@ -4139,7 +4139,7 @@ Ohmstr.: verkehrsberuhigter Bereich geplant	?::projected 11378,11856 11324,11689
 #: by: https://twitter.com/BerlinNkl/status/1389199643800752136 (ab 7.5.2021 13h)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/initiative-fordert-weitere-massnahmen-im-gesamten-kiez_a310050
 #: source_id: LMS-BR_r_LMS-BR_237903_LMS-BR_72
-#: last_checked: 2022-01-28
+#: last_checked: 2022-05-10
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-05-07
 Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::projected 12972,7602 13100,7626 12987,7560
@@ -5556,7 +5556,7 @@ Conrad-Blenkle-Str.: südlich der Rudi-Arndt-Str. soll ein Zebrastreifen entstehe
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2022-05-01
+#: last_checked: 2022-05-10
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -6343,8 +6343,9 @@ Am Alten Lokschuppen: bauzeitliche Sperrung geplant	? 15708,11193 15752,11115 15
 #: by: https://www.berliner-woche.de/reinickendorf/c-bauen/sorge-um-den-schaeferseepark_a314889
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1171119.php
 #: by: https://berliner-abendblatt.de/2022/01/30/neue-baeume-fuer-den-schaeferseepark/
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1204767.php (wird noch saniert?)
 #: XXX Fertigstellung 2021 vvv
-#: last_checked: 2022-01-22 vvv
+#: last_checked: 2022-05-10 (Pressemitteilung) vvv
 #: check_frequency: 90d vvv
 # REMOVED (Termin wird überzogen)  --- #: next_check: 2021-12-31 vvv
 Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7253,17467 7222,17471 7173,17591 7189,17666 7185,17681
@@ -6631,7 +6632,7 @@ zum Am Gutshof: hier soll ein Hinweisschild aufgestellt werden	? 17887,18975 178
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10213 (Antrag)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10228 (Anfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10239 (Antrag)
-#: last_checked: 2022-05-01
+#: last_checked: 2022-05-10
 #: check_frequency: 360d
 Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 11049,10816 11159,10769 11220,10744 11275,10723 11463,10642 11690,10543 11721,10530 11754,10516 11949,10414
 # 
@@ -8763,7 +8764,6 @@ Grüntal - Melchow: Qualität?	? 32000,38200 32099,38418 31773,39105 31727,39438 3
 #: XXX: laut osm: residential
 Tempelfelde: Qualität?	? 30837,34162 31057,34421
 # REMOVED --- #: XXX: laut "Berliner Umland" gut geeignet; bei osm gibt es diesen Weg nicht --- Bei Börnicke: Qualität?	? 26826,28824 27067,29378
-Werneuchen - Altlandsberg: Qualität? Ist hier auch asphaltiert?	? 32722,25286 32695,25270 32435,24545
 Werneuchen - Wesendahl: Qualität im Abschnitt außerhalb von Werneuchen?	? 34906,24333 35610,24040 37250,23080 37588,22679
 Gamengrund - Tiefensee: Qualität?	? 40135,28824 40165,28951 40130,29073 40186,29180 40028,29703 39750,29812
 Gamensee - Tiefensee (südl.): Qualität?	? 40206,30002 40160,30018 40043,30084 39988,30216 39662,30500

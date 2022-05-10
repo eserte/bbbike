@@ -238,7 +238,6 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
 Karl-Marx-Platz	1 13100,7626 12987,7560
-Karl-Marx-Platz	1s 12972,7602 13100,7626
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
 Takustr.	1 2958,5598 2909,5674
@@ -898,6 +897,7 @@ Ehrenfelsstr.	1s 18737,8686 18778,8663
 Mellenseestr. [Wohngebiet]	1 17587,9655 17633,9793 17633,9898
 Mellenseestr. [Wohngebiet]	1 17777,9649 17738,9822 17738,9922
 Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
+Mühsamstr.	1 13818,12897 13830,12907
 Lilli-Henoch-Str.	1s 12357,15020 12388,14926
 (Weydemeyerstr.): durch Tore abgesperrt	2 11933,12701 11971,12785
 Falkenberger Chaussee (Richtungsfahrbahn)	1::igndisp 17482,17844 17577,17910 17675,17971
@@ -912,6 +912,7 @@ Birkbuschstr. - Wolfensteindamm	1 4794,5161 4810,5134 4822,5114
 Mittelstreifen	3nocross::ignrte 6239,15553 6348,15423 6375,15391
 Amrumer Str. -> Ost-West-Str., Virchow-Klinikum: Mittelstreifen	3::igndisp 6375,15391 6348,15423 6265,15349
 Ost-West-Str., Virchow-Klinikum -> Amrumer Str.: Mittelstreifen	3::igndisp 6265,15349 6348,15423 6239,15553
+Sinsheimer Weg	1s 13774,8849 13687,8734
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1181,7 +1182,7 @@ Stallschreiberstr.	1 10482,11398 10615,11240 10674,11170
 Jahnstr.	1s 11500,9116 11509,9392
 Waldweg	1s 25496,2429 24981,2580
 Neue Schönhauser Str.	1s 10527,13257 10423,13215 10310,13227
-Kirchhofstr.	1s 13188,7590 13117,7471 13029,7353
+Kirchhofstr.	1s 13179,7613 13173,7567 13117,7471 13029,7353
 Björnsonstr	1s 10209,16674 10197,16528
 Ibsenstr.	1s 10295,16667 10209,16674
 Eichhornstr.	1s 8232,11414 8253,11306 8280,11296
@@ -1996,6 +1997,9 @@ Bödikerstr. -> Stralauer Allee: unbequem passierbare Straße	3::igndisp 14447,104
 Mittelstreifen	3nocross::ignrte 11221,12250 11300,12241 11347,12223
 Stralauer Str. -> Dircksenstr.: Mittelstreifen	3::igndisp 11221,12250 11300,12241 11273,12301
 Dircksenstr. -> Stralauer Str.: Mittelstreifen	3::igndisp 11273,12301 11300,12241 11347,12223
+Mittelstreifen	3nocross::ignrte 12152,9015 12078,9055 12012,9092
+Sonnenallee -> Friedelstr.: Mittelstreifen	3::igndisp 12012,9092 12078,9055 12074,9217
+Friedelstr. -> Sonnenallee: Mittelstreifen	3::igndisp 12074,9217 12078,9055 12152,9015
 unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross::ignrte 12670,8679 12736,8629 12765,8605
 Sonnenallee -> Schönstedtstr.: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12765,8605 12736,8629 12643,8533
 Schönstedtstr. -> Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3::igndisp 12643,8533 12736,8629 12670,8679

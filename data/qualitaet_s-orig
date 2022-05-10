@@ -88,7 +88,7 @@ Stuttgarter Str.: Kopfsteinpflaster	Q2 13331,8283 13166,8423
 Drübecker Weg: Kopfsteinpflaster	Q2 13909,8471 13812,8530
 Kelbraer Str.: Beton	Q0 13830,8381 13909,8471
 Brockenstr.: Kopfsteinpflaster	Q2 13575,8593 13687,8734
-Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz möglich	Q2 13687,8734 13774,8849
+Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz (Verbundsteinpflaster) möglich	Q2 13687,8734 13774,8849
 Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 Donaustr.: Asphalt	Q0 12198,8887 12392,8724 12551,8612 12643,8533
 Donaustr.: Asphalt	Q0 12150,8884 12198,8887
@@ -628,16 +628,17 @@ Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 # REMOVED (mittlerweile wurden schadhafte Stellen ausgebessert) --- Karl-Marx-Str.: schadhafter Asphalt im Bereich des geschützten Radstreifens	Q1+; 11880,8955 11998,8872 12063,8826 12156,8760
 Karl-Marx-Str.: Asphalt mit Schäden	Q0- 12330,8636 12494,8501
 Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12972,7602 13100,7626
-Karl-Marx-Platz: Kopfsteinpflaster	Q2 13100,7626 13130,7633 13177,7644
-Richardplatz: Kopfsteinpflaster	Q2 13177,7644 13288,7653
+Karl-Marx-Platz: Kopfsteinpflaster	Q2 13100,7626 13130,7633 13174,7644
+Richardplatz: Kopfsteinpflaster	Q2 13174,7644 13288,7653
 Richardplatz: Kopfsteinpflaster, Fugen mit Asphalt vergossen	Q2+ 13288,7653 13378,7695
 Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12987,7560 13100,7626
-Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13295,7627
+Richardplatz: Kopfsteinpflaster	Q2 13179,7613 13295,7627
 Richardplatz: Kopfsteinpflaster, OK	Q2+ 13295,7627 13392,7648
 Richardplatz: Kopfsteinpflaster	Q2 13392,7648 13417,7654 13424,7680 13416,7712 13378,7695
+Schudomastr.: Kopfsteinpflaster	Q2 13424,7680 13455,7673
 Richardstr.: Kopfsteinpflaster, OK	Q1 12779,8188 12797,8168
 Richardstr.: Asphalt	Q0 12797,8168 12870,8087 13045,7938
-Richardstr.: Kopfsteinpflaster	Q2 13045,7938 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742
+Richardstr.: Kopfsteinpflaster	Q2 13045,7938 13085,7904 13103,7889 13156,7839 13226,7775 13245,7742
 Richardstr.: Asphalt	Q0 13245,7742 13278,7673
 Richardstr.: Kopfsteinpflaster	Q2 13278,7673 13288,7653
 #: note: hier außerdem ein breites "Moabiter Kissen"
@@ -835,7 +836,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2022-03-16
+#: last_checked: 2022-05-10
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -851,7 +852,8 @@ Alt-Marienfelde/Buckower Chaussee: Kopfsteinpflaster	Q2 8742,475 8533,525 8482,5
 Alt-Marienfelde: Asphalt	Q0 7909,775 7857,802
 Alt-Marienfelde: schlechtes Kopfsteinpflaster	Q3 8000,729 8194,617 8250,655
 Ratiborstr.: Kopfsteinpflaster	Q2 12718,9529 12739,9576 12834,9738
-Kirchhofstr.: schlechtes Kopfsteinpflaster	Q3 13177,7644 13188,7590 13117,7471 13029,7353
+Richardplatz: Kopfsteinpflaster	Q2- 13174,7644 13179,7613
+Kirchhofstr.: schlechtes Kopfsteinpflaster	Q3 13179,7613 13173,7567 13117,7471 13029,7353
 Kirchhofstr.: Kopfsteinpflaster	Q2 13003,7316 13001,7296
 Kirchhofstr.: Asphalt	Q0 13001,7296 12909,7181 12872,7134 12843,7093
 #: note: früher Kopfsteinpflaster
@@ -881,7 +883,7 @@ Braunschweiger Str.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 13368,7300 134
 Braunschweiger Str.: Asphalt	Q0 13702,7418 13781,7524 13854,7620 13919,7707
 Siegfried-Aufhäuser-Platz: gutes Kopfsteinpflaster	Q1 13952,7497 13941,7522 13953,7548 13980,7548
 Brusendorfer Str.: Asphalt	Q0 13953,7548 13854,7620 13751,7709
-Bartastr.: Asphalt	Q0 13686,7627 13654,7710
+Bartastr.: Asphalt mit Schäden	Q1 13686,7627 13654,7723
 Wipperstr.: Kopfsteinpflaster	Q2- 13117,7471 13133,7375 13150,7254
 Wipperstr.: Asphalt	Q0 13150,7254 13161,7173
 Schöneweider Str.: Kopfsteinpflaster	Q2- 13133,7375 13341,7423
@@ -2013,7 +2015,8 @@ Müllenhoffstr.: Kopfsteinpflaster	Q2 11110,9661 11311,9576
 Manitiusstr.: Kopfsteinpflaster	Q2 12207,9632 12374,9542
 Manitiusstr.: Asphalt	Q0 12374,9542 12523,9465
 Nansenstr.: Kopfsteinpflaster	Q2- 12412,9610 12374,9542 12333,9470 12270,9362 12248,9320 12186,9205 12180,9193
-Reuterplatz: Kopfsteinpflaster	Q2 12248,9320 12146,9384
+#: note: teilweise mit Asphaltflicken
+Reuterplatz: Kopfsteinpflaster	Q2- 12248,9320 12146,9384
 Knorrpromenade: Kopfsteinpflaster	Q2 14369,11489 14424,11639
 (Vorfahrt Neues-Deutschland-Gebäude): Kopfsteinpflaster, OK	Q1 12788,11898 12891,12008
 # REMOVED (eigentlich keine großen Qualitätseinbußen) --- Husemannstr.: mäßiger Asphalt	Q1+ 11265,14756 11285,14958
@@ -2257,7 +2260,7 @@ Rübelandstr.: Kopfsteinpflaster	Q2 12852,7282 12872,7201
 Bornsdorfer Str.: mäßiges bis gutes Kopfsteinpflaster	Q2+ 12698,7677 12699,7691 12777,7714 12726,7887 12709,7940 12692,7996
 Bornsdorfer Str.: mäßiges Kopfsteinpflaster	Q2 12692,7996 12671,8077
 Saltykowstr.: unebenes Kleinsteinpflaster	Q2+ 12726,7887 12865,7923
-Uthmannstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 12914,7785 13150,7845
+Uthmannstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 12916,7775 13156,7839
 Herrnhuter Weg: Kopfsteinpflaster	Q2 12898,7832 13103,7889
 Jan-Hus-Weg: Gehwegplatten	Q0- 13085,7904 13117,7939
 Kirchgasse (Neukölln): gutes Kopfsteinpflaster	Q1 12992,8125 13046,8048

@@ -349,8 +349,6 @@ Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
 # REMOVED (wie sieht's nach den Bauarbeiten aus?) --- Niederlagstr.	1 9943,12364 9934,12420
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
 Karl-Marx-Platz	1 13100,7626 12987,7560
-#: note: früher für Radfahrer offen, mittlerweile ist das Zusatzschild "Radfahrer frei" durchgestrichen
-Karl-Marx-Platz	1s:q4 12972,7602 13100,7626
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
 # REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
 #: by: Lea:
@@ -1273,7 +1271,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-05-01
+#: last_checked: 2022-05-10
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1412,6 +1410,7 @@ Birkbuschstr. - Wolfensteindamm	1 4794,5161 4810,5134 4822,5114
 #: note: keine echte Einbahnstraße, aber die Raoul-Wallenberg-Str. ist hier nur unbequem zu überqueren
 (S-Bhf. Raoul-Wallenberg-Str. - Raoul-Wallenberg-Str.)	1::igndisp 20212,16252 20116,16228
 Amrumer Str.: Mittelstreifen	3nocross 6239,15553 6348,15423 6375,15391
+Sinsheimer Weg	1s:q4 13774,8849 13687,8734
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1752,7 +1751,7 @@ Stallschreiberstr.	1 10482,11398 10615,11240 10674,11170
 Jahnstr.	1s:q4 11500,9116 11509,9392
 Waldweg	1s 25496,2429 24981,2580
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
-Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
+Kirchhofstr.	1s:q3 13179,7613 13173,7567 13117,7471 13029,7353
 # REMOVED --- #: next_check: 2013-10-30 --- #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
 Björnsonstr	1s:q1 10209,16674 10197,16528
 Ibsenstr.	1s:q1 10295,16667 10209,16674
@@ -2092,6 +2091,7 @@ Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13394,10805 13496,1076
 Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
 Stralauer Allee: unbequem passierbare Straße	3nocross 14218,10430 14405,10340 14558,10264
 Stralauer Str.: Mittelstreifen	3nocross 11221,12250 11300,12241 11347,12223
+Sonnenallee: Mittelstreifen	3nocross 12152,9015 12078,9055 12012,9092
 Sonnenallee: unbequemes Passieren des Mittelstreifens (parkende Autos)	3nocross 12670,8679 12736,8629 12765,8605
 Sonnenallee: Mittelstreifen	3nocross 13277,8211 13459,8072 13474,8060
 Sonnenallee: Mittelstreifen	3nocross 13011,8416 13038,8394 13102,8343
@@ -2632,7 +2632,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #: osm_watch: way id="43205335" version="2"
 # REMOVED --- #: last_checked: 2019-10-26 (wosch) (keine Anzeichen für Bauarbeiten) --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-01-01
-#: last_checked: 2021-11-13 (wosch)
+#: last_checked: 2022-03-19 (mapillary)
 #: check_frequency: 180d
 tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 # 
@@ -3210,6 +3210,7 @@ Drängelgitter	BNP:5 11995,19759
 #: note: Abstand zwischen den versetzten Gittern ca. 150cm 
 Drängelgitter	BNP:3::trailer=6 9884,10192
 #: note: Vorbeifahrt auf dem Gehweg, hohe Bordsteine
+#: XXX_prog: vermutlich besser als BS markiert (am Wendehammer)
 Barriere	BNP:5::trailer=10 12316,9477
 Barriere, kann auf dem Gehweg umfahren werden	BNP:3::trailer=6 12186,9205
 # REMOVED --- immer offen? --- Schranke (Griesinger-Krankenhaus)	BNP:5 21581,12182
@@ -3731,7 +3732,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-04-29
+#: last_checked: 2022-05-10
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -3925,7 +3926,7 @@ Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/edge-eastside-tower-140m.18/page-13#post-14549
 #: XXX wann sind die Bauarbeiten beendet?
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realität weiterhin Einbahnstraße
-#: osm_watch: way id="5096644" version="16"
+#: osm_watch: way id="5096644" version="17"
 #: priority: #C
 #: last_checked: 2022-05-03
 #: check_frequency: 90d
