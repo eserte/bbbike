@@ -3514,7 +3514,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-05-07
+#: last_checked: 2022-05-11
 #: check_frequency: 21d
 #: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862
@@ -4264,10 +4264,11 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
-#: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022)
+#: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022) (mittlerweile bis 20.5.2022)
 #: also_indoor: traffic (B)
 #: last_checked: 2022-05-08
-#: next_check: 2022-05-13
+#: check_frequency: 30d
+#: next_check: 2022-05-20
 	q4::inwork 11273,12301 11355,12331
 ',
          'from' => undef,
@@ -4308,6 +4309,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1513397936151044099#m
 #: by: https://nitter.net/pic/media%2FFP1LIs8XMAENMUm.jpg%3Fname%3Dorig
+#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022)
+#: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
+#: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? vvv
 #: last_checked: 2022-05-04 vvv
 #: check_frequency: 90d vvv

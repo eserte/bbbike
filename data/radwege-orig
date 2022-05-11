@@ -1312,7 +1312,7 @@ Radspur hinter den parkenden Autos	RW3; 6230,13596 6227,13938 6230,13596
 Radspur hinter den parkenden Autos, bis auf die letzten Meter	RW3; 6230,13532 6228,13324
 	RW1;RW1 9442,16610 9331,16624 9210,16638 8952,16666 8759,16684
 	RW2;RW1 8759,16684 8721,16689 8503,16716 8467,16718
-	RW2;RW2 21954,5229 22054,5360
+	RW1;RW2 21954,5229 22054,5360
 	RW2;RW1 22054,5360 22087,5404
 	RW2; 22087,5404 22116,5442
 	RW1; 22116,5442 22184,5545 22236,5633
@@ -1733,7 +1733,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/ziel-ein-durchgaengig-sicherer-radweg_a337148 (Erwähnung)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2022-04-02 vvv
+#: last_checked: 2022-05-11 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -3174,7 +3174,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: 2147345165 (bis Ende 2021)
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
 #: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022)
-#: last_checked: 2022-04-16 (mapillary) vvv
+#: last_checked: 2022-05-11 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2022-08-31 vvv
 #: priority: #A vvv
@@ -3346,7 +3346,7 @@ Radweg nur aufgemalt	RW1;RW1 6304,16447 6360,16511 6489,16658 6572,16718 6630,16
 	RW1; 21303,5826 21364,5827 21467,5802 21519,5767 21567,5727
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: XXX temporär während der Bauarbeiten an der Pyramidenbrücke
-#: last_checked: 2022-04-02
+#: last_checked: 2022-05-11
 #: check_frequency: 180d
 #: next_check: 2022-06-09
 abgetrennter gemeinsamer Geh- und Radweg auf der Fahrbahn	RW2; 21567,5727 21594,5691 21600,5683 21649,5617
@@ -6469,8 +6469,8 @@ asphaltiertes Straßenbahnkap	RW1; 11666,16260 11698,16311
 # 
 asphaltiert	RW1;RW9 26424,5924 26578,5914 26688,5903 26890,5858 27068,5723 27205,5598 28176,5167
 asphaltiert, Gehweg für Radfahrer frei	RW1;RW9 28176,5167 28376,5079
-asphaltiert	RW2;RW9 28376,5079 29089,4759
-asphaltiert, Gehweg für Radfahrer frei	RW1;RW9 29089,4759 29653,4490 29714,4461
+asphaltiert, gemeinsamer Rad- und Gehweg	RW2; 28376,5079 29089,4759 29653,4490 29714,4461
+asphaltiert, Gehweg für Radfahrer frei	RW9; 29714,4461 29653,4490 29089,4759 28376,5079
 # 
 	RW2; 29714,4461 29728,4435 29754,4398
 	RW4; 29754,4398 29813,4314 29850,4288
@@ -6931,7 +6931,7 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="27"
-#: last_checked: 2022-04-22 (mapillary) vvv
+#: last_checked: 2022-05-11 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
@@ -7431,6 +7431,7 @@ enger Radweg, schmaler Unterstreifen gegen parkende Autos, Verbundsteinpflaster	
 	RW7;RW7 11472,7899 11579,7926 11647,7940
 	RW7;RW7 11754,7964 11833,7980 11979,8014
 asphaltiert, nicht sehr breit	RW1; 15279,10862 15272,10790 15261,10738
+asphaltiert, nicht sehr breit	RW1; 15261,10738 15272,10790 15279,10862
 asphaltiertes Straßenbahnkap	RW1;RW1 13250,16058 13189,16089
 asphaltiertes Straßenbahnkap	RW1; 12764,16302 12797,16285 12826,16271
 asphaltiertes Straßenbahnkap	RW1; 12797,16285 12764,16302 12725,16321

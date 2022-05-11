@@ -76,7 +76,7 @@ Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2022-04-24
+#: last_checked: 2022-05-11
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
@@ -1046,6 +1046,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 21789,4520
 #: XXX_prog Grüner Pfeil (Alt-Köpenick -> Lange Brücke)
 	X 22093,4499
+#: note: Anforderung für linksabbiegende Radfahrer (Lindenstr. -> Bahnhofstr.)
 	X 21954,5229
 	X 22116,5442
 	X 22431,6068

@@ -3643,6 +3643,7 @@ Malchower Teichweg: enger Pfad	q3 16074,19436 16081,19656 16082,19754
 (zur Yorckstraßenbrücke 17): enge Kurven	q3 8423,9529 8453,9519 8454,9528
 Weichselstr./Maybachufer: asphaltierte Kissen	q1+ 12755,9188 12845,9304 12837,9353
 Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,19441 20442,19697 20388,19721
+#: note: keine Schilder
 (Salvador-Allende-Str. - Fürstenwalder Damm): einige Fußgänger	q1 23403,5410 23417,5439 23463,5475 23492,5488
 (Weg im Wröhmännerpark): gemeinsamer Rad- und Gehweg, Fußgänger haben Vorrang	q1 -3126,14948 -3062,14989 -3027,15067 -2991,15086 -2998,15105
 #: XXX_prog BS an der Gabriele-Tergit-Promenade, ansonsten trotzdem q4
@@ -4065,6 +4066,13 @@ Carl-Weder-Park: gemeinsamer Geh- und Radweg	q1 12595,6299 12614,6301 12638,6307
 (Falkenberger Chaussee - Wartenberger Str.): Bordstein, Rampe	q4+ 17577,17910 17521,17894
 (Falkenberger Chaussee - Wartenberger Str.): Rampe	q3+ 17521,17894 17568,17945
 Max-und Herta-Naujocks-Weg: Fußgänger, schmaler Weg	q2- 16036,18604 16077,18674 16112,18692 16133,18765 16163,18780
+(Einkaufszentrum Lagunenweg): Fußgänger	q2 31762,3202 31650,3218
+# 
+#: next_check_id: BEBAUUNGSPLAN-XVI-81
+#: XXX nachdem die letzte Deckschicht erstellt wurde, werden wohl die Borde niedriger sein
+#: last_checked: 2022-05-11
+#: check_frequency: 120d
+(Mausohrweg - R1): Bordsteine, Fußgänger	q3 33296,2894 33267,2810 33255,2762
 # 
 ######################### User Contributions #################################
 # 

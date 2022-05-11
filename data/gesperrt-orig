@@ -897,7 +897,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21789,5427 21706,5541 21605,5687
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1189424.php
 #: by: https://berliner-abendblatt.de/2022/03/25/138713/
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022)
-#: last_checked: 2022-04-02 vvv
+#: last_checked: 2022-05-11 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2022-06-09 vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -3461,7 +3461,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2022-04-24
+#: last_checked: 2022-05-11
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -3704,12 +3704,7 @@ Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 188
 #: next_check: 2022-07-01
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
 # 
-#: next_check_id: BEBAUUNGSPLAN-XVI-81
-#: XXX Wie wird die Qualität der Straße sein?
-#: osm_watch: way id="567597390" version="5"
-#: last_checked: 2021-05-09
-#: check_frequency: 120d
-Abendseglersteig: noch in Bau	2::inwork 33176,2938 33147,2832 33267,2810 33383,2792
+# REMOVED --- #: next_check_id: BEBAUUNGSPLAN-XVI-81 --- #: XXX Wie wird die Qualität der Straße sein?--- #: osm_watch: way id="567597390" version="5" --- #: last_checked: 2021-05-09 --- #: check_frequency: 120d --- Abendseglersteig: noch in Bau	2::inwork 33167,2940 33139,2835 33267,2810 33383,2792
 # REMOVED (hier offen) --- Abendseglersteig: noch in Bau	2::inwork 33383,2792 33406,2852
 # 
 #: next_check_id: BAHNHOFSTR-2020
@@ -3866,12 +3861,13 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2022-04-24 vvv
+#: last_checked: 2022-05-11 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="729324149" version="6"
 #: osm_watch: way id="162120178" version="10"
 #: osm_watch: node id="6751063701" version="4"
 # REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
+#: note: Bauzäune können während der Arbeitszeiten offen sein
 Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
 #: osm_watch: way id="719023970" version="9"
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21386,5251 21355,5254

@@ -567,7 +567,7 @@ Bus 160	busroute_N 18675,-231 18906,-316 18997,-351 19105,-376 19270,-417 19348,
 Bus 161	busroute_N 29901,4264 29947,4268 30020,4273 30132,4281 30246,4287 30293,4290 30345,4293 30461,4300 30562,4306 30614,4309 30665,4312 30696,4314 30655,4186 30605,4028 30518,3753
 Bus 161	busroute_N 31447,3372 31500,3427 31528,3456 31670,3604 31724,3592 31756,3620 31745,3679 31839,3774 31905,3839 31966,3902 32081,4021
 Bus 161	busroute_N 31745,3679 31695,3690 31661,3665 31670,3604
-Bus 161	busroute_N 32814,3107 32785,2935 32790,2792 32643,2695 32512,2621 32467,2582 32316,2468 32162,2542 32115,2581 32031,2723 31999,2812 31967,2966 31971,3170 31973,3237
+Bus 161	busroute_N 32814,3107 32785,2935 32790,2792 32643,2695 32512,2621 32467,2582 32316,2468 32162,2542 32115,2581 32031,2723 31965,2920 31967,2966 31971,3170 31973,3237
 Bus 161	busroute_N 32162,2542 32445,2716 32512,2621
 Bus 164	busroute_N 20839,3163 20772,3244 20717,3310 20644,3395 20499,3572 20451,3538 20366,3480 20299,3435 20262,3409 20237,3392 20166,3344 20064,3278
 Bus 164	busroute_N 20166,3344 20113,3408 20089,3438 20066,3466 20012,3532
@@ -1304,7 +1304,8 @@ Weg über Autobahntunnel	CS 12638,6307 12630,6326 12605,6322 12619,6310 12567,630
 # 
 # REMOVED --- #: next_check_id: AMWUHLESEE-2018 --- #: last_checked: 2020-04-11 --- #: check_frequency: 90d --- Am Wuhlesee: nicht ausgeschildert	CS 21351,8402 21419,8367
 # 
-Pelzlake: ausgeschildert als Triglawstr. 16A-16B und zum Forst Müggelheim	CP2; 32245,1914 32155,1863
+#: note: früher als Triglawstr. 16A-16B ausgeschildert, mittlerweile fehlt das Hausnummernschild
+Pelzlake: ausgeschildert als Triglawstr. und zum Forst Müggelheim	CP2; 32245,1914 32155,1863
 # 
 ausgeschildert Märkisches Zentrum	CP2; 6431,20479 6423,20500
 # 
@@ -1424,15 +1425,9 @@ ausgeschildert Storkower Str.	CP2; 13148,14850 13185,14912
 # 
 nicht ausgeschildert, Weg zwischen Hecken versteckt	CP2; 3470,20683 3458,20671
 # 
-#: next_check_id: BEBAUUNGSPLAN-XVI-81
-#: add_fragezeichen: wann werden die Straßen ausgeschildert? vvv
-#: last_checked: 2021-07-18 (mapillary) vvv
-#: check_frequency: 120d vvv
+# REMOVED --- #: next_check_id: BEBAUUNGSPLAN-XVI-81 --- #: add_fragezeichen: wann werden die Straßen ausgeschildert? vvv --- #: last_checked: 2021-07-18 (mapillary) vvv --- #: check_frequency: 120d vvv
 # REMOVED (mittlerweile ausgeschildert, siehe Mapillary) --- Mausohrweg: nicht ausgeschildert	CS 33327,2979 33296,2894
-Mausohrweg: nicht ausgeschildert	CS 33176,2938 33296,2894 33406,2852 33503,2818
-#: check_frequency ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- Mausohrweg: nicht ausgeschildert	CS 33167,2940 33296,2894 33406,2852 33503,2818 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
 ausgeschildert als Heidekampweg	CP2; 15727,6716 15697,6688
 # 
@@ -1481,7 +1476,7 @@ ausgeschildert nach Bernau	CP; 32543,18082 32537,18066 32519,18076
 ausgeschildert Sophie-Charlotte-Platz	CP; 3064,11657 3144,11659 3159,11562
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
-#: last_checked: 2022-04-24
+#: last_checked: 2022-05-11
 #: check_frequency: 180d
 Henriette-Lustig-Str.: noch nicht ausgeschildert	CS 21611,5119 21631,5079
 # 
@@ -1663,6 +1658,8 @@ Luisenhof: Privatstraße	CS -13532,-2963 -13548,-2893 -13558,-2841 -13570,-2795
 Luisenhof: Privatstraße	CS -13548,-2893 -13635,-2900 -13671,-2903 -13705,-2875 -13719,-2846
 Luisenhof: Privatstraße	CS -13705,-2875 -13763,-2926
 Luisenhof: Privatstraße	CS -13635,-2900 -13634,-2978
+# 
+ausgeschildert: Aldi, Edeka	CP2; 31609,3232 31650,3218
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)
