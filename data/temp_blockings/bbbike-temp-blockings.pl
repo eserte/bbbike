@@ -28204,7 +28204,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2022-04-28
+#: last_checked: 2022-05-12
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -31156,8 +31156,8 @@ EOF
 #: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: also_indoor: traffic (G)
-#: osm_watch: way id="934995899" version="6"
-#: osm_watch: way id="934995901" version="6"
+#: osm_watch: way id="934995899" version="7"
+#: osm_watch: way id="934995901" version="8"
 #: last_checked: 2022-05-09 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
@@ -33313,7 +33313,7 @@ EOF
 #: check_frequency: 21d
 #: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862
-#: osm_watch: way id="984964447" version="7"
+#: osm_watch: way id="984964447" version="8"
 	q3::inwork 15279,10862 15355,10875
 #: osm_watch: way id="984056169" version="8"
 	2::inwork 15272,10790 15388,10758
@@ -34895,7 +34895,7 @@ EOF
 #: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
 #: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022) (mittlerweile bis 20.5.2022)
 #: also_indoor: traffic (B)
-#: last_checked: 2022-05-08
+#: last_checked: 2022-05-12
 #: check_frequency: 30d
 #: next_check: 2022-05-20
 	q4::inwork 11273,12301 11355,12331

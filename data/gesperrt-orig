@@ -1379,11 +1379,7 @@ Ehrenfelsstr.	1s:q3 18737,8686 18778,8663
 Mellenseestr. [Wohngebiet]	1 17587,9655 17633,9793 17633,9898
 Mellenseestr. [Wohngebiet]	1 17777,9649 17738,9822 17738,9922
 Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
-#: next_check_id: MUEHSAM-2022
-#: XXX Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-05-06
-#: check_frequency: 14d
-#: valid: 20220510-
+# REMOVED (eigentlich weitgehend beendet) --- #: next_check_id: MUEHSAM-2022 --- #: XXX Wann sind die Bauarbeiten beendet? --- #: last_checked: 2022-05-06 --- #: check_frequency: 14d --- #: valid: 20220510-
 Mühsamstr.	1 13818,12897 13830,12907
 #: note: nur ein Einfahrt-verboten-Schild ohne korrespondierendes Einbahnstraßenschild
 Lilli-Henoch-Str.	1s:q3 12357,15020 12388,14926
@@ -3387,7 +3383,7 @@ weites Drängelgitter	BNP:2::trailer=7 12614,6301
 #: by: https://images.competitionline.com/image/f/9/5/a/b/e/1/b/f95abe1bc3b10ee4f2778b024afc5734_1.jpg?auto=format,compress&fm=jpg&ixlib=imgixjs-3.4.1&w=4742
 #: by: https://www.gm013.la/work/fmp
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2022-04-29
+#: last_checked: 2022-05-12
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
@@ -3402,7 +3398,7 @@ Unter den Linden/Schadowstr.: Überqueren der Straße vor der Russischen Botschaft
 Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943 20948,18968
 # 
 #: by: https://www.hedwigs-kathedrale.de/umgestaltung/ (Umbauarbeiten bis 1. November 2023 geplant)
-#: last_checked: 2022-02-12
+#: last_checked: 2022-05-12
 #: check_frequency: 360d
 #: next_check: 2023-11-01
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -3699,7 +3695,7 @@ Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 188
 #: XXX vermutlich dauerhaft, die Fahrbahn ist schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben
 #: osm_watch: way id="860287005" version="4"
 #: also_indoor: traffic (G)
-#: last_checked: 2022-02-25
+#: last_checked: 2022-05-12
 #: check_frequency: 120d
 #: next_check: 2022-07-01
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
@@ -3945,7 +3941,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
 #: next_check_id: DRESDNERBAHN-2021
 #: XXX laut Baustellenschild Erneuerung der EÜ Attilastr. bis 2023
-#: osm_watch: way id="588431071" version="5"
+#: osm_watch: way id="588431071" version="6"
 #: osm_watch: way id="696227207" version="3"
 #: add_fragezeichen: Bis wann genau geht die Sperrung?
 #: last_checked: 2022-03-12
@@ -4073,7 +4069,7 @@ Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2022-04-29 vvv
+#: last_checked: 2022-05-12 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -4108,7 +4104,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
 #: note: allerdings war das Einbahnstraßenschild am 2022-01-17 weggedreht, am 2022-03-02 wieder vollständig aktiv
-#: last_checked: 2022-04-09
+#: last_checked: 2022-05-12
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: next_check_id: POTSDAMSPEICHERSTADT-2022
@@ -4494,7 +4490,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Eröffnung am 17.12.2020)
 #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Eröffnung wird verschoben)
 #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauzäune werden im Dezember 2020 teilweise abgebaut)
-#: last_checked: 2022-04-23
+#: last_checked: 2022-05-10 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384

@@ -1031,7 +1031,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-05-11
+#: last_checked: 2022-05-12
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1138,12 +1138,12 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Waldweg	Q1- 878,6651 818,6616 775,
 Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster, daneben wassergebundene Decke	Q1 698,6592 663,6575 546,6583 369,6594 340,6598
 Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218,6571
 #: by: https://api.fixmyberlin.de/api/projects/334 (war früher fälschlicherweise zur Bismarckstr. in Steglitz zugeordnet)
-#: by: http://www.infravelo.de/projekt/bismarckstrasse/ (Asphaltierung, in Planung, 4. Quartal 2024 - 4. Quartal 2025)
+#: by: http://www.infravelo.de/projekt/bismarckstrasse/ (Asphaltierung, in Planung, 4. Quartal 2024 - 4. Quartal 2025) (mittlerweile: 1. Quartal 2025 - 4. Quartal 2026)
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
 #: osm_watch: way id="4810830" version="32"
 #: last_checked: 2022-05-08
 #: check_frequency: 720d
-#: next_check: 2025-12-31
+#: next_check: 2026-12-31
 Bismarckstr.: Kopfsteinpflaster	Q2 -4892,1267 -5028,1133 -5092,1130 -5419,897 -5488,833 -5616,780 -6009,559
 # REMOVED (realisiert) --- #: XXX wird asphaltiert --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/staedtebauliche-planung/konzepte/bezirkliches_nebenroutennetz.pdf
 Stahnsdorfer Damm: Asphalt	Q0 -4803,1240 -4999,1083
@@ -6090,7 +6090,8 @@ Vereinssteg: unbefestigte Straße	Q2 8340,18984 8321,18954
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/tuchmerweg-veroeffentlichung-bpu_08-07-2019.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/tuchmerweg_lageplan_2021-11-25.pdf
 #: XXX wird neu gemacht, zusammen mit der Straße vor Schönholz, danach "Sickerpflaster" (Verbundsteinpflaster?)
-#: last_checked: 2022-02-12 (mapillary)
+#: osm_watch: way id="173567970" version="6"
+#: last_checked: 2022-03-07 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8616,19065
@@ -14256,10 +14257,11 @@ Oldenburger Str.: mäßiges Kopfsteinpflaster	Q2 5725,13566 5743,13772 5782,14067 
 #: by: ^^^
 # 
 #: by: Sebastian Kröger/Andreas Mühlhausen vvv
-#: corrected_by: srt (Q2 -> Q1-) vvv
-Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q1- 12528,14845 12575,14812 12700,14726 12789,14670 12862,14618 12901,14594 13013,14523
-Anton-Saefkow-Str.: Beton mit Löchern und Kanten	Q1- 13013,14523 13088,14469
-Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q1- 13088,14469 13183,14400
+#: corrected_by: srt (Asphalt/Beton mit Löchern und Kanten, Q2 -> ..., teilweise neu gemacht?) vvv
+Anton-Saefkow-Str.: Asphalt mit leichten Schäden	Q0- 12528,14845 12575,14812 12700,14726 12789,14670 12862,14618 12901,14594
+Anton-Saefkow-Str.: Asphalt/Beton mit leichten Schäden	Q0- 12901,14594 13013,14523
+Anton-Saefkow-Str.: Asphalt	Q0 13013,14523 13088,14469
+Anton-Saefkow-Str.: Asphalt mit leichten Schäden	Q0- 13088,14469 13183,14400
 #: corrected_by ^^^
 #: by: ^^^
 # 
@@ -30514,7 +30516,7 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 11055,15504
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 7882,9490
 Kreuzungsbereich asphaltiert	Q0 14181,11434
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 14254,11377
-Kreuzungsbereich mit Kopfsteinpflaster	Q2 10207,12055
+Einmündungsbereich mit Kopfsteinpflaster	Q2 10207,12055
 Kreuzungsbereich asphaltiert	Q0 11059,12450
 Kreuzungsbereich asphaltiert	Q0 13406,11896
 Kreuzungsbereich asphaltiert	Q0 14535,11327
@@ -30928,4 +30930,5 @@ Kreuzungsbereich asphaltiert	Q0 11317,14564
 Kreuzungsbereich asphaltiert	Q0 11436,14741
 Kreuzungsbereich mit Kopfsteinpflaster	Q3+ 30124,4664
 Einmündungsbereich mit glatter Pflasterung	Q0- 30366,3681
+Einmündungsbereich asphaltiert	Q0 13013,14523
 #: ignore ^^^

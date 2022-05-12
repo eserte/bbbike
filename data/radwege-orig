@@ -429,6 +429,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
+#: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022)
 #: last_checked: 2022-04-27 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
@@ -717,7 +718,7 @@ für Radfahrer freigegebene Busspur gilt immer	RW1; 8562,11744 8553,11638 8553,11
 #: source_id: 2147345481
 #: source_id: 2147345753
 #: source_id: viz2021:13.408836,52.517143,22.04.2020,15:00 (Bauarbeiten bis 30.6.2023)
-#: last_checked: 2022-04-19 vvv
+#: last_checked: 2022-05-12 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
@@ -1600,7 +1601,7 @@ Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2022-04-23
+#: last_checked: 2022-05-10 (mapillary)
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -2283,7 +2284,7 @@ Radspur zwischen Fahrspuren	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2022-05-08 vvv
+#: last_checked: 2022-05-12 vvv
 #: next_check: 2024-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
@@ -3787,7 +3788,7 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: viz2021:13.42941,52.533057,01.09.2021,08:00 (bis 31.12.2021, Gesamtbaumaßnahme bis 2022) (mittlerweile bis 28.2.2022) (mittlerweile bis 28.3.2022) (mittlerweile bis 4.4.2022) (mittlerweile bis 14.4.2022) (inaktiv)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2022-04-12 (mapillary) vvv
+#: last_checked: 2022-05-12 vvv
 # REMOVED --- #: next_check: 2022-04-14 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -4462,11 +4463,13 @@ Gehweg für Radfahrer frei	RW1; 9073,20606 9027,20603 8904,20596
 #: by: https://api.fixmyberlin.de/api/projects/428
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/pop-up-radweg-bleibt-erhalten_a297530
 #: by: https://www.bahninfo-forum.de/read.php?9,651938,730544#msg-730544 (Verlängerung bis zur Minna-Todenhagen-Brücke, noch 2022?)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1205668.php (Verstetigung; außerdem neuer Radweg/spur + Busspur ab Brückenstr.; Bauarbeiten 20. Mai bis 6. Juni 2022)
+#: by: https://www.berliner-woche.de/adlershof/c-verkehr/pop-up-radweg-auf-dem-adlergestell-wird-verstetigt_a345731
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="19"
 #: last_checked: 2022-03-13
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2020-12-31
+#: next_check: 2022-06-06
 provisorisch geschützter Radstreifen	RW4; 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464
 #: note die Radspur sah etwas provisorisch aus, aber auf dem Gehweg ist jetzt definitiv kein Platz mehr
@@ -6878,7 +6881,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2022-04-13 (mapillary)
+#: last_checked: 2022-05-12
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünmarkierung	RW3; 12522,14385 12407,14470
@@ -6899,7 +6902,7 @@ Grünmarkierung	RW4; 12407,14470 12522,14385
 #: by: https://nitter.net/pic/media%2FFQTkX5LWYAAirTE.jpg%3Fname%3Dorig
 #: source_id: viz2021:13.433058,52.536173,19.04.2022,07:00 (bis 30.6.2022)
 #: XXX hier wird vermutlich auch eine Grünmarkierung entstehen
-#: last_checked: 2022-04-13 (mapillary) vvv
+#: last_checked: 2022-05-12 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 #: osm_watch: way id="335479077" version="15"
@@ -7403,8 +7406,8 @@ provisorischer Radweg auf dem Bürgersteig	RW2; 9196,5272 9188,5333 9176,5413 916
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf (Markierung nach Leitungsbauarbeiten)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/bezirksamt-listet-alle-2020-kommenden-radverkehrsanlagen-auf_a274738 (bis Ende 2021; hier: "900m" --- ist vielleicht auch ein Teil von Alt-Tempelhof gemeint?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
-#: by: http://www.infravelo.de/projekt/schoeneberger-strasse/ (früherer Eintrag) (bis 4. Quartal 2021, 700m Schutzstreifen (was nicht ganz reichen würde...))
-#: by: http://www.infravelo.de/projekt/schoeneberger-strasse-2/
+#: by: http://www.infravelo.de/projekt/schoeneberger-strasse/ (früherer Eintrag) (bis 4. Quartal 2021, 700m Schutzstreifen (was nicht ganz reichen würde...)) (mittlerweile: 3. Quartal 2021 - 4. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/schoeneberger-strasse-2/ (wurde wieder entfernt)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-dauerhaften-radweg-an-der-schoeneberger-strasse_a317109
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-17-06-2021.pdf (Erwähnung)
@@ -7412,15 +7415,15 @@ provisorischer Radweg auf dem Bürgersteig	RW2; 9196,5272 9188,5333 9176,5413 916
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 2021-12-16) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
 #: last_checked: 2022-05-01 vvv
-#: check_frequency: 60d vvv
-# REMOVED --- #: next_check: 2022-03-01 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2022-12-31 vvv
 	RW3; 8739,6701 8653,6781
 #: note: wieder aufgehoben: provisorische Radspur	RW3;
 	RW0; 8653,6781 8496,6919
 #: note: wieder aufgehoben: provisorische Radspur	RW4;
 	RW0; 8496,6919 8653,6781
 	RW3; 8653,6781 8739,6701
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 Busspur ist immer gültig	RW5; 8414,6995 8319,7084

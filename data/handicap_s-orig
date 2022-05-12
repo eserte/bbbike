@@ -11,19 +11,10 @@
 ### Friedrichshain ###
 # 
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- #: next_check: 2022-04-30 --- Jessnerstr.: Bauarbeiten an der Kreuzung Frankfurter Allee, schmalen Gehweg nutzen	q2::inwork 15077,11910 15117,12106
-# 
-#: next_check_id: MUEHSAM-2022
-#: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022
-#: XXX Datensatz in gesperrt-orig beachten!
-#: also_indoor: traffic (ex-B,G(falsch))
-#: last_checked: 2022-05-06 vvv
-#: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2022-04-01 vvv
-Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Fahrbahn gesperrt	q4::inwork 13838,12884 13818,12897
+# REMOVED (wieder offen) --- #: next_check_id: MUEHSAM-2022 --- #: XXX Bauarbeiten der Wasserbetriebe, laut Schild bis April 2022 --- #: XXX Datensatz in gesperrt-orig beachten! --- #: also_indoor: traffic (ex-B,G(falsch)) --- #: last_checked: 2022-05-06 vvv --- #: check_frequency: 14d vvv --- # REMOVED --- #: next_check: 2022-04-01 vvv --- Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Fahrbahn gesperrt	q4::inwork 13838,12884 13818,12897
 # REMOVED (Radfahrer frei-Schild existiert mittlerweile) --- Mühsamstr.: Bauarbeiten im Kreuzungsbereich Thaerstr., Einbahnstraßenrichtung gedreht	q4::inwork; 13830,12907 13818,12897
 # REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: by: https://bauprojekte.deutschebahn.com/p/berlin-ostbahnhof (bis 2025?)
@@ -213,7 +204,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
 #: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2022-04-23
+#: last_checked: 2022-05-10 (mapillary)
 Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -289,7 +280,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-04-09
+#: last_checked: 2022-05-12
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -907,7 +898,7 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (ex-G,B)
 #: priority: #B
-#: last_checked: 2022-05-08 (osm) vvv
+#: last_checked: 2022-05-10 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv

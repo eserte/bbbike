@@ -2395,7 +2395,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2022-04-28
+#: last_checked: 2022-05-12
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2893,8 +2893,8 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
 #: also_indoor: traffic (G)
-#: osm_watch: way id="934995899" version="6"
-#: osm_watch: way id="934995901" version="6"
+#: osm_watch: way id="934995899" version="7"
+#: osm_watch: way id="934995901" version="8"
 #: last_checked: 2022-05-09 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
@@ -3518,7 +3518,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: check_frequency: 21d
 #: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862
-#: osm_watch: way id="984964447" version="7"
+#: osm_watch: way id="984964447" version="8"
 	q3::inwork 15279,10862 15355,10875
 #: osm_watch: way id="984056169" version="8"
 	2::inwork 15272,10790 15388,10758
@@ -4266,7 +4266,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
 #: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022) (mittlerweile bis 20.5.2022)
 #: also_indoor: traffic (B)
-#: last_checked: 2022-05-08
+#: last_checked: 2022-05-12
 #: check_frequency: 30d
 #: next_check: 2022-05-20
 	q4::inwork 11273,12301 11355,12331
@@ -4381,23 +4381,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.440009,52.567594,26.04.2022,07:00 (26.4.-11.5.2022)
-#: source_id: bvg2021:x54#BVG301047_0
-#: by: https://nitter.net/VIZ_Berlin/status/1517050882063581184#m (2.BA -> Tino-Schwierzina-Str. (bis 30.5.2022?))
-#: by: https://nitter.net/VIZ_Berlin/status/1518605828533727234#m
-#: by: https://nitter.net/pic/media%2FFRMr68PXsAUrCyR.jpg%3Fname%3Dorig (Radfahrer können den nordöstlichen Gehweg benutzen)
-#: note: SEV wird über die Treskowstr. geführt
-#: confirmed_by: mapillary
-	q4::inwork; 11893,17397 12324,17213
-',
-         'from' => 1650924000,
-         'id' => 3542,
-         'source_id' => 'https://www.bahninfo-forum.de/read.php?9,701070,732194#msg-732194',
-         'text' => 'Treskowstr.: Einbahnstraßenregelung, offen Richtung Prenzlauer Promenade, voraussichtlich bis 11.5.2022',
-         'type' => 'handicap',
-         'until' => 1652306400
-       },
+       undef,
        {
          'data' => '#: confirmed_by: srt (am 2022-05-03 gesehen)
 	q4::temp::play 14946,11697 14986,11760

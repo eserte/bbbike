@@ -33,7 +33,7 @@ Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2022-05-06
+#: last_checked: 2022-05-12
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
@@ -148,16 +148,22 @@ Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2019 --- #: last_checked: 2020-06-14 ---	X::inwork 18406,7760
 # 
 #: next_check_id: FRANZOESISCHE-2018
+#: next_check: 2022-09-30 vvv
+#: check_frequency: 90d vvv
+#: valid: -20220930 vvv
+#: last_checked: 2022-05-12
 #: osm_watch: node id="6380038401" version="1"
-#: last_checked: 2022-03-02
-#: check_frequency: 90d
-#: next_check: 2022-09-30
-#: valid: -20220930
 	X::inwork 9195,11972
+#: note: Ampel befindet sich westlich der Kreuzung
+#: last_checked: 2022-05-12
+	F::inwork 9076,12054
+#: valid ^^^
+#: check_frequency ^^^
+#: next_check ^^^
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2022-05-06
+#: last_checked: 2022-05-12
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -3099,7 +3105,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: osm_watch: node id="5931765487" version="5"
 #: osm_watch: node id="5931765488" version="5"
-#: last_checked: 2022-04-23
+#: last_checked: 2022-05-10 (mapillary)
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 
