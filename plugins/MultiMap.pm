@@ -1398,13 +1398,13 @@ sub showmap_url_mapillary {
     if ($dateFrom) {
 	if ($dateFrom =~ m{^-(\d+)year$}) {
 	    require POSIX;
-	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*365));
+	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*365*$1));
 	} elsif ($dateFrom =~ m{^-(\d+)month$}) {
 	    require POSIX;
-	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*30));
+	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*30*$1));
 	} elsif ($dateFrom =~ m{^-(\d+)week$}) {
 	    require POSIX;
-	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*7));
+	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*7*$1));
 	}
 	if ($dateFrom !~ m{^\d{4}-\d{2}-\d{2}$}) {
 	    die "dateFrom parameter must be an ISO 8601 day, not '$dateFrom'";
