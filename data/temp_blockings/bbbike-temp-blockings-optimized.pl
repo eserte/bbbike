@@ -3629,13 +3629,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: next_check_id: DRESDNERBAHN-2021
-#: XXX Ursprünglich wurde 08/2021 als Beginn geplant, das hat sich aber um einen Monat verschoben --- vielleicht das Ende auch?
-#: XXX ggfs nach gesperrt-orig überführen
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20220111 (bis Ende 2023)
-#: note: Fertigstellung EÜ laut Baustellenschild 2023
-#: osm_watch: way id="229990468" version="6"
+#: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2022-02-05
+#: last_checked: 2022-04-09
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
@@ -3737,9 +3733,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1635634800,
          'id' => 3474,
          'source_id' => 'LS/721-E/21/142',
-         'text' => 'Bernau - Lanke: Bauarbeiten, Sperrung, für Radfahrer unter Umständen bereits passierbar, vom 01.11.2021 bis 04.06.2022',
+         'text' => 'Bernau - Lanke: Bauarbeiten, Sperrung, für Radfahrer unter Umständen bereits passierbar, vom 01.11.2021 bis 24.06.2022',
          'type' => 'gesperrt',
-         'until' => 1654358400
+         'until' => 1656086400
        },
        {
          'data' => '	2::inwork -57797,19638 -55780,18604
@@ -4250,7 +4246,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar)
-#: last_checked: 2022-05-10
+#: last_checked: 2022-05-13
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -4434,21 +4430,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1656846000
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/2022/05/verkehrsvorschau-090522/
-#: by: https://nitter.net/VIZ_Berlin/status/1523516862247718914#m
-#: by: https://nitter.net/pic/media%2FFSDxLnfWUAAAicX.jpg%3Fname%3Dorig (laut Plan keine gesonderte Verkehrsführung für Radfahrer vorgesehen)
-#: also_indoor: traffic (H,B)
-# REMOVED (ja) --- #: add_fragezeichen: Sind Radfahrer tatsächlich betroffen? --- #: next_check: 2022-05-09
-	q4::inwork; 12330,8636 12494,8501
-',
-         'from' => 1651986000,
-         'id' => 3547,
-         'source_id' => 'viz2021:13.431455,52.483123,09.05.2022,07:00',
-         'text' => 'Karl-Marx-Str.: zwischen Weichselstr. und Fuldastr. Bauarbeiten, Fahrbahn Richtung Südosten gesperrt, vermutlich sind auch Radfahrer betroffen, vom 09.05.2022 07:00 bis 13.05.2022 17:00 ',
-         'type' => 'handicap',
-         'until' => 1652454000
-       },
+       undef,
        {
          'data' => '#: next_check_id: HAEMMERLING-2022
 #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00
@@ -4485,6 +4467,18 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024',
          'type' => 'handicap',
          'until' => 1706716800
+       },
+       {
+         'data' => '#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern
+#: next_check: 2022-08-19
+	q4::temp::play 12822,10487 12897,10439
+',
+         'from' => 1652306400,
+         'id' => 3551,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
+         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 13.05. bis 08.07.',
+         'type' => 'handicap',
+         'until' => 1657297800
        }
      
 );

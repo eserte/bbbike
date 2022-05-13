@@ -13043,13 +13043,14 @@ Ehrenbergstr. (Friedrichshain)	N 13596,10722 13676,10926 13716,11032 13730,11074
 (Ehrenbergstr. - ehem. Osthafen)	N 13596,10722 13585,10693
 (Ehrenbergstr. - ehem. Osthafen)	NN 13558,10704 13531,10673
 #: osm.highway: service
-(ehem. Osthafen)	N 13338,10801 13558,10704 13585,10693 13902,10546 13981,10499 14204,10397 14226,10387 14388,10307
+(ehem. Osthafen)	N 13338,10801 13558,10704 13585,10693 13835,10577 13902,10546 13981,10499 14204,10397 14226,10387 14388,10307
 (am ehem. Osthafen)	NN 13326,10765 13531,10673 13527,10660 13679,10589 13756,10554 13805,10528 13824,10521 13944,10464 14207,10338 14361,10259 14462,10206 14480,10157
 #: osm.highway: service
 (Bossestr. - ehem. Osthafen)	N 14218,10430 14204,10397
 (Bossestr. - ehem. Osthafen)	NN 14226,10387 14207,10338
 #: osm.highway: service
 (Modersohnstr. - ehem. Osthafen)	N 13919,10583 13902,10546
+(Modersohnstr. - ehem. Osthafen)	NN 13835,10577 13805,10528
 Volkmarstr.	N 9687,5237 9703,5274 9974,5385 10230,5498
 Pflügerstr.	N 12755,9188 12621,9297 12481,9390 12333,9470
 Pflügerstr.	NN 12333,9470 12316,9477
@@ -19878,7 +19879,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: 2147346962 (hier: Einschränkungen an der Gegenfahrbahn, bis 31.1.2025)
-#: last_checked: 2022-05-08
+#: last_checked: 2022-05-11 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2025-01-31
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

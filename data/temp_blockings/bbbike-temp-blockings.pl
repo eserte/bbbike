@@ -33677,13 +33677,9 @@ EOF
        source_id => 'https://www.dresdnerbahn.de/mediathek/file/371/XuemcxFdBKgO2ODB13RfVD6NGI-aMFPmtCRyf_fgMuk/Downloads/20210604_DrB_virtuelle_Buergerinfo_online.pdf',
        data  => <<EOF,
 #: next_check_id: DRESDNERBAHN-2021
-#: XXX Ursprünglich wurde 08/2021 als Beginn geplant, das hat sich aber um einen Monat verschoben --- vielleicht das Ende auch?
-#: XXX ggfs nach gesperrt-orig überführen
-#: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20220111 (bis Ende 2023)
-#: note: Fertigstellung EÜ laut Baustellenschild 2023
-#: osm_watch: way id="229990468" version="6"
+#: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2022-02-05
+#: last_checked: 2022-04-09
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
@@ -34044,8 +34040,8 @@ EOF
 EOF
      },
      { from  => 1635634800, # 2021-10-31 01:00
-       until => $isodate2epoch->("2022-06-04 18:00:00"), # 1642287600, # 2022-01-16 00:00
-       text  => 'Bernau - Lanke: Bauarbeiten, Sperrung, für Radfahrer unter Umständen bereits passierbar, vom 01.11.2021 bis 04.06.2022',
+       until => $isodate2epoch->("2022-06-24 18:00:00"), # 1642287600, # 2022-01-16 00:00
+       text  => 'Bernau - Lanke: Bauarbeiten, Sperrung, für Radfahrer unter Umständen bereits passierbar, vom 01.11.2021 bis 24.06.2022',
        type  => 'gesperrt',
        source_id => 'LS/721-E/21/142',
        data  => <<EOF,
@@ -34881,7 +34877,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: STRALAUER-2019
 #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar)
-#: last_checked: 2022-05-10
+#: last_checked: 2022-05-13
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
@@ -35055,7 +35051,7 @@ EOF
 EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-02 00:00:00") }, # 1 Tag Vorlauf
-       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-07-06 18:00:00") },
+       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("2022-07-06 18:00:00") }, # nur temporäre Schilder, möglicherweise nicht mehr nach den Sommerferien 2022 verlängert
        text  => 'Jessnerstr.: zwischen Travestr. und Oderstr. dienstags zwischen 15 und 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 03.05. bis 06.07.',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
@@ -35148,6 +35144,17 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1523578356306169857#m
 #: by: https://nitter.net/pic/media%2FFSTWWSqXIAAPomO.jpg%3Fname%3Dorig
 	q4::inwork; 16166,25767 16121,25818
+EOF
+     },
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-12 00:00:00") }, # 1 Tag Vorlauf
+       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("2022-07-08 18:30:00") }, # nur temporäre Schilder, wird noch nach den Sommerferien 2022 verlängert?
+       text  => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 13.05. bis 08.07.',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
+       data  => <<EOF,
+#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern
+#: next_check: 2022-08-19
+	q4::temp::play 12822,10487 12897,10439
 EOF
      },
     );
