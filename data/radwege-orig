@@ -154,6 +154,7 @@ Bord gegen Gehweg	RW1; 8356,5195 8406,5258 8480,5350 8593,5491
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8356,5195 8348,5184 8219,5010 8130,4932 8014,4832
 alte Gehwegplatten, Bord gegen Gehweg, relativ breit	RW1; 8014,4832 8130,4932
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8130,4932 8219,5010 8348,5184 8356,5195
+letzte 30m mit Bordsteinradweg, nicht benutzungspflichtig	RW0; 7896,4732 8014,4832
 	RW2; 9242,7286 9242,7218 9242,7145
 	RW2; 9242,7145 9242,7218 9242,7286
 	RW2;RW2 9242,7145 9242,7044 9242,6962
@@ -518,8 +519,10 @@ für Radfahrer freigegebene Busspur hat eingeschränkte Geltungszeiten	RW1; 1125,3
 	RW10; 3048,4305 3266,4438 3344,4488 3425,4541
 	RW1;RW1 3710,4728 3637,4680 3527,4608 3425,4541
 #: by: https://twitter.com/SenUMVKBerlin/status/1509818033098919936
+#: confirmed_by: srt
 # früher:	RW2; 4343,5112 4173,5013 4153,5001 4132,4988
 # früher: eng, Wurzelhebungen und -schäden	RW2; 4132,4988 3929,4863 3826,4800
+#: note: der schadhafte Radweg ist weiterhin vorhanden
 für Linienverkehr frei	RW4; 4343,5112 4173,5013 4153,5001 4132,4988 3929,4863 3826,4800
 	RW2; 3826,4800 3754,4755 3710,4728
 	RW10; 3710,4728 3754,4755 3826,4800 3929,4863 4132,4988 4153,5001 4173,5013 4343,5112
@@ -1249,7 +1252,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="17"
-#: last_checked: 2022-04-26
+#: last_checked: 2022-05-14
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -2662,8 +2665,12 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW3;RW3 7069,13062 7172,13051
 #: confirmed_by ^^^
 #: by: ^^^
-#: note: es scheint üblich zu sein, den westlichen Radweg auch Richtung Norden (in der falschen Richtung) zu benutzen
-asphaltierter Radweg, ca. 1,50m breit	RW1; 11950,18529 11914,18303 11907,18246 11894,18146 11884,18063 11839,17738 11849,17655 11872,17522 11893,17397 11920,17245 11924,17224 12010,16774
+# 
+#: note: es scheint üblich zu sein, den westlichen Radweg auch Richtung Norden (in der falschen Richtung) zu benutzen vvv
+Beton- und Gehwegplatten	RW1; 11950,18529 11936,18440
+asphaltierter Radweg, ca. 1,50m breit	RW1; 11936,18440 11914,18303 11907,18246 11894,18146 11884,18063 11839,17738 11849,17655 11872,17522 11893,17397 11920,17245 11924,17224 12010,16774
+#: note ^^^
+# 
 #: by: Roland Maier (aber RW1!):
 #: confirmed_by: srt (mit RW2!) (ab 2015 teilweise RW1) (gesehen 2019: nur noch RW1)
 Verbundsteinpflasterradweg	RW1;RW1 12010,16774 12017,16734 12045,16574 12051,16535 12077,16380 12087,16322
@@ -3168,8 +3175,8 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
 #: XXX Bauarbeiten voraussichtlich bis Ende März 2021; mittlerweile bis Ende Februar 2022
-#: osm_watch: way id="333893474" version="22"
-#: osm_watch: way id="10275151" version="42"
+#: osm_watch: way id="333893474" version="24"
+#: osm_watch: way id="10275151" version="43"
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
@@ -3366,8 +3373,9 @@ die letzten Meter sind benutzungspflichtig	RW3; 10755,13152 10923,13156
 #: by: G. Chill:
 #: confirmed_by: srt
 	RW6;RW6 11934,22108 11890,22123 11863,22146 11876,22212 11950,22162
-die letzten Meter werden auf dem Gehweg geführt	RW3; 7621,17246 7602,17399
-	RW1; 7602,17399 7621,17246
+	RW3; 7621,17246 7612,17315
+	RW1; 7612,17315 7602,17399
+	RW1; 7602,17399 7612,17315 7621,17246
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121009.0950.376338.html vvv
 #: confirmed_by: ollivero & srt vvv
 	RW3;RW3 7621,17246 7644,17054 7647,17037 7666,16879
@@ -3788,7 +3796,7 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: viz2021:13.42941,52.533057,01.09.2021,08:00 (bis 31.12.2021, Gesamtbaumaßnahme bis 2022) (mittlerweile bis 28.2.2022) (mittlerweile bis 28.3.2022) (mittlerweile bis 4.4.2022) (mittlerweile bis 14.4.2022) (inaktiv)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2022-05-12 vvv
+#: last_checked: 2022-05-14 vvv
 # REMOVED --- #: next_check: 2022-04-14 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -4153,6 +4161,7 @@ gemeinsamer Geh- und Radweg	RW2; 17160,6239 17056,6133 16868,5938
 	RW4; 9873,18364 9888,18445 9897,18496
 #: by: mapillary
 	RW4; 9890,18931 9868,19023
+	RW4; 9866,19085 9868,19023
 Radweg nur aufgemalt	RW1; 9897,18496 9901,18522 9916,18610 9920,18636 9937,18728
 # REMOVED (Busspur ist jetzt in der Mitte der Fahrbahn mit den Tram-Schienen zusammengelegt) --- Busspur gilt Mo-Fr 6-18 Uhr	RW5; 9920,18636 9916,18610 9901,18522 9897,18496 9888,18445
 	RW3; 9920,18636 9916,18610 9901,18522 9897,18496
@@ -4467,6 +4476,7 @@ Gehweg für Radfahrer frei	RW1; 9073,20606 9027,20603 8904,20596
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/pop-up-radweg-auf-dem-adlergestell-wird-verstetigt_a345731
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="19"
+#: osm_watch: way id="319692412" version="8"
 #: last_checked: 2022-03-13
 #: check_frequency: 120d
 #: next_check: 2022-06-06
@@ -5715,7 +5725,7 @@ Asphalt, verkehrsberuhigt	RW10; 11931,19965 11907,19838 11907,19749
 # 
 # REMOVED --- #: next_check_id: LOEFFELBRUECKE-2019 --- #: XXX evtl. nur provisorisch während der Bauarbeiten --- #: last_checked: 2020-06-12 (mapillary) --- #: check_frequency: 45d --- #: next_check: 2020-12-31 --- Gehweg für Radfahrer frei
 asphaltiert, relativ breit	RW1; 11907,19749 11909,19706 11911,19667 11915,19580
-kein Radweg, allerdings ist der Gehweg asphaltiert, sehr breit und wenig frequentiert	RW0; 11927,19308 11915,19580
+Gehweg für Radfahrer frei, asphaltiert, sehr breit und wenig frequentiert	RW1; 11927,19308 11915,19580
 #: by: mapillary
 	RW4; 11915,19580 11911,19667 11909,19706 11907,19749
 # 
@@ -5730,7 +5740,7 @@ asphaltiert	RW1; 9660,17736 9721,17806
 	RW3; 8921,16578 8776,16268
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Umsetzung bis Herbst 2020)
 #: XXX wird aus der Radspur eine Busspur? vvv
-#: last_checked: 2022-04-29 vvv
+#: last_checked: 2022-05-14 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
 #: osm_watch: way id="162965650" version="21"
@@ -5765,7 +5775,8 @@ Gehweg für Radfahrer frei	RW1; 8394,4261 8615,4151
 # REMOVED (gibt's nicht mehr) --- Busspur gilt Mo-Fr 6-9 Uhr und 15-18 Uhr	RW5; 7368,4342 7410,4373 7450,4397 7482,4416
 Busspur gilt Mo-Fr 6-18 Uhr	RW5; 7482,4416 7597,4499
 	RW3; 5665,5126 5583,5179
-	RW1;RW1 4430,5324 4437,5335 4527,5475 4558,5525
+	RW1; 4430,5324 4437,5335 4527,5475 4558,5525
+Asphalt mit einigen Schäden	RW1; 4558,5525 4527,5475 4437,5335 4430,5324
 	RW3;RW3 4520,5793 4406,5850 4312,5889 4172,5918 4010,5888 3931,5825 3850,5801 3707,5758
 	RW6;RW6 4305,12377 4358,12365 4520,12358
 	RW3;RW3 9858,10350 9873,10285
@@ -6881,11 +6892,11 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2022-05-12
+#: last_checked: 2022-05-14
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünmarkierung	RW3; 12522,14385 12407,14470
-#: note: am Ende fehlen ein paar Meter Grünmarkierung
+#: note: am Ende fehlen ein paar Meter Grünmarkierung, dafür hier mit Bord von der restlichen Fahrbahn getrennt
 Grünmarkierung	RW4; 11709,14856 11864,14781 11998,14709 12025,14695 12123,14643 12317,14535
 #: note: am Ende fehlen ein paar Meter Grünmarkierung
 Grünmarkierung	RW4; 12407,14470 12522,14385
@@ -6902,7 +6913,7 @@ Grünmarkierung	RW4; 12407,14470 12522,14385
 #: by: https://nitter.net/pic/media%2FFQTkX5LWYAAirTE.jpg%3Fname%3Dorig
 #: source_id: viz2021:13.433058,52.536173,19.04.2022,07:00 (bis 30.6.2022)
 #: XXX hier wird vermutlich auch eine Grünmarkierung entstehen
-#: last_checked: 2022-05-12 vvv
+#: last_checked: 2022-05-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 #: osm_watch: way id="335479077" version="15"
@@ -7158,33 +7169,9 @@ Tempo 10	RW6;RW6 15691,5239 15656,5271
 Tempo 10	RW6;RW6 15731,5369 15656,5271 15539,5088 15498,5040 15402,4956
 Tempo 10	RW6;RW6 15539,5088 15577,5064
 # 
-#: next_check_id: POPUPRADWEGE-2020
-#: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Verstetigung)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1074831.php (Verstetigung; 14.4.2021 bis Ende Mai 2021)
-#: by: https://twitter.com/SenUVKBerlin/status/1384420835855900672
-#: by: https://twitter.com/VIZ_Berlin/status/1384862739504500739 (Markierungsarbeiten ab 26.4.2021)
-#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/geschuetzter-radweg-entsteht_a307845
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021)
-#: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187
-#: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320
-#: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021) (mittlerweile: 1. Quartal 2022 - 2. Quartal 2022)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
-#: by: https://berliner-abendblatt.de/2021/12/18/pop-up-radwege-bleiben-dauerhaft/
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191261.php (Verstetigung bis Ende April 2022)
-#: by: https://berliner-abendblatt.de/2022/03/29/kottbusser-strasse-pop-up-radweg-wird-verstetigt/
-#: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-wird-dauerhaft_a340844
-#: last_checked: 2022-05-10 vvv
-#: check_frequency: 7d vvv
-# REMOVED --- #: next_check: 2022-04-30 vvv
-# ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
-#: osm_watch: way id="30184955" version="27"
-provisorisch geschützter Radstreifen	RW4;RW4 11393,10390 11512,10105
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: POPUPRADWEGE-2020 --- #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm) --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Verstetigung) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1074831.php (Verstetigung; 14.4.2021 bis Ende Mai 2021) --- #: by: https://twitter.com/SenUVKBerlin/status/1384420835855900672 --- #: by: https://twitter.com/VIZ_Berlin/status/1384862739504500739 (Markierungsarbeiten ab 26.4.2021) --- #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/geschuetzter-radweg-entsteht_a307845 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084922.php (nächster Bauabschnitt, voraussichtlich bis zweite Junihälfte 2021) --- #: by: https://twitter.com/VIZ_Berlin/status/1394334895909085187 --- #: by: https://twitter.com/VIZ_Berlin/status/1394599855595704320 --- #: by: https://www.infravelo.de/projekt/kottbusser-strasse/ (4. Quartal 2021) (mittlerweile: 1. Quartal 2022 - 2. Quartal 2022) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022) --- #: by: https://berliner-abendblatt.de/2021/12/18/pop-up-radwege-bleiben-dauerhaft/ --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1191261.php (Verstetigung bis Ende April 2022) --- #: by: https://berliner-abendblatt.de/2022/03/29/kottbusser-strasse-pop-up-radweg-wird-verstetigt/ --- #: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/pop-up-radweg-wird-dauerhaft_a340844 --- #: last_checked: 2022-05-10 vvv --- #: check_frequency: 7d vvv --- # REMOVED --- #: next_check: 2022-04-30 vvv --- # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105 --- #: osm_watch: way id="30184955" version="27"
+Radspur hinter den parkenden Autos	RW4;RW4 11393,10390 11512,10105
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: note: Kottbusser Damm/Str. Richtung Norden
 Radspur hinter den parkenden Autos	RW4; 11888,9189 11803,9390 11785,9437 11757,9509 11745,9541 11710,9628 11673,9720 11623,9841 11543,10015
@@ -7364,7 +7351,7 @@ Poller	RW4; 9221,6179 9245,6352 9246,6364 9250,6414
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
-#: last_checked: 2022-05-01 vvv
+#: last_checked: 2022-05-15 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2021-10-18 vvv
 # REMOVED --- #: valid: -20211007 vvv
@@ -7447,7 +7434,7 @@ Tempo 10	RW6;RW6 14468,11203 14442,11101
 Tempo 10	RW6;RW6 14531,11142 14513,11075
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-04-12 (mapillary) vvv
+#: last_checked: 2022-05-13 (mapillary) vvv
 #: next_check: 2024-06-01 vvv
 	RW2; 10830,12279 10831,12371
 	RW4; 10831,12371 10804,12461

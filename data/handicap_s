@@ -50,8 +50,7 @@ Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4:
 Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,12280 16159,12301
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung S¸den	q3::inwork; 19181,13485 19198,13272 19180,13219
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3::inwork 7126,9825 7118,9870
-Moltkestraﬂenbr¸cke: f¸r Fuﬂg‰nger existiert eine Behelfsbr¸cke	q4::inwork 3867,4537 3898,4490
-Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 3839,4577 3867,4537
+Moltkestraﬂenbr¸cke: f¸r Fuﬂg‰nger existiert eine Behelfsbr¸cke	q3::inwork 3839,4577 3867,4537 3898,4490 3934,4441
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg mˆglich	q3::inwork 13702,13634 13711,13615 13769,13487
 Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
 Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr., Gehweg benutzen	q4::inwork 12556,15518 12605,15491 12621,15482
@@ -384,8 +383,8 @@ Helgol‰nder Ufer - Stromstr.: einige Fuﬂg‰nger	q1 6417,13052 6289,13081 6207,130
 Bundesratufer: Rampe, Fuﬂg‰nger	q2 6164,12980 6122,12971 6118,12980
 Lehmbruckstr.: Bordsteine	q4 13678,10685 13690,10715
 (Stadtpark Steglitz): Fuﬂg‰nger	q1 5787,4400 5836,4469 5841,4557 5890,4674 5947,4791 6000,4846 6006,4852
-Barsekowstr.: Fuﬂg‰nger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
-(Stadtpark Steglitz): Fuﬂg‰nger	q1 5588,4629 5643,4626
+Barsekowstr.: Fuﬂg‰nger	q2 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
+(Stadtpark Steglitz): Fuﬂg‰nger	q2 5588,4629 5643,4626
 (Stadtpark Steglitz): Fuﬂg‰nger, Bordstein	q3 5643,4626 5691,4636
 (Stadtpark Steglitz): Fuﬂg‰nger, Bordstein	q3 5709,4674 5715,4672 5724,4670
 (Stadtpark Steglitz): Fuﬂg‰nger	q2 5736,4686 5836,4654 5890,4674 6012,4662 6026,4744 6028,4765 6048,4797
@@ -1184,7 +1183,8 @@ Rampe	q2 10503,19371 10489,19406
 Schillingweg: eng, parkende Autos	q1 11259,23928 11224,23879 11190,23832 11165,23796 11134,23753 11105,23704 11069,23647 11051,23620 11008,23572 10974,23534 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128
 (Tomatenweg - Straﬂe 175): sehr eng	q3 12500,22895 12515,22898 12532,22902
 (Schloﬂpark Schˆnhausen): Fuﬂg‰nger	q1 10600,19225 10638,19149
-(Schloﬂpark Schˆnhausen - Majakowskiring): einige Fuﬂg‰nger	q1 10507,18959 10434,18907
+(Galenusstr. - Schloﬂallee): Fuﬂg‰nger	q3 11364,19313 11328,19413 11268,19519
+(Schloﬂpark Schˆnhausen - Majakowskiring): einige Fuﬂg‰nger	q3 10507,18959 10434,18907
 (Braunlager Str. - Tempelhofer Weg): Fuﬂg‰nger	q2 12062,5779 12017,5747
 Am Vierling: Fuﬂg‰nger	q1 -472,4185 -444,4126
 Mutter-Mochow-Weg: Fuﬂg‰nger	q1 -1849,2043 -1802,1919
@@ -1513,7 +1513,7 @@ Am Treptower Park: Bordstein	q2; 15166,8489 15079,8575
 Gleisdreieckpark: Rampe	q2 8011,10085 8013,10055 8027,10074 8042,10084
 Schwarzwurzel-Park: Bordstein, Fuﬂg‰nger, Spielplatz	q3 20698,18359 20814,18341 20823,18329
 (Pasewalker Str. - Vesaliusstr.): Rampe, Straﬂenbahnquerung	q3 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
-(Pasewalker Str. - Vesaliusstr.): Fuﬂg‰nger	q2 11884,19169 11841,19188 11763,19191
+(Pasewalker Str. - Vesaliusstr.): Fuﬂg‰nger	q3 11884,19169 11841,19188 11763,19191
 (Pasewalker Str. - Prenzlauer Promenade): Fuﬂg‰nger	q4 11913,19144 11928,19133 11947,19161 11958,19158
 (Flaschenhalspark, Weg entlang den Bahngleisen): einige Fuﬂg‰nger	q1 8423,9529 8414,9366 8393,9293 8374,9291
 (Flaschenhalspark, Zugang): Rampe	q2 8358,9068 8367,9006 8374,9074
@@ -1640,9 +1640,11 @@ B¸rgerstr. - Bendastr.: einige Fuﬂg‰nger	q1 12830,6254 12813,6334 12812,6343 128
 (U-Bhf. Scharnweberstr. - Scharnweberstr.): Fuﬂg‰nger	q2 3997,17840 4016,17918
 (Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): Fuﬂg‰nger, kurvig	q2 4997,19849 4992,19891 5029,19945 5151,19960 5220,19982
 Brienzer Str.: einige Fuﬂg‰nger	q2 7282,17318 7289,17277
-(Weg um den Sch‰fersee): einige Fuﬂg‰nger	q1 7320,17718 7215,17689 7189,17666 7173,17591 7222,17471 7253,17467 7350,17464 7455,17495 7477,17544 7466,17627 7415,17696 7320,17718
+(Weg um den Sch‰fersee): einige Fuﬂg‰nger	q1 7320,17718 7215,17689
+(Weg um den Sch‰fersee): einige Fuﬂg‰nger	q1 7189,17666 7173,17591 7222,17471 7253,17467 7350,17464 7455,17495 7477,17544 7466,17627 7415,17696 7320,17718
 (Sch‰fersee - Baseler Str.): einige Fuﬂg‰nger	q1 7215,17689 7185,17681 7166,17677 6897,17616
-(Genfer Str. - Sch‰fersee): einige Fuﬂg‰nger	q1 7161,17743 7185,17681 7189,17666
+(Genfer Str. - Sch‰fersee): einige Fuﬂg‰nger	q1 7076,18026 7089,17990 7116,17989 7123,17892 7127,17857 7162,17737
+(Genfer Str. - Sch‰fersee): einige Fuﬂg‰nger	q1 7162,17737 7185,17681 7189,17666
 Torfstraﬂensteg: einige Fuﬂg‰nger	q1 6847,14735 6824,14821
 (Parkplatz Getr‰nke Hoffmann): Parkplatzverkehr	q2 18647,12354 18715,12348
 (westlicher Wuhlewanderweg - ˆstlicher Wuhlewanderweg): Fuﬂg‰nger	q1 22347,13858 22389,13824 22426,13735 22445,13720 22457,13713
@@ -2653,7 +2655,7 @@ Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 786
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 13489,3857 13531,3768 13562,3688 13623,3523
 (Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fuﬂg‰nger	q1 13951,2697 13904,2787 13807,2863 13761,2993 13763,3018 13730,3111 13740,3252 13738,3302 13728,3332 13682,3411 13651,3449 13623,3523
 Lotte-Lenya-Bogen: Fuﬂg‰ngerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5373,10981
-(Parkweg B‰kepark): Fuﬂg‰nger	q1 5337,4192 5314,4216 5246,4240 5162,4256 5129,4262 5090,4291 5015,4339 4957,4448 4870,4609 4848,4668 4810,4765 4795,4801 4760,4843 4742,4885
+(Parkweg B‰kepark): Fuﬂg‰nger	q1 5337,4192 5314,4216 5246,4240 5162,4256 5129,4262 5090,4291 5015,4339 4957,4448 4873,4604 4848,4668 4810,4765 4795,4801 4760,4843 4742,4885
 (Parkweg B‰kepark): Fuﬂg‰nger	q1 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
 (Parkweg B‰kepark): Fuﬂg‰nger	q1 5282,4145 5239,4175 5161,4206 5131,4207
 (Parkweg Schloﬂpark Lichterfelde): Fuﬂg‰nger	q1 4603,3704 4611,3705 4617,3706 4657,3711 4694,3702 4723,3681 4754,3651 4815,3615 4858,3613 4910,3599

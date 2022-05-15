@@ -186,7 +186,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: by: https://nitter.net/VIZ_Berlin/status/1516286721096310787#m
 #: by: https://nitter.net/pic/media%2FFQTg6WoXsAYOgpa.jpg%3Fname%3Dorig
 #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 vvv
-#: last_checked: 2022-05-03 (mapillary) vvv
+#: last_checked: 2022-05-14 vvv
 #: next_check: 2022-05-31 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Umwege, Bordsteine	q4::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
@@ -267,7 +267,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-04-19
+#: last_checked: 2022-05-13 (mapillary)
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -499,7 +499,8 @@ Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwor
 #: note: auch als "Verlängerte Brückenstraße" bezeichnet
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2022-04-22 (mapillary)
+#: osm_watch: way id="40451054" version="12"
+#: last_checked: 2022-05-14 (osm)
 #: next_check: 2022-05-31
 # REMOVED --- #: valid: -20220401
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
@@ -864,17 +865,12 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: osm_watch: way id="1056377427" version="1"
 #: also_indoor: traffic (G,ex-H,B)
 #: priority: #A
-#: last_checked: 2022-01-20 (osm)
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-04-30
-Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q4::inwork 3867,4537 3898,4490
-# 
-#: by: https://westnordost.de/p/76978.jpg (Bauarbeiten der Wasserbetriebe bis September 2023)
-#: also_indoor: traffic (G)
-#: last_checked: 2022-01-20 (osm)
+#: last_checked: 2022-05-15
 #: check_frequency: 180d
-#: next_check: 2023-09-30
-Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 3839,4577 3867,4537
+#: next_check: 2024-03-01
+Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,4577 3867,4537 3898,4490 3934,4441
+# 
+# REMOVED (hier nicht mehr bzw. integriert in die Moltkestraßenbrückensperrung) --- #: by: https://westnordost.de/p/76978.jpg (Bauarbeiten der Wasserbetriebe bis September 2023) --- #: also_indoor: traffic (G) --- #: last_checked: 2022-01-20 (osm) --- #: check_frequency: 180d --- #: next_check: 2023-09-30 --- Enzianstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt	q3::inwork 3806,4628 3839,4577 3867,4537
 # 
 ### Prenzlauer Berg ###
 # 
@@ -1454,8 +1450,9 @@ Bundesratufer: Rampe, Fußgänger	q2 6164,12980 6122,12971 6118,12980
 Lehmbruckstr.: Bordsteine	q4+ 13678,10685 13690,10715
 #: note: dieser Abschnitt ist legal befahrbar
 (Stadtpark Steglitz): Fußgänger	q1 5787,4400 5836,4469 5841,4557 5890,4674 5947,4791 6000,4846 6006,4852
-Barsekowstr.: Fußgänger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
-(Stadtpark Steglitz): Fußgänger	q1 5588,4629 5643,4626
+#: note: Grünanlagenschild mit "Radfahren verboten"-Zusatzschild
+Barsekowstr.: Fußgänger	q2 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
+(Stadtpark Steglitz): Fußgänger	q2 5588,4629 5643,4626
 #: XXX_prog Bordstein zur Sedanstr., ansonsten q1
 (Stadtpark Steglitz): Fußgänger, Bordstein	q3 5643,4626 5691,4636
 #: XXX_prog Bordstein zur Sedanstr., ansonsten q2
@@ -1465,6 +1462,7 @@ Barsekowstr.: Fußgänger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
 (Stadtpark Steglitz): Fußgänger	q2 6026,4744 6030,4743 6092,4717 6107,4718
 (Stadtpark Steglitz): Fußgänger	q1 5589,4617 5588,4629 5582,4675 5555,4743
 (Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5406,4631
+#: note: Grünanlagenschild, allerdings wird hier die offizielle Steglitz-Route entlanggeführt (!)
 (Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5852,4814 5885,4813 5947,4791 6022,4746 6026,4744
 #: XXX_prog: für Anhänger q2
 #: note: fünf Schwellen
@@ -2545,7 +2543,10 @@ Rampe	q2 10503,19371 10489,19406
 Schillingweg: eng, parkende Autos	q1 11259,23928 11224,23879 11190,23832 11165,23796 11134,23753 11105,23704 11069,23647 11051,23620 11008,23572 10974,23534 10855,23403 10717,23258 10700,23251 10629,23222 10396,23128
 (Tomatenweg - Straße 175): sehr eng	q3 12500,22895 12515,22898 12532,22902
 (Schloßpark Schönhausen): Fußgänger	q1 10600,19225 10638,19149
-(Schloßpark Schönhausen - Majakowskiring): einige Fußgänger	q1 10507,18959 10434,18907
+#: note: explizit als Gehweg ohne Freigabe ausgeschildert; nicht besonders breit
+(Galenusstr. - Schloßallee): Fußgänger	q3 11364,19313 11328,19413 11268,19519
+#: note: Grünanlagen-Schild mit expliziten Radfahren-verboten-Zusatzschild (früher: q1)
+(Schloßpark Schönhausen - Majakowskiring): einige Fußgänger	q3 10507,18959 10434,18907
 # REMOVED --- #: note: nachts sind die Ketten schlecht sichtbar --- Alex-Wedding-Str.: Fahrbahn durch Ketten gesperrt, Ausweichen auf Gehweg	q4 11085,13239 11045,13183
 (Braunlager Str. - Tempelhofer Weg): Fußgänger	q2 12062,5779 12017,5747
 Am Vierling: Fußgänger	q1 -472,4185 -444,4126
@@ -2996,7 +2997,8 @@ Gleisdreieckpark: Rampe	q2 8011,10085 8013,10055 8027,10074 8042,10084
 #: XXX_prog BS an der Schwarzwurzelstr., ansonsten q2
 Schwarzwurzel-Park: Bordstein, Fußgänger, Spielplatz	q3 20698,18359 20814,18341 20823,18329
 (Pasewalker Str. - Vesaliusstr.): Rampe, Straßenbahnquerung	q3 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
-(Pasewalker Str. - Vesaliusstr.): Fußgänger	q2 11884,19169 11841,19188 11763,19191
+#: note: Gehweg-Schild, keine Freigabe für Radfahrer
+(Pasewalker Str. - Vesaliusstr.): Fußgänger	q3 11884,19169 11841,19188 11763,19191
 (Pasewalker Str. - Prenzlauer Promenade): Fußgänger	q4 11913,19144 11928,19133 11947,19161 11958,19158
 (Flaschenhalspark, Weg entlang den Bahngleisen): einige Fußgänger	q1 8423,9529 8414,9366 8393,9293 8374,9291
 (Flaschenhalspark, Zugang): Rampe	q2 8358,9068 8367,9006 8374,9074
@@ -3162,9 +3164,11 @@ Bürgerstr. - Bendastr.: einige Fußgänger	q1 12830,6254 12813,6334 12812,6343 128
 (Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): Fußgänger, kurvig	q2 4997,19849 4992,19891 5029,19945 5151,19960 5220,19982
 # REMOVED (Absenkung existiert am Wendehammer, aber q2 beibehalten) --- #: XXX_prog BS am Wendehammer, ansonsten q1
 Brienzer Str.: einige Fußgänger	q2 7282,17318 7289,17277
-(Weg um den Schäfersee): einige Fußgänger	q1 7320,17718 7215,17689 7189,17666 7173,17591 7222,17471 7253,17467 7350,17464 7455,17495 7477,17544 7466,17627 7415,17696 7320,17718
+(Weg um den Schäfersee): einige Fußgänger	q1 7320,17718 7215,17689
+(Weg um den Schäfersee): einige Fußgänger	q1 7189,17666 7173,17591 7222,17471 7253,17467 7350,17464 7455,17495 7477,17544 7466,17627 7415,17696 7320,17718
 (Schäfersee - Baseler Str.): einige Fußgänger	q1 7215,17689 7185,17681 7166,17677 6897,17616
-(Genfer Str. - Schäfersee): einige Fußgänger	q1 7161,17743 7185,17681 7189,17666
+(Genfer Str. - Schäfersee): einige Fußgänger	q1 7076,18026 7089,17990 7116,17989 7123,17892 7127,17857 7162,17737
+(Genfer Str. - Schäfersee): einige Fußgänger	q1 7162,17737 7185,17681 7189,17666
 Torfstraßensteg: einige Fußgänger	q1 6847,14735 6824,14821
 (Parkplatz Getränke Hoffmann): Parkplatzverkehr	q2+ 18647,12354 18715,12348
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): Fußgänger	q1 22347,13858 22389,13824 22426,13735 22445,13720 22457,13713
@@ -4071,6 +4075,7 @@ Max-und Herta-Naujocks-Weg: Fußgänger, schmaler Weg	q2- 16036,18604 16077,18674 
 #: by: Michael Kiekbusch vvv
 #: corrected_by: srt (q4 -> q2)
 #: note: Michael meint, dass man nur "die Strecke von Heinersdorf kommend _in Richtung Pankow_ empfehlen" kann
+#: note: inkonsistente Ausschilderung: teilweise mit "Radfahrer frei"-Zusatzschild, teilweise Gehweg-Schilder ohne Freigabe
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 #: corrected_by: srt (Konkretisierung)
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
@@ -4754,7 +4759,7 @@ Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 786
 Lotte-Lenya-Bogen: Fußgängerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5373,10981
 # 
 #: by: Kai Brueggemann [AM] vvv
-(Parkweg Bäkepark): Fußgänger	q1 5337,4192 5314,4216 5246,4240 5162,4256 5129,4262 5090,4291 5015,4339 4957,4448 4870,4609 4848,4668 4810,4765 4795,4801 4760,4843 4742,4885
+(Parkweg Bäkepark): Fußgänger	q1 5337,4192 5314,4216 5246,4240 5162,4256 5129,4262 5090,4291 5015,4339 4957,4448 4873,4604 4848,4668 4810,4765 4795,4801 4760,4843 4742,4885
 (Parkweg Bäkepark): Fußgänger	q1 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
 (Parkweg Bäkepark): Fußgänger	q1 5282,4145 5239,4175 5161,4206 5131,4207
 #: corrected_by: srt (q2 -> q1, "Kinder" entfernt)
