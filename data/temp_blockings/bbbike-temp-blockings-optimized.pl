@@ -5914,11 +5914,11 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
-#: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022) (mittlerweile bis 20.5.2022)
+#: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022) (mittlerweile bis 20.5.2022) (bis 31.5.2022)
 #: also_indoor: traffic (B)
 #: last_checked: 2022-05-12
 #: check_frequency: 30d
-#: next_check: 2022-05-20
+#: next_check: 2022-05-31
 	q4::inwork 11273,12301 11355,12331
 ',
          'from' => undef,
@@ -6146,6 +6146,19 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Braillestr.: Arbeiten der Wasserbetriebe, Fahrbahn gesperrt, voraussichtlich bis August 2022',
          'type' => 'handicap',
          'until' => 1661983200
+       },
+       undef,
+       {
+         'data' => '#: by: mapillary
+#: last_checked: 2022-05-14 (mapillary)
+#: check_frequency: 180d
+	2::inwork 17236,-602 17076,-644 16997,-663
+',
+         'from' => undef,
+         'id' => 3554,
+         'text' => 'Mauerweg Rudow: Abschnitt westlich der Schönefelder Str. kann durch Bauzäune abgesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

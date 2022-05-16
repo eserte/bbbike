@@ -34895,11 +34895,11 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
-#: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022) (mittlerweile bis 20.5.2022)
+#: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022) (mittlerweile bis 20.5.2022) (bis 31.5.2022)
 #: also_indoor: traffic (B)
 #: last_checked: 2022-05-12
 #: check_frequency: 30d
-#: next_check: 2022-05-20
+#: next_check: 2022-05-31
 	q4::inwork 11273,12301 11355,12331
 EOF
      },
@@ -35187,6 +35187,17 @@ EOF
 	2::temp 17782,5698 17807,5730 17916,5675
 	2::temp 17810,5736 17877,5860
 	2::temp 18013,5627 17916,5675 17931,5695
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Mauerweg Rudow: Abschnitt westlich der Schönefelder Str. kann durch Bauzäune abgesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: mapillary
+#: last_checked: 2022-05-14 (mapillary)
+#: check_frequency: 180d
+	2::inwork 17236,-602 17076,-644 16997,-663
 EOF
      },
     );
