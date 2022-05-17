@@ -4363,7 +4363,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Br¸ckenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G,H)
-#: last_checked: 2022-04-18 (indoor)
+#: last_checked: 2022-05-17 (indoor)
 #: check_frequency: 30d
 #: next_check: 2022-06-04
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
@@ -4858,8 +4858,8 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-im-bau/?postID=673580#post673580 (ab dem kommenden Jahr, also 2021)
 #: confirmed_by: srt (Sackgassenschild am nˆrdlichen und s¸dlichen Ende, als Fuﬂg‰nger und Radfahrer kommt man durch)
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung f¸r Fuﬂg‰nger und Radfahrer?
-#: osm_watch: way id="26322046" version="24"
-#: osm_watch: way id="165832806" version="21"
+#: osm_watch: way id="26322046" version="25"
+#: osm_watch: way id="165832806" version="22"
 #: last_checked: 2022-04-24
 #: check_frequency: 30d
 	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17497,8623
@@ -4923,9 +4923,10 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210716/
 #: confirmed_by: srt
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
-#: osm_watch: node id="8599852570" version="1"
-#: osm_watch: node id="8599852571" version="1"
-#: last_checked: 2021-11-17 (mapillary)
+# REMOVED --- #: osm_watch: node id="8599852570" version="2"
+# REMOVED --- #: osm_watch: node id="8599852571" version="1"
+#: osm_watch: way id="1060570985" version="1"
+#: last_checked: 2022-05-17 (osm)
 #: check_frequency: 180d
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 ',
@@ -5170,26 +5171,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1145930.php (Verzˆgerung)
-#: by: https://www.berliner-woche.de/luebars/c-bauen/fahrbahn-der-strasse-am-vierrutenberg-erst-im-fruehjahr-fertig_a328514
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9770 (Frage)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9876 (mˆglicherweise bis M‰rz 2022?)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1179022.php (Fahrbahninstandsetzungsmaﬂnahme 19.04.2022 - 17.05.2022)
-#: by: https://www.berliner-woche.de/luebars/c-verkehr/strassenbau-geht-nach-pause-weiter_a338612
-#: also_indoor: traffic
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: last_checked: 2022-01-19 (kartaview)
-# REMOVED --- #: next_check: 2022-01-03
-	q4::inwork 5793,23422 5893,23287
-',
-         'from' => 1627682400,
-         'id' => 3414,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1106283.php',
-         'text' => 'Am Vierrutenberg: Bauarbeiten zwischen Zehntwerderweg und Benekendorffstr., evtl. wird die Fahrbahn nicht benutzbar sein, bis voraussichtlich Mitte Mai 2022',
-         'type' => 'handicap',
-         'until' => 1652803200
-       },
+       undef,
        undef,
        {
          'data' => '	q4::inwork 60206,86603 59776,86911 59791,87005 59779,87064 59776,87207 59766,87273
@@ -5804,7 +5786,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch f¸r Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-04-30 (mapillary) vvv
+#: last_checked: 2022-05-16 (daf) (Lynarstr.) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-09-30 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
@@ -5897,21 +5879,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch f¸r Radfahrer	q3::inwork 3
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: STRALAUER-2019
-#: note: explizites Verbot f¸r Radfahrer auf der Stralauer Allee Richtung S¸dosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar)
-#: last_checked: 2022-05-15
-#: check_frequency: 30d
-#: next_check: 2022-06-30
-	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
-',
-         'from' => 1648674360,
-         'id' => 3531,
-         'source_id' => 'https://twitter.com/VIZ_Berlin/status/1509046513573498881',
-         'text' => 'Stralauer Allee: Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., Geh- und Radweg Richtung Osten gesperrt, bis 30.6.2022',
-         'type' => 'gesperrt',
-         'until' => 1656626400
-       },
+       undef,
        {
          'data' => '#: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
 #: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraﬂe, bis 13.5.2022) (mittlerweile bis 20.5.2022) (bis 31.5.2022)

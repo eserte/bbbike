@@ -281,8 +281,13 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 3m breit, mit Betonbordsteinen von der restlichen Fahrbahn getrennt	RW4; 13206,10651 13305,10789 13332,10832
 # 
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
-#: note: nur ein kleines Stück an einer Einfahrt wurde neu gemacht und auch tadellosen Asphalt
-Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430
+#: next_check_id: STRALAUER-2019
+#: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
+#: last_checked: 2022-05-17
+#: check_frequency: 30d
+#: next_check: 2022-06-30
+provisorische Radspur	RW4; 13596,10722 13678,10685 13779,10642 13919,10583
+Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
 gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14218,10430 14405,10340 14558,10264
 	RW2; 13986,10549 13919,10583 13779,10642 13678,10685 13596,10722
 	RW4; 14103,10489 13986,10549
@@ -427,6 +432,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (zwischen Moritzplatz und Alte Jakobstraße Verbreiterung auf 2,50m und Asphaltierung)
 #: by: http://www.infravelo.de/projekt/oranienstrasse-nordseite-bauabschnitt-1/ (zwischen Stallschreiberstr. und Alte Jakobstr., bis 4. Quartal 2020) (alter Eintrag) (mittlerweile wieder aktiv) (2. Quartal 2020 - 2. Quartal 2022)
 #: by: http://www.infravelo.de/projekt/oranienstrasse-nordseite-bauabschnitt-1-2/ (2. Quartal 2020 - 4. Quartal 2021) (mittlerweile wieder inaktiv)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1207509.php (zur Radwegverbreiterung Richtung Westen; zur anderen Richtung wurde nichts geschrieben)
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
@@ -995,12 +1001,13 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,12.01.2022,11:00 (bis 2028) (mittlerweile bis 30.3.2022) (inaktiv)
 #: source_id: viz2021:13.463301,52.496054,30.03.2022,07:00 (bis 14.4.2022) (inaktiv)
 #: source_id: viz2021:13.463301,52.496054,14.04.2022,15:00 (bis 2028) (inaktiv)
-#: source_id: viz2021:13.463301,52.496054,08.04.2022,07:00 (bis 26.4.2022) (bis 24.5.2022)
+#: source_id: viz2021:13.463301,52.496054,08.04.2022,07:00 (bis 26.4.2022) (bis 24.5.2022) (bis 18.5.2022)
 #: source_id: viz2021:13.463301,52.496054,26.04.2022,15:00 (bis 2028) (inaktiv)
-#: source_id: viz2021:13.463301,52.496054,24.05.2022,15:00 (bis 2028)
+#: source_id: viz2021:13.463301,52.496054,24.05.2022,15:00 (bis 2028) (inaktiv)
+#: source_id: viz2021:13.463301,52.496054,18.05.2022,12:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-05-07 vvv
+#: last_checked: 2022-05-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169
@@ -1675,7 +1682,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: by: https://molkenmarkt01.hi-res-cam.com/ (webcam)
 #: XXX temporäre Radwegführung
-#: last_checked: 2022-04-19
+#: last_checked: 2022-05-17 (webcam)
 #: check_frequency: 30d
 temporäre Führung als Bürgersteigradweg	RW1; 10887,12570 10954,12635
 # wieder herstellen:	RW4; 10887,12570 10954,12635
@@ -6944,12 +6951,12 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26300.pdf (Markierung wird im Zuge der Gleisbauarbeiten dauerhaft gemacht)
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
-#: osm_watch: way id="26708088" version="27"
+#: osm_watch: way id="26708088" version="28"
 #: last_checked: 2022-05-11 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
-#: osm_watch: way id="671329664" version="7"
+#: osm_watch: way id="671329664" version="9"
 provisorische Radspur	RW4; 17991,6431 17962,6674
 provisorische Radspur	RW4; 17962,6674 17919,6968
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968

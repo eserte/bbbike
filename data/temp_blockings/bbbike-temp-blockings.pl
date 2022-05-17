@@ -30114,7 +30114,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G,H)
-#: last_checked: 2022-04-18 (indoor)
+#: last_checked: 2022-05-17 (indoor)
 #: check_frequency: 30d
 #: next_check: 2022-06-04
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
@@ -32355,8 +32355,8 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/14488-parkstadt-karlshorst-im-bau/?postID=673580#post673580 (ab dem kommenden Jahr, also 2021)
 #: confirmed_by: srt (Sackgassenschild am nördlichen und südlichen Ende, als Fußgänger und Radfahrer kommt man durch)
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
-#: osm_watch: way id="26322046" version="24"
-#: osm_watch: way id="165832806" version="21"
+#: osm_watch: way id="26322046" version="25"
+#: osm_watch: way id="165832806" version="22"
 #: last_checked: 2022-04-24
 #: check_frequency: 30d
 	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17497,8623
@@ -32594,9 +32594,10 @@ EOF
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20210716/
 #: confirmed_by: srt
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet?
-#: osm_watch: node id="8599852570" version="1"
-#: osm_watch: node id="8599852571" version="1"
-#: last_checked: 2021-11-17 (mapillary)
+# REMOVED --- #: osm_watch: node id="8599852570" version="2"
+# REMOVED --- #: osm_watch: node id="8599852571" version="1"
+#: osm_watch: way id="1060570985" version="1"
+#: last_checked: 2022-05-17 (osm)
 #: check_frequency: 180d
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 EOF
@@ -34775,7 +34776,7 @@ EOF
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-04-30 (mapillary) vvv
+#: last_checked: 2022-05-16 (daf) (Lynarstr.) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-09-30 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
@@ -34876,16 +34877,12 @@ EOF
 EOF
      },
      { from  => 1648674360, # 2022-03-30 23:06
-       until => 1656626400, # 2022-07-01 00:00
+       until => 1652807573, # 1656626400, # 2022-07-01 00:00
        text  => 'Stralauer Allee: Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., Geh- und Radweg Richtung Osten gesperrt, bis 30.6.2022',
        type  => 'gesperrt',
        source_id => 'https://twitter.com/VIZ_Berlin/status/1509046513573498881',
        data  => <<EOF,
-#: next_check_id: STRALAUER-2019
-#: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar)
-#: last_checked: 2022-05-15
-#: check_frequency: 30d
-#: next_check: 2022-06-30
+# REMOVED (mittlerweile provisorische Radspur) --- #: next_check_id: STRALAUER-2019 --- #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar) --- #: last_checked: 2022-05-15 --- #: check_frequency: 30d --- #: next_check: 2022-06-30
 	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
 EOF
      },
