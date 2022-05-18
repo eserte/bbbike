@@ -1728,8 +1728,8 @@ Nalepastr.: Kopfsteinpflaster	Q2 17052,7738 17059,8097
 Nalepastr.: Asphalt	Q0 17050,7687 17052,7738
 Nalepastr.: Beton, Eisenbahnschienen	Q1 17050,7687 17047,7619
 Nalepastr.: fester enger Sandweg	Q2 17052,7507 17047,7619
-Nalepastr.: Beton, Eisenbahnschienen	Q1 17052,7507 17135,7377 17190,7306
-Nalepastr.: sehr guter Asphalt	Q0 17190,7306 17211,7280 17286,7173 17352,7051 17459,6854 17510,6751 17550,6677 17614,6571
+Nalepastr.: Beton, Eisenbahnschienen	Q1 17052,7507 17135,7377 17165,7338
+Nalepastr.: sehr guter Asphalt	Q0 17165,7338 17190,7306 17211,7280 17286,7173 17352,7051 17459,6854 17510,6751 17550,6677 17614,6571
 Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336 21357,5278 21355,5254 21346,5165 21345,5157 21343,5140 21335,5075 21324,4986
 Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21324,4986 21306,4876 21299,4831 21263,4804 21287,4757 21332,4655
 Eiselenweg: Asphalt	Q0 21206,5420 21364,5430 21442,5414
@@ -2277,9 +2277,8 @@ Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0 11917,11186 11944,11152
 (Weg am Humboldthain): grobes Verbundsteinpflaster	Q2 9255,15816 9092,15789
 (Weg am Humboldthain): Verbundsteinpflaster	Q1 9092,15789 8934,15740
 Wasserweg: Kopfsteinpflaster	Q2 15680,8914 15873,8884
-Wasserweg: fester Sandweg	Q2 15873,8884 15981,8872 16028,8867 16161,8852 16201,8860
-Wasserweg: Beton/Asphalt	Q0 16201,8860 16358,8841 16388,8821
-Umfahrung Spreepark: fester Sandweg, Baumstümpfe	Q2 16028,8867 16084,8833 16161,8852
+Wasserweg: fester Sandweg	Q2 15873,8884 15981,8872 16028,8867 16086,8860 16161,8852 16201,8860
+Wasserweg: Beton/Asphalt, in der Fahrbahnmitte fehlt der Asphalt	Q1 16201,8860 16358,8841 16388,8821
 Kiehnwerderallee: asphaltiert, einzelne Wurzelhebungen	Q0 16388,8821 16436,8687 16490,8432 16534,8182 16602,7810 16620,7574 16633,7434
 (Uferweg - Kiehnwerderallee): Waldweg	Q2 16627,8581 16577,8581 16436,8687
 (Uferweg - Kiehnwerderallee): Waldweg	Q2 16657,8443 16490,8432
@@ -3016,8 +3015,7 @@ Hönower Str. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18490,9387 18377,9366
 (Fortsetzung Wandlitzstr.): Betonplattenstraße	Q2 17981,9000 17837,9086
 Schmiedeberger Weg: Verbundsteinpflaster	Q0 18021,8976 17956,8935
 Grimnitzstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18070,8945 17929,8742
-Müritzstr.: schlechtes Kopfsteinpflaster	Q3 18147,8895 18009,8687
-Müritzstr.: schlechtes Kopfsteinpflaster	Q3 18009,8687 17930,8567
+Müritzstr.: schlechtes Kopfsteinpflaster	Q3 18147,8895 18009,8687 17930,8567
 Hoher Wallgraben: Asphalt	Q0 17988,8350 17999,8336
 Hoher Wallgraben: Asphalt mit Schäden	Q2 17999,8336 18078,8112
 Hoher Wallgraben: Asphalt mit einigen Rissen	Q1 18078,8112 18101,8044
@@ -10469,6 +10467,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0 5621,12150 5606,12232 5604,12244
 (Margueritenring - Köpenicker Str.): alter Asphalt	Q1 17046,1708 17100,1650
 (Grünstreifen 1929): Verbundsteinpflaster	Q1 17102,2420 17039,2358 17179,2186 17194,2131 17193,2062
 (Am Plänterwald - Spreepark): relativ glattes Pflaster	Q1 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
+(Am Plänterwald - Spreepark): unbefestigt	Q2 16084,8833 16086,8860
 Lepsiusstr.: Asphalt mit einigen Schäden und Schlaglöchern	Q0 4520,5793 4558,5863 4603,5954 4646,6040 4652,6052 4689,6122 4716,6173 4730,6198 4776,6284 4840,6405 4846,6417 4894,6509
 Reichenhaller Str.: Verbundsteinpflaster	Q1 3094,7790 3198,7787
 Hilda-Geiringer-Weg: gepflastert	Q2 8236,13495 8241,13393
@@ -13821,7 +13820,8 @@ In den Kaveln: Beton	Q1 4041,20472 4026,20428 3999,20367
 (Uferweg am Nordgraben): Parkweg	Q1 3604,20603 3852,20415
 (Uferweg am Nordgraben): teilweise asphaltiert, mäßige Qualität	Q1 3852,20415 3942,20367 3999,20367 4026,20356
 (Uferweg am Nordgraben): Parkweg, teilweise mit Schotter	Q1 4026,20356 4052,20321 4088,20301 4187,20258 4332,20211 4418,20185 4808,20159
-Stechlinstr.: schlechtes Kopfsteinpflaster	Q3 18005,8517 18086,8634
+Stechlinstr.: schlechtes Kopfsteinpflaster, teilweise mit Asphaltstreifen	Q3; 18005,8517 18086,8634
+Stechlinstr.: schlechtes Kopfsteinpflaster	Q3; 18086,8634 18005,8517
 Stechlinstr.: schlechtes Kopfsteinpflaster	Q3 18086,8634 18222,8843
 Hobeckweg: guter Asphalt	Q0 27190,13327 27414,13508 27530,13627 27556,13641
 Rosenorter Steig: Verbundsteinpflaster	Q1 -1349,23497 -1451,23525 -1535,23575 -1617,23624 -1700,23671

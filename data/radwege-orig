@@ -994,6 +994,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://viz.berlin.de/2022/02/elsenbruecke-sperrung/
 #: by: https://berliner-abendblatt.de/2022/02/03/routinekontrolle-heute-nacht-werden-die-treptower-behelfsbruecken-gesperrt/
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1184505.php
+#: by: https://nitter.net/pic/media%2FFS9kp1MXwAIeuCh.jpg%3Fname%3Dorig (wird die Radspur wieder aktiviert?)
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
@@ -1001,14 +1002,16 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,12.01.2022,11:00 (bis 2028) (mittlerweile bis 30.3.2022) (inaktiv)
 #: source_id: viz2021:13.463301,52.496054,30.03.2022,07:00 (bis 14.4.2022) (inaktiv)
 #: source_id: viz2021:13.463301,52.496054,14.04.2022,15:00 (bis 2028) (inaktiv)
-#: source_id: viz2021:13.463301,52.496054,08.04.2022,07:00 (bis 26.4.2022) (bis 24.5.2022) (bis 18.5.2022)
+#: source_id: viz2021:13.463301,52.496054,08.04.2022,07:00 (bis 26.4.2022) (bis 24.5.2022) (bis 18.5.2022) (inaktiv)
 #: source_id: viz2021:13.463301,52.496054,26.04.2022,15:00 (bis 2028) (inaktiv)
 #: source_id: viz2021:13.463301,52.496054,24.05.2022,15:00 (bis 2028) (inaktiv)
 #: source_id: viz2021:13.463301,52.496054,18.05.2022,12:00 (bis 2028)
+#: source_id: viz2021:13.46264,52.49544,18.05.2022,16:23 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-05-17 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2022-05-18 vvv
+#: check_frequency: 7d vvv
+# REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169
 	RW4; 14501,10169 14405,10027 14323,9913
@@ -1744,7 +1747,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/ziel-ein-durchgaengig-sicherer-radweg_a337148 (Erwähnung)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2022-05-11 vvv
+#: last_checked: 2022-05-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -2408,8 +2411,20 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 	RW4;RW4 14026,10869 14024,10861 14011,10812
 	RW1;RW1 14134,11272 14096,11134 14076,11057 14043,10928 14026,10869
 die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
-die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
-	RW3;RW3 14608,10409 14641,10552 14675,10693 14671,10751
+	RW3; 14608,10409 14641,10552 14675,10693 14671,10751
+	RW3; 14671,10751 14675,10693 14641,10552
+#: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=711261#post711261 (1. Bauvorhaben (nördl.); geplante Fertigstellung: Sommer 2025)
+#: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
+#: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
+#: last_checked: 2022-05-18 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2023-03-15 vvv
+Radspur aufgehoben, Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
+#	RW3; 14641,10552 14608,10409
+#die letzten 20 Meter werden auf dem Gehweg geführt	RW3; 14608,10409 14558,10264
+#: next_check ^^^
+#: last_checked ^^^
+#: check_frequency ^^^
 	RW3;RW2 14671,10751 14680,10837
 	RW3; 15261,10738 15004,10791 14904,10812
 	RW4; 14904,10812 14810,10832 14717,10855 14680,10837
@@ -4484,9 +4499,10 @@ Gehweg für Radfahrer frei	RW1; 9073,20606 9027,20603 8904,20596
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="19"
 #: osm_watch: way id="319692412" version="8"
+#: source_id: viz2021:13.522726,52.448104,20.05.2022,06:00 (hier nur bis 4.6.2022)
 #: last_checked: 2022-03-13
 #: check_frequency: 120d
-#: next_check: 2022-06-06
+#: next_check: 2022-06-04
 provisorisch geschützter Radstreifen	RW4; 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464
 #: note die Radspur sah etwas provisorisch aus, aber auf dem Gehweg ist jetzt definitiv kein Platz mehr
@@ -4623,9 +4639,9 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 #: next_check_id: BAHNHOF-2021
 #: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/
 #: XXX während der Bauarbeiten ist der Radweg auf der Nordseite gesperrt, es gibt auch keinen Gehweg
-#: last_checked: 2022-04-17 (mapillary)
+#: last_checked: 2022-04-29 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2022-05-20
+#: next_check: 2022-05-23
 # REMOVED (Original-Eintrag) ---	RW1; 12723,20691 12672,20720
 	RW0; 12723,20691 12672,20720
 	RW1; 12672,20720 12600,20742 12578,20749

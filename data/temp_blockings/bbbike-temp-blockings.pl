@@ -32396,15 +32396,16 @@ EOF
 	2::inwork 35479,7051 35482,7099
 EOF
      },
-     { from  => $isodate2epoch->("2022-02-03 01:00:00"), # $isodate2epoch->("2021-07-02 00:00:00"), # $isodate2epoch->("2021-05-28 00:00:00"), # 1613631600, # 2021-02-18 08:00
-       until => $isodate2epoch->("2022-02-07 04:30:00"), # $isodate2epoch->("2021-07-05 03:00:00"), # 1613977200, # 2021-02-22 08:00
-       text  => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, Fußgänger und Radfahrer sind auch betroffen, vom 4.2.2022 01:00 bis 7.2.2022 04:30',
+     { from  => $isodate2epoch->("2022-05-20 01:30:00"), # $isodate2epoch->("2022-02-03 01:00:00"), # $isodate2epoch->("2021-07-02 00:00:00"), # $isodate2epoch->("2021-05-28 00:00:00"), # 1613631600, # 2021-02-18 08:00
+       until => $isodate2epoch->("2022-05-23 04:30:00"), # $isodate2epoch->("2022-02-07 04:30:00"), # $isodate2epoch->("2021-07-05 03:00:00"), # 1613977200, # 2021-02-22 08:00
+       text  => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, Fußgänger und Radfahrer sind auch betroffen, vom 21.5.2022 01:30 bis 23.5.2022 04:30',
        type  => 'gesperrt',
        source_id => '2147346882',
        data  => <<EOF,
 #: source_id: 2147347231
 #: source_id: viz2021:13.440907,52.591391,03.07.2021,00:30
 #: source_id: viz2021:13.440554,52.591497,04.02.2022,01:00
+#: source_id: viz2021:13.440533,52.591545,21.05.2022,01:30
 	2::inwork 12672,20720 12723,20691
 EOF
      },
@@ -33312,7 +33313,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-05-11
+#: last_checked: 2022-05-18
 #: check_frequency: 21d
 #: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862
