@@ -4566,7 +4566,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: XXX_prog: eigentlich q3-::inwork
 #: also_indoor: traffic (G,H)
-#: last_checked: 2022-04-25 (mapillary)
+#: last_checked: 2022-05-10 (kartaview)
 #: next_check: 2022-09-30
 	q3::inwork 3348,9806 3340,9700
 ',
@@ -4819,22 +4819,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX laut Baustellenschild bis Juli 2022
-#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022) (mittlerweile: 06.04.2022) (mittlerweile: bis 19.05.2022)
-#: also_indoor: traffic (G)
-#: last_checked: 2022-05-14
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-07-01
-	q2::inwork 8913,16159 9099,16398
-',
-         'from' => 1611329064,
-         'id' => 3324,
-         'source_id' => '2147346268',
-         'text' => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., möglicherweise bis Juli 2022',
-         'type' => 'handicap',
-         'until' => 1656687600
-       },
+       undef,
        {
          'data' => '#: next_check_id: ABBESTR-2021
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
@@ -5231,9 +5216,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1629669600,
          'id' => 3435,
          'source_id' => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
-         'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 21.05.2022 17:00 ',
+         'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 30.06.2022 17:00 ',
          'type' => 'handicap',
-         'until' => 1653145200
+         'until' => 1656601200
        },
        undef,
        undef,

@@ -665,7 +665,7 @@ neu asphaltiert, etwas breiter	RW2; 3005,13728 2984,13789 2935,13927
 	RW2; 2935,13927 2881,14061
 	RW2;RW2 2881,14061 2860,14118
 neu asphaltiert, relativ breit	RW1; 3279,12533 3271,12609 3269,12648 3291,12721
-asphaltiert	RW2; 3291,12721 3300,12751 3327,12818
+neu asphaltiert, relativ breit	RW2; 3291,12721 3300,12751 3327,12818
 	RW1; 3327,12818 3337,12855
 Gehwegplatten	RW1; 3337,12855 3327,12818
 asphaltiert	RW1; 3327,12818 3300,12751
@@ -1006,7 +1006,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,26.04.2022,15:00 (bis 2028) (inaktiv)
 #: source_id: viz2021:13.463301,52.496054,24.05.2022,15:00 (bis 2028) (inaktiv)
 #: source_id: viz2021:13.463301,52.496054,18.05.2022,12:00 (bis 2028)
-#: source_id: viz2021:13.46264,52.49544,18.05.2022,16:23 (bis 2028)
+#: source_id: viz2021:13.46264,52.49544,18.05.2022,16:23 (bis 2028) (inaktiv)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
 #: last_checked: 2022-05-18 vvv
@@ -1217,7 +1217,17 @@ Mitbenutzung des Gehwegs erlaubt	RW1; 19899,13534 20073,13535
 	RW1; 20150,13562 20073,13535 19899,13534
 	RW1;RW1 10002,14092 9938,14356 9864,14578 9855,14598 9838,14640 9800,14722
 	RW1;RW0 11136,9183 11208,9345 11274,9492
-	RW2;RW2 8098,13419 8003,13374 7880,13315 7842,13292 7816,13276
+	RW2; 8098,13419 8003,13374 7880,13315 7842,13292 7816,13276 7759,13246
+# 
+#: note: laut rbb ab 2022-05-19 09:00, bis Anfang 2025
+#: source_id: viz2021:13.366803,52.525542,19.05.2022,09:00 (bis 31.1.2025)
+#: last_checked: 2022-05-19
+#: check_frequency: 180d
+#: next_check: 2025-01-31
+# Originaleintrag:	RW2; 7759,13246 7816,13276 7842,13292 7880,13315
+provisorische Radspur	RW4; 7759,13246 7816,13276 7842,13292 7880,13315
+# 
+	RW2; 7880,13315 8003,13374 8098,13419
 # REMOVED (hier nicht mehr) ---	RW4;RW4 7930,12912 8021,12832 8030,12824
 der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW4;RW4 8122,12603 8119,12414
 der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW0;RW0 8119,12414 8055,12186
@@ -2297,7 +2307,7 @@ Radspur zwischen Fahrspuren	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2022-05-12 vvv
+#: last_checked: 2022-05-19 vvv
 #: next_check: 2024-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
@@ -2631,6 +2641,7 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 	RW4; 8295,13531 8187,13472 8098,13419
 	RW2; 8453,13611 8572,13671
 	RW4; 8572,13671 8586,13678 8622,13696 8661,13715 8685,13728 8841,13800
+#: note: hier keine explizite Ausschilderung, Benutzungspflicht der Radspur hier fortgesetzt
 	RW2; 8841,13800 8935,13844
 # REMOVED --- #: next_check_id: INVALIDEN-2014 vvv --- #: XXX kommen hier noch Radwegschilder hin? vvv --- #: last_checked: 2015-09-12 vvv
 	RW3; 8831,13973 8870,13926 8935,13844
@@ -2678,7 +2689,6 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 #: check_frequency ^^^
 #: next_check ^^^
 # 
-	RW2;RW2 7816,13276 7759,13246
 #: by: rjoop vvv
 #: confirmed_by: srt vvv
 	RW3;RW3 6661,13130 6757,13112 6860,13093 6966,13075
@@ -2806,12 +2816,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 1840,20761 1872,20683 1
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 1883,20639 1910,20548 1929,20501
 	RW1; 1929,20501 1955,20435
 	RW1;RW0 3744,21854 3726,21838
-	RW1;RW1 3726,21838 3674,21792 3545,21677 3356,21534 3280,21477
-	RW;RW1 3280,21477 3238,21448 3216,21431 3208,21425 3138,21372
-	RW1;RW1 3138,21372 3123,21360 3056,21310 3024,21286 2912,21200 2840,21141 2819,21128 2745,21069
-	RW;RW1 2745,21069 2573,21008
-	RW1;RW1 2573,21008 2353,20968
-	RW;RW1 2353,20968 2188,20910
+	RW1;RW1 3726,21838 3674,21792 3545,21677 3356,21534 3280,21477 3238,21448 3216,21431 3208,21425 3138,21372 3123,21360 3056,21310 3024,21286 2912,21200 2840,21141 2819,21128 2745,21069 2573,21008 2353,20968 2188,20910
 	RW2;RW2 2188,20910 2146,20887 2073,20847
 	RW1;RW1 2073,20847 1939,20783 1840,20761
 Radweg nur aufgemalt	RW1;RW1 3167,19597 3021,19780 2854,19992 2835,20013 2814,20035 2803,20045 2726,20146 2684,20223 2645,20300 2613,20416
@@ -4456,8 +4461,7 @@ Radweg nur aufgemalt	RW1; 2942,22914 2857,22756 2793,22640
 gemeinsamer Geh- und Radweg	RW2; 1942,21564 1870,21491 1843,21440 2146,20887
 	RW2; 2188,20910 1870,21491 1942,21564
 #: by: Rudolf Kionke vvv
-sehr schmal, holprig wegen Baumwurzeln	RW1;RW1 3216,20531 3323,20547 3563,20589 3604,20603 3915,20711
-sehr schmal, holprig wegen Baumwurzeln	RW;RW1 3915,20711 4047,20748 4126,20771 4203,20792
+sehr schmal, holprig wegen Baumwurzeln	RW1;RW1 3216,20531 3323,20547 3563,20589 3604,20603 3915,20711 4047,20748 4126,20771 4203,20792
 #: confirmed_by: srt
 sehr schmal, holprig wegen Baumwurzeln	RW1;RW1 4203,20792 4261,20808 4423,20848
 #: by: ^^^
@@ -5294,7 +5298,7 @@ Tempo 10	RW6;RW6 10199,13446 10350,13376
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10263,13594 10142,13556 10049,13528 10026,13521 9961,13502 9898,13484 9651,13406 9415,13315
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 9898,13484 9853,13511
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10699,13173 10757,13401 10767,13443 10797,13575
-10er-Zone	RW6;RW6 10872,13570 10898,13632
+# REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10872,13570 10898,13632
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10757,13401 10846,13362 10925,13322 11012,13278
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10898,13260 10925,13322 10966,13436
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10016,13306 9837,13250 9786,13178
@@ -5645,7 +5649,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by ^^^
 # 
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2022-05-06 vvv
+#: last_checked: 2022-05-19 vvv
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9141,12320 9131,12438 9121,12514
 #: XXX früher RW3, zurzeit durch Gelbmarkierung (Kreuze) ungültig gemacht

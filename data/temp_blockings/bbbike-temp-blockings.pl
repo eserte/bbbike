@@ -31317,7 +31317,7 @@ EOF
        data  => <<EOF,
 #: XXX_prog: eigentlich q3-::inwork
 #: also_indoor: traffic (G,H)
-#: last_checked: 2022-04-25 (mapillary)
+#: last_checked: 2022-05-10 (kartaview)
 #: next_check: 2022-09-30
 	q3::inwork 3348,9806 3340,9700
 EOF
@@ -32307,17 +32307,12 @@ EOF
 EOF
      },
      { from  => 1611329064, # 2021-01-22 16:24
-       until => $isodate2epoch->("2022-07-01 17:00:00"), # 1630076400, # 2021-08-27 17:00
+       until => 1652987495, # $isodate2epoch->("2022-07-01 17:00:00"), # 1630076400, # 2021-08-27 17:00
        text  => 'Stettiner Str.: Bauarbeiten, keine direkte Anbindung zur Badstr., möglicherweise bis Juli 2022',
        type  => 'handicap',
        source_id => '2147346268',
        data  => <<EOF,
-#: XXX laut Baustellenschild bis Juli 2022
-#: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022) (mittlerweile: 06.04.2022) (mittlerweile: bis 19.05.2022)
-#: also_indoor: traffic (G)
-#: last_checked: 2022-05-14
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-07-01
+# REMOVED (bei der VIZ entfernt, bei Google entfernt) --- #: XXX laut Baustellenschild bis Juli 2022 --- #: source_id: viz2021:13.382754,52.551838,25.08.2020,07:00 (bis 19.11.2021) (mittlerweile: 25.11.2021) (mittlerweile: 01.02.2022) (mittlerweile: 06.04.2022) (mittlerweile: bis 19.05.2022) --- #: also_indoor: traffic (G) --- #: last_checked: 2022-05-14 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2022-07-01
 	q2::inwork 8913,16159 9099,16398
 EOF
      },
@@ -33587,10 +33582,10 @@ EOF
 EOF
      },
      { from  => 1629669600, # 2021-08-23 00:00
-       until => $isodate2epoch->("2022-05-21 17:00:00"), # 1640991600, # 2022-01-01 00:00
-       text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 21.05.2022 17:00 ',
+       until => $isodate2epoch->("2022-06-30 17:00:00"), # 1640991600, # 2022-01-01 00:00
+       text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 30.06.2022 17:00 ',
        type  => 'handicap',
-       source_id => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
+       source_id => 'viz2021:13.377685,52.567221,24.08.2021,07:00', # aktiv
        data  => <<EOF,
 #: source_id: viz2021:13.37876,52.56731,02.05.2022,16:04 (inaktiv)
 #: source_id: viz2021:13.37876,52.56731,06.05.2022,14:35 (zweiter Eintrag) (wieder inaktiv)

@@ -258,7 +258,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11193 (Gebühren für Widerspruchsbescheide)
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2022-05-12 vvv
+#: last_checked: 2022-05-19 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -1722,7 +1722,7 @@ Otto-Weidt-Platz	NN 7732,14131 7818,14185 7866,14215
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php
 #: by: https://www.berliner-woche.de/moabit/c-bauen/golda-meir-steg-verbindet-jetzt-moabit-mit-mitte_a330725
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2022-03-19
+#: last_checked: 2022-05-19
 #: check_frequency: 60d
 #: next_check: 2022-12-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7818,14185 7861,14133
@@ -1736,7 +1736,7 @@ Lisa-Fittko-Str.	N 7734,13944 7820,13994
 George-Stephenson-Str.	N 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 7734,13944
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
-#: last_checked: 2022-05-01 (mapillary)
+#: last_checked: 2022-05-19
 #: check_frequency: 90d
 #: osm.highway: service
 Hans-Peters-Platz	N 7732,14131 7679,14030
