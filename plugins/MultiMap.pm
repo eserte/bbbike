@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.79;
+$VERSION = 1.80;
 
 use vars qw(%images);
 
@@ -1395,6 +1395,7 @@ sub showmap_url_mapillary {
     my $px = $args{px};
     my $py = $args{py};
     my $dateFrom = $args{dateFrom};
+    my $panos = $args{panos};
     if ($dateFrom) {
 	if ($dateFrom =~ m{^-(\d+)year$}) {
 	    require POSIX;
@@ -1412,7 +1413,8 @@ sub showmap_url_mapillary {
     }
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
     sprintf("https://www.mapillary.com/app/?lat=%s&lng=%s&z=%d", $py, $px, $scale)
-	. ($dateFrom ? "&dateFrom=$dateFrom" : "");
+	. ($dateFrom ? "&dateFrom=$dateFrom" : "")
+	. ($panos    ? "&panos=true" : "");
 }
 
 sub showmap_mapillary {
@@ -1457,6 +1459,11 @@ sub show_mapillary_menu {
     $link_menu->command
 	(-label => 'Fresh Mapillary (< 1 year)',
 	 -command => sub { showmap_mapillary(dateFrom => '-1year', %args) },
+	);
+    $link_menu->separator;
+    $link_menu->command
+	(-label => '360° imagery only',
+	 -command => sub { showmap_mapillary(panos => 1, %args) },
 	);
     $link_menu->separator;
     $link_menu->command
