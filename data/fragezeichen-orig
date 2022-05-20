@@ -73,7 +73,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr.
-#: last_checked: 2022-05-17
+#: last_checked: 2022-05-20
 #: check_frequency: 90d
 #: next_check: 2022-06-30
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -5851,7 +5851,7 @@ Seychellenring - Uferweg: wird hier eine Verbindung zum Uferweg entstehen?	? -25
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf --- #: by: http://www.berliner-woche.de/hellersdorf/verkehr/beleuchtung-fuer-weg-vorgesehen-d132436.html --- Parchimer Str. - Altentreptower Str.: neuer Rad+Gehweg, Qualität, genaue Lage, nachts beleuchtet?	? 22225,12281 22220,12243 22129,12155
 # REMOVED (ja; eine Straßenlaterne existiert) --- #: XXX bei gmaps als "Lubminer Weg" bezeichnet, existieren solche Schilder in der Realität? --- Lubminer Str. - Parchimer Str.: existiert hier eine Wegverbindung? Qualität? Nachts beleuchtet?	? 22415,12681 22391,12677 22318,12663
 # REMOVED --- #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5645 --- Fleischerstr. - Grünanlage: existiert eine Verbindung für Radfahrer? Nachts beleuchtet? Qualität?	? 16433,1180 16450,1135 16457,1129
-# REMOVED (genau dort) --- #: XXX teilweise scheint es hier nur Trampelpfade zu geben, inbesondere zwischen Mäckeritzbrücke und Flughafen Tegel... --- Saatwinkler Damm: Radwegsituation?	? 3028,15696 2834,15703 1406,15719 1232,15717 954,15724 449,15654 51,15599 -302,15546 -573,15516 -622,15502 -692,15491 -763,15487 -923,15464 -1013,15433
+# REMOVED (genau dort) --- #: XXX teilweise scheint es hier nur Trampelpfade zu geben, inbesondere zwischen Mäckeritzbrücke und Flughafen Tegel... --- Saatwinkler Damm: Radwegsituation?	? 3028,15696 2834,15703 1406,15719 1232,15717 954,15724 731,15693 449,15654 51,15599 -302,15546 -573,15516 -622,15502 -692,15491 -763,15487 -923,15464 -1013,15433
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/beteilungsverfahren-zu-den-bebauungsplaenen/12-58_oea_01_2017-08-01_bebauungsplan.pdf
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/bebauungsplaene/12-58-bplan_mit_-db-1.pdf
@@ -6108,7 +6108,7 @@ Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-fahrstreifen-bis-ende-2022_a345665 (geänderte Verkehrsführung in der Karl-Marx-Str. wegen der Bauarbeiten an der Eisenbahnbrücke, bis Ende 2022)
 #: XXX laut Plänen wird es Richtung Norden eine Fahrradschleuse und Richtung Süden eine Radspur geben; vermutlich wird die Straße während der Bauarbeiten komplett gesperrt
 #: XXX laut Ausschilderung an der Sonnenallee Sperrung ab 21.2.2022 4:30 Uhr
-#: last_checked: 2022-04-18
+#: last_checked: 2022-05-15 (architektur-urbanistik)
 #: next_check: 2022-12-31
 Niemetzstr.: EÜ wird erneuert, Fahrbahn wird abgesenkt	?::projected 13797,7267 13762,7321
 # 
@@ -8202,6 +8202,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11160 (Bebauungsplanentwurf I-32aa (Holzufer))
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036570366892/570366892/00528691/91-Anlagen/02/VzK_0226_VI_Anlage_42-2022-Anlage-B-Plan-I-32a.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_16_0977_1032_online.pdf (Einziehung einer Grünanlage)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/spreeuferweg-mitte-kreuzberg.800/post-18457
 #: last_checked: 2022-05-08
 #: check_frequency: 90d
 Uferweg geplant	?::projected 11981,11578 11821,11733 11676,11839 11375,11994
