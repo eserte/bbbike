@@ -207,6 +207,7 @@ MAPSERVER_TARGET=${TARGET}
       make(rsync-mapserver)	     || \
       make(rsync-temp-blockings)     || \
       make(rsync-tests)		     || \
+      make(rsync-tests-pps)	     || \
       make(clean-cache-files-on-remote) || \
       make(diff-temp-blockings)
 TARGET=${TARGET_LIVE}
@@ -222,6 +223,7 @@ TARGET=bbbike.hosteurope.herceg.de
       make(after-deployment-set-tags) || \
       make(deploy-pps) || \
       make(test-pps) || \
+      make(test-on-pps-full) || \
       make(all) || \
       make(.PHONY)
 # no TARGET=
@@ -302,6 +304,9 @@ rsync-mapserver:	check-rsync-ok check-rsync-mapserver /tmp/mapserver.rsync.exclu
 
 rsync-tests:
 	${RSYNC_PROG} ${RSYNC_ARGS} --exclude cover_db/ --exclude tmp/ ${BBBIKE_ROOT_DIR}/t/ ${RSYNC_DEST}/BBBike/t/
+
+rsync-tests-pps:
+	${MAKE} rsync-tests TARGET=bbbike-pps-jessie
 
 /tmp/mapserver.rsync.exclude: .rsync.exclude
 	perl -pe 's{^public/mapserver/}{}' $> > $@
@@ -408,6 +413,9 @@ deploy-temp-blockings:	check-temp-blockings-integrity-pre \
 
 test-pps:
 			${MAKE} test TARGET=bbbike-pps-jessie
+
+test-on-pps-full:
+			${MAKE} test-on-remote-full TARGET=bbbike-pps-jessie
 
 test-makefile:
 	${MAKE} -n deploy-local > /tmp/test-makefile.cmd
@@ -708,7 +716,7 @@ test-on-remote-full:
 	BBBIKE_TEST_CGIURL=http://${BBBIKE_HOSTEUROPE_HOST}/cgi-bin/${BBBIKECGI} \
 	BBBIKE_TEST_HTMLDIR=http://${BBBIKE_HOSTEUROPE_HOST}/BBBike \
 	BBBIKE_TEST_FOR_LIVE=1 \
-	    prove --state=hot,all,save --color --timer `find t -name '\''*.t'\'' | sort | egrep -v '\''^t/(any2bbd|cvsdiffbbd|geocoder-addr|gps-gpsmandata-any|gps-gpsmandata-garmingpx|gps-gpsmandata|gps-symbols-garmin|grepstrassen|leaflet-static|osm2bbd|reverse-geocoding|search_inaccessible|typ2legend-xpm).t$$'\'' ` \
+	    prove --state=hot,all,save --color --timer `find t -name '\''*.t'\'' | sort | egrep -v '\''^t/(any2bbd|bbd_splitlines|cvsdiffbbd|geocoder-addr|gps-gpsmandata-any|gps-gpsmandata-garmingpx|gps-gpsmandata|gps-symbols-garmin|grepstrassen|leaflet-static|osm2bbd|reverse-geocoding|search_inaccessible|typ2legend-xpm).t$$'\'' ` \
 	'
 
 test-from-local:
