@@ -2473,7 +2473,7 @@ Griechische Allee: Asphalt	Q0 18645,6511 18624,6520 18494,6588 18339,6660 18254,
 Normannenstr.: Asphalt	Q0 15508,12367 15537,12367 15710,12365 15800,12353 15904,12340 16056,12317 16159,12301
 Straße 18: Beton/Asphalt	Q0 16429,13146 16429,13021
 Eberhardstr.: Kopfsteinpflaster	Q2 15233,12829 15231,12929
-Straße 77: etwas unebenes kleinteiliges Kopfsteinpflaster	Q1 15408,12394 15320,12375
+Straße 77: Verbundsteinpflaster	Q1 15408,12394 15320,12375
 Sonderburger Str.: Asphalt	Q0 9617,16590 9603,16468 9594,16384 9582,16296
 Wriezener Str.: Kopfsteinpflaster	Q2 9210,16638 9245,16758 9299,16889 9361,17039
 Louise-Schroeder-Platz: Kopfsteinpflaster	Q2 7763,16779 7745,16889
@@ -2857,7 +2857,7 @@ Frankenholzer Weg: Beton	Q0 21152,11945 21275,11942
 Frankenholzer Weg: Asphalt	Q0 21275,11942 21346,11941 21409,11941 21550,11939
 Park Biesdorf: Parkweg	Q1 21150,11925 21134,11913 21132,11943 21100,11960
 Park Biesdorf: asphaltiert, mit leichten Schäden	Q1 21100,11960 20857,12027 20810,12031
-Albert-Brodersen-Allee: asphaltiert, mit leichten Schäden	Q1 20857,12027 20835,11810 20831,11771
+Albert-Brodersen-Allee: asphaltiert, mit leichten Schäden	Q1 20857,12027 20835,11810 20831,11777
 Nordpromenade: Asphalt	Q0 20810,12031 20715,12040 20610,12050
 Wildrosenweg: Asphalt	Q0 20715,12040 20708,11918 20694,11811
 Schulstr. (Biesdorf): Kopfsteinpflaster	Q2 20016,11980 20173,11971 20275,11960
@@ -2865,6 +2865,7 @@ Schulstr. (Biesdorf): mäßiger Asphalt	Q1 20275,11960 20324,11952 20368,11937
 Schulstr. (Biesdorf): schlechtes Kopfsteinpflaster	Q3 20413,11953 20542,11941 20599,11938
 Schulstr. (Biesdorf): schadhafter Asphalt	Q1 20599,11938 20636,11931
 Schulstr. (Biesdorf): Betonpflaster	Q0 20636,11931 20708,11918 20738,11915
+Kleiner Parkweg: Betonpflaster	Q0 20775,11801 20790,11990
 (Schulstr. - Braunsdorfstr.): Beton	Q0 20413,11953 20396,11983
 (Schulstr. - Waldbacher-Weg-Brücke): neuer Asphalt	Q0 20368,11937 20374,11949 20334,12022
 Waldbacher-Weg-Brücke: neuer Asphalt	Q0 20315,12061 20363,12057
@@ -2872,11 +2873,12 @@ zur Waldbacher-Weg-Brücke: neuer Asphalt	Q0 20363,12057 20385,12022 20377,12057 
 zur Waldbacher-Weg-Brücke: neuer Asphalt	Q0 20284,12064 20294,12063 20327,12028 20315,12061
 Hinter der Post: Asphalt	Q0 20542,11941 20532,11830
 Beethovenstr. (Biesdorf): unbefestigte Straße	Q2 19971,11872 20005,11872
-Beethovenstr. (Biesdorf): Asphalt	Q0 20005,11872 20169,11852 20384,11841
+Beethovenstr. (Biesdorf): Asphalt	Q0 20005,11872 20170,11859
+Beethovenstr. (Biesdorf): rauer Asphalt	Q1 20170,11859 20384,11841
 Beethovenstr. (Biesdorf): Asphalt	Q0 20448,11839 20532,11830 20587,11824
 Braunsdorfstr.: Asphalt	Q0 20368,11937 20387,11913 20384,11841 20375,11694
 Braunsdorfstr.: Asphalt	Q0 20404,12055 20396,11983
-Mozartstr. (Biesdorf): Asphalt	Q0 20161,11715 20169,11852 20173,11971 20176,12071
+Mozartstr. (Biesdorf): Asphalt	Q0 20161,11715 20170,11859 20173,11971 20176,12071
 Waldbacher Weg: Asphalt	Q0 19661,11746 19631,11899 19642,11998 19706,12086 19909,12097 20026,12088 20078,12080
 Waldbacher Weg: unbefestigte Straße	Q2 20078,12080 20176,12071
 Waldbacher Weg: teilweise unbefestigte Straße, teilweise Asphalt	Q2 20176,12071 20284,12064
@@ -3996,7 +3998,7 @@ Arno-Philippsthal-Str.: Asphalt	Q0 20641,11488 20630,11342
 Stawesdamm: Betonpflaster	Q0 20616,11490 20627,11552
 Stawesdamm: Feinschotter	Q1 20627,11552 20631,11621 20633,11651
 Parkweg (Biesdorf): rauer Asphalt	Q1 20587,11824 20694,11811
-Parkweg (Biesdorf): Beton	Q0 20694,11811 20779,11801
+Parkweg (Biesdorf): Beton	Q0 20694,11811 20775,11801
 Lötschbergstr.: Asphalt	Q1 20114,11233 20135,11269
 Lötschbergstr.: Asphalt	Q0 20135,11269 20140,11343 20150,11512 20161,11715
 Ernstroder Weg: Asphalt	Q0 19984,11557 19966,11394
@@ -7053,7 +7055,8 @@ Grenzgrabenstr.: Asphalt	Q0 18422,15583 18429,15165
 Bürknersfelder Str.: Asphalt	Q0 18176,15160 18429,15165 18553,15169 18702,15248
 Plauener Str.: Asphalt	Q0 17940,15771 17953,15221 17959,15084 17902,15039 17829,15015 17762,14993 17718,14979 17638,14951
 (Möllendorffstr. - Karl-Lade-Str.): Verbundsteinpflaster	Q1 15513,13539 15374,13542
-(Möllendorffstr. - Karl-Lade-Str.): Verbundsteinpflaster und Beton	Q1 15374,13542 15239,13580 15097,13621
+(Möllendorffstr. - Karl-Lade-Str.): Verbundsteinpflaster und Beton	Q1 15374,13542 15239,13580 15097,13621 14995,13645
+(Möllendorffstr. - Karl-Lade-Str.): etwas unebener Asphalt	Q0 14995,13645 14821,13674
 Hasenheide: Verbundsteinpflaster	Q0 11141,9107 11115,9100 11098,9046 11100,8974
 Hasenheide: Parkweg	Q1 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 (Hasenheide, Weg am westlichen Rand): Asphalt	Q0 11182,8983 11137,8979 11100,8974
@@ -9258,7 +9261,7 @@ Giselhersteig: Verbundsteinpflaster	Q1 17355,12460 17386,12456 17438,12448 17491
 Giselhersteig: Verbundsteinpflaster	Q1 17438,12448 17433,12414
 (Giselhersteig - Nibelungenring): Verbundsteinpflaster	Q1 17386,12456 17382,12421
 (Giselhersteig - Hadburgpfad): Verbundsteinpflaster	Q1 17491,12439 17486,12407
-(Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt	Q0 17110,14187 17224,14151 17236,14140
+(Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt, Wurzelhebungen	Q0 17110,14187 17224,14151 17236,14140
 Treptower Park: wassergebundene Decke	Q1 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374 15325,9354 15453,9259
 (Treptower Park, mittlerer Weg): wassergebundene Decke	Q1 15184,9373 15249,9337
 (S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0 14705,9578 14791,9537
@@ -10337,7 +10340,7 @@ Verbindungsweg zur Neuen Wuhle: Schotterweg	Q1 21553,17701 21542,17632 21535,175
 (entlang des Kreuzgrabens): wassergebundene Decke	Q1 10379,20309 10314,20262 10260,20222 10172,20142 10157,20128 10098,20113
 (entlang der Siemensbahn): gepflastert	Q2 778,14713 739,14723 547,14880 537,14919
 (Alt-Biesdorf - Schloss Biesdorf): Kopfsteinpflaster	Q2 20764,11675 20825,11732
-(Alt-Biesdorf - Schloss Biesdorf): Kleinsteinpflaster	Q1 20825,11732 20831,11771
+(Alt-Biesdorf - Schloss Biesdorf): Kleinsteinpflaster	Q1 20825,11732 20831,11777
 Seidenschwanzstr.: Asphalt	Q0 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801
 Seidenschwanzstr.: Verbundsteinpflaster	Q1 26452,12683 26428,12708
 Wildkatzenweg: Verbundsteinpflaster	Q1 26475,12761 26414,12811 26334,12854
@@ -10687,7 +10690,7 @@ Schloßplatz: Asphalt	Q0 10102,12384 10175,12435
 (Uferweg am Humboldtforum): Kleinpflastersteine	Q1 10357,12356 10336,12404 10271,12503 10243,12546
 Schloßplatz: Kleinpflastersteine	Q1 10175,12435 10271,12503
 (Lustgarten - Schloss): Kleinpflastersteine	Q1 10155,12494 10175,12435
-(Parkweg - Park Biesdorf): wassergebundene Decke	Q1 20779,11801 20804,11797 20818,11812 20835,11810
+(Parkweg - Park Biesdorf): wassergebundene Decke	Q1 20775,11801 20801,11797 20804,11813 20835,11810
 Am Kraatzgraben: Verbundsteinpflaster	Q1 16899,10020 16835,10052
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: Asphalt	Q0 16895,9922 16886,9982
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: unbefestigt	Q1 16886,9982 16894,10003
@@ -17663,10 +17666,10 @@ Kriemhildstr.: Asphalt	Q0 17314,12265 17320,12308 17337,12428 17346,12490 17357,
 Hagenstr. (Lichtenberg): Asphalt	Q0 16957,12599 16933,12432
 Hagenstr. (Lichtenberg): Asphalt	Q0 16933,12432 16918,12325
 Hagenstr. (Lichtenberg): Asphalt	Q0 16918,12325 16890,12135 16865,11931
-Gernotstr. (Lichtenberg): Kopfsteinpflaster	Q3 17122,12295 17091,12105
+Gernotstr. (Lichtenberg): Kopfsteinpflaster	Q2 17122,12295 17091,12105
 Gernotstr. (Lichtenberg): Kopfsteinpflaster, zwischen den Schieden Beton	Q2; 17091,12105 17088,12069
 Gernotstr. (Lichtenberg): Kopfsteinpflaster	Q3; 17088,12069 17091,12105
-Volkerstr.: Kopfsteinpflaster	Q3 17218,12281 17195,12125
+Volkerstr.: Kopfsteinpflaster	Q2 17218,12281 17195,12125
 (Am Städt. Zentralfriedhof - Rhinstr.): Asphalt	Q0 17790,12255 17837,12277 18037,12362 18098,12376
 (Am Städt. Zentralfriedhof - Rhinstr.): Asphalt	Q0 18098,12376 18176,12393
 (Am Städt. Zentralfriedhof - Rhinstr.): Asphalt	Q0 18176,12393 18191,12451 18220,12450

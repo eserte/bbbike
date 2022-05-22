@@ -2092,8 +2092,8 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        {
          'data' => '#: tempex: T23:00-T06:00 vvv
 	2::night 21150,11925 21134,11913 21132,11943 21100,11960 20857,12027 20810,12031
-	2::night 20857,12027 20835,11810 20831,11771 20825,11732 20764,11675
-	2::night 20779,11801 20804,11797 20818,11812 20835,11810
+	2::night 20857,12027 20835,11810 20831,11777 20825,11732 20764,11675
+	2::night 20775,11801 20801,11797 20804,11813 20835,11810
 	2::night 20807,12083 20857,12027
 #: tempex ^^^
 ',
@@ -2523,31 +2523,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.laubinger.de/event/28-heimatfest-erkner/ (Absage 2020)
-#: by: https://www.laubinger.de/event/28-heimatfest-erkner/?date=20210415 (2021)
-#: by: https://www.erkner.de/erkner-kompakt/heimatfest/ (geplant vom 20. bis 22. Mai 2022)
-	2::temp 34421,1950 34359,2165 34250,2546
-',
-         'from' => 1652911200,
-         'id' => 2078,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              5,
-                              'start',
-                              '2020-06-08T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.erkner.de/271.html?date=20190415',
-         'text' => 'Erkner: Heimatfest, 20.5.2022 bis 22.5.2022',
-         'type' => 'gesperrt',
-         'until' => 1653184800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2932,6 +2908,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7936
 #: by: https://www.berlin.de/events/2983315-2229501-neukoellner-maientage.html (geplant: 29. April bis 22. Mai 2022)
 #: by: https://berliner-abendblatt.de/2022/04/28/grosser-nachholbedarf-eroeffnung-der-neukoellner-maientage/
+#: by: https://berliner-abendblatt.de/2022/05/21/letztes-wochenende-der-maientage-in-der-hasenheide/
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -4744,7 +4721,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-05-14 vvv
+#: last_checked: 2022-05-21 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -6261,17 +6238,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1669849200
        },
-       {
-         'data' => '#: next_check_id: BRUECKEWERDER-2022
-	2::inwork -21227,-2017 -21125,-2012	
-',
-         'from' => 1651442400,
-         'id' => 3549,
-         'source_id' => 'https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=4210',
-         'text' => 'Eisenbahnbrücke Werder: wegen Bauarbeiten montags bis freitags tagsüber (6:30 bis 18:00 Uhr) gesperrt, bis zum 22.5.2022',
-         'type' => 'gesperrt',
-         'until' => 1653235200
-       },
+       undef,
        {
          'data' => '#: next_check_id: WILTBERG-2022
 #: by: https://nitter.net/VIZ_Berlin/status/1523578356306169857#m
@@ -6287,6 +6254,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern
+#: last_checked: 2022-05-21
 #: next_check: 2022-08-19
 	q4::temp::play 12822,10487 12897,10439
 ',

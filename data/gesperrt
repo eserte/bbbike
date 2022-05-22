@@ -442,7 +442,7 @@ Georgenstr. (Mitte)	1 9313,12662 9242,12652 9108,12635
 Georgenstr. (Mitte)	1 9117,12705 9242,12652
 Natalissteig	1 1200,14943 1223,14824 1226,14714
 Alt-Biesdorf	1 20375,11694 20435,11698 20571,11698 20764,11675 21108,11628
-Alt-Biesdorf	1 21108,11628 20963,11618 20838,11631 20633,11651 20540,11660 20375,11694
+Alt-Biesdorf	1 21108,11628 20963,11618 20838,11631 20739,11641 20633,11651 20540,11660 20375,11694
 Privatstr. 14	1s 13159,17196 13103,17280
 Bernkasteler Str.	1s 15208,16939 15015,16908 14923,16901 14923,16914
 Wiedenbr¸cker Weg	1 4207,1113 4220,1175 4141,1282
@@ -1799,11 +1799,11 @@ Alt-Biesdorf -> M‰rkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 19
 M‰rkische Allee -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20064,11687 20114,11719 19985,11727
 M‰rkische Allee -> M‰rkische Allee: nicht passierbarer Mittelstreifen	3::igndisp 20064,11687 20114,11719 20025,11747
 M‰rkische Allee -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20025,11747 20114,11719 20161,11715
-Mozartstr. -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20169,11852 20161,11715 20375,11694
-Mozartstr. -> Lˆtschbergstr.: nicht passierbarer Mittelstreifen	3::igndisp 20169,11852 20161,11715 20150,11512
-Alt-Biesdorf -> Mozartstr.: nicht passierbarer Mittelstreifen	3::igndisp 20114,11719 20161,11715 20169,11852
+Mozartstr. -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20170,11859 20161,11715 20375,11694
+Mozartstr. -> Lˆtschbergstr.: nicht passierbarer Mittelstreifen	3::igndisp 20170,11859 20161,11715 20150,11512
+Alt-Biesdorf -> Mozartstr.: nicht passierbarer Mittelstreifen	3::igndisp 20114,11719 20161,11715 20170,11859
 Alt-Biesdorf -> Lˆtschbergstr.: nicht passierbarer Mittelstreifen	3::igndisp 20375,11694 20161,11715 20150,11512
-Lˆtschbergstr. -> Mozartstr.: nicht passierbarer Mittelstreifen	3::igndisp 20150,11512 20161,11715 20169,11852
+Lˆtschbergstr. -> Mozartstr.: nicht passierbarer Mittelstreifen	3::igndisp 20150,11512 20161,11715 20170,11859
 Lˆtschbergstr. -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20150,11512 20161,11715 20114,11719
 Straﬂentunnelrampe	3nocross::ignrte 18215,11690 18364,11698 18520,11707 18626,11742
 Alt-Friedrichsfelde: Straﬂentunnelrampe	1::igndisp 18215,11690 18517,11718 18626,11742

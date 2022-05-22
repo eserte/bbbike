@@ -241,11 +241,11 @@ Sackgassenende, westlicher Abschnitt am Betriebsgelände	culdesac 19706,12086
 	culdesac 19971,11872
 östliches Sackgassenende	culdesac 20315,12061
 westliches Sackgassenende	culdesac 20448,11839
-östliches Sackgassenende	culdesac 20779,11801
+östliches Sackgassenende	culdesac 20775,11801
 östliches Sackgassenende	culdesac 20738,11915
 westliches Sackgassenende	culdesac_pseudo 20413,11953
 Sackgassenende im nördlichen Abschnitt	culdesac_pseudo 20396,11983
-Schloss Biesdorf	culdesac 20831,11771
+Schloss Biesdorf	culdesac 20831,11777
 	culdesac_pseudo 20835,12200
 	culdesac 20930,13273
 	culdesac 20847,13280
@@ -1611,10 +1611,12 @@ nördliches Sackgassenende der östlichen Stichstraße	culdesac_pseudo 19243,450
 	culdesac -13116,-1525
 	culdesac -13719,-2846
 	culdesac -13558,-2841
+	culdesac_pseudo 20790,11990
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 19995,11795
 	culdesac_pseudo 11515,12293
 	culdesac_pseudo 6631,12707
 	culdesac_pseudo 7598,5926

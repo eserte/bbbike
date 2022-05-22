@@ -3287,7 +3287,7 @@ Griechische Allee: Asphalt	Q0 18645,6511 18624,6520 18494,6588 18339,6660 18254,
 Normannenstr.: Asphalt	Q0 15508,12367 15537,12367 15710,12365 15800,12353 15904,12340 16056,12317 16159,12301
 Straße 18: Beton/Asphalt	Q0 16429,13146 16429,13021
 Eberhardstr.: Kopfsteinpflaster	Q2 15233,12829 15231,12929
-Straße 77: etwas unebenes kleinteiliges Kopfsteinpflaster	Q1- 15408,12394 15320,12375
+Straße 77: Verbundsteinpflaster	Q1+ 15408,12394 15320,12375
 #: confirmed_by: soenkemohr ("guter Asphalt")
 Sonderburger Str.: Asphalt	Q0 9617,16590 9603,16468 9594,16384 9582,16296
 Wriezener Str.: Kopfsteinpflaster	Q2 9210,16638 9245,16758 9299,16889 9361,17039
@@ -3743,7 +3743,7 @@ Frankenholzer Weg: Beton	Q0 21152,11945 21275,11942
 Frankenholzer Weg: Asphalt	Q0 21275,11942 21346,11941 21409,11941 21550,11939
 Park Biesdorf: Parkweg	Q1 21150,11925 21134,11913 21132,11943 21100,11960
 Park Biesdorf: asphaltiert, mit leichten Schäden	Q1 21100,11960 20857,12027 20810,12031
-Albert-Brodersen-Allee: asphaltiert, mit leichten Schäden	Q1 20857,12027 20835,11810 20831,11771
+Albert-Brodersen-Allee: asphaltiert, mit leichten Schäden	Q1 20857,12027 20835,11810 20831,11777
 Nordpromenade: Asphalt	Q0 20810,12031 20715,12040 20610,12050
 # REMOVED (existiert nicht mehr) --- (Wuhlgartenweg - Ährenweg): Schotter	Q2- 21101,12132 21107,12186
 Wildrosenweg: Asphalt	Q0- 20715,12040 20708,11918 20694,11811
@@ -3753,6 +3753,7 @@ Schulstr. (Biesdorf): schlechtes Kopfsteinpflaster	Q3 20413,11953 20542,11941 20
 # REMOVED --- #: XXX evtl. ist die Qualität nach den Bauarbeiten besser geworden --- #: priority: #C
 Schulstr. (Biesdorf): schadhafter Asphalt	Q1 20599,11938 20636,11931
 Schulstr. (Biesdorf): Betonpflaster	Q0- 20636,11931 20708,11918 20738,11915
+Kleiner Parkweg: Betonpflaster	Q0- 20775,11801 20790,11990
 (Schulstr. - Braunsdorfstr.): Beton	Q0- 20413,11953 20396,11983
 # REMOVED #: next_check_id: WALDBACHERWEGBRUECKE-2020 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_30_3845_4008_online.pdf (Einziehung von Straßenland) --- #: XXX wie sieht die Wegoberfläche nach den Bauarbeiten aus? Außerdem wird der Weg vermutlich bis zum Waldbacher Weg verlängert. --- #: last_checked: 2020-06-22 --- #: next_check: 2020-08-13
 (Schulstr. - Waldbacher-Weg-Brücke): neuer Asphalt	Q0 20368,11937 20374,11949 20334,12022
@@ -3762,12 +3763,13 @@ zur Waldbacher-Weg-Brücke: neuer Asphalt	Q0 20284,12064 20294,12063 20327,12028 
 #: note: früher unbefestigte Straße, Q2
 Hinter der Post: Asphalt	Q0 20542,11941 20532,11830
 Beethovenstr. (Biesdorf): unbefestigte Straße	Q2 19971,11872 20005,11872
-Beethovenstr. (Biesdorf): Asphalt	Q0 20005,11872 20169,11852 20384,11841
+Beethovenstr. (Biesdorf): Asphalt	Q0 20005,11872 20170,11859
+Beethovenstr. (Biesdorf): rauer Asphalt	Q1 20170,11859 20384,11841
 #: note: früher schlechter Asphalt, Q2
 Beethovenstr. (Biesdorf): Asphalt	Q0 20448,11839 20532,11830 20587,11824
 Braunsdorfstr.: Asphalt	Q0 20368,11937 20387,11913 20384,11841 20375,11694
 Braunsdorfstr.: Asphalt	Q0- 20404,12055 20396,11983
-Mozartstr. (Biesdorf): Asphalt	Q0 20161,11715 20169,11852 20173,11971 20176,12071
+Mozartstr. (Biesdorf): Asphalt	Q0 20161,11715 20170,11859 20173,11971 20176,12071
 Waldbacher Weg: Asphalt	Q0 19661,11746 19631,11899 19642,11998 19706,12086 19909,12097 20026,12088 20078,12080
 Waldbacher Weg: unbefestigte Straße	Q2+ 20078,12080 20176,12071
 Waldbacher Weg: teilweise unbefestigte Straße, teilweise Asphalt	Q2+ 20176,12071 20284,12064
@@ -4989,7 +4991,7 @@ Arno-Philippsthal-Str.: Asphalt	Q0 20641,11488 20630,11342
 Stawesdamm: Betonpflaster	Q0- 20616,11490 20627,11552
 Stawesdamm: Feinschotter	Q1 20627,11552 20631,11621 20633,11651
 Parkweg (Biesdorf): rauer Asphalt	Q1+ 20587,11824 20694,11811
-Parkweg (Biesdorf): Beton	Q0- 20694,11811 20779,11801
+Parkweg (Biesdorf): Beton	Q0- 20694,11811 20775,11801
 Lötschbergstr.: Asphalt	Q1 20114,11233 20135,11269
 Lötschbergstr.: Asphalt	Q0 20135,11269 20140,11343 20150,11512 20161,11715
 Ernstroder Weg: Asphalt	Q0 19984,11557 19966,11394
@@ -8309,7 +8311,8 @@ Grenzgrabenstr.: Asphalt	Q0 18422,15583 18429,15165
 Bürknersfelder Str.: Asphalt	Q0 18176,15160 18429,15165 18553,15169 18702,15248
 Plauener Str.: Asphalt	Q0 17940,15771 17953,15221 17959,15084 17902,15039 17829,15015 17762,14993 17718,14979 17638,14951
 (Möllendorffstr. - Karl-Lade-Str.): Verbundsteinpflaster	Q1 15513,13539 15374,13542
-(Möllendorffstr. - Karl-Lade-Str.): Verbundsteinpflaster und Beton	Q1 15374,13542 15239,13580 15097,13621
+(Möllendorffstr. - Karl-Lade-Str.): Verbundsteinpflaster und Beton	Q1 15374,13542 15239,13580 15097,13621 14995,13645
+(Möllendorffstr. - Karl-Lade-Str.): etwas unebener Asphalt	Q0- 14995,13645 14821,13674
 Hasenheide: Verbundsteinpflaster	Q0- 11141,9107 11115,9100 11098,9046 11100,8974
 Hasenheide: Parkweg	Q1 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 (Hasenheide, Weg am westlichen Rand): Asphalt	Q0 11182,8983 11137,8979 11100,8974
@@ -10718,7 +10721,7 @@ Giselhersteig: Verbundsteinpflaster	Q1+ 17355,12460 17386,12456 17438,12448 1749
 Giselhersteig: Verbundsteinpflaster	Q1+ 17438,12448 17433,12414
 (Giselhersteig - Nibelungenring): Verbundsteinpflaster	Q1+ 17386,12456 17382,12421
 (Giselhersteig - Hadburgpfad): Verbundsteinpflaster	Q1+ 17491,12439 17486,12407
-(Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt	Q0 17110,14187 17224,14151 17236,14140
+(Siegfriedstr. [Autowaschcenter] - Landschaftspark Herzberge): Asphalt, Wurzelhebungen	Q0- 17110,14187 17224,14151 17236,14140
 Treptower Park: wassergebundene Decke	Q1 14695,9587 14792,9599 14867,9573 14918,9545 15025,9461 15133,9396 15184,9373 15268,9374 15325,9354 15453,9259
 (Treptower Park, mittlerer Weg): wassergebundene Decke	Q1 15184,9373 15249,9337
 (S-Bahnhof Treptower Park - Rosengarten): Gehwegplatten	Q0 14705,9578 14791,9537
@@ -10769,8 +10772,8 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern?
-#: last_checked: 2022-04-21
-#: check_frequency: 30d
+#: last_checked: 2022-05-21
+#: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
 Duftgeranienweg: Beton	Q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
@@ -11914,7 +11917,7 @@ Verbindungsweg zur Neuen Wuhle: Schotterweg	Q1- 21553,17701 21542,17632 21535,17
 (entlang des Kreuzgrabens): wassergebundene Decke	Q1 10379,20309 10314,20262 10260,20222 10172,20142 10157,20128 10098,20113
 (entlang der Siemensbahn): gepflastert	Q2 778,14713 739,14723 547,14880 537,14919
 (Alt-Biesdorf - Schloss Biesdorf): Kopfsteinpflaster	Q2 20764,11675 20825,11732
-(Alt-Biesdorf - Schloss Biesdorf): Kleinsteinpflaster	Q1 20825,11732 20831,11771
+(Alt-Biesdorf - Schloss Biesdorf): Kleinsteinpflaster	Q1 20825,11732 20831,11777
 Seidenschwanzstr.: Asphalt	Q0 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801
 Seidenschwanzstr.: Verbundsteinpflaster	Q1+ 26452,12683 26428,12708
 Wildkatzenweg: Verbundsteinpflaster	Q1+ 26475,12761 26414,12811 26334,12854
@@ -12315,7 +12318,7 @@ Schloßplatz: Asphalt	Q0 10102,12384 10175,12435
 (Uferweg am Humboldtforum): Kleinpflastersteine	Q1- 10357,12356 10336,12404 10271,12503 10243,12546
 Schloßplatz: Kleinpflastersteine	Q1- 10175,12435 10271,12503
 (Lustgarten - Schloss): Kleinpflastersteine	Q1- 10155,12494 10175,12435
-(Parkweg - Park Biesdorf): wassergebundene Decke	Q1 20779,11801 20804,11797 20818,11812 20835,11810
+(Parkweg - Park Biesdorf): wassergebundene Decke	Q1 20775,11801 20801,11797 20804,11813 20835,11810
 Am Kraatzgraben: Verbundsteinpflaster	Q1 16899,10020 16835,10052
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: Asphalt	Q0 16895,9922 16886,9982
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: unbefestigt	Q1- 16886,9982 16894,10003
@@ -19447,7 +19450,8 @@ Weseler Str.: Asphalt	Q0 18886,9031 18900,9119
 #: by: ^^^
 # 
 #: by: manfred aebi:
-Arthur-Weisbrodt-Str.: guter Asphalt	Q0 14170,13496 14218,13661
+#: confirmed_by: srt (added Q0-)
+Arthur-Weisbrodt-Str.: guter Asphalt	Q0- 14170,13496 14218,13661
 # 
 #: by: peter walschburger: vvv
 #: corrected_by: srt (was Verbundsteinpflaster) vvv
@@ -28174,6 +28178,7 @@ Fanny-Zobel-Str.: Asphalt	Q0 13975,10187 13899,10214
 #: confirmed_by: srt
 Dossestr. (Friedrichshain): Kopfsteinpflaster	Q2 15043,11637 15140,11811 15202,11789
 # REMOVED --- Eldenaer Str.: Asphalt	Q1 14096,12827 14066,12836 13979,12861 13975,12862 13844,12900
+#: confirmed_by: srt
 Neue Welt: Asphalt	Q0 14704,12950 14433,13027
 August-Lindemann-Str.: Gehwegplatten, Kopfsteinpflaster	Q2 14355,12752 14360,12792
 August-Lindemann-Str.: Asphalt	Q0 14360,12792 14376,12849 14411,12951 14419,12978 14433,13027 14448,13081 14465,13138 14476,13181
@@ -30041,12 +30046,14 @@ Hagenstr. (Lichtenberg): Asphalt	Q0 16933,12432 16918,12325
 #: confirmed_by: srt
 Hagenstr. (Lichtenberg): Asphalt	Q0 16918,12325 16890,12135 16865,11931
 #: note: ähnlich von Jill Laukat bestätigt "Kopfsteinpfalster, schlechte Radbedingungen, jedoch breiter Fußweg und kaum Fußgänger"
-Gernotstr. (Lichtenberg): Kopfsteinpflaster	Q3 17122,12295 17091,12105
+#: corrected_by: srt (Q3 -> ...)
+Gernotstr. (Lichtenberg): Kopfsteinpflaster	Q2 17122,12295 17091,12105
 #: corrected_by: srt (hier liegen in der Mitte Betonplatten)
 Gernotstr. (Lichtenberg): Kopfsteinpflaster, zwischen den Schieden Beton	Q2; 17091,12105 17088,12069
 #: confirmed_by: srt
 Gernotstr. (Lichtenberg): Kopfsteinpflaster	Q3; 17088,12069 17091,12105
-Volkerstr.: Kopfsteinpflaster	Q3 17218,12281 17195,12125
+#: corrected_by: srt (Q3 -> ...)
+Volkerstr.: Kopfsteinpflaster	Q2 17218,12281 17195,12125
 #: confirmed_by: srt (schlechter Asphalt, Q2 -> Q1-, mittlerweile neuer Asphalt)
 (Am Städt. Zentralfriedhof - Rhinstr.): Asphalt	Q0 17790,12255 17837,12277 18037,12362 18098,12376
 #: corrected_by: srt (schlechter Asphalt -> Schotter, mittlerweile neuer Asphalt)
@@ -30967,4 +30974,13 @@ Kreuzungsbereich asphaltiert	Q0 8947,5434
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 9275,13720
 Kreuzungsbereich mit Kopfsteinpflaster	Q2- 14102,11715
 Kreuzungsbereich asphaltiert	Q0 9653,10950
+Einmündungsbereich asphaltiert	Q0 17020,12309
+Einmündungsbereich asphaltiert	Q0 17122,12295
+Einmündungsbereich asphaltiert	Q0 17218,12281
+Einmündungsbereich asphaltiert	Q0 17139,12100
+Einmündungsbereich asphaltiert	Q0 17088,12069
+Einmündungsbereich asphaltiert	Q0 16975,12000
+Einmündungsbereich asphaltiert	Q0 17195,12125
+Einmündungsbereich mit Kopfsteinpflaster	Q2- 18420,11864
+Kreuzungsbereich mit Kopfsteinpflaster	Q2- 18417,11854
 #: ignore ^^^

@@ -662,7 +662,7 @@ Dorfstr. - Wuhletal: Bordstein	q2 22112,11936 22104,11925
 Unterf¸hrung Wuhletal: Fuﬂg‰nger	q2 21970,12153 21972,12038 21936,12022
 Park Biesdorf: Fuﬂg‰nger	q2 21150,11925 21134,11913 21132,11943 21100,11960 20857,12027 20810,12031
 Park Biesdorf: Fuﬂg‰nger	q2 20807,12083 20857,12027
-Albert-Brodersen-Allee: Fuﬂg‰nger	q2 20857,12027 20835,11810 20831,11771 20825,11732
+Albert-Brodersen-Allee: Fuﬂg‰nger	q2 20857,12027 20835,11810 20831,11777 20825,11732
 (Schulstr. - Braunsdorfstr.): sehr eng	q3 20413,11953 20396,11983
 (Am Schlachtensee - Altvaterstr., Unterf¸hrung): enge Unterf¸hrung	q3 -3192,3129 -3176,3081 -3170,3070
 (Altvaterstr. - Spanische Allee): eng	q1 -3223,3034 -3368,2942 -3378,2936
@@ -1359,6 +1359,8 @@ Salvador-Allende-Viertel [Wohngebiet]: eine Bodenschwelle, kann umfahren werden	
 (Weg im Salvador-Allende-Viertel - Am Berg): Fuﬂg‰nger, Bordstein	q3 23051,4461 23010,4506
 Am Amtsgraben: einige Fuﬂg‰nger, Bordstein	q2 22927,4400 22866,4352
 (Mˆllendorffstr. - Karl-Lade-Str.): Fuﬂg‰nger	q2 15513,13539 15374,13542
+(Mˆllendorffstr. - Karl-Lade-Str.): gemeinsamer Rad- und Gehweg	q1 15374,13542 15239,13580 15097,13621 14995,13645
+(Mˆllendorffstr. - Karl-Lade-Str.): gemeinsamer Rad- und Gehweg	q1 14995,13645 14821,13674
 Lilienweg: Fuﬂg‰nger	q2 15143,5705 15154,5706 15209,5713 15252,5719 15296,5725 15337,5730
 Rosenweg: Fuﬂg‰nger	q2 15343,5687 15337,5730 15330,5821 15325,5934
 Spielplatzweg: Fuﬂg‰nger	q2 15141,5800 15201,5807 15246,5812 15288,5816 15330,5821
@@ -2142,7 +2144,7 @@ Schloﬂplatz: Fuﬂg‰nger	q2 10174,12284 10102,12384
 (Lustgarten - Schloss): Fuﬂg‰nger	q2 10155,12494 10175,12435
 (Uferweg am Humboldtforum): Fuﬂg‰nger	q2 10357,12356 10336,12404 10271,12503 10243,12546
 Schloﬂplatz: Fuﬂg‰nger	q3 10175,12435 10271,12503
-(Parkweg - Park Biesdorf): Fuﬂg‰nger	q2 20779,11801 20804,11797 20818,11812 20835,11810
+(Parkweg - Park Biesdorf): Fuﬂg‰nger	q2 20775,11801 20801,11797 20804,11813 20835,11810
 Am Kraatzgraben: einige Fuﬂg‰nger	q1 16899,10020 16835,10052
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fuﬂg‰nger	q1 16894,10003 16899,10020 16912,10054
 (Nˆrdliche Landebahn - Eingang Peter-Strasser-Weg): schmal	q2 9362,7616 9281,7651
@@ -2291,6 +2293,7 @@ Carl-Weder-Park: gemeinsamer Geh- und Radweg	q1 12595,6299 12614,6301 12638,6307
 Max-und Herta-Naujocks-Weg: Fuﬂg‰nger, schmaler Weg	q2 16036,18604 16077,18674 16112,18692 16133,18765 16163,18780
 (Einkaufszentrum Lagunenweg): Fuﬂg‰nger	q2 31762,3202 31650,3218
 (Mausohrweg - R1): Bordsteine, Fuﬂg‰nger	q3 33296,2894 33267,2810 33255,2762
+Haydnstr. - M‰rkische Allee: Bordsteine, einige Fuﬂg‰nger	q3 19995,11795 19979,11774
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

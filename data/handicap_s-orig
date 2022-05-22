@@ -625,10 +625,10 @@ Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwor
 # 
 #: next_check_id: WESER-2021
 #: XXX: w‰hrend der Bauarbeiten ist der Radweg nicht befahrbar
-#: osm_watch: way id="1050315263" version="2"
-#: osm_watch: way id="996616281" version="5"
-#: osm_watch: way id="996616282" version="4"
-#: last_checked: 2022-05-01
+#: osm_watch: way id="1050315263" version="3"
+#: osm_watch: way id="996616281" version="8"
+#: osm_watch: way id="996616282" version="7"
+#: last_checked: 2022-05-21 (osm)
 #: check_frequency: 45d
 #: next_check: 2022-09-15
 # REMOVED (hier fertig) --- Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
@@ -788,9 +788,8 @@ Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,122
 #: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9657 (hier sogar bis Ende 2026)
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-05-17 (indoor)
-#: check_frequency: 30d
-# REMOVED --- #: check_frequency: 120d
+#: last_checked: 2022-05-21
+#: check_frequency: 120d
 #: next_check: 2024-12-31
 #: valid: -20241231
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung S¸den	q3::inwork; 19181,13485 19198,13272 19180,13219
@@ -1850,7 +1849,7 @@ Unterf¸hrung Wuhletal: Fuﬂg‰nger	q2 21970,12153 21972,12038 21936,12022
 #: note: Gr¸nanlagenschild, laut Parkordnung ist das Radfahren auf ausgewiesenen Wegen erlaubt --- aber welche sind das? vvv
 Park Biesdorf: Fuﬂg‰nger	q2 21150,11925 21134,11913 21132,11943 21100,11960 20857,12027 20810,12031
 Park Biesdorf: Fuﬂg‰nger	q2 20807,12083 20857,12027
-Albert-Brodersen-Allee: Fuﬂg‰nger	q2 20857,12027 20835,11810 20831,11771 20825,11732
+Albert-Brodersen-Allee: Fuﬂg‰nger	q2 20857,12027 20835,11810 20831,11777 20825,11732
 #: note ^^^
 # 
 # REMOVED (existiert nicht mehr) --- (Wuhlgartenweg - ƒhrenweg): einige Fuﬂg‰nger, schmal	q2 21101,12132 21107,12186
@@ -2784,7 +2783,11 @@ Salvador-Allende-Viertel [Wohngebiet]: eine Bodenschwelle, kann umfahren werden	
 Am Amtsgraben: einige Fuﬂg‰nger, Bordstein	q2 22927,4400 22866,4352
 # 
 # REMOVED (Bauarbeiten weitgehend beendet) --- #: XXX wann sind die Bauarbeiten beendet? -> alten Eintrag wieder herstellen --- #: last_checked: 2013-12-11 --- #: next_check: 2013-12-18
+#: note: an schˆnen Tagen und bei mehr Straﬂenbahnbetrieb eher q3
 (Mˆllendorffstr. - Karl-Lade-Str.): Fuﬂg‰nger	q2 15513,13539 15374,13542
+(Mˆllendorffstr. - Karl-Lade-Str.): gemeinsamer Rad- und Gehweg	q1 15374,13542 15239,13580 15097,13621 14995,13645
+#: note: hier sieht es so aus, als ob es eine Trennung gibt (Asphaltstreifen vs. Beton)
+(Mˆllendorffstr. - Karl-Lade-Str.): gemeinsamer Rad- und Gehweg	q1 14995,13645 14821,13674
 # REMOVED (aufgehoben) --- #: temporary: --- #: XXX wann wird die Umfahrung wieder aufgehoben? --- #: last_checked: 2013-09-12 --- #: check_frequency: 20d --- Paul-Junius-Str.: Umfahrung an der Straﬂenbahn¸berquerung	q4::inwork 15374,13542 15370,13508
 # 
 #: note: an der westlichen Einfahrt h‰ngt ein (fast unkenntliches) Radfahren-verboten-Schild, aber am Rosenweg fehlt so ein Schild
@@ -3829,7 +3832,7 @@ Schloﬂplatz: Fuﬂg‰nger	q2 10174,12284 10102,12384
 (Lustgarten - Schloss): Fuﬂg‰nger	q2 10155,12494 10175,12435
 (Uferweg am Humboldtforum): Fuﬂg‰nger	q2 10357,12356 10336,12404 10271,12503 10243,12546
 Schloﬂplatz: Fuﬂg‰nger	q3 10175,12435 10271,12503
-(Parkweg - Park Biesdorf): Fuﬂg‰nger	q2 20779,11801 20804,11797 20818,11812 20835,11810
+(Parkweg - Park Biesdorf): Fuﬂg‰nger	q2 20775,11801 20801,11797 20804,11813 20835,11810
 Am Kraatzgraben: einige Fuﬂg‰nger	q1 16899,10020 16835,10052
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fuﬂg‰nger	q1 16894,10003 16899,10020 16912,10054
 (Nˆrdliche Landebahn - Eingang Peter-Strasser-Weg): schmal	q2 9362,7616 9281,7651
@@ -4065,6 +4068,8 @@ Max-und Herta-Naujocks-Weg: Fuﬂg‰nger, schmaler Weg	q2- 16036,18604 16077,18674 
 #: last_checked: 2022-05-11
 #: check_frequency: 120d
 (Mausohrweg - R1): Bordsteine, Fuﬂg‰nger	q3 33296,2894 33267,2810 33255,2762
+#: XXX_prog BS (2x, ansonsten q2)
+Haydnstr. - M‰rkische Allee: Bordsteine, einige Fuﬂg‰nger	q3 19995,11795 19979,11774
 # 
 ######################### User Contributions #################################
 # 
