@@ -18,7 +18,7 @@ use vars qw($VERSION @EXPORT_OK);
 $VERSION = '0.06';
 
 use Exporter 'import';
-@EXPORT_OK = qw(get_pmake module_path module_version get_modern_perl);
+@EXPORT_OK = qw(get_pmake module_path module_version get_modern_perl monkeypatch_manifind);
 
 use File::Glob qw(bsd_glob);
 use version ();
@@ -109,6 +109,41 @@ sub get_modern_perl (;@) {
 	}
     }
     return $^X;
+}
+
+# See
+#   https://github.com/Perl-Toolchain-Gang/ExtUtils-Manifest/issues/5
+#   https://github.com/Perl-Toolchain-Gang/ExtUtils-Manifest/issues/6
+#   https://github.com/Perl-Toolchain-Gang/ExtUtils-Manifest/issues/16
+sub monkeypatch_manifind {
+    my(%opts) = @_;
+    my $v = delete $opts{v};
+    die 'Unhandled options: ' . join(' ', %opts) if %opts;
+
+    if (eval { require ExtUtils::Manifest; $ExtUtils::Manifest::VERSION < 1.66 }) {
+	if ($v) {
+	    warn "INFO: no need to monkey-patch ExtUtils::Manifest::manifind.\n";
+	}
+    } else {
+	# This is a simplified version of manifind without VMS & MacOS
+	# support, but containing the follow_skip patch.
+	my $new_manifind = sub {
+	    my $found = {};
+	    no warnings 'once'; # because of $File::Find::name
+	    my $wanted = sub {
+		return if -d $_;
+		(my $name = $File::Find::name) =~ s{^./}{};
+		$found->{$name} = "";
+	    };
+	    File::Find::find({wanted => $wanted, follow_fast => 1, follow_skip => 2}, '.');
+	    $found;
+	};
+	no warnings 'redefine', 'once';
+	*ExtUtils::Manifest::manifind = $new_manifind;
+	if ($v) {
+	    warn "INFO: monkey-patched ExtUtils::Manifest::manifind.\n";
+	}
+    }
 }
 
 1;

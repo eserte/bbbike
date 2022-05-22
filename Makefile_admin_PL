@@ -580,7 +580,7 @@ clean-cache:
 	-rm -rf cache/*
 
 distcheck-fatal:
-	perl -MExtUtils::Manifest=fullcheck -e '($$missing,$$extra) = fullcheck; if (@$$missing) { die "Missing files found!\n" } if (@$$extra) { die "Extra files found\n" }'
+	perl -I. -MBBBikeBuildUtil=monkeypatch_manifind -MExtUtils::Manifest=fullcheck -e 'monkeypatch_manifind(); ($$missing,$$extra) = fullcheck; if (@$$missing) { die "Missing files found!\n" } if (@$$extra) { die "Extra files found\n" }'
 
 ######################################################################
 # Towards git
