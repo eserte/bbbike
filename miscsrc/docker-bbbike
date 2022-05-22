@@ -48,7 +48,7 @@ EOF
 sub usage_ci (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] ci [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--perl-ver X.Y.Z] [--env KEY=VAL ...] [--branch ...]
-	 [--with-data-build] [--cache] [--invalidate-apt] [--image-variant ...]
+	 [--with-data-build] [--no-cache] [--invalidate-apt] [--image-variant ...]
 EOF
 }
 
