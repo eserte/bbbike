@@ -139,7 +139,9 @@ Imager	- additional optional BBBikeDraw backend for PNG graphics
 
 Imager::Screenshot	- better screenshot module
 
-Image::ExifTool	- für geocode_images
+Image::ExifTool	- für geocode_images und exif2gpsman
+
+DateTime::Format::ISO8601	- für exif2gpsman und temp_blockings_tasks
 
 SVG	- additional optional BBBikeDraw backend for SVG graphics
 
