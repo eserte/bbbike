@@ -4814,7 +4814,7 @@ EOF
        text  => 'B 101 OL Luckenwalde, Zinnaer Straße OL Luckenwalde, Zinnaer Str. zw. Mühlenweg u. Am Nuth: Vollsperrung 12.06.2006-23.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -4614,-35852 -4603,-35730
+	q4::inwork -4614,-35852 -4627,-35807 -4568,-35783 -4584,-35733
 EOF
      },
      { from  => 1150581600, # 2006-06-18 00:00
@@ -5051,7 +5051,7 @@ EOF
        text  => 'L 711 Buckow-Wahlsdorf zw. Wahlsdorf und Liepe Deckenerneuerung Vollsperrung 06.07.2006-11.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 8810,-50414 6695,-50057
+	2 8810,-50414 6805,-50110
 EOF
      },
      { from  => 1153432800, # 2006-07-21 00:00
@@ -6655,7 +6655,7 @@ EOF
        text  => 'B 101 Haag OD Luckenwalde, Kno. Beelitzer Str. Straßenausbau Vollsperrung 01.11.2006-29.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -4609,-35650 -4299,-35198
+	2::inwork -4545,-35560 -4446,-35414 -4299,-35198
 EOF
      },
      { from  => 1162249200, # 2006-10-31 00:00
@@ -10099,7 +10099,7 @@ EOF
        text  => 'B 101 Herzberg-Jüterbog zw. Welsickendorf und Landesgrenze Deckeneinbau Vollsperrung 16.10.2007-17.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -5503,-62012 -6079,-56811
+	2::inwork -5503,-62012 -6117,-56759
 EOF
      },
      { from  => 1190498400, # 2007-09-23 00:00
@@ -16609,7 +16609,7 @@ EOF
        text  => 'B 115 Baruth - Jüterbog zw. Charlottenfelde und Abzw. Wahlsdorf Straßenbauarbeiten Vollsperrung 24.09.2009-12.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 4784,-46940 4232,-46877
+	2::inwork 4782,-46907 4522,-46914 4232,-46877
 EOF
      },
      { from  => 1253570400, # 2009-09-22 00:00
@@ -16739,7 +16739,7 @@ EOF
        text  => 'B 101 Zinnaer Str. OD Luckenwalde, zw. Kirchstr. und Am Nuthefließ Straßenbau Vollsperrung 12.10.2009-19.10.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -4614,-35852 -4603,-35730
+	q4::inwork -4614,-35852 -4627,-35807 -4568,-35783 -4584,-35733
 EOF
      },
      { from  => 1254866400, # 2009-10-07 00:00
@@ -16820,7 +16820,7 @@ EOF
        text  => 'B 115 Baruth - Jüterbog zw. Jüterbog und Markendorf Deckschichteinbau Vollsperrung 06.11.2009-08.11.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -5760,-46987 -6787,-46974 -6986,-46942
+	2::inwork -5887,-46990 -6787,-46974 -6986,-46942
 	2::inwork -7582,-46937 -7831,-47100 -7975,-47313 -8299,-47368
 EOF
      },
@@ -17004,7 +17004,7 @@ EOF
        text  => 'B 101 Zinnaer Str. OD Luckenwalde, zw. Kirchstr. und Am Nuthefließ Straßenbau Vollsperrung 12.10.2009-25.11.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -4614,-35852 -4603,-35730
+	q4::inwork -4614,-35852 -4627,-35807 -4568,-35783 -4584,-35733
 EOF
      },
      { from  => 1255816800, # 2009-10-18 00:00
@@ -17170,7 +17170,7 @@ EOF
        text  => 'B 115 Baruth - Jüterbog zw. Jüterbog und Markendorf Deckschichteinbau Vollsperrung 20.11.2009-21.11.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -4289,-47091 -5760,-46987 -6787,-46974 -6986,-46942 -7582,-46937 -7831,-47100
+	2::inwork -4289,-47091 -5887,-46990 -6787,-46974 -6986,-46942 -7582,-46937 -7831,-47100
 EOF
      },
      { from  => 1257807600, # 2009-11-10 00:00
@@ -17293,7 +17293,7 @@ EOF
        text  => 'B 101 Zinnaer Str. OD Luckenwalde, zw. Heidestr. u. R.-Breitscheid-Str. Straßenbau Vollsperrung 26.11.2009-28.11.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -4614,-35852 -4603,-35730
+	q4::inwork -4614,-35852 -4627,-35807 -4568,-35783 -4584,-35733
 EOF
      },
      { from  => $isodate2epoch->("2019-11-24 00:00:00"), # ein Tag Vorlauf
@@ -23471,7 +23471,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.flaeming-skate.de/de/aktuelles/2014/05/bauarbeiten-auf-der-flaeming-skate-2014.php',
        data  => <<EOF,
-	2::inwork -5280,-38803 -5707,-39339 -6365,-40518 -6565,-41080
+	2::inwork -5280,-38803 -5550,-39270 -5699,-39451 -6050,-40072 -6171,-40299 -6279,-40310 -6430,-40390 -6458,-40259 -6903,-40090 -6720,-41039
 EOF
      },
      { from  => 1402738058, # 2014-06-14 11:27
@@ -30929,7 +30929,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-05-14
+#: last_checked: 2022-05-23
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31148,7 +31148,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-05-21 vvv
+#: last_checked: 2022-05-23 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552

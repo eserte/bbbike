@@ -4669,7 +4669,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-05-14
+#: last_checked: 2022-05-23
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4721,7 +4721,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-05-21 vvv
+#: last_checked: 2022-05-23 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -5047,20 +5047,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147347231
-#: source_id: viz2021:13.440907,52.591391,03.07.2021,00:30
-#: source_id: viz2021:13.440554,52.591497,04.02.2022,01:00
-#: source_id: viz2021:13.440533,52.591545,21.05.2022,01:30
-	2::inwork 12672,20720 12723,20691
-',
-         'from' => 1653003000,
-         'id' => 3331,
-         'source_id' => '2147346882',
-         'text' => 'Bahnhofstr.: Unterführung unter der A114 gesperrt, Fußgänger und Radfahrer sind auch betroffen, vom 21.5.2022 01:30 bis 23.5.2022 04:30',
-         'type' => 'gesperrt',
-         'until' => 1653273000
-       },
+       undef,
        {
          'data' => '#: by: https://tierparkcenter.de/wochenmarkt/ (Öffnungszeiten)
 #: tempex: (mo,th,fr) T08-T17
