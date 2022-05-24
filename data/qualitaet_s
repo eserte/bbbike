@@ -1092,7 +1092,7 @@ Bahnhofvorplatz S-Bhf. Priesterweg: Kopfsteinpflaster	Q2 7227,6080 7252,6080 725
 Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 18007,8377 18037,8420 18072,8470 18151,8589 18272,8764
 Hegemeisterweg: Asphalt	Q0 17202,8391 17522,8220
 Hegemeisterweg: Asphalt	Q0 17522,8220 17566,8199
-Hegemeisterweg: Asphalt	Q0 17566,8199 17628,8169 17695,8137 17748,8109 17803,8079
+Hegemeisterweg: Asphalt	Q0 17566,8199 17634,8167 17698,8136 17748,8109 17803,8079
 Hegemeisterweg: Asphalt	Q0 17803,8079 17987,7973
 Hegemeisterweg: Asphalt, einige Wurzelschäden	Q0 17987,7973 18287,7815
 Hegemeisterweg: Asphalt	Q0 18287,7815 18325,7778 18382,7724
@@ -2696,8 +2696,8 @@ Oskarstr.: Asphalt mit Schäden	Q1 17771,7880 17762,7931 17793,8012 17808,8042 17
 Gleyeweg: Asphalt	Q0 17762,7931 17683,7958 17651,7973 17613,7989 17529,8073 17532,8125 17566,8199 17597,8258
 Fuchsbau (Karlshorst): Asphalt	Q0 17651,7973 17590,7828
 Blaurackenweg: Asphalt	Q0 17613,7989 17647,8071 17532,8125
-Am Weihenhorst: Asphalt	Q0 17628,8169 17658,8216
-Spatzensteig: Asphalt	Q0 17695,8137 17733,8202
+Am Weihenhorst: Asphalt mit Schäden	Q1 17634,8167 17658,8216
+Spatzensteig: Asphalt, einige Risse	Q0 17698,8136 17733,8202
 Kalkscheunenstr.: Beton	Q0 9385,13174 9401,13072
 Unter der Kranbahn: Beton	Q0 18423,6285 18381,6134 18367,6086
 Platz am Kaisersteg: Gehwegpflasterung	Q0 18381,6134 18428,6123
@@ -8746,7 +8746,7 @@ In den Floragärten: Verbundsteinpflaster	Q1 9831,17652 9895,17649 9995,17642
 (Neustrelitzer Str. - Werneuchener Str.): Beton	Q1 16541,14928 16610,15000
 (Landsberger Allee - Zechliner Str.): überwiegend Verbundsteinpflaster	Q1 16590,14386 16544,14593
 Blockdammweg: Asphalt	Q0 17904,8924 17972,8968
-Blockdammweg: Asphalt mit Rissen	Q0 17904,8924 17760,8853 17754,8863
+Blockdammweg: Asphalt mit Rissen	Q1 17904,8924 17760,8853 17754,8863
 (Park am Fennpfuhl): Verbundsteinpflaster	Q1 15060,13735 15055,13768 15023,13800 15010,13807
 (Hansastr. - Gartenstr.): Asphalt	Q0 15194,16186 15143,16210 15104,16218
 (Hansastr. - Gartenstr.): Asphalt	Q0 15104,16218 14806,16279 14665,16294
@@ -14697,8 +14697,8 @@ Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke, Schotter	Q1 
 Klemkepark - Kopenhagener Str./Freiheitsweg: Mosaikpflaster	Q1 7313,18781 7248,18793
 Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17461,8693
 Hönower Wiesenweg: Asphalt	Q0 17461,8693 17497,8623
-Hönower Wiesenweg: provisorische Baustraße	Q2 17497,8623 17515,8567
-Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2 17515,8567 17533,8505
+Hönower Wiesenweg: Asphalt	Q0 17497,8623 17515,8567 17524,8536
+Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2 17524,8536 17533,8505
 Hönower Wiesenweg: provisorische Baustraße	Q2 17533,8505 17554,8458
 Hönower Wiesenweg: provisorische Baustraße	Q2 17554,8458 17620,8366 17704,8327 17753,8290 17793,8225 17856,8162
 Frank-Zappa-Str.: guter Beton	Q0 18591,14573 18896,14649 18868,14745 18938,14768

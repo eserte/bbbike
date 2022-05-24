@@ -2900,43 +2900,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.915775.php (Absage 2020)
-#: by: https://www.wollenschlaeger-berlin.de/54-neukoellner-maientage/ (geplant: 28.4.2021 - 24.5.2021)
-#: by: https://www.berlin.de/events/2983315-2229501-neukoellner-maientage.html (geplant: 29. April bis 22. Mai 2022)
-#: by: https://berliner-abendblatt.de/2022/03/24/die-maientage-verlassen-neukoelln/ (in Zukunft nicht mehr in der Hasenheide?)
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7936
-#: by: https://www.berlin.de/events/2983315-2229501-neukoellner-maientage.html (geplant: 29. April bis 22. Mai 2022)
-#: by: https://berliner-abendblatt.de/2022/04/28/grosser-nachholbedarf-eroeffnung-der-neukoellner-maientage/
-#: by: https://berliner-abendblatt.de/2022/05/21/letztes-wochenende-der-maientage-in-der-hasenheide/
-#: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
-# REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
-# REMOVED --- #: tempex: 20180427-T20180521 vvv
-	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
-	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
-	q4::temp 11275,8387 11230,8402
-	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1651096800,
-         'id' => 2207,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              25,
-                              'months',
-                              4,
-                              'start',
-                              '2021-06-02T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
-         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 29.04.2022 bis 22.05.2022',
-         'type' => 'handicap',
-         'until' => 1653343199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4274,7 +4238,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
 #: osm_watch: way id="29547073" version="11"
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2022-05-04
+#: last_checked: 2022-05-24
 # REMOVED --- #: next_check: 2022-05-01
 	2::inwork 14980,8940 14947,8993 14855,9046 14705,9034
 ',
@@ -5033,14 +4997,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="25"
 #: osm_watch: way id="165832806" version="22"
-#: last_checked: 2022-04-24
+#: last_checked: 2022-05-24
 #: check_frequency: 30d
-	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17497,8623
+	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17524,8536 17515,8567 17497,8623
 # REMOVED (hier neu gemacht) ---	2::inwork 17497,8623 17461,8693 17416,8767 17380,8858
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 04/2021: südlich Heiner-Müller-Str. längere Engstelle, sandig)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Ende 05/2021: Durchfahrt möglich)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5066,21 +5030,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: MASSMANN-2022
-#: source_id: viz2021:13.32146,52.465174,04.03.2021,08:00 (inaktiv)
-#: source_id: viz2021:13.320517,52.466345,13.07.2021,08:00 (mittlerweile bis 2.12.2021) (inaktiv)
-#: source_id: viz2021:13.32146,52.465174,13.07.2021,08:00 (mittlerweile bis 22.2.2022) (mittlerweile bis 24.5.2022)
-	q4::inwork; 4894,6509 4875,6552
-# REMOVED --- #: note: im nördlichen Abschnitt mittlerweile (Ende Dez 2021) keine Einschränkungen mehr ---	q3::inwork; 4875,6552 4786,6717
-',
-         'from' => 1614754800,
-         'id' => 3339,
-         'source_id' => '2147346935',
-         'text' => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Richtung Norden gesperrt, bis 24.05.2022',
-         'type' => 'handicap',
-         'until' => 1653404400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5324,21 +5274,21 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
-#: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
+#: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden) --- mittlerweile ist der Bürgersteig frei
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-05-18
+#: last_checked: 2022-05-24
 #: check_frequency: 21d
 #: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="8"
 	q3::inwork 15279,10862 15355,10875
 #: osm_watch: way id="984056169" version="8"
-	2::inwork 15272,10790 15388,10758
+	q3::inwork 15272,10790 15388,10758
 ',
          'from' => 1625734800,
          'id' => 3411,
          'source_id' => 'viz2021:13.475242,52.50154,09.07.2021,11:00',
-         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), sowie die Anbindung Nöldnerstr. (komplett, auch für Fußgänger), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
+         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem sind die Anbindungen Türrschmidtstr. und Nöldnerstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
          'type' => 'gesperrt',
          'until' => 1655737200
        },
@@ -6104,11 +6054,11 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? vvv
-#: last_checked: 2022-05-04 vvv
+#: last_checked: 2022-05-24 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2022-04-11 vvv
 	q4::inwork; 15560,7400 15693,7512
-#: note: Radweg Richtung Kiefholzstraße noch weitgehend "intakt"
+#: note: teilweise ragt die Baustellenabsperrung in den Radweg Richtung Kiefholzstraße rein
 	q3::inwork; 15693,7512 15560,7400
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^

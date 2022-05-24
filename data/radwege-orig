@@ -1756,7 +1756,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/ziel-ein-durchgaengig-sicherer-radweg_a337148 (Erwähnung)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2022-05-18 vvv
+#: last_checked: 2022-05-24 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -2425,7 +2425,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=711261#post711261 (1. Bauvorhaben (nördl.); geplante Fertigstellung: Sommer 2025)
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
-#: last_checked: 2022-05-20 vvv
+#: last_checked: 2022-05-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3469,12 +3469,13 @@ Verbundsteinpflaster und bröckelnder Beton	RW1; 22599,15105 22726,15082 22899,15
 	RW1;RW1 23082,15329 22968,15315 22897,15287 22899,15073 22905,14925 22925,14865 22969,14840 23104,14827
 	RW1;RW0 23088,14579 23084,14472
 	RW1;RW1 23084,14472 23181,14371
-	RW2;RW2 23756,14696 23815,14721 23878,14748 23993,14797
-neu asphaltiert	RW2; 23021,13982 23049,14066 23118,14276 23049,14066 23021,13982
-	RW2;RW2 23118,14276 23181,14371 23260,14448 23304,14473 23399,14520 23463,14552 23576,14607
-	RW2;RW1 23576,14607 23756,14696
+	RW1;RW2 23756,14696 23815,14721
+	RW2;RW2 23815,14721 23878,14748 23993,14797
+neu asphaltiert	RW1; 23021,13982 23049,14066 23118,14276 23049,14066 23021,13982
+	RW1;RW2 23118,14276 23181,14371 23260,14448 23304,14473 23399,14520 23463,14552 23576,14607
+	RW1;RW1 23576,14607 23756,14696
 	RW2;RW2 22833,13316 22929,13661
-	RW;RW2 22929,13661 22970,13798 22975,13814 23021,13982
+	RW1;RW2 22929,13661 22970,13798 22975,13814 23021,13982
 	RW4;RW4 21918,13720 21970,13686 22101,13616 22124,13606 22246,13551 22295,13530 22317,13521 22343,13510
 	RW1;RW4 22343,13510 22594,13408
 	RW1;RW1 22594,13408 22833,13316 22912,13300 22948,13294 22980,13286
@@ -4178,11 +4179,21 @@ teilweise mit Benutzungspflicht	RW3; 10904,17288 10908,17142
 	RW2; 10458,16509 10533,16505 10620,16497
 	RW1; 10620,16497 10699,16492 10778,16485
 	RW2; 10778,16485 11019,16465
+# 
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung) vvv
+#: XXX Sanierung des Radwegs? vvv
+#: last_checked: 2022-03-20 vvv
+#: check_frequency: 270d vvv
 Radweg antik und unbenutzbar	RW1;RW1 18843,9952 18881,9865
 Verbundsteinpflasterradweg	RW1; 18881,9865 18934,9826 19005,9816
 Radweg antik und unbenutzbar	RW1; 19005,9816 18934,9826 18881,9865
 Radweg antik und unbenutzbar	RW1;RW1 19005,9816 19100,9811 19144,9810 19242,9815 19398,9833
 Verbundsteinpflasterradweg	RW1;RW1 19398,9833 19459,9842 19536,9853 19669,9876
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+#: by ^^^
+# 
 angedeuteter Radweg	RW1; 22603,12359 22388,12190 22304,12157 22129,12155 21995,12153 21970,12153 21935,12153 21819,12154
 	RW1; 22304,12157 22388,12190
 betoniert, außerdem existiert eine asphaltierte Nebenfahrbahn	RW1; 22388,12190 22603,12359
@@ -5966,6 +5977,7 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Bauarbeiten beginnen Mitte 2022)
 #: by: https://api.fixmyberlin.de/api/projects/439
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Bauarbeiten ab Mitte 2022)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: XXX Asphaltierung des Radwegs vvv
 #: last_checked: 2022-01-09 (mapillary) vvv
 #: check_frequency: 300d vvv
@@ -7277,9 +7289,9 @@ Tempo 10	RW6;RW6 11785,7583 11763,7687 11738,7790 11713,7899
 Tempo 10	RW6;RW6 14560,8528 14469,8455 14422,8407 14563,8243
 Tempo 10	RW6;RW6 14688,8355 14563,8243 14425,8116
 # 
-Tempo 10	RW6;RW6 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17497,8623
-# REMOVED (nicht mehr) --- Tempo 10	RW6;RW6 17497,8623 17461,8693 17416,8767 17380,8858
-	RW6;RW6 17380,8858 17416,8767 17461,8693 17656,8700 17640,8627 17497,8623 17461,8693
+# REMOVED (Schilder existieren nicht mehr) --- Tempo 10	RW6;RW6 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17524,8536
+	RW6;RW6 17524,8536 17515,8567 17497,8623 17461,8693
+	RW6;RW6 17380,8858 17416,8767 17461,8693 17656,8700 17640,8627 17497,8623
 Tempo 10	RW6;RW6 17380,8858 17335,8971 17308,9090 17282,9135
 Tempo 10	RW6;RW6 17308,9090 17300,9135
 # 

@@ -28597,7 +28597,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
 #: osm_watch: way id="29547073" version="11"
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualit‰t
-#: last_checked: 2022-05-04
+#: last_checked: 2022-05-24
 # REMOVED --- #: next_check: 2022-05-01
 	2::inwork 14980,8940 14947,8993 14855,9046 14705,9034
 EOF
@@ -32331,7 +32331,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hˆnower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand 04/2021: s¸dlich Heiner-M¸ller-Str. l‰ngere Engstelle, sandig)',
+       text  => 'Hˆnower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Ende 05/2021: Durchfahrt mˆglich)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32340,9 +32340,9 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung f¸r Fuﬂg‰nger und Radfahrer?
 #: osm_watch: way id="26322046" version="25"
 #: osm_watch: way id="165832806" version="22"
-#: last_checked: 2022-04-24
+#: last_checked: 2022-05-24
 #: check_frequency: 30d
-	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17515,8567 17497,8623
+	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17524,8536 17515,8567 17497,8623
 # REMOVED (hier neu gemacht) ---	2::inwork 17497,8623 17461,8693 17416,8767 17380,8858
 EOF
      },
@@ -33287,23 +33287,23 @@ EOF
      },
      { from  => $isodate2epoch->("2021-07-08 11:00:00"),
        until => $isodate2epoch->("2022-06-20 17:00:00"), # undef, # Termin kann wohl nicht gehalten werden --- $isodate2epoch->("2021-12-15 17:00:00"),
-       text  => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und T¸rrschmidtstr. Radfahrer m¸ssen absteigen und schieben, auﬂerdem ist die Anbindung T¸rrschmidtstr. gesperrt (nur Fahrbahn, B¸rgersteig ist frei), sowie die Anbindung Nˆldnerstr. (komplett, auch f¸r Fuﬂg‰nger), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
+       text  => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und T¸rrschmidtstr. Radfahrer m¸ssen absteigen und schieben, auﬂerdem sind die Anbindungen T¸rrschmidtstr. und Nˆldnerstr. gesperrt (nur Fahrbahn, B¸rgersteig ist frei), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
        type  => 'gesperrt',
        source_id => 'viz2021:13.475242,52.50154,09.07.2021,11:00', # bis 20.6.2022
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
 #: note: die Anbindung Nˆldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
-#: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nˆldnerstr. (Fahrbahn ist aufgerissen), evtl. auch f¸r Fuﬂg‰nger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man kˆnnte sein Rad r¸bertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden)
+#: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nˆldnerstr. (Fahrbahn ist aufgerissen), evtl. auch f¸r Fuﬂg‰nger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man kˆnnte sein Rad r¸bertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden) --- mittlerweile ist der B¸rgersteig frei
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-05-18
+#: last_checked: 2022-05-24
 #: check_frequency: 21d
 #: next_check: 2022-06-20
 	q4::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="8"
 	q3::inwork 15279,10862 15355,10875
 #: osm_watch: way id="984056169" version="8"
-	2::inwork 15272,10790 15388,10758
+	q3::inwork 15272,10790 15388,10758
 EOF
      },
      { from  => 1625859946, # 2021-07-09 21:45
@@ -34934,11 +34934,11 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? vvv
-#: last_checked: 2022-05-04 vvv
+#: last_checked: 2022-05-24 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2022-04-11 vvv
 	q4::inwork; 15560,7400 15693,7512
-#: note: Radweg Richtung Kiefholzstraﬂe noch weitgehend "intakt"
+#: note: teilweise ragt die Baustellenabsperrung in den Radweg Richtung Kiefholzstraﬂe rein
 	q3::inwork; 15693,7512 15560,7400
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^

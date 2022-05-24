@@ -13,7 +13,7 @@
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 # REMOVED --- #: osm_watch: way id="524560334" version="5"
 #: osm_watch: way id="524560332" version="5"
-#: last_checked: 2022-03-23 vvv
+#: last_checked: 2022-05-24 vvv
 #: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="3"
@@ -265,7 +265,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Fahrbahninstandsetzung ab Herbst 2021, bis 2022)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2022-05-18
+#: last_checked: 2022-05-24
 # REMOVED --- #: next_check: 2021-10-01
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
 Dönhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
@@ -1522,7 +1522,7 @@ Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 
 # REMOVED (fertig) --- #: next_check_id: HEGEMEISTERWEG-2018 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung) --- #: XXX Straße wird asphaltiert, laut Bauschild bis November 2018 fertig --- #: osm_watch: way id="598516975" version="5" --- #: add_fragezeichen: Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen? --- #: last_checked: 2019-04-06 --- #: check_frequency: 14d
 Hegemeisterweg: Asphalt	Q0 17202,8391 17522,8220
 Hegemeisterweg: Asphalt	Q0 17522,8220 17566,8199
-Hegemeisterweg: Asphalt	Q0- 17566,8199 17628,8169 17695,8137 17748,8109 17803,8079
+Hegemeisterweg: Asphalt	Q0- 17566,8199 17634,8167 17698,8136 17748,8109 17803,8079
 Hegemeisterweg: Asphalt	Q0 17803,8079 17987,7973
 Hegemeisterweg: Asphalt, einige Wurzelschäden	Q0- 17987,7973 18287,7815
 Hegemeisterweg: Asphalt	Q0 18287,7815 18325,7778 18382,7724
@@ -3543,8 +3543,8 @@ Oskarstr.: Asphalt mit Schäden	Q1- 17771,7880 17762,7931 17793,8012 17808,8042 1
 Gleyeweg: Asphalt	Q0 17762,7931 17683,7958 17651,7973 17613,7989 17529,8073 17532,8125 17566,8199 17597,8258
 Fuchsbau (Karlshorst): Asphalt	Q0 17651,7973 17590,7828
 Blaurackenweg: Asphalt	Q0 17613,7989 17647,8071 17532,8125
-Am Weihenhorst: Asphalt	Q0 17628,8169 17658,8216
-Spatzensteig: Asphalt	Q0 17695,8137 17733,8202
+Am Weihenhorst: Asphalt mit Schäden	Q1- 17634,8167 17658,8216
+Spatzensteig: Asphalt, einige Risse	Q0- 17698,8136 17733,8202
 Kalkscheunenstr.: Beton	Q0- 9385,13174 9401,13072
 Unter der Kranbahn: Beton	Q0 18423,6285 18381,6134 18367,6086
 Platz am Kaisersteg: Gehwegpflasterung	Q0- 18381,6134 18428,6123
@@ -7532,7 +7532,7 @@ Stendaler Str. [Nebenfahrbahn] (Hellersdorf): Beton	Q0- 23941,15458 23960,15340 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1195419.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1202027.php
 #: XXX Wie sieht die Wegbeschaffenheit nach den Bauarbeiten aus? vvv
-#: last_checked: 2022-04-17 (mapillary) vvv
+#: last_checked: 2022-05-22 (mapillary) vvv
 #: next_check: 2022-08-31 vvv
 (Zerbster Str. - Louis-Lewin-Str.): Kleinsteinpflaster	Q1 24324,15519 24379,15511
 (Zerbster Str. - Louis-Lewin-Str.): wassergebundene Decke	Q1 24379,15511 24459,15526 24468,15554 24811,15513 24827,15564 24927,15611 25003,15617
@@ -8047,10 +8047,10 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 #: next_check_id: HELLWEG-2014 vvv
 #: last_checked: 2022-03-05 vvv
 #: check_frequency: 100d vvv
-#: osm_watch: way id="531908445" version="9"
+#: osm_watch: way id="531908445" version="10"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988
-#: osm_watch: way id="273174490" version="11"
+#: osm_watch: way id="273174490" version="12"
 # REMOVED --- #: osm_watch: way id="356357906" version="8"
 #: XXX wird hier noch verbessert werden?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): Betonplattenweg	Q2- 8289,9988 8206,9867
@@ -10162,7 +10162,7 @@ In den Floragärten: Verbundsteinpflaster	Q1+ 9831,17652 9895,17649 9995,17642
 (Neustrelitzer Str. - Werneuchener Str.): Beton	Q1 16541,14928 16610,15000
 (Landsberger Allee - Zechliner Str.): überwiegend Verbundsteinpflaster	Q1 16590,14386 16544,14593
 Blockdammweg: Asphalt	Q0 17904,8924 17972,8968
-Blockdammweg: Asphalt mit Rissen	Q0- 17904,8924 17760,8853 17754,8863
+Blockdammweg: Asphalt mit Rissen	Q1+ 17904,8924 17760,8853 17754,8863
 (Park am Fennpfuhl): Verbundsteinpflaster	Q1 15060,13735 15055,13768 15023,13800 15010,13807
 # 
 # REMOVED --- #: next_check_id: HANSAGARTEN-2019 --- #: XXX nach den Bauarbeiten zumindest teilweise asphaltiert vvv --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php --- #: last_checked: 2020-04-23 vvv # REMOVED --- #: next_check: 2020-02-01 vvv
@@ -15385,7 +15385,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228 (Fahrbahnerneuerung zwischen Grimnitz- und Liepnitzstr. ab September 2021)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9000 (Rechtskontrolle)
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
-#: last_checked: 2022-05-18
+#: last_checked: 2022-05-24
 #: check_frequency: 180d
 #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976
@@ -22824,8 +22824,9 @@ Hönower Wiesenweg: Asphalt	Q0 17308,9090 17335,8971 17380,8858 17416,8767 17461,
 # REMOVED (früher) --- Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17461,8693 17497,8623 17515,8567
 #: corrected_by: srt (... -> ..., neu gemacht)
 Hönower Wiesenweg: Asphalt	Q0 17461,8693 17497,8623
-Hönower Wiesenweg: provisorische Baustraße	Q2 17497,8623 17515,8567
-Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17515,8567 17533,8505
+#: corrected_by: srt (... -> ..., neu gemacht)
+Hönower Wiesenweg: Asphalt	Q0 17497,8623 17515,8567 17524,8536
+Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17524,8536 17533,8505
 # REMOVED (früher) --- Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17533,8505 17554,8458
 Hönower Wiesenweg: provisorische Baustraße	Q2 17533,8505 17554,8458
 # REMOVED (früher) --- #: corrected_by: srt: (Q3 -> Q2-) --- Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2- 17554,8458 17620,8366 17704,8327 17753,8290 17793,8225 17856,8162

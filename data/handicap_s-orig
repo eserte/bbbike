@@ -142,7 +142,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2022-03-23
+#: last_checked: 2022-05-24
 #: check_frequency: 60d
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
@@ -473,7 +473,7 @@ Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 # REMOVED (fertig) --- #: next_check_id: ZWIESELER-2022 --- #: last_checked: 2022-03-20 --- #: check_frequency: 60d --- Richard-Kolkwitz-Weg: Engstelle wegen Bauarbeiten	q2::inwork 19711,10426 19813,10468
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2022-04-24 vvv
+#: last_checked: 2022-05-24 vvv
 Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17461,8693 17656,8700 17640,8627 17497,8623
 Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17461,8693
 Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17461,8693 17497,8623
@@ -857,11 +857,11 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: by: https://berliner-abendblatt.de/2022/04/28/abriss-der-moltkebruecke-ersatzverkehr-am-wochenende/
 #: by: https://www.bz-berlin.de/berlin/steglitz-zehlendorf/moltkebruecke-in-lichterfelde-ist-nur-noch-geschichte
 #: XXX Neubau der Brücke, laut osm bis 2024
-#: osm_watch: way id="13860352" version="20"
+#: osm_watch: way id="13860352" version="21"
 #: osm_watch: way id="1056377427" version="1"
 #: also_indoor: traffic (G,ex-H,B)
 #: priority: #A
-#: last_checked: 2022-05-15
+#: last_checked: 2022-05-23 (osm)
 #: check_frequency: 180d
 #: next_check: 2024-03-01
 Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,4577 3867,4537 3898,4490 3934,4441
@@ -885,12 +885,12 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021) (vermutlich inaktiv)
-#: osm_watch: way id="885619857" version="9"
-#: osm_watch: way id="885619858" version="4"
+#: osm_watch: way id="885619857" version="10"
+#: osm_watch: way id="885619858" version="5"
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (ex-G,B)
 #: priority: #B
-#: last_checked: 2022-05-10 (mapillary) vvv
+#: last_checked: 2022-05-23 (osm) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -1419,6 +1419,7 @@ Am Rummelsburger See: Fußgänger, Grünanlage	q3 15253,10171 15199,10211 15134,102
 #: note: Fußweg für Radfahrer frei
 Am Rummelsburger See: Fußgänger, kurvenreich	q1 14892,10411 14864,10451 14861,10467 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15145,10636
 #: next_check_id: RUMMELSBURGERBUCHT-2021
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung einer Verbreiterung, wo genau?)
 #: XXX nach den Bauarbeiten am "My Bay Way" wird der zweite Strang wohl wieder offen sein, dann wieder mit dem vorherigen Eintrag zusammenfügen
 #: last_checked: 2022-05-07
 #: check_frequency: 90d
