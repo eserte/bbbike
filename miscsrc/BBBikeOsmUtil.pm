@@ -488,7 +488,7 @@ sub plot_osm_files {
 					   ($tag{'natural'} eq 'cliff'))) ||
 		# just a note tag, nothing else
 		(exists $tag{'note'} && %tag == 1)
-	       ) {
+	       )) {
 		$item_args{'-dash'} = '.  ';
 	    } elsif (exists $tag{'power'}) {
 		$item_args{'-dash'} = '.   ';
