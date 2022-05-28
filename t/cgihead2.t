@@ -236,6 +236,8 @@ EOF
 	    is($content_type, "application/x-gzip", "Expected type (gzip)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{\.txz$}) {
 	    is($content_type, "application/octet-stream", "Expected type (txz)") or diag("For URL $url$redir_text");
+	} elsif ($url =~ m{\.pkg$}) {
+	    is($content_type, "application/octet-stream", "Expected type (pkg)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{/\.modified$}) {
 	    like($content_type, qr{^text/plain}, "Expected type (plain text)") or diag("For URL $url$redir_text");
 	} elsif ($url =~ m{wap}) {
