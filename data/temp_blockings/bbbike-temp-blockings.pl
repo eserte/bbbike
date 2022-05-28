@@ -9827,7 +9827,7 @@ EOF
        text  => 'L 073 Luckenwalde-Stülpe OD Jänickendorf 7. Kreiserntefest Vollsperrung 31.08.2007-02.09.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -521,-39003 -757,-38862
+	q4::inwork -521,-39003 -668,-38892
 EOF
      },
      { from  => 1188079200, # 2007-08-26 00:00
@@ -14654,6 +14654,7 @@ EOF
 #: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.819220.php
 #: by: https://www.berlin.de/events/3415964-2229501-koepenicker-sommer.html (2021: Termin noch nicht bekannt) (mittlerweile gibt's den Termin)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211381.php
 	2::temp 22111,4562 22093,4499 22076,4422
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
 	2::temp 22138,4642 22074,4664
@@ -16812,7 +16813,7 @@ EOF
        text  => 'B 115 Baruth - Jüterbog zw. Abzw. Wahlsdorf und Markendorf Straßenbauarbeiten Vollsperrung 12.10.2009-09.11.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -3854,-46999 -1480,-46978 897,-46109 1296,-45979 2044,-46150
+	2::inwork -3846,-46996 -1480,-46978 897,-46109 1296,-45979 2091,-46166
 EOF
      },
      { from  => 1257375600, # 2009-11-05 00:00
@@ -23471,7 +23472,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.flaeming-skate.de/de/aktuelles/2014/05/bauarbeiten-auf-der-flaeming-skate-2014.php',
        data  => <<EOF,
-	2::inwork -5280,-38803 -5550,-39270 -5699,-39451 -6050,-40072 -6171,-40299 -6279,-40310 -6430,-40390 -6458,-40259 -6903,-40090 -6720,-41039
+	2::inwork -5280,-38803 -5524,-39226 -5550,-39270 -5699,-39451 -6050,-40072 -6171,-40299 -6279,-40310 -6430,-40390 -6458,-40259 -6903,-40090 -6748,-40840 -6720,-41039
 EOF
      },
      { from  => 1402738058, # 2014-06-14 11:27
@@ -31744,7 +31745,7 @@ EOF
 #: XXX Es gibt nun eine weitere Baustelle, Halteverbotschilder bis Ende Dezember 2022
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
 #: osm_watch: way id="759405498" version="3"
-#: last_checked: 2022-04-26 (mapillary)
+#: last_checked: 2022-05-26 (mapillary) (widersprüchliche Ausschilderung)
 #: check_frequency: 120d
 #: next_check: 2022-12-28
 	q3::inwork; 5192,10241 5196,10398
@@ -33302,7 +33303,7 @@ EOF
 	q4::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="8"
 	q3::inwork 15279,10862 15355,10875
-#: osm_watch: way id="984056169" version="8"
+#: osm_watch: way id="984056169" version="9"
 	q3::inwork 15272,10790 15388,10758
 EOF
      },
@@ -34456,12 +34457,14 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 EOF
      },
      { from  => 1642917600, # 2022-01-23 07:00
-       until => 1653663600, # 2022-05-27 17:00
-       text  => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., vom 24.01.2022 07:00 bis 27.05.2022 17:00',
+       until => $isodate2epoch->("2022-06-03 17:00:00"), # 1653663600, # 2022-05-27 17:00
+       text  => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., vom 24.01.2022 07:00 bis 03.06.2022 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.445809,52.479541,24.01.2022,07:00',
        data  => <<EOF,
-#: also_indoor: traffic (G,H,B)
+#: XXX: laut rbb sogar bis 7.6.2022
+#: also_indoor: traffic (G,ex-H,B)
+#: next_check: 2022-06-03
 	q4::inwork 13277,8211 13331,8283
 EOF
      },
@@ -34775,13 +34778,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str., voraussichtlich bis Dezember 2022',
+       text  => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str., voraussichtlich bis September 2022',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BRAUNSCHWEIGER-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
-#: last_checked: 2022-05-01 vvv
+#: last_checked: 2022-05-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 #: also_indoor: traffic (G,B) vvv
@@ -35075,15 +35078,20 @@ EOF
      },
      { from  => 1651960800, # 2022-05-08 00:00
        until => $isodate2epoch->("2022-07-03 13:00:00"), # 1653861600, # 2022-05-30 00:00
-       text  => 'Rennbahnstr.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, vom 9.5.2022 bis 3.7.2022 ',
+       text  => 'Rennbahnstr. und Bernkastler Str.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, bis 3.7.2022 ',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/wp-content/uploads/BA2.jpg',
        data  => <<EOF,
 #: next_check_id: BERLINERALLEE-2022
-#: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt)
+#: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt) (bis 3.7.2022)
+#: source_id: viz2021:13.46681,52.55708,27.05.2022,16:41 (bis 3.7.2022)
 #: by: https://nitter.net/VIZ_Berlin/status/1523659832569389058#m (Rennbahnstr. bis 3.7.2022 gesperrt)
 	q4::inwork 14558,16907 14528,16910
 	q3::inwork 14528,16910 14341,17030
+#: XXX hier (Bernkastler Str.) nur bis 12.6.2022
+#: source_id: viz2021:13.467365,52.557032,30.05.2022,07:00 (Bernkastler Str. 30.5.2022 bis 12.6.2022)
+#: next_check: 2022-06-12
+	q3::inwork 14558,16907 14673,16895
 EOF
      },
      { from  => 1651986000, # 2022-05-08 07:00
@@ -35181,6 +35189,15 @@ EOF
 #: last_checked: 2022-05-14 (mapillary)
 #: check_frequency: 180d
 	2::inwork 17236,-602 17076,-644 16997,-663
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Dahlmannstr.: Einbahnstraßenregelung wegen Bauarbeiten, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2022-05-26 (mapillary)
+	q4::inwork; 3603,10765 3614,10564
 EOF
      },
     );

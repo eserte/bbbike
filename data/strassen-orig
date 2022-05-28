@@ -10655,6 +10655,7 @@ Marienfelder Str.	N 10853,-1475 10981,-1564 11068,-1574
 Nuthestr.	N 10301,-1891 10270,-1890 10251,-1877 10239,-1849 10095,-1482 10048,-1379 9989,-1278 9925,-1106 9849,-911 9888,-853
 Nuthestr.	NN 9815,-805 9813,-822
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_08_0445_0532_online.pdf (Teileinziehung von Straßenland)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_21_1257_1304_online.pdf (Fahrradabstellplätze entstehen hier)
 #: XXX wenn die Teileinziehung vollzogen ist: N -> NN
 #: osm_watch: way id="49719228" version="9"
 #: next_check: 2022-03-25
@@ -18440,6 +18441,11 @@ Hevellerweg	N -4512,10663 -4534,10588
 Höhenweg (Wilhelmstadt)	N -4555,10488 -4550,10536 -4500,10556 -4414,10614 -4346,10762
 Ramlerstr.	N 9309,15700 9369,15705 9474,15714 9646,15737 9666,15739 9844,15755
 Ramlerstr. [entlang der Swinemünder Brücke]	N 9666,15739 9644,15780
+#: by: https://weddingweiser.de/hines-plant-kaufland-abzureissen/
+#: by: https://architektur-urbanistik.berlin/index.php?threads/brunnenstrasse-105.1103/#post-16459
+#: XXX Falls das Einkaufszentrum abgerissen wird: bleibt die Zufahrtsstraße? Bleibt die Zugangsmöglichkeit vom Bärbel-Bohley-Ring?
+#: last_checked: 2022-05-26 (indoor)
+#: check_frequency: 360d
 #: osm.highway: service
 (Zufahrtsstraße am Einkaufszentrum)	N 9291,15740 9363,15738 9596,15780 9592,15800 9571,15838 9478,15826 9328,15806 9267,15790
 (Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum)	NN 9644,15780 9629,15803 9592,15800

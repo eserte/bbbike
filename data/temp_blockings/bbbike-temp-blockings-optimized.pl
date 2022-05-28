@@ -1740,6 +1740,7 @@ push @temp_blocking,
          'data' => '#: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.819220.php
 #: by: https://www.berlin.de/events/3415964-2229501-koepenicker-sommer.html (2021: Termin noch nicht bekannt) (mittlerweile gibt\'s den Termin)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211381.php
 	2::temp 22111,4562 22093,4499 22076,4422
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
 	2::temp 22138,4642 22074,4664
@@ -4853,7 +4854,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX Es gibt nun eine weitere Baustelle, Halteverbotschilder bis Ende Dezember 2022
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
 #: osm_watch: way id="759405498" version="3"
-#: last_checked: 2022-04-26 (mapillary)
+#: last_checked: 2022-05-26 (mapillary) (widersprüchliche Ausschilderung)
 #: check_frequency: 120d
 #: next_check: 2022-12-28
 	q3::inwork; 5192,10241 5196,10398
@@ -5282,7 +5283,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 	q4::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="8"
 	q3::inwork 15279,10862 15355,10875
-#: osm_watch: way id="984056169" version="8"
+#: osm_watch: way id="984056169" version="9"
 	q3::inwork 15272,10790 15388,10758
 ',
          'from' => 1625734800,
@@ -5704,15 +5705,17 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => 1672466400
        },
        {
-         'data' => '#: also_indoor: traffic (G,H,B)
+         'data' => '#: XXX: laut rbb sogar bis 7.6.2022
+#: also_indoor: traffic (G,ex-H,B)
+#: next_check: 2022-06-03
 	q4::inwork 13277,8211 13331,8283
 ',
          'from' => 1642917600,
          'id' => 3503,
          'source_id' => 'viz2021:13.445809,52.479541,24.01.2022,07:00',
-         'text' => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., vom 24.01.2022 07:00 bis 27.05.2022 17:00',
+         'text' => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., vom 24.01.2022 07:00 bis 03.06.2022 17:00',
          'type' => 'handicap',
-         'until' => 1653663600
+         'until' => 1654268400
        },
        {
          'data' => '#: next_check_id: ZWIESELER-2022
@@ -5931,7 +5934,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: BRAUNSCHWEIGER-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
-#: last_checked: 2022-05-01 vvv
+#: last_checked: 2022-05-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 #: also_indoor: traffic (G,B) vvv
@@ -5946,7 +5949,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 ',
          'from' => undef,
          'id' => 3524,
-         'text' => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str., voraussichtlich bis Dezember 2022',
+         'text' => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str., voraussichtlich bis September 2022',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6149,15 +6152,20 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: next_check_id: BERLINERALLEE-2022
-#: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt)
+#: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt) (bis 3.7.2022)
+#: source_id: viz2021:13.46681,52.55708,27.05.2022,16:41 (bis 3.7.2022)
 #: by: https://nitter.net/VIZ_Berlin/status/1523659832569389058#m (Rennbahnstr. bis 3.7.2022 gesperrt)
 	q4::inwork 14558,16907 14528,16910
 	q3::inwork 14528,16910 14341,17030
+#: XXX hier (Bernkastler Str.) nur bis 12.6.2022
+#: source_id: viz2021:13.467365,52.557032,30.05.2022,07:00 (Bernkastler Str. 30.5.2022 bis 12.6.2022)
+#: next_check: 2022-06-12
+	q3::inwork 14558,16907 14673,16895
 ',
          'from' => 1651960800,
          'id' => 3546,
          'source_id' => 'https://viz.berlin.de/wp-content/uploads/BA2.jpg',
-         'text' => 'Rennbahnstr.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, vom 9.5.2022 bis 3.7.2022 ',
+         'text' => 'Rennbahnstr. und Bernkastler Str.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, bis 3.7.2022 ',
          'type' => 'handicap',
          'until' => 1656846000
        },
@@ -6226,6 +6234,16 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'id' => 3554,
          'text' => 'Mauerweg Rudow: Abschnitt westlich der Schönefelder Str. kann durch Bauzäune abgesperrt sein',
          'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: last_checked: 2022-05-26 (mapillary)
+	q4::inwork; 3603,10765 3614,10564
+',
+         'from' => undef,
+         'id' => 3555,
+         'text' => 'Dahlmannstr.: Einbahnstraßenregelung wegen Bauarbeiten, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
          'until' => undef
        }
      

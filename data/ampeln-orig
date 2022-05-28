@@ -57,7 +57,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2022-05-24 vvv
+#: last_checked: 2022-05-28 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -2438,7 +2438,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
-#: last_checked: 2022-05-10
+#: last_checked: 2022-05-28
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -3738,6 +3738,10 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X -10032,-45258
+#: note: Anforderungsampel
+	X -13709,-45699
+	B0 -6838,-41430
 	X 46926,-16265
 Umgehung mit Treppen existiert	Zbr 47077,-15816
 	X 36295,48210
@@ -4333,7 +4337,7 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 69236,73732
 	B 52205,72352
 	B -13075,-51085
-	B -12441,-53091
+	B -12427,-53107
 	B -7578,-70067
 	B 65818,15731
 	B 63553,15587

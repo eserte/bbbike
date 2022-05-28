@@ -897,6 +897,8 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21789,5427 21706,5541 21605,5687
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1189355.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1189424.php
 #: by: https://berliner-abendblatt.de/2022/03/25/138713/
+#: by: https://unternehmen.bvg.de/pressemitteilung/gleise-glaetten/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211600.php
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022)
 #: last_checked: 2022-05-11 vvv
 #: check_frequency: 180d vvv
@@ -1692,11 +1694,13 @@ B189	2 -92822,74184 -93082,74166 -93764,74187 -94063,74154 -94600,73988 -94721,7
 Prenzlau, Bahnhofsvorplatz	1 39907,102441 39949,102431
 Prenzlau, Bahnhofsvorplatz	1 39918,102499 39966,102492 39949,102431 39946,102422 39904,102425
 # 
-#: by: osm vvv
-Markt (Luckenwalde)	1 -4346,-35451 -4274,-35352
+Markt (Luckenwalde)	1 -4358,-35445 -4307,-35421 -4274,-35352
 Markt (Luckenwalde)	1 -4274,-35352 -4248,-35379 -4309,-35471
-Breite Str. (Luckenwalde)	1s:q4 -4568,-35783 -4474,-35743
 Breite Str. (Luckenwalde)	1s:q4 -4299,-35514 -4208,-35409
+#: by: osm vvv
+#: osm_watch: way id="234462178" version="3" brb
+#: XXX add_fragezeichen: Gibt es noch eine Einbahnstraßenregelung on der Breiten Straße? Auch für Radfahrer?
+Breite Str. (Luckenwalde)	1s:q4 -4568,-35783 -4478,-35736
 #: by ^^^
 # 
 ######################################################################
@@ -3374,6 +3378,8 @@ Drängelgitter	BNP:3::trailer=10 18414,1380
 Drängelgitter	BNP:3::trailer=10 18232,1669
 Drängelgitter	BNP:3::trailer=10 20560,23
 Drängelgitter	BNP:3::trailer=10 20675,56
+#: note: "Umfahrungsmöglichkeit" auf Bürgersteig
+Drängelgitter	BNP:2::trailer=3 -3838,-47018
 #: by: krickstadt
 zwei Drängelgitter (Z-Anordnung)	BNP:5::trailer=15 18848,3600
 #: by: mapillary
@@ -3497,6 +3503,8 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 #: by: https://www.spreepark.berlin/konzept-und-grundlagen/news/detail/weitere-baumassnahmen-im-und-am-spreepark/ (Ausbesserung, Verringerung der Breite von 7 auf 4m, voraussichtlich bis Mai 2022)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/der-pionierweg-wird-erneuert-und-erhaelt-eine-neue-beleuchtung-korrosionsschutz-fuer-mero-halle_a327800
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/schiffsanleger-und-eierhaeuschen-sollen-bis-ende-des-jahres-fertig-werden_a335405 (bis Mai 2022)
+#: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/spreepark-wird-fuer-radfahrer-und-fussgaenger-besser-erreichbar_a346511
+#: by: https://www.deutsches-architekturforum.de/thread/14728-neue-pl%C3%A4ne-f%C3%BCr-den-spreepark/?postID=719337#post719337
 # REMOVED (ja, eingetragen) --- #: XXX Wird der Weg nach den Bauarbeiten beleuchtet sein?
 # REMOVED (nur noch der Vorplatz fehlt) --- #: XXX laut Schild noch bis zum 13.5.2022
 #: last_checked: 2022-05-18
@@ -3604,7 +3612,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung)
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht außerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht
 #: osm_watch: way id="308312347" version="3"
-#: last_checked: 2022-03-20 (architektur-urbanistik)
+#: last_checked: 2022-05-25 (daf)
 #: check_frequency: 90d
 #: next_check: 2022-08-15
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
@@ -3794,7 +3802,7 @@ Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_12_0713_0788_online.pdf (Grundstücksnummerierung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Grundstücksnummerierung)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
-#: last_checked: 2022-05-19
+#: last_checked: 2022-05-26 (architektur-urbanistik)
 #: check_frequency: 60d
 George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030
 # REMOVED (offen) --- #: next_check_id: EUROPACITY-2015 --- #: last_checked: 2022-01-25 --- #: check_frequency: 30d --- Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
@@ -4142,6 +4150,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/abbau-des-riesenrads-im-spreepark-fuer-geplante-sanierung-hat-begonnen_a297932 (Erwähnung des Eierhäuschens)
 #: by: https://plus.tagesspiegel.de/berlin/spreepark-zeitplan-verschiebt-sich-eierhauschen-geht-erst-2023-in-betrieb-388960.html (Frühjahr 2023)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/schiffsanleger-und-eierhaeuschen-sollen-bis-ende-des-jahres-fertig-werden_a335405 (Ende 2022 fertig?)
+#: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/spreepark-wird-fuer-radfahrer-und-fussgaenger-besser-erreichbar_a346511 (Modernisierung des Stichwegs)
 #: priority: #C
 #: last_checked: 2022-05-18
 #: check_frequency: 180d
