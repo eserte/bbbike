@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.29;
+$VERSION = 1.30;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -477,9 +477,17 @@ sub plot_osm_files {
 		exists $tag{'barrier'} ||
 		exists $tag{'abandoned:barrier'} ||
 		exists $tag{'abandoned:power'} ||
+		# XXX seen around B115 north of Schlenzer, maybe a mapping error (highway=abandoned missing)? vvv
+		(exists $tag{'abandoned'} && $tag{'abandoned'} eq 'track') ||
+		(exists $tag{'highway:abandoned'} && $tag{'highway:abandoned'} eq 'track') ||
+		# XXX ^^^
+		# official according to https://wiki.openstreetmap.org/wiki/DE:Key:abandoned:highway
+		(exists $tag{'abandoned:highway'} ||
 		exists $tag{'mj10777:admin_levels'} ||
 		(exists $tag{'natural'} && ($tag{'natural'} eq 'tree_row' ||
-					   ($tag{'natural'} eq 'cliff')))
+					   ($tag{'natural'} eq 'cliff'))) ||
+		# just a note tag, nothing else
+		(exists $tag{'note'} && %tag == 1)
 	       ) {
 		$item_args{'-dash'} = '.  ';
 	    } elsif (exists $tag{'power'}) {
