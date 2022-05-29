@@ -322,6 +322,7 @@ sub ci {
 	 BBBIKE_TEST_SKIP_MAPSERVER => 1,
 	 BBBIKE_TEST_GUI            => 0,
 	 BBBIKE_TEST_WITH_SELENIUM  => 0,
+	 BBBIKE_TEST_FOR_LIVE       => 1,
 	 PERL_CPANM_OPT             => "--mirror https://cpan.metacpan.org --mirror http://cpan.cpantesters.org",
 	 CPAN_INSTALLER             => "cpm",
 	);
@@ -479,7 +480,7 @@ EOF
     # Start all services and finally run the test suite
     $dockerfile .= qq{CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper start_selenium && wrapper init_data && perl Makefile.PL && make distcheck && };
     if (!$opt{'with-data-build'}) {
-	$dockerfile .= qq{BBBIKE_TEST_FOR_LIVE=1 HARNESS_TIMER=1 make test HARNESS_OPTIONS=j$opt{jobs} && used_config};
+	$dockerfile .= qq{HARNESS_TIMER=1 make test HARNESS_OPTIONS=j$opt{jobs} && used_config};
     } else {
 	# ... except in with-data-build mode; actual test will run later (see below)
 	$dockerfile .= qq{while true; do sleep 3600; done};
@@ -542,7 +543,7 @@ EOF
 	    }
 
 	    eval {
-		$doit->system(qw(docker exec), $tag, qw(env BBBIKE_TEST_FOR_LIVE=1 HARNESS_TIMER=1 make test), "HARNESS_OPTIONS=j$opt{jobs}")
+		$doit->system(qw(docker exec), $tag, qw(env HARNESS_TIMER=1 make test), "HARNESS_OPTIONS=j$opt{jobs}")
 	    };
 	    if ($@) {
 		push @errors, "code test errored: $@";
