@@ -874,7 +874,7 @@ Bismarckstr.: Mittelstreifen	3nocross 4337,11721 4502,11740 4737,11768
 Stadtgärten - Saupéweg: Poller	3 * 11551,21720 *
 #: note: Radfahrer können explizit den Mittelstreifen überqueren
 Prenzlauer Promenade: Mittelstreifen	3nocross 11872,17522 11893,17397 11920,17245
-Voigtstr. - Pettenkoferstr.	1 14858,12775 14834,12767
+Voigtstr. - Pettenkoferstr.	1 14858,12765 14832,12755
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14496,11620
 Gryphius/Boxhagener Str.	3 14550,11732 14513,11657 14561,11600
 Spandauer Str.: Straßenbahntrasse	3nocross 10387,12760 10360,12793 10308,12859
@@ -1010,8 +1010,7 @@ Hubertusstr. - Frankfurter Allee	3 16541,12071 16512,11894 16737,11866
 Ückeritzer Ring: Betonkübel	3 17405,19252 17448,19243 *
 Ückeritzer Ring: Betonkübel	3 * 17448,19243 17405,19252
 Zum Langen Jammer: Poller	3 14480,12932 14411,12951 *
-#: note: wahrscheinlich auch für Radfahrer, aber die Einschränkung ist hier ziemlich sinnlos
-Zum Langen Jammer: Einbahnstraße	1 14682,12874 14588,12901 14536,12916 14480,12932
+# REMOVED (existiert nicht (mehr?)) --- #: note: wahrscheinlich auch für Radfahrer, aber die Einschränkung ist hier ziemlich sinnlos --- Zum Langen Jammer: Einbahnstraße	1 14682,12874 14588,12901 14536,12916 14480,12932
 # REMOVED (es wurde, allerdings Radfahrer frei) --- #: XXX wird hier eine Einbahnstraße eingerichtet? --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3355&options=4 (Antrag zur Einbahnstraße; Zwischenbericht) --- #: last_checked: 2013-08-14 --- #: next_check: 2014-03-14
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]	1 12948,15771 12762,15882
 #: note: Radfahrer können irgendwie über die Kreuzung fahren
@@ -1477,6 +1476,16 @@ Am Tempelhofer Berg	2:Anlieger 9295,9047 9298,9112 9304,9241 9309,9347
 Schleiermacherstr.	1:Anlieger 10032,9456 10004,9268
 #: note: außerdem Einbahnstraße Richtung Osten
 Marheinekeplatz	2:Anlieger 9759,9307 9892,9286
+# 
+Samariterstr	2:Anlieger 14661,12798 14628,12682 14599,12584 14596,12573
+Bänschstr.	2:Anlieger 14319,12629 14591,12555
+Bänschstr.	2:Anlieger 14996,12462 14801,12517 14686,12549 14672,12565 14599,12584
+Bänschstr.	2:Anlieger 14596,12573 14325,12648
+Dolziger Str.	2:Anlieger 14435,12761 14436,12731
+Dolziger Str.	2:Anlieger 14405,12738 14436,12731 14628,12682 14814,12626 14935,12596
+Voigtstr.	2:Anlieger 14709,12156 14748,12314 14776,12418
+Voigtstr.	2:Anlieger 14776,12418 14798,12502 14801,12517 14814,12626 14832,12755 14835,12801
+Pettenkoferstr.	2:Anlieger 14836,12826 14858,12765 14935,12596 14996,12462
 # 
 Karl-Marx-Platz: Poller	3 * 13130,7633 *
 # 

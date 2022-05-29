@@ -4165,10 +4165,11 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'data' => '#: next_check_id: BHFZEUTHEN-2018
 #: by: https://www.bahninfo-forum.de/read.php?9,672773,672947#msg-672947
 #: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
+#: by: https://www.eichwalde.de/wp-content/uploads/2022/05/Boten_02_2022.pdf (bis Ende 2022 oder 2023)
 #: osm_watch: way id="36936021" version="6" brb
 #: last_checked: 2022-03-12 (mapillary)
 #: check_frequency: 180d
-# REMOVED --- #: next_check: 2020-11-01
+#: next_check: 2022-12-31
 	2::inwork 25929,-5994 25902,-6006 25893,-6002
 ',
          'from' => 1533756141,
@@ -4686,7 +4687,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-05-23 vvv
+#: last_checked: 2022-05-29 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552

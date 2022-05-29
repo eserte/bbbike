@@ -743,7 +743,7 @@ Immanuelkirchstr.: Kopfsteinpflaster	Q2 11498,14234 11713,14118 11946,13993
 # REMOVED (Fahrbahn ist jetzt auch asphaltiert) --- #: note: teilweise mit Asphalt, aber nicht auf den Randbereichen --- Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1- 13695,12643 13686,12611 13675,12581 13698,12544 13730,12535 13761,12578 13771,12607 13767,12626 13747,12642 13695,12643
 Petersburger Platz: Kopfsteinpflaster	Q2 13559,12779 13470,12990
 Pettenkoferstr Str.: Asphalt	Q0 15117,12106 15104,12216
-Pettenkoferstr Str.: Asphalt, einige Aufpflasterungen	Q0- 15104,12216 15058,12329 15046,12355 15005,12443 14996,12462 14935,12596 14858,12775 14836,12826
+Pettenkoferstr Str.: Asphalt, einige Aufpflasterungen	Q0- 15104,12216 15058,12329 15046,12355 15005,12443 14996,12462 14935,12596 14858,12765 14836,12826
 # REMOVED (2012-09-16 neu asphaltiert) --- Marktstr., Fahrbahn Richtung Osten: Kopfsteinpflaster	Q2-; 15279,10862 15144,10905
 Gryphiusstr.: Kopfsteinpflaster	Q2 14369,11287 14395,11356 14434,11465 14496,11620 14513,11657 14550,11732
 Jungstr.: Kopfsteinpflaster	Q2 14550,11732 14626,11869 14675,11964
@@ -1022,6 +1022,7 @@ Bänschstr.: Kopfsteinpflaster	Q2 14058,12709 14188,12664 14319,12629 14591,12555
 Bänschstr.: Kopfsteinpflaster	Q2 14588,12542 14661,12523 14681,12534 14798,12502
 Bänschstr.: Kopfsteinpflaster	Q2 14325,12648 14596,12573
 Bänschstr.: Kopfsteinpflaster	Q2 14599,12584 14672,12565 14686,12549 14801,12517
+Bänschstr.: Kopfsteinpflaster	Q2 14681,12534 14686,12549
 Bänschstr.: Asphalt	Q0 14798,12502 15005,12443
 Bänschstr.: Asphalt mit einigen Schäden	Q0- 14996,12462 14801,12517
 Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
@@ -1031,7 +1032,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-05-23
+#: last_checked: 2022-05-29
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1968,7 +1969,7 @@ Marienhöher Weg: mäßiges Kopfsteinpflaster	Q2 8356,5195 8203,5203 8115,5086 8052
 Maulbronner Ufer: Parkweg	Q1 7161,4110 6904,4162
 (Luckeweg - Hildburghauser Str.): Parkweg	Q1 7531,581 7599,725
 Voigtstr.: Kopfsteinpflaster	Q2- 14709,12156 14748,12314
-Voigtstr.: Kopfsteinpflaster	Q2 14748,12314 14776,12418 14798,12502 14801,12517 14814,12626 14834,12767 14835,12801 14836,12826
+Voigtstr.: Kopfsteinpflaster	Q2 14748,12314 14776,12418 14798,12502 14801,12517 14814,12626 14832,12755 14835,12801 14836,12826
 Friedrichshaller Str.: Kopfsteinpflaster	Q2 3084,7599 2911,7686 2786,7721 2774,7655
 Christburger Str.: Kopfsteinpflaster	Q2 11633,14631 11912,14486
 Christburger Str.: Asphalt	Q0 11912,14486 12177,14335
@@ -2274,7 +2275,7 @@ Wörnitzweg: asphaltiert	Q0 13240,7966 13312,8026
 Neue Weberstr: gepflastert, wellig	Q2+ 12359,12592 12329,12594 12317,12584 12242,12594 12148,12609 12146,12628 12064,12673
 Fürstenwalder Str.: Kopfsteinpflaster, OK	Q1 12242,12594 12243,12604
 Löwestr.: mäßiges Kopfsteinpflaster	Q2 13202,12790 13273,12649
-Löwestr.: teilweise schlechtes Kopfsteinpflaster	Q3 13273,12649 13357,12473
+Löwestr.: teilweise schlechtes Kopfsteinpflaster	Q3+ 13273,12649 13357,12473
 Jacobystr.: Beton mit Schäden	Q1- 11596,12668 11287,12814
 Jacobystr.: Beton mit Schäden	Q1+ 11287,12814 11207,12706
 Parochialstr.: Asphalt	Q0 10957,12401 11040,12415
@@ -9233,7 +9234,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2022-04-26 vvv
+#: last_checked: 2022-05-29 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -9539,7 +9540,7 @@ Matenzeile: Beton	Q0- 17365,17632 17474,17478 17582,17335 17714,17285
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Gehwegplatten	Q0- 15144,13772 15094,13750
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Verbundsteinpflaster	Q1 15094,13750 15060,13735 15035,13701
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Betonplatten	Q0- 15035,13701 14995,13645
-(Voigtstr. - Pettenkoferstr.): Kopfsteinpflaster	Q2 14834,12767 14858,12775
+(Voigtstr. - Pettenkoferstr.): Kopfsteinpflaster	Q2 14832,12755 14858,12765
 Lehrter Str. [6-8]: Kopfsteinpflaster	Q2 7630,13584 7735,13626
 (Lehrter Str. - Fritz-Schloß-Park): Asphalt	Q0 7630,13584 7451,13504
 (Lehrter Str. - Fritz-Schloß-Park): asphaltähnlicher Belag	Q0- 7451,13504 7422,13487 7402,13475
@@ -28181,8 +28182,9 @@ Dossestr. (Friedrichshain): Kopfsteinpflaster	Q2 15043,11637 15140,11811 15202,1
 # REMOVED --- Eldenaer Str.: Asphalt	Q1 14096,12827 14066,12836 13979,12861 13975,12862 13844,12900
 #: confirmed_by: srt
 Neue Welt: Asphalt	Q0 14704,12950 14433,13027
-August-Lindemann-Str.: Gehwegplatten, Kopfsteinpflaster	Q2 14355,12752 14360,12792
-August-Lindemann-Str.: Asphalt	Q0 14360,12792 14376,12849 14411,12951 14419,12978 14433,13027 14448,13081 14465,13138 14476,13181
+August-Lindemann-Str.: Gehwegplatten, Kopfsteinpflaster	Q1 14355,12752 14360,12792
+August-Lindemann-Str.: Kopfsteinpflaster	Q2 14360,12792 14376,12849
+August-Lindemann-Str.: Asphalt	Q0 14376,12849 14411,12951 14419,12978 14433,13027 14448,13081 14465,13138 14476,13181
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> ..., neu gemacht)
 Zellestr.: Asphalt	Q0 14133,12482 14161,12576
 #: confirmed_by: srt
@@ -30984,4 +30986,5 @@ Einmündungsbereich asphaltiert	Q0 16975,12000
 Einmündungsbereich asphaltiert	Q0 17195,12125
 Einmündungsbereich mit Kopfsteinpflaster	Q2- 18420,11864
 Kreuzungsbereich mit Kopfsteinpflaster	Q2- 18417,11854
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 14376,12849
 #: ignore ^^^

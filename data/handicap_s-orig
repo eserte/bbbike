@@ -31,7 +31,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: last_checked ^^^
 # 
 # REMOVED --- #: note: laut rbb bis 29.10.2021, laut Parkverbotsschilder bis 28.1.2022, mittlerweile Parkverbot bis 25.2.2022 vvv --- #: also_indoor: traffic (ex-H(falsch),G(falsch),B) --- #: last_checked: 2022-02-24 vvv --- #: check_frequency: 7d vvv --- # REMOVED --- #: next_check: 2022-01-28 vvv --- # REMOVED (offen) --- Jessnerstr.: Sperrung der Fahrbahn nördlich der Oderstr.	q3::inwork 14946,11697 14986,11760 --- Oderstr.: Einbahnstraßenregelung, offen Richtung Osten	q3::inwork; 15043,11637 14946,11697 --- # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: note ^^
-# REMOVED (entfernt) --- #: also_indoor: traffic (G,H) --- #: XXX Parkverbotsschilder bis zum 20.6.2021 --- #: add_fragezeichen: Sind die Bauarbeiten in der Pettenkoferstr. bereits beendet? --- #: last_checked: 2021-05-17 --- #: next_check: 2021-06-20 --- # REMOVED --- #: valid: -20210620 --- Pettenkoferstr.: Bauarbeiten an der Kreuzung Eldenaer Str., Sperrung der Fahrbahn	q3::inwork 14858,12775 14836,12826
+# REMOVED (entfernt) --- #: also_indoor: traffic (G,H) --- #: XXX Parkverbotsschilder bis zum 20.6.2021 --- #: add_fragezeichen: Sind die Bauarbeiten in der Pettenkoferstr. bereits beendet? --- #: last_checked: 2021-05-17 --- #: next_check: 2021-06-20 --- # REMOVED --- #: valid: -20210620 --- Pettenkoferstr.: Bauarbeiten an der Kreuzung Eldenaer Str., Sperrung der Fahrbahn	q3::inwork 14858,12765 14836,12826
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: RUEDERSDORFER-2016 --- #: osm_watch: way id="472360197" version="1" --- #: last_checked: 2017-04-12 --- #: check_frequency: 7d --- Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13161,11795 13066,11854# 
 # REMOVED --- #: last_checked: 2017-03-30 vvv --- #: check_frequency: 14d vvv --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003 --- # REMOVED --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q3-::inwork 13339,12029 13352,12003
 # REMOVED --- #: last_checked: 2016-07-27 --- #: check_frequency: 14d --- Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12413,11901 12366,11808
@@ -126,7 +126,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: source_id: 2147345858
-#: last_checked: 2022-03-07
+#: last_checked: 2022-04-26 (baustellen-doku)
 #: next_check: 2023-07-31
 (Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10215,-2170 10181,-2174 10161,-2146 10096,-2137
 # 
@@ -185,7 +185,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: ROSENTHALER-2022
 #: by: https://nitter.net/VIZ_Berlin/status/1516286721096310787#m
 #: by: https://nitter.net/pic/media%2FFQTg6WoXsAYOgpa.jpg%3Fname%3Dorig
-#: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 vvv
+#: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) vvv
 #: last_checked: 2022-05-14 vvv
 #: next_check: 2022-05-31 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Umwege, Bordsteine	q4::inwork 10199,13446 10350,13376

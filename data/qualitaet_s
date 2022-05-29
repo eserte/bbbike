@@ -481,7 +481,7 @@ Knaackstr.: Asphalt	Q0 11229,14422 11316,14360 11331,14350 11358,14331 11380,143
 Immanuelkirchstr.: Kopfsteinpflaster	Q2 11498,14234 11713,14118 11946,13993
 Petersburger Platz: Kopfsteinpflaster	Q2 13559,12779 13470,12990
 Pettenkoferstr Str.: Asphalt	Q0 15117,12106 15104,12216
-Pettenkoferstr Str.: Asphalt, einige Aufpflasterungen	Q0 15104,12216 15058,12329 15046,12355 15005,12443 14996,12462 14935,12596 14858,12775 14836,12826
+Pettenkoferstr Str.: Asphalt, einige Aufpflasterungen	Q0 15104,12216 15058,12329 15046,12355 15005,12443 14996,12462 14935,12596 14858,12765 14836,12826
 Gryphiusstr.: Kopfsteinpflaster	Q2 14369,11287 14395,11356 14434,11465 14496,11620 14513,11657 14550,11732
 Jungstr.: Kopfsteinpflaster	Q2 14550,11732 14626,11869 14675,11964
 Oberhofer Platz: Kopfsteinpflaster	Q2 5406,2110 5376,2097 5393,2053 5431,1956 5452,1940 5474,1940 5491,1955 5489,1981
@@ -702,6 +702,7 @@ B‰nschstr.: Kopfsteinpflaster	Q2 14058,12709 14188,12664 14319,12629 14591,12555
 B‰nschstr.: Kopfsteinpflaster	Q2 14588,12542 14661,12523 14681,12534 14798,12502
 B‰nschstr.: Kopfsteinpflaster	Q2 14325,12648 14596,12573
 B‰nschstr.: Kopfsteinpflaster	Q2 14599,12584 14672,12565 14686,12549 14801,12517
+B‰nschstr.: Kopfsteinpflaster	Q2 14681,12534 14686,12549
 B‰nschstr.: Asphalt	Q0 14798,12502 15005,12443
 B‰nschstr.: Asphalt mit einigen Sch‰den	Q0 14996,12462 14801,12517
 Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
@@ -1424,7 +1425,7 @@ Marienhˆher Weg: m‰ﬂiges Kopfsteinpflaster	Q2 8356,5195 8203,5203 8115,5086 8052
 Maulbronner Ufer: Parkweg	Q1 7161,4110 6904,4162
 (Luckeweg - Hildburghauser Str.): Parkweg	Q1 7531,581 7599,725
 Voigtstr.: Kopfsteinpflaster	Q2 14709,12156 14748,12314
-Voigtstr.: Kopfsteinpflaster	Q2 14748,12314 14776,12418 14798,12502 14801,12517 14814,12626 14834,12767 14835,12801 14836,12826
+Voigtstr.: Kopfsteinpflaster	Q2 14748,12314 14776,12418 14798,12502 14801,12517 14814,12626 14832,12755 14835,12801 14836,12826
 Friedrichshaller Str.: Kopfsteinpflaster	Q2 3084,7599 2911,7686 2786,7721 2774,7655
 Christburger Str.: Kopfsteinpflaster	Q2 11633,14631 11912,14486
 Christburger Str.: Asphalt	Q0 11912,14486 12177,14335
@@ -8158,7 +8159,7 @@ Matenzeile: Beton	Q0 17365,17632 17474,17478 17582,17335 17714,17285
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Gehwegplatten	Q0 15144,13772 15094,13750
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Verbundsteinpflaster	Q1 15094,13750 15060,13735 15035,13701
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Betonplatten	Q0 15035,13701 14995,13645
-(Voigtstr. - Pettenkoferstr.): Kopfsteinpflaster	Q2 14834,12767 14858,12775
+(Voigtstr. - Pettenkoferstr.): Kopfsteinpflaster	Q2 14832,12755 14858,12765
 Lehrter Str. [6-8]: Kopfsteinpflaster	Q2 7630,13584 7735,13626
 (Lehrter Str. - Fritz-Schloﬂ-Park): Asphalt	Q0 7630,13584 7451,13504
 (Lehrter Str. - Fritz-Schloﬂ-Park): asphalt‰hnlicher Belag	Q0 7451,13504 7422,13487 7402,13475
@@ -16615,8 +16616,9 @@ Fanny-Zobel-Str.: Asphalt	Q0 13975,10187 13899,10214
 (Hoffmannstr. - Uferweg an den Treptowers): Verbundsteine	Q1 14077,10016 14116,10149 14126,10176
 Dossestr. (Friedrichshain): Kopfsteinpflaster	Q2 15043,11637 15140,11811 15202,11789
 Neue Welt: Asphalt	Q0 14704,12950 14433,13027
-August-Lindemann-Str.: Gehwegplatten, Kopfsteinpflaster	Q2 14355,12752 14360,12792
-August-Lindemann-Str.: Asphalt	Q0 14360,12792 14376,12849 14411,12951 14419,12978 14433,13027 14448,13081 14465,13138 14476,13181
+August-Lindemann-Str.: Gehwegplatten, Kopfsteinpflaster	Q1 14355,12752 14360,12792
+August-Lindemann-Str.: Kopfsteinpflaster	Q2 14360,12792 14376,12849
+August-Lindemann-Str.: Asphalt	Q0 14376,12849 14411,12951 14419,12978 14433,13027 14448,13081 14465,13138 14476,13181
 Zellestr.: Asphalt	Q0 14133,12482 14161,12576
 Zellestr.: Kopfsteinpflaster	Q2 14161,12576 14188,12664
 Umgehungschaussee: fester breiter Waldweg	Q1 1125,7184 1251,7429 1263,7450 1252,7741 1215,7797 1043,7929 860,8052 834,8067
