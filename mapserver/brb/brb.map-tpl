@@ -31,6 +31,14 @@ FONTSET "[% MAPSERVER_DIR %]/[% FONTS_LIST %]"
   END;
 -%]
 
+[%
+  IF MAPSERVER_VERSION >= 6 ;
+    SET ADVANCED_MOUNT_SYMBOLS = 1;
+  ELSE;
+    SET ADVANCED_MOUNT_SYMBOLS = 0;
+  END;
+-%]
+
 [%# NOTE: IMAGE_SUFFIX => type of *input* images -%]
 [%#       IMAGE_TYPE   => type of *output* image -%]
 [% IF NEED_PNG_NOALPHA_HACK %]
@@ -278,6 +286,24 @@ SYMBOL
   STYLE 4 4 END
 [% END -%]
 END
+
+[% IF ADVANCED_MOUNT_SYMBOLS -%]
+SYMBOL
+  NAME mountarrow1
+  TYPE truetype
+  FONT "lucida"
+  TYPE truetype
+  CHARACTER ">"
+END
+
+SYMBOL
+  NAME mountarrow2
+  TYPE truetype
+  FONT "lucida"
+  TYPE truetype
+  CHARACTER "»"
+END
+[% END -%]
 
 SYMBOL
   NAME 'strnrbox'
@@ -1951,12 +1977,49 @@ LAYER
   DATA mount
 
   LABELITEM 'NAME'
+  CLASSITEM 'NAME'
+
+  MAXSCALE 60000
   
+[% IF ADVANCED_MOUNT_SYMBOLS -%]
+  CLASS
+    EXPRESSION /^Steigung [012]\./
+    STYLE
+      COLOR 0 0 0
+      SYMBOL "mountarrow1"
+      SIZE 5
+      GAP -40
+      ANGLE 0
+    END
+  END
+  CLASS
+    EXPRESSION /^Steigung [34]\./
+    STYLE
+      COLOR 0 0 0
+      SYMBOL "mountarrow2"
+      SIZE 8
+      GAP -40
+      ANGLE 0
+    END
+  END
+  CLASS
+    EXPRESSION /^Steigung ([5-9]\.|\d\d)/
+    STYLE
+      COLOR 0 0 0
+      SYMBOL "mountarrow2"
+      SIZE 12
+      GAP -40
+      ANGLE 0
+    END
+  END
+[% ELSE -%]
   CLASS
     COLOR 255 255 255
     SYMBOL "raute"
     SIZE 4
   END
+[% END -%]
+
   TEMPLATE "query.html"
   HEADER "query_header2.html"
   FOOTER "query_footer2.html"
