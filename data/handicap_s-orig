@@ -185,9 +185,9 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: next_check_id: ROSENTHALER-2022
 #: by: https://nitter.net/VIZ_Berlin/status/1516286721096310787#m
 #: by: https://nitter.net/pic/media%2FFQTg6WoXsAYOgpa.jpg%3Fname%3Dorig
-#: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) vvv
+#: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) (mittlerweile bis 14.6.2022) vvv
 #: last_checked: 2022-05-14 vvv
-#: next_check: 2022-05-31 vvv
+#: next_check: 2022-06-14 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Umwege, Bordsteine	q4::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
 Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork; 10324,13459 10350,13376
@@ -495,13 +495,13 @@ Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwor
 ### Niederschöneweide ###
 # 
 #: by: https://www.bahninfo-forum.de/read.php?9,726524,726545#msg-726545
-#: source_id: viz2021:13.509646,52.45627,10.02.2022,10:00 (bis 1.4.2022) (mittlerweile bis 31.5.2022)
+#: source_id: viz2021:13.509646,52.45627,10.02.2022,10:00 (bis 1.4.2022) (mittlerweile bis 31.5.2022) (mittlerweile bis 5.8.2022)
 #: note: auch als "Verlängerte Brückenstraße" bezeichnet
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
 #: osm_watch: way id="40451054" version="12"
 #: last_checked: 2022-05-14 (osm)
-#: next_check: 2022-05-31
+#: next_check: 2022-08-05
 # REMOVED --- #: valid: -20220401
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
 # 
@@ -802,12 +802,12 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: by: https://www.nbb-netzgesellschaft.de/ueber-die-nbb/presse/pressemitteilungen/reparatur-beeintraechtigt-verkehr-in-schoeneberg/
 #: XXX laut Schild bis Dezember 2021 (dauer aber länger)
 #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022) (inaktiv)
-#: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022)
+#: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022)
 #: source_id: viz2021:13.35399,52.49475,02.05.2022,13:59 (bis 31.5.2022) (wieder entfernt (Duplikat?))
 #: also_indoor: traffic (ex-H,B)
 #: last_checked: 2022-04-30
 #: check_frequency: 60d
-# REMOVED --- #: next_check: 2022-05-02
+#: next_check: 2022-10-31
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
 # 
 # REMOVED (-> temp blockings) --- #: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021) --- #: by: https://twitter.com/rbbabendschau/status/1392489796426162177 --- #: source_id: 2147347186 --- #: also_indoor: traffic (G) --- #: XXX wann werden die Fahrbahn und die Radwege wieder freigegeben? bei rbb "bis auf Weiteres" --- #: priority: #A --- #: last_checked: 2021-05-14 --- #: next_check: 2021-06-18 --- #: valid: -20210612 --- Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126
@@ -1600,10 +1600,12 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://www.bahninfo-forum.de/read.php?9,731381,731381#msg-731381
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/planungen-werden-online-vorgestellt_a343700
 #: by: https://berliner-abendblatt.de/2022/05/05/bahnhof-lichtenberg-enhaltestelle-der-strassenbahn-wird-verlegt/
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1212005.php (Bauarbeiten nicht vor 2025)
 #: osm_watch: way id="223184082" version="7"
 #: last_checked: 2022-03-18
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
+#: next_check: 2025-12-31
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
 # REMOVED (BS wurde abgesenkt) --- #: XXX_prog BS (an der Rungiusstr., ansonsten weiterhin q4)

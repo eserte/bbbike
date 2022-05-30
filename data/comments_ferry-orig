@@ -20,10 +20,11 @@ Fähre Caputh (Havel): pro Person 0,50 Euro, pro Fahrrad 0,50 Euro; Fährzeiten im
 Fähre Ketzin (Havel): Fahrrad mit Fahrer 2,00 Euro; Fährzeiten im Sommer Mo-So 5:30-20:00 Uhr; Fährzeiten im Winter Mo-Fr 5.30-19:00 Uhr, Sa/So 9:00-18:00 Uhr	CS -26784,5756 -26840,5684
 # 
 #: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive vvv
-#: url: https://schifffahrt-in-potsdam.de/potsdamer-wassertaxi/ vvv
-#: as_of: 2022-04 vvv
-Meierei - Sacrow: Potsdamer Wassertaxi; im Sommer Sa, So, feiertags 5x täglich; pro Person 4 Euro, pro Fahrrad 3 Euro	CS -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
-Sacrow - Krughorn: Potsdamer Wassertaxi; im Sommer Sa, So, feiertags 5x täglich; pro Person 4 Euro, pro Fahrrad 3 Euro	CS -10086,1886 -10053,1640
+# REMOVED (frühere URL) --- #: url: https://schifffahrt-in-potsdam.de/potsdamer-wassertaxi/
+#: url: https://potsdamer-wassertaxi.de/ vvv
+#: as_of: 2022-05-30 vvv
+Meierei - Sacrow: Potsdamer Wassertaxi; im Sommer Do bis So, Feiertag, 5x täglich; pro Person 4 Euro, pro Fahrrad 3 Euro	CS -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
+Sacrow - Krughorn: Potsdamer Wassertaxi; im Sommer Do bis So, Feiertag, 5x täglich; pro Person 4 Euro, pro Fahrrad 3 Euro	CS -10086,1886 -10053,1640
 #: note: absichtlich nicht im Straßennetz verbunden (verkehrlich nicht sinnvoll, genaue Lage der Anlegestelle unbekannt) --- Park Babelsberg - Schiffbauergasse: Potsdamer Wassertaxi; im Sommer von Do bis So und Feiertag 6x täglich, ansonsten 3x täglich; pro Person 3,50 Euro, pro Fahrrad 2 Euro	CS -11422,-827 -11608,-709
 #: as_of ^^^
 #: url: ^^^

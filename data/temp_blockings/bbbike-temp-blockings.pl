@@ -30931,7 +30931,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-05-23
+#: last_checked: 2022-05-30
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31150,7 +31150,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-05-29 vvv
+#: last_checked: 2022-05-30 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -34881,7 +34881,7 @@ EOF
        data  => <<EOF,
 #: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
 #: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022) (mittlerweile bis 20.5.2022) (bis 31.5.2022)
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (ex-B)
 #: last_checked: 2022-05-12
 #: check_frequency: 30d
 #: next_check: 2022-05-31
@@ -35085,7 +35085,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: BERLINERALLEE-2022
 #: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt) (bis 3.7.2022)
-#: source_id: viz2021:13.46681,52.55708,27.05.2022,16:41 (bis 3.7.2022)
+#: source_id: viz2021:13.46681,52.55708,27.05.2022,16:41 (bis 3.7.2022) (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1523659832569389058#m (Rennbahnstr. bis 3.7.2022 gesperrt)
 	q4::inwork 14558,16907 14528,16910
 	q3::inwork 14528,16910 14341,17030
@@ -35197,7 +35197,7 @@ EOF
        text  => 'Dahlmannstr.: Einbahnstraßenregelung wegen Bauarbeiten, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2022-05-26 (mapillary)
+#: last_checked: 2022-05-28 (mapillary)
 	q4::inwork; 3603,10765 3614,10564
 EOF
      },
