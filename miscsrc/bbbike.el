@@ -664,7 +664,7 @@
   (let ((sourceid (button-get button :sourceid))
 	(bbbike-datadir (bbbike-datadir))
 	(fragezeichen-lowprio (concat (bbbike-aux-bbddir) "/fragezeichen_lowprio.bbd")))
-    (grep (concat "2>/dev/null egrep -ns "
+    (grep (concat "2>/dev/null egrep -a -ns "
 		  bbbike-vmz-diff-file " "
 		  (if (file-exists-p fragezeichen-lowprio) (concat fragezeichen-lowprio " "))
 		  bbbike-datadir "/*-orig" " "
