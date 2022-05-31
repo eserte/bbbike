@@ -4187,13 +4187,14 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: last_checked: 2022-05-12
-#: check_frequency: 14d
+#: XXX keine Bauarbeiten mehr, aber die Schilder sind geblieben --- vielleicht permanent?
+#: last_checked: 2022-05-31
+#: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
          'from' => undef,
          'id' => 3000,
-         'text' => 'Privatstraße hinter der Leipziger Str.: Bauarbeiten, für Radfahrer explizit gesperrt',
+         'text' => 'Privatstraße hinter der Leipziger Str.: für Radfahrer explizit gesperrt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4572,7 +4573,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-05-08
+#: last_checked: 2022-05-31
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 ',
@@ -5278,19 +5279,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden) --- mittlerweile ist der Bürgersteig frei
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-05-24
+#: last_checked: 2022-05-31
 #: check_frequency: 21d
 #: next_check: 2022-06-20
-	q4::inwork; 15261,10738 15272,10790 15279,10862
+	q2::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="8"
 	q3::inwork 15279,10862 15355,10875
-#: osm_watch: way id="984056169" version="9"
-	q3::inwork 15272,10790 15388,10758
+# REMOVED (keine Einschränkungen mehr) --- #: osm_watch: way id="984056169" version="9" ---	q3::inwork 15272,10790 15388,10758
 ',
          'from' => 1625734800,
          'id' => 3411,
          'source_id' => 'viz2021:13.475242,52.50154,09.07.2021,11:00',
-         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr. Radfahrer müssen absteigen und schieben, außerdem sind die Anbindungen Türrschmidtstr. und Nöldnerstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
+         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr., noch geringe Einschränkungen; außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
          'type' => 'gesperrt',
          'until' => 1655737200
        },
@@ -5767,7 +5767,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: by: https://www.kiezundkneipe.de/artikel/das-ende-der-lenau-schule (neue Schule ist 2023 fertig)
 #: note: Die Einbahnstraßenregelung fängt erst 60m nördlich der Gneisenaustr. an und es gibt keine Sackgassenschilder.
 #: osm_watch: way id="49233007" version="8"
-#: last_checked: 2022-03-24
+#: last_checked: 2022-05-31
 #: check_frequency: 60d
 #: next_check: 2023-01-01
 	q4::inwork; 9552,9602 9588,9827
@@ -5883,16 +5883,14 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1498247389118873600
 #: by: https://pbs.twimg.com/media/FMrYBZQXEAAQlaA?format=jpg&name=large
-#: note: es existiert ein etwas breiterer Fußgängerschutztunnel, etwa 50m lang
 #: XXX bis wann gehen die Bauarbeiten?
-#: also_indoor: traffic (G(partial),B(partial))
-#: source_id: bvg2021:140#BVG297945_0 (bis 1.8.2022)
-#: last_checked: 2022-04-29 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2022-07-01 vvv
-	q3::inwork 10776,10682 10944,10606
+# REMOVED --- #: note: es existiert ein etwas breiterer Fußgängerschutztunnel, etwa 50m lang --- #: also_indoor: traffic (G(partial),B(partial)) --- #: source_id: bvg2021:140#BVG297945_0 (bis 1.8.2022) --- #: last_checked: 2022-04-29 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-07-01 vvv ---	q3::inwork 10776,10682 10944,10606
+#: also_indoor: traffic (G,B)
 #: note: Kreuzungsbereich zur Prinzenstr. gesperrt
 #: source_id: viz2021:13.408387,52.502028,14.03.2022,08:00 (bis 1.7.2022)
+#: last_checked: 2022-05-31 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2022-07-01 vvv
 	q2::inwork 10776,10682 10585,10766
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5901,9 +5899,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1645945200,
          'id' => 3521,
          'source_id' => 'viz2021:13.409755,52.50158,28.02.2022,08:00',
-         'text' => 'Ritterstr.: Bauarbeiten zwischen Lobeckstr. und Bergfriedstr., Fahrbahn gesperrt, Engstelle, Ende der Bauarbeiten unbekannt',
+         'text' => 'Ritterstr.: Bauarbeiten am Kreuzungsbereich Prinzenstr., Fahrbahn gesperrt, Umwege für Radfahrer, voraussichtlich bis 1.7.2022',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1656687600
        },
        undef,
        {
@@ -6007,21 +6005,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: XXX vermutlich wegen der angrenzenden Hochbauarbeiten, wann ist die Fahrbahn wieder offen?
-#: source_id: viz2021:13.418121,52.516467,15.01.2020,07:00 (angrenzende Alexanderstraße, bis 13.5.2022) (mittlerweile bis 20.5.2022) (bis 31.5.2022)
-#: also_indoor: traffic (ex-B)
-#: last_checked: 2022-05-12
-#: check_frequency: 30d
-#: next_check: 2022-05-31
-	q4::inwork 11273,12301 11355,12331
-',
-         'from' => undef,
-         'id' => 3532,
-         'text' => 'Schicklerstr.: Fahrbahn gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1510640770461671434#m
 #: by: https://nitter.net/pic/media%2FFPMDmJMXoAcscus.jpg%3Fname%3Dorig
@@ -6246,6 +6230,19 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Dahlmannstr.: Einbahnstraßenregelung wegen Bauarbeiten, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://nitter.net/Wikinaut/status/1531539956694384640#m (hier: drei Wochen)
+#: XXX wird hier noch eine bessere Lösung für Radfahrer gefunden?
+#: next_check: 2022-06-01
+	q4::inwork 5631,8011 5631,8141
+',
+         'from' => 1654031041,
+         'id' => 3556,
+         'source_id' => 'https://nitter.net/VIZ_Berlin/status/1531549863846023168#m',
+         'text' => 'Prinzregentenstraße: zwischen Wexstraße und Durlacher Straße Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis Mitte Juni 2022',
+         'type' => 'handicap',
+         'until' => 1655330399
        }
      
 );

@@ -244,7 +244,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 # 
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
-#: last_checked: 2022-04-29
+#: last_checked: 2022-05-31
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 # REMOVED --- #: valid: 20200821-20211031
@@ -261,13 +261,13 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/volt-berlin-baufeld-e3a.312/page-8#post-14027
 #: XXX Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straße, Fahrbahn ist noch abgesperrt
-#: last_checked: 2022-05-08
+#: last_checked: 2022-05-31
 #: check_frequency: 60d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-05-13 (mapillary)
+#: last_checked: 2022-05-31
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -280,7 +280,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-05-12
+#: last_checked: 2022-05-31
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -328,12 +328,12 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: osm_watch: way id="43350531" version="11"
 #: source_id: 2147343824 (bis 30.6.2021)
 #: source_id: viz2021:13.379936,52.514077,04.03.2019,08:00 (bis 30.6.2021) (inaktiv)
-#: source_id: viz2021:13.379568,52.514769,14.04.2022,07:00 (angrenzende Behrenstr., bis 27.5.2022)
+#: source_id: viz2021:13.379568,52.514769,14.04.2022,07:00 (angrenzende Behrenstr., bis 27.5.2022) (inaktiv)
 #: add_fragezeichen: Sind die Bauarbeiten hier beendet?
 #: XXX nach den Bauarbeiten vermutlich nur für Radfahrer, Fußgänger und MIV-Anlieger frei
-#: last_checked: 2022-04-29
-# REMOVED --- #: check_frequency: 45d
-#: next_check: 2022-05-27
+#: last_checked: 2022-05-31
+#: check_frequency: 45d
+# REMOVED --- #: next_check: 2022-05-27
 # REMOVED --- #: valid: 20191218-20210531
 Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit für Radfahrer verboten	q4::inwork 8737,12098 8783,11959
 # 
@@ -683,10 +683,10 @@ Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/boddinstrasse-wird-gesperrt_a314931
 #: by: https://www.kms-sonne.de/baustellennews (nun bis Herbst 2022)
 #: by: https://www.kms-sonne.de/assets/2022/02/Baustellenuebersicht-2022-02.pdf
-#: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022)
+#: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022) (bis 1.9.2022)
 #: last_checked: 2022-05-10
 #: check_frequency: 120d
-#: next_check: 2022-09-20
+#: next_check: 2022-09-01
 Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12368,8356 12582,8408
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -696,15 +696,15 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12
 #: by: https://www.kms-sonne.de/assets/2022/02/Baustellenuebersicht-2022-02.pdf
 #: by: https://berliner-abendblatt.de/2022/02/04/sperrung-flughafenstrasse/
 #: by: https://twitter.com/VIZ_Berlin/status/1491648121176145925 (Sperrung ab 10.2.2022)
-#: XXX Flughafenstraße (Neukölln) Richtung Hermannstraße zwischen Karl-Marx-Straße und Isarstraße: Umbau Karl-Marx-Straße, Fahrtrichtung gesperrt, vom 01.02.2022 08:00 bis 31.07.2022 17:00
+#: XXX Flughafenstraße (Neukölln) Richtung Hermannstraße zwischen Karl-Marx-Straße und Isarstraße: Umbau Karl-Marx-Straße, Fahrtrichtung gesperrt, vom 01.02.2022 08:00 bis 31.07.2022 17:00, mittlerweile bis 01.09.2022
 #: XXX Am 1.2.2022 wurde der VIZ-Eintrag wieder entfernt, ohne dass was passiert ist.
 #: source_id: viz2021:13.432818,52.481758,01.02.2022,08:00 (inaktiv)
-#: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00
+#: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022)
 #: also_indoor: traffic (G(zu früh+falsche Richtung),B)
 #: priority: #A
 #: last_checked: 2022-03-16
 #: check_frequency: 120d
-#: next_check: 2022-07-31
+#: next_check: 2022-09-01
 Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4::inwork; 12494,8501 12349,8464
 # 
 # REMOVED (wieder offen) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: https://www.kms-sonne.de/baustellennews/?date=20200526 (voraussichtlich ab 25. Juni 2020 bis Herbst 2020) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/sperrrung-an-der-fuldastrasse_a275098 --- #: by: https://www.kms-sonne.de/baustellennews?date=20200630 --- #: by: https://www.kms-sonne.de/baustellennews?date=20201221 (weiterhin gesperrt) --- #: by: https://www.kms-sonne.de/baustellennews?date=202102 (voraussichtlich bis Sommer 2021) --- #: source_id: 2147345472 (Verschwenkung der KMS) --- #: also_indoor: traffic (G,H) --- #: last_checked: 2021-05-30 --- #: check_frequency: 120d --- #: next_check: 2021-10-08 --- #: next_check: 2021-06-01 --- Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12494,8501
@@ -4058,6 +4058,7 @@ Lindenstr.: gegenläufiger Geh/Radweg	q3; 21605,5687 21706,5541 21789,5427
 (Zur Waage - Zur Innung): Grünanlage, einige Fußgänger	q3 14067,13050 14086,13090
 Baruther Str.: asphaltierte Kissen (2x)	q1 9837,9856 9723,9842
 Solmsstr.: asphaltierte Kissen (2x)	q1 9723,9842 9705,9732
+Fürbringerstr.: asphaltierte Kissen (2x)	q1 9705,9732 9820,9718
 #: note: (noch) keine Ausschilderung
 (Nordpromenade, entlang der S-Bahn): einige Fußgänger	q2 20640,12095 20807,12083
 #: note: Ausschilderung existiert am westlichen Ende; am östlichen Ende nur ein Grünanlagenschild ohne Zusatzschilder

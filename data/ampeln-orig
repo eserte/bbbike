@@ -96,7 +96,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: last_checked ^^^
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-05-17 (webcam)
+#: last_checked: 2022-05-31
 #: next_check: 2024-06-01
 Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
@@ -165,7 +165,7 @@ Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2022-05-12
+#: last_checked: 2022-05-31
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -1065,7 +1065,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX: Ampel temporär verlegt
 # XXX	F 8065,11349
 #: note: Anforderungsampel
-#: last_checked: 2022-04-29
+#: last_checked: 2022-05-31
 #: check_frequency: 180d
 #: next_check: 2026-01-01
 	F::inwork 8096,11393
@@ -2340,6 +2340,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 8430,10710
 	F 5080,11417
 	X 15144,10905
+#: XXX_prog gilt nicht für Radfahrer auf der Karlshorster Str. Richtung Süden
 	X 15272,10790
 	F 11270,13412
 #: off: night (seen Th 2021-09-09 22:20)
@@ -3175,6 +3176,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 	F 11952,14002
 #: XXX_prog keine Haltelinie für Radfahrer Richtung Süden
+#: note: Grüner Pfeil (Hannah-Arendt-Str. -> Ebertstr.)
 	X 8577,11896
 #: note: Anforderungsampel
 	F 6827,4810
