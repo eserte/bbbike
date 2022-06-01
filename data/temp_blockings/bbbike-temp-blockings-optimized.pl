@@ -1777,7 +1777,34 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (Sanierung des Gendarmenmarkts ab 2022 bis 2024, dann gibt\'s hier keine Veranstaltungen)
+#: by: https://classicopenair.de/de/component/content/frontpage (2021 verschoben auf 7. bis 12. Juli 2022)
+#: by: https://www.classicopenair.de/
+	q4::temp 9679,11834 9666,11935 9656,12031 9645,12133
+	2::temp 9523,12019 9656,12031
+	2::temp 9536,11922 9666,11935
+',
+         'from' => 1656885600,
+         'id' => 1710,
+         'periodic' => 1,
+         'postwarn_days' => 2,
+         'prewarn_days' => 3,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              7,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (7.7.2022 - 11.7.2022; Sperrungen fangen schon früher an und dauern länger)',
+         'type' => 'gesperrt',
+         'until' => 1657742400
+       },
        undef,
        undef,
        undef,
@@ -2512,7 +2539,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -6124,7 +6151,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (G(falsch))
 #: last_checked: 2022-05-04
 	q4::inwork; 15436,7031 15555,7133 15695,7254
 ',
@@ -6230,19 +6257,6 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Dahlmannstr.: Einbahnstraßenregelung wegen Bauarbeiten, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
-       },
-       {
-         'data' => '#: by: https://nitter.net/Wikinaut/status/1531539956694384640#m (hier: drei Wochen)
-#: XXX wird hier noch eine bessere Lösung für Radfahrer gefunden?
-#: next_check: 2022-06-01
-	q4::inwork 5631,8011 5631,8141
-',
-         'from' => 1654031041,
-         'id' => 3556,
-         'source_id' => 'https://nitter.net/VIZ_Berlin/status/1531549863846023168#m',
-         'text' => 'Prinzregentenstraße: zwischen Wexstraße und Durlacher Straße Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis Mitte Juni 2022',
-         'type' => 'handicap',
-         'until' => 1655330399
        }
      
 );

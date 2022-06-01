@@ -14724,11 +14724,11 @@ EOF
 	2::inwork 7160,11225 7103,11247 6851,11346
 EOF
      },
-     { from  => $isodate2epoch->("2019-07-01 00:00:00"), # mindestens 1 Tag Vorlauf, besser drei
-       until => $isodate2epoch->("2019-07-10 22:00:00"), # mindestens 1 Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
+     { from  => $isodate2epoch->("2022-07-04 00:00:00"), # mindestens 1 Tag Vorlauf, besser drei
+       until => $isodate2epoch->("2022-07-13 22:00:00"), # mindestens 1 Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
        prewarn_days => 3,
        postwarn_days => 2,
-       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (4.7.2019 - 8.7.2019; Sperrungen fangen schon früher an und dauern länger)',
+       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (7.7.2022 - 11.7.2022; Sperrungen fangen schon früher an und dauern länger)',
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 7, start => "2021-10-25T00:00:00"]],
        # zZt status=500: source_id => 'http://www.classicopenair.de/de',
@@ -14736,6 +14736,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (Sanierung des Gendarmenmarkts ab 2022 bis 2024, dann gibt's hier keine Veranstaltungen)
 #: by: https://classicopenair.de/de/component/content/frontpage (2021 verschoben auf 7. bis 12. Juli 2022)
+#: by: https://www.classicopenair.de/
 	q4::temp 9679,11834 9666,11935 9656,12031 9645,12133
 	2::temp 9523,12019 9656,12031
 	2::temp 9536,11922 9666,11935
@@ -19498,10 +19499,11 @@ EOF
      { from  => $isodate2epoch->("2018-06-30 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2018-07-01 22:00:00"),
        periodic => 1, # zweiter Termin im Sommer
-       recurrences => [['yearly', days => 1, months => 7, start => "2021-08-01T00:00:00"]], # kann aber auch erst im August oder September stattfinden
+       recurrences => [['yearly', days => 1, months => 7, start => "2022-08-01T00:00:00"]], # kann aber auch erst im August oder September stattfinden
 # zweiter Termin wird 2019 ausfallen
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahn-wird-unterbrochen_a253327 (wird 2020 wieder nicht stattfinden)
 #: by: https://stadtteilausschuss-kreuzberg.de/opair.htm ("Keine OpenAirGallery 2021")
+#: by: https://openairgallery.berlin/ (findet 2022 nicht statt)
        text  => 'Open Air Gallery am 1. Juli 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -35051,7 +35053,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (G(falsch))
 #: last_checked: 2022-05-04
 	q4::inwork; 15436,7031 15555,7133 15695,7254
 EOF
@@ -35196,14 +35198,14 @@ EOF
 EOF
      },
      { from  => 1654031041, # 2022-05-31 23:04
-       until => 1655330399, # 2022-06-15 23:59
+       until => 1654110050, # 1655330399, # 2022-06-15 23:59
        text  => 'Prinzregentenstraße: zwischen Wexstraße und Durlacher Straße Wasserrohrbruch, Fahrbahn gesperrt, voraussichtlich bis Mitte Juni 2022',
        type  => 'handicap',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1531549863846023168#m',
        data  => <<EOF,
 #: by: https://nitter.net/Wikinaut/status/1531539956694384640#m (hier: drei Wochen)
-#: XXX wird hier noch eine bessere Lösung für Radfahrer gefunden?
-#: next_check: 2022-06-01
+#: by: https://nitter.net/Wikinaut/status/1532016521706348547#m (Durchfahrt für Radfahrer wieder möglich)
+# REMOVED --- #: XXX wird hier noch eine bessere Lösung für Radfahrer gefunden? --- #: next_check: 2022-06-01
 	q4::inwork 5631,8011 5631,8141
 EOF
      },
