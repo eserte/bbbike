@@ -3252,10 +3252,10 @@ EOF
 # 1.bbd beschreibt die Fläche:
 #	X -12322,-2267 -12306,-2300 -12306,-2563 -12207,-2726 -12198,-2922 -12231,-3061 -12204,-3469 -11636,-3843 -11431,-3686 -11135,-3439 -10857,-3194 -10483,-2699 -10655,-2569 -10930,-2457 -11033,-2346 -11147,-2041 -11196,-2042 -11820,-1979 -12115,-1964 -12116,-2122 -12228,-2104 -12281,-2198
        data  => <<EOF,
-Friedrich-Engels-Str. (Potsdam)	2::temp -11369,-2085 -11513,-2122 -11597,-2203 -11694,-2245 -11778,-2225 -11834,-2213 -11939,-2190 -11992,-2178 -12093,-2156 -12213,-2131
-Zum Wasserturm (Potsdam)	2::temp -12100,-2039 -11995,-2047 -11947,-2048 -11842,-2054 -11842,-2183
+Friedrich-Engels-Str. (Potsdam)	2::temp -11369,-2085 -11513,-2122 -11597,-2203 -11694,-2245 -11778,-2225 -11834,-2213 -11939,-2190 -12004,-2175 -12093,-2156 -12213,-2131
+Zum Wasserturm (Potsdam)	2::temp -12100,-2039 -12003,-2046 -11947,-2048 -11830,-2053 -11834,-2191
 Friedhofsgasse (Potsdam)	2::temp -11778,-2225 -11799,-2283 -12001,-2495
-Am Stellwerk (Potsdam)	2::temp -11992,-2178 -11995,-2047
+Am Stellwerk (Potsdam)	2::temp -12004,-2175 -12003,-2158 -12003,-2046
 Heinrich-Mann-Allee (Potsdam)	2::temp -12262,-2244 -12001,-2495 -11912,-2587 -11770,-2743 -11656,-2944 -11438,-3179 -11311,-3322
 Schlaatzstr. (Potsdam)	2::temp -11694,-2245 -11579,-2333 -11487,-2373
 Bergholzer Str. (Potsdam)	2::temp -11579,-2333 -11635,-2414 -11679,-2408
@@ -16335,7 +16335,7 @@ EOF
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-04-29
+#: last_checked: 2022-06-03
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -27511,9 +27511,9 @@ EOF
 # 1.bbd beschreibt die Fläche:
 #	X -13179,-1337 -13215,-1620 -13273,-1811 -13306,-1813 -13217,-2682 -12972,-2740 -13036,-2889 -12696,-2945 -12198,-2871 -12023,-2485 -11798,-2217 -11830,-2038 -11842,-1931 -11831,-1846 -11804,-1798 -12041,-1522 -12109,-1437 -12230,-1457 -12254,-1356 -12305,-1362 -12329,-1230 -12725,-1350 -12847,-1381 -13013,-1360 -13179,-1337
        data  => <<EOF,
-	2::temp -11834,-2213 -11939,-2190 -11992,-2178 -12093,-2156 -12213,-2131 -12255,-2123 -12431,-2096
-	2::temp -12100,-2039 -11995,-2047 -11947,-2048 -11842,-2054 -11842,-2183
-	2::temp -11992,-2178 -11995,-2047
+	2::temp -11834,-2213 -11939,-2190 -12004,-2175 -12093,-2156 -12213,-2131 -12255,-2123 -12431,-2096
+	2::temp -12100,-2039 -12003,-2046 -11947,-2048 -11830,-2053 -11834,-2191
+	2::temp -12004,-2175 -12003,-2158 -12003,-2046
 	2::temp -12657,-1338 -12542,-1305
 	2::temp -13180,-1627 -12948,-1671 -12919,-1676
 	2::temp -12927,-1576 -13092,-1538
@@ -30559,7 +30559,7 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-05-31
+#: last_checked: 2022-06-03
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 EOF
@@ -32148,7 +32148,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-05-08 vvv
+#: last_checked: 2022-06-03 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -34587,10 +34587,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: last_checked: 2022-03-05 vvv
+#: last_checked: 2022-06-03 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: note: Bellevueufer möglicherweise wieder offen?
 #: osm_watch: way id="4395450" version="25"
 	2::inwork 7031,12320 6694,12627
 #: osm_watch: way id="505363417" version="7"

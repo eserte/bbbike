@@ -2239,7 +2239,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-04-29
+#: last_checked: 2022-06-03
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -3263,38 +3263,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/kultur-und-tickets/tipps/kinder/internationaler-kindertag/3072858-3068888-kindertag-im-haus-natur-und-umwelt.html (mögliche Termine: 1.6.2021 + 6.6.2021)
-#: by: https://fez-berlin.de/veranstaltungen2021/kindertagsparty/ (vermutlich nur online?)
-#: by: https://fez-berlin.de/veranstaltungen2022imfez-berlin/internationalerkindertag2022/
-#: tempex: YYYY0531-YYYY0603 vvv
-	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
-	2::temp 19961,5989 20015,6069 20293,6278 20199,6318 20106,6357
-	2::temp 20199,6318 20262,6493 20225,6631
-	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
-	2::temp 19944,6006 20064,6290 20086,6307 20106,6357
-#: tempex ^^^
-',
-         'from' => 1653948000,
-         'id' => 2436,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 3,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              5,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
-         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. Juni 2022',
-         'type' => 'gesperrt',
-         'until' => 1654120799
-       },
+       undef,
        undef,
        undef,
        {
@@ -4600,7 +4569,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-05-31
+#: last_checked: 2022-06-03
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 ',
@@ -4952,7 +4921,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-05-08 vvv
+#: last_checked: 2022-06-03 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -5732,19 +5701,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1672466400
        },
-       {
-         'data' => '#: XXX: laut rbb sogar bis 7.6.2022
-#: also_indoor: traffic (G,ex-H,B)
-#: next_check: 2022-06-03
-	q4::inwork 13277,8211 13331,8283
-',
-         'from' => 1642917600,
-         'id' => 3503,
-         'source_id' => 'viz2021:13.445809,52.479541,24.01.2022,07:00',
-         'text' => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., vom 24.01.2022 07:00 bis 03.06.2022 17:00',
-         'type' => 'handicap',
-         'until' => 1654268400
-       },
+       undef,
        {
          'data' => '#: next_check_id: ZWIESELER-2022
 #: XXX Stand 2022-01-21: Verbotsschild für Fußgänger am nördlichen Ende, Verbot für Fahrzeuge aller Art außer Grundstücksanlieger am südlichen Ende, man kann aber trotzdem passieren. Stand 2022-02-26: Passieren weiterhin möglich.
@@ -5825,10 +5782,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: last_checked: 2022-03-05 vvv
+#: last_checked: 2022-06-03 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: note: Bellevueufer möglicherweise wieder offen?
 #: osm_watch: way id="4395450" version="25"
 	2::inwork 7031,12320 6694,12627
 #: osm_watch: way id="505363417" version="7"
