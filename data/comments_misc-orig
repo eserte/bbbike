@@ -522,7 +522,7 @@ Bus M85	busroute_N 4136,505 4122,421 4068,406 3912,362 3898,466 3834,502 3655,75
 Bus M85	busroute_N 7873,12927 7872,13022 7939,13026 7937,13109 7867,13106 7872,13022
 Bus M77, Bus M82	busroute_N 6966,880 6961,836 6941,690 6937,671 6959,509 7007,333 7014,203 6982,88
 Bus 283	busroute_N 7235,2542 7324,2559 7392,2570 7488,2558 7517,2574 7555,2540 7602,2522 7667,2501 7704,2482 7777,2447 7899,2391 7923,2319 7987,2337 7983,2348 7983,2348 7899,2391
-Bus 187	busroute_N 7852,3183 7855,3355 7784,3369 7755,3376 7705,3386 7587,3411 7501,3432 7483,3440 7458,3451 7407,3473 7183,3570 7109,3635 7012,3743 6993,3765
+Bus 187	busroute_N 7852,3183 7855,3355 7784,3369 7755,3376 7705,3386 7587,3411 7501,3432 7483,3440 7458,3451 7407,3473 7183,3570 7109,3635 7012,3743 6996,3762
 Bus 187	busroute_N 7755,3376 7734,3290 7719,3219 7720,3148
 Bus M77, ...	busroute_N 8490,2084 8561,2015 8599,1896
 Bus 179	busroute_N 9106,3703 9128,3580
@@ -1206,7 +1206,7 @@ Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788&d=20191216 (Benennung nach Hans Otto Obrikat vorgeschlagen)
 #: XXX oder wird statt Wasserstr. und Uferstr. die Straﬂe nach Hans Otto Obrikat benannt? (erster Vorschlag: "Else-Schierhorn-Str.")
-#: last_checked: 2022-04-22 (mapillary)
+#: last_checked: 2022-06-04
 #: check_frequency: 60d
 Wasserstr. und Uferstr.: noch nicht ausgeschildert	CS 17483,6024 17681,6212 17847,6089
 # 
@@ -1675,6 +1675,8 @@ Am Pankepark: nicht ausgeschildert	CS 8152,14130 8238,14181 8282,14116 8207,1406
 #: XXX Wann wird hier ausgeschildert?
 #: last_checked: 2022-05-21
 Kleiner Parkweg: nicht ausgeschildert	CS 20775,11801 20790,11990
+# 
+Volkerweg: nicht ausgeschildert	CS 16005,4012 16046,4073 16060,4093 16145,4217 16151,4226
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straﬂen)

@@ -627,9 +627,9 @@ Nollendorfplatz: Gehweg oder Parkplatz Richtung Motzstr. benutzen	q3; 7033,10328
 Arenholzsteig: Bordsteine	q2 8481,6900 8496,6919
 Mergenthalerring: Asphaltschwellen, kˆnnen teilweise umfahren werden	q1 14425,8116 14563,8243 14422,8407
 Grazer Platz: Fuﬂg‰nger, Bordsteine	q2 6546,6724 6530,6786 6529,6798
-(Vorarlberger Damm - Kleingartenkolonie): Fuﬂg‰nger	q1 6817,7101 6852,7246 6841,7283
-(Nordmannzeile - Kleingartenkolonie): Fuﬂg‰nger	q1 6807,7262 6809,7272 6841,7283
-(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger	q1 7220,7442 7307,7457
+(Vorarlberger Damm - Kleingartenkolonie): Fuﬂg‰nger	q1 6817,7101 6852,7246 6843,7293
+(Nordmannzeile - Kleingartenkolonie): Fuﬂg‰nger	q2 6811,7266 6820,7287 6843,7293
+(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger	q1 7220,7445 7307,7457
 Achenbachpromenade: Fuﬂg‰nger, Radfahren erlaubt	q1 8763,8780 8748,8587 8722,8527 8715,8459
 Wildensteiner Str.: enge Straﬂe	q0 18627,8475 18528,8331
 Wildensteiner Str.: enge Straﬂe	q1 18528,8331 18416,8163 18365,8094 18333,8059
@@ -866,7 +866,7 @@ Wirsitzer Weg: Bodenschwelle	q0 22448,6957 22641,6918
 Fritzi-Massary-Str: Bordsteine	q3 15428,6355 15452,6384
 (Rotkehlchenweg - Kormoranweg): eng, einige Fuﬂg‰nger, Bordsteine	q3 14099,3772 14185,3734
 D¸rtenstr.: Fuﬂg‰nger	q2 13785,4839 13825,4850 13874,4867 13914,4877
-Angelikaweg: Fuﬂg‰nger	q1 15459,2921 15537,3026
+Angelikaweg: Fuﬂg‰nger	q2 15459,2921 15537,3026
 Primelweg: Fuﬂg‰nger, eng	q1 15804,2512 15862,2588
 (Kleestr. - Neukˆllner Str.): Fuﬂg‰nger	q1 16302,2034 16254,1999
 Kerbelweg: Fuﬂg‰nger	q1 16603,2641 16547,2680
@@ -2295,6 +2295,7 @@ Max-und Herta-Naujocks-Weg: Fuﬂg‰nger, schmaler Weg	q2 16036,18604 16077,18674 1
 (Einkaufszentrum Lagunenweg): Fuﬂg‰nger	q2 31762,3202 31650,3218
 (Mausohrweg - R1): Bordsteine, Fuﬂg‰nger	q3 33296,2894 33267,2810 33255,2762
 Haydnstr. - M‰rkische Allee: Bordsteine, einige Fuﬂg‰nger	q3 19995,11795 19979,11774
+Fenchelweg: enge Straﬂe	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,3602 15791,3686 15838,3754 15860,3838 15872,3888 15859,3924 15695,4051 15585,4139
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2390,7 +2391,7 @@ H¸nensteig: Fuﬂg‰nger	q2 6395,5154 6405,5238 6108,5253
 (Gˆtzstr. - Albrechtstr.): Fuﬂg‰nger	q2 9373,6179 9367,6160 9366,6150 9376,6102 9349,6102 9339,6076
 (Ringstr. - Gersdorfstr. (Kolonie Marienhˆhe)): Kleingartenanlage, Fuﬂg‰nger (schieben!), tiefe Steinregenabl‰ufe quer zum Weg, Bordstein	q4 7911,4465 7925,4477 8027,4571 8076,4606 8192,4710
 M¸hlenbecker Weg: Fuﬂg‰nger	q1 20150,15678 20321,16043 20330,16040
-(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger, Kleingartenweg	q1 6841,7283 6846,7306 7062,7376 7108,7416 7220,7442
+(Nordmannzeile - Vorarlberger Damm): Fuﬂg‰nger, Kleingartenweg	q2 6843,7293 6847,7314 7089,7398 7097,7419 7220,7445
 Herschelstr.: enge Wohnstraﬂe	q1 3200,13277 3239,13461 3262,13547 3280,13625
 Togostr.: teilweise recht enger Radweg	q1 6244,16096 6104,16223
 Konradinstr.: enge Straﬂe	q0 8575,5202 8556,5234 8632,5331 8674,5357 8872,5484 8887,5564

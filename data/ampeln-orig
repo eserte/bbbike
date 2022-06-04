@@ -78,7 +78,7 @@ Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2022-05-11
+#: last_checked: 2022-06-04
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
@@ -1106,7 +1106,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel für Radfahrer in Richtung Westen
 	X 11386,5107
 	X 6780,3497
-	X 6993,3765
+	X 6996,3762
 	X 7159,4023
 	X 7497,5610
 	X 6651,4843
@@ -3021,7 +3021,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F -188,22682
 	X -2295,16951
 	X -1706,15768
-	X 7282,2386
+#: note: Anforderungsampel für Radfahrer aus der Eiswaldtstr. und Emmichstr.
+	X 7285,2377
 	X 8382,347
 	X 5720,2081
 	X 27112,-2764

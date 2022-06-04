@@ -1299,7 +1299,7 @@ Mittelstreifen	3nocross::ignrte 7437,1859 7423,1905 7409,1953
 Malteserstr. -> Weygerweg: Mittelstreifen	3::igndisp 7409,1953 7423,1905 7514,1930
 Weygerweg -> Malteserstr.: Mittelstreifen	3::igndisp 7514,1930 7423,1905 7437,1859
 Marienfelder/Daimler: Abbiegen nicht erlaubt	3 8602,2377 8579,2265 8639,2212
-Mittelstreifen	3nocross::ignrte 6771,5273 6767,5233 6747,5010
+Mittelstreifen	3nocross::ignrte 6767,5274 6767,5233 6747,5010
 Kottest. -> Munsterdamm: Mittelstreifen	3::igndisp 6806,5230 6767,5233 6747,5010
 Hecken	3nocross::ignrte 13782,9954 13711,10022 13579,10146
 Puschkinallee -> durch den Schlesischen Busch: Hecken	3::igndisp 13782,9954 13711,10022 13657,9983
@@ -1352,8 +1352,8 @@ Jüdenstr. -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3481,14308 -35
 Altstädter Ring -> Jüdenstr.: Mittelstreifen mit Zaun	3::igndisp -3501,14365 -3506,14306 -3481,14308
 Altstädter Ring -> Münsinger Park: Mittelstreifen mit Zaun	3::igndisp -3552,14082 -3517,14218 -3607,14249
 Münsinger Park -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3607,14249 -3517,14218 -3511,14260
-Mittelstreifen	3nocross::ignrte 6993,3765 6954,3703 6930,3666
-Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6954,3703 6930,3666
+Mittelstreifen	3nocross::ignrte 6996,3762 6954,3703 6915,3642
+Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6954,3703 6915,3642
 umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11329,12497 11340,12443 11344,12410 11355,12331
 Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11353,12436 11340,12443 11344,12410
 Alexanderstr. -> Schillingstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11329,12497 11340,12443 11353,12436
@@ -2194,9 +2194,9 @@ Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,35
 Mittelstreifen	3nocross::ignrte 18457,5000 18425,5032 18080,5376
 Michael-Brückner-Str. -> Hartriegelstr.: Mittelstreifen	3::igndisp 18080,5376 18425,5032 18514,5028
 Hartriegelstr. -> Michael-Brückner-Str.: Mittelstreifen	3::igndisp 18514,5028 18425,5032 18457,5000
-Mittelstreifen	3nocross::ignrte 17728,5756 17782,5698 17829,5648
+Mittelstreifen	3nocross::ignrte 17728,5756 17782,5698 17808,5669
 Michael-Brückner-Str. -> Spreestr.: Mittelstreifen	3::igndisp 17728,5756 17782,5698 17807,5730
-Michael-Brückner-Str. -> Cajamarcapl.: Mittelstreifen	3::igndisp 17829,5648 17782,5698 17730,5698
+Michael-Brückner-Str. -> Cajamarcapl.: Mittelstreifen	3::igndisp 17808,5669 17782,5698 17730,5698
 Cajamarcapl. -> Michael-Brückner-Str.: Mittelstreifen	3::igndisp 17730,5698 17782,5698 17728,5756
 Cajamarcapl. -> Spreestr.: Mittelstreifen	3::igndisp 17730,5698 17782,5698 17807,5730
 Straßenbahngleise	3nocross::ignrte 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17774,15129 17789,15098 17829,15015
@@ -3127,7 +3127,8 @@ Schranke, kann auch mit Anhänger umfahren werden	BNP:1:-168 49137,24422
 Drängelgitter	BNP:3:0:trailer=6 3644,8441
 Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1:1:trailer=10 7816,5682
 Tor	BNP:3:-209 6431,3417
-Tor	BNP:10:-146 16145,4217
+Tor, üblicherweise geschlossen	BNP:10:-145 16145,4217
+Tor, üblicherweise geschlossen	BNP:10:-146 16046,4073
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3:-145:trailer=10 16497,3453
 Schranke und Pfosten	BNP:3:-233:trailer=10 15028,4272
 Schranke (lichte Breite ca. 120cm)	BNP:2:-50:trailer=8 14448,4501

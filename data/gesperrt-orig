@@ -76,7 +76,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136955038359/955038359/00392647/47-Anlagen/02/Anl1_XI-231aba_Planzeichnung.pdf
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="18"
-#: last_checked: 2021-11-20
+#: last_checked: 2022-06-04
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Ella-Barowsky-Str.	1 7499,7880 7268,8008 7193,7950
@@ -763,6 +763,7 @@ Potsdamer Chaussee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
 Altstädter Ring: Radweg muss benutzt werden	1::igndisp -3501,14365 -3498,14413 -3481,14523 -3432,14607 -3352,14676
 Elly-Beinhorn-Ring: Radweg muss benutzt werden	2::igndisp 19158,-4083 19153,-4033 19105,-3940
 #: by: Maria Hach
+#: confirmed_by: srt
 Bösensteinweg	1 9943,1543 9847,1571 9771,1641
 #: by: Manfred Brühl
 Wesenberger Ring	1 13030,3664 13129,3809 13165,3850 13206,3854 13229,3836 13238,3794 13206,3674 13163,3582
@@ -1274,7 +1275,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-05-31
+#: last_checked: 2022-06-04
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1844,7 +1845,7 @@ Rudower Str.: Mittelstreifen	3nocross 14788,3441 14822,3409 14994,3245
 Tempelhofer Damm: Mittelstreifen	3nocross 9248,4904 9239,4980 9206,5193
 Malteserstr.: Mittelstreifen	3nocross 7437,1859 7423,1905 7409,1953
 Marienfelder/Daimler: Abbiegen nicht erlaubt	3 8602,2377 8579,2265 8639,2212
-Munsterdamm: Mittelstreifen	3nocross 6771,5273 6767,5233 6747,5010
+Munsterdamm: Mittelstreifen	3nocross 6767,5274 6767,5233 6747,5010
 Puschkinallee: Hecken	3nocross 13782,9954 13711,10022 13579,10146
 Urbanstr.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3nocross 11274,9492 11383,9446 11509,9392
 #: by: Rainer (ghostviewer...)
@@ -1867,7 +1868,7 @@ Altstädter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3501,14365 -35
 #: by: Juliane (alberts...)
 Altstädter Ring: Mittelstreifen mit Zaun	3nocross -3501,14365 -3506,14306 -3511,14260 -3517,14218 -3552,14082
 #: by: Steini (immerlocker)
-Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6993,3765 6954,3703 6930,3666
+Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6996,3762 6954,3703 6915,3642
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11329,12497 11340,12443 11344,12410 11355,12331
 Yorckstr.: Mittelstreifen	3nocross 8777,9601 8679,9544 8595,9495
 Klemkestr.: Mittelstreifen	3nocross 7434,18695 7492,18699 7520,18701
@@ -2171,7 +2172,7 @@ Adlergestell: Mittelstreifen	3nocross 19676,3705 19633,3751 19587,3801
 Adlergestell: Mittelstreifen	3nocross 19472,3922 19335,4067 18725,4715 18457,5000
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
 Michael-Brückner-Str.: Mittelstreifen	3nocross 18457,5000 18425,5032 18080,5376
-Michael-Brückner-Str.: Mittelstreifen	3nocross 17728,5756 17782,5698 17829,5648
+Michael-Brückner-Str.: Mittelstreifen	3nocross 17728,5756 17782,5698 17808,5669
 #: by: Thomas Pörs & srt:
 Rhinstr.: Straßenbahngleise	3nocross 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17774,15129 17789,15098 17829,15015
 Potsdamer Chaussee: Mittelstreifen	3nocross -1249,2590 -1085,2653 -984,2692 -870,2737
@@ -3279,7 +3280,8 @@ Poller, Abstand 80cm (mit Anhänger über Gehweg umfahren)	BNP:1::trailer=10 7816,
 #: by: guylian
 #: note: ohne Schloss, also immer offen
 Tor	BNP:3 6431,3417
-Tor	BNP:10 16145,4217
+Tor, üblicherweise geschlossen	BNP:10 16145,4217
+Tor, üblicherweise geschlossen	BNP:10 16046,4073
 Drängelgitter (lichte Breite ca. 100cm)	BNP:3::trailer=10 16497,3453
 Schranke und Pfosten	BNP:3::trailer=10 15028,4272
 Schranke (lichte Breite ca. 120cm)	BNP:2::trailer=8 14448,4501
@@ -3481,7 +3483,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2022-05-11
+#: last_checked: 2022-06-04
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -3657,7 +3659,7 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 #: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
-#: last_checked: 2022-04-20 (daf) vvv
+#: last_checked: 2022-06-04 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2022-07-01 vvv
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
