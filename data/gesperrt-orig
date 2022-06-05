@@ -2465,8 +2465,7 @@ tragen (15 Stufen oder steile Kinderwagenrampe)	0:30 2956,24373
 #: XXX_prog: should be Treppe with more than one point: 2827,23059 2854,23062 2886,23045
 tragen (Treppe)	0:30 2854,23062
 tragen (ca. 30 Stufen)	0:30 8773,10399
-#: note: Luftbild (Stufenanzahl)
-tragen (ca. 25 Stufen)	0:30 -18702,4551
+tragen (mehrere langgezogene Stufen, mit Rampen als Schiebehilfe)	0:30 -18702,4551
 tragen (11 Stufen)	0:20 -12676,-1742
 # REMOVED (vermutlich nicht mehr existent) --- tragen (11 Stufen)	0:20 -12685,-1449
 tragen (9 Stufen)	0:20 -12606,-1694
@@ -2660,6 +2659,9 @@ tragen (Treppe, 16 Stufen)	0:25 22104,11925
 #: by: osm, mapillary
 tragen (Treppe, 2x6 Stufen)	0:25 15023,13800
 tragen (Treppe, 10 Stufen) oder steile Rampe benutzen	0:15 2199,26440
+tragen (einige Stufen)	0:15 -18612,4568
+tragen (Treppe)	0:30 -18875,5375
+tragen (Treppe)	0:30 -18860,5378
 #
 ###################################################################
 # Dr‰ngelgitter (BLOCKED_NARROWPASSAGE)
@@ -4608,7 +4610,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 #: XXX die derzeitige Straﬂe ist asphaltiert, bleibt das so?
 #: osm_watch: way id="765539341" version="6" brb
-#: last_checked: 2022-05-08
+#: last_checked: 2022-06-05
 # REMOVED --- #: next_check: 2020-09-01
 #: check_frequency: 180d
 Erika-Wolf-Str. (Potsdam): w‰hrend der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449

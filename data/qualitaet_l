@@ -1794,11 +1794,13 @@ Betonplatten (zweispurig, bedingt anhängergeeignet)	Q2 -19928,2706 -19868,3159 -
 Feldweg	Q2 -19766,3346 -19634,3593 -19339,3792 -19321,4113 -19316,4365
 mäßiger Asphalt	Q1 -19316,4365 -19249,4366 -19028,4334 -18665,4193
 Kopfsteinpflaster (Bahnübergang)	Q2 -18665,4193 -18636,4186 -18593,4175
-asphaltiert	Q0 -18593,4175 -18184,4168 -18025,4018
-sehr guter Betonweg (zweispurig, bedingt anhängergeeignet)	Q1 -17956,3840 -17665,3875 -17425,3700 -17153,3693 -16953,3656 -16546,3403 -16279,3292 -16243,3284
+asphaltiert	Q0 -18593,4175 -18291,4186 -18231,4177 -18210,4192 -18025,4018
+sehr guter Betonweg (zweispurig, bedingt anhängergeeignet)	Q1 -17956,3840 -17677,3874
+Kopfsteinpflaster	Q2 -17677,3874 -17638,3871
+sehr guter Betonweg (zweispurig, bedingt anhängergeeignet)	Q1 -17638,3871 -17425,3700 -17153,3693 -16953,3656 -16546,3403 -16279,3292 -16243,3284
 Kopfsteinpflaster	Q2 -16243,3284 -16196,3300 -15921,3268
 asphaltiert	Q0 -15921,3268 -15821,3240 -15459,2946
-asphaltiert	Q0 -16295,2475 -15795,2756 -15459,2946 -15034,3150 -14426,3083 -14382,3066 -14285,3039 -14057,2999 -13840,2956 -13581,3075 -13387,2987
+asphaltiert	Q0 -16295,2475 -15795,2756 -15459,2946 -15103,3149 -15034,3150 -14426,3083 -14382,3066 -14285,3039 -14057,2999 -13840,2956 -13581,3075 -13387,2987
 Freundschaftsinsel: Parkweg	Q1 -12260,-1503 -12253,-1589 -12396,-1681 -12544,-1799
 Schlaatzstr.: Kopfsteinpflaster	Q2 -11694,-2245 -11579,-2333 -11487,-2373
 Schlaatzstr. - Horstweg: asphaltiert	Q0 -11487,-2373 -11425,-2384
@@ -2506,7 +2508,7 @@ August-Bebel-Str.: Kopfsteinpflaster	Q2 -8469,-1541 -8485,-1445
 Paul-Gerhard-Str.: Asphalt	Q0 3232,803 3271,745 3417,524
 Alte B101-Trasse: feiner Schotter	Q1 7097,-527 6959,-743
 (Postenweg): Beton, einige Fugen	Q0 17245,-683 17806,-561 18170,-449
-Peter-Huchel-Str.: Asphalt	Q0 -13257,1337 -13277,1490 -13294,1681
+Peter-Huchel-Str.: Asphalt	Q0 -13257,1337 -13263,1394 -13277,1490 -13285,1588 -13294,1681
 Erich-Arendt-Str.: Asphalt	Q0 -13277,1490 -13125,1508
 Graf-von-Schwerin-Str.: Asphalt	Q0 -13133,1698 -13084,1700
 Friedrich-Klausing-Str.: Kopfsteinpflaster	Q1 -13083,1692 -12965,1694
@@ -5437,6 +5439,9 @@ Niels-Bohr-Ring (Potsdam): Beton	Q1 -7349,-3747 -7522,-3750 -7522,-3837 -7346,-3
 Otto-Hahn-Ring (Potsdam): Beton	Q1 -7346,-3808 -7199,-3800 -7195,-3901 -7343,-3906
 Newtonstr. (Potsdam): Beton	Q1 -7830,-3400 -7823,-3580 -7820,-3701 -7819,-3764 -7815,-3805 -7812,-3936 -7805,-4022
 Uferweg (Stahnsdorf): unbefestigte Straße	Q2 -3174,-1668 -3310,-1517 -3369,-1489 -3430,-1461 -3443,-1430
+Fahrländer Str. (Marquardt): Asphalt	Q0 -19309,5319 -19169,5344 -19096,5354 -18882,5395
+Spielstr. (Marquardt): Asphalt	Q0 -19096,5354 -19196,5374 -19312,5447 -19371,5526
+Zum Bahnübergang: unbefestigte Straße	Q2 -18838,5404 -18871,5537 -18722,5775
 Prieros - Neubrück: Sand	Q3 35093,-21361 34097,-22246
 Birkenweg: Asphalt	Q0 27432,12680 27427,12773 27483,12922
 Sankt-Georgs-Weg: Asphalt	Q0 29674,13008 29093,13456
@@ -5759,9 +5764,12 @@ Bahnhofstr. (Stahnsdorf): Asphalt	Q0 -2878,-3004 -2918,-3010 -3004,-3000 -3159,-
 Försterei Zedlitz - Straße nach Krampnitz: wassergebundene Decke	Q1 -10955,3723 -11011,3721 -11156,3523 -11247,3503 -11299,3471 -11334,3365 -11395,3270 -11528,3111
 Straße des Friedens: Betonstraße	Q1 -19186,8685 -19156,8684 -18848,8400 -18331,7751 -18216,7682 -17812,7349
 An den Gleisen: Betonstraße	Q1 -19190,7296 -19195,7358 -19235,7399 -19187,7496 -19186,8685
-Marquardt, Hauptstr.: Kopfsteinpflaster	Q2 -18852,4795 -19159,5077 -19250,5147 -19303,5325 -19356,5480
-Marquardt, Uferweg: Rasenweg	Q2 -18701,4578 -18620,4569 -18371,4555
-Marquardt: Asphalt	Q0 -18184,4168 -18385,4346 -18371,4555
+Marquardt, Hauptstr.: Kopfsteinpflaster	Q2 -18852,4795 -19159,5077 -19250,5147
+Marquardt, Hauptstr.: Kopfsteinpflaster, Gehweg Verbundsteinpflaster	Q2 -19250,5147 -19309,5319
+Marquardt, Hauptstr.: Asphalt	Q0 -19309,5319 -19356,5480
+Marquardt, Uferweg: Rasenweg	Q2 -18701,4578 -18620,4569
+Marquardt, Uferweg: Rasenweg, sandige Stellen	Q3 -18620,4569 -18612,4568 -18375,4543
+Marquardt: Asphalt	Q0 -18210,4192 -18353,4322 -18370,4354 -18382,4389 -18375,4543
 (Pfad am Sacrow-Paretzer Kanal): wassergebundene Decke, teilweise nur Rasen	Q2 -15034,3150 -15047,3330 -15211,3351 -15330,3531 -15464,3624 -15775,3702 -16138,3692
 (Sacrow-Paretzer Kanal - Gutsgarten): zweispuriger Betonplattenweg	Q2 -16138,3692 -16279,3292
 Driftweg - entlang der Eisenbahnstrecke: wassergebundene Decke	Q1 -18908,5040 -18794,5024 -18743,4789 -18722,4681

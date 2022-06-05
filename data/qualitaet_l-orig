@@ -2090,12 +2090,14 @@ Betonplatten (zweispurig, bedingt anhängergeeignet)	Q2 -19928,2706 -19868,3159 -
 Feldweg	Q2 -19766,3346 -19634,3593 -19339,3792 -19321,4113 -19316,4365
 mäßiger Asphalt	Q1 -19316,4365 -19249,4366 -19028,4334 -18665,4193
 Kopfsteinpflaster (Bahnübergang)	Q2 -18665,4193 -18636,4186 -18593,4175
-asphaltiert	Q0 -18593,4175 -18184,4168 -18025,4018
-sehr guter Betonweg (zweispurig, bedingt anhängergeeignet)	Q1 -17956,3840 -17665,3875 -17425,3700 -17153,3693 -16953,3656 -16546,3403 -16279,3292 -16243,3284
+asphaltiert	Q0 -18593,4175 -18291,4186 -18231,4177 -18210,4192 -18025,4018
+sehr guter Betonweg (zweispurig, bedingt anhängergeeignet)	Q1 -17956,3840 -17677,3874
+Kopfsteinpflaster	Q2 -17677,3874 -17638,3871
+sehr guter Betonweg (zweispurig, bedingt anhängergeeignet)	Q1 -17638,3871 -17425,3700 -17153,3693 -16953,3656 -16546,3403 -16279,3292 -16243,3284
 Kopfsteinpflaster	Q2 -16243,3284 -16196,3300 -15921,3268
 #: add_fragezeichen: stimmt das?
 asphaltiert	Q0 -15921,3268 -15821,3240 -15459,2946
-asphaltiert	Q0 -16295,2475 -15795,2756 -15459,2946 -15034,3150 -14426,3083 -14382,3066 -14285,3039 -14057,2999 -13840,2956 -13581,3075 -13387,2987
+asphaltiert	Q0 -16295,2475 -15795,2756 -15459,2946 -15103,3149 -15034,3150 -14426,3083 -14382,3066 -14285,3039 -14057,2999 -13840,2956 -13581,3075 -13387,2987
 Freundschaftsinsel: Parkweg	Q1 -12260,-1503 -12253,-1589 -12396,-1681 -12544,-1799
 Schlaatzstr.: Kopfsteinpflaster	Q2+ -11694,-2245 -11579,-2333 -11487,-2373
 Schlaatzstr. - Horstweg: asphaltiert	Q0 -11487,-2373 -11425,-2384
@@ -2930,7 +2932,7 @@ August-Bebel-Str.: Kopfsteinpflaster	Q2 -8469,-1541 -8485,-1445
 Paul-Gerhard-Str.: Asphalt	Q0- 3232,803 3271,745 3417,524
 Alte B101-Trasse: feiner Schotter	Q1 7097,-527 6959,-743
 (Postenweg): Beton, einige Fugen	Q0- 17245,-683 17806,-561 18170,-449
-Peter-Huchel-Str.: Asphalt	Q0 -13257,1337 -13277,1490 -13294,1681
+Peter-Huchel-Str.: Asphalt	Q0 -13257,1337 -13263,1394 -13277,1490 -13285,1588 -13294,1681
 Erich-Arendt-Str.: Asphalt	Q0 -13277,1490 -13125,1508
 Graf-von-Schwerin-Str.: Asphalt	Q0 -13133,1698 -13084,1700
 Friedrich-Klausing-Str.: Kopfsteinpflaster	Q1- -13083,1692 -12965,1694
@@ -3004,6 +3006,7 @@ Kleine Weinmeisterstr.: Kopfsteinpflaster	Q2 -12623,308 -12664,399 -12717,440 -1
 Persiusstr.: asphaltiert	Q0 -12520,551 -12673,613
 Glumestr.: glattes Kopfsteinpflaster, einige Unebenheiten	Q1- -12514,623 -12392,612 -12332,585
 Leistikowstr.: Asphalt	Q0 -12512,810 -12297,738
+#: add_fragezeichen: Liegt hier teilweise Asphalt?
 Am Neuen Garten: holpriges Kopfsteinpflaster	Q3 -12582,127 -12332,585
 Am Neuen Garten: Asphalt	Q0- -12332,585 -12323,635 -12297,738 -12276,831 -12212,1201 -12166,1384
 Wolletz: Verbundsteinpflaster	Q1 43065,69453 43101,69564
@@ -5565,7 +5568,7 @@ Lindenstr. (Zeesen): Asphalt	Q0 26682,-13082 26688,-13233 26777,-13662 26848,-13
 Am Erlengrund (Zeesen): Kleinsteinpflaster	Q2+ 26423,-13250 26482,-13243 26658,-13224 26688,-13233 26786,-13278
 Am Erlengrund (Zeesen): Kopfsteinpflaster	Q2- 26786,-13278 26823,-13291 26919,-13277
 Im Winkel: Verbundsteinpflaster	Q1 17853,21837 17891,21744
-#: by: osm, srt (östlicher Teil)
+#: by: osm, srt
 Am Urnenfeld: Asphalt	Q0 -18163,-1320 -18377,-1254 -18417,-1231 -18433,-1242 -18565,-1169 -18698,-1030 -18725,-827 -18682,-719
 Werderscher Weg (Potsdam): schlechtes Kopfsteinpflaster	Q3 -15300,-1789 -15427,-1860 -15449,-1959
 Werderscher Weg (Potsdam): Asphalt	Q0 -15449,-1959 -15483,-1993
@@ -6224,6 +6227,10 @@ Otto-Hahn-Ring (Potsdam): Beton	Q1+ -7346,-3808 -7199,-3800 -7195,-3901 -7343,-3
 Newtonstr. (Potsdam): Beton	Q1+ -7830,-3400 -7823,-3580 -7820,-3701 -7819,-3764 -7815,-3805 -7812,-3936 -7805,-4022
 #: note: am südlichen Ende bestätigt, Rest osm
 Uferweg (Stahnsdorf): unbefestigte Straße	Q2 -3174,-1668 -3310,-1517 -3369,-1489 -3430,-1461 -3443,-1430
+Fahrländer Str. (Marquardt): Asphalt	Q0 -19309,5319 -19169,5344 -19096,5354 -18882,5395
+Spielstr. (Marquardt): Asphalt	Q0 -19096,5354 -19196,5374 -19312,5447 -19371,5526
+#: by: osm (vermutlich ist mit "compacted" hier eigentlich "unpaved" gemeint)
+Zum Bahnübergang: unbefestigte Straße	Q2 -18838,5404 -18871,5537 -18722,5775
 ######################### User Contributions #################################
 #: by: osm vvv
 Prieros - Neubrück: Sand	Q3 35093,-21361 34097,-22246
@@ -6762,9 +6769,15 @@ Bahnhofstr. (Stahnsdorf): Asphalt	Q0 -2878,-3004 -2918,-3010 -3004,-3000 -3159,-
 Försterei Zedlitz - Straße nach Krampnitz: wassergebundene Decke	Q1 -10955,3723 -11011,3721 -11156,3523 -11247,3503 -11299,3471 -11334,3365 -11395,3270 -11528,3111
 Straße des Friedens: Betonstraße	Q1- -19186,8685 -19156,8684 -18848,8400 -18331,7751 -18216,7682 -17812,7349
 An den Gleisen: Betonstraße	Q1- -19190,7296 -19195,7358 -19235,7399 -19187,7496 -19186,8685
-Marquardt, Hauptstr.: Kopfsteinpflaster	Q2 -18852,4795 -19159,5077 -19250,5147 -19303,5325 -19356,5480
-Marquardt, Uferweg: Rasenweg	Q2- -18701,4578 -18620,4569 -18371,4555
-Marquardt: Asphalt	Q0 -18184,4168 -18385,4346 -18371,4555
+Marquardt, Hauptstr.: Kopfsteinpflaster	Q2 -18852,4795 -19159,5077 -19250,5147
+#: note: es sieht so aus, als ob der Gehweg für Radfahrer freigegeben ist (per Radroutenbeschilderung)
+Marquardt, Hauptstr.: Kopfsteinpflaster, Gehweg Verbundsteinpflaster	Q2 -19250,5147 -19309,5319
+#: corrected_by: srt
+Marquardt, Hauptstr.: Asphalt	Q0 -19309,5319 -19356,5480
+Marquardt, Uferweg: Rasenweg	Q2- -18701,4578 -18620,4569
+#: corrected_by: srt (Rasenweg, Q2- -> ...)
+Marquardt, Uferweg: Rasenweg, sandige Stellen	Q3+ -18620,4569 -18612,4568 -18375,4543
+Marquardt: Asphalt	Q0 -18210,4192 -18353,4322 -18370,4354 -18382,4389 -18375,4543
 #: note: weiter in Richtung Westen ist dieser Pfad NICHT mehr befahrbar (zu sehr zugewachsen)
 (Pfad am Sacrow-Paretzer Kanal): wassergebundene Decke, teilweise nur Rasen	Q2- -15034,3150 -15047,3330 -15211,3351 -15330,3531 -15464,3624 -15775,3702 -16138,3692
 (Sacrow-Paretzer Kanal - Gutsgarten): zweispuriger Betonplattenweg	Q2+ -16138,3692 -16279,3292
@@ -6776,7 +6789,7 @@ Fritz-von-der-Lancken-Str.: Asphalt	Q0 -13141,1933 -13092,1930 -13044,1931 -1293
 Viereckremise: Asphalt	Q0 -13337,1680 -13339,1762 -13347,1928 -13335,1927 -13272,1927 -13228,1927 -13205,1928 -13141,1933
 Am Golfplatz: Asphalt	Q0 -14382,3066 -13968,2568 -13929,2548
 Am Golfplatz: Beton	Q0 -13929,2548 -13846,2489 -13563,2297
-Am Golfplatz: Asphalt	Q0- -13563,2297 -13200,1980 -13205,1928 -13200,1758
+Am Golfplatz: Asphalt	Q0 -13563,2297 -13200,1980 -13205,1928 -13200,1758
 Nedlitzer Holz: Asphalt	Q0 -13270,1758 -13272,1927
 An der Roten Kaserne: Asphalt	Q0 -13339,1762 -13270,1758 -13200,1758
 #: XXX eventuell anhand Photos genauer kategorisieren: vvv

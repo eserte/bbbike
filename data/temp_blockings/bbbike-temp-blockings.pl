@@ -34787,7 +34787,7 @@ EOF
 #: next_check_id: BRAUNSCHWEIGER-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straﬂe und Zeitzer Straﬂe beendet? Wann wird die Einbahnstraﬂenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
-#: last_checked: 2022-05-28 vvv
+#: last_checked: 2022-06-05 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 #: also_indoor: traffic (G,B) vvv

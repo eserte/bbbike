@@ -163,7 +163,7 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: osm_watch: way id="4323788" version="23"
 #: osm_watch: way id="23109081" version="18"
 #: osm_watch: way id="41108858" version="13"
-#: last_checked: 2022-06-03
+#: last_checked: 2022-06-05
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-05-13
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
@@ -678,7 +678,7 @@ Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1190899.php (zweites 100-Tage-Programm)
 #: osm_watch: way id="151571084" version="18"
 #: osm_watch: way id="169753564" version="20"
-#: last_checked: 2022-05-28
+#: last_checked: 2022-06-05
 #: check_frequency: 90d
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323
 #: by: ^^^
@@ -1936,7 +1936,7 @@ Borsigdamm: Richtung Norden soll ein baulicher Radweg entstehen, Richtung Süden 
 # 
 #: by: https://api.fixmyberlin.de/api/projects/335
 #: osm_watch: way id="4441941" version="20"
-#: last_checked: 2022-06-03
+#: last_checked: 2022-06-05
 #: check_frequency: 360d
 Kohlhasenbrücker Str.: Radverkehrsanlagen sollen erstellt werden	?::projected -7145,-961 -7066,-840 -7042,-724 -7069,-392 -7067,-36 -7050,152 -7050,199 -7067,240 -7078,262 -7123,310 -7167,362 -7180,378 -7178,377
 # 
@@ -2282,6 +2282,10 @@ Bohnsdorfer Kreisel: Bau von Radspuren (mit Grünmarkierung) in beiden Richtungen
 #: check_frequency: 30d
 #: next_check: 2023-03-31
 Wasserweg: wird hier asphaltiert werden? Was ist mit dem "Schlenker" am Spreepark-Eingang?	?::projected 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16161,8852 16201,8860
+# 
+#: by: https://www.infravelo.de/projekt/bulgarische-strasse/ (2. Quartal 2023 - 3. Quartal 2023)
+#: next_check: 2023-09-30
+Bulgarische Str.: Planung einer Fahrradstraße	?::projected 15591,8848 15680,8914 15778,8990
 # 
 # REMOVED (done) --- #: next_check_id: RATHAUSWEDDING-2017 --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.312877.php --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5598.html --- #: XXX Fertigstellung der Platzgestaltung für Ende 2016 vorgesehen --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7007 --- #: XXX Vorschlag für eine Platzbenennung: Elise-und-Otto-Hampel-Platz --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7231 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7807 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8202 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8284 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8306 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/258_2017_ds_255_und_732_benennnung_elise_und_otto_hampel_platz.pdf --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf (Umbenennung) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8798 --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.720802.php --- #: XXX laut osm ist die Umbenennung passiert (changeset von 2018-07-26) --- #: osm_watch: way id="23175110" version="7" --- #: last_checked: 2018-06-08 --- #: check_frequency: 30d --- Rathaus Wedding: Umbenennung zu Elise-und-Otto-Hampel-Weg	? 7012,15571 7129,15686 7115,15702 7129,15717
 # 
@@ -3011,6 +3015,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): Qualität? Ist hier das Radfahren erl
 #: by: https://www.autobahn.de/nord/aktuelles/detail-1/niederlassung-nordost-vergibt-baulos-6-des-16-bauabschnitts-der-a-100-an-das-bauunternehmen-porr-berlin
 #: by: https://berliner-abendblatt.de/2022/03/31/senat-will-weiterbau-der-a100-verhindern/
 #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/bund-gibt-gruenes-licht-fuer-ausbau-der-stadtautobahn-bis-lichtenberg_a342947
+#: by: https://berliner-abendblatt.de/2022/06/05/neuer-vorschlag-von-spd-verkehrsexperte-im-streit-um-a100/
 #: XXX -> strassen_bab-orig, wenn fertig
 #: XXX weitere Änderungen: Matthesstr. wird aufgehoben; vermutlich wird es einen begleitenden Radweg geben (in Höhe Sonnenallee auf der östlichen Seite)
 #: next_check: 2024-12-31
@@ -4516,7 +4521,7 @@ Hermann-Hesse-Str.: geschützte Radfahrstreifen geplant	?::projected 9870,19360 9
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_39_5323_5498_online.pdf
 #: XXX hat das irgendwelche Konsequenzen?
-#: last_checked: 2022-06-04
+#: last_checked: 2022-06-05
 #: check_frequency: 90d
 Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 # 
@@ -7993,7 +7998,7 @@ Eisenhutweg: Wohngebiet mit neuen Privatstraßen (verkehrsberuhigter Bereich) ent
 # REMOVED --- #: osm_watch: way id="812663298" version="2" brb
 #: osm_watch: way id="412161703" version="9" brb
 #: osm_watch: way id="812663297" version="4" brb
-#: last_checked: 2022-05-08
+#: last_checked: 2022-06-05
 #: check_frequency: 360d
 nördlich der Feldmark (Golm): weitere Straßen geplant	?::projected -18587,697 -18262,679 -18254,344 -18629,247 -18587,697
 # 
@@ -8171,12 +8176,14 @@ Ortsumfahrung Ahrensfelde: geplante Straße, vermutlich Kfz-Straße	?::projected 2
 # REMOVED (laut osm offen) --- #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31828 --- #: by: https://www.o-sp.de/download/lbvbrandenburg/141822 --- #: XXX vermutlich mit Radspuren (Schutzstreifen) --- #: osm_watch: way id="28020956" version="10" brb --- #: next_check: 2021-06-01 --- Biomalzspange Teltow: geplante Straße	?::projected -556,-1402 -412,-1540 -347,-1747 -359,-1996
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_06_2019final.pdf
-#: XXX neue Planstraßen fehlen in Potsdam.coords.data, PLZ=14469
+#: XXX neue Planstraßen fehlen in Potsdam.coords.data, PLZ=14469 vvv
 #: XXX Planstraße A: Bonner Str.
+Bonner Str.: Qualität?	? -13418,1576 -13285,1588
 #: XXX Planstraße C1: Hans-Paasche-Str.
-#: XXX Weiterführung der Erich-Arendt-Str.
-#: XXX Weiterführung der Peter-Huchel-Str.
-Rote Kaserne West: neue Straßen	?::projected -13257,1337 -13239,1179 -13375,1330 -13277,1490 -13404,1477
+Hans-Paasche-Str.: Qualität?	? -13422,1383 -13263,1394
+Weiterführung der Erich-Arendt-Str.: Qualität?	? -13420,1478 -13277,1490 -13277,1490
+Weiterführung der Peter-Huchel-Str.: Qualität?	? -13257,1337 -13272,1304 -13424,1290
+#: XXX ^^^
 # 
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan.831484.php
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/5-107_reinplan.pdf
@@ -8568,6 +8575,9 @@ Bebauungsplan 7-95 "Marienhöfe Attilastraße": Wege werden entstehen	?::projected
 #: check_frequency: 180d
 Neuer Uferweg an der Zitadelle: genau Lage?	? -2371,14792 -2248,14865 -2197,14842 -2204,14784
 # 
+#: XXX Potsdam-Marquardt oder Potsdam-Bornim?
+An der Kanalbrücke: befindet sich hier die Straße? Qualität?	? -18547,4524 -18473,4519
+# 
 #: ignore ^^^
 #: section ^^^
 # 
@@ -8578,7 +8588,7 @@ Neuer Uferweg an der Zitadelle: genau Lage?	? -2371,14792 -2248,14865 -2197,1484
 #: XXX_osm: laut osm cobblestone
 #: by: https://www.potsdam.de/sites/default/files/documents/17118_amtsblatt_maerz17_dsjs_korr5_0.pdf
 #: XXX laut Amtsblatt heißt der südliche Teil der Straße "Plattenweg"
-Am Schlänitzsee (Potsdam-Marquardt): Qualität? Wie ist die genaue Lage der Straße?	? -19356,5480 -19454,5465 -19461,5517 -19370,5535
+Am Schlänitzsee (Potsdam-Marquardt): Qualität? Wie ist die genaue Lage der Straße?	? -19356,5480 -19454,5465 -19461,5517 -19374,5533
 #: XXX_osm: laut osm paved
 #: by: https://www.potsdam.de/sites/default/files/documents/17118_amtsblatt_maerz17_dsjs_korr5_0.pdf
 An der Obstplantage (Potsdam-Marquardt): Qualität?	? -19427,5736 -19517,5712 -19543,5849 -19463,5860
@@ -9112,7 +9122,8 @@ Freest - Peenemünde, Fähre (Telefon 038371-20829 oder 0170-1607371): Wann fährt 
 Mückendorf/B96 - Richtung Teupitz: Qualität? Wie geht es in Richtung Teupitz weiter?	? 18001,-35985 18101,-35914 18479,-35645 18936,-35316 19344,-35036 19826,-34707 20021,-34512 20246,-34268 20338,-34165 20618,-33964 20661,-33854
 #: by: Emanuel Schlüßler
 Darwinbogen (Königs Wusterhausen): Qualität (betoniert?)? Mit Radweg oder Radspur? Wie weit Richtung Westen ist die Straßen schon gebaut?	? 24361,-11236 24289,-11236 24131,-11318 23982,-11328
-Zum Bahnübergang (Potsdam-Marquardt): Qualität?	? -18385,4346 -18620,4569
+#: XXX am südöstlichen Ende vermutlich asphaltiert
+Marquardter Str. (Schwarzer Weg): Qualität? Wie lautet der Straßenname?	? -18370,4354 -18387,4354 -18620,4569
 Garz - Korswandt: Qualität? Sind Teile der Strecke für Autos gesperrt?	? 59381,165027 59305,165173 59262,165310 59177,165487 59174,165716 59208,165863
 Trassenheide - Zinnowitz: Qualität? Für Autos befahrbar? Straßennamen?	? 38457,187932 38487,187914 38526,187844 39424,187218 39495,187106 39521,187015 39609,186946 39753,186914 39896,186840 39981,186689 40036,186630 40207,186576 40254,186586 40249,186550 40243,186524 40204,186453 40262,186387 40489,186067 40530,185990 40621,185903 40685,185758 40751,185719
 Döberitzer Str. (Potsdam-Fahrland): Qualität?	? -16182,6673 -16165,6692 -16220,6944 -16244,7050 -16270,7417 -16400,7733
