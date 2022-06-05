@@ -345,7 +345,7 @@ ${PERSISTENTTMPDIR}/inaccessible_landstrassen+fragezeichen: strassen landstrasse
 	    -street landstrassen2 -street faehren -street fragezeichen -blocked gesperrt \
 	    -blockedtype einbahn -blockedtype sperre \
 	    > $@~
-	@if diff inaccessible_landstrassen $@~ | grep '^>' ; then \
+	@if diff inaccessible_landstrassen $@~ | grep -a '^>' ; then \
 	    echo "Please make sure all non-ignored fragezeichen records are connected"; \
 	    false; \
 	fi
