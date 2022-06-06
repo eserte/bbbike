@@ -912,6 +912,7 @@ Mittelstreifen	3nocross::ignrte 6239,15553 6348,15423 6375,15391
 Amrumer Str. -> Ost-West-Str., Virchow-Klinikum: Mittelstreifen	3::igndisp 6375,15391 6348,15423 6265,15349
 Ost-West-Str., Virchow-Klinikum -> Amrumer Str.: Mittelstreifen	3::igndisp 6265,15349 6348,15423 6239,15553
 Sinsheimer Weg	1s 13774,8849 13687,8734
+Stolzenfelsstr.	1 19447,8175 19407,8143
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3210,6 +3211,7 @@ Drängelgitter	BNP:2:-19:trailer=3 -3838,-47018
 zwei Drängelgitter (Z-Anordnung)	BNP:5:-225:trailer=15 18848,3600
 zwei Drängelgitter (Z-Anordnung)	BNP:5:-224:trailer=15 18825,3325
 weites Drängelgitter	BNP:2:75:trailer=7 12614,6301
+Möllhausenufer: Bauarbeiten, Einbahnstraßenregelung	1s 23608,1210 23520,1194
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
 (Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
 Überqueren der Straße vor der Russischen Botschaft nicht möglich	3nocross::ignrte 8804,12280 9028,12307 9141,12320

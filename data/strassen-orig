@@ -344,6 +344,8 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_20_1213_1256_online.pdf (Teileinziehung)
 #: by: https://berliner-abendblatt.de/2022/05/21/kritik-an-autofreier-friedrichstrasse-reisst-nicht-ab/
 #: by: https://berliner-abendblatt.de/2022/05/29/autofreie-friedrichstrasse-kostet-mehr-als-200-000-euro/
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11248 (Anfrage)
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11254 (Antrag)
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: last_checked: 2022-05-31
@@ -4299,7 +4301,7 @@ Alter Wiesenweg	N 1708,16061 1543,16003 1321,15944
 (Uferweg am Hohenzollernkanal - KGA Vor den Toren III)	N 1349,15797 1321,15944 1318,15959 1311,16003
 (KGA Vor den Toren III)	N 1311,16003 1273,16189 1233,16230 1033,16278
 Robert-Schuman-Brücke	N 3753,16638 3788,16621
-Humboldtstr. (Reinickendorf)	N 5225,18070 5536,18234 5860,18400 6060,18534 6153,18592 6217,18619 6296,18638 6306,18673 6314,18705
+Humboldtstr. (Reinickendorf)	NH 5225,18070 5536,18234 5860,18400 6060,18534 6153,18592 6217,18619 6296,18638 6306,18673 6314,18705
 Becherweg	N 6217,18619 6226,18590 6232,18435 6227,18299
 Lübener Weg	N 6403,18289 6353,18292 6314,18295 6227,18299 6131,18302 6045,18305
 Brusebergstr.	N 6383,18033 6307,18039 6145,18016 6115,18042 6086,18162 6045,18305 6060,18534
@@ -4493,6 +4495,7 @@ Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,199
 #: by: https://www.baustellen-doku.info/berlin_heidekrautbahn_reaktivierung_stammstrecke/20210321/ (provisorische Verlegung des Mauerwegs, neu asphaltiert)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5193&date=2021-08-24 (Aufstellung eines Bebauungsplans?)
 #: XXX: bleibt dieser Weg erhalten oder muss er der Heidekrautbahn weichen?
+#: XXX: Bebauungsplan 3-15b
 #: osm_watch: way id="31428032" version="13"
 #: osm_watch: way id="386544517" version="4"
 #: last_checked: 2022-04-23 (mapillary)
@@ -5918,7 +5921,7 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 #: XXX bleibt diese Straße erhalten?
 #: note: mittlerweile Poller am Ende Ecksteinweg, dadurch kann die Ausfahrt zugeparkt sein
 #: osm_watch: way id="33712134" version="5"
-#: last_checked: 2022-04-22 (mapillary)
+#: last_checked: 2022-06-06
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
@@ -7343,6 +7346,7 @@ Waldläuferweg	N 6006,22867 6118,22947
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8590 (Frage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8647 (Frage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8745 (Forderung nach einer Verkehrsuntersuchung)
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10176 (Anfrage)
 #: last_checked: 2020-02-29 (mapillary)
 #: next_check: 2023-01-01
 Alter Bernauer Heerweg	NN 6641,22756 6770,22801
@@ -9691,8 +9695,17 @@ Schalauer Str.	N 17310,26452 17367,26349 17423,26253
 Sudauer Str.	N 17259,26148 17215,26263 17202,26324 17229,26400 17310,26452 17414,26524
 Nadrauer Str.	N 17215,26263 17367,26349
 (Pankeweg)	NN 16580,26154 16616,26158 16655,26127 16686,26128 16895,26295 16928,26311 17043,26407 17363,26609 17381,26585 17414,26524
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6192
+#: XXX Straße soll in "Ilse-Krause-Str." umbenannt werden
+#: next_check: 2022-12-31
 Straße 5 (Buch)	N 17542,26302 17493,26391 17448,26469 17414,26524
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6191
+#: XXX Straße soll in "Rosa-Coutelle-Str." umbenannt werden
+#: next_check: 2022-12-31
 Straße 6 (Buch)	N 17493,26391 17714,26509
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6193
+#: XXX Straße soll in "Rose-Scheuer-Karpin-Str." umbenannt werden
+#: next_check: 2022-12-31
 Straße 7 (Buch)	N 17448,26469 17668,26607
 (Straße 7 - Zepernicker Str.)	N 17668,26607 17714,26509 17764,26410
 (Radweg Berlin-Usedom)	NN 17668,26607 17661,26617 17938,26787 17964,26823
@@ -11146,6 +11159,7 @@ Ilsestr. (Karlshorst, Rummelsburg)	N 18354,9575 18164,9623 18158,9625 18121,9488
 #: note: Beleuchtung existiert
 (Weg 1 im KGA Hochspannung)	NN 18224,9795 18182,9623 18165,9627 18164,9623
 Stolzenfelsstr.	N 19447,8175 19407,8143 19333,8165 19171,8280 18949,8437 18787,8540 18718,8583
+Stolzenfelsstr.	NN 19468,8168 19446,8152 19407,8143
 Theatergasse	N 18787,8540 18846,8616
 Dönhoffstr.	N 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
 Hönower Weg	N 16900,9861 16925,9852 16984,9857 17383,9719 17471,9688 17587,9655 17668,9632 17777,9649 17920,9698 18066,9770 18266,9853
@@ -13391,7 +13405,7 @@ Am Alten Lokschuppen	NN 15730,11279 15708,11193 15752,11115 15805,10949
 (zum Bahnhof Nöldnerplatz)	NN 15805,10949 15859,10970
 (Unterführung S-Bhf. Nöldnerplatz)	NN 15886,10947 15879,10954 15865,10965 15859,10970
 #: next_check_id: SALVADORALLENDEBRUECKE-2017
-#: last_checked: 2022-05-01 (mapillary)
+#: last_checked: 2022-06-06
 #: check_frequency: 120d
 #: next_check: 2022-08-31
 # REMOVED (eventuell nach den Bauarbeiten wieder aktivieren) --- (Salvador-Allende-Str. - An der Müggelspree)	N 23444,4942 23461,4948
@@ -18157,7 +18171,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3651 (beim Bau des R-Bahnhofs Köpenick ggfs. auch Umgestaltung des Elcknerplatzes?)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036553475560/553475560/00071473/73-Anlagen/05/B1481ZB1.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26099.pdf (Anfrage zum Regionalbahnhof Köpenick)
-#: last_checked: 2022-05-01 (mapillary)
+#: last_checked: 2022-06-06
 #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044
 Parrisiusstr.	N 22358,5918 22531,5871 22631,5866 22766,5840 22819,5812 22885,5835

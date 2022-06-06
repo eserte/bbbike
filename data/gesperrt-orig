@@ -74,6 +74,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (geschützter Radstreifen?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8198 (Festsetzung des Bebauungsplans)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136955038359/955038359/00392647/47-Anlagen/02/Anl1_XI-231aba_Planzeichnung.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8374 (Festsetzung)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: osm_watch: way id="152264786" version="18"
 #: last_checked: 2022-06-04
@@ -1191,7 +1192,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="12"
-#: last_checked: 2022-04-23 (mapillary)
+#: last_checked: 2022-06-06
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -1411,6 +1412,7 @@ Birkbuschstr. - Wolfensteindamm	1 4794,5161 4810,5134 4822,5114
 (S-Bhf. Raoul-Wallenberg-Str. - Raoul-Wallenberg-Str.)	1::igndisp 20212,16252 20116,16228
 Amrumer Str.: Mittelstreifen	3nocross 6239,15553 6348,15423 6375,15391
 Sinsheimer Weg	1s:q4 13774,8849 13687,8734
+Stolzenfelsstr.	1 19447,8175 19407,8143
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -2637,7 +2639,7 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml ("bauliche Anpassungen")
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve_hebammensteigbruecke.shtml (Ertüchtigungsmaßnahmen)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/richtung-blankenburg-das-fahrrad-schieben_a255205
-#: osm_watch: way id="43205335" version="2"
+#: osm_watch: way id="43205335" version="3"
 # REMOVED --- #: last_checked: 2019-10-26 (wosch) (keine Anzeichen für Bauarbeiten) --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-01-01
 #: last_checked: 2022-03-19 (mapillary)
@@ -3395,6 +3397,14 @@ weites Drängelgitter	BNP:2::trailer=7 12614,6301
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX laut Schild der Wasserbetriebe bis April 2023; Einbahnstraßenregelung fängt schon 30m westlich der Einmündung Zum Langen See an
+#: XXX man kommt als Radfahrer aber recht gut vorbei
+#: last_checked: 2022-06-06
+#: check_frequency: 180d
+#: next_check: 2023-04-30
+#: valid: -20230531
+Möllhausenufer: Bauarbeiten, Einbahnstraßenregelung	1s:q3 23608,1210 23520,1194
+# 
 #: next_check_id: DRESDNERBAHN-2021
 #: XXX Ursprünglich wurde 08/2021 als Beginn geplant, das hat sich aber um einen Monat verschoben --- vielleicht das Ende auch?
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20220111 (bis Ende 2023)
@@ -3573,7 +3583,7 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 #: osm_watch: way id="4045220" version="46"
 #: osm_watch: way id="938037386" version="2"
 #: osm_watch: way id="868103791" version="2"
-#: last_checked: 2022-03-13
+#: last_checked: 2022-06-06
 #: check_frequency: 90d
 Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9532
 # 
@@ -3619,7 +3629,7 @@ Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
 #: osm_watch: way id="610818155" version="4"
-#: last_checked: 2022-05-18
+#: last_checked: 2022-06-06
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
@@ -3661,7 +3671,7 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 #: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
-#: last_checked: 2022-06-04 vvv
+#: last_checked: 2022-06-06 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2022-07-01 vvv
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
@@ -3750,7 +3760,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-05-18
+#: last_checked: 2022-06-06
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -3819,6 +3829,7 @@ Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3
 # 
 #: XXX wann wird der Weg wiederhergestellt, wenn überhaupt?
 #: by: https://www.deutsches-architekturforum.de/thread/9401-wasserstadt-stralau-kleine-und-gr%C3%B6%C3%9Fere-projekte/?postID=653296#post653296 (Bauarbeiten bis Ende September 2021)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10418 (vermutlich keine öffentliche Durchwegung)
 #: osm_watch: way id="541556560" version="4"
 #: last_checked: 2022-05-07
 #: check_frequency: 60d
@@ -4059,7 +4070,7 @@ Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
 #: osm_watch: way id="226163591" version="5"
 #: priority: #C
-#: last_checked: 2022-01-27 (krickstadt)
+#: last_checked: 2022-06-06
 #: check_frequency: 360d
 #: next_check: 2022-12-20
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521

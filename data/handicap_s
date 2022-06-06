@@ -1313,8 +1313,8 @@ Eyke-von-Repkow-Platz: einige Fußgänger, Bordsteine	q3 5556,12536 5531,12501
 (Kolonie Sanssouci): einige Fußgänger	q1 16488,10381 16375,10545 16288,10637 16265,10628 16246,10641
 (Kolonie Sanssouci): einige Fußgänger	q1 16288,10637 16265,10681
 Müggelstr., Hausdurchfahrt: einige Fußgänger	q3 14837,11706 14858,11744
-(Bushaltestelle und Straßenbahnwendestelle Schöneweide): Bus- und Straßenbahnverkehr	q2 17736,5441 17675,5521
-(Bushaltestelle und Straßenbahnwendestelle Schöneweide): Bus- und Straßenbahnverkehr, Gehweg, Bordsteine	q4 17675,5521 17588,5573 17578,5566
+(Straßenbahnwendestelle Schöneweide): Straßenbahnverkehr	q3 17736,5441 17675,5521
+(Straßenbahnwendestelle Schöneweide): Straßenbahnverkehr, Gehweg, Bordsteine	q4 17675,5521 17588,5573 17578,5566
 (Fröbel-Kindergarten - Oststr.): Fußgänger, Kindergarten	q3 17416,5388 17455,5355
 (Schönburger Str. - Bosestr./Blumenthalstr.): Radfahren verboten, Bordsteine an beiden Enden	q4 8953,6492 8930,6295
 (Prühßstr. - Rixdorfer Str.): getrennter Rad- und Gehweg, einige Fußgänger	q1 9869,4271 9965,4299 10051,4295 10140,4280 10221,4245
@@ -1656,6 +1656,7 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 (Zufahrt zum Stadtbad Tiergarten): Parkplatzverkehr	q2 7332,13367 7306,13418
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): Fußgänger	q1 21992,13045 22141,13036 22171,12965
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): enge Brücke, Fußgänger	q3 22171,12965 22196,12961
+Stolzenfelsstr.: Gehweg für Radfahrer frei	q2 19468,8168 19446,8152 19407,8143
 Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19407,8143 19333,8165 19171,8280 18949,8437 18787,8540
 Kunkelstr.: einige Fußgänger, Bordstein	q2 8229,15128 8227,15075
 Erich-Lodemann-Str.: einige Fußgänger, Rampe	q2 15288,8134 15242,8182
@@ -1880,7 +1881,7 @@ Pepitapromenade: einige Fußgänger	q1 -2856,17489 -2873,17369 -2878,17324
 (Park am Klötzebecken): Bordstein	q1 5815,22870 5926,22738
 (am Packereigraben): einige Fußgänger	q1 6924,21550 6958,21549 7074,21513 7161,21494 7261,21504 7447,21509
 (Gandenitzer Weg - Quickborner Str.): einige Fußgänger	q1 7549,21524 7713,21484 7782,21508 7802,21553 7853,21557 7939,21600
-Salvador-Allende-Str. [Zufahrt zum Krankenhaus]: einige Fußgänger	q2 23448,4145 23453,4181
+Salvador-Allende-Str. [Zufahrt zum Krankenhaus]: einige Fußgänger, Bordstein	q3 23448,4145 23453,4181
 Fasanenplatz, östliche Fahrbahn: einige Fußgänger, Bordsteine	q2 5220,10192 5229,10210 5223,10243
 Admiralstr.: Fußgänger, Bodenschwellen	q2 11244,10111 11274,10184
 Innsbrucker Platz - Eisackstr.: Bordstein	q1 6418,7958 6429,7876
@@ -2071,7 +2072,7 @@ Einstein-Park: Fußgänger, Radfahren offiziell verboten, flacher Bordstein am Sto
 (Lehrter Str. - Klara-Franke-Str.): Fußgänger	q2 7438,13930 7493,13918
 (Fußweg 552 - Straße 567a): enger Pfad	q3 29930,3450 29947,3464
 (Mausohrweg - Hessenwinkler Str.): hohe Stufe an der Hessenwinkler Str.	q4 33503,2818 33531,2808
-(Hoppendorfer Str. - Wuhlewanderweg): einige Fußgänger	q1 21592,7640 21609,7579
+(Hoppendorfer Str. - Wuhlewanderweg): einige Fußgänger, niedriger Bordstein	q3 21592,7640 21609,7579
 (Innovationspark Wuhlheide - Wuhlewanderweg): einige Fußgänger	q1 21491,7182 21547,7208
 (Innovationspark Wuhlheide - Wuhlewanderweg): einige Fußgänger, eng	q2 21547,7208 21542,7246 21569,7252
 (Weg im erweiterten Mauerpark): Fußgänger	q2 10235,14934 10215,14977 10192,14967
@@ -3218,6 +3219,7 @@ Ludolfinger Platz: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp;
 Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17729,10331 17741,10386
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
+Möllhausenufer: Bauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 23608,1210 23520,1194
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 8266,14346 8442,14456
 (Planstraße C): Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12848,11093 12926,11224
 Hönower Str.: temporäre Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 18735,9421 18765,9426 18846,9532

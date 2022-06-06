@@ -2722,8 +2722,8 @@ Eyke-von-Repkow-Platz: einige Fußgänger, Bordsteine	q3 5556,12536 5531,12501
 (Kolonie Sanssouci): einige Fußgänger	q1 16488,10381 16375,10545 16288,10637 16265,10628 16246,10641
 (Kolonie Sanssouci): einige Fußgänger	q1 16288,10637 16265,10681
 Müggelstr., Hausdurchfahrt: einige Fußgänger	q3 14837,11706 14858,11744
-(Bushaltestelle und Straßenbahnwendestelle Schöneweide): Bus- und Straßenbahnverkehr	q2 17736,5441 17675,5521
-(Bushaltestelle und Straßenbahnwendestelle Schöneweide): Bus- und Straßenbahnverkehr, Gehweg, Bordsteine	q4 17675,5521 17588,5573 17578,5566
+(Straßenbahnwendestelle Schöneweide): Straßenbahnverkehr	q3 17736,5441 17675,5521
+(Straßenbahnwendestelle Schöneweide): Straßenbahnverkehr, Gehweg, Bordsteine	q4 17675,5521 17588,5573 17578,5566
 (Fröbel-Kindergarten - Oststr.): Fußgänger, Kindergarten	q3 17416,5388 17455,5355
 #: XXX_prog: BS (2x)
 (Schönburger Str. - Bosestr./Blumenthalstr.): Radfahren verboten, Bordsteine an beiden Enden	q4 8953,6492 8930,6295
@@ -3060,7 +3060,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="9"
-#: last_checked: 2022-03-13
+#: last_checked: 2022-06-04 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-09-02
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18634,5484 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
@@ -3185,6 +3185,7 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 (Zufahrt zum Stadtbad Tiergarten): Parkplatzverkehr	q2 7332,13367 7306,13418
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): Fußgänger	q1 21992,13045 22141,13036 22171,12965
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): enge Brücke, Fußgänger	q3 22171,12965 22196,12961
+Stolzenfelsstr.: Gehweg für Radfahrer frei	q2 19468,8168 19446,8152 19407,8143
 Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19407,8143 19333,8165 19171,8280 18949,8437 18787,8540
 # REMOVED --- #: next_check_id: KARLSHORST-2019 --- #: XXX nach den Bauarbeiten am Bhf. Karlshorst wieder den alten Eintrag (siehe oben) wiederherstellen --- #: last_checked: 2020-08-21 --- #: check_frequency: 90d --- #: next_check: 2020-07-23 --- Stolzenfelsstr.: Bauarbeiten, für Radfahrer offener Gehweg nun gesperrt	q4; 18949,8437 18787,8540
 #: XXX_prog BS Bordstein am südlichen Ende, ansonsten q1
@@ -3478,7 +3479,8 @@ Pepitapromenade: einige Fußgänger	q1 -2856,17489 -2873,17369 -2878,17324
 (Park am Klötzebecken): Bordstein	q1 5815,22870 5926,22738
 (am Packereigraben): einige Fußgänger	q1 6924,21550 6958,21549 7074,21513 7161,21494 7261,21504 7447,21509
 (Gandenitzer Weg - Quickborner Str.): einige Fußgänger	q1 7549,21524 7713,21484 7782,21508 7802,21553 7853,21557 7939,21600
-Salvador-Allende-Str. [Zufahrt zum Krankenhaus]: einige Fußgänger	q2 23448,4145 23453,4181
+#: XXX_prog: BS an der Zufahrtsstraße, ansonsten q2
+Salvador-Allende-Str. [Zufahrt zum Krankenhaus]: einige Fußgänger, Bordstein	q3 23448,4145 23453,4181
 #: XXX_prog: BS (halbhoch) an beiden Seiten, ansonsten q1
 Fasanenplatz, östliche Fahrbahn: einige Fußgänger, Bordsteine	q2 5220,10192 5229,10210 5223,10243
 #: note: wenig Platz neben den Bodenschwellen
@@ -3749,7 +3751,8 @@ Einstein-Park: Fußgänger, Radfahren offiziell verboten, flacher Bordstein am Sto
 (Fußweg 552 - Straße 567a): enger Pfad	q3 29930,3450 29947,3464
 #: XXX_prog: BS (ansonsten q2 oder q1)
 (Mausohrweg - Hessenwinkler Str.): hohe Stufe an der Hessenwinkler Str.	q4 33503,2818 33531,2808
-(Hoppendorfer Str. - Wuhlewanderweg): einige Fußgänger	q1 21592,7640 21609,7579
+#: XXX_prog: BS (ansonsten q1)
+(Hoppendorfer Str. - Wuhlewanderweg): einige Fußgänger, niedriger Bordstein	q3 21592,7640 21609,7579
 (Innovationspark Wuhlheide - Wuhlewanderweg): einige Fußgänger	q1 21491,7182 21547,7208
 (Innovationspark Wuhlheide - Wuhlewanderweg): einige Fußgänger, eng	q2 21547,7208 21542,7246 21569,7252
 (Weg im erweiterten Mauerpark): Fußgänger	q2 10235,14934 10215,14977 10192,14967
