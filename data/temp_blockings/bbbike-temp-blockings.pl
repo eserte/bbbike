@@ -33305,8 +33305,8 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden) --- mittlerweile ist der Bürgersteig frei
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-06-06
-#: check_frequency: 14d
+#: last_checked: 2022-06-07
+#: check_frequency: 7d
 #: next_check: 2022-06-20
 	q2::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="8"
@@ -34465,14 +34465,13 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 EOF
      },
      { from  => 1642917600, # 2022-01-23 07:00
-       until => $isodate2epoch->("2022-06-03 17:00:00"), # 1653663600, # 2022-05-27 17:00
-       text  => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., vom 24.01.2022 07:00 bis 03.06.2022 17:00',
+       until => $isodate2epoch->("2022-06-30 17:00:00"), # 1653663600, # 2022-05-27 17:00
+       text  => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., vom 24.01.2022 07:00 bis 30.06.2022 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.445809,52.479541,24.01.2022,07:00',
        data  => <<EOF,
-#: XXX: laut rbb sogar bis 7.6.2022
 #: also_indoor: traffic (G,ex-H,B)
-#: next_check: 2022-06-03
+#: next_check: 2022-06-30
 	q4::inwork 13277,8211 13331,8283
 EOF
      },
@@ -35211,6 +35210,7 @@ EOF
        data  => <<EOF,
 #: by: https://nitter.net/Wikinaut/status/1531539956694384640#m (hier: drei Wochen)
 #: by: https://nitter.net/Wikinaut/status/1532016521706348547#m (Durchfahrt für Radfahrer wieder möglich)
+#: source_id: viz2021:13.33278,52.47874,07.06.2022,22:05 (bis 1.7.2022, keine Aussage zum Radverkehr)
 # REMOVED --- #: XXX wird hier noch eine bessere Lösung für Radfahrer gefunden? --- #: next_check: 2022-06-01
 	q4::inwork 5631,8011 5631,8141
 EOF

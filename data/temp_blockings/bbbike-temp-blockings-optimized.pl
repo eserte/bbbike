@@ -5264,8 +5264,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden) --- mittlerweile ist der Bürgersteig frei
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-06-06
-#: check_frequency: 14d
+#: last_checked: 2022-06-07
+#: check_frequency: 7d
 #: next_check: 2022-06-20
 	q2::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="8"
@@ -5681,7 +5681,18 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1672466400
        },
-       undef,
+       {
+         'data' => '#: also_indoor: traffic (G,ex-H,B)
+#: next_check: 2022-06-30
+	q4::inwork 13277,8211 13331,8283
+',
+         'from' => 1642917600,
+         'id' => 3503,
+         'source_id' => 'viz2021:13.445809,52.479541,24.01.2022,07:00',
+         'text' => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., vom 24.01.2022 07:00 bis 30.06.2022 17:00',
+         'type' => 'handicap',
+         'until' => 1656601200
+       },
        {
          'data' => '#: next_check_id: ZWIESELER-2022
 #: XXX Stand 2022-01-21: Verbotsschild für Fußgänger am nördlichen Ende, Verbot für Fahrzeuge aller Art außer Grundstücksanlieger am südlichen Ende, man kann aber trotzdem passieren. Stand 2022-02-26: Passieren weiterhin möglich.
