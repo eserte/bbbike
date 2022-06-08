@@ -59,7 +59,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2022-06-06 vvv
+#: last_checked: 2022-06-08 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -226,8 +226,8 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 #: next_check_id: KARLSHORSTER-2021
 #: note: provisorische Ampel
 #: last_checked: 2022-06-07
-#: next_check: 2022-06-20
-#: valid: 20210302-20220620
+#: next_check: 2022-08-01
+#: valid: 20210302-20220801
 	X::inwork 14805,10518
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
@@ -1144,7 +1144,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3127,9522
 	X 15303,8343
 	X 15557,8077
-	X 14051,6731
+# REMOVED (existiert mittlerweile nicht mehr) ---	X 14051,6731
 # REMOVED (existiert nun nicht mehr) --- #: XXX_prog: für Radfahrer auf dem Rad/Gehweg nicht relevant ---	X 14106,6663
 #: XXX_prog: Anforderung für Radfahrer aus "Am Oberhafen"
 	X 13712,6656
@@ -2443,12 +2443,12 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
-#: last_checked: 2022-05-28
+#: last_checked: 2022-06-08
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
-#: last_checked: 2022-06-06
+#: last_checked: 2022-06-08
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746
@@ -3102,15 +3102,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
-#: XXX temporäre Ampel (wegen Arbeiten an der U-Bahn)
+#: XXX temporäre Ampel (wegen Arbeiten an der U-Bahn + Schlossplatz)
 #: XXX_prog Anforderungsampel
-#: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
-#: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: osm_watch: node id="5931765487" version="5"
 #: osm_watch: node id="5931765488" version="5"
 #: last_checked: 2022-05-10 (mapillary)
 #: check_frequency: 30d
-	F::inwork 9984,12426
+	F::inwork 10024,12431
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
@@ -3272,8 +3270,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked ^^^
 # REMOVED --- #: note: Anforderungsampel --- #: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen --- #: last_checked: 2021-04-04 ---	F::inwork 14239,6875
 #: note: Anforderungsampel
-#: last_checked: 2022-04-18
+#: last_checked: 2022-06-08
 	F::inwork 14139,6786
+#: note: Anforderungsampel
+#: last_checked: 2022-06-08
+	F::inwork 13979,6700
 #: next_check ^^^
 #: valid ^^^
 #: next_check_id ^^^
@@ -3298,9 +3299,14 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2022-05-10
+#: last_checked: 2022-06-08
 #: check_frequency: 60d
 	X::inwork 14174,7505
+# 
+#: next_check_id: BAB100-2022
+#: last_checked: 2022-06-08
+#: check_frequency: 90d
+	X::inwork 14334,7395
 # 
 # REMOVED -- #: note: Baustellenstraße kreuzt ---	X::inwork 14369,7376
 # REMOVED --- #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, wahrscheinlich keine Einschränkung für Radfahrer Richtung Nordwesten --- #: note: Anforderungsampel --- F::inwork
@@ -3499,7 +3505,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2022-05-15
+#: last_checked: 2022-06-08
 #: check_frequency: 90d
 	X::inwork 12185,7381
 # 
@@ -3529,7 +3535,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: BERLINERBAHNHOF-2020
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6134 (Antrag) (im Ausschuss abgelehnt)
 #: XXX wird die provisorische Ampelanlage in eine permanente umgebaut? vvv
-#: last_checked: 2022-04-17 (mapillary) vvv
+#: last_checked: 2022-06-06 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166

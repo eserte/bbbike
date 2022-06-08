@@ -5199,8 +5199,34 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
+#: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
+#: XXX Spielstraße ab 2023 vom 15.05.
+#: next_check: 2022-06-12
+	q4::temp::play 11917,9663 12074,9689
+',
+         'from' => 1654898400,
+         'id' => 3376,
+         'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
+         'text' => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 12.06. bis 15.09.',
+         'type' => 'handicap',
+         'until' => 1663257600
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
+#: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
+#: XXX Spielstraße ab 2023 vom 15.05.
+#: next_check: 2022-06-19
+	q4::temp::play 13038,8394 12856,8344
+',
+         'from' => 1655503200,
+         'id' => 3377,
+         'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
+         'text' => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 19.06. bis 15.09.',
+         'type' => 'handicap',
+         'until' => 1663257600
+       },
        undef,
        undef,
        undef,
@@ -5265,8 +5291,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden) --- mittlerweile ist der Bürgersteig frei
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
 #: last_checked: 2022-06-07
-#: check_frequency: 7d
-#: next_check: 2022-06-20
+#: check_frequency: 14d
+#: next_check: 2022-08-01
 	q2::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="8"
 	q3::inwork 15279,10862 15355,10875
@@ -5275,9 +5301,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1625734800,
          'id' => 3411,
          'source_id' => 'viz2021:13.475242,52.50154,09.07.2021,11:00',
-         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr., noch geringe Einschränkungen; außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
+         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr., noch geringe Einschränkungen; außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), vom 09.07.2021 11:00 bis voraussichtlich 01.08.2022',
          'type' => 'gesperrt',
-         'until' => 1655737200
+         'until' => 1659366000
        },
        undef,
        undef,
@@ -5585,13 +5611,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: also_indoor: traffic (ex-B)
 #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18 ebenso
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: last_checked: 2022-04-18
-#: check_frequency: 30d
-	q4::inwork 13355,6235 13227,6209 13220,6237
+#: last_checked: 2022-06-08
+#: check_frequency: 60d
+#: next_check: 2022-08-31
+# REMOVED (hier nicht mehr) ---	q4::inwork 13355,6235 13227,6209 13220,6237
+	q4::inwork 13027,6168 13227,6209
 ',
          'from' => undef,
          'id' => 3496,
-         'text' => 'Jahnstr. und Priesterweg: Bauarbeiten, Fahrbahn kann gesperrt sein, Ende der Bauarbeiten unbekannt',
+         'text' => 'Jahnstr.: zwischen Priesterweg und Rungiusstr. Bauarbeiten, Fahrbahn kann gesperrt sein, voraussichtlich bis Ende August 2022',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5683,13 +5711,14 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: also_indoor: traffic (G,ex-H,B)
+#: last_checked: 2022-06-08
 #: next_check: 2022-06-30
 	q4::inwork 13277,8211 13331,8283
 ',
          'from' => 1642917600,
          'id' => 3503,
          'source_id' => 'viz2021:13.445809,52.479541,24.01.2022,07:00',
-         'text' => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., vom 24.01.2022 07:00 bis 30.06.2022 17:00',
+         'text' => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., Fahrbahn gesperrt, vom 24.01.2022 07:00 bis 30.06.2022 17:00',
          'type' => 'handicap',
          'until' => 1656601200
        },
@@ -5971,7 +6000,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: XXX Bleibt es bei der möglichen Durchfahrt?
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2022-05-10
+#: last_checked: 2022-06-08
 	2 14249,8075 14239,8095 14247,8254 14229,8278
 ',
          'from' => undef,
@@ -6037,29 +6066,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => 1667232000
        },
        undef,
-       {
-         'data' => '#: next_check_id: WESER-2021
-#: by: https://www.kms-sonne.de/projekte/weserstrasse/ (Austausch einer Abwasserdruckleitung zwischen Innstraße und Treptower Straße, hier: ab Februar 2022)
-#: XXX Bis wann gehen die Bauarbeiten? Haben die Bauarbeiten etwas mit der Umgestaltung der Weserstraße zu tun? vvv
-#: osm_watch: way id="799282063" version="8"
-#: osm_watch: way id="36738531" version="34"
-#: also_indoor: traffic (G) vvv
-#: last_checked: 2022-05-01 vvv
-#: check_frequency: 30d vvv
-	q4::inwork; 13217,8493 13384,8354
-#: note: Radweg existiert noch, aber etwas enger durch Baustellenabsperrungen
-	q2::inwork; 13384,8354 13217,8493
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: XXX ^^^
-',
-         'from' => undef,
-         'id' => 3538,
-         'text' => 'Weserstr.: Bauarbeiten östlich der Innstr., Fahrbahn gesperrt, Radweg Richtung Osten gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (G,H,B)
 #: XXX kommt es zu einer Verlängerung der Bauarbeiten?
@@ -6218,6 +6225,26 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Seydlitzstr.: Bauarbeiten zwischen Frobenstr. und Havensteinstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork; 25579,5958 26080,5946
+',
+         'from' => 1654678800,
+         'id' => 3558,
+         'source_id' => 'viz2021:13.625514,52.456971,09.06.2022,11:00',
+         'text' => 'Fürstenwalder Damm. Fahrbahn ab Bölschstraße stadtauswärts gesperrt, vom 09.06.2022 11:00 bis 23.06.2022 17:00',
+         'type' => 'handicap',
+         'until' => 1655996400
+       },
+       {
+         'data' => '	q4::inwork 9011,14019 8870,13926
+',
+         'from' => 1655010000,
+         'id' => 3559,
+         'source_id' => 'viz2021:13.38248,52.53138,13.06.2022,07:00',
+         'text' => 'Zinnowitzer Str.: zwischen Chausseestr. und Am Nordbahnhof gesperrt, auch für den Radverkehr, vom 13.06.2022 07:00 bis 29.06.2022 17:00',
+         'type' => 'handicap',
+         'until' => 1656514800
        }
      
 );

@@ -3620,7 +3620,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung)
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht außerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht
-#: osm_watch: way id="308312347" version="3"
+#: osm_watch: way id="308312347" version="4"
 #: last_checked: 2022-05-25 (daf)
 #: check_frequency: 90d
 #: next_check: 2022-08-15
@@ -3651,10 +3651,12 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 # 
 #: next_check_id: MITTEL-2019
 #: source_id: IM_020714
-#: osm_watch: way id="690322561" version="3"
+#: osm_watch: way id="690322561" version="4"
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
+#: XXX laut osm offen
 #: also_indoor: traffic (G,H)
 #: last_checked: 2022-05-19
+#: next_check: 2022-06-07
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
@@ -4097,12 +4099,12 @@ Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.) (mittlerweile inaktiv)
 #: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022)
 #: note: laut rbb ebenfalls bis 30.9.2022
-#: osm_watch: way id="43233756" version="19"
+#: osm_watch: way id="43233756" version="20"
 #: osm_watch: way id="681299268" version="2"
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2022-05-12 vvv
+#: last_checked: 2022-06-07 (osm) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -4413,7 +4415,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: osm_watch: way id="846595294" version="6"
 #: osm_watch: way id="38725490" version="15"
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-04-08
+#: last_checked: 2022-06-08
 #: check_frequency: 90d
 #: next_check: 2022-12-31
 Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14051,6731 14106,6663 14150,6609
@@ -4422,7 +4424,7 @@ Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14051,6731 1410
 #: source_id: 2147343691 (bis 1.9.2022, Gesamtbaumaßnahme bis Ende 2022) (zwischendurch inaktiv, jetzt wieder da)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-04-18
+#: last_checked: 2022-06-08
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
@@ -4516,7 +4518,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: XXX Eröffnung 2020 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
 #: by: https://de.wikipedia.org/wiki/Berliner_Schloss?date=20181114 (Eröffnungstermin)
-#: by: https://cam01.berlinerschloss-webcam.de/ (Webcam)
+# REMOVED (keine neuen Bilder mehr) --- #: by: https://cam01.berlinerschloss-webcam.de/ (Webcam)
 #: by: https://www.tagesspiegel.de/berlin/nicht-mehr-2019-eroeffnung-des-humboldt-forums-wird-verschoben/24448118.html
 #: by: https://www.humboldtforum.org/de/inhalte/stand-der-baumassnahme-humboldt-forum-im-berliner-schloss (Eröffnung 2020)
 #: by: https://www.rbb24.de/kultur/thema/2020/coronavirus/beitraege_neu/2020/05/humboldt-forum-eroeffnung-verschoben-berlin.html (Teileröffnung Ende 2020?)
@@ -4526,7 +4528,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Eröffnung am 17.12.2020)
 #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Eröffnung wird verschoben)
 #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauzäune werden im Dezember 2020 teilweise abgebaut)
-#: last_checked: 2022-05-10 (mapillary)
+#: last_checked: 2022-05-11 (mapillary)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384
