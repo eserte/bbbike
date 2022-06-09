@@ -4688,7 +4688,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-06-06 vvv
+#: last_checked: 2022-06-09 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4842,7 +4842,21 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/2020/09/vorschau-05_06-09-2020/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1111500.php
+	q4::temp 16507,7254 16428,7144
+	q4::temp; 16428,7144 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
+	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16136,7886 16406,7430 16507,7254 16633,7434 16673,7511
+	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
+	q4::temp 15778,8990 15680,8914 15591,8848
+',
+         'from' => 1654812000,
+         'id' => 3274,
+         'text' => 'Köpenicker Landstraße, Neue Krugallee, Bulgarische Straße, Uferweg Plänterwald: wegen des Berlin-Triathlons Sperrungen, evtl. auch für Radfahrer gültig, am 11.6.2022 ab 16:00 Uhr und am 12.6.2022 von 6:00 bis 18:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1655049600
+       },
        undef,
        undef,
        undef,
@@ -5710,17 +5724,18 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => 1672466400
        },
        {
-         'data' => '#: also_indoor: traffic (G,ex-H,B)
+         'data' => '#: source_id: viz2021:13.445912,52.478966,13.06.2022,07:00 (zusätzliche Meldung zur Sonnenallee)
+#: also_indoor: traffic (G,ex-H,B)
 #: last_checked: 2022-06-08
-#: next_check: 2022-06-30
+#: next_check: 2022-08-13
 	q4::inwork 13277,8211 13331,8283
 ',
          'from' => 1642917600,
          'id' => 3503,
          'source_id' => 'viz2021:13.445809,52.479541,24.01.2022,07:00',
-         'text' => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., Fahrbahn gesperrt, vom 24.01.2022 07:00 bis 30.06.2022 17:00',
+         'text' => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., Fahrbahn gesperrt, vom 24.01.2022 07:00 bis 13.08.2022 17:00',
          'type' => 'handicap',
-         'until' => 1656601200
+         'until' => 1660402800
        },
        {
          'data' => '#: next_check_id: ZWIESELER-2022
@@ -6011,22 +6026,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1510640770461671434#m
-#: by: https://nitter.net/pic/media%2FFPMDmJMXoAcscus.jpg%3Fname%3Dorig
-#: by: https://nitter.net/pic/media%2FFPMDmJMX0AMSw_N.jpg%3Fname%3Dorig
-#: by: https://viz.berlin.de/2022/05/verkehrsvorschau-050522/ (Unterbrechung während des Bölschestraßenfests)
-#: source_id: viz2021:13.618661,52.455532,09.05.2022,06:00
-#: confirmed_by: srt
-	q4::inwork; 25567,5749 25479,5753 25294,5761 25123,5767 25121,5795
-',
-         'from' => 1648962000,
-         'id' => 3533,
-         'source_id' => 'viz2021:13.618661,52.455532,04.04.2022,07:00',
-         'text' => 'Lindenstr. (Friedrichshagen): temporäre Einbahnstraßenregelung, vom 04.04.2022 07:00 bis 09.06.2022 17:00',
-         'type' => 'handicap',
-         'until' => 1654786800
-       },
+       undef,
        undef,
        {
          'data' => '#: add_fragezeichen: Bis wann gehen die Bauarbeiten? Ist der Kroppenstedtweg danach komplett asphaltiert?
@@ -6126,8 +6126,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 	q4::inwork 14558,16907 14528,16910
 	q3::inwork 14528,16910 14341,17030
 #: XXX hier (Bernkastler Str.) nur bis 12.6.2022
-#: source_id: viz2021:13.467365,52.557032,30.05.2022,07:00 (Bernkastler Str. 30.5.2022 bis 12.6.2022)
-#: next_check: 2022-06-12
+#: source_id: viz2021:13.467365,52.557032,30.05.2022,07:00 (Bernkastler Str. 30.5.2022 bis 12.6.2022) (bis 13.6.2022)
+#: next_check: 2022-06-13
 	q3::inwork 14558,16907 14673,16895
 ',
          'from' => 1651960800,
@@ -6227,7 +6227,10 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => undef
        },
        {
-         'data' => '	q4::inwork; 25579,5958 26080,5946
+         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1534754662301171713#m
+#: by: https://nitter.net/pic/orig/media%2FFUvPeV8WQAEuiW4.jpg
+#: by: https://nitter.net/pic/orig/media%2FFUvO7u4WAAw1fjO.jpg
+	q4::inwork; 25579,5958 26080,5946
 ',
          'from' => 1654678800,
          'id' => 3558,

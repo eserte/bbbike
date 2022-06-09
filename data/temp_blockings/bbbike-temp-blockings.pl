@@ -31158,7 +31158,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-06-06 vvv
+#: last_checked: 2022-06-09 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -31625,9 +31625,9 @@ EOF
 	q3::inwork 17631,3200 17894,2783
 EOF
      },
-     { from  => $isodate2epoch->("2021-07-30 12:00:00"), # 1599213600, # 2020-09-04 12:00
-       until => $isodate2epoch->("2021-08-01 18:00:00"), # 1599408000, # 2020-09-06 18:00
-       text  => 'Köpenicker Landstraße, Neue Krugallee, Bulgarische Straße, Uferweg Plänterwald: wegen des Berlin-Triathlons Sperrungen, evtl. auch für Radfahrer gültig, am 31.7.2021 von 12:00 bis 21:00 Uhr und am 1.8.2021 von 6:30 bis 18:00 Uhr',
+     { from  => $isodate2epoch->("2022-06-10 00:00:00"), # 1599213600, # 2020-09-04 12:00
+       until => $isodate2epoch->("2022-06-12 18:00:00"), # 1599408000, # 2020-09-06 18:00
+       text  => 'Köpenicker Landstraße, Neue Krugallee, Bulgarische Straße, Uferweg Plänterwald: wegen des Berlin-Triathlons Sperrungen, evtl. auch für Radfahrer gültig, am 11.6.2022 ab 16:00 Uhr und am 12.6.2022 von 6:00 bis 18:00 Uhr',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://viz.berlin.de/2020/09/vorschau-05_06-09-2020/
@@ -34475,14 +34475,15 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 EOF
      },
      { from  => 1642917600, # 2022-01-23 07:00
-       until => $isodate2epoch->("2022-06-30 17:00:00"), # 1653663600, # 2022-05-27 17:00
-       text  => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., Fahrbahn gesperrt, vom 24.01.2022 07:00 bis 30.06.2022 17:00',
+       until => $isodate2epoch->("2022-08-13 17:00:00"), # 1653663600, # 2022-05-27 17:00
+       text  => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., Fahrbahn gesperrt, vom 24.01.2022 07:00 bis 13.08.2022 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.445809,52.479541,24.01.2022,07:00',
+       source_id => 'viz2021:13.445809,52.479541,24.01.2022,07:00', # bis 13.8.2022, im Anschluss weitere Arbeiten
        data  => <<EOF,
+#: source_id: viz2021:13.445912,52.478966,13.06.2022,07:00 (zusätzliche Meldung zur Sonnenallee)
 #: also_indoor: traffic (G,ex-H,B)
 #: last_checked: 2022-06-08
-#: next_check: 2022-06-30
+#: next_check: 2022-08-13
 	q4::inwork 13277,8211 13331,8283
 EOF
      },
@@ -35092,8 +35093,8 @@ EOF
 	q4::inwork 14558,16907 14528,16910
 	q3::inwork 14528,16910 14341,17030
 #: XXX hier (Bernkastler Str.) nur bis 12.6.2022
-#: source_id: viz2021:13.467365,52.557032,30.05.2022,07:00 (Bernkastler Str. 30.5.2022 bis 12.6.2022)
-#: next_check: 2022-06-12
+#: source_id: viz2021:13.467365,52.557032,30.05.2022,07:00 (Bernkastler Str. 30.5.2022 bis 12.6.2022) (bis 13.6.2022)
+#: next_check: 2022-06-13
 	q3::inwork 14558,16907 14673,16895
 EOF
      },
@@ -35232,6 +35233,9 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.625514,52.456971,09.06.2022,11:00',
        data  => <<EOF,
+#: by: https://nitter.net/VIZ_Berlin/status/1534754662301171713#m
+#: by: https://nitter.net/pic/orig/media%2FFUvPeV8WQAEuiW4.jpg
+#: by: https://nitter.net/pic/orig/media%2FFUvO7u4WAAw1fjO.jpg
 	q4::inwork; 25579,5958 26080,5946
 EOF
      },

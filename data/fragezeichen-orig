@@ -308,7 +308,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: source_id: 2147342170 vvv
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72
 #: osm_watch: way id="336565341" version="10" vvv
-#: last_checked: 2022-05-21 vvv
+#: last_checked: 2022-06-09 vvv
 #: check_frequency: 120d vvv
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 #: check_frequency ^^^
@@ -791,7 +791,7 @@ Semmelweisstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 18922,2
 # 
 #: XXX Ag.4
 #: osm_watch: way id="71960720" version="14"
-#: last_checked: 2022-03-12 (mapillary)
+#: last_checked: 2022-03-18 (mapillary)
 #: check_frequency: 90d
 Schönefelder Chaussee: Einrichtung einer Radverkehrsanlage geplant	?::projected; 19379,1357 19412,1387 19460,1430 19498,1465 19579,1543
 # 
@@ -3419,6 +3419,7 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8917,5986 -8871,628
 #: by: https://abendblatt-berlin.de/2021/08/12/berlin-moabit-bald-rollt-die-tram-richtung-turmstrasse/ (bis erstes Halbjahr 2023)
 #: by: https://berliner-abendblatt.de/2022/04/26/bauarbeiten-an-der-turmstrasse-gehen-weiter-voran/ (Bauarbeiten bis Herbst 2023)
 #: by: https://www.berliner-woche.de/moabit/c-verkehr/trambau-geht-weiter_a344165
+#: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20220609 (erstes Halbjahr 2023: Verlängerung der M10)
 #: XXX Während der Straßenbahnbauarbeiten bereits temporäre Radspuren in der Straße Alt-Moabit
 #: last_checked: 2022-04-23
 #: check_frequency: 360d
@@ -3699,7 +3700,8 @@ Majakowskiring/Ossietzkystr.: vielleicht entsteht etwa hier ein modaler Filter	?
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8092 (Umsetzung 2022)
 #: osm_watch: way id="4495307" version="12"
-#: last_checked: 2022-05-11 (mapillary)
+#: also_indoor: search Wilmersdorfer_Straße Fußgängerzone
+#: last_checked: 2022-06-09 (research)
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 Wilmersdorfer Str.: Verlängerung der Fußgängerzone geplant	?::projected 3717,11462 3689,11637
@@ -5397,7 +5399,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 18
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2022-05-30
+#: last_checked: 2022-06-09
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: by: https://api.fixmyberlin.de/api/projects/328 (Grünmarkierung + Verbreiterung, teilweise Leitboys)
@@ -6584,7 +6586,7 @@ Krausenstr.: Erneuerung geplant	?::projected 10176,11593 10001,11577 9925,11568 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/2021_08_30-bauschild-neugestaltung-roedeliusplatz.pdf
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/bauarbeiten-rund-um-den-roedeliusplatz-dauern-bis-mitte-2023_a328430
 #: XXX Bauarbeiten in Gange, Fahrbahn komplett gesperrt
-#: last_checked: 2022-05-07
+#: last_checked: 2022-06-09
 #: check_frequency: 30d
 #: next_check: 2023-06-30
 Roedeliusplatz: Asphaltierung	?::inwork 16159,12301 16227,12280 16276,12273
@@ -6779,6 +6781,7 @@ Jean-Jaurès-Str.: wird es hier in Zukunft eine Radverkehrsanlage geben?	? 4456,2
 Rosenthaler Str.: Bau einer Ampel	?::inwork 10299,13481 10324,13459 10335,13486
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_18_1093_1148_online.pdf
+#: osm_watch: way id="5046358" version="9"
 #: next_check: 2022-06-10
 Almazeile: Einzieung von Straßenland geplant	? -1616,18112 -1660,18114
 # 
@@ -6812,6 +6815,10 @@ Dammweg/Erich-Lodemann-Str.: Zebrastreifen geplant	? 15396,7967 15425,7953 15464
 #: priority: #D
 #: next_check: 2022-12-31
 Fürstenwalder Allee 72 (bei Fichtenauer Str.): Zebrastreifen geplant	? 30235,3979 30210,4046 30266,4046
+# 
+#: source_id: viz2021:13.56928,52.411326,13.06.2022,07:00
+#: next_check: 2022-07-08
+Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage	? 21848,847 21858,811 21867,764
 # 
 #: ignore ^^^
 # 
@@ -8359,7 +8366,7 @@ Spreebordpark: werden hier Wege entstehen?	? 4305,12927 4326,12673 4415,12661 43
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_52_4785_4880_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_11_0657_0712_online.pdf (Benennung, Wirksamkeit ab 14.2.2022)
 #: XXX Wiese ist eingezäunt, noch keine Hochbauten zu sehen (Stand April 2021)
-#: XXX Privatstraße, fehlt bei Berlin.coords.data (PLZ=13127 laut LOR)
+#: XXX Privatstraße, fehlt bei Berlin.coords.data (PLZ=13127 laut LOR und DPAG-Mitteilungsblatt)
 #: XXX gehört das hier auch zu "Kokoni One"?
 #: last_checked: 2022-04-13 (mapillary)
 #: check_frequency: 360d
@@ -8639,6 +8646,12 @@ Neuer Uferweg an der Zitadelle: genau Lage?	? -2371,14792 -2248,14865 -2197,1484
 # 
 #: XXX Potsdam-Marquardt oder Potsdam-Bornim?
 An der Kanalbrücke: befindet sich hier die Straße? Qualität?	? -18547,4524 -18473,4519
+# 
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.1189385.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/220510_emb_frol_plakat_blatt1_final.pdf
+#: XXX Bebauungsplan VI-150g-1-1
+#: next_check: 2025-06-30
+Exilmuseum: in Planung, evtl. gibt es Änderungen an den Wegen/Straßen	?::projected 8916,10855 8947,10815 8987,10821
 # 
 #: ignore ^^^
 #: section ^^^
