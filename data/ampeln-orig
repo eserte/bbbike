@@ -33,7 +33,7 @@ Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2022-05-12
+#: last_checked: 2022-06-10
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
@@ -103,8 +103,8 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # REMOVED --- #: next_check_id: BERLINERALLEE-2021
 #: next_check_id: BERLINERALLEE-2022
 #: XXX evtl. bis zum Ende der jetzigen Bauphase, oder bis zum Ende der Gesamtbaumaßname?
-#: last_checked: 2022-05-07
-#: next_check: 2022-05-30
+#: last_checked: 2022-06-10
+#: next_check: 2022-07-25
 #: valid: -20220725
 Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
 # 
@@ -1375,6 +1375,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12010,16774
 	X 11995,15827
 	X 11572,14452
+#: XXX_prog: gilt nicht für Radfahrer auf der Prenzlauer Allee von Süd nach Nord (dennoch erhöhte Vorsicht nötig, unübersichtliche Hecken)
 	X 11378,13891
 	X 11852,15281
 	X -3404,11589
@@ -3106,9 +3107,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog Anforderungsampel
 #: osm_watch: node id="5931765487" version="5"
 #: osm_watch: node id="5931765488" version="5"
-#: last_checked: 2022-05-10 (mapillary)
+#: last_checked: 2022-06-10
 #: check_frequency: 30d
-	F::inwork 10024,12431
+	F::inwork 9984,12426
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv

@@ -348,7 +348,7 @@ Mudrackzeile	1 6985,17812 7020,17690
 Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 Gustav-M¸ller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
 # REMOVED (Einbahnstraﬂenregelung ist hier zweifelhaft) --- #: XXX Wird die Einbahnstraﬂenregelung hier aufgehoben? --- #: last_checked: 2012-03-06 --- #: next_check: 2012-04-20 --- Niederlagstr.	1:q3 9972,12184 9961,12273
-# REMOVED (wie sieht's nach den Bauarbeiten aus?) --- Niederlagstr.	1 9943,12364 9934,12420
+Niederlagstr.	1s:q4 9943,12364 9934,12420
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
 Karl-Marx-Platz	1 13100,7626 12987,7560
 Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,12019
@@ -1399,7 +1399,7 @@ Falkenberger Chaussee (Straﬂenbahntrasse)	3nocross::ignrte 17482,17844 17577,179
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straﬂenland --- vielleicht der alte Sackgassenhammer?)
 #: note: permanenter Zaun
-#: osm_watch: way id="722664473" version="3"
+#: osm_watch: way id="722664473" version="4"
 #: osm_watch: node id="6778873745" version="1"
 # REMOVED --- #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen --- #: last_checked: 2021-12-27 --- #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
@@ -3481,11 +3481,7 @@ Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17497,8623 1764
 #: next_check: 2022-07-15
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraﬂe, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
 # 
-#: next_check_id: PLANSTRASSEC-2019
-# REMOVED (ein osm_watch reicht aus) --- #: osm_watch: way id="491906864" version="6"
-#: last_checked: 2022-04-07 (architektur-urbanistik)
-#: check_frequency: 60d
-(Planstraﬂe C): Einbahnstraﬂenregelung	1s:q4:inwork 12848,11093 12926,11224
+# REMOVED --- #: next_check_id: PLANSTRASSEC-2019 --- # REMOVED (ein osm_watch reicht aus) --- #: osm_watch: way id="491906864" version="6" --- #: last_checked: 2022-04-07 (architektur-urbanistik) --- #: check_frequency: 60d --- (Planstraﬂe C): Einbahnstraﬂenregelung	1s:q4:inwork 12848,11093 12926,11224
 # 
 #: next_check_id: SIEGFRIED-2021
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/#post-15273 (Bau einer Apartmentanlage, vielleicht wird dann die Straﬂe ˆffentlich sein?)
@@ -3620,7 +3616,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundst¸cksnummerierung)
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraﬂe. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht auﬂerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht
-#: osm_watch: way id="308312347" version="4"
+#: osm_watch: way id="308312347" version="5"
 #: last_checked: 2022-05-25 (daf)
 #: check_frequency: 90d
 #: next_check: 2022-08-15
@@ -3955,7 +3951,7 @@ Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realit‰t weiterhin Einbahnstraﬂe
 #: osm_watch: way id="5096644" version="17"
 #: priority: #C
-#: last_checked: 2022-05-03
+#: last_checked: 2022-06-10
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -4370,12 +4366,12 @@ Zuwegung Kieler Br¸cke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_25_2105_2220_online.pdf (Straﬂenbenennung)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/upside-berlin-max-und-moritz.182/
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
-#: last_checked: 2022-02-22
+#: last_checked: 2022-06-06 (architektur-urbanistik)
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2022-03-10 (mapillary)
+#: last_checked: 2022-06-10
 #: check_frequency: 90d
 Rummelsburger Platz: zur H‰lfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
@@ -4528,7 +4524,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Erˆffnung am 17.12.2020)
 #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Erˆffnung wird verschoben)
 #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauz‰une werden im Dezember 2020 teilweise abgebaut)
-#: last_checked: 2022-05-11 (mapillary)
+#: last_checked: 2022-06-10
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384
