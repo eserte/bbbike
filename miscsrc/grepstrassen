@@ -27,7 +27,7 @@ use Strassen::Stat;
 
 my $iso_date_qr = qr{(\d{4})\D*(\d{2})\D*(\d{2})};
 
-my($v, $i, $cat, $catrx, $name, $namerx, $section, $sectionrx, @directive_def, @directive, @directiverx, @directivecode, $valid_def);
+my($v, $i, $cat, $catrx, $name, $namerx, $section, $sectionrx, $code, @directive_def, @directive, @directiverx, @directivecode, $valid_def);
 my($minarea, $minlength);
 my $preserveglobaldirectives;
 my $ignoreglobaldirectives;
@@ -49,6 +49,7 @@ GetOptions("v" => \$v,
 	   "namerx=s" => \$namerx,
 	   "section=s" => \$section,
 	   "sectionrx=s" => \$sectionrx,
+	   "code=s" => \$code,
 	   "directive=s" => \@directive_def,
 	   "valid=s" => \$valid_def,
 	   "special=s" => sub {
@@ -72,6 +73,7 @@ GetOptions("v" => \$v,
 usage: $0 [-v] [-i] [-cat category | -catrx regexp]
        [-name name | -namerx regexp]
        [-section section | -sectionrx regexp]
+       [-code perlcode ]
        [-directive key=val|key~val [-directive ...]]
        [-valid today|YYYYMMDD]
        [-special name] [-minarea ...km²] [-minlength ...km]
@@ -107,6 +109,13 @@ if ($sectionrx) {
 }
 $minarea = $minarea*(1000*1000) if defined $minarea;
 $minlength = $minlength*1000 if defined $minlength;
+
+if (defined $code) {
+    $code = eval 'sub ($$) { my($r,$dir) = @_; ' . $code . ' }';
+    if (!$code || $@) {
+	die "Cannot eval -code value: $@";
+    }
+}
 
 for my $directive_def (@directive_def) {
     if ($directive_def =~ m{^([^=~]+)([=~])(.*)}) {
@@ -233,6 +242,8 @@ LOOP_STREETS: while(1) {
     if (defined $cat) { if ($r->[2] eq $cat) { next if $v } else { next unless $v } }
     if (defined $catrx) { if ($r->[2] =~ $catrx) { next if $v } else { next unless $v } }
     my $dir = $s->get_directive;
+    # Match CODE
+    if ($code) { if ($code->($r, $dir)) { next if $v } else { next unless $v } }
     # Match SECTION
     if (defined $section) { if (defined $dir->{section} && grep { $_ eq $section } @{ $dir->{section} }) { next if $v } else { next unless $v } }
     if (defined $sectionrx) { if (defined $dir->{section} && grep { /$sectionrx/ } @{ $dir->{section} }) { next if $v } else { next unless $v } }

@@ -143,6 +143,36 @@ EOF
 }
 
 ######################################################################
+# match code
+{
+    my $out = run_grepstrassen $sample_bbd, ["-code", '0'];
+    is $out, '';
+}
+
+{
+    my $out = run_grepstrassen $sample_bbd, ["-code", '1', '-v'];
+    is $out, '';
+}
+
+{
+    my $out = run_grepstrassen $sample_bbd, ["-code", '$r->[0] eq "Samplestreet"'];
+    is $out, <<'EOF';
+#:
+#: local_directive: 12
+Samplestreet	X1 100,100 200,200
+EOF
+}
+
+{
+    my $out = run_grepstrassen $sample_bbd, ["-code", '($dir->{local_directive}[0]||"") eq 12'];
+    is $out, <<'EOF';
+#:
+#: local_directive: 12
+Samplestreet	X1 100,100 200,200
+EOF
+}
+
+######################################################################
 # match directive
 {
     my $out = run_grepstrassen $sample_bbd, ["-directive", "local_directive=12"];
