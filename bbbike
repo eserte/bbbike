@@ -22756,7 +22756,7 @@ sub balloon_info_from_all_tags {
 	    } else {
 		if (($tags[2]||'') =~ m{^e-(CS|img)$}) { # comm-ferry
 		    # XXX This regexp should be named or a function
-		    if ($label =~ m{^(?:.*)?:\s*(.*)}) {
+		    if ($label =~ m{^(?:[^:]*)?:\s*(.*)}) { # first part is non-greedy, as ":" often occur in the further description (e.g. HH:MM)
 			$label = $1;
 		    }
 		} elsif ($tags[0] =~ m{^(?:qs|ql|qsP|qlP|hs|hl)$}) { # add category into balloon text for quality/handicap entries
