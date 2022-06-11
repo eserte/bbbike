@@ -302,14 +302,13 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 # REMOVED (mittlerweile offen) --- Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11049,12386 11094,12243
 # 
 #: next_check_id: ZIEGELSTR-2016
-#: XXX Ende der Bauarbeiten? laut osm mittlerweile offen
+#: XXX Ende der Bauarbeiten? laut osm mittlerweile offen (war aber ein falscher StreetComplete-Edit)
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="13"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-05-08 (osm)
-# REMOVED --- #: check_frequency: 45d
-#: next_check: 2022-06-07
+#: last_checked: 2022-06-11
+#: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
 # REMOVED (beendet) --- #: XXX Ende der Bauarbeiten? --- #: also_indoor: traffic (G) --- #: last_checked: 2019-08-23 vvv --- #: check_frequency: 14d vvv --- Ziegelstr.: Bauarbeiten an der Kreuzung Tucholskystr., einige Meter Fahrbahn sind gesperrt	q2::inwork 9401,13072 9559,13087 --- #: source_id: 2147344619 (voraussichtlich bis Mitte September 2019) --- #: note: laut fritz bis 2019-09-06 --- Tucholskystr.: Bauarbeiten an der Kreuzung Ziegelstr., Einbahnstraße, offen Richtung Norden	q3::inwork; 9559,13087 9538,12993 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -563,10 +562,16 @@ Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg,
 ### Moabit ###
 # 
 #: next_check_id: TRAMTURM-2021
-#: last_checked: 2022-04-23
-#: check_frequency: 180d
-#: next_check: 2022-12-22
-Alt-Moabit - Invalidenstr.: Bauarbeiten, getrennter Rad/Gehweg	q3::inwork 7422,13012 7415,13060
+#: last_checked: 2022-06-11 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2022-12-22 vvv
+#: osm_watch: way id="140336721" version="23"
+Turmstr.: teilweise verwinkelte Wegführung des Radwegs	q1-::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321
+#: osm_watch: way id="30195541" version="25"
+Turmstr.: Bauarbeiten, Engstellen	q1-::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (offen) --- #: by: https://www.bahninfo-forum.de/read.php?9,689330,689356#msg-689356 (2021) --- #: by: https://www.berliner-woche.de/moabit/c-verkehr/kein-halt-an-der-birkenstrasse_a334325 (geplant für 1. Quartal 2022) --- #: by: https://berliner-abendblatt.de/2022/01/24/kein-halt-am-u-bahnhof-birkenstrasse/ --- #: by: https://berliner-abendblatt.de/2022/03/16/bahnhof-birkenstrasse-jetzt-stufenlos-erreichbar/ --- #: by: https://www.berliner-woche.de/moabit/c-bauen/u-bahnhof-birkenstrasse-erhielt-weiteren-ausgang_a339752 --- #: XXX vermutlich wegen des neuen Aufzugs am U-Bhf. Birkenstr. --- #: also_indoor: traffic (ex-G,H) --- #: osm_watch: way id="746589388" version="17" --- #: osm_watch: way id="746589386" version="1" --- #: last_checked: 2022-03-16 (twitter) --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-03-31 --- Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
 # REMOVED (nicht mehr) --- #: next_check_id: HILDAGEIRINGERWEG-2019 --- #: source_id: 2147345153 (Gehwegarbeiten in der Invalidenstr., bis Anfang Dezember 2019) --- #: priority: #C vvv --- #: last_checked: 2020-10-10 vvv --- #: check_frequency: 30d vvv --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt	q3::inwork 8281,13394 8302,13430 8293,13527 --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur über Restaurantbereich	q4::inwork 8174,13390 8241,13393 8281,13394 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^
@@ -608,7 +613,7 @@ Alt-Moabit - Invalidenstr.: Bauarbeiten, getrennter Rad/Gehweg	q3::inwork 7422,1
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundesallee-13-14-pariser-str.599/page-5#post-17417
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
-#: last_checked: 2022-04-13 (mapillary)
+#: last_checked: 2022-06-11 (webcam)
 #: check_frequency: 60d
 #: next_check: 2022-10-01
 # REMOVED --- #: next_check: 2020-02-03
@@ -3298,7 +3303,7 @@ Armbrustweg: einige Fußgänger, Bordsteine	q3 7620,18615 7635,18570
 Maienwerderweg: einige Fußgänger, Hunde	q1+ 2731,18729 2723,18675 2622,18546 2440,18440 2284,18310 2243,18274 2226,18228 1547,17726 1270,17566 660,17352 281,17236 130,17187
 #: XXX_prog BS, ansonsten q1
 (südliches Spreeufer): einige Fußgänger, Bordstein	q3 5225,12450 5235,12461
-(südliches Spreeufer): einige Fußgänger	q1 5235,12461 5287,12465 5299,12420 5360,12331 5405,12292
+(südliches Spreeufer): einige Fußgänger	q1 5235,12461 5287,12465 5299,12420 5360,12331 5411,12290
 #: XXX_prog BS am Möllentordamm, ansonsten q2 oder q1
 Dammbrücke: einige Fußgänger, Bordstein	q3 -3066,14718 -3042,14682
 #: XXX_prog BS an der Lilli-Palmer-Promenade, ansonsten entfernen
