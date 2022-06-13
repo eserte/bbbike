@@ -890,9 +890,8 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 19676,-4036 19651,-403
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18386,-4109 18423,-4094
 #: note: Teil des Rundwegs am BER
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18423,-4094 18861,-3921
-Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18386,-4109 18348,-4107 18267,-4039 18143,-4094
-#: by: osm
-	RW; 18143,-4094 17844,-4231
+Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18386,-4109 18348,-4107 18267,-4039 18143,-4094 18060,-4131 17992,-4162
+# REMOVED (hier nicht) --- #: by: osm ---	RW; 17992,-4162 17844,-4231
 # REMOVED (wird eigentständig eingetragen) --- Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18861,-3921 19019,-3859 19105,-3940 19153,-4033 19158,-4083
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 19158,-4083 19126,-4141 18984,-4202 18492,-4417 18480,-4374 18386,-4109
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2;RW8 18517,-4502 18492,-4417
@@ -1238,6 +1237,16 @@ Trampelpfad	RW0; -8922,-43250 -8936,-43318
 	RW7;RW7 -10590,-42004 -10528,-41701 -10378,-41792 -10302,-41797 -10307,-41877 -10341,-41874 -10342,-41916 -9854,-41929 -9911,-42193
 	RW7;RW7 -11257,-44251 -11846,-43656 -11844,-43656 -11811,-43533 -11809,-43303 -11765,-42781 -11844,-42581 -10841,-42189 -10635,-42008 -10590,-42004
 	RW7;RW7 -10883,-44832 -10730,-44804 -10500,-44684 -10307,-44571 -10302,-44577 -10296,-44586 -9783,-44439 -9808,-44305 -9856,-44310 -9959,-43981 -10063,-43970 -10112,-43714 -9996,-43702 -9173,-43876
+Verbundsteinpflaster	RW1;RW1 -3331,25078 -3285,24937
+	RW2; -3285,24937 -3237,24782 -3299,24652 -3433,24460 -3503,23811
+gemeinsamer Geh- und Radweg	RW2; -3503,23811 -3495,23770 -3475,23661 -3442,23479 -3408,23277 -3379,23141 -3388,22896 -3406,22778 -3489,22597
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; -3489,22597 -3666,22384 -3771,22252 -3813,22121 -3804,21923
+gemeinsamer Geh- und Radweg, asphaltiert	RW2; -3804,21923 -3794,21804
+gemeinsamer Geh- und Radweg, asphaltiert	RW2; -3686,21513 -3642,21341 -3619,21245 -3488,20901
+gemeinsamer Geh- und Radweg, asphaltiert	RW2;RW8 -3488,20901 -3464,20836 -3456,20813 -3495,20025 -3497,20003
+gemeinsamer Geh- und Radweg, asphaltiert	RW2; -3488,20901 -3619,21245 -3642,21341 -3686,21513 -3794,21804 -3804,21923
+	RW2; -3804,21923 -3813,22121 -3771,22252 -3666,22384 -3489,22597 -3406,22778 -3388,22896 -3379,23141 -3408,23277 -3442,23479 -3475,23661 -3495,23770 -3503,23811 -3433,24460 -3299,24652 -3237,24782 -3285,24937
+	RW6;RW6 -3642,21341 -3719,21321 -3812,21298 -3831,21379
 ######################### User Contributions #################################
 #: by: Johannes (...schmeisser...)
 #: confirmed_by: mapillary
@@ -1366,14 +1375,15 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 -2218,-256 -2141,-307 -2
 # 
 #: by: Maren (e-blu), mapillary: vvv
 	RW;RW -18406,35425 -18912,35525 -19481,35481 -19737,35362 -20450,35368
-überwiegend asphaltiert	RW2;RW8 -1982,24514 -1944,24634 -1950,24762 -1996,24889 -2139,25038 -2366,25297
+überwiegend asphaltiert	RW2;RW8 -1982,24514 -1944,24634 -1950,24762 -1996,24889 -2139,25038 -2170,25074 -2366,25297
 Verbundsteinpflaster	RW2;RW8 -2366,25297 -2446,25386
 Verbundsteinpflaster	RW2;RW -2446,25386 -2808,25489 -3036,25575 -3049,25593
-gepflasterte, eher schmale Radwege	RW;RW -3331,25078 -3446,25075 -3815,25252 -4219,25460 -4265,25459
+gepflasterte, eher schmale Radwege	RW1;RW1 -3331,25078 -3458,25081
+gepflasterte, eher schmale Radwege	RW;RW -3458,25081 -3815,25252 -4219,25460 -4265,25459
 #: by: ^^^
 # 
 #: by: mapillary
-Verbundsteinpflaster	RW1;RW -3049,25593 -3306,25887
+Verbundsteinpflaster	RW1;RW -3049,25593 -3136,25693 -3196,25763 -3306,25887
 # 
 #: by: Andreas Titz
 asphaltiert	RW2;RW2 929,32980 831,33128 746,33231 728,33253 470,33540 81,33971 -445,34937 -570,35185

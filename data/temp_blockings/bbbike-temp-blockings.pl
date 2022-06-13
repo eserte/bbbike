@@ -21720,15 +21720,16 @@ EOF
 # REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2021-09-16 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-09-19 23:59:59"),
+     { from  => $isodate2epoch->("2022-07-13 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-07-17 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 7, start => "2020-10-25T00:00:00"]],
        source_id => 'https://www.gratis-in-berlin.de/festivals/item/2037758-hafenfest-tegel-2019-mit-programm-und-feuerwerk',
-       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (16.09.2021 bis 19.09.2021)',
+       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (14.07.2022 bis 17.07.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html (2021)
+#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html?date=20220613
 # REMOVED (was) : tempex: 20160714-20160717
 	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
 EOF
@@ -28827,7 +28828,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1489146640095006722
 #: by: https://pbs.twimg.com/media/FKmLhoHWYA0Sivj?format=jpg&name=large
 #: next_check_id: HENNIGSDORFER-2019
-	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259
+	q4::inwork; -2508,22627 -2540,22694 -2424,22991 -2306,23259
 # REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2306,23259 -2248,23409 -2185,23567
 # REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850
 # REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
@@ -30564,7 +30565,7 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-06-03
+#: last_checked: 2022-06-12
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 EOF
@@ -31086,7 +31087,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (laut daf mittlerweile offen) --- #: XXX wann wird hier wieder offen sein? Wird es dann auch einen Radweg geben? --- #: last_checked: 2020-05-16 --- #: check_frequency: 90d
-	2::inwork 17844,-4231 18143,-4094
+	2::inwork 17844,-4231 17992,-4162 18060,-4131 18143,-4094
 EOF
      },
      { from  => 1588490580, # 2020-05-03 09:23
@@ -32921,8 +32922,8 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
 #: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
-#: XXX Spielstraße ab 2023 vom 15.05.
-#: next_check: 2022-06-12
+#: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen
+#: next_check: 2022-09-15
 	q4::temp::play 11917,9663 12074,9689
 EOF
      },
@@ -34614,9 +34615,9 @@ EOF
 #: last_checked: 2022-06-03 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="25"
+#: osm_watch: way id="4395450" version="26"
 	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="8"
+#: osm_watch: way id="505363417" version="9"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -34787,7 +34788,7 @@ EOF
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-05-16 (daf) (Lynarstr.) vvv
+#: last_checked: 2022-06-12 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-09-30 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
@@ -34953,7 +34954,7 @@ EOF
        data  => <<EOF,
 #: by: https://nitter.net/VIZ_Berlin/status/1513397936151044099#m
 #: by: https://nitter.net/pic/media%2FFP1LIs8XMAENMUm.jpg%3Fname%3Dorig
-#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022)
+#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022) (mittlerweile bis 27.6.2022)
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? vvv
@@ -35088,7 +35089,7 @@ EOF
      },
      { from  => 1651960800, # 2022-05-08 00:00
        until => $isodate2epoch->("2022-07-03 13:00:00"), # 1653861600, # 2022-05-30 00:00
-       text  => 'Rennbahnstr. und Bernkastler Str.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, bis 3.7.2022 ',
+       text  => 'Rennbahnstr.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, bis 3.7.2022 ',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/wp-content/uploads/BA2.jpg',
        data  => <<EOF,
@@ -35098,10 +35099,7 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1523659832569389058#m (Rennbahnstr. bis 3.7.2022 gesperrt)
 	q4::inwork 14558,16907 14528,16910
 	q3::inwork 14528,16910 14341,17030
-#: XXX hier (Bernkastler Str.) nur bis 12.6.2022
-#: source_id: viz2021:13.467365,52.557032,30.05.2022,07:00 (Bernkastler Str. 30.5.2022 bis 12.6.2022) (bis 13.6.2022)
-#: next_check: 2022-06-13
-	q3::inwork 14558,16907 14673,16895
+# REMOVED --- #: XXX hier (Bernkastler Str.) nur bis 12.6.2022 --- #: source_id: viz2021:13.467365,52.557032,30.05.2022,07:00 (Bernkastler Str. 30.5.2022 bis 12.6.2022) (bis 13.6.2022) --- #: next_check: 2022-06-13 ---	q3::inwork 14558,16907 14673,16895
 EOF
      },
      { from  => 1651986000, # 2022-05-08 07:00
@@ -35281,6 +35279,17 @@ EOF
 #: last_checked: 2022-06-11
 #: check_frequency: 90d
 	q4::inwork 4961,12940 4932,12968
+EOF
+     },
+     { from  => 1656108000, # 2022-06-25 00:00
+       until => 1656277200, # 2022-06-26 23:00
+       text  => 'Kranoldplatz: Veranstaltung, Straße gesperrt, am 26.06.2022 von 7:00 bis 23.00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1215737.php',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/verkehrszeichenplan-kranoldplatz-26-06-2022-7-23-uhr-quelle-abs-verkehrstechnik-gmbh.png
+#: by: https://www.standortmanagement-lichterfelde-ost.de/neuigkeiten/event-auf-dem-kranoldplatz-26-06-2022/
+	2::temp 5417,2383 5317,2345
 EOF
      },
     );

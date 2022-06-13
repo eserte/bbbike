@@ -39,7 +39,7 @@ Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 Fischerinsel	F::inwork 10578,11969
 # 
 #: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00
-#: last_checked: 2022-05-19 vvv
+#: last_checked: 2022-06-10 (mapillary) vvv
 #: next_check: 2022-07-30 vvv
 #: valid: -20220730 vvv
 Mollstr./Büschingstr.	F::inwork 11913,13077
@@ -96,7 +96,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: last_checked ^^^
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-05-31
+#: last_checked: 2022-06-12
 #: next_check: 2024-06-01
 Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
@@ -142,10 +142,10 @@ Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
 #: source_id: viz2021:13.217617,52.61126,19.04.2022,08:00
 #: XXX Ampel Am Dachsbau/Schulzendorfer Str. vermutlich nur eine temporäre Lösung wegen der Bauarbeiten in der Hennigsdorfer Str., später wird hier wohl ein Zebrastreifen entstehen
 #: osm_watch: node id="5469708920" version="1"
-#: last_checked: 2021-03-18 (parlamentarische Anfrage)
-#: next_check: 2022-02-03
+#: last_checked: 2022-06-12
+#: check_frequency: 90d
 	X::inwork -1538,22800
-# REMOVED --- #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/anregungen-der-eltern-endlich-verwirklicht_a207979 --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1194601.php (Bauarbeiten für den Kreisverkehr) --- #: by: https://berliner-abendblatt.de/2022/04/08/umbau-fuer-kreisverkehr-kreuzung-wird-voll-gesperrt/ --- #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/kreuzungsbereich-wegen-asphaltarbeiten-gesperrt_a342023 --- #: XXX später wird hier ein Kreisverkehr entstehen --- #: last_checked: 2021-09-04 --- #: check_frequency: 180d --- #: next_check: 2022-11-15 ---	X::inwork -2504,22626
+# REMOVED --- #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/anregungen-der-eltern-endlich-verwirklicht_a207979 --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1194601.php (Bauarbeiten für den Kreisverkehr) --- #: by: https://berliner-abendblatt.de/2022/04/08/umbau-fuer-kreisverkehr-kreuzung-wird-voll-gesperrt/ --- #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/kreuzungsbereich-wegen-asphaltarbeiten-gesperrt_a342023 --- #: XXX später wird hier ein Kreisverkehr entstehen --- #: last_checked: 2021-09-04 --- #: check_frequency: 180d --- #: next_check: 2022-11-15 ---	X::inwork -2508,22627
 # 
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2019 --- #: last_checked: 2020-06-14 ---	X::inwork 18406,7760
 # 
@@ -1992,7 +1992,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10432 (sichere Querungsmöglichkeit gefordert)
 #: XXX Ampel ausgeschaltet, vielleicht dauerhaft (Lynar/Tegeler)
 #: osm_watch: node id="3777205512" version="4"
-#: last_checked: 2022-05-16 (daf)
+#: last_checked: 2022-06-12
 #: check_frequency: 90d
 	X0 7259,14870
 #: note: Anforderungsampel für Radfahrer aus Richtung Osten Richtung Luisenstr. und für Radfahrer aus der Luisenstr.
@@ -3107,13 +3107,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog Anforderungsampel
 #: osm_watch: node id="5931765487" version="5"
 #: osm_watch: node id="5931765488" version="5"
-#: last_checked: 2022-06-10
+#: last_checked: 2022-06-12
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2022-06-03 vvv
+#: last_checked: 2022-06-12 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3466,13 +3466,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2022-04-23 (mapillary)
+#: last_checked: 2022-06-10 (mapillary)
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 
 # REMOVED (gibt's nicht mehr) --- #: next_check_id: CORONA-2020 --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX vermutlich temporär für das Impfzentrum --- #: by: mapillary --- 
 #: XXX wann wird diese Ampel abgebaut?
-#: last_checked: 2022-04-23 (mapillary)
+#: last_checked: 2022-06-10 (mapillary)
 #: check_frequency: 90d
 	F::inwork 8138,14786
 # 
@@ -3753,6 +3753,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	F -3495,23770
+	F -3666,22384
+#: off: 2022-06-12 (Sun) gegen 10 Uhr
+	F -3136,25693
+	X -3049,25593
 	X -10032,-45258
 #: note: Anforderungsampel
 	X -13709,-45699
@@ -4334,12 +4339,13 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 18423,-843
 	X 19909,-2863
 #: next_check_id: BER-20XX vvv
-#: XXX: Ampel noch ausgeschaltet, wird wahrscheinlich mit BER in Betrieb gehen vvv
-#: last_checked: 2022-03-12 (mapillary)
+#: XXX: Ampel noch ausgeschaltet vvv
+#: last_checked: 2022-06-11 (mapillary)
+#: check_frequency: 90d
 	F0 18517,-4502
 #: XXX hier existieren nur Masten
 #: osm_watch: node id="1736933178" version="6"
-#: last_checked: 2022-04-16 (mapillary)
+#: last_checked: 2022-06-11 (mapillary)
 #: check_frequency: 360d
 	X0 19131,-2145
 #: XXX ^^^

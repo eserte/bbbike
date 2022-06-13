@@ -3225,7 +3225,31 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html (2021)
+#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html?date=20220613
+# REMOVED (was) : tempex: 20160714-20160717
+	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
+',
+         'from' => 1657663200,
+         'id' => 2420,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              7,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.gratis-in-berlin.de/festivals/item/2037758-hafenfest-tegel-2019-mit-programm-und-feuerwerk',
+         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (14.07.2022 bis 17.07.2022)',
+         'type' => 'gesperrt',
+         'until' => 1658095199
+       },
        undef,
        undef,
        undef,
@@ -4550,7 +4574,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-06-03
+#: last_checked: 2022-06-12
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 ',
@@ -4819,27 +4843,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/2020/09/vorschau-05_06-09-2020/
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1111500.php
-#: source_id: viz2021:13.491317,52.469108,12.06.2022,07:00
-#: source_id: viz2021:13.479325,52.484519,11.06.2022,13:00
-#: source_id: viz2021:13.479325,52.484519,12.06.2022,09:00
-#: source_id: viz2021:13.47948,52.48449,11.06.2022,12:00
-#: source_id: viz2021:13.47948,52.48449,11.06.2022,16:00
-	q4::temp 16507,7254 16428,7144
-	q4::temp; 16428,7144 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
-	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16136,7886 16406,7430 16507,7254 16633,7434 16673,7511
-	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15797,9002 15778,8990
-	q4::temp 15778,8990 15680,8914 15591,8848
-	q4::temp; 15591,8848 15534,8943 15452,9079 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609 14389,9656 14318,9688
-',
-         'from' => 1654812000,
-         'id' => 3274,
-         'text' => 'Köpenicker Landstraße, Neue Krugallee, Bulgarische Straße, Puschkinallee, Uferweg Plänterwald: wegen des Berlin-Triathlons Sperrungen, evtl. auch für Radfahrer gültig, am 11.6.2022 ab 16:00 Uhr und am 12.6.2022 von 6:00 bis 18:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1655049600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5199,8 +5203,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
 #: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
-#: XXX Spielstraße ab 2023 vom 15.05.
-#: next_check: 2022-06-12
+#: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen
+#: next_check: 2022-09-15
 	q4::temp::play 11917,9663 12074,9689
 ',
          'from' => 1654898400,
@@ -5805,9 +5809,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: last_checked: 2022-06-03 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="25"
+#: osm_watch: way id="4395450" version="26"
 	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="8"
+#: osm_watch: way id="505363417" version="9"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5914,7 +5918,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-05-16 (daf) (Lynarstr.) vvv
+#: last_checked: 2022-06-12 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-09-30 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
@@ -6026,7 +6030,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1513397936151044099#m
 #: by: https://nitter.net/pic/media%2FFP1LIs8XMAENMUm.jpg%3Fname%3Dorig
-#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022)
+#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022) (mittlerweile bis 27.6.2022)
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? vvv
@@ -6108,15 +6112,12 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://nitter.net/VIZ_Berlin/status/1523659832569389058#m (Rennbahnstr. bis 3.7.2022 gesperrt)
 	q4::inwork 14558,16907 14528,16910
 	q3::inwork 14528,16910 14341,17030
-#: XXX hier (Bernkastler Str.) nur bis 12.6.2022
-#: source_id: viz2021:13.467365,52.557032,30.05.2022,07:00 (Bernkastler Str. 30.5.2022 bis 12.6.2022) (bis 13.6.2022)
-#: next_check: 2022-06-13
-	q3::inwork 14558,16907 14673,16895
+# REMOVED --- #: XXX hier (Bernkastler Str.) nur bis 12.6.2022 --- #: source_id: viz2021:13.467365,52.557032,30.05.2022,07:00 (Bernkastler Str. 30.5.2022 bis 12.6.2022) (bis 13.6.2022) --- #: next_check: 2022-06-13 ---	q3::inwork 14558,16907 14673,16895
 ',
          'from' => 1651960800,
          'id' => 3546,
          'source_id' => 'https://viz.berlin.de/wp-content/uploads/BA2.jpg',
-         'text' => 'Rennbahnstr. und Bernkastler Str.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, bis 3.7.2022 ',
+         'text' => 'Rennbahnstr.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, bis 3.7.2022 ',
          'type' => 'handicap',
          'until' => 1656846000
        },
@@ -6262,6 +6263,18 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Pascalstr.: Fahrbahn zwischen Heisenbergstr. und Schlesingerstr. wegen Hochbauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/verkehrszeichenplan-kranoldplatz-26-06-2022-7-23-uhr-quelle-abs-verkehrstechnik-gmbh.png
+#: by: https://www.standortmanagement-lichterfelde-ost.de/neuigkeiten/event-auf-dem-kranoldplatz-26-06-2022/
+	2::temp 5417,2383 5317,2345
+',
+         'from' => 1656108000,
+         'id' => 3562,
+         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1215737.php',
+         'text' => 'Kranoldplatz: Veranstaltung, Straße gesperrt, am 26.06.2022 von 7:00 bis 23.00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1656277200
        }
      
 );
