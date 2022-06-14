@@ -1035,7 +1035,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-06-13
+#: last_checked: 2022-06-14
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1698,7 +1698,7 @@ Kopenhagener Str.: Kopfsteinpflaster	Q2- 10097,15856 10365,15902
 Kopenhagener Str.: Kopfsteinpflaster	Q2 10571,15933 10722,15921 10964,15896
 Ystader Str.: Kopfsteinpflaster	Q2 10365,15902 10355,15946
 #: by: (URL existiert nicht mehr) http://www.stadtentwicklung.berlin.de/verkehr/radverkehr/infrastruktur/de/asphalt01.shtml
-Esplanade: asphaltiert	Q0 10975,16896 10886,16893
+Esplanade: asphaltiert	Q0 10971,16907 10886,16893
 Esplanade: Kleinsteinpflaster	Q2+ 10886,16893 10655,16904
 Glinkastr.: Asphalt	Q0+ 9183,12076 9195,11972 9207,11880 9218,11793 9220,11781
 Ettaler Str.: Kopfsteinpflaster	Q2 5997,10286 5948,10152
@@ -8696,7 +8696,7 @@ Gehwegplatten	Q0 21844,238 21963,261 21979,274 21991,273 22008,262
 #: check_frequency: 120d
 Unterführung unter Adlergestell und Bahn: sandig, aber notdürftig mit Teppichen ausgelegt	Q3+ 20939,2413 20904,2426 20810,2398
 (Hartriegelstr. - Michael-Brückner-Str.): Verbundsteinpflaster	Q1+ 18695,5076 18622,5049 18514,5028 18425,5032
-(Bersarinplatz - Thaerstr.): unbefestigter Weg	Q1- 13747,12642 13761,12690
+(Bersarinplatz - Thaerstr.): unbefestigter Weg	Q2 13747,12642 13761,12690
 (Thaerstr. - Bersarinplatz): Gehwegplatten	Q0 13761,12690 13695,12643
 #: note: neu asphaltiert
 Siegmunds Hof: Asphalt	Q0 5714,12266 5727,12226
@@ -22587,6 +22587,7 @@ Kinzerallee: mäßiges Kopfsteinpflaster	Q2 22092,5673 22154,5659 22236,5633 22383
 #: by: ^^^
 # 
 #: by: alex (undstasi):
+#: confirmed_by: srt
 Küselstr.: mäßiger Beton	Q1- 12299,15463 12221,15514 12158,15556 12094,15598 12058,15621
 # 
 #: by: Wolfgang Lippmann: vvv
@@ -28290,6 +28291,7 @@ Hans-Otto-Str.: Kopfsteinpflaster	Q2 12832,14378 12783,14312 12722,14232 12659,1
 Heinz-Kapelle-Str.: Kopfsteinpflaster	Q2 12783,14312 12972,14173
 #: corrected_by: srt (schlechtes Kopfsteinpflaster, Q3 -> ...)
 Dietrich-Bonhoeffer-Str.: Kopfsteinpflaster	Q2- 12556,14230 12266,14460
+#: confirmed_by: srt
 Margarete-Sommer-Str.: Kopfsteinpflaster	Q2 12707,13706 12805,13809 12879,13889 12975,13990
 Margarete-Sommer-Str.: wassergebundene Decke	Q1 12707,13706 12719,13704 12813,13799 12887,13877 12972,13970 12975,13990
 #: confirmed_by: srt

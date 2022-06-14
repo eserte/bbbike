@@ -4246,11 +4246,21 @@ Hauffstr. (Teltow): Beton	Q0 2943,-186 3030,-312
 Fritz-Reuter-Str. (Teltow): unbefestigt	Q2 2527,141 2545,92
 Fritz-Reuter-Str. (Teltow): Asphalt	Q0 2545,92 2560,-25
 Fritz-Reuter-Str. (Teltow): Kopfsteinpflaster	Q2 2560,-25 2607,-105
-#: add_fragezeichen: ist der mittlere Abschnitt der Fritz-Reuter-Str. ebenfalls gepflastert?
-	Q2 2607,-105 2667,-199
+#: by: mapillary
+Fritz-Reuter-Str. (Teltow): Kopfsteinpflaster	Q2 2607,-105 2667,-199
 Fritz-Reuter-Str. (Teltow): Kopfsteinpflaster	Q2 2667,-199 2751,-312 2847,-431
 Lessingstr. (Teltow): Asphalt	Q0 3341,-353 3621,-271 3720,-242 3908,-187
 Maxim-Gorki-Str. (Teltow): Asphalt	Q0 3177,374 3225,304 3314,179 3392,63 3476,-58 3579,-196 3621,-271
+#: by: mapillary
+Klaus-Groth-Str. (Teltow): Verbundsteinpflaster	Q1 2635,-282 2606,-243
+#: by: mapillary
+Klaus-Groth-Str. (Teltow): Verbundsteinpflaster	Q1 2606,-243 2594,-187
+#: by: mapillary
+Badstr. (Teltow): m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 1106,-491 1134,-370
+#: by: mapillary
+Neue Straﬂe (Teltow): m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 978,-521 1101,-553
+#: by: mapillary
+Striewitzweg (Teltow): Asphalt mit einigen Aufpflasterungen	Q1+ 577,-543 550,-396 525,-347
 #: by: osm ("sand", ˆstlicher Abschnitt)
 Marienfelder Anger: unbefestigte Straﬂe	Q2 3243,151 3314,179 3404,211 3490,241 3607,283
 Gerhart-Hauptmann-Str. (Teltow): Asphalt	Q0 3263,427 3304,356 3320,335 3404,211 3485,102 3556,-3 3654,-144 3720,-242
@@ -6005,7 +6015,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: unbefestigte Straﬂe, etwas 
 #: osm_watch: node id="8243873919" version="1"
 #: osm_watch: node id="2038971392" version="2"
 #: XXX wird hier ein offizieller Durchgang entstehen?
-#: last_checked: 2021-12-17
+#: last_checked: 2022-06-11 (mapillary)
 #: check_frequency: 180d
 Flughafen Berlin-Brandenburg - Business Park Berlin: unbefestigter Pfad	Q2 20412,-1750 20416,-1721
 Am Luch (Schulzendorf): schlechtes Kopfsteinpflaster	Q3 24394,-3357 24475,-3093
@@ -7163,7 +7173,7 @@ Buch - Gorinsee: fester Sandweg, teilweise kleiner Schotter	Q2 15777,28037 15700
 #: by: ^^^
 # 
 #: by: Jakob-Dominik Ullmann: vvv
-#: XXX ist das Kopfsteinpflaster schlecht oder m‰ﬂig? Im s¸dlichen Abschnitt sah das nach Kleinsteinpflaster aus, also eher Q1-?
+#: XXX ist das Kopfsteinpflaster schlecht oder m‰ﬂig? Im s¸dlichen Abschnitt sah das nach Kleinsteinpflaster aus, also eher Q1-? Bei mapilary sah es am anderen Ende aber tats‰chlich nach Q3 aus.
 Im Kamp: schlechtes Kopfsteinpflaster	Q3 -1076,22 -1160,-71 -1186,-134 -1192,-195 -1179,-298
 #: confirmed_by: srt
 Im Kamp: glattes Verbundsteinpflaster	Q0- -1157,-360 -1179,-298
@@ -8660,6 +8670,8 @@ Westring: Asphalt	Q0- 30989,11903 30876,11943 30689,12089 30318,12439 30174,1257
 Blumenstr. (Teltow): Verbundsteinpflaster	Q1+ 2687,-1506 2775,-1347 2924,-1081 2940,-1031
 Hauffstr. (Teltow): Asphalt	Q0 3030,-312 3101,-427
 Osdorfer Str. (Teltow): unbefestigte Straﬂe	Q2 3101,-427 3186,-400 3289,-367
+#: by: mapillary
+Osdorfer Str. (Teltow): Asphalt	Q0 2847,-431 2944,-467 3101,-427
 Wilhelm-Busch-Str. (Teltow): Verbundsteinpflaster	Q1+ 3623,-384 3626,-346 3741,-313 3786,-300
 Gradnauerstr. (Kleinmachnow): Kopfsteinpflaster	Q2 -184,722 -87,637 11,549
 Bergstr. (Stahnsdorf): Asphalt	Q0 -3168,-2498 -3097,-2616 -3045,-2705 -3008,-2767 -2878,-3004

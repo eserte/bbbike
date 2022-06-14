@@ -4128,13 +4128,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-auf-der-schoenstrasse-gehen-weiter_a261160
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1058179.php (Sperrung der Kreuzung Schönstraße/Paul-Oestreich-Straße, bis 26. März 2021)
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/einmuendung-komplett-gesperrt_a303306
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1216456.php (ab 21.6.2022 Vollsperrung, Freigabe am 28.6.2022)
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht\'s nur auf dem Gehweg weiter
 #: also_indoor: traffic (G(wieder),H(falsch?),B)
 #: priority: #B vvv
 #: last_checked: 2022-06-10 vvv
 #: check_frequency: 60d vvv
+#: next_check: 2022-06-20 vvv
+# REMOVED --- #: next_check: 2022-06-28 vvv
 	q3::inwork 13391,16436 13630,16629
 Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -4427,7 +4431,29 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147344332
+#: source_id: viz2021:13.3546,52.51713,14.06.2022,18:00
+#: source_id: viz2021:13.354603,52.517071,14.06.2022,18:00
+#: source_id: viz2021:13.350711,52.51499,15.06.2022,06:00
+	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
+	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
+	3 6694,12627 7031,12320 7051,12426
+	3 6694,12627 7031,12320 7001,12274
+	3 7654,12464 7627,12380 7603,12353
+	3 7001,12274 7031,12320 7051,12426
+	3 7001,12274 7031,12320 6694,12627
+	3 7051,12426 7031,12320 7001,12274
+	3 7051,12426 7031,12320 6694,12627
+	3 7603,12353 7627,12380 7654,12464
+',
+         'from' => 1655136000,
+         'id' => 3113,
+         'source_id' => 'https://www.berliner-teamstaffel.de/der-tag/strecke.html',
+         'text' => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 14. Juni 2022 18 Uhr bis 18. Juni 2022 9 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1655535600
+       },
        undef,
        undef,
        undef,
@@ -5628,7 +5654,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: EINSTEINPARK-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-06-03
+#: last_checked: 2022-06-14
 #: check_frequency: 30d
 #: next_check: 2022-07-24
 	2::inwork 13204,15062 13207,14998 13163,14924
@@ -5874,7 +5900,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: MASSMANN-2022
 #: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maßmannstr.
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (G,B)
+#: also_indoor: traffic (ex-G,ex-B)
 #: last_checked: 2022-05-15
 # REMOVED --- #: check_frequency: 30d
 # REMOVED --- #: check_frequency: 10d
@@ -6275,6 +6301,61 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Kranoldplatz: Veranstaltung, Straße gesperrt, am 26.06.2022 von 7:00 bis 23.00 Uhr',
          'type' => 'gesperrt',
          'until' => 1656277200
+       },
+       {
+         'data' => '#: note: Juni 2022: Special Olympics Nationale Spiele
+#: source_id: viz2021:13.351095,52.514567,15.06.2022,05:00
+#: source_id: viz2021:13.369855,52.515768,15.06.2022,05:00
+#: by: https://viz.berlin.de/2022/06/sons-2022/
+#: by: https://nitter.net/pic/orig/media%2FFVMxeqIWYAAvJKt.jpg
+	2::temp 8538,12245 8592,12252
+	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	2::temp 8538,12245 8522,12239
+	2::temp 8538,12245 8522,12187
+Straße des 17. Juni zwischen Großer Stern und Yitzhak-Rabin-Str.	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
+Yitzhak-Rabin-Str	2::temp 8055,12186 8119,12414
+',
+         'from' => 1655175600,
+         'id' => 3563,
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr.: Sportveranstaltung, Straßen auch für Radfahrer gesperrt (vom 15.6.2022 05:00 bis 26.6.2022 23:00)',
+         'type' => 'gesperrt',
+         'until' => 1656277200
+       },
+       {
+         'data' => '	1::temp 8119,12414 8122,12603
+	1::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
+',
+         'from' => 1655449200,
+         'id' => 3564,
+         'source_id' => 'https://viz.berlin.de/2022/06/sons-2022/',
+         'text' => 'John-Foster-Dulles-Allee und Heinrich von Gagern-Str.: Sportveranstaltung, Sperrung der Fahrbahn Richtung Osten bzw. Norden, Von 18.06.2022, ca. 09:00 Uhr bis 26.06.2022, ca. 23:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1656277200
+       },
+       {
+         'data' => '	1::temp 8122,12603 8119,12414
+	1::temp 8119,12414 8070,12409 8017,12359 7875,12363 7821,12367 7627,12380 7514,12387 7437,12368 7215,12295 7031,12320
+',
+         'from' => 1655449200,
+         'id' => 3565,
+         'source_id' => 'https://viz.berlin.de/2022/06/sons-2022/',
+         'text' => 'John-Foster-Dulles-Allee und Heinrich von Gagern-Str.: Sportveranstaltung, nur zu wettbewerbsfreien Zeiten offen, Von 18.06.2022, ca. 09:00 Uhr bis 26.06.2022, ca. 23:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1656277200
+       },
+       {
+         'data' => '	2::temp 8743,12099 8861,12125
+	2::temp 8737,12098 8595,12066 8577,11896 8783,11959 8844,11984 8901,12008
+',
+         'from' => 1655978400,
+         'id' => 3566,
+         'source_id' => 'https://viz.berlin.de/2022/06/sons-2022/',
+         'text' => 'Ebertstr., Behrenstr., Cora-Berliner-Str.: Sportveranstaltung, Straßen gesperrt, Von 24.06.2022, ca. 12:00 Uhr bis 24.06.2022, ca. 24:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1656108000
        }
      
 );

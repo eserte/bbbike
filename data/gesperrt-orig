@@ -2023,7 +2023,7 @@ Unter den Eichen: Mittelstreifen, Tunnelrampe	1::igndisp 3344,4488 3266,4438 304
 Tempelhofer Damm: unbequem passierbarer Mittelstreifen	3nocross 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 Schönhauser Allee: U-Bahnviadukt	3nocross 10969,15944 10964,15896 10953,15787
 # REMOVED --- Schönhauser Allee: U-Bahnviadukt	3 10941,15697 10917,15525 11055,15504
-Berliner Str.: U-Bahnrampe	3nocross 10975,16896 10992,16829 11008,16729 11021,16605 11027,16553 11019,16465
+Berliner Str.: U-Bahnrampe	3nocross 10971,16907 10992,16829 11008,16729 11021,16605 11027,16553 11019,16465
 Wisbyer Str.: Straßenbahn	3nocross 11673,16367 11727,16358 11750,16354
 Wisbyer Str.: Straßenbahn	3nocross 11750,16354 11808,16343 11829,16339 11889,16328
 #: note: laut Kristina Nazarek ist die Wisbyer Str. in Höhe Talstr. überquerbar
@@ -3658,8 +3658,8 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 #: osm_watch: way id="690322561" version="4"
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: XXX laut osm offen
-#: also_indoor: traffic (G,H)
-#: last_checked: 2022-06-07 (osm)
+#: also_indoor: traffic (ex-G,ex-H)
+#: last_checked: 2022-06-13 (daf)
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
