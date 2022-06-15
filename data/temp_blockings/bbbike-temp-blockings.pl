@@ -686,7 +686,7 @@ EOF
        text  => 'OD Pritzwalk, zw. F.-Reuter-Str. und A.-Bartels-Weg; Brückenbauarbeiten; Vollsperrung: 16.08.2004-23.08.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -74489,80545 -74038,78181
+	q4 -74575,80611 -74430,80375 -74117,78048
 EOF
      },
      { from  => undef, # 
@@ -799,7 +799,7 @@ EOF
        text  => 'B 103; (Havelberger Str.); OD Pritzwalk, Bahnübergang Gleissanierung Vollsperrung 15.07.2005-17.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -74489,80545 -74653,81289
+	2 -74575,80611 -74665,81210
 EOF
      },
      { from  => 1093471200, # 2004-08-26 00:00
@@ -2831,7 +2831,7 @@ EOF
        text  => 'B 103; (Kyritzer Chaussee); OD Pritzwalk, zw. Fritz-Reuter-Str. u. Havelberger Str. Bau OU B189n halbseitig gesperrt; Einbahnstraße 15.09.2005-29.02.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -74489,80545 -74038,78181
+	q4 -74575,80611 -74430,80375 -74117,78048
 EOF
      },
      { from  => 1127772000, # 2005-09-27 00:00
@@ -11066,7 +11066,7 @@ EOF
        text  => 'B 103 Kyritz - Pritzwalk OD Buchholz, zw. Eggersdorfer Damm und OA Kanal- und Straßenbau Vollsperrung 19.02.2008-30.04.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -73678,77438 -73946,77861 -74038,78181
+	q4::inwork -73833,77566 -74021,77888 -74117,78048
 EOF
      },
      { from  => 1204585200, # 2008-03-04 00:00
@@ -14389,7 +14389,7 @@ EOF
        text  => 'B 103 Kyritz - Pritzwalk zw. Kyritz u. Gantikow, Bahnübergang Erneuerung Bahnübergang Vollsperrung 25.05.2009-21.06.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -60072,61047 -61764,62280
+	2::inwork -60095,61028 -61969,62314
 EOF
      },
      { from  => 1243116000, # 2009-05-24 00:00
@@ -14648,7 +14648,7 @@ EOF
        until => $isodate2epoch->("2022-06-19 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6, start => "2020-10-25T00:00:00"]],
-       text  => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Alt-Köpenick, Schlossplatz, Schlossinsel, Luisenhain, Rosenstr., Schüßlerplatz, Laurenzstr., Jägerstr., Böttcherstr.); außerdem Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Bahnhofstr. (17.06.2022 - 19.06.2022)',
+       text  => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Alt-Köpenick, Schlossplatz, Schlossinsel, Luisenhain, Rosenstr., Grünstr., Schüßlerplatz, Laurenzstr., Jägerstr., Böttcherstr.); vielleicht auch Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Bahnhofstr. (17.06.2022 - 19.06.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
@@ -14665,7 +14665,8 @@ EOF
 	2::temp 22175,4730 22246,4711
 	2::temp 22284,4653 22355,4660
 	2::temp 22212,4655 22214,4548
-# REMOVED ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
+	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
+# REMOVED ---	2::temp 22324,4586 22314,4604
 EOF
      },
      { from  => 1246207038, # 2009-06-28 18:37
@@ -17023,7 +17024,7 @@ EOF
        text  => 'B 103 Kyritz - Pritzwalk zw. Kollrep u. Abzw. K7012 Deckenerneuerung Vollsperrung 29.10.2009-07.11.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -67657,68360 -67922,68633 -69298,70111 -70126,70529 -70280,70719 -70377,70966 -70384,71350
+	2::inwork -67456,68308 -67855,68623 -69148,69912 -70215,70554 -70359,70727 -70422,70985 -70409,71337
 EOF
      },
      { from  => 1257634800, # 2009-11-08 00:00
@@ -21998,8 +21999,10 @@ EOF
 #: by: https://www.die-classic-days-berlin.de/programm-2/ (wird auf 2022 verschoben)
 #: by: https://www.die-classic-days-berlin.de/programm-2/?date=20220416 (geplant: 18. und 19. Juni 2022)
 #: note: kann im Juni oder Juli stattfinden
+#: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
+	q4::temp 5072,10701 5069,10662
 EOF
      },
      { from  => 1497556466, # 1370491200, # 2013-06-06 06:00
@@ -29295,11 +29298,11 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="28"
+#: osm_watch: way id="8655276" version="29"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-04-21 (mapillary)
+#: last_checked: 2022-06-14 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -33317,19 +33320,19 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-07-08 11:00:00"),
-       until => $isodate2epoch->("2022-08-01 17:00:00"), # undef, # Termin kann wohl nicht gehalten werden --- $isodate2epoch->("2021-12-15 17:00:00"),
-       text  => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr., noch geringe Einschränkungen; außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), vom 09.07.2021 11:00 bis voraussichtlich 01.08.2022',
+       until => $isodate2epoch->("2022-06-20 17:00:00"), # undef, # Termin kann wohl nicht gehalten werden --- $isodate2epoch->("2021-12-15 17:00:00"),
+       text  => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr., noch geringe Einschränkungen; außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
        type  => 'gesperrt',
-       source_id => 'viz2021:13.475242,52.50154,09.07.2021,11:00', # bis 20.6.2022, mittlerweile bis 1.8.2002
+       source_id => 'viz2021:13.475242,52.50154,09.07.2021,11:00', # bis 20.6.2022, mittlerweile bis 1.8.2002, mittlerweile wieder bis 20.6.2022
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden) --- mittlerweile ist der Bürgersteig frei
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-06-07
+#: last_checked: 2022-06-15
 #: check_frequency: 14d
-#: next_check: 2022-08-01
+#: next_check: 2022-06-20
 	q2::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="8"
 	q3::inwork 15279,10862 15355,10875

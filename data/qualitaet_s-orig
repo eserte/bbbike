@@ -265,7 +265,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Fahrbahninstandsetzung ab Herbst 2021, bis 2022)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/im-bezirk-stehen-bis-ende-2021-noch-einige-strassenbaumassnahmen-an_a320228
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2022-05-24
+#: last_checked: 2022-06-15
 # REMOVED --- #: next_check: 2021-10-01
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
 Dönhoffstr.: Asphalt	Q0 18134,9080 18161,9029 18221,8978 18299,8925 18375,8874 18451,8823 18518,8778 18609,8717 18727,8634
@@ -1035,7 +1035,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-06-14
+#: last_checked: 2022-06-15
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1268,7 +1268,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2022-05-11 vvv
+#: last_checked: 2022-06-15 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="6"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -2369,7 +2369,9 @@ Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 (Karl-Ziegler-Str. - Landschaftspark Johannisthal): Gehwegplatten	Q0- 18624,3402 18562,3461
 (Barbara-McClintock-Str. - Landschaftspark Johannisthal): Gehwegplatten	Q0- 18511,3290 18451,3352
 (Alexander-von-Humboldt-Weg - Landschaftspark Johannisthal): Gehwegplatten	Q0- 18689,3465 18633,3530
-(Eisenhutweg - Landschaftspark Johannisthal): Asphalt und Tennenbelag	Q0- 18164,2712 18167,2724 18229,2973
+(Eisenhutweg - Landschaftspark Johannisthal): Asphalt	Q0 18164,2712 18167,2724 18191,2822
+#: note: "Tennenbelag"
+(Eisenhutweg - Landschaftspark Johannisthal): wassergebundene Decke	Q1+ 18191,2822 18229,2973
 # REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.998669.php (Einbau "Tennenbelag", bis 13.11.2020) --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/wegsanierung-im-landschaftspark_a289111 --- #: XXX Qualität nach den Bauarbeiten überprüfen; während der Bauarbeiten ab 5.10.2020 abschnittsweise gesperrt, aber parallel verlaufender Weg existiert (und hier sind nicht so viele Routings) --- #: last_checked: 2020-11-15
 # REMOVED (Termin wurde nicht gehalten) --- #: next_check: 2020-11-13
 (Landschaftspark Johannisthal): Asphalt, einige Wurzelhebungen	Q0- 18229,2973 18228,2989 18046,3192
@@ -2458,7 +2460,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="11"
-#: last_checked: 2022-05-11
+#: last_checked: 2022-06-15
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -3804,7 +3806,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124 (Anfrage von Juli 2017)
 #: by: https://politik-bei-uns.de/file/597985b41ae6a07d5fb74916 (Antwort: soll teilweise mit einem Asphaltstreifen befestigt werden, erster von drei Bauabschnitten 2018)
 #: osm_watch: way id="47159365" version="14"
-#: last_checked: 2022-06-06
+#: last_checked: 2022-06-15
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -9463,12 +9465,13 @@ Zeuthener Weg: Asphalt	Q0 27466,-6764 27308,-6742
 (Uferweg): Waldweg	Q2+ 27938,-5802 27944,-5752 27999,-5665 28057,-5633 28116,-5532 28226,-5451 28303,-5330 28332,-5153 28492,-4966 28546,-4962 28540,-4811 28584,-4514 28684,-4319 28799,-4231 28902,-4016 29221,-3849 29418,-3704 29597,-3674 29783,-3739 30015,-3906 30133,-3840
 Zu den Gosener Bergen: Asphalt	Q0 30728,-2326 30646,-2732
 Am Oder-Spree-Kanal: Asphalt	Q0 30646,-2732 30629,-2817
-#: XXX möglicherweise mittlerweile Asphalt ohne Qualitätseinbußen?
-(Gosener Landstr. - Parkplatz): Asphalt	Q1+ 30621,235 30808,52 30869,-5 30942,-62
+(Gosener Landstr. - Parkplatz): Asphalt	Q0 30621,235 30808,52 30817,43 30869,-5 30926,-53
 (Gosener Damm - Seddinsee): Asphalt mit einigen Wurzelschäden	Q1 28809,462 29120,271
-(Gosener Damm - Seddinsee): Waldweg, teilweise mit Gras überwachsen, Wurzeln	Q3 29120,271 29481,44 29979,-120 30421,-424
-(Waldweg zur Sandgrube): Asphalt mit einigen Wurzelschäden	Q1 29120,271 29208,71
-(Waldweg zur Sandgrube): Asphalt	Q0 29208,71 29503,-611 29321,-685 29260,-774 28925,-1143 28886,-1163 28851,-1075
+(Gosener Damm - Seddinsee): Waldweg, teilweise mit Gras überwachsen, Wurzeln	Q3 29120,271 29481,44 29979,-120 30233,-293 30421,-424
+#: note: teilweise Feinschotter
+(Fahlenbergbrücke - Sandgrube): guter Waldweg	Q1 30817,43 30770,-13 30745,-66 30233,-293 29503,-611
+(Waldweg zur Sandgrube): Asphalt mit einigen Schäden	Q1+ 29120,271 29208,71
+(Waldweg zur Sandgrube): Asphalt mit einigen Schäden	Q1+ 29208,71 29503,-611 29321,-685 29260,-774 28925,-1143 28886,-1163 28851,-1075
 #: note: Qualität hat sich verschlechtert (2018-07), früher feiner Schotter
 (Straße zur Krampenburg - Uferweg am Langen See): Schotterweg, teilweise grober Schotter	Q2- 27202,173 26666,-54
 (Straße zur Krampenburg - Uferweg am Langen See): Waldweg, zweispurig	Q2- 26666,-54 26488,-131
@@ -31027,4 +31030,5 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 6267,15844
 Kreuzungsbereich asphaltiert	Q0 6945,15045
 Einmündungsbereich asphaltiert	Q0 6886,15156
 Kreuzungsbereich asphaltiert	Q0 6640,15421
+Einmündungsbereich betoniert	Q0 22279,4220
 #: ignore ^^^

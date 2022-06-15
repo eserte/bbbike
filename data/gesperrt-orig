@@ -3407,7 +3407,7 @@ Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	
 # 
 #: XXX laut Schild der Wasserbetriebe bis April 2023; Einbahnstraßenregelung fängt schon 30m westlich der Einmündung Zum Langen See an
 #: XXX man kommt als Radfahrer aber recht gut vorbei
-#: last_checked: 2022-06-06
+#: last_checked: 2022-06-15
 #: check_frequency: 180d
 #: next_check: 2023-04-30
 #: valid: -20230531
@@ -3499,7 +3499,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2022-06-04
+#: last_checked: 2022-06-15
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -3624,7 +3624,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.trei-wohnen.de/projekte/berlin-fuerstenberger-strasse/ (Fertigstellung Q3/2022)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung)
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht außerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht
-#: osm_watch: way id="308312347" version="5"
+#: osm_watch: way id="308312347" version="6"
 #: last_checked: 2022-05-25 (daf)
 #: check_frequency: 90d
 #: next_check: 2022-08-15
@@ -3895,24 +3895,22 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2022-05-11 vvv
+#: last_checked: 2022-06-15 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="729324149" version="7"
 #: osm_watch: way id="162120178" version="11"
 # REMOVED --- #: osm_watch: node id="6751063701" version="5"
 # REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
-#: note: Bauzäune können während der Arbeitszeiten offen sein
-#: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt
-#: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar?
-#: next_check: 2020-06-13
-Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
+# REMOVED --- #: note: Bauzäune können während der Arbeitszeiten offen sein --- #: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt --- #: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar? --- #: next_check: 2020-06-13 --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
 #: osm_watch: way id="719023970" version="10"
-Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21386,5251 21355,5254
+Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
 #: osm_watch: way id="719023969" version="10"
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So)
 #: osm_watch: way id="944115137" version="3"
 Henriette-Lustig-Str.: durch Bauzäune abgesperrt	2::inwork 21476,5048 21380,5003 21375,4974
+#: osm_watch: way id="719023971" version="7"
+Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 # REMOVED (fast fertig) --- Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21611,5119 21645,5135
 # REMOVED (offen) --- Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 21355,5254 21386,5251
 #: check_frequency ^^^

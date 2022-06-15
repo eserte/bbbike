@@ -17,10 +17,14 @@ Kronprinzessinnenweg: Gegenverkehrsregelung	X::inwork -4368,1731
 #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (Gegenverkehrsregelung mit Baustellenampel, bis 10.11.2022)
 #: by: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
-# REMOVED --- #: next_check: 2022-04-19
-#: next_check: 2022-11-10
-#: valid: -20221110
+#: last_checked: 2022-06-15 vvv
+#: next_check: 2022-11-10 vvv
+#: valid: -20221110 vvv
 Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 21984,6317
+Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: by: https://berliner-abendblatt.de/2022/04/27/das-sind-die-aktuellen-staufallen-in-berlin/ (bis Anfang Juni 2022)
 #: source_id: viz2021:13.450705,52.480066,28.04.2022,09:00 (hier: bis 4.7.2022)
@@ -78,7 +82,7 @@ Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2022-06-04
+#: last_checked: 2022-06-15
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
@@ -226,8 +230,8 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 #: next_check_id: KARLSHORSTER-2021
 #: note: provisorische Ampel
 #: last_checked: 2022-06-07
-#: next_check: 2022-08-01
-#: valid: 20210302-20220801
+#: next_check: 2022-06-20
+#: valid: 20210302-20220620
 	X::inwork 14805,10518
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022

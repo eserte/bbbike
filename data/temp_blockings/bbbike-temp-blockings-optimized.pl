@@ -1751,7 +1751,8 @@ push @temp_blocking,
 	2::temp 22175,4730 22246,4711
 	2::temp 22284,4653 22355,4660
 	2::temp 22212,4655 22214,4548
-# REMOVED ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
+	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
+# REMOVED ---	2::temp 22324,4586 22314,4604
 ',
          'from' => 1655330400,
          'id' => 1702,
@@ -1767,7 +1768,7 @@ push @temp_blocking,
                               '2020-10-25T00:00:00'
                             ]
                           ],
-         'text' => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Alt-Köpenick, Schlossplatz, Schlossinsel, Luisenhain, Rosenstr., Schüßlerplatz, Laurenzstr., Jägerstr., Böttcherstr.); außerdem Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Bahnhofstr. (17.06.2022 - 19.06.2022)',
+         'text' => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Alt-Köpenick, Schlossplatz, Schlossinsel, Luisenhain, Rosenstr., Grünstr., Schüßlerplatz, Laurenzstr., Jägerstr., Böttcherstr.); vielleicht auch Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Bahnhofstr. (17.06.2022 - 19.06.2022)',
          'type' => 'gesperrt',
          'until' => 1655661600
        },
@@ -3274,8 +3275,10 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: by: https://www.die-classic-days-berlin.de/programm-2/ (wird auf 2022 verschoben)
 #: by: https://www.die-classic-days-berlin.de/programm-2/?date=20220416 (geplant: 18. und 19. Juni 2022)
 #: note: kann im Juni oder Juli stattfinden
+#: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00
 # REMOVED --- #: tempex: 20170616T0400-20170619T0400
 	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
+	q4::temp 5072,10701 5069,10662
 ',
          'from' => 1655344800,
          'id' => 2439,
@@ -4343,11 +4346,11 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="28"
+#: osm_watch: way id="8655276" version="29"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-04-21 (mapillary)
+#: last_checked: 2022-06-14 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -5317,9 +5320,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden) --- mittlerweile ist der Bürgersteig frei
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-06-07
+#: last_checked: 2022-06-15
 #: check_frequency: 14d
-#: next_check: 2022-08-01
+#: next_check: 2022-06-20
 	q2::inwork; 15261,10738 15272,10790 15279,10862
 #: osm_watch: way id="984964447" version="8"
 	q3::inwork 15279,10862 15355,10875
@@ -5328,9 +5331,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1625734800,
          'id' => 3411,
          'source_id' => 'viz2021:13.475242,52.50154,09.07.2021,11:00',
-         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr., noch geringe Einschränkungen; außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), vom 09.07.2021 11:00 bis voraussichtlich 01.08.2022',
+         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr., noch geringe Einschränkungen; außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
          'type' => 'gesperrt',
-         'until' => 1659366000
+         'until' => 1655737200
        },
        undef,
        undef,
