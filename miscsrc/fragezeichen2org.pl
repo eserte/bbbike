@@ -321,7 +321,7 @@ for my $file (@files) {
 		 if ($subject =~ /zebrastreifen/i) {
 		     push @layers, 'C'; # OpenCycleMap has the best zebra rendering
 		 }
-		 push @extra_url_defs, ['OSM', 'http://www.openstreetmap.org/#map=17/'.$py.'/'.$px.'&layers='.join('', @layers)];
+		 push @extra_url_defs, ['OSM', 'https://www.openstreetmap.org/#map=17/'.$py.'/'.$px.'&layers='.join('', @layers)];
 	     }
 
 	     # fresh Mapillary URL
