@@ -317,11 +317,11 @@ for my $file (@files) {
 
 	     # OSM URL
 	     {
-		 my $layers_qs = '';
+		 my @layers = ('N'); # always turn notes on
 		 if ($subject =~ /zebrastreifen/i) {
-		     $layers_qs .= '&layers=C'; # OpenCycleMap has the best zebra rendering
+		     push @layers, 'C'; # OpenCycleMap has the best zebra rendering
 		 }
-		 push @extra_url_defs, ['OSM', 'http://www.openstreetmap.org/#map=17/'.$py.'/'.$px.$layers_qs];
+		 push @extra_url_defs, ['OSM', 'http://www.openstreetmap.org/#map=17/'.$py.'/'.$px.'&layers='.join('', @layers)];
 	     }
 
 	     # fresh Mapillary URL
