@@ -30359,24 +30359,29 @@ EOF
 	2::inwork 21558,12073 21562,12088 21564,12097
 EOF
      },
-     { from  => $isodate2epoch->("2020-09-04 08:00:00"), # 1571266200, # 2019-10-17 00:50
-       until => $isodate2epoch->("2020-09-06 23:00:00"), # 1571522399, # 2019-10-19 23:59
-       text  => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. wegen einer Veranstaltung (Staatsoper für alle) voraussichtlich gesperrt, 5.9.2020 bis 6.9.2020 jeweils zwischen 17:00 und 23:00 Uhr',
+     { from  => $isodate2epoch->("2022-06-17 08:00:00"), # 1571266200, # 2019-10-17 00:50
+       until => $isodate2epoch->("2022-06-19 15:00:00"), # 1571522399, # 2019-10-19 23:59
+       text  => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. wegen einer Veranstaltung (Staatsoper für alle) voraussichtlich gesperrt, 18.6.2022 16:00 Uhr bis 19.6.2022 15:00 Uhr',
        type  => 'gesperrt',
        #source_id => 'https://twitter.com/VIZ_Berlin/status/1183048455884816386',
        data  => <<EOF,
 #: also_indoor: traffic (G,H)
 #: source_id: 2147344351
 #: source_id: 2147344352
+#: source_id: viz2021:13.388878,52.516998,19.01.2022,11:00
+#: source_id: viz2021:13.388878,52.516998,18.06.2022,16:00
+#: by: https://www.berlin.de/en/events/2509318-2842498-staatsoper-fuer-alle.en.html
 	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506 10243,12546 10300,12587 10352,12627 10431,12709
 	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
 	2::temp 9664,12387 9680,12232
+	2::temp 9737,12238 9702,12307 9664,12387
+	2::temp 9680,12232 9702,12307 9713,12392
 	3 10291,12600 10300,12587 10363,12535
-	3 10174,12284 10102,12384 10063,12438 9956,12617
+	3 10102,12384 10063,12438 9956,12617
 	3 9873,12315 9858,12410 9846,12516
 	3 9953,12533 9984,12426 9990,12404
 	3 10363,12535 10300,12587 10291,12600
-	3 9956,12617 10063,12438 10102,12384 10174,12284
+	3 9956,12617 10063,12438 10102,12384
 	3 9990,12404 9984,12426 9953,12533
 	3 9846,12516 9858,12410 9873,12315
 EOF
@@ -30950,7 +30955,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-06-11
+#: last_checked: 2022-06-16
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32932,6 +32937,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
 #: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anzengruber-und-sanderstrasse-werden-sonntags-teilweise-zum-spielplatz_a348422
 #: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen
 #: next_check: 2022-09-15
 	q4::temp::play 11917,9663 12074,9689
@@ -32945,8 +32951,9 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
 #: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
-#: XXX Spielstraße ab 2023 vom 15.05.
-#: next_check: 2022-06-19
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anzengruber-und-sanderstrasse-werden-sonntags-teilweise-zum-spielplatz_a348422
+#: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen
+#: next_check: 2022-09-15
 	q4::temp::play 13038,8394 12856,8344
 EOF
      },
@@ -35157,6 +35164,7 @@ EOF
 #: next_check_id: WILTBERG-2022
 #: by: https://nitter.net/VIZ_Berlin/status/1523578356306169857#m
 #: by: https://nitter.net/pic/media%2FFSTWWSqXIAAPomO.jpg%3Fname%3Dorig
+#: by: https://www.berliner-woche.de/buch/c-verkehr/kinder-sollen-sicher-zur-schule-und-kita-kommen_a348113 (demnächst Abriss der Eisenbahnbrücke)
 	q4::inwork; 16166,25767 16121,25818
 EOF
      },
@@ -35299,6 +35307,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/verkehrszeichenplan-kranoldplatz-26-06-2022-7-23-uhr-quelle-abs-verkehrstechnik-gmbh.png
 #: by: https://www.standortmanagement-lichterfelde-ost.de/neuigkeiten/event-auf-dem-kranoldplatz-26-06-2022/
+#: by: https://berliner-abendblatt.de/2022/06/15/stadtteilfest-parkverbot-am-kranoldplatz/
 	2::temp 5417,2383 5317,2345
 EOF
      },
@@ -35312,6 +35321,7 @@ EOF
 #: source_id: viz2021:13.369855,52.515768,15.06.2022,05:00
 #: by: https://viz.berlin.de/2022/06/sons-2022/
 #: by: https://nitter.net/pic/orig/media%2FFVMxeqIWYAAvJKt.jpg
+#: by: https://berliner-abendblatt.de/2022/06/16/vollsperrung-am-tiergarten/
 	2::temp 8538,12245 8592,12252
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
 	3::temp 8391,12389 8344,12221 8327,12174

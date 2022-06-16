@@ -1035,7 +1035,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-06-15
+#: last_checked: 2022-06-16
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2081,7 +2081,7 @@ Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,1
 #: source_id: 2147342864 (inaktiv)
 #: source_id: 2147345560 (inaktiv) (Radwegarbeiten)
 #: check_frequency: 120d vvv
-#: last_checked: 2022-04-03 (mapillary) vvv
+#: last_checked: 2022-06-15 (mapillary) vvv
 Landsberger Allee: Beton-Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 #: last_checked ^^^
@@ -12198,13 +12198,16 @@ Ruppiner Chaussee: Asphalt, einige Schäden	Q1+;Q0- 488,22275 455,22285 355,22344
 # 
 #: next_check_id: BEBAUUNGSPLAN-XVI-81
 # REMOVED --- #: osm_watch: way id="567597386" version="8"
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1217133.php (Bauarbeiten im Einmündungsbereich Fürstenwalder Allee/Mausohrweg bis zum 18. August 2022)
 #: osm_watch: way id="567597383" version="11"
 #: add_fragezeichen: wann wird die Fahrbahndecke endgültig hergestellt? vvv
 #: last_checked: 2022-05-11 vvv
 #: check_frequency: 120d vvv
+#: next_check: 2022-08-18 vvv
 Mausohrweg: Asphalt, letzte Deckschicht fehlt	Q1+ 33327,2979 33296,2894
 Mausohrweg: Asphalt, letzte Deckschicht fehlt	Q1+ 33167,2940 33296,2894 33406,2852 33503,2818
 Abendseglersteig: Asphalt, letzte Deckschicht fehlt	Q1+ 33406,2852 33383,2792 33267,2810 33139,2835 33167,2940
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
