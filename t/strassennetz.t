@@ -86,7 +86,7 @@ if ($do_xxx) {
 	my $route = dclone $route;
 	is($net->get_point_comment($route, 0, undef), 0, "Without multiple");
 	$route = [ reverse @$route ];
-	like(($net->get_point_comment($route, 0, undef))[0], qr/Kopfsteinpflaster Richtung Süden/i);
+	like(($net->get_point_comment($route, 0, undef))[0], qr/Kopfsteinpflaster sowie asphaltierter Gleisbereich/i);
     }
 
     {
@@ -97,7 +97,7 @@ if ($do_xxx) {
 	my $route = dclone $route;
 	is(scalar $net->get_point_comment($route, 0, undef), 0, "With multiple");
 	$route = [ reverse @$route ];
-	like(($net->get_point_comment($route, 0, undef))[0], qr/Kopfsteinpflaster Richtung Süden/i);
+	like(($net->get_point_comment($route, 0, undef))[0], qr/Kopfsteinpflaster sowie asphaltierter Gleisbereich/i);
     }
 }
 

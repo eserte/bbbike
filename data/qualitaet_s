@@ -1573,8 +1573,7 @@ Am Teltowkanal: feiner Schotter	Q1 3375,1026 3366,1007 3370,955 3355,893 3304,83
 Akeleiweg: Asphalt	Q0 17894,2783 17631,3200
 Akeleiweg: Asphalt	Q0 17631,3200 17603,3240
 Akeleiweg: Asphalt	Q0 17603,3240 17377,3571
-Winckelmannstr.: Kopfsteinpflaster an den Rändern, in der Mitte asphaltiert	Q1 17428,4503 17476,4337
-Winckelmannstr.: Kopfsteinpflaster Richtung Süden	Q2; 17476,4337 17507,4216 17503,4148 17468,3979
+Winckelmannstr.: Kopfsteinpflaster sowie asphaltierter Gleisbereich	Q2; 17428,4503 17476,4337 17507,4216 17503,4148 17468,3979
 Zwiestädter Str.: Asphalt	Q0 13513,7532 13392,7648
 Am Orankesee: Asphalt	Q0 15856,15924 15815,15939 15758,15932
 Am Orankesee: Parkweg	Q1 15758,15932 15703,15953 15587,15852 15534,15911 15486,16000 15479,16060
@@ -2279,7 +2278,9 @@ Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0 11917,11186 11944,11152
 (Weg am Humboldthain): grobes Verbundsteinpflaster	Q2 9255,15816 9092,15789
 (Weg am Humboldthain): Verbundsteinpflaster	Q1 9092,15789 8934,15740
 Wasserweg: Kopfsteinpflaster	Q2 15680,8914 15873,8884
-Wasserweg: fester Sandweg	Q2 15873,8884 15981,8872 16028,8867 16086,8860 16161,8852 16201,8860
+Wasserweg: fester Sandweg	Q2 15873,8884 15981,8872 16028,8867
+Wasserweg: alter Asphalt	Q1 16028,8867 16086,8860 16129,8855
+Wasserweg: fester Sandweg	Q2 16129,8855 16201,8860
 Wasserweg: Beton/Asphalt, in der Fahrbahnmitte fehlt der Asphalt	Q1 16201,8860 16358,8841 16388,8821
 Kiehnwerderallee: asphaltiert, einzelne Wurzelhebungen	Q0 16388,8821 16436,8687 16490,8432 16534,8182 16602,7810 16620,7574 16633,7434
 (Uferweg - Kiehnwerderallee): Waldweg	Q2 16627,8581 16577,8581 16436,8687
@@ -10238,7 +10239,7 @@ Waldstr.: Beton	Q0 22685,-1421 22985,-1319
 (Volkspark Friedrichshain, von/zur Weinstr.): Asphalt	Q0 12126,13538 12006,13481 11995,13463
 Sebastianstr.: Asphalt, einige Schäden	Q0 10644,11569 10818,11269 10826,11251
 Waldowstr.: Asphalt, einige Schäden	Q0 10309,20562 10379,20309 10383,20295 10435,20098 10486,19955 10508,19910
-Bahnhofstr. - S-Bhf. Lichterfelde Ost: Kopfsteinpflaster	Q2 5332,2568 5367,2528
+Bahnhofstr. - S-Bhf. Lichterfelde Ost: Kopfsteinpflaster	Q2 5332,2568 5370,2542
 Steinmetzstr.: Mosaikpflaster	Q1 7698,10147 7657,9942 7625,9771
 (Johannisthaler Chaussee - Wildmeisterdamm): Asphalt	Q0 13045,2107 13064,2090 13157,2116
 Am Treptower Park, Nebenstraße: Kleinsteinpflaster	Q2; 14614,9052 14558,9111
@@ -10475,7 +10476,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0 5621,12150 5606,12232 5604,12244
 (Margueritenring - Köpenicker Str.): alter Asphalt	Q1 17046,1708 17100,1650
 (Grünstreifen 1929): Verbundsteinpflaster	Q1 17102,2420 17039,2358 17179,2186 17194,2131 17193,2062
 (Am Plänterwald - Spreepark): relativ glattes Pflaster	Q1 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
-(Am Plänterwald - Spreepark): unbefestigt	Q2 16084,8833 16086,8860
+(Am Plänterwald - Spreepark): unbefestigt und Asphalt	Q1 16084,8833 16086,8860
 Lepsiusstr.: Asphalt mit einigen Schäden und Schlaglöchern	Q0 4520,5793 4558,5863 4603,5954 4646,6040 4652,6052 4689,6122 4716,6173 4730,6198 4776,6284 4840,6405 4846,6417 4894,6509
 Reichenhaller Str.: Verbundsteinpflaster	Q1 3094,7790 3198,7787
 Hilda-Geiringer-Weg: gepflastert	Q2 8236,13495 8241,13393
@@ -10922,6 +10923,7 @@ Distelfinkweg [Stichstraße]: Beton	Q0 15460,3118 15512,3157
 Belßstr.: Asphalt mit einigen Schäden	Q1; 7777,2447 7899,2391
 (Am Buckersberg - Volkerweg): unbefestigte Straße	Q2 16090,4021 16039,4062
 Samoastr.: Gehwegplatten	Q0 6886,15156 6833,15215
+Lugierring: Verbundsteinpflaster	Q1 20207,789 20142,824
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

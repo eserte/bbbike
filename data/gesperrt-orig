@@ -432,7 +432,7 @@ Stiftsweg	1s:q3 11001,18528 11239,18832 11263,18842
 Bleicheroder Str.	1 11263,18842 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11818,19089
 #: by: ^^^
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
-# REMOVED (offen) --- Spreepark	2 16028,8867 16086,8860 16161,8852
+# REMOVED (offen) --- Spreepark	2 16028,8867 16086,8860 16129,8855
 #: by: Felix Schröder
 #: confirmed_by: srt
 Staakener Str.	1 -4147,14274 -4155,14261 -4316,14240 -4390,14257
@@ -1319,20 +1319,6 @@ Heinrichplatz	1 11734,10563 11754,10516
 # 
 (Landsberger Allee - Frank-Schweitzer-Str.)	1 19205,14980 19244,14980
 (Frank-Schweitzer-Str. - Landsberger Allee)	1 19244,14980 19214,14966
-# 
-#: by: http://www.taz.de/!5516248/ (möglicherweise dauerhaft)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-05-16-prot-fahrratsitzung3.pdf (Vorplanung)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7448
-#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/bahnhofseingang-wieder-oeffnen_a269101
-#: by: https://leute.tagesspiegel.de/tempelhof-schoeneberg/macher/2020/08/11/134285/am-bayerischen-platz-soll-der-fahrstuhl-nun-kommen/ ("Überlegungen")
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf (Bahn ist nicht bereit, den Eingang für den Radverkehr zu öffnen)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7448&date=20210314 (Antwort: Öffnung wird geprüft)
-#: confirmed_by: srt
-#: last_checked: 2022-04-07
-#: check_frequency: 270d
-Bhf. Südkreuz: Eingang gesperrt	2 7838,7848 7804,7783
-# 
 Weidenweg (Friedrichshain)	1 13786,12636 13771,12607
 An den Grachten	1s:q2 22132,10915 22166,10936 22169,10969 22172,10996 22181,11057 22191,11130
 Am Groen	1s:q2 22142,11116 22146,11086 22131,11084 22115,11082 22110,11107
@@ -3499,7 +3485,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2022-06-15
+#: last_checked: 2022-06-18
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -3756,7 +3742,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-06-06
+#: last_checked: 2022-06-18
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -4163,8 +4149,8 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/schiffsanleger-und-eierhaeuschen-sollen-bis-ende-des-jahres-fertig-werden_a335405 (Ende 2022 fertig?)
 #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/spreepark-wird-fuer-radfahrer-und-fussgaenger-besser-erreichbar_a346511 (Modernisierung des Stichwegs)
 #: priority: #C
-#: last_checked: 2022-05-18
-#: check_frequency: 180d
+#: last_checked: 2022-06-18
+#: check_frequency: 120d
 #: next_check: 2022-12-31
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
 # 

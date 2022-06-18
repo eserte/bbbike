@@ -2598,7 +2598,7 @@ Straße 12 (Neukölln)	N 13882,6674 13881,6634 13915,6592
 (Grenzallee - Britzer Hafensteg)	NN 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2022-06-08 vvv
+#: last_checked: 2022-06-17 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: valid: 20140224-20221231
@@ -5862,8 +5862,8 @@ Orionstr.	N 15751,8250 15543,8525
 #: oldname: -20110224: Pappelallee (Plänterwald)
 Erwin-Bennewitz-Weg	N 15473,8531 15378,8668
 (Am Plänterwald - Erwin-Bennewitz-Weg)	NN 15499,8496 15488,8508 15473,8531
-Wasserweg (Plänterwald)	NN 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16161,8852 16201,8860 16358,8841 16388,8821
-# REMOVED (wird anscheinend renaturiert) --- (Umfahrung Spreepark)	NN 16028,8867 16084,8833 16161,8852
+Wasserweg (Plänterwald)	NN 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860 16358,8841 16388,8821
+# REMOVED (wird anscheinend renaturiert) --- (Umfahrung Spreepark)	NN 16028,8867 16084,8833 16129,8855
 #: alias: Pionierweg
 (Am Plänterwald - Spreepark)	NN 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833 16086,8860
 Kiehnwerderallee	NN 16388,8821 16436,8687 16490,8432 16534,8182 16602,7810 16620,7574 16633,7434
@@ -16407,7 +16407,7 @@ Hüttendorfer Weg	N 21463,-280 21409,-109
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_1.pdf?start&ts=1392044607&file=planungsvariante_1.pdf
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_2.pdf?start&ts=1392044611&file=planungsvariante_2.pdf
 #: osm_watch: way id="147717012" version="5"
-#: last_checked: 2022-05-14 (mapillary)
+#: last_checked: 2022-06-18
 #: check_frequency: 360d
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	N 21527,547 21368,478 21275,389
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	NN 21275,389 21262,375
@@ -17039,8 +17039,8 @@ Marienstr. (Lichterfelde)	N 5196,2960 5253,3066 5311,3169 5371,3279 5468,3302
 Bassermannweg	N 5549,3038 5311,3169 5183,3242
 Bahnhofstr. (Lichterfelde)	N 4776,2873 5065,2715 5332,2568
 #: note: möglicherweise als Jungfernstieg ausgeschildert
-(Bahnhofstr. - S-Bhf. Lichterfelde-Ost)	N 5332,2568 5367,2528
-(Fußgängertunnel Bahnhof Lichterfelde Ost)	NN 5367,2528 5471,2470
+(Bahnhofstr. - S-Bhf. Lichterfelde-Ost)	N 5332,2568 5370,2542
+(Fußgängertunnel Bahnhof Lichterfelde Ost)	NN 5370,2542 5471,2470
 Marienplatz	N 5115,2803 5230,2840 5196,2960 5079,2929 5115,2803
 Promenadenstr.	N 5425,2735 5230,2840
 Promenadenstr.	N 5079,2929 4871,3045
@@ -19301,6 +19301,7 @@ Franz-Schmidt-Str.	N 16410,25333 16369,25230
 Chaukenstr.	N 20252,901 20207,789 20171,698
 Chaukenstr. [21-37]	N 20207,789 20270,760
 Chaukenstr. [21-37]	N 20255,722 20270,760 20278,780
+Lugierring	N 20207,789 20142,824
 Mittelweg (Altglienicke)	N 20171,698 20136,608 20082,463 20035,348
 #: XXX_osm: bei osm als Lehmusstr. gekennzeichnet, wahrscheinlich falsch
 Mittelweg (Altglienicke)	N 20098,359 20082,463

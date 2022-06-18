@@ -27971,11 +27971,12 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1216456.php (ab 21.6.2022 Vollsperrung, Freigabe am 28.6.2022)
 #: by: https://berliner-abendblatt.de/2022/06/17/vollsperrung-in-weissensee/
 #: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
+#: XXX für die Sperrung ab dem 20. Juni 2022: q3 -> q4 + Text ändern
 #: also_indoor: traffic (G(wieder),H(falsch?),B)
 #: priority: #B vvv
 #: last_checked: 2022-06-10 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2022-06-20 vvv
+#: next_check: 2022-06-19 vvv
 # REMOVED --- #: next_check: 2022-06-28 vvv
 	q3::inwork 13391,16436 13630,16629
 Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
@@ -30956,7 +30957,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-06-16
+#: last_checked: 2022-06-18
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -33133,8 +33134,8 @@ EOF
 EOF
      },
      { from  => 1625349600, # 2021-07-04 00:00
-       until => 1659304799, # 2022-07-31 23:59
-       text  => 'Bruno-Taut-Str.: Bauarbeiten, Einbahnstraße, offen Richtung Am Falkenberg, vom 5. Juli 2021 bis Juli 2022',
+       until => $isodate2epoch->("2022-07-08 17:00:00"), # 1659304799, # 2022-07-31 23:59
+       text  => 'Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage, Fahrbahn gesperrt, voraussichtlich bis 8. Juli 2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1095642.php',
        data  => <<EOF,
@@ -33142,7 +33143,10 @@ EOF
 #: by: https://abendblatt-berlin.de/2021/06/23/mit-den-ferien-kommen-die-baustellen/
 #: also_indoor: traffic (G,B)
 #: source_id: viz2021:13.569262,52.411283,12.07.2021,09:00 (hier: bis 31.1.2022) (inaktiv)
-	q4::inwork; 21858,811 21902,877 21977,988 22034,1006 22092,999
+#: source_id: viz2021:13.56928,52.411326,13.06.2022,07:00 (bis 8.7.2022)
+#: next_check: 2022-07-08
+	q4::inwork 21858,811 21902,877
+# REMOVED ---	q4::inwork; 21902,877 21977,988 22034,1006 22092,999
 EOF
      },
      { from  => undef,
@@ -33338,7 +33342,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden) --- mittlerweile ist der Bürgersteig frei
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-06-15
+#: last_checked: 2022-06-18
 #: check_frequency: 14d
 #: next_check: 2022-06-20
 	q2::inwork; 15261,10738 15272,10790 15279,10862
@@ -35015,15 +35019,15 @@ EOF
 EOF
      },
      { from  => 1650305075, # 2022-04-18 20:04
-       until => 1656626399, # 2022-06-30 23:59
+       until => $isodate2epoch->("2022-10-31 17:00:00"), # 1656626399, # 2022-06-30 23:59
        #text  => 'Pionierstr.: Bauarbeiten, Einbahnstraßenregelung (offen Richtung Westen), evtl. sind auch Radfahrer betroffen, voraussichtlich bis 30. Juni 2022',
-       text  => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), voraussichtlich bis 30. Juni 2022',
+       text  => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), vermutlich bis Ende Oktober 2022',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/falkenhagener-feld/c-bauen/zwischen-bauzeit-und-bauzeitraum-in-der-pionierstrasse_a342872',
        data  => <<EOF,
 #: also_indoor: traffic (G,H,B)
-#: XXX kommt es zu einer Verlängerung der Bauarbeiten?
-#: next_check: 2022-06-22
+#: XXX kommt es zu einer Verlängerung der Bauarbeiten? (ursprünglich angesetzt bis Ende Juni 2022, wahrscheinlich Verlängerung bis Ende Oktober 2022)
+#: next_check: 2022-06-30
 	q4::inwork; -5804,16415 -5830,16356 -5849,16199
 # REMOVED (Radspur existiert in der Gegenrichtung) ---	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415
 EOF
@@ -35351,7 +35355,9 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/2022/06/sons-2022/',
        data  => <<EOF,
+#: source_id: viz2021:13.37082,52.517842,18.06.2022,09:00
 	1::temp 8122,12603 8119,12414
+#: source_id: viz2021:13.3546,52.51713,18.06.2022,09:00
 	1::temp 8119,12414 8070,12409 8017,12359 7875,12363 7821,12367 7627,12380 7514,12387 7437,12368 7215,12295 7031,12320
 EOF
      },
@@ -35363,6 +35369,41 @@ EOF
        data  => <<EOF,
 	2::temp 8743,12099 8861,12125
 	2::temp 8737,12098 8595,12066 8577,11896 8783,11959 8844,11984 8901,12008
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Bhf. Südkreuz: Ein/Ausgang Nord-Süd-Grünzug kann gesperrt sein',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+#: by: http://www.taz.de/!5516248/ (möglicherweise dauerhaft)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-05-16-prot-fahrratsitzung3.pdf (Vorplanung)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7448
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/bahnhofseingang-wieder-oeffnen_a269101
+#: by: https://leute.tagesspiegel.de/tempelhof-schoeneberg/macher/2020/08/11/134285/am-bayerischen-platz-soll-der-fahrstuhl-nun-kommen/ ("Überlegungen")
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf (Bahn ist nicht bereit, den Eingang für den Radverkehr zu öffnen)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7448&date=20210314 (Antwort: Öffnung wird geprüft)
+#: note: offen, gesehen: 2022-06-18 (abends und nachts)
+#: confirmed_by: srt
+#: last_checked: 2022-06-18
+#: check_frequency: 30d
+	2::temp 7838,7848 7804,7783
+EOF
+     },
+     { from  => undef, # 
+       until => 1704042000, # 2023-12-31 18:00
+       text  => 'Fischerinsel: Wege können wegen Bauarbeiten gesperrt sein',
+       type  => 'gesperrt',
+       source_id => 'https://berliner-abendblatt.de/2022/06/01/arbeiten-an-der-fischerinsel-werden-fortgesetzt/',
+       data  => <<EOF,
+#: by: https://berliner-abendblatt.de/2022/06/01/arbeiten-an-der-fischerinsel-werden-fortgesetzt/ (Bauarbeiten bis Ende 2023)
+#: by: https://www.berliner-woche.de/mitte/c-bauen/fischerinsel-park-wird-umgestaltet_a347705
+#: last_checked: 2022-06-17 (mapillary)
+#: check_frequency: 30d
+#: next_check: 2023-12-31
+	2::inwork 10824,11992 10742,12033 10713,12014
 EOF
      },
     );

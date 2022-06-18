@@ -506,7 +506,7 @@ Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwor
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
 #: osm_watch: way id="40451054" version="12"
-#: last_checked: 2022-06-04
+#: last_checked: 2022-06-18
 #: next_check: 2022-08-05
 # REMOVED --- #: valid: -20220401
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
@@ -696,7 +696,7 @@ Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 #: by: https://www.kms-sonne.de/baustellennews (nun bis Herbst 2022)
 #: by: https://www.kms-sonne.de/assets/2022/02/Baustellenuebersicht-2022-02.pdf
 #: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022) (bis 1.9.2022)
-#: last_checked: 2022-05-10
+#: last_checked: 2022-06-17 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2022-09-01
 Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12368,8356 12582,8408
@@ -714,7 +714,7 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022)
 #: also_indoor: traffic (G(zu früh+falsche Richtung),B)
 #: priority: #A
-#: last_checked: 2022-03-16
+#: last_checked: 2022-06-17 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2022-09-01
 Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4::inwork; 12494,8501 12349,8464
@@ -742,6 +742,10 @@ Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4:
 # REMOVED (fertig, noch immer KS) --- #: next_check_id: FRIEDEL-2014 --- #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht? --- #: last_checked: 2014-12-12 --- #: check_frequency: 60d --- Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
 ### Lichtenberg ###
+# 
+#: last_checked: 2022-06-18
+#: check_frequency: 14d
+Gustav-Holzmann-Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 16119,9689 16302,9865
 # 
 #: next_check_id: ROEDELIUSPLATZ-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
@@ -1814,7 +1818,7 @@ Wildensteiner Str.: enge Straße	q0- 18627,8475 18528,8331
 Wildensteiner Str.: enge Straße	q1 18528,8331 18416,8163 18365,8094 18333,8059
 # REMOVED --- #: XXX noch immer eine enge Stelle? --- (Am Carlsgarten - Waldowallee): enger Abschnitt under der Bahnbrücke	q2 19460,7954 19504,8003 19558,8064
 Linienstr./Oranienburger Str.: Fußgänger	q2 9225,13389 9312,13388
-#: note: falls die Umfahrungsstellen nicht zugeparkt sind, was wohl häufiger der Fall ist (gesehen: 2013-03-09, 2016-10-30)
+#: note: falls die Umfahrungsstellen nicht zugeparkt sind, was wohl häufiger der Fall ist (gesehen: 2013-03-09, 2016-10-30, 2022-06-18)
 Fontanestr.: zwei Schwellen, können evtl. umfahren werden	q1 18240,6845 18254,6679
 #: note: normalerweise wohl keine Umfahrungsmöglichkeit
 Plönzeile: zwei Schwellen	q2 18574,6401 18676,6333
@@ -3068,7 +3072,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="9"
-#: last_checked: 2022-06-04 (mapillary)
+#: last_checked: 2022-06-18
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-09-02
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18634,5484 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
@@ -4248,7 +4252,7 @@ Holwedestr.: schmale Straße	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,
 # 
 #: by: Steini:
 #: confirmed_by: srt
-(Fußgängertunnel Bahnhof Lichterfelde Ost): Fußgänger, Radfahrer sollen schieben	q4 5367,2528 5471,2470
+(Fußgängertunnel Bahnhof Lichterfelde Ost): Fußgänger, Radfahrer sollen schieben	q4 5370,2542 5471,2470
 # 
 #: by: garci
 Am Schloßpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,18704

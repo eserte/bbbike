@@ -1012,7 +1012,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.46264,52.49544,18.05.2022,16:23 (bis 2028) (inaktiv)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-06-16 vvv
+#: last_checked: 2022-06-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-30 vvv
 	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1158,7 +1158,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
-#: last_checked: 2022-05-28
+#: last_checked: 2022-06-18
 #: check_frequency: 45d
 	RW3; 7236,5685 7497,5610
 	RW1; 8593,5491 8365,5502 8200,5510
@@ -1381,7 +1381,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2022-06-08 vvv
+#: last_checked: 2022-06-17 (mapillary) vvv
 #: check_frequency: 30d vvv
 #	RW1;RW2 14051,6731 14139,6786 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
@@ -1759,7 +1759,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/ziel-ein-durchgaengig-sicherer-radweg_a337148 (Erwähnung)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2022-06-15 vvv
+#: last_checked: 2022-06-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -1793,7 +1793,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2022-06-08
+#: last_checked: 2022-06-18
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2429,7 +2429,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=711261#post711261 (1. Bauvorhaben (nördl.); geplante Fertigstellung: Sommer 2025)
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
-#: last_checked: 2022-06-16 vvv
+#: last_checked: 2022-06-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4280,7 +4280,7 @@ Grünmarkierung	RW4; 13891,7107 13627,7047 13500,7018 13336,6986
 Grünmarkierung	RW3; 13336,6986 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2022-04-18 vvv
+#: last_checked: 2022-06-17 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2022-12-31 vvv
 #: valid: 20140224-20221231 vvv
@@ -4545,7 +4545,7 @@ Verbundsteinpflaster	RW2; 19904,3464 19857,3514 19812,3561 19735,3643 19676,3705
 #: source_id: viz2021:13.51214,52.454886,20.05.2022,06:00 (bis 4.6.2022) (inaktiv)
 #: source_id: viz2021:13.50984,52.45636,20.05.2022,06:00 (bis 6.6.2022) (inaktiv)
 #: source_id: viz2021:13.51214,52.454886,20.06.2022,06:00 (bis 1.7.2022)
-#: last_checked: 2022-06-04
+#: last_checked: 2022-06-18
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2022-07-01
 provisorisch geschützter Radstreifen	RW4; 17886,5587 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705
@@ -5376,7 +5376,9 @@ Verbundsteinpflaster	RW2; 12403,14663 12371,14615 12317,14535
 Grünmarkierung	RW4; 11226,12945 11139,13008
 Radspur zwischen Fahrspuren	RW3; 11139,13008 11226,12945
 	RW6;RW6 17470,4998 17463,4964 17428,4792
-asphaltiert	RW1;RW1 17648,5338 17705,5223 17726,5166 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667
+asphaltiert	RW2; 17648,5338 17705,5223 17726,5166 17763,5104
+asphaltiert	RW1; 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667
+asphaltiert	RW1; 18042,4667 17951,4785 17879,4910 17775,5083 17763,5104 17726,5166 17705,5223 17648,5338
 #: by: bahninfo-forum
 #: confirmed_by: srt
 #: by: https://twitter.com/VIZ_Berlin/status/1453634816461713410/photo/1
@@ -6333,14 +6335,15 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünmarkierung geben
-#: last_checked: 2022-06-08 vvv
+#: last_checked: 2022-06-17 (mapillary) vvv
 #: check_frequency: 60d
-Gelbmarkierung	RW3;RW3 12639,8344 12598,8390
+temporäre Radspur aufgehoben	RW0; 12639,8344 12598,8390
+Gelbmarkierung	RW3; 12598,8390 12639,8344
 	RW4; 12639,8344 12689,8289 12714,8249
 #: last_checked ^^^
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2022-06-08
+#: last_checked: 2022-06-17 (mapillary)
 #: check_frequency: 60d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünmarkierung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12916,7775
@@ -6375,7 +6378,7 @@ Grünmarkierung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 12823
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2022-06-08
+#: last_checked: 2022-06-17 (mapillary)
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
@@ -6683,7 +6686,7 @@ asphaltiertes Straßenbahnkap	RW1; 16666,15781 16692,15803 16724,15830
 	RW3; 1368,-1 1345,184
 	RW6;RW6 13410,11447 13427,11431 13473,11456
 Gehweg für Radfahrer frei	RW1; 22162,1067 22092,999
-	RW4; 22092,999 22034,1006 21977,988
+	RW4;RW4 22092,999 22034,1006 21977,988
 	RW3;RW3 9873,18364 9821,18392 9565,18555
 	RW3; 9565,18555 9567,18599 9542,18634 9495,18639 9457,18612 9454,18570 9480,18539 9524,18531 9565,18555
 die letzten Meter mit benutzungspflichtiger Radspur	RW3; 9457,18612 9366,18669 9279,18724
@@ -7097,7 +7100,7 @@ asphaltiert	RW1; 25522,4935 25519,4830
 	RW4; 16485,25516 16414,25575
 #: next_check_id: KARLMARXSTR-2018
 #: XXX Zwischendurch eine provisorische Radspur, wurde bei der Baustellenumstellung Anfang Februar 2021 wieder entfernt
-#: last_checked: 2022-03-16
+#: last_checked: 2022-06-17 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2022-07-31
 # REMOVED --- provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
