@@ -14648,7 +14648,7 @@ EOF
        until => $isodate2epoch->("2022-06-19 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6, start => "2020-10-25T00:00:00"]],
-       text  => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Alt-Köpenick, Schlossplatz, Schlossinsel, Luisenhain, Rosenstr., Grünstr., Schüßlerplatz, Laurenzstr., Jägerstr., Böttcherstr.); vielleicht auch Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Bahnhofstr. (17.06.2022 - 19.06.2022)',
+       text  => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt können gesperrt sein (vermutlich: Luisenhain, Schlossinsel, Grünstr., Schüßlerplatz); außerdem Umzug am Samstag Nachmittag in der Köpenicker Bahnhofstr. (17.06.2022 - 19.06.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
@@ -14656,15 +14656,17 @@ EOF
 #: by: https://www.berlin.de/events/3415964-2229501-koepenicker-sommer.html (2021: Termin noch nicht bekannt) (mittlerweile gibt's den Termin)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211381.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1209970.php
-	2::temp 22111,4562 22093,4499 22076,4422
-	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
+#: note: früher auch "vielleicht auch Sperrung im Kietz (Kietzer Sommer)"
+# REMOVED (Kietzer Sommer) ---	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
+# REMOVED (Alt-Köpenick nicht, die Straßenbahn fährt noch) ---	2::temp 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
+# REMOVED (Laurenzstr., 2022 nichts gesehen) ---	2::temp 22175,4730 22246,4711
+# REMOVED (Rosenstr., 2022 nichts gesehen) ---	2::temp 22144,4660 22212,4655 22284,4653
+# REMOVED (Böttcherstr., 2022 nichts gesehen) ---	2::temp 22212,4655 22214,4548
+	2::temp 22093,4499 22076,4422
+	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847
 	2::temp 22138,4642 22074,4664
-	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
 	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
-	2::temp 22144,4660 22212,4655 22284,4653
-	2::temp 22175,4730 22246,4711
 	2::temp 22284,4653 22355,4660
-	2::temp 22212,4655 22214,4548
 	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
 # REMOVED ---	2::temp 22324,4586 22314,4604
 EOF
@@ -27949,7 +27951,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # 1598634704, # Ende der Bauarbeiten für die *gesamte* Schönstr. --- 2021-06-01 00:00
-       text  => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str. im Bereich der Klinik, Fahrbahn gesperrt',
+       text  => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Fahrbahn gesperrt, voraussichtlich bis 28.6.2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php',
        data  => <<EOF,
@@ -27970,15 +27972,13 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/einmuendung-komplett-gesperrt_a303306
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1216456.php (ab 21.6.2022 Vollsperrung, Freigabe am 28.6.2022)
 #: by: https://berliner-abendblatt.de/2022/06/17/vollsperrung-in-weissensee/
-#: XXX mittlerweile ist die Fahrbahn im Bereich der Klinik gesperrt, hier geht's nur auf dem Gehweg weiter
-#: XXX für die Sperrung ab dem 20. Juni 2022: q3 -> q4 + Text ändern
+#: add_fragezeichen: Sind die Bauarbeiten beendet und die Straße frei befahrbar?
 #: also_indoor: traffic (G(wieder),H(falsch?),B)
 #: priority: #B vvv
 #: last_checked: 2022-06-10 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2022-06-19 vvv
-# REMOVED --- #: next_check: 2022-06-28 vvv
-	q3::inwork 13391,16436 13630,16629
+#: next_check: 2022-06-28 vvv
+	q4::inwork 13391,16436 13630,16629
 Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: next_check ^^^
 #: check_frequency ^^^
@@ -32366,7 +32366,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Ende 05/2021: Durchfahrt möglich)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Mitte 06/2021: Durchfahrt möglich)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32375,7 +32375,7 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="25"
 #: osm_watch: way id="165832806" version="22"
-#: last_checked: 2022-05-24
+#: last_checked: 2022-06-19
 #: check_frequency: 30d
 	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17524,8536 17515,8567 17497,8623
 # REMOVED (hier neu gemacht) ---	2::inwork 17497,8623 17461,8693 17416,8767 17380,8858
@@ -33342,7 +33342,7 @@ EOF
 #: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
 #: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden) --- mittlerweile ist der Bürgersteig frei
 #: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-06-18
+#: last_checked: 2022-06-19
 #: check_frequency: 14d
 #: next_check: 2022-06-20
 	q2::inwork; 15261,10738 15272,10790 15279,10862
@@ -35404,6 +35404,15 @@ EOF
 #: check_frequency: 30d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
+EOF
+     },
+     { from  => undef, # 
+       until => $isodate2epoch->("2022-09-18 23:59:59"), # 1 Tag später
+       text  => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison bis zum 17. September 2022',
+       type  => 'gesperrt',
+       source_id => 'https://www.wuhlheide.de/programm',
+       data  => <<EOF,
+	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
 EOF
      },
     );

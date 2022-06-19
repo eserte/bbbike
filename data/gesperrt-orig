@@ -902,7 +902,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21789,5427 21706,5541 21605,5687
 #: by: https://unternehmen.bvg.de/pressemitteilung/gleise-glaetten/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211600.php
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022)
-#: last_checked: 2022-05-11 vvv
+#: last_checked: 2022-06-19 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2022-12-31 vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -3182,8 +3182,8 @@ Schranke	BNP:3 6869,15441
 #: by: Christian (chrispan):
 #: confirmed_by: srt
 Drängelgitter	BNP:5 7925,4477
-Drängelgitter (lichte Breite ca. 80cm)	BNP:8::trailer=no 6526,21015
-Drängelgitter (lichte Breite ca. 80cm)	BNP:8::trailer=no 6548,21041
+Tor, kann geschlossen sein	BNP:3::trailer=5 6526,21015
+Tor (lichte Breite ca. 80cm), kann geschlossen sein	BNP:3::trailer=no 6553,21046
 Drängelgitter/Schranke	BNP:5 10012,5210
 Schranke	BNP:5 12571,7899
 #: note: Abstand zwischen den versetzten Gittern ca. 135cm
@@ -3393,7 +3393,7 @@ Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	
 # 
 #: XXX laut Schild der Wasserbetriebe bis April 2023; Einbahnstraßenregelung fängt schon 30m westlich der Einmündung Zum Langen See an
 #: XXX man kommt als Radfahrer aber recht gut vorbei
-#: last_checked: 2022-06-15
+#: last_checked: 2022-06-19
 #: check_frequency: 180d
 #: next_check: 2023-04-30
 #: valid: -20230531
@@ -3456,7 +3456,7 @@ Schönegarten: an beiden Enden gesperrt	2 7416,10492 7432,10546 7330,10590
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
-#: last_checked: 2022-05-24 vvv
+#: last_checked: 2022-06-19 vvv
 #: next_check: 2022-08-01 vvv
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17783,8663 17656,8700
 Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17621,8544 17604,8466 17597,8434
@@ -3485,7 +3485,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2022-06-18
+#: last_checked: 2022-06-19
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 

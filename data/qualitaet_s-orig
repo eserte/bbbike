@@ -1268,7 +1268,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2022-06-15 vvv
+#: last_checked: 2022-06-19 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="6"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -2131,7 +2131,7 @@ Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8907 (wird neu gepflastert, weiterhin kein Radweg; Entwurfsplanung ist abgeschlossen (Januar 2022))
 #: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/wegesanierung-angeschoben_a330248
 #: XXX möglicherweise Änderung des Wegbelags
-#: last_checked: 2022-06-07
+#: last_checked: 2022-06-19
 #: check_frequency: 120d
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16002,9787 16049,9749
@@ -2459,7 +2459,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="11"
-#: last_checked: 2022-06-15
+#: last_checked: 2022-06-19
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -5135,7 +5135,7 @@ Zur Hirtenwiese: Asphalt mit einigen Unebenheiten	Q1+ 27273,-106 26700,-344
 Am Maria-Jankowski-Park: Kopfsteinpflaster	Q2 22087,5404 22018,5452
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/platz-des-23-april-soll-mit-neuen-wegen-aufgewertet-werden_a333485 (Bauarbeiten 2023 und 2024)
 #: XXX Ändert sind bei den Bauarbeiten etwas am Belag? Wird es während der Bauarbeiten zu Sperrungen kommen?
-#: last_checked: 2022-05-11
+#: last_checked: 2022-06-19
 #: next_check: 2023-04-01
 (Lindenstr. - Bahnhofstr.): Mosaikpflaster	Q1 22023,5160 22056,5314 22054,5360
 Am Generalshof: Kopfsteinpflaster	Q2 22165,5434 22167,5416 22056,5314
@@ -9448,8 +9448,8 @@ Lierbacher Weg: Asphalt	Q0 5152,22809 5260,22634
 Welzower Steig: Asphalt	Q0 6555,21429 6529,21620 6525,21630 6511,21649 6478,21652 6428,21648 6392,21668 6361,21707 6320,21777 6223,21952 6257,22005 6111,22155 6082,22183 6046,22186 6018,22233 5993,22260 5984,22280 5929,22339
 Königshorster Str.: Beton	Q0 6555,21429 6569,21396 6594,21134
 Wilhelmsruher Damm - Tornower Weg: neu asphaltiert	Q0 6596,21062 6560,21055
-Wilhelmsruher Damm - Tornower Weg: Verbundsteinpflaster/Gehwegplatten	Q0- 6560,21055 6548,21041 6526,21015 6519,21002
-(Tornower Weg - Wilhelmsruher Damm): Verbundsteinpflaster/Gehwegplatten	Q0- 6519,21002 6565,21004
+Wilhelmsruher Damm - Tornower Weg: Verbundsteinpflaster/Gehwegplatten	Q0- 6560,21055 6553,21046 6526,21015 6519,21002
+(Tornower Weg - Wilhelmsruher Damm): Verbundsteinpflaster	Q0- 6519,21002 6565,21004
 (Tornower Weg - Wilhelmsruher Damm): neu asphaltiert	Q0 6565,21004 6560,21055
 Lampesteig: Asphalt	Q0 7534,18588 7520,18701
 (John-Sieg-Str. - Wilhelm-Guddorf-Str.): wassergebundene Decke	Q1 15411,11823 15373,11783
@@ -16238,7 +16238,10 @@ Boothstr.: Asphalt, einige Löcher	Q0- 5253,3066 5493,2931
 Marienstr.: schlechtes Kopfsteinpflaster	Q3 4968,2543 5065,2715 5115,2803
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
 Marienstr.: Kopfsteinpflaster mit asphaltierten Stellen	Q2 5196,2960 5253,3066
-Marienplatz: schlechtes Kopfsteinpflaster	Q3 5115,2803 5230,2840 5196,2960 5079,2929 5115,2803
+#: confirmed_by: srt
+Marienplatz: schlechtes Kopfsteinpflaster	Q3 5079,2929 5115,2803 5230,2840
+#: corrected_by: mapillary (schlechtes Kopfsteinpflaster, Q3 -> ...)
+Marienplatz: Asphalt	Q0 5230,2840 5196,2960 5079,2929
 #: confirmed_by: Jonas Laehnemann, srt:
 #: note: M. Rakow meint "Asphalt"
 Klistostr.: guter Beton	Q0 407,1481 464,1246 475,1202 538,944
@@ -24766,6 +24769,7 @@ Bodelschwinghstr.: Asphalt	Q0 15946,6722 15838,6816
 #: by: sabine de kok: vvv
 #: confirmed_by: mapillary
 Promenadenstr.: Asphalt	Q0 5425,2735 5230,2840
+#: confirmed_by: mapillary
 Promenadenstr.: Asphalt	Q0 5079,2929 4871,3045
 #: by: ^^^
 # 
@@ -30641,6 +30645,8 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 2642,8040
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2756,8025
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 4248,18066
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 13622,22409
+Einmündungsbereich asphaltiert	Q0 5230,2840
+Einmündungsbereich asphaltiert	Q0 5079,2929
 #: by ^^^
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2873,8016
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2988,8007

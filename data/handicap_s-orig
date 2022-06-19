@@ -479,7 +479,7 @@ Wandlitzstr.: in Hˆhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 # REMOVED (fertig) --- #: next_check_id: ZWIESELER-2022 --- #: last_checked: 2022-03-20 --- #: check_frequency: 60d --- Richard-Kolkwitz-Weg: Engstelle wegen Bauarbeiten	q2::inwork 19711,10426 19813,10468
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2022-05-24 vvv
+#: last_checked: 2022-06-19 vvv
 Parkstadt Karlshorst: Beeintr‰chtigungen durch Bauarbeiten und Baustellenverkehr mˆglich	q2::inwork 17380,8858 17416,8767 17461,8693 17656,8700 17640,8627 17497,8623
 Hˆnower Wiesenweg: Beeintr‰chtigungen durch Bauarbeiten und Baustellenverkehr mˆglich	q2::inwork; 17497,8623 17461,8693
 Hˆnower Wiesenweg: tempor‰re Einbahnstraﬂenregelung, Baustellenverkehr	q3::inwork; 17461,8693 17497,8623
@@ -743,9 +743,7 @@ Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4:
 # 
 ### Lichtenberg ###
 # 
-#: last_checked: 2022-06-18
-#: check_frequency: 14d
-Gustav-Holzmann-Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 16119,9689 16302,9865
+# REMOVED (am n‰chsten Tag aufgehoben) --- #: last_checked: 2022-06-18 --- #: check_frequency: 14d --- Gustav-Holzmann-Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 16119,9689 16302,9865
 # 
 #: next_check_id: ROEDELIUSPLATZ-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
@@ -3390,7 +3388,7 @@ Pirolstr.: Bordstein	q2 19789,10091 19819,10090
 (Weg am Wiesengraben): einige Fuﬂg‰nger	q1 -2194,22343 -2173,22351 -2052,22330 -1924,22282 -1792,22250 -1700,22223 -1679,22127
 (Tegeler Flieﬂ - Dianastr.): Fuﬂg‰nger	q1 4166,22752 4172,22722
 (Tegeler Flieﬂ - Dianastr.): Fuﬂg‰nger	q1 4117,22715 4146,22701
-Tornower Weg - Wilhelmsruher Damm: Spielplatz	q4 6519,21002 6526,21015 6548,21041 6560,21055
+Tornower Weg - Wilhelmsruher Damm: Spielplatz	q4 6519,21002 6526,21015 6553,21046 6560,21055
 (Weg am Stadion Borsigpark): einige Fuﬂg‰nger, kurvig	q1- 2436,19606 2498,19682 2482,19787 2495,19808 2492,19897
 Johannesstift: Krankenhausgel‰nde, Aufpflasterungen	q1 -3568,18093 -3655,18177 -3699,18222 -3736,18259 -3835,18357
 Johannesstift: Krankenhausgel‰nde, Aufpflasterungen	q1 -3655,18177 -3847,17978 -3914,17913 -3953,17941 -4002,17993 -4038,18030 -3898,18187
@@ -4094,6 +4092,7 @@ Max-und Herta-Naujocks-Weg: Fuﬂg‰nger, schmaler Weg	q2- 16036,18604 16077,18674 
 Haydnstr. - M‰rkische Allee: Bordsteine, einige Fuﬂg‰nger	q3 19995,11795 19979,11774
 #: note: ... und viel Gegenverkehr
 Fenchelweg: enge Straﬂe	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,3602 15791,3686 15838,3754 15860,3838 15872,3888 15859,3924 15695,4051 15585,4139
+(Tornower Weg - Wilhelmsruher Damm): einige Fuﬂg‰nger	q1- 6519,21002 6565,21004
 # 
 ######################### User Contributions #################################
 # 

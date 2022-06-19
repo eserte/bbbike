@@ -1759,7 +1759,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/ziel-ein-durchgaengig-sicherer-radweg_a337148 (Erwähnung)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2022-06-18 vvv
+#: last_checked: 2022-06-19 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -3395,7 +3395,7 @@ Radweg nur aufgemalt	RW1;RW1 6304,16447 6360,16511 6489,16658 6572,16718 6630,16
 	RW1; 21303,5826 21364,5827 21467,5802 21519,5767 21567,5727
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: XXX temporär während der Bauarbeiten an der Pyramidenbrücke
-#: last_checked: 2022-05-11
+#: last_checked: 2022-06-19
 #: check_frequency: 180d
 #: next_check: 2022-12-31
 abgetrennter gemeinsamer Geh- und Radweg auf der Fahrbahn	RW2; 21567,5727 21594,5691 21600,5683 21649,5617
@@ -3598,7 +3598,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 	RW4; 25579,5958 25179,5815
 	RW2; 25179,5815 25121,5795
 	RW4; 25121,5795 25028,5756 25015,5751
-	RW1;RW1 22740,4415 22674,4309
+	RW1; 22700,4351 22674,4309
 	RW2;RW1 22674,4309 22641,4095 22640,4081 22643,4058 22666,3888
 # 
 #: XXX wird hier eine Grünmarkierung entstehen?
@@ -3613,10 +3613,13 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: source_id: viz2021:13.583291,52.43284,26.08.2021,09:00 (bis 16.10.2021)
 # REMOVED --- #: source_id: bvg2021:62#BVG276479_0
 #: priority: #D vvv
-#: last_checked: 2022-06-15 vvv
+#: last_checked: 2022-06-19 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2021-10-16 vvv
-	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22878,2758
+	RW3; 22666,3888 22693,3704
+	RW3; 22700,3652 22714,3558 22732,3444
+	RW3; 22742,3382 22788,3150
+	RW3; 22801,3087 22811,3037 22831,2915 22849,2856 22878,2758
 	RW3; 22922,2615 22982,2418 22991,2387
 	RW3; 23008,2331 23064,2147 23099,2031
 # REMOVED --- #: next_check ^^^
@@ -3626,12 +3629,15 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.890022.php (Leitboys)
 Grünmarkierung, Leitboys	RW3; 22878,2758 22904,2675
+asphaltiertes Straßenbahnkap	RW1; 22693,3704 22700,3652
+asphaltiertes Straßenbahnkap	RW1; 22732,3444 22742,3382
+asphaltiertes Straßenbahnkap	RW1; 22788,3150 22801,3087
 asphaltiertes Straßenbahnkap	RW1; 22904,2675 22922,2615
 asphaltiertes Straßenbahnkap	RW1; 22991,2387 23008,2331
 #: note: in den Haltestellenbereichen teilweise mit Verbundsteinpflaster/Asphalt vvv
 Gehwegplatten	RW1; 23099,2031 23064,2147
 Gehwegplatten	RW2; 23064,2147 23008,2331 22991,2387 22982,2418
-Gehwegplatten	RW1; 22982,2418 22922,2615 22904,2675 22878,2758 22849,2856 22831,2915 22811,3037 22742,3382 22714,3558 22666,3888
+Gehwegplatten	RW1; 22982,2418 22922,2615 22904,2675 22878,2758 22849,2856 22831,2915 22811,3037 22801,3087 22788,3150 22742,3382 22732,3444 22714,3558 22700,3652 22693,3704 22666,3888
 #: note ^^^
 Gehweg für Radfahrer frei	RW1; 23099,2031 23185,1649 23214,1522
 Gehweg für Radfahrer frei	RW1; 23243,1398 23214,1522 23185,1649 23099,2031
