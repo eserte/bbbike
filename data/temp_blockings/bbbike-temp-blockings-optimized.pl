@@ -3234,36 +3234,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.die-classic-days-berlin.de/programm-2/
-#: by: https://www.berlin.de/events/2902692-2229501-classic-days-berlin.html (voraussichtlich 12.+13.6.2021)
-#: by: https://www.die-classic-days-berlin.de/programm-2/ (wird auf 2022 verschoben)
-#: by: https://www.die-classic-days-berlin.de/programm-2/?date=20220416 (geplant: 18. und 19. Juni 2022)
-#: note: kann im Juni oder Juli stattfinden
-#: source_id: viz2021:13.325285,52.502859,16.06.2022,12:00
-# REMOVED --- #: tempex: 20170616T0400-20170619T0400
-	q4::temp 5475,10808 5341,10756 5215,10711 5069,10662 4838,10597 4672,10552 4496,10504 4371,10465 4245,10435
-	q4::temp 5072,10701 5069,10662
-',
-         'from' => 1655344800,
-         'id' => 2439,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              17,
-                              'months',
-                              5,
-                              'start',
-                              '2021-06-01T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'IM_025248',
-         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 17.06.2022 bis 20.06.2022 früh',
-         'type' => 'handicap',
-         'until' => 1655694000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4100,8 +4071,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://berliner-abendblatt.de/2022/06/17/vollsperrung-in-weissensee/
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Straße frei befahrbar?
 #: also_indoor: traffic (G(wieder),H(falsch?),B)
+#: source_id: viz2021:13.450024,52.553419,21.06.2022,08:00 (hier: Rad- und Fußverkehr frei)
 #: priority: #B vvv
-#: last_checked: 2022-06-10 vvv
+#: last_checked: 2022-06-21 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-28 vvv
 	q4::inwork 13391,16436 13630,16629
@@ -4661,7 +4633,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-06-09 vvv
+#: last_checked: 2022-06-21 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -5262,27 +5234,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: KARLSHORSTER-2021
-#: note: bei rbb nur bis 30.9.2021
-#: note: die Anbindung Nöldnerstr. ist zurzeit manchmal (am Wochenende? nach Feierabend?) passierbar, gesehen Sa 2021-07-17, Mi 2021-07-21, Fr 2021-07-30, So 2021-08-08, Di 2021-08-10 vormittags
-#: note: mittlerweile sind aktive Bauarbeiten an der Anbindung Nöldnerstr. (Fahrbahn ist aufgerissen), evtl. auch für Fußgänger unpassierbar, Fr 2021-09-03 abends, Sa 2021-09-11 nachmittags, Mi 2021-09-15 mittags (man könnte sein Rad rübertragen), Fr 2021-09-17 abends (ebenso), So 2021-10-24 (die Grube ist tiefer geworden) --- mittlerweile ist der Bürgersteig frei
-#: also_indoor: traffic (H,G) (letzteres falsch, beide Richtungen statt einer)
-#: last_checked: 2022-06-19
-#: check_frequency: 14d
-#: next_check: 2022-06-20
-	q2::inwork; 15261,10738 15272,10790 15279,10862
-#: osm_watch: way id="984964447" version="8"
-	q3::inwork 15279,10862 15355,10875
-# REMOVED (keine Einschränkungen mehr) --- #: osm_watch: way id="984056169" version="9" ---	q3::inwork 15272,10790 15388,10758
-',
-         'from' => 1625734800,
-         'id' => 3411,
-         'source_id' => 'viz2021:13.475242,52.50154,09.07.2021,11:00',
-         'text' => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr., noch geringe Einschränkungen; außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
-         'type' => 'gesperrt',
-         'until' => 1655737200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5947,19 +5899,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => 1702656000
        },
        undef,
-       {
-         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: XXX Evtl. gab es hier früher eine Einbahnstraßenregelung, die nach den Bauarbeiten wieder aktiviert wird.
-#: last_checked: 2022-03-20
-#: check_frequency: 60d
-	q4::inwork 20923,13953 20938,14066
-',
-         'from' => undef,
-         'id' => 3527,
-         'text' => 'Hannaweg: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, Ausweichen auf engen Gehweg, Bordsteine, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: note: Tor offen, gesehen am 2022-03-23 mittags vvv
@@ -6293,7 +6233,8 @@ Yitzhak-Rabin-Str	2::temp 8055,12186 8119,12414
        {
          'data' => '#: source_id: viz2021:13.37082,52.517842,18.06.2022,09:00
 	1::temp 8122,12603 8119,12414
-#: source_id: viz2021:13.3546,52.51713,18.06.2022,09:00
+#: source_id: viz2021:13.3546,52.51713,18.06.2022,09:00 (inaktiv)
+#: source_id: viz2021:13.354603,52.517071,18.06.2022,09:00
 	1::temp 8119,12414 8070,12409 8017,12359 7875,12363 7821,12367 7627,12380 7514,12387 7437,12368 7215,12295 7031,12320
 ',
          'from' => 1655449200,

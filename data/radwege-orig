@@ -437,7 +437,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
-#: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022)
+#: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
 #: last_checked: 2022-06-02 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
@@ -755,7 +755,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-06-10
+#: last_checked: 2022-06-21
 	RW2; 14926,12129 14994,12121 15117,12106 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
@@ -2429,7 +2429,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=711261#post711261 (1. Bauvorhaben (nördl.); geplante Fertigstellung: Sommer 2025)
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
-#: last_checked: 2022-06-18 vvv
+#: last_checked: 2022-06-21 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -2496,9 +2496,9 @@ Grünmarkierung	RW4; 14355,12752 14325,12648 14319,12629 14297,12553 14266,12446 
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14836,12826 14830,12932 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
-#: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt
+#: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt; mittlerweile wird der Radweg neu erstellt, vermutlich dann ohne Wurzelhebungen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2022-06-14
+#: last_checked: 2022-06-21
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -2681,7 +2681,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="7"
 #: osm_watch: way id="420112509" version="7"
 #: osm_watch: way id="966685279" version="1"
-#: last_checked: 2022-06-14 vvv
+#: last_checked: 2022-06-21 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -4544,6 +4544,7 @@ Verbundsteinpflaster	RW2; 19904,3464 19857,3514 19812,3561 19735,3643 19676,3705
 #: by: https://nitter.net/pic/media%2FFTcGMnUXwAAtv2q.jpg%3Fname%3Dorig
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1217041.php (Beschichtungsarbeiten, bis 1. Juli 2022)
 #: by: https://berliner-abendblatt.de/2022/06/17/staufalle-adlergestell-mit-nur-einer-spur/
+#: by: http://www.infravelo.de/projekt/b96a-adlergestell-1/ (2. Quartal 2022 - 3. Quartal 2022)
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="19"
 #: osm_watch: way id="319692412" version="9"

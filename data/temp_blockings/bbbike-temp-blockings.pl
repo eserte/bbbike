@@ -27974,8 +27974,9 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/06/17/vollsperrung-in-weissensee/
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Straße frei befahrbar?
 #: also_indoor: traffic (G(wieder),H(falsch?),B)
+#: source_id: viz2021:13.450024,52.553419,21.06.2022,08:00 (hier: Rad- und Fußverkehr frei)
 #: priority: #B vvv
-#: last_checked: 2022-06-10 vvv
+#: last_checked: 2022-06-21 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-06-28 vvv
 	q4::inwork 13391,16436 13630,16629
@@ -31176,7 +31177,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-06-09 vvv
+#: last_checked: 2022-06-21 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33335,7 +33336,7 @@ EOF
        until => $isodate2epoch->("2022-06-20 17:00:00"), # undef, # Termin kann wohl nicht gehalten werden --- $isodate2epoch->("2021-12-15 17:00:00"),
        text  => 'Karlshorster Str.: Bauarbeiten in Richtung Marktstr. zwischen Hauptstr. und Türrschmidtstr., noch geringe Einschränkungen; außerdem ist die Anbindung Türrschmidtstr. gesperrt (nur Fahrbahn, Bürgersteig ist frei), vom 09.07.2021 11:00 bis voraussichtlich 20.06.2022',
        type  => 'gesperrt',
-       source_id => 'viz2021:13.475242,52.50154,09.07.2021,11:00', # bis 20.6.2022, mittlerweile bis 1.8.2002, mittlerweile wieder bis 20.6.2022
+       source_id => 'viz2021:13.475242,52.50154,09.07.2021,11:00', # bis 20.6.2022, mittlerweile bis 1.8.2002, mittlerweile wieder bis 20.6.2022, mittlerweile inaktiv
        data  => <<EOF,
 #: next_check_id: KARLSHORSTER-2021
 #: note: bei rbb nur bis 30.9.2021
@@ -34864,14 +34865,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1655843726, # undef, # XXX
        text  => 'Hannaweg: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, Ausweichen auf engen Gehweg, Bordsteine, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: XXX Evtl. gab es hier früher eine Einbahnstraßenregelung, die nach den Bauarbeiten wieder aktiviert wird.
-#: last_checked: 2022-03-20
-#: check_frequency: 60d
+# REMOVED (vermutlich beendet, siehe Mapillary) --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: XXX Evtl. gab es hier früher eine Einbahnstraßenregelung, die nach den Bauarbeiten wieder aktiviert wird. --- #: last_checked: 2022-03-20 --- #: check_frequency: 60d
 	q4::inwork 20923,13953 20938,14066
 EOF
      },
@@ -35357,7 +35355,8 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.37082,52.517842,18.06.2022,09:00
 	1::temp 8122,12603 8119,12414
-#: source_id: viz2021:13.3546,52.51713,18.06.2022,09:00
+#: source_id: viz2021:13.3546,52.51713,18.06.2022,09:00 (inaktiv)
+#: source_id: viz2021:13.354603,52.517071,18.06.2022,09:00
 	1::temp 8119,12414 8070,12409 8017,12359 7875,12363 7821,12367 7627,12380 7514,12387 7437,12368 7215,12295 7031,12320
 EOF
      },
