@@ -23,7 +23,9 @@ use strict;
 use vars qw($VERSION);
 $VERSION = '0.04';
 
-use BBBikeUtil qw(bbbike_root);
+use POSIX qw(strftime);
+
+use BBBikeUtil qw(bbbike_root s2hm);
 use Strassen::Util ();
 use Hooks;
 
@@ -122,7 +124,7 @@ sub maybe_push_current_location {
 	    $desc =~ s{\t}{ }g; # should not happen, but play safe
 	    undef $desc if $desc eq '';
 	    # XXX for non-Berlin datadirs that information should also be added
-	    push @history, {lon => $lon, lat => $lat, desc => $desc};
+	    push @history, {lon => $lon, lat => $lat, desc => $desc, time => time};
 	    dump_history();
 	    refresh_history_box();
 	}
@@ -159,8 +161,8 @@ sub load_history {
 	my @new_history;
 	while(<$fh>) {
 	    chomp;
-	    my($lon, $lat, $desc) = split /\t/, $_;
-	    push @new_history, {lon => $lon, lat => $lat, desc => $desc};
+	    my($lon, $lat, $desc, $time) = split /\t/, $_;
+	    push @new_history, {lon => $lon, lat => $lat, desc => $desc, time => $time};
 	}
 	@history = @new_history;
     } else {
@@ -175,8 +177,8 @@ sub dump_history {
     open my $ofh, '>', "$hist_file~"
 	or main::status_message("Cannot write to $hist_file~: $!", 'die');
     for (@history) {
-	no warnings 'uninitialized'; # desc may be missing
-	print $ofh join("\t", @{$_}{qw(lon lat desc)}), "\n";
+	no warnings 'uninitialized'; # desc and time may be missing
+	print $ofh join("\t", @{$_}{qw(lon lat desc time)}), "\n";
     }
     close $ofh
 	or main::status_message("Error while writing $hist_file~: $!", 'die');
@@ -196,8 +198,11 @@ sub dump_history {
 	$lb->delete(0,'end');
 	@inx2pos = ();
 	for (reverse @history) {
-	    my($lon,$lat,$desc) = @{$_}{qw(lon lat desc)};
+	    my($lon,$lat,$desc,$time) = @{$_}{qw(lon lat desc time)};
 	    my $title = defined $desc ? $desc : "$lon/$lat";
+	    if (defined $time) {
+		$title .= " (" . s2hm(time-$time) . "h ago, " . strftime("%F %T", localtime $time) . ")";
+	    }
 	    $lb->insert('end', $title);
 	    push @inx2pos, {lon=>$lon, lat=>$lat};
 	}
