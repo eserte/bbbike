@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018,2019,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use BBBikeUtil qw(bbbike_root);
 use Strassen::Util ();
@@ -65,8 +65,9 @@ sub add_button {
     return unless defined $mf;
 
     my $b;
-    $b = $mf->Label
+    $b = $mf->Button
         (-text => "Hist",
+	 -command => sub { show_history_box() },
         );
     BBBikePlugin::replace_plugin_widget($mf, $b, __PACKAGE__.'_but');
     $main::balloon->attach($b, -msg => 'History')
@@ -76,9 +77,7 @@ sub add_button {
             ($mmf,
              [
 	      [Button => 'Show history',
-	       -command => sub {
-		   show_history_box();
-	       },
+	       -command => sub { show_history_box() },
 	      ],
 	      '-',
               [Button => "Delete this menu",
