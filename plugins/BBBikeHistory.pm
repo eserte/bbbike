@@ -162,6 +162,7 @@ sub load_history {
 	while(<$fh>) {
 	    chomp;
 	    my($lon, $lat, $desc, $time) = split /\t/, $_;
+	    $time = undef if defined $time && $time eq '';
 	    push @new_history, {lon => $lon, lat => $lat, desc => $desc, time => $time};
 	}
 	@history = @new_history;
