@@ -1276,7 +1276,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich f¸r Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in K¸rze")
-#: last_checked: 2022-06-11
+#: last_checked: 2022-06-22
 #: check_frequency: 30d
 #: next_check: 2022-06-30
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -3476,7 +3476,10 @@ Parkstadt Karlshorst: tempor‰re Einbahnstraﬂenregelung	1::inwork 17497,8623 1764
 #: next_check: 2022-07-15
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraﬂe, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
 # 
-# REMOVED --- #: next_check_id: PLANSTRASSEC-2019 --- # REMOVED (ein osm_watch reicht aus) --- #: osm_watch: way id="491906864" version="6" --- #: last_checked: 2022-04-07 (architektur-urbanistik) --- #: check_frequency: 60d --- (Planstraﬂe C): Einbahnstraﬂenregelung	1s:q4:inwork 12848,11093 12926,11224
+#: next_check_id: PLANSTRASSEC-2019
+#: last_checked: 2022-04-07 (architektur-urbanistik)
+#: check_frequency: 60d
+(Planstraﬂe C): abschnittsweise Einbahnstraﬂe	1s:q3:inwork 12848,11093 12926,11224
 # 
 #: next_check_id: SIEGFRIED-2021
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/#post-15273 (Bau einer Apartmentanlage, vielleicht wird dann die Straﬂe ˆffentlich sein?)
@@ -3941,7 +3944,7 @@ Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realit‰t weiterhin Einbahnstraﬂe
 #: osm_watch: way id="5096644" version="17"
 #: priority: #C
-#: last_checked: 2022-06-13
+#: last_checked: 2022-06-22
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 

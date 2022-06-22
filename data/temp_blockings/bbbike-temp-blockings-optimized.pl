@@ -6069,7 +6069,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern
-#: last_checked: 2022-05-21
+#: last_checked: 2022-06-22
 #: next_check: 2022-08-19
 	q4::temp::play 12822,10487 12897,10439
 ',
@@ -6301,6 +6301,52 @@ Yitzhak-Rabin-Str	2::temp 8055,12186 8119,12414
          'text' => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison bis zum 17. September 2022',
          'type' => 'gesperrt',
          'until' => 1663538399
+       },
+       {
+         'data' => '#: by: Gonsolo & osm
+	2::temp -8489,-2220 -8574,-2204 -8653,-2195
+',
+         'from' => undef,
+         'id' => 3570,
+         'permanent' => 1,
+         'text' => 'Joe-May-Str.: RBB-Gelände, eventuell nicht zugänglich',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
+#: by: https://berliner-abendblatt.de/2022/06/22/bauarbeiten-legen-blumberger-damm-lahm/
+	2::inwork 21152,11945 21166,12023 21190,12193 21199,12258
+',
+         'from' => 1656007200,
+         'id' => 3571,
+         'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1219254.php',
+         'text' => 'Blumberger Damm: Sperrung zwischen der Altentreptower Str. und dem Frankenholzer Weg, 24. Juni 2022 20:00 Uhr bis 01. Juli 2022 04:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1656640800
+       },
+       {
+         'data' => '	2::temp 12198,8887 12392,8724
+',
+         'from' => 1656590400,
+         'id' => 3572,
+         'source_id' => 'https://berliner-abendblatt.de/2022/06/22/kiezfest-donaustrasse-wird-zur-kreativen-meile/',
+         'text' => 'Donaustr.: zwischen Pannierstr. und Weichselstr. Veranstaltung, Fahrbahn kann gesperrt sein, am 1. Juli 2022 von 14 bis 20 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1656698400
+       },
+       {
+         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1539528243316985856#m
+#: by: https://nitter.net/pic/orig/media%2FFV2AstdX0AEWnIn.jpg
+	q4::inwork; 10710,18393 10650,18544
+	q4::inwork 10721,18575 10784,18426
+',
+         'from' => 1655798400,
+         'id' => 3573,
+         'source_id' => 'viz2021:13.414144,52.572092,22.06.2022,10:00',
+         'text' => 'Kavalierstr. und Eintrachtstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich,, vom 22.06.2022 10:00 bis 30.08.2022 17:00',
+         'type' => 'handicap',
+         'until' => 1661871600
        }
      
 );
