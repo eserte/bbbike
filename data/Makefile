@@ -20,6 +20,8 @@ DATADIR=		.
 PERSISTENTTMPDIR=	$(BBBIKEDIR)/tmp
 BBBGEOJSONPDIR=		$(PERSISTENTTMPDIR)/bbbgeojsonp
 GEOJSONDIR=		$(PERSISTENTTMPDIR)/geojson
+# typically missing:
+BBBIKEAUXDIR=		$(HOME)/src/bbbike-aux
 
 PERL?=			perl
 # assume we have a modern perl (> 5.8.0, which has utf8 bugs) installed...
@@ -111,6 +113,11 @@ INTERMEDIATE_TARGETS=	.strassen.tmp \
 			${PERSISTENTTMPDIR}/gesperrt-orig-valid \
 			${PERSISTENTTMPDIR}/gesperrt-without-nocross \
 			${PERSISTENTTMPDIR}/radwege-orig-valid
+
+ADDITIONAL_SOURCEID_FILES=
+.if exists($(BBBIKEAUXDIR)/bbd/fragezeichen_lowprio.bbd)
+ADDITIONAL_SOURCEID_FILES+=	$(BBBIKEAUXDIR)/bbd/fragezeichen_lowprio.bbd
+.endif
 
 # These have to be checked using the check-urls target
 FILES_WITH_URLS=	comments_route-orig comments_ferry-orig comments_misc-orig
@@ -223,10 +230,10 @@ rare-persistent-tmp:	\
 		${PERSISTENTTMPDIR}/unpaved.bbd
 
 update-bbbike-aux-downloads:
-	cd ${HOME}/src/bbbike-aux/downloads && ${MAKE}
+	cd ${BBBIKEAUXDIR}/downloads && ${MAKE}
 
 update-bbbike-aux-bbd:
-	cd ${HOME}/src/bbbike-aux/bbd && ${MAKE}
+	cd ${BBBIKEAUXDIR}/bbd && ${MAKE}
 
 # popular targets
 fragezeichen-outdoor-nextcheck:	${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd
@@ -2100,11 +2107,11 @@ $(PERSISTENTTMPDIR)/bbbike-temp-blockings-recurring.bbd: $(PERSISTENTTMPDIR)/bbb
 	$(TEMP_BLOCKINGS_TASKS) yml_to_recurring_bbd $> > $@~
 	mv -f $@~ $@
 
-$(PERSISTENTTMPDIR)/sourceid-all.yml:		$(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd ${SOURCE_TARGETS_SOURCES}
+$(PERSISTENTTMPDIR)/sourceid-all.yml:		$(PERSISTENTTMPDIR)/bbbike-temp-blockings.bbd ${SOURCE_TARGETS_SOURCES} ${ADDITIONAL_SOURCEID_FILES}
 	${PERL} $(MISCSRCDIR)/bbd_to_sourceid_exists $> > $@~
 	mv -f $@~ $@
 
-$(PERSISTENTTMPDIR)/sourceid-current.yml:	$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd ${SOURCE_TARGETS_SOURCES}
+$(PERSISTENTTMPDIR)/sourceid-current.yml:	$(PERSISTENTTMPDIR)/bbbike-temp-blockings-optimized.bbd ${SOURCE_TARGETS_SOURCES} ${ADDITIONAL_SOURCEID_FILES}
 	${PERL} $(MISCSRCDIR)/bbd_to_sourceid_exists $> > $@~
 	mv -f $@~ $@
 
