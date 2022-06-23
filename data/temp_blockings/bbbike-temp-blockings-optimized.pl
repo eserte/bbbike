@@ -5802,11 +5802,12 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: MASSMANN-2022
 #: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maßmannstr.
+#: osm_watch: note 3030340 3
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-G,ex-B)
-#: last_checked: 2022-05-15
+#: also_indoor: traffic (ex-G,B)
+#: last_checked: 2022-06-23 (traffic, osm note)
 # REMOVED --- #: check_frequency: 30d
-# REMOVED --- #: check_frequency: 10d
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-05-24
 	q3::inwork 5020,6434 5269,6305
 ',
@@ -5947,17 +5948,18 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1513397936151044099#m
 #: by: https://nitter.net/pic/media%2FFP1LIs8XMAENMUm.jpg%3Fname%3Dorig
-#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022) (mittlerweile bis 27.6.2022)
+#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022) (mittlerweile bis 27.6.2022) (mittlerweile bis 1.8.2022)
+#: source_id: viz2021:13.47859,52.47157,11.04.2022,09:00 (zusätzlicher Eintrag, bis 1.8.2022)
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
-#: XXX Bleibt die Baustelle bis Oktober 2022 so? vvv
+#: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
 #: last_checked: 2022-06-06 vvv
 #: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2022-04-11 vvv
+#: next_check: 2022-08-01 vvv
 	q4::inwork; 15560,7400 15693,7512
 #: note: teilweise ragt die Baustellenabsperrung in den Radweg Richtung Kiefholzstraße rein
 	q3::inwork; 15693,7512 15560,7400
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -6128,19 +6130,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1534754662301171713#m
-#: by: https://nitter.net/pic/orig/media%2FFUvPeV8WQAEuiW4.jpg
-#: by: https://nitter.net/pic/orig/media%2FFUvO7u4WAAw1fjO.jpg
-	q4::inwork; 25579,5958 26080,5946
-',
-         'from' => 1654678800,
-         'id' => 3558,
-         'source_id' => 'viz2021:13.625514,52.456971,09.06.2022,11:00',
-         'text' => 'Fürstenwalder Damm. Fahrbahn ab Bölschstraße stadtauswärts gesperrt, vom 09.06.2022 11:00 bis 23.06.2022 17:00',
-         'type' => 'handicap',
-         'until' => 1655996400
-       },
+       undef,
        {
          'data' => '	q4::inwork 9011,14019 8870,13926
 ',
@@ -6316,12 +6306,13 @@ Yitzhak-Rabin-Str	2::temp 8055,12186 8119,12414
        {
          'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
 #: by: https://berliner-abendblatt.de/2022/06/22/bauarbeiten-legen-blumberger-damm-lahm/
+#: source_id: viz2021:13.562568,52.51298,24.06.2022,20:00 (hier nur Kfz-Verkehr)
 	2::inwork 21152,11945 21166,12023 21190,12193 21199,12258
 ',
          'from' => 1656007200,
          'id' => 3571,
          'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1219254.php',
-         'text' => 'Blumberger Damm: Sperrung zwischen der Altentreptower Str. und dem Frankenholzer Weg, 24. Juni 2022 20:00 Uhr bis 01. Juli 2022 04:00 Uhr',
+         'text' => 'Blumberger Damm: Sperrung zwischen der Altentreptower Str. und dem Frankenholzer Weg, vielleicht sind auch Radfahrer betroffen, 24. Juni 2022 20:00 Uhr bis 01. Juli 2022 04:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1656640800
        },
