@@ -120,6 +120,7 @@ jobs:
     steps:
     - name: network check
       run: |
+        echo "My IP address: $(curl -s ipinfo.io/ip)"; true
         curl -s -I http://bbbike.de/robots.txt | head -1; true
     - uses: actions/checkout@v2
     - name: Build and test
