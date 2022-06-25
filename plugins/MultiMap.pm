@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.80;
+$VERSION = 1.81;
 
 use vars qw(%images);
 
@@ -248,7 +248,7 @@ sub register {
 	{ name => 'strecken.info',
 	  callback => sub { showmap_streckeninfo(@_) },
 	  callback_3_std => sub { showmap_url_streckeninfo(@_) },
-	  ($images{StreckenInfo} ? (icon => $images{StreckenInfo}) : ()),
+	  ($images{DB} ? (icon => $images{DB}) : ()),
 	};
     if ($is_berlin) {
 	$main::info_plugins{__PACKAGE__ . '_HierBautBerlin'} =
@@ -756,6 +756,29 @@ bGo2aLG2bm1rD+7o7OruYQA5xsbTsze7r0S3f8LESQxA2yZPmTpt+oyZs2bPmTtvPlhggfjC
 RYuXOC5dtnzFSpDAqtVr1q5b77Bh46bNW7YCAKJlS6V7R7bEAAAAJXRFWHRkYXRlOmNyZWF0
 ZQAyMDEzLTAyLTE5VDIxOjQyOjUxKzAxOjAws5ftwQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAx
 Mi0wOC0xNFQxNjoyODo1MCswMjowMOv6tcMAAAAASUVORK5CYII=
+EOF
+    }
+
+    if (!defined $images{DB}) {
+	# Fetched https://www.bahn.de/favicon.ico
+	# converted:
+	#   convert -resize 16x16 favicon.ico db.png
+	#   cat db-0.png | base64
+	$images{DB} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA3lBMVEUAAADwFBTwFBTwFBTw
+FBTwFBTwFBTwFBTwFBTwFBTwFBTwFBT0W1v3iYn2cnLwFBT6uLj1aGjzQ0P0UlL5r6/////7xsb4
+k5P+9vb95+fwGxv4oKDzRkb6vr75oaH0WFj0WVn2enrwHx/93t71Zmb6r6/+8vL+/v7wGBjzR0fz
+TU3xJSX7yMj+/f3wFxfzSkryOTnyOjr4mZn80tL1bW3yOzvwHh7wGRn3g4PyNTXwFhb7ycn2fn75
+o6PxMTH2e3v0Wlr1amr7w8P5qqrxKyvxLi7zUVH7zMzzS0v0XV2jfZPwAAAADHRSTlMALpKa4t76
+6OQ+rLJ3D//WAAAAAWJLR0QV5dj5owAAAAd0SU1FB+YFHwgjKT5bJDMAAACSSURBVBjTY2AgCBiZ
+mJEAEyMDCw8vEuBjZeAXEBQSEhYRFePj4xOXkGQDCghJScvwy8rxyyvwK0IElESV+VXk+FXV+Hlg
+AuoamnL8WpraOjABXT19OX4DQykjmIAxvwlQi7qpGUTA3MLSylqO38ZWyQ4sYO/g4Ogk6uzi4urm
+DhRg9+BDAp4cDJxc3EiAi5OwZwGPyhIaEtAInAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0wNi0y
+NVQyMjoyMzoyNyswMjowMA6Xa+wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMDUtMzFUMDg6MzU6
+NDErMDI6MDA9FeOMAAAAAElFTkSuQmCC
 EOF
     }
 }
