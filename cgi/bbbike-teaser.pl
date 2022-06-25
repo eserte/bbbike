@@ -161,7 +161,7 @@ EOF
 sub teaser_velocity {
     my $velocity_end_day = "20220703";
     my $out_of_date = $today gt $velocity_end_day;
-    if (0 && !$out_of_date) {
+    if (1 && !$out_of_date) {
 	my $velocity_map_url = "https://velocity.berlin/event-info/strecke";
 	my $date_spec = $today eq $velocity_end_day ? 'Heute' : 'Am 02. & 03. Juli 2022';
 	<<EOF
