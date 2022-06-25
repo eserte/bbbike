@@ -4404,8 +4404,10 @@ Humboldtstr.: Verbundsteinpflaster	Q1+ 17699,24874 17728,24824 17831,24725
 Humboldtstr.: Asphalt	Q0 17831,24725 17990,24572 18122,24440
 Humboldtstr.: Verbundsteinpflaster	Q1+ 18122,24440 18190,24368
 Humboldtstr. (Schwanebeck): unbefestigte Straße	Q2 18190,24368 18492,24049
-#: add_fragezeichen: wurde hier mittlerweile gepflastert (Verbundsteinpflaster)?
-Stefan-Heym-Str.: unbefestigte Straße	Q2 17776,24912 17870,24821 18057,24641
+#: corrected_by: mapillary (unbefestigte Straße, Q2 -> ...) vvv
+Stefan-Heym-Str.: Verbundsteinpflaster	Q1+ 17776,24912 17870,24821
+Stefan-Heym-Str.: Asphalt	Q0 17870,24821 18057,24641
+#: corrected_by ^^^
 Stefan-Heym-Str.: Asphalt	Q0 18057,24641 18200,24498
 Einsteinstr.: Verbundsteinpflaster	Q1+ 17864,24956 17901,24919
 Einsteinstr.: Asphalt	Q0 17901,24919 18124,24709 18280,24557

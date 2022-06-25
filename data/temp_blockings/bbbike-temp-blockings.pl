@@ -22504,16 +22504,18 @@ EOF
 	q4::inwork; 14235,17103 14341,17030 14528,16910
 EOF
      },
-     { from  => $isodate2epoch->("2014-09-05 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2014-09-06 18:00:00"),
-       text  => 'Koloniestr. zwischen Soldiner Str. und Osloer Str.: Soldiner Kiez Straßenfest, Straße gesperrt, am 06.09.2014 von 14 bis 18 Uhr',
+     { from  => $isodate2epoch->("2022-06-24 09:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-06-26 21:00:00"),
+       text  => 'Soldiner Str.: Veranstaltung, zwischen Koloniestr. und Stockholmer Str. gesperrt, vom 25.06.2022 09:00 bis 26.06.2022 21:00', # früher (während der Bauarbeiten?) Koloniestr. zwischen Soldiner Str. und Osloer Str.: Soldiner Kiez Straßenfest, Straße gesperrt, am 06.09.2014 von 14 bis 18 Uhr
        type  => 'gesperrt',
        #periodic => 1,
        #recurrences => [['yearly', days => 5, months => 9]],
        source_id => 'IM_020277',
        data  => <<EOF,
-	2::temp 8606,16973 8677,17154
-	2::temp 8503,16716 8583,16914
+#: source_id: viz2021:13.3802,52.56039,25.06.2022,09:00
+	2::temp 8677,17154 8860,17077
+# REMOVED (früher) ---	2::temp 8606,16973 8677,17154
+# REMOVED (früher) ---	2::temp 8503,16716 8583,16914
 EOF
      },
      { from  => 1378576083, # 2013-09-07 19:48
@@ -30583,7 +30585,7 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-06-17
+#: last_checked: 2022-06-23 (mapillary)
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 EOF
@@ -32285,7 +32287,7 @@ EOF
 #: also_indoor: traffic (H,G)
 #: osm_watch: way id="362719487" version="6"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2022-04-09
+#: last_checked: 2022-06-24
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 EOF
@@ -34512,7 +34514,7 @@ EOF
        data  => <<EOF,
 #: source_id: viz2021:13.445912,52.478966,13.06.2022,07:00 (zusätzliche Meldung zur Sonnenallee)
 #: also_indoor: traffic (G,ex-H,B)
-#: last_checked: 2022-06-08
+#: last_checked: 2022-06-24
 #: next_check: 2022-08-13
 	q4::inwork 13277,8211 13331,8283
 EOF
@@ -34635,12 +34637,12 @@ EOF
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: last_checked: 2022-06-03 vvv
+#: last_checked: 2022-06-24 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4395450" version="26"
 	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="9"
+#: osm_watch: way id="505363417" version="10"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -34980,7 +34982,7 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
-#: last_checked: 2022-06-06 vvv
+#: last_checked: 2022-06-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-08-01 vvv
 	q4::inwork; 15560,7400 15693,7512
@@ -35034,9 +35036,10 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Zähringerstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten',
+       text  => 'Zähringerstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
 #: last_checked: 2022-04-26 (mapillary)
 #: check_frequency: 60d
 	q4::inwork; 4277,9895 4126,9932 3927,9935
@@ -35341,12 +35344,13 @@ EOF
      },
      { from  => 1655449200, # 2022-06-17 09:00
        until => 1656277200, # 2022-06-26 23:00
-       text  => 'John-Foster-Dulles-Allee und Heinrich von Gagern-Str.: Sportveranstaltung, Sperrung der Fahrbahn Richtung Osten bzw. Norden, Von 18.06.2022, ca. 09:00 Uhr bis 26.06.2022, ca. 23:00 Uhr',
+       text  => 'Spreeweg, John-Foster-Dulles-Allee und Heinrich von Gagern-Str.: Sportveranstaltung, Sperrung der Fahrbahn Richtung Osten bzw. Norden, Von 18.06.2022, ca. 09:00 Uhr bis 26.06.2022, ca. 23:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/2022/06/sons-2022/',
        data  => <<EOF,
 	1::temp 8119,12414 8122,12603
 	1::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
+	1::temp 6787,12099 6831,12150 7001,12274 7031,12320
 EOF
      },
      { from  => 1655449200, # 2022-06-17 09:00
@@ -35435,6 +35439,7 @@ EOF
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
 #: by: https://berliner-abendblatt.de/2022/06/22/bauarbeiten-legen-blumberger-damm-lahm/
 #: source_id: viz2021:13.562568,52.51298,24.06.2022,20:00 (hier nur Kfz-Verkehr)
+#: source_id: viz2021:13.56283,52.51426,24.06.2022,20:00
 	2::inwork 21152,11945 21166,12023 21190,12193 21199,12258
 EOF
      },
@@ -35457,6 +35462,26 @@ EOF
 #: by: https://nitter.net/pic/orig/media%2FFV2AstdX0AEWnIn.jpg
 	q4::inwork; 10710,18393 10650,18544
 	q4::inwork 10721,18575 10784,18426
+EOF
+     },
+     { from  => 1656194400, # 2022-06-26 00:00
+       until => 1735599599, # 2024-12-30 23:59
+       text  => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, voraussichtlich Sperrung vom 27. Juni 2022 bis 30. Dezember 2024',
+       type  => 'gesperrt',
+       source_id => 'https://sbahn.berlin/fileadmin/user_upload/Punkt3/PDF-Archiv/2022/punkt3-Ausgabe12_23.06.2022.pdf',
+       data  => <<EOF,
+#: next_check_id: KWEISENBAHNBRUECKE-2022
+	2::inwork 26327,-11708 26395,-11699
+EOF
+     },
+     { from  => 1656194400, # 2022-06-26 00:00
+       until => 1656712800, # 2022-07-02 00:00
+       text  => 'Schäfersee: Bauarbeiten, Weg kann gesperrt sein, vom 27.6.2022 bis 1.7.2022 ',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1220100.php',
+       data  => <<EOF,
+#: next_check_id: SCHAEFERSEE-2022
+	2::inwork 7189,17666 7173,17591 7222,17471 7253,17467
 EOF
      },
     );

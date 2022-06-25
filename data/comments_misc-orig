@@ -821,12 +821,12 @@ Weiter Blick: Anlieger frei	CS -4680,8340 -5093,8398 -5266,8424
 ausgeschildert als Darßer Str.	CP2; 16277,17830 16269,17759
 Straße geht rechts von Siemes Schuhcenter ab	CP2; 12908,17807 12918,17736
 Rehauer Pfad: Anlieger frei	CS 7587,3411 7626,3554
-Ausgeschildert als "Durchgang zum Döhlauer Pfad"	CP2; 7784,3369 7800,3435
-Ausgeschildert als "Zum Neumarkplan"	CP2; 12673,3619 12624,3659
+ausgeschildert als "Durchgang zum Döhlauer Pfad"	CP2; 7784,3369 7800,3435
+ausgeschildert als "Zum Neumarkplan"	CP2; 12673,3619 12624,3659
 (Schönefelder Chaussee - Mauerweg): über den Altglienicker Tunnel	CS 18760,-8 18574,68 18568,28 18560,75 18544,86
 Augusta-Ufer: nicht ausgeschildert	CS -3501,14365 -3440,14498 -3331,14628 -3255,14685
 #: note: früher möglicherweise "Straße 606 a"
-Ausgeschildert als Grünstadter Weg	CP2; 27202,770 27171,728
+ausgeschildert als Grünstadter Weg	CP2; 27202,770 27171,728
 Gambiner Weg: Privatstraße	CS -603,23825 -769,24019
 Randower Weg: Privatstraße	CS -684,24095 -769,24019 -796,23994
 Darsiner Weg: Privatstraße	CS -758,24172 -867,24066
@@ -907,7 +907,7 @@ Nikolaus-Ehlen-Weg: Privatstraße	CS 17308,-36 17215,94 17176,90
 #: XXX Wann ziehen die Gaslaternen um?
 #: osm_watch: note 2969085 3
 #: priority: #C
-#: last_checked: 2022-06-11
+#: last_checked: 2022-06-24
 #: check_frequency: 90d
 Gaslaternen-Freilichtmuseum Berlin	CS 5895,11692 5835,11768 5858,11863 5900,11913
 #: ignore ^^^
@@ -1207,7 +1207,7 @@ Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788&d=20191216 (Benennung nach Hans Otto Obrikat vorgeschlagen)
 #: XXX oder wird statt Wasserstr. und Uferstr. die Straße nach Hans Otto Obrikat benannt? (erster Vorschlag: "Else-Schierhorn-Str.")
-#: last_checked: 2022-06-18
+#: last_checked: 2022-06-25
 #: check_frequency: 60d
 Wasserstr. und Uferstr.: noch nicht ausgeschildert	CS 17483,6024 17681,6212 17847,6089
 # 
@@ -1678,6 +1678,13 @@ Am Pankepark: nicht ausgeschildert	CS 8152,14130 8238,14181 8282,14116 8207,1406
 Kleiner Parkweg: nicht ausgeschildert	CS 20775,11801 20790,11990
 # 
 Volkerweg: nicht ausgeschildert	CS 16005,4012 16046,4073 16060,4093 16145,4217 16151,4226
+# 
+#: next_check_id: WASSERSTADTSPINDLERSFELD-2019
+#: last_checked: 2022-06-19
+#: check_frequency: 60d
+Eiselenweg - Uferweg: Einfahrt zum Uferweg ist etwas versteckt, vor dem Neubaugebiet links abbiegen	CP; 21364,5430 21442,5414 21476,5434
+# 
+Büxensteinallee: diagonal über die Straßenbahngleise, erst dahinter ist ausgeschildert	CP2; 22162,1067 22228,1071
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)
