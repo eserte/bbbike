@@ -372,6 +372,12 @@ RUN echo 'Acquire::http::Pipeline-Depth "0";' >> /etc/apt/apt.conf.d/00no-pipeli
 EOF
     }
 
+    # In case of unstable networks (seen for some jobs in github
+    # actions). Recommendation from https://askubuntu.com/a/1107071/207243
+    $dockerfile .= <<EOF;
+RUN echo 'Acquire::Retries "3";' > /etc/apt/apt.conf.d/80-retries
+EOF
+
     # basic packages
     _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
     $dockerfile .= <<EOF;
