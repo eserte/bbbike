@@ -31179,7 +31179,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-06-21 vvv
+#: last_checked: 2022-06-26 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -35230,6 +35230,7 @@ EOF
        text  => 'Dahlmannstr.: Einbahnstraßenregelung wegen Bauarbeiten, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: also_indoor: traffic (none)
 #: last_checked: 2022-05-28 (mapillary)
 	q4::inwork; 3603,10765 3614,10564
 EOF
@@ -35343,7 +35344,7 @@ Yitzhak-Rabin-Str	2::temp 8055,12186 8119,12414
 EOF
      },
      { from  => 1655449200, # 2022-06-17 09:00
-       until => 1656277200, # 2022-06-26 23:00
+       until => 1656265542, # 1656277200, # 2022-06-26 23:00
        text  => 'Spreeweg, John-Foster-Dulles-Allee und Heinrich von Gagern-Str.: Sportveranstaltung, Sperrung der Fahrbahn Richtung Osten bzw. Norden, Von 18.06.2022, ca. 09:00 Uhr bis 26.06.2022, ca. 23:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/2022/06/sons-2022/',
@@ -35354,7 +35355,7 @@ EOF
 EOF
      },
      { from  => 1655449200, # 2022-06-17 09:00
-       until => 1656277200, # 2022-06-26 23:00
+       until => 1656265548, # 1656277200, # 2022-06-26 23:00
        text  => 'John-Foster-Dulles-Allee und Heinrich von Gagern-Str.: Sportveranstaltung, nur zu wettbewerbsfreien Zeiten offen, Von 18.06.2022, ca. 09:00 Uhr bis 26.06.2022, ca. 23:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/2022/06/sons-2022/',

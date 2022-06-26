@@ -4645,7 +4645,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-06-21 vvv
+#: last_checked: 2022-06-26 vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -6122,7 +6122,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2022-05-28 (mapillary)
+         'data' => '#: also_indoor: traffic (none)
+#: last_checked: 2022-05-28 (mapillary)
 	q4::inwork; 3603,10765 3614,10564
 ',
          'from' => undef,
@@ -6222,32 +6223,8 @@ Yitzhak-Rabin-Str	2::temp 8055,12186 8119,12414
          'type' => 'gesperrt',
          'until' => 1656277200
        },
-       {
-         'data' => '	1::temp 8119,12414 8122,12603
-	1::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
-	1::temp 6787,12099 6831,12150 7001,12274 7031,12320
-',
-         'from' => 1655449200,
-         'id' => 3564,
-         'source_id' => 'https://viz.berlin.de/2022/06/sons-2022/',
-         'text' => 'Spreeweg, John-Foster-Dulles-Allee und Heinrich von Gagern-Str.: Sportveranstaltung, Sperrung der Fahrbahn Richtung Osten bzw. Norden, Von 18.06.2022, ca. 09:00 Uhr bis 26.06.2022, ca. 23:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1656277200
-       },
-       {
-         'data' => '#: source_id: viz2021:13.37082,52.517842,18.06.2022,09:00
-	1::temp 8122,12603 8119,12414
-#: source_id: viz2021:13.3546,52.51713,18.06.2022,09:00 (inaktiv)
-#: source_id: viz2021:13.354603,52.517071,18.06.2022,09:00
-	1::temp 8119,12414 8070,12409 8017,12359 7875,12363 7821,12367 7627,12380 7514,12387 7437,12368 7215,12295 7031,12320
-',
-         'from' => 1655449200,
-         'id' => 3565,
-         'source_id' => 'https://viz.berlin.de/2022/06/sons-2022/',
-         'text' => 'John-Foster-Dulles-Allee und Heinrich von Gagern-Str.: Sportveranstaltung, nur zu wettbewerbsfreien Zeiten offen, Von 18.06.2022, ca. 09:00 Uhr bis 26.06.2022, ca. 23:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1656277200
-       },
+       undef,
+       undef,
        undef,
        {
          'data' => '#: by: http://www.taz.de/!5516248/ (möglicherweise dauerhaft)

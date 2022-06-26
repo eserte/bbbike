@@ -555,8 +555,8 @@ Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8332,13548 8295,13531 8187,13
 Schönhauser Allee (Richtungsfahrbahn)	1::igndisp 10883,15129 10883,15251 10887,15287
 Schönhauser Allee (Richtungsfahrbahn)	1::igndisp 10887,15287 10886,15251 10883,15129
 Schönhauser Allee (Mittelstreifen, U-Bahnhof)	3nocross::ignrte 10883,15129 10886,15251 10887,15287
-Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse)	1::igndisp 21789,5427 21703,5538 21649,5617 21600,5683 21594,5691 21567,5727 21519,5767 21467,5802 21364,5827 21303,5826
-Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21789,5427 21706,5541 21605,5687
+Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse)	1::igndisp 21789,5427 21739,5492 21703,5538 21649,5617 21600,5683 21594,5691 21567,5727 21519,5767 21467,5802 21364,5827 21303,5826
+Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492 21789,5427
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
 Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21706,5541 21605,5687 21600,5694
 Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21600,5683 21507,5620
@@ -2698,6 +2698,7 @@ tragen (Treppe, 10 Stufen) oder steile Rampe benutzen	0:15:-181 2199,26440
 tragen (einige Stufen)	0:15:-82 -18612,4568
 tragen (Treppe)	0:30:-19 -18875,5375
 tragen (Treppe)	0:30:-101 -18860,5378
+tragen (eine Stufe) oder wilden Pfad benutzen	0:5:-215 21660,5424
 Schranke	BNP:3:-130:trailer=10 18638,11479
 Schranke	BNP:10:-180:trailer=30 18965,11706
 Schranke	BNP:3:-164:trailer=10 17793,10382
@@ -3210,7 +3211,8 @@ Drängelgitter	BNP:2:-19:trailer=3 -3838,-47018
 zwei Drängelgitter (Z-Anordnung)	BNP:5:-225:trailer=15 18848,3600
 zwei Drängelgitter (Z-Anordnung)	BNP:5:-224:trailer=15 18825,3325
 weites Drängelgitter	BNP:2:75:trailer=7 12614,6301
-Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	2:inwork 7422,13012 7415,13060
+(Uferweg): Bauarbeiten, noch gesperrt	2::inwork 21901,5117 21822,5153
+Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	2::inwork 7422,13012 7415,13060
 Möllhausenufer: Bauarbeiten, Einbahnstraßenregelung	1s 23608,1210 23520,1194
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
 (Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
@@ -3227,6 +3229,7 @@ Schönegarten: an beiden Enden gesperrt	2 7416,10492 7432,10546 7330,10590
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17783,8663 17656,8700
 Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17621,8544 17604,8466 17597,8434
 Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17640,8627 17771,8605
+Ruth-Baumgarte-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17794,8429 17735,8440 17668,8454 17604,8466
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17497,8623 17640,8627 17656,8700 17461,8693
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:inwork 8266,14346 8442,14456
 (Planstraße C): abschnittsweise Einbahnstraße	1s:inwork 12848,11093 12926,11224

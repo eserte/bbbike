@@ -1041,7 +1041,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-06-23
+#: last_checked: 2022-06-26
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1410,8 +1410,9 @@ Rominter Allee: gutes Kopfsteinpflaster	Q1+ -110,12019 -116,12059 -145,12151 -15
 Waldemarstr.: Kopfsteinpflaster	Q2 12172,10585 12142,10600
 Waldemarstr.: Asphalt	Q0 12142,10600 12056,10642
 Eichgestell: Asphalt	Q0 20293,6278 20199,6318 20106,6357 20081,6368 19995,6406 19988,6409 19751,6514
-Eichgestell: Beton	Q0 19751,6514 19587,6584
-Eichgestell: Asphalt	Q0 19587,6584 19407,6660 19052,6823
+Eichgestell: Beton	Q0- 19751,6514 19587,6584
+Eichgestell: Asphalt, etwas rau	Q0- 19587,6584 19407,6660
+Eichgestell: Asphalt	Q0 19407,6660 19052,6823
 Eichgestell: Parkweg, etwas Schotter	Q2+ 19052,6823 18944,6870 18186,7200
 Eichgestell: Parkweg, OK	Q1- 18186,7200 18086,7243
 Eichgestell - Edisonstr./Rummelsburger Str.: Parkweg	Q1- 18186,7200 18134,7173 18079,7144 18010,7133
@@ -2351,14 +2352,14 @@ Ahornallee: Beton	Q0; 21454,4928 21375,4974
 Ahornallee: Beton	Q0 21454,4928 21509,4900
 Ahornallee: Kopfsteinpflaster	Q2 21509,4900 21607,4850 21684,4814
 Mentzelstr.: Kopfsteinpflaster	Q2 21726,4896 21684,4814 21579,4579
-Charlottenstr.: Asphalt	Q0 23041,3919 22966,3912 22855,3902
+Charlottenstr.: Asphalt	Q0 23036,3929 23027,3916 22966,3912 22855,3902
 Charlottenstr.: glattes Kopfsteinpflaster	Q1 22855,3902 22666,3888
 Charlottenstr.: Asphalt	Q0 22666,3888 22456,3889
 Karlstr.: Beton	Q0 22456,3889 22458,4134 22556,4386
 Gartenstr.: Asphalt	Q0 22456,3889 22281,4033 22263,4120 22279,4220
 Kietz: mäßiges Kopfsteinpflaster	Q2 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
 Gartenstr.: Kopfsteinpflaster	Q2 22279,4220 22302,4255
-Gartenstr.: welliges Verbundsteinpflaster	Q1- 22302,4255 22362,4331 22382,4361 22419,4457
+Gartenstr.: Verbundsteinpflaster	Q1 22302,4255 22362,4331 22382,4361 22419,4457
 Spitzerstr.: Beton	Q0- 22319,4197 22358,4282 22385,4317
 Spitzerstr.: Asphalt	Q0 22385,4317 22425,4370 22451,4441
 Grünstr.: Kopfsteinpflaster	Q2 22111,4562 22162,4546 22214,4548 22324,4586
@@ -3589,7 +3590,7 @@ Funkelgang: Asphalt	Q0 23701,3228 23908,2912 23943,2853
 Barbenweg: Asphalt	Q0 23734,3255 23991,2941
 Plehmpfad: Beton	Q0- 23384,3563 23564,3283 23630,3180 23741,2979 23777,2887 23799,2823
 Sandschurrepfad: Asphalt	Q0- 23680,3371 23758,3275 24032,2964 24074,2904
-Grüne Trift (Köpenick) [Wohngebiet]: Beton	Q1 23041,3919 23088,4001 23257,3884 23237,3845 23316,3778
+Grüne Trift (Köpenick) [Wohngebiet]: Beton	Q1 23036,3929 23088,4001 23257,3884 23237,3845 23316,3778
 (Grüne Trift - Salvador-Allende-Str.): sandig	Q3 23257,3884 23368,3894
 Grüne Trift am Walde: Asphalt mit Wurzelhebungen	Q1+ 23343,3750 23412,3766 23657,3508 23740,3418 24102,3055 24179,2977
 Kienappelweg: Beton	Q0 24102,3055 24101,3447
@@ -12529,6 +12530,7 @@ Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
 Georg-Klingenberg-Str.: Asphalt	Q0 17461,8693 17656,8700
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627 17621,8544
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
+Ruth-Baumgarte-Str.: Asphalt	Q0 17794,8429 17735,8440 17668,8454 17604,8466
 Schönegarten: Betonpflaster	Q0- 7416,10492 7432,10546 7330,10590
 Wichmannstr.: Kleinsteinpflaster	Q1 6447,11144 6452,11118
 Frobenstr.: Asphalt mit einigen Rissen	Q0-; 7429,10366 7413,10244
@@ -12598,6 +12600,11 @@ Belßstr.: Asphalt mit einigen Schäden	Q1; 7777,2447 7899,2391
 (Am Buckersberg - Volkerweg): unbefestigte Straße	Q2 16090,4021 16039,4062
 Samoastr.: Gehwegplatten	Q0- 6886,15156 6833,15215
 Lugierring: Verbundsteinpflaster	Q1+ 20207,789 20142,824
+Grüne Trift: Asphalt	Q0 23325,2070 23319,2114 23329,2166 23334,2191 23349,2240
+Grüne Trift: Asphalt mit einigen Rissen und Schäden	Q0- 23349,2240 23395,2392 23436,2525 23439,2629 23416,2808
+Grüne Trift: Asphalt	Q0 23416,2808 23370,3024 23338,3173 23298,3295 23231,3480 23158,3648 23105,3770 23055,3885 23046,3905 23036,3929 22971,4077 22965,4124
+(Lindenstr. - Uferweg): Betonpflaster, etwas große Fugen	Q1 21739,5492 21655,5432
+(Uferweg): wassergebundene Decke	Q1- 21901,5117 21822,5153 21754,5221 21730,5267 21672,5407 21660,5424 21655,5432 21629,5470
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14216,6 +14223,7 @@ Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 #: corrected_by: srt
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf (Asphaltierung geplant)
 #: XXX wann wird hier asphaltiert?
+#: osm_watch: way id="13863115" version="18"
 #: last_checked: 2021-12-29
 #: check_frequency: 180d
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
@@ -18191,9 +18199,9 @@ Im Gestell: Kopfsteinpflaster	Q2 595,4594 519,4547 444,4498 371,4453
 # 
 #: by: Jessica Kretschmer: vvv
 #: corrected_by: srt (Zwischenstück mit KS) vvv
-Luisenstr. (Köpenick): guter Beton	Q0 22641,4095 22458,4134
+Luisenstr. (Köpenick): Beton	Q0- 22641,4095 22458,4134
 Luisenstr. (Köpenick): Kopfsteinpflaster	Q2- 22458,4134 22348,4177
-Luisenstr. (Köpenick): guter Beton	Q0 22348,4177 22319,4197 22279,4220
+Luisenstr. (Köpenick): Beton	Q0- 22348,4177 22319,4197 22279,4220
 #: corrected_by ^^^
 #: by: ^^^
 # 
@@ -18581,7 +18589,8 @@ Kötztinger Str.: Beton	Q1+ 19536,9853 19549,10049 19560,10218 19697,10210
 Bahnhofstr. (Friedenau): Asphalt	Q0 6082,7066 6151,7078 6157,7117
 # 
 #: by: Vera Kästner:
-Spreestr. (Köpenick): gutes Kopfsteinpflaster	Q1 21974,5208 21901,5117
+#: corrected_by: srt (gutes Kopfsteinpflaster, Q1 - ..., neu gemacht?)
+Spreestr. (Köpenick): Asphalt	Q0 21974,5208 21901,5117
 # 
 #: by: Petra Lohs: vvv
 #: corrected_by: srt ("Asphalt" -> "Beton"):
@@ -22870,7 +22879,8 @@ Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17524,8536 17533,8505
 # REMOVED (früher) --- Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17533,8505 17554,8458
 Hönower Wiesenweg: provisorische Baustraße	Q2 17533,8505 17554,8458
 # REMOVED (früher) --- #: corrected_by: srt: (Q3 -> Q2-) --- Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2- 17554,8458 17620,8366 17704,8327 17753,8290 17793,8225 17856,8162
-Hönower Wiesenweg: provisorische Baustraße	Q2 17554,8458 17620,8366 17704,8327 17753,8290 17793,8225 17856,8162
+Hönower Wiesenweg: provisorische Baustraße	Q2 17554,8458 17620,8366 17704,8327 17753,8290
+Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2 17753,8290 17793,8225 17856,8162
 #: by: ^^^
 # 
 #: by: martin (noisee)
@@ -31062,4 +31072,11 @@ Kreuzungsbereich asphaltiert	Q0 5065,2715
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 5115,2803
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 13151,10276
 Kreuzungsbereich asphaltiert	Q0 13032,10355
+Einmündungsbereich asphaltiert	Q0 18007,8377
+Einmündungsbereich asphaltiert	Q0 17961,8312
+Kreuzungsbereich asphaltiert	Q0 17920,8256
+Einmündungsbereich asphaltiert	Q0 17976,8106
+Einmündungsbereich asphaltiert	Q0 23102,1637
+Kreuzungsbereich asphaltiert	Q0 23325,2070 23325,2070
+Kreuzungsbereich betoniert	Q0- 22458,4134
 #: ignore ^^^

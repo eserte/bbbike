@@ -883,8 +883,8 @@ Schönhauser Allee (Mittelstreifen, U-Bahnhof)	3nocross::ignrte 10883,15129 10886
 #: note ^^^
 # 
 #: note: Straßenbahntrasse vvv
-Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse)	1::igndisp 21789,5427 21703,5538 21649,5617 21600,5683 21594,5691 21567,5727 21519,5767 21467,5802 21364,5827 21303,5826
-Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21789,5427 21706,5541 21605,5687
+Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse)	1::igndisp 21789,5427 21739,5492 21703,5538 21649,5617 21600,5683 21594,5691 21567,5727 21519,5767 21467,5802 21364,5827 21303,5826
+Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492 21789,5427
 #: next_check_id: PYRAMIDENBRUECKE-2022
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (mit Ampel, Brückenneubau 2021)
@@ -902,7 +902,7 @@ Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21789,5427 21706,5541 21605,5687
 #: by: https://unternehmen.bvg.de/pressemitteilung/gleise-glaetten/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1211600.php
 #: source_id: viz2021:13.566629,52.455193,07.02.2022,14:00 (Brückenneubau, Verengung, bis 09.06.2022) (bis 31.12.2022)
-#: last_checked: 2022-06-19 vvv
+#: last_checked: 2022-06-26 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2022-12-31 vvv
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
@@ -2651,6 +2651,7 @@ tragen (Treppe, 10 Stufen) oder steile Rampe benutzen	0:15 2199,26440
 tragen (einige Stufen)	0:15 -18612,4568
 tragen (Treppe)	0:30 -18875,5375
 tragen (Treppe)	0:30 -18860,5378
+tragen (eine Stufe) oder wilden Pfad benutzen	0:5 21660,5424
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
@@ -3385,16 +3386,22 @@ weites Drängelgitter	BNP:2::trailer=7 12614,6301
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=715173#post715173
+#: XXX culdesac-Eintrag für die Spreestr. anpassen!
+#: last_checked: 2022-05-11
+#: check_frequency: 60d
+(Uferweg): Bauarbeiten, noch gesperrt	2::inwork 21901,5117 21822,5153
+# 
 #: next_check_id: TRAMTURM-2021
 #: XXX alten Eintrag hier wiederherstellen!
 #: last_checked: 2022-06-11
 #: check_frequency: 180d
 #: next_check: 2022-12-22
-Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	2:inwork 7422,13012 7415,13060
+Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	2::inwork 7422,13012 7415,13060
 # 
 #: XXX laut Schild der Wasserbetriebe bis April 2023; Einbahnstraßenregelung fängt schon 30m westlich der Einmündung Zum Langen See an
 #: XXX man kommt als Radfahrer aber recht gut vorbei
-#: last_checked: 2022-06-19
+#: last_checked: 2022-06-26
 #: check_frequency: 180d
 #: next_check: 2023-04-30
 #: valid: -20230531
@@ -3457,11 +3464,12 @@ Schönegarten: an beiden Enden gesperrt	2 7416,10492 7432,10546 7330,10590
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
-#: last_checked: 2022-06-19 vvv
+#: last_checked: 2022-06-26 vvv
 #: next_check: 2022-08-01 vvv
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17783,8663 17656,8700
 Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17621,8544 17604,8466 17597,8434
 Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17640,8627 17771,8605
+Ruth-Baumgarte-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17794,8429 17735,8440 17668,8454 17604,8466
 #: next_check ^^^
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17497,8623 17640,8627 17656,8700 17461,8693
 #: last_checked ^^^
@@ -3489,7 +3497,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2022-06-19
+#: last_checked: 2022-06-26
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
