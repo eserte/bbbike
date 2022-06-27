@@ -239,9 +239,11 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?
 #: by: https://www.infravelo.de/projekt/muellerstrasse/ (Radfahrstreifen zwischen Leopoldplatz und S Wedding; 2. Quartal 2022 - 3. Quartal 2022)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1219573.php (zwischen Luxemburger Str. und Lynarstr., Baubeginn 28. Juni 2022, bis 26. Juli 2022)
 #: by: https://berliner-abendblatt.de/2022/06/23/bauarbeiten-fuer-radweg-an-der-muellerstrasse-starten/
+#: by: https://viz.berlin.de/2022/06/muellerstr-radweg/
 #: source_id: 2147345414 (bis Mitte April 2020) (haben die Leitungsarbeiten was mit den geplanten Radspuren zu tun?) (inaktiv)
 #: source_id: viz2021:13.365263,52.543096,15.12.2021,07:00 (Bauarbeiten bis 23.12.2021) (mittlerweile bis 20.01.2022) (inaktiv)
 #: source_id: viz2021:13.365263,52.543096,01.01.2022,07:00 (Bauarbeiten bis 28.01.2022) (mittlerweile bis 24.01.2022) (inaktiv)
+#: source_id: viz2021:13.359153,52.546389,28.06.2022,06:00 (Fahrbahnsanierung bis 5.7.2022)
 #: osm_watch: way id="4543585" version="34"
 #: osm_watch: way id="42732291" version="23"
 #: XXX mittlerweile gibt es bereits abschnittsweise provisorische Radspuren (vermutlich nur wegen der Hochbaustelle?)
@@ -287,7 +289,7 @@ Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,2
 #: by: https://api.fixmyberlin.de/api/plannings/127
 #: source_id: LMS-BR_r_LMS-BR_138344_LMS-BR_72
 #: source_id: 2147343836
-#: last_checked: 2021-10-20
+#: last_checked: 2022-06-26 (mapillary)
 #: check_frequency: 360d
 Heerstr.: Erneuerung des Radwegs geplant	?::projected -3069,11487 -2871,11423 -2476,11301 -2413,11283 -2317,11254
 # 
@@ -1197,10 +1199,12 @@ Hegemeisterweg/Woltersdorfer Weg: Herstellen eines fahrradfreundlichen Belags	?:
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1191047.php (neue Brücke wird am 30.03.2022 eingehoben; Ende der Gesamtbaumaßnahme: 4. Quartal 2022)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/schmoeckwitzwerder/
 #: by: https://www.berliner-woche.de/schmoeckwitz/c-bauen/bruecke-schmoeckwitzwerder-wurde-eingehoben_a341684
+#: by: https://www.deutsches-architekturforum.de/thread/4128-berliner-stadtverkehr-stra%C3%9Fe-bus-und-bahn-geb%C3%A4ude/?postID=721237#post721237 (laut Baustellenschild bis 4. Quartal 2022)
 #: osm_watch: way id="118394625" version="11"
-#: last_checked: 2020-09-15
+#: last_checked: 2022-06-26 (daf)
 # REMOVED --- #: check_frequency: 360d
-#: next_check: 2023-10-01
+# REMOVED --- #: next_check: 2023-10-01
+#: next_check: 2022-12-31
 Schmöckwitzwerder Nord - Brücke: Verbesserung der Befahrbarkeit	?::projected 30390,-3443 30439,-3371 30473,-3290 30540,-3125 30534,-3105 30546,-3072
 # REMOVED (hier vermutlich nicht) --- Schmöckwitzwerder Nord - Brücke: Verbesserung der Befahrbarkeit	?::projected 30546,-3072 30588,-3000 30599,-2827 30629,-2817 30646,-2732 30728,-2326
 # 
@@ -1730,7 +1734,7 @@ Seegefelder Str.: aus dem Radweg werden Radstreifen	?::projected -3851,14174 -36
 #: by: http://www.abendblatt-berlin.de/2019/03/23/spandau-heerstrasse-erhaelt-neuen-radweg/ (2020, Südseite)
 #: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/stop-and-go-auf-der-heerstrasse_a207868 (2020, Südseite)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/fahrrat/endversion-protokoll-18-06-20.pdf
-#: last_checked: 2021-10-20
+#: last_checked: 2022-06-26 (mapillary)
 #: check_frequency: 90d
 Heerstr.: Verbesserung des Radwegs geplant? ("neuer breiterer Gehweg")	?::projected -3692,11681 -3404,11589
 # 
@@ -5586,7 +5590,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5913
 #: by: https://www.berliner-woche.de/karow/c-verkehr/der-ueberweg-soll-kommen_a331769
-#: last_checked: 2022-05-07 (mapillary)
+#: last_checked: 2022-06-24 (mapillary)
 #: check_frequency 90d
 #: priority: #D
 Blankenburger Chaussee Höhe Beuthener Str./Straße 43: wird hier ein Zebrastreifen realisiert?	? 15057,22288 15094,22290 15134,22293
@@ -5600,7 +5604,7 @@ Blankenburger Chaussee Höhe Beuthener Str./Straße 43: wird hier ein Zebrastreife
 # 
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag1/anlage_1e_ma__nahmenkatalog.pdf?start&ts=1312523702&file=anlage_1e_ma__nahmenkatalog.pdf (Bd.3) vvv
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6828 (Antrag: Forderung nach einer Erneuerung)
-#: osm_watch: way id="152863346" version="9"
+#: osm_watch: way id="152863346" version="10"
 #: last_checked: 2022-06-11 (mapillary)
 #: check_frequency: 360d
 Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-979 21487,-912 21403,-859
@@ -5616,7 +5620,7 @@ Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,48
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Gr.4) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.630926.php --- #: osm_watch: way id="39356752" version="8" --- #: last_checked: 2017-08-10 --- #: next_check: 2017-11-15 --- Wassersportallee: Verbesserung der Befahrbarkeit (Asphaltstreifen?)	?::projected 22655,1450 22756,1524
 # 
 #: XXX Maßnahme Gr.6
-#: osm_watch: way id="151627030" version="21"
+#: osm_watch: way id="151627030" version="22"
 #: last_checked: 2022-06-25
 #: check_frequency: 180d
 Regattastr.: Fahrradstraße soll eingerichtet werden	?::projected 23252,792 23501,797 23681,800 23953,731 24011,710 24197,585 24571,514 24666,436
@@ -6663,7 +6667,7 @@ Paradiesstr.: evtl. werden hier noch Radwege als Zufahrt zur B96a erstellt, viel
 #: by: https://www.berliner-woche.de/karow/c-verkehr/kreuzung-soll-sicherer-werden_a330395 (kein Termin)
 #: by: https://www.berliner-woche.de/karow/c-verkehr/johannes-kraft-hakt-erneut-beim-senat-nach_a333683
 #: priority: #C
-#: last_checked: 2022-02-13 (mapillary)
+#: last_checked: 2022-06-24 (mapillary)
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2022-04-15
 Alt-Karow/Bucher Chaussee/Hofzeichendamm/Schönerlinder Weg: "Fußgängerschutzweg" (Zebrastreifen?) soll errichtet werden	?::projected 15721,23508 15726,23475 15738,23436

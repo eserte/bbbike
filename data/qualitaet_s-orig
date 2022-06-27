@@ -8631,6 +8631,7 @@ Letterhausweg: Asphalt	Q0- 2111,14235 2087,14078
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=687886#post687886
 #: by: https://www.berliner-woche.de/charlottenburg-nord/c-bauen/infoabend-zum-staedtebau_a318865
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1220157.php (Eröffnung am 29.6.2022)
+#: by: https://berliner-abendblatt.de/2022/06/27/neuer-gruenzug-am-halemweg/
 #: note: laut Baustellenschild Bauzeit des jetzigen Bauabschnitts: 2021-2022
 #: last_checked: 2022-02-12
 # REMOVED --- #: check_frequency: 120d
@@ -11494,8 +11495,8 @@ Nettelbeckplatz: teilweise gepflastert	Q1 7891,15417 7974,15418 8024,15401
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.715459.php (Umgestaltung)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.806805.php (baulichen Umsetzung ab Anfang 2020)
 #: XXX was wird sich nach der Umgestaltung ändern? Wird sich die Qualität verbessern?
-#: last_checked: 2021-10-20
-#: check_frequency: 120d
+#: last_checked: 2022-06-26 (osm)
+#: check_frequency: 60d
 (Uferweg): welliges Verbundsteinpflaster	Q1- -4245,11400 -4204,11432 -4181,11458 -4106,11519 -4028,11533 -3928,11526 -3828,11491 -3785,11445 -3752,11373
 Havel-Ufer Hohengatow: Asphalt	Q0 -4774,6514 -4689,6661 -4684,6755 -4667,6814 -4624,6872 -4498,7095 -4481,7142 -4488,7200 -4488,7317 -4506,7375 -4508,7456 -4494,7510 -4531,7549 -4539,7643 -4534,7695 -4540,7801 -4778,7791
 Havel-Ufer Hohengatow, unterer Weg: unbefestigter Weg	Q1- -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
@@ -12442,10 +12443,13 @@ Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q0- 13870,9872 
 #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/anreise-zum-spreepark-soll-mit-schiffen-und-mehr-bussen-erfolgen_a315294 (Fahrbahn soll wasserdurchlässige Deckschicht bekommen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_50_4625_4696_online.pdf (Absichtserklärung zu einer Straßenlandeinziehung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_02_0049_0116_online.pdf (Teileinziehung)
+#: by: https://www.berliner-woche.de/plaenterwald/c-bauen/dammweg-zum-spreepark-soll-einen-gehweg-bekommen_a350024 (Schranke für Autos? Umbaumaßnahme laut BA "nicht terminiert")
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.1212256.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/00_entwurf-b-plan-9-7.pdf (Dammweg wird zum Fußgänger/Radfahrerbereich)
 #: osm_watch: way id="24202434" version="24"
 #: XXX Wann wird der Asphalt ersetzt? Wann wird die Straße nur für Anlieger/Radfahrer frei sein?
 #: last_checked: 2022-06-25
-# REMOVED --- #: check_frequency: 180d
+#: check_frequency: 90d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
 Chlodwigstr.: Asphalt	Q0 8499,5016 8433,5108 8356,5195

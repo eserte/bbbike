@@ -1872,6 +1872,7 @@ push @temp_blocking,
        {
          'data' => '#: note: Sperrung bestätigt von Stefan (s.sms): vvv
 #: note: genauere Uhrzeit von Dieter Heimann
+#: note: Öffnung im Sommer ab 4:30 Uhr (laut Sicherheitsdienst)
 #: confirmed_by: um 20:30 Uhr steht man vor einem geschlossenen Tor, zumindest an der Nordostseite (2012-08); mapillary tagsüber am 2022-03-08 (Frauentag)
 #: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
 Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr, am Wochenende und an Feiertagen gesperrt	2::night:weekend 21683,6946 21572,7051 21505,7129 21491,7182 21490,7197 21484,7326 21475,7500 21497,7597 21540,7630
@@ -3361,19 +3362,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.3802,52.56039,25.06.2022,09:00
-	2::temp 8677,17154 8860,17077
-# REMOVED (früher) ---	2::temp 8606,16973 8677,17154
-# REMOVED (früher) ---	2::temp 8503,16716 8583,16914
-',
-         'from' => 1656054000,
-         'id' => 2485,
-         'source_id' => 'IM_020277',
-         'text' => 'Soldiner Str.: Veranstaltung, zwischen Koloniestr. und Stockholmer Str. gesperrt, vom 25.06.2022 09:00 bis 26.06.2022 21:00',
-         'type' => 'gesperrt',
-         'until' => 1656270000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3824,7 +3813,44 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147339672
+#: by: https://twitter.com/VIZ_Berlin/status/1437755743051128833 (2021)
+#: by: https://berliner-firmenlauf.de/infos-zum-lauf/ (2021)
+#: by: https://berliner-firmenlauf.de/infos-zum-lauf/?date=20220627
+#: by: https://berliner-firmenlauf.de/wp-content/uploads/2021/04/BFL-2022-Strecke-800x456.jpg
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+	2::temp 8600,12165 8538,12245 8592,12252
+	2::temp 8119,12414 8055,12186
+	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	3 7429,12070 7383,12095 7031,12320
+	3 7031,12320 7383,12095 7429,12070
+	3 7822,12201 7816,12150 7823,12120
+	3 7823,12120 7816,12150 7822,12201
+	3 8522,12239 8538,12245 8522,12187
+	3 8522,12187 8538,12245 8522,12239
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+	2::temp 8595,12066 8737,12098 8743,12099 8861,12125 8901,12008 8844,11984 8783,11959 8577,11896 8571,11846 8489,11782 8456,11763 8322,11715 8203,11686 8172,11679 8094,11657 8005,11627 7816,11571 7717,11540 7665,11353 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208 7160,11225 7115,11220 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031
+	2::temp 6828,12031 6884,12006
+	3 8014,11753 8005,11627 7943,11431
+	3 7943,11431 8005,11627 8014,11753
+	3 6716,11439 6825,11486 6915,11492
+	3 6915,11492 6825,11486 6716,11439
+	3 6540,11754 6778,11742 6980,11790
+	3 6980,11790 6778,11742 6540,11754
+	3 6679,11602 6809,11570 6869,11567
+	3 6869,11567 6809,11570 6679,11602
+	3 6750,11550 6825,11486 6915,11492
+	3 6915,11492 6825,11486 6750,11550
+',
+         'from' => 1656432000,
+         'id' => 2827,
+         'source_id' => '2147339672',
+         'text' => 'Straße des 17. Juni, Ebertstr. und weitere Straßen am Tiergarten: Sperrungen wegen einer Sportveranstaltung (Berliner Firmenlauf), evtl. sind auch Radfahrer betroffen, am 29.6.2022',
+         'type' => 'gesperrt',
+         'until' => 1656539999
+       },
        undef,
        undef,
        undef,
@@ -4354,7 +4380,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022
-#: also_indoor: traffic (H,B,G)
+#: also_indoor: traffic (ex-H,B,G)
 #: osm_watch: way id="1006570991" version="1"
 #: last_checked: 2022-05-14
 #: check_frequency: 45d
@@ -5418,8 +5444,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: SCHARFELANKE-2021
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: osm_watch: way id="187977779" version="15" vvv
-#: last_checked: 2022-03-15 (osm) vvv
+#: osm_watch: way id="187977779" version="16" vvv
+#: last_checked: 2022-06-26 (osm) vvv
 #: check_frequency: 60d vvv
 	2::inwork -3752,11373 -3785,11445 -3828,11491 -3928,11526 -4028,11533 -4106,11519 -4181,11458 -4204,11432 -4245,11400
 	2::inwork -4246,11438 -4204,11432
@@ -5961,7 +5987,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1513397936151044099#m
 #: by: https://nitter.net/pic/media%2FFP1LIs8XMAENMUm.jpg%3Fname%3Dorig
 #: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022) (mittlerweile bis 27.6.2022) (mittlerweile bis 1.8.2022)
-#: source_id: viz2021:13.47859,52.47157,11.04.2022,09:00 (zusätzlicher Eintrag, bis 1.8.2022)
+#: source_id: viz2021:13.47859,52.47157,11.04.2022,09:00 (zusätzlicher Eintrag, bis 1.8.2022) (mittlerweile inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
@@ -6186,43 +6212,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/verkehrszeichenplan-kranoldplatz-26-06-2022-7-23-uhr-quelle-abs-verkehrstechnik-gmbh.png
-#: by: https://www.standortmanagement-lichterfelde-ost.de/neuigkeiten/event-auf-dem-kranoldplatz-26-06-2022/
-#: by: https://berliner-abendblatt.de/2022/06/15/stadtteilfest-parkverbot-am-kranoldplatz/
-	2::temp 5417,2383 5317,2345
-',
-         'from' => 1656108000,
-         'id' => 3562,
-         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1215737.php',
-         'text' => 'Kranoldplatz: Veranstaltung, Straße gesperrt, am 26.06.2022 von 7:00 bis 23.00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1656277200
-       },
-       {
-         'data' => '#: note: Juni 2022: Special Olympics Nationale Spiele
-#: source_id: viz2021:13.351095,52.514567,15.06.2022,05:00
-#: source_id: viz2021:13.369855,52.515768,15.06.2022,05:00
-#: by: https://viz.berlin.de/2022/06/sons-2022/
-#: by: https://nitter.net/pic/orig/media%2FFVMxeqIWYAAvJKt.jpg
-#: by: https://berliner-abendblatt.de/2022/06/16/vollsperrung-am-tiergarten/
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1217800.php
-	2::temp 8538,12245 8592,12252
-	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	2::temp 8538,12245 8522,12239
-	2::temp 8538,12245 8522,12187
-Straße des 17. Juni zwischen Großer Stern und Yitzhak-Rabin-Str.	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
-Yitzhak-Rabin-Str	2::temp 8055,12186 8119,12414
-',
-         'from' => 1655175600,
-         'id' => 3563,
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr.: Sportveranstaltung, Straßen auch für Radfahrer gesperrt (vom 15.6.2022 05:00 bis 26.6.2022 23:00)',
-         'type' => 'gesperrt',
-         'until' => 1656277200
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -6288,13 +6279,13 @@ Yitzhak-Rabin-Str	2::temp 8055,12186 8119,12414
          'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
 #: by: https://berliner-abendblatt.de/2022/06/22/bauarbeiten-legen-blumberger-damm-lahm/
 #: source_id: viz2021:13.562568,52.51298,24.06.2022,20:00 (hier nur Kfz-Verkehr)
-#: source_id: viz2021:13.56283,52.51426,24.06.2022,20:00
+#: source_id: viz2021:13.56283,52.51426,24.06.2022,20:00 (mittlerweile inaktiv)
 	2::inwork 21152,11945 21166,12023 21190,12193 21199,12258
 ',
          'from' => 1656007200,
          'id' => 3571,
          'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1219254.php',
-         'text' => 'Blumberger Damm: Sperrung zwischen der Altentreptower Str. und dem Frankenholzer Weg, vielleicht sind auch Radfahrer betroffen, 24. Juni 2022 20:00 Uhr bis 01. Juli 2022 04:00 Uhr',
+         'text' => 'Blumberger Damm: Sperrung zwischen der Altentreptower Str. und dem Frankenholzer Weg, auch Radfahrer und Fußgänger sind betroffen, 24. Juni 2022 20:00 Uhr bis 01. Juli 2022 04:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1656640800
        },
@@ -6334,6 +6325,7 @@ Yitzhak-Rabin-Str	2::temp 8055,12186 8119,12414
        },
        {
          'data' => '#: next_check_id: SCHAEFERSEE-2022
+#: by: https://www.berliner-woche.de/reinickendorf/c-bauen/sperrung-am-schaefersee_a350672
 	2::inwork 7189,17666 7173,17591 7222,17471 7253,17467
 ',
          'from' => 1656194400,
@@ -6342,6 +6334,73 @@ Yitzhak-Rabin-Str	2::temp 8055,12186 8119,12414
          'text' => 'Schäfersee: Bauarbeiten, Weg kann gesperrt sein, vom 27.6.2022 bis 1.7.2022 ',
          'type' => 'gesperrt',
          'until' => 1656712800
+       },
+       {
+         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
+	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	3 7822,12201 7816,12150 7823,12120
+	3 7429,12070 7383,12095 7031,12320
+	3 8049,12140 8055,12186 8119,12414
+	3 8327,12174 8344,12221 8391,12389
+	3 8522,12239 8538,12245 8522,12187
+	3 8522,12187 8538,12245 8522,12239
+	3 8119,12414 8055,12186 8049,12140
+	3 8391,12389 8344,12221 8327,12174
+	3 7031,12320 7383,12095 7429,12070
+	3 7823,12120 7816,12150 7822,12201
+',
+         'from' => 1656302400,
+         'id' => 3576,
+         'source_id' => 'viz2021:13.351095,52.514567,28.06.2022,06:00',
+         'text' => 'Straße des 17. Juni und Ebertstr.: Vorbereitungen für den Berliner Firmenlauf, Straßen gesperrt, vom 28.06.2022 06:00 bis 30.06.2022 06:00 ',
+         'type' => 'gesperrt',
+         'until' => 1656561600
+       },
+       {
+         'data' => '	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1656475200,
+         'id' => 3577,
+         'source_id' => 'https://viz.berlin.de/2022/06/17_juni-sperrungen/',
+         'text' => 'Straße des 17. Juni: Sperrung zwischen Yitzhak-Rabin-Str. und Ebertstr., vom 30.06.2022, 06:00 Uhr bis 05.07.2022, 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1657036800
+       },
+       {
+         'data' => '	2::temp 8595,12066 8600,12165 8538,12245 8592,12252
+	2::temp 8573,12325 8540,12420 8775,12457
+	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414
+	2::temp 8538,12245 8546,12279 8570,12302
+	2::temp 7215,12295 7031,12320
+	3 7945,12592 7875,12363 7822,12201
+	3 8344,12221 8538,12245 8522,12187
+	3 8344,12221 8538,12245 8522,12239
+	3 8522,12187 8538,12245 8522,12239
+	3 8522,12187 8538,12245 8344,12221
+	3 7603,12353 7627,12380 7654,12464
+	3 7822,12201 7875,12363 7945,12592
+	3 7822,12201 7816,12150 7823,12120
+	3 8522,12239 8538,12245 8522,12187
+	3 8522,12239 8538,12245 8344,12221
+	3 7823,12120 7816,12150 7822,12201
+	3 7031,12320 7383,12095 7429,12070
+	3 8391,12389 8400,12417 8399,12610
+	3 8089,12190 8055,12186 8049,12140
+	3 8399,12610 8400,12417 8391,12389
+	3 7654,12464 7627,12380 7603,12353
+	3 7429,12070 7383,12095 7031,12320
+	3 8049,12140 8055,12186 8089,12190
+',
+         'from' => 1656604800,
+         'id' => 3578,
+         'source_id' => 'https://viz.berlin.de/2022/06/17_juni-sperrungen/',
+         'text' => 'Straße des 17. Juni, Ebertstr., Scheidemannstr., John-Foster-Duller-Allee: Sperrungen vom 01.07.2022, 18:00 Uhr bis 04.07.2022, 06:00 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1656907200
        }
      
 );
