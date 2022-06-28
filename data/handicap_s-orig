@@ -180,7 +180,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeu
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
-#: last_checked: 2022-04-30 (mapillary)
+#: last_checked: 2022-05-06 (mapillary, Sackgassenschild)
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
 # 
@@ -805,7 +805,7 @@ Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,122
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-18478
 #: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-05-21
+#: last_checked: 2022-06-25 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-12-31
 #: next_check: 2023-11-15
@@ -819,7 +819,7 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022) (inaktiv)
 #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022)
 #: source_id: viz2021:13.35399,52.49475,02.05.2022,13:59 (bis 31.5.2022) (wieder entfernt (Duplikat?))
-#: also_indoor: traffic (ex-H,B)
+#: also_indoor: traffic (ex-H,B,G)
 #: last_checked: 2022-04-30
 #: check_frequency: 60d
 #: next_check: 2022-10-31
@@ -1775,7 +1775,7 @@ nˆrdliches Spreeufer: drei niedrige Stufen, Fuﬂg‰nger	q2 6180,12972 6102,12960 6
 Wustermarker Str.: Fuﬂg‰nger, Bordsteine	q2 -4755,14393 -4744,14392 -4678,14382
 Firlstr.: zwei Bodenschwellen	q1 18574,6401 18645,6511
 (Florastr. - Schloﬂstr.): Fuﬂg‰nger	q2 5234,6086 5165,6119
-Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13291,22422 13290,22399 13404,22384
+Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13291,22422 13290,22399 13388,22386 13404,22384
 (Bremer Weg): Fuﬂg‰nger	q1 5858,11863 5907,11874 6264,11901 6337,11887 6384,11926 6550,11954 6642,12010
 (Bremer Weg): Fuﬂg‰nger	q1 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8522,12239 8538,12245
 Oberlandgarten: Fuﬂg‰nger, Bordsteine	q2 11250,6555 11256,6502 11253,6473
@@ -4095,6 +4095,9 @@ Haydnstr. - M‰rkische Allee: Bordsteine, einige Fuﬂg‰nger	q3 19995,11795 19979,1
 Fenchelweg: enge Straﬂe	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,3602 15791,3686 15838,3754 15860,3838 15872,3888 15859,3924 15695,4051 15585,4139
 (Tornower Weg - Wilhelmsruher Damm): einige Fuﬂg‰nger	q1- 6519,21002 6565,21004
 (Uferweg): Fuﬂg‰nger, nicht sehr breit	q2- 21901,5117 21822,5153 21754,5221 21730,5267 21672,5407 21660,5424 21655,5432 21629,5470
+#: by: mapillary
+#: note: nicht besonders breit, keine Ausschilderung (zumindest am ˆstlichen Ende)
+(Straﬂe 603 - Reckeweg): einige Fuﬂg‰nger	q1 -6831,15260 -6891,15228
 # 
 ######################### User Contributions #################################
 # 

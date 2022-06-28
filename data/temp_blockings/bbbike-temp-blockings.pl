@@ -26089,7 +26089,7 @@ EOF
      },
      { from  => $isodate2epoch->("2022-06-28 18:00:00"), # 1504201168, # 1473285600, # 2016-09-08 00:00
        until => $isodate2epoch->("2022-06-29 23:59:59"),
-       text  => 'Straße des 17. Juni, Ebertstr. und weitere Straßen am Tiergarten: Sperrungen wegen einer Sportveranstaltung (Berliner Firmenlauf), evtl. sind auch Radfahrer betroffen, am 29.6.2022',
+       text  => 'Straße des 17. Juni, Ebertstr. und weitere Straßen am Tiergarten: Sperrungen wegen einer Sportveranstaltung (Berliner Firmenlauf), evtl. sind auch Radfahrer betroffen, am 29.6.2022 18:00-21:30 Uhr',
        type  => 'gesperrt',
        source_id => '2147339672',
        data  => <<EOF,
@@ -26098,10 +26098,15 @@ EOF
 #: by: https://berliner-firmenlauf.de/infos-zum-lauf/ (2021)
 #: by: https://berliner-firmenlauf.de/infos-zum-lauf/?date=20220627
 #: by: https://berliner-firmenlauf.de/wp-content/uploads/2021/04/BFL-2022-Strecke-800x456.jpg
+#: by: https://viz.berlin.de/2022/06/verkehrsvorschau-29062022/
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 	2::temp 8600,12165 8538,12245 8592,12252
 	2::temp 8119,12414 8055,12186
 	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	3 8209,11671 8203,11686 8210,11775
+	3 8210,11775 8203,11686 8209,11671
+	3 8226,11458 8172,11679 8026,11764
+	3 8026,11764 8172,11679 8226,11458
 	3 7429,12070 7383,12095 7031,12320
 	3 7031,12320 7383,12095 7429,12070
 	3 7822,12201 7816,12150 7823,12120
@@ -26110,8 +26115,11 @@ EOF
 	3 8522,12187 8538,12245 8522,12239
 	3 8391,12389 8344,12221 8327,12174
 	3 8327,12174 8344,12221 8391,12389
-	2::temp 8595,12066 8737,12098 8743,12099 8861,12125 8901,12008 8844,11984 8783,11959 8577,11896 8571,11846 8489,11782 8456,11763 8322,11715 8203,11686 8172,11679 8094,11657 8005,11627 7816,11571 7717,11540 7665,11353 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208 7160,11225 7115,11220 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031
-	2::temp 6828,12031 6884,12006
+	3 6692,11365 6851,11346 7103,11247
+	3 7103,11247 6851,11346 6692,11365
+	2::temp 8595,12066 8737,12098 8743,12099 8861,12125 8901,12008 8844,11984 8783,11959 8577,11896 8571,11846 8489,11782 8456,11763 8322,11715 8203,11686 8172,11679 8094,11657 8005,11627 7816,11571 7717,11540 7665,11353 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208 7160,11225 7115,11220 6880,11110
+	1::temp 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936
+	2::temp 6744,11936 6809,11979 6828,12031 6884,12006
 	3 8014,11753 8005,11627 7943,11431
 	3 7943,11431 8005,11627 8014,11753
 	3 6716,11439 6825,11486 6915,11492
@@ -27956,7 +27964,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # 1598634704, # Ende der Bauarbeiten für die *gesamte* Schönstr. --- 2021-06-01 00:00
-       text  => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Fahrbahn gesperrt, voraussichtlich bis 28.6.2022',
+       text  => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Fahrbahn gesperrt, Sperrung war bis zum 28.6.2022 vorgesehen, ist also möglicherweise beendet',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php',
        data  => <<EOF,
@@ -34523,16 +34531,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1656429973, # undef, # XXX
        text  => 'Zwieseler Str.: Zufahrt zum Richard-Kolkwitz-Weg kann wegen Bauarbeiten gesperrt sein, auch für Fußgänger (Stand April 2022: zumindest am Wochenende passierbar)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: ZWIESELER-2022
-#: XXX Stand 2022-01-21: Verbotsschild für Fußgänger am nördlichen Ende, Verbot für Fahrzeuge aller Art außer Grundstücksanlieger am südlichen Ende, man kann aber trotzdem passieren. Stand 2022-02-26: Passieren weiterhin möglich.
-#: XXX Halteverbotsschilder gelten bis Ende Juni 2023
-#: last_checked: 2022-04-02
-#: check_frequency: 120d
-#: next_check: 2023-06-30
+# REMOVED (keine Einschränkungen) --- #: XXX Stand 2022-01-21: Verbotsschild für Fußgänger am nördlichen Ende, Verbot für Fahrzeuge aller Art außer Grundstücksanlieger am südlichen Ende, man kann aber trotzdem passieren. Stand 2022-02-26: Passieren weiterhin möglich. --- #: XXX Halteverbotsschilder gelten bis Ende Juni 2023 --- #: last_checked: 2022-06-28 --- #: check_frequency: 120d --- #: next_check: 2023-06-30
 	2::inwork 19711,10426 19697,10210
 EOF
      },
@@ -35274,8 +35278,8 @@ EOF
 EOF
      },
      { from  => 1655010000, # 2022-06-12 07:00
-       until => 1656514800, # 2022-06-29 17:00
-       text  => 'Zinnowitzer Str.: zwischen Chausseestr. und Am Nordbahnhof gesperrt, auch für den Radverkehr, vom 13.06.2022 07:00 bis 29.06.2022 17:00',
+       until => $isodate2epoch->("2022-06-29 11:00:00"), # 1656514800, # 2022-06-29 17:00
+       text  => 'Zinnowitzer Str.: zwischen Chausseestr. und Am Nordbahnhof gesperrt, auch für den Radverkehr, vom 13.06.2022 07:00 bis 29.06.2022 11:00',
        type  => 'handicap',
        source_id => 'viz2021:13.38248,52.53138,13.06.2022,07:00',
        data  => <<EOF,
@@ -35551,6 +35555,20 @@ EOF
 	3 7654,12464 7627,12380 7603,12353
 	3 7429,12070 7383,12095 7031,12320
 	3 8049,12140 8055,12186 8089,12190
+EOF
+     },
+     { from  => 1656799200, # 2022-07-03 00:00
+       until => 1667861999, # 2022-11-07 23:59
+       text  => 'Schönstr./Große Seestr.: Sperrung des Kreuzungsbereichs, vom 04. Juli 2022 bis voraussichtlich 07. November 2022',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
+       data  => <<EOF,
+#: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
+#: next_check: 2022-07-04 vvv
+	q3::inwork 13996,16959 14107,16889 14184,16889
+	q3::inwork 14014,16722 14107,16889 14235,17103
+#: next_check ^^^
+#: XXX ^^^
 EOF
      },
     );

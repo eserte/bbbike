@@ -2710,6 +2710,8 @@ Schranke	BNP:2::trailer=5 8757,9748
 #: note: Anordnung wie bei Drängelgittern vvv
 Barriere	BNP:2::trailer=8 13148,22396
 Barriere	BNP:2::trailer=8 13386,22378
+#: by: mapillary
+Barriere	BNP:2::trailer=8 13388,22386
 #: note ^^^
 Schranke, gut umfahrbar	BNP:0::trailer=3 8243,9766
 #: note: etwas weiter als üblich
@@ -3522,7 +3524,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED (hier mittlerweile offen) --- Pionierweg: wegen Bauarbeiten gesperrt	2::inwork 16026,8731 16074,8776 16084,8833
 # REMOVED (laut osm komplett freigegeben) --- Pionierweg: wegen Bauarbeiten gesperrt	2::inwork 16084,8833 16086,8860
 # 
-#: last_checked: 2022-02-26 (mapillary)
+#: last_checked: 2022-06-28
 #: check_frequency: 180d
 Verlängerung Zwieseler Str.: Baustellenabsperrung	2::inwork 19705,9039 19638,9070
 # 
@@ -3623,7 +3625,7 @@ Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
 #: osm_watch: way id="610818155" version="4"
-#: last_checked: 2022-06-06
+#: last_checked: 2022-06-28
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
@@ -3872,7 +3874,7 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 # REMOVED (wieder temp blockings) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: XXX wobei man (zumindest abends und am Wochenende) auf der provisorischen Baustraße doch passieren kann --- #: last_checked: 2020-03-10 --- DB-Werkstraße: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 14469,10841 14352,10874
 # REMOVED (fertig) --- #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/gruenanlage-am-betriebsbahnhof-rummelsburg-wird-neu-gestaltet_a233623 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php --- #: XXX evtl. wird sich auch die Fahrbahnoberfläche ändern --- #: XXX laut osm fertiggestellt --- auch prüfen, ob das hier tatsächlich der übriggebliebene Weg ist --- #: last_checked: 2019-11-17 --- #: next_check: 2019-12-13 --- (Salzmannstr. - Zobtener Str.): Bauarbeiten, gesperrt	2::inwork 16841,9997 16811,9937
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: XXX ggfs. entfernen, wenn die Bauarbeiten in der DB-Werkstraße beendet sind --- #: last_checked: 2020-05-02 --- Tor, von außen verschlossen	1::igndisp 14717,10855 14692,10867
-# REMOVED (offen) --- #: next_check_id: KOENIGSTEINBRUECKE-2019 --- #: XXX wird es zukünftig eine Unterführung unter der neuen Königsteinbrücke geben? Oder wird der Weg verlegt und verläuft nördlich der Brücke? --- #: osm_watch: way id="763414285" version="2" --- #: last_checked: 2021-04-19 (mapillary) --- Pankeweg: Bauarbeiten, gesperrt	2::inwork 13404,22384 13290,22399 13291,22422 13295,22545
+# REMOVED (offen) --- #: next_check_id: KOENIGSTEINBRUECKE-2019 --- #: XXX wird es zukünftig eine Unterführung unter der neuen Königsteinbrücke geben? Oder wird der Weg verlegt und verläuft nördlich der Brücke? --- #: osm_watch: way id="763414285" version="2" --- #: last_checked: 2021-04-19 (mapillary) --- Pankeweg: Bauarbeiten, gesperrt	2::inwork 13404,22384 13388,22386 13290,22399 13291,22422 13295,22545
 # REMOVED (offen) --- #: next_check_id: KOENIGSTEINBRUECKE-2019 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621 (Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180130 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/16-05-2017_beleuchtungssituation-an-der-und-um-die-koenigsteinbruecke-verbessern.pdf --- #: by: http://www.berliner-woche.de/blankenburg/verkehr/senat-laesst-neue-laternen-auf-der-koenigsteinbruecke-errichten-d127411.html (Beleuchtung wird errichtet) --- #: by: https://adfc-berlin.de/radverkehr/aus-den-bezirken/pankow/524-koenigsteinbruecke-wird-fuer-radverkehr-im-nordosten-dringend-gebraucht.html (ab Sommer 2018) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180219 (2018 bis 2019) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4781 --- #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/behelfsbruecke-bitte-bauen_a164843 --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat_05-12-2017.pdf (Baubeginn Mitte 2018, Dauer 1,5 Jahre) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-29-05-2018.pdf (Baumaßnahme beginnt 2019, Dauer 18 Monate) --- #: by: https://ausschreibungen-deutschland.de/511848_Ersatzneubau_der_Fussgaengerbruecke_KoenigsteinbrueckeReferenznummer_der_Bekanntmachung_2019_Berlin (Ausschreibung bis 2. April 2019, Bindefrist 16.7.2019) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (Dauer 19 Monate) --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml (Beginn der Bauarbeiten voraussichtlich im August 2019) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5312 (in der BVV abgeleht) --- #: by: http://www.kbh-cdupankow.de/index.php?200;2index.php?200;2&e=2319 (Ablehnung der Sanierung der Umleitungsstrecke) --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml?date=20190927 (zuerst Ertüchtigungsmaßnahmen ab 1.10.2019 für die Umleitungsstrecke) --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/a114-pankow-zubringer-weitere-einschrankungen (Abriss ab 25.10.2019) --- #: by: https://www.berliner-woche.de/buch/c-verkehr/informationen-zur-a114-erneuerung_a234835 (Informationsveranstaltung am 23.10.2019) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.856694.php ("... bis Ende 2020 fertiggestellt werden") --- #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/auf-und-am-zubringer-a114-wird-auch-2020-gebaut_a244747 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.955339.php ("... bis Ende 2020 fertiggestellt werden") --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1001081.php --- #: by: https://www.berliner-woche.de/bezirk-pankow/c-bauen/bauarbeiten-auf-dem-zubringer-sollen-bis-ende-2022-abgeschlossen-sein_a292013 --- #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/koenigsteinbruecke/ --- #: by: https://www.berlin-usedom-radweginfo.de/1-Berlin-Bernau.php (voraussichtlich bis zum Frühjahr 2021) --- #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/neugebaute-koenigsteinbruecke-wurde-fuer-radfahrer-und-fussgaenger-eroeffnet_a306690 --- #: osm_watch: way id="16307526" version="19" --- #: priority: #A --- #: also_indoor: search Königsteinbrücke --- #: last_checked: 2021-02-24 (mapillary) (laut Baustellenschild bis April 2021) --- #: check_frequency: 45d --- #: next_check: 2021-04-01 --- # REMOVED --- #: valid: -20210228 --- Königsteinbrücke: Brückenneubau	2::inwork 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378
 # REMOVED (-> handicap) --- #: next_check_id: HOSEMANN-2019 --- #: last_checked: 2020-12-18 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2021-12-31 vvv --- #: valid: -20200731 vvv --- Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556,15518 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (offen) --- #: next_check_id: OLIVAERPLATZ-2019 --- #: last_checked: 2019-12-08 --- #: check_frequency: 60d --- (Olivaer Platz, Wielandstr. - Bayerische Str.): wegen Bauarbeiten gesperrt	2::inwork 4360,10320 4352,10260
@@ -4560,7 +4562,7 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #: note: früher bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"
 #: osm_watch: node id="245006076" version="6"
 #: osm_watch: node id="245006075" version="7"
-#: last_checked: 2022-05-13 (website)
+#: last_checked: 2022-06-26 (mapillary)
 #: check_frequency: 360d
 Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 # 
