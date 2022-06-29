@@ -29314,11 +29314,11 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="29"
+#: osm_watch: way id="8655276" version="30"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-06-14 (osm)
+#: last_checked: 2022-06-29 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -34790,11 +34790,11 @@ EOF
 #: note: Kreuzungsbereich zur Prinzenstr. gesperrt
 #: source_id: viz2021:13.408387,52.502028,14.03.2022,08:00 (bis 1.7.2022)
 #: last_checked: 2022-05-31 vvv
-#: check_frequency: 30d vvv
+# REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2022-07-01 vvv
 	q2::inwork 10776,10682 10585,10766
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -35479,6 +35479,8 @@ EOF
        source_id => 'https://sbahn.berlin/fileadmin/user_upload/Punkt3/PDF-Archiv/2022/punkt3-Ausgabe12_23.06.2022.pdf',
        data  => <<EOF,
 #: next_check_id: KWEISENBAHNBRUECKE-2022
+#: by: https://www.koenigs-wusterhausen.de/1013639/Eisenbahnunterfuehrung
+#: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
 	2::inwork 26327,-11708 26395,-11699
 EOF
      },
@@ -35520,6 +35522,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/2022/06/17_juni-sperrungen/',
        data  => <<EOF,
+#: source_id: viz2021:13.351095,52.514567,30.06.2022,06:00
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 	3 8391,12389 8344,12221 8327,12174
 	3 8327,12174 8344,12221 8391,12389

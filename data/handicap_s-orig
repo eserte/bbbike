@@ -506,8 +506,8 @@ Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwor
 #: note: auch als "Verlängerte Brückenstraße" bezeichnet
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
-#: osm_watch: way id="40451054" version="12"
-#: last_checked: 2022-06-25
+#: osm_watch: way id="40451054" version="13"
+#: last_checked: 2022-06-29 (osm)
 #: next_check: 2022-08-05
 # REMOVED --- #: valid: -20220401
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
@@ -572,9 +572,9 @@ Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg,
 #: last_checked: 2022-06-11 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-22 vvv
-#: osm_watch: way id="140336721" version="24"
+#: osm_watch: way id="140336721" version="25"
 Turmstr.: teilweise verwinkelte Wegführung des Radwegs	q1-::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321
-#: osm_watch: way id="30195541" version="25"
+#: osm_watch: way id="30195541" version="26"
 Turmstr.: Bauarbeiten, Engstellen	q1-::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: next_check ^^^
 #: check_frequency ^^^
@@ -750,7 +750,7 @@ Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4:
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
-#: also_indoor: traffic (G(zu viel),H(zu wenig),B)
+#: also_indoor: traffic (G,H(falsch?),ex-B)
 #: last_checked: 2022-06-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-06-30 vvv

@@ -284,14 +284,23 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-06-24
-#: check_frequency: 30d
-#: next_check: 2022-06-30
+#: last_checked: 2022-06-29
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2022-06-30
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 13596,10722 13678,10685 13779,10642 13919,10583
-Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
+#: next_check_id: STRALAUER-2019
+#: last_checked: 2022-06-29
+#: check_frequency: 90d
+# früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489
+provisorische Radspur	RW4; 13919,10583 13986,10549 14103,10489
+Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 14103,10489 14218,10430
 gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14218,10430 14405,10340 14558,10264
 	RW2; 13986,10549 13919,10583 13779,10642 13678,10685 13596,10722
-	RW4; 14103,10489 13986,10549
+#: next_check_id: STRALAUER-2019
+#: last_checked: 2022-06-29
+#: check_frequency: 90d
+# früher:	RW4; 14103,10489 13986,10549
+Gehweg für Radfahrer frei	RW1; 14103,10489 13986,10549
 das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14218,10430 14103,10489
 #: note: provisorisches Radwegschild
 	RW2; 14558,10264 14405,10340
@@ -1013,7 +1022,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.46264,52.49544,18.05.2022,16:23 (bis 2028) (inaktiv)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-06-25 vvv
+#: last_checked: 2022-06-29 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2028-01-01 vvv
 	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1438,7 +1447,7 @@ die ersten 50 Meter mit abgesperrtem Radweg	RW0; 15591,8848 15558,8820 15378,866
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX südlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2022-06-05
+#: last_checked: 2022-06-29
 #: check_frequency: 120d
 # früher: Verbundsteinpflaster	RW1; 14089,9610 14185,9509
 Asphalt, provisorische Wegführung	RW8; 14089,9610 14185,9509
