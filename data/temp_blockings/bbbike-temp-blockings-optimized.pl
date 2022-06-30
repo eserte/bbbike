@@ -2507,7 +2507,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2714,9 +2714,11 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'data' => '#: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html (8.-10.10.2021, als "Kreuzberg-Festival", vermutlich auf Kreuzbergstraße)
 #: by: https://kreuzberg-festival.de/
 #: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html?date=20220509 (1.-3. Juli 2022)
+#: by: https://nitter.net/VIZ_Berlin/status/1542565377942532096#m (auch Großbeerenstr.)
 	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
 	3 9000,9509 8970,9323 9007,9264
 	3 9007,9264 8970,9323 9000,9509
+	2::temp 9000,9509 8970,9323
 ',
          'from' => 1656540000,
          'id' => 2089,
@@ -3813,52 +3815,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147339672
-#: by: https://twitter.com/VIZ_Berlin/status/1437755743051128833 (2021)
-#: by: https://berliner-firmenlauf.de/infos-zum-lauf/ (2021)
-#: by: https://berliner-firmenlauf.de/infos-zum-lauf/?date=20220627
-#: by: https://berliner-firmenlauf.de/wp-content/uploads/2021/04/BFL-2022-Strecke-800x456.jpg
-#: by: https://viz.berlin.de/2022/06/verkehrsvorschau-29062022/
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
-	2::temp 8600,12165 8538,12245 8592,12252
-	2::temp 8119,12414 8055,12186
-	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	3 8209,11671 8203,11686 8210,11775
-	3 8210,11775 8203,11686 8209,11671
-	3 8226,11458 8172,11679 8026,11764
-	3 8026,11764 8172,11679 8226,11458
-	3 7429,12070 7383,12095 7031,12320
-	3 7031,12320 7383,12095 7429,12070
-	3 7822,12201 7816,12150 7823,12120
-	3 7823,12120 7816,12150 7822,12201
-	3 8522,12239 8538,12245 8522,12187
-	3 8522,12187 8538,12245 8522,12239
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-	3 6692,11365 6851,11346 7103,11247
-	3 7103,11247 6851,11346 6692,11365
-	2::temp 8595,12066 8737,12098 8743,12099 8861,12125 8901,12008 8844,11984 8783,11959 8577,11896 8571,11846 8489,11782 8456,11763 8322,11715 8203,11686 8172,11679 8094,11657 8005,11627 7816,11571 7717,11540 7665,11353 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208 7160,11225 7115,11220 6880,11110
-	1::temp 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936
-	2::temp 6744,11936 6809,11979 6828,12031 6884,12006
-	3 8014,11753 8005,11627 7943,11431
-	3 7943,11431 8005,11627 8014,11753
-	3 6716,11439 6825,11486 6915,11492
-	3 6915,11492 6825,11486 6716,11439
-	3 6540,11754 6778,11742 6980,11790
-	3 6980,11790 6778,11742 6540,11754
-	3 6679,11602 6809,11570 6869,11567
-	3 6869,11567 6809,11570 6679,11602
-	3 6750,11550 6825,11486 6915,11492
-	3 6915,11492 6825,11486 6750,11550
-',
-         'from' => 1656432000,
-         'id' => 2827,
-         'source_id' => '2147339672',
-         'text' => 'Straße des 17. Juni, Ebertstr. und weitere Straßen am Tiergarten: Sperrungen wegen einer Sportveranstaltung (Berliner Firmenlauf), evtl. sind auch Radfahrer betroffen, am 29.6.2022 18:00-21:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1656539999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4176,7 +4133,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-05-31
+#: last_checked: 2022-06-30
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4647,7 +4604,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: next_check_id: CORONA-2020
 #: by: https://www.charite.de/klinikum/themen_klinikum/themenschwerpunkt_coronavirus/#c30751057 (Eingangskontrollen)
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-04-09 vvv
+#: last_checked: 2022-06-30 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -4771,7 +4728,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: source_id: 2147347233 (bis 23.12.2021)
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022)
-#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022)
+#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -4780,8 +4737,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 # REMOVED (hier nicht mehr) --- #: note: nur etwa 100m, deshalb q3 statt q4 ---	q3::inwork 4515,4760 4214,4595
 #: note: Einbahnstraßenregelung, Bauarbeiten laut Baustellenschild bis September 2022
 	q4::inwork; 4214,4595 4039,4500
-#: note: Einbahnstraßenregelung, bis 30.6.2022
-	q4::inwork; 3643,4232 3523,4139
+# REMOVED --- #: note: Einbahnstraßenregelung, bis 30.6.2022 ---	q4::inwork; 3643,4232 3523,4139
 # REMOVED --- #: note: hier nur ein kurzes Stück ---	q2::inwork; 4214,4595 4039,4500
 # REMOVED (nicht mehr, laut rbb) ---	q4::inwork 4179,4662 4214,4595
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
@@ -5331,9 +5287,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1629669600,
          'id' => 3435,
          'source_id' => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
-         'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 30.06.2022 17:00 ',
+         'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 08.07.2022 17:00 ',
          'type' => 'handicap',
-         'until' => 1656601200
+         'until' => 1657292400
        },
        undef,
        undef,
@@ -5854,10 +5810,10 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://pbs.twimg.com/media/FMrYBZQXEAAQlaA?format=jpg&name=large
 #: XXX bis wann gehen die Bauarbeiten?
 # REMOVED --- #: note: es existiert ein etwas breiterer Fußgängerschutztunnel, etwa 50m lang --- #: also_indoor: traffic (G(partial),B(partial)) --- #: source_id: bvg2021:140#BVG297945_0 (bis 1.8.2022) --- #: last_checked: 2022-04-29 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-07-01 vvv ---	q3::inwork 10776,10682 10944,10606
-#: also_indoor: traffic (G,B)
+#: also_indoor: traffic (G(falsch),B)
 #: note: Kreuzungsbereich zur Prinzenstr. gesperrt
 #: source_id: viz2021:13.408387,52.502028,14.03.2022,08:00 (bis 1.7.2022)
-#: last_checked: 2022-05-31 vvv
+#: last_checked: 2022-06-12 (mapillary) vvv
 # REMOVED --- #: check_frequency: 30d vvv
 #: next_check: 2022-07-01 vvv
 	q2::inwork 10776,10682 10585,10766
@@ -5880,7 +5836,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-06-12 vvv
+#: last_checked: 2022-06-30 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-09-30 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
@@ -6087,7 +6043,18 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1669849200
        },
-       undef,
+       {
+         'data' => '#: next_check_id: BRUECKEWERDER-2022
+#: by: https://www.mobil-potsdam.de/de/aktuelle-verkehrsthemen/radwegbruecke-potsdam-werder-havel/
+	2::inwork -21227,-2017 -21125,-2012	
+',
+         'from' => 1651442400,
+         'id' => 3549,
+         'source_id' => 'https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=4210',
+         'text' => 'Eisenbahnbrücke Werder: wegen Bauarbeiten montags bis freitags tagsüber (6:30 bis 18:00 Uhr) gesperrt, bis zum 31.7.2022',
+         'type' => 'gesperrt',
+         'until' => 1659283200
+       },
        {
          'data' => '#: next_check_id: WILTBERG-2022
 #: by: https://nitter.net/VIZ_Berlin/status/1523578356306169857#m
@@ -6322,28 +6289,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'gesperrt',
          'until' => 1656712800
        },
-       {
-         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1541479975991316485#m
-	2::temp 8592,12252 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-	2::temp 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	3 7822,12201 7816,12150 7823,12120
-	3 7429,12070 7383,12095 7031,12320
-	3 8049,12140 8055,12186 8119,12414
-	3 8327,12174 8344,12221 8391,12389
-	3 8522,12239 8538,12245 8522,12187
-	3 8522,12187 8538,12245 8522,12239
-	3 8119,12414 8055,12186 8049,12140
-	3 8391,12389 8344,12221 8327,12174
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201
-',
-         'from' => 1656302400,
-         'id' => 3576,
-         'source_id' => 'viz2021:13.351095,52.514567,28.06.2022,06:00',
-         'text' => 'Straße des 17. Juni und Ebertstr.: Vorbereitungen für den Berliner Firmenlauf, Straßen gesperrt, vom 28.06.2022 06:00 bis 30.06.2022 06:00 ',
-         'type' => 'gesperrt',
-         'until' => 1656561600
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.351095,52.514567,30.06.2022,06:00
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186

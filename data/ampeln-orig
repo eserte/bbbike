@@ -37,7 +37,7 @@ Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2022-06-23
+#: last_checked: 2022-06-30
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
@@ -157,7 +157,7 @@ Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
 #: next_check: 2022-09-30 vvv
 #: check_frequency: 90d vvv
 #: valid: -20220930 vvv
-#: last_checked: 2022-05-12
+#: last_checked: 2022-06-30
 #: osm_watch: node id="6380038401" version="1"
 	X::inwork 9195,11972
 #: note: Ampel befindet sich westlich der Kreuzung
@@ -169,7 +169,7 @@ Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2022-05-31
+#: last_checked: 2022-06-30
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -1011,9 +1011,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4478,10218
 	X 9581,12588
 	X 10946,12241
-#: off: night (seen 2018-02-01 00:20)
+#: off: night (seen 2018-02-01 00:20, 2022-06-30 23:15)
 	X 12295,12197
-#: off: night (seen 2015-01-29 00:45, 2018-02-01 00:20, 2022-04-29 23:55)
+#: off: night (seen 2015-01-29 00:45, 2018-02-01 00:20, 2022-04-29 23:55, 2022-06-30 23:15)
 	X 12822,12067
 	X 12180,11657
 	X 14639,11512
@@ -1992,7 +1992,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10432 (sichere Querungsmöglichkeit gefordert)
 #: XXX Ampel ausgeschaltet, vielleicht dauerhaft (Lynar/Tegeler)
 #: osm_watch: node id="3777205512" version="4"
-#: last_checked: 2022-06-12
+#: last_checked: 2022-06-30
 #: check_frequency: 90d
 	X0 7259,14870
 #: note: Anforderungsampel für Radfahrer aus Richtung Osten Richtung Luisenstr. und für Radfahrer aus der Luisenstr.
@@ -2824,6 +2824,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 8079,16953
 	F 9461,17554
 	F 9170,17161
+#: off: night (seen 2022-06-30 23:00)
 	F 9218,11793
 	X 9183,12076
 #: by: rjoop
@@ -3113,7 +3114,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2022-06-13 (daf) vvv
+#: last_checked: 2022-06-30 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3133,7 +3134,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2022-04-23 (mapillary)
+#: last_checked: 2022-06-30
 #: check_frequency: 90d
 #: next_check: 2022-07-31
 	X::inwork 8732,14098
