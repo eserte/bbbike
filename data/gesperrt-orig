@@ -3730,12 +3730,13 @@ Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 188
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (Einziehung einer Grünanlage, Einziehung von Straßenland)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/spatenstich-fuer-schule_a323396
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1194420.php (Wiedereröffnung eines Spielplatzes)
+#: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2206/nachricht7294.html (Richtfest)
 #: XXX vermutlich dauerhaft, die Fahrbahn ist schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben
 #: osm_watch: way id="860287005" version="4"
 #: also_indoor: traffic (G)
-#: last_checked: 2022-05-12
+#: last_checked: 2022-06-30
 #: check_frequency: 120d
-#: next_check: 2022-07-01
+# REMOVED --- #: next_check: 2022-07-01
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
 # 
 # REMOVED --- #: next_check_id: BEBAUUNGSPLAN-XVI-81 --- #: XXX Wie wird die Qualität der Straße sein?--- #: osm_watch: way id="567597390" version="5" --- #: last_checked: 2021-05-09 --- #: check_frequency: 120d --- Abendseglersteig: noch in Bau	2::inwork 33167,2940 33139,2835 33267,2810 33383,2792
@@ -3868,11 +3869,13 @@ Gleisdreieckpark: Nord-Süd-Verbindung wegen S21-Vorbereitungsarbeiten gesperrt	2
 # 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9747
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erwähnt)
+#: by: https://viz.berlin.de/2022/07/sperrung-tunnel-grunerstrasse/ (Inbetriebnahme der neuen Verkehrsführung Richtung Südwesten im Spätherbst 2022)
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="3"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="882672445" version="2"
 #: last_checked: 2022-06-17
 #: check_frequency: 60d
+#: next_check: 2022-11-30
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
 # 
 # REMOVED (wieder temp blockings) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: XXX wobei man (zumindest abends und am Wochenende) auf der provisorischen Baustraße doch passieren kann --- #: last_checked: 2020-03-10 --- DB-Werkstraße: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 14469,10841 14352,10874

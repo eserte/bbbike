@@ -18430,6 +18430,9 @@ EOF
 #: by: https://kreuzberg-festival.de/
 #: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html?date=20220509 (1.-3. Juli 2022)
 #: by: https://nitter.net/VIZ_Berlin/status/1542565377942532096#m (auch Großbeerenstr.)
+#: by: https://berliner-abendblatt.de/2022/06/30/kreuzberg-festival-wir-haben-nicht-aufgegeben/
+#: source_id: viz2021:13.38274,52.49156,01.07.2022,06:00
+#: source_id: viz2021:13.3767,52.4894,01.07.2022,06:00
 	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
 	3 9000,9509 8970,9323 9007,9264
 	3 9007,9264 8970,9323 9000,9509
@@ -27965,7 +27968,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # 1598634704, # Ende der Bauarbeiten für die *gesamte* Schönstr. --- 2021-06-01 00:00
+       until => 1656694833, # undef, # 1598634704, # Ende der Bauarbeiten für die *gesamte* Schönstr. --- 2021-06-01 00:00
        text  => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Fahrbahn gesperrt, Sperrung war bis zum 28.6.2022 vorgesehen, ist also möglicherweise beendet',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php',
@@ -27987,19 +27990,12 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/einmuendung-komplett-gesperrt_a303306
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1216456.php (ab 21.6.2022 Vollsperrung, Freigabe am 28.6.2022)
 #: by: https://berliner-abendblatt.de/2022/06/17/vollsperrung-in-weissensee/
-#: add_fragezeichen: Sind die Bauarbeiten beendet und die Straße frei befahrbar?
-#: also_indoor: traffic (G(wieder),H(falsch?),B)
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten beendet und die Straße frei befahrbar? --- #: also_indoor: traffic (G(wieder),H(falsch?),B)
 #: source_id: viz2021:13.450024,52.553419,21.06.2022,08:00 (hier: Rad- und Fußverkehr frei)
-#: priority: #B vvv
-#: last_checked: 2022-06-21 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2022-06-28 vvv
+# REMOVED --- #: priority: #B vvv --- #: last_checked: 2022-06-21 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2022-06-28 vvv
 	q4::inwork 13391,16436 13630,16629
 Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^
 EOF
      },
      { from  => 1530907854, # 2018-07-06 22:10
@@ -30598,7 +30594,7 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-06-23 (mapillary)
+#: last_checked: 2022-06-27 (mapillary)
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 EOF
@@ -31192,15 +31188,16 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-06-26 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2022-06-30 vvv
+#: check_frequency: 3d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
 # REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
 # REMOVED (beendet) ---	q3::inwork 14272,11775 14306,11889
 # REMOVED (beendet) ---	q3::inwork 14306,11889 14354,12012
-	q4::inwork 14354,12012 14427,12197
+#: XXX mittlerweile Asphaltierungsarbeiten, nur ein paar Meter an der Frankfurter Allee sind noch richtig gesperrt
+	q3::inwork 14354,12012 14427,12197
 # REMOVED (beendet) ---	q3::inwork 14354,12012 14468,11992
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -34066,9 +34063,9 @@ EOF
 	2::inwork 3419,1061 3481,946 3561,789 3642,727
 EOF
      },
-     { from  => 1635285600, # 2021-10-27 00:00
-       until => $isodate2epoch->("2021-11-09 11:00:00"), # 1637017199, # 2021-11-15 23:59
-       text  => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, Radfahrer dürfen den Gehweg benutzen, vom 28. Oktober 2021 bis 09.11.2021',
+     { from  => $isodate2epoch->("2022-07-05 00:00:00"), # 1635285600, # 2021-10-27 00:00
+       until => $isodate2epoch->("2022-07-19 18:00:00"), # $isodate2epoch->("2021-11-09 11:00:00"), # 1637017199, # 2021-11-15 23:59
+       text  => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, vom 6.7.2022 bis voraussichtlich 19.7.2022', # alt: Radfahrer dürfen den Gehweg benutzen, vom 28. Oktober 2021 bis 09.11.2021
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1139346.php',
        data  => <<EOF,
@@ -34079,7 +34076,9 @@ EOF
 #: source_id: viz2021:13.403429,52.56939,28.10.2021,06:00 (hier: bis 12.11.2021, und nur für Kfz-Verkehr gesperrt) (mittlerweile bis 9.11.2021)
 #: by: https://www.berliner-woche.de/altglienicke/c-verkehr/deckschicht-wird-runderneuert_a327095 (bis 30.11.2021)
 #: note: laut rbb vorzeitiges Ende am 9.11.2021
-	q3::inwork; 10228,18196 10347,17959 10448,17751
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221641.php (neue Bauarbeiten)
+#: by: https://berliner-abendblatt.de/2022/06/30/muehlenstrasse-wird-gesperrt/
+	q4::inwork; 10228,18196 10347,17959 10448,17751
 EOF
      },
      { from  => 1636239600, # 2021-11-07 00:00
@@ -34778,8 +34777,8 @@ EOF
 EOF
      },
      { from  => 1645945200, # 2022-02-27 08:00
-       until => $isodate2epoch->("2022-07-01 17:00:00"), # undef, # 1651244400, # 2022-04-29 17:00
-       text  => 'Ritterstr.: Bauarbeiten am Kreuzungsbereich Prinzenstr., Fahrbahn gesperrt, Umwege für Radfahrer, voraussichtlich bis 1.7.2022', # vom 28.02.2022 08:00 bis 29.04.2022 17:00 ',
+       until => $isodate2epoch->("2022-08-01 17:00:00"), # undef, # 1651244400, # 2022-04-29 17:00
+       text  => 'Ritterstr.: Bauarbeiten am Kreuzungsbereich Prinzenstr., Fahrbahn gesperrt, Umwege für Radfahrer, voraussichtlich bis 1.8.2022', # vom 28.02.2022 08:00 bis 29.04.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.409755,52.50158,28.02.2022,08:00', # (mittlerweile inaktiv)
        data  => <<EOF,
@@ -34789,10 +34788,10 @@ EOF
 # REMOVED --- #: note: es existiert ein etwas breiterer Fußgängerschutztunnel, etwa 50m lang --- #: also_indoor: traffic (G(partial),B(partial)) --- #: source_id: bvg2021:140#BVG297945_0 (bis 1.8.2022) --- #: last_checked: 2022-04-29 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-07-01 vvv ---	q3::inwork 10776,10682 10944,10606
 #: also_indoor: traffic (G(falsch),B)
 #: note: Kreuzungsbereich zur Prinzenstr. gesperrt
-#: source_id: viz2021:13.408387,52.502028,14.03.2022,08:00 (bis 1.7.2022)
+#: source_id: viz2021:13.408387,52.502028,14.03.2022,08:00 (bis 1.7.2022) (bis 1.8.2022)
 #: last_checked: 2022-06-12 (mapillary) vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2022-07-01 vvv
+#: next_check: 2022-08-01 vvv
 	q2::inwork 10776,10682 10585,10766
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
@@ -35121,13 +35120,13 @@ EOF
 EOF
      },
      { from  => 1651960800, # 2022-05-08 00:00
-       until => $isodate2epoch->("2022-07-03 13:00:00"), # 1653861600, # 2022-05-30 00:00
-       text  => 'Rennbahnstr.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, bis 3.7.2022 ',
+       until => $isodate2epoch->("2022-07-04 10:00:00"), # 1653861600, # 2022-05-30 00:00
+       text  => 'Rennbahnstr.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, bis 4.7.2022 ',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/wp-content/uploads/BA2.jpg',
        data  => <<EOF,
 #: next_check_id: BERLINERALLEE-2022
-#: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt) (bis 3.7.2022)
+#: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt) (bis 3.7.2022) (bis 4.7.2022)
 #: source_id: viz2021:13.46681,52.55708,27.05.2022,16:41 (bis 3.7.2022) (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1523659832569389058#m (Rennbahnstr. bis 3.7.2022 gesperrt)
 	q4::inwork 14558,16907 14528,16910
@@ -35536,6 +35535,9 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/2022/06/17_juni-sperrungen/',
        data  => <<EOF,
+#: source_id: viz2021:13.38045,52.51808,01.07.2022,18:00
+#: source_id: viz2021:13.37688,52.51775,01.07.2022,18:00
+#: source_id: viz2021:13.36975,52.51584,01.07.2022,18:00
 	2::temp 8595,12066 8600,12165 8538,12245 8592,12252
 	2::temp 8573,12325 8540,12420 8775,12457
 	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -35574,6 +35576,15 @@ EOF
 	q3::inwork 14014,16722 14107,16889 14235,17103
 #: next_check ^^^
 #: XXX ^^^
+EOF
+     },
+     { from  => 1656799200, # 2022-07-03 00:00
+       until => 1657317600, # 2022-07-09 00:00
+       text  => 'Ludwigsluster Str.: Bauarbeiten zwischen Gadebuscher Str. und Lion-Feuchtwanger-Str., Fahrbahn ist gesperrt, vom 04.07.2022 bis zum 08.07.2022 ',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1222045.php',
+       data  => <<EOF,
+	q4::inwork 22472,12343 22568,12408
 EOF
      },
     );

@@ -226,7 +226,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8226,11458 8145,11438 8
 #: by: https://baudoku.1000eyes.de/cam/deininger/B8A44F22CFEF/responsive.html (Webcam)
 #: by: srt
 #: XXX: temporäre Radspur
-#: osm_watch: way id="305483806" version="8"
+#: osm_watch: way id="305483806" version="9"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
 #: last_checked: 2022-06-24
 #: check_frequency: 180d
@@ -286,7 +286,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
 #: last_checked: 2022-06-29
 #: check_frequency: 14d
-# REMOVED --- #: next_check: 2022-06-30
+#: next_check: 2022-07-17
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 13596,10722 13678,10685 13779,10642 13919,10583
 #: next_check_id: STRALAUER-2019
 #: last_checked: 2022-06-29
@@ -2486,9 +2486,10 @@ Gehweg für Radfahrer frei, asphaltiert mit einigen Wellungen	RW1; 15354,13998 15
 	RW4; 15515,13134 15516,12838
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php --- #: XXX welche Verbesserung bzgl. der Radweginfrastruktur wird hier passieren? -> Gehweg wird verlegt, Radweg wird gebaut --- #: source_id: 2147344529 (bis Ende August 2019) --- #: last_checked: 2019-08-23 (Bauarbeiten laufen) --- #: next_check: 2019-08-30
 Verbundsteinpflaster	RW1; 15563,12870 15561,12950 15531,13022 15526,13056 15515,13134
-	RW1; 15516,12838 15546,12690 15563,12870
-	RW1;RW1 15546,12690 15550,12625 15557,12473 15535,12420 15508,12367
-	RW1; 15508,12367 15480,12306 15443,12222 15420,12178
+	RW1; 15546,12690 15563,12870
+Verbundsteinpflaster, leichte Wurzelhebungen	RW1; 15516,12838 15546,12690 15550,12625 15557,12473 15535,12420
+	RW1; 15535,12420 15508,12367 15480,12306 15443,12222 15420,12178
+	RW1; 15508,12367 15535,12420 15557,12473 15550,12625 15546,12690
 Gehweg für Radfahrer frei	RW1; 15420,12178 15443,12222 15480,12306 15508,12367
 	RW4;RW1 15420,12178 15361,12071
 #: by: Roy Fischer [AM]
@@ -2505,15 +2506,19 @@ Kleinkopfsteinpflaster	RW1;RW2 15563,12870 15516,12838
 	RW4; 14208,12235 14229,12311 14266,12446 14297,12553 14319,12629 14325,12648 14355,12752
 Grünmarkierung	RW4; 14355,12752 14325,12648 14319,12629 14297,12553 14266,12446 14229,12311 14208,12235
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14836,12826 14830,12932 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
-Verbundsteinpflaster, einige Wurzelhebungen	RW1; 13945,13564 14052,13389
+#: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen
+#: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
+#: last_checked: 2022-06-30
+#: check_frequency: 60d
+	RW0; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt; mittlerweile wird der Radweg neu erstellt, vermutlich dann ohne Wurzelhebungen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2022-06-21
+#: last_checked: 2022-06-30
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
-Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14252,13263 14476,13181 14741,13081 14795,13022 14830,12932 14836,12826
+Verbundsteinpflaster, teilweise erhebliche Wurzelhebungen	RW1; 14252,13263 14476,13181 14741,13081 14795,13022 14830,12932 14836,12826
 Verbundsteinpflaster	RW1;RW1 13895,13017 13926,13090 13943,13129 13998,13272 14052,13389 14109,13449
 Gehwegpflasterung, teilweise schadhaft	RW1; 13730,12535 13732,12526 13785,12292
 neu asphaltiert, relativ breit	RW1; 13785,12292 13732,12526 13730,12535
@@ -2692,7 +2697,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="7"
 #: osm_watch: way id="420112509" version="7"
 #: osm_watch: way id="966685279" version="1"
-#: last_checked: 2022-06-21 vvv
+#: last_checked: 2022-06-30 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967

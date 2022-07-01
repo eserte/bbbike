@@ -2715,6 +2715,9 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: by: https://kreuzberg-festival.de/
 #: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html?date=20220509 (1.-3. Juli 2022)
 #: by: https://nitter.net/VIZ_Berlin/status/1542565377942532096#m (auch Großbeerenstr.)
+#: by: https://berliner-abendblatt.de/2022/06/30/kreuzberg-festival-wir-haben-nicht-aufgegeben/
+#: source_id: viz2021:13.38274,52.49156,01.07.2022,06:00
+#: source_id: viz2021:13.3767,52.4894,01.07.2022,06:00
 	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
 	3 9000,9509 8970,9323 9007,9264
 	3 9007,9264 8970,9323 9000,9509
@@ -4054,45 +4057,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/weissensee/c-bauen/neues-verkehrskonzept-soll-belastungen-fuer-anwohner-der-schoenstrasse-verringern_a178715 (hier wird eine Einbahnstraße eingerichtet)
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.758375.php (Verzögerungen -> check_frequency erhöht)
-#: by: https://www.berliner-woche.de/weissensee/c-bauen/zum-zweiten-mal-wurden-die-bauarbeiten-auf-der-schoenstrasse-unterbrochen_a190561
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.808235.php (Vollsperrung für drei Monate ab 13.05.2019)
-#: by: https://www.berliner-woche.de/weissensee/c-bauen/nach-zweimaliger-unterbrechung-gehen-bauarbeiten-auf-der-schoenstrasse-weiter_a214852
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Sperrung des 2. Teilbereiches: drei Monate ab dem 19.09.2019)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/verkehrsbehoerdliche-anordnung_04-09-2019.pdf
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php
-#: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.909888.php (nächster Bauabschnitt ab 27. April 2020)
-#: by: https://www.berliner-woche.de/weissensee/c-bauen/der-gehweg-ist-jetzt-fertig_a258259
-#: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-auf-der-schoenstrasse-gehen-weiter_a261160
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1058179.php (Sperrung der Kreuzung Schönstraße/Paul-Oestreich-Straße, bis 26. März 2021)
-#: by: https://www.berliner-woche.de/weissensee/c-verkehr/einmuendung-komplett-gesperrt_a303306
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1216456.php (ab 21.6.2022 Vollsperrung, Freigabe am 28.6.2022)
-#: by: https://berliner-abendblatt.de/2022/06/17/vollsperrung-in-weissensee/
-#: add_fragezeichen: Sind die Bauarbeiten beendet und die Straße frei befahrbar?
-#: also_indoor: traffic (G(wieder),H(falsch?),B)
-#: source_id: viz2021:13.450024,52.553419,21.06.2022,08:00 (hier: Rad- und Fußverkehr frei)
-#: priority: #B vvv
-#: last_checked: 2022-06-21 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2022-06-28 vvv
-	q4::inwork 13391,16436 13630,16629
-Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-',
-         'from' => undef,
-         'id' => 2980,
-         'source_id' => 'https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php',
-         'text' => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Fahrbahn gesperrt, Sperrung war bis zum 28.6.2022 vorgesehen, ist also möglicherweise beendet',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4521,7 +4486,7 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-06-23 (mapillary)
+#: last_checked: 2022-06-27 (mapillary)
 #: check_frequency: 14d
 	q4::inwork; 11329,12497 11209,12430
 ',
@@ -4636,15 +4601,16 @@ Anbindung Paul-Oestreich-Str. gesperrt	q3::inwork 13710,16544 13630,16629
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-06-26 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2022-06-30 vvv
+#: check_frequency: 3d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
 # REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
 # REMOVED (beendet) ---	q3::inwork 14272,11775 14306,11889
 # REMOVED (beendet) ---	q3::inwork 14306,11889 14354,12012
-	q4::inwork 14354,12012 14427,12197
+#: XXX mittlerweile Asphaltierungsarbeiten, nur ein paar Meter an der Frankfurter Allee sind noch richtig gesperrt
+	q3::inwork 14354,12012 14427,12197
 # REMOVED (beendet) ---	q3::inwork 14354,12012 14468,11992
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -5429,7 +5395,25 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (hier: nur für Kfz-Verkehr gesperrt)
+#: by: https://twitter.com/VIZ_Berlin/status/1453704442986049548 (Radfahrer frei)
+#: by: https://twitter.com/VIZ_Berlin/status/1453699314891595779
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/bauarbeiten-in-der-muehlenstrasse_a327002
+#: source_id: viz2021:13.403429,52.56939,28.10.2021,06:00 (hier: bis 12.11.2021, und nur für Kfz-Verkehr gesperrt) (mittlerweile bis 9.11.2021)
+#: by: https://www.berliner-woche.de/altglienicke/c-verkehr/deckschicht-wird-runderneuert_a327095 (bis 30.11.2021)
+#: note: laut rbb vorzeitiges Ende am 9.11.2021
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221641.php (neue Bauarbeiten)
+#: by: https://berliner-abendblatt.de/2022/06/30/muehlenstrasse-wird-gesperrt/
+	q4::inwork; 10228,18196 10347,17959 10448,17751
+',
+         'from' => 1656972000,
+         'id' => 3472,
+         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1139346.php',
+         'text' => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, vom 6.7.2022 bis voraussichtlich 19.7.2022',
+         'type' => 'handicap',
+         'until' => 1658246400
+       },
        undef,
        undef,
        {
@@ -5812,10 +5796,10 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 # REMOVED --- #: note: es existiert ein etwas breiterer Fußgängerschutztunnel, etwa 50m lang --- #: also_indoor: traffic (G(partial),B(partial)) --- #: source_id: bvg2021:140#BVG297945_0 (bis 1.8.2022) --- #: last_checked: 2022-04-29 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-07-01 vvv ---	q3::inwork 10776,10682 10944,10606
 #: also_indoor: traffic (G(falsch),B)
 #: note: Kreuzungsbereich zur Prinzenstr. gesperrt
-#: source_id: viz2021:13.408387,52.502028,14.03.2022,08:00 (bis 1.7.2022)
+#: source_id: viz2021:13.408387,52.502028,14.03.2022,08:00 (bis 1.7.2022) (bis 1.8.2022)
 #: last_checked: 2022-06-12 (mapillary) vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2022-07-01 vvv
+#: next_check: 2022-08-01 vvv
 	q2::inwork 10776,10682 10585,10766
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
@@ -5824,9 +5808,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1645945200,
          'id' => 3521,
          'source_id' => 'viz2021:13.409755,52.50158,28.02.2022,08:00',
-         'text' => 'Ritterstr.: Bauarbeiten am Kreuzungsbereich Prinzenstr., Fahrbahn gesperrt, Umwege für Radfahrer, voraussichtlich bis 1.7.2022',
+         'text' => 'Ritterstr.: Bauarbeiten am Kreuzungsbereich Prinzenstr., Fahrbahn gesperrt, Umwege für Radfahrer, voraussichtlich bis 1.8.2022',
          'type' => 'handicap',
-         'until' => 1656687600
+         'until' => 1659366000
        },
        undef,
        {
@@ -6015,7 +5999,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: next_check_id: BERLINERALLEE-2022
-#: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt) (bis 3.7.2022)
+#: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt) (bis 3.7.2022) (bis 4.7.2022)
 #: source_id: viz2021:13.46681,52.55708,27.05.2022,16:41 (bis 3.7.2022) (inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1523659832569389058#m (Rennbahnstr. bis 3.7.2022 gesperrt)
 	q4::inwork 14558,16907 14528,16910
@@ -6025,9 +6009,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1651960800,
          'id' => 3546,
          'source_id' => 'https://viz.berlin.de/wp-content/uploads/BA2.jpg',
-         'text' => 'Rennbahnstr.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, bis 3.7.2022 ',
+         'text' => 'Rennbahnstr.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, bis 4.7.2022 ',
          'type' => 'handicap',
-         'until' => 1656846000
+         'until' => 1656921600
        },
        undef,
        {
@@ -6227,30 +6211,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
-#: by: https://berliner-abendblatt.de/2022/06/22/bauarbeiten-legen-blumberger-damm-lahm/
-#: source_id: viz2021:13.562568,52.51298,24.06.2022,20:00 (hier nur Kfz-Verkehr)
-#: source_id: viz2021:13.56283,52.51426,24.06.2022,20:00 (mittlerweile inaktiv)
-	2::inwork 21152,11945 21166,12023 21190,12193 21199,12258
-',
-         'from' => 1656007200,
-         'id' => 3571,
-         'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1219254.php',
-         'text' => 'Blumberger Damm: Sperrung zwischen der Altentreptower Str. und dem Frankenholzer Weg, auch Radfahrer und Fußgänger sind betroffen, 24. Juni 2022 20:00 Uhr bis 01. Juli 2022 04:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1656640800
-       },
-       {
-         'data' => '	2::temp 12198,8887 12392,8724
-',
-         'from' => 1656590400,
-         'id' => 3572,
-         'source_id' => 'https://berliner-abendblatt.de/2022/06/22/kiezfest-donaustrasse-wird-zur-kreativen-meile/',
-         'text' => 'Donaustr.: zwischen Pannierstr. und Weichselstr. Veranstaltung, Fahrbahn kann gesperrt sein, am 1. Juli 2022 von 14 bis 20 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1656698400
-       },
+       undef,
+       undef,
        {
          'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1539528243316985856#m
 #: by: https://nitter.net/pic/orig/media%2FFV2AstdX0AEWnIn.jpg
@@ -6304,7 +6266,10 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => 1657036800
        },
        {
-         'data' => '	2::temp 8595,12066 8600,12165 8538,12245 8592,12252
+         'data' => '#: source_id: viz2021:13.38045,52.51808,01.07.2022,18:00
+#: source_id: viz2021:13.37688,52.51775,01.07.2022,18:00
+#: source_id: viz2021:13.36975,52.51584,01.07.2022,18:00
+	2::temp 8595,12066 8600,12165 8538,12245 8592,12252
 	2::temp 8573,12325 8540,12420 8775,12457
 	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 	2::temp 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414
@@ -6350,6 +6315,16 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Schönstr./Große Seestr.: Sperrung des Kreuzungsbereichs, vom 04. Juli 2022 bis voraussichtlich 07. November 2022',
          'type' => 'handicap',
          'until' => 1667861999
+       },
+       {
+         'data' => '	q4::inwork 22472,12343 22568,12408
+',
+         'from' => 1656799200,
+         'id' => 3580,
+         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1222045.php',
+         'text' => 'Ludwigsluster Str.: Bauarbeiten zwischen Gadebuscher Str. und Lion-Feuchtwanger-Str., Fahrbahn ist gesperrt, vom 04.07.2022 bis zum 08.07.2022 ',
+         'type' => 'handicap',
+         'until' => 1657317600
        }
      
 );

@@ -10795,7 +10795,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern?
-#: last_checked: 2022-06-10
+#: last_checked: 2022-06-30
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
@@ -13241,6 +13241,9 @@ Ludwigsluster Str.: Beton mit einigen Schäden	Q1+ 22780,12567 22688,12489 22607,
 #: corrected_by: srt (Beton -> Asphalt)
 Ludwigsluster Str.: Asphalt	Q0 22607,12422 22568,12408
 #: corrected_by: srt (guter Beton -> ...)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1222045.php (Bauarbeiten zwischen Gadebuscher Str. und Lion-Feuchtwanger-Str.)
+#: add_fragezeichen: Ist die Qualität nach den Bauarbeiten besser geworden?
+#: next_check: 2022-07-08
 Ludwigsluster Str.: Beton mit einigen Schäden	Q1+ 22568,12408 22472,12343 22385,12268 22292,12198
 Ludwigsluster Str.: guter Beton	Q0- 22775,12984 22883,13013
 #: corrected_by: srt (guter Asphalt -> ...)
@@ -30906,7 +30909,8 @@ Einmündungsbereich asphaltiert	Q0 9193,12875
 Einmündungsbereich teilweise asphaltiert, teilweise Kleinsteinpflaster	Q1- 9239,12923
 Einmündungsbereich asphaltiert	Q0 14188,12664
 Kreuzungsbereich asphaltiert	Q0 13665,15840
-Kreuzungsbereich asphaltiert	Q0 13701,15744
+Kreuzungsbereich asphaltiert	Q0- 13701,15744
+Kreuzungsbereich asphaltiert	Q0- 13609,15706
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 10228,14564
 Kreuzungsbereich asphaltiert	Q0 10155,14719
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 9646,15737
