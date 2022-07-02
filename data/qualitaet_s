@@ -38,8 +38,9 @@ Hobrechtsfelder Chaussee (bis Kurve): asphaltiert	Q0 15589,27116 15230,26548 144
 Hobrechtsfelder Chaussee (ab Kurve): Kopfsteinpflaster	Q2 15589,27116 15711,27928 15777,28037
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12012,16250 12090,16199
 Weserstr.: asphaltiert	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12328,9117
-Weserstr.: Asphalt	Q0 12590,8977 12531,9009 12480,9037 12402,9080 12328,9117
-Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualit‰t	Q2 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
+Weserstr.: Asphalt	Q0 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
+Weserstr.: Asphalt	Q0 12590,8977 12740,8862
+Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualit‰t	Q2 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Jessnerstr.: Asphalt mit Aufpflasterungen	Q0 15077,11910 14986,11760 14946,11697 14849,11539
 Stuttgarter Str.: Asphalt	Q0 13663,8011 13633,8036 13554,8101 13510,8138
 Stuttgarter Str.: Asphalt	Q0 13510,8138 13331,8283
@@ -473,7 +474,8 @@ An der Nordbahn: m‰ﬂiger Asphalt	Q1 7504,19459 7415,19535 7236,19689 6680,20165 
 Pestalozzistr.: Asphalt	Q0 4434,11227 4546,11217
 Pestalozzistr.: Kopfsteinpflaster	Q2 4546,11217 4729,11206 4775,11203
 Pestalozzistr.: Kopfsteinpflaster	Q2 4176,11235 4101,11233 3981,11232
-Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2 4312,11354 4101,11347 3986,11347
+Goethestr.: Asphalt	Q0 4312,11354 4216,11351
+Goethestr.: teilweise Kopfsteinpflaster, teilweise Verbundsteine	Q2 4216,11351 4101,11347 3986,11347
 Goethestr.: Kopfsteinpflaster	Q2 3986,11347 3877,11347 3749,11344
 Knesebeckstr.: Kopfsteinpflaster	Q2 4858,10943 4857,10909 4841,10686 4838,10597 4819,10355
 Mommsenstr.: Kopfsteinpflaster	Q2 4685,10689 4841,10686
@@ -3492,6 +3494,7 @@ Gustav-Adolf-Str.: Asphalt	Q0 12399,16479 12560,16602 12670,16675
 Hilde-Ephraim-Str.: Asphalt	Q0 1312,9220 1261,9285 1662,9642 1709,9663 1718,9653 1756,9610
 Rosensteinweg: Verbundsteinpflaster	Q1 1718,9653 1917,9821 1927,9820
 Kyllmannstr. (Wannsee): Asphalt	Q0 -6246,1617 -6179,1570 -6147,1467 -6111,1396 -6065,1222
+Cheruskerpark: Asphalt	Q0 7353,8633 7291,8553
 Cheruskerpark: wassergebundene Decke	Q1 7439,8716 7405,8698 7382,8658 7368,8595
 Cheruskerpark: Asphalt	Q0 7368,8595 7352,8391 7352,8390 7329,8329 7283,8265 7282,8264 7250,8223
 (Cheruskerpark - Cheruskerstr.): Asphalt	Q0 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273

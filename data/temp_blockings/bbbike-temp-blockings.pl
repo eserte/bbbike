@@ -31790,7 +31790,7 @@ EOF
 #: XXX Es gibt nun eine weitere Baustelle, Halteverbotschilder bis Ende Dezember 2022
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
 #: osm_watch: way id="759405498" version="3"
-#: last_checked: 2022-06-04 (architektur-urbanistik)
+#: last_checked: 2022-07-02
 #: check_frequency: 120d
 #: next_check: 2022-12-28
 	q3::inwork; 5192,10241 5196,10398
@@ -34401,7 +34401,7 @@ EOF
      },
      { from  => 1640905200, # 2021-12-31 00:00
        until => 1672527600, # 2023-01-01 00:00
-       text  => 'Waitzstr.: Baustelle, gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.01.2022 bis 31.12.2022 ',
+       text  => 'Waitzstr.: Baustelle, Fahrbahn gesperrt, vom 01.01.2022 bis 31.12.2022 ',
        type  => 'gesperrt',
        source_id => 'viz2021:13.306069,52.502061,01.01.2022,06:00', # mittlerweile inaktiv
        data  => <<EOF,
@@ -35043,12 +35043,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Zähringerstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, Ende der Bauarbeiten unbekannt',
+       text  => 'Zähringerstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, voraussichtlich bis November 2022',
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2022-04-26 (mapillary)
-#: check_frequency: 60d
+#: last_checked: 2022-07-02
+#: check_frequency: 90d
+#: next_check: 2022-11-30
 	q4::inwork; 4277,9895 4126,9932 3927,9935
 EOF
      },
@@ -35234,12 +35235,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1656768758, # undef, # XXX
        text  => 'Dahlmannstr.: Einbahnstraßenregelung wegen Bauarbeiten, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (none)
-#: last_checked: 2022-05-28 (mapillary)
+# REMOVED (nicht mehr gesehen) --- #: also_indoor: traffic (none) --- #: last_checked: 2022-05-28 (mapillary)
 	q4::inwork; 3603,10765 3614,10564
 EOF
      },

@@ -41,7 +41,7 @@ Turmstr.: teilweise verwinkelte Wegführung des Radwegs	q1::inwork; 7069,13381 69
 Turmstr.: Bauarbeiten, Engstellen	q1::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
 Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwork 5461,9923 5423,9932 5382,9942
-Weserstr.: Bauarbeiten, Fahrbahn gesperrt, gemeinsamer Geh- und Radweg, eng	q3::inwork 12590,8977 12740,8862
+Weserstr.: Bauarbeiten, Fahrbahn noch nicht offiziell freigegeben, gemeinsamer Geh- und Radweg, eng	q2::inwork 12590,8977 12740,8862
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q1 14150,6609 14137,6658 14179,6714 14179,6743
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
@@ -774,7 +774,8 @@ Mulackstr.: enge Straße	q1 10633,13474 10535,13509 10406,13543 10313,13568
 Rückerstr.: enge Straße	q1 10597,13647 10535,13509
 Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 7352,8390 7329,8329 7283,8265 7282,8264 7250,8223
 (Ebersstr. - Park GASAG Nordspitze): Fußgänger	q1 7410,8593 7368,8595 7365,8595 7366,8624 7353,8633 7313,8661
-(Ebersstr. - Cheruskerstr.): Fußgänger	q1 7353,8633 7371,8660 7382,8658
+(Ebersstr. - Cheruskerstr.): Fußgänger	q3 7353,8633 7371,8660 7382,8658
+(Cheruskerpark): Fußgänger	q3 7353,8633 7291,8553
 (Cheruskerpark - Cheruskerstr.): Fußgänger	q1 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273
 (Torgauer Str. - Cheruskerstr.): Fußgänger	q1 7282,8264 7289,8259 7332,8292 7353,8293 7375,8294
 (Torgauer Str. - Cheruskerpark): Fußgänger	q1 7374,8211 7372,8222 7351,8258 7353,8293
@@ -1562,7 +1563,7 @@ Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
 (an den Schönhauser Allee Arcaden): Fußgänger	q3 11150,15908 11070,15944 11086,15984
 (an den Schönhauser Allee Arcaden): Fußgänger	q4 11086,15984 10975,16010
 Neue Steinmetzstr.: Bordstein	q2 7625,9376 7628,9365
-Münchener Str.: Bordstein	q2 6264,9156 6255,9194
+Münchener Str.: Fußgänger, Bordstein	q3 6264,9156 6255,9194
 (Promenade - Borstellstr.): einige Fußgänger	q2 6392,4312 6391,4328
 Heilbronner Str.: Bordsteine, einige Fußgänger	q4 6101,9720 6096,9772
 zur Müller-Breslau-Str.: flache Rampe	q2 5756,11618 5725,11644

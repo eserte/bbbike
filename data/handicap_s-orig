@@ -641,11 +641,11 @@ Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwor
 #: osm_watch: way id="1050315263" version="3"
 #: osm_watch: way id="996616281" version="8"
 #: osm_watch: way id="996616282" version="7"
-#: last_checked: 2022-05-21 (osm)
-#: check_frequency: 45d
+#: last_checked: 2022-07-02
+#: check_frequency: 21d
 #: next_check: 2022-09-15
 # REMOVED (hier fertig) --- Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
-Weserstr.: Bauarbeiten, Fahrbahn gesperrt, gemeinsamer Geh- und Radweg, eng	q3::inwork 12590,8977 12740,8862
+Weserstr.: Bauarbeiten, Fahrbahn noch nicht offiziell freigegeben, gemeinsamer Geh- und Radweg, eng	q2::inwork 12590,8977 12740,8862
 # 
 # REMOVED (Sperrung noch da, aber die Bürgersteigüberfahrt ist weggefallen) --- #: add_fragezeichen: Dauern die Bauarbeiten an? --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-02-01 --- Maybachufer: Bauarbeiten zwischen Friedelstr. und Liberdastr., teilweise Radfahrerführung über den Bürgersteig	q2::inwork 12085,9778 12250,9691
 # REMOVED --- #: next_check_id: BRAUNSCHWEIGER-2020 --- #: last_checked: 2020-10-24 vvv
@@ -715,7 +715,7 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022)
 #: also_indoor: traffic (G(zu früh+falsche Richtung),B)
 #: priority: #A
-#: last_checked: 2022-06-17 (mapillary)
+#: last_checked: 2022-07-02
 #: check_frequency: 120d
 #: next_check: 2022-09-01
 Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4::inwork; 12494,8501 12349,8464
@@ -2019,7 +2019,10 @@ Mulackstr.: enge Straße	q1 10633,13474 10535,13509 10406,13543 10313,13568
 Rückerstr.: enge Straße	q1 10597,13647 10535,13509
 Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 7352,8390 7329,8329 7283,8265 7282,8264 7250,8223
 (Ebersstr. - Park GASAG Nordspitze): Fußgänger	q1 7410,8593 7368,8595 7365,8595 7366,8624 7353,8633 7313,8661
-(Ebersstr. - Cheruskerstr.): Fußgänger	q1 7353,8633 7371,8660 7382,8658
+#: note: per Piktogramm nicht für Radfahrer
+(Ebersstr. - Cheruskerstr.): Fußgänger	q3 7353,8633 7371,8660 7382,8658
+#: note: per Piktogramm nicht für Radfahrer
+(Cheruskerpark): Fußgänger	q3 7353,8633 7291,8553
 (Cheruskerpark - Cheruskerstr.): Fußgänger	q1 7352,8391 7366,8390 7375,8294 7400,8273 7412,8273
 (Torgauer Str. - Cheruskerstr.): Fußgänger	q1 7282,8264 7289,8259 7332,8292 7353,8293 7375,8294
 (Torgauer Str. - Cheruskerpark): Fußgänger	q1 7374,8211 7372,8222 7351,8258 7353,8293
@@ -3082,8 +3085,8 @@ Insel-Rügen-Weg: eng	q2 10967,17671 10978,17589 11064,17599
 (an den Schönhauser Allee Arcaden): Fußgänger	q4 11086,15984 10975,16010
 #: XXX_prog falls man die Umfahrung auf dem Gehweg wählt, auf der südlichen Seite, ansonsten wegfallen lassen
 Neue Steinmetzstr.: Bordstein	q2 7625,9376 7628,9365
-#: XXX_prog Bordstein am Wendehammer, könnte mit Umweg auf der östlichen Seite über einen abgesenkten Bordstein umfahren werden, ansonsten q1
-Münchener Str.: Bordstein	q2 6264,9156 6255,9194
+#: XXX_prog Bordstein am Wendehammer, könnte mit Umweg auf der östlichen Seite über einen abgesenkten Bordstein umfahren werden, ansonsten q2
+Münchener Str.: Fußgänger, Bordstein	q3 6264,9156 6255,9194
 (Promenade - Borstellstr.): einige Fußgänger	q2 6392,4312 6391,4328
 #: XXX_prog Bordstein am Wendehammer; sowie Bordsteine (3x) beim Überqueren der Hohenstaufenstr., hier ist auch der Mittelstreifen relativ schmal; ansonsten q2
 Heilbronner Str.: Bordsteine, einige Fußgänger	q4 6101,9720 6096,9772

@@ -330,7 +330,7 @@ Gritznerstr.	1 4511,6318 4555,6403
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
 #: osm_watch: way id="4437134" version="10"
-#: last_checked: 2022-04-26 (mapillary)
+#: last_checked: 2022-07-02
 #: check_frequency: 120d
 Duisburger Str.	1 4183,10144 3880,10154
 # 
@@ -1276,7 +1276,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-06-29
+#: last_checked: 2022-07-02
 #: check_frequency: 90d
 #: next_check: 2022-10-31
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1584,6 +1584,7 @@ Margaretenstr.	1 25418,14835 25503,14842
 Sophienstr.	1 25503,14842 25527,14696 25555,14657
 Straße am Haussee: abgesperrt, Privatstraße	2 25846,16082 25787,16229
 #: note: möglicherweise nur im Frühling/Sommer?
+#: osm_watch: note 1414569 2
 Freilichtbühne Schwedt	2 69562,73280 69634,73330
 Bahnhofstr.	1s 26103,-11861 26205,-11862 26300,-11864
 #: note: Radweg in einer Richtung
@@ -3468,8 +3469,8 @@ Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5
 #: next_check_id: SCHOENERGARTEN-2022
 #: XXX Bleibt das so? Am westlichen Ende ist ein Zaun mit Tor, am südlichen Ende ein (ab?)geschlossenes Tor
 #: osm_watch: way id="478067706" version="6"
-#: last_checked: 2022-04-29 (architektur-urbanistik)
-#: check_frequency: 60d
+#: last_checked: 2022-07-02
+#: check_frequency: 90d
 Schönegarten: an beiden Enden gesperrt	2 7416,10492 7432,10546 7330,10590
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -3855,15 +3856,12 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 # 
 #: by: https://leute.tagesspiegel.de/tempelhof-schoeneberg/macher/2021/01/19/154834/sanierung-des-hochbahnviadukts-bauarbeiten-ab-2023-geplant/ (Sanierung 2023 - Mitte 2024)
 #: osm_watch: way id="223707973" version="10"
-#: last_checked: 2022-06-17
+#: last_checked: 2022-07-02
 #: check_frequency: 120d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 # 
-#: last_checked: 2022-06-17
-#: check_frequency: 14d
-Gleisdreieckpark: Nord-Süd-Verbindung wegen S21-Vorbereitungsarbeiten gesperrt	2::inwork 8276,10079 8264,10192
-# 
+# REMOVED (war vermutlich nur kurzzeitig) --- #: last_checked: 2022-06-17 --- #: check_frequency: 14d --- Gleisdreieckpark: Nord-Süd-Verbindung wegen S21-Vorbereitungsarbeiten gesperrt	2::inwork 8276,10079 8264,10192
 # REMOVED (beendet, etwas besser) --- #: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität des Wegs danach besser sein? --- #: last_checked: 2019-12-29 --- #: check_frequency: 21d --- (Stresemannstr. - Wilhelmstr.): Bauarbeiten, komplett gesperrt	2::inwork 9215,10607 9368,10641
 # REMOVED --- #: last_checked: 2021-07-26 --- #: check_frequency: 60d --- Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10804,12461 10804,12461
 # 
@@ -4552,7 +4550,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
 #: osm_watch: way id="158025179" version="8"
 #: last_checked: 2022-06-03 vvv
 # REMOVED (fertig?) --- #: check_frequency: 60d vvv
-#: also_indoor: traffic
+#: also_indoor: traffic (G)
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # REMOVED (wieder offen) --- #: also_indoor: traffic (G) --- Margarete-Steffin-Str.: Einbahnstraßenregelung	1s:q4:inwork 8559,12912 8631,12848 8700,12810 8732,12804
 # REMOVED --- #: check_frequency ^^^

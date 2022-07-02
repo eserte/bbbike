@@ -4769,7 +4769,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX Es gibt nun eine weitere Baustelle, Halteverbotschilder bis Ende Dezember 2022
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
 #: osm_watch: way id="759405498" version="3"
-#: last_checked: 2022-06-04 (architektur-urbanistik)
+#: last_checked: 2022-07-02
 #: check_frequency: 120d
 #: next_check: 2022-12-28
 	q3::inwork; 5192,10241 5196,10398
@@ -5519,7 +5519,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1640905200,
          'id' => 3495,
          'source_id' => 'viz2021:13.306069,52.502061,01.01.2022,06:00',
-         'text' => 'Waitzstr.: Baustelle, gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.01.2022 bis 31.12.2022 ',
+         'text' => 'Waitzstr.: Baustelle, Fahrbahn gesperrt, vom 01.01.2022 bis 31.12.2022 ',
          'type' => 'gesperrt',
          'until' => 1672527600
        },
@@ -5961,13 +5961,14 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2022-04-26 (mapillary)
-#: check_frequency: 60d
+#: last_checked: 2022-07-02
+#: check_frequency: 90d
+#: next_check: 2022-11-30
 	q4::inwork; 4277,9895 4126,9932 3927,9935
 ',
          'from' => undef,
          'id' => 3540,
-         'text' => 'Zähringerstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, Ende der Bauarbeiten unbekannt',
+         'text' => 'Zähringerstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, voraussichtlich bis November 2022',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6092,17 +6093,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (none)
-#: last_checked: 2022-05-28 (mapillary)
-	q4::inwork; 3603,10765 3614,10564
-',
-         'from' => undef,
-         'id' => 3555,
-         'text' => 'Dahlmannstr.: Einbahnstraßenregelung wegen Bauarbeiten, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder offen?
@@ -6239,18 +6230,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'gesperrt',
          'until' => 1735599599
        },
-       {
-         'data' => '#: next_check_id: SCHAEFERSEE-2022
-#: by: https://www.berliner-woche.de/reinickendorf/c-bauen/sperrung-am-schaefersee_a350672
-	2::inwork 7189,17666 7173,17591 7222,17471 7253,17467
-',
-         'from' => 1656194400,
-         'id' => 3575,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1220100.php',
-         'text' => 'Schäfersee: Bauarbeiten, Weg kann gesperrt sein, vom 27.6.2022 bis 1.7.2022 ',
-         'type' => 'gesperrt',
-         'until' => 1656712800
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.351095,52.514567,30.06.2022,06:00
