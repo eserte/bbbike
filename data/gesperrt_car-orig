@@ -244,7 +244,7 @@ Mimosenweg	2 17668,2187 17657,2213
 Falkenberger/B2: Straßenbahntrasse	3nocross 14619,16551 14624,16659 14622,16674 14608,16772 14558,16907
 # REMOVED (http://taxi-weblog.de/980: seit 2013-09 keine Einbahnstraße mehr) --- #: by: Andreas Mühlhausen (Einbahnstraße nur für Autofahrer) --- Sredzkistr. (ab Parkhaus Kulturbrauerei)	1 11101,14768 10893,14705
 Bahnübergang nur für Fußgänger/Radfahrer	3 * 20624,12133 *
-Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
+Zossener Str.: Straßenbahntrasse	3nocross 23080,15700 23218,15671 23388,15637 23411,15632 23568,15603 23617,15594
 #: note: nur temporär gültig
 Kleinmachnower Weg: Sa und So ist die Schranke an der Kreuzung Sachlebenstraße zu, für Kfz-Verkehr demnach gesperrt	2 283,-35 354,-13 665,85 934,130 970,135 1168,161 1345,184
 #: by: Omi2006@... [AM]
@@ -319,7 +319,7 @@ Cecilienstr.: Mittelstreifen	3nocross 21358,13909 21398,13906 21421,13905 21466,
 #: note: eine Querungsmöglichkeit existiert einige Meter weiter nördlich
 Daumstr.: Mittelstreifen	3nocross -1746,16667 -1710,16735 -1675,16813
 Daumstr.: Mittelstreifen	3nocross -1710,16735 -1746,16667 -1765,16603 -1783,16533 -1798,16465 -1810,16391
-Karlstr.	1 22556,4386 22458,4134
+Karlstr.	1 22556,4386 22502,4260 22458,4134
 Märkische Allee: Mittelstreifen	3nocross 21400,18817 21335,18679 21309,18626 21251,18508
 #: note: Luftbild
 Berliner Str.: Mittelstreifen	3nocross 1228,3210 1338,3300 1415,3362
@@ -1437,7 +1437,7 @@ Clayallee -> Sophie-Charlotte-Str.: Linksabbiegen verboten	3 1283,4260 1297,4311
 # REMOVED (entfernt) --- #: osm_watch: node id="8709493528" version="3"
 # REMOVED (entfernt) --- #: osm_watch: node id="8709493529" version="3"
 #: osm_watch: way id="940405708" version="3"
-#: osm_watch: note 2648361 15
+#: osm_watch: note 2648361 16
 #: last_checked: 2022-07-02
 # REMOVED --- #: next_check: 2022-06-30
 # REMOVED --- #: check_frequency: 90d
@@ -1603,4 +1603,9 @@ Poststr. (Hennigsdorf)	1 -3436,25581 -3503,25549
 # 
 #: by: mapillary
 Neue Straße (Teltow)	1 978,-521 1101,-553
+# 
+Karlstr. (Köpenick)	1 22556,4386 22502,4260 22458,4134
+# 
+Henny-Porten-Str.	1 23833,15066 23772,15058 23698,15049
+Kurt-Weill-Platz	1 23772,15058 23778,14995
 # 

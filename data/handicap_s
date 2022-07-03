@@ -81,7 +81,7 @@ Alt-Tegel: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 1907,20265 2015,20336
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5782,10884 5829,10964
 Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone), nachts und sonntags Radfahren erlaubt	q4 3717,11462 3749,11344 3770,11231 3795,11098 3820,10987
-(An der M¸ggelspree): Fuﬂg‰nger	q2 23461,4948 23461,5013 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25458,4521 25565,4549
+(An der M¸ggelspree): Fuﬂg‰nger	q2 23462,4906 23461,5013 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25458,4521 25565,4549
 Am M¸ggelsee: Fuﬂg‰nger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28853,3279
 Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11231
 (Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr	q2 11291,10438 11317,10485
@@ -1044,7 +1044,8 @@ Zum Seeblick: einige Stufen	q3 27161,-2474 27191,-2432
 (Gohliser Str. - Wuhle-Hˆnow-Weg): eng, Fuﬂg‰nger	q2 25504,15352 25541,15406 25540,15429
 (Quedlinburger Str. - Stendaler Str. [Nebenfahrbahn]): Bordsteine	q3 24009,15094 23993,15111
 Fritz-Lang-Str.: Fuﬂg‰ngerzone	q2 23856,14868 23878,14748
-Kurt-Weill-Gasse: Fuﬂg‰nger	q1 23820,14896 23787,14919
+Kurt-Weill-Gasse: Fuﬂg‰nger	q1 23846,14931 23778,14995
+Kurt-Weill-Gasse: Fuﬂg‰ngerzone	q4 23993,14797 23961,14841 23918,14876 23882,14904
 (Alt-Hellersdorf - Cottbusser Str.): getrennter Rad/Gehweg	q1 23305,14914 23318,14847 23297,14772
 Clara-Zetkin-Weg: Fuﬂg‰nger	q1 22572,13025 22591,12959 22612,12966 22681,12985 22693,12970 22775,12984
 (Clara-Zetkin-Platz - Bansiner Str.): Fuﬂg‰nger	q1 22612,12966 22623,12944
@@ -2302,6 +2303,9 @@ Fenchelweg: enge Straﬂe	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,360
 (Tornower Weg - Wilhelmsruher Damm): einige Fuﬂg‰nger	q1 6519,21002 6565,21004
 (Uferweg): Fuﬂg‰nger, nicht sehr breit	q2 21901,5117 21822,5153 21754,5221 21730,5267 21672,5407 21660,5424 21655,5432 21629,5470
 (Straﬂe 603 - Reckeweg): einige Fuﬂg‰nger	q1 -6831,15260 -6891,15228
+(KGA Alt-Hellersdorf): einige Fuﬂg‰nger	q2 23109,15140 23263,15162 23271,15164 23400,15195
+(KGA Alt-Hellersdorf - Neuruppiner Str.): einige Fuﬂg‰nger	q2 23263,15162 23257,15223
+(KGA Alt-Hellersdorf - Alt-Hellersdorf): einige Fuﬂg‰nger	q1 23271,15164 23285,15104 23283,15061
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3115,6 +3119,7 @@ Niederlagstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 994
 Barbarastr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 6456,3038 6372,2959 6329,2916 6359,2875
 Parchimer Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 22212,12403 22212,12422 22257,12481 22258,12573 22272,12610
 Stiftsweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11001,18528 11239,18832 11263,18842
+Treskowstr. (Mahlsdorf): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 24563,11980 24491,11972
 Rathausstr.:: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 15651,12214 15628,12246 15576,12315 15537,12367
 Steilpfad: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 3375,21230 3280,21477
 Erkelenzdamm: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 11117,10326 11094,10261

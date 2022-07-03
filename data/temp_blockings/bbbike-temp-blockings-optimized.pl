@@ -4601,7 +4601,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-06-30 vvv
+#: last_checked: 2022-07-03 vvv
 #: check_frequency: 3d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -5960,7 +5960,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => 1667232000
        },
        {
-         'data' => '#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
+         'data' => '#: osm_watch: way id="874517258" version="7"
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
 #: last_checked: 2022-07-02
 #: check_frequency: 90d
 #: next_check: 2022-11-30
@@ -6097,6 +6098,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder offen?
+#: also_indoor: traffic (G(nördlicher?),B)
 #: last_checked: 2022-06-04
 	q4::inwork 6293,2583 6349,2510
 ',
@@ -6182,7 +6184,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => 1704042000
        },
        {
-         'data' => '	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
+         'data' => '#: note: zwischen den Konzertterminen offen, z.B. gesehen am 2022-07-03
+	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
 ',
          'from' => undef,
          'id' => 3569,
@@ -6284,8 +6287,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
 #: next_check: 2022-07-04 vvv
-	q3::inwork 13996,16959 14107,16889 14184,16889
-	q3::inwork 14014,16722 14107,16889 14235,17103
+	q4::inwork 13914,17016 13996,16959 14107,16889
+	q4::inwork 13996,16959 13974,16924
 #: next_check ^^^
 #: XXX ^^^
 ',

@@ -281,7 +281,7 @@ Hochspannungsweg: zur Überquerung des Buckower Damms Fußgängerampel rechts nehme
 Ausschilderung nach Trampe fehlt	CP2; 54790,104980 54861,105010
 # REMOVED (Caligariplatz ist ausgeschildert, kein zusätzlicher Kommentar nötig) --- Caligariplatz: Richtung Heinersdorfer Str. fahren	CP2; 12097,16263 12121,16317
 Mittenwalder Str. - Zossener Str.: zunächst auf dem linken Geh/Radweg fahren, Straßenbahntrasse 100m weiter oder an der Kreuzung Kastanienallee überqueren; alternativ parallele Wohngebietsstraße benutzen	CP; 23441,15780 23411,15632 23568,15603 23617,15594
-Zossener Str. - Mittenwalder Str.: bereits an der Kreuzung Alte Hellersdorfer Str. den linken Geh/Radweg benutzen	PI; 23080,15700 23218,15671 23411,15632 23441,15780
+Zossener Str. - Mittenwalder Str.: bereits an der Kreuzung Alte Hellersdorfer Str. den linken Geh/Radweg benutzen	PI; 23080,15700 23218,15671 23388,15637 23411,15632 23441,15780
 Staakener Str. - Magistratsweg: linken Geh/Radweg benutzen und nach der Unterführung die Straße unterqueren	CP; -6458,14292 -6465,14291 -6470,14247
 Klosterbuschweg - Staakener Str.: frühzeitig auf den linken Geh/Radweg wechseln	PI; -6454,14392 -6461,14323 -6465,14291 -6458,14292
 Ellerbeker Str. - Behmstr.: links entlang des Sportplatzes fahren	CP2; 9727,16188 9754,16183
@@ -622,7 +622,7 @@ Rathausstr. - Frankfurter Allee: Fußgängerampel auf der linken Seite benutzen	CP
 # 
 #: next_check_id: ZUMBETRIEBSBHF-2017 vvv
 #: XXX ändert sich die Ausschilderung? vvv
-#: last_checked: 2022-06-28 vvv
+#: last_checked: 2022-07-03 vvv
 #: note: früher: ausgeschildert "zur Salzmannstraße Huronseestraße"
 nicht ausgeschildert, Richtung Salzmannstr./Huronseestr.	CP2; 16900,9861 16895,9922
 #: note: früher: ausgeschildert "zur Sewanstraße"
@@ -731,4 +731,7 @@ Segelfliegerdamm - Winckelmannstr.: ggfs. frühzeitig auf die Fahrbahn wechseln, 
 # 
 Gartenstr. - Müggelheimer Damm: zum Linksabbiegen die linke Fußgängerampel benutzen	CP; 22382,4361 22419,4457 22383,4470
 Gartenstr. - Amtsstr.: zum Überqueren des Müggelheimer Damms die linke Fußgängerampel benutzen	CP; 22382,4361 22419,4457 22495,4523
+# 
+Karlstr. - Müggelheimer Damm: zum Überqueren des Müggelheimer Damms den Straßenbahnübergang auf der linken Seite benutzen	CP; 22502,4260 22556,4386 22451,4441
+Müggelheimer Damm - Karlstr.: Straßenbahnübergang benutzen	CP; 22674,4309 22556,4386 22502,4260
 # 

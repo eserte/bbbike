@@ -614,7 +614,7 @@ Uferweg: wassergebundene Decke	Q1 16673,7511 16655,7572 16636,7704 16624,7833 16
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20972,3334 20906,3433 20833,3519 20683,3693 20546,3865
-(An der Müggelspree - Salvador-Allende-Str.): Asphalt	Q0 23461,4948 23461,5013 23461,5054
+(An der Müggelspree - Salvador-Allende-Str.): Asphalt	Q0 23462,4906 23461,5013 23461,5054
 (An der Müggelspree): fester Waldweg	Q1 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25458,4521 25565,4549
 (Zum Spreetunnel): fester Waldweg	Q2 25385,4414 25403,4415 25477,4419 25515,4476 25551,4481 25565,4549
 Görlitzer Park: teils fester sandiger Weg	Q1 12671,10042 12681,10047 12690,10062
@@ -1750,7 +1750,9 @@ Mentzelstr.: Kopfsteinpflaster	Q2 21726,4896 21684,4814 21579,4579
 Charlottenstr.: Asphalt	Q0 23036,3929 23027,3916 22966,3912 22855,3902
 Charlottenstr.: glattes Kopfsteinpflaster	Q1 22855,3902 22666,3888
 Charlottenstr.: Asphalt	Q0 22666,3888 22456,3889
-Karlstr.: Beton	Q0 22456,3889 22458,4134 22556,4386
+Karlstr.: teilweise neuer Beton	Q0 22456,3889 22458,4134
+Karlstr.: alter Beton	Q0 22458,4134 22502,4260
+Karlstr.: neuer Beton	Q0 22502,4260 22556,4386
 Gartenstr.: Asphalt	Q0 22456,3889 22281,4033 22263,4120 22279,4220
 Kietz: mäßiges Kopfsteinpflaster	Q2 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
 Gartenstr.: Kopfsteinpflaster	Q2 22279,4220 22302,4255
@@ -2117,7 +2119,8 @@ Semliner Str.: Waldweg, möglicherweise sandig	Q2 22303,7361 22353,7562
 Gelnitzstr.: schlechtes Kopfsteinpflaster	Q3 22900,5740 22885,5835
 Mayschweg: Asphalt	Q0 23368,3894 23316,3778 23227,3724
 Köpenzeile: Beton	Q0 23174,3791 23227,3724 23319,3528 23436,3212 23467,3110 23541,2841 23567,2739 23550,2528
-Köpenzeile: Asphalt	Q0 23550,2528 23484,2360
+Köpenzeile: Asphalt	Q0 23550,2528 23509,2409
+Köpenzeile: Beton	Q0 23509,2409 23484,2360
 Feldblumenweg: Asphalt	Q0 23479,2398 23484,2360 23487,2276 23526,2112
 Dörbeckweg: asphaltiert	Q0 -6251,13396 -6425,13347
 Moritzstr.: Asphalt	Q0 -3640,14643 -3598,14587 -3481,14523 -3440,14498 -3410,14479
@@ -4225,7 +4228,7 @@ Bütower Str.: Beton mit Schäden	Q1 24525,8910 24358,8976 24207,9035
 Bütower Str.: Asphalt	Q0 24207,9035 24032,9111
 Spitzwegstr.: Asphalt	Q0 25237,9595 25095,9627
 Müllerstr. (Mahlsdorf): Asphalt	Q0 24501,10222 24792,10162 24810,10160
-Müllerstr. (Mahlsdorf): Kopfsteinpflaster	Q2 24810,10160 24923,10097 25200,9939 25321,9875
+Müllerstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 24810,10160 24923,10097 25200,9939 25321,9875
 Müllerstr. (Mahlsdorf): Asphalt	Q0 25321,9875 25385,9842 25543,9755
 Hochwieser Str.: Asphalt	Q0 25196,10214 25257,10326 25267,10351 25314,10463
 Karlstr. (Mahlsdorf): Beton	Q0 24820,10605 24916,10539 25029,10462 25112,10415
@@ -6337,7 +6340,7 @@ Neuruppiner Str. (Hellersdorf): Beton	Q0 23082,15329 23265,15351 23280,15244
 Havelländer Ring: Beton	Q0 23629,15498 23484,15485 23368,15469 23369,15443 23386,15330 23539,15352 23588,15381 23643,15392
 Havelländer Ring: Beton	Q0 23369,15443 23284,15436 23270,15423 23258,15412 23265,15351
 Havelländer Ring: Beton	Q0 23386,15330 23391,15298 23399,15252
-Kastanienallee: Beton	Q0 23617,15594 23629,15498 23633,15464 23643,15392 23663,15270 23686,15128 23698,15049 23708,14989 23735,14814 23756,14696
+Kastanienallee: Beton	Q0 23617,15594 23629,15498 23633,15464 23643,15392 23663,15270 23686,15128 23692,15088 23698,15049 23708,14989 23735,14814 23756,14696
 (Kastanienallee - Stendaler Str.): Beton	Q0 23633,15464 23750,15487
 (Kastanienallee - Stendaler Str.): Verbundsteinpflaster	Q1 23750,15487 23775,15428 23895,15450
 Jerichower Str.: Beton	Q0 23913,15333 23960,15340 24050,15351
@@ -6369,10 +6372,11 @@ Kurt-Weill-Platz: Asphalt	Q0 23778,14995 23772,15058
 Fritz-Lang-Str.: Asphalt	Q0 23833,15066 23841,15004 23846,14931
 Fritz-Lang-Str.: Gehwegplatten	Q0 23856,14868 23878,14748
 Fritz-Lang-Platz: Asphalt	Q0 23871,14914 23846,14931 23820,14896 23856,14868 23882,14904 23871,14914
-Kurt-Weill-Gasse: Gehwegplatten	Q0 23820,14896 23787,14919
+Kurt-Weill-Gasse: Gehwegplatten	Q0 23846,14931 23778,14995
+Kurt-Weill-Gasse: Gehwegplatten	Q0 23993,14797 23961,14841 23918,14876 23882,14904
 Senftenberger Str. (Hellersdorf): Asphalt	Q0 23708,14989 23580,14970
 Senftenberger Str. (Hellersdorf): rauer Asphalt	Q1 23580,14970 23594,14886 23517,14873 23531,14781
-Alt-Hellersdorf: Asphalt	Q0 23117,15081 23269,15062 23305,14914
+Alt-Hellersdorf: Asphalt	Q0 23117,15081 23265,15054 23305,14914
 (Alt-Hellersdorf - Cottbusser Str.): Betonplatten	Q1 23305,14914 23318,14847 23297,14772
 Hellersdorfer Str. [Nebenfahrbahn]: Asphalt	Q0 23304,14473 23290,14493
 Hellersdorfer Str. [Nebenfahrbahn]: Asphalt	Q0 23211,14451 23290,14493 23366,14537
@@ -6424,7 +6428,10 @@ Mylauer Weg: Verbundsteinpflaster	Q1 23873,14527 23801,14500
 (Weg entlang der U-Bahn): neu asphaltiert	Q0 24579,14934 24715,14992 24728,14989
 (Weg entlang der U-Bahn): unbefestigter Weg, nach Regen matschig und Pfützen	Q2 24728,14989 24764,14989 25034,15082 25247,15086 25330,15066 25334,15051
 (Weg entlang der U-Bahn - U-Bhf. Hellersdorf): Kleinsteinpflaster	Q1 24136,14785 24139,14780 24161,14781 24182,14793 24202,14783 24218,14785 24228,14798 24213,14803
+Alter Heidenauer Steg: Holzbohlen	Q1 24245,14792 24251,14773
+(Weg entlang der U-Bahn - U-Bhf. Hellersdorf): Kleinsteinpflaster	Q1 24251,14773 24277,14747
 (Weg entlang der U-Bahn - Hoyerswerdaer Str.): neu asphaltiert	Q0 24728,14989 24745,14966 24763,14958
+(U-Bhf. Hellersdorf - Heidenauer Str.): Kleinsteinpflaster	Q1 24228,14798 24245,14792
 Hoyerswerdaer Str.: Asphalt	Q0 25186,14987 25228,15035 25242,15050 25319,15052 25334,15051
 Hoyerswerdaer Str.: Asphalt	Q0 25319,15052 25330,14962 25284,14940
 Schwarzheider Str.: Asphalt	Q0 24951,14649 25045,14678
@@ -6623,7 +6630,9 @@ Grillenweg: Beton	Q0 24236,5594 24225,5619
 Grillenweg: Asphalt, etwas Verbundsteinpflaster	Q1 24225,5619 24216,5748 24197,5791 24150,5854 24126,5874 24118,5895
 Grillenweg: Gehwegpflasterung	Q1 24118,5895 24111,5922 24122,6007
 Wiesenpromenade: Asphalt	Q0 23874,5876 23910,5884 23919,5908 23951,5923 23931,5992
-(S-Bhf. Hirschgarten - KGA Erpetal): Beton	Q1 23948,6054 23951,6063 23943,6131 23960,6153
+(S-Bhf. Hirschgarten - KGA Erpetal): Beton	Q1 23948,6054 23951,6063
+(S-Bhf. Hirschgarten - KGA Erpetal): teilweise Beton, teilweise unbefestigt	Q1 23951,6063 23943,6131
+(S-Bhf. Hirschgarten - KGA Erpetal): Beton	Q1 23943,6131 23960,6153
 Kurzer Steig: Asphalt	Q0 24126,5521 24162,5424
 Am Stichkanal: Parkweg	Q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Beton	Q0 22585,4634 22531,4605 22458,4565
@@ -10940,6 +10949,11 @@ Grüne Trift: Asphalt	Q0 23416,2808 23370,3024 23338,3173 23298,3295 23231,3480 2
 (Lindenstr. - Uferweg): Betonpflaster, etwas große Fugen	Q1 21739,5492 21655,5432
 (Uferweg): wassergebundene Decke	Q1 21901,5117 21822,5153 21754,5221 21730,5267 21672,5407 21660,5424 21655,5432 21629,5470
 (Straße 603 - Reckeweg): Betonplatten	Q0 -6831,15260 -6891,15228
+(KGA Alt-Hellersdorf): wassergebundene Decke	Q1 23109,15140 23263,15162 23271,15164 23400,15195
+(KGA Alt-Hellersdorf - Neuruppiner Str.): Asphalt	Q0 23263,15162 23257,15223
+(KGA Alt-Hellersdorf - Alt-Hellersdorf): Asphalt	Q0 23271,15164 23285,15104 23283,15061
+(KGA Alt-Hellersdorf - Alt-Hellersdorf): unbefestigter Weg	Q2 23265,15054 23283,15061
+(Heidenauer Str. - Sebnitzer Str.): welliger Asphalt	Q1 24277,14747 24317,14768 24404,14770 24443,14756
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

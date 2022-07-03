@@ -337,7 +337,7 @@ Edison-/Siemensstr.	3 17991,6431 17962,6674 17860,6644
 Edisonstr.	1 17962,6674 17991,6431
 Brückenstr./Edisonstr.	1 17991,6431 17948,6248 17930,6175 17900,6072
 Müggelheimer Str.	3nocross::ignrte 22674,4309 22556,4386 22451,4441 22419,4457 22383,4470
-Karlstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22458,4134 22556,4386 22451,4441
+Karlstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22502,4260 22556,4386 22451,4441
 Müggelheimer Str. -> Spitzerstr.: Müggelheimer Str.	3::igndisp 22556,4386 22451,4441 22425,4370
 Spitzerstr. -> Müggelheimer Str.: Müggelheimer Str.	3::igndisp 22425,4370 22451,4441 22419,4457
 Müggelheimer Str. -> Amtsstr.: Müggelheimer Str.	3::igndisp 22383,4470 22419,4457 22495,4523
@@ -384,10 +384,10 @@ Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14558,16907 14608,1
 Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14622,16674
 Bahnübergang nur für Fußgänger/Radfahrer	3 20619,12098 20624,12133 20627,12162
 Bahnübergang nur für Fußgänger/Radfahrer	3 20627,12162 20624,12133 20619,12098
-Straßenbahntrasse	3nocross::ignrte 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
+Straßenbahntrasse	3nocross::ignrte 23080,15700 23218,15671 23388,15637 23411,15632 23568,15603 23617,15594
 Zossener Str. -> Klausdorfer Str.: Straßenbahntrasse	3::igndisp 23080,15700 23218,15671 23243,15820
-Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23243,15820 23218,15671 23411,15632
-Zossener Str. -> Mittenwalder Str.: Straßenbahntrasse	3::igndisp 23218,15671 23411,15632 23441,15780
+Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23243,15820 23218,15671 23388,15637
+Zossener Str. -> Mittenwalder Str.: Straßenbahntrasse	3::igndisp 23388,15637 23411,15632 23441,15780
 Mittenwalder Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23441,15780 23411,15632 23568,15603
 Zossener Str. -> Teupitzer Str.: Straßenbahntrasse	3::igndisp 23411,15632 23568,15603 23573,15627
 Teupitzer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23573,15627 23568,15603 23617,15594
@@ -544,7 +544,7 @@ Wolzenseeweg -> Daumstr.: Mittelstreifen	3::igndisp -1721,16448 -1798,16465 -181
 Wolzenseeweg -> Templiner-See-Str.: Mittelstreifen	3::igndisp -1721,16448 -1798,16465 -1902,16493
 Templiner-See-Str. -> Daumstr.: Mittelstreifen	3::igndisp -1902,16493 -1798,16465 -1783,16533
 Templiner-See-Str. -> Wolzenseeweg: Mittelstreifen	3::igndisp -1902,16493 -1798,16465 -1721,16448
-Karlstr.	1 22556,4386 22458,4134
+Karlstr.	1 22556,4386 22502,4260 22458,4134
 Mittelstreifen	3nocross::ignrte 21400,18817 21335,18679 21309,18626 21251,18508
 Märkische Allee -> Klandorfer Str.: Mittelstreifen	3::igndisp 21400,18817 21335,18679 21377,18663
 Klandorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 21377,18663 21335,18679 21309,18626
@@ -2258,3 +2258,6 @@ Parkstr. (Luckenwalde)	1 -4435,-35830 -4478,-35736
 Niels-Bohr-Ring (Potsdam)	1 -7346,-3837 -7522,-3837 -7522,-3750 -7349,-3747
 Poststr. (Hennigsdorf)	1 -3436,25581 -3503,25549
 Neue Straße (Teltow)	1 978,-521 1101,-553
+Karlstr. (Köpenick)	1 22556,4386 22502,4260 22458,4134
+Henny-Porten-Str.	1 23833,15066 23772,15058 23698,15049
+Kurt-Weill-Platz	1 23772,15058 23778,14995
