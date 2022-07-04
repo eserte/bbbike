@@ -284,12 +284,12 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-06-29
+#: last_checked: 2022-07-04
 #: check_frequency: 14d
 #: next_check: 2022-07-17
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 13596,10722 13678,10685 13779,10642 13919,10583
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-06-29
+#: last_checked: 2022-07-04
 #: check_frequency: 90d
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489
 provisorische Radspur	RW4; 13919,10583 13986,10549 14103,10489
@@ -1640,8 +1640,8 @@ Busspur ist immer gültig	RW5;RW5 9934,12420 9858,12410
 #: next_check_id: ZEUGHAUS-2014
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
 #: source_id: viz2021:13.399226,52.517706,30.05.2022,08:00 (bis 15.8.2022, zwischen Lustgarten - Oberwallstr.) vvv
-#: last_checked: 2022-06-12 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2022-07-03 (daf) vvv
+#: check_frequency: 14d vvv
 #: next_check: 2022-08-15 vvv
 provisorische Radspur	RW4; 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506
 provisorische Radspur	RW4; 10176,12506 10155,12494 10063,12438 10024,12431 9984,12426 9934,12420
@@ -3242,10 +3242,10 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: check_frequency: 120d vvv
 #: next_check: 2022-08-31 vvv
 #: priority: #A vvv
-	RW8; 23451,4877 23447,4906 23433,5037 23420,5159 23404,5325
+	RW8; 23451,4877 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
 #: by: https://www.bahninfo-forum.de/read.php?9,622793,671456#msg-671456
 #: confirmed_by: srt
-neu asphaltiert, relativ breit	RW2; 23404,5325 23420,5159 23433,5037 23447,4906 23451,4877
+neu asphaltiert, relativ breit	RW2; 23404,5325 23420,5159 23433,5037 23443,4942 23447,4906 23451,4877
 #: priority ^^^
 #: next_check ^^^
 #: check_frequency ^^^
@@ -6407,7 +6407,7 @@ Grünmarkierung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 12823
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
-#: last_checked: 2022-06-08
+#: last_checked: 2022-06-17 (mapillary)
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 

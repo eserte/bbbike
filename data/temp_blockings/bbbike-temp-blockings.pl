@@ -28593,7 +28593,7 @@ EOF
        source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.742824.php',
        data  => <<EOF,
 #: source_id: 2147343251
-	2::inwork 23447,4906 23433,5037 23420,5159 23404,5325
+	2::inwork 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
 EOF
      },
      { from  => 1537934400, # 2018-09-26 06:00
@@ -34486,12 +34486,12 @@ EOF
 EOF
      },
      { from  => 1614492000, # 2021-02-28 07:00
-       until => $isodate2epoch->("2022-12-31 07:00:00"), # 1672502400, # 2022-12-31 17:00
-       text  => 'Ringstr.: Bauarbeiten, kurze Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, vom 01.03.2021 07:00 bis 31.12.2022 17:00 ',
+       until => $isodate2epoch->("2022-08-31 07:00:00"), # 1672502400, # 2022-12-31 17:00
+       text  => 'Ringstr.: Bauarbeiten, kurze Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, vom 01.03.2021 07:00 bis 31.08.2022 17:00 ',
        type  => 'handicap',
-       source_id => 'viz2021:13.287063,52.432721,01.03.2021,07:00', # mittlerweile nur bis 31.1.2022, aber siehe unten
+       source_id => 'viz2021:13.287063,52.432721,01.03.2021,07:00', # mittlerweile nur bis 31.1.2022, aber siehe unten (inaktiv)
        data  => <<EOF,
-#: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.12.2022)
+#: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum für die Gesamtbaumaßnahme mehr) vvv
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
@@ -34501,7 +34501,6 @@ EOF
 # REMOVED (hier vermutlich nicht mehr, by mapillary) --- #: note: Länge der Sperrung nur 30m ---	q3::inwork 3507,3654 3375,3559
 	q4::inwork 2655,3025 2594,3009
 	q4::inwork 2632,2969 2594,3009
-#: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022) vvv
 #: XXX werden die Bauarbeiten hier noch verlängert? vvv
 #: note: bei rbb bis 31.10.2022
 #: next_check: 2022-08-31 vvv
@@ -34509,12 +34508,12 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3185,3476 3184,3427 3174,3052
 #: next_check ^^^
 #: XXX ^^^
-#: source_id ^^^
 # REMOVED ---	q4::inwork; 3507,3654 3375,3559 3228,3455 3184,3427
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 # REMOVED --- #: XXX ^^^
+#: source_id ^^^
 EOF
      },
      { from  => 1642917600, # 2022-01-23 07:00
@@ -34714,7 +34713,7 @@ EOF
 #: by: https://viz.berlin.de/2022/02/verkehrsvorschau-21022022/ (für Fußgänger offen)
 #: XXX evtl. nach handicap_s-orig übertragen
 #: also_indoor: traffic (B,H(unvollständig),G)
-#: osm_watch: way id="1047544509" version="1"
+#: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
 #: last_checked: 2022-05-15 (architektur-urbanistik) vvv
 #: check_frequency: 90d vvv
@@ -35573,6 +35572,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
        data  => <<EOF,
+#: also_indoor: traffic (none)
 #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
 #: next_check: 2022-07-04 vvv
 	q4::inwork 13914,17016 13996,16959 14107,16889

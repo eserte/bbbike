@@ -2710,38 +2710,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html (8.-10.10.2021, als "Kreuzberg-Festival", vermutlich auf Kreuzbergstraße)
-#: by: https://kreuzberg-festival.de/
-#: by: https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html?date=20220509 (1.-3. Juli 2022)
-#: by: https://nitter.net/VIZ_Berlin/status/1542565377942532096#m (auch Großbeerenstr.)
-#: by: https://berliner-abendblatt.de/2022/06/30/kreuzberg-festival-wir-haben-nicht-aufgegeben/
-#: source_id: viz2021:13.38274,52.49156,01.07.2022,06:00
-#: source_id: viz2021:13.3767,52.4894,01.07.2022,06:00
-	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
-	3 9000,9509 8970,9323 9007,9264
-	3 9007,9264 8970,9323 9000,9509
-	2::temp 9000,9509 8970,9323
-',
-         'from' => 1656540000,
-         'id' => 2089,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              6,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest',
-         'text' => 'Kreuzbergstr.: Veranstaltung (Kreuzbergstraßenfest), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (01.07.2022 bis 03.07.2022)',
-         'type' => 'gesperrt',
-         'until' => 1656885599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5593,7 +5562,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.12.2022)
+         'data' => '#: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum für die Gesamtbaumaßnahme mehr) vvv
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
@@ -5603,7 +5572,6 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED (hier vermutlich nicht mehr, by mapillary) --- #: note: Länge der Sperrung nur 30m ---	q3::inwork 3507,3654 3375,3559
 	q4::inwork 2655,3025 2594,3009
 	q4::inwork 2632,2969 2594,3009
-#: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022) vvv
 #: XXX werden die Bauarbeiten hier noch verlängert? vvv
 #: note: bei rbb bis 31.10.2022
 #: next_check: 2022-08-31 vvv
@@ -5611,19 +5579,19 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3185,3476 3184,3427 3174,3052
 #: next_check ^^^
 #: XXX ^^^
-#: source_id ^^^
 # REMOVED ---	q4::inwork; 3507,3654 3375,3559 3228,3455 3184,3427
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 # REMOVED --- #: XXX ^^^
+#: source_id ^^^
 ',
          'from' => 1614492000,
          'id' => 3502,
          'source_id' => 'viz2021:13.287063,52.432721,01.03.2021,07:00',
-         'text' => 'Ringstr.: Bauarbeiten, kurze Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, vom 01.03.2021 07:00 bis 31.12.2022 17:00 ',
+         'text' => 'Ringstr.: Bauarbeiten, kurze Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, vom 01.03.2021 07:00 bis 31.08.2022 17:00 ',
          'type' => 'handicap',
-         'until' => 1672466400
+         'until' => 1661922000
        },
        {
          'data' => '#: source_id: viz2021:13.445912,52.478966,13.06.2022,07:00 (zusätzliche Meldung zur Sonnenallee)
@@ -5749,7 +5717,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://viz.berlin.de/2022/02/verkehrsvorschau-21022022/ (für Fußgänger offen)
 #: XXX evtl. nach handicap_s-orig übertragen
 #: also_indoor: traffic (B,H(unvollständig),G)
-#: osm_watch: way id="1047544509" version="1"
+#: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
 #: last_checked: 2022-05-15 (architektur-urbanistik) vvv
 #: check_frequency: 90d vvv
@@ -5999,22 +5967,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: BERLINERALLEE-2022
-#: source_id: viz2021:13.463558,52.558311,09.05.2022,04:00 (bis 30.5.2022, hier: nur Kfz-Verkehr erwähnt) (bis 3.7.2022) (bis 4.7.2022)
-#: source_id: viz2021:13.46681,52.55708,27.05.2022,16:41 (bis 3.7.2022) (inaktiv)
-#: by: https://nitter.net/VIZ_Berlin/status/1523659832569389058#m (Rennbahnstr. bis 3.7.2022 gesperrt)
-	q4::inwork 14558,16907 14528,16910
-	q3::inwork 14528,16910 14341,17030
-# REMOVED --- #: XXX hier (Bernkastler Str.) nur bis 12.6.2022 --- #: source_id: viz2021:13.467365,52.557032,30.05.2022,07:00 (Bernkastler Str. 30.5.2022 bis 12.6.2022) (bis 13.6.2022) --- #: next_check: 2022-06-13 ---	q3::inwork 14558,16907 14673,16895
-',
-         'from' => 1651960800,
-         'id' => 3546,
-         'source_id' => 'https://viz.berlin.de/wp-content/uploads/BA2.jpg',
-         'text' => 'Rennbahnstr.: Sperrung der Fahrbahn wegen Gleisbauarbeiten, bis 4.7.2022 ',
-         'type' => 'handicap',
-         'until' => 1656921600
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: HAEMMERLING-2022
@@ -6248,44 +6201,10 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'gesperrt',
          'until' => 1657036800
        },
+       undef,
        {
-         'data' => '#: source_id: viz2021:13.38045,52.51808,01.07.2022,18:00
-#: source_id: viz2021:13.37688,52.51775,01.07.2022,18:00
-#: source_id: viz2021:13.36975,52.51584,01.07.2022,18:00
-	2::temp 8595,12066 8600,12165 8538,12245 8592,12252
-	2::temp 8573,12325 8540,12420 8775,12457
-	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414
-	2::temp 8538,12245 8546,12279 8570,12302
-	2::temp 7215,12295 7031,12320
-	3 7945,12592 7875,12363 7822,12201
-	3 8344,12221 8538,12245 8522,12187
-	3 8344,12221 8538,12245 8522,12239
-	3 8522,12187 8538,12245 8522,12239
-	3 8522,12187 8538,12245 8344,12221
-	3 7603,12353 7627,12380 7654,12464
-	3 7822,12201 7875,12363 7945,12592
-	3 7822,12201 7816,12150 7823,12120
-	3 8522,12239 8538,12245 8522,12187
-	3 8522,12239 8538,12245 8344,12221
-	3 7823,12120 7816,12150 7822,12201
-	3 7031,12320 7383,12095 7429,12070
-	3 8391,12389 8400,12417 8399,12610
-	3 8089,12190 8055,12186 8049,12140
-	3 8399,12610 8400,12417 8391,12389
-	3 7654,12464 7627,12380 7603,12353
-	3 7429,12070 7383,12095 7031,12320
-	3 8049,12140 8055,12186 8089,12190
-',
-         'from' => 1656604800,
-         'id' => 3578,
-         'source_id' => 'https://viz.berlin.de/2022/06/17_juni-sperrungen/',
-         'text' => 'Straße des 17. Juni, Ebertstr., Scheidemannstr., John-Foster-Duller-Allee: Sperrungen vom 01.07.2022, 18:00 Uhr bis 04.07.2022, 06:00 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1656907200
-       },
-       {
-         'data' => '#: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
+         'data' => '#: also_indoor: traffic (none)
+#: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
 #: next_check: 2022-07-04 vvv
 	q4::inwork 13914,17016 13996,16959 14107,16889
 	q4::inwork 13996,16959 13974,16924
