@@ -4807,7 +4807,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-06-03 vvv
+#: last_checked: 2022-07-05 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -5374,12 +5374,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: note: laut rbb vorzeitiges Ende am 9.11.2021
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221641.php (neue Bauarbeiten)
 #: by: https://berliner-abendblatt.de/2022/06/30/muehlenstrasse-wird-gesperrt/
-	q4::inwork; 10228,18196 10347,17959 10448,17751
+#: source_id: viz2021:13.403429,52.56939,06.07.2022,06:00 (bis 19.7.2022, nur Kfz-Verkehr betroffen)
+	q3::inwork; 10228,18196 10347,17959 10448,17751
 ',
          'from' => 1656972000,
          'id' => 3472,
          'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1139346.php',
-         'text' => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, vom 6.7.2022 bis voraussichtlich 19.7.2022',
+         'text' => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, Radfahrer dürfen voraussichtlich den Gehweg benutzen, vom 6.7.2022 bis voraussichtlich 19.7.2022',
          'type' => 'handicap',
          'until' => 1658246400
        },
@@ -5757,29 +5758,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1498247389118873600
-#: by: https://pbs.twimg.com/media/FMrYBZQXEAAQlaA?format=jpg&name=large
-#: XXX bis wann gehen die Bauarbeiten?
-# REMOVED --- #: note: es existiert ein etwas breiterer Fußgängerschutztunnel, etwa 50m lang --- #: also_indoor: traffic (G(partial),B(partial)) --- #: source_id: bvg2021:140#BVG297945_0 (bis 1.8.2022) --- #: last_checked: 2022-04-29 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-07-01 vvv ---	q3::inwork 10776,10682 10944,10606
-#: also_indoor: traffic (G(falsch),B)
-#: note: Kreuzungsbereich zur Prinzenstr. gesperrt
-#: source_id: viz2021:13.408387,52.502028,14.03.2022,08:00 (bis 1.7.2022) (bis 1.8.2022)
-#: last_checked: 2022-06-12 (mapillary) vvv
-# REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2022-08-01 vvv
-	q2::inwork 10776,10682 10585,10766
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1645945200,
-         'id' => 3521,
-         'source_id' => 'viz2021:13.409755,52.50158,28.02.2022,08:00',
-         'text' => 'Ritterstr.: Bauarbeiten am Kreuzungsbereich Prinzenstr., Fahrbahn gesperrt, Umwege für Radfahrer, voraussichtlich bis 1.8.2022',
-         'type' => 'handicap',
-         'until' => 1659366000
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv) (bis 30.9.2022)
@@ -6188,19 +6167,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.351095,52.514567,30.06.2022,06:00
-	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-',
-         'from' => 1656475200,
-         'id' => 3577,
-         'source_id' => 'https://viz.berlin.de/2022/06/17_juni-sperrungen/',
-         'text' => 'Straße des 17. Juni: Sperrung zwischen Yitzhak-Rabin-Str. und Ebertstr., vom 30.06.2022, 06:00 Uhr bis 05.07.2022, 18:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1657036800
-       },
+       undef,
        undef,
        {
          'data' => '#: also_indoor: traffic (none)

@@ -32189,7 +32189,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-06-03 vvv
+#: last_checked: 2022-07-05 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -34065,7 +34065,7 @@ EOF
      },
      { from  => $isodate2epoch->("2022-07-05 00:00:00"), # 1635285600, # 2021-10-27 00:00
        until => $isodate2epoch->("2022-07-19 18:00:00"), # $isodate2epoch->("2021-11-09 11:00:00"), # 1637017199, # 2021-11-15 23:59
-       text  => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, vom 6.7.2022 bis voraussichtlich 19.7.2022', # alt: Radfahrer dürfen den Gehweg benutzen, vom 28. Oktober 2021 bis 09.11.2021
+       text  => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, Radfahrer dürfen voraussichtlich den Gehweg benutzen, vom 6.7.2022 bis voraussichtlich 19.7.2022', # alt: , vom 28. Oktober 2021 bis 09.11.2021
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1139346.php',
        data  => <<EOF,
@@ -34078,7 +34078,8 @@ EOF
 #: note: laut rbb vorzeitiges Ende am 9.11.2021
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221641.php (neue Bauarbeiten)
 #: by: https://berliner-abendblatt.de/2022/06/30/muehlenstrasse-wird-gesperrt/
-	q4::inwork; 10228,18196 10347,17959 10448,17751
+#: source_id: viz2021:13.403429,52.56939,06.07.2022,06:00 (bis 19.7.2022, nur Kfz-Verkehr betroffen)
+	q3::inwork; 10228,18196 10347,17959 10448,17751
 EOF
      },
      { from  => 1636239600, # 2021-11-07 00:00
@@ -34776,25 +34777,22 @@ EOF
 EOF
      },
      { from  => 1645945200, # 2022-02-27 08:00
-       until => $isodate2epoch->("2022-08-01 17:00:00"), # undef, # 1651244400, # 2022-04-29 17:00
+       until => 1657043813, # $isodate2epoch->("2022-08-01 17:00:00"), # undef, # 1651244400, # 2022-04-29 17:00
        text  => 'Ritterstr.: Bauarbeiten am Kreuzungsbereich Prinzenstr., Fahrbahn gesperrt, Umwege für Radfahrer, voraussichtlich bis 1.8.2022', # vom 28.02.2022 08:00 bis 29.04.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.409755,52.50158,28.02.2022,08:00', # (mittlerweile inaktiv)
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1498247389118873600
 #: by: https://pbs.twimg.com/media/FMrYBZQXEAAQlaA?format=jpg&name=large
-#: XXX bis wann gehen die Bauarbeiten?
+# REMOVED (mittlerweile nur noch Einbahnstraße für Kfz) --- #: XXX bis wann gehen die Bauarbeiten?
 # REMOVED --- #: note: es existiert ein etwas breiterer Fußgängerschutztunnel, etwa 50m lang --- #: also_indoor: traffic (G(partial),B(partial)) --- #: source_id: bvg2021:140#BVG297945_0 (bis 1.8.2022) --- #: last_checked: 2022-04-29 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-07-01 vvv ---	q3::inwork 10776,10682 10944,10606
-#: also_indoor: traffic (G(falsch),B)
-#: note: Kreuzungsbereich zur Prinzenstr. gesperrt
-#: source_id: viz2021:13.408387,52.502028,14.03.2022,08:00 (bis 1.7.2022) (bis 1.8.2022)
-#: last_checked: 2022-06-12 (mapillary) vvv
+# REMOVED --- #: also_indoor: traffic (G(falsch),B) --- #: note: Kreuzungsbereich zur Prinzenstr. gesperrt --- #: source_id: viz2021:13.408387,52.502028,14.03.2022,08:00 (bis 1.7.2022) (bis 1.8.2022) --- #: last_checked: 2022-06-12 (mapillary) vvv
 # REMOVED --- #: check_frequency: 30d vvv
-#: next_check: 2022-08-01 vvv
+# REMOVED --- #: next_check: 2022-08-01 vvv
 	q2::inwork 10776,10682 10585,10766
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: last_checked ^^^
 EOF
      },
      { from  => $isodate2epoch->("2022-03-02 14:00:00"), # 1 Tag Vorlauf
