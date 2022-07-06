@@ -28,7 +28,7 @@ Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245
 # 
 #: by: https://berliner-abendblatt.de/2022/04/27/das-sind-die-aktuellen-staufallen-in-berlin/ (bis Anfang Juni 2022)
 #: source_id: viz2021:13.450705,52.480066,28.04.2022,09:00 (hier: bis 4.7.2022) (mittlerweile bis 30.9.2022)
-#: source_id: viz2021:13.45071,52.48007,28.04.2022,09:00 (zusätzlicher Eintrag)
+#: source_id: viz2021:13.45071,52.48007,28.04.2022,09:00 (zusätzlicher Eintrag) (entfernt)
 #: by: https://nitter.net/VIZ_Berlin/status/1519602332090179585#m (hier: bis Anfang Juni 2022)
 #: by: https://nitter.net/pic/media%2FFRWA3_cWYAAYbnf.jpg%3Fname%3Dorig (südlich der Kreuzung)
 #: last_checked: 2022-05-01
@@ -64,7 +64,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2022-06-18 vvv
+#: last_checked: 2022-07-06 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -2450,7 +2450,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
-#: last_checked: 2022-06-29
+#: last_checked: 2022-07-06
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746
@@ -3260,7 +3260,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20221231 vvv
-#: last_checked: 2022-04-18 vvv
+#: last_checked: 2022-07-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
@@ -3273,7 +3273,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked ^^^
 # REMOVED --- #: note: Anforderungsampel --- #: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen --- #: last_checked: 2021-04-04 ---	F::inwork 14239,6875
 #: note: Anforderungsampel
-#: last_checked: 2022-06-17 (mapillary)
+#: last_checked: 2022-07-06
 	F::inwork 14139,6786
 #: note: Anforderungsampel
 #: last_checked: 2022-06-17 (mapillary)
@@ -3284,12 +3284,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2022-06-17 (mapillary)
+#: last_checked: 2022-07-06
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
 	X::inwork 13265,6972
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: last_checked: 2022-04-08
+#: last_checked: 2022-07-06
 #: check_frequency: 90d
 	X::inwork 13627,7047
 # REMOVED --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103
@@ -3508,7 +3508,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2022-06-08
+#: last_checked: 2022-07-06
 #: check_frequency: 90d
 	X::inwork 12185,7381
 # 

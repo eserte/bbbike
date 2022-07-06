@@ -28626,7 +28626,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
 #: osm_watch: way id="29547073" version="11"
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2022-06-06
+#: last_checked: 2022-07-06
 # REMOVED --- #: next_check: 2022-05-01
 	2::inwork 14980,8940 14947,8993 14855,9046 14705,9034
 EOF
@@ -34907,11 +34907,11 @@ EOF
        text  => 'Dieselstr. - westlicher Mergenthalerring: Durchfahrt kann möglicherweise durch Bauzäune versperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: note: Durchfahrt möglich, gesehen: 2022-03-23 mittags, 2022-05-04 mittags
+#: note: Durchfahrt möglich, gesehen: 2022-03-23 mittags, 2022-05-04 mittags, 2022-07-06 mittags
 #: XXX Bleibt es bei der möglichen Durchfahrt?
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2022-06-08
+#: last_checked: 2022-07-06
 	2 14249,8075 14239,8095 14247,8254 14229,8278
 EOF
      },
@@ -34986,7 +34986,7 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
-#: last_checked: 2022-06-24 vvv
+#: last_checked: 2022-07-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-08-01 vvv
 	q4::inwork; 15560,7400 15693,7512
@@ -35099,7 +35099,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G(falsch))
-#: last_checked: 2022-06-06
+#: last_checked: 2022-07-06
 	q4::inwork; 15436,7031 15555,7133 15695,7254
 EOF
      },

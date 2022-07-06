@@ -4120,7 +4120,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
 #: osm_watch: way id="29547073" version="11"
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2022-06-06
+#: last_checked: 2022-07-06
 # REMOVED --- #: next_check: 2022-05-01
 	2::inwork 14980,8940 14947,8993 14855,9046 14705,9034
 ',
@@ -5835,11 +5835,11 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => undef
        },
        {
-         'data' => '#: note: Durchfahrt möglich, gesehen: 2022-03-23 mittags, 2022-05-04 mittags
+         'data' => '#: note: Durchfahrt möglich, gesehen: 2022-03-23 mittags, 2022-05-04 mittags, 2022-07-06 mittags
 #: XXX Bleibt es bei der möglichen Durchfahrt?
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2022-06-08
+#: last_checked: 2022-07-06
 	2 14249,8075 14239,8095 14247,8254 14229,8278
 ',
          'from' => undef,
@@ -5872,7 +5872,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
-#: last_checked: 2022-06-24 vvv
+#: last_checked: 2022-07-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-08-01 vvv
 	q4::inwork; 15560,7400 15693,7512
@@ -5922,21 +5922,11 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        undef,
        undef,
-       {
-         'data' => '#: confirmed_by: srt (am 2022-05-03 gesehen)
-	q4::temp::play 14946,11697 14986,11760
-',
-         'from' => 1651442400,
-         'id' => 3543,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
-         'text' => 'Jessnerstr.: zwischen Travestr. und Oderstr. dienstags zwischen 15 und 19 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 03.05. bis 06.07.',
-         'type' => 'handicap',
-         'until' => 1657123200
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G(falsch))
-#: last_checked: 2022-06-06
+#: last_checked: 2022-07-06
 	q4::inwork; 15436,7031 15555,7133 15695,7254
 ',
          'from' => undef,
