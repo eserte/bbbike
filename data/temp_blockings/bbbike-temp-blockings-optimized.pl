@@ -4518,7 +4518,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-06-18
+#: last_checked: 2022-07-07
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4570,7 +4570,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-07-03 vvv
+#: last_checked: 2022-07-07 vvv
 #: check_frequency: 3d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -5222,9 +5222,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1629669600,
          'id' => 3435,
          'source_id' => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
-         'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 08.07.2022 17:00 ',
+         'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 15.07.2022 17:00 ',
          'type' => 'handicap',
-         'until' => 1657292400
+         'until' => 1657897200
        },
        undef,
        undef,
@@ -6184,6 +6184,16 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Ludwigsluster Str.: Bauarbeiten zwischen Gadebuscher Str. und Lion-Feuchtwanger-Str., Fahrbahn ist gesperrt, vom 04.07.2022 bis zum 08.07.2022 ',
          'type' => 'handicap',
          'until' => 1657317600
+       },
+       {
+         'data' => '	q4::inwork 17959,15084 17902,15039
+',
+         'from' => 1656993600,
+         'id' => 3581,
+         'source_id' => 'viz2021:13.515318,52.539821,06.07.2022,06:00',
+         'text' => 'Plauener Stra.: Bauarbeiten in Höhe Treffurter Str., Sperrung der Fahrbahn, vom 06.07.2022 06:00 bis 29.07.2022 17:00 ',
+         'type' => 'handicap',
+         'until' => 1659106800
        }
      
 );
