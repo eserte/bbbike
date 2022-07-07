@@ -93,26 +93,26 @@ jobs:
     strategy:
       matrix:
         include:
-          - dist:                       debian
-            distver:                    jessie
-            bbbike_test_skip_mapserver: 0
-            use_bbbike_ppa:             0
-          - dist:                       debian
-            distver:                    stretch
-            bbbike_test_skip_mapserver: 0
-            use_bbbike_ppa:             0
-          - dist:                       debian
-            distver:                    buster
-            bbbike_test_skip_mapserver: 0
-            use_bbbike_ppa:             0
-          - dist:                       debian
-            distver:                    bullseye
-            bbbike_test_skip_mapserver: 0
-            use_bbbike_ppa:             0
-          - dist:                       ubuntu
-            distver:                    trusty
-            bbbike_test_skip_mapserver: 0
-            use_bbbike_ppa:             0
+#          - dist:                       debian
+#            distver:                    jessie
+#            bbbike_test_skip_mapserver: 0
+#            use_bbbike_ppa:             0
+#          - dist:                       debian
+#            distver:                    stretch
+#            bbbike_test_skip_mapserver: 0
+#            use_bbbike_ppa:             0
+#          - dist:                       debian
+#            distver:                    buster
+#            bbbike_test_skip_mapserver: 0
+#            use_bbbike_ppa:             0
+#          - dist:                       debian
+#            distver:                    bullseye
+#            bbbike_test_skip_mapserver: 0
+#            use_bbbike_ppa:             0
+#          - dist:                       ubuntu
+#            distver:                    trusty
+#            bbbike_test_skip_mapserver: 0
+#            use_bbbike_ppa:             0
           - dist:                       ubuntu
             distver:                    jammy
             bbbike_test_skip_mapserver: 0
