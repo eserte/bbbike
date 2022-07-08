@@ -16340,7 +16340,7 @@ EOF
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-06-17
+#: last_checked: 2022-07-08
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -28223,7 +28223,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-06-30
+#: last_checked: 2022-07-08
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29565,9 +29565,9 @@ EOF
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022
-#: also_indoor: traffic (ex-H,B,G)
+#: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2022-05-14
+#: last_checked: 2022-07-08
 #: check_frequency: 45d
 #: next_check: 2022-11-30
 	q3::inwork  8986,16092 9178,16317
@@ -31188,7 +31188,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-07-07 vvv
+#: last_checked: 2022-07-08 vvv
 #: check_frequency: 3d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33146,8 +33146,8 @@ EOF
 EOF
      },
      { from  => 1625349600, # 2021-07-04 00:00
-       until => $isodate2epoch->("2022-07-08 17:00:00"), # 1659304799, # 2022-07-31 23:59
-       text  => 'Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage, Fahrbahn gesperrt, voraussichtlich bis 8. Juli 2022',
+       until => $isodate2epoch->("2022-08-19 17:00:00"), # 1659304799, # 2022-07-31 23:59
+       text  => 'Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage, Fahrbahn gesperrt, voraussichtlich bis 19. August 2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1095642.php',
        data  => <<EOF,
@@ -33155,8 +33155,8 @@ EOF
 #: by: https://abendblatt-berlin.de/2021/06/23/mit-den-ferien-kommen-die-baustellen/
 #: also_indoor: traffic (G,B)
 #: source_id: viz2021:13.569262,52.411283,12.07.2021,09:00 (hier: bis 31.1.2022) (inaktiv)
-#: source_id: viz2021:13.56928,52.411326,13.06.2022,07:00 (bis 8.7.2022)
-#: next_check: 2022-07-08
+#: source_id: viz2021:13.56928,52.411326,13.06.2022,07:00 (bis 8.7.2022) (bis 19.8.2022)
+#: next_check: 2022-08-19
 	q4::inwork 21858,811 21902,877
 # REMOVED ---	q4::inwork; 21902,877 21977,988 22034,1006 22092,999
 EOF
@@ -34192,15 +34192,16 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'S-Bhf. Schichauweg: Unterführung an der Nordseite möglicherweise wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'S-Bhf. Schichauweg: Unterführung an der Nordseite wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: S-SCHICHAUWEG-2021
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
+#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="13"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2022-03-07
+#: last_checked: 2022-04-26 (baustellen-doku)
 #: check_frequency: 180d
 	2::inwork 9699,-600 9562,-619
 EOF
@@ -34440,12 +34441,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Einsteinpark: Bauarbeiten, alle Wege sind gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Einsteinpark: Bauarbeiten, Wege sind gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: EINSTEINPARK-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-06-14
+#: last_checked: 2022-07-08
 #: check_frequency: 30d
 #: next_check: 2022-07-24
 	2::inwork 13204,15062 13207,14998 13163,14924
@@ -35571,6 +35572,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
        data  => <<EOF,
 #: also_indoor: traffic (none)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
 #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
 #: next_check: 2022-07-04 vvv
 	q4::inwork 13914,17016 13996,16959 14107,16889
@@ -35589,10 +35591,10 @@ EOF
 EOF
      },
      { from  => 1656993600, # 2022-07-05 06:00
-       until => 1659106800, # 2022-07-29 17:00
+       until => 1657308352, # 1659106800, # 2022-07-29 17:00
        text  => 'Plauener Stra.: Bauarbeiten in Höhe Treffurter Str., Sperrung der Fahrbahn, vom 06.07.2022 06:00 bis 29.07.2022 17:00 ',
        type  => 'handicap',
-       source_id => 'viz2021:13.515318,52.539821,06.07.2022,06:00',
+       source_id => 'viz2021:13.515318,52.539821,06.07.2022,06:00', # am 8.7.2022 bereits wieder inaktiv
        data  => <<EOF,
 	q4::inwork 17959,15084 17902,15039
 EOF

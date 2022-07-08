@@ -3436,7 +3436,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://images.competitionline.com/image/f/9/5/a/b/e/1/b/f95abe1bc3b10ee4f2778b024afc5734_1.jpg?auto=format,compress&fm=jpg&ixlib=imgixjs-3.4.1&w=4742
 #: by: https://www.gm013.la/work/fmp
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2022-06-30
+#: last_checked: 2022-07-08
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
@@ -3471,7 +3471,9 @@ Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5
 # 
 #: next_check_id: SCHOENERGARTEN-2022
 #: XXX Bleibt das so? Am westlichen Ende ist ein Zaun mit Tor, am südlichen Ende ein (ab?)geschlossenes Tor
-#: osm_watch: way id="478067706" version="6"
+# REMOVED --- #: osm_watch: way id="478067706" version="7"
+#: osm_watch: way id="1076760014" version="1"
+#: osm_watch: node id="9873753962" version="1"
 #: last_checked: 2022-07-02
 #: check_frequency: 90d
 Schönegarten: an beiden Enden gesperrt	2 7416,10492 7432,10546 7330,10590
@@ -3736,11 +3738,12 @@ Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 188
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1194420.php (Wiedereröffnung eines Spielplatzes)
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2206/nachricht7294.html (Richtfest)
 #: XXX vermutlich dauerhaft, die Fahrbahn ist schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben
-#: osm_watch: way id="860287005" version="4"
+#: XXX laut osm ist die Schule 2023-02 fertig
+#: osm_watch: way id="860287005" version="5"
 #: also_indoor: traffic (G)
 #: last_checked: 2022-06-30
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2022-07-01
+#: next_check: 2023-02-28
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
 # 
 # REMOVED --- #: next_check_id: BEBAUUNGSPLAN-XVI-81 --- #: XXX Wie wird die Qualität der Straße sein?--- #: osm_watch: way id="567597390" version="5" --- #: last_checked: 2021-05-09 --- #: check_frequency: 120d --- Abendseglersteig: noch in Bau	2::inwork 33167,2940 33139,2835 33267,2810 33383,2792
@@ -3796,6 +3799,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: by: https://www.berliner-woche.de/moabit/c-bauen/hamburger-investor-baut-bueroturm-in-der-europacity_a247135 (Hochhaus wird im zweiten Halbjahr 2021 fertiggestellt)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_19_1681_1744_online.pdf (Straßenlandwidmung)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php (Bauarbeiten bis Ende 2022)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_27_1633_1692_online.pdf (Straßenlandwidmung)
 #: XXX überwiegend noch unbefestigt, im weiteren Verlauf recht eng, noch keine Verbindung zum unfertigen Uferweg, Treppe zum Golda-Meir-Steg kann benutzt werden, wenn die Bauzäune weggeschoben sind
 #: osm_watch: way id="642581102" version="4"
 #: last_checked: 2022-06-30
@@ -3876,7 +3880,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="3"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="882672445" version="2"
-#: last_checked: 2022-06-17
+#: last_checked: 2022-07-07 (webcam)
 #: check_frequency: 60d
 #: next_check: 2022-11-30
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
@@ -4539,7 +4543,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Eröffnung am 17.12.2020)
 #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Eröffnung wird verschoben)
 #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauzäune werden im Dezember 2020 teilweise abgebaut)
-#: last_checked: 2022-07-03 (daf)
+#: last_checked: 2022-07-08
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384

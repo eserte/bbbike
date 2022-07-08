@@ -223,7 +223,7 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linke
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2022-04-09
+#: last_checked: 2022-07-08
 #: check_frequency: 90d
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 # 
@@ -231,7 +231,7 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 # REMOVED --- #: next_check_id: KARLSHORSTER-2021 --- #: note: provisorische Ampel --- #: last_checked: 2022-06-07 --- #: next_check: 2022-06-20 --- #: valid: 20210302-20220620 ---	X::inwork 14805,10518
 # 
 #: next_check_id: BUCKOWERCHAUSSEE-2022
-#: last_checked: 2022-03-07 vvv
+#: last_checked: 2022-04-26 (baustellen-doku) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2025-01-04 vvv
 #: valid: -20250104 vvv
@@ -3109,7 +3109,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog Anforderungsampel
 #: osm_watch: node id="5931765487" version="5"
 #: osm_watch: node id="5931765488" version="5"
-#: last_checked: 2022-07-03 (daf)
+#: last_checked: 2022-07-08
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 

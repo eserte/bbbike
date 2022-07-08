@@ -2220,6 +2220,14 @@ Mittelstr.	1 15647,14693 15539,14493
 (Weydemeyerstr.): Absperrung	2 11925,12807 11971,12785
 Roedernstr.	1 18019,7071 18010,7133
 Bellermannstr.: Poller	2 9248,16248 9259,16236
+Klever Str. -> Eulerstr.: Diagonalsperre	3 9301,16439 9381,16372 9322,16317
+Eulerstr. -> Klever Str.: Diagonalsperre	3 9322,16317 9381,16372 9301,16439
+Klever Str.: Diagonalsperre	3 9301,16439 9381,16372 9475,16307
+Klever Str.: Diagonalsperre	3 9475,16307 9381,16372 9301,16439
+Eulerstr.: Diagonalsperre	3 9322,16317 9381,16372 9498,16480
+Eulerstr.: Diagonalsperre	3 9498,16480 9381,16372 9322,16317
+Klever Str. -> Eulerstr.: Diagonalsperre	3 9475,16307 9381,16372 9498,16480
+Eulerstr. -> Klever Str.: Diagonalsperre	3 9498,16480 9381,16372 9475,16307
 Manteuffelstr.	1 11829,10192 11949,10414
 Manteuffelstr.	1 11829,10192 11735,10022
 Mittelstreifen, Hochbahnviadukt	3nocross::ignrte 10982,16121 10975,16010 10969,15944

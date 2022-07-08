@@ -21,7 +21,7 @@
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2022-06-17 vvv
+#: last_checked: 2022-07-08 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -192,7 +192,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: by: https://berliner-abendblatt.de/2022/07/07/strassenbahn-bauarbeiten-einschraenkungen-ab-ende-juli/ (Gleisbauarbeiten im Anschluss? 11.7.2022-21.8.2022)
 #: also_indoor: traffic (B) vvv
 #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) (mittlerweile bis 14.6.2022) (bis 11.7.2022) vvv
-#: last_checked: 2022-06-30 vvv
+#: last_checked: 2022-07-08 vvv
 #: next_check: 2022-07-11 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Umwege, Bordsteine	q4::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
@@ -211,7 +211,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
 #: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2022-07-03 (daf)
+#: last_checked: 2022-07-08
 Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -312,7 +312,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: XXX Ende der Bauarbeiten? laut osm mittlerweile offen (war aber ein falscher StreetComplete-Edit und wurde wieder rückgängig gemacht)
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: osm_watch: way id="507023458" version="14"
+#: osm_watch: way id="507023458" version="15"
 #: also_indoor: traffic (H,B)
 #: last_checked: 2022-06-11
 #: check_frequency: 45d
@@ -330,6 +330,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_11_0657_0712_online.pdf (Teileinziehung)
 #: by: https://nitter.net/VIZ_Berlin/status/1514464715438653441
 #: by: https://nitter.net/pic/media%2FFQObyYMXIAAzaOI.jpg%3Fname%3Dorig
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_27_1633_1692_online.pdf (Teileinziehung)
 #: also_indoor: traffic (H,ex-G,B)
 #: osm_watch: way id="4597320" version="20"
 #: osm_watch: way id="43350531" version="12"

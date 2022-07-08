@@ -2207,7 +2207,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-06-17
+#: last_checked: 2022-07-08
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -4067,7 +4067,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-06-30
+#: last_checked: 2022-07-08
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4279,9 +4279,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022
-#: also_indoor: traffic (ex-H,B,G)
+#: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2022-05-14
+#: last_checked: 2022-07-08
 #: check_frequency: 45d
 #: next_check: 2022-11-30
 	q3::inwork  8986,16092 9178,16317
@@ -4570,7 +4570,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-07-07 vvv
+#: last_checked: 2022-07-08 vvv
 #: check_frequency: 3d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -5132,17 +5132,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://abendblatt-berlin.de/2021/06/23/mit-den-ferien-kommen-die-baustellen/
 #: also_indoor: traffic (G,B)
 #: source_id: viz2021:13.569262,52.411283,12.07.2021,09:00 (hier: bis 31.1.2022) (inaktiv)
-#: source_id: viz2021:13.56928,52.411326,13.06.2022,07:00 (bis 8.7.2022)
-#: next_check: 2022-07-08
+#: source_id: viz2021:13.56928,52.411326,13.06.2022,07:00 (bis 8.7.2022) (bis 19.8.2022)
+#: next_check: 2022-08-19
 	q4::inwork 21858,811 21902,877
 # REMOVED ---	q4::inwork; 21902,877 21977,988 22034,1006 22092,999
 ',
          'from' => 1625349600,
          'id' => 3394,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1095642.php',
-         'text' => 'Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage, Fahrbahn gesperrt, voraussichtlich bis 8. Juli 2022',
+         'text' => 'Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage, Fahrbahn gesperrt, voraussichtlich bis 19. August 2022',
          'type' => 'handicap',
-         'until' => 1657292400
+         'until' => 1660921200
        },
        undef,
        undef,
@@ -5407,15 +5407,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: S-SCHICHAUWEG-2021
 #: by: https://bauprojekte.deutschebahn.com/media/projects/7281/docs/HZ-dresdner-bahn-bauschwerpunkte-2021.pdf
 #: by: http://www.deutsches-architektur-forum.de/pics//backstein/daf/2021/11/dresdener_bahn19.jpg
+#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="13"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2022-03-07
+#: last_checked: 2022-04-26 (baustellen-doku)
 #: check_frequency: 180d
 	2::inwork 9699,-600 9562,-619
 ',
          'from' => undef,
          'id' => 3483,
-         'text' => 'S-Bhf. Schichauweg: Unterführung an der Nordseite möglicherweise wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'S-Bhf. Schichauweg: Unterführung an der Nordseite wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5513,14 +5514,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: EINSTEINPARK-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-06-14
+#: last_checked: 2022-07-08
 #: check_frequency: 30d
 #: next_check: 2022-07-24
 	2::inwork 13204,15062 13207,14998 13163,14924
 ',
          'from' => undef,
          'id' => 3498,
-         'text' => 'Einsteinpark: Bauarbeiten, alle Wege sind gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Einsteinpark: Bauarbeiten, Wege sind gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5977,19 +5978,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1706716800
        },
-       {
-         'data' => '#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern
-#: last_checked: 2022-06-22
-#: next_check: 2022-08-19
-	q4::temp::play 12822,10487 12897,10439
-',
-         'from' => 1652306400,
-         'id' => 3551,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
-         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 13.05. bis 08.07.',
-         'type' => 'handicap',
-         'until' => 1657297800
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (B)
 #: last_checked: 2022-05-15
@@ -6161,6 +6150,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: also_indoor: traffic (none)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
 #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
 #: next_check: 2022-07-04 vvv
 	q4::inwork 13914,17016 13996,16959 14107,16889
@@ -6184,16 +6174,6 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Ludwigsluster Str.: Bauarbeiten zwischen Gadebuscher Str. und Lion-Feuchtwanger-Str., Fahrbahn ist gesperrt, vom 04.07.2022 bis zum 08.07.2022 ',
          'type' => 'handicap',
          'until' => 1657317600
-       },
-       {
-         'data' => '	q4::inwork 17959,15084 17902,15039
-',
-         'from' => 1656993600,
-         'id' => 3581,
-         'source_id' => 'viz2021:13.515318,52.539821,06.07.2022,06:00',
-         'text' => 'Plauener Stra.: Bauarbeiten in Höhe Treffurter Str., Sperrung der Fahrbahn, vom 06.07.2022 06:00 bis 29.07.2022 17:00 ',
-         'type' => 'handicap',
-         'until' => 1659106800
        }
      
 );

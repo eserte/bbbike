@@ -562,7 +562,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
-#: osm_watch: way id="4606258" version="24"
+#: osm_watch: way id="4606258" version="25"
 #: osm_watch: way id="184077626" version="14"
 #: osm_watch: way id="49180827" version="18"
 #: last_checked: 2022-06-16 (mapillary)
@@ -1043,7 +1043,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-07-07
+#: last_checked: 2022-07-08
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -13892,7 +13892,7 @@ Kameruner Str.: Asphalt	Q0 6383,15972 6484,16085 6587,16199
 #: by: ^^^
 # 
 #: by: Paul (without @):
-#: confirmed_by: srt (nordöstliches Ende)
+#: confirmed_by: srt
 Eulerstr.: Asphalt	Q0 9248,16248 9322,16317 9381,16372 9498,16480
 # 
 #: by: jackie kaiser:
@@ -15457,6 +15457,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9000 (Rechtskontrolle)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9348 (Festsetzung des Bebauungsplans 11-57a)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/C26Zsml6vpCHB4ojEyEMwEQ5Ag0peMrpF0t8ObAL/UKOOuMkf/87-Anlagen/02/0532022-1B-Plan11-57aFestsetzung.pdf
+#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/wandlitzstrasse-bald-radstrasse_a351203
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
 #: last_checked: 2022-05-24
 #: check_frequency: 180d
@@ -31118,4 +31119,6 @@ Kreuzungsbereich betoniert	Q0- 22458,4134
 Kreuzungsbereich asphaltiert	Q0 24984,10204
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 25200,9939
 Kreuzungsbereich betoniert	Q0- 22855,3902
+#: XXX_prog: allerdings ist zur Eulerstr. hin ein paar Meter gepflastert
+Kreuzungsbereich asphaltiert	Q0 9498,16480
 #: ignore ^^^
