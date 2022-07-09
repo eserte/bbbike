@@ -49,19 +49,6 @@ Radwege um den Stechlinsee (zwischen Rheinsberg und Fürstenberg) herum
 E<quot>Ab ins GrüneE<quot>, der private Tourenführer rund um
 Fürstenwalde
 
-=item L<https://www.bikemap.net/>
-
-Radrouten in ganz Deutschland mit interaktiver Karte und
-GPS-Tracks
-
-=item L<https://www.gps-tour.info/de/index.html>
-
-Radrouten in Deutschland und Europa mit GPS-Tracks und Beschreibungen.
-
-=item L<https://www.fahrradreisen.de/radwege>
-
-Radrouten (E<quot>RadwegeE<quot>) in Europa
-
 =item L<http://radreise-wiki.de/Berlin-Brandenburg>
 
 radreise-wiki, unter anderem mit Beschreibungen zu regionalen und
@@ -80,6 +67,25 @@ Radrouten im Raum Potsdam
 =item L<https://www.mobil-potsdam.de/de/fahrrad/infos-zum-radverkehr/>
 
 Radfahren - Mobil in Potsdam
+
+=back
+
+=head3 Weltweit
+
+=over
+
+=item L<https://www.bikemap.net/>
+
+Radrouten in ganz Deutschland mit interaktiver Karte und
+GPS-Tracks
+
+=item L<https://www.gps-tour.info/de/index.html>
+
+Radrouten in Deutschland und Europa mit GPS-Tracks und Beschreibungen.
+
+=item L<https://www.fahrradreisen.de/radwege>
+
+Radrouten (E<quot>RadwegeE<quot>) in Europa
 
 =back
 
@@ -241,6 +247,10 @@ Berliner Adressverzeichnisse
 
 =over
 
+=item L<https://mc.bbbike.org>
+
+Map Compare - eine Sammlung von mehreren hundert Onlinekarten mit Vergleichsmöglichkeit
+
 =item L<https://fbinter.stadt-berlin.de/fb/index.jsp>
 
 Verschiedene thematische Berliner Karten
@@ -277,6 +287,10 @@ Perl-Module @ CPAN
 =item L<https://www.openstreetmap.org>
 
 OpenStreetMap
+
+=item L<https://extract.bbbike.org>
+
+Erzeugung von beliebigen Ausschnitten aus der OpenStreetMap-Datenbank in unterschiedlichen Geodatenformaten.
 
 =item L<http://download.geofabrik.de>
 
