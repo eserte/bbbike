@@ -30969,7 +30969,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-07-07
+#: last_checked: 2022-07-09
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31383,6 +31383,7 @@ EOF
        text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Rennbahnstr., Fahrbahn kann gesperrt sein',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: SCHOEN-2022
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
@@ -31390,8 +31391,9 @@ EOF
 #: also_indoor: traffic (H,B)
 #: XXX Stand 2021-07-31 und 2022-01-18: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden; März 2023: letzte Deckschicht ist drauf
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2022-06-10
-#: check_frequency: 30d
+#: last_checked: 2022-07-09
+#: check_frequency: 90d
+#: next_check: 2022-11-07
 	q3::inwork 14136,17170 13996,16959
 EOF
      },
@@ -35567,18 +35569,23 @@ EOF
      },
      { from  => 1656799200, # 2022-07-03 00:00
        until => 1667861999, # 2022-11-07 23:59
-       text  => 'Schönstr./Große Seestr.: Sperrung des Kreuzungsbereichs, vom 04. Juli 2022 bis voraussichtlich 07. November 2022',
+       text  => 'Schönstr./Große Seestr.: Sperrung des Kreuzungsbereichs, Ausweichen auf den Bürgersteig, Bordsteine, vom 04. Juli 2022 bis voraussichtlich 07. November 2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
        data  => <<EOF,
+#: next_check_id: SCHOEN-2022
 #: also_indoor: traffic (none)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
-#: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
-#: next_check: 2022-07-04 vvv
-	q4::inwork 13914,17016 13996,16959 14107,16889
+# REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
+#: last_checked: 2022-07-09 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2022-11-07 vvv
+	q3::inwork 13914,17016 13996,16959 14107,16889
 	q4::inwork 13996,16959 13974,16924
 #: next_check ^^^
-#: XXX ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# REMOVED --- #: XXX ^^^
 EOF
      },
      { from  => 1656799200, # 2022-07-03 00:00

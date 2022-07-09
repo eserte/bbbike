@@ -105,14 +105,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: next_check: 2024-06-01
 Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
-# REMOVED --- #: next_check_id: BERLINERALLEE-2021
-#: next_check_id: BERLINERALLEE-2022
-#: XXX evtl. bis zum Ende der jetzigen Bauphase, oder bis zum Ende der Gesamtbaumaßname?
-#: last_checked: 2022-06-10
-#: next_check: 2022-07-25
-#: valid: -20220725
-Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
-# 
+# REMOVED --- #: next_check_id: BERLINERALLEE-2021 --- #: next_check_id: BERLINERALLEE-2022 --- #: XXX evtl. bis zum Ende der jetzigen Bauphase, oder bis zum Ende der Gesamtbaumaßname? --- #: last_checked: 2022-06-10 --- #: next_check: 2022-07-25 --- #: valid: -20220725 --- Indira-Gandhi-Str./Bizetstr.	X::inwork 14552,16171
 # REMOVED --- #: next_check_id: GAERTNER-2021 --- #: last_checked: 2021-09-02 --- # REMOVED (nicht mehr) --- Grünberger Str.: Gegenverkehrsregelung	X::inwork 14272,11775 --- Grünberger Str.	F::inwork 14272,11775
 # REMOVED --- #: XXX Hauffstraße (Rummelsburg) in beiden Richtungen zwischen Wiesenweg und Schreiberhauer Straße: Arbeiten an Gasleitung, für beide Richtungen nur ein gemeinsamer Fahrstreifen abwechselnd frei, eine Baustellenampel regelt den Verkehr, vom 06.07.2021 08:00 bis 23.07.2021 17:00 --- #: note: Ampeln in der Hauffstr. sowie in der Schulze-Boysen-Str. an der Buchberger Str.; außerdem ist die Anbindung Pfarrstr. offiziell gesperrt --- #: source_id: viz2021:13.478302,52.506695,06.07.2021,08:00 (mittlerweile bis 3.9.2021) vvv --- #: last_checked: 2021-08-09 vvv --- #: valid: -20210903 vvv --- Hauffstr.: Gegenverkehrsregelung	X::inwork 15458,11306 --- Schulze-Boysen-Str.: Gegenverkehrsregelung	X::inwork 15477,11338 --- #: valid ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # 
@@ -2985,7 +2978,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog gilt auch für das Linksabbiegen in die Wadzeckstr.
 #: note: Anforderungsampel
 	F 11070,13357
-#: note: Anforderungsampel
+#: note: Anforderungsampel, auf der Mittelinsel "gegenläufig" geschaltet
 	F 13560,15318
 	X 9544,17629
 	F 6347,17381

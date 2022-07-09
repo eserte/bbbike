@@ -531,7 +531,9 @@ Torfstr.: Kopfsteinpflaster, aber Asphaltstreifen für Radfahrer	Q0; 6652,15073 6
 Torfstr.: Kopfsteinpflaster	Q2 6652,15073 6739,14969 6837,14848 6849,14831
 # REMOVED (scheint mittlerweile asphaltiert zu sein) --- Ostpreußendamm.: gutes Kopfsteinpflaster	Q1 3450,543 3497,583 3579,627 3596,655 3626,699 3647,739 3808,1016 3870,1125 3895,1219
 Alexandrinenstr.: Kopfsteinpflaster	Q2 10683,11175 10674,11170 10593,11120
-Bellermannstr.: Kopfsteinpflaster	Q2 9156,16339 9178,16317 9248,16248 9259,16236
+Bellermannstr.: Kopfsteinpflaster	Q2 9156,16339 9178,16317 9248,16248
+Bellermannstr.: Kopfsteinpflaster	Q2; 9248,16248 9259,16236
+Bellermannstr.: Kopfsteinpflaster auf der Fahrbahn, Radwege Verbundsteinpflaster	Q1; 9259,16236 9248,16248
 Bellermannstr.: Kopfsteinpflaster auf der Fahrbahn, Radwege Verbundsteinpflaster	Q1 9259,16236 9307,16190 9405,16081
 Swinemünder Str.: Kopfsteinpflaster	Q2 10085,14863 10116,14799
 Swinemünder Str.: Asphalt	Q0 10116,14799 10155,14719
@@ -870,8 +872,8 @@ Berliner Allee: Asphalt	Q0 14832,17867 14782,17743 14766,17702
 Berliner Allee: Asphalt	Q0 14766,17702 14754,17673
 #: corrected_by: mapillary (Kopfsteinpflaster -> ..., neu gemacht)
 #: confirmed_by: srt
-Berliner Allee: Asphalt	Q0 14754,17673 14731,17611 14673,17454
-Berliner Allee: Asphalt	Q0 14673,17454 14584,17224 14552,17137 14533,17084 14535,17003 14558,16907
+Berliner Allee: Asphalt	Q0 14754,17673 14731,17611 14668,17463
+Berliner Allee: Asphalt	Q0 14668,17463 14584,17224 14552,17137 14533,17084 14535,17003 14558,16907
 Lessingstr.: Asphalt	Q0 10735,137 10613,108
 Lessingstr.: Asphalt mit Schäden	Q1 10613,108 10512,83 10425,67 10300,42
 Lessingstr.: schlechtes Kopfsteinpflaster	Q3+ 10300,42 10156,13 10066,-3 9966,-22 9861,-44 9812,-41
@@ -1043,7 +1045,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-07-08
+#: last_checked: 2022-07-09
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -4029,6 +4031,7 @@ Weidenweg: asphaltiert	Q0 13767,12626 13786,12636
 Weidenweg: Radweg asphaltiert, Fahrbahn gepflastert	Q0; 13786,12636 13828,12658
 Weidenweg: asphaltiert	Q0; 13828,12658 13786,12636
 Weidenweg: Kopfsteinpflaster	Q2; 13828,12658 13863,12677
+#: note: Parkstreifen gepflastert; hier ist eigentlich auch eine Radspur aufgemalt, die aber üblicherweise zugeparkt ist
 Weidenweg: asphaltiert	Q0; 13863,12677 13828,12658
 Weidenweg: Asphalt	Q0 13863,12677 13911,12692 14058,12709
 Roedeliusplatz: Kopfsteinpflaster	Q2 16158,12191 16248,12177
@@ -10809,7 +10812,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern?
-#: last_checked: 2022-06-30
+#: last_checked: 2022-07-09
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
@@ -13344,7 +13347,7 @@ Schauensteiner Weg: mäßiges Verbundsteinpflaster	Q1- -9217,4645 -9088,4564
 Schauensteiner Weg: Asphalt	Q0- -9088,4564 -9066,4549 -9027,4521 -8986,4489
 Arkonastr.: schlechtes Kopfsteinpflaster	Q3 11023,17878 11049,17752 11057,17690
 #: confirmed_by: srt
-Gehringstr.: guter Asphalt	Q0 14900,17423 14673,17454 14434,17500 14168,17522 14044,17519
+Gehringstr.: guter Asphalt	Q0 14900,17423 14668,17463 14434,17500 14168,17522 14044,17519
 #: corrected_by: srt ("gut" gestrichen)
 Bergener Str.: Kopfsteinpflaster	Q2 10370,16516 10382,16661
 #: corrected_by: srt (guter Beton -> ...)
@@ -19825,7 +19828,7 @@ Walter-Linse-Str.: schlechtes Kopfsteinpflaster	Q3 3872,3137 4102,3301
 Spinolastr.: guter Asphalt	Q0 14721,22821 14730,22871 14795,22964
 Spinolastr.: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 14795,22964 14885,23089 15021,23280 15099,23386
 #: confirmed_by: srt
-An der Industriebahn: Asphalt	Q0 14153,17670 14168,17522 14170,17249 14174,17226
+An der Industriebahn: Asphalt	Q0 14153,17670 14168,17522 14166,17241 14174,17226
 #: by: ^^^
 # 
 #: by: Heidemarie Meißner-Schlicht:
@@ -30815,6 +30818,8 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 3228,3455
 Kreuzungsbereich asphaltiert	Q0 8412,14923
 Einmündungsbereich asphaltiert	Q0 7113,17365
 Einmündungsbereich mit Kopfsteinpflaster	Q2 9248,16248
+#: note: gilt nicht für den Radweg in Richtung Nordwesten
+Einmündungsbereich mit Kopfsteinpflaster	Q2 9259,16236
 Einmündungsbereich asphaltiert	Q0 9322,16317
 Kreuzungsbereich asphaltiert	Q0 9381,16372
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 11440,16622

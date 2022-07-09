@@ -284,12 +284,12 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-07-06
+#: last_checked: 2022-07-09
 #: check_frequency: 14d
 #: next_check: 2022-07-17
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 13596,10722 13678,10685 13779,10642 13919,10583
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-07-06
+#: last_checked: 2022-07-09
 #: check_frequency: 90d
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489
 provisorische Radspur	RW4; 13919,10583 13986,10549 14103,10489
@@ -765,7 +765,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-07-07
+#: last_checked: 2022-07-09
 	RW2; 14926,12129 14994,12121 15117,12106 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
@@ -2509,13 +2509,13 @@ Grünmarkierung	RW4; 14355,12752 14325,12648 14319,12629 14297,12553 14266,12446 
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14836,12826 14830,12932 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2022-07-08
+#: last_checked: 2022-07-09
 #: check_frequency: 60d
 	RW0; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt; mittlerweile wird der Radweg neu erstellt, vermutlich dann ohne Wurzelhebungen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2022-07-08
+#: last_checked: 2022-07-09
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -2698,7 +2698,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="7"
 #: osm_watch: way id="420112509" version="7"
 #: osm_watch: way id="966685279" version="1"
-#: last_checked: 2022-07-08 vvv
+#: last_checked: 2022-07-09 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2023-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -2862,7 +2862,8 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 5628,17631 5382,17419
 Radweg nur aufgemalt	RW1; 6878,17315 6987,17321
 	RW1; 6987,17321 6878,17315
 Radweg nur aufgemalt	RW1; 7602,17399 7381,17317 7292,17316 7282,17318 7104,17326 7031,17323 6998,17322 6987,17321
-	RW1;RW1 9405,16081 9307,16190 9259,16236
+	RW1; 9405,16081 9307,16190 9259,16236 9248,16248
+	RW1; 9259,16236 9307,16190 9405,16081
 Radweg größtenteils nur aufgemalt	RW1;RW1 9732,15581 9646,15737 9623,15777 9494,15998
 	RW2;RW2 9494,15998 9459,16029 9446,16060
 	RW2; 15166,8489 15303,8343 15357,8286 15557,8077
@@ -4770,12 +4771,12 @@ Verbundsteinpflaster	RW1; 17829,15015 17789,15098
 neu asphaltiert, etwas breiter	RW1; 17789,15098 17774,15129 17706,15269 17626,15433 17569,15561 17532,15645 17488,15766
 neu asphaltiert, etwas breiter	RW1; 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17774,15129
 Verbundsteinpflaster	RW1; 17774,15129 17789,15098 17829,15015 17886,14899
-	RW1; 14584,17224 14673,17454
+	RW1; 14584,17224 14668,17463
 #: by: mapillary
-	RW4;RW4 14673,17454 14731,17611
+	RW4;RW4 14668,17463 14731,17611
 #: by: mapillary
 	RW4;RW4 14782,17743 14832,17867
-In der Mitte ist der Radweg für ca. 50 Meter unterbrochen	RW1; 14673,17454 14584,17224
+In der Mitte ist der Radweg für ca. 50 Meter unterbrochen	RW1; 14668,17463 14584,17224
 	RW6;RW6 6719,14047 6677,14219 6656,14311
 	RW1;RW1 88,5136 144,5102
 	RW1;RW 144,5102 197,5036 294,4916

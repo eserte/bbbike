@@ -343,7 +343,9 @@ Torfstr.: Kopfsteinpflaster	Q2; 6626,15104 6652,15073
 Torfstr.: Kopfsteinpflaster, aber Asphaltstreifen für Radfahrer	Q0; 6652,15073 6626,15104
 Torfstr.: Kopfsteinpflaster	Q2 6652,15073 6739,14969 6837,14848 6849,14831
 Alexandrinenstr.: Kopfsteinpflaster	Q2 10683,11175 10674,11170 10593,11120
-Bellermannstr.: Kopfsteinpflaster	Q2 9156,16339 9178,16317 9248,16248 9259,16236
+Bellermannstr.: Kopfsteinpflaster	Q2 9156,16339 9178,16317 9248,16248
+Bellermannstr.: Kopfsteinpflaster	Q2; 9248,16248 9259,16236
+Bellermannstr.: Kopfsteinpflaster auf der Fahrbahn, Radwege Verbundsteinpflaster	Q1; 9259,16236 9248,16248
 Bellermannstr.: Kopfsteinpflaster auf der Fahrbahn, Radwege Verbundsteinpflaster	Q1 9259,16236 9307,16190 9405,16081
 Swinemünder Str.: Kopfsteinpflaster	Q2 10085,14863 10116,14799
 Swinemünder Str.: Asphalt	Q0 10116,14799 10155,14719
@@ -584,8 +586,8 @@ Kirchhofstr.: Kopfsteinpflaster	Q2 13003,7316 13001,7296
 Kirchhofstr.: Asphalt	Q0 13001,7296 12909,7181 12872,7134 12843,7093
 Berliner Allee: Asphalt	Q0 14832,17867 14782,17743 14766,17702
 Berliner Allee: Asphalt	Q0 14766,17702 14754,17673
-Berliner Allee: Asphalt	Q0 14754,17673 14731,17611 14673,17454
-Berliner Allee: Asphalt	Q0 14673,17454 14584,17224 14552,17137 14533,17084 14535,17003 14558,16907
+Berliner Allee: Asphalt	Q0 14754,17673 14731,17611 14668,17463
+Berliner Allee: Asphalt	Q0 14668,17463 14584,17224 14552,17137 14533,17084 14535,17003 14558,16907
 Lessingstr.: Asphalt	Q0 10735,137 10613,108
 Lessingstr.: Asphalt mit Schäden	Q1 10613,108 10512,83 10425,67 10300,42
 Lessingstr.: schlechtes Kopfsteinpflaster	Q3 10300,42 10156,13 10066,-3 9966,-22 9861,-44 9812,-41
@@ -11329,7 +11331,7 @@ Schauensteiner Weg: unbefestigte Straße, teilweise mit Betonplatten	Q2 -9294,468
 Schauensteiner Weg: mäßiges Verbundsteinpflaster	Q1 -9217,4645 -9088,4564
 Schauensteiner Weg: Asphalt	Q0 -9088,4564 -9066,4549 -9027,4521 -8986,4489
 Arkonastr.: schlechtes Kopfsteinpflaster	Q3 11023,17878 11049,17752 11057,17690
-Gehringstr.: guter Asphalt	Q0 14900,17423 14673,17454 14434,17500 14168,17522 14044,17519
+Gehringstr.: guter Asphalt	Q0 14900,17423 14668,17463 14434,17500 14168,17522 14044,17519
 Bergener Str.: Kopfsteinpflaster	Q2 10370,16516 10382,16661
 Lacknerstr.: Asphalt	Q0 6313,4332 6416,4452
 Pankstr. (Französisch Buchholz): Asphalt	Q0 12609,20935 12519,20870 12434,20809
@@ -13693,7 +13695,7 @@ Sodtkestr.: mäßiges Kopfsteinpflaster	Q2 12298,15658 12382,15802 12423,15875
 Walter-Linse-Str.: schlechtes Kopfsteinpflaster	Q3 3872,3137 4102,3301
 Spinolastr.: guter Asphalt	Q0 14721,22821 14730,22871 14795,22964
 Spinolastr.: schlechtes Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q3 14795,22964 14885,23089 15021,23280 15099,23386
-An der Industriebahn: Asphalt	Q0 14153,17670 14168,17522 14170,17249 14174,17226
+An der Industriebahn: Asphalt	Q0 14153,17670 14168,17522 14166,17241 14174,17226
 Tizianstr.: mäßiger Asphalt	Q1 26444,13031 26605,13217 26792,13441
 Glauberstr.: welliges Kleinsteinpflaster	Q2 5556,984 5455,1150 5421,1205 5411,1259
 Kalkseestr.: Kopfsteinpflaster	Q2 26500,4936 26496,5047 26492,5099 26488,5292
