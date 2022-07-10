@@ -4454,9 +4454,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="194962398" version="14"
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
+#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2022-06-27 (mapillary)
-#: check_frequency: 14d
+#: check_frequency: 21d
+#: next_check_id: 2022-08-31
 	q4::inwork; 11329,12497 11209,12430
 ',
          'from' => undef,
@@ -4570,7 +4572,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-07-08 vvv
+#: last_checked: 2022-07-10 vvv
 #: check_frequency: 3d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -5566,25 +5568,32 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum für die Gesamtbaumaßnahme mehr) vvv
+         'data' => '#: XXX laut Schild der Wasserbetriebe bis Dezember 2022
+#: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum für die Gesamtbaumaßnahme mehr) vvv
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
-#: last_checked: 2022-02-05 vvv
+#: last_checked: 2022-07-10 vvv
 #: check_frequency: 150d vvv
-	q2::inwork 3011,3303 2781,3122 2698,3068 2655,3025 2632,2969 2625,2850
-# REMOVED (hier vermutlich nicht mehr, by mapillary) --- #: note: Länge der Sperrung nur 30m ---	q3::inwork 3507,3654 3375,3559
-	q4::inwork 2655,3025 2594,3009
-	q4::inwork 2632,2969 2594,3009
-#: XXX werden die Bauarbeiten hier noch verlängert? vvv
-#: note: bei rbb bis 31.10.2022
 #: next_check: 2022-08-31 vvv
-Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3059,3339 3184,3427 3228,3455
-Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3185,3476 3184,3427 3174,3052
-#: next_check ^^^
-#: XXX ^^^
+	q3::inwork 3011,3303 2778,3132
+# REMOVED (hier nicht mehr) ---	q2::inwork 2778,3132 2698,3068 2655,3025 2632,2969 2625,2850
+# REMOVED (hier vermutlich nicht mehr, by mapillary) --- #: note: Länge der Sperrung nur 30m ---	q3::inwork 3507,3654 3375,3559
+# REMOVED (hier nicht mehr) ---	q4::inwork 2655,3025 2594,3009
+# REMOVED (hier nicht mehr) ---	q4::inwork 2632,2969 2594,3009
 # REMOVED ---	q4::inwork; 3507,3654 3375,3559 3228,3455 3184,3427
+#: next_check ^^^
 #: check_frequency ^^^
+#: last_checked ^^^
+# 
+#: note: bei rbb bis 31.10.2022
+#: last_checked: 2022-07-10 vvv
+#: next_check: 2022-10-31 vvv
+Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3059,3339 3184,3427
+Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3184,3427 3228,3455
+Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3185,3476 3184,3427
+Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3184,3427 3174,3052
+#: next_check ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 # REMOVED --- #: XXX ^^^
@@ -5593,9 +5602,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1614492000,
          'id' => 3502,
          'source_id' => 'viz2021:13.287063,52.432721,01.03.2021,07:00',
-         'text' => 'Ringstr.: Bauarbeiten, kurze Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, vom 01.03.2021 07:00 bis 31.08.2022 17:00 ',
+         'text' => 'Ringstr.: Bauarbeiten, kurze Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, voraussichtlich bis Dezember 2022',
          'type' => 'handicap',
-         'until' => 1661922000
+         'until' => 1672466400
        },
        {
          'data' => '#: source_id: viz2021:13.445912,52.478966,13.06.2022,07:00 (zusätzliche Meldung zur Sonnenallee)
@@ -5749,17 +5758,16 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: note 3030340 3
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2022-06-23 (traffic, osm note)
-# REMOVED --- #: check_frequency: 30d
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2022-05-24
+#: last_checked: 2022-07-10
+#: check_frequency: 90d
+#: next_check: 2023-05-31
 	q3::inwork 5020,6434 5269,6305
 ',
          'from' => undef,
          'id' => 3520,
-         'text' => 'Markelstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Markelstr.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, möglicherweise bis Mai 2023',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1685548800
        },
        undef,
        undef,
@@ -5983,7 +5991,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: also_indoor: traffic (B)
-#: last_checked: 2022-05-15
+#: last_checked: 2022-07-10
 #: check_frequency: 90d
 #: next_check: 2022-08-31
 	q4::inwork 4512,5199 4477,5250 4430,5324
@@ -6010,14 +6018,16 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        undef,
        {
-         'data' => '#: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder offen?
+         'data' => '#: XXX Halteverbot gilt bis 2022-08-26
+#: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder offen?
 #: also_indoor: traffic (G(nördlicher?),B)
-#: last_checked: 2022-06-04
-	q4::inwork 6293,2583 6349,2510
+#: last_checked: 2022-07-10
+#: next_check: 2022-08-26
+	q4::inwork 6273,2609 6293,2583 6349,2510
 ',
          'from' => undef,
          'id' => 3557,
-         'text' => 'Seydlitzstr.: Bauarbeiten zwischen Frobenstr. und Havensteinstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Seydlitzstr.: Bauarbeiten zwischen Frobenstr. und Derfflingerstr., Fahrbahn gesperrt, möglicherweise bis Ende August 2022',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6171,6 +6181,19 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Schönstr./Große Seestr.: Sperrung des Kreuzungsbereichs, Ausweichen auf den Bürgersteig, Bordsteine, vom 04. Juli 2022 bis voraussichtlich 07. November 2022',
          'type' => 'handicap',
          'until' => 1667861999
+       },
+       undef,
+       {
+         'data' => '#: source_id: viz2021:13.515318,52.539821,11.07.2022,06:00 (neuer Versuch)
+#: note: laut rbb_verkehr sollen Radfahrer explizit absteigen und schieben
+	q4::inwork 17959,15084 17902,15039
+',
+         'from' => 1657425600,
+         'id' => 3581,
+         'source_id' => 'viz2021:13.515318,52.539821,06.07.2022,06:00',
+         'text' => 'Plauener Stra.: Bauarbeiten in Höhe Treffurter Str., Sperrung der Fahrbahn, vom 11.07.2022 06:00 bis 29.07.2022 17:00 ',
+         'type' => 'handicap',
+         'until' => 1659106800
        }
      
 );

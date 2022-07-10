@@ -1045,7 +1045,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-07-09
+#: last_checked: 2022-07-10
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -9271,7 +9271,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2022-07-03 vvv
+#: last_checked: 2022-07-10 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -10138,6 +10138,7 @@ Gäßnerweg: Asphalt	Q0- 8551,6552 8553,6665
 (Lankwitzer Str. - Am Bahndamm): Verbundsteinpflaster	Q1 8199,3338 8145,3380
 (Lankwitzer Str. - Am Bahndamm): Asphalt	Q0 8145,3380 8106,3410
 #: XXX Baumaßnahme GL6.22 (Realisierung nach 2011)
+#: osm_watch: way id="25514283" version="13"
 #: last_checked: 2021-09-12
 #: check_frequency: 300d
 Waltershauser Str.: Kleinsteinpflaster, teilweise Wurzelhebungen	Q2+ 6534,1702 6673,1748 6844,1813
@@ -12638,6 +12639,7 @@ Grüne Trift: Asphalt	Q0 23416,2808 23370,3024 23338,3173 23298,3295 23231,3480 2
 #: note: hier noch provisorisch
 (KGA Alt-Hellersdorf - Alt-Hellersdorf): unbefestigter Weg	Q2 23265,15054 23283,15061
 (Heidenauer Str. - Sebnitzer Str.): welliger Asphalt	Q1- 24277,14747 24317,14768 24404,14770 24443,14756
+Kärntener Str.: Asphalt	Q0 6608,8277 6621,8221 6636,8157 6657,8070 6711,7846
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13868,12 +13870,14 @@ Niederstr.: altes grobes Kopfsteinpflaster	Q3 7857,19693 7769,19736 7634,19793
 Denkstr.: Asphalt	Q0 6841,4667 7032,4635
 # 
 #: by: Martin Lambrecht vvv
-Peschkestr.: Asphalt	Q0 5424,6584 5533,6517
-Peschkestr.: Kopfsteinpflaster	Q2 5533,6517 5657,6451
+#: confirmed_by: srt
+Peschkestr.: Asphalt	Q0 5424,6584 5535,6521
+#: confirmed_by: srt
+Peschkestr.: Kopfsteinpflaster	Q2 5535,6521 5657,6451
 #: confirmed_by: srt
 Fregestr.: grob gepflastert	Q2 5622,6400 5657,6451
 #: confirmed_by: srt
-Fregestr.: asphaltiert	Q0 5657,6451 5777,6628 5896,6785
+Fregestr.: asphaltiert	Q0 5657,6451 5783,6635 5896,6785
 #: by ^^^
 # 
 #: by: Martin Weber vvv
@@ -14260,7 +14264,7 @@ Cheruskerstr.: Asphalt	Q0 7410,8593 7408,8648 7439,8716
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf (Asphaltierung geplant)
 #: XXX wann wird hier asphaltiert?
 #: osm_watch: way id="13863115" version="18"
-#: last_checked: 2022-07-02
+#: last_checked: 2022-07-10
 #: check_frequency: 180d
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
 #: by: ^^^
@@ -14732,7 +14736,7 @@ Togostr.: Asphalt	Q0 5531,16734 5315,16936
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)
 Kommandantenstr. (Lichterfelde): Asphalt	Q0 3019,2858 3023,2958 3026,3058 3030,3276 3011,3303
 Kommandantenstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3050,3333 3034,3359 3037,3513 3044,3680 3045,3718
-Geibelstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 2781,3122 2768,3176 2748,3393 2734,3563 2717,3600
+Geibelstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 2778,3132 2768,3176 2748,3393 2734,3563 2717,3600
 Friedrichstr. (Lichterfelde): Kopfsteinpflaster	Q2 3185,3476 3037,3513
 Friedrichstr. (Lichterfelde): glatter Asphalt	Q0 3037,3513 2890,3561
 Friedrichstr. (Lichterfelde): Verbundsteinpflaster	Q1 2890,3561 2717,3600
@@ -14755,7 +14759,9 @@ Baseler Str.: Asphalt	Q0 3151,2224 3161,2482 3163,2598 3171,2848
 #: note: an der Finckensteinallee einige Meter Asphalt
 Baseler Str.: mäßiges Kopfsteinpflaster	Q2 3171,2848 3174,3052 3184,3427
 #: confirmed_by: srt
-Baseler Str.: mäßiges Kopfsteinpflaster	Q2 3184,3427 3185,3476 3186,3515 3195,3783 3194,3817 3197,3934 3185,3958
+Baseler Str.: mäßiges Kopfsteinpflaster	Q2 3184,3427 3185,3476 3186,3515 3195,3783 3194,3817 3197,3934
+#: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 -> ...)
+Baseler Str.: Asphalt	Q0 3197,3934 3185,3958
 #: by: ^^^
 # 
 #: by: sandor
@@ -15728,7 +15734,7 @@ Kurfürstenstr. (Lankwitz): mäßiges Kopfsteinpflaster	Q2 6258,1697 6216,1809 6160
 #: corrected_by: srt (Asphalt -> Kopfsteinpflaster)
 Kurfürstenstr. (Lankwitz): mäßiges Kopfsteinpflaster	Q2 6160,1896 6134,1929 6097,1975
 #: confirmed_by: srt (wobei, einige Löcher gibt es hier, deshalb Q0-)
-Kurfürstenstr. (Lankwitz): Asphalt	Q0- 6097,1975 6021,2071 5934,2198 5889,2319 5789,2604
+Kurfürstenstr. (Lankwitz): Asphalt mit Oberflächenschäden	Q0- 6097,1975 6021,2071 5934,2198 5889,2319 5789,2604
 #: by: ^^^
 # 
 #: by: Axel Wappler:
@@ -16244,7 +16250,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="7"
-#: last_checked: 2022-02-27
+#: last_checked: 2022-07-10
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4645,6646 4682,6625 4845,6532 4875,6552
 #: confirmed_by: srt
@@ -16652,10 +16658,15 @@ Ahornallee: asphaltiert	Q0 24337,9835 24513,9796 24607,9775 24713,9715 24860,963
 Summter Str.: Beton	Q1 24973,8954 25112,9151 25285,9397 25432,9600 25543,9755 25614,9853 25700,9986
 #: by: ^^^
 # 
-#: by: Florian Schintke:
-#: confirmed_by: Marie-Jo D.:
-#: corrected_by: srt (Q2 -> Q2+)
-Holsteinische Str. (Steglitz): mäßiges Kopfsteinpflaster	Q2+ 5275,6096 5390,6299 5470,6423 5533,6517 5576,6581 5777,6628
+#: by: Florian Schintke: vvv
+#: confirmed_by: Marie-Jo D.: vvv
+#: corrected_by: srt (mäßiges Kopfsteinpflaster, Q2 -> ...) vvv
+Holsteinische Str. (Steglitz): etwas glatteres Kopfsteinpflaster	Q2+ 5275,6096 5390,6299 5470,6423 5535,6521 5558,6557
+Holsteinische Str. (Steglitz): Asphalt	Q0 5558,6557 5575,6585 5596,6590
+Holsteinische Str. (Steglitz): etwas glatteres Kopfsteinpflaster	Q2+ 5596,6590 5783,6635
+#: corrected_by ^^^
+#: confirmed_by ^^^
+#: by ^^^
 # 
 #: by: Wolfgang Thurner: vvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster Q3 -> mäßiges-schlechtes Kopfsteinpflaster Q2- -> ...; Wolfgang Thurner hat 18km/h eingetragen, und rein optisch sah es wie Q2 aus)
@@ -17396,7 +17407,7 @@ Klärwerkstr.: Asphalt	Q0 -1284,13340 -1258,13552
 #: confirmed_by: srt
 Gräfenberger Weg: schlechtes Kopfsteinpflaster	Q3- 2390,2954 2346,3077 2256,3172
 #: confirmed_by: srt (made it a Q2+)
-Ringstr.: Kopfsteinpflaster	Q2+ 2698,3068 2781,3122 3011,3303 3032,3319 3050,3333 3059,3339 3184,3427 3228,3455 3375,3559 3507,3654
+Ringstr.: Kopfsteinpflaster	Q2+ 2698,3068 2778,3132 3011,3303 3032,3319 3050,3333 3059,3339 3184,3427 3228,3455 3375,3559 3507,3654
 #: by: ^^^
 # 
 #: by: Steffi Liebig:
@@ -25699,6 +25710,7 @@ McNair-Promenade: Asphalt	Q0 1882,1376 1785,1338
 #: by: ^^^
 # 
 #: by: ulrike kahnt:
+#: confirmed_by: srt
 Steinäckerstr.: schlechtes Kopfsteinpflaster	Q3 2632,2969 3023,2958
 # 
 #: by: timo (...beyerlein):
@@ -29138,6 +29150,7 @@ Treuchtlinger Str.: Asphalt	Q0 5950,9537 5982,9394
 Penzberger Str.: Asphalt	Q0 6231,9461 6351,9464
 #: corrected_by: srt (Asphalt -> ...)
 Nordsternstr.: Kleinsteinpflaster	Q1- 6292,8899 6268,8884 6249,8846 6241,8798
+#: confirmed_by: srt
 Prinz-Georg-Str.: Kopfsteinpflaster	Q2 7012,8511 7104,8413
 #: confirmed_by: srt
 Bruchsaler Str. (Wilmersdorf): Kopfsteinpflaster	Q2 5573,8197 5520,8132 5522,8011
@@ -29668,15 +29681,15 @@ Johannastr.: sehr schlechtes Kopfsteinpflaster	Q3- -4921,13295 -4871,13178 -4838
 #: confirmed_by: srt
 Weddigenweg: schlechtes Kopfsteinpflaster	Q3 2698,3068 3026,3058
 #: corrected_by: srt (schlechtes -> mäßiges)
-Weddigenweg: mäßiges Kopfsteinpflaster	Q2 3026,3058 3174,3052
+Weddigenweg: mäßiges Kopfsteinpflaster	Q2+ 3026,3058 3174,3052
 #: corrected_by: srt (Kopfsteinpflaster -> Beton)
 Weddigenweg: Beton	Q0- 3174,3052 3318,3046
 #: confirmed_by: srt (and added Asphaltstreifen)
 Weddigenweg: schlechtes Kopfsteinpflaster, teilweise zugeparkte enge Asphaltstreifen	Q3 3318,3046 3462,3042
 #: confirmed_by: srt
 Weddigenweg: schlechtes Kopfsteinpflaster	Q3 3462,3042 3646,3034
-#: corrected_by: srt (schlechtes -> mäßiges)
-Weddigenweg: mäßiges Kopfsteinpflaster	Q2 3646,3034 3953,3022
+#: corrected_by: srt (schlechtes -> ...)
+Weddigenweg: glattes Kopfsteinpflaster	Q1- 3646,3034 3953,3022
 #: by: ^^^
 # 
 #: by: teizke [AM]
@@ -31126,4 +31139,14 @@ Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 25200,9939
 Kreuzungsbereich betoniert	Q0- 22855,3902
 #: XXX_prog: allerdings ist zur Eulerstr. hin ein paar Meter gepflastert
 Kreuzungsbereich asphaltiert	Q0 9498,16480
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 7389,8837
+Kreuzungsbereich asphaltiert	Q0 7086,8579
+Kreuzungsbereich asphaltiert	Q0 5959,6976
+Einmündungsbereich asphaltiert	Q0 6621,8221
+Einmündungsbereich asphaltiert	Q0 6636,8157
+Einmündungsbereich asphaltiert	Q0 5783,6635
+Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 5535,6521
+Einmündungsbereich mit Kopfsteinpflaster	Q2 3194,3817
+Einmündungsbereich asphaltiert	Q0 3023,2958
+Kreuzungsbereich asphaltiert	Q0 3026,3058
 #: ignore ^^^
