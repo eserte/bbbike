@@ -3169,6 +3169,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        {
          'data' => '#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html (2021)
 #: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html?date=20220613
+#: by: https://berliner-abendblatt.de/2022/07/11/tegeler-hafenfest-startet-am-donnerstag/
 # REMOVED (was) : tempex: 20160714-20160717
 	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
 ',
@@ -4520,7 +4521,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-07-09
+#: last_checked: 2022-07-11
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -6094,15 +6095,15 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: by: https://berliner-abendblatt.de/2022/06/01/arbeiten-an-der-fischerinsel-werden-fortgesetzt/ (Bauarbeiten bis Ende 2023)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/fischerinsel-park-wird-umgestaltet_a347705
-#: last_checked: 2022-06-17 (mapillary)
-#: check_frequency: 30d
+#: last_checked: 2022-07-11
+#: check_frequency: 60d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
 ',
          'from' => undef,
          'id' => 3568,
          'source_id' => 'https://berliner-abendblatt.de/2022/06/01/arbeiten-an-der-fischerinsel-werden-fortgesetzt/',
-         'text' => 'Fischerinsel: Wege können wegen Bauarbeiten gesperrt sein',
+         'text' => 'Fischerinsel: Wege können wegen Bauarbeiten gesperrt sein (Stand Mitte Juli 2022: keine Einschränkung beim Weg Richtung Inselbrücke)',
          'type' => 'gesperrt',
          'until' => 1704042000
        },
@@ -6184,7 +6185,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        undef,
        {
-         'data' => '#: source_id: viz2021:13.515318,52.539821,11.07.2022,06:00 (neuer Versuch)
+         'data' => '#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlhKb0R3S1hFQUl5Ti1fLmpwZw==
+#: source_id: viz2021:13.515318,52.539821,11.07.2022,06:00 (neuer Versuch)
 #: note: laut rbb_verkehr sollen Radfahrer explizit absteigen und schieben
 	q4::inwork 17959,15084 17902,15039
 ',
@@ -6194,6 +6196,16 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'text' => 'Plauener Stra.: Bauarbeiten in Höhe Treffurter Str., Sperrung der Fahrbahn, vom 11.07.2022 06:00 bis 29.07.2022 17:00 ',
          'type' => 'handicap',
          'until' => 1659106800
+       },
+       {
+         'data' => '	2::inwork 49875,51562 49211,51421
+',
+         'from' => 1658034000,
+         'id' => 3582,
+         'source_id' => 'LS/221-E/22/094',
+         'text' => 'Oderberg - Liepe: Bauarbeiten, Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, 18.07.2022 07:00 Uhr bis 02.09.2022 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1662127200
        }
      
 );
