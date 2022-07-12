@@ -13064,7 +13064,7 @@ EOF
        text  => 'L 030 Mittenwalde - Königs Wusterhausen zw. Schenkendorf und Königs Wusterhausen Straßenbauarbeiten Vollsperrung 22.10.2008-23.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 24843,-13725 24950,-13607 25098,-13447 25148,-13393 25203,-13334
+	2::inwork 24843,-13725 24907,-13654 24950,-13607 25098,-13447 25148,-13393 25203,-13334
 EOF
      },
      { from  => 1224367200, # 2008-10-19 00:00
@@ -21034,7 +21034,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/S-SG33-W/11/268',
        data  => <<EOF,
-	2::inwork 24843,-13725 24950,-13607 25098,-13447 25148,-13393
+	2::inwork 24843,-13725 24907,-13654 24950,-13607 25098,-13447 25148,-13393
 EOF
      },
      { from  => 1341730800, # 2012-07-08 09:00
@@ -28161,7 +28161,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,672773,672947#msg-672947
 #: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
 #: by: https://www.eichwalde.de/wp-content/uploads/2022/05/Boten_02_2022.pdf (bis Ende 2022 oder 2023)
-#: osm_watch: way id="36936021" version="6" brb
+#: osm_watch: way id="36936021" version="7" brb
 #: last_checked: 2022-03-12 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2022-12-31
@@ -34588,7 +34588,7 @@ EOF
 #: last_checked: 2022-06-11
 #: check_frequency: 60d
 #: next_check: 2024-02-12
-#: osm_watch: way id="4410535" version="21"
+#: osm_watch: way id="4410535" version="22"
 	2::inwork 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
 EOF
      },
@@ -34779,7 +34779,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: MASSMANN-2022
 #: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maßmannstr.
-#: osm_watch: note 3030340 3
+#: osm_watch: note 3030340 4
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-G,B)
 #: last_checked: 2022-07-10

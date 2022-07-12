@@ -452,7 +452,7 @@ Ackerstr.: Kopfsteinpflaster	Q2 9375,14419 9279,14495 9197,14562 9048,14681 8953
 Ackerstr.: Kopfsteinpflaster	Q2- 9804,14071 9750,14132 9627,14229
 Gartenstr.: Asphalt	Q0 8692,14923 8870,14637 8953,14528 9081,14363 9118,14306 9224,14169 9383,13986 9514,13826 9535,13801 9670,13637
 Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 8671,14919 8660,14929 8656,14947 8663,14960
-#: by: http://www.infravelo.de/projekt/gartenstrasse-und-gerichtstrasse-2/ (2. Quartal 2022 - 4. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/gartenstrasse-und-gerichtstrasse-2/ (2. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 2. Quartal 2023 - 4. Quartal 2023)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/fahrbahn-und-gehwege-in-der-gerichts-und-gartenstrasse-1046099.php
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/210223_sachstandsbericht.pdf (Asphaltierung, geplante Fertigstellung 2022)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (geplante Fertigstellung nun 2023, Stand August 2021)
@@ -917,7 +917,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: by: http://www.berliner-woche.de/heinersdorf/verkehr/radstreifen-und-neue-querungen-d155368.html
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
-#: osm_watch: way id="266580485" version="17"
+#: osm_watch: way id="266580485" version="18"
 #: last_checked: 2022-06-23 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
@@ -1012,11 +1012,11 @@ Tegeler Weg: Asphalt	Q0 7259,14870 7209,14927 7182,14986 7178,14996 7131,15109 7
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_ppp_8.pdf (ebenso)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
-#: by: https://www.infravelo.de/projekt/lynarstrasse/ (3. Quartal 2021 - 3. Quartal 2022)
+#: by: https://www.infravelo.de/projekt/lynarstrasse/ (3. Quartal 2021 - 3. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023)
 #: XXX Wird die restliche Lynarstr. auch asphaltiert?
 #: last_checked: 2022-06-30
-#: check_frequency: 60d
-#: next_check: 2022-09-30
+# REMOVED --- #: check_frequency: 60d
+#: next_check: 2022-12-31
 Lynarstr.: Kopfsteinpflaster	Q2 7129,14787 7143,14794 7259,14870 7409,14954
 Lynarstr.: Kopfsteinpflaster	Q2 7409,14954 7461,14986
 #: note: früher Kopfsteinpflaster, Q2; Parkstreifen (Senkrechtparken) auf der Nordseite noch immer gepflastert
@@ -5713,7 +5713,8 @@ Falkenstr.: Asphalt	Q0 22362,-1509 22369,-1453 22382,-1338
 Jägerstr. (Bohnsdorf): Asphalt	Q0 22470,-1349 22482,-1226 22495,-1098
 Teichhuhnsteig: Asphalt	Q0 22685,-1421 22690,-1376 22720,-1255
 Eichbuschplatz: Asphalt	Q0 22845,-1210 22804,-1137
-Eichbuschweg: Asphalt	Q0 23042,-1297 22845,-1210
+Eichbuschweg: schlechtes Kopfsteinpflaster	Q3+ 23042,-1297 23019,-1286
+Eichbuschweg: Asphalt	Q0 23019,-1286 22845,-1210
 Eichbuschstr.: Beton	Q0- 22830,-1125 22795,-1055 22749,-969 22707,-890 22668,-786 22657,-763 22638,-705 22609,-601 22577,-514 22571,-496
 Birkenweg (Bohnsdorf): Beton	Q0 23426,-1127 23414,-980
 Birkenstr. (Bohnsdorf): Beton	Q0 23408,-982 23378,-903 23356,-825
@@ -6833,7 +6834,7 @@ Bohrauer Pfad: Beton	Q0- 20981,4628 20827,4655 20716,4691
 (Gartenweg [Kolonie Wendenheide]): unbefestigte Straße, zweispurig	Q2 20850,4225 20716,4549 20684,4596
 Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
-#: osm_watch: way id="156650954" version="15"
+#: osm_watch: way id="156650954" version="16"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
 #: last_checked: 2022-04-24
 #: check_frequency: 180d
@@ -15499,7 +15500,9 @@ Zermatter Str.: Kopfsteinpflaster besserer Qualität	Q1- 6594,17713 6631,17721 67
 (Um den Schäfersee): guter fester Sandweg	Q1 7477,17544 7466,17627 7415,17696 7320,17718
 #: corrected_by: srt (guter fester Sandweg, Q1 -> ..., neu gemacht)
 (Um den Schäfersee): Asphalt	Q0 7320,17718 7215,17689
-(Um den Schäfersee): guter fester Sandweg	Q1 7185,17681 7189,17666 7173,17591 7222,17471 7253,17467
+#: corrected_by: Pressemitteilung (guter fester Sandweg, Q1 -> ..., neu gemacht)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1225463.php
+(Um den Schäfersee): Asphalt	Q0 7185,17681 7189,17666 7173,17591 7222,17471 7253,17467
 #: note: Rainer (ghostviewer...) meint "Kleinpflaster"
 #: corrected_by: srt (Q2 -> Q2+)
 Baseler Str. (Reinickendorf): Kleinpflaster	Q2+ 6784,17960 6815,17871 6841,17781 6886,17649 6897,17616 6904,17596 6987,17321

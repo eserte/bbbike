@@ -4650,7 +4650,8 @@ Falkenstr.: Asphalt	Q0 22362,-1509 22369,-1453 22382,-1338
 Jägerstr. (Bohnsdorf): Asphalt	Q0 22470,-1349 22482,-1226 22495,-1098
 Teichhuhnsteig: Asphalt	Q0 22685,-1421 22690,-1376 22720,-1255
 Eichbuschplatz: Asphalt	Q0 22845,-1210 22804,-1137
-Eichbuschweg: Asphalt	Q0 23042,-1297 22845,-1210
+Eichbuschweg: schlechtes Kopfsteinpflaster	Q3 23042,-1297 23019,-1286
+Eichbuschweg: Asphalt	Q0 23019,-1286 22845,-1210
 Eichbuschstr.: Beton	Q0 22830,-1125 22795,-1055 22749,-969 22707,-890 22668,-786 22657,-763 22638,-705 22609,-601 22577,-514 22571,-496
 Birkenweg (Bohnsdorf): Beton	Q0 23426,-1127 23414,-980
 Birkenstr. (Bohnsdorf): Beton	Q0 23408,-982 23378,-903 23356,-825
@@ -12245,7 +12246,7 @@ Zermatter Str.: Betonplatten, gut	Q1 6375,17755 6495,17721 6594,17713
 Zermatter Str.: Kopfsteinpflaster besserer Qualität	Q1 6594,17713 6631,17721 6739,17749 6841,17781
 (Um den Schäfersee): guter fester Sandweg	Q1 7477,17544 7466,17627 7415,17696 7320,17718
 (Um den Schäfersee): Asphalt	Q0 7320,17718 7215,17689
-(Um den Schäfersee): guter fester Sandweg	Q1 7185,17681 7189,17666 7173,17591 7222,17471 7253,17467
+(Um den Schäfersee): Asphalt	Q0 7185,17681 7189,17666 7173,17591 7222,17471 7253,17467
 Baseler Str. (Reinickendorf): Kleinpflaster	Q2 6784,17960 6815,17871 6841,17781 6886,17649 6897,17616 6904,17596 6987,17321
 Mudrackzeile: Kleinsteinpflaster	Q1 6886,17649 6950,17669 7020,17690 7033,17692
 Mudrackzeile: asphaltiert	Q0 7020,17690 6985,17812

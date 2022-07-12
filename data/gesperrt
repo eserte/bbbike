@@ -489,6 +489,7 @@ Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
 Straßenbahnwendestelle Virchowstr.	1 13081,13457 12925,13373
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 Potsdamer Chaussee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
+B179n: benutzungspflichtiger Radweg existiert	2::igndisp 24383,-12050 24368,-11972 24320,-11722 24353,-11553 24361,-11236
 Altstädter Ring: Radweg muss benutzt werden	1::igndisp -3501,14365 -3498,14413 -3481,14523 -3432,14607 -3352,14676
 Elly-Beinhorn-Ring: Radweg muss benutzt werden	2::igndisp 19158,-4083 19153,-4033 19105,-3940
 Bösensteinweg	1 9943,1543 9847,1571 9771,1641
@@ -1064,7 +1065,6 @@ Margaretenstr.	1 25418,14835 25503,14842
 Sophienstr.	1 25503,14842 25527,14696 25555,14657
 Straße am Haussee: abgesperrt, Privatstraße	2 25846,16082 25787,16229
 Freilichtbühne Schwedt	2 69562,73280 69634,73330
-Bahnhofstr.	1s 26103,-11861 26205,-11862 26300,-11864
 Bernau - Tempelfelde	1 23179,31047 23103,30923
 Dallgower Str.	1 -10799,15946 -10853,16230
 Altlandsberger Chaussee	1 40487,16703 40712,16743
@@ -1193,6 +1193,7 @@ Alt-Tegel	1s 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
 May-Ayim-Ufer	1s 13206,10651 13077,10747
 Jahnstr. (KW)	1s 26252,-12298 26144,-12280 26116,-12276 26031,-12300
+Bahnhofstr.	1s 26300,-11864 26205,-11862
 Friedrich-Engels-Str. (KW)	1 26144,-12280 26181,-12019
 Maxim-Gorki-Str.	1s 26289,-12055 26288,-12089 26274,-12153 26252,-12298
 Seestr. (Potsdam)	1s -11581,559 -11584,452
@@ -3211,6 +3212,7 @@ zwei Drängelgitter (Z-Anordnung)	BNP:5:-224:trailer=15 18825,3325
 weites Drängelgitter	BNP:2:75:trailer=7 12614,6301
 Mittelheide: umgefallene Baumstämme	2 24365,7657 24275,7550
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
+Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s 26300,-11727 26301,-11824 26300,-11864
 (Uferweg): Bauarbeiten, noch gesperrt	2::inwork 21901,5117 21822,5153
 Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	2::inwork 7422,13012 7415,13060
 Möllhausenufer: Bauarbeiten, Einbahnstraßenregelung	1s 23608,1210 23520,1194

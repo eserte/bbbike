@@ -7,9 +7,16 @@
 # 
 #: temporary vvv
 # 
-#: source_id: viz2021:13.181825,52.422784,09.02.2022,11:00 (bis 12.7.2022)
-#: next_check: 2022-07-12
-#: valid: -20220712
+#: next_check_id: KWEISENBAHNBRUECKE-2022
+#: last_checked: 2022-07-12
+#: next_check: 2023-06-27
+#: valid: -20230627
+B179/Fichtestr.	X::inwork 26138,-12596
+# 
+#: source_id: viz2021:13.181825,52.422784,09.02.2022,11:00 (bis 12.7.2022) (nicht verlängert)
+#: note: bei rbbtext bis 26.7.2022 verlängert
+#: next_check: 2022-07-26
+#: valid: -20220726
 Kronprinzessinnenweg: Gegenverkehrsregelung	X::inwork -4368,1731
 # 
 #: next_check_id: HAEMMERLING-2022
@@ -83,7 +90,7 @@ Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2022-07-03
+#: last_checked: 2022-07-12
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
@@ -3563,13 +3570,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296478" version="1"
 #: note: Anforderungsampel
-#: last_checked: 2022-06-25
+#: last_checked: 2022-07-12
 #: check_frequency: 90d
 	F::inwork 17695,5394
 #: XXX wie lange bleibt die provisorische Ampel?
 #: osm_watch: node id="9221296482" version="3"
 #: note: Anforderungsampel
-#: last_checked: 2022-06-25
+#: last_checked: 2022-07-12
 #: check_frequency: 90d
 	F::inwork 17747,5452
 # 
@@ -3778,6 +3785,8 @@ Umgehung mit Treppen existiert	Zbr 47077,-15816
 #: note: für den Radweg nicht relevant
 	X 24343,-10276
 	X 24353,-10504
+#: note: Anforderungsampel
+	X 24361,-11236
 	X 17344,-1351
 	X 26623,-17859
 	F 26999,-17905

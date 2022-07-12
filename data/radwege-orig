@@ -1771,7 +1771,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/ziel-ein-durchgaengig-sicherer-radweg_a337148 (Erwähnung)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2022-07-03 vvv
+#: last_checked: 2022-07-12 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -3325,8 +3325,8 @@ Schild "Schritt fahren"	RW6; 9901,18522 10006,18502 10013,18545 9994,18595 9916,
 #: by: René (refan):
 #: confirmed_by: srt
 	RW2; 17886,5587 17808,5669 17782,5698 17728,5756
-Bushaltestelle mit Radspur	RW3; 17728,5756 17782,5698 17808,5669
-	RW4; 17808,5669 17886,5587
+Bushaltestelle mit Radspur, Grünmarkierung	RW3; 17728,5756 17782,5698 17808,5669
+Leitboys, Grünmarkierung	RW3; 17808,5669 17886,5587
 #: by: Matthias Dorschner:
 #: confirmed_by: srt
 	RW6;RW6 20458,18424 20448,18454 20512,18626 20533,18682 20553,18734 20586,18822
@@ -4548,6 +4548,7 @@ Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9227,20617
 Gehweg für Radfahrer frei	RW1; 9227,20617 9175,20613 9162,20613 9073,20606
 Gehweg für Radfahrer frei	RW1; 9073,20606 9027,20603 8904,20596
 Verbundsteinpflaster	RW2; 19904,3464 19857,3514 19812,3561 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 18725,4715 18457,5000 18425,5032 18080,5376 17960,5511
+Grünmarkierung	RW3; 17886,5587 17960,5511 18080,5376
 #: next_check_id: POPUPRADWEGE-2020
 #: XXX Adlergestell: Popup-Radweg wird verstetigt
 #: by: https://abendblatt-berlin.de/2020/05/23/berlin-treptow-neue-wege-fuer-mehr-radler/ (im Juni 2020)
@@ -4575,10 +4576,10 @@ Verbundsteinpflaster	RW2; 19904,3464 19857,3514 19812,3561 19735,3643 19676,3705
 #: source_id: viz2021:13.51214,52.454886,20.05.2022,06:00 (bis 4.6.2022) (inaktiv)
 #: source_id: viz2021:13.50984,52.45636,20.05.2022,06:00 (bis 6.6.2022) (inaktiv)
 #: source_id: viz2021:13.51214,52.454886,20.06.2022,06:00 (bis 1.7.2022)
-#: last_checked: 2022-06-18
-# REMOVED --- #: check_frequency: 120d
-#: next_check: 2022-07-01
-provisorisch geschützter Radstreifen	RW4; 17886,5587 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705
+#: last_checked: 2022-07-12
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2022-07-01
+provisorisch geschützter Radstreifen	RW4; 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464
 #: note die Radspur sah etwas provisorisch aus, aber auf dem Gehweg ist jetzt definitiv kein Platz mehr
 	RW4; 19904,3464 19946,3415 20002,3349
@@ -7046,7 +7047,7 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="28"
-#: last_checked: 2022-06-26 vvv
+#: last_checked: 2022-07-12 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 # REMOVED --- #: osm_watch: way id="329510232" version="9"

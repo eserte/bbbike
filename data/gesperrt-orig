@@ -761,6 +761,7 @@ Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
 Straßenbahnwendestelle Virchowstr.	1 13081,13457 12925,13373
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 Potsdamer Chaussee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
+B179n: benutzungspflichtiger Radweg existiert	2::igndisp 24383,-12050 24368,-11972 24320,-11722 24353,-11553 24361,-11236
 Altstädter Ring: Radweg muss benutzt werden	1::igndisp -3501,14365 -3498,14413 -3481,14523 -3432,14607 -3352,14676
 Elly-Beinhorn-Ring: Radweg muss benutzt werden	2::igndisp 19158,-4083 19153,-4033 19105,-3940
 #: by: Maria Hach
@@ -1583,7 +1584,6 @@ Straße am Haussee: abgesperrt, Privatstraße	2 25846,16082 25787,16229
 #: note: möglicherweise nur im Frühling/Sommer?
 #: osm_watch: note 1414569 2
 Freilichtbühne Schwedt	2 69562,73280 69634,73330
-Bahnhofstr.	1s 26103,-11861 26205,-11862 26300,-11864
 #: note: Radweg in einer Richtung
 Bernau - Tempelfelde	1 23179,31047 23103,30923
 # REMOVED (permanent entfernt) --- #: by: grote energus: vvv
@@ -1768,6 +1768,9 @@ Alt-Tegel	1s:q3 1668,20156 1753,20191 1907,20265
 Alt-Tegel	1s:q3 1668,20156 1529,20131 1543,20060 1630,20097 1668,20156
 May-Ayim-Ufer	1s:q1 13206,10651 13077,10747
 Jahnstr. (KW)	1s:q3 26252,-12298 26144,-12280 26116,-12276 26031,-12300
+#: note: früher: Bahnhofstr. - 1s 26103,-11861 26205,-11862 26300,-11864
+#: note: Linienverkehr frei
+Bahnhofstr.	1s:q3 26300,-11864 26205,-11862
 Friedrich-Engels-Str. (KW)	1 26144,-12280 26181,-12019
 Maxim-Gorki-Str.	1s:q3 26289,-12055 26288,-12089 26274,-12153 26252,-12298
 Seestr. (Potsdam)	1s -11581,559 -11584,452
@@ -3394,10 +3397,15 @@ Mittelheide: umgefallene Baumstämme	2 24365,7657 24275,7550
 #: next_check_id: KWEISENBAHNBRUECKE-2022
 #: source_id: 226110967 (hier: bis 27.6.2023)
 #: by: https://www.vbb.de/presse/deutsche-bahn-erneuert-bruecke-ueber-storkower-strasse-in-koenigs-wusterhausen/
+#: last_checked: 2022-07-12 vvv
+#: next_check: 2023-06-27 vvv
+#: valid: -20230627 vvv
 #: osm_watch: way id="8042965" version="22"
-#: next_check: 2023-06-27
-#: valid: -20230627
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
+Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q4 26300,-11727 26301,-11824 26300,-11864
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=715173#post715173
 #: XXX culdesac-Eintrag für die Spreestr. anpassen!
@@ -3510,7 +3518,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2022-07-03
+#: last_checked: 2022-07-12
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -3678,14 +3686,14 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 #: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
-#: last_checked: 2022-06-06 vvv
-# REMOVED --- #: check_frequency: 90d vvv
-#: next_check: 2022-07-01 vvv
+#: last_checked: 2022-07-12 vvv
+#: check_frequency: 90d vvv
+# REMOVED --- #: next_check: 2022-07-01 vvv
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18722,4628 18656,4687
 Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,4678
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 # REMOVED (Bauzaun offen) --- #: last_checked: 2021-09-09 --- #: check_frequency: 90d --- Am Betriebsbahnhof Schönweide: Straße mit Bauzaun abgesperrt	2::inwork 18254,4817 18306,4753 18331,4744 18497,4529
@@ -4064,7 +4072,7 @@ Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738
-#: last_checked: 2022-06-25
+#: last_checked: 2022-07-12
 #: check_frequency: 360d
 #: next_check: 2022-12-20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -4520,9 +4528,9 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: XXX Johannisplatz (PLZ=10117 laut LOR)
 #: XXX Aaron-Bernstein-Platz (PLZ=10117 laut LOR)
 # REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7"
-#: osm_watch: way id="940764588" version="4"
+#: osm_watch: way id="940764588" version="5"
 #: osm_watch: way id="940764584" version="3"
-#: last_checked: 2022-06-30
+#: last_checked: 2022-07-11 (osm)
 #: check_frequency: 360d
 #: next_check: 2023-06-30
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315

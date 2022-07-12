@@ -176,7 +176,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: by: https://abendblatt-berlin.de/2021/04/05/berlin-wedding-geisterhaus-an-der-burgsdorfstrasse-soll-abgerissen-werden/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
 #: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
-#: osm_watch: way id="549316654" version="17"
+#: osm_watch: way id="549316654" version="18"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
@@ -518,7 +518,7 @@ Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwor
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
 #: osm_watch: way id="40451054" version="13"
-#: last_checked: 2022-06-29 (osm)
+#: last_checked: 2022-07-12
 #: next_check: 2022-08-05
 # REMOVED --- #: valid: -20220401
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
@@ -580,11 +580,12 @@ Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg,
 ### Moabit ###
 # 
 #: next_check_id: TRAMTURM-2021
-#: last_checked: 2022-06-11 vvv
+#: last_checked: 2022-07-08 (bahninfo-forum) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-22 vvv
 #: osm_watch: way id="140336721" version="25"
-Turmstr.: teilweise verwinkelte Wegführung des Radwegs	q1-::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321
+#: note: früher "teilweise verwinkelte Wegführung des Radwegs - q1-::inwork;"
+Turmstr.: Bauarbeiten, Engstellen	q2+::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321
 #: osm_watch: way id="30195541" version="26"
 Turmstr.: Bauarbeiten, Engstellen	q1-::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: next_check ^^^
