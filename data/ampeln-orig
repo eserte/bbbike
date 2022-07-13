@@ -158,7 +158,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: next_check: 2022-09-30 vvv
 #: check_frequency: 90d vvv
 #: valid: -20220930 vvv
-#: last_checked: 2022-06-30
+#: last_checked: 2022-07-12 (mapillary)
 #: osm_watch: node id="6380038401" version="1"
 	X::inwork 9195,11972
 #: note: Ampel befindet sich westlich der Kreuzung
@@ -3755,6 +3755,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+#: XXX_prog gemeinsame Ampelanlage vvv
+#: note: Anforderungsampel
+	X 24408,-12045
+	X 24383,-12050
+#: XXX_prog ^^^
 	F -3495,23770
 	F -3666,22384
 #: off: 2022-06-12 (Sun) gegen 10 Uhr

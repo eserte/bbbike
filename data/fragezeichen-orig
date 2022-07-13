@@ -74,7 +74,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: 2147343740 (inaktiv)
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
-#: last_checked: 2022-07-10
+#: last_checked: 2022-07-13
 #: check_frequency: 90d
 # REMOVED (other item exists) --- #: next_check: 2022-06-30
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -241,11 +241,13 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?
 #: by: https://berliner-abendblatt.de/2022/06/23/bauarbeiten-fuer-radweg-an-der-muellerstrasse-starten/
 #: by: https://viz.berlin.de/2022/06/muellerstr-radweg/
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/radweg-auf-der-muellerstrasse-soll-ende-juli-fertig-sein_a350717
+#: by: https://nitter.it/VIZ_Berlin/status/1547087676351942656#m
+#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlhjTS0yZldJQUktdS1PLmpwZw==
 #: source_id: 2147345414 (bis Mitte April 2020) (haben die Leitungsarbeiten was mit den geplanten Radspuren zu tun?) (inaktiv)
 #: source_id: viz2021:13.365263,52.543096,15.12.2021,07:00 (Bauarbeiten bis 23.12.2021) (mittlerweile bis 20.01.2022) (inaktiv)
 #: source_id: viz2021:13.365263,52.543096,01.01.2022,07:00 (Bauarbeiten bis 28.01.2022) (mittlerweile bis 24.01.2022) (inaktiv)
-#: source_id: viz2021:13.359153,52.546389,28.06.2022,06:00 (Fahrbahnsanierung bis 5.7.2022)
-#: source_id: viz2021:13.363931,52.543696,05.07.2022,07:00 (zwischen Trift- und Lynarstr. bis 12.7.2022) (mittlerweile bis 13.7.2022)
+#: source_id: viz2021:13.359153,52.546389,28.06.2022,06:00 (Fahrbahnsanierung bis 5.7.2022) (inaktiv)
+#: source_id: viz2021:13.363931,52.543696,05.07.2022,07:00 (zwischen Trift- und Lynarstr. bis 12.7.2022) (mittlerweile bis 13.7.2022) (inaktiv)
 #: source_id: viz2021:13.363931,52.543696,13.07.2022,07:00 (zwischen Lindower Str. und Gerichstr. bis 19.7.2022)
 #: osm_watch: way id="4543585" version="34"
 #: osm_watch: way id="42732291" version="23"
@@ -808,7 +810,7 @@ Schönefelder Chaussee: Einrichtung einer Radverkehrsanlage geplant	?::projected;
 # 
 #: XXX Ag.6
 #: osm_watch: way id="605637372" version="5"
-#: last_checked: 2022-03-18 (mapillary)
+#: last_checked: 2022-03-20 (mapillary)
 #: check_frequency: 120d
 Ortolfstr.: Komplettierung der Radverkehrsanlage geplant	?::projected; 19477,472 19470,453 19429,337 19398,254
 # 
@@ -3809,7 +3811,7 @@ Hultschiner Damm: Aufhebung der Benutzungspflicht?	? 24639,10766 24644,10740 246
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/in-marzahn-hellersdorf-werden-2021-acht-groessere-radwegprojekte-umgesetzt_a297401 vvv
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9697 (Frage)
 #: XXX stadteinwärts wird zurzeit die innere Betonplattenreihe auf dem Bürgersteig saniert
-#: last_checked: 2022-04-15 (mapillary)
+#: last_checked: 2022-04-21 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-12-31
 Altentreptower Str.: werden hier Radwege gebaut?	? 21199,12258 21271,12235 21288,12166 21307,12132 21400,12135 21573,12140 21819,12154 21935,12153
@@ -6072,6 +6074,7 @@ Bamihlstr.: Einbahnstraßenregelung gefordert/geplant	? -2563,17004 -2585,16900 -
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2022/pressemitteilung.1216326.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1216531.php
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/wohnungsbau-bleibt-gesichert_a349484
+#: by: https://berliner-abendblatt.de/2022/07/13/gueterbahnhof-koepenick-spd-fordert-mehr-buergerbeteiligung/
 #: last_checked: 2022-04-02
 #: check_frequency: 360d
 Güterbahnhof Köpenick: hier entsteht die Ostumfahrung Bahnhofstraße	?::projected 23327,5817 23244,6154 22796,6118 22777,6151
@@ -6429,6 +6432,7 @@ Am Alten Lokschuppen: bauzeitliche Sperrung geplant	? 15708,11193 15752,11115 15
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1220100.php (Eröffnung am 8.7.2022)
 #: by: https://berliner-abendblatt.de/2022/06/25/abschliessende-arbeiten-am-schaefersee/
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1225463.php (1. Bauabschnitt fertiggestellt, 2. Bauabschnitt wird 2023 umgesetzt)
+#: by: https://berliner-abendblatt.de/2022/07/13/wieder-mehr-platz-am-schaefersee/
 # REMOVED (realisiert) --- #: XXX Fertigstellung 2021 vvv --- #: last_checked: 2022-05-14 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-07-08 vvv --- Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7253,17467 7222,17471 7173,17591 7189,17666
 # REMOVED (fertig) --- Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7189,17666 7185,17681
 # REMOVED (realisiert) --- Wege um den Schäfersee: Umgestaltung, ändert sich etwas für Radfahrer?	? 7185,17681 7173,17712
@@ -7833,7 +7837,7 @@ St. Jacobi-Kirchhof II - Ost: Teilfläche wird zurückgebaut	?::projected 12259,71
 #: XXX vermutlich wird während der Bauarbeiten der Radweg an der Waldstr. gesperrt werden
 #: XXX wie geht's am Bauernweg Richtung Süden weiter?
 #: source_id: 101100026
-#: last_checked: 2022-03-05 (mapillary)
+#: last_checked: 2022-07-12
 #: check_frequency: 360d
 # REMOVED --- #: next_check: 2022-01-01
 A117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21834,-2143 21522,-2233 21113,-2676
@@ -8041,6 +8045,7 @@ Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,179
 #: by: https://berliner-abendblatt.de/2021/11/29/117918/ (Erwähnung)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10131 (Anfrage)
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2022/pressemitteilung.1223315.php
+#: by: https://www.berliner-woche.de/marzahn/c-verkehr/tvo-vorhaben-verzoegert-sich_a351521 (Planfeststellungsverfahren ab 2023, Dauer mindestens 18 Monate)
 #: by: osm
 #: osm_watch: way id="154505652" version="15"
 #: XXX wird es bereits durch den Bau Beeinträchtigungen geben?
@@ -9258,9 +9263,7 @@ Freest - Peenemünde, Fähre (Telefon 038371-20829 oder 0170-1607371): Wann fährt 
 #: XXX nach Fertigstellung der Bahnunterführung wird sich die Streckenführung ändern
 #: source_id: 157200868
 Mückendorf/B96 - Richtung Teupitz: Qualität? Wie geht es in Richtung Teupitz weiter?	? 18001,-35985 18101,-35914 18479,-35645 18936,-35316 19344,-35036 19826,-34707 20021,-34512 20246,-34268 20338,-34165 20618,-33964 20661,-33854
-#: by: Emanuel Schlüßler
-#: XXX asphaltiert, kein Radweg
-Darwinbogen (Königs Wusterhausen): Qualität (betoniert?)? Mit Radweg oder Radspur? Wie weit Richtung Westen ist die Straßen schon gebaut?	? 24361,-11236 24289,-11236 24131,-11318 23982,-11328
+# REMOVED (aufgenommen) --- #: by: Emanuel Schlüßler --- #: XXX asphaltiert, kein Radweg --- Darwinbogen (Königs Wusterhausen): Qualität (betoniert?)? Mit Radweg oder Radspur? Wie weit Richtung Westen ist die Straßen schon gebaut?	? 24361,-11236 24324,-11239 24292,-11243 24118,-11329 23972,-11338 23856,-11326 23755,-11214 23656,-11239
 #: XXX am südöstlichen Ende vermutlich asphaltiert
 Marquardter Str. (Schwarzer Weg): Qualität? Wie lautet der Straßenname?	? -18370,4354 -18387,4354 -18620,4569
 Garz - Korswandt: Qualität? Sind Teile der Strecke für Autos gesperrt?	? 59381,165027 59305,165173 59262,165310 59177,165487 59174,165716 59208,165863
@@ -10140,3 +10143,5 @@ Dollgow - Zernikow: Qualität?	? -17141,74157 -16859,74184 -16629,74151 -15730,74
 Leipziger Str. (Schöneiche): wie ist die Qualität im nördlichen Abschnitt? ebenfalls unbefestigt?	? 32156,6405 32056,6607 31993,6776 31952,6917 31951,7060
 # 
 # REMOVED --- #: source_id: LS/721-F/20/189 --- #: osm_watch: way id="888613960" version="8" brb --- #: XXX laut osm fertiggestellt, Mapillary-Bilder hoffentlich bald verfügbar --- #: next_check: 2021-06-30 --- Hönow - Neuenhagen: Bau eines Radwegs	?::inwork 27692,15066 28042,14883 28314,14660
+#: XXX vermutlich größtenteils asphaltiert
+Technologiepark KW - Funkerberg: Qualität der Verbindung?	? 24452,-10414 24518,-10498 24950,-10965 25233,-11257 25366,-11396 25528,-11392
