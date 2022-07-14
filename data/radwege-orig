@@ -707,8 +707,7 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenrei
 #: note: Müllerstr., Richtung Norden
 # REMOVED --- #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf ---	RW0; 7911,15008 7811,15096
 provisorische Busspur ist immer gültig	RW5; 7911,15008 7811,15096 7745,15160
-#: note: endet nach 100m
-provisorische Radspur, mit Pollern abgetrennt	RW4; 7745,15160 7607,15282
+provisorische Radspur, mit Pollern abgetrennt	RW4; 7745,15160 7669,15227
 # 
 #: note: Müllerstr., Richtung Süden
 #: note: frühere Markierung scheint verschwunden zu sein
@@ -1640,7 +1639,8 @@ Busspur ist immer gültig	RW5;RW5 9934,12420 9858,12410
 #: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
-#: source_id: viz2021:13.399226,52.517706,30.05.2022,08:00 (bis 15.8.2022, zwischen Lustgarten - Oberwallstr.) vvv
+#: source_id: viz2021:13.399226,52.517706,30.05.2022,08:00 (bis 15.8.2022, zwischen Lustgarten - Oberwallstr.) (mittlerweile inaktiv) vvv
+#: source_id: viz2021:13.404803,52.520062,30.05.2022,08:00 (bis 15.8.2022)
 #: last_checked: 2022-07-08 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-08-15 vvv
@@ -6304,7 +6304,7 @@ asphaltiert	RW1; 8490,14397 8442,14456
 	RW3; 6781,16026 6712,16087
 	RW4; 6712,16087 6781,16026
 	RW3;RW3 6712,16087 6659,16133 6587,16199 6572,16212 6447,16321 6440,16327 6429,16337 6304,16447 6201,16538 6098,16630
-	RW4; 7277,15586 7393,15476 7464,15409
+	RW4; 7277,15586 7393,15476 7464,15409 7607,15282 7669,15227
 	RW3; 6098,16630 6032,16688
 	RW4; 6032,16688 6098,16630
 	RW3;RW3 6032,16688 6005,16712 5931,16777 5894,16810 5772,16919 5589,17081 5490,17173
@@ -7480,7 +7480,7 @@ provisorischer Radweg auf dem Bürgersteig	RW2; 9196,5272 9188,5333 9176,5413 916
 	RW6;RW6 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # 
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf
-#: osm_watch: way id="4357826" version="18"
+#: osm_watch: way id="4357826" version="19"
 #: XXX laut fahrrat/2016-07-28 "Ausführung im Jahr 2017 geplant."
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-11-24_prot-fahrratsitzung4.pdf ("Entwurfsplanung liegt vor" + "Schwierigkeiten")
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf

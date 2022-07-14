@@ -368,10 +368,10 @@ Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Osloer Str.:
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Stockholmer Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8783,16710
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8688,16533
 Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet -> Travemünder Str.: Osloer Str.	3::igndisp 8776,16718 8759,16684 8759,16665
-Müllerstr./Lindower Str.	3nocross::ignrte 7911,15008 7811,15096 7745,15160 7607,15282
+Müllerstr./Lindower Str.	3nocross::ignrte 7911,15008 7811,15096 7745,15160 7669,15227 7607,15282
 Müllerstr. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7811,15096 7745,15160 7694,15125
-Müllerstr. -> Lindower Str.: Müllerstr./Lindower Str.	3::igndisp 7607,15282 7745,15160 7929,15355
-Lynarstr. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7694,15125 7745,15160 7607,15282
+Müllerstr. -> Lindower Str.: Müllerstr./Lindower Str.	3::igndisp 7669,15227 7745,15160 7929,15355
+Lynarstr. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7694,15125 7745,15160 7669,15227
 Lynarstr. -> Lindower Str.: Müllerstr./Lindower Str.	3::igndisp 7694,15125 7745,15160 7929,15355
 Lindower Str. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7929,15355 7745,15160 7811,15096
 Lindower Str. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7929,15355 7745,15160 7694,15125
@@ -2269,3 +2269,4 @@ Neue Straße (Teltow)	1 978,-521 1101,-553
 Karlstr. (Köpenick)	1 22556,4386 22502,4260 22458,4134
 Henny-Porten-Str.	1 23833,15066 23772,15058 23698,15049
 Kurt-Weill-Platz	1 23772,15058 23778,14995
+Am Nordbahnhof - Invalidenstr.: nur rechts abbiegen erlaubt	3 9011,14019 9085,13919 9148,13944

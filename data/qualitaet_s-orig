@@ -458,7 +458,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (geplante Fertigstellung nun 2023, Stand August 2021)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: last_checked: 2022-07-05 vvv
+#: last_checked: 2022-07-14 vvv
 #: next_check: 2023-06-01 vvv
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
@@ -565,9 +565,9 @@ F¸rstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, sp‰ter auch die Metzer Str.
 #: osm_watch: way id="4606258" version="25"
-#: osm_watch: way id="184077626" version="14"
-#: osm_watch: way id="49180827" version="18"
-#: last_checked: 2022-06-16 (mapillary)
+#: osm_watch: way id="184077626" version="15"
+#: osm_watch: way id="49180827" version="19"
+#: last_checked: 2022-07-14
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -693,8 +693,8 @@ Rˆnnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019)
 #: by: https://api.fixmyberlin.de/api/plannings/218 (Asphaltierung)
 #: by: http://www.infravelo.de/projekt/roennestrasse/ (1. Quartal 2022 - 1. Quartal 2024)
-#: osm_watch: way id="4480580" version="14"
-#: osm_watch: way id="4436949" version="12"
+#: osm_watch: way id="4480580" version="15"
+#: osm_watch: way id="4436949" version="13"
 #: last_checked: 2022-04-26 (mapillary)
 #: check_frequency: 300d
 #: next_check: 2024-03-31
@@ -1045,7 +1045,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? auﬂerdem: wird die Colbestr. zur Fahrradstraﬂe?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erw‰hnung)
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-07-11
+#: last_checked: 2022-07-14
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2097,7 +2097,7 @@ Landsberger Allee: Asphaltradweg nur mit m‰ﬂiger Qualit‰t	Q1 18365,14607 18410,1
 Landsberger Allee: Beton-Radwege nur mit m‰ﬂiger Qualit‰t (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Sch‰den	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 #: last_checked ^^^
-#: last_checked: 2022-03-18 (mapillary)
+#: last_checked: 2022-03-20 (mapillary)
 Landsberger Allee: Beton-Radwege, mit einigen leichten Sch‰den, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 #: check_frequency ^^^
 #: by: ^^^
@@ -12603,7 +12603,7 @@ Gubener Str.: Asphalt	Q0; 13467,11778 13568,11560
 In den Alboing‰rten: Betonpflaster	Q0- 7971,6087 7910,6090
 #: next_check_id: INDENALBOINGARTEN-2022
 #: XXX Bauarbeiten; wird hier sp‰ter auch Betonpflaster liegen?
-#: osm_watch: way id="962201820" version="7"
+#: osm_watch: way id="962201820" version="8"
 #: last_checked: 2022-06-08 (architektur-urbanistik)
 #: check_frequency: 60d
 In den Alboing‰rten: unbefestigte Baustraﬂe	Q2 7910,6090 7739,6099 7646,6031 7638,5967

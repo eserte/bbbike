@@ -20263,15 +20263,16 @@ EOF
 	2::inwork -13658,-4896 -13712,-6415
 EOF
      },
-     { from  => $isodate2epoch->("2021-09-10 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-09-12 23:59:59"),
+     { from  => $isodate2epoch->("2022-09-09 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-09-11 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 9, start => "2020-10-25T00:00:00"]],
-       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (11.09.2021-12.09.2021)',
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (10.09.2022-11.09.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.laubinger.de/termine/50-fest-an-der-panke/
 #: by: https://www.wollenschlaeger-berlin.de/51-fest-an-der-panke/
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1226411.php (evtl. nur auf der Nordseite?)
 	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10228,18196 10320,18197 10469,18262 10487,18270 10660,18345
 	2::temp 10602,18382 10562,18506 10532,18601
 EOF
@@ -31192,8 +31193,8 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-07-10 vvv
-#: check_frequency: 3d vvv
+#: last_checked: 2022-07-14 vvv
+#: check_frequency: 4d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
@@ -33633,8 +33634,8 @@ EOF
 EOF
      },
      { from  => 1629669600, # 2021-08-23 00:00
-       until => $isodate2epoch->("2022-07-15 17:00:00"), # 1640991600, # 2022-01-01 00:00
-       text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 15.07.2022 17:00 ',
+       until => $isodate2epoch->("2022-07-20 17:00:00"), # 1640991600, # 2022-01-01 00:00
+       text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 20.07.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.377685,52.567221,24.08.2021,07:00', # aktiv
        data  => <<EOF,
@@ -34586,10 +34587,10 @@ EOF
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)?
 #: add_fragezeichen: Wo genau ist der Uferweg wegen Bauarbeiten gesperrt?
-#: last_checked: 2022-06-11
+#: last_checked: 2022-07-12 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2024-02-12
-#: osm_watch: way id="4410535" version="22"
+#: osm_watch: way id="4410535" version="23"
 	2::inwork 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
 EOF
      },
@@ -35292,13 +35293,15 @@ EOF
 	q4::inwork; 25579,5958 26080,5946
 EOF
      },
-     { from  => 1655010000, # 2022-06-12 07:00
-       until => $isodate2epoch->("2022-06-29 11:00:00"), # 1656514800, # 2022-06-29 17:00
-       text  => 'Zinnowitzer Str.: zwischen Chausseestr. und Am Nordbahnhof gesperrt, auch für den Radverkehr, vom 13.06.2022 07:00 bis 29.06.2022 11:00',
+     { from  => $isodate2epoch->("2022-07-01 07:00:00"), # 1655010000, # 2022-06-12 07:00
+       until => $isodate2epoch->("2024-04-30 17:00:00"), # 1656514800, # 2022-06-29 17:00
+       text  => 'Zinnowitzer Str.: Einbahnstraßenregelung zwischen Chausseestr. und Am Nordbahnhof, offen Richtung Osten, bis 30.04.2024 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.38248,52.53138,13.06.2022,07:00',
        data  => <<EOF,
-	q4::inwork 9011,14019 8870,13926
+#: source_id: viz2021:13.38435,52.532054,01.07.2022,07:00 (bis 30.04.2024, hier nur Kfz-Verkehr)
+#: note: Radfahrer sind von der Einbahnstraßenregelung nicht ausgenommen (gesehen: 2022-07-14)
+	q4::inwork; 9011,14019 8870,13926
 EOF
      },
      { from  => undef, # 
