@@ -313,7 +313,7 @@ function doLeaflet() {
 	,{label:"BBBike (dull)", layer:bbbike04TileLayer,     abbrev:'B04',inControl:false }
 	,{label:"OSM",           layer:osmTileLayer,          abbrev:'O',  inControl:true  }
 	,{label:"CyclOSM",       layer:cyclosmTileLayer,      abbrev:'C',  inControl:true  }
-	,{label:"Berlin Aerial", layer:berlinAerialTileLayer, abbrev:'A',  inControl:false }
+	,{label:"Berlin Aerial", layer:berlinAerialTileLayer, abbrev:'A',  inControl:true  }
 	,{label:"BVG",           layer:bvgStadtplanLayer,     abbrev:'BVG',inControl:false }
     ];
     var overlayMaps = {};
