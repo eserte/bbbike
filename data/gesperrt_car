@@ -1870,6 +1870,8 @@ Fahlandgasse	1 7675,17430 7675,17475 7675,17538
 Mittelstreifen	3nocross::ignrte 7820,13994 7865,13924 7910,13848 7973,13743
 Heidestr. -> Lydia-Rabinowitsch-Str.: Mittelstreifen	3::igndisp 7820,13994 7865,13924 7959,13982
 Lydia-Rabinowitsch-Str. -> Heidestr.: Mittelstreifen	3::igndisp 7959,13982 7865,13924 7910,13848
+Heidestr. -> Uferweg: Mittelstreifen	3::igndisp 7865,13924 7910,13848 7997,13892
+Uferweg -> Heidestr.: Mittelstreifen	3::igndisp 7997,13892 7910,13848 7973,13743
 Mittelstreifen	3nocross::ignrte 7652,14257 7697,14187 7732,14131
 Heidestr. -> Hedwig-Porschütz-Str.: Mittelstreifen	3::igndisp 7652,14257 7697,14187 7781,14238
 Hedwig-Porschütz-Str. -> Heidestr.: Mittelstreifen	3::igndisp 7781,14238 7697,14187 7732,14131

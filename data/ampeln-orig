@@ -158,7 +158,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: next_check: 2022-09-30 vvv
 #: check_frequency: 90d vvv
 #: valid: -20220930 vvv
-#: last_checked: 2022-07-12 (mapillary)
+#: last_checked: 2022-07-15
 #: osm_watch: node id="6380038401" version="1"
 	X::inwork 9195,11972
 #: note: Ampel befindet sich westlich der Kreuzung
@@ -170,7 +170,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2022-07-05
+#: last_checked: 2022-07-15
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -223,7 +223,7 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linke
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2022-07-11
+#: last_checked: 2022-07-15
 #: check_frequency: 90d
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 # 
@@ -3457,6 +3457,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 5364,7330
 # 
 #: next_check_id: CHAUSSEE-2020
+#: osm_watch: node id="26748289" version="9"
 #: last_checked: 2022-07-14
 #: check_frequency: 90d
 #: next_check: 2022-07-31
@@ -3467,6 +3468,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/433_2018_zu_ds_0680_v_ampelstandort_chaussee_boyenstr_bav.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
+#: osm_watch: node id="7041133991" version="1"
 #: note: Anforderungsampel
 #: last_checked: 2022-07-14
 #: check_frequency: 90d
@@ -3474,6 +3476,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 # REMOVED (gibt's nicht mehr) --- #: next_check_id: CORONA-2020 --- #: by: https://www.rbb24.de/panorama/thema/corona/beitraege/2021/08/berlin-impfzentrum-erika-hess-eisstadion-arena-schliessen.html --- #: XXX vermutlich temporär für das Impfzentrum --- #: by: mapillary --- 
 #: XXX steht vermutlich im Zusammenhang mit den Bauarbeiten an der Schule (Gehweg gesperrt)
+#: osm_watch: node id="9454113715" version="1"
 #: last_checked: 2022-07-14
 #: check_frequency: 90d
 	F::inwork 8138,14786
