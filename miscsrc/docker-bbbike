@@ -396,7 +396,12 @@ EOF
     if ($opt{'perl-ver'}) {
 	(my $short_perl_ver = $opt{'perl-ver'}) =~ s{\.\d+$}{};
 	# Probably travis has only perls for ubuntu trusty and precise
-	my $distnumver = { ubuntu => { trusty  => '14.04',
+	my $distnumver = { ubuntu => {
+				       jammy   => '22.04',
+				       focal   => '20.04',
+				       bionic  => '18.04',
+				       xenial  => '16.04',
+				       trusty  => '14.04',
 				       precise => '12.04',
 				     } }->{$opt{dist}}->{$opt{distver}};
 	if (!$distnumver) {
