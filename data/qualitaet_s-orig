@@ -2097,7 +2097,7 @@ Landsberger Allee: Asphaltradweg nur mit m‰ﬂiger Qualit‰t	Q1 18365,14607 18410,1
 Landsberger Allee: Beton-Radwege nur mit m‰ﬂiger Qualit‰t (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Sch‰den	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 #: last_checked ^^^
-#: last_checked: 2022-03-20 (mapillary)
+#: last_checked: 2022-04-30 (mapillary)
 Landsberger Allee: Beton-Radwege, mit einigen leichten Sch‰den, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 #: check_frequency ^^^
 #: by: ^^^
@@ -3942,10 +3942,11 @@ Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14621,10062 14702
 Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14747,10108 14702,10020
 Dora-Benjamin-Park: Verbundsteinpflaster	Q1 14788,9976 14817,10031
 Balatonstr.: m‰ﬂiger Beton	Q2+ 17479,10452 17741,10386
-Balatonstr.: m‰ﬂiger Beton	Q1- 17741,10386 17791,10375 17915,10350 17946,10344
+Balatonstr.: m‰ﬂiger Beton	Q1- 17741,10386 17791,10375 17915,10350 17946,10344 17954,10367
 Balatonstr.: m‰ﬂiger Beton	Q1- 17791,10375 17793,10382 17822,10490 17823,10495
 (Balatonstr. - Sewanstr.): Beton	Q1 17741,10386 17729,10331 17705,10232 17624,10249 17605,10199
 Sewanstr. [Wohngebiet]: Beton	Q1 17883,10185 17705,10232
+Sewanstr. [Parkplatz]: Beton	Q1 17624,10249 17642,10316
 Rienzistr.: Kopfsteinpflaster	Q2 17898,9564 18121,9488
 Marksburgstr.: Asphalt	Q0 18070,9292 18172,9250 18319,9218
 Ilsestr. (Karlshorst, Rummelsburg): Beton	Q0- 18354,9575 18164,9623 18158,9625 18121,9488 18070,9292 18037,9195 18021,9127
@@ -4054,7 +4055,7 @@ Park am Karlsbad: wassergebundene Decke	Q1+ 8143,10903 8190,10960
 #: note: neu gemacht (Herbst 2014)
 Singerstr.: Asphalt	Q0 11920,12266 12081,12236
 Puderstr.: Asphalt	Q0 14614,9052 14567,8966 14525,8894 14492,8853 14363,8738
-Upstallweg (Lichtenberg): Beton	Q0 17946,10344 17954,10367 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
+Upstallweg (Lichtenberg): Beton	Q0 17954,10367 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 # REMOVED (teilweise) --- #: XXX hat sich hier die Qualit‰t durch den Wohnungsneubau verbessert?
 Hˆnower Str.: Asphalt	Q0 18660,9410 18735,9421
 Hˆnower Str.: Kopfsteinpflaster	Q3 18735,9421 18765,9426 18846,9532 18875,9570
@@ -8546,7 +8547,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="7"
-#: last_checked: 2022-05-02
+#: last_checked: 2022-07-16
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Br¸cke/MonimbÛplatz): Asphalt mit einigen Sch‰den	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 R¸dersdorfer Str. [R¸ckseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -13270,11 +13271,13 @@ Ludwigsluster Str.: Beton und Asphalt mit erheblichen Sch‰den	Q2 22906,12766 229
 Ludwigsluster Str.: Beton mit einigen Sch‰den	Q1+ 22780,12567 22688,12489 22607,12422
 #: corrected_by: srt (Beton -> Asphalt)
 Ludwigsluster Str.: Asphalt	Q0 22607,12422 22568,12408
-#: corrected_by: srt (guter Beton -> ...)
+#: corrected_by: srt (guter Beton -> Beton mit einigen Sch‰den	Q1+ -> ... neu gemacht)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1222045.php (Bauarbeiten zwischen Gadebuscher Str. und Lion-Feuchtwanger-Str.)
-#: add_fragezeichen: Ist die Qualit‰t nach den Bauarbeiten besser geworden?
-#: next_check: 2022-07-08
-Ludwigsluster Str.: Beton mit einigen Sch‰den	Q1+ 22568,12408 22472,12343 22385,12268 22292,12198
+# REMOVED --- #: add_fragezeichen: Ist die Qualit‰t nach den Bauarbeiten besser geworden? --- #: next_check: 2022-07-08
+#: note: der nˆrdliche zum Parken benutzte Streifen besteht weiterhin aus Beton
+Ludwigsluster Str.: Asphalt	Q0 22568,12408 22472,12343
+#: corrected_by: srt (guter Beton -> ...)
+Ludwigsluster Str.: Beton mit einigen Sch‰den	Q1+ 22472,12343 22385,12268 22292,12198
 Ludwigsluster Str.: guter Beton	Q0- 22775,12984 22883,13013
 #: corrected_by: srt (guter Asphalt -> ...)
 Sulzfelder Str.: guter Beton	Q0- 15134,16499 15120,16349
@@ -13409,9 +13412,12 @@ Heesestr.: sehr guter Asphalt	Q0 21611,9893 21594,9895 21534,9901 21371,9923 211
 #: confirmed_by ^^^
 #: confirmed_by: srt
 Parchimer Str.: guter Beton	Q1 22319,12637 22272,12610 22258,12573 22257,12481 22212,12422 22212,12403
-#: corrected_by: srt (guter Beton -> schadhafter Beton)
+#: corrected_by: srt (guter Beton -> ...)
 Parchimer Str.: schadhafter Beton	Q2+ 22212,12403 22215,12303 22225,12281
-Parchimer Str.: guter Beton	Q1 22225,12281 22292,12198 22304,12157
+#: confirmed_by: srt
+Parchimer Str.: guter Beton	Q1 22225,12281 22292,12198
+#: corrected_by: srt (guter Beton -> ...)
+Parchimer Str.: Asphalt	Q0- 22292,12198 22304,12157
 #: corrected_by: srt (m‰ﬂiger Beton -> ...)
 Arberstr.: Asphalt mit einigen Sch‰den	Q1 19392,9116 19406,9236
 Arberstr.: m‰ﬂiger Beton	Q1 19406,9236 19424,9502

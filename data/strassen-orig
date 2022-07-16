@@ -6115,6 +6115,8 @@ Sewanstr. [Wohngebiet]	N 18266,9853 18210,9989
 Sewanstr. [Wohngebiet]	N 18066,9770 17997,9929
 Sewanstr. [Wohngebiet]	N 17883,10185 17705,10232 17624,10249 17605,10199
 Sewanstr. [Wohngebiet, zur Balatonstr.]	N 17741,10386 17729,10331 17705,10232
+#: osm.highway: service
+Sewanstr. [Parkplatz]	N 17624,10249 17642,10316
 (Fußweg zum Wohngebiet Sewanstr.)	NN 17882,10128 17889,10163 17883,10185
 Otto-Schmirgal-Str.	N 18554,10354 18512,10337 18484,10326 18404,10294 18340,10269 18319,10249
 Otto-Schmirgal-Str.	N 18404,10294 18418,10263 18328,10225
@@ -15087,7 +15089,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2022-07-03
+#: last_checked: 2022-07-16
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15470,7 +15472,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2022-07-03
+#: last_checked: 2022-07-16
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -15481,8 +15483,8 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 (Weg im Grünzug)	NN 17391,9746 17316,9797 17257,9869 17161,9921 17005,9953 16963,9960 16886,9982 16841,9997
 (Dolgenseestr. - Weg im Grünzug)	NN 17275,9892 17257,9869
 Balatonstr.	N 17791,10375 17793,10382 17822,10490 17823,10495 17828,10514
-Balatonstr.	N 17479,10452 17741,10386 17791,10375 17915,10350 17946,10344
-Upstallweg (Friedrichsfelde)	NN 17946,10344 17954,10367 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
+Balatonstr.	N 17479,10452 17741,10386 17791,10375 17915,10350 17946,10344 17954,10367
+Upstallweg (Friedrichsfelde)	NN 17954,10367 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 Bühler Weg	N 11216,1293 11250,1189 11636,955 11681,1031
 Battenheimer Weg	N 11762,1040 11681,1031 11393,1243
 Kirchstr. (Zehlendorf)	N 600,2922 758,2870

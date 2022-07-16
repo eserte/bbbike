@@ -3018,10 +3018,11 @@ Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14621,10062 14702
 Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14747,10108 14702,10020
 Dora-Benjamin-Park: Verbundsteinpflaster	Q1 14788,9976 14817,10031
 Balatonstr.: mäßiger Beton	Q2 17479,10452 17741,10386
-Balatonstr.: mäßiger Beton	Q1 17741,10386 17791,10375 17915,10350 17946,10344
+Balatonstr.: mäßiger Beton	Q1 17741,10386 17791,10375 17915,10350 17946,10344 17954,10367
 Balatonstr.: mäßiger Beton	Q1 17791,10375 17793,10382 17822,10490 17823,10495
 (Balatonstr. - Sewanstr.): Beton	Q1 17741,10386 17729,10331 17705,10232 17624,10249 17605,10199
 Sewanstr. [Wohngebiet]: Beton	Q1 17883,10185 17705,10232
+Sewanstr. [Parkplatz]: Beton	Q1 17624,10249 17642,10316
 Rienzistr.: Kopfsteinpflaster	Q2 17898,9564 18121,9488
 Marksburgstr.: Asphalt	Q0 18070,9292 18172,9250 18319,9218
 Ilsestr. (Karlshorst, Rummelsburg): Beton	Q0 18354,9575 18164,9623 18158,9625 18121,9488 18070,9292 18037,9195 18021,9127
@@ -3113,7 +3114,7 @@ Wörther Str.: aufgepflasterte Abschnitte	Q1 11247,14578 11317,14564
 Park am Karlsbad: wassergebundene Decke	Q1 8143,10903 8190,10960
 Singerstr.: Asphalt	Q0 11920,12266 12081,12236
 Puderstr.: Asphalt	Q0 14614,9052 14567,8966 14525,8894 14492,8853 14363,8738
-Upstallweg (Lichtenberg): Beton	Q0 17946,10344 17954,10367 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
+Upstallweg (Lichtenberg): Beton	Q0 17954,10367 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 Hönower Str.: Asphalt	Q0 18660,9410 18735,9421
 Hönower Str.: Kopfsteinpflaster	Q3 18735,9421 18765,9426 18846,9532 18875,9570
 Hönower Str.: Asphalt	Q0 18660,9410 18626,9406
@@ -11298,7 +11299,8 @@ Ludwigsluster Str.: guter Beton	Q0 22896,12827 22906,12766
 Ludwigsluster Str.: Beton und Asphalt mit erheblichen Schäden	Q2 22906,12766 22906,12707 22891,12673 22780,12567
 Ludwigsluster Str.: Beton mit einigen Schäden	Q1 22780,12567 22688,12489 22607,12422
 Ludwigsluster Str.: Asphalt	Q0 22607,12422 22568,12408
-Ludwigsluster Str.: Beton mit einigen Schäden	Q1 22568,12408 22472,12343 22385,12268 22292,12198
+Ludwigsluster Str.: Asphalt	Q0 22568,12408 22472,12343
+Ludwigsluster Str.: Beton mit einigen Schäden	Q1 22472,12343 22385,12268 22292,12198
 Ludwigsluster Str.: guter Beton	Q0 22775,12984 22883,13013
 Sulzfelder Str.: guter Beton	Q0 15134,16499 15120,16349
 John-Locke-Str.: Asphalt	Q0 10511,-1985 10513,-1954 10537,-1785 10539,-1689 10531,-1633 10508,-1511 10496,-1486 10460,-1471 10258,-1474
@@ -11368,7 +11370,8 @@ Heerstr.: Beton	Q0 22129,9702 21988,9766 21859,9822 21842,9829 21749,9856 21691,
 Heesestr.: sehr guter Asphalt	Q0 21611,9893 21594,9895 21534,9901 21371,9923 21164,9960
 Parchimer Str.: guter Beton	Q1 22319,12637 22272,12610 22258,12573 22257,12481 22212,12422 22212,12403
 Parchimer Str.: schadhafter Beton	Q2 22212,12403 22215,12303 22225,12281
-Parchimer Str.: guter Beton	Q1 22225,12281 22292,12198 22304,12157
+Parchimer Str.: guter Beton	Q1 22225,12281 22292,12198
+Parchimer Str.: Asphalt	Q0 22292,12198 22304,12157
 Arberstr.: Asphalt mit einigen Schäden	Q1 19392,9116 19406,9236
 Arberstr.: mäßiger Beton	Q1 19406,9236 19424,9502
 Arberstr.: Asphalt	Q0 19424,9502 19437,9653

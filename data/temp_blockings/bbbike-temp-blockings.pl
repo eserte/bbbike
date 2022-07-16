@@ -29321,7 +29321,7 @@ EOF
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-06-29 (osm)
+#: last_checked: 2022-07-16
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -32368,7 +32368,7 @@ EOF
 #: next_check_id: ABBESTR-2021
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
 #: note: reopened, es gibt wieder Bauzäune; Juni 2022: mittlerweile gibt es zumindest auf der Nordseite eine Radweg-Beschilderung, deshalb q3 -> q2
-#: osm_watch: way id="152832871" version="16"
+#: osm_watch: way id="152832871" version="17"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2022-06-11
 #: check_frequency: 60d
@@ -35642,6 +35642,18 @@ EOF
        source_id => 'LS/73-H/22/007',
        data  => <<EOF,
 	2::inwork 22726,18834 22709,19109
+EOF
+     },
+     { from  => undef, # 
+       until => $isodate2epoch->("2022-07-29 18:00:00"), # undef, # XXX
+       text  => 'Hauffstr.: Einbahnstraßenregelung vor der Pfarrstr., offen Richtung Westen, voraussichtlich bis 29. Juli 2022',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX Halteverbote gelten bis 29.7.2022
+#: also_indoor: traffic (none)
+#: last_checked: 2022-07-16
+#: next_check: 2022-07-29
+	q4::inwork; 15356,11338 15458,11306
 EOF
      },
     );

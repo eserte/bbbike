@@ -607,7 +607,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg,
 #: osm_watch: way id="140336721" version="25"
 #: note: früher "teilweise verwinkelte Wegführung des Radwegs - q1-::inwork;"
 Turmstr.: Bauarbeiten, Engstellen	q2+::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321
-#: osm_watch: way id="30195541" version="26"
+#: osm_watch: way id="30195541" version="27"
 Turmstr.: Bauarbeiten, Engstellen	q1-::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: next_check ^^^
 #: check_frequency ^^^
@@ -1646,7 +1646,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://berliner-abendblatt.de/2022/05/05/bahnhof-lichtenberg-enhaltestelle-der-strassenbahn-wird-verlegt/
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1212005.php (Bauarbeiten nicht vor 2025)
 #: osm_watch: way id="223184082" version="7"
-#: last_checked: 2022-03-18
+#: last_checked: 2022-07-16
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 #: next_check: 2025-12-31
@@ -1964,8 +1964,10 @@ Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
 #: XXX_prog BS an der Lückstr. (ansonsten wäre es q1)
 (Blockpark): Fußgänger, Bordstein	q2 16300,10753 16265,10681
 (Blockpark): Fußgänger	q1 16265,10681 16246,10641 16193,10593
+#: XXX_prog BS an der Balatonstr. (ansonsten q1)
+Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg, Bordstein	q2 17954,10367 18039,10398
 #: note: an Wochenmarkt-Tagen (Heinrich-Dathe-Platz) besonders im östlichen Abschnitt mehr Fußgänger
-Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17946,10344 17954,10367 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
+Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 Mayschweg: Fußgänger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fußgänger	q2 25571,4553 25658,4619
 Müggelpark: Fußgänger	q2 25695,4714 25658,4619 25656,4578 25772,4543
@@ -2403,7 +2405,7 @@ Lion-Feuchtwanger-Str.: Fußgänger, Rampe	q2 22538,12955 22562,12944 22591,12959
 #: XXX_prog BS am nördlichen Ende (ansonsten q1)
 #: XXX bleibt es beim Bordstein? Möglicherweise nur wegen der benachbarten Hochbauarbeiten?
 #: osm_watch: way id="733001657" version="4"
-#: last_checked: 2021-08-07
+#: last_checked: 2022-07-16
 #: check_frequency: 360d
 Lion-Feuchtwanger-Weg: Fußgänger, Bordstein	q3 22516,12946 22493,12999
 (Erich-Kästner-Str. - Peter-Huchel-Str.): eng, Fußgänger	q2 23070,13711 23042,13657 23060,13624 23052,13586 23019,13551 23007,13509
@@ -2931,7 +2933,13 @@ Straße 17: kurze Rampe	q3 7307,7435 7296,7443
 (Lortzingstr. - Mauerpark): einige Fußgänger	q1 10037,15421 10052,15429 10070,15438 10076,15455 10092,15461 10105,15454 10127,15463 10155,15473 10186,15481
 (Lortzingstr. - Mauerpark): einige Fußgänger	q1 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
 (Weg im erweiterten Mauerpark - über den Gleimtunnel): einige Fußgänger	q2 10070,15626 10091,15630
-(Lauinger Str. - Biesdorfer Friedhofsweg/Alt-Biesdorf): einige Fußgänger	q1 21221,11398 21311,11528
+#: by: https://pascalgrothe.de/neues-lagerhaus-entsteht-in-der-launigen-strasse/
+#: by: https://pascalgrothe.de/lagerhaus-in-der-lauinger-strasse-waechst-in-die-hoehe/
+#: XXX: früher (wiederherstellen!): einige Fußgänger, q1
+#: osm_watch: way id="965996899" version="1"
+#: last_checked: 2022-07-16
+#: check_frequency: 45d
+(Lauinger Str. - Biesdorfer Friedhofsweg/Alt-Biesdorf): einige Fußgänger, Engstelle wegen Hochbauarbeiten	q2 21221,11398 21311,11528
 #: XXX_prog mit Anhänger allerdings q1 oder sogar q2
 Eigerstr.: einige Bodenschwellen, können aber umfahren werden	q0- 12825,17870 12882,17895 12902,17933 12945,17958 12994,17986 13036,18010 13043,18126 13042,18152
 Wischbergweg: sehr enger Pfad	q4 13733,18161 13751,18180
@@ -3547,6 +3555,7 @@ Waldpromenade: schmaler Weg	q2 23473,8114 23376,8186 23261,8274 23149,8364 23047
 (Lessingstr. - Waldpromenade): schmaler Weg	q2 23180,8379 23149,8364
 (Klopstockstr. - Waldpromenade): enger Pfad	q3 23086,8449 23047,8439
 (Wielandstr. - Waldpromenade): schmaler Weg	q2 22976,8526 22974,8491
+#: note: Grünanlage, keine Zusatzschilder
 (Frankfurter Allee - Albert-Hößler-Str./Harnackstr.): einige Fußgänger	q1 16190,11872 16115,11791 16099,11786
 (Charité-Campus Benjamin Franklin): Krankenhausgelände	q1 4926,3749 4884,3822 4884,3840 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
 (Görlitzer Park, zur Forster Str.): Fußgänger	q2 12670,10160 12592,10112 12564,10121 12556,10116
