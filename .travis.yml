@@ -52,6 +52,9 @@ matrix:
     - dist: focal
       perl: 5.32
       env: BBBIKE_TEST_SKIP_MODPERL=1
+    - dist: focal
+      perl: 5.36
+      env: BBBIKE_TEST_SKIP_MODPERL=1
 
 ## ppc64le builds (fallback only)
 #    - dist: focal
