@@ -407,6 +407,7 @@ EOF
 	if (!$distnumver) {
 	    error "No support for --perl-ver and $opt{dist}:$opt{distver}";
 	}
+	# alternatively the tarballs are also available on https://storage.googleapis.com/travis-ci-language-archives/perl/binaries/$opt{dist}/$distnumver.04/x86_64/perl-$short_perl_ver.tar.bz2
 	$dockerfile .= <<EOF;
 RUN apt-get install -qqy bzip2
 RUN wget https://s3.amazonaws.com/travis-perl-archives/binaries/$opt{dist}/$distnumver/x86_64/perl-$short_perl_ver.tar.bz2
