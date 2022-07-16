@@ -71,8 +71,28 @@ init_apt() {
 	else
 	    if [ ! -e /etc/apt/sources.list.d/mydebs.bbbike.list ]
 	    then
-	        wget --connect-timeout=10 --tries=5 -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | sudo apt-key add -
-	        sudo sh -c "echo deb http://mydebs.bbbike.de ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~"
+		MYDEBS_BBBIKE_DE_PORTSPEC=
+		# Usually wget is able to download the key on 2nd attempt,
+		# but this would mask the still existing network problem,
+		# so use only 1 try if fallback operation is enabled.
+		if [ "$TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT" = 1 ]
+		then
+		    FIRST_WGET_TRIES=1
+		else
+		    FIRST_WGET_TRIES=5
+		fi
+	        wget --connect-timeout=10 --tries=$FIRST_WGET_TRIES -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key > /tmp/mydebs.bbbike.key || {
+		    if [ "$TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT" = 1 ]
+		    then
+			MYDEBS_BBBIKE_DE_PORTSPEC=:8000
+			wget --connect-timeout=10 --tries=5 -O- http://mydebs.bbbike.de${MYDEBS_BBBIKE_DE_PORTSPEC}/key/mydebs.bbbike.key > /tmp/mydebs.bbbike.key
+		    else
+			echo "Cannot fetch mydebs.bbbike.key and TRY_MYDEBS_BBBIKE_DE_FALLBACK_PORT not specified"
+			false
+		    fi
+		}
+	        sudo apt-key add /tmp/mydebs.bbbike.key
+	        sudo sh -c "echo deb http://mydebs.bbbike.de${MYDEBS_BBBIKE_DE_PORTSPEC} ${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~"
 	        sudo mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
 	    fi
 	fi
