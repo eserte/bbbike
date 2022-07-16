@@ -446,7 +446,16 @@ WORKDIR bbbike
 # "-e" -> init_travis must not be run anymore
 # init_env_vars does not work in a Dockerbuild environment. Set some env vars manually
 ENV CODENAME $opt{distver}
+EOF
 
+    # Apply --build-env
+    for my $key (sort keys %{ $opt{'build-env'} }) {
+	$dockerfile .= <<EOF;
+ENV $key "$opt{'build-env'}->{$key}"
+EOF
+    }
+
+    $dockerfile .= <<EOF;
 RUN /bin/bash --login -e -c "wrapper init_perl"
 RUN /bin/bash --login -e -c "wrapper init_apt"
 RUN /bin/bash --login -e -c "wrapper install_non_perl_dependencies"
@@ -886,6 +895,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       src     => 'github',
 	       branch  => undef,
 	       env     => {},
+	       'build-env' => {},
 	       'with-data-build' => 0,
 	       'no-cache' => 0,
 	       'invalidate-apt' => 0,
@@ -899,6 +909,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       "src=s",
 	       'branch=s',
 	       'env=s%',
+	       'build-env=s%',
 	       "with-data-build!",
 	       'no-cache',
 	       'invalidate-apt!',
