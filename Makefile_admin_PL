@@ -59,9 +59,16 @@ if (-d $patched_marek_pod_html) {
     #    cd ~/work2
     #    git clone https://github.com/eserte/MarekPodHtml.git
     #    cd MarekPodHtml
-    #    perl Makefile.PL && make all test
+    #    perl5.20.3 Makefile.PL && make all test
     #
-    $pod2html = "$^X -I$patched_marek_pod_html/blib/lib $patched_marek_pod_html/blib/script/mpod2html";
+    my $old_perl = 'perl5.20.3'; # with recent perls there are "Bizarre copy of ARRAY" errors --- need an old perl here
+    if (!is_in_path($old_perl)) {
+	warn <<EOF;
+NOTE: no old perl ($old_perl) available, which is required for
+      generating the html documentation. Please compile or get one.
+EOF
+    }
+    $pod2html = "$old_perl -I$patched_marek_pod_html/blib/lib $patched_marek_pod_html/blib/script/mpod2html";
 } else {
     warn <<EOF;
 NOTE: no patched MarekPodHtml available, which is required for
