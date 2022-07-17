@@ -1703,7 +1703,7 @@ Invalidenstr.	H 8098,13419 8003,13374 7880,13315 7842,13292 7816,13276 7759,1324
 #: by: https://www.berliner-woche.de/moabit/c-verkehr/arbeiten-fuer-m10-schreiten-voran_a336662
 #: XXX weitere Einschränkungen für den Kfz-Verkehr (nicht eingezeichnet): Turmstr. Richtung Westen zwischen Rathenower Str. und Lübecker Str. gesperrt (Radweg existiert); Thusnelda-Allee gesperrt (Radweg existiert); neu: Alt-Moabit zwischen Paulstr. und Lüneburger Str.; außerdem sind diverse Ampeln ausgeschaltet
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-06-11 vvv
+#: last_checked: 2022-07-17 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2022-12-22 vvv
 #: valid: 20220119-20221222 vvv
@@ -4158,7 +4158,7 @@ Goerdelersteg	NN 3656,14150 3634,14187 3625,14230 3601,14284 3595,14267
 (Goerdelersteg - Goerdelerdamm/Tegeler Weg)	NN 3165,14103 3129,14112 3025,14099
 Gaußstr. (Charlottenburg)	H 3739,13563 3833,13590 4098,13664 4186,13710
 Sickingenbrücke	H 4186,13710 4265,13742
-Sickingenstr.	H 4265,13742 4421,13793 4583,13845 4963,13969 5100,14014 5220,14043
+Sickingenstr.	H 4265,13742 4421,13793 4583,13845 4963,13969 5089,14010 5220,14043
 Neues Ufer	N 4223,13949 4265,13742
 Neues Ufer	H 4265,13742 4283,13660
 Neues Ufer	N 4283,13660 4363,13336 4381,13239 4456,12918 4461,12896
@@ -9793,7 +9793,7 @@ Kundtanger	N 20868,18926 20865,18933 20858,18961 20855,19030 20833,19037 20807,1
 Am Dörferweg	N 20790,18892 20868,18926 20889,18935 20951,18961 20998,18980 21021,18989
 #: next_check_id: FALKENBERG-2021
 #: XXX Wann wird die Verbindung zurückgebaut?
-#: last_checked: 2022-03-20
+#: last_checked: 2022-03-27 (mapillary)
 #: check_frequency: 150d
 (Am Dörferweg - Barnimer Dörferweg)	NN 20951,18961 20948,18968
 Johann-Jacob-Engel-Str.	N 20743,18540 20727,18576 20701,18634 20702,18662 20727,18726 20760,18812 20790,18892
@@ -11015,7 +11015,7 @@ Lindower Str.	N 7745,15160 7929,15355
 Tegeler Str. (Wedding)	N 7458,14643 7429,14667 7353,14767
 # REMOVED (wird demnächst entfernt) --- Tegeler Str. (Wedding)	N 7353,14767 7308,14814
 Tegeler Str. (Wedding)	N 7308,14814 7259,14870 7209,14927 7182,14986 7178,14996 7131,15109 7085,15226 6996,15319
-Birkenstr. (Moabit)	N 6935,13645 6760,13714 6686,13746 6493,13822 6365,13879 6227,13938 6212,13944 6165,13962 6093,13990 6006,14024 5943,14049
+Birkenstr. (Moabit)	N 6935,13645 6810,13694 6760,13714 6686,13746 6493,13822 6365,13879 6227,13938 6212,13944 6165,13962 6093,13990 6006,14024 5943,14049
 Lübecker Str. (Moabit)	N 6365,13879 6366,13716 6377,13321
 Wilsnacker Str.	N 6757,13112 6814,13349 6783,13551 6760,13714 6746,13826 6646,13951
 Kruppstr.	N 6746,13826 6817,13862 6890,13900 6917,13917 7331,14132
@@ -18539,8 +18539,8 @@ Eyke-von-Repkow-Platz	N 5531,12501 5497,12448
 Wiebestr.	NN 4495,13107 4527,13244
 Wiebestr.	N 4542,13244 4553,13294 4605,13525 4619,13708 4583,13845
 Klarenbachstr.	N 4553,13294 4363,13336
-Rostocker Str. (Moabit)	N 5100,14014 5109,13823 5116,13457
-Wittstocker Str.	N 4972,13804 5109,13823 5231,13843
+Rostocker Str. (Moabit)	N 5089,14010 5100,13822 5116,13457
+Wittstocker Str.	N 4972,13804 5100,13822 5231,13843
 Heisenbergstr.	N 4961,12940 5120,12963
 Schlesingerstr.	N 4932,12968 4990,13069
 Kucharskistr.	N 4865,12984 4829,13089
@@ -19934,7 +19934,7 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_23_1913_2052_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: note: provisorisch asphaltiert, provisorisch beleuchtet, gelbe Begrenzungslinie zwischen Rad- und Gehwegbereich
 #: source_id: 2147346962 (hier: Einschränkungen an der Gegenfahrbahn, bis 31.1.2025)
-#: last_checked: 2022-06-24
+#: last_checked: 2022-07-17
 #: check_frequency: 180d
 #: next_check: 2025-01-31
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913

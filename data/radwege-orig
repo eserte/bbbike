@@ -170,7 +170,7 @@ Busspur ist nicht für Radfahrer freigegeben	RW1; 7829,9723 7938,9694
 # REMOVED (existiert nicht mehr) ---	RW1;RW1 7033,10328 7060,10221 7080,10098
 	RW1;RW1 7033,10396 7003,10513 6982,10610 6972,10665
 	RW1;RW3 6972,10665 6929,10852
-	RW3; 7033,10396 7033,10328
+	RW4; 7033,10396 7033,10328
 Busspur ist immer gültig	RW5; 7033,10328 7033,10396
 	RW3;RW1 6824,10904 6918,10858 6929,10852
 	RW2;RW2 6532,10529 6685,10690 6740,10755
@@ -193,7 +193,7 @@ Busspur gilt 7-22 Uhr	RW5; 5986,10976 5829,10964 5716,10978 5652,11004
 Busspur gilt 7-22 Uhr	RW5; 5652,11004 5542,11075
 Busspur ist immer gültig	RW5; 5542,11075 5652,11004
 	RW1;RW8 6873,11011 6742,11099 6626,11178 6582,11202
-	RW10; 6825,11486 6851,11346 6880,11110
+für Radfahrer freigegebene Busspur ist immer gültig	RW10; 6825,11486 6851,11346 6880,11110
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW10; 6880,11110 6851,11346
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 6851,11346 6825,11486
 	RW2;RW2 6825,11486 6809,11570 6778,11742 6744,11936
@@ -284,12 +284,12 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-07-13
+#: last_checked: 2022-07-17
 #: check_frequency: 14d
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 13596,10722 13678,10685 13779,10642 13919,10583
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-07-13
+#: last_checked: 2022-07-17
 #: check_frequency: 90d
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489
 provisorische Radspur	RW4; 13919,10583 13986,10549 14103,10489
@@ -2100,7 +2100,8 @@ Radspur links von der Fahrspur	RW3; 9793,9241 9753,9252
 #: by: rjoop
 #: confirmed_by: srt
 Gehweg für Radfahrer frei	RW1; 6661,13130 6573,13149 6500,13164 6390,13187 6214,13225
-Radweg teilweise nur aufgemalt	RW1;RW1 6935,13645 6760,13714
+Radweg teilweise nur aufgemalt	RW1;RW1 6935,13645 6810,13694
+	RW0;RW0 6810,13694 6760,13714
 	RW1;RW1 6760,13714 6686,13746 6493,13822
 	RW0;RW1 6493,13822 6365,13879 6227,13938
 	RW0;RW4 6227,13938 6212,13944 6165,13962
@@ -2115,8 +2116,8 @@ Busspur ist immer gültig	RW5; 7123,14367 7180,14419
 	RW3;RW3 6230,13596 6366,13716 6493,13822 6646,13951 6730,14021
 	RW3;RW4 7104,14403 7123,14367
 	RW3;RW3 4186,13710 4265,13742 4421,13793 4583,13845
-Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1; 4583,13845 4963,13969 5100,14014 5220,14043
-Gehwegplatten/Verbundsteinpflaster, hereinragende parkende Autos	RW1; 5220,14043 5100,14014 4963,13969 4583,13845
+Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1; 4583,13845 4963,13969 5089,14010 5220,14043
+Gehwegplatten/Verbundsteinpflaster, hereinragende parkende Autos	RW1; 5220,14043 5089,14010 4963,13969 4583,13845
 # REMOVED --- #: XXX Bauarbeiten, später gibt's hier eine Radspur --- #: by: http://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Sickingenstrasse-Huttenstrasse-Verkehrsbe.7507.0.html --- #: XXX laut osm ist die Radspur fertig --- die Benutzungspflicht noch prüfen --- #: last_checked: 2017-10-08
 # REMOVED --- Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1;RW1 5306,14061 5322,14044 5443,14028 --- Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1; 5443,14028 5647,14067 --- existierender Radweg explizit abgesperrt	RW0; 5647,14067 5443,14028 --- Radweg teilweise nur aufgemalt, hereinragende parkende Autos	RW1;RW1 5647,14067 5708,14077 5746,14090
 #: note: alter Bürgersteigradweg existiert teilweise noch zusätzlich
@@ -2323,7 +2324,7 @@ Radspur zwischen Fahrspuren	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2022-06-17 vvv
+#: last_checked: 2022-07-17 vvv
 #: next_check: 2024-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
@@ -2568,7 +2569,7 @@ Verbundsteinpflaster	RW1;RW1 9161,5535 8968,5554 8887,5564 8767,5571 8724,5570 8
 	RW6; 6257,7646 6238,7645 6241,7428 6256,7428
 	RW3;RW3 6454,8653 6461,8463 6459,8281 6459,8272 6460,8186 6460,8093
 Gehwegplatten mit einigen Unebenheiten	RW1;RW1 7126,9825 7122,9517 7118,9315
-	RW6;RW6 7882,9490 7829,9485 7771,9479
+	RW6;RW6 7882,9490 7829,9485
 	RW1;RW1 6998,11003 7086,10979
 	RW3;RW2 7086,10979 7149,10961
 	RW3;RW3 7149,10961 7236,10936 7415,10883 7534,10850 7820,10768
@@ -5477,7 +5478,7 @@ asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünmarkierung?) vvv
-#: last_checked: 2022-06-24 vvv
+#: last_checked: 2022-07-17 vvv
 #: check_frequency: 60d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
@@ -6074,10 +6075,12 @@ Busspur gilt Mo-Fr 14-18 Uhr	RW5; 21187,15350 21228,15449 21242,15529
 	RW3; 21398,13906 21421,13905 21466,13903
 	RW1;RW1 21398,13906 21358,13909
 #: note: Krankenhausgelände UKB Marzahn vvv
-Tempo 10	RW6;RW6 21573,12140 21581,12182 21570,12191 21575,12212 21589,12217 21608,12320 21655,12521 21642,12538 21651,12569 21666,12577 21710,12798 21729,12894 21765,13069
+#: note: inkonsistente Ausschilderung: von Süden (Haupteinfahrt) her 10km/h, von Norden her (Einfahrt nur für Radfahrer möglich) verkehrsberuhigter Bereich
+# REMOVED (hier nicht) --- Tempo 10	RW6;RW6 21573,12140 21581,12182 21570,12191 21575,12212 21589,12217
+Tempo 10	RW6;RW6 21589,12217 21608,12320 21655,12521 21642,12538 21651,12569 21666,12577 21710,12798 21729,12894 21765,13069
 Tempo 10	RW6;RW6 21710,12798 21866,12763 21893,12783 21900,12820 21880,12858 21729,12894
 Tempo 10	RW6;RW6 21666,12577 21674,12565 21671,12532 21655,12521
-Tempo 10	RW6;RW6 21589,12217 21602,12208 21598,12185 21581,12182
+# REMOVED (hier nicht) --- Tempo 10	RW6;RW6 21589,12217 21602,12208 21598,12185 21581,12182
 #: note ^^^
 Verbundsteinpflasterradweg	RW1; 16628,10442 16699,10611
 die letzten Meter sind benutzungspflichtig	RW1; 22365,6149 22467,6135
@@ -6932,7 +6935,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2022-07-02
+#: last_checked: 2022-07-17
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -7257,7 +7260,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="23"
 #: osm_watch: way id="335487059" version="21"
-#: last_checked: 2022-07-02 vvv
+#: last_checked: 2022-07-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-01-01 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312

@@ -1642,7 +1642,7 @@ Werderstr.: unebenes Kleinsteinpflaster	Q2- 8968,5554 8981,5692
 Werderstr.: asphaltiert	Q0 8981,5692 8996,5823
 Werderstr.: Kopfsteinpflaster	Q2; 8996,5823 8996,5956
 Werderstr.: provisorischer Asphalt	Q1-; 8996,5956 8996,5823
-Wikingerufer: Kopfsteinpflaster	Q2 5354,12552 5376,12661 5376,12781 5341,12875 5350,12906
+Wikingerufer: Kopfsteinpflaster	Q2- 5354,12552 5376,12661 5376,12781 5341,12875 5350,12906
 Wullenweberstr.: eher unangenehmes Kopfsteinpflaster	Q2- 5354,12552 5372,12538 5427,12495 5497,12448 5524,12430 5657,12339
 (Gemeindewäldchen): Parkweg	Q1 452,3133 71,3179
 Beerenstr.: Kopfsteinpflaster	Q2 71,3179 -107,3194 -179,3204 -300,3219 -434,3236 -530,3241 -654,3249 -779,3257 -1026,3321
@@ -6274,7 +6274,7 @@ Am Dörferweg: Asphalt	Q0 20790,18892 20868,18926 20889,18935
 # 
 #: next_check_id: FALKENBERG-2021
 #: XXX: letzte Deckschicht fehlt noch
-#: last_checked: 2022-03-20
+#: last_checked: 2022-03-27 (mapillary)
 #: check_frequency: 150d
 Am Dörferweg: provisorischer Asphalt	Q1+ 20889,18935 20951,18961 20998,18980 21021,18989
 # 
@@ -9273,7 +9273,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2022-07-10 vvv
+#: last_checked: 2022-07-17 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -11105,6 +11105,7 @@ Fellbacher Str.: Kopfsteinpflaster	Q2 3610,23272 3653,23305
 (Weg zum großen Bunkerberg): kleinteiliges Kopfsteinpflaster	Q1- 12307,13329 12355,13366 12391,13416 12386,13452 12305,13514 12232,13523 12197,13488 12196,13453 12235,13383 12274,13372 12327,13394 12344,13424 12307,13491 12254,13495 12232,13477 12246,13440 12278,13418 12287,13443
 Torstr. - Weydingerstr.: Verbundsteinpflaster	Q1+ 11079,13492 11111,13518
 Wilhelmine-Gemberg-Weg: Steinpflaster	Q1+ 11715,11522 11767,11662 11821,11733
+#: note: mittlerweile sind große Flächen überasphaltiert, aber dadurch ist die Qualität auch nicht besser
 Alexanderplatz: Pflasterung mit Schäden	Q1- 11055,12717 11030,12741 11007,12773 10970,12822
 Alexanderplatz: Pflasterung mit Schäden	Q1- 11030,12741 11087,12780
 (Zufahrt Debis-Parkhaus und "Gleis Park"): Asphalt	Q0 8430,10710 8424,10703 8367,10745
@@ -28754,9 +28755,9 @@ Wiebestr.: Kopfsteinpflaster	Q2 4605,13525 4619,13708 4583,13845
 #: confirmed_by: srt
 Klarenbachstr.: Asphalt	Q0 4553,13294 4363,13336
 #: confirmed_by: srt
-Rostocker Str. (Tiergarten): Kopfsteinpflaster mit Bodenwellen	Q2 5100,14014 5109,13823 5116,13457
+Rostocker Str. (Tiergarten): Kopfsteinpflaster mit Bodenwellen	Q2 5089,14010 5100,13822 5116,13457
 #: confirmed_by: srt (zumindest das Pflaster)
-Wittstocker Str.: Kopfsteinpflaster mit Bodenwellen	Q2 4972,13804 5109,13823 5231,13843
+Wittstocker Str.: Kopfsteinpflaster mit Bodenwellen	Q2 4972,13804 5100,13822 5231,13843
 #: confirmed_by: srt (added "unebener")
 Mierendorffplatz: unebener Parkweg	Q2 3707,13274 3583,13313
 #: confirmed_by: srt
@@ -28871,8 +28872,8 @@ Mehlbeerenweg: Asphalt	Q0 11993,11978 11940,11982 11909,11985
 Kleine Markusstr.: Beton	Q1 12059,12172 11958,12195 11937,12127
 (nördliches Spreeufer): Parkweg	Q1 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nördliches Spreeufer): Parkweg	Q1 5871,12595 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307 5550,12305 5484,12320 5411,12380 5362,12469
-#: corrected_by: srt (Parkweg -> asphaltiert, Q2 -> Q1)
-(nördliches Spreeufer): asphaltiert mit Rillen	Q1 5362,12469 5356,12494 5372,12538
+#: corrected_by: srt (Parkweg -> asphaltiert, Q2 -> Q1; später doch Q2+)
+(nördliches Spreeufer): asphaltiert mit Ablaufrinnen	Q2+ 5362,12469 5356,12494 5372,12538
 (nördliches Spreeufer): Parkweg	Q1 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 (nördliches Spreeufer): Parkweg mit Kanten	Q2 5657,12339 5607,12307
 #: confirmed_by: srt
@@ -31170,4 +31171,6 @@ Einmündungsbereich asphaltiert	Q0 8010,14014
 Einmündungsbereich asphaltiert	Q0 7965,14081
 Kreuzungsbereich asphaltiert	Q0 8601,13584
 Kreuzungsbereich asphaltiert	Q0 8674,13593
+Einmündungsbereich mit Kopfsteinpflaster	Q2- 5376,12781
+Wendehammerbereich asphaltiert	Q0 5657,12339
 #: ignore ^^^

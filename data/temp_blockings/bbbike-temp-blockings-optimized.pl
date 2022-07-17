@@ -4515,7 +4515,7 @@ Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 724
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-07-15
+#: last_checked: 2022-07-17
 #: check_frequency: 21d
 #: next_check_id: 2022-08-31
 	q4::inwork; 11329,12497 11209,12430
@@ -4631,8 +4631,8 @@ Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 724
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-07-14 vvv
-#: check_frequency: 4d vvv
+#: last_checked: 2022-07-17 vvv
+#: check_frequency: 3d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
@@ -5686,7 +5686,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)?
 #: add_fragezeichen: Wo genau ist der Uferweg wegen Bauarbeiten gesperrt?
-#: last_checked: 2022-07-12 (mapillary)
+#: last_checked: 2022-07-17
 #: check_frequency: 60d
 #: next_check: 2024-02-12
 #: osm_watch: way id="4410535" version="23"
@@ -5695,7 +5695,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1643583600,
          'id' => 3507,
          'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1172556.php',
-         'text' => 'Spreeuferweg: Bauarbeiten, zwischen Flotowstr. und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Anfang April 2022: Weg ist zumindest in Höhe Lessingbrücke nicht passierbar; Stand Juni 2022: nicht passierbare Stelle in Höhe Flotowstr.)',
+         'text' => 'Spreeuferweg: Bauarbeiten, zwischen Flotowstr. und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Anfang April 2022: Weg ist zumindest in Höhe Lessingbrücke nicht passierbar; Stand Juli 2022: nicht passierbare Stelle in Höhe Flotowstr.)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6217,12 +6217,13 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: KWEISENBAHNBRUECKE-2022
 #: by: https://www.koenigs-wusterhausen.de/1013639/Eisenbahnunterfuehrung
 #: note: zusätzlich existiert ein (zeitlich kürzerer) gesperrt-orig-Eintrag
-	2::inwork 26327,-11708 26395,-11699
+Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
+Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q4 26300,-11727 26301,-11824 26300,-11864
 ',
          'from' => 1656194400,
          'id' => 3574,
          'source_id' => 'https://sbahn.berlin/fileadmin/user_upload/Punkt3/PDF-Archiv/2022/punkt3-Ausgabe12_23.06.2022.pdf',
-         'text' => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, voraussichtlich Sperrung vom 27. Juni 2022 bis 30. Dezember 2024',
+         'text' => 'Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung vom 27. Juni 2022 bis voraussichtlich 30. Dezember 2024, außerdem Einbahnstraßenregelung in der Maxim-Gorki-Str.',
          'type' => 'gesperrt',
          'until' => 1735599599
        },
