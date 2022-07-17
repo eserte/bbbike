@@ -10,6 +10,7 @@
 [% #  Warning: use no-fill in the next line! -%]
 [% SET TESTPLATFORMS = "Linux (Debian jessie, Debian wheezy, Debian squeeze, Debian etch, Ubuntu 12.04, CentOS, Suse 7.0 und 6.4, Red Hat 8.0), FreeBSD (Version 10.0, 9.2, 9.1, 9.0, 8.0, 6.1, 4.9, 4.6, 3.5), Windows (Windows 8, Windows 7, Vista, XP, 2000, NT 4.0, 98, 95), MacOSX (10.4, 10.5 ...), Solaris (Version 8 und 2.5)" -%]
 [% PERL -%]
+push @INC, '.';
 require BBBikeVar;
 $stash->set('BBBIKEVAR_DISPLAY_DISTDIR', $BBBike::DISPLAY_DISTDIR);
 $stash->set('BBBIKEVAR_DISTFILE_SOURCE', $BBBike::DISTFILE_SOURCE);
