@@ -69,37 +69,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.stadtfest.berlin/de/index.html
-#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/strassen-wegen-fest-gesperrt_a170723
-#: by: https://www.stadtfest.berlin/de/index.html (2.+3. Oktober 2021)
-#: by: https://www.siegessaeule.de/magazin/lesbisch-schwules-stadtfest-2021-auf-der-kippe/ (Absage)
-#: by: https://www.stadtfest.berlin/de/index.html?date=20220515
-	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
-	2::temp 6729,10212 6971,10346
-	2::temp 6628,10318 6626,10155
-	2::temp 6487,10277 6628,10318 6719,10347
-	2::temp 6719,10347 6729,10212 6739,10120
-	2::temp 6609,10147 6630,9990
-',
-         'from' => 1657836000,
-         'id' => 74,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              6,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (16.7.2022 und 17.7.2022)',
-         'type' => 'gesperrt',
-         'until' => 1658095199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3164,32 +3134,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html (2021)
-#: by: https://www.berlin.de/events/5979419-2229501-tegeler-hafenfest.html?date=20220613
-#: by: https://berliner-abendblatt.de/2022/07/11/tegeler-hafenfest-startet-am-donnerstag/
-# REMOVED (was) : tempex: 20160714-20160717
-	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
-',
-         'from' => 1657663200,
-         'id' => 2420,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              13,
-                              'months',
-                              7,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.gratis-in-berlin.de/festivals/item/2037758-hafenfest-tegel-2019-mit-programm-und-feuerwerk',
-         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (14.07.2022 bis 17.07.2022)',
-         'type' => 'gesperrt',
-         'until' => 1658095199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4579,7 +4524,7 @@ Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 724
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-07-11
+#: last_checked: 2022-07-18
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -5714,11 +5659,12 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: by: https://www.kiezundkneipe.de/artikel/das-ende-der-lenau-schule (neue Schule ist 2023 fertig)
+#: by: https://www.berliner-woche.de/bezirk-mitte/c-bauen/sanierungen-an-schulen-laufen-auf-hochtouren_a352193 (Neubau der Schule soll Anfang 2024 fertig werden)
 #: note: Die Einbahnstraßenregelung fängt erst 60m nördlich der Gneisenaustr. an und es gibt keine Sackgassenschilder.
 #: osm_watch: way id="49233007" version="8"
 #: last_checked: 2022-05-31
-#: check_frequency: 60d
-#: next_check: 2023-01-01
+#: check_frequency: 90d
+#: next_check: 2024-02-01
 	q4::inwork; 9552,9602 9588,9827
 ',
          'from' => undef,
@@ -6299,6 +6245,16 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'text' => 'Hauffstr.: Einbahnstraßenregelung vor der Pfarrstr., offen Richtung Westen, voraussichtlich bis 29. Juli 2022',
          'type' => 'handicap',
          'until' => 1659110400
+       },
+       {
+         'data' => '	2::inwork 42938,96695 43612,96993 44588,96894 44825,96893
+',
+         'from' => 1657083600,
+         'id' => 3585,
+         'source_id' => '227300224',
+         'text' => 'Bietikow - Seelübbe: Asphaltsanierung, Sperrung der Straße, 07.07.2022 07:00 Uhr bis 20.08.2022 16:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1661004000
        }
      
 );

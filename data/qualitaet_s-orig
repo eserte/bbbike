@@ -694,7 +694,7 @@ Rˆnnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: https://api.fixmyberlin.de/api/plannings/218 (Asphaltierung)
 #: by: http://www.infravelo.de/projekt/roennestrasse/ (1. Quartal 2022 - 1. Quartal 2024)
 #: osm_watch: way id="4480580" version="15"
-#: osm_watch: way id="4436949" version="13"
+#: osm_watch: way id="4436949" version="14"
 #: last_checked: 2022-04-26 (mapillary)
 #: check_frequency: 300d
 #: next_check: 2024-03-31
@@ -1045,7 +1045,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? auﬂerdem: wird die Colbestr. zur Fahrradstraﬂe?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erw‰hnung)
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-07-15
+#: last_checked: 2022-07-18
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1282,7 +1282,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelsch‰den	Q0- 22027,6608 22097,6414 22146,63
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="6"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
-#: osm_watch: way id="25216398" version="32"
+#: osm_watch: way id="25216398" version="33"
 Wuhlewanderweg: Verbundsteine	Q1 22084,5877 22070,5876 21846,5856 21744,5804 21618,5699 21605,5687 21600,5683 21507,5620
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -27991,6 +27991,9 @@ Zaberner Str.: Beton	Q0 1276,3892 1252,3821
 Isenheimer Weg: Beton	Q0 1389,3900 1387,3821
 Forbacher Str.: Beton	Q1 1474,3688 1607,3708 1604,3770 1603,3909
 Ersteiner Str.: Beton	Q1 1604,3770 1781,3807 1935,3827
+#: by: https://berliner-abendblatt.de/2022/07/18/huckelpiste-schlettstadter-strasse-wird-saniert/
+#: XXX Sanierung ab 2024
+#: next_check: 2024-03-01
 Schlettstadter Str.: Asphalt	Q1 1070,3741 1429,3609 1485,3630
 Schlettstadter Str.: Beton	Q0 1485,3630 1814,3719 1926,3758 1935,3827 1939,3893
 Buchsweilerstr.: Kopfsteinpflaster	Q2 2160,3854 2191,3992 2203,4045 2212,4089 2233,4156

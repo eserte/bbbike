@@ -30976,7 +30976,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-07-11
+#: last_checked: 2022-07-18
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -34629,11 +34629,12 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.kiezundkneipe.de/artikel/das-ende-der-lenau-schule (neue Schule ist 2023 fertig)
+#: by: https://www.berliner-woche.de/bezirk-mitte/c-bauen/sanierungen-an-schulen-laufen-auf-hochtouren_a352193 (Neubau der Schule soll Anfang 2024 fertig werden)
 #: note: Die Einbahnstraßenregelung fängt erst 60m nördlich der Gneisenaustr. an und es gibt keine Sackgassenschilder.
 #: osm_watch: way id="49233007" version="8"
 #: last_checked: 2022-05-31
-#: check_frequency: 60d
-#: next_check: 2023-01-01
+#: check_frequency: 90d
+#: next_check: 2024-02-01
 	q4::inwork; 9552,9602 9588,9827
 EOF
      },
@@ -35655,6 +35656,15 @@ EOF
 #: last_checked: 2022-07-16
 #: next_check: 2022-07-29
 	q4::inwork; 15356,11338 15458,11306
+EOF
+     },
+     { from  => 1657083600, # 2022-07-06 07:00
+       until => 1661004000, # 2022-08-20 16:00
+       text  => 'Bietikow - Seelübbe: Asphaltsanierung, Sperrung der Straße, 07.07.2022 07:00 Uhr bis 20.08.2022 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => '227300224',
+       data  => <<EOF,
+	2::inwork 42938,96695 43612,96993 44588,96894 44825,96893
 EOF
      },
     );
