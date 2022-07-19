@@ -5372,26 +5372,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1452987451476172804 (hier: nur für Kfz-Verkehr gesperrt)
-#: by: https://twitter.com/VIZ_Berlin/status/1453704442986049548 (Radfahrer frei)
-#: by: https://twitter.com/VIZ_Berlin/status/1453699314891595779
-#: by: https://www.berliner-woche.de/pankow/c-verkehr/bauarbeiten-in-der-muehlenstrasse_a327002
-#: source_id: viz2021:13.403429,52.56939,28.10.2021,06:00 (hier: bis 12.11.2021, und nur für Kfz-Verkehr gesperrt) (mittlerweile bis 9.11.2021)
-#: by: https://www.berliner-woche.de/altglienicke/c-verkehr/deckschicht-wird-runderneuert_a327095 (bis 30.11.2021)
-#: note: laut rbb vorzeitiges Ende am 9.11.2021
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221641.php (neue Bauarbeiten)
-#: by: https://berliner-abendblatt.de/2022/06/30/muehlenstrasse-wird-gesperrt/
-#: source_id: viz2021:13.403429,52.56939,06.07.2022,06:00 (bis 19.7.2022, nur Kfz-Verkehr betroffen)
-	q3::inwork; 10228,18196 10347,17959 10448,17751
-',
-         'from' => 1656972000,
-         'id' => 3472,
-         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2021/pressemitteilung.1139346.php',
-         'text' => 'Mühlenstr.: Bauarbeiten zwischen Breite Str. und Florastr., Richtung Süden gesperrt, Radfahrer dürfen voraussichtlich den Gehweg benutzen, vom 6.7.2022 bis voraussichtlich 19.7.2022',
-         'type' => 'handicap',
-         'until' => 1658246400
-       },
+       undef,
        undef,
        undef,
        {
@@ -5657,22 +5638,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1666821600
        },
-       {
-         'data' => '#: by: https://www.kiezundkneipe.de/artikel/das-ende-der-lenau-schule (neue Schule ist 2023 fertig)
-#: by: https://www.berliner-woche.de/bezirk-mitte/c-bauen/sanierungen-an-schulen-laufen-auf-hochtouren_a352193 (Neubau der Schule soll Anfang 2024 fertig werden)
-#: note: Die Einbahnstraßenregelung fängt erst 60m nördlich der Gneisenaustr. an und es gibt keine Sackgassenschilder.
-#: osm_watch: way id="49233007" version="8"
-#: last_checked: 2022-05-31
-#: check_frequency: 90d
-#: next_check: 2024-02-01
-	q4::inwork; 9552,9602 9588,9827
-',
-         'from' => undef,
-         'id' => 3510,
-         'text' => 'Nostitzstr.: Hochbaustelle, Einbahnstraße zwischen Gneisenaustr. und Baruther Str., offen Richtung Süden',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: FUERSTENDAMM-2022
 #: by: https://berliner-abendblatt.de/2022/02/09/fuerstendamm/

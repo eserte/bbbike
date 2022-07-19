@@ -284,12 +284,12 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-07-18
+#: last_checked: 2022-07-19
 #: check_frequency: 7d
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 13596,10722 13678,10685 13779,10642 13919,10583
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-07-18
+#: last_checked: 2022-07-19
 #: check_frequency: 90d
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489
 provisorische Radspur	RW4; 13919,10583 13986,10549 14103,10489
@@ -6372,7 +6372,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünmarkierung geben
-#: last_checked: 2022-06-17 (mapillary) vvv
+#: last_checked: 2022-07-19 vvv
 #: check_frequency: 60d
 temporäre Radspur aufgehoben	RW0; 12639,8344 12598,8390
 Gelbmarkierung	RW3; 12598,8390 12639,8344
@@ -6380,7 +6380,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2022-06-17 (mapillary)
+#: last_checked: 2022-07-19
 #: check_frequency: 60d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünmarkierung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12916,7775
@@ -6415,11 +6415,11 @@ Grünmarkierung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 12823
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2022-06-17 (mapillary)
+#: last_checked: 2022-07-19
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünmarkierung und Radwegschilder geben
-#: last_checked: 2022-06-17 (mapillary)
+#: last_checked: 2022-07-19
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -6935,7 +6935,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2022-07-17
+#: last_checked: 2022-07-19
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -7137,7 +7137,7 @@ asphaltiert	RW1; 25522,4935 25519,4830
 	RW4; 16485,25516 16414,25575
 #: next_check_id: KARLMARXSTR-2018
 #: XXX Zwischendurch eine provisorische Radspur, wurde bei der Baustellenumstellung Anfang Februar 2021 wieder entfernt
-#: last_checked: 2022-07-02
+#: last_checked: 2022-07-19
 #: check_frequency: 120d
 #: next_check: 2022-07-31
 # REMOVED --- provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
@@ -7260,7 +7260,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="23"
 #: osm_watch: way id="335487059" version="21"
-#: last_checked: 2022-07-17 vvv
+#: last_checked: 2022-07-19 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-01-01 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312

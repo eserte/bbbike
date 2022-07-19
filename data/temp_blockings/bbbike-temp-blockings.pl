@@ -34624,7 +34624,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1658260299, # undef, # XXX
        text  => 'Nostitzstr.: Hochbaustelle, Einbahnstraße zwischen Gneisenaustr. und Baruther Str., offen Richtung Süden',
        type  => 'handicap',
        data  => <<EOF,
@@ -34632,9 +34632,7 @@ EOF
 #: by: https://www.berliner-woche.de/bezirk-mitte/c-bauen/sanierungen-an-schulen-laufen-auf-hochtouren_a352193 (Neubau der Schule soll Anfang 2024 fertig werden)
 #: note: Die Einbahnstraßenregelung fängt erst 60m nördlich der Gneisenaustr. an und es gibt keine Sackgassenschilder.
 #: osm_watch: way id="49233007" version="8"
-#: last_checked: 2022-05-31
-#: check_frequency: 90d
-#: next_check: 2024-02-01
+# REMOVED (Sackgassenschild steht wieder, dafür kein Einfahrt-verboten-Schild mehr) --- #: last_checked: 2022-05-31 --- #: check_frequency: 90d --- #: next_check: 2024-02-01
 	q4::inwork; 9552,9602 9588,9827
 EOF
      },

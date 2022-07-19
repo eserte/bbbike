@@ -79,7 +79,11 @@ Weserstr.: asphaltiert	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193
 # REMOVED --- #: next_check_id: WESER-2021 --- #: XXX: während der Bauarbeiten ist der Radweg (schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität, Q2+) nicht befahrbar --- #: last_checked: 2022-03-12 --- #: check_frequency: 90d --- Weserstr.: mäßiges, teilweise schlechtes Kopfsteinpflaster	Q2-; 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 --- Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+; 12590,8977 12531,9009 12480,9037 12402,9080 12328,9117
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1192214.php
 Weserstr.: Asphalt	Q0 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
-Weserstr.: Asphalt	Q0 12590,8977 12740,8862
+#: next_check_id: WESER-2021
+#: last_checked: 2022-07-19
+#: check_frequency: 21d
+#: next_check: 2022-09-15
+Weserstr.: Asphalt, Kreuzungsanbindungen noch nicht fertig	Q1 12590,8977 12740,8862
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+ 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Jessnerstr.: Asphalt mit Aufpflasterungen	Q0- 15077,11910 14986,11760 14946,11697 14849,11539
 #: note: 2021 neu gemacht
@@ -847,7 +851,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2022-06-08
+#: last_checked: 2022-07-19
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -8931,7 +8935,7 @@ Straße 74: Asphalt	Q0- 12583,22428 12696,22455 12821,22437 12855,22431 13136,223
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: wosch
 #: XXX eventuell wird der Asphalt noch glatter gemacht
-#: last_checked: 2022-04-23 (mapillary)
+#: last_checked: 2022-07-17 (mapillary)
 #: check_frequency: 60d
 Königsteinbrücke: welliger Asphalt	Q1 13136,22397 13148,22396 13176,22409 13203,22390 13295,22383 13334,22355 13386,22378 13394,22373
 Straße 86: Asphalt	Q0 13805,22935 13726,22860
