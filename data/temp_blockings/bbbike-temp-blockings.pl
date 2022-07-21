@@ -30600,7 +30600,7 @@ EOF
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-07-17
+#: last_checked: 2022-07-20 (mapillary)
 #: check_frequency: 21d
 #: next_check_id: 2022-08-31
 	q4::inwork; 11329,12497 11209,12430
@@ -31195,7 +31195,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-07-17 vvv
+#: last_checked: 2022-07-20 vvv
 #: check_frequency: 3d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33636,8 +33636,8 @@ EOF
 EOF
      },
      { from  => 1629669600, # 2021-08-23 00:00
-       until => $isodate2epoch->("2022-07-20 17:00:00"), # 1640991600, # 2022-01-01 00:00
-       text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 20.07.2022 17:00 ',
+       until => $isodate2epoch->("2022-07-31 17:00:00"), # 1640991600, # 2022-01-01 00:00
+       text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 31.07.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.377685,52.567221,24.08.2021,07:00', # aktiv
        data  => <<EOF,
@@ -35404,7 +35404,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1658381187, # undef, # XXX
        text  => 'Bhf. Südkreuz: Ein/Ausgang Nord-Süd-Grünzug kann gesperrt sein',
        type  => 'gesperrt',
        permanent => 1,
@@ -35417,10 +35417,10 @@ EOF
 #: by: https://leute.tagesspiegel.de/tempelhof-schoeneberg/macher/2020/08/11/134285/am-bayerischen-platz-soll-der-fahrstuhl-nun-kommen/ ("Überlegungen")
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf (Bahn ist nicht bereit, den Eingang für den Radverkehr zu öffnen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7448&date=20210314 (Antwort: Öffnung wird geprüft)
-#: note: offen, gesehen: 2022-06-18 (abends und nachts)
+#: by: https://twitter.com/jens_blume/status/1518846883447418880
+#: note: offen, gesehen: 2022-06-18 (abends und nachts); Bestätigung siehe twitter und osm (https://www.openstreetmap.org/node/2967404179, https://www.openstreetmap.org/changeset/120217055)
 #: confirmed_by: srt
-#: last_checked: 2022-06-18
-#: check_frequency: 30d
+# REMOVED --- #: last_checked: 2022-06-18 --- #: check_frequency: 30d
 	2::temp 7838,7848 7804,7783
 EOF
      },
@@ -35663,6 +35663,39 @@ EOF
        source_id => '227300224',
        data  => <<EOF,
 	2::inwork 42938,96695 43612,96993 44588,96894 44825,96893
+EOF
+     },
+     { from  => 1657094400, # 2022-07-06 10:00
+       until => 1660917600, # 2022-08-19 16:00
+       text  => 'Strauberg - Klosterdorf: Bauarbeiten, Sperrung der Straße, 07.07.2022 10:00 Uhr bis 19.08.2022 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => '226400344',
+       data  => <<EOF,
+	2::inwork 47334,21218 47192,21608 47072,21650 46672,21791 46264,21879 46072,21966
+EOF
+     },
+     { from  => 1658313000, # 2022-07-20 12:30
+       until => 1658649600, # 2022-07-24 10:00
+       text  => 'Straße des 17. Juni und Ebertstr.: zwischen Großer Stern und Dorotheenstr./Behrenstr. Sperrung der Straße, möglicherweise sind auch Radfahrer betroffen, vom 21.07.2022 12:30 bis 24.07.2022 10:00 ',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.369347,52.515752,21.07.2022,12:30',
+       data  => <<EOF,
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245
+	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165 8595,12066
+	3 8119,12414 8055,12186 8049,12140
+	3 7429,12070 7383,12095 7031,12320
+	3 7823,12120 7816,12150 7822,12201
+	3 7822,12201 7816,12150 7823,12120
+	3 7031,12320 7383,12095 7429,12070
+	3 8327,12174 8344,12221 8391,12389
+	3 8592,12252 8538,12245 8522,12239
+	3 8592,12252 8538,12245 8522,12187
+	3 8391,12389 8344,12221 8327,12174
+	3 8049,12140 8055,12186 8119,12414
+	3 8522,12187 8538,12245 8592,12252
+	3 8522,12187 8538,12245 8522,12239
+	3 8522,12239 8538,12245 8592,12252
+	3 8522,12239 8538,12245 8522,12187
 EOF
      },
     );

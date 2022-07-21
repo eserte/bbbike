@@ -448,7 +448,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2022-07-15 vvv
+#: last_checked: 2022-07-20 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1082,11 +1082,11 @@ Radweg nur aufgemalt	RW1; 4218,6583 4335,6523 4423,6477
 	RW1; 4672,8031 4581,8048 4461,8105
 #: XXX hier ist ein Zweirichtungsradweg geplant
 #: by: https://api.fixmyberlin.de/api/plannings/216
-#: by: http://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 1. Quartal 2023 - 4. Quartal 2023)
 #: osm_watch: way id="8590249" version="19"
 #: last_checked: 2022-02-27
 #: check_frequency: 300d
-#: next_check: 2022-12-31
+#: next_check: 2023-12-31
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 geschützter Radstreifen, Grünmarkierung	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
@@ -1396,7 +1396,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 #	RW1;RW2 14051,6731 14139,6786 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
 #: note: von der Bergiusstr. aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
-#: osm_watch: way id="693065560" version="13"
+#: osm_watch: way id="693065560" version="14"
 	RW1;RW1 14344,7003 14257,6895 14239,6875
 #: osm_watch: way id="679376891" version="11"
 	RW2;RW1 14239,6875 14153,6795 14139,6786
@@ -1585,10 +1585,13 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 7709,8777 7795,8765
 Busspur ist immer gültig	RW5; 7795,8765 8008,8771
 geschützter Radstreifen, mit "Leitboys"	RW4; 8008,8771 8014,8771 8078,8772 8145,8773 8209,8773 8298,8774
 # 
+#: by: http://www.infravelo.de/projekt/detmolder-strasse-1/ (Sanierung+Verbreiterung der Radwege, 2. Quartal 2024 - 4. Quartal 2024)
+#: next_check: 2024-12-31 vvv
 	RW1;RW1 5357,8013 5331,8012 5058,8012 5048,8012
 #: note: ein vergessenes Radwegschild?
 	RW1;RW2 5048,8012 4873,8007
 	RW1;RW1 4873,8007 4793,8005
+#: next_check ^^^
 # 
 # REMOVED (zumindest an der Kolonnenstr. ist nichts mehr) --- #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/bauarbeiten-auf-der-hauptstrasse_a310431 (Länge der Baustelle 300m, Dauer ein halbes Jahr, kein Startdatum) --- #: source_id: 2147347198 (Markierungsarbeiten bis 20.5.2021) (inaktiv) --- #: source_id: 2147347199 (bis 31.1.2022) --- #: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 31.1.2022) (mittlerweile bis 17.2.2022) (mittlerweile bis 1.4.2022) --- #: last_checked: 2021-09-05 --- #: next_check: 2022-02-17 --- #: XXX Hauptstr.: Bauarbeiten der Wasserbetriebe, die östliche Fahrbahn ist gesperrt --- temporäre Radspuren	RW4;RW4 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7268,8960
 Busspur gilt Mo-Fr 7-18 Uhr	RW5;RW5 7471,9360 7388,9199 7382,9187 7363,9152 7354,9135 7308,9041 7268,8960
@@ -1604,7 +1607,9 @@ Busspur ist immer gültig	RW5; 6971,10346 7033,10328
 #: confirmed_by: srt
 Radspur teilweise hinter den parkenden Autos	RW4; 7033,10328 7131,10331 7238,10299 7413,10244 7536,10199 7579,10183
 Busspur ist immer gültig	RW5; 7579,10183 7698,10147 7702,10146 7813,10112
-provisorische Radspuren, abgegrenzt	RW2;RW8 7906,10098 7814,10117 7702,10146
+#: by: https://nitter.it/VIZ_Berlin/status/1549740138003062786#m (nicht mehr provisorisch)
+#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllHRXVsc1hnQVlxSEUwLmpwZw==
+abgegrenzte Radspuren	RW2;RW8 7906,10098 7814,10117 7702,10146
 Radspur hinter den parkenden Autos	RW4; 7702,10146 7698,10147 7579,10183
 Bushaltestelle	RW5; 7579,10183 7536,10199
 Radspur hinter den parkenden Autos	RW4; 7536,10199 7413,10244
@@ -1641,7 +1646,7 @@ Busspur ist immer gültig	RW5;RW5 9934,12420 9858,12410
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
 #: source_id: viz2021:13.399226,52.517706,30.05.2022,08:00 (bis 15.8.2022, zwischen Lustgarten - Oberwallstr.) (mittlerweile inaktiv) vvv
 #: source_id: viz2021:13.404803,52.520062,30.05.2022,08:00 (bis 15.8.2022)
-#: last_checked: 2022-07-08 vvv
+#: last_checked: 2022-07-15 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-08-15 vvv
 provisorische Radspur	RW4; 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506
@@ -4572,7 +4577,7 @@ Grünmarkierung	RW3; 17886,5587 17960,5511 18080,5376
 #: by: http://www.infravelo.de/projekt/b96a-adlergestell-1/ (2. Quartal 2022 - 3. Quartal 2022)
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="19"
-#: osm_watch: way id="319692412" version="9"
+#: osm_watch: way id="319692412" version="10"
 #: source_id: viz2021:13.522726,52.448104,20.05.2022,06:00 (hier nur bis 4.6.2022) (inaktiv)
 #: source_id: viz2021:13.51214,52.454886,20.05.2022,06:00 (bis 4.6.2022) (inaktiv)
 #: source_id: viz2021:13.50984,52.45636,20.05.2022,06:00 (bis 6.6.2022) (inaktiv)
@@ -6022,7 +6027,8 @@ früherer Radweg ist nicht benutzbar	RW0; 23244,12417 23299,12600 23321,12673
 	RW1; 5584,475 5486,461 5448,455 5061,409
 Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2795
 	RW3;RW3 17194,3343 17142,3393
-#: by: http://www.infravelo.de/projekt/zingster-strasse-2/ (3. Quartal 2021 - 3. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/zingster-strasse-2/ (3. Quartal 2021 - 3. Quartal 2022) (wurde ersetzt)
+#: by: http://www.infravelo.de/projekt/zingster-strasse/ (neuer Eintrag, mittlerweile 3. Quartal 2022 - 3. Quartal 2023)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Bauarbeiten beginnen Mitte 2022)
 #: by: https://api.fixmyberlin.de/api/projects/439
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Bauarbeiten ab Mitte 2022)
@@ -6030,7 +6036,7 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2
 #: XXX Asphaltierung des Radwegs vvv
 #: last_checked: 2022-01-09 (mapillary) vvv
 #: check_frequency: 300d vvv
-#: next_check: 2022-09-30 vvv
+#: next_check: 2023-09-30 vvv
 	RW1; 16718,18204 16905,17949 16981,17855
 	RW2; 16981,17855 17159,17631
 #: check_frequency ^^^
@@ -7051,12 +7057,12 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26300.pdf (Markierung wird im Zuge der Gleisbauarbeiten dauerhaft gemacht)
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
-#: osm_watch: way id="26708088" version="28"
+#: osm_watch: way id="26708088" version="29"
 #: last_checked: 2022-07-12 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
-#: osm_watch: way id="671329664" version="9"
+#: osm_watch: way id="671329664" version="10"
 provisorische Radspur	RW4; 17991,6431 17962,6674
 provisorische Radspur	RW4; 17962,6674 17919,6968
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
@@ -7314,6 +7320,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://berliner-abendblatt.de/2022/04/25/nur-eine-spur-fuer-autos-in-kantstrasse-fdp-kritisiert-konzept/
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/senat-will-die-kantstrasse-umbauen_a344111
 #: by: https://berliner-abendblatt.de/2022/05/03/kritik-am-geplanten-umbau-von-durchgangsstrassen/
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/fdp-sieht-kiez-um-karl-august-platz-bedroht_a352244 (Umbau der Kantstraße geplant)
 #: last_checked: 2022-07-02 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
@@ -7453,13 +7460,14 @@ Poller	RW4; 9221,6179 9245,6352 9246,6364 9250,6414
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/info-abend-zur-radverkehrsanlage_a339422
 #: by: https://berliner-abendblatt.de/2022/03/16/radweg-tempelhofer-damm/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198245.php (bis August 2022 Weiterführung bis Alt-Mariendorf)
+#: by: https://www.infravelo.de/projekt/mariendorfer-damm/ (4. Quartal 2021 - 4. Quartal 2022)
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2022-05-15 vvv
 #: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2021-10-18 vvv
+#: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
 #: osm_watch: way id="111048866" version="13"
@@ -7476,7 +7484,7 @@ provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9206,5193 9196,5272
 #: note: Benutzungspflicht ist hier nicht ganz klar
 provisorischer Radweg auf dem Bürgersteig	RW2; 9196,5272 9188,5333 9176,5413 9161,5535
 # REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
