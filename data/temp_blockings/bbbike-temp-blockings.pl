@@ -32387,7 +32387,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Mitte 06/2021: Durchfahrt möglich)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Mitte 07/2021: Durchfahrt möglich)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32396,10 +32396,10 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="25"
 #: osm_watch: way id="165832806" version="22"
-#: last_checked: 2022-06-19
+#: last_checked: 2022-07-22
 #: check_frequency: 30d
-	2::inwork 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17524,8536 17515,8567 17497,8623
-# REMOVED (hier neu gemacht) ---	2::inwork 17497,8623 17461,8693 17416,8767 17380,8858
+	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17554,8458 17533,8505 17524,8536 17515,8567 17497,8623
+# REMOVED (hier neu gemacht) ---	2::inwork 17497,8623 17468,8692 17416,8767 17380,8858
 EOF
      },
      { from  => 1611529200, # 2021-01-25 00:00
@@ -34922,6 +34922,7 @@ EOF
        text  => 'Dieselstr. - westlicher Mergenthalerring: Durchfahrt kann möglicherweise durch Bauzäune versperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_29_1829_2008_online.pdf (zum bereits eingezogenen Abschnitt des Mergenthalerrings)
 #: note: Durchfahrt möglich, gesehen: 2022-03-23 mittags, 2022-05-04 mittags, 2022-07-06 mittags
 #: XXX Bleibt es bei der möglichen Durchfahrt?
 #: osm_watch: node id="1511805342" version="4"
@@ -35696,6 +35697,15 @@ EOF
 	3 8522,12187 8538,12245 8522,12239
 	3 8522,12239 8538,12245 8592,12252
 	3 8522,12239 8538,12245 8522,12187
+EOF
+     },
+     { from  => 1659247200, # 2022-07-31 08:00
+       until => 1660917600, # 2022-08-19 16:00
+       text  => 'Prötzel - Tiefensee: Bauarbeiten, Sperrung, voraussichtlich 01.08.2022 08:00 Uhr bis 19.08.2022 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'LS/221-F/22/104',
+       data  => <<EOF,
+	2::inwork 40339,28934 40135,28824 39921,28733
 EOF
      },
     );

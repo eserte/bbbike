@@ -36,9 +36,9 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwork; 9581,12588 9613,12381
 Wandlitzstr.: in Hˆhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
-Parkstadt Karlshorst: Beeintr‰chtigungen durch Bauarbeiten und Baustellenverkehr mˆglich	q2::inwork 17380,8858 17416,8767 17461,8693 17656,8700 17640,8627 17497,8623
-Hˆnower Wiesenweg: Beeintr‰chtigungen durch Bauarbeiten und Baustellenverkehr mˆglich	q2::inwork; 17497,8623 17461,8693
-Hˆnower Wiesenweg: tempor‰re Einbahnstraﬂenregelung, Baustellenverkehr	q3::inwork; 17461,8693 17497,8623
+Parkstadt Karlshorst: Beeintr‰chtigungen durch Bauarbeiten und Baustellenverkehr mˆglich	q2::inwork 17380,8858 17416,8767 17468,8692 17656,8700 17640,8627 17497,8623
+Hˆnower Wiesenweg: Beeintr‰chtigungen durch Bauarbeiten und Baustellenverkehr mˆglich	q2::inwork; 17497,8623 17468,8692
+Hˆnower Wiesenweg: tempor‰re Einbahnstraﬂenregelung, Baustellenverkehr	q3::inwork; 17468,8692 17497,8623
 Zufahrt Zentrum Schˆneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
 Turmstr.: Bauarbeiten, Engstellen	q2::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321
 Turmstr.: Bauarbeiten, Engstellen	q1::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
@@ -2156,7 +2156,7 @@ Schloﬂplatz: Fuﬂg‰nger	q3 10175,12435 10271,12503
 Am Kraatzgraben: einige Fuﬂg‰nger	q1 16899,10020 16835,10052
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fuﬂg‰nger	q1 16894,10003 16899,10020 16912,10054
 (Nˆrdliche Landebahn - Eingang Peter-Strasser-Weg): schmal	q2 9362,7616 9281,7651
-(Hoher Wallgraben - Lehndorffstr.): einige Fuﬂg‰nger, an der Lehndorffstr. eine kurze Rampe, Bordstein an der Lehndorffstr.	q2 18101,8044 18186,8081 18276,8136
+(Hoher Wallgraben - Lehndorffstr.): einige Fuﬂg‰nger, an der Lehndorffstr. eine kurze Rampe, Bordstein an der Lehndorffstr.	q2 18101,8044 18186,8081 18222,8103 18276,8136
 Mercedes-Platz: Fuﬂg‰ngerzone	q4 13150,11101 13063,11147 12984,11194
 Mercedes-Platz: Fuﬂg‰ngerzone	q4 12990,11006 13063,11147
 (Abbestr. - Otto-Suhr-Allee): einige Fuﬂg‰nger	q1 4674,12076 4608,11935 4596,11912
@@ -2172,7 +2172,7 @@ Am Berlin Museum: einige Katzenkopfreihen	q2 10032,10752 9829,10830
 (Klara-Weyl-Str. - Landschaftspark Herzberge): Spielplatz, Fuﬂg‰nger, kurvig	q3 17418,12797 17422,12811 17400,12842 17363,12856 17347,12845 17299,12851
 (Allee der Kosmonauten - Wohngebiet): einige Fuﬂg‰nger	q2 19628,13517 19649,13481
 (Lichtenrader Damm - Mellener Str.): einige Fuﬂg‰nger, Bordsteine beim ‹berqueren des Lichtenrader Damms	q2 10903,-1768 10771,-1782
-Traberweg: einige Fuﬂg‰nger	q1 18577,8033 18567,8041 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18072,8470 18005,8517 17930,8567 17851,8662
+Traberweg: einige Fuﬂg‰nger	q1 18577,8033 18567,8041 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18116,8424 18072,8470 18005,8517 17930,8567 17851,8662
 (Trautenauer Str. - Liepnitzstr.): einige Fuﬂg‰nger	q1 17838,8611 17873,8578 17912,8515 18037,8420
 Campus AF 60: Schranke kann auf Gehweg umfahren werden	q2 18964,11719 18919,11720
 Otto-Weidt-Platz: einige Fuﬂg‰nger	q1 7732,14131 7818,14185 7866,14215
@@ -2311,6 +2311,9 @@ Fenchelweg: enge Straﬂe	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,360
 (KGA Alt-Hellersdorf - Neuruppiner Str.): einige Fuﬂg‰nger	q2 23263,15162 23257,15223
 (KGA Alt-Hellersdorf - Alt-Hellersdorf): einige Fuﬂg‰nger	q1 23271,15164 23285,15104 23283,15061
 (Lydia-Rabinowitsch-Str. - Uferweg): einige Fuﬂg‰nger	q1 7930,14060 7965,14081
+(Treskowallee - Traberweg): Rampe	q4 18471,7862 18442,7882
+(Treskowallee - Traberweg): einige Fuﬂg‰nger	q1 18442,7882 18356,7944 18260,8041 18222,8103 18130,8386 18116,8424
+(‹derseestr - Weg an der KGA Stallwiese): einige Fuﬂg‰nger	q1 18135,8404 18130,8386
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

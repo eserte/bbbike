@@ -811,7 +811,7 @@ Am Rudower Flieﬂ -> Neukˆllner Str.: Mittelstreifen	3::igndisp 16650,1356 16698,
 Mittelstreifen	3nocross::ignrte 13148,14850 13107,14873 12807,15045
 Storkower Str. -> Einsteinstr.: Mittelstreifen	3::igndisp 12807,15045 13107,14873 13143,14935
 Einsteinstr. -> Storkower Str.: Mittelstreifen	3::igndisp 13143,14935 13107,14873 13148,14850
-Hˆnower Wiesenweg: nur f¸r Anlieger und Radfahrer offen	2:Anlieger 17380,8858 17416,8767 17461,8693 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17620,8366 17704,8327 17753,8290
+Hˆnower Wiesenweg: nur f¸r Anlieger und Radfahrer offen	2:Anlieger 17380,8858 17416,8767 17468,8692 17497,8623 17515,8567 17524,8536 17533,8505 17554,8458 17617,8363 17652,8349 17707,8328 17753,8290
 Mittelstreifen	3nocross::ignrte 9248,4904 9239,4980 9206,5193
 Finkenweg -> Mariendorfer Damm: Mittelstreifen	3::igndisp 9360,4996 9239,4980 9248,4904
 Mariendorfer Damm -> Finkenweg: Mittelstreifen	3::igndisp 9206,5193 9239,4980 9360,4996
@@ -2129,8 +2129,10 @@ Margarete-Steffin-Str.	1 8525,12958 8406,13127 8315,13181
 Jenbacher Weg: f¸r Radfahrer umfahrbare Schranke	3 5418,-98 5665,51 5703,74
 Jenbacher Weg: f¸r Radfahrer umfahrbare Schranke	3 5703,74 5665,51 5418,-98
 Hasenholzer Allee	2:Anlieger 21903,15174 21927,15303
-Straﬂenbahntrasse	3nocross::ignrte 18406,7760 18483,7883 18577,8033 18633,8126
-Treskowallee -> Traberweg: Straﬂenbahntrasse	3::igndisp 18483,7883 18577,8033 18567,8041
+Straﬂenbahntrasse	3nocross::ignrte 18406,7760 18471,7862 18577,8033 18633,8126
+Treskowallee -> Traberweg: Straﬂenbahntrasse	3::igndisp 18406,7760 18471,7862 18442,7882
+Traberweg -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18442,7882 18471,7862 18577,8033
+Treskowallee -> Traberweg: Straﬂenbahntrasse	3::igndisp 18471,7862 18577,8033 18567,8041
 Traberweg -> Treskowallee: Straﬂenbahntrasse	3::igndisp 18567,8041 18577,8033 18633,8126
 Schierker Str. - Karl-Marx-Str.	3 13003,7316 13034,7319 13030,7346
 Haﬂlingerweg	1 7644,17054 7894,17073 7926,17050

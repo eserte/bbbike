@@ -219,7 +219,7 @@ Otto-Weidt-Platz: Bauarbeiten, mögliche Engstellen	q3::inwork 7923,14142 7778,14
 #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.)
 #: XXX evtl. wurden die Bauarbeiten ausgeweitet, prüfen!
 #: priority: #A
-#: last_checked: 2022-07-14 vvv
+#: last_checked: 2022-07-21 (mapillary) vvv
 #: next_check: 2022-08-22 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
@@ -506,17 +506,17 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 #: next_check_id: WANDLITZ-2021
 #: note: am 2022-04-22 war die Fahrbahn offen, aber möglicherweise war das nur "zufällig" so, weil Baufahrzeuge reinfahren mussten; jedenfalls stehen an beiden Enden Bauzäune, die umgeklappt werden können
 #: also_indoor: traffic
-#: last_checked: 2022-04-22
+#: last_checked: 2022-07-22
 #: check_frequency: 90d
 Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
 # 
 # REMOVED (fertig) --- #: next_check_id: ZWIESELER-2022 --- #: last_checked: 2022-03-20 --- #: check_frequency: 60d --- Richard-Kolkwitz-Weg: Engstelle wegen Bauarbeiten	q2::inwork 19711,10426 19813,10468
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2022-06-19 vvv
-Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17461,8693 17656,8700 17640,8627 17497,8623
-Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17461,8693
-Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17461,8693 17497,8623
+#: last_checked: 2022-07-22 vvv
+Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17468,8692 17656,8700 17640,8627 17497,8623
+Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17468,8692
+Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17468,8692 17497,8623
 #: last_checked ^^^
 # 
 # REMOVED --- #: XXX nach den Bauarbeiten den alten Eintrag für die Wildensteiner Str. wieder aktivieren! --- #: add_fragezeichen: Sind die Bauarbeiten an der Einmündung Wandlitzstr./Wildensteiner Str. beendet? vvv --- #: also_indoor: traffic (ex-G) vvv --- #: last_checked: 2021-11-16 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2022-01-01 vvv --- Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18557,8525 18627,8475 18704,8427 --- Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18627,8475 18528,8331 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
@@ -942,7 +942,7 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (ex-G,B)
 #: priority: #B
-#: last_checked: 2022-06-23 (mapillary) vvv
+#: last_checked: 2022-07-21 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -3905,7 +3905,7 @@ Am Kraatzgraben: einige Fußgänger	q1 16899,10020 16835,10052
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fußgänger	q1 16894,10003 16899,10020 16912,10054
 (Nördliche Landebahn - Eingang Peter-Strasser-Weg): schmal	q2 9362,7616 9281,7651
 #: XXX_prog BS, ansonsten q1
-(Hoher Wallgraben - Lehndorffstr.): einige Fußgänger, an der Lehndorffstr. eine kurze Rampe, Bordstein an der Lehndorffstr.	q2+ 18101,8044 18186,8081 18276,8136
+(Hoher Wallgraben - Lehndorffstr.): einige Fußgänger, an der Lehndorffstr. eine kurze Rampe, Bordstein an der Lehndorffstr.	q2+ 18101,8044 18186,8081 18222,8103 18276,8136
 Mercedes-Platz: Fußgängerzone	q4 13150,11101 13063,11147 12984,11194
 Mercedes-Platz: Fußgängerzone	q4 12990,11006 13063,11147
 (Abbestr. - Otto-Suhr-Allee): einige Fußgänger	q1 4674,12076 4608,11935 4596,11912
@@ -3923,7 +3923,7 @@ Am Berlin Museum: einige Katzenkopfreihen	q2 10032,10752 9829,10830
 (Allee der Kosmonauten - Wohngebiet): einige Fußgänger	q2 19628,13517 19649,13481
 #: XXX_prog BS nur beim Überqueren, ansonsten q1
 (Lichtenrader Damm - Mellener Str.): einige Fußgänger, Bordsteine beim Überqueren des Lichtenrader Damms	q2 10903,-1768 10771,-1782
-Traberweg: einige Fußgänger	q1 18577,8033 18567,8041 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18072,8470 18005,8517 17930,8567 17851,8662
+Traberweg: einige Fußgänger	q1 18577,8033 18567,8041 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18116,8424 18072,8470 18005,8517 17930,8567 17851,8662
 (Trautenauer Str. - Liepnitzstr.): einige Fußgänger	q1 17838,8611 17873,8578 17912,8515 18037,8420
 #: note: und zwar legal, per Schild
 Campus AF 60: Schranke kann auf Gehweg umfahren werden	q2 18964,11719 18919,11720
@@ -4151,6 +4151,12 @@ Fenchelweg: enge Straße	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,360
 (KGA Alt-Hellersdorf - Neuruppiner Str.): einige Fußgänger	q2+ 23263,15162 23257,15223
 (KGA Alt-Hellersdorf - Alt-Hellersdorf): einige Fußgänger	q1 23271,15164 23285,15104 23283,15061
 (Lydia-Rabinowitsch-Str. - Uferweg): einige Fußgänger	q1 7930,14060 7965,14081
+#: note: keine Grünanlagenschilder vvv
+#: note: parallel 18 Stufen in sechs Treppengruppen
+(Treskowallee - Traberweg): Rampe	q4 18471,7862 18442,7882
+(Treskowallee - Traberweg): einige Fußgänger	q1 18442,7882 18356,7944 18260,8041 18222,8103 18130,8386 18116,8424
+#: note ^^^
+(Üderseestr - Weg an der KGA Stallwiese): einige Fußgänger	q1 18135,8404 18130,8386
 # 
 ######################### User Contributions #################################
 # 

@@ -1719,6 +1719,9 @@ Straßenbahntrasse	3nocross::ignrte 18878,9517 18867,9464 18834,9256 18809,9133
 Treskowallee -> Waldowallee: Straßenbahntrasse	3::igndisp 18878,9517 18867,9464 18916,9468
 Treskowallee -> Rolandseck: Straßenbahntrasse	3::igndisp 18867,9464 18834,9256 18903,9244
 Rolandseck -> Treskowallee: Straßenbahntrasse	3::igndisp 18903,9244 18834,9256 18809,9133
+Straßenbahntrasse	3nocross::ignrte 18577,8033 18471,7862 18406,7760
+Treskowallee -> Traberweg: Straßenbahntrasse	3::igndisp 18406,7760 18471,7862 18442,7882
+Traberweg -> Treskowallee: Straßenbahntrasse	3::igndisp 18442,7882 18471,7862 18577,8033
 Bundesallee	3nocross::ignrte 5463,9961 5461,9923 5467,9866
 Bundesallee	1::igndisp 5467,9866 5461,9923 5463,9961
 Bundesallee	1::igndisp 5463,9961 5464,9934 5467,9866
@@ -3229,10 +3232,13 @@ Weg am Kienhorstgraben -> Scharnweberstr.: Überqueren wegen eines Gerüsts nicht 
 Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5346 22677,-5418
 Schönegarten: an beiden Enden gesperrt	2 7416,10492 7432,10546 7330,10590
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17783,8663 17656,8700
-Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17621,8544 17604,8466 17597,8434
+Adolf-Wermuth-Allee: noch nicht fertiggestellt	2::inwork 17608,8483 17597,8434
+Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17640,8627 17627,8556
 Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17640,8627 17771,8605
-Ruth-Baumgarte-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17794,8429 17735,8440 17668,8454 17604,8466
-Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17497,8623 17640,8627 17656,8700 17461,8693
+Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17524,8536 17627,8556
+Samuel-Lewin-Str.: noch nicht fertiggestellt	2::inwork 17783,8663 17771,8605 17755,8519
+Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17497,8623 17640,8627 17656,8700 17468,8692
+Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17738,8450 17755,8519 17627,8556 17608,8483 17682,8464 17738,8450
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:inwork 8266,14346 8442,14456
 (Verlängerung der Siegfriedstr.): während der Hochbauarbeiten gesperrt	2::inwork 11664,6796 11488,6781
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633

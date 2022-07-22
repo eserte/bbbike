@@ -1206,6 +1206,7 @@ Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
 #: osm_watch: way id="25367620" version="22"
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788&d=20191216 (Benennung nach Hans Otto Obrikat vorgeschlagen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_29_1829_2008_online.pdf (Straﬂenlandwidmung, als "Schnellerstr." bezeichnet)
 #: XXX oder wird statt Wasserstr. und Uferstr. die Straﬂe nach Hans Otto Obrikat benannt? (erster Vorschlag: "Else-Schierhorn-Str.")
 #: last_checked: 2022-06-25
 #: check_frequency: 60d
@@ -1507,7 +1508,7 @@ als Wanderweg 15 (weiﬂ-blau-weiﬂe Markierung) ausgeschildert	CP2; 19864,4607 198
 # 
 # REMOVED (mittlerweile wurden die Straﬂenschilder ausgewechselt) --- #: XXX bleibt diese Ausschilderung? Immerhin heiﬂt der Platz nun offiziell "Scharounplatz" --- #: last_checked: 2021-06-13 --- #: check_frequency: 60d --- ausgeschildert als "Scharounstr."	CP2; 7943,11431 8083,11381
 # 
-durch die KGA Stallwiese	CS 18101,8044 18186,8081 18276,8136
+durch die KGA Stallwiese	CS 18101,8044 18186,8081 18222,8103 18276,8136
 # 
 ausgeschildert "Sommerbad Wilmersdorf"	CP2; 3665,8131 3676,8394
 # 
@@ -1689,6 +1690,14 @@ B¸xensteinallee: diagonal ¸ber die Straﬂenbahngleise, erst dahinter ist ausgesch
 Am Weingarten: an der Einm¸ndung Sigridstr. den linken Strang benutzen	CP2; 13867,14507 13765,14665
 # 
 Upstallweg: nicht ausgeschildert	CP2; 17954,10367 18039,10398
+# 
+#: next_check_id: PARKSTADTKARLSHORST-2021
+#: last_checked: 2022-07-22 vvv
+Ruth-Baumgarte-Str.: noch nicht ausgeschildert	CS 17794,8429 17738,8450 17682,8464 17608,8483
+Irmtraud-Morgner-Str.: noch nicht ausgeschildert	CS 17524,8536 17627,8556 17755,8519
+Adolf-Wermuth-Allee: noch nicht ausgeschildert	CS 17597,8434 17608,8483 17627,8556
+Samuel-Lewin-Str.: noch nicht ausgeschildert	CS 17783,8663 17771,8605 17755,8519 17738,8450
+#: last_checked ^^^
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straﬂen)
