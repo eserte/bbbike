@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -83,7 +83,8 @@ for my $infile (@infiles) {
 				 push @errors, "Version mismatch for <$elemtype $id_assign>: $id_seen{$key} ne $version_assign in file $infile line $.";
 			     }
 			 } else {
-			     print join("\t", $elemtype, $id_assign, $version_assign, $r->[Strassen::NAME()]), "\n";
+			     my $name = get_name($r, $infile);
+			     print join("\t", $elemtype, $id_assign, $version_assign, $name), "\n";
 			     $id_seen{$key} = $version_assign;
 			 }
 		     }
@@ -101,4 +102,45 @@ sub _add_bbbike_inc {
     require FindBin;
     lib->import("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
     lib->import("/home/e/eserte/src/bbbike", "/home/e/eserte/src/bbbike/lib");
+}
+
+{
+    my $crossings;
+    sub _get_crossings {
+	if (!$crossings) {
+	    require Strassen::Core;
+	    require Strassen::Kreuzungen;
+	    require Strassen::MultiStrassen;
+	    require Strassen::StrassenNetz;
+	    my $ms = MultiStrassen->new(qw(strassen landstrassen landstrassen2));
+	    my $str_net = StrassenNetz->new($ms);
+	    $str_net->make_net(UseCache => 1);
+	    $crossings = Kreuzungen->new(UseCache => 1, Strassen => $ms, WantPos => 1);
+	}
+	$crossings;
+    }
+}
+
+sub get_crossing {
+    my($coord) = @_;
+    _get_crossings()->get_crossing_name($coord);
+}
+
+sub get_name {
+    my($r, $filename) = @_;
+    my $name = $r->[Strassen::NAME()];
+    if (!$name) {
+	my $c = $r->[Strassen::COORDS()];
+	if (@$c == 1) {
+	    my $crossing = get_crossing($c->[0]);
+	    if ($crossing) {
+		my $prefix = '';
+		if ($filename =~ /ampeln/) {
+		    $prefix = "Ampel ";
+		}
+		$name = "$prefix$crossing";
+	    }
+	}
+    }
+    $name;
 }
