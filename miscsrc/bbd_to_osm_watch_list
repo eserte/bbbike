@@ -126,20 +126,42 @@ sub get_crossing {
     _get_crossings()->get_crossing_name($coord);
 }
 
+sub get_nearest_crossing {
+    my($coord) = @_;
+    my($x,$y) = split /,/, $coord;
+    my $nearest_info = _get_crossings()->nearest($x,$y, IncludeDistance => 1, BestOnly => 1);
+    if ($nearest_info) {
+	my($xy, $dist) = @$nearest_info;
+	if ($dist <= 100) {
+	    return get_crossing($xy);
+	}
+    }
+    undef;
+}
+
 sub get_name {
     my($r, $filename) = @_;
     my $name = $r->[Strassen::NAME()];
     if (!$name) {
+	my @result_words;
 	my $c = $r->[Strassen::COORDS()];
 	if (@$c == 1) {
 	    my $crossing = get_crossing($c->[0]);
-	    if ($crossing) {
-		my $prefix = '';
-		if ($filename =~ /ampeln/) {
-		    $prefix = "Ampel ";
+	    if (!$crossing) {
+		$crossing = get_nearest_crossing($c->[0]);
+		if ($crossing) {
+		    @result_words = ('nahe');
 		}
-		$name = "$prefix$crossing";
 	    }
+	    if ($crossing) {
+		if ($filename =~ /ampeln/) {
+		    unshift @result_words, 'Ampel';
+		}
+		push @result_words, $crossing;
+	    }
+	}
+	if (@result_words) {
+	    $name = join ' ', @result_words;
 	}
     }
     $name;
