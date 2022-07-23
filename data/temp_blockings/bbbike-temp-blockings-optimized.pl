@@ -5173,6 +5173,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => undef,
          'id' => 3421,
+         'recurring' => 1,
          'source_id' => 'https://www.berlin.de/special/shopping/flohmaerkte/2222392-1724959-flohmarkt-am-marheinekeplatz-in-der-berg.html',
          'text' => 'Marheinekeplatz (Richtung Mittenwalder Str.): Trödelmarkt samstags 10 bis 16 Uhr, sonntag 11 bis 17 Uhr (Sommerhalbjahr) bzw. 16 Uhr (Winterhalbjahr)',
          'type' => 'handicap',
@@ -6199,7 +6200,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'until' => 1658649600
        },
        {
-         'data' => '	2::inwork 40339,28934 40135,28824 39921,28733
+         'data' => '	2::inwork 40339,28934 40127,28820 40098,28808 39921,28733
 ',
          'from' => 1659247200,
          'id' => 3588,

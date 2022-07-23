@@ -10658,7 +10658,7 @@ EOF
        text  => 'L 023 OU Strausberg, zw. Kreisel Seespitze u. Abzw. Stadt Treibjagd Vollsperrung 16.11.2007-16.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 41683,19794 41882,20643
+	2::inwork 41685,19862 41882,20643
 EOF
      },
      { from  => 1194822000, # 2007-11-12 00:00
@@ -11528,7 +11528,7 @@ EOF
        text  => 'B 168 Prötzel - Tiefensee zw. Prötzel, Stadtstelle und KG, Höhe Gamensee Deckenerneuerung Vollsperrung 13.05.2008-31.07.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 41299,28974 40339,28934 40135,28824 39921,28733 39140,29074
+	2::inwork 41299,28974 40339,28934 40127,28820 40098,28808 39921,28733 39140,29074
 EOF
      },
      { from  => 1209852000, # 2008-05-04 00:00
@@ -15915,7 +15915,7 @@ EOF
        text  => 'B 158 Bad Freienwalde - Werneuchen zw. L236, Ri. Freudenberg u. OE Tiefensee Deckschichterneuerung Vollsperrung 02.09.2009-18.09.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 41925,33512 40827,32011 39783,31398
+	2::inwork 41925,33512 41130,32367 40827,32011 39775,31410
 EOF
      },
      { from  => 1250373600, # 2009-08-16 00:00
@@ -33480,6 +33480,7 @@ EOF
        until => undef, # XXX
        text  => 'Marheinekeplatz (Richtung Mittenwalder Str.): Trödelmarkt samstags 10 bis 16 Uhr, sonntag 11 bis 17 Uhr (Sommerhalbjahr) bzw. 16 Uhr (Winterhalbjahr)',
        type  => 'handicap',
+       recurring => 1,
        source_id => 'https://www.berlin.de/special/shopping/flohmaerkte/2222392-1724959-flohmarkt-am-marheinekeplatz-in-der-berg.html',
        data  => <<EOF,
 	q4::temp:clock 9880,9233 9892,9286
@@ -35705,7 +35706,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/221-F/22/104',
        data  => <<EOF,
-	2::inwork 40339,28934 40135,28824 39921,28733
+	2::inwork 40339,28934 40127,28820 40098,28808 39921,28733
 EOF
      },
     );
