@@ -345,7 +345,7 @@ Kastanienallee: Radfahrer müssen auf den gegenüberliegenden Radweg verlassen	DH:
 #: source_id: viz2021:13.454254,52.49393,29.07.2021,08:00 (bis Ende 2021, Gesamtbaumaßnahme bis 30.6.2023) (mittlerweile bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.458241,52.492038,29.07.2021,08:00 (bis 30.6.2022) (inaktiv) (bis 31.12.2022)
 #: osm_watch: way id="1005683568" version="5"
-#: last_checked: 2022-07-04 (osm) vvv
+#: last_checked: 2022-07-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: note: allerdings spart man hier eine Ampel
@@ -398,4 +398,11 @@ Wiltbergstr. - Röntgentaler Weg: Fußgängerampel mitbenutzen, Anforderung	DH:tl 1
 # 
 #: XXX_prog BS
 Salvador-Allende-Brücke - An der Müggelspree: Bordstein beim Überqueren der Salvador-Allende-Str.	DH:t=5 23433,5037 23443,4942 23447,4906 23462,4906
+# 
+#: note: siehe auch comments_path-Einträge vvv
+Reichnerweg - Lichtenrader Damm: Überquerungsmöglichkeit 30m weiter nördlich	DH:len=60 10726,739 10539,662 10590,525
+Lichtenrader Damm - Reichnerweg: Überquerungsmöglichkeit 30m weiter nördlich	DH:h=q3,30 10522,708 10539,662 10726,739
+Reichnerweg - Feldstedter Weg: Überquerungsmöglichkeit 30m weiter nördlich	DH:len=60 10726,739 10539,662 10423,636
+Feldstedter Weg - Reichnerweg: Überquerungsmöglichkeit 30m weiter nördlich	DH:len=60:h=q3,60 10423,636 10539,662 10726,739
+#: note ^^^
 # 

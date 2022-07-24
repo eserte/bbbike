@@ -71,7 +71,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2022-07-06 vvv
+#: last_checked: 2022-07-24 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -235,8 +235,7 @@ Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 #: check_frequency: 360d vvv
 #: next_check: 2025-01-04 vvv
 #: valid: -20250104 vvv
-#: note: Anforderungsampel
-	F::inwork 8950,847
+# REMOVED (existiert nicht mehr) --- #: note: Anforderungsampel ---	F::inwork 8950,847
 #: note: Anforderungsampel
 	F::inwork 9155,1006
 #: valid ^^^
@@ -1158,6 +1157,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036190429651/190429651/00081409/09-Anlagen/04/B0138SB.pdf (nach Komplettumbau)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5240 (Prüfung für einen Umbau)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036154063735/154063735/00111219/19-Anlagen/05/B1138ZB2.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7226 (Antrag)
 #: last_checked: 2022-06-04
 #: check_frequency: 180d
 	X 18080,5376
@@ -1285,7 +1285,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX bis wann wird es diesen Bahnübergang geben?
 #: last_checked: 2021-10-03
 #: next_check: 2023-07-31
-	B 10215,-2170
+	B 10217,-2229
 # 
 	X 12938,1348
 	X 12911,1815

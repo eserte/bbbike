@@ -570,13 +570,14 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 Uwe-Lieschied-Str.: schlechtes Kopfsteinpflaster	Q3 12407,8177 12427,8109
 Falkstr.: Asphalt	Q0 12162,8053 12178,7985 12179,7979
-Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12216,7838 12220,7822
+Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12186,7952 12216,7838 12220,7822
 (Falkstr. - Mittelweg): Verbundsteinpflaster, einige Schäden	Q1 12220,7822 12224,7799
 Schillerpromenade: Kopfsteinpflaster	Q2 11661,8131 11689,8006
 Schillerpromenade: Kopfsteinpflaster	Q2 11713,7899 11738,7790 11763,7687 11785,7583 11803,7487
 Säntisstr.: Asphalt mit einigen Schlaglöchern	Q0 8892,802 8741,685 8652,617
 Säntisstr.: schlechtes Kopfsteinpflaster	Q3 8652,617 8533,525
 Alt-Marienfelde/Buckower Chaussee: Kopfsteinpflaster	Q2 8742,475 8533,525 8482,536 8250,655 8114,722 8000,729 7909,775
+Buckower Chaussee: Asphalt mit einigen Unebenheiten	Q0 9002,471 8972,498 8742,475
 Alt-Marienfelde: Asphalt	Q0 7909,775 7857,802
 Alt-Marienfelde: schlechtes Kopfsteinpflaster	Q3 8000,729 8194,617 8250,655
 Ratiborstr.: Kopfsteinpflaster	Q2 12718,9529 12739,9576 12834,9738
@@ -10967,6 +10968,9 @@ Kärntener Str.: Asphalt	Q0 6608,8277 6621,8221 6636,8157 6657,8070 6711,7846
 (Treskowallee - Traberweg): fester Sandweg	Q1 18442,7882 18356,7944 18260,8041 18222,8103
 (Treskowallee - Traberweg): fester Sandweg mit Schotter	Q2 18222,8103 18130,8386 18116,8424
 (Üderseestr - Weg an der KGA Stallwiese): fester Sandweg	Q1 18135,8404 18130,8386
+Goltzstr.: Asphalt mit einigen Schäden	Q1; 11073,-2037 10983,-2116
+(Falkstr. - Morusstr.): Kopfsteinpflaster	Q2 12186,7952 12219,7958
+(Falkstr. - Morusstr.): Verbundsteinpflaster	Q1 12219,7958 12407,8000 12439,8014 12450,8016
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12898,7 +12902,7 @@ Bruno-Wille-Str.: Kopfsteinpflaster	Q2 26083,4939 26079,5057 26068,5273 26063,54
 Sondershauser Str.: Beton	Q0 6400,579 6383,667 6358,795 6360,825 6363,935 6386,1051
 Sondershauser Str.: Asphalt	Q0 6386,1051 6397,1135 6411,1223 6441,1444 6470,1598
 Sondershauser Str.: Asphalt	Q0 6470,1598 6486,1680
-(Am Bahndamm): unbefestigter Weg	Q2 8106,3410 8016,3651 7795,4242
+(Am Bahndamm): unbefestigter Weg, einige Stellen mit Schotter	Q2 8106,3410 8016,3651 7795,4242
 (Am Bahndamm): Holzbohlen	Q1 7795,4242 7769,4315
 (Am Bahndamm): Verbundsteinpflaster/wassergebundene Decke	Q1 7769,4315 7727,4418 7692,4464 7667,4549
 Ahrenshooper Str.: Beton	Q0 16768,18522 16889,18347 16949,18261 17082,18068
@@ -15146,7 +15150,7 @@ Küstriner Str.: Asphalt	Q0 15944,14836 15977,14871
 Küstriner Str.: Asphalt	Q0 15977,14871 16123,15025
 Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 16314,15223 16354,15323 16406,15452
-Am Rötepfuhl: guter Asphalt	Q0 11643,1338 11683,1285 11798,1212 11820,1185 11800,1135 11729,1102
+Am Rötepfuhl: Beton	Q0 11643,1338 11683,1285 11798,1212 11820,1185 11800,1135 11729,1102
 Fichtestr. (Hermsdorf): Verbundsteinpflaster	Q1 3495,22803 3477,23002
 Fichtestr. (Hermsdorf): mäßiges Kopfsteinpflaster	Q2 3477,23002 3494,23057 3530,23122 3544,23179
 Mutziger Str.: Asphalt	Q0 14411,16008 14448,15914
@@ -17328,8 +17332,8 @@ Holbeinstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4307,3959 4385,4032
 Holbeinstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3348,3278 3499,3377 3634,3473
 Coswiger Str.: Beton	Q1 19187,13850 19067,13818 19000,13801 18871,13796
 Rufacher Weg: Asphalt	Q0 12207,1704 12179,1758 12160,1817 12245,2023 12286,2065 12489,2105 12582,2122 12738,2162
-Weitbrucher Str.: Verbundsteinpflaster	Q2 10845,1026 11061,1029
-Weitbrucher Str.: Verbundsteinpflaster	Q2 11061,1029 11257,995 11582,816
+Weitbrucher Str.: Verbundsteinpflaster	Q1 10845,1026 11061,1029
+Weitbrucher Str.: Asphalt	Q0 11061,1029 11257,995 11582,816
 Weitbrucher Str.: Asphalt	Q0 11605,860 11582,816 11529,726 11490,664
 Kornmesserstr.: Kopfsteinpflaster	Q3 4065,2576 3932,2660 3737,2671
 Gärtnerstr. (Alt-Hohenschönhausen): Fahrbahn sehr guter Asphalt	Q0 16819,15912 16884,15833 16946,15801 17115,15769 17238,15764 17378,15760 17488,15766

@@ -735,3 +735,10 @@ Gartenstr. - Amtsstr.: zum Überqueren des Müggelheimer Damms die linke Fußgänger
 Karlstr. - Müggelheimer Damm: zum Überqueren des Müggelheimer Damms den Straßenbahnübergang auf der linken Seite benutzen	CP; 22502,4260 22556,4386 22451,4441
 Müggelheimer Damm - Karlstr.: Straßenbahnübergang benutzen	CP; 22674,4309 22556,4386 22502,4260
 # 
+#: note: siehe auch handicap_directed-Einträge vvv
+Reichnerweg - Lichtenrader Damm: Überquerungsmöglichkeit 30m rechts benutzen	CP; 10726,739 10539,662 10590,525
+Lichtenrader Damm - Reichnerweg: etwa 30m vor der Kreuzung die Straßenseite wechseln	PI; 10522,708 10539,662 10726,739
+Reichnerweg - Feldstedter Weg: Überquerungsmöglichkeit 30m rechts benutzen	CP; 10726,739 10539,662 10423,636
+Feldstedter Weg - Reichnerweg: Überquerungsmöglichkeit 30m links benutzen	CP; 10423,636 10539,662 10726,739
+#: note ^^^
+# 

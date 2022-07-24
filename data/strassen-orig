@@ -2090,8 +2090,9 @@ Mainzer Str. (Neukölln)	N 12063,8826 12057,8529 12083,8411 12104,8299 12116,8247
 Am Sudhaus	N 12134,8172 12282,8204
 #: note: früher (bis ca. November 2010) ging die Falkstr. bis zur Rollbergstr.
 Falkstr.	N 12162,8053 12178,7985 12179,7979
-Falkstr.	NN 12179,7979 12216,7838 12220,7822
+Falkstr.	NN 12179,7979 12186,7952 12216,7838 12220,7822
 (Falkstr. - Mittelweg)	NN 12220,7822 12224,7799
+(Falkstr. - Morusstr.)	NN 12186,7952 12219,7958 12407,8000 12439,8014 12450,8016
 Hans-Schiftan-Str.	N 12566,8140 12545,8209
 Biebricher Str.	N 11884,8492 12057,8529
 Reuterstr. (Neukölln)	N 12216,8323 12195,8436 12166,8557 12165,8566 12150,8764
@@ -2991,6 +2992,9 @@ Alt-Britz	N 12594,4324 12678,4389 12836,4649 12916,4757 13018,5071 13045,5119 13
 Pätzer Str.	N 12885,5205 12963,5199 13045,5119
 Backbergstr.	N 12836,4649 12819,4780 12898,4974 13018,5071
 Fulhamer Allee	H 12731,4841 12819,4780 12916,4757 13001,4724 13056,4678 13266,4503
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7902 (Umbenennung beabsichtigt)
+#: XXX neuer Straßenname: Ingrid-Rabe-Str. (fehlt in Berlin.coords.data)
+#: next_check: 2022-11-01
 Straße 229 (Mariendorf)	N 11244,4325 11153,4325 11073,4342
 (Am Britzer Garten - Straße 229)	NN 11130,3838 11103,3960 11104,3981 11111,4055 11141,4214 11153,4325
 Am Britzer Garten	NN 11153,3728 11130,3838
@@ -7362,8 +7366,10 @@ Waldläuferweg	N 6006,22867 6118,22947
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8647 (Frage)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8745 (Forderung nach einer Verkehrsuntersuchung)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10176 (Anfrage)
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10454 (Planung 2020-2024, Bau 2025-2026)
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10478 (Anfrage)
 #: last_checked: 2020-02-29 (mapillary)
-#: next_check: 2023-01-01
+#: next_check: 2025-06-30
 Alter Bernauer Heerweg	NN 6641,22756 6770,22801
 Alter Bernauer Heerweg	N 6770,22801 6779,22804 6836,22824 6892,22843 6948,22862 7004,22881 7072,22905 7109,22919 7171,22942 7493,23064 7609,23108 7839,23195 7852,23200 7930,23227 7998,23252 8143,23305
 Alter Bernauer Heerweg	NN 8143,23305 8211,23330 8562,23421
@@ -10666,7 +10672,7 @@ Rohrbachstr.	N 9658,-2640 9658,-2419 9650,-2135
 Wolziger Zeile	N 10382,-2598 10365,-2603 10287,-2644
 Wolziger Zeile	N 10259,-2660 10287,-2644 10253,-2643 10085,-2643 9969,-2643 9872,-2642 9762,-2642 9658,-2640 9608,-2642
 Hohenzollernstr. (Lichtenrade)	N 9559,-2417 9658,-2419 9756,-2415 9864,-2411 9967,-2408 10069,-2405 10173,-2402
-Bahnhofstr. (Lichtenrade)	H 10983,-2116 10756,-2128 10631,-2130 10509,-2131 10453,-2133 10310,-2136 10300,-2135 10228,-2136 10203,-2137
+Bahnhofstr. (Lichtenrade)	H 10983,-2116 10756,-2128 10631,-2130 10509,-2131 10453,-2133 10310,-2136 10300,-2135 10228,-2136 10194,-2138
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: by: https://twitter.com/VIZ_Berlin/status/1264598301892108289
@@ -10679,11 +10685,11 @@ Bahnhofstr. (Lichtenrade)	H 10983,-2116 10756,-2128 10631,-2130 10509,-2131 1045
 #: XXX bis wann wird es diesen Weg geben?
 #: last_checked: 2021-10-03
 #: next_check: 2023-07-31
-(Notweg Bahnübergang Bahnhofstr.)	NN 10231,-2159 10215,-2170 10181,-2174 10161,-2146 10096,-2137
+(Notweg Bahnübergang Bahnhofstr.)	NN 10231,-2159 10207,-2173 10226,-2224 10217,-2229 10208,-2231 10161,-2146 10096,-2137
 # 
 Zescher Str.	N 10513,-2397 10509,-2131
 Haeselerstr. (Lichtenrade)	N 10404,-2404 10513,-2397 10563,-2432
-Prinzessinnenstr. (Lichtenrade)	H 10203,-2137 10096,-2137
+Prinzessinnenstr. (Lichtenrade)	H 10194,-2138 10096,-2137
 Prinzessinnenstr. (Lichtenrade)	N 10096,-2137 9961,-2136 9856,-2135 9757,-2135 9650,-2135 9576,-2135
 Alt-Lichtenrade	N 11119,-1992 11115,-1969 11085,-1969 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11068,-1574 11147,-1346 11149,-1274 11120,-976 11099,-857 11054,-740 10971,-499 10950,-438 10938,-405 10835,-145 10782,-24
 Alt-Lichtenrade	N 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
@@ -10691,6 +10697,7 @@ Ringelnatzstr.	N 10971,-499 10868,-539 10955,-769
 Happestr.	N 10955,-769 10953,-812 10968,-987 10973,-1041 10976,-1070
 (Happestr. - Schumpeterstr.)	NN 10976,-1070 10979,-1093
 Schumpeterstr.	N 10979,-1093 10993,-1256 11003,-1303
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8407 (Empfehlung: Umbenennung in Ottilie-Ehlers-Kollwitz-Str.)
 Straße 40 (Lichtenrade)	N 11015,-1357 11003,-1303
 Weißenthurmstr.	N 10968,-987 11120,-976
 Marienfelder Str.	N 10853,-1475 10981,-1564 11068,-1574
@@ -10700,7 +10707,8 @@ Nuthestr.	NN 9815,-805 9813,-822
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_21_1257_1304_online.pdf (Fahrradabstellplätze entstehen hier)
 #: XXX wenn die Teileinziehung vollzogen ist: N -> NN
 #: osm_watch: way id="49719228" version="9"
-#: next_check: 2022-03-25
+#: last_checked: 2022-07-24
+#: check_frequency: 90d
 Nuthestr.	N 9813,-822 9849,-911
 Rieflerstr.	N 9989,-1278 10147,-1273
 Dossestr. (Lichtenrade)	N 10082,-986 10030,-1066 9925,-1106
@@ -10797,7 +10805,7 @@ Neuwedeller Str.	N 12327,7847 12335,7770
 #: oldname: -20200227: Morusstr.
 #: ignore_oldname_file: yes
 Uwe-Lieschied-Str.	N 12407,8177 12427,8109
-Morusstr.	N 12427,8109 12446,8032 12466,7946 12478,7878 12520,7694
+Morusstr.	N 12427,8109 12446,8032 12450,8016 12466,7946 12478,7878 12520,7694
 Kienitzer Str.	N 12466,7946 12583,7974 12692,7996 12823,8028
 Kienitzer Str.	N 11504,7738 11612,7762 11738,7790 11867,7813 12025,7852 12090,7865
 (Lessinghöhe)	NN 12583,7974 12602,7907 12625,7829 12622,7796 12643,7714 12647,7672
@@ -18194,6 +18202,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3651 (beim Bau des R-Bahnhofs Köpenick ggfs. auch Umgestaltung des Elcknerplatzes?)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036553475560/553475560/00071473/73-Anlagen/05/B1481ZB1.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26099.pdf (Anfrage zum Regionalbahnhof Köpenick)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7221 (Antrag)
 #: last_checked: 2022-06-06
 #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044

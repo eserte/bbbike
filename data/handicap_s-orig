@@ -126,9 +126,9 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: source_id: 2147345858
-#: last_checked: 2022-04-26 (baustellen-doku)
+#: last_checked: 2022-07-24
 #: next_check: 2023-07-31
-(Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10215,-2170 10181,-2174 10161,-2146 10096,-2137
+(Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10207,-2173 10226,-2224 10217,-2229 10208,-2231 10161,-2146 10096,-2137
 # 
 ### Treptow ###
 # 
@@ -1881,7 +1881,7 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 Perleberger - Kieler: unterhalb der Brücke sehr eng	q3 7636,14414 7612,14449
 #: note: früher "q2"
 Ida-Wolff-Platz: Fußgänger	q4+ 9215,10607 9192,10528
-Falkstr.: Fußgänger	q1 12179,7979 12216,7838 12220,7822
+Falkstr.: Fußgänger	q1 12179,7979 12186,7952 12216,7838 12220,7822
 (Falkstr. - Mittelweg): gemeinsamer Fuß- und Radweg	q1 12220,7822 12224,7799
 (Platanenweg - Willi-Sänger-Str.): Fußgänger	q1 15787,8073 15808,8099 15843,8125
 #: note: Ausschilderung nicht eindeutig: am östlichen Ende ein Schild "getrennter Geh- und Radweg", dann kommt einige Meter weiter ein Grünanlagen-Schild, am westlichen Ende ist nur ein Grünanlagen-Schild
@@ -2007,8 +2007,10 @@ Weg am Tempodrom: Fußgänger, eng, kurvig	q2 8853,10708 8798,10678 8738,10704 869
 Kienheideweg: Fußgänger, Bordsteine	q2 13136,5593 13331,5640
 Kienheideweg: Fußgänger	q1 13331,5640 13414,5655
 Kienheideweg - Buschkrugallee: Fußgänger	q1 13511,5675 13612,5698
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8119 (Antrag: Freigabe gefordert) vvv
 Thomashöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12682,7514 12672,7561 12647,7672
 Lessinghöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12647,7672 12643,7714 12622,7796 12625,7829 12602,7907 12583,7974
+#: by ^^^
 Elli-Voigt-Str.: Bodenschwellen	q3 15833,13596 15831,13760
 Elli-Voigt-Str.: Bodenschwellen	q3 15792,13764 15794,13975
 Landsberger Allee - Große-Leege-Str.: Gehweg, Radfahrer frei	q1 15920,14357 15902,14498
@@ -2178,7 +2180,7 @@ Altrader Weg: Fußgänger	q1 18008,-58 17946,-100
 (U Zwickauer Damm - U Wutzkyallee): Fußgänger, unklare Wegführung	q2 16056,2034 16005,2058
 (U Zwickauer Damm - Agnes-Straub-Weg): Fußgänger	q1 15931,2061 15930,2112 15923,2129
 Lupinenweg: Fußgänger	q1 16856,1839 16801,1791
-Zum kleinen Pfuhl: Fußgänger	q2 12162,1651 12207,1704
+Zum kleinen Pfuhl: Fußgänger	q3 12162,1651 12207,1704
 # REMOVED (Bodenschwellen wurden entfernt) --- #: XXX_prog: für Anhänger relevant (q1 oder so) --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4432 (Wiederherstellung der Bodenschwellen) --- Borgmannstr.: Bodenschwelle	q0 22531,5871 22513,5747
 (Katzengrabensteg - Bellevuepark): Fußgänger	q1 22581,4932 22632,4958 22726,5328
 Katzengrabensteg: Fußgänger	q1 22581,4932 22484,4868 22433,4887 22439,4838
@@ -4157,6 +4159,7 @@ Fenchelweg: enge Straße	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,360
 (Treskowallee - Traberweg): einige Fußgänger	q1 18442,7882 18356,7944 18260,8041 18222,8103 18130,8386 18116,8424
 #: note ^^^
 (Üderseestr - Weg an der KGA Stallwiese): einige Fußgänger	q1 18135,8404 18130,8386
+(Falkstr. - Morusstr.): einige Fußgänger	q2 12186,7952 12219,7958 12407,8000 12439,8014 12450,8016
 # 
 ######################### User Contributions #################################
 # 

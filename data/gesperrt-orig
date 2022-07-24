@@ -3388,6 +3388,7 @@ weites Drängelgitter	BNP:2::trailer=7 12614,6301
 Tor	BNP:0:trailer=1 40394,30863
 Tor	BNP:0:trailer=1 40688,30996
 #: note ^^^
+Schranke	BNP:5::trailer=15 12439,8014
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3442,7 +3443,7 @@ Möllhausenufer: Bauarbeiten, Einbahnstraßenregelung	1s:q3 23608,1210 23520,1194
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20220111 (bis Ende 2023)
 #: note: Fertigstellung EÜ laut Baustellenschild 2023
 #: osm_watch: way id="229990468" version="6"
-#: last_checked: 2022-04-09 (https://www.youtube.com/watch?v=Mme7OHRiPgo)
+#: last_checked: 2022-07-24
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
@@ -3775,11 +3776,11 @@ Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13
 #: next_check_id: BAHNHOFSTR-2020
 #: by: https://berliner-abendblatt.de/2022/05/08/die-s2-wird-wochenlang-unterbrochen/
 #: XXX hier wird eine neue Unterführung gebaut vvv
-#: last_checked: 2022-04-26 (baustellen-doku) vvv
+#: last_checked: 2022-07-24 vvv
 #: next_check: 2023-07-31 vvv
 #: osm_watch: way id="152434836" version="21"
 #: osm_watch: way id="30084962" version="28"
-Prinzessinnenstr./Bahnhofstr. (Lichtenrade): Sperrung am Bahnübergang	2::inwork 10096,-2137 10203,-2137 10228,-2136 10300,-2135
+Prinzessinnenstr./Bahnhofstr. (Lichtenrade): Sperrung am Bahnübergang	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am Bahnübergang	2::inwork 10228,-2136 10231,-2159
 Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-2156 10318,-2156
 #: next_check ^^^
@@ -3799,7 +3800,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2022-07-18
+#: last_checked: 2022-07-24
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -3807,7 +3808,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2022-07-18
+#: last_checked: 2022-07-24
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 # 
@@ -3997,7 +3998,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 #: osm_watch: way id="696227207" version="3"
 #: source_id: viz2021:13.3621,52.447308,22.12.2020,10:00 (angrenzende Attilastr., bis 31.7.2022, Gesamtbaumaßnahme bis 2024)
 #: add_fragezeichen: Bis wann genau geht die Sperrung?
-#: last_checked: 2022-07-10
+#: last_checked: 2022-07-24
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549

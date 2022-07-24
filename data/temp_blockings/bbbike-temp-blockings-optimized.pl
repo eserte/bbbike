@@ -2467,188 +2467,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://csd-berlin.de/event-info-en/
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/gesamte-innenstadt-verkehrseinschrankungen-zum-christopher-street-day
-#: by: https://csd-berlin.de/ (24.7.2021, Route steht noch nicht fest)
-#: by: https://csd-berlin.de/csd-berlin-2021/demo-route-2/
-#: by: https://csd-berlin.de/demo-route-finale-2022/
-#: by: https://berliner-abendblatt.de/2022/07/13/hunderttausende-bei-csd-parade-am-23-juli-erwartet/
-	2::temp 10213,11728 10128,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8740,11524 8596,11508 8542,11502 8479,11493 8374,11479 8358,11477 8301,11469 8261,11463 8226,11458 8145,11438 8096,11393 8083,11381 8065,11349 8031,11249 8000,11137 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514 7633,10394 7579,10183 7536,10199 7413,10244 7238,10299 7131,10331 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954
-	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8546,12279 8570,12302
-	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165
-	3 8573,11404 8542,11502 8548,11571
-	3 8573,11404 8542,11502 8442,11555
-	3 9997,11713 10000,11691 9992,11682
-	3 8743,11489 8740,11524 8736,11557
-	3 7103,11247 6851,11346 6692,11365
-	3 6716,11439 6825,11486 6915,11492
-	3 6716,11439 6825,11486 6750,11550
-	3 9456,11513 9444,11616 9432,11702
-	3 8119,12414 8055,12186 8049,12140
-	3 8049,12140 8055,12186 8119,12414
-	3 8630,12307 8637,12258 8643,12208
-	3 6841,11114 6880,11110 7115,11220
-	3 6742,11099 6873,11011 7002,11034
-	3 8232,11414 8226,11458 8172,11679
-	3 8548,11571 8542,11502 8442,11555
-	3 8548,11571 8542,11502 8573,11404
-	3 7444,10479 7633,10394 7744,10372
-	3 7698,10147 7579,10183 7526,9969
-	3 8327,12174 8344,12221 8391,12389
-	3 7002,11034 6873,11011 6742,11099
-	3 8643,12208 8637,12258 8630,12307
-	3 7744,10372 7633,10394 7444,10479
-	3 9581,11523 9569,11631 9559,11715
-	3 9331,11497 9268,11590 9234,11683
-	3 9000,11727 9058,11564 9155,11283
-	3 6164,11947 6642,12010 6550,11954
-	3 8522,12239 8538,12245 8522,12187
-	3 8104,11037 7980,11070 7747,11075
-	3 7031,12320 7383,12095 7429,12070
-	3 9155,11283 9058,11564 9000,11727
-	3 7963,10716 7820,10768 7534,10850
-	3 7534,10850 7820,10768 7963,10716
-	3 6681,10959 6824,10904 6740,10755
-	3 8102,11099 8000,11137 7828,11133
-	3 6540,11754 6778,11742 6980,11790
-	3 8592,11541 8596,11508 8599,11474
-	3 7822,12201 7816,12150 7823,12120
-	3 8442,11555 8542,11502 8548,11571
-	3 8442,11555 8542,11502 8573,11404
-	3 7033,10328 7033,10396 6937,10407
-	3 7033,10328 7033,10396 7227,10489
-	3 7110,10613 6972,10665 6818,10725
-	3 7429,10366 7413,10244 7384,10127
-	3 7429,12070 7383,12095 7031,12320
-	3 7384,10127 7413,10244 7429,10366
-	3 6750,11550 6825,11486 6716,11439
-	3 6750,11550 6825,11486 6915,11492
-	3 7849,10488 7689,10514 7478,10612
-	3 7115,11220 6880,11110 6841,11114
-	3 8391,12389 8344,12221 8327,12174
-	3 8736,11557 8740,11524 8743,11489
-	3 6980,11790 6778,11742 6540,11754
-	3 6679,11602 6809,11570 6869,11567
-	3 7823,12120 7816,12150 7822,12201
-	3 7828,11133 8000,11137 8102,11099
-	3 9559,11715 9569,11631 9581,11523
-	3 6740,10755 6824,10904 6681,10959
-	3 7526,9969 7579,10183 7698,10147
-	3 8522,12187 8538,12245 8522,12239
-	3 6692,11365 6851,11346 7103,11247
-	3 6818,10725 6972,10665 7110,10613
-	3 9234,11683 9268,11590 9331,11497
-	3 7209,10205 7238,10299 7275,10418
-	3 7275,10418 7238,10299 7209,10205
-	3 8599,11474 8596,11508 8592,11541
-	3 7478,10612 7689,10514 7849,10488
-	3 7747,11075 7980,11070 8104,11037
-	3 6937,10407 7033,10396 7033,10328
-	3 6937,10407 7033,10396 7227,10489
-	3 6915,11492 6825,11486 6750,11550
-	3 6915,11492 6825,11486 6716,11439
-	3 9992,11682 10000,11691 9997,11713
-	3 6869,11567 6809,11570 6679,11602
-	3 6550,11954 6642,12010 6164,11947
-	3 8172,11679 8226,11458 8232,11414
-	3 9692,11732 9701,11656 9702,11647
-	3 9432,11702 9444,11616 9456,11513
-	3 7227,10489 7033,10396 6937,10407
-	3 7227,10489 7033,10396 7033,10328
-	3 9702,11647 9701,11656 9692,11732
-# REMOVED ---	2::temp 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936 6778,11742 6809,11570 6825,11486 6851,11346 6880,11110 6882,11061 6873,11011 6824,10904 6740,10755 6685,10690 6532,10529 6494,10440
-# REMOVED ---	2::temp 10213,11728 10128,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8740,11524 8596,11508 8542,11502 8548,11571 8553,11630 8553,11638 8562,11744 8567,11799 8571,11846 8577,11896 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-# REMOVED ---	3 8592,11541 8596,11508 8599,11474
-# REMOVED ---	3 9992,11682 10000,11691 9997,11713
-# REMOVED ---	3 6841,11114 6880,11110 7115,11220
-# REMOVED ---	3 9234,11683 9268,11590 9331,11497
-# REMOVED ---	3 6550,11954 6642,12010 6164,11947
-# REMOVED ---	3 7002,11034 6873,11011 6742,11099
-# REMOVED ---	3 7031,12320 7383,12095 7429,12070
-# REMOVED ---	3 8481,11638 8553,11638 8743,11663
-# REMOVED ---	3 6869,11567 6809,11570 6679,11602
-# REMOVED ---	3 9331,11497 9268,11590 9234,11683
-# REMOVED ---	3 8599,11474 8596,11508 8592,11541
-# REMOVED ---	3 6540,11754 6778,11742 6980,11790
-# REMOVED ---	3 6750,11550 6825,11486 6915,11492
-# REMOVED ---	3 6750,11550 6825,11486 6716,11439
-# REMOVED ---	3 9432,11702 9444,11616 9456,11513
-# REMOVED ---	3 6742,11099 6873,11011 7002,11034
-# REMOVED ---	3 8327,12174 8344,12221 8391,12389
-# REMOVED ---	3 8546,12279 8538,12245 8592,12252
-# REMOVED ---	3 8546,12279 8538,12245 8522,12239
-# REMOVED ---	3 8546,12279 8538,12245 8522,12187
-# REMOVED ---	3 7823,12120 7816,12150 7822,12201
-# REMOVED ---	3 8119,12414 8055,12186 8049,12140
-# REMOVED ---	3 7429,12070 7383,12095 7031,12320
-# REMOVED ---	3 8391,12389 8344,12221 8327,12174
-# REMOVED ---	3 6980,11790 6778,11742 6540,11754
-# REMOVED ---	3 8743,11663 8553,11638 8481,11638
-# REMOVED ---	3 8442,11555 8542,11502 8479,11493
-# REMOVED ---	3 8442,11555 8542,11502 8573,11404
-# REMOVED ---	3 9702,11647 9701,11656 9692,11732
-# REMOVED ---	3 7115,11220 6880,11110 6841,11114
-# REMOVED ---	3 7822,12201 7816,12150 7823,12120
-# REMOVED ---	3 6692,11365 6851,11346 7103,11247
-# REMOVED ---	3 6607,10801 6740,10755 6818,10725
-# REMOVED ---	3 6679,11602 6809,11570 6869,11567
-# REMOVED ---	3 7103,11247 6851,11346 6692,11365
-# REMOVED ---	3 6918,10858 6824,10904 6681,10959
-# REMOVED ---	3 9581,11523 9569,11631 9559,11715
-# REMOVED ---	3 6636,10492 6602,10504 6532,10529 6468,10550
-# REMOVED ---	3 9456,11513 9444,11616 9432,11702
-# REMOVED ---	3 8736,11557 8740,11524 8743,11489
-# REMOVED ---	3 8743,11489 8740,11524 8736,11557
-# REMOVED ---	3 8489,11782 8571,11846 8501,11815
-# REMOVED ---	3 8522,12187 8538,12245 8522,12239
-# REMOVED ---	3 8522,12187 8538,12245 8592,12252
-# REMOVED ---	3 8522,12187 8538,12245 8546,12279
-# REMOVED ---	3 8522,12239 8538,12245 8522,12187
-# REMOVED ---	3 8522,12239 8538,12245 8592,12252
-# REMOVED ---	3 8522,12239 8538,12245 8546,12279
-# REMOVED ---	3 8573,11404 8542,11502 8442,11555
-# REMOVED ---	3 8573,11404 8542,11502 8479,11493
-# REMOVED ---	3 8479,11493 8542,11502 8442,11555
-# REMOVED ---	3 8479,11493 8542,11502 8573,11404
-# REMOVED ---	3 8501,11815 8571,11846 8489,11782
-# REMOVED ---	3 6681,10959 6824,10904 6918,10858
-# REMOVED ---	3 9559,11715 9569,11631 9581,11523
-# REMOVED ---	3 9000,11727 9058,11564 9155,11283
-# REMOVED ---	3 9155,11283 9058,11564 9000,11727
-# REMOVED ---	3 6915,11492 6825,11486 6750,11550
-# REMOVED ---	3 6915,11492 6825,11486 6716,11439
-# REMOVED ---	3 9997,11713 10000,11691 9992,11682
-# REMOVED ---	3 6818,10725 6740,10755 6607,10801
-# REMOVED ---	3 8592,12252 8538,12245 8546,12279
-# REMOVED ---	3 8592,12252 8538,12245 8522,12239
-# REMOVED ---	3 8592,12252 8538,12245 8522,12187
-# REMOVED ---	3 6164,11947 6642,12010 6550,11954
-# REMOVED ---	3 6468,10550 6532,10529 6602,10504 6636,10492
-# REMOVED ---	3 9692,11732 9701,11656 9702,11647
-# REMOVED ---	3 8049,12140 8055,12186 8119,12414
-# REMOVED ---	3 6716,11439 6825,11486 6750,11550
-# REMOVED ---	3 6716,11439 6825,11486 6915,11492
-',
-         'from' => 1658440800,
-         'id' => 2083,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              6,
-                              'start',
-                              '2020-07-30T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.berlin.de/events/2096878-2229501-csd-christopher-street-day.html',
-         'text' => 'CSD am 23.7.2022',
-         'type' => 'gesperrt',
-         'until' => 1658613599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4314,11 +4133,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8405 (Anfrage) (mindestens bis 31.12.2022)
 #: also_indoor: traffic (G)
 #: osm_watch: way id="749226300" version="6"
 #: last_checked: 2022-04-08 (osm)
-#: check_frequency: 180d
-# REMOVED --- #: next_check: 2021-10-31
+# REMOVED --- #: check_frequency: 180d
+#: next_check: 2022-12-31
 	2::inwork 3079,5411 3179,5267
 ',
          'from' => undef,
@@ -4371,7 +4191,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G,H)
-#: last_checked: 2022-06-04
+#: last_checked: 2022-07-24
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2022-10-28
 # REMOVED --- #: next_check: 2024-01-01
@@ -4476,6 +4296,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/gleditschstrasse-am-2-mai-gesperrt_a262750
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8458 (Antrag: dauerhaft beibehalten)
 #: XXX ist die Sperrung nur im Sommer 2022 oder dauerhaft?
 #: next_check: 2022-08-27
 # REMOVED (hier nicht, hier sind Bauarbeiten) ---	q4::temp 7126,9825 7118,9870
@@ -4546,7 +4367,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-07-20 vvv
+#: last_checked: 2022-07-24 vvv
 #: check_frequency: 3d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -5234,7 +5055,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: DRESDNERBAHN-2021
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2022-04-09
+#: last_checked: 2022-07-24
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
@@ -5370,7 +5191,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="13"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2022-04-26 (baustellen-doku)
+#: last_checked: 2022-07-24
 #: check_frequency: 180d
 	2::inwork 9699,-600 9562,-619
 ',
@@ -5403,31 +5224,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BRAUNSCHWEIGER-2022
-#: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Kanner Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
-#: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
-#: also_indoor: traffic (ex-G,ex-H(nur Niemetz),ex-B(nur Niemetz)) vvv
-#: last_checked: 2022-05-01 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2022-09-30 vvv
-# REMOVED (hier nicht mehr) ---	q4::inwork; 13702,7418 13654,7380 13601,7366
-# REMOVED (falsches Ausschilderung, von Osten kommend kein Einfahrt-verboten-Schild) --- q4::inwork; 13601,7366 13519,7345 13476,7330
-	q4::inwork; 13476,7330 13373,7426 13341,7423
-# REMOVED (hier nicht mehr) ---	q3::inwork 13702,7418 13762,7321
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: XXX ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 3491,
-         'text' => 'Braunschweiger Str. und Kanner Str.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis September 2022',
-         'type' => 'handicap',
-         'until' => 1664553600
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic
 #: note: laut rbb nur bis 15.11.2022
@@ -5651,12 +5448,14 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: note: geöffnet (großes Tor) am 2022-02-13 (So) gegen 14:45, sowie 2022-03-27 (So) gegen 13:45
+#: osm_watch: node id="575826622" version="3" vvv
 #: last_checked: 2022-03-27 vvv
 #: check_frequency: 120d vvv
 	3 8260,7911 8203,7909 8161,7907
 	3 8161,7907 8203,7909 8260,7911
 #: check_frequency ^^^
 #: last_checked ^^^
+#: osm_watch ^^^
 ',
          'from' => undef,
          'id' => 3513,
@@ -5674,7 +5473,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2022-05-15 (architektur-urbanistik) vvv
+#: last_checked: 2022-07-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -5742,7 +5541,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: BRAUNSCHWEIGER-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
-#: last_checked: 2022-06-05 vvv
+#: last_checked: 2022-07-24 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 #: also_indoor: traffic (G,B) vvv
@@ -6174,31 +5973,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'type' => 'gesperrt',
          'until' => 1660917600
        },
-       {
-         'data' => '	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245
-	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8600,12165 8595,12066
-	3 8119,12414 8055,12186 8049,12140
-	3 7429,12070 7383,12095 7031,12320
-	3 7823,12120 7816,12150 7822,12201
-	3 7822,12201 7816,12150 7823,12120
-	3 7031,12320 7383,12095 7429,12070
-	3 8327,12174 8344,12221 8391,12389
-	3 8592,12252 8538,12245 8522,12239
-	3 8592,12252 8538,12245 8522,12187
-	3 8391,12389 8344,12221 8327,12174
-	3 8049,12140 8055,12186 8119,12414
-	3 8522,12187 8538,12245 8592,12252
-	3 8522,12187 8538,12245 8522,12239
-	3 8522,12239 8538,12245 8592,12252
-	3 8522,12239 8538,12245 8522,12187
-',
-         'from' => 1658313000,
-         'id' => 3587,
-         'source_id' => 'viz2021:13.369347,52.515752,21.07.2022,12:30',
-         'text' => 'Straße des 17. Juni und Ebertstr.: zwischen Großer Stern und Dorotheenstr./Behrenstr. Sperrung der Straße, möglicherweise sind auch Radfahrer betroffen, vom 21.07.2022 12:30 bis 24.07.2022 10:00 ',
-         'type' => 'gesperrt',
-         'until' => 1658649600
-       },
+       undef,
        {
          'data' => '	2::inwork 40339,28934 40127,28820 40098,28808 39921,28733
 ',
@@ -6208,6 +5983,36 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'text' => 'Prötzel - Tiefensee: Bauarbeiten, Sperrung, voraussichtlich 01.08.2022 08:00 Uhr bis 19.08.2022 16:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1660917600
+       },
+       {
+         'data' => '#: also_indoor: traffic (H(incomplete),B(incomplete)) vvv
+#: last_checked: 2022-07-24 vvv
+	q3::inwork; 13102,8343 12995,8213 12960,8246
+	q3::inwork 12995,8213 13060,8148
+#: last_checked ^^^
+#: also_indoor ^^^
+',
+         'from' => undef,
+         'id' => 3589,
+         'text' => 'Innstr., Donaustr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Sonnenallee; außerdem Anbindung Richtung Südosten gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://nitter.it/VIZ_Berlin/status/1551255892011716609#m
+#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllNNkVpeVhrQUUxVXo3LmpwZw==
+# REMOVED --- #: XXX sind Radfahrer tatsächlich betroffen? Laut rbb gibt\'s hier ein Einbahnstraßensystem (ohne konkrete Angabe von Richtungen). vvv --- #: next_check: 2022-07-25 vvv
+	q4::inwork; 10264,13097 10286,13084 10301,13075
+	q4::inwork 10220,13098 10105,13004
+# REMOVED (hier nicht) ---	q4::inwork 10339,13052 10301,13075 10286,13084 10264,13097 10220,13098 10077,13100
+# REMOVED --- #: next_check ^^^ --- #: XXX ^^^
+',
+         'from' => 1658631600,
+         'id' => 3590,
+         'source_id' => 'viz2021:13.40229,52.523644,25.07.2022,05:00',
+         'text' => 'Bereich Hackescher Markt: Gleisarbeiten, Richtung An der Spandauer Brücke sowie Große Präsidentenstr. gesperrt, vom 25.07.2022 05:00 bis 22.08.2022 17:00',
+         'type' => 'handicap',
+         'until' => 1661180400
        }
      
 );

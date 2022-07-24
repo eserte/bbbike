@@ -45,7 +45,7 @@ S2,S25,S26	SB 7325,5377 7306,5498 7264,5825 7266,5924 7275,5975 7294,6025 7847,7
 S2,S25,S26	SA 7847,7754 7861,7814 8159,8736 8223,8910 8249,9054 8276,9200 8280,9528 8286,9799 8303,9921
 S2,S25,S26	SA::Tu_ 8303,9921 8335,10030 8368,10100
 # Blankenfelde - Lichtenrade
-S2	SC 11575,-7519 11532,-7306 11429,-7023 11407,-6800 11077,-5335 10994,-4934 10896,-4469 10778,-3988 10545,-3078 10493,-2931 10365,-2603 10326,-2510 10215,-2170 10203,-2137 10175,-2068
+S2	SC 11575,-7519 11532,-7306 11429,-7023 11407,-6800 11077,-5335 10994,-4934 10896,-4469 10778,-3988 10545,-3078 10493,-2931 10365,-2603 10326,-2510 10217,-2229 10194,-2138 10175,-2068
 # Lichterfelde-Ost - Priesterweg
 S25,S26	SB 7325,5377 7338,5266 7333,5155 7299,5029 7214,4793 7153,4673 7031,4416 6877,4178 6803,4073 6426,3643 6371,3590 6153,3326 6041,3205 5912,3062 5730,2880 5485,2645 5440,2601
 # Lichterfelde-Ost - Lichterfelde-Süd
@@ -184,6 +184,8 @@ S45	SA 13130,7132 13030,7098 12955,7064 12670,6996 12309,6899
 #: by: https://www.berliner-zeitung.de/mensch-metropole/entscheidung-gefallen-berlin-und-brandenburg-bekommen-eine-neue-bahnstrecke-li.229424 (Reaktivierung als Regionalbahn geplant, Umsetzung nicht vor 2035)
 #: by: https://www.vbb.de/presse/berlin-und-brandenburg-einigen-sich-auf-zielvarianten-fuer-potsdamer-stammbahn-und-prignitz-express-1/
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-verkehr/auf-historischer-trasse-sollen-kuenftig-regionalzuege-fahren_a347642 (Fertigstellung Ende der 2030er Jahre)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8112 (Antrag zur Weiterführung in Neukölln)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8395 (Antrag zum Lärmschutz)
 # Stammbahn
 	S0 709,2633 683,2605 128,2336 -509,1987 -1501,1486 -4048,212 -6267,-921 -7040,-1338 -7399,-1461
 Jungfernheide - Spandau	S0 2158,13542 1719,13456 1200,13396 757,13346 -316,13237 -541,13249 -748,13327 -925,13398 -1245,13488 -2168,13648

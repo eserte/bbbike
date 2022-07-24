@@ -19539,6 +19539,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/04/28/grosser-nachholbedarf-eroeffnung-der-neukoellner-maientage/
 #: by: https://berliner-abendblatt.de/2022/05/21/letztes-wochenende-der-maientage-in-der-hasenheide/
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8008 (Anfrage)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8465 (Antrag)
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -30026,11 +30027,12 @@ EOF
        source_id => 'https://www.tagesspiegel.de/themen/freie-universitaet-berlin/bauprojekte-an-der-fu-neuer-glanz-am-alten-standort/24035558.html', # bis 2025? oder bis Ende 2020?
        data  => <<EOF,
 #: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8405 (Anfrage) (mindestens bis 31.12.2022)
 #: also_indoor: traffic (G)
 #: osm_watch: way id="749226300" version="6"
 #: last_checked: 2022-04-08 (osm)
-#: check_frequency: 180d
-# REMOVED --- #: next_check: 2021-10-31
+# REMOVED --- #: check_frequency: 180d
+#: next_check: 2022-12-31
 	2::inwork 3079,5411 3179,5267
 EOF
      },
@@ -30139,7 +30141,7 @@ EOF
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G,H)
-#: last_checked: 2022-06-04
+#: last_checked: 2022-07-24
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2022-10-28
 # REMOVED --- #: next_check: 2024-01-01
@@ -30959,6 +30961,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.923431.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/gleditschstrasse-am-2-mai-gesperrt_a262750
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8458 (Antrag: dauerhaft beibehalten)
 #: XXX ist die Sperrung nur im Sommer 2022 oder dauerhaft?
 #: next_check: 2022-08-27
 # REMOVED (hier nicht, hier sind Bauarbeiten) ---	q4::temp 7126,9825 7118,9870
@@ -31155,7 +31158,7 @@ EOF
        type  => 'handicap',
        source_id => '2147345858',
        data  => <<EOF,
-	q4::inwork 10096,-2137 10203,-2137 10228,-2136
+	q4::inwork 10096,-2137 10194,-2138 10228,-2136
 EOF
      },
      { from  => 1590175096, # --- 1590301800, # 2020-05-24 08:30
@@ -31195,7 +31198,7 @@ EOF
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-07-20 vvv
+#: last_checked: 2022-07-24 vvv
 #: check_frequency: 3d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -33734,7 +33737,7 @@ EOF
 #: next_check_id: DRESDNERBAHN-2021
 #: note: Dieser Eintrag ist nun zusätzlich in gesperrt-orig.
 #: add_fragezeichen: Ist hier noch immer gesperrt?
-#: last_checked: 2022-04-09
+#: last_checked: 2022-07-24
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	2::inwork 7673,4223 7769,4315
@@ -34211,7 +34214,7 @@ EOF
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="13"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2022-04-26 (baustellen-doku)
+#: last_checked: 2022-07-24
 #: check_frequency: 180d
 	2::inwork 9699,-600 9562,-619
 EOF
@@ -34349,27 +34352,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2022-09-30 18:00:00"),
+       until => 1658665596, # $isodate2epoch->("2022-09-30 18:00:00"),
        text  => 'Braunschweiger Str. und Kanner Str.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis September 2022',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BRAUNSCHWEIGER-2022
-#: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Kanner Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
-#: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
-#: also_indoor: traffic (ex-G,ex-H(nur Niemetz),ex-B(nur Niemetz)) vvv
-#: last_checked: 2022-05-01 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2022-09-30 vvv
+# REMOVED (mittlerweile nur noch "Vorfahrt vor dem Gegenverkehr", Richtung umgedreht) --- #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Kanner Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv --- #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv --- #: also_indoor: traffic (ex-G,ex-H(nur Niemetz),ex-B(nur Niemetz)) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-09-30 vvv
 # REMOVED (hier nicht mehr) ---	q4::inwork; 13702,7418 13654,7380 13601,7366
 # REMOVED (falsches Ausschilderung, von Osten kommend kein Einfahrt-verboten-Schild) --- q4::inwork; 13601,7366 13519,7345 13476,7330
 	q4::inwork; 13476,7330 13373,7426 13341,7423
 # REMOVED (hier nicht mehr) ---	q3::inwork 13702,7418 13762,7321
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: XXX ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: XXX ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => 1640991600, # 2022-01-01 00:00
@@ -34680,12 +34673,14 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: geöffnet (großes Tor) am 2022-02-13 (So) gegen 14:45, sowie 2022-03-27 (So) gegen 13:45
+#: osm_watch: node id="575826622" version="3" vvv
 #: last_checked: 2022-03-27 vvv
 #: check_frequency: 120d vvv
 	3 8260,7911 8203,7909 8161,7907
 	3 8161,7907 8203,7909 8260,7911
 #: check_frequency ^^^
 #: last_checked ^^^
+#: osm_watch ^^^
 EOF
      },
      { from  => 1644793200, # 2022-02-14 00:00
@@ -34733,7 +34728,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2022-05-15 (architektur-urbanistik) vvv
+#: last_checked: 2022-07-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -34855,7 +34850,7 @@ EOF
 #: next_check_id: BRAUNSCHWEIGER-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
-#: last_checked: 2022-06-05 vvv
+#: last_checked: 2022-07-24 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 #: also_indoor: traffic (G,B) vvv
@@ -35707,6 +35702,34 @@ EOF
        source_id => 'LS/221-F/22/104',
        data  => <<EOF,
 	2::inwork 40339,28934 40127,28820 40098,28808 39921,28733
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Innstr., Donaustr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Sonnenallee; außerdem Anbindung Richtung Südosten gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (H(incomplete),B(incomplete)) vvv
+#: last_checked: 2022-07-24 vvv
+	q3::inwork; 13102,8343 12995,8213 12960,8246
+	q3::inwork 12995,8213 13060,8148
+#: last_checked ^^^
+#: also_indoor ^^^
+EOF
+     },
+     { from  => 1658631600, # 2022-07-24 05:00
+       until => 1661180400, # 2022-08-22 17:00
+       text  => 'Bereich Hackescher Markt: Gleisarbeiten, Richtung An der Spandauer Brücke sowie Große Präsidentenstr. gesperrt, vom 25.07.2022 05:00 bis 22.08.2022 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.40229,52.523644,25.07.2022,05:00',
+       data  => <<EOF,
+#: by: https://nitter.it/VIZ_Berlin/status/1551255892011716609#m
+#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllNNkVpeVhrQUUxVXo3LmpwZw==
+# REMOVED --- #: XXX sind Radfahrer tatsächlich betroffen? Laut rbb gibt's hier ein Einbahnstraßensystem (ohne konkrete Angabe von Richtungen). vvv --- #: next_check: 2022-07-25 vvv
+	q4::inwork; 10264,13097 10286,13084 10301,13075
+	q4::inwork 10220,13098 10105,13004
+# REMOVED (hier nicht) ---	q4::inwork 10339,13052 10301,13075 10286,13084 10264,13097 10220,13098 10077,13100
+# REMOVED --- #: next_check ^^^ --- #: XXX ^^^
 EOF
      },
     );
