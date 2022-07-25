@@ -1297,7 +1297,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="30"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2022-07-21 (mapillary)
+#: last_checked: 2022-07-25
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -2450,7 +2450,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-07-18 vvv
+#: last_checked: 2022-07-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -2518,13 +2518,13 @@ Grünmarkierung	RW4; 14355,12752 14325,12648 14319,12629 14297,12553 14266,12446 
 Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14836,12826 14830,12932 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt; außerdem für Autofahrer Einbahnstraße offen Richtung Südosten, Radfahrer können aber den Radweg benutzen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2022-07-09
+#: last_checked: 2022-07-25
 #: check_frequency: 60d
 	RW0; 13945,13564 14052,13389
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt; mittlerweile wird der Radweg neu erstellt, vermutlich dann ohne Wurzelhebungen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2022-07-09
+#: last_checked: 2022-07-25
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -2700,16 +2700,16 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20191201 (keine Verlegung der Parkplätze auf den Mittelstreifen)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20201122 (geschützt oder ungeschützt?)
-#: by: http://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (mittlerweile: 3. Quartal 2023 - 4. Quartal 2024)
+#: by: http://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023) (mittlerweile Start: 3. Quartal 2022) (mittlerweile: 3. Quartal 2023 - 4. Quartal 2024) (mittlerweile: 4. Quartal 2023 - 4. Quartal 2024)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20210720 (Baubeginn Ende 2022)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: osm_watch: way id="420112505" version="7"
 #: osm_watch: way id="420112509" version="7"
 #: osm_watch: way id="966685279" version="1"
-#: last_checked: 2022-07-09 vvv
+#: last_checked: 2022-07-25 vvv
 #: check_frequency: 180d vvv
-#: next_check: 2023-12-31 vvv
+#: next_check: 2024-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW2; 13971,13818 14006,13761
@@ -3148,9 +3148,7 @@ Busspur gilt immer	RW5; 17151,11801 17121,11806 17028,11821 16962,11833 16803,11
 #: by: https://nitter.net/pic/media%2FFQTfl_wWQAMq_E_.jpg%3Fname%3Dorig
 #: source_id: viz2021:13.55623,52.50913,11.10.2021,08:26 (hier nur bis 20.10.2021) (aber die Markierungen brauchen vielleicht auch noch etwas Zeit?)
 #: source_id: viz2021:13.561129,52.508807,19.04.2022,07:00 (Deckenschlussarbeiten, bis 14.5.2022) (inaktiv)
-#: XXX Grünbeschichtung geplant
-#: priority: #D
-#: last_checked: 2022-07-16
+# REMOVED (als abgeschlossen markiert, anscheinend nur westlich Oberfeldstr.) --- #: XXX Grünbeschichtung geplant --- #: priority: #D --- #: last_checked: 2022-07-16
 # REMOVED --- #: next_check: 2022-05-14
 die ersten und letzten Meter werden auf dem Gehweg geführt	RW3; 21108,11628 20764,11675 20571,11698
 teilweise gemeinsamer, teilweise getrennter Rad- und Gehweg	RW2; 20540,11660 20633,11651
@@ -4192,10 +4190,10 @@ gemeinsamer Geh- und Radweg	RW2; 19994,12484 19982,12405 19967,12270 19962,12222
 gemeinsamer Geh- und Radweg	RW2; 19934,11977 19946,12075
 getrennter Geh- und Radweg	RW2; 19946,12075 19951,12114 19954,12140 19958,12177 19962,12222 19967,12270 19982,12405
 gemeinsamer Geh- und Radweg	RW2; 19982,12405 19994,12484
-	RW4; 19934,11977 19924,11890
+Grünmarkierung "light" (Rauten)	RW4; 19934,11977 19924,11890
 Grünmarkierung "light" (Rauten und einige längere Abschnitte)	RW4; 19924,11890 19890,11830 19849,11779 19785,11760
 	RW2; 19785,11760 19726,11743
-	RW4; 19924,11890 19900,11697 19908,11637 19936,11608 19999,11612 20026,11663 20064,11687 20114,11719
+Grünmarkierung "light" (Rauten und einige längere Abschnitte)	RW4; 19924,11890 19900,11697 19908,11637 19936,11608 19999,11612 20026,11663 20064,11687 20114,11719
 Grünmarkierung "light" (einige längere Abschnitte)	RW4; 19985,11727 20018,11698 20026,11663 19999,11612 19936,11608 19908,11637 19900,11697 19924,11890
 Grünmarkierung "light" (Rauten)	RW4; 19924,11890 19934,11977
 Verbundsteinpflaster	RW1;RW1 20323,16706 20390,16663 20397,16621 20376,16568 20319,16542
@@ -5848,9 +5846,9 @@ asphaltiert	RW1; 9660,17736 9721,17806
 #: last_checked: 2022-07-08 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
-#: osm_watch: way id="162965650" version="21"
+#: osm_watch: way id="162965650" version="22"
 	RW3; 8776,16268 8921,16578
-#: osm_watch: way id="761539110" version="6"
+#: osm_watch: way id="761539110" version="7"
 die letzten 20 Meter sind benutzungspflichtig	RW3; 8921,16578 8952,16666
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -7019,7 +7017,7 @@ Grünmarkierung	RW4; 12407,14470 12522,14385
 #: by: https://api.fixmyberlin.de/api/projects/342 (Danziger Str., als temporärer Radstreifen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.927647.php (Einrichtung ab 5. Mai 2020, Abschluss vorraussichtlich KW 20/2020 (~15. Mai 2020))
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
-#: by: http://www.infravelo.de/projekt/danziger-strasse-1/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021) (mittlerweile bis 4. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/danziger-strasse-1/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (mittlerweile bis 4. Quartal 2023)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1389893047379496960 (Markierungsarbeiten)
 #: by: https://twitter.com/VIZ_Berlin/status/1402152820439138307
@@ -7030,7 +7028,7 @@ Grünmarkierung	RW4; 12407,14470 12522,14385
 #: XXX hier wird vermutlich auch eine Grünmarkierung entstehen
 #: last_checked: 2022-07-21 (mapillary) vvv
 #: check_frequency: 60d vvv
-#: next_check: 2022-12-31 vvv
+#: next_check: 2023-12-31 vvv
 #: osm_watch: way id="335479077" version="15"
 teilweise provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 provisorischer Radstreifen	RW4; 12317,14535 12407,14470

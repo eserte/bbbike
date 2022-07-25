@@ -5268,20 +5268,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: EINSTEINPARK-2022
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-07-08
-#: check_frequency: 30d
-#: next_check: 2022-07-24
-	2::inwork 13204,15062 13207,14998 13163,14924
-',
-         'from' => undef,
-         'id' => 3498,
-         'text' => 'Einsteinpark: Bauarbeiten, Wege sind gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: MESSELSTR-2022
 #: also_indoor: traffic (H)
@@ -5430,9 +5417,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: last_checked: 2022-07-12 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="26"
+#: osm_watch: way id="4395450" version="27"
 	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="10"
+#: osm_watch: way id="505363417" version="11"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -6013,6 +6000,17 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'text' => 'Bereich Hackescher Markt: Gleisarbeiten, Richtung An der Spandauer Brücke sowie Große Präsidentenstr. gesperrt, vom 25.07.2022 05:00 bis 22.08.2022 17:00',
          'type' => 'handicap',
          'until' => 1661180400
+       },
+       {
+         'data' => '#: next_check_id: BADFREIENWALDE-2022
+	2::inwork 52984,42973 53249,43276
+',
+         'from' => 1644793200,
+         'id' => 3591,
+         'source_id' => 'LS/721-F/22/001',
+         'text' => 'Bad Freienwalde, Schiffmühler Str.: Sperrung, evtl. sind auch Radfahrer betroffen, 14.02.2022 bis 14.09.2024',
+         'type' => 'gesperrt',
+         'until' => 1726351200
        }
      
 );

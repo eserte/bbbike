@@ -784,8 +784,8 @@ Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4:
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
-#: also_indoor: traffic (G,H(falsch?),ex-B)
-#: last_checked: 2022-06-30 vvv
+#: also_indoor: traffic (G(unvollständig),ex-H(falsch),B(falsch))
+#: last_checked: 2022-07-25 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,12280 16159,12301
@@ -2011,8 +2011,8 @@ Kienheideweg - Buschkrugallee: Fußgänger	q1 13511,5675 13612,5698
 Thomashöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12682,7514 12672,7561 12647,7672
 Lessinghöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12647,7672 12643,7714 12622,7796 12625,7829 12602,7907 12583,7974
 #: by ^^^
-Elli-Voigt-Str.: Bodenschwellen	q3 15833,13596 15831,13760
-Elli-Voigt-Str.: Bodenschwellen	q3 15792,13764 15794,13975
+Elli-Voigt-Str.: vier Bodenwellen	q1- 15833,13596 15831,13760
+Elli-Voigt-Str.: zwei Bodenwellen	q1- 15792,13764 15794,13975
 Landsberger Allee - Große-Leege-Str.: Gehweg, Radfahrer frei	q1 15920,14357 15902,14498
 Landsberger Allee - Große-Leege-Str.: Gehweg, Radfahrer frei	q1 15902,14498 15896,14548 15899,14598
 Verdener Gasse: enge Straße	q1 15878,14761 15946,14702
@@ -3804,7 +3804,9 @@ Friedrich-Meinecke-Weg: Fußgänger, Bordsteine	q3 1803,5397 1873,5385 1946,5385 2
 nördliche Wuhlheide: schmaler Weg	q3 20728,7363 20815,7313 20841,7271
 nördliche Wuhlheide: einige schmale Stellen	q2 20879,8173 20895,8079 20854,7982 20763,7868
 nördliche Wuhlheide: einige schmale Stellen	q2 20719,8139 20679,8362
-Einstein-Park: Fußgänger, Radfahren offiziell verboten, flacher Bordstein am Storkower Platz	q3 13163,14924 13207,14998 13204,15062
+#: note: früher: Fußgänger, Radfahren offiziell verboten, flacher Bordstein am Storkower Platz
+#: note: zumindest am nördlichen Ende als gemeinsamer Geh- und Radweg ausgeschildert
+Einstein-Park: einige Fußgänger	q2+ 13163,14924 13207,14998 13204,15062
 #: note: abgesenkte Bordsteine
 (Alt-Friedrichsfelde/Am Tierpark [Wohngebiet] - Am Tierpark): Gehweg, flache breite Rampe	q2 18160,11635 18216,11656
 (Lehrter Str. - Klara-Franke-Str.): Fußgänger	q2 7468,13876 7493,13918 7547,13946
@@ -3996,6 +3998,7 @@ Weißenhöher Str. [69-71]: einige Fußgänger	q1 20569,11492 20582,11558
 (Königsteinbrücke - Weg an der A114): sehr enger Trampelpfad	q4 13136,22397 13167,22417 13217,22413
 Wuhlewanderweg: enge Brücke	q2 22349,17302 22364,17323
 (Verbindung Golliner Str. - Wuhlewanderweg): schmaler Pfad	q2 22272,18296 22287,18297 22356,18264 22356,18239 22363,18219
+#: by: https://berliner-abendblatt.de/2022/07/25/bergmannstrasse-tempo-10-km-h-fuer-fahrraeder-bleibt-vorerst/
 #: note: außerdem zahlreiche Bodenschwellen auf dem Rest der Fahrbahn
 Bergmannstr.: Tempo 10	q3+ 9505,9306 9632,9280 9689,9266 9753,9252
 #: XXX_prog mit Anhänger aber ggfs. q2

@@ -34443,15 +34443,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1658767273, # undef, # XXX
        text  => 'Einsteinpark: Bauarbeiten, Wege sind gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: EINSTEINPARK-2022
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-07-08
-#: check_frequency: 30d
-#: next_check: 2022-07-24
+# REMOVED (offen) --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2022-07-08 --- #: check_frequency: 30d --- #: next_check: 2022-07-24
 	2::inwork 13204,15062 13207,14998 13163,14924
 EOF
      },
@@ -34657,9 +34654,9 @@ EOF
 #: last_checked: 2022-07-12 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="26"
+#: osm_watch: way id="4395450" version="27"
 	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="10"
+#: osm_watch: way id="505363417" version="11"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -35730,6 +35727,16 @@ EOF
 	q4::inwork 10220,13098 10105,13004
 # REMOVED (hier nicht) ---	q4::inwork 10339,13052 10301,13075 10286,13084 10264,13097 10220,13098 10077,13100
 # REMOVED --- #: next_check ^^^ --- #: XXX ^^^
+EOF
+     },
+     { from  => $isodate2epoch->("2022-02-14 00:00:00"),
+       until => 1726351200, # 2024-09-15 00:00
+       text  => 'Bad Freienwalde, Schiffmühler Str.: Sperrung, evtl. sind auch Radfahrer betroffen, 14.02.2022 bis 14.09.2024',
+       type  => 'gesperrt',
+       source_id => 'LS/721-F/22/001',
+       data  => <<EOF,
+#: next_check_id: BADFREIENWALDE-2022
+	2::inwork 52984,42973 53249,43276
 EOF
      },
     );
