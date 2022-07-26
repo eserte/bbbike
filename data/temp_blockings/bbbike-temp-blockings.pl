@@ -28632,7 +28632,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
 #: osm_watch: way id="29547073" version="11"
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2022-07-06
+#: last_checked: 2022-07-26
 # REMOVED --- #: next_check: 2022-05-01
 	2::inwork 14980,8940 14947,8993 14855,9046 14705,9034
 EOF
@@ -35737,6 +35737,42 @@ EOF
        data  => <<EOF,
 #: next_check_id: BADFREIENWALDE-2022
 	2::inwork 52984,42973 53249,43276
+EOF
+     },
+     { from  => 1658811600, # 2022-07-26 07:00
+       until => 1666710000, # 2022-10-25 17:00
+       text  => 'Charlottenstr.: Bauarbeiten zwischen Leipziger Str. und Kronenstr., Fahrbahn Richtung Norden gesperrt, vermutlich sind auch Radfahrer betroffen, vom 27.07.2022 07:00 bis 25.10.2022 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.391787,52.510533,27.07.2022,07:00',
+       data  => <<EOF,
+	q4::inwork; 9569,11631 9559,11715
+EOF
+     },
+     { from  => 1659243600, # 2022-07-31 07:00
+       until => 1672495200, # 2022-12-31 15:00
+       text  => 'Drahnsdorf: Sanierungsarbeiten an der Brücke Vordermühle, evtl. auch für Radfahrer gesperrt, 01.08.2022 07:00 Uhr bis 31.12.2022 15:00 Uhr',
+       type  => 'gesperrt',
+       source_id => '226101195',
+       data  => <<EOF,
+	2::inwork 23910,-54100 23623,-54115
+EOF
+     },
+     { from  => 1653804000, # 2022-05-29 08:00
+       until => 1660917600, # 2022-08-19 16:00
+       text  => 'Falkenberg: K6431 von Gersdorf bis Ackermannshof Deckensanierung, Sperrung der Straße, bis 19.08.2022 16:00 Uhr',
+       type  => 'gesperrt',
+       source_id => '226400817',
+       data  => <<EOF,
+	2::inwork 42833,41088 42225,41215 41992,41263 39354,41395
+EOF
+     },
+     { from  => 1658811600, # 2022-07-26 07:00
+       until => 1667232000, # 2022-10-31 17:00
+       text  => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Adlergestell und Gellertstr. Richtung Osten gesperrt, vom 27.07.2022 07:00 bis 31.10.2022 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.545559,52.434572,27.07.2022,07:00',
+       data  => <<EOF,
+	q4::inwork; 20064,3278 20166,3344 20237,3392
 EOF
      },
     );

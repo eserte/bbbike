@@ -298,7 +298,7 @@ gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14218,10430 14405,10
 	RW2; 13986,10549 13919,10583 13779,10642 13678,10685 13596,10722
 	RW4; 14103,10489 13986,10549
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-07-24
+#: last_checked: 2022-07-26
 #: check_frequency: 90d
 # früher: das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14218,10430 14103,10489
 Gehweg für Radfahrer frei	RW1; 14218,10430 14103,10489
@@ -1022,7 +1022,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.46264,52.49544,18.05.2022,16:23 (bis 2028) (inaktiv)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-07-24 vvv
+#: last_checked: 2022-07-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2028-01-01 vvv
 	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2450,7 +2450,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-07-24 vvv
+#: last_checked: 2022-07-26 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -7700,4 +7700,7 @@ Grünmarkierung, Poller	RW4;RW4 5254,11237 5258,11285
 # 
 	RW6;RW6 7941,9733 7933,9755
 	RW7;RW7 7933,9755 7889,9901 7866,9902
+# 
+10er-Zone	RW6;RW6 14043,10928 14107,10911 14141,10931 14287,10892 14352,10874 14469,10841 14567,10814 14562,10782 14671,10751
+10er-Zone	RW6;RW6 14076,10949 14141,10931
 # 

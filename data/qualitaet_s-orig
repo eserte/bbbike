@@ -3078,10 +3078,13 @@ Wasserweg: alter Asphalt	Q1 16028,8867 16086,8860 16129,8855
 Wasserweg: fester Sandweg	Q2 16129,8855 16201,8860
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier der Asphalt wieder komplett hergestellt?
-#: last_checked: 2022-06-25
+#: last_checked: 2022-07-26
+#: check_frequency: 120d
+#: next_check: 2023-06-30
 Wasserweg: Beton/Asphalt, in der Fahrbahnmitte fehlt der Asphalt	Q1- 16201,8860 16358,8841 16388,8821
 # REMOVED --- Umfahrung Spreepark: fester Sandweg, Baumstümpfe	Q2 16028,8867 16084,8833 16129,8855
-Kiehnwerderallee: asphaltiert, einzelne Wurzelhebungen	Q0- 16388,8821 16436,8687 16490,8432 16534,8182 16602,7810 16620,7574 16633,7434
+Kiehnwerderallee: asphaltiert	Q0 16388,8821 16436,8687 16490,8432 16534,8182
+Kiehnwerderallee: asphaltiert, einzelne Wurzelhebungen	Q0- 16534,8182 16602,7810 16620,7574 16633,7434
 (Uferweg - Kiehnwerderallee): Waldweg	Q2+ 16627,8581 16577,8581 16436,8687
 (Uferweg - Kiehnwerderallee): Waldweg	Q2 16657,8443 16490,8432
 (Fähre - Kiehnwerderallee): asphaltiert	Q0 16655,7572 16620,7574
@@ -12111,8 +12114,10 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 (Grünstreifen 1929): Verbundsteinpflaster	Q1 17102,2420 17039,2358 17179,2186 17194,2131 17193,2062
 (Am Plänterwald - Spreepark): relativ glattes Pflaster	Q1- 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
 #: next_check_id: SPREEPARK-2022
-#: XXX Hier sind noch Bauarbeiten
-#: last_checked: 2022-06-25
+#: XXX wird hier der Asphalt noch verbessert?
+#: last_checked: 2022-07-26
+#: check_frequency: 120d
+#: next_check: 2023-06-30
 (Am Plänterwald - Spreepark): alter Asphalt	Q1 16084,8833 16086,8860
 Lepsiusstr.: Asphalt mit einigen Schäden und Schlaglöchern	Q0- 4520,5793 4558,5863 4603,5954 4646,6040 4652,6052 4689,6122 4716,6173 4730,6198 4776,6284 4840,6405 4846,6417 4894,6509
 Reichenhaller Str.: Verbundsteinpflaster	Q1 3094,7790 3198,7787
@@ -12481,7 +12486,7 @@ Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q0- 13870,9872 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7207 (Vorlage zur Kenntnisnahme)
 #: osm_watch: way id="24202434" version="24"
 #: XXX Wann wird der Asphalt ersetzt? Wann wird die Straße nur für Anlieger/Radfahrer frei sein?
-#: last_checked: 2022-06-25
+#: last_checked: 2022-07-26
 #: check_frequency: 90d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
