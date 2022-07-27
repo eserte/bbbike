@@ -598,6 +598,7 @@
     (cond
      ((string-match "\t\\([A-Za-z0-9_/-]+\\)\t\\(INUSE\\)?$" sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
      ((string-match (concat "\\(" bbbike-viz2021-regexp "\\)") sel) (setq source-id (substring sel (match-beginning 1) (match-end 1))))
+     ((string-match "https://www.bvg.de/de/verbindungen/stoerungsmeldungen/\\(.*\\)" sel) (setq source-id (concat "bvg2021:" (substring sel (match-beginning 1) (match-end 1)))))
      (t (error "No X selection or X selection does not contain a source-id")))
     (beginning-of-line)
     (insert (concat "#: source_id: " source-id "\n"))))
