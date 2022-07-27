@@ -699,12 +699,9 @@ Park am Gleisdreieck	F:P 8328,10831 8358,10782 8367,10745 8350,10662 8335,10518 
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7492 (Benennung in Dora-Duncker-Park)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_15_1089_1220_online.pdf (Benennung einer Grünanlage)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7863 (Bestellung der Schilder im Sommer 2022)
-#: XXX wann wird die Umbenennung wirksam? wann werden vor Ort Schilder aufgestellt?
-#: priority: #C
-#: last_checked: 2021-12-29
-# REMOVED --- #: check_frequency: 45d
-#: next_check: 2022-08-31
-Flaschenhalspark	F:P 8316,9581 8316,9098 8346,9096 8495,9526 8316,9581
+# REMOVED --- #: XXX wann wird die Umbenennung wirksam? wann werden vor Ort Schilder aufgestellt? --- #: priority: #C --- #: last_checked: 2021-12-29 --- # REMOVED --- #: check_frequency: 45d --- #: next_check: 2022-08-31
+#: alias: Flaschenhalspark
+Dora-Duncker-Park	F:P 8316,9581 8316,9098 8346,9096 8495,9526 8316,9581
 Grünanlage an der Gottlieb-Dunkel-Str.	F:P 11456,6103 11272,6100 11101,6122 11063,6007 11160,5990 11257,6015 11338,5992 11456,6103
 Grünanlage an der Gottlieb-Dunkel-Str./Teilestr.	F:P 11003,6013 11015,5925 11055,5843 11166,5821 11196,5851 11338,5992 11257,6015 11160,5990 11063,6007 11068,6006 11003,6013
 Friedhof Biesdorf	F:Cemetery 21775,11989 21784,11900 21756,11672 21474,11737 21514,11796 21645,11912 21775,11989
@@ -741,7 +738,7 @@ Carlo-Schmid-Platz	F:P -5118,13053 -5100,13081 -5073,13097 -5030,13017
 Zitadellenpark	F:P -2188,14859 -2196,14735 -2350,14722 -2351,14607 -2349,14581 -2594,14571 -2647,14532 -2794,14511 -2831,14512 -2819,14544 -2854,14496 -2842,14536 -2860,14612 -2885,14692 -2925,14917 -2917,14973 -2874,15007 -2839,14998 -2802,15000 -2730,15012 -2751,15056 -2710,15090 -2678,15061 -2656,15030 -2634,14990 -2715,14948 -2824,14956 -2882,14935 -2878,14897 -2845,14818 -2828,14775 -2819,14731 -2831,14589 -2831,14589 -2801,14573 -2676,14636 -2676,14636 -2663,14641 -2663,14641 -2631,14653 -2631,14653 -2595,14662 -2454,14670 -2430,14678 -2430,14678 -2427,14697 -2433,14726 -2433,14726 -2491,14821 -2491,14821 -2482,14839 -2400,14794 -2299,14855 -2250,14879 -2188,14859
 #: XXX KGA soll aufgegeben werden
 #: osm_watch: way id="19744578" version="18"
-#: last_checked: 2022-06-05
+#: last_checked: 2022-07-27
 #: check_frequency: 270d
 Hansakorso	F:Orchard 8272,7332 8137,7355 8139,7572 8182,7571 8182,7552 8224,7549 8228,7452 8293,7404 8272,7332
 Branitzer Platz	F:P 1338,12055 1381,12064 1405,12094 1396,12137 1366,12168 1325,12157 1302,12125 1303,12084 1338,12055
@@ -1505,7 +1502,7 @@ BSR	F:Industrial 3884,7829 3968,7906 4061,7992 4106,8031 3895,8079
 #: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/projekt-go-west-geht-in-die-naechste-runde_a347303
 #: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/bebauungsplan-liegt-aus_a348476
 #: note: früher Brendel Leuchten/Reemtsma
-#: last_checked: 2022-02-27
+#: last_checked: 2022-07-27
 #: next_check: 2026-06-15
 	F:Industrial 3895,8079 3779,8105 3777,7984 3649,7992 3639,7800 3735,7792 3731,7689 3839,7787 3884,7829 3895,8079
 Kraftwerk Wilmersdorf	F:Industrial 3895,8079 4106,8031 4180,8098 3896,8449 3831,8461 3834,8366 3895,8079

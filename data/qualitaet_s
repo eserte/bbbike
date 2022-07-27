@@ -197,7 +197,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3; 7225,8219 7158,8208 7014,8165 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7014,8165 7158,8208 7225,8219
 Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6792,8122
-Ebersstr.: Asphalt	Q0 6792,8122 6657,8070 6559,8033
+Ebersstr.: Asphalt	Q0 6792,8122 6648,8064 6559,8033
 Reichenberger Str.: Kopfsteinpflaster	Q2 11443,10394 11476,10357 11616,10288 11829,10192
 Reichenberger Str.: Kopfsteinpflaster	Q2 11829,10192 12048,10097 12229,10014
 Reichenberger Str.: Kopfsteinpflaster	Q2 12229,10014 12398,9938 12556,9862 12714,9792
@@ -7239,6 +7239,8 @@ Sebnitzer Weg: Kopfsteinpflaster	Q2 16282,1052 16227,997
 (Kanzlerweg - Schreiberring): unbefestigter Weg	Q1 8830,8148 8839,8168 8861,8242
 (Rumeyplan, Grünanlage): unbefestigter Weg	Q1 8907,7773 8895,7797
 (Rumeyplan - Kanzlerweg): unbefestigter Weg	Q1 8895,7797 8839,7904
+Gontermannstr.: Asphalt mit einigen Rissen und Schäden	Q0 8482,8364 8394,8313 8327,8302 8276,8295 8259,8265 8265,8092 8260,7911 8260,7803 8263,7611
+Mussehlstr.: Asphalt über Beton, einige Schäden	Q0 8982,8781 8926,8682 8842,8561
 Mussehlstr.: Gehwegplatten	Q0 8842,8561 8759,8458
 Mussehlstr.: Verbundsteinpflaster	Q1 8759,8458 8720,8373
 Varian-Fry-Str.: Kleinsteinpflaster	Q1 8374,11479 8389,11378
@@ -10367,7 +10369,7 @@ Verlängerte Werderstr.: Betonpflaster	Q0 20282,1865 20333,1972
 Grenzweg: Verbundsteinpflaster	Q1 21101,19448 21289,19147 21328,19049
 Verbindungsweg zur Neuen Wuhle: Schotterweg	Q1 21553,17701 21542,17632 21535,17550
 (Fürstenwalder Allee - Ahornstr.): provisorische Baustraße, holprig und teilweise sandig	Q3 33111,3064 33085,2974 33002,2826
-(Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.): Verbundsteinpflaster	Q1 3218,8233 3206,7988 3198,7787 3183,7563
+(Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.): Verbundsteinpflaster	Q1 3218,8233 3218,8223 3212,8107 3206,7988 3198,7787 3183,7563
 (entlang des Kreuzgrabens): wassergebundene Decke	Q1 10379,20309 10314,20262 10260,20222 10172,20142 10157,20128 10098,20113
 (entlang der Siemensbahn): gepflastert	Q2 778,14713 739,14723 547,14880 537,14919
 (Alt-Biesdorf - Schloss Biesdorf): Kopfsteinpflaster	Q2 20764,11675 20825,11732
@@ -10962,7 +10964,7 @@ Grüne Trift: Asphalt	Q0 23416,2808 23370,3024 23338,3173 23298,3295 23231,3480 2
 (KGA Alt-Hellersdorf - Alt-Hellersdorf): Asphalt	Q0 23271,15164 23285,15104 23283,15061
 (KGA Alt-Hellersdorf - Alt-Hellersdorf): unbefestigter Weg	Q2 23265,15054 23283,15061
 (Heidenauer Str. - Sebnitzer Str.): welliger Asphalt	Q1 24277,14747 24317,14768 24404,14770 24443,14756
-Kärntener Str.: Asphalt	Q0 6608,8277 6621,8221 6636,8157 6657,8070 6711,7846
+Kärntener Str.: Asphalt	Q0 6608,8277 6621,8221 6634,8134 6648,8064 6711,7846
 (Uferweg - Heidestr.): Kleinsteinpflaster	Q1 8057,13923 7997,13892 7910,13848
 (Lydia-Rabinowitsch-Str. - Uferweg): Kleinsteinpflaster	Q1 7930,14060 7965,14081
 (Treskowallee - Traberweg): betoniert	Q1 18471,7862 18442,7882
@@ -10972,6 +10974,8 @@ Kärntener Str.: Asphalt	Q0 6608,8277 6621,8221 6636,8157 6657,8070 6711,7846
 Goltzstr.: Asphalt mit einigen Schäden	Q1; 11073,-2037 10983,-2116
 (Falkstr. - Morusstr.): Kopfsteinpflaster	Q2 12186,7952 12219,7958
 (Falkstr. - Morusstr.): Verbundsteinpflaster	Q1 12219,7958 12407,8000 12439,8014 12450,8016
+Leonore-Goldschmidt-Str.: Steinplatten, etwas uneben	Q1 3224,8106 3326,8100
+Kletterrosenweg: Verbundsteinpflaster	Q1 21382,149 21344,300
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -16553,7 +16557,7 @@ Kuppenheimerstr.: Schotterweg	Q1 5820,8117 5824,8035
 (Geßlerstr. - Monumentenstr.): Verbundsteinpflaster	Q1 7973,8886 7970,9061 8009,9063
 (Geßlerstr. - Monumentenstr.): Asphalt	Q0 8009,9063 8014,9126
 Fritz-Reuter-Str. (Schöneberg): Kopfsteinpflaster	Q2 6621,8221 6779,8279
-Gutzkowstr.: Kopfsteinpflaster	Q2 6785,8194 6636,8157
+Gutzkowstr.: Kopfsteinpflaster	Q2 6785,8194 6634,8134
 Gustav-Freytag-Str.: Verbundsteinpflaster	Q1 6807,8309 6779,8279
 Gustav-Freytag-Str.: Kopfsteinpflaster	Q2 6779,8279 6785,8194 6792,8122
 (Loewenhardtdamm - Höhndorfstr.): Verbundsteine, Beton	Q0 8334,8655 8438,8676

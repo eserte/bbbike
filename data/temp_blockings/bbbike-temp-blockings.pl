@@ -31498,6 +31498,7 @@ EOF
 #: source_id: 2147347233 (bis 23.12.2021)
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022)
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)
+#: source_id: bvg2021:188#BVG259885_0
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -33241,6 +33242,8 @@ EOF
        source_id => 'viz2021:13.195212,52.527938,30.06.2021,06:00',
        data  => <<EOF,
 #: next_check_id: PICHELSDORFER-2021
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf (hier nur bis Ende August 2022)
+#: source_id: bvg2021:m36#BVG279266_0
 #: note: laut rbb ist der Fuß- und Radverkehr frei (allerdings evtl. mit Einschränkungen, deshalb noch immer q3)
 	q3::inwork -3824,13350 -3786,13267 -3693,13012 -3667,12919
 EOF
@@ -34495,6 +34498,7 @@ EOF
        data  => <<EOF,
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022
 #: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum für die Gesamtbaumaßnahme mehr) vvv
+#: source_id: bvg2021:188#BVG296003_0
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
@@ -34669,9 +34673,9 @@ EOF
        text  => 'Wintgensstr./Gontermannstr. - General-Pape-Str.: Tor kann verschlossen sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: note: geöffnet (großes Tor) am 2022-02-13 (So) gegen 14:45, sowie 2022-03-27 (So) gegen 13:45
+#: note: geöffnet (großes Tor) am 2022-02-13 (So) gegen 14:45, sowie 2022-03-27 (So) gegen 13:45, sowie 2022-07-27 (Mi) gegen 17:30
 #: osm_watch: node id="575826622" version="3" vvv
-#: last_checked: 2022-03-27 vvv
+#: last_checked: 2022-07-27 vvv
 #: check_frequency: 120d vvv
 	3 8260,7911 8203,7909 8161,7907
 	3 8161,7907 8203,7909 8260,7911
@@ -35189,6 +35193,8 @@ EOF
 #: by: https://nitter.net/VIZ_Berlin/status/1523578356306169857#m
 #: by: https://nitter.net/pic/media%2FFSTWWSqXIAAPomO.jpg%3Fname%3Dorig
 #: by: https://www.berliner-woche.de/buch/c-verkehr/kinder-sollen-sicher-zur-schule-und-kita-kommen_a348113 (demnächst Abriss der Eisenbahnbrücke)
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf 
+#: source_id: bvg2021:150#BVG300484_0
 	q4::inwork; 16166,25767 16121,25818
 EOF
      },
@@ -35722,6 +35728,7 @@ EOF
        data  => <<EOF,
 #: by: https://nitter.it/VIZ_Berlin/status/1551255892011716609#m
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllNNkVpeVhrQUUxVXo3LmpwZw==
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf
 # REMOVED --- #: XXX sind Radfahrer tatsächlich betroffen? Laut rbb gibt's hier ein Einbahnstraßensystem (ohne konkrete Angabe von Richtungen). vvv --- #: next_check: 2022-07-25 vvv
 	q4::inwork; 10264,13097 10286,13084 10301,13075
 	q4::inwork 10220,13098 10105,13004
@@ -35745,6 +35752,9 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.391787,52.510533,27.07.2022,07:00',
        data  => <<EOF,
+#: by: https://nitter.it/VIZ_Berlin/status/1552155569997299712#m
+#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllseWFCaFhvQUVnZVZTLmpwZw==
+#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllseWk2RVhnQUFqd0FqLmpwZw==
 	q4::inwork; 9569,11631 9559,11715
 EOF
      },
@@ -35768,11 +35778,24 @@ EOF
      },
      { from  => 1658811600, # 2022-07-26 07:00
        until => 1667232000, # 2022-10-31 17:00
-       text  => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Adlergestell und Gellertstr. Richtung Osten gesperrt, vom 27.07.2022 07:00 bis 31.10.2022 17:00',
+       text  => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 31.10.2022 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.545559,52.434572,27.07.2022,07:00',
        data  => <<EOF,
-	q4::inwork; 20064,3278 20166,3344 20237,3392
+#: by: https://nitter.it/VIZ_Berlin/status/1552156830029185024#m
+#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllwVlhWTFh3QU11UF9MLmpwZw== (Korrektur)
+# REMOVED ---	q4::inwork; 20064,3278 20166,3344 20237,3392
+	q4::inwork; 20166,3344 20237,3392 20262,3409 20299,3435 20149,3617
+EOF
+     },
+     { from  => undef, # 
+       until => 1660082400, # 2022-08-10 00:00
+       text  => 'Platz der Luftbrücke: Wasserrohrbruch, Fahrbahn und Gehweg Richtung Osten gesperrt, Umweg über Wege in der Parkfläche, bis 9.8.2022',
+       type  => 'handicap',
+       source_id => 'viz2021:13.385942,52.484944,11.07.2022,06:07',
+       data  => <<EOF,
+#: by: https://viz.berlin.de/2022/07/verkehrsvorschau-12072022/
+	q4::inwork; 9229,8785 9272,8781 9395,8726
 EOF
      },
     );
