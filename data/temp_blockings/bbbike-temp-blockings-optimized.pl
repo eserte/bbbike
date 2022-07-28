@@ -4315,7 +4315,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-07-18
+#: last_checked: 2022-07-28
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4367,8 +4367,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G)
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-07-24 vvv
-#: check_frequency: 3d vvv
+#: last_checked: 2022-07-28 vvv
+#: check_frequency: 4d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
@@ -4400,9 +4400,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX_prog: eigentlich q3-::inwork
+#: add_fragezeichen: Wurden die Bauarbeiten in der Nestorstraße beendet?
 #: also_indoor: traffic (G,H)
 #: last_checked: 2022-05-10 (kartaview)
-#: next_check: 2022-09-30
+#: next_check: 2022-07-27
+# REMOVED --- #: next_check: 2022-09-30
 	q3::inwork 3348,9806 3340,9700
 ',
          'from' => 1587963600,
@@ -5611,14 +5613,14 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1513397936151044099#m
 #: by: https://nitter.net/pic/media%2FFP1LIs8XMAENMUm.jpg%3Fname%3Dorig
-#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022) (mittlerweile bis 27.6.2022) (mittlerweile bis 1.8.2022)
+#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022) (mittlerweile bis 27.6.2022) (mittlerweile bis 1.8.2022) (mittlerweile bis 2.8.2022)
 #: source_id: viz2021:13.47859,52.47157,11.04.2022,09:00 (zusätzlicher Eintrag, bis 1.8.2022) (mittlerweile inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
 #: last_checked: 2022-07-06 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-08-01 vvv
+#: next_check: 2022-11-30 vvv
 	q4::inwork; 15560,7400 15693,7512
 #: note: teilweise ragt die Baustellenabsperrung in den Radweg Richtung Kiefholzstraße rein
 	q3::inwork; 15693,7512 15560,7400
@@ -5630,9 +5632,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1649574000,
          'id' => 3536,
          'source_id' => 'viz2021:13.479739,52.472118,11.04.2022,09:00',
-         'text' => 'Eichbuschallee : Fahrbahn zwischen Kiefholzstr. und Bergaustr. gesperrt, Radfahrer sollen schieben, vom 11.04.2022 09:00 bis 31.10.2022 17:00',
+         'text' => 'Eichbuschallee : Fahrbahn zwischen Kiefholzstr. und Bergaustr. gesperrt, Radfahrer sollen schieben, vom 11.04.2022 09:00 bis 30.11.2022 17:00',
          'type' => 'handicap',
-         'until' => 1667232000
+         'until' => 1669824000
        },
        undef,
        undef,
@@ -5909,19 +5911,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'until' => 1667861999
        },
        undef,
-       {
-         'data' => '#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlhKb0R3S1hFQUl5Ti1fLmpwZw==
-#: source_id: viz2021:13.515318,52.539821,11.07.2022,06:00 (neuer Versuch)
-#: note: laut rbb_verkehr sollen Radfahrer explizit absteigen und schieben
-	q4::inwork 17959,15084 17902,15039
-',
-         'from' => 1657425600,
-         'id' => 3581,
-         'source_id' => 'viz2021:13.515318,52.539821,06.07.2022,06:00',
-         'text' => 'Plauener Stra.: Bauarbeiten in Höhe Treffurter Str., Sperrung der Fahrbahn, vom 11.07.2022 06:00 bis 29.07.2022 17:00 ',
-         'type' => 'handicap',
-         'until' => 1659106800
-       },
+       undef,
        {
          'data' => '	2::inwork 49875,51562 49211,51421
 ',
