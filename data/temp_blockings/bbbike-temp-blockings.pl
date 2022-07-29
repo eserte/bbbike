@@ -32311,7 +32311,7 @@ EOF
 #: also_indoor: traffic (H,G)
 #: osm_watch: way id="362719487" version="6"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2022-06-24
+#: last_checked: 2022-07-29
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 EOF
@@ -34832,7 +34832,7 @@ EOF
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-06-30 vvv
+#: last_checked: 2022-07-30 (indoor) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-09-30 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
@@ -35732,7 +35732,7 @@ EOF
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllNNkVpeVhrQUUxVXo3LmpwZw==
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf
 # REMOVED --- #: XXX sind Radfahrer tats‰chlich betroffen? Laut rbb gibt's hier ein Einbahnstraﬂensystem (ohne konkrete Angabe von Richtungen). vvv --- #: next_check: 2022-07-25 vvv
-	q4::inwork; 10264,13097 10286,13084 10301,13075
+	q4::inwork; 10264,13097 10286,13084 10301,13075 10339,13052 10371,13006
 	q4::inwork 10220,13098 10105,13004
 # REMOVED (hier nicht) ---	q4::inwork 10339,13052 10301,13075 10286,13084 10264,13097 10220,13098 10077,13100
 # REMOVED --- #: next_check ^^^ --- #: XXX ^^^
