@@ -920,11 +920,11 @@ EOF
 	2 2624,1704 2824,1273
 EOF
      },
-     { from  => $isodate2epoch->("2019-09-06 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-09-08 23:59:59"),
+     { from  => $isodate2epoch->("2022-09-02 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-09-04 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 8, start => "2021-10-25T00:00:00"]],
-       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (07.09.2019 bis 08.09.2019)',
+       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (03.09.2022 bis 04.09.2022)',
        type  => 'gesperrt',
        source_id => 'http://www.hier-in-rudow.de/meilenfeste.html',
        data  => <<EOF,
@@ -23953,18 +23953,21 @@ EOF
 	q4::inwork; 5317,12242 5518,12159 5417,11949
 EOF
      },
-     { from  => $isodate2epoch->("2019-09-13 00:00:00"),
-       until => $isodate2epoch->("2019-09-14 23:59:59"),
+     { from  => $isodate2epoch->("2022-09-09 00:00:00"),
+       until => $isodate2epoch->("2022-09-10 21:00:00"),
        periodic => 1,
        recurrences => [["yearly", days => 31, months => 8, start => "2021-10-25T00:00:00"]], # 2021 scheint nichts stattzufinden
-       text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 14. September 2019, 12 bis 21 Uhr ',
+       text  => 'Bremer Str., Jonasstr., Arminiusstr.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 10. September 2022, 12 bis 21 Uhr ',
        type  => 'gesperrt',
        source_id => 'https://www.turmstrasse.de/aktuelles',
        data  => <<EOF,
+#: by: https://www.gratis-in-berlin.de/festivals/item/2056177-moabiter-kiezfest-2022
+#: by: https://www.gratis-in-berlin.de/images/stories/tipps/l_plakat_kiezfest_2022_dina4_2.jpg
 # REMOVED --- : tempex YYYY09 & sa2 & T14-T18
 # REMOVED --- : tempex YYYY09 & sa3 & T14-T18
 # REMOVED --- : tempex YYYY09 & sa1 & T12-T21
-	2::temp 5857,13342 5868,13441 5882,13548
+# REMOVED ---	2::temp 5857,13342 5868,13441 5882,13548
+	2::temp 5857,13342 5868,13441 5956,13433 5956,13330
 EOF
      },
      { from  => $isodate2epoch->("2014-09-08 04:00:00"), # 1409954400, # 2014-09-06 00:00
@@ -30979,7 +30982,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-07-28
+#: last_checked: 2022-07-30
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -34629,7 +34632,7 @@ EOF
 #: by: https://www.berliner-woche.de/bezirk-mitte/c-bauen/sanierungen-an-schulen-laufen-auf-hochtouren_a352193 (Neubau der Schule soll Anfang 2024 fertig werden)
 #: note: Die Einbahnstraßenregelung fängt erst 60m nördlich der Gneisenaustr. an und es gibt keine Sackgassenschilder.
 #: osm_watch: way id="49233007" version="8"
-# REMOVED (Sackgassenschild steht wieder, dafür kein Einfahrt-verboten-Schild mehr) --- #: last_checked: 2022-05-31 --- #: check_frequency: 90d --- #: next_check: 2024-02-01
+# REMOVED (Sackgassenschild steht wieder, dafür kein Einfahrt-verboten-Schild mehr --- logisch, die Anbindung Baruther Str./Mehringdamm ist zurzeit gesperrt) --- #: last_checked: 2022-05-31 --- #: check_frequency: 90d --- #: next_check: 2024-02-01
 	q4::inwork; 9552,9602 9588,9827
 EOF
      },
@@ -34990,20 +34993,21 @@ EOF
      },
      { from  => 1649574000, # 2022-04-10 09:00
        until => $isodate2epoch->("2022-11-30 17:00:00"), # 1667232000, # 2022-10-31 17:00
-       text  => 'Eichbuschallee : Fahrbahn zwischen Kiefholzstr. und Bergaustr. gesperrt, Radfahrer sollen schieben, vom 11.04.2022 09:00 bis 30.11.2022 17:00',
+       text  => 'Eichbuschallee : Fahrbahn zwischen Kiefholzstr. und Bergaustr. gesperrt, Radfahrer sollen schieben, vom 11.04.2022 09:00 bis 02.08.2022 17:00, evtl. auch länger, bis Ende November 2022',
+       dont_check_date => 1,
        type  => 'handicap',
-       source_id => 'viz2021:13.479739,52.472118,11.04.2022,09:00', # bis 31.10.2022, mittlerweile nur noch bis 1.8.2022, mittlerweile bis 30.11.2022
+       source_id => 'viz2021:13.479739,52.472118,11.04.2022,09:00', # bis 31.10.2022, mittlerweile nur noch bis 1.8.2022, mittlerweile bis 30.11.2022, mittlerweile bis 2.8.2022
        data  => <<EOF,
 #: by: https://nitter.net/VIZ_Berlin/status/1513397936151044099#m
 #: by: https://nitter.net/pic/media%2FFP1LIs8XMAENMUm.jpg%3Fname%3Dorig
-#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022) (mittlerweile bis 27.6.2022) (mittlerweile bis 1.8.2022) (mittlerweile bis 2.8.2022)
+#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022) (mittlerweile bis 27.6.2022) (mittlerweile bis 1.8.2022) (mittlerweile bis 2.8.2022) (mittlerweile bis 30.11.2022)
 #: source_id: viz2021:13.47859,52.47157,11.04.2022,09:00 (zusätzlicher Eintrag, bis 1.8.2022) (mittlerweile inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
 #: last_checked: 2022-07-06 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-11-30 vvv
+#: next_check: 2022-08-02 vvv
 	q4::inwork; 15560,7400 15693,7512
 #: note: teilweise ragt die Baustellenabsperrung in den Radweg Richtung Kiefholzstraße rein
 	q3::inwork; 15693,7512 15560,7400
@@ -35175,8 +35179,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2022-05-02 00:00:00"),
-       until => $isodate2epoch->("2022-07-31 18:00:00"),
-       text  => 'Eisenbahnbrücke Werder: wegen Bauarbeiten montags bis freitags tagsüber (6:30 bis 18:00 Uhr) gesperrt, bis zum 31.7.2022',
+       until => $isodate2epoch->("2022-09-29 18:00:00"),
+       text  => 'Eisenbahnbrücke Werder: wegen Bauarbeiten montags bis freitags tagsüber (6:30 bis 18:00 Uhr) gesperrt, bis zum 29.9.2022',
        type  => 'gesperrt',
        source_id => 'https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=4210',
        data  => <<EOF,

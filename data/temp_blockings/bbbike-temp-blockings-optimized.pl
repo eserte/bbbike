@@ -107,7 +107,29 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: keine Anzeichen für eine Veranstaltung 2021 
+	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
+',
+         'from' => 1662112800,
+         'id' => 112,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              8,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'http://www.hier-in-rudow.de/meilenfeste.html',
+         'text' => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (03.09.2022 bis 04.09.2022)',
+         'type' => 'gesperrt',
+         'until' => 1662328799
+       },
        undef,
        undef,
        undef,
@@ -3288,7 +3310,34 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.gratis-in-berlin.de/festivals/item/2056177-moabiter-kiezfest-2022
+#: by: https://www.gratis-in-berlin.de/images/stories/tipps/l_plakat_kiezfest_2022_dina4_2.jpg
+# REMOVED --- : tempex YYYY09 & sa2 & T14-T18
+# REMOVED --- : tempex YYYY09 & sa3 & T14-T18
+# REMOVED --- : tempex YYYY09 & sa1 & T12-T21
+# REMOVED ---	2::temp 5857,13342 5868,13441 5882,13548
+	2::temp 5857,13342 5868,13441 5956,13433 5956,13330
+',
+         'from' => 1662674400,
+         'id' => 2625,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              8,
+                              'start',
+                              '2021-10-25T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.turmstrasse.de/aktuelles',
+         'text' => 'Bremer Str., Jonasstr., Arminiusstr.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 10. September 2022, 12 bis 21 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1662836400
+       },
        undef,
        undef,
        undef,
@@ -4315,7 +4364,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-07-28
+#: last_checked: 2022-07-30
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -5613,14 +5662,14 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1513397936151044099#m
 #: by: https://nitter.net/pic/media%2FFP1LIs8XMAENMUm.jpg%3Fname%3Dorig
-#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022) (mittlerweile bis 27.6.2022) (mittlerweile bis 1.8.2022) (mittlerweile bis 2.8.2022)
+#: source_id: viz2021:13.478607,52.471557,11.05.2022,11:00 (Baustellenampel in der Kiefholzstr., bis 14.6.2022) (mittlerweile bis 27.6.2022) (mittlerweile bis 1.8.2022) (mittlerweile bis 2.8.2022) (mittlerweile bis 30.11.2022)
 #: source_id: viz2021:13.47859,52.47157,11.04.2022,09:00 (zusätzlicher Eintrag, bis 1.8.2022) (mittlerweile inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
 #: last_checked: 2022-07-06 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-11-30 vvv
+#: next_check: 2022-08-02 vvv
 	q4::inwork; 15560,7400 15693,7512
 #: note: teilweise ragt die Baustellenabsperrung in den Radweg Richtung Kiefholzstraße rein
 	q3::inwork; 15693,7512 15560,7400
@@ -5629,10 +5678,11 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: last_checked ^^^
 #: XXX ^^^
 ',
+         'dont_check_date' => 1,
          'from' => 1649574000,
          'id' => 3536,
          'source_id' => 'viz2021:13.479739,52.472118,11.04.2022,09:00',
-         'text' => 'Eichbuschallee : Fahrbahn zwischen Kiefholzstr. und Bergaustr. gesperrt, Radfahrer sollen schieben, vom 11.04.2022 09:00 bis 30.11.2022 17:00',
+         'text' => 'Eichbuschallee : Fahrbahn zwischen Kiefholzstr. und Bergaustr. gesperrt, Radfahrer sollen schieben, vom 11.04.2022 09:00 bis 02.08.2022 17:00, evtl. auch länger, bis Ende November 2022',
          'type' => 'handicap',
          'until' => 1669824000
        },
@@ -5705,9 +5755,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1651442400,
          'id' => 3549,
          'source_id' => 'https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=4210',
-         'text' => 'Eisenbahnbrücke Werder: wegen Bauarbeiten montags bis freitags tagsüber (6:30 bis 18:00 Uhr) gesperrt, bis zum 31.7.2022',
+         'text' => 'Eisenbahnbrücke Werder: wegen Bauarbeiten montags bis freitags tagsüber (6:30 bis 18:00 Uhr) gesperrt, bis zum 29.9.2022',
          'type' => 'gesperrt',
-         'until' => 1659283200
+         'until' => 1664467200
        },
        {
          'data' => '#: next_check_id: WILTBERG-2022

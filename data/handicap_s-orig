@@ -176,7 +176,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: by: https://abendblatt-berlin.de/2021/04/05/berlin-wedding-geisterhaus-an-der-burgsdorfstrasse-soll-abgerissen-werden/
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10655 (Abriss?)
 #: by: https://weddingweiser.de/schrotthaus-blockiert-strasse/
-#: osm_watch: way id="549316654" version="18"
+#: osm_watch: way id="549316654" version="20"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,ex-H)
 #: valid: 20171026-
@@ -257,14 +257,15 @@ Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: CHAUSSEE-2020
 #: source_id: 2147346552 (bis 16.7.2021)
-#: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert) (mittlerweile bis 31.7.2022)
-#: last_checked: 2022-07-14
-#: check_frequency: 60d
-#: next_check: 2022-07-31
+#: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert) (mittlerweile bis 31.7.2022) (mittlerweile kein Endedatum mehr)
+#: note: bei rbb noch bis 05.08.2022
+#: last_checked: 2022-07-17 (mapillary)
+# REMOVED --- #: check_frequency: 60d
+# REMOVED --- #: next_check: 2022-07-31
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456
-#: last_checked: 2022-07-14
-#: check_frequency: 90d
-#: next_check: 2022-07-31
+#: last_checked: 2022-07-17 (mapillary)
+# REMOVED --- #: check_frequency: 90d
+# REMOVED --- #: next_check: 2022-07-31
 Chausseestr.: gemeinsamer Geh- und Radweg	q2::inwork; 8442,14456 8406,14507 8336,14586
 # 
 #: next_check_id: DOROTHEEN-2018
@@ -779,6 +780,15 @@ Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4:
 # 
 ### Lichtenberg ###
 # 
+#: next_check_id: PARKAUE-2022
+#: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023
+#: XXX Einbahnstraßenregelung nach den Bauarbeiten wiederherstellen
+#: also_indoor: traffic (none)
+#: last_checked: 2022-07-30
+#: check_frequency: 90d
+#: next_check: 2023-10-31
+Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,12420 15457,12449
+# 
 # REMOVED (am nächsten Tag aufgehoben) --- #: last_checked: 2022-06-18 --- #: check_frequency: 14d --- Gustav-Holzmann-Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 16119,9689 16302,9865
 # 
 #: next_check_id: ROEDELIUSPLATZ-2022
@@ -930,7 +940,7 @@ Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="10"
 #: priority: #C
-#: last_checked: 2022-07-01
+#: last_checked: 2022-07-28 (mapillary)
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -4137,6 +4147,7 @@ Carl-Weder-Park: gemeinsamer Geh- und Radweg	q1 12595,6299 12614,6301 12638,6307
 (Falkenberger Chaussee - Wartenberger Str.): Bordstein, Rampe	q4+ 17577,17910 17521,17894
 (Falkenberger Chaussee - Wartenberger Str.): Rampe	q3+ 17521,17894 17568,17945
 Max-und Herta-Naujocks-Weg: Fußgänger, schmaler Weg	q2- 16036,18604 16077,18674 16112,18692 16133,18765 16163,18780
+Max-und Herta-Naujocks-Weg: einige Fußgänger	q1 16163,18780 16325,18796 16216,19183
 (Einkaufszentrum Lagunenweg): Fußgänger	q2 31762,3202 31650,3218
 # 
 #: next_check_id: BEBAUUNGSPLAN-XVI-81
@@ -4164,6 +4175,11 @@ Fenchelweg: enge Straße	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,360
 #: note ^^^
 (Üderseestr - Weg an der KGA Stallwiese): einige Fußgänger	q1 18135,8404 18130,8386
 (Falkstr. - Morusstr.): einige Fußgänger	q2 12186,7952 12219,7958 12407,8000 12439,8014 12450,8016
+#: note: umfahrbar aussehende Bodenschwellen, ca. vier Stück
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8909 (Wiedereinbau der Fahrbahnschwellen im 4. Quartal 2021)
+#: XXX_prog: für Anhänger q1 oder q2
+#: confirmed_by: srt
+Fennpfuhlweg: vier Bodenschwellen	q0- 17750,19181 17697,18989
 # 
 ######################### User Contributions #################################
 # 

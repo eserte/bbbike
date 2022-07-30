@@ -51,6 +51,7 @@ Neukˆllnische Allee: Fuﬂg‰ngerschutztunnel	q3::inwork 14310,7022 14323,7080 1423
 Neukˆllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12368,8356 12582,8408
 Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4::inwork; 12494,8501 12349,8464
+Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4::inwork 15535,12420 15457,12449
 Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,12280 16159,12301
 Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Merler Weg Richtung S¸den	q3::inwork; 19181,13485 19198,13272 19180,13219
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3::inwork 7126,9825 7118,9870
@@ -2300,6 +2301,7 @@ Carl-Weder-Park: gemeinsamer Geh- und Radweg	q1 12595,6299 12614,6301 12638,6307
 (Falkenberger Chaussee - Wartenberger Str.): Bordstein, Rampe	q4 17577,17910 17521,17894
 (Falkenberger Chaussee - Wartenberger Str.): Rampe	q3 17521,17894 17568,17945
 Max-und Herta-Naujocks-Weg: Fuﬂg‰nger, schmaler Weg	q2 16036,18604 16077,18674 16112,18692 16133,18765 16163,18780
+Max-und Herta-Naujocks-Weg: einige Fuﬂg‰nger	q1 16163,18780 16325,18796 16216,19183
 (Einkaufszentrum Lagunenweg): Fuﬂg‰nger	q2 31762,3202 31650,3218
 (Mausohrweg - R1): Bordsteine, Fuﬂg‰nger	q3 33296,2894 33267,2810 33255,2762
 Haydnstr. - M‰rkische Allee: Bordsteine, einige Fuﬂg‰nger	q3 19995,11795 19979,11774
@@ -2315,6 +2317,7 @@ Fenchelweg: enge Straﬂe	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,360
 (Treskowallee - Traberweg): einige Fuﬂg‰nger	q1 18442,7882 18356,7944 18260,8041 18222,8103 18130,8386 18116,8424
 (‹derseestr - Weg an der KGA Stallwiese): einige Fuﬂg‰nger	q1 18135,8404 18130,8386
 (Falkstr. - Morusstr.): einige Fuﬂg‰nger	q2 12186,7952 12219,7958 12407,8000 12439,8014 12450,8016
+Fennpfuhlweg: vier Bodenschwellen	q0 17750,19181 17697,18989
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3182,7 +3185,6 @@ Amalienstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 13794
 Aristotelessteig: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 18435,9639 18496,9628 18527,9623 18660,9599
 Ella-Trebe-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 7938,13302 7938,13150
 Rosenfelder Ring: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 18140,11932 18139,11833
-Parkaue: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 15406,12444 15408,12394 15370,12264
 Am Zirkus: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 9212,12969 9167,13046 9137,13032
 Gretel-Bergmann-Weg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q1::igndisp; -1132,12268 -1288,12178
 Kriemhildstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 17300,12173 17314,12265

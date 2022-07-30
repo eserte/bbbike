@@ -11609,11 +11609,13 @@ Pepitapromenade	NN -2856,17489 -2873,17369 -2878,17324
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Straßenumbenennung)
 #: by: https://www.berliner-woche.de/hakenfelde/c-leute/erna-koschwitz-eine-laube-und-der-elkartweg_a327986 (Einsprüche)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Widerspruch)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_30_2009_2068_online.pdf (Widerspruch wurde zurückgenommen)
 #: XXX neuer Name wird "Erna-Koschwitz-Weg" lauten, Umbenennung sollte ursprünglich zum 15. November 2021 wirksam werden
+#: XXX bei osm bereits geändert
 #: also_indoor: search Erna-Koschwitz-Weg
 #: add_fragezeichen: Wurde der Elkartweg zu "Erna-Koschwitz-Weg" umbenannt? Hängen bereits neue Straßenschilder?
-#: osm_watch: way id="130775086" version="12"
-#: osm_watch: way id="22981785" version="43"
+#: osm_watch: way id="130775086" version="14"
+#: osm_watch: way id="22981785" version="45"
 #: last_checked: 2021-11-09 (Amtsblatt)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-11-15
@@ -12282,7 +12284,7 @@ Schnitterinnenweg	NN 17679,19532 17351,19411 17015,19287 16768,19191 16736,19193
 #: note: grünes Straßenschild
 Pappelweg (Wartenberg)	NN 17626,19367 17679,19532 17842,20065 18042,20612 18061,20715
 (entlang des Hechtgrabens)	NN 16325,18796 16426,18812 16616,18969 16665,19021
-Straße 10 (Wartenberg)	N 18119,19400 18025,19433 17808,19508
+Straße 10 (Wartenberg)	N 18118,19394 18025,19433 17808,19508
 (Schnitterinnenweg - Straße 10)	NN 17808,19508 17679,19532
 Straße 11 (Wartenberg)	N 18025,19433 18108,19692 18202,19663
 #: note: bei Google fälschlicherweise "Straße 190":
@@ -12319,8 +12321,9 @@ Warnitzer Str. (Neu-Hohenschönhausen)	N 17894,17925 17956,17927 17994,17958 1801
 Warnitzer Str. (Neu-Hohenschönhausen)	N 17994,17958 17962,18010 18041,18073 18134,17967 18279,18079
 Welsestr.	N 18601,18342 18620,18283 18660,18226 18709,18159 18746,18116 18744,18050 18476,17842 18357,17735 18300,17740 18253,17796 18269,17807
 Seehausener Str.	NH 18635,17649 18428,17497 18349,17387
-Lindenberger Str. (Wartenberg)	NH 18007,18938 18055,19106 18060,19146 18071,19227 18106,19353 18119,19400 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
-Birkholzer Weg	N 18106,19353 18544,19722 18690,19830 18771,19892 18821,19936 18955,20050 19088,20157 19227,20270 19397,20407 19526,20511 19579,20554 19637,20600
+Lindenberger Str. (Wartenberg)	NH 18007,18938 18055,19106 18060,19146 18071,19227 18106,19353 18118,19394 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
+Birkholzer Weg	N 18106,19353 18143,19384 18544,19722 18690,19830 18771,19892 18821,19936 18955,20050 19088,20157 19227,20270 19397,20407 19526,20511 19579,20554 19637,20600
+(Birkholzer Weg - Lindenberger Str.)	N 18143,19384 18118,19394
 Dorfstr. (Kaulsdorf)	N 22483,11261 22516,11418 22506,11445 22496,11474 22313,11688 22260,11742 22149,11870 22112,11936 22140,11958 22191,11999 22216,12019
 Dorfstr. (Kaulsdorf)	N 22496,11474 22469,11627 22313,11688
 (Dorfstr. - Bhf. Wuhletal)	NN 22112,11936 22104,11925 22070,11898 22004,11859 21972,11876 21936,12022
@@ -15776,7 +15779,7 @@ Togostr.	N 5531,16734 5315,16936
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9450
 #: by: https://www.deutschlandfunkkultur.de/widerstand-gegen-manga-bell-platz-wie-in-berlin-um-einen.976.de.html?dram:article_id=455728
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10895 (Forderung: alte Straßenschilder erneuern)
-#: osm_watch: way id="333607502" version="9"
+#: osm_watch: way id="333607502" version="10"
 #: also_indoor: search Manga-Bell-Platz
 #: last_checked: 2022-07-09 (kartaview)
 #: check_frequency: 90d

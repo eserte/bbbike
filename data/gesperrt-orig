@@ -1180,7 +1180,7 @@ Flankenschanze	1 -3507,15341 -3534,15219
 Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,17088 10917,17088
 # REMOVED (TRAMTURM-2021 --- wiederherstellen!) --- Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
 (Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14271,9712
-Parkaue	1s:q4 15406,12444 15408,12394 15370,12264
+# REMOVED (PARKAUE-2022 --- wiederherstellen!) --- Parkaue	1s:q4 15406,12444 15408,12394 15370,12264
 Stahlheimer Str.	1 11727,16358 11698,16311
 # REMOVED --- #: next_check_id: AMZIRKUS-2014 --- #: XXX bleibt die Einbahnstraßenrichtung permanent? Oder nur während der Arbeiten am Schiffbauerdamm? --- #: last_checked: 2015-05-12 --- 
 # REMOVED (hier nicht mehr, dauerhaft?) --- Am Zirkus	1s:q4 9239,12923 9212,12969
@@ -1398,6 +1398,8 @@ Amrumer Str.: Mittelstreifen	3nocross 6239,15553 6348,15423 6375,15391
 Sinsheimer Weg	1s:q4 13774,8849 13687,8734
 Stolzenfelsstr.	1 19447,8175 19407,8143
 Hannaweg	1s:q4 20938,14066 20923,13953
+Birkholzer Weg	1 18118,19394 18143,19384
+Birkholzer Weg	1 18143,19384 18106,19353
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -3412,7 +3414,7 @@ Mittelheide: umgefallene Baumstämme	2 24365,7657 24275,7550
 # REMOVED --- #: valid: -20230627 vvv
 #: osm_watch: way id="8042965" version="22"
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
-#: osm_watch: way id="787699937" version="7"
+#: osm_watch: way id="787699937" version="8"
 Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s:q4 26300,-11727 26301,-11824 26300,-11864
 #: valid ^^^
 #: next_check ^^^

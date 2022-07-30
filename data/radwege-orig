@@ -765,7 +765,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-07-09
+#: last_checked: 2022-07-30
 	RW2; 14926,12129 14994,12121 15117,12106 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
@@ -2491,8 +2491,7 @@ asphaltiert	RW2; 15066,14579 15120,14481 15168,14395
 die ersten Meter mit benutzungspflichtigen Radweg, dann Radspur	RW4; 15256,14237 15168,14395 15120,14481 15066,14579
 Gehweg für Radfahrer frei, asphaltiert mit einigen Wellungen	RW1; 15256,14237 15354,13998 15436,13780
 	RW2; 15436,13780 15455,13733 15468,13700 15513,13539
-gemeinsamer Geh- und Radweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 15455,13733 15436,13780 15354,13998
-Gehweg für Radfahrer frei, asphaltiert mit einigen Wellungen	RW1; 15354,13998 15256,14237
+Gehweg für Radfahrer frei, asphaltiert mit einigen Wellungen	RW1; 15468,13700 15455,13733 15436,13780 15354,13998 15256,14237
 	RW1; 15513,13539 15468,13700
 	RW1;RW1 15513,13539 15515,13134
 	RW4; 15515,13134 15516,12838
@@ -4367,7 +4366,7 @@ neu asphaltiert	RW2; 18657,8163 18672,8238
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1103618.php (Schadstellenbeseitigung, aber wo?)
 #: source_id: 2147342739
-#: last_checked: 2022-05-07 vvv
+#: last_checked: 2022-07-30 vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 #: note: Darßer Str. Richtung Westen
@@ -4387,7 +4386,7 @@ mäßiger Beton	RW2; 16785,17524 16837,17440
 Gehwegplatten	RW1;RW1 15505,17967 15238,18015
 #: by: ^^^
 	RW1;RW1 15238,18015 15105,18040 15034,18051 15000,18056 14754,18054 14445,18010
-Gehweg für Radfahrer frei	RW1; 18106,19353 18544,19722
+Gehweg für Radfahrer frei	RW1; 18106,19353 18143,19384 18544,19722
 	RW1;RW1 18316,16636 18179,16534 18165,16523 17970,16406 17895,16373 17640,16259
 	RW2;RW1 17640,16259 17516,16208
 gemeinsamer Geh- und Radweg, Betonplatten	RW2; 17418,16014 17419,16080 17425,16165
@@ -4737,8 +4736,10 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: by: https://www.berliner-woche.de/malchow/c-verkehr/dorfstrasse-in-malchow-wird-drei-wochen-lang-saniert_a279529 (bis 8. August 2020, vermutlich nur Asphaltarbeiten an der Fahrbahn, Radwege werden nicht erwähnt)
 #: by: https://abendblatt-berlin.de/2020/07/10/berlin-malchow-bundesstrasse-mit-umleitungen/
 #: by: https://www.berliner-woche.de/malchow/c-verkehr/wann-kommt-die-ortsumfahrung-malchow_a331229 (keine konkreten Absichten für eine Ortsumfahrung)
+#: by: https://www.berliner-woche.de/malchow/c-verkehr/planungen-sollen-anfang-2023-endlich-beginnen-baustart-noch-in-weiter-ferne_a352907
+#: by: https://www.bvwp-projekte.de/strasse/B2-G20-BE/B2-G20-BE.html
 #: XXX wird der Radweg verbessert?
-#: last_checked: 2022-07-05 (mapillary)
+#: last_checked: 2022-07-30
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -7146,8 +7147,8 @@ asphaltiert	RW1; 25522,4935 25519,4830
 #: next_check_id: KARLMARXSTR-2018
 #: XXX Zwischendurch eine provisorische Radspur, wurde bei der Baustellenumstellung Anfang Februar 2021 wieder entfernt
 #: last_checked: 2022-07-19
-#: check_frequency: 120d
-#: next_check: 2022-07-31
+# REMOVED --- #: check_frequency: 120d
+# REMOVED --- #: next_check: 2022-07-31
 # REMOVED --- provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
 # REMOVED ---	RW4; 12330,8636 12318,8645
 	RW0; 12494,8501 12330,8636 12318,8645
@@ -7467,6 +7468,7 @@ Poller	RW4; 9221,6179 9245,6352 9246,6364 9250,6414
 #: by: https://www.infravelo.de/projekt/mariendorfer-damm/ (4. Quartal 2021 - 4. Quartal 2022)
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
+#: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2022-07-24 vvv

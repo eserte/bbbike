@@ -5123,7 +5123,7 @@ Carl-Ludwig-Schleich-Promenade: Waldweg	Q1 2273,8640 2317,8616 2361,8608
 Lausitzer Platz: Kopfsteinpflaster	Q2 12212,10440 12197,10494
 Zu den Krugwiesen: Asphalt	Q0 18506,17236 18644,17349
 (Zu den Krugwiesen - Vincent-van-Gogh-Str.): Asphalt	Q0 18650,17367 18656,17389 18704,17565
-(Zu den Krugwiesen - Vincent-van-Gogh-Str.): Asphalt	Q0 18656,17389 18613,17427 18694,17577
+(Zu den Krugwiesen - Vincent-van-Gogh-Str.): Asphalt, einige Wurzelhebungen	Q1 18656,17389 18613,17427 18694,17577
 Vincent-van-Gogh-Str.: Beton	Q0 18704,17565 18694,17577 18635,17649
 Vincent-van-Gogh-Str.: Asphalt mit einigen Schäden	Q0 18635,17649 18553,17749 18476,17842 18412,17920 18279,18079 18223,18153 18196,18254
 (Weg durch die Falkenberger Krugwiesen): wassergebundene Decke	Q1 18704,17565 18756,17498
@@ -7061,15 +7061,15 @@ Schnitterinnenweg: fester Splitbelag	Q0 17679,19532 17351,19411 17015,19287 1676
 (entlang des Hechtgrabens): mäßiger Beton	Q2 16325,18796 16426,18812 16616,18969 16665,19021
 (Hagenower Ring - Schweriner Ring): Verbundsteinpflaster	Q1 17260,19192 17447,19197
 Genossenschaftsweg: Kopfsteinpflaster	Q2 17900,18972 17956,19139
-Dorfstr. (Falkenberg): Asphalt	Q0 18161,18814 18144,18813
-Dorfstr. (Wartenberg): Beton	Q0 18144,18813 18025,18858 18007,18938
+Dorfstr. (Wartenberg): Beton	Q0 18161,18814 18144,18813 18025,18858
+Dorfstr. (Wartenberg): rauer Asphalt	Q0 18025,18858 18007,18938
 (Hechtgraben - Richtung Norden): Asphalt mit Schäden	Q1 17626,19367 17679,19532
 Pappelweg: Asphalt, kurze Verbundsteinpflasterabschnitte	Q0 17679,19532 17842,20065
 Pappelweg: Trampelpfad, viele Wurzeln, stark bewachsen	Q3 17842,20065 18042,20612 18061,20715
 Am Schilf: Verbundsteinpflaster	Q0 18278,19051 18287,18999 18270,18947 18223,18961
 Am Genossenschaftsring: Verbundsteinpflaster	Q0 18179,19095 18152,19043 18132,18968 18218,18948 18223,18961 18254,19063
 Am Kletterplatz: Verbundsteinpflaster	Q0 18100,19127 18078,19075 18152,19043
-Straße 10 (Wartenberg): Beton/Asphalt	Q0 18119,19400 18025,19433 17808,19508
+Straße 10 (Wartenberg): Beton/Asphalt	Q1 18118,19394 18025,19433 17808,19508
 (entlang des Hechtgrabens - Straße 10): Asphalt	Q0 17808,19508 17679,19532
 Straße 11 (Wartenberg): unbefestigte Straße	Q2 18025,19433 18108,19692 18202,19663
 Straße 1 (Wartenberg): betoniert	Q1 18771,19892 18719,19911
@@ -8423,7 +8423,7 @@ Am Vorwerk: Beton	Q0 12697,25704 12591,25762
 Am Vorwerk: Asphalt	Q0 12591,25762 12488,25757 12118,26153
 (Pankeweg - Wolfgang-Heinz-Str.): Verbundsteinpflaster	Q1 16131,24988 16168,24908
 Mühlenweg (Karow): Verbundsteinpflaster	Q1 15347,22275 15411,22369 15445,22352
-(Hechtgraben - Wartenberger Weg): Verbundsteinpflaster	Q1 16325,18796 16216,19183
+(Hechtgraben - Wartenberger Weg): Asphalt, einige Wurzelschäden	Q0 16325,18796 16216,19183
 (entlang des Hechtgrabens): Asphalt	Q0 16163,18780 16325,18796
 Alfred-Jung-Str.: Asphalt	Q0 15224,13269 15347,13268 15479,13273
 (Hafersteig - Wuhlgartenweg): Beton	Q1 20835,12200 20824,12177 20823,12139
@@ -15154,7 +15154,7 @@ Küstriner Str.: Asphalt	Q0 16211,15105 16314,15223
 Küstriner Str.: Asphalt	Q0 15944,14836 15977,14871
 Küstriner Str.: Asphalt	Q0 15977,14871 16123,15025
 Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
-Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 16314,15223 16354,15323 16406,15452
+Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16354,15323 16406,15452
 Am Rötepfuhl: Beton	Q0 11643,1338 11683,1285 11798,1212 11820,1185 11800,1135 11729,1102
 Fichtestr. (Hermsdorf): Verbundsteinpflaster	Q1 3495,22803 3477,23002
 Fichtestr. (Hermsdorf): mäßiges Kopfsteinpflaster	Q2 3477,23002 3494,23057 3530,23122 3544,23179
@@ -15301,7 +15301,7 @@ Ascheberger Weg: guter Beton	Q0 1411,18447 1448,18436 1501,18429 1510,18429 1557
 Herscheider Weg: guter Beton	Q0 1743,18604 1758,18421 1771,18303 1760,18200
 Fennpfuhlweg: Asphalt, teilweise etwas grob	Q1 18055,19106 17956,19139 17845,19186
 Fennpfuhlweg: Verbundsteinpflaster	Q1 17845,19186 17761,19221 17750,19181
-Fennpfuhlweg: Asphalt mit Bodenschwellen	Q0 17750,19181 17697,18989
+Fennpfuhlweg: Asphalt	Q0 17750,19181 17697,18989
 Sallgaster Str.: Beton	Q0 6337,20826 6027,20807
 Oberjägerweg: fester Sandweg, mal Sand, mal uneben, mal Kopfsteinpflaster	Q2 -6608,17562 -6547,17884 -6501,17981 -6635,18128 -5708,19113 -5209,19643 -5024,19831 -4844,20024 -4559,20331 -4485,20420
 Kiepertstr.: guter Asphalt	Q0 8522,1870 8374,1815

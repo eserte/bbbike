@@ -1050,7 +1050,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-07-29
+#: last_checked: 2022-07-30
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -6241,7 +6241,7 @@ Carl-Ludwig-Schleich-Promenade: Waldweg	Q1 2273,8640 2317,8616 2361,8608
 Lausitzer Platz: Kopfsteinpflaster	Q2 12212,10440 12197,10494
 Zu den Krugwiesen: Asphalt	Q0 18506,17236 18644,17349
 (Zu den Krugwiesen - Vincent-van-Gogh-Str.): Asphalt	Q0 18650,17367 18656,17389 18704,17565
-(Zu den Krugwiesen - Vincent-van-Gogh-Str.): Asphalt	Q0 18656,17389 18613,17427 18694,17577
+(Zu den Krugwiesen - Vincent-van-Gogh-Str.): Asphalt, einige Wurzelhebungen	Q1 18656,17389 18613,17427 18694,17577
 Vincent-van-Gogh-Str.: Beton	Q0 18704,17565 18694,17577 18635,17649
 Vincent-van-Gogh-Str.: Asphalt mit einigen Schäden	Q0- 18635,17649 18553,17749 18476,17842 18412,17920 18279,18079 18223,18153 18196,18254
 (Weg durch die Falkenberger Krugwiesen): wassergebundene Decke	Q1 18704,17565 18756,17498
@@ -8331,8 +8331,8 @@ Schnitterinnenweg: fester Splitbelag	Q0- 17679,19532 17351,19411 17015,19287 167
 (entlang des Hechtgrabens): mäßiger Beton	Q2+ 16325,18796 16426,18812 16616,18969 16665,19021
 (Hagenower Ring - Schweriner Ring): Verbundsteinpflaster	Q1 17260,19192 17447,19197
 Genossenschaftsweg: Kopfsteinpflaster	Q2- 17900,18972 17956,19139
-Dorfstr. (Falkenberg): Asphalt	Q0 18161,18814 18144,18813
-Dorfstr. (Wartenberg): Beton	Q0 18144,18813 18025,18858 18007,18938
+Dorfstr. (Wartenberg): Beton	Q0- 18161,18814 18144,18813 18025,18858
+Dorfstr. (Wartenberg): rauer Asphalt	Q0- 18025,18858 18007,18938
 (Hechtgraben - Richtung Norden): Asphalt mit Schäden	Q1 17626,19367 17679,19532
 # REMOVED (Wurzelhebungen mit Verbundsteinpflaster "repariert") --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8220 --- #: XXX werden hier die Wurzelhebungen entfernt? --- #: next_check: 2020-06-28
 Pappelweg: Asphalt, kurze Verbundsteinpflasterabschnitte	Q0 17679,19532 17842,20065
@@ -8340,7 +8340,7 @@ Pappelweg: Trampelpfad, viele Wurzeln, stark bewachsen	Q3- 17842,20065 18042,206
 Am Schilf: Verbundsteinpflaster	Q0- 18278,19051 18287,18999 18270,18947 18223,18961
 Am Genossenschaftsring: Verbundsteinpflaster	Q0- 18179,19095 18152,19043 18132,18968 18218,18948 18223,18961 18254,19063
 Am Kletterplatz: Verbundsteinpflaster	Q0- 18100,19127 18078,19075 18152,19043
-Straße 10 (Wartenberg): Beton/Asphalt	Q0- 18119,19400 18025,19433 17808,19508
+Straße 10 (Wartenberg): Beton/Asphalt	Q1+ 18118,19394 18025,19433 17808,19508
 (entlang des Hechtgrabens - Straße 10): Asphalt	Q0 17808,19508 17679,19532
 Straße 11 (Wartenberg): unbefestigte Straße	Q2 18025,19433 18108,19692 18202,19663
 Straße 1 (Wartenberg): betoniert	Q1 18771,19892 18719,19911
@@ -9829,7 +9829,7 @@ Am Vorwerk: Beton	Q0 12697,25704 12591,25762
 Am Vorwerk: Asphalt	Q0- 12591,25762 12488,25757 12118,26153
 (Pankeweg - Wolfgang-Heinz-Str.): Verbundsteinpflaster	Q1 16131,24988 16168,24908
 Mühlenweg (Karow): Verbundsteinpflaster	Q1 15347,22275 15411,22369 15445,22352
-(Hechtgraben - Wartenberger Weg): Verbundsteinpflaster	Q1 16325,18796 16216,19183
+(Hechtgraben - Wartenberger Weg): Asphalt, einige Wurzelschäden	Q0- 16325,18796 16216,19183
 (entlang des Hechtgrabens): Asphalt	Q0 16163,18780 16325,18796
 Alfred-Jung-Str.: Asphalt	Q0 15224,13269 15347,13268 15479,13273
 (Hafersteig - Wuhlgartenweg): Beton	Q1 20835,12200 20824,12177 20823,12139
@@ -10827,7 +10827,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern?
-#: last_checked: 2022-07-09
+#: last_checked: 2022-07-30
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
@@ -15595,7 +15595,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="10"
-#: last_checked: 2022-07-25
+#: last_checked: 2022-07-30
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -16295,7 +16295,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
-#: osm_watch: way id="101290096" version="7"
+#: osm_watch: way id="101290096" version="8"
 #: last_checked: 2022-07-10
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4645,6646 4682,6625 4845,6532 4875,6552
@@ -24184,10 +24184,10 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="4"
-#: last_checked: 2022-05-07
+#: last_checked: 2022-07-30
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
-Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 16314,15223 16354,15323 16406,15452
+Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16354,15323 16406,15452
 #: XXX ^^^
 #: by: ^^^
 # 
@@ -24647,10 +24647,8 @@ Herscheider Weg: guter Beton	Q0 1743,18604 1758,18421 1771,18303 1760,18200
 Fennpfuhlweg: Asphalt, teilweise etwas grob	Q1+ 18055,19106 17956,19139 17845,19186
 #: corrected_by: srt (gepflastert -> )
 Fennpfuhlweg: Verbundsteinpflaster	Q1+ 17845,19186 17761,19221 17750,19181
-#: corrected_by: srt (gepflastert mit Bodenschwellen -> )
-#: note: umfahrbar aussehende Bodenschwellen, ca. vier Stück
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8909 (Wiedereinbau der Fahrbahnschwellen im 4. Quartal 2021)
-Fennpfuhlweg: Asphalt mit Bodenschwellen	Q0 17750,19181 17697,18989
+#: corrected_by: srt (gepflastert mit Bodenschwellen -> ... + handicap_s-Eintrag)
+Fennpfuhlweg: Asphalt	Q0 17750,19181 17697,18989
 #: by: ^^^
 # 
 #: by: Friedrich Bolle:
