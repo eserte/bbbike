@@ -236,7 +236,7 @@ Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::i
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: also_indoor: traffic (none)
-#: last_checked: 2022-07-20
+#: last_checked: 2022-07-31
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882 11160,12071
 # 
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
@@ -426,7 +426,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2022-07-29 vvv
+#: last_checked: 2022-07-31 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="10"
@@ -940,7 +940,7 @@ Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="10"
 #: priority: #C
-#: last_checked: 2022-07-28 (mapillary)
+#: last_checked: 2022-07-31
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -2381,8 +2381,9 @@ Tegelorter Promenade: Fußgänger	q1 -1659,18104 -1660,18114 -1661,18132 -1717,182
 (Uferweg am Tegeler See): Fußgänger, Restaurantbetrieb	q1- -1197,17860 -1102,17869 -1085,17878 -997,18069 -984,18136 -934,18284 -930,18337
 (Uferweg am Tegeler See): Fußgänger	q1 72,19790 119,19931 167,19978 193,20024 209,20083 226,20116 222,20175 248,20233 324,20350 430,20338
 (Uferweg am Tegeler See): Fußgänger	q1 -585,19132 -544,19129 -475,19156 -429,19230 -338,19267 -195,19415 -88,19483 48,19533 146,19640 123,19749 72,19790 6,19817
-(Uferweg Eiswerder): Fußgänger	q1 -2038,15683 -2094,15663 -2138,15622 -2163,15571 -2177,15511 -2325,15431 -2431,15436 -2465,15471 -2454,15472 -2453,15476
-Kleine Eiswerderbrücke: enge Stelle, Gegenverkehr hat Vorrang	q1; -1978,15684 -2038,15683
+(Uferweg Eiswerder): Fußgänger	q1 -2023,15683 -2075,15664 -2117,15638 -2154,15576 -2175,15504 -2303,15436 -2431,15436 -2456,15463
+(Uferweg Eiswerder): Fußgänger, Rampe	q3 -2456,15463 -2468,15468 -2454,15472 -2453,15476
+Kleine Eiswerderbrücke: enge Stelle, Gegenverkehr hat Vorrang	q1; -1978,15684 -2023,15683
 Götzkeweg: eng durch parkende Autos	q1 27319,13589 27414,13508
 (Erntedankweg - Wuhlgartenweg): eng	q3 20861,12192 20841,12185 20823,12139
 (Alt-Friedrichsfelde - Alfred-Kowalke-Str.): eng, Fußgänger	q1 18616,11654 18619,11463
@@ -4927,7 +4928,7 @@ Rathener Str.: enge Straße	q1 24228,14644 24271,14576 24359,14543
 Stanzer Zeile: enge Straße	q0- 6175,372 6130,449 6112,547 6089,643 6066,821 6067,865 6080,1011 6106,1133
 # 
 #: by: rjoop (Foto):
-(Uferweg an der Havel): enge Brücke	q1 -2401,18776 -2434,18832 -2460,18918
+(Uferweg an der Havel): enge Brücke	q1 -2401,18776 -2451,18851 -2460,18918
 # 
 #: by: Jörg Schulze:
 #: confirmed_by: Beate (wolter) "Keine gute Straße! Beidseitiges Parken, gerade Platz für Autobreite, am Ende Ausfahrt Parkplatz Reichelt, sehr unübersichtlich"

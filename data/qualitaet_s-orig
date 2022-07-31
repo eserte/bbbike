@@ -34,7 +34,7 @@ Mozartstr.: Asphalt	Q0 10462,-3149 10470,-3169 10460,-3199
 #: confirmed_by: Tina (wrong email)
 #: confirmed_by: http://www.berlin.de/ba-spandau/presse/archiv/20080807.0735.106603.html
 #: confirmed_by: srt
-Eiswerder (Br¸cken, Straﬂen): Asphalt	Q0 -2675,15513 -2453,15476 -2447,15476 -2427,15493 -2324,15590 -2338,15636 -2150,15740 -2118,15709 -2038,15683 -1978,15684 -1923,15684 -1848,15686 -1835,15693 -1706,15768
+Eiswerder (Br¸cken, Straﬂen): Asphalt	Q0 -2675,15513 -2453,15476 -2447,15476 -2427,15493 -2324,15590 -2338,15636 -2150,15740 -2118,15709 -2023,15683 -1978,15684 -1923,15684 -1849,15683 -1833,15689 -1700,15762
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-spandau/presse/archiv/20051011.1220.31015.html
 Eiswerderstr.: Asphalt	Q0 -2883,15571 -2783,15538 -2712,15520 -2702,15517 -2675,15513
 # REMOVED --- #: XXX ist hier mittlerweile asphaltiert oder existieren hier Radwege/-spuren? --- #: XXX Baumaﬂnahme 6.9 (Realisierung bis 2010) --- #: osm_watch: way id="23044831" version="12"
@@ -1019,7 +1019,7 @@ Tegeler Weg: Asphalt	Q0 7259,14870 7209,14927 7182,14986 7178,14996 7131,15109 7
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: by: https://www.infravelo.de/projekt/lynarstrasse/ (3. Quartal 2021 - 3. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023)
 #: XXX Wird die restliche Lynarstr. auch asphaltiert?
-#: last_checked: 2022-06-30
+#: last_checked: 2022-07-31
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2022-12-31
 Lynarstr.: Kopfsteinpflaster	Q2 7129,14787 7143,14794 7259,14870 7409,14954
@@ -4562,7 +4562,7 @@ Weg im Maselakepark: Asphalt	Q0 -2504,16558 -2510,16357
 Uferweg am Nordhafen: Beton	Q0 -2477,16351 -2510,16357 -2632,16347 -2779,16330 -2980,16401
 Uferweg am Nordhafen: Kopfsteinpflaster	Q2 -2980,16401 -2972,16420
 Parkweg durch Maselakepark: wassergebundene Decke	Q1 -2632,16347 -2587,16600
-Havelschanze: Asphalt	Q0 -3040,16246 -2642,16216 -2561,16206
+Havelschanze: Asphalt	Q0 -3040,16246 -3004,16252 -2642,16216 -2561,16206
 Havelschanze: Verbundsteinpflaster	Q1+ -2642,16216 -2633,16283 -2545,16291
 Zum alten Strandbad: Verbundsteinpflaster	Q1+ -2493,16189 -2538,16196 -2561,16206
 Am Bootshaus: Verbundsteinpflaster	Q1+ -2561,16206 -2545,16291 -2507,16292 -2506,16315
@@ -7236,7 +7236,7 @@ Uferweg: Waldweg	Q1- -997,18069 -984,18136 -934,18284 -930,18337
 (Uferweg am Salzhof): Asphalt	Q0- -1978,15940 -1976,16012 -1948,16045 -1942,16105
 (Uferweg am Salzhof): Asphalt und Verbundsteinpflaster, einige Wurzelsch‰den	Q1+ -1942,16105 -1945,16202 -1956,16220 -1958,16269 -1950,16292 -1962,16312 -1967,16380 -1937,16383 -1928,16423
 (Daumstr. - Uferweg): wassergebundene Decke	Q1 -1816,16111 -1942,16105
-(Uferweg Eiswerder): Asphalt	Q0 -2038,15683 -2094,15663 -2138,15622 -2163,15571 -2177,15511 -2325,15431 -2431,15436 -2465,15471 -2454,15472 -2453,15476
+(Uferweg Eiswerder): Asphalt, einige Sch‰den	Q0- -2023,15683 -2075,15664 -2117,15638 -2154,15576 -2175,15504 -2303,15436 -2431,15436 -2456,15463 -2468,15468 -2454,15472 -2453,15476
 Menzelstr.: Beton	Q0 25149,12266 25318,12294
 Menzelstr.: Asphalt	Q0 25318,12294 25578,12336
 Ridbacher Str.: leicht welliger Asphalt	Q0- 24530,12296 24434,12402 24354,12510
@@ -10026,7 +10026,7 @@ Carossastr.: Asphalt	Q0 -2602,16809 -2946,16869
 #: note: "gelber Asphalt"
 (Am Maselakepark - Maselake): Asphalt	Q0 -2638,16609 -2587,16600 -2504,16558
 (hinter und unter den Wohnh‰usern der Hugo-Cassirer-Str.): Verbundsteinpflaster	Q1 -2371,16776 -2391,16607
-(Kleine Eiswerderstr. - Lilli-Palmer-Promenade): unbefestigter Weg	Q2+ -1835,15693 -1833,15599
+(Kleine Eiswerderstr. - Lilli-Palmer-Promenade): unbefestigter Weg	Q2+ -1833,15689 -1833,15599
 (Kleine Eiswerderstr. - Lilli-Palmer-Promenade): Beton	Q1 -1833,15599 -1845,15572 -1848,15535
 Lilli-Palmer-Promenade: wassergebundene Decke	Q1 -1848,15535 -1903,15333 -1926,15254
 Krienickepark: Gehwegplatten	Q0- -1848,15535 -1903,15553
@@ -12127,6 +12127,8 @@ Hilda-Geiringer-Weg: gepflastert	Q2 8236,13495 8241,13393
 Hilda-Geiringer-Weg: glatt gepflastert	Q1- 8167,13457 8174,13390 8241,13393 8281,13394 8302,13430 8293,13527
 (Pappelallee - Schˆnhauser Allee): Kopfsteinpflaster	Q2 10916,15098 10883,15129
 (Uferweg am Nordhafen - Havelschanze): wassergebundene Decke	Q1 -2980,16401 -2994,16364 -2973,16354 -3009,16269 -3040,16246
+(Uferweg am Nordhafen - Havelschanze): wassergebundene Decke	Q1 -2973,16354 -2966,16351
+(Uferweg am Nordhafen - Havelschanze): Verbundsteinpflaster	Q1 -2966,16351 -3004,16252
 Frieda-Arnheim-Promenade: Betonpflaster	Q0- -2779,15358 -2769,15389 -2751,15383 -2733,15377 -2707,15456 -2699,15478 -2722,15486
 (Frieda-Arnheim-Promenade - Eiswerderstr.): Betonpflaster	Q0- -2722,15486 -2712,15520
 (Heinersdorfer Str. - Am Steinberg): asphaltierter Radweg	Q0 12257,16876 12307,16950
@@ -12677,6 +12679,7 @@ Goltzstr.: Asphalt mit einigen Sch‰den	Q1; 11073,-2037 10983,-2116
 Leonore-Goldschmidt-Str.: Steinplatten, etwas uneben	Q1+ 3224,8106 3326,8100
 #: by: osm, mapillary
 Kletterrosenweg: Verbundsteinpflaster	Q1+ 21382,149 21344,300
+(Seychellenring - Uferweg): unbefestigter Weg	Q2 -2524,19005 -2511,19004
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -18939,13 +18942,14 @@ Am Seeschloﬂ: Asphalt	Q0 4757,23184 4750,23211 4713,23254
 (Mauerweg am Eiskeller): unbefestigter Pfad	Q2- -8469,19845 -8494,19713 -8438,19699 -8521,19390 -8419,19408 -8361,19374 -8272,19086 -8206,19007
 #: confirmed_by: srt
 (Mauerweg am Eiskeller): Asphalt	Q0- -8206,19007 -8011,19059
-(Mauerweg Spandau): asphaltiert, aber nicht unterhalten (Laub ...)	Q0- -2908,19715 -3012,19757 -3161,19627
+(Mauerweg Spandau): asphaltiert, aber nicht unterhalten (Laub ...)	Q0- -2908,19715 -2966,19746 -3012,19757 -3161,19627
 #: note: laut ADFC-Karte "m‰ﬂig geeignet", mittlerweile besser
 (Uferweg an der Havel): sehr guter Asphalt	Q0 -2096,18376 -2051,18411 -2051,18434 -2210,18526 -2282,18615 -2328,18721 -2401,18776
-(Uferweg an der Havel): Holzbohlen	Q0- -2401,18776 -2434,18832 -2460,18918
+(Uferweg an der Havel): Holzbohlen	Q0- -2401,18776 -2451,18851 -2460,18918
 #: corrected_by: rjoop (Foto):
-(Uferweg an der Havel): sehr guter Asphalt	Q0 -2460,18918 -2503,18945 -2516,19186 -2597,19251 -2723,19255
-(Uferweg an der Havel): gut befahrbarer Wanderweg	Q0 -2723,19255 -2726,19408 -2763,19450 -2775,19532 -2870,19589 -2905,19636 -2908,19715
+(Uferweg an der Havel): sehr guter Asphalt	Q0 -2460,18918 -2503,18945 -2511,19004 -2503,19147 -2523,19211 -2583,19239 -2723,19255
+#: corrected_by: srt (gut befahrbarer Wanderweg, Q0 -> ...)
+(Uferweg an der Havel): Asphalt	Q0 -2723,19255 -2746,19418 -2763,19450 -2780,19530 -2870,19589 -2905,19636 -2908,19715
 #: corrected_by: srt (Q0 -> Q2; einige Jahre sp‰ter neu gemacht -> Q0)
 (Um den Laﬂzinssee): Asphalt	Q0 -6482,20783 -6442,20864 -6465,21060 -6099,21157 -6044,20971 -5795,20965
 #: by: ^^^

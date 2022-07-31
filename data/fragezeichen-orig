@@ -1797,6 +1797,9 @@ Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur i
 Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur in Teilabschnitten	?::projected; 1746,5922 1757,5976 1862,6297 1904,6415
 Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur in Teilabschnitten	?::projected; 1960,6826 1960,6986 1959,7107 1959,7225 1957,7365 1956,7453 1955,7531 1967,7561
 Clayallee: Radstreifen (oder bessere Radwege?) werden erstellt, vermutlich nur in Teilabschnitten	?::projected; 1967,7561 1955,7531 1956,7453 1957,7365 1959,7225 1959,7107 1960,6986 1960,6826 1954,6567 1949,6539 1918,6456 1904,6415 1862,6297 1757,5976 1746,5922
+#: source_id: viz2021:13.278397,52.466511,01.08.2022,07:00 (Markierungsarbeiten bis 6.8.2022)
+#: next_check: 2022-08-06
+Clayallee: Markierungsarbeiten vermutlich für eine Busspur, für Radfahrer freigegeben?	?::inwork; 1904,6415 1918,6456 1949,6539 1954,6567 1960,6826
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED (realisiert, siehe radwege) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1007067.php (Verbreiterung) --- #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/radweg-in-der-clayallee-wird-auf-zwei-meter-verbreitert_a291689 (hier: bis zum 20.11.2020) --- #: by: http://www.infravelo.de/projekt/clayallee/ (hier: 4. Quartal 2020 - 2. Quartal 2021) --- #: next_check: 2020-11-30 --- Clayallee: Verbesserung des Radwegs	?::projected; 1904,6415 1918,6456 1949,6539 1954,6567 1960,6826
@@ -2055,7 +2058,7 @@ Verlängerung der Gotlindestr.: wird der Fußweg auch für Radfahrer benutzbar sein
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629695&postcount=135
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
-#: last_checked: 2022-07-15
+#: last_checked: 2022-07-31
 #: check_frequency: 60d
 Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::inwork 8870,12647 8754,12622
 # 
@@ -3026,13 +3029,13 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14270,83
 # REMOVED (ist nun der realisierte Abschnitt) --- #: osm_watch: way id="237716440" version="13"
 #: osm_watch: way id="642581102" version="4"
 #: XXX wird zusammen mit dem Otto-Weidt-Platz gebaut
-#: last_checked: 2022-07-15
+#: last_checked: 2022-07-31
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-06-30
 Uferweg in Bau	?::inwork 7923,14142 7912,14160 7866,14215
 # REMOVED (hier offen) --- Uferweg in Bau	?::inwork 7866,14215 7830,14268 7799,14314
 #: XXX am Speicherhaus --- wie wird die Wegführung hier aussehen?
-#: last_checked: 2022-06-30
+#: last_checked: 2022-07-31
 #: check_frequency: 120d
 Uferweg in Bau	?::inwork 7799,14314 7769,14364
 #: last_checked: 2022-07-15
@@ -3759,7 +3762,7 @@ Zillestr./Krumme Str.: Planung einer Fahrradstraße, wo genau?	?::projected 3801,
 #: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022) (mittlerweile bis 11.2.2022) (mittlerweile bis 13.3.2022) (mittlerweile bis 7.4.2022) (und wieder 13.3.2022) (inaktiv)
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
-#: last_checked: 2022-07-29
+#: last_checked: 2022-07-31
 #: check_frequency: 30d
 #: next_check: 2022-08-15
 Unter den Linden: temporäre Umgestaltung, eine besondere Fahrspur für Radfahrer entsteht	?::projected 8804,12280 9028,12307 9141,12320 9358,12351 9475,12365 9613,12381 9664,12387 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431
@@ -4011,7 +4014,7 @@ Gartenstadt Tempelhof: Radwegverbindung geplant	?::projected 7949,7607 8188,7610
 #: next_check_id: VIRCHOW-2020
 #: by: https://www.charite.de/die_charite/campi/campus_virchow_klinikum/ (Zugangsbeschränkungen)
 #: XXX vermutlich komplett 20km/h-Zone; Öffnungszeiten, Schranken? (nach der Corona-Krise prüfen) vvv
-#: last_checked: 2022-06-30 vvv
+#: last_checked: 2022-07-31 vvv
 #: check_frequency: 120d vvv
 (Südstr., Virchow-Klinikum): genaue Wegführung? Qualität? Einbahnstraßenregelung?	? 6504,14969 6470,14990 6414,14981
 (Oststr., Virchow-Klinikum): Qualität?	? 6380,15210 6320,15283 6309,15320 6298,15327
@@ -4270,7 +4273,7 @@ Clayallee: Busspur vermutlich nur in Richtung Süden geplant, evtl. auch für Radf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf (Ausführung steht aus, Erneuerung der Fahrbahndecke steht aus)
 #: osm_watch: way id="19898260" version="18"
-#: last_checked: 2022-06-18 (mapillary)
+#: last_checked: 2022-07-31
 #: check_frequency: 90d
 Daumstr.: neue Busspur wurde angeordnet	?::projected; -1485,15463 -1389,15285 -1345,15060 -1339,14910 -1336,14786
 # REMOVED (laut osm nun aktiv + für Radfahrer freigegeben) --- #: by: https://www.berliner-zeitung.de/mensch-metropole/strassenbahnen-und-busse-der-bvg-sind-langsamer-geworden-li.88468 --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf --- #: by: https://www.bahninfo-forum.de/read.php?9,679930,680970#msg-680970 (markiert, aber noch nicht aktiv) --- #: osm_watch: way id="4797969" version="29" --- #: last_checked: 2020-10-14 (bahninfo-forum) --- Falkenseer Damm: neue Busspur wurde angeordnet	?::inwork; -3937,15299 -3857,15205 -3638,14995 -3561,14918 -3470,14836 -3355,14764
@@ -4283,7 +4286,7 @@ Daumstr.: neue Busspur wurde angeordnet	?::projected; -1485,15463 -1389,15285 -1
 #: source_id: viz2021:13.210243,52.56137,25.05.2021,10:13 (bis 27.9.2021, haben die Bauarbeiten etwas mit der geplanten Busspur zu tun?) (mittlerweile inaktiv)
 #: source_id: viz2021:13.21413,52.56088,25.05.2021,10:13 (bis 25.10.2021, andere Baustelle zwischen Goltz- und Bamihlstr.) (mittlerweile bis 6.12.2021) (mittlerweile bis 24.12.2021) (bis 15.01.2022) (bis 27.01.2022) (bis 31.01.2022)
 #: osm_watch: way id="4978664" version="34"
-#: last_checked: 2022-06-12
+#: last_checked: 2022-07-31
 #: check_frequency: 60d
 Rauchstr.: Busspur in "finaler Abstimmung"	?::projected; -2728,17038 -2908,17072 -3009,17090
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
@@ -4907,7 +4910,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2022-07-20
+#: last_checked: 2022-07-31
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -4972,7 +4975,7 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 #: check_frequency: 120d vvv
 #: last_checked: 2022-06-30
 Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102,12790 9135,12779
-#: last_checked: 2022-07-29
+#: last_checked: 2022-07-31
 Friedenstr./Koppenstr.: Zebrastreifen geplant	?::projected 12658,12755 12690,12769 12687,12809
 #: last_checked: 2022-07-19
 Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,9899 12556,9862 12565,9825
@@ -5632,7 +5635,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/vor-ort-termin-an-der-conrad-blenkle-strasse_a322472 (keine Realisierung 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4876 (Erwähnung)
 #: priority: #D
-#: last_checked: 2022-06-30
+#: last_checked: 2022-07-31
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-06-30
 Conrad-Blenkle-Str.: südlich der Rudi-Arndt-Str. soll ein Zebrastreifen entstehen	?::projected 13365,13777 13359,13832 13416,13798
@@ -5900,13 +5903,13 @@ Wanderweg entlang des Grenzstreifens: Qualität?	? 5327,24311 5513,24308 5678,244
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_51_5789_5888_online.pdf (Straßenbenennungen)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_04_0449_0624_online.pdf (Grundstücksnummerierungen)
 #: XXX private Erschließungsstraßen
-#: last_checked: 2021-09-04 vvv
-#: check_frequency: 180d vvv
+#: last_checked: 2022-07-31 vvv
+#: check_frequency: 30d vvv
 # REMOVED --- Bebauungsplan 5-87a (ehemaliges Kraftwerk Oberhavel): hier werden Wege für Radfahrer entstehen	? -2673,18634 -2670,18775 -2416,18769
 # REMOVED (eingetragen) --- #: XXX für Berlin.coords.data: Hawaiiweg|Hakenfelde|13587
 #: XXX eine Verbindung zum Uferweg existiert noch nicht, evtl. wird es auch nichts geben (Niveauunterschied)
 #: osm_watch: way id="654334311" version="5"
-Hawaiiweg: wird es eine Verbindung zum Uferweg geben?	? -2416,18769 -2401,18776
+Hawaiiweg: Verbindung zum Uferweg wird hergestellt, Verbundsteinpflaster?	?::inwork -2416,18769 -2401,18776
 # REMOVED --- Hawaiiweg: genaue Lage, Qualität? Gibt es eine Verbindung zum Uferweg?	? -2416,18769 -2459,18769 -2558,18771 -2659,18778 -2731,18776 -2757,18800 -2769,18853
 # REMOVED --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Grundstücksnummerierungen)
 # REMOVED (eingetragen) --- #: XXX für Berlin.coords.data: Trinidadweg|Hakenfelde|13587
@@ -5922,18 +5925,9 @@ Hawaiiweg: wird es eine Verbindung zum Uferweg geben?	? -2416,18769 -2401,18776
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: next_check_id: BEBAUUNGSPLAN-5-87B
-#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan.760692.php
-#: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/5-87b_reinplan_12-11-2018.pdf
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_02_0153_0248_online.pdf (Straßenbenennungen + Wirksamkeit ab 2020-02-20 + Lageplan)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_27_3413_3572_online.pdf (Grundstücksnummerierungen)
-#: by: https://www.helma-wohnungsbau.de/fileadmin/pictures/WB_Projekte/Berlin/Havelmarina/lageplan-havelmarina.jpg
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_04_0213_0280_online.pdf (Grundstücksnummerierungen)
-#: by: https://abendblatt-berlin.de/2021/05/28/wohnungen/ (Spatenstich, Abschluss des Projekts unklar)
-#: XXX Bebauungsplan 5-87b (Papenberger Weg)
+# REMOVED --- #: next_check_id: BEBAUUNGSPLAN-5-87B --- #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan.760692.php --- #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/5-87b_reinplan_12-11-2018.pdf --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_02_0153_0248_online.pdf (Straßenbenennungen + Wirksamkeit ab 2020-02-20 + Lageplan) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_27_3413_3572_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.helma-wohnungsbau.de/fileadmin/pictures/WB_Projekte/Berlin/Havelmarina/lageplan-havelmarina.jpg --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_04_0213_0280_online.pdf (Grundstücksnummerierungen) --- #: by: https://abendblatt-berlin.de/2021/05/28/wohnungen/ (Spatenstich, Abschluss des Projekts unklar) --- #: XXX Bebauungsplan 5-87b (Papenberger Weg)
 # REMOVED (eingetragen) --- #: XXX neue Straßen (fehlen alle bei Berlin.coords.data) --- #: XXX alles Privatstraßen --- #: XXX a) Pembabogen|Hakenfelde|13587 --- #: XXX b) Seychellenring|Hakenfelde|13587 --- #: XXX c) Tahitiweg|Hakenfelde|13587 --- #: XXX d) Tasmanienweg|Hakenfelde|13587 --- #: XXX e) Tongaweg|Hakenfelde|13587 --- #: XXX f) Mooreaweg|Hakenfelde|13587 --- #: XXX g) Tikehauweg|Hakenfelde|13587
-#: last_checked: 2021-09-04 vvv
-#: check_frequency: 360d vvv
+# REMOVED --- #: last_checked: 2021-09-04 vvv --- #: check_frequency: 360d vvv
 # REMOVED --- #: osm_watch: way id="51830138" version="7" --- #: osm_watch: way id="763475704" version="2" --- Tongaweg: genaue Lage? Qualität?	?::inwork -2792,19013 -2750,19013
 # REMOVED --- #: osm_watch: way id="763475705" version="2" --- Seychellenring: genaue Lage? Qualität? Entsteht auch eine Verbindung zum Uferweg?	?::inwork -2550,19005 -2550,18941 -2750,18945 -2750,19013 -2647,19009 -2550,19005 -2524,19005
 # REMOVED --- Mooreaweg: genaue Lage? Qualität?	?::inwork -2792,19013 -2794,18940
@@ -5941,10 +5935,8 @@ Hawaiiweg: wird es eine Verbindung zum Uferweg geben?	? -2416,18769 -2401,18776
 # REMOVED --- #: osm_watch: way id="763475708" version="2" --- Pembabogen: genaue Lage? Qualität?	?::inwork -2750,19013 -2747,19074 -2745,19146 -2647,19149 -2546,19155 -2547,19067 -2550,19005
 # REMOVED --- Tahitiweg: genaue Lage? Qualität?	?::inwork -2647,19149 -2647,19070 -2647,19009
 # REMOVED --- Tasmanienweg: genaue Lage? Qualität?	?::inwork -2747,19074 -2647,19070 -2547,19067
-Seychellenring - Uferweg: wird hier eine Verbindung zum Uferweg entstehen?	? -2524,19005 -2511,19005
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- Seychellenring - Uferweg: wird hier eine Verbindung zum Uferweg entstehen?	? -2524,19005 -2511,19004
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_29_3241_3364_online.pdf --- Waldkraiburger Str.: Einziehung von Straßenland (Teilfläche)	? 12626,5057 12468,5000 --- Waldkraiburger Str.: vermutlich privat, sollte aus der Karte entfernt werden	? 12283,4971 12468,5000
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf --- #: by: http://www.berliner-woche.de/hellersdorf/verkehr/beleuchtung-fuer-weg-vorgesehen-d132436.html --- Parchimer Str. - Altentreptower Str.: neuer Rad+Gehweg, Qualität, genaue Lage, nachts beleuchtet?	? 22225,12281 22220,12243 22129,12155
 # REMOVED (ja; eine Straßenlaterne existiert) --- #: XXX bei gmaps als "Lubminer Weg" bezeichnet, existieren solche Schilder in der Realität? --- Lubminer Str. - Parchimer Str.: existiert hier eine Wegverbindung? Qualität? Nachts beleuchtet?	? 22415,12681 22391,12677 22318,12663
@@ -5965,7 +5957,7 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: https://www.deutsches-architekturforum.de/thread/8594-luisenblock-ost-vollendung-band-des-bundes-in-entwicklung/?postID=699582#post699582 (städtebaulicher Wettbewerb 2021)
 #: by: https://luisenblock.berlin.de/
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2203/nachricht7271.html
-#: last_checked: 2022-06-03
+#: last_checked: 2022-07-31
 #: check_frequency: 360d
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
@@ -6085,7 +6077,7 @@ L25 (Schmölln - Güstow): hier entsteht vermutlich auch ein Radweg	? 55977,100103
 #: source_id: viz2021:13.21502,52.56076,05.04.2022,13:25 (Sperrung wegen Bauarbeiten bis zum 25.4.2022) (inaktiv)
 #: XXX erst nach der Bebauung Carossa-Quartier (Baubeginn hier: frühestens 2020)
 #: also_indoor: traffic (G,B)
-#: last_checked: 2021-09-26 (mapillary)
+#: last_checked: 2022-07-31
 # REMOVED --- #: next_check: 2021-03-01
 #: check_frequency: 360d
 Bamihlstr.: Einbahnstraßenregelung gefordert/geplant	? -2563,17004 -2585,16900 -2602,16809
@@ -6377,7 +6369,7 @@ Prinzenstr.: Radspuren zwischen Moritzplatz und Ritterstr.	?::projected 10776,10
 #: by: https://nitter.it/BA_Xhain/status/1547461137444347904#m (14.7.2022: derzeitige Bauarbeiten hinter der Koppenstr. dauern noch drei Wochen)
 #: XXX beide Fahrtrichtungen?
 #: XXX Mittlerweile Bauarbeiten Richtung Westen zwischen Koppenstr. und Andreasstr., Radfahrer werden zwischenzeitlich auf die Fahrspur geleitet
-#: last_checked: 2022-07-29
+#: last_checked: 2022-07-31
 #: check_frequency: 21d
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2022-12-31
@@ -7551,7 +7543,7 @@ Goebelstr.: wird hier ein öffentlicher für Radfahrer benutzbarer Weg entstehen, 
 #: XXX Bebauungsplan 5-105 VE
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan.741609.php
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/5-105-ve_bebauungsplan_24-08-2018.pdf
-#: last_checked: 2022-04-23
+#: last_checked: 2022-07-31
 #: check_frequency: 360d
 Daumstr.: abzweigende Wohngebietsstraße wird entstehen	?::projected -1706,15794 -1492,15901
 # 
@@ -7734,7 +7726,7 @@ Bebauungsplan 6-24 VE: entsteht hier eine neue Privatstraße? entsteht eine Paral
 #: XXX vielleicht entsteht hier auch eine Abkürzung für den B-K-Radweg?
 #: note: Gelände auch als "Napoleonkai" bekannt
 #: osm_watch: way id="113631587" version="5"
-#: last_checked: 2022-04-30 (mapillary)
+#: last_checked: 2022-07-31
 #: check_frequency: 180d
 geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 4216,15799 4295,15852 4084,15859
 # 
@@ -8063,7 +8055,7 @@ Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projec
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6138 (Bebauungsplan 3-60)
 #: by: https://www.berliner-woche.de/pankow/c-bauen/fruehzeitigen-beteiligungen-zur-planung-am-pankower-tor-sind-abgeschlossen_a351878
 #: by: https://www.morgenpost.de/bezirke/pankow/article235885611/Pankower-Tor-Hier-rettet-Krieger-die-Lokschuppen-Ruine.html
-#: last_checked: 2022-01-09
+#: last_checked: 2022-07-31
 #: check_frequency: 720d
 Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,17954 10859,17872 11576,18436 11906,18532 11942,19057 10850,17954
 # 
@@ -8501,7 +8493,9 @@ Neue Mitte Tempelhof: ändert sich etwas an den bestehenden Wegen oder an den Grü
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5934 (Festsetzung des Bebauungsplans)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_24_1453_1488_online.pdf (Grundstücksnummerierungen für Planstraße I und J)
 #: XXX Bebauungsplan 3-41
-#: next_check: 2022-08-01
+#: osm_watch: way id="556057045" version="1"
+#: last_checked: 2021-09-27 (mapillary)
+#: check_frequency: 360d
 Bebauungsplan 3-41: Straßen werden entstehen; genaue Lage, Qualität?	?::projected 12251,18651 12373,18900 12509,18821 12400,18574
 # 
 # REMOVED (arbeitet) --- #: next_check_id: B96A-2020 --- #: osm_watch: node id="1644614436" version="4" --- #: last_checked: 2020-10-04 --- #: check_frequency: 60d --- #: next_check: 2021-01-31 --- B96a/Adlergestell: Ampel für Fußgänger und Radfahrer entsteht, vermutlich Anforderungsampel	?::inwork 21892,1499 21874,1511 21878,1481

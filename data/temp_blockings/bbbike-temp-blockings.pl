@@ -1269,7 +1269,7 @@ EOF
        text  => 'L 171; (Hohen Neuendorf-Hennigsdorf); Bereich Anschlußstelle Straßenbau Vollsperrung 28.10.2004-18.12.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -926,27132 -1941,26218 -2118,26060
+	2 -926,27132 -1941,26218 -2109,26055
 EOF
      },
      { from  => 1099177200, # 2004-10-31 01:00
@@ -2690,7 +2690,7 @@ EOF
        text  => 'L 171; (Hohen Neuendorf-Hennigsdorf); zw. Kreisverkehr bei Hennigsd. und AS Stolpe Straßenbau Vollsperrung 04.10.2005-15.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -2446,25386 -2118,26060
+	2 -2446,25386 -2356,25540 -2326,25625 -2130,26026 -2109,26055
 EOF
      },
      { from  => 1124486293, # 2005-08-19 23:18
@@ -24793,7 +24793,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8094&options=4
 # REMOVED (nicht mehr gesperrt) --- #: next_check: 2016-03-01
-	2::inwork -2453,15476 -2454,15472 -2465,15471
+	2::inwork -2453,15476 -2454,15472 -2468,15468
 EOF
      },
      { from  => undef, # 
@@ -31083,7 +31083,7 @@ EOF
 #: next_check_id: CORONA-2020
 #: by: https://www.charite.de/klinikum/themen_klinikum/themenschwerpunkt_coronavirus/#c30751057 (Eingangskontrollen)
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-06-30 vvv
+#: last_checked: 2022-07-31 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -32207,7 +32207,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-07-05 vvv
+#: last_checked: 2022-07-31 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -34835,7 +34835,7 @@ EOF
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-07-30 (indoor) vvv
+#: last_checked: 2022-07-31 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-09-30 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
