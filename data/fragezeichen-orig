@@ -162,7 +162,7 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: source_id: IM_026443	
 #: source_id: viz2021:13.181825,52.422784,09.02.2022,11:00 (Leitungsarbeiten bis 30.5.2022) (mittlerweile bis 12.7.2022)
 #: source_id: viz2021:13.178114,52.421439,11.03.2022,09:00 (Leitungsarbeiten bis 13.5.2022) (mittlerweile bis 3.6.2022) (inaktiv)
-#: osm_watch: way id="4323788" version="23"
+#: osm_watch: way id="4323788" version="24"
 #: osm_watch: way id="23109081" version="18"
 #: osm_watch: way id="41108858" version="13"
 #: last_checked: 2022-06-12
@@ -252,8 +252,8 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?
 #: source_id: viz2021:13.363931,52.543696,05.07.2022,07:00 (zwischen Trift- und Lynarstr. bis 12.7.2022) (mittlerweile bis 13.7.2022) (inaktiv)
 #: source_id: viz2021:13.363931,52.543696,13.07.2022,07:00 (zwischen Lindower Str. und Gerichstr. bis 19.7.2022) (inaktiv)
 #: source_id: viz2021:13.361865,52.544851,19.07.2022,07:00 (zwischen Gerichstr. und Schulstr. bis 26.7.2022) (verlängert bis 29.7.2022) (inaktiv)
-#: osm_watch: way id="4543585" version="37"
-#: osm_watch: way id="42732291" version="23"
+#: osm_watch: way id="4543585" version="39"
+#: osm_watch: way id="42732291" version="24"
 #: XXX mittlerweile gibt es bereits abschnittsweise provisorische Radspuren (vermutlich nur wegen der Hochbaustelle?)
 #: XXX Bauarbeiten wochenweise, jeweils zwei Abschnitte pro Richtung, beginnend bei der Luxemburger Str. Richtung Südosten
 # REMOVED --- #: XXX es wurde zwischen Luxemburger Str. und Triftstr. markiert, aber niemand hält sich daran
@@ -799,7 +799,7 @@ S Adlershof - Köpenicker Str.: eine neue Verbindung wird entstehen, wo genau?	?:
 # 
 #: XXX Ag.1
 #: by: https://www.berliner-woche.de/altglienicke/c-bauen/ersatzneubau-der-altglienicker-bruecke-soll-2025-beginnen_a328502 (möglicherweise "Verbreiterung des Brückenquerschnitts")
-#: osm_watch: way id="144909690" version="13"
+#: osm_watch: way id="144909690" version="16"
 #: last_checked: 2022-07-12
 #: check_frequency: 120d
 Köpenicker Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 20196,2392 20212,2354 20154,2283 20128,2271 20100,2247 19933,2078 19839,2015 19819,1980 19803,1911 19766,1796 19704,1621 19676,1577 19599,1557 19579,1543
@@ -1719,7 +1719,7 @@ Seegefelder Str.: Umbau/Sanierung des Radwegs	?::projected -5257,14668 -5097,145
 # 
 #: by: https://api.fixmyberlin.de/api/projects/207
 #: XXX unklar: auf der fixmyberlin-Karte ist der Fischerhüttenweg (Waldweg im Grunewald!) markiert, vermutlich fälschlicherweise
-#: osm_watch: way id="718428128" version="2"
+#: osm_watch: way id="718428128" version="3"
 #: osm_watch: way id="4740663" version="38"
 #: osm_watch: way id="718428121" version="6"
 #: last_checked: 2022-06-12 (mapillary)
@@ -1826,7 +1826,7 @@ Brauerstr.: evtl. wird hier die Einbahnstraßenregelung für Radfahrer aufgehoben	
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/214 (Erneuerung des Fahrbahnbelags)
 #: by: http://www.infravelo.de/projekt/koenigsweg/ (Asphaltierung, in Planung, 3. Quartal 2021 - 3. Quartal 2022) (mittlerweile gelöscht) (wieder da: 1. Quartal 2023 - 3. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 4. Quartal 2023)
-#: osm_watch: way id="47574921" version="14"
+#: osm_watch: way id="47574921" version="15"
 #: osm_watch: way id="119024153" version="7"
 #: last_checked: 2021-04-28
 #: check_frequency: 720d
@@ -2255,7 +2255,7 @@ Schönstr.: Neubau geplant	?::projected 13630,16629 13794,16773 13870,16837 13974
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung_konigsweg.pdf
 #: XXX wird auch der Parallelweg zur Wohngebietsstraße ausgebaut?
-#: osm_watch: way id="320800604" version="7"
+#: osm_watch: way id="320800604" version="8"
 #: last_checked: 2022-03-26
 #: check_frequency: 120d
 Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
@@ -4246,7 +4246,7 @@ S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12
 #: last_checked: 2022-05-15
 #: check_frequency: 60d
 Hindenburgdamm: Busspur zwischen Klingsorstr. und Händelplatz Richtung Norden geplant	?::projected; 4551,4042 4517,4473 4516,4483 4515,4581 4515,4760
-#: osm_watch: way id="48988573" version="9"
+#: osm_watch: way id="48988573" version="10"
 #: last_checked: 2022-04-13 (mapillary)
 Potsdamer Str.: Busspur vermutlich nur in Richtung Osten, oder doch in beiden Richtungen?	?::projected; 161,3062 255,3085 452,3133 534,3149 669,3119
 # REMOVED (zurückgestellt, Konflikt mit Radverkehrsanlage) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Kuhligshofstr. -> Albrechtstr.) --- #: osm_watch: way id="30157290" version="22" --- #: XXX hier vermutlich erst nach Abschluss der Bauarbeiten am Steglitzer Kreisel --- #: last_checked: 2020-07-11 --- #: check_frequency: 180d --- Schloßstr.: wird eine Busspur Richtung Norden eingerichtet?	?::projected; 4741,5309 4745,5344 4767,5389 4832,5522 4861,5581
@@ -4621,7 +4621,7 @@ Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	?::projected 4583,13
 #: source_id: 2147343973 (bis Mitte Juni 2019, Leitungsarbeiten) (inaktiv)
 #: source_id: viz2021:13.349475,52.542176,17.06.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.349475,52.542176,20.06.2022,10:00 (bis 14.7.2022)
-#: osm_watch: way id="222005890" version="14"
+#: osm_watch: way id="222005890" version="15"
 #: last_checked: 2022-04-09
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-09-30
@@ -4732,6 +4732,11 @@ Waldpromenade: wird am öffentlichen Weg etwas geändert (Beleuchtung, Ausschilder
 #: last_checked: 2022-07-10
 #: check_frequency: 90d
 Paul-Schneider-Str.: Bauarbeiten geplant, ändert sich was für Radfahrer?	?::projected 6712,3237 6647,3292 6613,3320
+# 
+#: source_id: viz2021:13.346008,52.436503,02.08.2022,06:00 (bis 9.9.2022)
+#: note: bei rbb nur bis Mitte August 2022
+#: next_check: 2022-09-09
+Kaiser-Wilhelm-Str.: Leitungsarbeiten, vielleicht wird hier die Bus/Radspur komplettiert?	?::inwork; 6657,3367 6613,3320
 # 
 # REMOVED (siehe radwege-orig) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (voraussichtlich 2018) --- #: next_check: 2018-08-01 --- Fürstenwalder Allee: Radwegsanierung, Südseite	?; 32829,3105 33111,3064 33525,2901
 # REMOVED (siehe Zweirichtungsradweg-Eintrag) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (2018) vvv --- #: last_checked: 2018-06-16 vvv --- Müggelheimer Str.: Radverkehrsanlage auf der Südseite - was genau wird gemacht?	? 22674,4309 22812,4227 --- Müggelheimer Str.: Radverkehrsanlage auf der Südseite - was genau wird gemacht?	? 22965,4124 23368,3894 --- #: last_checked ^^^ --- #: by ^^^
@@ -8243,6 +8248,7 @@ Stresowufer: ein Uferweg wird entstehen	?::projected -3393,13777 -3300,13923 -31
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/fahr-rat-formulierte-empfehlungen-fuer-den-radverkehr-in-marzahn-hellersdorf_a277189 (Verzögerung)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/in-marzahn-hellersdorf-werden-2021-acht-groessere-radwegprojekte-umgesetzt_a297401 (Realisierung 2021)
 #: by: http://www.infravelo.de/projekt/verbindung-zwischen-mehrower-allee-und-havemannstrasse/ (4. Quartal 2021 - 4. Quartal 2022)
+#: source_id: viz2021:13.550307,52.553046,02.08.2022,03:00 (Sanierung des Radwegs auf der Brücke, bis 26.8.2022)
 #: XXX laut Baustellenschild Bauzeit bis November 2022; Verbindung zwischen TR6 und TR7
 #: last_checked: 2022-07-26 (mapillary) (Bauarbeiten laufen)
 # REMOVED --- #: check_frequency: 90d

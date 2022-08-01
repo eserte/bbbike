@@ -2472,7 +2472,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geˆffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tags¸ber mˆglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Gel‰ndes nach Sonnenuntergang ist f¸r Tandems und Anh‰nger schwierig oder gar nicht mˆglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tags¸ber mˆglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Gel‰ndes nach Sonnenuntergang ist f¸r Tandems und Anh‰nger schwierig oder gar nicht mˆglich.',
          'until' => undef
        },
        undef,
@@ -4413,7 +4413,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: GAERTNER-2021
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (G,H(unvollst‰ndig))
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
 #: last_checked: 2022-07-28 vvv
@@ -4984,6 +4984,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: also_indoor: traffic (G,B)
 #: source_id: viz2021:13.569262,52.411283,12.07.2021,09:00 (hier: bis 31.1.2022) (inaktiv)
 #: source_id: viz2021:13.56928,52.411326,13.06.2022,07:00 (bis 8.7.2022) (bis 19.8.2022)
+#: osm_watch: way id="1082326438" version="1"
 #: next_check: 2022-08-19
 	q4::inwork 21858,811 21902,877
 # REMOVED ---	q4::inwork; 21902,877 21977,988 22034,1006 22092,999

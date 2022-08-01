@@ -607,7 +607,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg,
 #: last_checked: 2022-07-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-22 vvv
-#: osm_watch: way id="140336721" version="25"
+#: osm_watch: way id="140336721" version="26"
 #: note: früher "teilweise verwinkelte Wegführung des Radwegs - q1-::inwork;"
 Turmstr.: Bauarbeiten, Engstellen	q2+::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321
 #: osm_watch: way id="30195541" version="28"
@@ -4072,7 +4072,7 @@ Hans-Baluschek-Park: enge Rampe, Fußgänger	q2 7252,6080 7278,6101
 Golda-Meir-Steg: Fußgänger	q2 7861,14133 7899,14157 7962,14198
 (Wilhelmine-Duncker-Str. - Grünzug am Falkenberg): schmal, einige Fußgänger	q2 21440,300 21435,323
 #: note: Fußgängerzone, Radfahrer frei
-(Dolgenseestr., Fußgängerzone): Fußgänger	q3+ 17457,10083 17384,9807
+(Dolgenseestr., Fußgängerzone): Fußgänger	q3+ 17457,10083 17412,9911 17384,9807
 #: XXX_prog: BS am nördlichen Ende, ansonsten q3
 (Gaudystr. - Sonneberger Weg): einige Fußgänger, Bordstein	q4 10547,15586 10542,15609
 #: XXX_prog: BS am nördlichen Ende, sowie am südlichen Ende, falls man links in die Sewanstr. einbiegen möchte, ansonsten q4 beibehalten
@@ -4181,6 +4181,7 @@ Fenchelweg: enge Straße	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,360
 #: XXX_prog: für Anhänger q1 oder q2
 #: confirmed_by: srt
 Fennpfuhlweg: vier Bodenschwellen	q0- 17750,19181 17697,18989
+Dolgenseestr. [8B, 8C, 9, 9A, 9B]: etwas Parkplatzverkehr	q1 17523,9882 17412,9911
 # 
 ######################### User Contributions #################################
 # 
