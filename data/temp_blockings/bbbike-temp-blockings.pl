@@ -31193,7 +31193,7 @@ EOF
      },
      { from  => $isodate2epoch->("2020-05-27 09:00:00"),
        until => undef, # $isodate2epoch->("2021-12-31 17:00:00"), # der ursprüngliche Termin (14.08.2020) kann wohl nicht gehalten werden; laut Schild bis Ende 2021
-       text  => 'Mainzer Str.: Bauarbeiten zwischen Scharnweberstr. und Frankfurter Allee, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Mainzer Str.: Einmündung Frankfurter Allee gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: GAERTNER-2021
@@ -31201,7 +31201,7 @@ EOF
 #: also_indoor: traffic (G,H(unvollständig))
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-07-28 vvv
+#: last_checked: 2022-08-02 vvv
 #: check_frequency: 4d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -31746,9 +31746,9 @@ EOF
 # REMOVED --- #: last_checked: 2021-04-19 vvv
 #: note: hier von Osten aus legaler gemeinsamer Rad- und Gehweg auf dem Bürgersteig, mit kurzer asphaltierter Rampe, von Westen aus verboten für Fahrzeuge aller Art; mittlerweile existiert kein Gehweg mehr
 #: osm_watch: way id="16096289" version="19"
-	2::inwork 8031,11249 7934,11275 7897,11287
+	2::inwork 8031,11249 7934,11275 7894,11288
 #: osm_watch: way id="4597351" version="21"
-	2::inwork 7934,11275 7965,11380
+	2::inwork 7934,11275 7970,11396
 # REMOVED --- #: last_checked ^^^
 # REMOVED --- #: XXX ^^^
 # REMOVED --- #: XXX ^^^
@@ -32207,7 +32207,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-07-31 vvv
+#: last_checked: 2022-08-02 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -33649,13 +33649,14 @@ EOF
 EOF
      },
      { from  => 1629669600, # 2021-08-23 00:00
-       until => $isodate2epoch->("2022-07-31 17:00:00"), # 1640991600, # 2022-01-01 00:00
-       text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 31.07.2022 17:00 ',
+       until => $isodate2epoch->("2022-08-04 17:00:00"), # 1640991600, # 2022-01-01 00:00
+       text  => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 04.08.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.377685,52.567221,24.08.2021,07:00', # aktiv
        data  => <<EOF,
 #: source_id: viz2021:13.37876,52.56731,02.05.2022,16:04 (inaktiv)
 #: source_id: viz2021:13.37876,52.56731,06.05.2022,14:35 (zweiter Eintrag) (wieder inaktiv)
+#: source_id: viz2021:13.377685,52.567221,24.08.2021,07:00
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10354
 	q4::inwork 8555,17928 8415,17902
 EOF
@@ -33919,11 +33920,14 @@ EOF
        data  => <<EOF,
 #: next_check_id: SCHOENHOLZER-2022
 # REMOVED (wg. Konflikt mit XXX) --- #: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
+#: source_id: viz2021:13.37418,52.58681,02.08.2022,11:31 (bis 3.8.2022)
+#: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (evtl. Umstellung der Baustelle, zwischen Schillerstr. und Friesenstr. Gegenverkehrsregelung bis Ende März 2023, siehe auch Ampeln in der Germanenstr.)
+#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (dito)
 #: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (H,B)
 #: last_checked: 2022-05-14
-#: check_frequency: 45d
-# REMOVED --- #: next_check: 2022-04-30
+# REMOVED --- #: check_frequency: 45d
+#: next_check: 2022-08-03
 	q4::inwork; 8196,20096 8224,19977 8234,19936
 EOF
      },
@@ -34997,7 +35001,7 @@ EOF
        text  => 'Eichbuschallee : Fahrbahn zwischen Kiefholzstr. und Bergaustr. gesperrt, Radfahrer sollen schieben, vom 11.04.2022 09:00 bis 02.08.2022 17:00, evtl. auch länger, bis Ende November 2022',
        dont_check_date => 1,
        type  => 'handicap',
-       source_id => 'viz2021:13.479739,52.472118,11.04.2022,09:00', # bis 31.10.2022, mittlerweile nur noch bis 1.8.2022, mittlerweile bis 30.11.2022, mittlerweile bis 2.8.2022
+       source_id => 'viz2021:13.479739,52.472118,11.04.2022,09:00', # bis 31.10.2022, mittlerweile nur noch bis 1.8.2022, mittlerweile bis 30.11.2022, mittlerweile bis 2.8.2022, inaktiv
        data  => <<EOF,
 #: by: https://nitter.net/VIZ_Berlin/status/1513397936151044099#m
 #: by: https://nitter.net/pic/media%2FFP1LIs8XMAENMUm.jpg%3Fname%3Dorig

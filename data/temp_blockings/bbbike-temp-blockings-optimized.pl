@@ -4416,7 +4416,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G,H(unvollständig))
 #: osm_watch: way id="934995899" version="9"
 #: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-07-28 vvv
+#: last_checked: 2022-08-02 vvv
 #: check_frequency: 4d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
@@ -4433,7 +4433,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1590562800,
          'id' => 3240,
-         'text' => 'Mainzer Str.: Bauarbeiten zwischen Scharnweberstr. und Frankfurter Allee, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Mainzer Str.: Einmündung Frankfurter Allee gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4658,7 +4658,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-07-31 vvv
+#: last_checked: 2022-08-02 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -5068,7 +5068,20 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.37876,52.56731,02.05.2022,16:04 (inaktiv)
+#: source_id: viz2021:13.37876,52.56731,06.05.2022,14:35 (zweiter Eintrag) (wieder inaktiv)
+#: source_id: viz2021:13.377685,52.567221,24.08.2021,07:00
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10354
+	q4::inwork 8555,17928 8415,17902
+',
+         'from' => 1629669600,
+         'id' => 3435,
+         'source_id' => 'viz2021:13.377685,52.567221,24.08.2021,07:00',
+         'text' => 'Schwartzstr.: Baustelle, Sperrung der Fahrbahn, vom 24.08.2021 07:00 bis 04.08.2022 17:00 ',
+         'type' => 'handicap',
+         'until' => 1659625200
+       },
        undef,
        undef,
        {
@@ -5128,11 +5141,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: SCHOENHOLZER-2022
 # REMOVED (wg. Konflikt mit XXX) --- #: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
+#: source_id: viz2021:13.37418,52.58681,02.08.2022,11:31 (bis 3.8.2022)
+#: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (evtl. Umstellung der Baustelle, zwischen Schillerstr. und Friesenstr. Gegenverkehrsregelung bis Ende März 2023, siehe auch Ampeln in der Germanenstr.)
+#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (dito)
 #: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (H,B)
 #: last_checked: 2022-05-14
-#: check_frequency: 45d
-# REMOVED --- #: next_check: 2022-04-30
+# REMOVED --- #: check_frequency: 45d
+#: next_check: 2022-08-03
 	q4::inwork; 8196,20096 8224,19977 8234,19936
 ',
          'from' => 1615158000,

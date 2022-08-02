@@ -75,7 +75,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
-#: last_checked: 2022-07-29
+#: last_checked: 2022-08-02
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -523,7 +523,7 @@ Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/vollrad-kuhn-beantwortete-beim-ersten-stadtratsfruehstueck-im-frei-zeit-haus-fragen-der-buerger_a201517 (Ende 2019/Anfang 2020)
 #: osm_watch: node id="29420748" version="5"
 #: source_id: 2147342788
-#: last_checked: 2022-06-30
+#: last_checked: 2022-07-29 (mapillary)
 #: check_frequency: 90d
 Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623,15954 13653,15938
 #: by: ^^^
@@ -1013,7 +1013,7 @@ Köpenicker Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected  21020
 # 
 #: XXX Kö.3
 #: XXX laut Dokument "Alternative Routenführung der TR7 über An Wuhleufer (Innovationspark Wuhlheide) mittelfristig durchsetzen", "Führung durch den IPW zur Zeit nur werktags möglich"
-#: last_checked: 2022-07-28 (mapillary)
+#: last_checked: 2022-07-30 (mapillary)
 #: check_frequency: 180d
 Am Wuhleufer: TR7 soll hier geführt werden --- wird die Sperrung am Wochenende dann aufgehoben?	?::projected 21683,6946 21572,7051 21505,7129 21491,7182 21490,7197 21484,7326 21475,7500 21497,7597 21540,7630
 # 
@@ -1283,7 +1283,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 15437,16491 15662,16649
 #: osm_watch: way id="51317007" version="28"
 #: osm_watch: way id="624116238" version="10"
 #: source_id: 2147344016 (bis Ende Mai 2019) (inaktiv)
-#: last_checked: 2022-02-04
+#: last_checked: 2022-04-09 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2024-12-31
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285 16460,17214 16352,17150 16318,17128
@@ -2180,10 +2180,10 @@ Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::projected 
 #: XXX Bebauungsplan 1-35a (Kulturforum)
 # REMOVED --- #: XXX Oberfläche nach den Bauarbeiten: vermutlich Betonpflaster --- #: XXX vermutlich begradigte Verkehrsführung
 # REMOVED (als alias eingetragen) --- #: XXX existiert hier irgendwo die Bezeichnung "Scharounplatz"?
-#: last_checked: 2022-04-09
+#: last_checked: 2022-08-02
 #: check_frequency: 120d
-Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 7965,11380 7934,11275
-# REMOVED (hier realisiert) --- Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 8083,11381 7943,11431 7931,11391 7965,11380
+Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 7970,11396 7934,11275
+# REMOVED (hier realisiert) --- Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 8083,11381 7943,11431 7931,11391 7970,11396
 # REMOVED (-> handicap_s-orig) --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php --- #: XXX außerdem: voraussichtlich ab April 2018 Komplettsperrung --- #: XXX mittlerweile existiert ein temp-blockings-Eintrag; muss noch mit last/next_check versehen werden bzw. nach handicap_s oder gesperrt überführt werden --- #: osm_watch: way id="531952542" version="4" --- #: last_checked: 2018-05-22 --- #: next_check: 2018-05-28 --- #: priority: #A --- Herbert-von-Karajan-Str.: gibt es Einschränkungen für Radfahrer während der Bauarbeiten?	? 8005,11627 7965,11467 7943,11431
 # REMOVED (-> gesperrt-orig) --- #: last_checked: 2020-05-10 (es gibt aber Bauarbeiten) --- #: check_frequency: 60d --- #: next_check: 2020-06-15 --- Ingeborg-Drewitz-Allee: Teileinziehung, wird für öffentlichen Autoverkehr gesperrt, gibt es vielleicht auch andere Einschränkungen?	?::projected 7362,12731 7377,12729 7542,12736 7541,12754 7386,12749
 # REMOVED --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/rosenthaler-weg_blatt-5.pdf --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.482469.php (Fertigstellung Mitte 2019) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6053.html (Elisabeth-Aue) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php?date=20170522 --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.602923.php --- #: XXX Bauzeit: Fertigstellung der gesamten Baumaßnahme ist derzeitig für Mitte 2019 geplant
@@ -3211,7 +3211,7 @@ Buddestr./Königsweg: Zebrastreifen geplant	?::projected 2151,20619 2188,20600 22
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5738
 #: by: https://www.morgenpost.de/berlin/article234890883/verkehr-sicherheit-fussgaenger-berlin-neue-zebrastreifen-bezirke.html (noch keine Mittelzusage)
 #: priority: #D
-#: last_checked: 2022-06-14
+#: last_checked: 2022-08-02
 #: check_frequency: 180d
 # REMOVED (keine Anzeichen für eine Schule) --- #: next_check: 2021-03-01
 Am Friedrichshain/Virchowstr.: wird hier ein Zebrastreifen gebaut?	?::projected 12598,13825 12640,13814 12604,13784
@@ -3822,7 +3822,7 @@ Wriezener Park: Umbauarbeiten geplant, evtl. werden Wege zwischenzeitlich gesper
 #: osm_watch: way id="25468896" version="7"
 #: osm_watch: way id="35218633" version="14"
 #: osm_watch: way id="610258191" version="1"
-#: last_checked: 2022-07-04 (indoor)
+#: last_checked: 2022-08-02 (indoor)
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 30d
 Bahnhofsvorplatz am S-Bahnhof Wilhelmshagen: mögliche Benennung zu "Wiesmüller-Platz"	? 32097,4070 32143,4082 32127,4035
@@ -4475,7 +4475,7 @@ Jacques-Offenbach-Platz: hier sollen Zebrastreifen an den Einmündungen entstehen
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9390 (Anfrage)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-11108.pdf (Umsetzung 2022 unwahrscheinlich)
 #: priority: #D
-#: last_checked: 2022-07-26 (mapillary)
+#: last_checked: 2022-07-29 (mapillary)
 #: check_frequency: 180d
 Marzahner Promenade: entsteht hier ein Zebrastreifen oder nur eine Überquerungshilfe?	?::projected  20155,15492 20226,15512 20173,15457
 # 
@@ -4654,7 +4654,7 @@ Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf (2022)
 #: XXX Tunnelsanierung beginnt am 2020-11-02 und dauert bis Mitte Juli 2021; während der Bauarbeiten wird der Radverkehr Richtung Norden über den Gehweg geführt
-#: last_checked: 2022-07-17 (mapillary)
+#: last_checked: 2022-08-02
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-07-31
 Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,13973 8732,14098 8607,14253
@@ -4734,6 +4734,8 @@ Waldpromenade: wird am öffentlichen Weg etwas geändert (Beleuchtung, Ausschilder
 Paul-Schneider-Str.: Bauarbeiten geplant, ändert sich was für Radfahrer?	?::projected 6712,3237 6647,3292 6613,3320
 # 
 #: source_id: viz2021:13.346008,52.436503,02.08.2022,06:00 (bis 9.9.2022)
+#: by: https://nitter.it/VIZ_Berlin/status/1554317314505392128#m
+#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlpGUUQxY1dJQUFUZDYyLmpwZw==
 #: note: bei rbb nur bis Mitte August 2022
 #: next_check: 2022-09-09
 Kaiser-Wilhelm-Str.: Leitungsarbeiten, vielleicht wird hier die Bus/Radspur komplettiert?	?::inwork; 6657,3367 6613,3320
@@ -5163,7 +5165,7 @@ Senefelderstr: entsteht hier eine Fahrradstraße?	? 11535,14900 11582,15021 11595
 Gleimstr.: entsteht hier eine Fahrradstraße?	? 10953,15787 10713,15753 10554,15725 10426,15705 10418,15704 10170,15659 10130,15653
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908 (Umsetzung 2021/2022)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3908&date=20210720 (Umsetzung 2022/2023)
-#: last_checked: 2022-07-14
+#: last_checked: 2022-08-02
 #: check_frequency: 360d
 Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,14235 11229,14422 11285,14515 11317,14564 11436,14741 11535,14900
 # REMOVED --- #: next_check ^^^
@@ -5184,14 +5186,7 @@ Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,
 #: XXX Waldstraße - Nordendstraße - Birkenallee (Niederschönhausen)
 #: XXX ^^^
 # 
-#: by: http://www.infravelo.de/projekt/oderberger-strasse/ (4. Quartal 2021 - 2. Quartal 2022) (mittlerweile "in Bau") (mittlerweile 1. Quartal 2022 - 2. Quartal 2022) (mittlerweile 2. Quartal 2022 - 3. Quartal 2022)
-#: osm_watch: way id="41828679" version="25"
-#: osm_watch: way id="42156202" version="22"
-#: XXX laut osm im südöstlichen Teil realisiert --- allerdings ist nur die Straßenmarkierung (Linienstraßen-Style) fertig, aber ausgeschildert wurde noch nicht; jenseits der Kastanienallee wurde auch schon zur Hälfte markiert
-#: last_checked: 2022-07-14
-#: check_frequency: 14d
-#: next_check: 2022-09-30
-Oderberger Str.: Fahrradstraße wird realisiert	?::inwork 10372,14994 10379,14963 10401,14963 10723,14772 10864,14692 10893,14705
+# REMOVED --- #: by: http://www.infravelo.de/projekt/oderberger-strasse/ (4. Quartal 2021 - 2. Quartal 2022) (mittlerweile "in Bau") (mittlerweile 1. Quartal 2022 - 2. Quartal 2022) (mittlerweile 2. Quartal 2022 - 3. Quartal 2022) --- #: osm_watch: way id="41828679" version="25" --- #: osm_watch: way id="42156202" version="22" --- #: XXX laut osm im südöstlichen Teil realisiert --- allerdings ist nur die Straßenmarkierung (Linienstraßen-Style) fertig, aber ausgeschildert wurde noch nicht; jenseits der Kastanienallee wurde auch schon zur Hälfte markiert --- #: last_checked: 2022-07-14 --- #: check_frequency: 14d --- #: next_check: 2022-09-30 --- Oderberger Str.: Fahrradstraße wird realisiert	?::inwork 10372,14994 10379,14963 10401,14963 10723,14772 10864,14692 10893,14705
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (Frühjahr 2019)
 #: by: Tsp vom 2020-03-07 (beidseitige Radstreifen zwischen Eberswalder und Stargarder, vielleicht sogar bis Wichertstr., noch 2020)
@@ -5285,7 +5280,7 @@ Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="16"
 #: also_indoor: traffic
-#: last_checked: 2022-07-04 (indoor)
+#: last_checked: 2022-08-02
 #: check_frequency: 30d
 # REMOVED (outdoor) --- #: check_frequency: 60d
 Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
@@ -5656,7 +5651,7 @@ Conrad-Blenkle-Str.: südlich der Rudi-Arndt-Str. soll ein Zebrastreifen entstehe
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2022-07-29
+#: last_checked: 2022-08-02
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -6751,7 +6746,7 @@ Alt-Karow/Bucher Chaussee/Hofzeichendamm/Schönerlinder Weg: "Fußgängerschutzweg"
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10213 (Antrag)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10228 (Anfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10239 (Antrag)
-#: last_checked: 2022-07-29
+#: last_checked: 2022-08-02
 #: check_frequency: 360d
 Oranienstr.: Verkehrsberuhigung geplant	?::projected 10906,10874 10965,10851 11049,10816 11159,10769 11220,10744 11275,10723 11463,10642 11690,10543 11721,10530 11754,10516 11949,10414
 # 
@@ -8763,6 +8758,7 @@ Regionalbahnhof Köpenick	?::projected 22530,6100
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8444
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036735435885/735435885/00403510/10-Anlagen/02/Anlage1zurBA-Vorlage_7-95_bebauungsplanentwurf.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8450 (Antrag)
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2022/pressemitteilung.1232066.php (FNP-Änderung)
 #: XXX überwiegend Fuß- und Radwege sowie verkehrsberuhigte Bereiche geplant
 #: last_checked: 2022-05-01
 #: next_check: 2024-05-01
