@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2016,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016,2018,2019,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -342,7 +342,12 @@ sub show_diff {
 		my $old_string = $last_version->serialize(1);
 		my $new_string = $this_version->serialize(1);
 		my $diff = Text::Diff::diff(\$old_string, \$new_string);
-		warn $diff, "\n", ("="x70), "\n";
+		warn $diff, "\n";
+		my($changeset) = $this_version->findvalue('./@changeset');
+		if ($changeset) {
+		    warn "Changeset URL: $osm_url/changeset/$changeset\n";
+		}
+		warn "="x70, "\n";
 	    }
 	}
     }
