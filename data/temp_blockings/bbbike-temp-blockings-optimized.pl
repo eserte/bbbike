@@ -4062,11 +4062,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="30"
+#: osm_watch: way id="8655276" version="31"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-07-16
+#: last_checked: 2022-08-02 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -5474,12 +5474,12 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: last_checked: 2022-07-12 (mapillary) vvv
+#: last_checked: 2022-08-03 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
 #: osm_watch: way id="4395450" version="27"
 	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="11"
+#: osm_watch: way id="505363417" version="12"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5671,14 +5671,15 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: source_id: viz2021:13.47859,52.47157,11.04.2022,09:00 (zusätzlicher Eintrag, bis 1.8.2022) (mittlerweile inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
+#: note: Baustelle existiert weiterhin, trotz der entfernten VIZ-Meldung
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
-#: last_checked: 2022-07-06 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2022-08-02 vvv
+#: last_checked: 2022-08-03 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2022-08-02 vvv
 	q4::inwork; 15560,7400 15693,7512
 #: note: teilweise ragt die Baustellenabsperrung in den Radweg Richtung Kiefholzstraße rein
 	q3::inwork; 15693,7512 15560,7400
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -5727,7 +5728,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G(falsch))
-#: last_checked: 2022-07-06
+#: last_checked: 2022-08-03
 	q4::inwork; 15436,7031 15555,7133 15695,7254
 ',
          'from' => undef,
@@ -6108,6 +6109,33 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'text' => 'Platz der Luftbrücke: Wasserrohrbruch, Fahrbahn und Gehweg Richtung Osten gesperrt, Umweg über Wege in der Parkfläche, bis 9.8.2022',
          'type' => 'handicap',
          'until' => 1660082400
+       },
+       {
+         'data' => '#: next_check_id: WALLENSTEIN-2022
+Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
+Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
+Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
+',
+         'from' => 1659546069,
+         'id' => 3597,
+         'source_id' => 'viz2021:13.516327,52.486802,02.08.2022,07:00',
+         'text' => 'Walllensteinstr.: Bauarbeiten zwischen Ilsestr. und Sangeallee, Fahrbahn gesperrt, bis 16.12.2022 ',
+         'type' => 'handicap',
+         'until' => 1671231600
+       },
+       {
+         'data' => '#: by: https://partner-fuer-spandau.de/veranstaltungen/spandauer-sommerklassiker-das-spandauer-havelfest/263
+	2::temp -2918,14496 -2964,14478 -3026,14358 -3054,14305 -3091,14220 -3135,14183 -3275,14114
+	2::temp -3054,14305 -3019,14286
+	2::temp -2964,14478 -2939,14433 -3019,14286 -3042,14255 -3059,14230 -3090,14198 -3153,14141 -3187,14116 -3291,14043 -3306,14035 -3345,13994
+	2::temp -3042,14255 -3091,14220
+',
+         'from' => 1660168800,
+         'id' => 3598,
+         'source_id' => 'https://berliner-abendblatt.de/2022/08/03/spandauer-havelfest-nach-zwei-jahren-pause-zurueck/',
+         'text' => 'Lindenufer und Havelpromenade: Veranstaltung (Havelfest), Straßen und Wege können gesperrt sein, 12. bis 14. August 2022',
+         'type' => 'gesperrt',
+         'until' => 1660514399
        }
      
 );

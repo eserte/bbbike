@@ -738,7 +738,7 @@ Virchowstr.	N 12979,13280 12974,13289 12925,13373 12876,13440
 Virchowstr.	NN 12876,13440 12826,13526 12802,13584 12784,13610 12766,13621 12743,13634 12709,13691 12707,13706
 Virchowstr.	N 12707,13706 12640,13814
 Langenbeckstr. (Friedrichshain)	N 13151,13367 13081,13457
-(Straßenbahnwendestelle)	N 12925,13373 13081,13457
+(Straßenbahnwendeschleife)	N 12925,13373 13081,13457
 Kolonnenstr.	H 8209,8773 8145,8773 8078,8772 8014,8771 8008,8771 7795,8765 7709,8777 7642,8815 7563,8871 7548,8879 7497,8916 7360,8918 7315,8941 7307,8945 7268,8960
 # REMOVED --- #: next_check_id: KAISERWILHELMPLATZ-2022 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7886 (Antrag) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_29_2481_2536_online.pdf (Umbenennung) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_45_4009_4092_online.pdf (Widerspruch) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1186684.php (am 24.3.2022) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_11_0657_0712_online.pdf (Umbenennung eines Platzes) --- #: by: https://berliner-abendblatt.de/2022/03/21/kaiser-wilhelm-platz-wird-umbenannt/ --- #: XXX wird am 18.10.2021 zum Richard-von-Weizsäcker-Platz umbenannt --- verzögert sich wegen Widerspruchs --- #: also_indoor: search Richard-von-Weizsäcker-Platz --- #: priority: #A --- #: last_checked: 2022-03-08 (indoor) --- # REMOVED --- #: check_frequency: 14d --- #: next_check: 2022-03-24
 #: oldname: -20220324: Kaiser-Wilhelm-Platz
@@ -5897,7 +5897,7 @@ Sterndamm	H 17648,5338 17705,5223
 # REMOVED (nun als Gehweg dauerhaft markiert) --- #: next_check_id: STERNDAMM-2020 --- #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2 --- #: confirmed_by: srt --- #: XXX provisorische Verbindung, asphaltiert --- #: last_checked: 2021-10-02 --- #: check_frequency: 30d --- #: next_check: 2021-10-31
 Sterndamm [Gehweg zur Nebenfahrbahn]	NN 17648,5338 17697,5347
 Sterndamm [Nebenfahrbahn]	N 17697,5347 17762,5408
-(Bushaltestelle und Straßenbahnwendestelle Schöneweide)	NN 17736,5441 17675,5521 17588,5573 17578,5566
+(Bushaltestelle und Straßenbahnwendeschleife Schöneweide)	NN 17736,5441 17675,5521 17588,5573 17578,5566
 Cajamarcaplatz	NN 17728,5756 17713,5728 17730,5698 17782,5698
 (Fußgängertunnel S-Bhf. Schöneweide)	NN 17730,5698 17639,5612
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle)	NN 17639,5612 17675,5521
@@ -6180,6 +6180,7 @@ Dolgenseestr.	N 17026,10199 17018,10122 17035,10079 17078,10038 17288,9952
 #: osm.highway: service
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]	N 17523,9882 17412,9911
 (Dolgenseestr., Fußgängerzone)	NN 17457,10083 17412,9911 17384,9807
+(Dolgenseestr., Erschließungsweg)	NN 17288,9952 17412,9911
 Am Tierpark	H 18215,11690 18216,11656 18263,11393 18280,11266 18327,11105 18343,11041 18417,10738 18446,10620 18554,10354 18585,10278 18631,10167 18694,10018
 Am Tierpark [zur Nebenfahrbahn]	N 18263,11393 18304,11407
 Am Tierpark [Nebenfahrbahn]	N 18304,11407 18272,11552 18264,11596 18285,11637
@@ -8730,7 +8731,7 @@ Brandorfer Weg	N 20536,11022 20524,11016 20365,11025
 (Wilhelmsbrücker Str. - Am Biesdorfer Baggersee)	NN 20369,11174 20362,11166
 Gladauer Weg	N 20354,11500 20346,11337 20342,11250 20369,11174
 Baggerseestr.	N 20281,11341 20346,11337 20413,11334
-Chemnitzer Str.	H 21954,8941 21982,9017 22027,9131 22031,9142 22074,9273 22090,9380 22103,9465 22116,9585 22129,9702 22147,9841 22162,9960 22169,10018 22189,10183 22212,10276 22253,10412 22257,10428 22327,10685 22393,10896 22436,11054 22483,11261
+Chemnitzer Str.	H 21954,8941 21982,9017 22027,9131 22031,9142 22074,9273 22090,9380 22103,9465 22116,9585 22129,9702 22147,9841 22162,9960 22169,10018 22177,10082 22189,10183 22212,10276 22253,10412 22257,10428 22327,10685 22393,10896 22436,11054 22483,11261
 Gerdastr.	N 22162,9960 22233,9948 22338,9907 22387,9873
 Wernitzer Str.	N 22253,10412 22365,10386 22469,10362 22519,10339 22574,10300 22687,10210
 #: note: laut luise-berlin und Stephan Schmauder führt die Straße tatsächlich nur bis zur Lassaner Str.
@@ -11286,7 +11287,7 @@ Honsfelder Str.	N 21935,10318 21830,10342 21717,10371 21654,10390
 Lenbachstr. (Kaulsdorf)	N 22327,10685 22251,10700 21979,10686 21938,10664 21809,10493 21717,10371 21683,10291 21679,10186 21718,10013
 Holbeinstr. (Kaulsdorf)	N 21868,10202 21830,10342 21892,10437
 Elsenborner Weg	N 21897,9972 21939,10179
-Adolf-Menzel-Str.	N 21988,9766 22013,9919 22026,10016 22077,10080 22096,10090
+Adolf-Menzel-Str.	N 21988,9766 22013,9919 22026,10016 22077,10080 22096,10090 22110,10090 22177,10082
 Adolf-Menzel-Str.	N 22077,10080 22022,10102 22032,10150 22047,10202 22051,10218 22125,10451
 Mieltschiner Str.	N 22862,9886 22729,9932 22604,9988 22535,10023 22408,10102 22308,10149 22189,10183 22051,10218
 (Fortsetzung der Mieltschiner Str.)	N 22047,10202 22001,10216
@@ -15500,7 +15501,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2022-07-22
+#: last_checked: 2022-08-03
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)

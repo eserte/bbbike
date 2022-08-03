@@ -1283,7 +1283,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://twitter.com/VIZ_Berlin/status/1432299752406888449 (Grundsanierung ab 2022)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
-#: osm_watch: way id="203884042" version="18"
+#: osm_watch: way id="203884042" version="19"
 #: last_checked: 2022-08-02
 #: check_frequency: 120d
 #: next_check: 2022-12-31
@@ -1296,7 +1296,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="4615746" version="31"
+#: osm_watch: way id="4615746" version="33"
 #: source_id: 2147346157 (bis 19.10.2020)
 #: last_checked: 2022-08-02
 #: check_frequency: 120d
@@ -1814,7 +1814,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2022-07-24
+#: last_checked: 2022-08-03
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2453,7 +2453,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-08-01 vvv
+#: last_checked: 2022-08-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4111,7 +4111,7 @@ Gehweg für Radfahrer frei	RW1;RW1 24624,11374 24583,11537 24591,11587 24623,1168
 Gehweg für Radfahrer frei	RW1; 24563,11980 24556,12056 24554,12100 24556,12181
 	RW1;RW1 21982,9017 22027,9131 22031,9142 22074,9273 22090,9380
 	RW1;RW0 22090,9380 22103,9465
-	RW1;RW0 22103,9465 22116,9585 22129,9702 22147,9841 22162,9960 22169,10018 22189,10183
+	RW1;RW0 22103,9465 22116,9585 22129,9702 22147,9841 22162,9960 22169,10018 22177,10082 22189,10183
 #: note: Nebenstraße ist verkehrsberuhigter Bereich, etwas rauer Asphalt
 	RW1;RW10 22189,10183 22212,10276
 	RW1;RW0 22212,10276 22253,10412 22257,10428
@@ -4258,7 +4258,7 @@ betoniert, außerdem existiert eine asphaltierte Nebenfahrbahn	RW1; 22388,12190 2
 	RW1;RW3 13026,14234 13057,14267
 	RW4;RW4 16122,6084 16169,6064 16510,5917 16868,5938
 	RW2; 16868,5938 17056,6133 17160,6239
-gemeinsamer Geh- und Radweg	RW2; 17160,6239 17056,6133 16868,5938
+gemeinsamer Geh- und Radweg	RW1; 17160,6239 17056,6133 16868,5938
 	RW2;RW2 17160,6239 17231,6179 17293,6230
 	RW4;RW2 9873,18364 9905,18329
 	RW4; 9873,18364 9888,18445 9897,18496

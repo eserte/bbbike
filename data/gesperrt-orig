@@ -758,7 +758,7 @@ Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
 #: by: anonymous and osm
 Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
-Straßenbahnwendestelle Virchowstr.	1 13081,13457 12925,13373
+Straßenbahnwendeschleife Virchowstr.	1 13081,13457 12925,13373
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 Potsdamer Chaussee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
 B179n: benutzungspflichtiger Radweg existiert	2::igndisp 24383,-12050 24368,-11972 24320,-11722 24353,-11553 24361,-11236
@@ -1217,7 +1217,7 @@ Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 Schillerhof	1 7069,17204 6928,17154
 Bahnhofstr.	1 12166,21208 12202,21158
 Bahnhofstr.	1 12202,21158 12158,21166
-# REMOVED (aber man kann durch) --- (Bushaltestelle und Straßenbahnwendestelle Schöneweide): Betriebsgelände	2 17675,5521 17588,5573 17578,5566
+# REMOVED (aber man kann durch) --- (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): Betriebsgelände	2 17675,5521 17588,5573 17578,5566
 Allee der Kosmonauten	1 20172,14141 20111,14140 20096,14127
 Augustaplatz	1 3936,4014 3955,4039 3986,4051 4015,4053 4034,4033 4045,4005 4042,3982 4025,3958 4000,3950 3971,3950 3946,3967 3937,3993 3936,4014
 Paul-Koenig-Str.	1 17268,16526 17312,16498 17304,16485 17293,16469 17251,16497 17268,16526
@@ -3657,7 +3657,7 @@ Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 #: XXX bleibt die Absperrung dauerhaft?
 #: osm_watch: way id="830757933" version="1"
 #: osm_watch: way id="610818155" version="4"
-#: last_checked: 2022-06-28
+#: last_checked: 2022-08-03
 #: check_frequency: 60d
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 # 
@@ -3791,7 +3791,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-07-04
+#: last_checked: 2022-08-03
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -4464,9 +4464,9 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: next_check_id: S21-2018
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: osm_watch: way id="186329816" version="22"
+#: osm_watch: way id="186329816" version="23"
 #: also_indoor: traffic
-#: last_checked: 2022-07-09 (osm)
+#: last_checked: 2022-08-02 (osm)
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419

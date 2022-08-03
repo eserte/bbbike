@@ -541,7 +541,7 @@ Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwor
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
 #: osm_watch: way id="40451054" version="13"
-#: last_checked: 2022-07-12
+#: last_checked: 2022-08-03
 #: next_check: 2022-08-05
 # REMOVED --- #: valid: -20220401
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
@@ -2789,8 +2789,8 @@ Eyke-von-Repkow-Platz: einige Fußgänger, Bordsteine	q3 5556,12536 5531,12501
 (Kolonie Sanssouci): einige Fußgänger	q1 16488,10381 16375,10545 16288,10637 16265,10628 16246,10641
 (Kolonie Sanssouci): einige Fußgänger	q1 16288,10637 16265,10681
 Müggelstr., Hausdurchfahrt: einige Fußgänger	q3 14837,11706 14858,11744
-(Straßenbahnwendestelle Schöneweide): Straßenbahnverkehr	q3 17736,5441 17675,5521
-(Straßenbahnwendestelle Schöneweide): Straßenbahnverkehr, Gehweg, Bordsteine	q4 17675,5521 17588,5573 17578,5566
+(Straßenbahnwendeschleife Schöneweide): Straßenbahnverkehr	q3 17736,5441 17675,5521
+(Straßenbahnwendeschleife Schöneweide): Straßenbahnverkehr, Gehweg, Bordsteine	q4 17675,5521 17588,5573 17578,5566
 (Fröbel-Kindergarten - Oststr.): Fußgänger, Kindergarten	q3 17416,5388 17455,5355
 #: XXX_prog: BS (2x)
 (Schönburger Str. - Bosestr./Blumenthalstr.): Radfahren verboten, Bordsteine an beiden Enden	q4 8953,6492 8930,6295
@@ -4183,6 +4183,8 @@ Fenchelweg: enge Straße	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,360
 #: confirmed_by: srt
 Fennpfuhlweg: vier Bodenschwellen	q0- 17750,19181 17697,18989
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]: etwas Parkplatzverkehr	q1 17523,9882 17412,9911
+#: note: unklar, ob das hier zur für Radfahrer freigegebenen Fußgängerzone gehört
+(Dolgenseestr., Erschließungsweg): einige Fußgänger	q2 17288,9952 17412,9911
 # 
 ######################### User Contributions #################################
 # 
