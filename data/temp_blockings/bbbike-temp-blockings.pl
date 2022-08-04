@@ -35835,4 +35835,19 @@ EOF
 	2::temp -3042,14255 -3091,14220
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Waldbrand im Grunewald: Kronprinzessinenweg und Wege rund um den Sprengplatz sind gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2022-08-04 (research) vvv
+#: check_frequency: 1d vvv
+	2::temp -1328,7597 -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888 -2218,5133
+	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790 -2825,5588
+	2::temp -1851,6887 -1925,6790
+	2::temp -2668,6862 -2632,6789 -2638,6641
+#: check_frequency ^^^
+#: last_checked ^^^
+EOF
+     },
     );
