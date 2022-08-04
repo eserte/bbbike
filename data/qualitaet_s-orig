@@ -3167,8 +3167,8 @@ Mosbacher Str.: teilweise nur m‰ﬂiger Beton	Q1 22221,10985 22240,10980 22257,109
 Mosbacher Str.: Beton	Q0- 22393,10896 22490,10868 22584,10843
 Mosbacher Str.: m‰ﬂiger Beton und Verbundsteinpflaster	Q1- 22581,10834 22692,10800
 Mosbacher Str.: Asphalt	Q0 22692,10800 22785,10781 22876,10760
-Reetzer Weg: Beton	Q0- 22634,11024 22584,10843 22581,10834 22519,10639
-Kˆnigsh¸tter Weg: Beton	Q0- 22635,10625 22692,10800 22755,11013
+Reetzer Weg: Beton	Q0- 22634,11024 22612,10943 22594,10878 22584,10843 22581,10834 22519,10639
+Kˆnigsh¸tter Weg: Beton	Q0- 22635,10625 22692,10800 22706,10846 22725,10911 22755,11013
 (Wuhlewanderweg - Griesinger): wassergebundene Decke	Q1 21888,12320 21816,12233
 Wuhlewanderweg: wassergebundene Decke	Q1 22166,10839 22103,10814
 Wuhlewanderweg: unbefestigter Weg	Q2 22103,10814 22059,10782
@@ -7243,7 +7243,9 @@ Uferweg: Waldweg	Q1- -997,18069 -984,18136 -934,18284 -930,18337
 (Uferweg Eiswerder): Asphalt, einige Sch‰den	Q0- -2023,15683 -2075,15664 -2117,15638 -2154,15576 -2175,15504 -2303,15436 -2431,15436 -2456,15463 -2468,15468 -2454,15472 -2453,15476
 Menzelstr.: Beton	Q0 25149,12266 25318,12294
 Menzelstr.: Asphalt	Q0 25318,12294 25578,12336
-Ridbacher Str.: leicht welliger Asphalt	Q0- 24530,12296 24434,12402 24354,12510
+Ridbacher Str.: leicht welliger Asphalt	Q0- 24530,12296 24434,12402
+#: corrected_by: mapillary (leicht welliger Asphalt, Q0- -> ..., neu gemacht)
+Ridbacher Str.: Asphalt	Q0 24434,12402 24354,12510
 Ridbacher Str.: leicht welliger Asphalt	Q1+ 24354,12510 24316,12566
 Ridbacher Str.: leicht welliger Asphalt	Q1+; 24316,12566 24230,12733
 #: note: hier nur abschnittsweise
@@ -12691,6 +12693,7 @@ Kletterrosenweg: Verbundsteinpflaster	Q1+ 21382,149 21344,300
 Alte Potsdamer Str.: Kleinsteinpflaster	Q1 8389,11378 8375,11368
 Straﬂenbahnwendeschleife Langenbeckstr.: Asphalti mit Rissen und Sch‰den	Q1+ 12925,13373 13081,13457
 (Dolgenseestr., Erschlieﬂungsweg): Beton, Betonpflaster	Q0- 17288,9952 17412,9911
+Singerstr.: Asphalt mit Querrissen	Q0- 11635,12398 11613,12408 11497,12463
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -30642,6 +30645,8 @@ Am Weingarten: Beton	Q1+ 13867,14507 13837,14563
 (KGA Freies Land, G-Weg): Gehwegplatten	Q1 12908,17807 12764,17725 12630,17636
 Adolf-Menzel-Str.: Gehwehplatten	Q1 22096,10090 22110,10090
 Adolf-Menzel-Str.: unbefestigte Straﬂe	Q2 22110,10090 22177,10082
+Reetzer Weg [3-17]: Beton	Q1 22612,10943 22725,10911
+Reetzer Weg [19-33]: Beton	Q1 22594,10878 22706,10846
 #: by ^^^
 # 
 #: by: kartaview vvv
