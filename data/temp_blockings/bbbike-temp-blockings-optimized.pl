@@ -6138,18 +6138,37 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
          'until' => 1660514399
        },
        {
-         'data' => '#: last_checked: 2022-08-04 (research) vvv
+         'accept_multi_feature_distance' => 3000,
+         'data' => '#: by: https://nitter.it/VIZ_Berlin/status/1555042445792092164#m
+#: last_checked: 2022-08-04 (research) vvv
 #: check_frequency: 1d vvv
 	2::temp -1328,7597 -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888 -2218,5133
 	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790 -2825,5588
 	2::temp -1851,6887 -1925,6790
 	2::temp -2668,6862 -2632,6789 -2638,6641
+# weitere Sperrungen im Grunewald moeglich (Havelchaussee, Koenigsallee, Huettenweg)
+	2::temp -150,6168 -138,6681 -739,6838
+	2::temp -138,6681 674,7758
+	2::temp -3412,9755 -3178,9953
+	2::temp -1588,9194 -1484,9175
+	2::temp -1336,9001 -1435,9168 -1487,9271
+	2::temp 40,5606 -119,5885 -182,5927 -288,6101
+	2::temp -3093,5223 -3605,4536 -3729,4687
+	2::temp -360,9193 -310,8989
+	2::temp -1602,9915 -1860,10317
+	2::temp -3426,9684 -3347,9541
+	2::temp 100,8339 425,8766
+	2::temp -2112,5050 -1424,4504
+	2::temp -3490,4212 -3296,3686 -2218,5133
+	2::temp -2774,10345 -3025,10116
+	2::temp -3962,5129 -3889,4967
+	2::temp -643,7252 -913,6905
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3599,
-         'text' => 'Waldbrand im Grunewald: Kronprinzessinenweg und Wege rund um den Sprengplatz sind gesperrt',
+         'text' => 'Waldbrand im Grunewald: Kronprinzessinenweg, Wege rund um den Sprengplatz und vermutlich auch weitere Straßen (Havelchaussee, Hüttenweg...) sind gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        }
