@@ -75,7 +75,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
-#: last_checked: 2022-08-02
+#: last_checked: 2022-08-05
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -1267,7 +1267,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Erwähnung, hier: Buschallee bis Malchower Weg, geschützter Radfahrstreifen, kein Datum, vielleicht noch 2021?)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
-#: osm_watch: way id="111283481" version="14"
+#: osm_watch: way id="111283481" version="15"
 #: source_id: 2147344555 (bis Ende August 2019, Gleisbauarbeiten, inaktiv)
 #: last_checked: 2022-07-30
 #: check_frequency: 360d
@@ -1871,7 +1871,7 @@ Marienpark: Straße geplant	?::projected 8181,3668 8116,3754
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: osm_watch: way id="110450333" version="15"
 #: source_id: 2147343384
-#: last_checked: 2022-07-24
+#: last_checked: 2022-08-05
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13892,9365 13849,9310
 # 
@@ -2659,7 +2659,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12150,8764 123
 #: source_id: viz2021:13.435258,52.480947,05.07.2021,10:00 (Bauarbeiten in Höhe Erkstr. bis Anfang 10/2021) (mittlerweile nur noch bis 14.7.2021) (inaktiv)
 #: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022) (bis 1.9.2022)
 #: source_id: viz2021:13.435262,52.480879,05.07.2021,10:00 (bis 5.11.2021) (inaktiv)
-#: last_checked: 2022-07-19
+#: last_checked: 2022-08-05
 #: check_frequency: 180d
 #: next_check: 2022-09-01
 # REMOVED (hier realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390
@@ -2787,7 +2787,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: osm_watch: way id="544599538" version="15"
 #: osm_watch: way id="860638027" version="8"
 #: XXX Stand 2021-12-25: zwischen Jonasstr. und Emser Str. in beiden Richtungen Radspuren, Grünbeschichtung nur in Richtung Norden
-#: last_checked: 2022-07-06
+#: last_checked: 2022-08-05
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-10-18
 # REMOVED (hier nicht) --- Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::projected 12588,6337 12576,6374 12553,6423 12510,6508
@@ -2817,8 +2817,8 @@ Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/neuer-abschnitt-fahrradstrasse_a341213 (bis Sommer 2022 bis zur Fuldastraße, im Herbst 2022 startet der nächste Abschnitt bis Innstraße)
 #: by: https://berliner-abendblatt.de/2022/04/06/weserstrasse-fahrradstrasse-wird-verlaengert/
 #: by: https://twitter.com/papapreuss/status/1542275896798679040 (Planung des 2. Bauabschnitts Fuldastr.-Innstr. kann nun starten (Ende Juni 2022))
-#: last_checked: 2022-07-24
-#: check_frequency: 21d
+#: last_checked: 2022-08-05
+#: check_frequency: 14d
 #: next_check: 2022-09-15
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
@@ -2948,7 +2948,7 @@ Ackerhummelweg: geplante Straße, genaue Lage, Qualität?	?::projected 20852,18629
 #: last_checked: 2022-07-24 (mapillary) (sieht fertig aus, mit Anbindung an den Park)
 # REMOVED --- #: check_frequency: 180d
 # REMOVED --- #: next_check: 2022-09-01
-#: next_check: 2022-07-24
+#: next_check: 2022-07-25
 Kletterrosenweg	? 21382,149 21344,300
 # 
 #: next_check_id: BUSCHWINDROESCHENWEG-2019
@@ -3817,15 +3817,16 @@ Wriezener Park: Umbauarbeiten geplant, evtl. werden Wege zwischenzeitlich gesper
 # REMOVED (Sperrung kurz vor der Budapester Str.; Führung für Radfahrer existiert) --- #: XXX Kantstraße (Charlottenburg) Richtung Budapester Straße zwischen Joahimsthaler Straße und Budapesester Straße: Fernwärmebauarbeiten, Fahrtrichtung gesperrt, vom 06.05.2021 09:00 Uhr bis 29.10.2021 17:00 Uhr --- #: source_id: 2147347169 --- Kantstr.: sind Radfahrer von der Sperrung betroffen?	?; 5488,10978 5613,10963 5652,11004
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6847
-#: XXX ursprünglicher Vorschlag "Dagobert-Wiesmüller-Platz"
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_31_2069_2132_online.pdf (Benennung, Widerspruch ist noch möglich)
+#: XXX zwischenzeitlich gab es auch den Vorschlag "Wiesmüller-Platz"
 #: also_indoor: search Dagobert-Wiesmüller-Platz
 #: osm_watch: way id="25468896" version="7"
 #: osm_watch: way id="35218633" version="14"
 #: osm_watch: way id="610258191" version="1"
-#: last_checked: 2022-08-02 (indoor)
+#: last_checked: 2022-08-05 (indoor)
 # REMOVED --- #: check_frequency: 180d
 #: check_frequency: 30d
-Bahnhofsvorplatz am S-Bahnhof Wilhelmshagen: mögliche Benennung zu "Wiesmüller-Platz"	? 32097,4070 32143,4082 32127,4035
+Bahnhofsvorplatz am S-Bahnhof Wilhelmshagen: Benennung zu "Dagobert-Wiesmüller-Platz"	? 32097,4070 32143,4082 32127,4035
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5828
 #: last_checked: 2021-12-25 (mapillary)
@@ -4971,7 +4972,7 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102,12790 9135,12779
 #: last_checked: 2022-07-31
 Friedenstr./Koppenstr.: Zebrastreifen geplant	?::projected 12658,12755 12690,12769 12687,12809
-#: last_checked: 2022-07-19
+#: last_checked: 2022-08-05
 Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,9899 12556,9862 12565,9825
 #: last_checked: 2022-07-22 (mapillary)
 Roelckestr./Streustr.: Zebrastreifen geplant	?::projected 12882,16165 12890,16121 12906,16074
@@ -5228,7 +5229,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
-#: osm_watch: way id="295627704" version="14"
+#: osm_watch: way id="295627704" version="15"
 #: last_checked: 2022-07-08
 #: check_frequency: 90d
 # REMOVED (hier ist nichts) --- #: next_check: 2021-03-01
@@ -6869,6 +6870,11 @@ Nestorstr.: Leitungsarbeiten geplant, wird es eine Einbahnstraßenregelung geben?
 #: next_check: 2022-09-01
 Herkulesufer: Widmung als Grünanlage geplant	? 7595,11086 7575,11076 7252,11188 7218,11181 7140,11156 7142,11145 6920,11064 6882,11061
 # 
+#: next_check_id: GRENZALLEE-2014
+#: last_checked: 2022-08-05
+#: check_frequency: 90d
+Grenzallee: Fußgängerampel in Bau	?::inwork 14045,6738 14040,6726 14035,6715
+# 
 #: ignore ^^^
 # 
 ######################################################################
@@ -7099,7 +7105,7 @@ Verbindung zwischen Beilsteiner Str. und Pyramidenring: genaue Lage, Qualität, S
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.442576.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/downloads/xxi-24_b-planentwurf_blatt_1.pdf
-#: osm_watch: way id="294559915" version="3"
+#: osm_watch: way id="294559915" version="4"
 #: last_checked: 2022-05-21
 #: check_frequency: 720d
 Planstraße am Pyramidenring: eine Straße existiert hier bereits, ändert sich durch den Bebauungsplan etwas?	?::projected 18889,14403 18666,14350 18710,14212
@@ -7507,7 +7513,7 @@ Parkanlage: genaue Lage? Wird es hier Wege geben?	?::projected 17454,8747 17468,
 #: by: https://portal1917.webcam-profi.de/ (Webcam)
 #: XXX außerdem: bleibt der nach Süden verlaufende Abzweig der Plauener Str. erhalten?
 #: osm_watch: way id="914159830" version="4"
-#: last_checked: 2022-03-11 (webcam)
+#: last_checked: 2022-08-04 (mapillary)
 #: check_frequency: 180d
 Plauener Str.: Verbindungsstück wird gebaut	?::projected 17531,14923 17638,14951
 # 
@@ -7541,6 +7547,7 @@ Daumstr.: abzweigende Wohngebietsstraße wird entstehen	?::projected -1706,15794 
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/5-98/download/Bebauungsplan-5-98-frueh-SenSw.pdf (es wird ein 3m breiter Weg zwischen Daumstr. und Rhenaniastr. geplant; außerdem eine Grünanlage in der Mitte des Gebiets)
 #: by: https://abendblatt-berlin.de/2021/02/26/berlin-spandau-planung-fuer-wohnungen-an-rhenaniastrasse-wird-beschleunigt/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_53_4881_4960_online.pdf (Erweiterung des Geltungsbereiches des Bebauungsplans)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_31_2069_2132_online.pdf (Auslegung eines Bebauungsplanentwurfs)
 #: last_checked: 2022-04-23
 #: next_check: 2023-06-01
 "Waterkant": entstehen hier für Radfahrer nutzbare Wege?	?::projected -1762,15925 -1552,16043 -1493,16135

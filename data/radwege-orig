@@ -284,12 +284,12 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-08-02 (Markierungsarbeiten)
+#: last_checked: 2022-08-05 (Ausschilderung fehlt noch)
 #: check_frequency: 7d
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
-provisorischer gemeinsamer Rad- und Gehweg	RW2; 13596,10722 13678,10685 13779,10642 13919,10583
+erste und letzte Meter werden auf dem Bürgersteig geführt	RW3; 13596,10722 13678,10685 13779,10642 13919,10583
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-08-01
+#: last_checked: 2022-08-05
 #: check_frequency: 90d
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489
 provisorische Radspur	RW4; 13919,10583 13986,10549 14103,10489
@@ -298,7 +298,7 @@ gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14218,10430 14405,10
 	RW2; 13986,10549 13919,10583 13779,10642 13678,10685 13596,10722
 	RW4; 14103,10489 13986,10549
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-07-26
+#: last_checked: 2022-08-05
 #: check_frequency: 90d
 # früher: das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14218,10430 14103,10489
 Gehweg für Radfahrer frei	RW1; 14218,10430 14103,10489
@@ -1009,6 +1009,8 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1184505.php
 #: by: https://nitter.net/pic/media%2FFS9kp1MXwAIeuCh.jpg%3Fname%3Dorig (wird die Radspur wieder aktiviert?)
 #: by: https://viz.berlin.de/2022/08/elsenbruecke-sperrung/
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1233193.php
+#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlpZcEdWUVdJQUFsdDFELmpwZw==
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
@@ -1021,9 +1023,11 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.463301,52.496054,24.05.2022,15:00 (bis 2028) (inaktiv)
 #: source_id: viz2021:13.463301,52.496054,18.05.2022,12:00 (bis 2028)
 #: source_id: viz2021:13.46264,52.49544,18.05.2022,16:23 (bis 2028) (inaktiv)
+#: source_id: viz2021:13.462563,52.495479,06.08.2022,06:00 (Umbauarbeiten am 6.8.2022)
+#: source_id: viz2021:13.46294,52.495795,06.08.2022,20:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
-#: last_checked: 2022-08-01 vvv
+#: last_checked: 2022-08-05 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-08-07 vvv
 # REMOVED --- #: next_check: 2028-01-01 vvv
@@ -1387,6 +1391,10 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 	RW1; 14617,7243 14530,7301
 	RW1;RW2 14617,7243 14344,7003
 # 
+# REMOVED --- #: osm_watch: way id="679376891" version="11"
+	RW2;RW1 14239,6875 14153,6795 14139,6786
+# REMOVED --- #: osm_watch: way id="693065560" version="14"
+	RW1;RW1 14344,7003 14257,6895 14239,6875
 #: next_check_id: GRENZALLEE-2014 vvv
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1021149.php (Verkehrsumstellung auf der Grenzallee, evtl. am 25.11.2020; außerdem wird die Bergiusstr. für den Kfz-Verkehr gesperrt (und später sowieso verlegt))
 #: source_id: 2147343690
@@ -1394,17 +1402,12 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2022-07-06 vvv
+#: last_checked: 2022-08-05 vvv
 #: check_frequency: 30d vvv
 #	RW1;RW2 14051,6731 14139,6786 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
-#: note: von der Bergiusstr. aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
-#: osm_watch: way id="693065560" version="14"
-	RW1;RW1 14344,7003 14257,6895 14239,6875
-#: osm_watch: way id="679376891" version="11"
-	RW2;RW1 14239,6875 14153,6795 14139,6786
-	RW2;RW8 14139,6786 14051,6731
-	RW2;RW8 14051,6731 13979,6700
+#: note: von der Fußgängerampel aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
+	RW2;RW8 14139,6786 14051,6731 14040,6726 13979,6700
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1719,7 +1722,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: by: https://molkenmarkt01.hi-res-cam.com/ (webcam)
 #: XXX temporäre Radwegführung
-#: last_checked: 2022-07-07 (webcam)
+#: last_checked: 2022-08-05 (webcam)
 #: check_frequency: 30d
 temporäre Führung als Bürgersteigradweg	RW1; 10887,12570 10954,12635
 # wieder herstellen:	RW4; 10887,12570 10954,12635
@@ -1816,7 +1819,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2022-08-03
+#: last_checked: 2022-08-05
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -3674,7 +3677,7 @@ Gehweg für Radfahrer frei	RW1; 23099,2031 23185,1649 23214,1522
 Gehweg für Radfahrer frei	RW1; 23243,1398 23214,1522 23185,1649 23099,2031
 # 
 #: note: Hermannstr./Britzer Damm Richtung Süden
-Verbundsteinpflaster mit Schäden	RW1; 12510,6508 12553,6423
+Verbundsteinpflaster mit erheblichen Schäden	RW1; 12510,6508 12553,6423
 Verbundsteinpflaster mit Schäden	RW2; 12553,6423 12576,6374 12588,6337
 Verbundsteinpflaster	RW2; 12588,6337 12595,6299 12597,6293
 Verbundsteinpflaster mit Schäden	RW1; 12597,6293 12618,6207 12628,6166 12644,6087 12699,5909
@@ -6384,7 +6387,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung geben
-#: last_checked: 2022-07-19 vvv
+#: last_checked: 2022-08-05 vvv
 #: check_frequency: 60d
 temporäre Radspur aufgehoben	RW0; 12639,8344 12598,8390
 Gelbmarkierung	RW3; 12598,8390 12639,8344
@@ -6392,7 +6395,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2022-07-24
+#: last_checked: 2022-08-05
 #: check_frequency: 60d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünbeschichtung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12916,7775
@@ -6427,11 +6430,11 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2022-07-24
+#: last_checked: 2022-08-05
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
-#: last_checked: 2022-07-19
+#: last_checked: 2022-08-05
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -7149,7 +7152,7 @@ asphaltiert	RW1; 25522,4935 25519,4830
 	RW4; 16485,25516 16414,25575
 #: next_check_id: KARLMARXSTR-2018
 #: XXX Zwischendurch eine provisorische Radspur, wurde bei der Baustellenumstellung Anfang Februar 2021 wieder entfernt
-#: last_checked: 2022-07-19
+#: last_checked: 2022-08-05
 # REMOVED --- #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-07-31
 # REMOVED --- provisorische Radspur, Gelbmarkierung, sehr breit	RW4; 12494,8501 12330,8636
@@ -7603,7 +7606,7 @@ Grünbeschichtung	RW4; 12395,6785 12375,6842
 Busspur ist immer gültig	RW5; 12375,6842 12362,6881 12347,6923
 #: next_check_id: HERMANN-2022
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2022-07-06
+#: last_checked: 2022-08-05
 Grünbeschichtung	RW3; 12347,6923 12342,6936
 Grünbeschichtung	RW4; 12342,6936 12317,7007 12304,7039 12291,7074 12259,7164 12244,7205 12221,7271
 #: note ^^^
@@ -7620,7 +7623,7 @@ provisorische Radspuren	RW4;RW4 12185,7381 12221,7271
 Bushaltestelle; die letzten 50 Meter als Radspur hinter parkenden Autos	RW5; 12342,6936 12347,6923 12362,6881 12375,6842 12395,6785
 #: next_check_id: HERMANN-2022
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2022-07-06
+#: last_checked: 2022-08-05
 Radspur hinter parkenden Autos	RW3; 12395,6785 12422,6715 12448,6646
 #: by: osm
 Bushaltestelle	RW5; 12448,6646 12470,6586
@@ -7628,7 +7631,7 @@ Bushaltestelle	RW5; 12448,6646 12470,6586
 #: by: osm
 #: confirmed_by: srt
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2022-07-24
+#: last_checked: 2022-08-05
 	RW3; 12470,6586 12510,6508
 # 
 # REMOVED (korrekt) --- #: XXX Geltungszeit überprüfen!

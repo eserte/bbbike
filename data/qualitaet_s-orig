@@ -80,8 +80,8 @@ Weserstr.: asphaltiert	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1192214.php
 Weserstr.: Asphalt	Q0 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 #: next_check_id: WESER-2021
-#: last_checked: 2022-07-19
-#: check_frequency: 21d
+#: last_checked: 2022-08-05
+#: check_frequency: 14d
 #: next_check: 2022-09-15
 Weserstr.: Asphalt, Kreuzungsanbindungen noch nicht fertig	Q1 12590,8977 12740,8862
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+ 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
@@ -855,13 +855,13 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2022-07-24
+#: last_checked: 2022-08-05
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
 Uwe-Lieschied-Str.: schlechtes Kopfsteinpflaster	Q3+ 12407,8177 12427,8109
 Falkstr.: Asphalt	Q0 12162,8053 12178,7985 12179,7979
-Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12186,7952 12216,7838 12220,7822
+Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12186,7952 12195,7916 12216,7838 12220,7822
 (Falkstr. - Mittelweg): Verbundsteinpflaster, einige Schäden	Q1- 12220,7822 12224,7799
 Schillerpromenade: Kopfsteinpflaster	Q2- 11661,8131 11689,8006
 Schillerpromenade: Kopfsteinpflaster	Q2 11713,7899 11738,7790 11763,7687 11785,7583 11803,7487
@@ -1054,7 +1054,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-08-03
+#: last_checked: 2022-08-05
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3833,7 +3833,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: XXX wird die Straße hier ausgebaut und asphaltiert?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124 (Anfrage von Juli 2017)
 #: by: https://politik-bei-uns.de/file/597985b41ae6a07d5fb74916 (Antwort: soll teilweise mit einem Asphaltstreifen befestigt werden, erster von drei Bauabschnitten 2018)
-#: osm_watch: way id="47159365" version="14"
+#: osm_watch: way id="47159365" version="15"
 #: last_checked: 2022-06-15
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
@@ -12620,7 +12620,7 @@ Birkbuschstr. - Wolfensteindamm: Asphalt	Q0 4822,5114 4810,5134 4794,5161
 (Neuköllnische Wiesen, Wiesenallee): Verbundsteinpflaster	Q1 14903,7997 14962,7934 14990,7904
 (Neuköllnische Wiesen, Hauptweg): Verbundsteinpflaster	Q1 14903,7997 14968,8046 14976,8053
 (Hänselstr. - Michael-Bohnen-Ring): neues Betonsteinpflaster	Q0- 15143,6865 15251,6745
-(Dieselstr. - westlicher Mergenthalerring): unbefestigte Straße	Q2- 14249,8075 14239,8095 14247,8254 14229,8278
+(Dieselstr. - westlicher Mergenthalerring): unbefestigte Straße	Q2- 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 Holstweg: Beton und Asphalt	Q0- -1013,2579 -882,2260
 (Lützelsteiner Weg - Saargemünder Str.): wassergebundene Decke	Q1- 1690,4708 1730,4743
 (Uferweg - Forster Str.): unbefestigt	Q2 12280,9728 12286,9739
@@ -12686,6 +12686,7 @@ Goltzstr.: Asphalt mit einigen Schäden	Q1; 11073,-2037 10983,-2116
 (Falkstr. - Morusstr.): Kopfsteinpflaster	Q2+ 12186,7952 12219,7958
 #: note: einige kurze gepflasterte Abschnitte
 (Falkstr. - Morusstr.): Verbundsteinpflaster	Q1- 12219,7958 12407,8000 12439,8014 12450,8016
+(Falkstr. - Morusstr.): Verbundsteinpflaster, einige gepflasterte Abschnitte	Q1- 12195,7916 12414,7965 12450,7963 12462,7965
 Leonore-Goldschmidt-Str.: Steinplatten, etwas uneben	Q1+ 3224,8106 3326,8100
 #: by: osm, mapillary
 Kletterrosenweg: Verbundsteinpflaster	Q1+ 21382,149 21344,300

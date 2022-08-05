@@ -3113,7 +3113,7 @@ Barriere	BNP:0:-88:trailer=3 3268,11847
 Drängelgitter	BNP:5:-260 -5890,25875
 Schranke, meistens offen	BNP:3:-260:trailer=6 7843,16524
 Barriere	BNP:10:-13 12178,7985
-Schranke, ggfs. auf dem Bürgersteig umfahren	BNP:2:-14:trailer=4 12216,7838
+Schranke, ggfs. auf dem Bürgersteig umfahren	BNP:2:-15:trailer=4 12216,7838
 Drängelgitter	BNP:10:-77 7158,9509
 Drängelgitter	BNP:5:-51 -6162,16287
 Drängelgitter	BNP:5:-193 38562,100725
@@ -3219,6 +3219,7 @@ weites Drängelgitter	BNP:2:75:trailer=7 12614,6301
 Tor	BNP:0:-134 40394,30863
 Tor	BNP:0:-113 40688,30996
 Schranke	BNP:5:-113:trailer=15 12439,8014
+Schranke	BNP:3:-86:trailer=10 12450,7963
 Schranke	BNP:0:0:trailer=3 3218,8223
 Mittelheide: umgefallene Baumstämme	2 24365,7657 24275,7550
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
@@ -3309,7 +3310,8 @@ Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork
 Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
-Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14051,6731 14106,6663 14150,6609
+Bergiusstr.: wird vermutlich zurückgebaut	2::inwork 14051,6731 14106,6663
+Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 14150,6609
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18688,-1498 18781,-1533 18853,-1656 18866,-1674

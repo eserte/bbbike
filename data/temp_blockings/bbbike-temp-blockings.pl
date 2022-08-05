@@ -30982,7 +30982,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-07-30
+#: last_checked: 2022-08-05
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31192,29 +31192,22 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2020-05-27 09:00:00"),
-       until => undef, # $isodate2epoch->("2021-12-31 17:00:00"), # der ursprüngliche Termin (14.08.2020) kann wohl nicht gehalten werden; laut Schild bis Ende 2021
+       until => 1659721817, # undef, # $isodate2epoch->("2021-12-31 17:00:00"), # der ursprüngliche Termin (14.08.2020) kann wohl nicht gehalten werden; laut Schild bis Ende 2021
        text  => 'Mainzer Str.: Einmündung Frankfurter Allee gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: GAERTNER-2021
-#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv)
-#: also_indoor: traffic (G,H(unvollständig))
-#: osm_watch: way id="934995899" version="9"
-#: osm_watch: way id="934995901" version="8"
-#: last_checked: 2022-08-02 vvv
-#: check_frequency: 4d vvv
+# REMOVED --- #: next_check_id: GAERTNER-2021 --- #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb bis 31.3.2021) (inaktiv) --- #: also_indoor: traffic (G,H(unvollständig)) --- #: osm_watch: way id="934995899" version="9" --- #: osm_watch: way id="934995901" version="8" --- #: last_checked: 2022-08-02 vvv --- #: check_frequency: 4d vvv
 # REMOVED (kann vermutlich nicht gehalten werden) --- #: next_check: 2021-12-31 vvv
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 # REMOVED (beendet) ---	q4::inwork 14247,11681 14211,11552
 # REMOVED (beendet) ---	q3::inwork 14247,11681 14272,11775
 # REMOVED (beendet) ---	q3::inwork 14272,11775 14306,11889
 # REMOVED (beendet) ---	q3::inwork 14306,11889 14354,12012
-#: XXX mittlerweile Asphaltierungsarbeiten, nur ein paar Meter an der Frankfurter Allee sind noch richtig gesperrt
+# REMOVED --- #: XXX mittlerweile Asphaltierungsarbeiten, nur ein paar Meter an der Frankfurter Allee sind noch richtig gesperrt
 	q3::inwork 14354,12012 14427,12197
 # REMOVED (beendet) ---	q3::inwork 14354,12012 14468,11992
 # REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { do {
@@ -34433,10 +34426,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (ex-B)
-#: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18 ebenso
+#: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18 und 2022-08-05 ebenso
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: last_checked: 2022-06-08
-#: check_frequency: 60d
+#: last_checked: 2022-08-05
+#: check_frequency: 14d
 #: next_check: 2022-08-31
 # REMOVED (hier nicht mehr) ---	q4::inwork 13355,6235 13227,6209 13220,6237
 	q4::inwork 13027,6168 13227,6209
@@ -34930,12 +34923,12 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_29_1829_2008_online.pdf (zum bereits eingezogenen Abschnitt des Mergenthalerrings)
-#: note: Durchfahrt möglich, gesehen: 2022-03-23 mittags, 2022-05-04 mittags, 2022-07-06 mittags
+#: note: Durchfahrt möglich, gesehen: 2022-03-23 mittags, 2022-05-04 mittags, 2022-07-06 mittags, 2022-08-05 vormittags
 #: XXX Bleibt es bei der möglichen Durchfahrt?
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2022-07-06
-	2 14249,8075 14239,8095 14247,8254 14229,8278
+#: last_checked: 2022-08-05
+	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 EOF
      },
      { from  => 1648674360, # 2022-03-30 23:06
@@ -35844,16 +35837,17 @@ EOF
 #: by: https://nitter.it/VIZ_Berlin/status/1555042445792092164#m
 #: by: https://berliner-abendblatt.de/2022/08/04/feuerwehr-einsatz-im-grunewald-zieht-sich-bis-freitag/
 #: by: https://nitter.it/VIZ_Berlin/status/1555249442940395524#m
+#: by: https://viz.berlin.de/2022/08/waldbrand-im-grunewald/ (bis auf Weiteres)
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31
-#: last_checked: 2022-08-04 (research) vvv
+#: last_checked: 2022-08-05 (research) vvv
 #: check_frequency: 1d vvv
-	2::temp -1328,7597 -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888 -2218,5133
+	2::temp -1328,7597 -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888 -2218,5133 -3296,3686
 	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790 -2825,5588 -2218,5133 -2112,5050 -1424,4504
 	2::temp -1851,6887 -1925,6790
 	2::temp -2668,6862 -2632,6789 -2638,6641
-# weitere Sperrungen im Grunewald möglich (Havelchaussee, Koenigsallee, Huettenweg)
+# weitere Sperrungen im Grunewald möglich (Havelchaussee, Koenigsallee, Hüttenweg)
 	2::temp 40,5606 -119,5885 -150,6168 -138,6681 -739,6838 -927,6888
 	2::temp -138,6681 674,7758
 	2::temp -2774,10345 -3025,10116 -3178,9953 -3412,9755 -3426,9684 -3347,9541 -3213,9425 -3140,9294 -3073,9061 -3283,8739 -3389,8624 -3578,8578 -3615,8496 -3567,8031 -3561,7964 -3536,7856 -3531,7825 -3496,7677 -3355,6874 -3382,6821 -3483,6789 -3530,6781 -3589,6721 -3598,6572 -3606,6407 -3723,6254 -3880,6142 -3944,6034 -4003,5621 -4046,5505 -4072,5227 -3962,5129
@@ -35862,7 +35856,7 @@ EOF
 	2::temp -119,5885 -182,5927 -288,6101
 	2::temp -2825,5588 -3021,5328 -3093,5223 -3605,4536
 	2::temp -360,9193 -310,8989
-	2::temp -3962,5129 -3889,4967 -3807,4794 -3729,4687 -3605,4536 -3490,4212 -3296,3686 -2218,5133
+	2::temp -3962,5129 -3889,4967 -3807,4794 -3729,4687 -3605,4536 -3490,4212 -3296,3686 -3680,3160 -3768,3069 -4001,2858
 	2::temp 425,8766 100,8339 -363,7630 -643,7252 -913,6905
 #: check_frequency ^^^
 #: last_checked ^^^
