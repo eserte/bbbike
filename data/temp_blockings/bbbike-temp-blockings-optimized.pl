@@ -3909,7 +3909,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-07-08
+#: last_checked: 2022-08-06
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4364,7 +4364,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-08-05
+#: last_checked: 2022-08-06
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -6104,10 +6104,12 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://berliner-abendblatt.de/2022/08/04/feuerwehr-einsatz-im-grunewald-zieht-sich-bis-freitag/
 #: by: https://nitter.it/VIZ_Berlin/status/1555249442940395524#m
 #: by: https://viz.berlin.de/2022/08/waldbrand-im-grunewald/ (bis auf Weiteres)
+#: by: https://berliner-abendblatt.de/2022/08/06/bahn-kann-wieder-durch-berliner-grunewald-fahren/ (Avus mindestens bis 2022-08-07 gesperrt)
+#: by: https://berliner-abendblatt.de/2022/08/06/feuerwehr-noch-einige-tage-sperrkreis-um-sprengplatz/
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31
-#: last_checked: 2022-08-05 (research) vvv
+#: last_checked: 2022-08-06 (research) vvv
 #: check_frequency: 1d vvv
 	2::temp -1328,7597 -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888 -2218,5133 -3296,3686
 	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790 -2825,5588 -2218,5133 -2112,5050 -1424,4504

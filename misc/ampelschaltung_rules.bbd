@@ -39,8 +39,8 @@ time=? green=11s	X 14011,10812 13919,10583 *
 #   XXX Zyhlus kann auch 90s sein (rush-hour?)
 #   note: separate Linksabbiegerampeln
 cycle=70s	X 13596,10722
-red=45s green=25s(constructed)	X; 13496,10763 13596,10722 13678,10685
-red=46s green=24s	X; 13678,10685 13596,10722 13496,10763
+red=45s green=25s(constructed)	X; 13496,10763 13596,10722 13633,10705
+red=46s green=24s	X; 13633,10705 13596,10722 13496,10763
 red=59s green=11s(constructed)	X; 13676,10926 13596,10722 *
 # Stralauer/Warschauer
 #   XXX rot/grün-Verhältnis (alle Richtungen): ~70%:~30%

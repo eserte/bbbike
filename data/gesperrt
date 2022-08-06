@@ -1994,8 +1994,8 @@ unbequemes Abbiegen	3nocross::ignrte 13332,10832 13394,10805 13496,10763 13596,1
 Warschauer Pl. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13408,10837 13394,10805 13496,10763
 Stralauer Allee -> Naglerstr.: unbequemes Abbiegen	3::igndisp 13394,10805 13496,10763 13575,10963
 Naglerstr. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13575,10963 13496,10763 13596,10722
-unbequemes Abbiegen	3nocross::ignrte 13596,10722 13678,10685 13779,10642
-Stralauer Allee -> Lehmbruckstr.: unbequemes Abbiegen	3::igndisp 13596,10722 13678,10685 13690,10715
+unbequemes Abbiegen	3nocross::ignrte 13596,10722 13633,10705 13678,10685 13779,10642
+Stralauer Allee -> Lehmbruckstr.: unbequemes Abbiegen	3::igndisp 13633,10705 13678,10685 13690,10715
 Lehmbruckstr. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13690,10715 13678,10685 13779,10642
 unbequem passierbare Straße	3nocross::ignrte 14218,10430 14405,10340 14558,10264
 Stralauer Allee -> Bödikerstr.: unbequem passierbare Straße	3::igndisp 14218,10430 14405,10340 14447,10491
@@ -3313,7 +3313,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 Bergiusstr.: wird vermutlich zurückgebaut	2::inwork 14051,6731 14106,6663
 Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 14150,6609
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
-Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
+Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, mindestens bis Ende 2022, vermutlich länger	2:inwork 8106,13130 8102,13304 8099,13391
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18688,-1498 18781,-1533 18853,-1656 18866,-1674
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
@@ -3877,6 +3877,7 @@ Altentreptower Str., linker Gehweg	1::igndisp 21573,12140 21401,12155
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fußgängerampel	1::igndisp 5524,21034 5599,21025
 Frankfurter Allee, linker Radweg bis zur Ampel	1::igndisp 15670,12022 15717,12010
 Invalidenstr., linker Gehweg	1::igndisp 8332,13548 8290,13538 8183,13482
+Invalidenstr., linker Gehweg	1::igndisp 8295,13511 8342,13536
 Lichtenberger Brücke, linker Gehweg	1::igndisp 16978,11852 16818,11878
 Alexanderstr., linker Gehweg	1::igndisp 11353,12436 11329,12497
 Straße des 17. Juni, linker Geh/Radweg	1::igndisp 5758,11895 5813,11886

@@ -614,7 +614,7 @@ Bus 122	busroute_N 6962,21174 6912,21515 6924,21550 6925,21558 6928,21576 7155,2
 Bus 122, ...	busroute_N 5006,22507 5056,22389 5098,22326 5140,22342 5237,22345 5376,22350 5429,22359 5485,22396 5517,22432 5517,22487 5484,22564 5420,22692
 Bus 322	busroute_N 4810,21730 4655,21939 4613,21997 4598,22066 4584,22107 4556,22148 4456,22278
 Bus 324	busroute_N -1869,19974 -1681,19955 -1572,19899 -1419,19815
-Bus M85	busroute_N 8098,13419 8102,13304 8106,13130 8110,13042
+Bus M85	busroute_N 8098,13419 8099,13391 8102,13304 8106,13130 8110,13042
 Bus 248	busroute_N 8642,7876 8553,7795 8512,7757 8465,7699 8378,7623 8263,7611
 Bus 326	busroute_N 3022,24393 3127,24253 3216,24135 3308,24009 3487,23765 3475,23757 3552,23620 3596,23581 3624,23540
 Bus 326	busroute_N 3842,24556 3963,24559 4111,24488 4233,24459 4340,24413 4457,24400 4566,24389 4656,24379 4777,24342 4779,24321 4705,24284 4683,24275 4614,24233 4510,24170 4425,24067 4397,24033 4316,23995 4256,23985 4240,23985 4073,23980 3957,23981
@@ -1296,7 +1296,7 @@ Wadzeckstr. - Mollstr.: über das Gelände des Hampton-Hotels	CS 11315,13210 11399
 #: note: laut fis-broker 1:5000 ist das tatsächlich die Falkoniergasse
 #: XXX wird hier noch ausgeschildert?
 #: osm_watch: way id="546927052" version="5"
-#: last_checked: 2022-07-08
+#: last_checked: 2022-08-06
 #: check_frequency: 60d
 Falkoniergasse: nicht ausgeschildert	CS 9939,12174 9909,12261
 # 
@@ -1408,9 +1408,9 @@ ausgeschildert zur Georg-Knorr-Str. (Industriegebiet)	CP2;  19214,14966 19244,14
 #: next_check_id: HILDAGEIRINGERWEG-2019
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (hier: Stichstraße Invalidenstraße)
 #: XXX wann wird die Straße ausgeschildert?
-#: last_checked: 2022-06-10 (mapillary)
+#: last_checked: 2022-08-06
 #: check_frequency: 60d
-Hilda-Geiringer-Weg: westliche Einfahrt nicht ausgeschildert	CP2; 8167,13457 8174,13390
+Hilda-Geiringer-Weg: westliche Einfahrt nicht ausgeschildert	CP2; 8167,13457 8174,13397
 # 
 ausgeschildert "Zum Grundstück Adlergestell 181 B"	CP2; 19335,4067 19345,4077
 # 

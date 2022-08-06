@@ -349,7 +349,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/das-aktionsbuendnis-legt-einspruch-gegen-die-teileinziehung-der-friedrichstrasse-als-oeffentliches-strassenland-ein_a350072
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
-#: last_checked: 2022-06-30
+#: last_checked: 2022-08-06
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 # REMOVED --- #: valid: !20200821-20211031 --- Friedrichstr. (Mitte, Kreuzberg)	H 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103 --- #: valid: 20200821-20211031
@@ -469,7 +469,7 @@ Pfuelstr.	N 12879,10750 12951,10839
 #: oldname: -20100304: Gröbenufer
 May-Ayim-Ufer	N 12951,10839 13077,10747 13206,10651
 Bevernstr.	N 13015,10659 13077,10747
-Stralauer Allee	HH 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
+Stralauer Allee	HH 13332,10832 13394,10805 13496,10763 13596,10722 13633,10705 13678,10685 13779,10642 13850,10612 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
 Warschauer Str.	HH 13332,10832 13391,10963 13409,11004 13454,11119 13476,11174 13493,11217 13541,11355 13588,11490 13603,11538 13651,11731 13696,11920 13745,12118 13785,12292
 Schlesische Str.	H 12985,10665 13028,10629 13136,10535 13142,10530 13249,10445 13369,10337 13449,10262
 #: osm.highway: service
@@ -1708,7 +1708,7 @@ Invalidenstr.	H 8098,13419 8003,13374 7880,13315 7842,13292 7816,13276 7759,1324
 #: by: https://www.berliner-woche.de/moabit/c-verkehr/arbeiten-fuer-m10-schreiten-voran_a336662
 #: XXX weitere Einschränkungen für den Kfz-Verkehr (nicht eingezeichnet): Turmstr. Richtung Westen zwischen Rathenower Str. und Lübecker Str. gesperrt (Radweg existiert); Thusnelda-Allee gesperrt (Radweg existiert); neu: Alt-Moabit zwischen Paulstr. und Lüneburger Str.; außerdem sind diverse Ampeln ausgeschaltet
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-07-17 vvv
+#: last_checked: 2022-08-06 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2022-12-22 vvv
 #: valid: 20220119-20221222 vvv
@@ -16276,7 +16276,8 @@ Ruppiner Str.	N 9847,15134 9904,15014
 Ruppiner Str.	NN 9904,15014 9918,14986 9942,14936
 Ruppiner Str.	N 9942,14936 10003,14823 10043,14735 10070,14678 10105,14608 10150,14525
 Hilda-Geiringer-Weg	N 8236,13495 8241,13393
-Hilda-Geiringer-Weg	N 8167,13457 8174,13390 8241,13393 8281,13394 8302,13430 8293,13527
+Hilda-Geiringer-Weg	N 8167,13457 8174,13397 8241,13393 8281,13394 8302,13430 8295,13511 8293,13527
+(Friedrich-List-Ufer - Hilda-Geiringer-Weg)	NN 8099,13391 8106,13393 8111,13358 8119,13396 8174,13397
 Am Hamburger Bahnhof	N 8187,13472 8183,13482 8141,13580 8103,13675
 #: note: durch Poller abgesperrter Bereich
 Am Hamburger Bahnhof	N 8103,13675 8059,13765 8025,13835
@@ -16409,7 +16410,7 @@ Hugo-Preuß-Brücke	NH 8160,13053 8274,13052
 Rahel-Hirsch-Str.	NH 7930,12912 7946,12932 8039,13009 8110,13042 8160,13053
 Kapelle-Ufer	NH 8274,13052 8315,13042 8411,12992 8488,12920 8503,12895
 Alexanderufer	N 8315,13042 8315,13181 8314,13323 8356,13404
-Alexanderufer	NN 8356,13404 8365,13431 8362,13466 8354,13523 8332,13548
+Alexanderufer	NN 8356,13404 8365,13431 8362,13466 8354,13523 8342,13536 8332,13548
 Löptener Str.	N 10980,-1919 10906,-1946 10758,-1949
 Mellener Str.	N 10772,-1748 10771,-1782 10767,-1850 10758,-1949 10756,-2128 10763,-2276 10789,-2451
 (Lichtenrader Damm - Mellener Str.)	NN 10903,-1768 10771,-1782
@@ -18424,7 +18425,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9160,12932
 #: XXX oder eventuell wird das eine Einbahnstraße, wenn die Bauarbeiten an der Pankebrücke beendet sind (Schilder hängen schon, obwohl es eine Sackgasse ist?!)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
 #: osm_watch: way id="327518240" version="7"
-#: last_checked: 2022-06-03
+#: last_checked: 2022-08-06
 #: check_frequency: 90d
 (Straße vor dem Berliner Ensemble)	N 9212,12969 9160,12932
 Karlplatz	N 8711,12986 8676,12976
@@ -19525,7 +19526,7 @@ Suderoder Str. (Britz)	N 12437,5946 12481,5935 12523,5945 12537,5964 12537,5992 
 Memlingstr.	N 4025,3958 4134,3825 4265,3661
 Rettigweg	N 9831,17652 9760,17612 9706,17570
 Pradelstr.	N 9760,17612 9660,17736
-Friedrich-List-Ufer	N 8110,13042 8106,13130 8102,13304 8098,13419
+Friedrich-List-Ufer	N 8110,13042 8106,13130 8102,13304 8099,13391 8098,13419
 Reinbeckstr.	N 18341,6313 18310,6223
 Marchandstr.	N 7437,1859 7415,1846 7332,1718 7193,1492
 Tambacher Str.	N 7035,1814 7134,1612 7144,1591 7193,1492 7226,1428 7264,1350

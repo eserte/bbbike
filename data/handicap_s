@@ -40,8 +40,8 @@ Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr
 Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17468,8692
 Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17468,8692 17497,8623
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
-Turmstr.: Bauarbeiten, Engstellen	q2::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321
-Turmstr.: Bauarbeiten, Engstellen	q1::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
+Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321 6228,13324
+Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
 Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwork 5461,9923 5423,9932 5382,9942
 Weserstr.: Bauarbeiten, Fahrbahn noch nicht offiziell freigegeben, gemeinsamer Geh- und Radweg, eng	q2::inwork 12590,8977 12740,8862
@@ -2322,6 +2322,9 @@ Fenchelweg: enge Straße	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,360
 Fennpfuhlweg: vier Bodenschwellen	q0 17750,19181 17697,18989
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]: etwas Parkplatzverkehr	q1 17523,9882 17412,9911
 (Dolgenseestr., Erschließungsweg): einige Fußgänger	q2 17288,9952 17412,9911
+(Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8099,13391 8106,13393
+(Friedrich-List-Ufer - Hilda-Geiringer-Weg): Rampe, einige Fußgänger	q3 8106,13393 8111,13358 8119,13396
+(Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8119,13396 8174,13397
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3303,6 +3306,7 @@ Altentreptower Str., linker Gehweg	q2::igndisp; 21401,12155 21573,12140
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fußgängerampel	q3::igndisp; 5599,21025 5524,21034
 Frankfurter Allee, linker Radweg bis zur Ampel	q1::igndisp; 15717,12010 15670,12022
 Invalidenstr., linker Gehweg	q4::igndisp; 8183,13482 8290,13538 8332,13548
+Invalidenstr., linker Gehweg	q4::igndisp; 8342,13536 8295,13511
 Lichtenberger Brücke, linker Gehweg	q1::igndisp; 16818,11878 16978,11852
 Alexanderstr., linker Gehweg	q2::igndisp; 11329,12497 11353,12436
 Straße des 17. Juni, linker Geh/Radweg	q3::igndisp; 5813,11886 5758,11895

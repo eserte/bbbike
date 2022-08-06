@@ -346,7 +346,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="15"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-07-17
+#: last_checked: 2022-08-06
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -604,20 +604,20 @@ Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg,
 # 
 #: next_check_id: TRAMTURM-2021
 #: source_id: bvg2021:m27#BVG305466_0
-#: last_checked: 2022-07-17 vvv
+#: last_checked: 2022-08-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-22 vvv
 #: osm_watch: way id="140336721" version="26"
 #: note: früher "teilweise verwinkelte Wegführung des Radwegs - q1-::inwork;"
-Turmstr.: Bauarbeiten, Engstellen	q2+::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321
+Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321 6228,13324
 #: osm_watch: way id="30195541" version="28"
-Turmstr.: Bauarbeiten, Engstellen	q1-::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
+Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
 # REMOVED (offen) --- #: by: https://www.bahninfo-forum.de/read.php?9,689330,689356#msg-689356 (2021) --- #: by: https://www.berliner-woche.de/moabit/c-verkehr/kein-halt-an-der-birkenstrasse_a334325 (geplant für 1. Quartal 2022) --- #: by: https://berliner-abendblatt.de/2022/01/24/kein-halt-am-u-bahnhof-birkenstrasse/ --- #: by: https://berliner-abendblatt.de/2022/03/16/bahnhof-birkenstrasse-jetzt-stufenlos-erreichbar/ --- #: by: https://www.berliner-woche.de/moabit/c-bauen/u-bahnhof-birkenstrasse-erhielt-weiteren-ausgang_a339752 --- #: XXX vermutlich wegen des neuen Aufzugs am U-Bhf. Birkenstr. --- #: also_indoor: traffic (ex-G,H) --- #: osm_watch: way id="746589388" version="17" --- #: osm_watch: way id="746589386" version="1" --- #: last_checked: 2022-03-16 (twitter) --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-03-31 --- Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
-# REMOVED (nicht mehr) --- #: next_check_id: HILDAGEIRINGERWEG-2019 --- #: source_id: 2147345153 (Gehwegarbeiten in der Invalidenstr., bis Anfang Dezember 2019) --- #: priority: #C vvv --- #: last_checked: 2020-10-10 vvv --- #: check_frequency: 30d vvv --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt	q3::inwork 8281,13394 8302,13430 8293,13527 --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur über Restaurantbereich	q4::inwork 8174,13390 8241,13393 8281,13394 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^
+# REMOVED (nicht mehr) --- #: next_check_id: HILDAGEIRINGERWEG-2019 --- #: source_id: 2147345153 (Gehwegarbeiten in der Invalidenstr., bis Anfang Dezember 2019) --- #: priority: #C vvv --- #: last_checked: 2020-10-10 vvv --- #: check_frequency: 30d vvv --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt	q3::inwork 8281,13394 8302,13430 8293,13527 --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur über Restaurantbereich	q4::inwork 8174,13397 8241,13393 8281,13394 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^
 # REMOVED --- #: XXX was ändert sich nach den Bauarbeiten? Radstreifen? -> zumindest gibt es einige Aufpflasterungen --- #: last_checked: 2015-06-08 --- #: check_frequency: 30d --- Siemensstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Geh+Radweg	q2 5708,14077 5746,14090 5786,14106 5808,14114 5956,14168
 # 
 ### Tiergarten ###
@@ -3070,6 +3070,7 @@ Duftgeranienweg: Bodenschwellen, die leicht umfahren werden können	q0- 24329,608
 # REMOVED --- #: XXX Verbindung prüfen (ist aber für das Routing nicht besonders interessant) --- Friedenstr. - Parkplatz: Fußgänger	q2 12131,13333 12152,13294 12141,13256 12107,13264 12066,13237
 #: XXX_prog BS ansonsten Eintrag entfernen
 Am Treptower Park: Bordstein	q2; 15166,8489 15079,8575
+#: note: Radfahren erlaubt, Fußgänger haben Vorrang
 (Kleiner Tiergarten): Fußgänger, Spielplatz	q2 6573,13149 6564,13260 6535,13327
 Gleisdreieckpark: Rampe	q2 8011,10085 8013,10055 8027,10074 8042,10084
 #: XXX_prog BS an der Schwarzwurzelstr., ansonsten q2
@@ -4186,6 +4187,9 @@ Fennpfuhlweg: vier Bodenschwellen	q0- 17750,19181 17697,18989
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]: etwas Parkplatzverkehr	q1 17523,9882 17412,9911
 #: note: unklar, ob das hier zur für Radfahrer freigegebenen Fußgängerzone gehört
 (Dolgenseestr., Erschließungsweg): einige Fußgänger	q2 17288,9952 17412,9911
+(Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8099,13391 8106,13393
+(Friedrich-List-Ufer - Hilda-Geiringer-Weg): Rampe, einige Fußgänger	q3 8106,13393 8111,13358 8119,13396
+(Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8119,13396 8174,13397
 # 
 ######################### User Contributions #################################
 # 

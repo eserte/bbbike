@@ -8464,7 +8464,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005623',
        data  => <<EOF,
-	2::temp 8098,13419 8102,13304 8106,13130 8110,13042
+	2::temp 8098,13419 8099,13391 8102,13304 8106,13130 8110,13042
 EOF
      },
      { from  => undef, # 
@@ -28232,7 +28232,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-07-08
+#: last_checked: 2022-08-06
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30982,7 +30982,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-08-05
+#: last_checked: 2022-08-06
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -34938,7 +34938,7 @@ EOF
        source_id => 'https://twitter.com/VIZ_Berlin/status/1509046513573498881',
        data  => <<EOF,
 # REMOVED (mittlerweile provisorische Radspur) --- #: next_check_id: STRALAUER-2019 --- #: note: explizites Verbot für Radfahrer auf der Stralauer Allee Richtung Südosten (wird aber von so gut wie allen Radfahrern ignoriert; abgesperrte Fahrspur ist meistens gut passierbar) --- #: last_checked: 2022-05-15 --- #: check_frequency: 30d --- #: next_check: 2022-06-30
-	1::inwork 13596,10722 13678,10685 13779,10642 13919,10583
+	1::inwork 13596,10722 13633,10705 13678,10685 13779,10642 13850,10612 13919,10583
 EOF
      },
      { from  => undef, # 
@@ -35838,10 +35838,12 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/08/04/feuerwehr-einsatz-im-grunewald-zieht-sich-bis-freitag/
 #: by: https://nitter.it/VIZ_Berlin/status/1555249442940395524#m
 #: by: https://viz.berlin.de/2022/08/waldbrand-im-grunewald/ (bis auf Weiteres)
+#: by: https://berliner-abendblatt.de/2022/08/06/bahn-kann-wieder-durch-berliner-grunewald-fahren/ (Avus mindestens bis 2022-08-07 gesperrt)
+#: by: https://berliner-abendblatt.de/2022/08/06/feuerwehr-noch-einige-tage-sperrkreis-um-sprengplatz/
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31
-#: last_checked: 2022-08-05 (research) vvv
+#: last_checked: 2022-08-06 (research) vvv
 #: check_frequency: 1d vvv
 	2::temp -1328,7597 -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888 -2218,5133 -3296,3686
 	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790 -2825,5588 -2218,5133 -2112,5050 -1424,4504

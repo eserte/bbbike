@@ -1274,7 +1274,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-08-02
+#: last_checked: 2022-08-06
 #: check_frequency: 90d
 #: next_check: 2022-10-31
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -2090,7 +2090,7 @@ Märkische Allee: Mittelstreifen	3nocross 19900,11697 19924,11890 19934,11977 199
 # REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17482,17844 17579,17908 17675,17971 17744,18016 17843,18078
 Falkenberger Chaussee: Straßenbahntrasse	3nocross 18196,18254 18530,18327 18601,18342
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13394,10805 13496,10763 13596,10722
-Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13678,10685 13779,10642
+Stralauer Allee: unbequemes Abbiegen	3nocross 13596,10722 13633,10705 13678,10685 13779,10642
 Stralauer Allee: unbequem passierbare Straße	3nocross 14218,10430 14405,10340 14558,10264
 Stralauer Str.: Mittelstreifen	3nocross 11221,12250 11300,12241 11347,12223
 Sonnenallee: Mittelstreifen	3nocross 12152,9015 12078,9055 12012,9092
@@ -3433,7 +3433,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # 
 #: next_check_id: TRAMTURM-2021
 #: XXX alten Eintrag hier wiederherstellen!
-#: last_checked: 2022-07-17
+#: last_checked: 2022-08-06
 #: check_frequency: 180d
 #: next_check: 2022-12-22
 Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	2::inwork 7422,13012 7415,13060
@@ -3477,7 +3477,7 @@ Unter den Linden/Schadowstr.: Überqueren der Straße vor der Russischen Botschaft
 Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943 20948,18968
 # 
 #: by: https://www.hedwigs-kathedrale.de/umgestaltung/ (Umbauarbeiten bis 1. November 2023 geplant)
-#: last_checked: 2022-05-12
+#: last_checked: 2022-08-06
 #: check_frequency: 360d
 #: next_check: 2023-11-01
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -3671,7 +3671,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise
 #: osm_watch: note 2832326 3
-#: last_checked: 2022-07-31
+#: last_checked: 2022-08-06
 #: check_frequency: 120d
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
 # 
@@ -4125,7 +4125,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2022-07-29 vvv
+#: last_checked: 2022-08-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -4473,10 +4473,11 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="23"
 #: also_indoor: traffic
-#: last_checked: 2022-08-02 (osm)
+#: last_checked: 2022-08-06
 #: next_check: 2022-12-30
-#: valid: -20221230
-Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
+# REMOVED --- #: valid: -20221230
+Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, mindestens bis Ende 2022, vermutlich länger	2:inwork 8106,13130 8102,13304 8099,13391
+# REMOVED --- Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8099,13391 8098,13419
 # 
 # REMOVED --- #: by: Kai Wagner --- #: confirmed_by: srt --- #: XXX hier entsteht wohl eine neue Filiale von Möbel Kraft --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.474190.php --- #: last_checked: 2016-02-10 --- #: check_frequency: 360d --- Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 # REMOVED --- #: last_checked: 2017-10-11 --- Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10355,12551 10411,12471
@@ -4568,7 +4569,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="8"
-#: last_checked: 2022-07-31 vvv
+#: last_checked: 2022-08-06 vvv
 # REMOVED (fertig?) --- #: check_frequency: 60d vvv
 #: also_indoor: traffic (G)
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
