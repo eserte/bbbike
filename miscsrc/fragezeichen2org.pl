@@ -317,10 +317,13 @@ for my $file (@files) {
 
 	     # OSM URL
 	     {
-		 my @layers = ('N'); # always turn notes on
+		 my @layers;
 		 if ($subject =~ /zebrastreifen/i) {
 		     push @layers, 'C'; # OpenCycleMap has the best zebra rendering
+		 } elsif ($subject =~ /(radspur|radweg)/i) {
+		     push @layers, 'Y'; # CyclOSM
 		 }
+		 push @layers, 'N'; # always turn notes on
 		 push @extra_url_defs, ['OSM', 'https://www.openstreetmap.org/#map=17/'.$py.'/'.$px.'&layers='.join('', @layers)];
 	     }
 
