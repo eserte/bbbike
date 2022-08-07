@@ -1486,7 +1486,7 @@ ausgeschildert nach Bernau	CP; 32543,18082 32537,18066 32519,18076
 ausgeschildert Sophie-Charlotte-Platz	CP; 3064,11657 3144,11659 3159,11562
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
-#: last_checked: 2022-07-03
+#: last_checked: 2022-08-07
 #: check_frequency: 180d
 Henriette-Lustig-Str.: noch nicht ausgeschildert	CS 21611,5119 21631,5079
 # 
@@ -1675,7 +1675,7 @@ Kleiner Parkweg: nicht ausgeschildert	CS 20775,11801 20790,11990
 Volkerweg: nicht ausgeschildert	CS 16005,4012 16046,4073 16060,4093 16145,4217 16151,4226
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
-#: last_checked: 2022-07-03
+#: last_checked: 2022-08-07
 #: check_frequency: 60d
 Eiselenweg - Uferweg: Einfahrt zum Uferweg ist etwas versteckt, vor dem Neubaugebiet links abbiegen	CP; 21364,5430 21442,5414 21476,5434
 # 
@@ -1704,6 +1704,10 @@ ausgeschildert als "Morusstr. 16, 18"	CP2; 12450,8016 12439,8014
 ausgeschildert als "Morusstr. 22, 20"	CP2; 12462,7965 12450,7963
 ausgeschildert als "Zugang zur Falkstr. 23"	CP2; 12195,7916 12414,7965
 ausgeschildert als "Falkstr. 25"	CP2; 12186,7952 12219,7958
+# 
+#: add_fragezeichen: Ist die Brigitte-Reimann-Str. ausgeschildert?
+#: last_checked: 2022-08-06 (mapillary)
+Brigitte-Reimann-Str.: noch nicht ausgeschildert	CS 23368,15469 23363,15517 23388,15637
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straﬂen)

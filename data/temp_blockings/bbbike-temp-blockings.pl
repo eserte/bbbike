@@ -30605,7 +30605,7 @@ EOF
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-07-20 (mapillary)
+#: last_checked: 2022-07-22 (mapillary)
 #: check_frequency: 21d
 #: next_check_id: 2022-08-31
 	q4::inwork; 11329,12497 11209,12430
@@ -35167,14 +35167,15 @@ EOF
      },
      { from  => 1651953282, # 2022-05-07 21:54
        until => 1669849200, # 2022-12-01 00:00
-       text  => 'Schubertstr.: Baustelle, Fahrbahn gesperrt, voraussichtlich bis 30.11.2022',
-       type  => 'handicap',
+       text  => 'Schubertstr.: Baustelle, Straße gesperrt, voraussichtlich bis 30.11.2022',
+       type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
        data  => <<EOF,
 #: next_check_id: HAEMMERLING-2022
 #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
-	q4::inwork 21984,6317 21856,6390
+#: note: anscheinend auch für Fußgänger gesperrt, hier gibt es keinen Gehweg
+	2::inwork 21984,6317 21856,6390
 EOF
      },
      { from  => $isodate2epoch->("2022-05-02 00:00:00"),
@@ -35810,9 +35811,11 @@ EOF
        source_id => 'viz2021:13.516327,52.486802,02.08.2022,07:00',
        data  => <<EOF,
 #: next_check_id: WALLENSTEIN-2022
+#: note: zurzeit Sperrung wohl nur während der Arbeitszeiten, Durchfahrt war möglich am: 2022-08-07 mittags vvv
 Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
+#: note ^^^
 EOF
      },
      { from  => 1660168800, # 2022-08-11 00:00
@@ -35840,10 +35843,12 @@ EOF
 #: by: https://viz.berlin.de/2022/08/waldbrand-im-grunewald/ (bis auf Weiteres)
 #: by: https://berliner-abendblatt.de/2022/08/06/bahn-kann-wieder-durch-berliner-grunewald-fahren/ (Avus mindestens bis 2022-08-07 gesperrt)
 #: by: https://berliner-abendblatt.de/2022/08/06/feuerwehr-noch-einige-tage-sperrkreis-um-sprengplatz/
+#: by: https://nitter.it/VIZ_Berlin/status/1556286617232490498#m
+#: by: https://berliner-abendblatt.de/2022/08/07/feuerwehr-will-gefahrenbereich-um-sprengplatz-verkleinern-2/
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31
-#: last_checked: 2022-08-06 (research) vvv
+#: last_checked: 2022-08-07 (research) vvv
 #: check_frequency: 1d vvv
 	2::temp -1328,7597 -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888 -2218,5133 -3296,3686
 	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790 -2825,5588 -2218,5133 -2112,5050 -1424,4504

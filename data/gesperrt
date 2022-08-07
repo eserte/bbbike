@@ -1516,6 +1516,8 @@ Feuchtwangerweg -> Zwickauer Damm: Bahntrasse	3::igndisp 15788,1747 15835,1747 1
 Straßenbahntrasse	3nocross::ignrte 23080,15700 23218,15671 23388,15637 23411,15632 23568,15603 23617,15594
 Zossener Str. -> Klausdorfer Str.: Straßenbahntrasse	3::igndisp 23080,15700 23218,15671 23243,15820
 Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23243,15820 23218,15671 23388,15637
+Brigitte-Reimann-Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23363,15517 23388,15637 23218,15671
+Zossener Str. -> Brigitte-Reimann-Str.: Straßenbahntrasse	3::igndisp 23411,15632 23388,15637 23363,15517
 Zossener Str. -> Teupitzer Str.: Straßenbahntrasse	3::igndisp 23411,15632 23568,15603 23573,15627
 Teupitzer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23573,15627 23568,15603 23617,15594
 Mittelstreifen	3nocross::ignrte 4741,5309 4745,5344 4767,5389 4832,5522 4861,5581
@@ -3221,6 +3223,9 @@ Tor	BNP:0:-113 40688,30996
 Schranke	BNP:5:-113:trailer=15 12439,8014
 Schranke	BNP:3:-86:trailer=10 12450,7963
 Schranke	BNP:0:0:trailer=3 3218,8223
+Halbschranke	BNP:0:-2:trailer=1 28519,337
+Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16261,9925 16049,9749
+Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 Mittelheide: umgefallene Baumstämme	2 24365,7657 24275,7550
 Storkower Straße (Königs Wusterhausen): Neubau der Eisenbahnbrücke, Sperrung	2::inwork 26327,-11708 26395,-11699
 Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s 26300,-11727 26301,-11824 26300,-11864

@@ -3397,11 +3397,20 @@ Schranke	BNP:5::trailer=15 12439,8014
 #: note: hier breiter als an der benachbarten Stelle (Morusstr.)
 Schranke	BNP:3::trailer=10 12450,7963
 Schranke	BNP:0::trailer=3 3218,8223
+Halbschranke	BNP:0::trailer=1 28519,337
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: by: https://www.berliner-woche.de/rummelsburg/c-bauen/baustelle-wird-eingerichtet_a351209
+#: last_checked: 2022-08-07
+Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16261,9925 16049,9749
+# 
+#: next_check_id: AUERDREIECK-2022
+#: last_checked: 2022-08-07
+Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
 #: last_checked: 2022-07-03
@@ -3427,7 +3436,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=715173#post715173
 #: XXX culdesac-Eintrag für die Spreestr. anpassen!
-#: last_checked: 2022-07-03
+#: last_checked: 2022-08-07
 #: check_frequency: 45d
 (Uferweg): Bauarbeiten, noch gesperrt	2::inwork 21901,5117 21822,5153
 # 
@@ -3542,7 +3551,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2022-07-22
+#: last_checked: 2022-08-07
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 

@@ -273,7 +273,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen)
 #: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2022-08-03
+#: last_checked: 2022-08-07
 #: check_frequency: 45d
 #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -1287,7 +1287,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2022-06-19 vvv
+#: last_checked: 2022-08-07 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="6"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -1432,7 +1432,7 @@ Eichgestell: Parkweg, OK	Q1- 18186,7200 18086,7243
 Eichgestell - Edisonstr./Rummelsburger Str.: Parkweg	Q1- 18186,7200 18134,7173 18079,7144 18010,7133
 Sobernheimer Str.: Kopfsteinpflaster, teilweise mit Sandbanketten	Q2 27600,292 27667,368 27700,402 27734,437 27752,458 27783,493 27831,548 27932,665 27940,675 27961,699 28003,747 28051,803 28065,819 28188,962
 Zur Revierförsterei: Waldweg	Q1 28523,258 28521,300
-Zur Revierförsterei: Beton	Q0- 28521,300 28516,415 28538,452
+Zur Revierförsterei: Beton	Q0- 28521,300 28519,337 28516,415 28538,452
 Zur Revierförsterei: Verbundsteinpflaster	Q1+ 28538,452 28660,542
 (Revierförsterei - Hegemeisterweg): Waldweg	Q1- 28523,258 28566,-205
 An der Krampe: Waldweg, OK	Q1- 28523,258 28450,242 28391,305
@@ -2482,7 +2482,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="11"
-#: last_checked: 2022-07-03
+#: last_checked: 2022-08-07
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -3834,7 +3834,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124 (Anfrage von Juli 2017)
 #: by: https://politik-bei-uns.de/file/597985b41ae6a07d5fb74916 (Antwort: soll teilweise mit einem Asphaltstreifen befestigt werden, erster von drei Bauabschnitten 2018)
 #: osm_watch: way id="47159365" version="15"
-#: last_checked: 2022-06-15
+#: last_checked: 2022-08-07
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -9288,13 +9288,14 @@ Werner-Kube-Str.: Kopfsteinpflaster	Q2- 12881,14342 12947,14428 13013,14523
 (An der Wuhlheide - Uferweg): Verbundsteinpflaster	Q1 21002,5755 21054,5666 21059,5596 21002,5594
 Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 # 
+#: next_check_id: AUERDREIECK-2022
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.725993.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.726077.php ("erste Hälfte 2019")
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2022-07-17 vvv
+#: last_checked: 2022-08-07 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -12586,7 +12587,7 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: Betonpflaster	Q0- 17523,9882 17412,9911
 Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2022-06-26
+#: last_checked: 2022-07-22
 #: check_frequency: 45d
 Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1 17640,8627 17627,8556 17608,8483
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
@@ -12638,7 +12639,7 @@ Gubener Str.: Asphalt	Q0; 13467,11778 13568,11560
 In den Alboingärten: Betonpflaster	Q0- 7971,6087 7910,6090
 #: next_check_id: INDENALBOINGARTEN-2022
 #: XXX Bauarbeiten; wird hier später auch Betonpflaster liegen?
-#: osm_watch: way id="962201820" version="9"
+#: osm_watch: way id="962201820" version="10"
 #: last_checked: 2022-06-08 (architektur-urbanistik)
 # REMOVED --- #: check_frequency: 60d
 In den Alboingärten: unbefestigte Baustraße	Q2 7910,6090 7739,6099 7646,6031 7638,5967
@@ -12696,6 +12697,7 @@ Straßenbahnwendeschleife Langenbeckstr.: Asphalti mit Rissen und Schäden	Q1+ 129
 (Dolgenseestr., Erschließungsweg): Beton, Betonpflaster	Q0- 17288,9952 17412,9911
 Singerstr.: Asphalt mit Querrissen	Q0- 11635,12398 11613,12408 11497,12463
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): glatt gepflastert	Q1 8099,13391 8106,13393 8111,13358 8119,13396 8174,13397
+Brigitte-Reimann-Str.: Asphalt	Q0 23368,15469 23363,15517 23388,15637
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -31244,4 +31246,5 @@ Einmündungsbereich asphaltiert	Q0 3896,22718
 Kreuzungsbereich mit Verbundsteinpflaster	Q1- 11061,1029
 Einmündungsbereich asphaltiert	Q0 10845,1026
 Einmündungsbereich asphaltiert	Q0 6792,8122
+Kreuzungsbereich asphaltiert	Q0 22033,6144
 #: ignore ^^^
