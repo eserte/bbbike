@@ -34,6 +34,12 @@ if (initLayerAbbrevs) {
     initLayerAbbrevs = [];
 }
 var initBaseMapAbbrev = q.get('bm');
+var addLayerToControl = q.get('ctrla');
+if (addLayerToControl) {
+    addLayerToControl = Object.fromEntries(addLayerToControl.split(",").map(function(e) { return [e, true] }));
+} else {
+    addLayerToControl = {};
+}
 
 // localization
 var msg = {"en":{"Kartendaten":"Map data",
@@ -322,7 +328,7 @@ function doLeaflet() {
     }
     var baseMaps = {};
     for(var i=0; i<baseMapDefs.length; i++) {
-	if (baseMapDefs[i].inControl || (initBaseMapAbbrev && initBaseMapAbbrev == baseMapDefs[i].abbrev)) {
+	if (baseMapDefs[i].inControl || (initBaseMapAbbrev && initBaseMapAbbrev == baseMapDefs[i].abbrev) || addLayerToControl[baseMapDefs[i].abbrev]) {
 	    baseMaps[baseMapDefs[i].label] = baseMapDefs[i].layer;
 	}
     }
