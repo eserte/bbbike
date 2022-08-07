@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.81;
+$VERSION = 1.82;
 
 use vars qw(%images);
 
@@ -1046,7 +1046,7 @@ sub show_mapcompare_menu {
 	 -command => sub {
 	     showmap_mapcompare
 		 (maps => [qw(
-				 berlin-historical-2021
+				 berlin-historical-2022
 			    )],
 		  %args,
 		 )
@@ -1060,13 +1060,13 @@ sub show_mapcompare_menu {
 	     # whole of Brandenburg
 	     showmap_mapcompare
 		 (maps => [qw(
+				 berlin-historical-2022
 				 berlin-historical-2021
 				 lgb-satellite-color
 				 berlin-historical-2019
 				 berlin-historical-2018
 				 berlin-historical-2017
 				 berlin-historical-2016
-				 berlin-historical-2015
 				 google-satellite
 			    )],
 		  %args,
