@@ -3405,7 +3405,8 @@ Halbschranke	BNP:0::trailer=1 28519,337
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/baustelle-wird-eingerichtet_a351209
-#: last_checked: 2022-08-07
+#: last_checked: 2022-08-08
+#: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16261,9925 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
@@ -3586,7 +3587,7 @@ Verlängerung Zwieseler Str.: Baustellenabsperrung	2::inwork 19705,9039 19638,907
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/neue-sozialwohnungen-mit-blick-aufs-wasser_a323324
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/staedtische-und-private-gesellschaften-planen-hunderte-wohnungen_a334934 (Erwähnung der Hochbauarbeiten)
 #: XXX wird es hier nach den Bauarbeiten weiterhin einen Weg geben?
-#: last_checked: 2022-06-24
+#: last_checked: 2022-08-08
 #: check_frequency: 180d
 #: next_check: 2023-09-30
 (Kynaststr. - Paul-und-Paula-Ufer): Bauarbeiten, Weg existiert nicht mehr	2::inwork 14843,10621 14911,10587
@@ -3854,7 +3855,7 @@ Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3
 #: by: https://www.deutsches-architekturforum.de/thread/9401-wasserstadt-stralau-kleine-und-gr%C3%B6%C3%9Fere-projekte/?postID=653296#post653296 (Bauarbeiten bis Ende September 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10418 (vermutlich keine öffentliche Durchwegung)
 #: osm_watch: way id="541556560" version="4"
-#: last_checked: 2022-06-29
+#: last_checked: 2022-08-08
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-09-30
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055

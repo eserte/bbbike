@@ -284,7 +284,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-08-05 (Ausschilderung fehlt noch) vvv
+#: last_checked: 2022-08-08 (Ausschilderung fehlt noch) vvv
 #: check_frequency: 7d vvv
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 	RW1; 13596,10722 13633,10705
@@ -293,16 +293,15 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-08-05
+#: last_checked: 2022-08-08
 #: check_frequency: 90d
-# früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489
-provisorische Radspur	RW4; 13919,10583 13986,10549 14103,10489
-Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 14103,10489 14218,10430
+# früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
+provisorische Radspur	RW4; 13919,10583 13986,10549 14103,10489 14218,10430
 gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14218,10430 14405,10340 14558,10264
 	RW2; 13986,10549 13919,10583 13850,10612 13779,10642 13678,10685 13633,10705 13596,10722
 	RW4; 14103,10489 13986,10549
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-08-06
+#: last_checked: 2022-08-08
 #: check_frequency: 90d
 # früher: das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14218,10430 14103,10489
 Gehweg für Radfahrer frei	RW1; 14218,10430 14103,10489
@@ -975,7 +974,6 @@ Verbundsteinpflaster	RW1; 14994,3245 14822,3409 14788,3441 14550,3625 14391,3786
 	RW4; 14089,9610 14196,9749
 Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,9749 14244,9812 14289,9870
-überwiegend geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.735510.php
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/zeitnahe-entscheidung-angekuendigt_a180857
 #: by: https://www.tagesspiegel.de/berlin/berlin-treptow-entscheidung-gefallen-elsenbruecke-wird-abgerissen/23658166.html (Abriss Ostteil: 2020)
@@ -1033,14 +1031,13 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: viz2021:13.462563,52.495479,06.08.2022,06:00 (Umbauarbeiten am 6.8.2022) (inaktiv)
 #: source_id: viz2021:13.46294,52.495795,06.08.2022,20:00 (bis 2028)
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
-#: XXX wie wird die Regelung mit der Ersatzbrücke aussehen?
+#: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-08-05 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2022-08-07 vvv
-# REMOVED --- #: next_check: 2028-01-01 vvv
-	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
-# REMOVED ---	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
+#: last_checked: 2022-08-08 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2028-01-01 vvv
+geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
+überwiegend geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1695,6 +1692,8 @@ Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,116
 	RW3; 10128,11708 10213,11728 10240,11740
 geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10240,11740 10213,11728
 #: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1233433.php
+#: XXX ist die zeitliche Beschränkung mittlerweile entfallen?
 Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786
 Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10512,12039 10574,12131
 # 
@@ -2466,7 +2465,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-08-06 vvv
+#: last_checked: 2022-08-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -4590,6 +4589,7 @@ Grünbeschichtung	RW3; 17886,5587 17960,5511 18080,5376
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1217041.php (Beschichtungsarbeiten, bis 1. Juli 2022)
 #: by: https://berliner-abendblatt.de/2022/06/17/staufalle-adlergestell-mit-nur-einer-spur/
 #: by: http://www.infravelo.de/projekt/b96a-adlergestell-1/ (2. Quartal 2022 - 3. Quartal 2022)
+#: by: https://berliner-abendblatt.de/2022/08/08/trotz-radweg-wenig-sicherheit-fuer-radfahrer-am-adlergestell/
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="19"
 #: osm_watch: way id="319692412" version="10"

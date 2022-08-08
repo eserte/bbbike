@@ -6111,10 +6111,11 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://berliner-abendblatt.de/2022/08/06/feuerwehr-noch-einige-tage-sperrkreis-um-sprengplatz/
 #: by: https://nitter.it/VIZ_Berlin/status/1556286617232490498#m
 #: by: https://berliner-abendblatt.de/2022/08/07/feuerwehr-will-gefahrenbereich-um-sprengplatz-verkleinern-2/
+#: by: https://berliner-abendblatt.de/2022/08/08/berliner-feuerwehr-autobahn-avus-bleibt-weiter-gesperrt/
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31
-#: last_checked: 2022-08-07 (research) vvv
+#: last_checked: 2022-08-08 (research) vvv
 #: check_frequency: 1d vvv
 	2::temp -1328,7597 -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888 -2218,5133 -3296,3686
 	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790 -2825,5588 -2218,5133 -2112,5050 -1424,4504
@@ -6140,6 +6141,16 @@ Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
          'text' => 'Waldbrand im Grunewald: Kronprinzessinenweg, Wege rund um den Sprengplatz und vermutlich auch weitere Straßen (Havelchaussee, Hüttenweg...) sind gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork -1167,10873 -1318,10854
+',
+         'from' => 1659844800,
+         'id' => 3600,
+         'source_id' => 'viz2021:13.231908,52.505332,08.08.2022,06:00',
+         'text' => 'Kranzallee: Baustelle in Höhe Kiplingweg, Sperrung, evtl. sind auch Radfahrer betroffen, vom 08.08.2022 06:00 bis 30.09.2022 20:00 ',
+         'type' => 'handicap',
+         'until' => 1664560800
        }
      
 );

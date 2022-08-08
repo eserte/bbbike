@@ -75,7 +75,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
-#: last_checked: 2022-08-06
+#: last_checked: 2022-08-08
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13633,10705 13678,10685 13779,10642 13850,10612 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -108,7 +108,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9047,9750 90
 #: by: https://api.fixmyberlin.de/api/plannings/66 (asphaltiert und verbreitert)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Fertigstellung Herbst 2021)
-#: last_checked: 2022-07-13 (mapillary)
+#: last_checked: 2022-08-08
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2021-11-30
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
@@ -1328,10 +1328,10 @@ Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 1361
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/217 (Sanierung und Verbreiterung auf 2m)
 #: by: https://twitter.com/VIZ_Berlin/status/1467735807180091392
-#: source_id: viz2021:13.254609,52.522683,06.12.2021,07:00 (Umbauarbeiten am Radweg, zwischen Meiningenallee und Reichsstr.) (bis 30.4.2022) (bis 13.7.2022) (bis 16.8.2022)
+#: source_id: viz2021:13.254609,52.522683,06.12.2021,07:00 (Umbauarbeiten am Radweg, zwischen Meiningenallee und Reichsstr.) (bis 30.4.2022) (bis 13.7.2022) (bis 16.8.2022) (bis 19.8.2022)
 #: last_checked: 2022-04-23 vvv
 # REMOVED --- #: check_frequency: 90d vvv
-#: next_check: 2022-08-16 vvv
+#: next_check: 2022-08-19 vvv
 Spandauer Damm: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Nordseite?	?::projected 795,12652 655,12690 546,12720 533,12724 425,12755
 Spandauer Damm: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Nordseite?	?::projected  228,12812 99,12849 -129,12947 -205,12985
 #: next_check ^^^
@@ -3468,8 +3468,9 @@ Uferweg am Schleswiger Ufer: Verbreiterung & Asphaltierung	?::projected 6182,129
 #: by: http://www.berliner-woche.de/marzahn/verkehr/loesung-fuer-nadeloehr-in-sicht-anwohner-der-l33-in-hoenow-sollen-laermschutzwand-erhalten-d145983.html (Baubeginn 2021, Bauzeit 12 Monate)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/l33-weiterbau-fruehestens-2022_a186974
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/ausbau-der-l33-anwohner-erhalten-mehr-laermschutz_a251332 (Baubeginn könnte Mitte 2022 sein)
-#: last_checked: 2022-03-18 (mapillary)
-#: next_check: 2023-03-01
+#: last_checked: 2022-08-06 (mapillary)
+# REMOVED --- #: next_check: 2023-03-01
+#: check_frequency: 360d
 L33: Neubau geplant	?::projected 23895,15904 23965,15894 23992,15894 25007,15650 25528,15587 25866,15543 25955,15531 26071,15470 26175,15461
 # 
 # REMOVED (vermutlich keine Verbesserung der Radwege) --- #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/mit-geld-aus-dem-landeshaushalt-beginnen-2018-mehrere-vorhaben_a164600 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1109947.php (Sanierung der Fahrbahn vom 09.08.-19.09.2021, keine Erwähnung der Radwege) --- #: last_checked: 2021-04-28 --- #: check_frequency: 120d --- Onkel-Tom-Str.: Sanierung, evtl. auch Änderungen/Verbesserungen bei den Radwegen	?::projected 151,4736 134,4786 124,4827 110,4950 88,5136
@@ -4610,11 +4611,11 @@ Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	?::projected 4583,13
 #: source_id: 2147343973 (bis Mitte Juni 2019, Leitungsarbeiten) (inaktiv)
 #: source_id: viz2021:13.349475,52.542176,17.06.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.349475,52.542176,20.06.2022,10:00 (bis 14.7.2022)
+#: source_id: viz2021:13.346694,52.544122,09.08.2022,07:30 (Fahrbahnsanierung bis 6.9.2022)
 #: osm_watch: way id="222005890" version="15"
 #: last_checked: 2022-04-09
 #: check_frequency: 120d
-# REMOVED --- #: next_check: 2022-09-30
-#: next_check: 2022-07-31
+#: next_check: 2022-09-06
 Amrumer Str.: Planung einer protected bike lane	?; 6239,15553 6348,15423 6375,15391 6474,15278 6562,15177
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/49 (Ostseite)
@@ -4796,11 +4797,14 @@ Diedersdorfer Weg: entsteht hier eine neue Fahrradstraße?	? 7668,471 7810,424 77
 Attilastr.: entstehen hier Radspuren?	?::projected 8014,4832 7896,4732 7825,4672 7690,4563
 # 
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8235
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1233484.php (Markierungsarbeiten ab 15.8.2022, kein Endedatum)
+#: by: https://berliner-abendblatt.de/2022/08/08/ab-dem-15-august-markierungsarbeiten-in-der-attilastrasse/
 #: osm_watch: way id="29695839" version="20"
 #: osm_watch: way id="542101114" version="6"
 #: last_checked: 2022-07-10
 #: check_frequency: 90d
-Attilastr.: entstehen hier Radspuren?	? 7597,4499 7482,4416 7450,4397 7410,4373 7368,4342 7310,4308 7263,4281 7221,4255 7171,4200
+#: next_check: 2022-09-01
+Attilastr.: Radspuren werden markiert?	?::projected 7597,4499 7482,4416 7450,4397 7410,4373 7368,4342 7310,4308 7263,4281 7221,4255 7171,4200
 # 
 # REMOVED (-> temp_blocking) --- #: by: http://www.berliner-woche.de/wittenau/verkehr/sanierung-der-breitenbachstrasse-d143204.html --- #: XXX bis Ende Juni 2018 --- #: next_check: 2018-03-01 --- #: priority: #A --- Breitenbachstr.: Bauarbeiten geplant, Sperrung in welcher Richtung?	?::projected 3546,19477 3810,19133
 # REMOVED (realisiert) --- #: by: http://www.berliner-woche.de/marzahn/verkehr/verkehrslenkung-berlin-stoppt-weiterbau-eines-radwegs-wegen-der-iga-d124200.html --- #: by: http://www.berliner-woche.de/marzahn/verkehr/behinderungen-fuer-autofahrer-d137711.html --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.719553.php --- #: by: https://www.berliner-woche.de/marzahn/c-verkehr/blumberger-damm-gesperrt_a171635 --- #: source_id: 2147342844 --- #: last_checked: 2018-05-21 --- # REMOVED --- #: next_check: 2018-08-20 --- #: next_check: 2018-08-01 (bei VMZ nicht mehr gelistet, schon fertig?) --- # REMOVED (realisiert) --- Blumberger Damm: wird hier ein Radweg gebaut?	? 21724,15955 21782,16253 --- Blumberger Damm: hier werden Radfahrstreifen entstehen	? 21782,16253 21785,16273 21824,16506 21869,16719 21889,16817
@@ -5359,7 +5363,7 @@ Bhf. Wilhelmsruh: wird die Radroutenausschilderung (Mauerweg, Reinickendorfer Ra
 #: source_id: viz2021:13.477159,52.500661,22.11.2021,14:52 (Bauarbeiten bis 30.05.2023)
 #: source_id: viz2021:13.475017,52.501547,29.04.2021,08:00 (Bauarbeiten bis 29.04.2022)
 #: source_id: viz2021:13.475184,52.501511,29.11.2021,08:00 (Bauarbeiten bis 29.04.2022)
-#: last_checked: 2022-08-07
+#: last_checked: 2022-08-08
 #: check_frequency: 60d
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
@@ -5497,7 +5501,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 Kyllburger Weg: "Radweg", was soll hier entstehen?	? 16645,17449 16670,17454 16785,17524
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
-#: last_checked: 2022-08-07
+#: last_checked: 2022-08-08
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -5766,7 +5770,7 @@ Sternstr. (Drewitz): gibt es Richtung Norden einen Radweg?	?; -8021,-4937 -7969,
 #: by: https://api.fixmyberlin.de/api/plannings/182 (unklar, ob dieser Weg gemeint ist)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_03_0249_0420_online.pdf (Widmung einer Grünanlage) (falls das tatsächlich hier ist)
 #: osm_watch: way id="357515474" version="4"
-#: last_checked: 2022-07-03
+#: last_checked: 2022-08-06 (mapillary)
 #: check_frequency: 360d
 entlang der U-Bahn nach Hönow: zur Zeit nur ein Pfad. Wird vielleicht ein ausgebauter Weg irgendwann entstehen?	? 25334,15051 25499,15010 25657,14941
 # 
@@ -7433,6 +7437,7 @@ Barnimer Dörferweg: werden hier auch grüne Straßenschilder aufgestellt?	? 18515,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1229885.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/artikel.81905.php (Geltungsbereichsänderung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_30_2009_2068_online.pdf (Geltungsbereichsänderung, Auslegung)
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/staedtebaulicher-vertrag-fuer-neulichterfelde-unterzeichnet_a353912
 #: osm_watch: way id="318397770" version="1"
 #: osm_watch: way id="318395919" version="5"
 #: last_checked: 2022-05-28
@@ -7822,7 +7827,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 #: XXX * Ingrid-Reschke-Str. (PLZ=10317 laut LOR)
 #: XXX * Gustav-Tempel-Str. (PLZ=10317 laut LOR)
 #: XXX laut LOR gibt's nun auch eine Hauptstraße in Friedrichshain, PLZ 10317 --- vielleicht ein Zipfel des Baugebiets hier, wäre aber zu verwirrend, das in Berlin.coords.data einzutragen
-#: last_checked: 2022-07-22
+#: last_checked: 2022-08-08
 #: check_frequency: 360d
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straßen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 
