@@ -2157,7 +2157,7 @@ Am Rummelsburger See: glatt gepflastert	Q0- 15200,10600 15249,10564 15322,10513 
 Am Rummelsburger See: Parkweg	Q1- 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Betonweg	Q0- 15931,9846 16002,9787 16049,9749
 Am Rummelsburger See: asphaltiert	Q0 16049,9749 16119,9689
-Am Rummelsburger See - Hauptstr.: Betonweg	Q0- 16049,9749 16261,9925
+Am Rummelsburger See - Hauptstr.: Betonweg	Q0- 16049,9749 16257,9929
 Gustav-Holzmann-Str.: asphaltiert	Q0 16119,9689 16302,9865
 (Rummelsburger Ufer - An den Knabenhäusern): Parkweg	Q1 15604,10204 15621,10214
 Tauchersteig: guter Asphalt	Q0 22058,2649 22047,2662 22011,2658 21879,2592 21770,2535
@@ -7866,7 +7866,7 @@ Stienitzseestr. (Friedrichshagen): Asphalt	Q0 26228,5041 26227,5060
 #: XXX Baumaßnahme 9.13 (Realisierung nach 2011) vvv
 # REMOVED (closed) --- #: osm_watch: note 1535852 4
 #: osm_watch: way id="723757589" version="6"
-#: last_checked: 2022-05-11 vvv
+#: last_checked: 2022-08-07 (mapillary) vvv
 #: check_frequency: 180d vvv
 Werlseestr.: schlechtes Kopfsteinpflaster	Q3 26612,5051 26610,5088
 Werlseestr.: Kopfsteinpflaster	Q2; 26612,5051 26620,4936
@@ -12250,6 +12250,8 @@ Pieskower Weg: Beton	Q1+ 13224,15049 13204,15062 13105,15122
 Einstein-Park: Betonplatten	Q0- 13163,14924 13207,14998 13204,15062
 Fredersdorfer Str.: Asphalt	Q0 12891,12008 12923,12043 12990,12108
 #: note: früher: Asphalt mit Rissen, Q0-
+#: XXX anscheinend bekommen einige Meter vor der Marchlewskistr. Kopfsteinpflaster, check!
+#: next_check: 2022-08-14
 Fredersdorfer Str.: Asphalt	Q0 12990,12108 13081,12196
 Ruppiner Chaussee: Asphalt, einige Schäden	Q0- 1461,21203 1427,21237 1347,21428 1254,21718 1146,21901 919,22068 488,22275
 Ruppiner Chaussee: Asphalt, einige Schäden	Q1+;Q0- 488,22275 455,22285 355,22344 231,22418 21,22545 -48,22595 -130,22647 -188,22682 -264,22729 -440,22841 -656,23011

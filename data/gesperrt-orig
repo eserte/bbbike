@@ -1848,7 +1848,7 @@ Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13809,5257 13824,5204 13
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 14119,4153 14108,4175 14048,4363 14023,4475
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13939,4778 13914,4877 13892,4955
 Landsberger Allee: Straßenbahntrasse	3nocross 12878,13229 12979,13280 13073,13329
-Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16090,10141 16117,10120 16138,10105 16187,10033 16261,9925 16302,9865
+Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16090,10141 16117,10120 16138,10105 16187,10033 16257,9929 16302,9865
 #: by: Heike Steinhardt ("eher nicht empfehlenswert")
 #: confirmed_by: srt
 Kniprodestr.: Grünstreifen	3nocross 13647,14912 13744,15018 13823,15111
@@ -3407,7 +3407,7 @@ Halbschranke	BNP:0::trailer=1 28519,337
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/baustelle-wird-eingerichtet_a351209
 #: last_checked: 2022-08-08
 #: check_frequency: 90d
-Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16261,9925 16049,9749
+Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16257,9929 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
 #: last_checked: 2022-08-07
@@ -3472,7 +3472,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://images.competitionline.com/image/f/9/5/a/b/e/1/b/f95abe1bc3b10ee4f2778b024afc5734_1.jpg?auto=format,compress&fm=jpg&ixlib=imgixjs-3.4.1&w=4742
 #: by: https://www.gm013.la/work/fmp
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2022-08-04
+#: last_checked: 2022-08-09
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
@@ -3502,8 +3502,9 @@ Seidelstraßenbrücke: Überqueren wegen eines Gerüsts nicht möglich	3nocross 3570,
 # 
 #: by: mapillary
 #: osm_watch: way id="27016349" version="14"
-#: last_checked: 2022-03-26 (mapillary)
-#: check_frequency: 120d
+#: last_checked: 2022-08-07 (mapillary, unsicher)
+# REMOVED --- #: check_frequency: 120d
+#: check_frequency: 60d
 Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5346 22677,-5418
 # 
 #: next_check_id: SCHOENERGARTEN-2022
@@ -3922,8 +3923,8 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
 #: last_checked: 2022-07-03 vvv
 #: check_frequency: 60d vvv
-#: osm_watch: way id="729324149" version="7"
-#: osm_watch: way id="162120178" version="11"
+#: osm_watch: way id="729324149" version="8"
+#: osm_watch: way id="162120178" version="12"
 # REMOVED --- #: osm_watch: node id="6751063701" version="5"
 # REMOVED (wieder offen) --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21346,5165 21379,5163 21413,5180
 # REMOVED --- #: note: Bauzäune können während der Arbeitszeiten offen sein --- #: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt --- #: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar? --- #: next_check: 2020-06-13 --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
@@ -3934,7 +3935,7 @@ Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So)
 #: osm_watch: way id="944115137" version="5"
 Henriette-Lustig-Str.: durch Bauzäune abgesperrt	2::inwork 21476,5048 21380,5003 21375,4974
-#: osm_watch: way id="719023971" version="7"
+#: osm_watch: way id="719023971" version="8"
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 # REMOVED (fast fertig) --- Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21611,5119 21645,5135
 # REMOVED (offen) --- Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 21355,5254 21386,5251

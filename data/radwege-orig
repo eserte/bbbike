@@ -1687,15 +1687,18 @@ Busspur gilt Mo-Sa 9-14 Uhr	RW5; 10695,12933 10525,12789
 	RW3; 10525,12789 10515,12780 10431,12709
 Busspur ist immer gültig	RW5; 10776,13005 10863,13095
 Busspur ist immer gültig	RW5; 10923,13156 10863,13095 10776,13005
-Busspur in Mittellage ist immer gültig	RW5; 10213,11728 10128,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631
-Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,11691 10128,11708
-	RW3; 10128,11708 10213,11728 10240,11740
-geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10240,11740 10213,11728
-#: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1233433.php
-#: XXX ist die zeitliche Beschränkung mittlerweile entfallen?
-Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786
-Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10512,12039 10574,12131
+Busspur in Mittellage ist immer gültig	RW5; 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631
+Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9905,11680 9991,11690 10000,11691 10133,11708
+	RW3; 10133,11708 10213,11728 10240,11740
+geschützter Radstreifen, mit "Leitboys"	RW3; 10299,11786 10238,11741 10213,11728
+#: note: hier sogar mit Leitboys, trotzdem als Busspur markiert und auch breit genug für Busse, Busspur-Schild erst nach 55m
+# REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1233433.php --- #: XXX ist die zeitliche Beschränkung mittlerweile entfallen?
+#: note: früher: Busspur gilt Mo-Fr 7-19 Uhr
+Busspur ist immer gültig	RW5; 10240,11740 10299,11786
+#: note: früher: Busspur gilt Mo-Fr 7-19 Uhr
+Busspur ist immer gültig	RW5; 10299,11786 10314,11804 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10478,11999
+#: note: früher: Busspur gilt Mo-Fr 7-19 Uhr
+Busspur ist immer gültig	RW5; 10512,12039 10574,12131
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/umbau-des-molkenmarktes-beginnt-mit-stauchaos-und-baumfaellungen_a197140
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
@@ -1722,7 +1725,7 @@ provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659
 #: check_frequency ^^^
 #: priority ^^^
 # 
-Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10460,11979 10423,11936
+Busspur gilt Mo-Fr 9-16 Uhr	RW5; 10512,12039 10478,11999 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847 10314,11804 10299,11786
 	RW4; 10738,12364 10804,12461 10887,12570
 #: by: https://pbs.twimg.com/media/EWHwSfnXQAAaaO9?format=jpg&name=large
@@ -1765,7 +1768,7 @@ Gehweg für Radfahrer frei	RW1; 15307,10701 15261,10738
 Gehweg für Radfahrer frei	RW1; 15639,10469 15831,10329
 gemeinsamer Rad- und Gehweg	RW2; 16004,10204 15831,10329 15639,10469
 Gehweg für Radfahrer frei	RW1; 15831,10329 16004,10204
-Gehweg für Radfahrer frei	RW1;RW1 16004,10204 16090,10141 16117,10120 16138,10105 16187,10033 16261,9925 16302,9865
+Gehweg für Radfahrer frei	RW1;RW1 16004,10204 16090,10141 16117,10120 16138,10105 16187,10033 16257,9929 16302,9865
 	RW1;RW1 16302,9865 16374,9760 16432,9673 16791,9137 16831,9078 17067,8725
 	RW1; 17067,8725 17105,8666 17143,8565 17202,8391 17292,8151 17311,8123 17527,7812
 neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465

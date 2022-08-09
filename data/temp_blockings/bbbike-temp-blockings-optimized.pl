@@ -6068,9 +6068,9 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'from' => undef,
          'id' => 3596,
          'source_id' => 'viz2021:13.385942,52.484944,11.07.2022,06:07',
-         'text' => 'Platz der Luftbrücke: Wasserrohrbruch, Fahrbahn und Gehweg Richtung Osten gesperrt, Umweg über Wege in der Parkfläche, bis 9.8.2022',
+         'text' => 'Platz der Luftbrücke: Wasserrohrbruch, Fahrbahn und Gehweg Richtung Osten gesperrt, Umweg über Wege in der Parkfläche, bis 15.8.2022',
          'type' => 'handicap',
-         'until' => 1660082400
+         'until' => 1660575600
        },
        {
          'data' => '#: next_check_id: WALLENSTEIN-2022
@@ -6112,10 +6112,13 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://nitter.it/VIZ_Berlin/status/1556286617232490498#m
 #: by: https://berliner-abendblatt.de/2022/08/07/feuerwehr-will-gefahrenbereich-um-sprengplatz-verkleinern-2/
 #: by: https://berliner-abendblatt.de/2022/08/08/berliner-feuerwehr-autobahn-avus-bleibt-weiter-gesperrt/
+#: by: https://berliner-abendblatt.de/2022/08/09/hubschrauber-sollen-sprengplatz-mit-wasser-aus-luft-kuehlen/
+#: by: https://nitter.cz/VIZ_Berlin/status/1556967983343439877#m
+#: by: https://nitter.cz/VIZ_Berlin/status/1556901867388604417#m
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31
-#: last_checked: 2022-08-08 (research) vvv
+#: last_checked: 2022-08-09 (research) vvv
 #: check_frequency: 1d vvv
 	2::temp -1328,7597 -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888 -2218,5133 -3296,3686
 	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790 -2825,5588 -2218,5133 -2112,5050 -1424,4504
