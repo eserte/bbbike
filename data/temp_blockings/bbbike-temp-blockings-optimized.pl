@@ -4686,11 +4686,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: ABBESTR-2021
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
+#: by: https://www.deutsches-architekturforum.de/thread/14781-physikalisch-technische-bundesanstalt-campus-um-und-neubauten/?postID=724237#post724237
 #: note: reopened, es gibt wieder Bauzäune; Juni 2022: mittlerweile gibt es zumindest auf der Nordseite eine Radweg-Beschilderung, deshalb q3 -> q2
 #: osm_watch: way id="152832871" version="17"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-06-11
-#: check_frequency: 60d
+#: last_checked: 2022-08-10 (daf)
+#: check_frequency: 30d
 	q2::inwork 4674,12076 4698,12124
 # REMOVED (hier nicht mehr) ---	q3::inwork 4698,12124 4755,12236
 ',
@@ -5104,7 +5105,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED (wg. Konflikt mit XXX) --- #: XXX_prog: eigentlich q4+::inwork; oder q3-::inwork;
 #: source_id: viz2021:13.37418,52.58681,02.08.2022,11:31 (bis 3.8.2022)
 #: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (evtl. Umstellung der Baustelle, zwischen Schillerstr. und Friesenstr. Gegenverkehrsregelung bis Ende März 2023, siehe auch Ampeln in der Germanenstr.)
-#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (dito)
+#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (dito) (+ Sperrung diverser Einmündungen)
 #: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (H,B)
 #: last_checked: 2022-05-14
@@ -5743,7 +5744,20 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1706716800
        },
-       undef,
+       {
+         'data' => '#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern
+#: by: http://spielstraßen.de/uebersicht.php#kreu
+#: last_checked: 2022-06-22
+#: next_check: 2022-08-26
+	q4::temp::play 12822,10487 12897,10439
+',
+         'from' => 1661378400,
+         'id' => 3551,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
+         'text' => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 26.08. bis Ende September',
+         'type' => 'handicap',
+         'until' => 1664555400
+       },
        {
          'data' => '#: also_indoor: traffic (B)
 #: last_checked: 2022-07-10
@@ -6102,7 +6116,6 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
          'until' => 1660514399
        },
        {
-         'accept_multi_feature_distance' => 3000,
          'data' => '#: by: https://nitter.it/VIZ_Berlin/status/1555042445792092164#m
 #: by: https://berliner-abendblatt.de/2022/08/04/feuerwehr-einsatz-im-grunewald-zieht-sich-bis-freitag/
 #: by: https://nitter.it/VIZ_Berlin/status/1555249442940395524#m
@@ -6115,33 +6128,36 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://berliner-abendblatt.de/2022/08/09/hubschrauber-sollen-sprengplatz-mit-wasser-aus-luft-kuehlen/
 #: by: https://nitter.cz/VIZ_Berlin/status/1556967983343439877#m
 #: by: https://nitter.cz/VIZ_Berlin/status/1556901867388604417#m
+#: by: https://berliner-abendblatt.de/2022/08/10/autobahn-115-nach-grunewald-brand-wieder-freigegeben/ (Havelchaussee wird auch freigegeben, Hüttenweg nicht)
+#: by: https://nitter.cz/Berliner_Fw/status/1557393953921634306#m (Kronprinzessinenweg vermutlich weiterhin gesperrt)
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31
-#: last_checked: 2022-08-09 (research) vvv
+#: last_checked: 2022-08-10 (research) vvv
 #: check_frequency: 1d vvv
-	2::temp -1328,7597 -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888 -2218,5133 -3296,3686
-	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790 -2825,5588 -2218,5133 -2112,5050 -1424,4504
-	2::temp -1851,6887 -1925,6790
-	2::temp -2668,6862 -2632,6789 -2638,6641
+Hüttenweg (westlicher Abschnitt)	2::temp -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888
+Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133 -3296,3686
+Königsweg	2::temp 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888
+Hüttenweg - Havelchaussee	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790
+Verbindungschaussee	2::temp -360,9193 -310,8989 -345,8899 -1112,7891 -1248,7704 -1328,7597
+Verlängerung Verbindungschaussee	2::temp -1328,7597 -1851,6887 -1925,6790 -2825,5588 -3021,5328 -3093,5223 -3605,4536
+Fischerhüttenweg	2::temp -2825,5588 -2218,5133 -2112,5050 -1424,4504
+Schwarzer Weg	2::temp -2668,6862 -2632,6789 -2638,6641
 # weitere Sperrungen im Grunewald möglich (Havelchaussee, Koenigsallee, Hüttenweg)
 #Onkel-Tom-Str.	2::temp 40,5606 -119,5885 -150,6168 -138,6681
 #Koenigsallee	2::temp -138,6681 674,7758
 #Teltower Weg	2::temp -119,5885 -182,5927 -288,6101
 Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
-	2::temp -2774,10345 -3025,10116 -3178,9953 -3412,9755 -3426,9684 -3347,9541 -3213,9425 -3140,9294 -3073,9061 -3283,8739 -3389,8624 -3578,8578 -3615,8496 -3567,8031 -3561,7964 -3536,7856 -3531,7825 -3496,7677 -3355,6874 -3382,6821 -3483,6789 -3530,6781 -3589,6721 -3598,6572 -3606,6407 -3723,6254 -3880,6142 -3944,6034 -4003,5621 -4046,5505 -4072,5227 -3962,5129
-	2::temp -1588,9194 -1484,9175 -1435,9168 -1279,9093
-	2::temp -913,6905 -1020,7446 -1040,7550 -1112,7891 -1317,8836 -1336,9001 -1435,9168 -1487,9271 -1529,9465 -1464,9626 -1467,9768 -1491,9801 -1602,9915 -1860,10317
-	2::temp -2825,5588 -3021,5328 -3093,5223 -3605,4536
-	2::temp -360,9193 -310,8989
-	2::temp -3962,5129 -3889,4967 -3807,4794 -3729,4687 -3605,4536 -3490,4212 -3296,3686 -3680,3160 -3768,3069 -4001,2858
-	2::temp 425,8766 100,8339 -363,7630 -643,7252 -913,6905
+#Havelchaussee	2::temp -2774,10345 -3025,10116 -3178,9953 -3412,9755 -3426,9684 -3347,9541 -3213,9425 -3140,9294 -3073,9061 -3283,8739 -3389,8624 -3578,8578 -3615,8496 -3567,8031 -3561,7964 -3536,7856 -3531,7825 -3496,7677 -3355,6874 -3382,6821 -3483,6789 -3530,6781 -3589,6721 -3598,6572 -3606,6407 -3723,6254 -3880,6142 -3944,6034 -4003,5621 -4046,5505 -4072,5227 -3962,5129 -3889,4967 -3807,4794 -3729,4687 -3605,4536 -3490,4212 -3296,3686
+#Kronprinzessinenweg (H)	2::temp -3296,3686 -3680,3160 -3768,3069 -4001,2858
+Schildhornweg	2::temp -1588,9194 -1484,9175 -1435,9168 -1279,9093
+Teltower Weg (nordwestlicher Abschnitt)	2::temp -913,6905 -1020,7446 -1040,7550 -1112,7891 -1317,8836 -1336,9001 -1435,9168 -1487,9271 -1529,9465 -1464,9626 -1467,9768 -1491,9801 -1602,9915 -1860,10317
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3599,
-         'text' => 'Waldbrand im Grunewald: Kronprinzessinenweg, Wege rund um den Sprengplatz und vermutlich auch weitere Straßen (Havelchaussee, Hüttenweg...) sind gesperrt',
+         'text' => 'Waldbrand im Grunewald: Hüttenstraße, Kronprinzessinenweg und Wege rund um den Sprengplatz sind vermutlich weiterhin gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },

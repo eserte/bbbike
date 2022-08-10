@@ -75,7 +75,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
-#: last_checked: 2022-08-08
+#: last_checked: 2022-08-10
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13633,10705 13678,10685 13779,10642 13850,10612 13919,10583 13986,10549 14103,10489 14218,10430 14405,10340 14558,10264
@@ -3884,7 +3884,7 @@ Ludwigsluster Str.: Radweg wird neu gemacht (?)	? 22896,12827 22906,12766 22906,
 # REMOVED --- #: next_check: 2021-12-31
 G¸lzower Str.: Radweg wird neu gemacht	?; 22304,12157 22388,12190 22603,12359 22817,12525 22967,12647
 #: XXX aber nicht 2021
-#: last_checked: 2022-01-09 (mapillary)
+#: last_checked: 2022-08-09 (mapillary)
 #: check_frequency: 270d
 Cottbusser Str.: Fahrradstraﬂe geplant	?::projected 23104,14827 23175,14823 23222,14809 23297,14772 23354,14756 23405,14758 23531,14781 23735,14814 23798,14826
 #: by: ^^^
@@ -4049,7 +4049,7 @@ Gartenstadt Tempelhof: Radwegverbindung geplant	?::projected 7949,7607 8188,7610
 # 
 #: by: https://www.berliner-woche.de/hellersdorf/c-verkehr/kreuzung-erhaelt-ampelanlage_a260779 (noch 2020)
 #: osm_watch: node id="34104628" version="14"
-#: last_checked: 2022-07-31 (mapillary)
+#: last_checked: 2022-08-09 (mapillary)
 #: check_frequency: 120d
 Gothaer/Eisenacher Str.: Ampel wird gebaut	?::projected 22883,15091 22899,15073 22916,15054
 # 
@@ -4800,11 +4800,12 @@ Attilastr.: entstehen hier Radspuren?	?::projected 8014,4832 7896,4732 7825,4672
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8235
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1233484.php (Markierungsarbeiten ab 15.8.2022, kein Endedatum)
 #: by: https://berliner-abendblatt.de/2022/08/08/ab-dem-15-august-markierungsarbeiten-in-der-attilastrasse/
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1234024.php (Sieversbr¸cke bis Rottweilerstr. am 18.8.2022 fertig, der Rest ab 05.09.2022)
 #: osm_watch: way id="29695839" version="20"
 #: osm_watch: way id="542101114" version="6"
 #: last_checked: 2022-07-10
 #: check_frequency: 90d
-#: next_check: 2022-09-01
+#: next_check: 2022-08-18
 Attilastr.: Radspuren werden markiert?	?::projected 7597,4499 7482,4416 7450,4397 7410,4373 7368,4342 7310,4308 7263,4281 7221,4255 7171,4200
 # 
 # REMOVED (-> temp_blocking) --- #: by: http://www.berliner-woche.de/wittenau/verkehr/sanierung-der-breitenbachstrasse-d143204.html --- #: XXX bis Ende Juni 2018 --- #: next_check: 2018-03-01 --- #: priority: #A --- Breitenbachstr.: Bauarbeiten geplant, Sperrung in welcher Richtung?	?::projected 3546,19477 3810,19133
@@ -5180,7 +5181,7 @@ Kollwitzstr.: entsteht hier eine Fahrradstraﬂe?	? 10937,14006 11006,14087 11109,
 #: XXX Waldstraﬂe - Nordendstraﬂe - Birkenallee (Niederschˆnhausen)
 #: XXX ^^^
 # 
-# REMOVED --- #: by: http://www.infravelo.de/projekt/oderberger-strasse/ (4. Quartal 2021 - 2. Quartal 2022) (mittlerweile "in Bau") (mittlerweile 1. Quartal 2022 - 2. Quartal 2022) (mittlerweile 2. Quartal 2022 - 3. Quartal 2022) --- #: osm_watch: way id="41828679" version="25" --- #: osm_watch: way id="42156202" version="22" --- #: XXX laut osm im s¸dˆstlichen Teil realisiert --- allerdings ist nur die Straﬂenmarkierung (Linienstraﬂen-Style) fertig, aber ausgeschildert wurde noch nicht; jenseits der Kastanienallee wurde auch schon zur H‰lfte markiert --- #: last_checked: 2022-07-14 --- #: check_frequency: 14d --- #: next_check: 2022-09-30 --- Oderberger Str.: Fahrradstraﬂe wird realisiert	?::inwork 10372,14994 10379,14963 10401,14963 10723,14772 10864,14692 10893,14705
+# REMOVED --- #: by: http://www.infravelo.de/projekt/oderberger-strasse/ (4. Quartal 2021 - 2. Quartal 2022) (mittlerweile "in Bau") (mittlerweile 1. Quartal 2022 - 2. Quartal 2022) (mittlerweile 2. Quartal 2022 - 3. Quartal 2022) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1233924.php --- #: osm_watch: way id="41828679" version="25" --- #: osm_watch: way id="42156202" version="22" --- #: XXX laut osm im s¸dˆstlichen Teil realisiert --- allerdings ist nur die Straﬂenmarkierung (Linienstraﬂen-Style) fertig, aber ausgeschildert wurde noch nicht; jenseits der Kastanienallee wurde auch schon zur H‰lfte markiert --- #: last_checked: 2022-07-14 --- #: check_frequency: 14d --- #: next_check: 2022-09-30 --- Oderberger Str.: Fahrradstraﬂe wird realisiert	?::inwork 10372,14994 10379,14963 10401,14963 10723,14772 10864,14692 10893,14705
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (Fr¸hjahr 2019)
 #: by: Tsp vom 2020-03-07 (beidseitige Radstreifen zwischen Eberswalder und Stargarder, vielleicht sogar bis Wichertstr., noch 2020)
@@ -8272,7 +8273,7 @@ Bitterfelder Str. - Alte R¸sternallee: Radwegrampen in Planung	?::projected 2031
 #: XXX bleiben die bestehenden Straﬂen w‰hrend der Bauzeit passierbar?
 #: check_frequency: 150d vvv
 #: next_check: 2023-12-31 vvv
-#: last_checked: 2022-07-03 vvv
+#: last_checked: 2022-08-09 (mapillary) vvv
 Bebauungsplan 10-45: Stadtplatz und Planstraﬂe C geplant	?::projected 23265,15054 23283,15061 23339,15079 23348,15042 23432,15065 23692,15088
 Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23432,15065 23404,15223 23399,15252
 Bebauungsplan 10-45: verkehrsberuhigter Bereich sowie Rad/Gehweg geplant	?::projected 23404,15223 23663,15270
@@ -8305,7 +8306,7 @@ Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23305,14914 23110,14945 231
 #: last_checked: 2022-07-03 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-04-01 vvv
-geplanter Rad- und Fuﬂweg	?::projected 23265,15351 23368,15362
+# REMOVED --- (Neuruppiner Str. - Havell‰nder Ring)	?::projected 23265,15351 23381,15361
 geplante Straﬂen bzw. Rad- und Fuﬂweg	?::projected 23391,15298 23324,15292 23280,15244
 # REMOVED (-> strassen-org) --- #: osm_watch: way id="1021876134" version="3" --- Planstraﬂe D: schon fertiggestellt, aber die Anbindung Zossener Str. ist nicht freigegeben, asphaltiert, Ausschilderung "Privatstraﬂe", geplanter Name "Brigitte-Reimann-Str."	?::inwork 23368,15469 23363,15517 23388,15637
 # REMOVED --- #: next_check ^^^
