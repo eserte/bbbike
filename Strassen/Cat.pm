@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2013,2014,2016,2017,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2013,2014,2016,2017,2020,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '2.03';
+$VERSION = '2.04';
 
 use File::Basename qw(basename);
 
@@ -37,7 +37,7 @@ my %versioned_file_to_cat;
 
     my @flaechen_3_16     = qw(F:Ae F:Cemetery F:Forest F:Green
 			       F:Industrial F:Orchard F:Mine
-			       F:P F:Pabove F:Sport);
+			       F:P F:Pabove F:Sport F:F);
     my @flaechen_3_17_add = qw(F:ex-Ae);
     my @flaechen_3_18_add = (sub {
 				 # not handled, but older bbbike <= 3.17 shows a green area which is acceptable
