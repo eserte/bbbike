@@ -3962,7 +3962,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
 #: osm_watch: way id="29547073" version="11"
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2022-07-26
+#: last_checked: 2022-08-11
 # REMOVED --- #: next_check: 2022-05-01
 	2::inwork 14980,8940 14947,8993 14855,9046 14705,9034
 ',
@@ -5635,7 +5635,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: note: Baustelle existiert weiterhin, trotz der entfernten VIZ-Meldung
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
-#: last_checked: 2022-08-03 vvv
+#: last_checked: 2022-08-11 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-08-02 vvv
 	q4::inwork; 15560,7400 15693,7512
@@ -5690,7 +5690,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G(falsch))
-#: last_checked: 2022-08-03
+#: last_checked: 2022-08-11
 	q4::inwork; 15436,7031 15555,7133 15695,7254
 ',
          'from' => undef,
@@ -6130,16 +6130,20 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://nitter.cz/VIZ_Berlin/status/1556901867388604417#m
 #: by: https://berliner-abendblatt.de/2022/08/10/autobahn-115-nach-grunewald-brand-wieder-freigegeben/ (Havelchaussee wird auch freigegeben, Hüttenweg nicht)
 #: by: https://nitter.cz/Berliner_Fw/status/1557393953921634306#m (Kronprinzessinenweg vermutlich weiterhin gesperrt)
-#: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00
-#: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32
-#: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31
-#: last_checked: 2022-08-10 (research) vvv
+#: by: https://www.berliner-zeitung.de/news/grossbrand-im-berliner-grunewald-es-ist-mit-explosionen-zu-rechnen-li.253251
+#: by: https://berliner-abendblatt.de/2022/08/11/berliner-feuerwehr-faehrt-einsatz-nach-waldbrand-zurueck/
+#: by: https://nitter.cz/VIZ_Berlin/status/1557765236052082690#m
+#: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
+#: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
+#: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
+#: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
+#: last_checked: 2022-08-11 (research) vvv
 #: check_frequency: 1d vvv
 Hüttenweg (westlicher Abschnitt)	2::temp -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888
 Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133 -3296,3686
-Königsweg	2::temp 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888
+#Königsweg	2::temp 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888
 Hüttenweg - Havelchaussee	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790
-Verbindungschaussee	2::temp -360,9193 -310,8989 -345,8899 -1112,7891 -1248,7704 -1328,7597
+#Verbindungschaussee	2::temp -360,9193 -310,8989 -345,8899 -1112,7891 -1248,7704 -1328,7597
 Verlängerung Verbindungschaussee	2::temp -1328,7597 -1851,6887 -1925,6790 -2825,5588 -3021,5328 -3093,5223 -3605,4536
 Fischerhüttenweg	2::temp -2825,5588 -2218,5133 -2112,5050 -1424,4504
 Schwarzer Weg	2::temp -2668,6862 -2632,6789 -2638,6641
@@ -6150,14 +6154,15 @@ Schwarzer Weg	2::temp -2668,6862 -2632,6789 -2638,6641
 Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
 #Havelchaussee	2::temp -2774,10345 -3025,10116 -3178,9953 -3412,9755 -3426,9684 -3347,9541 -3213,9425 -3140,9294 -3073,9061 -3283,8739 -3389,8624 -3578,8578 -3615,8496 -3567,8031 -3561,7964 -3536,7856 -3531,7825 -3496,7677 -3355,6874 -3382,6821 -3483,6789 -3530,6781 -3589,6721 -3598,6572 -3606,6407 -3723,6254 -3880,6142 -3944,6034 -4003,5621 -4046,5505 -4072,5227 -3962,5129 -3889,4967 -3807,4794 -3729,4687 -3605,4536 -3490,4212 -3296,3686
 #Kronprinzessinenweg (H)	2::temp -3296,3686 -3680,3160 -3768,3069 -4001,2858
-Schildhornweg	2::temp -1588,9194 -1484,9175 -1435,9168 -1279,9093
-Teltower Weg (nordwestlicher Abschnitt)	2::temp -913,6905 -1020,7446 -1040,7550 -1112,7891 -1317,8836 -1336,9001 -1435,9168 -1487,9271 -1529,9465 -1464,9626 -1467,9768 -1491,9801 -1602,9915 -1860,10317
+#Schildhornweg	2::temp -1588,9194 -1484,9175 -1435,9168 -1279,9093
+#Teltower Weg (nordwestlicher Abschnitt)	2::temp -913,6905 -1020,7446 -1040,7550 -1112,7891 -1317,8836 -1336,9001 -1435,9168
+#Teltower Weg (nordwestlicher Abschnitt)	2::temp -1435,9168 -1487,9271 -1529,9465 -1464,9626 -1467,9768 -1491,9801 -1602,9915 -1860,10317
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3599,
-         'text' => 'Waldbrand im Grunewald: Hüttenstraße, Kronprinzessinenweg und Wege rund um den Sprengplatz sind vermutlich weiterhin gesperrt',
+         'text' => 'Waldbrand im Grunewald: Kronprinzessinenweg, Wege rund um den Sprengplatz und Hüttenweg sind vermutlich weiterhin gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },

@@ -7,6 +7,12 @@
 # 
 #: temporary vvv
 # 
+#: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
+#: last_checked: 2022-08-11
+#: check_frequency: 120d
+#: note: Anforderungsampel
+Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
+# 
 #: next_check_id: KWEISENBAHNBRUECKE-2022
 #: last_checked: 2022-07-12
 #: next_check: 2023-06-27
@@ -74,7 +80,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2022-08-05 vvv
+#: last_checked: 2022-08-11 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -93,7 +99,7 @@ Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2022-08-07
+#: last_checked: 2022-08-11
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
@@ -1151,7 +1157,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5240 (Prüfung für einen Umbau)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036154063735/154063735/00111219/19-Anlagen/05/B1138ZB2.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7226 (Antrag)
-#: last_checked: 2022-06-04
+#: last_checked: 2022-08-11
 #: check_frequency: 180d
 	X 18080,5376
 	X 19904,3464
@@ -3560,15 +3566,15 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 18374,4307
 # REMOVED (ausgeschaltet) --- #: next_check_id: STERNDAMM-2020 --- 
 #: XXX wie lange bleibt die provisorische Ampel?
-#: osm_watch: node id="9221296478" version="1"
+#: osm_watch: node id="9221296478" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2022-07-12
+#: last_checked: 2022-08-11
 #: check_frequency: 90d
 	F::inwork 17695,5394
 #: XXX wie lange bleibt die provisorische Ampel?
-#: osm_watch: node id="9221296482" version="3"
+#: osm_watch: node id="9221296482" version="4"
 #: note: Anforderungsampel
-#: last_checked: 2022-07-12
+#: last_checked: 2022-08-11
 #: check_frequency: 90d
 	F::inwork 17747,5452
 # 

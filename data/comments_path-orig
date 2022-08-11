@@ -141,8 +141,8 @@ Lennéstr: Radweg Richtung Ebertstr. auf der linken Seite im Tiergarten	CS; 8203,
 #: XXX_prog: RL:ja, GPS:jein (wegen spitzem Winkel) (evtl. ein Kandidat für comments_misc)
 #: note: und nicht der Asphaltstraße
 dem Schotterweg folgen	CP; 24210,37562 24186,37723 24208,37830
-Hauptstr.: bereits an der Gustav-Holzmann-Str. die Gehwegseite wechseln	PI; 16302,9865 16257,9929 16049,9749
-Hauptstr.: wegen Straßenbahntrasse zunächst auf der linken Gehwegseite weiterfahren und an der nächsten Ampel die Gehwegseite wechseln	CP; 16049,9749 16257,9929 16187,10033
+Hauptstr.: bereits an der Gustav-Holzmann-Str. die Gehwegseite wechseln	PI; 16302,9865 16257,9929 16178,9861 16049,9749
+Hauptstr.: wegen Straßenbahntrasse zunächst auf der linken Gehwegseite weiterfahren und an der nächsten Ampel die Gehwegseite wechseln	CP; 16049,9749 16178,9861 16257,9929 16187,10033
 Rollbergstr. - Karl-Marx-Str.: zunächst auf dem linken Gehweg bleiben, an der Ampel Anzengruberstr. die Straßenseite wechseln	CP; 12545,8209 12714,8249 12689,8289
 zunächst auf dem linken Gehweg des Weißenseer Wegs bleiben, nächste Möglichkeit (Bernhard-Bästlein-Str. oder Landsberger Allee) zur Querung benutzen	CP; 15425,13739 15436,13780 15354,13998
 Weißenseer Weg - Park am Fennpfuhl: bereits an der Fußgängerampel auf die linke Seite wechseln	PI; 15468,13700 15455,13733 15425,13739
@@ -524,7 +524,7 @@ Abzweig - Salvador-Allende-Str.: auf den linken Gehweg bis zur Ampel Friedrichsh
 #: XXX wird eventuell im Zuge der Maßnahme Nsw.3 verbessert
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5826 (Verkehrsführung verbessern) (wurde allerdings abgelehnt; die allgemeine Verbesserung der Situation wird aber irgendwann passieren ("Umgestaltung des Bahnhofsvorplatzes")
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/3A22FF18-9B17-4F51-B470-2F50F0C68929/U13-2_Entwurf%20Sterndamm%20und%20Bahnhofsvorplatz_LP-Blatt02.pdf (Linksabbiegemöglichkeit für Radfahrer im Zuge der Umgestaltung am S-Bhf. Schöneweide)
-#: last_checked: 2022-07-12
+#: last_checked: 2022-08-11
 #: check_frequency: 180d
 Michael-Brückner-Str. - Sterndamm: an der Ampel Sterndamm besteht vom Radweg aus keine Möglichkeit zum Linksabbiegen, deshalb bereits an der Ampel Hasselwerderstr. auf den linken Gehweg wechseln	PI; 17960,5511 17886,5587 17747,5452
 Rixdorfer Str. - KGA An der Südostallee: wegen einer Leitplanke zwischen Radweg und Fahrbahn bereits 40 Meter vorher auf die Fahrbahn wechseln	CP; 17160,6239 17056,6133 17070,6115

@@ -1747,7 +1747,8 @@ Hünensteig	1s:q3 6387,5057 6395,5154
 Paul-Lincke-Ufer	1s:q3 12116,9825 11946,9913 11735,10022 11512,10105
 Stallschreiberstr.	1 10482,11398 10615,11240 10674,11170
 Jahnstr.	1s:q4 11500,9116 11509,9392
-Waldweg	1s 25496,2429 24981,2580
+#: note: nur Einfahrt verboten, unechte Einbahnstraße
+Waldweg	1s 25496,2429 25116,2529
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13179,7613 13173,7567 13117,7471 13029,7353
 # REMOVED --- #: next_check: 2013-10-30 --- #: XXX von 1s:q3 -> 1s:q4 degradiert, weil wegen der Umleitung hier mehr Verkehr ist - später wieder aufheben
@@ -2175,7 +2176,7 @@ Potsdamer Chaussee: Mittelstreifen	3nocross -391,2914 -267,2945 -151,2975
 Potsdamer Chaussee: Mittelstreifen	3nocross -2280,2177 -2074,2258 -2023,2279
 Potsdamer Chaussee: Mittelstreifen	3nocross -2023,2279 -1959,2305 -1646,2434
 Bahnhofstr.: Straßenbahntrasse	3nocross 22116,5442 22087,5404 22054,5360 21954,5229
-# REMOVED (separate Straße nun) --- Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21146,4229
+# REMOVED (separate Straße nun) --- Dörpfeldstr.: Straßenbahngleise	3nocross 20834,4035 21053,4162 21129,4217 21146,4229
 #: note: theoretisch wäre das Linksabbiegen von der Fahrbahn aus möglich, aber der Radweg ist benutzungspflichtig
 Ernst-Ruska-Ufer: Lärmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14843,15007 14828,15050 14686,15608
@@ -3405,9 +3406,10 @@ Halbschranke	BNP:0::trailer=1 28519,337
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/baustelle-wird-eingerichtet_a351209
-#: last_checked: 2022-08-08
+#: last_checked: 2022-08-11
 #: check_frequency: 90d
-Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16257,9929 16049,9749
+Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
+# REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
 #: last_checked: 2022-08-07
@@ -3450,7 +3452,7 @@ Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	
 # 
 #: XXX laut Schild der Wasserbetriebe bis April 2023; Einbahnstraßenregelung fängt schon 30m westlich der Einmündung Zum Langen See an
 #: XXX man kommt als Radfahrer aber recht gut vorbei
-#: last_checked: 2022-07-03
+#: last_checked: 2022-08-11
 #: check_frequency: 180d
 #: next_check: 2023-04-30
 #: valid: -20230531
@@ -3553,7 +3555,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2022-08-07
+#: last_checked: 2022-08-11
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -3714,7 +3716,7 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 #: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
-#: last_checked: 2022-07-12 vvv
+#: last_checked: 2022-08-11 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2022-07-01 vvv
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
@@ -3753,8 +3755,8 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: osm_watch: way id="229647788" version="8"
 #: osm_watch: way id="850453338" version="6"
-#: last_checked: 2022-04-22 (mapillary)
-#: check_frequency: 90d
+#: last_checked: 2022-08-11
+#: check_frequency: 60d
 #: next_check: 2022-11-01
 # REMOVED (Hochbauarbeiten dauern länger) --- #: next_check: 2021-10-31
 Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 18825,3325 18689,3465
@@ -3848,7 +3850,7 @@ George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 75
 #: next_check_id: MAXIMILIANSQUARTIER-2020
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8051 (Forderung nach Öffnung der Einbahnstraße für Radfahrer)
 #: XXX wird die Einbahnstraßenregelung nach den Bauarbeiten aufgehoben?
-#: last_checked: 2022-07-27
+#: last_checked: 2022-08-11 (daf)
 #: check_frequency: 45d
 Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3219,7987 3224,8106 3230,8230
 # 
@@ -4081,7 +4083,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738
-#: last_checked: 2022-07-12
+#: last_checked: 2022-08-11
 #: check_frequency: 360d
 #: next_check: 2022-12-20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -4104,10 +4106,15 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
 #: osm_watch: way id="226163591" version="5"
 #: priority: #C
-#: last_checked: 2022-06-06
+#: last_checked: 2022-08-11
 #: check_frequency: 360d
 #: next_check: 2022-12-20
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521
+# 
+#: next_check_id: SCHOENEWEIDE-2018
+#: last_checked: 2022-08-11
+#: check_frequency: 90d
+(Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
 # 
 # REMOVED (laut osm komplett abgetragen) --- #: next_check_id: SPREEBOGENPARK-2018 --- #: by: http://www.berliner-woche.de/hansaviertel/verkehr/rueckbau-der-ostumfahrung-schweizer-botschaft-im-regierungsviertel-d140116.html --- #: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2018/pressemitteilung.705903.php --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_25_3283_3434_online.pdf --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_33_4519_4646_online.pdf --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.760640.php --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/o-v-bismarck-allee-w-brandt-str-alt-moabit-tiergarten-dauerhaft-gesperrt --- #: XXX ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt noch passierbar? --- #: XXX nach dem Rückbau Straße vollständig entfernen; laut fritz ist die Fertigstellung des Spreebogenparks für Sommer 2019 geplant, im Sommer 2020 sollen alle Baumaßnahmen abgeschlossen sein --- #: note: Bebauungsplan II - 200ib --- #: source_id: 2147343514 --- #: osm_watch: way id="537967314" version="6" --- #: last_checked: 2018-11-27 --- #: check_frequency: 60d --- #: priority: #B --- Schweizer Botschaft: Rückbau der Straße	2:inwork 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
 # REMOVED (dauerhaft entfernt) --- #: last_checked: 2018-11-27 --- Schreibenfeder-Passage: wegen Bauarbeiten gesperrt, ggfs. dauerhaft	2:inwork 14838,11410 14949,11474
@@ -4516,7 +4523,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.deutsches-architekturforum.de/thread/11563-kleinere-projekte-moabit/?postID=645524#post645524
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1051294.php (Baumfällungen)
 #: by: https://www.berliner-woche.de/moabit/c-bauen/uferwand-und-promenade-sollen-bis-spaetsommer-fertig-sein_a301440 (bis Spätsommer 2021)
-#: osm_watch: way id="501191631" version="3"
+#: osm_watch: way id="501191631" version="4"
 #: last_checked: 2022-08-10 (daf)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-09-01

@@ -903,6 +903,9 @@ Adlergestell -> Weerthstr.: keine Abbiegemöglichkeit	3::igndisp 20002,3349 20010
 Weerthstr. -> Adlergestell: keine Abbiegemöglichkeit	3::igndisp 20038,3357 20010,3340 20064,3278
 Adlergestell -> S-Bhf. Adlershof, Ernst-Augustin-Str.: keine Abbiegemöglichkeit	3::igndisp 20010,3340 20002,3349 19938,3294
 S-Bhf. Adlershof, Ernst-Augustin-Str. -> Adlergestell: keine Abbiegemöglichkeit	3::igndisp 19938,3294 20002,3349 19946,3415
+vorhandene Überfahrt mit Baken abgesperrt	3nocross::ignrte 20010,3340 20064,3278 20207,3115
+Adlergestell -> Radickestr.: vorhandene Überfahrt mit Baken abgesperrt	3::igndisp 20010,3340 20064,3278 20166,3344
+Radickestr. -> Adlergestell: vorhandene Überfahrt mit Baken abgesperrt	3::igndisp 20166,3344 20064,3278 20207,3115
 Mittelstreifen	3nocross::ignrte 5542,11075 5459,11135 5258,11285
 Hardenbergstr. -> Yva-Bogen: Mittelstreifen	3::igndisp 5542,11075 5459,11135 5426,11039
 Hardenbergstr. -> Jebensstr.: Mittelstreifen	3::igndisp 5258,11285 5459,11135 5587,11397
@@ -1312,10 +1315,10 @@ Ontarioseestr.: Sackgasse für Autos	3 18387,10070 18339,10048 18408,10041
 Schranke	3 11948,21366 11973,21385 11982,21392
 Schranke	3 11982,21392 11973,21385 11948,21366
 Pestalozzistr.	1 24769,11819 24908,11785
-Baumstamm	3 24978,2634 24981,2580 25496,2429
-Baumstamm	3 24982,2519 24981,2580 25496,2429
-Baumstamm	3 25496,2429 24981,2580 24978,2634
-Baumstamm	3 25496,2429 24981,2580 24982,2519
+Baumstamm	3 24978,2634 24981,2565 25116,2529
+Baumstamm	3 24982,2519 24981,2565 25116,2529
+Baumstamm	3 25116,2529 24981,2565 24978,2634
+Baumstamm	3 25116,2529 24981,2565 24982,2519
 Franz-Klühs-Str.	1 9384,10536 9570,10566 9770,10590
 Karower Str.	3 16659,25409 16669,25373 16583,25440
 Karower Str.	3 16659,25409 16669,25373 16647,25293
