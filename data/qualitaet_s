@@ -8803,7 +8803,8 @@ An der Filmfabrik: Verbundsteinpflaster	Q1 22872,5018 22856,5245 22851,5327
 Am Werksgarten: Kopfsteinpflaster	Q2 22856,5245 22803,5241
 Am Werksgarten: Kopfsteinpflaster	Q2 22803,5278 22737,5278
 Am Filmlager: Kopfsteinpflaster	Q2 22802,5327 22803,5278 22803,5241 22804,5199
-Werlseestr. - Am Goldmannpark: unbefestigte Straße	Q2 26199,5643 26239,5659 26274,5694 26282,5830
+Werlseestr. - Am Goldmannpark: Asphalt	Q0 26199,5643 26239,5659
+Werlseestr. - Am Goldmannpark: unbefestigte Straße	Q2 26239,5659 26274,5694 26282,5830
 (Am Goldmannpark - Fürstenwalder Damm): Asphalt	Q0 26282,5830 26294,5923 26424,5924
 Am Mühlenfließ: Verbundsteinpflaster	Q1 29982,4525 29891,4605
 Saarower Weg: sandig	Q3 31210,3873 31321,3890
@@ -10605,8 +10606,8 @@ Fritzi-Massary-Str. [am Highdeck]: Asphalt	Q0 15361,6317 15360,6424
 Am Falkenberg [Wohngebietsstraße]: Beton	Q1 21902,877 21740,943 21721,939 21696,909
 Pieskower Weg: Beton	Q1 13224,15049 13204,15062 13105,15122
 Einstein-Park: Betonplatten	Q0 13163,14924 13207,14998 13204,15062
-Fredersdorfer Str.: Asphalt	Q0 12891,12008 12923,12043 12990,12108
-Fredersdorfer Str.: Asphalt	Q0 12990,12108 13081,12196
+Fredersdorfer Str.: Asphalt	Q0 12891,12008 12923,12043 13051,12167
+Fredersdorfer Str.: Kopfsteinpflaster	Q2 13051,12167 13086,12186
 Ruppiner Chaussee: Asphalt, einige Schäden	Q0 1461,21203 1427,21237 1347,21428 1254,21718 1146,21901 919,22068 488,22275
 Ruppiner Chaussee: Asphalt, einige Schäden	Q1;Q0 488,22275 455,22285 355,22344 231,22418 21,22545 -48,22595 -130,22647 -188,22682 -264,22729 -440,22841 -656,23011
 (Einfahrt Bauhaus): Asphalt	Q0 4988,17172 5020,17157 5158,17138
@@ -10991,6 +10992,9 @@ Brigitte-Reimann-Str.: Asphalt	Q0 23368,15469 23363,15517 23388,15637
 (Müggelheimer Damm - Schmetterlingshorst): Waldweg, etwas Schotter	Q2 25218,2691 25159,2622 25116,2529
 (Müggelheimer Damm - Schmetterlingshorst): Waldweg, etwas Schotter	Q1 25116,2529 24987,2068 24974,1945 24883,1740
 (zur Dörpfeldstraße [Nebenstraße]): Gehwegplatten	Q1 21129,4217 21126,4221 21071,4189
+Templerzeile: Asphalt mit Schäden	Q1 9665,6029 9679,6160 9681,6180
+Parkstr. (Tempelhof): Kleinsteinpflaster	Q1 9202,6412 9143,6415
+Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9122,6471 9141,6459
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12961,7 +12965,7 @@ Erich-Kuttner-Str.: Asphalt mit einigen Schäden	Q1 14590,13560 14551,13571 14439
 Eiswaldtstr.: Asphalt, stellenweise etwas uneben	Q0 6718,2443 6862,2452 6965,2418 7051,2366 7172,2343 7285,2377
 Scabellstr.: mäßiger Asphalt	Q1 -4290,2304 -4421,2350
 Rieflerstr.: Beton	Q0 9989,-1278 10147,-1273
-Luise-Henriette-Str.: Asphalt	Q0 9253,6484 9134,6467
+Luise-Henriette-Str.: Asphalt	Q0 9253,6484 9242,6482 9150,6467
 Otto-Wels-Ring: Beton	Q0 13906,3340 13841,3213 13854,3016 13872,2939 13894,2906 13948,2910 13982,2916 14017,2985 14072,3108 14126,3225
 Höltermannsteig: Gehwegpflasterung	Q0 13999,2727 13951,2801 13948,2910 13954,3035 13965,3222 14023,3276
 Dankwartstr.: Asphalt	Q0 17184,12286 17210,12486
@@ -14727,7 +14731,7 @@ Heidebergplan: guter Asphalt	Q0 -7121,14711 -7140,14749 -7149,14768
 Teutonenstr. (Nikolassee): asphaltiert	Q0 -3740,2295 -3610,2237 -3519,2180
 Teutonenstr. (Nikolassee): schlechtes Kopfsteinpflaster	Q3 -3519,2180 -3409,2113 -3322,2029 -3249,2002
 Teutonenstr. (Nikolassee): asphaltiert	Q0 -3249,2002 -3237,1945
-Reinhardtstr. (Tempelhof): Asphalt	Q0 9154,6638 9131,6553 9134,6467 9143,6415
+Reinhardtstr. (Tempelhof): Asphalt	Q0 9154,6638 9136,6552 9150,6467 9141,6459 9143,6415
 Lahmertstr.: Asphalt	Q0 22328,2084 22236,2029 22220,2018 22130,1961
 (Lahmertstr. - Bohnsdorfer Str.): Waldweg	Q1 22130,1961 21997,1869
 Gondeker Str.: Asphalt	Q0 16333,6544 16474,6675

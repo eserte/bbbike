@@ -912,6 +912,11 @@ Stolzenfelsstr.	1 19447,8175 19407,8143
 Hannaweg	1s 20938,14066 20923,13953
 Birkholzer Weg	1 18118,19394 18143,19384
 Birkholzer Weg	1 18143,19384 18106,19353
+Mittelstreifen	3nocross::ignrte 9254,6542 9253,6484 9250,6414 9246,6364
+Tempelhofer Damm -> Luise-Henriette-Str.: Mittelstreifen	3::igndisp 9250,6414 9253,6484 9242,6482
+Luise-Henriette-Str. -> Tempelhofer Damm: Mittelstreifen	3::igndisp 9242,6482 9253,6484 9254,6542
+Tempelhofer Damm -> Parkstr.: Mittelstreifen	3::igndisp 9246,6364 9250,6414 9237,6413
+Parkstr. -> Tempelhofer Damm: Mittelstreifen	3::igndisp 9237,6413 9250,6414 9253,6484
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3296,7 +3301,7 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285 10675,12280
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
-Johannisstr.: Einbahnstraße	1s:inwork 9588,13174 9385,13174
+Johannisstr.: Einbahnstraße	1s:inwork 9588,13174 9385,13174 9254,13171
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
 Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -3903,3 +3908,5 @@ Otto-Suhr-Allee, linker Gehweg bis zur Fußgängerfurt	1::igndisp 4653,11896 4608,
 Jaczostr./Heerstr. - Südpark: linker Gehweg	1::igndisp -4029,11803 -4078,11800
 Clayallee: linker Gehweg	1::igndisp 1297,4311 1310,4335
 Sachsendamm: linker Gehweg	1::igndisp 7014,8165 6935,8208
+Tempelhofer Damm: linker Gehweg	1::igndisp 9237,6413 9245,6352
+Tempelhofer Damm: linker Gehweg	1::igndisp 9254,6542 9242,6482

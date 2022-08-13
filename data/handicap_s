@@ -2837,7 +2837,7 @@ Großstr.: enge Straße	q0 18574,6401 18483,6460 18457,6490 18429,6582
 Rothariweg: enge Straße	q0 8292,6331 8290,6191 8291,6048
 Küselstr.: enge Straße	q1 12299,15463 12221,15514 12158,15556 12094,15598 12058,15621
 Zillertalstr.: enge Straße	q0 10807,17193 10498,17192 10228,17191 10198,17196
-Reinhardtstr. (Tempelhof): enge Straße	q1 9154,6638 9131,6553 9134,6467 9143,6415
+Reinhardtstr. (Tempelhof): enge Straße	q1 9154,6638 9136,6552 9150,6467 9141,6459 9143,6415
 Hackenbergstr.: enge Straße	q1 20428,3786 20380,3855 20329,3928 20280,3996 20253,4034 20248,4040
 Breestpromenade: enge Straße	q1 25761,5613 26059,5631 26199,5643
 Zellerfelder Str.: enge Straße	q1 11526,18929 11468,19106
@@ -3256,7 +3256,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 Hönower Str.: temporäre Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 18735,9421 18765,9426 18846,9532
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10472,14632 10320,14608
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9429,12728 9402,12792 9386,12833 9375,12911
-Johannisstr.: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174
+Johannisstr.: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174 9254,13171
 Mauerstr..: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9108,11961 9076,12054
 Jägerstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9195,11972 9108,11961
 Taubenstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9207,11880 9138,11872
@@ -3327,3 +3327,5 @@ Otto-Suhr-Allee, linker Gehweg bis zur Fußgängerfurt	q3::igndisp; 4608,11935 465
 Jaczostr./Heerstr. - Südpark: linker Gehweg	q3::igndisp; -4078,11800 -4029,11803
 Clayallee: linker Gehweg	q3::igndisp; 1310,4335 1297,4311
 Sachsendamm: linker Gehweg	q3::igndisp; 6935,8208 7014,8165
+Tempelhofer Damm: linker Gehweg	q4::igndisp; 9245,6352 9237,6413
+Tempelhofer Damm: linker Gehweg	q4::igndisp; 9242,6482 9254,6542

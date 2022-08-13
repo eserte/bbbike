@@ -118,7 +118,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="18"
-#: last_checked: 2022-07-24
+#: last_checked: 2022-08-13
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -855,7 +855,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2022-08-05
+#: last_checked: 2022-08-13
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -1054,7 +1054,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-08-10
+#: last_checked: 2022-08-13
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2257,7 +2257,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13650,8320
 # 
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster? vvv
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021) vvv
-#: last_checked: 2022-07-11 vvv
+#: last_checked: 2022-08-12 vvv
 #: check_frequency: 90d vvv
 Rungestr.: Kopfsteinpflaster	Q2- 11197,11882 11291,11876 11380,11863 11507,11860
 #: check_frequency ^^^
@@ -7865,7 +7865,7 @@ Stienitzseestr. (Friedrichshagen): Asphalt	Q0 26228,5041 26227,5060
 #: XXX wird hier asphaltiert werden? vvv
 #: XXX Baumaßnahme 9.13 (Realisierung nach 2011) vvv
 # REMOVED (closed) --- #: osm_watch: note 1535852 4
-#: osm_watch: way id="723757589" version="6"
+#: osm_watch: way id="723757589" version="7"
 #: last_checked: 2022-08-07 (mapillary) vvv
 #: check_frequency: 180d vvv
 Werlseestr.: schlechtes Kopfsteinpflaster	Q3 26612,5051 26610,5088
@@ -10258,11 +10258,13 @@ An der Filmfabrik: Verbundsteinpflaster	Q1+ 22872,5018 22856,5245 22851,5327
 Am Werksgarten: Kopfsteinpflaster	Q2 22856,5245 22803,5241
 Am Werksgarten: Kopfsteinpflaster	Q2 22803,5278 22737,5278
 Am Filmlager: Kopfsteinpflaster	Q2 22802,5327 22803,5278 22803,5241 22804,5199
-#: osm_watch: way id="150937168" version="6"
+Werlseestr. - Am Goldmannpark: Asphalt	Q0 26199,5643 26239,5659
+#: osm_watch: way id="1085678795" version="4"
+#: osm_watch: way id="384630167" version="5"
 #: XXX wird die Straße hier verbessert (asphaltiert)?
 #: last_checked: 2022-03-10 (mapillary)
 #: check_frequency: 180d
-Werlseestr. - Am Goldmannpark: unbefestigte Straße	Q2 26199,5643 26239,5659 26274,5694 26282,5830
+Werlseestr. - Am Goldmannpark: unbefestigte Straße	Q2 26239,5659 26274,5694 26282,5830
 (Am Goldmannpark - Fürstenwalder Damm): Asphalt	Q0 26282,5830 26294,5923 26424,5924
 # REMOVED (realisiert) --- #: XXX Ausbau der Straße, evtl. danach nicht mehr unbefestigt? --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/tiefbauamt/__bersicht_stra__enbaustellen_neubau_14_06_17.xls?download.html --- #: next_check: 2014-10-31
 Am Mühlenfließ: Verbundsteinpflaster	Q1+ 29982,4525 29891,4605
@@ -12248,11 +12250,9 @@ Am Falkenberg [Wohngebietsstraße]: Beton	Q1+ 21902,877 21740,943 21721,939 21696
 Pieskower Weg: Beton	Q1+ 13224,15049 13204,15062 13105,15122
 #: note: früher: alte Gehwegplatten, Q1
 Einstein-Park: Betonplatten	Q0- 13163,14924 13207,14998 13204,15062
-Fredersdorfer Str.: Asphalt	Q0 12891,12008 12923,12043 12990,12108
-#: note: früher: Asphalt mit Rissen, Q0-
-#: XXX anscheinend bekommen einige Meter vor der Marchlewskistr. Kopfsteinpflaster, check!
-#: next_check: 2022-08-14
-Fredersdorfer Str.: Asphalt	Q0 12990,12108 13081,12196
+Fredersdorfer Str.: Asphalt	Q0 12891,12008 12923,12043 13051,12167
+# REMOVED --- #: note: früher: Asphalt mit Rissen, Q0- --- #: XXX anscheinend bekommen einige Meter vor der Marchlewskistr. Kopfsteinpflaster, check! --- #: next_check: 2022-08-14
+Fredersdorfer Str.: Kopfsteinpflaster	Q2 13051,12167 13086,12186
 Ruppiner Chaussee: Asphalt, einige Schäden	Q0- 1461,21203 1427,21237 1347,21428 1254,21718 1146,21901 919,22068 488,22275
 Ruppiner Chaussee: Asphalt, einige Schäden	Q1+;Q0- 488,22275 455,22285 355,22344 231,22418 21,22545 -48,22595 -130,22647 -188,22682 -264,22729 -440,22841 -656,23011
 (Einfahrt Bauhaus): Asphalt	Q0 4988,17172 5020,17157 5158,17138
@@ -12703,6 +12703,9 @@ Brigitte-Reimann-Str.: Asphalt	Q0 23368,15469 23363,15517 23388,15637
 (Müggelheimer Damm - Schmetterlingshorst): Waldweg, etwas Schotter	Q2+ 25218,2691 25159,2622 25116,2529
 (Müggelheimer Damm - Schmetterlingshorst): Waldweg, etwas Schotter	Q1- 25116,2529 24987,2068 24974,1945 24883,1740
 (zur Dörpfeldstraße [Nebenstraße]): Gehwegplatten	Q1 21129,4217 21126,4221 21071,4189
+Templerzeile: Asphalt mit Schäden	Q1 9665,6029 9679,6160 9681,6180
+Parkstr. (Tempelhof): Kleinsteinpflaster	Q1-  9202,6412 9143,6415
+Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9122,6471 9141,6459
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -17575,7 +17578,7 @@ Scabellstr.: mäßiger Asphalt	Q1 -4290,2304 -4421,2350
 Rieflerstr.: Beton	Q0 9989,-1278 10147,-1273
 # 
 #: by: Michael Wedel:
-Luise-Henriette-Str.: Asphalt	Q0 9253,6484 9134,6467
+Luise-Henriette-Str.: Asphalt	Q0 9253,6484 9242,6482 9150,6467
 # 
 #: by: Manfred Köhnen: vvv
 #: corrected_by: srt (Asphalt -> ...)
@@ -22800,7 +22803,7 @@ Teutonenstr. (Nikolassee): asphaltiert	Q0 -3249,2002 -3237,1945
 #: by: ^^^
 # 
 #: by: Maria (ferrusac):
-Reinhardtstr. (Tempelhof): Asphalt	Q0 9154,6638 9131,6553 9134,6467 9143,6415
+Reinhardtstr. (Tempelhof): Asphalt	Q0 9154,6638 9136,6552 9150,6467 9141,6459 9143,6415
 # 
 #: by: Johann-Christian Hanke: vvv
 #: confirmed_by: srt
@@ -31254,4 +31257,5 @@ Einmündungsbereich asphaltiert	Q0 10845,1026
 Einmündungsbereich asphaltiert	Q0 6792,8122
 Kreuzungsbereich asphaltiert	Q0 22033,6144
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 20336,3783
+Einmündungsbereich asphaltiert	Q0 13086,12186
 #: ignore ^^^

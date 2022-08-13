@@ -377,7 +377,7 @@ Bus 347	busroute_N 14011,10812 14170,10675 14199,10685 14312,10657 14490,10610 1
 Bus 347	busroute_N 15662,9501 15505,9688 15472,9720 15436,9731 15400,9742 15201,9794 15088,9842 15031,9876 14908,9939 14879,9961 14817,10031 14747,10108 14705,10149 14688,10167
 Bus 347	busroute_N 15031,9876 15077,9964 15148,10111 15090,10140 15050,10160 14993,10188 14920,10225 14844,10088 14817,10031
 Bus 140, ...	busroute_N 12543,11521 12310,11682 12204,11748
-Bus 347	busroute_N 13541,11355 13496,11384 13473,11456 13366,11651 13295,11792 13275,11830 13217,11936 13097,12166 13081,12196 13019,12316
+Bus 347	busroute_N 13541,11355 13496,11384 13473,11456 13366,11651 13295,11792 13275,11830 13217,11936 13097,12166 13086,12186 13019,12316
 # REMOVED (wegen der für Busse katatrophalen Hildegard-Jadamowitz-Str. führt die Linie nicht mehr hier entlang) --- Bus 347	busroute_N 13520,11963 13599,12253 13555,12259 13520,12264 13198,12311 13068,12332 13019,12316
 Bus 347	busroute_N 13019,12316 12985,12303 12924,12278 12908,12280 12854,12287
 Bus 265	busroute_N 11250,11715 11155,11750 11073,11774 11024,11789 10955,11849 10908,11908 10722,11816
@@ -1582,7 +1582,7 @@ beide Geh/Radwege hinter der Einmündung Neukirchstr. können Richtung Am Feuchten
 #: next_check_id: HANSPETERSPLATZ-2022
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2021/pressemitteilung.1128830.php (Benennung eines Platzes nach Hans Peters)
 #: XXX wann wird der Platz ausgeschildert?
-#: last_checked: 2022-07-15
+#: last_checked: 2022-08-12 (architektur-urbanistik)
 #: check_frequency: 45d
 Hans-Peters-Platz: nicht ausgeschildert	CS 7732,14131 7679,14030
 # 
@@ -1615,7 +1615,7 @@ blaues Straßenschild "Klettenberger Str."	CP2; 20555,15 20561,17
 Privatstraße	CS 20694,11811 20708,11918 20715,12040
 # 
 #: next_check_id: SCHOENERGARTEN-2022
-#: last_checked: 2022-07-02
+#: last_checked: 2022-08-09 (mapillary)
 #: check_frequency: 90d
 Schönegarten: nicht ausgeschildert	CS 7416,10492 7432,10546 7330,10590
 # 

@@ -7,6 +7,11 @@
 # 
 #: temporary vvv
 # 
+#: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=659363#post659363 (vermutlich steht die Ampel im Zusammenhang mit den Bauarbeiten)
+#: osm_watch: way id="936801541" version="2"
+#: last_checked: 2022-08-13
+Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
+# 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
 #: last_checked: 2022-08-11
 #: check_frequency: 120d
@@ -56,11 +61,11 @@ Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
 # 
-#: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022)
+#: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022)
 #: source_id: viz2021:13.42544,52.52334,17.11.2021,07:00 (Engstelle) (inaktiv)
 #: last_checked: 2022-07-29 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-08-12 vvv
+#: next_check: 2022-08-19 vvv
 # REMOVED --- #: valid: -20220730 vvv
 Mollstr./Büschingstr.	F::inwork 11913,13077
 Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081
@@ -1914,6 +1919,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 11630,16623
 # REMOVED (wurde verlegt) ---	F 11548,16079
 #: note: Anforderungsampel
+#: off: night? (seen 2022-08-12 Fri 23:40)
 	F 11531,16053
 # REMOVED (keine Ampel (mehr?)) ---	X 12097,16263
 	X 12399,16479
@@ -2018,9 +2024,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12870,15342
 #: off: night (seen 2013-05-30 00:30)
 	X 13273,12902
-#: off: night (seen Thu 2022-06-03 00:15)
+#: off: night (seen Thu 2022-06-03 00:15, Fri 2022-08-12 23:55)
 	X 13741,13107
-#: off: night (seen Thu 2022-06-03 00:15)
+#: off: night (seen Thu 2022-06-03 00:15, Fri 2022-08-12 23:55)
 	X 13844,12900
 	X 13073,13329
 	X 14771,14048
@@ -2444,12 +2450,12 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
-#: last_checked: 2022-08-05
+#: last_checked: 2022-08-13
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
-#: last_checked: 2022-08-05
+#: last_checked: 2022-08-13
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746
@@ -2704,7 +2710,9 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	F 9391,3651
 #: note: Anforderungsampel
 	F 16590,14386
+#: off: night? (seen Fri 2022-08-12 23:50)
 	X 14052,13389
+#: off: night? (seen Fri 2022-08-12 23:50)
 	X 14109,13449
 #: XXX_prog Radfahrer Richtung Heinz-Galinski-Str. müssen auch die Fußgängerampel benutzen; insgesamt drei Ampeln, unabhängig voneinander geschaltet
 #: note: Anforderungsampel
@@ -2760,6 +2768,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X 13919,10583
 	X 21115,271
 	X 17483,6024
+#: off: night? (seen 2022-08-12 Fri 23:50)
 	F 13731,14200
 	X 9509,12117
 #: note: Anforderungsampel, ist aber manchmal (tagsüber? oder immer?) automatisch aktiviert
@@ -3108,7 +3117,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog Anforderungsampel
 #: osm_watch: node id="5931765487" version="5"
 #: osm_watch: node id="5931765488" version="5"
-#: last_checked: 2022-07-15 (mapillary)
+#: last_checked: 2022-07-28 (mapillary)
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 

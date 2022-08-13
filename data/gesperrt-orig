@@ -1274,7 +1274,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-08-06
+#: last_checked: 2022-08-12
 #: check_frequency: 90d
 #: next_check: 2022-10-31
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1400,6 +1400,7 @@ Stolzenfelsstr.	1 19447,8175 19407,8143
 Hannaweg	1s:q4 20938,14066 20923,13953
 Birkholzer Weg	1 18118,19394 18143,19384
 Birkholzer Weg	1 18143,19384 18106,19353
+Tempelhofer Damm: Mittelstreifen	3nocross 9254,6542 9253,6484 9250,6414 9246,6364
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -3514,7 +3515,7 @@ Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5
 # REMOVED --- #: osm_watch: way id="478067706" version="7"
 #: osm_watch: way id="1076760014" version="1"
 #: osm_watch: node id="9873753962" version="1"
-#: last_checked: 2022-07-02
+#: last_checked: 2022-08-09 (mapillary)
 #: check_frequency: 90d
 Schönegarten: an beiden Enden gesperrt	2 7416,10492 7432,10546 7330,10590
 # 
@@ -3536,7 +3537,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17738,8450 1775
 #: last_checked ^^^
 # 
 #: next_check_id: CHAUSSEE-2020
-#: note: laut rbb bis voraussichtlich 30.4.2022, mittlerweile bis 15.7.2022
+#: note: laut rbb bis voraussichtlich 30.4.2022, mittlerweile bis 15.7.2022, mittlerweile entfernt
 #: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
 #: osm_watch: way id="129104626" version="18"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
@@ -3665,9 +3666,9 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung)
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht außerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht
 #: osm_watch: way id="308312347" version="6"
-#: last_checked: 2022-05-25 (daf)
-#: check_frequency: 90d
-#: next_check: 2022-08-15
+#: last_checked: 2022-08-12
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2022-08-15
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
 # 
 #: XXX bleibt die Absperrung dauerhaft?
@@ -3879,6 +3880,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/rossstrassenbruecke-wird-abgerissen_a244615 (Beginn der Bauarbeiten ab 16. Dezember 2019, ab Januar 2020 für alle gesperrt) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.876928.php (bis Herbst 2021) --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung --- #: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: bis Mai 2021) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1097688.php --- #: also_indoor: traffic (G,H) vvv --- #: source_id: 2147345254 (bis 18.06.2021) vvv --- #: last_checked: 2021-06-15 vvv --- #: next_check: 2021-06-18 vvv --- #: priority: #A vvv --- Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901 --- Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875 10672,11870 10662,11863 --- #: priority ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: also_indoor ^^^
 # 
 #: by: https://leute.tagesspiegel.de/tempelhof-schoeneberg/macher/2021/01/19/154834/sanierung-des-hochbahnviadukts-bauarbeiten-ab-2023-geplant/ (Sanierung 2023 - Mitte 2024)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/drei-bauphasen-am-gleisdreieck_a354176
 #: osm_watch: way id="223707973" version="10"
 #: last_checked: 2022-07-02
 #: check_frequency: 120d
@@ -3960,7 +3962,7 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: by: https://www.berliner-woche.de/mitte/c-bauen/architekten-koennen-bis-november-ihre-entwuerfe-einreichen_a324605
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2022-07-15
+#: last_checked: 2022-07-21 (mapillary)
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
@@ -3995,9 +3997,9 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 #: next_check_id: TACHELES-2020
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2022-07-17
+#: last_checked: 2022-08-11 (mapillary)
 #: check_frequency: 60d
-Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
+Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
 # 
 # REMOVED --- #: next_check_id: YORCKSTRASSENBRUECKEN-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Herrichtung im ersten Halbjahr 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855679.php (Einhängung bis zum 21.10.2019, aber Freigabe erst im Frühjahr 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.895895.php (Wiederinbetriebnahme am 20.02.2020, zum gleichen Zeitpunkt wird die Yorckstraßenbrücke 17 gesperrt, Wiederfreigabe im Frühling 2020) --- #: osm_watch: way id="36395401" version="24" --- #: priority: #A --- #: last_checked: 2019-10-16 --- #: next_check: 2020-02-20 --- Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
 # REMOVED (offen) --- #: next_check_id: YORCKSTRASSENBRUECKEN-2019 --- #: priority: #A vvv --- #: last_checked: 2020-06-30 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2020-07-03 vvv --- Yorckstraßenbrücke 17: vorübergehend gesperrt	2::inwork 8458,9566 8454,9528 8453,9519 8423,9529 --- An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572 --- An den Yorckstraßenbrücken: vorübergehend gesperrt	2::inwork 8446,9670 8426,9572
@@ -4551,7 +4553,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 # REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7"
 #: osm_watch: way id="940764588" version="5"
 #: osm_watch: way id="940764584" version="3"
-#: last_checked: 2022-07-17
+#: last_checked: 2022-08-11 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2023-06-30
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315

@@ -691,7 +691,7 @@ Rüdersdorfer Str.	N 13295,11792 13173,11788 13161,11795 13066,11854
 Rüdersdorfer Str.	NH 13066,11854 13052,11867 12891,12008 12822,12067
 Rüdersdorfer Str.	N 12822,12067 12735,12131 12573,12227
 Rüdersdorfer Str. [Rückseite]	N 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
-Fredersdorfer Str.	N 12891,12008 12923,12043 12990,12108 13081,12196
+Fredersdorfer Str.	N 12891,12008 12923,12043 13051,12167 13086,12186
 (Fredersdorfer Str. - Hildegard-Jadamowitz-Str.)	N 12923,12043 12893,12077 12883,12118 12908,12280
 Helsingforser Platz	N 13427,11431 13473,11456
 Revaler Str.	N 13473,11456 13565,11492 13588,11490
@@ -1218,9 +1218,10 @@ Bayernring	N 8380,8545 8454,8574 8616,8605 8748,8587 8842,8561 8916,8511 9030,84
 (Achenbachpromenade)	NN 8763,8780 8748,8587 8722,8527 8715,8459
 Parkstr. (Tempelhof)	N 8944,6293 8992,6312 9029,6360
 Parkstr. (Tempelhof)	NN 9029,6360 9078,6360 9143,6415
-Parkstr. (Tempelhof)	N 9143,6415 9184,6413 9250,6414
-Luise-Henriette-Str.	N 9253,6484 9134,6467
-Reinhardtstr. (Tempelhof)	N 9154,6638 9131,6553 9134,6467 9143,6415
+Parkstr. (Tempelhof)	N 9143,6415 9202,6412 9237,6413 9250,6414
+Luise-Henriette-Str.	N 9253,6484 9242,6482 9150,6467
+Reinhardtstr. (Tempelhof)	N 9154,6638 9136,6552 9150,6467 9141,6459 9143,6415
+Reinhardtstr. (Tempelhof)	N 9136,6552 9107,6529 9122,6471 9141,6459
 Blumenthalstr. (Tempelhof)	N 8944,6293 8971,6154
 Blumenthalstr. (Tempelhof)	N 8976,6094 8996,5956
 (Schönburger Str. - Bosestr./Blumenthalstr.)	NN 8953,6492 8930,6295
@@ -1733,7 +1734,7 @@ Otto-Weidt-Platz	NN 7732,14131 7818,14185 7866,14215
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php
 #: by: https://www.berliner-woche.de/moabit/c-bauen/golda-meir-steg-verbindet-jetzt-moabit-mit-mitte_a330725
 #: add_fragezeichen: Wie lange wird es den provisorischen Weg geben?
-#: last_checked: 2022-07-15
+#: last_checked: 2022-08-12 (architektur-urbanistik)
 #: check_frequency: 60d
 #: next_check: 2022-12-31
 (provisorischer Weg zum Golda-Meir-Steg)	NN 7818,14185 7861,14133
@@ -1752,7 +1753,7 @@ Lisa-Fittko-Str.	N 7734,13944 7820,13994
 George-Stephenson-Str.	N 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 7734,13944
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
-#: last_checked: 2022-07-15
+#: last_checked: 2022-08-12 (architektur-urbanistik)
 #: check_frequency: 90d
 #: osm.highway: service
 Hans-Peters-Platz	N 7732,14131 7679,14030
@@ -11166,7 +11167,7 @@ Lasdehner Str.	N 13524,12271 13470,12190 13375,12062
 Am Comeniusplatz	N 13275,11830 13406,11896
 Graudenzer Str.	N 13243,12222 13470,12190
 (Karl-Marx-Allee - Marchlewskistr.)	NN 12878,12430 12950,12340 12985,12303
-Marchlewskistr.	N 13541,11355 13496,11384 13473,11456 13366,11651 13295,11792 13275,11830 13217,11936 13097,12166 13081,12196 13019,12316 12997,12361
+Marchlewskistr.	N 13541,11355 13496,11384 13473,11456 13366,11651 13295,11792 13275,11830 13217,11936 13097,12166 13086,12186 13019,12316 12997,12361
 (Marchlewskistr. - Gubener Str.)	N 13097,12166 13173,12202 13168,12219
 Helsingforser Str.	NN 13496,11384 13427,11431
 Helsingforser Str.	N 13427,11431 13410,11447 13324,11529 13274,11585 13202,11666
@@ -19662,6 +19663,7 @@ Obernburger Weg	N 11686,17710 11700,17629 11711,17569
 Seeweg (Weißensee)	NN 14610,16522 14581,16529 14510,16549
 Theodor-Francke-Str.	N 9221,6179 9341,6163
 Theodor-Francke-Str.	NN 9341,6163 9367,6160
+#: osm.highway: service
 (Parkplatz Rathaus Tempelhof)	N 9246,6364 9265,6361 9346,6352
 (zum Parkplatz Rathaus Tempelhof)	NN 9346,6352 9389,6348
 (Franckepark - Templerzeile)	NN 9381,6277 9426,6239 9463,6232 9683,6199

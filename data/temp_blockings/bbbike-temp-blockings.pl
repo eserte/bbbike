@@ -16549,11 +16549,11 @@ EOF
 	2::temp 8424,12853 8309,12758 8306,12609
 EOF
      },
-     { from  => $isodate2epoch->("2021-09-24 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-09-26 20:00:00"),
+     { from  => $isodate2epoch->("2022-09-16 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-09-18 20:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 9, start => "2020-10-25T00:00:00"]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (25.09.2021 bis 26.09.2021)',
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (17.09.2022 bis 18.09.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: by: http://www.family-and-friends-ev.de/ (update.pl bekommt hier aber einen Fehler)
@@ -20307,17 +20307,18 @@ EOF
 	2::inwork 872,24330 865,24114 793,24070 736,24068 601,24192 237,24374 195,24389 160,24390 132,24390 78,24364 -406,23934
 EOF
      },
-     { from  => $isodate2epoch->("2021-09-17 00:00:00"), # PERIODISCH, ca. 2. Wochenende im September
-       until => $isodate2epoch->("2021-09-19 23:59:59"),
+     { from  => $isodate2epoch->("2022-09-15 00:00:00"), # PERIODISCH, ca. 2. Wochenende im September
+       until => $isodate2epoch->("2022-09-18 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 9, start => "2020-10-25T00:00:00"]],
-       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 18.09.2021 bis 19.09.2021',
+       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 16.09.2022 bis 18.09.2022',
        type  => 'handicap',
        source_id => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2019',
        data  => <<EOF,
 #: by: https://www.laubinger.de/event/47-rosenthaler-herbst/ (geplant: 18.09.2021 - 19.09.2021)
 #: by: https://www.berliner-woche.de/rosenthal/c-kultur/feiern-mit-abstand-und-einschraenkungen_a321188
 #: by: https://dorf-rosenthal.de/programmheft
+#: by: https://www.laubinger.de/event/47-rosenthaler-herbst/
 	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
 EOF
      },
@@ -21357,6 +21358,7 @@ EOF
        until => $isodate2epoch->("2021-09-27 06:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 9, start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => 14, # 25.10.2022
        text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, vom 23.09.2021 bis 27.09.2021',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -23007,6 +23009,7 @@ EOF
        periodic => 1, # erster Termin im Jahr
        #recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
        recurrences => [["yearly", days => 11, months => 9]],
+       recurrence_prewarn_days => 7,
        # früher: Fest der Nationen
        # früher: Prager Platz
        text  => 'Nikolsburger Platz: Veranstaltung "Fest der Vielfalt", Durchfahrt vermutlich nicht möglich, am 11.9.2021 von 14 bis 20 Uhr',
@@ -30606,7 +30609,7 @@ EOF
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-07-22 (mapillary)
+#: last_checked: 2022-08-12
 #: check_frequency: 21d
 #: next_check_id: 2022-08-31
 	q4::inwork; 11329,12497 11209,12430
@@ -30619,7 +30622,7 @@ EOF
        source_id => '2147345145',
        data  => <<EOF,
 # REMOVED --- #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben? --- #: last_checked: 2019-12-20 --- #: check_frequency: 1d
-	q3::inwork; 13081,12196 12990,12108 12923,12043 12891,12008
+	q3::inwork; 13086,12186 13051,12167 12923,12043 12891,12008
 EOF
      },
      { from  => undef, # 
@@ -30983,7 +30986,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-08-06
+#: last_checked: 2022-08-13
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -33159,7 +33162,7 @@ EOF
 EOF
      },
      { from  => 1625349600, # 2021-07-04 00:00
-       until => $isodate2epoch->("2022-08-19 17:00:00"), # 1659304799, # 2022-07-31 23:59
+       until => 1660400010, # $isodate2epoch->("2022-08-19 17:00:00"), # 1659304799, # 2022-07-31 23:59
        text  => 'Bruno-Taut-Str./Am Falkenberg: Neubau einer Ampelanlage, Fahrbahn gesperrt, voraussichtlich bis 19. August 2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2021/pressemitteilung.1095642.php',
@@ -33169,8 +33172,8 @@ EOF
 #: also_indoor: traffic (G,B)
 #: source_id: viz2021:13.569262,52.411283,12.07.2021,09:00 (hier: bis 31.1.2022) (inaktiv)
 #: source_id: viz2021:13.56928,52.411326,13.06.2022,07:00 (bis 8.7.2022) (bis 19.8.2022)
-#: osm_watch: way id="1082326438" version="1"
-#: next_check: 2022-08-19
+# REMOVED (wurde gelöscht) --- #: osm_watch: way id="1082326438" version="2"
+# REMOVED (laut osm vorfristig offen) --- #: next_check: 2022-08-19
 	q4::inwork 21858,811 21902,877
 # REMOVED ---	q4::inwork; 21902,877 21977,988 22034,1006 22092,999
 EOF
@@ -33960,7 +33963,7 @@ EOF
 #: next_check_id: CORONA-2020
 #: note: Marktzeiten sind wohl 9 bis 15 Uhr, Parkverbote (und mögliche Sperrung/Beeinträchtigung) aber länger
 #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv
-#: last_checked: 2022-06-04 vvv
+#: last_checked: 2022-08-13 vvv
 #: check_frequency: 90d vvv
 #: tempex: sa T06-T19 vvv
 	2::temp 9546,9198 9617,9185 9674,9179
@@ -34535,15 +34538,17 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 EOF
      },
      { from  => 1642917600, # 2022-01-23 07:00
-       until => $isodate2epoch->("2022-08-13 17:00:00"), # 1653663600, # 2022-05-27 17:00
-       text  => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., Fahrbahn gesperrt, vom 24.01.2022 07:00 bis 13.08.2022 17:00',
+       until => $isodate2epoch->("2022-09-02 17:00:00"), # 1653663600, # 2022-05-27 17:00
+       text  => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., Fahrbahn gesperrt, vom 24.01.2022 07:00 bis 02.09.2022 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.445809,52.479541,24.01.2022,07:00', # bis 13.8.2022, im Anschluss weitere Arbeiten
+       source_id => 'viz2021:13.445809,52.479541,24.01.2022,07:00', # bis 13.8.2022, im Anschluss weitere Arbeiten; mittlerweile bis 2.9.2022
        data  => <<EOF,
 #: source_id: viz2021:13.445912,52.478966,13.06.2022,07:00 (zusätzliche Meldung zur Sonnenallee)
+#: source_id: viz2021:13.4453,52.47919,24.01.2022,07:00 (zusätzlicher Eintrag)
+#: source_id: viz2021:13.4453,52.47919,13.06.2022,07:00 (zusätzlicher Eintrag)
 #: also_indoor: traffic (G,ex-H,B)
 #: last_checked: 2022-06-24
-#: next_check: 2022-08-13
+#: next_check: 2022-09-02
 	q4::inwork 13277,8211 13331,8283
 EOF
      },
@@ -35722,8 +35727,8 @@ EOF
        text  => 'Innstr., Donaustr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Sonnenallee; außerdem Anbindung Richtung Südosten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (H(incomplete),B(incomplete)) vvv
-#: last_checked: 2022-07-24 vvv
+#: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
+#: last_checked: 2022-08-13 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
 	q3::inwork 12995,8213 13060,8148
 #: last_checked ^^^
@@ -35859,11 +35864,14 @@ EOF
 #: by: https://www.berliner-zeitung.de/news/grossbrand-im-berliner-grunewald-es-ist-mit-explosionen-zu-rechnen-li.253251
 #: by: https://berliner-abendblatt.de/2022/08/11/berliner-feuerwehr-faehrt-einsatz-nach-waldbrand-zurueck/
 #: by: https://nitter.cz/VIZ_Berlin/status/1557765236052082690#m
+#: by: https://nitter.cz/VIZ_Berlin/status/1558046983465615360#m
+#: by: https://nitter.cz/VIZ_Berlin/status/1558124118003879937#m (Kronprinzessinenweg weiterhin gesperrt)
+#: by: https://nitter.cz/VIZ_Berlin/status/1558123538028138498#m (Hüttenweg ebenso)
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-11 (research) vvv
+#: last_checked: 2022-08-13 (research) vvv
 #: check_frequency: 1d vvv
 Hüttenweg (westlicher Abschnitt)	2::temp -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888
 Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133 -3296,3686
@@ -35894,6 +35902,36 @@ EOF
        source_id => 'viz2021:13.231908,52.505332,08.08.2022,06:00',
        data  => <<EOF,
 	q4::inwork -1167,10873 -1318,10854
+EOF
+     },
+     { from  => 1659934800, # 2022-08-08 07:00
+       until => 1665759600, # 2022-10-14 17:00
+       text  => 'Mühsamstr.: Einbahnstraße offen Richtung Ebertystr., vom 09.08.2022 07:00 bis 14.10.2022 17:00 ',
+       type  => 'handicap',
+       source_id => 'viz2021:13.453194,52.520885,09.08.2022,07:00',
+       data  => <<EOF,
+	q4::inwork; 13622,12806 13818,12897
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Fidicinstr./Am Tempelhofer Berg: Bauarbeiten im Einmündungsbereich, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: FIDICIN-2022
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10154 (Herbst 2021)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1217600.php
+#: by: https://berliner-abendblatt.de/2022/06/17/bergmannkiez-fidicinstrasse-wird-zur-einbahnstrasse/
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/verkehrsberuhigung-im-bergmannkiez-geht-weiter_a349916
+#: also_indoor: traffic (B) vvv
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
+#: last_checked: 2022-08-13 vvv
+	q4::inwork 9224,9053 9295,9047
+	q3::inwork 9295,9047 9459,9019
+	q4::inwork 9295,9047 9298,9112
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+#: also_indoor ^^^
 EOF
      },
     );

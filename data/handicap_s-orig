@@ -201,7 +201,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: XXX Treppe zum Golda-Meir-Steg kann benutzt werden, wenn die Bauzäune weggeschoben sind
 #: XXX Einfahrt verboten, Anlieger frei -> als osm.highway: service taggen, wenn's fertig ist
 #: osm_watch: way id="642581102" version="4"
-#: last_checked: 2022-07-15
+#: last_checked: 2022-08-12 (architektur-urbanistik)
 #: check_frequency: 60d
 #: next_check: 2022-12-31
 Otto-Weidt-Platz: Bauarbeiten, mögliche Engstellen	q3::inwork 7923,14142 7778,14059
@@ -300,13 +300,13 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/volt-berlin-baufeld-e3a.312/page-8#post-14027
 #: XXX Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straße, Fahrbahn ist noch abgesperrt
-#: last_checked: 2022-07-17
+#: last_checked: 2022-08-12
 #: check_frequency: 60d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-07-15
+#: last_checked: 2022-07-21 (mapillary)
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -319,7 +319,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-06-17
+#: last_checked: 2022-06-26 (mapillary)
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -346,7 +346,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="15"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-08-06
+#: last_checked: 2022-08-11 (mapillary)
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -372,7 +372,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: add_fragezeichen: Sind die Bauarbeiten hier beendet?
 #: XXX nach den Bauarbeiten vermutlich nur für Radfahrer, Fußgänger und MIV-Anlieger frei
 #: XXX geschätzte opening_date bei osm: August 2022
-#: last_checked: 2022-07-15
+#: last_checked: 2022-08-09 (architektur-urbanistik)
 #: check_frequency: 30d
 #: next_check: 2022-08-31
 # REMOVED --- #: valid: 20191218-20210531
@@ -850,7 +850,7 @@ Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,122
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-18478
 #: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-06-25 (mapillary)
+#: last_checked: 2022-08-10 (mapillary)
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-12-31
 #: next_check: 2023-11-15
@@ -5309,7 +5309,7 @@ Küselstr.: enge Straße	q1 12299,15463 12221,15514 12158,15556 12094,15598 12058,
 Zillertalstr.: enge Straße	q0- 10807,17193 10498,17192 10228,17191 10198,17196
 # REMOVED --- #: by: Frank Soukup: vvv --- Am Heideberg: enge Straße	q1 -7114,14579 -7115,14663 -7121,14711 --- Am Heideberg: enge Straße	q1 -7149,14768 -7156,14813 -7169,14849 -7209,14937 -7234,15003 -7292,15114 -7326,15145 -7373,15154 ---#: by: ^^^
 #: by: Maria (ferrusac):
-Reinhardtstr. (Tempelhof): enge Straße	q1 9154,6638 9131,6553 9134,6467 9143,6415
+Reinhardtstr. (Tempelhof): enge Straße	q1 9154,6638 9136,6552 9150,6467 9141,6459 9143,6415
 #: by: Thomas Behle:
 Hackenbergstr.: enge Straße	q1 20428,3786 20380,3855 20329,3928 20280,3996 20253,4034 20248,4040
 #: by: Manon Pfaff:
