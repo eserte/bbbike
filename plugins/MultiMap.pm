@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.82;
+$VERSION = 1.83;
 
 use vars qw(%images);
 
@@ -928,6 +928,16 @@ sub show_openstreetmap_menu {
 	(-label => 'Cyclemap ' . ($lang eq 'de' ? '(mit Marker)' : '(with marker)'),
 	 -command => sub { showmap_openstreetmap(osmmarker => 1, layers => 'C', %args) },
 	);
+    $link_menu->command
+	(-label => 'Cycling QA',
+	 -command => sub {
+	     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+	     $scale = 17 if $scale > 17;
+	     my $px = $args{px};
+	     my $py = $args{py};
+	     my $url = sprintf "https://cycling-qa.lorenz.lu/#%.2f/%s/%s", $scale, $py, $px;
+	     start_browser($url);
+	 });
     $link_menu->command
 	(-label => 'OpenStreetMap.de',
 	 -command => sub { showmap_openstreetmap_de(%args) },
