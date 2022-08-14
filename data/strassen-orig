@@ -598,7 +598,8 @@ Hauptstr. (Rummelsburg)	H 14717,10855 14810,10832 14904,10812 15004,10791 15261,
 Hauptstr. (Rummelsburg) [Wohngebiet]	N 15404,10633 15358,10562 15334,10528
 (Hauptstr. - Rummelsburger Ufer)	NN 15334,10528 15322,10513
 (Unterführung S-Bhf. Rummelsburg)	NN 15372,10655 15409,10709 15433,10765
-Saganer Str.	N 16187,10033 16206,10047 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159 17282,9135
+Saganer Str.	N 16187,10033 16206,10047
+Saganer Str.	N 16182,10069 16206,10047 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159 17282,9135
 #: note: gemeinsamer Rad- und Gehweg
 (Rummelsburger Ufer - Hauptstr.)	NN 15249,10564 15307,10701
 Karlshorster Str. (Rummelsburg)	H 15261,10738 15272,10790 15279,10862
@@ -1744,8 +1745,8 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 (Lydia-Rabinowitsch-Str. - Uferweg)	NN 7930,14060 7965,14081
 (Am Hamburger Bahnhof - Lydia-Rabinowitsch-Str.)	NN 7997,13892 7959,13982
 #: XXX wie wird diese Straße heißen? Der erste Vorschlag "Annemarie-Renger-Str." wird es wohl nicht werden...
-#: XXX wird es Einschränkungen für den Autoverkehr geben?
-#: last_checked: 2022-07-15
+#: XXX wird es Einschränkungen für den Autoverkehr geben? --- es sieht aus nach: Einfahrt verboten, Tiefgarage frei
+#: last_checked: 2022-08-12 (mapillary)
 (Uferweg - Heidestr.)	N 8057,13923 7997,13892 7910,13848
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7802,14250 7781,14238 7697,14187
 (Hedwig-Porschütz-Str. - Uferweg)	NN 7802,14250 7830,14268
@@ -1753,7 +1754,7 @@ Lisa-Fittko-Str.	N 7734,13944 7820,13994
 George-Stephenson-Str.	N 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 7734,13944
 #: next_check_id: HANSPETERSPLATZ-2022
 #: XXX zurzeit darf der Platz noch von Fahrzeugen benutzt werden (wegen der Bauarbeiten in der George-Stephenson-Str.?), wird später vermutlich aufgehoben, dann NN ohne osm.highway:service; eigentlich Einbahnstraße, aber der Platz ist breit genug...
-#: last_checked: 2022-08-12 (architektur-urbanistik)
+#: last_checked: 2022-08-12 (mapillary)
 #: check_frequency: 90d
 #: osm.highway: service
 Hans-Peters-Platz	N 7732,14131 7679,14030
@@ -2559,9 +2560,9 @@ Wagner-Régeny-Allee	N 19162,3935 19130,3969 18596,4517 18296,4850
 Gustav-Hertz-Platz	N 18674,4585 18685,4595 18722,4628
 Gustav-Hertz-Platz	NN 18722,4628 18656,4687 18649,4678 18685,4595
 (Gustav-Hertz-Platz - ...)	NN 18656,4687 18601,4732
-(Fußgängerbrücke Betriebsbahnhof Schöneweide)	NN 18725,4715 18739,4728 18730,4735 18684,4690 18642,4654 18636,4660 18621,4675 18649,4678
+(Fußgängerbrücke Betriebsbahnhof Schöneweide)	NN 18725,4715 18739,4728 18730,4735 18664,4673 18642,4654 18636,4660 18621,4675 18649,4678
 #: note: provisorische Treppe
-(Fußgängerbrücke Betriebsbahnhof Schöneweide)	NN 18684,4690 18704,4665 18722,4628
+(Fußgängerbrücke Betriebsbahnhof Schöneweide)	NN 18664,4673 18687,4649 18722,4628
 Igo-Etrich-Str.	N 18930,3703 19162,3935
 Georg-Schendel-Str.	N 19125,3491 19363,3730
 Merlitzstr.	N 19417,3184 19524,3286 19661,3421
@@ -4516,7 +4517,7 @@ Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,199
 #: osm_watch: way id="31428032" version="13"
 #: osm_watch: way id="386544517" version="4"
 #: osm_watch: note 2048562 10
-#: last_checked: 2022-07-08 (osm note)
+#: last_checked: 2022-08-13 (mapillary)
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-05-01
 (Hertzstr./PankowPark - Bhf. Wilhelmsruh)	NN 7090,19943 7123,19855 7138,19839 7184,19783 7264,19717 7273,19682
@@ -15127,7 +15128,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2022-08-07
+#: last_checked: 2022-08-14
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15510,7 +15511,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2022-08-07
+#: last_checked: 2022-08-14
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -18234,7 +18235,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036553475560/553475560/00071473/73-Anlagen/05/B1481ZB1.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26099.pdf (Anfrage zum Regionalbahnhof Köpenick)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7221 (Antrag)
-#: last_checked: 2022-06-06
+#: last_checked: 2022-08-14
 #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044
 Parrisiusstr.	N 22358,5918 22531,5871 22631,5866 22766,5840 22819,5812 22885,5835

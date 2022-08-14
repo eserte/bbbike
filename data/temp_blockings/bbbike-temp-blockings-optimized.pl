@@ -4167,10 +4167,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: source_id: viz2021:13.387177,52.552566,24.05.2019,11:02 (bis 31.3.2022) (mittlerweile bis 30.11.2022)
 #: source_id: viz2021:13.38743,52.55268,14.09.2021,19:35 (bis 31.3.2022, doppelter Eintrag) (inaktiv)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11007 (Frage)
-#: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022
+#: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022 (wird nicht mehr aktualisiert)
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2022-07-08
+#: last_checked: 2022-08-13 (mapillary)
 #: check_frequency: 45d
 #: next_check: 2022-11-30
 	q3::inwork  8986,16092 9178,16317
@@ -5665,7 +5665,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: source_id: viz2021:13.47859,52.47157,11.04.2022,09:00 (zusätzlicher Eintrag, bis 1.8.2022) (mittlerweile inaktiv)
 #: by: https://nitter.net/VIZ_Berlin/status/1524307007557222401#m
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
-#: note: Baustelle existiert weiterhin, trotz der entfernten VIZ-Meldung
+#: note: Baustelle existiert weiterhin, trotz der entfernten VIZ-Meldung; laut rbb bis 30.11.2022
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
 #: last_checked: 2022-08-11 vvv
 #: check_frequency: 14d vvv
@@ -6120,7 +6120,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        },
        {
          'data' => '#: next_check_id: WALLENSTEIN-2022
-#: note: zurzeit Sperrung wohl nur während der Arbeitszeiten, Durchfahrt war möglich am: 2022-08-07 mittags vvv
+#: note: zurzeit Sperrung wohl nur während der Arbeitszeiten, Durchfahrt war möglich am: 2022-08-07 mittags, 2022-08-14 mittags vvv
 Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -6129,7 +6129,7 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
          'from' => 1659546069,
          'id' => 3597,
          'source_id' => 'viz2021:13.516327,52.486802,02.08.2022,07:00',
-         'text' => 'Walllensteinstr.: Bauarbeiten zwischen Ilsestr. und Sangeallee, Fahrbahn gesperrt, bis 16.12.2022 ',
+         'text' => 'Walllensteinstr.: Bauarbeiten zwischen Ilsestr. und Sangeallee, Fahrbahn gesperrt, bis 16.12.2022',
          'type' => 'handicap',
          'until' => 1671231600
        },
@@ -6172,7 +6172,7 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-13 (research) vvv
+#: last_checked: 2022-08-14 (research) vvv
 #: check_frequency: 1d vvv
 Hüttenweg (westlicher Abschnitt)	2::temp -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888
 Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133 -3296,3686
@@ -6240,6 +6240,20 @@ Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
          'from' => undef,
          'id' => 3602,
          'text' => 'Fidicinstr./Am Tempelhofer Berg: Bauarbeiten im Einmündungsbereich, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
+#: last_checked: 2022-08-14 vvv
+	q3::inwork 16887,10271 16855,10127
+	q4::inwork 16855,10127 16847,10092
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+',
+         'from' => undef,
+         'id' => 3603,
+         'text' => 'Salzmannstr.: Leitungsarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        }

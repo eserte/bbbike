@@ -273,7 +273,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen)
 #: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2022-08-07
+#: last_checked: 2022-08-14
 #: check_frequency: 45d
 #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -1054,7 +1054,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-08-13
+#: last_checked: 2022-08-14
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2482,7 +2482,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="11"
-#: last_checked: 2022-08-07
+#: last_checked: 2022-08-14
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -3277,7 +3277,9 @@ Lauchhammerstr.: Asphalt	Q0 20165,10077 20146,10093 20149,10120 20261,10307 2026
 Beruner Str.: Beton	Q0- 20215,10554 20272,10448
 Beruner Str.: Asphalt	Q0 20272,10448 20262,10317
 Beruner Str.: Asphalt	Q0 20092,10840 20113,10795 20143,10731
-Saganer Str.: Asphalt	Q0 16187,10033 16206,10047 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159 17282,9135
+Saganer Str.: Kopfsteinpflaster	Q2 16187,10033 16206,10047
+Saganer Str.: Kopfsteinpflaster	Q2 16182,10069 16206,10047
+Saganer Str.: Asphalt	Q0 16206,10047 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159 17282,9135
 Hönower Wiesenweg: Asphalt	Q0 17308,9090 17282,9135
 (Hönower Wiesenweg - Betriebsbahnhof Rummelsburg): Asphalt	Q0 17308,9090 17300,9135 17284,9198
 Perelsplatz: kleinteiliges Kopfsteinpflaster	Q1 5809,7712 5636,7709
@@ -6111,20 +6113,26 @@ Straße 90: unbefestigte Straße	Q2 8573,19766 8642,19808
 Frickastr.: unbefestigte Straße	Q2 8642,19808 8560,19942
 Neuer Steg: unbefestigter Weg	Q2 8277,19210 8209,19107
 Neuer Steg: unbefestigter Weg	Q2 8211,19082 8194,19055
+#: XXX wurde hier auch asphaltiert?
 Straße 79: mäßiger Asphalt und Schotter	Q2 7877,19507 7805,19359 7797,19345
 #: corrected_by: mapillary (Schotterstraße, Q2+ -> ...)
 Mittelsteg: Asphalt	Q0 8340,18984 8247,19054
+#: corrected_by: mapillary (Schotterstraße, Q2 -> ...)
+Mittelsteg: Asphalt	Q0 8062,19212 7981,19269 7930,19282 7805,19359
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-bauen/irgendwann-sollen-alle-stege-ausgebaut-sein_a298643
 #: XXX wann wird der Rest asphaltiert? werden auch die umliegenden Straßen asphaltiert? vvv
-#: last_checked: 2022-01-15 (mapillary) vvv
 #: check_frequency: 210d vvv
+#: last_checked: 2022-08-13 (mapillary)
 Mittelsteg: Schotterstraße	Q2+ 8247,19054 8211,19082 8209,19107 8136,19159
-Mittelsteg: Schotterstraße	Q2 8136,19159 8062,19212 7981,19269 7930,19282 7805,19359
+#: last_checked: 2022-08-13 (mapillary)
+Mittelsteg: Schotterstraße	Q2 8136,19159 8062,19212
+#: last_checked: 2022-01-15 (mapillary)
 Kreuzsteg: unbefestigter Weg	Q2 8099,19276 8062,19212
 #: check_frequency ^^^
-#: last_checked ^^^
 #: XXX ^^^
-Friedensteg: unbefestigter Weg	Q2 8029,19353 7981,19269 7959,19231
+#: XXX wurde hier auch schon asphaltiert?
+Friedensteg: unbefestigter Weg	Q2 8029,19353 7981,19269
+Friedensteg: unbefestigter Weg	Q2 7981,19269 7959,19231
 Kreuzsteg: Asphalt	Q0 8062,19212 8025,19157
 Feldsteg: unbefestigter Weg	Q2 8136,19159 8106,19110
 #: corrected_by: mapillary (unbefestigte Straße, Q2 -> ...)
@@ -9295,7 +9303,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2022-08-07 vvv
+#: last_checked: 2022-08-14 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -12003,7 +12011,7 @@ Wagner-Régeny-Allee: Asphalt	Q0 19162,3935 19130,3969 18596,4517 18296,4850
 (Gleislinse - Hans-Schmidt-Str.): Asphalt	Q0 19242,4077 19219,4023
 Gustav-Hertz-Platz: Betonpflaster	Q0- 18722,4628 18656,4687 18649,4678 18685,4595
 (Gustav-Hertz-Platz - ...): Asphalt	Q0 18656,4687 18601,4732
-Fußgängerbrücke Betriebsbahnhof Schöneweide: Asphalt mit zahlreichen Frostbeulen	Q2 18642,4654 18684,4690
+Fußgängerbrücke Betriebsbahnhof Schöneweide: Asphalt mit zahlreichen Frostbeulen	Q2 18642,4654 18664,4673
 Zugang zur Fußgängerbrücke Betriebsbahnhof Schöneweide: unbefestigt, sandig	Q3 18649,4678 18621,4675
 (Bambachstr. - Mariendorfer Weg): neu asphaltiert	Q0 12052,6660 12059,6642 12092,6616 12155,6526 12155,6512
 (Löwenbrucher Weg - Lortzingplatz): Waldweg	Q2 10107,-3063 10067,-2952 10058,-2924 10085,-2810
@@ -12706,6 +12714,7 @@ Brigitte-Reimann-Str.: Asphalt	Q0 23368,15469 23363,15517 23388,15637
 Templerzeile: Asphalt mit Schäden	Q1 9665,6029 9679,6160 9681,6180
 Parkstr. (Tempelhof): Kleinsteinpflaster	Q1-  9202,6412 9143,6415
 Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9122,6471 9141,6459
+(Waldweg): überwiegend asphaltiert, einige wellige Stellen	Q0- 24981,2565 25116,2529 25496,2429
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -17908,7 +17917,7 @@ Am Oberhafen (Spandau): Beton	Q0 -2974,13188 -3053,13179 -3270,13307
 #: note: einige Asphaltschäden in den Parkflächen vorhanden
 Sadowastr.: Asphalt	Q0 17856,8162 17925,8101 17976,8106
 #: corrected_by: srt (mäßiger Asphalt, Q1 -> ..., teilweise neu gemacht)
-Sadowastr.: teilweise brüchiger Asphalt	Q0- 17976,8106 18078,8112
+Sadowastr.: teilweise brüchiger Asphalt	Q1+ 17976,8106 18078,8112
 #: by ^^^
 # 
 #: by: Scheu: vvv

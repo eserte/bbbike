@@ -2449,7 +2449,9 @@ Lauchhammerstr.: Asphalt	Q0 20165,10077 20146,10093 20149,10120 20261,10307 2026
 Beruner Str.: Beton	Q0 20215,10554 20272,10448
 Beruner Str.: Asphalt	Q0 20272,10448 20262,10317
 Beruner Str.: Asphalt	Q0 20092,10840 20113,10795 20143,10731
-Saganer Str.: Asphalt	Q0 16187,10033 16206,10047 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159 17282,9135
+Saganer Str.: Kopfsteinpflaster	Q2 16187,10033 16206,10047
+Saganer Str.: Kopfsteinpflaster	Q2 16182,10069 16206,10047
+Saganer Str.: Asphalt	Q0 16206,10047 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159 17282,9135
 Hönower Wiesenweg: Asphalt	Q0 17308,9090 17282,9135
 (Hönower Wiesenweg - Betriebsbahnhof Rummelsburg): Asphalt	Q0 17308,9090 17300,9135 17284,9198
 Perelsplatz: kleinteiliges Kopfsteinpflaster	Q1 5809,7712 5636,7709
@@ -5013,10 +5015,12 @@ Neuer Steg: unbefestigter Weg	Q2 8277,19210 8209,19107
 Neuer Steg: unbefestigter Weg	Q2 8211,19082 8194,19055
 Straße 79: mäßiger Asphalt und Schotter	Q2 7877,19507 7805,19359 7797,19345
 Mittelsteg: Asphalt	Q0 8340,18984 8247,19054
+Mittelsteg: Asphalt	Q0 8062,19212 7981,19269 7930,19282 7805,19359
 Mittelsteg: Schotterstraße	Q2 8247,19054 8211,19082 8209,19107 8136,19159
-Mittelsteg: Schotterstraße	Q2 8136,19159 8062,19212 7981,19269 7930,19282 7805,19359
+Mittelsteg: Schotterstraße	Q2 8136,19159 8062,19212
 Kreuzsteg: unbefestigter Weg	Q2 8099,19276 8062,19212
-Friedensteg: unbefestigter Weg	Q2 8029,19353 7981,19269 7959,19231
+Friedensteg: unbefestigter Weg	Q2 8029,19353 7981,19269
+Friedensteg: unbefestigter Weg	Q2 7981,19269 7959,19231
 Kreuzsteg: Asphalt	Q0 8062,19212 8025,19157
 Feldsteg: unbefestigter Weg	Q2 8136,19159 8106,19110
 Vereinssteg: Asphalt	Q0 8406,19081 8340,18984
@@ -10393,7 +10397,7 @@ Wagner-Régeny-Allee: Asphalt	Q0 19162,3935 19130,3969 18596,4517 18296,4850
 (Gleislinse - Hans-Schmidt-Str.): Asphalt	Q0 19242,4077 19219,4023
 Gustav-Hertz-Platz: Betonpflaster	Q0 18722,4628 18656,4687 18649,4678 18685,4595
 (Gustav-Hertz-Platz - ...): Asphalt	Q0 18656,4687 18601,4732
-Fußgängerbrücke Betriebsbahnhof Schöneweide: Asphalt mit zahlreichen Frostbeulen	Q2 18642,4654 18684,4690
+Fußgängerbrücke Betriebsbahnhof Schöneweide: Asphalt mit zahlreichen Frostbeulen	Q2 18642,4654 18664,4673
 Zugang zur Fußgängerbrücke Betriebsbahnhof Schöneweide: unbefestigt, sandig	Q3 18649,4678 18621,4675
 (Bambachstr. - Mariendorfer Weg): neu asphaltiert	Q0 12052,6660 12059,6642 12092,6616 12155,6526 12155,6512
 (Löwenbrucher Weg - Lortzingplatz): Waldweg	Q2 10107,-3063 10067,-2952 10058,-2924 10085,-2810
@@ -10995,6 +10999,7 @@ Brigitte-Reimann-Str.: Asphalt	Q0 23368,15469 23363,15517 23388,15637
 Templerzeile: Asphalt mit Schäden	Q1 9665,6029 9679,6160 9681,6180
 Parkstr. (Tempelhof): Kleinsteinpflaster	Q1 9202,6412 9143,6415
 Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9122,6471 9141,6459
+(Waldweg): überwiegend asphaltiert, einige wellige Stellen	Q0 24981,2565 25116,2529 25496,2429
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13072,7 +13077,7 @@ Börnestr.: guter Asphalt	Q0 13214,15830 13263,15930 13312,16027 13410,16214
 Am Sandwerder: guter Asphalt	Q0 -4644,1514 -4638,1579 -4469,1921 -4326,2141
 Am Oberhafen (Spandau): Beton	Q0 -2974,13188 -3053,13179 -3270,13307
 Sadowastr.: Asphalt	Q0 17856,8162 17925,8101 17976,8106
-Sadowastr.: teilweise brüchiger Asphalt	Q0 17976,8106 18078,8112
+Sadowastr.: teilweise brüchiger Asphalt	Q1 17976,8106 18078,8112
 Treskowstr. (Tegel): schlechtes Kopfsteinpflaster	Q3 2064,19874 2029,19963
 Treskowstr. (Tegel): Kopfsteinpflaster	Q2 2029,19963 1989,20053 1953,20149 1907,20265
 Wernitzer Str.: glattes Kopfsteinpflaster	Q1 22253,10412 22365,10386 22469,10362 22519,10339 22574,10300

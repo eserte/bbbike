@@ -35,7 +35,7 @@ Kronprinzessinnenweg: Gegenverkehrsregelung	X::inwork -4368,1731
 #: note: auch bei rbb am 30.7.2022 entfernt --- allerdings existiert die Baustelle tatsächlich noch immer
 #: by: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
-#: last_checked: 2022-08-07 vvv
+#: last_checked: 2022-08-14 vvv
 #: next_check: 2022-11-10 vvv
 #: valid: -20221110 vvv
 Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 21984,6317
@@ -104,7 +104,7 @@ Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
 # REMOVED --- #: XXX Bleibt diese Ampel permanent, oder steht sie in Zusammenhang mit den Bauarbeiten in der Französischen Str.? --- #: last_checked: 2022-03-02 --- #: check_frequency: 90d --- Friedrichstr./Behrenstr.	X::inwork 9373,12197
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
-#: last_checked: 2022-08-11
+#: last_checked: 2022-08-14
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # 
@@ -212,7 +212,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # REMOVED (vermutlich nun funktionslos) --- #: next_check_id: RHINSTRASSENBRUECKE-2018 --- #: last_checked: 2021-05-03 --- #: check_frequency: 30d --- #: next_check: 2021-07-30 --- #: note: Anforderung, gilt auch für nach Süden fahrenden Radfahrer --- Rhinstr.: Seitenwechsel für nach Norden fahrende Radfahrer	F::inwork 18225,12697
 # 
 #: next_check_id: KASTANIENALLEE-2021
-#: last_checked: 2022-07-03 (mapillary) vvv
+#: last_checked: 2022-08-13 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2021-10-29 vvv
 Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen auf den linken Bürgersteig wechseln	X::inwork 9073,20606
@@ -2296,7 +2296,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # REMOVED (wieder komplette Ampel) --- #: XXX zurzeit nur eine Fußgängerampel, nach den Bauarbeiten evtl. wieder eine volle Autoampel (X) --- #: last_checked: 2013-05-24 --- #: next_check: 2013-12-31 (Invalidenstr.)
 	X 8685,13728
 	X 11629,9086
-#: off: night (seen 2014-10-29 23:30), Sunday (seen 2015-11-01 15:00, 2018-12-09 14:00, 2020-12-20 11:30)
+#: off: night (seen 2014-10-29 23:30), Sunday (seen 2015-11-01 15:00, 2018-12-09 14:00, 2020-12-20 11:30, 2022-08-14 12:15)
 	X 15681,10801
 # REMOVED (seit 1.7.2004 gesperrt) ---	B 801,13323
 	X 21108,4725
@@ -3545,7 +3545,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: BERLINERBAHNHOF-2020
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6134 (Antrag) (im Ausschuss abgelehnt)
 #: XXX wird die provisorische Ampelanlage in eine permanente umgebaut? vvv
-#: last_checked: 2022-07-03 (mapillary) vvv
+#: last_checked: 2022-08-13 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166

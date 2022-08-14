@@ -2294,7 +2294,7 @@ tragen (insgesamt 16 Stufen)	0:35 2913,13919
 tragen (3x13 Stufen)	0:45 18739,4728
 tragen (3x13 Stufen)	0:45 18636,4660
 #: note: provisorische Treppe
-tragen (36 Stufen)	0:45 18704,4665
+tragen (36 Stufen)	0:45 18687,4649
 # 
 # REMOVED --- #: next_check_id: SAENTISSTR-2018 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (Führungsrinnen werden gebaut) vvv --- #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/eine-fahrradschiene-fuer-die-saentisbruecke_a168977 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609 --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/fahrradschienen-im-dritten-quartal_a170558 --- #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/kritik-zu-fahrradschienen-am-bahnuebergang_a184103 --- tragen (3x12 Stufen)	0:35 9005,912 --- tragen (2x13 Stufen)	0:30 9047,948 --- #: by: ^^^
 # 
@@ -3407,7 +3407,7 @@ Halbschranke	BNP:0::trailer=1 28519,337
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/baustelle-wird-eingerichtet_a351209
-#: last_checked: 2022-08-11
+#: last_checked: 2022-08-14
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
@@ -3521,7 +3521,7 @@ Schönegarten: an beiden Enden gesperrt	2 7416,10492 7432,10546 7330,10590
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
-#: last_checked: 2022-07-22 vvv
+#: last_checked: 2022-08-14 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17783,8663 17656,8700
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17627,8556 17608,8483
@@ -3556,7 +3556,7 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
-#: last_checked: 2022-08-11
+#: last_checked: 2022-08-14
 #: check_frequency: 60d
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 # 
@@ -3717,11 +3717,11 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 #: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
-#: last_checked: 2022-08-11 vvv
+#: last_checked: 2022-08-14 (krickstadt) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2022-07-01 vvv
-Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
-Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18722,4628 18656,4687
+Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
+# REMOVED (hier offen, siehe http://thomas.krickstadt.de/s-bahn/2022-08-14-johannisthal/4-2022-08-14-12-xxl.jpg) --- Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18722,4628 18656,4687
 Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,4678
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -3925,7 +3925,7 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2022-07-03 vvv
+#: last_checked: 2022-08-14 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="729324149" version="8"
 #: osm_watch: way id="162120178" version="12"
