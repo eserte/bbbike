@@ -12266,7 +12266,7 @@ EOF
 Große Querallee	2::temp 7816,12150 7822,12201 7875,12363 7945,12592
 südl. Spreeuferweg	2::temp 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
 Paul-Löbe-Allee und Verlängerungen	2::temp 7710,12585 7741,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8596,12576
-Yitzhak-Rabin-Str. bis Gustav-Heinemann-Brücke	2::temp 8120,12756 8122,12603 8119,12414 8055,12186 8119,12414 8122,12603 8120,12756 8114,12839 8115,12912 8116,12938 8110,13042
+Yitzhak-Rabin-Str. bis Gustav-Heinemann-Brücke	2::temp 8120,12756 8122,12603 8119,12414 8055,12186 8119,12414 8122,12603 8120,12756 8114,12839 8115,12912 8116,12938 8111,13029 8110,13042
 nördl. Wilhelmstr.	2::temp 8775,12457 8766,12541
 Willy-Brandt-Str. - Konrad-Adenauer-Str.	2::temp 8021,12832 8030,12824 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853
 Platz des 18. März	2::temp 8538,12245 8592,12252
@@ -22123,7 +22123,7 @@ EOF
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2013
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2016
 	2::temp 7873,12927 7930,12912 8021,12832 8030,12824 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853 8503,12895
-	2::temp 8119,12414 8122,12603 8120,12756 8114,12839 8115,12912 8116,12938 8110,13042
+	2::temp 8119,12414 8122,12603 8120,12756 8114,12839 8115,12912 8116,12938 8111,13029 8110,13042
 # REMOVED ---	2::temp 8030,12824 8114,12839 8168,12848 8204,12816 8206,12757
 	2::temp 8206,12757 8206,12734 8207,12606
 	2::temp 7710,12585 7741,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8596,12576
@@ -26645,14 +26645,14 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
        data  => <<EOF,
-	2::temp 8044,12989 8110,13042 8116,12938 8041,12866 8025,12879
+	2::temp 8044,12989 8110,13042 8111,13029 8116,12938 8041,12866 8025,12879
 	2::temp 8277,13032 8317,13015 8408,12968 8464,12919 8480,12909 8503,12895 8424,12853 8309,12758 8252,12757 8206,12757 8120,12756 8030,12824
 # REMOVED ---	2::temp 8030,12824 8114,12839
 	2::temp 8168,12945 8235,12945 8304,12938 8370,12902
 	2::temp 8116,12938 8115,12912 8114,12839 8120,12756 8122,12603 8119,12414
 	2::temp 8464,12919 8498,12870
 	2::temp 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593
-	2::temp 8160,13053 8159,13042 8159,13032 8044,12989 7966,12913
+	2::temp 8111,13029 8132,13034 8137,13024 8044,12989 7966,12913
 	2::temp 8050,12893
 # REMOFED ---	2::temp 8168,12848 8204,12816 8206,12757
 	2::temp 8206,12757 8206,12734 8207,12606
@@ -28535,8 +28535,8 @@ Promenade Schiffbauerdamm	2::temp 8498,12870 8529,12757
 (Uferpromenade - Schiffbauerdamm)	2::temp 8498,12870 8507,12873 8514,12877
 (Uferpromenade - Schiffbauerdamm)	2::temp 8464,12919 8480,12909 8503,12895
 (Kapelle-Ufer - Uferpromenade)	2::temp 8399,12983 8408,12968
-(Treppe zum Spreeuferweg)	2::temp 8159,13042 8159,13032
-(Spreeuferweg)	2::temp 7945,12878 7966,12913 8044,12989 8159,13032
+(Treppe zum Spreeuferweg)	2::temp 8132,13034 8137,13024
+(Spreeuferweg)	2::temp 7945,12878 7966,12913 8044,12989 8137,13024 8159,13032
 EOF
      },
      { from  => 1538024400, # 2018-09-27 07:00
@@ -34665,10 +34665,10 @@ EOF
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: last_checked: 2022-08-03 (osm) vvv
+#: last_checked: 2022-08-13 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="27"
+#: osm_watch: way id="4395450" version="28"
 	2::inwork 7031,12320 6694,12627
 #: osm_watch: way id="505363417" version="12"
 	2::inwork 6631,12707 6694,12627
@@ -35867,11 +35867,13 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1558046983465615360#m
 #: by: https://nitter.cz/VIZ_Berlin/status/1558124118003879937#m (Kronprinzessinenweg weiterhin gesperrt)
 #: by: https://nitter.cz/VIZ_Berlin/status/1558123538028138498#m (Hüttenweg ebenso)
+#: by: https://nitter.cz/Kemistorm/status/1559047585553231872#m
+#: by: https://nitter.cz/brliner5/status/1558910908885237760#m
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-14 (research) vvv
+#: last_checked: 2022-08-15 (research) vvv
 #: check_frequency: 1d vvv
 Hüttenweg (westlicher Abschnitt)	2::temp -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888
 Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133 -3296,3686
@@ -35896,7 +35898,7 @@ Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
 EOF
      },
      { from  => 1659844800, # 2022-08-07 06:00
-       until => 1664560800, # 2022-09-30 20:00
+       until => 1660587022, # 1664560800, # 2022-09-30 20:00 --- vorfristig entfernt
        text  => 'Kranzallee: Baustelle in Höhe Kiplingweg, Sperrung, evtl. sind auch Radfahrer betroffen, vom 08.08.2022 06:00 bis 30.09.2022 20:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.231908,52.505332,08.08.2022,06:00',

@@ -567,7 +567,7 @@ Barbarossaplatz: Sperrung für den Autoverkehr geplant	?::projected 6747,9531 673
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-05-16-prot-fahrratsitzung3.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf
 #: by: https://api.fixmyberlin.de/api/projects/386 (execution; construction_completed: 2020; hier sogar bis Neue Straße)
-#: source_id: viz2021:13.378538,52.466131,28.07.2022,07:00 (Leitungsarbeiten bis 19.8.2022)
+#: source_id: viz2021:13.378538,52.466131,28.07.2022,07:00 (Leitungsarbeiten bis 19.8.2022) (mittlerweile bis 16.8.2022)
 #: last_checked: 2022-08-13 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier bereits markiert) --- Alt-Tempelhof: Radverkehrsanlage geplant	?::projected 8739,6701 8787,6660
@@ -1720,8 +1720,8 @@ Seegefelder Str.: Umbau/Sanierung des Radwegs	?::projected -5257,14668 -5097,145
 # 
 #: by: https://api.fixmyberlin.de/api/projects/207
 #: XXX unklar: auf der fixmyberlin-Karte ist der Fischerhüttenweg (Waldweg im Grunewald!) markiert, vermutlich fälschlicherweise
-#: osm_watch: way id="718428128" version="3"
-#: osm_watch: way id="4740663" version="38"
+#: osm_watch: way id="718428128" version="4"
+#: osm_watch: way id="4740663" version="39"
 #: osm_watch: way id="718428121" version="6"
 #: last_checked: 2022-06-12 (mapillary)
 #: check_frequency: 150d
@@ -3725,14 +3725,15 @@ Wilmersdorfer Str.: Verlängerung der Fußgängerzone geplant	?::projected 3717,114
 # REMOVED (kein Verbot, jedenfalls nicht direkt an der Marksburgstr., aber Engstelle und davor u.U. Stau) --- #: XXX Arbeiten dauern bis Anfang Oktober 2021 --- #: next_check: 2021-09-13 --- Treskowallee: Bauarbeiten, gibt es vielleicht wieder Verbote für den Radverkehr?	?::inwork; 18809,9133 18790,9018 18770,8898
 # REMOVED (realisiert) --- #: source_id: viz2021:13.718655,52.431423,13.09.2021,11:00 (bis 15.10.2021) (mittlerweile bis 5.11.2021) (inaktiv) --- #: XXX statt des existierenden Zebrastreifens? --- #: last_checked: 2021-07-18 (mapillary) --- #: next_check: 2021-11-05 --- Fürstenwalder Damm: Neubau eine Fußgängerampel	?::inwork 31946,3283 31973,3237 31938,3193
 # 
-#: by: https://www.infravelo.de/projekt/grellstrasse-und-storkower-strasse/ (Baubeginn und -ende: 2. Quartal 2022) (mittlerweile bis 4. Quartal 2022) (mittlerweile ab 3. Quartal 2022)
+#: by: https://www.infravelo.de/projekt/grellstrasse-und-storkower-strasse/ (Baubeginn und -ende: 2. Quartal 2022) (mittlerweile bis 4. Quartal 2022) (mittlerweile ab 3. Quartal 2022) (Beginn der Bauarbeiten am 15.8.2022, Dauer 4 Wochen)
 #: by: https://www.morgenpost.de/berlin/article234969473/Hier-entstehen-neue-Radwege-in-Berlin.html (bis Ende 2022)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/wuetende-anwohner-wegen-gestrichenen-parkplaetzen-wie-gehen-die-mit-uns-um-li.254463
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1235101.php (Abschluss bis Ende September 2022; 2,50 Meter effektive Breite)
 #: source_id: viz2021:13.429763,52.544926,15.08.2022,07:00 (Fahrbahnausbesserungsarbeiten, bis 22.8.2022)
 #: priority: #D
 #: last_checked: 2022-08-12
-#: check_frequency: 90d
-#: next_check: 2022-12-31
+#: check_frequency: 30d
+#: next_check: 2022-09-30
 Grellstr. und Storkower Str.: Grünbeschichtung geplant	?::projected 11941,15586 12252,15376 12325,15328 12417,15272 12704,15105 12807,15045 13107,14873 13148,14850 13439,14673
 # 
 #: by: https://www.infravelo.de/projekt/opernroute-nord/ (4. Quartal 2021 - 2. Quartal 2022) (mittlerweile bis 4. Quartal 2022) (mittlerweile Start 2. Quartal 2022) (mittlerweile Start 3. Quartal 2022) (mittlerweile bis 2. Quartal 2023)
@@ -4730,11 +4731,11 @@ Waldpromenade: wird am öffentlichen Weg etwas geändert (Beleuchtung, Ausschilder
 #: check_frequency: 90d
 Paul-Schneider-Str.: Bauarbeiten geplant, ändert sich was für Radfahrer?	?::projected 6712,3237 6647,3292 6613,3320
 # 
-#: source_id: viz2021:13.346008,52.436503,02.08.2022,06:00 (bis 9.9.2022)
+#: source_id: viz2021:13.346008,52.436503,02.08.2022,06:00 (bis 9.9.2022) (mittlerweile bis 17.8.2022)
 #: by: https://nitter.it/VIZ_Berlin/status/1554317314505392128#m
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlpGUUQxY1dJQUFUZDYyLmpwZw==
 #: note: bei rbb nur bis Mitte August 2022
-#: next_check: 2022-09-09
+#: next_check: 2022-08-17
 Kaiser-Wilhelm-Str.: Leitungsarbeiten, vielleicht wird hier die Bus/Radspur komplettiert?	?::inwork; 6657,3367 6613,3320
 # 
 # REMOVED (siehe radwege-orig) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (voraussichtlich 2018) --- #: next_check: 2018-08-01 --- Fürstenwalder Allee: Radwegsanierung, Südseite	?; 32829,3105 33111,3064 33525,2901
@@ -5779,7 +5780,7 @@ Sternstr. (Drewitz): gibt es Richtung Norden einen Radweg?	?; -8021,-4937 -7969,
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993 (unklar, ob dieser Radweg gemeint ist)
 #: by: https://api.fixmyberlin.de/api/plannings/182 (unklar, ob dieser Weg gemeint ist)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_03_0249_0420_online.pdf (Widmung einer Grünanlage) (falls das tatsächlich hier ist)
-#: osm_watch: way id="357515474" version="4"
+#: osm_watch: way id="357515474" version="5"
 #: last_checked: 2022-08-06 (mapillary)
 #: check_frequency: 360d
 entlang der U-Bahn nach Hönow: zur Zeit nur ein Pfad. Wird vielleicht ein ausgebauter Weg irgendwann entstehen?	? 25334,15051 25499,15010 25657,14941
@@ -6289,7 +6290,7 @@ B167 Neuhardenberg - Altfriedland: Radweg geplant	?::projected 65524,23028 65031
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/wasserbetriebe-tauschen-abwasserdruckleitungen-zum-klaerwerk-stahnsdorf-aus_a328826
 #: XXX wo genau befindet sich der Abschnitt? Auch in Berlin?
 #: osm_watch: way id="188869582" version="13"
-#: osm_watch: way id="29612540" version="22"
+#: osm_watch: way id="29612540" version="23"
 #: source_id: 2147346636 (auf Berliner Seite, nur bis 22.12.2020) (inaktiv)
 #: last_checked: 2021-06-05 (mapillary)
 #: check_frequency: 300d
@@ -6894,6 +6895,14 @@ Herkulesufer: Widmung als Grünanlage geplant	? 7595,11086 7575,11076 7252,11188 
 #: check_frequency: 90d
 Grenzallee: Fußgängerampel in Bau	?::inwork 14050,6754 14040,6726 14030,6698
 # 
+#: next_check_id: S21-2018
+#: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2208/nachricht7311.html (blockiert durch die Baustelle der S-Bahn)
+#: by: https://berliner-abendblatt.de/2022/08/15/uferpromenaden-am-humboldthafen-eroeffnet/
+#: XXX ein paar Meter existieren bereits; wird die Uferpromenade bis an die Spree reichen?
+#: last_checked: 2022-08-06
+#: next_check: 2022-12-30
+Humboldthafen: Verlängerung der Uferpromenade	?::inwork 8119,13396 8118,13222 8160,13171 8159,13032
+# 
 #: ignore ^^^
 # 
 ######################################################################
@@ -7454,8 +7463,9 @@ Barnimer Dörferweg: werden hier auch grüne Straßenschilder aufgestellt?	? 18515,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/artikel.81905.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/oeffentlichkeitsbeteiligung-6-30/verfahrensdokumente/22-07-18_bp_6_30_entwurf-blatt-1.pdf
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/oeffentlichkeitsbeteiligung-6-30/verfahrensdokumente/22-07-01b_bp_6_30_entwurf-blatt-2.pdf
-#: osm_watch: way id="318397770" version="1"
-#: osm_watch: way id="318395919" version="5"
+# REMOVED --- #: osm_watch: way id="318397770" version="2"
+# REMOVED --- #: osm_watch: way id="318395919" version="6"
+#: osm_watch: way id="49998472" version="6"
 #: last_checked: 2022-05-28
 #: check_frequency: 720d
 #: next_check: 2025-06-15
@@ -7572,6 +7582,9 @@ Daumstr.: abzweigende Wohngebietsstraße wird entstehen	?::projected -1706,15794 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_53_4881_4960_online.pdf (Erweiterung des Geltungsbereiches des Bebauungsplans)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_31_2069_2132_online.pdf (Auslegung eines Bebauungsplanentwurfs)
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2208/nachricht7309.html
+#: by: https://www.berliner-woche.de/haselhorst/c-bauen/plaene-fuer-die-waterkant_a354707
+#: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/5-98/index.shtml
+#: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/5-98/download/B-Plan_5-98_Planzeichnung.pdf
 #: last_checked: 2022-04-23
 #: next_check: 2023-06-01
 "Waterkant": entstehen hier für Radfahrer nutzbare Wege?	?::projected -1762,15925 -1552,16043 -1493,16135
