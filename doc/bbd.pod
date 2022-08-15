@@ -683,6 +683,13 @@ just a note for editors.
 Currently I think the C<XXX_...> is better suited for this task, as it
 can give more specific information.
 
+=item C<historical_note: I<string>>
+
+A free text note with former data regarding the associated record.
+Sometimes this may also be fetched using the version control system,
+but this is sometimes cumbersome. Note that old names should instead
+be specified using the L</oldname> directive.
+
 =item C<unverified_by: I<source>>
 
 Same as E<quot>by:E<quot> for unverified data.
