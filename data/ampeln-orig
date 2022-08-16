@@ -8,8 +8,11 @@
 #: temporary vvv
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=659363#post659363 (vermutlich steht die Ampel im Zusammenhang mit den Bauarbeiten)
+#: by: https://officehome.de/ostkreuz-campus-a
 #: osm_watch: way id="936801541" version="2"
-#: last_checked: 2022-08-13
+#: XXX Ampel befindet sich östlich der Einmündung
+#: note: Anforderungsampel
+#: last_checked: 2022-08-15
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -31,12 +34,13 @@ Kronprinzessinnenweg: Gegenverkehrsregelung	X::inwork -4368,1731
 # 
 #: next_check_id: HAEMMERLING-2022
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,730605#msg-730605 (19.4.2022 - 30.11.2022)
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (Gegenverkehrsregelung mit Baustellenampel, bis 10.11.2022) (mittlerweile inaktiv, bereits Ende Juli 2022)
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (Gegenverkehrsregelung mit Baustellenampel, bis 10.11.2022) (mittlerweile inaktiv, bereits Ende Juli 2022) (wieder aktiviert, bis 30.9.2022)
 #: note: auch bei rbb am 30.7.2022 entfernt --- allerdings existiert die Baustelle tatsächlich noch immer
 #: by: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: last_checked: 2022-08-14 vvv
-#: next_check: 2022-11-10 vvv
+# REMOVED --- #: next_check: 2022-11-10 vvv
+#: next_check: 2022-09-30 vvv
 #: valid: -20221110 vvv
 Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 21984,6317
 Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245
@@ -162,7 +166,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: next_check: 2022-09-30 vvv
 #: check_frequency: 90d vvv
 #: valid: -20220930 vvv
-#: last_checked: 2022-07-15
+#: last_checked: 2022-08-16
 #: osm_watch: node id="6380038401" version="1"
 	X::inwork 9195,11972
 #: note: Ampel befindet sich westlich der Kreuzung
@@ -174,7 +178,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2022-07-15
+#: last_checked: 2022-08-16
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -2450,12 +2454,12 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
-#: last_checked: 2022-08-13
+#: last_checked: 2022-08-16
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
-#: last_checked: 2022-08-13
+#: last_checked: 2022-08-16
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746

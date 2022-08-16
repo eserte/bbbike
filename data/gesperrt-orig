@@ -3407,6 +3407,8 @@ Halbschranke	BNP:0::trailer=1 28519,337
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/baustelle-wird-eingerichtet_a351209
+#: osm_watch: way id="1086484458" version="1"
+#: osm_watch: way id="36780316" version="10"
 #: last_checked: 2022-08-14
 #: check_frequency: 90d
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
@@ -3481,7 +3483,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 (Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
 # 
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-07-31
+#: last_checked: 2022-08-16
 Unter den Linden/Schadowstr.: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3nocross 8804,12280 9028,12307 9141,12320
 # 
 #: next_check_id: FALKENBERG-2021
@@ -3756,7 +3758,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: osm_watch: way id="229647788" version="8"
 #: osm_watch: way id="850453338" version="6"
-#: last_checked: 2022-08-11
+#: last_checked: 2022-08-14 (krickstadt)
 #: check_frequency: 60d
 #: next_check: 2022-11-01
 # REMOVED (Hochbauarbeiten dauern länger) --- #: next_check: 2021-10-31
@@ -3808,14 +3810,14 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-08-10
+#: last_checked: 2022-08-15
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2022-08-10
+#: last_checked: 2022-08-15
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -3823,7 +3825,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2022-08-10
+#: last_checked: 2022-08-15
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 # 
@@ -3991,14 +3993,14 @@ Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realität weiterhin Einbahnstraße
 #: osm_watch: way id="5096644" version="19"
 #: priority: #C
-#: last_checked: 2022-07-19
+#: last_checked: 2022-08-15
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
 #: next_check_id: TACHELES-2020
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2022-08-11 (mapillary)
+#: last_checked: 2022-08-16
 #: check_frequency: 60d
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
 # 
@@ -4109,13 +4111,13 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
 #: osm_watch: way id="226163591" version="5"
 #: priority: #C
-#: last_checked: 2022-08-11
+#: last_checked: 2022-08-14 (krickstadt)
 #: check_frequency: 360d
 #: next_check: 2022-12-20
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521
 # 
 #: next_check_id: SCHOENEWEIDE-2018
-#: last_checked: 2022-08-11
+#: last_checked: 2022-08-14 (krickstadt)
 #: check_frequency: 90d
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
 # 
@@ -4146,7 +4148,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2022-08-06 vvv
+#: last_checked: 2022-08-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -4176,12 +4178,12 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2022-06-30
+#: last_checked: 2022-08-16
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
 #: note: allerdings war das Einbahnstraßenschild am 2022-01-17 weggedreht, am 2022-03-02 wieder vollständig aktiv
-#: last_checked: 2022-07-15
+#: last_checked: 2022-08-16
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: next_check_id: POTSDAMSPEICHERSTADT-2022
@@ -4590,7 +4592,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="8"
-#: last_checked: 2022-08-06 vvv
+#: last_checked: 2022-08-16 vvv
 # REMOVED (fertig?) --- #: check_frequency: 60d vvv
 #: also_indoor: traffic (G)
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760

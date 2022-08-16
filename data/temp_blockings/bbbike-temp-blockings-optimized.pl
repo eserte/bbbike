@@ -4652,7 +4652,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-04-18
+#: last_checked: 2022-08-16
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -6021,7 +6021,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        },
        {
          'data' => '#: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
-#: last_checked: 2022-08-13 vvv
+#: last_checked: 2022-08-16 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
 	q3::inwork 12995,8213 13060,8148
 #: last_checked ^^^
@@ -6147,11 +6147,12 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://nitter.cz/VIZ_Berlin/status/1558123538028138498#m (Hüttenweg ebenso)
 #: by: https://nitter.cz/Kemistorm/status/1559047585553231872#m
 #: by: https://nitter.cz/brliner5/status/1558910908885237760#m
+#: note: check now with https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-16&until=&near=
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-15 (research) vvv
+#: last_checked: 2022-08-16 (research) vvv
 #: check_frequency: 1d vvv
 Hüttenweg (westlicher Abschnitt)	2::temp -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888
 Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133 -3296,3686
@@ -6226,6 +6227,29 @@ Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
          'text' => 'Salzmannstr.: Leitungsarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: note: vermutlich für den Tag der offenen Tür der Bundesregierung, 20.+21. August 2022; Sperrung der Fahrbahn bereits am Dienstag vorher
+#: by: https://www.bundesregierung.de/breg-de/themen/tag-der-offenen-tuer/veranstaltungen-tag-der-offenen-tuer-2022/bundesministerium-fuer-arbeit-und-soziales-2063814
+	q4::temp 9075,11756 9171,11777
+',
+         'from' => undef,
+         'id' => 3604,
+         'text' => 'Zietenplatz: Veranstaltung, Sperrung der Fahrbahn, voraussichtlich bis 21.8.2022',
+         'type' => 'handicap',
+         'until' => 1661119199
+       },
+       {
+         'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022)
+	q4::inwork 1514,5163 1573,5152
+	q3::inwork 1573,5152 1964,5070
+',
+         'from' => 1660582743,
+         'id' => 3605,
+         'source_id' => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/',
+         'text' => 'Hüttenweg: Anbindung Clayallee gesperrt',
+         'type' => 'handicap',
+         'until' => 1662994800
        }
      
 );
