@@ -763,7 +763,7 @@ Siemensstr.: Radfahr- oder Schutzstreifen geplant	?::projected 17614,6571 17766,
 #: last_checked: 2022-08-11
 #: check_frequency: 90d
 Wilhelminenhofstr.: Radfahrstreifen auf nördlicher Seite geplant	?::projected; 19024,5830 18932,5926 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18464,6269 18423,6285 18341,6313 18191,6363 17991,6431
-#: osm_watch: way id="199768813" version="12"
+#: osm_watch: way id="199768813" version="14"
 #: XXX haben die Bauarbeiten was mit der Maßnahme zu tun? (bis Anfang Mai 2018) (laut Bezirkswebsite Ende der Bauarbeiten bis August 2018)
 #: source_id: 2147342044
 #: last_checked: 2022-08-11
@@ -987,7 +987,7 @@ Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17736,5441 1
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17601,5090 17542,4772 17516,4657
 # 
 #: XXX Jt.3
-#: osm_watch: way id="132688411" version="13"
+#: osm_watch: way id="132688411" version="15"
 #: last_checked: 2022-06-18
 #: check_frequency: 90d
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17516,4657 17471,4570 17428,4503 17387,4446 17290,4308 17261,4267 17244,4242 17110,4055 17053,3971 17219,3795 17364,3565
@@ -3736,9 +3736,9 @@ Wilmersdorfer Str.: Verlängerung der Fußgängerzone geplant	?::projected 3717,114
 #: by: https://www.berliner-zeitung.de/mensch-metropole/wuetende-anwohner-wegen-gestrichenen-parkplaetzen-wie-gehen-die-mit-uns-um-li.254463
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1235101.php (Abschluss bis Ende September 2022; 2,50 Meter effektive Breite)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559508593212379138#m
-#: source_id: viz2021:13.429763,52.544926,15.08.2022,07:00 (Fahrbahnausbesserungsarbeiten, bis 22.8.2022)
+#: source_id: viz2021:13.429763,52.544926,15.08.2022,07:00 (Fahrbahnausbesserungsarbeiten, bis 22.8.2022) (bis 18.8.2022)
 #: priority: #D
-#: last_checked: 2022-08-12
+#: last_checked: 2022-08-16 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2022-09-30
 Grellstr. und Storkower Str.: Grünbeschichtung geplant	?::projected 11941,15586 12252,15376 12325,15328 12417,15272 12704,15105 12807,15045 13107,14873 13148,14850 13439,14673
@@ -3883,6 +3883,8 @@ Hultschiner Damm: Aufhebung der Benutzungspflicht?	? 24639,10766 24644,10740 246
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-12-31
 Altentreptower Str.: werden hier Radwege gebaut?	? 21199,12258 21271,12235 21288,12166 21307,12132 21400,12135 21573,12140 21819,12154 21935,12153
+#: by: https://nitter.cz/VIZ_Berlin/status/1559765715137114112#m
+#: by: https://nitter.cz/pic/media%2FFaSlqiuWYAMlvq3.jpg%3Fname%3Dorig
 #: source_id: viz2021:13.534867,52.525542,17.08.2022,07:00 (Kabelbauarbeiten --- haben diese mit dem Radweg zu tun? bis Ende Dezember 2022)
 #: last_checked: 2022-08-10 (mapillary)
 #: check_frequency: 150d
@@ -4735,6 +4737,8 @@ Waldpromenade: wird am öffentlichen Weg etwas geändert (Beleuchtung, Ausschilder
 # 
 #: by: https://www.berliner-woche.de/lankwitz/c-verkehr/strassensanierung-erst-2019_a167525
 #: by: https://viz.berlin.de/2022/08/verkehrsvorschau-170822/ (Bauarbeiten im Kreuzungsbereich, bis 25.8.2022)
+#: by: https://nitter.cz/VIZ_Berlin/status/1559754390533091328#m
+#: by: https://nitter.cz/pic/media%2FFaSlDmcXwAA1yBi.jpg%3Fname%3Dorig
 #: source_id: viz2021:13.345814,52.436196,17.08.2022,06:00 (bis 25.8.2022)
 #: osm_watch: way id="4680171" version="38"
 #: last_checked: 2022-07-10
@@ -4742,7 +4746,7 @@ Waldpromenade: wird am öffentlichen Weg etwas geändert (Beleuchtung, Ausschilder
 #: next_check: 2022-08-25
 Paul-Schneider-Str.: Bauarbeiten geplant, ändert sich was für Radfahrer?	?::projected 6712,3237 6647,3292 6613,3320
 # 
-#: source_id: viz2021:13.346008,52.436503,02.08.2022,06:00 (bis 9.9.2022) (mittlerweile bis 17.8.2022)
+#: source_id: viz2021:13.346008,52.436503,02.08.2022,06:00 (bis 9.9.2022) (mittlerweile bis 17.8.2022) (inaktiv)
 #: by: https://nitter.it/VIZ_Berlin/status/1554317314505392128#m
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlpGUUQxY1dJQUFUZDYyLmpwZw==
 #: note: bei rbb nur bis Mitte August 2022
@@ -6042,7 +6046,7 @@ B168: straßenbegleitender Radweg (westliche Seite) in Bau	?::inwork 67495,-21856
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=19117
 #: source_id: LS/221-E/22/018 (vorbereitende Arbeiten bis 28.2.2022) (inaktiv)
-#: osm_watch: way id="30609511" version="10"
+#: osm_watch: way id="30609511" version="11"
 #: last_checked: 2021-06-27 (mapillary)
 #: check_frequency: 360d
 B158, Oderberg, Brücke über die HOW: Radstreifen geplant	?::projected 53201,51677 53170,51879
@@ -6118,6 +6122,8 @@ Bamihlstr.: Einbahnstraßenregelung gefordert/geplant	? -2563,17004 -2585,16900 -
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6230 (Antrag)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7210 (Antrag)
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/buerger-sollen-besser-ueber-den-gueterbahnhof-koepenick-informiert-werden_a352529
+#: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2208/nachricht7313.html
+#: by: https://www.stadtentwicklung.berlin.de/wohnen/wohnungsbau/gueterbahnhof-koepenick/de/gebietsbeirat.shtml
 #: last_checked: 2022-04-02
 #: check_frequency: 360d
 Güterbahnhof Köpenick: hier entsteht die Ostumfahrung Bahnhofstraße	?::projected 23327,5817 23244,6154 22796,6118 22777,6151
