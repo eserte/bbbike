@@ -30,6 +30,7 @@ Kollwitzplatz	Pl 11229,14422
 Lustgarten	Pl 10176,12506
 Molkenmarkt	Pl 10738,12364
 Jannowitzbrücke	Pl 11343,12182
+#: oldname: -20220821: Heinrichplatz
 Rio-Reiser-Platz	Pl 11721,10530
 Hohenstaufenplatz	Pl 11541,9576
 Lohmühlenplatz	Pl 12868,9359
@@ -258,18 +259,25 @@ Otto-Hahn-Platz	Pl 3125,4780
 Otto-Hahn-Platz	Pl 3057,4731
 Otto-Hahn-Platz	Pl 3095,4680
 Mierendorffplatz	Pl 3645,13206
+#: oldname: -20210908: <namenslos>
 Digedagsplatz	Pl 18939,9417
 Breslauer Platz	Pl 5810,7337
 Lessingplatz	Pl 9861,-44
+#: oldname: -20211011: <namenslos> vvv
 Hans-Söhnker-Platz	Pl 3357,5178
 Hans-Söhnker-Platz	Pl 3328,5218
 Hans-Söhnker-Platz	Pl 3426,5292
+#: oldname: ^^^
+#: oldname: -20220310: <namenslos> vvv
 Gertrud-Pincus-Platz	Pl 11899,16037
 Gertrud-Pincus-Platz	Pl 11852,16061
 Gertrud-Pincus-Platz	Pl 11926,16088
+#: oldname: ^^^
+#: oldname: -202203: <namenslos> vvv
 Paulinenplatz	Pl 3328,3313
 Paulinenplatz	Pl 3327,3261
 Paulinenplatz	Pl 3348,3278
+#: oldname: ^^^
 Kottbusser Tor	Pl 11393,10390
 Anhalter Bahnhof	Pl 8947,10956
 Flughafen Tempelhof	Pl 9884,8265
@@ -304,6 +312,7 @@ Alte Nationalgalerie	Pl 9987,12744
 Altes Museum	Pl 10094,12635
 Neues Museum	Pl 9972,12732
 Bodemuseum	Pl 9683,12913
+#: alias: DHM
 Deutsches Historisches Museum	Pl 9934,12420
 Jagdschloß Grunewald	Pl 878,6651
 Grunewaldturm	Pl -3603,7798
@@ -316,14 +325,19 @@ Müggelturm	Pl 25662,1502
 Müggelberg	Pl 25662,1502
 Insel der Jugend	Pl 15674,9095
 Johannesstift	Pl -3953,17941
+#: alias: Strandbad Wendenschloß
 Seebad Wendenschloß	Pl 23869,1282
 Strandbad Müggelsee	Pl 29089,4759
 Strandbad Wannsee	Pl -4684,3318
+#: alias: Freibad Tegeler See
+#: alias: Strandbad Tegelsee
 Strandbad Tegel	Pl -629,18977
 Strandbad Orankesee	Pl 15793,16162
 Strandbad Weißensee	Pl 14510,16549
 Strandbad Grünau	Pl 24571,514
+#: alias: Freibad Jungfernheide
 Strandbad Jungfernheide	Pl 1498,15196
+#: alias: Freibad Plötzensee
 Strandbad Plötzensee	Pl 5252,15182
 Bürgerablage	Pl -2905,19636
 Bammelecke	Pl 25473,449
@@ -333,6 +347,7 @@ Tegel-Center	Pl 2297,20353
 Nikolskoe	Pl -8881,1668
 Schäferberg	Pl -8169,760
 Moorlake	Pl -9629,1408
+#: alias: Teufelssee
 Ökowerk Teufelssee	Pl -977,9425
 Pfaueninsel	Pl -8564,2276
 Museumsinsel	Pl 9948,12631
@@ -356,6 +371,7 @@ Klinikum Buch	Pl 17428,25235
 Klinikum Kaulsdorf	Pl 23182,11534
 Urban-Krankenhaus	Pl 10783,9892
 Krankenhaus Havelhöhe	Pl -6032,5895
+#: alias: Unfallkrankenhaus Marzahn
 Unfallkrankenhaus Berlin	Pl 21520,12741
 Waldfriedhof Zehlendorf	Pl -2671,1988
 Waldfriedhof Müggelheim	Pl 29116,502
@@ -364,7 +380,10 @@ Waldfriedhof Oberschöneweide	Pl 19372,6579
 Wasserwerk an der Wuhlheide	Pl 19463,7117
 Avus Innenraum	Pl 1692,10348
 Avus Nordkurve	Pl 1870,10406
+#: alias: Sportplatz Eichkamp
+#: alias: Sportanlage Eichkamp
 Julius-Hirsch-Sportanlage	Pl 556,10122
+#: alias: Sportplatz Kühler Weg
 Hans-Rosenthal-Sportanlage	Pl 743,9772
 Wally-Wittmann-Sportanlage	Pl 863,10363
 Sportplatz Maikäferpfad	Pl 748,9981
@@ -478,5 +497,6 @@ DIN-Platz	Pl 6266,10927
 Kitty-Kuse-Platz	Pl 7716,8356
 Lucie-Strewe-Platz	Pl -216,3623
 Karmielplatz	Pl 884,8954
+#: oldname: -20200815: <namenslos>
 Platz der Weißen Rose	Pl -4351,12460
 Nettelbeckplatz	Pl 7974,15418
