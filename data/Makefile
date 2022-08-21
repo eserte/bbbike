@@ -306,7 +306,7 @@ $f:	${_f_raw_${f}} inaccessible_landstrassen
 plaetze: plaetze-orig .check_daily
 	-@$(WRITEABLE) $@
 	${GREPSTRASSEN_VALID} plaetze-orig |\
-	    $(CONVERT_ORIG) > plaetze~
+	    $(CONVERT_ORIG) -keep-directive alias --keep-directive osm.highway -keep-old-name -5y > plaetze~
 	mv plaetze~ plaetze
 	-@$(READONLY) $@
 
