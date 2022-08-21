@@ -330,7 +330,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: source_id: 2147342170 vvv
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72
 #: osm_watch: way id="336565341" version="10" vvv
-#: last_checked: 2022-07-25 vvv
+#: last_checked: 2022-08-18 vvv
 #: check_frequency: 120d vvv
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 #: check_frequency ^^^
@@ -1499,8 +1499,8 @@ Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::pro
 #: source_id: 2147344112 (bis Mitte November 2019)
 #: source_id: 2147345106 (bis Ende 2019) 
 #: source_id: 2147345785 (bis 16.5.2020)
-#: last_checked: 2021-12-31
-#: check_frequency: 270d
+#: last_checked: 2022-08-18
+#: check_frequency: 180d
 # REMOVED --- #: next_check: 2020-05-16
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs stadtauswärts?	?::projected; 17744,18016 17843,18078
 # 
@@ -3395,7 +3395,7 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8917,5986 -8871,628
 #: next_check: 2023-09-01
 Seegefelder Weg: Verbreiterung der Straße + Anlange von Radspuren geplant	?::projected -7365,15306 -7513,15368 -7736,15460 -7840,15503 -7961,15552 -8066,15595 -8198,15648
 # 
-# REMOVED (freigegeben) #: XXX wann erfolgt die Freigabe? Gibt es eine Benutzungspflicht? --- #: source_id: LS/721-E/16/109 --- #: source_id: BIBER_id_234607 --- #: osm_watch: way id="509641493" version="4" brb --- #: last_checked: 2019-06-02 (by mapillary) (offiziell noch abgesperrt) --- #: check_frequency: 60d --- B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21111,26990 21169,27133 21326,27505 21772,28566
+# REMOVED (freigegeben) #: XXX wann erfolgt die Freigabe? Gibt es eine Benutzungspflicht? --- #: source_id: LS/721-E/16/109 --- #: source_id: BIBER_id_234607 --- #: osm_watch: way id="509641493" version="4" brb --- #: last_checked: 2019-06-02 (by mapillary) (offiziell noch abgesperrt) --- #: check_frequency: 60d --- B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21065,26876 21071,26891 21111,26990 21169,27133 21326,27505 21772,28566
 # 
 #: next_check_id: TRAMTURM-2021
 #: XXX mit der Verlängerung der Tram zur Turmstr.
@@ -5402,7 +5402,7 @@ Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,885
 #: check_frequency: 120d
 Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18042,10392 18081,10312 18085,10244 18113,10208
 # REMOVED (hier liegt bereits Verbundsteinpflaster --- keine Änderung?) --- Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18113,10208 18130,10201 18132,10183
-#: last_checked: 2022-07-25
+#: last_checked: 2022-08-18
 #: check_frequency: 90d
 Bornitzstr.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 15950,12886 16073,12883 16146,12881 16197,12880 16242,12878 16312,12876 16376,12874 16384,12874 16439,12872 16484,12871 16860,12861
 #: last_checked: 2022-07-30
@@ -5414,7 +5414,7 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 #: check_frequency: 60d
 Indira-Gandhi-Str.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 14828,15050 14686,15608 14653,15738 14609,15921 14597,15970 14595,15980 14576,16069 14552,16171 14522,16260 14499,16341
 #: osm_watch: way id="6060511" version="35"
-#: last_checked: 2022-07-30
+#: last_checked: 2022-08-18
 #: check_frequency: 90d
 Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 18223,18153 18279,18079 18412,17920 18476,17842 18553,17749 18635,17649
 # REMOVED (hier vermutlich sowieso nicht) --- Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 18635,17649 18694,17577 18704,17565
@@ -5446,7 +5446,7 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 18
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung: hier sowie auf der Lichtenberger Brücke)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2022-07-30
+#: last_checked: 2022-08-18
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: by: https://api.fixmyberlin.de/api/projects/328 (Grünbeschichtung + Verbreiterung, teilweise Leitboys)
@@ -5455,7 +5455,7 @@ Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Rad
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (kleine Protektion, herausnehmbare Poller, Planungsleistungen bis Herbst 2021, danach bauliche Umsetzung)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Umsetzung 2022)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
-#: last_checked: 2022-07-30
+#: last_checked: 2022-08-18
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch eine Änderung von RW3 -> RW4	?::projected 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855
@@ -5465,7 +5465,7 @@ Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch 
 #: by: https://www.infravelo.de/projekt/herzbergstrasse/ (1. Quartal 2023 - 4. Quartal 2023)
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Fertigstellung 2022)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
-#: last_checked: 2022-07-30
+#: last_checked: 2022-08-18
 #: check_frequency: 180d
 #: next_check: 2022-12-31
 Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
@@ -5474,7 +5474,7 @@ Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
 #: check_frequency: 120d
 Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18875,9570 18846,9532 18765,9426 18735,9421
 #: osm_watch: way id="261883742" version="11"
-#: last_checked: 2022-07-30
+#: last_checked: 2022-08-18
 #: check_frequency: 90d
 Lindenberger Str.: Was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18106,19353 18118,19394 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
 #: osm_watch: way id="25760211" version="12"
@@ -6088,6 +6088,7 @@ B2: straßenbegleitender Radweg geplant	?::projected 49788,67668 49825,67707 4987
 L25 (Prenzlau - Güstow): straßenbegleitender Radweg entsteht	?::inwork 37020,101115 36600,101499 36138,101586 35027,102258 34671,102369 34607,102396
 # 
 #: source_id: LS/221-E/22/071 (bis 30.11.2022)
+#: last_checked: 2022-08-18
 #: next_check: 2022-11-30
 L25 (Schmölln - Güstow): hier entsteht vermutlich auch ein Radweg	? 55977,100103 56030,100076 56188,99924 56268,99856 56856,99683 57042,99574 57512,99290 57634,99199
 # 
@@ -6849,7 +6850,7 @@ Almazeile: Einzieung von Straßenland geplant	? -1616,18112 -1660,18114
 Thorwaldsenstr.: Sanierung und Verbreiterung der Radwege zwischen Canovastr. und Bergstr. beide Seiten	?::projected 6343,6297 6494,6128 6629,5946 6696,5854
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9084
-#: last_checked: 2022-07-25
+#: last_checked: 2022-08-18
 #: check_frequency: 90d
 Bornitzstr./Ruschestr.: Ampel (anstelle des Zebrastreifens?) geplant	? 15923,12853 15950,12886 15985,12920
 # 
@@ -8988,12 +8989,10 @@ Tantow - Hohenreinkendorf: Qualität?	? 72847,96864 72865,96745 72904,96638 72947
 Hohenreinkendorf - Heinrichshof: Qualität (wahrscheinlich asphaltiert)?	? 71721,92864 71697,92696 71642,92416 71648,92361 71605,92245 71148,91331 71101,90883
 Hohenselchow: Qualität?	? 68345,89710 68168,89119
 Groß Pinnow: Qualität?	? 68302,87998 68308,87937 68174,87742 68150,87638
-Tantow - Radekow: Qualität (wahrscheinlich asphaltiert)?	? 72960,97477 73031,97614 73129,97894 73113,97976 73077,98244 73065,98680 73022,98994 73019,99533 73013,99841 73080,100167 73098,100396 73101,100563
+Tantow - Radekow: Qualität (wahrscheinlich asphaltiert)?	? 73129,97894 73113,97976 73077,98244 73065,98680 73022,98994 73019,99533 73013,99841 73080,100167 73098,100396 73101,100563
 Radekow - Pomellen: Qualität (wahrscheinlich asphaltiert)?	? 73101,100563 73110,100661 73092,100767 73049,100993 73138,101182 73473,101678 73574,101889 73775,102154 73897,102364 73976,102559
 Pomellen - Szczecin: Qualität?	? 75425,105250 75453,105252 75512,105294 75562,105308 75669,105316 75838,105243 75972,105223 76092,105184 76381,105136 76686,105057 76745,105033 77240,105015 77729,105204 77939,105233 78078,105186 78326,105068 78481,105097 78726,105405 78847,105423
 Petershagen - Penkun: Qualität (möglicherweise Platten- und/oder unbefestigter Fahrweg)?	? 66328,94287 66369,94389 66161,94972 66158,95421 66080,95584 66062,95820 65914,96079 64996,98790
-Petershagen - Penkun: Qualität?	? 64996,98790 65149,99482
-Petershagen - Schönfeld: Qualität?	? 66328,94287 66438,94341 66703,94518 67038,94677 67087,94741 67132,94835 67193,94859 67379,94926 67928,95210 68674,95847 68729,95981 68735,96087 68750,96276 68735,96398 68756,96471 69031,96974 69049,97087 69003,97550 68964,97629 68954,97815
 Luckow - Penkun: Qualität?	? 63948,94326 63885,94784 64166,96698 64996,98790
 #: XXX Genaue Wegführung?
 Eberswalde - Spechthausen: Qualität? Straßennamen?	? 35362,48503 35312,48225 35485,48132 35428,47961
@@ -9380,7 +9379,6 @@ Spechthausener Str. (Eberswalde): Qualität?	? 34335,48744 34378,48552 34354,4830
 Zoostr. (Eberswalde): Qualität?	? 34475,47425 34603,47145 34622,46834 34939,46907 35014,47009 35182,47081
 Oderfähre: ab 2007-06-30 in Betrieb	? 71946,40655 72361,41057
 Am Flugplatz (Strausberg): Qualität des südlichen Abschnitts?	? 44536,20408 44527,19890 44085,19049
-Grünberg - Battin: Qualität? zumindest am nördlichen Ende asphaltiert	? 59868,106575 59862,106288 59768,105990 59719,105670 59680,105514 59774,105301
 Battinsthal - Penkun: Qualität? zumindest am nördlichen Ende asphaltiert; laut osm asphaltiert	? 65975,103506 65883,103056 66039,102017 66127,101413
 Kunersdorf - Bliesdorf: Qualität? Radweg oder Fahrbahn?	? 61173,31087 61255,31127 61194,31842 61294,32550 61241,32838
 Am Luftschiffhafen - R1/Uferweg: existiert eine Verbindung für Radfahrer? Qualität?	? -15729,-3566 -15596,-3719
@@ -9549,7 +9547,7 @@ Dorfstr. (Prädikow): Qualität?	? 51461,25613 51464,25638 51509,25735
 #: XXX benutzungspflichtiger Radweg am östlichen Ende
 Am Biotop: Qualität? Hat die gesamte Straße einen Radweg?	? 44686,20822 44589,20853 44493,20826 44382,20624 44286,20112
 #: XXX bei osm als "cycleway" gekennzeichnet
-Mescherin - Geesow: Qualität? Für Autos gesperrt?	? 78252,94587 78148,94601 77550,95042 77099,95089 76669,95096 76276,95234 75799,95375 75673,95450 75591,95547
+Mescherin - Geesow: Qualität? Für Autos gesperrt?	? 78263,94609 78148,94601 77550,95042 77099,95089 76669,95096 76276,95234 75799,95375 75673,95450 75591,95547
 #: XXX bei osm als "cycleway" gekennzeichnet
 Geesow - Tantow: Qualität? Für Autos gesperrt?	? 75591,95547 75140,95540 73772,95260 73406,95808 73163,95966 72969,96202
 Georgenthal - Falkenhagen: Qualität?	? 71321,1319 72556,1910

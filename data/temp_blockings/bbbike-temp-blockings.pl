@@ -2855,7 +2855,7 @@ EOF
        text  => 'B 166 Zichow-Gramzow OD Gramzow Kanal- und Straßenbau Vollsperrung 26.11.2005-22.12.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 50107,89717 49930,89857
+	q4 50107,89708 49930,89857
 EOF
      },
      { from  => 1126994400, # 2005-09-18 00:00
@@ -7347,7 +7347,7 @@ EOF
        text  => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 06.03.2007-10.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 73204,97424 73031,97443 73017,97449 72960,97477 72583,97595
+	2::inwork 73204,97424 73031,97443 73016,97447 72945,97466 72614,97584
 EOF
      },
      { from  => 1172962800, # 2007-03-04 00:00
@@ -7453,7 +7453,7 @@ EOF
        text  => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 16.03.2007-19.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 73204,97424 73031,97443 73017,97449 72960,97477 72583,97595
+	2::inwork 73204,97424 73031,97443 73016,97447 72945,97466 72614,97584
 EOF
      },
      { from  => undef, # 
@@ -7547,7 +7547,7 @@ EOF
        text  => 'B 113 B 2-Damitzow Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 23.03.2007-26.03.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 73204,97424 73031,97443 73017,97449 72960,97477 72583,97595
+	2::inwork 73204,97424 73031,97443 73016,97447 72945,97466 72614,97584
 EOF
      },
      { from  => 1174258800, # 2007-03-19 00:00
@@ -11270,7 +11270,7 @@ EOF
        text  => 'B 113 B 2 - Damitzow - BG Bahnübergang in der OD Tantow Gleisbauarbeiten Vollsperrung 21.03.2008-24.03.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 72960,97477 73017,97449 73031,97443
+	2::inwork 72945,97466 73016,97447 73031,97443
 EOF
      },
      { from  => 1207432800, # 2008-04-06 00:00
@@ -31727,7 +31727,7 @@ EOF
        source_id => 'http://www.berlin-usedom-radweginfo.de/neuer_weg.php',
        data  => <<EOF,
 #: by: wosch
-	2::inwork 38096,68983 38048,68993
+	2::inwork 38123,68982 38048,68993
 EOF
      },
      { from  => undef, # 

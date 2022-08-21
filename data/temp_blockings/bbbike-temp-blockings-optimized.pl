@@ -5988,37 +5988,10 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        },
        undef,
        undef,
-       {
-         'data' => '	2::inwork 42938,96695 43612,96993 44588,96894 44825,96893
-',
-         'from' => 1657083600,
-         'id' => 3585,
-         'source_id' => '227300224',
-         'text' => 'Bietikow - Seelübbe: Asphaltsanierung, Sperrung der Straße, 07.07.2022 07:00 Uhr bis 20.08.2022 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1661004000
-       },
-       {
-         'data' => '	2::inwork 47334,21218 47192,21608 47072,21650 46672,21791 46264,21879 46072,21966
-',
-         'from' => 1657094400,
-         'id' => 3586,
-         'source_id' => '226400344',
-         'text' => 'Strauberg - Klosterdorf: Bauarbeiten, Sperrung der Straße, 07.07.2022 10:00 Uhr bis 19.08.2022 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1660917600
-       },
        undef,
-       {
-         'data' => '	2::inwork 40339,28934 40127,28820 40098,28808 39921,28733
-',
-         'from' => 1659247200,
-         'id' => 3588,
-         'source_id' => 'LS/221-F/22/104',
-         'text' => 'Prötzel - Tiefensee: Bauarbeiten, Sperrung, voraussichtlich 01.08.2022 08:00 Uhr bis 19.08.2022 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1660917600
-       },
+       undef,
+       undef,
+       undef,
        {
          'data' => '#: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
 #: last_checked: 2022-08-16 vvv
@@ -6084,16 +6057,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'type' => 'gesperrt',
          'until' => 1672495200
        },
-       {
-         'data' => '	2::inwork 42833,41088 42225,41215 41992,41263 39354,41395
-',
-         'from' => 1653804000,
-         'id' => 3594,
-         'source_id' => '226400817',
-         'text' => 'Falkenberg: K6431 von Gersdorf bis Ackermannshof Deckensanierung, Sperrung der Straße, bis 19.08.2022 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1660917600
-       },
+       undef,
        {
          'data' => '#: by: https://nitter.it/VIZ_Berlin/status/1552156830029185024#m
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllwVlhWTFh3QU11UF9MLmpwZw== (Korrektur)

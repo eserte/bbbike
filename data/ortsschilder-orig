@@ -95,6 +95,7 @@ Brüssow	OS 57049,110707
 Brüssow	OS 56419,111814
 Brüssow	OS 57602,110693
 Brüssow	OS 58298,112560
+Brüssow	OS 58357,111700
 # 
 Grimme	OS 58684,114106
 Grimme	OS 59574,114284
@@ -106,7 +107,7 @@ Bergholz	OS 60560,115838
 # 
 Löcknitz|(Vorpommern)	OS 62398,117458
 # 
-Woddow	OS 61301,108826
+Woddow	OS 61326,108817
 Woddow	OS 61261,109631
 Woddow	OS 60927,108774
 # 
@@ -129,14 +130,29 @@ Grünberg	OS 59525,107015
 Grünberg	OS 59120,106895
 Grünberg	OS 58430,106415
 # 
+Battin	OS 59714,105797
+# 
 Storkow|(bei Penkun)	OS 68196,101164
 Storkow|(bei Penkun)	OS 67711,101930
+# 
 #: linked: Frauenhagen|(bei Brüssow) vvv
 Frauenhagen	OS 58529,109432
 Frauenhagen	OS 59055,109122
 #: linked ^^^
+# 
 Sommersdorf	OS 60988,98694
 Sommersdorf	OS 61380,98335
+Sommersdorf	OS 61679,98798
+# 
+Penkun	OS 65365,99268
+Penkun	OS 64779,100463
+# 
+#: linked: Schönfeld|(bei Penkun) vvv
+Schönfeld	OS 69166,97859
+#: linked ^^^
+# 
+Keesow	OS 72298,97697
+Keesow	OS 72032,98091
 # 
 Wartin	OS 60084,95438
 Wartin	OS 60118,94772
@@ -156,6 +172,11 @@ Heinrichshof	OS 70368,90270
 Gartz|(Oder)	OS 73713,90988
 #: XXX geschätzte Position
 Gartz|(Oder)	OS 74369,90701
+Gartz|(Oder)	OS 76662,91006
+# 
+#: linked: Friedrichsthal|(bei Gartz) vvv
+Friedrichsthal	OS 72982,84245
+#: linked ^^^
 # 
 Luckow|(Luckow-Petershagen)	OS 63454,93330
 # 
@@ -168,13 +189,21 @@ Kunow	OS 66779,83230
 Hohenfelde	OS 68798,82097
 Hohenfelde	OS 68085,82295
 # 
-Tantow	OS 73449,98133
+#: historical_note: früher bei 73449,98133
+Tantow	OS 73115,97612
+Tantow	OS 72614,97584
 # 
-Neurochlitz	OS 76909,98115
-Neurochlitz	OS 76540,98841
+Neurochlitz	OS 76905,98120
+Neurochlitz	OS 76477,98844
+Neurochlitz	OS 76755,98464
+Neurochlitz	OS 76815,98454
 # 
 Staffelde|(bei Mescherin)	OS 78427,97592
 Staffelde|(bei Mescherin)	OS 78481,96992
+# 
+Mescherin	OHT 78819,96179
+Mescherin	OS 79037,95863
+Mescherin	OS 78106,94045
 # 
 Vierraden	OS 71582,78858
 Vierraden	OS 69531,77125
@@ -537,7 +566,7 @@ Schmiedeberg	OS 46633,82728
 Polßen	OS 48185,85197
 Polßen	OS 48092,85567
 # 
-Meichow	OS 48270,87121
+Meichow	OS 48253,87083
 Meichow	OS 48772,87442
 # 
 Gramzow	OS 48850,90656
@@ -547,6 +576,7 @@ Gramzow	OS 50578,90756
 Gramzow	OS 52338,90735
 Gramzow	OS 52363,90636
 Gramzow	OS 53731,92133
+Gramzow	OS 50121,89699
 # 
 Hohengüstow	OS 49543,92938
 Hohengüstow	OHT 48794,91837
@@ -657,12 +687,12 @@ Greiffenberg	OS 44842,75350
 Günterberg	OS 47711,78650
 Günterberg	OS  47114,77557
 # 
-Wolletz	OS 43680,69754
+Wolletz	OS 43681,69749
 Wolletz	OS 42369,69534
 #: by: mapillary
 Wolletz	OS 43164,69770
 # 
-Glambeck	OS 37224,68451
+Glambeck	OS 37210,68425
 # 
 Parlow	OS 34170,69176
 Parlow	OS 33430,68870
@@ -689,7 +719,7 @@ Altenhof	OS 31247,57341
 #: linked ^^^
 # 
 Rosenbeck	OHT 24635,52222
-Rosenbeck	OHT 24124,52310
+Rosenbeck	OHT 24133,52303
 # 
 Marienwerder	OS 23660,49619
 Marienwerder	OS 22948,48036
@@ -717,6 +747,7 @@ Lobetal	OS 23428,35951
 # 
 Ladeburg	OS 22445,31556
 Ladeburg	OS 22153,33963
+Ladeburg	OS 22519,33765
 # 
 Bernau|b. Berlin	OS 23413,31833
 Bernau|b. Berlin	OS 21772,28566
@@ -739,6 +770,7 @@ Schwanebeck	OS 19648,26794
 # REMOVED (hier nicht mehr) --- #: XXX: existiert das Ortsschild hier noch? Vermutlich ist es nun hier: 18154,22874 --- Schwanebeck	OS 18061,23456
 Schwanebeck	OS 19790,24572
 Schwanebeck	OS 19395,24634
+Schwanebeck	OS 21065,26876
 #: note: eigentlich auch Schwanebeck-West vvv
 Schwanebeck	OS 17895,25260
 Schwanebeck	OS 17193,24683
@@ -785,8 +817,12 @@ Zepernick	OS 19648,26794
 Zepernick	OS 17328,26912
 #: by: mapillary
 Zepernick	OS 21090,26998
+Zepernick	OS 21065,26876
+# 
 Leest	OS -20616,2567
+# 
 Grube	OS -19656,2362
+# 
 #: linked: Dahlwitz vvv
 Dahlwitz-Hoppegarten, Gemeinde Hoppegarten	OS 26800,10389
 Dahlwitz-Hoppegarten, Gemeinde Hoppegarten	OS 25922,11127
@@ -2234,7 +2270,7 @@ Chossewitz	OS 81394,-33585
 Chossewitz	OS 81414,-34059
 # 
 Wollschow	OS 61820,112556
-Wollschow	OS 61975,111658
+Wollschow	OS 61986,111674
 # 
 Halbe	OS 30094,-32401
 #: by: mapillary
@@ -2732,6 +2768,7 @@ Groß Friedenwalde	OS 35232,80744
 # 
 #: by: mapillary
 Peetzig	OS 44087,74849
+Peetzig	OS 44403,75026
 # 
 #: linked: Görlsdorf|bei Angermünde
 #: by: mapillary
