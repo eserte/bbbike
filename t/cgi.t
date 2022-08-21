@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2000,2003,2004,2006,2010,2011,2012,2013,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2000,2003,2004,2006,2010,2011,2012,2013,2017,2018,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -330,8 +330,8 @@ for my $cgiurl (@urls) {
 
     {
 	# Start and goal are in plaetze
-	my $content = std_get "$action?start=heinrichplatz&starthnr=&startcharimg.x=&startcharimg.y=&startmapimg.x=&startmapimg.y=&via=&viahnr=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=gesundbrunnen&zielhnr=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=", testname => "Heinrichplatz - Gesundbrunnen";
-	like_html $content, qr/Start.*startc.*startname.*Heinrichplatz/, "Start is Heinrichplatz"
+	my $content = std_get "$action?start=rio-reiser-platz&starthnr=&startcharimg.x=&startcharimg.y=&startmapimg.x=&startmapimg.y=&via=&viahnr=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=gesundbrunnen&zielhnr=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=", testname => "Rio-Reiser-Platz - Gesundbrunnen";
+	like_html $content, qr/Start.*startc.*startname.*Rio-Reiser-Platz/, "Start is Rio-Reiser-Platz"
 	    or diag "Test may fail if start is not in file plaetze";
 	like_html $content, qr/Ziel.*zielc.*zielname.*Gesundbrunnen/, "Goal is Gesundbrunnen"
 	    or diag "Test may fail if goal is not in file plaetze";
