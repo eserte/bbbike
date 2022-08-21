@@ -65,11 +65,11 @@ Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
 # 
-#: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022)
+#: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022) (bis 31.8.2022)
 #: source_id: viz2021:13.42544,52.52334,17.11.2021,07:00 (Engstelle) (inaktiv)
-#: last_checked: 2022-07-29 vvv
+#: last_checked: 2022-08-21 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-08-19 vvv
+#: next_check: 2022-08-31 vvv
 # REMOVED --- #: valid: -20220730 vvv
 Mollstr./Büschingstr.	F::inwork 11913,13077
 Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081
@@ -3131,7 +3131,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
-#: osm_watch: node id="1769589042" version="4"
+# REMOVED --- #: osm_watch: node id="1769589042" version="5"
+#: osm_watch: node id="9962315446" version="1"
+#: osm_watch: node id="9962290101" version="1"
 	X::inwork 9286,12886
 #: osm_watch: node id="6583929470" version="1"
 	X::inwork 9475,12365
@@ -3147,7 +3149,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2022-07-17 (mapillary)
+#: last_checked: 2022-08-20 (mapillary)
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-07-31
 	X::inwork 8732,14098
@@ -3471,7 +3473,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: CHAUSSEE-2020
 #: osm_watch: node id="26748289" version="9"
-#: last_checked: 2022-07-17 (mapillary)
+#: last_checked: 2022-08-20 (mapillary)
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-07-31
 	X::inwork 8336,14586
@@ -3483,7 +3485,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2022-07-14
+#: last_checked: 2022-08-20 (mapillary)
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 
@@ -4113,7 +4115,7 @@ S-Bahn ca. alle 10 Minuten	B 10896,-4469
 	X -1664,-1720
 	X -3368,-4430
 	X -1715,-1767
-	B 15580,-26698
+# REMOVED (Unterführung existiert nun) ---	B 15580,-26698
 	B 49463,69701
 	B 50401,70720
 	B 55594,74156

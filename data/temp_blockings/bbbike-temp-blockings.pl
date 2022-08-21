@@ -3570,7 +3570,7 @@ EOF
        text  => 'L 74 Chausseestr. Eisenbahnbrücke in der OD Wünsdorf Brückenbauarbeiten Vollsperrung; Umleitung 07.12.2005-08.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 15682,-26971 15229,-27157
+	2 15682,-26971 15223,-27156
 	2 15682,-26971 15962,-26911
 EOF
      },
@@ -3968,7 +3968,7 @@ EOF
        text  => 'L 074 Chausseestraße OL Wünsdorf, Bahnbrücke Brückenbauarbeiten Vollsperrung 02.05.2006-02.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 15682,-26971 15229,-27157
+	2 15682,-26971 15223,-27156
 	2 15682,-26971 15962,-26911
 EOF
      },
@@ -3977,7 +3977,7 @@ EOF
        text  => 'L 074 Chausseestraße OL Wünsdorf, Bahnbrücke Brückenbauarbeiten Vollsperrung 30.03.2006-30.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 15682,-26971 15229,-27157
+	2 15682,-26971 15223,-27156
 	2 15682,-26971 15962,-26911
 EOF
      },
@@ -4422,7 +4422,7 @@ EOF
        text  => 'L 074 Chausseestraße OL Wünsdorf, Bahnbrücke Brückenbauarbeiten Vollsperrung 12.05.2006-12.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 15682,-26971 15229,-27157
+	2 15682,-26971 15223,-27156
 	2 15682,-26971 15962,-26911
 EOF
      },
@@ -4759,7 +4759,7 @@ EOF
        text  => 'L 074 Chausseestraße OL Wünsdorf, zw. Cottbusser/Berliner Str. u. Seestr. Kanalverlegung Vollsperrung 19.06.2006-11.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 15962,-26911 15682,-26971 15229,-27157
+	2::inwork 15962,-26911 15682,-26971 15223,-27156
 EOF
      },
      { from  => 1149623437, # 2006-06-06 21:50
@@ -35736,7 +35736,7 @@ EOF
 EOF
      },
      { from  => 1658631600, # 2022-07-24 05:00
-       until => 1661180400, # 2022-08-22 17:00
+       until => 1661112619, # 1661180400, # 2022-08-22 17:00
        text  => 'Bereich Hackescher Markt: Gleisarbeiten, Richtung An der Spandauer Brücke sowie Große Präsidentenstr. gesperrt, vom 25.07.2022 05:00 bis 22.08.2022 17:00, evtl. auch nur bis Freitag Abend',
        type  => 'handicap',
        source_id => 'viz2021:13.40229,52.523644,25.07.2022,05:00', # mittlerweile nur noch bis 19.8.2022
@@ -35844,7 +35844,7 @@ EOF
      { from  => undef, # 
        until => undef, # XXX
        # früher: Waldbrand im Grunewald: Kronprinzessinenweg, Wege rund um den Sprengplatz und vermutlich auch weitere Straßen (Havelchaussee, Hüttenweg...) sind gesperrt
-       text  => 'Waldbrand im Grunewald: Kronprinzessinenweg, Wege rund um den Sprengplatz und Hüttenweg sind vermutlich weiterhin gesperrt',
+       text  => 'Waldbrand im Grunewald: Kronprinzessinenweg und Wege rund um den Sprengplatz sind vermutlich weiterhin gesperrt',
        type  => 'gesperrt',
 #       accept_multi_feature_distance => 3000,
        data  => <<EOF,
@@ -35872,26 +35872,30 @@ EOF
 #: by: https://nitter.cz/brliner5/status/1558910908885237760#m
 #: by: https://viz.berlin.de/2022/08/sprengplatz-grunewald/ (Kronprinzessinenweg weiterhin gesperrt)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559866883565912064#m (Sperrung könnte mehrere Wochen lang andauern)
-#: note: check now with https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-16&until=&near=
+#: by: https://nitter.cz/VIZ_Berlin/status/1560176606701830145#m
+#: note: check now with https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-20&until=&near=
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-17 (research) vvv
+#: last_checked: 2022-08-21 (research) vvv
 #: check_frequency: 1d vvv
 Hüttenweg (westlicher Abschnitt)	2::temp -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888
-Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133 -3296,3686
+Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133
+#Kronprinzessinenweg (NN)	2::temp -2218,5133 -3296,3686
 #Königsweg	2::temp 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888
 Hüttenweg - Havelchaussee	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790
 #Verbindungschaussee	2::temp -360,9193 -310,8989 -345,8899 -1112,7891 -1248,7704 -1328,7597
-Verlängerung Verbindungschaussee	2::temp -1328,7597 -1851,6887 -1925,6790 -2825,5588 -3021,5328 -3093,5223 -3605,4536
-Fischerhüttenweg	2::temp -2825,5588 -2218,5133 -2112,5050 -1424,4504
+Verlängerung Verbindungschaussee	2::temp -1328,7597 -1851,6887 -1925,6790 -2825,5588
+#Verlängerung Verbindungschaussee	2::temp -2825,5588 -3021,5328 -3093,5223 -3605,4536
+Fischerhüttenweg	2::temp -2825,5588 -2218,5133
+#Fischerhüttenweg	2::temp -2218,5133 -2112,5050 -1424,4504
 Schwarzer Weg	2::temp -2668,6862 -2632,6789 -2638,6641
 # weitere Sperrungen im Grunewald möglich (Havelchaussee, Koenigsallee, Hüttenweg)
 #Onkel-Tom-Str.	2::temp 40,5606 -119,5885 -150,6168 -138,6681
 #Koenigsallee	2::temp -138,6681 674,7758
 #Teltower Weg	2::temp -119,5885 -182,5927 -288,6101
-Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
+#Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
 #Havelchaussee	2::temp -2774,10345 -3025,10116 -3178,9953 -3412,9755 -3426,9684 -3347,9541 -3213,9425 -3140,9294 -3073,9061 -3283,8739 -3389,8624 -3578,8578 -3615,8496 -3567,8031 -3561,7964 -3536,7856 -3531,7825 -3496,7677 -3355,6874 -3382,6821 -3483,6789 -3530,6781 -3589,6721 -3598,6572 -3606,6407 -3723,6254 -3880,6142 -3944,6034 -4003,5621 -4046,5505 -4072,5227 -3962,5129 -3889,4967 -3807,4794 -3729,4687 -3605,4536 -3490,4212 -3296,3686
 #Kronprinzessinenweg (H)	2::temp -3296,3686 -3680,3160 -3768,3069 -4001,2858
 #Schildhornweg	2::temp -1588,9194 -1484,9175 -1435,9168 -1279,9093
@@ -35975,6 +35979,16 @@ EOF
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
 	q4::inwork 1514,5163 1573,5152
 	q2::inwork 1573,5152 1964,5070
+EOF
+     },
+     { from  => 1661112782, # 2022-08-21 22:13
+       until => 1672441200, # 2022-12-31 00:00
+       text  => 'Zur Gartenstadt: zwischen Buntzelstr. und Grottewitzstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.12.2022 ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.56812,52.40301,20.08.2022,06:00
+#: also_indoor: traffic (H(einseitig),G(kürzer),B)
+	q4::inwork 21742,115 21769,-30 21800,-109
 EOF
      },
     );

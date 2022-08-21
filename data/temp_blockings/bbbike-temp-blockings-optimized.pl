@@ -6006,23 +6006,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://nitter.it/VIZ_Berlin/status/1551255892011716609#m
-#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllNNkVpeVhrQUUxVXo3LmpwZw==
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf
-# REMOVED --- #: XXX sind Radfahrer tatsächlich betroffen? Laut rbb gibt\'s hier ein Einbahnstraßensystem (ohne konkrete Angabe von Richtungen). vvv --- #: next_check: 2022-07-25 vvv
-	q4::inwork; 10264,13097 10286,13084 10301,13075 10339,13052 10371,13006
-	q4::inwork 10220,13098 10105,13004
-# REMOVED (hier nicht) ---	q4::inwork 10339,13052 10301,13075 10286,13084 10264,13097 10220,13098 10077,13100
-# REMOVED --- #: next_check ^^^ --- #: XXX ^^^
-',
-         'from' => 1658631600,
-         'id' => 3590,
-         'source_id' => 'viz2021:13.40229,52.523644,25.07.2022,05:00',
-         'text' => 'Bereich Hackescher Markt: Gleisarbeiten, Richtung An der Spandauer Brücke sowie Große Präsidentenstr. gesperrt, vom 25.07.2022 05:00 bis 22.08.2022 17:00, evtl. auch nur bis Freitag Abend',
-         'type' => 'handicap',
-         'until' => 1661180400
-       },
+       undef,
        {
          'data' => '#: next_check_id: BADFREIENWALDE-2022
 	2::inwork 52984,42973 53249,43276
@@ -6124,26 +6108,30 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://nitter.cz/brliner5/status/1558910908885237760#m
 #: by: https://viz.berlin.de/2022/08/sprengplatz-grunewald/ (Kronprinzessinenweg weiterhin gesperrt)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559866883565912064#m (Sperrung könnte mehrere Wochen lang andauern)
-#: note: check now with https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-16&until=&near=
+#: by: https://nitter.cz/VIZ_Berlin/status/1560176606701830145#m
+#: note: check now with https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-20&until=&near=
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-17 (research) vvv
+#: last_checked: 2022-08-21 (research) vvv
 #: check_frequency: 1d vvv
 Hüttenweg (westlicher Abschnitt)	2::temp -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888
-Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133 -3296,3686
+Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133
+#Kronprinzessinenweg (NN)	2::temp -2218,5133 -3296,3686
 #Königsweg	2::temp 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888
 Hüttenweg - Havelchaussee	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790
 #Verbindungschaussee	2::temp -360,9193 -310,8989 -345,8899 -1112,7891 -1248,7704 -1328,7597
-Verlängerung Verbindungschaussee	2::temp -1328,7597 -1851,6887 -1925,6790 -2825,5588 -3021,5328 -3093,5223 -3605,4536
-Fischerhüttenweg	2::temp -2825,5588 -2218,5133 -2112,5050 -1424,4504
+Verlängerung Verbindungschaussee	2::temp -1328,7597 -1851,6887 -1925,6790 -2825,5588
+#Verlängerung Verbindungschaussee	2::temp -2825,5588 -3021,5328 -3093,5223 -3605,4536
+Fischerhüttenweg	2::temp -2825,5588 -2218,5133
+#Fischerhüttenweg	2::temp -2218,5133 -2112,5050 -1424,4504
 Schwarzer Weg	2::temp -2668,6862 -2632,6789 -2638,6641
 # weitere Sperrungen im Grunewald möglich (Havelchaussee, Koenigsallee, Hüttenweg)
 #Onkel-Tom-Str.	2::temp 40,5606 -119,5885 -150,6168 -138,6681
 #Koenigsallee	2::temp -138,6681 674,7758
 #Teltower Weg	2::temp -119,5885 -182,5927 -288,6101
-Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
+#Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
 #Havelchaussee	2::temp -2774,10345 -3025,10116 -3178,9953 -3412,9755 -3426,9684 -3347,9541 -3213,9425 -3140,9294 -3073,9061 -3283,8739 -3389,8624 -3578,8578 -3615,8496 -3567,8031 -3561,7964 -3536,7856 -3531,7825 -3496,7677 -3355,6874 -3382,6821 -3483,6789 -3530,6781 -3589,6721 -3598,6572 -3606,6407 -3723,6254 -3880,6142 -3944,6034 -4003,5621 -4046,5505 -4072,5227 -3962,5129 -3889,4967 -3807,4794 -3729,4687 -3605,4536 -3490,4212 -3296,3686
 #Kronprinzessinenweg (H)	2::temp -3296,3686 -3680,3160 -3768,3069 -4001,2858
 #Schildhornweg	2::temp -1588,9194 -1484,9175 -1435,9168 -1279,9093
@@ -6154,7 +6142,7 @@ Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
 ',
          'from' => undef,
          'id' => 3599,
-         'text' => 'Waldbrand im Grunewald: Kronprinzessinenweg, Wege rund um den Sprengplatz und Hüttenweg sind vermutlich weiterhin gesperrt',
+         'text' => 'Waldbrand im Grunewald: Kronprinzessinenweg und Wege rund um den Sprengplatz sind vermutlich weiterhin gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -6230,6 +6218,17 @@ Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
          'text' => 'Hüttenweg: Anbindung Clayallee gesperrt',
          'type' => 'handicap',
          'until' => 1662994800
+       },
+       {
+         'data' => '#: source_id: viz2021:13.56812,52.40301,20.08.2022,06:00
+#: also_indoor: traffic (H(einseitig),G(kürzer),B)
+	q4::inwork 21742,115 21769,-30 21800,-109
+',
+         'from' => 1661112782,
+         'id' => 3606,
+         'text' => 'Zur Gartenstadt: zwischen Buntzelstr. und Grottewitzstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.12.2022 ',
+         'type' => 'handicap',
+         'until' => 1672441200
        }
      
 );
