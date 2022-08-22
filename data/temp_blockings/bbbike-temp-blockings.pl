@@ -32783,7 +32783,7 @@ EOF
 EOF
      },
      { from  => 1618696800, # 2021-04-18 00:00
-       until => 1662069600, # 2022-09-02 00:00
+       until => 1661192906, # 1662069600, # 2022-09-02 00:00
        text  => 'Ortsdurchfahrt Kerkow: Bauarbeiten und Ersatzneubau Brücke, möglicherweise auch für Radfahrer gesperrt, vom 19.04.2021 bis 01.09.2022',
        type  => 'gesperrt',
        source_id => 'LS/721-E/21/032',
@@ -34538,7 +34538,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 EOF
      },
      { from  => 1642917600, # 2022-01-23 07:00
-       until => $isodate2epoch->("2022-09-02 17:00:00"), # 1653663600, # 2022-05-27 17:00
+       until => 1661192947, # $isodate2epoch->("2022-09-02 17:00:00"), # 1653663600, # 2022-05-27 17:00
        text  => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., Fahrbahn gesperrt, vom 24.01.2022 07:00 bis 02.09.2022 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.445809,52.479541,24.01.2022,07:00', # bis 13.8.2022, im Anschluss weitere Arbeiten; mittlerweile bis 2.9.2022
@@ -34546,9 +34546,7 @@ EOF
 #: source_id: viz2021:13.445912,52.478966,13.06.2022,07:00 (zusätzliche Meldung zur Sonnenallee)
 #: source_id: viz2021:13.4453,52.47919,24.01.2022,07:00 (zusätzlicher Eintrag)
 #: source_id: viz2021:13.4453,52.47919,13.06.2022,07:00 (zusätzlicher Eintrag)
-#: also_indoor: traffic (G,ex-H,B)
-#: last_checked: 2022-06-24
-#: next_check: 2022-09-02
+# REMOVED --- #: also_indoor: traffic (G,ex-H,B) --- #: last_checked: 2022-06-24 --- #: next_check: 2022-09-02
 	q4::inwork 13277,8211 13331,8283
 EOF
      },
@@ -35983,12 +35981,23 @@ EOF
      },
      { from  => 1661112782, # 2022-08-21 22:13
        until => 1672441200, # 2022-12-31 00:00
-       text  => 'Zur Gartenstadt: zwischen Buntzelstr. und Grottewitzstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.12.2022 ',
+       text  => 'Zur Gartenstadt: zwischen Buntzelstr. und Grottewitzstr. gesperrt, bis 30.12.2022 ',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.56812,52.40301,20.08.2022,06:00
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237046.php
+#: by: https://berliner-abendblatt.de/2022/08/22/umfangreiche-bauarbeiten-in-der-strasse-zur-gartenstadt/
 #: also_indoor: traffic (H(einseitig),G(kürzer),B)
 	q4::inwork 21742,115 21769,-30 21800,-109
+EOF
+     },
+     { from  => 1661193050, # 2022-08-22 20:30
+       until => 1664575200, # 2022-10-01 00:00
+       text  => 'Goslarer Ufer: zwischen Gaußstr. und Goslarer Platz Sperrung, evtl. sind auch Radfahrer betroffen, bis 30.09.2022',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: laut rbb
+	q4::inwork 4186,13710 4295,13234
 EOF
      },
     );

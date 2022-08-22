@@ -917,6 +917,8 @@ Tempelhofer Damm -> Luise-Henriette-Str.: Mittelstreifen	3::igndisp 9250,6414 92
 Luise-Henriette-Str. -> Tempelhofer Damm: Mittelstreifen	3::igndisp 9242,6482 9253,6484 9254,6542
 Tempelhofer Damm -> Parkstr.: Mittelstreifen	3::igndisp 9246,6364 9250,6414 9237,6413
 Parkstr. -> Tempelhofer Damm: Mittelstreifen	3::igndisp 9237,6413 9250,6414 9253,6484
+Lütticher Str.	1 6716,15310 6628,15411 6522,15532
+Lütticher Str.	1 6539,15548 6649,15427 6736,15328
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3087,8 +3089,8 @@ Enges Drängelgitter	BNP:5:52:trailer=15 7887,24043
 Enges Drängelgitter	BNP:5:-32 2380,21510
 Drängelgitter	BNP:5:-153 8776,16718
 Schranke	BNP:5:-147 -8211,5490
-Kurzschranke	BNP:3:-45 6739,15307
-Schranke	BNP:3:-132 6749,15339
+Kurzschranke	BNP:3:-38 6748,15313
+Schranke	BNP:3:-130 6749,15339
 Schranke	BNP:3:-130 6869,15441
 Drängelgitter	BNP:5:-130 7925,4477
 Tor, kann geschlossen sein	BNP:3:-151:trailer=5 6526,21015
@@ -3263,7 +3265,6 @@ Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraß
 Zur Alten Flussbadeanstalt: wegen Bauarbeiten gesperrt	2::inwork 16355,9603 16376,9602 16388,9614 16389,9633
 Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,16043 -226,16086
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
-Verlängerung Zwieseler Str.: Baustellenabsperrung	2::inwork 19705,9039 19638,9070
 (Kynaststr. - Paul-und-Paula-Ufer): Bauarbeiten, Weg existiert nicht mehr	2::inwork 14843,10621 14911,10587
 Matthesstr.: Baustelle, keine Durchfahrt möglich	2::inwork 14185,9509 14172,9457
 Hebammensteigbrücke	2::inwork 13168,21706 13046,21734

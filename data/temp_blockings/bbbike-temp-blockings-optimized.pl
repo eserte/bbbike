@@ -3312,37 +3312,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.laubinger.de/event/koepenickerwinzersommer/
-# REMOVED --- #: tempex: (YYYY08 & fr-2) - +2d vvv
-	2::temp 22138,4642 22111,4562 22093,4499
-	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
-	2::temp 22144,4660 22212,4655 22284,4653 22355,4660
-	2::temp 22212,4655 22214,4548
-	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
-	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
-	2::temp 22175,4730 22246,4711
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1660824000,
-         'id' => 2610,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              8,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.winzerfest-köpenick.de/',
-         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 19.8.2922 bis 21.8.2022 möglich',
-         'type' => 'gesperrt',
-         'until' => 1661119199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4858,18 +4828,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (hier wohl nicht?) ---	2::inwork 49011,71344 48996,71176 48982,71121 48929,70947
-#: also_indoor: traffic (G,H)
-	2::inwork 48929,70947 49089,70562 49253,70168
-',
-         'from' => 1618696800,
-         'id' => 3361,
-         'source_id' => 'LS/721-E/21/032',
-         'text' => 'Ortsdurchfahrt Kerkow: Bauarbeiten und Ersatzneubau Brücke, möglicherweise auch für Radfahrer gesperrt, vom 19.04.2021 bis 01.09.2022',
-         'type' => 'gesperrt',
-         'until' => 1662069600
-       },
+       undef,
        {
          'data' => '	2::temp -1846,8129 -1798,7949 -1640,7832 -1328,7597
 ',
@@ -5398,22 +5357,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1672466400
        },
-       {
-         'data' => '#: source_id: viz2021:13.445912,52.478966,13.06.2022,07:00 (zusätzliche Meldung zur Sonnenallee)
-#: source_id: viz2021:13.4453,52.47919,24.01.2022,07:00 (zusätzlicher Eintrag)
-#: source_id: viz2021:13.4453,52.47919,13.06.2022,07:00 (zusätzlicher Eintrag)
-#: also_indoor: traffic (G,ex-H,B)
-#: last_checked: 2022-06-24
-#: next_check: 2022-09-02
-	q4::inwork 13277,8211 13331,8283
-',
-         'from' => 1642917600,
-         'id' => 3503,
-         'source_id' => 'viz2021:13.445809,52.479541,24.01.2022,07:00',
-         'text' => 'Roseggerstr.: Bauarbeiten zwischen Sonnenallee und Stuttgarter Str., Fahrbahn gesperrt, vom 24.01.2022 07:00 bis 02.09.2022 17:00',
-         'type' => 'handicap',
-         'until' => 1662130800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6193,17 +6137,7 @@ Schwarzer Weg	2::temp -2668,6862 -2632,6789 -2638,6641
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: note: vermutlich für den Tag der offenen Tür der Bundesregierung, 20.+21. August 2022; Sperrung der Fahrbahn bereits am Dienstag vorher
-#: by: https://www.bundesregierung.de/breg-de/themen/tag-der-offenen-tuer/veranstaltungen-tag-der-offenen-tuer-2022/bundesministerium-fuer-arbeit-und-soziales-2063814
-	q4::temp 9075,11756 9171,11777
-',
-         'from' => undef,
-         'id' => 3604,
-         'text' => 'Zietenplatz: Veranstaltung, Sperrung der Fahrbahn, voraussichtlich bis 21.8.2022',
-         'type' => 'handicap',
-         'until' => 1661119199
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
@@ -6221,14 +6155,26 @@ Schwarzer Weg	2::temp -2668,6862 -2632,6789 -2638,6641
        },
        {
          'data' => '#: source_id: viz2021:13.56812,52.40301,20.08.2022,06:00
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237046.php
+#: by: https://berliner-abendblatt.de/2022/08/22/umfangreiche-bauarbeiten-in-der-strasse-zur-gartenstadt/
 #: also_indoor: traffic (H(einseitig),G(kürzer),B)
 	q4::inwork 21742,115 21769,-30 21800,-109
 ',
          'from' => 1661112782,
          'id' => 3606,
-         'text' => 'Zur Gartenstadt: zwischen Buntzelstr. und Grottewitzstr. gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.12.2022 ',
+         'text' => 'Zur Gartenstadt: zwischen Buntzelstr. und Grottewitzstr. gesperrt, bis 30.12.2022 ',
          'type' => 'handicap',
          'until' => 1672441200
+       },
+       {
+         'data' => '#: note: laut rbb
+	q4::inwork 4186,13710 4295,13234
+',
+         'from' => 1661193050,
+         'id' => 3607,
+         'text' => 'Goslarer Ufer: zwischen Gaußstr. und Goslarer Platz Sperrung, evtl. sind auch Radfahrer betroffen, bis 30.09.2022',
+         'type' => 'handicap',
+         'until' => 1664575200
        }
      
 );

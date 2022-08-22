@@ -5057,7 +5057,7 @@ Kongostr.: Kopfsteinpflaster	Q2 6447,16321 6349,16213 6258,16111
 Kongostr.: Beton	Q0 6244,16096 6202,16041 6119,15965
 Sambesistr.: Beton	Q0 5968,15914 5787,15741
 Ugandastr.: Beton	Q0 6071,15768 5906,15623
-Limburger Str.: Kopfsteinpflaster	Q2 6562,15177 6727,15319 6749,15339
+Limburger Str.: Kopfsteinpflaster	Q2 6562,15177 6716,15310 6736,15328 6749,15339
 Limburger Str.: Asphalt	Q0 6749,15339 6815,15398 6835,15412 6869,15441 6884,15456
 Limburger Str.: Kopfsteinpflaster	Q2 6884,15456 6950,15514 7012,15571
 Elise-und-Otto-Hampel-Weg: Gehwegplatten	Q0 7012,15571 7129,15686 7115,15702 7129,15717
@@ -11871,7 +11871,7 @@ Immenweg: Asphalt	Q0 6744,4983 6419,5048 6385,4896
 Hünensteig: Verbundsteinpflaster	Q1 6419,5048 6387,5057 6395,5154 6405,5238 6108,5253
 Charlottenburger Str.: Asphalt	Q0 1125,3139 1201,3445
 Winfriedstr.: sehr guter Asphalt	Q0 1415,3362 1201,3445 971,3534
-Brüsseler Str.: Kopfsteinpflaster	Q2 6375,15391 6539,15548 6690,15671 6802,15790 6914,15908
+Brüsseler Str.: Kopfsteinpflaster	Q2 6375,15391 6522,15532 6539,15548 6690,15671 6802,15790 6914,15908
 Antwerpener Str.: asphaltiert, Parkstreifen mit Kopfsteinpflaster	Q0 6555,15827 6690,15671 6794,15553
 Goeckestr.: mäßiges Kleinsteinpflaster, wellig	Q2 16128,14685 16248,14819 16354,14928 16361,14936 16377,14952 16514,15092 16604,15224 16651,15345
 Simon-Bolivar-Str.: geteert, guter Zustand	Q0 15774,14992 15856,14915 15944,14836 16033,14756 16128,14685 16281,14604
@@ -13071,8 +13071,10 @@ Holwedestr.: Asphalt	Q0 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 Schickstr.: Verbundsteinpflaster	Q1 1203,20553 1137,20712
 Straße 26: guter Asphalt	Q0 14977,21194 14771,21253 14679,21285 14509,21337
 Wasserkäfersteig: mäßiges Kopfsteinpflaster	Q2 -1010,4751 -927,4638 -862,4542 -755,4387
-Lütticher Str.: mäßiges Kopfsteinpflaster	Q2 6422,15708 6539,15548 6640,15421
-Lütticher Str.: Asphalt	Q0 6640,15421 6727,15319
+Lütticher Str.: mäßiges Kopfsteinpflaster	Q2 6422,15708 6539,15548 6649,15427
+Lütticher Str.: mäßiges Kopfsteinpflaster	Q2 6522,15532 6628,15411
+Lütticher Str.: Asphalt	Q0 6649,15427 6736,15328
+Lütticher Str.: Asphalt	Q0 6628,15411 6716,15310
 Börnestr.: guter Asphalt	Q0 13214,15830 13263,15930 13312,16027 13410,16214
 Am Sandwerder: guter Asphalt	Q0 -4644,1514 -4638,1579 -4469,1921 -4326,2141
 Am Oberhafen (Spandau): Beton	Q0 -2974,13188 -3053,13179 -3270,13307
@@ -17102,8 +17104,8 @@ Groninger Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7415,16502 7433,16375 7458,
 Hochstädter Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7543,16016 7727,16223
 Ruheplatzstr.: Asphalt	Q0 7436,15746 7518,15605 7540,15566 7627,15412
 (Müllerstr. - Gerichtstr.): Gehwegplatten	Q0 7607,15282 7723,15417
-Ostender Str.: Kopfsteinpflaster	Q2 6474,15278 6640,15421
-Ostender Str.: Asphalt	Q0 6640,15421 6794,15553
+Ostender Str.: Kopfsteinpflaster	Q2 6474,15278 6628,15411
+Ostender Str.: Asphalt	Q0 6628,15411 6649,15427 6794,15553
 Ostender Str.: Kopfsteinpflaster	Q2 6794,15553 6862,15615 6919,15666 7024,15810
 (Zufahrt Str. d. Pariser Kommune): Asphalt	Q0 12577,11804 12617,11888
 (Zufahrt Str. d. Pariser Kommune): Beton	Q1 12617,11888 12648,11953

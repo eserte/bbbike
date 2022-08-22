@@ -2717,7 +2717,7 @@ Mühlenfeldstr.: Kopfsteinpflaster	Q2+ 3046,22292 2757,22310 2587,22332
 #: XXX wird hier asphaltiert? --- 
 #: XXX Baumaßnahme 12.2 (Realisierung bis 2010) (nicht ganz sicher, ob es wirklich hier ist)
 # REMOVED (closed) --- #: osm_watch: note 3223149 2
-#: last_checked: 2022-07-09 (kartaview)
+#: last_checked: 2022-07-18 (kartaview)
 #: check_frequency: 360d
 Götzestr.: gutes Kopfsteinpflaster	Q1- 3896,22718 3738,22652
 (Weg am Tegeler Fließ): asphaltiert	Q0 4222,22854 4166,22752
@@ -3836,7 +3836,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124 (Anfrage von Juli 2017)
 #: by: https://politik-bei-uns.de/file/597985b41ae6a07d5fb74916 (Antwort: soll teilweise mit einem Asphaltstreifen befestigt werden, erster von drei Bauabschnitten 2018)
 #: osm_watch: way id="47159365" version="15"
-#: last_checked: 2022-08-07
+#: last_checked: 2022-08-21 (mapillary)
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -6181,7 +6181,7 @@ Kongostr.: Kopfsteinpflaster	Q2 6447,16321 6349,16213 6258,16111
 Kongostr.: Beton	Q0 6244,16096 6202,16041 6119,15965
 Sambesistr.: Beton	Q0- 5968,15914 5787,15741
 Ugandastr.: Beton	Q0- 6071,15768 5906,15623
-Limburger Str.: Kopfsteinpflaster	Q2 6562,15177 6727,15319 6749,15339
+Limburger Str.: Kopfsteinpflaster	Q2 6562,15177 6716,15310 6736,15328 6749,15339
 Limburger Str.: Asphalt	Q0 6749,15339 6815,15398 6835,15412 6869,15441 6884,15456
 Limburger Str.: Kopfsteinpflaster	Q2 6884,15456 6950,15514 7012,15571
 Elise-und-Otto-Hampel-Weg: Gehwegplatten	Q0- 7012,15571 7129,15686 7115,15702 7129,15717
@@ -14633,7 +14633,7 @@ Winfriedstr.: sehr guter Asphalt	Q0 1415,3362 1201,3445 971,3534
 # 
 #: by: Rolf Schramek: vvv
 #: confirmed_by: srt
-Brüsseler Str.: Kopfsteinpflaster	Q2 6375,15391 6539,15548 6690,15671 6802,15790 6914,15908
+Brüsseler Str.: Kopfsteinpflaster	Q2 6375,15391 6522,15532 6539,15548 6690,15671 6802,15790 6914,15908
 #: confirmed_by: srt
 Antwerpener Str.: asphaltiert, Parkstreifen mit Kopfsteinpflaster	Q0 6555,15827 6690,15671 6794,15553
 #: by: ^^^
@@ -17897,10 +17897,14 @@ Straße 26: guter Asphalt	Q0 14977,21194 14771,21253 14679,21285 14509,21337
 Wasserkäfersteig: mäßiges Kopfsteinpflaster	Q2 -1010,4751 -927,4638 -862,4542 -755,4387
 # 
 #: by: ked (schwabe): vvv
-#: confirmed_by: srt
-Lütticher Str.: mäßiges Kopfsteinpflaster	Q2 6422,15708 6539,15548 6640,15421
-#: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
-Lütticher Str.: Asphalt	Q0 6640,15421 6727,15319
+#: confirmed_by: srt vvv
+Lütticher Str.: mäßiges Kopfsteinpflaster	Q2 6422,15708 6539,15548 6649,15427
+Lütticher Str.: mäßiges Kopfsteinpflaster	Q2 6522,15532 6628,15411
+#: confirmed_by ^^^
+#: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...) vvv
+Lütticher Str.: Asphalt	Q0 6649,15427 6736,15328
+Lütticher Str.: Asphalt	Q0 6628,15411 6716,15310
+#: corrected_by ^^^
 #: by: ^^^
 # 
 #: by: Helge Martinlöwitz:
@@ -28936,9 +28940,9 @@ Hochstädter Str.: Kopfsteinpflaster mit Bodenwellen	Q2 7543,16016 7727,16223
 Ruheplatzstr.: Asphalt	Q0 7436,15746 7518,15605 7540,15566 7627,15412
 (Müllerstr. - Gerichtstr.): Gehwegplatten	Q0 7607,15282 7723,15417
 #: confirmed_by: srt
-Ostender Str.: Kopfsteinpflaster	Q2 6474,15278 6640,15421
+Ostender Str.: Kopfsteinpflaster	Q2 6474,15278 6628,15411
 #: confirmed_by: srt
-Ostender Str.: Asphalt	Q0 6640,15421 6794,15553
+Ostender Str.: Asphalt	Q0 6628,15411 6649,15427 6794,15553
 Ostender Str.: Kopfsteinpflaster	Q2 6794,15553 6862,15615 6919,15666 7024,15810
 (Zufahrt Str. d. Pariser Kommune): Asphalt	Q0 12577,11804 12617,11888
 (Zufahrt Str. d. Pariser Kommune): Beton	Q1+ 12617,11888 12648,11953
@@ -31214,7 +31218,8 @@ Kreuzungsbereich asphaltiert	Q0 12692,7996
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6267,15844
 Kreuzungsbereich asphaltiert	Q0 6945,15045
 Einmündungsbereich asphaltiert	Q0 6886,15156
-Kreuzungsbereich asphaltiert	Q0 6640,15421
+Kreuzungsbereich asphaltiert	Q0 6649,15427
+Kreuzungsbereich asphaltiert	Q0 6628,15411
 Einmündungsbereich betoniert	Q0 22279,4220
 Kreuzungsbereich asphaltiert	Q0 18244,6518
 Kreuzungsbereich asphaltiert	Q0 18219,6447
