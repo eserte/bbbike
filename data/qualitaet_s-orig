@@ -174,7 +174,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2022-07-05
+#: last_checked: 2022-08-23
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -186,7 +186,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2022-07-05 vvv
+#: last_checked: 2022-08-23 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -466,7 +466,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (geplante Fertigstellung nun 2023, Stand August 2021)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: last_checked: 2022-07-14 vvv
+#: last_checked: 2022-08-23 vvv
 #: next_check: 2023-06-01 vvv
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
@@ -11558,8 +11558,8 @@ Havel-Ufer Hohengatow: Asphalt	Q0 -4774,6514 -4689,6661 -4684,6755 -4667,6814 -4
 Havel-Ufer Hohengatow, unterer Weg: unbefestigter Weg	Q1- -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
 (zum Umweltbildungszentrum): Kopfsteinpflaster	Q2 -4778,7791 -4620,7644
 Allee der Kosmonauten: Asphalt	Q0- 20894,15045 20895,14995 20914,14995 20947,14996 20980,15013 20978,15129 21035,15131 21057,15145 21064,15174 21058,15313
-Rudolf-Leonhard-Str. [Stichstraße]: Beton	Q0- 21483,16325 21496,16384
-Karl-Holtz-Str. [Stichstraße]: Beton	Q0- 21381,16418 21433,16396 21496,16384
+Rudolf-Leonhard-Str. [Stichstraße]: Beton	Q0- 21483,16325 21493,16387
+Karl-Holtz-Str. [Stichstraße]: Beton	Q0- 21381,16418 21433,16396 21493,16387
 (Melanchthonstr. - Weg an der S-Bahn): Schotterweg	Q2 24759,12401 24756,12277 24711,12150
 Heribaldstr.: wassergebundene Decke	Q1 25022,10715 25018,10747
 Heribaldstr.: Verbundsteinpflaster	Q1 25018,10747 25017,10767
@@ -30689,6 +30689,7 @@ Reetzer Weg [19-33]: Beton	Q1 22594,10878 22706,10846
 (Weg im erweiterten Mauerpark): Asphalt	Q0 10274,15024 10209,14996 10215,14977
 (Am Wäldchen - Barnimer Dörferweg): wassergebundene Decke	Q1- 9032,24700 9212,24525 9170,24443 9171,24349
 (Schloßpark Schönhausen - Majakowskiring): unbefestigter Weg, etwas Schotter	Q2+ 10507,18959 10434,18907
+Rudolf-Leonhard-Str. - Blumberger Damm: Verbundsteinpflaster	Q1+ 21493,16387 21538,16444 21574,16547
 #: by ^^^
 # 
 ######################################################################
@@ -31273,4 +31274,6 @@ Einmündungsbereich asphaltiert	Q0 6792,8122
 Kreuzungsbereich asphaltiert	Q0 22033,6144
 Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 20336,3783
 Einmündungsbereich asphaltiert	Q0 13086,12186
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 9702,15251
+Kreuzungsbereich asphaltiert	Q0 9996,15400
 #: ignore ^^^

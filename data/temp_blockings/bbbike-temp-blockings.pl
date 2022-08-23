@@ -28236,7 +28236,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX keine Bauarbeiten mehr, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-08-06
+#: last_checked: 2022-08-23
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -31087,7 +31087,7 @@ EOF
 #: next_check_id: CORONA-2020
 #: by: https://www.charite.de/klinikum/themen_klinikum/themenschwerpunkt_coronavirus/#c30751057 (Eingangskontrollen)
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-07-31 vvv
+#: last_checked: 2022-08-23 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -34838,7 +34838,7 @@ EOF
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-07-31 vvv
+#: last_checked: 2022-08-23 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-09-30 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
@@ -35209,17 +35209,17 @@ EOF
 	q4::inwork; 16166,25767 16121,25818
 EOF
      },
-     { #from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-12 00:00:00") }, # 1 Tag Vorlauf
-       from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("2022-08-25 00:00:00") }, # 1 Tag Vorlauf
-       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("2022-09-30 18:30:00") }, # nur temporäre Schilder, wird noch nach den Sommerferien 2022 verlängert?
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-12 00:00:00") }, # 1 Tag Vorlauf
+       #from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("2022-08-25 00:00:00") }, # 1 Tag Vorlauf
+       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-30 18:30:00") }, # nur temporäre Schilder, gibt es die Spielstraße auch 2023?
        text  => 'Wrangelstr.: zwischen Sorauer Str. und Oppelner Str. freitags zwischen 15:30 und 18:30 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 26.08. bis Ende September',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php',
        data  => <<EOF,
-#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern
 #: by: http://spielstraßen.de/uebersicht.php#kreu
-#: last_checked: 2022-06-22
-#: next_check: 2022-08-26
+#: XXX laut Pressemitteilung "Wrangelstraße, zwischen Sorauer Straße und Oppelner Straße, freitags 15.30 bis 18.30 Uhr, 13. Mai bis September, außer in den Sommerferien" -> nach den Sommerferien nachschauen und ggfs. verlängern -> 2023 nachschauen
+#: last_checked: 2022-08-23
+#: next_check: 2023-05-12
 	q4::temp::play 12822,10487 12897,10439
 EOF
      },
@@ -35872,12 +35872,13 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1559866883565912064#m (Sperrung könnte mehrere Wochen lang andauern)
 #: by: https://nitter.cz/VIZ_Berlin/status/1560176606701830145#m
 #: by: https://nitter.cz/P_Groeschel/status/1561631350616199168#m
-#: note: check now with https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-20&until=&near=
+#: by: https://nitter.cz/VIZ_Berlin/status/1561963807618080768#m
+#: note: check now with https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-23&until=&near=
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-22 (research) vvv
+#: last_checked: 2022-08-23 (research) vvv
 #: check_frequency: 1d vvv
 Hüttenweg (westlicher Abschnitt)	2::temp -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888
 Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133
@@ -36000,6 +36001,44 @@ EOF
        data  => <<EOF,
 #: note: laut rbb
 	q4::inwork 4186,13710 4295,13234
+EOF
+     },
+     { from  => 1661032800, # 2022-08-21 00:00
+       until => 1665439199, # 2022-10-10 23:59
+       text  => 'Dorotheenstr. und Georgenstr.: Gleisarbeiten, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung Am Kupfergraben, gesperrt ab Bauhofstr., vom 22. August 2022 bis 10. Oktober 2022',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://berliner-abendblatt.de/2022/08/17/neue-gleise-fuer-die-dorotheenstrasse/ (vom 22. August bis zum 10. Oktober 2022)
+#: by: https://berliner-abendblatt.de/2022/08/21/diese-baustellen-sorgen-fuer-staus/
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/neue-gleise-und-weichen_a355298
+#: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00
+Georgenstr.	q4::inwork 9568,12688 9441,12670
+#: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate)
+Dorotheenstr.	q4::inwork 9742,12609 9870,12657
+Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Ostender Str.: Einbahnstraßenregelung an der Müllerstr., gesperrt Richtung Nordosten, Ende der Hochbauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: Einbahnstraße etwa 70m lang
+#: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=706715#post706715
+#: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
+#: last_checked: 2022-08-23
+#: check_frequency: 60d
+	q3::inwork; 6919,15666 7024,15810
+EOF
+     },
+     { from  => 1661230800, # 2022-08-23 07:00
+       until => 1667232000, # 2022-10-31 17:00
+       text  => 'Dorotheenstr.: Bauarbeiten zwischen Ebertstr. und Wilhelmstr., Fahrbahn gesperrt, vom 24.08.2022 07:00 bis 31.10.2022 17:00',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.378615,52.517943,24.08.2022,07:00',
+       data  => <<EOF,
+#: note: Fußverkehr eingeschränkt
+	2::inwork 8775,12457 8540,12420
 EOF
      },
     );

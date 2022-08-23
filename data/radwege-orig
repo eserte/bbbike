@@ -284,7 +284,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-08-15 (Ausschilderung fehlt noch) vvv
+#: last_checked: 2022-08-23 (Ausschilderung fehlt noch) vvv
 #: check_frequency: 7d vvv
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 	RW1; 13596,10722 13633,10705
@@ -293,7 +293,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-08-13
+#: last_checked: 2022-08-23
 #: check_frequency: 90d
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
 provisorische Radspur	RW4; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -711,9 +711,11 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster und Beton, Schäden und kurvenrei
 # REMOVED --- #: note: eigentlich existiert nur eine Auffahrt und Abfahrt, ein Radweg zwischendurch ist eigentlich nicht markiert --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7526 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036752285719/752285719/00134149/49-Anlagen/02/MA_2901_IV.pdf ---	RW0; 7911,15008 7811,15096
 provisorische Busspur ist immer gültig	RW5; 7911,15008 7811,15096 7745,15160
 provisorische Radspur, mit Pollern abgetrennt	RW4; 7745,15160 7669,15227
+	RW4; 7669,15227 7607,15282 7464,15409 7393,15476 7277,15586
 # 
 #: note: Müllerstr., Richtung Süden
-#: note: frühere Markierung scheint verschwunden zu sein
+	RW4; 7277,15586 7393,15476 7464,15409 7607,15282 7669,15227
+#: note: frühere Markierung auf dem Gehweg scheint verschwunden zu sein
 	RW0; 7811,15096 7911,15008
 # 
 für Radfahrer freigegebene Busspur gilt Mo-Sa 6-19 Uhr	RW1;RW1 7911,15008 7533,14702 7514,14687 7480,14660 7458,14643
@@ -1263,6 +1265,7 @@ Verbundsteinpflaster	RW1; 6239,15553 6127,15688
 alter Asphalt	RW1; 6127,15688 6121,15697 6071,15768 6019,15841 5968,15914 5907,16000
 Gehwegplatten/Verbundsteinpflaster	RW1; 6127,15688 6239,15553
 	RW2; 6562,15177 6626,15104
+	RW4; 6626,15104 6562,15177 6474,15278 6375,15391 6348,15423 6239,15553
 alter Asphalt mit Unebenheiten, relativ eng, kein Unterstreifen gegen parkende Autos	RW1; 5907,16000 5827,16118 5748,16235
 alter Asphalt mit Unebenheiten	RW1; 5748,16235 5651,16507 5596,16662
 alter Asphalt mit Unebenheiten	RW1; 5596,16662 5651,16507 5748,16235
@@ -1295,7 +1298,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="19"
-#: last_checked: 2022-08-12
+#: last_checked: 2022-08-23
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1309,7 +1312,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="33"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2022-08-12
+#: last_checked: 2022-08-23
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13481,13128 13434,13234 13383,13349
@@ -1977,7 +1980,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/bezirksamt/beschluesse/2017/05-09/0363_xix-fahrradfuehrung-naumannstrasse-einrichten.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
-#: osm_watch: way id="142161214" version="12"
+#: osm_watch: way id="142161214" version="13"
 #: last_checked: 2022-06-12 (mapillary)
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
@@ -3898,7 +3901,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.42941,52.533057,01.09.2021,08:00 (bis 31.12.2021, Gesamtbaumaßnahme bis 2022) (mittlerweile bis 28.2.2022) (mittlerweile bis 28.3.2022) (mittlerweile bis 4.4.2022) (mittlerweile bis 14.4.2022) (inaktiv)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2022-08-02 vvv
+#: last_checked: 2022-08-23 vvv
 # REMOVED --- #: next_check: 2022-04-14 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -6306,7 +6309,6 @@ asphaltiert	RW1; 8490,14397 8442,14456
 	RW3; 6781,16026 6712,16087
 	RW4; 6712,16087 6781,16026
 	RW3;RW3 6712,16087 6659,16133 6587,16199 6572,16212 6447,16321 6440,16327 6429,16337 6304,16447 6201,16538 6098,16630
-	RW4; 7277,15586 7393,15476 7464,15409 7607,15282 7669,15227
 	RW3; 6098,16630 6032,16688
 	RW4; 6032,16688 6098,16630
 	RW3;RW3 6032,16688 6005,16712 5931,16777 5894,16810 5772,16919 5589,17081 5490,17173
@@ -6549,7 +6551,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2022-08-12 vvv
+#: last_checked: 2022-08-23 vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183
 	RW3; 11542,16070 11531,16053
@@ -6932,7 +6934,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2022-07-29
+#: last_checked: 2022-08-23
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6996,7 +6998,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2022-07-21 (mapillary)
+#: last_checked: 2022-08-23
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385
 Grünbeschichtung	RW3; 12522,14385 12407,14470
@@ -7017,7 +7019,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: by: https://nitter.net/pic/media%2FFQTkX5LWYAAirTE.jpg%3Fname%3Dorig
 #: source_id: viz2021:13.433058,52.536173,19.04.2022,07:00 (bis 30.6.2022)
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2022-07-21 (mapillary) vvv
+#: last_checked: 2022-08-23 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-12-31 vvv
 #: osm_watch: way id="335479077" version="15"
@@ -7258,7 +7260,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="23"
 #: osm_watch: way id="335487059" version="21"
-#: last_checked: 2022-08-12 vvv
+#: last_checked: 2022-08-23 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-01-01 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
