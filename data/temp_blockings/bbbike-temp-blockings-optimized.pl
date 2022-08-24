@@ -3979,7 +3979,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1191050.php
 #: osm_watch: way id="29547073" version="11"
 #: XXX Nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2022-08-11
+#: last_checked: 2022-08-24
 # REMOVED --- #: next_check: 2022-05-01
 	2::inwork 14980,8940 14947,8993 14855,9046 14705,9034
 ',
@@ -5396,6 +5396,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: FUERSTENDAMM-2022
 #: by: https://berliner-abendblatt.de/2022/02/09/fuerstendamm/
 #: by: https://www.berliner-woche.de/frohnau/c-verkehr/bauarbeiten-auf-dem-fuerstendamm-ab-9-maerz_a335966
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1238153.php
 #: source_id: 226500387 (bis 31.12.2022)
 #: source_id: viz2021:13.298114,52.631634,09.03.2022,07:00 (bis 31.12.2022)
 #: XXX Wann beginnt der 2. Bauabschnitt: Eltviller Straße bis Oranienburger Chaussee?
@@ -5577,7 +5578,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: XXX Bleibt es bei der möglichen Durchfahrt?
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2022-08-05
+#: last_checked: 2022-08-24
 	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 ',
          'from' => undef,
@@ -5611,8 +5612,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://nitter.net/pic/media%2FFSdtBqDX0AEFDN8.jpg%3Fname%3Dorig
 #: note: Baustelle existiert weiterhin, trotz der entfernten VIZ-Meldung; laut rbb bis 30.11.2022
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
+#: also_indoor: traffic (G,H,B) vvv
 #: last_checked: 2022-08-11 vvv
-#: check_frequency: 14d vvv
+#: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-08-02 vvv
 	q4::inwork; 15560,7400 15693,7512
 #: note: teilweise ragt die Baustellenabsperrung in den Radweg Richtung Kiefholzstraße rein
@@ -5620,6 +5622,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: also_indoor ^^^
 #: XXX ^^^
 ',
          'dont_check_date' => 1,
@@ -6007,9 +6010,9 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'from' => undef,
          'id' => 3596,
          'source_id' => 'viz2021:13.385942,52.484944,11.07.2022,06:07',
-         'text' => 'Platz der Luftbrücke: Wasserrohrbruch, Fahrbahn und Gehweg Richtung Osten gesperrt, Umweg über Wege in der Parkfläche, Ende der Bauarbeiten unbekannt',
+         'text' => 'Platz der Luftbrücke: Wasserrohrbruch, Fahrbahn und Gehweg Richtung Osten gesperrt, Umweg über Wege in der Parkfläche, bis 25.8.2022',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1661428800
        },
        {
          'data' => '#: next_check_id: WALLENSTEIN-2022
@@ -6055,12 +6058,13 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://nitter.cz/VIZ_Berlin/status/1560176606701830145#m
 #: by: https://nitter.cz/P_Groeschel/status/1561631350616199168#m
 #: by: https://nitter.cz/VIZ_Berlin/status/1561963807618080768#m
-#: note: check now with https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-23&until=&near=
+#: by: https://nitter.cz/VIZ_Berlin/status/1562408060727033856#m
+#: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-23&until=&near=
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-23 (research) vvv
+#: last_checked: 2022-08-24 (research) vvv
 #: check_frequency: 1d vvv
 Hüttenweg (westlicher Abschnitt)	2::temp -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888
 Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133
@@ -6211,6 +6215,8 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
        },
        {
          'data' => '#: note: Fußverkehr eingeschränkt
+#: by: https://nitter.cz/VIZ_Berlin/status/1562303691562041344#m
+#: by: https://nitter.cz/pic/media%2FFa19ZroWYAAUS6d.jpg%3Fname%3Dorig
 	2::inwork 8775,12457 8540,12420
 ',
          'from' => 1661230800,
@@ -6219,6 +6225,19 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
          'text' => 'Dorotheenstr.: Bauarbeiten zwischen Ebertstr. und Wilhelmstr., Fahrbahn gesperrt, vom 24.08.2022 07:00 bis 31.10.2022 17:00',
          'type' => 'gesperrt',
          'until' => 1667232000
+       },
+       {
+         'data' => '#: note: Gehweg scheint auch gesperrt zu sein
+#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
+#: last_checked: 2022-08-24
+#: check_frequency: 120d
+	2::inwork 16615,15737 16537,15827
+',
+         'from' => undef,
+         'id' => 3611,
+         'text' => 'Oberseestr.: Einmündung Degnerstr. komplett gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

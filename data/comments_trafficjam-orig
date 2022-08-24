@@ -16,6 +16,12 @@
 # 
 #: temporary vvv
 # 
+#: next_check_id: MARKGRAFENDAMM-2022
+#: last_checked: 2022-08-24
+#: check_frequency: 90d
+#: next_check: 2023-03-15
+	Jam; 14641,10552 14608,10409 14558,10264
+# 
 #: next_check_id: BERLINERALLEE-2022
 #: by: https://viz.berlin.de/2022/04/berliner-allee/ (11. April 2022 - 25. Juli 2022, verschiedene Bauphasen)
 #: by: https://viz.berlin.de/wp-content/uploads/BA1.jpg
@@ -38,7 +44,7 @@
 #: source_id: viz2021:13.465999,52.55224,25.07.2022,10:00 (Kanalarbeiten zwischen Lindenstr. und Rennbahnstr. bis 14.10.2022)
 #: XXX Einzelne Straßenanbindungen werden abgesperrt (Wegenerstr., Rennbahnstr.), außerdem wird direktes Linksabbiegen an einigen Stellen nicht möglich sein. Wie wird sich das auf Radfahrer auswirken?
 #: also_indoor: traffic vvv
-#: last_checked: 2022-08-03 (mapillary) vvv
+#: last_checked: 2022-08-24 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-10-14 vvv
 #: valid: -20221014 vvv
@@ -63,7 +69,7 @@ Karl-Marx-Str.	Jam; 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
 # 
 #: next_check_id: FRANZOESISCHE-2018 vvv
 #: source_id: 2147343056 (bis 30.06.2021) vvv
-#: last_checked: 2022-08-16 vvv
+#: last_checked: 2022-08-23 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv

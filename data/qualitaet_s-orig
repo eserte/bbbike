@@ -13,7 +13,7 @@
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 # REMOVED --- #: osm_watch: way id="524560334" version="5"
 #: osm_watch: way id="524560332" version="5"
-#: last_checked: 2022-07-06 vvv
+#: last_checked: 2022-08-24 vvv
 #: check_frequency: 60d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="3"
@@ -174,7 +174,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2022-08-23
+#: last_checked: 2022-08-24
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -186,7 +186,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2022-08-23 vvv
+#: last_checked: 2022-08-24 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -4422,7 +4422,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/sanierung-mit-bundesmitteln_a250258
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058
 #: XXX wird hier saniert?
-#: last_checked: 2021-09-01
+#: last_checked: 2022-08-24
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15665,15765
@@ -4432,8 +4432,9 @@ Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8469&date=20200814 (Investitionsplanung 2021-2025)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058
 #: XXX wann wird hier saniert?
-#: last_checked: 2022-03-11
+#: last_checked: 2022-08-24
 #: check_frequency: 360d
+#: next_check: 2025-12-31
 Elsastr. (Alt-Hohenschönhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16217,16208 16154,16227 16075,16249 15997,16272 15956,16299
 Elsastr. (Alt-Hohenschönhausen): Asphalt	Q0 15956,16299 15927,16344
 (Elfriedestr. - Klarastr.): Beton	Q0- 16211,16131 16293,16109
@@ -12716,6 +12717,7 @@ Templerzeile: Asphalt mit Schäden	Q1 9665,6029 9679,6160 9681,6180
 Parkstr. (Tempelhof): Kleinsteinpflaster	Q1-  9202,6412 9143,6415
 Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9122,6471 9141,6459
 (Waldweg): überwiegend asphaltiert, einige wellige Stellen	Q0- 24981,2565 25116,2529 25496,2429
+(Genslerstr. - Liebenwalder Str.): Asphalt	Q0 16669,14438 16845,14461
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -31276,4 +31278,7 @@ Einmündungsbereich mit schlechtem Kopfsteinpflaster	Q3 20336,3783
 Einmündungsbereich asphaltiert	Q0 13086,12186
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 9702,15251
 Kreuzungsbereich asphaltiert	Q0 9996,15400
+Einmündungsbereich asphaltiert	Q0 16835,15188
+Einmündungsbereich asphaltiert	Q0 14286,15962
+Einmündungsbereich asphaltiert	Q0- 14248,16058
 #: ignore ^^^

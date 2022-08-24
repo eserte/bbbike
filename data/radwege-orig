@@ -451,7 +451,7 @@ neu asphaltiert, relativ breit	RW1; 10794,10927 10779,10934 10684,10975 10637,10
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: source_id: 2147346758 (Leitungsbau zwischen Alte Jakobstr. und Alexandrinenstr. bis 28.5.2021)
 #: source_id: viz2021:13.404081,52.505512,16.05.2022,09:00 (Leitungsarbeiten zwischen Alte Jakobstr. und Alexandrinenstr. bis 20.6.2022) (inaktiv)
-#: last_checked: 2022-08-16 vvv
+#: last_checked: 2022-08-24 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -743,7 +743,7 @@ für Radfahrer freigegebene Busspur gilt immer	RW1; 8562,11744 8553,11638 8553,11
 #: source_id: 2147345481
 #: source_id: 2147345753
 #: source_id: viz2021:13.408836,52.517143,22.04.2020,15:00 (Bauarbeiten bis 30.6.2023)
-#: last_checked: 2022-07-15 vvv
+#: last_checked: 2022-08-24 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
@@ -770,7 +770,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-08-18
+#: last_checked: 2022-08-24
 	RW2; 14926,12129 14994,12121 15117,12106 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
@@ -1035,7 +1035,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-08-16 vvv
+#: last_checked: 2022-08-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1662,7 +1662,7 @@ Busspur ist immer gültig	RW5;RW5 9934,12420 9858,12410
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
 #: source_id: viz2021:13.399226,52.517706,30.05.2022,08:00 (bis 15.8.2022, zwischen Lustgarten - Oberwallstr.) (mittlerweile inaktiv) vvv
 #: source_id: viz2021:13.404803,52.520062,30.05.2022,08:00 (bis 15.8.2022) (mittlerweile bis 29.8.2022)
-#: last_checked: 2022-08-21 (mapillary) vvv
+#: last_checked: 2022-08-23 (mapillary) vvv
 #: check_frequency: 21d vvv
 #: next_check: 2022-08-29 vvv
 provisorische Radspur	RW4; 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506
@@ -1714,7 +1714,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10574,12131
 # REMOVED --- #: next_check: 2021-03-11 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2022-06-26 (mapillary) vvv
+#: last_checked: 2022-08-24 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
 provisorische Radspur	RW4; 10574,12131 10625,12206 10659,12259 10675,12280
 # REMOVED ---	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
@@ -1722,7 +1722,7 @@ provisorische Radspur	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
 #: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
-#: last_checked: 2022-07-11
+#: last_checked: 2022-08-24
 provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
 #: next_check ^^^
 #: check_frequency ^^^
@@ -1735,7 +1735,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: by: https://molkenmarkt01.hi-res-cam.com/ (webcam)
 #: XXX temporäre Radwegführung
-#: last_checked: 2022-08-05 (webcam)
+#: last_checked: 2022-08-24
 #: check_frequency: 30d
 temporäre Führung als Bürgersteigradweg	RW1; 10887,12570 10954,12635
 # wieder herstellen:	RW4; 10887,12570 10954,12635
@@ -1832,7 +1832,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2022-08-05
+#: last_checked: 2022-08-24
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2467,11 +2467,12 @@ grüne Längsstreifen	RW3; 12112,12861 12122,13029
 die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 	RW3; 14608,10409 14641,10552 14675,10693 14671,10751
 	RW3; 14671,10751 14675,10693 14641,10552
+#: next_check_id: MARKGRAFENDAMM-2022
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=711261#post711261 (1. Bauvorhaben (nördl.); geplante Fertigstellung: Sommer 2025)
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-08-16 vvv
+#: last_checked: 2022-08-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3901,7 +3902,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.42941,52.533057,01.09.2021,08:00 (bis 31.12.2021, Gesamtbaumaßnahme bis 2022) (mittlerweile bis 28.2.2022) (mittlerweile bis 28.3.2022) (mittlerweile bis 4.4.2022) (mittlerweile bis 14.4.2022) (inaktiv)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2022-08-23 vvv
+#: last_checked: 2022-08-24 vvv
 # REMOVED --- #: next_check: 2022-04-14 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -5719,7 +5720,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by ^^^
 # 
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2022-07-29 vvv
+#: last_checked: 2022-08-23 (mapillary) vvv
 #: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9141,12320 9131,12438 9121,12514
 #: XXX früher RW3, zurzeit durch Gelbmarkierung (Kreuze) ungültig gemacht
@@ -7019,7 +7020,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: by: https://nitter.net/pic/media%2FFQTkX5LWYAAirTE.jpg%3Fname%3Dorig
 #: source_id: viz2021:13.433058,52.536173,19.04.2022,07:00 (bis 30.6.2022)
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2022-08-23 vvv
+#: last_checked: 2022-08-24 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-12-31 vvv
 #: osm_watch: way id="335479077" version="15"
@@ -7545,7 +7546,7 @@ Tempo 10	RW6;RW6 14468,11203 14442,11101
 Tempo 10	RW6;RW6 14531,11142 14513,11075
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-07-11 vvv
+#: last_checked: 2022-08-24 vvv
 #: next_check: 2024-06-01 vvv
 	RW2; 10830,12279 10831,12371
 	RW4; 10831,12371 10804,12461

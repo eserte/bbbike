@@ -142,7 +142,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2022-07-06
+#: last_checked: 2022-08-24
 #: check_frequency: 60d
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
@@ -219,7 +219,7 @@ Otto-Weidt-Platz: Bauarbeiten, mögliche Engstellen	q3::inwork 7923,14142 7778,14
 #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022)
 #: note: laut rbb nur bis 16.09.2022
 #: priority: #A
-#: last_checked: 2022-08-16 vvv
+#: last_checked: 2022-08-22 (mapillary) vvv
 #: next_check: 2022-09-19 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
@@ -246,7 +246,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882
 Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-07-15 vvv
+#: last_checked: 2022-08-24 vvv
 #: next_check: 2024-06-01 vvv
 (Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10804,12291 10830,12279
 #: next_check ^^^
@@ -303,11 +303,11 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-08-04 (mapillary)
+#: last_checked: 2022-08-24
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
-#: last_checked: 2022-07-11
+#: last_checked: 2022-08-24
 #: check_frequency: 60d
 (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
 # 
@@ -316,7 +316,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-06-26 (mapillary)
+#: last_checked: 2022-08-24
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -369,7 +369,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: add_fragezeichen: Sind die Bauarbeiten hier beendet?
 #: XXX nach den Bauarbeiten vermutlich nur für Radfahrer, Fußgänger und MIV-Anlieger frei
 #: XXX geschätzte opening_date bei osm: August 2022
-#: last_checked: 2022-08-09 (architektur-urbanistik)
+#: last_checked: 2022-08-23 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2022-08-31
 # REMOVED --- #: valid: 20191218-20210531
@@ -427,6 +427,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="10"
+#: next_check: 2022-08-23
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 #: also_indoor: traffic (ex-H,ex-G)
 #: osm_watch: way id="114667396" version="11"
@@ -674,11 +675,15 @@ Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwor
 #: osm_watch: way id="1050315263" version="4"
 #: osm_watch: way id="996616281" version="8"
 #: osm_watch: way id="996616282" version="7"
-#: last_checked: 2022-08-05
-#: check_frequency: 14d
-#: next_check: 2022-09-15
+#: last_checked: 2022-08-24 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2022-09-15 vvv
 # REMOVED (hier fertig) --- Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 Weserstr.: Bauarbeiten, Fahrbahn noch nicht offiziell freigegeben, gemeinsamer Geh- und Radweg, eng	q2::inwork 12590,8977 12740,8862
+Weserstr./Weichselstr.: Arbeiten im Kreuzungsbereich	q2::inwork 12682,9089 12590,8977 12478,8829
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (Sperrung noch da, aber die Bürgersteigüberfahrt ist weggefallen) --- #: add_fragezeichen: Dauern die Bauarbeiten an? --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-02-01 --- Maybachufer: Bauarbeiten zwischen Friedelstr. und Liberdastr., teilweise Radfahrerführung über den Bürgersteig	q2::inwork 12085,9778 12250,9691
 # REMOVED --- #: next_check_id: BRAUNSCHWEIGER-2020 --- #: last_checked: 2020-10-24 vvv
@@ -793,7 +798,7 @@ Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,124
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
 #: also_indoor: traffic (ex-G(unvollständig),H(falsch),B)
-#: last_checked: 2022-07-25 vvv
+#: last_checked: 2022-08-24 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-06-30 vvv
 Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,12280 16159,12301
@@ -937,7 +942,7 @@ Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="11"
 #: priority: #C
-#: last_checked: 2022-07-31
+#: last_checked: 2022-08-22 (mapillary)
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -2149,6 +2154,7 @@ Holzbrücke: enge Brücke	q1 21869,6932 21896,6937
 Coloniaallee [32 u. 34]: Radfahren verboten, ggfs. schieben	q3 20052,-239 19973,-245
 Nippeser Str. [13 u. 15]: Radfahren verboten, ggfs. schieben	q3 19973,-245 19894,-247
 Nippeser Str. [12 u. 14]: Radfahren verboten, ggfs. schieben	q3 19894,-247 19827,-251 19775,-252
+#: note: Vorrang für von Süden kommende Fahrzeuge
 Neumagener Str.: enge Straße	q1 14897,17093 14910,17010
 Witzenhauser Str.: Fußgänger	q2 18059,14838 18170,14890
 Schattenweg: Fußgänger, spielende Kinder	q2 19928,319 19897,292 19865,263 19806,206 19691,107
