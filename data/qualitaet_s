@@ -10904,11 +10904,14 @@ Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
 (Dolgenseestr., Fußgängerzone): Betonpflaster	Q0 17457,10083 17412,9911 17384,9807
 Dolgenseestr. [8B, 8C, 9, 9A, 9B]: Betonpflaster	Q0 17523,9882 17412,9911
 (Gaudystr. - Sonneberger Weg): glatte Pflasterung	Q0 10547,15586 10542,15609
-Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700 17783,8663 17846,8644
+Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700 17792,8660 17846,8644
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627
-Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1 17640,8627 17627,8556 17608,8483
+Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1 17648,8626 17627,8556 17608,8483
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
+Heiner-Müller-Str.: Asphalt	Q0 17648,8626 17773,8588
 Ruth-Baumgarte-Str.: Asphalt	Q0 17794,8429 17738,8450 17682,8464 17608,8483
+Samuel-Lewin-Str.: Asphalt	Q0 17738,8450 17755,8519 17773,8588 17792,8660
+Irmtraud-Morgner-Str.: Asphalt	Q0 17627,8556 17755,8519
 Schönegarten: Betonpflaster	Q0 7416,10492 7432,10546 7330,10590
 Wichmannstr.: Kleinsteinpflaster	Q1 6447,11144 6452,11118
 Frobenstr.: Asphalt mit einigen Rissen	Q0; 7429,10366 7413,10244
@@ -11427,8 +11430,10 @@ Köhlerstr.: schlechtes Kopfsteinpflaster	Q3 2768,3176 2784,3225
 Köhlerstr.: Asphalt	Q0 2784,3225 2832,3372 2890,3561
 Köhlerstr.: Kleinsteinpflaster	Q2 2890,3561 2948,3763
 Köhlerstr.: Asphalt	Q0 2948,3763 2965,3823
-Wilhelm-von-Siemens-Str.: Kopfsteinpflaster	Q2 9437,2649 9284,2624
-Wilhelm-von-Siemens-Str.: Asphalt	Q0 9284,2624 9081,2594 8674,2627
+Wilhelm-von-Siemens-Str.: Kopfsteinpflaster	Q2 9437,2649 9284,2624 9201,2612
+Wilhelm-von-Siemens-Str.: Kopfsteinpflaster	Q2; 9201,2612 9081,2594
+Wilhelm-von-Siemens-Str.: Kopfsteinpflaster, evtl. Ausweichen auf asphaltierte Parkfläche möglich	Q2; 9081,2594 9201,2612
+Wilhelm-von-Siemens-Str.: Asphalt	Q0 9081,2594 8674,2627
 Bühringstr.: guter Asphalt und Beton	Q0 12562,17135 12699,16945 12761,16862 12813,16791
 Boschpoler Str.: guter Asphalt	Q0 20802,13711 20661,13725
 Boschpoler Platz: Asphalt	Q0 20532,13708 20657,13692
@@ -13311,7 +13316,9 @@ Isenburger Weg: Kopfsteinpflaster	Q2 -7978,14419 -7952,14632
 Isenburger Weg: guter Beton	Q0 -7952,14632 -7940,14690 -7908,14955
 Isenburger Weg: Beton/Asphalt	Q0 -7908,14955 -7882,15129 -7867,15185
 Isenburger Weg: Kopfsteinpflaster, teilweise mit Asphaltüberzug	Q2 -7867,15185 -7819,15342
-Güntherstr.: schlechtes Kopfsteinpflaster	Q3 17976,8106 17920,8256 17771,8349
+Güntherstr.: schlechtes Kopfsteinpflaster	Q3 17976,8106 17920,8256 17828,8311
+Güntherstr.: schlechtes Kopfsteinpflaster	Q3; 17828,8311 17771,8349
+Güntherstr.: schlechtes Kopfsteinpflaster, einige Asphaltflicken	Q2; 17771,8349 17828,8311
 Merler Weg: kleinteiliges Kopfsteinpflaster	Q2 19180,13219 18852,13269
 Hugo-Heimann-Str.: guter Asphalt	Q0 14120,1991 14165,2106 14229,2177 14444,2090 14587,2032
 Klutstr.: mäßiges Kopfsteinpflaster	Q2 26057,5553 25757,5536

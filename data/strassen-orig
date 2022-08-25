@@ -1945,7 +1945,7 @@ Prühßstr.	N 8780,4054 8962,4096 9106,4114 9346,4144 9465,4173 9580,4201 9869,427
 Richterstr. (Mariendorf)	N 9375,4022 9276,3997 9118,3983 9106,4114 9099,4204
 Prinzenstr. (Mariendorf)	N 9333,4229 9208,4215 9099,4204 9006,4196 8932,4188
 Straße 7 (Mariendorf)	N 9208,4215 9197,4315
-#: osm_watch: way id="793304549" version="5"
+#: osm_watch: way id="793304549" version="6"
 (Richterstr. - Rathausstr.)	NN 9276,3997 9294,3921 9217,3906 9117,3898 9073,3892 9021,3878
 (Upstallweg - Richterstr.)	NN 9264,3874 9244,3872 9226,3870 9217,3906
 Andlauer Weg	N 9869,4271 9877,4386
@@ -1984,7 +1984,7 @@ Lauxweg	NN 8921,3208 8910,3171
 Wilhelm-Pasewaldt-Str.	N 8889,3363 8979,3347 9098,3328 9183,3321
 Fritz-Werner-Str.	N 9222,3602 9183,3321 9177,3281 9152,3114 9105,2779 9081,2594 9053,2373 9052,2357 8955,2004
 Untertürkheimer Str.	N 9487,2391 9199,2337 9053,2373
-Wilhelm-von-Siemens-Str.	N 9437,2649 9284,2624 9081,2594 8674,2627
+Wilhelm-von-Siemens-Str.	N 9437,2649 9284,2624 9201,2612 9081,2594 8674,2627
 Kitzingstr.	N 8752,2931 8572,2960 8455,2977 8327,2987
 Greinerstr.	N 8327,2987 8340,3242 8347,3382
 Dederingstr.	N 8478,3414 8476,3367 8455,2977
@@ -2759,7 +2759,7 @@ Naugarder Str.	N 12737,15154 12712,15176 12693,15225 12610,15455 12621,15482
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5238 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5356
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_01_0001_0152_online.pdf (Benennung: Gertrud-Classen-Platz, Wirksamkeit am 6. März 2020)
-#: last_checked: 2022-07-21 (mapillary) (keine Schilder zu sehen)
+#: last_checked: 2022-08-23 (mapillary) (keine Schilder zu sehen)
 #: check_frequency: 60d
 (Hosemannstr. - Naugarder Str.)	N 12583,15566 12605,15491
 Malchower Chaussee	HH 14832,17867 15152,18115 15181,18137 15569,18492 15600,18551 15610,18596
@@ -6682,12 +6682,14 @@ Hönower Wiesenweg	N 17856,8162 17793,8225 17753,8290 17707,8328 17652,8349 17617
 (Hönower Wiesenweg - Betriebsbahnhof Rummelsburg)	N 17308,9090 17300,9135 17284,9198
 # 
 #: note: Parkstadt Karlshorst vvv
-Georg-Klingenberg-Str.	N 17846,8644 17783,8663 17656,8700 17468,8692
-Adolf-Wermuth-Allee	N 17656,8700 17640,8627 17627,8556 17608,8483 17597,8434
-Heiner-Müller-Str.	N 17497,8623 17640,8627 17771,8605
+Georg-Klingenberg-Str.	N 17846,8644 17792,8660 17656,8700 17468,8692
+Adolf-Wermuth-Allee	N 17656,8700 17640,8627
+Adolf-Wermuth-Allee	N 17648,8626 17627,8556 17608,8483 17597,8434
+Heiner-Müller-Str.	N 17497,8623 17640,8627
+Heiner-Müller-Str.	N 17648,8626 17773,8588
 Ruth-Baumgarte-Str.	N 17794,8429 17738,8450 17682,8464 17608,8483
 Irmtraud-Morgner-Str.	N 17524,8536 17627,8556 17755,8519
-Samuel-Lewin-Str.	N 17783,8663 17771,8605 17755,8519 17738,8450
+Samuel-Lewin-Str.	N 17792,8660 17773,8588 17755,8519 17738,8450
 #: note ^^^
 # 
 Sangeallee	NN 18070,9022 18088,9049 18134,9080
@@ -6742,7 +6744,7 @@ Trautenauer Str.	N 17753,8290 17771,8349 17794,8429 17813,8508 17830,8578 17838,
 (Blockdammweg - Trautenauer Str.)	NN 17904,8924 17888,8899 17910,8881
 Schenkestr.	N 17961,8312 17794,8429
 Stechlinstr.	N 18005,8517 18086,8634 18222,8843
-Güntherstr.	N 17976,8106 17920,8256 17771,8349
+Güntherstr.	N 17976,8106 17920,8256 17828,8311 17771,8349
 Sadowastr. (Karlshorst)	N 17856,8162 17925,8101 17976,8106 18078,8112
 Drosselstieg	N 17748,8109 17683,7958
 Gleyeweg	N 17762,7931 17683,7958 17651,7973 17613,7989 17529,8073 17532,8125 17566,8199 17597,8258

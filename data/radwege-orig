@@ -714,7 +714,11 @@ provisorische Radspur, mit Pollern abgetrennt	RW4; 7745,15160 7669,15227
 	RW4; 7669,15227 7607,15282 7464,15409 7393,15476 7277,15586
 # 
 #: note: Müllerstr., Richtung Süden
-	RW4; 7277,15586 7393,15476 7464,15409 7607,15282 7669,15227
+#: by: https://nitter.cz/SenUMVKBerlin/status/1562762461107077120#m
+#: by: https://nitter.cz/pic/media%2FFbAMK1wX0AA6fhO.jpg%3Fname%3Dorig
+#: by: https://nitter.cz/pic/media%2FFbAMK16WYAAXk7e.jpg%3Fname%3Dorig
+#: by: https://nitter.cz/pic/media%2FFbAMK1wXkAAdDLa.jpg%3Fname%3Dorig
+Poller	RW4; 7277,15586 7393,15476 7464,15409 7607,15282 7669,15227
 #: note: frühere Markierung auf dem Gehweg scheint verschwunden zu sein
 	RW0; 7811,15096 7911,15008
 # 
@@ -1035,7 +1039,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-08-24 vvv
+#: last_checked: 2022-08-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1798,7 +1802,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/ziel-ein-durchgaengig-sicherer-radweg_a337148 (Erwähnung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2022-08-11 vvv
+#: last_checked: 2022-08-25 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -2472,7 +2476,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-08-24 vvv
+#: last_checked: 2022-08-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3819,6 +3823,7 @@ auf der Fahrbahn hinter den parkenden Autos	RW1; 4778,8784 4777,8731 4772,8599
 	RW1;RW1 4778,8784 4777,8870
 	RW2;RW1 4784,8508 4783,8557
 	RW3; 17432,6352 17492,6462 17528,6502
+#: note: Fahrbahn hat ein explizites Radfahren-verboten-Schild
 Ersatzbrücke exklusiv für Radfahrer und Fußgänger	RW10; 17528,6502 17492,6462 17432,6352
 	RW1; 17528,6502 17614,6571
 	RW4; 17614,6571 17528,6502
@@ -5607,7 +5612,6 @@ asphaltiert, die letzten Meter werden auf der Fahrbahn geführt	RW1; 14805,10518 
 	RW3;RW3 9404,19691 9349,19782
 asphaltiert	RW2; 24049,5380 23942,5338
 	RW4; 23942,5338 24049,5380
-benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17991,6431
 #: by: rj
 	RW1;RW1 5426,16539 5533,16662
 	RW1;RW1 5581,16708 5639,16768 5684,16815 5772,16919
@@ -7046,20 +7050,31 @@ Grünbeschichtung	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072
 # REMOVED (ja) --- #: XXX wird es hier auch eine Grünbeschichtung geben? --- #: last_checked: 2020-05-09 vvv --- #: next_check: 2020-05-12 vvv
 Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 # 
+#: next_check_id: EDISON-2022
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (endgültige Markierung nach Umbau der Edison+Siemensstr.)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26300.pdf (Markierung wird im Zuge der Gleisbauarbeiten dauerhaft gemacht)
+#: by: https://berliner-abendblatt.de/2022/08/18/edisonstrasse-fuer-tram-und-autos-gesperrt/ ("Radfahrer kommen durch")
+#: by: https://nitter.cz/pic/media%2FFadNMbfXgAAEZ9s.jpg%3Fname%3Dorig
+#: by: https://nitter.net/StefanB94551270/status/1561744762650116100
+#: source_id: viz2021:13.513592,52.464917,18.08.2022,07:00 (18.8.2022 - 23.12.2023)
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="29"
-#: last_checked: 2022-07-12 vvv
-#: check_frequency: 90d vvv
-provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
+#: last_checked: 2022-08-25 vvv
+# REMOVED --- #: check_frequency: 90d vvv
+#: check_frequency: 30d vvv
+provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
+# REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
+	RW0; 17919,6968 17962,6674
+# REMOVED (Radweg temporär eingeführt) --- benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17991,6431
+provisorischer getrennter Rad- und Gehweg	RW2; 17962,6674 17991,6431
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
 #: osm_watch: way id="671329664" version="10"
-provisorische Radspur	RW4; 17991,6431 17962,6674
-provisorische Radspur	RW4; 17962,6674 17919,6968
-provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
+# REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur	RW4; 17991,6431 17962,6674
+	RW0; 17991,6431 17962,6674
+# REMOVED (Radspur temporär aufgehoben) --- provisorische Radspur	RW4; 17962,6674 17919,6968
+	RW0; 17962,6674 17919,6968
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -7351,6 +7366,8 @@ Tempo 10	RW6;RW6 14688,8355 14563,8243 14425,8116
 # REMOVED (Schilder existieren nicht mehr) --- Tempo 10	RW6;RW6 17753,8290 17704,8327 17620,8366 17554,8458 17533,8505 17524,8536
 	RW6;RW6 17524,8536 17515,8567 17497,8623 17468,8692
 	RW6;RW6 17380,8858 17416,8767 17468,8692 17656,8700 17640,8627 17497,8623
+	RW6;RW6 17738,8450 17682,8464 17608,8483 17627,8556 17648,8626 17773,8588 17755,8519 17738,8450
+	RW6;RW6 17627,8556 17755,8519
 Tempo 10	RW6;RW6 17380,8858 17335,8971 17308,9090 17282,9135
 Tempo 10	RW6;RW6 17308,9090 17300,9135
 # 
@@ -7472,7 +7489,7 @@ Poller	RW4; 9221,6179 9245,6352 9246,6364 9250,6414
 provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9196,5272 9206,5193
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672
 wegen Hochbauarbeiten nur fängt die Radspur erst nach ca. 70m an	RW4; 9275,4672 9294,4536
-#: osm_watch: way id="28680188" version="19"
+#: osm_watch: way id="28680188" version="20"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9294,4536 9310,4407 9333,4229 9346,4144 9375,4022 9426,3797
 Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
 #: osm_watch: way id="30958674" version="19"

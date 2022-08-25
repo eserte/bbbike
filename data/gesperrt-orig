@@ -3526,19 +3526,23 @@ Schönegarten: an beiden Enden gesperrt	2 7416,10492 7432,10546 7330,10590
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
-#: last_checked: 2022-08-14 vvv
+#: last_checked: 2022-08-25 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
-Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17783,8663 17656,8700
+Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17656,8700
+Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17627,8556 17608,8483
 Adolf-Wermuth-Allee: noch nicht fertiggestellt	2::inwork 17608,8483 17597,8434
-Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17640,8627 17627,8556
-Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17640,8627 17771,8605
+# REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17648,8626 17627,8556
+# REMOVED --- Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17648,8626 17773,8588
 Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17524,8536 17627,8556
-Samuel-Lewin-Str.: noch nicht fertiggestellt	2::inwork 17783,8663 17771,8605 17755,8519
+# REMOVED --- Samuel-Lewin-Str.: noch nicht fertiggestellt	2::inwork 17792,8660 17773,8588 17755,8519
 # REMOVED (offen) --- Ruth-Baumgarte-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17794,8429 17738,8449 17671,8465 17608,8483
 # REMOVED --- #: next_check ^^^
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17497,8623 17640,8627 17656,8700 17468,8692
-Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17738,8450 17755,8519 17627,8556 17608,8483 17682,8464 17738,8450
+# REMOVED (hier nicht (mehr?)) --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17738,8450 17755,8519
+Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17755,8519 17627,8556
+Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17773,8588 17648,8626
+Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 17627,8556 17608,8483 17682,8464 17738,8450
 #: last_checked ^^^
 # 
 #: next_check_id: CHAUSSEE-2020
@@ -3630,8 +3634,8 @@ Hebammensteigbrücke	2::inwork 13168,21706 13046,21734
 #: osm_watch: way id="4045220" version="46"
 #: osm_watch: way id="938037386" version="2"
 #: osm_watch: way id="868103791" version="2"
-#: last_checked: 2022-06-06
-#: check_frequency: 90d
+#: last_checked: 2022-08-24 (mapillary)
+#: check_frequency: 60d
 Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9532
 # 
 #: next_check_id: TEGELERBRUECKE-2021
@@ -3937,10 +3941,12 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 # REMOVED --- #: note: Bauzäune können während der Arbeitszeiten offen sein --- #: XXX bei osm wurde access=no in der Carl-Spindler-Str. entfernt --- #: add_fragezeichen: Ist die Carl-Spindler-Str. mittlerweile durchgängig befahrbar? --- #: next_check: 2020-06-13 --- Carl-Spindler-Str.: Hochbauarbeiten, Bauzäune, Durchfahrt nicht möglich	2::inwork 21413,5180 21547,5245 21514,5310 21483,5374 21474,5388 21442,5414
 #: osm_watch: way id="719023970" version="10"
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
-#: osm_watch: way id="719023969" version="10"
+#: osm_watch: way id="719023969" version="11"
+#: last_checked: 2022-08-24 (mapillary)
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
 #: note: allerdings können die Bauzäune offen sein, gesehen am 2022-03-06 (So)
 #: osm_watch: way id="944115137" version="5"
+#: last_checked: 2022-08-24 (mapillary)
 Henriette-Lustig-Str.: durch Bauzäune abgesperrt	2::inwork 21476,5048 21380,5003 21375,4974
 #: osm_watch: way id="719023971" version="8"
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
