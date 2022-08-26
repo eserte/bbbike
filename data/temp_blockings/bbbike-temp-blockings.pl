@@ -16340,7 +16340,7 @@ EOF
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-07-08
+#: last_checked: 2022-08-26
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -31487,7 +31487,7 @@ EOF
      },
      { from  => $isodate2epoch->("2021-05-30 08:30:00"), # 1589275980, # 2020-05-12 11:33
        until => $isodate2epoch->("2022-09-30 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: Fahrbahn zwischen Lipaer Str. und Chlumer Str. sowie zwischen Tietzenweg und Viktoriaplatz gesperrt, bis 30.09.2022',
+       text  => 'Gardeschützenweg: Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz, bis 30.09.2022',
        type  => 'handicap',
        source_id => '2147345834', # (inaktiv)
        data  => <<EOF,
@@ -31500,6 +31500,7 @@ EOF
 #: source_id: 2147347233 (bis 23.12.2021)
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022)
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)
+#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm)
 #: source_id: bvg2021:188#BVG259885_0
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
@@ -31508,7 +31509,10 @@ EOF
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv --- #: last_checked: 2020-12-27 (mapillary) vvv --- #: next_check: 2021-05-03 vvv
 # REMOVED (hier nicht mehr) --- #: note: nur etwa 100m, deshalb q3 statt q4 ---	q3::inwork 4515,4760 4214,4595
 #: note: Einbahnstraßenregelung, Bauarbeiten laut Baustellenschild bis September 2022
-	q4::inwork; 4214,4595 4039,4500
+# REMOVED (doppelt)	q4::inwork; 4214,4595 4039,4500
+# REMOVED (doppelt)	q4::inwork; 4039,4500 3934,4441
+	q4::inwork; 3934,4441 3643,4232 3523,4139
+	q4::inwork 3934,4441 4039,4500 4214,4595 4515,4760
 # REMOVED --- #: note: Einbahnstraßenregelung, bis 30.6.2022 ---	q4::inwork; 3643,4232 3523,4139
 # REMOVED --- #: note: hier nur ein kurzes Stück ---	q2::inwork; 4214,4595 4039,4500
 # REMOVED (nicht mehr, laut rbb) ---	q4::inwork 4179,4662 4214,4595
@@ -34505,8 +34509,10 @@ EOF
        source_id => 'viz2021:13.287063,52.432721,01.03.2021,07:00', # mittlerweile nur bis 31.1.2022, aber siehe unten (inaktiv)
        data  => <<EOF,
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022
-#: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum für die Gesamtbaumaßnahme mehr) vvv
+#: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum für die Gesamtbaumaßnahme mehr) (inaktiv) vvv
 #: source_id: bvg2021:188#BVG296003_0
+#: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022)
+#: source_id: viz2021:13.289248,52.435248,31.01.2022,07:00 (bis 31.8.2022)
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
@@ -35443,13 +35449,13 @@ EOF
      },
      { from  => undef, # 
        until => 1704042000, # 2023-12-31 18:00
-       text  => 'Fischerinsel: Wege können wegen Bauarbeiten gesperrt sein (Stand Mitte Juli 2022: keine Einschränkung beim Weg Richtung Inselbrücke)',
+       text  => 'Fischerinsel: Wege können wegen Bauarbeiten gesperrt sein (Stand Ende August 2022: keine Einschränkung beim Weg Richtung Inselbrücke)',
        type  => 'gesperrt',
        source_id => 'https://berliner-abendblatt.de/2022/06/01/arbeiten-an-der-fischerinsel-werden-fortgesetzt/',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/06/01/arbeiten-an-der-fischerinsel-werden-fortgesetzt/ (Bauarbeiten bis Ende 2023)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/fischerinsel-park-wird-umgestaltet_a347705
-#: last_checked: 2022-07-11
+#: last_checked: 2022-08-26
 #: check_frequency: 60d
 #: next_check: 2023-12-31
 	2::inwork 10824,11992 10742,12033 10713,12014
@@ -35881,12 +35887,12 @@ EOF
 #: by: https://nitter.cz/polizeiberlin/status/1562774623414255617#m
 #: by: https://nitter.cz/VIZ_Berlin/status/1562798467298525185#m
 #: by: https://viz.berlin.de/2022/08/sprengplatz-grunewald/?date=20220825 (bis Ende September 2022)
-#: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-23&until=&near=
+#: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-26&until=&near=
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-25 (research) vvv
+#: last_checked: 2022-08-26 (research) vvv
 #: check_frequency: 1d vvv
 #: next_check: 2022-09-30 vvv
 Hüttenweg (westlicher Abschnitt)	2::temp -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888
@@ -36063,6 +36069,26 @@ EOF
 #: last_checked: 2022-08-24
 #: check_frequency: 120d
 	2::inwork 16615,15737 16537,15827
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Marx-Engels-Forum: einige Wege sind gesperrt, Ende der Sperrungen unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: add_fragezeichen: Wurden die Bauzäune mittlerweile entfernt?
+#: last_checked: 2022-08-26
+#: check_frequency: 14d
+	2::inwork 10405,12462 10363,12535 10300,12587
+EOF
+     },
+     { from  => 1659852000, # 2022-08-07 08:00
+       until => 1732719600, # 2024-11-27 16:00
+       text  => 'Marwitzer Str.: Sperrung der Eisenbahnüberführung vom 08.08.2022 - 27.11.2024',
+       type  => 'gesperrt',
+       source_id => '226502047',
+       data  => <<EOF,
+	2::inwork -3475,26523 -3556,26560
 EOF
      },
     );

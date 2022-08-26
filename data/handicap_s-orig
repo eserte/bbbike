@@ -21,7 +21,7 @@
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2022-07-29 vvv
+#: last_checked: 2022-08-26 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -242,7 +242,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
 #: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2022-08-21 (mapillary)
+#: last_checked: 2022-08-26
 Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -268,7 +268,7 @@ Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2022-08-16 vvv
+#: last_checked: 2022-08-26 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -303,7 +303,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-08-24
+#: last_checked: 2022-08-26
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -423,11 +423,11 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/ab-1-februar-2021-haus-unter-den-linden-fuer-benutzungsbetrieb-geoeffnet/?date=20201226 (Baustelleneinrichtung in der Charlottenstr. wird im Frühjahr 2021 abgebaut, bis Sommer 2021 wird die Straßenseite wiederhergestellt; Sperrung in der Universitätsstraße womöglich bis Mitte 2022)
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
-#: last_checked: 2022-08-23 vvv
+#: priority: #B vvv
+#: last_checked: 2022-08-26 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="10"
-#: next_check: 2022-08-23
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 #: also_indoor: traffic (ex-H,ex-G)
 #: osm_watch: way id="114667396" version="11"
@@ -436,6 +436,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
+#: priority ^^^
 # 
 # REMOVED (scheint fertig zu sein (daf)) --- #: next_check_id: MUSEUMSINSEL-2020 --- #: next_check_id: ZEUGHAUS-2014 --- #: priority: #A --- #: last_checked: 2021-06-23 (daf) --- #: check_frequency: 14d --- Schinkelplatz: Fahrbahn wird neu gemacht	q4::inwork 9984,12426 9990,12404 9996,12372
 # REMOVED (so gut wie fertig; Radfahrer können recht gut passieren) --- #: source_id: INKO_093369 --- #: note: ab Glinkastr. nur ungefähr die halbe Strecke bis zur Friedrichstr. gesperrt, deshalb q3 --- # REMOVED (Sperrung existiert noch) --- #: XXX bei VMZ ist dieser Eintrag verschwunden --- wurde die Sperrung aufgehoben? --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0199-palais-behrens-palais-theising.html --- #: XXX siehe auch http://www.deutsches-architektur-forum.de/forum/showthread.php?t=7390&page=7 --- #: last_checked: 2015-07-20 --- #: check_frequency: 60d --- Behrenstr. (Mitte): Fahrbahn Richtung Friedrichstr. zwischen Glinkastr. und Friedrichstr. gesperrt	q3::inwork; 9164,12172 9373,12197
@@ -3917,7 +3918,10 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 (Barnimer Dörferweg - Gehrensee): einige Fußgänger	q1 21035,19005 21040,19007 21015,19070
 #: note: Weg ist etwa 2m breit
 Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
-Schloßplatz: Fußgänger	q2 10174,12284 10102,12384
+#: last_checked: 2022-08-26
+#: check_frequency: 60d
+# REMOVED (früher: Schloßplatz: Fußgänger	q2 10174,12284 10102,12384)
+Schloßplatz: Fußgänger, Engstelle wegen Bauarbeiten am Einheitsdenkmal	q3 10174,12284 10102,12384
 (Lustgarten - Schloss): Fußgänger	q2 10155,12494 10175,12435
 (Uferweg am Humboldtforum): Fußgänger	q2 10357,12356 10336,12404 10271,12503 10243,12546
 Schloßplatz: Fußgänger	q3 10175,12435 10271,12503

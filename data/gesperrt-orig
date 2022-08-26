@@ -3480,7 +3480,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://images.competitionline.com/image/f/9/5/a/b/e/1/b/f95abe1bc3b10ee4f2778b024afc5734_1.jpg?auto=format,compress&fm=jpg&ixlib=imgixjs-3.4.1&w=4742
 #: by: https://www.gm013.la/work/fmp
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2022-08-09
+#: last_checked: 2022-08-26
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
@@ -3577,7 +3577,7 @@ Tegeler Brücke: wird neu gebaut	2::inwork -261,15858 -252,15903 -242,15982 -236,
 # REMOVED --- #: next_check_id: OSTBAHNHOF-2021 --- #: last_checked: 2021-11-03 --- #: check_frequency: 14d --- Erich-Steinfurth-Str., Hermann-Stöhr-Platz: wegen Kranarbeiten gesperrt	2::inwork 12413,11901 12453,11790 12378,11806
 # 
 #: next_check_id: OSTBAHNHOF-2021
-#: last_checked: 2022-07-29
+#: last_checked: 2022-08-26
 #: check_frequency: 120d
 #: next_check: 2025-01-01
 Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
@@ -3699,15 +3699,7 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 # REMOVED (nicht mehr) --- Wildrosenweg: Überqueren der Schulstr. nicht möglich	3 20694,11811 20708,11918 20715,12040
 # REMOVED (nicht mehr) --- Wildrosenweg: Überqueren der Schulstr. nicht möglich	3 20715,12040 20708,11918 20694,11811
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: MITTEL-2019
-#: source_id: IM_020714
-#: osm_watch: way id="690322561" version="4"
-#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
-#: XXX laut osm offen
-#: also_indoor: traffic (ex-G,ex-H)
-#: last_checked: 2022-07-29
-Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
+# REMOVED (mittlerweile Einbahnstraße, Radfahrer frei) --- #: next_check_id: MITTEL-2019 --- #: source_id: IM_020714 --- #: osm_watch: way id="690322561" version="4" --- #: add_fragezeichen: Wann wird die Sperrung aufgehoben? --- #: XXX laut osm offen --- #: also_indoor: traffic (ex-G,ex-H) --- #: last_checked: 2022-07-29 --- Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,659869#msg-659869 (Sperrung am Wochenende)
@@ -3907,7 +3899,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="3"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="882672445" version="2"
-#: last_checked: 2022-07-25 (daf)
+#: last_checked: 2022-08-26
 #: check_frequency: 60d
 #: next_check: 2022-11-30
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
@@ -3971,7 +3963,7 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: by: https://www.berliner-woche.de/mitte/c-bauen/architekten-koennen-bis-november-ihre-entwuerfe-einreichen_a324605
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2022-07-21 (mapillary)
+#: last_checked: 2022-08-26
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
@@ -4023,10 +4015,11 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
 #: osm_watch: way id="588431071" version="6"
 #: osm_watch: way id="696227207" version="3"
 #: source_id: viz2021:13.3621,52.447308,22.12.2020,10:00 (angrenzende Attilastr., bis 31.7.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile inaktiv)
+#: source_id: viz2021:13.361375,52.44703,01.04.2021,08:44 (angrenzende Attilastr., bis 31.7.2023)
 #: add_fragezeichen: Bis wann genau geht die Sperrung?
 #: last_checked: 2022-07-24
 #: check_frequency: 120d
-#: next_check: 2023-12-31
+#: next_check: 2023-07-31
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
 # 
 #: next_check_id: WUHLETALBRUECKE-2019
@@ -4584,7 +4577,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Eröffnung am 17.12.2020)
 #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Eröffnung wird verschoben)
 #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauzäune werden im Dezember 2020 teilweise abgebaut)
-#: last_checked: 2022-07-29
+#: last_checked: 2022-08-26
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384

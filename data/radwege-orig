@@ -747,7 +747,7 @@ für Radfahrer freigegebene Busspur gilt immer	RW1; 8562,11744 8553,11638 8553,11
 #: source_id: 2147345481
 #: source_id: 2147345753
 #: source_id: viz2021:13.408836,52.517143,22.04.2020,15:00 (Bauarbeiten bis 30.6.2023)
-#: last_checked: 2022-08-24 vvv
+#: last_checked: 2022-08-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
@@ -1666,7 +1666,7 @@ Busspur ist immer gültig	RW5;RW5 9934,12420 9858,12410
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
 #: source_id: viz2021:13.399226,52.517706,30.05.2022,08:00 (bis 15.8.2022, zwischen Lustgarten - Oberwallstr.) (mittlerweile inaktiv) vvv
 #: source_id: viz2021:13.404803,52.520062,30.05.2022,08:00 (bis 15.8.2022) (mittlerweile bis 29.8.2022)
-#: last_checked: 2022-08-23 (mapillary) vvv
+#: last_checked: 2022-08-26 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2022-08-29 vvv
 provisorische Radspur	RW4; 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506
@@ -1726,7 +1726,7 @@ provisorische Radspur	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
 #: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
-#: last_checked: 2022-08-24
+#: last_checked: 2022-08-26
 provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
 #: next_check ^^^
 #: check_frequency ^^^
@@ -2355,7 +2355,7 @@ Radspur zwischen Fahrspuren	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2022-08-04 vvv
+#: last_checked: 2022-08-26 vvv
 #: next_check: 2024-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
@@ -5724,8 +5724,8 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 #: by ^^^
 # 
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2022-08-23 (mapillary) vvv
-#: XXX früher RW3, zurzeit wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
+#: last_checked: 2022-08-26 vvv
+#: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9141,12320 9131,12438 9121,12514
 #: XXX früher RW3, zurzeit durch Gelbmarkierung (Kreuze) ungültig gemacht
 	RW0; 9121,12514 9131,12438
@@ -7563,7 +7563,7 @@ Tempo 10	RW6;RW6 14468,11203 14442,11101
 Tempo 10	RW6;RW6 14531,11142 14513,11075
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-08-24 vvv
+#: last_checked: 2022-08-26 vvv
 #: next_check: 2024-06-01 vvv
 	RW2; 10830,12279 10831,12371
 	RW4; 10831,12371 10804,12461
