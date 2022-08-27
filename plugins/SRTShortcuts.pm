@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.08;
+$VERSION = 2.09;
 
 use File::Glob qw(bsd_glob);
 
@@ -772,6 +772,9 @@ EOF
 		],
 		[Button => $do_compound->("as QRCode for GPX track with live bbbike.cgi"),
 		 -command => sub { current_route_as_qrcode(in => "bbbike-gpx-track-live") },
+		],
+		[Button => $do_compound->("Windy"),
+		 -command => sub { current_route_in_windy() },
 		],
 	       ],
 	      ],
@@ -2049,6 +2052,37 @@ sub _show_qrcode_for_url {
 	$f->Button(main::image_or_text($info_photo, 'Info'),
 		   -command => sub { main::status_message($info_msg, "infodlg") })->pack(-side => 'right');
     }
+}
+
+sub current_route_in_windy {
+    if (!@main::realcoords) {
+	main::status_message('No current route', 'warn');
+	return;
+    }
+
+    require Karte::Polar;
+    my $o = $Karte::Polar::obj;
+
+    my @in_points = map {
+	my($x, $y) = map { sprintf "%.3f", $_ } $o->standard2map(@$_);
+	+{ x=>$x,y=>$y }
+    } @main::realcoords;
+
+    my $i = $#in_points;
+    while($i>0) {
+	if ($in_points[$i]->{x} == $in_points[$i-1]->{x} &&
+	    $in_points[$i]->{y} == $in_points[$i-1]->{y}) {
+	    splice @in_points, $i, 1;
+	}
+	$i--;
+    }
+
+    my $simplified_points = visvalingam_whyatt(\@in_points, ['strlen', 950]); # windy seems to limit URLs to about 1024 bytes
+    my $middle_point = join ',', @{ $simplified_points->[$#$simplified_points/2] }{qw(y x)};
+    my $url = 'https://www.windy.com/distance/car/' . join(';', map { join ',', $_->{y}, $_->{x} } @$simplified_points ) . '?rainAccu,next3d,' . $middle_point . ',9';
+    main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
+    require WWWBrowser;
+    WWWBrowser::start_browser($url);
 }
 
 # XXX BBBikeOsmUtil should probably behave like a plugin? or not?
@@ -3629,6 +3663,75 @@ sub center_garmin_device_position {
 				 );
 	     });
 }
+
+######################################################################
+
+sub visvalingam_whyatt {
+    require VectorUtil;
+    require Storable;
+
+    my($in_points_ref, $stop) = @_;
+    my @out_points = @{ Storable::dclone($in_points_ref) };
+
+    my $get_size_func;
+    if (ref $stop->[0] eq 'CODE') {
+	$get_size_func = $stop->[0];
+    } elsif ($stop->[0] eq 'strlen') {
+	# assumes a one-byte separator between x and y and one-byte separator between points
+	require List::Util;
+	$get_size_func = sub {
+	    my $points_ref = shift;
+	    (List::Util::sum(map { length($_->{x}) + length($_->{y}) + 1 } @$points_ref) + @$points_ref - 1);
+	};
+    } elsif ($stop->[0] eq 'elements') {
+	$get_size_func = sub {
+	    my $points_ref = shift;
+	    scalar @$points_ref;
+	};
+    } else {
+	die "Unhandled stop function $stop->[0]";
+    }
+    my $max_size = $stop->[1];
+
+    my $calc_area = sub {
+	my($i) = @_;
+	$out_points[$i]->{area} = VectorUtil::triangle_area(
+							    [@{$out_points[$i-1]}{qw(x y)}],
+							    [@{$out_points[$i  ]}{qw(x y)}],
+							    [@{$out_points[$i+1]}{qw(x y)}],
+							   );
+    };
+
+    if ($get_size_func->(\@out_points) > $max_size && @out_points > 2) {
+
+	for my $i (1 .. $#out_points-1) {
+	    $calc_area->($i);
+	}
+
+	while (@out_points > 2) {
+	    my($min_area, $min_area_inx);
+	    for my $i (1 .. $#out_points-1) {
+		if (!defined $min_area || $min_area > $out_points[$i]->{area}) {
+		    $min_area = $out_points[$i]->{area};
+		    $min_area_inx = $i;
+		}
+	    }
+	    splice @out_points, $min_area_inx, 1;
+	    if ($min_area_inx-1 > 0) {
+		$calc_area->($min_area_inx-1)
+	    }
+	    if ($min_area_inx < $#out_points) {
+		$calc_area->($min_area_inx);
+	    }
+	    my $current_size = $get_size_func->(\@out_points);
+	    if ($current_size <= $max_size) {
+		last;
+	    }
+	}
+    }
+    return \@out_points;
+}
+    
 
 ######################################################################
 1;
