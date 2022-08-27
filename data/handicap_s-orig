@@ -798,14 +798,15 @@ Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,124
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
+#: XXX Laut Schild des Bezirksamts Umgestaltung bis August 2023 (!)
 #: also_indoor: traffic (ex-G(unvollständig),H(falsch),B)
-#: last_checked: 2022-08-24 vvv
+#: last_checked: 2022-08-27 vvv
 #: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2022-06-30 vvv
+#: next_check: 2023-08-31 vvv
 Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,12280 16159,12301
 # REMOVED (hier auch offen, Einbahnstraßenregelung für Nicht-Radfahrer) --- Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16159,12301 16056,12317
 # REMOVED (hier mittlerweile offen) --- Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16144,12388 16159,12301 16158,12191
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -2701,7 +2702,7 @@ Alt-Tegel: Fußgänger	q3 1462,20133 1457,20159
 (Uferweg am Tegeler Hafen - Am Tegeler Hafen): 3x kurze und steile Rampe	q4 1858,20431 1871,20399
 (Am Rosensteg - An der Heide): eng	q3 3065,20646 3101,20649 3109,20650
 (Rosentreterpromenade - Ziekowstr.): schmal	q2+ 4156,21175 4060,21147 3649,21102 3562,21089 3456,21071 2911,20953 2571,20886
-(Oskar-Ziethen-Krankenhaus): Krankenhausgelände, Fußgänger	q2 16541,12071 16556,12180
+(Oskar-Ziethen-Krankenhaus): Krankenhausgelände, Fußgänger	q3 16541,12071 16556,12180
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6664 (BVV-Antrag für Hinweisschilder)
 (U-Bahnunterführung Elsterwerdaer Platz): Fußgänger, ggfs. schieben	q4 21137,11294 21084,11319
 #: XXX_prog: BS (an der westlichen Seite)
@@ -2957,7 +2958,7 @@ Straße 17: kurze Rampe	q3 7307,7435 7296,7443
 #: by: https://pascalgrothe.de/lagerhaus-in-der-lauinger-strasse-waechst-in-die-hoehe/
 #: XXX: früher (wiederherstellen!): einige Fußgänger, q1
 #: osm_watch: way id="965996899" version="1"
-#: last_checked: 2022-07-16
+#: last_checked: 2022-08-27
 #: check_frequency: 45d
 (Lauinger Str. - Biesdorfer Friedhofsweg/Alt-Biesdorf): einige Fußgänger, Engstelle wegen Hochbauarbeiten	q2 21221,11398 21311,11528
 #: XXX_prog mit Anhänger allerdings q1 oder sogar q2

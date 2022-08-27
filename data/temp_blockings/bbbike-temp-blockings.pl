@@ -21340,7 +21340,7 @@ EOF
        until => $isodate2epoch->("2021-09-22 06:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 9, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 14, # 25.10.2022
+       recurrence_prewarn_days => 5, # 25.10.2022
        text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, ab 20.09.2021',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -21358,7 +21358,7 @@ EOF
        until => $isodate2epoch->("2021-09-27 06:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 9, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 14, # 25.10.2022
+       recurrence_prewarn_days => 5, # 25.10.2022
        text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, vom 23.09.2021 bis 27.09.2021',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -30986,7 +30986,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-08-13
+#: last_checked: 2022-08-27
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -32648,7 +32648,7 @@ EOF
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="1"
-#: last_checked: 2022-05-17 (osm)
+#: last_checked: 2022-07-24 (baustellen-doku)
 #: check_frequency: 180d
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 EOF
@@ -34674,7 +34674,7 @@ EOF
 #: last_checked: 2022-08-13 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="28"
+#: osm_watch: way id="4395450" version="29"
 	2::inwork 7031,12320 6694,12627
 #: osm_watch: way id="505363417" version="12"
 	2::inwork 6631,12707 6694,12627
@@ -35887,12 +35887,12 @@ EOF
 #: by: https://nitter.cz/polizeiberlin/status/1562774623414255617#m
 #: by: https://nitter.cz/VIZ_Berlin/status/1562798467298525185#m
 #: by: https://viz.berlin.de/2022/08/sprengplatz-grunewald/?date=20220825 (bis Ende September 2022)
-#: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-26&until=&near=
+#: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-27&until=&near=
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-26 (research) vvv
+#: last_checked: 2022-08-27 (research) vvv
 #: check_frequency: 1d vvv
 #: next_check: 2022-09-30 vvv
 Hüttenweg (westlicher Abschnitt)	2::temp -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888

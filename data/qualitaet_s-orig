@@ -1054,7 +1054,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-08-26
+#: last_checked: 2022-08-27
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -8574,8 +8574,8 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
-#: osm_watch: way id="35873435" version="7"
-#: last_checked: 2022-07-16
+#: osm_watch: way id="35873435" version="10"
+#: last_checked: 2022-08-27
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -12721,6 +12721,7 @@ Parkstr. (Tempelhof): Kleinsteinpflaster	Q1-  9202,6412 9143,6415
 Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9122,6471 9141,6459
 (Waldweg): überwiegend asphaltiert, einige wellige Stellen	Q0- 24981,2565 25116,2529 25496,2429
 (Genslerstr. - Liebenwalder Str.): Asphalt	Q0 16669,14438 16845,14461
+Klaus-Selmke-Str.: Asphalt	Q0 21130,11384 21275,11547
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -23398,6 +23399,7 @@ Burscheider Weg: Fahrbahn Kopfsteinpflaster	Q2+; -740,15316 -862,15283 -934,1525
 #: by: ^^^
 # 
 #: by: Olaf Krüger:
+#: confirmed_by: srt
 Egmontstr.: mäßiges Kopfsteinpflaster	Q2 17306,11866 17151,11912
 # 
 #: by: Sven (hagen):
@@ -29192,7 +29194,7 @@ Sprengelstr. (Wilhelmstadt): Gehwegplatten	Q1+ -4026,12720 -4119,12763
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/service-und-organisationseinheiten/finanzen/investitionsplanung/baumassnahmen_tiefbau_2021-2025.pdf (Bauzeit bis 2022; Asphaltierung)
 #: by: https://www.berliner-woche.de/spandau/c-bauen/spandau-erneuert-bis-2025-das-rathaus-schulen-strassen-und-friedhoefe_a307134
 #: XXX geplanter Umbau der Straße --- Asphaltiertung ist geplant
-#: osm_watch: way id="286471064" version="8"
+#: osm_watch: way id="286471064" version="10"
 #: osm_watch: way id="475812733" version="5"
 #: also_indoor: traffic (B)
 #: last_checked: 2021-10-09 (mapillary)
@@ -29622,8 +29624,11 @@ Laurinsteig: Kleinpflastersteine	Q2 1209,25542 1307,25639 1348,25720 1360,25764 
 #: by: ^^^
 # 
 #: by: Caro [AM] vvv
-#: confirmed_by: srt
-Kubornstr.: Asphalt mit Schäden	Q1 15857,12682 15832,12518 15819,12498 15800,12353
+#: confirmed_by: srt vvv
+Kubornstr.: Asphalt mit Schäden	Q1+ 15857,12682 15832,12518 15819,12498
+#: corrected_by: srt (Asphalt mit Schäden, Q1 -> ...)
+Kubornstr.: Asphalt	Q0- 15819,12498 15800,12353
+#: confirmed_by ^^^
 #: corrected_by: srt
 Kubornstr.: kleinteiliges Kopfsteinpflaster	Q1 15800,12353 15790,12289
 #: confirmed_by: srt
@@ -30793,6 +30798,9 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 16492,11042
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 16381,11080
 Kreuzungsbereich asphaltiert	Q0 16702,10972
 Kreuzungsbereich asphaltiert	Q0 16334,10958
+Einmündungsbereich asphaltiert	Q0 16374,10946
+Kreuzungsbereich asphaltiert	Q0 16452,10922
+Kreuzungsbereich asphaltiert	Q0 16192,10907
 Kreuzungsbereich asphaltiert	Q0 16227,10991
 Kreuzungsbereich asphaltiert	Q0 15945,10984
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 15359,11115

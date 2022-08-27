@@ -239,7 +239,7 @@ RB35	R 55917,-12682 56076,-13335 56187,-13914 56271,-14149
 RE7	RC 13877,-4646 12816,-5434 12487,-5612 11898,-5865
 # Kreuz Blankenfelde: Schönefeld - Potsdam
 # bis 2015-12-13 auch RB19
-RB22	RC 11898,-5865 10901,-6258
+RB22	RC 11898,-5865 11683,-5949 10901,-6258
 # Kreuz Blankenfelde - Genshagener Kreuz
 # bis 2015-12-13 auch RB19
 RE5,RB22	RC 10901,-6258 9946,-6617 7905,-6960 4974,-7452 4358,-7515 3718,-7599 2636,-7995
@@ -254,6 +254,15 @@ RB22	RC 1539,-8397 1164,-8586 726,-8969 -522,-9932 -803,-10063 -1138,-10105 -336
 RE7,RB33	RC -7418,-1416 -7542,-1563 -7728,-1738 -7838,-1861 -8001,-2097 -8152,-2399 -8429,-2860 -8504,-2983 -9620,-4939 -9996,-5596 -10063,-5703 -11212,-7688 -11481,-8100 -11804,-8488 -11995,-8631 -12751,-8997 -13144,-9180 -13443,-9369 -13899,-9791
 # Verbindung: Schönefeld - Blankenfelde
 RE7	RC 11898,-5865 11669,-5984 11532,-6102 11438,-6246 11392,-6413 11401,-6593 11511,-7138
+# Mahlower Kurve
+#: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA3_Landesgrenze-Mahlow-Blankenfelde/20220724_Mahlow/
+#: by: https://www.tagesspiegel.de/berlin/ausbau-der-dresdner-bahn-die-s2-wird-in-den-sommerferien-auf-ihrem-suedende-gesperrt/26964888.html
+#: osm_watch: way id="909756344" version="8" brb
+#: osm_watch: way id="459557124" version="11" brb
+#: last_checked: 2022-07-24 (baustellen-doku)
+#: check_frequency: 360d
+#: next_check: 2025-12-10
+	RBau 11167,-5733 11330,-5905 11490,-5964 11683,-5949
 # Blankenfelde - Rangsdorf
 RE5,RE7	RC 11511,-7138 11601,-7560 11620,-7638 11875,-8728 11916,-8926 12689,-12237
 # Rangsdorf - Wünsdorf

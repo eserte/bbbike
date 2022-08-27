@@ -1403,6 +1403,8 @@ Birkholzer Weg	1 18143,19384 18106,19353
 Tempelhofer Damm: Mittelstreifen	3nocross 9254,6542 9253,6484 9250,6414 9246,6364
 Lütticher Str.	1 6716,15310 6628,15411 6522,15532
 Lütticher Str.	1 6539,15548 6649,15427 6736,15328
+#: note: Schranken an beiden Enden ohne gute Umfahrungsmöglichkeit (man könnte das Rad über die Wiese tragen)
+Klaus-Selmke-Str.	2 21130,11384 21275,11547
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -1836,7 +1838,7 @@ Lindauer Allee: Mittelstreifen	3nocross 5713,18777 5791,18778 5869,18779
 Togostr.: Mittelstreifen	3nocross 5906,16403 5700,16584 5596,16662
 Märkische Allee: Mittelstreifen	3nocross 21251,18508 21163,18347 21009,18055
 Märkische Allee: Mittelstreifen	3nocross 19809,15676 19880,15818 19988,16039
-Alt-Biesdorf: Mittelstreifen	3nocross 21108,11628 21251,11560 21311,11528
+Alt-Biesdorf: Mittelstreifen	3nocross 21108,11628 21251,11560 21275,11547 21311,11528
 Kurt-Schumacher-Damm: Mittelstreifen	3nocross 4704,17101 4931,17174 4997,17241
 Rudower Str.: Mittelstreifen	3nocross 14788,3441 14822,3409 14994,3245
 Tempelhofer Damm: Mittelstreifen	3nocross 9248,4904 9239,4980 9206,5193
@@ -2224,7 +2226,7 @@ Invalidenstr.: Mittelstreifen	3nocross 7816,13276 7842,13292 7880,13315
 Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292
 Invalidenstr.: Mittelstreifen	3nocross 7880,13315 8003,13374 8098,13419
 Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7822,12937 7776,12945 7595,12980
-Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21133,11348 21124,11462
+Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21133,11348 21130,11384 21124,11462
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
 Hansastr.: Straßenbahntrasse	3nocross 15662,16649 15735,16698 15776,16721
 Am Juliusturm: Mittelstreifen	3nocross -3255,14685 -3209,14662 -3150,14631
@@ -3813,7 +3815,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2022-08-15
+#: last_checked: 2022-08-27
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -3821,7 +3823,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2022-08-15
+#: last_checked: 2022-08-27
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 # 
@@ -4637,7 +4639,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: note: laut osm Sperrung bis 01/2023
 #: osm_watch: way id="663005792" version="9" brb
 #: also_indoor: traffic
-#: last_checked: 2022-03-20 (osm) vvv
+#: last_checked: 2022-07-24 (baustellen-doku) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2023-01-01 vvv
 Berliner Str. (Mahlow): Straße gesperrt, neue Bahnunterführung wird gebaut	2:inwork 10776,-4460 10896,-4469 10956,-4470
