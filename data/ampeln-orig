@@ -115,6 +115,15 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # REMOVED --- #: next_check_id: LUECK-2021 --- #: source_id: viz2021:13.496206,52.500247,12.11.2021,06:00 (bis 10.12.2021) --- #: by: https://www.bahninfo-forum.de/read.php?9,716845,718464#msg-718464 --- #: note: Gegenverkehrsregelung beginnt östlich der Einmündung Wönnichstr. und endet östlich der Kreuzung Rummelsburger Str. --- #: last_checked: 2021-11-21 --- #: next_check: 2021-12-10 --- #: valid: -20211210 --- Lückstr.: Gegenverkehrsregelung	X::inwork 16601,10650
 # REMOVED --- #: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00 (bis 02.02.2022) (mittlerweile bis 7.3.2022) (mittlerweile bis 30.4.2022) (mittlerweile bis 31.7.2022) (bis 1.8.2022) (inaktiv) --- #: source_id: viz2021:13.3751,52.58195,02.08.2022,11:32 (bis 3.8.2022) --- #: note laut rbb bis 9.2.2022 --- #: last_checked: 2022-03-19 (mapillary) vvv --- #: next_check: 2022-08-03 vvv --- #: valid: -20220803 vvv --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725 --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
+#: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) vvv
+#: last_checked: 2022-08-27 (mapillary) vvv
+#: next_check: 2023-03-31 vvv
+Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
+Germanenstr.: Gegenverkehrsregelung	X::inwork 8234,19936
+#: next_check ^^^
+#: last_checked ^^^
+#: source_id ^^^
+# 
 #: next_check_id: MOLKENMARKT-2021
 #: last_checked: 2022-08-26
 #: next_check: 2024-06-01
@@ -1147,7 +1156,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 161,3062
 	X -2280,2177
 	X -4003,1234
-	X 2348,9398
+	X 2348,9388
 	X 3127,9522
 	X 15303,8343
 	X 15557,8077
@@ -2212,7 +2221,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel für Radfahrer im Zuge der Delbrückstr.; für Autos gibt es Kontaktschleifen
 	X 2190,8528
 	X 2121,8351
-#: off: weekend/holiday (seen 2013-05-01)
+#: off: weekend/holiday (seen 2013-05-01, seen 2022-08-28 14:00)
 #: note: Anforderungsampel
 	F 1773,8859
 	X -5454,6896

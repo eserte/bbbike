@@ -984,10 +984,10 @@ Grüntaler Str.: Kopfsteinpflaster	Q2 9778,16915 9744,16875 9611,16741 9516,16639
 Grüntaler Str.: Kopfsteinpflaster	Q2 9736,16919 9719,16904 9579,16770 9448,16638 9442,16610 9436,16572 9301,16439 9178,16317 8986,16092
 Grüntaler Str.: Kopfsteinpflaster	Q2 9744,16875 9719,16904
 Zur Hagelberger Str.: Kopfsteinpflaster	Q2 8774,9534 8679,9544
-Saubuchtweg: guter Waldweg	Q1 -3073,9061 -2983,8841 -2965,8705 -2962,8493 -2981,8350 -2975,8172 -2897,8008 -2859,7946 -2804,7915 -2677,7696 -2675,7622 -2639,7452 -2563,7353 -2546,7240 -2524,7141 -2547,7055 -2549,6948 -2634,6907 -2668,6862
+Saubuchtweg: guter Waldweg	Q1 -3073,9061 -2983,8841 -2965,8705 -2962,8493 -2981,8350 -2975,8172 -2897,8008 -2859,7946 -2804,7915 -2677,7696 -2675,7622 -2639,7452 -2563,7353 -2546,7240 -2524,7141 -2547,7055 -2557,6953 -2655,6906 -2668,6862
 Schwarzer Weg: Waldweg, OK (teilweise sandig)	Q1 -2668,6862 -2632,6789 -2638,6641 -2686,6489 -2705,6355 -2986,5996 -3156,5926 -3226,5870 -3275,5847 -3603,5748 -3794,5604 -3845,5575 -3877,5570
 Schwarzer Weg: Schotter, abschüssige Strecke	Q2 -3877,5570 -4003,5621
-Fischerhüttenweg: Waldweg, mäßig (Wurzeln, eng) bis OK	Q2 -2218,5133 -2825,5588 -3129,5798 -3226,5870
+Fischerhüttenweg: Waldweg, mäßig (Wurzeln, eng) bis OK	Q2 -2218,5133 -2528,5366 -2825,5588 -3129,5798 -3226,5870
 Fischerhüttenweg: Waldweg, sandig	Q3 -3723,6254 -3443,6036
 Curtiusstr.: Asphalt	Q0 2198,3169 2256,3172 2289,3331 2328,3482 2457,3547 2758,3702 2965,3823
 Curtiusstr.: Kopfsteinpflaster	Q2 2965,3823 3026,3860 3185,3958 3259,4002
@@ -1263,9 +1263,9 @@ Travestr.: Kopfsteinpflaster	Q2 14986,11760 14901,11808
 Travestr.: Gleisbereich asphaltiert, rechts liegt Kopfsteinpflaster	Q0 14901,11808 14836,11842
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1 4320,8596 3970,8582
 Volkspark Wilmersdorf: Parkweg	Q1 5913,8415 5831,8358
-Volkspark Wilmersdorf: Parkweg	Q1 5917,8351 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5476,8521
+Volkspark Wilmersdorf: Parkweg	Q1 5917,8351 5831,8358 5806,8350 5761,8339 5660,8366 5533,8478 5476,8521
 Volkspark Wilmersdorf: Parkweg	Q1 5469,8524 5405,8549 5331,8581
-Volkspark Wilmersdorf: Parkweg	Q1 5762,8335 5699,8308 5687,8280 5700,8241 5730,8207
+Volkspark Wilmersdorf: Parkweg	Q1 5761,8339 5699,8308 5687,8280 5700,8241 5730,8207
 (Volksparksteg - Volkspark Wilmersdorf): Parkweg	Q2 5401,8528 5405,8549
 Friedrichsruher Str.: Kopfsteinpflaster, OK	Q1 3333,9026 3196,9193
 Friedrichsruher Str.: Verbundsteine	Q0 3196,9193 3093,9306 2998,9408
@@ -1375,17 +1375,23 @@ südlicher Uferweg an der Krummen Lanke: gepflastert	Q1 -1162,4656 -1147,4705
 südlicher Uferweg an der Krummen Lanke: Feinschotter	Q1 -1147,4705 -1146,4741 -1048,4893 -1017,4966 -753,5074 -666,5152 -618,5235 -578,5245 -579,5320
 nördlicher/westlicher Uferweg an der Krummen Lanke: Waldweg, überwiegend OK	Q1 -579,5320 -603,5317 -676,5323 -731,5291 -795,5233 -888,5172 -1098,5062 -1180,5020 -1243,4939 -1298,4815 -1298,4584 -1287,4486 -1272,4450 -1239,4436
 Krumme Lanke - Parkplatz am Fischerhüttenweg: Waldweg	Q1 -1287,4486 -1304,4450 -1297,4385
-Parkplatz am Fischerhüttenweg - Schlachtensee: Waldweg	Q2 -1371,4424 -1453,4383 -1592,4268 -1663,4218
-Fischerhüttenweg: Kopfsteinpflaster, schmale Asphaltbankette	Q2 -1297,4385 -1371,4424 -1424,4504
+Parkplatz am Fischerhüttenweg - Schlachtensee: Waldweg	Q2 -1344,4436 -1453,4383 -1592,4268 -1663,4218
+Fischerhüttenweg: schlechtes Kopfsteinpflaster, Asphaltbankette	Q3; -1297,4385 -1344,4436
+Fischerhüttenweg: schlechtes Kopfsteinpflaster	Q3; -1344,4436 -1297,4385
+Fischerhüttenweg: schlechtes Kopfsteinpflaster, schmale Asphaltbankette	Q3 -1344,4436 -1366,4454
+Fischerhüttenweg: teils grober, teils feiner Schotter	Q2 -1366,4454 -1443,4542 -1654,4703
+Fischerhüttenweg: teils grober, teils feiner Schotter	Q2 -1654,4703 -2059,5011
+Fischerhüttenweg: Asphalt	Q0 -2059,5011 -2112,5050 -2218,5133
 Weg am Riemeisterfenn: Waldweg, überwiegend OK	Q1 -578,5245 -104,5283 10,5343 50,5397 67,5404 122,5416 161,5496 213,5582 309,5669 344,5738 325,5925 381,6094 331,6225 394,6368 441,6435
 Umgehungschaussee: fester breiter Waldweg	Q1 1125,7184 1101,6960 1150,6774 1154,6672 1126,6548 1057,6461 917,6301 866,6328 533,6479 441,6435
 Friedrichsgracht: wassergebundene Decke, teilweise Holzbohlen	Q1 10207,12055 10129,12200
 Friedrichsgracht: Kleinsteinpflaster	Q1 10129,12200 10109,12238
-Hüttenweg: relativer guter Waldweg	Q1 -927,6888 -1006,6911 -1241,7017 -1493,6984 -1851,6887
+Hüttenweg: relativer guter Waldweg	Q1 -927,6888 -1006,6911 -1241,7017 -1521,6972 -1854,6898
 Grunewald: teilweise sandig	Q2 -3483,6789 -3418,6747 -3305,6797 -3242,6884 -3133,6948 -2981,6941 -2805,6884 -2668,6862
-Grunewald: teilweise sehr sandig, steile Strecken	Q3 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897
-Grunewald: teilweise sandig	Q2 -2080,6897 -1925,6790
-verlängerte Verbindungschaussee: teilweise sandige Stellen, sonst 20 km/h möglich	Q2 -1112,7891 -1248,7704 -1328,7597 -1851,6887 -1925,6790 -2825,5588
+Grunewald: teilweise sehr sandig, steile Strecken	Q3 -2668,6862 -2581,6834 -2468,6839 -2340,6910
+Grunewald: teilweise sandig	Q3 -2340,6910 -2246,6925 -2095,6918
+Grunewald: teilweise sandig	Q2 -2095,6918 -1934,6804
+verlängerte Verbindungschaussee: teilweise sandige Stellen, sonst 20 km/h möglich	Q2 -1112,7891 -1248,7704 -1328,7597 -1854,6898 -1934,6804 -2600,5888 -2825,5588
 verlängerte Verbindungschaussee: Waldweg, Schotter	Q2 -2825,5588 -3021,5328
 verlängerte Verbindungschaussee: schlechtes Kopfsteinpflaster, sandige Banketten	Q3 -3021,5328 -3093,5223
 verlängerte Verbindungschaussee: Waldweg, Schotter	Q2 -3093,5223 -3605,4536
@@ -1437,7 +1443,8 @@ Maulbronner Ufer: Parkweg	Q1 7161,4110 6904,4162
 (Luckeweg - Hildburghauser Str.): Parkweg	Q1 7531,581 7599,725
 Voigtstr.: Kopfsteinpflaster	Q2 14709,12156 14748,12314
 Voigtstr.: Kopfsteinpflaster	Q2 14748,12314 14776,12418 14798,12502 14801,12517 14814,12626 14832,12755 14835,12801 14836,12826
-Friedrichshaller Str.: Kopfsteinpflaster	Q2 3084,7599 2911,7686 2786,7721 2774,7655
+Friedrichshaller Str.: Kopfsteinpflaster	Q2 3084,7599 2911,7686 2786,7721
+Friedrichshaller Str.: Kopfsteinpflaster	Q2 2786,7721 2774,7655
 Christburger Str.: Kopfsteinpflaster	Q2 11633,14631 11912,14486
 Christburger Str.: Asphalt	Q0 11912,14486 12177,14335
 Pasteurstr.: Asphalt	Q0 12188,14350 12335,14246 12486,14143
@@ -3415,7 +3422,7 @@ Rübezahlstr.: Asphalt	Q1 15024,7083 15058,7115 15115,7128
 Rübezahlstr.: Asphalt	Q0 15115,7128 15136,7106 15222,7162
 Wegastr.: schlechtes Kopfsteinpflaster	Q3 15222,7162 15172,7231
 (Planetenstr. - Am Heidekampgraben): Asphalt	Q0 15172,7231 15204,7236
-Prinzregentenstr.: Verbundsteinpflaster, mit Aufpflasterungen	Q1 5660,8351 5651,8218
+Prinzregentenstr.: Verbundsteinpflaster, mit Aufpflasterungen	Q1 5660,8366 5651,8218
 Schmidt-Ott-Str.: Asphalt	Q0 4010,5888 4115,5804
 Schmidt-Ott-Str.: Kleinsteinpflaster	Q1 4115,5804 4255,5712
 Schmidt-Ott-Str.: Kopfsteinpflaster	Q1 4255,5712 4309,5675 4404,5613
@@ -11005,6 +11012,7 @@ Reinhardtstr. (Tempelhof): schlechtes Kopfsteinpflaster	Q3 9136,6552 9107,6529 9
 (Waldweg): überwiegend asphaltiert, einige wellige Stellen	Q0 24981,2565 25116,2529 25496,2429
 (Genslerstr. - Liebenwalder Str.): Asphalt	Q0 16669,14438 16845,14461
 Klaus-Selmke-Str.: Asphalt	Q0 21130,11384 21275,11547
+Kurfürstendamm: Asphaltschäden	Q0; 5475,10808 5656,10876
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -17185,7 +17193,7 @@ Herbertstr. (Grunewald): Asphalt	Q0 2132,9267 2056,9446
 Herbertstr. (Grunewald): Asphalt	Q0 2165,9155 2183,9101 2282,8869
 Schleinitzstr.: Asphalt	Q0 2183,9101 2059,8954
 Wangenheimstr.: Asphalt	Q0 2585,9653 2603,9639 2592,9419 2576,9132 2568,9010 2559,8833
-Humboldtstr. (Grunewald): Asphalt	Q0 2449,8902 2453,9156 2467,9428 2477,9551 2484,9671
+Humboldtstr. (Grunewald): Asphalt	Q0 2449,8902 2453,9156 2467,9425 2477,9551 2484,9671
 Gillweg: Gehwegplatten	Q0 2585,9653 2484,9671 2394,9714
 Wangenheimsteg: Asphalt	Q0 2585,9653 2628,9702
 Melli-Besse-Anlage: Asphalt	Q0 2628,9702 2664,9744

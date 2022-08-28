@@ -26287,8 +26287,8 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15
 # REMOVED --- #: priority: #A --- #: next_check: 2022-04-20
 	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -1925,6790 -2080,6897
-	2::temp -1925,6790 -1851,6887
+	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
+	2::temp -1934,6804 -1854,6898
 EOF
      },
      { from  => $isodate2epoch->("2021-10-12 20:00:00"), # 1478412000, # 2016-11-06 07:00
@@ -27134,7 +27134,7 @@ EOF
 	2::temp 5957,7773 5807,7771 5809,7712 5636,7709 5636,7734 5632,7821 5630,7875 5517,7869 5511,7841 5636,7734
 	2::temp 6163,7237 6166,7658 6144,7677 6118,7688 5956,7686 5810,7684
 	2::temp 5573,8197 5520,8132 5522,8011 5472,8012 5471,7915
-	2::temp 5660,8351 5651,8218 5631,8141 5820,8117 5824,8035 5631,8011 5570,8011
+	2::temp 5660,8366 5651,8218 5631,8141 5820,8117 5824,8035 5631,8011 5570,8011
 	2::temp 5820,8117 5910,8170 6009,8101
 	2::temp 6409,8026 6373,8083 6341,8174 6313,8254
 	2::temp 6271,7733 6332,7721 6410,7722
@@ -27146,7 +27146,7 @@ EOF
 	2::temp 5651,8218 5730,8207
 	2::temp 5806,7796 5807,7771
 	2::temp 6060,8334 6163,8398 6246,8222 6181,8181 6060,8334 5925,8219 5910,8170 5928,8052 6154,8070 6261,8058 6409,8026 6388,7999 6418,7958 6429,7876 6307,7893 6332,7721
-	2::temp 5913,8415 5917,8351 5831,8358 5806,8350 5762,8335 5660,8351
+	2::temp 5913,8415 5917,8351 5831,8358 5806,8350 5761,8339 5660,8366
 	2::temp 6388,7999 6443,7971 6480,7992 6409,8026
 	2::temp 6437,7968 6489,7908
 EOF
@@ -31349,16 +31349,12 @@ EOF
 EOF
      },
      { from  => 1587963600, # 2020-04-27 07:00
-       until => 1664550000, # 2022-09-30 17:00
+       until => 1661695751, # 1664550000, # 2022-09-30 17:00
        text  => 'Nestorstr.: Bauarbeiten zwischen Westfälische Str. und Paulsborner Str., Ausweichen auf Gehweg, vom 28.04.2020 07:00 Uhr bis 30.09.2022 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147345679',
        data  => <<EOF,
-#: XXX_prog: eigentlich q3-::inwork
-#: add_fragezeichen: Wurden die Bauarbeiten in der Nestorstraße beendet?
-#: also_indoor: traffic (G,H)
-#: last_checked: 2022-05-10 (kartaview)
-#: next_check: 2022-07-27
+# REMOVED (vorfristig beendet) --- #: XXX_prog: eigentlich q3-::inwork --- #: add_fragezeichen: Wurden die Bauarbeiten in der Nestorstraße beendet? --- #: also_indoor: traffic (G,H) --- #: last_checked: 2022-05-10 (kartaview) --- #: next_check: 2022-07-27
 # REMOVED --- #: next_check: 2022-09-30
 	q3::inwork 3348,9806 3340,9700
 EOF
@@ -32315,7 +32311,7 @@ EOF
 #: also_indoor: traffic (H,G)
 #: osm_watch: way id="362719487" version="6"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2022-07-29
+#: last_checked: 2022-08-28
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 EOF
@@ -33915,7 +33911,7 @@ EOF
 EOF
      },
      { from  => 1615158000, # 2021-03-08 00:00
-       until => undef, # $isodate2epoch->("2022-04-30 17:00:00"), # undef, # 1641337200, # 2022-01-05 00:00
+       until => 1661707493, # undef, # $isodate2epoch->("2022-04-30 17:00:00"), # undef, # 1641337200, # 2022-01-05 00:00
        text  => 'Schönholzer Weg: Richtung Süden zwischen Angerweg und Edelweißstr. gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        source_id => 'viz2021:13.374359,52.586234,09.03.2021,07:00',
@@ -33925,11 +33921,7 @@ EOF
 #: source_id: viz2021:13.37418,52.58681,02.08.2022,11:31 (bis 3.8.2022)
 #: source_id: viz2021:13.37418,52.58681,03.08.2022,12:00 (evtl. Umstellung der Baustelle, zwischen Schillerstr. und Friesenstr. Gegenverkehrsregelung bis Ende März 2023, siehe auch Ampeln in der Germanenstr.)
 #: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (dito) (+ Sperrung diverser Einmündungen)
-#: XXX wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (H,B)
-#: last_checked: 2022-05-14
-# REMOVED --- #: check_frequency: 45d
-#: next_check: 2022-08-03
+# REMOVED --- #: XXX wann sind die Bauarbeiten beendet? --- #: also_indoor: traffic (H,B)--- #: last_checked: 2022-05-14 --- #: check_frequency: 45d --- #: next_check: 2022-08-03
 	q4::inwork; 8196,20096 8224,19977 8234,19936
 EOF
      },
@@ -34382,14 +34374,15 @@ EOF
      },
      { from  => 1640991600, # 2022-01-01 00:00
        until => 1672527599, # 2022-12-31 23:59
-       text  => 'Waldschulallee: Bauarbeiten, evtl. gibt es auch für Radfahrer Beeinträchtigungen, von Januar 2022 bis Ende 2022',
+       text  => 'Waldschulallee: Bauarbeiten, Fahrbahn zwischen Am Fliederbusch und Cordesstr. gesperrt, von Januar 2022 bis voraussichtlich Ende 2022',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/westend/c-bauen/erneuerung-der-trinkwasserleitung-dauert-bis-ende-2022_a330884',
        data  => <<EOF,
-#: also_indoor: traffic
+#: also_indoor: traffic (H,G,B)
 #: note: laut rbb nur bis 15.11.2022
 #: next_check: 2022-11-15
-	q4::inwork 1047,10225 1159,10149 1205,10114 1212,10109 1274,10063 1318,10031
+# REMOVED (hier nicht (mehr?) (laut mapillary) ---	q4::inwork 1047,10225 1159,10149 1205,10114 1212,10109 1274,10063
+	q4::inwork 1274,10063 1318,10031
 EOF
      },
      { from  => 1640808198, # 2021-12-29 21:03
@@ -35852,7 +35845,7 @@ EOF
      { from  => undef, # 
        until => undef, # XXX
        # früher: Waldbrand im Grunewald: Kronprinzessinenweg, Wege rund um den Sprengplatz und vermutlich auch weitere Straßen (Havelchaussee, Hüttenweg...) sind gesperrt
-       text  => 'Waldbrand im Grunewald: Kronprinzessinenweg und Wege rund um den Sprengplatz sind vermutlich weiterhin gesperrt, voraussichtlich bis Ende September 2022',
+       text  => 'Waldbrand im Grunewald: Kronprinzessinenweg und Wege rund um den Sprengplatz sind weiterhin gesperrt, voraussichtlich bis Ende September 2022',
        type  => 'gesperrt',
 #       accept_multi_feature_distance => 3000,
        data  => <<EOF,
@@ -35892,26 +35885,28 @@ EOF
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-27 (research) vvv
+#: last_checked: 2022-08-28 (research) vvv
 #: check_frequency: 1d vvv
 #: next_check: 2022-09-30 vvv
-Hüttenweg (westlicher Abschnitt)	2::temp -1851,6887 -1493,6984 -1241,7017 -1006,6911 -927,6888
+#Hüttenweg (westlicher Abschnitt)	2::temp -1854,6898 -1521,6972 -1241,7017 -1006,6911
+Hüttenweg (westlicher Abschnitt)	1::temp -927,6888 -1006,6911
 Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133
-Kronprinzessinenweg (NN)	2::temp -2218,5133 -3296,3686
+Kronprinzessinenweg (NN)	1::temp -3296,3686 -2218,5133
 #Königsweg	2::temp 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888
-Hüttenweg - Havelchaussee	2::temp -2634,6907 -2668,6862 -2581,6834 -2468,6839 -2366,6869 -2230,6909 -2080,6897 -1925,6790
+#Hüttenweg - Havelchaussee	2::temp -2668,6862 -2581,6834 -2468,6839 -2340,6910 -2246,6925 -2095,6918 -1934,6804
 #Verbindungschaussee	2::temp -360,9193 -310,8989 -345,8899 -1112,7891 -1248,7704 -1328,7597
-Verlängerung Verbindungschaussee	2::temp -1328,7597 -1851,6887 -1925,6790 -2825,5588
-#Verlängerung Verbindungschaussee	2::temp -2825,5588 -3021,5328 -3093,5223 -3605,4536
-Fischerhüttenweg	2::temp -2825,5588 -2218,5133 -2112,5050
-#Fischerhüttenweg	2::temp -2112,5050 -1424,4504
-Schwarzer Weg	2::temp -2668,6862 -2632,6789 -2638,6641
+#Verlängerung Verbindungschaussee	2::temp -1328,7597 -1854,6898 -1934,6804
+Verlängerung Verbindungschaussee	2::temp -1934,6804 -2600,5888
+#Verlängerung Verbindungschaussee	2::temp -2600,5888 -2825,5588 -3021,5328 -3093,5223 -3605,4536
+#Fischerhüttenweg	2::temp -2825,5588 -2528,5366
+Fischerhüttenweg	2::temp -2528,5366 -2218,5133
+#Fischerhüttenweg	2::temp -2218,5133 -2112,5050 -2059,5011 -1654,4703 -1443,4542
+#Schwarzer Weg	2::temp -2655,6906 -2668,6862 -2632,6789 -2638,6641
 # weitere Sperrungen im Grunewald möglich (Havelchaussee, Koenigsallee, Hüttenweg)
 #Onkel-Tom-Str.	2::temp 40,5606 -119,5885 -150,6168 -138,6681
 #Koenigsallee	2::temp -138,6681 674,7758
 #Teltower Weg	2::temp -119,5885 -182,5927 -288,6101
-#Hüttenweg	2::temp -138,6681 -739,6838
-Hüttenweg	2::temp -739,6838 -927,6888
+#Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
 #Havelchaussee	2::temp -2774,10345 -3025,10116 -3178,9953 -3412,9755 -3426,9684 -3347,9541 -3213,9425 -3140,9294 -3073,9061 -3283,8739 -3389,8624 -3578,8578 -3615,8496 -3567,8031 -3561,7964 -3536,7856 -3531,7825 -3496,7677 -3355,6874 -3382,6821 -3483,6789 -3530,6781 -3589,6721 -3598,6572 -3606,6407 -3723,6254 -3880,6142 -3944,6034 -4003,5621 -4046,5505 -4072,5227 -3962,5129 -3889,4967 -3807,4794 -3729,4687 -3605,4536 -3490,4212 -3296,3686
 #Kronprinzessinenweg (H)	2::temp -3296,3686 -3680,3160 -3768,3069 -4001,2858
 #Schildhornweg	2::temp -1588,9194 -1484,9175 -1435,9168 -1279,9093

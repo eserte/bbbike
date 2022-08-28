@@ -280,7 +280,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 # 
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
-#: last_checked: 2022-05-31
+#: last_checked: 2022-06-26 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 # REMOVED --- #: valid: 20200821-20211031
@@ -1359,12 +1359,12 @@ Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q3 7531,8848 7563,8871
 Nettelbeckplatz: Fußgänger	q2 8024,15401 7974,15418 7891,15417
 Nettelbeckplatz: Fußgänger	q2 7929,15355 7974,15418
 # REMOVED (hier Radweg) --- Nettelbeckplatz: Fußgänger	q2 7975,15500 7975,15484 7974,15418
-Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5913,8415 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5476,8521
+Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5913,8415 5831,8358 5806,8350 5761,8339 5660,8366 5533,8478 5476,8521
 Volkspark Wilmersdorf: einige Fußgänger	q1- 5917,8351 5831,8358
 zum Volksparksteg: kombinierter Rad- und Fußweg, enge Kurven	q3 5533,8478 5531,8458
 Volksparksteg: kombinierter Rad- und Fußweg	q1 5531,8458 5401,8528 5405,8549
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5469,8524 5405,8549 5331,8581
-Volkspark Wilmersdorf: einige Fußgänger	q1- 5762,8335 5699,8308 5687,8280 5700,8241 5730,8207
+Volkspark Wilmersdorf: einige Fußgänger	q1- 5761,8339 5699,8308 5687,8280 5700,8241 5730,8207
 #: XXX_prog BS (Bordstein an der Stülerstr.; ansonsten muss man wohl auch über Gras schieben, deshalb kann man trotzdem die q4 beibehalten)
 (zur Thomas-Dehler-Str.): Fußgänger, Bordstein	q4 6657,11467 6716,11439
 # REMOVED (?) --- #: by: ADFC-Karte --- Ernststr.: Fußgänger	q2 2488,19520 2553,19524 2689,19544
@@ -4200,6 +4200,8 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: etwas Parkplatzverkehr	q1 17523,9882 17412,99
 (Friedrich-List-Ufer - Hilda-Geiringer-Weg): einige Fußgänger	q1 8119,13396 8174,13397
 (zur Dörpfeldstraße [Nebenstraße]): Straßenbahnhaltestelle, Fußgänger	q3 21129,4217 21126,4221 21071,4189
 Straßenbahnquerung	q3 17422,17288 17424,17292 17414,17299 17421,17314
+#: note: und außerdem "Stadtmöbel" im Weg
+Varziner Platz: einige Fußgänger	q2 5492,7868 5491,7836
 # 
 ######################### User Contributions #################################
 # 
@@ -4484,7 +4486,8 @@ Hessenallee: enge Straße	q1 640,11676 640,11706 769,11770 884,11896
 Pechüler Pfad: eng, Fußgänger	q3 2793,6593 2875,6648
 Pechüler Pfad: Fußgänger	q3 2854,6675 2953,6743
 # REMOVED (keine gesehen) --- Friedrichshaller Str.: Bodenschwellen	q2 2774,7655 2786,7721
-Friedrichshaller Str.: Bodenschwellen	q2 2786,7721 2911,7686 3084,7599
+#: corrected_by: srt (Bodenschwellen, q2 -> ...)
+Friedrichshaller Str.: Aufpflasterungen	q1 2786,7721 2911,7686 3084,7599
 Hechtgraben: eng, Fußgänger, Treppen oder Rampen	q3 3105,5594 3173,5493
 (Weg in d. Kolonie Norderney): Fußgänger	q3 3596,6828 3607,6952 3582,6964
 #: note: südlicher Teil von Ulrike Orlowski:

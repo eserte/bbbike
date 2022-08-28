@@ -212,7 +212,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2022-08-02 vvv
+#: last_checked: 2022-08-28 vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
 #: last_checked ^^^
@@ -258,7 +258,10 @@ Verbundsteinpflaster	RW1;RW1 8947,10956 8901,11011 8747,11194 8720,11226 8631,11
 	RW2;RW2 11443,10394 11671,10402
 der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflichtig	RW1; 11671,10402 11949,10414
 	RW1; 11949,10414 11671,10402
-	RW1;RW1 11949,10414 12212,10440 12274,10436 12328,10442 12401,10461 12545,10496 12621,10516 12731,10547
+	RW1; 11949,10414 12092,10428
+geschützter Radstreifen, mit "Leitboys"	RW4; 12092,10428 12212,10440
+	RW1; 12212,10440 12274,10436 12328,10442 12401,10461 12545,10496 12621,10516 12731,10547
+	RW1; 12731,10547 12621,10516 12545,10496 12401,10461 12328,10442 12274,10436 12212,10440 12092,10428 11949,10414
 	RW1; 12731,10547 12899,10595
 	RW2; 12985,10665 12930,10621 12899,10595 12731,10547
 3m breit, mit Betonbordsteinen von der restlichen Fahrbahn getrennt	RW4; 13206,10651 13178,10623 13082,10634 13015,10659
@@ -284,7 +287,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-08-27 (Ausschilderung fehlt noch) vvv
+#: last_checked: 2022-08-28 (Ausschilderung fehlt noch) vvv
 #: check_frequency: 7d vvv
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 	RW1; 13596,10722 13633,10705
@@ -293,7 +296,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-08-27
+#: last_checked: 2022-08-28
 #: check_frequency: 90d
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
 provisorische Radspur	RW4; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -1205,9 +1208,10 @@ Verbundsteinpflaster	RW1; 4783,8557 4623,8457 4473,8351 4423,8315 4344,8246 4280
 	RW1; 5346,7860 5344,7729 5343,7681 5344,7620 5350,7554
 	RW1; 5350,7554 5353,7617 5353,7680 5353,7730 5346,7860
 	RW1;RW1 5350,7554 5352,7428
-gemeinsamer Geh- und Radweg	RW2; 5352,7428 5364,7330 5397,7205
+Gehwegplatten	RW1; 5352,7428 5357,7391
+gemeinsamer Geh- und Radweg, Gehwegplatten	RW2; 5357,7391 5364,7330 5397,7205
 	RW1; 5397,7205 5364,7330
-Gehweg für Radfahrer frei	RW1; 5364,7330 5352,7428
+Gehweg für Radfahrer frei	RW1; 5364,7330 5357,7391 5352,7428
 	RW1; 5397,7205 5352,7184 5357,6943 5357,6932 5358,6725 5360,6642
 Busspur ist immer gültig	RW5; 5360,6642 5370,6486
 	RW1; 5370,6486 5360,6642 5358,6725 5357,6932 5357,6943 5352,7184 5397,7205
@@ -2047,35 +2051,44 @@ vorhandener Radweg ist abgesperrt	RW5; 7480,7683 7310,7818 7193,7950
 	RW4;RW3 5938,12281 5951,12353
 	RW3;RW4 5951,12353 6025,12494
 	RW4;RW4 8581,10663 8527,10621
-	RW1; 2112,7754 2088,7723 2034,7654 1987,7593 1967,7561 1955,7531 1956,7453 1957,7365 1959,7225 1959,7107 1960,6986 1960,6826 1954,6567 1949,6539 1918,6456 1904,6415
-Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr und Sa 12-18 Uhr	RW1; 1904,6415 1862,6297 1757,5976 1746,5922
-	RW1; 1757,5976 1862,6297 1904,6415
+	RW1; 1967,7561 1987,7593 2034,7654 2088,7723 2112,7754
+	RW1; 2112,7754 2088,7723 2034,7654 1987,7593 1967,7561
+# 
+#: note: Clayallee Richtung Süden
+Gehwegplatten	RW1; 1967,7561 1955,7531 1956,7453 1957,7365 1959,7225 1959,7107 1960,6986 1960,6826 1954,6567 1949,6539 1918,6456 1904,6415 1894,6387
+Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr und Sa 12-18 Uhr	RW1; 1894,6387 1862,6297 1757,5976 1746,5922
+neu asphaltiert	RW1; 1746,5922 1736,5850 1714,5722 1652,5426 1640,5383 1607,5259 1573,5152
+neu asphaltiert, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 1573,5152 1511,4955
+neu asphaltiert	RW1; 1511,4955 1479,4853
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 1479,4853 1462,4802 1450,4766 1447,4757 1441,4741 1411,4654
+für Radfahrer freigegebene Busspur in Mittellage gilt Mo-Fr 6-20 Uhr	RW1; 1411,4654 1370,4547 1304,4334 1297,4311
+alter Asphalt, kein Abstand zu parkenden Autos, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 1297,4311 1283,4260 1254,4170
+alter Asphalt, kein Abstand zu parkenden Autos, für Radfahrer freigegebene Busspur in Mittellage gilt Mo-Fr 6-20 Uhr	RW1; 1254,4170 1240,4126
+Verbundsteinpflaster, kein Abstand zu parkenden Autos, für Radfahrer freigegebene Busspur in Mittellage gilt Mo-Fr 6-20 Uhr	RW1; 1240,4126 1221,4071 1191,3997
+alter Asphalt, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 1191,3997 1159,3915 1139,3876
+welliger Asphalt, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 1139,3876 1070,3741
+welliger Asphalt, für Radfahrer freigegebene Busspur in Mittellage gilt Mo-Fr 6-20 Uhr	RW1; 1070,3741 971,3534
+welliger Asphalt, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 971,3534 935,3430
+welliger Asphalt	RW1; 935,3430 932,3422 856,3188 820,3081
+# 
+#: note: Clayallee Richtung Norden
+welliger Asphalt	RW1; 820,3081 856,3188 932,3422 935,3430 971,3534 1070,3741 1139,3876
+alter Asphalt	RW1; 1139,3876 1159,3915
+alter Asphalt, kein Abstand zu parkenden Autos	RW1; 1159,3915 1191,3997 1221,4071 1240,4126 1254,4170 1283,4260 1297,4311 1304,4334
+	RW1; 1304,4334 1370,4547 1411,4654
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 1411,4654 1441,4741
+	RW2; 1441,4741 1447,4757 1450,4766 1462,4802 1479,4853
+Gehwegplatten	RW1; 1479,4853 1511,4955
+neu asphaltiert	RW1; 1511,4955 1573,5152
+Gehwegplatten	RW1; 1573,5152 1607,5259 1640,5383 1652,5426
+	RW1; 1652,5426 1714,5722 1736,5850 1746,5922 1757,5976 1862,6297 1894,6387 1904,6415
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1033005.php
 #: by: https://abendblatt-berlin.de/2020/12/23/steglitz-zehlendorf-mehr-sicherheit-fuer-radfahrer-an-der-clayallee/
 #: by: https://www.berliner-woche.de/dahlem/c-verkehr/radweg-umbau-abgeschlossen_a297254
 #: note: angrenzender Parkstreifen hat einen Sicherheitsstreifen von 0,75m, um Dooring-Unfälle zu vermeiden
 neu asphaltiert, 2m breit	RW1; 1904,6415 1918,6456 1949,6539 1954,6567 1960,6826
-	RW1; 1960,6826 1960,6986 1959,7107 1959,7225 1957,7365 1956,7453 1955,7531 1967,7561 1987,7593 2034,7654 2088,7723 2112,7754
-neu asphaltiert	RW1; 1746,5922 1736,5850 1714,5722 1652,5426 1640,5383 1607,5259 1573,5152
-neu asphaltiert, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 1573,5152 1511,4955
-neu asphaltiert	RW1; 1511,4955 1479,4853
-	RW1; 1652,5426 1714,5722 1736,5850 1746,5922 1757,5976
-Gehwegplatten	RW1; 1479,4853 1511,4955
-neu asphaltiert	RW1; 1511,4955 1573,5152
-Gehwegplatten	RW1; 1573,5152 1607,5259 1640,5383 1652,5426
-	RW1;RW2 1479,4853 1462,4802 1450,4766 1447,4757 1441,4741
-	RW1; 1441,4741 1411,4654
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 1411,4654 1441,4741
-	RW1; 1411,4654 1370,4547 1304,4334 1297,4311
-alter Asphalt, kein Abstand zu parkenden Autos	RW1; 1297,4311 1283,4260 1240,4126
-Verbundsteinpflaster, kein Abstand zu parkenden Autos	RW1; 1240,4126 1221,4071 1191,3997
-alter Asphalt	RW1; 1191,3997 1159,3915 1139,3876 1159,3915
-alter Asphalt, kein Abstand zu parkenden Autos	RW1; 1159,3915 1191,3997 1221,4071 1240,4126 1283,4260 1297,4311 1304,4334
-	RW1; 1304,4334 1370,4547 1411,4654
-welliger Asphalt	RW1; 1139,3876 1070,3741 971,3534
-welliger Asphalt, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 971,3534 935,3430
-welliger Asphalt	RW1; 935,3430 932,3422 856,3188 820,3081
-welliger Asphalt	RW1; 820,3081 856,3188 932,3422 935,3430 971,3534 1070,3741 1139,3876
+	RW1; 1960,6826 1960,6986 1959,7107 1959,7225 1957,7365 1956,7453 1955,7531 1967,7561
+# 
 	RW4;RW3 9811,16112 10005,16150 10045,16157 10301,16186
 	RW3;RW3 10301,16186 10421,16175 10603,16158 10739,16146
 die letzten 50 Meter sind benutzungspflichtig	RW3; 10739,16146 10982,16121
@@ -3102,10 +3115,7 @@ Radweg fängt 50m vor der Ampel an	RW0; 2076,2626 2123,2803
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 790,2434 772,2538
 Verbundsteinpflaster	RW1;RW1 534,3149 251,3325
 unebener Asphalt	RW1;RW1 251,3325 137,3396 17,3471 -135,3567 -216,3623 -267,3657
-	RW1;RW1 -267,3657 -329,3702 -432,3788 -580,3912
-	RW1;RW1 -580,3912 -762,4054
-	RW1;RW -762,4054 -843,4116 -968,4184
-	RW1;RW1 -968,4184 -1096,4267 -1204,4328 -1245,4351 -1297,4385
+	RW1;RW1 -267,3657 -329,3702 -432,3788 -580,3912 -762,4054 -843,4116 -968,4184 -1096,4267 -1204,4328 -1245,4351 -1297,4385
 Busspur gilt Mo-Fr 14-20 Uhr und Sa 9-14 Uhr	RW5; 4861,5581 4832,5522 4767,5389 4745,5344 4741,5309
 # REMOVED (nicht mehr gesperrt, nicht mehr benutzungspflichtig) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4636 (Sperrung des Radwegs) (Entscheidung der BVV am 16.10.2013) --- #: XXX wird der Radweg nach den Sanierungsarbeiten wieder eröffnet (früher: RW2) oder wird es eine andere Lösung (Busspur?) geben? --- #: last_checked: 2013-12-22 --- #: check_frequency: 100d
 	RW1; 4741,5309 4745,5344 4767,5389 4832,5522
@@ -3304,7 +3314,8 @@ Verbundsteinpflaster	RW1;RW1 15723,6151 15768,6214
 	RW1;RW1 2708,9144 2728,9409 2730,9634
 	RW1;RW1 2388,8852 2449,8902 2568,9010 2674,9111 2708,9144 2829,9259 2947,9367 2998,9408 3127,9522 3220,9598 3340,9700 3427,9771
 	RW1;RW2 2322,8857 2337,9178
-	RW2;RW1 2337,9178 2348,9398 2361,9664
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2337,9178 2348,9388 2361,9664
+	RW1; 2361,9664 2348,9388 2337,9178
 	RW1;RW1 218,6571 297,6541 441,6435
 	RW;RW 441,6435 486,6404 605,6345 736,6217 869,6085
 	RW;RW1 869,6085 884,5974 894,5829 910,5654
@@ -4666,7 +4677,7 @@ Verbundsteinpflaster	RW2;RW8 21108,4725 21065,4957 21060,5043 21056,5108 21025,5
 	RW1; 5578,9629 5598,9612 5618,9607 5642,9613 5648,9642
 	RW1; 5648,9642 5630,9656 5598,9654 5578,9629
 	RW1;RW1 5900,9737 5905,9795
-	RW6;RW6 5651,8218 5660,8351
+	RW6;RW6 5651,8218 5660,8366
 #: note: südliche Seite laut radzeit 3/2006 fertiggestellt vvv
 	RW2;RW1 12382,13097 12585,13118 12711,13150 12786,13185
 #: note ^^^
@@ -5637,7 +5648,7 @@ neu asphaltiert	RW2; 23370,5589 23384,5541 23402,5483
 #: by: andk vvv
 	RW7;RW7 5631,8011 5631,8141
 	RW7;RW7 5631,8141 5651,8218
-	RW7;RW7 5660,8351 5652,8605
+	RW7;RW7 5660,8366 5652,8605
 	RW7;RW7 5635,9018 5633,9263 5627,9362 5618,9607
 #: by: ^^^
 #: by: http://www.rad-spannerei.de/blog/2010/09/08/fahrradstrasse-prinzregentenstrasse/#comment-32010
@@ -6939,7 +6950,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2022-08-23
+#: last_checked: 2022-08-28
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -7276,7 +7287,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="23"
 #: osm_watch: way id="335487059" version="21"
-#: last_checked: 2022-08-23 vvv
+#: last_checked: 2022-08-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-01-01 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312

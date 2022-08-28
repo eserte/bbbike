@@ -6,8 +6,8 @@ Autobahnunterführung ist nur 2,10m hoch	CS 21306,-975 21403,-859
 ausgeschildert als Kleine Lindenstr.	CP2; 21306,-975 21403,-859
 ausgeschildert als Parchwitzer Str..	CP2; 21403,-859 21306,-975
 Gillweg: entlang der Autobahn	CS 2585,9653 2484,9671 2394,9714
-Bismarckplatz: als Hubertusallee ausgeschildert	CS; 2348,9398 2380,9402
-Bismarckplatz: als Caspar-Theyß-Str. ausgeschildert	CP2; 2389,9434 2380,9402
+Bismarckplatz: als Hubertusallee ausgeschildert	CS; 2348,9388 2380,9402
+Bismarckplatz: als Caspar-Theyß-Str. ausgeschildert	CP2; 2396,9427 2380,9402
 als Lützowplatz ausgeschildert	CS; 6873,11011 6824,10904
 als Eichkampstr. ausgeschildert	CS; 693,9129 731,9103
 Richtung Grunewaldturm	CP2; 676,9104 197,9069
@@ -15,18 +15,18 @@ als "Ökoweg" ausgeschildert	CS; 676,9104 383,9305
 Richtung "Friedhof" ausgeschildert	CP2; -3140,9294 -2891,9289
 Richtung Schildhorn	CP2; -1484,9175 -1588,9194
 Richtung Grunewaldturm	CP2; -1484,9175 -1658,9103
-Richtung Havelchaussee	CP2; -2218,5133 -2825,5588
+Richtung Havelchaussee	CP2; -2218,5133 -2528,5366
 Richtung Havelchaussee	CP2; -2825,5588 -3129,5798
 Richtung Havelchaussee	CP2; -3226,5870 -3275,5847
 Richtung Avus	CP2; -3226,5870 -3129,5798
-Richtung Avus	CP2; -2825,5588 -2218,5133
+Richtung Avus	CP2; -2825,5588 -2528,5366
 Richtung Teufelssee	CP2; -3226,5870 -3156,5926
-Richtung Teufelssee/Saubucht	CP2; -2668,6862 -2634,6907
+Richtung Teufelssee/Saubucht	CP2; -2668,6862 -2655,6906
 Richtung Teufelssee	CP2; -2897,8008 -2752,8018
 Richtung Grunewaldturm	CP2; -2897,8008 -3212,8024
 Richtung Teufelssee	CP2; 425,8766 297,8894
 Richtung S-Bhf. Nikolassee	CP2; -2825,5588 -3021,5328
-Richtung S-Bhf. Grunewald	CP2; -2825,5588 -1925,6790
+Richtung S-Bhf. Grunewald	CP2; -2825,5588 -2600,5888
 Richtung S-Bhf.	CP2; -4001,2858 -3956,2787
 Richtung Teufelssee/Saubucht	CP2; -3483,6789 -3418,6747
 ausgeschildert Richtung Breitenbachplatz	CP2; 3346,7369 3397,7333
@@ -800,7 +800,8 @@ Privatstraße	CS 21193,11330 21214,11331
 blaues Straßenschild "Ewaldstr."	CP2; 20685,52 20561,17
 blaues Straßenschild "Klettenberger Str."	CP2; 20555,15 20561,17
 Privatstraße	CS 20694,11811 20708,11918 20715,12040
-Schönegarten: nicht ausgeschildert	CS 7416,10492 7432,10546 7330,10590
+Schönegarten: nicht ausgeschildert	CP2; 7416,10492 7432,10546
+ausgeschildert "Schönegarten 2-10"	CP2; 7330,10590 7432,10546
 (Edeka-Parkplatz - Rheinsteinstr.): Hausdurchfahrt	CS 18880,8689 18865,8740
 Am Karlsbad: Hausdurchfahrt	CP2; 7959,10910 8027,11000
 Am Karlsbad: Hausdurchfahrt	CP2; 8027,11000 7959,10910
