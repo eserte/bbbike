@@ -285,8 +285,8 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: XXX Baumaßnahme 12.15 (Realisierung nach 2011)
 #: last_checked: 2022-08-20 (mapillary)
 #: check_frequency: 120d
-#: osm_watch: way id="82449630" version="21"
-#: osm_watch: way id="32426064" version="14"
+#: osm_watch: way id="82449630" version="23"
+#: osm_watch: way id="32426064" version="15"
 Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,21563 7959,21573 7939,21600 7781,21812 7742,21867 7594,22068 7516,22178 7439,22306 7416,22349
 # 
 # REMOVD --- #: XXX Baumaßnahme B3.4 (Realisierung nach 2011) --- #: XXX außerdem entstehen wohl Ampeln an der Autobahnausfahrt --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5566.html --- #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b109/index.shtml (Baubeginn 2. Halbjahr 2017) --- #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: IV/2017 bis IV/2019) (beidseitige Radwege) --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/bis-2020-soll-die-ueberfuehrung-komplett-erneuert-sein_a169331 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.742008.php (neu gebauter Radweg wird erwähnt) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.820221.php (bis 2.9.2019) --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/bis-2-september-wird-der-naechste-strassenabschnitt-neu-gebaut_a220372 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.842131.php (nördlich der Autobahnbrücke am 5.9.2019 fertig, Rest erst am 08.11.2019) --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/schonerlinder-brucke-b109-bauarbeiten-%C2%B7-vollsperrung-bis-8-november --- #: by: https://www.berliner-woche.de/pankow/c-verkehr/bauarbeiten-an-fahrbahn-sowie-fuss-und-radwegen-bis-november-geplant_a231304 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.871724.php --- #: osm_watch: way id="4484357" version="16" --- #: source_id: 2147342176 --- #: source_id: 2147341532 --- #: source_id: LMS-BR_r_LMS-BR_116482_LMS-BR_72 --- #: source_id: LMS-BR_r_LMS-BR_120876_LMS-BR_72 --- #: source_id: 2147344738 (bis Anfang November 2019) --- #: source_id: 2147345058 (bis Anfang Dezember 2019) --- #: source_id: 2147345213 (bis Mitte Dezember 2019)
@@ -951,6 +951,7 @@ Köpenicker Landstraße - Chris-Gueffroy-Allee	?::projected 16747,6813 16485,6377 
 #: XXX Bd.2
 #: osm_watch: way id="148117201" version="12"
 #: source_id: viz2021:13.552006,52.399468,13.12.2021,08:00 (Gasleitungsbau bis 31.1.2022) (inaktiv)
+#: source_id: viz2021:13.54999,52.399543,30.08.2022,07:00 (Leitungsbau bis 16.9.2022)
 #: last_checked: 2022-04-16 (mapillary)
 #: check_frequency: 240d
 Grünbergallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 20783,-528 20675,-526 20362,-511 20288,-511 20205,-548
@@ -1127,7 +1128,7 @@ Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projecte
 Nalepastr.: Einrichten einer Radverkehrsanlage auf der östlichen Seite	?::projected; 17614,6571 17550,6677 17510,6751 17459,6854 17352,7051 17286,7173
 # 
 #: XXX Osw.13
-#: osm_watch: way id="22749854" version="46"
+#: osm_watch: way id="22749854" version="47"
 #: last_checked: 2022-08-07
 #: check_frequency: 90d
 Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren auf Gehweg frei (Westseite)	?::projected 20280,7749 20307,7689 20316,7637 20323,7529 20340,7468 20393,7404 20510,7325 20616,7292 20653,7289
@@ -1366,15 +1367,16 @@ Falkenseer Chaussee: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Sü
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
 #: XXX während der Bauarbeiten ist der westliche Geh/Radweg komplett gesperrt; Radfahrer sollen die andere Seite benutzen
+#: XXX laut osm ist die Baustelle mittlerweile aufgehoben
 #: source_id: 2147347296 (Leitungsarbeiten bis 29.10.2021)
-#: osm_watch: way id="37769156" version="9"
-#: last_checked: 2022-07-02 (osm) vvv
+#: osm_watch: way id="37769156" version="10"
+#: last_checked: 2022-08-28 (osm) vvv
 #: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2021-10-29 vvv
+#: next_check: 2022-08-28 vvv
 Nauener Str.: Sanierung des Radwegs prüfen	?; -4754,14075 -4748,14237
 #: XXX hier wird gerade gebaut; Radweg ist gesperrt
 Nauener Str.: Sanierung des Radwegs prüfen	?; -4748,14237 -4754,14075 -4759,13992
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -1615,8 +1617,8 @@ Siegfriedstr.: Radstreifen geplant, vielleicht sogar geschützte Radstreifen	?::p
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7739
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/radweg-an-der-marzahner-chaussee-erst-nach-brueckenbau_a227482 (nach Fertigstellung der Rhinstraßenbrücke, mit der Planung wird 2020 begonnen)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10124 (Antrag: Sanierung und Verkehrsberuhigung)
-#: osm_watch: way id="27959240" version="43"
-#: osm_watch: way id="878343305" version="9"
+#: osm_watch: way id="27959240" version="45"
+#: osm_watch: way id="878343305" version="11"
 #: last_checked: 2022-08-27
 #: check_frequency: 120d
 Marzahner Chaussee: Radstreifen geplant	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
@@ -2714,7 +2716,7 @@ Kanalstr.: Bau eines Geh- und Radwegs	?::projected 18111,2135 18101,2164 17928,2
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/02/246-2013-1Anlage1XVII-50aaB-PlanBlatt1-2.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
-#: osm_watch: way id="640313616" version="2"
+#: osm_watch: way id="640313616" version="3"
 #: last_checked: 2022-08-21 (mapillary)
 #: check_frequency: 180d
 Planstraße 9: evtl. Fortsetzung der Regener Str.? Qualität etc?	?::projected 19705,9039 19806,9040 19863,9073 19870,9079 19874,9151
@@ -3045,17 +3047,12 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14270,83
 #: by: https://www.deutsches-architekturforum.de/thread/11524-am-stadthafen-europacity/?postID=658734#post658734 (ca. 150m realisiert)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_19_1149_1212_online.pdf (Widmung als Straßenland; Verkehrsfreigabe voraussichtlich Ende Juni 2022)
 # REMOVED (ist nun der realisierte Abschnitt) --- #: osm_watch: way id="237716440" version="13"
-#: osm_watch: way id="642581102" version="4"
-#: XXX wird zusammen mit dem Otto-Weidt-Platz gebaut
-#: last_checked: 2022-08-12 (architektur-urbanistik)
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2022-06-30
-Uferweg in Bau	?::inwork 7923,14142 7912,14160 7866,14215
-# REMOVED (hier offen) --- Uferweg in Bau	?::inwork 7866,14215 7830,14268 7799,14314
+# REMOVED --- #: osm_watch: way id="642581102" version="4" --- #: XXX wird zusammen mit dem Otto-Weidt-Platz gebaut --- #: last_checked: 2022-08-12 (architektur-urbanistik) --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2022-06-30 --- Uferweg in Bau	?::inwork 7923,14142 7912,14160 7866,14215
+# REMOVED (hier offen) --- Uferweg in Bau	?::inwork 7866,14215 7830,14268 7797,14317
 #: XXX am Speicherhaus --- wie wird die Wegführung hier aussehen?
 #: last_checked: 2022-08-12 (architektur-urbanistik)
 #: check_frequency: 120d
-Uferweg in Bau	?::inwork 7799,14314 7769,14364
+Uferweg in Bau	?::inwork 7797,14317 7769,14364
 #: last_checked: 2022-07-15
 #: check_frequency: 30d
 (Lydia-Rabinowitsch-Str. - Uferweg): Weg mit Kleinsteinpflaster existiert, noch möglicherweise durch Bauzäune abgesperrt	? 7973,13991 8010,14014
@@ -3535,9 +3532,9 @@ Gartenstr. (Biesdorf): wird eventuell noch kürzer werden	?::projected 21193,1133
 #: by: https://berliner-abendblatt.de/wp-content/uploads/2021/10/1-planzeichnung-mit-dem-konzept-entwurf_lH0UKLd.jpg
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1189211.php (Sprengung des Schornsteins)
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/schornstein-weicht-wohnungsbau_a341315
-#: osm_watch: way id="43566318" version="14"
+#: osm_watch: way id="43566318" version="15"
 # REMOVED (gelöscht) --- #: osm_watch: way id="37739269" version="12"
-#: osm_watch: way id="1022558675" version="3"
+#: osm_watch: way id="1022558675" version="4"
 #: XXX Hier sind mittlerweile Bauarbeiten; offiziell "Verbot für Fahrzeuge aller Art, bis auf Anlieger", als Radfahrer kommt man eigentlich noch problemlos vorbei; außerdem nun "Gehweg, Radfahrer frei" im Bereich der Baustelle am Richard-Kolkwitz-Weg
 #: last_checked: 2022-08-21 (mapillary)
 #: check_frequency: 180d
@@ -5410,7 +5407,7 @@ Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 1
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: last_checked: 2022-08-25
-#: check_frequency: 90d
+#: check_frequency: 180d
 #: next_check: 2022-12-23
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
 #: osm_watch: way id="621721786" version="3"
@@ -6556,7 +6553,7 @@ Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 183
 # REMOVED (hier normale Radspuren) --- Kaiser-Wilhelm-Str.: Popup-Radweg in Planung	?::projected 6996,3762 7107,3912
 # 
 #: by: https://www.infravelo.de/projekt/gruenberger-strasse/ (4. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (geänderte URL, siehe unten)
-#: by: http://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert)
+#: by: http://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert)
 #: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruennerger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
@@ -7699,7 +7696,7 @@ Friedhof Segen: Wohngebiet entsteht	?::projected 13581,16968 13522,17021 13687,1
 #: osm_watch: way id="646453312" version="2"
 Arnbrucker Str.	? 19633,8892 19691,8921 19667,8965 19704,8984
 #: XXX Planstraße 3:
-#: osm_watch: way id="640313625" version="2"
+#: osm_watch: way id="640313625" version="3"
 Bischofsmaiser Str.	? 19691,8921 19754,8809 19840,8649
 #: XXX Planstraße 4:
 #: osm_watch: way id="640313641" version="2"
@@ -8658,6 +8655,7 @@ S-Bhf. Zehlendorf: neuer Zugang geplant	?::projected 644,2622 660,2576
 #: by: https://leute.tagesspiegel.de/treptow-koepenick/macher/2022/08/08/233796/auch-der-naechste-brueckenbau-stagniert/ (Lieferung der Behelfsbrücke im Oktober 2022; Fertigstellung der neuen Brücke im 4. Quartal 2023)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-12659.pdf (Behelfsbrücke im 4. Quartal 2022 fertig)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/ (Behelfsumfahrung für das IV. Quartal 2022 geplant)
+#: by: https://www.berliner-woche.de/mueggelheim/c-bauen/wieder-verzoegerung-bei-der-neuen-fahlenbergbruecke_a354938 (Fertigstellung Ende 2023)
 #: source_id: viz2021:13.703966,52.4026,16.08.2021,09:00 (bis 27.8.2021) (inaktiv)
 #: osm_watch: way id="10275794" version="16"
 #: osm_watch: way id="897616703" version="2"

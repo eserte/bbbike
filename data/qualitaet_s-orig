@@ -3845,7 +3845,9 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: XXX wird die Straße hier ausgebaut und asphaltiert?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124 (Anfrage von Juli 2017)
 #: by: https://politik-bei-uns.de/file/597985b41ae6a07d5fb74916 (Antwort: soll teilweise mit einem Asphaltstreifen befestigt werden, erster von drei Bauabschnitten 2018)
-#: osm_watch: way id="47159365" version="15"
+#: osm_watch: way id="47159365" version="17"
+#: osm_watch: way id="1090076934" version="2"
+#: osm_watch: way id="1090076933" version="2"
 #: last_checked: 2022-08-21 (mapillary)
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
@@ -11298,7 +11300,7 @@ Zeppelinplatz: Kleinsteinpflaster	Q1 6794,15553 6884,15456
 Beuth-Hochschule: Verbundsteinpflaster	Q1 6884,15456 6996,15319
 Lydia-Rabinowitsch-Str.: Asphalt	Q0 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 Hedwig-Porschütz-Str.: Asphalt	Q0 7652,14257 7735,14305
-Hedwig-Porschütz-Str.: glatt gepflastert	Q2+ 7735,14305 7757,14318 7802,14250 7781,14238
+Hedwig-Porschütz-Str.: glatt gepflastert	Q2+ 7735,14305 7757,14318 7769,14300 7802,14250 7781,14238
 Hedwig-Porschütz-Str.: Asphalt	Q0 7781,14238 7697,14187
 (Hedwig-Porschütz-Str. - Uferweg): glatt gepflastert	Q2+ 7802,14250 7830,14268
 # REMOVED (wird neu gemacht) --- Gustav-Böß-Str.: Asphalt mit leichten Schäden	Q0- 10673,12434 10772,12515
@@ -11561,9 +11563,11 @@ Nettelbeckplatz: teilweise gepflastert	Q1 7891,15417 7974,15418 8024,15401
 #: next_check_id: SCHARFELANKE-2021
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.715459.php (Umgestaltung)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.806805.php (baulichen Umsetzung ab Anfang 2020)
+#: by: https://nitter.cz/ulid000/status/1563899145861177345#m (Umlaufschranken, halbhohe Bordsteine, Asphalt)
+#: by: https://spandau-bewegt.de/scharfe-lanke/ (BA1: Fertigstellung der Maßnahmen: Ende 2022) (BA2 ist die Anbindung zur Bocksfeldstr.)
 #: XXX was wird sich nach der Umgestaltung ändern? Wird sich die Qualität verbessern?
-#: last_checked: 2022-06-26 (osm)
-#: check_frequency: 60d
+#: last_checked: 2022-08-28 (twitter)
+#: next_check: 2022-12-31
 (Uferweg): welliges Verbundsteinpflaster	Q1- -4245,11400 -4204,11432 -4181,11458 -4106,11519 -4028,11533 -3928,11526 -3828,11491 -3785,11445 -3752,11373
 Havel-Ufer Hohengatow: Asphalt	Q0 -4774,6514 -4689,6661 -4684,6755 -4667,6814 -4624,6872 -4498,7095 -4481,7142 -4488,7200 -4488,7317 -4506,7375 -4508,7456 -4494,7510 -4531,7549 -4539,7643 -4534,7695 -4540,7801 -4778,7791
 Havel-Ufer Hohengatow, unterer Weg: unbefestigter Weg	Q1- -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
@@ -11938,7 +11942,9 @@ Bahndamm - Elsenstr.: unbefestigter Weg	Q2 13953,9372 13923,9405
 (Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8025,13835 8086,13862
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1- 8295,13531 8290,13538 8224,13634
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 8224,13634 8169,13705 8131,13770 8086,13862 8057,13923 8010,14014 7965,14081 7923,14142
-(Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 7866,14215 7830,14268 7799,14314
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1- 7923,14142 7912,14160 7866,14215
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 7866,14215 7830,14268 7797,14317
+(Uferweg - Hedwig-Porschütz-Str.): glatt gepflastert	Q2+ 7797,14317 7769,14300
 (Habichtshorst - Schmetterlingswiesen): Betonplatten	Q0 21592,10656 21674,10701
 (Schmetterlingswiesen, östlicher Weg): große Platten, gut befahrbar	Q0 21457,11188 21483,11129 21514,11058 21601,10864 21642,10773 21674,10701 21727,10582
 An den Grachten: Verbundsteinpflaster	Q1+ 22191,11130 22181,11057 22172,10996 22169,10969 22166,10936 22132,10915

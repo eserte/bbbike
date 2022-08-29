@@ -200,7 +200,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_27_1633_1692_online.pdf (Straßenlandwidmung)
 #: XXX Treppe zum Golda-Meir-Steg kann benutzt werden, wenn die Bauzäune weggeschoben sind
 #: XXX Einfahrt verboten, Anlieger frei -> als osm.highway: service taggen, wenn's fertig ist
-#: osm_watch: way id="642581102" version="4"
+#: osm_watch: way id="642581102" version="5"
 #: last_checked: 2022-08-12 (architektur-urbanistik)
 #: check_frequency: 60d
 #: next_check: 2022-12-31
@@ -610,6 +610,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg,
 #: note: früher "teilweise verwinkelte Wegführung des Radwegs - q1-::inwork;"
 Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321 6228,13324
 #: osm_watch: way id="30195541" version="28"
+#: last_checked: 2022-08-27 (bahninfo-forum)
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: next_check ^^^
 #: check_frequency ^^^
@@ -3955,6 +3956,8 @@ Traberweg: einige Fußgänger	q1 18577,8033 18567,8041 18490,8104 18416,8163 18351
 Campus AF 60: Schranke kann auf Gehweg umfahren werden	q2 18964,11719 18919,11720
 #: note: Fußgängerzone, Radfahrer frei
 Otto-Weidt-Platz: einige Fußgänger	q1 7732,14131 7818,14185 7866,14215
+#: note: Fußgängerzone, Radfahrer frei
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fußgänger	q1 7923,14142 7912,14160 7866,14215
 Teltowkanaluferweg: gemeinsamer Geh- und Radweg	q1 7994,4430 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095 8881,5143 9080,5225 9171,5263 9196,5272
 #: XXX_prog BS an der General-Woyna-Str., etwa 20m südlich ist eine Bordsteinabsenkung
 Humannstr. - General-Woyna-Str.: Fußgänger, Bordstein	q3 4324,18523 4340,18497

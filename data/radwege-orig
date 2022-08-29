@@ -1157,6 +1157,11 @@ neu asphaltiert	RW1; -1746,24219 -1872,24336
 # REMOVED --- #: XXX evtl. wird hier der Gehweg mit "Radfahrer frei" nach den Bauarbeiten ausgewiesen? --- #: last_checked: 2013-10-24
 #: by: mapillary
 Gehweg für Radfahrer frei	RW1; -1872,24336 -1746,24219
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1239464.php (Asphaltierung, voraussichtlich bis Mitte Oktober 2022)
+#: by: https://www.berliner-woche.de/siemensstadt/c-verkehr/bauarbeiten-am-radweg_a356216
+#: by: https://berliner-abendblatt.de/2022/08/29/radweg-paulsternstrasse-wird-ertuechtigt/
+#: XXX Asphaltierung der Radwege
+#: next_check: 2022-10-15
 	RW2;RW2 -344,15200 -343,15113 -315,14933 -284,14738 -278,14532
 unebenes Verbundsteinpflaster	RW1;RW9 449,15654 525,15435 559,15342 613,15195 651,15091 717,14894 741,14827 778,14713 838,14530 842,14518 862,14463 889,14392
 	RW1;RW2 2095,11440 2082,11554
@@ -1669,10 +1674,10 @@ Busspur ist immer gültig	RW5;RW5 9934,12420 9858,12410
 #: next_check_id: ZEUGHAUS-2014
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
 #: source_id: viz2021:13.399226,52.517706,30.05.2022,08:00 (bis 15.8.2022, zwischen Lustgarten - Oberwallstr.) (mittlerweile inaktiv) vvv
-#: source_id: viz2021:13.404803,52.520062,30.05.2022,08:00 (bis 15.8.2022) (mittlerweile bis 29.8.2022)
+#: source_id: viz2021:13.404803,52.520062,30.05.2022,08:00 (bis 15.8.2022) (mittlerweile bis 29.8.2022) (bis 19.9.2022)
 #: last_checked: 2022-08-26 vvv
 #: check_frequency: 21d vvv
-#: next_check: 2022-08-29 vvv
+#: next_check: 2022-09-19 vvv
 provisorische Radspur	RW4; 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506
 provisorische Radspur	RW4; 10176,12506 10155,12494 10063,12438 10024,12431 9984,12426 9934,12420
 #: next_check ^^^
@@ -3282,9 +3287,10 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: 2147345165 (bis Ende 2021)
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
 #: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022)
+#: note: laut rbb bis 15.11.2022
 #: last_checked: 2022-08-14 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2022-08-31 vvv
+#: next_check: 2022-11-15 vvv
 #: priority: #A vvv
 	RW8; 23451,4877 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
 #: by: https://www.bahninfo-forum.de/read.php?9,622793,671456#msg-671456
@@ -6873,7 +6879,7 @@ Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 	RW4; 7714,13223 7759,13246
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX Bauarbeiten der Wasserbetriebe; die Radspur ist nicht mehr befahrbar; laut fritz Bauarbeiten bis 2020-12-31 --- #: XXX asphaltierte Radwege existieren zumindest teilweise, vielleicht auch schon komplett? --- #: last_checked: 2019-06-10 --- #: next_check: 2019-06-10 --- # was: die letzten Meter nur Schutzstreifen	RW4; 18718,8583 18704,8427 ---	RW0; 18718,8583 18704,8427
 neu asphaltiert	RW2; 18737,8686 18727,8634 18718,8583 18704,8427 18718,8583
-	RW6;RW6 7781,14238 7802,14250 7757,14318 7735,14305
+	RW6;RW6 7781,14238 7802,14250 7769,14300 7757,14318 7735,14305
 	RW6;RW6 7930,14060 7973,13991
 #: note: früher (vor 2022) 10km/h
 	RW6;RW6 13554,8101 13633,8036
@@ -7285,8 +7291,8 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: note: laut rbb Einspurigkeit Höhe Lobeckstr. bis 22.10.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
-#: osm_watch: way id="169738742" version="23"
-#: osm_watch: way id="335487059" version="21"
+#: osm_watch: way id="169738742" version="24"
+#: osm_watch: way id="335487059" version="22"
 #: last_checked: 2022-08-28 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-01-01 vvv

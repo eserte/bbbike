@@ -28992,7 +28992,6 @@ EOF
        data  => <<EOF,
 #: source_id: 2147343519 (bis 31.12.2021)
 #: source_id: viz2021:13.468875,52.614511,27.11.2018,09:00 (bis 31.08.2023)
-#: note: laut rbb nur bis 31.08.2022
 #: also_indoor: traffic (G,H,B)
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5735 (bis Ende 2022?)
@@ -30608,10 +30607,11 @@ EOF
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022)
+#: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2022-08-12
 #: check_frequency: 21d
-#: next_check_id: 2022-08-31
+#: next_check: 2022-12-30
 	q4::inwork; 11329,12497 11209,12430
 EOF
      },
@@ -34032,12 +34032,12 @@ EOF
 #: next_check_id: SCHARFELANKE-2021
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: osm_watch: way id="187977779" version="16" vvv
-#: last_checked: 2022-06-26 (osm) vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2022-08-28 (twitter) vvv
+#: next_check: 2022-12-31 vvv
 	2::inwork -3752,11373 -3785,11445 -3828,11491 -3928,11526 -4028,11533 -4106,11519 -4181,11458 -4204,11432 -4245,11400
 	2::inwork -4246,11438 -4204,11432
 	2::inwork -3928,11526 -3909,11596
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
 #: add_fragezeichen ^^^
@@ -34496,22 +34496,22 @@ EOF
 EOF
      },
      { from  => 1614492000, # 2021-02-28 07:00
-       until => $isodate2epoch->("2022-12-31 07:00:00"), # 1672502400, # 2022-12-31 17:00
-       text  => 'Ringstr.: Bauarbeiten, kurze Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, voraussichtlich bis Dezember 2022',
+       until => $isodate2epoch->("2022-12-22 07:00:00"), # 1672502400, # 2022-12-31 17:00
+       text  => 'Ringstr.: Bauarbeiten, kurze Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, voraussichtlich bis 22. Dezember 2022',
        type  => 'handicap',
        source_id => 'viz2021:13.287063,52.432721,01.03.2021,07:00', # mittlerweile nur bis 31.1.2022, aber siehe unten (inaktiv)
        data  => <<EOF,
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022
 #: source_id: viz2021:13.287063,52.432721,31.01.2022,07:00 (bis 31.8.2022, kein Zeitraum für die Gesamtbaumaßnahme mehr) (inaktiv) vvv
 #: source_id: bvg2021:188#BVG296003_0
-#: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022)
-#: source_id: viz2021:13.289248,52.435248,31.01.2022,07:00 (bis 31.8.2022)
+#: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022)
+#: source_id: viz2021:13.289248,52.435248,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022)
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
 #: last_checked: 2022-07-10 vvv
 #: check_frequency: 150d vvv
-#: next_check: 2022-08-31 vvv
+#: next_check: 2022-12-22 vvv
 	q3::inwork 3011,3303 2778,3132
 # REMOVED (hier nicht mehr) ---	q2::inwork 2778,3132 2698,3068 2655,3025 2632,2969 2625,2850
 # REMOVED (hier vermutlich nicht mehr, by mapillary) --- #: note: Länge der Sperrung nur 30m ---	q3::inwork 3507,3654 3375,3559
@@ -34524,7 +34524,7 @@ EOF
 # 
 #: note: bei rbb bis 31.10.2022
 #: last_checked: 2022-07-10 vvv
-#: next_check: 2022-10-31 vvv
+#: next_check: 2022-12-22 vvv
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3059,3339 3184,3427
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3184,3427 3228,3455
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3185,3476 3184,3427
@@ -35880,16 +35880,18 @@ EOF
 #: by: https://nitter.cz/polizeiberlin/status/1562774623414255617#m
 #: by: https://nitter.cz/VIZ_Berlin/status/1562798467298525185#m
 #: by: https://viz.berlin.de/2022/08/sprengplatz-grunewald/?date=20220825 (bis Ende September 2022)
+#: by: https://berliner-abendblatt.de/2022/08/29/vollsperrung-vier-bomben-legen-die-avus-lahm/
 #: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-27&until=&near=
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-28 (research) vvv
+#: last_checked: 2022-08-29 (research) vvv
 #: check_frequency: 1d vvv
 #: next_check: 2022-09-30 vvv
 #Hüttenweg (westlicher Abschnitt)	2::temp -1854,6898 -1521,6972 -1241,7017 -1006,6911
 Hüttenweg (westlicher Abschnitt)	1::temp -927,6888 -1006,6911
+#: osm_watch: way id="50830991" version="22"
 Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133
 Kronprinzessinenweg (NN)	1::temp -3296,3686 -2218,5133
 #Königsweg	2::temp 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888
@@ -36015,16 +36017,18 @@ EOF
 EOF
      },
      { from  => 1661032800, # 2022-08-21 00:00
-       until => 1665439199, # 2022-10-10 23:59
+       until => $isodate2epoch->("2022-10-31 18:00:00"), # 1665439199, # 2022-10-10 23:59
        text  => 'Dorotheenstr. und Georgenstr.: Gleisarbeiten, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung Am Kupfergraben, gesperrt ab Bauhofstr., vom 22. August 2022 bis 10. Oktober 2022',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/08/17/neue-gleise-fuer-die-dorotheenstrasse/ (vom 22. August bis zum 10. Oktober 2022)
 #: by: https://berliner-abendblatt.de/2022/08/21/diese-baustellen-sorgen-fuer-staus/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/neue-gleise-und-weichen_a355298
-#: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00
+#: note: laut rbb ist die Georgenstr. nur bis 5.9.2022 gesperrt
+#: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022)
 Georgenstr.	q4::inwork 9568,12688 9441,12670
-#: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate)
+#: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
+#: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022)
 Dorotheenstr.	q4::inwork 9742,12609 9870,12657
 Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
 EOF
@@ -36084,6 +36088,26 @@ EOF
        source_id => '226502047',
        data  => <<EOF,
 	2::inwork -3475,26523 -3556,26560
+EOF
+     },
+     { from  => 1661749200, # 2022-08-29 07:00
+       until => 1661889600, # 2022-08-30 22:00
+       text  => 'Bahnbrücke S-Bahnhof Grünau: Sperrung, Ausweichsmöglichkeit durch den Bahnhof, am 30. August 2022 von 7 Uhr bis 22 Uhr',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1239737.php',
+       data  => <<EOF,
+#: source_id: viz2021:13.573156,52.413301,30.08.2022,07:00
+	q4::inwork 22162,1067 22092,999
+EOF
+     },
+     { from  => 1658970000, # 2022-07-28 03:00
+       until => 1666969200, # 2022-10-28 17:00
+       text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, vom 29.07.2022 03:00 bis 28.10.2022 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.321852,52.501972,29.07.2022,03:00',
+       data  => <<EOF,
+#: note: Länge des Einbahnstraßenabschnitts nur etwa 50m
+	q3::inwork; 4838,10597 4819,10355
 EOF
      },
     );

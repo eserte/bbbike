@@ -1405,6 +1405,8 @@ Lütticher Str.	1 6716,15310 6628,15411 6522,15532
 Lütticher Str.	1 6539,15548 6649,15427 6736,15328
 #: note: Schranken an beiden Enden ohne gute Umfahrungsmöglichkeit (man könnte das Rad über die Wiese tragen)
 Klaus-Selmke-Str.	2 21130,11384 21275,11547
+# REMOVED (bleibt wohl so) --- #: next_check_id: SCHOENERGARTEN-2022 --- #: XXX Bleibt das so? Am westlichen Ende ist ein Zaun mit Tor, am südlichen Ende ein (ab?)geschlossenes Tor --- # REMOVED --- #: osm_watch: way id="478067706" version="7" --- #: osm_watch: way id="1076760014" version="1" --- #: osm_watch: node id="9873753962" version="1" --- #: last_checked: 2022-08-09 (mapillary) --- #: check_frequency: 90d
+Schönegarten: verschlossene Tore an beiden Enden	2 7416,10492 7432,10546 7330,10590
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -3517,9 +3519,6 @@ Seidelstraßenbrücke: Überqueren wegen eines Gerüsts nicht möglich	3nocross 3570,
 #: check_frequency: 60d
 Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5346 22677,-5418
 # 
-# REMOVED (bleibt wohl so) --- #: next_check_id: SCHOENERGARTEN-2022 --- #: XXX Bleibt das so? Am westlichen Ende ist ein Zaun mit Tor, am südlichen Ende ein (ab?)geschlossenes Tor --- # REMOVED --- #: osm_watch: way id="478067706" version="7" --- #: osm_watch: way id="1076760014" version="1" --- #: osm_watch: node id="9873753962" version="1" --- #: last_checked: 2022-08-09 (mapillary) --- #: check_frequency: 90d
-Schönegarten: an beiden Enden gesperrt	2 7416,10492 7432,10546 7330,10590
-# 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
 #: last_checked: 2022-08-25 vvv
@@ -3865,7 +3864,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-08-23
+#: last_checked: 2022-08-29 (daf)
 #: check_frequency: 60d
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833 9375,12911
 # 
