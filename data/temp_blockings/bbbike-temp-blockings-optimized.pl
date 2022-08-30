@@ -3925,8 +3925,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
-#: XXX keine Bauarbeiten mehr, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-08-23
+#: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
+#: last_checked: 2022-08-30
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4316,7 +4316,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-08-12
+#: last_checked: 2022-08-30
 #: check_frequency: 21d
 #: next_check: 2022-12-30
 	q4::inwork; 11329,12497 11209,12430
@@ -4623,7 +4623,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-08-02 vvv
+#: last_checked: 2022-08-30 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -5697,7 +5697,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => 1664555400
        },
        {
-         'data' => '#: also_indoor: traffic (B)
+         'data' => '#: also_indoor: traffic (B,G)
+#: add_fragezeichen: Sind die Bauarbeiten in der Braillestr. beendet?
 #: last_checked: 2022-07-10
 #: check_frequency: 90d
 #: next_check: 2022-08-31
@@ -5705,7 +5706,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 ',
          'from' => 1652642891,
          'id' => 3552,
-         'text' => 'Braillestr.: Arbeiten der Wasserbetriebe, Fahrbahn gesperrt, voraussichtlich bis August 2022',
+         'text' => 'Braillestr.: Arbeiten der Wasserbetriebe, Fahrbahn gesperrt, voraussichtlich bis August 2022, möglicherweise länger',
          'type' => 'handicap',
          'until' => 1661983200
        },
@@ -5827,19 +5828,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1539528243316985856#m
-#: by: https://nitter.net/pic/orig/media%2FFV2AstdX0AEWnIn.jpg
-	q4::inwork; 10710,18393 10650,18544
-	q4::inwork 10721,18575 10784,18426
-',
-         'from' => 1655798400,
-         'id' => 3573,
-         'source_id' => 'viz2021:13.414144,52.572092,22.06.2022,10:00',
-         'text' => 'Kavalierstr. und Eintrachtstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich,, vom 22.06.2022 10:00 bis 30.08.2022 17:00',
-         'type' => 'handicap',
-         'until' => 1661871600
-       },
+       undef,
        {
          'data' => '#: next_check_id: KWEISENBAHNBRUECKE-2022
 #: by: https://www.koenigs-wusterhausen.de/1013639/Eisenbahnunterfuehrung
@@ -6011,12 +6000,13 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://nitter.cz/VIZ_Berlin/status/1562798467298525185#m
 #: by: https://viz.berlin.de/2022/08/sprengplatz-grunewald/?date=20220825 (bis Ende September 2022)
 #: by: https://berliner-abendblatt.de/2022/08/29/vollsperrung-vier-bomben-legen-die-avus-lahm/
-#: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-27&until=&near=
+#: by: https://berliner-abendblatt.de/2022/08/30/nach-brand-im-grunewald-soll-munition-gesprengt-werden/https://berliner-abendblatt.de/2022/08/30/nach-brand-im-grunewald-soll-munition-gesprengt-werden/
+#: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-30&until=&near=
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-29 (research) vvv
+#: last_checked: 2022-08-30 (research) vvv
 #: check_frequency: 1d vvv
 #: next_check: 2022-09-30 vvv
 #Hüttenweg (westlicher Abschnitt)	2::temp -1854,6898 -1521,6972 -1241,7017 -1006,6911

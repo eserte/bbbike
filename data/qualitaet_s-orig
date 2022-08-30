@@ -1054,7 +1054,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-08-28
+#: last_checked: 2022-08-29
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -12474,7 +12474,8 @@ Bergiusstr. - Grenzallee: asphaltiert	Q0 14150,6609 14137,6658 14179,6714 14179,
 (Campus AF 60): Verbundsteinpflaster	Q1+ 18966,11676 18965,11692 18965,11706 18964,11719
 (Campus AF 60): Verbundsteinpflaster	Q1+ 18965,11692 18984,11719
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7732,14131 7818,14185 7866,14215
-Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7778,14059 7923,14142
+Otto-Weidt-Platz: Asphalt	Q0 7778,14059 7850,14100
+Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7850,14100 7923,14142
 Am Bahnhof Wuhlheide: Betonpflaster	Q0- 20430,7122 20524,7176 20533,7199 20575,7226 20629,7189
 An der Schule [Rad- und Gehweg]: Asphalt	Q0 24747,11524 24768,11616 24759,11666
 Hönower Str.: Asphalt, einige Schäden und Unebenheiten	Q0- 24530,12296 24556,12181 24554,12100 24556,12056 24563,11980 24575,11932
@@ -12605,6 +12606,7 @@ Golda-Meir-Steg: Kleinsteinpflaster	Q1 7861,14133 7899,14157
 Golda-Meir-Steg: glatter Belag	Q0 7899,14157 7962,14198
 Golda-Meir-Steg: Kopfsteinpflaster	Q2 7962,14198 7973,14195
 Golda-Meir-Steg: Kopfsteinpflaster	Q2 7962,14198 7968,14202
+(Golda-Meir-Steg - südliches Otto-Weidt-Platz): Asphalt	Q0 7861,14133 7850,14100
 (Gewerbegebiet Glienicker Weg): Asphalt	Q0 20839,3163 20919,3082 21068,2926
 (Wilhelmine-Duncker-Str. - Grünzug am Falkenberg): wassergebundene Decke	Q1- 21440,300 21435,323
 Wilhelmine-Duncker-Str.: Asphalt	Q0 21487,173 21464,279 21440,300
@@ -12710,6 +12712,7 @@ Grüne Trift: Asphalt	Q0 23416,2808 23370,3024 23338,3173 23298,3295 23231,3480 2
 Kärntener Str.: Asphalt	Q0 6608,8277 6621,8221 6634,8134 6648,8064 6711,7846
 (Uferweg - Heidestr.): Kleinsteinpflaster	Q1- 8057,13923 7997,13892 7910,13848
 (Lydia-Rabinowitsch-Str. - Uferweg): Kleinsteinpflaster	Q1- 7930,14060 7965,14081
+(Lydia-Rabinowitsch-Str. - Uferweg): Kleinsteinpflaster	Q1- 7973,13991 8010,14014
 (Treskowallee - Traberweg): betoniert	Q1 18471,7862 18442,7882
 (Treskowallee - Traberweg): fester Sandweg	Q1- 18442,7882 18356,7944 18260,8041 18222,8103
 (Treskowallee - Traberweg): fester Sandweg mit Schotter	Q2 18222,8103 18130,8386 18116,8424

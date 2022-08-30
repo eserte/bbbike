@@ -10,7 +10,6 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeu
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 (L¸tticher Str. - Luxemburger Str. (¸ber das Gel‰nde der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
-Otto-Weidt-Platz: Bauarbeiten, mˆgliche Engstellen	q3::inwork 7923,14142 7778,14059
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf B¸rgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
 Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork 10263,13594 10302,13525 10324,13459 10350,13376
 Rosenthaler Str./Steinstr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q4::inwork 10302,13525 10318,13528
@@ -26,7 +25,6 @@ Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,124
 Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,12438
 Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
-(zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 (Grunerstr. - Gustav-Bˆﬂ-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10364,11896 10332,11929 10392,11991
@@ -2178,6 +2176,7 @@ Traberweg: einige Fuﬂg‰nger	q1 18577,8033 18567,8041 18490,8104 18416,8163 18351
 (Trautenauer Str. - Liepnitzstr.): einige Fuﬂg‰nger	q1 17838,8611 17873,8578 17912,8515 18037,8420
 Campus AF 60: Schranke kann auf Gehweg umfahren werden	q2 18964,11719 18919,11720
 Otto-Weidt-Platz: einige Fuﬂg‰nger	q1 7732,14131 7818,14185 7866,14215
+Otto-Weidt-Platz: einige Fuﬂg‰nger	q1 7923,14142 7850,14100 7778,14059
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fuﬂg‰nger	q1 7923,14142 7912,14160 7866,14215
 Teltowkanaluferweg: gemeinsamer Geh- und Radweg	q1 7994,4430 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095 8881,5143 9080,5225 9171,5263 9196,5272
 Humannstr. - General-Woyna-Str.: Fuﬂg‰nger, Bordstein	q3 4324,18523 4340,18497
@@ -2251,6 +2250,7 @@ Sokratesweg: einige Fuﬂg‰nger	q2 18514,9552 18604,9535
 Hans-Baluschek-Park: enge Rampe, Fuﬂg‰nger	q2 7252,6080 7278,6101
 (provisorischer Weg zum Golda-Meir-Steg): Fuﬂg‰nger	q3 7818,14185 7861,14133
 Golda-Meir-Steg: Fuﬂg‰nger	q2 7861,14133 7899,14157 7962,14198
+(Golda-Meir-Steg - s¸dlicher Otto-Weidt-Platz): Fuﬂg‰nger	q2 7861,14133 7850,14100
 (Wilhelmine-Duncker-Str. - Gr¸nzug am Falkenberg): schmal, einige Fuﬂg‰nger	q2 21440,300 21435,323
 (Dolgenseestr., Fuﬂg‰ngerzone): Fuﬂg‰nger	q3 17457,10083 17412,9911 17384,9807
 (Gaudystr. - Sonneberger Weg): einige Fuﬂg‰nger, Bordstein	q4 10547,15586 10542,15609
@@ -2315,6 +2315,7 @@ Fenchelweg: enge Straﬂe	q1 15410,3179 15500,3299 15611,3448 15674,3528 15732,360
 (KGA Alt-Hellersdorf - Neuruppiner Str.): einige Fuﬂg‰nger	q2 23263,15162 23257,15223
 (KGA Alt-Hellersdorf - Alt-Hellersdorf): einige Fuﬂg‰nger	q1 23271,15164 23285,15104 23283,15061
 (Lydia-Rabinowitsch-Str. - Uferweg): einige Fuﬂg‰nger	q1 7930,14060 7965,14081
+(Lydia-Rabinowitsch-Str. - Uferweg): einige Fuﬂg‰nger	q1 7973,13991 8010,14014
 (Treskowallee - Traberweg): Rampe	q4 18471,7862 18442,7882
 (Treskowallee - Traberweg): einige Fuﬂg‰nger	q1 18442,7882 18356,7944 18260,8041 18222,8103 18130,8386 18116,8424
 (‹derseestr - Weg an der KGA Stallwiese): einige Fuﬂg‰nger	q1 18135,8404 18130,8386

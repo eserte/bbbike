@@ -60,16 +60,16 @@ Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2022-08-26
+#: last_checked: 2022-08-30
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
 # 
-#: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022) (bis 31.8.2022)
+#: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022) (bis 31.8.2022) (bis 15.9.2022)
 #: source_id: viz2021:13.42544,52.52334,17.11.2021,07:00 (Engstelle) (inaktiv)
-#: last_checked: 2022-08-21 vvv
+#: last_checked: 2022-08-30 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-08-31 vvv
+#: next_check: 2022-09-15 vvv
 # REMOVED --- #: valid: -20220730 vvv
 Mollstr./Büschingstr.	F::inwork 11913,13077
 Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081
@@ -3132,7 +3132,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog Anforderungsampel
 #: osm_watch: node id="5931765487" version="5"
 #: osm_watch: node id="5931765488" version="5"
-#: last_checked: 2022-08-26
+#: last_checked: 2022-08-30
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 
@@ -3484,7 +3484,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: CHAUSSEE-2020
 #: osm_watch: node id="26748289" version="9"
-#: last_checked: 2022-08-20 (mapillary)
+#: last_checked: 2022-08-30
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-07-31
 	X::inwork 8336,14586
@@ -3496,7 +3496,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2022-08-23
+#: last_checked: 2022-08-30
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 

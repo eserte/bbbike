@@ -18,7 +18,8 @@
 # 
 #: next_check_id: MARKGRAFENDAMM-2022
 #: note: Stau gesehen: 2022-08-24 gegen 13:00, 2022-08-25 gegen 14:30, 2022-08-27 gegen 17:30
-#: last_checked: 2022-08-27
+#: note: keinen Stau gesehen: 2022-08-29 gegen 18:10
+#: last_checked: 2022-08-29
 #: check_frequency: 90d
 #: next_check: 2023-03-15
 	Jam; 14641,10552 14608,10409 14558,10264
@@ -70,7 +71,7 @@ Karl-Marx-Str.	Jam; 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
 # 
 #: next_check_id: FRANZOESISCHE-2018 vvv
 #: source_id: 2147343056 (bis 30.06.2021) vvv
-#: last_checked: 2022-08-23 (mapillary) vvv
+#: last_checked: 2022-08-30 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -128,6 +129,7 @@ Modersohnstr. (Richtung Süden)	Jam; 14011,10812 13919,10583
 # REMOVED (in letzter Zeit nicht mehr beobachtet) --- #: note: Stau eher abends --- #: tempex: rush_hour_evening --- Modersohnstr. Richtung Norden	Jam; 13919,10583 14011,10812
 # 
 Torstr. (vor Schönhauser Tor)	Jam; 10898,13632 10741,13685
+Torstr. (vor Prenzlauer Tor)	Jam; 10898,13632 11111,13518
 # 
 # REMOVED (nicht mehr relevant seitdem es die Radspur gibt) --- Skalitzer Str. vor Kottbusser Tor	Jam; 11117,10326 11130,10326 11316,10372 11335,10375
 # REMOVED (nicht mehr relevant seitdem es die Radspur gibt) --- Gitschiner Str. vor Lindenstr.	Jam; 10122,10294 9948,10280 9873,10285
