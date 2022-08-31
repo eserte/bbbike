@@ -61,11 +61,11 @@ Berliner Allee: Gleisbauarbeiten	Jam; 14619,16551 14610,16522 14556,16391 14499,
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: last_checked: 2022-06-17 (mapillary) vvv
-#: check_frequency: 180d vvv
-#: next_check: 2022-09-01 vvv
+#: check_frequency: 120d vvv
+# REMOVED --- #: next_check: 2022-09-01 vvv
 Karl-Marx-Str.	Jam; 12330,8636 12494,8501 12545,8449 12562,8432 12582,8408 12598,8390
 Karl-Marx-Str.	Jam; 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -130,6 +130,7 @@ Modersohnstr. (Richtung Süden)	Jam; 14011,10812 13919,10583
 # 
 Torstr. (vor Schönhauser Tor)	Jam; 10898,13632 10741,13685
 Torstr. (vor Prenzlauer Tor)	Jam; 10898,13632 11111,13518
+Torstr.	Jam; 9917,13741 10177,13766
 # 
 # REMOVED (nicht mehr relevant seitdem es die Radspur gibt) --- Skalitzer Str. vor Kottbusser Tor	Jam; 11117,10326 11130,10326 11316,10372 11335,10375
 # REMOVED (nicht mehr relevant seitdem es die Radspur gibt) --- Gitschiner Str. vor Lindenstr.	Jam; 10122,10294 9948,10280 9873,10285
@@ -229,13 +230,13 @@ Märkisches Ufer	Jam; 11111,12027 11160,12071 11275,12055 11325,12021
 #: note: nachmittags, aber nicht immer
 Krausenstr.	Jam; 10001,11577 10176,11593
 # 
-Torstr.	Jam; 9917,13741 10177,13766
-# 
 # REMOVED --- #: note: nachmittags werktags
 #: note: vermutlich nachmittags vor Ferienbeginn oder langen Wochenenden
 #: note: auf Berliner Seite gibt's keine Gehwege, so dass ein Umfahren schwierig ist
 #: note: gesehen: 2021-08-13 gegen 15:20 Uhr; 2022-06-03 gegen 16:00 Uhr (per Verkehrslagekarte, Freitag vor Pfingsten)
 Lindenberger Str./Wartenberger Str.	Jam; 18515,20587 18593,20823 18591,20898 18585,20964 18293,21340 18218,21566 18157,21750 18125,21812 18088,21912
+# 
+Wexstr.	Jam; 5522,8011 5472,8012 5357,8013
 # 
 ######################################################################
 # Unconfirmed (too few data)

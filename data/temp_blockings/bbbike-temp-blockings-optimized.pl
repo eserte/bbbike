@@ -748,7 +748,33 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20201002
+#: by: https://twitter.com/VIZ_Berlin/status/1312229648558850048
+#: by: https://pbs.twimg.com/media/EjX56WOWoAIPRUg?format=png&name=900x900
+#: by: https://www.berlin.de/events/4531106-2229501-schoeneberger-kuerbisfest.html (geplant für 2.+3.10.2021)
+#: by: https://www.eventbrite.com/e/22-schoneberger-kurbisfest-tickets-165249199805
+	2::temp 7001,9291 7012,9222 7035,9161 7101,9027 7201,8870
+	2::temp 6945,9142 7035,9161
+	2::temp 6975,8944 7101,9027 7308,9163
+	2::temp 7012,9222 7124,9226
+',
+         'from' => 1664528400,
+         'id' => 731,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Schöneberger Kürbisfest, Akazien- und Belziger Str. gesperrt, 01.10.2022 bis 02.10.2022',
+         'type' => 'gesperrt',
+         'until' => 1664747999
+       },
        undef,
        undef,
        undef,
@@ -2494,7 +2520,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -4313,7 +4339,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="194962398" version="14"
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
-#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022)
+#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2022-08-30
@@ -4817,23 +4843,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/saison-startet_a311283 (und die anderen neuen Spielstraßen in FH-KB)
-#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen
-#: by: https://fixmyberlin.de/friedrichshain-kreuzberg/spielstrassen/kieze
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
-#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/neun-spielstrassen-im-sommer_a343397
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10412 (allgemein zu temporären Spiel- und Nachbarschaftsstraßen)
-# REMOVED --- #: XXX Spielstraße wurde verstetigt; genaue Geltungszeiten? --- #: next_check: 2022-05-24
-	q4::temp::play 14798,12502 15005,12443
-',
-         'from' => 1653948000,
-         'id' => 3367,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1084386.php',
-         'text' => 'Bänschstr.: zwischen Voigtstr. und Pettenkoferstr. sonntags zwischen 15 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 01.06. bis 31.08., außer in den Sommerferien',
-         'type' => 'handicap',
-         'until' => 1661961600
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198000.php
 # REMOVED --- #: XXX wird diese Spielstraße verstetigt? --- #: last_checked: 2021-05-13 --- #: next_check: 2022-05-17
@@ -5138,9 +5148,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1617573600,
          'id' => 3475,
          'source_id' => 'LS/723-P/20/136',
-         'text' => 'Bamme - Rathenow: Brückenneubau, Sperrung vom 06.04.2021 bis 08.09.2022',
+         'text' => 'Bamme - Rathenow: Brückenneubau, Sperrung vom 06.04.2021 bis 30.09.2022',
          'type' => 'gesperrt',
-         'until' => 1662674400
+         'until' => 1664575199
        },
        undef,
        undef,
@@ -5696,20 +5706,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1664555400
        },
-       {
-         'data' => '#: also_indoor: traffic (B,G)
-#: add_fragezeichen: Sind die Bauarbeiten in der Braillestr. beendet?
-#: last_checked: 2022-07-10
-#: check_frequency: 90d
-#: next_check: 2022-08-31
-	q4::inwork 4512,5199 4477,5250 4430,5324
-',
-         'from' => 1652642891,
-         'id' => 3552,
-         'text' => 'Braillestr.: Arbeiten der Wasserbetriebe, Fahrbahn gesperrt, voraussichtlich bis August 2022, möglicherweise länger',
-         'type' => 'handicap',
-         'until' => 1661983200
-       },
+       undef,
        undef,
        {
          'data' => '#: by: mapillary
@@ -5884,7 +5881,16 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::inwork 47334,21218 47192,21608 47072,21650 46672,21791 46264,21879 46072,21966
+',
+         'from' => 1657094400,
+         'id' => 3586,
+         'source_id' => '226400344',
+         'text' => 'Strauberg - Klosterdorf: Bauarbeiten, Sperrung der Straße, 07.07.2022 10:00 Uhr bis 30.09.2022',
+         'type' => 'gesperrt',
+         'until' => 1664575199
+       },
        undef,
        undef,
        {
@@ -5936,7 +5942,16 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'type' => 'gesperrt',
          'until' => 1672495200
        },
-       undef,
+       {
+         'data' => '	2::inwork 42833,41088 42225,41215 41992,41263 39354,41395
+',
+         'from' => 1653804000,
+         'id' => 3594,
+         'source_id' => '226400817',
+         'text' => 'Falkenberg: K6431 von Gersdorf bis Ackermannshof Deckensanierung, Sperrung der Straße, bis 09.09.2022',
+         'type' => 'gesperrt',
+         'until' => 1662760799
+       },
        {
          'data' => '#: by: https://nitter.it/VIZ_Berlin/status/1552156830029185024#m
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllwVlhWTFh3QU11UF9MLmpwZw== (Korrektur)
@@ -6006,7 +6021,7 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-30 (research) vvv
+#: last_checked: 2022-08-31 (research) vvv
 #: check_frequency: 1d vvv
 #: next_check: 2022-09-30 vvv
 #Hüttenweg (westlicher Abschnitt)	2::temp -1854,6898 -1521,6972 -1241,7017 -1006,6911
@@ -6210,17 +6225,7 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
          'type' => 'gesperrt',
          'until' => 1732719600
        },
-       {
-         'data' => '#: source_id: viz2021:13.573156,52.413301,30.08.2022,07:00
-	q4::inwork 22162,1067 22092,999
-',
-         'from' => 1661749200,
-         'id' => 3614,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1239737.php',
-         'text' => 'Bahnbrücke S-Bahnhof Grünau: Sperrung, Ausweichsmöglichkeit durch den Bahnhof, am 30. August 2022 von 7 Uhr bis 22 Uhr',
-         'type' => 'handicap',
-         'until' => 1661889600
-       },
+       undef,
        {
          'data' => '#: note: Länge des Einbahnstraßenabschnitts nur etwa 50m
 	q3::inwork; 4838,10597 4819,10355
@@ -6231,6 +6236,18 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
          'text' => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, vom 29.07.2022 03:00 bis 28.10.2022 17:00',
          'type' => 'handicap',
          'until' => 1666969200
+       },
+       {
+         'data' => '#: add_fragezeichen: Ist der Uferweg tatsächlich gesperrt?
+#: osm_watch: way id="147686211" version="9"
+#: osm_watch: way id="481651814" version="4"
+	2::inwork 6882,11061 6920,11064 7142,11145
+',
+         'from' => undef,
+         'id' => 3616,
+         'text' => 'Herkulesufer: Neubau Bauhaus-Archiv, Uferweg möglicherweise gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

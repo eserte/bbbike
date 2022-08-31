@@ -6320,11 +6320,11 @@ EOF
 	2::inwork 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589
 EOF
      },
-     { from  => $isodate2epoch->("2021-10-01 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-10-03 23:59:59"),
+     { from  => $isodate2epoch->("2022-09-30 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-10-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 9]],
-       text  => 'Schöneberger Kürbisfest, Akazien- und Belziger Str. gesperrt, 02.10.2021 bis 03.10.2021',
+       text  => 'Schöneberger Kürbisfest, Akazien- und Belziger Str. gesperrt, 01.10.2022 bis 02.10.2022',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.ms-event-agentur.com/seite22.html?date=20201002
@@ -30607,7 +30607,7 @@ EOF
 #: osm_watch: way id="194962398" version="14"
 #: XXX mittlerweile "Einfahrt verboten"-Schilder am östlichen Ende
 #: source_id: 2147347291 (Kraneinsatz bis 18.6.2021)
-#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022)
+#: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2022-08-30
@@ -34123,8 +34123,8 @@ EOF
 EOF
      },
      { from  => 1617573600, # 2021-04-05 00:00
-       until => 1662674400, # 2022-09-09 00:00
-       text  => 'Bamme - Rathenow: Brückenneubau, Sperrung vom 06.04.2021 bis 08.09.2022',
+       until => $isodate2epoch->("2022-09-30 23:59:59"), # 1662674400, # 2022-09-09 00:00
+       text  => 'Bamme - Rathenow: Brückenneubau, Sperrung vom 06.04.2021 bis 30.09.2022',
        type  => 'gesperrt',
        source_id => 'LS/723-P/20/136',
        data  => <<EOF,
@@ -35684,8 +35684,8 @@ EOF
 EOF
      },
      { from  => 1657094400, # 2022-07-06 10:00
-       until => 1660917600, # 2022-08-19 16:00
-       text  => 'Strauberg - Klosterdorf: Bauarbeiten, Sperrung der Straße, 07.07.2022 10:00 Uhr bis 19.08.2022 16:00 Uhr',
+       until => $isodate2epoch->("2022-09-30 23:59:59"), # 1660917600, # 2022-08-19 16:00
+       text  => 'Strauberg - Klosterdorf: Bauarbeiten, Sperrung der Straße, 07.07.2022 10:00 Uhr bis 30.09.2022',
        type  => 'gesperrt',
        source_id => '226400344',
        data  => <<EOF,
@@ -35786,8 +35786,8 @@ EOF
 EOF
      },
      { from  => 1653804000, # 2022-05-29 08:00
-       until => 1660917600, # 2022-08-19 16:00
-       text  => 'Falkenberg: K6431 von Gersdorf bis Ackermannshof Deckensanierung, Sperrung der Straße, bis 19.08.2022 16:00 Uhr',
+       until => $isodate2epoch->("2022-09-09 23:59:59"), # 1660917600, # 2022-08-19 16:00
+       text  => 'Falkenberg: K6431 von Gersdorf bis Ackermannshof Deckensanierung, Sperrung der Straße, bis 09.09.2022',
        type  => 'gesperrt',
        source_id => '226400817',
        data  => <<EOF,
@@ -35889,7 +35889,7 @@ EOF
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-30 (research) vvv
+#: last_checked: 2022-08-31 (research) vvv
 #: check_frequency: 1d vvv
 #: next_check: 2022-09-30 vvv
 #Hüttenweg (westlicher Abschnitt)	2::temp -1854,6898 -1521,6972 -1241,7017 -1006,6911
@@ -36111,6 +36111,17 @@ EOF
        data  => <<EOF,
 #: note: Länge des Einbahnstraßenabschnitts nur etwa 50m
 	q3::inwork; 4838,10597 4819,10355
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Herkulesufer: Neubau Bauhaus-Archiv, Uferweg möglicherweise gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: add_fragezeichen: Ist der Uferweg tatsächlich gesperrt?
+#: osm_watch: way id="147686211" version="9"
+#: osm_watch: way id="481651814" version="4"
+	2::inwork 6882,11061 6920,11064 7142,11145
 EOF
      },
     );
