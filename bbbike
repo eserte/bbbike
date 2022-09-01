@@ -5895,6 +5895,7 @@ sub define_item_attribs {
 	 'sperre0' => 'red',	# Tragen
 	 'sperre1' => 'blue',	# Einbahnstraßen
 	 'sperre1s' => '#b0b0ff',  # Einbahnstraßen (nur mit "einbahn-strict")
+	 'sperre1no' => 'blue', # Einbahnstraßen temporär offen
 	 'sperre2' => 'red',	# voll gesperrt
 	 'sperre2s' => '#ffb0b0',  # voll gesperrt (nur mit "sperre-strict")
 	 'sperre3' => 'red',	# Wegführung gesperrt
@@ -6044,7 +6045,7 @@ sub define_item_attribs {
 	 'e'        => [1, 2, 3, 4, 6, 10],
 	 #   'sperre0'  => [3, 5, 7, 9, 11,15],
 	 'sperre0'  => [1, 2, 2, 2, 3, 3],
-	 'sperre1'  => [0, 0, 2, 3, 4, 6],
+	 'sperre1'  => [0, 0, 2, 3, 4, 6], # also for 1s and 1no
 	 'sperre2'  => [0, 0, 2, 3, 5, 8],
 	 'sperre3'  => [0, 0, 1, 2, 4, 6],
 	 'sperre3nocross' => [0, 0, 1, 1, 2, 3],
@@ -6060,7 +6061,7 @@ sub define_item_attribs {
     foreach (qw/NN N NH H HH B BAB/) {
 	$line_width{"l-$_"} = [@{ $line_width{"s-$_"}}];
     }
-    foreach (qw/sperre1s/) {
+    foreach (qw/sperre1s sperre1no/) { # only needed for scale_width
 	$line_width{$_} = [@{ $line_width{"sperre1"}}];
     }
     foreach (qw/sperre2s/) {
@@ -6117,7 +6118,7 @@ sub define_item_attribs {
 	 'sperre2'  => [0, 0, 3, 4, 6, 8],
 	 'default'  => [2, 3, 4, 5, 7, 10],
 	);
-    foreach (qw/sperre1s/) {
+    foreach (qw/sperre1s sperre1no/) { # only needed for scale_width
 	$line_length{$_} = [@{ $line_length{"sperre1"}}];
     }
     foreach (qw/sperre2s/) {
@@ -10765,6 +10766,7 @@ sub plot_sperre {
 	my %type2cat =
 	    (StrassenNetz::BLOCKED_ONEWAY()        => "sperre1",
 	     StrassenNetz::BLOCKED_ONEWAY_STRICT() => "sperre1s",
+	     '1no'                                 => "sperre1no",
 	     StrassenNetz::BLOCKED_COMPLETE()      => "sperre2",
 	     StrassenNetz::BLOCKED_COMPLETE_STRICT() => "sperre2s",
 	     StrassenNetz::BLOCKED_CARRY()         => "sperre0",
@@ -10775,6 +10777,8 @@ sub plot_sperre {
 	     ($width1 && $length1 ? $category_color{'sperre1'} : undef),
 	     StrassenNetz::BLOCKED_ONEWAY_STRICT() =>
 	     ($width1 && $length1 ? $category_color{'sperre1s'} : undef),
+	     '1no' =>
+	     ($width1 && $length1 ? $category_color{'sperre1no'} : undef),
 	     StrassenNetz::BLOCKED_COMPLETE()      =>
 	     ($width2 && $length2 ? $category_color{'sperre2'} : undef),
 	     StrassenNetz::BLOCKED_COMPLETE_STRICT() =>
@@ -11009,14 +11013,15 @@ sub plot_sperre {
 		    my($xm,$ym) = (int(($x2-$x1)/2+$x1), int(($y2-$y1)/2+$y1));
 
 		    if ($cat eq StrassenNetz::BLOCKED_ONEWAY ||
-			$cat eq StrassenNetz::BLOCKED_ONEWAY_STRICT) {
+			$cat eq StrassenNetz::BLOCKED_ONEWAY_STRICT ||
+			$cat eq '1no') {
 			my $alpha = atan2($y2-$y1, $x2-$x1);
 			my($xd,$yd) = ($length1*cos($alpha),
 				       $length1*sin($alpha));
 			$c->createLine($xm+$xd, $ym+$yd, $xm-$xd, $ym-$yd,
 				       -fill => $type2fill{$cat},
 				       -width => $width1,
-				       -arrow => 'last',
+				       -arrow => ($cat eq '1no' ? 'both' : 'last'),
 				       -arrowshape => [4,$arrow1_delta+3,$arrow1_delta],
 				       -tags => $tags,
 				      );
@@ -16445,7 +16450,7 @@ sub scale_width {
 	    rw
 	    w-W w-W0 w-W1 w-W2 w-W-out w-W0-out w-W1-out w-W2-out wr
 	    l l-out u b r pp p z g gP gD gBO fz
-	    sperre0 sperre1 sperre1s sperre2 sperre2s)) {
+	    sperre0 sperre1 sperre1s sperre1no sperre2 sperre2s)) {
 	eval {
 	CHANGE: {
 		my $new_width = get_line_width($type, $scale);
@@ -16473,7 +16478,7 @@ sub scale_width {
 	    warn "Error while configuring $type in scale_width: $@";
 	}
     }
-    foreach my $sperre_type (qw(sperre1 sperre1s sperre2 sperre2s)) {
+    foreach my $sperre_type (qw(sperre1 sperre1s sperre1no sperre2 sperre2s)) {
 	my $new_width = get_line_width($sperre_type);
 	my $old_width = get_line_width($sperre_type, $old_scale);
 	if ($new_width != $old_width) {
