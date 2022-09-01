@@ -2437,14 +2437,14 @@ Britzer Damm	H 12576,6374 12588,6337 12595,6299 12597,6293 12618,6207 12628,6166
 Lahnstr.	H 13085,6925 13265,6972 13336,6986 13500,7018 13627,7047 13891,7107
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: priority: #A vvv
-#: next_check: 2022-12-31 vvv
-#: valid: -20221231
+#: next_check: 2023-06-30 vvv
+#: valid: -20230630
 Lahnstr.	N 13891,7107 13928,7106 13970,7105 14011,7103
-#: valid: !-20221231
+#: valid: !-20230630
 Lahnstr.	H 13891,7107 13928,7106 13970,7105 14011,7103
-#: valid: -20221231
+#: valid: -20230630
 Neuköllnische Allee	N 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
-#: valid: !-20221231
+#: valid: !-20230630
 Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: next_check ^^^
 #: priority ^^^
@@ -2455,10 +2455,9 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.777571.php
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
-#: XXX bis Ende 2022
 #: last_checked: 2022-07-06
 #: check_frequency: 90d
-#: next_check: 2022-12-31 
+#: next_check: 2023-06-30
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
@@ -2623,10 +2622,10 @@ Straße 12 (Neukölln)	N 13882,6674 13881,6634 13915,6592
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: last_checked: 2022-08-05 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-12-31 vvv
-#: valid: 20140224-20221231
+#: next_check: 2023-06-30 vvv
+#: valid: 20140224-20230630
 Naumburger Str.	H 13265,6972 13520,6583
-#: valid: !20140224-20221231
+#: valid: !20140224-20230630
 Naumburger Str.	N 13265,6972 13520,6583
 #: next_check ^^^
 #: check_frequency ^^^

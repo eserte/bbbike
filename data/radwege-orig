@@ -44,7 +44,8 @@ asphaltiert	RW1; 9227,8890 9229,8785
 neu asphaltiert, etwas breiter	RW1; 9248,9350 9283,9487 9334,9670
 Verbundsteinpflaster	RW1; 9334,9670 9387,9804 9444,9919 9448,10014 9416,10196
 	RW1; 9416,10196 9448,10014 9444,9919 9387,9804 9334,9670 9283,9487 9248,9350
-Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW1; 9229,8785 9272,8781 9395,8726
+#: historical_note: früher (bis Sommer 2022?) für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr
+Gehwegplatten	RW1; 9229,8785 9272,8781 9395,8726
 Gehwegplatten, ordentlich verlegt	RW1; 9395,8726 9570,8715
 Gehwegplatten	RW1; 9570,8715 9801,8683
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt 5-19 Uhr	RW1; 9801,8683 9570,8715 9395,8726 9272,8781 9229,8785
@@ -301,8 +302,10 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id: STRALAUER-2019
+#: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede
 #: last_checked: 2022-08-31
 #: check_frequency: 90d
+#: next_check: 2022-09-30
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
 provisorische Radspur	RW4; 13919,10583 13986,10549 14103,10489 14218,10430
 gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14218,10430 14405,10340 14558,10264
@@ -1047,7 +1050,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-08-27 vvv
+#: last_checked: 2022-09-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1839,7 +1842,7 @@ alter Asphalt, kein Unterstreifen gegen parkende Autos	RW1; 18010,7133 18225,700
 	RW3; 19957,5941 19759,6049 19594,6155 19578,6165 19405,6276 19276,6359 19245,6379 18948,6578 18771,6699 18492,6893 18404,6946 18225,7004
 #: note: Radspur wird auf der Nebenfahrbahn geführt
 die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,7133
-	RW0;RW1 9395,8726 9364,8640 9321,8607
+Asphalt mit einigen Brüchen	RW1; 9321,8607 9364,8640 9395,8726
 	RW3;RW3 13821,9340 13849,9310
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 # 
@@ -2378,7 +2381,7 @@ Radspur zwischen Fahrspuren	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2022-08-26 vvv
+#: last_checked: 2022-09-01 vvv
 #: next_check: 2024-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
@@ -4365,14 +4368,14 @@ Grünbeschichtung	RW3; 13336,6986 13500,7018 13627,7047 13891,7107
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: last_checked: 2022-07-06 vvv
 #: check_frequency: 120d vvv
-#: next_check: 2022-12-31 vvv
-#: valid: 20140224-20221231 vvv
+#: next_check: 2023-06-30 vvv
+#: valid: 20140224-20230630 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
 	RW0; 13265,6972 13085,6925
 #: note: einige Meter vor der Ampel ist die Radspur aufgehoben
 	RW0; 13085,6925 13265,6972
 #: valid ^^^
-#: valid: !20140224-20221231 vvv
+#: valid: !20140224-20230630 vvv
 	RW4; 13265,6972 13085,6925
 	RW3; 13085,6925 13265,6972
 #: valid ^^^
@@ -5567,7 +5570,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 15715,13157 15515,13134
 #: by: https://www.berliner-woche.de/spandau/c-verkehr/in-der-urlaubszeit-muss-mit-staus-gerechnet-werden_a315900 (Erwähnung)
 #: XXX bei den Bauarbeiten in der Pichelsdorfer Str. wird hier anscheinend eine Radspur entstehen
 #: last_checked: 2019-07-29 (mapillary)
-#: next_check: 2022-12-31
+#: next_check: 2023-04-28
 	RW1; -3824,13350 -3786,13267
 	RW1; -3786,13267 -3824,13350
 Tempo 10	RW6;RW6 7225,8219 7158,8208
@@ -6579,7 +6582,7 @@ Grünbeschichtung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,1495
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünbeschichtung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2022-08-23 vvv
+#: last_checked: 2022-08-31 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11673,16367 11698,16311 11666,16260 11618,16183
 	RW3; 11542,16070 11531,16053
@@ -7501,7 +7504,7 @@ Poller	RW4; 9221,6179 9245,6352 9246,6364 9250,6414
 #: by: https://www.infravelo.de/projekt/mariendorfer-damm/ (4. Quartal 2021 - 4. Quartal 2022)
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
-#: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022)
+#: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2022-07-24 vvv

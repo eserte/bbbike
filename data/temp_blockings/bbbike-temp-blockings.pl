@@ -27365,14 +27365,15 @@ EOF
 	q4::inwork -468,1919 -343,1983 -285,2015 -226,2048
 EOF
      },
-     { from  => 1518462294, # 2018-02-12 20:04
-       until => 1519410682, # rausgenommen, eigentlich keine Beeinträchtigungen --- 1520290800, # 2018-03-06 00:00
-       text  => 'Helmstr. und Vorbergstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 05.03.2018',
+     { from  => undef, # 1518462294, # 2018-02-12 20:04
+       until => $isodate2epoch->("2022-09-28 17:00:00"), # 1519410682, # rausgenommen, eigentlich keine Beeinträchtigungen --- 1520290800, # 2018-03-06 00:00
+       text  => 'Helmstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 28.09.2022', # früher: 'Helmstr. und Vorbergstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 05.03.2018',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 28.9.2022)
 #: XXX prüfen, ob es tatsächlich Behinderungen für Radfahrer gibt vvv
 	q4::inwork 7382,9187 7444,9148
-	q4::inwork 7308,9163 7363,9152
+# REMOVED ---	q4::inwork 7308,9163 7363,9152
 #: XXX ^^^
 EOF
      },
@@ -32018,7 +32019,7 @@ EOF
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-08-16
+#: last_checked: 2022-09-01
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -33241,10 +33242,10 @@ EOF
 EOF
      },
      { from  => 1624917600, # 2021-06-29 00:00
-       until => $isodate2epoch->("2022-12-31 17:00:00"), # 1640991600, # 2022-01-01 00:00
-       text  => 'Pichelsdorfer Str.: Bauarbeiten zwischen Wilhelmstr. und Zimmerstr., evtl. sind auch Radfahrer betroffen, vom 30.06.2021 06:00 bis 31.12.2022 17:00 ',
+       until => $isodate2epoch->("2023-04-28 17:00:00"), # 1640991600, # 2022-01-01 00:00
+       text  => 'Pichelsdorfer Str.: Bauarbeiten zwischen Wilhelmstr. und Zimmerstr., evtl. sind auch Radfahrer betroffen, vom 30.06.2021 bis 28.04.2023',
        type  => 'handicap',
-       source_id => 'viz2021:13.195212,52.527938,30.06.2021,06:00',
+       source_id => 'viz2021:13.195212,52.527938,30.06.2021,06:00', # mittlerweile bis 28.4.2023
        data  => <<EOF,
 #: next_check_id: PICHELSDORFER-2021
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf (hier nur bis Ende August 2022)
@@ -35889,7 +35890,7 @@ EOF
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-31 (research) vvv
+#: last_checked: 2022-09-01 (research) vvv
 #: check_frequency: 1d vvv
 #: next_check: 2022-09-30 vvv
 #Hüttenweg (westlicher Abschnitt)	2::temp -1854,6898 -1521,6972 -1241,7017 -1006,6911
@@ -35941,7 +35942,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1662052624, # undef, # XXX
        text  => 'Fidicinstr./Am Tempelhofer Berg: Bauarbeiten im Einmündungsbereich, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
@@ -35950,15 +35951,11 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1217600.php
 #: by: https://berliner-abendblatt.de/2022/06/17/bergmannkiez-fidicinstrasse-wird-zur-einbahnstrasse/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/verkehrsberuhigung-im-bergmannkiez-geht-weiter_a349916
-#: also_indoor: traffic (B) vvv
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2022-08-13 vvv
+# REMOVED --- #: also_indoor: traffic (B) vvv --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv --- #: last_checked: 2022-08-13 vvv
 	q4::inwork 9224,9053 9295,9047
 	q3::inwork 9295,9047 9459,9019
 	q4::inwork 9295,9047 9298,9112
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-#: also_indoor ^^^
+# REMOVED --- #: last_checked ^^^ --- #: add_fragezeichen ^^^ --- #: also_indoor ^^^
 EOF
      },
      { from  => undef, # 
@@ -36006,6 +36003,7 @@ EOF
 #: source_id: viz2021:13.56812,52.40301,20.08.2022,06:00
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237046.php
 #: by: https://berliner-abendblatt.de/2022/08/22/umfangreiche-bauarbeiten-in-der-strasse-zur-gartenstadt/
+#: by: https://www.berliner-woche.de/altglienicke/c-bauen/strasse-zur-gartenstadt-wird-erneuert_a355592
 #: also_indoor: traffic (H(einseitig),G(kürzer),B)
 	q4::inwork 21742,115 21769,-30 21800,-109
 EOF
@@ -36122,6 +36120,29 @@ EOF
 #: osm_watch: way id="147686211" version="9"
 #: osm_watch: way id="481651814" version="4"
 	2::inwork 6882,11061 6920,11064 7142,11145
+EOF
+     },
+     { from  => 1661922000, # 2022-08-31 07:00
+       until => 1680299940, # 2023-03-31 23:59
+       text  => 'Uhlandstr.: zwischen Kantstr. und Grolmanstr. Baustelle, gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.09.2022 07:00 bis 31.03.2023 23:59 ',
+       type  => 'handicap',
+       source_id => 'viz2021:13.32575,52.50557,01.09.2022,07:00',
+       data  => <<EOF,
+#: also_indoor: traffic (none)
+#: note: auch bei rbb erwähnt
+	q4::inwork 5090,11007 5084,10890 5072,10701
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Krautstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
+#: also_indoor: none
+#: last_checked: 2022-09-01
+#: check_frequency: 14d
+	q4::inwork 12081,12236 12059,12172
 EOF
      },
     );

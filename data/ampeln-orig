@@ -12,7 +12,7 @@
 #: osm_watch: way id="936801541" version="3"
 #: XXX Ampel befindet sich östlich der Einmündung
 #: note: Anforderungsampel
-#: last_checked: 2022-08-15
+#: last_checked: 2022-09-01
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -27,9 +27,9 @@ Südostallee/Im Brombeerwinkel: provisorische Fußgängerampel	F::inwork 17482,5464
 #: valid: -20230627
 B179/Fichtestr.	X::inwork 26138,-12596
 # 
-#: source_id: viz2021:13.181825,52.422784,09.02.2022,11:00 (bis 12.7.2022) (nicht verlängert)
-#: next_check: 2022-09-01
-#: valid: -20220901
+#: source_id: viz2021:13.181825,52.422784,09.02.2022,11:00 (bis 12.7.2022) (nicht verlängert) (bis 28.9.2022)
+#: next_check: 2022-09-28
+#: valid: -20220928
 Kronprinzessinnenweg: Gegenverkehrsregelung	X::inwork -4368,1731
 # 
 #: next_check_id: HAEMMERLING-2022
@@ -60,7 +60,7 @@ Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2022-08-30
+#: last_checked: 2022-09-01
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
@@ -3312,7 +3312,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: valid: 20140224-20211231 vvv
 #: last_checked: 2022-07-06
 #: check_frequency: 90d
-#: next_check: 2022-12-31 vvv
+#: next_check: 2023-06-30 vvv
 	X::inwork 13265,6972
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
 #: last_checked: 2022-07-06

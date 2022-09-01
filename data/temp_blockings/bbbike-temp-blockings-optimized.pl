@@ -3814,7 +3814,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 28.9.2022)
+#: XXX prüfen, ob es tatsächlich Behinderungen für Radfahrer gibt vvv
+	q4::inwork 7382,9187 7444,9148
+# REMOVED ---	q4::inwork 7308,9163 7363,9152
+#: XXX ^^^
+',
+         'from' => undef,
+         'id' => 2933,
+         'text' => 'Helmstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 28.09.2022',
+         'type' => 'handicap',
+         'until' => 1664377200
+       },
        undef,
        undef,
        undef,
@@ -4622,7 +4634,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-08-16
+#: last_checked: 2022-09-01
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -4960,9 +4972,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1624917600,
          'id' => 3401,
          'source_id' => 'viz2021:13.195212,52.527938,30.06.2021,06:00',
-         'text' => 'Pichelsdorfer Str.: Bauarbeiten zwischen Wilhelmstr. und Zimmerstr., evtl. sind auch Radfahrer betroffen, vom 30.06.2021 06:00 bis 31.12.2022 17:00 ',
+         'text' => 'Pichelsdorfer Str.: Bauarbeiten zwischen Wilhelmstr. und Zimmerstr., evtl. sind auch Radfahrer betroffen, vom 30.06.2021 bis 28.04.2023',
          'type' => 'handicap',
-         'until' => 1672502400
+         'until' => 1682694000
        },
        undef,
        undef,
@@ -6021,7 +6033,7 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-08-31 (research) vvv
+#: last_checked: 2022-09-01 (research) vvv
 #: check_frequency: 1d vvv
 #: next_check: 2022-09-30 vvv
 #Hüttenweg (westlicher Abschnitt)	2::temp -1854,6898 -1521,6972 -1241,7017 -1006,6911
@@ -6070,28 +6082,7 @@ Fischerhüttenweg	2::temp -2528,5366 -2218,5133
          'type' => 'handicap',
          'until' => 1665759600
        },
-       {
-         'data' => '#: next_check_id: FIDICIN-2022
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10154 (Herbst 2021)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1217600.php
-#: by: https://berliner-abendblatt.de/2022/06/17/bergmannkiez-fidicinstrasse-wird-zur-einbahnstrasse/
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/verkehrsberuhigung-im-bergmannkiez-geht-weiter_a349916
-#: also_indoor: traffic (B) vvv
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2022-08-13 vvv
-	q4::inwork 9224,9053 9295,9047
-	q3::inwork 9295,9047 9459,9019
-	q4::inwork 9295,9047 9298,9112
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-#: also_indoor ^^^
-',
-         'from' => undef,
-         'id' => 3602,
-         'text' => 'Fidicinstr./Am Tempelhofer Berg: Bauarbeiten im Einmündungsbereich, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: last_checked: 2022-08-14 vvv
@@ -6126,6 +6117,7 @@ Fischerhüttenweg	2::temp -2528,5366 -2218,5133
          'data' => '#: source_id: viz2021:13.56812,52.40301,20.08.2022,06:00
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237046.php
 #: by: https://berliner-abendblatt.de/2022/08/22/umfangreiche-bauarbeiten-in-der-strasse-zur-gartenstadt/
+#: by: https://www.berliner-woche.de/altglienicke/c-bauen/strasse-zur-gartenstadt-wird-erneuert_a355592
 #: also_indoor: traffic (H(einseitig),G(kürzer),B)
 	q4::inwork 21742,115 21769,-30 21800,-109
 ',
@@ -6247,6 +6239,31 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
          'id' => 3616,
          'text' => 'Herkulesufer: Neubau Bauhaus-Archiv, Uferweg möglicherweise gesperrt',
          'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: also_indoor: traffic (none)
+#: note: auch bei rbb erwähnt
+	q4::inwork 5090,11007 5084,10890 5072,10701
+',
+         'from' => 1661922000,
+         'id' => 3617,
+         'source_id' => 'viz2021:13.32575,52.50557,01.09.2022,07:00',
+         'text' => 'Uhlandstr.: zwischen Kantstr. und Grolmanstr. Baustelle, gesperrt, evtl. sind auch Radfahrer betroffen, vom 01.09.2022 07:00 bis 31.03.2023 23:59 ',
+         'type' => 'handicap',
+         'until' => 1680299940
+       },
+       {
+         'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
+#: also_indoor: none
+#: last_checked: 2022-09-01
+#: check_frequency: 14d
+	q4::inwork 12081,12236 12059,12172
+',
+         'from' => undef,
+         'id' => 3618,
+         'text' => 'Krautstr.: Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
          'until' => undef
        }
      
