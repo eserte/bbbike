@@ -924,12 +924,13 @@ EOF
        until => $isodate2epoch->("2022-09-04 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 8, start => "2021-10-25T00:00:00"]],
-       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (03.09.2022 bis 04.09.2022)',
+       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. sowie Krokusstr. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (03.09.2022 bis 04.09.2022)',
        type  => 'gesperrt',
        source_id => 'http://www.hier-in-rudow.de/meilenfeste.html',
        data  => <<EOF,
 #: note: keine Anzeichen für eine Veranstaltung 2021 
-	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
+Alt-Rudow	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
+Krokusstr.	2::temp 16610,1715 16767,1831
 EOF
      },
      { from  => undef, # 
@@ -32404,7 +32405,7 @@ EOF
 #: confirmed_by: srt (Sackgassenschild am nördlichen und südlichen Ende, als Fußgänger und Radfahrer kommt man durch)
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="25"
-#: osm_watch: way id="165832806" version="22"
+#: osm_watch: way id="165832806" version="23"
 #: last_checked: 2022-08-25
 #: check_frequency: 30d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17554,8458 17533,8505 17524,8536 17515,8567 17497,8623
@@ -35885,12 +35886,12 @@ EOF
 #: by: https://viz.berlin.de/2022/08/sprengplatz-grunewald/?date=20220825 (bis Ende September 2022)
 #: by: https://berliner-abendblatt.de/2022/08/29/vollsperrung-vier-bomben-legen-die-avus-lahm/
 #: by: https://berliner-abendblatt.de/2022/08/30/nach-brand-im-grunewald-soll-munition-gesprengt-werden/https://berliner-abendblatt.de/2022/08/30/nach-brand-im-grunewald-soll-munition-gesprengt-werden/
-#: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-08-30&until=&near=
+#: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-09-02&until=&near=
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-09-01 (research) vvv
+#: last_checked: 2022-09-02 (research) vvv
 #: check_frequency: 1d vvv
 #: next_check: 2022-09-30 vvv
 #Hüttenweg (westlicher Abschnitt)	2::temp -1854,6898 -1521,6972 -1241,7017 -1006,6911
@@ -36026,7 +36027,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/08/21/diese-baustellen-sorgen-fuer-staus/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/neue-gleise-und-weichen_a355298
 #: note: laut rbb ist die Georgenstr. nur bis 5.9.2022 gesperrt
-#: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022)
+#: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022)
 Georgenstr.	q4::inwork 9568,12688 9441,12670
 #: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
 #: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022)
@@ -36139,10 +36140,19 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
-#: also_indoor: none
+#: also_indoor: traffic (none)
 #: last_checked: 2022-09-01
 #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
+EOF
+     },
+     { from  => 1662012000, # 2022-09-01 08:00
+       until => 1662325200, # 2022-09-04 23:00
+       text  => 'Paul-Löbe-Allee: Veranstaltung, zwischen Annemarie-Renger-Str. und Konrad-Adenauer-Str. gesperrt, vom 02.09.2022 08:00 bis 04.09.2022 23:00',
+       type  => 'gesperrt',
+       source_id => 'viz2021:13.37203,52.51939,02.09.2022,08:00',
+       data  => <<EOF,
+	2::temp 8306,12609 8207,12606
 EOF
      },
     );

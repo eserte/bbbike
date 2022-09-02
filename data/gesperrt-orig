@@ -3524,20 +3524,26 @@ Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
 #: last_checked: 2022-08-25 vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
+#: osm_watch: way id="1061057020" version="2"
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17656,8700
 Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17627,8556 17608,8483
+#: osm_watch: way id="1084269868" version="1"
 Adolf-Wermuth-Allee: noch nicht fertiggestellt	2::inwork 17608,8483 17597,8434
 # REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17648,8626 17627,8556
 # REMOVED --- Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17648,8626 17773,8588
+#: osm_watch: way id="1084269869" version="2"
 Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17524,8536 17627,8556
 # REMOVED --- Samuel-Lewin-Str.: noch nicht fertiggestellt	2::inwork 17792,8660 17773,8588 17755,8519
 # REMOVED (offen) --- Ruth-Baumgarte-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17794,8429 17738,8449 17671,8465 17608,8483
 # REMOVED --- #: next_check ^^^
+#: osm_watch: way id="1084267262" version="2"
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17497,8623 17640,8627 17656,8700 17468,8692
 # REMOVED (hier nicht (mehr?)) --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17738,8450 17755,8519
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17755,8519 17627,8556
+#: osm_watch: way id="1061057021" version="3"
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17773,8588 17648,8626
+#: osm_watch: way id="1061057024" version="4"
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 17627,8556 17608,8483 17682,8464 17738,8450
 #: last_checked ^^^
 # 
@@ -3832,6 +3838,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,1015
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_12_0713_0788_online.pdf (Grundstücksnummerierung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_17_1033_1092_online.pdf (Grundstücksnummerierung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_35_2301_2352_online.pdf (Straßenlandwidmung des schon eröffneten Abschnitts)
 #: XXX für den gesperrten Abschnitt wird Asphalt als Fahrbahnoberfläche vermutet (bereits eingetragen)
 #: last_checked: 2022-07-22 (webcam)
 #: check_frequency: 60d
