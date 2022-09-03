@@ -965,9 +965,9 @@ asphaltiert, gemeinsamer Geh- und Radweg	RW1; 12791,3814 12910,3739 13030,3664 1
 Verbundsteinpflaster	RW1; 16908,1217 17001,1157 17094,1102 17236,985 17384,775 17518,564 17685,311 17726,242 17772,166 17818,93 17879,-3 17946,-100 18009,-193 18121,-374
 #: note: Waltersdorfer Chaussee/Neuköllner Str. Richtung Norden
 Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 18121,-374 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564 17384,775 17236,985 17094,1102 17001,1157
-#: XXX Inkonsistenz: Busspur ist freigegeben, eine Markierung auf der Fahrbahn vor dem Ampel existiert, aber es gibt ein Radwegschild?
-#: last_checked: 2022-06-04 (mapillary)
-#: check_frequency: 30d
+#: XXX Inkonsistenz: Busspur ist für Radfahrer freigegeben, eine Markierung auf der Fahrbahn vor dem Ampel existiert, aber es gibt ein Radwegschild?
+#: last_checked: 2022-09-03
+#: check_frequency: 60d
 für Radfahrer freigegebene Busspur ist immer gültig	RW2; 17001,1157 16908,1217
 # 
 Bushaltestelle mit Radspur	RW5;RW5 16908,1217 16839,1262
@@ -1050,7 +1050,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-09-01 vvv
+#: last_checked: 2022-09-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1819,7 +1819,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/ziel-ein-durchgaengig-sicherer-radweg_a337148 (Erwähnung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2022-08-25 vvv
+#: last_checked: 2022-09-03 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -1853,7 +1853,7 @@ Asphalt mit einigen Brüchen	RW1; 9321,8607 9364,8640 9395,8726
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2022-08-24
+#: last_checked: 2022-09-03
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2502,7 +2502,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-08-27 vvv
+#: last_checked: 2022-09-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3334,7 +3334,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2337,9178 2348,9388 
 	RW;RW 441,6435 486,6404 605,6345 736,6217 869,6085
 	RW;RW1 869,6085 884,5974 894,5829 910,5654
 	RW1;RW0 12972,7602 12918,7600 12787,7546 12685,7497
-	RW2;RW2 16975,1262 16908,1217
+	RW1;RW1 16975,1262 16908,1217
 #: note: nur an der Stubenrauchstr. ein paar Meter neues Verbundsteinpflaster
 meist altes Verbundsteinpflaster	RW1;RW9 16786,2989 17284,2636 17541,2454
 altes Verbundsteinpflaster	RW1;RW0 17541,2454 17772,2331 17928,2248 18101,2164 18111,2135
@@ -3787,15 +3787,13 @@ alte Gehwegplatten, Hebungen und Schäden	RW1; 17526,1540 17855,1629 17526,1540
 Verbundsteinpflaster	RW1; 17855,1629 18047,1710 18199,1811 18361,1926 18396,1990 18491,2128
 neues Verbundsteinpflaster	RW1; 17526,1540 17323,1494 17211,1469
 neues Verbundsteinpflaster	RW1; 17211,1469 17120,1394 16975,1262
-neues Verbundsteinpflaster	RW1; 16975,1262 17120,1394
+neues Verbundsteinpflaster, trotzdem mit Wurzelschäden	RW1; 16975,1262 17120,1394
 Gehweg für Radfahrer frei	RW1; 17120,1394 17211,1469 17323,1494
 neues Verbundsteinpflaster	RW1; 17323,1494 17526,1540
 die ersten Meter mit Radstreifen	RW0; 16315,1904 16445,1824
 die letzten Meter mit Radweg	RW0; 16445,1824 16315,1904
 	RW1;RW2 16135,2135 16056,2034
-	RW1;RW1 16056,2034 16002,1964
-	RW1;RW 16002,1964 15875,1796 15835,1747 15799,1690 15729,1573
-	RW1;RW1 15729,1573 15719,1557 15688,1506 15670,1474 15641,1426
+	RW1;RW1 16056,2034 16002,1964 15875,1796 15835,1747 15799,1690 15729,1573 15719,1557 15688,1506 15670,1474 15641,1426
 	RW1; 15301,3038 15254,2926 15174,2773 15078,2647 14946,2519 14744,2308 14681,2231 14633,2145 14587,2032 14549,1922 14523,1847
 neues Verbundsteinpflaster	RW1; 14523,1847 14549,1922 14587,2032 14633,2145 14681,2231 14744,2308 14946,2519
 Verbundsteinpflaster	RW1; 14946,2519 15078,2647
@@ -4026,8 +4024,9 @@ Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster	RW1; 1
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,702779#msg-702779
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,705045#msg-705045
 Wechsel zwischen alten Gehwegplatten und schadhaftem Verbundsteinpflaster, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13886,2653 13915,2673 13951,2697 13999,2727 14203,2859 14212,2865 14392,2979
-	RW1; 14392,2979 14212,2865 14203,2859 13999,2727 13951,2697
-Verbundsteinpflaster sowie alte und teils schadhafte Gehwegplatten, teilweise mit Bord	RW1; 13951,2697 13915,2673 13886,2653 13709,2551 13501,2413 13418,2357 13367,2322
+Verbundsteinpflaster, OK	RW1; 14392,2979 14212,2865 14203,2859 13999,2727 13951,2697 13915,2673
+Verbundsteinpflaster, OK	RW2; 13915,2673 13886,2653
+Verbundsteinpflaster sowie alte und teils schadhafte Gehwegplatten, teilweise mit Bord	RW1; 13886,2653 13709,2551 13501,2413 13418,2357 13367,2322
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/verkehrsbetriebe-haben-neue-sonderstreifen-auf-der-sonnenallee-und-dem-britzer-damm-beantragt_a257617 (neue Geltungszeiten der Busspur)
 #: confirmed_by: srt
 Verbundsteinpflaster sowie alte Gehwegplatten, für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13367,2322 13104,2143 13045,2107
@@ -7087,7 +7086,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="29"
-#: last_checked: 2022-08-25 vvv
+#: last_checked: 2022-09-03 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
@@ -7628,41 +7627,37 @@ Gehweg für Radfahrer frei	RW1;RW1 475,1202 587,1230 718,1264 857,1300
 #: note: Hermannstr., Richtung Norden
 #: note: Grünbeschichtung fehlt an den Bushaltestellen vvv
 Grünbeschichtung, Poller	RW4; 12510,6508 12470,6586
-Bushaltestelle	RW5; 12470,6586 12448,6646
+#: note: Bushaltestelle
+Busspur ist immer gültig	RW5; 12470,6586 12448,6646
 Grünbeschichtung, Poller	RW4; 12448,6646 12422,6715
 Grünbeschichtung	RW4; 12422,6715 12395,6785
 #: note: Radwegschild erst 40m nach der Kreuzung
 Grünbeschichtung	RW4; 12395,6785 12375,6842
 Busspur ist immer gültig	RW5; 12375,6842 12362,6881 12347,6923
-#: next_check_id: HERMANN-2022
-#: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2022-08-05
+# REMOVED (zu kurz?) --- #: next_check_id: HERMANN-2022 --- #: XXX wird hier noch ein Radwegschild hingestellt? --- #: last_checked: 2022-08-05
 Grünbeschichtung	RW3; 12347,6923 12342,6936
-Grünbeschichtung	RW4; 12342,6936 12317,7007 12304,7039 12291,7074 12259,7164 12244,7205 12221,7271
+Grünbeschichtung	RW4; 12342,6936 12317,7007 12304,7039 12291,7074
+Radspur hinter parkenden Autos, Poller, Grünbeschichtung	RW4; 12291,7074 12259,7164
+Grünbeschichtung	RW4; 12259,7164 12244,7205
+Poller, Grünbeschichtung	RW4; 12244,7205 12221,7271
 #: note ^^^
-provisorische Radspuren	RW4;RW4 12185,7381 12221,7271
+provisorische Radspuren	RW4;RW3 12185,7381 12221,7271
 # REMOVED --- #: XXX Radweg markiert und ausgeschildert, allerdings ignoriert --- #: last_checked: 2021-12-13 --- #: check_frequency: 7d
 # 
 #: note: Hermannstr., Richtung Süden
-	RW4; 12221,7271 12244,7205 12259,7164 12291,7074 12304,7039 12317,7007
-#: by: osm
-#: confirmed_by: srt
-	RW3; 12317,7007 12342,6936
-#: by: osm
-#: confirmed_by: srt
-Bushaltestelle; die letzten 50 Meter als Radspur hinter parkenden Autos	RW5; 12342,6936 12347,6923 12362,6881 12375,6842 12395,6785
-#: next_check_id: HERMANN-2022
-#: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2022-08-05
-Radspur hinter parkenden Autos	RW3; 12395,6785 12422,6715 12448,6646
-#: by: osm
+Radspur hinter parkenden Autos, Poller, Grünbeschichtung	RW4; 12221,7271 12244,7205
+Poller, Grünbeschichtung	RW4; 12244,7205 12259,7164 12291,7074 12304,7039 12317,7007
+Grünbeschichtung	RW4; 12317,7007 12342,6936
+#: note: nur Markierung, kein Busspurschild
+Bushaltestelle; die letzten 25 Meter als Radspur (Poller, Grünbeschichtung)	RW5; 12342,6936 12347,6923 12362,6881 12375,6842 12395,6785
+Radspur hinter parkenden Autos, Poller, Grünbeschichtung	RW4; 12395,6785 12422,6715
+Radspur hinter parkenden Autos, Grünbeschichtung	RW3; 12422,6715 12448,6646
 Bushaltestelle	RW5; 12448,6646 12470,6586
 #: next_check_id: HERMANN-2022
-#: by: osm
-#: confirmed_by: srt
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2022-08-13
-	RW3; 12470,6586 12510,6508
+#: last_checked: 2022-09-03
+#: check_frequency: 90d
+Grünbeschichtung	RW3; 12470,6586 12510,6508
 # 
 # REMOVED (korrekt) --- #: XXX Geltungszeit überprüfen!
 Busspur ist immer gültig	RW5; 3835,10352 3813,10435

@@ -53,7 +53,7 @@ Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245
 #: source_id: viz2021:13.45071,52.48007,28.04.2022,09:00 (zusätzlicher Eintrag) (entfernt)
 #: by: https://nitter.net/VIZ_Berlin/status/1519602332090179585#m (hier: bis Anfang Juni 2022)
 #: by: https://nitter.net/pic/media%2FFRWA3_cWYAAYbnf.jpg%3Fname%3Dorig (südlich der Kreuzung)
-#: last_checked: 2022-08-24
+#: last_checked: 2022-09-03
 #: next_check: 2022-09-30
 #: valid: -20220930
 Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
@@ -89,7 +89,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2022-08-24 vvv
+#: last_checked: 2022-09-03 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -1558,6 +1558,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Kontaktschleife für Radfahrer aus der Heinz-Galinski-Str.
 	X 8093,16438
 	X 5376,18773
+#: XXX_prog nicht relevant für Radfahrer Richtung Westen
+#: note: Anforderungsampel
 	F 14203,2859
 	X 13057,14267
 	X 13292,13931
@@ -2570,6 +2572,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	B0 13190,2730
 	B0 13302,2554
 	B0 13418,2357
+#: note: Anforderungsampel
 	F 14252,1945
 #: note: Anforderungsampel
 	F 1892,13058
@@ -3532,7 +3535,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2022-08-05
+#: last_checked: 2022-09-03
 #: check_frequency: 90d
 	X::inwork 12185,7381
 # 
