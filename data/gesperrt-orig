@@ -1178,9 +1178,20 @@ Edith-Kiss-Str.	1 12793,11132 12866,11256
 Garzauer Str.	1 21830,13688 21722,13708 21731,13789
 Flankenschanze	1 -3507,15341 -3534,15219
 Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,17088 10917,17088
-# REMOVED (TRAMTURM-2021 --- wiederherstellen!) --- Alt-Moabit - Invalidenstr.	1 7415,13060 7422,13012
+# 
+#: next_check_id: TRAMTURM-2021
+#: XXX wiederherstellen! (1no -> 1)
+#: last_checked: 2022-08-06
+#: next_check: 2022-12-22
+Alt-Moabit - Invalidenstr.	1no 7415,13060 7422,13012
+# 
 (Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14271,9712
-# REMOVED (PARKAUE-2022 --- wiederherstellen!) --- Parkaue	1s:q4 15406,12444 15408,12394 15370,12264
+#: next_check_id: PARKAUE-2022
+#: XXX wiederherstellen! (1no -> 1s:q4)
+#: last_checked: 2022-08-18
+#: next_check: 2023-10-31
+Parkaue	1no 15406,12444 15408,12394 15370,12264
+# 
 Stahlheimer Str.	1 11727,16358 11698,16311
 # REMOVED --- #: next_check_id: AMZIRKUS-2014 --- #: XXX bleibt die Einbahnstraﬂenrichtung permanent? Oder nur w‰hrend der Arbeiten am Schiffbauerdamm? --- #: last_checked: 2015-05-12 --- 
 # REMOVED (hier nicht mehr, dauerhaft?) --- Am Zirkus	1s:q4 9239,12923 9212,12969
