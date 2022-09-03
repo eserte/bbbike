@@ -610,7 +610,8 @@ ${PERSISTENTTMPDIR}/gesperrt-without-nocross:	${PERSISTENTTMPDIR}/gesperrt-orig-
 
 ${PERSISTENTTMPDIR}/gesperrt-orig-valid:	gesperrt-orig .check_daily
 	-@$(WRITEABLE) $@
-	${GREPSTRASSEN_VALID} gesperrt-orig > $@~
+	${GREPSTRASSEN_VALID} gesperrt-orig |\
+	    ${GREPSTRASSEN} -preserveglobaldirectives -v -catrx '^1no($$|:)' > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
