@@ -12,7 +12,7 @@
 #: osm_watch: way id="936801541" version="3"
 #: XXX Ampel befindet sich östlich der Einmündung
 #: note: Anforderungsampel
-#: last_checked: 2022-09-01
+#: last_checked: 2022-09-04
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -710,6 +710,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 3710,4728
 	X 3754,4755
 #: related ^^^
+#: note: Anforderung für linksabbiegende Radfahrer (Schloßstr. -> Hindenburgdamm)
 	X 4512,5199
 	F 4153,5001
 	X 3048,4305
@@ -1671,6 +1672,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6377,13321
 	X 6124,12694
 	X 6227,13938
+#: note: seit mindestens Ende Juli 2022 ausgeschaltet
 	X 11616,10288
 #: XXX_prog: zusammenhängende Ampelanlage vvv
 	X 22383,4470
@@ -2466,13 +2468,13 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
-#: last_checked: 2022-08-16
+#: last_checked: 2022-09-04
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2022-08-24
+#: last_checked: 2022-09-04
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746
@@ -2807,8 +2809,9 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	X 13398,15826
 	F 6440,6707
 # REMOVED (nö, in beiden Richtungen nur Fußgängerampel) --- #: XXX_prog: Richtung Osten reguläre Ampel, Richtung Westen nur Fußgängerampel
-#: off: Sunday (seen 2019-10-13 14:30)
-	F 7310,7818
+#: off: Sunday (seen 2019-10-13 14:30, 2022-09-04 12:15)
+#: note: Anforderungsampel
+	F 7315,7814
 # REMOVED (temporäre Ampel existiert nicht mehr und wird auch nicht mehr eingerichtet) --- #: XXX existiert diese Ampel noch? --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5227&options=4 ---	F 18413,7774
 # REMOVED (existiert nicht mehr) ---	X 16187,10033
 #: by: Wolfhard Schleese vvv
@@ -2820,7 +2823,9 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	F 7110,10613
 provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 13520,6583
+#: note: Anforderungsampel
 	F 6315,3974
+#: note: Anforderungsampel
 	F 6489,3578
 #: note: Anforderungsampel
 #: XXX_prog: beide Ampeln sind getrennt geschaltet, man muss auf dem Mittelstreifen neu anfordern
@@ -3464,6 +3469,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 7354,9135
 #: note: Anforderungsampel
 	F 1485,8845
+#: note: Anforderungsampel
 	F 7740,1041
 	X 22092,999
 	X -5886,10837

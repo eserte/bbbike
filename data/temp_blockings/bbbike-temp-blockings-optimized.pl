@@ -4523,10 +4523,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv --- #: last_checked: 2020-12-27 (mapillary) vvv --- #: next_check: 2021-05-03 vvv
 # REMOVED (hier nicht mehr) --- #: note: nur etwa 100m, deshalb q3 statt q4 ---	q3::inwork 4515,4760 4214,4595
 #: note: Einbahnstraßenregelung, Bauarbeiten laut Baustellenschild bis September 2022
-# REMOVED (doppelt)	q4::inwork; 4214,4595 4039,4500
-# REMOVED (doppelt)	q4::inwork; 4039,4500 3934,4441
-	q4::inwork; 3934,4441 3643,4232 3523,4139
-	q4::inwork 3934,4441 4039,4500 4214,4595 4515,4760
+# REMOVED (doppelt) ---	q4::inwork; 4214,4595 4039,4500
+# REMOVED (doppelt) ---	q4::inwork; 4039,4500 3934,4441
+# REMOVED (hier nicht) ---	q4::inwork; 3934,4441 3643,4232
+	q4::inwork; 3643,4232 3523,4139
+# REMOVED (hier nicht) ---	q4::inwork 3934,4441 4039,4500
+	q3::inwork; 4214,4595 4039,4500
+Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
+Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
+# REMOVED (hier nicht) --- q4::inwork 4214,4595 4515,4760
 # REMOVED --- #: note: Einbahnstraßenregelung, bis 30.6.2022 ---	q4::inwork; 3643,4232 3523,4139
 # REMOVED --- #: note: hier nur ein kurzes Stück ---	q2::inwork; 4214,4595 4039,4500
 # REMOVED (nicht mehr, laut rbb) ---	q4::inwork 4179,4662 4214,4595
@@ -4536,7 +4541,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1622356200,
          'id' => 3261,
          'source_id' => '2147345834',
-         'text' => 'Gardeschützenweg: Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz, bis 30.09.2022',
+         'text' => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, bis 30.09.2022',
          'type' => 'handicap',
          'until' => 1664550000
        },
@@ -4635,7 +4640,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-09-01
+#: last_checked: 2022-09-04
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -4718,7 +4723,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
 #: by: https://www.deutsches-architekturforum.de/thread/14781-physikalisch-technische-bundesanstalt-campus-um-und-neubauten/?postID=724237#post724237
 #: note: reopened, es gibt wieder Bauzäune; Juni 2022: mittlerweile gibt es zumindest auf der Nordseite eine Radweg-Beschilderung, deshalb q3 -> q2
-#: osm_watch: way id="152832871" version="17"
+#: osm_watch: way id="152832871" version="18"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2022-08-10 (daf)
 #: check_frequency: 30d
@@ -5305,7 +5310,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
-#: last_checked: 2022-07-10 vvv
+#: last_checked: 2022-09-04 vvv
 #: check_frequency: 150d vvv
 #: next_check: 2022-12-22 vvv
 	q3::inwork 3011,3303 2778,3132
@@ -5319,7 +5324,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: last_checked ^^^
 # 
 #: note: bei rbb bis 31.10.2022
-#: last_checked: 2022-07-10 vvv
+#: last_checked: 2022-09-04 vvv
 #: next_check: 2022-12-22 vvv
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3059,3339 3184,3427
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3184,3427 3228,3455
@@ -5327,6 +5332,10 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q4::inwork 3
 Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3184,3427 3174,3052
 #: next_check ^^^
 #: last_checked ^^^
+# 
+#: last_checked: 2022-09-04
+#: next_check: 2022-12-22
+östlich Drakestr.	q4::inwork 3558,3688 3507,3654
 #: also_indoor ^^^
 # REMOVED --- #: XXX ^^^
 #: source_id ^^^
@@ -5334,7 +5343,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'from' => 1614492000,
          'id' => 3502,
          'source_id' => 'viz2021:13.287063,52.432721,01.03.2021,07:00',
-         'text' => 'Ringstr.: Bauarbeiten, kurze Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, voraussichtlich bis 22. Dezember 2022',
+         'text' => 'Ringstr.: Bauarbeiten, einige Abschnitte der Fahrbahn gesperrt, Gehwege sind noch frei, voraussichtlich bis 22. Dezember 2022',
          'type' => 'handicap',
          'until' => 1671688800
        },
@@ -5361,7 +5370,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        undef,
        {
-         'data' => '#: last_checked: 2022-06-04
+         'data' => '#: last_checked: 2022-09-04
 #: next_check: 2022-10-26
 	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
 ',
@@ -5467,7 +5476,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: note 3030340 4
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2022-07-10
+#: last_checked: 2022-09-04
 #: check_frequency: 90d
 #: next_check: 2023-05-31
 	q3::inwork 5020,6434 5269,6305
@@ -5720,7 +5729,20 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1664555400
        },
-       undef,
+       {
+         'data' => '#: also_indoor: traffic (B,G)
+#: add_fragezeichen: Sind die Bauarbeiten in der Braillestr. beendet?
+#: last_checked: 2022-09-04
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2022-08-31
+	q4::inwork 4512,5199 4477,5250 4430,5324
+',
+         'from' => 1652642891,
+         'id' => 3552,
+         'text' => 'Braillestr.: Arbeiten der Wasserbetriebe, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: by: mapillary
@@ -5737,16 +5759,18 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        undef,
        {
-         'data' => '#: XXX Halteverbot gilt bis 2022-08-26
+         'data' => '#: XXX Halteverbot gilt bis 2022-10-10
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder offen?
 #: also_indoor: traffic (G(nördlicher?),B)
-#: last_checked: 2022-07-10
-#: next_check: 2022-08-26
-	q4::inwork 6273,2609 6293,2583 6349,2510
+#: last_checked: 2022-09-04
+#: next_check: 2022-10-10
+# REMOVED (hier nicht mehr) ---	q4::inwork 6273,2609 6293,2583
+Seydlitzstr.	q4::inwork 6293,2583 6349,2510 6459,2364
+Frobenstr.	q3::inwork 6349,2510 6529,2642
 ',
          'from' => undef,
          'id' => 3557,
-         'text' => 'Seydlitzstr.: Bauarbeiten zwischen Frobenstr. und Derfflingerstr., Fahrbahn gesperrt, möglicherweise bis Ende August 2022',
+         'text' => 'Seydlitzstr.: Bauarbeiten zwischen Havensteinstr. und Dessauerstr., Fahrbahn gesperrt, außerdem Anbindung Fröbenstr. gesperrt, vermutlich bis Mitte Oktober 2022',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5900,7 +5924,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        {
          'data' => '#: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
-#: last_checked: 2022-08-16 vvv
+#: last_checked: 2022-09-04 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
 	q3::inwork 12995,8213 13060,8148
 #: last_checked ^^^
@@ -6021,12 +6045,12 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://viz.berlin.de/2022/08/sprengplatz-grunewald/?date=20220825 (bis Ende September 2022)
 #: by: https://berliner-abendblatt.de/2022/08/29/vollsperrung-vier-bomben-legen-die-avus-lahm/
 #: by: https://berliner-abendblatt.de/2022/08/30/nach-brand-im-grunewald-soll-munition-gesprengt-werden/https://berliner-abendblatt.de/2022/08/30/nach-brand-im-grunewald-soll-munition-gesprengt-werden/
-#: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-09-03&until=&near=
+#: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-09-04&until=&near=
 #: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
 #: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
 #: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
 #: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-09-03 (research) vvv
+#: last_checked: 2022-09-04 (research) vvv
 #: check_frequency: 1d vvv
 #: next_check: 2022-09-30 vvv
 #Hüttenweg (westlicher Abschnitt)	2::temp -1854,6898 -1521,6972 -1241,7017 -1006,6911
@@ -6075,7 +6099,29 @@ Fischerhüttenweg	2::temp -2528,5366 -2218,5133
          'type' => 'handicap',
          'until' => 1665759600
        },
-       undef,
+       {
+         'data' => '#: next_check_id: FIDICIN-2022
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10154 (Herbst 2021)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1217600.php
+#: by: https://berliner-abendblatt.de/2022/06/17/bergmannkiez-fidicinstrasse-wird-zur-einbahnstrasse/
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/verkehrsberuhigung-im-bergmannkiez-geht-weiter_a349916
+#: also_indoor: traffic vvv
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
+#: last_checked: 2022-09-04 vvv
+#Fidicinstr. (ab Mehringdamm)	q4::inwork 9224,9053 9295,9047
+Fidicinstr.	q3::inwork 9295,9047 9459,9019 9654,8991
+Kopischstr.	q3::inwork 9477,9113 9459,9019
+#Am Tempelhofer Berg	q4::inwork 9295,9047 9298,9112
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+#: also_indoor ^^^
+',
+         'from' => undef,
+         'id' => 3602,
+         'text' => 'Fidicinstr./Kopischstr.: Bauarbeiten im Einmündungsbereich, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: last_checked: 2022-08-14 vvv

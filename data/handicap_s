@@ -202,8 +202,9 @@ Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10319,15090 10240,153
 (Ringbahnsteig Ostkreuz): sehr viele Fuﬂg‰nger	q4 14810,10832 14816,10862 14839,10856 14847,10892 14864,10962 14851,10966
 Marheinekeplatz: Fuﬂg‰nger, Brunnen	q3 9892,9286 9880,9233
 (Uferweg am Urbanhafen): Fuﬂg‰nger	q2 11160,9932 11142,9939 10914,9925 10602,10006 10522,10056 10500,10081
-Bahnhofsgeb‰ude	q4 7854,7572 7934,7621
-Bahnhofsgeb‰ude	q4 7774,7724 7804,7783 7838,7848
+Bahnhofsgeb‰ude, schieben	q4 7854,7572 7934,7621
+Fuﬂg‰nger	q3 7789,7718 7806,7749 7784,7820
+Bahnhofsgeb‰ude, schieben	q4 7784,7820 7838,7848
 Fuﬂg‰nger	q3 7934,7621 7919,7679
 Treppe oder Rampe	q4 7934,7621 7949,7607
 Marx-Engels-Forum: einige Fuﬂg‰nger, Bordstein	q3 10300,12587 10363,12535
@@ -1538,7 +1539,8 @@ Schalloppstr.: Bordsteine, einige Fuﬂg‰nger	q3 5132,4704 5190,4755
 (zum Teufelsberg): einige Fuﬂg‰nger, eng	q1 -641,9882 -720,9861 -769,9856
 Alfred-Scholz-Platz: Fuﬂg‰nger	q2 12779,8188 12753,8187
 Dahlemer Weg - entlang der S-Bahn: Rampe	q2 2266,3580 2221,3560 2250,3568 2228,3554
-Georg-Steger-Weg: einige Fuﬂg‰nger	q1 1493,2247 1480,2199 1452,2095 1461,2073 1432,1964 1432,1904 1476,1730
+Georg-Steger-Weg: einige Fuﬂg‰nger	q1 1493,2247 1480,2199 1452,2095 1461,2073 1432,1964
+Georg-Steger-Weg: Radfahrer sollen schieben	q4 1432,1964 1432,1953 1432,1904 1473,1740 1476,1730
 (Ramsteinweg - Sachtlebenstr.): gemeinsamer Rad- und Gehweg	q1 581,670 509,684 497,710 403,764 332,819 247,822
 (Am Seegraben - Sch¸tzenstr.): einige Fuﬂg‰nger	q1 19996,-740 19978,-712
 (an der BMW-Niederlassung): Parkverkehr, Schranke	q1 2102,11307 2180,11318 2219,11324
@@ -2333,6 +2335,8 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: etwas Parkplatzverkehr	q1 17523,9882 17412,99
 Straﬂenbahnquerung	q3 17422,17288 17424,17292 17414,17299 17421,17314
 Varziner Platz: einige Fuﬂg‰nger	q2 5492,7868 5491,7836
 Rudolf-Leonhard-Str. - Blumberger Damm: einige Fuﬂg‰nger	q1 21493,16387 21538,16444 21574,16547
+Hanielweg: enge Straﬂe	q0 7651,1615 7610,1695 7562,1796
+Pappritzstr.: enge Straﬂe	q0 7562,1796 7675,1885 7736,1969 7741,2096
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
