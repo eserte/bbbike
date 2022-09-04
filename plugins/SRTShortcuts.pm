@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.09;
+$VERSION = 2.10;
 
 use File::Glob qw(bsd_glob);
 
@@ -792,6 +792,9 @@ EOF
 	      ],
 	      [Button => $do_compound->("Set Garmin device defaults"),
 	       -command => sub { garmin_devcap() },
+	      ],
+	      [Button => $do_compound->("Upload waypoint by coordinates"),
+	       -command => sub { upload_waypoint_by_coordinates() },
 	      ],
 	      [Button => $do_compound->("Fragezeichen on route"),
 	       -command => sub { fragezeichen_on_route() },
@@ -3030,6 +3033,30 @@ sub garmin_devcap {
 	       -command => sub {
 		   $t->destroy;
 	       })->pack(qw(-side left));
+}
+
+sub upload_waypoint_by_coordinates {
+    if (!defined &WaypointUploader::upload_waypoint) {
+	main::status_message("Requires WaypointUploader plugin to be loaded", "die");
+    }
+    my $t = $main::top->Toplevel(-title => "Upload Waypoint");
+    $t->transient($main::top) if $main::transient;
+    my $f1 = $t->Frame->pack;
+    $f1->Label(-text => "OSM Map URL")->pack(-side => 'left');
+    my $e = $f1->Entry(-textvariable => \my $url)->pack(-side => 'left');
+    $e->focus;
+    my $f2 = $t->Frame->pack;
+    $f2->Button(-text => "Continue",
+		-command => sub {
+		    if ($url =~ m{map=\d+/(-?[\d.]+)/(-?[\d.]+)}) {
+			my $py = $1;
+			my $px = $2;
+			WaypointUploader::upload_waypoint(px => $px, py => $py);
+			$t->destroy;
+		    } else {
+			main::status_message("Cannot parse URL '$url' as a OSM map URL", "error");
+		    }
+		})->pack(qw(-side left));
 }
 
 ######################################################################
