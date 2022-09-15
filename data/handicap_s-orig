@@ -644,17 +644,17 @@ Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwor
 ### Neukölln ###
 # 
 #: next_check_id: WESER-2021
-#: XXX: während der Bauarbeiten ist der Radweg nicht befahrbar
+#: XXX: im Kreuzungsbereich wird ein Kfz-Diagonalfilter entstehen
 #: osm_watch: way id="1050315263" version="4"
 #: osm_watch: way id="996616281" version="8"
 #: osm_watch: way id="996616282" version="7"
-#: last_checked: 2022-09-01 vvv
+#: last_checked: 2022-09-15 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2022-09-15 vvv
+# REMOVED --- #: next_check: 2022-09-15 vvv
 # REMOVED (hier fertig) --- Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
-Weserstr.: Bauarbeiten, Fahrbahn noch nicht offiziell freigegeben, gemeinsamer Geh- und Radweg, eng	q2::inwork 12590,8977 12740,8862
+Weserstr.: vor der Weichselstr. Bauarbeiten, gemeinsamer Geh- und Radweg, eng	q2::inwork 12590,8977 12740,8862
 Weserstr./Weichselstr.: Arbeiten im Kreuzungsbereich	q2::inwork 12682,9089 12590,8977 12478,8829
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -676,7 +676,7 @@ Weserstr./Weichselstr.: Arbeiten im Kreuzungsbereich	q2::inwork 12682,9089 12590
 # REMOVED (laut osm nur noch construction=minor) --- Donaustr.: Fahrbahn an der Kreuzung Pannierstr. kann wegen Bauarbeiten noch nicht befahrbar sein	q2::inwork 12202,8895 12392,8724
 # 
 #: next_check_id: GRENZALLEE-2014
-#: last_checked: 2022-08-05 vvv
+#: last_checked: 2022-09-15 vvv
 #: check_frequency: 90d vvv
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q1 14150,6609 14137,6658 14179,6714 14179,6743
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
@@ -685,11 +685,11 @@ Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2022-08-05 vvv
+#: last_checked: 2022-09-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
-Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
-Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
+# REMOVED --- Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
+Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14310,7022 14276,7021 14245,7037 14236,7058 14196,7086
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -709,8 +709,8 @@ Neuköllnische Allee: Fahrbahn gesperrt	q3::inwork 14344,7003 14310,7022
 #: by: https://www.kms-sonne.de/assets/2022/02/Baustellenuebersicht-2022-02.pdf
 #: by: https://www.kms-sonne.de/assets/2022/08/Baustellenuebersicht-2022-08-web.pdf
 #: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaßname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022) (bis 1.9.2022) (bis 1.10.2022)
-#: last_checked: 2022-09-01
-#: check_frequency: 14d
+#: last_checked: 2022-09-15
+# REMOVED --- #: check_frequency: 14d
 #: next_check: 2022-10-01
 Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12368,8356 12582,8408
 # 
@@ -727,7 +727,7 @@ Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022) (bis 1.10.2022)
 #: also_indoor: traffic (G(zu früh+falsche Richtung),B)
 #: priority: #A
-#: last_checked: 2022-09-01
+#: last_checked: 2022-09-15
 #: check_frequency: 120d
 #: next_check: 2022-10-01
 Flughafenstr.: zwischen Karl-Marx-Str. und Isarstr. Richtung Westen gesperrt	q4::inwork; 12494,8501 12349,8464
@@ -1451,8 +1451,7 @@ Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8561 8759,8458 8720,8
 #: XXX_prog BS an der Boelckestr., ansonsten q1 oder q2
 (Fritz-Bräuning-Promenade): Bordstein, Fußgänger	q3 8731,8020 8623,8018
 (Teltowkanal, Nordufer): Fußgänger (eigentlich für Radfahrer verboten)	q2 8750,5173 9118,5328 9145,5323 9188,5333
-#: XXX_prog BS an der Kynaststr., ansonsten q1
-(Kynaststr. - Uferwanderweg): Fußgänger, Bordstein	q2 14843,10621 14911,10587
+# REMOVED --- #: XXX_prog BS an der Kynaststr., ansonsten q1 --- (Kynaststr. - Uferwanderweg): Fußgänger, Bordstein	q2 14843,10621 14911,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Fußgänger	q1 14797,10476 14820,10473 14861,10467
 #: note: früher vermutlich für Radfahrer frei, jetzt nicht mehr
 Am Rummelsburger See: Fußgänger, kurvenreich, Grünanlage	q3 15793,9334 15813,9378 15819,9430 15749,9558 15739,9583 15708,9607 15659,9647 15621,9704 15626,9710 15561,9809 15465,9860 15347,9922 15296,10000 15295,10022 15260,10048 15283,10087 15289,10092 15289,10097 15311,10127 15306,10142 15253,10171

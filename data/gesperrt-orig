@@ -3597,19 +3597,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED (hier mittlerweile offen) --- Pionierweg: wegen Bauarbeiten gesperrt	2::inwork 16026,8731 16074,8776 16084,8833
 # REMOVED (laut osm komplett freigegeben) --- Pionierweg: wegen Bauarbeiten gesperrt	2::inwork 16084,8833 16086,8860
 # REMOVED --- #: last_checked: 2022-06-28 --- #: check_frequency: 180d --- Verlängerung Zwieseler Str.: Baustellenabsperrung	2::inwork 19705,9039 19638,9070
-# 
-#: next_check_id: RUMMELSBURGERBUCHT-2021
-#: by: https://www.berliner-kurier.de/berlin/169-neue-wohnungen-mit-wasserblick-und-zu-bezahlbaren-mieten-li.182642 (Baustart einiger Häuser, Fertigstellung für September 2023 geplant)
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/howoge-neubau-rummelsburger-bucht-und-stralauer-halbinsel.1106/#post-16492
-#: by: https://www.howoge.de/wohnungsbau/neubauprojekte/kynaststrasse.html
-#: by: https://www.berliner-woche.de/rummelsburg/c-bauen/neue-sozialwohnungen-mit-blick-aufs-wasser_a323324
-#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/staedtische-und-private-gesellschaften-planen-hunderte-wohnungen_a334934 (Erwähnung der Hochbauarbeiten)
-#: XXX wird es hier nach den Bauarbeiten weiterhin einen Weg geben?
-#: last_checked: 2022-08-29
-#: check_frequency: 180d
-#: next_check: 2023-09-30
-(Kynaststr. - Paul-und-Paula-Ufer): Bauarbeiten, Weg existiert nicht mehr	2::inwork 14843,10621 14911,10587
-# 
+# REMOVED --- #: next_check_id: RUMMELSBURGERBUCHT-2021 --- #: by: https://www.berliner-kurier.de/berlin/169-neue-wohnungen-mit-wasserblick-und-zu-bezahlbaren-mieten-li.182642 (Baustart einiger Häuser, Fertigstellung für September 2023 geplant) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/howoge-neubau-rummelsburger-bucht-und-stralauer-halbinsel.1106/#post-16492 --- #: by: https://www.howoge.de/wohnungsbau/neubauprojekte/kynaststrasse.html --- #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/neue-sozialwohnungen-mit-blick-aufs-wasser_a323324 --- #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-bauen/staedtische-und-private-gesellschaften-planen-hunderte-wohnungen_a334934 (Erwähnung der Hochbauarbeiten) --- #: XXX wird es hier nach den Bauarbeiten weiterhin einen Weg geben? --- #: last_checked: 2022-08-29 --- #: check_frequency: 180d --- #: next_check: 2023-09-30 --- (Kynaststr. - Paul-und-Paula-Ufer): Bauarbeiten, Weg existiert nicht mehr	2::inwork 14843,10621 14911,10587
 # REMOVED (möglicherweise wieder offen) --- #: source_id: AdB/21-11-00135 (bis 11.03.2022) --- #: by: https://hohen-neuendorf.de/de/stadt-leben/aktuelles/bruecken-bei-birkenwerder-inbetriebnahme-noch-2021 --- #: also_indoor: traffic (H) --- #: osm_watch: way id="175828136" version="8" --- #: priority: #B --- #: last_checked: 2021-09-12 (wosch) --- #: next_check: 2022-03-11 --- Schönfließ - Summt: Brücke über die A10 wird neu gebaut	2::inwork 5752,30817 5787,30867
 # REMOVED (Hilfsbrücke existiert) --- #: osm_watch: way id="976563363" version="1" --- #: source_id: AdB/21-11-00134 (bis 17.12.2021) --- #: next_check: 2021-12-17 --- Fichteallee: Brücke über die A10 wird neu gebaut	2::inwork 2233,32334 2334,32485
 # REMOVED (möglicherweise wieder offen) --- #: source_id: AdB/21-11-00133 (bis 15.11.2021) (inaktiv) --- #: source_id: AdB/21-11-00133 (bis 21.12.2021) (inaktiv) --- #: by: https://viz.berlin.de/2021/12/a10-a24/ (Öffnung vor Weihnachten 2021) --- #: by: https://hohen-neuendorf.de/de/stadt-leben/aktuelles/bruecken-bei-birkenwerder-inbetriebnahme-noch-2021 --- #: add_fragezeichen: Ist die Brücke mittlerweile wieder geöffnet? --- #: also_indoor: traffic (G) --- #: osm_watch: way id="926868384" version="1" --- #: osm_watch: way id="926868383" version="2" --- #: priority: #B --- #: next_check: 2021-12-21 --- Stolper Weg: Brücke über die A10 wird neu gebaut	2::inwork 514,32607 525,32437
@@ -4467,7 +4455,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: osm_watch: way id="846595294" version="7"
 #: osm_watch: way id="38725490" version="16"
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-08-05 vvv
+#: last_checked: 2022-09-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 Bergiusstr.: wird vermutlich zurückgebaut	2::inwork 14051,6731 14106,6663
@@ -4481,7 +4469,7 @@ Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 1415
 #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-08-05
+#: last_checked: 2022-09-15
 #: check_frequency: 90d
 #: next_check: 2023-06-23
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022

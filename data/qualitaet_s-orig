@@ -7,6 +7,12 @@
 # 
 #: temporary vvv
 # 
+#: next_check_id: NEUKOELLNISCHEALLEE-2019
+#: last_checked: 2022-09-15
+#: check_frequency: 90d
+#: next_check: 2023-06-30
+Neuköllnische Allee: welliger Asphalt	Q2 14310,7022 14276,7021 14245,7037 14236,7058 14196,7086
+# 
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: next_check_id: DIESEL-2019
@@ -76,13 +82,13 @@ Hobrechtsfelder Chaussee (ab Kurve): Kopfsteinpflaster	Q2 15589,27116 15711,2792
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12012,16250 12090,16199
 #: note: die früheren schmalen Verbundsteinpflaster-Radwege werden nicht mehr genutzt (Fahrradstraße!)
 Weserstr.: asphaltiert	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12328,9117
-# REMOVED --- #: next_check_id: WESER-2021 --- #: XXX: während der Bauarbeiten ist der Radweg (schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität, Q2+) nicht befahrbar --- #: last_checked: 2022-03-12 --- #: check_frequency: 90d --- Weserstr.: mäßiges, teilweise schlechtes Kopfsteinpflaster	Q2-; 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 --- Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+; 12590,8977 12531,9009 12480,9037 12402,9080 12328,9117
+# REMOVED --- #: next_check_id: WESER-2021 --- #: XXX: während der Bauarbeiten ist der Radweg (schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität, Q2+) nicht befahrbar --- #: last_checked: 2022-03-12 --- #: check_frequency: 90d --- Weserstr.: mäßiges, teilweise schlechtes Kopfsteinpflaster	Q2-; 12328,9117 12406,9076 12480,9037 12524,9012 12590,8977 --- Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+; 12590,8977 12524,9012 12480,9037 12406,9076 12328,9117
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1192214.php
-Weserstr.: Asphalt	Q0 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
+Weserstr.: Asphalt	Q0 12328,9117 12406,9076 12480,9037 12524,9012 12590,8977
 #: next_check_id: WESER-2021
-#: last_checked: 2022-09-01
+#: last_checked: 2022-09-15
 #: check_frequency: 14d
-#: next_check: 2022-09-15
+# REMOVED --- #: next_check: 2022-09-15
 Weserstr.: Asphalt, Kreuzungsanbindungen noch nicht fertig	Q1 12590,8977 12740,8862
 Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+ 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Jessnerstr.: Asphalt mit Aufpflasterungen	Q0- 15077,11910 14986,11760 14946,11697 14849,11539
@@ -855,7 +861,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2022-08-13
+#: last_checked: 2022-09-15
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -2135,7 +2141,7 @@ Blumenthalstr.: Kopfsteinpflaster	Q2; 8996,5956 8976,6094
 Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8996,5956 9192,5930
 (Teltowkanal, Nordufer): Parkweg	Q2 8750,5173 9118,5328 9145,5323 9188,5333
 Selkestr.: Asphalt	Q0 12685,7497 12703,7370
-(Kynaststr. - Uferwanderweg): Parkweg	Q1 14843,10621 14911,10587
+# REMOVED --- (Kynaststr. - Uferwanderweg): Parkweg	Q1 14843,10621 14911,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14797,10476 14820,10473 14861,10467
 # REMOVED --- #: next_check_id: KYNASTSTRASSE-2018 --- #: last_checked: 2019-07-06 --- #: next_check: 2019-06-15 --- (Kynaststr. - Paul-und-Paula-Ufer): teilweise unbefestigt	Q2 14815,10516 14820,10473
 Speicherkai: Kleinsteinpflaster	Q1 15311,10127 15306,10142 15253,10171
@@ -2227,8 +2233,8 @@ Finowstr. (Neukölln): Kopfsteinpflaster	Q2 13227,8692 13171,8621 13124,8562
 Finowstr. (Neukölln): Asphalt	Q0 13124,8562 13011,8416
 Kleine Innstr.: Asphalt	Q0 13171,8621 13262,8554
 Erlanger Str.: Kopfsteinpflaster	Q2- 12293,8494 12166,8557
-Tellstr.: Kopfsteinpflaster	Q2 12316,8921 12402,9080
-Jansastr.: Kopfsteinpflaster	Q2 12435,8853 12531,9009
+Tellstr.: Kopfsteinpflaster	Q2 12323,8917 12406,9076
+Jansastr.: Kopfsteinpflaster	Q2 12429,8856 12524,9012
 Ossastr.: Kopfsteinpflaster	Q2 12623,9134 12682,9089
 Ossastr.: gutes Kopfsteinpflaster	Q1 12836,8980 12910,8929
 Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13279,8947 13458,8805
@@ -30950,7 +30956,7 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2 22985,-1319
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 21828,-1015
 Einmündungsbereich mit Kleinsteinpflaster	Q1- 13245,7742
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12682,9089
-Kreuzungsbereich mit Kopfsteinpflaster	Q2 12590,8977
+Kreuzungsbereich asphaltiert	Q0 12590,8977
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12740,8862
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 12836,8980
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 11769,8515
@@ -31199,9 +31205,9 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2- 12374,9542
 Kreuzungsbereich mit Kopfsteinpflaster	Q2- 12270,9362
 Einmündungsbereich asphaltiert	Q0 12412,9610
 Einmündungsbereich asphaltiert	Q0 12250,9691
-Einmündungsbereich asphaltiert	Q0 12402,9080
+Einmündungsbereich asphaltiert	Q0 12406,9076
 Einmündungsbereich asphaltiert	Q0 12480,9037
-Einmündungsbereich asphaltiert	Q0 12531,9009
+Einmündungsbereich asphaltiert	Q0 12524,9012
 Einmündungsbereich mit Kopfsteinpflaster	Q2- 12950,9132
 Einmündungsbereich mit Kopfsteinpflaster	Q2- 13078,8992
 Kreuzungsbereich asphaltiert	Q0 12210,10716

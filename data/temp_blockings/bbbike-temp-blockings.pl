@@ -1061,7 +1061,7 @@ EOF
        until => $isodate2epoch->("2019-10-06 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9, start => "2021-10-25T00:00:00"]],
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 7,
        text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -4527,12 +4527,12 @@ EOF
        text  => ' Sonnenallee Zwischen Kreuzung Wildenbruchstraße und Pannierstraße in beiden Richtungen gesperrt, Veranstaltung, Dauer: 06.05.2006 06:00 Uhr bis 07.05.2006 23:59 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 12435,8853 12316,8921
-	2 12435,8853 12478,8829
+	2 12429,8856 12323,8917
+	2 12429,8856 12478,8829
 	2 12920,8487 12765,8605
 	2 12478,8829 12628,8711
 	2 12736,8629 12670,8679 12628,8711
-	2 12240,8964 12316,8921
+	2 12240,8964 12323,8917
 EOF
      },
      { from  => undef, # 
@@ -7649,7 +7649,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005045',
        data  => <<EOF,
-	2::temp 12920,8487 12765,8605 12736,8629 12670,8679 12628,8711 12478,8829 12435,8853 12316,8921 12240,8964
+	2::temp 12920,8487 12765,8605 12736,8629 12670,8679 12628,8711 12478,8829 12429,8856 12323,8917 12240,8964
 EOF
      },
      { from  => 1174640400, # 2007-03-23 10:00
@@ -10047,7 +10047,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006665',
        data  => <<EOF,
-	2::temp 12920,8487 12765,8605 12736,8629 12670,8679 12628,8711 12478,8829 12435,8853 12316,8921 12240,8964
+	2::temp 12920,8487 12765,8605 12736,8629 12670,8679 12628,8711 12478,8829 12429,8856 12323,8917 12240,8964
 EOF
      },
      { from  => 1190067574, # 2007-09-18 00:19
@@ -10565,7 +10565,7 @@ EOF
        text  => 'Bauarbeiten am Ostkreuz, Durchfahrt nicht mehr möglich',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 14911,10587 14843,10621
+# REMOVED ---	2::inwork 14911,10587 14843,10621
 EOF
      },
      { from  => 1193776707, # 2007-10-30 21:38
@@ -21338,17 +21338,18 @@ EOF
 	q4::inwork; 9275,4672 9405,4667 9494,4658 9695,4638 10010,4606
 EOF
      },
-     { from  => $isodate2epoch->("2021-09-20 06:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-09-22 06:00:00"), #
+     { from  => $isodate2epoch->("2022-09-19 06:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-09-22 06:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 9, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 5, # 25.10.2022
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, ab 20.09.2021',
+       #recurrence_prewarn_days => 5, # 25.10.2022
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, ab 20.09.2022',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
 #: by: https://www.bmw-berlin-marathon.com/
 #: by: https://viz.berlin.de/2021/09/berlin-marathon/
+#: by: https://www.bmw-berlin-marathon.com/dein-rennen/strecke/interaktive-karte/
 # REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -21356,12 +21357,12 @@ EOF
 # REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2021-09-22 06:00:00"),
-       until => $isodate2epoch->("2021-09-27 06:00:00"),
+     { from  => $isodate2epoch->("2022-09-22 06:00:00"),
+       until => $isodate2epoch->("2022-09-26 06:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 9, start => "2020-10-25T00:00:00"]],
-       recurrence_prewarn_days => 5, # 25.10.2022
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, vom 23.09.2021 bis 27.09.2021',
+       #recurrence_prewarn_days => 5, # 25.10.2022
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, vom 22.09.2022 bis 26.09.2022',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
@@ -32396,8 +32397,8 @@ EOF
        text  => 'Behelfsbrücke Neuköllnische Allee: kurzfristige Sperrungen von maximal 20 Minuten Dauer möglich, vom 27.1.2021 bis ca. 17.2.2021',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://viz.berlin.de/2021/01/verkehrsvorschau27012021/
-	2::inwork 14196,7086 14223,7084 14235,7100 14323,7080 14310,7022
+# REMOVED --- #: by: https://viz.berlin.de/2021/01/verkehrsvorschau27012021/
+# REMOVED ---	2::inwork 14196,7086 14223,7084 14235,7100 14323,7080 14310,7022
 EOF
      },
      { from  => undef, # 
@@ -32967,31 +32968,29 @@ EOF
 	q4::inwork; 15256,11884 15300,11965
 EOF
      },
-     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-06-11 00:00:00") }, # 1 Tag Vorlauf
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-15 00:00:00") }, # 1 Tag Vorlauf
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-15 18:00:00") },
-       text  => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 12.06. bis 15.09.',
+       text  => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
 #: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anzengruber-und-sanderstrasse-werden-sonntags-teilweise-zum-spielplatz_a348422
-#: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen
-#: next_check: 2022-09-15
+# REMOVED (done) --- #: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen --- #: next_check: 2022-09-15
 	q4::temp::play 11917,9663 12074,9689
 EOF
      },
-     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-06-18 00:00:00") }, # 1 Tag Vorlauf
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-15 00:00:00") }, # 1 Tag Vorlauf
        until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-15 18:00:00") },
-       text  => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 19.06. bis 15.09.',
+       text  => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
 #: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anzengruber-und-sanderstrasse-werden-sonntags-teilweise-zum-spielplatz_a348422
-#: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen
-#: next_check: 2022-09-15
+# REMOVED (done) --- #: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen --- #: next_check: 2022-09-15
 	q4::temp::play 13038,8394 12856,8344
 EOF
      },
@@ -34169,19 +34168,27 @@ EOF
 	q4::inwork; 9227,8890 9417,8890
 EOF
      },
-     { from  => 1637599882, # 2021-11-22 17:51
-       until => 1640036291, # undef, # 1638831600, # 2021-12-07 00:00
-       text  => 'Scharnweberstr./Weichselstr.: Gleisbauarbeiten, Fahrbahn gesperrt, Gehweg für Radfahrer frei, Ende der Bauarbeiten unbekannt', # --- bis 6.12.2021
+     { from  => $isodate2epoch->("2022-09-13 00:00:00"), # 1637599882, # 2021-11-22 17:51
+       until => $isodate2epoch->("2022-12-09 18:00:00"), # 1640036291, # undef, # 1638831600, # 2021-12-07 00:00
+       text  => 'Scharnweberstr./Weichselstr.: Gleisbauarbeiten, Fahrbahn gesperrt, abschnittsweise Gehweg für Radfahrer frei, voraussichtlich bis 9.12.2022',
        type  => 'handicap',
        data  => <<EOF,
-#: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366
-#: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fährt wieder, aber die Bauarbeiten sind noch nicht beendet)
+# REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366 --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fährt wieder, aber die Bauarbeiten sind noch nicht beendet)
 # REMOVED --- #: also_indoor: traffic (G,H) --- #: last_checked: 2021-12-18 vvv --- #: check_frequency: 2d vvv
-	q3::inwork 14965,11924 15077,11910
-	q3::inwork; 15077,11910 15133,11902 15256,11884
-	q3::inwork 14965,11924 14888,11934 14836,11842
-#: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden
-Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1240157.php (unklare Ortsangaben, 1.9.2022 - 17.12.2022)
+#: by: https://berliner-abendblatt.de/2022/09/10/bauarbeiten-strassenbahnlinie-m13-wird-verkuerzt/ (bis 9.12.2022)
+#: last_checked: 2022-09-15 vvv
+#: next_check: 2022-12-09 vvv
+Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
+Weichselstr./Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924
+Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork 15077,11910 15133,11902 15256,11884
+Scharnweberstr./Weichselstr.: keine Freigabe, zumindest nicht ab Jessnerstr.	q4::inwork; 15077,11910 14965,11924 14888,11934 14836,11842
+#: next_check ^^^
+#: last_checked ^^^
+#	q3::inwork 14965,11924 15077,11910
+#	q3::inwork; 15077,11910 15133,11902 15256,11884
+#	q3::inwork 14965,11924 14888,11934 14836,11842
+# REMOVED --- #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden --- Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
 # REOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
@@ -34872,7 +34879,7 @@ EOF
 #: next_check_id: BRAUNSCHWEIGER-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
-#: last_checked: 2022-09-03 vvv
+#: last_checked: 2022-09-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-09-30 vvv
 #: also_indoor: traffic (G(unvollständig),B) vvv
@@ -35024,7 +35031,7 @@ EOF
 #: note: Baustelle existiert weiterhin, trotz der entfernten VIZ-Meldung; laut rbb bis 30.11.2022
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
 #: also_indoor: traffic (G,H,B) vvv
-#: last_checked: 2022-08-11 vvv
+#: last_checked: 2022-09-15 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-08-02 vvv
 	q4::inwork; 15560,7400 15693,7512
@@ -35136,9 +35143,10 @@ EOF
        text  => 'Hänselstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Südwesten, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: HAENSEL-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (G(falsch))
-#: last_checked: 2022-08-11
+#: also_indoor: traffic (ex-G(falsch))
+#: last_checked: 2022-09-15
 	q4::inwork; 15436,7031 15555,7133 15695,7254
 EOF
      },
@@ -35859,7 +35867,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1663245152, # undef, # XXX
        # früher: Waldbrand im Grunewald: Kronprinzessinenweg, Wege rund um den Sprengplatz und vermutlich auch weitere Straßen (Havelchaussee, Hüttenweg...) sind gesperrt
        text  => 'Waldbrand im Grunewald: Kronprinzessinenweg und Wege rund um den Sprengplatz sind weiterhin gesperrt, voraussichtlich bis Ende September 2022',
        type  => 'gesperrt',
@@ -36170,6 +36178,26 @@ EOF
        source_id => 'viz2021:13.37203,52.51939,02.09.2022,08:00',
        data  => <<EOF,
 	2::temp 8306,12609 8207,12606
+EOF
+     },
+     { from  => 1662564323, # 2022-09-07 17:25
+       until => 1667257199, # 2022-10-31 23:59
+       text  => 'Köpenicker Landstr./Baumschulenstr.: Kreuzungsbereich teilweise gesperrt, Umwege bei der Fahrt Richtung Nordwesten, außerdem Einbahnstraßenregelung in der Scheiblerstr., voraussichtlich bis Ende Oktober 2022',
+       type  => 'handicap',
+       source_id => 'https://nitter.cz/VIZ_Berlin/status/1569967900588474368#m',
+       data  => <<EOF,
+Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr.	q3::inwork; 16563,7012 16428,7144
+Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
+EOF
+     },
+     { from  => 1662501600, # 2022-09-07 00:00
+       until => 1664488799, # 2022-09-29 23:59
+       text  => 'Bäkebrücke: Bauarbeiten, Sperrung, angeblich sind Radfahrer nicht betroffen, bis etwa Ende September 2022',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: BAEKEBRUECKE-2022
+#: by: https://nitter.cz/VIZ_Berlin/status/1567764510751997953#m
+	2::inwork 4587,3097 4659,3065
 EOF
      },
     );

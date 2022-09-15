@@ -7,6 +7,11 @@
 # 
 #: temporary vvv
 # 
+#: next_check_id: HAENSEL-2022
+#: last_checked: 2022-09-15
+#: XXX Ampel befindet sich südöstlich der Einmündung
+Kiefholzstr./Hänselstr.: provisorische Fußgängerampel	F::inwork 15695,7254
+# 
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=659363#post659363 (vermutlich steht die Ampel im Zusammenhang mit den Bauarbeiten)
 #: by: https://officehome.de/ostkreuz-campus-a
 #: osm_watch: way id="936801541" version="3"
@@ -1082,6 +1087,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX: Ampel temporär verlegt
 # XXX	F 8065,11349
 #: note: Anforderungsampel
+#: osm_watch: node id="9858938170" version="1"
 #: last_checked: 2022-06-24
 #: check_frequency: 180d
 #: next_check: 2026-01-01
@@ -1531,7 +1537,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 # REMOVED --- #: osm_watch: node id="7241153386" version="4"
 #: osm_watch: node id="9498243538" version="1"
-#: last_checked: 2022-08-05 (manchmal ausgeschaltet (abends?))
+#: last_checked: 2022-09-15 (manchmal ausgeschaltet (abends?))
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
 	F::inwork 12318,8645
@@ -3293,7 +3299,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20221231 vvv
-#: last_checked: 2022-08-05 vvv
+#: last_checked: 2022-09-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
@@ -3307,10 +3313,10 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED --- #: note: Anforderungsampel --- #: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen --- #: last_checked: 2021-04-04 ---	F::inwork 14239,6875
 #: note: Anforderungsampel
 #: XXX Ampel wird verstetigt, siehe auch Verschwenkung der Bergiusstr.
-#: last_checked: 2022-08-05
+#: last_checked: 2022-09-15
 	F::inwork 14139,6786
 #: note: Anforderungsampel
-#: last_checked: 2022-08-05
+#: last_checked: 2022-09-15
 	F::inwork 13979,6700
 #: next_check ^^^
 #: valid ^^^
@@ -3318,7 +3324,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2022-07-06
+#: last_checked: 2022-09-15
 #: check_frequency: 90d
 #: next_check: 2023-06-30 vvv
 	X::inwork 13265,6972
@@ -3336,7 +3342,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2022-08-05
+#: last_checked: 2022-09-15
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 

@@ -1,754 +1,6 @@
-$#temp_blocking = 30;
+$#temp_blocking = 730;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
-#: by: https://www.family-and-friends-ev.de/?date=20210418 (10.-12. September 2021)
-#: by: https://www.vinoflix.com/blog/wein-und-winzerfest-lichtenrade
-#: by: https://www.visitberlin.de/en/event/wine-festival-lichtenrade
-#: by: https://www.berlin.de/tickets/volksfeste-strassenfeste/35-wein-und-winzerfest-29d68374-a7db-402e-9595-697a7fb58cc1/
-	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'from' => 1662588000,
-         'id' => 31,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              6,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 09.09.2022 14:00 Uhr bis 11.09.2022 20:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1662922800
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       {
-         'data' => '#: note: keine Anzeichen für eine Veranstaltung 2021 
-Alt-Rudow	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
-Krokusstr.	2::temp 16610,1715 16767,1831
-',
-         'from' => 1662112800,
-         'id' => 112,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              8,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.hier-in-rudow.de/meilenfeste.html',
-         'text' => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. sowie Krokusstr. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (03.09.2022 bis 04.09.2022)',
-         'type' => 'gesperrt',
-         'until' => 1662328799
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20201002
 #: by: https://twitter.com/VIZ_Berlin/status/1312229648558850048
@@ -2778,31 +2030,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.laubinger.de/termine/50-fest-an-der-panke/
-#: by: https://www.wollenschlaeger-berlin.de/51-fest-an-der-panke/
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1226411.php (evtl. nur auf der Nordseite?)
-	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10228,18196 10320,18197 10469,18262 10487,18270 10660,18345
-	2::temp 10602,18382 10562,18506 10532,18601
-',
-         'from' => 1662674400,
-         'id' => 2281,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (10.09.2022-11.09.2022)',
-         'type' => 'gesperrt',
-         'until' => 1662933599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2946,8 +2174,86 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '#: next_check_id: BERLINMARATHON-RECURRING
+#: by: https://www.bmw-berlin-marathon.com/
+#: by: https://viz.berlin.de/2021/09/berlin-marathon/
+#: by: https://www.bmw-berlin-marathon.com/dein-rennen/strecke/interaktive-karte/
+# REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
+	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1663560000,
+         'id' => 2387,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              9,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, ab 20.09.2022',
+         'type' => 'gesperrt',
+         'until' => 1663819200
+       },
+       {
+         'data' => '#: next_check_id: BERLINMARATHON-RECURRING
+#: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00
+#: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30
+# REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
+	2::temp 8573,12325 8540,12420
+	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	2::temp 8119,12414 8055,12186
+	2::temp 8538,12245 8522,12239 8466,12197 8327,12174 8215,12156 8122,12147 8049,12140 8018,12135 7823,12120 7775,12114 7429,12070
+	2::temp 8538,12245 8522,12187 8453,12099 8262,11883 8244,11878 8221,11876 8167,11865 8140,11850 8026,11764
+	2::temp 8546,12279 8391,12389 8354,12416
+	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
+	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
+	3 7429,12070 7383,12095 7031,12320
+	3 7031,12320 7383,12095 7429,12070
+	3 7823,12120 7816,12150 7822,12201 7875,12363
+	3 7875,12363 7822,12201 7816,12150 7823,12120
+	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612
+	2::temp 8207,12606 8206,12734 8206,12757
+	3 7945,12592 8122,12603 8120,12756
+	3 8120,12756 8122,12603 7945,12592
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+#: note: die Wege im südöstlichen Teil des Tiergartens sind vermutlich nur am Sa & So gesperrt
+	2::temp 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775 8203,11686
+	2::temp 8327,12174 8244,11878 8210,11775 8172,11679
+	2::temp 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
+	2::temp 8055,12186 8049,12140 8034,12093 8004,12074 7999,12040 8022,12016 8020,11937 8016,11770
+	2::temp 7823,12120 7832,12036 7822,11952 7793,11878
+	2::temp 7775,12114 7772,12040 7717,11918
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1663819200,
+         'id' => 2388,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              12,
+                              'months',
+                              9,
+                              'start',
+                              '2020-10-25T00:00:00'
+                            ]
+                          ],
+         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, vom 22.09.2022 bis 26.09.2022',
+         'type' => 'gesperrt',
+         'until' => 1664164800
+       },
        undef,
        undef,
        undef,
@@ -3354,34 +2660,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.gratis-in-berlin.de/festivals/item/2056177-moabiter-kiezfest-2022
-#: by: https://www.gratis-in-berlin.de/images/stories/tipps/l_plakat_kiezfest_2022_dina4_2.jpg
-# REMOVED --- : tempex YYYY09 & sa2 & T14-T18
-# REMOVED --- : tempex YYYY09 & sa3 & T14-T18
-# REMOVED --- : tempex YYYY09 & sa1 & T12-T21
-# REMOVED ---	2::temp 5857,13342 5868,13441 5882,13548
-	2::temp 5857,13342 5868,13441 5956,13433 5956,13330
-',
-         'from' => 1662674400,
-         'id' => 2625,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              8,
-                              'start',
-                              '2021-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.turmstrasse.de/aktuelles',
-         'text' => 'Bremer Str., Jonasstr., Arminiusstr.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 10. September 2022, 12 bis 21 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1662836400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4919,14 +4198,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
 #: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anzengruber-und-sanderstrasse-werden-sonntags-teilweise-zum-spielplatz_a348422
-#: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen
-#: next_check: 2022-09-15
+# REMOVED (done) --- #: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen --- #: next_check: 2022-09-15
 	q4::temp::play 11917,9663 12074,9689
 ',
-         'from' => 1654898400,
+         'from' => 1652565600,
          'id' => 3376,
          'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
-         'text' => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 12.06. bis 15.09.',
+         'text' => 'Sanderstr.: zwischen Hobrechtstr. und Friedelstr. sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
          'type' => 'handicap',
          'until' => 1663257600
        },
@@ -4934,14 +4212,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1214512.php
 #: by: https://berliner-abendblatt.de/2022/06/08/zwei-spielstrassen-fuer-neukoelln/
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anzengruber-und-sanderstrasse-werden-sonntags-teilweise-zum-spielplatz_a348422
-#: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen
-#: next_check: 2022-09-15
+# REMOVED (done) --- #: XXX Spielstraße ab 2023 vom 15.05. -> from+text anpassen --- #: next_check: 2022-09-15
 	q4::temp::play 13038,8394 12856,8344
 ',
-         'from' => 1655503200,
+         'from' => 1652565600,
          'id' => 3377,
          'source_id' => 'https://www.berliner-woche.de/neukoelln/c-verkehr/zwei-spielstrassen-freigegeben_a309426',
-         'text' => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 19.06. bis 15.09.',
+         'text' => 'Anzengruberstr.: zwischen Donaustr. und Sonnenallee sonntags zwischen 14 und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 15.05. bis 15.09.',
          'type' => 'handicap',
          'until' => 1663257600
        },
@@ -5173,7 +4450,31 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366 --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fährt wieder, aber die Bauarbeiten sind noch nicht beendet)
+# REMOVED --- #: also_indoor: traffic (G,H) --- #: last_checked: 2021-12-18 vvv --- #: check_frequency: 2d vvv
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1240157.php (unklare Ortsangaben, 1.9.2022 - 17.12.2022)
+#: by: https://berliner-abendblatt.de/2022/09/10/bauarbeiten-strassenbahnlinie-m13-wird-verkuerzt/ (bis 9.12.2022)
+#: last_checked: 2022-09-15 vvv
+#: next_check: 2022-12-09 vvv
+Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
+Weichselstr./Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924
+Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork 15077,11910 15133,11902 15256,11884
+Scharnweberstr./Weichselstr.: keine Freigabe, zumindest nicht ab Jessnerstr.	q4::inwork; 15077,11910 14965,11924 14888,11934 14836,11842
+#: next_check ^^^
+#: last_checked ^^^
+#	q3::inwork 14965,11924 15077,11910
+#	q3::inwork; 15077,11910 15133,11902 15256,11884
+#	q3::inwork 14965,11924 14888,11934 14836,11842
+# REMOVED --- #: note: Fahrbahn kann hier benutzt werden, allerdings nur Kopfsteinpflaster, und q=Q2 kann nicht spezifiziert werden --- Kopfsteinpflaster	q2::inwork; 15256,11884 15133,11902 15077,11910
+# REOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
+',
+         'from' => 1663020000,
+         'id' => 3479,
+         'text' => 'Scharnweberstr./Weichselstr.: Gleisbauarbeiten, Fahrbahn gesperrt, abschnittsweise Gehweg für Radfahrer frei, voraussichtlich bis 9.12.2022',
+         'type' => 'handicap',
+         'until' => 1670605200
+       },
        undef,
        undef,
        undef,
@@ -5518,7 +4819,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: BRAUNSCHWEIGER-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
-#: last_checked: 2022-09-03 vvv
+#: last_checked: 2022-09-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-09-30 vvv
 #: also_indoor: traffic (G(unvollständig),B) vvv
@@ -5605,7 +4906,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: note: Baustelle existiert weiterhin, trotz der entfernten VIZ-Meldung; laut rbb bis 30.11.2022
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
 #: also_indoor: traffic (G,H,B) vvv
-#: last_checked: 2022-08-11 vvv
+#: last_checked: 2022-09-15 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-08-02 vvv
 	q4::inwork; 15560,7400 15693,7512
@@ -5659,9 +4960,10 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        undef,
        {
-         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (G(falsch))
-#: last_checked: 2022-08-11
+         'data' => '#: next_check_id: HAENSEL-2022
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: also_indoor: traffic (ex-G(falsch))
+#: last_checked: 2022-09-15
 	q4::inwork; 15436,7031 15555,7133 15695,7254
 ',
          'from' => undef,
@@ -5971,16 +5273,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'type' => 'gesperrt',
          'until' => 1672495200
        },
-       {
-         'data' => '	2::inwork 42833,41088 42225,41215 41992,41263 39354,41395
-',
-         'from' => 1653804000,
-         'id' => 3594,
-         'source_id' => '226400817',
-         'text' => 'Falkenberg: K6431 von Gersdorf bis Ackermannshof Deckensanierung, Sperrung der Straße, bis 09.09.2022',
-         'type' => 'gesperrt',
-         'until' => 1662760799
-       },
+       undef,
        {
          'data' => '#: by: https://nitter.it/VIZ_Berlin/status/1552156830029185024#m
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllwVlhWTFh3QU11UF9MLmpwZw== (Korrektur)
@@ -6011,83 +5304,7 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
          'until' => 1671231600
        },
        undef,
-       {
-         'data' => '#: by: https://nitter.it/VIZ_Berlin/status/1555042445792092164#m
-#: by: https://berliner-abendblatt.de/2022/08/04/feuerwehr-einsatz-im-grunewald-zieht-sich-bis-freitag/
-#: by: https://nitter.it/VIZ_Berlin/status/1555249442940395524#m
-#: by: https://viz.berlin.de/2022/08/waldbrand-im-grunewald/ (bis auf Weiteres)
-#: by: https://berliner-abendblatt.de/2022/08/06/bahn-kann-wieder-durch-berliner-grunewald-fahren/ (Avus mindestens bis 2022-08-07 gesperrt)
-#: by: https://berliner-abendblatt.de/2022/08/06/feuerwehr-noch-einige-tage-sperrkreis-um-sprengplatz/
-#: by: https://nitter.it/VIZ_Berlin/status/1556286617232490498#m
-#: by: https://berliner-abendblatt.de/2022/08/07/feuerwehr-will-gefahrenbereich-um-sprengplatz-verkleinern-2/
-#: by: https://berliner-abendblatt.de/2022/08/08/berliner-feuerwehr-autobahn-avus-bleibt-weiter-gesperrt/
-#: by: https://berliner-abendblatt.de/2022/08/09/hubschrauber-sollen-sprengplatz-mit-wasser-aus-luft-kuehlen/
-#: by: https://nitter.cz/VIZ_Berlin/status/1556967983343439877#m
-#: by: https://nitter.cz/VIZ_Berlin/status/1556901867388604417#m
-#: by: https://berliner-abendblatt.de/2022/08/10/autobahn-115-nach-grunewald-brand-wieder-freigegeben/ (Havelchaussee wird auch freigegeben, Hüttenweg nicht)
-#: by: https://nitter.cz/Berliner_Fw/status/1557393953921634306#m (Kronprinzessinenweg vermutlich weiterhin gesperrt)
-#: by: https://www.berliner-zeitung.de/news/grossbrand-im-berliner-grunewald-es-ist-mit-explosionen-zu-rechnen-li.253251
-#: by: https://berliner-abendblatt.de/2022/08/11/berliner-feuerwehr-faehrt-einsatz-nach-waldbrand-zurueck/
-#: by: https://nitter.cz/VIZ_Berlin/status/1557765236052082690#m
-#: by: https://nitter.cz/VIZ_Berlin/status/1558046983465615360#m
-#: by: https://nitter.cz/VIZ_Berlin/status/1558124118003879937#m (Kronprinzessinenweg weiterhin gesperrt)
-#: by: https://nitter.cz/VIZ_Berlin/status/1558123538028138498#m (Hüttenweg ebenso)
-#: by: https://nitter.cz/Kemistorm/status/1559047585553231872#m
-#: by: https://nitter.cz/brliner5/status/1558910908885237760#m
-#: by: https://viz.berlin.de/2022/08/sprengplatz-grunewald/ (Kronprinzessinenweg weiterhin gesperrt)
-#: by: https://nitter.cz/VIZ_Berlin/status/1559866883565912064#m (Sperrung könnte mehrere Wochen lang andauern)
-#: by: https://nitter.cz/VIZ_Berlin/status/1560176606701830145#m
-#: by: https://nitter.cz/P_Groeschel/status/1561631350616199168#m
-#: by: https://nitter.cz/VIZ_Berlin/status/1561963807618080768#m
-#: by: https://nitter.cz/VIZ_Berlin/status/1562408060727033856#m
-#: by: https://nitter.cz/polizeiberlin/status/1562774623414255617#m
-#: by: https://nitter.cz/VIZ_Berlin/status/1562798467298525185#m
-#: by: https://viz.berlin.de/2022/08/sprengplatz-grunewald/?date=20220825 (bis Ende September 2022)
-#: by: https://berliner-abendblatt.de/2022/08/29/vollsperrung-vier-bomben-legen-die-avus-lahm/
-#: by: https://berliner-abendblatt.de/2022/08/30/nach-brand-im-grunewald-soll-munition-gesprengt-werden/https://berliner-abendblatt.de/2022/08/30/nach-brand-im-grunewald-soll-munition-gesprengt-werden/
-#: also_indoor: url https://nitter.cz/search?f=tweets&q=Kronprinzessinnenweg&since=2022-09-04&until=&near=
-#: source_id: viz2021:13.194739,52.449865,04.08.2022,07:00 (inaktiv)
-#: source_id: viz2021:13.242156,52.468429,04.08.2022,06:32 (inaktiv)
-#: source_id: viz2021:13.250049,52.457088,04.08.2022,06:31 (inaktiv)
-#: source_id: viz2021:13.219236,52.456277,11.08.2022,07:03
-#: last_checked: 2022-09-04 (research) vvv
-#: check_frequency: 1d vvv
-#: next_check: 2022-09-30 vvv
-#Hüttenweg (westlicher Abschnitt)	2::temp -1854,6898 -1521,6972 -1241,7017 -1006,6911
-Hüttenweg (westlicher Abschnitt)	1::temp -927,6888 -1006,6911
-#: osm_watch: way id="50830991" version="22"
-Kronprinzessinenweg (NN)	2::temp -927,6888 -2218,5133
-Kronprinzessinenweg (NN)	1::temp -3296,3686 -2218,5133
-#Königsweg	2::temp 425,8766 100,8339 -363,7630 -643,7252 -913,6905 -927,6888
-#Hüttenweg - Havelchaussee	2::temp -2668,6862 -2581,6834 -2468,6839 -2340,6910 -2246,6925 -2095,6918 -1934,6804
-#Verbindungschaussee	2::temp -360,9193 -310,8989 -345,8899 -1112,7891 -1248,7704 -1328,7597
-#Verlängerung Verbindungschaussee	2::temp -1328,7597 -1854,6898 -1934,6804
-Verlängerung Verbindungschaussee	2::temp -1934,6804 -2600,5888
-#Verlängerung Verbindungschaussee	2::temp -2600,5888 -2825,5588 -3021,5328 -3093,5223 -3605,4536
-#Fischerhüttenweg	2::temp -2825,5588 -2528,5366
-Fischerhüttenweg	2::temp -2528,5366 -2218,5133
-#Fischerhüttenweg	2::temp -2218,5133 -2112,5050 -2059,5011 -1654,4703 -1443,4542
-#Schwarzer Weg	2::temp -2655,6906 -2668,6862 -2632,6789 -2638,6641
-# weitere Sperrungen im Grunewald möglich (Havelchaussee, Koenigsallee, Hüttenweg)
-#Onkel-Tom-Str.	2::temp 40,5606 -119,5885 -150,6168 -138,6681
-#Koenigsallee	2::temp -138,6681 674,7758
-#Teltower Weg	2::temp -119,5885 -182,5927 -288,6101
-#Hüttenweg	2::temp -138,6681 -739,6838 -927,6888
-#Havelchaussee	2::temp -2774,10345 -3025,10116 -3178,9953 -3412,9755 -3426,9684 -3347,9541 -3213,9425 -3140,9294 -3073,9061 -3283,8739 -3389,8624 -3578,8578 -3615,8496 -3567,8031 -3561,7964 -3536,7856 -3531,7825 -3496,7677 -3355,6874 -3382,6821 -3483,6789 -3530,6781 -3589,6721 -3598,6572 -3606,6407 -3723,6254 -3880,6142 -3944,6034 -4003,5621 -4046,5505 -4072,5227 -3962,5129 -3889,4967 -3807,4794 -3729,4687 -3605,4536 -3490,4212 -3296,3686
-#Kronprinzessinenweg (H)	2::temp -3296,3686 -3680,3160 -3768,3069 -4001,2858
-#Schildhornweg	2::temp -1588,9194 -1484,9175 -1435,9168 -1279,9093
-#Teltower Weg (nordwestlicher Abschnitt)	2::temp -913,6905 -1020,7446 -1040,7550 -1112,7891 -1317,8836 -1336,9001 -1435,9168
-#Teltower Weg (nordwestlicher Abschnitt)	2::temp -1435,9168 -1487,9271 -1529,9465 -1464,9626 -1467,9768 -1491,9801 -1602,9915 -1860,10317
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 3599,
-         'text' => 'Waldbrand im Grunewald: Kronprinzessinenweg und Wege rund um den Sprengplatz sind weiterhin gesperrt, voraussichtlich bis Ende September 2022',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '	q4::inwork; 13622,12806 13818,12897
@@ -6137,21 +5354,7 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022)
-#: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
-#: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
-#: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
-	q4::inwork 1514,5163 1573,5152
-	q2::inwork 1573,5152 1964,5070
-',
-         'from' => 1660582743,
-         'id' => 3605,
-         'source_id' => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/',
-         'text' => 'Hüttenweg: Anbindung Clayallee gesperrt',
-         'type' => 'handicap',
-         'until' => 1662994800
-       },
+       undef,
        {
          'data' => '#: source_id: viz2021:13.56812,52.40301,20.08.2022,06:00
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237046.php
@@ -6305,15 +5508,28 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
          'type' => 'handicap',
          'until' => undef
        },
+       undef,
        {
-         'data' => '	2::temp 8306,12609 8207,12606
+         'data' => 'Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr.	q3::inwork; 16563,7012 16428,7144
+Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
 ',
-         'from' => 1662012000,
-         'id' => 3619,
-         'source_id' => 'viz2021:13.37203,52.51939,02.09.2022,08:00',
-         'text' => 'Paul-Löbe-Allee: Veranstaltung, zwischen Annemarie-Renger-Str. und Konrad-Adenauer-Str. gesperrt, vom 02.09.2022 08:00 bis 04.09.2022 23:00',
+         'from' => 1662564323,
+         'id' => 3620,
+         'source_id' => 'https://nitter.cz/VIZ_Berlin/status/1569967900588474368#m',
+         'text' => 'Köpenicker Landstr./Baumschulenstr.: Kreuzungsbereich teilweise gesperrt, Umwege bei der Fahrt Richtung Nordwesten, außerdem Einbahnstraßenregelung in der Scheiblerstr., voraussichtlich bis Ende Oktober 2022',
+         'type' => 'handicap',
+         'until' => 1667257199
+       },
+       {
+         'data' => '#: next_check_id: BAEKEBRUECKE-2022
+#: by: https://nitter.cz/VIZ_Berlin/status/1567764510751997953#m
+	2::inwork 4587,3097 4659,3065
+',
+         'from' => 1662501600,
+         'id' => 3621,
+         'text' => 'Bäkebrücke: Bauarbeiten, Sperrung, angeblich sind Radfahrer nicht betroffen, bis etwa Ende September 2022',
          'type' => 'gesperrt',
-         'until' => 1662325200
+         'until' => 1664488799
        }
      
 );
