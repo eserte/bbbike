@@ -2582,7 +2582,7 @@ Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14836,12826 14830,12932 14795,1
 #: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
 #: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt --- mittlerweile (Mitte Dezember 2021): Fahrbahn komplett gesperrt, nur der Radweg Richtung NW kann benutzt werden --- Ende Dezember 2021: Fahrbahn ist wieder offen, Radweg Richtung SO noch immer gesperrt; mittlerweile wird der Radweg neu erstellt, vermutlich dann ohne Wurzelhebungen
 #: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
-#: last_checked: 2022-09-02
+#: last_checked: 2022-09-06 (mapillary)
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2021-12-31
 	RW0; 14052,13389 14148,13321 14252,13263
@@ -2762,9 +2762,9 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20210720 (Baubeginn Ende 2022)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
-#: osm_watch: way id="420112505" version="7"
-#: osm_watch: way id="420112509" version="7"
-#: osm_watch: way id="966685279" version="1"
+#: osm_watch: way id="420112505" version="8"
+#: osm_watch: way id="420112509" version="8"
+#: osm_watch: way id="966685279" version="3"
 #: last_checked: 2022-09-02 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-12-31 vvv
@@ -2935,8 +2935,8 @@ Radweg größtenteils nur aufgemalt	RW1;RW1 9732,15581 9646,15737 9623,15777 9494,
 	RW2;RW2 9494,15998 9459,16029 9446,16060
 	RW2; 15166,8489 15303,8343 15357,8286 15557,8077
 	RW1; 15557,8077 15920,7697
-asphaltiert, mäßige Qualität	RW2; 15920,7697 16195,7398
-asphaltiert, akzeptable Qualität	RW2; 16195,7398 16259,7328 16353,7226
+asphaltiert, einige Wurzelhebungen	RW2; 15920,7697 16195,7398 16259,7328
+asphaltiert, akzeptable Qualität	RW2; 16259,7328 16353,7226
 	RW1; 16353,7226 16428,7144
 #: note: kein Unterstreifen gegen parkende Autos, aber der Radweg ist relativ breit
 neu asphaltiert	RW2; 16428,7144 16353,7226 16259,7328
@@ -6056,7 +6056,7 @@ früherer Radweg ist nicht benutzbar	RW0; 23244,12417 23299,12600 23321,12673
 Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2795
 	RW3;RW3 17194,3343 17142,3393
 #: by: http://www.infravelo.de/projekt/zingster-strasse-2/ (3. Quartal 2021 - 3. Quartal 2022) (wurde ersetzt)
-#: by: http://www.infravelo.de/projekt/zingster-strasse/ (neuer Eintrag, mittlerweile 3. Quartal 2022 - 3. Quartal 2023)
+#: by: http://www.infravelo.de/projekt/zingster-strasse/ (neuer Eintrag, mittlerweile 3. Quartal 2022 - 3. Quartal 2023) (mittlerweile "in Bau")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1092783.php (Bauarbeiten beginnen Mitte 2022)
 #: by: https://api.fixmyberlin.de/api/projects/439
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Bauarbeiten ab Mitte 2022)
@@ -7506,6 +7506,7 @@ Poller	RW4; 9221,6179 9245,6352 9246,6364 9250,6414
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
+#: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
 #: last_checked: 2022-07-24 vvv
@@ -7550,7 +7551,7 @@ provisorischer Radweg auf dem Bürgersteig	RW2; 9196,5272 9188,5333 9176,5413 916
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf (Markierung nach Leitungsbauarbeiten)
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/bezirksamt-listet-alle-2020-kommenden-radverkehrsanlagen-auf_a274738 (bis Ende 2021; hier: "900m" --- ist vielleicht auch ein Teil von Alt-Tempelhof gemeint?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
-#: by: http://www.infravelo.de/projekt/schoeneberger-strasse/ (früherer Eintrag) (bis 4. Quartal 2021, 700m Schutzstreifen (was nicht ganz reichen würde...)) (mittlerweile: 3. Quartal 2021 - 4. Quartal 2022)
+#: by: http://www.infravelo.de/projekt/schoeneberger-strasse/ (früherer Eintrag) (bis 4. Quartal 2021, 700m Schutzstreifen (was nicht ganz reichen würde...)) (mittlerweile: 3. Quartal 2021 - 4. Quartal 2022) (3. Quartal 2021 - 2. Quartal 2023)
 #: by: http://www.infravelo.de/projekt/schoeneberger-strasse-2/ (wurde wieder entfernt)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/adfc-fordert-dauerhaften-radweg-an-der-schoeneberger-strasse_a317109
@@ -7559,8 +7560,8 @@ provisorischer Radweg auf dem Bürgersteig	RW2; 9196,5272 9188,5333 9176,5413 916
 #: source_id: 2147345949 (Leitungsarbeiten bis 2021-04-16)
 #: source_id: viz2021:13.374121,52.468697,23.09.2021,07:00 (Leitungsarbeiten bis 2021-12-16) (mittlerweile bis 15.2.2022) (mittlerweile bis 1.3.2022) (inaktiv)
 #: last_checked: 2022-09-04 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2022-12-31 vvv
+# REMOVED --- #: check_frequency: 90d vvv
+#: next_check: 2023-06-30 vvv
 	RW3; 8739,6701 8653,6781
 #: note: wieder aufgehoben: provisorische Radspur	RW3;
 	RW0; 8653,6781 8496,6919
@@ -7568,7 +7569,7 @@ provisorischer Radweg auf dem Bürgersteig	RW2; 9196,5272 9188,5333 9176,5413 916
 	RW0; 8496,6919 8653,6781
 	RW3; 8653,6781 8739,6701
 #: next_check ^^^
-#: check_frequency ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 Busspur ist immer gültig	RW5; 8414,6995 8319,7084
 # 

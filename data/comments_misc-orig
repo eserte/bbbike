@@ -1203,8 +1203,8 @@ Im Brachfeldwinkel: ausgeschildert zum "Schwedenhaus"	CP2; 3068,21150 3024,21286
 # REMOVED (mittlerweile existieren Staﬂenschilder) --- #: XXX sind die Straﬂen mittlerweile ausgeschildert? vvv --- Altes Gaswerk Mariendorf: ausgeschildert "Marienpark"	CP2; 8461,3410 8404,3648 --- Im Marienpark: nicht ausgeschildert	CP2; 8404,3648 8346,3633
 Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
 # 
-#: osm_watch: way id="406201948" version="14"
-#: osm_watch: way id="25367620" version="24"
+#: osm_watch: way id="406201948" version="15"
+#: osm_watch: way id="25367620" version="25"
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788&d=20191216 (Benennung nach Hans Otto Obrikat vorgeschlagen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_29_1829_2008_online.pdf (Straﬂenlandwidmung, als "Schnellerstr." bezeichnet)
@@ -1708,10 +1708,12 @@ ausgeschildert als "Zugang zur Falkstr. 23"	CP2; 12195,7916 12414,7965
 ausgeschildert als "Falkstr. 25"	CP2; 12186,7952 12219,7958
 # 
 #: add_fragezeichen: Ist die Brigitte-Reimann-Str. ausgeschildert?
-#: last_checked: 2022-08-06 (mapillary)
+#: last_checked: 2022-08-09 (mapillary)
 Brigitte-Reimann-Str.: noch nicht ausgeschildert	CS 23368,15469 23363,15517 23388,15637
 # 
 Klaus-Selmke-Str.: Straﬂenname ist nicht offiziell, Privatgrundst¸ck	CS 21130,11384 21275,11547
+# 
+Curtiusstr. [Stichstraﬂe]: nicht ausgeschildert	CS 2965,3823 2915,3905
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straﬂen)

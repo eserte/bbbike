@@ -932,7 +932,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: by: http://www.berliner-woche.de/heinersdorf/verkehr/radstreifen-und-neue-querungen-d155368.html
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
-#: osm_watch: way id="266580485" version="18"
+#: osm_watch: way id="266580485" version="19"
 #: last_checked: 2022-08-24 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
@@ -1606,7 +1606,7 @@ Marienburger Str.: Kopfsteinpflaster	Q2 11572,14452 11821,14317 12077,14186
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5720 (Prüfung einer Glättung des Kopfsteinpflasters)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/verkehrsprojekte-im-boetzowviertel_a319036 (Erwähnung der Hufelandstraße)
 #: by: http://www.infravelo.de/projekt/hufelandstrasse/ ("erschütterungsarmer Belag", Bauzeitraum 1. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 3. Quartal 2022 - 2. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 2. Quartal 2024)
-#: osm_watch: way id="4615063" version="28"
+#: osm_watch: way id="4615063" version="29"
 #: last_checked: 2022-08-02
 #: check_frequency: 210d
 #: next_check: 2023-06-30
@@ -1847,7 +1847,12 @@ Treptower Park: wassergebundene Decke	Q1 14909,9649 14853,9655 14697,9726 14645,
 Treptower Park: Kopfsteinpflaster	Q2 14604,9674 14577,9641
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14695,9587 14627,9609 14577,9641 14495,9710 14443,9731 14361,9772
 Treptower Park: Verbundsteinpflaster	Q1 14448,9922 14455,9892 14467,9887
-Treptower Park: Schotterweg	Q2+ 14705,9034 14855,9046 14947,8993 14980,8940
+#: osm_watch: way id="29547073" version="11"
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1243634.php (wassergebundene Decke)
+#: XXX Qualität prüfen!
+#: last_checked: 2022-08-24
+#: next_check: 2022-09-12
+Treptower Park: wassergebundene Decke	Q1 14705,9034 14855,9046 14947,8993 14980,8940
 Am Rosengarten: Parkweg	Q1 14909,9649 14867,9573 14837,9517 14809,9466
 Lichtensteinallee: wassergebundene Decke	Q1 6378,11553 6289,11440
 Storkwinkel: Kopfsteinpflaster	Q2 2489,9784 2473,9861
@@ -12630,7 +12635,7 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: Betonpflaster	Q0- 17523,9882 17412,9911
 Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700 17792,8660 17846,8644
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2022-07-22
+#: last_checked: 2022-08-25
 #: check_frequency: 45d
 Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1 17648,8626 17627,8556 17608,8483
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
@@ -16067,9 +16072,10 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9810 (Anfrage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9889 (Anfrage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10069 (Anfrage)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10326 (Antrag)
 #: also_indoor: search Lemkestraße
-#: last_checked: 2022-04-10 (mapillary) (im südlichen Abschnitt sind schon Bauarbeiten)
-#: check_frequency: 150d
+#: last_checked: 2022-08-06 (mapillary) (im südlichen Abschnitt sind schon Bauarbeiten)
+#: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-07-30
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553 25191,12343 25149,12266 25109,12196
 #: confirmed_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)
@@ -24295,7 +24301,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 # REMOVED (fertig) --- #: XXX Baubeginn 27.05.2019, Abschluss voraussichtlich im Dezember 2019 --- #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...) --- #: osm_watch: way id="43899012" version="7" --- #: last_checked: 2019-12-14 --- #: check_frequency: 21d
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
-#: osm_watch: way id="593504821" version="4"
+#: osm_watch: way id="593504821" version="5"
 #: last_checked: 2022-07-30
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
@@ -30748,6 +30754,7 @@ Adolf-Menzel-Str.: unbefestigte Straße	Q2 22110,10090 22177,10082
 Reetzer Weg [3-17]: Beton	Q1 22612,10943 22725,10911
 Reetzer Weg [19-33]: Beton	Q1 22594,10878 22706,10846
 (Neuruppiner Str. - Havelländer Ring): Verbundsteinpflaster	Q1 23265,15351 23381,15361
+Curtiusstr. [Stichstraße]: Kopfsteinpflaster	Q2 2965,3823 2915,3905
 #: by ^^^
 # 
 #: by: kartaview vvv
@@ -31371,4 +31378,6 @@ Kreuzungsbereich asphaltiert	Q0 4511,6318
 Kreuzungsbereich asphaltiert	Q0 4472,6242
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ 3011,3303
 Einmündungsbereich asphaltiert	Q0 1524,1924
+#: by: mapillary
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 2965,3823
 #: ignore ^^^
