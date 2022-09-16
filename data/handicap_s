@@ -29,7 +29,6 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10364,11896 10332,11929 10392,11991
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
-Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit für Radfahrer verboten	q4::inwork 8737,12098 8783,11959
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
@@ -40,7 +39,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg,
 Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321 6228,13324
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
-Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwork 5461,9923 5423,9932 5382,9942
+Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
 Weserstr.: vor der Weichselstr. Bauarbeiten, gemeinsamer Geh- und Radweg, eng	q2::inwork 12590,8977 12740,8862
 Weserstr./Weichselstr.: Arbeiten im Kreuzungsbereich	q2::inwork 12682,9089 12590,8977 12478,8829
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q1 14150,6609 14137,6658 14179,6714 14179,6743
@@ -84,7 +83,7 @@ Breitscheidplatz: starker Fußgängerverkehr, oft Veranstaltungen	q4 5782,10884 58
 Wilmersdorfer Str.: starker Fußgängerverkehr (Fußgängerzone), nachts und sonntags Radfahren erlaubt	q4 3717,11462 3749,11344 3770,11231 3795,11098 3820,10987
 (An der Müggelspree): Fußgänger	q2 23462,4906 23461,5013 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25458,4521 25565,4549
 Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28853,3279
-Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
+Pestalozzistr.: Fußgängerzone	q3 3738,11231 3770,11231 3813,11230
 (Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11291,10438 11317,10485
 (Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11317,10485 11344,10507
 (Zufahrt am NKZ): Fußgänger, unübersichtlich	q3 11344,10507 11392,10520 11411,10515
@@ -698,7 +697,7 @@ Uferweg: Fußgänger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Sonntagstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q4 14760,11044 14808,10978 14851,10966
 Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14996,12462 14801,12517
 Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14798,12502 15005,12443
-Bouchéstr.: Bodenschwellen	q0 13642,9624 13860,9861
+Bouchéstr.: Bodenschwellen	q0 13642,9624 13704,9692 13860,9861
 Bouchéstr.: zwei Bodenschwellen	q0 13489,9456 13357,9313
 Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
 Dornbrunner Str.: zwei Bodenschwellen	q1 16147,6545 16043,6414
@@ -2335,6 +2334,9 @@ Varziner Platz: einige Fußgänger	q2 5492,7868 5491,7836
 Rudolf-Leonhard-Str. - Blumberger Damm: einige Fußgänger	q1 21493,16387 21538,16444 21574,16547
 Hanielweg: enge Straße	q0 7651,1615 7610,1695 7562,1796
 Pappritzstr.: enge Straße	q0 7562,1796 7675,1885 7736,1969 7741,2096
+Herkulesufer: Fußgänger, schmal	q2 7233,11189 7160,11186 7135,11171 7142,11145 6920,11064 6882,11061
+Herkulesufer: Fußgänger, schmal	q2 7135,11171 7115,11220
+Cora-Berliner-Str.: Fußgängerzone, Radfahrer frei	q1 8737,12098 8783,11959
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2601,7 +2603,7 @@ Rossitter Weg: Fußgänger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -12
 Eosanderstr.: Fußgänger	q1 3344,12611 3271,12609
 Siemenssteg: Fußgänger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 4124,12721
 (Müllerstr. - Gerichtstr.): Fußgänger	q2 7607,15282 7723,15417
-(südliches Spreeufer): Fußgänger	q2 5574,12237 5604,12244 5643,12253 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
+(südliches Spreeufer): Fußgänger	q2 5550,12238 5573,12242 5604,12244 5643,12253 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
 (nördliches Spreeufer): Fußgänger	q1 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nördliches Spreeufer): Fußgänger	q2 6271,12985 6218,12975 6190,12978 6164,12980
 (nördliches Spreeufer): Fußgänger	q1 5871,12595 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307

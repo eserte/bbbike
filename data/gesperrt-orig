@@ -11,7 +11,7 @@
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9865,10227 9825,10206 9687,10180 9599,10175 9472,10182 9416,10196
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9146,10284 8810,10305 8724,10327 8661,10377 8644,10408 8527,10621 8430,10710
 Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8328,10831 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7089,11073 7002,11034
-Kanalstraßen Nordufer	1 6880,11110 7115,11220 7160,11225 7253,11208 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108 7828,11133 8000,11137 8102,11099 8241,11024
+Kanalstraßen Nordufer	1 6880,11110 7004,11168 7115,11220 7160,11225 7253,11208 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108 7828,11133 8000,11137 8102,11099 8241,11024
 # Hier zwischen kann ein kurzes Stück auf dem Gehweg überbrückt werden
 Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8378,10858 8390,10835 8443,10780 8541,10714 8581,10663 8701,10428 8771,10381 8824,10366 8919,10360 8953,10366 8995,10370 9028,10371 9158,10342 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
 Gitschiner Str.	1 9873,10285 9948,10280
@@ -176,7 +176,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="15"
-#: last_checked: 2022-06-12
+#: last_checked: 2022-09-16
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
 # 
@@ -1278,7 +1278,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-09-04
+#: last_checked: 2022-09-16
 #: check_frequency: 90d
 #: next_check: 2022-10-31
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -3491,7 +3491,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://images.competitionline.com/image/f/9/5/a/b/e/1/b/f95abe1bc3b10ee4f2778b024afc5734_1.jpg?auto=format,compress&fm=jpg&ixlib=imgixjs-3.4.1&w=4742
 #: by: https://www.gm013.la/work/fmp
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2022-09-01
+#: last_checked: 2022-09-16
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
@@ -3651,7 +3651,7 @@ Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesper
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: last_checked: 2022-01-03 --- #: check_frequency: 30d --- (Zufahrt am NKZ): Fußgänger, unübersichtlich, Bauarbeiten, Gerüst, kaum ein Durchkommen	2::inwork 11344,10507 11392,10520 11411,10515
 # 
 #: next_check_id: STRD17JUNI-2021
-#: last_checked: 2022-07-29 vvv
+#: last_checked: 2022-09-16 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2025-01-31 vvv
 Straße des 17. Juni: Radweg gesperrt	1::igndisp 6164,11947 5900,11913
@@ -4147,7 +4147,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2022-08-30 vvv
+#: last_checked: 2022-09-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -4177,12 +4177,12 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2022-08-16
+#: last_checked: 2022-09-16
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
 #: note: allerdings war das Einbahnstraßenschild am 2022-01-17 weggedreht, am 2022-03-02 wieder vollständig aktiv
-#: last_checked: 2022-08-16
+#: last_checked: 2022-09-16
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: next_check_id: POTSDAMSPEICHERSTADT-2022
@@ -4270,27 +4270,13 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 # REMOVED (hier offen) --- Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6556,6663 -6661,6743
 # REMOVED (offen) --- #: XXX wird der Fahrbahnbelag tatsächlich Asphalt sein? --- #: osm_watch: way id="225000896" version="1" --- An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,6663
 # REMOVED --- #: XXX wie wird der Fahrbahnbelag sein? --- Parkrosenweg: Bauarbeiten	2::inwork -6530,6699 -6381,6587
-# 
-#: next_check_id: ENGLISCHESTR-2017
-#: by: http://www.dafmap.de/d/berlin.html?id=5241&mt=0&zoom=17 vvv
-#: by: https://www.deutsches-architektur-forum.de/forum/showthread.php?t=4013&page=12
-#: by: https://leute.tagesspiegel.de/charlottenburg-wilmersdorf/talk-of-the-kiez/2020/08/07/133769/
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10648 (Anfrage)
-#: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
-#: osm_watch: way id="392904879" version="3" vvv
-#: last_checked: 2022-07-17 vvv
-#: check_frequency: 30d vvv
-Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5643,12253
+# REMOVED --- #: next_check_id: ENGLISCHESTR-2017 --- #: by: http://www.dafmap.de/d/berlin.html?id=5241&mt=0&zoom=17 vvv --- #: by: https://www.deutsches-architektur-forum.de/forum/showthread.php?t=4013&page=12 --- #: by: https://leute.tagesspiegel.de/charlottenburg-wilmersdorf/talk-of-the-kiez/2020/08/07/133769/ --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10648 (Anfrage) --- #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01 --- #: osm_watch: way id="392904879" version="3" vvv --- #: last_checked: 2022-07-17 vvv --- #: check_frequency: 30d vvv --- Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5643,12253
 # REMOVED (hier aufgehoben) --- Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5643,12253 5604,12244 5574,12237
-Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12237 5535,12206
+# REMOVED --- Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12237 5535,12206
 # REMOVED (hier aufgehoben) --- Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5535,12206 5518,12159
 # REMOVED --- Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
 # REMOVED (weitgehend aufgehoben) --- Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
-#: check_frequency ^^^
-#: last_checked ^^^
-#: osm_watch ^^^
-#: by ^^^
-# 
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: osm_watch ^^^ --- #: by ^^^
 # REMOVED --- #: XXX evtl. ist die Einbahnstraßenregelung auch umgedreht? --- # REMOVED (existiert nicht mehr) --- #: osm_watch: way id="503096342" version="5" --- #: last_checked: 2019-12-08 --- Gutenbergstr.: zwischen Englische Str. und Hannah-Karminski-Str. Einbahnstraßenregelung, offen Richtung Osten	1s:q2:inwork 5518,12159 5317,12242
 # REMOVED --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8103 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280921/21-Anlagen/01/DS0329_VzK_Strassenbenennung_Moeckernkiez_fina.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Benennung) --- #: XXX Qualität: Rampe betoniert, sonst eine Art Steinpflaster; ggfs. noch eine weitere Zufahrt zum Park einzeichnen --- #: osm_watch: way id="264361563" version="3" --- #: last_checked: 2018-05-08 --- #: check_frequency: 21d --- Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8757,9748 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # REMOVED (vermutlich beendet) --- #: next_check_id: OBERERWUHLEWANDERWEG-2017 --- #: last_checked: 2017-08-09 --- #: XXX Ende der Bauarbeiten --- #: next_check: 2017-08-11 --- #: priority: #A --- oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
@@ -4556,8 +4542,8 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 # REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7"
 #: osm_watch: way id="940764588" version="6"
 #: osm_watch: way id="940764584" version="4"
-#: last_checked: 2022-08-11 (mapillary)
-#: check_frequency: 360d
+#: last_checked: 2022-09-12 (daf)
+#: check_frequency: 120d
 #: next_check: 2023-06-30
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
@@ -4578,7 +4564,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Eröffnung am 17.12.2020)
 #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Eröffnung wird verschoben)
 #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauzäune werden im Dezember 2020 teilweise abgebaut)
-#: last_checked: 2022-08-30
+#: last_checked: 2022-09-16
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384

@@ -2518,6 +2518,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: by: https://www.bmw-berlin-marathon.com/
 #: by: https://viz.berlin.de/2021/09/berlin-marathon/
 #: by: https://www.bmw-berlin-marathon.com/dein-rennen/strecke/interaktive-karte/
+#: by: https://viz.berlin.de/2022/09/marathon/
 # REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -3435,14 +3436,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 28.9.2022)
-#: XXX prüfen, ob es tatsächlich Behinderungen für Radfahrer gibt vvv
-	q4::inwork 7382,9187 7444,9148
+# REMOVED --- #: XXX prüfen, ob es tatsächlich Behinderungen für Radfahrer gibt vvv
+	q4::inwork; 7382,9187 7444,9148
 # REMOVED ---	q4::inwork 7308,9163 7363,9152
-#: XXX ^^^
+# REMOVED --- #: XXX ^^^
 ',
          'from' => undef,
          'id' => 2933,
-         'text' => 'Helmstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 28.09.2022',
+         'text' => 'Helmstr.: an der Hauptstr. Baustelle, Fahrbahn gesperrt, bis voraussichtlich 28.09.2022',
          'type' => 'handicap',
          'until' => 1664377200
        },
@@ -3513,14 +3514,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://pictures.construction.camera/construction-camera/661BerlinAERA/FullHD102570/webcam.jpg (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei)
-#: last_checked: 2022-02-12
+#: last_checked: 2022-09-16
 #: check_frequency: 180d
 #: next_check: 2022-10-31
-	q4::inwork 4234,12710 4303,12692
+# REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
+	q3::inwork 3828,12697 3981,12709 4071,12720 4124,12721
 ',
          'from' => 1644676199,
          'id' => 2961,
-         'text' => 'Am Spreebord: Bauarbeiten zwischen Zufahrt zum Uferweg und Darwinstr., Passieren für Radfahrer möglich, ggfs. Bordsteine, voraussichtlich bis Ende Oktober 2022',
+         'text' => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, voraussichtlich bis Ende Oktober 2022',
          'type' => 'handicap',
          'until' => 1667232000
        },
@@ -3947,7 +3949,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-08-30
+#: last_checked: 2022-09-06 (mapillary)
 #: check_frequency: 21d
 #: next_check: 2022-12-30
 	q4::inwork; 11329,12497 11209,12430
@@ -4310,24 +4312,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: ABBESTR-2021
-#: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
-#: by: https://www.deutsches-architekturforum.de/thread/14781-physikalisch-technische-bundesanstalt-campus-um-und-neubauten/?postID=724237#post724237
-#: note: reopened, es gibt wieder Bauzäune; Juni 2022: mittlerweile gibt es zumindest auf der Nordseite eine Radweg-Beschilderung, deshalb q3 -> q2
-#: osm_watch: way id="152832871" version="19"
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-08-10 (daf)
-#: check_frequency: 30d
-	q2::inwork 4674,12076 4698,12124
-# REMOVED (hier nicht mehr) ---	q3::inwork 4698,12124 4755,12236
-',
-         'from' => undef,
-         'id' => 3325,
-         'text' => 'Abbestr.: Bauarbeiten, Fahrbahn zwischen Guerickestr. und Fraunhoferstr. gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: PARKSTADTKARLSHORST-2021
@@ -4897,7 +4882,7 @@ Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Trave
          'data' => '#: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2022-06-11
+#: last_checked: 2022-09-16
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -5416,7 +5401,7 @@ Frobenstr.	q3::inwork 6349,2510 6529,2642
 #: osm_watch: way id="4531799" version="12"
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-06-07 (daf)
+#: last_checked: 2022-09-16
 #: check_frequency: 90d
 	q4::inwork; 4434,11227 4415,11050
 ',
@@ -5430,8 +5415,9 @@ Frobenstr.	q3::inwork 6349,2510 6529,2642
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/14258-bauprojekte-in-charlottenburg-nordost/?postID=717436#post717436
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="791796343" version="4"
-#: last_checked: 2022-06-11
+#: last_checked: 2022-09-16
 #: check_frequency: 90d
+#: next_check: 2022-10-31
 	q4::inwork 4961,12940 4932,12968
 ',
          'from' => undef,
@@ -5792,18 +5778,7 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: add_fragezeichen: Wurden die Bauzäune mittlerweile entfernt?
-#: last_checked: 2022-08-26
-#: check_frequency: 14d
-	2::inwork 10405,12462 10363,12535 10300,12587
-',
-         'from' => undef,
-         'id' => 3612,
-         'text' => 'Marx-Engels-Forum: einige Wege sind gesperrt, Ende der Sperrungen unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '	2::inwork -3475,26523 -3556,26560
 ',
@@ -5827,14 +5802,15 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
          'until' => 1666969200
        },
        {
-         'data' => '#: add_fragezeichen: Ist der Uferweg tatsächlich gesperrt?
+         'data' => '#: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: osm_watch: way id="147686211" version="9"
 #: osm_watch: way id="481651814" version="4"
+#: last_checked: 2022-09-16
 	2::inwork 6882,11061 6920,11064 7142,11145
 ',
          'from' => undef,
          'id' => 3616,
-         'text' => 'Herkulesufer: Neubau Bauhaus-Archiv, Uferweg möglicherweise gesperrt',
+         'text' => 'Herkulesufer: Neubau Bauhaus-Archiv, Uferweg gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5853,8 +5829,8 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-01
-#: check_frequency: 14d
+#: last_checked: 2022-09-16
+# REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
          'from' => undef,
@@ -5941,6 +5917,30 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'text' => 'Summter Chaussee: Straße gesperrt, 05.09.2022 - 11.11.2022',
          'type' => 'gesperrt',
          'until' => 1668178800
+       },
+       {
+         'data' => '#: next_check_id: ALTEPOTSDAMER-2022
+#: XXX Wie lange dauern die Bauarbeiten an?
+#: last_checked: 2022-09-16
+#: next_check: 2022-12-10
+	q4::inwork 8389,11378 8481,11447
+',
+         'from' => 1663329224,
+         'id' => 3626,
+         'text' => 'Alte Potsdamer Str.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Dezember 2022',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Gibt es hier weiterhin eine Einbahnstraßenregelung?
+#: last_checked: 2022-09-16
+	q4::inwork; 5800,12361 5714,12266
+',
+         'from' => undef,
+         'id' => 3627,
+         'text' => 'Schleswiger Ufer: Bauarbeiten, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

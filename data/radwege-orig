@@ -195,7 +195,7 @@ Busspur gilt 7-22 Uhr	RW5; 5652,11004 5542,11075
 Busspur ist immer gültig	RW5; 5542,11075 5652,11004
 	RW1;RW8 6873,11011 6742,11099 6626,11178 6582,11202
 für Radfahrer freigegebene Busspur ist immer gültig	RW10; 6825,11486 6851,11346 6880,11110
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW10; 6880,11110 6851,11346
+für Radfahrer freigegebene Busspur ist immer gültig	RW10; 6880,11110 6851,11346
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 6851,11346 6825,11486
 	RW2;RW2 6825,11486 6809,11570 6778,11742 6744,11936
 asphaltiert	RW2;RW8 6744,11936 6809,11979 6828,12031 6787,12099 6754,12108 6725,12113 6690,12104 6656,12075 6642,12010 6685,11954 6744,11936
@@ -213,7 +213,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7633,10394 7689,10514 7
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 7689,10514 7633,10394
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf
 #: XXX zeitliche Ausweitung für 2021 geplant --- zumindest Richtung Norden an der Kurfürstenstr. schon realisiert
-#: last_checked: 2022-08-28 vvv
+#: last_checked: 2022-09-16 vvv
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7820,10768 7912,10945 7968,11048 7980,11070
 für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW1; 7980,11070 7968,11048 7912,10945 7820,10768 7689,10514
 #: last_checked ^^^
@@ -230,7 +230,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 8226,11458 8145,11438 8
 #: osm_watch: way id="305483806" version="10"
 #: osm_watch: way id="25042039" version="32"
 # XXX für Radfahrer freigegebene Busspur gilt 7-18 Uhr	RW1; 8083,11381 8065,11349 8031,11249
-#: last_checked: 2022-08-02
+#: last_checked: 2022-09-16
 #: check_frequency: 180d
 #: next_check: 2026-01-01
 	RW4; 8083,11381 8065,11349 8031,11249
@@ -245,8 +245,10 @@ hier wurde wahrscheinlich das Radwegschild vergessen	RW1; 8378,10858 8342,10916
 	RW2; 8342,10916 8261,11015 8241,11024 8102,11099 8000,11137
 	RW1; 8000,11137 7828,11133 7690,11108 7595,11086 7492,11111
 Gehweg für Radfahrer frei	RW1; 7492,11111 7419,11137
-#: note: Busspur (etwa ab Hiroshimastr.) ist nicht für Radfahrer freigegeben
-	RW1; 7419,11137 7322,11177 7253,11208 7160,11225 7115,11220 6880,11110
+	RW1; 7419,11137 7322,11177
+#: note: Busspur (gültig Mo-Fr 7-20h) ist nicht für Radfahrer freigegeben
+	RW1; 7322,11177 7253,11208 7160,11225 7115,11220 7004,11168
+	RW1; 7004,11168 6880,11110
 	RW1;RW1 9404,10250 9388,10393
 	RW6;RW6 9554,10695 9679,10710
 	RW1;RW1 9388,10393 9353,10421 9245,10565 9215,10607 9131,10716 9022,10857
@@ -265,7 +267,7 @@ provisorisch durch Poller geschützt	RW3; 11671,10402 11949,10414
 	RW1; 11949,10414 11671,10402
 	RW1; 11949,10414 12092,10428
 #: XXX bleibt es bei der Radspur?
-#: last_checked: 2022-09-04
+#: last_checked: 2022-09-16
 geschützter Radstreifen, mit "Leitboys"	RW3; 12092,10428 12212,10440
 	RW1; 12212,10440 12274,10436 12328,10442 12401,10461 12545,10496 12621,10516 12731,10547
 	RW1; 12731,10547 12621,10516 12545,10496 12401,10461 12328,10442 12274,10436 12212,10440 12092,10428 11949,10414
@@ -417,6 +419,7 @@ die letzten 50 Metern sind benutzungspflichtig	RW3; 5081,12458 5013,12323
 	RW4;RW3 5249,12825 5244,12864
 	RW1;RW2 5244,12864 5287,12900 5298,12910 5316,12928
 	RW1; 5244,12864 5203,12850
+	RW3; 5203,12850 5244,12864
 	RW2;RW2 5316,12928 5328,13019
 	RW1; 5328,13019 5468,13067
 die letzten Meter sind benutzungspflichtig	RW1; 5468,13067 5328,13019
@@ -1690,7 +1693,7 @@ Busspur ist immer gültig	RW5;RW5 9934,12420 9858,12410
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
 #: source_id: viz2021:13.399226,52.517706,30.05.2022,08:00 (bis 15.8.2022, zwischen Lustgarten - Oberwallstr.) (mittlerweile inaktiv) vvv
 #: source_id: viz2021:13.404803,52.520062,30.05.2022,08:00 (bis 15.8.2022) (mittlerweile bis 29.8.2022) (bis 19.9.2022)
-#: last_checked: 2022-08-30 vvv
+#: last_checked: 2022-09-16 vvv
 #: check_frequency: 21d vvv
 #: next_check: 2022-09-19 vvv
 provisorische Radspur	RW4; 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506
@@ -2388,7 +2391,7 @@ Radspur zwischen Fahrspuren	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2022-09-01 vvv
+#: last_checked: 2022-09-16 vvv
 #: next_check: 2024-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
@@ -4163,7 +4166,7 @@ neu asphaltiert, relativ breit	RW1; 25045,14946 25031,15027
 Verbundsteinpflaster mit einigen Unebenheiten	RW1; 25397,13909 25365,13845 25289,13705 25163,13494 25094,13362 25031,13242 24968,13121 24905,13004 24833,12874 24774,12766 24713,12655 24659,12555 24530,12296
 	RW2; 24654,11265 24624,11374
 	RW3; 24624,11374 24654,11265
-Gehweg für Radfahrer frei	RW1;RW1 24624,11374 24583,11537 24591,11587 24623,11684 24657,11762 24648,11802 24575,11932 24563,11980
+Gehweg für Radfahrer frei	RW1;RW1 24624,11374 24583,11537 24591,11587 24612,11652 24623,11684 24657,11762 24648,11802 24575,11932 24563,11980
 Gehweg für Radfahrer frei	RW1; 24563,11980 24556,12056 24554,12100 24556,12181
 	RW1;RW1 21982,9017 22027,9131 22031,9142 22074,9273 22090,9380
 	RW1;RW0 22090,9380 22103,9465
@@ -4961,7 +4964,7 @@ asphaltiert	RW1;RW1 17020,11748 17169,11677
 	RW6;RW6 5882,13548 5725,13566 5580,13587 5390,13616
 	RW6;RW6 7077,12575 7139,12589
 	RW6;RW6 7330,12871 7270,12870
-	RW6;RW6 5858,12425 5803,12356
+	RW6;RW6 5858,12425 5800,12361
 	RW1;RW2 -1994,11496 -1931,11437 -1885,11392 -1608,11133 -1538,11126
 	RW6;RW6 2437,12283 2658,12312
 	RW6;RW6 2460,12163 2672,12190 2895,12217
@@ -5511,7 +5514,7 @@ asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünbeschichtung?) vvv
-#: last_checked: 2022-07-17 vvv
+#: last_checked: 2022-09-16 vvv
 #: check_frequency: 60d vvv
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
@@ -7360,7 +7363,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://berliner-abendblatt.de/2022/05/03/kritik-am-geplanten-umbau-von-durchgangsstrassen/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8290
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/fdp-sieht-kiez-um-karl-august-platz-bedroht_a352244 (Umbau der Kantstraße geplant)
-#: last_checked: 2022-07-02 vvv
+#: last_checked: 2022-09-16 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten

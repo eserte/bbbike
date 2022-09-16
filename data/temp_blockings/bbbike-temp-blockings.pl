@@ -2159,7 +2159,7 @@ EOF
        text  => 'Bouchéstraße (Treptow) in beiden Richtungen zwischen Kiefholzstraße und Am Treptower Park Fahrbahnerneuerung, Straße vollständig gesperrt (bis Ende 2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 13860,9861 13642,9624 13602,9581
+	2 13860,9861 13704,9692 13642,9624 13602,9581
 EOF
      },
      { from  => 1119391200, # 2005-06-22 00:00
@@ -2518,7 +2518,7 @@ EOF
        text  => 'Hönower Str. (Mahlsdorf) in Richtung Alt-Mahlsdorf zwischen Wilhelmsmühlenweg und Alt-Mahlsdorf Baustelle, Fahrtrichtung gesperrt (bis 12.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 24623,11684 24591,11587 24583,11537 24624,11374 24654,11265
+	q4; 24623,11684 24612,11652 24591,11587 24583,11537 24624,11374 24654,11265
 EOF
      },
      { from  => 1121724000, # 2005-07-19 00:00
@@ -11989,8 +11989,8 @@ EOF
 	3 7747,11075 7980,11070 8104,11037 8205,10979
 	3 6929,10852 6918,10858 6824,10904 6681,10959
 	3 9462,12481 9475,12365 9489,12263
-	3 7115,11220 6880,11110 6841,11114
-	3 6841,11114 6880,11110 7115,11220
+	3 7115,11220 7004,11168 6880,11110 6841,11114
+	3 6841,11114 6880,11110 7004,11168 7115,11220
 	3 7698,10147 7579,10183 7526,9969
 	3 7384,10127 7413,10244 7429,10366
 	3 7003,10513 7033,10396 7227,10489 7281,10510
@@ -18212,7 +18212,7 @@ EOF
 	3 8119,12414 8055,12186 8049,12140
 	3 8049,12140 8055,12186 8119,12414
 	3 8630,12307 8637,12258 8643,12208
-	3 6841,11114 6880,11110 7115,11220
+	3 6841,11114 6880,11110 7004,11168 7115,11220
 	3 6742,11099 6873,11011 7002,11034
 	3 8232,11414 8226,11458 8172,11679
 	3 8548,11571 8542,11502 8442,11555
@@ -18249,7 +18249,7 @@ EOF
 	3 6750,11550 6825,11486 6716,11439
 	3 6750,11550 6825,11486 6915,11492
 	3 7849,10488 7689,10514 7478,10612
-	3 7115,11220 6880,11110 6841,11114
+	3 7115,11220 7004,11168 6880,11110 6841,11114
 	3 8391,12389 8344,12221 8327,12174
 	3 8736,11557 8740,11524 8743,11489
 	3 6980,11790 6778,11742 6540,11754
@@ -18285,7 +18285,7 @@ EOF
 # REMOVED ---	2::temp 10213,11728 10133,11708 10000,11691 9991,11690 9905,11680 9701,11656 9569,11631 9444,11616 9268,11590 9058,11564 8834,11536 8740,11524 8596,11508 8542,11502 8548,11571 8553,11630 8553,11638 8562,11744 8567,11799 8571,11846 8577,11896 8595,12066 8600,12165 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 # REMOVED ---	3 8592,11541 8596,11508 8599,11474
 # REMOVED ---	3 9992,11682 10000,11691 9997,11713
-# REMOVED ---	3 6841,11114 6880,11110 7115,11220
+# REMOVED ---	3 6841,11114 6880,11110 7004,11168 7115,11220
 # REMOVED ---	3 9234,11683 9268,11590 9331,11497
 # REMOVED ---	3 6550,11954 6642,12010 6164,11947
 # REMOVED ---	3 7002,11034 6873,11011 6742,11099
@@ -18312,7 +18312,7 @@ EOF
 # REMOVED ---	3 8442,11555 8542,11502 8479,11493
 # REMOVED ---	3 8442,11555 8542,11502 8573,11404
 # REMOVED ---	3 9702,11647 9701,11656 9692,11732
-# REMOVED ---	3 7115,11220 6880,11110 6841,11114
+# REMOVED ---	3 7115,11220 7004,11168 6880,11110 6841,11114
 # REMOVED ---	3 7822,12201 7816,12150 7823,12120
 # REMOVED ---	3 6692,11365 6851,11346 7103,11247
 # REMOVED ---	3 6607,10801 6740,10755 6818,10725
@@ -21352,6 +21352,7 @@ EOF
 #: by: https://www.bmw-berlin-marathon.com/
 #: by: https://viz.berlin.de/2021/09/berlin-marathon/
 #: by: https://www.bmw-berlin-marathon.com/dein-rennen/strecke/interaktive-karte/
+#: by: https://viz.berlin.de/2022/09/marathon/
 # REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -23649,7 +23650,7 @@ EOF
 #: note: Gehweg ist hier relativ breit
 	q3::inwork; 14089,9610 13973,9465 13923,9405
 	q4::inwork; 13923,9405 13892,9365 13849,9310 13766,9200
-	q4::inwork; 13489,9456 13602,9581 13642,9624 13860,9861
+	q4::inwork; 13489,9456 13602,9581 13642,9624 13704,9692 13860,9861
 EOF
      },
      { from  => undef,
@@ -26139,7 +26140,7 @@ EOF
 	3 8327,12174 8344,12221 8391,12389
 	3 6692,11365 6851,11346 7103,11247
 	3 7103,11247 6851,11346 6692,11365
-	2::temp 8595,12066 8737,12098 8743,12099 8861,12125 8901,12008 8844,11984 8783,11959 8577,11896 8571,11846 8489,11782 8456,11763 8322,11715 8203,11686 8172,11679 8094,11657 8005,11627 7816,11571 7717,11540 7665,11353 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208 7160,11225 7115,11220 6880,11110
+	2::temp 8595,12066 8737,12098 8743,12099 8861,12125 8901,12008 8844,11984 8783,11959 8577,11896 8571,11846 8489,11782 8456,11763 8322,11715 8203,11686 8172,11679 8094,11657 8005,11627 7816,11571 7717,11540 7665,11353 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208 7160,11225 7115,11220 7004,11168 6880,11110
 	1::temp 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936
 	2::temp 6744,11936 6809,11979 6828,12031 6884,12006
 	3 8014,11753 8005,11627 7943,11431
@@ -26715,16 +26716,16 @@ EOF
 Hildebrandstr.	2::temp 7435,11514 7322,11177
 Stauffenbergstr.	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
 Reichpietschufer	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
-Herkulesufer	2::temp 7595,11086 7575,11076 7252,11188
 Lützowufer	2::temp 7089,11073 7248,11143 7461,11051 7579,11032
 Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7248,11143
 # REMOVED --- Hiroshimastr.	2::temp 7253,11208 7356,11517
 # REMOVED ---	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
 # REMOVED ---	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
 # REMOVED ---	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
-# REMOVED ---	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7218,11181 7140,11156
+# REMOVED ---	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7233,11189 7160,11186 7135,11171
 # REMOVED ---	2::temp 7665,11353 7745,11332
 # REMOVED ---	2::temp 7745,11332 7690,11108
+# REMOVED --- Herkulesufer	2::temp 7595,11086 7575,11076 7252,11188
 EOF
      },
      { from  => undef, # 
@@ -26732,7 +26733,7 @@ EOF
        text  => 'Spreeufer - Englische Straße: Uferweg eventuell wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 5574,12237 5535,12206
+	2::inwork 5550,12238 5541,12221
 EOF
      },
      { from  => undef, # 
@@ -27371,14 +27372,14 @@ EOF
      },
      { from  => undef, # 1518462294, # 2018-02-12 20:04
        until => $isodate2epoch->("2022-09-28 17:00:00"), # 1519410682, # rausgenommen, eigentlich keine Beeinträchtigungen --- 1520290800, # 2018-03-06 00:00
-       text  => 'Helmstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 28.09.2022', # früher: 'Helmstr. und Vorbergstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 05.03.2018',
+       text  => 'Helmstr.: an der Hauptstr. Baustelle, Fahrbahn gesperrt, bis voraussichtlich 28.09.2022', # früher: 'Helmstr. und Vorbergstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 05.03.2018',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 28.9.2022)
-#: XXX prüfen, ob es tatsächlich Behinderungen für Radfahrer gibt vvv
-	q4::inwork 7382,9187 7444,9148
+# REMOVED --- #: XXX prüfen, ob es tatsächlich Behinderungen für Radfahrer gibt vvv
+	q4::inwork; 7382,9187 7444,9148
 # REMOVED ---	q4::inwork 7308,9163 7363,9152
-#: XXX ^^^
+# REMOVED --- #: XXX ^^^
 EOF
      },
      { from  => 1520920800, # 2018-03-13 07:00
@@ -27777,17 +27778,18 @@ EOF
      },
      { from  => 1644676199, # 1527186848, # 2018-05-24 20:34
        until => $isodate2epoch->("2022-10-31 17:00:00"), # undef, # 1559170418, # undef, # 1534536582, # 1534543200, # 2018-08-18 00:00
-       text  => 'Am Spreebord: Bauarbeiten zwischen Zufahrt zum Uferweg und Darwinstr., Passieren für Radfahrer möglich, ggfs. Bordsteine, voraussichtlich bis Ende Oktober 2022',
+       text  => 'Am Spreebord: Bauarbeiten, Abschnitte der Fahrbahn gesperrt, voraussichtlich bis Ende Oktober 2022',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://aera.berlin/
 #: by: https://pictures.construction.camera/construction-camera/661BerlinAERA/FullHD102570/webcam.jpg (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/12710-am-spreebord-ehem-werkbundstadt-areal-charlottenburg/?postID=705260#post705260
 #: source_id: viz2021:13.310551,52.521111,01.03.2022,08:00 (hier: zwischen Sömmering- und Darwinstr., Radfahrer frei)
-#: last_checked: 2022-02-12
+#: last_checked: 2022-09-16
 #: check_frequency: 180d
 #: next_check: 2022-10-31
-	q4::inwork 4234,12710 4303,12692
+# REMOVED (hier nicht mehr) ---	q4::inwork 4234,12710 4303,12692
+	q3::inwork 3828,12697 3981,12709 4071,12720 4124,12721
 EOF
      },
      { from  => undef, # 
@@ -30612,7 +30614,7 @@ EOF
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-08-30
+#: last_checked: 2022-09-06 (mapillary)
 #: check_frequency: 21d
 #: next_check: 2022-12-30
 	q4::inwork; 11329,12497 11209,12430
@@ -32375,18 +32377,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # 1628276337, # undef, # XXX
+       until => 1663330237, # undef, # 1628276337, # undef, # XXX
        text  => 'Abbestr.: Bauarbeiten, Fahrbahn zwischen Guerickestr. und Fraunhoferstr. gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ABBESTR-2021
-#: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
-#: by: https://www.deutsches-architekturforum.de/thread/14781-physikalisch-technische-bundesanstalt-campus-um-und-neubauten/?postID=724237#post724237
-#: note: reopened, es gibt wieder Bauzäune; Juni 2022: mittlerweile gibt es zumindest auf der Nordseite eine Radweg-Beschilderung, deshalb q3 -> q2
-#: osm_watch: way id="152832871" version="19"
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-08-10 (daf)
-#: check_frequency: 30d
+# REMOVED --- #: note: reopened, es gibt wieder Bauzäune; Juni 2022: mittlerweile gibt es zumindest auf der Nordseite eine Radweg-Beschilderung, deshalb q3 -> q2
+# REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 	q2::inwork 4674,12076 4698,12124
 # REMOVED (hier nicht mehr) ---	q3::inwork 4698,12124 4755,12236
 EOF
@@ -34503,7 +34500,7 @@ EOF
 #: by: https://www.berlinhyp.de/de/media/newsroom/berlin-hyp-baut-neue-unternehmenszentrale-b-one-nach-h%C3%B6chsten-energiestandards (fertig: Ende 2023)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/b-one-berlin-hyp-ag-neubau.955/#post-17434
 #: by: https://baustelle.strabag.com/deutschland?tx_ecxsitebaustelle_webcam%5Baction%5D=detail&tx_ecxsitebaustelle_webcam%5Bcontroller%5D=Webcam&tx_ecxsitebaustelle_webcam%5Bday%5D=4&tx_ecxsitebaustelle_webcam%5Bmonth%5D=05&tx_ecxsitebaustelle_webcam%5Buid%5D=300&tx_ecxsitebaustelle_webcam%5Byear%5D=2022&cHash=96b9a3ee3c205301473cfbdb541e9d2a (Webcam)
-#: last_checked: 2022-06-11
+#: last_checked: 2022-09-16
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 	q3::inwork; 6626,11178 6549,11015
@@ -35368,7 +35365,7 @@ EOF
 #: osm_watch: way id="4531799" version="12"
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-06-07 (daf)
+#: last_checked: 2022-09-16
 #: check_frequency: 90d
 	q4::inwork; 4434,11227 4415,11050
 EOF
@@ -35381,8 +35378,9 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/14258-bauprojekte-in-charlottenburg-nordost/?postID=717436#post717436
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="791796343" version="4"
-#: last_checked: 2022-06-11
+#: last_checked: 2022-09-16
 #: check_frequency: 90d
+#: next_check: 2022-10-31
 	q4::inwork 4961,12940 4932,12968
 EOF
      },
@@ -36110,13 +36108,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1663331349, # undef, # XXX
        text  => 'Marx-Engels-Forum: einige Wege sind gesperrt, Ende der Sperrungen unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: add_fragezeichen: Wurden die Bauzäune mittlerweile entfernt?
-#: last_checked: 2022-08-26
-#: check_frequency: 14d
+# REMOVED --- #: add_fragezeichen: Wurden die Bauzäune mittlerweile entfernt? --- #: last_checked: 2022-08-26 --- #: check_frequency: 14d
 	2::inwork 10405,12462 10363,12535 10300,12587
 EOF
      },
@@ -36151,12 +36147,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Herkulesufer: Neubau Bauhaus-Archiv, Uferweg möglicherweise gesperrt',
+       text  => 'Herkulesufer: Neubau Bauhaus-Archiv, Uferweg gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: add_fragezeichen: Ist der Uferweg tatsächlich gesperrt?
+#: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: osm_watch: way id="147686211" version="9"
 #: osm_watch: way id="481651814" version="4"
+#: last_checked: 2022-09-16
 	2::inwork 6882,11061 6920,11064 7142,11145
 EOF
      },
@@ -36178,8 +36175,8 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-01
-#: check_frequency: 14d
+#: last_checked: 2022-09-16
+# REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
      },
@@ -36262,6 +36259,28 @@ EOF
        source_id => 'LS/221-E/22/115',
        data  => <<EOF,
 	2::inwork 7431,34989 7346,32257
+EOF
+     },
+     { from  => 1663329224, # 2022-09-16 13:53
+       until => undef, # 1670626800, # 2022-12-10 00:00
+       text  => 'Alte Potsdamer Str.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis Dezember 2022',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: ALTEPOTSDAMER-2022
+#: XXX Wie lange dauern die Bauarbeiten an?
+#: last_checked: 2022-09-16
+#: next_check: 2022-12-10
+	q4::inwork 8389,11378 8481,11447
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Schleswiger Ufer: Bauarbeiten, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Gibt es hier weiterhin eine Einbahnstraßenregelung?
+#: last_checked: 2022-09-16
+	q4::inwork; 5800,12361 5714,12266
 EOF
      },
     );

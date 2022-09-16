@@ -70,18 +70,7 @@ Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
 # 
-#: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022) (bis 31.8.2022) (bis 15.9.2022)
-#: source_id: viz2021:13.42544,52.52334,17.11.2021,07:00 (Engstelle) (inaktiv)
-#: last_checked: 2022-09-07 (mapillary) vvv
-#: check_frequency: 90d vvv
-#: next_check: 2022-09-15 vvv
-# REMOVED --- #: valid: -20220730 vvv
-Mollstr./Büschingstr.	F::inwork 11913,13077
-Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081
-# REMOVED --- #: valid ^^^
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: source_id: viz2021:13.42641,52.523117,17.11.2021,07:00 (mittlerweile bis 5.8.2022) (bis 12.8.2022) (bis 19.8.2022) (bis 31.8.2022) (bis 15.9.2022) --- #: source_id: viz2021:13.42544,52.52334,17.11.2021,07:00 (Engstelle) (inaktiv) --- #: last_checked: 2022-09-07 (mapillary) vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-09-15 vvv --- # REMOVED --- #: valid: -20220730 vvv --- Mollstr./Büschingstr.	F::inwork 11913,13077 --- Mollstr./Platz der Vereinten Nationen	F::inwork 11984,13081 --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: https://www.berliner-woche.de/wedding/c-bauen/virchow-klinikum-wird-standort-fuer-die-spitzenforschung_a346784 (Bauarbeiten bis Ende 2023)
 #: XXX Ampel hängt mit den Bauarbeiten am Forschungsgebäude Si-M zusammen
@@ -192,7 +181,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2022-08-16
+#: last_checked: 2022-09-16
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -1088,7 +1077,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # XXX	F 8065,11349
 #: note: Anforderungsampel
 #: osm_watch: node id="9858938170" version="1"
-#: last_checked: 2022-06-24
+#: last_checked: 2022-09-16
 #: check_frequency: 180d
 #: next_check: 2026-01-01
 	F::inwork 8096,11393
@@ -1678,8 +1667,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6377,13321
 	X 6124,12694
 	X 6227,13938
-#: note: seit mindestens Ende Juli 2022 ausgeschaltet
-	X 11616,10288
+# 
+#: XXX: seit mindestens Ende Juli 2022 ausgeschaltet
+#: add_fragezeichen: Bleibt die Ampel Mariannenstr./Reichenberger Str. dauerhaft ausgeschaltet?
+#: last_checked: 2022-09-16
+	X0 11616,10288
+# 
 #: XXX_prog: zusammenhängende Ampelanlage vvv
 	X 22383,4470
 	X 22419,4457
@@ -3146,7 +3139,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog Anforderungsampel
 #: osm_watch: node id="5931765487" version="5"
 #: osm_watch: node id="5931765488" version="5"
-#: last_checked: 2022-08-30
+#: last_checked: 2022-09-16
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 

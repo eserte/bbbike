@@ -153,7 +153,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED (nein) --- #: next_check_id: VERLWERDERSTR-2018 --- #: XXX gibt es hier tatsächlich Einschränkungen? --- #: valid: 20180702-20190530 -- Verlängerte Werderstr.: Bauarbeiten	q4::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
 # REMOVED (mittlerweile wieder offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=4505&mt=0&zoom=17 --- #: last_checked: 2017-03-20 --- #: check_frequency: 14d --- Kiefholzstr.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13821,9340 13715,9455
 # REMOVED (aber vielleicht nur am Wochenende offen?) --- #: last_checked: 2016-12-20 vvv --- #: check_frequency: 21d vvv --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13203,9450 13124,9375 --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13124,9375 13111,9361 13126,9347 --- #: check_frequency ^^^ --- #: last_checked ^^^
-# REMOVED --- #: XXX siehe auch valid-Eintrag weiter unten --- #: source_id: 2147340178 --- #: last_checked: 2016-10-05 --- #: valid: -20161115 --- Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13860,9861 13870,9872 13890,9894 -- # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
+# REMOVED --- #: XXX siehe auch valid-Eintrag weiter unten --- #: source_id: 2147340178 --- #: last_checked: 2016-10-05 --- #: valid: -20161115 --- Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13704,9692 13860,9861 13870,9872 13890,9894 -- # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
 # REMOVED (Bauarbeiten beendet) --- #: XXX laut Schild gehen die Bauarbeiten bis 10.2017 --- #: XXX nach Beendigung der Bauarbeiten wieder den alten handicap-Eintrag ("Bodenschwellen") aktivieren --- #: last_checked: 2017-11-30 --- #: check_frequency: 14d --- Bouchéstr.: Bauarbeiten an der Heidelberger Str.	q3::inwork; 13489,9456 13357,9313
 # 
 ### Adlershof ###
@@ -196,11 +196,11 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rosenthaler-strasse-gesperrt_a352559
 #: also_indoor: traffic (B) vvv
 #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) (mittlerweile bis 14.6.2022) (bis 11.7.2022) (inaktiv) vvv
-#: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022)
+#: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022)
 #: note: laut rbb nur bis 16.09.2022
 #: priority: #A
-#: last_checked: 2022-08-30 vvv
-#: next_check: 2022-09-19 vvv
+#: last_checked: 2022-09-16 vvv
+#: next_check: 2022-10-12 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
 # REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork; 10324,13459 10350,13376
@@ -222,7 +222,7 @@ Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
 #: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2022-08-26
+#: last_checked: 2022-09-16
 Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
@@ -260,7 +260,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 # 
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
-#: last_checked: 2022-06-26 (mapillary)
+#: last_checked: 2022-09-16
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 # REMOVED --- #: valid: 20200821-20211031
@@ -310,12 +310,14 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten? laut osm mittlerweile offen (war aber ein falscher StreetComplete-Edit und wurde wieder rückgängig gemacht)
+#: XXX möglicherweise mittlerweile offen, siehe daf
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="15"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-08-16
+#: last_checked: 2022-09-11 (daf)
 #: check_frequency: 45d
+#: next_check: 2022-09-11
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
 # REMOVED (beendet) --- #: XXX Ende der Bauarbeiten? --- #: also_indoor: traffic (G) --- #: last_checked: 2019-08-23 vvv --- #: check_frequency: 14d vvv --- Ziegelstr.: Bauarbeiten an der Kreuzung Tucholskystr., einige Meter Fahrbahn sind gesperrt	q2::inwork 9401,13072 9559,13087 --- #: source_id: 2147344619 (voraussichtlich bis Mitte September 2019) --- #: note: laut fritz bis 2019-09-06 --- Tucholskystr.: Bauarbeiten an der Kreuzung Ziegelstr., Einbahnstraße, offen Richtung Norden	q3::inwork; 9559,13087 9538,12993 --- #: check_frequency ^^^ --- #: last_checked ^^^
@@ -325,27 +327,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_24_2713_2792_online.pdf (Verbreiterung)
 # REMOVED --- Jerusalemer Str.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9925,11565 9936,11469
 # REMOVED (mittlerweile entfernt) --- #: source_id: 2147347007 (bis 25.6.2022) --- #: source_id: viz2021:13.381216,52.513773,22.03.2021,14:44 --- #: last_checked: 2021-05-22 --- #: check_frequency: 90d --- #: next_check: 2022-06-25 --- Hannah-Arendt-Str.: Fahrbahn Richtung Westen gesperrt	q3::inwork; 8901,12008 8844,11984
-# 
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/palais-am-brandenburger-tor-neubau-am-holocaust-mahnmal.177/
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_11_0657_0712_online.pdf (Teileinziehung)
-#: by: https://nitter.net/VIZ_Berlin/status/1514464715438653441
-#: by: https://nitter.net/pic/media%2FFQObyYMXIAAzaOI.jpg%3Fname%3Dorig
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_27_1633_1692_online.pdf (Teileinziehung)
-#: also_indoor: traffic (H,ex-G,B)
-#: osm_watch: way id="4597320" version="21"
-#: osm_watch: way id="43350531" version="12"
-#: source_id: 2147343824 (bis 30.6.2021)
-#: source_id: viz2021:13.379936,52.514077,04.03.2019,08:00 (bis 30.6.2021) (inaktiv)
-#: source_id: viz2021:13.379568,52.514769,14.04.2022,07:00 (angrenzende Behrenstr., bis 27.5.2022) (inaktiv)
-#: add_fragezeichen: Sind die Bauarbeiten hier beendet?
-#: XXX nach den Bauarbeiten vermutlich nur für Radfahrer, Fußgänger und MIV-Anlieger frei
-#: XXX geschätzte opening_date bei osm: August 2022
-#: last_checked: 2022-08-30
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2022-08-31
-# REMOVED --- #: valid: 20191218-20210531
-Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit für Radfahrer verboten	q4::inwork 8737,12098 8783,11959
-# 
+# REMOVED (offen) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/palais-am-brandenburger-tor-neubau-am-holocaust-mahnmal.177/ --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_11_0657_0712_online.pdf (Teileinziehung) --- #: by: https://nitter.net/VIZ_Berlin/status/1514464715438653441 --- #: by: https://nitter.net/pic/media%2FFQObyYMXIAAzaOI.jpg%3Fname%3Dorig --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_27_1633_1692_online.pdf (Teileinziehung) --- #: also_indoor: traffic (H,ex-G,B) --- #: osm_watch: way id="4597320" version="21" --- #: osm_watch: way id="43350531" version="12" --- #: source_id: 2147343824 (bis 30.6.2021) --- #: source_id: viz2021:13.379936,52.514077,04.03.2019,08:00 (bis 30.6.2021) (inaktiv) --- #: source_id: viz2021:13.379568,52.514769,14.04.2022,07:00 (angrenzende Behrenstr., bis 27.5.2022) (inaktiv) --- #: add_fragezeichen: Sind die Bauarbeiten hier beendet? --- #: XXX nach den Bauarbeiten vermutlich nur für Radfahrer, Fußgänger und MIV-Anlieger frei --- #: XXX geschätzte opening_date bei osm: August 2022 --- #: last_checked: 2022-08-30 --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2022-08-31 --- # REMOVED --- #: valid: 20191218-20210531 --- Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit für Radfahrer verboten	q4::inwork 8737,12098 8783,11959
 # REMOVED (by eric.t) --- #: by: http://www.dafmap.de/d/berlin.html?center=52.508653+13.397214&zoom=17# (Geplanter Projektabschluss: 2019-03-31) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen) --- #: also_indoor: traffic (HG) vvv --- #: osm_watch: way id="327756248" version="7" --- #: last_checked: 2020-12-01 --- #: check_frequency: 10d --- Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469 --- #: osm_watch: way id="542983664" version="3" --- #: last_checked: 2020-12-01 --- #: check_frequency: 10d --- Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485 --- # REMOVED (fertig) --- #: osm_watch: way id="66071387" version="11" --- #: last_checked: 2020-09-03 --- #: check_frequency: 14d --- Zimmerstr.: Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384 --- #: also_indoor ^^^
 # REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9925,11565 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9925,11565 9737,11546 --- #: last_checked ^^^
 # REMOVED (keine Einschränkungen mehr) --- #: next_check_id: ALEXANDRINENSTR-2018 --- #: osm_watch: note 814191 1 --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_26_3435_3558_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen) --- #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren --- #: osm_watch: way id="17370332" version="19" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2020-12-15 vvv --- #: check_frequency: 7d vvv --- Alexandrinenstr.: Umbau der Kreuzung, eng	q4::inwork 10674,11170 10683,11175 10690,11180 --- Stallschreiberstr.: Umbau der Kreuzung, eng	q4::inwork 10690,11167 10683,11175 --- Stallschreiberstr.: Umbau der Kreuzung, eng	q3::inwork 10683,11175 10623,11246 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
@@ -395,7 +377,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2022-08-31 (mapillary) vvv
+#: last_checked: 2022-09-16 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="10"
@@ -627,7 +609,7 @@ Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork;
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundesallee-13-14-pariser-str.599/page-5#post-17417
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
-#: last_checked: 2022-09-15 (webcam)
+#: last_checked: 2022-09-16
 #: check_frequency: 60d
 #: next_check: 2022-10-01
 # REMOVED --- #: next_check: 2020-02-03
@@ -636,10 +618,10 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 # 
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
-#: last_checked: 2022-07-11 (webcam)
+#: last_checked: 2022-09-16
 #: check_frequency: 60d
 #: next_check: 2022-10-01
-Pariser Str./Bundesallee: Bauarbeiten, enger Durchgang, ggfs. schieben	q4::inwork 5461,9923 5423,9932 5382,9942
+Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
 # 
 ### Neukölln ###
 # 
@@ -1045,7 +1027,7 @@ Wilmersdorfer Str.: starker Fußgängerverkehr (Fußgängerzone), nachts und sonntag
 # REMOVED (hier ist eh' noch eine normale Straße) --- (An der Müggelspree): Fußgänger	q2 23444,4942 23462,4906
 (An der Müggelspree): Fußgänger	q2 23462,4906 23461,5013 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25458,4521 25565,4549
 Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28853,3279
-Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
+Pestalozzistr.: Fußgängerzone	q3 3738,11231 3770,11231 3813,11230
 # 
 # REMOVED --- #: next_check_id: NKZ-2020 --- #: XXX zurzeit Bauarbeiten, nur der Gehweg ist offen (alten Eintrag danach wieder aktivieren); vor Corona-Zeiten gab's außerdem einen großzügigen Restaurantbereich --- #: last_checked: 2022-01-03 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2022-01-01 vvv
 (Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11291,10438 11317,10485
@@ -1934,7 +1916,7 @@ Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14996,12462 14801,12517
 #: XXX_prog: für Anhänger relevant (q2 oder so)
 Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14798,12502 15005,12443
 #: XXX_prog: für Anhänger relevant (q1 oder so)
-Bouchéstr.: Bodenschwellen	q0 13642,9624 13860,9861
+Bouchéstr.: Bodenschwellen	q0 13642,9624 13704,9692 13860,9861
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Bouchéstr.: zwei Bodenschwellen	q0- 13489,9456 13357,9313
 #: XXX_prog: für Anhänger relevant (q2 oder so)
@@ -3896,7 +3878,7 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 (Barnimer Dörferweg - Gehrensee): einige Fußgänger	q1 21035,19005 21040,19007 21015,19070
 #: note: Weg ist etwa 2m breit
 Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
-#: last_checked: 2022-08-30
+#: last_checked: 2022-09-16
 #: check_frequency: 60d
 # REMOVED (früher: Schloßplatz: Fußgänger	q2 10174,12284 10102,12384)
 Schloßplatz: Fußgänger, Engstelle wegen Bauarbeiten am Einheitsdenkmal	q3 10174,12284 10102,12384
@@ -4191,6 +4173,9 @@ Varziner Platz: einige Fußgänger	q2 5492,7868 5491,7836
 Rudolf-Leonhard-Str. - Blumberger Damm: einige Fußgänger	q1 21493,16387 21538,16444 21574,16547
 Hanielweg: enge Straße	q0- 7651,1615 7610,1695 7562,1796
 Pappritzstr.: enge Straße	q0- 7562,1796 7675,1885 7736,1969 7741,2096
+Herkulesufer: Fußgänger, schmal	q2 7233,11189 7160,11186 7135,11171 7142,11145 6920,11064 6882,11061
+Herkulesufer: Fußgänger, schmal	q2 7135,11171 7115,11220
+Cora-Berliner-Str.: Fußgängerzone, Radfahrer frei	q1 8737,12098 8783,11959
 # 
 ######################### User Contributions #################################
 # 
@@ -4703,7 +4688,7 @@ Eosanderstr.: Fußgänger	q1 3344,12611 3271,12609
 #: XXX_prog BS am südlichen Ende (ansonsten bleibt's bei q2)
 Siemenssteg: Fußgänger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 4124,12721
 (Müllerstr. - Gerichtstr.): Fußgänger	q2 7607,15282 7723,15417
-(südliches Spreeufer): Fußgänger	q2 5574,12237 5604,12244 5643,12253 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
+(südliches Spreeufer): Fußgänger	q2 5550,12238 5573,12242 5604,12244 5643,12253 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
 (nördliches Spreeufer): Fußgänger	q1 6122,12971 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nördliches Spreeufer): Fußgänger	q2 6271,12985 6218,12975 6190,12978 6164,12980
 (nördliches Spreeufer): Fußgänger	q1 5871,12595 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307

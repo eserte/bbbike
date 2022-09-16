@@ -255,7 +255,7 @@ Heinersdorf - Teltow: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK	Q3 51
 Heinersdorf - Teltow: Asphalt	Q0 4998,-2359 4278,-2339 4245,-2350
 Iserstr.: Asphalt	Q0 -248,-1160 -173,-1397
 #: corrected_by: mapillary
-Sputendorf: Asphalt	Q0 -1371,-7671 -1550,-7692 -1837,-7653 -1987,-7591 -2444,-7517
+Sputendorf: Asphalt	Q0 -1371,-7671 -1550,-7692 -1837,-7653 -1987,-7591 -2156,-7563 -2409,-7523
 #: corrected_by: mapillary (früher schlechtes Kopfsteinpflaster)
 Fahlhorst: Asphalt	Q0 -5661,-11016 -5452,-11456
 # REMOVED (inzwischen ausgebaut) ---	Berliner Str (Borgsdorf): sandig	Q3 1051,32796 1123,33294
@@ -8544,6 +8544,10 @@ Heidestr. (Schönow): Asphalt	Q0 19032,30053 18941,30212 18773,30398 18635,30610 
 #: by: ^^^
 # 
 #: by: mapillary vvv
+Schenkenhorst: schlechtes Kopfsteinpflaster	Q3+ -3848,-7423 -3596,-7607
+Schenkenhorst: unbefestigte Straße	Q2 -3848,-7423 -4388,-7159 -5550,-6808
+Sputendorf - Struveshof: schlechtes Kopfsteinpflaster, schmale Verbundsteinpflastergehwege existieren	Q3+ -1371,-7671 -1351,-7831
+Sputendorf - Struveshof: Asphalt	Q0 -1351,-7831 -1344,-7858 -906,-9454 -830,-9748 -847,-9888 -840,-9896
 #: XXX möglicherweise wird hier noch gebaut
 #: last_checked: 2022-06-26 (mapillary)
 #: check_frequency: 90d
