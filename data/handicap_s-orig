@@ -216,14 +216,14 @@ Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::i
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-01
+#: last_checked: 2022-09-17
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882 11160,12071
 # 
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 # 
 #: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2022-09-16
-Schloßplatz: Fußgänger, Bauarbeiten	q4::inwork 10102,12384 10063,12438
+#: last_checked: 2022-09-17
+Schloßplatz: Fußgänger, Bauarbeiten	q3::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: last_checked: 2022-08-24 vvv
@@ -248,7 +248,7 @@ Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2022-08-30 vvv
+#: last_checked: 2022-09-15 (osm) vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -260,7 +260,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 # 
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
-#: last_checked: 2022-09-16
+#: last_checked: 2022-09-17
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 # REMOVED --- #: valid: 20200821-20211031
@@ -278,7 +278,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
-#: last_checked: 2022-08-24
+#: last_checked: 2022-09-17 (webcam)
 #: check_frequency: 60d
 (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
 # 
@@ -307,19 +307,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # REMOVED (kaum noch Einschränkungen) --- #: source_id: 2147342720 (bis Ende Oktober 2019) --- #: also_indoor: traffic (G) --- #: last_checked: 2019-11-11 vvv --- #: next_check: 2019-11-22 vvv --- #: valid: -20191122 vvv --- Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q2::inwork 11092,12375 11139,12243 --- Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
 # REMOVED (mittlerweile offen) --- Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11049,12386 11094,12243
-# 
-#: next_check_id: ZIEGELSTR-2016
-#: XXX Ende der Bauarbeiten? laut osm mittlerweile offen (war aber ein falscher StreetComplete-Edit und wurde wieder rückgängig gemacht)
-#: XXX möglicherweise mittlerweile offen, siehe daf
-#: way id="507023458" version="1"
-#: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: osm_watch: way id="507023458" version="15"
-#: also_indoor: traffic (H,B)
-#: last_checked: 2022-09-11 (daf)
-#: check_frequency: 45d
-#: next_check: 2022-09-11
-Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
-# 
+# REMOVED (offen) --- #: next_check_id: ZIEGELSTR-2016 --- #: XXX Ende der Bauarbeiten? laut osm mittlerweile offen (war aber ein falscher StreetComplete-Edit und wurde wieder rückgängig gemacht) --- #: XXX möglicherweise mittlerweile offen, siehe daf --- #: way id="507023458" version="1" --- #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16 --- #: osm_watch: way id="507023458" version="15" --- #: also_indoor: traffic (H,B) --- #: last_checked: 2022-09-11 (daf) --- #: check_frequency: 45d --- #: next_check: 2022-09-11 --- Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # REMOVED (beendet) --- #: XXX Ende der Bauarbeiten? --- #: also_indoor: traffic (G) --- #: last_checked: 2019-08-23 vvv --- #: check_frequency: 14d vvv --- Ziegelstr.: Bauarbeiten an der Kreuzung Tucholskystr., einige Meter Fahrbahn sind gesperrt	q2::inwork 9401,13072 9559,13087 --- #: source_id: 2147344619 (voraussichtlich bis Mitte September 2019) --- #: note: laut fritz bis 2019-09-06 --- Tucholskystr.: Bauarbeiten an der Kreuzung Ziegelstr., Einbahnstraße, offen Richtung Norden	q3::inwork; 9559,13087 9538,12993 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31) --- #: last_checked: 2017-10-27 --- Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31) --- #: last_checked: 2017-12-13 --- #: check_frequency: 14d --- Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
@@ -377,7 +365,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2022-09-16 vvv
+#: last_checked: 2022-09-17 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="10"
@@ -609,7 +597,7 @@ Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork;
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundesallee-13-14-pariser-str.599/page-5#post-17417
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
-#: last_checked: 2022-09-16
+#: last_checked: 2022-09-17
 #: check_frequency: 60d
 #: next_check: 2022-10-01
 # REMOVED --- #: next_check: 2020-02-03
@@ -618,7 +606,7 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 # 
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
-#: last_checked: 2022-09-16
+#: last_checked: 2022-09-17
 #: check_frequency: 60d
 #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
@@ -630,7 +618,7 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 #: osm_watch: way id="1050315263" version="4"
 #: osm_watch: way id="996616281" version="8"
 #: osm_watch: way id="996616282" version="7"
-#: last_checked: 2022-09-15 vvv
+#: last_checked: 2022-09-17 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-09-15 vvv
 # REMOVED (hier fertig) --- Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
@@ -824,7 +812,7 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022)
 #: source_id: viz2021:13.35399,52.49475,02.05.2022,13:59 (bis 31.5.2022) (wieder entfernt (Duplikat?))
 #: also_indoor: traffic (ex-H,B,ex-G)
-#: last_checked: 2022-07-27
+#: last_checked: 2022-09-17
 #: check_frequency: 60d
 #: next_check: 2022-10-31
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
@@ -899,7 +887,7 @@ Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="11"
 #: priority: #C
-#: last_checked: 2022-08-22 (mapillary)
+#: last_checked: 2022-09-17
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -3878,7 +3866,7 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 (Barnimer Dörferweg - Gehrensee): einige Fußgänger	q1 21035,19005 21040,19007 21015,19070
 #: note: Weg ist etwa 2m breit
 Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
-#: last_checked: 2022-09-16
+#: last_checked: 2022-09-17
 #: check_frequency: 60d
 # REMOVED (früher: Schloßplatz: Fußgänger	q2 10174,12284 10102,12384)
 Schloßplatz: Fußgänger, Engstelle wegen Bauarbeiten am Einheitsdenkmal	q3 10174,12284 10102,12384

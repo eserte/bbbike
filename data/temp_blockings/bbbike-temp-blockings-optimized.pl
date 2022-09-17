@@ -3999,7 +3999,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-08-27
+#: last_checked: 2022-09-17
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4959,11 +4959,11 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)?
 #: add_fragezeichen: Wo genau ist der Uferweg wegen Bauarbeiten gesperrt?
-#: last_checked: 2022-09-12 (osm)
+#: last_checked: 2022-09-16
 #: check_frequency: 60d
 #: next_check: 2024-02-12
 #: osm_watch: way id="4410535" version="24"
-#: osm_watch: way id="4993234" version="14"
+#: osm_watch: way id="4993234" version="15"
 	2::inwork 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
 ',
          'from' => 1643583600,
@@ -5248,11 +5248,14 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: osm_watch: way id="874517258" version="7"
+#: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2022-07-02
+#: last_checked: 2022-09-17
 #: check_frequency: 90d
-#: next_check: 2022-11-30
-	q4::inwork; 4277,9895 4126,9932 3927,9935
+#: next_check: 2022-09-30
+# REMOVED --- #: next_check: 2022-11-30
+# REMOVED (hier nicht mehr) ---	q4::inwork; 4277,9895 4126,9932
+	q4::inwork; 4126,9932 3927,9935
 ',
          'from' => undef,
          'id' => 3540,
@@ -5398,7 +5401,7 @@ Frobenstr.	q3::inwork 6349,2510 6529,2642
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-charlottenburg-nord-westend-kleinere-projekte/?postID=720279#post720279
 #: by: https://abload.de/img/img_417223kcb.jpg
 #: osm_watch: way id="742199631" version="1"
-#: osm_watch: way id="4531799" version="12"
+#: osm_watch: way id="4531799" version="13"
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic (none)
 #: last_checked: 2022-09-16
@@ -5633,16 +5636,7 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork; 13622,12806 13818,12897
-',
-         'from' => 1659934800,
-         'id' => 3601,
-         'source_id' => 'viz2021:13.453194,52.520885,09.08.2022,07:00',
-         'text' => 'Mühsamstr.: Einbahnstraße offen Richtung Ebertystr., vom 09.08.2022 07:00 bis 14.10.2022 17:00 ',
-         'type' => 'handicap',
-         'until' => 1665759600
-       },
+       undef,
        {
          'data' => '#: next_check_id: FIDICIN-2022
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10154 (Herbst 2021)
@@ -5712,11 +5706,12 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
        },
        {
          'data' => '#: note: laut rbb
-	q4::inwork 4186,13710 4295,13234
+#: note: anscheinend sind nur wenige Meter im Norden des Abschnitts betroffen, deshalb nun q3 (vorher q4)
+	q3::inwork 4186,13710 4295,13234
 ',
          'from' => 1661193050,
          'id' => 3607,
-         'text' => 'Goslarer Ufer: zwischen Gaußstr. und Goslarer Platz Sperrung, evtl. sind auch Radfahrer betroffen, bis 30.09.2022',
+         'text' => 'Goslarer Ufer: Sperrung der Fahrbahn südlich der Gaußstr., evtl. sind auch Radfahrer betroffen, bis 30.09.2022',
          'type' => 'handicap',
          'until' => 1664575200
        },
@@ -5829,7 +5824,7 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-16
+#: last_checked: 2022-09-17
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -5921,9 +5916,9 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2022-09-16
+#: last_checked: 2022-09-17
 #: next_check: 2022-12-10
-	q4::inwork 8389,11378 8481,11447
+	q4::inwork 8389,11378 8481,11447 8479,11493
 ',
          'from' => 1663329224,
          'id' => 3626,
@@ -5939,6 +5934,33 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'from' => undef,
          'id' => 3627,
          'text' => 'Schleswiger Ufer: Bauarbeiten, Einbahnstraßenregelung, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11059-charlottenburg-charlottenburg-nord-westend-kleinere-projekte/?postID=721317#post721317
+#: by: https://bautagebuch.twentyseven-berlin.de/ (kein Inhalt, nur ein Login)
+#: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
+#: also_indoor: traffic (none)
+#: last_checked: 2022-09-17
+#: check_frequency: 90d
+	q4::inwork; 3429,13227 3400,13107
+',
+         'from' => undef,
+         'id' => 3628,
+         'text' => 'Tauroggener Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Norden, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Besteht die Einbahnstraßenregelung noch immer?
+#: also_indoor: traffic (none)
+#: last_checked: 2022-09-17
+	q4::inwork; 6753,9814 6747,9912 6741,10017
+',
+         'from' => undef,
+         'id' => 3629,
+         'text' => 'Eisenacher Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        }

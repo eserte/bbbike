@@ -471,14 +471,15 @@ KGA Spreewiesen	F:Orchard -112,13908 182,13878 190,13655 18,13662 -109,13732 -11
 Parkfriedhof Lichterfelde	F:Cemetery 2659,1720 2826,1361 3103,1473 3078,1543 3347,1779 3297,1845 3251,1881 3148,1888 3044,1890
 #: alias: Christus-Friedhof
 Christuskirchhof	F:Cemetery 10211,2845 10196,2771 10180,2681 9828,2759 9784,2854 9926,2896
-#: XXX wird vermutlich zugunsten Wohnbebauung aufgegeben
+#: XXX der nördliche Teil des Friedhofs (etwa entlang der Linie 9786,4775 9955,4725) wird vermutlich zugunsten Wohnbebauung aufgegeben
 #: by: http://www.stadtentwicklung.berlin.de/planen/fnp/de/buergerbeteiligung/0218.shtml (FNP-Änderung 02/18)
 #: by: https://www.berliner-woche.de/mariendorf/c-bauen/friedhof-koennte-bebaut-werden_a166373
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (Bebauungsplan 7-85 VE; Teile des Friedhofs bleiben wohl erhalten)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7849 (Einleitung eines Bebauungsplanverfahrens)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_35_2301_2352_online.pdf (FNP-Änderung)
+#: by: https://www.stadtentwicklung.berlin.de/planen/fnp/pix/buergerbeteiligung/download/0218/0218.pdf
 #: last_checked: 2021-09-12
-#: check_frequency: 540d
+#: check_frequency: 720d
 Dreifaltigkeitskirchhof III	F:Cemetery 9950,4612 9791,4628 9780,4881 9951,4877 9950,4612
 Friedhof "Zum Heiligen Kreuz"	F:Cemetery 9791,4628 9780,4881 9753,5086 9747,5144 9518,5121 9585,4649 9695,4638
 Buschrosenplatz	F:P 13002,5548 13054,5556 13075,5470 13024,5457
@@ -1251,7 +1252,7 @@ Jacob-Teitel-Park	F:P 10318,13528 10324,13459 10350,13376 10353,13384 10390,1349
 #: XXX Werden hier Schilder aufgestellt?
 #: osm_watch: way id="28251523" version="14"
 #: priority: #C
-#: last_checked: 2022-08-16
+#: last_checked: 2022-09-17
 # REMOVED --- #: next_check: 2021-06-04
 Agnes-Sorma-Park	F:P 8858,13104 8886,13006 8985,13034 8997,13037 8981,13075 8922,13060 8899,13117
 Karl-Holtz-Platz	F:P 21574,16547 21577,16625 21562,16626 21491,16631 21460,16572
