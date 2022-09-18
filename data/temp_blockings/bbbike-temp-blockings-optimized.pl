@@ -1837,29 +1837,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: by: http://www.family-and-friends-ev.de/ (update.pl bekommt hier aber einen Fehler)
-#: by: https://www.berlin.de/events/3614943-2229501-herbst-in-westend.html (geplant 25.9.2021-26.9.2021) (mittlerweile bestätigt)
-	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
-',
-         'from' => 1663318800,
-         'id' => 1910,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (17.09.2022 bis 18.09.2022)',
-         'type' => 'gesperrt',
-         'until' => 1663524000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2519,13 +2497,15 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 #: by: https://viz.berlin.de/2021/09/berlin-marathon/
 #: by: https://www.bmw-berlin-marathon.com/dein-rennen/strecke/interaktive-karte/
 #: by: https://viz.berlin.de/2022/09/marathon/
+#: source_id: viz2021:13.376808,52.516209,19.09.2022,06:00
 # REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
 # REMOVED --- #: tempex ^^^
 ',
-         'from' => 1663560000,
+         'dont_check_date' => 1,
+         'from' => 1663473600,
          'id' => 2387,
          'periodic' => 1,
          'recurrences' => [
@@ -2539,7 +2519,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
                               '2020-10-25T00:00:00'
                             ]
                           ],
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, ab 20.09.2022',
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, 19.09.2022 bis 27.09.2022',
          'type' => 'gesperrt',
          'until' => 1663819200
        },
@@ -4321,14 +4301,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="25"
 #: osm_watch: way id="165832806" version="24"
-#: last_checked: 2022-08-25
+#: last_checked: 2022-09-18
 #: check_frequency: 30d
-	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17554,8458 17533,8505 17524,8536 17515,8567 17497,8623
+	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17554,8458 17533,8505 17524,8536
+# REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
 # REMOVED (hier neu gemacht) ---	2::inwork 17497,8623 17468,8692 17416,8767 17380,8858
 ',
          'from' => undef,
          'id' => 3327,
-         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Ende 08/2021: Durchfahrt möglich)',
+         'text' => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand September 2021: Bauarbeiten im südlichen Abschnitt, Komplettsperrung möglich)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5660,23 +5641,11 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2022-08-14 vvv
-	q3::inwork 16887,10271 16855,10127
-	q4::inwork 16855,10127 16847,10092
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 3603,
-         'text' => 'Salzmannstr.: Leitungsarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022)
+#: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
@@ -5688,7 +5657,7 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
          'source_id' => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/',
          'text' => 'Hüttenweg: Anbindung Clayallee gesperrt',
          'type' => 'handicap',
-         'until' => 1663599600
+         'until' => 1669392000
        },
        {
          'data' => '#: source_id: viz2021:13.56812,52.40301,20.08.2022,06:00
@@ -5879,14 +5848,15 @@ Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
        {
          'data' => '#: next_check_id: BAHNHOF-2022
 #: by: https://az-lichtenrade.de/wp-content/uploads/2022/09/220907_ba1_umleitung_karte_komprimiert.pdf
+#: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
-#: next_check: 2023-09-15 vvv
+#: next_check: 2023-03-31 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 10980,-1919
 #: next_check ^^^
 #: add_fragezeichen ^^^
 ',
-         'from' => 1663525564,
+         'from' => 1663524336,
          'id' => 3623,
          'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1242149.php',
          'text' => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraßenregelung, außerdem sind Mellener Str. und Löptener Str. Einbahnstraßen, ab 19.9.2022',
@@ -5962,6 +5932,19 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'id' => 3629,
          'text' => 'Eisenacher Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
+#: XXX am 2022-09-18 (Sonntag): Barrieren sowie Durchfahrtsverbotsschilder existieren, Barrieren waren aber geöffnet
+#: last_checked: 2022-09-18
+#: check_frequency: 14d
+	2::inwork 15674,10851 15870,10938
+',
+         'from' => undef,
+         'id' => 3630,
+         'text' => 'Archibaldweg: mögliche Sperrung der Straße, vermutlich nur während üblicher Arbeitszeiten',
+         'type' => 'gesperrt',
          'until' => undef
        }
      

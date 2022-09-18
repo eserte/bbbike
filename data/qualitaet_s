@@ -3041,7 +3041,7 @@ Ilsestr. (Karlshorst, Rummelsburg): Beton	Q0 18354,9575 18164,9623 18158,9625 18
 Lisztstr. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18319,9218 18332,9356
 Lisztstr. (Karlshorst): Asphalt	Q0 18332,9356 18377,9366
 Hönower Str. (Karlshorst): schlechtes Kopfsteinpflaster	Q3 18490,9387 18377,9366
-(Wandlitzstr. - Blockdammweg): Asphalt mit einigen schadhaften Stellen	Q1 18021,8976 17981,9000 17950,8974
+(Wandlitzstr. - Blockdammweg): Asphalt	Q0 18021,8976 17981,9000 17950,8974
 (Wandlitzstr. - Blockdammweg): Asphalt	Q0 17950,8974 17915,8945 17754,8863 17729,8850
 (Fortsetzung Wandlitzstr.): Betonplattenstraße	Q2 17981,9000 17837,9086
 Schmiedeberger Weg: Verbundsteinpflaster	Q0 18021,8976 17956,8935
@@ -11027,6 +11027,8 @@ Kurfürstendamm: Asphaltschäden	Q0; 5475,10808 5656,10876
 Bruno-Bauer-Str.: Gehwegplatten	Q0 12893,6527 12904,6488 12921,6424
 Priesterweg: Asphalt mit einigen Schäden, Gehwegplatten	Q1 7224,7553 7220,7445 7227,7352
 Crailsheimer Str.: Asphalt mit einigen Schäden	Q1; 7171,4200 7143,4350 7138,4379
+(Schlesischer Busch - Bouchéstr.): Parkweg	Q1 13418,9944 13513,9871
+(Schlesischer Busch - Bouchéstr.): Kleinsteinpflaster/Mosaikpflaster	Q1 13513,9871 13704,9691
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11956,7 +11958,7 @@ Herschelstr.: Asphalt	Q0 3200,13277 3239,13461 3262,13547 3280,13625
 Emdener Str.: Kopfsteinpflaster	Q2 5560,13382 5580,13587 5609,13790 5647,14067
 (Königsweg - Benschallee): Asphalt	Q0 -1591,1861 -1578,1740
 Fercher Str. (Zehlendorf): guter Beton	Q0 -908,1749 -894,1489
-Bouchestr.: Asphalt	Q0 13602,9581 13642,9624 13704,9692 13860,9861
+Bouchestr.: Asphalt	Q0 13602,9581 13642,9624 13704,9691 13860,9861
 Hosemannstr.: schlechtes Kopfsteinpflaster	Q3 23653,12122 23707,12258 23725,12302 23774,12423 23816,12542
 Togostr.: Asphalt	Q0 6555,15827 6530,15849 6383,15972 6244,16096
 Togostr.: Verbundsteinpflaster	Q1 6244,16096 6104,16223
@@ -12311,7 +12313,8 @@ Justus-von-Liebig-Str.: Asphalt	Q0 19495,2535 19704,2726 19878,2899
 Braillestr.: Asphalt	Q0 4512,5199 4477,5250 4430,5324
 Wandlitzstr.: Asphalt mit einigen Schäden	Q1 18704,8427 18627,8475
 Wandlitzstr.: Asphalt mit leichten Schäden	Q0 18627,8475 18557,8525 18494,8569 18448,8602
-Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976
+Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
+Wandlitzstr.: Asphalt	Q0 18272,8764 18243,8818 18222,8843 18147,8895 18070,8945 18021,8976
 Zepernicker Str.: Asphalt	Q0 18184,26659 17764,26410 17542,26302 17423,26253 17310,26181 17259,26148
 Eckermannstr.: mäßiger Asphalt	Q1 20488,12198 20516,12430
 Eckermannstr.: Asphalt	Q0 20516,12430 20537,12615 20541,12649 20545,12683 20559,12809 20571,12911 20600,13232 20632,13485 20657,13692 20661,13725 20665,13759 20690,13972

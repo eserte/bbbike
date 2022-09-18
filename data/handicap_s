@@ -31,9 +31,6 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
-Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17468,8692 17656,8700 17640,8627 17497,8623
-Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17468,8692
-Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17468,8692 17497,8623
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
 Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321 6228,13324
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
@@ -696,7 +693,7 @@ Uferweg: Fußgänger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Sonntagstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q4 14760,11044 14808,10978 14851,10966
 Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14996,12462 14801,12517
 Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14798,12502 15005,12443
-Bouchéstr.: Bodenschwellen	q0 13642,9624 13704,9692 13860,9861
+Bouchéstr.: Bodenschwellen	q0 13642,9624 13704,9691 13860,9861
 Bouchéstr.: zwei Bodenschwellen	q0 13489,9456 13357,9313
 Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
 Dornbrunner Str.: zwei Bodenschwellen	q1 16147,6545 16043,6414
@@ -2336,6 +2333,9 @@ Pappritzstr.: enge Straße	q0 7562,1796 7675,1885 7736,1969 7741,2096
 Herkulesufer: Fußgänger, schmal	q2 7233,11189 7160,11186 7135,11171 7142,11145 6920,11064 6882,11061
 Herkulesufer: Fußgänger, schmal	q2 7135,11171 7115,11220
 Cora-Berliner-Str.: Fußgängerzone, Radfahrer frei	q1 8737,12098 8783,11959
+(Schlesischer Busch - Bouchéstr.): einige Fußgänger	q1 13418,9944 13513,9871
+(Schlesischer Busch - Bouchéstr.): einige Fußgänger	q1 13513,9871 13704,9691
+Ehrenfelsstr.: Fußgängerzone	q3 18737,8686 18778,8663
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3227,7 +3227,6 @@ Enckestr. - Friedrichstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::
 (Straße vor dem Berliner Ensemble): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9160,12932 9212,12969
 Grüne Aue: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 Am Heidehof: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -1410,2726 -1571,2669 -1612,2785
-Ehrenfelsstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 18737,8686 18778,8663
 Lilli-Henoch-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12357,15020 12388,14926
 Sinsheimer Weg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 13774,8849 13687,8734
 Hannaweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 20938,14066 20923,13953

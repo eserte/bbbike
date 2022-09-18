@@ -1856,7 +1856,7 @@ EOF
        text  => 'B 2; (Leipziger Str.); OD Treuenbrietzen, zw. Krz.Leipz.-/Belziger Str. u. Hinter d.Mauer Straßenbau, KVK Vollsperrung 29.03.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -25419,-35417 -25163,-35142 -24963,-35018
+	q4 -25417,-35400 -25163,-35142 -24963,-35018
 EOF
      },
      { from  => 1113256800, # 2005-04-12 00:00
@@ -2159,7 +2159,7 @@ EOF
        text  => 'Bouchéstraße (Treptow) in beiden Richtungen zwischen Kiefholzstraße und Am Treptower Park Fahrbahnerneuerung, Straße vollständig gesperrt (bis Ende 2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 13860,9861 13704,9692 13642,9624 13602,9581
+	2 13860,9861 13704,9691 13642,9624 13602,9581
 EOF
      },
      { from  => 1119391200, # 2005-06-22 00:00
@@ -12223,7 +12223,7 @@ EOF
        text  => 'B 102 Umgehungsstr. Brücke über die Nieplitz in der OD Treuenbrietzen Brückenneubau Vollsperrung 21.07.2008-19.12.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -25419,-35417 -24932,-35664
+	2::inwork -25417,-35400 -24932,-35664
 EOF
      },
      { from  => 1216504800, # 2008-07-20 00:00
@@ -13867,7 +13867,7 @@ EOF
        text  => 'B 102 Belziger Straße OD Treuenbrietzen, Kreisverkehr Ri. Belzig Sanierung Kreisverkehr Vollsperrung 15.04.2009-29.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -25654,-35292 -25419,-35417
+	q4::inwork -25661,-35305 -25525,-35398 -25417,-35400
 EOF
      },
      { from  => 1239573600, # 2009-04-13 00:00
@@ -21340,12 +21340,23 @@ EOF
 	q4::inwork; 9275,4672 9405,4667 9494,4658 9695,4638 10010,4606
 EOF
      },
-     { from  => $isodate2epoch->("2022-09-19 06:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-09-22 06:00:00"), #
+     { do {
+           my $from1  = $isodate2epoch->("2022-09-18 06:00:00"); # 1 Tag Vorlauf
+           my $until1 = $isodate2epoch->("2022-09-22 06:00:00");
+           # in der Zwischenzeit ist die erweiterte Sperrung aktiv, siehe unten
+           my $from2  = $isodate2epoch->("2022-09-26 06:00:00");
+           my $until2 = $isodate2epoch->("2022-09-27 23:30:00");
+           if (time < $until1) {
+               (from => $from1, until => $until1);
+           } elsif (time >= $from2) {
+               (from => $from2, until => $until2);
+           }
+       },
+       dont_check_date => 1, # wegen der beiden Intervalle
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 9, start => "2020-10-25T00:00:00"]],
        #recurrence_prewarn_days => 5, # 25.10.2022
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, ab 20.09.2022',
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, 19.09.2022 bis 27.09.2022',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BERLINMARATHON-RECURRING
@@ -21353,6 +21364,7 @@ EOF
 #: by: https://viz.berlin.de/2021/09/berlin-marathon/
 #: by: https://www.bmw-berlin-marathon.com/dein-rennen/strecke/interaktive-karte/
 #: by: https://viz.berlin.de/2022/09/marathon/
+#: source_id: viz2021:13.376808,52.516209,19.09.2022,06:00
 # REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -23650,7 +23662,7 @@ EOF
 #: note: Gehweg ist hier relativ breit
 	q3::inwork; 14089,9610 13973,9465 13923,9405
 	q4::inwork; 13923,9405 13892,9365 13849,9310 13766,9200
-	q4::inwork; 13489,9456 13602,9581 13642,9624 13704,9692 13860,9861
+	q4::inwork; 13489,9456 13602,9581 13642,9624 13704,9691 13860,9861
 EOF
      },
      { from  => undef,
@@ -32399,7 +32411,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Ende 08/2021: Durchfahrt möglich)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand September 2021: Bauarbeiten im südlichen Abschnitt, Komplettsperrung möglich)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32408,9 +32420,10 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="25"
 #: osm_watch: way id="165832806" version="24"
-#: last_checked: 2022-08-25
+#: last_checked: 2022-09-18
 #: check_frequency: 30d
-	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17554,8458 17533,8505 17524,8536 17515,8567 17497,8623
+	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17554,8458 17533,8505 17524,8536
+# REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
 # REMOVED (hier neu gemacht) ---	2::inwork 17497,8623 17468,8692 17416,8767 17380,8858
 EOF
      },
@@ -35998,16 +36011,14 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1663501241, # undef, # XXX
        text  => 'Salzmannstr.: Leitungsarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2022-08-14 vvv
+# REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv --- #: last_checked: 2022-08-14 vvv
 	q3::inwork 16887,10271 16855,10127
 	q4::inwork 16855,10127 16847,10092
-#: last_checked ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
@@ -36021,12 +36032,13 @@ EOF
 EOF
      },
      { from  => 1660582743, # 2022-08-15 18:59
-       until => $isodate2epoch->("2022-09-19 17:00:00"), # 1672527600, # 2023-01-01 00:00
+       until => $isodate2epoch->("2022-11-25 17:00:00"), # 1672527600, # 2023-01-01 00:00
        text  => 'Hüttenweg: Anbindung Clayallee gesperrt',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/', # "bis 2023"
        data  => <<EOF,
 #: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022)
+#: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/pic/media%2FFaSkXFeXEAAqM9x.jpg%3Fname%3Dorig
@@ -36231,7 +36243,7 @@ EOF
 	q4::inwork 25048,10317 25112,10415 25125,10435 25147,10487 25150,10555
 EOF
      },
-     { from  => 1663525564, # 2022-09-18 20:26
+     { from  => 1663524336,
        until => undef, # XXX
        text  => 'Bahnhofstr.: Bauarbeiten zwischen Lichtenrader Damm und Mellener Str., Einbahnstraßenregelung, außerdem sind Mellener Str. und Löptener Str. Einbahnstraßen, ab 19.9.2022',
        type  => 'handicap',
@@ -36239,8 +36251,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: BAHNHOF-2022
 #: by: https://az-lichtenrade.de/wp-content/uploads/2022/09/220907_ba1_umleitung_karte_komprimiert.pdf
+#: source_id: viz2021:13.407871,52.386721,19.09.2022,11:00 (bis 31.3.2023)
 #: add_fragezeichen: Wann ist der erste Bauabschnitt in der Bahnhofstraße fertig? vvv
-#: next_check: 2023-09-15 vvv
+#: next_check: 2023-03-31 vvv
 Bahnhofstr.	q4::inwork; 11073,-2037 10983,-2116 10756,-2128
 Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 10980,-1919
 #: next_check ^^^
@@ -36310,6 +36323,18 @@ EOF
 #: also_indoor: traffic (none)
 #: last_checked: 2022-09-17
 	q4::inwork; 6753,9814 6747,9912 6741,10017
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Archibaldweg: mögliche Sperrung der Straße, vermutlich nur während üblicher Arbeitszeiten',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
+#: XXX am 2022-09-18 (Sonntag): Barrieren sowie Durchfahrtsverbotsschilder existieren, Barrieren waren aber geöffnet
+#: last_checked: 2022-09-18
+#: check_frequency: 14d
+	2::inwork 15674,10851 15870,10938
 EOF
      },
     );

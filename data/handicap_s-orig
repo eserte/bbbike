@@ -153,7 +153,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 # REMOVED (nein) --- #: next_check_id: VERLWERDERSTR-2018 --- #: XXX gibt es hier tatsächlich Einschränkungen? --- #: valid: 20180702-20190530 -- Verlängerte Werderstr.: Bauarbeiten	q4::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
 # REMOVED (mittlerweile wieder offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=4505&mt=0&zoom=17 --- #: last_checked: 2017-03-20 --- #: check_frequency: 14d --- Kiefholzstr.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13821,9340 13715,9455
 # REMOVED (aber vielleicht nur am Wochenende offen?) --- #: last_checked: 2016-12-20 vvv --- #: check_frequency: 21d vvv --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 13203,9450 13124,9375 --- Schmollerplatz: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13124,9375 13111,9361 13126,9347 --- #: check_frequency ^^^ --- #: last_checked ^^^
-# REMOVED --- #: XXX siehe auch valid-Eintrag weiter unten --- #: source_id: 2147340178 --- #: last_checked: 2016-10-05 --- #: valid: -20161115 --- Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13704,9692 13860,9861 13870,9872 13890,9894 -- # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
+# REMOVED --- #: XXX siehe auch valid-Eintrag weiter unten --- #: source_id: 2147340178 --- #: last_checked: 2016-10-05 --- #: valid: -20161115 --- Bouchéstr.: Bauarbeiten, Radfahrer müssen auf dem Gehweg fahren	q2::inwork 13642,9624 13704,9691 13860,9861 13870,9872 13890,9894 -- # REMOVED (wahrscheinlich aufgehoben) --- #: last_checked: 2013-11-22 --- #: check_frequency: 60d --- Beermannstr.: Bauarbeiten, Fahrbahn in Richtung Elsenstr. gesperrt	q4; 13973,9465 14157,9345
 # REMOVED (Bauarbeiten beendet) --- #: XXX laut Schild gehen die Bauarbeiten bis 10.2017 --- #: XXX nach Beendigung der Bauarbeiten wieder den alten handicap-Eintrag ("Bodenschwellen") aktivieren --- #: last_checked: 2017-11-30 --- #: check_frequency: 14d --- Bouchéstr.: Bauarbeiten an der Heidelberger Str.	q3::inwork; 13489,9456 13357,9313
 # 
 ### Adlershof ###
@@ -447,19 +447,17 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 #: next_check_id: WANDLITZ-2021
 #: note: am 2022-04-22 war die Fahrbahn offen, aber möglicherweise war das nur "zufällig" so, weil Baufahrzeuge reinfahren mussten; jedenfalls stehen an beiden Enden Bauzäune, die umgeklappt werden können
 #: also_indoor: traffic
-#: last_checked: 2022-07-22
+#: last_checked: 2022-09-18
 #: check_frequency: 90d
 Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
 # 
 # REMOVED (fertig) --- #: next_check_id: ZWIESELER-2022 --- #: last_checked: 2022-03-20 --- #: check_frequency: 60d --- Richard-Kolkwitz-Weg: Engstelle wegen Bauarbeiten	q2::inwork 19711,10426 19813,10468
 # 
-#: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2022-08-25 vvv
-Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17468,8692 17656,8700 17640,8627 17497,8623
-Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17468,8692
-Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17468,8692 17497,8623
-#: last_checked ^^^
-# 
+# REMOVED --- #: next_check_id: PARKSTADTKARLSHORST-2021 --- #: last_checked: 2022-09-18 vvv
+# REMOVED --- Parkstadt Karlshorst: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork 17380,8858 17416,8767 17468,8692 17656,8700 17640,8627 17497,8623
+# REMOVED --- Hönower Wiesenweg: Beeinträchtigungen durch Bauarbeiten und Baustellenverkehr möglich	q2::inwork; 17497,8623 17468,8692
+# REMOVED --- Hönower Wiesenweg: temporäre Einbahnstraßenregelung, Baustellenverkehr	q3::inwork; 17468,8692 17497,8623
+# REMOVED --- #: last_checked ^^^
 # REMOVED --- #: XXX nach den Bauarbeiten den alten Eintrag für die Wildensteiner Str. wieder aktivieren! --- #: add_fragezeichen: Sind die Bauarbeiten an der Einmündung Wandlitzstr./Wildensteiner Str. beendet? vvv --- #: also_indoor: traffic (ex-G) vvv --- #: last_checked: 2021-11-16 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2022-01-01 vvv --- Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18557,8525 18627,8475 18704,8427 --- Wandlitzstr./Wildensteiner Str.: Fahrbahn im Bereich der Kreuzung gesperrt	q3::inwork 18627,8475 18528,8331 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: add_fragezeichen ^^^
 # REMOVED --- #: XXX nach den Bauarbeiten vermutlich bessere Qualität --- #: last_checked: 2016-12-10 --- Andernacher Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 19155,8631 19249,8662
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 vvv --- #: osm_watch: way id="580512810" version="4" --- #: osm_watch: way id="580508096" version="6" --- #: also_indoor traffic vvv --- #: last_checked: 2019-05-21 vvv --- #: next_check: 2019-06-10 vvv --- #: valid: -20201231 vvv --- #: priority: #A vvv
@@ -1904,7 +1902,7 @@ Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14996,12462 14801,12517
 #: XXX_prog: für Anhänger relevant (q2 oder so)
 Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14798,12502 15005,12443
 #: XXX_prog: für Anhänger relevant (q1 oder so)
-Bouchéstr.: Bodenschwellen	q0 13642,9624 13704,9692 13860,9861
+Bouchéstr.: Bodenschwellen	q0 13642,9624 13704,9691 13860,9861
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Bouchéstr.: zwei Bodenschwellen	q0- 13489,9456 13357,9313
 #: XXX_prog: für Anhänger relevant (q2 oder so)
@@ -4164,6 +4162,11 @@ Pappritzstr.: enge Straße	q0- 7562,1796 7675,1885 7736,1969 7741,2096
 Herkulesufer: Fußgänger, schmal	q2 7233,11189 7160,11186 7135,11171 7142,11145 6920,11064 6882,11061
 Herkulesufer: Fußgänger, schmal	q2 7135,11171 7115,11220
 Cora-Berliner-Str.: Fußgängerzone, Radfahrer frei	q1 8737,12098 8783,11959
+#: note: Grünanlagen-Schild ohne Radfahrer-Zusatzschild 
+(Schlesischer Busch - Bouchéstr.): einige Fußgänger	q1 13418,9944 13513,9871
+(Schlesischer Busch - Bouchéstr.): einige Fußgänger	q1 13513,9871 13704,9691
+#: note: Richtung Westen mit Zusatzschild "Linienverkehr frei", Richtung Osten Einfahrt verboten
+Ehrenfelsstr.: Fußgängerzone	q3 18737,8686 18778,8663
 # 
 ######################### User Contributions #################################
 # 

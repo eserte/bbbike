@@ -887,7 +887,6 @@ Nußbaumallee: durch Tore abgesperrt	2 1113,12392 1206,12364
 Mittelstreifen, Bordsteine	3nocross::ignrte 12930,10621 12899,10595 12731,10547
 Skalitzer Str. -> Skalitzer Str.: Mittelstreifen, Bordsteine	3::igndisp 12930,10621 12899,10595 12978,10581
 Zufahrt "Gleis Park": durch Tore abgesperrt	2 8367,10745 8350,10662 8335,10518
-Ehrenfelsstr.	1s 18737,8686 18778,8663
 Mellenseestr. [Wohngebiet]	1 17587,9655 17633,9793 17633,9898
 Mellenseestr. [Wohngebiet]	1 17777,9649 17738,9822 17738,9922
 Mellenseestr. [Wohngebiet]	1 17920,9698 17868,9823 17838,9956
@@ -1011,6 +1010,7 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s -8417,-2862 -8410,-2884
 Bienenwinkel	1 -13335,1927 -13333,1957 -13227,1962 -13228,1927
 Luisenhof: durch Tore abgesperrt	2 -13558,-2841 -13570,-2795
+Jüterboger Str., Wallstr. (Kloster Zinna)	1 -8922,-43250 -9006,-43232 -9050,-43212 -9091,-43151 -9044,-42958
 Segelfliegerdamm (Zernsdorf - Niederlehme)	2 28499,-10164 28454,-10018 28385,-9820 28312,-9695 27950,-8900 27754,-8708
 Königs Wusterhausen - Wernsdorf	1 27704,-8747 27719,-8666
 Am Tonberg (Zeuthen)	1 24593,-7405 24492,-7311 24416,-7241
@@ -3235,6 +3235,7 @@ Schranke	BNP:0:0:trailer=3 3218,8223
 Halbschranke	BNP:0:-2:trailer=1 28519,337
 Tor	BNP:10:-180 1432,1953
 Tor	BNP:10:-196 1473,1740
+Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 13333,9929 13271,9927 13225,9897 13109,9743 12905,9470 12889,9426 12897,9365
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 Mittelheide: umgefallene Baumstämme	2 24365,7657 24275,7550
