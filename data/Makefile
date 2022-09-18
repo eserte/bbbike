@@ -114,10 +114,12 @@ INTERMEDIATE_TARGETS=	.strassen.tmp \
 			${PERSISTENTTMPDIR}/gesperrt-without-nocross \
 			${PERSISTENTTMPDIR}/radwege-orig-valid
 
-ADDITIONAL_SOURCEID_FILES=
+ADDITIONAL_SOURCEID_FILES=	routing_helper-orig
 .if exists($(BBBIKEAUXDIR)/bbd/fragezeichen_lowprio.bbd)
 ADDITIONAL_SOURCEID_FILES+=	$(BBBIKEAUXDIR)/bbd/fragezeichen_lowprio.bbd
 .endif
+
+ADDITIONAL_FRAGEZEICHEN_FILES=	routing_helper-orig
 
 # These have to be checked using the check-urls target
 FILES_WITH_URLS=	comments_route-orig comments_ferry-orig comments_misc-orig
@@ -949,6 +951,7 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 #XXX in "-orig" transition: handicap_s-orig and gesperrt-orig always need to have the same base map!
 .create_fragezeichen:	fragezeichen-orig ${DATADIR}/ampeln-orig \
 		${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.fragezeichen-|} \
+		${ADDITIONAL_FRAGEZEICHEN_FILES:S|^|${PERSISTENTTMPDIR}/.fragezeichen-|} \
 		${PERSISTENTTMPDIR}/.fragezeichen-bbbike-temp-blockings-optimized \
 		Makefile
 	-@$(WRITEABLE) $@
@@ -957,7 +960,7 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 	        ${GREPSTRASSEN} -special filternextcheck |\
 	    ${CONVERT_ORIG} > $@~
 	[ -s $@~ ]
-.for frz_source_target in ${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.fragezeichen-|}
+.for frz_source_target in ${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.fragezeichen-|} ${ADDITIONAL_FRAGEZEICHEN_FILES:S|^|${PERSISTENTTMPDIR}/.fragezeichen-|}
 	if [ -s ${frz_source_target} ] ; then \
 	    echo "# added from ${frz_source_target:T:S|.fragezeichen-||}" >> $@~; \
 	    cat ${frz_source_target} >> $@~; \
@@ -975,6 +978,12 @@ ${PERSISTENTTMPDIR}/.fragezeichen-$(i):	$(i)-orig
 	cp -f /tmp/fragezeichen_$(i)-orig.bbd $@
 .endfor
 
+.for i in ${ADDITIONAL_FRAGEZEICHEN_FILES}
+${PERSISTENTTMPDIR}/.fragezeichen-$(i):	$(i)
+	${GREPSTRASSEN_UTF8} -special filternextcheck -special fragezeichen ${DATADIR}/$(i) > /dev/null
+	cp -f /tmp/fragezeichen_$(i).bbd $@
+.endfor
+
 ${PERSISTENTTMPDIR}/.fragezeichen-bbbike-temp-blockings-optimized:	${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
 	${GREPSTRASSEN_UTF8} -special filternextcheck -special fragezeichen $> > /dev/null
 	cp -f /tmp/fragezeichen_bbbike-temp-blockings-optimized.bbd.bbd $@
@@ -986,7 +995,7 @@ ${PERSISTENTTMPDIR}/.fragezeichen-bbbike-temp-blockings-optimized:	${PERSISTENTT
 # PERSISTENT TEMPORARY DIRECTORY TARGETS
 
 # Targets ../tmp/.XXX-{outdoor,indoor,...}-{strassen,landstrassen,...}
-.for i in ${SOURCE_TARGETS}
+.for i in ${SOURCE_TARGETS} ${ADDITIONAL_FRAGEZEICHEN_FILES}
 ${XXX_TARGETS:C/^/${PERSISTENTTMPDIR}\/.XXX-/:C/$/-$(i)/}:	$(i)-orig
 	${GREPSTRASSEN} \
 	    -adddirectives XXX \
@@ -1004,11 +1013,13 @@ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd:	\
 		.check_daily \
 		Makefile \
 		${SOURCE_TARGETS_SOURCES} \
+		${ADDITIONAL_FRAGEZEICHEN_FILES} \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
 	${PERL} ${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --remove-non-coords --preamble --${doormode}-mode \
 	    --fragezeichen-mode fragezeichen-orig \
 	    --no-fragezeichen-mode \
 	    ${SOURCE_TARGETS_SOURCES:S|fragezeichen-orig||} \
+	    ${ADDITIONAL_FRAGEZEICHEN_FILES} \
 	    ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
 		> ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~
 	mv -f ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-${doormode}-nextcheck.bbd
@@ -1018,6 +1029,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd:	\
 		.check_daily \
 		Makefile \
 		${SOURCE_TARGETS_SOURCES} \
+		${ADDITIONAL_FRAGEZEICHEN_FILES} \
 		${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
 	${PERL} ${MISCSRCDIR}/create_fragezeichen_nextcheck.pl --remove-non-coords --preamble \
 	    --coloring '#6c0000 +1w #b05555 +1m #ec8888 +6m #f2a0a0 +1y #fcc8c8 +5y #fdd8d8 +100y #fde0e0'\
@@ -1026,6 +1038,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd:	\
 	    --no-fragezeichen-mode \
 	    --emit-source-directives \
 	    ${SOURCE_TARGETS_SOURCES:S|fragezeichen-orig||} \
+	    ${ADDITIONAL_FRAGEZEICHEN_FILES} \
 	    ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd \
 		> ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~
 	mv -f ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd~ ${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
