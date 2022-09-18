@@ -1780,7 +1780,6 @@ $wbm->command(-label => M("Wetterstation").":",
 			['dahlem1'],
 			($devel_host && $advanced
 			 ? (
-			    ['metar-EDDT' => 'METAR Tegel'],
 			    ['metar-EDDB' => 'METAR BER'],
 			   )
 			 : ()
