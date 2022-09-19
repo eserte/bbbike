@@ -2351,32 +2351,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.laubinger.de/event/47-rosenthaler-herbst/ (geplant: 18.09.2021 - 19.09.2021)
-#: by: https://www.berliner-woche.de/rosenthal/c-kultur/feiern-mit-abstand-und-einschraenkungen_a321188
-#: by: https://dorf-rosenthal.de/programmheft
-#: by: https://www.laubinger.de/event/47-rosenthaler-herbst/
-	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
-',
-         'from' => 1663192800,
-         'id' => 2285,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              13,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2019',
-         'text' => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 16.09.2022 bis 18.09.2022',
-         'type' => 'handicap',
-         'until' => 1663538399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4685,26 +4660,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: SCHARFELANKE-2021
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: osm_watch: way id="187977779" version="16" vvv
-#: last_checked: 2022-08-28 (twitter) vvv
-#: next_check: 2022-12-31 vvv
-	2::inwork -3752,11373 -3785,11445 -3828,11491 -3928,11526 -4028,11533 -4106,11519 -4181,11458 -4204,11432 -4245,11400
-	2::inwork -4246,11438 -4204,11432
-	2::inwork -3928,11526 -3909,11596
-#: next_check ^^^
-#: last_checked ^^^
-#: osm_watch ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 3467,
-         'text' => 'Uferweg an der Scharfen Lanke: Bauarbeiten, komplett gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5431,17 +5387,7 @@ Frobenstr.	q3::inwork 6349,2510 6529,2642
          'type' => 'gesperrt',
          'until' => 1704042000
        },
-       {
-         'data' => '#: note: zwischen den Konzertterminen offen, z.B. gesehen am 2022-07-03
-	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
-',
-         'from' => undef,
-         'id' => 3569,
-         'source_id' => 'https://www.wuhlheide.de/programm',
-         'text' => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison bis zum 17. September 2022',
-         'type' => 'gesperrt',
-         'until' => 1663538399
-       },
+       undef,
        {
          'data' => '#: by: Gonsolo & osm
 	2::temp -8489,-2220 -8574,-2204 -8653,-2195
@@ -5458,13 +5404,13 @@ Frobenstr.	q3::inwork 6349,2510 6529,2642
        {
          'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1539528243316985856#m
 #: by: https://nitter.net/pic/orig/media%2FFV2AstdX0AEWnIn.jpg
-	q4::inwork; 10710,18393 10650,18544
+# REMOVED (hier keine Einschränkungen mehr, siehe mapillary) --- Eintrachtstr.	q4::inwork; 10710,18393 10650,18544
 	q4::inwork 10721,18575 10784,18426
 ',
          'from' => 1655798400,
          'id' => 3573,
          'source_id' => 'viz2021:13.414144,52.572092,22.06.2022,10:00',
-         'text' => 'Kavalierstr. und Eintrachtstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich,, vom 22.06.2022 10:00 bis 07.10.2022 17:00',
+         'text' => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 07.10.2022 17:00',
          'type' => 'handicap',
          'until' => 1665154800
        },
@@ -5537,7 +5483,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        },
        {
          'data' => '#: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
-#: last_checked: 2022-09-04 vvv
+#: last_checked: 2022-09-11 (mapillary) vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
 	q3::inwork 12995,8213 13060,8148
 #: last_checked ^^^
@@ -5644,7 +5590,7 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022)
+         'data' => '#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
@@ -5732,14 +5678,14 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
        {
          'data' => '#: note: Gehweg scheint auch gesperrt zu sein
 #: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
-#: last_checked: 2022-08-24
+#: last_checked: 2022-09-11 (mapillary)
 #: check_frequency: 120d
-	2::inwork 16615,15737 16537,15827
+	q3::inwork 16615,15737 16537,15827
 ',
          'from' => undef,
          'id' => 3611,
-         'text' => 'Oberseestr.: Einmündung Degnerstr. komplett gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
+         'text' => 'Oberseestr.: Fahrbahn an der Einmündung Degnerstr. gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
          'until' => undef
        },
        undef,
@@ -5935,16 +5881,19 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'until' => undef
        },
        {
-         'data' => '#: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
+         'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
+#: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
 #: XXX am 2022-09-18 (Sonntag): Barrieren sowie Durchfahrtsverbotsschilder existieren, Barrieren waren aber geöffnet
+#: also_indoor: traffic (none)
 #: last_checked: 2022-09-18
-#: check_frequency: 14d
-	2::inwork 15674,10851 15870,10938
+#: check_frequency: 21d
+#: next_check: 2022-10-30
+	q3::inwork 15674,10851 15870,10938
 ',
          'from' => undef,
          'id' => 3630,
-         'text' => 'Archibaldweg: mögliche Sperrung der Straße, vermutlich nur während üblicher Arbeitszeiten',
-         'type' => 'gesperrt',
+         'text' => 'Archibaldweg: einige Meter der Fahrbahn sind gesperrt, enger Gehweg vorhanden, voraussichtlich bis zum 30.10.2022mögliche Sperrung der Straße, vermutlich nur während üblicher Arbeitszeiten',
+         'type' => 'handicap',
          'until' => undef
        }
      

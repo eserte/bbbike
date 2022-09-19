@@ -34043,22 +34043,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1663616483, # undef, # XXX
        text  => 'Uferweg an der Scharfen Lanke: Bauarbeiten, komplett gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: SCHARFELANKE-2021
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: osm_watch: way id="187977779" version="16" vvv
-#: last_checked: 2022-08-28 (twitter) vvv
-#: next_check: 2022-12-31 vvv
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1246400.php (Wiedereröffnung)
+# REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv --- #: osm_watch: way id="187977779" version="16" vvv --- #: last_checked: 2022-08-28 (twitter) vvv --- #: next_check: 2022-12-31 vvv
 	2::inwork -3752,11373 -3785,11445 -3828,11491 -3928,11526 -4028,11533 -4106,11519 -4181,11458 -4204,11432 -4245,11400
 	2::inwork -4246,11438 -4204,11432
 	2::inwork -3928,11526 -3909,11596
-#: next_check ^^^
-#: last_checked ^^^
-#: osm_watch ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: osm_watch ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => 1635026400, # 2021-10-24 00:00
@@ -35548,13 +35543,13 @@ EOF
      },
      { from  => 1655798400, # 2022-06-21 10:00
        until => $isodate2epoch->("2022-10-07 17:00:00"), # 1661871600, # 2022-08-30 17:00
-       text  => 'Kavalierstr. und Eintrachtstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich,, vom 22.06.2022 10:00 bis 07.10.2022 17:00',
+       text  => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 07.10.2022 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.414144,52.572092,22.06.2022,10:00',
        data  => <<EOF,
 #: by: https://nitter.net/VIZ_Berlin/status/1539528243316985856#m
 #: by: https://nitter.net/pic/orig/media%2FFV2AstdX0AEWnIn.jpg
-	q4::inwork; 10710,18393 10650,18544
+# REMOVED (hier keine Einschränkungen mehr, siehe mapillary) --- Eintrachtstr.	q4::inwork; 10710,18393 10650,18544
 	q4::inwork 10721,18575 10784,18426
 EOF
      },
@@ -35779,7 +35774,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
-#: last_checked: 2022-09-04 vvv
+#: last_checked: 2022-09-11 (mapillary) vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
 	q3::inwork 12995,8213 13060,8148
 #: last_checked ^^^
@@ -36037,7 +36032,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/2022/08/verkehrsvorschau-170822/', # "bis 2023"
        data  => <<EOF,
-#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022)
+#: source_id: viz2021:13.272377,52.453518,17.08.2022,09:00 (hier nur bis 12.9.2022) (mittlerweile bis 19.9.2022) (inaktiv)
 #: source_id: viz2021:13.272377,52.453518,19.09.2022,12:00 (bis 25.11.2022)
 #: by: https://nitter.cz/VIZ_Berlin/status/1559793397908381696#m
 #: by: https://nitter.cz/pic/media%2FFaSkXFdX0AQFyze.jpg%3Fname%3Dorig
@@ -36113,14 +36108,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Oberseestr.: Einmündung Degnerstr. komplett gesperrt, Ende der Bauarbeiten unbekannt',
-       type  => 'gesperrt',
+       text  => 'Oberseestr.: Fahrbahn an der Einmündung Degnerstr. gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
        data  => <<EOF,
 #: note: Gehweg scheint auch gesperrt zu sein
 #: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
-#: last_checked: 2022-08-24
+#: last_checked: 2022-09-11 (mapillary)
 #: check_frequency: 120d
-	2::inwork 16615,15737 16537,15827
+	q3::inwork 16615,15737 16537,15827
 EOF
      },
      { from  => undef, # 
@@ -36327,14 +36322,17 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Archibaldweg: mögliche Sperrung der Straße, vermutlich nur während üblicher Arbeitszeiten',
-       type  => 'gesperrt',
+       text  => 'Archibaldweg: einige Meter der Fahrbahn sind gesperrt, enger Gehweg vorhanden, voraussichtlich bis zum 30.10.2022mögliche Sperrung der Straße, vermutlich nur während üblicher Arbeitszeiten',
+       type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
 #: XXX am 2022-09-18 (Sonntag): Barrieren sowie Durchfahrtsverbotsschilder existieren, Barrieren waren aber geöffnet
+#: also_indoor: traffic (none)
 #: last_checked: 2022-09-18
-#: check_frequency: 14d
-	2::inwork 15674,10851 15870,10938
+#: check_frequency: 21d
+#: next_check: 2022-10-30
+	q3::inwork 15674,10851 15870,10938
 EOF
      },
     );

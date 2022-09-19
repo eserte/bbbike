@@ -1028,7 +1028,7 @@ Tegeler Weg: Asphalt	Q0 7259,14870 7209,14927 7182,14986 7178,14996 7131,15109 7
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: by: https://www.infravelo.de/projekt/lynarstrasse/ (3. Quartal 2021 - 3. Quartal 2022) (mittlerweile: 4. Quartal 2022 - 4. Quartal 2023)
-#: XXX Wird die restliche Lynarstr. auch asphaltiert?
+#: XXX Wird die restliche Lynarstr. auch asphaltiert? Wird hier (abschnittsweise) eine Fahrradstraße ausgewiesen?
 #: last_checked: 2022-07-31
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2022-12-31
@@ -1060,7 +1060,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-09-17
+#: last_checked: 2022-09-19
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2681,7 +2681,8 @@ Pankebrücke: Holzbohlen	Q1 8329,15397 8308,15409
 Parkstr.: leicht welliger Asphalt	Q0 9905,18329 10075,18472 10205,18575 10359,18646 10496,18704
 #: by: anonymous
 #: corrected_by: srt (war "schlechtes Kopfsteinpflaster")
-Eintrachtstr.: Asphalt mit Straßenschäden	Q2+ 10710,18393 10650,18544
+#: corrected_by: mapillary (Asphalt mit Straßenschäden, Q2+ -> ..., neu gemacht?)
+Eintrachtstr.: Asphalt	Q0 10710,18393 10650,18544
 Hiddenseer Str.: Asphalt mit leichten Schäden	Q0- 11651,15273 11828,15210
 Stubbenkammerstr.: Asphalt mit leichten Schäden	Q0- 11631,15192 11801,15132
 (Chausseestr. - Schulzendorfer Str.): Parkweg	Q1 8286,14635 8322,14687 8292,14734 8275,14869 8264,14902
@@ -4448,7 +4449,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/sanierung-mit-bundesmitteln_a250258
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8058
 #: XXX wird hier saniert?
-#: last_checked: 2022-08-24
+#: last_checked: 2022-09-11 (mapillary)
 #: check_frequency: 360d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15665,15765
@@ -11587,8 +11588,10 @@ Nettelbeckplatz: teilweise gepflastert	Q1 7891,15417 7974,15418 8024,15401
 #: by: https://nitter.cz/ulid000/status/1563899145861177345#m (Umlaufschranken, halbhohe Bordsteine, Asphalt)
 #: by: https://spandau-bewegt.de/scharfe-lanke/ (BA1: Fertigstellung der Maßnahmen: Ende 2022) (BA2 ist die Anbindung zur Bocksfeldstr.)
 #: XXX was wird sich nach der Umgestaltung ändern? Wird sich die Qualität verbessern?
+#: add_fragezeichen: Ist der Uferweg mittlerweile asphaltiert?
 #: last_checked: 2022-08-28 (twitter)
-#: next_check: 2022-12-31
+#: next_check: 2022-09-16
+# REMOVED --- #: next_check: 2022-12-31
 (Uferweg): welliges Verbundsteinpflaster	Q1- -4245,11400 -4204,11432 -4181,11458 -4106,11519 -4028,11533 -3928,11526 -3828,11491 -3785,11445 -3752,11373
 Havel-Ufer Hohengatow: Asphalt	Q0 -4774,6514 -4689,6661 -4684,6755 -4667,6814 -4624,6872 -4498,7095 -4481,7142 -4488,7200 -4488,7317 -4506,7375 -4508,7456 -4494,7510 -4531,7549 -4539,7643 -4534,7695 -4540,7801 -4778,7791
 Havel-Ufer Hohengatow, unterer Weg: unbefestigter Weg	Q1- -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
@@ -12151,6 +12154,8 @@ Metropolitan Park: Asphalt	Q0 -8088,13594 -7984,13649 -7926,13709 -7893,13781 -7
 Märkische Allee [Wohngebiet]: Asphalt	Q0- 20459,16697 20439,16709 20430,16744 20473,16829 20507,16845 20588,16992
 David-Friedländer-Weg: Betonpflaster	Q0- 20727,18726 20901,18793 21038,18851 21036,18888 21028,18915 20998,18980
 Christian-Dohm-Weg: Betonpflaster	Q0- 20760,18812 20894,18861 21028,18915
+#: by: mapillary
+Karl-Philipp-Moritz-Weg: Betonpflaster	Q0- 20965,18743 21123,18813
 Henriette-Herz-Allee: Asphalt	Q0 20907,18740 20901,18793 20894,18861 20889,18935
 Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19736,13523 19737,13485
 Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19649,13481 19737,13485 19811,13487 19812,13442 19815,13317 19817,13259
@@ -24310,7 +24315,7 @@ Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 #: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="5"
-#: last_checked: 2022-07-30
+#: last_checked: 2022-09-11 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kleinsteinpflaster	Q2 16314,15223 16354,15323 16406,15452
@@ -31395,4 +31400,6 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 2921,10928
 Einmündungsbereich mit Kopfsteinpflaster	Q2 2987,11055
 Einmündungsbereich mit Kopfsteinpflaster	Q2 13311,9905
 Einmündungsbereich asphaltiert	Q0 13251,9829
+#: by: mapillary
+Einmündungsbereich mit Kopfsteinpflaster	Q2 10650,18544
 #: ignore ^^^
