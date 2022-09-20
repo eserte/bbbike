@@ -763,7 +763,7 @@ für Radfahrer freigegebene Busspur gilt immer	RW1; 8562,11744 8553,11638 8553,11
 #: source_id: 2147345481
 #: source_id: 2147345753
 #: source_id: viz2021:13.408836,52.517143,22.04.2020,15:00 (Bauarbeiten bis 30.6.2023)
-#: last_checked: 2022-08-26 vvv
+#: last_checked: 2022-09-20 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
@@ -1122,7 +1122,16 @@ Radweg nur aufgemalt	RW1; 4218,6583 4335,6523 4423,6477
 #: next_check: 2023-12-31
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
-geschützter Radstreifen, Grünbeschichtung	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
+#: by: https://www.deutsches-architekturforum.de/thread/14397-jaho-berlin-mitte-in-planung/?postID=723414#post723414
+#: by: https://www.art-invest.de/projekt/jaho-berlin/ (Fertigstellung: 2025)
+#: source_id: viz2021:13.418119,52.51549,23.08.2022,05:00 (bis 23.10.2022)
+#: XXX Einschränkung wegen Hochbauarbeiten (JaHo)
+#: XXX früher: geschützter Radstreifen, Grünbeschichtung, RW4;
+#: last_checked: 2022-09-20
+#: check_frequency: 60d
+#: next_check: 2025-01-01
+provisorischer Radweg auf Gehweg	RW2; 11347,12223 11388,12202 11513,12138
+geschützter Radstreifen, Grünbeschichtung	RW4; 11513,12138 11619,12084 11764,12001
 geschützter Radstreifen, ca. 3,50m breit, Grünbeschichtung	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
 Radspuren zwischen Fahrspuren	RW4; 11388,12202 11347,12223
 asphaltierter Radweg	RW1;RW1 11347,12223 11355,12331 11344,12410 11340,12443 11329,12497 11252,12644 11207,12706
@@ -1694,12 +1703,12 @@ Busspur ist immer gültig	RW5;RW5 9934,12420 9858,12410
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
 #: source_id: viz2021:13.399226,52.517706,30.05.2022,08:00 (bis 15.8.2022, zwischen Lustgarten - Oberwallstr.) (mittlerweile inaktiv) vvv
 #: source_id: viz2021:13.404803,52.520062,30.05.2022,08:00 (bis 15.8.2022) (mittlerweile bis 29.8.2022) (bis 19.9.2022)
-#: last_checked: 2022-09-17 vvv
-#: check_frequency: 21d vvv
-#: next_check: 2022-09-19 vvv
+#: last_checked: 2022-09-20 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2022-09-19 vvv
 provisorische Radspur	RW4; 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506
 provisorische Radspur	RW4; 10176,12506 10155,12494 10063,12438 10024,12431 9984,12426 9934,12420
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -3315,7 +3324,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
-#: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022) (inaktiv)
+#: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022) (inaktiv) (bis 15.11.2022)
 #: note: laut rbb bis 15.11.2022
 #: last_checked: 2022-08-14 vvv
 #: check_frequency: 120d vvv

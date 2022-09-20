@@ -65,7 +65,7 @@ Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2022-09-01
+#: last_checked: 2022-09-20
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
@@ -119,7 +119,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8234,19936
 #: source_id ^^^
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-09-17 (webcam)
+#: last_checked: 2022-09-20
 #: next_check: 2024-06-01
 Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
@@ -2374,7 +2374,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 # 
 #: next_check_id: FRIEDRICH-2020
 #: note: vorhandene Ampel ist dauerhaft abgeschaltet
-#: last_checked: 2022-09-17
+#: last_checked: 2022-09-20
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 # REMOVED --- #: valid: !20200821-20211031
@@ -3133,19 +3133,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 10134,19981
 # REMOVED (existiert nicht mehr) --- F 5628,14063
 # 
-#: next_check_id: MUSEUMSINSEL-2020
-#: next_check_id: ZEUGHAUS-2014
-#: XXX temporäre Ampel (wegen Arbeiten an der U-Bahn + Schlossplatz)
-#: XXX_prog Anforderungsampel
-#: osm_watch: node id="5931765487" version="5"
-#: osm_watch: node id="5931765488" version="5"
-#: last_checked: 2022-09-17
-#: check_frequency: 30d
-	F::inwork 9984,12426
+# REMOVED --- #: next_check_id: MUSEUMSINSEL-2020 --- #: next_check_id: ZEUGHAUS-2014 --- #: XXX temporäre Ampel (wegen Arbeiten an der U-Bahn + Schlossplatz) --- #: XXX_prog Anforderungsampel --- #: osm_watch: node id="5931765487" version="5" --- #: osm_watch: node id="5931765488" version="5" --- #: last_checked: 2022-09-17 --- #: check_frequency: 30d ---	F::inwork 9984,12426
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2022-09-17 vvv
+#: last_checked: 2022-09-20 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
