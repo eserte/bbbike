@@ -16044,7 +16044,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013939',
        data  => <<EOF,
-	q4::inwork; -4922,13609 -4937,13643 -4944,13673 -4934,13890 -4926,13971
+	q4::inwork; -4922,13609 -4933,13642 -4941,13686 -4934,13890 -4926,13971
 EOF
      },
      { from  => 1252010710, # 2009-09-03 22:45
@@ -17271,7 +17271,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014681',
        data  => <<EOF,
-	q4::inwork; 5361,11910 5229,12001 5128,12149 4973,12256
+	q4::inwork; 5348,11926 5229,12001 5128,12149 4973,12256
 EOF
      },
      { from  => 1258239600, # 2009-11-15 00:00
@@ -21384,6 +21384,9 @@ EOF
 #: next_check_id: BERLINMARATHON-RECURRING
 #: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00
 #: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30
+#: source_id: viz2021:13.377158,52.515908,23.09.2022,04:00
+#: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00
+#: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
 	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -25550,7 +25553,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.464628.php',
        data  => <<EOF,
-	q4::inwork; 4973,12256 5128,12149 5229,12001 5361,11910
+	q4::inwork; 4973,12256 5128,12149 5229,12001 5348,11926
 EOF
      },
      { from  => undef,
@@ -28257,7 +28260,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-08-30
+#: last_checked: 2022-09-22
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -31500,8 +31503,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-05-30 08:30:00"), # 1589275980, # 2020-05-12 11:33
-       until => $isodate2epoch->("2022-09-30 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, bis 30.09.2022',
+       until => $isodate2epoch->("2022-10-07 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
+       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, bis 07.10.2022',
        type  => 'handicap',
        source_id => '2147345834', # (inaktiv)
        data  => <<EOF,
@@ -31512,9 +31515,9 @@ EOF
 # REMOVED --- #: XXX laut osm-Notiz nicht mehr gesperrt --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
 #: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
 #: source_id: 2147347233 (bis 23.12.2021)
-#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022)
+#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022) (bis 7.10.2022)
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)
-#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm)
+#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022)
 #: source_id: bvg2021:188#BVG259885_0
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
@@ -34052,7 +34055,7 @@ EOF
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1246400.php (Wiedereröffnung)
 #: by: https://berliner-abendblatt.de/2022/09/21/scharfe-lanke-wiedereroeffnet/
 # REMOVED --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv --- #: osm_watch: way id="187977779" version="16" vvv --- #: last_checked: 2022-08-28 (twitter) vvv --- #: next_check: 2022-12-31 vvv
-	2::inwork -3752,11373 -3785,11445 -3828,11491 -3928,11526 -4028,11533 -4106,11519 -4181,11458 -4204,11432 -4245,11400
+	2::inwork -3742,11409 -3772,11406 -3782,11458 -3824,11499 -3928,11526 -4028,11533 -4106,11519 -4181,11458 -4204,11432 -4234,11408 -4245,11400
 	2::inwork -4246,11438 -4204,11432
 	2::inwork -3928,11526 -3909,11596
 # REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: osm_watch ^^^ --- #: add_fragezeichen ^^^
@@ -34677,7 +34680,7 @@ EOF
      },
      { from  => 1646694000, # 2022-03-08 00:00
        until => 1683583200, # 2023-05-09 00:00
-       text  => 'Fürstendamm: Bauarbeiten zwischen Zeltinger Platz und Eltviller Str., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, ab 9.3.2022, Gesamtbaumaßnahme bis voraussichtlich Mitte 2023',
+       text  => 'Fürstendamm: Bauarbeiten in Höhe Eltviller Str., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, ab 9.3.2022, Gesamtbaumaßnahme bis voraussichtlich Mitte 2023',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1175116.php',
        data  => <<EOF,
@@ -34689,8 +34692,10 @@ EOF
 #: source_id: 226500387 (bis 31.12.2022)
 #: source_id: viz2021:13.298114,52.631634,09.03.2022,07:00 (bis 31.12.2022)
 #: XXX Wann beginnt der 2. Bauabschnitt: Eltviller Straße bis Oranienburger Chaussee?
+#: last_checked: 2022-09-09 (kartaview)
 #: next_check: 2022-10-01
-	q4::inwork 2486,25156 2599,25047 2647,25018 2673,25012 2818,25022 2904,24993 3015,24965 3117,24966
+# REMOVED (hier bereits fertig, siehe kartaview)	q4::inwork 2486,25156 2599,25047 2647,25018 2673,25012 2818,25022 2904,24993 3015,24965
+	q4::inwork 3015,24965 3117,24966
 EOF
      },
      { from  => 1643583600, # 2022-01-31 00:00
@@ -35244,7 +35249,7 @@ EOF
        until => 1706716800, # 2024-01-31 17:00
        text  => 'Wiltbergstr.: Sperrung unter der S-Bahnbrücke Buch Richtung Nordwesten, auf gegenüberliegenden Gehweg ausweichen, bis 31.01.2024',
        type  => 'handicap',
-       source_id => 'viz2021:13.492858,52.63663,09.05.2022,11:58',
+       source_id => 'viz2021:13.492858,52.63663,09.05.2022,11:58', # inaktiv
        data  => <<EOF,
 #: next_check_id: WILTBERG-2022
 #: by: https://nitter.net/VIZ_Berlin/status/1523578356306169857#m
@@ -35650,7 +35655,7 @@ EOF
      },
      { from  => 1656799200, # 2022-07-03 00:00
        until => 1667861999, # 2022-11-07 23:59
-       text  => 'Schönstr./Große Seestr.: Sperrung des Kreuzungsbereichs, Ausweichen auf den Bürgersteig, Bordsteine, vom 04. Juli 2022 bis voraussichtlich 07. November 2022',
+       text  => 'Schönstr./Große Seestr.: Sperrung des Kreuzungsbereichs, Ausweichen auf den Bürgersteig, Bordsteine und Umwege, vom 04. Juli 2022 bis voraussichtlich 07. November 2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
        data  => <<EOF,
@@ -35658,7 +35663,7 @@ EOF
 #: also_indoor: traffic (none)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
 # REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
-#: last_checked: 2022-07-09 vvv
+#: last_checked: 2022-09-21 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-11-07 vvv
 	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -36189,7 +36194,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-20
+#: last_checked: 2022-09-22
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF

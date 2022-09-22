@@ -216,7 +216,7 @@ Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::i
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-20
+#: last_checked: 2022-09-22
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882 11160,12071
 # 
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
@@ -260,7 +260,7 @@ Bunsenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 8904,12489 8892,12576
 # 
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
-#: last_checked: 2022-09-20
+#: last_checked: 2022-09-22
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 # REMOVED --- #: valid: 20200821-20211031
@@ -1362,7 +1362,7 @@ Ludwigkirchplatz: Gehweg	q2 4905,10069 4863,10077
 # REMOVED (noch einige enge Stellen vorhanden) --- #: next_check_id: SPREERADWEGEINSTEINUFER-2014 --- #: XXX Bauarbeiten, wird der Weg später breiter sein? --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr_rat_20_sitzung.pdf (Verbreiterungen) --- #: last_checked: 2017-08-16 --- #: check_frequency: 14d
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3370,12725 3396,12741 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671 3748,12627 3836,12614
 (Rad- und Wanderweg an Spree und Landwehrkanal): Fußgänger, teilweise eng	q2 3836,12614 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578 4529,12570 4642,12491
-(Rad- und Wanderweg an Spree und Landwehrkanal): einige Fußgänger	q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5337,11949 5361,11910
+(Rad- und Wanderweg an Spree und Landwehrkanal): einige Fußgänger	q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang
 Spreeufer: Fußgänger, besonders an schönen Tagen	q3 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang
@@ -3311,7 +3311,7 @@ Schlosspark Schönhausen: einige Fußgänger	q1+ 10589,19275 10636,19289 10857,1937
 Bitburger Str. teilweise relativ eng	q2 15548,17684 15515,17717 15488,17721 15461,17702
 (Dohnagestell - Plötzensee): eng	q2 5086,15664 5113,15596 5134,15565
 (Uferweg - Bocksfeldstr.): einige Fußgänger	q1 -3928,11526 -3909,11596 -3872,11619
-(Uferweg): Fußgänger	q1 -4245,11400 -4204,11432 -4181,11458 -4106,11519 -4028,11533 -3928,11526 -3828,11491 -3785,11445 -3752,11373
+(Uferweg): Fußgänger	q1 -4245,11400 -4234,11408 -4204,11432 -4181,11458 -4106,11519 -4028,11533 -3928,11526 -3824,11499 -3782,11458 -3772,11406 -3742,11409
 #: note: auch auf dem Straßenabschnitt
 Imchenallee: Fußgänger, besonders an schönen Tagen	q1 -7714,4279 -7687,4233 -7561,4191 -7326,4195 -7195,4194 -7102,4246 -7025,4410 -6990,4531 -6920,4702 -6879,4775 -6811,4893
 Uferweg: Fußgänger	q1 -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
@@ -4177,6 +4177,8 @@ Cora-Berliner-Str.: Fußgängerzone, Radfahrer frei	q1 8737,12098 8783,11959
 (Schlesischer Busch - Bouchéstr.): einige Fußgänger	q1 13513,9871 13704,9691
 #: note: Richtung Westen mit Zusatzschild "Linienverkehr frei", Richtung Osten Einfahrt verboten
 Ehrenfelsstr.: Fußgängerzone	q3 18737,8686 18778,8663
+#: note: Grünanlagen-Schild ohne weitere Zusatzschilder
+(Bocksfeldstr. - Uferweg an der Scharfen Lanke): einige Fußgänger, schmal	q2 -3658,11534 -3727,11421 -3742,11409
 # 
 ######################### User Contributions #################################
 # 
@@ -4718,8 +4720,10 @@ Willenberger Pfad: Fußgänger, schmal	q2 569,10738 673,10727
 #: XXX_prog BS (auf beiden Seiten) (ansonsten wäre es q1) (mittlerweile gibt es eine kurze "Asphaltrampe" am nordöstlichen Ende)
 #: note: früher "q2", rechtliche Lage unklar
 (zur Karl-Marx-Allee): Bordsteine, Fußgänger	q3 11367,12940 11289,12908
-Börnicker Str. - Südpark): Fußgänger	q2 -4117,11997 -4095,12006
-Graetschelsteig - Südpark): Fußgänger	q2 -4195,12139 -4144,12187
+(Börnicker Str. - Südpark): Fußgänger	q2 -4117,11997 -4095,12006
+#: note: am Wendehammer Bordstein, allerdings ist ein paar Meter weiter südlich eine Absenkung
+#: note: am westlichen Ende Verkehrszeichen "Fußgänger", am östlichen Ende aber nichts
+(Graetschelsteig - Südpark): Fußgänger	q2 -4195,12139 -4144,12187
 Südpark): Fußgänger	q2 -4027,11818 -3890,11775 -3712,11714
 Südpark): Fußgänger	q2 -3712,11714 -3688,11705
 Südpark): Fußgänger	q2 -4095,12006 -4021,11924 -3890,11775

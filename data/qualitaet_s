@@ -170,7 +170,7 @@ Nymphenufer: Kopfsteinpflaster	Q2 -4079,1882 -4048,1851
 Lyckallee: Asphalt	Q0 368,11051 251,11039 37,11014 -57,11006 -233,10989 -333,10976 -434,10964
 Lyckallee: mäßiges bis gutes Kopfsteinpflaster	Q1 -434,10964 -532,10994 -640,10997 -691,10954 -760,10921 -865,10906 -909,10899 -929,10897 -1028,10889
 Lyckallee: Beton	Q0 -1028,10889 -1167,10873 -1318,10854 -1501,10833
-Trakehner Allee: gutes Kopfsteinpflaster	Q1 -157,11943 -278,11843 -496,11720
+Trakehner Allee: Kleinsteinpflaster	Q1 -157,11943 -278,11843 -496,11720
 Trakehner Allee: Asphalt	Q0 -496,11720 -722,11598
 Crellestr.: gutes Kopfsteinpflaster	Q1 7307,8945 7484,9066 7524,9093 7570,9124 7647,9196
 Crellestr.: Kopfsteinpflaster	Q2 7647,9196 7770,9336
@@ -1324,7 +1324,7 @@ Am Berlin Museum: Asphalt	Q0 10032,10752 9829,10830
 (Rad- und Wanderweg an Spree und Landwehrkanal): Kleinsteinpflaster, Regenablaufrinnen	Q2 3643,12671 3748,12627
 (Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3748,12627 3836,12614 3867,12616
 (Rad- und Wanderweg an Spree und Landwehrkanal): teilweise Parkweg, bei Regen mit Pfützen, teilweise gutes Kopfsteinpflaster	Q1 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578 4529,12570 4642,12491
-(Rad- und Wanderweg an Spree und Landwehrkanal): asphaltähnlicher Belag mit einen gepflasterten Abschnitten	Q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5337,11949 5361,11910
+(Rad- und Wanderweg an Spree und Landwehrkanal): asphaltähnlicher Belag mit einen gepflasterten Abschnitten	Q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5349,11941 5373,11907 5372,11888
 (Galvanistr./Iburger Ufer - Uferweg): Parkweg	Q2 4441,12559 4441,12578
 Monbijoupark - Henriette-Herz-Platz: Asphalt	Q0 9977,12912 10132,12941
 Spreeufer: asphaltiert	Q0 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
@@ -2227,7 +2227,7 @@ Luchweg: Asphalt	Q0 -7840,15503 -7751,15847 -7739,15980 -7739,15993
 Eichholzbahn: Asphalt	Q0 -7559,14379 -7664,14389 -7779,14401 -7872,14409 -7978,14419 -8316,14460 -8334,14461 -8682,14489
 Hauptstr.: unangenehmes Kopfsteinpflaster	Q3 -7550,13528 -7360,13409
 Hauptstr.: Asphalt	Q0 -7360,13409 -7273,13354
-(Am Bullengraben): sehr guter Asphalt	Q0 -4023,13493 -4305,13412 -4369,13418 -4372,13402 -4398,13401 -4518,13433 -4661,13485 -4798,13570 -4881,13631 -4937,13643 -5054,13665 -5179,13674 -5280,13659 -5411,13631 -5612,13586
+(Am Bullengraben): sehr guter Asphalt	Q0 -4023,13493 -4305,13412 -4369,13418 -4372,13402 -4398,13401 -4518,13433 -4661,13485 -4798,13570 -4881,13631 -4933,13642 -5054,13665 -5179,13674 -5280,13659 -5411,13631 -5612,13586
 (Am Bullengraben): sehr guter Asphalt	Q0 -5621,13613 -5785,13606 -5949,13600 -5963,13593
 (Am Bullengraben): sehr guter Asphalt	Q0 -6272,13472 -6287,13472 -6349,13444 -6429,13426 -6563,13403 -6718,13383 -6724,13359 -6890,13351 -6911,13372
 (Am Bullengraben): Verbundsteinpflaster	Q0 -6911,13372 -7010,13382
@@ -5397,7 +5397,7 @@ Bocksfeldstr.: unbefestigte Straße	Q2 -4030,11685 -3976,11665
 Bocksfeldstr.: Kopfsteinpflaster	Q2 -3976,11665 -3939,11651
 Bocksfeldstr.: Verbundsteinpflaster	Q1 -3939,11651 -3872,11619 -3851,11608
 Bocksfeldstr.: Kopfsteinpflaster	Q2 -3851,11608 -3821,11592
-Bocksfeldstr.: Asphalt	Q0 -3821,11592 -3709,11535 -3606,11532
+Bocksfeldstr.: Asphalt	Q0 -3821,11592 -3709,11535 -3658,11534 -3606,11532
 Schwimmerweg: Kopfsteinpflaster	Q2 -3584,11177 -3642,11216 -3673,11216
 Rudererweg: Kopfsteinpflaster	Q2 -3534,11277 -3570,11289 -3689,11291
 Lankestrand: Kopfsteinpflaster	Q2 -3689,11291 -3679,11248 -3673,11216
@@ -7868,7 +7868,7 @@ Kniggeweg: Kleinsteinpflaster	Q1 2047,25811 2139,25830
 Münchener Str. (Frohnau): unebenes Mosaikpflaster, einige Asphaltflicken	Q2 1576,25249 1551,25312 1468,25384 1443,25399
 Münchener Str. (Frohnau): Beton	Q0 1443,25399 1378,25406 1278,25401 1153,25425 1081,25483 975,25627
 Katzensteg: Asphalt mit Schäden	Q1 2756,25260 2744,25314 2728,25386
-Fürstendamm: Asphalt	Q0 2673,25012 2818,25022 2904,24993 3015,24965 3117,24966 3267,24964 3398,24931 3490,24887
+Fürstendamm: Asphalt	Q0 2486,25156 2599,25047 2647,25018 2673,25012 2818,25022 2904,24993 3015,24965 3117,24966 3267,24964 3398,24931 3490,24887
 Fürstendamm: Asphalt mit einigen Schäden	Q1 3490,24887 3550,24887 3741,24942 3754,24946
 Hambacher Weg: Kopfsteinpflaster	Q2 3205,24839 3239,24892 3267,24964
 Hambacher Weg: unbefestigt	Q2 3205,24839 3195,24825 3186,24812
@@ -9995,7 +9995,8 @@ Gerichtstr.: Verbundsteinpflaster	Q1 7817,15418 7765,15417
 Nettelbeckplatz: teilweise gepflastert	Q1 7891,15417 7974,15418 8024,15401
 (Götelstr. - Tharsanderweg): wassergebundene Decke	Q1 -3416,12165 -3524,11980
 (Uferweg - Bocksfeldstr.): wassergebundene Decke	Q1 -3928,11526 -3909,11596 -3872,11619
-(Uferweg): welliges Verbundsteinpflaster	Q1 -4245,11400 -4204,11432 -4181,11458 -4106,11519 -4028,11533 -3928,11526 -3828,11491 -3785,11445 -3752,11373
+(Uferweg): Asphalt	Q0 -4245,11400 -4234,11408 -4204,11432 -4181,11458 -4106,11519 -4028,11533 -3928,11526 -3824,11499 -3782,11458 -3772,11406 -3742,11409
+(Uferweg an der Scharfen Lanke): Asphalt	Q0 -4204,11432 -4246,11438
 Havel-Ufer Hohengatow: Asphalt	Q0 -4774,6514 -4689,6661 -4684,6755 -4667,6814 -4624,6872 -4498,7095 -4481,7142 -4488,7200 -4488,7317 -4506,7375 -4508,7456 -4494,7510 -4531,7549 -4539,7643 -4534,7695 -4540,7801 -4778,7791
 Havel-Ufer Hohengatow, unterer Weg: unbefestigter Weg	Q1 -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
 (zum Umweltbildungszentrum): Kopfsteinpflaster	Q2 -4778,7791 -4620,7644
@@ -10818,7 +10819,6 @@ Bruno-Baum-Str.: Beton	Q0 20260,15434 20286,15382 20123,15293 19993,15116
 Bruno-Baum-Str.: Asphalt	Q0 19993,15116 19893,14947 19867,14886 19793,14728 19768,14674 19719,14566 19687,14469
 (Verlängerung der Siegfriedstr.): Asphalt mit Schäden	Q1 11664,6796 11488,6781
 Nußbaumallee: Verbundsteinpflaster	Q1 1113,12392 1206,12364
-(Uferweg an der Scharfen Lanke): welliges Verbundsteinpflaster	Q1 -4204,11432 -4246,11438
 (Gorgasring - Nonnendammallee): Verbundsteinpflaster	Q1 -695,14819 -676,14773 -679,14743 -941,14637
 (provisorische Umleitung): Asphalt	Q0 -196,16060 -176,16089
 (An der Nordbahn): Asphalt	Q0 7236,19689 7273,19682 7435,19547 7446,19522 7504,19459
@@ -11030,6 +11030,8 @@ Priesterweg: Asphalt mit einigen Schäden, Gehwegplatten	Q1 7224,7553 7220,7445 7
 Crailsheimer Str.: Asphalt mit einigen Schäden	Q1; 7171,4200 7143,4350 7138,4379
 (Schlesischer Busch - Bouchéstr.): Parkweg	Q1 13418,9944 13513,9871
 (Schlesischer Busch - Bouchéstr.): Kleinsteinpflaster/Mosaikpflaster	Q1 13513,9871 13704,9691
+(Bocksfeldstr. - Uferweg an der Scharfen Lanke): Verbundsteinpflaster	Q1 -3658,11534 -3727,11421 -3742,11409
+(Graetschelsteig - Südpark): Gehwegplatten	Q0 -4195,12139 -4144,12187
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -16360,7 +16362,7 @@ Hauptstr. (Staaken): überasphaltiertes Kopfsteinpflaster, teilweise ist der Asph
 Gummiweg: fester Sandweg	Q1 -7879,13613 -7917,13505 -7971,13467
 Egelpfuhlstr.: Beton	Q0 -5472,13235 -5510,13326 -5559,13438 -5592,13534 -5612,13586 -5621,13613 -5595,13916
 Lazarusstr.: Beton	Q0 -5592,13534 -5493,13569 -5278,13606 -5170,13628 -5057,13630 -4922,13609
-Päwesiner Weg: Asphalt	Q0 -4926,13971 -4934,13890 -4944,13673 -4937,13643 -4922,13609 -4818,13347 -4771,13214 -4737,13132
+Päwesiner Weg: Asphalt	Q0 -4926,13971 -4934,13890 -4941,13686 -4933,13642 -4922,13609 -4818,13347 -4771,13214 -4737,13132
 Ameisenweg: guter Asphalt	Q0 -6934,16783 -6842,16750 -6753,16707 -6670,16659 -6580,16611 -6478,16564 -6373,16516
 Wittgensteiner Weg: Beton	Q0 -4737,14862 -4729,14958 -4720,15087 -4713,15191 -4707,15255 -4693,15278
 Hainleiteweg: guter Beton	Q0 -4805,15596 -4772,15702
@@ -16461,7 +16463,7 @@ Reformationsplatz: Altstadtpflaster	Q1 -3107,14535 -3134,14513 -3150,14478 -3174
 Plantage: Asphalt	Q0 -3247,13864 -3320,13802 -3308,13778 -3229,13832
 Sotzmannstr.: guter Asphalt	Q0 -4721,12891 -4680,12998 -4671,13025
 (Sotzmannstr. - Seeburger Str.): Gehwegplatten	Q0 -4671,13025 -4663,13030 -4634,13173
-(Sotzmannstr. - Päwesiner Weg): Kleinpflastersteine	Q1 -4680,12998 -4737,13132
+(Sotzmannstr. - Päwesiner Weg): Kleinpflastersteine und Gehwegplatten	Q1 -4680,12998 -4737,13132
 Rebenweg (Staaken): Sandweg, teilweise lose	Q2 -6266,12017 -6483,11710
 Akazienweg (Staaken): Sandweg, teilweise lose	Q2 -6527,11731 -6305,12048
 Bauersfeldzeile: Beton	Q0 -5858,11955 -5806,11926
