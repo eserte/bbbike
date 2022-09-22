@@ -2496,7 +2496,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
                           ],
          'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, 19.09.2022 bis 27.09.2022',
          'type' => 'gesperrt',
-         'until' => 1663819200
+         'until' => 1663905600
        },
        {
          'data' => '#: next_check_id: BERLINMARATHON-RECURRING

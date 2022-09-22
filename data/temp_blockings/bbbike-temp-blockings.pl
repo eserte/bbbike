@@ -1060,13 +1060,14 @@ EOF
      { from  => $isodate2epoch->("2019-09-30 00:00:00"),
        until => $isodate2epoch->("2019-10-06 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 29, months => 9, start => "2021-10-25T00:00:00"]],
-       recurrence_prewarn_days => 7,
+       recurrences => [['yearly', days => 29, months => 9, start => "2022-10-25T00:00:00"]],
+       #recurrence_prewarn_days => 7,
        text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html
 #: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html?date=20211001 (findet 2021 anscheinend nicht statt)
+#: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html?date=20220922 (findet 2022 nicht statt)
 #: source_id: LMS-BR_r_LMS-BR_147349_LMS-BR_72
 	2 8055,12186 8089,12190 8214,12205
 	2 8214,12205 8303,12216 8344,12221 8538,12245
@@ -21342,13 +21343,13 @@ EOF
      },
      { do {
            my $from1  = $isodate2epoch->("2022-09-18 06:00:00"); # 1 Tag Vorlauf
-           my $until1 = $isodate2epoch->("2022-09-22 06:00:00");
+           my $until1 = $isodate2epoch->("2022-09-23 06:00:00");
            # in der Zwischenzeit ist die erweiterte Sperrung aktiv, siehe unten
            my $from2  = $isodate2epoch->("2022-09-26 06:00:00");
            my $until2 = $isodate2epoch->("2022-09-27 23:30:00");
-           if (time < $until1) {
+           if (time <= $until1) {
                (from => $from1, until => $until1);
-           } elsif (time >= $from2) {
+           } else {
                (from => $from2, until => $until2);
            }
        },
