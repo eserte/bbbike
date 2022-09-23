@@ -2480,7 +2480,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 # REMOVED --- #: tempex ^^^
 ',
          'dont_check_date' => 1,
-         'from' => 1663473600,
+         'from' => 1664164800,
          'id' => 2387,
          'periodic' => 1,
          'recurrences' => [
@@ -2496,7 +2496,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
                           ],
          'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, 19.09.2022 bis 27.09.2022',
          'type' => 'gesperrt',
-         'until' => 1663905600
+         'until' => 1664314200
        },
        {
          'data' => '#: next_check_id: BERLINMARATHON-RECURRING
@@ -3559,7 +3559,35 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1236449.php (ab dem 5. September 2022 für etwa ein Jahr)
+#: by: https://viz.berlin.de/2022/08/treskowallee/
+#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/fahrbahn-ein-jahr-lang-gesperrt_a355424
+#: by: https://nitter.cz/VIZ_Berlin/status/1573281027723665409#m
+#: by: https://nitter.cz/pic/orig/media%2FFdUeq-VX0AAvumT.jpg
+#: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
+#: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden)
+#: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr.; an der Waldowallee Richtung Norden sieht es per Markierung so aus, als ob die Radfahrer vom Gehweg kommen würden, obwohl es keine radfahrer-bezogene Schilder an der vorherigen Kreuzung gab
+#: note: laut rbb gilt die Umleitung für Radfahrer ab Schönower Straße --- aber so eine Straße existiert hier nicht?! (-> gemeint ist die Hönower Str.)
+#: XXX Wo endet das Verbot für Radfahrer?
+#: priority: #B
+#: last_checked: 2022-09-18 (teilweise ist der Gehweg für Radfahrer frei)
+#: next_check: 2022-09-23
+# REMOVED --- #: next_check_id: TRESKOWALLEE-2017
+# REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
+# REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
+# REMOVED --- #: by: https://viz.berlin.de/2020/12/vorschau-14122020/ (Restarbeiten) --- #: XXX bis wann gilt das Verbot? --- #: last_checked: 2020-12-18 (Schild existiert noch an der Marksburgstr., aber eigentlich nicht mehr an der Dorotheastr.)
+# REMOVED (bis Dorotheastr. frei) --- q4::inwork; 18809,9133 18790,9018 18770,8898
+# REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
+# REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
+	q4::inwork; 18875,9570 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
+',
+         'from' => undef,
+         'id' => 3007,
+         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten, bis August 2023',
+         'type' => 'handicap',
+         'until' => 1692633600
+       },
        undef,
        undef,
        undef,
@@ -4278,7 +4306,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: confirmed_by: srt (Sackgassenschild am nördlichen und südlichen Ende, als Fußgänger und Radfahrer kommt man durch)
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="25"
-#: osm_watch: way id="165832806" version="24"
+#: osm_watch: way id="165832806" version="25"
 #: last_checked: 2022-09-18
 #: check_frequency: 30d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17554,8458 17533,8505 17524,8536
@@ -4951,12 +4979,12 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: last_checked: 2022-09-07 (osm) vvv
+#: last_checked: 2022-09-23 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="29"
+#: osm_watch: way id="4395450" version="30"
 	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="13"
+#: osm_watch: way id="505363417" version="14"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5477,16 +5505,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'until' => 1664575199
        },
        undef,
-       {
-         'data' => '	2::inwork 40339,28934 40127,28820 40098,28808 39921,28733
-',
-         'from' => 1659247200,
-         'id' => 3588,
-         'source_id' => 'LS/221-F/22/104',
-         'text' => 'Prötzel - Tiefensee: Bauarbeiten, Sperrung, voraussichtlich 01.08.2022 08:00 Uhr bis 23.09.2022 16:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1663941600
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
 #: last_checked: 2022-09-21 vvv
@@ -5669,16 +5688,17 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
          'until' => undef
        },
        {
-         'data' => '#: note: Fußverkehr eingeschränkt
+         'data' => '#: note: laut Verkehrsmeldung "Fußverkehr eingeschränkt"
+#: note: Linienverkehr ist frei, nur auf dem östliche Abschnitt existiert ein einbahniger Abschnitt, ggfs. kann man als Radfahrer doch passieren
 #: by: https://nitter.cz/VIZ_Berlin/status/1562303691562041344#m
 #: by: https://nitter.cz/pic/media%2FFa19ZroWYAAUS6d.jpg%3Fname%3Dorig
-	2::inwork 8775,12457 8540,12420
+	q3::inwork 8775,12457 8540,12420
 ',
          'from' => 1661230800,
          'id' => 3610,
          'source_id' => 'viz2021:13.378615,52.517943,24.08.2022,07:00',
          'text' => 'Dorotheenstr.: Bauarbeiten zwischen Ebertstr. und Wilhelmstr., Fahrbahn gesperrt, vom 24.08.2022 07:00 bis 31.10.2022 17:00',
-         'type' => 'gesperrt',
+         'type' => 'handicap',
          'until' => 1667232000
        },
        {
@@ -5745,7 +5765,7 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-22
+#: last_checked: 2022-09-23
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -5788,7 +5808,8 @@ Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
          'until' => 1665154800
        },
        {
-         'data' => '	q4::inwork 25048,10317 25112,10415 25125,10435 25147,10487 25150,10555
+         'data' => '#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-wird-saniert_a357917
+	q4::inwork 25048,10317 25112,10415 25125,10435 25147,10487 25150,10555
 ',
          'from' => 1664056800,
          'id' => 3622,
@@ -5838,7 +5859,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2022-09-17
+#: last_checked: 2022-09-22 (daf)
 #: next_check: 2022-12-10
 	q4::inwork 8389,11378 8481,11447 8479,11493
 ',
@@ -5925,6 +5946,25 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'text' => 'Heckelberg - Beerbaum: Deckenerneuerung, Sperrung, 19.09.2022 08:00 Uhr bis 21.10.2022 15:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1666357200
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1248189.php
+#: by: https://www.berlin.de/imgscaler/nUoJyW6yDTB6qdjm_Zk5qRHoT7g_-l1zKxOmR4DeC1M/r4zu3/L3N5czExLXByb2QvYmEtbWl0dGUvYWt0dWVsbGVzL21pdHRlLWJsb2cvMjAyMi9zcGVycmtyZWlzLmpwZw.jpg
+#: by: https://berliner-abendblatt.de/2022/09/23/bombenentschaerfung-9000-menschen-muessen-haeuser-verlassen/
+	2::temp 4421,13793 4583,13845 4619,13708 4605,13525 4553,13294
+	2::temp 4583,13845 4963,13969 5089,14010
+	2::temp 4283,13660 4265,13742 4421,13793 4455,13567 4283,13660 4363,13336
+	2::temp 4455,13567 4605,13525 4985,13470 5116,13457 5100,13822 5089,14010 5220,14043
+	2::temp 5231,13843 5100,13822 4972,13804 4963,13969
+	2::temp 4186,13710 4265,13742 4223,13949
+	2::temp 4972,13804 4985,13470 4964,13319
+',
+         'from' => 1664056800,
+         'id' => 3633,
+         'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/artikel.1247887.php',
+         'text' => 'Sickingenstraße, Huttenstraße und Umgebung: Bombenentschärfung, Sperrkreis, am 26.09.2022 ab 8 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1664200800
        }
      
 );

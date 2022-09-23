@@ -28328,18 +28328,32 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-12-18 23:59:59"), # 1588348800, # 2020-05-01 18:00
-       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Dorotheastr. für Radfahrer explizit verboten',
+       until => $isodate2epoch->("2023-08-21 18:00:00"), # $isodate2epoch->("2020-12-18 23:59:59"), # 1588348800, # 2020-05-01 18:00
+       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten, bis August 2023',
        type  => 'handicap',
-       source_id => '2147342174',
+       # alt: source_id => '2147342174',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1236449.php (ab dem 5. September 2022 für etwa ein Jahr)
+#: by: https://viz.berlin.de/2022/08/treskowallee/
+#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/fahrbahn-ein-jahr-lang-gesperrt_a355424
+#: by: https://nitter.cz/VIZ_Berlin/status/1573281027723665409#m
+#: by: https://nitter.cz/pic/orig/media%2FFdUeq-VX0AAvumT.jpg
+#: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
+#: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden)
+#: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr.; an der Waldowallee Richtung Norden sieht es per Markierung so aus, als ob die Radfahrer vom Gehweg kommen würden, obwohl es keine radfahrer-bezogene Schilder an der vorherigen Kreuzung gab
+#: note: laut rbb gilt die Umleitung für Radfahrer ab Schönower Straße --- aber so eine Straße existiert hier nicht?! (-> gemeint ist die Hönower Str.)
+#: XXX Wo endet das Verbot für Radfahrer?
+#: priority: #B
+#: last_checked: 2022-09-18 (teilweise ist der Gehweg für Radfahrer frei)
+#: next_check: 2022-09-23
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
 # REMOVED --- #: by: https://viz.berlin.de/2020/12/vorschau-14122020/ (Restarbeiten) --- #: XXX bis wann gilt das Verbot? --- #: last_checked: 2020-12-18 (Schild existiert noch an der Marksburgstr., aber eigentlich nicht mehr an der Dorotheastr.)
-# REMOVED (bis Dorotheastr. frei) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
-	q4::inwork; 18770,8898 18737,8686
+# REMOVED (bis Dorotheastr. frei) --- q4::inwork; 18809,9133 18790,9018 18770,8898
+# REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
+	q4::inwork; 18875,9570 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
 EOF
      },
      { from  => 1537740000, # 2018-09-24 00:00
@@ -32423,7 +32437,7 @@ EOF
 #: confirmed_by: srt (Sackgassenschild am nördlichen und südlichen Ende, als Fußgänger und Radfahrer kommt man durch)
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="25"
-#: osm_watch: way id="165832806" version="24"
+#: osm_watch: way id="165832806" version="25"
 #: last_checked: 2022-09-18
 #: check_frequency: 30d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17554,8458 17533,8505 17524,8536
@@ -34706,12 +34720,12 @@ EOF
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)? vvv
-#: last_checked: 2022-09-07 (osm) vvv
+#: last_checked: 2022-09-23 (osm) vvv
 #: check_frequency: 120d vvv
 #: next_check: 2024-02-12 vvv
-#: osm_watch: way id="4395450" version="29"
+#: osm_watch: way id="4395450" version="30"
 	2::inwork 7031,12320 6694,12627
-#: osm_watch: way id="505363417" version="13"
+#: osm_watch: way id="505363417" version="14"
 	2::inwork 6631,12707 6694,12627
 #: next_check ^^^
 #: check_frequency ^^^
@@ -36105,13 +36119,14 @@ EOF
      { from  => 1661230800, # 2022-08-23 07:00
        until => 1667232000, # 2022-10-31 17:00
        text  => 'Dorotheenstr.: Bauarbeiten zwischen Ebertstr. und Wilhelmstr., Fahrbahn gesperrt, vom 24.08.2022 07:00 bis 31.10.2022 17:00',
-       type  => 'gesperrt',
+       type  => 'handicap',
        source_id => 'viz2021:13.378615,52.517943,24.08.2022,07:00',
        data  => <<EOF,
-#: note: Fußverkehr eingeschränkt
+#: note: laut Verkehrsmeldung "Fußverkehr eingeschränkt"
+#: note: Linienverkehr ist frei, nur auf dem östliche Abschnitt existiert ein einbahniger Abschnitt, ggfs. kann man als Radfahrer doch passieren
 #: by: https://nitter.cz/VIZ_Berlin/status/1562303691562041344#m
 #: by: https://nitter.cz/pic/media%2FFa19ZroWYAAUS6d.jpg%3Fname%3Dorig
-	2::inwork 8775,12457 8540,12420
+	q3::inwork 8775,12457 8540,12420
 EOF
      },
      { from  => undef, # 
@@ -36194,7 +36209,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-22
+#: last_checked: 2022-09-23
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36243,6 +36258,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1245614.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-wird-saniert_a357917
 	q4::inwork 25048,10317 25112,10415 25125,10435 25147,10487 25150,10555
 EOF
      },
@@ -36288,7 +36304,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTEPOTSDAMER-2022
 #: XXX Wie lange dauern die Bauarbeiten an?
-#: last_checked: 2022-09-17
+#: last_checked: 2022-09-22 (daf)
 #: next_check: 2022-12-10
 	q4::inwork 8389,11378 8481,11447 8479,11493
 EOF
@@ -36363,6 +36379,24 @@ EOF
        source_id => 'LS/221-F/22/131',
        data  => <<EOF,
 	2::inwork 39156,37578 38986,37512 38171,37238 37672,36908 36605,36450
+EOF
+     },
+     { from  => 1664056800, # 2022-09-25 00:00
+       until => 1664200800, # 2022-09-26 16:00
+       text  => 'Sickingenstraße, Huttenstraße und Umgebung: Bombenentschärfung, Sperrkreis, am 26.09.2022 ab 8 Uhr',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-mitte/aktuelles/artikel.1247887.php',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1248189.php
+#: by: https://www.berlin.de/imgscaler/nUoJyW6yDTB6qdjm_Zk5qRHoT7g_-l1zKxOmR4DeC1M/r4zu3/L3N5czExLXByb2QvYmEtbWl0dGUvYWt0dWVsbGVzL21pdHRlLWJsb2cvMjAyMi9zcGVycmtyZWlzLmpwZw.jpg
+#: by: https://berliner-abendblatt.de/2022/09/23/bombenentschaerfung-9000-menschen-muessen-haeuser-verlassen/
+	2::temp 4421,13793 4583,13845 4619,13708 4605,13525 4553,13294
+	2::temp 4583,13845 4963,13969 5089,14010
+	2::temp 4283,13660 4265,13742 4421,13793 4455,13567 4283,13660 4363,13336
+	2::temp 4455,13567 4605,13525 4985,13470 5116,13457 5100,13822 5089,14010 5220,14043
+	2::temp 5231,13843 5100,13822 4972,13804 4963,13969
+	2::temp 4186,13710 4265,13742 4223,13949
+	2::temp 4972,13804 4985,13470 4964,13319
 EOF
      },
     );

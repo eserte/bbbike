@@ -259,7 +259,7 @@ An der Kolonnade	N 8825,11773 8969,11814
 #: by: https://berliner-abendblatt.de/2022/08/18/gegen-umbenennung-mohrenstrasse-koennen-nur-anwohner-vorgehen/
 #: XXX Umbenennung zu "Anton-Wilhelm-Amo-Str." vvv
 #: priority: #A vvv
-#: last_checked: 2022-09-22 vvv
+#: last_checked: 2022-09-23 vvv
 # REMOVED --- #: next_check: 2021-10-01 vvv
 Mohrenstr.	N 9000,11727 9075,11756 9171,11777 9220,11781 9418,11804 9547,11819 9679,11834 9878,11857
 (Mohrenstr.)	N 9042,11839 9075,11756
@@ -349,9 +349,10 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=11254 (Antrag)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/das-aktionsbuendnis-legt-einspruch-gegen-die-teileinziehung-der-friedrichstrasse-als-oeffentliches-strassenland-ein_a350072
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/das-aktionsbuendnis-fordert-weiterhin-die-aufhebung-der-sperrung-der-friedrichstrasse_a357869
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_38_2521_2620_online.pdf (Teileinziehung)
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
-#: last_checked: 2022-08-06
+#: last_checked: 2022-09-23
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 # REMOVED --- #: valid: !20200821-20211031 --- Friedrichstr. (Mitte, Kreuzberg)	H 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103 --- #: valid: 20200821-20211031
@@ -829,9 +830,10 @@ Potsdamer Str. (Schöneberg, Tiergarten)	HH 7471,9360 7507,9458 7512,9572 7518,97
 (Potsdamer Platz - Linkstr.)	NN 8474,11350 8481,11447
 #: next_check_id: ALTEPOTSDAMER-2022
 #: by: https://www.berliner-zeitung.de/news/shopping-berlin-potsdamer-platz-arkaden-heissen-jetzt-the-playce-li.250487
+#: by: https://www.deutsches-architekturforum.de/thread/5528-rund-um-den-potsdamer-platz/?postID=726648#post726648
 #: XXX wird die Straße zur Fußgängerzone?
 #: osm_watch: way id="4597334" version="25"
-#: last_checked: 2022-09-16
+#: last_checked: 2022-09-22 (daf)
 #: next_check: 2022-12-10
 Alte Potsdamer Str.	N 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324 8280,11296
 Kulmer Str.	N 7771,9479 7829,9723
@@ -17148,12 +17150,13 @@ Emmichstr.	N 7285,2377 7370,2400 7424,2400 7559,2385 7648,2356
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_04_0173_0236_online.pdf (Straßenumbenennung zum 29. April 2022)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_15_0917_0976_online.pdf (Widerspruch)
 #: by: https://berlin.kauperts.de/Strassen/Maria-Rimkus-Weg-12249-Berlin (Widerspruch)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_38_2521_2620_online.pdf (Wirksamkeit der Umbenennung am 11. Januar 2023)
 #: XXX geplante Umbenennung in Maria-Rimkus-Weg; im DPAG-Mitteilungsblatt 03/2022 ist die Umbenennung aufgelistet; im DPAG-Mitteilungsblatt 09/2022 wurde wieder zurückbenannt
 #: also_indoor: search Maria-Rimkus-Weg
 #: osm_watch: way id="4792052" version="12"
 #: last_checked: 2022-09-04
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2022-04-29
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2023-01-11
 Maerckerweg	N 7559,2385 7602,2522
 #: note: relativ stark befahren, evtl. NH? (Aber keine Vorfahrtstraße)
 Eiswaldtstr.	N 6718,2443 6862,2452 6965,2418 7051,2366 7172,2343 7285,2377
@@ -18466,7 +18469,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9160,12932
 #: XXX oder eventuell wird das eine Einbahnstraße, wenn die Bauarbeiten an der Pankebrücke beendet sind (Schilder hängen schon, obwohl es eine Sackgasse ist?!)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
 #: osm_watch: way id="327518240" version="7"
-#: last_checked: 2022-09-17
+#: last_checked: 2022-09-23
 #: check_frequency: 90d
 (Straße vor dem Berliner Ensemble)	N 9212,12969 9160,12932
 Karlplatz	N 8711,12986 8676,12976

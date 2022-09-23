@@ -3505,13 +3505,14 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://images.competitionline.com/image/f/9/5/a/b/e/1/b/f95abe1bc3b10ee4f2778b024afc5734_1.jpg?auto=format,compress&fm=jpg&ixlib=imgixjs-3.4.1&w=4742
 #: by: https://www.gm013.la/work/fmp
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2022-09-22
+#: last_checked: 2022-09-23
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
 # 
+#: note: manchmal stehen die Absperrgitter etwas verschoben mit einer Öffnung, so dass man mit einem Fahrrad doch passieren kann (gesehen: 2022-09-23)
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-08-30
+#: last_checked: 2022-09-23
 Unter den Linden/Schadowstr.: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3nocross 8804,12280 9028,12307 9141,12320
 # 
 #: next_check_id: FALKENBERG-2021
@@ -3542,13 +3543,13 @@ Weg zur Walther-Rathenau-Str.: Bauarbeiten, Weg noch gesperrt	2::inwork 22983,-5
 # 
 #: next_check_id: PARKSTADTKARLSHORST-2021
 #: by: https://www.schmalfuss-immobilien.de/karlshorst (Abschnitt 9 bezugsfertig Anfang August 2022, 7 Anfang September 2022)
-#: last_checked: 2022-09-18 vvv
+#: last_checked: 2022-09-22 (osm) vvv
 # REMOVED --- #: next_check: 2022-08-01 vvv
-#: osm_watch: way id="1061057020" version="2"
+#: osm_watch: way id="1061057020" version="3"
 Georg-Klingenberg-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17846,8644 17792,8660 17656,8700
 Samuel-Lewin-Str.: noch Baustelle und gesperrt	2::inwork 17773,8588 17792,8660
 # REMOVED (offen) --- Adolf-Wermuth-Allee: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17627,8556 17608,8483
-#: osm_watch: way id="1084269868" version="1"
+#: osm_watch: way id="1084269868" version="2"
 Adolf-Wermuth-Allee: noch nicht fertiggestellt	2::inwork 17608,8483 17597,8434
 # REMOVED --- Adolf-Wermuth-Allee: Baustelle, noch nicht ganz fertiggestellt	2::inwork 17648,8626 17627,8556
 # REMOVED --- Heiner-Müller-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17648,8626 17773,8588
@@ -3557,11 +3558,11 @@ Irmtraud-Morgner-Str.: noch nicht fertiggestellt	2::inwork 17524,8536 17627,8556
 # REMOVED --- Samuel-Lewin-Str.: noch nicht fertiggestellt	2::inwork 17792,8660 17773,8588 17755,8519
 # REMOVED (offen) --- Ruth-Baumgarte-Str.: noch Baustelle, gesperrt bzw. noch nicht ganz fertiggestellt	2::inwork 17794,8429 17738,8449 17671,8465 17608,8483
 # REMOVED --- #: next_check ^^^
-#: osm_watch: way id="1084267262" version="4"
+#: osm_watch: way id="1084267262" version="7"
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17497,8623 17640,8627 17656,8700 17468,8692
 # REMOVED (hier nicht (mehr?)) --- Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17738,8450 17755,8519
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17755,8519 17627,8556
-#: osm_watch: way id="1061057021" version="4"
+#: osm_watch: way id="1061057021" version="6"
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17773,8588 17648,8626
 #: osm_watch: way id="1061057024" version="5"
 Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 17627,8556 17608,8483 17682,8464 17738,8450
@@ -4163,7 +4164,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2022-09-22 vvv
+#: last_checked: 2022-09-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-09-30 vvv
 #: valid: -20220930 vvv
@@ -4193,7 +4194,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2022-09-20
+#: last_checked: 2022-09-23
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
@@ -4594,7 +4595,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="8"
-#: last_checked: 2022-08-30 vvv
+#: last_checked: 2022-09-23 vvv
 # REMOVED (fertig?) --- #: check_frequency: 60d vvv
 #: also_indoor: traffic (G)
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760

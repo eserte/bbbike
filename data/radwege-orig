@@ -2098,8 +2098,10 @@ neu asphaltiert	RW1; 1746,5922 1736,5850 1714,5722 1652,5426 1640,5383 1607,5259
 neu asphaltiert, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 1573,5152 1511,4955
 neu asphaltiert	RW1; 1511,4955 1479,4853
 #: by: https://www.tagesspiegel.de/berlin/bezirke/busstreifen-auf-der-clayallee-ausser-betrieb-streit-zwischen-anwohnern-und-senatsverwaltung-in-berlin-zehlendorf-kann-noch-jahre-dauern-8651269.html (Busspur außer Betrieb genommen)
+#: note: laut osm-Notiz https://www.openstreetmap.org/note/3001802 sind kleinere Abschnitte noch aktiv (hier korrigiert)
+für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 1479,4853 1462,4802 1450,4766 1447,4757 1441,4741
 #: historical_note: für kurze Zeit im Sommer 2022: für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr
-	RW1; 1479,4853 1462,4802 1450,4766 1447,4757 1441,4741 1411,4654
+	RW1; 1441,4741 1411,4654
 #: historical_note: für kurze Zeit im Sommer 2022: für Radfahrer freigegebene Busspur in Mittellage gilt Mo-Fr 6-20 Uhr
 	RW1; 1411,4654 1370,4547 1304,4334 1297,4311
 #: historical_note: für kurze Zeit im Sommer 2022: für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr
@@ -2114,8 +2116,7 @@ alter Asphalt	RW1; 1191,3997 1159,3915 1139,3876
 welliger Asphalt	RW1; 1139,3876 1070,3741
 #: historical_note: für kurze Zeit im Sommer 2022: für Radfahrer freigegebene Busspur in Mittellage gilt Mo-Fr 6-20 Uhr
 welliger Asphalt	RW1; 1070,3741 971,3534
-#: historical_note: für kurze Zeit im Sommer 2022: für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr
-welliger Asphalt	RW1; 971,3534 935,3430
+welliger Asphalt, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 971,3534 935,3430
 welliger Asphalt	RW1; 935,3430 932,3422 856,3188 820,3081
 # 
 #: note: Clayallee Richtung Norden
@@ -2396,7 +2397,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2022-08-30
+#: last_checked: 2022-09-23
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -5780,7 +5781,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 # 
 	RW4; 9141,12320 9131,12438
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2022-08-30 vvv
+#: last_checked: 2022-09-23 vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9131,12438 9121,12514
 #: XXX früher RW3, zurzeit durch Gelbmarkierung (Kreuze) ungültig gemacht
@@ -7529,7 +7530,7 @@ Poller	RW4; 9221,6179 9245,6352 9246,6364 9250,6414
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/info-abend-zur-radverkehrsanlage_a339422
 #: by: https://berliner-abendblatt.de/2022/03/16/radweg-tempelhofer-damm/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1198245.php (bis August 2022 Weiterführung bis Alt-Mariendorf)
-#: by: https://www.infravelo.de/projekt/mariendorfer-damm/ (4. Quartal 2021 - 4. Quartal 2022)
+#: by: https://www.infravelo.de/projekt/mariendorfer-damm/ (4. Quartal 2021 - 4. Quartal 2022) (mittlerweile bis 2. Quartal 2023)
 # REMOVED (not cacheable) --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/u6?date=20211006 (bis 8.10.2021)
 #: source_id: 2147347065 (bis 17.10.2021) (mittlerweile inaktiv)
 #: source_id: viz2021:13.385134,52.449043,01.07.2022,07:00 (Leitungsarbeiten bis 1.9.2022) (inaktiv)
@@ -7538,7 +7539,7 @@ Poller	RW4; 9221,6179 9245,6352 9246,6364 9250,6414
 #: priority: #A vvv
 #: last_checked: 2022-07-24 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-12-31 vvv
+#: next_check: 2023-06-30 vvv
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
 #: osm_watch: way id="111048866" version="13"
