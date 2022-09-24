@@ -5712,6 +5712,7 @@ sub load_photos {
     $clock_photo	 = load_photo($top, 'clock');
     $night_photo	 = load_photo($top, 'night');
     $xmas_photo	         = load_photo($top, 'xmas');
+    $bomb_photo          = load_photo($top, 'bomb');
     $playstreet_photo	 = load_photo($top, 'playstreet');
     $mask_photo		 = load_photo($top, 'mask');
     $ferry_photo         = load_photo($top, 'ferry')
@@ -10856,6 +10857,7 @@ sub plot_sperre {
 			       ['play',   $playstreet_photo],
 			       ['mask',   $mask_photo],
 			       ['xmas',   $xmas_photo],
+			       ['bomb',   $bomb_photo],
 			       ['temp',   $cal_photo], # should be last
 			      ) {
 		    my($addinfo, $photo) = @$check;

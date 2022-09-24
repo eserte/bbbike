@@ -115,6 +115,14 @@ var xmasIcon = L.icon({
     iconAnchor: new L.Point(6,6)
 });
 
+var bombIcon = L.icon({
+    iconUrl: bbbikeImagesRoot + "/bomb.png",
+    shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
+    iconSize: new L.Point(16,16),
+    shadowSize: new L.Point(1,1),
+    iconAnchor: new L.Point(8,8)
+});
+
 var playIcon = L.icon({
     iconUrl: bbbikeImagesRoot + "/playstreet.png",
     shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
@@ -475,7 +483,7 @@ function doLeaflet() {
 	}
 	var l = L.geoJson(initialGeojson, {
             style: function (feature) {
-		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:(::(?:night|play|mask|inwork|xmas|trailer=no|temp))+;?)?/)) {
+		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:(::(?:night|play|mask|inwork|xmas|bomb|trailer=no|temp))+;?)?/)) {
 		    var cat    = RegExp.$1;
                     var attribString = RegExp.$2;
 		    var attribs = {};
@@ -495,6 +503,8 @@ function doLeaflet() {
 			    l = L.marker(centerLatLng, { icon: inworkIcon });
 			} else if (attribs['xmas']) {
 			    l = L.marker(centerLatLng, { icon: xmasIcon });
+			} else if (attribs['bomb']) {
+			    l = L.marker(centerLatLng, { icon: bombIcon });
 			} else if (attribs['play']) {
 			    l = L.marker(centerLatLng, { icon: playIcon });
 			} else if (attribs['mask']) {

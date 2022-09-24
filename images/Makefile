@@ -366,5 +366,10 @@ png-to-jpg:	\
 # Manually manipulated
 
 # Creation of mask.png
-# ORiginal from https://commons.wikimedia.org/wiki/Category:ISO_7010_mandatory_action_signs#/media/File:ISO_7010_M016.svg
+# Original from https://commons.wikimedia.org/wiki/Category:ISO_7010_mandatory_action_signs#/media/File:ISO_7010_M016.svg
 # Manually manipulated with inkscape & gimp
+
+# Creation of bomb.png
+#   wget https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/bomb.svg
+#   convert -background none -geometry 16x16 bomb.svg bomb.png 
+# License: https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt
