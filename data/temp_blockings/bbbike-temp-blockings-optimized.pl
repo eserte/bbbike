@@ -3985,7 +3985,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-09-17
+#: last_checked: 2022-09-24
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4819,11 +4819,11 @@ Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Trave
        },
        {
          'data' => '#: also_indoor: traffic (ex-B)
-#: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05 und 2022-09-03 ebenso
+#: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24 ebenso; Halteverbotsschilder bis 14.10.2022
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: last_checked: 2022-09-03
-#: check_frequency: 14d
-# REMOVED --- #: next_check: 2022-08-31
+#: last_checked: 2022-09-24
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2022-10-14
 # REMOVED (hier nicht mehr) ---	q4::inwork 13355,6235 13227,6209 13220,6237
 	q4::inwork 13027,6168 13227,6209
 ',
@@ -5025,7 +5025,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2022-09-15 vvv
+#: last_checked: 2022-09-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -5508,7 +5508,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        {
          'data' => '#: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
-#: last_checked: 2022-09-21 vvv
+#: last_checked: 2022-09-24 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
 	q3::inwork 12995,8213 13060,8148
 #: last_checked ^^^
@@ -5928,7 +5928,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
 #: by: https://berliner-abendblatt.de/2022/09/20/neubau-der-eisenacher-strasse-sperrung-vom-blumberger-damm-bis-gothaer-strasse/
 #: add_fragezeichen: Sind auch Radfahrer von den Bauarbeiten betroffen?
 #: check_frequency: 90d
-#: next_check: 2022-09-25
+#: next_check: 2022-09-26
 	q4::inwork; 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
 ',
          'from' => 1664056800,
@@ -5951,13 +5951,13 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'data' => '#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1248189.php
 #: by: https://www.berlin.de/imgscaler/nUoJyW6yDTB6qdjm_Zk5qRHoT7g_-l1zKxOmR4DeC1M/r4zu3/L3N5czExLXByb2QvYmEtbWl0dGUvYWt0dWVsbGVzL21pdHRlLWJsb2cvMjAyMi9zcGVycmtyZWlzLmpwZw.jpg
 #: by: https://berliner-abendblatt.de/2022/09/23/bombenentschaerfung-9000-menschen-muessen-haeuser-verlassen/
-	2::temp 4421,13793 4583,13845 4619,13708 4605,13525 4553,13294
-	2::temp 4583,13845 4963,13969 5089,14010
-	2::temp 4283,13660 4265,13742 4421,13793 4455,13567 4283,13660 4363,13336
-	2::temp 4455,13567 4605,13525 4985,13470 5116,13457 5100,13822 5089,14010 5220,14043
-	2::temp 5231,13843 5100,13822 4972,13804 4963,13969
-	2::temp 4186,13710 4265,13742 4223,13949
-	2::temp 4972,13804 4985,13470 4964,13319
+	2::bomb 4421,13793 4583,13845 4619,13708 4605,13525 4553,13294
+	2::bomb 4583,13845 4963,13969 5089,14010
+	2::bomb 4283,13660 4265,13742 4421,13793 4455,13567 4283,13660 4363,13336
+	2::bomb 4455,13567 4605,13525 4985,13470 5116,13457 5100,13822 5089,14010 5220,14043
+	2::bomb 5231,13843 5100,13822 4972,13804 4963,13969
+	2::bomb 4186,13710 4265,13742 4223,13949
+	2::bomb 4972,13804 4985,13470 4964,13319
 ',
          'from' => 1664056800,
          'id' => 3633,
