@@ -77,7 +77,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
-#: last_checked: 2022-09-22
+#: last_checked: 2022-09-24
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
 # REMOVED (hier realisiert) --- Stralauer Allee: Radspur geplant	?::projected; 13596,10722 13633,10705 13678,10685 13779,10642 13850,10612 13919,10583
 # REMOVED (hier in Bau, siehe radwege-orig-Eintrag) --- Stralauer Allee: Radspur geplant	?::projected; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -877,7 +877,7 @@ Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::proj
 # 
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: source_id: 2147342868 (inaktiv)
-#: last_checked: 2022-09-17
+#: last_checked: 2022-09-24
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 # 
@@ -1883,7 +1883,7 @@ Marienpark: Straße geplant	?::projected 8181,3668 8116,3754
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/praesentation-15-ag_radverkehr-02-03-2020_ag_rad.pdf (Erwähnung)
 #: osm_watch: way id="110450333" version="15"
 #: source_id: 2147343384
-#: last_checked: 2022-09-21
+#: last_checked: 2022-09-24
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13892,9365 13849,9310
 # 
@@ -2258,10 +2258,12 @@ Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/schoenstrasse-wird-neu-gebaut_a169547
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (vollständige Fertigstellung für 2023 geplant)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1167870.php (Baumfällungen bis Ende Februar 2022)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/schon-drei-jahre-verspaetung-auf-der-schoenstrasse_a358067 (bis 2024)
 #: XXX qualitaet: -> Q0 vermutlich
 # REMOVED (-> temp blockings) --- #: last_checked: 2018-06-19 (noch keine Sperrung) --- #: check_frequency: 2d --- Schönstr.: Neubau geplant, Vollsperrung während der Bauarbeiten	?::projected 13391,16436 13630,16629
 #: last_checked: 2022-09-21 (mapillary)
 #: check_frequency: 240d
+#: next_check: 2024-06-30
 Schönstr.: Neubau geplant	?::projected 13630,16629 13794,16773 13870,16837 13974,16924 13996,16959
 # REMOVED (-> temp blockings) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020) --- #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101 --- #: last_checked: 2020-04-15 --- #: check_frequency: 60d --- # REMOVED --- #: next_check: 2020-02-01 --- Schönstr.: Neubau geplant	?::projected 13996,16959 14136,17170
 # 
@@ -2665,7 +2667,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: osm_watch: way id="764003865" version="5"
 #: osm_watch: way id="764003862" version="18"
 #: priority: #D
-#: last_checked: 2022-08-16 (Radweg komplett fertig, Grünbeschichtung fehlt noch) vvv
+#: last_checked: 2022-09-24 (Radweg komplett fertig, Grünbeschichtung fehlt noch) vvv
 #: check_frequency: 60d vvv
 Karl-Marx-Str.: Markierung von Schutzstreifen (geschützt)	?::inwork; 11831,8989 11880,8955 11998,8872 12063,8826 12150,8764
 Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12150,8764 12318,8645 12330,8636
@@ -2770,7 +2772,7 @@ Gebrüder-Hirth-Str.: Verlängerung in Brandenburg geplant, wann wird die Straße f
 #: osm_watch: way id="901251934" version="2"
 #: osm_watch: way id="901251939" version="2"
 #: osm_watch: way id="889203673" version="3"
-#: last_checked: 2022-09-04
+#: last_checked: 2022-09-24
 #: check_frequency: 120d
 Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 # 
@@ -2842,7 +2844,7 @@ Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/neuer-abschnitt-fahrradstrasse_a341213 (bis Sommer 2022 bis zur Fuldastraße, im Herbst 2022 startet der nächste Abschnitt bis Innstraße)
 #: by: https://berliner-abendblatt.de/2022/04/06/weserstrasse-fahrradstrasse-wird-verlaengert/
 #: by: https://twitter.com/papapreuss/status/1542275896798679040 (Planung des 2. Bauabschnitts Fuldastr.-Innstr. kann nun starten (Ende Juni 2022))
-#: last_checked: 2022-09-21
+#: last_checked: 2022-09-24
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-09-15
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
@@ -5010,7 +5012,7 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102,12790 9135,12779
 #: last_checked: 2022-09-18
 Friedenstr./Koppenstr.: Zebrastreifen geplant	?::projected 12658,12755 12690,12769 12687,12809
-#: last_checked: 2022-09-15
+#: last_checked: 2022-09-24
 Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,9899 12556,9862 12565,9825
 #: last_checked: 2022-08-30 (mapillary)
 Roelckestr./Streustr.: Zebrastreifen geplant	?::projected 12882,16165 12890,16121 12906,16074
@@ -6836,7 +6838,7 @@ Blockdammweg: Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Ramp
 #: by: https://www.berliner-woche.de/baumschulenweg/c-verkehr/marggraffbruecke-erhaelt-ab-herbst-einen-ersatzneubau_a335078 (ab 3. Quartal 2022, Bauzeit drei Jahre)
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bauauftrag-fuer-neubau-der-marggraffbruecke-vergeben_a354221 (ab November 2022 bis Ende 2026, Behelfsbrücke für Fußgänger, was ist mit Radfahrern?)
 #: last_checked: 2022-09-15
-#: next_check: 2022-09-30
+#: next_check: 2022-11-01
 Marggraffbrücke: Abriss und Neubau	?::projected 16677,6892 16720,6845
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=35938
@@ -6939,7 +6941,7 @@ Neubau Waisentunnel: geplante Einschränkungen (Rolandufer gesperrt, Littenstr. G
 # REMOVED (handicap_s-orig-Eintrag existiert) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_30_2009_2068_online.pdf --- #: XXX vermutlich sollte man hier sowieso einen handicap-Eintrag erstellen --- #: next_check: 2022-09-01 --- Herkulesufer: Widmung als Grünanlage geplant	? 7595,11086 7575,11076 7233,11189 7160,11186 7135,11171 7142,11145 6920,11064 6882,11061
 # 
 #: next_check_id: GRENZALLEE-2014
-#: last_checked: 2022-09-15
+#: last_checked: 2022-09-24
 #: check_frequency: 90d
 Grenzallee: Fußgängerampel in Bau	?::inwork 14050,6754 14040,6726 14030,6698
 # 

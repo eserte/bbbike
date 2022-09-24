@@ -8,7 +8,7 @@
 #: temporary vvv
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
-#: last_checked: 2022-09-15
+#: last_checked: 2022-09-24
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 Neuköllnische Allee: welliger Asphalt	Q2 14310,7022 14276,7021 14245,7037 14236,7058 14196,7086
@@ -510,7 +510,7 @@ Adalbertstr.: Asphalt, einige Schäden	Q0-; 11640,11067 11589,10947 11552,10863
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/zu-eng-zu-gefaehrlich-gasse-fuer-radler-an-der-oderstrasse-geplant-d130109.html (Realisierung 2020)
 #: by: https://api.fixmyberlin.de/api/plannings/212 (Asphaltierung + Fahrradstraße, bis zum Eingang Tempelhofer Feld)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf
-#: last_checked: 2022-04-18
+#: last_checked: 2022-09-24
 #: check_frequency: 180d
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
 #: note: Parkstreifen gepflastert
@@ -1057,7 +1057,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-09-21
+#: last_checked: 2022-09-24
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -11493,8 +11493,9 @@ Lutterbacher Str.: Asphalt	Q0 2064,3214 2127,3111
 Lynarstr.: Asphalt	Q0 2074,9225 1937,9253
 Johannaplatz: Asphalt	Q0 2132,9267 2074,9225 2098,9173 2165,9155 2193,9195 2177,9251 2132,9267
 Kietzgrabensteg: Asphalt/Beton	Q0 22514,4632 22531,4605
-Weg über Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q0- 11818,6201 12040,6239 12235,6276 12242,6234 12459,6282
-Weg über Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q0- 12638,6307 12812,6343 12979,6374
+Weg über Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q0- 11818,6201 12040,6239 12235,6276 12242,6234
+Weg über Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q1+ 12242,6234 12459,6282
+Weg über Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q1+ 12638,6307 12812,6343 12979,6374
 Weg über Autobahntunnel: Gehwegplatten	Q0- 12638,6307 12614,6301 12595,6299
 # REMOVED (existiert nicht mehr) --- Mergenthalerring: schlechtes Kopfsteinpflaster	Q3+ 14121,8147 14210,8227 14229,8278
 Mergenthalerring: Kopfsteinpflaster	Q2 14229,8278 14258,8520 14262,8564

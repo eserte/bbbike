@@ -260,8 +260,11 @@ Verbundsteinpflaster	RW1;RW1 8947,10956 8901,11011 8747,11194 8720,11226 8631,11
 	RW4;RW3 9865,10227 9873,10285
 	RW3;RW3 11393,10390 11443,10394
 	RW2;RW2 11443,10394 11671,10402
+#: source_id: viz2021:13.425502,52.499099,29.08.2022,06:00
 #: XXX bleibt es bei der Radspur?
 #: last_checked: 2022-09-04
+#: check_frequency: 45d
+#: next_check: 2022-12-09
 # früher: der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflichtig	RW1; 11671,10402 11949,10414
 provisorisch durch Poller geschützt	RW3; 11671,10402 11949,10414
 	RW1; 11949,10414 11671,10402
@@ -296,7 +299,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-09-22 (Ausschilderung fehlt noch) vvv
+#: last_checked: 2022-09-24 (Ausschilderung fehlt noch) vvv
 #: check_frequency: 7d vvv
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 	RW1; 13596,10722 13633,10705
@@ -307,7 +310,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: next_check_id: STRALAUER-2019
 #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede
 #: XXX hier wird ein Bürgersteigradweg entstehen, hoffentlich asphaltiert
-#: last_checked: 2022-09-18
+#: last_checked: 2022-09-24
 #: check_frequency: 90d
 #: next_check: 2022-09-30
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -1066,7 +1069,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-09-21 vvv
+#: last_checked: 2022-09-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1112,7 +1115,6 @@ alte Gehwegplatten, Bord gegen Gehweg	RW2; 6787,12099 6831,12150 7001,12274 7031
 	RW2; 7031,12320 7001,12274 6831,12150 6787,12099
 	RW2; 6873,11011 7002,11034
 	RW1;RW9 11607,7145 11617,7083 11652,6879
-explizit abgesperrt	RW0; 11652,6879 11664,6796 11672,6737 11689,6634
 	RW1; 11689,6634 11672,6737 11664,6796
 	RW1;RW3 -927,6888 -739,6838
 asphaltiert, Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
@@ -1454,7 +1456,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 15534,8943 15452,9079 1
 #: XXX siehe auch ampeln-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2022-09-15 vvv
+#: last_checked: 2022-09-24 vvv
 #: check_frequency: 30d vvv
 #	RW1;RW2 14051,6731 14139,6786 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14239,6875 14153,6795
@@ -1505,7 +1507,7 @@ die ersten 50 Meter mit abgesperrtem Radweg	RW0; 15591,8848 15558,8820 15378,866
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX südlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2022-09-21
+#: last_checked: 2022-09-24
 #: check_frequency: 120d
 # früher: Verbundsteinpflaster	RW1; 14089,9610 14185,9509
 Asphalt, provisorische Wegführung	RW8; 14089,9610 14185,9509
@@ -2537,7 +2539,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-09-04 vvv
+#: last_checked: 2022-09-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -7718,6 +7720,7 @@ gemeinsamer Rad- und Gehweg	RW2;RW2 -261,15858 -265,15917 -255,15993 -239,16077 
 	RW7;RW7 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
 	RW4; 11664,6796 11652,6879
+#: historical_note: früherer Radweg explizit abgesperrt und kaum erkennbar
 	RW3; 11652,6879 11664,6796 11672,6737 11689,6634
 # 
 Bushaltestelle	RW3; 8739,6701 8787,6660

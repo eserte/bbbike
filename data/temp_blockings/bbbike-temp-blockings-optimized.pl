@@ -5507,10 +5507,15 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
+         'data' => '#: XXX einige Halteverbotsschilder bis 1.11.2022
+#: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
 #: last_checked: 2022-09-24 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2022-11-01 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
 	q3::inwork 12995,8213 13060,8148
+#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 ',

@@ -199,16 +199,17 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022)
 #: note: laut rbb nur bis 16.09.2022
 #: priority: #A
-#: last_checked: 2022-09-16 vvv
+#: last_checked: 2022-09-23 (mapillary) vvv
 #: next_check: 2022-10-12 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
 # REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork; 10324,13459 10350,13376
 # REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, offizielle Umleitung über Gormannstr.	q4::inwork; 10350,13376 10324,13459
-Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork 10263,13594 10302,13525 10324,13459 10350,13376
-Rosenthaler Str./Steinstr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q4::inwork 10302,13525 10318,13528
-Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10220,13694 10263,13594
-Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10142,13556 10263,13594 10309,13601
+# REMOVED (hier nicht mehr) --- Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork 10263,13594 10302,13525 10324,13459
+Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork 10324,13459 10350,13376
+# REMOVED (hier nicht mehr) --- Rosenthaler Str./Steinstr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q4::inwork 10302,13525 10318,13528
+# REMOVED (hier nicht mehr) --- Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10220,13694 10263,13594
+# REMOVED (hier nicht mehr) --- Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10142,13556 10263,13594 10309,13601
 #: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -616,7 +617,7 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 #: osm_watch: way id="1050315263" version="4"
 #: osm_watch: way id="996616281" version="8"
 #: osm_watch: way id="996616282" version="7"
-#: last_checked: 2022-09-21 vvv
+#: last_checked: 2022-09-24 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-09-15 vvv
 # REMOVED (hier fertig) --- Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
@@ -644,7 +645,7 @@ Weserstr./Weichselstr.: Arbeiten im Kreuzungsbereich	q2::inwork 12682,9089 12590
 # REMOVED (laut osm nur noch construction=minor) --- Donaustr.: Fahrbahn an der Kreuzung Pannierstr. kann wegen Bauarbeiten noch nicht befahrbar sein	q2::inwork 12202,8895 12392,8724
 # 
 #: next_check_id: GRENZALLEE-2014
-#: last_checked: 2022-09-15 vvv
+#: last_checked: 2022-09-24 vvv
 #: check_frequency: 90d vvv
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q1 14150,6609 14137,6658 14179,6714 14179,6743
 Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
@@ -653,7 +654,7 @@ Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2022-09-15 vvv
+#: last_checked: 2022-09-24 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 # REMOVED --- Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
