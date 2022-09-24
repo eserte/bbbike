@@ -372,4 +372,5 @@ png-to-jpg:	\
 # Creation of bomb.png
 #   wget https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/bomb.svg
 #   convert -background none -geometry 16x16 bomb.svg bomb.png 
+#   ... and manually manipulated with Gimp to change a transparent region into white
 # License: https://github.com/FortAwesome/Font-Awesome/blob/6.x/LICENSE.txt
