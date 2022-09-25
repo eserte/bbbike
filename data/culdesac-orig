@@ -469,7 +469,7 @@ Sackgassenende im südlichen Abschnitt	culdesac 12724,5051
 	culdesac_pseudo 15550,1953
 	culdesac 15056,2096
 	culdesac 14454,2367
-	culdesac 14322,2449
+	culdesac 14331,2447
 	culdesac_pseudo 14254,2566
 	culdesac 14092,2585
 	culdesac_pseudo 16472,19818
@@ -1613,10 +1613,14 @@ nördliches Sackgassenende der östlichen Stichstraße	culdesac_pseudo 19243,450
 	culdesac 15512,3157
 	culdesac 21629,5470
 Sackgassenende an der Hauptstr.	culdesac 16182,10069
+#: note: es folgt ein Weg durch einen Spielplatz, Radfahrer verboten
+	culdesac 14588,4154
+	culdesac 13497,3111
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 13822,3494
 	culdesac_pseudo -4195,12139
 	culdesac_pseudo 5541,12221
 	culdesac_pseudo 22110,10090

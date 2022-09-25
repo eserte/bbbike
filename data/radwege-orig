@@ -310,16 +310,16 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: next_check_id: STRALAUER-2019
 #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede
 #: XXX hier wird ein Bürgersteigradweg entstehen, hoffentlich asphaltiert
-#: last_checked: 2022-09-24
-#: check_frequency: 90d
-#: next_check: 2022-09-30
+#: last_checked: 2022-09-25
+#: check_frequency: 14d
+# REMOVED (Termin kann nicht gehalten werden) --- #: next_check: 2022-09-30
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
 provisorische Radspur	RW4; 13919,10583 13986,10549 14103,10489 14218,10430
 gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14218,10430 14405,10340 14558,10264
 	RW2; 13986,10549 13919,10583 13850,10612 13779,10642 13678,10685 13633,10705 13596,10722
 	RW4; 14103,10489 13986,10549
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-09-18
+#: last_checked: 2022-09-25
 #: check_frequency: 90d
 # früher: das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14218,10430 14103,10489
 provisorische Radspur	RW4; 14218,10430 14103,10489
@@ -966,11 +966,13 @@ uneben, schmal, Verbundsteinpflaster	RW1; 11084,3702 11153,3728 11159,3730 11166
 etwas breiter, teilweise neues Verbundsteinpflaster	RW1; 12119,4075 12284,4133 12337,4160
 teilweise neues Verbundsteinpflaster	RW1; 12337,4160 12363,4175 12564,4308
 # 
-neues Verbundsteinpflaster, aber Wurzelhebungen, teilweise notdürftig mit Asphalthügeln geflickt	RW1; 13775,3500 13906,3340 14023,3276 14126,3225 14205,3187 14274,3129
-sehr uneben	RW1; 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
+neues Verbundsteinpflaster, aber Wurzelhebungen, teilweise notdürftig mit Asphalthügeln geflickt	RW1; 13775,3500 13917,3335 14023,3276 14126,3225 14205,3187 14274,3129
+sehr uneben	RW1; 14274,3129 14205,3187 14126,3225 14023,3276 13917,3335 13775,3500
 sehr uneben	RW1;RW1 14274,3129 14392,2979
+Verbundsteinpflaster	RW1; 14392,2979 14500,2864
 #: note: Kommentar von Jens Velten vvv
-sehr uneben	RW1;RW1 14392,2979 14500,2864 14739,2714 14745,2710 14812,2661 14946,2519 15123,2349 15207,2313 15350,2305 15525,2299 15745,2294 15917,2289
+sehr uneben	RW1; 14500,2864 14392,2979
+sehr uneben	RW1;RW1 14500,2864 14739,2714 14745,2710 14812,2661 14946,2519 15123,2349 15207,2313 15350,2305 15525,2299 15745,2294 15917,2289
 sehr uneben	RW2;RW1 15917,2289 15980,2318
 altes Verbundsteinpflaster	RW1;RW1 13775,3500 13710,3522 13623,3523 13526,3519 13387,3513
 #: note ^^^
@@ -991,7 +993,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW2; 17001,1157 16908,1217
 # 
 Bushaltestelle mit Radspur	RW5;RW5 16908,1217 16839,1262
 	RW1;RW0 14239,4367 14164,4271 14111,4181 14108,4175
-	RW1;RW0 14023,3276 14056,3374 14141,3614 14185,3734 14238,3857 14290,3908
+Verbundsteinpflaster	RW1; 14023,3276 14056,3374 14141,3614 14189,3732 14233,3840 14290,3908
 	RW1;RW1 13430,6086 13483,5973 13566,5792 13612,5698 13635,5650 13660,5602 13730,5448 13756,5388
 	RW2;RW1 13756,5388 13809,5257
 neues Verbundsteinpflaster, trotzdem bereits mit leichten Unebenheiten	RW1;RW1 13809,5257 13824,5204 13892,4955 13914,4877 13939,4778 14023,4475 14048,4363 14108,4175 14119,4153
@@ -1069,7 +1071,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-09-24 vvv
+#: last_checked: 2022-09-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1507,7 +1509,7 @@ die ersten 50 Meter mit abgesperrtem Radweg	RW0; 15591,8848 15558,8820 15378,866
 # 
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX südlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2022-09-24
+#: last_checked: 2022-09-25
 #: check_frequency: 120d
 # früher: Verbundsteinpflaster	RW1; 14089,9610 14185,9509
 Asphalt, provisorische Wegführung	RW8; 14089,9610 14185,9509
@@ -3375,7 +3377,9 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2337,9178 2348,9388 
 #: note: nur an der Stubenrauchstr. ein paar Meter neues Verbundsteinpflaster
 meist altes Verbundsteinpflaster	RW1;RW9 16786,2989 17284,2636 17541,2454
 altes Verbundsteinpflaster	RW1;RW0 17541,2454 17772,2331 17928,2248 18101,2164 18111,2135
-	RW2;RW2 15585,4139 15594,4152 15618,4189 15640,4222 15669,4266 15720,4341
+Verbundsteinpflaster	RW2;RW2 15585,4139 15594,4152
+Asphalt	RW2;RW2 15594,4152 15618,4189 15640,4222
+Verbundsteinpflaster	RW2;RW2 15640,4222 15669,4266 15720,4341
 Grünbeschichtung	RW4; 8594,8777 8598,9074
 die letzten Meter werden auf dem Gehweg geführt; Grünbeschichtung	RW3; 8598,9074 8594,8777
 Grünbeschichtung	RW3;RW3 8598,9074 8598,9269 8595,9495
@@ -3628,7 +3632,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: by: https://viz.berlin.de/2022/02/blumberger-damm-bruecke/ (2-tägige Sperrung nur für Kfz)
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
-#: osm_watch: way id="865716506" version="7"
+#: osm_watch: way id="865716506" version="8"
 #: last_checked: 2022-07-16 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-06-01 vvv
@@ -4219,8 +4223,9 @@ Verbundsteinpflaster mit zahlreichen Unebenheiten	RW1; 10835,-145 10938,-405 109
 Verbundsteinpflaster mit zahlreichen Unebenheiten, schmal	RW1; 11054,-740 11099,-857 11120,-976 11149,-1274
 Gehweg für Radfahrer frei	RW9;RW1 8839,18504 9229,18178 9310,18108 9343,18080 9365,18062 9410,18021
 asphaltiert, etwas breiter	RW1;RW1 13775,3500 13818,3623 13833,3665 13852,3721 13909,3845 14012,4002 14119,4153
-	RW1;RW2 14994,3245 15030,3286
-	RW1;RW3 15030,3286 15162,3462 15213,3541 15263,3617 15307,3683 15350,3749 15356,3759 15363,3770 15464,3936 15585,4139
+Verbundsteinpflaster	RW1; 14994,3245 15030,3286 15162,3462 15213,3541 15263,3617 15307,3683 15350,3749 15356,3759 15363,3770 15464,3936 15585,4139
+	RW3; 15585,4139 15464,3936 15363,3770 15356,3759 15350,3749 15307,3683 15263,3617 15213,3541 15162,3462 15030,3286
+Verbundsteinpflaster	RW1; 15030,3286 14994,3245
 die letzten Meter werden auf dem Gehweg geführt	RW3; 14653,15738 14808,15788
 	RW3; 14808,15788 14936,15857 14967,15885 15130,16098 15194,16186 15236,16241 15297,16321
 die Nebenstraße ist gepflastert, die letzten Meter werden auf dem Gehweg (für Radfahrer frei) geführt	RW10; 15297,16321 15437,16491
@@ -5558,7 +5563,7 @@ Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
 #: by: https://westnordost.de/p/32402.jpg
 #: confirmed_by: srt
 	RW4; 6145,10975 6168,11042
-#: osm_watch: way id="153370344" version="19"
+#: osm_watch: way id="153370344" version="20"
 #: osm_watch: way id="153373879" version="16"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
 #: check_frequency ^^^
@@ -5901,7 +5906,7 @@ asphaltiert	RW1; 9660,17736 9721,17806
 	RW3; 8921,16578 8776,16268
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Umsetzung bis Herbst 2020)
 #: XXX wird aus der Radspur eine Busspur? vvv
-#: last_checked: 2022-07-08 vvv
+#: last_checked: 2022-09-24 (mapillary) vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
 #: osm_watch: way id="162965650" version="22"
@@ -7787,4 +7792,6 @@ Grünbeschichtung, Poller	RW4;RW4 5254,11237 5258,11285
 	RW6;RW6 7936,6089 7739,6099 7646,6031 7638,5967
 # 
 	RW6;RW6 9736,13061 9636,13076 9559,13087
+# 
+Gehweg für Radfahrer frei, alte Gehwegplatten	RW1; 18977,9322 19048,9146
 # 

@@ -28329,7 +28329,7 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2023-08-21 18:00:00"), # $isodate2epoch->("2020-12-18 23:59:59"), # 1588348800, # 2020-05-01 18:00
-       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten, bis August 2023',
+       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Hönower Str. für Radfahrer explizit verboten, bis August 2023; außerdem Einbahnstraßenregelung in der Andernacher Str.',
        type  => 'handicap',
        # alt: source_id => '2147342174',
        data  => <<EOF,
@@ -28340,12 +28340,12 @@ EOF
 #: by: https://nitter.cz/pic/orig/media%2FFdUeq-VX0AAvumT.jpg
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden)
-#: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr.; an der Waldowallee Richtung Norden sieht es per Markierung so aus, als ob die Radfahrer vom Gehweg kommen würden, obwohl es keine radfahrer-bezogene Schilder an der vorherigen Kreuzung gab
-#: note: laut rbb gilt die Umleitung für Radfahrer ab Schönower Straße --- aber so eine Straße existiert hier nicht?! (-> gemeint ist die Hönower Str.)
-#: XXX Wo endet das Verbot für Radfahrer?
+#: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
+#: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich
 #: priority: #B
-#: last_checked: 2022-09-18 (teilweise ist der Gehweg für Radfahrer frei)
-#: next_check: 2022-09-23
+#: last_checked: 2022-09-25
+#: check_frequency: 90d
+#: next_check: 2023-08-21
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
@@ -28353,7 +28353,9 @@ EOF
 # REMOVED (bis Dorotheastr. frei) --- q4::inwork; 18809,9133 18790,9018 18770,8898
 # REMOVED (alt) --- q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18727,8634
-	q4::inwork; 18875,9570 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
+# REMOVED (zwar steht ein Radfahren-verboten-Schild an der Hönower Str., aber die Radspur bis zur Waldowallee existiert weiterhin und die Ampel funktioniert auch noch) ---	q4::inwork; 18875,9570 18878,9517
+Treskowallee	q4::inwork; 18878,9517 18867,9464 18834,9256 18809,9133 18790,9018 18770,8898 18737,8686
+Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 EOF
      },
      { from  => 1537740000, # 2018-09-24 00:00
@@ -29614,7 +29616,7 @@ EOF
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022 (wird nicht mehr aktualisiert)
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2022-08-13 (mapillary)
+#: last_checked: 2022-09-24 (mapillary, Sackgassenschild)
 #: check_frequency: 45d
 #: next_check: 2022-11-30
 	q3::inwork  8986,16092 9178,16317
@@ -36258,12 +36260,13 @@ EOF
 EOF
      },
      { from  => 1664056800, # 2022-09-25 00:00
-       until => 1665007199, # 2022-10-05 23:59
+       until => $isodate2epoch->("2022-10-05 17:00:00"),
        text  => 'Pilgramer Str.: Bauarbeiten, Sperrung der Fahrbahn, 26. September 2022 bis 5. Oktober 2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1245614.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-wird-saniert_a357917
+#: source_id: viz2021:13.620087,52.497163,26.09.2022,08:00
 	q4::inwork 25048,10317 25112,10415 25125,10435 25147,10487 25150,10555
 EOF
      },
@@ -36351,14 +36354,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Archibaldweg: einige Meter der Fahrbahn sind gesperrt, enger Gehweg vorhanden, voraussichtlich bis zum 30.10.2022mögliche Sperrung der Straße, vermutlich nur während üblicher Arbeitszeiten',
+       text  => 'Archibaldweg: einige Meter der Fahrbahn sind gesperrt, enger Gehweg vorhanden, voraussichtlich bis zum 30.10.2022',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
-#: XXX am 2022-09-18 (Sonntag): Barrieren sowie Durchfahrtsverbotsschilder existieren, Barrieren waren aber geöffnet
+#: XXX am 2022-09-18 (Sonntag): Barrieren sowie Durchfahrtsverbotsschilder existieren, Barrieren waren aber geöffnet, 2022-09-25 (Sonntag): Barrieren geschlossen
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-18
+#: last_checked: 2022-09-25
 #: check_frequency: 21d
 #: next_check: 2022-10-30
 	q3::inwork 15674,10851 15870,10938
@@ -36402,6 +36405,18 @@ EOF
 	2::bomb 5231,13843 5100,13822 4972,13804 4963,13969
 	2::bomb 4186,13710 4265,13742 4223,13949
 	2::bomb 4972,13804 4985,13470 4964,13319
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Köpenicker Allee: zwischen Waldowallee und Rolandseck Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: KOEPENICKERALLEE-2022
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2022-09-25
+#: check_frequency: 14d
+	q4::inwork 19020,9364 18939,9417
 EOF
      },
     );

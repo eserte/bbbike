@@ -863,7 +863,7 @@ Wongrowitzer Steig: Bodenschwelle	q0 22474,7065 22358,7093
 Wirsitzer Weg: Bodenschwelle	q0 22448,6957 22641,6918
 (Valeska-Gert-Str. - Am Postbahnhof): Fuﬂg‰nger	q1 12807,11287 12713,11372
 Fritzi-Massary-Str: Bordsteine	q3 15428,6355 15452,6384
-(Rotkehlchenweg - Kormoranweg): eng, einige Fuﬂg‰nger, Bordsteine	q3 14099,3772 14185,3734
+(Rotkehlchenweg - Kormoranweg): eng, einige Fuﬂg‰nger, Bordsteine	q3 14099,3772 14189,3732
 D¸rtenstr.: Fuﬂg‰nger	q2 13785,4839 13825,4850 13874,4867 13914,4877
 Angelikaweg: Fuﬂg‰nger	q2 15459,2921 15537,3026
 Primelweg: Fuﬂg‰nger, eng	q1 15804,2512 15862,2588
@@ -1091,12 +1091,13 @@ Hˆrsingsteig: Fuﬂg‰nger, Bordsteine	q2 14086,2148 14165,2106 14369,2016
 Hˆrsingsteig: Fuﬂg‰nger	q1 14369,2016 14444,2090 14515,2212
 (Matth‰usweg - Friedrich-Kayﬂler-Weg): Fuﬂg‰nger, Bordstein	q2 14993,2029 14994,2069
 Gansbergsteig: Fuﬂg‰nger, Bordsteine	q2 14676,2375 14776,2474 14703,2553
-(U Johannisthaler Chaussee - U Lipschitzallee): Fuﬂg‰nger, eng	q2 14079,2504 14224,2368 14276,2293
-(Lˆwensteinring - Wildmeisterdamm): Fuﬂg‰nger, Bordstein	q2 14471,2509 14423,2463
-(Lˆwensteinring - Wildmeisterdamm): Fuﬂg‰nger	q1 14423,2463 14415,2445 14364,2396 14360,2360
-(Lˆwensteinring - U Johannisthaler Chaussee): Fuﬂg‰nger	q1 14364,2396 14335,2381
+(U Johannisthaler Chaussee - U Lipschitzallee): Fuﬂg‰nger, eng	q2 14079,2504 14224,2368 14259,2317 14276,2293
+(Lˆwensteinring - Wildmeisterdamm): Fuﬂg‰nger	q1 14471,2509 14423,2463
+(Lˆwensteinring - Wildmeisterdamm): Fuﬂg‰nger	q1 14423,2463 14415,2445 14364,2391 14360,2360
+(Lˆwensteinring - Wildmeisterdamm): Fuﬂg‰nger, schmal	q2 14364,2391 14341,2375 14314,2353 14273,2335 14259,2317 14237,2292
+(Lˆwensteinring - U Johannisthaler Chaussee): Fuﬂg‰nger	q1 14364,2391 14325,2387
 Anna-Nemitz-Weg: Fuﬂg‰nger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,2518 13898,2582 13914,2601
-(Parchimer Allee - Am Teltowkanal): eng	q2 14422,4787 14555,4976 14562,4985
+(Parchimer Allee - Am Teltowkanal): eng	q2 14427,4783 14555,4976 14562,4985
 (Fritz-Lesch-Str. - Orankestr.): Bordstein	q3 15313,15848 15313,15858
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15239,13580 15247,13662
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15097,13621 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15118,13961 15089,13990 15054,14056
@@ -2335,6 +2336,9 @@ Cora-Berliner-Str.: Fuﬂg‰ngerzone, Radfahrer frei	q1 8737,12098 8783,11959
 (Schlesischer Busch - BouchÈstr.): einige Fuﬂg‰nger	q1 13513,9871 13704,9691
 Ehrenfelsstr.: Fuﬂg‰ngerzone	q3 18737,8686 18778,8663
 (Bocksfeldstr. - Uferweg an der Scharfen Lanke): einige Fuﬂg‰nger, schmal	q2 -3658,11534 -3727,11421 -3742,11409
+(Weg an der Trabrennbahn - Maria-Matray-Str.): einige Fuﬂg‰nger, schmal	q2 19228,7610 19309,7760 19360,7819
+(Severingstr. - Parkweg): Fuﬂg‰nger, schmal	q2 13692,3024 13724,3026 13747,3016 13763,3015
+(Parkweg - Otto-Wels-Ring): Fuﬂg‰nger	q1 13763,3015 13787,3017
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2696,7 +2700,7 @@ Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 786
 (Parkweg Fritz-Reuter-Alle - Bruno-Taut-Ring): Fuﬂg‰nger	q1 13463,3854 13489,3857 13573,3885 13601,3895
 (Parkweg Fritz-Reuter-Allee - Britzer-Park): Fuﬂg‰nger	q1 13463,3854 13356,3843 13302,3837
 (Parkweg Fritz-Reuter-Allee - Gutschmidtstr.): Fuﬂg‰nger, Radfahren nicht erlaubt	q3 13489,3857 13531,3768 13562,3688 13623,3523
-(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fuﬂg‰nger	q1 13951,2697 13904,2787 13807,2863 13761,2993 13763,3018 13730,3111 13740,3252 13738,3302 13728,3332 13682,3411 13651,3449 13623,3523
+(Parkweg Johannisthaler Chaussee - Gutschmidtstr.): Fuﬂg‰nger	q1 13951,2697 13904,2787 13807,2863 13761,2993 13763,3015 13730,3111 13740,3252 13738,3302 13728,3332 13682,3411 13651,3449 13623,3523
 Lotte-Lenya-Bogen: Fuﬂg‰ngerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5373,10981
 (Parkweg B‰kepark): Fuﬂg‰nger	q1 5337,4192 5314,4216 5246,4240 5162,4256 5129,4262 5090,4291 5015,4339 4957,4448 4873,4604 4848,4668 4810,4765 4795,4801 4760,4843 4742,4885
 (Parkweg B‰kepark): Fuﬂg‰nger	q1 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
@@ -2796,7 +2800,7 @@ Rˆdelstr.: enge Straﬂe	q1 18007,8377 17813,8508
 Kuhligkshofstr.: eng und kurvig	q1 4905,5438 4851,5377 4813,5350
 Pankeweg und -br¸cke: eng und kurvig	q3 13559,23116 13567,23101 13551,23072
 Klosterheider Weg: enge Straﬂe	q1 2842,23482 2742,23513 2621,23609 2490,23720 2522,23761 2582,23814 2638,23856 2663,23875
-Landreiterweg: enge Straﬂe	q1 14062,1846 14050,1904 13857,1975 13739,2004 13674,2011 13567,2008 13485,2007 13362,2000 13240,1993 13227,1974
+Landreiterweg: enge Straﬂe	q0 14062,1846 14050,1904 13857,1975 13739,2004 13674,2011 13567,2008 13485,2007 13362,2000 13240,1993 13227,1974
 Zieselweg: enge Straﬂe	q1 2514,22595 2513,22737 2500,22867 2418,22878
 Schwalbenweg: enge Straﬂe	q1 20205,-548 20172,-533 19951,-605 19940,-610 19724,-703 19650,-732
 Wetterseestr.: enge Straﬂe	q1 11499,16883 11504,16746
