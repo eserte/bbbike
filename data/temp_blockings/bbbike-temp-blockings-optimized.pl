@@ -2498,60 +2498,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'type' => 'gesperrt',
          'until' => 1664314200
        },
-       {
-         'data' => '#: next_check_id: BERLINMARATHON-RECURRING
-#: source_id: viz2021:13.371628,52.517781,24.09.2021,18:00
-#: source_id: viz2021:13.376081,52.51616,26.09.2021,07:30
-#: source_id: viz2021:13.377158,52.515908,23.09.2022,04:00
-#: source_id: viz2021:13.354603,52.517071,23.09.2022,18:00
-#: source_id: viz2021:13.366231,52.515535,21.09.2022,06:00
-# REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
-	2::temp 8573,12325 8540,12420
-	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	2::temp 8119,12414 8055,12186
-	2::temp 8538,12245 8522,12239 8466,12197 8327,12174 8215,12156 8122,12147 8049,12140 8018,12135 7823,12120 7775,12114 7429,12070
-	2::temp 8538,12245 8522,12187 8453,12099 8262,11883 8244,11878 8221,11876 8167,11865 8140,11850 8026,11764
-	2::temp 8546,12279 8391,12389 8354,12416
-	2::temp 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
-	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-	3 7429,12070 7383,12095 7031,12320
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201 7875,12363
-	3 7875,12363 7822,12201 7816,12150 7823,12120
-	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612
-	2::temp 8207,12606 8206,12734 8206,12757
-	3 7945,12592 8122,12603 8120,12756
-	3 8120,12756 8122,12603 7945,12592
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-#: note: die Wege im südöstlichen Teil des Tiergartens sind vermutlich nur am Sa & So gesperrt
-	2::temp 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775 8203,11686
-	2::temp 8327,12174 8244,11878 8210,11775 8172,11679
-	2::temp 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
-	2::temp 8055,12186 8049,12140 8034,12093 8004,12074 7999,12040 8022,12016 8020,11937 8016,11770
-	2::temp 7823,12120 7832,12036 7822,11952 7793,11878
-	2::temp 7775,12114 7772,12040 7717,11918
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1663819200,
-         'id' => 2388,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              12,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, vom 22.09.2022 bis 26.09.2022',
-         'type' => 'gesperrt',
-         'until' => 1664164800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5918,9 +5865,11 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
-#: XXX am 2022-09-18 (Sonntag): Barrieren sowie Durchfahrtsverbotsschilder existieren, Barrieren waren aber geöffnet, 2022-09-25 (Sonntag): Barrieren geschlossen
+#: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren
+#: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag)
+#: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-25
+#: last_checked: 2022-09-26
 #: check_frequency: 21d
 #: next_check: 2022-10-30
 	q3::inwork 15674,10851 15870,10938
@@ -5955,25 +5904,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'type' => 'gesperrt',
          'until' => 1666357200
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1248189.php
-#: by: https://www.berlin.de/imgscaler/nUoJyW6yDTB6qdjm_Zk5qRHoT7g_-l1zKxOmR4DeC1M/r4zu3/L3N5czExLXByb2QvYmEtbWl0dGUvYWt0dWVsbGVzL21pdHRlLWJsb2cvMjAyMi9zcGVycmtyZWlzLmpwZw.jpg
-#: by: https://berliner-abendblatt.de/2022/09/23/bombenentschaerfung-9000-menschen-muessen-haeuser-verlassen/
-	2::bomb 4421,13793 4583,13845 4619,13708 4605,13525 4553,13294
-	2::bomb 4583,13845 4963,13969 5089,14010
-	2::bomb 4283,13660 4265,13742 4421,13793 4455,13567 4283,13660 4363,13336
-	2::bomb 4455,13567 4605,13525 4985,13470 5116,13457 5100,13822 5089,14010 5220,14043
-	2::bomb 5231,13843 5100,13822 4972,13804 4963,13969
-	2::bomb 4186,13710 4265,13742 4223,13949
-	2::bomb 4972,13804 4985,13470 4964,13319
-',
-         'from' => 1664056800,
-         'id' => 3633,
-         'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/artikel.1247887.php',
-         'text' => 'Sickingenstraße, Huttenstraße und Umgebung: Bombenentschärfung, Sperrkreis, am 26.09.2022 ab 8 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1664200800
-       },
+       undef,
        {
          'data' => '#: next_check_id: KOEPENICKERALLEE-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
@@ -5986,6 +5917,16 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'text' => 'Köpenicker Allee: zwischen Waldowallee und Rolandseck Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 3737,10322 3739,10495 3770,10508
+',
+         'from' => 1664164800,
+         'id' => 3635,
+         'source_id' => 'viz2021:13.30605,52.50146,26.09.2022,06:00',
+         'text' => 'Waitzstr.: Bauarbeiten, Fahrbahn gesperrt, möglicherweise sind auch Radfahrer betroffen, bis 31.12.2022 20:00',
+         'type' => 'handicap',
+         'until' => 1672527600
        }
      
 );
