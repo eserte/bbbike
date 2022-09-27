@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.83;
+$VERSION = 1.84;
 
 use vars qw(%images);
 
@@ -849,16 +849,12 @@ sub showmap_url_openstreetmap {
 	if ($variant eq 'de') {
 	    $with_marker = 0; # not implemented on openstreetmap.de
 	    $layers_spec = '&layers=B00TT';
-	} elsif ($variant eq 'sautter') {
-	    $with_marker = 0; # not implemented on sautter.com
-	    $layers_spec = '&layers=B000000FTFFFFTFF';
 	} elsif (defined $args{layers}) {
 	    $layers_spec = "&layers=$args{layers}";
 	}
 	my $mpfx = $with_marker ? 'm' : ''; # "marker prefix"
-	my $base_url = (  $variant eq 'de'      ? 'https://openstreetmap.de/karte/'
-			  : $variant eq 'sautter' ? 'http://sautter.com/map/'
-			  :                         'http://www.openstreetmap.org/index.html'
+	my $base_url = (  $variant eq 'de' ? 'https://openstreetmap.de/karte/'
+			  :                  'http://www.openstreetmap.org/index.html'
 		       );
 
 	sprintf "$base_url?%slat=%s&%slon=%s&zoom=%d%s",
@@ -893,16 +889,9 @@ sub showmap_openrailwaymap {
     start_browser($url);
 }
 
-sub showmap_openstreetmap_sautter {
-    my(%args) = @_;
-    my $url = showmap_url_openstreetmap(%args, variant => 'sautter');
-    start_browser($url);
-}
-
 sub show_openstreetmap_menu {
     my(%args) = @_;
     my $lang = $Msg::lang || 'de';
-    use constant USE_SAUTTER_MAP => 1;
     my $w = $args{widget};
     my $menu_name = __PACKAGE__ . '_OpenStreetMap_Menu';
     if (Tk::Exists($w->{$menu_name})) {
@@ -946,12 +935,6 @@ sub show_openstreetmap_menu {
 	(-label => 'OpenRailwayMap',
 	 -command => sub { showmap_openrailwaymap(%args) },
 	 );
-    if (USE_SAUTTER_MAP) {
-	$link_menu->command
-	    (-label => 'Transparent Map Comparison',
-	     -command => sub { showmap_openstreetmap(variant => 'sautter', %args) },
-	    );
-    }
     $link_menu->separator;
     $link_menu->command
 	(-label => 'iD Editor',
@@ -970,12 +953,6 @@ sub show_openstreetmap_menu {
 	(-label => ".org-Link ohne Marker kopieren", # XXX lang!
 	 -command => sub { _copy_link(showmap_url_openstreetmap(osmmarker => 0, %args)) },
 	);
-    if (USE_SAUTTER_MAP) {
-	$link_menu->command
-	    (-label => "Transparent Map Comparison-Link kopieren", # XXX lang!
-	     -command => sub { _copy_link(showmap_url_openstreetmap(variant => 'sautter', %args)) },
-	    );
-    }
 
     $w->{$menu_name} = $link_menu;
     my $e = $w->XEvent;
