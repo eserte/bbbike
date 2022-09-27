@@ -30170,8 +30170,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2022-10-28 17:00:00"), # 1596211200, # 2020-07-31 18:00
-       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende Oktober 2022',
+       until => $isodate2epoch->("2023-03-31 17:00:00"), # 1596211200, # 2020-07-31 18:00
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, voraussichtlich bis Ende März 2023',
        type  => 'gesperrt',
        source_id => '2147344558', # bis 2020-09-10
        data  => <<EOF,
@@ -30179,14 +30179,14 @@ EOF
 #: source_id: 2147346164 (bis 06.07.2021, Gesamtbaumaßnahme bis 2024)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 16.7.2021, Gesamtbaumaßnahme bis 2024)
-#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile bis 28.10.2022)
+#: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (bis 4.6.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile bis 28.10.2022) (bis 31.3.2023)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G,H)
 #: last_checked: 2022-07-24
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-10-28
+#: next_check: 2023-03-31
 # REMOVED --- #: next_check: 2024-01-01
 # REMOVED ---	2::inwork 8602,2377 8552,2243
 	2::inwork 8552,2243 8559,2203 8588,2176
@@ -31023,7 +31023,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-09-24
+#: last_checked: 2022-09-27
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -34210,7 +34210,7 @@ EOF
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
-#: last_checked: 2022-09-15 vvv
+#: last_checked: 2022-09-27 vvv
 #: next_check: 2022-10-02 vvv
 # REMOVED --- #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -34646,10 +34646,10 @@ EOF
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)?
 #: add_fragezeichen: Wo genau ist der Uferweg wegen Bauarbeiten gesperrt?
-#: last_checked: 2022-09-16
+#: last_checked: 2022-09-26 (osm)
 #: check_frequency: 60d
 #: next_check: 2024-02-12
-#: osm_watch: way id="4410535" version="24"
+#: osm_watch: way id="4410535" version="25"
 #: osm_watch: way id="4993234" version="15"
 	2::inwork 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
 EOF
@@ -35239,7 +35239,7 @@ EOF
      },
      { from  => 1651953282, # 2022-05-07 21:54
        until => 1669849200, # 2022-12-01 00:00
-       text  => 'Schubertstr.: Baustelle, Straße gesperrt, voraussichtlich bis 30.11.2022',
+       text  => 'Schubertstr. und Am Bahndamm: Baustelle, Straßen gesperrt, voraussichtlich bis 30.11.2022',
        type  => 'gesperrt',
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
        data  => <<EOF,
@@ -35247,7 +35247,8 @@ EOF
 #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: note: anscheinend auch für Fußgänger gesperrt, hier gibt es keinen Gehweg
-	2::inwork 21984,6317 21856,6390
+Schubertstr.	2::inwork 21984,6317 21856,6390
+Am Bahndamm	2::inwork 21984,6317 22238,6195
 EOF
      },
      { from  => $isodate2epoch->("2022-05-02 00:00:00"),
@@ -36094,20 +36095,24 @@ EOF
 EOF
      },
      { from  => 1661032800, # 2022-08-21 00:00
-       until => $isodate2epoch->("2022-10-31 18:00:00"), # 1665439199, # 2022-10-10 23:59
-       text  => 'Dorotheenstr. und Georgenstr.: Gleisarbeiten, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung Am Kupfergraben, gesperrt ab Bauhofstr., vom 22. August 2022 bis 10. Oktober 2022',
+       until => $isodate2epoch->("2022-12-11 18:00:00"), # $isodate2epoch->("2022-10-31 18:00:00"), # 1665439199, # 2022-10-10 23:59
+       text  => 'Dorotheenstr. und Georgenstr.: Gleisarbeiten, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung Am Kupfergraben, gesperrt ab Bauhofstr., vom 22. August 2022 bis 10. Oktober 2022, wird möglicherweise bis Dezember 2022 verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/08/17/neue-gleise-fuer-die-dorotheenstrasse/ (vom 22. August bis zum 10. Oktober 2022)
 #: by: https://berliner-abendblatt.de/2022/08/21/diese-baustellen-sorgen-fuer-staus/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/neue-gleise-und-weichen_a355298
+#: by: https://www.bahninfo-forum.de/read.php?9,708604,744663#msg-744663 (Verlängerung bis 11.12.2022)
 #: note: laut rbb ist die Georgenstr. nur bis 5.9.2022 gesperrt
+#: XXX Dauern die Bauarbeiten und Sperrungen länger an?
+#: next_check: 2022-10-31 vvv
 #: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022)
 Georgenstr.	q4::inwork 9568,12688 9441,12670
 #: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
 #: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022)
 Dorotheenstr.	q4::inwork 9742,12609 9870,12657
 Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
+#: next_check ^^^
 EOF
      },
      { from  => undef, # 
@@ -36191,10 +36196,14 @@ EOF
        text  => 'Herkulesufer: Neubau Bauhaus-Archiv, Uferweg gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.youtube.com/watch?v=swATp4lDNFs (Webcam)
+#: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7331.html (Richtfest 1. Quartal 2023)
+#: by: https://berliner-abendblatt.de/2022/09/27/neubau-des-bauhaus-archivs-richtfest-erst-fuer-2023-geplant/
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: osm_watch: way id="147686211" version="9"
 #: osm_watch: way id="481651814" version="4"
 #: last_checked: 2022-09-16
+#: check_frequency: 120d
 	2::inwork 6882,11061 6920,11064 7142,11145
 EOF
      },
@@ -36425,7 +36434,7 @@ EOF
        until => 1672527600, # 2023-01-01 00:00
        text  => 'Waitzstr.: Bauarbeiten, Fahrbahn gesperrt, möglicherweise sind auch Radfahrer betroffen, bis 31.12.2022 20:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.30605,52.50146,26.09.2022,06:00',
+       source_id => 'viz2021:13.30605,52.50146,26.09.2022,06:00', # am nächsten Tag bereits entfernt
        data  => <<EOF,
 	q4::inwork 3737,10322 3739,10495 3770,10508
 EOF

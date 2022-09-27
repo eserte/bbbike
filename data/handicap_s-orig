@@ -738,8 +738,8 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 #: next_check_id: PARKAUE-2022
 #: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023
 #: XXX Einbahnstraßenregelung nach den Bauarbeiten wiederherstellen
-#: also_indoor: traffic (none)
-#: last_checked: 2022-08-18
+#: also_indoor: traffic (G)
+#: last_checked: 2022-09-27
 #: check_frequency: 90d
 #: next_check: 2023-10-31
 Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,12420 15457,12449
@@ -818,12 +818,12 @@ Marzahner Chaussee: Sperrung der Fahrbahn zwischen Allee der Kosmonauten und Mer
 #: by: https://www.nbb-netzgesellschaft.de/ueber-die-nbb/presse/pressemitteilungen/reparatur-beeintraechtigt-verkehr-in-schoeneberg/
 #: XXX laut Schild bis Dezember 2021 (dauer aber länger)
 #: source_id: viz2021:13.355106,52.494649,17.01.2022,11:00 (Gasleitungsbaustelle, bis 28.02.2022) (inaktiv)
-#: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022)
+#: source_id: viz2021:13.355106,52.494649,25.02.2022,14:00 (Gasleitungsbaustelle, bis 02.05.2022) (mittlerweile bis 31.5.2022) (bis 31.10.2022) (bis 23.12.2022)
 #: source_id: viz2021:13.35399,52.49475,02.05.2022,13:59 (bis 31.5.2022) (wieder entfernt (Duplikat?))
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: last_checked: 2022-09-17
 #: check_frequency: 60d
-#: next_check: 2022-10-31
+#: next_check: 2022-12-23
 Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,9870
 # 
 # REMOVED (-> temp blockings) --- #: by: https://twitter.com/VIZ_Berlin/status/1392465007393316864 (für ca. vier Wochen, ab 12.5.2021) --- #: by: https://twitter.com/rbbabendschau/status/1392489796426162177 --- #: source_id: 2147347186 --- #: also_indoor: traffic (G) --- #: XXX wann werden die Fahrbahn und die Radwege wieder freigegeben? bei rbb "bis auf Weiteres" --- #: priority: #A --- #: last_checked: 2021-05-14 --- #: next_check: 2021-06-18 --- #: valid: -20210612 --- Langenscheidtbrücke und Monumentenstr. bis Hohenfriedbergstr.: Wasserrohrbruch, Fahrbahn gesperrt, südwestlicher Fußweg steht noch zur Verfügung	q3::inwork 7647,9196 7735,9121 7790,9126
