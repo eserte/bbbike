@@ -30,10 +30,7 @@ eq_or_diff [_find_coords("Mittlerer Stern\tHH 1111,2222 3333,4444")], [[1111,222
 eq_or_diff [_find_coords('https://www.google.com/maps/@52.5156235,13.3768881,15.29z')],   [[8546,12181]];
 eq_or_diff [_find_coords('https://www.google.com/maps/@52.5156235,13.3768881,14z')],      [[8546,12181]];
 eq_or_diff [_find_coords('https://www.google.com/maps/@52.5156235,13.3768881,14m/rest')], [[8546,12181]];
-{
-  local $TODO = "NYI";
-  eq_or_diff [_find_coords('https://www.google.com/maps/place/Brandenburger+Tor/@52.5156235,13.3768881,14z/data=!4m5!3m4!1s0x47a851c655f20989:0x26bbfb4e84674c63!8m2!3d52.5162746!4d13.3777041')], [[8546,12181]];
-}
+eq_or_diff [_find_coords('https://www.google.com/maps/place/Brandenburger+Tor/@52.5156235,13.3768881,14z/data=!4m5!3m4!1s0x47a851c655f20989:0x26bbfb4e84674c63!8m2!3d52.5162746!4d13.3777041')], [[8546,12181]];
 
 # kartaview
 eq_or_diff [_find_coords('https://kartaview.org/map/@52.51625735865977,13.37810327600232,17z')], [[8627,12253]];
