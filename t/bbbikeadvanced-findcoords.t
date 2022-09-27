@@ -36,4 +36,12 @@ eq_or_diff [_find_coords('https://www.google.com/maps/place/Brandenburger+Tor/@5
 eq_or_diff [_find_coords('https://kartaview.org/map/@52.51625735865977,13.37810327600232,17z')], [[8627,12253]];
 eq_or_diff [_find_coords("Coordinate:\t52.51628113, 13.37769890")], [[8599,12255]];
 
+# image with gps data in exif
+SKIP: {
+    skip "Image::ExifTool needed for parsing GPS position out of images", 1
+	if !module_exists('Image::ExifTool');
+    my $file = "$FindBin::RealBin/img/gpspostest.jpg";
+    eq_or_diff [_find_coords("file://$file")], [[10925,12525]];
+}
+
 __END__
