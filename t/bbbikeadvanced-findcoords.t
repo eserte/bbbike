@@ -20,10 +20,18 @@ use Karte::Polar;
 # bbbike coordinates
 eq_or_diff [_find_coords("Mittlerer Stern\tHH 1111,2222 3333,4444")], [[1111,2222], [3333,4444]];
 
-# openstreetmap
+# openstreetmap, opentopomap, qwant
+eq_or_diff [_find_coords('https://www.openstreetmap.org/#map=19/52.51627/13.37770&layers=N')], [[8600,12254]];
+eq_or_diff [_find_coords('https://opentopomap.org/#marker=16/52.51627/13.37770')], [[8600,12254]];
+eq_or_diff [_find_coords('https://www.qwant.com/maps#map=15.38/52.51627/13.37770')], [[8600,12254]];
+
+# openstreetmap route
+eq_or_diff [_find_coords('https://www.openstreetmap.org/directions?engine=fossgis_osrm_bike&route=52.44074%2C13.58726%3B52.44275%2C13.58220')], [[23018,4108],[22669,4325]];
+
+# geo URI
 {
-  local $TODO = "should not duplicate coordinate!";
-  eq_or_diff [_find_coords('https://www.openstreetmap.org/#map=19/52.51627/13.37770&layers=N')], [[8600,12254]];
+  local $TODO = "two coords, should probably shortcut";
+  eq_or_diff [_find_coords('geo:52.51627,13.37770')], [[8600,12254]];
 }
 
 # googlemaps
