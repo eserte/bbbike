@@ -68,8 +68,6 @@ for my $f (@files) {
 	    if $f =~ m{^( lib/TkChange.pm
 			| lib/AutoInstall/Tk.pm
                         | bbbike
-		        | BBBikeAdvanced.pm
-		        | BBBikeEdit.pm
 		        | PointEdit.pm
 			| GPS/GpsmanData/Tk.pm
 			| GPS/GpsmanData/TkViewer.pm
