@@ -1280,6 +1280,230 @@ sub parse_url_for_coords {
 	   };
 }
 
+sub _find_coords {
+    my($s, %opts) = @_;
+    my $map             = delete $opts{'-map'} || 'auto-detect';
+    my $custom_code_sub = delete $opts{'-custom_code_sub'};
+    die "Unhandled options: " . join(' ', %opts) if %opts;
+
+    my @coords;
+
+    if ($map eq 'postgis') {
+	while ($s =~ /(?:MULTI)?(?:POINT|LINESTRING|POLYGON)\(([\d \.\)\(,]+)\)/g) {
+	    (my $coords = $1) =~ s{\),\(}{,}g;
+	    $coords =~ s{[\(\)]}{}g;
+	    my @_coords = split /,/, $coords;
+	    for (@_coords) {
+		my($x, $y) = split / /, $_;
+		push @coords, [$x,$y]; # XXX assume always standard coordinates here, maybe should also auto-detect?
+	    }
+	}
+    } elsif ($map eq 'custom') {
+	if (length $s) {
+	    if ($custom_code_sub) {
+		my($lon,$lat) = $custom_code_sub->($s);
+		if (defined $lat) {
+		    my($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon,$lat));
+		    push @coords, [$x, $y];
+		}
+	    } else {
+		main::status_message('Please define valid custom code', 'die');
+	    }
+	}
+    } else {
+	# OpenStreetMap URL
+	# OpenTopoMap marker URL (e.g. https://opentopomap.org/#marker=16/52.52590/13.36746)
+	while ($s =~ m{(?:map|marker)=\d+/([-+]?[0-9\.]+)/([-+]?[0-9\.]+)}g) {
+	    my($y,$x) = ($1,$2);
+	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+	    push @coords, [$x,$y];
+	}
+
+	# Geo URI
+	while ($s =~ /geo:([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
+	    my($y,$x) = ($1,$2);
+	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+	    push @coords, [$x,$y];
+	}
+
+	# Openrouteservice URL
+	if ($s =~ m{openrouteservice.*[?&]a=([^&]+)}) { # Route
+	    my @c = split /,/, $1;
+	    for(my $i = 0; $i <= $#c; $i+=2) {
+		my $y = $c[$i];
+		my $x = $c[$i+1];
+		($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		push @coords, [$x,$y];
+	    }
+	} elsif ($s =~ m{openrouteservice.*[?&]n1=([-+]?[0-9\.]+)&n2=([-+]?[0-9\.]+)}) { # just center point
+	    my($y,$x) = ($1,$2);
+	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+	    push @coords, [$x,$y];
+	}
+
+	# Google Maps
+	while ($s =~ s{maps/\@([-+]?[0-9\.]+),([-+]?[0-9\.]+),\d+(?:\.\d+)?[zma](?:$|[,/])}{}g) { # consume, because this kind of coordinates may be misinterpreted as BBBike coords otherwise
+	    my($y,$x) = ($1,$2);
+	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+	    push @coords, [$x, $y];
+	}
+
+	# BingMaps
+	if (
+	    $s =~ m{https://dev.virtualearth.net/REST/v1/Locations/([-+]?[0-9\.]+),([-+]?[0-9\.]+)} ||
+	    $s =~ m{https://dev.virtualearth.net/REST/V1/Imagery/Copyright/de-DE/RoadOnDemand/\d+/([-+]?[0-9\.]+)/([-+]?[0-9\.]+)} ||
+	    $s =~ m{https://www.bing.com/maps.*cp=([-+]?[0-9\.]+)~([-+]?[0-9\.]+)}
+	   ) {
+	    my($y,$x) = ($1,$2);
+	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+	    push @coords, [$x,$y];
+	    return @coords; # detect only one coordinate, and shortcut the search --- the pure lon/lat check below probably also matches, and does it the wrong way around
+	}
+
+	# kartaview map URL, e.g.
+	# https://kartaview.org/map/@52.490343464210895,13.506068897170195,15z
+	{
+	    my @_coords;
+	    while ($s =~ m{kartaview.org.*?\@([-+]?[0-9\.]+),([-+]?[0-9\.]+),}g) {
+		my($y,$x) = ($1,$2);
+		($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		push @_coords, [$x,$y];
+	    }
+	    if (@_coords) {
+		push @coords, @_coords;
+		return @coords; # shortcut search, lat,lon order may conflict with further regexps
+	    }
+	}
+	# kartaview coordinates (from detail view)
+	{
+	    my @_coords;
+	    while ($s =~ m{Coordinate:\s+([-+]?[0-9\.]+),\s*([-+]?[0-9\.]+)}g) {
+		my($y,$x) = ($1,$2);
+		($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		push @_coords, [$x,$y];
+	    }
+	    if (@_coords) {
+		push @coords, @_coords;
+		return @coords; # shortcut search, lat,lon order may conflict with further regexps
+	    }
+	}
+
+	# DDD or BBBike coordinates
+	while ($s =~ /([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
+	    my($x,$y) = ($1,$2);
+	    my $_map = $map;
+	    if ($_map eq 'auto-detect') {
+		if ($x =~ m{\.} && $y =~ m{\.} && $x <= 180 && $x >= -180 && $y <= 90 && $y >= -90) {
+		    $_map = "polar";
+		} else {
+		    $_map = "standard";
+		}
+	    }
+	    if ($_map eq 'polar') {
+		($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+	    }
+	    push @coords, [$x,$y];
+	}
+
+	# DMS coordinates with trailing NESW
+	while ($s =~ m{(\d+)°(\d+)'(\d+(?:\.\d+)?)"([NS]).*?(\d+)°(\d+)'(\d+(?:\.\d+)?)"([EW])}g) {
+	    # sigh, it seems that I have to use the ugly $1...$8 list :-(
+	    my($lat_deg,$lat_min,$lat_sec,$lat_sgn,
+	       $lon_deg,$lon_min,$lon_sec,$lon_sgn) = ($1,$2,$3,$4,$5,$6,$7,$8);
+	    my $lat = $lat_deg + $lat_min/60 + $lat_sec/3600;
+	    $lat *= -1 if $lat_sgn =~ m{s}i;
+	    my $lon = $lon_deg + $lon_min/60 + $lon_sec/3600;
+	    $lon *= -1 if $lon_sgn =~ m{w}i;
+	    my($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon,$lat));
+	    push @coords, [$x,$y];
+	}
+
+	# DMM coordinates with preceding NESW
+	while ($s =~ m{([NS])(\d+)°\s*([\d\.]+).*?([EW])(\d+)°\s*([\d\.]+)}g) {
+	    my($lat_sgn,$lat_deg,$lat_min,
+	       $lon_sgn,$lon_deg,$lon_min) = ($1,$2,$3,$4,$5,$6);
+	    my $lat = $lat_deg + $lat_min/60;
+	    $lat *= -1 if $lat_sgn =~ m{s}i;
+	    my $lon = $lon_deg + $lon_min/60;
+	    $lon *= -1 if $lon_sgn =~ m{w}i;
+	    my($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon,$lat));
+	    push @coords, [$x,$y];
+	}
+
+	# OSM XML snippets
+	while ($s =~ m{(?:
+			   \blat="([^"]+)"\s+lon="([^"]+)"
+		       |   \blon="([^"]+)"\s+lat="([^"]+)"
+		       )}xg) {
+	    my($x,$y);
+	    if (defined $1) { # lat-lon detected
+		($y,$x) = ($1,$2);
+	    } else { # lon-lat detected
+		($x,$y) = ($3,$4);
+	    }
+	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+	    push @coords, [$x, $y];
+	}
+
+	# mc.bbbike.org
+	# www.mapillary.com
+	# www.openstreetmap.org alternative with mlat/mlon
+	while ($s =~ m{(?:
+			   \bm?lat=([^&]+).*\bm?(?:lon|lng)=([^&]+)
+		       |   \bm?(?:lon|lng)=([^&]+).*\bm?lat=([^&]+)
+		       )}xg) {
+	    my($x,$y);
+	    if (defined $1) { # lat-lon detected
+		($y,$x) = ($1,$2);
+	    } else { # lon-lat detected
+		($x,$y) = ($3,$4);
+	    }
+	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+	    push @coords, [$x, $y];
+	}
+
+	# www.qwant.com/maps
+	while ($s =~ m{#map=[^/]+/([-+]?[0-9\.]+)/([-+]?[0-9\.]+)}g) {
+	    my($y,$x) = ($1,$2);
+	    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+	    push @coords, [$x, $y];
+	}
+
+	# OpenStreetMap route URL, e.g.
+	# https://www.openstreetmap.org/directions?engine=fossgis_osrm_bike&route=52.44074%2C13.58726%3B52.44275%2C13.58220
+	while ($s =~ m{[?&]route=
+		       ([-+]?[0-9\.]+)(?:%2C|,)([-+]?[0-9\.]+)(?:%3B|-)
+		       ([-+]?[0-9\.]+)(?:%2C|,)([-+]?[0-9\.]+)
+		  }xg) {
+	    my($y1,$x1,$y2,$x2) = ($1,$2,$3,$4);
+	    ($x1,$y1) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x1,$y1));
+	    ($x2,$y2) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x2,$y2));
+	    push @coords, [$x1,$y1], [$x2,$y2];
+	}
+
+	# copied from Gallery 2 Photo Properties
+	if ($s =~ m{GPS: \s+ Latitude \s+ (\d+.\d+) \s .* GPS: \s+ Longitude \s+ (\d+.\d+)}xs) {
+	    push @coords, [$Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($2, $1))];
+	}
+
+	if ($s =~ m{^file://(.*\.(?:jpe?g|tiff?))$}i) {
+	    my $file = $1;
+	    if (-r $file && eval { require Image::ExifTool; 1}) {
+		my $exiftool = Image::ExifTool->new;
+		$exiftool->Options(CoordFormat => '%+.6f');
+		my $info = $exiftool->ImageInfo($file);
+		my $lon = $info->{GPSLongitude}; $lon += 0; # +0 to get rid of sign
+		my $lat = $info->{GPSLatitude};  $lat += 0;
+		if ($lon && $lat) {
+		    push @coords, [$Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon, $lat))];
+		}
+	    }
+	}
+    }
+
+    @coords;
+}
+
 sub set_line_coord_interactive {
     my(%args) = @_;
     if (!defined $coord_output ||
@@ -1312,221 +1536,10 @@ EOF
 	if ($os eq 'win') {
 	    @selection_types = ('CLIPBOARD');
 	}
-    SELTYPELOOP: for my $selection_type (@selection_types) {
+	for my $selection_type (@selection_types) {
 	    my $s = eval { $t->SelectionGet('-selection' => $selection_type) };
 	    next if $@;
-	    if ($map eq 'postgis') {
-		while ($s =~ /(?:MULTI)?(?:POINT|LINESTRING|POLYGON)\(([\d \.\)\(,]+)\)/g) {
-		    (my $coords = $1) =~ s{\),\(}{,}g;
-		    $coords =~ s{[\(\)]}{}g;
-		    my @_coords = split /,/, $coords;
-		    for (@_coords) {
-			my($x, $y) = split / /, $_;
-			push @coords, [$x,$y]; # XXX assume always standard coordinates here, maybe should also auto-detect?
-		    }
-		}
-	    } elsif ($map eq 'custom') {
-		if (length $s) {
-		    if ($custom_code_sub) {
-			my($lon,$lat) = $custom_code_sub->($s);
-			if (defined $lat) {
-			    my($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon,$lat));
-			    push @coords, [$x, $y];
-			}
-		    } else {
-			main::status_message('Please define valid custom code', 'die');
-		    }
-		}
-	    } else {
-		# OpenStreetMap URL
-		# OpenTopoMap marker URL (e.g. https://opentopomap.org/#marker=16/52.52590/13.36746)
-		while ($s =~ m{(?:map|marker)=\d+/([-+]?[0-9\.]+)/([-+]?[0-9\.]+)}g) {
-		    my($y,$x) = ($1,$2);
-		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
-		    push @coords, [$x,$y];
-		}
-
-		# Geo URI
-		while ($s =~ /geo:([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
-		    my($y,$x) = ($1,$2);
-		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
-		    push @coords, [$x,$y];
-		}
-
-		# Openrouteservice URL
-		if ($s =~ m{openrouteservice.*[?&]a=([^&]+)}) { # Route
-		    my @c = split /,/, $1;
-		    for(my $i = 0; $i <= $#c; $i+=2) {
-			my $y = $c[$i];
-			my $x = $c[$i+1];
-			($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
-			push @coords, [$x,$y];
-		    }
-		} elsif ($s =~ m{openrouteservice.*[?&]n1=([-+]?[0-9\.]+)&n2=([-+]?[0-9\.]+)}) { # just center point
-		    my($y,$x) = ($1,$2);
-		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
-		    push @coords, [$x,$y];
-		}
-
-		# Google Maps
-		while ($s =~ s{maps/\@([-+]?[0-9\.]+),([-+]?[0-9\.]+),\d+(?:\.\d+)?[zma](?:$|[,/])}{}g) { # consume, because this kind of coordinates may be misinterpreted as BBBike coords otherwise
-		    my($y,$x) = ($1,$2);
-		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
-		    push @coords, [$x, $y];
-		}
-
-		# BingMaps
-		if (
-		    $s =~ m{https://dev.virtualearth.net/REST/v1/Locations/([-+]?[0-9\.]+),([-+]?[0-9\.]+)} ||
-		    $s =~ m{https://dev.virtualearth.net/REST/V1/Imagery/Copyright/de-DE/RoadOnDemand/\d+/([-+]?[0-9\.]+)/([-+]?[0-9\.]+)} ||
-		    $s =~ m{https://www.bing.com/maps.*cp=([-+]?[0-9\.]+)~([-+]?[0-9\.]+)}
-		   ) {
-		    my($y,$x) = ($1,$2);
-		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
-		    push @coords, [$x,$y];
-		    last SELTYPELOOP; # detect only one coordinate, and shortcut the search --- the pure lon/lat check below probably also matches, and does it the wrong way around
-		}
-
-		# kartaview map URL, e.g.
-	        # https://kartaview.org/map/@52.490343464210895,13.506068897170195,15z
-		{
-		    my @_coords;
-		    while ($s =~ m{kartaview.org.*?\@([-+]?[0-9\.]+),([-+]?[0-9\.]+),}g) {
-			my($y,$x) = ($1,$2);
-			($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
-			push @_coords, [$x,$y];
-		    }
-		    if (@_coords) {
-			push @coords, @_coords;
-			last SELTYPELOOP; # shortcut search, lat,lon order may conflict with further regexps
-		    }
-		}
-		# kartaview coordinates (from detail view)
-		{
-		    my @_coords;
-		    while ($s =~ m{Coordinate:\s+([-+]?[0-9\.]+),\s*([-+]?[0-9\.]+)}g) {
-			my($y,$x) = ($1,$2);
-			($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
-			push @_coords, [$x,$y];
-		    }
-		    if (@_coords) {
-			push @coords, @_coords;
-			last SELTYPELOOP; # shortcut search, lat,lon order may conflict with further regexps
-		    }
-		}
-
-		# DDD or BBBike coordinates
-		while ($s =~ /([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
-		    my($x,$y) = ($1,$2);
-		    my $_map = $map;
-		    if ($map eq 'auto-detect') {
-			if ($x =~ m{\.} && $y =~ m{\.} && $x <= 180 && $x >= -180 && $y <= 90 && $y >= -90) {
-			    $_map = "polar";
-			} else {
-			    $_map = "standard";
-			}
-		    }
-		    if ($_map eq 'polar') {
-			($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
-		    }
-		    push @coords, [$x,$y];
-		}
-
-		# DMS coordinates with trailing NESW
-		while ($s =~ m{(\d+)°(\d+)'(\d+(?:\.\d+)?)"([NS]).*?(\d+)°(\d+)'(\d+(?:\.\d+)?)"([EW])}g) {
-		    # sigh, it seems that I have to use the ugly $1...$8 list :-(
-		    my($lat_deg,$lat_min,$lat_sec,$lat_sgn,
-		       $lon_deg,$lon_min,$lon_sec,$lon_sgn) = ($1,$2,$3,$4,$5,$6,$7,$8);
-		    my $lat = $lat_deg + $lat_min/60 + $lat_sec/3600;
-		    $lat *= -1 if $lat_sgn =~ m{s}i;
-		    my $lon = $lon_deg + $lon_min/60 + $lon_sec/3600;
-		    $lon *= -1 if $lon_sgn =~ m{w}i;
-		    my($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon,$lat));
-		    push @coords, [$x,$y];
-		}
-
-		# DMM coordinates with preceding NESW
-		while ($s =~ m{([NS])(\d+)°\s*([\d\.]+).*?([EW])(\d+)°\s*([\d\.]+)}g) {
-		    my($lat_sgn,$lat_deg,$lat_min,
-		       $lon_sgn,$lon_deg,$lon_min) = ($1,$2,$3,$4,$5,$6);
-		    my $lat = $lat_deg + $lat_min/60;
-		    $lat *= -1 if $lat_sgn =~ m{s}i;
-		    my $lon = $lon_deg + $lon_min/60;
-		    $lon *= -1 if $lon_sgn =~ m{w}i;
-		    my($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon,$lat));
-		    push @coords, [$x,$y];
-		}
-
-		# OSM XML snippets
-		while ($s =~ m{(?:
-				   \blat="([^"]+)"\s+lon="([^"]+)"
-			       |   \blon="([^"]+)"\s+lat="([^"]+)"
-			       )}xg) {
-		    my($x,$y);
-		    if (defined $1) { # lat-lon detected
-			($y,$x) = ($1,$2);
-		    } else { # lon-lat detected
-			($x,$y) = ($3,$4);
-		    }
-		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
-		    push @coords, [$x, $y];
-		}
-
-		# mc.bbbike.org
-		# www.mapillary.com
-		# www.openstreetmap.org alternative with mlat/mlon
-		while ($s =~ m{(?:
-				   \bm?lat=([^&]+).*\bm?(?:lon|lng)=([^&]+)
-			       |   \bm?(?:lon|lng)=([^&]+).*\bm?lat=([^&]+)
-			       )}xg) {
-		    my($x,$y);
-		    if (defined $1) { # lat-lon detected
-			($y,$x) = ($1,$2);
-		    } else { # lon-lat detected
-			($x,$y) = ($3,$4);
-		    }
-		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
-		    push @coords, [$x, $y];
-		}
-
-		# www.qwant.com/maps
-		while ($s =~ m{#map=[^/]+/([-+]?[0-9\.]+)/([-+]?[0-9\.]+)}g) {
-		    my($y,$x) = ($1,$2);
-		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
-		    push @coords, [$x, $y];
-		}
-
-		# OpenStreetMap route URL, e.g.
-		# https://www.openstreetmap.org/directions?engine=fossgis_osrm_bike&route=52.44074%2C13.58726%3B52.44275%2C13.58220
-		while ($s =~ m{[?&]route=
-			       ([-+]?[0-9\.]+)(?:%2C|,)([-+]?[0-9\.]+)(?:%3B|-)
-			       ([-+]?[0-9\.]+)(?:%2C|,)([-+]?[0-9\.]+)
-			      }xg) {
-		    my($y1,$x1,$y2,$x2) = ($1,$2,$3,$4);
-		    ($x1,$y1) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x1,$y1));
-		    ($x2,$y2) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x2,$y2));
-		    push @coords, [$x1,$y1], [$x2,$y2];
-		}
-
-		# copied from Gallery 2 Photo Properties
-		if ($s =~ m{GPS: \s+ Latitude \s+ (\d+.\d+) \s .* GPS: \s+ Longitude \s+ (\d+.\d+)}xs) {
-		    push @coords, [$Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($2, $1))];
-		}
-
-		if ($s =~ m{^file://(.*\.(?:jpe?g|tiff?))$}i) {
-		    my $file = $1;
-		    if (-r $file && eval { require Image::ExifTool; 1}) {
-			my $exiftool = Image::ExifTool->new;
-			$exiftool->Options(CoordFormat => '%+.6f');
-			my $info = $exiftool->ImageInfo($file);
-			my $lon = $info->{GPSLongitude}; $lon += 0; # +0 to get rid of sign
-			my $lat = $info->{GPSLatitude};  $lat += 0;
-			if ($lon && $lat) {
-			    push @coords, [$Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($lon, $lat))];
-			}
-		    }
-		}
-	    }
+	    @coords = _find_coords($s, -map => $map, -custom_code_sub => $custom_code_sub);
 	    last if (@coords); # otherwise try the other selection type
 	}
 	if (!@coords) {
