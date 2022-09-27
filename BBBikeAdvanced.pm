@@ -3901,8 +3901,9 @@ sub search_anything {
 
     {
  	package Tk::ListboxSearchAnything;
- 	use base qw(Tk::Listbox);
+	@Tk::ListboxSearchAnything::ISA = qw(Tk::Listbox);
  	Construct Tk::Widget 'ListboxSearchAnything';
+	no warnings 'once';
  	*UpDown = sub {
 	    my($w, $amount) = @_;
 	    my $new_amount = $amount;
