@@ -2203,7 +2203,7 @@ EOF
 
 	    # See https://rt.cpan.org/Ticket/Display.html?id=20718
 
-	    local $^W = 0; # redefined...
+	    no warnings 'once', 'redefine';
 
 	    *Tk::Stderr::Handle::TIEHANDLE = sub {
 		my ($class, $window) = @_;

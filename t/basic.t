@@ -224,7 +224,6 @@ for my $f (@files) {
 		     | Wizards.pm
 		     | install.pl
 		     | cgi/configure-bbbike.cgi
-		     | BBBikeAdvanced.pm
 		     | Karte/SatmapGIF.pm
 		     | PointEdit.pm
 		     | Strassen/Storable.pm
