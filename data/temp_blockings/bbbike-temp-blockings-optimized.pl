@@ -2466,38 +2466,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BERLINMARATHON-RECURRING
-#: by: https://www.bmw-berlin-marathon.com/
-#: by: https://viz.berlin.de/2021/09/berlin-marathon/
-#: by: https://www.bmw-berlin-marathon.com/dein-rennen/strecke/interaktive-karte/
-#: by: https://viz.berlin.de/2022/09/marathon/
-#: source_id: viz2021:13.376808,52.516209,19.09.2022,06:00 (inaktiv)
-# REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
-	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-# REMOVED --- #: tempex ^^^
-',
-         'dont_check_date' => 1,
-         'from' => 1664164800,
-         'id' => 2387,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              10,
-                              'months',
-                              9,
-                              'start',
-                              '2020-10-25T00:00:00'
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, 19.09.2022 bis 27.09.2022',
-         'type' => 'gesperrt',
-         'until' => 1664314200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3340,7 +3309,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 28.9.2022)
+         'data' => '#: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 28.9.2022) (bis 2.11.2022)
 # REMOVED --- #: XXX prüfen, ob es tatsächlich Behinderungen für Radfahrer gibt vvv
 	q4::inwork; 7382,9187 7444,9148
 # REMOVED ---	q4::inwork 7308,9163 7363,9152
@@ -3348,9 +3317,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 2933,
-         'text' => 'Helmstr.: an der Hauptstr. Baustelle, Fahrbahn gesperrt, bis voraussichtlich 28.09.2022',
+         'text' => 'Helmstr.: an der Hauptstr. Baustelle, Fahrbahn gesperrt, bis voraussichtlich 02.11.2022',
          'type' => 'handicap',
-         'until' => 1664377200
+         'until' => 1667404800
        },
        undef,
        undef,
@@ -5206,6 +5175,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: HAEMMERLING-2022
 #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
+#: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
+#: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
 #: note: anscheinend auch für Fußgänger gesperrt, hier gibt es keinen Gehweg
 Schubertstr.	2::inwork 21984,6317 21856,6390
 Am Bahndamm	2::inwork 21984,6317 22238,6195
@@ -5225,9 +5196,9 @@ Am Bahndamm	2::inwork 21984,6317 22238,6195
          'from' => 1651442400,
          'id' => 3549,
          'source_id' => 'https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=4210',
-         'text' => 'Eisenbahnbrücke Werder: wegen Bauarbeiten montags bis freitags tagsüber (6:30 bis 18:00 Uhr) gesperrt, bis zum 29.9.2022',
+         'text' => 'Eisenbahnbrücke Werder: wegen Bauarbeiten montags bis freitags tagsüber (6:30 bis 18:00 Uhr) gesperrt, bis zum 7.10.2022',
          'type' => 'gesperrt',
-         'until' => 1664467200
+         'until' => 1665158400
        },
        {
          'data' => '#: next_check_id: WILTBERG-2022
@@ -5394,9 +5365,9 @@ Frobenstr.	q3::inwork 6349,2510 6529,2642
          'from' => 1655798400,
          'id' => 3573,
          'source_id' => 'viz2021:13.414144,52.572092,22.06.2022,10:00',
-         'text' => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 07.10.2022 17:00',
+         'text' => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 11.11.2022 17:00',
          'type' => 'handicap',
-         'until' => 1665154800
+         'until' => 1668182400
        },
        {
          'data' => '#: next_check_id: KWEISENBAHNBRUECKE-2022
@@ -5728,7 +5699,7 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-23
+#: last_checked: 2022-09-28
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',

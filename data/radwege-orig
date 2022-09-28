@@ -310,7 +310,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: next_check_id: STRALAUER-2019
 #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede
 #: XXX hier wird ein Bürgersteigradweg entstehen, hoffentlich asphaltiert
-#: last_checked: 2022-09-26
+#: last_checked: 2022-09-28
 #: check_frequency: 14d
 # REMOVED (Termin kann nicht gehalten werden) --- #: next_check: 2022-09-30
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -319,7 +319,7 @@ gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14218,10430 14405,10
 	RW2; 13986,10549 13919,10583 13850,10612 13779,10642 13678,10685 13633,10705 13596,10722
 	RW4; 14103,10489 13986,10549
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-09-25
+#: last_checked: 2022-09-28
 #: check_frequency: 90d
 # früher: das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14218,10430 14103,10489
 provisorische Radspur	RW4; 14218,10430 14103,10489
@@ -1071,7 +1071,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-09-26 vvv
+#: last_checked: 2022-09-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2541,7 +2541,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-09-24 vvv
+#: last_checked: 2022-09-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -3970,6 +3970,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: 2147345490 (bis 30.7.2021)
 #: source_id: viz2021:13.42941,52.533057,25.02.2020,08:00 (bis 1.9.2021, Gesamtbaumaßnahme bis 2022) (inaktiv)
 #: source_id: viz2021:13.42941,52.533057,01.09.2021,08:00 (bis 31.12.2021, Gesamtbaumaßnahme bis 2022) (mittlerweile bis 28.2.2022) (mittlerweile bis 28.3.2022) (mittlerweile bis 4.4.2022) (mittlerweile bis 14.4.2022) (inaktiv)
+#: source_id: viz2021:13.432298,52.535532,28.09.2022,09:24 (bis 6.10.2022)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
 #: last_checked: 2022-09-14 (mapillary) vvv
@@ -6789,7 +6790,7 @@ asphaltiertes Straßenbahnkap	RW1; 16666,15781 16692,15803 16724,15830
 	RW3; 1368,-1 1345,184
 	RW6;RW6 13410,11447 13427,11431 13473,11456
 Gehweg für Radfahrer frei	RW1; 22162,1067 22092,999
-	RW4;RW4 22092,999 22034,1006 21977,988
+Grünbeschichtung	RW4;RW4 22092,999 22034,1006 21977,988
 	RW3;RW3 9873,18364 9821,18392 9565,18555
 	RW3; 9565,18555 9567,18599 9542,18634 9495,18639 9457,18612 9454,18570 9480,18539 9524,18531 9565,18555
 die letzten Meter mit benutzungspflichtiger Radspur	RW3; 9457,18612 9366,18669 9279,18724

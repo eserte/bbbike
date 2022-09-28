@@ -81,7 +81,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
 # REMOVED (hier realisiert) --- Stralauer Allee: Radspur geplant	?::projected; 13596,10722 13633,10705 13678,10685 13779,10642 13850,10612 13919,10583
 # REMOVED (hier in Bau, siehe radwege-orig-Eintrag) --- Stralauer Allee: Radspur geplant	?::projected; 13919,10583 13986,10549 14103,10489 14218,10430
-#: last_checked: 2022-09-26
+#: last_checked: 2022-09-28
 Stralauer Allee: Radspur geplant	?::projected; 14218,10430 14405,10340 14558,10264
 #: next_check ^^^
 #: check_frequency ^^^
@@ -173,7 +173,7 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: osm_watch: way id="41108858" version="13"
 #: last_checked: 2022-06-12
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-09-28
+#: next_check: 2022-10-28
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 # 
 #: XXX Baumaßnahme 7.4 (Realisierung nach 2011)
@@ -2086,8 +2086,8 @@ Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::inwork 8870,12647 8754,12622
 #: by: https://www.mobil-potsdam.de/de/aktuelle-verkehrsthemen/radwegbruecke-potsdam-werder-havel/
 #: osm_watch: way id="909273494" version="1"
 #: XXX vermutlich gibt es danach Rampen ("behindertengerecht"), außerdem wird sich die Brücke dann auf der Südseite befinden
-#: next_check: 2022-09-29
-Rad- und Fußwegbrücke über den Großen Zernsee: Neubau geplant	?::projected -21227,-2017 -21125,-2012
+#: next_check: 2022-10-07
+Rad- und Fußwegbrücke über den Großen Zernsee: Neubau geplant	?::inwork -21227,-2017 -21125,-2012
 # 
 # REMOVED (realisiert, als Grünanlage nicht wirklich zu erkennen) --- #: XXX wann wird der Weg eröffnet? Geht es unter der Brücke weiter? --- #: XXX ggfs. auch die Grünanlage einzeichnen --- #: XXX laut osm mittlerweile offen --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20181227 (Bau von Uferbegleitwegen, bis 2020) --- #: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/neue-gruenanlagen-muessen-noch-geschuetzt-werden_a216382 (nicht vor Herbst 2019) --- #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/schmucke-bruecke_a244807 --- #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bezirk-investiert-750-000-euro-in-neue-gruenanlage_a273574 (Bauzäune bleiben noch bis Herbst 2020) --- #: osm_watch: way id="690566228" version="5" --- #: priority: #C --- #: last_checked: 2020-07-04 --- #: check_frequency: 120d --- #: next_check: 2020-07-22 --- Weg parallel zur Minna-Todenhagen-Brücke/Str.: asphaltiert, vermutlich unbeleuchtet?	?::inwork 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
 # REMOVED (aufgenommen) --- #: XXX Grünes Band Berlin E4 Süd --- #: last_checked: 2018-08-26 --- #: check_frequency: 45d --- Weg parallel zum Mauerweg: wird gerade gebaut, asphaltiert. Genaue Wegführung? Nachts beleuchtet? Wird der Mauerweg hier entlang geführt?	?::inwork 7516,19490 7572,19490 7679,19421 7704,19366 7824,19269 7873,19261 8014,19149 8313,18940 8347,18916 8476,18773
@@ -3788,7 +3788,7 @@ Unter den Linden: temporäre Umgestaltung, eine besondere Fahrspur für Radfahrer 
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/torstrasse/lageplan_03.pdf
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/strassenbau/torstrasse/lageplan_05.pdf (Popup-Radweg im weiteren Verlauf der Torstr.)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/buergerbeteiligung-fuer-die-torstrasse-gestartet_a338873
-#: last_checked: 2022-07-14
+#: last_checked: 2022-09-28
 #: next_check: 2024-06-30
 Torstr.: Planung von Radwegen	?::projected 10177,13766 9917,13741 9797,13691 9670,13637 9579,13604 9508,13578 9391,13535 9353,13521 9212,13471
 # 
@@ -6217,6 +6217,7 @@ Vorarlberger Damm: Erneuerung des Radwegs	?::projected; 7227,7352 7101,7198 6991
 #: source_id: viz2021:13.383952,52.457244,15.09.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.383958,52.45578,21.09.2022,06:00 (Richtung Norden) (inaktiv)
 #: source_id: viz2021:13.384843,52.460834,23.09.2022,06:00
+#: source_id: viz2021:13.383939,52.455799,29.09.2022,06:00
 #: next_check: 2022-10-31
 Tempelhofer Damm: Markierungsarbeiten & Protektionselemente	? 9249,6642 9254,6542 9253,6484 9250,6414 9246,6364 9245,6352 9221,6179 9212,6096 9192,5930 9176,5803 9158,5673 9161,5535
 # 
@@ -6430,7 +6431,7 @@ Prinzenstr.: Radspuren zwischen Moritzplatz und Ritterstr.	?::projected 10776,10
 #: by: https://www.infravelo.de/projekt/karl-marx-allee/ (2. - 4. Quartal 2021) (mittlerweile bis 4. Quartal 2022) (mittlerweile ab 3. Quartal 2022)
 #: by: https://nitter.it/BA_Xhain/status/1547461137444347904#m (14.7.2022: derzeitige Bauarbeiten hinter der Koppenstr. dauern noch drei Wochen)
 # REMOVED (fertig) --- #: XXX Mittlerweile Bauarbeiten Richtung Westen zwischen Koppenstr. und Andreasstr., Radfahrer werden zwischenzeitlich auf die Fahrspur geleitet
-#: last_checked: 2022-09-25
+#: last_checked: 2022-09-28
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2022-12-31
 Karl-Marx-Allee: Verbreiterung der Radwege geplant	?::projected 12878,12430 12848,12434 12816,12439 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
@@ -8290,7 +8291,7 @@ TVO: vorgeschlagene Streckenführung	?::projected 21002,5755 20931,5969 20583,654
 #: XXX für den westlichen Teil (bis zum "Knick" des Eisenhutwegs) wird ein Bebauungsplan 9-17VE aufgestellt; für den östlichen Teil bis Höhe Straße am Flugplatz gibt es noch keine Planungen, also wurde dieser erst einmal rausgenommen
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/xv-58bb-1/index.shtml (östlicher Teil, Bebauungsplan XV-58bb-1)
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/xv-58bb-1/download/XV-58bb-1_Bebauungsplanentwurf.pdf (hier: keine Wege/Straßen)
-#: source_id: viz2021:13.508467,52.430571,19.07.2022,13:00 (Leitungsarbeiten bis 2.10.2022, Gegenverkehrsregelung)
+#: source_id: viz2021:13.508467,52.430571,19.07.2022,13:00 (Leitungsarbeiten bis 2.10.2022, Gegenverkehrsregelung) (bis 4.11.2022)
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlg4S2Y4NVh3QUE3OXdVLmpwZw==
 # REMOVED (nein) --- #: XXX betreffen die Leitungsarbeiten auch den Radverkehr (z.B. durch die Einrichtung eines Zweirichtungsradwegs?)
 #: last_checked: 2021-10-02 (noch keine Bauarbeiten)

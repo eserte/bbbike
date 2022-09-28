@@ -27387,11 +27387,11 @@ EOF
 EOF
      },
      { from  => undef, # 1518462294, # 2018-02-12 20:04
-       until => $isodate2epoch->("2022-09-28 17:00:00"), # 1519410682, # rausgenommen, eigentlich keine Beeinträchtigungen --- 1520290800, # 2018-03-06 00:00
-       text  => 'Helmstr.: an der Hauptstr. Baustelle, Fahrbahn gesperrt, bis voraussichtlich 28.09.2022', # früher: 'Helmstr. und Vorbergstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 05.03.2018',
+       until => $isodate2epoch->("2022-11-02 17:00:00"), # 1519410682, # rausgenommen, eigentlich keine Beeinträchtigungen --- 1520290800, # 2018-03-06 00:00
+       text  => 'Helmstr.: an der Hauptstr. Baustelle, Fahrbahn gesperrt, bis voraussichtlich 02.11.2022', # früher: 'Helmstr. und Vorbergstr.: an der Hauptstr. Baustelle, Fahrbahn kann gesperrt sein, bis voraussichtlich 05.03.2018',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 28.9.2022)
+#: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 28.9.2022) (bis 2.11.2022)
 # REMOVED --- #: XXX prüfen, ob es tatsächlich Behinderungen für Radfahrer gibt vvv
 	q4::inwork; 7382,9187 7444,9148
 # REMOVED ---	q4::inwork 7308,9163 7363,9152
@@ -35246,14 +35246,16 @@ EOF
 #: next_check_id: HAEMMERLING-2022
 #: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
+#: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
+#: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
 #: note: anscheinend auch für Fußgänger gesperrt, hier gibt es keinen Gehweg
 Schubertstr.	2::inwork 21984,6317 21856,6390
 Am Bahndamm	2::inwork 21984,6317 22238,6195
 EOF
      },
      { from  => $isodate2epoch->("2022-05-02 00:00:00"),
-       until => $isodate2epoch->("2022-09-29 18:00:00"),
-       text  => 'Eisenbahnbrücke Werder: wegen Bauarbeiten montags bis freitags tagsüber (6:30 bis 18:00 Uhr) gesperrt, bis zum 29.9.2022',
+       until => $isodate2epoch->("2022-10-07 18:00:00"),
+       text  => 'Eisenbahnbrücke Werder: wegen Bauarbeiten montags bis freitags tagsüber (6:30 bis 18:00 Uhr) gesperrt, bis zum 7.10.2022',
        type  => 'gesperrt',
        source_id => 'https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=4210',
        data  => <<EOF,
@@ -35567,8 +35569,8 @@ EOF
 EOF
      },
      { from  => 1655798400, # 2022-06-21 10:00
-       until => $isodate2epoch->("2022-10-07 17:00:00"), # 1661871600, # 2022-08-30 17:00
-       text  => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 07.10.2022 17:00',
+       until => $isodate2epoch->("2022-11-11 17:00:00"), # 1661871600, # 2022-08-30 17:00
+       text  => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 11.11.2022 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.414144,52.572092,22.06.2022,10:00',
        data  => <<EOF,
@@ -36225,7 +36227,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-23
+#: last_checked: 2022-09-28
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
