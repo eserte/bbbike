@@ -4013,6 +4013,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022) (bis 7.10.2022)
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022)
+#: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022)
 #: source_id: bvg2021:188#BVG259885_0
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
@@ -4637,13 +4638,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://berliner-abendblatt.de/2022/09/10/bauarbeiten-strassenbahnlinie-m13-wird-verkuerzt/ (bis 9.12.2022)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/ersatzverkehr-auf-zwei-tramlinien_a357227
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/die-bvg-erneuert-gleisanlagen_a356780
-#: source_id: viz2021:13.474058,52.512017,12.09.2022,07:00 (hier: bis 2.10.2022)
+#: source_id: viz2021:13.474058,52.512017,12.09.2022,07:00 (hier: bis 2.10.2022) (bis 11.12.2022)
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
 #: last_checked: 2022-09-27 vvv
-#: next_check: 2022-10-02 vvv
-# REMOVED --- #: next_check: 2022-12-09 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2022-12-11 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
 Weichselstr./Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924
 Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork 15077,11910 15133,11902 15256,11884
@@ -4651,6 +4652,7 @@ Scharnweberstr./Weichselstr.: keine Freigabe	q4::inwork; 15077,11910 14965,11924
 #: note: wegen der verlängerten Gehwegstrecke q4 statt q3
 Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Travestr. kein Übergang zur Fahrbahn möglich	q4::inwork; 14888,11934 14836,11842
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #	q3::inwork 14965,11924 15077,11910
 #	q3::inwork; 15077,11910 15133,11902 15256,11884
@@ -4660,9 +4662,9 @@ Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Trave
 ',
          'from' => 1663020000,
          'id' => 3479,
-         'text' => 'Scharnweberstr./Weichselstr.: Gleisbauarbeiten, Fahrbahn gesperrt, abschnittsweise Gehweg für Radfahrer frei, voraussichtlich bis 9.12.2022',
+         'text' => 'Scharnweberstr./Weichselstr.: Gleisbauarbeiten, Fahrbahn gesperrt, abschnittsweise Gehweg für Radfahrer frei, voraussichtlich bis 11.12.2022',
          'type' => 'handicap',
-         'until' => 1670605200
+         'until' => 1670778000
        },
        undef,
        undef,
@@ -4985,6 +4987,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv) (bis 30.9.2022)
 #: source_id: viz2021:13.358072,52.540517,20.04.2022,08:00 (bis 30.9.2022) (bis 28.10.2022)
+#: source_id: viz2021:13.358728,52.540006,29.09.2022,18:39
 #: note: laut rbb nur bis 20.4.2022
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
@@ -5011,6 +5014,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: BRAUNSCHWEIGER-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
+#: priority: #B vvv
 #: last_checked: 2022-09-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-09-30 vvv
@@ -5022,6 +5026,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: priority ^^^
 #: XXX ^^^
 #: add_fragezeichen ^^^
 ',
@@ -5570,17 +5575,7 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
          'type' => 'handicap',
          'until' => 1672441200
        },
-       {
-         'data' => '#: note: laut rbb
-#: note: anscheinend sind nur wenige Meter im Norden des Abschnitts betroffen, deshalb nun q3 (vorher q4)
-	q3::inwork 4186,13710 4295,13234
-',
-         'from' => 1661193050,
-         'id' => 3607,
-         'text' => 'Goslarer Ufer: Sperrung der Fahrbahn südlich der Gaußstr., evtl. sind auch Radfahrer betroffen, bis 30.09.2022',
-         'type' => 'handicap',
-         'until' => 1664575200
-       },
+       undef,
        {
          'data' => '#: by: https://berliner-abendblatt.de/2022/08/17/neue-gleise-fuer-die-dorotheenstrasse/ (vom 22. August bis zum 10. Oktober 2022)
 #: by: https://berliner-abendblatt.de/2022/08/21/diese-baustellen-sorgen-fuer-staus/
@@ -5589,10 +5584,10 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
 #: note: laut rbb ist die Georgenstr. nur bis 5.9.2022 gesperrt
 #: XXX Dauern die Bauarbeiten und Sperrungen länger an?
 #: next_check: 2022-10-31 vvv
-#: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022)
+#: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 4.10.2022)
 Georgenstr.	q4::inwork 9568,12688 9441,12670
 #: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
-#: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022)
+#: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 30.9.2022)
 Dorotheenstr.	q4::inwork 9742,12609 9870,12657
 Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
 #: next_check ^^^
@@ -5671,6 +5666,7 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
          'data' => '#: by: https://www.youtube.com/watch?v=swATp4lDNFs (Webcam)
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7331.html (Richtfest 1. Quartal 2023)
 #: by: https://berliner-abendblatt.de/2022/09/27/neubau-des-bauhaus-archivs-richtfest-erst-fuer-2023-geplant/
+#: by: https://www.berliner-woche.de/tiergarten/c-bauen/neubau-des-bauhaus-archivs-hat-begonnen_a359183
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: osm_watch: way id="147686211" version="9"
 #: osm_watch: way id="481651814" version="4"
@@ -5848,8 +5844,8 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
 #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren
 #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag)
 #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00
-#: also_indoor: traffic (none)
-#: last_checked: 2022-09-26
+#: also_indoor: traffic (B)
+#: last_checked: 2022-09-29
 #: check_frequency: 21d
 #: next_check: 2022-10-30
 	q3::inwork 15674,10851 15870,10938

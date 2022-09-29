@@ -299,8 +299,8 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-09-26 (Ausschilderung fehlt noch) vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2022-09-29 (Ausschilderung fehlt noch) vvv
+#: check_frequency: 14d vvv
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 	RW1; 13596,10722 13633,10705
 	RW3; 13633,10705 13678,10685 13779,10642 13850,10612
@@ -309,17 +309,18 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: last_checked ^^^
 #: next_check_id: STRALAUER-2019
 #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede
+#: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert
 #: XXX hier wird ein Bürgersteigradweg entstehen, hoffentlich asphaltiert
-#: last_checked: 2022-09-28
-#: check_frequency: 14d
-# REMOVED (Termin kann nicht gehalten werden) --- #: next_check: 2022-09-30
+#: last_checked: 2022-09-29
+#: check_frequency: 30d
+#: next_check: 2022-12-16
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
 provisorische Radspur	RW4; 13919,10583 13986,10549 14103,10489 14218,10430
 gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14218,10430 14405,10340 14558,10264
 	RW2; 13986,10549 13919,10583 13850,10612 13779,10642 13678,10685 13633,10705 13596,10722
 	RW4; 14103,10489 13986,10549
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-09-28
+#: last_checked: 2022-09-29
 #: check_frequency: 90d
 # früher: das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14218,10430 14103,10489
 provisorische Radspur	RW4; 14218,10430 14103,10489
@@ -721,7 +722,10 @@ neu asphaltiert, etwas breiter	RW2; 3291,12721 3269,12648 3271,12609 3279,12533
 	RW1;RW2 5295,17344 5198,17433
 	RW2;RW2 5198,17433 5109,17507
 #: note: einige Bäume stehen schräg über dem Radweg, Reflektoren am Stamm sollen die Lage entschärfen
-Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1;RW1 5109,17507 4801,17623 4683,17669 4584,17704 4429,17763 4392,17777 4326,17801 4200,17848 4096,17890 4016,17918
+Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 5109,17507 5034,17535 4801,17623 4683,17669 4584,17704 4429,17763 4392,17777 4326,17801 4200,17848 4096,17890 4016,17918
+Verbundsteinpflaster, wenig Platz zu parkenden Autos	RW1; 4016,17918 4096,17890 4200,17848 4326,17801 4392,17777 4429,17763
+Verbundsteinpflaster, wenig Platz zu parkenden Autos, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 4429,17763 4584,17704 4683,17669 4801,17623 5034,17535
+Gehwegplatten	RW1; 5034,17535 5109,17507
 	RW1;RW1 4016,17918 3930,17923 3833,17929 3706,17931 3570,17938 3429,17987 3319,18043 3213,18115 3008,18464 2947,18570 2867,18736 2821,18831
 	RW4;RW4 -168,16269 130,17187
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 130,17187 149,17239 255,17528 511,18340
@@ -1071,7 +1075,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-09-28 vvv
+#: last_checked: 2022-09-29 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1711,7 +1715,7 @@ Busspur ist immer gültig	RW5;RW5 9934,12420 9858,12410
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
 #: source_id: viz2021:13.399226,52.517706,30.05.2022,08:00 (bis 15.8.2022, zwischen Lustgarten - Oberwallstr.) (mittlerweile inaktiv) vvv
 #: source_id: viz2021:13.404803,52.520062,30.05.2022,08:00 (bis 15.8.2022) (mittlerweile bis 29.8.2022) (bis 19.9.2022)
-#: last_checked: 2022-09-20 vvv
+#: last_checked: 2022-09-27 (mapillary) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-09-19 vvv
 provisorische Radspur	RW4; 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506
@@ -2794,9 +2798,9 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20210720 (Baubeginn Ende 2022)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
-#: osm_watch: way id="420112505" version="9"
-#: osm_watch: way id="420112509" version="9"
-#: osm_watch: way id="966685279" version="4"
+#: osm_watch: way id="420112505" version="10"
+#: osm_watch: way id="420112509" version="11"
+#: osm_watch: way id="966685279" version="5"
 #: last_checked: 2022-09-02 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-12-31 vvv
@@ -7002,6 +7006,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
+#: priority: #C
 #: last_checked: 2022-08-31
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
@@ -7343,9 +7348,10 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: 2147345931 (bis 5.5.2021) (inaktiv)
 #: source_id: viz2021:13.402789,52.498471,01.09.2021,07:00 (bis 24.9.2021) (inaktiv)
 #: source_id: viz2021:13.402789,52.498471,28.09.2021,07:00 (bis 12.10.2021) (inaktiv)
-#: source_id: viz2021:13.397833,52.498335,06.10.2021,08:00 (bis 30.03.2022) (mittlerweile bis 31.05.2022) (bis 30.8.2022)
+#: source_id: viz2021:13.397833,52.498335,06.10.2021,08:00 (bis 30.03.2022) (mittlerweile bis 31.05.2022) (bis 30.8.2022) (bis 31.10.2022)
 #: source_id: viz2021:13.398158,52.498346,07.02.2022,07:00 (bis 25.02.2022) (mittlerweile bis 18.03.2022) (inaktiv)
 #: source_id: viz2021:13.407111,52.498475,08.08.2022,07:00 (bis 31.12.2022)
+#: source_id: viz2021:13.39961,52.49841,29.09.2022,18:34 (bis 31.10.2022)
 #: note: laut rbb Einspurigkeit Höhe Lobeckstr. bis 22.10.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
@@ -7407,7 +7413,7 @@ geschützter Radstreifen	RW4; 8430,10710 8527,10621 8644,10408 8661,10377 8724,10
 #: by: https://berliner-abendblatt.de/2022/05/03/kritik-am-geplanten-umbau-von-durchgangsstrassen/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8290
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/fdp-sieht-kiez-um-karl-august-platz-bedroht_a352244 (Umbau der Kantstraße geplant)
-#: last_checked: 2022-09-17 vvv
+#: last_checked: 2022-09-26 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten

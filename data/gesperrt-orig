@@ -231,7 +231,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_11_1601_1736_online.pdf (Bauvorhaben "Nalepaland", Grundwasserentnahme beantragt)
 #: by: https://www.nalepaland.de/
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
-#: osm_watch: way id="24869862" version="12"
+#: osm_watch: way id="207757723" version="4"
 #: last_checked: 2022-09-18
 #: check_frequency: 60d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
@@ -3531,7 +3531,7 @@ Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 977
 # 
 #: next_check_id: SEIDELSTRASSENBRUECKE-2022
 #: XXX Wie sieht die Situation nach den Bauarbeiten aus?
-#: last_checked: 2022-02-12
+#: last_checked: 2022-09-26 (mapillary)
 #: next_check: 2022-11-30
 Seidelstraßenbrücke: Überqueren wegen eines Gerüsts nicht möglich	3nocross 3570,17938 3706,17931 3833,17929
 # 
@@ -3831,7 +3831,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2022-09-28
+#: last_checked: 2022-09-29
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -3878,7 +3878,7 @@ Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3
 #: by: https://www.deutsches-architekturforum.de/thread/9401-wasserstadt-stralau-kleine-und-gr%C3%B6%C3%9Fere-projekte/?postID=653296#post653296 (Bauarbeiten bis Ende September 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10418 (vermutlich keine öffentliche Durchwegung)
 #: osm_watch: way id="541556560" version="4"
-#: last_checked: 2022-09-28
+#: last_checked: 2022-09-29
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-09-30
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055
@@ -4164,6 +4164,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: source_id: 2147343289 (bis 30.6.2021)
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.) (mittlerweile inaktiv)
 #: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022)
+#: source_id: viz2021:13.38622,52.51458,29.09.2022,18:08 (bis 27.2.2023)
 #: note: laut rbb ebenfalls bis 30.9.2022
 #: osm_watch: way id="43233756" version="20"
 #: osm_watch: way id="681299268" version="2"
@@ -4172,19 +4173,21 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: priority: #A vvv
 #: last_checked: 2022-09-23 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-09-30 vvv
-#: valid: -20220930 vvv
+#: next_check: 2023-02-27 vvv
+#: valid: -20230227 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
 #: source_id: 2147343292
-#: source_id: viz2021:13.384963,52.513983,10.10.2018,13:30 (bis 30.9.2022)
+#: source_id: viz2021:13.384963,52.513983,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023)
 Mauerstr..: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9076,12054
 #: source_id: 2147343293
-#: source_id: viz2021:13.385749,52.513657,10.10.2018,13:30 (bis 30.9.2022)
+#: source_id: viz2021:13.385749,52.513657,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023)
+#: source_id: viz2021:13.38639,52.5137,29.09.2022,18:06
 Jägerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9195,11972 9108,11961
 #: XXX laut googlemaps bis 30. Oktober 2018
 #: XXX laut VIZ hier Komplettsperrung, auch für Fußgänger --- aber am 2018-10-10, 2018-10-17, 2018-10-25 ist man noch durchgekommen
 #: source_id: 2147343290
-#: source_id: viz2021:13.38464,52.514937,10.10.2018,13:30 (bis 30.9.2022)
+#: source_id: viz2021:13.38464,52.514937,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023)
+#: source_id: viz2021:13.38472,52.51468,29.09.2022,18:05
 #: XXX_osm laut osm ist hier wieder offen -> ist aber falsch! Siehe https://www.openstreetmap.org/note/2194239
 Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
 #: valid ^^^

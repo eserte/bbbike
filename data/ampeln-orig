@@ -55,13 +55,13 @@ Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245
 #: last_checked ^^^
 # 
 #: by: https://berliner-abendblatt.de/2022/04/27/das-sind-die-aktuellen-staufallen-in-berlin/ (bis Anfang Juni 2022)
-#: source_id: viz2021:13.450705,52.480066,28.04.2022,09:00 (hier: bis 4.7.2022) (mittlerweile bis 30.9.2022)
+#: source_id: viz2021:13.450705,52.480066,28.04.2022,09:00 (hier: bis 4.7.2022) (mittlerweile bis 30.9.2022) (bis 31.10.2022)
 #: source_id: viz2021:13.45071,52.48007,28.04.2022,09:00 (zusätzlicher Eintrag) (entfernt)
 #: by: https://nitter.net/VIZ_Berlin/status/1519602332090179585#m (hier: bis Anfang Juni 2022)
 #: by: https://nitter.net/pic/media%2FFRWA3_cWYAAYbnf.jpg%3Fname%3Dorig (südlich der Kreuzung)
 #: last_checked: 2022-09-03
-#: next_check: 2022-09-30
-#: valid: -20220930
+#: next_check: 2022-10-31
+#: valid: -20221031
 Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
@@ -167,9 +167,9 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2019 --- #: last_checked: 2020-06-14 ---	X::inwork 18406,7760
 # 
 #: next_check_id: FRANZOESISCHE-2018
-#: next_check: 2022-09-30 vvv
+#: next_check: 2023-02-27 vvv
 #: check_frequency: 90d vvv
-#: valid: -20220930 vvv
+#: valid: -20230227 vvv
 #: last_checked: 2022-09-22
 #: osm_watch: node id="6380038401" version="1"
 	X::inwork 9195,11972
