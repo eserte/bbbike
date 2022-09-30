@@ -16344,7 +16344,7 @@ EOF
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-08-26
+#: last_checked: 2022-09-30
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -34915,22 +34915,22 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str. und Kanner Str., voraussichtlich bis September 2022',
+       text  => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str. und Kanner Str., Ende der Bauarbeiten unbekannt', # voraussichtlich bis September 2022',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BRAUNSCHWEIGER-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
 #: priority: #B vvv
-#: last_checked: 2022-09-15 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2022-09-30 vvv
+#: last_checked: 2022-09-30 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2022-09-30 vvv
 #: also_indoor: traffic (G(unvollständig),B) vvv
 	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300 13476,7330
 	q4::inwork 13326,7291 13325,7210
 	q4::inwork 13341,7423 13373,7426 13476,7330
 #: also_indoor ^^^
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -35137,10 +35137,9 @@ EOF
 #: osm_watch: way id="874517258" version="7"
 #: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2022-09-17
-#: check_frequency: 90d
-#: next_check: 2022-09-30
-# REMOVED --- #: next_check: 2022-11-30
+#: last_checked: 2022-09-30
+#: check_frequency: 30d
+#: next_check: 2022-11-30
 # REMOVED (hier nicht mehr) ---	q4::inwork; 4277,9895 4126,9932
 	q4::inwork; 4126,9932 3927,9935
 EOF
@@ -35807,7 +35806,7 @@ EOF
        data  => <<EOF,
 #: XXX einige Halteverbotsschilder bis 1.11.2022
 #: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
-#: last_checked: 2022-09-24 vvv
+#: last_checked: 2022-09-30 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-11-01 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
@@ -36210,7 +36209,7 @@ EOF
 #: add_fragezeichen: Ist der Uferweg weiterhin gesperrt?
 #: osm_watch: way id="147686211" version="9"
 #: osm_watch: way id="481651814" version="4"
-#: last_checked: 2022-09-16
+#: last_checked: 2022-09-30
 #: check_frequency: 120d
 	2::inwork 6882,11061 6920,11064 7142,11145
 EOF
@@ -36233,7 +36232,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-28
+#: last_checked: 2022-09-30
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36387,7 +36386,7 @@ EOF
 EOF
      },
      { from  => 1664056800, # 2022-09-25 00:00
-       until => undef, # XXX
+       until => 1664485090, # vermutlich noch nicht gestartet --- undef, # XXX
        text  => 'Eisenacher Str. (Marzahn-Hellersdorf): Bauarbeiten, Einbahnstraßenregelung, offen Richtung Hellersdorf, ab 26. September 2022',
        type  => 'handicap',
        data  => <<EOF,
@@ -36445,6 +36444,30 @@ EOF
        source_id => 'viz2021:13.30605,52.50146,26.09.2022,06:00', # am nächsten Tag bereits entfernt
        data  => <<EOF,
 	q4::inwork 3737,10322 3739,10495 3770,10508
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rosa-Luxemburg-Str.: Bauarbeiten nördlich der Memhardstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (G,B)
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2022-09-30
+#: check_frequency: 14d
+	q3::inwork 10755,13152 10846,13362
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Charlottenstr.: Bauarbeiten an der Kreuzung Unter den Linden, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (G,B)
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2022-09-30
+#: check_frequency: 14d
+	q4::inwork 9475,12365 9489,12263
 EOF
      },
     );

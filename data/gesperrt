@@ -2044,7 +2044,8 @@ unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross::ignrte 5215,1071
 Kurfürstendamm -> Meinekestr.: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5475,10808 5341,10756 5313,10420
 Meinekestr. -> Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3::igndisp 5313,10420 5341,10756 5215,10711
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 15420,12178 15443,12222 15480,12306 15508,12367
-Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15370,12264 15443,12222 15480,12306
+Deutschmeisterstr. -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15435,12226 15443,12222 15480,12306
+Möllendorffstr. -> Deutschmeisterstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15420,12178 15443,12222 15435,12226
 Möllendorffstr. -> Vorfahrt am Rathaus Lichtenberg: Mittelstreifen mit Straßenbahn	3::igndisp 15508,12367 15480,12306 15531,12300
 Vorfahrt am Rathaus Lichtenberg -> Möllendorffstr.: Mittelstreifen mit Straßenbahn	3::igndisp 15531,12300 15480,12306 15443,12222
 Zaun auf dem Mittelstreifen	3nocross::ignrte 6781,16026 6914,15908 6936,15888 7024,15810
@@ -3915,3 +3916,4 @@ Clayallee: linker Gehweg	1::igndisp 1297,4311 1310,4335
 Sachsendamm: linker Gehweg	1::igndisp 7014,8165 6935,8208
 Tempelhofer Damm: linker Gehweg	1::igndisp 9237,6413 9245,6352
 Tempelhofer Damm: linker Gehweg	1::igndisp 9254,6542 9242,6482
+Möllendorffstr.: linker Gehweg bis zur Deutschmeisterstr., ggfs. absteigen	1::igndisp 15435,12226 15420,12178
