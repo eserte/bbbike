@@ -1711,14 +1711,14 @@ Invalidenstr.	H 7759,13246 7714,13223 7573,13149 7563,13143 7433,13070 7415,1306
 Minna-Cauer-Str.	HH 7880,13315 7879,13438 7890,13515 7930,13578 8019,13650
 Heidestr. (Moabit)	NN 8098,13419 8092,13467
 Heidestr. (Moabit)	N 8092,13467 8059,13551 8048,13578 8019,13650
-Heidestr. (Moabit)	HH 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7778,14059 7732,14131 7697,14187 7652,14257 7612,14325 7566,14404 7532,14446 7487,14472 7401,14526 7368,14573
+Heidestr. (Moabit)	HH 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7778,14059 7739,14119 7732,14131 7697,14187 7652,14257 7612,14325 7566,14404 7532,14446 7487,14472 7401,14526 7368,14573
 #: note: blaues Straﬂenschild vvv
 Otto-Weidt-Platz	NN 7923,14142 7850,14100
 #: osm.highway: service
 #: note: Einfahrt verboten, Anlieger frei
 Otto-Weidt-Platz	N 7850,14100 7778,14059
 #: note ^^^
-Otto-Weidt-Platz	NN 7732,14131 7818,14185 7866,14215
+Otto-Weidt-Platz	NN 7739,14119 7825,14173 7875,14204
 #: next_check_id: EUROPACITY-2015
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php
 #: by: https://www.berliner-woche.de/moabit/c-bauen/golda-meir-steg-verbindet-jetzt-moabit-mit-mitte_a330725
@@ -1726,7 +1726,7 @@ Otto-Weidt-Platz	NN 7732,14131 7818,14185 7866,14215
 #: last_checked: 2022-09-30
 #: check_frequency: 30d
 #: next_check: 2022-12-31
-(provisorischer Weg zum Golda-Meir-Steg)	NN 7818,14185 7861,14133
+(provisorischer Weg zum Golda-Meir-Steg)	NN 7825,14173 7861,14133
 (Golda-Meir-Steg - s¸dliches Otto-Weidt-Platz)	NN 7861,14133 7850,14100
 Golda-Meir-Steg	NN 7861,14133 7899,14157 7962,14198 7973,14195
 Golda-Meir-Steg	NN 7962,14198 7968,14202
@@ -1748,7 +1748,7 @@ George-Stephenson-Str.	N 7487,14472 7452,14415 7500,14333 7569,14217 7679,14030 
 #: last_checked: 2022-09-30
 #: check_frequency: 90d
 #: osm.highway: service
-Hans-Peters-Platz	N 7732,14131 7679,14030
+Hans-Peters-Platz	N 7739,14119 7679,14030
 #: note: Privatstraﬂe
 Jean-Monnet-Str.	N 7995,13537 8048,13578
 Luisenstr. (Mitte)	H 8648,13498 8665,13353 8701,13058 8711,12986 8715,12956 8726,12861 8732,12804 8737,12757 8752,12647 8754,12622 8756,12608 8760,12585
@@ -8611,7 +8611,7 @@ Straﬂe 199 (Rudow)	N 15561,386 15667,199 15783,72
 Zwerghuhnweg	N 15476,332 15561,386 15612,416 15654,440 15728,480 15810,525
 Lachshuhnweg	N 15728,480 15789,386 15859,297 15927,245
 Am Rudower Waldrand	N 15425,424 15467,349 15476,332 15600,116 15707,-6
-Waﬂmannsdorfer Chaussee	N 16839,1162 16886,1094 16887,1051 16813,865 16796,820 16779,775 16735,668 16726,642 16642,393 16590,216 16536,26 16477,-160 16431,-311 16378,-489 16341,-614 16307,-718 16273,-824
+Waﬂmannsdorfer Chaussee	N 16839,1162 16886,1094 16887,1051 16813,865 16796,820 16779,775 16735,668 16726,642 16642,393 16590,216 16536,26 16498,-92 16477,-160 16431,-311 16378,-489 16341,-614 16307,-718 16273,-824
 #: note: Privatstraﬂen vvv
 Seeadlerweg	N 16477,-160 16519,-265 16600,-475 16648,-596 16665,-641
 Seeadlerweg	N 16477,-160 16486,-162 16657,-594 16680,-595 16709,-635
@@ -16313,8 +16313,8 @@ Am Hamburger Bahnhof	N 8025,13835 7997,13892
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_04_0705_0832_online.pdf (Erg‰nzung der Widmung)
 (Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 8295,13531 8290,13538 8224,13634 8169,13705 8131,13770 8086,13862 8057,13923 8010,14014 7965,14081 7923,14142
 #: by: osm
-(Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 7923,14142 7912,14160 7866,14215
-(Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 7866,14215 7830,14268 7797,14317
+(Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 7923,14142 7912,14160 7875,14204
+(Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 7875,14204 7830,14268 7797,14317
 (Uferweg - Hedwig-Porsch¸tz-Str.)	NN 7797,14317 7769,14300
 Promenade am Berlin-Spandauer Schiffahrtskanal	NN 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096 8001,14096 7966,14148 7972,14185 7973,14195 7968,14202 7804,14445 7787,14473 7753,14528 7733,14570
 (Am Invalidenfriedhof - Scharnhorststr.)	NN 8096,13951 8200,14016

@@ -270,7 +270,7 @@ provisorisch durch Poller geschützt	RW3; 11671,10402 11949,10414
 	RW1; 11949,10414 11671,10402
 	RW1; 11949,10414 12092,10428
 #: XXX bleibt es bei der Radspur?
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-01
 geschützter Radstreifen, mit "Leitboys"	RW3; 12092,10428 12212,10440
 	RW1; 12212,10440 12274,10436 12328,10442 12401,10461 12545,10496 12621,10516 12731,10547
 	RW1; 12731,10547 12621,10516 12545,10496 12401,10461 12328,10442 12274,10436 12212,10440 12092,10428 11949,10414
@@ -299,7 +299,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-09-29 (Ausschilderung fehlt noch) vvv
+#: last_checked: 2022-10-01 (Ausschilderung fehlt noch) vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 	RW1; 13596,10722 13633,10705
@@ -311,7 +311,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede
 #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert
 #: XXX hier wird ein Bürgersteigradweg entstehen, hoffentlich asphaltiert
-#: last_checked: 2022-09-29
+#: last_checked: 2022-10-01
 #: check_frequency: 30d
 #: next_check: 2022-12-16
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -1095,8 +1095,8 @@ Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 17621,10994 17560,10973 17
 	RW2;RW1 12061,16091 12075,16144 12090,16199
 # REMOVED --- #: by: rudolf kionke: ---	RW0;RW0 8092,13467 8059,13551 8048,13578 8019,13650
 # REMOVED --- #: next_check_id: HEIDESTR-2016 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1309/nachricht5067.html (Gesamtfertigstellung Ende 2016) vvv --- #: source_id: IM_020408 vvv --- #: source_id: IM_021506 vvv --- #: source_id: 2147339530 vvv --- #: last_checked: 2016-07-11 vvv --- #: check_frequency: 7d vvv --- #: XXX nach dem Ende der Bauarbeiten vermutlich Radspuren:
-	RW3; 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7778,14059 7732,14131 7697,14187 7652,14257 7612,14325 7566,14404
-	RW3; 7566,14404 7612,14325 7652,14257 7697,14187 7732,14131 7778,14059 7820,13994 7865,13924 7910,13848 7973,13743 7979,13733 8019,13650
+	RW3; 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7778,14059 7739,14119 7732,14131 7697,14187 7652,14257 7612,14325 7566,14404
+	RW3; 7566,14404 7612,14325 7652,14257 7697,14187 7732,14131 7739,14119 7778,14059 7820,13994 7865,13924 7910,13848 7973,13743 7979,13733 8019,13650
 	RW3;RW3 7733,14570 7711,14548 7609,14447 7566,14404
 	RW1; 8057,14876 7960,14794 7733,14570
 Gehweg für Radfahrer frei	RW1; 7733,14570 7960,14794
@@ -1357,7 +1357,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 # REMOVED --- #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
-#: osm_watch: way id="4615746" version="33"
+#: osm_watch: way id="4615746" version="34"
 #: source_id: 2147346157 (bis 19.10.2020)
 #: last_checked: 2022-09-17
 #: check_frequency: 120d
@@ -7007,7 +7007,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2022-08-31
+#: last_checked: 2022-10-01
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -7351,7 +7351,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 #: source_id: viz2021:13.397833,52.498335,06.10.2021,08:00 (bis 30.03.2022) (mittlerweile bis 31.05.2022) (bis 30.8.2022) (bis 31.10.2022)
 #: source_id: viz2021:13.398158,52.498346,07.02.2022,07:00 (bis 25.02.2022) (mittlerweile bis 18.03.2022) (inaktiv)
 #: source_id: viz2021:13.407111,52.498475,08.08.2022,07:00 (bis 31.12.2022)
-#: source_id: viz2021:13.39961,52.49841,29.09.2022,18:34 (bis 31.10.2022)
+#: source_id: viz2021:13.39961,52.49841,29.09.2022,18:34 (bis 31.10.2022) (inaktiv)
 #: note: laut rbb Einspurigkeit Höhe Lobeckstr. bis 22.10.2021
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)

@@ -177,7 +177,7 @@ Waldemarstr.: Kopfsteinpflaster	Q2 11328,10957 11290,10972 11150,11030
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens
-#: last_checked: 2022-08-31
+#: last_checked: 2022-10-01
 #: check_frequency: 360d
 Erkelenzdamm: Kopfsteinpflaster	Q2 11038,10247 11094,10261 11117,10326 11134,10383 11109,10423 11145,10510 11192,10629 11210,10668 11244,10653 11258,10682
 Leuschnerdamm: Kopfsteinpflaster	Q2 11275,10723 11301,10783 11264,10804 11328,10957 11365,11047 11421,11073 11458,11136
@@ -189,7 +189,7 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1011645.php (Erwähnung)
 #: XXX Planung eines Asphaltstreifens vvv
-#: last_checked: 2022-08-31 vvv
+#: last_checked: 2022-10-01 vvv
 #: check_frequency: 360d vvv
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530
 Segitzdamm: Kopfsteinpflaster	Q2- 11100,10530 11065,10443
@@ -1057,7 +1057,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-09-27
+#: last_checked: 2022-10-01
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3461,7 +3461,7 @@ Mauerweg - Am Rudower Fließ: Asphalt	Q0 15571,-93 15606,-104 15640,-149
 (Am Rudower Fließ): Holzbohlen	Q1 16271,609 16235,632 16230,655
 (Straße 618 - Rudower Fließ): Verbundsteinpflaster	Q1 16297,592 16271,609
 # REMOVED (ja, bessere Qualität) --- #: XXX nach den Bauarbeiten vielleicht bessere Qualität? --- #: source_id: IM_021231 --- #: next_check: 2014-07-15
-Waßmannsdorfer Chaussee: asphaltiert	Q0 16536,26 16477,-160 16431,-311
+Waßmannsdorfer Chaussee: asphaltiert	Q0 16536,26 16498,-92 16477,-160 16431,-311
 #: by: https://www.berliner-woche.de/rudow/c-verkehr/da-planungen-voellig-neu-erarbeitet-werden-muessen-bleibt-wassmanndorfer-chaussee-weiter-holperstrecke_a335288 (Sanierung nicht vor 2030)
 Waßmannsdorfer Chaussee: asphaltiert mit Straßenschäden	Q1 16431,-311 16378,-489 16341,-614 16307,-718 16273,-824
 (Mauerweg): Asphalt	Q0 18121,-374 18218,-325 18280,-295
@@ -6172,7 +6172,7 @@ Vereinssteg: unbefestigte Straße	Q2 8340,18984 8321,18954
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/tuchmerweg_lageplan_2021-11-25.pdf
 #: XXX wird neu gemacht, zusammen mit der Straße vor Schönholz, danach "Sickerpflaster" (Verbundsteinpflaster?)
 #: osm_watch: way id="173567970" version="6"
-#: last_checked: 2022-07-03 (mapillary)
+#: last_checked: 2022-08-27 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-04-01
 Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8616,19065
@@ -11961,8 +11961,8 @@ Bahndamm - Elsenstr.: unbefestigter Weg	Q2 13953,9372 13923,9405
 (Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8025,13835 8086,13862
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1- 8295,13531 8290,13538 8224,13634
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 8224,13634 8169,13705 8131,13770 8086,13862 8057,13923 8010,14014 7965,14081 7923,14142
-(Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1- 7923,14142 7912,14160 7866,14215
-(Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 7866,14215 7830,14268 7797,14317
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1- 7923,14142 7912,14160 7875,14204
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 7875,14204 7830,14268 7797,14317
 (Uferweg - Hedwig-Porschütz-Str.): glatt gepflastert	Q2+ 7797,14317 7769,14300
 (Habichtshorst - Schmetterlingswiesen): Betonplatten	Q0 21592,10656 21674,10701
 (Schmetterlingswiesen, östlicher Weg): große Platten, gut befahrbar	Q0 21457,11188 21483,11129 21514,11058 21601,10864 21642,10773 21674,10701 21727,10582
@@ -12494,7 +12494,7 @@ Bergiusstr. - Grenzallee: asphaltiert	Q0 14150,6609 14137,6658 14179,6714 14179,
 (Campus AF 60): Beton	Q1+ 18967,11639 18966,11676
 (Campus AF 60): Verbundsteinpflaster	Q1+ 18966,11676 18965,11692 18965,11706 18964,11719
 (Campus AF 60): Verbundsteinpflaster	Q1+ 18965,11692 18984,11719
-Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7732,14131 7818,14185 7866,14215
+Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7739,14119 7825,14173 7875,14204
 Otto-Weidt-Platz: Asphalt	Q0 7778,14059 7850,14100
 Otto-Weidt-Platz: Kleinsteinpflaster	Q1- 7850,14100 7923,14142
 Am Bahnhof Wuhlheide: Betonpflaster	Q0- 20430,7122 20524,7176 20533,7199 20575,7226 20629,7189
@@ -12621,7 +12621,7 @@ Lückstr.: Asphalt, einige Schäden	Q0-; 16153,10818 16300,10753 16313,10747 16468
 (Greifswalder Str. - Ella-Kay-Str.): Verbundsteinpflaster	Q1 12174,14739 12128,14764
 (Greifswalder Str. - Ella-Kay-Str.): Beton	Q1+ 12128,14764 12050,14808
 Aschaffenburger Str. (Schöneberg, Wilmersdorf): Kleinsteinpflaster	Q1 5668,9590 5642,9613
-(provisorischer Weg zum Golda-Meir-Steg): provisorischer Asphalt	Q1+ 7818,14185 7861,14133
+(provisorischer Weg zum Golda-Meir-Steg): provisorischer Asphalt	Q1+ 7825,14173 7861,14133
 Golda-Meir-Steg: Kleinsteinpflaster	Q1 7861,14133 7899,14157
 Golda-Meir-Steg: glatter Belag	Q0 7899,14157 7962,14198
 Golda-Meir-Steg: Kopfsteinpflaster	Q2 7962,14198 7973,14195
@@ -14622,7 +14622,7 @@ Majakowskiring: asphaltiert	Q0 10434,18907 10358,18882
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/der-guellweg-wird-fuer-radler-saniert_a278794 (Planung)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20210720 (Abschluss der Planung Anfang 2022)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20220724 (BPU 2022 anvisiert, außerdem Erwähnung der Planung in der Hermann-Hesse-Str.)
-#: osm_watch: way id="4764684" version="24"
+#: osm_watch: way id="4764684" version="25"
 #: osm_watch: way id="26790073" version="13"
 #: last_checked: 2022-09-03 (mapillary)
 #: check_frequency: 360d
@@ -31239,6 +31239,7 @@ Einmündungsbereich asphaltiert	Q0 12524,9012
 Einmündungsbereich mit Kopfsteinpflaster	Q2- 12950,9132
 Einmündungsbereich mit Kopfsteinpflaster	Q2- 13078,8992
 Kreuzungsbereich asphaltiert	Q0 12210,10716
+Kreuzungsbereich asphaltiert	Q0 12294,10663
 Kreuzungsbereich asphaltiert	Q0 22200,5776
 Einmündungsbereich mit Kopfsteinpflaster	Q2 23593,6663
 Einmündungsbereich mit Kopfsteinpflaster	Q2 23164,6753

@@ -8382,7 +8382,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005511',
        data  => <<EOF,
-	2::inwork 16378,-489 16431,-311 16477,-160 16536,26
+	2::inwork 16378,-489 16431,-311 16477,-160 16498,-92 16536,26
 EOF
      },
      { from  => 1179698400, # 2007-05-21 00:00
@@ -22303,7 +22303,7 @@ EOF
        text  => 'Waßmannsdorfer Straße: Bauarbeiten, Einbahnstraßenregelung, offen stadtauswärts, bis September 2013',
        type  => 'handicap',
        data  => <<EOF,
-	q2::inwork; 16378,-489 16431,-311 16477,-160 16536,26 16590,216 16642,393 16726,642
+	q2::inwork; 16378,-489 16431,-311 16477,-160 16498,-92 16536,26 16590,216 16642,393 16726,642
 EOF
      },
      { from  => undef,
@@ -23300,7 +23300,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_021231',
        data  => <<EOF,
-	q4::inwork 16378,-489 16431,-311 16477,-160 16536,26 16590,216 16642,393
+	q4::inwork 16378,-489 16431,-311 16477,-160 16498,-92 16536,26 16590,216 16642,393
 EOF
      },
      { from  => $isodate2epoch->("2014-07-04 20:00:00"),
@@ -29361,11 +29361,11 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1122586.php (Abriss des östlichen Brückenteils, Sperrung 2021-09-04 - 2021-09-06)
-#: osm_watch: way id="8655276" version="33"
+#: osm_watch: way id="8655276" version="34"
 #: also_indoor: search Blumberger-Damm-Brücke
 #: priority: #A
 #: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: last_checked: 2022-09-14 (osm)
+#: last_checked: 2022-10-01 (osm)
 #: check_frequency: 60d
 	2::inwork 20823,12139 21101,12132 21135,12127 21169,12113 21282,12115
 # REMOVED (hier normalerweise noch offen) ---	2::inwork 21282,12115 21307,12132
@@ -30646,7 +30646,7 @@ EOF
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-09-06 (mapillary)
+#: last_checked: 2022-09-30
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 	q4::inwork; 11329,12497 11209,12430
@@ -31023,7 +31023,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-09-27
+#: last_checked: 2022-10-01
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31534,7 +31534,7 @@ EOF
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022) (bis 7.10.2022)
 #: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022)
-#: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022)
+#: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
 #: source_id: bvg2021:188#BVG259885_0
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
@@ -34211,7 +34211,7 @@ EOF
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
-#: last_checked: 2022-09-27 vvv
+#: last_checked: 2022-10-01 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-11 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -34893,9 +34893,9 @@ EOF
        text  => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, außerdem Anbindung Lynarstr. gesperrt, außerdem Einbahnstraße in der Samoastr., offen Richtung Norden, voraussichtlich bis Ende Oktober 2022',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv) (bis 30.9.2022)
+#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv) (bis 30.9.2022) (bis 28.10.2022)
 #: source_id: viz2021:13.358072,52.540517,20.04.2022,08:00 (bis 30.9.2022) (bis 28.10.2022)
-#: source_id: viz2021:13.358728,52.540006,29.09.2022,18:39
+#: source_id: viz2021:13.358728,52.540006,29.09.2022,18:39 (inaktiv)
 #: note: laut rbb nur bis 20.4.2022
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
@@ -36115,9 +36115,13 @@ EOF
 #: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 4.10.2022)
 Georgenstr.	q4::inwork 9568,12688 9441,12670
 #: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
-#: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 30.9.2022)
+#: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 30.9.2022) (inaktiv)
+#: last_checked: 2022-09-28 (mapillary) vvv
+#: next_check: 2022-09-30 vvv
 Dorotheenstr.	q4::inwork 9742,12609 9870,12657
 Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
+#: next_check ^^^
+#: last_checked ^^^
 #: next_check ^^^
 EOF
      },
@@ -36386,12 +36390,13 @@ EOF
 EOF
      },
      { from  => 1664056800, # 2022-09-25 00:00
-       until => 1664485090, # vermutlich noch nicht gestartet --- undef, # XXX
+       until => undef, # XXX
        text  => 'Eisenacher Str. (Marzahn-Hellersdorf): Bauarbeiten, Einbahnstraßenregelung, offen Richtung Hellersdorf, ab 26. September 2022',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1246724.php (Gesamtbaumaßnahme bis Ende 2025, auch werden neue Radwege gebaut)
 #: by: https://berliner-abendblatt.de/2022/09/20/neubau-der-eisenacher-strasse-sperrung-vom-blumberger-damm-bis-gothaer-strasse/
+#: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/die-riesaer-und-eisenacher-strasse-werden-erneuert_a358349
 #: add_fragezeichen: Sind auch Radfahrer von den Bauarbeiten betroffen?
 #: check_frequency: 90d
 #: next_check: 2022-09-26

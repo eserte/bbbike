@@ -77,7 +77,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-16 vvv
-#: last_checked: 2022-09-29
+#: last_checked: 2022-10-01
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
 # REMOVED (hier realisiert) --- Stralauer Allee: Radspur geplant	?::projected; 13596,10722 13633,10705 13678,10685 13779,10642 13850,10612 13919,10583
 # REMOVED (hier in Bau, siehe radwege-orig-Eintrag) --- Stralauer Allee: Radspur geplant	?::projected; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -93,7 +93,7 @@ Stralauer Allee: Radspur geplant	?::projected; 14218,10430 14405,10340 14558,102
 #: by: http://www.infravelo.de/projekt/radverbindung-am-kottbusser-tor/ (3. Quartal 2020 - 3. Quartal 2021, 90m) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/2020-12_massnahmenliste_verkehrswende_uvki.pdf (Umsetzung 2021)
 #: XXX bei Infravelo steht nun: "Aufgrund von Hochbauarbeiten verzˆgert sich der Ausbau bis voraussichtlich 2022"
-#: last_checked: 2022-08-24
+#: last_checked: 2022-10-01
 #: check_frequency: 120d
 #: next_check: 2023-09-30
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
@@ -1911,7 +1911,7 @@ Rummelsburger Landstr.: Verbesserung des Radwegs oder werden Radstreifen angeleg
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5441
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/mobilitaetsgesetz-soll-bei-sanierung-der-strasse-vor-schoenholz-beruecksichtigt-werden_a275842
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ausfuehrungsentwurf_strasse-vor-schoenholz_stand-okt-2019.pdf
-#: last_checked: 2022-08-13 (mapillary) vvv
+#: last_checked: 2022-08-27 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2022-04-01 vvv
 Straﬂe vor Schˆnholz: Bau von Radspuren geplant	?::projected 8406,19081 8482,18986 8634,18787
@@ -2246,7 +2246,7 @@ Wuhlewanderweg: wird hier ein separater Weg f¸r Radfahrer errichtet?	?::projecte
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.838572.php (Bauarbeiten zwischen September 2019 bis voraussichtlich Sommer 2021)
 #: by: https://api.fixmyberlin.de/api/projects/322
 #: osm_watch: way id="488431238" version="8"
-#: osm_watch: way id="488430846" version="8"
+#: osm_watch: way id="488430846" version="9"
 #: last_checked: 2022-08-31 (mapillary)
 #: check_frequency: 30d
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16079 11618,16183
@@ -2684,7 +2684,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12150,8764 123
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/karl-marx-strasse-bauarbeiten-zwischen-erk-und-flughafenstrasse-gehen-los_a317172
 #: by: https://deine-laeden-brauchen-dich.de/einblicke/die-baustelle-rueckt-weiter-ins-zentrum-und-geht-in-die-winterpause/ (ab Februar 2022 weitere Bauarbeiten zwischen Fuldastr. und Weichselstr., zwischen Fuldastr. und Erkstr. noch bis Herbst 2022)
 #: source_id: viz2021:13.435258,52.480947,05.07.2021,10:00 (Bauarbeiten in Hˆhe Erkstr. bis Anfang 10/2021) (mittlerweile nur noch bis 14.7.2021) (inaktiv)
-#: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaﬂname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022) (bis 1.9.2022)
+#: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaﬂname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022) (bis 1.9.2022) (inaktiv)
 #: source_id: viz2021:13.435262,52.480879,05.07.2021,10:00 (bis 5.11.2021) (inaktiv)
 #: last_checked: 2022-09-21
 #: check_frequency: 180d
@@ -4304,7 +4304,7 @@ Daumstr.: neue Busspur wurde angeordnet	?::projected; -1485,15463 -1389,15285 -1
 #: source_id: 2147347217 (bis 19.8.2021, haben die Bauarbeiten etwas mit der geplanten Busspur zu tun?)
 #: source_id: viz2021:13.210243,52.56137,25.05.2021,10:13 (bis 27.9.2021, haben die Bauarbeiten etwas mit der geplanten Busspur zu tun?) (mittlerweile inaktiv)
 #: source_id: viz2021:13.21413,52.56088,25.05.2021,10:13 (bis 25.10.2021, andere Baustelle zwischen Goltz- und Bamihlstr.) (mittlerweile bis 6.12.2021) (mittlerweile bis 24.12.2021) (bis 15.01.2022) (bis 27.01.2022) (bis 31.01.2022)
-#: osm_watch: way id="4978664" version="35"
+#: osm_watch: way id="4978664" version="36"
 #: last_checked: 2022-07-31
 #: check_frequency: 60d
 Rauchstr.: Busspur in "finaler Abstimmung"	?::projected; -2728,17038 -2908,17072 -3009,17090
@@ -5308,7 +5308,7 @@ Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="16"
 #: also_indoor: traffic
-#: last_checked: 2022-09-02
+#: last_checked: 2022-10-01 (research)
 #: check_frequency: 30d
 # REMOVED (outdoor) --- #: check_frequency: 60d
 Kollwitzstr.: hat die Einziehung von Straﬂenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
@@ -5458,6 +5458,13 @@ Alt-Friedrichsfelde: Planung eines Radfahrstreifens	?::projected; 17746,11748 18
 #: last_checked: 2022-09-27
 #: check_frequency: 90d
 Frankfurter Allee ˆstlich Mˆllendorffstr.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
+# 
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1250253.php (ab Mitte Oktober 2022)
+#: by: https://berliner-abendblatt.de/2022/10/01/frankfurter-allee-pop-up-radweg-wird-ab-mitte-oktober-verstetigt/
+#: XXX gesch¸tzten Radstreifen, ein Haltestellenkap
+#: next_check: 2022-10-15
+Frankfurter Allee: Verstetigung des Radfahrstreifens	?::projected; 14709,12156 14621,12168 14523,12183 14488,12188 14427,12199 14381,12207 14291,12222 14208,12235
+# 
 #: by: https://api.fixmyberlin.de/api/projects/328 (Gr¸nbeschichtung + Verbreiterung, teilweise Leitboys)
 #: by: http://www.infravelo.de/projekt/scheffelstrasse/ (gesch¸tzter Radfahrstreifen in Planung, 2. Quartal 2021 - 4. Quartal 2022) (mittlerweile 3. Quartal 2021 - 4. Quartal 2022)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/neue-wege-das-bringt-2021-den-radfahrern-in-berlin-li.131383 (gesch¸tzte Radstreifen 2021)
@@ -5482,7 +5489,7 @@ Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
 #: last_checked: 2022-09-25
 #: check_frequency: 120d
 Hˆnower Str.: was passiert hier bez¸glich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18875,9570 18846,9532 18765,9426 18735,9421
-#: osm_watch: way id="261883742" version="11"
+#: osm_watch: way id="261883742" version="12"
 #: last_checked: 2022-08-18
 #: check_frequency: 90d
 Lindenberger Str.: Was passiert hier bez¸glich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18106,19353 18118,19394 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
@@ -6295,6 +6302,7 @@ Am Priesteracker (Potsdam): genaue Lage? Qualit‰t? Einbahnstraﬂe f¸r Radfahrer o
 #: by: https://berliner-abendblatt.de/2022/08/21/bauarbeiten-an-u6-keine-u-bahnen-nach-tegel-bis-2025/
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_36_2353_2408_online.pdf
 #: by: https://www.nd-aktuell.de/amp/artikel/1166975.u-bahnnetz-in-berlin-sisyphusarbeit-fuer-milliarden.amp.html
+#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/arbeiten-an-der-a111-dauern-bis-in-den-spaeten-oktober-ab-november-folgt-sanierung-der-u6_a359030
 #: source_id: viz2021:13.307546,52.56813,27.01.2022,09:00 (Vorbereitung Br¸ckenneubau, bis 30.11.2022)
 #: last_checked: 2022-09-26 (mapillary)
 #: next_check: 2022-11-07
@@ -6384,9 +6392,9 @@ Friedrichshaller Str.: wird es hier Verbesserungen f¸r den Radverkehr geben?	? 2
 # 
 #: by: http://www.infravelo.de/projekt/per-rad-durch-den-boecklerpark/ (bis 2. Quartal 2021) (mittlerweile 3. Quartal 2022 bis 4. Quartal 2022) (mittlerweile gelˆscht)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Sanierung des ˆstlichen Teils)
-#: last_checked: 2021-09-14
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-10-01
+#: last_checked: 2022-10-01
+#: check_frequency: 180d
+# REMOVED --- #: next_check: 2022-12-31
 # REMOVED (hier eventuell sp‰ter?) --- Bˆcklerpark: hier entsteht f¸r Radfahrer ein "Sonderweg"	? 10521,10126 10723,10088
 Bˆcklerpark: hier entsteht f¸r Radfahrer ein "Sonderweg"	? 10723,10088 10803,10067 10879,10048 10879,10037 10948,10016 10969,10015 10979,10017
 # 
@@ -6656,7 +6664,7 @@ Buckower Chaussee: Straﬂe wird gesperrt, Neubau einer Br¸cke	?::projected 9069,5
 # 
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/ausbau-der-kreuzung-blumberger-dammmehrower-allee-verzoegert-sich_a315639 (Umbau der Kreuzung ab 2021, Bauende 2021 ungewiss)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10100 (Antrag)
-#: osm_watch: way id="441659160" version="15"
+#: osm_watch: way id="441659160" version="16"
 #: osm_watch: way id="441659161" version="15"
 #: last_checked: 2022-08-05 (mapillary)
 #: check_frequency: 90d
@@ -7215,6 +7223,7 @@ K‰the-Pietschker-Str.: wo befindet sich die Straﬂe? Qualit‰t?	? -16068,6548 -159
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_21_1257_1304_online.pdf (Benennung mehrerer Planstraﬂen, mit Plan)
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/richtfest-am-neubauquartier-marienufer-der-deutsche-wohnen-am-ufer-der-dahme_a345101 (Baubeginn Fr¸hjahr 2023, Fertigstellung Ende 2026)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_30_2009_2068_online.pdf (korrigierter Plan)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_39_2621_2728_online.pdf (Grundst¸cksnummerierungen)
 #: XXX wird zuk¸nftig entstehen, evtl. entsteht noch ein Uferweg vvv
 #: XXX fehlen alle bei Berlin.coords.data, PLZ=12557 (laut DPAG-Mitteilungsblatt) vvv
 #: last_checked: 2022-08-11 vvv
@@ -7492,7 +7501,7 @@ Brunnenallee (Potsdam):genaue Lage? Qualit‰t? Existiert die Straﬂe schon?	?::pro
 #: XXX Friedenauer Hˆhe (Privatstraﬂe) -> im Amtsblatt, PLZ=12159
 # REMOVED (eingetragen) --- #: XXX Lauterplatz -> im Amtsblatt, PLZ=12159
 #: XXX Hannah-Hˆch-Weg (evtl. ohne "h") -> laut Amtsblatt mit "h", bei DPAG ebenso, PLZ=12159
-#: last_checked: 2022-07-10 vvv
+#: last_checked: 2022-09-24 (architektur-urbanistik) vvv
 #: check_frequency: 120d vvv
 G¸terbahnhof Wilmersdorf, Bebauungsplan 7-68: neue Wege werden entstehen	?::projected 6307,7893 5807,7876 5806,7796
 G¸terbahnhof Wilmersdorf: vermutlich wird die Straﬂe w‰hrend der Bauarbeiten gesperrt und sp‰ter eine andere Qualit‰t haben	?::projected 6273,7849 5817,7824
@@ -8120,12 +8129,18 @@ Bebauungsplan XIV-256-2 (Mohriner Allee 70, 72, 72A): mˆglicherweise entsteht hi
 # 
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-fuer-meinberlin/bebauungsplan.1184212.php
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-fuer-meinberlin/unterlagen/karten-und-plaene/8-9bba_frueh-oeff_03-blatt-2.pdf
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_32_2133_2188_online.pdf (Straﬂenbenennung)
-#: XXX Krabbentaucherweg fehlt bei Berlin.coords.data, PLZ laut DPAG-Mitteilungsblatt 12347
 #: last_checked: 2021-10-06
 #: check_frequency: 540d
 #: next_check: 2025-06-30
-Bebauungsplan 8-9bba (Mohriner Allee 111): neue Privatstraﬂe mit dem Namen Krabbentaucherweg entsteht	?::projected 11502,3813 11525,3726 11499,3673 11522,3572 11568,3629
+Bebauungsplan 8-9bba (Mohriner Allee 111): mˆglicherweise entsteht hier eine neue Straﬂe	?::projected 11502,3813 11525,3726 11499,3673 11522,3572 11568,3629
+# 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_32_2133_2188_online.pdf (Straﬂenbenennung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_39_2621_2728_online.pdf (Berichtigung: Mohriner Allee 111 -> Waﬂmannsdorfer Chaussee 111)
+#: XXX Krabbentaucherweg fehlt bei Berlin.coords.data, PLZ laut DPAG-Mitteilungsblatt 12347
+#: XXX Qualit‰t: Verbundsteinpflaster; vermutlich Sackgasse
+#: last_checked: 2022-06-04
+#: check_frequency: 90d
+Krabbentaucherweg: Privatstraﬂe, ausgeschildert?	?::projected 16498,-92 16531,-104 16553,-158
 # 
 # REMOVED --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_45_5341_5412_online.pdf (Straﬂenbenennung) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_49_5627_5702_online.pdf (Grundst¸cksnummerierungen) --- #: XXX fehlt bei Berlin.coords.data, PLZ=12683 (laut DPAG-Mitteilungsblatt und laut LOR) --- #: osm_watch: way id="865780927" version="10" --- #: last_checked: 2022-03-20 --- #: check_frequency: 60d --- Kleiner Parkweg: neue "fuﬂl‰ufige Erschlieﬂung" entsteht hier; Qualit‰t? F¸r Radfahrer benutzbar? Ausgeschildert?	?::inwork 20779,11801 20790,11990
 # 
@@ -9009,6 +9024,10 @@ Dragonerareal: werden hier Wege/Straﬂe entstehen?	? 9203,9859 9411,9997
 #: priority: #C
 #: next_check: 2022-11-01
 Parkviertelallee: Straﬂenbauarbeiten geplant, was genau ‰ndert sich hier?	? -6368,5932 -6343,5853 -6449,5846
+# 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_39_2621_2728_online.pdf
+#: priority: #C
+Wickenhagenweg: Einziehung, ‰ndert sich hier etwas?	? -6137,864 -6125,838
 # 
 #: ignore ^^^
 #: section ^^^

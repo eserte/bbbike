@@ -675,7 +675,7 @@ Neukˆllnische Allee: einige Fuﬂg‰nger	q2::inwork 14344,7003 14310,7022 14276,702
 #: by: https://www.kms-sonne.de/baustellennews (nun bis Herbst 2022)
 #: by: https://www.kms-sonne.de/assets/2022/02/Baustellenuebersicht-2022-02.pdf
 #: by: https://www.kms-sonne.de/assets/2022/08/Baustellenuebersicht-2022-08-web.pdf
-#: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaﬂname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022) (bis 1.9.2022) (bis 1.10.2022)
+#: source_id: viz2021:13.434398,52.481459,14.07.2021,10:00 (bis 31.12.2021, Gesamtbaumaﬂname bis 2024) (mittlerweile bis 31.1.2022) (mittlerweile bis 31.7.2022) (bis 1.9.2022) (bis 1.10.2022) (inaktiv)
 #: last_checked: 2022-09-21
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-09-20
@@ -700,9 +700,10 @@ Schˆnstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: XXX Flughafenstraﬂe (Neukˆlln) Richtung Hermannstraﬂe zwischen Karl-Marx-Straﬂe und Isarstraﬂe: Umbau Karl-Marx-Straﬂe, Fahrtrichtung gesperrt, vom 01.02.2022 08:00 bis 31.07.2022 17:00, mittlerweile bis 01.09.2022
 #: XXX Am 1.2.2022 wurde der VIZ-Eintrag wieder entfernt, ohne dass was passiert ist.
 #: source_id: viz2021:13.432818,52.481758,01.02.2022,08:00 (inaktiv)
-#: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022) (bis 1.10.2022)
+#: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022) (bis 1.10.2022) (inaktiv)
 #: osm_watch: way id="137623800" version="26"
-#: also_indoor: traffic (G(zu fr¸h+falsche Richtung),B)
+#: osm_watch: way id="625667165" version="16"
+#: also_indoor: traffic (G(falsch),B,H)
 #: priority: #A
 #: last_checked: 2022-09-21
 #: check_frequency: 120d
@@ -3911,12 +3912,12 @@ Traberweg: einige Fuﬂg‰nger	q1 18577,8033 18567,8041 18490,8104 18416,8163 18351
 #: note: und zwar legal, per Schild
 Campus AF 60: Schranke kann auf Gehweg umfahren werden	q2 18964,11719 18919,11720
 #: note: Fuﬂg‰ngerzone, Radfahrer frei
-Otto-Weidt-Platz: einige Fuﬂg‰nger	q1 7732,14131 7818,14185 7866,14215
+Otto-Weidt-Platz: einige Fuﬂg‰nger	q1 7739,14119 7825,14173 7875,14204
 # REMOVED --- #: next_check_id: EUROPACITY-2015 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016 --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_14_1731_1830_online.pdf (Benennung) --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.693755.php (geplante Fertigstellung Ende 2019/Anfang 2020) --- #: by: http://www.berliner-woche.de/moabit/bauen/der-otto-weidt-platz-ein-kleines-wunder-initiative-der-ns-zeitzeugin-inge-deutschkron-d157629.html --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_11_1601_1736_online.pdf (Grundst¸cksnummerierungen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Grundst¸cksnummerierungen) --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628501&postcount=203 (erste Teile im Mai 2020 fertig) --- #: by: https://www.berliner-woche.de/moabit/c-bauen/hamburger-investor-baut-bueroturm-in-der-europacity_a247135 (Hochhaus wird im zweiten Halbjahr 2021 fertiggestellt) --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_19_1681_1744_online.pdf (Straﬂenlandwidmung) --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/erschliessung-und-grundstuecksuebertragung-bebauungsplan-1-62b-oestlich-heidestrasse-otto-weidt-platz-1032336.php (Bauarbeiten bis Ende 2022) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_27_1633_1692_online.pdf (Straﬂenlandwidmung) --- #: XXX Treppe zum Golda-Meir-Steg kann benutzt werden, wenn die Bauz‰une weggeschoben sind --- #: XXX Einfahrt verboten, Anlieger frei -> als osm.highway: service taggen, wenn's fertig ist --- #: osm_watch: way id="642581102" version="5" --- #: last_checked: 2022-08-12 (architektur-urbanistik) --- #: check_frequency: 60d --- #: next_check: 2022-12-31
 #: note: Fuﬂg‰ngerzone, Radfahrer frei
 Otto-Weidt-Platz: einige Fuﬂg‰nger	q1 7923,14142 7850,14100 7778,14059
 #: note: Fuﬂg‰ngerzone, Radfahrer frei
-(Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fuﬂg‰nger	q1 7923,14142 7912,14160 7866,14215
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fuﬂg‰nger	q1 7923,14142 7912,14160 7875,14204
 Teltowkanaluferweg: gemeinsamer Geh- und Radweg	q1 7994,4430 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095 8881,5143 9080,5225 9171,5263 9196,5272
 #: XXX_prog BS an der General-Woyna-Str., etwa 20m s¸dlich ist eine Bordsteinabsenkung
 Humannstr. - General-Woyna-Str.: Fuﬂg‰nger, Bordstein	q3 4324,18523 4340,18497
@@ -4041,7 +4042,7 @@ Sokratesweg: einige Fuﬂg‰nger	q2 18514,9552 18604,9535
 #: note: Radfahrer sollen hier absteigen
 Hans-Baluschek-Park: enge Rampe, Fuﬂg‰nger	q2 7252,6080 7278,6101
 #: note: Radfahrer sollen absteigen
-(provisorischer Weg zum Golda-Meir-Steg): Fuﬂg‰nger	q3 7818,14185 7861,14133
+(provisorischer Weg zum Golda-Meir-Steg): Fuﬂg‰nger	q3 7825,14173 7861,14133
 Golda-Meir-Steg: Fuﬂg‰nger	q2 7861,14133 7899,14157 7962,14198
 (Golda-Meir-Steg - s¸dlicher Otto-Weidt-Platz): Fuﬂg‰nger	q2 7861,14133 7850,14100
 (Wilhelmine-Duncker-Str. - Gr¸nzug am Falkenberg): schmal, einige Fuﬂg‰nger	q2 21440,300 21435,323
