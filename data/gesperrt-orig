@@ -1247,7 +1247,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="31540773" version="16"
-#: last_checked: 2022-05-01
+#: last_checked: 2022-10-02
 #: check_frequency: 180d
 Fritz-Werner-Str.	1s:q3 9105,2779 9081,2594
 # 
@@ -1413,6 +1413,13 @@ Klaus-Selmke-Str.	2 21130,11384 21275,11547
 Schönegarten: verschlossene Tore an beiden Enden	2 7416,10492 7432,10546 7330,10590
 Parchimer Allee	1 14466,4624 14427,4571
 Parchimer Allee	1 14427,4571 14425,4593 14454,4626 14466,4624
+# 
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10440 (Antrag für die Öffnung für den Radverkehr, in der BVV abgelehnt)
+#: XXX Sind die Einbahnstraßen tatsächlich für den Radverkehr nicht offen? vvv
+Feldrain	1s:q4 25684,13172 25632,13214 25609,13232 25607,13459
+Pfarrhufenweg	1s:q4 25599,13069 25684,13172
+#: XXX ^^^
+# 
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -3429,15 +3436,19 @@ Drängelgitter	BNP:2::trailer=7 -4234,11408
 #: by: https://nitter.cz/pic/orig/media%2FFcwyqHOXgAAeape.jpg
 #: by: https://www.facebook.com/vizberlin/posts/pfbid06LxJBbLf7E1BWSREAZxyQLbEtMmoQWyekoQVyZwYzUNCuLidZWQjvAgVxps92bz4l
 #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-baustart-fuer-aufwertung-des-historischen-rundwegs
+#: osm_watch: way id="358602468" version="4"
+#: osm_watch: way id="24189226" version="21"
 #: XXX Qualität nach den Bauarbeiten?
 #: XXX wird es auch Bauarbeiten am Flutgraben geben?
-#: last_checked: 2022-09-21
+#: last_checked: 2022-10-02
 #: check_frequency: 60d
 #: next_check: 2023-06-01
 Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 13333,9929 13271,9927 13225,9897 13109,9743 12905,9470
 # 
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/baustelle-wird-eingerichtet_a351209
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1240151.php
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9551 (Bebauungsplan XVII-9-1, BerlinCampus I)
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/ekgf3qoJIrr9337BpG4iMbZ0LD6NRaRRMlLcP8ms/QGmTBUWW/94-Anlagen/02/161-2022-01BPlanXVII-9-1AuswertungderBeteilig.pdf
 #: osm_watch: way id="1086484458" version="1"
 #: osm_watch: way id="36780316" version="10"
 #: last_checked: 2022-09-18
@@ -3584,14 +3595,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 1762
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
 # 
 # REMOVED (falsche Ausschilderung: Einbahnstraßenschilder ohne Einfahrt-verboten-Schilder) --- #: next_check_id: PLANSTRASSEC-2019 --- #: last_checked: 2022-04-07 (architektur-urbanistik) --- #: check_frequency: 60d --- (Planstraße C): abschnittsweise Einbahnstraße	1s:q3:inwork 12848,11093 12926,11224
-# 
-#: next_check_id: SIEGFRIED-2021
-#: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/#post-15273 (Bau einer Apartmentanlage, vielleicht wird dann die Straße öffentlich sein?)
-#: by: https://www.i-live-tempelhof.de/ (Erstbezug Anfang 2023)
-#: priority: #C
-#: last_checked: 2022-09-24
-#: check_frequency: 120d
-(Verlängerung der Siegfriedstr.): während der Hochbauarbeiten gesperrt	2::inwork 11664,6796 11488,6781
+# REMOVED (weitgehend offen) -- #: next_check_id: SIEGFRIED-2021 --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/oderstra%C3%9Fe-188-ecke-siegfriedstr-neubau-einer-apartmentanlage.1058/#post-15273 (Bau einer Apartmentanlage, vielleicht wird dann die Straße öffentlich sein?) --- #: by: https://www.i-live-tempelhof.de/ (Erstbezug Anfang 2023) --- #: priority: #C --- #: last_checked: 2022-09-24 --- #: check_frequency: 120d --- (Verlängerung der Siegfriedstr.): während der Hochbauarbeiten gesperrt	2::inwork 11664,6796 11488,6781
 # 
 #: next_check_id: ZURALTENFLUSSBADEANSTALT-2021
 #: XXX nach den Bauarbeiten Kreisverkehrregelung herstellen
@@ -3733,7 +3737,7 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 #: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
-#: last_checked: 2022-09-03 vvv
+#: last_checked: 2022-10-02 (krickstadt) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2022-07-01 vvv
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
@@ -4109,9 +4113,10 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738
-#: last_checked: 2022-08-11
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3808 (Antrag)
+#: last_checked: 2022-10-02 (krickstadt)
 #: check_frequency: 360d
-#: next_check: 2022-12-20
+# REMOVED --- #: next_check: 2022-12-20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
 # 
 #: next_check_id: SCHOENEWEIDE-2018
@@ -4132,15 +4137,15 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
 #: osm_watch: way id="226163591" version="5"
 #: priority: #C
-#: last_checked: 2022-08-14 (krickstadt)
+#: last_checked: 2022-10-02 (krickstadt)
 #: check_frequency: 360d
-#: next_check: 2022-12-20
+# REMOVED --- #: next_check: 2022-12-20
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521
 # 
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
-#: last_checked: 2022-09-25
-#: check_frequency: 90d
+#: last_checked: 2022-10-02 (krickstadt)
+#: check_frequency: 120d
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
 # 
 # REMOVED (laut osm komplett abgetragen) --- #: next_check_id: SPREEBOGENPARK-2018 --- #: by: http://www.berliner-woche.de/hansaviertel/verkehr/rueckbau-der-ostumfahrung-schweizer-botschaft-im-regierungsviertel-d140116.html --- #: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2018/pressemitteilung.705903.php --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_25_3283_3434_online.pdf --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_33_4519_4646_online.pdf --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.760640.php --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/o-v-bismarck-allee-w-brandt-str-alt-moabit-tiergarten-dauerhaft-gesperrt --- #: XXX ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt noch passierbar? --- #: XXX nach dem Rückbau Straße vollständig entfernen; laut fritz ist die Fertigstellung des Spreebogenparks für Sommer 2019 geplant, im Sommer 2020 sollen alle Baumaßnahmen abgeschlossen sein --- #: note: Bebauungsplan II - 200ib --- #: source_id: 2147343514 --- #: osm_watch: way id="537967314" version="6" --- #: last_checked: 2018-11-27 --- #: check_frequency: 60d --- #: priority: #B --- Schweizer Botschaft: Rückbau der Straße	2:inwork 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
@@ -4328,7 +4333,7 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 # REMOVED (hier nicht mehr) --- Schinkelplatz: wegen Bauarbeiten gesperrt	2::inwork 10010,12275 10058,12290
 # REMOVED --- : check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: RATHAUSWEDDING-2017 --- #: last_checked: 2018-04-10 --- #: check_frequency: 30d --- Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
-# REMOVED --- #: next_check_id: WILTBERGSTR-2017 --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.741808.php (weiterhin Einbahnstraße) --- #: by: https://www.berliner-woche.de/buch/c-verkehr/grosse-umleitung-ist-aufgehoben_a183659 --- #: source_id: 2147339182 --- #: osm_watch: way id="10948718" version="21" --- #: priority: #A --- #: last_checked: 2018-04-28 --- #: next_check: 2019-02-25 --- #: valid: -20190225 --- Karower Str.: temporäre Einbahnstraßenregelung	1s:q3:inwork 16593,25640 16632,25512 16669,25373
+# REMOVED --- #: next_check_id: WILTBERGSTR-2017 --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.741808.php (weiterhin Einbahnstraße) --- #: by: https://www.berliner-woche.de/buch/c-verkehr/grosse-umleitung-ist-aufgehoben_a183659 --- #: source_id: 2147339182 --- #: osm_watch: way id="10948718" version="21" --- #: priority: #A --- #: last_checked: 2018-04-28 --- #: next_check: 2019-02-25 --- #: valid: -20190225 --- Karower Str.: temporäre Einbahnstraßenregelung	1s:q3:inwork 16593,25640 16632,25512 16663,25349
 # REMOVED (frisch asphaltiert) --- #: last_checked: 2017-10-08 vvv --- #: check_frequency: 60d vvv --- # REMOVED --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7940,14447 --- #: XXX laut http://www.openstreetmap.org/note/1117960 wird der Weg "nach den Leitungsarbeiten wieder hergerichtet werden" --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7940,14447 7889,14519 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3192&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-03-31) --- #: priority: #A --- #: also_indoor: traffic --- #: last_checked: 2018-12-26 --- #: check_frequency: 30d --- Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung auch für Radfahrer gesperrt	1s:q3:inwork 5192,10241 5196,10398
 # REMOVED (siehe temp_blockings-Eintrag) --- #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.) --- #: last_checked: 2017-06-17 --- #: check_frequency: 7d --- DB-Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911
@@ -4685,7 +4690,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 #: XXX die derzeitige Straße ist asphaltiert, bleibt das so?
 #: osm_watch: way id="765539341" version="7" brb
-#: last_checked: 2022-06-05
+#: last_checked: 2022-08-19 (mapillary)
 # REMOVED --- #: next_check: 2020-09-01
 #: check_frequency: 180d
 Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449

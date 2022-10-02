@@ -84,7 +84,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2022-09-21 vvv
+#: last_checked: 2022-10-02 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -111,10 +111,12 @@ Zur Alten Flussbadeanstalt: Gegenverkehrsregelung	X::inwork 16355,9622
 # REMOVED --- #: source_id: viz2021:13.374553,52.583469,04.08.2021,08:00 (bis 02.02.2022) (mittlerweile bis 7.3.2022) (mittlerweile bis 30.4.2022) (mittlerweile bis 31.7.2022) (bis 1.8.2022) (inaktiv) --- #: source_id: viz2021:13.3751,52.58195,02.08.2022,11:32 (bis 3.8.2022) --- #: note laut rbb bis 9.2.2022 --- #: last_checked: 2022-03-19 (mapillary) vvv --- #: next_check: 2022-08-03 vvv --- #: valid: -20220803 vvv --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725 --- Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 #: source_id: viz2021:13.374712,52.584761,03.08.2022,12:00 (bis 31.3.2023) vvv
-#: last_checked: 2022-08-27 (mapillary) vvv
+#: last_checked: 2022-09-30 (mapillary) vvv
 #: next_check: 2023-03-31 vvv
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8227,19725
 Germanenstr.: Gegenverkehrsregelung	X::inwork 8234,19936
+Germanenstr.: Gegenverkehrsregelung	X::inwork 8311,19458
+Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: next_check ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -1527,7 +1529,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX provisorische Ampel an der Weichselstr. während der Bauarbeiten
 # REMOVED --- #: osm_watch: node id="7241153386" version="4"
 #: osm_watch: node id="9498243538" version="1"
-#: last_checked: 2022-09-21 (manchmal ausgeschaltet (abends? selten?))
+#: last_checked: 2022-10-02 (manchmal ausgeschaltet (abends? selten?))
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-08
 	F::inwork 12318,8645
@@ -3083,7 +3085,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (existiert vermutlich nicht mehr) ---	F 16475,25526
 #: note: provisorische Ampel (2011-08-28); aber nach den Bauarbeiten in der Wiltbergstr. wird eine richtige Ampel bestehen bleiben
 #: by: http://www.berlin.de/imperia/md/content/bapankow/tiefbauamt/wiltbergstra__e_bpu_lp4.pdf?start&ts=1358154468&file=wiltbergstra__e_bpu_lp4.pdf
-	X 16669,25373
+	X 16663,25349
 	F 16606,25141
 #: note: Anforderungsampeln beim Überqueren des Groß-Berliner Damms (sowohl Geradeausfahrer als auch Linksabbieger)
 	X 17879,4910
@@ -3311,7 +3313,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2022-09-15
+#: last_checked: 2022-10-02
 #: check_frequency: 90d
 #: next_check: 2023-06-30 vvv
 	X::inwork 13265,6972
@@ -3564,6 +3566,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: BERLINERBAHNHOF-2020
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6134 (Antrag) (im Ausschuss abgelehnt)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6272 (Antrag)
 #: XXX wird die provisorische Ampelanlage in eine permanente umgebaut? vvv
 #: last_checked: 2022-09-18 (mapillary) vvv
 #: check_frequency: 60d vvv

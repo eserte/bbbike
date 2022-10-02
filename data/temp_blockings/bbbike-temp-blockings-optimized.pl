@@ -1968,7 +1968,45 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.1016256.php (finder 2020 nicht statt)
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1147421.php (2021 abgesagt)
+#: by: https://berliner-abendblatt.de/2021/11/17/berliner-weihnachtsmaerkte-werden-abgesagt/
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8204
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/10qR11xrgWHdMiGEEObMjZJiGM7579uVkxho85aR/hDefGNYF/52-Anlagen/02/824MA_0442_BzBm_Rixdorfer_Weihnachtsmarkt.pdf (Termin 2022)
+# REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
+#: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
+	2::xmas 13416,7712 13424,7680
+	2::xmas 13416,7712 13378,7695 13288,7653
+	2::xmas 13424,7680 13417,7654 13392,7648 13295,7627
+	2::xmas 12972,7602 13100,7626 13130,7633 13174,7644
+	2::xmas 13179,7613 13174,7644
+	2::xmas 13179,7613 13295,7627
+	2::xmas 13288,7653 13295,7627
+	2::xmas 13288,7653 13174,7644
+	2::xmas 13288,7653 13278,7673 13245,7742
+#: tempex ^^^
+',
+         'from' => 1669849200,
+         'id' => 1998,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html',
+         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (voraussichtlich 02.12.2022 - 04.12.2022)',
+         'type' => 'gesperrt',
+         'until' => 1670194799
+       },
        undef,
        undef,
        undef,
@@ -4127,7 +4165,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-09-04
+#: last_checked: 2022-10-02
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -4868,7 +4906,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2022-09-24 vvv
+#: last_checked: 2022-10-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -4938,7 +4976,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
 #: priority: #B vvv
-#: last_checked: 2022-09-30 vvv
+#: last_checked: 2022-10-02 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-09-30 vvv
 #: also_indoor: traffic (G(unvollständig),B) vvv
@@ -5764,6 +5802,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1246724.php (Gesamtbaumaßnahme bis Ende 2025, auch werden neue Radwege gebaut)
 #: by: https://berliner-abendblatt.de/2022/09/20/neubau-der-eisenacher-strasse-sperrung-vom-blumberger-damm-bis-gothaer-strasse/
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/die-riesaer-und-eisenacher-strasse-werden-erneuert_a358349
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10491 (Anfrage)
 #: add_fragezeichen: Sind auch Radfahrer von den Bauarbeiten betroffen?
 #: check_frequency: 90d
 #: next_check: 2022-09-26
@@ -5833,6 +5872,41 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'id' => 3637,
          'text' => 'Charlottenstr.: Bauarbeiten an der Kreuzung Unter den Linden, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '	q4 11196,4325 11153,4306 11141,4214 11111,4055 11104,3981 11103,3960
+	q4 11153,4306 11125,4331
+',
+         'from' => undef,
+         'id' => 3638,
+         'permanent' => 1,
+         'text' => 'Am Britzer Garten - Straße 229/Koppelweg: Grünanlage, Radfahren offiziell verboten',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: note: allerdings hängt das Grünanlagen/Radfahren verboten-Schild nur am westlichen Ende
+	q4; 9021,3878 9073,3892 9117,3898
+',
+         'from' => undef,
+         'id' => 3639,
+         'permanent' => 1,
+         'text' => 'Rathausstr. - Richterstr.: Grünanlage, Radfahren offiziell verboten',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://nowkoelln.de/#wann
+#: XXX Gibt es eine (regelmäßige?) Winterpause?
+#: next_check: 2022-12-04
+	q4::temp:clock 12412,9610 12250,9691
+',
+         'from' => undef,
+         'id' => 3640,
+         'recurring' => 1,
+         'text' => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',
+         'type' => 'gesperrt',
          'until' => undef
        }
      

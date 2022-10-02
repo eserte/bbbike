@@ -740,8 +740,7 @@ Pestalozzistr.	1 24769,11819 24908,11785
 Baumstamm	3 * 24981,2565 25116,2529
 Baumstamm	3 25116,2529 24981,2565 *
 Franz-Klühs-Str.	1 9384,10536 9570,10566 9770,10590
-Karower Str.	3 16659,25409 16669,25373 *
-Karower Str.	3 * 16669,25373 16659,25409
+# REMOVED (mittlerweile reiner Radweg) --- Karower Str.	3 16662,25386 16663,25349 * --- Karower Str.	3 * 16663,25349 16662,25386
 Efeuweg	3 15590,2724 15613,2739 *
 Efeuweg	3 * 15613,2739 15590,2724
 Rollbergstr.: Poller	3 * 12327,8161 *
@@ -1098,8 +1097,6 @@ Lietzenburger Str./Sächsische Str.	3nocross 4485,10307 4659,10335 4764,10350
 Biesheimring - Brittendorfer Weg: Poller	3 1987,3166 1946,3142 1884,3106
 Brittendorfer Weg - Biesheimring: Poller	3 1884,3106 1946,3142 1987,3166
 Andernacher Str.	1 18949,8437 19000,8509
-Pfarrhufenweg	1 25599,13069 25684,13172
-Feldrain	1 25684,13172 25632,13214 25609,13232 25607,13459
 Andernacher Str.	1 19054,8571 19000,8509
 # REMOVED (realisiert) --- #: next_check_id: GROSSBERLINERDAMM-2020 --- #: by: https://www.baustellen-doku.info/berlin_strassenbahn_adlershof_II_wista_schoeneweide/20201019/ --- #: XXX hier wird eine Überfahrt auch für Autos entstehen --- #: last_checked: 2021-09-05 (krickstadt) --- #: next_check: 2021-10-31 --- Groß-Berliner Damm: Mittelstreifen	3nocross 18541,4125 18374,4307 18239,4453
 Groß-Berliner Damm: Straßenbahntrasse	3nocross 18374,4307 18239,4453 18042,4667
@@ -1401,7 +1398,7 @@ Wiener Str./Lausitzer Str.	3nocross 11949,10414 12169,10310 12243,10274
 # 
 #: by: mapillary
 #: confirmed_by: srt
-Braunschweiger Str.	1 13919,7707 13854,7620
+Braunschweiger Str.	1 13919,7707 13858,7617
 # 
 Fürstenwalder Str.: Poller	2 12243,12604 12242,12594
 # 

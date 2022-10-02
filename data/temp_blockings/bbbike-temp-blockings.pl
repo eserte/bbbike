@@ -17324,18 +17324,20 @@ EOF
 	3 8374,11479 8389,11378 8427,11365
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-05 00:00:00"),
-       until => $isodate2epoch->("2019-12-08 23:59:59"),
+     { from  => $isodate2epoch->("2022-12-01 00:00:00"),
+       until => $isodate2epoch->("2022-12-04 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12, start => "2022-01-01T00:00:00"]], # findet 2020 wegen Corona nicht statt
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html',
-       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (voraussichtlich 03.12.2021 - 05.12.2021)',
+       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (voraussichtlich 02.12.2022 - 04.12.2022)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.1016256.php (finder 2020 nicht statt)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2021/pressemitteilung.1147421.php (2021 abgesagt)
 #: by: https://berliner-abendblatt.de/2021/11/17/berliner-weihnachtsmaerkte-werden-abgesagt/
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8204
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/10qR11xrgWHdMiGEEObMjZJiGM7579uVkxho85aR/hDefGNYF/52-Anlagen/02/824MA_0442_BzBm_Rixdorfer_Weihnachtsmarkt.pdf (Termin 2022)
 # REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
 #: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
 	2::xmas 13416,7712 13424,7680
@@ -19545,6 +19547,10 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8008 (Anfrage)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8465 (Antrag)
 #: by: https://berliner-abendblatt.de/2022/09/13/neukoellner-maientage-womoeglich-in-tempelhof-schoeneberg/
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8183 (Anfrage)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8185 (Anfrage)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8186 (Anfrage)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8213 (Antrag)
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -32060,7 +32066,7 @@ EOF
 #: source_id: viz2021:13.428783,52.478213,06.04.2020,07:00 (bis 31.03.2025)
 #: XXX: Wann sind die Bauarbeiten beendet? Laut rbb ebenfalls bis 31.03.2025
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-09-04
+#: last_checked: 2022-10-02
 #: check_frequency: 120d
 #: next_check: 2025-03-31
 	q4::inwork 12162,8053 12147,8117
@@ -34798,7 +34804,7 @@ EOF
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2022-09-24 vvv
+#: last_checked: 2022-10-02 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -34922,7 +34928,7 @@ EOF
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
 #: priority: #B vvv
-#: last_checked: 2022-09-30 vvv
+#: last_checked: 2022-10-02 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-09-30 vvv
 #: also_indoor: traffic (G(unvollständig),B) vvv
@@ -36397,6 +36403,7 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1246724.php (Gesamtbaumaßnahme bis Ende 2025, auch werden neue Radwege gebaut)
 #: by: https://berliner-abendblatt.de/2022/09/20/neubau-der-eisenacher-strasse-sperrung-vom-blumberger-damm-bis-gothaer-strasse/
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/die-riesaer-und-eisenacher-strasse-werden-erneuert_a358349
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10491 (Anfrage)
 #: add_fragezeichen: Sind auch Radfahrer von den Bauarbeiten betroffen?
 #: check_frequency: 90d
 #: next_check: 2022-09-26
@@ -36473,6 +36480,38 @@ EOF
 #: last_checked: 2022-09-30
 #: check_frequency: 14d
 	q4::inwork 9475,12365 9489,12263
+EOF
+     },
+     { from  => undef, # 
+       until => undef, #
+       text  => 'Am Britzer Garten - Straße 229/Koppelweg: Grünanlage, Radfahren offiziell verboten',
+       permanent => 1,
+       type  => 'handicap',
+       data  => <<EOF,
+	q4 11196,4325 11153,4306 11141,4214 11111,4055 11104,3981 11103,3960
+	q4 11153,4306 11125,4331
+EOF
+     },
+     { from  => undef, # 
+       until => undef, #
+       text  => 'Rathausstr. - Richterstr.: Grünanlage, Radfahren offiziell verboten',
+       permanent => 1,
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: allerdings hängt das Grünanlagen/Radfahren verboten-Schild nur am westlichen Ende
+	q4; 9021,3878 9073,3892 9117,3898
+EOF
+     },
+     { from  => undef, #
+       until => undef, #
+       text  => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+#: by: https://nowkoelln.de/#wann
+#: XXX Gibt es eine (regelmäßige?) Winterpause?
+#: next_check: 2022-12-04
+	q4::temp:clock 12412,9610 12250,9691
 EOF
      },
     );

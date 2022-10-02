@@ -33,12 +33,11 @@ Turmstr.: Bauarbeiten, Engstellen, teilweise F¸hrung des Radwegs ¸ber den engen 
 Turmstr.: Bauarbeiten, Engstellen, Umweg ¸ber den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 Meierottostr.: Einbahnstraﬂenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
-Weserstr.: vor der Weichselstr. Bauarbeiten, gemeinsamer Geh- und Radweg, eng	q2::inwork 12590,8977 12740,8862
-Weserstr./Weichselstr.: Arbeiten im Kreuzungsbereich	q2::inwork 12682,9089 12590,8977 12478,8829
+Weserstr./Fuldastr.: Arbeiten im Kreuzungsbereich	q2::inwork 12590,8977 12740,8862 12881,8750
+Weserstr./Fuldastr.: Arbeiten im Kreuzungsbereich	q2::inwork 12628,8711 12740,8862 12836,8980
 Bergiusstr. - Grenzallee: kurvig, einige Fuﬂg‰nger	q1 14150,6609 14137,6658 14179,6714 14179,6743
 Bergiusstr. - Grenzallee: kurvig, einige Fuﬂg‰nger	q3 14179,6743 14139,6786
 Neukˆllnische Allee: einige Fuﬂg‰nger	q2::inwork 14344,7003 14310,7022 14276,7021 14245,7037 14236,7058 14196,7086
-Boddinstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12368,8356 12582,8408
 Schˆnstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
 Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kann zugeparkt sein	q2::inwork; 12494,8501 12349,8464
 Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4::inwork 15535,12420 15457,12449
@@ -805,7 +804,8 @@ Blaurackenweg: enge Straﬂe, spielende Kinder	q1 17613,7989 17647,8071 17532,8125
 Am Britzer Garten - Straﬂe 229: Fuﬂg‰nger	q1 11130,3838 11103,3960
 Am Britzer Garten - Straﬂe 229: steile Br¸cke	q3 11103,3960 11104,3981
 Am Britzer Garten - Straﬂe 229: enger Weg; Fuﬂg‰nger	q3 11104,3981 11111,4055
-Am Britzer Garten - Straﬂe 229: Fuﬂg‰nger	q1 11111,4055 11141,4214 11153,4325
+Am Britzer Garten - Straﬂe 229: Fuﬂg‰nger	q1 11111,4055 11141,4214 11153,4306 11196,4325
+Am Britzer Garten - Straﬂe 229: Fuﬂg‰nger	q1 11153,4306 11125,4331
 Kaunstr.: Fuﬂg‰nger	q1 -999,2726 -984,2692
 (Rˆmerweg - Weg entlang der Bahnstrecke): enger Weg	q2 18445,9887 18436,9842 18421,9764
 Brascheweg: enge Straﬂe	q1 18881,9865 18810,9850
@@ -2339,6 +2339,8 @@ Ehrenfelsstr.: Fuﬂg‰ngerzone	q3 18737,8686 18778,8663
 (Weg an der Trabrennbahn - Maria-Matray-Str.): einige Fuﬂg‰nger, schmal	q2 19228,7610 19309,7760 19360,7819
 (Severingstr. - Parkweg): Fuﬂg‰nger, schmal	q2 13692,3024 13724,3026 13747,3016 13763,3015
 (Parkweg - Otto-Wels-Ring): Fuﬂg‰nger	q1 13763,3015 13787,3017
+Buchsteinweg - S‰ntisstr.: einige Fuﬂg‰nger	q1 9964,1839 9922,1896
+Wildmeisterdamm: Bordstein am Kˆlner Damm	q2 13640,2229 13827,2280
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -3233,6 +3235,8 @@ Am Heidehof: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -1410
 Lilli-Henoch-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 12357,15020 12388,14926
 Sinsheimer Weg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 13774,8849 13687,8734
 Hannaweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 20938,14066 20923,13953
+Feldrain: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25684,13172 25632,13214 25609,13232 25607,13459
+Pfarrhufenweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25599,13069 25684,13172
 Am Krusenick: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829
