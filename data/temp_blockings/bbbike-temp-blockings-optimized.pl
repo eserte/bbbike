@@ -340,33 +340,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20201002
-#: by: https://twitter.com/VIZ_Berlin/status/1312229648558850048
-#: by: https://pbs.twimg.com/media/EjX56WOWoAIPRUg?format=png&name=900x900
-#: by: https://www.berlin.de/events/4531106-2229501-schoeneberger-kuerbisfest.html (geplant für 2.+3.10.2021)
-#: by: https://www.eventbrite.com/e/22-schoneberger-kurbisfest-tickets-165249199805
-	2::temp 7001,9291 7012,9222 7035,9161 7101,9027 7201,8870
-	2::temp 6945,9142 7035,9161
-	2::temp 6975,8944 7101,9027 7308,9163
-	2::temp 7012,9222 7124,9226
-',
-         'from' => 1664528400,
-         'id' => 731,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Schöneberger Kürbisfest, Akazien- und Belziger Str. gesperrt, 01.10.2022 bis 02.10.2022',
-         'type' => 'gesperrt',
-         'until' => 1664747999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4011,7 +3985,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: also_indoor: traffic (H,B)
 #: XXX Stand 2021-07-31 und 2022-01-18: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden; März 2023: letzte Deckschicht ist drauf
 # REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2022-07-09
+#: last_checked: 2022-09-21 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-11-07
 	q3::inwork 14136,17170 13996,16959
@@ -4953,7 +4927,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-08-23 vvv
+#: last_checked: 2022-10-03 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-10-28 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
@@ -5044,14 +5018,16 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        undef,
        {
-         'data' => '#: add_fragezeichen: Bis wann gehen die Bauarbeiten? Ist der Kroppenstedtweg danach komplett asphaltiert?
-#: next_check: 2022-08-01
+         'data' => '#: next_check_id: WILHELMVONSIEMENSPARK-2019
+#: add_fragezeichen: Bis wann gehen die Bauarbeiten? Ist der Kroppenstedtweg danach komplett asphaltiert?
+#: last_checked: 2022-10-03
+#: check_frequency: 120d
 	2::inwork 983,15136 971,15193
 ',
          'from' => 1649541600,
          'id' => 3535,
          'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1194824.php',
-         'text' => 'Kroppenstedtweg: Bauarbeiten zwischen Dihlmannstr. und Hauptweg, Weg ist gesperrt, ab 11.04.2022, Ende der Bauarbeiten ist unbekannt',
+         'text' => 'Kroppenstedtweg: Bauarbeiten zwischen Dihlmannstr. und Hauptweg, Weg ist gesperrt, ab 11.04.2022, Ende der Bauarbeiten ist unbekannt (Stand Oktober 2022: Weg ist weitehin gesperrt)',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5102,7 +5078,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'until' => 1667232000
        },
        {
-         'data' => '#: osm_watch: way id="874517258" version="7"
+         'data' => '#: osm_watch: way id="874517258" version="9"
 #: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
 #: last_checked: 2022-09-30
@@ -5523,14 +5499,17 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
 #: XXX Dauern die Bauarbeiten und Sperrungen länger an?
 #: next_check: 2022-10-31 vvv
 #: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 4.10.2022)
+#: last_checked: 2022-10-03
 Georgenstr.	q4::inwork 9568,12688 9441,12670
 #: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
 #: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 30.9.2022) (inaktiv)
-#: last_checked: 2022-09-28 (mapillary) vvv
-#: next_check: 2022-09-30 vvv
+#: last_checked: 2022-10-03 vvv
+#: check_frequency: 7d vvv
+# REMOVED --- #: next_check: 2022-09-30 vvv
 Dorotheenstr.	q4::inwork 9742,12609 9870,12657
 Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check ^^^
 ',
@@ -5637,7 +5616,7 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-03
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -5851,7 +5830,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: also_indoor: traffic (G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-03
 #: check_frequency: 14d
 	q3::inwork 10755,13152 10846,13362
 ',
@@ -5864,7 +5843,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: also_indoor: traffic (G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-03
 #: check_frequency: 14d
 	q4::inwork 9475,12365 9489,12263
 ',
@@ -5907,6 +5886,41 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'recurring' => 1,
          'text' => 'Maybachufer: zwischen Nansenstr. und Liberdastr. jeden zweiten Sonntag Flohmarkt "Nowkoelln", siehe https://nowkoelln.de/',
          'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: URBANTECHREPUBLIC-2022
+#: XXX Wie lange bleibt das Gelände gesperrt? vvv
+#: last_checked: 2022-10-03 vvv
+#: check_frequency: 180d vvv
+#: next_check: 2026-12-31 vvv
+	2::temp 2987,16486 2869,16464 2832,16376 2847,16348 2839,16337 2800,16368 2720,16353 2696,16271 2757,16194
+	2::temp 2226,16096 2290,16022 2580,15939 2595,15922 2604,15875 2638,15842 2701,15853 2787,15870 2828,15903 2880,15884 2787,15870
+	2::temp 2996,15930 2960,15847 2944,15880 2913,15944 2880,15908 2828,15903 2810,15931 2818,15966 2846,15986 2954,16006 2988,15999 3009,15965 2996,15930 2977,15923 2949,15922 2913,15944 2809,16143 2757,16194 2709,16291 2692,16326 2621,16344 2552,16330 2517,16380 2538,16435 2601,16447 2638,16406 2675,16361 2733,16343 2812,16348 2853,16293 2839,16337
+	2::temp 2809,16143 2853,16293
+	2::temp 2880,15884 2960,15847
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+',
+         'from' => undef,
+         'id' => 3641,
+         'text' => 'Flughafen Tegel: Privatgelände, für den öffentlichen Verkehr gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: note: laut rbb
+#: also_indoor: traffic (H,B)
+#: add_fragezeichen: Sind Radfahrer auch betroffen?
+#: XXX Ende der Sperrung?
+	q4::inwork 16859,12613 16720,12614 16576,12612 16470,12612 16432,12612 16409,12612
+',
+         'from' => undef,
+         'id' => 3642,
+         'text' => 'Gotlindestr.: Wasserrohrbruch, zwischen Siegfriedstr. und Schottstr. gesperrt, evtl. sind auch Radfahrer betroffen, Ende der Sperrung unbekannt',
+         'type' => 'handicap',
          'until' => undef
        }
      

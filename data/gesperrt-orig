@@ -322,7 +322,7 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr-rat-19-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
-#: osm_watch: way id="4437134" version="12"
+#: osm_watch: way id="4437134" version="14"
 #: last_checked: 2022-09-30
 #: check_frequency: 120d
 Duisburger Str.	1 4183,10144 3880,10154
@@ -1174,7 +1174,7 @@ Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]	1 10862,17087 10891,1
 # 
 #: next_check_id: TRAMTURM-2021
 #: XXX wiederherstellen! (1no -> 1)
-#: last_checked: 2022-08-06
+#: last_checked: 2022-10-03
 #: next_check: 2022-12-22
 Alt-Moabit - Invalidenstr.	1no 7415,13060 7422,13012
 # 
@@ -3436,7 +3436,7 @@ Drängelgitter	BNP:2::trailer=7 -4234,11408
 #: by: https://nitter.cz/pic/orig/media%2FFcwyqHOXgAAeape.jpg
 #: by: https://www.facebook.com/vizberlin/posts/pfbid06LxJBbLf7E1BWSREAZxyQLbEtMmoQWyekoQVyZwYzUNCuLidZWQjvAgVxps92bz4l
 #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-baustart-fuer-aufwertung-des-historischen-rundwegs
-#: osm_watch: way id="358602468" version="4"
+#: osm_watch: way id="358602468" version="5"
 #: osm_watch: way id="24189226" version="21"
 #: XXX Qualität nach den Bauarbeiten?
 #: XXX wird es auch Bauarbeiten am Flutgraben geben?
@@ -3490,7 +3490,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # 
 #: next_check_id: TRAMTURM-2021
 #: XXX alten Eintrag hier wiederherstellen!
-#: last_checked: 2022-08-06
+#: last_checked: 2022-10-03
 #: check_frequency: 180d
 #: next_check: 2022-12-22
 Alt-Moabit - Invalidenstr.: Bauarbeiten, Gehweg gesperrt, Fahrbahn nur für Tram	2::inwork 7422,13012 7415,13060
@@ -3535,7 +3535,7 @@ Unter den Linden/Schadowstr.: Überqueren der Straße vor der Russischen Botschaft
 Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943 20948,18968
 # 
 #: by: https://www.hedwigs-kathedrale.de/umgestaltung/ (Umbauarbeiten bis 1. November 2023 geplant)
-#: last_checked: 2022-08-23
+#: last_checked: 2022-10-03
 #: check_frequency: 360d
 #: next_check: 2023-11-01
 Hedwigskathedrale: Durchgang wegen Bauarbeiten gesperrt	2::inwork 9808,12182 9775,12178 9771,12190 9747,12205 9755,12144
@@ -3589,7 +3589,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 1762
 #: osm_watch: way id="129104626" version="18"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-03
 #: check_frequency: 90d
 #: next_check: 2026-03-01
 Ida-von-Arnim-Str.: Bauarbeiten zwischen Pankeweg und Chausseestr., Einbahnstraße, offen Richtung Westen	1s:q3:inwork 8266,14346 8442,14456
@@ -3713,7 +3713,7 @@ Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise
 #: osm_watch: note 2832326 3
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-03
 #: check_frequency: 120d
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
 # 
@@ -3894,7 +3894,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 #: by: https://www.deutsches-architekturforum.de/thread/11167-erweiterung-des-admiralspalastes-in-bau/?postID=689721#post689721
 #: by: https://graftlab.com/projects/admiralspalast (Zeitraum 2017-2021)
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-09-17
+#: last_checked: 2022-10-03
 #: check_frequency: 60d
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833 9375,12911
 # 
@@ -3924,7 +3924,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="3"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="882672445" version="2"
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-03
 #: check_frequency: 60d
 #: next_check: 2022-11-30
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
@@ -4003,7 +4003,7 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: source_id: viz2021:13.409315,52.517356,20.02.2020,08:00 (bis 31.12.2022)
 #: note: laut rbb nur bis 31.08.2022
 # REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
-#: last_checked: 2022-09-20 vvv
+#: last_checked: 2022-10-03 vvv
 #: next_check: 2024-06-01 vvv
 Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285 10675,12280
@@ -4176,7 +4176,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: osm_watch: way id="47935842" version="15"
 #: osm_watch: way id="681299267" version="2"
 #: priority: #A vvv
-#: last_checked: 2022-09-30 vvv
+#: last_checked: 2022-10-03 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-02-27 vvv
 #: valid: -20230227 vvv
@@ -4513,7 +4513,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="23"
 #: also_indoor: traffic
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-03
 #: next_check: 2022-12-30
 # REMOVED --- #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, mindestens bis Ende 2022, vermutlich länger	2:inwork 8106,13130 8102,13304 8099,13391
@@ -4609,7 +4609,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="8"
-#: last_checked: 2022-09-23 vvv
+#: last_checked: 2022-10-03 vvv
 # REMOVED (fertig?) --- #: check_frequency: 60d vvv
 #: also_indoor: traffic (G)
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760

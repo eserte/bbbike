@@ -227,7 +227,7 @@ Am Kˆllnischen Park: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 11197,11882
 Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q3::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-08-24 vvv
+#: last_checked: 2022-10-03 vvv
 #: next_check: 2024-06-01 vvv
 (Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10804,12291 10830,12279
 #: next_check ^^^
@@ -240,7 +240,7 @@ Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q3::inwork 10102,12384 10063,12438
 #: source_id: 2147346552 (bis 16.7.2021)
 #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaﬂnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaﬂnahme unver‰ndert) (mittlerweile bis 31.7.2022) (mittlerweile kein Endedatum mehr) (bis 2.11.2022)
 #: note: bei rbb noch bis 05.08.2022
-#: last_checked: 2022-08-30
+#: last_checked: 2022-10-03
 #: check_frequency: 60d
 #: next_check: 2022-11-02
 Chausseestr.: Radweg auf gegen¸berliegenden B¸rgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -249,7 +249,7 @@ Chausseestr.: Radweg auf gegen¸berliegenden B¸rgersteig	q2::inwork; 8732,14098 8
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2022-09-30 vvv
+#: last_checked: 2022-10-03 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423
@@ -275,11 +275,11 @@ Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-03
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
-#: last_checked: 2022-09-17 (webcam)
+#: last_checked: 2022-10-03
 #: check_frequency: 60d
 (Grunerstr. - Gustav-Bˆﬂ-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10868,12572 10772,12515
 # 
@@ -543,18 +543,22 @@ Zufahrt Zentrum Schˆneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg,
 # 
 #: next_check_id: TRAMTURM-2021
 #: source_id: bvg2021:m27#BVG305466_0
-#: last_checked: 2022-08-06 vvv
-#: check_frequency: 90d vvv
 #: next_check: 2022-12-22 vvv
+#: check_frequency: 90d vvv
+#: last_checked: 2022-10-03 vvv
 #: osm_watch: way id="140336721" version="26"
 #: note: fr¸her "teilweise verwinkelte Wegf¸hrung des Radwegs - q1-::inwork;"
-Turmstr.: Bauarbeiten, Engstellen, teilweise F¸hrung des Radwegs ¸ber den engen Gehweg	q2+::inwork; 7069,13381 6919,13360 6814,13349 6692,13333 6674,13332 6535,13327 6377,13321 6228,13324
+# REMOVED (hier nicht mehr) --- Turmstr.: Bauarbeiten, Engstellen, teilweise F¸hrung des Radwegs ¸ber den engen Gehweg	q2+::inwork; 7069,13381 6919,13360 6814,13349 6692,13333
+Turmstr.: Bauarbeiten, teilweise F¸hrung des Radwegs ¸ber den engen Gehweg	q2+::inwork; 6692,13333 6674,13332 6535,13327 6377,13321
+# REMOVED (hier nicht) --- Turmstr.: Bauarbeiten, Engstellen, teilweise F¸hrung des Radwegs ¸ber den engen Gehweg	q2+::inwork; 6377,13321 6228,13324
 #: osm_watch: way id="30195541" version="28"
-#: last_checked: 2022-09-17
+#: last_checked: 2022-10-03
 Turmstr.: Bauarbeiten, Engstellen, Umweg ¸ber den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
-#: next_check ^^^
-#: check_frequency ^^^
 #: last_checked ^^^
+#: last_checked: 2022-10-03
+Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
+#: check_frequency ^^^
+#: next_check ^^^
 # 
 # REMOVED (offen) --- #: by: https://www.bahninfo-forum.de/read.php?9,689330,689356#msg-689356 (2021) --- #: by: https://www.berliner-woche.de/moabit/c-verkehr/kein-halt-an-der-birkenstrasse_a334325 (geplant f¸r 1. Quartal 2022) --- #: by: https://berliner-abendblatt.de/2022/01/24/kein-halt-am-u-bahnhof-birkenstrasse/ --- #: by: https://berliner-abendblatt.de/2022/03/16/bahnhof-birkenstrasse-jetzt-stufenlos-erreichbar/ --- #: by: https://www.berliner-woche.de/moabit/c-bauen/u-bahnhof-birkenstrasse-erhielt-weiteren-ausgang_a339752 --- #: XXX vermutlich wegen des neuen Aufzugs am U-Bhf. Birkenstr. --- #: also_indoor: traffic (ex-G,H) --- #: osm_watch: way id="746589388" version="17" --- #: osm_watch: way id="746589386" version="1" --- #: last_checked: 2022-03-16 (twitter) --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-03-31 --- Wilhelmshavener Str.: Abschnitt der Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 6089,14197 6093,13990
 # REMOVED (nicht mehr) --- #: next_check_id: HILDAGEIRINGERWEG-2019 --- #: source_id: 2147345153 (Gehwegarbeiten in der Invalidenstr., bis Anfang Dezember 2019) --- #: priority: #C vvv --- #: last_checked: 2020-10-10 vvv --- #: check_frequency: 30d vvv --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt	q3::inwork 8281,13394 8302,13430 8293,13527 --- Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur ¸ber Restaurantbereich	q4::inwork 8174,13397 8241,13393 8281,13394 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^
@@ -1949,7 +1953,7 @@ Oleanderstr.: Fuﬂg‰nger, Bordsteine	q4+ 14271,14024 14298,14015
 #: by: Sylke Sallmon:
 Pankgrafenstr. (Pankow): Fuﬂg‰nger, ggfs. schieben	q2 10470,18402 10502,18338
 #: by: Susanne Grittner (sort-of) vvv
-Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3585,16252 3587,16219 3546,16143 3518,16102 3490,16083 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3280,15543 3242,15523 3221,15498 3169,15396 3162,15314 3091,15182 2956,14752
+Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3585,16252 3587,16219 3546,16143 3518,16102 3490,16083 3358,15794 3299,15668 3282,15632 3290,15604 3328,15595 3335,15617 3316,15641 3301,15631 3273,15578 3280,15543 3242,15523 3221,15498 3169,15396 3162,15314 3091,15182 2956,14752
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2905,14754 2934,14852
 # REMOVED (hier breit genug) --- Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 2934,14852 3000,15048 3106,15384 3105,15487
 Kurt-Schumacher-Damm: Radweg in Gegenrichtung	q3; 3105,15487 3140,15503 3160,15603 3183,15599 3249,15654 3310,15790
@@ -2530,9 +2534,13 @@ Straﬂe 618: schmale Straﬂe	q1 16346,481 16320,538 16297,592
 Harry-Liedtke-Pfad: einige Fuﬂg‰nger	q1 15788,1747 15783,1820 15806,1903 15834,2024 15843,2065 15836,2113
 #: XXX_prog BS auf Nordseite (nicht allzu hoch), vielleicht auch auf der S¸dseite?
 Gormannstr.: Bordstein	q2 10350,13376 10353,13384
+# 
+#: note: Gr¸nanlagenschild gilt nicht f¸r diesen Weg vvv
 (Popitzweg - Halemweg): Fuﬂg‰nger	q2 1884,14412 2126,14392 2254,14387
 #: XXX_prog BS (ansonsten q2)
 (Popitzweg - Halemweg): Fuﬂg‰nger, Bordstein	q3 2254,14387 2371,14392
+#: note ^^^
+# 
 (Haeftenzeile - Weg ¸ber der U-Bahn): Fuﬂg‰nger	q1 2135,14475 2126,14392
 #: XXX_prog BS auf Nordseite
 (Wohlrabedamm - Reisstr.): Bordstein	q2 1311,14191 1314,14207
@@ -3873,7 +3881,7 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 (Barnimer Dˆrferweg - Gehrensee): einige Fuﬂg‰nger	q1 21035,19005 21040,19007 21015,19070
 #: note: Weg ist etwa 2m breit
 Landschaftspark Johannisthal: einige Fuﬂg‰nger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
-#: last_checked: 2022-09-17
+#: last_checked: 2022-10-03
 #: check_frequency: 60d
 # REMOVED (fr¸her: Schloﬂplatz: Fuﬂg‰nger	q2 10174,12284 10102,12384)
 Schloﬂplatz: Fuﬂg‰nger, Engstelle wegen Bauarbeiten am Einheitsdenkmal	q3 10174,12284 10102,12384
@@ -4859,7 +4867,9 @@ Altenburger Str.: Fuﬂg‰nger, Bordstein	q2 6651,1063 6631,968
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5783 (Schilder "Radfahren erlaubt. Fuﬂg‰nger haben Vorrang.") vvv
 #: XXX wird das Radfahren hier explizit erlaubt werden? vvv
-#: osm_watch: way id="114381362" version="6"
+#: osm_watch: way id="114381362" version="8"
+#: osm_watch: way id="1100622078" version="1"
+#: osm_watch: way id="1100622082" version="1"
 #: last_checked: 2022-04-13 (mapillary)
 #: check_frequency: 360d
 (Hildburghauser Str. - Lilienthalpark): Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. schieben, einige halbhohe Bordsteine	q2 6446,1033 6435,986 6446,950 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6223,823 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719
@@ -5668,6 +5678,7 @@ Bisonweg: enge Straﬂe	q0- -774,22977 -709,22909 -657,22854 -595,22791 -542,22736
 #: by: Sandro Flory:
 Flatower Str.: enge Straﬂe	q1 -5049,16987 -4999,16971 -4875,16928 -4821,16914 -4758,16910 -4628,16899 -4319,16879 -4151,16857
 #: by: Wolfram Ceder:
+#: note: am s¸dlichen Ende nur ein Fuﬂg‰ngerschild ohne Radfreigabe, aber im Park ist freigegeben
 #: corrected_by: srt/policy (q3 -> q2)
 Kroppenstedtweg: Fuﬂg‰nger haben Vorrang	q2 1056,14906 1035,14996 998,15094 983,15136 971,15193
 #: by: Hermann Weiﬂ vvv

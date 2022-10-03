@@ -95,7 +95,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1491370038774964227 --- #: by: https://pbs.twimg.com/media/FLEUIiEX0AA8mNx?format=jpg&name=large --- #: source_id: viz2021:13.157143,52.539213,09.02.2022,13:00 (bis 12.3.2022) --- #: valid: 20220209-20220312 vvv --- Klosterbuschweg/Torweg: Gegenverkehrsregelung	X::inwork -6442,14535 --- Klosterbuschweg/Torweg: Gegenverkehrsregelung	X::inwork -6451,14413 --- #: valid ^^^
 # 
 #: next_check_id: TRAMTURM-2021
-#: last_checked: 2022-08-06
+#: last_checked: 2022-10-03
 #: check_frequency: 180d
 #: next_check: 2022-12-22
 Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
@@ -122,7 +122,7 @@ Germanenstr.: Gegenverkehrsregelung	X::inwork 8268,19558
 #: source_id ^^^
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-03
 #: next_check: 2024-06-01
 Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
@@ -1444,6 +1444,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -1337,14538
 	X 5043,14671
 #: XXX_prog: gilt nicht für rechtsabbiegende Radfahrer (Beusselstr. -> Seestr.)
+#: XXX_prog: Richtung Norden zwei Ampeln, Zeitverlust, da gegeneinander geschaltet
 	X 5051,14606
 	X 5700,15043
 	X 13078,15586
@@ -1612,7 +1613,6 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12628,8711
 	X 5231,13843
 	X 5220,14043
-	X 5205,14253
 	X 5753,15096
 	X 5895,15229
 #: note: Anforderung für Radfahrer (Kontaktschleife) aus Richtung Petersallee
@@ -2019,7 +2019,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10432 (sichere Querungsmöglichkeit gefordert)
 #: XXX Ampel ausgeschaltet, vielleicht dauerhaft (Lynar/Tegeler)
 #: osm_watch: node id="3777205512" version="4"
-#: last_checked: 2022-09-30 (daf)
+#: last_checked: 2022-10-03
 #: check_frequency: 90d
 	X0 7259,14870
 #: note: Anforderungsampel für Radfahrer aus Richtung Osten Richtung Luisenstr. und für Radfahrer aus der Luisenstr.
@@ -3116,6 +3116,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 13163,12382
 	X -284,14738
 	F 609,14429
+#: note: Anforderungsampel für Radfahrer vom Wohlrabedamm kommend
 	X 1709,14243
 	X 7979,20528
 	F 198,4580
@@ -3141,7 +3142,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2022-09-30 vvv
+#: last_checked: 2022-10-03 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3163,7 +3164,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
 # 
 #: next_check_id: CHAUSSEE-2020
-#: last_checked: 2022-08-30
+#: last_checked: 2022-10-03
 #: check_frequency: 60d
 #: next_check: 2022-11-02
 	X::inwork 8732,14098
@@ -3197,9 +3198,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 	F 9659,14043
 #: XXX_prog Ampel existiert nur in Richtung Norden
-#: off: Sunday (seen 2019-11-03 14:50)
+#: off: Sunday (seen 2019-11-03 14:50, 2022-10-03 10:50)
 	X 5086,14504
-#: off: weekend/holiday
+#: off: Sunday? (seen 2022-10-03 (holiday) 10:50)
+	X 5205,14253
+#: off: weekend/holiday (seen 2022-10-03 (holiday) 11:20)
 	X 1932,14146
 	F -2866,17760
 	X -2728,17038
@@ -3488,7 +3491,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: CHAUSSEE-2020
 #: osm_watch: node id="26748289" version="9"
-#: last_checked: 2022-08-30
+#: last_checked: 2022-10-03
 #: check_frequency: 60d
 #: next_check: 2022-11-02
 	X::inwork 8336,14586
@@ -3501,7 +3504,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX erst einmal provisorisch
 #: osm_watch: node id="7041133991" version="2"
 #: note: Anforderungsampel
-#: last_checked: 2022-08-30
+#: last_checked: 2022-10-03
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 
