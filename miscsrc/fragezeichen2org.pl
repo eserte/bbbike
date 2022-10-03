@@ -237,11 +237,14 @@ for my $file (@files) {
 		 }
 	     }
 
+	     my $begincheck_date = $dir->{_begincheck_date} && $dir->{_begincheck_date}[0];
+
 	     my $nextcheck_date;
 	     my $nextcheck_wd;
 	     my $expiration_by_nextcheck;
-	     if ($has_nextcheck) {
-		 if (my($y,$m,$d) = $dir->{_nextcheck_date}[0] =~ m{^(\d{4})-(\d{2})-(\d{2})$}) {
+	     if ($has_nextcheck || $begincheck_date) {
+		 my $date = $has_nextcheck ? $dir->{_nextcheck_date}[0] : $begincheck_date;
+		 if (my($y,$m,$d) = $date =~ m{^(\d{4})-(\d{2})-(\d{2})$}) {
 		     my $epoch = eval { timelocal 0,0,0,$d,$m-1,$y };
 		     if ($@) {
 			 warn "ERROR: Invalid day '$dir->{_nextcheck_date}[0]' ($@) in file '$file', line '" . $r->[Strassen::NAME] . "', skipping...\n";
@@ -329,10 +332,7 @@ for my $file (@files) {
 
 	     # fresh Mapillary URL
 	     {
-		 my $date_from;
-		 if ($dir->{_begincheck_date}) {
-		     $date_from = $dir->{_begincheck_date}[0];
-		 }
+		 my $date_from = $begincheck_date;
 		 push @extra_url_defs, ['Mapillary', 'https://www.mapillary.com/app/?lat='.$py.'&lng='.$px.'&z=15' . ($date_from ? '&dateFrom='.$date_from : '')];
 	     }
 
@@ -540,7 +540,7 @@ EOF
 	     push @records, {
 			     body => $body,
 			     dist => $any_dist,
-			     (defined $nextcheck_date ? (date     => $nextcheck_date) : ()),
+			     (defined $nextcheck_date || defined $begincheck_date ? (date => $nextcheck_date || $begincheck_date) : ()),
 			     (defined $searches       ? (searches => $searches)       : ()),
 			    };
 	 }, passthru_without_nextcheck => 1);
