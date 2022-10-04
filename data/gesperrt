@@ -2254,9 +2254,9 @@ Lärmschutzwand	3nocross::ignrte 18496,2471 18656,2465 18929,2454
 North-Willys-Str. -> Ernst-Ruska-Ufer: Lärmschutzwand	3::igndisp 18644,2582 18656,2465 18929,2454
 Ernst-Ruska-Ufer -> North-Willys-Str.: Lärmschutzwand	3::igndisp 18496,2471 18656,2465 18644,2582
 Straßenbahntrasse	3nocross::ignrte 14843,15007 14828,15050 14686,15608
-Straßenbahntrasse	3nocross::ignrte 16460,17214 16578,17285 16837,17440
+Straßenbahntrasse	3nocross::ignrte 16460,17214 16525,17253 16578,17285 16837,17440
 Hansastr. -> Neuzeller Weg: Straßenbahntrasse	3::igndisp 16837,17440 16578,17285 16658,17142
-Neuzeller Weg -> Hansastr.: Straßenbahntrasse	3::igndisp 16658,17142 16578,17285 16460,17214
+Neuzeller Weg -> Hansastr.: Straßenbahntrasse	3::igndisp 16658,17142 16578,17285 16525,17253
 Mittelstreifen	3nocross::ignrte 18930,3703 18884,3752 18856,3783 18826,3816
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18592,3743 18884,3752 18856,3783
 Landschaftspark Johannisthal -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18833,3781 18856,3783 18826,3816
@@ -3308,7 +3308,7 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285 10675,12280
-Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
+Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	2::inwork 13422,11236 13537,11186 13540,11148
 Johannisstr.: Einbahnstraße	1s:inwork 9588,13174 9385,13174 9254,13171
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
 Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516

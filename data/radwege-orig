@@ -312,7 +312,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede
 #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert
 #: XXX hier wird ein Bürgersteigradweg entstehen, hoffentlich asphaltiert
-#: last_checked: 2022-10-02
+#: last_checked: 2022-10-04
 #: check_frequency: 30d
 #: next_check: 2022-12-16
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -3885,8 +3885,11 @@ Die letzten 40 Meter sind benutzungspflichtig	RW3; 11383,22369 11279,22316
 	RW2;RW1 18196,18254 18078,18224 17932,18133
 	RW2;RW3 17932,18133 17843,18078
 Gehweg für Radfahrer frei, die letzten 60 Meter sind benutzungspflichtig	RW1; 15662,16649 15437,16491
-Gehweg für Radfahrer frei	RW1;RW1 15662,16649 15735,16698 15776,16721 15892,16834 15986,16922 16139,17017 16296,17114 16318,17128 16352,17150 16460,17214 16578,17285
-Gehweg für Radfahrer frei	RW1; 16837,17440 16578,17285
+Gehweg für Radfahrer frei	RW1; 15662,16649 15735,16698 15776,16721 15892,16834 15986,16922 16139,17017 16296,17114 16318,17128 16352,17150 16460,17214 16525,17253 16578,17285
+Verbundsteinpflaster	RW1; 16837,17440 16578,17285 16525,17253
+alter Beton, Radweg nur aufgemalt	RW1; 16525,17253 16460,17214
+#: note: kurze Abschnitte mit Verbundsteinpflasterradweg
+Gehweg für Radfahrer frei	RW1; 16460,17214 16352,17150 16318,17128 16296,17114 16139,17017 15986,16922 15892,16834 15776,16721 15735,16698 15662,16649
 	RW2; 16578,17285 16837,17440
 	RW1;RW2 17400,17790 17159,17631
 	RW2;RW2 17159,17631 16947,17506

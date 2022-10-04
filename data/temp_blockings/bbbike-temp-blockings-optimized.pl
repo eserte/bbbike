@@ -5495,14 +5495,15 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
 #: by: https://berliner-abendblatt.de/2022/08/21/diese-baustellen-sorgen-fuer-staus/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/neue-gleise-und-weichen_a355298
 #: by: https://www.bahninfo-forum.de/read.php?9,708604,744663#msg-744663 (Verlängerung bis 11.12.2022)
-#: note: laut rbb ist die Georgenstr. nur bis 5.9.2022 gesperrt
+#: note: laut rbb ist die Georgenstr. länger (bis 6.10.2022) gesperrt
 #: XXX Dauern die Bauarbeiten und Sperrungen länger an?
 #: next_check: 2022-10-31 vvv
-#: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 4.10.2022)
+#: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 4.10.2022) (inaktiv)
 #: last_checked: 2022-10-03
 Georgenstr.	q4::inwork 9568,12688 9441,12670
 #: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
 #: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 30.9.2022) (inaktiv)
+#: source_id: viz2021:13.395207,52.520461,05.10.2022,07:00 (Am Kupfergraben, bis 17.10.2022)
 #: last_checked: 2022-10-03 vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2022-09-30 vvv
@@ -5645,19 +5646,7 @@ Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
          'type' => 'handicap',
          'until' => 1667404800
        },
-       {
-         'data' => '#: next_check_id: BAEKEBRUECKE-2022
-#: by: https://nitter.cz/VIZ_Berlin/status/1567764510751997953#m
-#: by: https://berliner-abendblatt.de/2022/09/08/vollsperrung-in-der-baekestrasse/
-#: source_id: viz2021:13.316483,52.434468,08.09.2022,09:37 (hier: bis 7.10.2022)
-	2::inwork 4587,3097 4659,3065
-',
-         'from' => 1662501600,
-         'id' => 3621,
-         'text' => 'Bäkebrücke: Bauarbeiten, Sperrung, angeblich sind Radfahrer nicht betroffen, bis 7.10.2022',
-         'type' => 'gesperrt',
-         'until' => 1665154800
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-wird-saniert_a357917
 #: source_id: viz2021:13.620087,52.497163,26.09.2022,08:00
@@ -5782,6 +5771,8 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
 #: by: https://berliner-abendblatt.de/2022/09/20/neubau-der-eisenacher-strasse-sperrung-vom-blumberger-damm-bis-gothaer-strasse/
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/die-riesaer-und-eisenacher-strasse-werden-erneuert_a358349
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10491 (Anfrage)
+#: by: https://berliner-abendblatt.de/2022/10/04/eisenacher-strasse-gesperrt-bauarbeiten-dauern-bis-2025/
+#: source_id: viz2021:13.575415,52.540241,05.10.2022,06:00 (hier nur Kfz-Verkehr, bis 10.11.2022)
 #: add_fragezeichen: Sind auch Radfahrer von den Bauarbeiten betroffen?
 #: check_frequency: 90d
 #: next_check: 2022-09-26
@@ -5915,6 +5906,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
 #: also_indoor: traffic (H,B)
 #: add_fragezeichen: Sind Radfahrer auch betroffen?
 #: XXX Ende der Sperrung?
+#: begin_check: 2022-10-03
 	q4::inwork 16859,12613 16720,12614 16576,12612 16470,12612 16432,12612 16409,12612
 ',
          'from' => undef,

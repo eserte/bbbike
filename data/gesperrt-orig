@@ -1416,8 +1416,10 @@ Parchimer Allee	1 14427,4571 14425,4593 14454,4626 14466,4624
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10440 (Antrag f¸r die ÷ffnung f¸r den Radverkehr, in der BVV abgelehnt)
 #: XXX Sind die Einbahnstraﬂen tats‰chlich f¸r den Radverkehr nicht offen? vvv
+#: begin_check: 2022-08-01 vvv
 Feldrain	1s:q4 25684,13172 25632,13214 25609,13232 25607,13459
 Pfarrhufenweg	1s:q4 25599,13069 25684,13172
+#: begin_check ^^^
 #: XXX ^^^
 # 
 # 
@@ -2202,7 +2204,7 @@ Bahnhofstr.: Straﬂenbahntrasse	3nocross 22116,5442 22087,5404 22054,5360 21954,5
 #: note: theoretisch w‰re das Linksabbiegen von der Fahrbahn aus mˆglich, aber der Radweg ist benutzungspflichtig
 Ernst-Ruska-Ufer: L‰rmschutzwand	3nocross 18496,2471 18656,2465 18929,2454
 Indira-Gandhi-Str.: Straﬂenbahntrasse	3nocross 14843,15007 14828,15050 14686,15608
-Hansastr.: Straﬂenbahntrasse	3nocross 16460,17214 16578,17285 16837,17440
+Hansastr.: Straﬂenbahntrasse	3nocross 16460,17214 16525,17253 16578,17285 16837,17440
 Groﬂ-Berliner Damm: Mittelstreifen	3nocross 18930,3703 18884,3752 18856,3783 18826,3816
 Groﬂ-Berliner Damm: Mittelstreifen	3nocross 18826,3816 18779,3866 18739,3909
 Groﬂ-Berliner Damm: Mittelstreifen	3nocross 18930,3703 19029,3595 19125,3491
@@ -4014,12 +4016,12 @@ Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/edge-eastside-tower-140m.18/page-13#post-14549
 #: XXX wann sind die Bauarbeiten beendet?
-#: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realit‰t weiterhin Einbahnstraﬂe
+#: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realit‰t weiterhin Einbahnstraﬂe --- mittlerweile (oder manchmal?) tats‰chlich gesperrt
 #: osm_watch: way id="5096644" version="19"
 #: priority: #C
-#: last_checked: 2022-10-01
+#: last_checked: 2022-10-04
 #: check_frequency: 90d
-Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
+Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	2::inwork 13422,11236 13537,11186 13540,11148
 # 
 #: next_check_id: TACHELES-2020
 #: XXX Wann wird die Einbahnstraﬂenregelung wieder aufgehoben? (vermutlich zusammenh‰ngend mit den Bauarbeiten am Tacheles)
@@ -4168,7 +4170,7 @@ Wuhletalbr¸cke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: also_indoor: traffic (G,H,B(teilweise))
 #: source_id: 2147343289 (bis 30.6.2021)
 #: source_id: 2147343291 (Einbahnstraﬂe in der Glinkastr.) (mittlerweile inaktiv)
-#: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022) (inaktiv)
+#: source_id: viz2021:13.384789,52.514472,10.10.2018,13:30 (bis 30.9.2022) (inaktiv) (wieder aktiv, bis 27.2.2023)
 #: source_id: viz2021:13.38622,52.51458,29.09.2022,18:08 (bis 27.2.2023) (inaktiv)
 #: note: laut rbb ebenfalls bis 30.9.2022
 #: osm_watch: way id="43233756" version="20"
@@ -4430,12 +4432,12 @@ Zuwegung Kieler Br¸cke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_25_2105_2220_online.pdf (Straﬂenbenennung)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/upside-berlin-max-und-moritz.182/
 #: XXX geplante Benennung: Anita-Berber-Platz (fehlt in Berlin.coords.data)
-#: last_checked: 2022-09-22
+#: last_checked: 2022-10-04
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: wegen Bauarbeiten gesperrt	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2022-09-22
+#: last_checked: 2022-10-04
 #: check_frequency: 90d
 Rummelsburger Platz: zur H‰lfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 

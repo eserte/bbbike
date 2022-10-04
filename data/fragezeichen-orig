@@ -78,7 +78,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-16 vvv
-#: last_checked: 2022-10-02
+#: last_checked: 2022-10-04
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
 # REMOVED (hier realisiert) --- Stralauer Allee: Radspur geplant	?::projected; 13596,10722 13633,10705 13678,10685 13779,10642 13850,10612 13919,10583
 # REMOVED (hier in Bau, siehe radwege-orig-Eintrag) --- Stralauer Allee: Radspur geplant	?::projected; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -830,11 +830,11 @@ Semmelweisstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 18922,2
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1238192.php (neue Fahrbahndeckschicht bis 16.09.2022, Radfahrer werden an der Baustelle vorbeigeführt)
 #: by: https://nitter.cz/VIZ_Berlin/status/1564830337418625026#m
 #: by: https://nitter.cz/pic/media%2FFbaIuHGXkAAnDYx.jpg%3Fname%3Dorig
-#: source_id: viz2021:13.533794,52.417045,31.08.2022,07:00 (bis 16.9.2022) (mittlerweile bis 30.9.2022)
+#: source_id: viz2021:13.533794,52.417045,31.08.2022,07:00 (bis 16.9.2022) (mittlerweile bis 30.9.2022) (mittlerweile bis 7.10.2022)
 #: osm_watch: way id="71960720" version="14"
 #: last_checked: 2022-06-18
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2022-09-30
+#: next_check: 2022-10-07
 Schönefelder Chaussee: Einrichtung einer Radverkehrsanlage geplant	?::projected; 19412,1387 19460,1430 19498,1465 19579,1543
 # 
 #: XXX Ag.6
@@ -1294,7 +1294,8 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: osm_watch: way id="111283481" version="15"
 #: source_id: 2147344555 (bis Ende August 2019, Gleisbauarbeiten, inaktiv)
-#: last_checked: 2022-08-24
+#: source_id: viz2021:13.487447,52.556905,05.10.2022,07:00 (Kabelarbeiten, bis 9.12.2022)
+#: last_checked: 2022-09-07 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2023-06-30
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 15437,16491 15662,16649 15735,16698 15776,16721 15892,16834 15986,16922 16139,17017 16296,17114 16318,17128
@@ -1308,10 +1309,10 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 15437,16491 15662,16649
 #: osm_watch: way id="51317007" version="29"
 #: osm_watch: way id="624116238" version="10"
 #: source_id: 2147344016 (bis Ende Mai 2019) (inaktiv)
-#: last_checked: 2022-04-09 (mapillary)
+#: last_checked: 2022-09-07 (mapillary)
 #: check_frequency: 180d
 #: next_check: 2024-12-31
-Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285 16460,17214 16352,17150 16318,17128
+Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285 16525,17253 16460,17214 16352,17150 16318,17128
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4378&d=20191222
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-09-2018.pdf (Zweirichtungsradweg geplant)
@@ -4592,7 +4593,7 @@ Hermann-Hesse-Str.: gibt es Änderungen nach den Bauarbeiten (z.B. neue Radspuren
 #: osm_watch: way id="297138724" version="10"
 #: osm_watch: way id="4764689" version="31"
 #: XXX außerdem Fahrradstraßen in den angrenzenden Nebenstraßen + Waldstr.
-#: last_checked: 2022-09-03 (mapillary)
+#: last_checked: 2022-10-03 (mapillary)
 #: check_frequency: 360d
 #: next_check: 2024-12-31
 Hermann-Hesse-Str.: geschützte Radfahrstreifen geplant	?::projected 9870,19360 9936,19402 9982,19413 10002,19418 10014,19421 10228,19480 10250,19504 10257,19542
@@ -5625,6 +5626,7 @@ Bundespräsidenten-Dreieck: von der Joachim-Karnatz-Allee und Paulstr. (Fahrbahn)
 #: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
 #: by: https://www.potsdam.de/sites/default/files/documents/abl_pdmstadt_14_2015_web.pdf
 #: XXX prüfen und ggfs. zu NN machen
+#: begin_check: 2015-12-30
 Kastanienallee (Potsdam): teilweise Entwidmung für den Kfzverkehr	? -14753,-2470 -14859,-2384
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/potsdamer-mitte-2020_de_web_0.pdf (Herstellung ab 2021)
@@ -8908,6 +8910,7 @@ Köpenicker Allee 146-162: Wohngebiet geplant, Wege werden entstehen	?::projected
 #: by: https://www.stadtentwicklung.berlin.de/planen/fnp/pix/buergerbeteiligung/download/0322/0322.pdf
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/buerger-koennen-sich-im-beteiligungsverfahren-noch-bis-14-oktober-aeussern_a358727
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9560 (Anfrage)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1250901.php
 #: last_checked: 2022-08-14
 #: next_check: 2023-08-01
 Trabrennbahn Karlshorst: Wohngebiet geplant, werden hier auch neue Straßen entstehen?	?::projected 18598,7984 18460,7777 18892,7197 19013,7427 18598,7984
