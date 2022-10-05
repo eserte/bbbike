@@ -252,7 +252,7 @@ for my $file (@files) {
 		     } else {
 			 $nextcheck_wd = [qw(Su Mo Tu We Th Fr Sa)]->[(localtime($epoch))[6]];
 			 $nextcheck_date = "$y-$m-$d";
-			 if ($dir->{_nextcheck_label}[0] =~ /^next check/) { # condition is a little bit hacky, because of the string match
+			 if (($dir->{_nextcheck_label}[0]||'') =~ /^next check/) { # condition is a little bit hacky, because of the string match
 			     $expiration_by_nextcheck = 1;
 			 }
 		     }
