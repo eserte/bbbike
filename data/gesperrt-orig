@@ -175,7 +175,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
-#: osm_watch: way id="4490214" version="16"
+#: osm_watch: way id="4490214" version="18"
 #: last_checked: 2022-09-16
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
@@ -1190,11 +1190,11 @@ Stahlheimer Str.	1 11727,16358 11698,16311
 # REMOVED (hier nicht mehr, dauerhaft?) --- Am Zirkus	1s:q4 9239,12923 9212,12969
 Am Zirkus	1s:q4 9212,12969 9167,13046 9137,13032
 DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615,9675 1724,9772
-#: note implizite Fahrtrichtung
+#: note: implizite Fahrtrichtung, allerdings suggerieren die Verkehrsschilder (Spielstraßenschild), dass die Fahrbahnen in beide Richtungen befahren werden können
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="12"
-#: last_checked: 2022-06-06
+#: last_checked: 2022-10-05
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -1415,12 +1415,9 @@ Parchimer Allee	1 14466,4624 14427,4571
 Parchimer Allee	1 14427,4571 14425,4593 14454,4626 14466,4624
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10440 (Antrag für die Öffnung für den Radverkehr, in der BVV abgelehnt)
-#: XXX Sind die Einbahnstraßen tatsächlich für den Radverkehr nicht offen? vvv
-#: begin_check: 2022-08-01 vvv
+# REMOVED (ja) --- #: XXX Sind die Einbahnstraßen tatsächlich für den Radverkehr nicht offen? vvv --- #: begin_check: 2022-08-01 vvv
 Feldrain	1s:q4 25684,13172 25632,13214 25609,13232 25607,13459
-Pfarrhufenweg	1s:q4 25599,13069 25684,13172
-#: begin_check ^^^
-#: XXX ^^^
+# REMOVED --- #: begin_check ^^^ --- #: XXX ^^^
 # 
 # 
 ######################################################################
@@ -1903,7 +1900,7 @@ Schnellerstr.: Mittelstreifen	3nocross 17293,6230 17216,6308 16909,6628 16838,67
 Stendaler Str.: Straßenbahntrasse	3nocross 23895,15450 23913,15333 23933,15209 23952,15086
 #: note: einige Meter nördlich der Henny-Porten-Str. existiert eine Fußgängerfurt
 Stendaler Str.: Straßenbahntrasse	3nocross 23933,15209 23952,15086 23960,15021
-Allee der Kosmonauten: Straßenbahntrasse	3nocross 20474,14442 20611,14445 20657,14446 20727,14467
+Allee der Kosmonauten: Straßenbahntrasse	3nocross 20474,14442 20611,14445 20657,14446 20710,14454
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20944,14840 20980,14914 21018,14991 21025,15005 21099,15158 21163,15289
 Attilastr.: Mittelstreifen	3nocross 7410,4373 7450,4397 7482,4416
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20262,14255 20249,14143 20235,14017 20207,13778
@@ -3427,6 +3424,8 @@ Halbschranke	BNP:0::trailer=1 28519,337
 Tor	BNP:10 1432,1953
 Tor	BNP:10 1473,1740
 Drängelgitter	BNP:2::trailer=7 -4234,11408
+#: note: manchmal offen, manchmal geschlossen; falls zu, dann vielleicht besser den Bürgersteig benutzen
+Schranke	BNP:5::trailer=15 23221,15226
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3486,7 +3485,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=715173#post715173
 #: XXX culdesac-Eintrag für die Spreestr. anpassen!
-#: last_checked: 2022-08-07
+#: last_checked: 2022-10-05
 #: check_frequency: 45d
 (Uferweg): Bauarbeiten, noch gesperrt	2::inwork 21901,5117 21822,5153
 # 
@@ -3828,9 +3827,10 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 # REMOVED (hier dauerhaft) --- Kieler Str. - Marderweg - Feldrain: gesperrt, vielleicht dauerhaft	2 25814,13240 25723,13137
 # REMOVED (offen) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.860040.php (Deckeneinbau in der 47. KW 2019) --- #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/der-bezirk-baut-teilstrecke-des-fernradweges-zr1-an-der-albert-kuntz-strasse_a239161 --- #: by: https://api.fixmyberlin.de/api/projects/182 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_53_8205_8368_online.pdf (Widmung von Straßenland) --- #: XXX außerdem wird hier irgendwo die Radroute ZR1 entlanggeführt --- südlich oder nördlich der U5? Genaue Routenführung? --- #: XXX wird der Weg westlich der Louis-Lewin-Str. beleuchtet sein? --- #: last_checked: 2020-04-26 --- (Sebnitzer Str. - Hoyerswerdaer Str.): Bauarbeiten, Wege sind noch gesperrt	2::inwork 24894,15000 24915,15008 25031,15027 25089,15037 25206,15044 25221,15028
 # 
+#: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-09-28
+#: last_checked: 2022-10-05
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -4146,7 +4146,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 # 
 #: next_check_id: SCHOENEWEIDE-2018
 #: by: http://thomas.krickstadt.de/strassenbahnen/verkehrsloesung-schoeneweide/2022-09-13-verkehrsloesung-schoeneweide/index.html
-#: last_checked: 2022-10-02 (krickstadt)
+#: last_checked: 2022-10-05
 #: check_frequency: 120d
 (Bushaltestelle und Straßenbahnwendeschleife Schöneweide): wegen Bauarbeiten gesperrt	2::inwork 17736,5441 17675,5521 17588,5573 17578,5566
 # 

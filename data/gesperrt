@@ -922,7 +922,6 @@ Schönegarten: verschlossene Tore an beiden Enden	2 7416,10492 7432,10546 7330,10
 Parchimer Allee	1 14466,4624 14427,4571
 Parchimer Allee	1 14427,4571 14425,4593 14454,4626 14466,4624
 Feldrain	1s 25684,13172 25632,13214 25609,13232 25607,13459
-Pfarrhufenweg	1s 25599,13069 25684,13172
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1406,10 +1405,10 @@ Quedlinburger Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 24009,15094 2
 Quedlinburger Str. -> Henny-Porten-Str.: Straßenbahntrasse	3::igndisp 24009,15094 23952,15086 23833,15066
 Henny-Porten-Str. -> Stendaler Str.: Straßenbahntrasse	3::igndisp 23833,15066 23952,15086 23933,15209
 Henny-Porten-Str. -> Quedlinburger Str.: Straßenbahntrasse	3::igndisp 23833,15066 23952,15086 24009,15094
-Straßenbahntrasse	3nocross::ignrte 20474,14442 20611,14445 20657,14446 20727,14467
+Straßenbahntrasse	3nocross::ignrte 20474,14442 20611,14445 20657,14446 20710,14454
 Allee der Kosmonauten -> Fichtelbergstr.: Straßenbahntrasse	3::igndisp 20474,14442 20611,14445 20609,14480
 Fichtelbergstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20609,14480 20611,14445 20657,14446
-Allee der Kosmonauten -> Charlottenstr.: Straßenbahntrasse	3::igndisp 20727,14467 20657,14446 20647,14341
+Allee der Kosmonauten -> Charlottenstr.: Straßenbahntrasse	3::igndisp 20710,14454 20657,14446 20647,14341
 Charlottenstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20647,14341 20657,14446 20611,14445
 Straßenbahntrasse	3nocross::ignrte 20944,14840 20980,14914 21018,14991 21025,15005 21099,15158 21163,15289
 Allee der Kosmonauten -> Schragenfeldstr.: Straßenbahntrasse	3::igndisp 21018,14991 20980,14914 21027,14886
@@ -3242,6 +3241,7 @@ Halbschranke	BNP:0:-2:trailer=1 28519,337
 Tor	BNP:10:-180 1432,1953
 Tor	BNP:10:-196 1473,1740
 Drängelgitter	BNP:2:-126:trailer=7 -4234,11408
+Schranke	BNP:5:-188:trailer=15 23221,15226
 Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 13333,9929 13271,9927 13225,9897 13109,9743 12905,9470
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563

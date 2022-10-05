@@ -1211,7 +1211,7 @@ Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788&d=20191216 (Benennung nach Hans Otto Obrikat vorgeschlagen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_29_1829_2008_online.pdf (Straßenlandwidmung, als "Schnellerstr." bezeichnet)
 #: XXX oder wird statt Wasserstr. und Uferstr. die Straße nach Hans Otto Obrikat benannt? (erster Vorschlag: "Else-Schierhorn-Str.")
-#: last_checked: 2022-08-04 (mapillary)
+#: last_checked: 2022-10-05
 #: check_frequency: 60d
 Wasserstr. und Uferstr.: noch nicht ausgeschildert	CS 17483,6024 17681,6212 17847,6089
 # 
@@ -1338,7 +1338,7 @@ Waldpromenade: nicht ausgeschildert	CS 23473,8114 23376,8186 23261,8274 23149,83
 (Enckestr. - Friedrichstr.): entlang taz-Gebäude und Besselpark	CS; 9666,10848 9537,10837
 (Friedrichstr. - Enckestr.): ausgeschildert Friedrichstrasse 23 23A 23B; entlang taz-Gebäude und Besselpark	CP2; 9537,10837 9666,10848
 # 
-#: last_checked: 2022-09-03
+#: last_checked: 2022-10-05
 #: check_frequency: 90d
 Mergenthalerring: nicht ausgeschildert	CP2; 14261,8851 14252,8829
 # 
@@ -1354,7 +1354,7 @@ Bochumer Platz: als Bundesratufer ausgeschildert	CP2; 5914,12845 5938,12848
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_53_8205_8368_online.pdf (Widmung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_06_0673_0824_online.pdf (Eingruppierung in die Straßenreinigungsverzeichnisse)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_54_4961_5184_online.pdf (Eingruppierung in die Straßenreinigungsverzeichnisse)
-#: last_checked: 2022-06-06 vvv
+#: last_checked: 2022-10-05 vvv
 #: check_frequency: 120d vvv
 # REMOVED --- An der Dahme: nicht ausgeschildert	CS 22270,2549 22358,2460
 # REMOVED --- Gaffelsteig: nicht ausgeschildert	CS 22287,2431 22221,2520
@@ -1471,7 +1471,8 @@ ausgeschildert nach Königs Wusterhausen	CP; 20187,-20230 20738,-20432 20707,-202
 # 
 ausgeschildert Köriser Str.	CP2; 23482,-22742 23775,-22788
 # 
-(Tangermünder Str. - Stendaler Str.): Rampe benutzen um Treppen zu vermeiden	CP2; 24169,15497 24076,15481
+#: note: beim direkten Weg gibt es zwei Stufen
+(Tangermünder Str. - Stendaler Str.): Rampe benutzen, um Treppen zu vermeiden	CP2; 24169,15497 24076,15481
 # 
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.993292.php (neuer Name)
 Helmholtz-Zentrum, früher Hahn-Meitner-Institut	CS -9313,54 -8629,175 -8387,190 -8398,242 -8301,326 -8021,393 -7844,392 -7742,330 -7737,316
@@ -1710,7 +1711,7 @@ ausgeschildert als "Zugang zur Falkstr. 23"	CP2; 12195,7916 12414,7965
 ausgeschildert als "Falkstr. 25"	CP2; 12186,7952 12219,7958
 # 
 #: add_fragezeichen: Ist die Brigitte-Reimann-Str. ausgeschildert?
-#: last_checked: 2022-08-09 (mapillary)
+#: last_checked: 2022-10-05
 Brigitte-Reimann-Str.: noch nicht ausgeschildert	CS 23368,15469 23363,15517 23388,15637
 # 
 Klaus-Selmke-Str.: Straßenname ist nicht offiziell, Privatgrundstück	CS 21130,11384 21275,11547

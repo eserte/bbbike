@@ -4573,13 +4573,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://berliner-abendblatt.de/2022/09/10/bauarbeiten-strassenbahnlinie-m13-wird-verkuerzt/ (bis 9.12.2022)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/ersatzverkehr-auf-zwei-tramlinien_a357227
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/die-bvg-erneuert-gleisanlagen_a356780
+#: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (hier bis 9.12.2022)
 #: source_id: viz2021:13.474058,52.512017,12.09.2022,07:00 (hier: bis 2.10.2022) (bis 11.12.2022)
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
-#: last_checked: 2022-10-01 vvv
+#: last_checked: 2022-10-05 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2022-12-11 vvv
+#: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
 Weichselstr./Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924
 Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork 15077,11910 15133,11902 15256,11884
@@ -5041,7 +5042,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: note: Baustelle existiert weiterhin, trotz der entfernten VIZ-Meldung; laut rbb bis 30.11.2022
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
 #: also_indoor: traffic (G,H,B) vvv
-#: last_checked: 2022-09-15 vvv
+#: last_checked: 2022-10-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2022-08-02 vvv
 	q4::inwork; 15560,7400 15693,7512
@@ -5100,7 +5101,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: HAENSEL-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-G(falsch))
-#: last_checked: 2022-09-15
+#: last_checked: 2022-10-05
 	q4::inwork; 15436,7031 15555,7133 15695,7254
 ',
          'from' => undef,
@@ -5147,6 +5148,7 @@ Am Bahndamm	2::inwork 21984,6317 22238,6195
 #: by: https://nitter.net/pic/media%2FFSTWWSqXIAAPomO.jpg%3Fname%3Dorig
 #: by: https://www.berliner-woche.de/buch/c-verkehr/kinder-sollen-sicher-zur-schule-und-kita-kommen_a348113 (demnächst Abriss der Eisenbahnbrücke)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf 
+#: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf ("weiterhin für ca. 2 Jahre")
 #: source_id: bvg2021:150#BVG300484_0
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022)
 	q4::inwork; 16166,25767 16121,25818
@@ -5495,10 +5497,12 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
 #: by: https://berliner-abendblatt.de/2022/08/21/diese-baustellen-sorgen-fuer-staus/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/neue-gleise-und-weichen_a355298
 #: by: https://www.bahninfo-forum.de/read.php?9,708604,744663#msg-744663 (Verlängerung bis 11.12.2022)
+#: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (hier noch bis 10.10.2022, danach Sperrung der Oranienburger Str. (gleiche Linien betroffen))
 #: note: laut rbb ist die Georgenstr. länger (bis 6.10.2022) gesperrt
 #: XXX Dauern die Bauarbeiten und Sperrungen länger an?
-#: next_check: 2022-10-31 vvv
+#: next_check: 2022-10-10 vvv
 #: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 4.10.2022) (inaktiv)
+#: source_id: viz2021:13.392073,52.520077,06.10.2022,09:30 (bis 19.10.2022)
 #: last_checked: 2022-10-03
 Georgenstr.	q4::inwork 9568,12688 9441,12670
 #: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
@@ -5507,7 +5511,7 @@ Georgenstr.	q4::inwork 9568,12688 9441,12670
 #: last_checked: 2022-10-03 vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2022-09-30 vvv
-Dorotheenstr.	q4::inwork 9742,12609 9870,12657
+# REMOVED (laut rbb hier aufgehoben) --- Dorotheenstr.	q4::inwork 9742,12609 9870,12657
 Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -5516,9 +5520,9 @@ Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
 ',
          'from' => 1661032800,
          'id' => 3608,
-         'text' => 'Dorotheenstr. und Georgenstr.: Gleisarbeiten, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung Am Kupfergraben, gesperrt ab Bauhofstr., vom 22. August 2022 bis 10. Oktober 2022, wird möglicherweise bis Dezember 2022 verlängert',
+         'text' => 'Georgenstr.: Gleisarbeiten, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung Am Kupfergraben, gesperrt ab Bauhofstr., vom 22. August 2022 bis 10. Oktober 2022, evtl. wird verlängert',
          'type' => 'handicap',
-         'until' => 1670778000
+         'until' => 1666022400
        },
        {
          'data' => '#: note: Einbahnstraße etwa 70m lang
@@ -5647,18 +5651,7 @@ Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
          'until' => 1667404800
        },
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/pilgramer-strasse-wird-saniert_a357917
-#: source_id: viz2021:13.620087,52.497163,26.09.2022,08:00
-	q4::inwork 25048,10317 25112,10415 25125,10435 25147,10487 25150,10555
-',
-         'from' => 1664056800,
-         'id' => 3622,
-         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1245614.php',
-         'text' => 'Pilgramer Str.: Bauarbeiten, Sperrung der Fahrbahn, 26. September 2022 bis 5. Oktober 2022',
-         'type' => 'handicap',
-         'until' => 1664982000
-       },
+       undef,
        {
          'data' => '#: next_check_id: BAHNHOF-2022
 #: by: https://az-lichtenrade.de/wp-content/uploads/2022/09/220907_ba1_umleitung_karte_komprimiert.pdf
@@ -5755,7 +5748,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
 #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag)
 #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00
 #: also_indoor: traffic (B)
-#: last_checked: 2022-09-29
+#: last_checked: 2022-10-05
 #: check_frequency: 21d
 #: next_check: 2022-10-30
 	q3::inwork 15674,10851 15870,10938
@@ -5766,24 +5759,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1246724.php (Gesamtbaumaßnahme bis Ende 2025, auch werden neue Radwege gebaut)
-#: by: https://berliner-abendblatt.de/2022/09/20/neubau-der-eisenacher-strasse-sperrung-vom-blumberger-damm-bis-gothaer-strasse/
-#: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/die-riesaer-und-eisenacher-strasse-werden-erneuert_a358349
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10491 (Anfrage)
-#: by: https://berliner-abendblatt.de/2022/10/04/eisenacher-strasse-gesperrt-bauarbeiten-dauern-bis-2025/
-#: source_id: viz2021:13.575415,52.540241,05.10.2022,06:00 (hier nur Kfz-Verkehr, bis 10.11.2022)
-#: add_fragezeichen: Sind auch Radfahrer von den Bauarbeiten betroffen?
-#: check_frequency: 90d
-#: next_check: 2022-09-26
-	q4::inwork; 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
-',
-         'from' => 1664056800,
-         'id' => 3631,
-         'text' => 'Eisenacher Str. (Marzahn-Hellersdorf): Bauarbeiten, Einbahnstraßenregelung, offen Richtung Hellersdorf, ab 26. September 2022',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '	2::inwork 39156,37578 38986,37512 38171,37238 37672,36908 36605,36450
 ',
@@ -5903,15 +5879,21 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        },
        {
          'data' => '#: note: laut rbb
-#: also_indoor: traffic (H,B)
-#: add_fragezeichen: Sind Radfahrer auch betroffen?
-#: XXX Ende der Sperrung?
-#: begin_check: 2022-10-03
-	q4::inwork 16859,12613 16720,12614 16576,12612 16470,12612 16432,12612 16409,12612
+#: also_indoor: traffic (H,B) vvv
+#: XXX Ende der Sperrung? vvv
+#: check_frequency: 14d vvv
+#: last_checked: 2022-10-05 vvv
+einige Meter vor der Siegfriedstr. gesperrt, evtl. Bordsteine	q3::inwork 16859,12613 16720,12614
+etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
+# REMOVED (hier nicht) ---	q4::inwork 16576,12612 16470,12612 16432,12612 16409,12612
+#: last_checked ^^^
+#: check_frequency ^^^
+#: XXX ^^^
+#: also_indoor ^^^
 ',
          'from' => undef,
          'id' => 3642,
-         'text' => 'Gotlindestr.: Wasserrohrbruch, zwischen Siegfriedstr. und Schottstr. gesperrt, evtl. sind auch Radfahrer betroffen, Ende der Sperrung unbekannt',
+         'text' => 'Gotlindestr.: Wasserrohrbruch, Fahrbahn abschnittsweise zwischen Siegfriedstr. und Atzpodienstr. gesperrt, Ende der Sperrung unbekannt',
          'type' => 'handicap',
          'until' => undef
        }

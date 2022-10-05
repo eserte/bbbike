@@ -832,6 +832,7 @@ Dahlwitz-Hoppegarten, Gemeinde Hoppegarten	OS 27080,12573
 Dahlwitz-Hoppegarten, Gemeinde Hoppegarten	OS 29212,12831
 #: linked ^^^
 # 
+#: note: mittlerweile ausgeschildert "Rennbahngemeinde Hoppegarten Ortsteil Hönow" vvv
 Hönow	OS 25497,17801
 Hönow	OS 26493,15515
 Hönow	OS 25528,15587
@@ -847,6 +848,7 @@ Hönow	OS 27687,15059
 Hönow	OS 27051,15392
 Hönow	OS 26014,15039
 Hönow	OS 26902,15658
+#: note ^^^
 # 
 Altlandsberg	OS 33025,18125
 Altlandsberg	OS 31053,15975
@@ -1518,6 +1520,7 @@ Erkner	OS 33525,2901
 Erkner	OS 34129,510
 Erkner	OS 34515,4401
 # 
+#: note: mittlerweile ausgeschildert "Rennbahngemeinde Hoppegarten Ortsteil Waldesruh" vvv
 Waldesruh	OS 24585,7457
 Waldesruh	OS 24644,7543
 Waldesruh	OS 24812,7999
@@ -1529,6 +1532,11 @@ Waldesruh	OS 24753,8251
 Waldesruh	OS 25169,9114
 Waldesruh	OS 25344,9364
 Waldesruh	OS 25476,9561
+Waldesruh	OS 25507,7428
+#: note ^^^
+# 
+#: note: zusätzlich zu Hoppegarten/Waldesruh ausgeschildert
+Ravenstein	OHT 25507,7428
 # 
 #: note: allerdings fehlt zurzeit (2015-08) das Schild, nur die Umrahmung ist da
 Schöneiche	OS 19678,-817
@@ -1744,6 +1752,7 @@ Berlin	OS 22993,-1340
 #: note: vermutet
 Berlin	OS -1319,1432
 Berlin	OS -920,1444
+Berlin	OS 25507,7428
 # 
 Mehrow	OS 25861,19127
 Mehrow	OS 25253,18365
@@ -1767,8 +1776,6 @@ Eiche	OS 22860,18555
 # 
 #: linked: Eiche|b. Potsdam
 Eiche	OS -17725,94
-# 
-Ravenstein	OHT 25507,7428
 # 
 Großziethen	OS 13248,1092
 Großziethen	OS 13342,1145

@@ -480,7 +480,7 @@ Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
 #: osm_watch: way id="40451054" version="14"
-#: last_checked: 2022-08-14 (krickstadt)
+#: last_checked: 2022-10-05
 #: next_check: 2023-03-31
 #: valid: -20230331
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
@@ -616,9 +616,9 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 # 
 #: next_check_id: WESER-2021
 #: XXX: im Kreuzungsbereich wird ein Kfz-Diagonalfilter entstehen
-#: osm_watch: way id="1050315263" version="4"
-#: osm_watch: way id="996616281" version="8"
-#: osm_watch: way id="996616282" version="7"
+#: osm_watch: way id="1050315263" version="5"
+#: osm_watch: way id="996616281" version="9"
+#: osm_watch: way id="996616282" version="8"
 #: osm_watch: way id="1100696455" version="1"
 #: last_checked: 2022-10-02 vvv
 #: check_frequency: 14d vvv
@@ -797,13 +797,29 @@ Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,122
 # 
 ### Marzahn ###
 # 
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1246724.php (Gesamtbaumaßnahme bis Ende 2025, auch werden neue Radwege gebaut)
+#: by: https://berliner-abendblatt.de/2022/09/20/neubau-der-eisenacher-strasse-sperrung-vom-blumberger-damm-bis-gothaer-strasse/
+#: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/die-riesaer-und-eisenacher-strasse-werden-erneuert_a358349
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10491 (Anfrage)
+#: by: https://berliner-abendblatt.de/2022/10/04/eisenacher-strasse-gesperrt-bauarbeiten-dauern-bis-2025/
+#: by: https://viz.berlin.de/2022/10/eisenacher-strasse/
+#: source_id: viz2021:13.575415,52.540241,05.10.2022,06:00 (hier nur Kfz-Verkehr, bis 10.11.2022)
+#: last_checked: 2022-10-05 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2022-11-10 vvv
+Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
+Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig	q1-::inwork; 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: add_fragezeichen Bis wann gibt es diese Einschränkung?
 #: source_id: viz2021:13.53378,52.524857,13.07.2021,07:00 (Leitungsarbeiten, bis Ende 2024)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9657 (hier sogar bis Ende 2026)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtquartiers-an-der-allee-der-kosmonauten-ecke-marzahner-chaussee.1196/#post-18478
 #: by: http://www.deal-magazin.com/news/3/114371/LIVOS-und-Catella-feiern-Richtfest-fuer-288-Wohnungen-in-Berlin-Marzahn (Fertigstellung bis Herbst 2023)
 #: also_indoor: traffic (G,H,B)
-#: last_checked: 2022-08-10 (mapillary)
+#: last_checked: 2022-10-05
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2024-12-31
 #: next_check: 2023-11-15
@@ -901,12 +917,12 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021) (vermutlich inaktiv)
-#: osm_watch: way id="885619857" version="11"
-#: osm_watch: way id="885619858" version="6"
+#: osm_watch: way id="885619857" version="12"
+#: osm_watch: way id="885619858" version="7"
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (ex-G,B)
 #: priority: #B
-#: last_checked: 2022-08-23 (mapillary) vvv
+#: last_checked: 2022-10-04 (osm) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -2363,7 +2379,7 @@ Fährsteg	q4 27374,-1573 27361,-1551
 Zum Seeblick: einige Stufen	q3 27161,-2474 27191,-2432
 (Uferweg an der HTW): einige Fußgänger	q1+ 19177,5560 19020,5532 18846,5548 18744,5612 18650,5707
 (Zerbster Str. - Louis-Lewin-Str.): eng, Fußgänger	q2 24324,15519 24379,15511 24459,15526 24468,15554 24811,15513 24827,15564 24927,15611 25003,15617
-(Louis-Lewin-Str. - U-Bhf. Hönow): eng, Fußgänger	q2 25003,15617 25052,15591 25224,15578 25312,15558 25332,15507 25357,15489 25419,15487 25446,15447 25493,15427 25540,15429 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
+(Louis-Lewin-Str. - U-Bhf. Hönow): eng, Fußgänger	q2 25003,15617 25052,15591 25234,15577 25312,15558 25332,15507 25357,15489 25419,15487 25446,15447 25493,15427 25540,15429 25624,15425 25767,15441 25791,15438 25897,15468 25984,15415 25938,15359 25936,15335 25990,15301 26004,15142 25984,15098 25985,15080 26014,15039
 (Gohliser Str. - Wuhle-Hönow-Weg): eng, Fußgänger	q2 25504,15352 25541,15406 25540,15429
 #: XXX_prog BS (2x)
 (Quedlinburger Str. - Stendaler Str. [Nebenfahrbahn]): Bordsteine	q3 24009,15094 23993,15111
@@ -3832,8 +3848,11 @@ Wilhelm-Zermin-Weg: einige Fußgänger	q1 9279,14495 9338,14587
 #: XXX_prog BS an der Straße, ansonsten q3
 (Naumburger Ring - Weißenfelser Str.): Fußgänger, Bordstein	q4 24720,15047 24734,15062
 #: note ^^^
-(Stendaler Str. - Tangermünder Str.): einige Fußgänger	q1 23895,15450 23914,15453 23941,15458 24038,15475 24076,15481 24169,15497
-(Kastanienallee - Stendaler Str.): einige Fußgänger	q1 23750,15487 23775,15428 23895,15450
+(Stendaler Str. - Tangermünder Str.): einige Fußgänger	q2 23895,15450 23914,15453 23941,15458
+#: note: am westlichen Ende explizit als Fußweg ausgeschildert, am östlichen Ende fehlt so ein Schild
+(Stendaler Str. - Tangermünder Str.): einige Fußgänger	q3 23941,15458 24038,15475 24076,15481 24169,15497
+(Kastanienallee - Stendaler Str.): einige Fußgänger	q2 23750,15487 23775,15428 23823,15437 23895,15450
+(Wohngebietsweg): einige Fußgänger	q1 23775,15428 23781,15402
 (Mauerweg am Eiskeller): enger Pfad, teilweise zugewachsen	q3 -8469,19845 -8494,19713 -8438,19699 -8521,19390 -8419,19408 -8361,19374 -8272,19086 -8206,19007
 (Eiskellerweg - ehemaliger Mauerweg): schmaler Pfad	q2 -8074,19644 -8200,19641 -8257,19682 -8438,19699
 (Benatzkyweg - Rudower Höhe): teilweise recht schmal	q2 18067,1568 18099,1568 18147,1559 18212,1572 18290,1574
@@ -4198,6 +4217,16 @@ Buchsteinweg - Säntisstr.: einige Fußgänger	q1 9964,1839 9922,1896
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8171 (Antrag)
 #: XXX_prog BS (ansonsten entfernen)
 Wildmeisterdamm: Bordstein am Kölner Damm	q2 13640,2229 13827,2280
+(Alte Hellersdorfer Str. - Neuruppiner Str.): einige Fußgänger, schmal	q3 23222,15219 23257,15223 23282,15228 23280,15244
+#: note: Grünanlagen-Schild ohne weitere Zusatzschilder
+(Hönower Str./Wilhelmsmühlenweg - An der Schule): einige Fußgänger	q3 24614,11657 24651,11656 24667,11666 24759,11666
+#: note: Lieferverkehr frei
+Torgauer Str. (Hellersdorf) [am Kinder- und Jugendhaus]: als Fußgängerzone ausgeschildert	q3 25311,15355 25315,15404 25215,15413 25135,15419 25127,15412
+(Hönower Weiherkette - Torgauer Str.): einige Fußgänger	q1 25234,15577 25216,15462 25215,15413
+#: note: Grünanlagen-Schild ohne weitere Zusatzschilder vvv
+Theodorpark: einige Fußgänger	q2 24922,10785 24954,10770 25017,10767 25062,10762 25148,10769
+Theodorpark: einige Fußgänger	q2 25017,10767 25018,10747 25022,10715
+#: note ^^^
 # 
 ######################### User Contributions #################################
 # 
@@ -4869,9 +4898,9 @@ Altenburger Str.: Fußgänger, Bordstein	q2 6651,1063 6631,968
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5783 (Schilder "Radfahren erlaubt. Fußgänger haben Vorrang.") vvv
 #: XXX wird das Radfahren hier explizit erlaubt werden? vvv
-#: osm_watch: way id="114381362" version="8"
-#: osm_watch: way id="1100622078" version="1"
-#: osm_watch: way id="1100622082" version="1"
+#: osm_watch: way id="114381362" version="12"
+#: osm_watch: way id="1100622078" version="5"
+#: osm_watch: way id="1100622082" version="5"
 #: last_checked: 2022-04-13 (mapillary)
 #: check_frequency: 360d
 (Hildburghauser Str. - Lilienthalpark): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben, einige halbhohe Bordsteine	q2 6446,1033 6435,986 6446,950 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6223,823 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719

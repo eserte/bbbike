@@ -270,8 +270,10 @@ Verbundsteinpflaster	RW1;RW1 8947,10956 8901,11011 8747,11194 8720,11226 8631,11
 provisorisch durch Poller geschützt	RW3; 11671,10402 11949,10414
 	RW1; 11949,10414 11671,10402
 	RW1; 11949,10414 12092,10428
+#: source_id: viz2021:13.428978,52.499277,26.08.2022,07:00 (bis 11.10.2022)
 #: XXX bleibt es bei der Radspur?
 #: last_checked: 2022-10-01
+#: next_check: 2022-10-11
 geschützter Radstreifen, mit "Leitboys"	RW3; 12092,10428 12212,10440
 	RW1; 12212,10440 12274,10436 12328,10442 12401,10461 12545,10496 12621,10516 12731,10547
 	RW1; 12731,10547 12621,10516 12545,10496 12401,10461 12328,10442 12274,10436 12212,10440 12092,10428 11949,10414
@@ -811,7 +813,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-09-27
+#: last_checked: 2022-10-05
 	RW2; 14926,12129 14994,12121 15117,12106 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
@@ -1020,6 +1022,7 @@ Verbundsteinpflaster	RW1; 14994,3245 14822,3409 14788,3441 14550,3625 14391,3786
 	RW4; 14089,9610 14196,9749
 Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,9749 14244,9812 14289,9870
+#: next_check_id: ELSENBRUECKE-2018
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.735510.php
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/zeitnahe-entscheidung-angekuendigt_a180857
 #: by: https://www.tagesspiegel.de/berlin/berlin-treptow-entscheidung-gefallen-elsenbruecke-wird-abgerissen/23658166.html (Abriss Ostteil: 2020)
@@ -1062,6 +1065,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1233193.php
 #: by: https://nitter.it/pic/orig/enc/bWVkaWEvRlpZcEdWUVdJQUFsdDFELmpwZw==
 #: by: https://berliner-abendblatt.de/2022/08/06/heute-sperrung-der-elsenbruecke-fuer-den-kfz-verkehr/
+#: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (Sperrung 28.10.2022-31.10.2022)
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
@@ -1079,7 +1083,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-10-02 vvv
+#: last_checked: 2022-10-05 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1889,7 +1893,7 @@ Asphalt mit einigen Brüchen	RW1; 9321,8607 9364,8640 9395,8726
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2022-10-02
+#: last_checked: 2022-10-05
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -3071,7 +3075,7 @@ die letzten Meter werden auf dem Gehweg geführt	RW3; 4363,13336 4381,13239
 	RW1;RW0 22365,6149 22296,6170 22263,6185 22238,6195 21984,6317
 	RW2;RW2 22467,6135 22539,6258
 	RW1;RW2 22116,5442 22134,5433 22165,5434
-	RW1;RW1 22165,5434 22204,5447 22329,5420 22657,5328 22726,5328 22735,5328 22802,5327 22851,5327 22956,5304 23293,5289
+	RW1;RW1 22165,5434 22204,5447 22329,5420 22356,5412 22657,5328 22726,5328 22735,5328 22802,5327 22851,5327 22956,5304 23293,5289
 	RW2;RW1 23293,5289 23404,5325
 #: note: teilweise ist noch immer der Gehweg für Radfahrer frei
 	RW3; 29850,4288 29901,4264 29931,4249 29959,4235 30037,4176 30210,4046 30344,3933 30456,3794 30518,3753 30650,3698 30748,3658
@@ -3354,7 +3358,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
 #: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022) (inaktiv) (bis 15.11.2022)
 #: note: laut rbb bis 15.11.2022
-#: last_checked: 2022-10-03 (osm) vvv
+#: last_checked: 2022-10-05 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2022-11-15 vvv
 #: priority: #A vvv
@@ -3673,7 +3677,8 @@ alter Beton	RW1; 21152,11945 21150,11925 21139,11830
 	RW2; 21358,13909 21367,13757 21345,13550 21337,13470 21298,13154 21251,12767 21221,12484 21206,12351 21199,12258
 # REMOVED (keine Änderung hier) --- #: XXX Radweg wurde "abgeordnet", was heißt das konkret? --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5544 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5584 --- #: XXX -> bedeutet erst einmal nichts, später aber nochmal schauen --- #: last_checked: 2014-02-08 --- #: next_check: 2014-06-08
 unebenes Verbundsteinpflaster	RW1; 20627,12162 20629,12177 20656,12415 20680,12632 20693,12742 20711,12896 20743,13184 20746,13209 20773,13468 20802,13711 20830,13960
-Verbundsteinpflaster, mit Betonplatten neben Bäumen	RW1;RW1 20756,14486 20792,14457 20921,14461 21046,14469 21118,14477 21329,14488 21378,14490
+#: note: fühlt sich fast wie ein Plattenweg an
+Verbundsteinpflaster, mit Betonplatten neben Bäumen, Unebenheiten	RW1;RW1 20755,14479 20790,14451 20921,14461 21046,14469 21118,14477 21329,14488 21378,14490
 	RW2;RW2 21358,13909 21342,14096 21378,14490 21408,14591 21537,14932
 	RW1;RW2 21537,14932 21599,15213
 	RW2;RW2 21599,15213 21623,15357 21647,15496 21675,15636 21682,15673 21709,15808
@@ -4215,12 +4220,12 @@ neu asphaltiert, relativ breit	RW1; 25031,15027 25045,14946
 # REMOVED --- #: XXX zurzeit Bauarbeiten, danach vermutlich ebenso neu asphaltiert --- #: last_checked: 2020-04-26
 neu asphaltiert, relativ breit	RW1; 25045,14946 25031,15027
 	RW1;RW1 25045,14946 25057,14896 25073,14860 25103,14838 25161,14809 25190,14771 25206,14728 25237,14627 25254,14564 25234,14501 25172,14384 25142,14300 25095,14171
-	RW1;RW1 26049,15024 26014,15039 25743,15118 25638,15135 25569,15140 25475,15146 25348,15152 25219,15161 25131,15156 25006,15132
+Verbundsteinpflaster	RW1;RW1 26049,15024 26014,15039 25743,15118 25638,15135 25569,15140 25475,15146 25348,15152 25219,15161 25131,15156 25006,15132
 	RW1; 24530,12296 24659,12555 24713,12655 24774,12766 24833,12874 24905,13004 24968,13121 25031,13242 25094,13362 25163,13494 25289,13705 25365,13845 25397,13909 25451,14018 25503,14085
 Verbundsteinpflaster mit einigen Unebenheiten	RW1; 25397,13909 25365,13845 25289,13705 25163,13494 25094,13362 25031,13242 24968,13121 24905,13004 24833,12874 24774,12766 24713,12655 24659,12555 24530,12296
 	RW2; 24654,11265 24624,11374
 	RW3; 24624,11374 24654,11265
-Gehweg für Radfahrer frei	RW1;RW1 24624,11374 24583,11537 24591,11587 24612,11652 24623,11684 24657,11762 24648,11802 24575,11932 24563,11980
+Gehweg für Radfahrer frei	RW1;RW1 24624,11374 24583,11537 24591,11587 24614,11657 24623,11684 24657,11762 24648,11802 24575,11932 24563,11980
 Gehweg für Radfahrer frei	RW1; 24563,11980 24556,12056 24554,12100 24556,12181
 	RW1;RW1 21982,9017 22027,9131 22031,9142 22074,9273 22090,9380
 	RW1;RW0 22090,9380 22103,9465
@@ -5574,7 +5579,7 @@ asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 # REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
 #: osm_watch: way id="153370345" version="12"
-#: osm_watch: way id="153373877" version="16"
+#: osm_watch: way id="153373877" version="17"
 	RW3; 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
 #: note: außerdem werden Rechtsabbieger auf dem ehemaligen Bürgersteigradweg geführt, an der Ampel vorbei
 Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
@@ -5586,7 +5591,7 @@ Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
 #: by: https://westnordost.de/p/32402.jpg
 #: confirmed_by: srt
 	RW4; 6145,10975 6168,11042
-#: osm_watch: way id="153370344" version="20"
+#: osm_watch: way id="153370344" version="21"
 #: osm_watch: way id="153373879" version="16"
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
 #: check_frequency ^^^
@@ -7013,7 +7018,8 @@ Verbundsteinpflaster	RW2; 23017,12177 23100,12269
 	RW7;RW7 23675,5823 23755,5850 23874,5876
 	RW6;RW6 -4108,17776 -3953,17941
 	RW6;RW6 -3655,18177 -3847,17978 -3914,17913 -3953,17941 -4002,17993 -4038,18030 -3898,18187
-Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 20756,14486
+Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20710,14454
+	RW2; 20710,14454 20755,14479
 	RW6;RW6 19650,9413 19669,9418 19692,9416 19743,9412 19780,9409 19824,9405
 	RW6;RW6 19692,9416 19688,9365 19680,9291 19679,9214 19728,9214
 	RW6;RW6 19743,9412 19739,9362 19738,9343 19730,9233 19728,9214 19728,9181
@@ -7504,7 +7510,7 @@ Tempo 10	RW6;RW6 11039,21632 10761,21535 10126,21314
 	RW7;RW7 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
 	RW7;RW7 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
 	RW7;RW7 13761,12578 13991,12522 14091,12494 14133,12482 14266,12446 14451,12396 14538,12371 14748,12314 15003,12241 15104,12216
-	RW3;RW3 18596,4517 18434,4363
+	RW3;RW3 18596,4517 18434,4363 18374,4307
 	RW6;RW6 -8061,4274 -8123,4273 -8143,4244 -8064,4190 -8033,4231 -8009,4266 -8046,4292
 	RW6;RW6 -7914,4150 -8033,4231
 #: note: verkehrsberuhigter Bereich geht über die Kreuzung Alexandrinenstr./Stallschreiberstr. hinweg vvv
