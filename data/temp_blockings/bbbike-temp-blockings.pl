@@ -28266,7 +28266,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-09-22
+#: last_checked: 2022-10-06
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -35267,8 +35267,8 @@ Am Bahndamm	2::inwork 21984,6317 22238,6195
 EOF
      },
      { from  => $isodate2epoch->("2022-05-02 00:00:00"),
-       until => $isodate2epoch->("2022-10-07 18:00:00"),
-       text  => 'Eisenbahnbrücke Werder: wegen Bauarbeiten montags bis freitags tagsüber (6:30 bis 18:00 Uhr) gesperrt, bis zum 7.10.2022',
+       until => $isodate2epoch->("2022-10-10 06:30:00"),
+       text  => 'Eisenbahnbrücke Werder: wegen Bauarbeiten gesperrt, bis zum 10.10.2022',
        type  => 'gesperrt',
        source_id => 'https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=4210',
        data  => <<EOF,
@@ -36112,7 +36112,7 @@ EOF
      },
      { from  => 1661032800, # 2022-08-21 00:00
        until => $isodate2epoch->("2022-10-17 18:00:00"), # $isodate2epoch->("2022-10-31 18:00:00"), # 1665439199, # 2022-10-10 23:59
-       text  => 'Georgenstr.: Gleisarbeiten, Fahrbahn gesperrt, außerdem Einbahnstraßenregelung Am Kupfergraben, gesperrt ab Bauhofstr., vom 22. August 2022 bis 10. Oktober 2022, evtl. wird verlängert',
+       text  => 'Am Kupfergraben und Georgenstr.: Gleisarbeiten, Fahrbahn gesperrt, bis 10. Oktober 2022, evtl. wird verlängert',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/08/17/neue-gleise-fuer-die-dorotheenstrasse/ (vom 22. August bis zum 10. Oktober 2022)
@@ -36120,23 +36120,24 @@ EOF
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/neue-gleise-und-weichen_a355298
 #: by: https://www.bahninfo-forum.de/read.php?9,708604,744663#msg-744663 (Verlängerung bis 11.12.2022)
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (hier noch bis 10.10.2022, danach Sperrung der Oranienburger Str. (gleiche Linien betroffen))
+#: by: https://nitter.cz/VIZ_Berlin/status/1577924117503827969#m
+#: by: https://nitter.cz/pic/orig/media%2FFeXP3TTWAAI6GUd.jpg
 #: note: laut rbb ist die Georgenstr. länger (bis 6.10.2022) gesperrt
 #: XXX Dauern die Bauarbeiten und Sperrungen länger an?
 #: next_check: 2022-10-10 vvv
 #: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 4.10.2022) (inaktiv)
 #: source_id: viz2021:13.392073,52.520077,06.10.2022,09:30 (bis 19.10.2022)
-#: last_checked: 2022-10-03
-Georgenstr.	q4::inwork 9568,12688 9441,12670
+#: last_checked: 2022-10-06
+Georgenstr.	q3::inwork 9568,12688 9441,12670
 #: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
 #: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 30.9.2022) (inaktiv)
 #: source_id: viz2021:13.395207,52.520461,05.10.2022,07:00 (Am Kupfergraben, bis 17.10.2022)
-#: last_checked: 2022-10-03 vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2022-10-06 vvv
 # REMOVED --- #: next_check: 2022-09-30 vvv
 # REMOVED (laut rbb hier aufgehoben) --- Dorotheenstr.	q4::inwork 9742,12609 9870,12657
-Am Kupfergraben	q4::inwork; 9815,12705 9870,12657
+Georgenstr.	q3::inwork 9754,12775 9659,12704
+Am Kupfergraben	q4::inwork 9754,12775 9815,12705 9870,12657
 # REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check ^^^
 EOF
@@ -36252,7 +36253,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-10-03
+#: last_checked: 2022-10-06
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36555,6 +36556,26 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 #: check_frequency ^^^
 #: XXX ^^^
 #: also_indoor ^^^
+EOF
+     },
+     { from  => 1665077956, # 2022-10-06 19:39
+       until => 1672527600, # 2023-01-01 00:00
+       text  => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis Dezember 2022',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30
+#: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
+#: XXX Bis wann ist die Kreuzung gesperrt?
+#: last_checked: 2022-10-06 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2022-12-31 vvv
+Chausseestr.	q4::inwork 9207,13493 9212,13471
+Hannoversche Str.	q3::inwork 9212,13471 9047,13446
+Torstr.	q3::inwork 9353,13521 9212,13471
+Friedrichstr.	q4::inwork 9212,13471 9225,13389
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
     );
