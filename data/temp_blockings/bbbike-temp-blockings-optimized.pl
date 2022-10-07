@@ -3586,6 +3586,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5735 (bis Ende 2022?)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5772 (bis Ende August 2023?)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/bezirksverordnete-befuerchten-noch-groesseres-verkehrschaos_a303387
+#: by: https://www.berliner-woche.de/karow/c-verkehr/wasserbetriebe-bauen-am-bahnhof-karow_a359438 (Eröffnung 2023)
 	2::inwork 14539,23306 14573,23295 14597,23280
 ',
          'from' => 1543258848,
@@ -4002,48 +4003,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
-#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
-#: by: https://viz.berlin.de/2021/05/verkehrsvorschau-310521/ (Fuß- und Radverkehr ist frei)
-#: by: https://www.openstreetmap.org/note/3032478 (nicht mehr gesperrt!)
-# REMOVED --- #: XXX laut osm-Notiz nicht mehr gesperrt --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
-#: source_id: 2147347233 (bis 23.12.2021)
-#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022) (bis 7.10.2022)
-#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)
-#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022)
-#: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
-#: source_id: bvg2021:188#BVG259885_0
-# REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
-#: also_indoor: traffic (H,ex-G,ex-B) vvv
-#: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
-# REMOVED --- #: XXX NEW	Gardeschützenweg (Lichterfelde) in beiden Richtungen zwischen Hindenburgdamm und Lipaer Straße: Leitungsbau,Vollsperrung, Fußverkehr frei, vom 31.05.2021 08:30 Uhr bis 23.12.2021 17:00 Uhr
-# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv --- #: last_checked: 2020-12-27 (mapillary) vvv --- #: next_check: 2021-05-03 vvv
-# REMOVED (hier nicht mehr) --- #: note: nur etwa 100m, deshalb q3 statt q4 ---	q3::inwork 4515,4760 4214,4595
-#: note: Einbahnstraßenregelung, Bauarbeiten laut Baustellenschild bis September 2022
-# REMOVED (doppelt) ---	q4::inwork; 4214,4595 4039,4500
-# REMOVED (doppelt) ---	q4::inwork; 4039,4500 3934,4441
-# REMOVED (hier nicht) ---	q4::inwork; 3934,4441 3643,4232
-	q4::inwork; 3643,4232 3523,4139
-# REMOVED (hier nicht) ---	q4::inwork 3934,4441 4039,4500
-	q3::inwork; 4214,4595 4039,4500
-Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
-Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
-# REMOVED (hier nicht) --- q4::inwork 4214,4595 4515,4760
-# REMOVED --- #: note: Einbahnstraßenregelung, bis 30.6.2022 ---	q4::inwork; 3643,4232 3523,4139
-# REMOVED --- #: note: hier nur ein kurzes Stück ---	q2::inwork; 4214,4595 4039,4500
-# REMOVED (nicht mehr, laut rbb) ---	q4::inwork 4179,4662 4214,4595
-# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
-#: also_indoor ^^^
-',
-         'from' => 1622356200,
-         'id' => 3261,
-         'source_id' => '2147345834',
-         'text' => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, bis 07.10.2022',
-         'type' => 'handicap',
-         'until' => 1665154800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4225,7 +4185,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: confirmed_by: srt (Sackgassenschild am nördlichen und südlichen Ende, als Fußgänger und Radfahrer kommt man durch)
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="25"
-#: osm_watch: way id="165832806" version="25"
+#: osm_watch: way id="165832806" version="26"
 #: last_checked: 2022-09-18
 #: check_frequency: 30d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17554,8458 17533,8505 17524,8536
@@ -5120,6 +5080,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
 #: note: anscheinend auch für Fußgänger gesperrt, hier gibt es keinen Gehweg
+#: note: laut rbb nur bis 20.10.2022
 Schubertstr.	2::inwork 21984,6317 21856,6390
 Am Bahndamm	2::inwork 21984,6317 22238,6195
 ',
@@ -5901,6 +5862,8 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
        {
          'data' => '#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
+#: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
+#: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2022-10-06 vvv
 #: check_frequency: 30d vvv

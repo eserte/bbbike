@@ -199,7 +199,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022)
 #: note: laut rbb nur bis 16.09.2022
 #: priority: #A
-#: last_checked: 2022-09-30 vvv
+#: last_checked: 2022-10-06 (mapillary) vvv
 #: next_check: 2022-10-12 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
@@ -889,11 +889,11 @@ Winterfeldtplatz/Gleditschstr.: Fahrbahn gesperrt	q3-::inwork 7126,9825 7118,987
 #: by: https://berliner-abendblatt.de/2022/04/28/abriss-der-moltkebruecke-ersatzverkehr-am-wochenende/
 #: by: https://www.bz-berlin.de/berlin/steglitz-zehlendorf/moltkebruecke-in-lichterfelde-ist-nur-noch-geschichte
 #: XXX Neubau der Brücke, laut osm bis 2024
-#: osm_watch: way id="13860352" version="22"
+#: osm_watch: way id="13860352" version="23"
 #: osm_watch: way id="1056377427" version="1"
 #: also_indoor: traffic (G,ex-H,B)
 #: priority: #A
-#: last_checked: 2022-09-04
+#: last_checked: 2022-10-04 (osm)
 #: check_frequency: 180d
 #: next_check: 2024-03-01
 Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,4577 3867,4537 3898,4490 3934,4441
@@ -948,8 +948,10 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: by: https://charlieundderwundergarten.de/ (kein Fertigstellungsdatum)
 #: osm_watch: way id="1040605739" version="1"
 #: add_fragezeichen: Bis wann dauern die Bauarbeiten an?
-#: last_checked: 2022-06-10
+#: XXX laut osm opening_date=2023-12
+#: last_checked: 2022-08-02 (mapillary)
 #: check_frequency: 120d
+#: next_check: 2023-12-31
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
 # 
 ### Pankow ###
