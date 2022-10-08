@@ -10402,7 +10402,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006875',
        data  => <<EOF,
-	2::inwork -2149,16921 -1832,16858
+	2::inwork -2149,16921 -2087,16909 -1832,16858
 EOF
      },
      { from  => 1192489357, # 2007-10-16 01:02
@@ -31030,7 +31030,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-10-01
+#: last_checked: 2022-10-08
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31131,7 +31131,7 @@ EOF
 #: next_check_id: CORONA-2020
 #: by: https://www.charite.de/klinikum/themen_klinikum/themenschwerpunkt_coronavirus/#c30751057 (Eingangskontrollen)
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-08-23 vvv
+#: last_checked: 2022-10-08 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -31620,7 +31620,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (bei mapillary keine Sperrung mehr sichtbar) --- #: add_fragezeichen: Wann ist die Fahrbahn wieder offen? --- #: also_indoor: traffic --- #: last_checked: 2021-05-24
-	q4::inwork -3259,12580 -3444,12580
+	q4::inwork -3259,12580 -3444,12573
 EOF
      },
      { from  => undef, # 
@@ -34908,7 +34908,7 @@ EOF
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-10-03 vvv
+#: last_checked: 2022-10-08 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-10-28 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
@@ -35126,15 +35126,15 @@ EOF
 EOF
      },
      { from  => 1650305075, # 2022-04-18 20:04
-       until => $isodate2epoch->("2022-10-31 17:00:00"), # 1656626399, # 2022-06-30 23:59
+       until => $isodate2epoch->("2022-12-31 17:00:00"), # 1656626399, # 2022-06-30 23:59
        #text  => 'Pionierstr.: Bauarbeiten, Einbahnstraßenregelung (offen Richtung Westen), evtl. sind auch Radfahrer betroffen, voraussichtlich bis 30. Juni 2022',
-       text  => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), vermutlich bis Ende Oktober 2022',
+       text  => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), vermutlich bis Dezember 2022',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/falkenhagener-feld/c-bauen/zwischen-bauzeit-und-bauzeitraum-in-der-pionierstrasse_a342872',
        data  => <<EOF,
 #: also_indoor: traffic (G,H,B)
-#: XXX kommt es zu einer Verlängerung der Bauarbeiten? (ursprünglich angesetzt bis Ende Juni 2022, wahrscheinlich Verlängerung bis Ende Oktober 2022)
-#: next_check: 2022-06-30
+#: XXX kommt es zu einer Verlängerung der Bauarbeiten? (ursprünglich angesetzt bis Ende Juni 2022, wahrscheinlich Verlängerung bis Ende Oktober 2022); mittlerweile wurde das Baustellenschild der Wasserbetriebe auf 12/22 korrigiert
+#: next_check: 2022-12-01
 	q4::inwork; -5804,16415 -5830,16356 -5849,16199
 # REMOVED (Radspur existiert in der Gegenrichtung) ---	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415
 EOF
@@ -36245,7 +36245,8 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (none)
 #: note: auch bei rbb erwähnt
-	q4::inwork 5090,11007 5084,10890 5072,10701
+# REMOVED (hier nicht) ---	q4::inwork 5090,11007 5084,10890
+	q4::inwork 5084,10890 5072,10701
 EOF
      },
      { from  => undef, # 
@@ -36471,7 +36472,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-03
+#: last_checked: 2022-10-08
 #: check_frequency: 14d
 	q3::inwork 10755,13152 10846,13362
 EOF
@@ -36570,7 +36571,7 @@ EOF
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2022-10-06 vvv
+#: last_checked: 2022-10-08 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-31 vvv
 Chausseestr.	q4::inwork 9207,13493 9212,13471
@@ -36580,6 +36581,38 @@ Friedrichstr.	q4::inwork 9212,13471 9225,13389
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rossitter Platz - Machandelweg: Durchgang ist nur Mo-Fr (außer feiertags) 5-18 Uhr offen',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+#: by: https://www.bahninfo-forum.de/read.php?9,721782,722126#msg-722126
+#: by: https://www.bahninfo-forum.de/read.php?9,725584,728443#msg-728443 (nur nachts/am Wochenende zu?)
+	2::temp:clock -107,12220 -76,12236 -45,12243
+EOF
+     },
+     { from  => $isodate2epoch->("2022-11-01 00:00:00"),
+       until => undef, # XXX
+       text  => 'Rossitter Platz - Machandelweg: wegen Bauarbeiten ist der Durchgang ab November 2022 komplett gesperrt, Ende der Sperrung unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.youtube.com/watch?v=-UWvhPunrr8 (Sperrung der Fußgängerbrücke wegen Bauarbeiten ab November 2022)
+#: XXX Bis wann bleibt die Sperrung?
+#: next_check: 2022-12-31
+	2::inwork -107,12220 -76,12236 -45,12243
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Betckestr.: Einbahnstraßenregelung, offen Richtung Westen',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (B)
+#: last_checked: 2022-10-08
+	q4::inwork; -3635,12572 -3444,12573 -3259,12580
 EOF
      },
     );

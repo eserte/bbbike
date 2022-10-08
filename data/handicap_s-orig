@@ -199,7 +199,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022)
 #: note: laut rbb nur bis 16.09.2022
 #: priority: #A
-#: last_checked: 2022-10-06 (mapillary) vvv
+#: last_checked: 2022-10-08 vvv
 #: next_check: 2022-10-12 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
@@ -2067,7 +2067,7 @@ KGA Plötzensee: einige Fußgänger	q1 4963,15259 4883,15289 4777,15398 4675,15529 
 Hauptweg - Uferweg: einige Fußgänger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fußgänger	q0- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): einige Fußgänger	q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
-(Am Hohenzollernkanal): einige Fußgänger	q0- 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -196,16060 -203,16064 -205,16086 -224,16095 -265,16111 -822,16535 -910,16608
+(Am Hohenzollernkanal): einige Fußgänger	q0- 1349,15797 1232,15804 1201,15804 364,15810 44,15897 -192,16054 -203,16064 -205,16086 -224,16095 -265,16111 -822,16535 -910,16608
 Saatwinkler Steg, Rohrbruchwiesen: einige Fußgänger	q1+ -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
 Maselakepark: Fußgänger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510,16357
 Maselakepark: Fußgänger	q1 -2587,16600 -2632,16347
@@ -2339,7 +2339,7 @@ Hilchenbacher Weg: Fußgänger, eng	q2 2413,18655 2416,18598
 Hilchenbacher Weg: Fußgänger, eng	q2 2426,18544 2444,18487
 #: XXX_prog: BS
 Straße 455: Bordstein	q2 4916,17201 4931,17174
-(Uferweg Plötzensee): Fußgänger	q1- 5618,14981 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5005,15213
+(Uferweg Plötzensee): Fußgänger	q1- 5618,14981 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
 #: XXX_prog -> Steigung nach comments_mount?
 (Brücke über den Maselakekanal): Steigung 14%	q2 -2152,17108 -2140,17171 -2165,17176
 Kleingartenstr.: enge Straße	q1 24118,4404 24075,4417 24022,4442 23978,4484
@@ -4229,6 +4229,12 @@ Torgauer Str. (Hellersdorf) [am Kinder- und Jugendhaus]: als Fußgängerzone ausge
 Theodorpark: einige Fußgänger	q2 24922,10785 24954,10770 25017,10767 25062,10762 25148,10769
 Theodorpark: einige Fußgänger	q2 25017,10767 25018,10747 25022,10715
 #: note ^^^
+#: XXX_prog BS an der Rominter Allee (ansonsten entfernen) vvv
+(Rossiner Platz - Rominter Allee): Bordstein	q2 -133,12217 -153,12183
+(Rossiner Platz - Rominter Allee): Bordstein	q2 -113,12164 -153,12183
+#: XXX_prog ^^^
+#: note: inkonsistente Beschilderung: am südlichen Ende explizites Gehweg-Schild, am nördliches Ende gar nichts, zwischendurch einige Grünanlagen-Schilder ohne Zusatzschilder
+Spandauer Havelpromenade: einige Fußgänger	q2 -1871,16788 -1895,16675 -1920,16476 -1928,16423
 # 
 ######################### User Contributions #################################
 # 
@@ -4813,7 +4819,8 @@ Bootshausweg: Fußgänger	q1 -1073,16610 -1067,16635 -1092,16659 -1156,16689 -1190
 #: XXX_prog: für Anhänger nicht geeignet!
 Bootshausweg: Fußgänger, teilweise sehr eng, nicht für Anhänger geeignet	q2- -1229,16773 -1406,16907 -1465,16957
 #: confirmed_by: srt
-Bootshausweg: Fußgänger	q1 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1688,16862 -1675,16813
+Bootshausweg: Fußgänger	q1 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1691,16848
+Bootshausweg: Fußgänger	q1 -1661,16841 -1667,16828 -1675,16813
 #: by: ^^^
 # 
 # REMOVED (not confirmed by me) --- : by: Karin Millonig: Rufacher Weg: enge Straße	q2 12207,1704 12179,1758 12160,1817 12255,2058 12286,2065 12582,2129 12738,2162
@@ -5083,7 +5090,7 @@ Tassostr.: enge Straße	q1 13623,15954 13614,15984 13625,16054 13642,16118 13654,
 An der Wildbahn: viele parkende Autos in enger Straße	q1 -1581,22553 -1447,22522 -1333,22495 -1270,22480 -1221,22468 -996,22416 -926,22399 -725,22355 -489,22295 -313,22233
 # 
 #: by: anonymous
-Wolmirstedter Weg: enge Straße	q1 -4143,15639 -4216,15635 -4283,15639
+Wolmirstedter Weg: enge Straße	q1 -4150,15638 -4216,15635 -4283,15639
 # 
 #: by: Petra Neukamp: vvv
 Landschöppenpfad: Bordsteine, Fußgänger	q2 12609,1780 12574,1866

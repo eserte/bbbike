@@ -176,7 +176,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="18"
-#: last_checked: 2022-09-16
+#: last_checked: 2022-10-08
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2310,10732 2233,11049
 # 
@@ -541,7 +541,6 @@ Bänschstr.	1 14591,12555 14319,12629
 Bänschstr.	1 14325,12648 14596,12573
 Bänschstr.	1 15005,12443 14798,12502 14681,12534 14661,12523 14588,12542
 Bänschstr.	1 14599,12584 14672,12565 14686,12549 14801,12517 14996,12462
-Rossitter Platz - Machandelweg: verschlossene Türen	2 -107,12220 -76,12236 -45,12243
 #: by: Robert (no mail):
 Stockholmer Str.	1 8950,17219 8860,17077
 #: by: Arlt:
@@ -734,7 +733,7 @@ Frank-Schweitzer-Str.	1 19350,14997 19175,14926 19113,14901 19117,14875 19255,14
 Sauerbruchweg	1s:q3 8487,13351 8630,13172
 Virchowweg	1s:q3 8603,13076 8550,13150
 Rahel-Hirsch-Weg	1 8586,13440 8600,13448 8581,13487 8554,13476 8586,13440
-Hempelsteig	1 -787,13147 -525,13034 -472,12961
+Hempelsteig	1 -787,13147 -724,13120 -525,13034 -472,12961
 Kaulsdorfer Str.	1 22075,6967 22049,7085
 (KGA Rahnsdorf Süd, Birkenweg): kein Durchfangsverkehr, abgesperrtes Tor	2 30345,3277 30389,3314 30393,3437 30378,3501
 # 
@@ -1278,7 +1277,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-10-01
+#: last_checked: 2022-10-08
 #: check_frequency: 90d
 #: next_check: 2022-10-31
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1781,7 +1780,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: by: http://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee, mittlerweile status "Abgeschlossen")
 # REMOVED (Umbau ist erfolgt) --- #: source_id: 2147347235 (bis 13.8.2021: Umbau der Ampelanlage) --- #: source_id: viz2021:13.273928,52.509767,31.05.2021,07:00 (bis 10.9.2021: Umbau der Ampelanlage) --- #: osm_watch: way id="850742955" version="1" --- #: last_checked: 2021-09-05 --- #: check_frequency: 180d --- #: next_check: 2021-09-10 --- Ahornallee	1s:q3 1586,11483 1566,11409 1574,11379
 #: osm_watch: way id="24852084" version="11"
-#: last_checked: 2022-08-27 (mapillary)
+#: last_checked: 2022-10-08
 #: check_frequency: 180d
 # REMOVED --- #: next_check: 2021-12-31
 Lindenallee	1s:q3 1429,11528 1403,11428
@@ -2680,6 +2679,9 @@ tragen (einige Stufen)	0:15 -18612,4568
 tragen (Treppe)	0:30 -18875,5375
 tragen (Treppe)	0:30 -18860,5378
 tragen (eine Stufe) oder wilden Pfad benutzen	0:5 21660,5424
+#: add_fragezeichen Wie viele Stufen sind hier?
+tragen	0:30 -45,12243
+tragen (Treppe, 14 Stufen)	0:25 -1667,16828
 #
 ###################################################################
 # Drängelgitter (BLOCKED_NARROWPASSAGE)
@@ -3085,7 +3087,7 @@ steiler Weg	BNP:0::trailer=no -1431,12284
 #: note: lichte Breite stellenweise unter 100cm
 enger Pfad	BNP:0::trailer=no 17952,16675
 enges Drängelgitter	BNP:5::trailer=no 30862,3816
-Schranke, Durchfahrtsbreite nur 80cm	BNP:3::trailer=no -1342,13134
+# REMOVED (scheint nicht mehr problematisch zu sein?) --- Schranke, Durchfahrtsbreite nur 80cm	BNP:3::trailer=no -1368,13129
 #: note: am 2012-09-30 habe ich 90cm gemessen... neue Schranke?
 Schranke, Durchfahrtsbreite nur 60cm	BNP:3::trailer=no -784,16658
 #: note: lichte Breite etwa 120cm, aber ungünstig versetzt
@@ -3135,6 +3137,7 @@ Schwingtor	BNP:5::trailer=10 14824,9390
 Schwingtor	BNP:5::trailer=10 14797,9396
 Schwingtor	BNP:5::trailer=10 14644,9130
 Schwingtor	BNP:5::trailer=10 14628,9158
+Schwingtor	BNP:5::trailer=10 -7803,12417
 # 
 #: note: Fahrräder mit Anhänger könnten auf den parallelen Gehweg geführt werden
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5::trailer=no 14659,7505
@@ -3426,6 +3429,7 @@ Tor	BNP:10 1473,1740
 Drängelgitter	BNP:2::trailer=7 -4234,11408
 #: note: manchmal offen, manchmal geschlossen; falls zu, dann vielleicht besser den Bürgersteig benutzen
 Schranke	BNP:5::trailer=15 23221,15226
+Schranke	BNP:3::trailer=10 -1486,16789
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3663,10 +3667,10 @@ Hönower Str.: temporäre Einbahnstraße	1s:q4:inwork 18735,9421 18765,9426 18846,9
 # 
 #: next_check_id: TEGELERBRUECKE-2021
 #: osm_watch: way id="930770437" version="3"
-#: last_checked: 2022-07-31
+#: last_checked: 2022-10-08
 #: check_frequency: 180d
 #: next_check: 2023-12-01
-Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -196,16060 -203,16064 -205,16086 -224,16095 -265,16111
+Uferweg am Hohenzollernkanal: Bauarbeiten an der Tegeler Brücke, komplett gesperrt	2::inwork -192,16054 -203,16064 -205,16086 -224,16095 -265,16111
 # 
 # REMOVED (BVG-Meldung entfernt) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=75609 --- #: XXX bis wann ist gilt hier die Einbahnstraßenregelung? --- #: XXX_prog: eigentlich 1s:q4:inwork, kollidiert aber mit dem normalen handicap_s-orig-Eintrag --- #: last_checked: 2021-05-29 --- #: next_check: 2021-05-31 --- #: valid: -20210531 --- Wildensteiner Str.: Einbahnstraßenregelung (wegen SEV)	1::inwork 18627,8475 18528,8331
 # 
@@ -3837,7 +3841,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2022-09-29
+#: last_checked: 2022-10-07
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -4349,7 +4353,7 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
-#: last_checked: 2022-08-30 vvv
+#: last_checked: 2022-10-08 vvv
 #: check_frequency: 60d vvv
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="3"
@@ -4567,7 +4571,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 # REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7"
 #: osm_watch: way id="940764588" version="6"
 #: osm_watch: way id="940764584" version="4"
-#: last_checked: 2022-10-06
+#: last_checked: 2022-10-08
 #: check_frequency: 120d
 #: next_check: 2023-06-30
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315

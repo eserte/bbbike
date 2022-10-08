@@ -858,9 +858,6 @@ Beiersdorf - Beerbaum: Qualität?	? 35980,34322 35977,34619 36085,34994 36096,353
 Dollgow - Zernikow: Qualität?	? -17141,74157 -16859,74184 -16629,74151 -15730,74428 -14966,74667 -13662,75159
 Leipziger Str. (Schöneiche): wie ist die Qualität im nördlichen Abschnitt? ebenfalls unbefestigt?	? 32156,6405 32056,6607 31993,6776 31952,6917 31951,7060
 Technologiepark KW - Funkerberg: Qualität der Verbindung?	? 24452,-10414 24518,-10498 24950,-10965 25233,-11257 25366,-11396 25528,-11392
-# added from strassen
-Eidechsenweg (Ist der Eidechsenweg bereits ausgeschildert?)	? -7893,13781 -7720,13839
-Elkartweg (Hängen bereits neue Straßenschilder für den "Erna-Koschwitz-Weg"?)	? -2158,17613 -2135,17633 -2119,17647 -2103,17670 -2087,17715 -2120,17786 -2131,17827 -2114,17878 -2066,17896 -2074,17921 -2100,17953 -2196,18069
 # added from landstrassen
 zur Fähre Liepnitzsee (Wegbeschaffenheit?)	? 17636,38832 17671,38736 17650,38659 17464,38558 17358,38415 17391,38405
 ehem. B1/B5: Berlin - Müncheberg (Ist dieser Abschnitt für den Kfz-Verkehr gesperrt?)	? 41650,8965 43293,8953
@@ -966,6 +963,7 @@ Leistenhaus - Neugrimnitz: Schotterweg (Ist hier durchgängig ein Schotterweg?)	?
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt
+tragen (Wie viele Stufen sind hier?)	? -45,12243
 Poller (wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?)	? -1889,37093
 # added from comments_cyclepath
 Verbundsteinpflaster, teilweise schadhaft (Wurzelschäden) (Wird die Qualität des Radwegs nach den Bauarbeiten besser sein?)	? 43162,14428 42996,14793
@@ -990,6 +988,7 @@ F3.5 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 # added from fragezeichen
 Jörsstr.: Asphaltierung vermutlich bereits durchgeführt (Wurde die Asphaltierung der Jörsstr. bereits abgeschlossen?)	? -1478,18407 -1358,18400
+Brauerstr.: evtl. wird hier die Einbahnstraßenregelung für Radfahrer aufgehoben (Wurde die Einbahnstraßenregelung für Radfahrer aufgehoben?)	? 5317,2345 5159,2176
 Schulzendorfer Str.: Asphaltierung (Wurde die Asphaltierung der Straße abgeschlossen?)	? 2556,22598 2652,22615
 L25 (Prenzlau - Güstow): straßenbegleitender Radweg entsteht (Gibt es zwischen Prenzlau und Güstow einen straßenbegleitenden Radweg? Wenn ja: auf welcher Seite und ist der Radweg asphaltiert?)	? 37020,101115 36600,101499 36138,101586 35027,102258 34671,102369 34607,102396
 # added from bbbike-temp-blockings-optimized

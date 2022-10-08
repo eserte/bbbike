@@ -3904,7 +3904,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-10-01
+#: last_checked: 2022-10-08
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3924,7 +3924,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check_id: CORONA-2020
 #: by: https://www.charite.de/klinikum/themen_klinikum/themenschwerpunkt_coronavirus/#c30751057 (Eingangskontrollen)
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-08-23 vvv
+#: last_checked: 2022-10-08 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -4888,7 +4888,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-10-03 vvv
+#: last_checked: 2022-10-08 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-10-28 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
@@ -5026,17 +5026,17 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: also_indoor: traffic (G,H,B)
-#: XXX kommt es zu einer Verlängerung der Bauarbeiten? (ursprünglich angesetzt bis Ende Juni 2022, wahrscheinlich Verlängerung bis Ende Oktober 2022)
-#: next_check: 2022-06-30
+#: XXX kommt es zu einer Verlängerung der Bauarbeiten? (ursprünglich angesetzt bis Ende Juni 2022, wahrscheinlich Verlängerung bis Ende Oktober 2022); mittlerweile wurde das Baustellenschild der Wasserbetriebe auf 12/22 korrigiert
+#: next_check: 2022-12-01
 	q4::inwork; -5804,16415 -5830,16356 -5849,16199
 # REMOVED (Radspur existiert in der Gegenrichtung) ---	q4::inwork; -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415
 ',
          'from' => 1650305075,
          'id' => 3539,
          'source_id' => 'https://www.berliner-woche.de/falkenhagener-feld/c-bauen/zwischen-bauzeit-und-bauzeitraum-in-der-pionierstrasse_a342872',
-         'text' => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), vermutlich bis Ende Oktober 2022',
+         'text' => 'Wasserwerkstr.: Einbahnstraßenregelung (offen Richtung Norden), vermutlich bis Dezember 2022',
          'type' => 'handicap',
-         'until' => 1667232000
+         'until' => 1672502400
        },
        {
          'data' => '#: osm_watch: way id="874517258" version="9"
@@ -5571,7 +5571,8 @@ Am Kupfergraben	q4::inwork 9754,12775 9815,12705 9870,12657
        {
          'data' => '#: also_indoor: traffic (none)
 #: note: auch bei rbb erwähnt
-	q4::inwork 5090,11007 5084,10890 5072,10701
+# REMOVED (hier nicht) ---	q4::inwork 5090,11007 5084,10890
+	q4::inwork 5084,10890 5072,10701
 ',
          'from' => 1661922000,
          'id' => 3617,
@@ -5759,7 +5760,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: also_indoor: traffic (G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-03
+#: last_checked: 2022-10-08
 #: check_frequency: 14d
 	q3::inwork 10755,13152 10846,13362
 ',
@@ -5865,7 +5866,7 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
 #: XXX Bis wann ist die Kreuzung gesperrt?
-#: last_checked: 2022-10-06 vvv
+#: last_checked: 2022-10-08 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-31 vvv
 Chausseestr.	q4::inwork 9207,13493 9212,13471
@@ -5881,6 +5882,41 @@ Friedrichstr.	q4::inwork 9212,13471 9225,13389
          'text' => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis Dezember 2022',
          'type' => 'handicap',
          'until' => 1672527600
+       },
+       {
+         'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,721782,722126#msg-722126
+#: by: https://www.bahninfo-forum.de/read.php?9,725584,728443#msg-728443 (nur nachts/am Wochenende zu?)
+	2::temp:clock -107,12220 -76,12236 -45,12243
+',
+         'from' => undef,
+         'id' => 3644,
+         'recurring' => 1,
+         'text' => 'Rossitter Platz - Machandelweg: Durchgang ist nur Mo-Fr (außer feiertags) 5-18 Uhr offen',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.youtube.com/watch?v=-UWvhPunrr8 (Sperrung der Fußgängerbrücke wegen Bauarbeiten ab November 2022)
+#: XXX Bis wann bleibt die Sperrung?
+#: next_check: 2022-12-31
+	2::inwork -107,12220 -76,12236 -45,12243
+',
+         'from' => 1667257200,
+         'id' => 3645,
+         'text' => 'Rossitter Platz - Machandelweg: wegen Bauarbeiten ist der Durchgang ab November 2022 komplett gesperrt, Ende der Sperrung unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: also_indoor: traffic (B)
+#: last_checked: 2022-10-08
+	q4::inwork; -3635,12572 -3444,12573 -3259,12580
+',
+         'from' => undef,
+         'id' => 3646,
+         'text' => 'Betckestr.: Einbahnstraßenregelung, offen Richtung Westen',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

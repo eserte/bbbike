@@ -279,7 +279,7 @@ Straße 77: nicht ausgeschildert	CS 15408,12394 15320,12375
 (Seeburger Str./Seecktstr. - Bullengraben): Zufahrt über Supermarktparkplatz (Lidl)	CS; -4299,13304 -4372,13384
 #: by: Ralf Henze vvv
 #: note: das gilt für alle Straßen von R bis Z vvv
-Straße R: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -203,16168 -269,16241 -312,16288 -386,16347 -460,16408 -542,16475 -632,16541 -719,16608 -784,16658 -792,16659
+Straße R: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -204,16162 -269,16241 -312,16288 -386,16347 -460,16408 -542,16475 -632,16541 -719,16608 -784,16658 -792,16659
 Straße Y: Privatstraße, Höchstgeschwindigkeit 20 km/h	CS -632,16541 -671,16488
 #: note: ^^^
 #: by: ^^^
@@ -489,7 +489,7 @@ Bus 139	busroute_N -834,15053 -934,15254 -1013,15433 -1037,15482 -1095,15621 -10
 Bus 139	busroute_N -2728,17038 -2659,17165 -2599,17269 -2573,17314 -2511,17430 -2856,17489 -2959,17507
 Bus 139	busroute_N -2835,17843 -2881,17857 -2897,17861 -2906,17661
 Bus 134	busroute_N -3216,15155 -3241,15118 -3349,15229 -3492,15331 -3507,15341 -3529,15358 -3555,15377 -3696,15463 -3778,15520 -3825,15551 -3881,15589 -3905,15605 -3997,15664 -4155,15763 -4254,15813 -4544,15940 -4630,15978 -4798,16050 -4893,16090 -4951,16116 -5077,16162 -5190,16203 -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415 -5960,16441
-Bus 337	busroute_N -3481,14523 -3598,14587 -3640,14643 -3721,14495 -3835,14668 -3880,14770 -3900,14818 -3926,14879 -4017,15077 -4061,15164 -4084,15264 -4110,15367
+Bus 337	busroute_N -3481,14523 -3598,14587 -3640,14643 -3721,14495 -3757,14552 -3835,14668 -3880,14770 -3900,14818 -3926,14879 -4017,15077 -4053,15167 -4090,15261 -4118,15370
 Bus 137	busroute_N -7003,16188 -6990,16321 -6982,16403 -6980,16452 -7037,16469 -7072,16489
 Bus M37	busroute_N -6722,16112 -6732,15998 -6766,15741 -6755,15682 -6733,15661 -6700,15653 -6629,15646 -6514,15629 -6345,15600 -6267,15585 -6182,15569 -6098,15559 -6045,15668 -5955,15778 -5911,15877
 Bus 131	busroute_N -6098,15559 -6116,15407 -6148,15306 -6175,15261 -6214,15211 -6256,15169 -6309,15125 -6361,15054 -6405,14971
@@ -660,7 +660,7 @@ Tordurchfahrt	CS 9341,6163 9367,6160
 # REMOVED (-> cul-de-sac) --- An den Haselbüschen: Sackgasse, kein Durchgang zur Daumstr.	CS; -1273,15539 -1291,15580 -1402,15592
 #: XXX_indoor: sollte das nach handicap_s wandern bzw. durch die Bordstein-Implementation behandelt werden?
 Pfähle und hohe Bordsteine	CP2 2211,4280 2254,4376
-Uferweg am Plötzensee	CS 5618,14981 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5005,15213
+Uferweg am Plötzensee	CS 5618,14981 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5001,15211
 # REMOVED (komischer Kommentar) --- (Wintgensstr. - General-Pape-Str.): eine mögliche Route über das ehem. Werksgelände	CS 7950,7840 8140,7845 8140,7906 8207,7909
 (Im Schäferfeld - Wetzlarer Str.): am Baggersee entlang	CS -8563,-3805 -8562,-3849 -8661,-3971 -8982,-3860 -9002,-3896 -8970,-3923
 #: by: Tom Urig
@@ -1721,6 +1721,17 @@ Curtiusstr. [Stichstraße]: nicht ausgeschildert	CS 2965,3823 2915,3905
 Richtung Schenkenberg nicht ausgeschildert	CP2; 44444,109014 44605,108715
 # 
 Nußbaumallee: nicht ausgeschildert	CP2; 1788,12252 1732,12224
+# 
+#: add_fragezeichen: Ist der Eidechsenweg bereits ausgeschildert? vvv
+#: last_checked: 2022-10-08 vvv
+#: check_frequency: 120d vvv
+Eidechsenweg: nicht ausgeschildert	CS -7720,13839 -7893,13781
+ausgeschildert "Zu den Häusern Metropolitan Park"	CP2; -7720,13839 -7893,13781
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+# 
+Bootshausweg: nicht ausgeschildert	CP2; -1691,16848 -1673,16939
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)

@@ -7,6 +7,12 @@
 # 
 #: temporary vvv
 # 
+#: next_check_id: WILHELMAMPEL-2022
+#: note: gilt nicht für Radfahrer Richtung Süden (Heerstr.)
+#: last_checked: 2022-10-08
+#: check_frequency: 120d
+Wilhelmstr./Am Omnibushof: provisorische Ampel	X::inwork -4647,12269
+# 
 #: next_check_id: HAENSEL-2022
 #: last_checked: 2022-09-15
 #: XXX Ampel befindet sich südöstlich der Einmündung
@@ -17,7 +23,7 @@ Kiefholzstr./Hänselstr.: provisorische Fußgängerampel	F::inwork 15695,7254
 #: osm_watch: way id="936801541" version="3"
 #: XXX Ampel befindet sich östlich der Einmündung
 #: note: Anforderungsampel
-#: last_checked: 2022-09-24
+#: last_checked: 2022-10-07
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -965,7 +971,9 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 1969,12375
 	X 2411,12428
 	X 2095,11440
+#: XXX_prog: nicht relevant beim Fahren vom Theodor-Heuss-Platz -> Kaiserdamm
 	X 1574,11379
+#: XXX_prog: nicht relevant beim Fahren vom Theodor-Heuss-Platz -> Reichsstr.
 	X 1403,11428
 #: XXX_prog nicht relevant beim Fahren von der Heerstr. auf den Platz
 	X 1381,11335
@@ -1002,7 +1010,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -3227,14260
 	X -3009,17090
 	X -4591,15496
-	X -4110,15367
+	X -4118,15370
 	X -3552,14082
 	X -3721,14495
 #: XXX_prog gilt nicht für rechtsabbiegende Radfahrer in der Relation Ruhlebener Str. - Klosterstr.
@@ -1512,6 +1520,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7600,7605
 	X -1284,13340
 #: XXX_prog: gilt nicht für stadtauswärts fahrende Radfahrer auf dem Radweg
+#: note: Anforderung für Radfahrer aus Am Hain
 	X -1337,13354
 #: XXX_prog: gilt nicht für stadtauswärts fahrende Radfahrer auf dem Radweg
 	X -1560,13418
@@ -1901,6 +1910,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -2856,15687
 	X -3040,16246
 	F -3029,16823
+	X -3033,16757
+#: note: Anforderungsampel
 	F -3043,16601
 	X -2959,17507
 	X -302,15546
@@ -2018,7 +2029,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10432 (sichere Querungsmöglichkeit gefordert)
 #: XXX Ampel ausgeschaltet, vielleicht dauerhaft (Lynar/Tegeler)
 #: osm_watch: node id="3777205512" version="4"
-#: last_checked: 2022-10-03
+#: last_checked: 2022-10-08
 #: check_frequency: 90d
 	X0 7259,14870
 #: note: Anforderungsampel für Radfahrer aus Richtung Osten Richtung Luisenstr. und für Radfahrer aus der Luisenstr.
@@ -2332,6 +2343,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 11936,22570
 	X 2394,9714
 #: XXX_prog muss beim Überqueren der Kurfürstenstr. benutzt werden
+#: note: gilt nicht für Radfahrer Richtung Westen
 #: note: Anforderungsampel
 	F 6277,10924
 #: by: Olaf Schulz vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -2341,7 +2353,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 5399,8344
 #: XXX_prog: lange Wartezeiten für Radfahrer (zwei Umläufe)
 	X 8241,11024
-#: XXX_indoor eigentlich zwei Fußgängerampeln in ca. 50-100m Abstand
+#: XXX_indoor eigentlich zwei Fußgängerampeln in ca. 50-100m Abstand (mittlerweile ist die westliche wegen Bauarbeiten ausgeschaltet)
 #: note: Anforderungsampel (aber wahrscheinlich oft genutzt)
 	F 5829,10964
 	X 12060,11323
@@ -2528,7 +2540,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	F 14745,2710
 #: by: mapillary
 	X -6031,12605
-#: note: zumindest für Radfahrer Richtung Westen Anforderungsampel
+#: note: für Radfahrer Richtung Westen Anforderungsampel
 	X -6675,12632
 #: note: Anforderungsampel
 	F -1389,15285
@@ -2835,6 +2847,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 5000,12781
 	F 5754,13170
 	X 20150,13562
+#: note: Anforderungsampel
 	F -3018,16974
 # 
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2021
@@ -2942,10 +2955,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: off: Sunday & holiday (seen 2014-09-21 afternoon, 2015-03-15 afternoon, 2015-05-10 afternoon, 2015-08-09 afternoon, 2016-05-29 afternoon, 2016-06-16 noon, 2017-12-03 noon, 2019-12-26 noon, 2022-03-20 noon)
 	F 14802,11784
 	X -1810,16391
+#: note: Anforderung für geradeaus fahrende Radfahrer Richtung Osten
 	X -1675,16813
 #: note: Bedarfsampeln, am Wochenende abgeschaltet (by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4302&options=4)
 #: off: weekend
 	F -2088,13413
+#: note: Anforderungsampel
 	F 417,12115
 #: note: Anforderungsampel
 	F 6447,11144
@@ -3411,7 +3426,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX wird diese Ampel jemals wieder in Betrieb genommen?
 #: osm_watch: node id="28321258" version="9"
-#: last_checked: 2022-07-31
+#: last_checked: 2022-10-08
 #: check_frequency: 180d
 #: next_check: 2023-12-01
 	F0 -224,16095
