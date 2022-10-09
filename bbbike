@@ -5894,10 +5894,10 @@ sub define_item_attribs {
 
 	 'sperre0' => 'red',	# Tragen
 	 'sperre1' => 'blue',	# Einbahnstraßen
-	 'sperre1s' => '#b0b0ff',  # Einbahnstraßen (nur mit "einbahn-strict")
+	 'sperre1s' => '#7070ff',  # Einbahnstraßen (nur mit "einbahn-strict")
 	 'sperre1no' => 'blue', # Einbahnstraßen temporär offen
 	 'sperre2' => 'red',	# voll gesperrt
-	 'sperre2s' => '#ffb0b0',  # voll gesperrt (nur mit "sperre-strict")
+	 'sperre2s' => '#ff7070',  # voll gesperrt (nur mit "sperre-strict")
 	 'sperre3' => 'red',	# Wegführung gesperrt
 
 	 'IN' => 'violet',	# Industrieanlagen
