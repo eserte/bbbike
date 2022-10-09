@@ -28347,9 +28347,11 @@ EOF
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
-#: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich
+#: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
+#: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
+#: note: möglicherweise kann die eigentlich gesperrte westliche Fahrbahn zeitweise (außerhalb der Arbeitszeiten? sonntags?) Richtung Süden befahren werden (gesehen 2022-10-09)
 #: priority: #B
-#: last_checked: 2022-09-25
+#: last_checked: 2022-10-09
 #: check_frequency: 90d
 #: next_check: 2023-08-21
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017
@@ -32439,7 +32441,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand September 2021: Bauarbeiten im südlichen Abschnitt, Komplettsperrung möglich)',
+       text  => 'Hönower Wiesenweg: Durchfahrt kann wegen Bauarbeiten gesperrt sein (Stand Oktober 2021: Bauarbeiten im südlichen Abschnitt, nur enge Passage für Fußgänger offen)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: PARKSTADTKARLSHORST-2021
@@ -32448,7 +32450,7 @@ EOF
 #: add_fragezeichen: Gibt es mittlerweile eine Sperrung für Fußgänger und Radfahrer?
 #: osm_watch: way id="26322046" version="25"
 #: osm_watch: way id="165832806" version="26"
-#: last_checked: 2022-09-18
+#: last_checked: 2022-10-09
 #: check_frequency: 30d
 	2::inwork 17753,8290 17707,8328 17652,8349 17617,8363 17554,8458 17533,8505 17524,8536
 # REMOVED (hier wohl nicht mehr) ---	2::inwork 17524,8536 17515,8567 17497,8623
@@ -34649,19 +34651,19 @@ EOF
      },
      { from  => 1643583600, # 2022-01-31 00:00
        until => undef, # XXX
-       text  => 'Spreeuferweg: Bauarbeiten, zwischen Flotowstr. und Lessingbrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Anfang April 2022: Weg ist zumindest in Höhe Lessingbrücke nicht passierbar; Stand Juli 2022: nicht passierbare Stelle in Höhe Flotowstr.)',
+       text  => 'Spreeuferweg: Bauarbeiten, zwischen Flotowstr. und Hansabrücke kann der Uferweg gesperrt sein, ab Anfang Februar 2022 (Stand Juli 2022: nicht passierbare Stelle in Höhe Flotowstr.)',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1172556.php',
        data  => <<EOF,
 #: next_check_id: SPREEUFER-2022
 #: XXX Laut Pressemitteilung dauern die Bauarbeiten zwei Jahre (dieser oder alle Bauabschnitte)?
 #: add_fragezeichen: Wo genau ist der Uferweg wegen Bauarbeiten gesperrt?
-#: last_checked: 2022-09-26 (osm)
+#: last_checked: 2022-10-08 (osm)
 #: check_frequency: 60d
 #: next_check: 2024-02-12
-#: osm_watch: way id="4410535" version="25"
-#: osm_watch: way id="4993234" version="15"
-	2::inwork 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
+#: osm_watch: way id="4993234" version="16"
+	2::inwork 5714,12290 5796,12372 5940,12564
+# REMOVED (laut osm hier fertiggestellt) --- #: osm_watch: way id="4410535" version="26" --- 2::inwork 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
 EOF
      },
      { from  => 1643670000, # 2022-02-01 00:00
@@ -35375,14 +35377,19 @@ EOF
        text  => 'Seydlitzstr.: Bauarbeiten zwischen Havensteinstr. und Dessauerstr., Fahrbahn gesperrt, außerdem Anbindung Fröbenstr. gesperrt, vermutlich bis Mitte Oktober 2022',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX Halteverbot gilt bis 2022-10-10
-#: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder offen?
-#: also_indoor: traffic (G(nördlicher?),B)
-#: last_checked: 2022-09-04
-#: next_check: 2022-10-10
+#: XXX Halteverbot gilt bis 2022-10-10 vvv
+#: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder offen? vvv
+#: also_indoor: traffic (B,ex-G(nördlicher?)) vvv
+#: last_checked: 2022-09-04 vvv
+#: next_check: 2022-10-10 vvv
 # REMOVED (hier nicht mehr) ---	q4::inwork 6273,2609 6293,2583
 Seydlitzstr.	q4::inwork 6293,2583 6349,2510 6459,2364
 Frobenstr.	q3::inwork 6349,2510 6529,2642
+#: next_check ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
+#: XXX ^^^
 EOF
      },
      { from  => 1654678800, # 2022-06-08 11:00
@@ -35915,7 +35922,7 @@ EOF
        source_id => 'viz2021:13.516327,52.486802,02.08.2022,07:00',
        data  => <<EOF,
 #: next_check_id: WALLENSTEIN-2022
-#: note: zurzeit Sperrung wohl nur während der Arbeitszeiten, Durchfahrt war möglich am: 2022-08-07 mittags, 2022-08-14 mittags, 2022-09-03 (Sa) nachmittags vvv
+#: note: zurzeit Sperrung wohl nur während der Arbeitszeiten, Durchfahrt war möglich am: 2022-08-07 mittags, 2022-08-14 mittags, 2022-09-03 (Sa) nachmittags, 2022-10-09 (So) nachmittags vvv
 Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -36445,14 +36452,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1665328439, # undef, # XXX
        text  => 'Köpenicker Allee: zwischen Waldowallee und Rolandseck Bauarbeiten, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: KOEPENICKERALLEE-2022
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-09-25
-#: check_frequency: 14d
+# REMOVED --- #: next_check_id: KOEPENICKERALLEE-2022 --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2022-09-25 --- #: check_frequency: 14d
 	q4::inwork 19020,9364 18939,9417
 EOF
      },
@@ -36613,6 +36617,21 @@ EOF
 #: also_indoor: traffic (B)
 #: last_checked: 2022-10-08
 	q4::inwork; -3635,12572 -3444,12573 -3259,12580
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Uhlandstr.: Fahrbahn zwischen Lessingstr. und Friedhof gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
+#: also_indoor: traffic (B) vvv
+#: last_checked: 2022-10-07 (mapillary) vvv
+nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
+Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
+#: last_checked ^^^
+#: also_indoor ^^^
+#: add_fragezeichen ^^^
 EOF
      },
     );

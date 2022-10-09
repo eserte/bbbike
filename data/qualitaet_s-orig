@@ -276,7 +276,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen)
 #: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2022-09-03
+#: last_checked: 2022-10-09
 #: check_frequency: 45d
 #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -1355,11 +1355,9 @@ Köpenicker Allee: Asphalt	Q0 19813,8564 19898,8410
 Köpenicker Allee: holpriger Fahrweg mit asphaltierten Stellen	Q2 19898,8410 19990,8253 20096,8077 20226,7846
 Köpenicker Allee: unbefestigter Weg, sandige Stellen	Q2 20226,7846 20280,7749
 Köpenicker Allee: Beton	Q0- 19500,9043 19575,8978 19633,8892 19697,8776 19813,8564
-#: next_check_id: KOEPENICKERALLEE-2022
-#: add_fragezeichen: Ist die Qualität des Asphalts nach den Bauarbeiten besser geworden?
-#: last_checked: 2022-09-25
-#: check_frequency: 14d
-Köpenicker Allee: mäßiger Asphalt	Q1 18939,9417 19020,9364
+# REMOVED --- #: next_check_id: KOEPENICKERALLEE-2022 --- #: add_fragezeichen: Ist die Qualität des Asphalts nach den Bauarbeiten besser geworden? --- #: last_checked: 2022-09-25 --- #: check_frequency: 14d
+#: historical_note: früher (bis September/Oktober 2022): mäßiger Asphalt, Q1
+Köpenicker Allee: Asphalt	Q0 18939,9417 19020,9364
 Köpenicker Allee: Asphalt mit Rissen	Q1+; 19206,9243 19267,9201 19392,9116 19500,9043
 #: by: Roy Fischer [AM]
 #: confirmed_by: srt
@@ -2446,7 +2444,9 @@ Gartenufer: Parkweg, bei Regen Pfützen	Q1- 5845,11615 6067,11479 6200,11417
 Gartenufer: Kleinsteinpflaster	Q1 6200,11417 6337,11365 6346,11326
 (südliches Spreeufer): wassergebundene Decke	Q1+ 5550,12238 5573,12242
 (südliches Spreeufer): asphaltähnlicher Belag	Q0 5573,12242 5604,12244 5643,12253
-(südliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils mäßiger Asphalt	Q1- 5643,12253 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
+(südliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils mäßiger Asphalt	Q1- 5643,12253 5714,12290 5796,12372 5940,12564
+#: historical_note: früher (bis Herbst 2022): teils gutes Kopfsteinpflaster, teils Parkweg, teils mäßiger Asphalt, Q1-
+(südliches Spreeufer): Asphalt	Q0 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
 Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3+ 7930,12912 7858,12830 7789,12764
 Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3+ 7858,12830 7837,12860
 Spreeuferweg: glatte Gehwegplatten und fester Sandweg an den Seiten	Q0 7051,12426 7122,12384 7183,12372 7217,12383 7314,12419 7447,12520 7521,12581 7772,12694 7856,12746 7908,12804 7945,12878
@@ -12664,7 +12664,7 @@ Dolgenseestr. [8B, 8C, 9, 9A, 9B]: Betonpflaster	Q0- 17523,9882 17412,9911
 Georg-Klingenberg-Str.: Asphalt	Q0 17468,8692 17656,8700 17792,8660 17846,8644
 Adolf-Wermuth-Allee: Asphalt	Q0 17656,8700 17640,8627
 #: next_check_id: PARKSTADTKARLSHORST-2021
-#: last_checked: 2022-08-25
+#: last_checked: 2022-10-09
 #: check_frequency: 45d
 Adolf-Wermuth-Allee: Asphalt, letzte Deckschicht fehlt	Q1 17648,8626 17627,8556 17608,8483
 Heiner-Müller-Str.: Asphalt	Q0 17497,8623 17640,8627
@@ -15669,6 +15669,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/C26Zsml6vpCHB4ojEyEMwEQ5Ag0peMrpF0t8ObAL/UKOOuMkf/87-Anlagen/02/0532022-1B-Plan11-57aFestsetzung.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9440 (Antrag (Fahrradstraße))
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/wandlitzstrasse-bald-radstrasse_a351203
+#: by: https://www.buergerhaushalt-lichtenberg.de/vorschlag/ausbau-fahrradwege-fahrradstrassen-karlshorst
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
 #: last_checked: 2022-08-25
 #: check_frequency: 90d
@@ -31338,10 +31339,10 @@ Einmündungsbereich asphaltiert	Q0- 18494,8569
 Einmündungsbereich asphaltiert	Q0- 18448,8602
 Einmündungsbereich Asphalt und Kopfsteinpflaster	Q2 18401,8636
 Einmündungsbereich Asphalt und Kopfsteinpflaster	Q2 18331,8685
-Einmündungsbereich Asphalt mit Unebenheiten	Q1 18272,8764
-Einmündungsbereich Asphalt und Kopfsteinpflaster	Q2 18222,8843
-Einmündungsbereich Asphalt und Kopfsteinpflaster	Q2 18147,8895
-Einmündungsbereich Asphalt und Kopfsteinpflaster	Q2 18070,8945
+Einmündungsbereich asphaltiert	Q0 18272,8764
+Einmündungsbereich asphaltiert	Q0 18222,8843
+Einmündungsbereich asphaltiert	Q0 18147,8895
+Einmündungsbereich asphaltiert	Q0 18070,8945
 Einmündungsbereich asphaltiert	Q0 -3410,14479
 Kreuzungsbereich asphaltiert	Q0 -3006,15534
 Einmündungsbereich asphaltiert	Q0 8200,6668
