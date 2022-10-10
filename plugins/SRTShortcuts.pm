@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.10;
+$VERSION = 2.11;
 
 use File::Glob qw(bsd_glob);
 
@@ -783,6 +783,9 @@ EOF
 	      ],
 	      [Button => $do_compound->('Search while type (everything)'),
 	       -command => sub { tk_suggest() },
+	      ],
+	      [Button => $do_compound->("Today's GPS tracks"),
+	       -command => sub { todays_gps_tracks() },
 	      ],
 	      [Button => $do_compound->("Load route"),
 	       -command => sub { route_lister() },
@@ -3663,6 +3666,53 @@ sub save_mapillary_done_file {
 	or main::status_message("Error while closing $mapillary_done_file~: $!", "die");
     rename "$mapillary_done_file~", $mapillary_done_file
 	or main::status_message("Error while renaming $mapillary_done_file~ to $mapillary_done_file: $!", "die");
+}
+
+######################################################################
+
+sub todays_gps_tracks {
+    require BBBikeGPS;
+
+    my $gpsdatadir = "$bbbike_rootdir/misc/gps_data";
+    my(@l) = localtime;
+    my $yyyy = sprintf "%04d", $l[5]+1900;
+    my $mm   = sprintf "%02d", $l[4]+1;
+    my $dd   = sprintf "%02d", $l[3];
+
+    my @files;
+    my $current_gpx = "$ENV{HOME}/trash/Current.gpx";
+    if (-e $current_gpx && -M $current_gpx < 1) {
+	push @files, $current_gpx;
+    }
+    push @files, glob("$gpsdatadir/$yyyy$mm$dd.{trk,wpt}");
+    push @files, glob("$gpsdatadir/*/$yyyy$mm$dd.{trk,wpt}");
+    push @files, glob("$gpsdatadir/*/$yyyy-$mm-$dd*.{trk,wpt}");
+    @files = grep { -f $_ && -r $_ && -s $_ } @files;
+    if (!@files) {
+	main::status_message("No GPS files found for date $yyyy-$mm-$dd", "infodlg");
+	return;
+    }
+
+    warn "INFO: Found files: @files\n";
+    my $file_i = 0;
+    my %plotted_layer_info;
+    tie %plotted_layer_info, 'Tie::IxHash' if eval { require Tie::IxHash; 1 };
+    for my $file (@files) {
+	BBBikeGPS::do_draw_gpsman_data($main::top, $file,
+				       -drawtypeauto => 1,
+				       -plottedlayerinfo => \%plotted_layer_info,
+				       ($file_i == 0 ? (-centerbegin => 1) : ()),
+				      );
+	$file_i++;
+    }
+## XXX does not work
+#    for my $abk (sort keys %plotted_layer_info) {
+#	if ($abk =~ /^p-/) {
+#	    main::set_in_stack($abk, 'above', 's-BAB');
+#	} else {
+#	    main::set_in_stack($abk, 'below', 's-NN');
+#	}
+#    }
 }
 
 ######################################################################
