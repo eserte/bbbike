@@ -18,9 +18,9 @@
 # 
 #: next_check_id: MARKGRAFENDAMM-2022
 #: note: Stau gesehen: 2022-08-24 (Mi) gegen 13:00, 2022-08-25 (Do) gegen 14:30, 2022-08-27 (Sa) gegen 17:30, 2022-10-07 (Fr) gegen 13:20
-#: note: kurzen Stau gesehen (bis Corinthstr.): 2022-09-24 (Sa) gegen 16:40
+#: note: kurzen Stau gesehen (ab Corinthstr.): 2022-09-24 (Sa) gegen 16:40, vermutlich 2022-10-10 (Mo) gegen 13:05
 #: note: keinen Stau gesehen: 2022-08-29 (Mo) gegen 18:10, 2022-09-01 (Do) gegen 19:00, 2022-09-03 (Sa) gegen 12:45, 2022-09-04 (So) gegen 15:00, 2022-09-21 (Mi) gegen 19:50, 2022-09-28 (Mi) gegen 11:15
-#: last_checked: 2022-10-07
+#: last_checked: 2022-10-10
 #: check_frequency: 90d
 #: next_check: 2023-03-15
 	Jam; 14641,10552 14608,10409 14558,10264
@@ -73,10 +73,11 @@ Karl-Marx-Str.	Jam; 12598,8390 12582,8408 12562,8432 12545,8449 12494,8501
 # 
 #: next_check_id: FRANZOESISCHE-2018 vvv
 #: source_id: 2147343056 (bis 30.06.2021) vvv
-#: source_id: viz2021:13.385078,52.515417,10.10.2018,13:25 (bis 27.2.2023) vvv
+#: source_id: viz2021:13.385078,52.515417,10.10.2018,13:25 (bis 27.2.2023) (inaktiv) vvv
 #: last_checked: 2022-09-23 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2023-02-27 vvv
+#: next_check: 2022-10-10 vvv
+# REMOVED --- #: next_check: 2023-02-27 vvv
 #: valid: -20230227 vvv
 Behrenstr.	Jam; 8861,12125 9054,12154 9064,12156 9164,12172
 Behrenstr.	Jam; 9164,12172 9064,12156 9054,12154 8861,12125

@@ -130,7 +130,7 @@ Eichborndamm	1 4223,18982 4211,18882 4163,18676 4102,18298 4059,18107 4016,17918
 Spreestr.	1 17900,6072 17939,5968 17877,5860 17810,5736 17807,5730 17782,5698
 Buckower Chaussee	1 8742,475 8972,498 9002,471
 # REMOVED (nein, wird nicht) --- #: XXX evtl. wird die Einbahnstraßenregelung aufgehoben --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=6025 --- #: last_checked: 2015-05-05 --- #: check_frequency: 30d
-Archibaldweg	1s:q4 15674,10851 15870,10938
+Archibaldweg	1s:q4 15674,10851 15820,10916 15870,10938
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
 Adlergestell (extra Radweg)	2 22096,1136 21837,1340 21812,1366 21506,1768 21388,1895
@@ -4183,8 +4183,10 @@ Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für
 #: source_id: viz2021:13.384963,52.513983,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023)
 Mauerstr..: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9076,12054
 #: source_id: 2147343293
-#: source_id: viz2021:13.385749,52.513657,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023)
+#: source_id: viz2021:13.385749,52.513657,10.10.2018,13:30 (bis 30.9.2022) (bis 27.2.2023) (inaktiv)
 #: source_id: viz2021:13.38639,52.5137,29.09.2022,18:06 (inaktiv)
+#: note: Meldung wurde auch bei rbb entfernt
+#: next_check: 2022-10-10
 Jägerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9195,11972 9108,11961
 #: XXX laut googlemaps bis 30. Oktober 2018
 #: XXX laut VIZ hier Komplettsperrung, auch für Fußgänger --- aber am 2018-10-10, 2018-10-17, 2018-10-25 ist man noch durchgekommen
@@ -4235,6 +4237,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 #: by: https://plus.tagesspiegel.de/berlin/spreepark-zeitplan-verschiebt-sich-eierhauschen-geht-erst-2023-in-betrieb-388960.html (Frühjahr 2023)
 #: by: https://www.berliner-woche.de/plaenterwald/c-bauen/schiffsanleger-und-eierhaeuschen-sollen-bis-ende-des-jahres-fertig-werden_a335405 (Ende 2022 fertig?)
 #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/spreepark-wird-fuer-radfahrer-und-fussgaenger-besser-erreichbar_a346511 (Modernisierung des Stichwegs)
+#: by: https://www.berliner-woche.de/plaenterwald/c-bauen/eierhaeuschen-oeffnet-zur-kommenden-saison_a358490
 #: priority: #C
 #: last_checked: 2022-07-26
 #: check_frequency: 120d

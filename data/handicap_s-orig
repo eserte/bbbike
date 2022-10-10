@@ -620,6 +620,7 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 #: osm_watch: way id="996616281" version="9"
 #: osm_watch: way id="996616282" version="8"
 #: osm_watch: way id="1100696455" version="1"
+#: also_indoor: traffic (B) vvv
 #: last_checked: 2022-10-02 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-09-15 vvv
@@ -631,6 +632,7 @@ Weserstr./Fuldastr.: Arbeiten im Kreuzungsbereich	q2::inwork 12628,8711 12740,88
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: also_indoor ^^^
 # 
 # REMOVED (Sperrung noch da, aber die Bürgersteigüberfahrt ist weggefallen) --- #: add_fragezeichen: Dauern die Bauarbeiten an? --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-02-01 --- Maybachufer: Bauarbeiten zwischen Friedelstr. und Liberdastr., teilweise Radfahrerführung über den Bürgersteig	q2::inwork 12085,9778 12250,9691
 # REMOVED --- #: next_check_id: BRAUNSCHWEIGER-2020 --- #: last_checked: 2020-10-24 vvv
@@ -698,14 +700,14 @@ Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwor
 #: XXX Am 1.2.2022 wurde der VIZ-Eintrag wieder entfernt, ohne dass was passiert ist.
 #: source_id: viz2021:13.432818,52.481758,01.02.2022,08:00 (inaktiv)
 #: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (mittlerweile bis 1.9.2022) (bis 1.10.2022) (inaktiv) (allerdings hat sich die Situation nicht verändert)
-#: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (bis 6.10.2022)
+#: source_id: viz2021:13.432818,52.481758,10.02.2022,08:00 (bis 6.10.2022) (mittlerweile bis 11.10.2022)
 #: osm_watch: way id="137623800" version="26"
 #: osm_watch: way id="625667165" version="16"
-#: also_indoor: traffic (G(falsch),B,H)
+#: also_indoor: traffic (G[falsch],B,H)
 #: priority: #B
 #: last_checked: 2022-10-02
 #: check_frequency: 90d
-#: next_check: 2022-10-06
+#: next_check: 2022-10-11
 Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kann zugeparkt sein	q2::inwork; 12494,8501 12349,8464
 # 
 # REMOVED (wieder offen) --- #: next_check_id: KARLMARXSTR-2018 --- #: by: https://www.kms-sonne.de/baustellennews/?date=20200526 (voraussichtlich ab 25. Juni 2020 bis Herbst 2020) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/sperrrung-an-der-fuldastrasse_a275098 --- #: by: https://www.kms-sonne.de/baustellennews?date=20200630 --- #: by: https://www.kms-sonne.de/baustellennews?date=20201221 (weiterhin gesperrt) --- #: by: https://www.kms-sonne.de/baustellennews?date=202102 (voraussichtlich bis Sommer 2021) --- #: source_id: 2147345472 (Verschwenkung der KMS) --- #: also_indoor: traffic (G,H) --- #: last_checked: 2021-05-30 --- #: check_frequency: 120d --- #: next_check: 2021-10-08 --- #: next_check: 2021-06-01 --- Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12494,8501
@@ -736,7 +738,7 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 #: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023
 #: XXX Einbahnstraßenregelung nach den Bauarbeiten wiederherstellen
 #: also_indoor: traffic (G)
-#: last_checked: 2022-09-27
+#: last_checked: 2022-10-10
 #: check_frequency: 90d
 #: next_check: 2023-10-31
 Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,12420 15457,12449
@@ -749,8 +751,8 @@ Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,124
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
 #: XXX Laut Schild des Bezirksamts Umgestaltung bis August 2023 (!)
 #: also_indoor: traffic (ex-G(unvollständig),H(falsch),B)
-#: last_checked: 2022-09-22 (osm note) vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2022-10-10 vvv
+#: check_frequency: 7d vvv
 #: next_check: 2023-08-31 vvv
 Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,12280 16159,12301
 # REMOVED (hier auch offen, Einbahnstraßenregelung für Nicht-Radfahrer) --- Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16159,12301 16056,12317
@@ -759,7 +761,7 @@ Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,122
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-# REMOVED (wieder beendet) --- #: XXX Bis wann dauern die Bauarbeiten an? --- #: XXX Mittlerweile nur etwa 100m --- #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FD6C35EF-640E-43B3-8F22-17914A1869B0 (Verbindungstrasse Fernwärme Klingenberg) --- #: also_indoor: traffic (G,B(beide zu viel)) vvv --- # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="1002249853" version="2" --- # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="198589916" version="9" --- #: osm_watch: way id="198589913" version="6" --- #: last_checked: 2022-01-10 vvv --- #: check_frequency: 14d vvv --- Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q1::inwork; 15932,10830 15681,10801 --- # REMOVED --- Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
+# REMOVED (wieder beendet) --- #: XXX Bis wann dauern die Bauarbeiten an? --- #: XXX Mittlerweile nur etwa 100m --- #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FD6C35EF-640E-43B3-8F22-17914A1869B0 (Verbindungstrasse Fernwärme Klingenberg) --- #: also_indoor: traffic (G,B(beide zu viel)) vvv --- # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="1002249853" version="2" --- # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="198589916" version="9" --- #: osm_watch: way id="198589913" version="6" --- #: last_checked: 2022-01-10 vvv --- #: check_frequency: 14d vvv --- Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q1::inwork; 15932,10830 15856,10821 15681,10801 --- # REMOVED --- Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
 # REMOVED --- #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/neue-vorstreckungen-ueberwege-mittelinseln-und-abgesenkte-bordsteine_a319370 (Erwähnung der Wege in der Grünanlage) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8710 (Abschluss der Bauarbeiten im 3. Quartal 2021) --- #: last_checked: 2021-09-11 vvv --- #: check_frequency: 7d vvv
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q3::inwork 16878,9875 16900,9861
@@ -784,7 +786,7 @@ Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,122
 # REMOVED --- #: last_checked: 2015-03-15 --- #: check_frequency: 60d --- Dottistr.: Bauarbeiten, Einbahnstraße	q3::inwork; 15685,12154 15879,12131
 # REMOVED (keine Behinderungen mehr) --- #: next_check_id: HAUPTBUCHT-2014 --- #: last_checked: 2014-10-05 (Absperrgitter existieren noch, werden aber oft von Fußgängern weggeschoben) (deshalb nur q3) --- #: check_frequency: 60d --- (Rummelsburger Ufer - Hauptstr.): Bauarbeiten, ggfs. Umweg über Norma-Parkplatz notwendig	q3::inwork 15249,10564 15307,10701
 # REMOVED (anscheinend schon beendet) --- #: last_checked: 2014-05-06 --- #: next_check: 2014-05-31 (Bauarbeiten bis Mai 2014) --- #: valid: -20140531 --- Archibaldweg: Bauarbeiten zwischen Leopoldstr. und Rupprechtstr. Richtung Nordosten	q3::inwork; 15950,10987 16034,11053
-# REMOVED (wieder Einbahnstraße) --- #: source_id: IM_024674 --- #: last_checked: 2015-04-26 --- #: next_check: 2015-04-30 --- #: priority: #A --- Archibaldweg: Bauarbeiten, teilweise über Gehweg ausweichen	q2::inwork 15674,10851 15870,10938
+# REMOVED (wieder Einbahnstraße) --- #: source_id: IM_024674 --- #: last_checked: 2015-04-26 --- #: next_check: 2015-04-30 --- #: priority: #A --- Archibaldweg: Bauarbeiten, teilweise über Gehweg ausweichen	q2::inwork 15674,10851 15820,10916 15870,10938
 # REMOVED (nicht mehr Einbahnstraße) --- #: osm_watch: way id="31526264" version="6" --- #: last_checked: 2015-04-08 --- #: check_frequency: 30d --- Stadthausstr.: Bauarbeiten, Einbahnstraße, Richtung Tuchollaplatz gesperrt	q3::inwork; 15681,10801 15674,10851
 # REMOVED (Bauarbeiten sind beendet) --- #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120217.1445.366291.html --- #: osm_watch: way id="7543672" version="17" --- #: XXX ad osm_watch: ab version=17 wieder als befahrbar markiert, aber das stimmt nicht ganz --- #: last_checked: 2013-06-24 --- #: check_frequency: 45d --- Radweg Herzberge: wegen Bauarbeiten müssen teilweise Trampelpfade benutzt werden	q4::inwork 17154,14093 17219,14133 17267,14146
 # REMOVED (man kann eigentlich schon problemlos durch) --- #: last_checked: 2013-11-26 vvv --- #: next_check: 2013-12-03 vvv --- #: priority: #A vvv --- Parkaue: Bauarbeiten, ggfs. auf Gehweg ausweichen	q4::inwork 15399,12444 15457,12449 15535,12420 --- Am Stadtpark: Bauarbeiten, ggfs. auf Gehweg ausweichen	q3::inwork 15457,12449 15454,12519 --- #: priority ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
@@ -3496,6 +3498,8 @@ Alexanderufer - Charité: durch das Tor schieben	q4 8371,13399 8363,13402 8356,13
 Nöldnerplatz [Lückstr. - Nöldnerstr.]: einige Fußgänger	q1 15903,10906 15932,10830
 #: note: am nördlichen Ende Schild Fußgänger, Radfahrer frei
 Nöldnerplatz [Nöldnerstr. - Schlichtallee]: einige Fußgänger	q1 15932,10830 15970,10755
+#: note: Grünanlage, keine Zusatzschilder
+Nöldnerplatz [am Skatepark]: einige Fußgänger	q3 15820,10916 15844,10894 15856,10821
 (Weg im Grünzug): einige Fußgänger	q1- 17391,9746 17316,9797 17257,9869 17161,9921 17005,9953 16963,9960
 #: note: hier etwas breiterer Weg
 (Weg im Grünzug): einige Fußgänger	q1 16963,9960 16886,9982 16841,9997

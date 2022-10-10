@@ -1116,7 +1116,7 @@ EOF
        text  => 'K 6003; (Friedrichswalde-LG-L100 Gollin); OD Reiersdorf Deckenerneuerung Vollsperrung 06.10.2004-15.10.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 25097,72040 25875,71662
+	q4 25097,72040 25356,71914 25875,71662
 	q4 28214,70120 27727,70536 26843,71276 26511,71453
 	q4 26511,71453 25875,71662
 EOF
@@ -9521,7 +9521,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006236',
        data  => <<EOF,
-	1::inwork 16049,10844 15960,10833 15932,10830 15681,10801 15433,10765 15388,10758 15272,10790
+	1::inwork 16049,10844 15960,10833 15932,10830 15856,10821 15681,10801 15433,10765 15388,10758 15272,10790
 EOF
      },
      { from  => 1186081587, # 2007-08-02 21:06
@@ -13036,7 +13036,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010255',
        data  => <<EOF,
-	1::inwork 16049,10844 15960,10833 15932,10830 15681,10801 15433,10765 15388,10758 15272,10790
+	1::inwork 16049,10844 15960,10833 15932,10830 15856,10821 15681,10801 15433,10765 15388,10758 15272,10790
 EOF
      },
      { from  => 1223416800, # 2008-10-08 00:00
@@ -13335,7 +13335,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010255',
        data  => <<EOF,
-	1::inwork 16049,10844 15960,10833 15932,10830 15681,10801 15433,10765 15388,10758 15272,10790
+	1::inwork 16049,10844 15960,10833 15932,10830 15856,10821 15681,10801 15433,10765 15388,10758 15272,10790
 EOF
      },
      { from  => 1228431600, # 2008-12-05 00:00
@@ -29862,7 +29862,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (keine Einschränkungen) --- #: XXX gibt es noch immer eine Einbahnstraßenregelung, oder ist die Verkehrsführung an der Baustelle mittlerweile anders? --- #: last_checked: 2019-07-03
-	q3::inwork; 15932,10830 15681,10801
+	q3::inwork; 15932,10830 15856,10821 15681,10801
 EOF
      },
      { from  => 1547074800, # 2019-01-10 00:00
@@ -32886,7 +32886,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: ARCHIBALDWEG-2021 --- #: also_indoor: traffic (G) --- #: priority: #B --- #: last_checked: 2021-07-03 --- #: check_frequency: 14d
-	q4::inwork 15870,10938 15674,10851
+	q4::inwork 15870,10938 15820,10916 15674,10851
 EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-05-31 00:00:00") }, # 1 Tag Vorlauf
@@ -34221,7 +34221,7 @@ EOF
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
-#: last_checked: 2022-10-05 vvv
+#: last_checked: 2022-10-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -35260,14 +35260,15 @@ EOF
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
        data  => <<EOF,
 #: next_check_id: HAEMMERLING-2022
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
 #: note: anscheinend auch für Fußgänger gesperrt, hier gibt es keinen Gehweg
 #: note: laut rbb nur bis 20.10.2022
-Schubertstr.	2::inwork 21984,6317 21856,6390
+#: also_indoor: traffic (B+G[nur Am Bahndamm],H[nur Schubert])
 Am Bahndamm	2::inwork 21984,6317 22238,6195
+Schubertstr.	2::inwork 21984,6317 21856,6390
 EOF
      },
      { from  => $isodate2epoch->("2022-05-02 00:00:00"),
@@ -36133,7 +36134,7 @@ EOF
 #: by: https://nitter.cz/pic/orig/media%2FFeXP3TTWAAI6GUd.jpg
 #: note: laut rbb ist die Georgenstr. länger (bis 6.10.2022) gesperrt
 #: XXX Dauern die Bauarbeiten und Sperrungen länger an?
-#: next_check: 2022-10-10 vvv
+#: next_check: 2022-10-17 vvv
 #: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 4.10.2022) (inaktiv)
 #: source_id: viz2021:13.392073,52.520077,06.10.2022,09:30 (bis 19.10.2022)
 #: last_checked: 2022-10-06
@@ -36410,10 +36411,10 @@ EOF
 #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag)
 #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00
 #: also_indoor: traffic (B)
-#: last_checked: 2022-10-05
+#: last_checked: 2022-10-10
 #: check_frequency: 21d
 #: next_check: 2022-10-30
-	q3::inwork 15674,10851 15870,10938
+	q3::inwork 15674,10851 15820,10916
 EOF
      },
      { from  => 1664056800, # 2022-09-25 00:00
@@ -36555,7 +36556,7 @@ EOF
 #: also_indoor: traffic (H,B) vvv
 #: XXX Ende der Sperrung? vvv
 #: check_frequency: 14d vvv
-#: last_checked: 2022-10-05 vvv
+#: last_checked: 2022-10-10 vvv
 einige Meter vor der Siegfriedstr. gesperrt, evtl. Bordsteine	q3::inwork 16859,12613 16720,12614
 etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 # REMOVED (hier nicht) ---	q4::inwork 16576,12612 16470,12612 16432,12612 16409,12612
@@ -36567,17 +36568,17 @@ EOF
      },
      { from  => 1665077956, # 2022-10-06 19:39
        until => 1672527600, # 2023-01-01 00:00
-       text  => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis Dezember 2022',
+       text  => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis zum 9.11.2022',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30
+#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2022-10-08 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2022-12-31 vvv
+#: next_check: 2022-11-09 vvv
 Chausseestr.	q4::inwork 9207,13493 9212,13471
 Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 Torstr.	q3::inwork 9353,13521 9212,13471
@@ -36632,6 +36633,37 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
+EOF
+     },
+     { from  => 1665385200, # 2022-10-10 09:00
+       until => 1667664000, # 2022-11-05 17:00
+       text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrtrichtung gesperrt, vom 11.10.2022 09:00 bis 05.11.2022 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.429184,52.556411,11.10.2022,09:00',
+       data  => <<EOF,
+	q4::inwork; 12010,16774 12230,16915
+EOF
+     },
+     { from  => 1665291600, # 2022-10-09 07:00
+       until => 1667577600, # 2022-11-04 17:00
+       text  => 'Danckelmannstr.: in Höhe Gardes-du-Corps-Str. wegen Baustelle gesperrt, vom 10.10.2022 07:00 bis 04.11.2022 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.29031,52.51775,10.10.2022,07:00',
+       data  => <<EOF,
+#: also_indoor: traffic (B)
+#: note: laut rbb ist die Danckelmannstr. von der Christstr. aus noch befahrbar
+	q4::inwork 2641,12458 2658,12312
+EOF
+     },
+     { from  => 1665291600, # 2022-10-09 07:00
+       until => 1665770400, # 2022-10-14 20:00
+       text  => 'Uhlandstr.: Sperrung zwischen Güntzelstr. und Fechnerstr., vom 10.10.2022 07:00 bis 14.10.2022 20:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.322705,52.4884,10.10.2022,07:00',
+       data  => <<EOF,
+#: by: https://nitter.cz/VIZ_Berlin/status/1579329626811338752#m
+#: by: https://nitter.cz/pic/orig/media%2FFeekfbYXgAEaA2q.jpg (Umleitung für Radfahrer nur in Richtung Norden)
+	q4::inwork; 4920,9000 4920,9029 4957,9437
 EOF
      },
     );

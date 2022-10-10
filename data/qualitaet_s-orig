@@ -1595,9 +1595,9 @@ Genter Str.: mäßiges Kopfsteinpflaster	Q2 7012,15571 6919,15666 6802,15790 6661,
 Am Walde: Asphalt	Q0 17771,7880 17678,7850 17590,7828 17527,7812
 Prager Platz: gutes Kleinsteinpflaster	Q1 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
 Prager Platz: Verbundsteinpflasterradweg	Q1 5648,9642 5630,9656 5598,9654 5578,9629
-Normannenstr.: Kopfsteinpflaster	Q2 16159,12301 16227,12280
-Normannenstr.: Asphaltstreifen	Q0; 16227,12280 16276,12273
-Normannenstr.: Kopfsteinpflaster	Q2; 16276,12273 16227,12280
+#: historical_note: früher teilweise Kopfsteinpflaster
+#: note: mit gepflasterten Parkstreifen, sowie Pflasterungen an/vor den Kreuzungen/Einmündungen
+Roedeliusplatz: Asphalt	Q0 16159,12301 16227,12280 16276,12273
 Rüdigerstr. (Lichtenberg): Asphalt	Q0 17471,12243 17441,12247 17314,12265 17218,12281 17184,12286 17122,12295 17056,12304 17020,12309 16918,12325 16820,12339
 Barbarossastr.: Kopfsteinpflaster	Q2 7122,9517 7002,9526
 Prühßstr.: Beton	Q0- 8780,4054 8962,4096
@@ -8614,6 +8614,7 @@ Böcklerpark: Verbundsteinpflaster	Q1- 10917,10068 10863,10082 10802,10111 10794,
 (Bethanienpark): Verbundsteinpflaster	Q1 11668,10916 11589,10947
 (Straße der Pariser Kommune - Spreeufer): Kopfsteinpflaster	Q2 12497,11459 12441,11373
 Naumannstr.: Kopfsteinpflaster	Q1 7716,8370 7716,8356 7715,8308
+#: note: Richtung Osten teilweise mit unebenem Asphaltstreifen 
 Rüdigerstr.: schlechtes Kopfsteinpflaster	Q3+ 16259,12419 16147,12434
 Rüdigerstr.: mäßiges Kopfsteinpflaster	Q2- 16147,12434 16080,12441
 (Blücherplatz - Johanniterstr.): Gehwegplatten	Q0- 9702,10129 9816,10119 9837,10117
@@ -12815,6 +12816,7 @@ Böhlener Str. [Wohngebietsstraße]: Asphalt	Q0 25219,15161 25232,15280
 (Rossiner Platz - Rominter Allee): Gehwegplatten	Q0- -107,12220 -101,12176
 (Rossiner Platz - Rominter Allee): Kleinsteinpflaster	Q1 -101,12176 -113,12164 -153,12183
 Wilhelmstr. (Wilhelmstadt): Gehwegplatten	Q0- -4304,12562 -4406,12468
+Nöldnerplatz [am Skatepark]: Gehwegplatten	Q0- 15820,10916 15844,10894 15856,10821
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -20874,8 +20876,8 @@ Aprikosensteig: Beton mit einigen Schäden	Q1 15474,4845 15364,4748
 Brandaustr.: guter Asphalt	Q0 9391,1235 9370,1262 9367,1296 9411,1406 9519,1650
 # 
 #: by: Daniela (glasband):
-#: corrected_by: srt (Q3 -> Q2-, "schlechtes" entfernt)
-Glaschkestr.: Kopfsteinpflaster	Q2- 16159,12301 16144,12388 16147,12434
+#: corrected_by: srt (Q3 -> Q2-, "schlechtes" entfernt -> Q2, neu gemacht?)
+Glaschkestr.: Kopfsteinpflaster	Q2 16159,12301 16144,12388 16147,12434
 # 
 #: by: Ulrich Siegmann:
 #: corrected_by: srt (Asphalt -> Beton)

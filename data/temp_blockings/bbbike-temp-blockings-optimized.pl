@@ -4540,7 +4540,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
-#: last_checked: 2022-10-05 vvv
+#: last_checked: 2022-10-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -5077,14 +5077,15 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: next_check_id: HAEMMERLING-2022
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
 #: note: anscheinend auch für Fußgänger gesperrt, hier gibt es keinen Gehweg
 #: note: laut rbb nur bis 20.10.2022
-Schubertstr.	2::inwork 21984,6317 21856,6390
+#: also_indoor: traffic (B+G[nur Am Bahndamm],H[nur Schubert])
 Am Bahndamm	2::inwork 21984,6317 22238,6195
+Schubertstr.	2::inwork 21984,6317 21856,6390
 ',
          'from' => 1651953282,
          'id' => 3548,
@@ -5093,18 +5094,7 @@ Am Bahndamm	2::inwork 21984,6317 22238,6195
          'type' => 'gesperrt',
          'until' => 1669849200
        },
-       {
-         'data' => '#: next_check_id: BRUECKEWERDER-2022
-#: by: https://www.mobil-potsdam.de/de/aktuelle-verkehrsthemen/radwegbruecke-potsdam-werder-havel/
-	2::inwork -21227,-2017 -21125,-2012	
-',
-         'from' => 1651442400,
-         'id' => 3549,
-         'source_id' => 'https://www.mobil-potsdam.de/de/baustellen/aktuell/?c=4210',
-         'text' => 'Eisenbahnbrücke Werder: wegen Bauarbeiten gesperrt, bis zum 10.10.2022',
-         'type' => 'gesperrt',
-         'until' => 1665376200
-       },
+       undef,
        {
          'data' => '#: next_check_id: WILTBERG-2022
 #: by: https://nitter.net/VIZ_Berlin/status/1523578356306169857#m
@@ -5470,7 +5460,7 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
 #: by: https://nitter.cz/pic/orig/media%2FFeXP3TTWAAI6GUd.jpg
 #: note: laut rbb ist die Georgenstr. länger (bis 6.10.2022) gesperrt
 #: XXX Dauern die Bauarbeiten und Sperrungen länger an?
-#: next_check: 2022-10-10 vvv
+#: next_check: 2022-10-17 vvv
 #: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 4.10.2022) (inaktiv)
 #: source_id: viz2021:13.392073,52.520077,06.10.2022,09:30 (bis 19.10.2022)
 #: last_checked: 2022-10-06
@@ -5718,10 +5708,10 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
 #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag)
 #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00
 #: also_indoor: traffic (B)
-#: last_checked: 2022-10-05
+#: last_checked: 2022-10-10
 #: check_frequency: 21d
 #: next_check: 2022-10-30
-	q3::inwork 15674,10851 15870,10938
+	q3::inwork 15674,10851 15820,10916
 ',
          'from' => undef,
          'id' => 3630,
@@ -5840,7 +5830,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
 #: also_indoor: traffic (H,B) vvv
 #: XXX Ende der Sperrung? vvv
 #: check_frequency: 14d vvv
-#: last_checked: 2022-10-05 vvv
+#: last_checked: 2022-10-10 vvv
 einige Meter vor der Siegfriedstr. gesperrt, evtl. Bordsteine	q3::inwork 16859,12613 16720,12614
 etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 # REMOVED (hier nicht) ---	q4::inwork 16576,12612 16470,12612 16432,12612 16409,12612
@@ -5856,14 +5846,14 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30
+         'data' => '#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2022-10-08 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2022-12-31 vvv
+#: next_check: 2022-11-09 vvv
 Chausseestr.	q4::inwork 9207,13493 9212,13471
 Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 Torstr.	q3::inwork 9353,13521 9212,13471
@@ -5874,7 +5864,7 @@ Friedrichstr.	q4::inwork 9212,13471 9225,13389
 ',
          'from' => 1665077956,
          'id' => 3643,
-         'text' => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis Dezember 2022',
+         'text' => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis zum 9.11.2022',
          'type' => 'handicap',
          'until' => 1672527600
        },
@@ -5928,6 +5918,40 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
          'text' => 'Uhlandstr.: Fahrbahn zwischen Lessingstr. und Friedhof gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork; 12010,16774 12230,16915
+',
+         'from' => 1665385200,
+         'id' => 3648,
+         'source_id' => 'viz2021:13.429184,52.556411,11.10.2022,09:00',
+         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrtrichtung gesperrt, vom 11.10.2022 09:00 bis 05.11.2022 17:00',
+         'type' => 'handicap',
+         'until' => 1667664000
+       },
+       {
+         'data' => '#: also_indoor: traffic (B)
+#: note: laut rbb ist die Danckelmannstr. von der Christstr. aus noch befahrbar
+	q4::inwork 2641,12458 2658,12312
+',
+         'from' => 1665291600,
+         'id' => 3649,
+         'source_id' => 'viz2021:13.29031,52.51775,10.10.2022,07:00',
+         'text' => 'Danckelmannstr.: in Höhe Gardes-du-Corps-Str. wegen Baustelle gesperrt, vom 10.10.2022 07:00 bis 04.11.2022 17:00',
+         'type' => 'handicap',
+         'until' => 1667577600
+       },
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1579329626811338752#m
+#: by: https://nitter.cz/pic/orig/media%2FFeekfbYXgAEaA2q.jpg (Umleitung für Radfahrer nur in Richtung Norden)
+	q4::inwork; 4920,9000 4920,9029 4957,9437
+',
+         'from' => 1665291600,
+         'id' => 3650,
+         'source_id' => 'viz2021:13.322705,52.4884,10.10.2022,07:00',
+         'text' => 'Uhlandstr.: Sperrung zwischen Güntzelstr. und Fechnerstr., vom 10.10.2022 07:00 bis 14.10.2022 20:00',
+         'type' => 'handicap',
+         'until' => 1665770400
        }
      
 );
