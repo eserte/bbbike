@@ -3191,7 +3191,33 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
+#: by: https://berliner-abendblatt.de/2022/10/11/sprengung-im-grunewald-avus-wird-voll-gesperrt/
+#: by: https://viz.berlin.de/2022/10/a115-sprengungen/
+#: note: Termine im Frühjahr 2022: 23.3., 13.4., 20.4., 27.4.
+#: source_id: 2147341022
+#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15
+# REMOVED --- #: priority: #A --- #: next_check: 2022-04-20
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
+	2::temp -1934,6804 -1854,6898
+',
+         'from' => 1665439200,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 11. Oktober 2022 ab ca. 09:15 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1665562500
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -5920,7 +5946,10 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
          'until' => undef
        },
        {
-         'data' => '	q4::inwork; 12010,16774 12230,16915
+         'data' => '#: by: https://berliner-abendblatt.de/2022/10/11/strasse-am-steinberg-ab-sofort-gesperrt/
+#: by: https://nitter.cz/VIZ_Berlin/status/1579714664237178880#m
+#: by: https://nitter.cz/pic/orig/media%2FFes2IopXgAEvJgi.jpg
+	q4::inwork; 12010,16774 12230,16915
 ',
          'from' => 1665385200,
          'id' => 3648,

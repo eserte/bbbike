@@ -1270,11 +1270,13 @@ Seehausen: Asphalt	Q0 41137,90850 41099,91047 41248,91233 41367,91312
 Verbundsteinpflaster	Q1 38750,100972 38915,101122
 Badeweg: mäßiger Asphalt, Verbundsteinradweg	Q1 38915,101122 39106,101231
 Uckerpromenade: Asphalt, parallel führende Promenade hat wassergebundene Decke	Q0 39036,101318 39106,101231 39275,101193 39474,100982 39671,100750 40056,99762
-fester Sandweg	Q2 40056,99762 40056,99618 40262,99200 40418,99062
-Feldweg, teils ein-, teils zweispurig	Q2 40418,99062 40588,99062 40819,98996 40896,98718 40895,98514 41014,98281 41012,98156 41114,97999 41137,97643
+#: historical_note: früher: fester Sandweg, Q2
+Asphalt	Q0 40056,99762 40056,99618 40262,99200 40418,99062
+#: historical_note: früher: Feldweg, teils ein-, teils zweispurig, Q2
+Asphalt	Q0 40418,99062 40588,99062 40819,98996 40896,98718 40895,98514 41014,98281 41012,98156 41114,97999 41137,97643
 wassergebundene Decke	Q1 41137,97643 41173,96930
 #: note: zumindest am Bahnübergang und an der Kreuzung Seelübbe
-asphaltiert	Q0 41173,96930 41323,96820 41481,96762 41675,96762 41950,96581 41987,96375 41908,96166 42024,95956 42089,95920 42111,95908
+asphaltiert	Q0 41173,96930 41323,96820 41481,96762 41675,96762 41950,96581 41987,96375 41908,96166 41962,96068 42024,95956 42089,95920 42111,95908
 Bietikow - Mattheshöhe: sehr guter Asphalt	Q0 45923,97874 46424,98203 46693,98100 46825,97993 47043,97950 47200,97818 47756,97706 48321,97446
 Mattheshöhe - Falkenwalde: sehr guter Asphalt	Q0 48321,97446 48637,97306 48768,97193 48762,97075 48850,96925 49056,96700 49488,96427
 Wallmow - Cremzow: schlechtes Kopfsteinpflaster	Q3 54529,105141 54281,105262 53556,105150
@@ -2451,9 +2453,14 @@ Wendemark - Zehnebeck: Feldweg	Q2 52709,89765 52396,89859
 zur Alten Randow: schlechtes Kopfsteinpflaster	Q3 54496,87932 54456,88004
 zur Alten Randow: Beton	Q1- 54413,87950 54447,87977 54456,88004 54450,88043
 zur Alten Randow: Plattenweg, teilweise sehr uneben, teilweise mit kurzen Querplatten	Q3+ 54450,88043 54568,88215 54825,88387 55384,88653 56228,89050 56812,89215 57176,89273
-Passow - Wendemark: schlechtes Kopfsteinpflaster mit mäßiger Betonbankette	Q2 56280,83440 56296,83525 56468,83678
-Passow - Wendemark: schlechtes Kopfsteinpflaster mit breiter guter Betonbankette	Q1 56468,83678 56462,84015 56359,84403 56134,84981
-Wendemark: schlechtes Kopfsteinpflaster, teilweise mit Sandbankette	Q3 56134,84981 55500,86182 55001,87049
+#: historical_note: früher: schlechtes Kopfsteinpflaster mit mäßiger Betonbankette, Q2
+Passow - Wendemark: zweispuriges Verbundsteinpflaster, in der Mitte Kopfsteinpflaster	Q1+ 56280,83440 56291,83500 56296,83525 56468,83678
+#: historical_note: früher: schlechtes Kopfsteinpflaster mit breiter guter Betonbankette, Q1
+Passow - Wendemark: zweispuriges Verbundsteinpflaster, in der Mitte Kopfsteinpflaster	Q1+ 56468,83678 56462,84015 56359,84403 56134,84981
+#: historical_note: früher: schlechtes Kopfsteinpflaster, teilweise mit Sandbankette, Q3
+Wendemark: zweispuriges Verbundsteinpflaster, in der Mitte Kopfsteinpflaster	Q1+ 56134,84981 55526,86132 55505,86172
+#: historical_note: früher: Wendemark: schlechtes Kopfsteinpflaster, teilweise mit Sandbankette, Q3
+Wendemark: Asphalt	Q0 55505,86172 55500,86182 55001,87049
 Wendemark - Zichow: Asphalt	Q0 55001,87049 54873,87275 54644,87619 54496,87932 54413,87950 54287,87910
 Wendemark - Zichow: schlechtes Kopfsteinpflaster, beidseitige Verbundsteinpflasterbanketten	Q1 54287,87910 54188,87861 53935,87858
 Wendemark - Zehdenick: Waldweg unterschiedlicher Qualität, teils mit Matsch, teils zugewachsen, teils auf Wiesen langführend	Q3 54450,88043 54137,89159 54234,89428 54103,89675 53837,89784 53684,89718 53459,89778 53146,89800 52871,89753 52709,89765
@@ -8469,7 +8476,7 @@ Kerzendorf - B101: Asphalt	Q0 2406,-15008 2327,-14968 2223,-14935 2188,-14926 20
 #: by: ^^^
 # 
 #: by: osm:
-#: add_fragezeichen: ist das Kopfsteinpflaster eher mäßig oder eher schlecht?
+#: add_fragezeichen: ist das Kopfsteinpflaster eher mäßig oder eher schlecht? Oder liegt hier asphaltiert?
 Melzow - Gramzow: Kopfsteinpflaster	Q3 45082,88685 46529,89125
 # 
 #: by: osm

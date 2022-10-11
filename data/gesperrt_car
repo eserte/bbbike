@@ -2278,3 +2278,6 @@ Abbestr.	2 4674,12076 4698,12124
 Otto-Marquardt-Str. -> Landsberger Allee	3 14888,14280 14954,14119 14964,14123
 Pfarrhufenweg	1 25599,13069 25684,13172
 Hempelsteig	2:Anlieger -472,12961 -525,13034 -724,13120 -787,13147
+Mittelstreifen	3nocross::ignrte 14771,14048 14871,14087 14954,14119
+Landsberger Allee -> Anton-Saefkow-Pl.: Mittelstreifen	3::igndisp 14954,14119 14871,14087 14903,14003
+Anton-Saefkow-Pl. -> Landsberger Allee: Mittelstreifen	3::igndisp 14903,14003 14871,14087 14771,14048
