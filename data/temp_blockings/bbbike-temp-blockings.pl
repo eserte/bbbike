@@ -31035,7 +31035,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-10-08
+#: last_checked: 2022-10-12
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -35263,7 +35263,7 @@ EOF
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
        data  => <<EOF,
 #: next_check_id: HAEMMERLING-2022
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv)
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -36647,7 +36647,7 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/10/11/strasse-am-steinberg-ab-sofort-gesperrt/
 #: by: https://nitter.cz/VIZ_Berlin/status/1579714664237178880#m
 #: by: https://nitter.cz/pic/orig/media%2FFes2IopXgAEvJgi.jpg
-	q4::inwork; 12010,16774 12230,16915
+	q4::inwork; 12010,16774 12230,16915 12267,16946
 EOF
      },
      { from  => 1665291600, # 2022-10-09 07:00

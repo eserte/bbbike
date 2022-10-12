@@ -264,7 +264,7 @@ Verbundsteinpflaster	RW1;RW1 8947,10956 8901,11011 8747,11194 8720,11226 8631,11
 	RW2;RW2 11443,10394 11671,10402
 #: source_id: viz2021:13.425502,52.499099,29.08.2022,06:00 (bis 9.12.2022)
 #: XXX Wie lange bleibt die Radspur hier erhalten?
-#: last_checked: 2022-10-01
+#: last_checked: 2022-10-11 (mapillary)
 #: check_frequency: 45d
 #: next_check: 2022-12-09
 # früher: der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflichtig	RW1; 11671,10402 11949,10414
@@ -303,7 +303,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-10-08 (Ausschilderung fehlt noch) vvv
+#: last_checked: 2022-10-12 (Ausschilderung fehlt noch) vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 	RW1; 13596,10722 13633,10705
@@ -315,7 +315,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede
 #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert
 #: XXX hier wird ein Bürgersteigradweg entstehen, hoffentlich asphaltiert
-#: last_checked: 2022-10-08
+#: last_checked: 2022-10-12
 #: check_frequency: 30d
 #: next_check: 2022-12-16
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -7055,7 +7055,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20710,14454
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2022-10-08
+#: last_checked: 2022-10-11 (mapillary)
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322

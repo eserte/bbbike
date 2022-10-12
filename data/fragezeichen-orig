@@ -78,7 +78,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-16 vvv
-#: last_checked: 2022-10-08
+#: last_checked: 2022-10-12
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
 # REMOVED (hier realisiert) --- Stralauer Allee: Radspur geplant	?::projected; 13596,10722 13633,10705 13678,10685 13779,10642 13850,10612 13919,10583
 # REMOVED (hier in Bau, siehe radwege-orig-Eintrag) --- Stralauer Allee: Radspur geplant	?::projected; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -3885,7 +3885,7 @@ Waldsteg: Abschnitt soll für den MIV gesperrt werden	?::projected 7940,19521 784
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9468 vvv
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9829 (Anfrage) vvv
 #: priority: #C
-#: last_checked: 2022-04-16 (mapillary)
+#: last_checked: 2022-08-09 (mapillary)
 #: check_frequency: 180d
 Zossener Str. (Hellersdorf): Aufhebung der Benutzungspflicht?	?; 23568,15603 23411,15632 23388,15637 23218,15671 23080,15700 22883,15740 22811,15753 22698,15788 22771,16194
 #: priority: #C
@@ -6342,6 +6342,9 @@ Am Priesteracker (Potsdam): genaue Lage? Qualität? Einbahnstraße für Radfahrer o
 #: by: https://www.nd-aktuell.de/amp/artikel/1166975.u-bahnnetz-in-berlin-sisyphusarbeit-fuer-milliarden.amp.html
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/arbeiten-an-der-a111-dauern-bis-in-den-spaeten-oktober-ab-november-folgt-sanierung-der-u6_a359030
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1251829.php (Havarie an der zukünftigen Umleitungsstrecke (Holzhauser Str.))
+#: by: https://www.bahninfo-forum.de/read.php?9,678502,746123#msg-746123
+#: by: https://www.bahninfo-forum.de/embed_images/b32/cd2/f7d/f0d/c95/023/111/102/75a/1bb/5c_1200x920.png (SEV-Strecken)
+#: XXX außerdem: der U6-SEV soll über Nordlichtstr. und Straße 442 geführt werden --- wird es hier eine Einbahnstraßenregelung geben? (wobei die Straßen auf den Mapillary-Bildern breit genug aussehen)
 #: source_id: viz2021:13.307546,52.56813,27.01.2022,09:00 (Vorbereitung Brückenneubau, bis 30.11.2022)
 #: last_checked: 2022-09-26 (mapillary)
 #: next_check: 2022-11-07
@@ -6499,8 +6502,11 @@ Schönfließer Str., Senheimer Str., Gollanczstr.: Bauarbeiten geplant, kommt es d
 #: by: https://www.berliner-woche.de/mitte/c-bauen/der-gerade-unter-denkmalschutz-gestellte-gendarmenmarkt-soll-ab-2022-saniert-werden_a301569 (August 2022 - Ende 2024, keine Veranstaltungen während dieser Zeit)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10876 (Frage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10985 (Frage)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1253713.php (Start der bauvorbereitenden Arbeiten: 2022-10-12)
+#: by: https://gruen-berlin.de/projekte/urbane-freiraeume/gendarmenmarkt
+#: by: https://berliner-abendblatt.de/2022/10/12/zwei-jahre-gesperrt-gendarmenmarkt-wird-klimagerecht-saniert/
 #: last_checked: 2022-10-03 vvv
-# REMOVED --- #: next_check: 2022-08-01 vvv
+# REMOVED --- #: next_check: 2022-10-12 vvv
 Gendarmenmarkt: Sanierung geplant (werden dabei Bereiche gesperrt?)	?::projected 9523,12019 9656,12031
 Gendarmenmarkt: Sanierung geplant (werden dabei Bereiche gesperrt?)	?::projected 9536,11922 9666,11935
 # REMOVED --- #: next_check ^^^
@@ -6624,8 +6630,11 @@ Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 183
 # 
 #: by: https://www.infravelo.de/projekt/gruenberger-strasse/ (4. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (geänderte URL, siehe unten)
 #: by: http://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert)
-#: next_check: 2023-09-30
-# REMOVED (das hier ist dann vermutlich irgendwann mal die gruennerger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
+#: by: https://nitter.cz/VIZ_Berlin/status/1580164107835125760#m (Einbahnstraße, offen Richtung Osten, ab 2022-10-17)
+#: begin_check: 2022-10-17
+#: next_check: 2022-10-17
+# REMOVED --- #: next_check: 2023-09-30
+# REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
 #: by: https://www.infravelo.de/projekt/wedekindstrasse/ (4. Quartal 2022 - 3. Quartal 2023) (mittlerweile 3. Quartal 2023 - 4. Quartal 2023)
@@ -8883,6 +8892,9 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2021/pressemitteilung.1120743.php
 #: by: https://mein.berlin.de/projekte/marzahner-knoten/ (Beginn der Bauarbeiten Ende 2022)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1253755.php (Bauarbeiten: Ende 2022 - Ende 2029)
+#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/marzahner-knoten/
+#: XXX ampelgesicherte Kreuzungen werden entstehen, direkt am Knoten sowie bei der Zufahrt Frank-Schweitzer-Str.
 #: next_check: 2022-12-31
 Knoten Marzahn: Neubau geplant	?::projected 19467,15045 19633,15098
 # 
