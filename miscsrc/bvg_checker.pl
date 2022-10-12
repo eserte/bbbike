@@ -88,7 +88,8 @@ if (%check_sourceids) {
 	my %links;
 	{
 	    my(@old_links, @links);
-	    for my $try (1..3) {
+	    my $max_tries = 3;
+	    for my $try (1..$max_tries) {
 		@links = map {
 		    my $href = $_->attribute('href');
 		    if ($href && $href =~ m{/de/verbindungen/stoerungsmeldungen/(.*#.*)}) {
@@ -99,14 +100,20 @@ if (%check_sourceids) {
 		} $firefox->find('//a');
 		if (!@links || (@old_links < @links)) {
 		    @old_links = @links;
-		    warn "INFO: sleep another second to make sure that the page is complete...\n" if $try > 1;
+		    warn "INFO: sleep another second to make sure that the page is complete... ($try/$max_tries)\n" if $try > 1;
 		    sleep 1;
 		    next;
 		}
 	    }
 	    if (!@links) {
 		# likely a severe problem (connection problems, page not found, site changed...)
-		die "Cannot find any entries in $traffic_url.\n";
+		require File::Copy;
+		require POSIX;
+		my $pngtmp = $firefox->selfie;
+		my $out_file = "/tmp/bvg_checker_" . POSIX::strftime("%F_%T", localtime) . ".png";
+		File::Copy::cp("$pngtmp", $out_file)
+			or warn "Cannot create selfie: $!";
+		die "Cannot find any entries in $traffic_url. A selfie png of the browser window is located in $out_file\n";
 	    }
 	    %links = map {("$id_prefix:$_",1)} @links;
 	}
