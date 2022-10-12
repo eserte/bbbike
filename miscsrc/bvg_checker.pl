@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2018,2020,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018,2020,2021,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -81,42 +81,7 @@ if (%check_sourceids) {
     if ($list_only) {
 	printerr join("\n", keys %check_sourceids) . "\n";
     } else {
-	my $traffic_url = 'https://www.bvg.de/de/verbindungen/stoerungsmeldungen?type=traffic';
-	require Firefox::Marionette;
-	my $firefox = Firefox::Marionette->new->go($traffic_url);
-	$firefox->await(sub { $firefox->loaded });
-	my %links;
-	{
-	    my(@old_links, @links);
-	    my $max_tries = 3;
-	    for my $try (1..$max_tries) {
-		@links = map {
-		    my $href = $_->attribute('href');
-		    if ($href && $href =~ m{/de/verbindungen/stoerungsmeldungen/(.*#.*)}) {
-			$1;
-		    } else {
-			();
-		    }
-		} $firefox->find('//a');
-		if (!@links || (@old_links < @links)) {
-		    @old_links = @links;
-		    warn "INFO: sleep another second to make sure that the page is complete... ($try/$max_tries)\n" if $try > 1;
-		    sleep 1;
-		    next;
-		}
-	    }
-	    if (!@links) {
-		# likely a severe problem (connection problems, page not found, site changed...)
-		require File::Copy;
-		require POSIX;
-		my $pngtmp = $firefox->selfie;
-		my $out_file = "/tmp/bvg_checker_" . POSIX::strftime("%F_%T", localtime) . ".png";
-		File::Copy::cp("$pngtmp", $out_file)
-			or warn "Cannot create selfie: $!";
-		die "Cannot find any entries in $traffic_url. A selfie png of the browser window is located in $out_file\n";
-	    }
-	    %links = map {("$id_prefix:$_",1)} @links;
-	}
+	my %links = find_active_sourceids();
 
 	while(my($check_sourceid, $strname) = each %check_sourceids) {
 	    printerr "$check_sourceid ($strname)... ";
@@ -143,6 +108,79 @@ if ($logfh) {
 	or die $!;
     rename "$log~", $log
 	or die "Error while renaming $log~ to $log: $!";
+}
+
+sub find_active_sourceids {
+    find_active_sourceids_bvg2022();
+}
+
+# Valid since Oct 2022
+# Still using "bvg2021:" source_id prefix
+sub find_active_sourceids_bvg2022 {
+    my $disruption_reports_query_url = 'https://www.bvg.de/disruption-reports/q';
+    # query as issued on https://www.bvg.de/de/verbindungen/stoerungsmeldungen
+    my $query = <<'EOF';
+{"variables":{},"query":"{\n  allDisruptions {\n    disruptions {\n      meldungsId\n      linie\n      verkehrsmittel\n      __typename\n      ... on Elevator {\n        datum\n        gueltigVonDatum\n        gueltigVonZeit\n        gueltigBisDatum\n        gueltigBisZeit\n        bahnhof\n        bahnhofHafasId\n        meldungsTextDE\n        meldungsTextEN\n        __typename\n      }\n      ... on Traffic {\n        datum\n        gueltigVonDatum\n        gueltigVonZeit\n        gueltigBisDatum\n        gueltigBisZeit\n        richtungName\n        richtungHafasId\n        beginnAbschnittName\n        beginnAbschnittHafasId\n        endeAbschnittName\n        endeAbschnittHafasId\n        textIntUrsache\n        sev\n        textIntAuswirkung\n        umfahrung\n        textWAPSMSUrsache\n        textWAPSMSAuswirkung\n        prioritaet\n        __typename\n      }\n    }\n    __typename\n  }\n}\n"}
+EOF
+
+    require LWP::UserAgent;
+    require JSON::XS;
+
+    my $ua = LWP::UserAgent->new;
+    my $resp = $ua->post($disruption_reports_query_url, Content_Type => 'application/json', Content => $query);
+    die "Request to $disruption_reports_query_url failed:\n" . $resp->dump
+	if !$resp->is_success;
+    my $json = $resp->decoded_content;
+    my $data = JSON::XS::decode_json($json);
+    my %links;
+    for my $disruption (@{ $data->{data}->{allDisruptions}->{disruptions} }) {
+	my $linie = $disruption->{linie};
+	my $meldungsId = $disruption->{meldungsId};
+	my $source_id = lc($linie).'#'.$meldungsId;
+	$links{"$id_prefix:$source_id"} = 1;
+    }
+    return %links;
+}
+
+# Valid from Oct 2021 - Oct 2022, using Firefox::Marionette
+sub find_active_sourceids_bvg2021 {
+    my $traffic_url = 'https://www.bvg.de/de/verbindungen/stoerungsmeldungen?type=traffic';
+    require Firefox::Marionette;
+    my $firefox = Firefox::Marionette->new->go($traffic_url);
+    $firefox->await(sub { $firefox->loaded });
+    my %links;
+    {
+	my(@old_links, @links);
+	my $max_tries = 3;
+	for my $try (1..$max_tries) {
+	    @links = map {
+		my $href = $_->attribute('href');
+		if ($href && $href =~ m{/de/verbindungen/stoerungsmeldungen/(.*#.*)}) {
+		    $1;
+		} else {
+		    ();
+		}
+	    } $firefox->find('//a');
+	    if (!@links || (@old_links < @links)) {
+		@old_links = @links;
+		warn "INFO: sleep another second to make sure that the page is complete... ($try/$max_tries)\n" if $try > 1;
+		sleep 1;
+		next;
+	    }
+	}
+	if (!@links) {
+	    # likely a severe problem (connection problems, page not found, site changed...)
+	    require File::Copy;
+	    require POSIX;
+	    my $pngtmp = $firefox->selfie;
+	    my $out_file = "/tmp/bvg_checker_" . POSIX::strftime("%F_%T", localtime) . ".png";
+	    File::Copy::cp("$pngtmp", $out_file)
+		    or warn "Cannot create selfie: $!";
+	    die "Cannot find any entries in $traffic_url. A selfie png of the browser window is located in $out_file\n";
+	}
+	%links = map {("$id_prefix:$_",1)} @links;
+    }
+    return %links;
 }
 
 __END__
