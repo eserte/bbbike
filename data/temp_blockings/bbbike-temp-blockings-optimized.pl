@@ -1,6 +1,62 @@
-$#temp_blocking = 416;
+$#temp_blocking = 393;
 push @temp_blocking,
 (
+       {
+         'data' => '# REMOVED --- #: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden --- #: priority: #A --- #: next_check: 2020-11-30
+# sowieso schon mit q4 markiert, deshalb -> 2
+	2::xmas 5829,10964 5782,10884
+	2::xmas 5656,10876 5652,11004
+#: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
+#: by: https://www.berlin.de/weihnachtsmarkt/3240274-3496862-weihnachtsmarkt-an-der-gedaechtniskirche.html (2020)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarkt-an-der-gedaechtniskirche.html
+#: by: https://berliner-abendblatt.de/2021/11/02/ein-weihnachtsbaum-fuer-den-breitscheidplatz/
+#: by: https://berliner-abendblatt.de/2021/12/07/weihnachtsmarkt-auf-dem-breitscheidplatz-wird-umzaeunt/
+# REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
+#: source_id: 2147345089
+Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
+',
+         'from' => 1668898800,
+         'id' => 394,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              18,
+                              'months',
+                              11,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html',
+         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 21. November 2022 bis 08. Januar 2023',
+         'type' => 'gesperrt',
+         'until' => 1673218799
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.989619.php (fällt 2020 wegen Corona aus)
@@ -4481,7 +4537,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: CORONA-2020
 #: note: Marktzeiten sind wohl 9 bis 15 Uhr, Parkverbote (und mögliche Sperrung/Beeinträchtigung) aber länger
 #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv
-#: last_checked: 2022-08-13 vvv
+#: last_checked: 2022-10-13 vvv
 #: check_frequency: 90d vvv
 #: tempex: sa T06-T19 vvv
 	2::temp 9546,9198 9617,9185 9674,9179
@@ -5402,10 +5458,12 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/verkehrsberuhigung-im-bergmannkiez-geht-weiter_a349916
 #: also_indoor: traffic vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2022-09-04 vvv
+#: last_checked: 2022-10-13 vvv
 #Fidicinstr. (ab Mehringdamm)	q4::inwork 9224,9053 9295,9047
-Fidicinstr.	q3::inwork 9295,9047 9459,9019 9654,8991
-Kopischstr.	q3::inwork 9477,9113 9459,9019
+#Fidicinstr.	q3::inwork 9295,9047 9459,9019 9654,8991
+Fidicinstr.	q3::inwork 9459,9019 9654,8991 9799,8962
+Kloedenstr.	q3::inwork 9654,8991 9669,9080
+#Kopischstr.	q3::inwork 9477,9113 9459,9019
 #Am Tempelhofer Berg	q4::inwork 9295,9047 9298,9112
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -5413,7 +5471,7 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
 ',
          'from' => undef,
          'id' => 3602,
-         'text' => 'Fidicinstr./Kopischstr.: Bauarbeiten im Einmündungsbereich, Ende der Bauarbeiten unbekannt',
+         'text' => 'Fidicinstr./Kloedenstr.: Bauarbeiten im Einmündungsbereich, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5460,14 +5518,14 @@ Kopischstr.	q3::inwork 9477,9113 9459,9019
 #: by: https://nitter.cz/pic/orig/media%2FFeXP3TTWAAI6GUd.jpg
 #: note: laut rbb ist die Georgenstr. länger (bis 6.10.2022) gesperrt
 #: XXX Dauern die Bauarbeiten und Sperrungen länger an?
-#: next_check: 2022-10-17 vvv
+#: next_check: 2022-10-29 vvv
 #: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 4.10.2022) (inaktiv)
 #: source_id: viz2021:13.392073,52.520077,06.10.2022,09:30 (bis 19.10.2022)
 #: last_checked: 2022-10-06
 Georgenstr.	q3::inwork 9568,12688 9441,12670
 #: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
 #: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 30.9.2022) (inaktiv)
-#: source_id: viz2021:13.395207,52.520461,05.10.2022,07:00 (Am Kupfergraben, bis 17.10.2022)
+#: source_id: viz2021:13.395207,52.520461,05.10.2022,07:00 (Am Kupfergraben, bis 17.10.2022) (bis 29.10.2022)
 #: last_checked: 2022-10-06 vvv
 # REMOVED --- #: next_check: 2022-09-30 vvv
 # REMOVED (laut rbb hier aufgehoben) --- Dorotheenstr.	q4::inwork 9742,12609 9870,12657
@@ -5479,9 +5537,9 @@ Am Kupfergraben	q4::inwork 9754,12775 9815,12705 9870,12657
 ',
          'from' => 1661032800,
          'id' => 3608,
-         'text' => 'Am Kupfergraben und Georgenstr.: Gleisarbeiten, Fahrbahn gesperrt, bis 10. Oktober 2022, evtl. wird verlängert',
+         'text' => 'Am Kupfergraben und Georgenstr.: Gleisarbeiten, Fahrbahn gesperrt, bis 29. Oktober 2022',
          'type' => 'handicap',
-         'until' => 1666022400
+         'until' => 1667059200
        },
        {
          'data' => '#: note: Einbahnstraße etwa 70m lang

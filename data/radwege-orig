@@ -264,18 +264,15 @@ Verbundsteinpflaster	RW1;RW1 8947,10956 8901,11011 8747,11194 8720,11226 8631,11
 	RW2;RW2 11443,10394 11671,10402
 #: source_id: viz2021:13.425502,52.499099,29.08.2022,06:00 (bis 9.12.2022)
 #: XXX Wie lange bleibt die Radspur hier erhalten?
-#: last_checked: 2022-10-11 (mapillary)
+#: last_checked: 2022-10-13
 #: check_frequency: 45d
 #: next_check: 2022-12-09
 # früher: der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflichtig	RW1; 11671,10402 11949,10414
 provisorisch durch Poller geschützt	RW3; 11671,10402 11949,10414
 	RW1; 11949,10414 11671,10402
 	RW1; 11949,10414 12092,10428
-#: source_id: viz2021:13.428978,52.499277,26.08.2022,07:00 (bis 11.10.2022)
-#: XXX bleibt es bei der Radspur?
-#: last_checked: 2022-10-08
-#: next_check: 2022-10-11
-geschützter Radstreifen, mit "Leitboys"	RW3; 12092,10428 12212,10440
+# REMOVED (nein) --- #: source_id: viz2021:13.428978,52.499277,26.08.2022,07:00 (bis 11.10.2022) --- #: XXX bleibt es bei der Radspur? --- #: last_checked: 2022-10-08 --- #: next_check: 2022-10-11 --- geschützter Radstreifen, mit "Leitboys"	RW3; 12092,10428 12212,10440
+	RW1; 12092,10428 12212,10440
 	RW1; 12212,10440 12274,10436 12328,10442 12401,10461 12545,10496 12621,10516 12731,10547
 	RW1; 12731,10547 12621,10516 12545,10496 12401,10461 12328,10442 12274,10436 12212,10440 12092,10428 11949,10414
 	RW1; 12731,10547 12899,10595
@@ -303,7 +300,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-10-12 (Ausschilderung fehlt noch) vvv
+#: last_checked: 2022-10-13 (Ausschilderung fehlt noch) vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 	RW1; 13596,10722 13633,10705
@@ -315,7 +312,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede
 #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert
 #: XXX hier wird ein Bürgersteigradweg entstehen, hoffentlich asphaltiert
-#: last_checked: 2022-10-12
+#: last_checked: 2022-10-13
 #: check_frequency: 30d
 #: next_check: 2022-12-16
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -4011,7 +4008,7 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.432298,52.535532,28.09.2022,09:24 (bis 6.10.2022)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2022-09-14 (mapillary) vvv
+#: last_checked: 2022-09-15 (mapillary) vvv
 # REMOVED --- #: next_check: 2022-04-14 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -7055,7 +7052,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20710,14454
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: priority: #C
-#: last_checked: 2022-10-11 (mapillary)
+#: last_checked: 2022-10-13
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -7151,7 +7148,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: by: https://nitter.net/pic/media%2FFQTkX5LWYAAirTE.jpg%3Fname%3Dorig
 #: source_id: viz2021:13.433058,52.536173,19.04.2022,07:00 (bis 30.6.2022)
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
-#: last_checked: 2022-09-15 (mapillary) vvv
+#: last_checked: 2022-09-28 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-12-31 vvv
 #: osm_watch: way id="335479077" version="15"
@@ -7406,7 +7403,7 @@ niedrige Protektionselemente, vereinzelte Poller	RW4; 8919,10360 8824,10366 8771
 # REMOVED --- #: XXX temporäre gemeinsame Bus- und Radspur, Richtung Osten zwischen Zossener Brücke und Kottbusser Tor, Richtung Westen ab Alexandrinenstr., außerdem sind die Popup-Radwege zwischen Prinzenstr. und Alexandrinenstr. vorübergehend entfernt (bis ca. 12.4.2021) (Stand 13.4.2021: noch nicht zurückgebaut)
 #: osm_watch: way id="169738742" version="24"
 #: osm_watch: way id="335487059" version="23"
-#: last_checked: 2022-10-08 vvv
+#: last_checked: 2022-10-13 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-01-01 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312

@@ -3386,11 +3386,11 @@ EOF
 	1 -1664,-1720 -1715,-1767 -1921,-1931 -2023,-2143
 EOF
      },
-     { from  => $isodate2epoch->("2021-11-21 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-01-02 23:59:59"), # 1357513199, # 2013-0
+     { from  => $isodate2epoch->("2022-11-20 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2023-01-08 23:59:59"), # 1357513199, # 2013-0
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 11, start => "2021-01-01T00:00:00"]],
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 22. November 2021 bis 02. Januar 2022',
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 21. November 2022 bis 08. Januar 2023',
        type  => 'gesperrt',
        source_id => 'https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html',
        data  => <<EOF,
@@ -34010,7 +34010,7 @@ EOF
 #: next_check_id: CORONA-2020
 #: note: Marktzeiten sind wohl 9 bis 15 Uhr, Parkverbote (und mögliche Sperrung/Beeinträchtigung) aber länger
 #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv
-#: last_checked: 2022-08-13 vvv
+#: last_checked: 2022-10-13 vvv
 #: check_frequency: 90d vvv
 #: tempex: sa T06-T19 vvv
 	2::temp 9546,9198 9617,9185 9674,9179
@@ -35282,7 +35282,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: BRUECKEWERDER-2022
 #: by: https://www.mobil-potsdam.de/de/aktuelle-verkehrsthemen/radwegbruecke-potsdam-werder-havel/
-	2::inwork -21227,-2017 -21125,-2012	
+# REMOVED (alte Brücke nicht mehr zugänglich) ---	2::inwork -21227,-2017 -21125,-2012	
 EOF
      },
      { from  => 1652122429, # 2022-05-09 20:53
@@ -36044,7 +36044,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # 1662052624, # undef, # XXX
-       text  => 'Fidicinstr./Kopischstr.: Bauarbeiten im Einmündungsbereich, Ende der Bauarbeiten unbekannt', # früher: 'Fidicinstr./Am Tempelhofer Berg: Bauarbeiten im Einmündungsbereich, Ende der Bauarbeiten unbekannt',
+       text  => 'Fidicinstr./Kloedenstr.: Bauarbeiten im Einmündungsbereich, Ende der Bauarbeiten unbekannt', # früher: 'Fidicinstr./Kopischstr.: Bauarbeiten im Einmündungsbereich, Ende der Bauarbeiten unbekannt', # früher: 'Fidicinstr./Am Tempelhofer Berg: Bauarbeiten im Einmündungsbereich, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: FIDICIN-2022
@@ -36054,10 +36054,12 @@ EOF
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/verkehrsberuhigung-im-bergmannkiez-geht-weiter_a349916
 #: also_indoor: traffic vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2022-09-04 vvv
+#: last_checked: 2022-10-13 vvv
 #Fidicinstr. (ab Mehringdamm)	q4::inwork 9224,9053 9295,9047
-Fidicinstr.	q3::inwork 9295,9047 9459,9019 9654,8991
-Kopischstr.	q3::inwork 9477,9113 9459,9019
+#Fidicinstr.	q3::inwork 9295,9047 9459,9019 9654,8991
+Fidicinstr.	q3::inwork 9459,9019 9654,8991 9799,8962
+Kloedenstr.	q3::inwork 9654,8991 9669,9080
+#Kopischstr.	q3::inwork 9477,9113 9459,9019
 #Am Tempelhofer Berg	q4::inwork 9295,9047 9298,9112
 #: last_checked ^^^
 #: add_fragezeichen ^^^
@@ -36124,8 +36126,8 @@ EOF
 EOF
      },
      { from  => 1661032800, # 2022-08-21 00:00
-       until => $isodate2epoch->("2022-10-17 18:00:00"), # $isodate2epoch->("2022-10-31 18:00:00"), # 1665439199, # 2022-10-10 23:59
-       text  => 'Am Kupfergraben und Georgenstr.: Gleisarbeiten, Fahrbahn gesperrt, bis 10. Oktober 2022, evtl. wird verlängert',
+       until => $isodate2epoch->("2022-10-29 18:00:00"), # $isodate2epoch->("2022-10-31 18:00:00"), # 1665439199, # 2022-10-10 23:59
+       text  => 'Am Kupfergraben und Georgenstr.: Gleisarbeiten, Fahrbahn gesperrt, bis 29. Oktober 2022',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://berliner-abendblatt.de/2022/08/17/neue-gleise-fuer-die-dorotheenstrasse/ (vom 22. August bis zum 10. Oktober 2022)
@@ -36137,14 +36139,14 @@ EOF
 #: by: https://nitter.cz/pic/orig/media%2FFeXP3TTWAAI6GUd.jpg
 #: note: laut rbb ist die Georgenstr. länger (bis 6.10.2022) gesperrt
 #: XXX Dauern die Bauarbeiten und Sperrungen länger an?
-#: next_check: 2022-10-17 vvv
+#: next_check: 2022-10-29 vvv
 #: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 4.10.2022) (inaktiv)
 #: source_id: viz2021:13.392073,52.520077,06.10.2022,09:30 (bis 19.10.2022)
 #: last_checked: 2022-10-06
 Georgenstr.	q3::inwork 9568,12688 9441,12670
 #: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
 #: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 30.9.2022) (inaktiv)
-#: source_id: viz2021:13.395207,52.520461,05.10.2022,07:00 (Am Kupfergraben, bis 17.10.2022)
+#: source_id: viz2021:13.395207,52.520461,05.10.2022,07:00 (Am Kupfergraben, bis 17.10.2022) (bis 29.10.2022)
 #: last_checked: 2022-10-06 vvv
 # REMOVED --- #: next_check: 2022-09-30 vvv
 # REMOVED (laut rbb hier aufgehoben) --- Dorotheenstr.	q4::inwork 9742,12609 9870,12657
