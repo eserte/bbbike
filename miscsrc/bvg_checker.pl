@@ -30,8 +30,9 @@ my $id_prefix = 'bvg2021';
 GetOptions(
 	   "list-only" => \my $list_only,
 	   "log=s" => \my $log,
+	   "debug!" => \my $debug,
 	  )
-    or die "usage?";
+    or die "usage: $0 [--list-only] [--log logfile] [--debug]\n";
 
 my $logfh;
 if ($log) {
@@ -131,6 +132,13 @@ EOF
     die "Request to $disruption_reports_query_url failed:\n" . $resp->dump
 	if !$resp->is_success;
     my $json = $resp->decoded_content;
+    if ($debug) {
+	my $ofile = '/tmp/bvg_checker_disruption_reports.json';
+	warn "INFO: write JSON to $ofile...\n";
+	open my $ofh, '>', $ofile or die $!;
+	print $ofh $json;
+	close $ofh or die $!;
+    }
     my $data = JSON::XS::decode_json($json);
     my %links;
     for my $disruption (@{ $data->{data}->{allDisruptions}->{disruptions} }) {
