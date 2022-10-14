@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2008,2011,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2008,2011,2016,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,7 +19,7 @@ package LuiseBerlin;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = 2.00;
+$VERSION = 2.01;
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -155,6 +155,7 @@ sub show_bezlex_url {
 
 sub launch_bezlex_url {
     my $url = show_bezlex_url(@_);
+    return if !$url;
     start_browser($url);
 }
 
