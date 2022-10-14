@@ -38,7 +38,7 @@ sub register {
     if ($is_berlin) {
 	_create_image();
 	$main::info_plugins{__PACKAGE__ . "_bezlex"} =
-	    { name => "Luise-Berlin, Bexirkslexikon",
+	    { name => "Luise-Berlin, Bezirkslexikon",
 	      callback => sub { launch_bezlex_url(@_) },
 	      callback_3_std => sub { show_bezlex_url(@_) },
 	      icon => $icon,
