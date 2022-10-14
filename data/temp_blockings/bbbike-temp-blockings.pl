@@ -25397,8 +25397,8 @@ EOF
 #: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html
 #: tempex: before(first_advent, monday)-YYYY1226 vvv
-	q3::xmas 11139,13008 11064,12910 10970,12822
-	q4::xmas 11064,12910 11134,12793
+	q3::xmas 11139,13008 11086,12900 11102,12845 11005,12855 10970,12822
+	q4::xmas 11102,12845 11134,12793
 #: tempex ^^^
 EOF
      },
@@ -28269,7 +28269,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-10-06
+#: last_checked: 2022-10-14
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30658,7 +30658,7 @@ EOF
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-13 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 	q4::inwork; 11329,12497 11209,12430
@@ -31860,8 +31860,8 @@ EOF
 #: XXX Es gibt nun eine weitere Baustelle, Halteverbotschilder bis Ende Dezember 2022
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
 #: osm_watch: way id="759405498" version="3"
-#: last_checked: 2022-07-02
-#: check_frequency: 120d
+#: last_checked: 2022-10-09 (architektur-urbanistik)
+#: check_frequency: 90d
 #: next_check: 2022-12-28
 	q3::inwork; 5192,10241 5196,10398
 EOF
@@ -32366,7 +32366,7 @@ EOF
 #: also_indoor: traffic (H,G)
 #: osm_watch: way id="362719487" version="6"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2022-08-28
+#: last_checked: 2022-10-10 (architektur-urbanistik)
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 EOF
@@ -36269,7 +36269,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-10-06
+#: last_checked: 2022-10-14
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36488,14 +36488,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1665763653, # undef, # XXX
        text  => 'Charlottenstr.: Bauarbeiten an der Kreuzung Unter den Linden, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G,B)
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-03
-#: check_frequency: 14d
+# REMOVED (beendet) --- #: also_indoor: traffic (G,B) --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: last_checked: 2022-10-03 --- #: check_frequency: 14d
 	q4::inwork 9475,12365 9489,12263
 EOF
      },
@@ -36672,6 +36669,39 @@ EOF
 #: by: https://nitter.cz/VIZ_Berlin/status/1579329626811338752#m
 #: by: https://nitter.cz/pic/orig/media%2FFeekfbYXgAEaA2q.jpg (Umleitung für Radfahrer nur in Richtung Norden)
 	q4::inwork; 4920,9000 4920,9029 4957,9437
+EOF
+     },
+     { from  => 1665871200, # 2022-10-16 00:00
+       until => undef, # XXX
+       text  => 'Triftstr./Genter Str. und Gerichtstr./Ruheplatzstr.: Bauarbeiten in den EInmündungsbereichen, Fahrbahn gesperrt, evtl. sind Radfahrer auch betroffen, ab 17.10.2022',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1254588.php',
+       data  => <<EOF,
+#: next_check_id: TRIFTGERICHT-2022
+#: XXX Sind Radfahrer tatsächlich von den Sperrungen betroffen? vvv
+#: begin_check: 2022-10-17 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2022-10-17 vvv
+Genter Str.	q3::inwork 7138,15437 7270,15307
+Triftstr.	q4::inwork 7248,15296 7270,15307
+Triftstr.	q3::inwork 7270,15307 7356,15350
+Gerichtstr.	q3::inwork 7464,15409 7627,15412 7723,15417
+Ruheplatzstr.	q3::inwork 7627,15412 7540,15566
+#: next_check ^^^
+#: check_frequency ^^^
+#: begin_check ^^^
+#: XXX ^^^
+EOF
+     },
+     { from  => 1665772021, # 2022-10-14 20:27
+       until => 1669417200, # 2022-11-26 00:00
+       text  => 'Derfflingerstr.: Sperrung der Fahrbahn zwischen Zietenstr. und Seydlitzstr., evtl. sind auch Radfahrer betroffen, bis 25.11.2022 ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: note: rbb-Meldung
+#: also_indoor: traffic (B,H)
+#: XXX Sind Radfahrer tatsächlich betroffen?
+	q4::inwork 6273,2609 6065,2443
 EOF
      },
     );

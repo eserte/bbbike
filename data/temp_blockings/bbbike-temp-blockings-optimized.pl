@@ -3527,7 +3527,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-10-06
+#: last_checked: 2022-10-14
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -3912,7 +3912,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-13 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 	q4::inwork; 11329,12497 11209,12430
@@ -4115,8 +4115,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX Es gibt nun eine weitere Baustelle, Halteverbotschilder bis Ende Dezember 2022
 #: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
 #: osm_watch: way id="759405498" version="3"
-#: last_checked: 2022-07-02
-#: check_frequency: 120d
+#: last_checked: 2022-10-09 (architektur-urbanistik)
+#: check_frequency: 90d
 #: next_check: 2022-12-28
 	q3::inwork; 5192,10241 5196,10398
 ',
@@ -4220,7 +4220,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: also_indoor: traffic (H,G)
 #: osm_watch: way id="362719487" version="6"
 #: osm_watch: way id="687428752" version="2"
-#: last_checked: 2022-08-28
+#: last_checked: 2022-10-10 (architektur-urbanistik)
 #: check_frequency: 90d
 	q4::inwork 6033,10403 6133,10679
 ',
@@ -5639,7 +5639,7 @@ Am Kupfergraben	q4::inwork 9754,12775 9815,12705 9870,12657
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-10-06
+#: last_checked: 2022-10-14
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -5813,19 +5813,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (G,B)
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-03
-#: check_frequency: 14d
-	q4::inwork 9475,12365 9489,12263
-',
-         'from' => undef,
-         'id' => 3637,
-         'text' => 'Charlottenstr.: Bauarbeiten an der Kreuzung Unter den Linden, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '	q4 11196,4325 11153,4306 11141,4214 11111,4055 11104,3981 11103,3960
 	q4 11153,4306 11125,4331
@@ -6002,17 +5990,41 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
          'type' => 'handicap',
          'until' => 1667577600
        },
+       undef,
        {
-         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1579329626811338752#m
-#: by: https://nitter.cz/pic/orig/media%2FFeekfbYXgAEaA2q.jpg (Umleitung für Radfahrer nur in Richtung Norden)
-	q4::inwork; 4920,9000 4920,9029 4957,9437
+         'data' => '#: next_check_id: TRIFTGERICHT-2022
+#: XXX Sind Radfahrer tatsächlich von den Sperrungen betroffen? vvv
+#: begin_check: 2022-10-17 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2022-10-17 vvv
+Genter Str.	q3::inwork 7138,15437 7270,15307
+Triftstr.	q4::inwork 7248,15296 7270,15307
+Triftstr.	q3::inwork 7270,15307 7356,15350
+Gerichtstr.	q3::inwork 7464,15409 7627,15412 7723,15417
+Ruheplatzstr.	q3::inwork 7627,15412 7540,15566
+#: next_check ^^^
+#: check_frequency ^^^
+#: begin_check ^^^
+#: XXX ^^^
 ',
-         'from' => 1665291600,
-         'id' => 3650,
-         'source_id' => 'viz2021:13.322705,52.4884,10.10.2022,07:00',
-         'text' => 'Uhlandstr.: Sperrung zwischen Güntzelstr. und Fechnerstr., vom 10.10.2022 07:00 bis 14.10.2022 20:00',
+         'from' => 1665871200,
+         'id' => 3651,
+         'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1254588.php',
+         'text' => 'Triftstr./Genter Str. und Gerichtstr./Ruheplatzstr.: Bauarbeiten in den EInmündungsbereichen, Fahrbahn gesperrt, evtl. sind Radfahrer auch betroffen, ab 17.10.2022',
          'type' => 'handicap',
-         'until' => 1665770400
+         'until' => undef
+       },
+       {
+         'data' => '#: note: rbb-Meldung
+#: also_indoor: traffic (B,H)
+#: XXX Sind Radfahrer tatsächlich betroffen?
+	q4::inwork 6273,2609 6065,2443
+',
+         'from' => 1665772021,
+         'id' => 3652,
+         'text' => 'Derfflingerstr.: Sperrung der Fahrbahn zwischen Zietenstr. und Seydlitzstr., evtl. sind auch Radfahrer betroffen, bis 25.11.2022 ',
+         'type' => 'handicap',
+         'until' => 1669417200
        }
      
 );

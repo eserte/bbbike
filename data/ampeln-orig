@@ -71,7 +71,7 @@ Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2022-10-06
+#: last_checked: 2022-10-14
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
@@ -177,9 +177,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 #: next_check: 2023-02-27 vvv
 #: check_frequency: 90d vvv
 #: valid: -20230227 vvv
-#: last_checked: 2022-09-30
-#: osm_watch: node id="6380038401" version="1"
-	X::inwork 9195,11972
+# REMOVED (abgebaut) --- #: last_checked: 2022-09-30 --- #: osm_watch: node id="6380038401" version="1"---	X::inwork 9195,11972
 #: note: Ampel befindet sich westlich der Kreuzung
 #: last_checked: 2022-08-30
 	F::inwork 9076,12054
@@ -189,7 +187,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-14
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
