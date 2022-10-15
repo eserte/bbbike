@@ -337,7 +337,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-16-12-2020_mit-anhang.pdf (Asphaltierung vorgesehen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ampel am Sachsendamm: "man hofft auf eine Umsetzung im Herbst (2021)")
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Sanierung wird erwähnt)
-#: last_checked: 2022-07-27 vvv
+#: last_checked: 2022-10-15 vvv
 #: check_frequency: 120d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7225,8219 7158,8208 7014,8165 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7014,8165 7158,8208 7225,8219
@@ -7419,8 +7419,9 @@ Mühlenstr.: Asphalt	Q0 6914,3093 6842,2995
 Mühlenstr.: Asphalt	Q0 6842,2995 6763,2879 6745,2848
 #: by: https://www.infravelo.de/projekt/muehlenstrasse-1/ (bis 2. Quartal 2022)
 #: XXX Wird das Kopfsteinpflaster auch hier durch Asphalt ersetzt? Und bedeutet das, dass die Route durch den Gemeindepark nicht realisiert wird?
-#: last_checked: 2022-09-04
-#: next_check: 2022-10-26
+#: last_checked: 2022-10-15
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2022-10-26
 Mühlenstr.: Kopfsteinpflaster	Q2+ 6745,2848 6665,2836
 Boraweg: Kleinsteinpflaster	Q2+ 6658,2907 6710,2909 6763,2879
 (Ursulastr. - Dillgesstr.): Kleinsteinpflaster/Mosaikpflaster	Q2+ 6443,2915 6455,2924 6492,2947
@@ -31046,6 +31047,7 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 6104,13530
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6008,13529
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 7604,19988
 Kreuzungsbereich asphaltiert	Q0 6108,2326
+Kreuzungsbereich asphaltiert	Q0 5934,2198
 Einmündungsbereich mit Kopfsteinpflaster	Q2 10768,15534
 Kreuzungsbereich asphaltiert	Q0 11284,16527
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 11279,16617

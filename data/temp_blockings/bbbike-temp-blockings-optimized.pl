@@ -1820,7 +1820,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-15
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -2682,7 +2682,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -4218,7 +4218,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8370
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036831903278/831903278/00399704/04-Anlagen/03/Anlage1_20220225_7-89VE_PAS_OL_11_mitDeckblatt.pdf
 #: also_indoor: traffic (H,G)
-#: osm_watch: way id="362719487" version="6"
+#: osm_watch: way id="362719487" version="7"
 #: osm_watch: way id="687428752" version="2"
 #: last_checked: 2022-10-10 (architektur-urbanistik)
 #: check_frequency: 90d
@@ -4537,7 +4537,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: CORONA-2020
 #: note: Marktzeiten sind wohl 9 bis 15 Uhr, Parkverbote (und mögliche Sperrung/Beeinträchtigung) aber länger
 #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv
-#: last_checked: 2022-10-13 vvv
+#: last_checked: 2022-10-15 vvv
 #: check_frequency: 90d vvv
 #: tempex: sa T06-T19 vvv
 	2::temp 9546,9198 9617,9185 9674,9179
@@ -4817,7 +4817,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        undef,
        {
-         'data' => '#: last_checked: 2022-09-04
+         'data' => '#: last_checked: 2022-10-15
 #: next_check: 2022-10-26
 	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
 ',
@@ -4925,7 +4925,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: note 3030340 4
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2022-09-04
+#: last_checked: 2022-10-15
 #: check_frequency: 90d
 #: next_check: 2023-05-31
 	q3::inwork 5020,6434 5269,6305
@@ -5203,12 +5203,13 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'data' => '#: XXX Halteverbot gilt bis 2022-10-10 vvv
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder offen? vvv
 #: also_indoor: traffic (B,ex-G(nördlicher?)) vvv
-#: last_checked: 2022-09-04 vvv
-#: next_check: 2022-10-10 vvv
+#: last_checked: 2022-10-15 vvv
+# REMOVED --- #: next_check: 2022-10-10 vvv
 # REMOVED (hier nicht mehr) ---	q4::inwork 6273,2609 6293,2583
-Seydlitzstr.	q4::inwork 6293,2583 6349,2510 6459,2364
-Frobenstr.	q3::inwork 6349,2510 6529,2642
-#: next_check ^^^
+# REMOVED (hier nicht mehr) --- Seydlitzstr.	q4::inwork 6293,2583 6349,2510
+Seydlitzstr.	q3::inwork 6349,2510 6459,2364
+# REMOVED (hier nicht mehr) --- Frobenstr.	q3::inwork 6349,2510 6529,2642
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
@@ -5216,7 +5217,7 @@ Frobenstr.	q3::inwork 6349,2510 6529,2642
 ',
          'from' => undef,
          'id' => 3557,
-         'text' => 'Seydlitzstr.: Bauarbeiten zwischen Havensteinstr. und Dessauerstr., Fahrbahn gesperrt, außerdem Anbindung Fröbenstr. gesperrt, vermutlich bis Mitte Oktober 2022',
+         'text' => 'Seydlitzstr.: Bauarbeiten zwischen Frobenstr. und Dessauerstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5458,7 +5459,7 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/verkehrsberuhigung-im-bergmannkiez-geht-weiter_a349916
 #: also_indoor: traffic vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2022-10-13 vvv
+#: last_checked: 2022-10-15 vvv
 #Fidicinstr. (ab Mehringdamm)	q4::inwork 9224,9053 9295,9047
 #Fidicinstr.	q3::inwork 9295,9047 9459,9019 9654,8991
 Fidicinstr.	q3::inwork 9459,9019 9654,8991 9799,8962
@@ -6010,21 +6011,31 @@ Ruheplatzstr.	q3::inwork 7627,15412 7540,15566
          'from' => 1665871200,
          'id' => 3651,
          'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1254588.php',
-         'text' => 'Triftstr./Genter Str. und Gerichtstr./Ruheplatzstr.: Bauarbeiten in den EInmündungsbereichen, Fahrbahn gesperrt, evtl. sind Radfahrer auch betroffen, ab 17.10.2022',
+         'text' => 'Triftstr./Genter Str. und Gerichtstr./Ruheplatzstr.: Bauarbeiten in den Einmündungsbereichen, Fahrbahn gesperrt, evtl. sind Radfahrer auch betroffen, ab 17.10.2022',
          'type' => 'handicap',
          'until' => undef
        },
        {
          'data' => '#: note: rbb-Meldung
 #: also_indoor: traffic (B,H)
-#: XXX Sind Radfahrer tatsächlich betroffen?
+# REMOVED (ja) --- #: XXX Sind Radfahrer tatsächlich betroffen?
 	q4::inwork 6273,2609 6065,2443
 ',
          'from' => 1665772021,
          'id' => 3652,
-         'text' => 'Derfflingerstr.: Sperrung der Fahrbahn zwischen Zietenstr. und Seydlitzstr., evtl. sind auch Radfahrer betroffen, bis 25.11.2022 ',
+         'text' => 'Derfflingerstr.: Sperrung der Fahrbahn zwischen vor der Seydlitzstr., bis 25.11.2022 ',
          'type' => 'handicap',
          'until' => 1669417200
+       },
+       {
+         'data' => '	q4::inwork; 7073,8081 7139,8079 7268,8008
+',
+         'from' => 1665836837,
+         'id' => 3653,
+         'source_id' => 'https://sbahn.berlin/fahren/bauen-stoerung/detail/neubau-der-moltkestrassenbruecke-am-s-bf-botanischer-garten-reparatur-bahnsteigdach-in-friedenau/',
+         'text' => 'Ella-Barowsky-Str.: temporäre Einbahnstraßenregelung (wegen SEV), voraussichtlich bis 17.10.2022',
+         'type' => 'handicap',
+         'until' => 1665993600
        }
      
 );

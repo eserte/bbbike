@@ -21,7 +21,7 @@
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="272512103" version="9"
 #: osm_watch: way id="767674684" version="1"
-#: last_checked: 2022-08-26 vvv
+#: last_checked: 2022-10-15 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-01-01 vvv
 Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeuge)	q3::inwork; 12378,11806 12453,11790 12608,11692 12634,11705 12660,11705
@@ -617,8 +617,8 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 #: next_check_id: WESER-2021
 #: XXX: im Kreuzungsbereich wird ein Kfz-Diagonalfilter entstehen
 #: osm_watch: way id="1050315263" version="5"
-#: osm_watch: way id="996616281" version="9"
-#: osm_watch: way id="996616282" version="8"
+#: osm_watch: way id="996616281" version="10"
+#: osm_watch: way id="996616282" version="9"
 #: osm_watch: way id="1100696455" version="1"
 #: also_indoor: traffic (B) vvv
 #: last_checked: 2022-10-02 vvv
@@ -990,6 +990,22 @@ Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickes
 # REMOVED (mittlerweile gibt's eine provisorische Baustraße) --- #: by: http://www.berliner-woche.de/blankenfelde/verkehr/rosenthaler-weg-voll-gesperrt-wasserbetriebe-verlegen-rohre-d144397.html --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/uebersichtsplan-umleitung_vollsperrung.pdf --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.692745.php --- #: by: http://www.berliner-woche.de/pankow/verkehr/sperrung-rosenthaler-weg-umleitung-vom-2-mai-bis-zum-25-juni-d159605.html --- #: source_id: 2147342534 --- #: priority: #B --- #: next_check: 2018-06-29 --- #: valid: -20180629 --- Rosenthaler Weg: Bauarbeiten, Radfahrer können auf dem Gehweg passieren, bis 29. Juni 2018	q1-::inwork 10228,21940 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174 10999,22195
 # 
 ### Lichterfelde ###
+# 
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf (ab 22.8.2022, kein Endedatum)
+#: by: https://berliner-abendblatt.de/2022/08/21/diese-baustellen-sorgen-fuer-staus/ (zwischen Jägerstraße und Parallelstraße bis Ende Oktober 2022, nur für Kfz-Verkehr gesperrt?)
+#: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (ca. bis 28.10.2022)
+#: note: wurde bei rbb vorzeitig entfernt (2022-08-24)
+#: source_id: viz2021:13.331807,52.425977,22.08.2022,07:00 (nur Kfz-Verkehr) (mittlerweile bis 4.11.2022) vvv
+#: last_checked: 2022-10-15 vvv
+#: next_check: 2022-11-04 vvv
+#: valid: -20221104 vvv
+#: note: hier nur 30m vor der Jägerstr.
+Lorenzstr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 5539,2497 5660,2219
+Lorenzstr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 5660,2219 5720,2081
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+#: source_id ^^^
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.719385.php (aufgehoben) --- #: source_id: 2147342640 --- #: last_checked: 2018-07-01 --- #: next_check: 2018-07-30 --- #: valid: -20180730 --- Dahlemer Weg: Bauarbeiten, Fahrbahn und Radweg Richtung Norden gesperrt, Gehweg darf von Radfahrern benutzt werden	q2::inwork; 2123,2803 2146,2878 2152,2912 2198,3169 2203,3213
 # 
@@ -1446,6 +1462,7 @@ Spreewaldplatz: Fußgänger	q1 12341,10218 12292,10374
 #: XXX_prog BS auf beiden Seiten, ansonsten q2 oder q2+ (GPS-Tracks anschauen)
 Mussehlstr.: Bordsteine (Bayernring und Wolffring)	q3 8842,8561 8759,8458 8720,8373
 #: XXX_prog BS an der Boelckestr., ansonsten q1 oder q2
+#: note: keine Ausschilderung bzgl. Grünanlage oder Fußweg
 (Fritz-Bräuning-Promenade): Bordstein, Fußgänger	q3 8731,8020 8623,8018
 (Teltowkanal, Nordufer): Fußgänger (eigentlich für Radfahrer verboten)	q2 8750,5173 9118,5328 9145,5323 9188,5333
 # REMOVED --- #: XXX_prog BS an der Kynaststr., ansonsten q1 --- (Kynaststr. - Uferwanderweg): Fußgänger, Bordstein	q2 14843,10621 14911,10587

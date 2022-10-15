@@ -146,7 +146,7 @@ EOF
        source_id => 'http://nareyka.events/news-events/mehr/artikel/44-fruehlingsfest-rheinstrasse.html',
        text  => "Rheinstraßenfest in der Rheinstraße zwischen Kaisereiche und Walther-Schreiber-Platz, am 16.04.2016 und 17.04.2016",
        data  => <<EOF,
-	2::temp 5644,6936 5533,6753 5424,6584 5370,6486
+	2::temp 5644,6936 5604,6870 5533,6753 5424,6584 5370,6486
 EOF
      },
      { from  => Time::Local::timelocal(reverse(2003-1900,7-1,8,6,0,0)),
@@ -5418,7 +5418,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003088',
        data  => <<EOF,
-	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
+	2::temp 5370,6486 5424,6584 5533,6753 5604,6870 5644,6936
 EOF
      },
      { from  => 1154203576, # 2006-07-29 22:06
@@ -8102,7 +8102,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005341',
        data  => <<EOF,
-	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
+	2::temp 5370,6486 5424,6584 5533,6753 5604,6870 5644,6936
 EOF
      },
      { from  => 1177739901, # 2007-04-28 07:58
@@ -16344,7 +16344,7 @@ EOF
 #: by: https://www.visitberlin.de/de/event/antikflohmarkt-trabrennbahn-karlshorst
 #: note: Der Antikmarkt fällt an den Sonntagen aus, an denen der Antikflohmarkt in Karlshorst stattfindet; das ist üblicherweise der Sonntag nach dem ersten Samstag im Monat.
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche; mittlerweile: Bauarbeiten am Ostbahnhof, normale Marktfläche existiert vermutlich nicht mehr (siehe oben)
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-15
 #: check_frequency: 120d
 	q4::temp:clock 12378,11806 12413,11901
 #: tempex ^^^
@@ -18784,7 +18784,7 @@ EOF
        text  => 'Rheinstraße (Friedenau): Veranstaltung (Jazzfest auf der Rheinstraße), Straße vollständig zwischen Walther-Schreiber-Platz und Kaisereiche gesperrt (09.07.2016 bis 10.07.2016)',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 5370,6486 5424,6584 5533,6753 5644,6936
+	2::temp 5370,6486 5424,6584 5533,6753 5604,6870 5644,6936
 EOF
      },
      { from  => 1346968800, # 2012-09-07 00:00 # siehe anderen Eintrag für periodic=>1
@@ -32364,7 +32364,7 @@ EOF
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8370
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036831903278/831903278/00399704/04-Anlagen/03/Anlage1_20220225_7-89VE_PAS_OL_11_mitDeckblatt.pdf
 #: also_indoor: traffic (H,G)
-#: osm_watch: way id="362719487" version="6"
+#: osm_watch: way id="362719487" version="7"
 #: osm_watch: way id="687428752" version="2"
 #: last_checked: 2022-10-10 (architektur-urbanistik)
 #: check_frequency: 90d
@@ -34010,7 +34010,7 @@ EOF
 #: next_check_id: CORONA-2020
 #: note: Marktzeiten sind wohl 9 bis 15 Uhr, Parkverbote (und mögliche Sperrung/Beeinträchtigung) aber länger
 #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv
-#: last_checked: 2022-10-13 vvv
+#: last_checked: 2022-10-15 vvv
 #: check_frequency: 90d vvv
 #: tempex: sa T06-T19 vvv
 	2::temp 9546,9198 9617,9185 9674,9179
@@ -34691,7 +34691,7 @@ EOF
        type  => 'handicap',
        source_id => 'viz2021:13.346369,52.431944,20.09.2021,07:30',
        data  => <<EOF,
-#: last_checked: 2022-09-04
+#: last_checked: 2022-10-15
 #: next_check: 2022-10-26
 	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
 EOF
@@ -34864,7 +34864,7 @@ EOF
 #: osm_watch: note 3030340 4
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2022-09-04
+#: last_checked: 2022-10-15
 #: check_frequency: 90d
 #: next_check: 2023-05-31
 	q3::inwork 5020,6434 5269,6305
@@ -35378,18 +35378,19 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Seydlitzstr.: Bauarbeiten zwischen Havensteinstr. und Dessauerstr., Fahrbahn gesperrt, außerdem Anbindung Fröbenstr. gesperrt, vermutlich bis Mitte Oktober 2022',
+       text  => 'Seydlitzstr.: Bauarbeiten zwischen Frobenstr. und Dessauerstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Halteverbot gilt bis 2022-10-10 vvv
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder offen? vvv
 #: also_indoor: traffic (B,ex-G(nördlicher?)) vvv
-#: last_checked: 2022-09-04 vvv
-#: next_check: 2022-10-10 vvv
+#: last_checked: 2022-10-15 vvv
+# REMOVED --- #: next_check: 2022-10-10 vvv
 # REMOVED (hier nicht mehr) ---	q4::inwork 6273,2609 6293,2583
-Seydlitzstr.	q4::inwork 6293,2583 6349,2510 6459,2364
-Frobenstr.	q3::inwork 6349,2510 6529,2642
-#: next_check ^^^
+# REMOVED (hier nicht mehr) --- Seydlitzstr.	q4::inwork 6293,2583 6349,2510
+Seydlitzstr.	q3::inwork 6349,2510 6459,2364
+# REMOVED (hier nicht mehr) --- Frobenstr.	q3::inwork 6349,2510 6529,2642
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 #: add_fragezeichen ^^^
@@ -36054,7 +36055,7 @@ EOF
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/verkehrsberuhigung-im-bergmannkiez-geht-weiter_a349916
 #: also_indoor: traffic vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2022-10-13 vvv
+#: last_checked: 2022-10-15 vvv
 #Fidicinstr. (ab Mehringdamm)	q4::inwork 9224,9053 9295,9047
 #Fidicinstr.	q3::inwork 9295,9047 9459,9019 9654,8991
 Fidicinstr.	q3::inwork 9459,9019 9654,8991 9799,8962
@@ -36673,7 +36674,7 @@ EOF
      },
      { from  => 1665871200, # 2022-10-16 00:00
        until => undef, # XXX
-       text  => 'Triftstr./Genter Str. und Gerichtstr./Ruheplatzstr.: Bauarbeiten in den EInmündungsbereichen, Fahrbahn gesperrt, evtl. sind Radfahrer auch betroffen, ab 17.10.2022',
+       text  => 'Triftstr./Genter Str. und Gerichtstr./Ruheplatzstr.: Bauarbeiten in den Einmündungsbereichen, Fahrbahn gesperrt, evtl. sind Radfahrer auch betroffen, ab 17.10.2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1254588.php',
        data  => <<EOF,
@@ -36695,13 +36696,22 @@ EOF
      },
      { from  => 1665772021, # 2022-10-14 20:27
        until => 1669417200, # 2022-11-26 00:00
-       text  => 'Derfflingerstr.: Sperrung der Fahrbahn zwischen Zietenstr. und Seydlitzstr., evtl. sind auch Radfahrer betroffen, bis 25.11.2022 ',
+       text  => 'Derfflingerstr.: Sperrung der Fahrbahn zwischen vor der Seydlitzstr., bis 25.11.2022 ',
        type  => 'handicap',
        data  => <<EOF,
 #: note: rbb-Meldung
 #: also_indoor: traffic (B,H)
-#: XXX Sind Radfahrer tatsächlich betroffen?
+# REMOVED (ja) --- #: XXX Sind Radfahrer tatsächlich betroffen?
 	q4::inwork 6273,2609 6065,2443
+EOF
+     },
+     { from  => 1665836837, # 2022-10-15 14:27
+       until => 1665993600, # 2022-10-17 10:00
+       text  => 'Ella-Barowsky-Str.: temporäre Einbahnstraßenregelung (wegen SEV), voraussichtlich bis 17.10.2022',
+       type  => 'handicap',
+       source_id => 'https://sbahn.berlin/fahren/bauen-stoerung/detail/neubau-der-moltkestrassenbruecke-am-s-bf-botanischer-garten-reparatur-bahnsteigdach-in-friedenau/',
+       data  => <<EOF,
+	q4::inwork; 7073,8081 7139,8079 7268,8008
 EOF
      },
     );
