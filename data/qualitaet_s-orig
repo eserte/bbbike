@@ -121,7 +121,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="18"
-#: last_checked: 2022-09-04
+#: last_checked: 2022-10-16
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -276,7 +276,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen)
 #: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2022-10-09
+#: last_checked: 2022-10-16
 #: check_frequency: 45d
 #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -579,7 +579,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: osm_watch: way id="4606258" version="26"
 #: osm_watch: way id="184077626" version="16"
 #: osm_watch: way id="49180827" version="20"
-#: last_checked: 2022-08-21
+#: last_checked: 2022-09-15 (mapillary)
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -1295,12 +1295,12 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22027,6608 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2022-08-07 vvv
+#: last_checked: 2022-10-16 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="6"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
 #: osm_watch: way id="25216398" version="33"
-Wuhlewanderweg: Verbundsteine	Q1 22084,5877 22070,5876 21846,5856 21744,5804 21618,5699 21605,5687 21600,5683 21507,5620
+Wuhlewanderweg: Verbundsteine	Q1 22084,5877 22070,5876 21846,5856 21744,5804 21651,5730 21618,5699 21605,5687 21600,5683 21581,5670 21507,5620
 #: check_frequency ^^^
 #: last_checked ^^^
 Hämmerlingstr.: Kleinsteinpflaster	Q2+ 21683,6946 21705,6931
@@ -2508,7 +2508,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="11"
-#: last_checked: 2022-08-14
+#: last_checked: 2022-10-16
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -2616,8 +2616,8 @@ Delfter Ufer: überwiegend guter Asphalt, einige Stellen mit Baumwurzeln	Q0- 1353
 (Delfter Ufer - Späthstr., Rampe): grobes Verbundsteinpflaster	Q2 14323,5395 14236,5393
 (Delfter Ufer - Späthstr., Rampe): grobes Verbundsteinpflaster	Q2 14323,5455 14236,5393
 (Späthstr. - Weg an der Teltowkanalautobahn, Rampe): gutes Verbundsteinpflaster	Q0 14392,5453 14331,5613 14308,5627
-(Am Teltowkanal): guter Verbundsteinpflaster	Q0- 14466,5087 14562,4985 14713,4834 14960,4648
-(Am Teltowkanal): Asphalt	Q0 14960,4648 15338,4341
+(Am Teltowkanal): guter Verbundsteinpflaster	Q0- 14466,5087 14562,4985 14713,4834 14806,4763 14967,4641
+(Am Teltowkanal): Asphalt	Q0 14967,4641 15338,4341
 (Am Teltowkanal): fester Sandweg	Q1- 15338,4341 15571,4168 15594,4152 15678,4083 15861,3942 15878,3936
 (Am Teltowkanal): Asphalt	Q0- 15878,3936 16066,3799 16175,3715 16233,3671 16292,3626 16344,3586 16503,3464 16674,3331 16670,3325 16641,3285 16550,3155
 Fenchelweg: glattes Kopfsteinpflaster	Q1 15585,4139 15695,4051 15859,3924 15872,3888
@@ -2668,6 +2668,7 @@ Bismarcksfelder Str.: Asphalt	Q0 21419,7806 21542,7868 21599,7904
 (Bellevuepark): Kleinsteinpflaster	Q1 22798,5731 22796,5640 22796,5631 22787,5582
 (Bellevuepark): mäßiger Asphalt	Q1 22787,5582 22733,5569 22701,5428 22657,5328
 (Bellevuepark): neuer Asphalt	Q0 22787,5582 22841,5571 22855,5554 22834,5481 22851,5327
+(Friedrichshagener Str. [49A-55] - Bellevuepark): Parkweg	Q1- 22514,5534 22534,5552 22574,5554 22717,5591 22787,5582
 Am Krusenick: guter Asphalt	Q0 22735,5328 22737,5278 22751,4970
 Am Krusenick: Kopfsteinpflaster	Q2 22751,4970 22754,4919
 Am Krusenick: guter Asphalt	Q0 22754,4919 22705,4874
@@ -3112,7 +3113,7 @@ Wasserweg: alter Asphalt	Q1 16028,8867 16086,8860 16129,8855
 Wasserweg: fester Sandweg	Q2 16129,8855 16201,8860
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier der Asphalt wieder komplett hergestellt?
-#: last_checked: 2022-07-26
+#: last_checked: 2022-10-16
 #: check_frequency: 120d
 #: next_check: 2023-06-30
 Wasserweg: Beton/Asphalt, in der Fahrbahnmitte fehlt der Asphalt	Q1- 16201,8860 16358,8841 16388,8821
@@ -5200,7 +5201,7 @@ Weg H: unbefestigte Straße	Q2 27961,699 28083,592
 Zur Hirtenwiese: Asphalt mit einigen Unebenheiten	Q1+ 27273,-106 26700,-344
 # 
 #: XXX zurzeit Bauarbeiten, vielleicht wird die Fahrbahnoberfläche neu gemacht?
-#: last_checked: 2022-10-05
+#: last_checked: 2022-10-16
 #: check_frequency: 90d
 Am Maria-Jankowski-Park: Kopfsteinpflaster	Q2 22087,5404 22018,5452
 # 
@@ -12205,7 +12206,7 @@ Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 (Am Plänterwald - Spreepark): relativ glattes Pflaster	Q1- 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
 #: next_check_id: SPREEPARK-2022
 #: XXX wird hier der Asphalt noch verbessert?
-#: last_checked: 2022-07-26
+#: last_checked: 2022-10-16
 #: check_frequency: 120d
 #: next_check: 2023-06-30
 (Am Plänterwald - Spreepark): alter Asphalt	Q1 16084,8833 16086,8860
@@ -12578,7 +12579,7 @@ Puschkinallee [Nebenstraße]: teilweise etwas schadhafter Asphalt	Q0- 13870,9872 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7207 (Vorlage zur Kenntnisnahme)
 #: osm_watch: way id="24202434" version="24"
 #: XXX Wann wird der Asphalt ersetzt? Wann wird die Straße nur für Anlieger/Radfahrer frei sein?
-#: last_checked: 2022-09-25
+#: last_checked: 2022-10-16
 #: check_frequency: 90d
 Dammweg: Asphalt	Q0 15869,8355 16388,8821
 Charlottenburger Ufer: teilweise gepflastert	Q1- 3370,12725 3291,12721
@@ -12806,7 +12807,7 @@ Parchimer Allee - Straße 26a: Kopfsteinpflaster	Q2 14466,4624 14475,4635
 Alte Hellersdorfer Str. [Wohngebietsstraße]: Beton	Q1 23101,15198 23222,15219 23221,15226 23213,15297
 (Alte Hellersdorfer Str. - Neuruppiner Str.): Gehwegplatten	Q1+ 23222,15219 23257,15223 23282,15228 23280,15244
 (Hönower Str./Wilhelmsmühlenweg - An der Schule): Asphalt	Q0 24614,11657 24651,11656 24667,11666 24759,11666
-Friedrichshagener Str. [49A-55]: Asphalt	Q0 22356,5412 22535,5547
+Friedrichshagener Str. [49A-55]: Asphalt	Q0 22356,5412 22514,5534
 Torgauer Str. (Hellersdorf) [am Kinder- und Jugendhaus]: Asphalt	Q0- 25311,15355 25315,15404 25215,15413 25135,15419 25127,15412
 (Hönower Weiherkette - Torgauer Str.): unbefestigter Weg, einige Wurzeln	Q2+ 25234,15577 25216,15462
 (Hönower Weiherkette - Torgauer Str.): Kleinsteinpflaster	Q1- 25216,15462 25215,15413
@@ -15674,7 +15675,7 @@ Wandlitzstr.: Asphalt mit leichten Schäden	Q0- 18627,8475 18557,8525 18494,8569 
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/wandlitzstrasse-bald-radstrasse_a351203
 #: by: https://www.buergerhaushalt-lichtenberg.de/vorschlag/ausbau-fahrradwege-fahrradstrassen-karlshorst
 #: XXX neue Häuser geplant (zwischen Liepnitzstr. und Stühlinger Str., Bebauungsplan 11-57a), vielleicht wird nach Fertigstellung die Fahrbahn saniert?
-#: last_checked: 2022-08-25
+#: last_checked: 2022-10-16
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 Wandlitzstr.: mäßiger Asphalt, z. T. mit Kopfsteinpflaster durchbrochen	Q2 18448,8602 18401,8636 18331,8685 18301,8707 18272,8764
@@ -31507,4 +31508,7 @@ Einmündungsbereich mit Kopfsteinpflaster	Q2- -3275,12769
 Einmündungsbereich asphaltiert	Q0 -3444,12573
 Einmündungsbereich mit Kopfsteinpflaster	Q2 -8098,12340
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 -8078,12647
+Einmündungsbereich asphaltiert	Q0 13829,5740
+Einmündungsbereich asphaltiert	Q0 13858,5679
+Einmündungsbereich asphaltiert	Q0 13919,5547
 #: ignore ^^^

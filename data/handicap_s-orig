@@ -448,9 +448,15 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 #: next_check_id: WANDLITZ-2021
 #: note: am 2022-04-22 war die Fahrbahn offen, aber möglicherweise war das nur "zufällig" so, weil Baufahrzeuge reinfahren mussten; jedenfalls stehen an beiden Enden Bauzäune, die umgeklappt werden können
 #: also_indoor: traffic
-#: last_checked: 2022-09-18
+#: last_checked: 2022-10-16
 #: check_frequency: 90d
 Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
+# 
+#: next_check_id: WANDLITZ-2021
+#: last_checked: 2022-10-16 vvv
+Wandlitzstr.: Sperrung der Fahrbahn zwischen Heiligenberger Str. und Stühlinger Str.	q2::inwork 18627,8475 18557,8525
+Wandlitzstr.: Sperrung der Fahrbahn zwischen Heiligenberger Str. und Stühlinger Str.	q3::inwork 18557,8525 18494,8569
+#: last_checked ^^^
 # 
 # REMOVED (fertig) --- #: next_check_id: ZWIESELER-2022 --- #: last_checked: 2022-03-20 --- #: check_frequency: 60d --- Richard-Kolkwitz-Weg: Engstelle wegen Bauarbeiten	q2::inwork 19711,10426 19813,10468
 # 
@@ -621,8 +627,8 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 #: osm_watch: way id="996616282" version="9"
 #: osm_watch: way id="1100696455" version="1"
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2022-10-02 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2022-10-16 vvv
+#: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2022-09-15 vvv
 # REMOVED (hier fertig) --- Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 # REMOVED (fertig) --- Weserstr.: vor der Weichselstr. Bauarbeiten, gemeinsamer Geh- und Radweg, eng	q2::inwork 12590,8977 12740,8862
@@ -684,7 +690,7 @@ Neuköllnische Allee: einige Fußgänger	q2::inwork 14344,7003 14310,7022 14276,702
 #: by: https://www.kms-sonne.de/baustellennews?date=20220830
 #: by: https://www.kms-sonne.de/assets/2022/08/Baustellenuebersicht-2022-08-web.pdf
 #: osm_watch: way id="640465875" version="11"
-#: last_checked: 2022-10-02
+#: last_checked: 2022-10-16
 #: check_frequency: 120d
 #: next_check: 2024-06-01
 Schönstedtstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q4::inwork 12643,8533 12545,8449
@@ -1613,6 +1619,7 @@ An der Malche: teilweise eng und kurvig	q2 1106,20424 1032,20580 895,20523 834,2
 Am Friedhof: recht enger Radweg	q1 6377,17854 6375,17755 6370,17696 6347,17381
 Gerlachsheimer Weg: Fußgänger	q2 13151,7914 13240,7966
 Jan-Hus-Weg/Kirchgasse: Fußgänger	q2 13085,7904 13117,7939 13151,7914
+#: note: als Fußweg ausgeschildert
 Wanzlikpfad: eng und kurvig, Fußgänger	q3 13268,7801 13309,7911
 #: note: Grünanlagenschild ohne weitere Zusatzschilder bzgl. Radfahren
 (Tunnelstr. - Uferweg): Fußgänger, Grünanlage	q3 15662,9501 15749,9558
@@ -1660,6 +1667,8 @@ Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit
 Treseburger Ufer: nur für Fußgänger erlaubt	q4 12301,5783 12453,5844 12507,5860 12636,5896 12699,5909
 (Bellevuepark): einige Fußgänger	q1 22798,5731 22796,5640 22796,5631 22787,5582 22841,5571 22855,5554 22834,5481 22851,5327
 (Bellevuepark): nur für Fußgänger erlaubt	q4 22787,5582 22733,5569 22701,5428 22657,5328
+#: note: unklar, ob hier das Radfahren erlaubt ist, Schilder sind beschmiert
+(Friedrichshagener Str. [49A-55] - Bellevuepark): einige Fußgänger, Spielplatz	q2 22514,5534 22534,5552 22574,5554 22717,5591 22787,5582
 Walter-Nicklitz-Promenade: eng und kurvenreich, Fußgänger	q2 8290,15304 8329,15397 8308,15409 8312,15470
 Gropiusstr.: Fußgänger auf dem Uferweg	q1 8389,16214 8534,16355 8543,16364
 Pankeweg: Fußgänger	q1 8286,14635 8322,14687 8292,14734 8275,14869 8264,14902
@@ -4256,6 +4265,7 @@ Theodorpark: einige Fußgänger	q2 25017,10767 25018,10747 25022,10715
 #: XXX_prog ^^^
 #: note: inkonsistente Beschilderung: am südlichen Ende explizites Gehweg-Schild, am nördliches Ende gar nichts, zwischendurch einige Grünanlagen-Schilder ohne Zusatzschilder
 Spandauer Havelpromenade: einige Fußgänger	q2 -1871,16788 -1895,16675 -1920,16476 -1928,16423
+Späthstr.: Gehweg	q3 14028,5325 14063,5313
 # 
 ######################### User Contributions #################################
 # 

@@ -554,11 +554,14 @@ Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8332,13548 8295,13531 8187,13
 Schönhauser Allee (Richtungsfahrbahn)	1::igndisp 10883,15129 10883,15251 10887,15287
 Schönhauser Allee (Richtungsfahrbahn)	1::igndisp 10887,15287 10886,15251 10883,15129
 Schönhauser Allee (Mittelstreifen, U-Bahnhof)	3nocross::ignrte 10883,15129 10886,15251 10887,15287
-Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse)	1::igndisp 21789,5427 21739,5492 21703,5538 21649,5617 21600,5683 21594,5691 21567,5727 21519,5767 21467,5802 21364,5827 21303,5826
+Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse)	1::igndisp 21789,5427 21739,5492 21703,5538 21649,5617
+Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse)	1::igndisp 21519,5767 21467,5802 21364,5827 21303,5826
 Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21649,5617 21703,5538 21739,5492 21789,5427
 Lindenstr./Pyramidenbrücke: Übergang wegen Bauarbeiten gesperrt	2::igndisp 21600,5683 21605,5687
 Lindenstr. (Straßenbahntrasse)	3nocross::ignrte 21706,5541 21605,5687 21600,5694
-Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21600,5683 21507,5620
+Wuhlewanderweg: wegen Baustelleneinrichtung gesperrt	2::inwork 21600,5683 21581,5670
+Lindenstr./Pyramidenbrücke/An der Wuhlheide (Straßenbahntrasse): Fahrbahn gesperrt (Benutzungspflicht des Radwegs)	2::igndisp 21649,5617 21600,5683 21594,5691 21567,5727 21519,5767
+Wuhlewanderweg: wegen Baustelle gesperrt	2::inwork 21651,5730 21618,5699 21605,5687
 Lötschbergstr.	1s 20161,11715 20150,11512
 Brodenbacher Weg	1s 15178,17134 14897,17093
 Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
@@ -876,7 +879,6 @@ Berlepschstr., Wendeschleife	1 -1486,1481 -1436,1499
 Berlepschstr., Wendeschleife	1 -1436,1499 -1467,1466 -1486,1481
 Bürgerstr.: Mittelstreifen	2 13289,6355 13307,6359
 Boltonstr.	1 -390,14476 -457,14536
-Marktplatz Adlershof	1 20290,3756 20336,3783
 Straßenbahntrasse	3nocross::ignrte 26286,-1901 26698,-2322 26871,-2500
 Adlergestell -> Langer See: Straßenbahntrasse	3::igndisp 26286,-1901 26698,-2322 26846,-2176
 Langer See -> Adlergestell: Straßenbahntrasse	3::igndisp 26846,-2176 26698,-2322 26871,-2500
@@ -2612,7 +2614,7 @@ tragen (7 Stufen)	0:20:-7 9762,16119
 tragen (3+20 Stufen)	0:40:-263 -6458,14292
 tragen (ca. 35 Stufen)	0:30:-75 7621,7105
 tragen (ca. 35 Stufen)	0:30:-75 7655,7096
-tragen (30 Stufen)	0:30:-53 15571,4168
+tragen (30 Stufen mit Kinderwagenrampe)	0:30:-53 15571,4168
 tragen (26 Stufen, steile Treppe)	0:30:-213 15156,6034
 tragen (Treppe)	0:30:-151 4808,3406
 tragen (zwei Treppen, je ca. 10 Stufen)	0:30:-255 8823,16877
@@ -3170,7 +3172,7 @@ Schranke	BNP:3:-64:trailer=10 6876,-2731
 Schranke	BNP:3:-78:trailer=10 17215,12485
 Schranke	BNP:10:-182:trailer=20 15334,16718
 Drängelgitter	BNP:3:0:trailer=10 3783,-2079
-Drängelgitter	BNP:3:50:trailer=10 21618,5699
+Drängelgitter	BNP:3:46:trailer=10 21618,5699
 Drängelgitter	BNP:3:85:trailer=10 22070,5876
 Drängelgitter	BNP:3:78:trailer=10 22097,5879
 Drängelgitter	BNP:3:26:trailer=10 24454,-14845
@@ -3242,6 +3244,8 @@ Tor	BNP:10:-196 1473,1740
 Drängelgitter	BNP:2:-126:trailer=7 -4234,11408
 Schranke	BNP:5:-188:trailer=15 23221,15226
 Schranke	BNP:3:-207:trailer=10 -1486,16789
+Schranke	BNP:1:-52:trailer=3 14967,4641
+Marktplatz Adlershof: gesperrt wegen Umbauarbeiten	2::inwork 20336,3783 20290,3756
 Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 13333,9929 13271,9927 13225,9897 13109,9743 12905,9470
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
@@ -3302,7 +3306,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
 Am Kutscherhaus: durch Bauzäune abgesperrt	2::inwork 21514,5310 21386,5251 21355,5254
 Wäscherinnenweg: durch Bauzäune abgesperrt	2::inwork 21444,5112 21358,5072
-Henriette-Lustig-Str.: durch Bauzäune abgesperrt	2::inwork 21476,5048 21380,5003 21375,4974
+Henriette-Lustig-Str.: Durchfart nicht möglich	2::inwork 21476,5048 21380,5003 21375,4974
 Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364

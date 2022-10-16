@@ -28,6 +28,8 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 18401,8636 18448,8602
+Wandlitzstr.: Sperrung der Fahrbahn zwischen Heiligenberger Str. und Stühlinger Str.	q2::inwork 18627,8475 18557,8525
+Wandlitzstr.: Sperrung der Fahrbahn zwischen Heiligenberger Str. und Stühlinger Str.	q3::inwork 18557,8525 18494,8569
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
 Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2::inwork; 6692,13333 6674,13332 6535,13327 6377,13321
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
@@ -480,6 +482,7 @@ Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit
 Treseburger Ufer: nur für Fußgänger erlaubt	q4 12301,5783 12453,5844 12507,5860 12636,5896 12699,5909
 (Bellevuepark): einige Fußgänger	q1 22798,5731 22796,5640 22796,5631 22787,5582 22841,5571 22855,5554 22834,5481 22851,5327
 (Bellevuepark): nur für Fußgänger erlaubt	q4 22787,5582 22733,5569 22701,5428 22657,5328
+(Friedrichshagener Str. [49A-55] - Bellevuepark): einige Fußgänger, Spielplatz	q2 22514,5534 22534,5552 22574,5554 22717,5591 22787,5582
 Walter-Nicklitz-Promenade: eng und kurvenreich, Fußgänger	q2 8290,15304 8329,15397 8308,15409 8312,15470
 Gropiusstr.: Fußgänger auf dem Uferweg	q1 8389,16214 8534,16355 8543,16364
 Pankeweg: Fußgänger	q1 8286,14635 8322,14687 8292,14734 8275,14869 8264,14902
@@ -2358,6 +2361,7 @@ Theodorpark: einige Fußgänger	q2 25017,10767 25018,10747 25022,10715
 (Rossiner Platz - Rominter Allee): Bordstein	q2 -133,12217 -153,12183
 (Rossiner Platz - Rominter Allee): Bordstein	q2 -113,12164 -153,12183
 Spandauer Havelpromenade: einige Fußgänger	q2 -1871,16788 -1895,16675 -1920,16476 -1928,16423
+Späthstr.: Gehweg	q3 14028,5325 14063,5313
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

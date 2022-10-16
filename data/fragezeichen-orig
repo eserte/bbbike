@@ -82,7 +82,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
 # REMOVED (hier realisiert) --- Stralauer Allee: Radspur geplant	?::projected; 13596,10722 13633,10705 13678,10685 13779,10642 13850,10612 13919,10583
 # REMOVED (hier in Bau, siehe radwege-orig-Eintrag) --- Stralauer Allee: Radspur geplant	?::projected; 13919,10583 13986,10549 14103,10489 14218,10430
-#: last_checked: 2022-10-07
+#: last_checked: 2022-10-16
 Stralauer Allee: Radspur geplant	?::projected; 14218,10430 14405,10340 14558,10264
 #: next_check ^^^
 #: check_frequency ^^^
@@ -1009,7 +1009,7 @@ Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 1
 # 
 #: XXX Jt.3
 #: osm_watch: way id="132688411" version="15"
-#: last_checked: 2022-09-25
+#: last_checked: 2022-10-16
 #: check_frequency: 90d
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17516,4657 17471,4570 17428,4503 17387,4446 17290,4308 17261,4267 17244,4242 17110,4055 17053,3971 17219,3795 17364,3565
 # 
@@ -1493,7 +1493,7 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22312
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/asphaltierung-der-strasse-angeregt_a358655 (BVV-Beschluss)
 #: osm_watch: way id="51872061" version="39"
 #: osm_watch: way id="31525575" version="27"
-#: last_checked: 2022-09-03
+#: last_checked: 2022-10-16
 #: check_frequency: 120d
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
 # REMOVED (zusammengelegt) --- #: next_check_id: WALLENSTEIN-2020 --- #: osm_watch: way id="31525575" version="20" --- #: XXX zurzeit laufen Bauarbeiten; Parkverbot bis 31.10.2020 --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/unterfuehrung-voll-gesperrt_a285283 (bis 16.11.2020; nur Arbeiten an der Gasleitung?) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8603 (Frage) --- #: last_checked: 2020-11-28 --- #: check_frequency: 120d --- #: next_check: 2020-11-16 --- Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
@@ -1675,7 +1675,7 @@ Wullenwebersteg: wird hier eine Rampe erstellt?	?::projected 5714,12290 5714,122
 #: by: http://www.infravelo.de/projekt/braunschweiger-strasse-bauabschnitt-3/ (1. Quartal 2021 - 3. Quartal 2021) (mittlerweile: 2. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 3. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 2. Quartal 2023 - 4. Quartal 2023)
 #: by: https://berliner-abendblatt.de/2022/08/22/saalestrasse-cdu-fordert-plan-gegen-staus-und-dreck/ (Diagonalsperre in Höhe Unstrutstr., voraussichtlich 2023)
 #: osm_watch: way id="423009430" version="16"
-#: last_checked: 2022-10-02
+#: last_checked: 2022-10-16
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 Braunschweiger Str.: Asphaltierung geplant	?::projected 13368,7300 13476,7330 13519,7345
@@ -2138,7 +2138,7 @@ Rudower Str.: werden hier noch Radspuren erstellt?	? 18938,2054 18985,2047 19055
 #: XXX evtl. entsteht auch eine Wuhlebrücke
 #: XXX laut Finanzplan Berlin 2019-2023 ist die prognostizierte Fertigstellung 2024
 #: osm_watch: way id="413009390" version="2"
-#: last_checked: 2022-05-11
+#: last_checked: 2022-10-16
 #: check_frequency: 720d
 Mellowpark: geplanter Uferweg	?::projected 21567,5727 21463,5640 21355,5679 21241,5666 21126,5612 21059,5596
 # 
@@ -2301,13 +2301,13 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/spreepark-wird-fuer-radfahrer-und-fussgaenger-besser-erreichbar_a346511
 #: osm_watch: way id="207761374" version="8"
 #: osm_watch: way id="306147854" version="5"
-#: last_checked: 2022-07-26
+#: last_checked: 2022-10-16
 #: check_frequency: 120d
 #: next_check: 2023-06-30
 Wasserweg: wird hier asphaltiert werden?	?::projected 15680,8914 15873,8884 15981,8872 16028,8867 16086,8860 16129,8855 16201,8860
 # 
 #: by: https://www.infravelo.de/projekt/bulgarische-strasse/ (2. Quartal 2023 - 3. Quartal 2023)
-#: last_checked: 2022-09-25
+#: last_checked: 2022-10-16
 #: next_check: 2023-09-30
 Bulgarische Str.: Planung einer Fahrradstraße	?::projected 15591,8848 15680,8914 15778,8990
 # 
@@ -2366,12 +2366,12 @@ Togostr.: Ausweisung als Fahrradstraße, auch im nördlichen Abschnitt?	? 5531,167
 #: XXX eine Straße könnte nach Henriette Lustig ("Mutter Lustig") benannt werden
 # REMOVED (eingetragen) --- #: XXX alle Straßen fehlen in Berlin.coords.data
 # REMOVED (realisiert) --- #: XXX vermutlich wird die Ottomar-Geschke-Str. komplett asphaltiert werden
-#: last_checked: 2022-08-14
+#: last_checked: 2022-10-16
 #: check_frequency: 180d
 #: XXX Qualität? culdesac-Eintrag zu culdesac_pseudo machen
 #: osm_watch: way id="719023971" version="9"
 (Blütenweißweg - Harnischweg): wird es hier eine Verlängerung für Radfahrer/Fußgänger bis zum Harnischweg geben?	?::projected 21427,5347 21399,5336 21363,5336
-#: last_checked: 2022-08-14
+#: last_checked: 2022-10-16
 #: check_frequency: 120d
 #: osm_watch: way id="721602418" version="4"
 (Uferweg - Eiselenweg): wird hier die Radroute neu geführt? Weg ist asphaltiert	?::inwork 21518,5389 21483,5374
@@ -2701,7 +2701,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12598,8390 12582,8408
 #: XXX vermutlich Aufhebung des Zweirichtungsradwegs
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2019-2022)
 #: XXX im Finanzplan Berlin 2019-2023 Planungsbeginn 2023, Prognose Fertigstellung 2025
-#: last_checked: 2022-06-18
+#: last_checked: 2022-10-16
 #: check_frequency: 360d
 #: next_check: 2025-12-31
 Kanalstr.: Bau eines Geh- und Radwegs	?::projected 18111,2135 18101,2164 17928,2248 17772,2331 17541,2454 17284,2636 16786,2989
@@ -2848,7 +2848,8 @@ Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/neuer-abschnitt-fahrradstrasse_a341213 (bis Sommer 2022 bis zur Fuldastraße, im Herbst 2022 startet der nächste Abschnitt bis Innstraße)
 #: by: https://berliner-abendblatt.de/2022/04/06/weserstrasse-fahrradstrasse-wird-verlaengert/
 #: by: https://twitter.com/papapreuss/status/1542275896798679040 (Planung des 2. Bauabschnitts Fuldastr.-Innstr. kann nun starten (Ende Juni 2022))
-#: last_checked: 2022-10-02
+#: XXX außerdem: geplante Vorfahrtsregelung + Diagonalsperre an der Kreuzung Weichselstr.
+#: last_checked: 2022-10-16
 #: check_frequency: 90d
 #: next_check: 2022-12-31
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
@@ -4212,7 +4213,7 @@ Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 # REMOVED --- #: XXX laut fritz bis 14.02.2020, mittlerweile nicht mehr gelistet (Einbahnstraßenregelung ist aber noch da) --- #: XXX Einbahnstraße ist ausgeschildert, aber kaum Einschränkungen in der Fahrbahnbreite --- #: last_checked: 2020-03-05 --- #: check_frequency: 7d --- # REMOVED --- #: next_check; 2020-02-14 --- Kommandantenstr.: ist hier wieder eine Einbahnstraße?	? 10437,11352 10593,11120
 # 
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/sicherer-weg-zur-sternwarte_a246928
-#: last_checked: 2022-09-25
+#: last_checked: 2022-10-16
 #: check_frequency: 90d
 Alt-Treptow, vor der Sternwarte: Planung einer Überquerungshilfe, evtl. eine Ampel	?::projected 15399,9101 15452,9079 15451,9129
 # 
@@ -4456,7 +4457,7 @@ Manfred-von-Richthofen-Str.: ändert sich bei den geplanten Umbaumaßnahmen etwas 
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/protokoll-18-ag-radverkehr_24-02-2021.pdf (Erwähnung)
-#: last_checked: 2022-08-14 vvv
+#: last_checked: 2022-10-16 vvv
 #: check_frequency: 60d vvv
 Bahnhofstr.: "Abordnung" der Benutzungspflicht geplant	?::projected 22467,6135 22431,6068 22358,5918
 # REMOVED (hier weitgehend nicht mehr) --- Bahnhofstr.: "Abordnung" der Benutzungspflicht geplant	?::projected 22358,5918 22292,5774 22236,5633 22184,5545 22116,5442
@@ -5428,7 +5429,7 @@ Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 1
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: by: https://www.buergerhaushalt-lichtenberg.de/vorschlag/ausbau-fahrradwege-fahrradstrassen-karlshorst (Stand Juni 2022: Fertigstellung voraussichtlich 2024/2025)
-#: last_checked: 2022-10-09
+#: last_checked: 2022-10-16
 #: check_frequency: 180d
 #: next_check: 2024-06-30
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
@@ -5562,7 +5563,7 @@ Charlottenburger Chaussee: Radwegsanierung in Planung, wo genau?	?::projected -2
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
-#: last_checked: 2022-09-25
+#: last_checked: 2022-10-16
 #: check_frequency: 180d
 Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,10747 16468,10695 16497,10685 16576,10658 16597,10651 16601,10650 16647,10632
 # 
@@ -5572,7 +5573,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 Kyllburger Weg: "Radweg", was soll hier entstehen?	? 16645,17449 16670,17454 16785,17524
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
-#: last_checked: 2022-10-09
+#: last_checked: 2022-10-16
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -5798,7 +5799,7 @@ Rohrwallallee - Windwallstr.: Asphaltstreifen soll eingerichtet werden	?::projec
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/das-adlershofer-zentrum-um-den-marktplatz-und-die-doerpfeldstrasse-veraendert-sich_a341990 (Umbau ab 2024)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-12376.pdf (Planfeststellung ab Ende 2023)
 #: osm_watch: way id="11389403" version="42"
-#: last_checked: 2022-08-11
+#: last_checked: 2022-10-16
 #: check_frequency: 540d
 #: next_check: 2024-03-01
 Dörpfeldstr.: evtl. Einrichtung von Radverkehrsanlagen	?::projected 19904,3464 20012,3532 20082,3578 20136,3609 20149,3617 20159,3623 20219,3661 20304,3714 20322,3725 20352,3744 20362,3750 20428,3786 20449,3799 20546,3865 20637,3919 20692,3951 20772,3999 20788,4008 20834,4035 21053,4162 21129,4217 21146,4229
@@ -6612,7 +6613,7 @@ Balzerplatz: wird hier ein verkehrsberuhigter Bereich entstehen	? 20937,9229 210
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8792 (Anordnungsprozess in Vorbereitung)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8572 (Erwähnung der Anordnung)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
-#: last_checked: 2022-10-09
+#: last_checked: 2022-10-16
 #: check_frequency: 180d
 Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 18301,9946 18266,9853 18066,9770 17920,9698 17777,9649 17668,9632 17587,9655 17471,9688 17383,9719
 # 
@@ -6623,16 +6624,11 @@ Hönower Weg: Planung einer Fahrradstraße	?::projected 18296,10027 18312,9985 183
 # REMOVED (realisiert) --- Kaiser-Wilhelm-Str.: Radspur wird vermutlich entstehen	?::projected; 6780,3497 6915,3642 6954,3703 6996,3762
 # REMOVED (hier normale Radspuren) --- Kaiser-Wilhelm-Str.: Popup-Radweg in Planung	?::projected 6996,3762 7107,3912
 # 
+#: next_check_id: GRUENBERGER-2022
 #: by: https://www.infravelo.de/projekt/gruenberger-strasse/ (4. Quartal 2022 - 1. Quartal 2023) (mittlerweile: 2. Quartal 2023 - 3. Quartal 2023) (geänderte URL, siehe unten)
 #: by: http://www.infravelo.de/projekt/gruenberger-strasse-west/ (URL hat sich geändert) (mittlerweile entfernt; möglicherweise mit dem Wedekindstr.-Eintrag kombiniert)
-#: by: https://nitter.cz/VIZ_Berlin/status/1580164107835125760#m (Einbahnstraße, offen Richtung Osten, ab 2022-10-17)
-#: by: https://nitter.cz/VIZ_Berlin/status/1580448626056519680#m (... bis 14.02.2023)
-#: XXX Außerdem: wird es wegen der Umleitung des 240er in der (engen) Kopernikusstraße zu einer Einbahnstraßenregelung kommen? Zumindest wird es einige Halteverbotsschilder geben
-#: source_id: bvg2021:240#BVG310117_0
-#: priority: #A
 #: last_checked: 2022-10-14
-#: next_check: 2022-10-17
-# REMOVED --- #: next_check: 2023-09-30
+#: next_check: 2023-09-30
 # REMOVED (das hier ist dann vermutlich irgendwann mal die gruenberger-strasse-ost) --- Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 14461,11738 14395,11753 14272,11775 14127,11811 14006,11843 13696,11920
 Grünberger Str.: geschützte Radfahrstreifen geplant	?::projected 13696,11920 13515,11969 13352,12003
 # 
@@ -6754,7 +6750,7 @@ Paule-Panke-Str.: geplante Privatstraße	?::projected 11168,18542 11214,18388 111
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8851 (2. Halbjahr 2022)
 #: by: https://www.bahninfo-forum.de/read.php?9,721782,727530#msg-727530 (Gleisarbeiten 01.08-10.12.2022)
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,737635#msg-737635 (Baubeginn 1.8.2022, Inbetriebnahme zum Jahresende 2022)
-#: last_checked: 2022-08-14
+#: last_checked: 2022-10-16
 #: next_check: 2022-12-10
 Hegemeisterweg/Treskowallee: Ampel geplant	?::projected 18390,7797 18406,7760 18424,7721
 # 
@@ -6878,7 +6874,7 @@ Gockelweg: Einziehung als öffentliches Straßenland	? 15846,-591 16114,-610 16187
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/3_Lageplan_250.pdf
 #: by: https://www.uvp-verbund.de/documents/ingrid-group_ige-iplug-be/76160F48-E306-46B2-B99A-450DC406B96F/4_Schnitt_50.pdf
 #: by: https://www.bahninfo-forum.de/read.php?9,726473,726473
-#: last_checked: 2022-10-09
+#: last_checked: 2022-10-16
 #: check_frequency: 360d
 Blockdammweg: Errichtung einer neuen Zwischenendstelle für die Straßenbahn, Rampe des Blockdammwegs wird enger, neue Ampel am Kreuzungspunkt Ehrlichstr.	?::projected 17729,8850 17760,8853 17904,8924
 # 
@@ -7506,12 +7502,12 @@ Charles-Boutard-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?:
 #: by: https://www.aktives-adlershof.de/fileadmin/Bilder_Redakteure/2021_NEWSletter/2021-01_Newsletter_digital.pdf?fbclid=IwAR06vnMT56ZWNbaBwuChQZNaNj3Mlxr4rvI6I7X9olxdM97_a_Dc-PfEwAA
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/2022-beginnen-die-bauarbeiten-fuer-eine-neue-bruecke-uebers-adlergestell_a307746 (Frühjahr 2022 - Ende 2023)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27038.pdf (Bauzeit zwei Jahre)
-#: last_checked: 2022-09-03
+#: last_checked: 2022-10-16
 #: check_frequency: 360d
 #: next_check: 2023-12-31
 Fuß- und Radwegbrücke: geplant	?::projected 19162,3935 19268,4037 19245,4046 19252,4069 19300,4018 19405,4125 19428,4071 19372,4084 19366,4065 19351,4050 19335,4067
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Jt.8)
-#: last_checked: 2022-09-03
+#: last_checked: 2022-10-16
 #: check_frequency: 180d
 Weg entlang der Bahnanlagen: evtl. entsteht hier eine Grünanlage mit Wegen	?::projected 19219,4023 19667,3578
 # REMOVED (realisiert) --- #: XXX ist der Weg schon fertig? --- #: next_check: 2019-06-10 --- Weg entlang der Bahnanlagen: evtl. entsteht hier eine Grünanlage mit Wegen	?::projected 19242,4077 19015,4338 18807,4556 18722,4628
@@ -7715,7 +7711,7 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: XXX alle hier aufgeführten Straßen fehlen noch bei Berlin.coords.data
 #: XXX Samuel-Lewin-Str. laut DPAG-Mitteilungsblatt und LOR PLZ=10318
 #: osm_watch: way id="428279379" version="13" vvv
-#: last_checked: 2022-10-09 vvv
+#: last_checked: 2022-10-16 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2022-03-01 vvv
 # REMOVED --- Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue Straßen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
@@ -8832,6 +8828,7 @@ S-Bhf. Zehlendorf: neuer Zugang geplant	?::projected 644,2622 660,2576
 #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/wieder-verzoegerung-bei-der-neuen-fahlenbergbruecke_a354938 (Fertigstellung Ende 2023)
 #: source_id: viz2021:13.703966,52.4026,16.08.2021,09:00 (bis 27.8.2021) (inaktiv)
 #: source_id: viz2021:13.703997,52.402579,10.10.2022,07:00 (Brückenarbeiten, bis 22.10.2022) (mittlerweile bis 21.10.2022)
+#: source_id: bvg2021:369#BVG310116_0
 #: note: die Verkehrsmeldung wurde beim rbb am nächsten Tag (11.10.2022) bereits entfernt
 #: osm_watch: way id="10275794" version="16"
 #: osm_watch: way id="897616703" version="2"
@@ -8950,7 +8947,7 @@ Köpenicker Allee 146-162: Wohngebiet geplant, Wege werden entstehen	?::projected
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9560 (Anfrage)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1250901.php
 #: by: https://berliner-abendblatt.de/2022/10/05/wie-soll-die-trabrennbahn-karlshorst-in-zukunft-aussehen-sie-entscheiden-mit/
-#: last_checked: 2022-08-14
+#: last_checked: 2022-10-16
 #: next_check: 2023-08-01
 Trabrennbahn Karlshorst: Wohngebiet geplant, werden hier auch neue Straßen entstehen?	?::projected 18598,7984 18460,7777 18892,7197 19013,7427 18598,7984
 # 

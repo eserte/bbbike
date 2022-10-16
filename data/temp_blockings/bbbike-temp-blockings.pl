@@ -25945,7 +25945,7 @@ EOF
        data  => <<EOF,
 #: XXX zweiter Bauabschnitt ab Ende August bis ca. 23.09.
 #: next_check: 2016-07-31
-	2::inwork 22084,5877 22070,5876 21846,5856 21744,5804 21618,5699 21605,5687
+	2::inwork 22084,5877 22070,5876 21846,5856 21744,5804 21651,5730 21618,5699 21605,5687
 EOF
      },
      { from  => 1469052000, # 2016-07-21 00:00
@@ -34429,7 +34429,7 @@ EOF
        text  => 'Braunschweiger Str. und Kanner Str.: Bauarbeiten, Einbahnstraßenregelung, voraussichtlich bis September 2022',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: BRAUNSCHWEIGER-2022
+# REMOVED (superseded) --- #: next_check_id: BRAUNSCHWEIGER-2022
 # REMOVED (mittlerweile nur noch "Vorfahrt vor dem Gegenverkehr", Richtung umgedreht) --- #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Kanner Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv --- #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv --- #: also_indoor: traffic (ex-G,ex-H(nur Niemetz),ex-B(nur Niemetz)) vvv --- #: last_checked: 2022-05-01 vvv --- #: check_frequency: 90d vvv --- #: next_check: 2022-09-30 vvv
 # REMOVED (hier nicht mehr) ---	q4::inwork; 13702,7418 13654,7380 13601,7366
 # REMOVED (falsches Ausschilderung, von Osten kommend kein Einfahrt-verboten-Schild) --- q4::inwork; 13601,7366 13519,7345 13476,7330
@@ -34490,15 +34490,15 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Jahnstr.: zwischen Priesterweg und Rungiusstr. Bauarbeiten, Fahrbahn kann gesperrt sein',
+       text  => 'Jahnstr.: zwischen Priesterweg und Rungiusstr. Bauarbeiten, Fahrbahn kann gesperrt sein (Stand Mitte Oktober 2022: außerhalb der Arbeitszeiten könnte die Durchfahrt möglich sein)',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (ex-B)
-#: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24 ebenso; Halteverbotsschilder bis 14.10.2022
+#: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: last_checked: 2022-09-24
+#: last_checked: 2022-10-16
 # REMOVED --- #: check_frequency: 14d
-#: next_check: 2022-10-14
+# REMOVED --- #: next_check: 2022-10-14
 # REMOVED (hier nicht mehr) ---	q4::inwork 13355,6235 13227,6209 13220,6237
 	q4::inwork 13027,6168 13227,6209
 EOF
@@ -34933,17 +34933,17 @@ EOF
        data  => <<EOF,
 #: next_check_id: BRAUNSCHWEIGER-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
-#: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022 vvv
+#: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
-#: last_checked: 2022-10-02 vvv
+#: last_checked: 2022-10-16 vvv
 #: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2022-09-30 vvv
+#: next_check: 2022-12-03 vvv
 #: also_indoor: traffic (G(unvollständig),B) vvv
 	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300 13476,7330
-	q4::inwork 13326,7291 13325,7210
+# REMOVED (offen) ---	q4::inwork 13326,7291 13325,7210
 	q4::inwork 13341,7423 13373,7426 13476,7330
 #: also_indoor ^^^
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -35830,7 +35830,7 @@ EOF
        data  => <<EOF,
 #: XXX einige Halteverbotsschilder bis 1.11.2022
 #: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
-#: last_checked: 2022-09-30 vvv
+#: last_checked: 2022-10-16 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-11-01 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
@@ -35927,7 +35927,7 @@ EOF
        source_id => 'viz2021:13.516327,52.486802,02.08.2022,07:00',
        data  => <<EOF,
 #: next_check_id: WALLENSTEIN-2022
-#: note: zurzeit Sperrung wohl nur während der Arbeitszeiten, Durchfahrt war möglich am: 2022-08-07 mittags, 2022-08-14 mittags, 2022-09-03 (Sa) nachmittags, 2022-10-09 (So) nachmittags vvv
+#: note: zurzeit Sperrung wohl nur während der Arbeitszeiten, Durchfahrt war möglich am: 2022-08-07 mittags, 2022-08-14 mittags, 2022-09-03 (Sa) nachmittags, 2022-10-09 (So) nachmittags, 2022-10-16 (So) mittags vvv
 Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
@@ -36414,10 +36414,10 @@ EOF
 #: next_check_id: LICHTENBERGERBRUECKEN-2022
 #: add_fragezeichen: Besteht die Sperrung im Archibaldweg weiterhin?
 #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren
-#: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag)
+#: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag)
 #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00
 #: also_indoor: traffic (B)
-#: last_checked: 2022-10-10
+#: last_checked: 2022-10-16
 #: check_frequency: 21d
 #: next_check: 2022-10-30
 	q3::inwork 15674,10851 15820,10916
@@ -36712,6 +36712,23 @@ EOF
        source_id => 'https://sbahn.berlin/fahren/bauen-stoerung/detail/neubau-der-moltkestrassenbruecke-am-s-bf-botanischer-garten-reparatur-bahnsteigdach-in-friedenau/',
        data  => <<EOF,
 	q4::inwork; 7073,8081 7139,8079 7268,8008
+EOF
+     },
+     { from  => 1665896400, # 2022-10-16 07:00
+       until => 1676390400, # 2023-02-14 17:00
+       text  => 'Grünberger Str.: Einbahnstraßenregelung zwischen Gubener Str. und Warschauer Str., offen Richtung Osten, evtl. sind auch Radfahrer betroffen, vom 17.10.2022 07:00 bis 14.02.2023 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.451202,52.512713,17.10.2022,07:00',
+       data  => <<EOF,
+#: by: https://nitter.cz/VIZ_Berlin/status/1580164107835125760#m (Einbahnstraße, offen Richtung Osten, ab 2022-10-17)
+#: by: https://nitter.cz/VIZ_Berlin/status/1580448626056519680#m (... bis 14.02.2023)
+#: XXX Außerdem: wird es wegen der Umleitung des 240er in der (engen) Kopernikusstraße zu einer Einbahnstraßenregelung kommen? Zumindest wird es einige Halteverbotsschilder geben
+#: source_id: bvg2021:240#BVG310117_0
+#: source_id: bvg2021:n40#BVG310118_0
+#: priority: #A
+#: last_checked: 2022-10-14
+#: next_check: 2022-10-17
+	q4::inwork; 13696,11920 13515,11969 13352,12003
 EOF
      },
     );

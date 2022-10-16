@@ -1086,7 +1086,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-10-07 vvv
+#: last_checked: 2022-10-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1207,6 +1207,9 @@ Gehweg für Radfahrer frei	RW1; -1872,24336 -1746,24219
 #: by: https://berliner-abendblatt.de/2022/08/29/radweg-paulsternstrasse-wird-ertuechtigt/
 #: XXX Asphaltierung der Radwege
 #: next_check: 2022-10-15
+#: osm_watch: way id="249163487" version="14"
+#: osm_watch: way id="838509358" version="6"
+#: osm_watch: way id="980133623" version="1"
 	RW2;RW2 -344,15200 -343,15113 -315,14933 -284,14738 -278,14532
 unebenes Verbundsteinpflaster	RW1;RW9 449,15654 525,15435 559,15342 613,15195 651,15091 717,14894 741,14827 778,14713 838,14530 842,14518 862,14463 889,14392
 	RW1;RW2 2095,11440 2082,11554
@@ -4446,7 +4449,7 @@ Grünbeschichtung	RW4; 13891,7107 13627,7047 13500,7018 13336,6986
 Grünbeschichtung	RW3; 13336,6986 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2022-10-02 vvv
+#: last_checked: 2022-10-16 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2023-06-30 vvv
 #: valid: 20140224-20230630 vvv
