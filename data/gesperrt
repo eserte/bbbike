@@ -923,6 +923,9 @@ Schönegarten: verschlossene Tore an beiden Enden	2 7416,10492 7432,10546 7330,10
 Parchimer Allee	1 14466,4624 14427,4571
 Parchimer Allee	1 14427,4571 14425,4593 14454,4626 14466,4624
 Feldrain	1s 25684,13172 25632,13214 25609,13232 25607,13459
+Bitterfelder Str. (Richtungsfahrbahn)	1::igndisp 20397,16621 20382,16582 20358,16560 20328,16546 20230,16560
+Bitterfelder Str. (Richtungsfahrbahn)	1::igndisp 20230,16560 20325,16551 20354,16563 20379,16585 20397,16621
+Bitterfelder Str. (Mittelstreifen)	3nocross::ignrte 20230,16560 20328,16546 20358,16560 20382,16582 20397,16621
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1986,9 +1989,11 @@ Lessingstr. -> Lessingstr.: unpassierbarer Mittelstreifen	3::igndisp 6172,12878 
 Lessingstr. -> südliches Spreeufer: unpassierbarer Mittelstreifen	3::igndisp 6172,12878 6150,12875 6138,12877
 südliches Spreeufer -> Lessingstr.: unpassierbarer Mittelstreifen	3::igndisp 6138,12877 6150,12875 6157,12933
 südliches Spreeufer -> Lessingstr.: unpassierbarer Mittelstreifen	3::igndisp 6138,12877 6150,12875 6172,12878
-Linksabbiegen verboten	3nocross::ignrte 20120,16297 20232,16522 20323,16706
-Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20286,16494 20232,16522 20120,16297
-Märkische Allee -> Alfred-Döblin-Str.: Linksabbiegen verboten	3::igndisp 20323,16706 20232,16522 20286,16494
+Mittelstreifen	3nocross::ignrte 20120,16297 20232,16522 20242,16543 20323,16706
+Alfred-Döblin-Str. -> Märkische Allee: Mittelstreifen	3::igndisp 20286,16494 20232,16522 20120,16297
+Märkische Allee -> Alfred-Döblin-Str.: Mittelstreifen	3::igndisp 20242,16543 20232,16522 20286,16494
+Rampe Bitterfelder Brücke -> Märkische Allee: Mittelstreifen	3::igndisp 20267,16539 20242,16543 20232,16522
+Märkische Allee -> Rampe Bitterfelder Brücke: Mittelstreifen	3::igndisp 20323,16706 20242,16543 20267,16539
 Linksabbiegen verboten	3nocross::ignrte 20516,17088 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21009,18055
 zur Märkischen Allee -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20727,17558 20691,17463 20717,17516
 Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20853,17528 20717,17516 20691,17463
@@ -3245,6 +3250,7 @@ Drängelgitter	BNP:2:-126:trailer=7 -4234,11408
 Schranke	BNP:5:-188:trailer=15 23221,15226
 Schranke	BNP:3:-207:trailer=10 -1486,16789
 Schranke	BNP:1:-52:trailer=3 14967,4641
+(Fortsetzung Wandlitzstr.): gesperrt, Bauzäune	2::inwork 17981,9000 17837,9086
 Marktplatz Adlershof: gesperrt wegen Umbauarbeiten	2::inwork 20336,3783 20290,3756
 Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 13333,9929 13271,9927 13225,9897 13109,9743 12905,9470
 Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9929 16178,9861

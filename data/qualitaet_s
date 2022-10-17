@@ -2335,14 +2335,16 @@ Bleckmannweg: kleinteiliges Kopfsteinpflaster	Q1 15658,12231 15756,12212
 Hoenerweg: kleinteiliges Kopfsteinpflaster	Q1 15668,12304 15790,12289 15896,12273
 (Verlängerte Borkheider Str.): Verbundsteinpflaster	Q1 21555,17546 21571,17587 21619,17691
 (Verlängerte Borkheider Str.): Beton	Q1 21619,17691 21663,17795
-Alfred-Döblin-Str.: Beton	Q0 20487,16392 20328,16473 20286,16494 20232,16522
+Alfred-Döblin-Str.: Beton	Q0 20487,16392 20286,16494 20232,16522
 (S-Bhf. Raoul-Wallenberg-Str. - Alfred-Döblin-Str.): Beton	Q0 20198,16322 20286,16494
-(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Beton	Q0 20328,16473 20342,16499 20429,16482 20520,16479 20547,16485
-(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): alter Asphalt mit einigen Hebungen	Q1 20547,16485 20815,16469 20851,16454
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Asphalt	Q0 20342,16499 20395,16481 20409,16486 20520,16479 20547,16485
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Asphalt	Q0 20547,16485 20815,16469 20851,16454
 (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Beton	Q0 20851,16454 20898,16420
-(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): neuer Asphalt mit einigen Aufpflasterungen	Q1 20898,16420 20923,16435 21051,16417
-(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Verbundsteinpflaster	Q1 21051,16417 21124,16421
-(Kinderbad Platsch - Max-Herrmann-Str.): Verbundsteinpflaster	Q1 21124,16421 21177,16499 21238,16627
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): neuer Asphalt mit einigen Aufpflasterungen	Q1 20898,16420 20923,16435 20996,16429
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Asphalt	Q0 20996,16429 21070,16415
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Verbundsteinpflasterstreifen	Q1 21070,16415 21107,16418
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Parkweg	Q1 21107,16418 21129,16426
+(Kinderbad Platsch - Max-Herrmann-Str.): Verbundsteinpflaster	Q1 21129,16426 21176,16480 21177,16499 21238,16627
 (Bürgerpark Marzahn): asphaltähnlicher Belag	Q0 20898,16420 21020,16298
 Wuhlewanderweg: Kleinpflastersteine	Q1 22771,16194 22717,16142
 Wuhlewanderweg: guter Beton (zweispurig)	Q0 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22441,15118
@@ -18044,6 +18046,10 @@ Löwenstammstr.: Asphalt	Q0 -7961,15552 -7865,15867
 Leopoldstr. (Lichtenberg): Kopfsteinpflaster	Q2 15945,10984 16192,10907 16349,10860 16425,10839
 Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
+(Rampe Bitterfelder Brücke): Asphalt	Q0 20409,16486 20389,16502 20343,16516 20328,16546
+(Rampe Bitterfelder Brücke): Asphalt	Q0 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539 20276,16519 20296,16512 20342,16499
+(Rampe Bitterfelder Brücke - Märkische Allee): Asphalt	Q0 20267,16539 20242,16543
+(Rampe Bitterfelder Brücke - Alfred-Döblin-Str.): Asphalt	Q0 20296,16512 20286,16494
 (Amselhainer Weg - Hirschfelder Weg): Betonplatten	Q0 21886,15594 21892,15637
 (Bollersdorfer Weg - Amselhainer Weg): Verbundsteinpflaster	Q0 21849,15404 21860,15458
 Blankenburger Chaussee [zur Straße 47]: Asphalt	Q0 14650,21649 14670,21720 14697,21760 14746,21828 14742,21843

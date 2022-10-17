@@ -31035,7 +31035,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-10-12
+#: last_checked: 2022-10-17
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -34224,7 +34224,7 @@ EOF
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
-#: last_checked: 2022-10-10 vvv
+#: last_checked: 2022-10-17 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -34983,7 +34983,7 @@ EOF
        text  => 'Stadtpark Lichtenberg: Bauarbeiten, Wege können gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: STADTPARKLICHTENBERG-2022
+# REMOVED (Bauarbeiten beendet) --- #: next_check_id: STADTPARKLICHTENBERG-2022
 # REMOVED --- #: priority: #B --- #: last_checked: 2022-03-21 --- #: check_frequency: 7d
 	2::inwork 15457,12449 15454,12519
 EOF
@@ -35444,9 +35444,8 @@ EOF
 #: by: https://www.deutsches-architekturforum.de/thread/14258-bauprojekte-in-charlottenburg-nordost/?postID=717436#post717436
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="791796343" version="4"
-#: last_checked: 2022-09-16
-#: check_frequency: 90d
-#: next_check: 2022-10-31
+#: last_checked: 2022-10-17 (daf)
+#: check_frequency: 30d
 	q4::inwork 4961,12940 4932,12968
 EOF
      },
@@ -36608,6 +36607,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.youtube.com/watch?v=-UWvhPunrr8 (Sperrung der Fußgängerbrücke wegen Bauarbeiten ab November 2022)
+#: by: https://www.berliner-woche.de/westend/c-bauen/rohbau-fuer-neues-ausbildungszentrum-fertig_a360518 (Haben die Bauarbeiten hier etwas damit zu tun? Fertigstellung Herbst 2023)
 #: XXX Bis wann bleibt die Sperrung?
 #: next_check: 2022-12-31
 	2::inwork -107,12220 -76,12236 -45,12243
@@ -36625,12 +36625,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Uhlandstr.: Fahrbahn zwischen Lessingstr. und Friedhof gesperrt',
+       text  => 'Uhlandstr.: Fahrbahn zwischen Lessingstr. und Friedhof kann wegen Bauarbeiten gesperrt sein',
        type  => 'handicap',
        data  => <<EOF,
+#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2022-10-07 (mapillary) vvv
+#: last_checked: 2022-10-16 (mapillary) vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: last_checked ^^^
@@ -36716,19 +36717,66 @@ EOF
      },
      { from  => 1665896400, # 2022-10-16 07:00
        until => 1676390400, # 2023-02-14 17:00
-       text  => 'Grünberger Str.: Einbahnstraßenregelung zwischen Gubener Str. und Warschauer Str., offen Richtung Osten, evtl. sind auch Radfahrer betroffen, vom 17.10.2022 07:00 bis 14.02.2023 17:00',
+       text  => 'Grünberger Str.: Einbahnstraßenregelung zwischen Kadiner Str. und Warschauer Str., offen Richtung Osten, auch Radfahrer sind betroffen, vom 17.10.2022 07:00 bis 14.02.2023 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.451202,52.512713,17.10.2022,07:00',
        data  => <<EOF,
+#: next_check_id: GRUENBERGER-2022
 #: by: https://nitter.cz/VIZ_Berlin/status/1580164107835125760#m (Einbahnstraße, offen Richtung Osten, ab 2022-10-17)
 #: by: https://nitter.cz/VIZ_Berlin/status/1580448626056519680#m (... bis 14.02.2023)
-#: XXX Außerdem: wird es wegen der Umleitung des 240er in der (engen) Kopernikusstraße zu einer Einbahnstraßenregelung kommen? Zumindest wird es einige Halteverbotsschilder geben
+#: XXX Bleibt es bei der Einbahnstraßenregelung auch für Radfahrer?
+# REMOVED (nein) --- #: XXX Außerdem: wird es wegen der Umleitung des 240er in der (engen) Kopernikusstraße zu einer Einbahnstraßenregelung kommen? Zumindest wird es einige Halteverbotsschilder geben
 #: source_id: bvg2021:240#BVG310117_0
 #: source_id: bvg2021:n40#BVG310118_0
+#: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-10-14
-#: next_check: 2022-10-17
-	q4::inwork; 13696,11920 13515,11969 13352,12003
+#: last_checked: 2022-10-17
+#: check_frequency: 30d
+#: next_check: 2023-02-14
+	q4::inwork; 13696,11920 13515,11969
+# REMOVED (hier nicht) ---	q4::inwork; 13515,11969 13352,12003
+EOF
+     },
+     { from  => 1665940464, # 2022-10-16 19:14
+       until => 1676660400, # 2023-02-17 20:00
+       text  => 'Jonny-K.-Aktivpark/Egelpfuhlwiesen: wegen Bauarbeiten ist der Hauptweg gesperrt, voraussichtlich bis Mitte Februar 2023',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1255376.php',
+       data  => <<EOF,
+	2::inwork -5554,12929 -5493,12994 -5446,13137 -5472,13235
+EOF
+     },
+     { from  => 1666476000, # 2022-10-23 00:00
+       until => 1669417199, # 2022-11-25 23:59
+       text  => 'Müggelschlößchenweg: Bauarbeiten, Sperrung, 24. Oktober 2022 bis 25. November 2022',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1255224.php',
+       data  => <<EOF,
+	2::inwork 25385,4414 25132,4385 24181,4270
+EOF
+     },
+     { from  => 1665942194, # 2022-10-16 19:43
+       until => 1697565600, # 2023-10-17 20:00
+       text  => 'Mauerweg: Bauarbeiten im Bereich Lichterfelde und Marienfelde, abschnittsweise ist der Mauerweg gesperrt, bis Herbst 2023',
+       type  => 'gesperrt',
+       source_id => 'https://www.berliner-woche.de/tempelhof-schoeneberg/c-bauen/bauarbeiten-an-der-berliner-stadtgrenze-sollen-ein-jahr-lang-dauern_a360599',
+       data  => <<EOF,
+#: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-beginn-der-baumassnahmen-am-jenbacher-weg
+#: XXX Wo genau sind die gesperrten Bereiche? vvv
+Mauerweg Marienfelde - Lichterfelde	2::inwork 7097,-527 6961,-389 6668,-100 6498,71 6351,219 6256,363 6204,331 6013,211 5832,93 5441,-150 4842,-547 4596,-707 4406,-910
+Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 7593,-1034 7142,-568
+#: XXX ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Bitterfelder Brücke - Max-Hermann-Str.: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: mapillary
+#: Wann sind die Bauarbeiten beendet? Wird der Weg neu asphaltiert sein?
+#: last_checked: 2022-10-16
+	2::inwork 20996,16429 20923,16435 20898,16420
 EOF
      },
     );

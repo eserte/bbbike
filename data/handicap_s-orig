@@ -288,7 +288,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-08-30
+#: last_checked: 2022-10-17 (daf)
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -558,10 +558,10 @@ Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg,
 Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 6692,13333 6674,13332 6535,13327 6377,13321
 # REMOVED (hier nicht) --- Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 6377,13321 6228,13324
 #: osm_watch: way id="30195541" version="28"
-#: last_checked: 2022-10-03
+#: last_checked: 2022-10-16 (bahninfo-forum)
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: last_checked ^^^
-#: last_checked: 2022-10-03
+#: last_checked: 2022-10-16 (bahninfo-forum)
 Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
 #: check_frequency ^^^
 #: next_check ^^^
@@ -744,7 +744,7 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 #: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023
 #: XXX Einbahnstraßenregelung nach den Bauarbeiten wiederherstellen
 #: also_indoor: traffic (G)
-#: last_checked: 2022-10-10
+#: last_checked: 2022-10-17
 #: check_frequency: 90d
 #: next_check: 2023-10-31
 Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,12420 15457,12449
@@ -757,7 +757,7 @@ Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,124
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
 #: XXX Laut Schild des Bezirksamts Umgestaltung bis August 2023 (!)
 #: also_indoor: traffic (ex-G(unvollständig),H(falsch),B)
-#: last_checked: 2022-10-10 vvv
+#: last_checked: 2022-10-17 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2023-08-31 vvv
 Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,12280 16159,12301
@@ -917,7 +917,7 @@ Moltkestraßenbrücke: für Fußgänger existiert eine Behelfsbrücke	q3::inwork 3839,
 #: XXX nicht der gesamte Abschnitt ist gesperrt, deshalb q3 statt q4
 #: osm_watch: way id="164816805" version="11"
 #: priority: #C
-#: last_checked: 2022-09-17
+#: last_checked: 2022-10-17
 #: check_frequency: 30d
 Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 13702,13634 13711,13615 13769,13487
 # 
@@ -925,12 +925,12 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021) (vermutlich inaktiv)
-#: osm_watch: way id="885619857" version="12"
-#: osm_watch: way id="885619858" version="7"
+#: osm_watch: way id="885619857" version="13"
+#: osm_watch: way id="885619858" version="8"
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (ex-G,B)
 #: priority: #B
-#: last_checked: 2022-10-04 (osm) vvv
+#: last_checked: 2022-10-15 (osm) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -1759,11 +1759,13 @@ S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20120,16258 20110,16230 20125,16255
 S-Bhf. Raoul-Wallenberg-Str. - Märkische Allee: einige Fußgänger	q2 20133,16256 20120,16297
 # REMOVED (beide Bordsteine sind abgesenkt) --- #: XXX wo genau sind die Bordsteine, auf beiden Seiten?
 (S-Bhf. Raoul-Wallenberg-Str. - Alfred-Döblin-Str.): Fußgänger	q2 20120,16297 20198,16322
-(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fußgänger	q1 20328,16473 20342,16499 20429,16482 20520,16479 20547,16485 20815,16469 20851,16454 20898,16420 20923,16435 21051,16417 21124,16421
+# REMOVED --- (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fußgänger	q1 20328,16473 20342,16499
+# REMOVED --- (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fußgänger	q1 20342,16499 20395,16481 20409,16486 20520,16479 20547,16485 20815,16469 20851,16454 20898,16420
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Fußgänger	q1 20898,16420 20923,16435 20996,16429 21070,16415 21107,16418 21129,16426
 #: XXX_prog BS (am Wendehammer, ohne q2)
 (Otto-Rosenberg-Platz - Unterführung S-Bhf. Raoul-Wallenberg-Str.): Bordstein, einige Fußgänger	q3 19991,16322 20036,16299
 (Unterführung S-Bhf. Raoul-Wallenberg-Str.): einige Fußgänger	q2 20036,16299 20050,16292 20120,16258
-(Kinderbad Platsch - Max-Herrmann-Str.): Fußgänger	q1 21124,16421 21177,16499 21238,16627
+(Kinderbad Platsch - Max-Herrmann-Str.): Fußgänger	q1 21129,16426 21176,16480 21177,16499 21238,16627
 (Bürgerpark Marzahn): einige Fußgänger	q1 20898,16420 21020,16298
 (oberer Wuhlewanderweg - Alte Hellersdorfer Str.): einige Fußgänger	q1 22851,14603 22876,14594 23057,14582
 Wuhlewanderweg: Fußgänger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22441,15118
@@ -4266,6 +4268,7 @@ Theodorpark: einige Fußgänger	q2 25017,10767 25018,10747 25022,10715
 #: note: inkonsistente Beschilderung: am südlichen Ende explizites Gehweg-Schild, am nördliches Ende gar nichts, zwischendurch einige Grünanlagen-Schilder ohne Zusatzschilder
 Spandauer Havelpromenade: einige Fußgänger	q2 -1871,16788 -1895,16675 -1920,16476 -1928,16423
 Späthstr.: Gehweg	q3 14028,5325 14063,5313
+Straßenbahnübergang	q3 21176,16480 21181,16479 21183,16467 21192,16466
 # 
 ######################### User Contributions #################################
 # 

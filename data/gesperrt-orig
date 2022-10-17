@@ -1422,6 +1422,9 @@ Parchimer Allee	1 14427,4571 14425,4593 14454,4626 14466,4624
 Feldrain	1s:q4 25684,13172 25632,13214 25609,13232 25607,13459
 # REMOVED --- #: begin_check ^^^ --- #: XXX ^^^
 # 
+Bitterfelder Str. (Richtungsfahrbahn)	1::igndisp 20397,16621 20382,16582 20358,16560 20328,16546 20230,16560
+Bitterfelder Str. (Richtungsfahrbahn)	1::igndisp 20230,16560 20325,16551 20354,16563 20379,16585 20397,16621
+Bitterfelder Str. (Mittelstreifen)	3nocross::ignrte 20230,16560 20328,16546 20358,16560 20382,16582 20397,16621
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -2109,7 +2112,7 @@ Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12562,8432 12545,8
 Karl-Marx-Str.: unbequemes Überqueren wegen parkender Autos	3nocross 12846,7981 12865,7923 12892,7850
 Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632,8302 11767,8330 11898,8362
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6164,12980 6157,12933 6150,12875 6124,12694
-Märkische Allee: Linksabbiegen verboten	3nocross 20120,16297 20232,16522 20323,16706
+Märkische Allee: Mittelstreifen	3nocross 20120,16297 20232,16522 20242,16543 20323,16706
 Märkische Allee: Linksabbiegen verboten	3nocross 20516,17088 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21009,18055
 Märkische Allee: Mittelstreifen	3nocross 19900,11697 19924,11890 19934,11977 19946,12075 19951,12114 19954,12140 19958,12177 19962,12222 19967,12270 19982,12405 19994,12484
 # REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17482,17844 17579,17908 17675,17971 17744,18016 17843,18078
@@ -3440,6 +3443,10 @@ Schranke	BNP:1::trailer=3 14967,4641
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: priority: #D
+#: last_checked: 2022-10-16
+(Fortsetzung Wandlitzstr.): gesperrt, Bauzäune	2::inwork 17981,9000 17837,9086
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1232282.php (erster Bauabschnitt bis 2. Quartal 2023)
 #: by: https://berliner-abendblatt.de/2022/08/04/marktplatz-adlershof-baumassnahmen-haben-begonnen/

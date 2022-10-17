@@ -576,7 +576,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
-#: osm_watch: way id="4606258" version="26"
+#: osm_watch: way id="4606258" version="27"
 #: osm_watch: way id="184077626" version="16"
 #: osm_watch: way id="49180827" version="20"
 #: last_checked: 2022-09-15 (mapillary)
@@ -1062,7 +1062,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-10-14
+#: last_checked: 2022-10-17
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3169,14 +3169,22 @@ Bleckmannweg: kleinteiliges Kopfsteinpflaster	Q1 15658,12231 15756,12212
 Hoenerweg: kleinteiliges Kopfsteinpflaster	Q1 15668,12304 15790,12289 15896,12273
 (Verlängerte Borkheider Str.): Verbundsteinpflaster	Q1 21555,17546 21571,17587 21619,17691
 (Verlängerte Borkheider Str.): Beton	Q1+ 21619,17691 21663,17795
-Alfred-Döblin-Str.: Beton	Q0 20487,16392 20328,16473 20286,16494 20232,16522
+Alfred-Döblin-Str.: Beton	Q0 20487,16392 20286,16494 20232,16522
 (S-Bhf. Raoul-Wallenberg-Str. - Alfred-Döblin-Str.): Beton	Q0 20198,16322 20286,16494
-(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Beton	Q0- 20328,16473 20342,16499 20429,16482 20520,16479 20547,16485
-(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): alter Asphalt mit einigen Hebungen	Q1- 20547,16485 20815,16469 20851,16454
+# REMOVED --- x(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Beton	Q0- 20328,16473 20342,16499
+#: corrected_by: mapillary (Beton, Q0- -> ..., neu gemacht)
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Asphalt	Q0 20342,16499 20395,16481 20409,16486 20520,16479 20547,16485
+#: corrected_by: mapillary (alter Asphalt mit einigen Hebungen, Q1- -> ..., neu gemacht)
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Asphalt	Q0 20547,16485 20815,16469 20851,16454
 (S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Beton	Q0- 20851,16454 20898,16420
-(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): neuer Asphalt mit einigen Aufpflasterungen	Q1+ 20898,16420 20923,16435 21051,16417
-(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Verbundsteinpflaster	Q1 21051,16417 21124,16421
-(Kinderbad Platsch - Max-Herrmann-Str.): Verbundsteinpflaster	Q1 21124,16421 21177,16499 21238,16627
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): neuer Asphalt mit einigen Aufpflasterungen	Q1+ 20898,16420 20923,16435 20996,16429
+#: corrected_by: mapillary (Verbundsteinpflaster, Q1 -> ..., neu gemacht)
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Asphalt	Q0 20996,16429 21070,16415
+#: note: neben Kopfsteinpflaster
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Verbundsteinpflasterstreifen	Q1- 21070,16415 21107,16418
+#: corrected_by: mapillary (Verbundsteinpflaster, Q1 -> ...)
+(S-Bhf. Raoul-Wallenberg-Str. - Kinderbad Platsch): Parkweg	Q1- 21107,16418 21129,16426
+(Kinderbad Platsch - Max-Herrmann-Str.): Verbundsteinpflaster	Q1 21129,16426 21176,16480 21177,16499 21238,16627
 (Bürgerpark Marzahn): asphaltähnlicher Belag	Q0 20898,16420 21020,16298
 Wuhlewanderweg: Kleinpflastersteine	Q1- 22771,16194 22717,16142
 Wuhlewanderweg: guter Beton (zweispurig)	Q0 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22441,15118
@@ -5157,6 +5165,9 @@ Straße zum Müggelhort: Asphalt	Q0 28729,3084 28715,3198 28751,3243 28853,3279 28
 (Zum Hotel Müggelsee): Beton	Q0- 26713,2064 26805,2381 26836,2480 26859,2596
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bezirk-warnt-mit-verkehrsschild-vor-schaeden-auf-dem-europaradweg-r1_a325556 (die Schäden sind anscheinend größer geworden: Q0- -> Q1+)
 #: by: https://media04.berliner-woche.de/article/2021/10/18/7/378737_XXL.jpg?1635504364
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1255224.php (Instandsetzung)
+#: XXX Ist die Fahrbahn östlich der Bus-Endhaltestelle nach den Bauarbeiten besser geworden?
+#: next_check: 2022-11-25
 Müggelschlößchenweg: Asphalt, einige Wurzelhebungen	Q1+ 25385,4414 25132,4385 24181,4270 24135,4264 23879,4233 23753,4218
 Müggelschlößchenweg: Beton	Q0 23753,4218 23658,4208 23453,4181 23435,4179
 Strandschloßweg: Asphalt	Q0 23368,3894 23439,3892 23467,3891 23749,3883
@@ -10911,7 +10922,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 #: next_check_id: STADTPARKLICHTENBERG-2022
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX Wird sich nach den Bauarbeiten hier etwas ändern?
-#: last_checked: 2022-09-27
+#: last_checked: 2022-10-17
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-12-31
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
@@ -24802,11 +24813,13 @@ Muttlerweg: Asphalt	Q0 10576,2683 10612,2675 10603,2626 10716,2597
 Grünsteinweg: Beton mit Asphaltflicken	Q1- 10886,2167 10907,2207 10938,2296
 Kreideweg: guter Asphalt	Q0 10748,2233 10840,2196 10886,2167
 #: confirmed_by: srt 
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-bauen/bauarbeiten-an-der-berliner-stadtgrenze-sollen-ein-jahr-lang-dauern_a360599
 #: XXX wird der Weg hier verbessert, im Zuge von Berlin-Leipzig?
 #: XXX Baumaßnahme GL6.24 (Realisierung nach 2011)
 #: osm_watch: way id="26714602" version="6"
 #: last_checked: 2022-03-07
-#: check_frequency: 300d
+# REMOVED --- #: check_frequency: 300d
+#: next_check: 2023-10-17
 (Jenbacher Weg - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	Q2 6233,412 6256,363
 #: by: ^^^
 # 
@@ -30354,8 +30367,10 @@ Kindelbergweg: Beton	Q0 6632,1482 6601,1471 6560,1473
 # 
 #: XXX wird hier die Qualität verbessert?
 #: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-bauen/bauarbeiten-an-der-berliner-stadtgrenze-sollen-ein-jahr-lang-dauern_a360599
 #: last_checked: 2022-09-04
-#: check_frequency: 120d
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2023-10-17
 (Mauerweg Lichtenrade - Marienfelde): Asphalt mit Fugen	Q1+ 8310,-2037 8379,-1524 7875,-1247 7593,-1034 7142,-568
 # 
 (Mauerweg Lichtenrade - Marienfelde): Asphalt	Q0 7142,-568 7176,-515 7175,-479 7164,-473 7146,-466 7097,-527
@@ -30363,9 +30378,10 @@ Kindelbergweg: Beton	Q0 6632,1482 6601,1471 6560,1473
 #: XXX wird hier die Qualität verbessert?
 #: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html
 #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-baustart-fuer-aufwertung-des-historischen-rundwegs (Länge: 6 km, geplanter Baustart: Oktober 2022)
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-bauen/bauarbeiten-an-der-berliner-stadtgrenze-sollen-ein-jahr-lang-dauern_a360599
 #: last_checked: 2022-09-04
-#: check_frequency: 120d
-#: next_check: 2022-10-31
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2023-10-17
 (Mauerweg Marienfelde - Lichterfelde): Asphalt mit Fugen	Q1+ 7097,-527 6961,-389 6668,-100 6498,71 6351,219 6256,363 6204,331 6013,211 5832,93 5441,-150 4842,-547 4596,-707 4406,-910
 # 
 #: corrected_by: srt (Q1 -> Q1-)
@@ -30836,6 +30852,10 @@ Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
 # 
 #: by: mapillary: vvv
+(Rampe Bitterfelder Brücke): Asphalt	Q0 20409,16486 20389,16502 20343,16516 20328,16546
+(Rampe Bitterfelder Brücke): Asphalt	Q0 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539 20276,16519 20296,16512 20342,16499
+(Rampe Bitterfelder Brücke - Märkische Allee): Asphalt	Q0 20267,16539 20242,16543
+(Rampe Bitterfelder Brücke - Alfred-Döblin-Str.): Asphalt	Q0 20296,16512 20286,16494
 (Amselhainer Weg - Hirschfelder Weg): Betonplatten	Q0- 21886,15594 21892,15637
 (Bollersdorfer Weg - Amselhainer Weg): Verbundsteinpflaster	Q0- 21849,15404 21860,15458
 Blankenburger Chaussee [zur Straße 47]: Asphalt	Q0 14650,21649 14670,21720 14697,21760 14746,21828 14742,21843
