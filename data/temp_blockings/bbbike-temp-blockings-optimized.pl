@@ -5019,11 +5019,11 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_29_1829_2008_online.pdf (zum bereits eingezogenen Abschnitt des Mergenthalerrings)
 #: note: Durchfahrt möglich, gesehen: 2022-03-23 (Mi) mittags, 2022-05-04 (Mi) mittags, 2022-07-06 (Mi) mittags, 2022-08-05 (Fr) vormittags
-#: note: Bauzaun am südlichen Ende geschlossen, gesehen: 2022-09-21 (Mi) abends (19:40)
+#: note: Bauzaun am südlichen Ende geschlossen, gesehen: 2022-09-21 (Mi) abends (19:40), 2022-10-18 (Di) abends (17:40)
 #: XXX Bleibt es bei der möglichen Durchfahrt?
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2022-09-21
+#: last_checked: 2022-10-18
 	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 ',
          'from' => undef,
@@ -5060,13 +5060,13 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: note: Baustelle existiert weiterhin, trotz der entfernten VIZ-Meldung; laut rbb bis 30.11.2022
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
 #: also_indoor: traffic (G,H,B) vvv
-#: last_checked: 2022-10-05 vvv
+#: last_checked: 2022-10-18 vvv
 #: check_frequency: 30d vvv
-# REMOVED --- #: next_check: 2022-08-02 vvv
+#: next_check: 2022-11-30 vvv
 	q4::inwork; 15560,7400 15693,7512
 #: note: teilweise ragt die Baustellenabsperrung in den Radweg Richtung Kiefholzstraße rein
 	q3::inwork; 15693,7512 15560,7400
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -5119,7 +5119,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: next_check_id: HAENSEL-2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-G(falsch))
-#: last_checked: 2022-10-05
+#: last_checked: 2022-10-18
 	q4::inwork; 15436,7031 15555,7133 15695,7254
 ',
          'from' => undef,
@@ -5996,6 +5996,7 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
        {
          'data' => '#: next_check_id: TRIFTGERICHT-2022
 #: XXX Sind Radfahrer tatsächlich von den Sperrungen betroffen? vvv
+#: also_indoor: traffic (B) vvv
 #: begin_check: 2022-10-17 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-10-17 vvv
@@ -6007,6 +6008,7 @@ Ruheplatzstr.	q3::inwork 7627,15412 7540,15566
 #: next_check ^^^
 #: check_frequency ^^^
 #: begin_check ^^^
+#: also_indoor ^^^
 #: XXX ^^^
 ',
          'from' => 1665871200,
@@ -6096,6 +6098,18 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'id' => 3658,
          'text' => 'Bitterfelder Brücke - Max-Hermann-Str.: Bauarbeiten, Weg gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: source_id: AdB/21-11-00135 (inaktiv)
+#: osm_watch: way id="175828136" version="8"
+#: add_fragezeichen: Wann ist die Brücke wieder offen?
+#: last_checked: 2022-10-17 (mapillary, Asphaltierungsarbeiten)
+	2::inwork 5752,30817 5787,30867
+',
+         'from' => undef,
+         'id' => 3659,
+         'text' => 'Schönfließ - Summt: Brücke über die A10 wird neu gebaut, Ende der Bauarbeiten unbekannt',
          'until' => undef
        }
      

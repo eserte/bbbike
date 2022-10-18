@@ -2447,12 +2447,14 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 (provisorische Umfahrung)	NN 14310,7022 14276,7021 14245,7037 14236,7058 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2022-09-24 vvv
+#: last_checked: 2022-10-18 vvv
 #: check_frequency: 90d vvv
+#: next_check: 2022-12-31 vvv
 #: valid: 20140224-20221231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
 #: valid: !20140224-20221231
 Neuköllnische Allee	N 14344,7003 14567,6810 14724,6668
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -13890,7 +13892,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED (Verschwenkung realisiert) --- #: XXX Verschwenkung der Bergiusstr. --- #: XXX nach den Bauarbeiten: Bergiusstr. führt direkt zur Grenzallee, ebenso neu: Ampel an der Anschlussstelle --- #: XXX wahrscheinlich ist auch die alte Ampel abgeschaltet? --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/A100_UmbauAusfahrtGrenzallee.pdf --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5044.html --- #: prio: #A --- #: next_check: 2013-08-23
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
 # REMOVED --- #: last_checked: 2021-03-30 --- #: check_frequency: 90d --- #: next_check: 2021-12-31 --- #: next_check: 2021-04-02 --- (Zufahrt zur Bergiusstr.)	NN 14051,6731 14106,6663
-#: last_checked: 2022-09-24 vvv
+#: last_checked: 2022-10-18 vvv
 #: check_frequency: 90d vvv
 #: XXX im Zuge des A100-Ausbaus wird die Bergiusstr. verschwenkt
 Bergiusstr.	H 14051,6731 14106,6663
@@ -13906,7 +13908,7 @@ Bergiusstr.	N 14106,6663 14150,6609 14193,6556 14366,6337
 Bergiusstr.	N 14366,6337 14396,6298 14398,6184
 Willstätterstr.	N 14193,6556 14306,6651
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2022-09-24 vvv
+#: last_checked: 2022-10-18 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Haberstr.	H 14366,6337 14564,6496 14639,6577 14724,6668
@@ -14378,6 +14380,7 @@ Schlosserweg	N 13168,2931 13129,2999 13048,3134 12726,3684 12724,3746 12663,3762
 (Treptower Park, mittlerer Weg)	NN 15184,9373 15249,9337
 (Treptower Park, Diagonalverbindung)	NN 14443,9731 14371,9726 14318,9688
 (mittlerer Weg - Rosengarten)	NN 14695,9587 14705,9578
+#: osm.highway: service
 (mittlerer Weg - Rosengarten)	N 14705,9578 14791,9537
 (mittlerer Weg - Rosengarten)	NN 14791,9537 14823,9523 14837,9517
 (Treptower Hafen)	NN 14889,9660 14807,9704 14635,9786 14500,9863 14467,9887
