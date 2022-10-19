@@ -63,8 +63,12 @@ $net->make_net;
 }
 
 {
-    my($pos,$rueckwaerts) = $net->nearest_street("-99999999,-99999999", "9999999,9999999");
+    my $inv_pos1 = "-99999999,-99999999";
+    my $inv_pos2 = "9999999,9999999";
+    my($pos,$rueckwaerts) = $net->nearest_street($inv_pos1, $inv_pos2);
     ok !defined $pos, 'We have no result';
+    ok !exists $net->{Net}->{$inv_pos1}, 'no autovivify of invalid position 1';
+    ok !exists $net->{Net}->{$inv_pos2}, 'no autovivify of invalid position 2';
 }
 
 {

@@ -1520,11 +1520,11 @@ sub new_search {
 sub nearest_street {
     my($self, $c1, $c2) = @_;
     my $rueckwaerts = 0;
-    my @neighbors = keys %{ $self->{Net}{$c1} };
+    my @neighbors = exists $self->{Net}{$c1} ? keys %{ $self->{Net}{$c1} } : ();
     if (!@neighbors) {
 	($c1, $c2) = ($c2, $c1);
 	$rueckwaerts = 1;
-	@neighbors = keys %{ $self->{Net}{$c1} };
+	@neighbors = exists $self->{Net}{$c1} ? keys %{ $self->{Net}{$c1} } : ();
 	if (!@neighbors) {
 	    warn "Kann weder $c1 noch $c2 in Net2Name finden"
 		if $VERBOSE;
