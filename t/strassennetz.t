@@ -234,7 +234,7 @@ if ($do_xxx) {
     pass("-- Bug reported by Dominik --");
 
     my $path = [[-3011,10103],[-2761,10323],[-2766,10325],[-2761,10323],[-2571,10258]];
-    my(@route) = $s_net->route_to_name([[-3011,10103],[-2761,10323],[-2766,10325],[-2761,10323],[-2571,10258]]);
+    my(@route) = $s_net->route_to_name($path);
     my $got_undef = 0;
     for (@route[0..$#route-1]) { $got_undef++ if !defined $_->[StrassenNetz::ROUTE_ANGLE] }
     is($got_undef, 0);
