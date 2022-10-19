@@ -26296,9 +26296,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2022-10-11 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-10-12 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 11. Oktober 2022 ab ca. 09:15 Uhr',
+     { from  => $isodate2epoch->("2022-10-20 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-10-21 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 21. Oktober 2022 ab ca. 09:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26307,6 +26307,7 @@ EOF
 #: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
 #: by: https://berliner-abendblatt.de/2022/10/11/sprengung-im-grunewald-avus-wird-voll-gesperrt/
 #: by: https://viz.berlin.de/2022/10/a115-sprengungen/
+#: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
 #: note: Termine im Frühjahr 2022: 23.3., 13.4., 20.4., 27.4.
 #: source_id: 2147341022
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
@@ -36142,8 +36143,8 @@ EOF
 #: next_check: 2022-10-29 vvv
 #: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 4.10.2022) (inaktiv)
 #: source_id: viz2021:13.392073,52.520077,06.10.2022,09:30 (bis 19.10.2022)
-#: last_checked: 2022-10-06
-Georgenstr.	q3::inwork 9568,12688 9441,12670
+# REMOVED --- #: last_checked: 2022-10-06
+# REMOVED --- Georgenstr.	q3::inwork 9568,12688 9441,12670
 #: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
 #: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 30.9.2022) (inaktiv)
 #: source_id: viz2021:13.395207,52.520461,05.10.2022,07:00 (Am Kupfergraben, bis 17.10.2022) (bis 29.10.2022)
@@ -36165,8 +36166,8 @@ EOF
 #: note: Einbahnstraße etwa 70m lang
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=706715#post706715
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2022-08-23
-#: check_frequency: 60d
+#: last_checked: 2022-10-19
+#: check_frequency: 45d
 	q3::inwork; 6919,15666 7024,15810
 EOF
      },
@@ -36482,8 +36483,8 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-08
-#: check_frequency: 14d
+#: last_checked: 2022-10-19 (Asphaltierungsarbeiten)
+#: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 EOF
      },
@@ -36578,6 +36579,7 @@ EOF
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
 #: XXX Bis wann ist die Kreuzung gesperrt?
+#: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: last_checked: 2022-10-08 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-11-09 vvv
@@ -36675,24 +36677,23 @@ EOF
      },
      { from  => 1665871200, # 2022-10-16 00:00
        until => undef, # XXX
-       text  => 'Triftstr./Genter Str. und Gerichtstr./Ruheplatzstr.: Bauarbeiten in den Einmündungsbereichen, Fahrbahn gesperrt, evtl. sind Radfahrer auch betroffen, ab 17.10.2022',
+       text  => 'Triftstr./Genter Str. und Gerichtstr./Ruheplatzstr.: Bauarbeiten in den Einmündungsbereichen, Fahrbahn gesperrt, ab 17.10.2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1254588.php',
        data  => <<EOF,
 #: next_check_id: TRIFTGERICHT-2022
-#: XXX Sind Radfahrer tatsächlich von den Sperrungen betroffen? vvv
+#: XXX Bis wann gehen die Bauarbeiten? vvv
 #: also_indoor: traffic (B) vvv
-#: begin_check: 2022-10-17 vvv
+#: last_checked: 2022-10-19 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2022-10-17 vvv
-Genter Str.	q3::inwork 7138,15437 7270,15307
-Triftstr.	q4::inwork 7248,15296 7270,15307
+# REMOVED (hier nicht) --- Genter Str.	q3::inwork 7138,15437 7270,15307
+# REMOVED (hier (noch) nicht) --- Triftstr.	q4::inwork 7248,15296 7270,15307
 Triftstr.	q3::inwork 7270,15307 7356,15350
-Gerichtstr.	q3::inwork 7464,15409 7627,15412 7723,15417
-Ruheplatzstr.	q3::inwork 7627,15412 7540,15566
-#: next_check ^^^
+Gerichtstr.	q3::inwork 7464,15409 7627,15412
+# REMOVED (hier nicht) --- Gerichtstr.	q3::inwork 7627,15412 7723,15417
+# REMOVED (hier nicht) --- Ruheplatzstr.	q3::inwork 7627,15412 7540,15566
 #: check_frequency ^^^
-#: begin_check ^^^
+#: last_checked ^^^
 #: also_indoor ^^^
 #: XXX ^^^
 EOF
@@ -36733,7 +36734,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-10-17
+#: last_checked: 2022-10-19
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -36791,6 +36792,16 @@ EOF
 #: add_fragezeichen: Wann ist die Brücke wieder offen?
 #: last_checked: 2022-10-17 (mapillary, Asphaltierungsarbeiten)
 	2::inwork 5752,30817 5787,30867
+EOF
+     },
+     { from  => 1666288800, # 2022-10-20 20:00
+       until => 1666929600, # 2022-10-28 06:00
+       text  => 'Neue Fahlenbergbrücke: Sperrung 21.10.2022, ca. 20.00 Uhr bis 28.10.2022, ca. 6.00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1256086.php',
+       data  => <<EOF,
+#: next_check_id: FAHLENBERGBRUECKE-2022
+	2::inwork 31009,19 31080,-19
 EOF
      },
     );
