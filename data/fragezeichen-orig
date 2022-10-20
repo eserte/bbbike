@@ -82,7 +82,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
 # REMOVED (hier realisiert) --- Stralauer Allee: Radspur geplant	?::projected; 13596,10722 13633,10705 13678,10685 13779,10642 13850,10612 13919,10583
 # REMOVED (hier in Bau, siehe radwege-orig-Eintrag) --- Stralauer Allee: Radspur geplant	?::projected; 13919,10583 13986,10549 14103,10489 14218,10430
-#: last_checked: 2022-10-18
+#: last_checked: 2022-10-20
 Stralauer Allee: Radspur geplant	?::projected; 14218,10430 14405,10340 14558,10264
 #: next_check ^^^
 #: check_frequency ^^^
@@ -3731,7 +3731,7 @@ Majakowskiring/Ossietzkystr.: vielleicht entsteht etwa hier ein modaler Filter	?
 #: by: https://karl-august-kiez.online/fussgaengerzone_wilmersdorfer_strasse_wird_verlaengert (vorübergehende Umsetzung 2022, endgültige 2023)
 #: osm_watch: way id="4495307" version="15"
 #: also_indoor: search Wilmersdorfer_Straße Fußgängerzone
-#: last_checked: 2022-09-21 (research)
+#: last_checked: 2022-10-20 (research)
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 Wilmersdorfer Str.: Verlängerung der Fußgängerzone geplant	?::projected 3717,11462 3689,11637
@@ -6341,6 +6341,8 @@ Am Priesteracker (Potsdam): genaue Lage? Qualität? Einbahnstraße für Radfahrer o
 #: by: https://www.bahninfo-forum.de/read.php?9,678502,746123#msg-746123
 #: by: https://www.bahninfo-forum.de/embed_images/b32/cd2/f7d/f0d/c95/023/111/102/75a/1bb/5c_1200x920.png (SEV-Strecken)
 #: by: https://berliner-abendblatt.de/2022/10/17/u6-in-tegel-bauarbeiten-starten-am-7-november/
+#: by: https://berliner-abendblatt.de/2022/10/20/noerdliche-u6-ab-november-fuer-jahre-gesperrt/
+#: by: https://nachgefragt.bvg.de/u6-streckensanierung/ (März 2023: Abbruch der U-Bahnbrücke über Seidelstraße; Busspur in der Berliner Str. wird für Radfahrer frei sein)
 #: XXX außerdem: der U6-SEV soll über Nordlichtstr. und Straße 442 geführt werden --- wird es hier eine Einbahnstraßenregelung geben? (wobei die Straßen auf den Mapillary-Bildern breit genug aussehen)
 #: source_id: viz2021:13.307546,52.56813,27.01.2022,09:00 (Vorbereitung Brückenneubau, bis 30.11.2022)
 #: last_checked: 2022-09-26 (mapillary)
@@ -7097,6 +7099,7 @@ Wexstr.: geschützte Radverkehrsanlage wird erstellt	?::projected; 5357,8013 5472
 Alexanderplatz: Umwege wegen einer Tunnelbaustelle	?::inwork 11005,12855 11102,12845 11086,12900 11139,13008
 # 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1255524.php (Herbst 2022)
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/charlottenstrasse-wird-fahrradstrasse_a360923
 #: next_check: 2022-11-30
 Charlottenstr.: Einrichtung einer Fahrradstraße	?::projected 9569,11631 9559,11715 9547,11819 9536,11922 9523,12019 9509,12117 9496,12215 9489,12263 9475,12365
 # 
@@ -9055,6 +9058,8 @@ Bebauungsplan XXII-39-1 VE: neue Straßen könnten hier entstehen	?::projected 209
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_10_0597_0656_online.pdf (Bekanntmachung der Planfeststellung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7221 (Antrag: Sicherstellung des Marktbetriebs)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/verkehr-senat-praesentiert-plaene-wo-berlin-neue-bahnhoefe-bekommen-koennte-marzahn-stammbahn-tvo-li.273180 (Erwähnung)
+#: by: https://www.bahninfo-forum.de/read.php?9,726467,747069#msg-747069
+#: by: https://bauprojekte.deutschebahn.com/media/projects/6790/docs/BR_berlin-frankfurt-oder-bundesgrenze-d-pl_koepenick_bf_20221012.pdf
 #: next_check: 2027-07-31
 Regionalbahnhof Köpenick	?::projected 22530,6100
 # 

@@ -4437,8 +4437,12 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: PICHELSDORFER-2021
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf (hier nur bis Ende August 2022)
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1256599.php (ab 24.10.2022: Metzer Platz - Weißenburger Str.)
+#: by: https://wilhelmstadt-bewegt.de/category/baustellen-ticker-pichelsdorfer-strasse/
 #: source_id: bvg2021:m36#BVG279266_0
 #: note: laut rbb ist der Fuß- und Radverkehr frei (allerdings evtl. mit Einschränkungen, deshalb noch immer q3)
+#: priority: #A
+#: next_check: 2022-10-24
 	q3::inwork -3824,13350 -3786,13267 -3693,13012 -3667,12919
 ',
          'from' => 1624917600,
@@ -5160,12 +5164,11 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: next_check_id: HAEMMERLING-2022
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022)
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
 #: note: anscheinend auch für Fußgänger gesperrt, hier gibt es keinen Gehweg
-#: note: laut rbb nur bis 20.10.2022
 #: also_indoor: traffic (B+G[nur Am Bahndamm],H[nur Schubert])
 Am Bahndamm	2::inwork 21984,6317 22238,6195
 Schubertstr.	2::inwork 21984,6317 21856,6390
@@ -5543,6 +5546,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (hier noch bis 10.10.2022, danach Sperrung der Oranienburger Str. (gleiche Linien betroffen))
 #: by: https://nitter.cz/VIZ_Berlin/status/1577924117503827969#m
 #: by: https://nitter.cz/pic/orig/media%2FFeXP3TTWAAI6GUd.jpg
+#: by: https://www.nd-aktuell.de/artikel/1167819.strassenbahn-verkehrsbetriebe-huellen-sich-in-schweigen.html
 #: note: laut rbb ist die Georgenstr. länger (bis 6.10.2022) gesperrt
 #: XXX Dauern die Bauarbeiten und Sperrungen länger an?
 #: next_check: 2022-10-29 vvv
@@ -5923,6 +5927,7 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
+#: by: https://nitter.net/tramathon/status/1583012911013761024
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: last_checked: 2022-10-08 vvv
@@ -6141,6 +6146,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
        },
        {
          'data' => '#: next_check_id: FAHLENBERGBRUECKE-2022
+#: source_id: viz2021:13.703766,52.402664,21.10.2022,20:00
 	2::inwork 31009,19 31080,-19
 ',
          'from' => 1666288800,
@@ -6149,6 +6155,16 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'text' => 'Neue Fahlenbergbrücke: Sperrung 21.10.2022, ca. 20.00 Uhr bis 28.10.2022, ca. 6.00 Uhr',
          'type' => 'gesperrt',
          'until' => 1666929600
+       },
+       {
+         'data' => '	2::inwork 57435,13914 57366,13935 56605,14304
+',
+         'from' => 1666276200,
+         'id' => 3661,
+         'source_id' => '226401732',
+         'text' => 'Müncheberg: Sperrung des Bahnübergangs, evtl. sind auch Radfahrer betroffen, 21.10.2022 16:30 Uhr bis 26.10.2022 15:00 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1666789200
        }
      
 );
