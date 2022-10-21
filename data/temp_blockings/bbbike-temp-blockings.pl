@@ -17233,7 +17233,7 @@ EOF
        until => $isodate2epoch->("2022-01-02 23:59:59"), # 1 Tag (mindestens) für den Abbau
        periodic => 1,
        prewarn_days => 10,
-       recurrences => [['yearly', days => 20, months => 11, start => "2021-01-01T00:00:00"]], # Weihnachtsmarkt 2020 auf dem Gendarmenmarkt fällt aus - wegen Corona
+       recurrences => [['yearly', days => 20, months => 11, start => "2023-01-01T00:00:00"]], # Weihnachtsmarkt 2020 auf dem Gendarmenmarkt fällt aus - wegen Corona
        dont_check_date => 1,
        source_id => 'https://www.weihnachtsmarkt-berlin.de/',
        text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 22.11.2021 bis 31.12.2021, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
@@ -22957,6 +22957,7 @@ EOF
        until => $isodate2epoch->("2021-11-24 00:00:00"), # $isodate2epoch->("2021-12-29 23:59:59"), #
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11, start => "2021-01-01T00:00:00"]],
+       recurrence_prewarn_days => 10,
        text  => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 22.11.2021 - 29.12.2021',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -25386,18 +25387,19 @@ EOF
 	q3::inwork; 14218,13834 14243,13890 14261,13932 14298,14015 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 EOF
      },
-     { from  => $isodate2epoch->("2021-11-21 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-12-26 23:59:59"),
+     { from  => $isodate2epoch->("2022-11-20 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-12-26 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11, start => "2021-01-01T00:00:00"]], # findet 2020 nicht statt
-       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 22. November 2021 bis 26. Dezember 2021',
+       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 21. November 2022 bis 26. Dezember 2022',
        type  => 'handicap',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html
 #: tempex: before(first_advent, monday)-YYYY1226 vvv
-	q3::xmas 11139,13008 11086,12900 11102,12845 11005,12855 10970,12822
+#: note: wegen der Tunnelarbeiten vermutlich enger als sonst, früher q3
+	q4::xmas 11139,13008 11086,12900 11102,12845 11005,12855 10970,12822
 	q4::xmas 11102,12845 11134,12793
 #: tempex ^^^
 EOF
@@ -33293,19 +33295,20 @@ EOF
      },
      { from  => 1624917600, # 2021-06-29 00:00
        until => $isodate2epoch->("2023-04-28 17:00:00"), # 1640991600, # 2022-01-01 00:00
-       text  => 'Pichelsdorfer Str.: Bauarbeiten zwischen Wilhelmstr. und Zimmerstr., evtl. sind auch Radfahrer betroffen, vom 30.06.2021 bis 28.04.2023',
+       text  => 'Pichelsdorfer Str.: Bauarbeiten zwischen Metzer Platz und Weißenburger Str., evtl. sind auch Radfahrer betroffen, bis 28.04.2023',
        type  => 'handicap',
-       source_id => 'viz2021:13.195212,52.527938,30.06.2021,06:00', # mittlerweile bis 28.4.2023
+       source_id => 'viz2021:13.195212,52.527938,30.06.2021,06:00', # mittlerweile bis 28.4.2023, inaktiv
        data  => <<EOF,
 #: next_check_id: PICHELSDORFER-2021
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf (hier nur bis Ende August 2022)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1256599.php (ab 24.10.2022: Metzer Platz - Weißenburger Str.)
 #: by: https://wilhelmstadt-bewegt.de/category/baustellen-ticker-pichelsdorfer-strasse/
 #: source_id: bvg2021:m36#BVG279266_0
+#: source_id: viz2021:13.196928,52.525518,30.06.2021,06:00
 #: note: laut rbb ist der Fuß- und Radverkehr frei (allerdings evtl. mit Einschränkungen, deshalb noch immer q3)
-#: priority: #A
-#: next_check: 2022-10-24
-	q3::inwork -3824,13350 -3786,13267 -3693,13012 -3667,12919
+# REMOVED --- #: priority: #A --- #: next_check: 2022-10-24
+# REMOVED ---	q3::inwork -3824,13350 -3786,13267 -3693,13012 -3667,12919
+	q3::inwork -3693,13012 -3667,12919 -3658,12854 -3650,12762
 EOF
      },
      { from  => 1624744800, # 2021-06-27 00:00
@@ -35713,7 +35716,7 @@ EOF
 #: also_indoor: traffic (none)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
 # REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
-#: last_checked: 2022-09-21 (mapillary) vvv
+#: last_checked: 2022-10-20 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-11-07 vvv
 	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -35901,8 +35904,8 @@ EOF
 EOF
      },
      { from  => 1658811600, # 2022-07-26 07:00
-       until => 1667232000, # 2022-10-31 17:00
-       text  => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 31.10.2022 17:00',
+       until => $isodate2epoch->("2022-11-28 17:00:00"), # 1667232000, # 2022-10-31 17:00
+       text  => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 28.11.2022 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.545559,52.434572,27.07.2022,07:00',
        data  => <<EOF,
@@ -36574,7 +36577,7 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 EOF
      },
      { from  => 1665077956, # 2022-10-06 19:39
-       until => 1672527600, # 2023-01-01 00:00
+       until => 1666368032, # 1672527600, # 2023-01-01 00:00
        text  => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis zum 9.11.2022',
        type  => 'handicap',
        data  => <<EOF,
@@ -36583,18 +36586,13 @@ EOF
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
 #: by: https://nitter.net/tramathon/status/1583012911013761024
-#: XXX Bis wann ist die Kreuzung gesperrt?
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
-#: last_checked: 2022-10-08 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2022-11-09 vvv
+# REMOVED --- #: XXX Bis wann ist die Kreuzung gesperrt? --- #: last_checked: 2022-10-08 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-11-09 vvv
 Chausseestr.	q4::inwork 9207,13493 9212,13471
 Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 Torstr.	q3::inwork 9353,13521 9212,13471
 Friedrichstr.	q4::inwork 9212,13471 9225,13389
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -36807,6 +36805,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FAHLENBERGBRUECKE-2022
 #: source_id: viz2021:13.703766,52.402664,21.10.2022,20:00
+#: source_id: viz2021:13.70456,52.4024,21.10.2022,20:00
 	2::inwork 31009,19 31080,-19
 EOF
      },

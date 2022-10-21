@@ -3141,7 +3141,34 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html
+#: tempex: before(first_advent, monday)-YYYY1226 vvv
+#: note: wegen der Tunnelarbeiten vermutlich enger als sonst, früher q3
+	q4::xmas 11139,13008 11086,12900 11102,12845 11005,12855 10970,12822
+	q4::xmas 11102,12845 11134,12793
+#: tempex ^^^
+',
+         'from' => 1668898800,
+         'id' => 2763,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11,
+                              'start',
+                              '2021-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
+         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 21. November 2022 bis 26. Dezember 2022',
+         'type' => 'handicap',
+         'until' => 1672095599
+       },
        undef,
        undef,
        undef,
@@ -3247,34 +3274,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
-#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
-#: by: https://berliner-abendblatt.de/2022/10/11/sprengung-im-grunewald-avus-wird-voll-gesperrt/
-#: by: https://viz.berlin.de/2022/10/a115-sprengungen/
-#: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
-#: note: Termine im Frühjahr 2022: 23.3., 13.4., 20.4., 27.4.
-#: source_id: 2147341022
-#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
-#: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15
-#: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15
-# REMOVED --- #: priority: #A --- #: next_check: 2022-04-20
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
-	2::temp -1934,6804 -1854,6898
-',
-         'from' => 1666216800,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 21. Oktober 2022 ab ca. 09:15 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1666340100
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -4440,15 +4440,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1256599.php (ab 24.10.2022: Metzer Platz - Weißenburger Str.)
 #: by: https://wilhelmstadt-bewegt.de/category/baustellen-ticker-pichelsdorfer-strasse/
 #: source_id: bvg2021:m36#BVG279266_0
+#: source_id: viz2021:13.196928,52.525518,30.06.2021,06:00
 #: note: laut rbb ist der Fuß- und Radverkehr frei (allerdings evtl. mit Einschränkungen, deshalb noch immer q3)
-#: priority: #A
-#: next_check: 2022-10-24
-	q3::inwork -3824,13350 -3786,13267 -3693,13012 -3667,12919
+# REMOVED --- #: priority: #A --- #: next_check: 2022-10-24
+# REMOVED ---	q3::inwork -3824,13350 -3786,13267 -3693,13012 -3667,12919
+	q3::inwork -3693,13012 -3667,12919 -3658,12854 -3650,12762
 ',
          'from' => 1624917600,
          'id' => 3401,
          'source_id' => 'viz2021:13.195212,52.527938,30.06.2021,06:00',
-         'text' => 'Pichelsdorfer Str.: Bauarbeiten zwischen Wilhelmstr. und Zimmerstr., evtl. sind auch Radfahrer betroffen, vom 30.06.2021 bis 28.04.2023',
+         'text' => 'Pichelsdorfer Str.: Bauarbeiten zwischen Metzer Platz und Weißenburger Str., evtl. sind auch Radfahrer betroffen, bis 28.04.2023',
          'type' => 'handicap',
          'until' => 1682694000
        },
@@ -5366,7 +5367,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
 #: also_indoor: traffic (none)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
 # REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
-#: last_checked: 2022-09-21 (mapillary) vvv
+#: last_checked: 2022-10-20 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-11-07 vvv
 	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -5456,9 +5457,9 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'from' => 1658811600,
          'id' => 3595,
          'source_id' => 'viz2021:13.545559,52.434572,27.07.2022,07:00',
-         'text' => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 31.10.2022 17:00',
+         'text' => 'Radickestr.: Bauarbeiten, Fahrbahn zwischen Anna-Seghers-Str. und Thomas-Müntzer-Str. Richtung Osten gesperrt, sowie Einbahnstraßenregelung in der Thomas-Müntzer-Str., vom 27.07.2022 07:00 bis 28.11.2022 17:00',
          'type' => 'handicap',
-         'until' => 1667232000
+         'until' => 1669651200
        },
        undef,
        {
@@ -5809,16 +5810,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'until' => undef
        },
        undef,
-       {
-         'data' => '	2::inwork 39156,37578 38986,37512 38171,37238 37672,36908 36605,36450
-',
-         'from' => 1663480800,
-         'id' => 3632,
-         'source_id' => 'LS/221-F/22/131',
-         'text' => 'Heckelberg - Beerbaum: Deckenerneuerung, Sperrung, 19.09.2022 08:00 Uhr bis 21.10.2022 15:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1666357200
-       },
+       undef,
        undef,
        undef,
        {
@@ -5922,31 +5914,7 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022)
-#: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
-#: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
-#: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
-#: by: https://nitter.net/tramathon/status/1583012911013761024
-#: XXX Bis wann ist die Kreuzung gesperrt?
-#: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
-#: last_checked: 2022-10-08 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2022-11-09 vvv
-Chausseestr.	q4::inwork 9207,13493 9212,13471
-Hannoversche Str.	q3::inwork 9212,13471 9047,13446
-Torstr.	q3::inwork 9353,13521 9212,13471
-Friedrichstr.	q4::inwork 9212,13471 9225,13389
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => 1665077956,
-         'id' => 3643,
-         'text' => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis zum 9.11.2022',
-         'type' => 'handicap',
-         'until' => 1672527600
-       },
+       undef,
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,721782,722126#msg-722126
 #: by: https://www.bahninfo-forum.de/read.php?9,725584,728443#msg-728443 (nur nachts/am Wochenende zu?)
@@ -6147,6 +6115,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
        {
          'data' => '#: next_check_id: FAHLENBERGBRUECKE-2022
 #: source_id: viz2021:13.703766,52.402664,21.10.2022,20:00
+#: source_id: viz2021:13.70456,52.4024,21.10.2022,20:00
 	2::inwork 31009,19 31080,-19
 ',
          'from' => 1666288800,

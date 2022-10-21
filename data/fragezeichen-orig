@@ -140,6 +140,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 # REMOVED (realisiert) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 --- #: XXX laut fritz bis 12. August 2019 --- #: osm_watch: way id="231882067" version="4" --- #: source_id: 2147343592 (bis Anfang August 2019) --- #: last_checked: 2019-08-08 --- #: next_check: 2019-08-12 --- Annenstr.: werden die Radspuren hier noch verlängert?	?::inwork 11094,11377 11052,11414
 # 
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
+#: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/eu-finanziert-umbau-im-spandauer-suedhafen_a360806 (Neubau der Schulenburgbrücke, bis Ende 2028)
 #: osm_watch: way id="4609212"  version="15"
 #: osm_watch: way id="25113713" version="18"
 #: osm_watch: way id="4752742"  version="13"
@@ -472,7 +473,7 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.491926.php
 #: XXX hier sieht es eigentlich nicht so aus, als ob Radspuren vorgesehen sind...
-#: osm_watch: way id="4491980" version="22"
+#: osm_watch: way id="4491980" version="23"
 #: priority: #B
 #: last_checked: 2022-09-16
 #: check_frequency: 100d
@@ -555,7 +556,7 @@ Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623
 #: by: http://www.infravelo.de/projekt/munsterdamm/ (4. Quartal 2021 - 4. Quartal 2023) (mittlerweile Baubeginn 2. Quartal 2022) (mittlerweile 1. Quartal 2023 - 4. Quartal 2025)
 #: source_id: 2147344224 (bis Mitte Juni 2019) (es ist aber nichts passiert) (nicht mehr aktiv)
 #: source_id: 2147345316 (bis Anfang Februar 2020) (nicht mehr aktiv)
-#: osm_watch: way id="30190074" version="26"
+#: osm_watch: way id="30190074" version="27"
 #: last_checked: 2022-06-04
 #: check_frequency: 270d
 #: next_check: 2025-12-31
@@ -700,6 +701,7 @@ Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 856
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1251184.php (Erwähnung)
 #: by: https://berliner-abendblatt.de/2022/10/05/gartenstadt-tempelhof-infoabend-zum-verkehrskonzept/
 #: by: https://www.berliner-woche.de/tempelhof/c-bauen/buerger-planen-gartenstadt-mit_a359795
+#: by: https://berliner-abendblatt.de/2022/10/21/tempelhof-hier-faellt-jeder-zweite-parkplatz-weg/
 #: source_id: 2147340903	
 #: osm_watch: way id="169753565" version="11"
 #: osm_watch: way id="111325187" version="20"
@@ -1641,9 +1643,10 @@ Fußgängerampel Rhinstr.: noch nicht eingeschaltet	?::inwork 18201,12190 18216,12
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10131 (Anfrage zum Umbau)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10057 (Umgestaltung, Bauzeit: 09/2023-12/2027)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10451 (RVA)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1257056.php (Baubeginn auf 2026 verschoben)
 #: last_checked: 2022-09-24 (mapillary)
 #: check_frequency: 360d
-#: next_check: 2025-12-31
+#: next_check: 2026-06-30
 Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::projected 7579,17532 7572,17558 7533,17673 7491,17793 7477,17832 7453,17899 7432,17964 7426,17981 7405,18047 7335,18257 7291,18392 7269,18460 7233,18562 7198,18575
 # 
 #: XXX vielleicht auch ein größerer Abschnitt
@@ -1764,7 +1767,7 @@ Seegefelder Weg: Radweg geplant	?::projected -8198,15648 -8309,15691 -8339,15657
 # 
 #: XXX ggfs. ist ein größerer Abschnitt der Straße gemeint
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
-#: osm_watch: way id="30718922" version="21"
+#: osm_watch: way id="30718922" version="23"
 #: last_checked: 2022-10-08
 #: check_frequency: 120d
 Seegefelder Str.: aus dem Radweg werden Radstreifen	?::projected -3851,14174 -3624,14113 -3552,14082
@@ -3077,6 +3080,7 @@ Uferweg in Bau	?::inwork 7797,14317 7769,14364
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_55_6227_6354_online.pdf (Grundstücksnummerierungen)
 #: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-2.php (Webcam)
 #: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-3.php (Webcam)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_42_2833_2916_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: XXX fehlt in Berlin.coords.data, PLZ=10557
 Lisa-Fittko-Str. (Ziffer 2): Geplante Straße; Qualität? wird das hier auch die Lisa-Fittko-Str. werden, oder eine andere Straße?	?::projected 7569,14217 7652,14257
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_57_5513_5592_online.pdf (Straßenbenennung)
@@ -4347,7 +4351,7 @@ Rauchstr.: Busspur in "finaler Abstimmung"	?::projected; -2728,17038 -2908,17072
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf (Ausführung steht aus, bauliche Umgestaltung steht aus; am Wilhelmshavener Str.)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1190899.php (zweites 100-Tage-Programm)
 #: by: https://www.rbb24.de/politik/beitrag/2022/05/berlin-busspuren-verwaltung-genehmigung-personalnot.html
-#: osm_watch: way id="323528039" version="8"
+#: osm_watch: way id="323528039" version="9"
 #: XXX: eine Stummel-Busspur existiert mittlerweile im Bereich der Haltestelle, kommt noch mehr?
 #: last_checked: 2022-09-22
 #: check_frequency: 90d
@@ -4486,7 +4490,7 @@ Allee der Kosmonauten: Radwege geplant	?::projected 20150,13562 20193,13621 2020
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/baubeginn-in-der-allee-der-kosmonauten-noch-unklar_a342164
 #: by: https://nitter.cz/VIZ_Berlin/status/1565566438118551554#m
 #: source_id: viz2021:13.55709,52.53432,02.09.2022,08:00 (Sanierung der Bushaltestelle bis 28.9.2022)
-#: last_checked: 2022-07-24 (mapillary)
+#: last_checked: 2022-08-10 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-06-30
 Allee der Kosmonauten: Radwege zwischen Elisabethstr. und Landsberger Allee geplant	? 20755,14479 20822,14594 20868,14698 20944,14840 20980,14914 21018,14991 21025,15005 21099,15158 21163,15289 21187,15350 21228,15449 21242,15529 21241,15573
@@ -5721,7 +5725,7 @@ Conrad-Blenkle-Str.: südlich der Rudi-Arndt-Str. soll ein Zebrastreifen entstehe
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
 # 
 #: by: http://www.berliner-woche.de/schoeneberg/verkehr/barbarossastrasse-noch-sicherer-d130318.html
-#: osm_watch: way id="32936167" version="16"
+#: osm_watch: way id="32936167" version="17"
 #: last_checked: 2022-07-14 (mapillary)
 #: check_frequency: 90d
 #: priority: #D
@@ -6189,7 +6193,7 @@ Güterbahnhof Köpenick: hier entsteht die Ostumfahrung Bahnhofstraße	?::projected
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5152&date=20210720 (Zwischenbericht)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll_fahrrat_pankow17-02-2021.pdf (Erwähnung)
 #: source_id: 2147345990 (Fahrbahnsanierungsarbeiten, vermutlich wird nichts für die Radverkehrsanlage gemacht)
-#: osm_watch: way id="119201840" version="22"
+#: osm_watch: way id="119201840" version="23"
 #: osm_watch: way id="190701274" version="10"
 #: osm_watch: way id="949605667" version="2"
 #: last_checked: 2022-01-09
@@ -6247,6 +6251,7 @@ Vorarlberger Damm: Erneuerung des Radwegs	?::projected; 7227,7352 7101,7198 6991
 #: by: http://www.infravelo.de/projekt/tempelhofer-damm/ (2. Quartal 2021 - 4. Quartal 2022)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1255443.php (Pressetermin zur Eröffnung 21. Oktober 2022)
 #: by: https://berliner-abendblatt.de/2022/10/19/tempelhofer-damm-neuer-radfahrstreifen-geht-an-den-start/
+#: by: https://berliner-abendblatt.de/2022/10/21/sicher-auf-zwei-raedern-am-tempelhofer-damm-jarasch-eroeffnet-neuen-radweg/
 #: source_id: viz2021:13.385634,52.465292,31.08.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.385819,52.46534,31.08.2022,06:00 (inaktiv)
 #: source_id: viz2021:13.385147,52.465301,31.08.2022,06:00 (inaktiv)
@@ -6343,6 +6348,7 @@ Am Priesteracker (Potsdam): genaue Lage? Qualität? Einbahnstraße für Radfahrer o
 #: by: https://berliner-abendblatt.de/2022/10/17/u6-in-tegel-bauarbeiten-starten-am-7-november/
 #: by: https://berliner-abendblatt.de/2022/10/20/noerdliche-u6-ab-november-fuer-jahre-gesperrt/
 #: by: https://nachgefragt.bvg.de/u6-streckensanierung/ (März 2023: Abbruch der U-Bahnbrücke über Seidelstraße; Busspur in der Berliner Str. wird für Radfahrer frei sein)
+#: by: https://berliner-abendblatt.de/2022/10/21/bauarbeiten-an-u6-in-tegel-so-laeuft-der-ersatzverkehr/
 #: XXX außerdem: der U6-SEV soll über Nordlichtstr. und Straße 442 geführt werden --- wird es hier eine Einbahnstraßenregelung geben? (wobei die Straßen auf den Mapillary-Bildern breit genug aussehen)
 #: source_id: viz2021:13.307546,52.56813,27.01.2022,09:00 (Vorbereitung Brückenneubau, bis 30.11.2022)
 #: last_checked: 2022-09-26 (mapillary)
@@ -8206,6 +8212,7 @@ Bebauungsplan 8-9bba (Mohriner Allee 111): möglicherweise entsteht hier eine neu
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_32_2133_2188_online.pdf (Straßenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_39_2621_2728_online.pdf (Berichtigung: Mohriner Allee 111 -> Waßmannsdorfer Chaussee 111)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_42_2833_2916_online.pdf (Grundstücksnummerierungen)
 #: XXX Krabbentaucherweg fehlt bei Berlin.coords.data, PLZ laut DPAG-Mitteilungsblatt 12347
 #: XXX Qualität: Verbundsteinpflaster; vermutlich Sackgasse
 #: last_checked: 2022-06-04
@@ -8828,7 +8835,7 @@ S-Bhf. Zehlendorf: neuer Zugang geplant	?::projected 644,2622 660,2576
 #: by: https://www.berlin.de/sen/uvk/_assets/verkehr/infrastruktur/brueckenbau/neue-fahlenbergbruecke/verkehrsfuehrung_bauphase_2_phase_3.pdf (Geh/Radweg auf der südlichen Seite, Gegenverkehrsregelung vermutlich nur für Kfz-Verkehr)
 #: by: https://berliner-abendblatt.de/2022/10/19/neue-fahlenbergbruecke-wird-gesperrt/
 #: source_id: viz2021:13.703966,52.4026,16.08.2021,09:00 (bis 27.8.2021) (inaktiv)
-#: source_id: viz2021:13.703997,52.402579,10.10.2022,07:00 (Brückenarbeiten, bis 22.10.2022) (mittlerweile bis 21.10.2022)
+#: source_id: viz2021:13.703997,52.402579,10.10.2022,07:00 (Brückenarbeiten, bis 22.10.2022) (mittlerweile bis 21.10.2022) (inaktiv)
 #: source_id: bvg2021:369#BVG310116_0
 #: note: die Verkehrsmeldung wurde beim rbb am nächsten Tag (11.10.2022) bereits entfernt
 #: XXX ab dem 28.10.2022 ist die südliche Umfahrung aktiv
@@ -8990,7 +8997,7 @@ Bebauungsplan 8-102 ("Ehemaliger NME-Bahnhof Rudow"): wird es hier eine Wegverbi
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6139 (Benennung einer Privatstraße)
 #: XXX wird die KGA an dieser Stelle aufgegeben?
 #: XXX Privatstraße soll "Süßdoldenweg" heißen
-#: osm_watch: way id="293943813" version="3"
+#: osm_watch: way id="293943813" version="4"
 #: last_checked: 2022-06-18 (mapillary)
 #: check_frequency: 180d
 Süßdoldenweg: früher Planstraße H, vermutlich entsteht hier die neue Straße, genaue Lage, Qualität?	? 9278,21239 9277,21194 9249,21138
@@ -9136,6 +9143,11 @@ Wickenhagenweg: Einziehung, ändert sich hier etwas?	? -6137,864 -6125,838
 #: last_checked: 2022-10-05
 #: check_frequency: 90d
 Heidelberger Str./Elsenstr.: gibt es hier ein Drängelgitter/eine Schranke?	? 13611,9069 13664,9073 13645,9128
+# 
+#: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html (21. November bis 31. Dezember 2022)
+#: XXX am Gendarmenmarkt wird schon ~10 Tage vorher gesperrt
+#: next_check: 2022-11-11
+Bebelplatz: wird der gesamte Platz für den Weihnachtsmarkt gesperrt?	? 9664,12387 9680,12232 9730,12238 9713,12392
 # 
 #: ignore ^^^
 #: section ^^^
