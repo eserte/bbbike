@@ -381,7 +381,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2022-10-08 (daf) vvv
+#: last_checked: 2022-10-21 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="10"
@@ -3552,6 +3552,7 @@ Wadzeckstr. - Mollstr.: einige Fuﬂg‰nger	q1 11315,13210 11399,13333
 (zum Poststadion): Parkplatzverkehr	q1 7452,13904 7417,13880 7445,13792 7431,13740 7343,13679 7338,13649
 (entlang des Vabali Spa): einige Fuﬂg‰nger	q1 7338,13649 7422,13487
 Liebigstr.: kurvig, recht eng durch parkende Autos	q1 13905,12374 13927,12370 14074,12343 14100,12354 14152,12344 14168,12328 14229,12311
+#: note: keine Schilder
 (Marseillestr. - Dr.-Markus-Str.): Fuﬂweg	q1 12364,21623 12402,21537
 (Parkplatz Kaufland): Parkplatzverkehr	q1 13031,17775 12981,17557
 Lubminer Weg: einige Fuﬂg‰nger	q1 22319,12663 22391,12677
@@ -4284,6 +4285,18 @@ Theodorpark: einige Fuﬂg‰nger	q2 25017,10767 25018,10747 25022,10715
 Spandauer Havelpromenade: einige Fuﬂg‰nger	q2 -1871,16788 -1895,16675 -1920,16476 -1928,16423
 Sp‰thstr.: Gehweg	q3 14028,5325 14063,5313
 Straﬂenbahn¸bergang	q3 21176,16480 21181,16479 21183,16467 21192,16466
+#: note: nicht-amtliches Zeichen "Durchgangsverkehr verboten"
+(Rosenstr.): schmal, kurvig	q3 12725,19459 12711,19438 12652,19460
+#: note: Ausschilderung: Gehweg, Radfahrer frei
+(Nizzastr. - Am Parkgraben): einige Fuﬂg‰nger	q1 12434,21160 12520,21199
+#: note: Gr¸nanlagen-Schild ohne weitere Zusatzschilder
+(Am Parkgraben): einige Fuﬂg‰nger	q1 12520,21199 12535,21282 12507,21391 12501,21468 12494,21493 12518,21559 12517,21573 12517,21587
+#: note: Gr¸nanlagen-Schild ohne weitere Zusatzschilder
+(Lyonstr. - Parkweg): einige Fuﬂg‰nger	q1 12443,21439 12501,21468
+(Straﬂe 79 - Mauerweg): schmal	q2 7793,19346 7784,19332 7763,19318
+(Straﬂe 78 - Mauerweg): schmal	q2 7715,19408 7704,19366
+#: note: Ausschilderung: am ˆstlichen Ende Gehweg, keine Freigabe, am westlichen Ende kein Schild
+Neukirchstr.: einige Fuﬂg‰nger	q1 12751,18401 12885,18329
 # 
 ######################### User Contributions #################################
 # 
@@ -6111,7 +6124,7 @@ Verl‰ngerte Schulzendorfer Str.: Fuﬂg‰nger	q1 2150,22464 2015,22435 1834,22421 1
 # 
 #: by: Fil
 #: confirmed_by: srt (bis auf den s¸dlichen Teil, der breit genug ist)
-(Frithjofstr. - Rotkardinalweg): schmal, selten Fuﬂg‰nger	q2 12650,19462 12543,19760 12552,19765
+(Frithjofstr. - Rotkardinalweg): schmal, selten Fuﬂg‰nger	q2 12652,19460 12543,19760 12552,19765
 # 
 #: by: Kai Pauldrach vvv
 (Verl‰ngerung Senheimer Str.): teils enger Weg	q2 2560,26475 2493,26665 2434,26783 2384,26851 2303,26913

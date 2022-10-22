@@ -1364,7 +1364,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1158571.php (Verstetigung 2022)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="19"
-#: last_checked: 2022-09-17
+#: last_checked: 2022-10-22
 #: check_frequency: 120d
 #: next_check: 2022-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13383,13349 13434,13234 13481,13128 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1734,11 +1734,11 @@ Busspur ist immer gültig	RW5;RW5 9934,12420 9858,12410
 # REMOVED --- #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam) ---#: XXX siehe auch 3nocross in gesperrt-orig --- #: source_id: INKO_113041 --- #: source_id: 2147339528 (bis 8.6.2020) (inaktiv) --- #: source_id: 2147346674 (bis 31.10.2021)
 #: source_id: viz2021:13.399226,52.517706,30.05.2022,08:00 (bis 15.8.2022, zwischen Lustgarten - Oberwallstr.) (mittlerweile inaktiv) vvv
 #: source_id: viz2021:13.404803,52.520062,30.05.2022,08:00 (bis 15.8.2022) (mittlerweile bis 29.8.2022) (bis 19.9.2022)
-#: last_checked: 2022-10-11 (mapillary) vvv
+#: last_checked: 2022-10-21 (mapillary) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-09-19 vvv
-provisorische Radspur	RW4; 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506
-provisorische Radspur	RW4; 10176,12506 10155,12494 10063,12438 10024,12431 9984,12426 9934,12420
+provisorische Busspur	RW5; 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506
+provisorische Busspur	RW5; 10176,12506 10155,12494 10063,12438 10024,12431 9984,12426 9934,12420
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -2823,7 +2823,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: osm_watch: way id="420112505" version="10"
 #: osm_watch: way id="420112509" version="11"
 #: osm_watch: way id="966685279" version="5"
-#: last_checked: 2022-10-11 vvv
+#: last_checked: 2022-10-22 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-12-31 vvv
 	RW1;RW1 13439,14673 13731,14200 13736,14192 13879,13967
@@ -4016,11 +4016,13 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.432298,52.535532,28.09.2022,09:24 (bis 6.10.2022) (bis 14.10.2022) (inaktiv)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
-#: last_checked: 2022-09-15 (mapillary) vvv
+#: last_checked: 2022-10-22 vvv
+#: check_frequency: 120d vvv
 # REMOVED --- #: next_check: 2022-04-14 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
 # REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -5975,7 +5977,7 @@ asphaltiert	RW1; 9660,17736 9721,17806
 	RW3; 8921,16578 8776,16268
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Umsetzung bis Herbst 2020)
 #: XXX wird aus der Radspur eine Busspur? vvv
-#: last_checked: 2022-09-30 (mapillary) vvv
+#: last_checked: 2022-10-22 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
 #: osm_watch: way id="162965650" version="22"

@@ -3722,7 +3722,7 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_03_0117_0172_online.pdf (Grundstücksnummerierung)
 #: XXX Bis wann gehen die Bauarbeiten? Eigentlich eine "unechte" Einbahnstraße. Und manchmal (gesehen am Sonntag, den 2021-10-31; vielleicht außerhalb der Arbeitszeiten?) sind die Einfahrt-verboten-Schilder weggedreht
 #: osm_watch: way id="308312347" version="6"
-#: last_checked: 2022-10-11 (mapillary)
+#: last_checked: 2022-10-22
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-08-15
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s:q3 10472,14632 10320,14608
@@ -3829,7 +3829,7 @@ Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 188
 #: XXX laut osm ist die Schule 2023-02 fertig
 #: osm_watch: way id="860287005" version="5"
 #: also_indoor: traffic (G)
-#: last_checked: 2022-06-30
+#: last_checked: 2022-10-22
 #: check_frequency: 120d
 #: next_check: 2023-02-28
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
@@ -4046,8 +4046,9 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komple
 #: next_check_id: TACHELES-2020
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2022-09-28 (mapillary)
+#: last_checked: 2022-10-22 (daf)
 #: check_frequency: 60d
+#: next_check: 2023-06-30
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174 9254,13171
 # 
 # REMOVED --- #: next_check_id: YORCKSTRASSENBRUECKEN-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Herrichtung im ersten Halbjahr 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855679.php (Einhängung bis zum 21.10.2019, aber Freigabe erst im Frühjahr 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.895895.php (Wiederinbetriebnahme am 20.02.2020, zum gleichen Zeitpunkt wird die Yorckstraßenbrücke 17 gesperrt, Wiederfreigabe im Frühling 2020) --- #: osm_watch: way id="36395401" version="24" --- #: priority: #A --- #: last_checked: 2019-10-16 --- #: next_check: 2020-02-20 --- Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
@@ -4593,7 +4594,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 # REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7"
 #: osm_watch: way id="940764588" version="6"
 #: osm_watch: way id="940764584" version="4"
-#: last_checked: 2022-10-08
+#: last_checked: 2022-10-22 (daf)
 #: check_frequency: 120d
 #: next_check: 2023-06-30
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315

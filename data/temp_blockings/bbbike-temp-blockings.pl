@@ -28975,7 +28975,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: NEUERMAUERWEG-2018 --- #: add_fragezeichen: Ist der Weg mittlerweile komplett offen? vvv --- #: osm_watch: way id="42031978" version="14" --- #: priority: #B vvv --- #: last_checked: 2019-03-23 vvv --- #: check_frequency: 14d vvv
-(Neuer Mauerweg): noch abgesperrt	2::inwork 7512,19480 7572,19490 7679,19421 7704,19366 7824,19269 7873,19261 8016,19143 8313,18940 8347,18916 8476,18773
+(Neuer Mauerweg): noch abgesperrt	2::inwork 7512,19480 7572,19490 7679,19421 7704,19366 7763,19318 7824,19269 7873,19261 8016,19143 8313,18940 8347,18916 8476,18773
 (Neuer Mauerweg): noch abgesperrt	2::inwork 7572,19490 7540,19550
 EOF
      },
@@ -29631,7 +29631,7 @@ EOF
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022 (wird nicht mehr aktualisiert)
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2022-09-24 (mapillary, Sackgassenschild)
+#: last_checked: 2022-10-22 (Fahrbahn wird wiederhergestellt)
 #: check_frequency: 45d
 #: next_check: 2022-11-30
 	q3::inwork  8986,16092 9178,16317
@@ -31038,7 +31038,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2022-10-17
+#: last_checked: 2022-10-22
 #: check_frequency: 21d
 	2::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -33303,6 +33303,7 @@ EOF
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf (hier nur bis Ende August 2022)
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1256599.php (ab 24.10.2022: Metzer Platz - Weißenburger Str.)
 #: by: https://wilhelmstadt-bewegt.de/category/baustellen-ticker-pichelsdorfer-strasse/
+#: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/umgestaltung-der-pichelsdorfer-strasse-geht-in-die-zweite-phase_a361376
 #: source_id: bvg2021:m36#BVG279266_0
 #: source_id: viz2021:13.196928,52.525518,30.06.2021,06:00
 #: note: laut rbb ist der Fuß- und Radverkehr frei (allerdings evtl. mit Einschränkungen, deshalb noch immer q3)
@@ -33579,16 +33580,25 @@ EOF
 	q4::inwork 25552,4829 25720,4828
 EOF
      },
-     { from  => 1627164000, # 2021-07-25 00:00
-       until => $isodate2epoch->("2022-03-31 17:00:00"), # undef, # XXX
-       text  => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich 31.03.2022',
+     { from  => 1666449676, # 1627164000, # 2021-07-25 00:00
+       until => undef, # $isodate2epoch->("2022-03-31 17:00:00"), # undef, # XXX
+       text  => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. nur für Fußgänger frei, Ende der Bauarbeiten unbekannt', # früher: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. wegen einer geplatzten Wasserleitung gesperrt, Gehweg für Radfahrer frei, vom 26.07.2021 bis voraussichtlich 31.03.2022
        type  => 'handicap',
        source_id => 'viz2021:13.444,52.53356,26.07.2021,08:18',
        data  => <<EOF,
-#: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
-#: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren; außerdem sind etwa 100m der Fahrbahn wieder befahrbar (q3 -> q2)
-# REMOVED --- #: also_indoor: traffic (G,H) --- #: last_checked: 2022-02-25 --- #: check_frequency: 45d --- #: next_check: 2022-03-31
-	q2::inwork 13057,14267 13158,14117
+# REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
+# REMOVED --- #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren; außerdem sind etwa 100m der Fahrbahn wieder befahrbar (q3 -> q2)
+#: by: https://www.deutsches-architekturforum.de/thread/14507-bauprojekte-am-velodrom-prenzlauer-berg/?postID=723688#post723688
+#: by: https://www.wg-a.com/projects/conrad-blenkle-strasse-36-berlin/ (Fertigstellung 05/2023)
+#: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder frei?
+#: note: In der Praxis kommt man als Radfahrer hier gut durch.
+#: also_indoor: traffic
+#: osm_watch: way id="8084121" version="37"
+#: osm_watch: way id="75617418" version="6"
+#: last_checked: 2022-10-22
+#: check_frequency: 60d
+#: next_check: 2023-05-31
+	q3::inwork 13057,14267 13158,14117
 EOF
      },
      { from  => 1627924220, # 2021-08-02 19:10
@@ -35716,7 +35726,7 @@ EOF
 #: also_indoor: traffic (none)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
 # REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
-#: last_checked: 2022-10-20 (mapillary) vvv
+#: last_checked: 2022-10-22 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-11-07 vvv
 	q3::inwork 13914,17016 13996,16959 14107,16889
@@ -36737,7 +36747,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-10-19
+#: last_checked: 2022-10-22
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -36805,7 +36815,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FAHLENBERGBRUECKE-2022
 #: source_id: viz2021:13.703766,52.402664,21.10.2022,20:00
-#: source_id: viz2021:13.70456,52.4024,21.10.2022,20:00
+#: source_id: viz2021:13.70456,52.4024,21.10.2022,20:00 (inaktiv)
 	2::inwork 31009,19 31080,-19
 EOF
      },
@@ -36816,6 +36826,17 @@ EOF
        source_id => '226401732',
        data  => <<EOF,
 	2::inwork 57435,13914 57366,13935 56605,14304
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Pasteurstr.: samstags 9-15 Uhr Wochenmarkt Arnswalder Platz, Fahrbahn zwischen Bötzowstr. und Hans-Otto-Str. gesperrt',
+       type  => 'handicap',
+       recurring => 1,
+       source_id => 'http://www.boetzowmarkt.de/',
+       data  => <<EOF,
+#: tempex: (sa) T09-T15
+	q4::temp:clock 12594,14065 12486,14143
 EOF
      },
     );
