@@ -23,7 +23,7 @@ Kiefholzstr./Hänselstr.: provisorische Fußgängerampel	F::inwork 15695,7254
 #: osm_watch: way id="936801541" version="3"
 #: XXX Ampel befindet sich östlich der Einmündung
 #: note: Anforderungsampel
-#: last_checked: 2022-10-18
+#: last_checked: 2022-10-23
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -667,7 +667,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 9254,6542
 	X 9212,6096
 	X 9161,5535
-#: XXX_prog Radfahrer von Arnulfstr. -> Attilastr. müssen auf dem Radweg faktisch links abbiegen und haben damit eine Ampel mehr
+#: XXX_prog Radfahrer von Arnulfstr. -> Attilastr. Richtung Osten müssen auf dem Radweg faktisch links abbiegen und haben damit eine Ampel mehr (aber keine Benutzungsplicht)
+#: XXX_prog Radfahrer von Attilastr. -> Arnulfstr. Richtung Westen müssen auf dem Radweg faktisch rechts abbiegen und haben dort eine Ampel mehr (und hier ist auch Benutzungspflicht)
 	X 8593,5491
 	X 9863,6617
 	X 9206,5193
@@ -1680,7 +1681,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # 
 #: XXX: seit mindestens Ende Juli 2022 ausgeschaltet
 #: add_fragezeichen: Bleibt die Ampel Mariannenstr./Reichenberger Str. dauerhaft ausgeschaltet?
-#: last_checked: 2022-10-13
+#: last_checked: 2022-10-23
 	X0 11616,10288
 # 
 #: XXX_prog: zusammenhängende Ampelanlage vvv
@@ -3553,7 +3554,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: XXX Die Ampel Hermannstr./Thomasstr. wird vermutlich permanent gemacht, die nächste Ampel weiter nördlich verschwindet dafür.
-#: last_checked: 2022-09-30
+#: last_checked: 2022-10-23
 #: check_frequency: 90d
 	X::inwork 12185,7381
 # 

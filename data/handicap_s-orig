@@ -642,7 +642,7 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 #: osm_watch: way id="996616282" version="9"
 #: osm_watch: way id="1100696455" version="1"
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2022-10-16 vvv
+#: last_checked: 2022-10-23 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2022-09-15 vvv
 # REMOVED (hier fertig) --- Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
@@ -771,7 +771,7 @@ Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,124
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
 #: XXX Laut Schild des Bezirksamts Umgestaltung bis August 2023 (!)
-#: also_indoor: traffic (ex-G(unvollständig),H(falsch),B)
+#: also_indoor: traffic (ex-G[unvollständig],H[falsch],B)
 #: last_checked: 2022-10-17 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2023-08-31 vvv

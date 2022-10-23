@@ -1617,12 +1617,12 @@ Paetowstr.: Poller	3 -13055,-3008 -13110,-3015 -13137,-3022
 Paetowstr.: Poller	3 -13137,-3022 -13110,-3015 -13055,-3008
 Am Raubfang (Potsdam)	1 -15308,1220 -15366,1249 -15436,1253 -15533,813
 Goetheplatz (Potsdam)	1 -9922,-1395 -9809,-1435
-Mittelstreifen	3nocross::ignrte 9161,5535 9158,5673 9176,5803
-Tempelhofer Damm -> Burgemeisterstr.: Mittelstreifen	3::igndisp 9176,5803 9158,5673 9361,5647
+Mittelstreifen	3nocross::ignrte 9161,5535 9158,5673 9167,5741 9176,5803
+Tempelhofer Damm -> Burgemeisterstr.: Mittelstreifen	3::igndisp 9167,5741 9158,5673 9361,5647
 Tempelhofer Damm -> Burgemeisterstr.: Mittelstreifen	3::igndisp 9161,5535 9158,5673 8981,5692
 Burgemeisterstr. -> Tempelhofer Damm: Mittelstreifen	3::igndisp 9361,5647 9158,5673 9161,5535
 Burgemeisterstr. -> Burgemeisterstr.: Mittelstreifen	3::igndisp 9361,5647 9158,5673 8981,5692
-Burgemeisterstr. -> Tempelhofer Damm: Mittelstreifen	3::igndisp 8981,5692 9158,5673 9176,5803
+Burgemeisterstr. -> Tempelhofer Damm: Mittelstreifen	3::igndisp 8981,5692 9158,5673 9167,5741
 Burgemeisterstr. -> Burgemeisterstr.: Mittelstreifen	3::igndisp 8981,5692 9158,5673 9361,5647
 Triftstr.	1 6715,15152 6743,15102
 Straßenbahntrasse	3nocross::ignrte 23818,5394 23849,5380 23942,5338

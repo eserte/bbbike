@@ -118,7 +118,7 @@ Gehwegplatten, aber mäßiger Zustand	RW1; 9233,8597 9229,8718
 #: source_id: viz2021:13.377609,52.464857,22.06.2021,10:47 (Leitungsbau bis 30.9.2021)
 #: XXX Grünbeschichtung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2022-10-15 vvv
+#: last_checked: 2022-10-23 vvv
 #: check_frequency: 120d vvv
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
@@ -144,7 +144,7 @@ neu asphaltiert, relativ breit	RW1; 8593,5491 8480,5350
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
 #: by: http://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 1. Quartal 2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ausbau wird 2021 abgeschlossen)
-#: last_checked: 2022-10-15 vvv
+#: last_checked: 2022-10-23 vvv
 #: check_frequency: 90d vvv
 alte Gehwegplatten, Bord gegen Gehweg	RW1; 8480,5350 8406,5258 8356,5195
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_21.01.2021_final.pdf (Gehwegparken wurde abgeordnet) (bestätigt)
@@ -262,13 +262,8 @@ Verbundsteinpflaster	RW1;RW1 8947,10956 8901,11011 8747,11194 8720,11226 8631,11
 	RW4;RW3 9865,10227 9873,10285
 	RW3;RW3 11393,10390 11443,10394
 	RW2;RW2 11443,10394 11671,10402
-#: source_id: viz2021:13.425502,52.499099,29.08.2022,06:00 (bis 9.12.2022)
-#: XXX Wie lange bleibt die Radspur hier erhalten?
-#: last_checked: 2022-10-15
-#: check_frequency: 45d
-#: next_check: 2022-12-09
-# früher: der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflichtig	RW1; 11671,10402 11949,10414
-provisorisch durch Poller geschützt	RW3; 11671,10402 11949,10414
+# REMOVED (vorfristig beendet) --- #: source_id: viz2021:13.425502,52.499099,29.08.2022,06:00 (bis 9.12.2022) --- #: XXX Wie lange bleibt die Radspur hier erhalten? --- #: last_checked: 2022-10-15 --- #: check_frequency: 45d --- #: next_check: 2022-12-09 --- #provisorisch durch Poller geschützt	RW3; 11671,10402 11949,10414
+der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflichtig	RW1; 11671,10402 11949,10414
 	RW1; 11949,10414 11671,10402
 	RW1; 11949,10414 12092,10428
 # REMOVED (nein) --- #: source_id: viz2021:13.428978,52.499277,26.08.2022,07:00 (bis 11.10.2022) --- #: XXX bleibt es bei der Radspur? --- #: last_checked: 2022-10-08 --- #: next_check: 2022-10-11 --- geschützter Radstreifen, mit "Leitboys"	RW3; 12092,10428 12212,10440
@@ -300,7 +295,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-10-20 (Ausschilderung fehlt noch) vvv
+#: last_checked: 2022-10-23 (Ausschilderung fehlt noch) vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 	RW1; 13596,10722 13633,10705
@@ -1091,7 +1086,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-10-18 vvv
+#: last_checked: 2022-10-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1247,13 +1242,14 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 7131,5865 7171,5831
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7827 (Erwähnung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.03.2021.pdf (Erwähnung)
 #: osm_watch: way id="357558840" version="16"
-#: last_checked: 2022-09-05
+#: last_checked: 2022-10-23
 #: check_frequency: 45d
 	RW3; 7236,5685 7497,5610
-	RW1; 8593,5491 8365,5502 8200,5510
-für Radfahrer freigegebene Busspur gilt Mo-Fr 13-19h	RW1; 8200,5510 8365,5502 8593,5491
-	RW1;RW3 8200,5510 8100,5512
-	RW3;RW3 8100,5512 8038,5514 7857,5519 7816,5519 7669,5536 7599,5553 7497,5610
+Verbundsteinpflaster	RW1; 8593,5491 8365,5502 8200,5510
+Gehwegplatten	RW1; 8200,5510 8100,5512
+Verbundsteinpflaster, für Radfahrer freigegebene Busspur gilt Mo-Fr 13-19h	RW1; 8200,5510 8365,5502 8593,5491
+	RW3; 8100,5512 8038,5514 7857,5519 7816,5519 7669,5536 7599,5553 7497,5610
+	RW3; 7497,5610 7599,5553 7669,5536 7816,5519 7857,5519 8038,5514 8100,5512 8200,5510
 Gehwegplatten	RW1; 4918,8872 4918,8785 4918,8740
 alte Gehwegplatten	RW1; 4918,8740 4892,8624
 Verbundsteinpflaster und alte Gehwegplatten	RW1; 4892,8624 4783,8557
@@ -2680,8 +2676,11 @@ Radspur zwischen Fahrspuren, Grünbeschichtung	RW4; 12162,8053 11979,8014
 	RW1;RW1 7979,7525 7938,7406
 	RW1;RW2 7600,7605 7696,7771
 	RW2;RW1 8215,6938 8232,6972 8319,7084
-Verbundsteinpflaster	RW1;RW1 9161,5535 8968,5554 8887,5564 8767,5571 8724,5570 8687,5554
-	RW2;RW1 8687,5554 8593,5491
+Verbundsteinpflaster	RW1; 9161,5535 8968,5554 8887,5564 8767,5571
+Verbundsteinpflaster, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr und Sa 9-16 Uhr	RW1; 8767,5571 8724,5570 8687,5554
+Verbundsteinpflaster	RW2; 8687,5554 8593,5491
+alte Gehwegplatten	RW1; 8593,5491 8687,5554 8724,5570 8767,5571
+Verbundsteinpflaster	RW1; 8767,5571 8887,5564 8968,5554 9161,5535
 	RW1;RW1 8200,5510 8177,5583 8176,5610
 	RW1;RW1 8061,5949 7967,5951
 	RW1;RW1 8176,5610 8179,5802 8092,5858 8061,5949 8096,6009 8182,6064
@@ -5980,9 +5979,9 @@ asphaltiert	RW1; 9660,17736 9721,17806
 #: last_checked: 2022-10-22 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-10-01 vvv
-#: osm_watch: way id="162965650" version="22"
+#: osm_watch: way id="162965650" version="23"
 	RW3; 8776,16268 8921,16578
-#: osm_watch: way id="761539110" version="7"
+#: osm_watch: way id="761539110" version="9"
 die letzten 20 Meter sind benutzungspflichtig	RW3; 8921,16578 8952,16666
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
@@ -6517,7 +6516,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2022-10-02
+#: last_checked: 2022-10-23
 #: check_frequency: 60d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünbeschichtung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12916,7775
@@ -6552,7 +6551,7 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2022-10-02
+#: last_checked: 2022-10-23
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
@@ -7587,17 +7586,18 @@ asphaltierter gemeinsamer Geh- und Radweg, sehr breit	RW2;RW8 21115,271 21286,44
 Busspur gilt Mo-Fr 7-19 Uhr	RW5; 7292,17316 7381,17317 7602,17399
 # 
 #: note: Tempelhofer Damm, Richtung Süden
-	RW4; 9249,6642 9254,6542 9253,6484
-#: note: Pollerreihe unterbrochen von der Bushaltestelle
-Poller	RW4; 9253,6484 9250,6414 9246,6364 9245,6352 9221,6179
-	RW4; 9221,6179 9212,6096 9192,5930 9176,5803 9158,5673 9161,5535 9176,5413 9188,5333
-Poller	RW4; 9188,5333 9196,5272
+#: note: Pollerreihe von Bushaltestellen unterbrochen
+Poller und Leitboys	RW4; 9249,6642 9254,6542 9253,6484 9250,6414 9246,6364 9245,6352 9221,6179 9212,6096 9192,5930
+	RW4; 9192,5930 9176,5803 9167,5741
+#: note: Pollerreihe von Bushaltestelle unterbrochen
+Poller	RW4; 9167,5741 9158,5673 9161,5535 9176,5413 9188,5333 9196,5272 9206,5193
 # 
 #: note: Tempelhofer Damm, Richtung Norden
-	RW4; 9161,5535 9158,5673 9176,5803 9192,5930 9212,6096 9221,6179
+Poller	RW4; 9161,5535 9158,5673 9167,5741 9176,5803
+	RW4; 9176,5803 9192,5930 9212,6096
 #: note: Pollerreihe unterbrochen von der Bushaltestelle
-Poller	RW4; 9221,6179 9245,6352 9246,6364 9250,6414
-	RW4; 9250,6414 9253,6484 9254,6542 9249,6642
+Poller	RW4; 9212,6096 9221,6179 9245,6352 9246,6364 9250,6414 9253,6484 9254,6542
+Leitboys	RW4; 9254,6542 9249,6642
 # 
 #: next_check_id: TEDAMM-2021
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1069651.php (14.04. bis 20.06.2021 sowie 11.08. bis 07.10.2021)
@@ -7631,13 +7631,12 @@ Poller	RW4; 9221,6179 9245,6352 9246,6364 9250,6414
 #: source_id: viz2021:13.385019,52.4502,18.07.2022,07:00 (Kanalarbeiten bis 28.10.2022)
 #: XXX: Die provisorischen Radspuren werden vermutlich "verstetigt" vvv
 #: priority: #A vvv
-#: last_checked: 2022-10-02 vvv
+#: last_checked: 2022-10-23 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 # REMOVED --- #: valid: -20211007 vvv
 # REMOVED --- #: osm_watch: way id="31773580" version="14"
 #: osm_watch: way id="111048866" version="13"
-provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9196,5272 9206,5193
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9206,5193 9239,4980 9248,4904 9259,4815 9275,4672
 wegen Hochbauarbeiten nur fängt die Radspur erst nach ca. 70m an	RW4; 9275,4672 9294,4536
 #: osm_watch: way id="28680188" version="20"
@@ -7645,10 +7644,9 @@ provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4
 Gehweg für Radfahrer frei	RW1; 9426,3797 9438,3745 9455,3671
 #: osm_watch: way id="30958674" version="19"
 provisorischer Radstreifen über die gesamte Fahrspur, frei für Linienverkehr	RW4; 9426,3797 9375,4022 9346,4144 9333,4229 9310,4407 9294,4536 9275,4672 9259,4815 9248,4904 9239,4980 9206,5193
-provisorischer Radstreifen über die gesamte Fahrspur	RW4; 9206,5193 9196,5272
 #: osm_watch: way id="4526218" version="23"
-#: note: Benutzungspflicht ist hier nicht ganz klar
-provisorischer Radweg auf dem Bürgersteig	RW2; 9196,5272 9188,5333 9176,5413 9161,5535
+#: note: keine Benutzungspflicht
+provisorischer Radweg auf dem Bürgersteig	RW1; 9206,5193 9196,5272 9188,5333 9176,5413 9161,5535
 # REMOVED --- #: valid ^^^
 #: next_check ^^^
 #: check_frequency ^^^
@@ -7750,39 +7748,32 @@ Gehweg für Radfahrer frei	RW1;RW1 475,1202 587,1230 718,1264 857,1300
 	RW2; 1566,11409 1574,11379
 # 
 #: note: Hermannstr., Richtung Norden
-#: note: Grünbeschichtung fehlt an den Bushaltestellen vvv
 Grünbeschichtung, Poller	RW4; 12510,6508 12470,6586
 #: note: Bushaltestelle
 Busspur ist immer gültig	RW5; 12470,6586 12448,6646
 Grünbeschichtung, Poller	RW4; 12448,6646 12426,6703
 Grünbeschichtung	RW4; 12426,6703 12395,6785
 #: note: Radwegschild erst 40m nach der Kreuzung
-Grünbeschichtung	RW4; 12395,6785 12375,6842
+Grünbeschichtung	RW4; 12395,6785 12388,6806 12375,6842
 Busspur ist immer gültig	RW5; 12375,6842 12362,6881 12347,6923
-# REMOVED (zu kurz?) --- #: next_check_id: HERMANN-2022 --- #: XXX wird hier noch ein Radwegschild hingestellt? --- #: last_checked: 2022-08-05
 Grünbeschichtung	RW3; 12347,6923 12342,6936
-Grünbeschichtung	RW4; 12342,6936 12317,7007 12304,7039 12291,7074
+Leitboys, Grünbeschichtung	RW4; 12342,6936 12317,7007 12304,7039 12291,7074
 Radspur hinter parkenden Autos, Poller, Grünbeschichtung	RW4; 12291,7074 12259,7164
 Grünbeschichtung	RW4; 12259,7164 12244,7205
 Poller, Grünbeschichtung	RW4; 12244,7205 12221,7271
-#: note ^^^
-provisorische Radspuren	RW4;RW3 12185,7381 12221,7271
-# REMOVED --- #: XXX Radweg markiert und ausgeschildert, allerdings ignoriert --- #: last_checked: 2021-12-13 --- #: check_frequency: 7d
+provisorische Radspur	RW3; 12221,7271 12185,7381
 # 
 #: note: Hermannstr., Richtung Süden
+provisorische Radspur	RW4; 12185,7381 12221,7271
 Radspur hinter parkenden Autos, Poller, Grünbeschichtung	RW4; 12221,7271 12244,7205
-Poller, Grünbeschichtung	RW4; 12244,7205 12259,7164 12291,7074 12304,7039 12317,7007
+Poller und Leitboys, Grünbeschichtung	RW4; 12244,7205 12259,7164 12291,7074 12304,7039 12317,7007
 Grünbeschichtung	RW4; 12317,7007 12342,6936
-#: note: nur Markierung, kein Busspurschild
-Bushaltestelle; die letzten 25 Meter als Radspur (Poller, Grünbeschichtung)	RW5; 12342,6936 12347,6923 12362,6881 12375,6842 12395,6785
-Radspur hinter parkenden Autos, Poller, Grünbeschichtung	RW4; 12395,6785 12426,6703
+Busspur ist immer gültig	RW5; 12342,6936 12347,6923 12362,6881 12375,6842 12388,6806
+Poller, Grünbeschichtung	RW4; 12388,6806 12395,6785
+Radspur hinter parkenden Autos, Poller und Leitboys, Grünbeschichtung	RW4; 12395,6785 12426,6703
 Radspur hinter parkenden Autos, Grünbeschichtung	RW3; 12426,6703 12448,6646
-Bushaltestelle	RW5; 12448,6646 12470,6586
-#: next_check_id: HERMANN-2022
-#: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2022-10-02
-#: check_frequency: 90d
-Grünbeschichtung	RW3; 12470,6586 12510,6508
+Busspur ist immer gültig	RW5; 12448,6646 12470,6586
+Grünbeschichtung	RW4; 12470,6586 12510,6508
 # 
 # REMOVED (korrekt) --- #: XXX Geltungszeit überprüfen!
 Busspur ist immer gültig	RW5; 3835,10352 3813,10435

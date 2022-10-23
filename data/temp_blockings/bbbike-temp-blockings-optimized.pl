@@ -5134,7 +5134,24 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'type' => 'handicap',
          'until' => 1669824000
        },
-       undef,
+       {
+         'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/markthalle-101-ehemalige-quellekaufhaus.587/#post-17884
+#: by: https://www.deutsches-architekturforum.de/thread/14587-revitalisierung-b%C3%BCrokomplex-kalle-neuk%C3%B6lln-in-bau/
+#: by: https://www.kalle-neukoelln.com/#architektur (Erstbezüge ab 2022 möglich)
+#: osm_watch: way id="734271970" version="5"
+#: osm_watch: way id="975241319" version="4"
+#: osm_watch: way id="970452276" version="3"
+# REMOVED (laut osm note 3139636 wieder offen) --- #: also_indoor: traffic (none) --- #: last_checked: 2022-04-18 --- #: check_frequency: 45d --- #: next_check: 2022-12-31
+# REMOVED ---	q4::inwork 12779,8188 12805,8194 12873,8218 12911,8232
+#: last_checked: 2022-10-23
+	q3::inwork; 12805,8194 12873,8218 12911,8232
+',
+         'from' => undef,
+         'id' => 3537,
+         'text' => 'Ganghoferstr.: Einbahnstraße wegen Bauarbeiten, Gültigkeit für Radfahrer unklar',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: also_indoor: traffic (G,H,B)
@@ -5418,7 +5435,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        {
          'data' => '#: XXX einige Halteverbotsschilder bis 1.11.2022
 #: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
-#: last_checked: 2022-10-16 vvv
+#: last_checked: 2022-10-23 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-11-01 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
@@ -5580,7 +5597,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
 #: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 30.9.2022) (inaktiv)
 #: source_id: viz2021:13.395207,52.520461,05.10.2022,07:00 (Am Kupfergraben, bis 17.10.2022) (bis 29.10.2022)
-#: last_checked: 2022-10-06 vvv
+#: last_checked: 2022-10-22 (mapillary) vvv
 # REMOVED --- #: next_check: 2022-09-30 vvv
 # REMOVED (laut rbb hier aufgehoben) --- Dorotheenstr.	q4::inwork 9742,12609 9870,12657
 Georgenstr.	q3::inwork 9754,12775 9659,12704
@@ -6168,6 +6185,29 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'text' => 'Pasteurstr.: samstags 9-15 Uhr Wochenmarkt Arnswalder Platz, Fahrbahn zwischen Bötzowstr. und Hans-Otto-Str. gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Bis wann geht die Sperrung?
+#: last_checked: 2022-10-23
+	q3::inwork 12328,10442 12274,10612
+',
+         'from' => undef,
+         'id' => 3663,
+         'text' => 'Lausitzer Platz: Sperrung der westlichen Fahrbahn an der Skalitzer Str.',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Sind Radfahrer auch betroffen?
+#: next_check: 2022-10-24
+	q4::inwork; 16468,10695 16537,10895
+',
+         'from' => 1666501200,
+         'id' => 3664,
+         'source_id' => 'viz2021:13.493078,52.501052,24.10.2022,07:00',
+         'text' => 'Weitlingstr.: Bauarbeiten, zwischen Lückstr. und Rupprechtstr. Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.10.2022 07:00 bis 04.11.2022 17:00 ',
+         'type' => 'handicap',
+         'until' => 1667577600
        }
      
 );
