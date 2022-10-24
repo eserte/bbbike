@@ -31421,7 +31421,7 @@ EOF
 # REMOVED --- #: XXX prüfen, ob die Sperrung tatsächlich erfolgt vvv
 # REMOVED --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 # REMOVED --- #: next_check: 2020-07-01 vvv
-	2::inwork 9507,-85 9468,-85 9271,323 9253,370 9218,458 9178,556
+	2::inwork 9507,-85 9473,-92 9271,323 9253,370 9218,458 9178,556
 	2::inwork 9271,323 9296,335 9249,434 9218,458
 EOF
      },
@@ -31534,8 +31534,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2021-05-30 08:30:00"), # 1589275980, # 2020-05-12 11:33
-       until => $isodate2epoch->("2022-10-07 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, bis 07.10.2022',
+       until => undef, # $isodate2epoch->("2022-10-07 17:00:00"), # $isodate2epoch->("2021-05-31 17:00:00"), # 1599231600, # 2020-09-04 17:00
+       text  => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, Ende der Bauarbeiten unbekannt', # früher: bis 07.10.2022
        type  => 'handicap',
        source_id => '2147345834', # (inaktiv)
        data  => <<EOF,
@@ -31555,22 +31555,24 @@ EOF
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
 # REMOVED --- #: XXX NEW	Gardeschützenweg (Lichterfelde) in beiden Richtungen zwischen Hindenburgdamm und Lipaer Straße: Leitungsbau,Vollsperrung, Fußverkehr frei, vom 31.05.2021 08:30 Uhr bis 23.12.2021 17:00 Uhr
-# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv --- #: last_checked: 2020-12-27 (mapillary) vvv --- #: next_check: 2021-05-03 vvv
 # REMOVED (hier nicht mehr) --- #: note: nur etwa 100m, deshalb q3 statt q4 ---	q3::inwork 4515,4760 4214,4595
 #: note: Einbahnstraßenregelung, Bauarbeiten laut Baustellenschild bis September 2022
 # REMOVED (doppelt) ---	q4::inwork; 4214,4595 4039,4500
 # REMOVED (doppelt) ---	q4::inwork; 4039,4500 3934,4441
 # REMOVED (hier nicht) ---	q4::inwork; 3934,4441 3643,4232
-	q4::inwork; 3643,4232 3523,4139
 # REMOVED (hier nicht) ---	q4::inwork 3934,4441 4039,4500
+#: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
+#: last_checked: 2022-10-24 vvv
+	q4::inwork; 3643,4232 3523,4139
 	q3::inwork; 4214,4595 4039,4500
 Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
 Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 # REMOVED (hier nicht) --- q4::inwork 4214,4595 4515,4760
 # REMOVED --- #: note: Einbahnstraßenregelung, bis 30.6.2022 ---	q4::inwork; 3643,4232 3523,4139
 # REMOVED --- #: note: hier nur ein kurzes Stück ---	q2::inwork; 4214,4595 4039,4500
 # REMOVED (nicht mehr, laut rbb) ---	q4::inwork 4179,4662 4214,4595
-# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
 #: also_indoor ^^^
 EOF
      },
@@ -34305,7 +34307,7 @@ EOF
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="13"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2022-07-24
+#: last_checked: 2022-10-24
 #: check_frequency: 180d
 	2::inwork 9699,-600 9562,-619
 EOF
@@ -35109,7 +35111,7 @@ EOF
 #: note: Baustelle existiert weiterhin, trotz der entfernten VIZ-Meldung; laut rbb bis 30.11.2022
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
 #: also_indoor: traffic (G,H,B) vvv
-#: last_checked: 2022-10-18 vvv
+#: last_checked: 2022-10-24 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-11-30 vvv
 	q4::inwork; 15560,7400 15693,7512
@@ -35222,14 +35224,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1666624612, # undef, # XXX
        text  => 'Hänselstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Südwesten, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: HAENSEL-2022
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-G(falsch))
-#: last_checked: 2022-10-18
+# REMOVED (nur noch eine ganz kurze Einbahnstraße an der Kiefholzstr.) --- #: next_check_id: HAENSEL-2022 --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? --- #: also_indoor: traffic (ex-G(falsch)) --- #: last_checked: 2022-10-18
 	q4::inwork; 15436,7031 15555,7133 15695,7254
 EOF
      },
@@ -35319,6 +35318,8 @@ EOF
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf ("weiterhin für ca. 2 Jahre")
 #: source_id: bvg2021:150#BVG300484_0
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022)
+#: XXX Keine Verkehrsmeldung mehr --- wurde die Baustelle aufgehoben?
+#: next_check: 2022-10-24
 	q4::inwork; 16166,25767 16121,25818
 EOF
      },
@@ -36576,7 +36577,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: laut rbb
-#: also_indoor: traffic (H,B) vvv
+#: also_indoor: traffic (H,B,G) vvv
 #: XXX Ende der Sperrung? vvv
 #: check_frequency: 14d vvv
 #: last_checked: 2022-10-10 vvv
@@ -36777,15 +36778,21 @@ EOF
      },
      { from  => 1665942194, # 2022-10-16 19:43
        until => 1697565600, # 2023-10-17 20:00
-       text  => 'Mauerweg: Bauarbeiten im Bereich Lichterfelde und Marienfelde, abschnittsweise ist der Mauerweg gesperrt, bis Herbst 2023',
+       text  => 'Mauerweg: Bauarbeiten im Bereich Lichterfelde und Marienfelde, einige Abschnitte des Mauerwegs können gesperrt sein, bis Herbst 2023',
        type  => 'gesperrt',
        source_id => 'https://www.berliner-woche.de/tempelhof-schoeneberg/c-bauen/bauarbeiten-an-der-berliner-stadtgrenze-sollen-ein-jahr-lang-dauern_a360599',
        data  => <<EOF,
 #: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-beginn-der-baumassnahmen-am-jenbacher-weg
-#: XXX Wo genau sind die gesperrten Bereiche? vvv
-Mauerweg Marienfelde - Lichterfelde	2::inwork 7097,-527 6961,-389 6668,-100 6498,71 6351,219 6256,363 6204,331 6013,211 5832,93 5441,-150 4842,-547 4596,-707 4406,-910
+#: add_fragezeichen: Wo genau sind die gesperrten Abschnitte des Mauerwegs? vvv
+#: last_checked: 2022-10-24 vvv
+#: check_frequency: 60d vvv
+Mauerweg Marienfelde - Lichterfelde	2::inwork 7097,-527 6961,-389 6668,-100 6498,71 6351,219 6256,363
+# REMOVED (separater Eintrag) --- Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93 5441,-150
+Mauerweg Marienfelde - Lichterfelde	2::inwork 5441,-150 4842,-547 4596,-707 4406,-910
 Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 7593,-1034 7142,-568
-#: XXX ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => undef, # 
@@ -36848,7 +36855,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2022-10-23
+#: last_checked: 2022-10-24
 	q3::inwork 12328,10442 12274,10612
 EOF
      },
@@ -36861,6 +36868,18 @@ EOF
 #: add_fragezeichen: Sind Radfahrer auch betroffen?
 #: next_check: 2022-10-24
 	q4::inwork; 16468,10695 16537,10895
+EOF
+     },
+     { from  => 1665942194, # 2022-10-16 19:43
+       until => 1697565600, # 2023-10-17 20:00
+       text  => 'Mauerweg: Bauarbeiten zwischen Osdorfer Str. und Jenbacher Weg, Weg ist gesperrt (Stand Ende Oktober 2022)',
+       type  => 'gesperrt',
+       source_id => 'https://www.berliner-woche.de/tempelhof-schoeneberg/c-bauen/bauarbeiten-an-der-berliner-stadtgrenze-sollen-ein-jahr-lang-dauern_a360599',
+       data  => <<EOF,
+#: add_fragezeichen: Ist dieser Abschnitt des Mauerwegs noch gesperrt?
+#: last_checked: 2022-10-24
+#: check_frequency: 60d
+Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93 5441,-150
 EOF
      },
     );

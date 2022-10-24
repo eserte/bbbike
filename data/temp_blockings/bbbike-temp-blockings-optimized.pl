@@ -4088,7 +4088,50 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
+#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
+#: by: https://viz.berlin.de/2021/05/verkehrsvorschau-310521/ (Fuß- und Radverkehr ist frei)
+#: by: https://www.openstreetmap.org/note/3032478 (nicht mehr gesperrt!)
+# REMOVED --- #: XXX laut osm-Notiz nicht mehr gesperrt --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
+#: source_id: 2147346671 (bis 31.5.2021, Gesamtbaumaßnahme bis Ende 2021)
+#: source_id: 2147347233 (bis 23.12.2021)
+#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022) (bis 7.10.2022)
+#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.6.2022) (inaktiv)
+#: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022)
+#: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
+#: source_id: bvg2021:188#BVG259885_0
+# REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
+#: also_indoor: traffic (H,ex-G,ex-B) vvv
+#: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
+# REMOVED --- #: XXX NEW	Gardeschützenweg (Lichterfelde) in beiden Richtungen zwischen Hindenburgdamm und Lipaer Straße: Leitungsbau,Vollsperrung, Fußverkehr frei, vom 31.05.2021 08:30 Uhr bis 23.12.2021 17:00 Uhr
+# REMOVED (hier nicht mehr) --- #: note: nur etwa 100m, deshalb q3 statt q4 ---	q3::inwork 4515,4760 4214,4595
+#: note: Einbahnstraßenregelung, Bauarbeiten laut Baustellenschild bis September 2022
+# REMOVED (doppelt) ---	q4::inwork; 4214,4595 4039,4500
+# REMOVED (doppelt) ---	q4::inwork; 4039,4500 3934,4441
+# REMOVED (hier nicht) ---	q4::inwork; 3934,4441 3643,4232
+# REMOVED (hier nicht) ---	q4::inwork 3934,4441 4039,4500
+#: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
+#: last_checked: 2022-10-24 vvv
+	q4::inwork; 3643,4232 3523,4139
+	q3::inwork; 4214,4595 4039,4500
+Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
+Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+# REMOVED (hier nicht) --- q4::inwork 4214,4595 4515,4760
+# REMOVED --- #: note: Einbahnstraßenregelung, bis 30.6.2022 ---	q4::inwork; 3643,4232 3523,4139
+# REMOVED --- #: note: hier nur ein kurzes Stück ---	q2::inwork; 4214,4595 4039,4500
+# REMOVED (nicht mehr, laut rbb) ---	q4::inwork 4179,4662 4214,4595
+#: also_indoor ^^^
+',
+         'from' => 1622356200,
+         'id' => 3261,
+         'source_id' => '2147345834',
+         'text' => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -4684,7 +4727,7 @@ Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Trave
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20220426/
 #: osm_watch: way id="114381366" version="13"
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2022-07-24
+#: last_checked: 2022-10-24
 #: check_frequency: 180d
 	2::inwork 9699,-600 9562,-619
 ',
@@ -5114,7 +5157,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: note: Baustelle existiert weiterhin, trotz der entfernten VIZ-Meldung; laut rbb bis 30.11.2022
 #: XXX Bleibt die Baustelle bis Oktober 2022 so? oder nur bis August 2022? vvv
 #: also_indoor: traffic (G,H,B) vvv
-#: last_checked: 2022-10-18 vvv
+#: last_checked: 2022-10-24 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-11-30 vvv
 	q4::inwork; 15560,7400 15693,7512
@@ -5186,19 +5229,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: HAENSEL-2022
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: also_indoor: traffic (ex-G(falsch))
-#: last_checked: 2022-10-18
-	q4::inwork; 15436,7031 15555,7133 15695,7254
-',
-         'from' => undef,
-         'id' => 3544,
-         'text' => 'Hänselstr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Südwesten, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5230,6 +5261,8 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf ("weiterhin für ca. 2 Jahre")
 #: source_id: bvg2021:150#BVG300484_0
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022)
+#: XXX Keine Verkehrsmeldung mehr --- wurde die Baustelle aufgehoben?
+#: next_check: 2022-10-24
 	q4::inwork; 16166,25767 16121,25818
 ',
          'from' => 1652122429,
@@ -5935,7 +5968,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        },
        {
          'data' => '#: note: laut rbb
-#: also_indoor: traffic (H,B) vvv
+#: also_indoor: traffic (H,B,G) vvv
 #: XXX Ende der Sperrung? vvv
 #: check_frequency: 14d vvv
 #: last_checked: 2022-10-10 vvv
@@ -6115,15 +6148,21 @@ Gerichtstr.	q3::inwork 7464,15409 7627,15412
        },
        {
          'data' => '#: by: https://gruen-berlin.de/pressemitteilung/berliner-mauerweg-beginn-der-baumassnahmen-am-jenbacher-weg
-#: XXX Wo genau sind die gesperrten Bereiche? vvv
-Mauerweg Marienfelde - Lichterfelde	2::inwork 7097,-527 6961,-389 6668,-100 6498,71 6351,219 6256,363 6204,331 6013,211 5832,93 5441,-150 4842,-547 4596,-707 4406,-910
+#: add_fragezeichen: Wo genau sind die gesperrten Abschnitte des Mauerwegs? vvv
+#: last_checked: 2022-10-24 vvv
+#: check_frequency: 60d vvv
+Mauerweg Marienfelde - Lichterfelde	2::inwork 7097,-527 6961,-389 6668,-100 6498,71 6351,219 6256,363
+# REMOVED (separater Eintrag) --- Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93 5441,-150
+Mauerweg Marienfelde - Lichterfelde	2::inwork 5441,-150 4842,-547 4596,-707 4406,-910
 Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 7593,-1034 7142,-568
-#: XXX ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
 ',
          'from' => 1665942194,
          'id' => 3657,
          'source_id' => 'https://www.berliner-woche.de/tempelhof-schoeneberg/c-bauen/bauarbeiten-an-der-berliner-stadtgrenze-sollen-ein-jahr-lang-dauern_a360599',
-         'text' => 'Mauerweg: Bauarbeiten im Bereich Lichterfelde und Marienfelde, abschnittsweise ist der Mauerweg gesperrt, bis Herbst 2023',
+         'text' => 'Mauerweg: Bauarbeiten im Bereich Lichterfelde und Marienfelde, einige Abschnitte des Mauerwegs können gesperrt sein, bis Herbst 2023',
          'type' => 'gesperrt',
          'until' => 1697565600
        },
@@ -6188,7 +6227,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
        },
        {
          'data' => '#: add_fragezeichen: Bis wann geht die Sperrung?
-#: last_checked: 2022-10-23
+#: last_checked: 2022-10-24
 	q3::inwork 12328,10442 12274,10612
 ',
          'from' => undef,
@@ -6208,6 +6247,19 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'text' => 'Weitlingstr.: Bauarbeiten, zwischen Lückstr. und Rupprechtstr. Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.10.2022 07:00 bis 04.11.2022 17:00 ',
          'type' => 'handicap',
          'until' => 1667577600
+       },
+       {
+         'data' => '#: add_fragezeichen: Ist dieser Abschnitt des Mauerwegs noch gesperrt?
+#: last_checked: 2022-10-24
+#: check_frequency: 60d
+Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93 5441,-150
+',
+         'from' => 1665942194,
+         'id' => 3665,
+         'source_id' => 'https://www.berliner-woche.de/tempelhof-schoeneberg/c-bauen/bauarbeiten-an-der-berliner-stadtgrenze-sollen-ein-jahr-lang-dauern_a360599',
+         'text' => 'Mauerweg: Bauarbeiten zwischen Osdorfer Str. und Jenbacher Weg, Weg ist gesperrt (Stand Ende Oktober 2022)',
+         'type' => 'gesperrt',
+         'until' => 1697565600
        }
      
 );

@@ -128,7 +128,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 #: source_id: 2147345858
 #: last_checked: 2022-07-24
 #: next_check: 2023-07-31
-(Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10207,-2173 10226,-2224 10217,-2229 10208,-2231 10161,-2146 10096,-2137
+(Notweg Bahnübergang Bahnhofstr.): Fußgänger, Fahrrad ggfs. schieben	q3 10231,-2159 10207,-2173 10200,-2176 10182,-2183 10161,-2146 10096,-2137
 # 
 ### Treptow ###
 # 
@@ -501,7 +501,7 @@ Wandlitzstr.: Sperrung der Fahrbahn zwischen Heiligenberger Str. und Stühlinger 
 # REMOVED (nein) --- #: XXX überprüfen, ob der Gehweg legal für Radfahrer befahrbar ist
 #: XXX Bis wann gehen die Bauarbeiten?
 #: osm_watch: way id="40451054" version="14"
-#: last_checked: 2022-10-05
+#: last_checked: 2022-10-23 (krickstadt)
 #: next_check: 2023-03-31
 #: valid: -20230331
 Zufahrt Zentrum Schöneweide: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine	q4::inwork 17728,5756 17656,5701
@@ -4297,6 +4297,10 @@ Straßenbahnübergang	q3 21176,16480 21181,16479 21183,16467 21192,16466
 (Straße 78 - Mauerweg): schmal	q2 7715,19408 7704,19366
 #: note: Ausschilderung: am östlichen Ende Gehweg, keine Freigabe, am westlichen Ende kein Schild
 Neukirchstr.: einige Fußgänger	q1 12751,18401 12885,18329
+#: XXX_prog BS, ansonsten q1
+(Ernst-Lemmer-Ring - Buschgrabenweg): gemeinsamer Fuß- und Radweg, Bordstein am südlichen Ende	q3 -31,1606 0,1503
+#: note: am westlichen Ende explizites Geh+Radwegzeichen, am östlichen Ende nur ein Grünanlagen-Schild ohne Zusatzschilder
+(Türksteinweg - Jänickestr.): einige Fußgänger, schmal	q2 1372,1208 1416,1228 1458,1266 1530,1282 1600,1262 1702,1278
 # 
 ######################### User Contributions #################################
 # 

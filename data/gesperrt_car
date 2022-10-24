@@ -682,18 +682,18 @@ Parkstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13712,16089 13737,15994
 Talsandweg: Einbahnstraße	1 3206,21179 3138,21372
 Mittelstreifen	3nocross::ignrte 10047,813 10187,872 10276,906
 Glaserweg -> Buckower Chaussee: Mittelstreifen	3::igndisp 10237,749 10187,872 10047,813
-Mittelstreifen	3nocross::ignrte 10485,807 10522,708 10539,662 10590,525
-Lichtenrader Damm -> Reichnerweg: Mittelstreifen	3::igndisp 10522,708 10539,662 10726,739
-Lichtenrader Damm -> Feldstedter Weg: Mittelstreifen	3::igndisp 10590,525 10539,662 10423,636
-Feldstedter Weg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10423,636 10539,662 10522,708
-Feldstedter Weg -> Reichnerweg: Mittelstreifen	3::igndisp 10423,636 10539,662 10726,739
-Reichnerweg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10726,739 10539,662 10590,525
-Reichnerweg -> Feldstedter Weg: Mittelstreifen	3::igndisp 10726,739 10539,662 10423,636
-Mittelstreifen	3nocross::ignrte 10427,968 10485,807 10522,708 10539,662
+Mittelstreifen	3nocross::ignrte 10485,807 10522,708 10534,674 10590,525
+Lichtenrader Damm -> Reichnerweg: Mittelstreifen	3::igndisp 10522,708 10534,674 10726,739
+Lichtenrader Damm -> Feldstedter Weg: Mittelstreifen	3::igndisp 10590,525 10534,674 10423,636
+Feldstedter Weg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10423,636 10534,674 10522,708
+Feldstedter Weg -> Reichnerweg: Mittelstreifen	3::igndisp 10423,636 10534,674 10726,739
+Reichnerweg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10726,739 10534,674 10590,525
+Reichnerweg -> Feldstedter Weg: Mittelstreifen	3::igndisp 10726,739 10534,674 10423,636
+Mittelstreifen	3nocross::ignrte 10427,968 10485,807 10522,708 10534,674
 Lichtenrader Damm -> Baldersheimer Weg: Mittelstreifen	3::igndisp 10427,968 10485,807 10674,882
 Baldersheimer Weg -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10674,882 10485,807 10522,708
-Mittelstreifen	3nocross::ignrte 10539,662 10590,525 10617,452 10620,445
-Lichtenrader Damm -> Dielingsgrund: Mittelstreifen	3::igndisp 10539,662 10590,525 10783,587
+Mittelstreifen	3nocross::ignrte 10534,674 10590,525 10617,452 10620,445
+Lichtenrader Damm -> Dielingsgrund: Mittelstreifen	3::igndisp 10534,674 10590,525 10783,587
 Dielingsgrund -> Lichtenrader Damm: Mittelstreifen	3::igndisp 10783,587 10590,525 10617,452
 Mittelstreifen	3nocross::ignrte 10638,403 10676,299 10713,197 10735,137
 Lichtenrader Damm -> Kraatzweg: Mittelstreifen	3::igndisp 10638,403 10676,299 10866,364
@@ -1947,8 +1947,8 @@ Suermondtstr. -> Konrad-Wolf-Str.: Straßenbahntrasse	3::igndisp 16880,16064 1675
 Konrad-Wolf-Str. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16719,16005 16753,16111 16653,16150
 Bärbel-Bohley-Ring	1 9917,15813 9910,15876
 Bärbel-Bohley-Ring	1 9997,15884 9910,15876 9747,15847 9744,15793
-Mittelstreifen	3nocross::ignrte 4867,690 4875,677 4948,562
-Osdorfer Str. -> Mercatorweg: Mittelstreifen	3::igndisp 4948,562 4875,677 4695,556
+Mittelstreifen	3nocross::ignrte 4867,690 4875,677 4937,579
+Osdorfer Str. -> Mercatorweg: Mittelstreifen	3::igndisp 4937,579 4875,677 4695,556
 Mercatorweg -> Osdorfer Str.: Mittelstreifen	3::igndisp 4695,556 4875,677 4867,690
 Siegfriedstr. - Rüdigerstr.: Abbiegen verboten	3 16826,12408 16820,12339 16918,12325
 Mittelstreifen	3nocross::ignrte 16127,11950 16214,11935 16317,11920

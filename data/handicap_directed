@@ -80,7 +80,7 @@ Prenzlauer Allee - Wohngebiet: linker Gehweg	DH:h=q3,180 12075,16144 12061,16091
 Residenzstr. - Am Schäfersee: linker Gehweg	DH:h=q3-,30 7579,17532 7572,17558 7477,17544
 Residenzstr. - Lettestr.: linker Gehweg	DH:h=q3,80 7602,17399 7675,17430 7707,17445
 Karl-Marx-Allee - Berolinastr.: linker Gehweg	DH:h=q3,75 11226,12945 11289,12908 11367,12940
-Osdorfer Str. - Mercartorweg: Fußgängerampel	DH:len=30:tl 4948,562 4875,677 4695,556
+Osdorfer Str. - Mercartorweg: Fußgängerampel	DH:len=30:tl 4937,579 4875,677 4695,556
 Straße 106 - Indira-Gandhi-Str.: Umweg zur Überquerungsmöglichkeit	DH:len=90 14666,14845 14828,15050 14686,15608
 Indira-Gandhi-Str. - Straße 106: linker Gehweg	DH:h=q3,45 14843,15007 14828,15050 14666,14845
 Gervinusstr. - Lewishamstr.: linker Gehweg	DH:h=q3,45 3835,10915 3623,10800 3644,10759
@@ -179,10 +179,10 @@ Darßer Str. - Malchower See: zwei Bordsteine	DH:t=10 15238,18015 15505,17967 158
 Malchower See - Darßer Str.: zwei Bordsteine	DH:t=10 15825,18385 15505,17967 15567,17956
 Wiltbergstr. - Röntgentaler Weg: Fußgängerampel mitbenutzen, Anforderung	DH:tl 16121,25818 16166,25767 16222,25829
 Salvador-Allende-Brücke - An der Müggelspree: Bordstein beim Überqueren der Salvador-Allende-Str.	DH:t=5 23433,5037 23443,4942 23447,4906 23462,4906
-Reichnerweg - Lichtenrader Damm: Überquerungsmöglichkeit 30m weiter nördlich	DH:len=60 10726,739 10539,662 10590,525
-Lichtenrader Damm - Reichnerweg: Überquerungsmöglichkeit 30m weiter nördlich	DH:h=q3,30 10522,708 10539,662 10726,739
-Reichnerweg - Feldstedter Weg: Überquerungsmöglichkeit 30m weiter nördlich	DH:len=60 10726,739 10539,662 10423,636
-Feldstedter Weg - Reichnerweg: Überquerungsmöglichkeit 30m weiter nördlich	DH:len=60:h=q3,60 10423,636 10539,662 10726,739
+Reichnerweg - Lichtenrader Damm: Überquerungsmöglichkeit 30m weiter nördlich	DH:len=60 10726,739 10534,674 10590,525
+Lichtenrader Damm - Reichnerweg: Überquerungsmöglichkeit 30m weiter nördlich	DH:h=q3,30 10522,708 10534,674 10726,739
+Reichnerweg - Feldstedter Weg: Überquerungsmöglichkeit 30m weiter nördlich	DH:len=60 10726,739 10534,674 10423,636
+Feldstedter Weg - Reichnerweg: Überquerungsmöglichkeit 30m weiter nördlich	DH:len=60:h=q3,60 10423,636 10534,674 10726,739
 Wildmeisterdamm: Bordstein am Kölner Damm	DH:t=5 13827,2280 13640,2229 13568,2208
 Wildmeisterdamm: Bordstein am Kölner Damm	DH:t=5 13827,2280 13640,2229 13661,2207
 Wildmeisterdamm: Bordstein am Kölner Damm	DH:t=5 13568,2208 13640,2229 13827,2280

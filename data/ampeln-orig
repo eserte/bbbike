@@ -14,7 +14,7 @@
 Wilhelmstr./Am Omnibushof: provisorische Ampel	X::inwork -4647,12269
 # 
 #: next_check_id: HAENSEL-2022
-#: last_checked: 2022-10-18
+#: last_checked: 2022-10-24
 #: XXX Ampel befindet sich südöstlich der Einmündung
 Kiefholzstr./Hänselstr.: provisorische Fußgängerampel	F::inwork 15695,7254
 # 
@@ -23,7 +23,7 @@ Kiefholzstr./Hänselstr.: provisorische Fußgängerampel	F::inwork 15695,7254
 #: osm_watch: way id="936801541" version="3"
 #: XXX Ampel befindet sich östlich der Einmündung
 #: note: Anforderungsampel
-#: last_checked: 2022-10-23
+#: last_checked: 2022-10-24
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -100,7 +100,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1491370038774964227 --- #: by: https://pbs.twimg.com/media/FLEUIiEX0AA8mNx?format=jpg&name=large --- #: source_id: viz2021:13.157143,52.539213,09.02.2022,13:00 (bis 12.3.2022) --- #: valid: 20220209-20220312 vvv --- Klosterbuschweg/Torweg: Gegenverkehrsregelung	X::inwork -6442,14535 --- Klosterbuschweg/Torweg: Gegenverkehrsregelung	X::inwork -6451,14413 --- #: valid ^^^
 # 
 #: next_check_id: TRAMTURM-2021
-#: last_checked: 2022-10-03
+#: last_checked: 2022-10-23 (daf)
 #: check_frequency: 180d
 #: next_check: 2022-12-22
 Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
@@ -216,7 +216,7 @@ Grunerstr./Jüdenstr.	X::inwork 10804,12461
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: XXX außerdem wurde der Zebrastreifen nördlich der Kreuzung deaktiviert
-#: last_checked: 2022-03-07
+#: last_checked: 2022-10-24
 #: next_check: 2023-07-31
 	X::inwork 10096,-2137
 # 
@@ -1191,7 +1191,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 18010,7133
 #: XXX_prog für Radfahrer Richtung Süden zwei getrennt voneinander geschaltete Ampeln; Passierdauer für das "ordentliche" Linksabbiegen in die Griechische Allee bis zu 150 Sekunden
 	X 17962,6674
-	X 2713,4087
+	X 2723,4093
 	X 3425,4541
 	X 8070,1261
 	X 9128,3580
@@ -1308,7 +1308,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX bis wann wird es diesen Bahnübergang geben?
 #: last_checked: 2021-10-03
 #: next_check: 2023-07-31
-	B 10217,-2229
+	B 10200,-2176
 # 
 	X 12938,1348
 	X 12911,1815
@@ -1681,7 +1681,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 # 
 #: XXX: seit mindestens Ende Juli 2022 ausgeschaltet
 #: add_fragezeichen: Bleibt die Ampel Mariannenstr./Reichenberger Str. dauerhaft ausgeschaltet?
-#: last_checked: 2022-10-23
+#: last_checked: 2022-10-24
 	X0 11616,10288
 # 
 #: XXX_prog: zusammenhängende Ampelanlage vvv
@@ -1824,6 +1824,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 5675,5470
 #: note: Anforderungsampel
 	F 5482,4965
+#: note: Anforderungsampel
 	F 6115,5302
 	X 6123,5798
 	X 8318,4566
@@ -1836,7 +1837,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7236,5685
 	X 5377,5961
 	X 5335,5991
-	X 6104,6258
+#: note: Anforderungsampel
+	F 6104,6253
 #: note: Anforderungsampel
 	F 5397,5302
 	F 5088,5495
@@ -2140,7 +2142,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: off: weekend
 	X 12643,1706
 	X 12207,1704
-	X 11476,1398
+	X 11483,1401
 #: note: Anforderungsampel
 	F 10673,2457
 	X 10769,1111
@@ -2488,7 +2490,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2022-10-18
+#: last_checked: 2022-10-24
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746
@@ -2976,6 +2978,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 	F 20788,4008
 #: XXX_prog: gilt nicht in Fahrtrichtung Nordwest
+#: note: Anforderungsampel
 	F 14842,8809
 #: note: Anforderungsampel
 	F -3011,1761

@@ -1475,7 +1475,7 @@ Alt-Mahlsdorf -> Frettchenweg: Mittelstreifen	3::igndisp 23648,11265 23848,11264
 Mittelstreifen	3nocross::ignrte 11012,1210 11157,1269 11216,1293
 Marienfelder Chaussee -> Muschelkalkweg: Mittelstreifen	3::igndisp 11012,1210 11157,1269 11120,1384
 Muschelkalkweg -> Marienfelder Chaussee: Mittelstreifen	3::igndisp 11120,1384 11157,1269 11216,1293
-Mittelstreifen	3nocross::ignrte 11865,1564 11765,1522 11476,1398
+Mittelstreifen	3nocross::ignrte 11865,1564 11765,1522 11483,1401
 Straßenbahntrasse	3nocross::ignrte 22539,6258 22645,6431 22675,6498
 Mahlsdorfer Str. -> Hoernlestr.: Straßenbahntrasse	3::igndisp 22539,6258 22645,6431 22509,6519
 Hoernlestr. -> Mahlsdorfer Str.: Straßenbahntrasse	3::igndisp 22509,6519 22645,6431 22675,6498
@@ -1755,9 +1755,9 @@ unbequem passierbarer Mittelstreifen	3nocross::ignrte 9865,10227 9858,10199 9837
 Brachvogelstr. -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9884,10192 9858,10199 9837,10117
 Waterloo-Ufer -> Brachvogelstr.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9884,10192
 Waterloo-Ufer -> Zossener Str.: unbequem passierbarer Mittelstreifen	3::igndisp 9825,10206 9858,10199 9865,10227
-Straßentunnelrampe	3nocross::ignrte 2713,4087 2815,4162 2941,4245 3048,4305
-Unter den Eichen: Straßentunnelrampe	1::igndisp 2713,4087 2815,4162 2941,4245 3048,4305
-Unter den Eichen: Straßentunnelrampe	1::igndisp 3048,4305 2950,4232 2823,4152 2713,4087
+Straßentunnelrampe	3nocross::ignrte 2723,4093 2815,4162 2941,4245 3048,4305
+Unter den Eichen: Straßentunnelrampe	1::igndisp 2723,4093 2815,4162 2941,4245 3048,4305
+Unter den Eichen: Straßentunnelrampe	1::igndisp 3048,4305 2950,4232 2823,4152 2723,4093
 Mittelstreifen, Tunnelrampe	3nocross::ignrte 3344,4488 3260,4444 3048,4305
 Unter den Eichen: Mittelstreifen, Tunnelrampe	1::igndisp 3048,4305 3260,4444 3344,4488
 Unter den Eichen: Mittelstreifen, Tunnelrampe	1::igndisp 3344,4488 3266,4438 3048,4305
@@ -2212,8 +2212,8 @@ Husstr. -> Adlergestell: Mittelstreifen	3::igndisp 19736,3858 19633,3751 19676,3
 Mittelstreifen	3nocross::ignrte 19472,3922 19335,4067 18725,4715 18457,5000
 Adlergestell -> Sonnenallee: Mittelstreifen	3::igndisp 18725,4715 19335,4067 19345,4077
 Sonnenallee -> Adlergestell: Mittelstreifen	3::igndisp 19345,4077 19335,4067 19472,3922
-Fußgängerbrücke Betriebsbahnhof Schöneweide -> Adlergestell: Mittelstreifen	3::igndisp 18739,4728 18725,4715 19335,4067
-Adlergestell -> Fußgängerbrücke Betriebsbahnhof Schöneweide: Mittelstreifen	3::igndisp 18457,5000 18725,4715 18739,4728
+Fußgängerbrücke Bhf. Johannisthal -> Adlergestell: Mittelstreifen	3::igndisp 18739,4728 18725,4715 19335,4067
+Adlergestell -> Fußgängerbrücke Bhf. Johannisthal: Mittelstreifen	3::igndisp 18457,5000 18725,4715 18739,4728
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
 Mittelstreifen	3nocross::ignrte 18457,5000 18425,5032 18080,5376
 Michael-Brückner-Str. -> Hartriegelstr.: Mittelstreifen	3::igndisp 18080,5376 18425,5032 18514,5028
@@ -3293,15 +3293,15 @@ Umleitungsstrecke: Radweg nur in eine Richtung	1::igndisp 5900,11913 5925,11943 
 Fürstenberger Str.: Bauarbeiten, Einbahnstraße	1s 10472,14632 10320,14608
 Lückstr. - Fischerstr.: mit einem Bauzaun abgesperrt	2 16601,10650 16587,10613
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
-Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
+Fußgängerbrücke Bhf. Johannisthal: südwestlicher Abgang wird zurückgebaut	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
 Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,4678
-Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9468,-85 9271,323 9253,370 9218,458 9178,556
+Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323 9253,370 9218,458 9178,556
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9271,323 9296,335 9249,434 9218,458
 Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 18825,3325 18689,3465
 Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13519,13785
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): Sperrung am Bahnübergang	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am Bahnübergang	2::inwork 10228,-2136 10231,-2159
-Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-2156 10318,-2156
+Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-2135 10296,-2156 10318,-2156
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046

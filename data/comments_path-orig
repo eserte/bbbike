@@ -259,7 +259,7 @@ Frankfurter Allee - Liebigstr.: frühzeitig auf den Gehweg wechseln (wegen Grünfl
 Falkenberger Chaussee: Zufahrt zur Wartenberger Str.	CS; 17400,17790 17440,17746 17528,17799 17650,17875
 Langhansstr. - Allee der Kosmonauten: Zufahrt zum Parkweg schwierig einzusehen, einfach geradeaus fahren	CP2; 19818,14064 19847,14019
 In den Gärten - Marienfelder Chaussee: 100m auf der linken Straßenseite vorfahren	CP; 11724,1629 11744,1577 11765,1522 11865,1564
-Marienfelder Chaussee - In den Gärten: bereits am Quarzweg die Straßenseite wechseln	PI; 11476,1398 11765,1522 11744,1577 11724,1629
+Marienfelder Chaussee - In den Gärten: bereits am Quarzweg die Straßenseite wechseln	PI; 11483,1401 11765,1522 11744,1577 11724,1629
 # REMOVED (nicht mehr nötig) --- Lange Brücke - Freundschaftsinsel: wegen der Tramtrasse bereits vor der Langen Brücke die Straßenseite wechseln	PI; -12794,-1652 -12758,-1654 -12749,-1668 -12729,-1686 -12646,-1702 -12616,-1715 -12544,-1799 -12396,-1681
 Breite Str.: am Landtag/Stadtschloss vorbei fahren	CS -12794,-1652 -12758,-1654 -12749,-1668 -12729,-1686 -12646,-1702
 Freundschaftsinsel - Potsdam Hbf: wegen der Tramtrasse zunächst auf dem Gehweg bis zur nächsten Ampel vorfahren	CP; -12396,-1681 -12544,-1799 -12478,-1879
@@ -735,10 +735,10 @@ Karlstr. - Müggelheimer Damm: zum Überqueren des Müggelheimer Damms den Straßenb
 Müggelheimer Damm - Karlstr.: Straßenbahnübergang benutzen	CP; 22674,4309 22556,4386 22502,4260
 # 
 #: note: siehe auch handicap_directed-Einträge vvv
-Reichnerweg - Lichtenrader Damm: Überquerungsmöglichkeit 30m rechts benutzen	CP; 10726,739 10539,662 10590,525
-Lichtenrader Damm - Reichnerweg: etwa 30m vor der Kreuzung die Straßenseite wechseln	PI; 10522,708 10539,662 10726,739
-Reichnerweg - Feldstedter Weg: Überquerungsmöglichkeit 30m rechts benutzen	CP; 10726,739 10539,662 10423,636
-Feldstedter Weg - Reichnerweg: Überquerungsmöglichkeit 30m links benutzen	CP; 10423,636 10539,662 10726,739
+Reichnerweg - Lichtenrader Damm: Überquerungsmöglichkeit 30m rechts benutzen	CP; 10726,739 10534,674 10590,525
+Lichtenrader Damm - Reichnerweg: etwa 30m vor der Kreuzung die Straßenseite wechseln	PI; 10522,708 10534,674 10726,739
+Reichnerweg - Feldstedter Weg: Überquerungsmöglichkeit 30m rechts benutzen	CP; 10726,739 10534,674 10423,636
+Feldstedter Weg - Reichnerweg: Überquerungsmöglichkeit 30m links benutzen	CP; 10423,636 10534,674 10726,739
 #: note ^^^
 # 
 Gounodstr.: ggfs. frühzeitig auf den Gehweg wechseln, direkte Zufahrt kann zugeparkt sein	CP2; 14366,15877 14251,15828

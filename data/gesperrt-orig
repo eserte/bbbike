@@ -1282,7 +1282,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-10-23
+#: last_checked: 2022-10-24
 #: check_frequency: 90d
 #: next_check: 2022-10-31
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1924,7 +1924,7 @@ Alt-Kaulsdorf: Mittelstreifen	3nocross 23113,11262 23362,11263 23447,11264 23648
 Alt-Kaulsdorf: Mittelstreifen	3nocross 22937,11265 22996,11264 23113,11262
 Alt-Mahlsdorf: Mittelstreifen	3nocross 24175,11265 24019,11264 23848,11264 23648,11265
 Marienfelder Chaussee: Mittelstreifen	3nocross 11012,1210 11157,1269 11216,1293
-Marienfelder Chaussee: Mittelstreifen	3nocross 11865,1564 11765,1522 11476,1398
+Marienfelder Chaussee: Mittelstreifen	3nocross 11865,1564 11765,1522 11483,1401
 Mahlsdorfer Str.: Straßenbahntrasse	3nocross 22539,6258 22645,6431 22675,6498
 Kissingenstr.: Mittelstreifen	3nocross 11023,17878 11047,17883 11113,17895
 #: note: ^^^
@@ -2030,9 +2030,9 @@ Bundesallee	1::igndisp 5463,9961 5464,9934 5467,9866
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19664,15366 19644,15320 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
 #: note: Tunnel, nicht überquerbar (am Rudeloffweg theoretisch über Mittelstreifen passierbar, aber die Tunnelrampe ist hier noch nah) vvv
-Unter den Eichen: Straßentunnelrampe	3nocross 2713,4087 2815,4162 2941,4245 3048,4305
-Unter den Eichen: Straßentunnelrampe	1::igndisp 2713,4087 2815,4162 2941,4245 3048,4305
-Unter den Eichen: Straßentunnelrampe	1::igndisp 3048,4305 2950,4232 2823,4152 2713,4087
+Unter den Eichen: Straßentunnelrampe	3nocross 2723,4093 2815,4162 2941,4245 3048,4305
+Unter den Eichen: Straßentunnelrampe	1::igndisp 2723,4093 2815,4162 2941,4245 3048,4305
+Unter den Eichen: Straßentunnelrampe	1::igndisp 3048,4305 2950,4232 2823,4152 2723,4093
 #: note ^^^
 #: note: Tunnel, nicht überquerbar vvv
 Unter den Eichen: Mittelstreifen, Tunnelrampe	3nocross 3344,4488 3260,4444 3048,4305
@@ -3203,6 +3203,7 @@ Drängelgitter	BNP:3::trailer=10 12373,2375
 Drängelgitter	BNP:3::trailer=10 12280,2330
 Drängelgitter	BNP:3::trailer=10 12391,2382
 Drängelgitter	BNP:3::trailer=10 12593,2472
+#: note: war am 2022-10-24 offen
 Drängelgitter	BNP:3::trailer=10 11373,1925
 Drängelgitter	BNP:5 15516,6357
 Drängelgitter	BNP:5 15496,6314
@@ -3751,6 +3752,7 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (mittlerweile Einbahnstraße, Radfahrer frei) --- #: next_check_id: MITTEL-2019 --- #: source_id: IM_020714 --- #: osm_watch: way id="690322561" version="4" --- #: add_fragezeichen: Wann wird die Sperrung aufgehoben? --- #: XXX laut osm offen --- #: also_indoor: traffic (ex-G,ex-H) --- #: last_checked: 2022-07-29 --- Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 # 
+#: next_check_id: BHFJOHANNISTHAL-2022
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,659869#msg-659869 (Sperrung am Wochenende)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,659884#msg-659884 ("in Kürze ... saniert")
@@ -3765,10 +3767,10 @@ Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,
 #: by: http://thomas.krickstadt.de/s-bahn/2021-12-15-johannisthal/10-2021-12-15-22.html (Fertigstellung Mitte 2022)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/zugang-zum-s-bahnhof-johannisthal-endlich-moeglich-doch-nicht-barrierefrei_a331697
 #: XXX wenn die alte Treppe wiederhergestellt ist, kann man die provisorische Treppe vermutlich entfernen, siehe strassen-orig und gesperrt-orig
-#: last_checked: 2022-10-02 (krickstadt) vvv
+#: last_checked: 2022-10-23 (krickstadt) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2022-07-01 vvv
-Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
+Fußgängerbrücke Bhf. Johannisthal: südwestlicher Abgang wird zurückgebaut	2::inwork 18621,4675 18636,4660 18642,4654 18664,4673
 # REMOVED (hier offen, siehe http://thomas.krickstadt.de/s-bahn/2022-08-14-johannisthal/4-2022-08-14-12-xxl.jpg) --- Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18722,4628 18656,4687
 Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,4678
 # REMOVED --- #: next_check ^^^
@@ -3787,9 +3789,10 @@ Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,46
 #: confirmed_by: srt (am S-Bhf.)
 #: osm_watch: way id="24557771" version="8" vvv
 #: XXX bis wann sind die Wege gesperrt? vvv
-#: last_checked: 2022-04-13 (mapillary) vvv
+#: last_checked: 2022-10-24 vvv
 #: check_frequency: 180d vvv
-Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9468,-85 9271,323 9253,370 9218,458 9178,556
+# REMOVED (Sperrung erst weiter hinten) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9473,-92
+Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323 9253,370 9218,458 9178,556
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9271,323 9296,335 9249,434 9218,458
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3840,13 +3843,13 @@ Cotheniusstr.: Bauarbeiten, Straße existiert nicht mehr	2::inwork 13430,13733 13
 #: next_check_id: BAHNHOFSTR-2020
 #: by: https://berliner-abendblatt.de/2022/05/08/die-s2-wird-wochenlang-unterbrochen/
 #: XXX hier wird eine neue Unterführung gebaut vvv
-#: last_checked: 2022-07-24 vvv
+#: last_checked: 2022-10-24 vvv
 #: next_check: 2023-07-31 vvv
 #: osm_watch: way id="152434836" version="21"
 #: osm_watch: way id="30084962" version="29"
 Prinzessinnenstr./Bahnhofstr. (Lichtenrade): Sperrung am Bahnübergang	2::inwork 10096,-2137 10194,-2138 10228,-2136 10300,-2135
 Pfarrer-Lütkehaus-Platz: Sperrung am Bahnübergang	2::inwork 10228,-2136 10231,-2159
-Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-2156 10318,-2156
+Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-2135 10296,-2156 10318,-2156
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -3858,7 +3861,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10300,-2135 10296,-215
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-10-23
+#: last_checked: 2022-10-24
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
