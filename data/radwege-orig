@@ -1585,7 +1585,7 @@ Verbundsteinpflaster, erhebliche Schäden durch Wurzelhebungen	RW1; 5166,13087 49
 #: source_id: 2147344664 (bis Ende Oktober 2019)
 #: source_id: viz2021:13.346369,52.431944,20.09.2021,07:30 (Leitungsarbeiten bis 26.10.2022 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?)
 #: source_id: viz2021:13.34634,52.43195,02.11.2021,17:40 (Arbeiten bis 26.11.2021 --- haben diese was mit dem Zweirichtungsradweg zu tun oder mit der Anbindung der Radroute?) (inaktiv)
-#: osm_watch: way id="85468589" version="18"
+#: osm_watch: way id="85468589" version="19"
 #: osm_watch: way id="458915639" version="3"
 #: last_checked: 2022-10-15
 #: check_frequency: 90d
@@ -4038,14 +4038,15 @@ Grünbeschichtung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,1406
 #: source_id: viz2021:13.42941,52.533057,25.02.2020,08:00 (bis 1.9.2021, Gesamtbaumaßnahme bis 2022) (inaktiv)
 #: source_id: viz2021:13.42941,52.533057,01.09.2021,08:00 (bis 31.12.2021, Gesamtbaumaßnahme bis 2022) (mittlerweile bis 28.2.2022) (mittlerweile bis 28.3.2022) (mittlerweile bis 4.4.2022) (mittlerweile bis 14.4.2022) (inaktiv)
 #: source_id: viz2021:13.432298,52.535532,28.09.2022,09:24 (bis 6.10.2022) (bis 14.10.2022) (inaktiv)
+#: source_id: viz2021:13.433008,52.535943,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022)
 #: note: laut rbb bis 30.11.2022
 #: priority: #D vvv
 #: last_checked: 2022-10-22 vvv
 #: check_frequency: 120d vvv
-# REMOVED --- #: next_check: 2022-04-14 vvv
+#: next_check: 2022-12-31 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -4454,10 +4455,10 @@ Gehwegplatten mit Bord	RW1; -1249,2590 -1248,2488 -1248,2451
 	RW1; -1248,2451 -1256,2216 -1281,2074 -1296,2025 -1283,1898 -1578,1740
 	RW1; -1578,1740 -1283,1898 -1296,2025 -1281,2074 -1256,2216 -1248,2451 -1248,2488 -1249,2590
 Radweg nur aufgemalt	RW1;RW1 -1256,2216 -1082,2140
-	RW0;RW0 -1082,2140 -763,1976 -613,1949
+	RW0;RW0 -1082,2140 -763,1976 -666,1959 -613,1949
 alte Gehwegplatten, Bord	RW1; -613,1949 -541,1883 -418,1787 -375,1754 -356,1740 -306,1700 -163,1564 -87,1475 85,1322
 relativ neues Verbundsteinpflaster	RW1; 85,1322 -87,1475 -163,1564
-alte Gehwegplatten, Bord	RW1; -163,1564 -306,1700 -356,1740 -375,1754 -418,1787 -541,1883 -613,1949
+alte Gehwegplatten, Bord	RW1; -163,1564 -306,1700 -356,1740 -375,1754 -418,1787 -541,1883
 Radweg nur aufgemalt	RW1;RW1 7317,12751 7111,12743
 	RW6;RW6 7346,13022 7330,12871 7317,12751
 unebenes Verbundsteinpflaster	RW1; 11762,1040 11767,1007 11777,927 11791,834
@@ -7199,6 +7200,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: by: https://nitter.net/VIZ_Berlin/status/1516270363436408832#m
 #: by: https://nitter.net/pic/media%2FFQTkX5LWYAAirTE.jpg%3Fname%3Dorig
 #: source_id: viz2021:13.433058,52.536173,19.04.2022,07:00 (bis 30.6.2022)
+#: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022)
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
 #: last_checked: 2022-09-28 (mapillary) vvv
 #: check_frequency: 60d vvv

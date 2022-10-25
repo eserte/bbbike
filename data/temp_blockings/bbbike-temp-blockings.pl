@@ -34706,13 +34706,14 @@ EOF
 EOF
      },
      { from  => 1644076653, # 2022-02-05 16:57
-       until => 1666821600, # 2022-10-27 00:00
+       until => $isodate2epoch->("2022-12-21 17:00:00"), # 1666821600, # 2022-10-27 00:00
        text  => 'Mühlenstr.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich bis 26.10.2022',
        type  => 'handicap',
        source_id => 'viz2021:13.346369,52.431944,20.09.2021,07:30',
        data  => <<EOF,
+#: also_indoor: traffic (B[unvollständig])
 #: last_checked: 2022-10-15
-#: next_check: 2022-10-26
+#: next_check: 2022-12-21
 	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
 EOF
      },
@@ -35283,7 +35284,7 @@ EOF
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
        data  => <<EOF,
 #: next_check_id: HAEMMERLING-2022
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022)
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -36438,9 +36439,9 @@ EOF
 #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag)
 #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00
 #: also_indoor: traffic (B)
-#: last_checked: 2022-10-16
-#: check_frequency: 21d
-#: next_check: 2022-10-30
+#: last_checked: 2022-10-25
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2022-10-30
 	q3::inwork 15674,10851 15820,10916
 EOF
      },
@@ -36773,6 +36774,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1255224.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/koepenick/c-bauen/bezirksamt-und-berliner-forsten-sanieren-den-mueggelschloesschenweg_a360860
 	2::inwork 25385,4414 25132,4385 24181,4270
 EOF
      },
@@ -36861,13 +36863,13 @@ EOF
      },
      { from  => 1666501200, # 2022-10-23 07:00
        until => 1667577600, # 2022-11-04 17:00
-       text  => 'Weitlingstr.: Bauarbeiten, zwischen Lückstr. und Rupprechtstr. Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.10.2022 07:00 bis 04.11.2022 17:00 ',
+       text  => 'Weitlingstr.: Bauarbeiten, zwischen Lückstr. und Rupprechtstr. etwa 100m der Fahrbahn Richtung Norden gesperrt, vom 24.10.2022 07:00 bis 04.11.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.493078,52.501052,24.10.2022,07:00',
        data  => <<EOF,
-#: add_fragezeichen: Sind Radfahrer auch betroffen?
-#: next_check: 2022-10-24
-	q4::inwork; 16468,10695 16537,10895
+#: source_id: bvg2021:240#BVG310665_0
+# REMOVED (ja, etwas) --- #: add_fragezeichen: Sind Radfahrer auch betroffen? --- #: next_check: 2022-10-24
+	q3::inwork; 16468,10695 16537,10895
 EOF
      },
      { from  => 1665942194, # 2022-10-16 19:43

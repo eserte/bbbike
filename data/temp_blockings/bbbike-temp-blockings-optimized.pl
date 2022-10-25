@@ -4914,8 +4914,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        undef,
        {
-         'data' => '#: last_checked: 2022-10-15
-#: next_check: 2022-10-26
+         'data' => '#: also_indoor: traffic (B[unvollständig])
+#: last_checked: 2022-10-15
+#: next_check: 2022-12-21
 	q4::inwork; 6665,2836 6745,2848 6763,2879 6842,2995 6914,3093
 ',
          'from' => 1644076653,
@@ -4923,7 +4924,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'source_id' => 'viz2021:13.346369,52.431944,20.09.2021,07:30',
          'text' => 'Mühlenstr.: Einbahnstraßenregelung, offen Richtung Südwesten, voraussichtlich bis 26.10.2022',
          'type' => 'handicap',
-         'until' => 1666821600
+         'until' => 1671638400
        },
        undef,
        {
@@ -5235,7 +5236,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: next_check_id: HAEMMERLING-2022
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022)
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -5496,19 +5497,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'type' => 'gesperrt',
          'until' => 1726351200
        },
-       {
-         'data' => '#: by: https://nitter.it/VIZ_Berlin/status/1552155569997299712#m
-#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllseWFCaFhvQUVnZVZTLmpwZw==
-#: by: https://nitter.it/pic/orig/enc/bWVkaWEvRllseWk2RVhnQUFqd0FqLmpwZw==
-	q4::inwork; 9569,11631 9559,11715
-',
-         'from' => 1658811600,
-         'id' => 3592,
-         'source_id' => 'viz2021:13.391787,52.510533,27.07.2022,07:00',
-         'text' => 'Charlottenstr.: Bauarbeiten zwischen Leipziger Str. und Kronenstr., Fahrbahn Richtung Norden gesperrt, vermutlich sind auch Radfahrer betroffen, vom 27.07.2022 07:00 bis 25.10.2022 17:00',
-         'type' => 'handicap',
-         'until' => 1666710000
-       },
+       undef,
        {
          'data' => '	2::inwork 23910,-54100 23623,-54115
 ',
@@ -5870,9 +5859,9 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
 #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag)
 #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00
 #: also_indoor: traffic (B)
-#: last_checked: 2022-10-16
-#: check_frequency: 21d
-#: next_check: 2022-10-30
+#: last_checked: 2022-10-25
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2022-10-30
 	q3::inwork 15674,10851 15820,10916
 ',
          'from' => undef,
@@ -6137,7 +6126,8 @@ Gerichtstr.	q3::inwork 7464,15409 7627,15412
          'until' => 1676660400
        },
        {
-         'data' => '	2::inwork 25385,4414 25132,4385 24181,4270
+         'data' => '#: by: https://www.berliner-woche.de/koepenick/c-bauen/bezirksamt-und-berliner-forsten-sanieren-den-mueggelschloesschenweg_a360860
+	2::inwork 25385,4414 25132,4385 24181,4270
 ',
          'from' => 1666476000,
          'id' => 3656,
@@ -6237,14 +6227,14 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'until' => undef
        },
        {
-         'data' => '#: add_fragezeichen: Sind Radfahrer auch betroffen?
-#: next_check: 2022-10-24
-	q4::inwork; 16468,10695 16537,10895
+         'data' => '#: source_id: bvg2021:240#BVG310665_0
+# REMOVED (ja, etwas) --- #: add_fragezeichen: Sind Radfahrer auch betroffen? --- #: next_check: 2022-10-24
+	q3::inwork; 16468,10695 16537,10895
 ',
          'from' => 1666501200,
          'id' => 3664,
          'source_id' => 'viz2021:13.493078,52.501052,24.10.2022,07:00',
-         'text' => 'Weitlingstr.: Bauarbeiten, zwischen Lückstr. und Rupprechtstr. Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen, vom 24.10.2022 07:00 bis 04.11.2022 17:00 ',
+         'text' => 'Weitlingstr.: Bauarbeiten, zwischen Lückstr. und Rupprechtstr. etwa 100m der Fahrbahn Richtung Norden gesperrt, vom 24.10.2022 07:00 bis 04.11.2022 17:00 ',
          'type' => 'handicap',
          'until' => 1667577600
        },

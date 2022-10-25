@@ -1681,7 +1681,7 @@ Wullenwebersteg: wird hier eine Rampe erstellt?	?::projected 5714,12290 5714,122
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/strassenarbeiten-im-richardkiez_a254128 (im kommenden Jahr, also 2021)
 #: by: http://www.infravelo.de/projekt/braunschweiger-strasse-bauabschnitt-3/ (1. Quartal 2021 - 3. Quartal 2021) (mittlerweile: 2. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 3. Quartal 2022 - 4. Quartal 2022) (mittlerweile: 2. Quartal 2023 - 4. Quartal 2023)
 #: by: https://berliner-abendblatt.de/2022/08/22/saalestrasse-cdu-fordert-plan-gegen-staus-und-dreck/ (Diagonalsperre in Höhe Unstrutstr., voraussichtlich 2023)
-#: osm_watch: way id="423009430" version="16"
+#: osm_watch: way id="423009430" version="17"
 #: last_checked: 2022-10-16
 #: check_frequency: 120d
 #: next_check: 2022-12-31
@@ -3803,7 +3803,7 @@ Hardenbergstr.: Poller geplant	?::projected; 5459,11135 5542,11075
 #: osm_watch: way id="480240233" version="8"
 #: osm_watch: way id="87687993" version="15"
 #: XXX zwischen Bismarckstr. und Richard-Wagner-Str. bereits markiert, Schilder fehlen noch. Wird es eine abknickende Vorfahrt geben? Was ist mit dem Abschnitt südlich der Bismarckstr.?
-#: last_checked: 2022-09-26 (mapillary)
+#: last_checked: 2022-10-17 (mapillary)
 # REMOVED --- #: next_check: 2022-09-30
 Zillestr./Krumme Str.: Planung einer Fahrradstraße, wo genau?	?::projected 3801,11858 3976,11869 3969,11675 3988,11502
 # 
@@ -5575,7 +5575,7 @@ Charlottenburger Chaussee: Radwegsanierung in Planung, wo genau?	?::projected -2
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
-#: last_checked: 2022-10-16
+#: last_checked: 2022-10-25
 #: check_frequency: 180d
 Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,10747 16468,10695 16497,10685 16576,10658 16597,10651 16601,10650 16647,10632
 # 
@@ -5585,7 +5585,7 @@ Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,
 Kyllburger Weg: "Radweg", was soll hier entstehen?	? 16645,17449 16670,17454 16785,17524
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
-#: last_checked: 2022-10-16
+#: last_checked: 2022-10-25
 #: check_frequency: 180d
 Marktstr.: Popup-Radweg geplant	? 14988,11130 15060,11006 15088,10950 15113,10916 15144,10905 15279,10862
 # 
@@ -7099,6 +7099,7 @@ Alexanderplatz: Umwege wegen einer Tunnelbaustelle	?::inwork 11005,12855 11102,1
 # 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1255524.php (Herbst 2022)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/charlottenstrasse-wird-fahrradstrasse_a360923
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1257825.php
 #: next_check: 2022-11-30
 Charlottenstr.: Einrichtung einer Fahrradstraße	?::projected 9569,11631 9559,11715 9547,11819 9536,11922 9523,12019 9509,12117 9496,12215 9489,12263 9475,12365
 # 
@@ -8830,7 +8831,8 @@ S-Bhf. Zehlendorf: neuer Zugang geplant	?::projected 644,2622 660,2576
 #: by: https://berliner-abendblatt.de/2022/10/19/neue-fahlenbergbruecke-wird-gesperrt/
 #: source_id: viz2021:13.703966,52.4026,16.08.2021,09:00 (bis 27.8.2021) (inaktiv)
 #: source_id: viz2021:13.703997,52.402579,10.10.2022,07:00 (Brückenarbeiten, bis 22.10.2022) (mittlerweile bis 21.10.2022) (inaktiv)
-#: source_id: bvg2021:369#BVG310116_0
+# REMOVED --- #: source_id: bvg2021:369#BVG310116_0
+#: source_id: bvg2021:369#BVG310521_0
 #: note: die Verkehrsmeldung wurde beim rbb am nächsten Tag (11.10.2022) bereits entfernt
 #: XXX ab dem 28.10.2022 ist die südliche Umfahrung aktiv
 #: osm_watch: way id="10275794" version="16"
