@@ -955,7 +955,9 @@ sub showmap_url_mapcompare {
     }
     my $common_qs;
     if ($profile && $profile eq '__distinct_map_data') {
-	$common_qs = 'num=10&mt0=bvg-stadtplan&mt1=bbbike-bbbike&mt2=mapnik&mt3=esri&mt4=falk-base&mt5=google-map&mt6=nokia-map&mt7=lgb-webatlas&mt8=pharus&mt9=waze-world';
+	my @maps = qw(bvg-stadtplan bbbike-bbbike mapnik esri falk-base google-map nokia-map lgb-webatlas pharus waze-world);
+	my $maps_qs = do { my $i = 0; join('&', map { "mt".($i++)."=".$_ } @maps) };
+	$common_qs = 'num=10&' . $maps_qs;
     } elsif ($maps) {
 	$common_qs = "num=" . scalar(@$maps);
 	for my $map_i (0 .. $#$maps) {
