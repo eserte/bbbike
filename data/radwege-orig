@@ -817,11 +817,13 @@ asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 teilweise mit Leitboys geschützt	RW4; 14208,12235 14280,12223 14381,12205 14427,12197 14488,12188
 	RW2; 14488,12188 14523,12183
 teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129
+	RW3; 14926,12129 14994,12121
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-10-17
-	RW2; 14926,12129 14994,12121 15117,12106 15361,12071
+#: last_checked: 2022-10-26
+#: check_frequency: 60d
+	RW2; 14994,12121 15117,12106 15361,12071
 # 
 #: note: Karl-Marx-Allee Richtung Westen bis Strausberger Platz
 asphaltiert	RW2; 13785,12292 13543,12326
@@ -1076,6 +1078,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1256365.php
 #: by: https://berliner-abendblatt.de/2022/10/19/elsenbruecke-abriss-hat-begonnen-wasserstrasse-komplett-gesperrt/
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/abriss-auf-der-elsenbruecke_a361310
+#: by: https://berliner-abendblatt.de/2022/10/26/elsenbruecke-vollsperrung-am-wochenende/ (Radverkehr nicht betroffen)
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063 (inaktiv)
@@ -1214,6 +1217,7 @@ Gehweg für Radfahrer frei	RW1; -1872,24336 -1746,24219
 #: by: https://berliner-abendblatt.de/2022/08/29/radweg-paulsternstrasse-wird-ertuechtigt/
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1257220.php (nur teilweise fertig)
 #: by: https://www.berliner-woche.de/haselhorst/c-verkehr/sperrung-am-wochenende_a361550
+#: by: https://berliner-abendblatt.de/2022/10/26/paulsternstrasse-wird-am-wochenende-gesperrt/
 #: XXX Asphaltierung der Radwege
 #: next_check: 2022-10-31
 #: osm_watch: way id="249163487" version="14"
@@ -1877,7 +1881,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/ziel-ein-durchgaengig-sicherer-radweg_a337148 (Erwähnung)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7227 (Antrag)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2022-10-09 vvv
+#: last_checked: 2022-10-26 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2024-06-30 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17311,8123 17292,8151 17202,8391 17143,8565
@@ -3385,6 +3389,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: by: https://berliner-abendblatt.de/2021/12/07/vollsperrung-der-mueggelspree/
 #: by: https://twitter.com/VIZ_Berlin/status/1493951123207692289 (Sperrung für den Schiffsverkehr bis zum 4.3.2022)
 #: by: https://berliner-abendblatt.de/2022/10/24/salvador-allende-bruecke-freigabe-am-7-november/
+#: by: https://www.berliner-zeitung.de/mensch-metropole/mobilitaet-verkehr-betonkrebs-eroeffnungstermin-salvador-allende-bruecke-endlich-in-berlin-koepenick-gehts-bald-wieder-vierspurig-ueber-die-spree-li.279553
 #: XXX 1. Verkehrsführung Bauabschnitt 1: östlicher Gehweg gesperrt, bis ca. Mitte November 2017
 #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
@@ -7199,6 +7204,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-24-06-2020.pdf (Erwähnung)
 #: by: https://nitter.net/VIZ_Berlin/status/1516270363436408832#m
 #: by: https://nitter.net/pic/media%2FFQTkX5LWYAAirTE.jpg%3Fname%3Dorig
+#: by: https://berliner-abendblatt.de/2022/10/26/bauarbeiten-in-der-greifswalder-strasse-wird-es-eng/
 #: source_id: viz2021:13.433058,52.536173,19.04.2022,07:00 (bis 30.6.2022)
 #: source_id: viz2021:13.433644,52.536087,26.10.2022,07:00 (Kanalarbeiten, bis 31.12.2022)
 #: XXX hier wird vermutlich auch eine Grünbeschichtung entstehen
@@ -7239,7 +7245,7 @@ Grünbeschichtung	RW4; 17900,6072 17930,6175 17948,6248 17991,6431
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünbeschichtung? vvv
 # REMOVED --- #: osm_watch: way id="4566067" version="26"
 #: osm_watch: way id="26708088" version="29"
-#: last_checked: 2022-09-24 (mapillary) vvv
+#: last_checked: 2022-10-26 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968

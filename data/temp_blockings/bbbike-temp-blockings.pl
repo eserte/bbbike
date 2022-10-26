@@ -1399,9 +1399,9 @@ EOF
 	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
-     { from  => $isodate2epoch->("2019-11-29 00:00:00"), # weitere Termine unten
-       until => $isodate2epoch->("2019-12-01 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.2019 - 01.12.2019)',
+     { from  => $isodate2epoch->("2022-11-25 00:00:00"), # weitere Termine unten
+       until => $isodate2epoch->("2022-11-27 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (26.11.2022 - 27.11.2022)',
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 11, start => "2022-01-01T00:00:00"]], # note: keine Weihnachtsmärkte vor dem 30.11.2020!
        type  => 'gesperrt',
@@ -22828,9 +22828,9 @@ EOF
 	2::inwork 12624,25570 12697,25704
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-06 00:00:00"), # erster Termin oben
-       until => $isodate2epoch->("2019-12-08 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (07.12.2019 - 08.12.2019)',
+     { from  => $isodate2epoch->("2022-12-02 00:00:00"), # erster Termin oben
+       until => $isodate2epoch->("2022-12-04 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (03.12.2022 - 04.12.2022)',
        periodic => 1,
        recurrences => [['yearly', days => 2, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -22840,9 +22840,9 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-13 00:00:00"),
-       until => $isodate2epoch->("2019-12-15 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (14.12.2019 - 15.12.2019)',
+     { from  => $isodate2epoch->("2022-12-09 00:00:00"),
+       until => $isodate2epoch->("2022-12-11 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (10.12.2022 - 11.12.2022)',
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -22852,9 +22852,9 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-20 00:00:00"),
-       until => $isodate2epoch->("2019-12-22 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (21.12.2019 - 22.12.2019)',
+     { from  => $isodate2epoch->("2022-12-16 00:00:00"),
+       until => $isodate2epoch->("2022-12-18 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (17.12.2022 - 18.12.2022)',
        periodic => 1,
        recurrences => [['yearly', days => 16, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -34244,7 +34244,7 @@ EOF
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
-#: last_checked: 2022-10-17 vvv
+#: last_checked: 2022-10-26 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -35318,9 +35318,10 @@ EOF
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf 
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf ("weiterhin für ca. 2 Jahre")
 #: source_id: bvg2021:150#BVG300484_0
-#: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022)
+#: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
+#: source_id: viz2021:13.492898,52.636603,09.09.2022,09:00 (bis 31.01.2024)
 #: XXX Keine Verkehrsmeldung mehr --- wurde die Baustelle aufgehoben?
-#: next_check: 2022-10-24
+#: next_check: 2024-01-31
 	q4::inwork; 16166,25767 16121,25818
 EOF
      },
@@ -35948,11 +35949,10 @@ EOF
        source_id => 'viz2021:13.516327,52.486802,02.08.2022,07:00',
        data  => <<EOF,
 #: next_check_id: WALLENSTEIN-2022
-#: note: zurzeit Sperrung wohl nur während der Arbeitszeiten, Durchfahrt war möglich am: 2022-08-07 mittags, 2022-08-14 mittags, 2022-09-03 (Sa) nachmittags, 2022-10-09 (So) nachmittags, 2022-10-16 (So) mittags vvv
+#: note: zurzeit Sperrung wohl nur während der Arbeitszeiten, Durchfahrt war möglich am: 2022-08-07 mittags, 2022-08-14 mittags, 2022-09-03 (Sa) nachmittags, 2022-10-09 (So) nachmittags, 2022-10-16 (So) mittags, 2022-10-26 (Mi) gegen 12:30
 Wallensteinstr.: auf Gehweg ausweichen, keine Freigabe	q3::inwork; 18037,9195 18092,9141 18134,9080
 Wallensteinstr.: auf linken Gehweg ausweichen, oder Umweg an der Ilsestr. benutzen	q4::inwork; 18134,9080 18092,9141 18037,9195
 Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
-#: note ^^^
 EOF
      },
      { from  => 1660168800, # 2022-08-11 00:00
@@ -36439,7 +36439,7 @@ EOF
 #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag)
 #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00
 #: also_indoor: traffic (B)
-#: last_checked: 2022-10-25
+#: last_checked: 2022-10-26
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2022-10-30
 	q3::inwork 15674,10851 15820,10916
@@ -36505,7 +36505,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-19 (Asphaltierungsarbeiten)
+#: last_checked: 2022-10-23 (Asphaltierungsarbeiten)
 #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 EOF
@@ -36581,7 +36581,7 @@ EOF
 #: also_indoor: traffic (H,B,G) vvv
 #: XXX Ende der Sperrung? vvv
 #: check_frequency: 14d vvv
-#: last_checked: 2022-10-10 vvv
+#: last_checked: 2022-10-26 vvv
 einige Meter vor der Siegfriedstr. gesperrt, evtl. Bordsteine	q3::inwork 16859,12613 16720,12614
 etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 # REMOVED (hier nicht) ---	q4::inwork 16576,12612 16470,12612 16432,12612 16409,12612
@@ -36882,6 +36882,62 @@ EOF
 #: last_checked: 2022-10-24
 #: check_frequency: 60d
 Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93 5441,-150
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9442 (Bauzeit: 01.08.2022 bis 16.02.2023)
+#: by: https://www.bahninfo-forum.de/read.php?9,727655,738857#msg-738857 (hier: Bauzeit bis 8.5.2023)
+#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf (hier: bis Mai 2023)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1230428.php
+#: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bvg-baut-in-der-treskowallee-bis-mai-2023-gleise-fuer-neue-strassenbahnen_a353375
+#: by: https://berliner-abendblatt.de/2022/07/27/gleisbauarbeiten-in-der-treskowallee/
+#: by: https://www.bahninfo-forum.de/embed_images/47d/1a0/1f3/bc1/149/fa9/6cd/407/c85/26e/51_1200x920.png
+#: by: https://fahrinfo.vbb.de/him-uploads/1659119978201_bvg_22_BM_tram_treskowallee_aushang_din_a3_220718.pdf
+#: by: https://viz.berlin.de/2022/08/oberschoeneweide-gleisarbeiten/ (Radverkehr kann in der Edisonstraße passieren)
+#: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (weiterhin bis Mai 2023)
+#: source_id: viz2021:13.519751,52.473389,10.08.2022,07:00 (bis 20.12.2022)
+#: XXX außerdem möglich: Einbahnstraßenregelung in Wandlitzstr. und Wildensteiner Str.? (zurzeit wohl nicht)
+#: add_fragezeichen: Ist der Übergang Hegemeisterweg/Treskowallee noch immer gesperrt? vvv
+#: priority: #A vvv
+#: last_checked: 2022-10-26 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2022-12-20 vvv
+## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
+#	3nocross::ignrte 18256,7520 18382,7724 18406,7760 18471,7862
+Treskowallee -> Hegemeisterweg	3::inwork 18256,7520 18382,7724 18325,7778
+Hegemeisterweg -> Treskowallee	3::inwork 18325,7778 18382,7724 18406,7760
+Treskowallee -> Hegemeisterweg	3::inwork 18382,7724 18406,7760 18325,7778
+Treskowallee -> Modellpark Wuhlheide	3::inwork 18471,7862 18406,7760 18437,7752
+Hegemeisterweg -> Treskowallee	3::inwork 18325,7778 18406,7760 18471,7862
+Hegemeisterweg -> Modellpark Wuhlheide	3::inwork 18325,7778 18406,7760 18437,7752
+Modellpark Wuhlheide -> Treskowallee	3::inwork 18437,7752 18406,7760 18382,7724
+Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,7778
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
+#: add_fragezeichen ^^^
+EOF
+     },
+     { from  => $isodate2epoch->("2022-10-26 08:00:00"),
+       until => 1668553199, # 2022-11-15 23:59
+       text  => 'Alt-Reinickendorf/Roedernallee: Überqueren der Kreuzung nicht möglich, 26.10.2022 bis Mitte November 2022',
+       type  => 'gesperrt',
+       source_id => 'https://viz.berlin.de/2022/10/roedernallee/',
+       data  => <<EOF,
+#: by: https://viz.berlin.de/wp-content/uploads/Roedernallee.png
+## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
+#	3nocross::ignrte 6437,18958 6435,18839 6432,18682
+Roedernallee -> Veltener Str., Kienhorstpark	3::inwork 6432,18682 6435,18839 6360,18861
+Roedernallee -> Alt-Reinickendorf	3::inwork 6437,18958 6435,18839 6528,18808
+Alt-Reinickendorf -> Roedernallee	3::inwork 6528,18808 6435,18839 6432,18682
+Alt-Reinickendorf -> Veltener Str., Kienhorstpark	3::inwork 6528,18808 6435,18839 6360,18861
+Veltener Str., Kienhorstpark -> Roedernallee	3::inwork 6360,18861 6435,18839 6437,18958
+Veltener Str., Kienhorstpark -> Alt-Reinickendorf	3::inwork 6360,18861 6435,18839 6528,18808
 EOF
      },
     );
