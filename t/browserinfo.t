@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2005,2012,2013,2014,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2012,2013,2014,2017,2018,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -43,7 +43,9 @@ if ($use_fresh_uaprof_dir) {
     $main::uaprofdir = $tempdir;
 }
 
-{
+SKIP: {
+    skip "Error: ResourceNotFound", 3;
+
     local $ENV{HTTP_USER_AGENT} = "Nokia6100/1.0";
     local $ENV{HTTP_PROFILE} = "http://nds.nokia.com/uaprof/N6100r100.xml";
     my $bi = BrowserInfo->new;
@@ -55,7 +57,7 @@ if ($use_fresh_uaprof_dir) {
 
 {
     local $ENV{HTTP_USER_AGENT} = "Nokia6630/1.0";
-    local $ENV{HTTP_X_WAP_PROFILE} = "http://nds.nokia.com/uaprof/N6630r100.xml";
+    local $ENV{HTTP_X_WAP_PROFILE} = "http://nds.nokia.com/uaprof/N6630r100.xml"; # This URL is unused (and currently non-functional), display size for this device is hardcoded in module.
     my $bi = BrowserInfo->new;
     my($w,$h) = @{ $bi->{display_size} };
     is($w, 164, "Nokia6630 width");
@@ -289,4 +291,14 @@ SKIP: {
     my $bi = BrowserInfo->new;
     is "@warnings", "";
 }
+
+if (!$use_fresh_uaprof_dir && !Test::More->builder->is_passing) {
+    diag <<EOF;
+
+    To reproduce failures it might be necessary to run these tests
+    with the --fresh-uaprof-dir option.
+
+EOF
+}
+
 __END__
