@@ -5386,11 +5386,12 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch f¸r Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straﬂe und Zeitzer Straﬂe beendet? Wann wird die Einbahnstraﬂenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
-#: last_checked: 2022-10-16 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2022-10-25 vvv
+#: check_frequency: 7d vvv
 #: next_check: 2022-12-03 vvv
 #: also_indoor: traffic (G(unvollst‰ndig),B) vvv
-	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300 13476,7330
+# REMOVED (laut osm nicht mehr) ---	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300
+	q4::inwork; 13368,7300 13476,7330
 # REMOVED (offen) ---	q4::inwork 13326,7291 13325,7210
 	q4::inwork 13341,7423 13373,7426 13476,7330
 #: also_indoor ^^^

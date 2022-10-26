@@ -30328,7 +30328,9 @@ Frankenhauser Str.: Asphalt	Q0 7226,1428 7081,1346 6921,1259 6784,1185
 (Malteserstr. - Hanielweg): Asphalt	Q1+ 7451,1818 7534,1818 7562,1796
 #: confirmed_by: srt (teilweise)
 Trippsteinstr.: Asphalt	Q0 6526,1688 6572,1601 6632,1482 6662,1423 6678,1390 6715,1318 6762,1226 6784,1185 6831,1096
-Tennstedter Str.: Kopfsteinpflaster	Q2 6695,1706 6716,1667 6818,1459 6921,1259
+Tennstedter Str.: Kopfsteinpflaster	Q2 6695,1706 6716,1667
+#: add_fragezeichen: Liegt in der Tennstedter Straße südlich der Blankenhainer Straße Asphalt oder Kopfsteinpflaster?
+Tennstedter Str.: Kopfsteinpflaster	Q2 6716,1667 6818,1459 6921,1259
 Tennstedter Str.: Asphalt	Q0 6921,1259 7000,1100 7055,1051
 (Supermarktparkplatz): Asphalt	Q0 6842,1060 6812,925
 #: confirmed_by: srt
