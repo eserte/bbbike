@@ -19,6 +19,8 @@ BEGIN {
     }
 }
 
+plan skip_all => 'UAProf not relevant anymore';
+
 plan tests => 1;
 
 my $www_cache = 1;
