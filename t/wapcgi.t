@@ -37,10 +37,6 @@ sub skip_mapserver_tests () { return 0 }
 
 check_cgi_testing;
 
-# XXX Missing:
-# a test with a "real" user agent and a profile setting
-# to check if BrowserInfo::UAProf works correcly
-
 my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0 (wapcgi.t/$VERSION)");
 

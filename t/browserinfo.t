@@ -31,33 +31,13 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 97 }
+BEGIN { plan tests => 91 }
 
-my $use_fresh_uaprof_dir;
-GetOptions("fresh-uaprof-dir" => \$use_fresh_uaprof_dir)
-    or die "usage: $0 [--fresh-uaprof-dir]";
-
-if ($use_fresh_uaprof_dir) {
-    my $tempdir = tempdir("browserinfo-XXXXXXXX", TMPDIR => 1, CLEANUP => 1)
-	or die $!;
-    $main::uaprofdir = $tempdir;
-}
-
-SKIP: {
-    skip "Error: ResourceNotFound", 3;
-
-    local $ENV{HTTP_USER_AGENT} = "Nokia6100/1.0";
-    local $ENV{HTTP_PROFILE} = "http://nds.nokia.com/uaprof/N6100r100.xml";
-    my $bi = BrowserInfo->new;
-    my($w,$h) = @{ $bi->{display_size} };
-    is($w, 122, "Nokia6100 width");
-    is($h, 128, "Nokia6100 height");
-    ok($bi->{can_table}, "Nokia6100 can tables");
-}
+GetOptions()
+    or die "usage: $0\n";
 
 {
     local $ENV{HTTP_USER_AGENT} = "Nokia6630/1.0";
-    local $ENV{HTTP_X_WAP_PROFILE} = "http://nds.nokia.com/uaprof/N6630r100.xml"; # This URL is unused (and currently non-functional), display size for this device is hardcoded in module.
     my $bi = BrowserInfo->new;
     my($w,$h) = @{ $bi->{display_size} };
     is($w, 164, "Nokia6630 width");
@@ -65,21 +45,8 @@ SKIP: {
     ok($bi->{can_table}, "Nokia6630 can tables");
 }
 
-SKIP: {
-    skip "This UAProf URL seems to be permanently down", 3;
-
-    local $ENV{HTTP_USER_AGENT} = "SharpTQ-GX1/1.0";
-    local $ENV{HTTP_PROFILE} = "http://sharp-mobile.com/UAprof/GX1.xml";
-    my $bi = BrowserInfo->new;
-    my($w,$h) = @{ $bi->{display_size} };
-    is($w, 120-6, "Sharp width");
-    is($h, 160, "Sharp height");
-    ok($bi->{can_table}, "Sharp can tables");
-}
-
 {
     local $ENV{HTTP_USER_AGENT} = "UnknownDevice/1.0";
-    local $ENV{HTTP_PROFILE} = "http://does.not-exist.example.com/UAprof/foo.xml";
     my $bi = BrowserInfo->new;
     is("@{ $bi->{display_size} }", "750 590", "Fallback for unknown device");
 }
@@ -290,15 +257,6 @@ SKIP: {
     my @warnings; local $SIG{__WARN__} = sub { push @warnings, @_ };
     my $bi = BrowserInfo->new;
     is "@warnings", "";
-}
-
-if (!$use_fresh_uaprof_dir && !Test::More->builder->is_passing) {
-    diag <<EOF;
-
-    To reproduce failures it might be necessary to run these tests
-    with the --fresh-uaprof-dir option.
-
-EOF
 }
 
 __END__

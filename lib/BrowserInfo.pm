@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2005,2011,2012,2013,2014,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2005,2011,2012,2013,2014,2017,2018,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -271,31 +271,6 @@ sub set_info {
 	$self->{'display_size'} = [200,320]; # iPAQ
     }
 
-    my $uaprof;
-    my $tried_uaprof;
-    my $get_uaprof = sub {
-	if (!$uaprof && ($ENV{HTTP_PROFILE} || $ENV{HTTP_X_WAP_PROFILE}) && !$tried_uaprof) {
-	    $tried_uaprof = 1;
-	    eval {
-		require BrowserInfo::UAProf;
-		$uaprof = BrowserInfo::UAProf->new(uaprofdir => $self->default_uaprof_dir);
-	    };
-	    warn $@ if $@;
-	}
-	$uaprof;
-    };
-
-    if (!defined $self->{'display_size'}) {
-	if ($get_uaprof->()) {
-	    my $screensize = eval { $uaprof->get_cap("ScreenSize") };
-	    if (defined $screensize) {
-		my($w,$h) = split /x/i, $screensize;
-		$w -= $vert_scrollbar_space;
-		$self->{'display_size'} = [$w, $h];
-	    }
-	}
-    }
-
     if (!defined $self->{'display_size'}) {
 	if (defined $ENV{HTTP_DEVICE_WIDTH} && defined $ENV{HTTP_DEVICE_HEIGHT}) {
 	    my($w, $h) = ($ENV{HTTP_DEVICE_WIDTH}, $ENV{HTTP_DEVICE_HEIGHT});
@@ -357,9 +332,6 @@ sub set_info {
 			   );
 
     my $can_table;
-    if ($get_uaprof->()) {
-	$can_table = eval { $uaprof->get_cap("TablesCapable") =~ /yes/i ? 1 : 0 };
-    }
     if (!defined $can_table) {
 	$can_table = ((!$self->{'text_browser'} ||
 		       $q->user_agent("w3m")) &&
@@ -737,25 +709,7 @@ sub footer {
     $out;
 }
 
-sub default_uaprof_dir {
-    my $self = shift;
-    if (exists $self->{uaprofdir}) {
-	return $self->{uaprofdir};
-    }
-    if (defined $main::uaprofdir) {
-	return $main::uaprofdir;
-    }
-    require File::Basename;
-    require File::Spec;
-    my $dir = File::Spec->rel2abs(File::Basename::dirname(__FILE__)) . "/../tmp/uaprof";
-    $self->{uaprofdir} = $dir;
-    $dir;
-}
-
 package main;
-require FindBin;
-$FindBin::RealBin = $FindBin::RealBin if 0; # cease -w
-push @INC, $FindBin::RealBin; # so BrowserInfo::UAProf can be found
 my $bi = new BrowserInfo CGI->new;
 #$bi->emulate("wap");
 print $bi->header;
