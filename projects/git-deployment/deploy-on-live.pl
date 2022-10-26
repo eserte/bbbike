@@ -418,14 +418,6 @@ sub init_other {
 	mkdir_root "$dir/BBBike/tmp/www";
 	chmod 0777, "$dir/BBBike/tmp/www";
 
-	mkdir_root "$root_deploy_dir/bbbike-persistent-data";
-	chmod 0755, "$root_deploy_dir/bbbike-persistent-data";
-
-	mkdir_root "$root_deploy_dir/bbbike-persistent-data/uaprof";
-	chmod 0777, "$root_deploy_dir/bbbike-persistent-data/uaprof";
-
-	symlink_root "$root_deploy_dir/bbbike-persistent-data/uaprof", "$dir/BBBike/tmp/uaprof";
-
 	mkdir_root "$dir/public";
 	symlink_root '../BBBike', "$dir/public/BBBike";
 
