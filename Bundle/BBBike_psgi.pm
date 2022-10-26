@@ -25,8 +25,6 @@ Apache::Session::Counted	- optionale aber sehr zu empfehlende Session-Verwaltung
 
 XML::Simple	- optional für XML-Dumps der BBBike-Route
 
-XML::Parser	- optional für UAProf parsing (bevorzugt wird allerdings XML::LibXML::SAX oder XML::SAX::PurePerl)
-
 YAML::XS	- optional für YAML-Dumps der BBBike-Route, für die Testsuite sowie fuer temp_blockings
 
 JSON::XS	- optional für JSON-Dumps der BBBike-Route und diverse Serialisierungsaufgaben
