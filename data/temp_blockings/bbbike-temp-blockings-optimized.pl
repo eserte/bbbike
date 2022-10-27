@@ -3156,7 +3156,32 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.weihnachtsmarkt-deutschland.de/berlin-rudow-weihnachtsmarkt.html
+#: by: https://www.berlin.de/weihnachtsmarkt/5685707-3496862-rudower-weihnachtsmeile.html (findet 2021 nicht statt)
+#: source_id: 2147345257
+# note: früher Alt-Rudow zwischen Köpenicker Str. und Krokusstr.:	2::xmas 16849,1437 16805,1488 16610,1715
+	2::xmas 16610,1715 16767,1831
+',
+         'from' => 1671188400,
+         'id' => 2529,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'IM_020883',
+         'text' => 'Krokusstraße: Rudower Weihnachtsmeile, Straße gesperrt, 17.12.2022 und 18.12.2022',
+         'type' => 'gesperrt',
+         'until' => 1671393600
+       },
        undef,
        undef,
        undef,
@@ -4258,7 +4283,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-13 (mapillary)
+#: last_checked: 2022-10-27
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 	q4::inwork; 11329,12497 11209,12430
@@ -4573,7 +4598,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-08-30 vvv
+#: last_checked: 2022-10-27 vvv
 #: check_frequency: 120d vvv
 	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
 	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
@@ -5356,8 +5381,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        undef,
        {
-         'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv) (bis 30.9.2022) (bis 28.10.2022)
-#: source_id: viz2021:13.358072,52.540517,20.04.2022,08:00 (bis 30.9.2022) (bis 28.10.2022)
+         'data' => '#: source_id: viz2021:13.359404,52.539514,21.02.2022,09:00 (vielleicht ist das diese Baustelle, die aber falsch lokalisiert ist und fälschlicherweise nur für Kfz-Verkehr spricht; bis 8.4.2022) (mittlerweile bis 20.4.2022) (mittlerweile inaktiv) (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022)
+#: source_id: viz2021:13.358072,52.540517,20.04.2022,08:00 (bis 30.9.2022) (bis 28.10.2022) (bis 3.12.2022)
 #: source_id: viz2021:13.358728,52.540006,29.09.2022,18:39 (inaktiv)
 #: note: laut rbb nur bis 20.4.2022
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
@@ -5365,7 +5390,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: priority: #B
 #: last_checked: 2022-10-08 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2022-10-28 vvv
+#: next_check: 2022-12-03 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
 	q4::inwork; 6945,15045 7007,14911 7000,14832
 # REMOVED (hier vermutlich nicht?) ---	q4::inwork; 7182,14986 7178,14996 7131,15109
@@ -5377,9 +5402,9 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 ',
          'from' => undef,
          'id' => 3523,
-         'text' => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, außerdem Anbindung Lynarstr. gesperrt, außerdem Einbahnstraße in der Samoastr., offen Richtung Norden, voraussichtlich bis Ende Oktober 2022',
+         'text' => 'Tegeler Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Süden, außerdem Anbindung Lynarstr. gesperrt, außerdem Einbahnstraße in der Samoastr., offen Richtung Norden, voraussichtlich bis Anfang Dezember 2022',
          'type' => 'handicap',
-         'until' => 1666969200
+         'until' => 1670083200
        },
        {
          'data' => '#: next_check_id: BRAUNSCHWEIGER-2022
@@ -5920,40 +5945,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
          'until' => 1672441200
        },
        undef,
-       {
-         'data' => '#: by: https://berliner-abendblatt.de/2022/08/17/neue-gleise-fuer-die-dorotheenstrasse/ (vom 22. August bis zum 10. Oktober 2022)
-#: by: https://berliner-abendblatt.de/2022/08/21/diese-baustellen-sorgen-fuer-staus/
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/neue-gleise-und-weichen_a355298
-#: by: https://www.bahninfo-forum.de/read.php?9,708604,744663#msg-744663 (Verlängerung bis 11.12.2022)
-#: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (hier noch bis 10.10.2022, danach Sperrung der Oranienburger Str. (gleiche Linien betroffen))
-#: by: https://nitter.cz/VIZ_Berlin/status/1577924117503827969#m
-#: by: https://nitter.cz/pic/orig/media%2FFeXP3TTWAAI6GUd.jpg
-#: by: https://www.nd-aktuell.de/artikel/1167819.strassenbahn-verkehrsbetriebe-huellen-sich-in-schweigen.html
-#: note: laut rbb ist die Georgenstr. länger (bis 6.10.2022) gesperrt
-#: XXX Dauern die Bauarbeiten und Sperrungen länger an?
-#: next_check: 2022-10-29 vvv
-#: source_id: viz2021:13.391637,52.520049,22.08.2022,06:00 (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 4.10.2022) (inaktiv)
-#: source_id: viz2021:13.392073,52.520077,06.10.2022,09:30 (bis 19.10.2022)
-# REMOVED --- #: last_checked: 2022-10-06
-# REMOVED --- Georgenstr.	q3::inwork 9568,12688 9441,12670
-#: note: laut rbb ist die Dorotheenstr. sogar bis 31.10.2022 gesperrt
-#: source_id: viz2021:13.395309,52.519431,22.08.2022,06:00 (2x mit der gleichen Koordinate) (hier nur bis 5.9.2022) (mittlerweile bis 29.9.2022) (bis 30.9.2022) (inaktiv)
-#: source_id: viz2021:13.395207,52.520461,05.10.2022,07:00 (Am Kupfergraben, bis 17.10.2022) (bis 29.10.2022)
-#: last_checked: 2022-10-22 (mapillary) vvv
-# REMOVED --- #: next_check: 2022-09-30 vvv
-# REMOVED (laut rbb hier aufgehoben) --- Dorotheenstr.	q4::inwork 9742,12609 9870,12657
-Georgenstr.	q3::inwork 9754,12775 9659,12704
-Am Kupfergraben	q4::inwork 9754,12775 9815,12705 9870,12657
-# REMOVED --- #: next_check ^^^
-#: last_checked ^^^
-#: next_check ^^^
-',
-         'from' => 1661032800,
-         'id' => 3608,
-         'text' => 'Am Kupfergraben und Georgenstr.: Gleisarbeiten, Fahrbahn gesperrt, bis 29. Oktober 2022',
-         'type' => 'handicap',
-         'until' => 1667059200
-       },
+       undef,
        {
          'data' => '#: note: Einbahnstraße etwa 70m lang
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=706715#post706715
@@ -5978,9 +5970,9 @@ Am Kupfergraben	q4::inwork 9754,12775 9815,12705 9870,12657
          'from' => 1661230800,
          'id' => 3610,
          'source_id' => 'viz2021:13.378615,52.517943,24.08.2022,07:00',
-         'text' => 'Dorotheenstr.: Bauarbeiten zwischen Ebertstr. und Wilhelmstr., Fahrbahn gesperrt, vom 24.08.2022 07:00 bis 31.10.2022 17:00',
+         'text' => 'Dorotheenstr.: Bauarbeiten zwischen Ebertstr. und Wilhelmstr., Fahrbahn gesperrt, vom 24.08.2022 bis 15.12.2022',
          'type' => 'handicap',
-         'until' => 1667232000
+         'until' => 1671120000
        },
        {
          'data' => '#: note: Gehweg scheint auch gesperrt zu sein
@@ -6014,9 +6006,9 @@ Am Kupfergraben	q4::inwork 9754,12775 9815,12705 9870,12657
          'from' => 1658970000,
          'id' => 3615,
          'source_id' => 'viz2021:13.321852,52.501972,29.07.2022,03:00',
-         'text' => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, vom 29.07.2022 03:00 bis 28.10.2022 17:00',
+         'text' => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, vom 29.07.2022 bis 31.12.2022',
          'type' => 'handicap',
-         'until' => 1666969200
+         'until' => 1672502400
        },
        {
          'data' => '#: by: https://www.youtube.com/watch?v=swATp4lDNFs (Webcam)
@@ -6052,7 +6044,7 @@ Am Kupfergraben	q4::inwork 9754,12775 9815,12705 9870,12657
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-10-14
+#: last_checked: 2022-10-27
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -6207,7 +6199,7 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
        {
          'data' => '#: also_indoor: traffic (G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-23 (Asphaltierungsarbeiten)
+#: last_checked: 2022-10-27 (Asphaltierungsarbeiten)
 #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 ',
@@ -6504,6 +6496,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'data' => '#: next_check_id: FAHLENBERGBRUECKE-2022
 #: source_id: viz2021:13.703766,52.402664,21.10.2022,20:00
 #: source_id: viz2021:13.70456,52.4024,21.10.2022,20:00 (inaktiv)
+#: note: mittlerweile -> gesperrt-orig
 	2::inwork 31009,19 31080,-19
 ',
          'from' => 1666288800,
