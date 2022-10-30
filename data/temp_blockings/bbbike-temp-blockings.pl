@@ -36902,7 +36902,7 @@ EOF
        until => undef, # XXX
        text  => 'Hegemeisterweg/Treskowallee: Übergang kann wegen Bauarbeiten gesperrt sein',
        type  => 'gesperrt',
-       data  => <<EOF,
+       data  => <<'EOF',
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9442 (Bauzeit: 01.08.2022 bis 16.02.2023)
 #: by: https://www.bahninfo-forum.de/read.php?9,727655,738857#msg-738857 (hier: Bauzeit bis 8.5.2023)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf (hier: bis Mai 2023)
@@ -36942,7 +36942,7 @@ EOF
        text  => 'Alt-Reinickendorf/Roedernallee: Überqueren der Kreuzung nicht möglich, 26.10.2022 bis Mitte November 2022',
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/2022/10/roedernallee/',
-       data  => <<EOF,
+       data  => <<'EOF',
 #: by: https://viz.berlin.de/wp-content/uploads/Roedernallee.png
 ## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe 's/: \t/\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/' >| /tmp/3.new
 #	3nocross::ignrte 6437,18958 6435,18839 6432,18682

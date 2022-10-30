@@ -6561,7 +6561,7 @@ Mauerweg Marienfelde - Lichterfelde	2::inwork 6256,363 6204,331 6013,211 5832,93
 #: last_checked: 2022-10-26 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-12-20 vvv
-## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: 	/	/; s/igndisp/inwork/; ="# " if /3nocross/\' >| /tmp/3.new
+## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\' >| /tmp/3.new
 #	3nocross::ignrte 18256,7520 18382,7724 18406,7760 18471,7862
 Treskowallee -> Hegemeisterweg	3::inwork 18256,7520 18382,7724 18325,7778
 Hegemeisterweg -> Treskowallee	3::inwork 18325,7778 18382,7724 18406,7760
@@ -6585,7 +6585,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        },
        {
          'data' => '#: by: https://viz.berlin.de/wp-content/uploads/Roedernallee.png
-## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: 	/	/; s/igndisp/inwork/; ="# " if /3nocross/\' >| /tmp/3.new
+## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\' >| /tmp/3.new
 #	3nocross::ignrte 6437,18958 6435,18839 6432,18682
 Roedernallee -> Veltener Str., Kienhorstpark	3::inwork 6432,18682 6435,18839 6360,18861
 Roedernallee -> Alt-Reinickendorf	3::inwork 6437,18958 6435,18839 6528,18808
