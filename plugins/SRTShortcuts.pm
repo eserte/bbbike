@@ -1248,7 +1248,7 @@ sub add_todays_geocoded_images {
 				 push @images, $File::Find::name;
 			     }
 			 }
-		     }, "$ENV{HOME}/images/nikon", "$ENV{HOME}/images/iphone6", "$ENV{HOME}/images/mapillary_iphone");
+		     }, "$ENV{HOME}/images/nikon", "$ENV{HOME}/images/iphone6", "$ENV{HOME}/images/iphone11", "$ENV{HOME}/images/mapillary_iphone");
     if (!@images) {
 	main::status_message("No images found with glob '$glob'", "warn");
 	return;
