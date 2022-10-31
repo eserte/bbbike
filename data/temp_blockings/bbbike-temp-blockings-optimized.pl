@@ -4392,20 +4392,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/an-einem-nachmittag-im-monat-wird-die-gudvanger-strasse-nun-offiziell-gesperrt_a274891 (hier: ab Juli 2020)
-#: by: http://www.spielstrassen.de/initiativen.php?init=Templiner_Str (hier: ab 30.6.2020, Hausnummern 15 bis 19)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/fuer-die-spielstrasse-unterschreiben_a277858
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/templiner-strasse-wird-spielstrasse_a276796 (Hausnummern hier vermutlich falsch)
-	q4::temp::play 10670,14116 10716,14195 10739,14228
-',
-         'from' => 1656453600,
-         'id' => 3253,
-         'recurring' => 1,
-         'text' => 'Templiner Str.: zwischen Zionskirchstr. und Schwedter Str. dienstags zwischen 15 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 30.6. bis 30.10.',
-         'type' => 'handicap',
-         'until' => 1667149200
-       },
+       undef,
        {
          'data' => '#: next_check_id: SCHOEN-2022
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020)
@@ -5418,10 +5405,12 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: last_checked: 2022-10-25 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2022-12-03 vvv
-#: also_indoor: traffic (G(unvollständig),B) vvv
+#: also_indoor: traffic (G[unvollständig],B) vvv
 # REMOVED (laut osm nicht mehr) ---	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300
+#: osm_watch: way id="423009430" version="17"
 	q4::inwork; 13368,7300 13476,7330
 # REMOVED (offen) ---	q4::inwork 13326,7291 13325,7210
+#: osm_watch: way id="173067346" version="23"
 	q4::inwork 13341,7423 13373,7426 13476,7330
 #: also_indoor ^^^
 #: next_check ^^^
@@ -5612,7 +5601,6 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
 #: source_id: bvg2021:150#BVG300484_0
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
 #: source_id: viz2021:13.492898,52.636603,09.09.2022,09:00 (bis 31.01.2024)
-#: XXX Keine Verkehrsmeldung mehr --- wurde die Baustelle aufgehoben?
 #: next_check: 2024-01-31
 	q4::inwork; 16166,25767 16121,25818
 ',
@@ -5695,7 +5683,7 @@ Seydlitzstr.	q3::inwork 6349,2510 6459,2364
 #: osm_watch: way id="4531799" version="13"
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-16
+#: last_checked: 2022-10-29 (daf)
 #: check_frequency: 90d
 	q4::inwork; 4434,11227 4415,11050
 ',
@@ -5818,13 +5806,13 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        {
          'data' => '#: XXX einige Halteverbotsschilder bis 1.11.2022
-#: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
+#: also_indoor: traffic (ex-H[incomplete],B[incomplete],G[falsch]) vvv
 #: last_checked: 2022-10-23 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2022-11-01 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2022-11-01 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
 	q3::inwork 12995,8213 13060,8148
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -6305,6 +6293,7 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
          'data' => '#: by: https://www.youtube.com/watch?v=-UWvhPunrr8 (Sperrung der Fußgängerbrücke wegen Bauarbeiten ab November 2022)
 #: by: https://www.berliner-woche.de/westend/c-bauen/rohbau-fuer-neues-ausbildungszentrum-fertig_a360518 (Haben die Bauarbeiten hier etwas damit zu tun? Fertigstellung Herbst 2023)
 #: by: https://www.bahninfo-forum.de/read.php?9,690942,747836#msg-747836 (vom 7.11.2022 bis zum 17.3.2023?)
+#: by: https://www.bahninfo-forum.de/read.php?9,748153,748153#msg-748153
 # REMOVED --- #: XXX Bis wann bleibt die Sperrung? --- #: next_check: 2022-12-31
 	2::inwork -107,12220 -76,12236 -45,12243
 ',
@@ -6329,7 +6318,7 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
          'data' => '#: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2022-10-16 (mapillary) vvv
+#: last_checked: 2022-10-28 (mapillary) vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: last_checked ^^^
@@ -6415,7 +6404,7 @@ Gerichtstr.	q3::inwork 7464,15409 7627,15412
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-10-22
+#: last_checked: 2022-10-31
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -6624,6 +6613,7 @@ Veltener Str., Kienhorstpark -> Alt-Reinickendorf	3::inwork 6360,18861 6435,1883
 #: note: Halteverbotsschilder bis 31.12.2023
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr.
 #: also_indoor: traffic (B)
+#: osm_watch: way id="1055654058" version="1"
 #: last_checked: 2022-10-29
 #: check_frequency: 150d
 #: next_check: 2023-12-31
@@ -6654,7 +6644,7 @@ Veltener Str., Kienhorstpark -> Alt-Reinickendorf	3::inwork 6360,18861 6435,1883
          'data' => '#: by: https://www.berliner-woche.de/kaulsdorf/c-verkehr/fussgaengersteig-ueber-die-wuhle-wurde-gesperrt_a361880
 #: by: https://berliner-abendblatt.de/2022/10/27/einsturzgefahr-fussgaengersteg-am-stadion-wuhletal-gesperrt/
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
-#: osm_watch: way id="27944267" version="12"
+#: osm_watch: way id="27944267" version="13"
 #: next_check: 2022-12-01
 	2::inwork 22171,12965 22196,12961
 ',

@@ -15285,7 +15285,7 @@ EOF
        text  => 'L 337 zw. B168 vor Tiefensee und B158 Werftpfuhl Deckenerneuerung Vollsperrung 18.07.2009-31.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 39140,29074 38087,29075 36975,29112
+	2::inwork 39140,29074 38087,29075 37002,29113
 EOF
      },
      { from  => 1249106357, # 2009-08-01 07:59
@@ -34965,10 +34965,12 @@ EOF
 #: last_checked: 2022-10-25 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2022-12-03 vvv
-#: also_indoor: traffic (G(unvollständig),B) vvv
+#: also_indoor: traffic (G[unvollständig],B) vvv
 # REMOVED (laut osm nicht mehr) ---	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300
+#: osm_watch: way id="423009430" version="17"
 	q4::inwork; 13368,7300 13476,7330
 # REMOVED (offen) ---	q4::inwork 13326,7291 13325,7210
+#: osm_watch: way id="173067346" version="23"
 	q4::inwork 13341,7423 13373,7426 13476,7330
 #: also_indoor ^^^
 #: next_check ^^^
@@ -35327,7 +35329,6 @@ EOF
 #: source_id: bvg2021:150#BVG300484_0
 #: source_id: viz2021:13.491292,52.637683,09.09.2022,09:00 (bis 24.10.2022) (inaktiv)
 #: source_id: viz2021:13.492898,52.636603,09.09.2022,09:00 (bis 31.01.2024)
-#: XXX Keine Verkehrsmeldung mehr --- wurde die Baustelle aufgehoben?
 #: next_check: 2024-01-31
 	q4::inwork; 16166,25767 16121,25818
 EOF
@@ -35461,7 +35462,7 @@ EOF
 #: osm_watch: way id="4531799" version="13"
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-09-16
+#: last_checked: 2022-10-29 (daf)
 #: check_frequency: 90d
 	q4::inwork; 4434,11227 4415,11050
 EOF
@@ -35583,13 +35584,15 @@ EOF
 	2::inwork 10824,11992 10742,12033 10713,12014
 EOF
      },
-     { from  => undef, # 
-       until => $isodate2epoch->("2022-09-18 23:59:59"), # 1 Tag später
-       text  => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison bis zum 17. September 2022',
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-06-01 00:00:00") }, # 1 Tag Vorlauf
+       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-30 18:00:00") }, # 2022 letztes Konzert am 17. September
+       text  => 'Eichgestell: der Weg kann entlang der Parkbühne Wuhlheide komplett gesperrt sein, Konzertsaison von Juni bis September',
        type  => 'gesperrt',
        source_id => 'https://www.wuhlheide.de/programm',
        data  => <<EOF,
+#: url: http://www.wuhlheide.de/programm
 #: note: zwischen den Konzertterminen offen, z.B. gesehen am 2022-07-03
+#: note: 2023 gibt es Konzerttermine zwischen dem 10. Juni 2023 und 09. September 2023
 	2::temp 20199,6318 20106,6357 20081,6368 19995,6406
 EOF
      },
@@ -35858,13 +35861,13 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX einige Halteverbotsschilder bis 1.11.2022
-#: also_indoor: traffic (ex-H(incomplete),B(incomplete)) vvv
+#: also_indoor: traffic (ex-H[incomplete],B[incomplete],G[falsch]) vvv
 #: last_checked: 2022-10-23 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2022-11-01 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2022-11-01 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
 	q3::inwork 12995,8213 13060,8148
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -36642,6 +36645,7 @@ EOF
 #: by: https://www.youtube.com/watch?v=-UWvhPunrr8 (Sperrung der Fußgängerbrücke wegen Bauarbeiten ab November 2022)
 #: by: https://www.berliner-woche.de/westend/c-bauen/rohbau-fuer-neues-ausbildungszentrum-fertig_a360518 (Haben die Bauarbeiten hier etwas damit zu tun? Fertigstellung Herbst 2023)
 #: by: https://www.bahninfo-forum.de/read.php?9,690942,747836#msg-747836 (vom 7.11.2022 bis zum 17.3.2023?)
+#: by: https://www.bahninfo-forum.de/read.php?9,748153,748153#msg-748153
 # REMOVED --- #: XXX Bis wann bleibt die Sperrung? --- #: next_check: 2022-12-31
 	2::inwork -107,12220 -76,12236 -45,12243
 EOF
@@ -36664,7 +36668,7 @@ EOF
 #: note: evtl. außerhalb der Arbeitszeiten problemlos für Radfahrer passierbar, gesehen 2022-10-17 (So)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2022-10-16 (mapillary) vvv
+#: last_checked: 2022-10-28 (mapillary) vvv
 nur Gehweg frei	q4::inwork 7641,20745 7630,20698 7616,20633
 Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: last_checked ^^^
@@ -36765,7 +36769,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-10-22
+#: last_checked: 2022-10-31
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -36980,6 +36984,7 @@ EOF
 #: note: Halteverbotsschilder bis 31.12.2023
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr.
 #: also_indoor: traffic (B)
+#: osm_watch: way id="1055654058" version="1"
 #: last_checked: 2022-10-29
 #: check_frequency: 150d
 #: next_check: 2023-12-31
@@ -37009,7 +37014,7 @@ EOF
 #: by: https://www.berliner-woche.de/kaulsdorf/c-verkehr/fussgaengersteig-ueber-die-wuhle-wurde-gesperrt_a361880
 #: by: https://berliner-abendblatt.de/2022/10/27/einsturzgefahr-fussgaengersteg-am-stadion-wuhletal-gesperrt/
 #: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
-#: osm_watch: way id="27944267" version="12"
+#: osm_watch: way id="27944267" version="13"
 #: next_check: 2022-12-01
 	2::inwork 22171,12965 22196,12961
 EOF
