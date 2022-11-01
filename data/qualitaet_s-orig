@@ -121,7 +121,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="18"
-#: last_checked: 2022-10-23
+#: last_checked: 2022-11-01
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -859,7 +859,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2022-10-02
+#: last_checked: 2022-11-01
 #: check_frequency: 120d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -2252,7 +2252,7 @@ Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13279,8947 13458,8805
 Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368
 # REMOVED --- Beermannstr.: Kopfsteinpflaster	Q2 14119,9368 14157,9345
 # REMOVED --- Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14162,9381 14172,9457
-Matthesstr.: Asphalt	Q0 14172,9457 14185,9509
+# REMOVED --- Matthesstr.: Asphalt	Q0 14172,9457 14185,9509
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/elbestrasse-soll-spaetestens-ab-2024-fuer-fussgaenger-und-radfahrer-attraktiver-werden_a324155
 #: XXX Umgestaltung geplant, vielleicht auch Asphaltierung?
 #: last_checked: 2022-09-30
@@ -6097,7 +6097,11 @@ Bruno-Taut-Str.: Beton	Q0 21870,803 21790,682
 Smetanastr.: unbefestigte Straße	Q2 14300,15424 14195,15604
 (Antonplatz - Bizetstr.): Gehwegplatten	Q0- 13484,15893 13524,15786
 (Antonplatz - Bizetstr.): Gehwegplatten/Kleinsteinpflaster	Q1+ 13508,15912 13539,15859 13519,15849 13540,15792
-Malchower Weg: schlechtes Kopfsteinpflaster	Q3 13171,19837 13008,19919 12952,19947 12864,19991 12719,20065 12586,20131 12547,20154
+Grünkardinalweg: schlechtes Kopfsteinpflaster	Q3 13171,19837 13008,19919 12952,19947 12864,19991 12719,20065 12586,20131
+#: by: https://nitter.cz/VIZ_Berlin/status/1587373430076329989#m
+#: add_fragezeichen: Ist die Deckschicht nach den Bauarbeiten besser geworden?
+#: next_check: 2022-11-04
+Grünkardinalweg (Unterführung): schlechtes Kopfsteinpflaster	Q3 12586,20131 12547,20154
 #: note: aus der Bahn gesehen:
 Karestr.: Asphalt	Q0 15453,24474 15414,24418 15344,24315
 Rheinfelsstr.: schlechtes Kopfsteinpflaster	Q3 13687,21993 13505,22081

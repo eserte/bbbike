@@ -8,9 +8,14 @@
 #: temporary vvv
 # 
 #: next_check_id: WILHELMAMPEL-2022
+#: source_id: viz2021:13.184034,52.519038,11.10.2022,07:00 (Sperrung der Wilhelmstr. Richtung Nordosten bis 28.10.2022) (am nächsten Tag bereits inaktiv)
+#: source_id: viz2021:13.183049,52.518565,02.11.2022,08:00 (bis 30.11.2022)
+#: by: https://nitter.cz/VIZ_Berlin/status/1579825402096521218#m (bis auf Weiteres gibt es keine Sperrung)
+#: note: am 2022-09-22 war hier eine temporäre Ampelanlage für die gesamte Einmündung mit vollständiger Gelbmarkierung, aber noch nicht eingeschaltet
 #: note: gilt nicht für Radfahrer Richtung Süden (Heerstr.)
 #: last_checked: 2022-10-08
 #: check_frequency: 120d
+#: next_check: 2022-11-30
 Wilhelmstr./Am Omnibushof: provisorische Ampel	X::inwork -4647,12269
 # 
 #: next_check_id: HAENSEL-2022
@@ -23,7 +28,7 @@ Kiefholzstr./Hänselstr.: provisorische Fußgängerampel	F::inwork 15695,7254
 #: osm_watch: way id="936801541" version="3"
 #: XXX Ampel befindet sich östlich der Einmündung
 #: note: Anforderungsampel
-#: last_checked: 2022-10-24
+#: last_checked: 2022-11-01
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -90,7 +95,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2022-10-18 vvv
+#: last_checked: 2022-11-01 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -2485,7 +2490,8 @@ S-Bahn und Regionalbahn	B 21562,12088
 	F 8867,4506
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX zurzeit keine Ampel, aber neue Masten stehen schon und werden vermutlich für die Anschlussstelle neue Ampeln tragen
-#: last_checked: 2022-10-05
+#: XXX evtl. als zwei Ampeln eintragen, falls die Ampelphasen für Radfahrer ungünstig sind
+#: last_checked: 2022-11-01
 #: check_frequency: 120d
 	X0 14185,9509
 #: next_check_id: AMTREPTOWERPARK-2020
@@ -3184,7 +3190,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: CHAUSSEE-2020
 #: last_checked: 2022-10-03
 #: check_frequency: 60d
-#: next_check: 2022-11-02
+# REMOVED --- #: next_check: 2022-11-02
 	X::inwork 8732,14098
 # 
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) --- X::inwork 8870,13926
@@ -3511,7 +3517,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: osm_watch: node id="26748289" version="9"
 #: last_checked: 2022-10-19
 #: check_frequency: 60d
-#: next_check: 2022-11-02
+# REMOVED --- #: next_check: 2022-11-02
 	X::inwork 8336,14586
 # 
 #: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019)

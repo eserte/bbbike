@@ -160,7 +160,16 @@ Detmolder Str. (Nord)	2 4349,8118 4469,8037 4600,8002 4711,8013
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
 # REMOVED (moved to temp blockings) --- currently XXX_outdoor --- : XXX_indoor: consider to move into temp blockings (but check first for exact times; maybe wait until temp blocking implementations are getting better) --- #: XXX aber zuerst handicap+qualitaet analysieren --- Gartenufer (in der Dunkelheit gesperrt)	2 6226,11405 6067,11479 5845,11615 5790,11643
 Steinplatz	1 5153,11357 5113,11305 5080,11328 5043,11354 5085,11413
-Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13860,9861 13795,9941
+# 
+#: next_check_id: AMTREPTOWERPARK-2020
+#: XXX Einbahnstraße ggfs. wiederherstellen (es sei denn, der Radweg auf der Nordseite wurde mittlerweile fertiggestellt)
+#: XXX früher: Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1
+#: last_checked: 2022-11-01
+#: check_frequency: 90d
+#: next_check: 2022-12-31
+Am Treptower Park	1no 14089,9610 13860,9861
+Am Treptower Park	1 13860,9861 13795,9941
+# 
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928
 Bethaniendamm	1 12060,11323 12010,11224 11944,11152 11845,11095 11750,11065 11640,11067 11458,11136
 Engeldamm	1 11473,11180 11656,11106 11798,11121 11917,11186 11981,11263 12021,11349
@@ -3566,7 +3575,7 @@ Möllhausenufer: Bauarbeiten, Einbahnstraßenregelung	1s:q3 23608,1210 23520,1194
 #: by: https://bauprojekte.deutschebahn.com/p/dresdner-bahn/infobauarbeiten?date=20220111 (bis Ende 2023)
 #: note: Fertigstellung EÜ laut Baustellenschild 2023
 #: osm_watch: way id="229990468" version="6"
-#: last_checked: 2022-07-24
+#: last_checked: 2022-10-31 (daf)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4315
@@ -3683,14 +3692,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, gesperrt	2::inwork 12608,11692 12645,11673
 # REMOVED (möglicherweise wieder offen; -> temp blockings) --- #: source_id: AdB/21-11-00135 (bis 11.03.2022) --- #: by: https://hohen-neuendorf.de/de/stadt-leben/aktuelles/bruecken-bei-birkenwerder-inbetriebnahme-noch-2021 --- #: also_indoor: traffic (H) --- #: osm_watch: way id="175828136" version="8" --- #: priority: #B --- #: last_checked: 2021-09-12 (wosch) --- #: next_check: 2022-03-11 --- Schönfließ - Summt: Brücke über die A10 wird neu gebaut	2::inwork 5752,30817 5787,30867
 # REMOVED (Hilfsbrücke existiert) --- #: osm_watch: way id="976563363" version="1" --- #: source_id: AdB/21-11-00134 (bis 17.12.2021) --- #: next_check: 2021-12-17 --- Fichteallee: Brücke über die A10 wird neu gebaut	2::inwork 2233,32334 2334,32485
 # REMOVED (möglicherweise wieder offen) --- #: source_id: AdB/21-11-00133 (bis 15.11.2021) (inaktiv) --- #: source_id: AdB/21-11-00133 (bis 21.12.2021) (inaktiv) --- #: by: https://viz.berlin.de/2021/12/a10-a24/ (Öffnung vor Weihnachten 2021) --- #: by: https://hohen-neuendorf.de/de/stadt-leben/aktuelles/bruecken-bei-birkenwerder-inbetriebnahme-noch-2021 --- #: add_fragezeichen: Ist die Brücke mittlerweile wieder geöffnet? --- #: also_indoor: traffic (G) --- #: osm_watch: way id="926868384" version="1" --- #: osm_watch: way id="926868383" version="2" --- #: priority: #B --- #: next_check: 2021-12-21 --- Stolper Weg: Brücke über die A10 wird neu gebaut	2::inwork 514,32607 525,32437
-# 
-#: next_check_id: AMTREPTOWERPARK-2020
-#: XXX vermutlich wird die Straße dauerhaft verschwinden -> dann aus strassen-orig & Berlin.coords.data etc. entfernen
-#: last_checked: 2022-09-25
-#: check_frequency: 180d
-#: next_check: 2024-12-31
-Matthesstr.: Baustelle, keine Durchfahrt möglich	2::inwork 14185,9509 14172,9457
-# 
+# REMOVED (entfernt) --- #: next_check_id: AMTREPTOWERPARK-2020 --- #: XXX vermutlich wird die Straße dauerhaft verschwinden -> dann aus strassen-orig & Berlin.coords.data etc. entfernen --- #: last_checked: 2022-09-25 --- #: check_frequency: 180d --- #: next_check: 2024-12-31 --- Matthesstr.: Baustelle, keine Durchfahrt möglich	2::inwork 14185,9509 14172,9457
 # REMOVED --- #: next_check_id: BEBAUUNGSPLAN-5-87B --- #: last_checked: 2021-09-04 vvv --- #: check_frequency: 180d vvv --- Pembabogen: durch Bauzäune abgesperrt	2::inwork -2750,19013 -2747,19074 --- #: XXX wobei auf der westlichen Seite keine Absperrung ist und die östliche Absperrung umfahrbar ist --- Tasmanienweg: durch Bauzäune abgesperrt	2::inwork -2747,19074 -2647,19070 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: HEBAMMENSTEIGBRUECKE-2021
@@ -3816,7 +3818,7 @@ Gustav-Hertz-Platz: wegen Brückenarbeiten gesperrt	2::inwork 18685,4595 18649,46
 #: confirmed_by: srt (am S-Bhf.)
 #: osm_watch: way id="24557771" version="8" vvv
 #: XXX bis wann sind die Wege gesperrt? vvv
-#: last_checked: 2022-10-24 vvv
+#: last_checked: 2022-10-31 (daf) vvv
 #: check_frequency: 180d vvv
 # REMOVED (Sperrung erst weiter hinten) --- Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9473,-92
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9473,-92 9271,323 9253,370 9218,458 9178,556
@@ -3934,7 +3936,7 @@ George-Stephenson-Str.: Bauarbeiten, gesperrt	2::inwork 7487,14472 7452,14415 75
 #: by: https://www.deutsches-architekturforum.de/thread/9401-wasserstadt-stralau-kleine-und-gr%C3%B6%C3%9Fere-projekte/?postID=653296#post653296 (Bauarbeiten bis Ende September 2021)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10418 (vermutlich keine öffentliche Durchwegung)
 #: osm_watch: way id="541556560" version="4"
-#: last_checked: 2022-10-16
+#: last_checked: 2022-11-01
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-09-30
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055
@@ -4069,7 +4071,7 @@ Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 #: note: laut rbb komplett gesperrt, bis 30.6.2023, in der Realität weiterhin Einbahnstraße --- mittlerweile manchmal tatsächlich gesperrt (gesperrt: gesehen 2022-10-04; nicht gesperrt: gesehen 2022-10-13)
 #: osm_watch: way id="5096644" version="19"
 #: priority: #C
-#: last_checked: 2022-10-28
+#: last_checked: 2022-11-01
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komplett gesperrt sein	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -4088,7 +4090,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg, kann auch komple
 #: source_id: viz2021:13.3621,52.447308,22.12.2020,10:00 (angrenzende Attilastr., bis 31.7.2022, Gesamtbaumaßnahme bis 2024) (mittlerweile inaktiv)
 #: source_id: viz2021:13.361375,52.44703,01.04.2021,08:44 (angrenzende Attilastr., bis 31.7.2023)
 #: add_fragezeichen: Bis wann genau geht die Sperrung?
-#: last_checked: 2022-10-15
+#: last_checked: 2022-10-31 (daf)
 #: check_frequency: 120d
 #: next_check: 2023-07-31
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdner Bahn gesperrt	2::inwork 7727,4418 7692,4464 7667,4549
@@ -4711,7 +4713,7 @@ Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 #: note: laut osm Sperrung bis 01/2023
 #: osm_watch: way id="663005792" version="9" brb
 #: also_indoor: traffic
-#: last_checked: 2022-07-24 (baustellen-doku) vvv
+#: last_checked: 2022-10-31 (daf) vvv
 #: check_frequency: 360d vvv
 #: next_check: 2023-01-01 vvv
 Berliner Str. (Mahlow): Straße gesperrt, neue Bahnunterführung wird gebaut	2:inwork 10776,-4460 10896,-4469 10956,-4470

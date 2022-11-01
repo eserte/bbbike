@@ -307,7 +307,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-10-31 (Ausschilderung fehlt noch) vvv
+#: last_checked: 2022-11-01 (Ausschilderung fehlt noch) vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 	RW1; 13596,10722 13633,10705
@@ -319,7 +319,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede
 #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert
 #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen
-#: last_checked: 2022-10-31
+#: last_checked: 2022-11-01
 #: check_frequency: 7d
 #: next_check: 2022-12-16
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -328,7 +328,7 @@ gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14218,10430 14405,10
 	RW2; 13986,10549 13919,10583 13850,10612 13779,10642 13678,10685 13633,10705 13596,10722
 	RW4; 14103,10489 13986,10549
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-10-18
+#: last_checked: 2022-11-01
 #: check_frequency: 90d
 # früher: das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14218,10430 14103,10489
 provisorische Radspur	RW4; 14218,10430 14103,10489
@@ -1112,7 +1112,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-10-31 vvv
+#: last_checked: 2022-11-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1562,14 +1562,11 @@ asphaltiert	RW1; 27761,-3165 27721,-3164
 Verbundsteinpflaster	RW1; 15166,8489 15378,8668 15558,8820 15591,8848
 die ersten 50 Meter mit abgesperrtem Radweg	RW0; 15591,8848 15558,8820 15378,8668
 # 
-#: next_check_id: AMTREPTOWERPARK-2020
-#: XXX südlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2022-09-25
-#: check_frequency: 120d
-# früher: Verbundsteinpflaster	RW1; 14089,9610 14185,9509
-Asphalt, provisorische Wegführung	RW8; 14089,9610 14185,9509
-# früher: alter, schadhafter Asphalt	RW1; 14185,9509 14242,9448
-Asphalt, provisorische Wegführung	RW8; 14185,9509 14242,9448
+#: historical_note: während der Bauarbeiten: Asphalt, provisorische Wegführung	RW8; 14089,9610 14185,9509 14242,9448
+#: historical_note: früher: Verbundsteinpflaster
+Asphalt, relativ breit	RW2; 14089,9610 14185,9509
+#: historical_note: früher: alter, schadhafter Asphalt
+Asphalt, relativ breit	RW2; 14185,9509 14242,9448
 Asphalt, relativ breit	RW2; 14185,9509 14089,9610
 # 
 alter, schadhafter Asphalt	RW1; 14242,9448 14382,9299 14443,9233 14475,9199 14558,9111 14614,9052 14745,8912 14842,8809 14852,8799 14934,8717 15002,8651
@@ -1936,7 +1933,7 @@ Asphalt mit einigen Brüchen	RW1; 9321,8607 9364,8640 9395,8726
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2022-10-18
+#: last_checked: 2022-11-01
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2599,7 +2596,7 @@ die ersten 20 Meter werden auf dem Gehweg geführt	RW3; 14558,10264 14608,10409
 #: by: https://www.deutsches-architekturforum.de/thread/11145-bauprojekte-im-rudolfkiez-friedrichshain/?postID=715160#post715160 (2. Bauvorhaben (südl.))
 #: by: https://www.dbs-invest.de/projekte/pool/markgrafendamm-berlin/ (2. Bauvorhaben: geplante Fertigstellung 03/2023)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10498 (FIZZ: Sperrung mindestens zwei Jahre, also 2024?)
-#: last_checked: 2022-10-24 vvv
+#: last_checked: 2022-11-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-03-15 vvv
 Radspur aufgehoben, teilweise Tempo 20 und Radfahrüberholverbot	RW0; 14641,10552 14608,10409 14558,10264
@@ -6569,7 +6566,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX evtl. wird es hier noch eine Grünbeschichtung geben
-#: last_checked: 2022-10-02 vvv
+#: last_checked: 2022-11-01 vvv
 #: check_frequency: 60d
 temporäre Radspur aufgehoben	RW0; 12639,8344 12598,8390
 Gelbmarkierung	RW3; 12598,8390 12639,8344
@@ -6577,7 +6574,7 @@ Gelbmarkierung	RW3; 12598,8390 12639,8344
 #: last_checked ^^^
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2022-10-23
+#: last_checked: 2022-11-01
 #: check_frequency: 60d
 	RW4; 12714,8249 12753,8187 12788,8101 12823,8028
 Grünbeschichtung	RW4; 12823,8028 12846,7981 12865,7923 12892,7850 12898,7832 12916,7775
@@ -6612,11 +6609,11 @@ Grünbeschichtung	RW4; 12916,7775 12898,7832 12892,7850 12865,7923 12846,7981 128
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünbeschichtung?
 #: priority: #D
-#: last_checked: 2022-10-23
+#: last_checked: 2022-11-01
 #: check_frequency: 60d
 	RW4; 12823,8028 12788,8101 12753,8187 12714,8249
 #: XXX evtl. wird es hier noch eine Grünbeschichtung und Radwegschilder geben
-#: last_checked: 2022-10-02
+#: last_checked: 2022-11-01
 	RW3; 12714,8249 12689,8289 12639,8344
 # note: Ende Karl-Marx-Str.
 # 
@@ -7794,7 +7791,7 @@ baulich getrennt	RW4; 10804,12461 10831,12371 10830,12279
 # 
 #: next_check_id: MARIENFELDERALLEEBAHN-2021
 #: source_id: viz2021:13.373965,52.425564,30.07.2020,09:00 (siehe auch temp blockings) vvv
-#: last_checked: 2022-06-04 vvv
+#: last_checked: 2022-10-31 (daf) vvv
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2023-03-31 vvv
 # REMOVED --- #: next_check: 2024-01-01
@@ -7850,7 +7847,8 @@ Busspur gilt Mo-Fr 7-9 Uhr und 13-19 Uhr	RW5; 3813,10435 3783,10517 3753,10578 3
 # 
 #: by: https://twitter.com/VIZ_Berlin/status/1462758945030909957
 #: confirmed_by: srt
-Gelbmarkierung	RW3;RW3 8950,847 8971,864 9014,898 9024,906 9058,932 9129,986 9155,1006 9165,1014
+#: historical_note: früher Gelbmarkierung
+	RW3;RW3 8950,847 8971,864 9014,898 9024,906 9058,932 9129,986 9155,1006 9165,1014
 # 
 	RW7;RW7 6383,15972 6484,16085 6587,16199
 	RW7;RW7 6530,15849 6383,15972 6244,16096

@@ -2411,7 +2411,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3747,19 +3747,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: viz2021:13.359035,52.489045,20.05.2021,07:00 (bis 28.9.2022) (bis 2.11.2022)
-# REMOVED --- #: XXX prüfen, ob es tatsächlich Behinderungen für Radfahrer gibt vvv
-	q4::inwork; 7382,9187 7444,9148
-# REMOVED ---	q4::inwork 7308,9163 7363,9152
-# REMOVED --- #: XXX ^^^
-',
-         'from' => undef,
-         'id' => 2933,
-         'text' => 'Helmstr.: an der Hauptstr. Baustelle, Fahrbahn gesperrt, bis voraussichtlich 02.11.2022',
-         'type' => 'handicap',
-         'until' => 1667404800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4223,7 +4211,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 #: by: https://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20210716/
 #: also_indoor: traffic (G,H)
-#: last_checked: 2022-07-24
+#: last_checked: 2022-10-31 (daf)
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2023-03-31
 # REMOVED --- #: next_check: 2024-01-01
@@ -4432,7 +4420,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.312919,52.448752,31.05.2021,08:30 (bis 30.9.2022, zwischen Moltkestr. und Hindenburgdamm) (bis 7.10.2022)
 #: source_id: viz2021:13.31527,52.44953,29.09.2022,18:39 (bis 7.10.2022) (inaktiv)
 #: source_id: bvg2021:188#BVG259885_0
-#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.11.2022)
+#: source_id: viz2021:13.301624,52.444612,02.05.2022,07:00 (bis 30.11.2022) (bis 1.12.2022, Gesamtzeitraum bis 10/2023)
 # REMOVED --- #: priority: #A --- #: last_checked: 2021-09-26 --- #: next_check: 2022-03-18
 #: also_indoor: traffic (H,ex-G,ex-B) vvv
 #: note: früher auch "außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt"
@@ -4445,7 +4433,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 # REMOVED (hier nicht) ---	q4::inwork 3934,4441 4039,4500
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2022-10-24 vvv
-#: next_check: 2022-11-30 vvv
+#: next_check: 2022-12-01 vvv
 	q4::inwork; 3643,4232 3523,4139
 	q3::inwork; 4214,4595 4039,4500
 Chlumer Str.: Anbindung gesperrt	q3::inwork 4008,4555 4039,4500
@@ -4462,9 +4450,9 @@ Tietzenweg: Anbindung gesperrt	q3::inwork 3587,4312 3643,4232 3766,4058
          'from' => 1622356200,
          'id' => 3261,
          'source_id' => '2147345834',
-         'text' => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Ende November 2022',
+         'text' => 'Gardeschützenweg: abschnittsweise Sperrungen der Fahrbahn zwischen Hindenburgdamm und Viktoriaplatz (nur Richtung Westen), außerdem Anbindungen Tietzenweg und Chlumer Str. gesperrt, voraussichtlich bis Anfang Dezember 2022',
          'type' => 'handicap',
-         'until' => 1669824000
+         'until' => 1669910400
        },
        undef,
        undef,
@@ -4701,7 +4689,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 # REMOVED --- #: osm_watch: node id="8599852570" version="2"
 # REMOVED --- #: osm_watch: node id="8599852571" version="1"
 #: osm_watch: way id="1060570985" version="1"
-#: last_checked: 2022-07-24 (baustellen-doku)
+#: last_checked: 2022-10-31 (daf)
 #: check_frequency: 180d
 	2::inwork 10346,-4027 10778,-3988 11338,-3945
 ',
@@ -4845,16 +4833,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork 60206,86603 59776,86911 59791,87005 59779,87064 59776,87207 59766,87273
-',
-         'from' => 1626116439,
-         'id' => 3416,
-         'source_id' => '217300297',
-         'text' => 'Schönow (Passow): Bauarbeiten, bis 31.10.2022',
-         'type' => 'handicap',
-         'until' => 1667257200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5332,7 +5311,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2022-10-02 vvv
+#: last_checked: 2022-11-01 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -5402,8 +5381,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
-#: last_checked: 2022-10-25 vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2022-11-01 vvv
+#: check_frequency: 14d vvv
 #: next_check: 2022-12-03 vvv
 #: also_indoor: traffic (G[unvollständig],B) vvv
 # REMOVED (laut osm nicht mehr) ---	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300
@@ -5523,14 +5502,15 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="734271970" version="5"
 #: osm_watch: way id="975241319" version="4"
 #: osm_watch: way id="970452276" version="3"
-# REMOVED (laut osm note 3139636 wieder offen) --- #: also_indoor: traffic (none) --- #: last_checked: 2022-04-18 --- #: check_frequency: 45d --- #: next_check: 2022-12-31
-# REMOVED ---	q4::inwork 12779,8188 12805,8194 12873,8218 12911,8232
-#: last_checked: 2022-10-23
-	q3::inwork; 12805,8194 12873,8218 12911,8232
+#: also_indoor: traffic (none)
+#: last_checked: 2022-11-01
+#: check_frequency: 14d
+# REMOVED ---	q3::inwork; 12805,8194 12873,8218 12911,8232
+	q4::inwork 12873,8218 12911,8232
 ',
          'from' => undef,
          'id' => 3537,
-         'text' => 'Ganghoferstr.: Einbahnstraße wegen Bauarbeiten, Gültigkeit für Radfahrer unklar',
+         'text' => 'Ganghoferstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5805,9 +5785,9 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        undef,
        {
-         'data' => '#: XXX einige Halteverbotsschilder bis 1.11.2022
+         'data' => '#: XXX einige Halteverbotsschilder bis 1.11.2022, mittlerweile bis 5.11.2022
 #: also_indoor: traffic (ex-H[incomplete],B[incomplete],G[falsch]) vvv
-#: last_checked: 2022-10-23 vvv
+#: last_checked: 2022-11-01 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-11-01 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
@@ -6022,6 +6002,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        },
        {
          'data' => '#: also_indoor: traffic (none)
+#: source_id: viz2021:13.32575,52.50557,01.11.2022,07:00 (bis 31.3.2023)
 #: note: auch bei rbb erwähnt
 # REMOVED (hier nicht) ---	q4::inwork 5090,11007 5084,10890
 	q4::inwork 5084,10890 5072,10701
@@ -6159,7 +6140,8 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
 #: XXX Barrieren sowie Durchfahrtsverbotsschilder existieren
 #: note: Barrieren geöffnet, Durchfahrt zumindest für Radfahrer möglich: 2022-09-18 (Sonntag), 2022-10-16 (Sonntag)
 #: note: Barrieren geschlossen, Durchfahrt nur auf dem Gehweg möglich: 2022-09-25 (Sonntag), 2022-09-26 (Montag) gegen 13:00
-#: also_indoor: traffic (B)
+#: also_indoor: traffic (B,G[mittlerweile])
+#: source_id: bvg2021:396#BVG307357_0
 #: last_checked: 2022-10-26
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2022-10-30
@@ -6167,7 +6149,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
 ',
          'from' => undef,
          'id' => 3630,
-         'text' => 'Archibaldweg: einige Meter der Fahrbahn sind gesperrt, enger Gehweg vorhanden, voraussichtlich bis zum 30.10.2022',
+         'text' => 'Archibaldweg: einige Meter der Fahrbahn sind gesperrt, enger Gehweg vorhanden, voraussichtlich bis zum 30.10.2022, vielleicht auch länger',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6352,9 +6334,9 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
          'from' => 1665291600,
          'id' => 3649,
          'source_id' => 'viz2021:13.29031,52.51775,10.10.2022,07:00',
-         'text' => 'Danckelmannstr.: in Höhe Gardes-du-Corps-Str. wegen Baustelle gesperrt, vom 10.10.2022 07:00 bis 04.11.2022 17:00',
+         'text' => 'Danckelmannstr.: in Höhe Gardes-du-Corps-Str. wegen Baustelle gesperrt, vom 10.10.2022 07:00 bis 25.11.2022 17:00',
          'type' => 'handicap',
-         'until' => 1667577600
+         'until' => 1669392000
        },
        undef,
        {
@@ -6674,6 +6656,39 @@ Veltener Str., Kienhorstpark -> Alt-Reinickendorf	3::inwork 6360,18861 6435,1883
          'text' => 'Bandelo - Trebenow: Bauarbeiten, Sperrung, 01.11.2022 08:00 Uhr bis 30.06.2023 15:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1688130000
+       },
+       {
+         'data' => '#: last_checked: 2022-11-01
+	q4::inwork 13891,7961 13946,7918
+',
+         'from' => undef,
+         'id' => 3674,
+         'text' => 'Weserstr.: Fahrbahn vor der Ederstr. gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: AMTREPTOWERPARK-2020
+#: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
+#: last_checked: 2022-11-01
+#: check_frequency: 60d
+	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
+',
+         'from' => undef,
+         'id' => 3675,
+         'text' => 'Am Treptower Park: Rad- und Gehweg Richtung Kreuzberg wegen Bauarbeiten gesperrt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '	2::inwork 12586,20131 12547,20154
+',
+         'from' => 1667335329,
+         'id' => 3676,
+         'source_id' => 'https://nitter.cz/VIZ_Berlin/status/1587373430076329989#m',
+         'text' => 'Grünkardinalweg: Autobahn-Unterführung ist voraussichtlich bis zum 3. November 2022 gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1667516399
        }
      
 );

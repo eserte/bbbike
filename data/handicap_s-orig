@@ -260,11 +260,11 @@ Schloßplatz: Fußgänger, Bauarbeiten	q3::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: CHAUSSEE-2020
 #: source_id: 2147346552 (bis 16.7.2021)
-#: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert) (mittlerweile bis 31.7.2022) (mittlerweile kein Endedatum mehr) (bis 2.11.2022)
+#: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert) (mittlerweile bis 31.7.2022) (mittlerweile kein Endedatum mehr) (bis 2.11.2022) (kein Endedatum mehr)
 #: note: bei rbb noch bis 05.08.2022
 #: last_checked: 2022-10-19
 #: check_frequency: 60d
-#: next_check: 2022-11-02
+# REMOVED --- #: next_check: 2022-11-02
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
 # REMOVED --- #: last_checked: 2022-07-17 (mapillary) --- # REMOVED --- #: check_frequency: 90d --- # REMOVED --- #: next_check: 2022-07-31 --- Chausseestr.: gemeinsamer Geh- und Radweg	q2::inwork; 8442,14456 8406,14507 8336,14586
 # 
@@ -297,7 +297,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-10-03
+#: last_checked: 2022-10-06 (mapillary)
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -761,7 +761,7 @@ Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,124
 #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
 #: XXX Laut Schild des Bezirksamts Umgestaltung bis August 2023 (!)
-#: also_indoor: traffic (ex-G[unvollständig],H[falsch],B)
+#: also_indoor: traffic (ex-G[unvollständig],H[mittlerweile richtig],B)
 #: last_checked: 2022-10-26 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2023-08-31 vvv
@@ -4497,11 +4497,11 @@ Wentowsteig: enge Straße mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 # REMOVED (nicht mehr relevant, wird neu gebaut) --- #: by: Felix Beutler: --- Nordufer: teilweise sehr schmaler Radweg	q1 7212,14738 7427,14648 7464,14636
 #: by: Jörn Busch:
 #: corrected_by: srt (q2 -> q1)
-#: by: https://www.infravelo.de/projekt/nordgraben/ (1. Quartal 2022 - 4. Quartal 2022; Asphaltierung & Verbreiterung auf 4m) (mittlerweile 3. Quartal 2022 - 4. Quartal 2022) (mittlerweile von "in Planung" auf "Vorgesehen" zurückgestuft) (4. Quartal 2022 - 4. Quartal 2022)
+#: by: https://www.infravelo.de/projekt/nordgraben/ (1. Quartal 2022 - 4. Quartal 2022; Asphaltierung & Verbreiterung auf 4m) (mittlerweile 3. Quartal 2022 - 4. Quartal 2022) (mittlerweile von "in Planung" auf "Vorgesehen" zurückgestuft) (4. Quartal 2022 - 4. Quartal 2022) (2. Quartal 2023 - 4. Quartal 2023)
 #: XXX Weg wird asphaltiert
 #: last_checked: 2022-05-10 (kartaview, am westlichen Ende)
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2022-12-31
+#: next_check: 2023-12-31
 (Weg am Nordgraben): schmaler Weg, mäßiger Fußgängerverkehr	q1 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3233,20834 3144,20865 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
 # 
 #: by: Hans-Reiner Padberg: vvv

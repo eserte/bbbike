@@ -359,6 +359,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/verwaltungsgericht-hebt-autoverbot-in-der-friedrichstrasse-auf_a361775
 #: by: https://berliner-abendblatt.de/2022/10/28/remlinger-umgestaltung-der-friedrichstrasse-kann-noch-dauern/
 #: by: https://berliner-abendblatt.de/2022/10/29/friedrichstrasse-festhalten-an-der-fussgaengerzone/
+#: by: https://berliner-abendblatt.de/2022/11/01/senat-haelt-sich-beschwerde-gegen-gerichtsbeschluss-offen/
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: priority: #A
@@ -13307,7 +13308,7 @@ Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: next_check_id: BUCKOWERCHAUSSEE-2022
 #: XXX Gehweg wird vermutlich verlegt
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20200424/ (Bild 31)
-#: last_checked: 2022-10-24
+#: last_checked: 2022-10-31 (daf)
 #: check_frequency: 180d
 (Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9507,-85 9473,-92 9271,323
 # 
@@ -15350,7 +15351,8 @@ Beermannstr.	N 13973,9465 14119,9368
 # REMOVED (wg. Autobahnbau verkürzt) --- Beermannstr.	N 14119,9368 14157,9345
 # REMOVED (existiert nicht mehr) --- #: XXX temporäre Hilfsstraße --- #: last_checked: 2015-11-22 --- #: check_frequency: 60d --- (Beermannstr. - Matthesstr.)	N 14119,9368 14162,9381
 # REMOVED (wg. Autobahnbau verkürzt) --- Matthesstr.	N 14157,9345 14162,9381 14172,9457
-Matthesstr.	N 14172,9457 14185,9509
+# REMOVED: früherer Berlin.coords.data-Eintrag: Matthesstr.|Alt-Treptow|12435|14157,9345
+# REMOVED (nicht mehr als Stadtstraße erkennbar) --- Matthesstr.	N 14172,9457 14185,9509
 Elbestr.	N 12765,8605 12822,8675 12881,8750 12954,8840 13045,8951
 Schandauer Str.	N 13105,8720 12954,8840
 Laubestr.	N 12982,8564 12822,8675
