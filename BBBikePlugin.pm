@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001,2006,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001,2006,2016,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +14,7 @@
 package BBBikePlugin;
 use strict;
 use vars qw($VERSION %plugins);
-$VERSION = 0.03;
+$VERSION = 0.04;
 
 {
     package BBBikePlugin::Plugin;
@@ -94,7 +94,7 @@ sub _find_all_plugins_perl {
     my $wanted = sub {
 	if (   $File::Find::name =~ m{^\Q$topdir\E/projects(/|$)} # e.g. the directories for live bbbike.de deployments
 	    || $File::Find::name =~ m{^\Q$topdir\E/BBBike-\d+\.\d+(-DEVEL)?(/|$)} # distdir
-	    || $File::Find::name =~ m{^\Q$topdir\E/(babybike|blib|c|cache|cdrom|cover_db|distfiles|doc|html|images|java|nytprof|port|t|tcl|tmp|vbbbike)(/|$)} # various non-code directories
+	    || $File::Find::name =~ m{^\Q$topdir\E/(babybike|blib|c|cache|cdrom|cover_db|distfiles|doc|html|images|java|nytprof|port|t|tcl|tmp)(/|$)} # various non-code directories
 	    || $File::Find::name =~ m{^\Q$topdir\E/data(_.*)?(/|$)} # all kind of data directories
 	    || $File::Find::name =~ m{^\Q$topdir\E/misc/gps_data(/|$)} # convention for private gps data
 	    || $File::Find::name =~ m{^\Q$topdir\E/misc/download(/|$)} # convention for downloaded files
