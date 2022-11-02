@@ -112,8 +112,8 @@ $comments_net->make_net_cat(-net2name => 1,
 	is $simplified_route->{wpt}->[-1]->{origlon}, $path[-1][0];
 	is $simplified_route->{wpt}->[-1]->{origlat}, $path[-1][1];
 
-	like $simplified_route->{wpt}->[0]->{lat}, qr{^52\.5}, 'looks like a latitude';
-	like $simplified_route->{wpt}->[0]->{lon}, qr{^13\.4}, 'looks like a longitude';
+	like $simplified_route->{wpt}->[0]->{lat}, qr{^52\.5[0-9]{1,5}$}, 'looks like a latitude, with trimmed accuracy';
+	like $simplified_route->{wpt}->[0]->{lon}, qr{^13\.4[0-9]{1,5}$}, 'looks like a longitude, with trimmed accuracy';
 
 	# Note that "MOLLENDORF" is suboptimal here... the full
 	# waypoint name is 'MOLLENDORFFSTR+FRANKFURTER ALLEE+GURTELSTR',

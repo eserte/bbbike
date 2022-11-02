@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2009,2012,2015,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009,2012,2015,2017,2018,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Route::Simplify;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.11;
+$VERSION = 1.12;
 
 use GPS::Util qw(eliminate_umlauts);
 use Strassen::Util qw(get_direction);
@@ -114,7 +114,7 @@ sub Route::simplify_for_gps {
     my $wptsuffix = $args{-wptsuffix} || "";
     #my $wptsuffixexisting = $args{-wptsuffixexisting} || 0;#XXX no support for this anymore, delete it!
     my $convmeth  = $args{-convmeth} || sub {
-	$obj->standard2map(@_);
+	$obj->trim_accuracy($obj->standard2map(@_));
     };
     my $waypointlength = $args{-waypointlength} || 10;
     my $waypointcharset = $args{-waypointcharset} || 'simpleascii';
