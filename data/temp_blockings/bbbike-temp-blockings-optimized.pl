@@ -4858,11 +4858,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.wg-a.com/projects/conrad-blenkle-strasse-36-berlin/ (Fertigstellung 05/2023)
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder frei?
 #: note: In der Praxis kommt man als Radfahrer hier gut durch.
+#: XXX zurzeit Gehwegarbeiten, evtl. wird der Gehweg freigegeben und damit die Fahrbahn zumindest für Radfahrer nutzbar sein?
 #: also_indoor: traffic
 #: osm_watch: way id="8084121" version="37"
 #: osm_watch: way id="75617418" version="6"
-#: last_checked: 2022-10-22
-#: check_frequency: 60d
+#: last_checked: 2022-11-02
+#: check_frequency: 7d
+# REMOVED --- #: check_frequency: 60d
 #: next_check: 2023-05-31
 	q3::inwork 13057,14267 13158,14117
 ',
@@ -5163,7 +5165,7 @@ Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Trave
 #: source_id: bvg2021:188#BVG296003_0
 #: source_id: viz2021:13.300936,52.440024,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022)
 #: source_id: viz2021:13.289248,52.435248,31.01.2022,07:00 (bis 31.8.2022) (bis 22.12.2022)
-#: source_id: viz2021:13.29541,52.43779,28.10.2022,12:36 (bis 22.12.2022)
+#: source_id: viz2021:13.29541,52.43779,28.10.2022,12:36 (bis 22.12.2022) (inaktiv)
 #: by: https://viz.berlin.de/2022/01/verkehrsvorschau-31012022/ (Gesamtbaumaßnahme bis Ende 2022, Sperrung an der Drakestr. möglicherweise nur bis Ende März 2022, hier nur für den Kfz-Verkehr?)
 # REMOVED --- #: XXX Sind Radfahrer tatsächlich betroffen? Haben die Bauarbeiten auch was mit den Sperrungen in der Kommandantenstr./Baseler Str. zu tun? vvv
 #: also_indoor: traffic (G,H,B) vvv
@@ -6002,7 +6004,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        },
        {
          'data' => '#: also_indoor: traffic (none)
-#: source_id: viz2021:13.32575,52.50557,01.11.2022,07:00 (bis 31.3.2023)
+#: source_id: viz2021:13.32575,52.50557,01.11.2022,07:00 (bis 31.3.2023) (inaktiv)
 #: note: auch bei rbb erwähnt
 # REMOVED (hier nicht) ---	q4::inwork 5090,11007 5084,10890
 	q4::inwork 5084,10890 5072,10701
@@ -6031,20 +6033,20 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        {
          'data' => '#: by: https://berliner-abendblatt.de/2022/09/07/koepenicker-landstrasse-vollsperrung-wegen-wasserrohrbruch/
 #: by: https://berliner-abendblatt.de/2022/09/10/koepenicker-landstrasse-gesperrt-buslinien-unterbrochen/
-#: note: laut rbb sogar bis 4.11.2022
-#: source_id: viz2021:13.491071,52.468923,07.09.2022,08:00 (bis 2.11.2022)
-#: source_id: viz2021:13.487047,52.465576,12.09.2022,07:00
-#: source_id: viz2021:13.491317,52.469108,10.09.2022,13:00
-#: source_id: viz2021:13.492477,52.468642,10.09.2022,13:00
+#: note: laut rbb nur bis 11.11.2022
+#: source_id: viz2021:13.491071,52.468923,07.09.2022,08:00 (bis 2.11.2022) (bis 23.11.2022)
+#: source_id: viz2021:13.487047,52.465576,12.09.2022,07:00 (bis 23.11.2022)
+#: source_id: viz2021:13.491317,52.469108,10.09.2022,13:00 (bis 23.11.2022)
+#: source_id: viz2021:13.492477,52.468642,10.09.2022,13:00 (bis 23.11.2022)
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr.	q3::inwork; 16563,7012 16428,7144
 Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
 ',
          'from' => 1662564323,
          'id' => 3620,
          'source_id' => 'https://nitter.cz/VIZ_Berlin/status/1569967900588474368#m',
-         'text' => 'Köpenicker Landstr./Baumschulenstr.: Kreuzungsbereich teilweise gesperrt, Umwege bei der Fahrt Richtung Nordwesten, außerdem Einbahnstraßenregelung in der Scheiblerstr., voraussichtlich bis 02.11.2022',
+         'text' => 'Köpenicker Landstr./Baumschulenstr.: Kreuzungsbereich teilweise gesperrt, Umwege bei der Fahrt Richtung Nordwesten, außerdem Einbahnstraßenregelung in der Scheiblerstr., voraussichtlich bis 23.11.2022',
          'type' => 'handicap',
-         'until' => 1667404800
+         'until' => 1669219200
        },
        undef,
        undef,
@@ -6130,7 +6132,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
 ',
          'from' => undef,
          'id' => 3629,
-         'text' => 'Eisenacher Str./Witerfeldtstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, möglicherweise bis Mai 2023',
+         'text' => 'Eisenacher Str./Winterfeldtstr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, möglicherweise bis Mai 2023',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6386,7 +6388,7 @@ Gerichtstr.	q3::inwork 7464,15409 7627,15412
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-10-31
+#: last_checked: 2022-11-02
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
