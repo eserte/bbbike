@@ -1063,7 +1063,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-11-02
+#: last_checked: 2022-11-03
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2284,7 +2284,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13650,8320
 # 
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster? vvv
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021) vvv
-#: last_checked: 2022-08-12 vvv
+#: last_checked: 2022-11-01 (mapillary) vvv
 #: check_frequency: 90d vvv
 Rungestr.: Kopfsteinpflaster	Q2- 11197,11882 11291,11876 11380,11863 11507,11860
 #: check_frequency ^^^
@@ -28746,8 +28746,8 @@ Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8111,13029 8110,1304
 # REMOVED (hier asphaltiert) --- #: XXX Qualität der wassergebundenen Decke prüfen --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6285
 (Willy-Brandt-Str. - Rahel-Hirsch-Str.): Asphalt	Q0 8120,12756 8114,12839 8115,12912 8116,12938
 # REMOVED (erstmal komplett entfernt; nach den Bauarbeiten wird es vermutlich ganz anders aussehen) --- #: next_check_id: CHARITE-2014 --- #: XXX wie wird die Situation nach den Bauarbeiten aussehen? --- #: by: http://www.charite.de/charite/organisation/baumassnahmen/campus_charite_mitte/ (Dauer: 3 Jahre ab Herbst 2013) --- #: by: http://infocenter.charite.de/ --- #: last_checked: 2015-11-27 --- #: check_frequency: 90d --- (entlang der Baustelle an der Charité): teilweise Schotter	Q2 8833,13440 8836,13396 8835,13376 8818,13365 8808,13377
-(an der Notfallaufnahme Charité): Asphalt	Q0 8665,13353 8736,13369
-(an der Notfallaufnahme Charité): Steinplatten	Q0 8736,13369 8806,13384 8836,13396
+(an der Notfallaufnahme Charité): Asphalt	Q0 8665,13353 8702,13362
+(an der Notfallaufnahme Charité): Steinplatten	Q0 8702,13362 8806,13384 8836,13396
 (an der Notfallaufnahme Charité): Kleinsteinpflaster	Q1 8836,13396 8833,13440
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8674,13593 8670,13633 8664,13688
 Platz vor dem Neuen Tor: Kopfsteinpflaster	Q2 8670,13633 8633,13629 8594,13625
@@ -31617,4 +31617,5 @@ Einmündungsbereich betoniert	Q0- 10109,526
 Kreuzungsbereich betoniert	Q0- 10242,572
 Kreuzungsbereich betoniert	Q0- 10332,607
 Kreuzungsbereich asphaltiert	Q0 10423,636
+Einmündungsbereich mit Kleinsteinpflaster	Q1- 9736,13061
 #: ignore ^^^

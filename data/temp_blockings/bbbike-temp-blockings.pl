@@ -22864,9 +22864,9 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2019-11-30 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-12-01 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 1. Dezember 2019, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2022-11-26 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-11-27 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 27. November 2022, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 11, start => "2022-01-01T00:00:00"]], # 2020 nicht!
        recurrence_prewarn_days => 14, # finden 2020 überhaupt Weihnachtsmärkte statt?
@@ -22876,13 +22876,14 @@ EOF
 #: by: https://www.berlin.de/weihnachtsmarkt/3250022-3496862-adventsmarkt-am-kollwitzplatz.html
 #: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/ (2021 abgesagt)
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html (Termin 2022 nicht bekannt)
+#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/?date=20221103
 #: tempex: 1st_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-07 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-12-08 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 8. Dezember 2019, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2022-12-03 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-12-04 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 4. Dezember 2022, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 3, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -22892,9 +22893,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-14 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-12-15 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 15. Dezember 2019, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2022-12-10 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-12-11 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 11. Dezember 2022, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -22904,9 +22905,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-21 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-12-22 17:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 22. Dezember 2019, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2022-12-17 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-12-18 17:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 18. Dezember 2022, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 17, months => 12, start => "2022-01-01T00:00:00"]],
        type  => 'gesperrt',
@@ -36261,8 +36262,8 @@ EOF
 EOF
      },
      { from  => 1658970000, # 2022-07-28 03:00
-       until => $isodate2epoch->("2022-12-31 17:00:00"), # 1666969200, # 2022-10-28 17:00
-       text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, vom 29.07.2022 bis 31.12.2022',
+       until => $isodate2epoch->("2023-02-25 17:00:00"), # 1666969200, # 2022-10-28 17:00
+       text  => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, vom 29.07.2022 bis 25.02.2023',
        type  => 'handicap',
        source_id => 'viz2021:13.321852,52.501972,29.07.2022,03:00',
        data  => <<EOF,
@@ -36307,7 +36308,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-10-29
+#: last_checked: 2022-11-03
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36525,9 +36526,9 @@ EOF
        text  => 'Rosa-Luxemburg-Str.: Bauarbeiten nördlich der Memhardstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G,B)
+#: also_indoor: traffic (ex-G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-27 (Asphaltierungsarbeiten)
+#: last_checked: 2022-11-03 (Asphaltierungsarbeiten)
 #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 EOF
@@ -36613,21 +36614,23 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 #: also_indoor ^^^
 EOF
      },
-     { from  => 1665077956, # 2022-10-06 19:39
-       until => 1666368032, # Sperrung aufgehoben --- 1672527600, # 2023-01-01 00:00
-       text  => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis zum 21.11.2022',
+     { from  => 1667499233, # 1665077956, # 2022-10-06 19:39
+       until => $isodate2epoch->("2022-11-21 17:00:00"), # 1666368032, # Sperrung aufgehoben --- 1672527600, # 2023-01-01 00:00
+#       text  => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis zum 21.11.2022',
+       text  => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt (Gleisbauarbeiten), voraussichtlich bis zum 21.11.2022',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022)
+#: source_id: bvg2021:142#BVG311081_0
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
 #: by: https://nitter.net/tramathon/status/1583012911013761024
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 # REMOVED --- #: XXX Bis wann ist die Kreuzung gesperrt? --- #: last_checked: 2022-10-08 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-11-09 vvv
-Chausseestr.	q4::inwork 9207,13493 9212,13471
-Hannoversche Str.	q3::inwork 9212,13471 9047,13446
-Torstr.	q3::inwork 9353,13521 9212,13471
+# REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
+# REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
+# REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
 Friedrichstr.	q4::inwork 9212,13471 9225,13389
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
@@ -36683,8 +36686,8 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 EOF
      },
      { from  => 1665385200, # 2022-10-10 09:00
-       until => 1667664000, # 2022-11-05 17:00
-       text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrtrichtung gesperrt, vom 11.10.2022 09:00 bis 05.11.2022 17:00',
+       until => $isodate2epoch->("2023-01-06 17:00:00"), # 1667664000, # 2022-11-05 17:00
+       text  => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrtrichtung gesperrt, vom 11.10.2022 09:00 bis 06.01.2023 17:00',
        type  => 'handicap',
        source_id => 'viz2021:13.429184,52.556411,11.10.2022,09:00',
        data  => <<EOF,
@@ -36886,7 +36889,7 @@ EOF
 EOF
      },
      { from  => 1666501200, # 2022-10-23 07:00
-       until => 1667577600, # 2022-11-04 17:00
+       until => 1667501708, # 1667577600, # 2022-11-04 17:00
        text  => 'Weitlingstr.: Bauarbeiten, zwischen Lückstr. und Rupprechtstr. etwa 100m der Fahrbahn Richtung Norden gesperrt, vom 24.10.2022 07:00 bis 04.11.2022 17:00 ',
        type  => 'handicap',
        source_id => 'viz2021:13.493078,52.501052,24.10.2022,07:00',
@@ -37005,8 +37008,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: EISWALDT-2022
 #: by: https://berliner-abendblatt.de/2022/10/28/vollsperrung-in-lankwitz/
+#: by: https://www.berliner-woche.de/lankwitz/c-bauen/eiswaldtstrasse-wird-erneuert_a362396
 #: note: Soll noch 2022 fertig werden.
-#: also_indoor: traffic
+#: also_indoor: traffic (B[Gallwitz-Beseler])
 #: next_check: 2022-11-01
 	q4::inwork 6718,2443 6862,2452 6965,2418 7051,2366 7172,2343 7285,2377
 EOF

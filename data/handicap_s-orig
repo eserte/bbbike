@@ -271,7 +271,7 @@ Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2022-10-29 vvv
+#: last_checked: 2022-11-03 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -297,7 +297,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-10-06 (mapillary)
+#: last_checked: 2022-11-03
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -310,7 +310,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/arch%C3%A4ologisches-haus-besucherzentrum-am-petriplatz.789/#post-14039
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-29
+#: last_checked: 2022-11-03
 #: check_frequency: 60d
 Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10364,11896 10332,11929 10392,11991
 # 
@@ -1890,7 +1890,7 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Entlang des Stadtbahnviadukts): Bordsteine, Fußgänger	q3 11966,11832 12132,11788
 #: note: früher "q2"
 (Maybachufer - Weigandufer): Fußgänger, explizit für Radfahrer verboten	q4+ 12845,9304 12862,9273 12909,9085 12902,9066
-(an der Notfallaufnahme Charité): Notfallwagen, Fußgänger	q2 8833,13440 8836,13396 8806,13384 8736,13369 8665,13353
+(an der Notfallaufnahme Charité): Notfallwagen, Fußgänger	q2 8833,13440 8836,13396 8806,13384 8702,13362 8665,13353
 #: XXX_prog BS am westlichen Ende, am östlichen existiert eine Bordsteinabsenkung; ansonsten (früher) q2
 #: note: theoretisch q3 möglich
 (Lasdehner Str. - Gubener Str.): Fußgänger, Bordsteine	q4+ 13375,12062 13339,12029

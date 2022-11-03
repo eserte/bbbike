@@ -3448,6 +3448,8 @@ Drängelgitter	BNP:2::trailer=7 -4234,11408
 Schranke	BNP:5::trailer=15 23221,15226
 Schranke	BNP:3::trailer=10 -1486,16789
 Schranke	BNP:1::trailer=3 14967,4641
+#: note: evtl. kann die Schranke über den Gehwegbereich umfahren werden
+Schranke	BNP:3::trailer=10 8702,13362
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3587,7 +3589,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschließungsstraße nicht mehr durchgängig sein; evtl. wird man die Fläche als Grünfläche kennzeichnen können
-#: last_checked: 2022-10-29
+#: last_checked: 2022-11-03
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Gebäude): an der Rüdersdorfer Str. mit Bauzäunen abgesperrt	2::inwork 12788,11898 12891,12008
@@ -3978,7 +3980,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="3"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="882672445" version="2"
-#: last_checked: 2022-10-03
+#: last_checked: 2022-11-03
 #: check_frequency: 60d
 #: next_check: 2022-11-30
 Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	2::inwork 10673,12434 10772,12515
@@ -4043,7 +4045,7 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/molkenmarkt-klosterviertel-bebauungsplan-1-14.52/page-5#post-17149
 #: by: https://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2209/nachricht7327.html
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2022-09-30
+#: last_checked: 2022-11-03
 #: check_frequency: 90d
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
@@ -4057,7 +4059,7 @@ Blütenweißweg: durch Bauzäune abgesperrt	2::inwork 21427,5347 21483,5374
 #: source_id: viz2021:13.409315,52.517356,20.02.2020,08:00 (bis 31.12.2022)
 #: note: laut rbb nur bis 31.08.2022
 # REMOVED --- #: XXX außerdem: Jüdenstr. wird zur Einbahnstraße für Autofahrer; Radfahrer bekommen bauliche getrennte Wege in beide Richtungen; vermutlich wird es auch eine Ampel an der Kreuzung Grunerstr./Jüdenstr. geben
-#: last_checked: 2022-10-03 vvv
+#: last_checked: 2022-11-03 vvv
 #: next_check: 2024-06-01 vvv
 Stralauer Str.: wegen Baurbeiten gesperrt	2::inwork 10804,12291 10738,12364
 (Molkenmarkt - zur Stralauer Str.): Fahrbahn wegen Bauarbeiten gesperrt	1::igndisp 10736,12285 10675,12280
@@ -4269,7 +4271,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
 #: note: allerdings war das Einbahnstraßenschild am 2022-01-17 weggedreht, am 2022-03-02 wieder vollständig aktiv
-#: last_checked: 2022-10-14
+#: last_checked: 2022-11-03
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: next_check_id: POTSDAMSPEICHERSTADT-2022
@@ -4561,7 +4563,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 # REMOVED (mittlerweile kann man durchkommen) --- Hinter dem Gießhaus: Durchfahrt zu Unter den Linden gesperrt	2::inwork 9846,12516 9858,12410
 # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-# REMOVED (offen) --- #: next_check_id: CHARITE-2014 --- #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein --- #: last_checked: 2016-11-22 --- #: check_frequency: 30d --- An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8665,13353 8736,13369 8806,13384
+# REMOVED (offen) --- #: next_check_id: CHARITE-2014 --- #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein --- #: last_checked: 2016-11-22 --- #: check_frequency: 30d --- An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8665,13353 8702,13362 8806,13384
 # REMOVED (existiert hier wohl nicht mehr) --- #: last_checked: 2014-03-01 --- #: check_frequency: 100d --- Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
 # REMOVED (offen, verschiedene Quellen) --- #: next_check_id: NORDUFER-2014 --- #: by: Torben Müllers --- #: confirmed_by: srt --- #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan) --- #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013 --- #: by: http://www.berliner-woche.de/wedding/verkehr/senat-lehnt-fussgaengerueberweg-ab-radweg-soll-unter-der-fennbruecke-gebaut-werden-d131062.html (ggfs. auch Unterführung unter der Fennbrücke) --- #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20190313/ --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=634400&postcount=2205 --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9615 --- #: by: https://www.bvg.de/images/content/unternehmen/medien/plus/2019/BVG_PLUS_1119_web_Doppelseiten.pdf (PDF-Seite 23) --- #: osm_watch: way id="183406331" version="3" --- #: osm_watch: way id="220646748" version="5" --- #: priority: #A --- #: last_checked: 2019-11-21 --- #: next_check: 2019-12-02 --- Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738 7139,14785
 # 
@@ -4631,7 +4633,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 # REMOVED (gelöscht) --- #: osm_watch: way id="33036326" version="7"
 #: osm_watch: way id="940764588" version="6"
 #: osm_watch: way id="940764584" version="4"
-#: last_checked: 2022-10-27
+#: last_checked: 2022-11-03
 #: check_frequency: 120d
 #: next_check: 2023-06-30
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
@@ -4667,7 +4669,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
 #: by: https://www.berliner-woche.de/mitte/c-bauen/erste-module-fuer-parlamentsneubau-montiert_a309858 (bis Ende 2021 fertig)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="8"
-#: last_checked: 2022-10-03 vvv
+#: last_checked: 2022-11-03 vvv
 # REMOVED (fertig?) --- #: check_frequency: 60d vvv
 #: also_indoor: traffic (G)
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760

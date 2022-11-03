@@ -807,7 +807,7 @@ für Radfahrer freigegebene Busspur gilt immer	RW1; 8562,11744 8553,11638 8553,11
 #: source_id: 2147345481
 #: source_id: 2147345753
 #: source_id: viz2021:13.408836,52.517143,22.04.2020,15:00 (Bauarbeiten bis 30.6.2023)
-#: last_checked: 2022-10-14 vvv
+#: last_checked: 2022-11-03 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469 10601,12521
@@ -1815,7 +1815,7 @@ Busspur ist immer gültig	RW5; 10512,12039 10574,12131
 # REMOVED --- #: next_check: 2021-03-11 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
-#: last_checked: 2022-10-03 vvv
+#: last_checked: 2022-11-03 vvv
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
 provisorische Radspur	RW4; 10574,12131 10625,12206 10659,12259 10675,12280
 # REMOVED ---	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
@@ -1823,7 +1823,7 @@ provisorische Radspur	RW4; 10675,12280 10700,12315 10723,12346 10738,12364
 #: last_checked ^^^
 #: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
-#: last_checked: 2022-10-03
+#: last_checked: 2022-11-03
 provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
 #: next_check ^^^
 #: check_frequency ^^^
@@ -2456,7 +2456,7 @@ Poller vor der Kreuzung	RW3;RW3 11159,10769 11220,10744 11275,10723
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2022-10-03
+#: last_checked: 2022-11-03
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2021-10-01
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
@@ -2475,7 +2475,7 @@ Radspur zwischen Fahrspuren	RW3; 12143,11574 12180,11657
 	RW3; 12180,11657 12143,11574 12092,11475
 #: by: https://www.infravelo.de/projekt/andreasstrasse/ (2. bis 3. Quartal 2022) (mittlerweile 2. Quartal 2024 - 3. Quartal 2024) vvv
 #: XXX Verbreiterung und Protektion vvv
-#: last_checked: 2022-10-08 vvv
+#: last_checked: 2022-11-03 vvv
 #: next_check: 2024-09-30 vvv
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
@@ -3410,6 +3410,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: by: https://berliner-abendblatt.de/2022/10/24/salvador-allende-bruecke-freigabe-am-7-november/
 #: by: https://www.berliner-zeitung.de/mensch-metropole/mobilitaet-verkehr-betonkrebs-eroeffnungstermin-salvador-allende-bruecke-endlich-in-berlin-koepenick-gehts-bald-wieder-vierspurig-ueber-die-spree-li.279553
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/salvador-allende-bruecke-wird-freigegeben_a361664
+#: by: https://berliner-abendblatt.de/2022/11/03/salvador-allende-bruecke-wird-freigegeben/
 #: XXX 1. Verkehrsführung Bauabschnitt 1: östlicher Gehweg gesperrt, bis ca. Mitte November 2017
 #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
@@ -7774,7 +7775,7 @@ Tempo 10	RW6;RW6 14468,11203 14442,11101
 Tempo 10	RW6;RW6 14531,11142 14513,11075
 # 
 #: next_check_id: MOLKENMARKT-2021
-#: last_checked: 2022-10-03 vvv
+#: last_checked: 2022-11-03 vvv
 #: next_check: 2024-06-01 vvv
 	RW2; 10830,12279 10831,12371
 	RW4; 10831,12371 10804,12461

@@ -3135,10 +3135,103 @@ Kleistpark	2::night 7310,9622 7307,9528
          'type' => 'gesperrt',
          'until' => 1671404399
        },
-       undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3250022-3496862-adventsmarkt-am-kollwitzplatz.html
+#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/ (2021 abgesagt)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html (Termin 2022 nicht bekannt)
+#: by: https://www.grueneliga-berlin.de/themen-projekte2/oekomarkt/adventsoekomarkt/?date=20221103
+#: tempex: 1st_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1669460400,
+         'id' => 2518,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 14,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 27. November 2022, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1669572000
+       },
+       {
+         'data' => '#: tempex: 2nd_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1670065200,
+         'id' => 2519,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              3,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 4. Dezember 2022, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1670176800
+       },
+       {
+         'data' => '#: tempex: 3rd_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1670670000,
+         'id' => 2520,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 11. Dezember 2022, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1670781600
+       },
+       {
+         'data' => '#: tempex: 4th_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1671267600,
+         'id' => 2521,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              17,
+                              'months',
+                              12,
+                              'start',
+                              '2022-01-01T00:00:00'
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 18. Dezember 2022, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1671379200
+       },
        undef,
        undef,
        undef,
@@ -5980,9 +6073,9 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
          'from' => 1658970000,
          'id' => 3615,
          'source_id' => 'viz2021:13.321852,52.501972,29.07.2022,03:00',
-         'text' => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, vom 29.07.2022 bis 31.12.2022',
+         'text' => 'Knesebeckstr.: Einbahnstraße zwischen Lietzenburger Str. und Kurfürstendamm, offen Richtung Norden, vom 29.07.2022 bis 25.02.2023',
          'type' => 'handicap',
-         'until' => 1672502400
+         'until' => 1677340800
        },
        {
          'data' => '#: by: https://www.youtube.com/watch?v=swATp4lDNFs (Webcam)
@@ -6019,7 +6112,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-10-29
+#: last_checked: 2022-11-03
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -6170,9 +6263,9 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
          'until' => 1672527600
        },
        {
-         'data' => '#: also_indoor: traffic (G,B)
+         'data' => '#: also_indoor: traffic (ex-G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-27 (Asphaltierungsarbeiten)
+#: last_checked: 2022-11-03 (Asphaltierungsarbeiten)
 #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 ',
@@ -6260,7 +6353,27 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022)
+#: source_id: bvg2021:142#BVG311081_0
+#: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
+#: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
+#: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
+#: by: https://nitter.net/tramathon/status/1583012911013761024
+#: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
+# REMOVED --- #: XXX Bis wann ist die Kreuzung gesperrt? --- #: last_checked: 2022-10-08 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-11-09 vvv
+# REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
+# REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
+# REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
+Friedrichstr.	q4::inwork 9212,13471 9225,13389
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+',
+         'from' => 1667499233,
+         'id' => 3643,
+         'text' => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt (Gleisbauarbeiten), voraussichtlich bis zum 21.11.2022',
+         'type' => 'handicap',
+         'until' => 1669046400
+       },
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,721782,722126#msg-722126
 #: by: https://www.bahninfo-forum.de/read.php?9,725584,728443#msg-728443 (nur nachts/am Wochenende zu?)
@@ -6324,9 +6437,9 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
          'from' => 1665385200,
          'id' => 3648,
          'source_id' => 'viz2021:13.429184,52.556411,11.10.2022,09:00',
-         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrtrichtung gesperrt, vom 11.10.2022 09:00 bis 05.11.2022 17:00',
+         'text' => 'Am Steinberg: Bauarbeiten zwischen Prenzlauer Promenade und Tino-Schwierzina-Str., Fahrtrichtung gesperrt, vom 11.10.2022 09:00 bis 06.01.2023 17:00',
          'type' => 'handicap',
-         'until' => 1667664000
+         'until' => 1673020800
        },
        {
          'data' => '#: also_indoor: traffic (B)
@@ -6491,18 +6604,7 @@ Mauerweg Lichtenrade - Marienfelde	2::inwork 8310,-2037 8379,-1524 7875,-1247 75
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '# REMOVED (vorfristig entfernt) --- #: source_id: bvg2021:240#BVG310665_0
-# REMOVED (ja, etwas) --- #: add_fragezeichen: Sind Radfahrer auch betroffen? --- #: next_check: 2022-10-24
-	q3::inwork; 16468,10695 16537,10895
-',
-         'from' => 1666501200,
-         'id' => 3664,
-         'source_id' => 'viz2021:13.493078,52.501052,24.10.2022,07:00',
-         'text' => 'Weitlingstr.: Bauarbeiten, zwischen Lückstr. und Rupprechtstr. etwa 100m der Fahrbahn Richtung Norden gesperrt, vom 24.10.2022 07:00 bis 04.11.2022 17:00 ',
-         'type' => 'handicap',
-         'until' => 1667577600
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Ist dieser Abschnitt des Mauerwegs noch gesperrt?
 #: last_checked: 2022-10-24
@@ -6612,8 +6714,9 @@ Veltener Str., Kienhorstpark -> Alt-Reinickendorf	3::inwork 6360,18861 6435,1883
        {
          'data' => '#: next_check_id: EISWALDT-2022
 #: by: https://berliner-abendblatt.de/2022/10/28/vollsperrung-in-lankwitz/
+#: by: https://www.berliner-woche.de/lankwitz/c-bauen/eiswaldtstrasse-wird-erneuert_a362396
 #: note: Soll noch 2022 fertig werden.
-#: also_indoor: traffic
+#: also_indoor: traffic (B[Gallwitz-Beseler])
 #: next_check: 2022-11-01
 	q4::inwork 6718,2443 6862,2452 6965,2418 7051,2366 7172,2343 7285,2377
 ',
