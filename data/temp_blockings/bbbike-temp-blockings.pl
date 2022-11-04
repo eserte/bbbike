@@ -30664,7 +30664,7 @@ EOF
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-27
+#: last_checked: 2022-11-03 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 	q4::inwork; 11329,12497 11209,12430
@@ -30926,7 +30926,7 @@ EOF
        source_id => '2147345680',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1247042611732414465 (hier: bis Mitte Mai)
-	q4::inwork 17782,5698 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072
+	q4::inwork 17782,5698 17807,5730 17810,5736 17877,5860 17931,5955 17939,5968 17900,6072
 EOF
      },
      { from  => 1586020992, # 2020-04-04 19:23
@@ -34248,6 +34248,8 @@ EOF
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/ersatzverkehr-auf-zwei-tramlinien_a357227
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/die-bvg-erneuert-gleisanlagen_a356780
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (hier bis 9.12.2022)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1261737.php (Baumaßnahmen Gürtelstraße 7.11.2022-22.12.2022, keine Einschränkung des Radverkehrs)
+#: by: https://berliner-abendblatt.de/2022/11/04/strassensperrung-bis-dezember-baumassnahmen-der-bvg-auf-der-guertelstrasse/
 #: source_id: viz2021:13.474058,52.512017,12.09.2022,07:00 (hier: bis 2.10.2022) (bis 11.12.2022)
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00

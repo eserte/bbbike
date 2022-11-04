@@ -4364,7 +4364,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-10-27
+#: last_checked: 2022-11-03 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 	q4::inwork; 11329,12497 11209,12430
@@ -5097,6 +5097,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/ersatzverkehr-auf-zwei-tramlinien_a357227
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/die-bvg-erneuert-gleisanlagen_a356780
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (hier bis 9.12.2022)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1261737.php (Baumaßnahmen Gürtelstraße 7.11.2022-22.12.2022, keine Einschränkung des Radverkehrs)
+#: by: https://berliner-abendblatt.de/2022/11/04/strassensperrung-bis-dezember-baumassnahmen-der-bvg-auf-der-guertelstrasse/
 #: source_id: viz2021:13.474058,52.512017,12.09.2022,07:00 (hier: bis 2.10.2022) (bis 11.12.2022)
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
@@ -6784,16 +6786,6 @@ Veltener Str., Kienhorstpark -> Alt-Reinickendorf	3::inwork 6360,18861 6435,1883
          'text' => 'Am Treptower Park: Rad- und Gehweg Richtung Kreuzberg wegen Bauarbeiten gesperrt',
          'type' => 'handicap',
          'until' => undef
-       },
-       {
-         'data' => '	2::inwork 12586,20131 12547,20154
-',
-         'from' => 1667335329,
-         'id' => 3676,
-         'source_id' => 'https://nitter.cz/VIZ_Berlin/status/1587373430076329989#m',
-         'text' => 'Grünkardinalweg: Autobahn-Unterführung ist voraussichtlich bis zum 3. November 2022 gesperrt',
-         'type' => 'gesperrt',
-         'until' => 1667516399
        }
      
 );

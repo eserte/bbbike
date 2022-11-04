@@ -962,7 +962,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: osm_watch: way id="1040605739" version="1"
 #: add_fragezeichen: Bis wann dauern die Bauarbeiten an?
 #: XXX laut osm opening_date=2023-12
-#: last_checked: 2022-08-02 (mapillary)
+#: last_checked: 2022-11-03 (mapillary)
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
@@ -1002,21 +1002,7 @@ Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickes
 # 
 ### Lichterfelde ###
 # 
-#: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf (ab 22.8.2022, kein Endedatum)
-#: by: https://berliner-abendblatt.de/2022/08/21/diese-baustellen-sorgen-fuer-staus/ (zwischen Jägerstraße und Parallelstraße bis Ende Oktober 2022, nur für Kfz-Verkehr gesperrt?)
-#: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (ca. bis 28.10.2022)
-#: source_id: viz2021:13.331807,52.425977,22.08.2022,07:00 (nur Kfz-Verkehr) (mittlerweile bis 4.11.2022) vvv
-#: last_checked: 2022-10-15 vvv
-#: next_check: 2022-11-04 vvv
-#: valid: -20221104 vvv
-#: note: hier nur 30m vor der Jägerstr.
-Lorenzstr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 5539,2497 5660,2219
-Lorenzstr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 5660,2219 5720,2081
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
-#: source_id ^^^
-# 
+# REMOVED --- #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_0822_barrierefrei.pdf (ab 22.8.2022, kein Endedatum) --- #: by: https://berliner-abendblatt.de/2022/08/21/diese-baustellen-sorgen-fuer-staus/ (zwischen Jägerstraße und Parallelstraße bis Ende Oktober 2022, nur für Kfz-Verkehr gesperrt?) --- #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (ca. bis 28.10.2022) --- #: source_id: viz2021:13.331807,52.425977,22.08.2022,07:00 (nur Kfz-Verkehr) (mittlerweile bis 4.11.2022) (inaktiv) vvv --- #: last_checked: 2022-10-15 vvv --- #: next_check: 2022-11-04 vvv --- #: valid: -20221104 vvv --- #: note: hier nur 30m vor der Jägerstr. --- Lorenzstr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 5539,2497 5660,2219 --- Lorenzstr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 5660,2219 5720,2081 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
 # REMOVED --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.719385.php (aufgehoben) --- #: source_id: 2147342640 --- #: last_checked: 2018-07-01 --- #: next_check: 2018-07-30 --- #: valid: -20180730 --- Dahlemer Weg: Bauarbeiten, Fahrbahn und Radweg Richtung Norden gesperrt, Gehweg darf von Radfahrern benutzt werden	q2::inwork; 2123,2803 2146,2878 2152,2912 2198,3169 2203,3213
 # 
 ### Mahlsdorf ###
