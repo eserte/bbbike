@@ -2711,9 +2711,9 @@ Wildensteiner Str.: gutes Kopfsteinpflaster	Q1 18416,8163 18365,8094 18333,8059
 Am Carlsgarten: Asphalt	Q0 18704,8427 18799,8413 18875,8365 18914,8341 18956,8323 19119,8209 19208,8142 19334,8046 19456,7956
 (Am Carlsgarten - Waldowallee): Asphalt	Q0 19456,7956 19478,7967 19509,7999 19558,8064
 Maria-Matray-Str.: Asphalt	Q0 19208,8142 19195,8125 19176,8098 19157,8070 19131,8035
-Krähenwinkel: Verbundsteinpflaster	Q1 19195,8125 19105,8188 19044,8103
-Weideplan: Verbundsteinpflaster	Q1 19176,8098 19128,8131
-Binnendüne: Verbundsteinpflaster	Q1 19157,8070 19110,8105
+Krähenwinkel: Verbundsteinpflaster	Q1 19195,8125 19105,8188 19077,8149 19060,8125 19044,8103
+Weideplan: Verbundsteinpflaster	Q1 19176,8098 19121,8131 19113,8121 19077,8149
+Binnendüne: Verbundsteinpflaster	Q1 19157,8070 19116,8096 19060,8125
 Lisbeth-Stern-Str.: Asphalt	Q0 19258,7943 19229,7963 19198,7985 19131,8035 19068,8082
 Lisbeth-Stern-Str.: Verbundsteinpflaster	Q1 19068,8082 19044,8103
 An der Karlshorster Heide: Asphalt	Q0 19198,7985 19168,7942 19094,7833 19061,7904 19050,7931
@@ -3624,7 +3624,7 @@ Hauptweg - Uferweg: Asphalt	Q0 4777,15398 4754,15388
 (Am Hohenzollernkanal): Asphalt	Q0 -224,16095 -265,16111 -822,16535 -910,16608
 Juliushof: Asphalt	Q0 13129,6535 13143,6499 13142,6453
 Juliushof: Asphalt	Q0 13168,6444 13142,6453 13070,6449
-Altgrabauer Str.: Beton	Q0 21910,7206 21875,7300 21864,7358 21865,7403
+Altgrabauer Str.: Beton	Q0 21910,7206 21875,7300 21864,7358 21865,7397
 Bachwitzer Str.: guter Asphalt	Q0 21910,7206 22021,7245
 Bachwitzer Str.: guter Asphalt	Q0 21791,7126 21837,7180 21910,7206
 Zu den sieben Raben: leicht welliger Asphalt	Q0 23027,6425 23033,6511
@@ -3771,7 +3771,7 @@ Schwarzmeerstr. [Wohngebiet]: asphaltiert	Q0 17708,10768 17751,10904
 Schwarzmeerstr. [Wohngebiet]: Beton	Q1 17751,10904 17839,10883 17856,10879
 Am Lindenplatz: Verbundsteinpflaster	Q1 17839,10883 17856,10961
 (Kolonie Märkische Aue - Schwarzmeerstr./Am Lindenplatz): Beton	Q1 17914,10861 17856,10879
-Bahrendorfer Str.: Beton	Q0 21696,7674 21736,7489 21771,7466 21865,7403 21956,7428
+Bahrendorfer Str.: Beton	Q0 21696,7674 21719,7526 21736,7489 21765,7462 21865,7397 21956,7428
 Außenweg: unbefestigte Straße, etwas holprig, Schotter	Q2 -7783,8524 -7457,8282 -7431,8255
 Außenweg: Asphalt	Q0 -7431,8255 -7425,8153 -7460,7826 -7418,7842
 Hafeldweg: Asphalt	Q0 -7330,7878 -7357,8112 -7359,8293
@@ -4725,7 +4725,7 @@ Straße 19 (Kaulsdorf): Asphalt	Q0 21444,8412 21419,8367 21396,8326 21371,8289
 Damerauer Allee: Asphalt	Q0 21663,8246 21444,8412 21415,8435 21316,8487
 Bischofstaler Str.: Asphalt	Q0 21468,7727 21542,7752
 Bischofstaler Str.: Beton	Q0 21759,7856 21614,7773 21570,7751
-Egersfelder Allee: Beton	Q0 21741,7450 21771,7466 21862,7529
+Egersfelder Allee: Beton	Q0 21741,7450 21765,7462 21862,7529
 Hohenkircher Allee: Beton	Q0 21736,7489 21741,7450 21751,7400 21785,7284
 Klingenburger Str.: Beton	Q0 21671,7375 21751,7400
 Piepertswinkel: Beton	Q0 21594,7233 21600,7293 21628,7371 21671,7375 21710,7266
@@ -9792,8 +9792,8 @@ Ottomar-Geschke-Str. [Nebenfahrbahn]: alter Asphalt	Q0 21206,4387 21176,4343
 (Ottomar-Geschke-Str. - Radweg an der Spindlersfelder Str.): Verbundsteinpflaster	Q1 21176,4343 21161,4334 21139,4293
 (Am Reiterdenkmal): wassergebundene Decke	Q1 18702,8160 18733,8144 18741,8125
 (Weg an der Trabrennbahn): Schotter	Q2 18633,8126 18650,8111 18671,8092
-(Weg an der Trabrennbahn): Beton	Q1 18671,8092 18741,8125
-(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18741,8125 18776,8141 18809,8146 18839,8161 18881,8184
+(Weg an der Trabrennbahn): Beton	Q1 18671,8092 18741,8125 18776,8141
+(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18776,8141 18809,8146 18839,8161 18881,8184
 In den Leonorengärten: Asphalt	Q0 6295,4017 6363,4047 6428,4076 6493,4105
 In den Leonorengärten: Verbundsteinpflaster	Q1 6428,4076 6452,4024 6517,4051 6493,4105
 Westphalweg: Asphalt, einige Schlaglöcher	Q0 9310,4407 9428,4419 9562,4412 9668,4403
@@ -12935,7 +12935,8 @@ Einbecker Str.: sehr guter Asphalt	Q0 17169,11677 17208,11658 17275,11626 17341,
 Einbecker Str.: Asphalt (Fahrbahn und Radweg)	Q0 16958,11778 16977,11769 17020,11748 17169,11677
 Cyanenstr.: Asphalt	Q0 14159,14495 14124,14227
 Seelower Str.: Kopfsteinpflaster	Q2 10778,16485 10754,16305 10739,16146 10729,16042
-Semliner Str.: Beton	Q0 22196,6957 22240,7122 22272,7242 22303,7361
+Semliner Str.: Beton	Q0 22196,6957 22240,7122
+Semliner Str.: Asphalt/Beton, Schäden durch Wurzelhebungen	Q1 22240,7122 22272,7242 22303,7361
 Gärtnereiring: Asphalt	Q0 -6675,12632 -6692,12669 -6717,12678 -7048,12790 -7141,12821 -7237,12848 -7195,13216 -7183,13324
 Hennensteig: Kopfsteinpflaster	Q2 15860,156 15760,253 15654,440 15606,529
 Kirchblick: Kopfsteinpflaster	Q2 -1981,3353 -1972,3418 -2014,3564

@@ -276,7 +276,7 @@ Wallensteinstr.: Fahrbahn mäßiges bis schlechtes Kopfsteinpflaster, Geh/Radweg V
 #: source_id: viz2021:13.516327,52.486802,02.08.2022,07:00 (Bauarbeiten bis 16.12.2022, nur Kfz-Verkehr betroffen)
 #: source_id: bvg2021:396#BVG305961_0 (bis auf Weiteres)
 #: XXX wann fangen die Bauarbeiten an?
-#: last_checked: 2022-10-26
+#: last_checked: 2022-11-05
 #: check_frequency: 45d
 #: next_check: 2022-12-16
 Wallensteinstr.: Asphalt mit einigen Schäden	Q1 18037,9195 18092,9141 18134,9080
@@ -634,7 +634,7 @@ Auguste-Viktoria-Str.: Fahrbahn Kopfsteinpflaster, Radwege Verbundsteinpflaster	
 Auguste-Viktoria-Str.: Beton	Q0 3733,18376 3876,18348 3909,18342 4009,18322
 Hüttenweg: Kleinsteinpflaster	Q1 1573,5152 1964,5070
 #: note: und in der kälteren Jahreszeit kann es an einigen Stellen leicht matschig sein
-Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig, Wurzeln	Q2 20872,7268 20892,7236 20867,7165 20869,7116 21409,6731 21576,6644
+Wuhlheide: fester Waldweg, bei Trockenheit etwas sandig, Wurzeln	Q2- 20872,7268 20892,7236 20867,7165 20869,7116 21409,6731 21576,6644
 Wuhlheide: fester Waldweg	Q2 20869,7116 20682,7262 20653,7289
 Wuhlheide: Waldweg	Q2 21365,5832 21406,5864
 Wuhlheide: unebener Asphalt	Q1- 21406,5864 21561,5955
@@ -1063,7 +1063,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-11-03
+#: last_checked: 2022-11-05
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3612,9 +3612,9 @@ Wildensteiner Str.: gutes Kopfsteinpflaster	Q1- 18416,8163 18365,8094 18333,8059
 Am Carlsgarten: Asphalt	Q0 18704,8427 18799,8413 18875,8365 18914,8341 18956,8323 19119,8209 19208,8142 19334,8046 19456,7956
 (Am Carlsgarten - Waldowallee): Asphalt	Q0 19456,7956 19478,7967 19509,7999 19558,8064
 Maria-Matray-Str.: Asphalt	Q0 19208,8142 19195,8125 19176,8098 19157,8070 19131,8035
-Krähenwinkel: Verbundsteinpflaster	Q1+ 19195,8125 19105,8188 19044,8103
-Weideplan: Verbundsteinpflaster	Q1+ 19176,8098 19128,8131
-Binnendüne: Verbundsteinpflaster	Q1+ 19157,8070 19110,8105
+Krähenwinkel: Verbundsteinpflaster	Q1+ 19195,8125 19105,8188 19077,8149 19060,8125 19044,8103
+Weideplan: Verbundsteinpflaster	Q1+ 19176,8098 19121,8131 19113,8121 19077,8149
+Binnendüne: Verbundsteinpflaster	Q1+ 19157,8070 19116,8096 19060,8125
 Lisbeth-Stern-Str.: Asphalt	Q0 19258,7943 19229,7963 19198,7985 19131,8035 19068,8082
 Lisbeth-Stern-Str.: Verbundsteinpflaster	Q1+ 19068,8082 19044,8103
 An der Karlshorster Heide: Asphalt	Q0 19198,7985 19168,7942 19094,7833 19061,7904 19050,7931
@@ -3886,7 +3886,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: osm_watch: way id="47159365" version="21"
 #: osm_watch: way id="1090076934" version="4"
 #: osm_watch: way id="1090076933" version="4"
-#: last_checked: 2022-08-21 (mapillary)
+#: last_checked: 2022-11-05
 #: check_frequency: 180d
 #: note: früher: "holpriger unbefestigter Fahrweg"
 Wiesengrundstr. (Karlshorst): Schotterstraße, teilweise holprig	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -4655,7 +4655,7 @@ Hauptweg - Uferweg: Asphalt	Q0 4777,15398 4754,15388
 (Am Hohenzollernkanal): Asphalt	Q0 -224,16095 -265,16111 -822,16535 -910,16608
 Juliushof: Asphalt	Q0 13129,6535 13143,6499 13142,6453
 Juliushof: Asphalt	Q0 13168,6444 13142,6453 13070,6449
-Altgrabauer Str.: Beton	Q0 21910,7206 21875,7300 21864,7358 21865,7403
+Altgrabauer Str.: Beton	Q0 21910,7206 21875,7300 21864,7358 21865,7397
 Bachwitzer Str.: guter Asphalt	Q0- 21910,7206 22021,7245
 #: by: nicokottu...
 #: confirmed_by: srt
@@ -4813,7 +4813,7 @@ Schwarzmeerstr. [Wohngebiet]: asphaltiert	Q0 17708,10768 17751,10904
 Schwarzmeerstr. [Wohngebiet]: Beton	Q1 17751,10904 17839,10883 17856,10879
 Am Lindenplatz: Verbundsteinpflaster	Q1 17839,10883 17856,10961
 (Kolonie Märkische Aue - Schwarzmeerstr./Am Lindenplatz): Beton	Q1 17914,10861 17856,10879
-Bahrendorfer Str.: Beton	Q0- 21696,7674 21736,7489 21771,7466 21865,7403 21956,7428
+Bahrendorfer Str.: Beton	Q0- 21696,7674 21719,7526 21736,7489 21765,7462 21865,7397 21956,7428
 Außenweg: unbefestigte Straße, etwas holprig, Schotter	Q2+ -7783,8524 -7457,8282 -7431,8255
 Außenweg: Asphalt	Q0 -7431,8255 -7425,8153 -7460,7826 -7418,7842
 Hafeldweg: Asphalt	Q0- -7330,7878 -7357,8112 -7359,8293
@@ -5854,7 +5854,7 @@ Damerauer Allee: Asphalt	Q0 21663,8246 21444,8412 21415,8435 21316,8487
 #: corrected_by: osm, mapillary (unbefestigter Weg, Q2 -> ..., neu gemacht?)
 Bischofstaler Str.: Asphalt	Q0 21468,7727 21542,7752
 Bischofstaler Str.: Beton	Q0 21759,7856 21614,7773 21570,7751
-Egersfelder Allee: Beton	Q0 21741,7450 21771,7466 21862,7529
+Egersfelder Allee: Beton	Q0 21741,7450 21765,7462 21862,7529
 Hohenkircher Allee: Beton	Q0 21736,7489 21741,7450 21751,7400 21785,7284
 Klingenburger Str.: Beton	Q0 21671,7375 21751,7400
 Piepertswinkel: Beton	Q0- 21594,7233 21600,7293 21628,7371 21671,7375 21710,7266
@@ -11390,8 +11390,8 @@ Ottomar-Geschke-Str. [Nebenfahrbahn]: alter Asphalt	Q0- 21206,4387 21176,4343
 (Am Reiterdenkmal): wassergebundene Decke	Q1- 18702,8160 18733,8144 18741,8125
 (Weg an der Trabrennbahn): Schotter	Q2 18633,8126 18650,8111 18671,8092
 #: note: Laternen existieren hier
-(Weg an der Trabrennbahn): Beton	Q1 18671,8092 18741,8125
-(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18741,8125 18776,8141 18809,8146 18839,8161 18881,8184
+(Weg an der Trabrennbahn): Beton	Q1+ 18671,8092 18741,8125 18776,8141
+(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18776,8141 18809,8146 18839,8161 18881,8184
 #: note: einige kürzere Verbundsteinpflasterabschnitte
 In den Leonorengärten: Asphalt	Q0 6295,4017 6363,4047 6428,4076 6493,4105
 In den Leonorengärten: Verbundsteinpflaster	Q1+ 6428,4076 6452,4024 6517,4051 6493,4105
@@ -17413,8 +17413,12 @@ Cyanenstr.: Asphalt	Q0 14159,14495 14124,14227
 #: confirmed_by: srt
 Seelower Str.: Kopfsteinpflaster	Q2 10778,16485 10754,16305 10739,16146 10729,16042
 # 
-#: by: Stephan Fleischer:
-Semliner Str.: Beton	Q0 22196,6957 22240,7122 22272,7242 22303,7361
+#: by: Stephan Fleischer: vvv
+#: confirmed_by: mapillary
+Semliner Str.: Beton	Q0 22196,6957 22240,7122
+#: corrected_by: srt (Beton, Q0 -> ...)
+Semliner Str.: Asphalt/Beton, Schäden durch Wurzelhebungen	Q1- 22240,7122 22272,7242 22303,7361
+#: by ^^^
 # 
 #: by: Susanne Zöller:
 Gärtnereiring: Asphalt	Q0 -6675,12632 -6692,12669 -6717,12678 -7048,12790 -7141,12821 -7237,12848 -7195,13216 -7183,13324
@@ -25546,6 +25550,7 @@ An den Feldern: gutes Verbundsteinpflaster	Q1+ 12175,1101 12200,1163 12283,1143 
 #: by: ^^^
 # 
 #: by: Sonja Sauerzapfe: vvv
+#: confirmed_by: srt
 Sterntalerstr.: guter Asphalt	Q0 23482,6649 23481,6696
 #: corrected_by: srt (guter Asphalt, Q0 -> Kopfsteinpflaster)
 Sterntalerstr.: Kopfsteinpflaster	Q2 23481,6696 23480,6727 23471,6776 23432,6844 23372,6896
@@ -31618,4 +31623,8 @@ Kreuzungsbereich betoniert	Q0- 10242,572
 Kreuzungsbereich betoniert	Q0- 10332,607
 Kreuzungsbereich asphaltiert	Q0 10423,636
 Einmündungsbereich mit Kleinsteinpflaster	Q1- 9736,13061
+Kreuzungsbereich mit Kleinsteinpflaster	Q2+ 22501,7192
+Einmündungsbereich mit Kopfsteinpflaster	Q2 23088,7143
+Einmündungsbereich mit glattem Kopfsteinpflaster	Q1+ 23270,6978
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 23372,6896
 #: ignore ^^^
