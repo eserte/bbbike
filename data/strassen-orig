@@ -361,6 +361,7 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 #: by: https://berliner-abendblatt.de/2022/10/29/friedrichstrasse-festhalten-an-der-fussgaengerzone/
 #: by: https://berliner-abendblatt.de/2022/11/01/senat-haelt-sich-beschwerde-gegen-gerichtsbeschluss-offen/
 #: by: https://berliner-abendblatt.de/2022/11/03/weinhaendlerin-in-charlottenstrasse-fuer-gaeste-ist-das-horror/
+#: by: https://berliner-abendblatt.de/2022/11/06/jarasch-pocht-auf-fussgaengerzone-in-der-friedrichstrasse/
 #: source_id: 2147346249
 #: source_id: viz2021:13.389186,52.514762,21.08.2020,06:00 (inaktiv)
 #: priority: #A
@@ -9846,6 +9847,10 @@ Bernburger Str. (Marzahn)	N 20351,18066 20367,18129 20289,18274
 Dessauer Str. (Marzahn)	N 20160,18301 20186,18238 20232,18123 20256,18096 20351,18066 20460,18030 20576,17994
 Ahrensfelder Chaussee	H 19875,18182 20136,18291 20160,18301 20173,18306 20458,18424 20582,18475 20612,18487 20622,18491 20743,18540 20922,18613 21165,18715 21278,18786 21332,18819 21359,18834 21434,18875
 Ahrensfelder Chaussee	H 21359,18834 21400,18817
+#: osm.highway: service
+(Zufahrt Bhf. Ahrensfelde)	N 21165,18715 21199,18643 21137,18520
+#: osm.highway: service
+(Zufahrt Bhf. Ahrensfelde)	N 21309,18626 21285,18637 21224,18519 21251,18508
 Marie-Elisabeth-von-Humboldt-Str.	N 20622,18491 20593,18571 20635,18707 20694,18857 20855,19299 20971,19616
 Marie-Elisabeth-von-Humboldt-Str.	N 20586,18822 20694,18857
 Marie-Elisabeth-von-Humboldt-Str. [zum Marie-Elisabeth-von-Humboldt-Weg]	N 20855,19299 20802,19316
@@ -9862,7 +9867,7 @@ Kundtanger	N 20868,18926 20865,18933 20858,18961 20855,19030 20833,19037 20807,1
 Am Dörferweg	N 20790,18892 20868,18926 20889,18935 20951,18961 20998,18980 21021,18989
 #: next_check_id: FALKENBERG-2021
 #: XXX Wann wird die Verbindung zurückgebaut?
-#: last_checked: 2022-03-27 (mapillary)
+#: last_checked: 2022-11-06
 #: check_frequency: 150d
 (Am Dörferweg - Barnimer Dörferweg)	NN 20951,18961 20948,18968
 Johann-Jacob-Engel-Str.	N 20743,18540 20727,18576 20701,18634 20702,18662 20727,18726 20760,18812 20790,18892

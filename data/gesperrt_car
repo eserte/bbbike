@@ -549,6 +549,8 @@ Karlstr.	1 22556,4386 22502,4260 22458,4134
 Mittelstreifen	3nocross::ignrte 21400,18817 21335,18679 21309,18626 21251,18508
 Märkische Allee -> Klandorfer Str.: Mittelstreifen	3::igndisp 21400,18817 21335,18679 21377,18663
 Klandorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 21377,18663 21335,18679 21309,18626
+Zufahrt Bhf. Ahrensfelde -> Märkische Allee: Mittelstreifen	3::igndisp 21285,18637 21309,18626 21335,18679
+Märkische Allee -> Zufahrt Bhf. Ahrensfelde: Mittelstreifen	3::igndisp 21251,18508 21309,18626 21285,18637
 Mittelstreifen	3nocross::ignrte 1228,3210 1338,3300 1415,3362
 Berliner Str. -> Mörchinger Str.: Mittelstreifen	3::igndisp 1415,3362 1338,3300 1388,3197
 Mörchinger Str. -> Berliner Str.: Mittelstreifen	3::igndisp 1388,3197 1338,3300 1228,3210
@@ -2282,3 +2284,6 @@ Mittelstreifen	3nocross::ignrte 14771,14048 14871,14087 14954,14119
 Landsberger Allee -> Anton-Saefkow-Pl.: Mittelstreifen	3::igndisp 14954,14119 14871,14087 14903,14003
 Anton-Saefkow-Pl. -> Landsberger Allee: Mittelstreifen	3::igndisp 14903,14003 14871,14087 14771,14048
 Schöneberger Str./Luckenwalder Str.	1 8527,10621 8384,10507 8397,10488 8644,10408
+Straßenbahntrasse	3nocross::ignrte 24198,14454 24162,14487 24120,14526
+Riesaer Str. -> Oelsnitzer Str.: Straßenbahntrasse	3::igndisp 24198,14454 24162,14487 24133,14444
+Oelsnitzer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24133,14444 24162,14487 24120,14526

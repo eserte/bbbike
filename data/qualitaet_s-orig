@@ -1063,7 +1063,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? außerdem: wird die Colbestr. zur Fahrradstraße?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erwähnung)
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-11-05
+#: last_checked: 2022-11-06
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2131,7 +2131,7 @@ Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,1
 Landsberger Allee: Beton-Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
 #: last_checked ^^^
-#: last_checked: 2022-07-29 (mapillary)
+#: last_checked: 2022-11-06
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 #: check_frequency ^^^
 #: by: ^^^
@@ -6365,7 +6365,7 @@ Am Dörferweg: Asphalt	Q0 20790,18892 20868,18926 20889,18935
 # 
 #: next_check_id: FALKENBERG-2021
 #: XXX: letzte Deckschicht fehlt noch
-#: last_checked: 2022-03-27 (mapillary)
+#: last_checked: 2022-11-06
 #: check_frequency: 150d
 Am Dörferweg: provisorischer Asphalt	Q1+ 20889,18935 20951,18961 20998,18980 21021,18989
 # 
@@ -8667,7 +8667,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="10"
-#: last_checked: 2022-08-27
+#: last_checked: 2022-11-06
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -9390,7 +9390,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2022-10-14 vvv
+#: last_checked: 2022-11-06 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -12210,6 +12210,7 @@ Märkische Allee [Wohngebiet]: Asphalt	Q0- 20459,16697 20439,16709 20430,16744 20
 David-Friedländer-Weg: Betonpflaster	Q0- 20727,18726 20901,18793 21038,18851 21036,18888 21028,18915 20998,18980
 Christian-Dohm-Weg: Betonpflaster	Q0- 20760,18812 20894,18861 21028,18915
 #: by: mapillary
+#: confirmed_by: srt
 Karl-Philipp-Moritz-Weg: Betonpflaster	Q0- 20965,18743 21123,18813
 Henriette-Herz-Allee: Asphalt	Q0 20907,18740 20901,18793 20894,18861 20889,18935
 Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19736,13523 19737,13485
@@ -12857,6 +12858,10 @@ Nöldnerplatz [am Skatepark]: Gehwegplatten	Q0- 15820,10916 15844,10894 15856,108
 Boninstr.: schlechtes Kopfsteinpflaster	Q3 3945,1034 3892,999 3840,964
 Soester Str.: schlechtes Kopfsteinpflaster	Q3 4146,1128 4057,866 4003,831 3951,798
 Blücherstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4018,699 4069,734 4155,794
+(Zufahrt Bhf. Ahrensfelde): Asphalt	Q0 21165,18715 21199,18643
+#: by: mapillary
+(Zufahrt Bhf. Ahrensfelde): Verbundsteinpflaster	Q1 21199,18643 21137,18520
+(Zufahrt Bhf. Ahrensfelde): Beton	Q1 21309,18626 21285,18637 21224,18519 21251,18508
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -16185,7 +16190,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10391 (Anfrage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10489 (Anfrage)
 #: also_indoor: search Lemkestraße vvv
-#: last_checked: 2022-10-05 vvv
+#: last_checked: 2022-11-05 (mapillary) vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2021-07-30
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553
@@ -29704,7 +29709,7 @@ Gehrenseestr.: guter Asphalt	Q0 18487,16741 18324,16625
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/die-erschliessung-sicherstellen_a297347
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8743 (Erschließung über die Marzahner Str.?)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9161 (frühzeitige Öffentlichkeitsbeteiligung)
-#: last_checked: 2022-06-25 (mapillary) vvv
+#: last_checked: 2022-11-06 vvv
 #: check_frequency: 360d vvv
 #: corrected_by: srt (teilweise holpriger Asphalt, Q2 -> ...)
 Detlevstr.: rauer Asphalt	Q1- 18471,16765 18487,16741 18439,16483
@@ -30074,7 +30079,7 @@ Golliner Str.: Beton	Q1 22217,17989 22276,18107 22191,18150
 #: confirmed_by: ^^^
 Kölpiner Str.: Beton	Q1 22069,18401 22114,18244 22213,18193
 Döllner Str.: fester Sandweg mit Löchern	Q2 22313,18595 22071,18593
-#: corrected_by: osm (Beton, Q0- -> ... (ab Frühjahr 2022))
+#: corrected_by: osm, srt (Beton, Q0- -> ... (ab Frühjahr 2022))
 (Radweg an der Straßenbahn): Asphalt	Q0 21871,18244 21843,18198 21804,18125 21726,17974 21698,17920 21639,17803 21576,17678 21559,17617 21555,17546 21539,17442
 (Radweg an der Straßenbahn): Beton	Q0- 21539,17442 21510,17329 21484,17205 21484,17189 21470,17117 21453,17041 21441,16973 21417,16896
 # REMOVED (anscheinend realisiert) --- #: corrected_by: srt (was Q3) --- #: XXX: wird der Radweg hier verbessert? --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=4797&options=4

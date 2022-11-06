@@ -106,7 +106,7 @@ Amrumer Str./Br¸sseler Str.	X::inwork 6375,15391
 # REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1491370038774964227 --- #: by: https://pbs.twimg.com/media/FLEUIiEX0AA8mNx?format=jpg&name=large --- #: source_id: viz2021:13.157143,52.539213,09.02.2022,13:00 (bis 12.3.2022) --- #: valid: 20220209-20220312 vvv --- Klosterbuschweg/Torweg: Gegenverkehrsregelung	X::inwork -6442,14535 --- Klosterbuschweg/Torweg: Gegenverkehrsregelung	X::inwork -6451,14413 --- #: valid ^^^
 # 
 #: next_check_id: TRAMTURM-2021
-#: last_checked: 2022-10-23 (daf)
+#: last_checked: 2022-11-05 (bahninfo-forum)
 #: check_frequency: 180d
 #: next_check: 2022-12-22
 Rathenower Str./Seydlitzstr.	X::inwork 7131,13261
@@ -242,7 +242,25 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten m¸ssen vom linke
 # 
 # REMOVED (steht noch, aber ausgeschaltet) --- #: next_check_id: LANGHANS-2021 --- #: last_checked: 2021-10-12 --- #: next_check: 2021-10-25 --- Roelckestr./Lehderstr.: tempor‰re Ampel	X::inwork 12842,16032
 # 
-# REMOVED --- #: next_check_id: BAHNHOF-2021 --- #: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/ --- #: by: https://viz.berlin.de/2022/05/bahnhofstr/ (keine Gegenverkehrsregelung mehr) --- #: add_fragezeichen: Gibt es noch immer eine Gegenverkehrsregelung? --- #: source_id: 2147347174 (bis 19.7.2021) --- #: source_id: viz2021:13.440334,52.59161,06.05.2021,09:00 (bis 30.9.2021, Gesamtmaﬂnahme bis Anfang 2022) (mittlerweile inaktiv) --- #: source_id: viz2021:13.44047,52.591526,07.02.2022,04:30 (bis 28.2.2022) (mittlerweile bis 20.5.2022) (mittlerweile bis 21.5.2022) (inaktiv) --- #: last_checked: 2022-05-17 (mapillary) vvv --- #: check_frequency: 60d vvv --- #: next_check: 2022-05-23 vvv --- #: valid: 20210222-20220521 vvv --- Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12672,20720 --- Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12723,20691 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+#: next_check_id: BAHNHOF-2021
+#: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/
+#: by: https://viz.berlin.de/2022/05/bahnhofstr/ (keine Gegenverkehrsregelung mehr)
+#: add_fragezeichen: Gibt es noch immer eine Gegenverkehrsregelung?
+#: source_id: 2147347174 (bis 19.7.2021)
+#: source_id: viz2021:13.440334,52.59161,06.05.2021,09:00 (bis 30.9.2021, Gesamtmaﬂnahme bis Anfang 2022) (mittlerweile inaktiv)
+#: source_id: viz2021:13.44047,52.591526,07.02.2022,04:30 (bis 28.2.2022) (mittlerweile bis 20.5.2022) (mittlerweile bis 21.5.2022) (inaktiv)
+#: source_id: viz2021:13.440454,52.591541,07.11.2022,04:30 (bis 18.11.2022)
+#: last_checked: 2022-05-17 (mapillary) vvv
+# REMOVED --- #: check_frequency: 60d vvv
+#: next_check: 2022-11-18 vvv
+# REMOVED --- #: valid: 20210222-20220521 vvv
+#: valid: 20221107-20221118 vvv
+Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12672,20720
+Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12723,20691
+#: valid ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fuﬂg‰ngerampel nordˆstlich der Einm¸ndung; Anforderungsampel
@@ -444,6 +462,8 @@ Straﬂe der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 #: XXX_prog: in O-W und W-O-Richtung verliert man garantiert 1:30 min, wenn man auf dem Radweg (Benutzungsplicht!) f‰hrt
 	X 18215,11690
 	X 18215,12123
+#: note: Anforderungsampel, kann automatisch aktiviert sein
+	F 18216,12209
 	X 18586,12151
 	X 19181,13485
 	X 19628,13517
@@ -1976,7 +1996,9 @@ Etwa 40 Meter nˆrdlich in der Straﬂe der Pariser Kommune eine weitere Fuﬂg‰ngera
 #: XXX_prog: gilt nicht auf dem Radweg im Zuge der Wartenberger Str. Richtung Nordosten
 	X 17516,16208
 #: XXX_prog: gilt nicht auf dem Radweg im Zuge der Wartenberger Str., S->NO
+#: note: indirekt links abbiegende Radfahrer aus Malchower Str. -> Wartenberger Str. haben u.U. 3x rot (2x Fahrbahn, 1x Straﬂenbahn)
 	X 17425,16165
+#: note: Kontaktschleife in der Bahnhofszufahrt, reagiert nicht auf Radfahrer 
 	X 21251,18508
 #: XXX_prog: nur eine Ampel: vvv
 	X 21843,18198

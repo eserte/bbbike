@@ -835,7 +835,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-10-26
+#: last_checked: 2022-11-06
 #: check_frequency: 60d
 	RW2; 14994,12121 15117,12106 15361,12071
 # 
@@ -2855,9 +2855,10 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20210720 (Baubeginn Ende 2022)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019) (inaktiv)
-#: osm_watch: way id="420112505" version="10"
-#: osm_watch: way id="420112509" version="11"
-#: osm_watch: way id="966685279" version="5"
+#: source_id: viz2021:13.593488,52.449407,07.11.2022,15:00
+#: osm_watch: way id="420112505" version="11"
+#: osm_watch: way id="420112509" version="12"
+#: osm_watch: way id="966685279" version="6"
 #: last_checked: 2022-10-22 vvv
 #: check_frequency: 180d vvv
 #: next_check: 2024-12-31 vvv
@@ -3416,7 +3417,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
 #: XXX Bauarbeiten voraussichtlich bis Ende März 2021; mittlerweile bis Ende Februar 2022
 #: osm_watch: way id="333893474" version="24"
-#: osm_watch: way id="10275151" version="45"
+#: osm_watch: way id="10275151" version="47"
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
@@ -3721,7 +3722,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #: source_id: viz2021:13.562465,52.512863,06.07.2021,07:00 (bis 01.06.2025)
 #: XXX wie wird die Situation nach den Bauarbeiten aussehen? vvv
 #: osm_watch: way id="865716506" version="8"
-#: last_checked: 2022-07-16 vvv
+#: last_checked: 2022-11-06 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2025-06-01 vvv
 # REMOVED ---	RW0; 21190,12193 21166,12023
@@ -4122,7 +4123,7 @@ die letzten Meter zur Chemnitzer Str. mit Radweg	RW0;RW0 21982,9017 21860,9046
 auf dem alt-asphaltierten Gehweg sind noch schwach die Reste einer (Radweg-?)Markierung zu sehen	RW0; 21680,8400 21867,8752
 	RW1; 21867,8752 21928,8882 21954,8941 21982,9017
 	RW1; 21982,9017 21954,8941
-#: note: offiziell werden Radfahrer auf die Straße geführt, ob der Gehweg frei für Radfahrer ist, ist nicht eindeutig
+#: note: per Markierung werden Radfahrer auf die Straße geführt, ob der Gehweg frei für Radfahrer ist, ist nicht eindeutig
 	RW1; 21819,12154 21573,12140 21400,12135 21307,12132
 # REMOVED (nicht (mehr?)!) --- Gehweg für Radfahrer frei	RW1; 21307,12132 21400,12135 21573,12140
 # REMOVED (nicht (mehr?)!) --- Gehweg für Radfahrer frei	RW1; 21573,12140 21819,12154 21935,12153
@@ -4274,7 +4275,7 @@ schmal, teilweise mit Bord, parkende Autos ragen in den Radweg hinein	RW1; 11355
 	RW9;RW1 10222,2902 9972,2939 9824,2940 9746,3013 9712,3113
 Verbundsteinpflaster	RW1;RW1 9712,3113 9697,3142 9675,3150 9621,3155
 neu asphaltiert	RW1; 23993,14797 24030,14717 24097,14575 24120,14526 24162,14487
-	RW; 24162,14487 24120,14526 24097,14575 24030,14717 23993,14797
+	RW2; 24162,14487 24120,14526 24097,14575 24030,14717 23993,14797
 	RW2;RW2 24162,14487 24198,14454 24316,14412 24345,14403
 	RW2;RW2 24345,14403 24730,14288
 	RW2;RW2 24730,14288 24870,14244
@@ -4282,7 +4283,7 @@ neu asphaltiert	RW1; 23993,14797 24030,14717 24097,14575 24120,14526 24162,14487
 	RW2; 25095,14171 25256,14110
 gemeinsamer Rad- und Gehweg, Beton, teilweise eng	RW2; 25256,14110 25095,14171
 	RW2;RW1 25256,14110 25414,14036 25451,14018
-	RW;RW2 23993,14797 23960,15021
+	RW1;RW2 23993,14797 23960,15021
 	RW2;RW2 23960,15021 23952,15086 23933,15209 23913,15333 23895,15450 23868,15633 23859,15763 23895,15904
 neu asphaltiert	RW2; 22771,16194 22698,15788
 	RW2; 22698,15788 22771,16194

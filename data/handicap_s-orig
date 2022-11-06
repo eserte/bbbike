@@ -133,7 +133,7 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraßenregelung (außer für Baufahrzeu
 ### Treptow ###
 # 
 #: XXX der Original-Eintrag muss nach Ablauf wieder aktiviert werden
-#: last_checked: 2022-09-14 (mapillary)
+#: last_checked: 2022-11-02 (mapillary)
 #: check_frequency: 60d
 (Hoffmannstr. - Uferweg an den Treptowers): Baustraße, enger Gehweg ist noch offen	q4::inwork 14077,10016 14116,10149 14126,10176
 # 
@@ -749,7 +749,7 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 #: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023
 #: XXX Einbahnstraßenregelung nach den Bauarbeiten wiederherstellen
 #: also_indoor: traffic (G)
-#: last_checked: 2022-10-26
+#: last_checked: 2022-11-06
 #: check_frequency: 90d
 #: next_check: 2023-10-31
 Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,12420 15457,12449
@@ -762,7 +762,7 @@ Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,124
 #: XXX Laut Schild der Wasserbetriebe bis Juni 2022
 #: XXX Laut Schild des Bezirksamts Umgestaltung bis August 2023 (!)
 #: also_indoor: traffic (ex-G[unvollständig],H[mittlerweile richtig],B)
-#: last_checked: 2022-10-26 vvv
+#: last_checked: 2022-11-06 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2023-08-31 vvv
 Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,12280 16159,12301
@@ -817,7 +817,7 @@ Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,122
 #: by: https://berliner-abendblatt.de/2022/10/04/eisenacher-strasse-gesperrt-bauarbeiten-dauern-bis-2025/
 #: by: https://viz.berlin.de/2022/10/eisenacher-strasse/
 #: source_id: viz2021:13.575415,52.540241,05.10.2022,06:00 (hier nur Kfz-Verkehr, bis 10.11.2022)
-#: last_checked: 2022-10-05 vvv
+#: last_checked: 2022-11-06 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-11-10 vvv
 Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
@@ -1646,7 +1646,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://berliner-abendblatt.de/2022/05/05/bahnhof-lichtenberg-enhaltestelle-der-strassenbahn-wird-verlegt/
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1212005.php (Bauarbeiten nicht vor 2025)
 #: osm_watch: way id="223184082" version="7"
-#: last_checked: 2022-07-16
+#: last_checked: 2022-11-06
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 #: next_check: 2025-12-31
@@ -2951,13 +2951,8 @@ Straße 17: kurze Rampe	q3 7307,7435 7296,7443
 (Lortzingstr. - Mauerpark): einige Fußgänger	q1 10037,15421 10052,15429 10070,15438 10076,15455 10092,15461 10105,15454 10127,15463 10155,15473 10186,15481
 (Lortzingstr. - Mauerpark): einige Fußgänger	q1 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
 (Weg im erweiterten Mauerpark - über den Gleimtunnel): einige Fußgänger	q2 10070,15626 10091,15630
-#: by: https://pascalgrothe.de/neues-lagerhaus-entsteht-in-der-launigen-strasse/
-#: by: https://pascalgrothe.de/lagerhaus-in-der-lauinger-strasse-waechst-in-die-hoehe/
-#: XXX: früher (wiederherstellen!): einige Fußgänger, q1
-#: osm_watch: way id="965996899" version="1"
-#: last_checked: 2022-08-27
-#: check_frequency: 45d
-(Lauinger Str. - Biesdorfer Friedhofsweg/Alt-Biesdorf): einige Fußgänger, Engstelle wegen Hochbauarbeiten	q2 21221,11398 21311,11528
+# REMOVED --- #: by: https://pascalgrothe.de/neues-lagerhaus-entsteht-in-der-launigen-strasse/ --- #: by: https://pascalgrothe.de/lagerhaus-in-der-lauinger-strasse-waechst-in-die-hoehe/ --- #: XXX: früher (wiederherstellen!): einige Fußgänger, q1 --- #: osm_watch: way id="965996899" version="1" --- #: last_checked: 2022-08-27 --- #: check_frequency: 45d --- #: note: zwischendurch: einige Fußgänger, Engstelle wegen Hochbauarbeiten, q2
+(Lauinger Str. - Biesdorfer Friedhofsweg/Alt-Biesdorf): einige Fußgänger	q1 21221,11398 21311,11528
 #: XXX_prog mit Anhänger allerdings q1 oder sogar q2
 Eigerstr.: einige Bodenschwellen, können aber umfahren werden	q0- 12825,17870 12882,17895 12902,17933 12945,17958 12994,17986 13036,18010 13043,18126 13042,18152
 Wischbergweg: sehr enger Pfad	q4 13733,18161 13751,18180

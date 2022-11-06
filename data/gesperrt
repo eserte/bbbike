@@ -926,6 +926,7 @@ Feldrain	1s 25684,13172 25632,13214 25609,13232 25607,13459
 Bitterfelder Str. (Richtungsfahrbahn)	1::igndisp 20397,16621 20382,16582 20358,16560 20328,16546 20230,16560
 Bitterfelder Str. (Richtungsfahrbahn)	1::igndisp 20230,16560 20325,16551 20354,16563 20379,16585 20397,16621
 Bitterfelder Str. (Mittelstreifen)	3nocross::ignrte 20230,16560 20328,16546 20358,16560 20382,16582 20397,16621
+Zufahrt Bhf. Ahrensfelde	1 21251,18508 21224,18519 21285,18637 21309,18626
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1647,9 +1648,6 @@ Keibelstr. -> Karl-Liebknecht-Str.: Straßenbahntrasse	3::igndisp 11045,13183 109
 Straßenbahntrasse	3nocross::ignrte 24120,14526 24097,14575 24030,14717
 Riesaer Str. -> Heidenauer Str.: Straßenbahntrasse	3::igndisp 24030,14717 24097,14575 24146,14594
 Heidenauer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24146,14594 24097,14575 24120,14526
-Straßenbahntrasse	3nocross::ignrte 24198,14454 24162,14487 24120,14526
-Riesaer Str. -> Oelsnitzer Str.: Straßenbahntrasse	3::igndisp 24198,14454 24162,14487 24133,14444
-Oelsnitzer Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24133,14444 24162,14487 24120,14526
 Straßenbahntrasse	3nocross::ignrte 24730,14288 24870,14244 24930,14225 24983,14208 25095,14171
 Riesaer Str. -> Frohburger Str.: Straßenbahntrasse	3::igndisp 24930,14225 24870,14244 24807,14043
 Frohburger Str. -> Riesaer Str.: Straßenbahntrasse	3::igndisp 24807,14043 24870,14244 24730,14288
@@ -3251,6 +3249,7 @@ Schranke	BNP:5:-188:trailer=15 23221,15226
 Schranke	BNP:3:-207:trailer=10 -1486,16789
 Schranke	BNP:1:-52:trailer=3 14967,4641
 Schranke	BNP:3:78:trailer=10 8702,13362
+Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
 (Fortsetzung Wandlitzstr.): gesperrt, Bauzäune	2::inwork 17981,9000 17837,9086
 Marktplatz Adlershof: gesperrt wegen Umbauarbeiten	2::inwork 20336,3783 20290,3756

@@ -1631,7 +1631,7 @@ Alt-Lankwitz	2:Anlieger 7407,3473 7419,3500 7236,3605 7012,3743
 #: next_check_id: ABBESTR-2021
 #: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kleinere-projekte/?postID=697425#post697425 (sieht weitgehend fertig aus)
 #: by: https://www.deutsches-architekturforum.de/thread/14781-physikalisch-technische-bundesanstalt-campus-um-und-neubauten/?postID=724237#post724237
-#: osm_watch: way id="152832871" version="19"
+#: osm_watch: way id="152832871" version="20"
 #: priority: #C
 #: last_checked: 2022-10-25 (osm)
 #: check_frequency: 120d
@@ -1647,4 +1647,8 @@ Hempelsteig	2:Anlieger -472,12961 -525,13034 -724,13120 -787,13147
 Landsberger Allee: Mittelstreifen	3nocross 14771,14048 14871,14087 14954,14119
 # 
 Schöneberger Str./Luckenwalder Str.	1 8527,10621 8384,10507 8397,10488 8644,10408
+# 
+#: by: mapillary:
+#: note: für Fußgänger existiert ein Z-Übergang
+Riesaer Str.: Straßenbahntrasse	3nocross 24198,14454 24162,14487 24120,14526
 # 

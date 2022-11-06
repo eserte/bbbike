@@ -34258,7 +34258,7 @@ EOF
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
-#: last_checked: 2022-10-26 vvv
+#: last_checked: 2022-11-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -35744,7 +35744,7 @@ EOF
 EOF
      },
      { from  => 1656799200, # 2022-07-03 00:00
-       until => 1667861999, # 2022-11-07 23:59
+       until => undef, # 1667861999, # 2022-11-07 23:59
        text  => 'Schönstr./Große Seestr.: Sperrung des Kreuzungsbereichs, Ausweichen auf den Bürgersteig, Bordsteine und Umwege, vom 04. Juli 2022 bis voraussichtlich 07. November 2022',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
@@ -36609,13 +36609,13 @@ EOF
 #: note: laut rbb
 #: also_indoor: traffic (H,B,G) vvv
 #: XXX Ende der Sperrung? vvv
+#: last_checked: 2022-11-06 vvv
 #: check_frequency: 14d vvv
-#: last_checked: 2022-10-26 vvv
 einige Meter vor der Siegfriedstr. gesperrt, evtl. Bordsteine	q3::inwork 16859,12613 16720,12614
 etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 # REMOVED (hier nicht) ---	q4::inwork 16576,12612 16470,12612 16432,12612 16409,12612
-#: last_checked ^^^
 #: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 #: also_indoor ^^^
 EOF
@@ -36750,7 +36750,7 @@ EOF
      },
      { from  => 1665772021, # 2022-10-14 20:27
        until => 1669417200, # 2022-11-26 00:00
-       text  => 'Derfflingerstr.: Sperrung der Fahrbahn zwischen vor der Seydlitzstr., bis 25.11.2022 ',
+       text  => 'Derfflingerstr.: Sperrung der Fahrbahn vor der Einmündung Seydlitzstr., bis 25.11.2022 ',
        type  => 'handicap',
        data  => <<EOF,
 #: note: rbb-Meldung
@@ -36847,7 +36847,7 @@ EOF
 #: source_id: AdB/21-11-00135 (inaktiv)
 #: osm_watch: way id="175828136" version="8"
 #: add_fragezeichen: Wann ist die Brücke wieder offen?
-#: last_checked: 2022-10-17 (mapillary, Asphaltierungsarbeiten)
+#: last_checked: 2022-11-05 (mapillary, Asphaltierungsarbeiten)
 	2::inwork 5752,30817 5787,30867
 EOF
      },
@@ -37016,22 +37016,17 @@ EOF
 #: by: https://berliner-abendblatt.de/2022/10/28/vollsperrung-in-lankwitz/
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/eiswaldtstrasse-wird-erneuert_a362396
 #: note: Soll noch 2022 fertig werden.
-#: also_indoor: traffic (B[Gallwitz-Beseler])
+#: also_indoor: traffic (B[Gallwitz-AmGemeindepark])
 #: next_check: 2022-11-01
 	q4::inwork 6718,2443 6862,2452 6965,2418 7051,2366 7172,2343 7285,2377
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1667759851, # -> gesperrt-orig --- undef, # XXX
        text  => 'Fußgängersteg am Stadion Wuhletal: gesperrt',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1258812.php',
        data  => <<EOF,
-#: by: https://www.berliner-woche.de/kaulsdorf/c-verkehr/fussgaengersteig-ueber-die-wuhle-wurde-gesperrt_a361880
-#: by: https://berliner-abendblatt.de/2022/10/27/einsturzgefahr-fussgaengersteg-am-stadion-wuhletal-gesperrt/
-#: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
-#: osm_watch: way id="27944267" version="13"
-#: next_check: 2022-12-01
 	2::inwork 22171,12965 22196,12961
 EOF
      },
@@ -37081,6 +37076,17 @@ EOF
        source_id => 'https://nitter.cz/VIZ_Berlin/status/1587373430076329989#m',
        data  => <<EOF,
 	2::inwork 12586,20131 12547,20154
+EOF
+     },
+     { from  => 1667710800, # 2022-11-06 06:00
+       until => 1669996800, # 2022-12-02 17:00
+       text  => 'Waldowallee: Fahrbahn wegen Sanierungsarbeiten zwischen Köpenicker Allee und Marksburgstr. gesperrt, vom 07.11.2022 06:00 bis 02.12.2022 17:00',
+       type  => 'handicap',
+       source_id => 'viz2021:13.52942,52.488069,07.11.2022,06:00',
+       data  => <<EOF,
+	q4::inwork 18939,9417 18977,9322
+hier ist der Gehweg für Radfahrer frei	q2::inwork; 18977,9322 19048,9146
+	q4::inwork; 19048,9146 18977,9322
 EOF
      },
     );

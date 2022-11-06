@@ -1084,6 +1084,7 @@ Eingang Heerstr.	CP2; 22274,9622 22280,9629
 Eingang Eschenstr.	CP2; 22473,9530 22482,9550
 unter der S-Bahnbrücke	CP2; 24650,6034 24647,5995
 (Siegfriedstr. - Am Wasserwerk): entlang der Kolonie Weiße Taube	CS 16873,14236 16762,14237 16641,14329
+ausgeschildert als Siegfriedstr., ohne Hausnummern	CP2; 16873,14236 16965,14235
 ausgeschildert als Weydemeyerstr. 3-18	CP2; 11809,12760 11825,12792
 # REMOVED (mittlerweile ausgeschildert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2013 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140827.1410.398914.html (feierliche Benennung) --- #: last_checked: 2014-09-05 --- #: next_check: 2014-09-11 --- Fromet-und-Moses-Mendelssohn-Platz: nicht ausgeschildert	CS 9797,10771 9733,10827 9682,10836 9666,10848
 Hauptstr., linker Gehweg: an der Ampel Hauptstr./Hildegard-Marcusson-Str. auf die linke Seite wechseln	CP2; 16004,10204 16018,10212
@@ -1679,8 +1680,9 @@ ausgeschildert "Zugang Stralauer Allee 6"	CP2; 13835,10577 13805,10528
 # 
 Am Pankepark: nicht ausgeschildert	CS 8152,14130 8238,14181 8282,14116 8207,14067 8184,14052
 # 
-#: XXX Wann wird hier ausgeschildert?
-#: last_checked: 2022-08-27
+#: add_fragezeichen: Wird der Kleine Parkweg noch ausgeschildert?
+#: last_checked: 2022-11-06
+#: check_frequency: 60d
 Kleiner Parkweg: nicht ausgeschildert	CS 20775,11801 20790,11990
 # 
 Volkerweg: nicht ausgeschildert	CS 16005,4012 16046,4073 16060,4093 16145,4217 16151,4226

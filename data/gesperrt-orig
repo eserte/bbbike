@@ -1435,6 +1435,8 @@ Bitterfelder Str. (Richtungsfahrbahn)	1::igndisp 20397,16621 20382,16582 20358,1
 Bitterfelder Str. (Richtungsfahrbahn)	1::igndisp 20230,16560 20325,16551 20354,16563 20379,16585 20397,16621
 Bitterfelder Str. (Mittelstreifen)	3nocross::ignrte 20230,16560 20328,16546 20358,16560 20382,16582 20397,16621
 # 
+Zufahrt Bhf. Ahrensfelde	1 21251,18508 21224,18519 21285,18637 21309,18626
+# 
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1995,8 +1997,6 @@ Berliner Str.: Straßenbahntrasse	3nocross 13737,15994 13826,16026 14015,16103
 Berliner Str.: Straßenbahntrasse	3nocross 12166,21208 12176,21266 12188,21330 12209,21448
 Karl-Liebknecht-Str.: Straßenbahntrasse	3nocross 10923,13156 10976,13229 11012,13278
 Riesaer Str.: Straßenbahntrasse	3nocross 24120,14526 24097,14575 24030,14717
-#: note: Luftbild:
-Riesaer Str.: Straßenbahntrasse	3nocross 24198,14454 24162,14487 24120,14526
 Riesaer Str.: Straßenbahntrasse	3nocross 24730,14288 24870,14244 24930,14225 24983,14208 25095,14171
 # REMOVED --- Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17527,7812 17568,7753 17619,7679 17681,7589 17769,7465
 Rummelsburger Str.: wegen Überführung nicht überquerbar	3nocross 17769,7465 17847,7356 18010,7133
@@ -3456,6 +3456,17 @@ Schranke	BNP:3::trailer=10 8702,13362
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: WUHLESTEG-2022
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1258812.php
+#: by: https://www.berliner-woche.de/kaulsdorf/c-verkehr/fussgaengersteig-ueber-die-wuhle-wurde-gesperrt_a361880
+#: by: https://berliner-abendblatt.de/2022/10/27/einsturzgefahr-fussgaengersteg-am-stadion-wuhletal-gesperrt/
+#: by: https://berliner-abendblatt.de/2022/11/06/wuhletal-stadion-ersatzneubau-fuer-fussgaenger-muss-kommen/
+#: XXX: Wird möglicherweise zurückgebaut. Ob es einen neuen Steg geben wird, ist noch nicht entschieden.
+#: osm_watch: way id="27944267" version="13"
+#: last_checked: 2022-11-06
+#: check_frequency: 120d
+Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
+# 
 #: next_check_id: FAHLENBERGBRUECKE-2022
 #: by: https://www.berliner-woche.de/mueggelheim/c-bauen/ersatzneubau-der-neuen-fahlenbergbruecke-soll-nun-ende-2022-fertig-sein_a299399 (Ertüchtigung der Umfahrungsstrecke im 2. Quartal 2021; Ende 2022 wird der Neubau fertig)
 #: by: https://ausschreibungen-deutschland.de/798592_Ersatzneubau_der_Neuen_Fahlenbergbruecke_mit_BehelfsbrueckeReferenznummer_der_Bekanntmachung_2021_Berlin (Zuschlag am 2021-06-14)
@@ -3476,8 +3487,10 @@ Schranke	BNP:3::trailer=10 8702,13362
 #: source_id: viz2021:13.703997,52.402579,28.10.2022,06:00 (bis 30.6.2023)
 #: note: die Verkehrsmeldung wurde beim rbb am nächsten Tag (11.10.2022) bereits entfernt
 #: XXX ab dem 28.10.2022 ist die südliche Umfahrung aktiv
-#: osm_watch: way id="10275794" version="16"
-#: osm_watch: way id="897616703" version="2"
+# REMOVED (gelöscht) --- #: osm_watch: way id="10275794" version="17"
+# REMOVED (gelöscht) --- #: osm_watch: way id="897616703" version="2"
+#: osm_watch: way id="1110732558" version="8"
+#: osm_watch: way id="325319592" version="12"
 #: priority: #A
 #: last_checked: 2022-06-15
 # REMOVED --- #: check_frequency: 60d
@@ -3526,7 +3539,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2022-10-14
+#: last_checked: 2022-11-06
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
@@ -3597,7 +3610,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 # REMOVED (Absperrgitter mittlerweile üblicherweise verschoben) --- #: note: manchmal stehen die Absperrgitter etwas verschoben mit einer Öffnung, so dass man mit einem Fahrrad doch passieren kann (gesehen: 2022-09-23, 2022-09-30, 2022-10-29) --- #: also_indoor: traffic (G,B) --- #: last_checked: 2022-09-30 --- Unter den Linden/Schadowstr.: Überqueren der Straße vor der Russischen Botschaft nicht möglich	3nocross 8804,12280 9028,12307 9141,12320
 # 
 #: next_check_id: FALKENBERG-2021
-#: last_checked: 2022-03-27 (mapillary)
+#: last_checked: 2022-11-06
 #: check_frequency: 150d
 Barnimer Dörferweg: wegen Bauarbeiten gesperrt	2::inwork 20865,18933 20889,18943 20948,18968
 # 
@@ -4235,7 +4248,7 @@ Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,57
 #: osm_watch: way id="43233756" version="20"
 #: osm_watch: way id="681299268" version="2"
 #: osm_watch: way id="47935842" version="15"
-#: osm_watch: way id="681299267" version="2"
+#: osm_watch: way id="681299267" version="4"
 #: priority: #A vvv
 #: last_checked: 2022-10-27 (mapillary) vvv
 #: check_frequency: 90d vvv
