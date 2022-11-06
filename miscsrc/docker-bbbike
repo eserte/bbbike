@@ -729,7 +729,7 @@ RUN apt-get update && apt-get install -qqy --no-install-recommends \\
       libgeo-metar-perl libtext-csv-xs-perl libxml2-utils libdb-file-lock-perl \\
       libapache-session-perl libfile-counterfile-perl \\
       libdigest-md5-perl libmodule-metadata-perl libimager-qrcode-perl \\
-      starman
+      starman tzdata
 RUN perl -i -pe 's/^(deb.*main)\$/\$1 contrib non-free/' /etc/apt/sources.list && apt-get update
 RUN apt-get install -qqy --no-install-recommends \\
       agrep wget gnupg
