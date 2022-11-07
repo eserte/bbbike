@@ -143,7 +143,7 @@ sub handle_file {
 					     $cat .= "::" . join("::", @attr);
 					 }
 				     }
-				     $cat .= ";" if $is_directed;
+				     $cat .= ";" if $is_directed && $cat !~ m{;$};
 				     $add_name = "($dir->{_nextcheck_label}[0])";
 				     $check_now = 1;
 				     last CHECK_TIME_LIMITS;
@@ -196,7 +196,7 @@ sub handle_file {
 		 } else {
 		     $cat = '?';
 		 }
-		 if ($r->[Strassen::CAT] =~ m{;$}) {
+		 if ($r->[Strassen::CAT] =~ m{;$} && $cat !~ m{;$}) {
 		     $cat .= ';';
 		 }
 	     }
