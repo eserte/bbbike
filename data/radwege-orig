@@ -39,8 +39,9 @@
 # 
 #: next_check_id: FAHLENBERGBRUECKE-2022
 #: note: Umfahrung Fahlenbergbrücke
+#: note: laut mapillary Benutzungspflicht (bzw. Verbot für Radfahrer auf der Fahrbahn)
 #: next_check: 2023-06-30
-provisorischer Geh- und Radweg	RW1;RW9 30621,235 30808,52 30817,43 30869,-5 30926,-53 31103,-142 31219,-87
+provisorischer Geh- und Radweg	RW2;RW8 30621,235 30808,52 30817,43 30869,-5 30926,-53 31103,-142 31219,-87
 # 
 #: temporary ^^^
 # 
@@ -307,7 +308,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-11-01 (Ausschilderung fehlt noch) vvv
+#: last_checked: 2022-11-07 (Ausschilderung fehlt noch) vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 	RW1; 13596,10722 13633,10705
@@ -319,7 +320,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 #: note: laut rbb bis 30.9.2022, allerdings ist hier von "ab Ehrenbergstr." die Rede
 #: note: mittlerweile ist die provisorische Radspur bis etwa 80m vor Bödikerstr. verlängert
 #: XXX hier wird ein asphaltierter Bürgersteigradweg entstehen
-#: last_checked: 2022-11-01
+#: last_checked: 2022-11-07
 #: check_frequency: 7d
 #: next_check: 2022-12-16
 # früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13919,10583 13986,10549 14103,10489 14218,10430
@@ -328,7 +329,7 @@ gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14218,10430 14405,10
 	RW2; 13986,10549 13919,10583 13850,10612 13779,10642 13678,10685 13633,10705 13596,10722
 	RW4; 14103,10489 13986,10549
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-11-01
+#: last_checked: 2022-11-07
 #: check_frequency: 90d
 # früher: das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14218,10430 14103,10489
 provisorische Radspur	RW4; 14218,10430 14103,10489
@@ -382,7 +383,8 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125
 # REMOVED --- #: next_check_id: WESER-2021 --- #: XXX während der Bauarbeiten Radweg aufgehoben (und möglicherweise entstehen hier auch keine neuen Radwege mehr), Einbahnstraße Richtung Westen, für Radfahrer nicht mehr offen --- #: last_checked: 2022-03-12 --- #: check_frequency: 90d ---	RW0;RW0 12328,9117 12406,9076 12480,9037 12524,9012 12590,8977
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2022/pressemitteilung.1192214.php
 	RW7;RW7 12328,9117 12406,9076 12480,9037 12524,9012 12590,8977
-	RW1;RW1 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
+# REMOVED (existiert nicht mehr) ---	RW1;RW1 12590,8977 12740,8862
+	RW1;RW1 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
 Radweg nur aufgemalt, schadhafter Gehweg	RW1; 13891,7961 13724,8090
 # REMOVED (hier gibt es keinen Radweg mehr) --- #: XXX ist der Radweg komplett aufgehoben? vvv--- #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20131219.1210.392853.html vvv --- altes Verbundsteinpflaster	RW1;RW1 13946,7918 13919,7707
@@ -1112,7 +1114,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-11-01 vvv
+#: last_checked: 2022-11-07 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1933,7 +1935,7 @@ Asphalt mit einigen Brüchen	RW1; 9321,8607 9364,8640 9395,8726
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2022-11-01
+#: last_checked: 2022-11-07
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -3412,30 +3414,33 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: by: https://www.berliner-zeitung.de/mensch-metropole/mobilitaet-verkehr-betonkrebs-eroeffnungstermin-salvador-allende-bruecke-endlich-in-berlin-koepenick-gehts-bald-wieder-vierspurig-ueber-die-spree-li.279553
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/salvador-allende-bruecke-wird-freigegeben_a361664
 #: by: https://berliner-abendblatt.de/2022/11/03/salvador-allende-bruecke-wird-freigegeben/
-#: XXX 1. Verkehrsführung Bauabschnitt 1: östlicher Gehweg gesperrt, bis ca. Mitte November 2017
-#: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate
-#: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
-#: XXX Bauarbeiten voraussichtlich bis Ende März 2021; mittlerweile bis Ende Februar 2022
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1262055.php (Rad-/Fußverkehr noch bis Anfang Dezember auf der westlichen Brückenhälfte)
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/salvador-allende-bruecke-ist-nach-fuenf-jahren-bauzeit-fertiggestellt_a362966
+#: by: https://berliner-abendblatt.de/2022/11/07/salvador-allende-bruecke-wird-freigegeben/
+#: by: https://berliner-abendblatt.de/2022/11/07/salvador-allende-bruecke-nach-fuenf-jahren-wieder-eroeffnet/
+# REMOVED --- #: XXX 1. Verkehrsführung Bauabschnitt 1: östlicher Gehweg gesperrt, bis ca. Mitte November 2017 --- #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate --- #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten --- #: XXX Bauarbeiten voraussichtlich bis Ende März 2021; mittlerweile bis Ende Februar 2022
 #: osm_watch: way id="333893474" version="24"
 #: osm_watch: way id="10275151" version="47"
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
-#: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022) (inaktiv) (bis 15.11.2022) (bis 7.11.2022)
+#: source_id: viz2021:13.593454,52.449772,22.11.2019,14:00 (bis 28.2.2022) (mittlerweile bis 31.8.2022) (inaktiv) (bis 15.11.2022) (bis 7.11.2022) (inaktiv)
+#: source_id: viz2021:13.593488,52.449407,07.11.2022,14:10 (Rückbau der Baustelleneinrichtung bis 31.12.2022)
 #: note: laut rbb bis 15.11.2022
+#: XXX Benutzungspflicht des neuen Radwegs? Auch asphaltiert und relativ breit?
 #: last_checked: 2022-10-05 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2022-11-07 vvv
-#: priority: #A vvv
+# REMOVED --- #: priority: #A vvv
 	RW8; 23451,4877 23447,4906 23443,4942 23433,5037 23420,5159 23404,5325
-#: by: https://www.bahninfo-forum.de/read.php?9,622793,671456#msg-671456
-#: confirmed_by: srt
-neu asphaltiert, relativ breit	RW2; 23404,5325 23420,5159 23433,5037 23443,4942 23447,4906 23451,4877
-#: priority ^^^
+# REMOVED --- #: priority ^^^
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: by: https://www.bahninfo-forum.de/read.php?9,622793,671456#msg-671456
+#: confirmed_by: srt
+neu asphaltiert, relativ breit	RW2; 23404,5325 23420,5159 23433,5037 23443,4942 23447,4906 23451,4877
 # 
 #: note: Baumschulenstr. Richtung Südwesten
 Verbundsteinpflaster	RW1; 16507,7254 16428,7144 16375,7070

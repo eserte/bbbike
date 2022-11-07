@@ -28,7 +28,7 @@ Kiefholzstr./Hänselstr.: provisorische Fußgängerampel	F::inwork 15695,7254
 #: osm_watch: way id="936801541" version="3"
 #: XXX Ampel befindet sich östlich der Einmündung
 #: note: Anforderungsampel
-#: last_checked: 2022-11-01
+#: last_checked: 2022-11-07
 Persiusstr./Bossestr.: provisorische Fußgängerampel	F::inwork 14312,10657
 # 
 #: XXX siehe auch Planung eines Zebrastreifens an dieser Stelle
@@ -70,7 +70,7 @@ Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245
 #: source_id: viz2021:13.45071,52.48007,28.04.2022,09:00 (zusätzlicher Eintrag) (entfernt)
 #: by: https://nitter.net/VIZ_Berlin/status/1519602332090179585#m (hier: bis Anfang Juni 2022)
 #: by: https://nitter.net/pic/media%2FFRWA3_cWYAAYbnf.jpg%3Fname%3Dorig (südlich der Kreuzung)
-#: last_checked: 2022-09-03
+#: last_checked: 2022-11-07
 #: next_check: 2022-11-30
 #: valid: -20221130
 Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
@@ -95,7 +95,7 @@ Amrumer Str./Brüsseler Str.	X::inwork 6375,15391
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
 #: note: manchmal ausgeschaltet? (gesehen: So 2021-11-28 12:00)
-#: last_checked: 2022-11-01 vvv
+#: last_checked: 2022-11-07 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 #: check_frequency ^^^
@@ -2519,7 +2519,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: next_check_id: AMTREPTOWERPARK-2020
 #: XXX provisorische Ampel, vermutlich damit nach Südosten fahrende Radfahrer wieder auf die andere Straße kommen? Nicht relevant für Radfahrer, die auf der Nebenstraße fahren.
 #: note: manchmal ausgeschaltet (gesehen 2022-08-24 13:10)
-#: last_checked: 2022-10-24
+#: last_checked: 2022-11-07
 #: check_frequency: 120d
 	X::inwork 14382,9299
 Industriebahn	B0 -2410,13746
@@ -3380,14 +3380,14 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="6"
-#: last_checked: 2022-09-21
+#: last_checked: 2022-11-07
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
 #: next_check_id: BAB100-2022
 #: osm_watch: node id="9804698456" version="1"
 #: osm_watch: node id="6512193990" version="5"
-#: last_checked: 2022-08-05
+#: last_checked: 2022-11-07
 #: check_frequency: 90d
 	X::inwork 14334,7395
 # 

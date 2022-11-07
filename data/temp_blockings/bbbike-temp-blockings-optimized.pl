@@ -3711,7 +3711,35 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
+#: by: https://berliner-abendblatt.de/2022/10/11/sprengung-im-grunewald-avus-wird-voll-gesperrt/
+#: by: https://viz.berlin.de/2022/10/a115-sprengungen/
+#: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
+#: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
+#: note: Termine im Herbst 2022: 9./15./23./29.11, 6./13./20.12.
+#: source_id: 2147341022
+#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15
+# REMOVED --- #: priority: #A --- #: next_check: 2022-04-20
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
+	2::temp -1934,6804 -1854,6898
+',
+         'from' => 1667862000,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 9. November 2022 zwischen 09:15 und 10:15 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1667985300
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -5107,6 +5135,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
+#: source_id: viz2021:13.476298,52.512793,08.11.2022,08:00 (Gürtelstr., 8.11.2022-2.12.2022)
 #: last_checked: 2022-11-06 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
@@ -5534,12 +5563,12 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        },
        {
          'data' => '#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_29_1829_2008_online.pdf (zum bereits eingezogenen Abschnitt des Mergenthalerrings)
-#: note: Durchfahrt möglich, gesehen: 2022-03-23 (Mi) mittags, 2022-05-04 (Mi) mittags, 2022-07-06 (Mi) mittags, 2022-08-05 (Fr) vormittags
+#: note: Durchfahrt möglich, gesehen: 2022-03-23 (Mi) mittags, 2022-05-04 (Mi) mittags, 2022-07-06 (Mi) mittags, 2022-08-05 (Fr) vormittags, 2022-11-07 mittags
 #: note: Bauzaun am südlichen Ende geschlossen, gesehen: 2022-09-21 (Mi) abends (19:40), 2022-10-18 (Di) abends (17:40)
 #: XXX Bleibt es bei der möglichen Durchfahrt?
 #: osm_watch: node id="1511805342" version="4"
 #: osm_watch: node id="9448539551" version="1"
-#: last_checked: 2022-10-18
+#: last_checked: 2022-11-07
 	2 14249,8075 14250,8098 14238,8100 14247,8254 14229,8278
 ',
          'from' => undef,
@@ -6362,23 +6391,29 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
        {
          'data' => '#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022)
 #: source_id: bvg2021:142#BVG311081_0
+#: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
 #: by: https://nitter.net/tramathon/status/1583012911013761024
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
-# REMOVED --- #: XXX Bis wann ist die Kreuzung gesperrt? --- #: last_checked: 2022-10-08 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2022-11-09 vvv
+#: XXX Bis wann ist die Kreuzung gesperrt?
+#: last_checked: 2022-11-03 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2022-11-21 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
 Friedrichstr.	q4::inwork 9212,13471 9225,13389
-# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1667499233,
          'id' => 3643,
-         'text' => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt (Gleisbauarbeiten), voraussichtlich bis zum 21.11.2022',
+         'text' => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt (Gleisbauarbeiten), voraussichtlich bis zum 21.11.2022, evtl. noch länger',
          'type' => 'handicap',
-         'until' => 1669046400
+         'until' => 1670774400
        },
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,721782,722126#msg-722126
@@ -6397,6 +6432,7 @@ Friedrichstr.	q4::inwork 9212,13471 9225,13389
 #: by: https://www.berliner-woche.de/westend/c-bauen/rohbau-fuer-neues-ausbildungszentrum-fertig_a360518 (Haben die Bauarbeiten hier etwas damit zu tun? Fertigstellung Herbst 2023)
 #: by: https://www.bahninfo-forum.de/read.php?9,690942,747836#msg-747836 (vom 7.11.2022 bis zum 17.3.2023?)
 #: by: https://www.bahninfo-forum.de/read.php?9,748153,748153#msg-748153
+#: source_id: bvg2021:u2#BVG311197_0 (bis 17.3.2023)
 # REMOVED --- #: XXX Bis wann bleibt die Sperrung? --- #: next_check: 2022-12-31
 	2::inwork -107,12220 -76,12236 -45,12243
 ',
@@ -6755,7 +6791,7 @@ Veltener Str., Kienhorstpark -> Alt-Reinickendorf	3::inwork 6360,18861 6435,1883
          'until' => 1688130000
        },
        {
-         'data' => '#: last_checked: 2022-11-01
+         'data' => '#: last_checked: 2022-11-07
 	q4::inwork 13891,7961 13946,7918
 ',
          'from' => undef,
@@ -6767,7 +6803,7 @@ Veltener Str., Kienhorstpark -> Alt-Reinickendorf	3::inwork 6360,18861 6435,1883
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2022-11-01
+#: last_checked: 2022-11-07
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -6779,16 +6815,29 @@ Veltener Str., Kienhorstpark -> Alt-Reinickendorf	3::inwork 6360,18861 6435,1883
        },
        undef,
        {
-         'data' => '	q4::inwork 18939,9417 18977,9322
-hier ist der Gehweg für Radfahrer frei	q2::inwork; 18977,9322 19048,9146
-	q4::inwork; 19048,9146 18977,9322
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1589488063423594497#m
+#: by: https://nitter.cz/pic/orig/media%2FFg770dYWYAMkP2w.jpg
+Gehweg für Radfahrer frei	q2::inwork; 18939,9417 18977,9322
+	q4::inwork; 18977,9322 18939,9417
+hier ist der Gehweg für Radfahrer schon immer frei	q2::inwork; 18977,9322 19048,9146
+Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
 ',
          'from' => 1667710800,
          'id' => 3677,
          'source_id' => 'viz2021:13.52942,52.488069,07.11.2022,06:00',
-         'text' => 'Waldowallee: Fahrbahn wegen Sanierungsarbeiten zwischen Köpenicker Allee und Marksburgstr. gesperrt, vom 07.11.2022 06:00 bis 02.12.2022 17:00',
+         'text' => 'Waldowallee: Fahrbahn wegen Sanierungsarbeiten zwischen Köpenicker Allee und Marksburgstr. gesperrt, teilweise ist der Gehweg für Radfahrer frei, vom 07.11.2022 06:00 bis 02.12.2022 17:00',
          'type' => 'handicap',
          'until' => 1669996800
+       },
+       {
+         'data' => '	q4::inwork 541,11464 461,11455
+',
+         'from' => 1667714400,
+         'id' => 3678,
+         'source_id' => 'viz2021:13.25888,52.51048,07.11.2022,07:00',
+         'text' => 'Westendallee: Baustelle zwischen Preußenallee und Oldenburgallee, evtl. sind auch Radfahrer betroffen, vom 07.11.2022 07:00 bis 25.11.2022 18:00',
+         'type' => 'handicap',
+         'until' => 1669395600
        }
      
 );

@@ -78,11 +78,11 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-16 vvv
-#: last_checked: 2022-11-01
+#: last_checked: 2022-11-07
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
 # REMOVED (hier realisiert) --- Stralauer Allee: Radspur geplant	?::projected; 13596,10722 13633,10705 13678,10685 13779,10642 13850,10612 13919,10583
 # REMOVED (hier in Bau, siehe radwege-orig-Eintrag) --- Stralauer Allee: Radspur geplant	?::projected; 13919,10583 13986,10549 14103,10489 14218,10430
-#: last_checked: 2022-11-01
+#: last_checked: 2022-11-07
 Stralauer Allee: Radspur geplant	?::projected; 14218,10430 14405,10340 14558,10264
 #: next_check ^^^
 #: check_frequency ^^^
@@ -2857,12 +2857,12 @@ Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::
 #: by: https://berliner-abendblatt.de/2022/04/06/weserstrasse-fahrradstrasse-wird-verlaengert/
 #: by: https://twitter.com/papapreuss/status/1542275896798679040 (Planung des 2. Bauabschnitts Fuldastr.-Innstr. kann nun starten (Ende Juni 2022))
 #: XXX außerdem: geplante Vorfahrtsregelung + Diagonalsperre an der Kreuzung Weichselstr.
-#: last_checked: 2022-11-01
+#: last_checked: 2022-11-07
 #: check_frequency: 90d
 #: next_check: 2022-12-31
 # REMOVED (hier realisiert) --- Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
-#: last_checked: 2022-11-01
+#: last_checked: 2022-11-07
 #: next_check: 2024-06-30
 Ederstr.: Planung einer Fahrradstraße	?::projected 13946,7918 13919,7707
 # 
@@ -4305,18 +4305,24 @@ S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12
 #: by: https://www.rbb24.de/politik/beitrag/2022/05/berlin-busspuren-verwaltung-genehmigung-personalnot.html
 #: XXX Planung von Busspuren vvv
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
+#: by: https://www.tagesspiegel.de/berlin/nach-niederlage-vor-gericht-wegen-clayallee-berliner-senat-stoppt-arbeit-an-neuen-busspuren-8839963.html
 #: source_id: 2147347219 (Leitungsarbeiten bis Ende 2021; haben diese etwas mit der geplanten Busspur zu tun, oder verzögern sie die Einrichtung derselben?)
 #: osm_watch: way id="161883479" version="15"
 #: last_checked: 2022-10-24
-#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 60d
+#: check_frequency: 90d
 Hindenburgdamm: Busspur zwischen Klingsorstr. und Händelplatz Richtung Norden geplant	?::projected; 4551,4042 4517,4473 4516,4483 4515,4581 4515,4760
 #: osm_watch: way id="48988573" version="10"
 #: last_checked: 2022-10-24
+# REMOVED --- #: check_frequency: 30d
+#: check_frequency: 90d
 Potsdamer Str.: Busspur vermutlich nur in Richtung Osten, oder doch in beiden Richtungen?	?::projected; 161,3062 255,3085 452,3133 534,3149 669,3119
 # REMOVED (zurückgestellt, Konflikt mit Radverkehrsanlage) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Kuhligshofstr. -> Albrechtstr.) --- #: osm_watch: way id="30157290" version="22" --- #: XXX hier vermutlich erst nach Abschluss der Bauarbeiten am Steglitzer Kreisel --- #: last_checked: 2020-07-11 --- #: check_frequency: 180d --- Schloßstr.: wird eine Busspur Richtung Norden eingerichtet?	?::projected; 4741,5309 4745,5344 4767,5389 4832,5522 4861,5581
 #: XXX im Artikel fälschlicherweise als "Unter den Eichen" bezeichnet
 #: osm_watch: way id="183331569" version="16"
 #: last_checked: 2022-10-15
+# REMOVED --- #: check_frequency: 30d
+#: check_frequency: 90d
 Schloßstr.: Busspur vermutlich nur in Richtung Steglitz, oder doch in beiden Richtungen? Wird hier die Radwegbenutzungspflicht aufgehoben?	?::projected; 4432,5160 4512,5199 4593,5235 4677,5274 4741,5309
 # REMOVED (zurückgestellt) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Rendtorffstr. -> Kleinmachnower Weg) --- #: osm_watch: way id="318434643" version="6" --- #: last_checked: 2020-07-11 --- Teltower Damm: Busspur vermutlich nur in Richtung Süden, oder doch in beiden Richtungen?	?::projected; 1304,537 1322,352 1345,184
 # REMOVED --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Leo-Beck-Str. -> Schädestr.) --- #: XXX laut mapillary wurde die Busspur realisiert --- #: osm_watch: way id="375930756" version="16" --- #: last_checked: 2021-09-26 --- Teltower Damm: Busspur wurde realisiert, wann gilt die Busspur?	?; 1079,1640 1080,1637 1025,1813 980,1893 846,2130 824,2210
@@ -4351,7 +4357,8 @@ Daumstr.: neue Busspur wurde angeordnet	?::projected; -1485,15463 -1389,15285 -1
 #: source_id: viz2021:13.21413,52.56088,25.05.2021,10:13 (bis 25.10.2021, andere Baustelle zwischen Goltz- und Bamihlstr.) (mittlerweile bis 6.12.2021) (mittlerweile bis 24.12.2021) (bis 15.01.2022) (bis 27.01.2022) (bis 31.01.2022)
 #: osm_watch: way id="4978664" version="36"
 #: last_checked: 2022-10-08
-#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 60d
+#: check_frequency: 90d
 Rauchstr.: Busspur in "finaler Abstimmung"	?::projected; -2728,17038 -2908,17072 -3009,17090
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26332.pdf (Ausführung steht aus, bauliche Umgestaltung steht aus; am Wilhelmshavener Str.)
@@ -5037,7 +5044,7 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 Schiffbauerdamm/Albrechtstr.: Zebrastreifen geplant	?::projected 9066,12799 9102,12790 9135,12779
 #: last_checked: 2022-11-06
 Friedenstr./Koppenstr.: Zebrastreifen geplant	?::projected 12658,12755 12690,12769 12687,12809
-#: last_checked: 2022-09-24
+#: last_checked: 2022-11-07
 Reichenberger Str./Liegnitzer Str.: Zebrastreifen geplant	?::projected 12550,9899 12556,9862 12565,9825
 #: last_checked: 2022-11-03 (mapillary)
 Roelckestr./Streustr.: Zebrastreifen geplant	?::projected 12882,16165 12890,16121 12906,16074
@@ -5482,6 +5489,7 @@ Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Rad
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1250253.php (ab Mitte Oktober 2022)
 #: by: https://berliner-abendblatt.de/2022/10/01/frankfurter-allee-pop-up-radweg-wird-ab-mitte-oktober-verstetigt/
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/pop-up-radweg-wird-dauerhaft_a359507
+#: by: https://berliner-abendblatt.de/2022/11/07/frankfurter-allee-parkplaetze-weichen-radweg/
 #: source_id: viz2021:13.464455,52.514771,01.11.2022,07:00 (bis 21.12.2022)
 #: XXX geschützten Radstreifen, ein Haltestellenkap
 #: last_checked: 2022-11-06
@@ -5686,7 +5694,7 @@ Am Brunnen (Potsdam): Bauarbeiten, danach vielleicht etwas bessere Qualität (Asp
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
 #: priority: #D
-#: last_checked: 2022-10-18
+#: last_checked: 2022-11-07
 #: check_frequency: 150d
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,7623 14614,7614
 # 
@@ -6339,6 +6347,7 @@ Am Priesteracker (Potsdam): genaue Lage? Qualität? Einbahnstraße für Radfahrer o
 #: by: https://nachgefragt.bvg.de/u6-streckensanierung/ (März 2023: Abbruch der U-Bahnbrücke über Seidelstraße; Busspur in der Berliner Str. wird für Radfahrer frei sein)
 #: by: https://berliner-abendblatt.de/2022/10/21/bauarbeiten-an-u6-in-tegel-so-laeuft-der-ersatzverkehr/
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/ab-7-november-wird-die-u-bahnlinie-6-mehrere-jahre-lang-saniert_a361337
+#: by: https://berliner-abendblatt.de/2022/11/07/noerdliche-u6-fuer-jahre-gesperrt/
 #: XXX außerdem: der U6-SEV soll über Nordlichtstr. und Straße 442 geführt werden --- wird es hier eine Einbahnstraßenregelung geben? (wobei die Straßen auf den Mapillary-Bildern breit genug aussehen)
 #: source_id: viz2021:13.307546,52.56813,27.01.2022,09:00 (Vorbereitung Brückenneubau, bis 30.11.2022)
 #: source_id: bvg2021:u6#BVG311138_0
@@ -7107,11 +7116,13 @@ Wexstr.: geschützte Radverkehrsanlage wird erstellt	?::projected; 5357,8013 5472
 #: next_check: 2022-12-11
 Alexanderplatz: Umwege wegen einer Tunnelbaustelle	?::inwork 11005,12855 11102,12845 11086,12900 11139,13008
 # 
+#: next_check_id: FRIEDRICH-2020
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1255524.php (Herbst 2022)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/charlottenstrasse-wird-fahrradstrasse_a360923
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1257825.php
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1262075.php (möglichst zeitnah zur Wiedereröffnung der Friedrichstr. für den Kfz-Verkehr)
 #: source_id: bvg2021:n6#BVG311315_0 (Umleitung ab 7.11.2022)
-#: next_check: 2022-11-30
+#: next_check: 2022-11-22
 Charlottenstr.: Einrichtung einer Fahrradstraße	?::projected 9569,11631 9559,11715 9547,11819 9536,11922 9523,12019 9509,12117 9496,12215 9489,12263 9475,12365
 # 
 #: by: https://www.infravelo.de/projekt/stralauer-platz/ (4. Quartal 2022 - 3. Quartal 2023)
@@ -7530,9 +7541,10 @@ Charles-Boutard-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?:
 #: by: https://www.aktives-adlershof.de/fileadmin/Bilder_Redakteure/2021_NEWSletter/2021-01_Newsletter_digital.pdf?fbclid=IwAR06vnMT56ZWNbaBwuChQZNaNj3Mlxr4rvI6I7X9olxdM97_a_Dc-PfEwAA
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/2022-beginnen-die-bauarbeiten-fuer-eine-neue-bruecke-uebers-adlergestell_a307746 (Frühjahr 2022 - Ende 2023)
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-27038.pdf (Bauzeit zwei Jahre)
+#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/19/SchrAnfr/S19-13539.pdf (Inbetriebnahme für Mitte 2024 vorgesehen)
 #: last_checked: 2022-10-16
 #: check_frequency: 360d
-#: next_check: 2023-12-31
+#: next_check: 2024-06-30
 Fuß- und Radwegbrücke: geplant	?::projected 19162,3935 19268,4037 19245,4046 19252,4069 19300,4018 19405,4125 19428,4071 19372,4084 19366,4065 19351,4050 19335,4067
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Jt.8)
 #: last_checked: 2022-10-16
@@ -8919,8 +8931,9 @@ Heinersdorf, Alte Gärtnerei: neue Straßenverbindung, Verlegung des Durchgangverk
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1253755.php (Bauarbeiten: Ende 2022 - Ende 2029)
 #: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/marzahner-knoten/
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2022/pressemitteilung.1254649.php
+#: by: https://www.berliner-woche.de/marzahn/c-bauen/neubau-des-marzahner-knotens-beginnt-in-kuerze_a361283 (Bauarbeiten beginnen im Dezember 2022)
 #: XXX ampelgesicherte Kreuzungen werden entstehen, direkt am Knoten sowie bei der Zufahrt Frank-Schweitzer-Str.
-#: next_check: 2022-12-31
+#: next_check: 2022-12-01
 Knoten Marzahn: Neubau geplant	?::projected 19467,15045 19633,15098
 # 
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-106-erneut/index.shtml
