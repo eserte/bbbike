@@ -14,12 +14,17 @@
 
 use strict;
 use warnings;
+use FindBin;
+use lib "$FindBin::RealBin/..";
+
 use JSON::XS qw(decode_json);
 use YAML::XS qw(LoadFile);
 use Term::ANSIColor qw(colored);
 
-my $sourceids_all     = LoadFile("$ENV{HOME}/src/bbbike/tmp/sourceid-all.yml");
-my $sourceids_current = LoadFile("$ENV{HOME}/src/bbbike/tmp/sourceid-current.yml");
+use BBBikeUtil qw(bbbike_root);
+
+my $sourceids_all     = LoadFile(bbbike_root . "/tmp/sourceid-all.yml");
+my $sourceids_current = LoadFile(bbbike_root . "/tmp/sourceid-current.yml");
 
 my $json = `cat /tmp/bvg_checker_disruption_reports.json`;
 my $d = decode_json $json;
