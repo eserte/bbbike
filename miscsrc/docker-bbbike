@@ -29,6 +29,16 @@ use Time::HiRes ();
 
 use BBBikeUtil qw(save_pwd2 bbbike_root);
 
+my %codename_to_packagerepos;
+# list generated with following command on mydebs system:
+#     perl -ne 'print " $1" if /Codename: (\S+)/' /srv/www/debian-repo/conf/distributions ; echo
+for my $codename (qw(squeeze lenny etch wheezy jessie stretch lucid precise trusty xenial bionic buster focal bullseye)) {
+    $codename_to_packagerepos{$codename}->{'mydebs.bbbike.de'} = 1;
+}
+for my $codename (qw(bionic focal jammy)) {
+    $codename_to_packagerepos{$codename}->{'bbbike-ppa'} = 1;
+}
+
 sub usage (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] gui | cgi | ci | build-deb [options]
@@ -679,6 +689,14 @@ sub cgi {
     my $pwd = save_pwd2;
     chdir bbbike_root or die "Can't chdir: $!";
 
+    my $use_bbbike_ppa;
+    if (defined $opt{'use-bbbike-ppa'}) {
+	$use_bbbike_ppa = $opt{'use-bbbike-ppa'};
+    } elsif ($codename_to_packagerepos{$opt{'distver'}}->{'bbbike-ppa'}) {
+	$use_bbbike_ppa = 1;
+	info "bbbike-ppa support exists for $opt{dist}:$opt{distver} --- using it";
+    }
+
     # Prepare docker environment
     my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
     require File::Basename;
@@ -734,7 +752,7 @@ RUN perl -i -pe 's/^(deb.*main)\$/\$1 contrib non-free/' /etc/apt/sources.list &
 RUN apt-get install -qqy --no-install-recommends \\
       agrep wget gnupg
 EOF
-    if ($opt{'use-bbbike-ppa'}) {
+    if ($use_bbbike_ppa) {
 	$dockerfile .= <<EOF;
 RUN apt-get install -qqy --no-install-recommends \\
       software-properties-common
@@ -949,7 +967,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       test => 0,
 	       'invalidate-apt' => 0,
 	       mapserver => 0,
-	       'use-bbbike-ppa' => 0,
+	       'use-bbbike-ppa' => undef,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
