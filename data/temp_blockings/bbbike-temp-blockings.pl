@@ -308,17 +308,17 @@ EOF
      #   #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
      #   data => '', # dummy
      # },
-     { from  => $isodate2epoch->("2019-11-24 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-12-22 23:59:59"),
+     { from  => $isodate2epoch->("2022-11-20 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-12-22 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 22, months => 11, start => "2022-01-01T00:00:00"]], # 2020 wird der Weihnachtsmarkt nur in der Zitadelle stattfinden, 2021 auch
-       recurrence_prewarn_days => 14, # später nochmal prüfen
-       text  => 'Spandauer Weihnachtsmarkt, vom 25.11.2019 bis 22.12.2019',
+       recurrences => [['yearly', days => 20, months => 11, start => "2022-01-01T00:00:00"]], # 2020 wird der Weihnachtsmarkt nur in der Zitadelle stattfinden, 2021 auch
+       text  => 'Spandauer Weihnachtsmarkt, vom 21.11.2022 bis 22.12.2022',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971839-955635-spandauer-weihnachtsmarkt-in-der-altstad.html',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html (2020)
 #: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20211026
+#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html?date=20221108
 	2::xmas -3275,14407 -3231,14383 -3204,14368 -3155,14340
 	2::xmas -3275,14407 -3338,14333
 	2::xmas -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
@@ -17384,11 +17384,11 @@ EOF
 	2::inwork -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009
 EOF
      },
-     { from  => $isodate2epoch->("2021-12-09 14:00:00"),
-       until => $isodate2epoch->("2021-12-12 23:59:59"),
+     { from  => $isodate2epoch->("2022-12-08 14:00:00"),
+       until => $isodate2epoch->("2022-12-11 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12, start => "2021-01-01T00:00:00"]], # findet 2020 vermutlich nicht statt
-       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 10.12.2021 bis zum 12.12.2021',
+       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 09.12.2022 bis zum 11.12.2022',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
        data  => <<EOF,
