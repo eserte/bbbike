@@ -221,7 +221,7 @@ Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) (mittlerweile bis 14.6.2022) (bis 11.7.2022) (inaktiv) vvv
 #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022) (bis 14.11.2022)
 #: priority: #A
-#: last_checked: 2022-10-27 vvv
+#: last_checked: 2022-11-08 vvv
 #: next_check: 2022-11-14 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
@@ -262,7 +262,7 @@ Schloßplatz: Fußgänger, Bauarbeiten	q3::inwork 10102,12384 10063,12438
 #: source_id: 2147346552 (bis 16.7.2021)
 #: source_id: viz2021:13.38026,52.532838,02.11.2020,08:00 (bis 16.7.2021) (mittlerweile bis 15.11.2021, Gesamtbaumaßnahme bis Ende 2022) (mittlerweile bis 30.06.2022, Gesamtbaumaßnahme unverändert) (mittlerweile bis 31.7.2022) (mittlerweile kein Endedatum mehr) (bis 2.11.2022) (kein Endedatum mehr)
 #: note: bei rbb noch bis 05.08.2022
-#: last_checked: 2022-10-19
+#: last_checked: 2022-11-08
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-11-02
 Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
@@ -962,7 +962,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: osm_watch: way id="1040605739" version="1"
 #: add_fragezeichen: Bis wann dauern die Bauarbeiten an?
 #: XXX laut osm opening_date=2023-12
-#: last_checked: 2022-11-03 (mapillary)
+#: last_checked: 2022-11-08
 #: check_frequency: 120d
 #: next_check: 2023-12-31
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Goethestr. und Friesickestr., offen Richtung Westen	q3:inwork; 12646,16563 12798,16493
@@ -1661,6 +1661,7 @@ Treseburger Ufer: nur für Fußgänger erlaubt	q4 12301,5783 12453,5844 12507,5860 
 (Friedrichshagener Str. [49A-55] - Bellevuepark): einige Fußgänger, Spielplatz	q2 22514,5534 22534,5552 22574,5554 22717,5591 22787,5582
 Walter-Nicklitz-Promenade: eng und kurvenreich, Fußgänger	q2 8290,15304 8329,15397 8308,15409 8312,15470
 Gropiusstr.: Fußgänger auf dem Uferweg	q1 8389,16214 8534,16355 8543,16364
+#: note: Radfahren erlaubt, Fußgänger haben Vorrang
 Pankeweg: Fußgänger	q1 8286,14635 8322,14687 8292,14734 8275,14869 8264,14902
 Pankeweg: Fußgänger	q1 8264,14902 8245,15004 8266,15134
 Pankeweg: Fußgänger	q1 8232,15220 8268,15312
@@ -2011,6 +2012,7 @@ Kienheideweg: Fußgänger, Bordsteine	q2 13136,5593 13331,5640
 Kienheideweg: Fußgänger	q1 13331,5640 13414,5655
 Kienheideweg - Buschkrugallee: Fußgänger	q1 13511,5675 13612,5698
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8119 (Antrag: Freigabe gefordert) vvv
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/rad-fahren-durch-den-park-erlauben_a362327
 Thomashöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12682,7514 12672,7561 12647,7672
 Lessinghöhe: Fußgänger, für Radfahrer verboten, ggfs. schieben	q2 12647,7672 12643,7714 12622,7796 12625,7829 12602,7907 12583,7974
 #: by ^^^
@@ -3238,7 +3240,7 @@ Kelheimer Str.: einige Fußgänger, Bordstein	q2 5894,10287 5898,10318
 Würzburger Str.: einige Fußgänger, Bordsteine	q3 5898,10318 5907,10347
 Wilhelm-Hoff-Str.: einige Fußgänger, kurvig	q1 19057,3422 19033,3397
 Bürgerstr. - Bendastr.: einige Fußgänger	q1 12830,6254 12813,6334 12812,6343 12810,6348 12792,6358 12801,6377
-(Uranusweg - U-Bhf. Scharnweberstr.): Fußgänger	q2 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
+(Uranusweg - U-Bhf. Scharnweberstr.): Fußgänger	q2 4287,17563 3959,17714 3987,17808
 (U-Bhf. Scharnweberstr. - Scharnweberstr.): U-Bahnhof, Türen	q4 3987,17808 3997,17840
 (U-Bhf. Scharnweberstr. - Scharnweberstr.): Fußgänger	q2 3997,17840 4016,17918
 (Hermann-Piper-Str./Olbendorfer Weg - Rathauspromenade): Fußgänger, kurvig	q2 4997,19849 4992,19891 5029,19945 5151,19960 5220,19982

@@ -16,10 +16,35 @@
 # 
 #: temporary vvv
 # 
+#: next_check_id: SCHARNWEBERTRAM-2022
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1261737.php (Baumaßnahmen Gürtelstraße 7.11.2022-22.12.2022, keine Einschränkung des Radverkehrs)
+#: by: https://berliner-abendblatt.de/2022/11/04/strassensperrung-bis-dezember-baumassnahmen-der-bvg-auf-der-guertelstrasse/
+#: source_id: viz2021:13.476298,52.512793,08.11.2022,08:00 (Gürtelstr., 8.11.2022-2.12.2022)
+#: note: Stau gesehen: 2022-11-08 (Di) gegen 14:25
+#: last_checked: 2022-11-08
+#: check_frequency: 30d
+#: next_check: 2022-12-02
+#: valid: -20221202
+Jessnerstr.	Jam; 14849,11539 14946,11697 14986,11760 15077,11910 15117,12106
+# 
+#: next_check_id: ORANIENBURGERTORTRAM-2022
+#: note: Stau gesehen: 2022-11-08 (Di) gegen 09:30 vvv
+#: last_checked: 2022-11-08 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2022-11-21 vvv
+#: valid: -20221121 vvv
+Gartenstr.	Jam; 9670,13637 9535,13801 9514,13826 9383,13986
+Gartenstr.	Jam; 9383,13986 9514,13826 9535,13801 9670,13637
+#: valid ^^^
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: note ^^^
+# 
 #: next_check_id: MARKGRAFENDAMM-2022
 #: note: Stau gesehen: 2022-08-24 (Mi) gegen 13:00, 2022-08-25 (Do) gegen 14:30, 2022-08-27 (Sa) gegen 17:30, 2022-10-07 (Fr) gegen 13:20
 #: note: kurzen Stau gesehen (ab Corinthstr.): 2022-09-24 (Sa) gegen 16:40, vermutlich 2022-10-10 (Mo) gegen 13:05, 2022-10-24 (Mo) gegen 16:30
-#: note: keinen Stau gesehen: 2022-08-29 (Mo) gegen 18:10, 2022-09-01 (Do) gegen 19:00, 2022-09-03 (Sa) gegen 12:45, 2022-09-04 (So) gegen 15:00, 2022-09-21 (Mi) gegen 19:50, 2022-09-28 (Mi) gegen 11:15, 2022-10-16 (So) gegen 14:40, 2022-10-18 (Di) gegen 17:30, 2022-10-20 (Do) gegen 12:30, 2022-10-23 (So) gegen 15:50, 2022-11-01 (Di) gegen 17:50
+#: note: keinen Stau gesehen: 2022-08-29 (Mo) gegen 18:10, 2022-09-01 (Do) gegen 19:00, 2022-09-03 (Sa) gegen 12:45, 2022-09-04 (So) gegen 15:00, 2022-09-21 (Mi) gegen 19:50, 2022-09-28 (Mi) gegen 11:15, 2022-10-16 (So) gegen 14:40, 2022-10-18 (Di) gegen 17:30, 2022-10-20 (Do) gegen 12:30, 2022-10-23 (So) gegen 15:50, 2022-11-01 (Di) gegen 17:50, 2022-11-08 (Di) gegen 13:50
 #: last_checked: 2022-10-24
 #: check_frequency: 90d
 #: next_check: 2023-03-15

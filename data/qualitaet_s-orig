@@ -469,7 +469,7 @@ Gartenstr.: Asphalt	Q0 8663,14960 8685,14966 8700,14956 8701,14932 8692,14923 86
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/mobrat_sb_8.pdf (geplante Fertigstellung nun 2023, Stand August 2021)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/pdf/211123_-sachstandsbericht.pdf
 #: XXX Kopfsteinpflaster soll durch Asphalt ersetzt werden vvv
-#: last_checked: 2022-10-19 vvv
+#: last_checked: 2022-11-08 vvv
 #: next_check: 2023-06-01 vvv
 Gartenstr.: Kopfsteinpflaster	Q2 8663,14960 8570,15107
 Gerichstr.: Kopfsteinpflaster	Q2 8456,15235 8570,15107
@@ -565,7 +565,7 @@ Swinem¸nder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/brunnenviertel-ev-will-baumfaellungen-stoppen_a336818
 #: by: https://www.infravelo.de/projekt/3d740cd762db0422f5e5e06d18bc752a/ (2. Quartal 2023 - 4. Quartal 2024)
 #: XXX Umgestaltungsmaﬂnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2022-10-22
+#: last_checked: 2022-11-08
 #: check_frequency: 150d
 #: next_check: 2024-12-31
 Swinem¸nder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
@@ -1063,7 +1063,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9942 (Kopfsteinpflaster bleibt vorerst? auﬂerdem: wird die Colbestr. zur Fahrradstraﬂe?)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/dokumente/artikel.1064093.php (Erw‰hnung)
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2022-11-06
+#: last_checked: 2022-11-08
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -11399,7 +11399,7 @@ Westphalweg: Asphalt, einige Schlaglˆcher	Q0- 9310,4407 9428,4419 9562,4412 9668
 # REMOVED (nicht perfekt, Richtung Westen noch immer etwas wellig, aber keine Schlaglˆcher mehr) --- #: XXX verschwinden die Schlaglˆcher nach den Bauarbeiten? --- #: source_id: 2147345133 (bis 21.1.2021) (mittlerweile inaktiv) --- #: last_checked: 2020-08-29 --- #: next_check: 2021-01-21 --- #: next_check: 2020-12-17
 Westphalweg: Asphalt	Q0 9668,4403 9877,4386
 Westphalweg: Asphalt	Q0 9877,4386 9995,4375
-(Uranusweg - U-Bhf. Scharnweberstr.): Verbundsteinpflaster	Q1- 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
+(Uranusweg - U-Bhf. Scharnweberstr.): Verbundsteinpflaster	Q1- 4287,17563 3959,17714 3987,17808
 (U-Bhf. Scharnweberstr. - Scharnweberstr.): Gehwegplatten	Q1 3987,17808 3997,17840 4016,17918
 Brienzer Str.: schlechtes Kopfsteinpflaster	Q3 7289,17277 7309,17159
 Britzer Park - Wesenberger Ring: Verbundsteinpflaster	Q1 13128,4008 13117,3921 13134,3871 13165,3850
@@ -12721,7 +12721,7 @@ Weichselstr. - Sasarsteig: Mosaikpflaster	Q1 12274,8607 12276,8590 12165,8566
 (Weg am Kienhorstgraben): Asphalt	Q0 3876,18348 3799,18159 3723,17979
 #: XXX Wird dieser Abschnitt auch asphaltiert?
 #: osm_watch: way id="5059946" version="4"
-#: last_checked: 2022-09-26 (mapillary)
+#: last_checked: 2022-11-08
 #: check_frequency: 150d
 (Weg am Kienhorstgraben): unbefestigter Weg, Schotter	Q2 3723,17979 3706,17931
 Hornstr.: Asphalt mit einigen Sch‰den	Q0- 8779,9812 8980,9751
@@ -14763,11 +14763,11 @@ Meteorstr.: Verbundsteinpflaster	Q1- 4271,17508 4359,17485 4430,17466 4506,17446
 #: corrected_by: srt (Verbundsteinpflaster -> ...)
 Meteorstr.: grober Asphalt	Q1- 4852,17350 4901,17341
 #: confirmed_by: srt (added Asphalt)
-Uranusweg: Asphalt	Q0 4392,17777 4335,17642 4280,17551 4264,17526 4271,17508
+Uranusweg: Asphalt	Q0 4392,17777 4335,17642 4287,17563 4264,17526 4271,17508
 #: corrected_by: osm (Asphalt oder Beton -> surface=concrete)
 Straﬂe 442: Beton	Q0 4891,17289 4997,17241
 #: corrected_by: osm (Asphalt oder Beton -> surface=concrete)
-Straﬂe 462: Beton	Q0 5068,17384 4914,17399
+Straﬂe 462: Beton	Q0- 5068,17384 4914,17399
 #: by: ^^^
 # 
 #: by: stefan g:

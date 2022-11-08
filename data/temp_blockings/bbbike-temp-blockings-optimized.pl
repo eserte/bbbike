@@ -3661,7 +3661,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: tempex: night, volatile
-	2::night 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
+	2::night 4287,17563 3959,17714 3987,17808
 ',
          'from' => undef,
          'id' => 2697,
@@ -3906,6 +3906,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://viz.berlin.de/2022/10/a115-sprengungen/
 #: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
 #: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
+#: by: https://viz.berlin.de/2022/11/a115-sprengungen/
 #: note: Termine im Herbst 2022: 9./15./23./29.11, 6./13./20.12.
 #: source_id: 2147341022
 #: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
@@ -3915,6 +3916,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15
 # REMOVED --- #: priority: #A --- #: next_check: 2022-04-20
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
@@ -4652,7 +4654,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: next_check_id: CORONA-2020
 #: by: https://www.charite.de/klinikum/themen_klinikum/themenschwerpunkt_coronavirus/#c30751057 (Eingangskontrollen)
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2022-10-08 vvv
+#: last_checked: 2022-11-08 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -4692,26 +4694,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: SCHOEN-2022
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020)
-#: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
-#: add_fragezeichen: Bis wann gehen die Bauarbeiten?
-#: also_indoor: traffic (H,B)
-#: XXX Stand 2021-07-31 und 2022-01-18: letzte Deckschicht fehlt, Gehwege müssen noch gemacht werden; März 2023: letzte Deckschicht ist drauf
-# REMOVED (eingetragen) --- #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2022-09-21 (mapillary)
-#: check_frequency: 90d
-#: next_check: 2022-11-07
-	q3::inwork 14136,17170 13996,16959
-',
-         'from' => undef,
-         'id' => 3254,
-         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Rennbahnstr., Fahrbahn kann gesperrt sein',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5308,24 +5291,24 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        {
-         'data' => '# REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366 --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fährt wieder, aber die Bauarbeiten sind noch nicht beendet)
+         'data' => '#: next_check_id: SCHARNWEBERTRAM-2022
+# REMOVED --- #: by: https://www.bahninfo-forum.de/read.php?9,689838,718366#msg-718366 --- #: by: https://www.bvg.de/de/verbindungen/stoerungsmeldungen/m13?date=20221119 (bis 6.12.2021) (Straßenbahn fährt wieder, aber die Bauarbeiten sind noch nicht beendet)
 # REMOVED --- #: also_indoor: traffic (G,H) --- #: last_checked: 2021-12-18 vvv --- #: check_frequency: 2d vvv
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1240157.php (unklare Ortsangaben, 1.9.2022 - 17.12.2022)
 #: by: https://berliner-abendblatt.de/2022/09/10/bauarbeiten-strassenbahnlinie-m13-wird-verkuerzt/ (bis 9.12.2022)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/ersatzverkehr-auf-zwei-tramlinien_a357227
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/die-bvg-erneuert-gleisanlagen_a356780
 #: by: https://unternehmen.bvg.de/wp-content/uploads/2022/10/BVG_PLUSNAVI_1022_barrierefrei.pdf (hier bis 9.12.2022)
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1261737.php (Baumaßnahmen Gürtelstraße 7.11.2022-22.12.2022, keine Einschränkung des Radverkehrs)
-#: by: https://berliner-abendblatt.de/2022/11/04/strassensperrung-bis-dezember-baumassnahmen-der-bvg-auf-der-guertelstrasse/
 #: source_id: viz2021:13.474058,52.512017,12.09.2022,07:00 (hier: bis 2.10.2022) (bis 11.12.2022)
 #: source_id: viz2021:13.470538,52.512351,12.09.2022,07:00
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
-#: source_id: viz2021:13.476298,52.512793,08.11.2022,08:00 (Gürtelstr., 8.11.2022-2.12.2022)
-#: last_checked: 2022-11-06 vvv
+#: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
+#: last_checked: 2022-11-08 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
+#: note: mittlerweile ist das Schild abhanden gekommen
 Weichselstr./Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork; 14836,11842 14888,11934 14965,11924
 Scharnweberstr.: Gehweg für Radfahrer frei	q3::inwork 15077,11910 15133,11902 15256,11884
 Scharnweberstr./Weichselstr.: keine Freigabe	q4::inwork; 15077,11910 14965,11924 14888,11934
@@ -5674,7 +5657,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wie lange dauern die Bauarbeiten an?
 #: also_indoor: traffic (G(falsch?),B(teilweise))
 #: priority: #B
-#: last_checked: 2022-10-08 vvv
+#: last_checked: 2022-11-08 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-03 vvv
 	q4::inwork; 7259,14870 7209,14927 7182,14986
@@ -6071,15 +6054,18 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        undef,
        {
          'data' => '#: next_check_id: SCHOEN-2022
-#: also_indoor: traffic (none)
+#: also_indoor: traffic (H[unvollständig],G[unvollständig],B)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-im-kreuzungsbereich_a351236
 # REMOVED --- #: XXX Wie groß sind die Einschränkungen für Radfahrer? vvv
-#: last_checked: 2022-10-22 vvv
-#: check_frequency: 90d vvv
-#: next_check: 2022-11-07 vvv
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2022-11-08 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2022-11-07 vvv
 	q3::inwork 13914,17016 13996,16959 14107,16889
 	q4::inwork 13996,16959 13974,16924
-#: next_check ^^^
+	q3::inwork 13974,16924 13870,16837
+	q3::inwork 13996,16959 14136,17170
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED --- #: XXX ^^^
@@ -6087,7 +6073,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
          'from' => 1656799200,
          'id' => 3579,
          'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2022/pressemitteilung.1221094.php',
-         'text' => 'Schönstr./Große Seestr.: Sperrung des Kreuzungsbereichs, Ausweichen auf den Bürgersteig, Bordsteine und Umwege, vom 04. Juli 2022 bis voraussichtlich 07. November 2022',
+         'text' => 'Schönstr./Große Seestr.: Sperrung des Kreuzungsbereichs, Ausweichen auf den Bürgersteig, Bordsteine und Umwege, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6238,7 +6224,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
          'data' => '#: note: Einbahnstraße etwa 70m lang
 #: by: https://www.deutsches-architekturforum.de/thread/9772-wedding-gesundbrunnen-kleinere-projekte/?postID=706715#post706715
 #: add_fragezeichen: Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2022-10-19
+#: last_checked: 2022-11-08
 #: check_frequency: 45d
 	q3::inwork; 6919,15666 7024,15810
 ',
@@ -6486,7 +6472,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
        {
          'data' => '#: also_indoor: traffic (ex-G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-11-03 (Asphaltierungsarbeiten)
+#: last_checked: 2022-11-08
 #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 ',
@@ -6575,7 +6561,8 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
          'until' => undef
        },
        {
-         'data' => '#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022)
+         'data' => '#: next_check_id: ORANIENBURGERTORTRAM-2022
+#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022)
 #: source_id: bvg2021:142#BVG311081_0
 #: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
@@ -6618,6 +6605,7 @@ Friedrichstr.	q4::inwork 9212,13471 9225,13389
 #: by: https://www.berliner-woche.de/westend/c-bauen/rohbau-fuer-neues-ausbildungszentrum-fertig_a360518 (Haben die Bauarbeiten hier etwas damit zu tun? Fertigstellung Herbst 2023)
 #: by: https://www.bahninfo-forum.de/read.php?9,690942,747836#msg-747836 (vom 7.11.2022 bis zum 17.3.2023?)
 #: by: https://www.bahninfo-forum.de/read.php?9,748153,748153#msg-748153
+#: by: https://www.berliner-woche.de/westend/c-bauen/bvg-baut-neue-bruecke_a362501
 #: source_id: bvg2021:u2#BVG311197_0 (bis 17.3.2023)
 # REMOVED --- #: XXX Bis wann bleibt die Sperrung? --- #: next_check: 2022-12-31
 	2::inwork -107,12220 -76,12236 -45,12243
@@ -6689,9 +6677,10 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
 #: last_checked: 2022-10-19 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier nicht) --- Genter Str.	q3::inwork 7138,15437 7270,15307
-# REMOVED (hier (noch) nicht) --- Triftstr.	q4::inwork 7248,15296 7270,15307
-Triftstr.	q3::inwork 7270,15307 7356,15350
-Gerichtstr.	q3::inwork 7464,15409 7627,15412
+Triftstr.	q3::inwork 7085,15226 7248,15296 7270,15307
+# REMOVED (hier nicht mehr) --- Triftstr.	q3::inwork 7270,15307 7356,15350
+Triftstr.	q3::inwork 7356,15350 7464,15409
+# REMOVED (hier nicht mehr) --- Gerichtstr.	q3::inwork 7464,15409 7627,15412
 # REMOVED (hier nicht) --- Gerichtstr.	q3::inwork 7627,15412 7723,15417
 # REMOVED (hier nicht) --- Ruheplatzstr.	q3::inwork 7627,15412 7540,15566
 #: check_frequency ^^^
@@ -6702,7 +6691,7 @@ Gerichtstr.	q3::inwork 7464,15409 7627,15412
          'from' => 1665871200,
          'id' => 3651,
          'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2022/pressemitteilung.1254588.php',
-         'text' => 'Triftstr./Genter Str. und Gerichtstr./Ruheplatzstr.: Bauarbeiten in den Einmündungsbereichen, Fahrbahn gesperrt, ab 17.10.2022',
+         'text' => 'Triftstr.: Fahrbahnausbesserungsarbeiten, Abschnitte der Fahrbahn zwischen Tegeler Str. und Müllerstr. gesperrt, ab 17.10.2022',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6729,7 +6718,7 @@ Gerichtstr.	q3::inwork 7464,15409 7627,15412
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-11-02
+#: last_checked: 2022-11-08
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -6886,31 +6875,14 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://viz.berlin.de/wp-content/uploads/Roedernallee.png
-## generated with: ./miscsrc/convert2hafas -specsperre=strassen /tmp/3 | perl -pe \'s/: \\t/\\t/; s/igndisp/inwork/; $_="# $_" if /3nocross/\' >| /tmp/3.new
-#	3nocross::ignrte 6437,18958 6435,18839 6432,18682
-Roedernallee -> Veltener Str., Kienhorstpark	3::inwork 6432,18682 6435,18839 6360,18861
-Roedernallee -> Alt-Reinickendorf	3::inwork 6437,18958 6435,18839 6528,18808
-Alt-Reinickendorf -> Roedernallee	3::inwork 6528,18808 6435,18839 6432,18682
-Alt-Reinickendorf -> Veltener Str., Kienhorstpark	3::inwork 6528,18808 6435,18839 6360,18861
-Veltener Str., Kienhorstpark -> Roedernallee	3::inwork 6360,18861 6435,18839 6437,18958
-Veltener Str., Kienhorstpark -> Alt-Reinickendorf	3::inwork 6360,18861 6435,18839 6528,18808
-',
-         'from' => 1666764000,
-         'id' => 3667,
-         'source_id' => 'https://viz.berlin.de/2022/10/roedernallee/',
-         'text' => 'Alt-Reinickendorf/Roedernallee: Überqueren der Kreuzung nicht möglich, 26.10.2022 bis Mitte November 2022',
-         'type' => 'gesperrt',
-         'until' => 1668553199
-       },
+       undef,
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/9593-city-west-kudamm-%C3%B6stlich-der-fasanenstr-tauentzienstr-kleinere-projekte/?postID=725395#post725395 (bis 2024-10-31, hier nur Gegenverkehrsregelung)
 #: by: https://www.deutsches-architekturforum.de/thread/13327-neubau-dgb-zentrale-sch%C3%B6neberg-in-bau/?pageNo=3 (bis Ende 2022, hier nur der östliche Gehweg frei)
 #: note: Kurioserweise gibt es am nördlichen Ende ein "Einfahrt verboten, Radfahrer frei"-Schild
 #: also_indoor: traffic (none)
 #: add_fragezeichen: Gibt es die Sperrung der Fahrbahn noch immer?
-#: last_checked: 2022-10-29
+#: last_checked: 2022-11-07 (daf)
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 	q3::inwork 6468,10550 6471,10851

@@ -7217,7 +7217,7 @@ Veitstr.	H 1557,19765 1606,19775 1886,19835 2064,19874 2268,19919
 Veitstr.	N 2268,19919 2471,19945
 Schloßstr. (Tegel)	N 2009,20604 2002,20467 1955,20435
 Berliner Str. (Tegel)	H 2821,18831 2690,19099 2621,19241 2568,19345 2477,19520 2436,19606 2394,19697 2268,19919 2224,20007 2169,20095 2109,20188 2044,20289 2015,20336 1955,20435
-Seidelstr.	H 2821,18831 2867,18736 2947,18570 3008,18464 3213,18115 3319,18043 3429,17987 3570,17938 3706,17931
+Seidelstr.	H 2821,18831 2867,18736 2947,18570 3008,18464 3047,18398 3213,18115 3319,18043 3429,17987 3570,17938 3628,17935 3706,17931
 Wittestr.	H 2568,19345 2773,19359 2827,19333 2876,19309 3095,19203 3165,19136 3241,19068 3377,19018 3700,18965 3726,18962 3883,18944 4144,18896 4211,18882
 Antonienstr.	H 3930,17923 3970,18126 4009,18322 4070,18695 4144,18896 4228,19024
 Eichborndamm	H 4016,17918 4059,18107 4102,18298 4163,18676 4211,18882 4223,18982 4228,19024 4280,19110 4357,19261 4497,19539 4611,19769 4728,20003 4766,20084 4780,20116 4808,20159 4815,20170 4854,20252 4877,20314 4879,20427 4885,20444 4935,20574 4953,20624 5033,20757 5188,20884 5379,21016
@@ -15692,9 +15692,9 @@ Parksiedlung Spruch	N 10578,1840 10968,1753 11031,1739 11136,1782
 #: note oldname by 1:5K
 (Zur Straße Parksiedlung Spruch)	N 11136,1782 11205,1776
 #: note: Beleuchtung existiert
-(Uranusweg - U-Bhf. Scharnweberstr.)	NN 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
+(Uranusweg - U-Bhf. Scharnweberstr.)	NN 4287,17563 3959,17714 3987,17808
 (U-Bhf. Scharnweberstr. - Scharnweberstr.)	NN 3987,17808 3997,17840 4016,17918
-Uranusweg	N 4392,17777 4335,17642 4280,17551 4264,17526 4271,17508
+Uranusweg	N 4392,17777 4335,17642 4287,17563 4264,17526 4271,17508
 Straße 442	N 4891,17289 4997,17241
 Straße 443	N 4879,17246 4779,17252
 Straße 455	N 4879,17246 4902,17234 4916,17201
@@ -15884,7 +15884,7 @@ Togostr.	N 5531,16734 5315,16936
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10895 (Forderung: alte Straßenschilder erneuern)
 #: osm_watch: way id="333607502" version="10"
 #: also_indoor: search Manga-Bell-Platz
-#: last_checked: 2022-10-03
+#: last_checked: 2022-11-08
 #: check_frequency: 90d
 Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,16803 5561,16767 5531,16734 5496,16696 5533,16662
 #: next_check_id: AFRIKANISCHESVIERTEL-2020
@@ -15895,7 +15895,7 @@ Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,168
 #: add_fragezeichen: Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="5199719" version="19"
 #: also_indoor: search Maji-Maji-Allee
-#: last_checked: 2022-10-03
+#: last_checked: 2022-11-08
 #: check_frequency: 90d
 Petersallee	N 5426,16539 5533,16662
 #: next_check_id: AFRIKANISCHESVIERTEL-2020
@@ -15908,7 +15908,7 @@ Petersallee	N 5426,16539 5533,16662
 #: add_fragezeichen: Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="47347069" version="14"
 #: also_indoor: search Anna-Mungunda-Allee
-#: last_checked: 2022-10-03
+#: last_checked: 2022-11-08
 #: check_frequency: 90d
 Petersallee	N 5581,16708 5639,16768 5684,16815 5772,16919
 Usambarastr.	N 5526,16916 5565,16923 5684,16815
@@ -18630,6 +18630,7 @@ Ramlerstr. [entlang der Swinemünder Brücke]	N 9666,15739 9644,15780
 (Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum)	NN 9644,15780 9629,15803 9592,15800
 Graunstr.	N 9844,15755 9907,15618 9996,15400 10018,15211
 (Parkweg Swinemünder Str.)	NN 10189,14649 10228,14564
+#: note: Radfahrer sollen per Piktogramm auf der nördlichen Seite des Kreisverkehrs fahren
 (Lortzingstr. - Mauerpark)	NN 10037,15421 10052,15429 10070,15438 10076,15455 10092,15461 10105,15454 10127,15463 10155,15473 10186,15481
 (Lortzingstr. - Mauerpark)	NN 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
 (Weg im erweiterten Mauerpark - über den Gleimtunnel)	NN 10070,15626 10091,15630
