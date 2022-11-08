@@ -52,3 +52,33 @@ for my $record (@records) {
 }
 
 __END__
+
+=head1 NAME
+
+bvg_disruptions_format.pl - format BVG StE<ouml>rungsmeldungen
+
+=head1 SYNOPSIS
+
+    ./miscsrc/bvg_checker.pl --debug
+    ./miscsrc/bvg_disruptions_format.pl | less +/'^'$(date +%F)
+
+=head1 DESCRIPTION
+
+Format BVG disruption messages showing only relevant information
+(from/until dates, description), sorted by date, and also providing
+C<source_id> directives, possibly colored to indicate usage in the
+bbbike data.
+
+Requires a previous run of C<bvg_checker.pl --debug> to fetch the JSON
+file with the BVG disruption messages.
+
+Requires also generated F<sourceid*.yml> files, which may be created
+using
+
+   (cd data && make persistent-tmp)
+
+=head1 SEE ALSO
+
+L<bvg_checker.pl>.
+
+=cut
