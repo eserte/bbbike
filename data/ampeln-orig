@@ -52,13 +52,13 @@ Kronprinzessinnenweg: Gegenverkehrsregelung	X::inwork -4368,1731
 # 
 #: next_check_id: HAEMMERLING-2022
 #: by: https://www.bahninfo-forum.de/read.php?9,726467,730605#msg-730605 (19.4.2022 - 30.11.2022)
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (Gegenverkehrsregelung mit Baustellenampel, bis 10.11.2022) (mittlerweile inaktiv, bereits Ende Juli 2022) (wieder aktiviert, bis 30.9.2022) (bis 10.10.2022) (inaktiv) (bis 23.10.2022) (bis 25.10.2022)
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (Gegenverkehrsregelung mit Baustellenampel, bis 10.11.2022) (mittlerweile inaktiv, bereits Ende Juli 2022) (wieder aktiviert, bis 30.9.2022) (bis 10.10.2022) (inaktiv) (bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022)
 #: by: https://nitter.net/VIZ_Berlin/status/1522508674073350144#m
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: last_checked: 2022-11-05 vvv
 # REMOVED --- #: next_check: 2022-11-10 vvv
-#: next_check: 2022-11-10 vvv
-#: valid: -20221110 vvv
+#: next_check: 2022-11-30 vvv
+#: valid: -20221130 vvv
 Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 21984,6317
 Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245
 #: valid ^^^
@@ -77,7 +77,7 @@ Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
 #: note: Ampel ist eigentlich südöstlich der Einmündung gelegen
-#: last_checked: 2022-11-03
+#: last_checked: 2022-11-09
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 Fischerinsel	F::inwork 10578,11969
@@ -264,7 +264,7 @@ Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12723,20691
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel
-#: last_checked: 2022-08-30 (mapillary)
+#: last_checked: 2022-11-09
 #: check_frequency: 90d
 Straße der Pariser Kommune/Am Ostbahnhof: Baustellenampel	F::inwork 12543,11521
 # 

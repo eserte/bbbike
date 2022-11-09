@@ -28278,7 +28278,7 @@ EOF
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-10-14
+#: last_checked: 2022-11-09
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -33603,7 +33603,7 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder frei?
 #: note: In der Praxis kommt man als Radfahrer hier gut durch.
 #: XXX zurzeit Gehwegarbeiten, evtl. wird der Gehweg freigegeben und damit die Fahrbahn zumindest für Radfahrer nutzbar sein?
-#: also_indoor: traffic
+#: also_indoor: traffic (G,B)
 #: osm_watch: way id="8084121" version="37"
 #: osm_watch: way id="75617418" version="6"
 #: last_checked: 2022-11-02
@@ -35303,7 +35303,7 @@ EOF
        source_id => 'https://nitter.net/VIZ_Berlin/status/1522508674073350144#m',
        data  => <<EOF,
 #: next_check_id: HAEMMERLING-2022
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022)
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -35639,10 +35639,10 @@ EOF
 EOF
      },
      { from  => 1655798400, # 2022-06-21 10:00
-       until => $isodate2epoch->("2022-11-11 17:00:00"), # 1661871600, # 2022-08-30 17:00
-       text  => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 11.11.2022 17:00',
+       until => $isodate2epoch->("2022-11-15 17:00:00"), # 1661871600, # 2022-08-30 17:00
+       text  => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 15.11.2022 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.414144,52.572092,22.06.2022,10:00',
+       source_id => 'viz2021:13.414144,52.572092,22.06.2022,10:00', # (bis 11.11.2022) (bis 15.11.2022)
        data  => <<EOF,
 #: by: https://nitter.net/VIZ_Berlin/status/1539528243316985856#m
 #: by: https://nitter.net/pic/orig/media%2FFV2AstdX0AEWnIn.jpg
@@ -36316,7 +36316,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-03
+#: last_checked: 2022-11-09
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -37113,6 +37113,24 @@ EOF
        source_id => 'viz2021:13.25888,52.51048,07.11.2022,07:00',
        data  => <<EOF,
 	q4::inwork 541,11464 461,11455
+EOF
+     },
+     { from  => 1664776800, # 2022-10-03 08:00
+       until => 1669384800, # 2022-11-25 15:00
+       text  => 'Bernau, Börnicker Chaussee: Sperrung der Bahnunterführung, evtl. sind auch Radfahrer betroffen, 04.10.2022 08:00 Uhr bis 25.11.2022 15:00 Uhr',
+       type  => 'gesperrt',
+       source_id => '226001339',
+       data  => <<EOF,
+	2::inwork 23113,30450 23015,30519
+EOF
+     },
+     { from  => 1667804400, # 2022-11-07 08:00
+       until => 1669125600, # 2022-11-22 15:00
+       text  => 'Eberswalde, Altenhofer Str.: Sperrung an der Brücke über den Finowkanal, evtl. sind auch Radfahrer betroffen, 08.11.2022 08:00 Uhr bis 22.11.2022 15:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'LS/73-H/22/009',
+       data  => <<EOF,
+	2::inwork 31494,49225 31482,49109 31482,49046
 EOF
      },
     );

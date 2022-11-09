@@ -3897,37 +3897,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
-#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
-#: by: https://berliner-abendblatt.de/2022/10/11/sprengung-im-grunewald-avus-wird-voll-gesperrt/
-#: by: https://viz.berlin.de/2022/10/a115-sprengungen/
-#: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
-#: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
-#: by: https://viz.berlin.de/2022/11/a115-sprengungen/
-#: note: Termine im Herbst 2022: 9./15./23./29.11, 6./13./20.12.
-#: source_id: 2147341022
-#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
-#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
-#: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15
-#: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15
-#: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15
-# REMOVED --- #: priority: #A --- #: next_check: 2022-04-20
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
-	2::temp -1934,6804 -1854,6898
-',
-         'from' => 1667862000,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 9. November 2022 zwischen 09:15 und 10:15 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1667985300
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -4195,7 +4165,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: früher Verbotsschild an beiden Einfahrten, mittlerweile (seit ca. 2020-02) nur an der östlichen Einfahrt
 #: XXX kaum noch Bauarbeiten, aber die Schilder sind geblieben --- vielleicht permanent?
-#: last_checked: 2022-10-14
+#: last_checked: 2022-11-09
 #: check_frequency: 30d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -5153,7 +5123,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder frei?
 #: note: In der Praxis kommt man als Radfahrer hier gut durch.
 #: XXX zurzeit Gehwegarbeiten, evtl. wird der Gehweg freigegeben und damit die Fahrbahn zumindest für Radfahrer nutzbar sein?
-#: also_indoor: traffic
+#: also_indoor: traffic (G,B)
 #: osm_watch: way id="8084121" version="37"
 #: osm_watch: way id="75617418" version="6"
 #: last_checked: 2022-11-02
@@ -5853,7 +5823,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        undef,
        {
          'data' => '#: next_check_id: HAEMMERLING-2022
-#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022)
+#: source_id: viz2021:13.572881,52.460427,06.05.2022,08:00 (inaktiv) (mittlerweile bis 23.10.2022) (bis 25.10.2022) (bis 10.11.2022) (bis 30.11.2022)
 #: by: https://nitter.net/pic/media%2FFSEIxVsWQAASuEu.jpg%3Fname%3Dorig
 #: by: https://nitter.cz/VIZ_Berlin/status/1575006478804873217#m
 #: by: https://nitter.cz/pic/orig/media%2FFdqVlEEXEAI-lOQ.jpg
@@ -6030,9 +6000,9 @@ Seydlitzstr.	q3::inwork 6349,2510 6459,2364
          'from' => 1655798400,
          'id' => 3573,
          'source_id' => 'viz2021:13.414144,52.572092,22.06.2022,10:00',
-         'text' => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 11.11.2022 17:00',
+         'text' => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 15.11.2022 17:00',
          'type' => 'handicap',
-         'until' => 1668182400
+         'until' => 1668528000
        },
        {
          'data' => '#: next_check_id: KWEISENBAHNBRUECKE-2022
@@ -6319,7 +6289,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-03
+#: last_checked: 2022-11-09
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -6996,6 +6966,26 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'text' => 'Westendallee: Baustelle zwischen Preußenallee und Oldenburgallee, evtl. sind auch Radfahrer betroffen, vom 07.11.2022 07:00 bis 25.11.2022 18:00',
          'type' => 'handicap',
          'until' => 1669395600
+       },
+       {
+         'data' => '	2::inwork 23113,30450 23015,30519
+',
+         'from' => 1664776800,
+         'id' => 3679,
+         'source_id' => '226001339',
+         'text' => 'Bernau, Börnicker Chaussee: Sperrung der Bahnunterführung, evtl. sind auch Radfahrer betroffen, 04.10.2022 08:00 Uhr bis 25.11.2022 15:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1669384800
+       },
+       {
+         'data' => '	2::inwork 31494,49225 31482,49109 31482,49046
+',
+         'from' => 1667804400,
+         'id' => 3680,
+         'source_id' => 'LS/73-H/22/009',
+         'text' => 'Eberswalde, Altenhofer Str.: Sperrung an der Brücke über den Finowkanal, evtl. sind auch Radfahrer betroffen, 08.11.2022 08:00 Uhr bis 22.11.2022 15:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1669125600
        }
      
 );

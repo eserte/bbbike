@@ -4984,7 +4984,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-26890.pdf (Mittelzusagen)
 #: by: https://www.berlin.de/sen/uvk/verkehr/verkehrsplanung/fussverkehr/infrastruktur/bauprojekte/2021/#fussgaengerueberwege
 #: priority: #D
-#: last_checked: 2022-10-29
+#: last_checked: 2022-11-09
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -5452,7 +5452,7 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1261592.php (Bauarbeiten an den Radwegen, 7.11.2022-14.12.2022)
 #: by: https://viz.berlin.de/2022/11/verkehrsvorschau-071122/ (Richtung Süden zuerst, eine Woche nach dem 7.11.2022)
 #: source_id: viz2021:13.470029,52.540596,07.11.2022,07:00 (hier nur bis 14.11.2022)
-#: last_checked: 2022-10-11
+#: last_checked: 2022-11-08 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2022-12-14
 Indira-Gandhi-Str.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 14828,15050 14686,15608 14653,15738 14609,15921 14597,15970 14595,15980 14576,16069 14552,16171 14522,16260 14499,16341
@@ -6746,7 +6746,7 @@ Blumberger Damm: entsteht hier ein Radweg oder eine Radspur?	?; 21869,16719 2188
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10854 (Frage)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10884 (Antrag)
 #: XXX wird es Änderungen für den Radverkehr geben?
-#: last_checked: 2022-11-03
+#: last_checked: 2022-11-09
 #: next_check: 2022-12-31
 Krausenstr.: Erneuerung geplant	?::projected 10176,11593 10001,11577 9925,11568 9737,11546 9711,11543 9581,11523 9456,11513
 # 
@@ -7058,6 +7058,7 @@ Hohenschönhauser Str./Süderbrokweg: Widmung als öffentliches Straßenland, ändert
 #: source_id: viz2021:13.333653,52.452146,13.09.2022,07:00 (bis 24.10.2022) (jetzt nur bis 26.9.2022 + anschließende Arbeiten) (inaktiv)
 #: source_id: viz2021:13.331209,52.453127,26.09.2022,07:00 (bis 10.10.2022) (inaktiv)
 #: source_id: viz2021:13.331209,52.453127,10.10.2022,07:00 (bis 21.10.2022) (inaktiv)
+#: XXX Albrechtstr. Richtung Westen: Busspur wurde auf die mittlere Spur verschoben, eine Radspur ist entstanden
 #: last_checked: 2022-10-24 (Markierungsarbeiten)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2022-10-24
@@ -7137,6 +7138,7 @@ Charlottenstr.: Einrichtung einer Fahrradstraße	?::projected 9569,11631 9559,117
 # 
 #: by: https://www.infravelo.de/projekt/stralauer-platz/ (4. Quartal 2022 - 3. Quartal 2023)
 #: XXX südliche Fahrbahn noch 2022, nördliche 2023
+#: last_checked: 2022-11-09
 #: next_check: 2022-12-31
 Stralauer Platz: geschützte Radspuren	?::projected 12180,11657 12497,11459
 # 
@@ -8515,7 +8517,9 @@ Bebauungsplan 12-68: wird der bestehende Weg "aufgewertet"; entsteht eine offizi
 #: XXX außerdem muss die Grünfläche (oder eher Brache hier) verkleinert werden
 #: XXX Bebauungsplan XVI-58: Planstraße
 #: XXX Privatstraße; Name: Clara-Müller-Jahnke-Str. (Berlin.coords.data-Eintrag fehlt, PLZ=12589)
-#: osm_watch: way id="264953674" version="8"
+# REMOVED (die anderen Watches sind besser) --- #: osm_watch: way id="264953674" version="8"
+#: osm_watch: way id="1066944414" version="2"
+#: osm_watch: way id="1111504176" version="2"
 #: last_checked: 2022-05-11
 #: check_frequency: 360d
 #: next_check: 2023-06-01
@@ -8728,7 +8732,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036570366892/570366892/00528691/91-Anlagen/02/VzK_0226_VI_Anlage_42-2022-Anlage-B-Plan-I-32a.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_16_0977_1032_online.pdf (Einziehung einer Grünanlage)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/spreeuferweg-mitte-kreuzberg.800/post-18457
-#: last_checked: 2022-08-26
+#: last_checked: 2022-11-09
 #: check_frequency: 90d
 Uferweg geplant	?::projected 11981,11578 11821,11733 11676,11839 11375,11994
 # 
