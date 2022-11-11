@@ -563,7 +563,7 @@ Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 Turmstr.: Bauarbeiten, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 6692,13333 6674,13332 6535,13327 6377,13321
 # REMOVED (hier nicht) --- Turmstr.: Bauarbeiten, Engstellen, teilweise Führung des Radwegs über den engen Gehweg	q2+::inwork; 6377,13321 6228,13324
 #: osm_watch: way id="30195541" version="28"
-#: last_checked: 2022-10-20 (bahninfo-forum)
+#: last_checked: 2022-11-11 (bahninfo-forum)
 Turmstr.: Bauarbeiten, Engstellen, Umweg über den Kleinen Tiergarten	q3::inwork; 5956,13330 6011,13330 6105,13328 6115,13328 6228,13324
 #: last_checked ^^^
 #: last_checked: 2022-10-16 (bahninfo-forum)
@@ -611,14 +611,14 @@ Alt-Moabit: Bauarbeiten, Umwege	q3::inwork; 7422,13012 7346,13022
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/bundesallee-13-14-pariser-str.599/page-5#post-17417
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
-#: last_checked: 2022-10-29 (webcam)
+#: last_checked: 2022-11-06 (architektur-urbanistik)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
 # 
 #: next_check_id: PARISER-2021
 #: by: https://www.tagesspiegel.de/berlin/kreative-loesungen-fuer-den-berliner-radverkehr-bezirk-stellt-poller-am-kudamm-auf/25685748.html
-#: last_checked: 2022-10-28
+#: last_checked: 2022-11-06 (architektur-urbanistik)
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2022-10-01
 Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 5423,9932 5382,9942
@@ -749,7 +749,7 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 #: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023
 #: XXX Einbahnstraßenregelung nach den Bauarbeiten wiederherstellen
 #: also_indoor: traffic (G)
-#: last_checked: 2022-11-06
+#: last_checked: 2022-11-11
 #: check_frequency: 90d
 #: next_check: 2023-10-31
 Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,12420 15457,12449
@@ -4275,6 +4275,7 @@ Neukirchstr.: einige Fußgänger	q1 12751,18401 12885,18329
 (Ernst-Lemmer-Ring - Buschgrabenweg): gemeinsamer Fuß- und Radweg, Bordstein am südlichen Ende	q3 -31,1606 0,1503
 #: note: am westlichen Ende explizites Geh+Radwegzeichen, am östlichen Ende nur ein Grünanlagen-Schild ohne Zusatzschilder
 (Türksteinweg - Jänickestr.): einige Fußgänger, schmal	q2 1372,1208 1416,1228 1458,1266 1530,1282 1600,1262 1702,1278
+(Weg im Altenhofer Dreieck - Landsberger Allee): einige Fußgänger	q2 15580,14307 15588,14279
 # 
 ######################### User Contributions #################################
 # 
@@ -6111,6 +6112,7 @@ Verlängerte Schulzendorfer Str.: Fußgänger	q1 2150,22464 2015,22435 1834,22421 1
 #: by: ^^^
 # 
 #: by: mapillary: vvv
+Vulkanstr./Landsberger Allee - Altenhofer Str.: schmal	q2 15796,14310 15791,14320 15699,14350
 (Amselhainer Weg - Hirschfelder Weg): Fußgänger	q2 21886,15594 21892,15637
 (Bollersdorfer Weg - Amselhainer Weg): Fußgänger	q2 21849,15404 21860,15458
 (Rosenthaler Weg - Aubertstr.): einige Fußgänger	q1 11747,22496 11278,22848 11220,22886

@@ -1194,7 +1194,7 @@ Alt-Moabit - Invalidenstr.	1no 7415,13060 7422,13012
 (Puschkinallee - Elsenstr.)	1 14244,9812 14250,9756 14271,9712
 #: next_check_id: PARKAUE-2022
 #: XXX wiederherstellen! (1no -> 1s:q4)
-#: last_checked: 2022-09-27
+#: last_checked: 2022-11-11
 #: next_check: 2023-10-31
 Parkaue	1no 15406,12444 15408,12394 15370,12264
 # 
@@ -1929,7 +1929,7 @@ Falkenseer Chaussee: Mittelstreifen	3nocross -5036,15625 -5153,15658 -5370,15721
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20822,14594 20868,14698 20944,14840
 Landsberger Allee: Mittelstreifen	3nocross 14218,13834 14291,13862 14343,13882
 Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20532,15564 20580,15586
-Landsberger Allee: Mittelstreifen	3nocross 15256,14237 15430,14262 15850,14308
+Landsberger Allee: Mittelstreifen	3nocross 15256,14237 15430,14262 15588,14279 15850,14308
 Alt-Kaulsdorf: Mittelstreifen	3nocross 22483,11261 22756,11261 22937,11265
 Alt-Kaulsdorf: Mittelstreifen	3nocross 23113,11262 23362,11263 23447,11264 23648,11265
 Alt-Kaulsdorf: Mittelstreifen	3nocross 22937,11265 22996,11264 23113,11262
@@ -2695,7 +2695,10 @@ tragen (einige Stufen)	0:15 -18612,4568
 tragen (Treppe)	0:30 -18875,5375
 tragen (Treppe)	0:30 -18860,5378
 tragen (eine Stufe) oder wilden Pfad benutzen	0:5 21660,5424
+#: next_check_id: MACHANDELWEG-2022
 #: add_fragezeichen Wie viele Stufen sind hier?
+#: XXX Bleibt es bei der Treppe nach den Bauarbeiten?
+#: next_check: 2023-03-17
 tragen	0:30 -45,12243
 tragen (Treppe, 14 Stufen)	0:25 -1667,16828
 #
@@ -3540,6 +3543,7 @@ Schlesischer Busch - Landwehrkanal: Bauarbeiten, Weg ist gesperrt	2::inwork 1333
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1240151.php
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9551 (Bebauungsplan XVII-9-1, BerlinCampus I)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036/ekgf3qoJIrr9337BpG4iMbZ0LD6NRaRRMlLcP8ms/QGmTBUWW/94-Anlagen/02/161-2022-01BPlanXVII-9-1AuswertungderBeteilig.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_45_3033_3096_online.pdf (Teilung (nördlicher Teil -> XVII-9-1a) und Auslegung)
 #: osm_watch: way id="1086484458" version="1"
 #: osm_watch: way id="36780316" version="10"
 #: last_checked: 2022-10-09

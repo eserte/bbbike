@@ -878,7 +878,7 @@ teilweise mit Leitboys geschützt	RW4; 14523,12183 14621,12168 14709,12156 14854,
 #: note ^^^
 # REMOVED --- #: next_check_id: FRANKFURTER-2021 --- #: XXX Bauarbeiten, provisorische Radspur bis kurz vor der Gürtelstr., danach entweder ein erneuerter Bürgersteigradweg oder eine Radspur; mittlerweile existiert wieder eine Markierung auf dem Bürgersteig --- #: source_id: viz2021:13.471852,52.513916,22.06.2021,07:00 (bis 31.03.2022) (mittlerweile: 30.04.2022) (inaktiv) --- #: last_checked: 2022-04-03 --- # REMOVED --- #: check_frequency: 7d --- # REMOVED --- #: next_check: 2022-04-30 --- #: next_check: 2022-04-06 ---	RW4; 14926,12129 14994,12121 15117,12106 15361,12071
 #: XXX wird hier auch eine Radspur entstehen?
-#: last_checked: 2022-11-06
+#: last_checked: 2022-11-11
 #: check_frequency: 60d
 	RW2; 14994,12121 15117,12106 15361,12071
 # 
@@ -1811,12 +1811,14 @@ Busspur ist immer gültig	RW5;RW5 9934,12420 9858,12410
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-09-19 vvv
 provisorische Busspur	RW5; 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506
-provisorische Busspur	RW5; 10176,12506 10155,12494 10063,12438 10024,12431 9984,12426 9934,12420
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
 # 
+Busspur ist immer gültig	RW5; 10176,12506 10155,12494 10063,12438
+Radspur	RW3; 10063,12438 10024,12431 9984,12426
+Busspur ist immer gültig	RW5; 9984,12426 9934,12420
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
 # 
 # REMOVED (weitgehend fertiggestellt) --- #: next_check_id: UDLU5-2014 --- #: XXX Markierung in Richtung Westen ist nur provisorisch; Richtung Osten fehlt sie fast komplett --- #: source_id: IM_018997 --- #: source_id: IM_023987 --- #: source_id: IM_025933 --- #: source_id: 2147342831 (bis Ende 2020) --- #: osm_watch: way id="342968607" version="15" --- #: osm_watch: way id="461526152" version="7" --- #: last_checked: 2020-11-19 --- #: check_frequency: 10d
@@ -3336,9 +3338,9 @@ teilweise schlecht asphaltierter Radweg	RW1;RW2 14653,15738 14686,15608
 teilweise schlecht asphaltierter Radweg	RW1;RW1 14686,15608 14828,15050 14843,15007
 teilweise schlecht asphaltierter Radweg	RW1;RW2 14843,15007 14959,14752
 asphaltiert	RW2;RW2 14959,14752 15066,14579
-teilweise Verbundsteinpflaster, teilweise alter Asphalt, Wurzelschäden	RW2; 14006,13761 14218,13834 14291,13862 14343,13882 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15850,14308
+teilweise Verbundsteinpflaster, teilweise alter Asphalt, Wurzelschäden	RW2; 14006,13761 14218,13834 14291,13862 14343,13882 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15588,14279 15850,14308
 neu asphaltiert	RW2; 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390 16852,14412
-neu asphaltiert	RW2; 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14343,13882
+neu asphaltiert	RW2; 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15588,14279 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14343,13882
 Gehwegplatten	RW2; 14343,13882 14291,13862
 Verbundsteinpflaster	RW2; 14291,13862 14218,13834
 alter Asphalt	RW2; 14218,13834 14006,13761
@@ -4967,7 +4969,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: by: https://www.berliner-woche.de/malchow/c-verkehr/planungen-sollen-anfang-2023-endlich-beginnen-baustart-noch-in-weiter-ferne_a352907
 #: by: https://www.bvwp-projekte.de/strasse/B2-G20-BE/B2-G20-BE.html
 #: XXX wird der Radweg verbessert?
-#: last_checked: 2022-09-14 (mapillary)
+#: last_checked: 2022-11-11
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -6273,11 +6275,10 @@ Verbundsteinpflaster	RW1;RW1 17194,3343 17274,3267 17525,3029 17741,2824 17850,2
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-investiert-in-markierungen-sanierung-und-geschuetzte-fahrstreifen_a326888 (Bauarbeiten ab Mitte 2022)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: XXX Asphaltierung des Radwegs vvv
-#: last_checked: 2022-01-09 (mapillary) vvv
-#: check_frequency: 300d vvv
+#: last_checked: 2022-11-11 vvv
+#: check_frequency: 120d vvv
 #: next_check: 2023-09-30 vvv
-	RW1; 16718,18204 16905,17949 16981,17855
-	RW2; 16981,17855 17159,17631
+Beton, teilweise Verbundsteinpflaster, an Einmündungen als Radspur geführt	RW2; 16718,18204 16905,17949 16981,17855 17159,17631
 #: check_frequency ^^^
 #: next_check ^^^
 #: last_checked ^^^

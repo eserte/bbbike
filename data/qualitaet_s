@@ -8215,7 +8215,7 @@ Richard-Sorge-Str. [Wohngebiet]: Verbundsteinpflaster	Q1 13168,13125 13126,13104
 Richard-Sorge-Str. [Wohngebiet]: Verbundsteinpflaster	Q1 13168,13013 13126,13104 13103,13153
 Matenzeile: Beton	Q0 17365,17632 17474,17478 17582,17335 17714,17285
 (Vulkanstr./Landsberger Allee - Große-Leege-Str.): Verbundsteinpflaster	Q1 15923,14334 15922,14344 15920,14357
-(Parkplatz an der Altenhofer Str.): Beton	Q0 15681,14369 15516,14445 15367,14512
+(Parkplatz an der Altenhofer Str.): Beton	Q0 15675,14360 15516,14445 15367,14512
 (Weg zum Hohenschönhauser Tor): Asphalt	Q0 15367,14512 15225,14545
 (Anlieferung Hohenschönhauser Tor): Verbundsteinpflaster	Q1 15120,14481 15225,14545 15174,14638
 (Weißenseer Weg/Landsberger Allee - Park am Fennpfuhl): Betonplatten	Q1 15256,14237 15204,14087
@@ -8775,7 +8775,7 @@ Schweriner Ring [9-19 ungerade]: Beton	Q0 17444,19115 17259,19121
 (Am Berl - Weg zum Hechtgraben): Beton	Q0 16793,18809 16743,18892 16757,18910
 (Weg zum Hechtgraben): Asphalt	Q0 16757,18910 16780,18930 16784,18955 16734,19033 16694,19042 16665,19021
 (Weg auf dem Lärmschutzwall): unbefestigter Weg, teilweise Schotter	Q2 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
-(Zingster Str. - Wartenberger Weg): unbefestigter Pfad	Q2 16358,18687 16325,18796
+(Zingster Str. - Wartenberger Weg): Asphalt	Q0 16358,18687 16325,18796
 Zingster Str.: Beton	Q0 16358,18687 16445,18571 16534,18457 16583,18386
 (entlang der Stadtbahn): Verbundsteinpflaster	Q1 10117,12973 10004,12966 9930,12947
 Lentzeallee [Stichstraße]: Verbundsteinpflaster	Q1 3165,6939 3190,7047
@@ -9035,7 +9035,8 @@ Sella-Hasse-Str.: Beton	Q0 20840,16777 20734,16819
 (Max-Herrmann-Str. - Ludwig-Renn-Str.): Verbundsteinpflaster	Q1 21077,16710 21019,16698 21011,16700
 Walter-Felsenstein-Str.: Asphalt	Q0 20792,16951 20770,16901 20734,16819 20617,16614
 (Walter-Felsenstein-Str. - Raoul-Wallenberg-Str.): Beton	Q0 20617,16614 20547,16485 20523,16469 20487,16392 20474,16363 20456,16356 20389,16209 20372,16173
-Marzahner Promenade: Beton-	Q0 20610,15993 20628,15981 20644,16002 20761,15940 20732,15868 20693,15758 20667,15721 20526,15657 20226,15512 19960,15337 19875,15324 19768,15361 19681,15405
+Marzahner Promenade: Beton	Q0 20610,15993 20628,15981 20644,16002 20761,15940 20732,15868 20693,15758 20667,15721 20526,15657 20226,15512
+Marzahner Promenade: Beton	Q0 20226,15512 19960,15337 19875,15324 19768,15361 19681,15405
 (Raoul-Wallenberg-Str. - Marzahner Promenade): Beton	Q0 20832,15981 20788,15968 20761,15940
 (Marzahner Promenade - Landsberger Allee): Verbundsteinpflaster/Betonplatten	Q1 20693,15758 20703,15755 20715,15751 20719,15749
 (Raoul-Wallenberg-Str. - Landsberger Allee): Asphalt	Q0 20731,15742 20733,15657
@@ -11083,6 +11084,8 @@ Blücherstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 4018,699 4069,734 41
 (Zufahrt Bhf. Ahrensfelde): Asphalt	Q0 21165,18715 21199,18643
 (Zufahrt Bhf. Ahrensfelde): Verbundsteinpflaster	Q1 21199,18643 21137,18520
 (Zufahrt Bhf. Ahrensfelde): Beton	Q1 21309,18626 21285,18637 21224,18519 21251,18508
+(Weg im Altenhofer Dreieck): Asphalt	Q0 15500,14416 15514,14398 15545,14328 15580,14307 15624,14330 15696,14321 15709,14332 15699,14350
+(Weg im Altenhofer Dreieck - Landsberger Allee): Kleinsteinpflaster	Q1 15580,14307 15588,14279
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11921,7 +11924,8 @@ Hoyerswerdaer Str.: Asphalt	Q0 25045,14946 25186,14987 25284,14940 25295,14876 2
 Rotkamp: gute Betonstraße	Q0 17760,17682 17650,17605 17474,17478 17358,17400
 Baikalstr.: mäßiger Beton	Q1 17479,10452 17255,10510
 Baikalstr.: mäßiger Beton	Q1 17210,10350 17255,10510 17284,10616
-Rüdickenstr.: gute Betonplattenstraße	Q0 17159,17631 17186,17593 17264,17489 17397,17310 17422,17288 17486,17266 17582,17335 17729,17448
+Rüdickenstr.: Asphalt	Q0 17159,17631 17186,17593
+Rüdickenstr.: gute Betonplattenstraße	Q0 17186,17593 17264,17489 17397,17310 17422,17288 17486,17266 17582,17335 17729,17448
 (Tränkegraben - Rummelsburger Str.): Beton	Q0 17249,10702 17244,10737 17261,10827 17257,10875
 Bühler Weg: Asphalt	Q0 11216,1293 11250,1189 11636,955 11681,1031
 Kirchstr.: Asphalt	Q0 600,2922 758,2870
@@ -18073,6 +18077,7 @@ Löwenstammstr.: Asphalt	Q0 -7961,15552 -7865,15867
 Leopoldstr. (Lichtenberg): Kopfsteinpflaster	Q2 15945,10984 16192,10907 16349,10860 16425,10839
 Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
+Vulkanstr./Landsberger Allee - Altenhofer Str.: unbefestigter Weg	Q2 15796,14310 15791,14320 15699,14350
 (Rampe Bitterfelder Brücke): Asphalt	Q0 20409,16486 20389,16502 20343,16516 20328,16546
 (Rampe Bitterfelder Brücke): Asphalt	Q0 20354,16563 20336,16581 20297,16587 20276,16563 20267,16539 20276,16519 20296,16512 20342,16499
 (Rampe Bitterfelder Brücke - Märkische Allee): Asphalt	Q0 20267,16539 20242,16543

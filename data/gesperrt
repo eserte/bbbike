@@ -1456,9 +1456,11 @@ Landsberger Allee -> Oderbruchstr.: Mittelstreifen	3::igndisp 14218,13834 14291,
 Mittelstreifen	3nocross::ignrte 20260,15434 20532,15564 20580,15586
 Landsberger Allee -> Rebhuhnweg: Mittelstreifen	3::igndisp 20580,15586 20532,15564 20550,15551
 Rebhuhnweg -> Landsberger Allee: Mittelstreifen	3::igndisp 20550,15551 20532,15564 20260,15434
-Mittelstreifen	3nocross::ignrte 15256,14237 15430,14262 15850,14308
+Mittelstreifen	3nocross::ignrte 15256,14237 15430,14262 15588,14279 15850,14308
 Landsberger Allee -> Mittelstr./Altenhofer Str.: Mittelstreifen	3::igndisp 15256,14237 15430,14262 15430,14272
-Mittelstr./Altenhofer Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 15430,14272 15430,14262 15850,14308
+Mittelstr./Altenhofer Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 15430,14272 15430,14262 15588,14279
+Landsberger Allee -> Weg im Altenhofer Dreieck: Mittelstreifen	3::igndisp 15430,14262 15588,14279 15580,14307
+Weg im Altenhofer Dreieck -> Landsberger Allee: Mittelstreifen	3::igndisp 15580,14307 15588,14279 15850,14308
 Mittelstreifen	3nocross::ignrte 22483,11261 22756,11261 22937,11265
 Alt-Kaulsdorf -> Adolfstr.: Mittelstreifen	3::igndisp 22483,11261 22756,11261 22751,11381
 Adolfstr. -> Alt-Kaulsdorf: Mittelstreifen	3::igndisp 22751,11381 22756,11261 22937,11265

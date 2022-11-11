@@ -26733,9 +26733,9 @@ EOF
 	3 6122,10925 6145,10975 6266,10927
 EOF
      },
-     { from  => $isodate2epoch->("2022-07-19 00:00:00"), # $isodate2epoch->("2021-12-01 00:00:00"), # $isodate2epoch->("2021-08-30 00:00:00"), # 
-       until => $isodate2epoch->("2022-07-20 01:00:00"), # $isodate2epoch->("2021-12-02 21:00:00"), # $isodate2epoch->("2021-08-31 16:30:00"), # 
-       text  => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2022 von 12:00 bis 20:00 Uhr',
+     { from  => $isodate2epoch->("2022-11-11 00:00:00"), # $isodate2epoch->("2021-12-01 00:00:00"), # $isodate2epoch->("2021-08-30 00:00:00"), # 
+       until => $isodate2epoch->("2022-11-12 18:00:00"), # $isodate2epoch->("2021-12-02 21:00:00"), # $isodate2epoch->("2021-08-31 16:30:00"), # 
+       text  => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 12. November 2022 von 08:00 bis 18:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
        data  => <<EOF,
@@ -26748,6 +26748,7 @@ EOF
 #: by: https://viz.berlin.de/2021/10/verkehrsvorschau-13102021/ (Erwähnung des Großes Zapfenstreichs)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Großer Zapfenstreich für Merkel)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_28_1693_1828_online.pdf (feierliches Gelöbnis 2022)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_45_3033_3096_online.pdf (feierliches Gelöbnis 2022)
 Hildebrandstr.	2::temp 7435,11514 7322,11177
 Stauffenbergstr.	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
 Reichpietschufer	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
@@ -34257,7 +34258,7 @@ EOF
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-11-08 vvv
+#: last_checked: 2022-11-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -36235,9 +36236,8 @@ EOF
        text  => 'Oberseestr.: Fahrbahn an der Einmündung Degnerstr. gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: note: Gehweg scheint auch gesperrt zu sein
 #: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
-#: last_checked: 2022-09-11 (mapillary)
+#: last_checked: 2022-11-11
 #: check_frequency: 120d
 	q3::inwork 16615,15737 16537,15827
 EOF
@@ -36401,8 +36401,9 @@ EOF
 EOF
      },
      { from  => 1662271200, # 2022-09-04 08:00
-       until => 1668178800, # 2022-11-11 16:00
-       text  => 'Summter Chaussee: Straße gesperrt, 05.09.2022 - 11.11.2022',
+       until => $isodate2epoch->("2022-12-09 16:00:00"), # 1668178800, # 2022-11-11 16:00
+       text  => 'Summter Chaussee: Straße gesperrt, 05.09.2022 - 09.12
+.2022',
        type  => 'gesperrt',
        source_id => 'LS/221-E/22/115',
        data  => <<EOF,
@@ -36670,6 +36671,7 @@ EOF
        text  => 'Rossitter Platz - Machandelweg: wegen Bauarbeiten ist der Durchgang voraussichtlich vom 7.11.2022 bis zum 17.3.2023 komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: MACHANDELWEG-2022
 #: by: https://www.youtube.com/watch?v=-UWvhPunrr8 (Sperrung der Fußgängerbrücke wegen Bauarbeiten ab November 2022)
 #: by: https://www.berliner-woche.de/westend/c-bauen/rohbau-fuer-neues-ausbildungszentrum-fertig_a360518 (Haben die Bauarbeiten hier etwas damit zu tun? Fertigstellung Herbst 2023)
 #: by: https://www.bahninfo-forum.de/read.php?9,690942,747836#msg-747836 (vom 7.11.2022 bis zum 17.3.2023?)
@@ -37014,11 +37016,12 @@ EOF
        data  => <<EOF,
 #: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=717652#post717652 (Projektabschluss: 2024-12-31)
 #: by: https://www.rockstonere.com/de/aktuelles/news-details/berlin-rockstone-real-estate-und-gbr-kotek-semel-planen-mit-barbarossadreieck-gemischt-genutztes-gebaeudeensemble-in-schoeneberg/
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/ml48-sch%C3%B6neberg.652/#post-19614
 #: note: Halteverbotsschilder bis 31.12.2023
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr.
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1055654058" version="1"
-#: last_checked: 2022-10-29
+#: last_checked: 2022-11-06 (architektur-urbanistik)
 #: check_frequency: 150d
 #: next_check: 2023-12-31
 	q3::inwork 6447,9661 6348,9541
@@ -37135,6 +37138,15 @@ EOF
        source_id => 'LS/73-H/22/009',
        data  => <<EOF,
 	2::inwork 31494,49225 31482,49109 31482,49046
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Mittelstr./Altenhofer Str. - Landsberger Allee: Verbindung wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2022-11-11
+	2::inwork 15468,14430 15425,14360
 EOF
      },
     );

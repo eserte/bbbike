@@ -3969,7 +3969,38 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147341611
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_28_2389_2480_online.pdf (2021)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_34_2821_2896_online.pdf (Großer Zapfenstreich 2021)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_35_2897_2964_online.pdf (Aufhebung der letzten Einschränkung)
+#: by: https://www.bmvg.de/de/presse/grosser-zapfenstreich-zur-wuerdigung-einsatz-afghanistan-5181746 (Verschiebung, noch kein neuer Termin)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_42_3793_3876_online.pdf (Großer Zapfenstreich 2021, neuer Termin)
+#: by: https://viz.berlin.de/2021/10/verkehrsvorschau-13102021/ (Erwähnung des Großes Zapfenstreichs)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2021_51_4697_4784_online.pdf (Großer Zapfenstreich für Merkel)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_28_1693_1828_online.pdf (feierliches Gelöbnis 2022)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_45_3033_3096_online.pdf (feierliches Gelöbnis 2022)
+Hildebrandstr.	2::temp 7435,11514 7322,11177
+Stauffenbergstr.	2::temp 7579,11032 7595,11086 7665,11353 7717,11540
+Reichpietschufer	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
+Lützowufer	2::temp 7089,11073 7248,11143 7461,11051 7579,11032
+Hiroshimasteg	2::temp 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7248,11143
+# REMOVED --- Hiroshimastr.	2::temp 7253,11208 7356,11517
+# REMOVED ---	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
+# REMOVED ---	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
+# REMOVED ---	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
+# REMOVED ---	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7233,11189 7160,11186 7135,11171
+# REMOVED ---	2::temp 7665,11353 7745,11332
+# REMOVED ---	2::temp 7745,11332 7690,11108
+# REMOVED --- Herkulesufer	2::temp 7595,11086 7575,11076 7252,11188
+',
+         'from' => 1668121200,
+         'id' => 2875,
+         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
+         'text' => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 12. November 2022 von 08:00 bis 18:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1668272400
+       },
        undef,
        undef,
        undef,
@@ -5300,7 +5331,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-11-08 vvv
+#: last_checked: 2022-11-11 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -6245,9 +6276,8 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
          'until' => 1671120000
        },
        {
-         'data' => '#: note: Gehweg scheint auch gesperrt zu sein
-#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
-#: last_checked: 2022-09-11 (mapillary)
+         'data' => '#: by: https://www.goellner-architekten.de/projekte-1/2017-degner-stra%C3%9Fe/
+#: last_checked: 2022-11-11
 #: check_frequency: 120d
 	q3::inwork 16615,15737 16537,15827
 ',
@@ -6383,9 +6413,10 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'from' => 1662271200,
          'id' => 3625,
          'source_id' => 'LS/221-E/22/115',
-         'text' => 'Summter Chaussee: Straße gesperrt, 05.09.2022 - 11.11.2022',
+         'text' => 'Summter Chaussee: Straße gesperrt, 05.09.2022 - 09.12
+.2022',
          'type' => 'gesperrt',
-         'until' => 1668178800
+         'until' => 1670598000
        },
        {
          'data' => '#: next_check_id: ALTEPOTSDAMER-2022
@@ -6600,7 +6631,8 @@ Friedrichstr.	q4::inwork 9212,13471 9225,13389
          'until' => undef
        },
        {
-         'data' => '#: by: https://www.youtube.com/watch?v=-UWvhPunrr8 (Sperrung der Fußgängerbrücke wegen Bauarbeiten ab November 2022)
+         'data' => '#: next_check_id: MACHANDELWEG-2022
+#: by: https://www.youtube.com/watch?v=-UWvhPunrr8 (Sperrung der Fußgängerbrücke wegen Bauarbeiten ab November 2022)
 #: by: https://www.berliner-woche.de/westend/c-bauen/rohbau-fuer-neues-ausbildungszentrum-fertig_a360518 (Haben die Bauarbeiten hier etwas damit zu tun? Fertigstellung Herbst 2023)
 #: by: https://www.bahninfo-forum.de/read.php?9,690942,747836#msg-747836 (vom 7.11.2022 bis zum 17.3.2023?)
 #: by: https://www.bahninfo-forum.de/read.php?9,748153,748153#msg-748153
@@ -6895,11 +6927,12 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        {
          'data' => '#: by: https://www.deutsches-architekturforum.de/thread/11061-tempelhof-sch%C3%B6neberg-kleinere-projekte/?postID=717652#post717652 (Projektabschluss: 2024-12-31)
 #: by: https://www.rockstonere.com/de/aktuelles/news-details/berlin-rockstone-real-estate-und-gbr-kotek-semel-planen-mit-barbarossadreieck-gemischt-genutztes-gebaeudeensemble-in-schoeneberg/
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/ml48-sch%C3%B6neberg.652/#post-19614
 #: note: Halteverbotsschilder bis 31.12.2023
 #: note: Außerdem Bauschild der Wasserbetriebe, bis November 2023; es gibt auch kleinere Einschränkungen an den Kreuzungen der Barbarossastr.
 #: also_indoor: traffic (B)
 #: osm_watch: way id="1055654058" version="1"
-#: last_checked: 2022-10-29
+#: last_checked: 2022-11-06 (architektur-urbanistik)
 #: check_frequency: 150d
 #: next_check: 2023-12-31
 	q3::inwork 6447,9661 6348,9541
@@ -7015,6 +7048,16 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'text' => 'Eberswalde, Altenhofer Str.: Sperrung an der Brücke über den Finowkanal, evtl. sind auch Radfahrer betroffen, 08.11.2022 08:00 Uhr bis 22.11.2022 15:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1669125600
+       },
+       {
+         'data' => '#: last_checked: 2022-11-11
+	2::inwork 15468,14430 15425,14360
+',
+         'from' => undef,
+         'id' => 3681,
+         'text' => 'Mittelstr./Altenhofer Str. - Landsberger Allee: Verbindung wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
