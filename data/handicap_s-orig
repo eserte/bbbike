@@ -271,7 +271,7 @@ Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2022-11-03 vvv
+#: last_checked: 2022-11-11 (daf) vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -388,7 +388,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2022-10-29 vvv
+#: last_checked: 2022-11-11 (daf) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="10"
@@ -930,12 +930,12 @@ Otto-Ostrowski-Str.: Hochbauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg m
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
 #: XXX laut Schild der Wasserbetriebe bis Dezember 2022
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021) (vermutlich inaktiv)
-#: osm_watch: way id="885619857" version="13"
-#: osm_watch: way id="885619858" version="8"
+#: osm_watch: way id="885619857" version="14"
+#: osm_watch: way id="885619858" version="9"
 # REMOVED (wurde entfernt) --- #: note: laut rbbtext bis 31.12.2020
 #: also_indoor: traffic (ex-G,B)
 #: priority: #B
-#: last_checked: 2022-10-15 (osm) vvv
+#: last_checked: 2022-11-12 (osm) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2022-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -3417,7 +3417,7 @@ An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11283,3774 11300,3709 11
 An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11438,3637 11405,3631 11378,3626 11332,3615
 An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11394,3814 11438,3637 11460,3643 11483,3554 11430,3540
 An der Neumark: laut Schild "Schrittgeschwindigkeit"	q2 11405,3631 11430,3540 11437,3508
-(Am Krusenick - An der Filmfabrik): einige Fußgänger	q1 22751,4970 22770,4966 22817,4971
+(Am Krusenick - An der Filmfabrik): einige Fußgänger	q1 22751,4970 22817,4971
 (Gensinger Str. - Alt-Friedrichsfelde): Rampe	q2 19136,11739 19110,11705 19092,11776
 #: note außerdem zu kurz vvv
 (Beruner Str. - Am Biesdorfer Baggersee): einige Fußgänger	q3 20113,10795 20126,10802
@@ -4276,6 +4276,9 @@ Neukirchstr.: einige Fußgänger	q1 12751,18401 12885,18329
 #: note: am westlichen Ende explizites Geh+Radwegzeichen, am östlichen Ende nur ein Grünanlagen-Schild ohne Zusatzschilder
 (Türksteinweg - Jänickestr.): einige Fußgänger, schmal	q2 1372,1208 1416,1228 1458,1266 1530,1282 1600,1262 1702,1278
 (Weg im Altenhofer Dreieck - Landsberger Allee): einige Fußgänger	q2 15580,14307 15588,14279
+(Otto-Krüger-Zeile - Wattstr.): schmale Straße	q1 17484,7087 17571,7157 17641,7151
+#: note: fast über die gesamte Fahrbahnbreite
+Azaleenstr.: Bodenschwelle	q1 23443,4524 23491,4534 23536,4543
 # 
 ######################### User Contributions #################################
 # 

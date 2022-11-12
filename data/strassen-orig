@@ -5956,7 +5956,7 @@ Segelfliegerdamm	H 17490,3630 17522,3653 17552,3675 17585,3745 17592,3901 17607,
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5033
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036590665323/590665323/00106020/20-Anlagen/04/B0932SB.pdf (Ablehnung)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_42_4657_4844_online.pdf (Widmung von Straßenland)
-#: osm_watch: way id="40571026" version="10"
+#: osm_watch: way id="40571026" version="12"
 #: last_checked: 2022-05-14 (mapillary)
 #: check_frequency: 360d
 Segelfliegerdamm [Stichstraße]	N 17592,3901 17782,3880
@@ -6084,7 +6084,7 @@ Karlshorster Str. (Niederschöneweide)	H 17160,6239 17231,6179 17293,6230 17432,6
 Siemensstr. (Oberschöneweide)	H 17432,6352 17492,6462 17528,6502 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 Wattstr. (Oberschöneweide)	NN 17681,7589 17676,7555
 Wattstr. (Oberschöneweide)	N 17676,7555 17669,7515 17647,7280
-Wattstr. (Oberschöneweide)	N 17620,7259 17644,7219 17632,6930 17652,6828 17766,6616
+Wattstr. (Oberschöneweide)	N 17620,7259 17644,7219 17641,7151 17632,6930 17652,6828 17766,6616
 # REMOVED (möglicherweise dauerhaft gesperrt) --- (Wattstr./Siemensstr. - Wilhelminenhofstr.)	N 17766,6616 17801,6554 17800,6504
 Grenzweg (Oberschöneweide)	N 17295,7328 17475,7451 17566,7485
 (Heckenweg)	N 17566,7485 17669,7515
@@ -6098,6 +6098,8 @@ Fritz-Kirsch-Zeile	N 17644,7219 17684,7233 17845,6986
 Helmholtzstr. (Oberschöneweide)	N 17359,6799 17459,6854 17574,6908 17632,6930 17763,6960 17845,6986 17919,6968
 Mentelinstr.	N 17847,7356 17833,7351 17747,7322 17647,7280 17620,7259 17456,7132 17352,7051
 Otto-Krüger-Zeile	N 17456,7132 17484,7087 17552,6959 17574,6908
+#: osm.highway: service
+(Otto-Krüger-Zeile - Wattstr.)	N 17484,7087 17571,7157 17641,7151
 Fuststr.	N 17934,7029 17823,7203 17747,7322
 Tabbertstr.	N 17352,7051 17258,6992 17359,6799 17418,6702 17528,6502
 Kunheimstr.	N 17510,6751 17418,6702
@@ -6980,16 +6982,18 @@ Katzengraben	NN 22439,4838 22433,4887
 #: alias: Krusenickbrücke
 Katzengrabensteg	NN 22433,4887 22484,4868 22581,4932
 (Katzengrabensteg - Bellevuepark)	NN 22581,4932 22632,4958 22726,5328
-Am Krusenick	N 22735,5328 22737,5278 22751,4970 22754,4919 22705,4874
+Am Krusenick	N 22735,5328 22737,5278 22742,5177 22751,4970 22752,4957 22754,4919 22705,4874
 Am Krusenick	N 22705,4874 22667,4912 22652,4966 22751,4970
 Am Krusenick	NN 22632,4958 22652,4966
-An der Filmfabrik	N 22872,5018 22856,5245 22851,5327
+An der Filmfabrik	N 22872,5018 22863,5150 22856,5245 22851,5327
 Am Werksgarten	N 22856,5245 22803,5241
 Am Werksgarten	N 22803,5278 22737,5278
-#: note: am 2013-06-09 noch kein Straßenschild
-Am Filmlager	N 22802,5327 22803,5278 22803,5241 22804,5199
-(Am Krusenick - An der Filmfabrik)	N 22754,4919 22794,4952 22817,4971 22872,5018
-(Am Krusenick - An der Filmfabrik)	NN 22751,4970 22770,4966 22817,4971
+Am Werksgarten	N 22802,5327 22803,5278 22803,5241 22805,5179
+Am Filmlager	N 22742,5177 22805,5179 22813,5178 22816,5148 22825,5032
+Am Filmlager	N 22816,5148 22863,5150
+(Am Krusenick - An der Filmfabrik)	N 22752,4957 22765,4956 22783,4943
+(Am Krusenick - An der Filmfabrik)	N 22754,4919 22783,4943 22794,4952 22817,4971 22872,5018
+(Am Krusenick - An der Filmfabrik)	NN 22751,4970 22817,4971
 (Uferweg)	NN 22705,4874 22673,4812 22606,4862 22581,4932
 (Bellevuepark)	NN 22798,5731 22796,5640 22796,5631 22787,5582
 (Bellevuepark, westlicher Weg)	NN 22787,5582 22733,5569 22701,5428 22657,5328
@@ -15210,7 +15214,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="16"
-#: last_checked: 2022-11-05
+#: last_checked: 2022-11-12
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Betriebsbhf. Rummelsburg - Am Kraatzgraben)	NN 16895,9922 16886,9982 16894,10003 16899,10020 16912,10054
@@ -15594,7 +15598,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="18"
-#: last_checked: 2022-11-05
+#: last_checked: 2022-11-12
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17156,10164
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -20095,10 +20099,10 @@ Am Kaniswall	N 32823,-149 32817,4 32872,128
 (Umleitungsstrecke im Tiergarten)	NN 6164,11947 6132,11984 6024,11978 5925,11943 5900,11913
 # 
 #: next_check_id: PYRAMIDENBRUECKE-2022
-#: last_checked: 2022-10-16
+#: last_checked: 2022-11-12
 #: check_frequency: 180d
 (südliche Behelfsbrücke an der Pyramidenbrücke)	NN 21519,5767 21545,5738 21553,5698 21581,5670 21630,5600 21649,5617
-#: last_checked: 2022-10-16
+#: last_checked: 2022-11-12
 #: check_frequency: 30d
 (Umfahrung Baustelle Pyramidenbrücke)	NN 21651,5730 21666,5705 21632,5670 21605,5687
 # 
