@@ -632,7 +632,7 @@ Pariser Str./Bundesallee: Bauarbeiten, Durchgang verengt	q3::inwork 5461,9923 54
 #: osm_watch: way id="996616282" version="9"
 #: osm_watch: way id="1100696455" version="1"
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2022-11-07 vvv
+#: last_checked: 2022-11-13 vvv
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2022-09-15 vvv
 # REMOVED (hier fertig) --- Weserstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977
@@ -4279,6 +4279,7 @@ Neukirchstr.: einige Fuﬂg‰nger	q1 12751,18401 12885,18329
 (Otto-Kr¸ger-Zeile - Wattstr.): schmale Straﬂe	q1 17484,7087 17571,7157 17641,7151
 #: note: fast ¸ber die gesamte Fahrbahnbreite
 Azaleenstr.: Bodenschwelle	q1 23443,4524 23491,4534 23536,4543
+(entlang der Alten Erpe): einige Fuﬂg‰nger, schmal	q2 22855,5554 22872,5555 22932,5594 22983,5601 23216,5560 23270,5567 23321,5560 23379,5559
 # 
 ######################### User Contributions #################################
 # 
@@ -5453,7 +5454,9 @@ Simpsonweg: enge Straﬂe	q1 10092,-669 9937,-693 9913,-705 9899,-732 9907,-812 98
 #: by: where_are_you_between:
 (Weg am Heidekampgraben - Kiefholzstr., entlang der S-Bahn): teilweise eng/un¸bersichtlich	q1 15373,7212 15422,7265 15468,7291 15579,7316 15609,7347
 #: by: Norbert Rupsch
-Immenweg: eng (einspurig)	q1 6744,4983 6419,5048 6385,4896
+#: confirmed_by: srt
+# REMOVED (hier nicht) --- Immenweg: eng (einspurig)	q1 6744,4983 6529,5026
+Immenweg: eng (einspurig)	q1 6529,5026 6419,5048 6385,4896
 #: by: Ralf Pilgrim:
 #: corrected_by: srt/policy (q2 -> q1)
 Albtalweg: enge Straﬂe	q1 5368,22669 5338,22753 5297,22830 5243,22896

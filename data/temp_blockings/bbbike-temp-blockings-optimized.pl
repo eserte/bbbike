@@ -4215,6 +4215,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://nitter.cz/pic/orig/media%2FFdUeq-VX0AAvumT.jpg
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden)
+#: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
@@ -5239,7 +5240,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: CORONA-2020
 #: note: Marktzeiten sind wohl 9 bis 15 Uhr, Parkverbote (und mögliche Sperrung/Beeinträchtigung) aber länger
 #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv
-#: last_checked: 2022-10-15 vvv
+#: last_checked: 2022-11-13 vvv
 #: check_frequency: 90d vvv
 #: tempex: sa T06-T19 vvv
 	2::temp 9546,9198 9617,9185 9674,9179
@@ -5400,15 +5401,15 @@ Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Trave
          'data' => '#: also_indoor: traffic (ex-B)
 #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: last_checked: 2022-10-16
+#: last_checked: 2022-11-13
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-14
 # REMOVED (hier nicht mehr) ---	q4::inwork 13355,6235 13227,6209 13220,6237
-	q4::inwork 13027,6168 13227,6209
+	q3::inwork 13027,6168 13227,6209
 ',
          'from' => undef,
          'id' => 3496,
-         'text' => 'Jahnstr.: zwischen Priesterweg und Rungiusstr. Bauarbeiten, Fahrbahn kann gesperrt sein (Stand Mitte Oktober 2022: außerhalb der Arbeitszeiten könnte die Durchfahrt möglich sein)',
+         'text' => 'Jahnstr.: zwischen Priesterweg und Rungiusstr. Bauarbeiten, Abschnitt der Fahrbahn kann gesperrt sein (Stand Mitte November 2022: außerhalb der Arbeitszeiten könnte die Durchfahrt möglich sein)',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5632,7 +5633,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: note 3030340 4
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2022-10-15
+#: last_checked: 2022-11-13
 #: check_frequency: 90d
 #: next_check: 2023-05-31
 	q3::inwork 5020,6434 5269,6305
@@ -5798,14 +5799,14 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: osm_watch: way id="975241319" version="4"
 #: osm_watch: way id="970452276" version="3"
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-01
-#: check_frequency: 14d
-# REMOVED ---	q3::inwork; 12805,8194 12873,8218 12911,8232
-	q4::inwork 12873,8218 12911,8232
+#: last_checked: 2022-11-13
+#: check_frequency: 30d
+	q3::inwork; 12805,8194 12873,8218 12911,8232
+# REMOVED ---	q4::inwork 12873,8218 12911,8232
 ',
          'from' => undef,
          'id' => 3537,
-         'text' => 'Ganghoferstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Ganghoferstr.: Einbahnstraße wegen Bauarbeiten, Gültigkeit für Radfahrer unklar',
          'type' => 'handicap',
          'until' => undef
        },
@@ -5887,20 +5888,7 @@ Schubertstr.	2::inwork 21984,6317 21856,6390
          'until' => 1706716800
        },
        undef,
-       {
-         'data' => '#: also_indoor: traffic (B,G)
-#: add_fragezeichen: Sind die Bauarbeiten in der Braillestr. beendet?
-#: last_checked: 2022-09-04
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2022-08-31
-	q4::inwork 4512,5199 4477,5250 4430,5324
-',
-         'from' => 1652642891,
-         'id' => 3552,
-         'text' => 'Braillestr.: Arbeiten der Wasserbetriebe, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: mapillary
@@ -6085,7 +6073,7 @@ Maxim-Gorki-Str. (Königs Wusterhausen): Einbahnstraßenregelung wegen des SEVs	1s
        {
          'data' => '#: XXX einige Halteverbotsschilder bis 1.11.2022, mittlerweile bis 5.11.2022
 #: also_indoor: traffic (ex-H[incomplete],B[incomplete],G[falsch]) vvv
-#: last_checked: 2022-11-01 vvv
+#: last_checked: 2022-11-13 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-11-01 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
@@ -6165,7 +6153,7 @@ Ilsestr.: Sperrung vor der Einmündung	q3::inwork 18037,9195 18070,9292
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/verkehrsberuhigung-im-bergmannkiez-geht-weiter_a349916
 #: also_indoor: traffic vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2022-10-15 vvv
+#: last_checked: 2022-11-13 vvv
 #Fidicinstr. (ab Mehringdamm)	q4::inwork 9224,9053 9295,9047
 #Fidicinstr.	q3::inwork 9295,9047 9459,9019 9654,8991
 Fidicinstr.	q3::inwork 9459,9019 9654,8991 9799,8962
@@ -7008,6 +6996,19 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'from' => undef,
          'id' => 3681,
          'text' => 'Mittelstr./Altenhofer Str. - Landsberger Allee: Verbindung wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: INDENALBOINGARTEN-2022
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2022-11-13
+#: check_frequency: 45d
+	2::inwork 7646,6031 7638,5967
+',
+         'from' => undef,
+         'id' => 3682,
+         'text' => 'In den Alboingärten: Zufahrt zur Eythstr. komplett gesperrt, auch für Radfahrer und Fußgänger, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        }

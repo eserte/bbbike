@@ -1291,7 +1291,7 @@ Waldstr.	1 9961,19513 10002,19418
 #: XXX wieder gesperrt, vermutlich für Aufzugarbeiten
 #: source_id: viz2021:13.440961,52.50069,06.07.2021,07:00 (bis 12.01.2022) (mittlerweile bis 30.6.2022) (bis 31.10.2022) (bis 11.1.2023)
 #: by: https://berliner-abendblatt.de/2022/01/03/viele-u-bahnhoefe-nicht-barrierefrei/ ("in Kürze")
-#: last_checked: 2022-10-28
+#: last_checked: 2022-11-13
 #: check_frequency: 90d
 #: next_check: 2023-01-11
 (Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
@@ -1438,6 +1438,8 @@ Bitterfelder Str. (Mittelstreifen)	3nocross::ignrte 20230,16560 20328,16546 2035
 Zufahrt Bhf. Ahrensfelde	1 21251,18508 21224,18519 21285,18637 21309,18626
 # 
 Am Krusenick	1 22754,4919 22752,4957 22765,4956 22783,4943 22754,4919
+# 
+(Albrechtstr. - Neue Filandastr.)	1 5610,5227 5616,5182 5635,5145
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -3555,7 +3557,7 @@ Hauptstr. - Rummelsburger Ufer: wegen Hochbauarbeiten gesperrt	2::inwork 16257,9
 # REMOVED --- Hauptstr. - Rummelsburger Ufer: gesperrt, möglicherweise dauerhaft	2::inwork 16178,9861 16049,9749
 # 
 #: next_check_id: AUERDREIECK-2022
-#: last_checked: 2022-11-06
+#: last_checked: 2022-11-13
 Grünfläche Auerdreieck: Bauarbeiten, Weg ist gesperrt	2::inwork 13232,12628 13091,12563
 # 
 #: note: "Referenzfläche", Wald wird sich selber überlassen
@@ -3918,7 +3920,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509 (Fertigstellung zum 30.6.2024 geplant)
 #: by: https://rfr-development.de/projekte/stralauer-allee (hier entsteht ein Bürogebäude)
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2022-11-08
+#: last_checked: 2022-11-13
 #: check_frequency: 360d
 #: next_check: 2024-06-30
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,10157
@@ -3926,7 +3928,7 @@ Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14361,10259 14462,10206 14480,1015
 #: by: wosch
 #: confirmed_by: srt
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2022-11-08
+#: last_checked: 2022-11-13
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 13918,10240 14126,10176 14202,10152 14373,10046
 # 
@@ -4223,7 +4225,7 @@ Wuhletalbrücke: wird neu gebaut	2::inwork 20843,17745 20798,17664 20768,17609 20
 #: XXX Bis wann gehen die Bauarbeiten?
 #: historical_note: früher: Fahrbahn ist gesperrt, Ausweichen auf engen Gehweg, evtl. Buden, Bordsteine
 #: osm_watch: way id="40451054" version="14"
-#: last_checked: 2022-10-23 (krickstadt)
+#: last_checked: 2022-11-12 (krickstadt)
 #: next_check: 2023-03-31
 #: valid: -20230331
 Zufahrt Zentrum Schöneweide: Fahrbahn und Bürgersteig gesperrt	2:inwork 17728,5756 17656,5701

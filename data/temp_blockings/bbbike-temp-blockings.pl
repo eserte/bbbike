@@ -7237,7 +7237,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004721',
        data  => <<EOF,
-	2::inwork 23402,5483 23384,5541 23370,5589 23333,5710
+	2::inwork 23402,5483 23384,5541 23379,5559 23370,5589 23333,5710
 EOF
      },
      { from  => 1171580400, # 2007-02-16 00:00
@@ -12249,7 +12249,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009421',
        data  => <<EOF,
-	2::inwork 23402,5483 23384,5541 23370,5589 23333,5710
+	2::inwork 23402,5483 23384,5541 23379,5559 23370,5589 23333,5710
 EOF
      },
      { from  => $isodate2epoch->("2021-11-11 00:00:00"), # $isodate2epoch->("2019-11-11 08:00:00"), # 1216461600, # 2008-07-19 12:00 # $isodate2epoch->("2021-08-31 00:00:00"), # 
@@ -15414,7 +15414,7 @@ EOF
        text  => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Fürstenwalder Damm vom 27.7. bis zum 10.8.2009',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23384,5541 23402,5483
+	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23379,5559 23384,5541 23402,5483
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00
@@ -15423,7 +15423,7 @@ EOF
        type  => 'handicap',
        # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
        data  => <<EOF,
-	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23384,5541 23402,5483
+	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23379,5559 23384,5541 23402,5483
 EOF
      },
      { from  => 1252879200, # 2009-09-14 00:00
@@ -19552,6 +19552,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8186 (Anfrage)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8213 (Antrag)
 #: by: https://berliner-abendblatt.de/2022/11/10/was-wird-aus-den-neukoellner-maientagen-schausteller-schlagen-alarm/
+#: by: https://berliner-abendblatt.de/2022/11/13/neukoellner-maientage-standort-tempelhof-grundsaetzlich-moeglich/
 #: note: 2021 findet es vermutlich auch nicht statt --- am 27.4.2021 war noch nichts vom Rummelplatz zu sehen
 # REMOVED (vermutlich nicht) --- #: XXX vielleicht Verlegung in die zweite Jahreshälfte? --- #: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
@@ -28360,6 +28361,7 @@ EOF
 #: by: https://nitter.cz/pic/orig/media%2FFdUeq-VX0AAvumT.jpg
 #: source_id: viz2021:13.528029,52.490354,25.08.2022,07:00 (bis 12.9.2022) (bis 23.9.2022) (inaktiv)
 #: source_id: viz2021:13.527268,52.487826,23.09.2022,15:00 (bis 21.8.2023, Umleitung für Radfahrer Richtung Norden)
+#: source_id: viz2021:13.526449,52.486646,14.11.2022,07:00 (Marksburgstraße, nur Kfz-Verkehr betroffen, bis 14.12.2022)
 #: note: Gehweg-Radfahrer-frei-Schilder Richtung Norden an der Rheinsteinstr. bis Waldowallee
 #: note: von der Marksburgstr. und Godesberger Str. ist nur das Rechtsabbiegen Richtung Norden möglich (oder man nimmt die Fußgängerampeln)
 #: note: Einbahnstraßenregelung in der Marksburgstr. zwischen Gundelfinger Str. und Treskowallee aufgehoben
@@ -34042,7 +34044,7 @@ EOF
 #: next_check_id: CORONA-2020
 #: note: Marktzeiten sind wohl 9 bis 15 Uhr, Parkverbote (und mögliche Sperrung/Beeinträchtigung) aber länger
 #: XXX seit Corona ist der Markt auch auf der Arndtstr. --- bleibt das so? vvv
-#: last_checked: 2022-10-15 vvv
+#: last_checked: 2022-11-13 vvv
 #: check_frequency: 90d vvv
 #: tempex: sa T06-T19 vvv
 	2::temp 9546,9198 9617,9185 9674,9179
@@ -34525,17 +34527,17 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Jahnstr.: zwischen Priesterweg und Rungiusstr. Bauarbeiten, Fahrbahn kann gesperrt sein (Stand Mitte Oktober 2022: außerhalb der Arbeitszeiten könnte die Durchfahrt möglich sein)',
+       text  => 'Jahnstr.: zwischen Priesterweg und Rungiusstr. Bauarbeiten, Abschnitt der Fahrbahn kann gesperrt sein (Stand Mitte November 2022: außerhalb der Arbeitszeiten könnte die Durchfahrt möglich sein)',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (ex-B)
 #: note: am 2022-03-07 noch immer Bauarbeiten und Schild "Durchfahrt verboten", allerdings konnten anscheinend sogar Autos durchfahren; am 2022-04-18, 2022-08-05, 2022-09-03, 2022-09-24, 2022-10-16 ebenso; Halteverbotsschilder bis 14.10.2022
 #: add_fragezeichen: Sind die Bauarbeiten bereits beendet?
-#: last_checked: 2022-10-16
+#: last_checked: 2022-11-13
 # REMOVED --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2022-10-14
 # REMOVED (hier nicht mehr) ---	q4::inwork 13355,6235 13227,6209 13220,6237
-	q4::inwork 13027,6168 13227,6209
+	q3::inwork 13027,6168 13227,6209
 EOF
      },
      { from  => undef, # 
@@ -34901,7 +34903,7 @@ EOF
 #: osm_watch: note 3030340 4
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-G,B)
-#: last_checked: 2022-10-15
+#: last_checked: 2022-11-13
 #: check_frequency: 90d
 #: next_check: 2023-05-31
 	q3::inwork 5020,6434 5269,6305
@@ -35146,8 +35148,8 @@ EOF
      },
      { from  => undef, # 
        until => undef, # 1651248083, # undef, # XXX
-#       text  => 'Ganghoferstr.: Einbahnstraße wegen Bauarbeiten, Gültigkeit für Radfahrer unklar',
-       text  => 'Ganghoferstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Ganghoferstr.: Einbahnstraße wegen Bauarbeiten, Gültigkeit für Radfahrer unklar',
+#       text  => 'Ganghoferstr.: Bauarbeiten, Abschnitt der Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/markthalle-101-ehemalige-quellekaufhaus.587/#post-17884
@@ -35157,10 +35159,10 @@ EOF
 #: osm_watch: way id="975241319" version="4"
 #: osm_watch: way id="970452276" version="3"
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-01
-#: check_frequency: 14d
-# REMOVED ---	q3::inwork; 12805,8194 12873,8218 12911,8232
-	q4::inwork 12873,8218 12911,8232
+#: last_checked: 2022-11-13
+#: check_frequency: 30d
+	q3::inwork; 12805,8194 12873,8218 12911,8232
+# REMOVED ---	q4::inwork 12873,8218 12911,8232
 EOF
      },
      { from  => undef, # 
@@ -35360,14 +35362,11 @@ EOF
 EOF
      },
      { from  => 1652642891, # 2022-05-15 21:28
-       until => undef, # 1661983200, # 2022-09-01 00:00
+       until => 1668345697, # undef, # 1661983200, # 2022-09-01 00:00
        text  => 'Braillestr.: Arbeiten der Wasserbetriebe, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (B,G)
-#: add_fragezeichen: Sind die Bauarbeiten in der Braillestr. beendet?
-#: last_checked: 2022-09-04
-#: check_frequency: 60d
+# REMOVED --- #: also_indoor: traffic (B,G) --- #: add_fragezeichen: Sind die Bauarbeiten in der Braillestr. beendet? --- #: last_checked: 2022-09-04 --- #: check_frequency: 60d
 # REMOVED --- #: next_check: 2022-08-31
 	q4::inwork 4512,5199 4477,5250 4430,5324
 EOF
@@ -35877,7 +35876,7 @@ EOF
        data  => <<EOF,
 #: XXX einige Halteverbotsschilder bis 1.11.2022, mittlerweile bis 5.11.2022
 #: also_indoor: traffic (ex-H[incomplete],B[incomplete],G[falsch]) vvv
-#: last_checked: 2022-11-01 vvv
+#: last_checked: 2022-11-13 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2022-11-01 vvv
 	q3::inwork; 13102,8343 12995,8213 12960,8246
@@ -36101,7 +36100,7 @@ EOF
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/verkehrsberuhigung-im-bergmannkiez-geht-weiter_a349916
 #: also_indoor: traffic vvv
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2022-10-15 vvv
+#: last_checked: 2022-11-13 vvv
 #Fidicinstr. (ab Mehringdamm)	q4::inwork 9224,9053 9295,9047
 #Fidicinstr.	q3::inwork 9295,9047 9459,9019 9654,8991
 Fidicinstr.	q3::inwork 9459,9019 9654,8991 9799,8962
@@ -37140,6 +37139,18 @@ EOF
        data  => <<EOF,
 #: last_checked: 2022-11-11
 	2::inwork 15468,14430 15425,14360
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'In den Alboingärten: Zufahrt zur Eythstr. komplett gesperrt, auch für Radfahrer und Fußgänger, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: INDENALBOINGARTEN-2022
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+#: last_checked: 2022-11-13
+#: check_frequency: 45d
+	2::inwork 7646,6031 7638,5967
 EOF
      },
     );

@@ -121,7 +121,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12198,8887
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="18"
-#: last_checked: 2022-11-01
+#: last_checked: 2022-11-13
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -337,7 +337,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223 7225,8219
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-16-12-2020_mit-anhang.pdf (Asphaltierung vorgesehen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll_fahrrat_vom_18.02.2021.pdf (Ampel am Sachsendamm: "man hofft auf eine Umsetzung im Herbst (2021)")
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/gasometer-wird-fast-komplett-ausgebaut_a315870 (Sanierung wird erwähnt)
-#: last_checked: 2022-10-15 vvv
+#: last_checked: 2022-11-13 vvv
 #: check_frequency: 120d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7225,8219 7158,8208 7014,8165 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7014,8165 7158,8208 7225,8219
@@ -2670,7 +2670,7 @@ Bismarcksfelder Str.: Asphalt	Q0 21419,7806 21542,7868 21599,7904
 (Bellevuepark): neuer Asphalt	Q0 22787,5582 22841,5571 22855,5554 22834,5481 22851,5327
 (Friedrichshagener Str. [49A-55] - Bellevuepark): Parkweg	Q1- 22514,5534 22534,5552 22574,5554 22717,5591 22787,5582
 Am Krusenick: guter Asphalt	Q0 22735,5328 22737,5278 22742,5177 22751,4970
-Am Krusenick: Kopfsteinpflaster	Q2 22751,4970 22752,4957 22754,4919
+Am Krusenick: Kopfsteinpflaster	Q2+ 22751,4970 22752,4957 22754,4919
 Am Krusenick: guter Asphalt	Q0 22754,4919 22705,4874
 Am Krusenick: Asphalt	Q0 22705,4874 22667,4912 22652,4966 22751,4970
 Am Krusenick: Asphalt	Q0 22652,4966 22632,4958
@@ -9386,7 +9386,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.273777.php?date=20210405 (Rückbau der unterirdischen Anlagen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1127042.php (Infoveranstaltung am 21.9.2021)
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2022-11-06 vvv
+#: last_checked: 2022-11-13 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -12757,7 +12757,7 @@ In den Alboingärten: Betonpflaster	Q0- 7971,6087 7936,6089 7739,6099 7646,6031
 #: next_check_id: INDENALBOINGARTEN-2022
 #: XXX Bauarbeiten; wird hier später auch Betonpflaster liegen?
 #: osm_watch: way id="962201820" version="10"
-#: last_checked: 2022-09-04
+#: last_checked: 2022-11-13
 #: check_frequency: 60d
 In den Alboingärten: unbefestigte Baustraße	Q2 7646,6031 7638,5967
 (Pieskower Weg - Hanns-Eisler-Str.): Verbundsteinpflaster, einige Aufpflasterungen	Q1 13224,15049 13249,15037 13270,15046 13295,15107 13313,15113 13324,15109
@@ -14792,8 +14792,12 @@ Rue Georges Vallerey: guter Beton	Q0- 4650,21466 4741,21523 4775,21522
 #: confirmed_by: srt (verfeinert: "gute Qualität" -> ...)
 Worpsweder Str.: Asphalt mit leichten Schäden	Q0- 6182,4931 6202,5163
 Wilseder Str.: Asphalt	Q0 6295,5158 6276,4915
-#: confirmed_by: Norbert Rupsch ("asphaltiert")
-Immenweg: Asphalt	Q0 6744,4983 6419,5048 6385,4896
+#: confirmed_by: Norbert Rupsch ("asphaltiert"), srt
+Immenweg: Asphalt	Q0 6744,4983 6529,5026
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Immenweg: Beton mit Schäden	Q1- 6529,5026 6419,5048
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Immenweg: Beton	Q0- 6419,5048 6385,4896
 Hünensteig: Verbundsteinpflaster	Q1 6419,5048 6387,5057 6395,5154 6405,5238 6108,5253
 #: by: ^^^
 # 
@@ -16528,7 +16532,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="8"
-#: last_checked: 2022-07-10
+#: last_checked: 2022-11-13
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4645,6646 4682,6625 4845,6532 4875,6552
 #: confirmed_by: srt
@@ -26532,6 +26536,7 @@ Breitkopfstr.: Asphalt	Q0 7510,18364 7460,18465 7420,18455 7391,18472 7377,18498
 #: by: ^^^^
 # 
 #: by: Susan Leung:
+#: confirmed_by: srt
 #: note: "enge Straße", aber q0
 Filandastr.: Kopfsteinpflaster	Q2 5671,5389 5637,5401 5527,5217
 # 
@@ -30958,6 +30963,7 @@ Curtiusstr. [Stichstraße]: Kopfsteinpflaster	Q2 2965,3823 2915,3905
 #: by ^^^
 # 
 #: by: mapillary, osm: vvv
+(entlang der Alten Erpe): Parkweg	Q1- 22855,5554 22872,5555 22932,5594 22983,5601 23216,5560 23270,5567 23321,5560 23379,5559
 (Rosenthaler Weg - Aubertstr.): Asphalt	Q0 11747,22496 11278,22848 11220,22886
 (Blankenfelder Str. - Goetheweg): Asphalt	Q0 10968,22546 11220,22886 11228,22914 11219,22932 11162,22939
 (Weg im erweiterten Mauerpark): Asphalt	Q0 10235,14934 10215,14977 10192,14967 10129,15130 10075,15307 10052,15429 10044,15487 10009,15618 10070,15626 10127,15463 10233,15147 10274,15024
@@ -31645,4 +31651,11 @@ Einmündungsbereich asphaltiert	Q0 13045,8951
 Einmündungsbereich asphaltiert	Q0 12902,9066
 Einmündungsbereich asphaltiert	Q0 17052,7738
 Kreuzungsbereich mit glattem Kopfsteinpflaster	Q1+ 23651,4467
+Kreuzungsbereich asphaltiert	Q0 12503,6139
+Kreuzungsbereich asphaltiert	Q0 12388,6114
+Kreuzungsbereich asphaltiert	Q0 12263,6086
+Kreuzungsbereich asphaltiert	Q0 12271,6025
+Kreuzungsbereich asphaltiert	Q0 12160,5997
+Einmündungsbereich asphaltiert	Q0 12063,5927
+Kreuzungsbereich asphaltiert	Q0 4682,6625
 #: ignore ^^^
