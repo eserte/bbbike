@@ -16877,7 +16877,7 @@ EOF
        text  => 'Verkehreinschränkungen in der Magdalenenstraße und am Roedeliusplatz bis Mai 2010, Einbahnstraßenregelung in Fahrtrichtung Normannenstraße ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 16159,12301 16158,12191 16127,11950
+	q4::inwork; 16159,12293 16158,12191 16127,11950
 EOF
      },
      { from  => 1255384800, # 2009-10-13 00:00
@@ -26303,9 +26303,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2022-11-08 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-11-09 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 9. November 2022 zwischen 09:15 und 10:15 Uhr',
+     { from  => $isodate2epoch->("2022-11-14 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-11-15 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. November 2022 zwischen 09:15 und 10:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26327,7 +26327,9 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15
-# REMOVED --- #: priority: #A --- #: next_check: 2022-04-20
+#: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15
+#: priority: #A
+#: next_check: 2022-11-16
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::temp -1934,6804 -1854,6898
@@ -30101,8 +30103,8 @@ EOF
 #: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8405 (Anfrage) (mindestens bis 31.12.2022)
 #: also_indoor: traffic (G)
-#: osm_watch: way id="749226300" version="6"
-#: last_checked: 2022-04-08 (osm)
+#: osm_watch: way id="749226300" version="7"
+#: last_checked: 2022-11-14 (osm)
 # REMOVED --- #: check_frequency: 180d
 #: next_check: 2022-12-31
 	2::inwork 3079,5411 3179,5267
@@ -34260,7 +34262,7 @@ EOF
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-11-11 vvv
+#: last_checked: 2022-11-14 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -34974,7 +34976,7 @@ EOF
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
-#: last_checked: 2022-11-01 vvv
+#: last_checked: 2022-11-13 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-12-03 vvv
 #: also_indoor: traffic (G[unvollständig],B) vvv
@@ -35640,10 +35642,10 @@ EOF
 EOF
      },
      { from  => 1655798400, # 2022-06-21 10:00
-       until => $isodate2epoch->("2022-11-15 17:00:00"), # 1661871600, # 2022-08-30 17:00
-       text  => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 15.11.2022 17:00',
+       until => $isodate2epoch->("2022-11-21 17:00:00"), # 1661871600, # 2022-08-30 17:00
+       text  => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 21.11.2022 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.414144,52.572092,22.06.2022,10:00', # (bis 11.11.2022) (bis 15.11.2022)
+       source_id => 'viz2021:13.414144,52.572092,22.06.2022,10:00', # (bis 11.11.2022) (bis 15.11.2022) (bis 21.11.2022)
        data  => <<EOF,
 #: by: https://nitter.net/VIZ_Berlin/status/1539528243316985856#m
 #: by: https://nitter.net/pic/orig/media%2FFV2AstdX0AEWnIn.jpg
@@ -36342,10 +36344,14 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1263481.php (Kreuzung wird komplett gesperrt; Verkehrsumstellung ab 11.11.2022, Bauarbeiten ab 14.11.2022; Dauer zwei Wochen)
 #: by: https://berliner-abendblatt.de/2022/11/10/koepenicker-landstrasse-hier-geht-nichts-mehr/
 #: note: laut rbb nur bis 11.11.2022
-#: source_id: viz2021:13.491071,52.468923,07.09.2022,08:00 (bis 2.11.2022) (bis 23.11.2022)
-#: source_id: viz2021:13.487047,52.465576,12.09.2022,07:00 (bis 23.11.2022)
-#: source_id: viz2021:13.491317,52.469108,10.09.2022,13:00 (bis 23.11.2022)
-#: source_id: viz2021:13.492477,52.468642,10.09.2022,13:00 (bis 23.11.2022)
+#: source_id: viz2021:13.491071,52.468923,07.09.2022,08:00 (bis 2.11.2022) (bis 23.11.2022) (inaktiv)
+#: source_id: viz2021:13.487047,52.465576,12.09.2022,07:00 (bis 23.11.2022) (inaktiv)
+#: source_id: viz2021:13.491317,52.469108,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
+#: source_id: viz2021:13.492477,52.468642,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
+#: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022)
+#: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022)
+#: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022)
+#: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022)
 #: next_check: 2022-12-14
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr.	q3::inwork; 16563,7012 16428,7144
 Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
@@ -36607,12 +36613,14 @@ EOF
        data  => <<EOF,
 #: note: laut rbb
 #: also_indoor: traffic (H,B,G) vvv
-#: XXX Ende der Sperrung? vvv
-#: last_checked: 2022-11-06 vvv
+#: XXX Ende der Sperrung? Halteverbote bis zum 6.12.2022 vvv
+#: last_checked: 2022-11-14 vvv
 #: check_frequency: 14d vvv
+#: next_check: 2022-12-06 vvv
 einige Meter vor der Siegfriedstr. gesperrt, evtl. Bordsteine	q3::inwork 16859,12613 16720,12614
 etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 # REMOVED (hier nicht) ---	q4::inwork 16576,12612 16470,12612 16432,12612 16409,12612
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^

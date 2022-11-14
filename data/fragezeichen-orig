@@ -272,8 +272,8 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?
 #: next_check: 2023-09-01
 Müllerstr.: Radspuren geplant	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586
 # REMOVED (realisiert) --- Müllerstr.: Radspuren geplant	?::projected 7277,15586 7393,15476 7464,15409 7607,15282 7669,15227 7745,15160
-#: osm_watch: way id="374344536" version="7"
-#: osm_watch: way id="374344538" version="5"
+#: osm_watch: way id="374344536" version="8"
+#: osm_watch: way id="374344538" version="6"
 #: last_checked: 2022-11-08
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2023-09-01
@@ -339,7 +339,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: source_id: 2147342170 vvv
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72
 #: osm_watch: way id="336565341" version="12" vvv
-#: last_checked: 2022-11-06 vvv
+#: last_checked: 2022-11-14 vvv
 #: check_frequency: 120d vvv
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 #: check_frequency ^^^
@@ -1091,7 +1091,7 @@ Köllnischer Platz/Grünauer Str.: Einrichtung einer Radverkehrsanlage geplant	?::
 Glienicker Str. - Grünauer Str.: Verbindung wird offiziell + Wegführung durch KGA	?::projected 21617,3287 21826,3129 21865,3095 21967,3102
 # 
 #: XXX Kö.24
-#: osm_watch: way id="23369888" version="16"
+#: osm_watch: way id="23369888" version="17"
 #: osm_watch: way id="875854531" version="1"
 #: last_checked: 2022-08-14
 #: check_frequency: 120d
@@ -1341,8 +1341,8 @@ Blankenfelder Chaussee: Verbesserung -> Radspuren oder Verbesserung des Radwegs?
 # 
 #: XXX zurzeit (April 2019) teilweise eine provisorische Radspur Richtung Süden wegen der Bauarbeiten am ZOB
 #: by: http://www.infravelo.de/projekt/messedamm-2/ (hier: geschützte Radfahrstreifen zwischen Kaiserdamm und Halenseestraße, bis 1. Quartal 2025)
-#: osm_watch: way id="4446501" version="22"
-#: osm_watch: way id="29277856" version="16"
+#: osm_watch: way id="4446501" version="23"
+#: osm_watch: way id="29277856" version="17"
 #: source_id: 2147341315 (inaktiv)
 #: source_id: 2147346776 (Leitungsbau, bis 28.5.2021) (frühzeitig entfernt, inaktiv)
 #: last_checked: 2022-10-08
@@ -1990,9 +1990,10 @@ Schulzendorfer Str.: Asphaltierung	?::inwork 2556,22598 2652,22615
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2022/pressemitteilung.1255100.php (Bauarbeiten: Oktober 2022 - Ende 2022, und zwar der auf der östlichen Seite liegende Radweg; Einbahnstraßenregelung während der Bauarbeiten, offen Richtung Süden)
 #: by: https://berliner-abendblatt.de/2022/10/17/tegel-neuer-radweg-am-borsigdamm/
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/bauarbeiten-an-drei-radwegen_a360914
+#: source_id: viz2021:13.275749,52.577712,14.11.2022,08:00 (bis 23.12.2022)
 #: note: urspründlicher Fertigstellungstermin (siehe alte, nicht mehr verlinkte BVV-Drucksache): 2020
 #: XXX der bei BBBike eingezeichnete Zweirichtungsradweg ist eigentlich ein separater Grünanlagenweg, der für Radfahrer freigegeben ist; sollte vermutlich auch separat eingezeichnet werden
-#: next_check: 2022-12-31
+#: next_check: 2022-12-23
 Borsigdamm: Richtung Norden soll ein baulicher Radweg entstehen, Richtung Süden ein gemeinsamer Geh- und Radweg	?::projected 1528,18971 1472,19165 1450,19336 1463,19417 1509,19693 1557,19765
 #: by: ^^^
 #: by: ^^^
@@ -2318,6 +2319,7 @@ Wasserweg: wird hier asphaltiert werden?	?::projected 15680,8914 15873,8884 1598
 #: by: https://www.infravelo.de/projekt/bulgarische-strasse/ (2. Quartal 2023 - 3. Quartal 2023)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1262785.php (Freigabe als Fahrradstraße Mitte November 2022)
 #: by: https://www.berliner-woche.de/plaenterwald/c-verkehr/fahrradstrasse-fuer-den-r1-entsteht_a363200
+#: osm_watch: way id="33231802" version="21"
 #: XXX Halteverbote bis 30.11.2022
 #: last_checked: 2022-11-12
 # REMOVED --- #: next_check: 2023-09-30
@@ -3816,6 +3818,7 @@ Zillestr./Krumme Str.: Planung einer Fahrradstraße, wo genau?	?::projected 3801,
 #: by: https://www.berliner-zeitung.de/mensch-metropole/unter-den-linden-wird-zur-baustelle-in-mitte-geht-eine-aera-zu-ende-li.190324?pid=true
 #: by: https://berliner-abendblatt.de/2022/01/12/unter-den-linden-arbeiten-haben-begonnen/
 #: by: https://www.berliner-woche.de/mitte/c-bauen/boulevard-unter-den-linden-erneut-nur-einspurig_a333677
+#: by: https://nitter.cz/VIZ_Berlin/status/1592130421860757505#m (in den kommenden Wochen die letzten Arbeiten; 3,25m breiter Radfahrstreifen)
 #: source_id: viz2021:13.383439,52.516688,09.12.2021,08:00 (Fahrbahnsanierung bis 23.1.2022) (mittlerweile bis 11.2.2022) (mittlerweile bis 13.3.2022) (mittlerweile bis 7.4.2022) (und wieder 13.3.2022) (inaktiv)
 #: source_id: viz2021:13.383439,52.516688,11.03.2022,08:00 (bis 7.4.2022) (mittlerweile bis 1.4.2022) (inaktiv)
 #: source_id: viz2021:13.390983,52.517262,21.04.2022,06:00 (bis 20.5.2022) (inaktiv)
@@ -4866,10 +4869,12 @@ Kaiser-Wilhelm-Str.: Leitungsarbeiten, vielleicht wird hier die Bus/Radspur komp
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/in-friedenau-ignorieren-spd-cdu-und-fdp-das-mobilitaetsgesetz_a360809
 #: by: https://www.berliner-woche.de/friedenau/c-verkehr/mehr-parkplaetze-bleiben-erhalten_a360608
 #: by: https://berliner-abendblatt.de/2022/10/18/fahrradstrasse-in-friedenau-kippt-das-verkehrsprojekt/
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/parkplaetze-wichtiger-als-verkehrssicherheit_a363665
+#: by: https://berliner-abendblatt.de/2022/11/14/fahrradstrasse-in-friedenau-radlobby-demonstriert-gegen-mogelpackung/
 #: XXX wird die Vorfahrtsregelung geändert?
 #: XXX Laut infravelo zwei Bauphasen: nördlich Renée-Sintenis-Platz im ersten Halbjahr 2023, südlich im zweiten Halbjahr 2023
 #: osm_watch: way id="83030876" version="16"
-#: osm_watch: way id="133988476" version="13"
+#: osm_watch: way id="133988476" version="15"
 #: last_checked: 2022-11-13
 #: check_frequency: 90d
 #: next_check: 2023-06-30
@@ -5444,7 +5449,7 @@ Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 1
 #: next_check: 2024-06-30
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
 #: osm_watch: way id="621721786" version="3"
-#: last_checked: 2022-07-16
+#: last_checked: 2022-11-14
 #: check_frequency: 120d
 Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18042,10392 18081,10312 18085,10244 18113,10208
 # REMOVED (hier liegt bereits Verbundsteinpflaster --- keine Änderung?) --- Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18113,10208 18130,10201 18132,10183
@@ -5459,7 +5464,7 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1261592.php (Bauarbeiten an den Radwegen, 7.11.2022-14.12.2022)
 #: by: https://viz.berlin.de/2022/11/verkehrsvorschau-071122/ (Richtung Süden zuerst, eine Woche nach dem 7.11.2022)
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/bauarbeiten-auf-dem-geh-und-dem-radweg_a362891
-#: source_id: viz2021:13.470029,52.540596,07.11.2022,07:00 (hier nur bis 14.11.2022)
+#: source_id: viz2021:13.470029,52.540596,07.11.2022,07:00 (hier nur bis 14.11.2022) (bis 16.11.2022)
 #: last_checked: 2022-11-11
 #: check_frequency: 60d
 #: next_check: 2022-12-14
@@ -5476,8 +5481,8 @@ Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?:
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
 #: XXX Mischung aus Gehwegradweg (Rüdigerstr., Schottstr.), Radspur (Alfredstr.) und für Radfahrer freigegebene Busspur (Alfredstr., teilweise schon existierend)
 #: source_id: viz2021:13.493057,52.516212,14.10.2021,07:00 (Fahrbahnsanierungsarbeiten, bis 20.11.2021)
-#: source_id: viz2021:13.490291,52.514628,15.08.2022,07:00 (Kanalarbeiten, bis 18.9.2022)
-#: last_checked: 2022-11-06
+#: source_id: viz2021:13.490291,52.514628,15.08.2022,07:00 (Kanalarbeiten, bis 18.9.2022) (inaktiv)
+#: last_checked: 2022-11-14
 #: check_frequency: 90d
 #: next_check: 2023-12-31
 Alfredstr., Schottstr., Rüdigerstr.: Planung von Radverkehrsanlagen	?::projected 16485,12384 16397,12397 16276,12273 16255,12224 16248,12177 16223,11999 16214,11935
@@ -5580,7 +5585,7 @@ Charlottenburger Chaussee: Radwegsanierung in Planung, wo genau?	?::projected -2
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1210277.php (Erwähnung)
-#: last_checked: 2022-10-25
+#: last_checked: 2022-11-14
 #: check_frequency: 180d
 Lückstr.: entsteht hier eine Radverkehrsanlage?	? 16153,10818 16300,10753 16313,10747 16468,10695 16497,10685 16576,10658 16597,10651 16601,10650 16647,10632
 # 
@@ -6521,8 +6526,10 @@ Wandlitz - Wensickendorf: Radwegbau, weitgehend realisiert, aber die Ausschilder
 # REMOVED (hier vermutlich nicht) --- Wandlitz - Wensickendorf: Radwegbau	?::inwork 8740,38857 8665,38862 8643,38865 8518,38881 8240,38876 7990,38846 7950,38843 7836,38835 7698,38825 7632,38828 7465,38830
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1054982.php (kein konkretes Datum (außer für Baumfällungen: Ende Februar 2021))
+#: source_id: viz2021:13.288823,52.641792,15.11.2022,07:30 (Schönfließer Straße: Straßensanierung bis 7.8.2023)
 #: last_checked: 2022-07-21 (kartaview)
-#: check_frequency: 360d
+# REMOVED --- #: check_frequency: 360d
+#: next_check: 2023-08-07
 Schönfließer Str., Senheimer Str., Gollanczstr.: Bauarbeiten geplant, kommt es dabei zu Änderungen (z.B. Asphaltierungen?)	?::projected 2206,25649 2139,25830 2112,26066 2207,26090 2293,26111 2402,26121 2490,26126 2499,26128 2490,26126 2484,25984 2496,25915 2519,25772 2515,25666
 # 
 #: by: https://www.berliner-woche.de/mitte/c-bauen/der-gerade-unter-denkmalschutz-gestellte-gendarmenmarkt-soll-ab-2022-saniert-werden_a301569 (August 2022 - Ende 2024, keine Veranstaltungen während dieser Zeit)
@@ -6723,6 +6730,7 @@ Chamissoplatz: Fußgängerbereich geplant	?::projected 9526,9104 9596,9092
 #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/lange-wege-zur-bushaltestelle_a350831
 #: by: https://www.berliner-zeitung.de/mensch-metropole/planungspanne-schon-wieder-wurde-eine-strassenbahnstrecke-vergessen-li.250623 (Bauzeit weiterhin Dezember 2022 bis 2025)
 #: by: https://www.bvg.de/dam/jcr:a54bebf7-9fd9-4844-acb7-3ef6680854ac/BVG_NAVI_1122_barrierefrei.pdf (Busumleitung ab 2022-11-21)
+#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/busse-fahren-umleitungsstrecke_a363470 (für Fußgänger noch bis zum 2.12.2022 offen; Treppenanlage+Aufzüge am südlichen Eingang des Bahnhofs)
 #: source_id: viz2021:13.382329,52.411072,24.01.2022,06:00 (Sperrung für Kfz-Verkehr vom 24.1.2022 bis 4.1.2023 (wird vermutlich bis 2025 verlängert))
 #: note: laut rbb Sperrung für den Kfz-Verkehr bis 4.1.2025
 #: also_indoor: traffic (G,B(nur eine Richtung))
@@ -6758,7 +6766,7 @@ Blumberger Damm: entsteht hier ein Radweg oder eine Radspur?	?; 21869,16719 2188
 #: next_check: 2022-12-31
 Krausenstr.: Erneuerung geplant	?::projected 10176,11593 10001,11577 9925,11568 9737,11546 9711,11543 9581,11523 9456,11513
 # 
-# REMOVED (Asphaltierung realisiert) --- #: next_check_id: ROEDELIUSPLATZ-2022 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1120771.php (1. September 2021 - Mitte 2023) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/2021_08_30-bauschild-neugestaltung-roedeliusplatz.pdf --- #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/bauarbeiten-rund-um-den-roedeliusplatz-dauern-bis-mitte-2023_a328430 --- #: XXX Bauarbeiten in Gange, Fahrbahn komplett gesperrt --- #: last_checked: 2022-09-22 (osm note) --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-06-30 --- Roedeliusplatz: Asphaltierung	?::inwork 16159,12301 16227,12280 16276,12273
+# REMOVED (Asphaltierung realisiert) --- #: next_check_id: ROEDELIUSPLATZ-2022 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/pressemitteilung.1120771.php (1. September 2021 - Mitte 2023) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2021/2021_08_30-bauschild-neugestaltung-roedeliusplatz.pdf --- #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/bauarbeiten-rund-um-den-roedeliusplatz-dauern-bis-mitte-2023_a328430 --- #: XXX Bauarbeiten in Gange, Fahrbahn komplett gesperrt --- #: last_checked: 2022-09-22 (osm note) --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2023-06-30 --- Roedeliusplatz: Asphaltierung	?::inwork 16159,12293 16227,12280 16276,12273
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1121453.php (Bebauungsplan 4-62)
 #: last_checked: 2022-09-16

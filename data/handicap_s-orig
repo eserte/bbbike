@@ -217,9 +217,10 @@ Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 #: by: https://nitter.it/VIZ_Berlin/status/1546388826465001472#m
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/bvg-erneuert-tramgleise_a351479 (hier: "Der Autoverkehr bleibt bis zum 28. August eingeschränkt")
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rosenthaler-strasse-gesperrt_a352559
+#: add_fragezeichen: Sind die Bauarbeiten in der Rosenthaler Straße und Gipsstraße beendet? vvv
 #: also_indoor: traffic (B) vvv
 #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) (mittlerweile bis 14.6.2022) (bis 11.7.2022) (inaktiv) vvv
-#: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022) (bis 14.11.2022)
+#: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022) (bis 14.11.2022) (inaktiv)
 #: priority: #A
 #: last_checked: 2022-11-08 vvv
 #: next_check: 2022-11-14 vvv
@@ -236,6 +237,7 @@ Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork 10324,13459 1
 #: last_checked ^^^
 #: source_id ^^^
 #: also_indoor ^^^
+#: add_fragezeichen ^^^
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/7660-marinehaus-umbau-stiftung-stadtmuseum/?postID=712499#post712499
 #: also_indoor: traffic (none)
@@ -391,7 +393,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: last_checked: 2022-11-11 (daf) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
-#: osm_watch: way id="153698394" version="10"
+#: osm_watch: way id="153698394" version="12"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 #: also_indoor: traffic (ex-H,ex-G)
 #: osm_watch: way id="114667396" version="11"
@@ -553,7 +555,7 @@ Wandlitzstr.: in Höhe Lehndorffstr. kann die Fahrbahn gesperrt sein	q4::inwork 1
 ### Moabit ###
 # 
 #: next_check_id: TRAMTURM-2021
-#: source_id: bvg2021:m27#BVG305466_0
+# REMOVED --- #: source_id: bvg2021:m27#BVG305466_0
 #: next_check: 2022-12-22 vvv
 #: check_frequency: 90d vvv
 #: last_checked: 2022-10-20 (bahninfo-forum) vvv
@@ -672,7 +674,7 @@ Bergiusstr. - Grenzallee: kurvig, einige Fußgänger	q3 14179,6743 14139,6786
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2022-10-18 vvv
+#: last_checked: 2022-11-13 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2023-06-30 vvv
 # REMOVED --- Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14235,7100 14223,7084 14196,7086
@@ -749,29 +751,16 @@ Flughafenstr.: Radspur zwischen Karl-Marx-Str. und Isarstr. Richtung Westen, kan
 #: XXX Bauarbeiten der Wasserbetriebe, laut Baustellenschild bis Oktober 2023
 #: XXX Einbahnstraßenregelung nach den Bauarbeiten wiederherstellen
 #: also_indoor: traffic (G)
-#: last_checked: 2022-11-11
+#: last_checked: 2022-11-14
 #: check_frequency: 90d
 #: next_check: 2023-10-31
 Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,12420 15457,12449
 # 
 # REMOVED (am nächsten Tag aufgehoben) --- #: last_checked: 2022-06-18 --- #: check_frequency: 14d --- Gustav-Holzmann-Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 16119,9689 16302,9865
-# 
-#: next_check_id: ROEDELIUSPLATZ-2022
-#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021)
-#: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit?
-#: XXX Laut Schild der Wasserbetriebe bis Juni 2022
-#: XXX Laut Schild des Bezirksamts Umgestaltung bis August 2023 (!)
-#: also_indoor: traffic (ex-G[unvollständig],H[mittlerweile richtig],B)
-#: last_checked: 2022-11-06 vvv
-#: check_frequency: 7d vvv
-#: next_check: 2023-08-31 vvv
-Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,12280 16159,12301
-# REMOVED (hier auch offen, Einbahnstraßenregelung für Nicht-Radfahrer) --- Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16159,12301 16056,12317
-# REMOVED (hier mittlerweile offen) --- Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16144,12388 16159,12301 16158,12191
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED (Fahrbahn ist frei) --- #: next_check_id: ROEDELIUSPLATZ-2022 --- #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/ein-halbes-jahr-bleibt-der-roedeliusplatz-dicht_a308544 (27. April 2021, geplant bis November 2021) --- #: XXX ändert sich nach den Bauarbeiten die Fahrbahnbeschaffenheit? --- #: XXX Laut Schild der Wasserbetriebe bis Juni 2022 --- #: XXX Laut Schild des Bezirksamts Umgestaltung bis August 2023 (!) --- #: also_indoor: traffic (ex-G[unvollständig],H[mittlerweile richtig],B) --- #: last_checked: 2022-11-06 vvv --- #: check_frequency: 7d vvv --- #: next_check: 2023-08-31 vvv --- Roedeliusplatz: wegen Fahrbahnarbeiten gesperrt	q4::inwork 16276,12273 16227,12280 16159,12293
+# REMOVED (hier auch offen, Einbahnstraßenregelung für Nicht-Radfahrer) --- Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16159,12293 16056,12317
+# REMOVED (hier mittlerweile offen) --- Roedeliusplatz: Kreuzung Roedeliusplatz/Glaschkestr./Magdalenenstr. gesperrt, Umwege über die Gehwege möglich	q4::inwork 16144,12388 16159,12293 16158,12191
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (wieder beendet) --- #: XXX Bis wann dauern die Bauarbeiten an? --- #: XXX Mittlerweile nur etwa 100m --- #: by: https://www.uvp-verbund.de/trefferanzeige?docuuid=FD6C35EF-640E-43B3-8F22-17914A1869B0 (Verbindungstrasse Fernwärme Klingenberg) --- #: also_indoor: traffic (G,B(beide zu viel)) vvv --- # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="1002249853" version="2" --- # REMOVED (hier keine Einbahnstraße mehr) --- #: osm_watch: way id="198589916" version="9" --- #: osm_watch: way id="198589913" version="6" --- #: last_checked: 2022-01-10 vvv --- #: check_frequency: 14d vvv --- Nöldnerstr.: Einbahnstraßenregelung, Radfahrer Richtung Westen können den Gehweg benutzen	q1::inwork; 15932,10830 15856,10821 15681,10801 --- # REMOVED --- Stadthausstr.: Einbahnstraßenregelung	q4::inwork; 15681,10801 15674,10851 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^
 # REMOVED --- #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/neue-vorstreckungen-ueberwege-mittelinseln-und-abgesenkte-bordsteine_a319370 (Erwähnung der Wege in der Grünanlage) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8710 (Abschluss der Bauarbeiten im 3. Quartal 2021) --- #: last_checked: 2021-09-11 vvv --- #: check_frequency: 7d vvv
 # REMOVED (hier nicht mehr) --- S-Bhf. Betriebsbahnhof Rummelsburg: Bauarbeiten, Umwege, Schotterwege	q2::inwork 16811,9937 16878,9875
@@ -1646,7 +1635,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: https://berliner-abendblatt.de/2022/05/05/bahnhof-lichtenberg-enhaltestelle-der-strassenbahn-wird-verlegt/
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1212005.php (Bauarbeiten nicht vor 2025)
 #: osm_watch: way id="223184082" version="7"
-#: last_checked: 2022-11-06
+#: last_checked: 2022-11-14
 # REMOVED --- #: check_frequency: 90d
 #: check_frequency: 360d
 #: next_check: 2025-12-31
@@ -1969,8 +1958,9 @@ Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
 #: XXX_prog BS an der Lückstr. (ansonsten wäre es q1)
 (Blockpark): Fußgänger, Bordstein	q2 16300,10753 16265,10681
 (Blockpark): Fußgänger	q1 16265,10681 16246,10641 16193,10593
-#: XXX_prog BS an der Balatonstr. (ansonsten q1)
-Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg, Bordstein	q2 17954,10367 18039,10398
+#: XXX_prog BS am Upstallweg, ansonsten entfernen
+Balatonstr.: Bordstein	q2 17956,10372 17946,10344
+Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17915,10350 17956,10372 18039,10398
 #: note: an Wochenmarkt-Tagen (Heinrich-Dathe-Platz) besonders im östlichen Abschnitt mehr Fußgänger
 Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 Mayschweg: Fußgänger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597

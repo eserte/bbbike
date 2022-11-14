@@ -8,7 +8,7 @@
 #: temporary vvv
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
-#: last_checked: 2022-09-24
+#: last_checked: 2022-11-13 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2023-06-30
 Neuköllnische Allee: welliger Asphalt	Q2 14310,7022 14276,7021 14245,7037 14236,7058 14196,7086
@@ -1593,7 +1593,7 @@ Prager Platz: gutes Kleinsteinpflaster	Q1 5648,9642 5642,9613 5618,9607 5598,961
 Prager Platz: Verbundsteinpflasterradweg	Q1 5648,9642 5630,9656 5598,9654 5578,9629
 #: historical_note: früher teilweise Kopfsteinpflaster
 #: note: mit gepflasterten Parkstreifen, sowie Pflasterungen an/vor den Kreuzungen/Einmündungen
-Roedeliusplatz: Asphalt	Q0 16159,12301 16227,12280 16276,12273
+Roedeliusplatz: Asphalt	Q0 16159,12293 16227,12281 16276,12273
 Rüdigerstr. (Lichtenberg): Asphalt	Q0 17471,12243 17441,12247 17314,12265 17218,12281 17184,12286 17122,12295 17056,12304 17020,12309 16918,12325 16820,12339
 Barbarossastr.: Kopfsteinpflaster	Q2 7122,9517 7002,9526
 Prühßstr.: Beton	Q0- 8780,4054 8962,4096
@@ -3366,7 +3366,7 @@ Koppenstr.: Asphalt	Q0 12532,12150 12573,12227 12592,12472 12632,12630
 Montanstr.: Asphalt	Q0 6792,19733 6680,19098
 Griechische Allee: Asphalt	Q0 18119,6693 18076,6693 18025,6700 17962,6674 18029,6674 18079,6678 18159,6642 18273,6606 18429,6582 18494,6588
 Griechische Allee: Asphalt	Q0 18645,6511 18624,6520 18494,6588 18339,6660 18254,6679 18119,6693
-Normannenstr.: Asphalt	Q0 15508,12367 15537,12367 15710,12365 15800,12353 15904,12340 16056,12317 16159,12301
+Normannenstr.: Asphalt	Q0 15508,12367 15537,12367 15710,12365 15800,12353 15904,12340 16056,12317 16159,12293
 Straße 18: Beton/Asphalt	Q0 16429,13146 16429,13021
 Eberhardstr.: Kopfsteinpflaster	Q2 15233,12829 15231,12929
 Straße 77: Verbundsteinpflaster	Q1+ 15408,12394 15320,12375
@@ -4001,7 +4001,7 @@ Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14621,10062 14702
 Dora-Benjamin-Park: Verbundsteinpflaster, "Moabiter Kissen"	Q1 14747,10108 14702,10020
 Dora-Benjamin-Park: Verbundsteinpflaster	Q1 14788,9976 14817,10031
 Balatonstr.: mäßiger Beton	Q2+ 17479,10452 17741,10386
-Balatonstr.: mäßiger Beton	Q1- 17741,10386 17791,10375 17915,10350 17946,10344 17954,10367
+Balatonstr.: mäßiger Beton	Q1- 17741,10386 17791,10375 17915,10350 17946,10344 17956,10372
 Balatonstr.: mäßiger Beton	Q1- 17791,10375 17793,10382 17822,10490 17823,10495
 (Balatonstr. - Sewanstr.): Beton	Q1 17741,10386 17729,10331 17705,10232 17624,10249 17605,10199
 Sewanstr. [Wohngebiet]: Beton	Q1 17883,10185 17705,10232
@@ -4117,7 +4117,7 @@ Park am Karlsbad: wassergebundene Decke	Q1+ 8143,10903 8190,10960
 #: note: neu gemacht (Herbst 2014)
 Singerstr.: Asphalt	Q0 11920,12266 12081,12236
 Puderstr.: Asphalt	Q0 14614,9052 14567,8966 14525,8894 14492,8853 14363,8738
-Upstallweg (Lichtenberg): Beton	Q0 17954,10367 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
+Upstallweg (Lichtenberg): Beton	Q0 17915,10350 17956,10372 18039,10398 18116,10403 18184,10387 18245,10398 18336,10436
 # REMOVED (teilweise) --- #: XXX hat sich hier die Qualität durch den Wohnungsneubau verbessert?
 Hönower Str.: Asphalt	Q0 18660,9410 18735,9421
 Hönower Str.: Kopfsteinpflaster	Q3 18735,9421 18765,9426 18846,9532 18875,9570
@@ -8663,7 +8663,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="10"
-#: last_checked: 2022-11-06
+#: last_checked: 2022-11-14
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -17539,7 +17539,7 @@ Charlottenstr.: Asphalt	Q0 5936,2977 6044,3110 6129,3203 6218,3302 6426,3425 652
 #: by: ^^^
 # 
 #: by: Sandra (sspp):
-Magdalenenstr.: Kopfsteinpflaster	Q2 16127,11950 16158,12191 16159,12301
+Magdalenenstr.: Kopfsteinpflaster	Q2 16127,11950 16158,12191 16159,12293
 # 
 #: by: Sebastian Scheller: vvv
 #: corrected_by: srt (Q1 -> Q2+)
@@ -20675,7 +20675,7 @@ Alsenstr. (Steglitz): Asphalt	Q0 5560,6344 5558,6319 5416,6119
 # 
 #: by: Antje (utefeldwebel):
 #: corrected_by: srt (gutes Kopfsteinpflaster -> ...)
-Bürgerheimstr.: Kopfsteinpflaster	Q2+ 16326,11966 16359,12207
+Bürgerheimstr.: Kopfsteinpflaster	Q2 16326,11966 16359,12207
 # 
 #: by: Petra Scheffler: vvv
 Zitadellenweg: schlechtes Kopfsteinpflaster	Q3 -2597,14532 -2594,14571 -2264,14584
@@ -20839,8 +20839,8 @@ Günter-Litfin-Str.: guter Asphalt	Q0 13342,17180 13247,17262 13239,17269 13171,1
 # 
 #: by: Katia Kobelt: vvv
 #: corrected_by: srt (den ausgebesserten Abschnitt genau angegeben) vvv
-Plonzstr.: Beton mit einigen Schäden	Q1 16227,12280 16259,12419 16266,12478
-Plonzstr.: Asphalt	Q0- 16266,12478 16279,12575
+Plonzstr.: Beton mit einigen Schäden	Q1 16227,12281 16259,12419 16266,12478
+Plonzstr.: Asphalt	Q0 16266,12478 16279,12575
 Plonzstr.: Beton mit einigen Schäden	Q1 16279,12575 16284,12616
 #: corrected_by ^^^
 #: by: ^^^
@@ -20958,7 +20958,7 @@ Brandaustr.: guter Asphalt	Q0 9391,1235 9370,1262 9367,1296 9411,1406 9519,1650
 # 
 #: by: Daniela (glasband):
 #: corrected_by: srt (Q3 -> Q2-, "schlechtes" entfernt -> Q2, neu gemacht?)
-Glaschkestr.: Kopfsteinpflaster	Q2 16159,12301 16144,12388 16147,12434
+Glaschkestr.: Kopfsteinpflaster	Q2 16159,12293 16144,12388 16147,12434
 # 
 #: by: Ulrich Siegmann:
 #: corrected_by: srt (Asphalt -> Beton)
@@ -31658,4 +31658,9 @@ Kreuzungsbereich asphaltiert	Q0 12271,6025
 Kreuzungsbereich asphaltiert	Q0 12160,5997
 Einmündungsbereich asphaltiert	Q0 12063,5927
 Kreuzungsbereich asphaltiert	Q0 4682,6625
+Einmündungsbereich asphaltiert	Q0 16359,12207
+Kreuzungsbereich betoniert	Q1 16259,12419
+#: note: Kopfsteinpflasterstreifen am Roedeliusplatz
+Kreuzungsbereich asphaltiert	Q0 16159,12293
+Einmündungsbereich asphaltiert mit Kopfsteinpflasterstreifen	Q1+ 16227,12281
 #: ignore ^^^

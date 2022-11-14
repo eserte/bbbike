@@ -2095,6 +2095,7 @@ Frankfurter Allee	3nocross::ignrte 14208,12235 14291,12222 14381,12207 14427,121
 #: note ^^^
 Frankfurter Allee: unbequem passierbarer Mittelstreifen	3nocross 13785,12292 13885,12279 14020,12261
 Frankfurter Allee: Mittelstreifen mit Geländer	3nocross 16066,11960 16127,11950 16214,11935
+Frankfurter Allee: Fahrbahn und nördlicher Bürgersteig baulich getrennt	3nocross 16214,11935 16317,11920 16368,11912
 Frankfurter Allee: Mittelstreifen mit Geländer	3nocross 15670,12022 15717,12015 15863,11992
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11656 9905,11680 9991,11690
 #Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13330,13468
@@ -3674,7 +3675,7 @@ Parkstadt Karlshorst: temporäre Einbahnstraßenregelung	1::inwork 17648,8626 1762
 #: by: https://www.berliner-woche.de/mitte/c-bauen/abschluss-des-stauraumprogramms-wasserbetriebe-bauen-an-der-chausseestrasse_a357698 (Abschluss des Projekts bis 2026)
 #: note: laut rbb bis voraussichtlich 30.4.2022, mittlerweile bis 15.7.2022, mittlerweile entfernt
 #: note: von Westen her offiziell nur für Bau- und Einsatzfahrzeuge offen, von Osten her keine Einschränkungen
-#: osm_watch: way id="129104626" version="18"
+#: osm_watch: way id="129104626" version="19"
 #: osm_watch: way id="945966258" version="3"
 #: also_indoor: traffic (ex-H,ex-G,ex-B(alle falsch))
 #: last_checked: 2022-11-08
@@ -4569,7 +4570,7 @@ Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 1415
 #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-09-24
+#: last_checked: 2022-11-13 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2023-06-23
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022

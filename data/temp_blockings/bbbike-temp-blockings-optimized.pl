@@ -3923,7 +3923,39 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: by: https://viz.berlin.de/2021/10/a115-sprengungen/ (nächste Termine 2021: 3.11., 10.11., 17.11., 24.11)
+#: by: https://berliner-abendblatt.de/2022/10/11/sprengung-im-grunewald-avus-wird-voll-gesperrt/
+#: by: https://viz.berlin.de/2022/10/a115-sprengungen/
+#: by: https://berliner-abendblatt.de/2022/10/19/sprengung-avus-am-freitagmorgen-kurzzeitig-gesperrt/
+#: by: https://berliner-abendblatt.de/2022/11/07/sprengungen-im-grunewald-avus-an-mehreren-tagen-gesperrt/
+#: by: https://viz.berlin.de/2022/11/a115-sprengungen/
+#: note: Termine im Herbst 2022: 9./15./23./29.11, 6./13./20.12.
+#: source_id: 2147341022
+#: source_id: viz2021:13.196408,52.438127,03.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,10.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,17.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,24.11.2021,09:15
+#: source_id: viz2021:13.196408,52.438127,23.03.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,20.04.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,12.10.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15
+#: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15
+#: priority: #A
+#: next_check: 2022-11-16
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
+	2::temp -1934,6804 -1854,6898
+',
+         'from' => 1668380400,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. November 2022 zwischen 09:15 und 10:15 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1668503700
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -4477,8 +4509,8 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
          'data' => '#: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8405 (Anfrage) (mindestens bis 31.12.2022)
 #: also_indoor: traffic (G)
-#: osm_watch: way id="749226300" version="6"
-#: last_checked: 2022-04-08 (osm)
+#: osm_watch: way id="749226300" version="7"
+#: last_checked: 2022-11-14 (osm)
 # REMOVED --- #: check_frequency: 180d
 #: next_check: 2022-12-31
 	2::inwork 3079,5411 3179,5267
@@ -5301,7 +5333,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: viz2021:13.468932,52.511298,12.09.2022,07:00
 #: source_id: viz2021:13.469582,52.511928,12.09.2022,07:00
 #: XXX Hier werden Haltestellenkaps gebaut, Scharnweberstraße Höhe Ede-und-Unku-Weg und Weichselstraße nördlich Traveplatz
-#: last_checked: 2022-11-11 vvv
+#: last_checked: 2022-11-14 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-09 vvv
 Weichselstr. (Traveplatz)	q4::inwork; 14798,11777 14802,11784 14836,11842
@@ -5677,7 +5709,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
-#: last_checked: 2022-11-01 vvv
+#: last_checked: 2022-11-13 (mapillary) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-12-03 vvv
 #: also_indoor: traffic (G[unvollständig],B) vvv
@@ -6014,9 +6046,9 @@ Seydlitzstr.	q3::inwork 6349,2510 6459,2364
          'from' => 1655798400,
          'id' => 3573,
          'source_id' => 'viz2021:13.414144,52.572092,22.06.2022,10:00',
-         'text' => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 15.11.2022 17:00',
+         'text' => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 21.11.2022 17:00',
          'type' => 'handicap',
-         'until' => 1668528000
+         'until' => 1669046400
        },
        {
          'data' => '#: next_check_id: KWEISENBAHNBRUECKE-2022
@@ -6320,10 +6352,14 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1263481.php (Kreuzung wird komplett gesperrt; Verkehrsumstellung ab 11.11.2022, Bauarbeiten ab 14.11.2022; Dauer zwei Wochen)
 #: by: https://berliner-abendblatt.de/2022/11/10/koepenicker-landstrasse-hier-geht-nichts-mehr/
 #: note: laut rbb nur bis 11.11.2022
-#: source_id: viz2021:13.491071,52.468923,07.09.2022,08:00 (bis 2.11.2022) (bis 23.11.2022)
-#: source_id: viz2021:13.487047,52.465576,12.09.2022,07:00 (bis 23.11.2022)
-#: source_id: viz2021:13.491317,52.469108,10.09.2022,13:00 (bis 23.11.2022)
-#: source_id: viz2021:13.492477,52.468642,10.09.2022,13:00 (bis 23.11.2022)
+#: source_id: viz2021:13.491071,52.468923,07.09.2022,08:00 (bis 2.11.2022) (bis 23.11.2022) (inaktiv)
+#: source_id: viz2021:13.487047,52.465576,12.09.2022,07:00 (bis 23.11.2022) (inaktiv)
+#: source_id: viz2021:13.491317,52.469108,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
+#: source_id: viz2021:13.492477,52.468642,10.09.2022,13:00 (bis 23.11.2022) (inaktiv)
+#: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022)
+#: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022)
+#: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022)
+#: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022)
 #: next_check: 2022-12-14
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr.	q3::inwork; 16563,7012 16428,7144
 Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
@@ -6513,12 +6549,14 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
        {
          'data' => '#: note: laut rbb
 #: also_indoor: traffic (H,B,G) vvv
-#: XXX Ende der Sperrung? vvv
-#: last_checked: 2022-11-06 vvv
+#: XXX Ende der Sperrung? Halteverbote bis zum 6.12.2022 vvv
+#: last_checked: 2022-11-14 vvv
 #: check_frequency: 14d vvv
+#: next_check: 2022-12-06 vvv
 einige Meter vor der Siegfriedstr. gesperrt, evtl. Bordsteine	q3::inwork 16859,12613 16720,12614
 etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 # REMOVED (hier nicht) ---	q4::inwork 16576,12612 16470,12612 16432,12612 16409,12612
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
