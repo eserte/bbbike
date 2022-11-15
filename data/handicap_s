@@ -11,12 +11,12 @@ Erich-Steinfurth-Str.: Bauarbeiten, Einbahnstraﬂenregelung (auﬂer f¸r Baufahrzeu
 Limburger Str.: Engstelle wegen eines Containers auf der Fahrbahn	q3 6869,15441 6835,15412 6815,15398
 (L¸tticher Str. - Luxemburger Str. (¸ber das Gel‰nde der Beuth-Hochschule)): Engstelle wegen Bauarbeiten	q2::inwork 6748,15313 6833,15215
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607,15282
+Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
 Johannisstr.: Abschnitt der Fahrbahn gesperrt	q3::inwork 9588,13174 9385,13174
 Saarbr¸cker Str.: Einbahnstraﬂenregelung	q3::inwork; 10895,13961 11052,13870
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf B¸rgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
 Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork 10324,13459 10350,13376
 Am Kˆllnischen Park: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 11197,11882 11160,12071
-Schloﬂplatz: Fuﬂg‰nger, Bauarbeiten	q3::inwork 10102,12384 10063,12438
 (Molkenmarkt - zur Stralauer Str.): Bauarbeiten, Gehweg ist noch offen	q4::inwork 10675,12280 10736,12285 10772,12288 10804,12291 10830,12279
 Chausseestr.: Radweg auf gegen¸berliegenden B¸rgersteig	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8775,12457 8904,12489
@@ -2154,9 +2154,9 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 (Barnimer Dˆrferweg - Gehrensee): einige Fuﬂg‰nger	q1 21035,19005 21040,19007 21015,19070
 Landschaftspark Johannisthal: einige Fuﬂg‰nger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
 Schloﬂplatz: Fuﬂg‰nger, Engstelle wegen Bauarbeiten am Einheitsdenkmal	q3 10174,12284 10102,12384
-(Lustgarten - Schloss): Fuﬂg‰nger	q2 10155,12494 10175,12435
+(Lustgarten - Schloss): Fuﬂg‰nger	q2 10152,12491 10175,12435
 (Uferweg am Humboldtforum): Fuﬂg‰nger	q2 10357,12356 10336,12404 10271,12503 10243,12546
-Schloﬂplatz: Fuﬂg‰nger	q3 10175,12435 10271,12503
+Schloﬂplatz: einige Fuﬂg‰nger	q2 10271,12503 10175,12435 10102,12384 10063,12438
 (Parkweg - Park Biesdorf): Fuﬂg‰nger	q2 20775,11801 20801,11797 20804,11813 20835,11810
 Am Kraatzgraben: einige Fuﬂg‰nger	q1 16899,10020 16835,10052
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fuﬂg‰nger	q1 16894,10003 16899,10020 16912,10054
@@ -2374,6 +2374,8 @@ Neukirchstr.: einige Fuﬂg‰nger	q1 12751,18401 12885,18329
 (Otto-Kr¸ger-Zeile - Wattstr.): schmale Straﬂe	q1 17484,7087 17571,7157 17641,7151
 Azaleenstr.: Bodenschwelle	q1 23443,4524 23491,4534 23536,4543
 (entlang der Alten Erpe): einige Fuﬂg‰nger, schmal	q2 22855,5554 22872,5555 22932,5594 22983,5601 23216,5560 23270,5567 23321,5560 23379,5559
+(Berliner Str. - Kissingenstr.): Lieferverkehr, einige Fuﬂg‰nger	q2 10852,17801 10896,17846 10944,17863
+(Blitzenroder Ring - Packereigraben): einige Fuﬂg‰nger	q2 5808,22387 5796,22401 5796,22412
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

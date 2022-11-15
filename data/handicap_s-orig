@@ -195,6 +195,12 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7519,15193 7607
 # 
 ### Mitte ###
 # 
+#: next_check_id: BEBELPLATZXMAS-2022
+#: note: eigentlich "q3::xmas", wird aber weder gerendert noch von Strassen::Cat akzeptiert
+#: next_check: 2023-01-02
+#: valid: 20221111-20230102
+Bebelplatz: Weihnachtsmarkt, schmaler Durchgang	q3 9664,12387 9680,12232
+# 
 #: next_check_id: TACHELES-2020
 #: XXX Wann wird der Kran abgebaut? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
@@ -221,9 +227,11 @@ Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 #: also_indoor: traffic (B) vvv
 #: source_id: viz2021:13.403368,52.527044,19.04.2022,08:30 (bis 31.5.2022) (mittlerweile bis 14.6.2022) (bis 11.7.2022) (inaktiv) vvv
 #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022) (bis 14.11.2022) (inaktiv)
+#: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022)
 #: priority: #A
-#: last_checked: 2022-11-08 vvv
-#: next_check: 2022-11-14 vvv
+#: last_checked: 2022-11-15 vvv
+#: check_frequency: 3d vvv
+#: next_check: 2022-11-16 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
 # REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork; 10324,13459 10350,13376
@@ -234,6 +242,7 @@ Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork 10324,13459 1
 # REMOVED (hier nicht mehr) --- Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10220,13694 10263,13594
 # REMOVED (hier nicht mehr) --- Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10142,13556 10263,13594 10309,13601
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
 #: also_indoor ^^^
@@ -245,10 +254,7 @@ Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork 10324,13459 1
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11197,11882 11160,12071
 # 
 # REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? vvv --- #: last_checked: 2021-12-23 vvv --- #: check_frequency: 14d vvv --- # REMOVED (hier nicht mehr) --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q4::inwork 10826,11251 10818,11269 --- #: note: hier nur ein kurzer Abschnitt betroffen --- Sebastianstr.: Bauarbeiten, Fahrbahn an der Alexandrinenstr. gesperrt	q1::inwork 10818,11269 10644,11569 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: add_fragezeichen ^^^
-# 
-#: next_check_id: MUSEUMSINSEL-2020
-#: last_checked: 2022-10-29
-Schloßplatz: Fußgänger, Bauarbeiten	q3::inwork 10102,12384 10063,12438
+# REMOVED --- #: next_check_id: MUSEUMSINSEL-2020 --- #: last_checked: 2022-10-29 --- Schloßplatz: Fußgänger, Bauarbeiten	q3::inwork 10102,12384 10063,12438
 # 
 #: next_check_id: MOLKENMARKT-2021
 #: last_checked: 2022-10-03 vvv
@@ -299,7 +305,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="3"
 #: also_indoor: traffic (H,B)
-#: last_checked: 2022-11-10
+#: last_checked: 2022-11-15
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10957,12401
 # 
 #: by: https://pbs.twimg.com/media/FDQLQ1eXsAQEkQY?format=jpg&name=large
@@ -390,7 +396,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2022-11-11 (daf) vvv
+#: last_checked: 2022-11-15 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="12"
@@ -805,10 +811,10 @@ Parkaue: Bauarbeiten der Wasserbetriebe, Fahrbahn gesperrt	q4+::inwork 15535,124
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10491 (Anfrage)
 #: by: https://berliner-abendblatt.de/2022/10/04/eisenacher-strasse-gesperrt-bauarbeiten-dauern-bis-2025/
 #: by: https://viz.berlin.de/2022/10/eisenacher-strasse/
-#: source_id: viz2021:13.575415,52.540241,05.10.2022,06:00 (hier nur Kfz-Verkehr, bis 10.11.2022) (bis 16.11.2022)
+#: source_id: viz2021:13.575415,52.540241,05.10.2022,06:00 (hier nur Kfz-Verkehr, bis 10.11.2022) (bis 16.11.2022) (bis 29.11.2022)
 #: last_checked: 2022-11-06 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2022-11-16 vvv
+#: next_check: 2022-11-29 vvv
 Eisenacher Str.: Radfahrer müssen Bürgersteig benutzen, Bordsteine	q1-::inwork; 21809,15186 21903,15174 22059,15153 22323,15119
 Eisenacher Str.: Radfahrer teilen sich mit Fußgängern den Bürgersteig	q1-::inwork; 22599,15105 22577,15109 22441,15118 22323,15119 22059,15153 21903,15174 21809,15186 21718,15198 21599,15213
 #: next_check ^^^
@@ -2555,7 +2561,7 @@ Wriezener Park: Fußgänger, Bordstein	q3 13261,11572 13274,11585
 Oranienplatz: einige Fußgänger	q1 11264,10804 11227,10821
 #: note: keine Freigabe
 Oranienplatz: einige Fußgänger, Grünanlage	q3 11275,10723 11253,10778 11227,10821
-# REMOVED (existiert nicht mehr) --- (Schloßplatz, zwischen Breite Str. und Lustgarten): Fußgänger, Radfahren verboten	q4 10285,12306 10155,12494
+# REMOVED (existiert nicht mehr) --- (Schloßplatz, zwischen Breite Str. und Lustgarten): Fußgänger, Radfahren verboten	q4 10285,12306 10152,12491
 Grüner Weg: einige Fußgänger	q1 13728,3332 13775,3500
 (Imbuschweg - Anna-Siemsen-Weg): einige Fußgänger	q1 14245,2704 14231,2693 14228,2588 14254,2566
 #: XXX_prog BS zur Südseite, kann mit 10-15m Umweg umfahren werden (Richtung Westen)
@@ -3914,15 +3920,16 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 (Barnimer Dörferweg - Gehrensee): einige Fußgänger	q1 21035,19005 21040,19007 21015,19070
 #: note: Weg ist etwa 2m breit
 Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18191,2822 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
+#: next_check_id: EINHEITSDENKMAL-2022
 #: by: https://berliner-abendblatt.de/2022/11/09/einheitsdenkmal-soll-nach-lieferproblemen-2023-fertig-sein/
 #: last_checked: 2022-10-29
 #: check_frequency: 60d
 #: next_check: 2023-10-01
 # REMOVED (früher: Schloßplatz: Fußgänger	q2 10174,12284 10102,12384)
 Schloßplatz: Fußgänger, Engstelle wegen Bauarbeiten am Einheitsdenkmal	q3 10174,12284 10102,12384
-(Lustgarten - Schloss): Fußgänger	q2 10155,12494 10175,12435
+(Lustgarten - Schloss): Fußgänger	q2 10152,12491 10175,12435
 (Uferweg am Humboldtforum): Fußgänger	q2 10357,12356 10336,12404 10271,12503 10243,12546
-Schloßplatz: Fußgänger	q3 10175,12435 10271,12503
+Schloßplatz: einige Fußgänger	q2 10271,12503 10175,12435 10102,12384 10063,12438
 (Parkweg - Park Biesdorf): Fußgänger	q2 20775,11801 20801,11797 20804,11813 20835,11810
 Am Kraatzgraben: einige Fußgänger	q1 16899,10020 16835,10052
 Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fußgänger	q1 16894,10003 16899,10020 16912,10054
@@ -4270,6 +4277,9 @@ Neukirchstr.: einige Fußgänger	q1 12751,18401 12885,18329
 #: note: fast über die gesamte Fahrbahnbreite
 Azaleenstr.: Bodenschwelle	q1 23443,4524 23491,4534 23536,4543
 (entlang der Alten Erpe): einige Fußgänger, schmal	q2 22855,5554 22872,5555 22932,5594 22983,5601 23216,5560 23270,5567 23321,5560 23379,5559
+(Berliner Str. - Kissingenstr.): Lieferverkehr, einige Fußgänger	q2 10852,17801 10896,17846 10944,17863
+#: note: Grünanlagen-Schild ohne weitere Zusatzschilder
+(Blitzenroder Ring - Packereigraben): einige Fußgänger	q2 5808,22387 5796,22401 5796,22412
 # 
 ######################### User Contributions #################################
 # 

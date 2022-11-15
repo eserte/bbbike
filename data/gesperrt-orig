@@ -796,6 +796,10 @@ Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
 #: by: ^^^
 # 
+Berliner Str. (Straﬂenbahntrasse)	3nocross::ignrte 10858,17721 10852,17801 10849,17848
+Berliner Str. (Richtungsfahrbahn)	1::igndisp 10858,17721 10849,17848
+Berliner Str. (Richtungsfahrbahn)	1::igndisp 10849,17848 10852,17801 10858,17721
+# 
 #: note: Straﬂenbahntrasse vvv
 Karl-Liebknecht-Str. (Richtungsfahrbahn)	1::igndisp 11160,13492 11135,13452 11107,13410 11081,13372 11070,13357
 Karl-Liebknecht-Str. (Richtungsfahrbahn)	1::igndisp 11070,13357 11080,13373 11131,13455 11160,13492
@@ -1440,6 +1444,12 @@ Zufahrt Bhf. Ahrensfelde	1 21251,18508 21224,18519 21285,18637 21309,18626
 Am Krusenick	1 22754,4919 22752,4957 22765,4956 22783,4943 22754,4919
 # 
 (Albrechtstr. - Neue Filandastr.)	1 5610,5227 5616,5182 5635,5145
+# 
+(Kurf¸rstenstr. - Hermsdorfer Damm)	1 2677,22448 2694,22424
+# 
+(Hermsdorfer Str. - Cyclopstr.)	1 4829,21714 4805,21715
+# 
+Breite Str.: Straﬂenbahnhaltestelle	3nocross 10680,18380 10710,18393 10784,18426
 # 
 ######################################################################
 # empfohlene und unechte Sperrungen
@@ -3458,11 +3468,22 @@ Schranke	BNP:3::trailer=10 -1486,16789
 Schranke	BNP:1::trailer=3 14967,4641
 #: note: evtl. kann die Schranke ¸ber den Gehwegbereich umfahren werden
 Schranke	BNP:3::trailer=10 8702,13362
+Dr‰ngelgitter	BNP:3::trailer=10 5746,22582
 #
 ############################################################################
 #: section tempor‰re Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: next_check_id: BEBELPLATZXMAS-2022
+#: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html (21. November bis 31. Dezember 2022)
+#: next_check: 2023-01-02 vvv
+#: valid: 20221111-20230102 vvv
+Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238
+Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387
+Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392
+#: valid ^^^
+#: next_check ^^^
 # 
 #: next_check_id: SEIDELSTRASSENBRUECKE-2022
 #: osm_watch: node id="1736425250" version="4"
@@ -3617,7 +3638,7 @@ Teltowkanalweg zwischen Ringstr. und Maulbronner Ufer	2::inwork 7673,4223 7769,4
 #: by: https://www.gm013.la/work/fmp
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/pl%C3%A4tze-vorpl%C3%A4tze.93/page-2#post-19593
 #: XXX evtl. wird die Erschlieﬂungsstraﬂe nicht mehr durchg‰ngig sein; evtl. wird man die Fl‰che als Gr¸nfl‰che kennzeichnen kˆnnen
-#: last_checked: 2022-11-10
+#: last_checked: 2022-11-15
 #: check_frequency: 30d
 #: next_check: 2023-07-01
 (Vorfahrt Neues-Deutschland-Geb‰ude): an der R¸dersdorfer Str. mit Bauz‰unen abgesperrt	2::inwork 12788,11898 12891,12008
@@ -4002,9 +4023,9 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="3"
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="882672445" version="2"
-#: last_checked: 2022-11-11 (daf)
-#: check_frequency: 60d
-#: next_check: 2022-11-30
+#: last_checked: 2022-11-15
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2022-11-30
 Gustav-Bˆﬂ-Str.: Bauarbeiten, Komplettsperrung, Straﬂenf¸hrung wird neu gemacht	2::inwork 10673,12434 10772,12515
 # 
 # REMOVED (wieder temp blockings) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: XXX wobei man (zumindest abends und am Wochenende) auf der provisorischen Baustraﬂe doch passieren kann --- #: last_checked: 2020-03-10 --- DB-Werkstraﬂe: wegen Bauarbeiten komplett gesperrt, auch f¸r Fuﬂg‰nger	2::inwork 14469,10841 14352,10874
@@ -4663,26 +4684,11 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # REMOVED (fast alles offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16 --- #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Erˆffnung) --- #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen --- #: last_checked: 2018-12-28 vvv --- #: check_frequency: 14d vvv --- #: XXX wird es hier in Zukunft noch einen Weg geben? (bei osm ist gar nichts eingezeichnet) --- Bebelplatz: Bauarbeiten, vollst‰ndig gesperrt	2:inwork 9796,12284 9877,12293 --- #: XXX heiﬂt dieser Abschnitt noch so oder Bebelplatz? --- #: osm_watch: way id="28251222" version="15" --- Hinter der Katholischen Kirche: Bauarbeiten, vollst‰ndig gesperrt	2:inwork 9798,12267 9796,12284 9780,12401 --- #: osm_watch: way id="474362271" version="2" --- Oberwallstr.: Bauarbeiten, vollst‰ndig gesperrt	2::inwork 9883,12251 9877,12293 --- # REMOVED (mittlerweile offen) --- Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9737,12238 9702,12307 9734,12395 --- #: check_frequency ^^^ --- #: last_checked: ^^^
 # REMOVED (fertig) --- #: XXX hier sind gerade Asphaltierungsarbeiten, vielleicht wird hier fr¸her erˆffnet? --- #: last_checked: 2016-09-30 --- Hinter der Katholischen Kirche: Bauarbeiten, vollst‰ndig gesperrt	2:inwork 9808,12182 9798,12267
 # 
-#: next_check_id: MUSEUMSINSEL-2020
-#: XXX Erˆffnung 2020 geplant
-#: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
-#: by: https://de.wikipedia.org/wiki/Berliner_Schloss?date=20181114 (Erˆffnungstermin)
-# REMOVED (keine neuen Bilder mehr) --- #: by: https://cam01.berlinerschloss-webcam.de/ (Webcam)
-#: by: https://www.tagesspiegel.de/berlin/nicht-mehr-2019-eroeffnung-des-humboldt-forums-wird-verschoben/24448118.html
-#: by: https://www.humboldtforum.org/de/inhalte/stand-der-baumassnahme-humboldt-forum-im-berliner-schloss (Erˆffnung 2020)
-#: by: https://www.rbb24.de/kultur/thema/2020/coronavirus/beitraege_neu/2020/05/humboldt-forum-eroeffnung-verschoben-berlin.html (Teilerˆffnung Ende 2020?)
-#: by: https://www.berliner-woche.de/mitte/c-bauen/humboldt-forum-wird-nicht-wie-geplant-im-september-eroeffnet_a266869
-#: by: https://www.berliner-woche.de/mitte/c-bauen/humboldt-forum-will-im-dezember-oeffnen_a278947 (Dezember 2020)
-#: by: https://abendblatt-berlin.de/2020/08/30/humboldt-forum-soll-mitte-dezember-eroeffnen/ (Mitte Dezmber 2020)
-#: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Erˆffnung am 17.12.2020)
-#: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Erˆffnung wird verschoben)
-#: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauz‰une werden im Dezember 2020 teilweise abgebaut)
-#: last_checked: 2022-10-29
-#: check_frequency: 30d
+# REMOVED --- #: next_check_id: MUSEUMSINSEL-2020 --- #: XXX Erˆffnung 2020 geplant --- #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16 --- #: by: https://de.wikipedia.org/wiki/Berliner_Schloss?date=20181114 (Erˆffnungstermin) --- # REMOVED (keine neuen Bilder mehr) --- #: by: https://cam01.berlinerschloss-webcam.de/ (Webcam) --- #: by: https://www.tagesspiegel.de/berlin/nicht-mehr-2019-eroeffnung-des-humboldt-forums-wird-verschoben/24448118.html --- #: by: https://www.humboldtforum.org/de/inhalte/stand-der-baumassnahme-humboldt-forum-im-berliner-schloss (Erˆffnung 2020) --- #: by: https://www.rbb24.de/kultur/thema/2020/coronavirus/beitraege_neu/2020/05/humboldt-forum-eroeffnung-verschoben-berlin.html (Teilerˆffnung Ende 2020?) --- #: by: https://www.berliner-woche.de/mitte/c-bauen/humboldt-forum-wird-nicht-wie-geplant-im-september-eroeffnet_a266869 --- #: by: https://www.berliner-woche.de/mitte/c-bauen/humboldt-forum-will-im-dezember-oeffnen_a278947 (Dezember 2020) --- #: by: https://abendblatt-berlin.de/2020/08/30/humboldt-forum-soll-mitte-dezember-eroeffnen/ (Mitte Dezmber 2020) --- #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Erˆffnung am 17.12.2020) --- #: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Erˆffnung wird verschoben) --- #: by: https://berliner-schloss.de/blog/schloss-information-dezember-2020/ (Bauz‰une werden im Dezember 2020 teilweise abgebaut) --- #: last_checked: 2022-10-29 --- #: check_frequency: 30d
 # REMOVED --- #: next_check: 2021-07-01
 # REMOVED (hier offen) --- Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10102,12384
 # REMOVED (-> handicap_s-orig) --- Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10063,12438
-Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
+# REMOVED --- Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-vier-jahren-wurden-die-keller-trockengelegt_a235237 (Bezug der B¸ros im dritten Quartal 2021)

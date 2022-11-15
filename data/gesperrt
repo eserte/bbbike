@@ -506,6 +506,9 @@ Von-der-Gablentz-Str.	1 4946,17701 4872,17703 4816,17712
 Kemmannweg	1 -4207,14473 -4117,14458 -4053,14428 -3937,14340 -3911,14331 -3819,14302
 Privatstr. 13	1 13171,17335 13103,17280 13018,17264
 Preunelstr.	1 13012,17332 12965,17324 12930,17302 12865,17381
+Berliner Str. (Straßenbahntrasse)	3nocross::ignrte 10858,17721 10852,17801 10849,17848
+Berliner Str. (Richtungsfahrbahn)	1::igndisp 10858,17721 10849,17848
+Berliner Str. (Richtungsfahrbahn)	1::igndisp 10849,17848 10852,17801 10858,17721
 Karl-Liebknecht-Str. (Richtungsfahrbahn)	1::igndisp 11160,13492 11135,13452 11107,13410 11081,13372 11070,13357
 Karl-Liebknecht-Str. (Richtungsfahrbahn)	1::igndisp 11070,13357 11080,13373 11131,13455 11160,13492
 Karl-Liebknecht-Str. (Straßenbahntrasse)	3nocross::ignrte 11160,13492 11131,13455 11080,13373 11070,13357
@@ -929,6 +932,10 @@ Bitterfelder Str. (Mittelstreifen)	3nocross::ignrte 20230,16560 20328,16546 2035
 Zufahrt Bhf. Ahrensfelde	1 21251,18508 21224,18519 21285,18637 21309,18626
 Am Krusenick	1 22754,4919 22752,4957 22765,4956 22783,4943 22754,4919
 (Albrechtstr. - Neue Filandastr.)	1 5610,5227 5616,5182 5635,5145
+(Kurfürstenstr. - Hermsdorfer Damm)	1 2677,22448 2694,22424
+(Hermsdorfer Str. - Cyclopstr.)	1 4829,21714 4805,21715
+Straßenbahnhaltestelle	3nocross::ignrte 10680,18380 10710,18393 10784,18426
+Eintrachtstr. -> Breite Str.: Straßenbahnhaltestelle	3::igndisp 10650,18544 10710,18393 10784,18426
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3254,6 +3261,10 @@ Schranke	BNP:5:-188:trailer=15 23221,15226
 Schranke	BNP:3:-207:trailer=10 -1486,16789
 Schranke	BNP:1:-52:trailer=3 14967,4641
 Schranke	BNP:3:78:trailer=10 8702,13362
+Drängelgitter	BNP:3:-206:trailer=10 5746,22582
+Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238
+Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387
+Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392
 U-Bhf. Scharnweberstr.: Durchgang gesperrt	2::inwork 3987,17808 3997,17840
 Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 Neue Fahlenbergbrücke	2::inwork 31009,19 31080,-19
@@ -3341,7 +3352,6 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, mindes
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18688,-1498 18781,-1533 18853,-1656 18866,-1674
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
-Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10102,12384 10175,12435
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977

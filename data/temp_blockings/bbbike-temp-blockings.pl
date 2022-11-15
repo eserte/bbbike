@@ -17239,6 +17239,7 @@ EOF
        text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 22.11.2021 bis 31.12.2021, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: BEBELPLATZXMAS-2022
 #: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (2022 und 2023 vorübergehend am Bebelplatz, evtl. auch schon 2021)
 #: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971676-955635-weihnachtszauber-gendarmenmarkt.html (2021 schon am Bebelplatz, wegen Bauarbeiten bis 2023)
 #: by: https://www.weihnachtsmarkt-berlin.de/?date=20211019 (2021 noch immer am Gendarmenmarkt?)
@@ -21701,7 +21702,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.tagesspiegel.de/berlin/gruenflaeche-muss-dem-schloss-weichen-ab-heute-verschwindet-der-rasen-am-schlossplatz-/7593590.html
-# REMOVED (existiert nicht mehr) ---	2::inwork 10155,12494 10285,12306
+# REMOVED (existiert nicht mehr) ---	2::inwork 10152,12491 10285,12306
 EOF
      },
      { from  => 1359830530, # 2013-02-02 19:42
@@ -26303,9 +26304,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2022-11-14 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2022-11-15 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. November 2022 zwischen 09:15 und 10:15 Uhr',
+     { from  => $isodate2epoch->("2022-11-22 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2022-11-23 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 23. November 2022 zwischen 09:15 und 10:15 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26329,7 +26330,7 @@ EOF
 #: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15
 #: priority: #A
-#: next_check: 2022-11-16
+#: next_check: 2022-11-24
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::temp -1934,6804 -1854,6898
@@ -26394,7 +26395,7 @@ EOF
 	2::temp 9984,12426 9934,12420 9858,12410 9846,12516 9842,12565 9892,12596 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
 	2::temp 9919,12613 9953,12533 9846,12516
 	2::temp 9953,12533 9984,12426 10024,12431 10063,12438 9956,12617 9948,12631
-	2::temp 10063,12438 10155,12494 10176,12506 10243,12546 10300,12587
+	2::temp 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587
 	2::temp 10704,12595 10601,12521 10644,12469 10673,12434 10772,12515 10704,12595
 	2::temp 10094,12635 10176,12506
 	3 9877,12293 9873,12315 9858,12410 9780,12401
@@ -27045,7 +27046,7 @@ EOF
        source_id => '2147341699',
        data  => <<EOF,
 	q4::inwork; 5349,21198 5297,21243
-	q4::inwork; 5053,21452 5000,21488 4810,21730
+	q4::inwork; 5053,21452 5000,21488 4829,21714 4812,21737
 EOF
      },
      { from  => undef, # 
@@ -27561,7 +27562,7 @@ EOF
 #: next_check_id: ORANIENBURGER-2018
 # REMOVED (Richtung Süden ist zur Hälfte ein Radweg fertig; das restliche Stück darf man auf dem Gehweg fahren) ---	q4::inwork; 5136,21738 5210,21636 5311,21495 5320,21432 5333,21332 5343,21250 5349,21198
 # REMOVED (bis hier in beide Richtungen befahrbar) ---	q4::inwork; 5297,21243 5099,21410 5053,21452 5000,21488
-	q4::inwork; 5000,21488 4810,21730
+	q4::inwork; 5000,21488 4829,21714 4812,21737
 EOF
      },
      { from  => 1534878268, # 1522864912, # 2018-04-04 20:01
@@ -29637,7 +29638,7 @@ EOF
      },
      { from  => $isodate2epoch->("2019-05-24 00:00:00"),
        until => undef, # $isodate2epoch->("2021-09-14 18:00:00"),
-       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 30.11.2022',
+       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 30.11.2022, eventuell noch länger',
        type  => 'handicap',
        source_id => '2147344253', # bis Juni 2021 (!)
        data  => <<EOF,
@@ -29647,8 +29648,8 @@ EOF
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022 (wird nicht mehr aktualisiert)
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2022-10-22 (Fahrbahn wird wiederhergestellt)
-#: check_frequency: 45d
+#: last_checked: 2022-11-15 (Fahrbahn wird wiederhergestellt)
+#: check_frequency: 30d
 #: next_check: 2022-11-30
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
@@ -30466,7 +30467,7 @@ EOF
 #: source_id: viz2021:13.388878,52.516998,19.01.2022,11:00
 #: source_id: viz2021:13.388878,52.516998,18.06.2022,16:00
 #: by: https://www.berlin.de/en/events/2509318-2842498-staatsoper-fuer-alle.en.html
-	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506 10243,12546 10300,12587 10352,12627 10431,12709
+	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10152,12491 10176,12506 10243,12546 10300,12587 10352,12627 10431,12709
 	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
 	2::temp 9664,12387 9680,12232
 	2::temp 9737,12238 9702,12307 9664,12387
@@ -30677,7 +30678,7 @@ EOF
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-11-03 (mapillary)
+#: last_checked: 2022-11-15
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 	q4::inwork; 11329,12497 11209,12430
@@ -34478,14 +34479,12 @@ EOF
 EOF
      },
      { from  => 1640991600, # 2022-01-01 00:00
-       until => 1672527599, # 2022-12-31 23:59
+       until => 1668539124, # wurde bei rbb entfernt --- 1672527599, # 2022-12-31 23:59
        text  => 'Waldschulallee: Bauarbeiten, Fahrbahn zwischen Am Fliederbusch und Cordesstr. gesperrt, von Januar 2022 bis voraussichtlich Ende 2022',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/westend/c-bauen/erneuerung-der-trinkwasserleitung-dauert-bis-ende-2022_a330884',
        data  => <<EOF,
-#: also_indoor: traffic (H,G,B)
-#: note: laut rbb nur bis 15.11.2022
-#: next_check: 2022-11-15
+# REMOVED --- #: also_indoor: traffic (H,G,B) --- #: note: laut rbb nur bis 15.11.2022 --- #: next_check: 2022-11-15
 # REMOVED (hier nicht (mehr?) (laut mapillary) ---	q4::inwork 1047,10225 1159,10149 1205,10114 1212,10109 1274,10063
 	q4::inwork 1274,10063 1318,10031
 EOF
@@ -35642,14 +35641,14 @@ EOF
 EOF
      },
      { from  => 1655798400, # 2022-06-21 10:00
-       until => $isodate2epoch->("2022-11-21 17:00:00"), # 1661871600, # 2022-08-30 17:00
-       text  => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 21.11.2022 17:00',
+       until => $isodate2epoch->("2022-11-16 17:00:00"), # 1661871600, # 2022-08-30 17:00
+       text  => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, außerdem Einbahnstraßenregelung in der Eintrachtstr., vom 22.06.2022 10:00 bis 16.11.2022 17:00',
        type  => 'handicap',
-       source_id => 'viz2021:13.414144,52.572092,22.06.2022,10:00', # (bis 11.11.2022) (bis 15.11.2022) (bis 21.11.2022)
+       source_id => 'viz2021:13.414144,52.572092,22.06.2022,10:00', # (bis 11.11.2022) (bis 15.11.2022) (bis 21.11.2022) (bis 16.11.2022)
        data  => <<EOF,
 #: by: https://nitter.net/VIZ_Berlin/status/1539528243316985856#m
 #: by: https://nitter.net/pic/orig/media%2FFV2AstdX0AEWnIn.jpg
-# REMOVED (hier keine Einschränkungen mehr, siehe mapillary) --- Eintrachtstr.	q4::inwork; 10710,18393 10650,18544
+Eintrachtstr.	q4::inwork; 10710,18393 10650,18544
 	q4::inwork 10721,18575 10784,18426
 EOF
      },
@@ -36319,7 +36318,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-10
+#: last_checked: 2022-11-15
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 EOF
@@ -36351,7 +36350,7 @@ EOF
 #: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022)
 #: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022)
 #: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022)
-#: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022)
+#: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022) (inaktiv, schon am nächsten Tag)
 #: next_check: 2022-12-14
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr.	q3::inwork; 16563,7012 16428,7144
 Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
@@ -36539,7 +36538,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (ex-G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-11-08
+#: last_checked: 2022-11-15
 #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 EOF
@@ -36628,9 +36627,9 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 EOF
      },
      { from  => 1667499233, # 1665077956, # 2022-10-06 19:39
-       until => $isodate2epoch->("2022-12-11 17:00:00"), # 1666368032, # Sperrung aufgehoben --- 1672527600, # 2023-01-01 00:00
+       until => $isodate2epoch->("2023-01-30 17:00:00"), # 1666368032, # Sperrung aufgehoben --- 1672527600, # 2023-01-01 00:00
 #       text  => 'Chausseestr./Friedrichstr./Torstr./Hannoversche Str.: Gleisbauarbeiten, Kreuzungsbereich gesperrt, Dauer der Sperrung voraussichtlich bis zum 21.11.2022',
-       text  => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt (Gleisbauarbeiten), voraussichtlich bis zum 21.11.2022, evtl. noch länger',
+       text  => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt (Gleisbauarbeiten), voraussichtlich bis Ende Januar 2023',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ORANIENBURGERTORTRAM-2022
@@ -36641,6 +36640,7 @@ EOF
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
 #: by: https://nitter.net/tramathon/status/1583012911013761024
+#: by: https://www.bahninfo-forum.de/read.php?9,721453,749684#msg-749684 (Verlängerung bis 30.1.2023)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2022-11-03 vvv
@@ -36802,7 +36802,7 @@ EOF
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-11-08
+#: last_checked: 2022-11-15
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -37159,6 +37159,18 @@ EOF
 #: last_checked: 2022-11-13
 #: check_frequency: 45d
 	2::inwork 7646,6031 7638,5967
+EOF
+     },
+     { from  => 1668540097, # 2022-11-15 20:21
+       until => 1691445599, # 2023-08-07 23:59
+       text  => 'Schönfließer Str.: Einbahnstraßenregelung zwischen Senheimer Str. und Gollanczstr., offen Richtung Westen, bis 7. August 2023',
+       type  => 'handicap',
+       source_id => 'viz2021:13.288823,52.641792,15.11.2022,07:30',
+       data  => <<EOF,
+#: by: https://nitter.cz/VIZ_Berlin/status/1592390689735659522#m
+#: by: https://nitter.cz/pic/orig/media%2FFhimJ7cWQAU90M2.jpg (keine Regelung für Radfahrer)
+#: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
+	q4::inwork; 2112,26066 2207,26090 2293,26111 2402,26121
 EOF
      },
     );

@@ -3945,16 +3945,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: viz2021:13.196408,52.438127,09.11.2022,09:15
 #: source_id: viz2021:13.196408,52.438127,15.11.2022,09:15
 #: priority: #A
-#: next_check: 2022-11-16
+#: next_check: 2022-11-24
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -2600,5888 -1934,6804 -2095,6918
 	2::temp -1934,6804 -1854,6898
 ',
-         'from' => 1668380400,
+         'from' => 1669071600,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 15. November 2022 zwischen 09:15 und 10:15 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 23. November 2022 zwischen 09:15 und 10:15 Uhr',
          'type' => 'gesperrt',
-         'until' => 1668503700
+         'until' => 1669194900
        },
        undef,
        {
@@ -4448,8 +4448,8 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: note: laut Baustellenschild der Wasserbetriebe bis April 2021, mittlerweile bis September 2021, mittlerweile bis Juli 2022 (wird nicht mehr aktualisiert)
 #: also_indoor: traffic (ex-H,B,ex-G)
 #: osm_watch: way id="1006570991" version="1"
-#: last_checked: 2022-10-22 (Fahrbahn wird wiederhergestellt)
-#: check_frequency: 45d
+#: last_checked: 2022-11-15 (Fahrbahn wird wiederhergestellt)
+#: check_frequency: 30d
 #: next_check: 2022-11-30
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
@@ -4457,7 +4457,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
          'from' => 1558648800,
          'id' => 3108,
          'source_id' => '2147344253',
-         'text' => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 30.11.2022',
+         'text' => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis 30.11.2022, eventuell noch länger',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4613,7 +4613,7 @@ Andernacher Str.	q3::inwork; 19000,8509 18949,8437
 #: source_id: viz2021:13.417868,52.518038,02.09.2020,09:51 (Hochbaumaßnahme in der Alexanderstr., bis 31.8.2022) (inaktiv) (bis 31.12.2022)
 #: note: laut rbb mittlerweile bis 30.12.2022
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-11-03 (mapillary)
+#: last_checked: 2022-11-15
 #: check_frequency: 30d
 #: next_check: 2022-12-31
 	q4::inwork; 11329,12497 11209,12430
@@ -5402,20 +5402,7 @@ Scharnweberstr./Weichselstr.: Gehweg für Radfahrer frei, allerdings an der Trave
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (H,G,B)
-#: note: laut rbb nur bis 15.11.2022
-#: next_check: 2022-11-15
-# REMOVED (hier nicht (mehr?) (laut mapillary) ---	q4::inwork 1047,10225 1159,10149 1205,10114 1212,10109 1274,10063
-	q4::inwork 1274,10063 1318,10031
-',
-         'from' => 1640991600,
-         'id' => 3492,
-         'source_id' => 'https://www.berliner-woche.de/westend/c-bauen/erneuerung-der-trinkwasserleitung-dauert-bis-ende-2022_a330884',
-         'text' => 'Waldschulallee: Bauarbeiten, Fahrbahn zwischen Am Fliederbusch und Cordesstr. gesperrt, von Januar 2022 bis voraussichtlich Ende 2022',
-         'type' => 'handicap',
-         'until' => 1672527599
-       },
+       undef,
        undef,
        undef,
        {
@@ -6040,15 +6027,15 @@ Seydlitzstr.	q3::inwork 6349,2510 6459,2364
        {
          'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1539528243316985856#m
 #: by: https://nitter.net/pic/orig/media%2FFV2AstdX0AEWnIn.jpg
-# REMOVED (hier keine Einschränkungen mehr, siehe mapillary) --- Eintrachtstr.	q4::inwork; 10710,18393 10650,18544
+Eintrachtstr.	q4::inwork; 10710,18393 10650,18544
 	q4::inwork 10721,18575 10784,18426
 ',
          'from' => 1655798400,
          'id' => 3573,
          'source_id' => 'viz2021:13.414144,52.572092,22.06.2022,10:00',
-         'text' => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, vom 22.06.2022 10:00 bis 21.11.2022 17:00',
+         'text' => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, außerdem Einbahnstraßenregelung in der Eintrachtstr., vom 22.06.2022 10:00 bis 16.11.2022 17:00',
          'type' => 'handicap',
-         'until' => 1669046400
+         'until' => 1668614400
        },
        {
          'data' => '#: next_check_id: KWEISENBAHNBRUECKE-2022
@@ -6335,7 +6322,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-10
+#: last_checked: 2022-11-15
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -6359,7 +6346,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
 #: source_id: viz2021:13.491311,52.469102,12.09.2022,07:00 (bis 25.11.2022)
 #: source_id: viz2021:13.478746,52.477572,10.09.2022,13:00 (bis 23.11.2022)
 #: source_id: viz2021:13.493194,52.467852,10.09.2022,13:00 (bis 23.11.2022)
-#: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022)
+#: source_id: viz2021:13.47869,52.47755,14.11.2022,00:00 (bis 28.11.2022) (inaktiv, schon am nächsten Tag)
 #: next_check: 2022-12-14
 Köpenicker Landstr.: Umwege an der Kreuzung Baumschulenstr.	q3::inwork; 16563,7012 16428,7144
 Schreiblerstr.: Einbahnstraße	q4::inwork; 16494,6948 16375,7070
@@ -6478,7 +6465,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
        {
          'data' => '#: also_indoor: traffic (ex-G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-11-08
+#: last_checked: 2022-11-15
 #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 ',
@@ -6577,6 +6564,7 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 #: by: https://www.berliner-zeitung.de/news/bvg-schienenbruch-in-berlin-mitte-trambahn-chaos-bis-ende-dezember-li.273968
 #: by: https://unternehmen.bvg.de/pressemitteilung/da-muessen-wir-ran/
 #: by: https://nitter.net/tramathon/status/1583012911013761024
+#: by: https://www.bahninfo-forum.de/read.php?9,721453,749684#msg-749684 (Verlängerung bis 30.1.2023)
 #: note: Möglicherweise wegen der Sperrung verstärkter Verkehr in der Gartenstr. zwischen Invalidenstr. und Torstr.
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2022-11-03 vvv
@@ -6592,9 +6580,9 @@ Friedrichstr.	q4::inwork 9212,13471 9225,13389
 ',
          'from' => 1667499233,
          'id' => 3643,
-         'text' => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt (Gleisbauarbeiten), voraussichtlich bis zum 21.11.2022, evtl. noch länger',
+         'text' => 'Friedrichstr.: Fahrbahn zwischen Oranienburger Str. und Torstr. gesperrt (Gleisbauarbeiten), voraussichtlich bis Ende Januar 2023',
          'type' => 'handicap',
-         'until' => 1670774400
+         'until' => 1675094400
        },
        {
          'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,721782,722126#msg-722126
@@ -6727,7 +6715,7 @@ Triftstr.	q3::inwork 7356,15350 7464,15409
 #: source_id: bvg2021:n40#BVG310118_0
 #: also_indoor: traffic (H,B)
 #: priority: #A
-#: last_checked: 2022-11-08
+#: last_checked: 2022-11-15
 #: check_frequency: 30d
 #: next_check: 2023-02-14
 	q4::inwork; 13696,11920 13515,11969
@@ -7049,6 +7037,19 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'text' => 'In den Alboingärten: Zufahrt zur Eythstr. komplett gesperrt, auch für Radfahrer und Fußgänger, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://nitter.cz/VIZ_Berlin/status/1592390689735659522#m
+#: by: https://nitter.cz/pic/orig/media%2FFhimJ7cWQAU90M2.jpg (keine Regelung für Radfahrer)
+#: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
+	q4::inwork; 2112,26066 2207,26090 2293,26111 2402,26121
+',
+         'from' => 1668540097,
+         'id' => 3683,
+         'source_id' => 'viz2021:13.288823,52.641792,15.11.2022,07:30',
+         'text' => 'Schönfließer Str.: Einbahnstraßenregelung zwischen Senheimer Str. und Gollanczstr., offen Richtung Westen, bis 7. August 2023',
+         'type' => 'handicap',
+         'until' => 1691445599
        }
      
 );
