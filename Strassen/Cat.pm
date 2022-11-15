@@ -18,7 +18,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '2.04';
+$VERSION = '2.05';
 
 use File::Basename qw(basename);
 
@@ -54,6 +54,7 @@ my %versioned_file_to_cat;
 			);
     my @gesperrt_3_19_add = (
 			     sub { /^2s(:q\d)?(:(?:inwork|temp))?$/ },
+ 			     sub { /^2::xmas$/ }, # handled in older BBBike, but normally rendered without christmas tree
 			    );
 
     my @handicap_3_16     = (
