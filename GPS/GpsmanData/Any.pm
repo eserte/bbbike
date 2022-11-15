@@ -26,26 +26,8 @@ sub load {
 
     if ($file =~ /\.mps$/i) {
 	$class->load_mps($file, %args);
-    } elsif ($file =~ /\.gpx$/i) {
+    } elsif ($file =~ /\.gpx(?:\.gz)?$/i) {
 	$class->load_gpx($file, %args);
-    } elsif ($file =~ /\.gpx\.gz$/i) {
-	require File::Temp;
-	require IO::Zlib;
-	my $fh = IO::Zlib->new;
-	$fh->open($file, "rb")
-	    or die "Can't open gzipped file '$file' : $!";
-	# Unfortunately XML::Twig cannot handle IO::Zlib globs, so
-	# create a temporary
-	my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_tmp.gpx");
-	{
-	    local $/ = 8192;
-	    while(<$fh>) {
-		print $tmpfh $_;
-	    }
-	    close $tmpfh
-		or die "While writing to temporary file '$tmpfile': $!";
-	}
-	$class->load_gpx($tmpfile, %args);
     } elsif ($file =~ m{\.xml(?:\.gz)?$} && eval {
 	require GPS::GpsmanData::SportsTracker;
 	GPS::GpsmanData::SportsTracker->match($file);
@@ -76,6 +58,26 @@ sub load_mps {
 
 sub load_gpx {
     my($class, $file_or_fh, %args) = @_;
+
+    if ($file_or_fh =~ /\.gpx\.gz$/i) {
+	require File::Temp;
+	require IO::Zlib;
+	my $fh = IO::Zlib->new;
+	$fh->open($file_or_fh, "rb")
+	    or die "Can't open gzipped file '$file_or_fh' : $!";
+	# Unfortunately XML::Twig cannot handle IO::Zlib globs, so
+	# create a temporary
+	my($tmpfh,$tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => "_tmp.gpx");
+	{
+	    local $/ = 8192;
+	    while(<$fh>) {
+		print $tmpfh $_;
+	    }
+	    close $tmpfh
+		or die "While writing to temporary file '$tmpfile': $!";
+	}
+	$file_or_fh = "$tmpfile";
+    }
 
     my $timeoffset = delete $args{timeoffset};
     my $type_to_vehicle = delete $args{typetovehicle};

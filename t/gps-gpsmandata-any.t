@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 95;
+plan tests => 96;
 
 use GPS::GpsmanData::Any;
 
@@ -95,6 +95,9 @@ EOF
 	my $tmpgzfile = _create_temporary_gpx_gz($gpsman_gpx10_sample_file);
 	my $gps_gz = GPS::GpsmanData::Any->load("$tmpgzfile");
 	eq_or_diff $gps_gz, $gps, 'loading gzipped gpx file';
+
+	my $gps_gz_loadgpx = GPS::GpsmanData::Any->load_gpx("$tmpgzfile");
+	eq_or_diff $gps_gz_loadgpx, $gps, 'loading gzipped gpx file using load_gpx';
     }
 
     {
