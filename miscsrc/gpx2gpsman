@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2014,2016,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2014,2016,2021,2022 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -43,8 +43,14 @@ GetOptions(
 	   'type-to-vehicle!' => \$type_to_vehicle,
 	  )
     or die usage;
-my $file = shift
-    or usage "Please specify gpx file";
+my $file = shift;
+if (!defined $file || $file eq '-') {
+    if ($do_check_roundtrip || $if_roundtrip_ok) {
+	die "-check-roundtrip or -if-roundtrip-ok is not supported when reading GPX file from stdin.\n";
+    }
+    warn "Reading GPX file from stdin...\n";
+    $file = \*STDIN;
+}
 @ARGV and usage "Please specify only one gpx file";
 
 my @gps_gpsmandata_any_options;
@@ -63,7 +69,7 @@ if ($do_check_roundtrip) {
 	my $success = check_roundtrip();
 	die "Roundtrip check failed, stop conversion.\n" if !$success;
     }
-    my $gpsman = GPS::GpsmanData::Any->load($file, @gps_gpsmandata_any_options);
+    my $gpsman = GPS::GpsmanData::Any->load_gpx($file, @gps_gpsmandata_any_options);
     if ($outfile) {
 	my $outdir = File::Basename::dirname($outfile);
 	if (!$outdir) {
@@ -113,6 +119,11 @@ Just do a roundtrip check:
 
 Convert GPX files to GPSMan files. The conversion is done using the
 module L<GPS::GpsmanData::Any>.
+
+If the I<source.gpx> filename is omitted, or C<-> is used instead,
+then the GPX file is expected to be read from stdin. This is not
+possible if the C<-check-roundtrip> or C<-if-roundtrip-ok> options are
+set.
 
 =head1 OPTIONS
 
