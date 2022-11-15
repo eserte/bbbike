@@ -54,10 +54,9 @@ sub trkseg_split_by_time {
 	    my($prev_trkpt) = $trkseg->findnodes('(./*[local-name(.)="trkpt"])[1]');
 	    while (my $next_trkpt = $prev_trkpt->nextNonBlankSibling) {
 		# XXX do we need to check if $next_trkpt is really a trkpt?
-		my $prev_time = DateTime::Format::ISO8601->parse_datetime($prev_trkpt->findvalue('./*[local-name(.)="time"]'));
-		my $next_time = DateTime::Format::ISO8601->parse_datetime($next_trkpt->findvalue('./*[local-name(.)="time"]'));
-		if ($next_time->epoch - $prev_time->epoch >= $delta_time) {
-		    warn "Need to split between $prev_time and $next_time.\n" if $v;
+		my $this_delta_time = trkpt_delta_time($prev_trkpt, $next_trkpt);
+		if ($this_delta_time >= $delta_time) {
+		    warn "Need to split between " . trkpt_label($prev_trkpt) . " and " . trkpt_label($next_trkpt) . ".\n" if $v;
 		    my $new_trkseg = $doc->createElement('trkseg');
 		    $trk->insertBefore($new_trkseg, $trkseg);
 		    my($node_to_move) = $trkseg->findnodes('(./*[local-name(.)="trkpt"])[1]');
@@ -71,6 +70,18 @@ sub trkseg_split_by_time {
 	    }
 	}
     }
+}
+
+sub trkpt_delta_time {
+    my($prev_trkpt, $next_trkpt) = @_;
+    my $prev_time = DateTime::Format::ISO8601->parse_datetime($prev_trkpt->findvalue('./*[local-name(.)="time"]'));
+    my $next_time = DateTime::Format::ISO8601->parse_datetime($next_trkpt->findvalue('./*[local-name(.)="time"]'));
+    $next_time->epoch - $prev_time->epoch;
+}
+
+sub trkpt_label {
+    my($trkpt) = @_;
+    $trkpt->findvalue('./*[local-name(.)="time"]');
 }
 
 __END__
