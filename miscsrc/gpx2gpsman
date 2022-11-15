@@ -18,6 +18,7 @@ use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	);
 
+use File::Basename qw(basename);
 use Getopt::Long;
 
 use GPS::GpsmanData::Any;
@@ -29,6 +30,8 @@ sub usage (;$) {
 usage: $0 [--check-roundtrip] [--if-roundtrip-ok] [-o ...] [-timeoffset hours|automatic] [-type-to-vehicle] gpxfile
 EOF
 }
+
+my $mode = basename($0) =~ /any2gpsman/ ? 'any' : 'gpx';
 
 my $do_check_roundtrip;
 my $if_roundtrip_ok;
@@ -45,6 +48,9 @@ GetOptions(
     or die usage;
 my $file = shift;
 if (!defined $file || $file eq '-') {
+    if ($mode eq 'any') {
+	die "Reading files from stdin is not supported with any2gpsman.\n";
+    }
     if ($do_check_roundtrip || $if_roundtrip_ok) {
 	die "-check-roundtrip or -if-roundtrip-ok is not supported when reading GPX file from stdin.\n";
     }
@@ -69,7 +75,12 @@ if ($do_check_roundtrip) {
 	my $success = check_roundtrip();
 	die "Roundtrip check failed, stop conversion.\n" if !$success;
     }
-    my $gpsman = GPS::GpsmanData::Any->load_gpx($file, @gps_gpsmandata_any_options);
+    my $gpsman;
+    if ($mode eq 'any') {
+	$gpsman = GPS::GpsmanData::Any->load($file, @gps_gpsmandata_any_options);
+    } else {
+	$gpsman = GPS::GpsmanData::Any->load_gpx($file, @gps_gpsmandata_any_options);
+    }
     if ($outfile) {
 	my $outdir = File::Basename::dirname($outfile);
 	if (!$outdir) {
@@ -115,6 +126,11 @@ Just do a roundtrip check:
 
     gpx2gpsman [-timeoffset hours|automatic] -check-roundtrip source.gpx
 
+Support for other file formats (see L<GPS::GpsmanData::Any> for
+supported formats):
+
+    any2gpsman file -o target.trk
+
 =head1 DESCRIPTION
 
 Convert GPX files to GPSMan files. The conversion is done using the
@@ -123,7 +139,7 @@ module L<GPS::GpsmanData::Any>.
 If the I<source.gpx> filename is omitted, or C<-> is used instead,
 then the GPX file is expected to be read from stdin. This is not
 possible if the C<-check-roundtrip> or C<-if-roundtrip-ok> options are
-set.
+set, and also not possible with C<any2gpsman>.
 
 =head1 OPTIONS
 
