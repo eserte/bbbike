@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 92;
+plan tests => 95;
 
 use GPS::GpsmanData::Any;
 
@@ -84,6 +84,17 @@ EOF
 	## Roundtrip does not work here: 1.0 vs 1.1, and metadata is
 	## handled differently in gpx 1.1
 	#ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx 1.0 file';
+
+	my $gps_loadgpx = GPS::GpsmanData::Any->load_gpx($tmpfile);
+	eq_or_diff $gps_loadgpx, $gps, 'load_gpx works and returns the same like load';
+
+	my $fh = IO::File->new("$tmpfile", 'r');
+	my $gps_fh = GPS::GpsmanData::Any->load_gpx($fh);
+	eq_or_diff $gps_fh, $gps, 'loading from a filehandle';
+
+	my $tmpgzfile = _create_temporary_gpx_gz($gpsman_gpx10_sample_file);
+	my $gps_gz = GPS::GpsmanData::Any->load("$tmpgzfile");
+	eq_or_diff $gps_gz, $gps, 'loading gzipped gpx file';
     }
 
     {
@@ -438,6 +449,20 @@ sub _create_temporary_gpx {
     my($tmpfh,$tmpfile) = tempfile(SUFFIX => '_gpsmandataany.gpx', UNLINK => 1)
 	or die $!;
     print $tmpfh $gpx_string;
+    close $tmpfh
+	or die $!;
+
+    $tmpfile;
+}
+
+sub _create_temporary_gpx_gz {
+    my $gpx_string = shift;
+
+    require Compress::Zlib;
+
+    my($tmpfh,$tmpfile) = tempfile(SUFFIX => '_gpsmandataany.gpx.gz', UNLINK => 1)
+	or die $!;
+    print $tmpfh Compress::Zlib::memGzip($gpx_string);
     close $tmpfh
 	or die $!;
 

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2014,2016,2017,2021 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2014,2016,2017,2021,2022 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,9 @@ package GPS::GpsmanData::Any;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.12';
+$VERSION = '1.13';
+
+use Scalar::Util qw(openhandle);
 
 use GPS::GpsmanData;
 
@@ -73,7 +75,7 @@ sub load_mps {
 }
 
 sub load_gpx {
-    my($class, $file, %args) = @_;
+    my($class, $file_or_fh, %args) = @_;
 
     my $timeoffset = delete $args{timeoffset};
     my $type_to_vehicle = delete $args{typetovehicle};
@@ -153,7 +155,11 @@ sub load_gpx {
     require XML::Twig;
 
     my $twig = XML::Twig->new;
-    $twig->parsefile($file);
+    if (openhandle $file_or_fh) {
+	$twig->parse($file_or_fh);
+    } else {
+	$twig->parsefile($file_or_fh);
+    }
 
     my @wpts;
 
@@ -421,6 +427,8 @@ GPX files can also be converted directly (without checking the
 filename suffix) using the C<load_gpx> method:
 
     $gps = GPS::GpsmanData::Any->load_gpx($gpx_file);
+
+This method also accepts a filehandle instead of a file name.
 
 Optional argument is C<timeoffset>, which may be set to a number for
 the time offset to UTC in hours, or to C<automatic>, for automatically
