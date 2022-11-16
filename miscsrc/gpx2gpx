@@ -23,7 +23,7 @@ my $geo_distance;
 GetOptions
     (
      'verbose|v' => \$v,
-     'trkseg-split-by-time=i' => sub {
+     'trkseg-split-by-time=f' => sub {
 	 my $delta_time = $_[1];
 	 require DateTime::Format::ISO8601;
 	 push @opdefs, { op => 'trkseg_split', args => ['time', $delta_time] };
