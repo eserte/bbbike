@@ -110,3 +110,45 @@ sub trkpt_label {
 }
 
 __END__
+
+=head1 NAME
+
+gpx2gpx - apply operations on GPX files
+
+=head1 SYNOPSIS
+
+    gpx2gpx [--trkseg-split-by-time=...] [--trkseg-split-by-dist=...] src.gpx > dst.gpx
+
+=head1 DESCRIPTION
+
+C<gpx2gpx> takes a source GPX file as an argument (alternatively, if
+omitted or C<-> is specified, then the GPX data is read from stdin),
+applies the specified L</OPERATIONS> (multiple are OK), and writes the
+modified GPX to stdout.
+
+=head2 OPERATIONS
+
+=head3 C<--trkseg-split-by-time=I<seconds>>
+
+Split a C<< <trkseg> >> element if the time difference between two
+adjacent C<< <trkpt> >> elements is greater or equal the specified
+number of seconds.
+
+=head3 C<--trkseg-split-by-dist=I<meters>>
+
+Split a C<< <trkseg> >> element if the distance between two adjacent
+C<< <trkpt> >> elements is greater or equal the specified number of
+meters.
+
+=head2 BUGS AND LIMITATIONS
+
+Even if there are no changes, the resulting GPX file may have
+(non-structural) differences against the source file. Currently
+observed is a different ordering of XML attributes. It is possible
+that insignificant whitespace may change.
+
+=head1 AUTHOR
+
+Slaven Rezic <srezic@cpan.org>
+
+=cut
