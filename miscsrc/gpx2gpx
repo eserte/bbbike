@@ -1,0 +1,154 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2022 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+
+use strict;
+use warnings;
+
+use Getopt::Long;
+use XML::LibXML;
+
+my $v;
+my @opdefs;
+
+my $geo_distance;
+
+GetOptions
+    (
+     'verbose|v' => \$v,
+     'trkseg-split-by-time=f' => sub {
+	 my $delta_time = $_[1];
+	 require DateTime::Format::ISO8601;
+	 push @opdefs, { op => 'trkseg_split', args => ['time', $delta_time] };
+     },
+     'trkseg-split-by-dist=f' => sub {
+	 my $meters = $_[1];
+	 require Geo::Distance;
+	 $geo_distance = Geo::Distance->new;
+	 $geo_distance->formula('hsin');
+	 push @opdefs, { op => 'trkseg_split', args => ['dist', $meters] };
+     },
+    )
+    or die "usage?";
+my $file = shift;
+@ARGV and die "usage?";
+
+my @load_xml_opts;
+if ($file && $file ne '-') {
+    @load_xml_opts = (location => $file);
+} else {
+    @load_xml_opts = (IO => \*STDIN);
+}
+
+my $doc = XML::LibXML->load_xml(@load_xml_opts);
+
+for my $opdef (@opdefs) {
+    no strict 'refs';
+    &{$opdef->{op}}(@{ $opdef->{args} });
+}
+
+print $doc->toString;
+
+sub trkseg_split {
+    my($by, $delta) = @_;
+    for my $trk ($doc->findnodes('/*[local-name(.)="gpx"]/*[local-name(.)="trk"]')) {
+	for my $trkseg ($trk->findnodes('./*[local-name(.)="trkseg"]')) {
+	    my($prev_trkpt) = $trkseg->findnodes('(./*[local-name(.)="trkpt"])[1]');
+	    while (my $next_trkpt = $prev_trkpt->nextNonBlankSibling) {
+		# XXX do we need to check if $next_trkpt is really a trkpt?
+		my $do_split;
+		if ($by eq 'time') {
+		    my $this_delta_time = trkpt_delta_time($prev_trkpt, $next_trkpt);
+		    $do_split = $this_delta_time >= $delta;
+		} elsif ($by eq 'dist') {
+		    my $this_dist = trkpt_dist($prev_trkpt, $next_trkpt);
+		    $do_split = $this_dist >= $delta;
+		} else {
+		    die "Unhandled by parameter '$by'";
+		}
+		if ($do_split) {
+		    warn "Need to split between " . trkpt_label($prev_trkpt) . " and " . trkpt_label($next_trkpt) . " (by $by).\n" if $v;
+		    my $new_trkseg = $doc->createElement('trkseg');
+		    $trk->insertBefore($new_trkseg, $trkseg);
+		    my($node_to_move) = $trkseg->findnodes('(./*[local-name(.)="trkpt"])[1]');
+		    while($node_to_move != $next_trkpt) {
+			my $next_node = $node_to_move->nextSibling;
+			$new_trkseg->addChild($node_to_move);
+			$node_to_move = $next_node;
+		    }
+		}
+		$prev_trkpt = $next_trkpt;
+	    }
+	}
+    }
+}
+
+sub trkpt_delta_time {
+    my($prev_trkpt, $next_trkpt) = @_;
+    my $prev_time = DateTime::Format::ISO8601->parse_datetime($prev_trkpt->findvalue('./*[local-name(.)="time"]'));
+    my $next_time = DateTime::Format::ISO8601->parse_datetime($next_trkpt->findvalue('./*[local-name(.)="time"]'));
+    $next_time->epoch - $prev_time->epoch;
+}
+
+sub trkpt_dist {
+    my($prev_trkpt, $next_trkpt) = @_;
+    my($prev_lat, $prev_lon) = ($prev_trkpt->getAttribute('lat'), $prev_trkpt->getAttribute('lon'));
+    my($next_lat, $next_lon) = ($next_trkpt->getAttribute('lat'), $next_trkpt->getAttribute('lon'));
+    $geo_distance->distance('meter', $prev_lon, $prev_lat, $next_lon, $next_lat);
+}
+
+sub trkpt_label {
+    my($trkpt) = @_;
+    $trkpt->findvalue('./*[local-name(.)="time"]');
+}
+
+__END__
+
+=head1 NAME
+
+gpx2gpx - apply operations on GPX files
+
+=head1 SYNOPSIS
+
+    gpx2gpx [--trkseg-split-by-time=...] [--trkseg-split-by-dist=...] src.gpx > dst.gpx
+
+=head1 DESCRIPTION
+
+C<gpx2gpx> takes a source GPX file as an argument (alternatively, if
+omitted or C<-> is specified, then the GPX data is read from stdin),
+applies the specified L</OPERATIONS> (multiple are OK), and writes the
+modified GPX to stdout.
+
+=head2 OPERATIONS
+
+=head3 C<--trkseg-split-by-time=I<seconds>>
+
+Split a C<< <trkseg> >> element if the time difference between two
+adjacent C<< <trkpt> >> elements is greater or equal the specified
+number of seconds.
+
+=head3 C<--trkseg-split-by-dist=I<meters>>
+
+Split a C<< <trkseg> >> element if the distance between two adjacent
+C<< <trkpt> >> elements is greater or equal the specified number of
+meters.
+
+=head2 BUGS AND LIMITATIONS
+
+Even if there are no changes, the resulting GPX file may have
+(non-structural) differences against the source file. Currently
+observed is a different ordering of XML attributes. It is possible
+that insignificant whitespace may change.
+
+=head1 AUTHOR
+
+Slaven Rezic <srezic@cpan.org>
+
+=cut
