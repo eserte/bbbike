@@ -66,13 +66,13 @@ Hämmerlingstr.: Gegenverkehrsregelung	X::inwork 22000,6245
 #: last_checked ^^^
 # 
 #: by: https://berliner-abendblatt.de/2022/04/27/das-sind-die-aktuellen-staufallen-in-berlin/ (bis Anfang Juni 2022)
-#: source_id: viz2021:13.450705,52.480066,28.04.2022,09:00 (hier: bis 4.7.2022) (mittlerweile bis 30.9.2022) (bis 31.10.2022) (bis 30.11.2022)
+#: source_id: viz2021:13.450705,52.480066,28.04.2022,09:00 (hier: bis 4.7.2022) (mittlerweile bis 30.9.2022) (bis 31.10.2022) (bis 30.11.2022) (bis 18.11.2022)
 #: source_id: viz2021:13.45071,52.48007,28.04.2022,09:00 (zusätzlicher Eintrag) (entfernt)
 #: by: https://nitter.net/VIZ_Berlin/status/1519602332090179585#m (hier: bis Anfang Juni 2022)
 #: by: https://nitter.net/pic/media%2FFRWA3_cWYAAYbnf.jpg%3Fname%3Dorig (südlich der Kreuzung)
 #: last_checked: 2022-11-07
-#: next_check: 2022-11-30
-#: valid: -20221130
+#: next_check: 2022-11-18
+#: valid: -20221118
 Treptower Str./Werrastr.: Gegenverkehrsregelung	X::inwork 13650,8320
 # 
 #: source_id: viz2021:13.406514,52.51352,16.03.2021,08:00 (bis Ende 2022)
@@ -242,25 +242,7 @@ Kastanienallee: Gegenverkehrsregelung, Radfahrer Richtung Osten müssen vom linke
 # 
 # REMOVED (steht noch, aber ausgeschaltet) --- #: next_check_id: LANGHANS-2021 --- #: last_checked: 2021-10-12 --- #: next_check: 2021-10-25 --- Roelckestr./Lehderstr.: temporäre Ampel	X::inwork 12842,16032
 # 
-#: next_check_id: BAHNHOF-2021
-#: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/
-#: by: https://viz.berlin.de/2022/05/bahnhofstr/ (keine Gegenverkehrsregelung mehr)
-#: add_fragezeichen: Gibt es noch immer eine Gegenverkehrsregelung?
-#: source_id: 2147347174 (bis 19.7.2021)
-#: source_id: viz2021:13.440334,52.59161,06.05.2021,09:00 (bis 30.9.2021, Gesamtmaßnahme bis Anfang 2022) (mittlerweile inaktiv)
-#: source_id: viz2021:13.44047,52.591526,07.02.2022,04:30 (bis 28.2.2022) (mittlerweile bis 20.5.2022) (mittlerweile bis 21.5.2022) (inaktiv)
-#: source_id: viz2021:13.440454,52.591541,07.11.2022,04:30 (bis 18.11.2022)
-#: last_checked: 2022-05-17 (mapillary) vvv
-# REMOVED --- #: check_frequency: 60d vvv
-#: next_check: 2022-11-18 vvv
-# REMOVED --- #: valid: 20210222-20220521 vvv
-#: valid: 20221107-20221118 vvv
-Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12672,20720
-Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12723,20691
-#: valid ^^^
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: BAHNHOF-2021 --- #: by: https://viz.berlin.de/2021/02/blankenbg-bahnhofstr/ --- #: by: https://viz.berlin.de/2022/05/bahnhofstr/ (keine Gegenverkehrsregelung mehr) --- #: add_fragezeichen: Gibt es noch immer eine Gegenverkehrsregelung? --- #: source_id: 2147347174 (bis 19.7.2021) --- #: source_id: viz2021:13.440334,52.59161,06.05.2021,09:00 (bis 30.9.2021, Gesamtmaßnahme bis Anfang 2022) (mittlerweile inaktiv) --- #: source_id: viz2021:13.44047,52.591526,07.02.2022,04:30 (bis 28.2.2022) (mittlerweile bis 20.5.2022) (mittlerweile bis 21.5.2022) (inaktiv) --- #: source_id: viz2021:13.440454,52.591541,07.11.2022,04:30 (bis 18.11.2022) --- #: last_checked: 2022-05-17 (mapillary) vvv --- # REMOVED --- #: check_frequency: 60d vvv --- #: next_check: 2022-11-18 vvv --- # REMOVED --- #: valid: 20210222-20220521 vvv --- #: valid: 20221107-20221118 vvv --- Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12672,20720 --- Bahnhofstr.: (Blankenburg): Gegenverkehrsregelung	X::inwork 12723,20691 --- #: valid ^^^ --- #: next_check ^^^ --- # REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: OSTBAHNHOF-2021
 #: note: eigentlich nur Fußgängerampel nordöstlich der Einmündung; Anforderungsampel

@@ -35193,18 +35193,19 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Zähringerstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, voraussichtlich bis November 2022',
+       until => $isodate2epoch->("2022-11-26 17:00:00"), # undef, # XXX
+       text  => 'Zähringerstr.: Sperrung der Fahrbahn bis 26.11.2022', # früher: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, voraussichtlich bis November 2022
        type  => 'handicap',
        data  => <<EOF,
 #: osm_watch: way id="874517258" version="9"
 #: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
+#: source_id: viz2021:13.31119,52.49612,16.11.2022,07:00 (Sperrung bis 26.11.2022)
 #: last_checked: 2022-09-30
-#: check_frequency: 30d
-#: next_check: 2022-11-30
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2022-11-26
 # REMOVED (hier nicht mehr) ---	q4::inwork; 4277,9895 4126,9932
-	q4::inwork; 4126,9932 3927,9935
+	q4::inwork 4126,9932 3927,9935
 EOF
      },
      { from  => undef, # 
@@ -37171,6 +37172,37 @@ EOF
 #: by: https://nitter.cz/pic/orig/media%2FFhimJ7cWQAU90M2.jpg (keine Regelung für Radfahrer)
 #: by: https://nitter.cz/pic/orig/media%2FFhimJQXWYAAo6bf.jpg
 	q4::inwork; 2112,26066 2207,26090 2293,26111 2402,26121
+EOF
+     },
+     { from  => $isodate2epoch->("2022-11-17 09:00:00"),
+       until => 1669003200, # 2022-11-21 05:00
+       text  => 'Freiheit: Bauarbeiten, Fahrbahn zwischen Pichelswerderstr. und der Klärwerkstr. gesperrt, von 18.11.2022 9 Uhr bis 21.11.2022 5 Uhr',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1265548.php',
+       data  => <<EOF,
+#: by: https://berliner-abendblatt.de/2022/11/16/sanierungsarbeiten-an-der-freiheit/
+	q4::inwork -1258,13552 -2410,13746 -2576,13777
+EOF
+     },
+     { from  => 1668466800, # 2022-11-15 00:00
+       until => 1685548800, # 2023-05-31 18:00
+       text  => 'Grünzug Tirschenreuther Ring - Marienfelder Allee: Sanierung, Sperrung zwischen November 2022 und Frühjahr 2023',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1265181.php',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/aktuelles/pressemitteilungen/2022/437-wegesanierung-im-gruenzug-ehemalige-hampelsche-baumschule.jpg
+	2::inwork 7019,655 7032,533 7231,236
+EOF
+     },
+     { from  => 1668624940, # 2022-11-16 19:55
+       until => 1668690000, # 2022-11-17 14:00
+       text  => 'Havelchaussee und Kronprinzesinnenweg: Sperrung der Straßen wegen einer "forstlichen Maßnahme zur Seuchenabwehr", am 17.11.2022 von 8 bis 14 Uhr',
+       type  => 'gesperrt',
+       source_id => 'https://viz.berlin.de/2022/11/verkehrsvorschau-171122/',
+       data  => <<EOF,
+	2::temp -3296,3686 -2218,5133 -927,6888 -913,6905
+	2::temp -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+	2::temp -927,6888 -1006,6911
 EOF
      },
     );

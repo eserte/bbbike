@@ -76,7 +76,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9334,9670 9387,9804 
 #: source_id: viz2021:13.458831,52.499243,08.07.2021,05:00 (Leitungsarbeiten bis 23.7.2021) (inaktiv)
 #: source_id: viz2021:13.457826,52.499571,30.03.2022,07:00 (bis 30.9.2022) (bis 16.12.2022)
 #: XXX ab 30.3.2022 beginnen Bauarbeiten zwischen Ehrenbergstr. und Modersohnstr., laut rbb bis 17.7.2022
-#: last_checked: 2022-11-13
+#: last_checked: 2022-11-16
 #: check_frequency: 90d
 #: next_check: 2022-12-16
 Stralauer Allee: wird hier auch eine Radspur entstehen?	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722
@@ -1312,7 +1312,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 15437,16491 15662,16649
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: by: https://api.fixmyberlin.de/api/plannings/180
 #: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/bezirk-und-senat-bauen-fuer-45-millionen-euro-radverkehrsinfrastruktur-aus_a313995
-#: by: https://www.infravelo.de/projekt/hansastrasse-noerdlicher-abschnitt/ (geschützter Radfahrstreifen, 1. Quartal 2022 - 4. Quartal 2024) (mittlerweile gelöscht) (und wieder da) (mittlerweile 1. Quartal 2023 - 4. Quartal 2024)
+#: by: https://www.infravelo.de/projekt/hansastrasse-noerdlicher-abschnitt/ (geschützter Radfahrstreifen, 1. Quartal 2022 - 4. Quartal 2024) (mittlerweile gelöscht) (und wieder da) (mittlerweile 1. Quartal 2023 - 4. Quartal 2024) (3. Quartal 2023 - 4. Quartal 2024)
 #: osm_watch: way id="40520565" version="38"
 #: osm_watch: way id="51317007" version="29"
 #: osm_watch: way id="624116238" version="10"
@@ -1429,7 +1429,7 @@ Mühlenstr.: Verbesserung -> evtl. Radspuren oder Asphaltierung?	?::projected 123
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/uebersicht-baubereich-muehlenstrasse-2.pdf
 #: by: https://www.berliner-woche.de/lankwitz/c-bauen/umstrittener-radweg-durch-gemeindepark-wird-gebaut_a323963 (Bauarbeiten ab Mai 2022)
 #: XXX laut fixmyberlin "ready"; Anfang Juni 2022 waren keine Bauarbeiten sichtbar
-#: osm_watch: way id="24971799" version="11"
+#: osm_watch: way id="24971799" version="12"
 #: last_checked: 2022-10-15
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2022-05-31
@@ -2308,9 +2308,9 @@ Wasserweg: wird hier asphaltiert werden?	?::projected 15680,8914 15873,8884 1598
 #: by: https://nitter.cz/VIZ_Berlin/status/1592429094901518336#m (noch im November 2022)
 #: osm_watch: way id="33231802" version="21"
 #: XXX Halteverbote bis 30.11.2022
-#: last_checked: 2022-11-12
-# REMOVED --- #: next_check: 2023-09-30
-#: next_check: 2022-11-15
+#: last_checked: 2022-11-16
+#: check_frequency: 7d
+#: next_check: 2022-11-30
 Bulgarische Str.: Fahrradstraße entsteht	?::inwork 15591,8848 15680,8914 15778,8990
 # 
 # REMOVED (done) --- #: next_check_id: RATHAUSWEDDING-2017 --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.312877.php --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5598.html --- #: XXX Fertigstellung der Platzgestaltung für Ende 2016 vorgesehen --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7007 --- #: XXX Vorschlag für eine Platzbenennung: Elise-und-Otto-Hampel-Platz --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7231 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7807 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8202 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8284 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8306 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/258_2017_ds_255_und_732_benennnung_elise_und_otto_hampel_platz.pdf --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf (Umbenennung) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8798 --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.720802.php --- #: XXX laut osm ist die Umbenennung passiert (changeset von 2018-07-26) --- #: osm_watch: way id="23175110" version="7" --- #: last_checked: 2018-06-08 --- #: check_frequency: 30d --- Rathaus Wedding: Umbenennung zu Elise-und-Otto-Hampel-Weg	? 7012,15571 7129,15686 7115,15702 7129,15717
@@ -3527,7 +3527,8 @@ Gartenstr. (Biesdorf): wird eventuell noch kürzer werden	?::projected 21193,1133
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1189211.php (Sprengung des Schornsteins)
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/schornstein-weicht-wohnungsbau_a341315
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2022_45_3033_3096_online.pdf (Änderung + Auslegung)
-#: osm_watch: way id="43566318" version="15"
+#: osm_watch: way id="43566268" version="23"
+# REMOVED (gelöscht) --- #: osm_watch: way id="43566318" version="20"
 # REMOVED (gelöscht) --- #: osm_watch: way id="37739269" version="12"
 #: osm_watch: way id="1022558675" version="4"
 #: XXX Hier sind mittlerweile Bauarbeiten; offiziell "Verbot für Fahrzeuge aller Art, bis auf Anlieger", als Radfahrer kommt man eigentlich noch problemlos vorbei; außerdem nun "Gehweg, Radfahrer frei" im Bereich der Baustelle am Richard-Kolkwitz-Weg
@@ -4217,7 +4218,7 @@ Elsestr.: wird hier ein modaler Filter entstehen?	? 4656,24379 4665,24436
 # REMOVED --- #: XXX laut fritz bis 14.02.2020, mittlerweile nicht mehr gelistet (Einbahnstraßenregelung ist aber noch da) --- #: XXX Einbahnstraße ist ausgeschildert, aber kaum Einschränkungen in der Fahrbahnbreite --- #: last_checked: 2020-03-05 --- #: check_frequency: 7d --- # REMOVED --- #: next_check; 2020-02-14 --- Kommandantenstr.: ist hier wieder eine Einbahnstraße?	? 10437,11352 10593,11120
 # 
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/sicherer-weg-zur-sternwarte_a246928
-#: last_checked: 2022-11-12
+#: last_checked: 2022-11-16
 #: check_frequency: 90d
 Alt-Treptow, vor der Sternwarte: Planung einer Überquerungshilfe, evtl. eine Ampel	?::projected 15399,9101 15452,9079 15451,9129
 # 
@@ -5266,7 +5267,7 @@ Schönhauser Allee: Radwege sollen zu einer protected bike lane umgewandelt werde
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/beteiligung/bplan_4-62_entwurf_2019-05-27.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2021/pressemitteilung.1054906.php (Beschluss des B-Plans, kein Datum für die Realisierung)
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/urbane-spreestadt-entsteht_a302229
-#: osm_watch: way id="31525765" version="16"
+#: osm_watch: way id="31525765" version="17"
 #: last_checked: 2022-09-16
 #: check_frequency: 360d
 Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperrt	? 5243,12303 5299,12420
@@ -5432,7 +5433,7 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1261592.php (Bauarbeiten an den Radwegen, 7.11.2022-14.12.2022)
 #: by: https://viz.berlin.de/2022/11/verkehrsvorschau-071122/ (Richtung Süden zuerst, eine Woche nach dem 7.11.2022)
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/bauarbeiten-auf-dem-geh-und-dem-radweg_a362891
-#: source_id: viz2021:13.470029,52.540596,07.11.2022,07:00 (hier nur bis 14.11.2022) (bis 16.11.2022)
+#: source_id: viz2021:13.470029,52.540596,07.11.2022,07:00 (hier nur bis 14.11.2022) (bis 16.11.2022) (inaktiv)
 #: source_id: viz2021:13.470029,52.540596,16.11.2022,09:00 (bis 14.12.2022)
 #: last_checked: 2022-11-11
 #: check_frequency: 60d
@@ -6195,7 +6196,7 @@ Güterbahnhof Köpenick: hier entsteht die Ostumfahrung Bahnhofstraße	?::projected
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll_fahrrat_pankow17-02-2021.pdf (Erwähnung)
 #: source_id: 2147345990 (Fahrbahnsanierungsarbeiten, vermutlich wird nichts für die Radverkehrsanlage gemacht)
 #: osm_watch: way id="119201840" version="23"
-#: osm_watch: way id="190701274" version="10"
+#: osm_watch: way id="190701274" version="11"
 #: osm_watch: way id="949605667" version="2"
 #: last_checked: 2022-11-15
 #: check_frequency: 360d
@@ -6465,7 +6466,7 @@ Hohenzollerndamm: "Protektionsabschnitte" geplant	?::projected 4342,9301 4415,93
 #: check_frequency: 180d
 Lindenstr.: PBL geplant	?::projected 10020,11262 9973,11150 9935,11067 9834,10840 9829,10830 9807,10788 9797,10771 9777,10719 9770,10590 9795,10512 9858,10350 9873,10285
 # 
-#: by: http://www.infravelo.de/projekt/prinzenstrasse/ (3. Quartal 2022 - 4. Quartal 2022) (mittlerweile 4. Quartal 2022 - 4. Quartal 2022) (4. Quartal 2022 - 2. Quartal 2023)
+#: by: http://www.infravelo.de/projekt/prinzenstrasse/ (3. Quartal 2022 - 4. Quartal 2022) (mittlerweile 4. Quartal 2022 - 4. Quartal 2022) (4. Quartal 2022 - 2. Quartal 2023) (Status: in Bau)
 #: by: https://nitter.cz/BA_Xhain/status/1587337869118607362#m (01.11.20222 - 15.12.2022)
 #: last_checked: 2022-10-28
 #: check_frequency: 90d

@@ -308,7 +308,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: next_check_id: STRALAUER-2019
 #: note: früher: Gehweg für Radfahrer frei, einige Schäden im Asphalt
-#: last_checked: 2022-11-13 (Ausschilderung fehlt noch) vvv
+#: last_checked: 2022-11-16 (Ausschilderung fehlt noch) vvv
 #: check_frequency: 14d vvv
 # REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2022-07-17
 	RW1; 13596,10722 13633,10705
@@ -321,7 +321,7 @@ Fahrradstraße nur im rechten Abzweig der Fahrbahn	RW7; 13178,10623 13206,10651
 asphaltiert	RW2; 13919,10583 13986,10549 14103,10489 14218,10430
 #: 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2022-11-13
+#: last_checked: 2022-11-16
 #: next_check: 2022-12-16
 #: historical_note: früher: gemeinsamer Geh- und Radweg, einige Schäden im Asphalt, RW2;
 provisorische Radspur	RW4; 14218,10430 14405,10340 14558,10264
@@ -1152,7 +1152,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 # REMOVED --- #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;) --- #: XXX ab 16.12.2021 vermutlich wieder eine Radspur, Kfz-Verkehr wird dann nur noch eine Spur haben
 #: XXX wann kommt die nächste Verkehrsumstellung?
 #: priority: #A
-#: last_checked: 2022-11-13 vvv
+#: last_checked: 2022-11-16 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2028-01-01 vvv
 geschützte Radspur	RW4; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -7301,7 +7301,7 @@ Grünbeschichtung	RW4; 12407,14470 12522,14385
 #: last_checked: 2022-11-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-12-31 vvv
-#: osm_watch: way id="335479077" version="16"
+#: osm_watch: way id="335479077" version="17"
 teilweise provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535
 # REMOVED --- #: osm_watch: way id="41954398" version="20"
 # REMOVED --- #: osm_watch: way id="4615031" version="39"

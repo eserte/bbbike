@@ -5848,17 +5848,18 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
          'data' => '#: osm_watch: way id="874517258" version="9"
 #: note: mittlerweile steht als Endedatum September 2022 --- vorfristig beendet?
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
+#: source_id: viz2021:13.31119,52.49612,16.11.2022,07:00 (Sperrung bis 26.11.2022)
 #: last_checked: 2022-09-30
-#: check_frequency: 30d
-#: next_check: 2022-11-30
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2022-11-26
 # REMOVED (hier nicht mehr) ---	q4::inwork; 4277,9895 4126,9932
-	q4::inwork; 4126,9932 3927,9935
+	q4::inwork 4126,9932 3927,9935
 ',
          'from' => undef,
          'id' => 3540,
-         'text' => 'Zähringerstr.: Bauarbeiten der Wasserbetriebe, Einbahnstraßenregelung offen Richtung Osten, voraussichtlich bis November 2022',
+         'text' => 'Zähringerstr.: Sperrung der Fahrbahn bis 26.11.2022',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1669478400
        },
        undef,
        undef,
@@ -6024,19 +6025,7 @@ Seydlitzstr.	q3::inwork 6349,2510 6459,2364
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://nitter.net/VIZ_Berlin/status/1539528243316985856#m
-#: by: https://nitter.net/pic/orig/media%2FFV2AstdX0AEWnIn.jpg
-Eintrachtstr.	q4::inwork; 10710,18393 10650,18544
-	q4::inwork 10721,18575 10784,18426
-',
-         'from' => 1655798400,
-         'id' => 3573,
-         'source_id' => 'viz2021:13.414144,52.572092,22.06.2022,10:00',
-         'text' => 'Kavalierstr.: Bauarbeiten an der Breiten Str., Umwege erforderlich, außerdem Einbahnstraßenregelung in der Eintrachtstr., vom 22.06.2022 10:00 bis 16.11.2022 17:00',
-         'type' => 'handicap',
-         'until' => 1668614400
-       },
+       undef,
        {
          'data' => '#: next_check_id: KWEISENBAHNBRUECKE-2022
 #: by: https://www.koenigs-wusterhausen.de/1013639/Eisenbahnunterfuehrung
@@ -7050,6 +7039,40 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'text' => 'Schönfließer Str.: Einbahnstraßenregelung zwischen Senheimer Str. und Gollanczstr., offen Richtung Westen, bis 7. August 2023',
          'type' => 'handicap',
          'until' => 1691445599
+       },
+       {
+         'data' => '#: by: https://berliner-abendblatt.de/2022/11/16/sanierungsarbeiten-an-der-freiheit/
+	q4::inwork -1258,13552 -2410,13746 -2576,13777
+',
+         'from' => 1668672000,
+         'id' => 3684,
+         'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1265548.php',
+         'text' => 'Freiheit: Bauarbeiten, Fahrbahn zwischen Pichelswerderstr. und der Klärwerkstr. gesperrt, von 18.11.2022 9 Uhr bis 21.11.2022 5 Uhr',
+         'type' => 'handicap',
+         'until' => 1669003200
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/aktuelles/pressemitteilungen/2022/437-wegesanierung-im-gruenzug-ehemalige-hampelsche-baumschule.jpg
+	2::inwork 7019,655 7032,533 7231,236
+',
+         'from' => 1668466800,
+         'id' => 3685,
+         'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2022/pressemitteilung.1265181.php',
+         'text' => 'Grünzug Tirschenreuther Ring - Marienfelder Allee: Sanierung, Sperrung zwischen November 2022 und Frühjahr 2023',
+         'type' => 'gesperrt',
+         'until' => 1685548800
+       },
+       {
+         'data' => '	2::temp -3296,3686 -2218,5133 -927,6888 -913,6905
+	2::temp -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+	2::temp -927,6888 -1006,6911
+',
+         'from' => 1668624940,
+         'id' => 3686,
+         'source_id' => 'https://viz.berlin.de/2022/11/verkehrsvorschau-171122/',
+         'text' => 'Havelchaussee und Kronprinzesinnenweg: Sperrung der Straßen wegen einer "forstlichen Maßnahme zur Seuchenabwehr", am 17.11.2022 von 8 bis 14 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1668690000
        }
      
 );
