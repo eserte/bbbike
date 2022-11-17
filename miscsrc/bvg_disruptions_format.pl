@@ -38,7 +38,7 @@ for my $dd (@{ $d->{data}->{allDisruptions}->{disruptions} }) {
 	($sourceids_all->{$sourceid} ? colored($sourceid, (!$sourceids_current->{$sourceid} ? "yellow on_black" : "green on_black")) . " INUSE" : $sourceid) . "\n" .
 	"$dd->{beginnAbschnittName} - $dd->{endeAbschnittName}\n" .
 	"$from - " . ($dd->{gueltigBisDatum} // "?") . " " . ($dd->{gueltigBisZeit} // "") . "\n" .
-	"$dd->{textIntAuswirkung}\n";
+	highlight_words($dd->{textIntAuswirkung}) . "\n";
     $text .= "SEV: $dd->{sev}\n" if $dd->{sev} ne "";
     push @records, {from=>$from, text=>$text};
 }
@@ -49,6 +49,32 @@ binmode STDOUT, ":utf8";
 for my $record (@records) {
     print $record->{text};
     print "="x70, "\n";
+}
+
+sub highlight_words {
+    my($text) = @_;
+    return undef if !defined $text;
+    $text =~ s{\b(
+		   Verkehrsunfall(es|s)?
+	       |   Feuerwehreinsatz(es)?
+	       |   Polizeieinsatz(es)?
+	       |   Demonstration
+	       |   Kundgebung
+	       |   Veranstaltung
+	       |   Sportveranstaltung
+	       )\b}{wrap_friendly_coloring(['bold'], $1)}eigx;
+    $text;
+}
+
+sub wrap_friendly_coloring {
+    my($color, $text) = @_;
+    my @token = split /\s+/, $text;
+    if (@token > 1) {
+	my $last_token = pop @token;
+	join("", map { colored($color, "$_ ") } @token) . colored($color, $last_token);
+    } else {
+	colored($color, $token[0]);
+    }
 }
 
 __END__
