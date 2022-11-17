@@ -5174,30 +5174,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1423180617789972483 (bis Ende Oktober 2021) (mittlerweile bis 30.11.2021)
-# REMOVED --- #: note: nordöstlicher Bürgersteig ist wenig frequentiert; Bordsteine müssen überwunden werden, wenn man zu spät von der Fahrbahn herunterfährt; mittlerweile dürfen Radfahrer offziell über den Gehweg fahren; außerdem sind etwa 100m der Fahrbahn wieder befahrbar (q3 -> q2)
-#: by: https://www.deutsches-architekturforum.de/thread/14507-bauprojekte-am-velodrom-prenzlauer-berg/?postID=723688#post723688
-#: by: https://www.wg-a.com/projects/conrad-blenkle-strasse-36-berlin/ (Fertigstellung 05/2023)
-#: add_fragezeichen: Sind die Bauarbeiten beendet und die Fahrbahn wieder frei?
-#: note: In der Praxis kommt man als Radfahrer hier gut durch.
-#: XXX zurzeit Gehwegarbeiten, evtl. wird der Gehweg freigegeben und damit die Fahrbahn zumindest für Radfahrer nutzbar sein?
-#: also_indoor: traffic (G,B)
-#: osm_watch: way id="8084121" version="37"
-#: osm_watch: way id="75617418" version="6"
-#: last_checked: 2022-11-10
-#: check_frequency: 7d
-# REMOVED --- #: check_frequency: 60d
-#: next_check: 2023-05-31
-	q3::inwork 13057,14267 13158,14117
-',
-         'from' => 1666449676,
-         'id' => 3424,
-         'source_id' => 'viz2021:13.444,52.53356,26.07.2021,08:18',
-         'text' => 'Conrad-Blenkle-Str.: Fahrbahn zwischen Kniprodestr. und Erich-Boltze-Str. nur für Fußgänger frei, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -6196,20 +6173,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
          'type' => 'handicap',
          'until' => 1669392000
        },
-       {
-         'data' => '#: source_id: viz2021:13.56812,52.40301,20.08.2022,06:00
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2022/pressemitteilung.1237046.php
-#: by: https://berliner-abendblatt.de/2022/08/22/umfangreiche-bauarbeiten-in-der-strasse-zur-gartenstadt/
-#: by: https://www.berliner-woche.de/altglienicke/c-bauen/strasse-zur-gartenstadt-wird-erneuert_a355592
-#: also_indoor: traffic (H(einseitig),G(kürzer),B)
-	q4::inwork 21742,115 21769,-30 21800,-109
-',
-         'from' => 1661112782,
-         'id' => 3606,
-         'text' => 'Zur Gartenstadt: zwischen Buntzelstr. und Grottewitzstr. gesperrt, bis 30.12.2022 ',
-         'type' => 'handicap',
-         'until' => 1672441200
-       },
+       undef,
        undef,
        undef,
        {
@@ -6311,7 +6275,7 @@ Kloedenstr.	q3::inwork 9654,8991 9669,9080
        {
          'data' => '#: add_fragezeichen: Sind die Bauarbeiten in der Krautstr. beendet?
 #: also_indoor: traffic (none)
-#: last_checked: 2022-11-15
+#: last_checked: 2022-11-17
 # REMOVED --- #: check_frequency: 14d
 	q4::inwork 12081,12236 12059,12172
 ',
@@ -6454,7 +6418,7 @@ Winterfeldtstr.	q3::inwork 6630,9990 6741,10017 6903,10056
        {
          'data' => '#: also_indoor: traffic (ex-G,B)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2022-11-15
+#: last_checked: 2022-11-17
 #: check_frequency: 7d
 	q3::inwork 10755,13152 10846,13362
 ',
@@ -6546,7 +6510,7 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
        },
        {
          'data' => '#: next_check_id: ORANIENBURGERTORTRAM-2022
-#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022)
+#: source_id: viz2021:13.38709,52.527156,05.10.2022,03:30 (bis 9.11.2022) (bis 21.11.2022) (bis 1.12.2022)
 #: source_id: bvg2021:142#BVG311081_0
 #: source_id: bvg2021:m5#BVG309500_0 (hier bis 11.12.2022)
 #: by: https://viz.berlin.de/2022/10/verkehrsvorschau-071022/ (bis Ende Dezember 2022)
@@ -6558,7 +6522,7 @@ etwa 70m gesperrt, auf Gehweg ausweichen	q3::inwork 16720,12614 16576,12612
 #: XXX Bis wann ist die Kreuzung gesperrt?
 #: last_checked: 2022-11-03 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2022-11-21 vvv
+#: next_check: 2022-12-01 vvv
 # REMOVED (hier nichts) --- Chausseestr.	q4::inwork 9207,13493 9212,13471
 # REMOVED (Radfahrfurt) --- Hannoversche Str.	q3::inwork 9212,13471 9047,13446
 # REMOVED (Radfahrfurt) --- Torstr.	q3::inwork 9353,13521 9212,13471
@@ -6643,24 +6607,13 @@ Fahrbahn noch passierbar	q2::inwork 7616,20633 7577,20450
          'type' => 'handicap',
          'until' => 1673020800
        },
-       {
-         'data' => '#: also_indoor: traffic (B)
-#: note: laut rbb ist die Danckelmannstr. von der Christstr. aus noch befahrbar
-	q4::inwork 2641,12458 2658,12312
-',
-         'from' => 1665291600,
-         'id' => 3649,
-         'source_id' => 'viz2021:13.29031,52.51775,10.10.2022,07:00',
-         'text' => 'Danckelmannstr.: in Höhe Gardes-du-Corps-Str. wegen Baustelle gesperrt, vom 10.10.2022 07:00 bis 25.11.2022 17:00',
-         'type' => 'handicap',
-         'until' => 1669392000
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: TRIFTGERICHT-2022
 #: XXX Bis wann gehen die Bauarbeiten? vvv
 #: also_indoor: traffic (B) vvv
-#: last_checked: 2022-10-19 vvv
+#: last_checked: 2022-11-08 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier nicht) --- Genter Str.	q3::inwork 7138,15437 7270,15307
 Triftstr.	q3::inwork 7085,15226 7248,15296 7270,15307
@@ -6974,16 +6927,7 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'type' => 'handicap',
          'until' => 1669996800
        },
-       {
-         'data' => '	q4::inwork 541,11464 461,11455
-',
-         'from' => 1667714400,
-         'id' => 3678,
-         'source_id' => 'viz2021:13.25888,52.51048,07.11.2022,07:00',
-         'text' => 'Westendallee: Baustelle zwischen Preußenallee und Oldenburgallee, evtl. sind auch Radfahrer betroffen, vom 07.11.2022 07:00 bis 25.11.2022 18:00',
-         'type' => 'handicap',
-         'until' => 1669395600
-       },
+       undef,
        {
          'data' => '	2::inwork 23113,30450 23015,30519
 ',
@@ -7042,6 +6986,9 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
        },
        {
          'data' => '#: by: https://berliner-abendblatt.de/2022/11/16/sanierungsarbeiten-an-der-freiheit/
+#: by: https://viz.berlin.de/2022/11/freiheit/
+#: by: https://viz.berlin.de/wp-content/uploads/Freiheit.png (keine Sonderregelung für Radfahrer erkennbar)
+#: source_id: viz2021:13.213784,52.531767,18.11.2022,09:00 (hier: bis 21.11.2022 Ende des Tages)
 	q4::inwork -1258,13552 -2410,13746 -2576,13777
 ',
          'from' => 1668672000,
@@ -7062,17 +7009,30 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'type' => 'gesperrt',
          'until' => 1685548800
        },
+       undef,
        {
-         'data' => '	2::temp -3296,3686 -2218,5133 -927,6888 -913,6905
-	2::temp -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4046,5505 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3283,8739 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
-	2::temp -927,6888 -1006,6911
+         'data' => '#: next_check_id: TEGELERBRUECKE-2021
+#: osm_watch: note 3442821 2
+#: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
+#: next_check: 2023-12-01
+	2::temp -784,16658 -719,16608
 ',
-         'from' => 1668624940,
-         'id' => 3686,
-         'source_id' => 'https://viz.berlin.de/2022/11/verkehrsvorschau-171122/',
-         'text' => 'Havelchaussee und Kronprinzesinnenweg: Sperrung der Straßen wegen einer "forstlichen Maßnahme zur Seuchenabwehr", am 17.11.2022 von 8 bis 14 Uhr',
+         'from' => undef,
+         'id' => 3687,
+         'source_id' => 'https://www.bz-berlin.de/berlin/reinickendorf/anwohner-stoppen-rad-raser-mit-einem-eigenen-zaun',
+         'text' => 'Straße R (Umleitung Berlin-Kopenhagen-Radweg): Zaun, Durchfahrt für Radfahrer nicht möglich',
          'type' => 'gesperrt',
-         'until' => 1668690000
+         'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 6860,8878 6664,8787 6644,8780
+',
+         'from' => 1668598860,
+         'id' => 3688,
+         'source_id' => 'viz2021:13.34791,52.48535,17.11.2022,12:41',
+         'text' => 'Belziger Str.: Bauarbeiten zwischen Gothaer Str. und Eisenacher Str., evtl. sind auch Radfahrer betroffen, vom 17.11.2022 12:41 bis 09.12.2022 23:59 ',
+         'type' => 'handicap',
+         'until' => 1670626740
        }
      
 );

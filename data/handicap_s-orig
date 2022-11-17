@@ -229,19 +229,20 @@ Saarbrücker Str.: Einbahnstraßenregelung	q3::inwork; 10895,13961 11052,13870
 #: source_id: viz2021:13.402613,52.528076,11.07.2022,12:00 (bis 22.8.2022: nun ab Auguststr.) (mittlerweile bis 19.9.2022) (bis 12.10.2022) (bis 14.11.2022) (inaktiv)
 #: source_id: viz2021:13.402613,52.528076,15.11.2022,08:00 (bis 16.12.2022)
 #: priority: #A
-#: last_checked: 2022-11-15 vvv
+#: last_checked: 2022-11-17 vvv
 #: check_frequency: 3d vvv
-#: next_check: 2022-11-16 vvv
+# REMOVED --- #: next_check: 2022-11-16 vvv
 Gipsstr.: Fahrbahn an der Rosenthaler Str. gesperrt, Ausweichen auf Bürgersteig, Bordsteine	q3::inwork 10199,13446 10350,13376
 # REMOVED --- #: XXX prüfen: wird man Richtung Norden via Gormannstr. geführt? --- #: next_check: 2022-04-25
 # REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, Radweg wird auf den Bürgersteig geführt	q2::inwork; 10324,13459 10350,13376
 # REMOVED --- Rosenthaler Str.: Fahrbahn gesperrt, offizielle Umleitung über Gormannstr.	q4::inwork; 10350,13376 10324,13459
 # REMOVED (hier nicht mehr) --- Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork 10263,13594 10302,13525 10324,13459
-Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork 10324,13459 10350,13376
+#: note: anscheinend nur noch in einer Richtung gesperrt?
+Rosenthaler Str.: Fahrbahn wegen Gleisarbeiten gesperrt	q4::inwork; 10350,13376 10324,13459
 # REMOVED (hier nicht mehr) --- Rosenthaler Str./Steinstr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q4::inwork 10302,13525 10318,13528
 # REMOVED (hier nicht mehr) --- Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10220,13694 10263,13594
 # REMOVED (hier nicht mehr) --- Rosenthaler Str./Auguststr.: Kreuzungsbereich wegen Gleisarbeiten gesperrt	q3::inwork 10142,13556 10263,13594 10309,13601
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: source_id ^^^
@@ -279,7 +280,7 @@ Chausseestr.: Radweg auf gegenüberliegenden Bürgersteig	q2::inwork; 8732,14098 8
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2022-11-11 (daf) vvv
+#: last_checked: 2022-11-16 (daf) vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 8999,12498 9011,12423
@@ -396,7 +397,7 @@ Scharrenstr. und Kleine Gertraudenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweich
 #: by: https://blog.sbb.berlin/25-januar-digitale-wiedereroeffnung-des-hauses-unter-den-linden/
 #: also_indoor: traffic
 #: priority: #B vvv
-#: last_checked: 2022-11-15 vvv
+#: last_checked: 2022-11-16 (daf) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2021-04-01 vvv
 #: osm_watch: way id="153698394" version="12"

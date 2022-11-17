@@ -2835,6 +2835,7 @@ Busspur gilt 6-24 Uhr	RW5; 11706,13635 11652,13564 11561,13451 11539,13425 11486
 #: by: Christian Bewernitz
 #: confirmed_by: srt
 Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12161,13711 12038,13685 11907,13655 11868,13646 11823,13635 11785,13625
+	RW3; 11785,13625 11762,13619 11706,13635
 	RW4; 11276,13408 11308,13389
 	RW2; 11308,13389 11399,13333 11451,13301
 #: note: daneben ist noch eine Busspur
@@ -5978,7 +5979,7 @@ Verbundsteinpflaster	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 # 
 	RW4; 9141,12320 9131,12438
 #: next_check_id: MITTEL-2019 vvv
-#: last_checked: 2022-11-11 (daf) vvv
+#: last_checked: 2022-11-16 (daf) vvv
 #: check_frequency: 60d vvv
 #: XXX früher RW3, zurzeit ein Abschnitt wegen Bauarbeiten aufgehoben (teilweise steht die Baustelleneinrichtung auf der ehem. Radspur)
 	RW0; 9131,12438 9121,12514
