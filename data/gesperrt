@@ -14,8 +14,9 @@ Skalitzer Str.	1 12899,10595 12930,10621 12985,10665
 Oppelner Str.	1 13028,10629 12978,10581
 Oberbaumstr.	1 12985,10665 13015,10659 13082,10634
 Oberbaumstr.	1 13082,10634 13028,10629
-am Hackeschen Markt (Süd)	1 10132,12941 10117,12973 10105,13004 9932,13109
-am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
+am Hackeschen Markt (Süd)	1 10132,12941 10117,12973 10105,13004 10000,13079 9938,13114
+am Hackeschen Markt (Nord)	1 9938,13114 10014,13108 10074,13103 10220,13098 10264,13097
+Monbijouplatz	1 10000,13079 10014,13108
 Dennewitzplatz	1 7866,9902 7862,9918 7813,10112
 Winterfeldtplatz	1 7049,9833 7038,10088
 Winterfeldtplatz	1 7080,10098 7118,9870 7126,9825
@@ -1169,7 +1170,6 @@ Prenzlau, Bahnhofsvorplatz	1 39918,102499 39966,102492 39949,102431 39946,102422
 Markt (Luckenwalde)	1 -4358,-35445 -4307,-35421 -4274,-35352
 Markt (Luckenwalde)	1 -4274,-35352 -4248,-35379 -4309,-35471
 Breite Str. (Luckenwalde)	1s -4299,-35514 -4208,-35409
-Breite Str. (Luckenwalde)	1s -4568,-35783 -4478,-35736
 Schulstr. (Joachimsthal)	1s 32331,64049 32388,64047 32459,64042
 Mittelstreifen nicht überquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht überquerbar	3::igndisp -974,128015 -724,127995 -719,128043
@@ -3262,6 +3262,7 @@ Schranke	BNP:3:-207:trailer=10 -1486,16789
 Schranke	BNP:1:-52:trailer=3 14967,4641
 Schranke	BNP:3:78:trailer=10 8702,13362
 Drängelgitter	BNP:3:-206:trailer=10 5746,22582
+Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:inwork 5522,8011 5520,8132 5573,8197
 Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9713,12392 9730,12238
 Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9737,12238 9702,12307 9664,12387
 Bebelplatz: Weihnachtsmarkt, fast der gesamte Platz ist gesperrt	2::xmas 9680,12232 9702,12307 9713,12392

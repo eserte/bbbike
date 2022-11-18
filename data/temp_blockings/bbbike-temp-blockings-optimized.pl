@@ -5603,7 +5603,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: also_indoor: traffic (B,H(unvollständig),G)
 #: osm_watch: way id="1047544509" version="2"
 #: osm_watch: way id="1047544510" version="1"
-#: last_checked: 2022-11-01 vvv
+#: last_checked: 2022-11-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 	q4::inwork 13797,7267 13762,7321
@@ -5626,7 +5626,8 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
        {
          'data' => '#: next_check_id: MASSMANN-2022
 #: XXX Stehen evtl. im Zusammenhang mit den Bauarbeiten in der Maßmannstr.
-#: osm_watch: note 3030340 4
+# REMOVED (superseded) --- #: osm_watch: note 3030340 4
+#: osm_watch: way id="4531667" version="8"
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (ex-G,B)
 #: last_checked: 2022-11-13
@@ -5673,13 +5674,12 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 #: add_fragezeichen: Wann sind die Bauarbeiten in der Braunschweiger Straße und Zeitzer Straße beendet? Wann wird die Einbahnstraßenregelung aufgehoben? vvv
 #: XXX Laut Baustellenschild der Wasserbetriebe bis September 2022; Halteverbot in der Kanner Str. bis 2022-12-03 vvv
 #: priority: #B vvv
-#: last_checked: 2022-11-13 (mapillary) vvv
+#: last_checked: 2022-11-18 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2022-12-03 vvv
 #: also_indoor: traffic (G[unvollständig],B) vvv
 # REMOVED (laut osm nicht mehr) ---	q4::inwork; 13043,7234 13150,7254 13326,7291 13368,7300
-#: osm_watch: way id="423009430" version="17"
-	q4::inwork; 13368,7300 13476,7330
+# REMOVED (hier nicht mehr) --- #: osm_watch: way id="423009430" version="17" ---	q4::inwork; 13368,7300 13476,7330
 # REMOVED (offen) ---	q4::inwork 13326,7291 13325,7210
 #: osm_watch: way id="173067346" version="23"
 	q4::inwork 13341,7423 13373,7426 13476,7330
@@ -5693,7 +5693,7 @@ Kreuzungsbereich Ringstr./Baseler Str. gesperrt, auch für Radfahrer	q3::inwork 3
 ',
          'from' => undef,
          'id' => 3524,
-         'text' => 'Braunschweiger Str.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Westen; außerdem Sperrung der Zeitzer Str. und Kanner Str., Ende der Bauarbeiten unbekannt',
+         'text' => 'Kanner Str.: Bauarbeiten, Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -6332,14 +6332,15 @@ Mellener Str./Löptener Str.	q4::inwork; 10756,-2128 10758,-1949 10906,-1946 1098
          'until' => undef
        },
        {
-         'data' => '	2::inwork 29983,69156 30282,68716 30583,68268 30651,67633 31485,65740 31877,65202 32155,64848 32184,64705
+         'data' => '#: source_id: LS/221-E/22/151
+	2::inwork 29983,69156 30282,68716 30583,68268 30651,67633 31485,65740 31877,65202 32155,64848 32184,64705
 ',
          'from' => 1662876000,
          'id' => 3624,
          'source_id' => 'LS/221-E/22/114',
-         'text' => 'Joachimsthal - Friedrichswalde: Bauabeiten, Straße gesperrt, 12.09.2022 bis 19.11.2022',
+         'text' => 'Joachimsthal - Friedrichswalde: Bauabeiten, Straße gesperrt, 12.09.2022 bis 21.11.2022',
          'type' => 'gesperrt',
-         'until' => 1668870000
+         'until' => 1669024800
        },
        {
          'data' => '	2::inwork 7431,34989 7346,32257
@@ -6889,7 +6890,8 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
          'until' => 1688130000
        },
        {
-         'data' => '#: last_checked: 2022-11-07
+         'data' => '#: last_checked: 2022-11-18
+#: note: wobei es so aussieht, dass man nun von Westen her legal auf dem aufgemalten Radweg fahren kann
 	q4::inwork 13891,7961 13946,7918
 ',
          'from' => undef,
@@ -6901,7 +6903,7 @@ Modellpark Wuhlheide -> Hegemeisterweg	3::inwork 18437,7752 18406,7760 18325,777
        {
          'data' => '#: next_check_id: AMTREPTOWERPARK-2020
 #: XXX nördlicher Geh- und Radweg wegen Bauarbeiten gesperrt
-#: last_checked: 2022-11-07
+#: last_checked: 2022-11-18
 #: check_frequency: 60d
 	q4::inwork; 14382,9299 14242,9448 14185,9509 14089,9610
 ',
@@ -6988,15 +6990,16 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
          'data' => '#: by: https://berliner-abendblatt.de/2022/11/16/sanierungsarbeiten-an-der-freiheit/
 #: by: https://viz.berlin.de/2022/11/freiheit/
 #: by: https://viz.berlin.de/wp-content/uploads/Freiheit.png (keine Sonderregelung für Radfahrer erkennbar)
-#: source_id: viz2021:13.213784,52.531767,18.11.2022,09:00 (hier: bis 21.11.2022 Ende des Tages)
+#: by: https://www.berliner-woche.de/spandau/c-verkehr/freiheit-ist-gesperrt_a364235
+#: source_id: viz2021:13.213784,52.531767,18.11.2022,09:00 (hier: bis 21.11.2022 Ende des Tages) (bis 9:00)
 	q4::inwork -1258,13552 -2410,13746 -2576,13777
 ',
          'from' => 1668672000,
          'id' => 3684,
          'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2022/pressemitteilung.1265548.php',
-         'text' => 'Freiheit: Bauarbeiten, Fahrbahn zwischen Pichelswerderstr. und der Klärwerkstr. gesperrt, von 18.11.2022 9 Uhr bis 21.11.2022 5 Uhr',
+         'text' => 'Freiheit: Bauarbeiten, Fahrbahn zwischen Pichelswerderstr. und der Klärwerkstr. gesperrt, von 18.11.2022 9 Uhr bis 21.11.2022 morgens',
          'type' => 'handicap',
-         'until' => 1669003200
+         'until' => 1669017600
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/aktuelles/pressemitteilungen/2022/437-wegesanierung-im-gruenzug-ehemalige-hampelsche-baumschule.jpg
@@ -7012,6 +7015,7 @@ Gehweg für Radfahrer frei	q2::inwork; 19048,9146 18977,9322
        undef,
        {
          'data' => '#: next_check_id: TEGELERBRUECKE-2021
+#: by: https://www.tagesspiegel.de/berlin/berliner-radweg-mit-hinderniszaun-sollen-fahrradfahrer-hier-klettern-8877799.html
 #: osm_watch: note 3442821 2
 #: XXX Bleibt der Zaun auch nach Eröffnung der neuen Tegeler Brücke bestehen?
 #: next_check: 2023-12-01

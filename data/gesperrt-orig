@@ -21,8 +21,9 @@ Skalitzer Str.	1 12899,10595 12930,10621 12985,10665
 Oppelner Str.	1 13028,10629 12978,10581
 Oberbaumstr.	1 12985,10665 13015,10659 13082,10634
 Oberbaumstr.	1 13082,10634 13028,10629
-am Hackeschen Markt (Süd)	1 10132,12941 10117,12973 10105,13004 9932,13109
-am Hackeschen Markt (Nord)	1 9932,13109 10077,13100 10220,13098 10264,13097
+am Hackeschen Markt (Süd)	1 10132,12941 10117,12973 10105,13004 10000,13079 9938,13114
+am Hackeschen Markt (Nord)	1 9938,13114 10014,13108 10074,13103 10220,13098 10264,13097
+Monbijouplatz	1 10000,13079 10014,13108
 Dennewitzplatz	1 7866,9902 7862,9918 7813,10112
 # REMOVED --- Dennewitzplatz	1 7814,10117 7906,10098
 # REMOVED (weitgehend realisiert, nur die Verknüpfung an der Dennewitzstr. fehlt noch) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20131011.1230.390248.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4679 --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/strassenbauliste_stand_2014_07_17.pdf?start&ts=1405676729&file=strassenbauliste_stand_2014_07_17.pdf (Ende der Bauarbeiten) --- #: XXX Einrichtung eines offiziellen Zweirichtungradwegs, dann wird "q3" wegfallen -> gesperrt_car ---#: last_checked: 2014-08-30 (asphaltierte Radwege existieren bis auf die Verknüpfung zur Dennewitzstr.) --- #: check_frequency: 7d --- Dennewitzplatz	1s:q3 7906,10098 7869,9917
@@ -1738,11 +1739,6 @@ Prenzlau, Bahnhofsvorplatz	1 39918,102499 39966,102492 39949,102431 39946,102422
 Markt (Luckenwalde)	1 -4358,-35445 -4307,-35421 -4274,-35352
 Markt (Luckenwalde)	1 -4274,-35352 -4248,-35379 -4309,-35471
 Breite Str. (Luckenwalde)	1s:q4 -4299,-35514 -4208,-35409
-#: by: osm vvv
-#: osm_watch: way id="234462178" version="3" brb
-#: XXX add_fragezeichen: Gibt es noch eine Einbahnstraßenregelung on der Breiten Straße? Auch für Radfahrer?
-Breite Str. (Luckenwalde)	1s:q4 -4568,-35783 -4478,-35736
-#: by ^^^
 Schulstr. (Joachimsthal)	1s:q3 32331,64049 32388,64047 32459,64042
 # 
 ######################################################################
@@ -3475,6 +3471,11 @@ Drängelgitter	BNP:3::trailer=10 5746,22582
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/wexstra%C3%9Fe-27-bruchsaler-stra%C3%9Fe.1254/#post-19647
+#: last_checked: 2022-11-16 (architektur-urbanistik)
+#: check_frequency: 120d
+Bruchsaler Str.: Hochbauarbeiten, Einbahnstraße auch für Radfahrer	1s:q4:inwork 5522,8011 5520,8132 5573,8197
+# 
 #: next_check_id: BEBELPLATZXMAS-2022
 #: by: https://www.berlin.de/weihnachtsmarkt/3235772-3496862-weihnachtsmarkt-am-gendarmenmarkt-bebelp.html (21. November bis 31. Dezember 2022)
 #: next_check: 2023-01-02 vvv
@@ -3528,7 +3529,7 @@ Wuhlesteg: gesperrt	2::inwork 22171,12965 22196,12961
 #: XXX ab dem 28.10.2022 ist die südliche Umfahrung aktiv
 # REMOVED (gelöscht) --- #: osm_watch: way id="10275794" version="17"
 # REMOVED (gelöscht) --- #: osm_watch: way id="897616703" version="2"
-#: osm_watch: way id="1110732558" version="9"
+#: osm_watch: way id="1110732558" version="10"
 #: osm_watch: way id="325319592" version="12"
 #: priority: #A
 #: last_checked: 2022-06-15
@@ -3935,7 +3936,7 @@ Pfarrer-Lütkehaus-Platz: Einbahnstraßenregelung	1::inwork 10310,-2136 10300,-213
 #: next_check_id: ELSENBRUECKE-2018
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2022-11-12
+#: last_checked: 2022-11-18
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -4577,7 +4578,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: osm_watch: way id="846595294" version="8"
 #: osm_watch: way id="38725490" version="17"
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-10-18 vvv
+#: last_checked: 2022-11-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 Bergiusstr.: wird vermutlich zurückgebaut	2::inwork 14051,6731 14106,6663
@@ -4591,7 +4592,7 @@ Bergiusstr.: für Radfahrer gesperrt (Autobahnauffahrt)	2::inwork 14106,6663 1415
 #: source_id: viz2021:13.454141,52.469122,24.01.2019,10:00 (bis 30.6.2023)
 #: note: laut rbbtext ebenfalls bis 1.9.2022
 #: also_indoor: traffic (G,B)
-#: last_checked: 2022-11-13 (mapillary)
+#: last_checked: 2022-11-18
 #: check_frequency: 90d
 #: next_check: 2023-06-23
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
