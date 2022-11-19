@@ -53,16 +53,23 @@ my %symlinks_on_windows;
 if ($^O eq 'MSWin32' && is_in_path('git')) {
     # git & symlinks do not work good on Windows systems
     # See https://stackoverflow.com/questions/5917249/git-symbolic-links-in-windows
-    # Find all symlinks in miscsrc to skip them later
 
-    # Don't use list form on pipe open, test should be runnable on older perls:
-    # https://metacpan.org/dist/perl/view/pod/perl5220delta.pod#List-form-of-pipe-open-implemented-for-Win32
-    if (open my $fh, 'git ls-files -s miscsrc |') {
-	while(<$fh>) {
-	    chomp;
-	    my @F = split /\s+/, $_, 4;
-	    if ($F[0] eq '120000') {
-		$symlinks_on_windows{$F[3]} = 1;
+    if ($ENV{APPVEYOR}) {
+	# It seems that on appveyor a git-checkout without a .git directory
+	# is done, so the code below does not work. For now hardcode known
+	# symlinks (XXX better solution needed!)
+	$symlinks_on_windows{'miscsrc/any2gpsman'} = 1;
+    } else {
+	# Find all symlinks in miscsrc to skip them later
+	# Don't use list form on pipe open, test should be runnable on older perls:
+	# https://metacpan.org/dist/perl/view/pod/perl5220delta.pod#List-form-of-pipe-open-implemented-for-Win32
+	if (open my $fh, 'git ls-files -s miscsrc |') {
+	    while(<$fh>) {
+		chomp;
+		my @F = split /\s+/, $_, 4;
+		if ($F[0] eq '120000') {
+		    $symlinks_on_windows{$F[3]} = 1;
+		}
 	    }
 	}
     }
