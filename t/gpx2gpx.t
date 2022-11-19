@@ -27,7 +27,10 @@ BEGIN {
 
 plan 'no_plan';
 
-my $script = bbbike_root . '/miscsrc/gpx2gpx';
+my @script = bbbike_root . '/miscsrc/gpx2gpx';
+if ($^O eq 'MSWin32') { # suffix-less script, needs to be run explicitly with perl interpreter XXX maybe add a .bat wrapper?
+    unshift @script, $^X;
+}
 
 my $src_gpx = <<'EOF';
 <?xml version="1.0" encoding="UTF-8"?>
@@ -82,41 +85,41 @@ ok gpxlint_string($src_gpx), 'source GPX looks valid';
 is count_trksegs($src_gpx), 1, 'source GPX has just one trkseg';
 
 {
-    ok !(run [$script, '--invalid-option'], '2>', \my $stderr), 'error on invalid option';
+    ok !(run [@script, '--invalid-option'], '2>', \my $stderr), 'error on invalid option';
     like $stderr, qr{Unknown option: invalid-option}, 'expected error message';
 }
 
 my $unchanged_dest_gpx;
 {
-    ok run [$script], '<', \$src_gpx, '>', \$unchanged_dest_gpx;
+    ok run [@script], '<', \$src_gpx, '>', \$unchanged_dest_gpx;
     ok gpxlint_string($unchanged_dest_gpx);
 }
 
 require_datetime_iso8601 {
-    ok run [$script, '--trkseg-split-by-time=86400'], '<', \$src_gpx, '>', \my $dest_gpx;
+    ok run [@script, '--trkseg-split-by-time=86400'], '<', \$src_gpx, '>', \my $dest_gpx;
     eq_or_diff $dest_gpx, $unchanged_dest_gpx, 'no change because time delta is too large';
 };
 
 require_geo_distance {
-    ok run [$script, '--trkseg-split-by-dist=1000000'], '<', \$src_gpx, '>', \my $dest_gpx;
+    ok run [@script, '--trkseg-split-by-dist=1000000'], '<', \$src_gpx, '>', \my $dest_gpx;
     eq_or_diff $dest_gpx, $unchanged_dest_gpx, 'no change because distance is too large';
 };
 
 require_datetime_iso8601 {
-    ok run [$script, '--trkseg-split-by-time=60'], '<', \$src_gpx, '>', \my $dest_gpx;
+    ok run [@script, '--trkseg-split-by-time=60'], '<', \$src_gpx, '>', \my $dest_gpx;
     ok gpxlint_string($dest_gpx);
     is count_trksegs($dest_gpx), 2, 'now there are two trksegs';
 
-    ok run [$script, '--trkseg-split-by-time=60'], '<', \$dest_gpx, '>', \my $dest2_gpx;
+    ok run [@script, '--trkseg-split-by-time=60'], '<', \$dest_gpx, '>', \my $dest2_gpx;
     eq_or_diff $dest2_gpx, $dest_gpx, 'no change, already split';
 };
 
 require_geo_distance {
-    ok run [$script, '--trkseg-split-by-dist=1000'], '<', \$src_gpx, '>', \my $dest_gpx;
+    ok run [@script, '--trkseg-split-by-dist=1000'], '<', \$src_gpx, '>', \my $dest_gpx;
     ok gpxlint_string($dest_gpx);
     is count_trksegs($dest_gpx), 2, 'now there are two trksegs';
 
-    ok run [$script, '--trkseg-split-by-dist=1000'], '<', \$dest_gpx, '>', \my $dest2_gpx;
+    ok run [@script, '--trkseg-split-by-dist=1000'], '<', \$dest_gpx, '>', \my $dest2_gpx;
     eq_or_diff $dest2_gpx, $dest_gpx, 'no change, already split';
 };
 
