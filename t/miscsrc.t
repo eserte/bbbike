@@ -7,12 +7,14 @@
 
 use strict;
 use FindBin;
-use lib "$FindBin::RealBin";
+use lib ("$FindBin::RealBin", "$FindBin::RealBin/..");
 
 use Cwd qw(getcwd);
 use File::Glob qw(bsd_glob);
 use File::Spec qw();
 use Getopt::Long;
+
+use BBBikeUtil qw(is_in_path);
 
 BEGIN {
     if (!eval q{
@@ -47,10 +49,31 @@ if (eval { require Apache2::Const; 1 }) {
     $ENV{MOD_PERL_API_VERSION} = 2;
 }
 
+my %symlinks_on_windows;
+if ($^O eq 'MSWin32' && is_in_path('git')) {
+    # git & symlinks do not work good on Windows systems
+    # See https://stackoverflow.com/questions/5917249/git-symbolic-links-in-windows
+    # Find all symlinks in miscsrc to skip them later
+
+    # Don't use list form on pipe open, test should be runnable on older perls:
+    # https://metacpan.org/dist/perl/view/pod/perl5220delta.pod#List-form-of-pipe-open-implemented-for-Win32
+    if (open my $fh, 'git ls-files -s miscsrc |') {
+	while(<$fh>) {
+	    chomp;
+	    my @F = split /\s+/, $_, 4;
+	    if ($F[0] eq '120000') {
+		$symlinks_on_windows{$F[3]} = 1;
+	    }
+	}
+    }
+}
+
 for my $f (@files) {
  SKIP: {
 	skip "Using non-standard NetPBM modules", 1
 	    if $f =~ m{/tilemap$};
+	skip "Symlinks may not work on Windows ($f is a symlink)", 1
+	    if $symlinks_on_windows{$f};
 	myskip "$f works only with installed mod_perl (1 or 2)", 1
 	    if $f =~ m{/FixRemoteAddrHandler\.pm$} && !eval { require Apache2::Const; 1 } && !eval { require Apache::Constants; 1 };
 	myskip "$f works only with installed Tk::Zinc", 1
